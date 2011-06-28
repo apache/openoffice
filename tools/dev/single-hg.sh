@@ -52,7 +52,7 @@ cd "$work"
 
 hg init
 hg unbundle "../$bundle" || exit 1
-hg pull http://hg.services.openoffice.org/DEV300
+hg pull 'http://hg.services.openoffice.org/DEV300'
 hg update
 
 ### now we need to deal with the CWS's
