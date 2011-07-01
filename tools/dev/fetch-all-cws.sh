@@ -71,10 +71,15 @@ for cws in `sed -n '/^cws\//s#^cws/##p' $cwslist` ; do
     echo "ERROR: '$cws' exists and is not a directory."
     exit 1
   else
-    echo "============ '$cws' is being created ..."
-    hg clone -U "$dev300" "$cws"
-    cd "$cws"
-    hg pull "$REPOS/cws/$cws"
+    # filter out empty CWS: hg incoming returns 1 if there's nothing to pull
+    if hg -R "$dev300" incoming "$REPOS/cws/$cws" >/dev/null; then
+        echo "============ '$cws' is being created ..."
+        hg clone -U "$dev300" "$cws"
+        cd "$cws"
+        hg pull "$REPOS/cws/$cws"
+    else
+        echo "============ '$cws' skipped: nothing to pull ..."
+    fi
   fi
 
 done
