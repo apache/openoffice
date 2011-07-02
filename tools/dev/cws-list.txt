@@ -25,10 +25,13 @@
 # Append each of these names to the above URL to specify the repository
 # for the CWS.
 #
+# The CWS repositories that should not be pulled are commented out,
+# with a short explanation why.
+#
 #
 # Note: for automated processing of this file, use only lines that
-# begin with "cws/".
-# 
+# begin with "cws".
+#
 
 cws/ab78
 cws/ab82
@@ -38,18 +41,18 @@ cws/accia2bridge
 cws/accstuff
 cws/adc27
 cws/aquaflip01
-cws/ause114
-cws/ause118
-cws/ause122
+# cws/ause114  # nothing to pull
+# cws/ause118  # nothing to pull
+# cws/ause122  # nothing to pull
 cws/ause130
 cws/ause131
 cws/automationdev300m106
 cws/automationdev300m106ext
-cws/automationooo330stablefixes
+# cws/automationooo330stablefixes  # nothing to pull
 cws/automationooo340m0
 cws/aw080
-cws/aw085
-cws/bcfixes
+# cws/aw085  # nothing to pull
+# cws/bcfixes  # nothing to pull
 cws/boost142
 cws/calc67
 cws/calc68
@@ -60,57 +63,57 @@ cws/calcphonetic
 cws/callcatcher
 cws/cbosdo04
 cws/cbosdo06
-cws/chart57
-cws/chart59
+# cws/chart57  # nothing to pull
+# cws/chart59  # nothing to pull
 cws/cmcfixes79
 cws/container_controls
 cws/contextmenu1
 cws/contl10n01
-cws/cs2cuoffilter
+# cws/cs2cuoffilter  # nothing to pull
 cws/dockingwindows2
 cws/dr81
 cws/extbxctrls
 cws/findbar02
-cws/foo42
+# cws/foo42  # nothing to pull
 cws/fs34c
 cws/fs35a
 cws/fwk168
-cws/fwk169
+# cws/fwk169  # nothing to pull
 cws/gnumake4
-cws/gozer1
+# cws/gozer1  # nothing to pull
 cws/gtk3
 cws/hb23
 cws/hccalc01
 cws/hcshared30
-cws/hctreel10n
+# cws/hctreel10n  # nothing to pull
 cws/headeradd
-cws/hr63
+# cws/hr63  # nothing to pull
 cws/hr77
 cws/hsqldb19
-cws/impress203
+# cws/impress203  # nothing to pull
 cws/impress212
-cws/impress213
+# cws/impress213  # nothing to pull
 cws/impresshtmlex
 cws/impressmedia01
 cws/jl155
 cws/jl166
-cws/jl167
+# cws/jl167  # nothing to pull
 cws/jsc341
 cws/jsc342
-cws/ka101
+# cws/ka101  # nothing to pull
 cws/kde4enable
-cws/keyid340
+# cws/keyid340  # nothing to pull
 cws/koheichart02
 cws/kso47
 cws/kso50
-cws/l10ndev300m103
-cws/l10ndev300m104
+# cws/l10ndev300m103  # nothing to pull
+# cws/l10ndev300m104  # nothing to pull
 #cws/l10ndev300m93 # cancelled
 #cws/l10ndev300m94 # cancelled
 #cws/l10ndev300m95 # cancelled
 #cws/l10ndev300m96 # cancelled
-cws/l10ngh1
-cws/l10nmove2
+# cws/l10ngh1  # nothing to pull
+# cws/l10nmove2  # nothing to pull
 cws/l10ntooling20
 cws/layoutdialogs3
 cws/ldorder01
@@ -121,79 +124,79 @@ cws/macmetallicremote2009
 cws/mav58
 cws/mba34issues01
 cws/mbacodecleanup
-cws/mh321
+# cws/mh321  # nothing to pull
 cws/mh6bc
 cws/mh8tz
-cws/mhu24
+# cws/mhu24  # nothing to pull
 cws/mib20
 cws/mib23
 cws/mingwport35
-cws/monobridge
-cws/native345
+# cws/monobridge  # nothing to pull
+# cws/native345  # nothing to pull
 cws/native356
-cws/native365
-cws/native368
-cws/native370
-cws/native371
+# cws/native365  # nothing to pull
+# cws/native368  # nothing to pull
+# cws/native370  # nothing to pull
+# cws/native371  # nothing to pull
 cws/native372
 cws/native373
 #cws/nativea # cancelled.
 cws/new_itemsets
 cws/notes12
-cws/np001
-cws/npower15
-cws/odfp34
-cws/oj21
+# cws/np001  # nothing to pull
+# cws/npower15  # nothing to pull
+# cws/odfp34  # nothing to pull
+# cws/oj21  # nothing to pull
 cws/oj22
 cws/ooo340fixes
 cws/ooo34gsl01
 cws/ooo34gsl02
-cws/ooocon2010
-cws/ooxml04
-cws/ooxml05
+# cws/ooocon2010  # nothing to pull
+# cws/ooxml04  # nothing to pull
+# cws/ooxml05  # nothing to pull
 cws/ooxml07
 cws/ooxml11
-cws/oracleirm02
-cws/oracleirm03
+# cws/oracleirm02  # nothing to pull
+# cws/oracleirm03  # nothing to pull
 cws/os138
-cws/os141
+# cws/os141  # nothing to pull
 cws/os148
 cws/os152
-cws/os2port08
-cws/osxct01
-cws/parastylelistlevel
-cws/parastylelistlevel02
+# cws/os2port08  # nothing to pull
+# cws/osxct01  # nothing to pull
+# cws/parastylelistlevel  # nothing to pull
+# cws/parastylelistlevel02  # nothing to pull
 cws/perfbenchmarker01
-cws/pmladek09
+# cws/pmladek09  # nothing to pull
 cws/quicklookplugin01
-cws/rangeattr
-cws/renaissance3
-cws/renaissance4
-cws/renaissance5
+# cws/rangeattr  # nothing to pull
+# cws/renaissance3  # nothing to pull
+# cws/renaissance4  # nothing to pull
+# cws/renaissance5  # nothing to pull
 cws/rtftok01
 cws/sb140
 cws/sb143
 cws/sb144
-cws/sbclean
+# cws/sbclean  # nothing to pull
 cws/sd2gbuild
 cws/sdf2
 cws/sdk350
 cws/setsolar01
-cws/sg421
-cws/slideshow2
-cws/slideshow3
+# cws/sg421  # nothing to pull
+# cws/slideshow2  # nothing to pull
+# cws/slideshow3  # nothing to pull
 cws/slidesorter1
-cws/splitview
+# cws/splitview  # nothing to pull
 cws/ssp1
-cws/surfacechart
+# cws/surfacechart  # nothing to pull
 cws/svg101
-cws/svtools.rework
+# cws/svtools.rework  # nothing to pull
 cws/sw34bf06
 cws/swbookmarkfixes01
 cws/swcoreseparation
 cws/swrefactordlusage02
 cws/swundo4
-cws/test123l10n06
+# cws/test123l10n06  # nothing to pull
 cws/test85
 cws/textalignment01
 cws/tkr37
@@ -207,11 +210,11 @@ cws/toolsfixes
 cws/tora01
 cws/vbasupportdev300_HG
 cws/vcl122
-cws/vgbugs14
-cws/winbuildenv01
+# cws/vgbugs14  # nothing to pull
+# cws/winbuildenv01  # nothing to pull
 cws/writercompare01
 cws/writerfilter10
-cws/zhangxiaofei01
+# cws/zhangxiaofei01  # nothing to pull
 cws_l10n/ab82
 cws_l10n/accfixes3
 cws_l10n/accstuff
