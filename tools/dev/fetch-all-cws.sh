@@ -60,24 +60,30 @@ cwsfile=`basename "$2"`
 cwslist=`(cd "$cwsdir" ; pwd)`/$cwsfile
 
 
-for cws in `sed -n '/^cws\//s#^cws/##p' $cwslist` ; do
+for cwsrepos in `grep '^cws/' $cwslist` ; do
   cd "$work"
+
+  # Construct a name for our working directory
+  cws=`echo $cwsrepos | sed 's#.*/##'`
+  if test "`echo $cwsrepos | sed -n '/cws_l10n/p'`" ; then
+    cws="l10n.$cws"
+  fi
 
   if test -d "$cws" ; then
     echo "============ '$cws' exists. Pulling ..."
     cd "$cws"
-    hg pull "$REPOS/cws/$cws"
+    hg pull "$REPOS/$cwsrepos"
 
   elif test -e "$cws" ; then
     echo "ERROR: '$cws' exists and is not a directory."
     exit 1
 
   # filter out empty CWS: hg incoming returns 1 if there's nothing to pull
-  elif hg -R "$dev300" incoming "$REPOS/cws/$cws" >/dev/null; then
+  elif hg -R "$dev300" incoming "$REPOS/$cwsrepos" >/dev/null; then
     echo "============ '$cws' is being created ..."
     hg clone -U "$dev300" "$cws"
     cd "$cws"
-    hg pull "$REPOS/cws/$cws"
+    hg pull "$REPOS/$cwsrepos"
 
   else
     echo "============ '$cws' skipped: nothing to pull ..."
