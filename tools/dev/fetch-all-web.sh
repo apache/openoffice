@@ -64,7 +64,7 @@ for webproject in `grep '^./' $weblist` ; do
   webrepos=${REPOS}${webproject}${REPOS2}
 
   if test -d "$webproject" ; then
-    echo "============ '$project' exists. Updating ..."
+    echo "============ '$webproject' exists. Updating ..."
     cd "$webproject"
     svn update
 
