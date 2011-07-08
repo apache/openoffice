@@ -21,13 +21,14 @@
 #
 # Use this script to fetch all the CWS repositories listed in the
 # specified file (typically, cws-list.txt). Before using this script,
-# you should have a local Hg repository of the DEV300 repository.
-# See http://wiki.services.openoffice.org/wiki/Getting_It.
+# you should have a local Hg repository of the OOO340 repository. This
+# can be quickly done by fetching the bundle from:
+#   http://hg.services.openoffice.org/bundle/OOO340.hg
 #
 # USAGE:
-#   $ ./fetch-all-cws.sh DEV300 CWS-LIST WORK-DIR
+#   $ ./fetch-all-cws.sh OOO340 CWS-LIST WORK-DIR
 #
-#     DEV300 is the path to the DEV300 repository
+#     OOO340 is the path to the OOO340 repository
 #     CWS-LIST is a file containing the list of CWSs to fetch
 #       (see the file tools/dev/cws-list.txt)
 #     WORK-DIR each CWS will be created in a subdirectory of WORK-DIR
@@ -40,7 +41,7 @@
 #
 
 if test "$#" != 3; then
-  echo "USAGE: $0 DEV300 CWS-LIST WORK-DIR"
+  echo "USAGE: $0 OOO340 CWS-LIST WORK-DIR"
   exit 1
 fi
 
@@ -52,7 +53,7 @@ if test ! -e "$3"; then
 fi
 
 # Turn the parameters into absolute paths
-dev300=`(cd "$1" ; pwd)`
+ooo340=`(cd "$1" ; pwd)`
 work=`(cd "$3" ; pwd)`
 
 cwsdir=`dirname "$2"`
@@ -79,9 +80,9 @@ for cwsrepos in `grep '^cws/' $cwslist` ; do
     exit 1
 
   # filter out empty CWS: hg incoming returns 1 if there's nothing to pull
-  elif hg -R "$dev300" incoming "$REPOS/$cwsrepos" >/dev/null; then
+  elif hg -R "$ooo340" incoming "$REPOS/$cwsrepos" >/dev/null; then
     echo "============ '$cws' is being created ..."
-    hg clone -U "$dev300" "$cws"
+    hg clone -U "$ooo340" "$cws"
     cd "$cws"
     hg pull "$REPOS/$cwsrepos"
 
