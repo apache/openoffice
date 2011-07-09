@@ -29,6 +29,7 @@
 #   $ ./fetch-all-cws.sh OOO340 CWS-LIST WORK-DIR
 #
 #     OOO340 is the path to the OOO340 repository
+#     L10N is the path to the master_l10n/OOO340 repository
 #     CWS-LIST is a file containing the list of CWSs to fetch
 #       (see the file tools/dev/cws-list.txt)
 #     WORK-DIR each CWS will be created in a subdirectory of WORK-DIR
@@ -40,8 +41,8 @@
 # combine them into a single repository.
 #
 
-if test "$#" != 3; then
-  echo "USAGE: $0 OOO340 CWS-LIST WORK-DIR"
+if test "$#" != 4; then
+  echo "USAGE: $0 OOO340 L10N CWS-LIST WORK-DIR"
   exit 1
 fi
 
@@ -54,19 +55,23 @@ fi
 
 # Turn the parameters into absolute paths
 ooo340=`(cd "$1" ; pwd)`
-work=`(cd "$3" ; pwd)`
+l10n=`(cd "$2" ; pwd)`
+work=`(cd "$4" ; pwd)`
 
-cwsdir=`dirname "$2"`
-cwsfile=`basename "$2"`
+cwsdir=`dirname "$3"`
+cwsfile=`basename "$3"`
 cwslist=`(cd "$cwsdir" ; pwd)`/$cwsfile
 
 
-for cwsrepos in `grep '^cws/' $cwslist` ; do
+for cwsrepos in `grep '^cws' $cwslist` ; do
   cd "$work"
+
+  master="$ooo340"
 
   # Construct a name for our working directory
   cws=`echo $cwsrepos | sed 's#.*/##'`
   if test "`echo $cwsrepos | sed -n '/cws_l10n/p'`" ; then
+    master="$l10n"
     cws="l10n.$cws"
   fi
 
@@ -80,9 +85,9 @@ for cwsrepos in `grep '^cws/' $cwslist` ; do
     exit 1
 
   # filter out empty CWS: hg incoming returns 1 if there's nothing to pull
-  elif hg -R "$ooo340" incoming "$REPOS/$cwsrepos" >/dev/null; then
+  elif hg -R "$master" incoming "$REPOS/$cwsrepos" >/dev/null; then
     echo "============ '$cws' is being created ..."
-    hg clone -U "$ooo340" "$cws"
+    hg clone -U "$master" "$cws"
     cd "$cws"
     hg pull "$REPOS/$cwsrepos"
 
