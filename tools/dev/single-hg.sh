@@ -23,36 +23,44 @@
 # into a single Mercurial repository.
 #
 # USAGE:
-#   $ ./single-hg.sh path/to/bundle/DEV300.hg single
+#   $ ./single-hg.sh OOO340 L10N CWS-DIR SINGLE
 #
-# You need to separately fetch the 1.6 Gb bundle from:
-#   http://hg.services.openoffice.org/bundle/DEV300.hg
-#
-# (see http://wiki.services.openoffice.org/wiki/Getting_It)
+#     OOO340 is the path to the OOO340 repository
+#     L10N is the path to the master_l10n/OOO340 repository
+#     CWS-DIR is the directory containing all the CWS repositories
+#       to integrate into the output SINGLE repository
+#     SINGLE will be created, containing the merge of all the
+#       repositories
 #
 # See <TBD> for converting the resulting repository to Subversion, for
 # loading into the ASF repository.
 #
 
-if test "$#" != 2; then
-  echo "USAGE: $0 path/to/bundle/DEV300.hg WORKING_DIR"
+if test "$#" != 4; then
+  echo "USAGE: $0 OOO340 L10N CWS-DIR SINGLE"
   exit 1
 fi
 
-bundle="$1"
-work="$2"
+# Turn the parameters into absolute paths
+ooo340=`(cd "$1" ; pwd)`
+l10n=`(cd "$2" ; pwd)`
+cwsdir=`(cd "$3" ; pwd)`
 
-if test -e "$work"; then
-  echo "ERROR: working directory ('$work') exists. Please remove it first."
+single="$4"
+
+if test -e "$single"; then
+  echo "ERROR: working directory ('$single') exists. Please remove it first."
   exit 1
 fi
 
-mkdir "$work"
-cd "$work"
+echo "============ cloning to '$single' ..."
+hg clone -U "$ooo340" "$single"
+cd "$single"
 
-hg init
-hg unbundle "../$bundle" || exit 1
-hg pull 'http://hg.services.openoffice.org/DEV300'
-hg update
+for cws in `ls "$cwsdir"` ; do
 
-### now we need to deal with the CWS's
+  fullpath="$cwsdir/$cws"
+  echo "============ pulling from '$fullpath' ..."
+  hg pull "$fullpath"
+
+done
