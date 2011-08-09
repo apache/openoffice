@@ -26,7 +26,7 @@
 # for a note on the checkout from the Kenai svn repository.
 #
 # USAGE:
-#   $ ./fetch-all-web.sh WEB-LIST WORK-DIR
+#   $ ./kenai2website.sh WEB-PROJECT SITE-DIR
 #
 #     WEB-LIST is a file containing the list of Projects to fetch
 #       (see the file tools/dev/webcontent-list.txt)
@@ -37,44 +37,20 @@
 #  the Apache CMS or a Confluence Wiki import
 #
 
-if test "$#" != 2; then
-  echo "USAGE: $0 WEB-LIST WORK-DIR"
+if test "$#" != 1; then
+  echo "USAGE: $0 PROJECT"
   exit 1
 fi
 
 REPOS='https://svn.openoffice.org/svn/'
 REPOS2='~webcontent'
 
-# Make the work directory, in case it does not exist
-if test ! -e "$2"; then
-  mkdir "$2"
-fi
+webproject=$1
 
-# Turn the parameters into absolute paths
-work=`(cd "$2" ; pwd)`
+cd /tmp
+rm -rf ${webproject}
 
-webdir=`dirname "$1"`
-webfile=`basename "$1"`
-weblist=`(cd "$webdir" ; pwd)`/$webfile
+webrepos=${REPOS}${webproject}${REPOS2}
 
-
-for webproject in `grep '^./' $weblist` ; do
-  cd "$work"
-
-  webrepos=${REPOS}${webproject}${REPOS2}
-
-  if test -d "$webproject" ; then
-    echo "============ '$webproject' exists. Updating ..."
-    cd "$webproject"
-    svn update
-
-  elif test -e "$webproject" ; then
-    echo "ERROR: '$webproject' exists and is not a directory."
-    exit 1
-
-  else
-    echo "============ '$webproject' is being created ..."
-    svn co $webrepos $webproject
-  fi
-
-done
+echo "============ '$webproject' is being exported ..."
+svn export $webrepos $webproject
