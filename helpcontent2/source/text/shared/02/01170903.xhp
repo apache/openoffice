@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0201170903xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">List Box Wizard: Field Link</title>
+<filename>/text/shared/02/01170903.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="seite3a">
+<paragraph role="heading" id="hd_id3149119" xml-lang="en-US" level="1" l10n="U" oldref="20"><link href="text/shared/02/01170903.xhp" name="List Box Wizard: Field Link">List Box Wizard: Field Link</link></paragraph>
+<paragraph role="paragraph" id="par_id3159224" xml-lang="en-US" l10n="U" oldref="15">Indicates through which fields tables of values and list tables are linked.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3150499" xml-lang="en-US" l10n="U" oldref="27">The value table is the table of the current form where the list field is inserted. The list table is the table whose data is to be shown in the list field. Both tables must be linked over a mutual data field. These links are to be entered on this page of the wizard. The field names must not necessarily be the same (this depends upon how the field names are defined in both tables), but both fields must have the same field type.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00040501.xhp#aupikomli3a"/>
+</section>
+<!-- removed HID DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_VALUELISTFIELD --><paragraph role="heading" id="hd_id3149180" xml-lang="en-US" level="2" l10n="U" oldref="16">Value table field</paragraph>
+<paragraph role="paragraph" id="par_id3150789" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_VALUELISTFIELD">Specifies the current form data field which should be related to a field in the linked table.</ahelp> In addition, click the desired data field in the list field below.</paragraph>
+<paragraph role="paragraph" id="par_id3145669" xml-lang="en-US" l10n="U" oldref="25">In <link href="text/shared/02/01170102.xhp" name="Control - Properties">Control - Properties</link>, the specified field will appear as an entry in the <emph>Data</emph> tab page under <emph>Data field</emph>.</paragraph>
+<!-- removed HID DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_TABLEFIELD --><paragraph role="heading" id="hd_id3149827" xml-lang="en-US" level="2" l10n="U" oldref="18">List table field</paragraph>
+<paragraph role="paragraph" id="par_id3155391" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_TABLEFIELD">Specifies the linked table data field, which is related to the specified value table field.</ahelp> In addition, click the data field in the lower list field.</paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="26">In <link href="text/shared/02/01170102.xhp" name="Control - Properties">Control - Properties</link>, the specified field will appear in the <emph>Data</emph> tab page of a SQL statement under <emph>List Contents</emph>.</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmathguideattributesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Changing Default Attributes</title>
+<filename>/text/smath/guide/attributes.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-09-05T15:19:39">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145792"><bookmark_value>attributes; changing in $[officename] Math</bookmark_value>
+<bookmark_value>font attributes;changing defaults</bookmark_value>
+<bookmark_value>formatting;changing default attributes</bookmark_value>
+<bookmark_value>defaults;changing default formatting</bookmark_value>
+<bookmark_value>changing;default formatting</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145792" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="attributes"><link href="text/smath/guide/attributes.xhp" name="Changing Default Attributes">Changing Default Attributes</link>
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3154484" xml-lang="en-US" level="3" l10n="U" oldref="2">Can default formats in $[officename] Math be modified?</paragraph>
+<paragraph role="paragraph" id="par_id3148870" xml-lang="en-US" l10n="U" oldref="3">Some parts of formulas are always formatted bold or italic by default.</paragraph>
+<paragraph role="paragraph" id="par_id3150210" xml-lang="en-US" l10n="U" oldref="7">You can remove these attributes using "nbold" and "nitalic". Example:</paragraph>
+<paragraph role="code" id="par_id3143231" xml-lang="en-US" l10n="U" oldref="6">a + b</paragraph>
+<paragraph role="code" id="par_id3153810" xml-lang="en-US" l10n="U" oldref="5">nitalic a + bold b.</paragraph>
+<paragraph role="paragraph" id="par_id3149872" xml-lang="en-US" l10n="U" oldref="4">In the second formula, the a is not italic. The b is bold. You cannot change the plus sign by this method.</paragraph>
+<section id="relatedtopics">
+<embed href="text/smath/guide/main.xhp#main"/>
+</section>
+</body>
+</helpdocument>

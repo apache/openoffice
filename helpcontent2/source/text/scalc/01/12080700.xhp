@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2011 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112080700xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Show Details (Pivot Table)</title>
+<filename>/text/scalc/01/12080700.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="details">
+<paragraph role="heading" id="hd_id3344523" xml-lang="en-US" level="1" l10n="NEW"><link href="text/scalc/01/12080700.xhp">Show Details (Pivot Table)</link></paragraph>
+<paragraph role="paragraph" id="par_id871303" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Inserts a new "drill-down" sheet with more information about the current pivot table cell. You can also double-click a pivot table cell to insert the "drill-down" sheet. The new sheet shows a subset of rows from the original data source that constitutes the result data displayed in the current cell.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#dngdrill"/>
+</section><paragraph role="note" id="par_id7132480" xml-lang="en-US" l10n="NEW">Hidden items are not evaluated, the rows for the hidden items are included. Show Details is available only for pivot tables that are based on cell ranges or database data.</paragraph>
+</body>
+</helpdocument>

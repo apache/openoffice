@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+<meta>
+      <topic id="textswriter0105040600xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Footnote</title>
+         <filename>/text/swriter/01/05040600.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="fussnote">
+<bookmark xml-lang="en-US" branch="hid/SW_HID_FOOTNOTE_PAGE" id="bm_id3151390" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154767" role="heading" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05040600.xhp" name="Footnote">Footnote</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149351" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_FOOTNOTE_PAGE">Specifies the layout options for footnotes, including the line that separates the footnote from the main body of document.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/swriter/00/00000405.xhp#fussnoteform"/>
+      </section><comment>removed a note</comment>
+<paragraph xml-lang="en-US" id="hd_id3154646" role="heading" level="2" l10n="U" oldref="3">Footnote area</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151168" role="paragraph" l10n="U" oldref="4">Set the height of the footnote area.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FOOTNOTE_PAGE:RB_MAXHEIGHT_PAGE" id="bm_id3147509" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145412" role="heading" level="2" l10n="U" oldref="5">Not larger than page area</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147514" role="paragraph" l10n="U" oldref="6"><ahelp hid="SW:RADIOBUTTON:TP_FOOTNOTE_PAGE:RB_MAXHEIGHT_PAGE">Automatically adjusts the height of the footnote area depending on the number of footnotes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FOOTNOTE_PAGE:RB_MAXHEIGHT" id="bm_id3149801" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154099" role="heading" level="2" l10n="U" oldref="7">Maximum Footnote Height</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149807" role="paragraph" l10n="U" oldref="8"><ahelp hid=".">Sets a maximum height for the footnote area. Enable this option, then enter the height.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_MAXHEIGHT" id="bm_id3154482" localize="false"/>
+      <paragraph xml-lang="en-US" id="par_id3154568" role="paragraph" l10n="U" oldref="10"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_MAXHEIGHT">Enter the maximum height for the footnote area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_DIST" id="bm_id3152958" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151318" role="heading" level="2" l10n="U"
+                 oldref="11">Distance from text</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153665" role="paragraph" l10n="U" oldref="12"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_DIST">Enter the amount of space to leave between the bottom page margin and the first line of text in the footnote area.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155897" role="heading" level="2" l10n="U"
+                 oldref="13">Separator Line</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149689" role="paragraph" l10n="U" oldref="14">Specifies the position and length of the separator line.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FOOTNOTE_PAGE:DLB_LINEPOS" id="bm_id3155177" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154194" role="heading" level="2" l10n="U"
+                 oldref="15">Position</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155184" role="paragraph" l10n="U" oldref="16"><ahelp hid="SW:LISTBOX:TP_FOOTNOTE_PAGE:DLB_LINEPOS">Select the horizontal alignment for the line that separates the main text from the footnote area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_LINEWIDTH" id="bm_id3149492" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3143284" role="heading" level="2" l10n="U"
+                 oldref="17">Length</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154827" role="paragraph" l10n="U" oldref="18"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_LINEWIDTH">Enter the length of the separator line as a percentage of the page width area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FOOTNOTE_PAGE:DLB_LINETYPE" id="bm_id3149098" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151253" role="heading" level="2" l10n="U"
+                 oldref="19">Weight</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149105" role="paragraph" l10n="U" oldref="20"><ahelp hid="SW:LISTBOX:TP_FOOTNOTE_PAGE:DLB_LINETYPE">Select the formatting style for the separator line. If you do not want a separator line, choose "0.0 pt".</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_LINEDIST" id="bm_id3147098" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149828" role="heading" level="2" l10n="U"
+                 oldref="21">Spacing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148970" role="paragraph" l10n="U" oldref="22"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_LINEDIST">Enter the amount of space to leave between the separator line and the first line of the footnote area.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155145" role="tip" l10n="CHG" oldref="24">To specify the spacing between two footnotes, choose <item type="menuitem">Format - Paragraph</item>, and then click the <emph>Indents &amp; Spacing</emph> tab.</paragraph>
+      <embed href="text/shared/00/00000001.xhp#vorschau"/>
+   </body>
+</helpdocument>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidepageformat_maxxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Selecting the Maximum Printable Area on a Page</title>
+<filename>/text/shared/guide/pageformat_max.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149180"><bookmark_value>page formats; maximizing</bookmark_value>
+<bookmark_value>formats; maximizing page formats</bookmark_value>
+<bookmark_value>printers; maximum page formats</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149180" xml-lang="en-US" level="1" l10n="U" oldref="35"><variable id="pageformat_max"><link href="text/shared/guide/pageformat_max.xhp" name="Selecting the Maximum Printable Area on a Page">Selecting the Maximum Printable Area on a Page</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3156426" xml-lang="en-US" l10n="U" oldref="36">Not all printers can print a paper up to its edges. Most of them leave an unprinted margin.</paragraph>
+<paragraph role="paragraph" id="par_id3149182" xml-lang="en-US" l10n="U" oldref="37">$[officename] offers a semi-automatic feature that enables you to print as close to the paper's edge as is possible.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="38">Make sure that your printer has been setup under <emph>File - Printer Settings</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156114" xml-lang="en-US" l10n="CHG" oldref="39">Make sure that the <emph>Web Layout</emph> in the <emph>View</emph> menu is not selected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147653" xml-lang="en-US" l10n="U" oldref="40">Select the <emph>Format - Page</emph> command, and go to the <emph>Page</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147335" xml-lang="en-US" l10n="CHG" oldref="41">Under <emph>Margins</emph> you can define the maximum or minimum possible value for the page margins (left, right, top, and bottom). Click into the respective control, then press the Page Up or Page Down key. The preview displays a dashed line around the printable range.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145120" xml-lang="en-US" l10n="U" oldref="42">Click <emph>OK</emph> to close the dialog.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/printing_order.xhp#printing_order"/>
+</case>
+</switch>
+<paragraph role="paragraph" id="par_id3155388" xml-lang="en-US" l10n="U" oldref="43"><link href="text/shared/01/01130000.xhp" name="Printing">Printing</link></paragraph>
+</body>
+</helpdocument>

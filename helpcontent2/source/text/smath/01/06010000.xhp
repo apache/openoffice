@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+<meta>
+<topic id="textsmath0106010000xml" indexer="include">
+<title id="tit" xml-lang="en-US">Catalog</title>
+<filename>/text/smath/01/06010000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="symbol">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145799"><bookmark_value>symbols; entering in %PRODUCTNAME Math</bookmark_value>
+<bookmark_value>%PRODUCTNAME Math; entering symbols in</bookmark_value>
+<bookmark_value>catalog for mathematical symbols</bookmark_value>
+<bookmark_value>mathematical symbols;catalog</bookmark_value>
+<bookmark_value>Greek symbols in formulas</bookmark_value>
+<bookmark_value>formulas; entering symbols in</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/starmath:ModalDialog:RID_SYMBOLDIALOG" id="bm_id3147339" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Symbols" id="bm_id3154254" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SymbolCatalogue" id="bm_id3155959" localize="false"/>
+<paragraph role="heading" id="hd_id3153715" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/06010000.xhp" name="Catalog">Catalog</link></paragraph>
+<paragraph role="paragraph" id="par_id3146313" xml-lang="en-US" l10n="U" oldref="2"><variable id="symboletext"><ahelp hid="SID_SYMBOLS_CATALOGUE">Opens the <emph>Symbols</emph> dialog, in which you can select a symbol to insert in the formula.</ahelp>
+</variable></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/smath/00/00000004.xhp#etssbl"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_SYMBOLDIALOG:1" id="bm_id3145388" localize="false"/>
+<paragraph role="heading" id="hd_id3150202" xml-lang="en-US" level="2" l10n="U" oldref="4">Symbol Set</paragraph>
+<paragraph role="paragraph" id="par_id3148699" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="STARMATH_LISTBOX_RID_SYMBOLDIALOG_1">All symbols are organized into symbol sets. Select the desired symbol set from the list box. The corresponding group of symbols appear in the field below.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153917" xml-lang="en-US" l10n="U" oldref="7">When a symbol is selected, its command name appears below the symbol list and a magnified version appears in a box to the right. Note that the name must be typed in the <emph>Commands</emph> window exactly as displayed here (case-sensitive).</paragraph>
+<paragraph role="paragraph" id="par_id3149126" xml-lang="en-US" l10n="U" oldref="3">To insert a symbol, select it from the list and click <emph>Insert</emph>. The corresponding command name appears in the <emph>Commands</emph> window. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:PushButton:RID_SYMBOLDIALOG:1" id="bm_id3146964" localize="false"/>
+<paragraph role="heading" id="hd_id3154765" xml-lang="en-US" level="2" l10n="U" oldref="8">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3153811" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="STARMATH_PUSHBUTTON_RID_SYMBOLDIALOG_1">Click here to open the <link href="text/smath/01/06010100.xhp" name="Edit Symbols">Edit Symbols</link> dialog.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#uebernehmen"/>
+</body>
+</helpdocument>

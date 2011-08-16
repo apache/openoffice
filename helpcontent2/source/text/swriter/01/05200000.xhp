@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105200000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Merge Table </title>
+<filename>/text/swriter/01/05200000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-11T15:17:19">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="tabelleverb">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154652"><bookmark_value>tables; merging</bookmark_value>
+<bookmark_value>merging; tables</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:MergeTable" id="bm_id6690819" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:MergeTable" id="bm_id3149048" localize="false"/>
+<!-- removed HID 20652 -->
+<paragraph role="heading" id="hd_id3154652" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/swriter/01/05200000.xhp" name="Merge Table">Merge Table</link></paragraph>
+<paragraph role="paragraph" id="par_id3147401" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:MergeTable">Combines two consecutive tables into a single table. The tables must be directly next to each other and not separated by an empty paragraph.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#tabverb"/>
+</section>
+<paragraph role="paragraph" id="par_id3146325" xml-lang="en-US" l10n="U" oldref="3">If you choose this command when the cursor is in the middle of three consecutive tables, you are prompted to select the table that you want to merge with.</paragraph>
+</body>
+</helpdocument>

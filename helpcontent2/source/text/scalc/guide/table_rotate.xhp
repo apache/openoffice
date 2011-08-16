@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidetable_rotatexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Rotating Tables (Transposing)</title>
+<filename>/text/scalc/guide/table_rotate.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-27T12:46:22">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154346"><bookmark_value>tables; transposing</bookmark_value>
+<bookmark_value>transposing tables</bookmark_value>
+<bookmark_value>inverting tables</bookmark_value>
+<bookmark_value>swapping tables</bookmark_value>
+<bookmark_value>columns; swap with rows</bookmark_value>
+<bookmark_value>rows; swapping with columns</bookmark_value>
+<bookmark_value>tables; rotating</bookmark_value>
+<bookmark_value>rotating; tables</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="table_rotate"><link href="text/scalc/guide/table_rotate.xhp" name="Rotating Tables (Transposing)">Rotating Tables (Transposing)</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="2">In $[officename] Calc, there is a way to "rotate" a spreadsheet so that rows become columns and columns become rows.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153142" xml-lang="en-US" l10n="U" oldref="3">Select the cell range that you want to transpose.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153191" xml-lang="en-US" l10n="U" oldref="4">Choose <emph>Edit - Cut</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="6">Click the cell that is to be the top left cell in the result.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156286" xml-lang="en-US" l10n="U" oldref="7">Choose <emph>Edit - Paste Special</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3144764" xml-lang="en-US" l10n="U" oldref="8">In the dialog, mark <emph>Paste all</emph> and <emph>Transpose</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3155600" xml-lang="en-US" l10n="U" oldref="9">If you now click OK the columns and rows are transposed.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3146969" xml-lang="en-US" l10n="U" oldref="10"><link href="text/shared/01/02070000.xhp" name="Paste Special">Paste Special</link></paragraph>
+</section>
+</body>
+</helpdocument>

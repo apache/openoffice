@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03080301xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Randomize Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03080301.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="randomize">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150616"><bookmark_value>Randomize statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150616" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080301.xhp" name="Randomize Statement [Runtime]">Randomize Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145090" xml-lang="en-US" l10n="U" oldref="2">Initializes the random-number generator.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="4">Randomize [Number]</paragraph>
+<paragraph role="heading" id="hd_id3152456" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="CHG" oldref="6">
+<emph>Number:</emph> Any integer value that initializes the random-number generator.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3149655" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
+<paragraph role="code" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="8">Sub ExampleRandomize</paragraph>
+<paragraph role="code" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="9">Dim iVar As Integer, sText As String</paragraph>
+<paragraph role="code" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="10">Dim iSpectral(10) As Integer</paragraph>
+<paragraph role="code" id="par_id3148673" xml-lang="en-US" l10n="U" oldref="12">Randomize 2^14-1</paragraph>
+<paragraph role="code" id="par_id3156423" xml-lang="en-US" l10n="U" oldref="13">For iCount = 1 To 1000</paragraph>
+<paragraph role="code" id="par_id3147288" xml-lang="en-US" l10n="U" oldref="14">iVar = Int((10 * Rnd) ) REM Range from 0 to 9</paragraph>
+<paragraph role="code" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="15">iSpectral(iVar) = iSpectral(iVar) +1</paragraph>
+<paragraph role="code" id="par_id3153143" xml-lang="en-US" l10n="U" oldref="16">Next iCount</paragraph>
+<paragraph role="code" id="par_id3154011" xml-lang="en-US" l10n="U" oldref="18">sText = " | "</paragraph>
+<paragraph role="code" id="par_id3151114" xml-lang="en-US" l10n="U" oldref="19">For iCount = 0 To 9</paragraph>
+<paragraph role="code" id="par_id3145748" xml-lang="en-US" l10n="U" oldref="20">sText = sText &amp; iSpectral(iCount) &amp; " | "</paragraph>
+<paragraph role="code" id="par_id3146921" xml-lang="en-US" l10n="U" oldref="21">Next iCount</paragraph>
+<paragraph role="code" id="par_id3148617" xml-lang="en-US" l10n="U" oldref="22">MsgBox sText,0,"Spectral Distribution"</paragraph>
+<paragraph role="code" id="par_id3152941" xml-lang="en-US" l10n="U" oldref="23">end sub</paragraph>
+</body>
+</helpdocument>

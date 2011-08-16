@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textschart0105120000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Arrangement</title>
+<filename>/text/schart/01/05120000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-14T10:13:24">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="anordnung">
+<paragraph role="heading" id="hd_id3159153" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/schart/01/05120000.xhp" name="Arrangement">Arrangement</link></paragraph>
+<paragraph role="paragraph" id="par_id3145750" xml-lang="en-US" l10n="U" oldref="2">Allows you to modify the order of the data series already set in the chart.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="8">The position of the data in the data table remains unchanged. You can only choose the commands after inserting a chart in $[officename] Calc.</paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#anordnung"/>
+</section>
+<paragraph role="warning" id="par_id3154757" xml-lang="en-US" l10n="U" oldref="5">This function is only available if you have data displayed in columns. It is not possible to switch to data display in rows.</paragraph>
+<paragraph role="heading" id="hd_id3147339" xml-lang="en-US" level="2" l10n="U" oldref="3">Bring Forward</paragraph>
+<paragraph role="paragraph" id="par_id3149259" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid=".uno:Forward">Brings the selected data series forward (to the right).</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3146316" xml-lang="en-US" level="2" l10n="U" oldref="4">Send Backward</paragraph>
+<paragraph role="paragraph" id="par_id3147001" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid=".uno:Backward">Sends the selected data series backward (to the left).</ahelp></paragraph>
+</body>
+</helpdocument>

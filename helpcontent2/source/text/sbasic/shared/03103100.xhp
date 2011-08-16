@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03103100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Let Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03103100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-10-11T13:33:52">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="let">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147242"><bookmark_value>Let statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147242" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103100.xhp" name="Let Statement [Runtime]">Let Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="2">Assigns a value to a variable.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3153127" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154285" xml-lang="en-US" l10n="U" oldref="4">[Let] VarName=Expression</paragraph>
+<paragraph role="heading" id="hd_id3148944" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="6">
+<emph>VarName:</emph> Variable that you want to assign a value to. Value and variable type must be compatible.</paragraph>
+<paragraph role="note" id="par_id3148451" xml-lang="en-US" l10n="U" oldref="7">As in most BASIC dialects, the keyword <emph>Let</emph> is optional.</paragraph>
+<paragraph role="heading" id="hd_id3145785" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150441" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleLen</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="CHG" oldref="10">Dim sText as String</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="11">Let sText = "Las Vegas"</paragraph>
+<paragraph role="paragraph" id="par_id3152939" xml-lang="en-US" l10n="U" oldref="12">msgbox Len(sText) REM returns 9</paragraph>
+<paragraph role="paragraph" id="par_id3146921" xml-lang="en-US" l10n="U" oldref="13">End Sub</paragraph>
+</body>
+</helpdocument>

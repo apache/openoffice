@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicguideinsert_controlxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating Controls in the Dialog Editor</title>
+<filename>/text/sbasic/guide/insert_control.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-07-25T15:51:18">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149182"><bookmark_value>controls; creating in the dialog editor</bookmark_value>
+<bookmark_value>dialog editor;creating controls</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149182" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="insert_control"><link href="text/sbasic/guide/insert_control.xhp" name="Creating Controls in the Dialog Editor">Creating Controls in the Dialog Editor</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3146797" xml-lang="en-US" l10n="CHG" oldref="2">Use the tools on the <emph>Toolbox </emph>of the BASIC dialog editor to add controls to your dialog.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150276" xml-lang="en-US" l10n="CHG" oldref="7">To open the <emph>Toolbox</emph>, click the arrow next to the <emph>Insert Controls</emph> icon on the <emph>Macro</emph> toolbar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="3">Click a tool on the toolbar, for example, <emph>Button</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153360" xml-lang="en-US" l10n="U" oldref="4">On the dialog, drag the button to the size you want.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/sbasic/guide/control_properties.xhp#control_properties"/>
+<embed href="text/sbasic/guide/create_dialog.xhp#create_dialog"/>
+<embed href="text/sbasic/guide/show_dialog.xhp#show_dialog"/>
+<embed href="text/sbasic/guide/sample_code.xhp#sample_code"/>
+</section>
+</body>
+</helpdocument>

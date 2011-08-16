@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0102190200xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Column Break</title>
+<filename>/text/scalc/01/02190200.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  <section id="spaltenumbruch">
+   
+   
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151384"><bookmark_value>spreadsheets;deleting column breaks</bookmark_value>
+<bookmark_value>deleting;manual column breaks</bookmark_value>
+<bookmark_value>column breaks;deleting</bookmark_value>
+</bookmark>
+   <comment>MW deleted "removing;" and changed "deleting;"</comment>
+   
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteColumnbreak" id="bm_id2513425" localize="false"/>
+   
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteColumnbreak" id="bm_id3154758" localize="false"/>
+   <paragraph xml-lang="en-US" id="hd_id3151384" role="heading" level="1" l10n="U" oldref="1"><link href="text/scalc/01/02190200.xhp" name="Column Break">Column Break</link></paragraph>
+   <paragraph xml-lang="en-US" id="par_id3154124" role="paragraph" l10n="U" oldref="2"><ahelp hid=".uno:DeleteColumnbreak">Removes a manual column break to the left of the active cell.</ahelp></paragraph>
+   
+  </section>
+  <paragraph xml-lang="en-US" id="par_id3145173" role="paragraph" l10n="U" oldref="3">Position the cursor in the cell to the right of the column break indicated by a vertical line and choose <emph>Edit - Delete Manual Break - Column Break</emph>. The manual column break is removed.</paragraph>
+  <section id="howtoget">
+   
+   <embed href="text/scalc/00/00000402.xhp#bspaum"/>
+   
+  </section>
+ </body>
+</helpdocument>
