@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020104xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Reset Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03020104.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-01T15:21:04">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="reset">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154141"><bookmark_value>Reset statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154141" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020104.xhp">Reset Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U" oldref="2">Closes all open files and writes the contents of all file buffers to the harddisk.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3154124" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="4">Reset</paragraph>
+<paragraph role="heading" id="hd_id3161831" xml-lang="en-US" level="2" l10n="U" oldref="5">Example:</paragraph>
+<paragraph role="code" id="par_id3151113" xml-lang="en-US" l10n="U" oldref="37">Sub ExampleReset</paragraph>
+<paragraph role="code" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="38">On Error Goto ErrorHandler</paragraph>
+<paragraph role="code" id="par_id3153093" xml-lang="en-US" l10n="U" oldref="39">Dim iNumber As Integer</paragraph>
+<paragraph role="code" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="40">Dim iCount As Integer</paragraph>
+<paragraph role="code" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="41">Dim sLine As String</paragraph>
+<paragraph role="code" id="par_id3154320" xml-lang="en-US" l10n="U" oldref="42">Dim aFile As String</paragraph>
+<paragraph role="code" id="par_id3163712" xml-lang="en-US" l10n="U" oldref="43">aFile = "c:\data.txt"</paragraph>
+<paragraph role="code" id="par_id3146121" xml-lang="en-US" l10n="U" oldref="45">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3154491" xml-lang="en-US" l10n="U" oldref="46">Open aFile For Output As #iNumber</paragraph>
+<paragraph role="code" id="par_id3148455" xml-lang="en-US" l10n="U" oldref="47">Print #iNumber, "This is a new line of text"</paragraph>
+<paragraph role="code" id="par_id3145646" xml-lang="en-US" l10n="U" oldref="48">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3149410" xml-lang="en-US" l10n="U" oldref="50">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3147126" xml-lang="en-US" l10n="U" oldref="51">Open aFile For Input As iNumber</paragraph>
+<paragraph role="code" id="par_id3154510" xml-lang="en-US" l10n="U" oldref="52">For iCount = 1 to 5</paragraph>
+<paragraph role="code" id="par_id3146971" xml-lang="en-US" l10n="U" oldref="53">Line Input #iNumber, sLine</paragraph>
+<paragraph role="code" id="par_id3156277" xml-lang="en-US" l10n="U" oldref="54">If sLine &lt;&gt;"" then</paragraph>
+<paragraph role="code" id="par_id3153707" xml-lang="en-US" l10n="U" oldref="55">rem</paragraph>
+<paragraph role="code" id="par_id3150322" xml-lang="en-US" l10n="U" oldref="56">end if</paragraph>
+<paragraph role="code" id="par_id3148405" xml-lang="en-US" l10n="U" oldref="57">Next iCount</paragraph>
+<paragraph role="code" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="58">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3156382" xml-lang="en-US" l10n="U" oldref="59">Exit Sub</paragraph>
+<paragraph role="code" id="par_id3159264" xml-lang="en-US" l10n="U" oldref="60">ErrorHandler:</paragraph>
+<paragraph role="code" id="par_id3145147" xml-lang="en-US" l10n="U" oldref="61">Reset</paragraph>
+<paragraph role="code" id="par_id3163805" xml-lang="en-US" l10n="U" oldref="62">MsgBox "All files will be closed",0,"Error"</paragraph>
+<paragraph role="code" id="par_id3147364" xml-lang="en-US" l10n="U" oldref="63">End Sub</paragraph>
+</body>
+</helpdocument>

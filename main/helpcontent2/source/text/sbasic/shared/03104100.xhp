@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03104100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Optional (in Function Statement) [Runtime]</title>
+<filename>/text/sbasic/shared/03104100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T13:52:04">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="optional">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149205"><bookmark_value>Optional function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03104100.xhp" name="Optional (in Function Statement) [Runtime]">Optional (in Function Statement) [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U" oldref="2">Allows you to define parameters that are passed to a function as optional.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U" oldref="3">See also: <link href="text/sbasic/shared/03104000.xhp" name="IsMissing">IsMissing</link></paragraph>
+<paragraph role="heading" id="hd_id3153824" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="5">Function MyFunction(Text1 As String, Optional Arg2, Optional Arg3)</paragraph>
+<paragraph role="heading" id="hd_id3145610" xml-lang="en-US" level="2" l10n="U" oldref="7">Examples:</paragraph>
+<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U" oldref="8">Result = MyFunction("Here", 1, "There") ' all arguments are passed.</paragraph>
+<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U" oldref="9">Result = MyFunction("Test", ,1) ' second argument is missing.</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="10">See also <link href="text/sbasic/guide/sample_code.xhp" name="Examples">Examples</link>.</paragraph>
+</body>
+</helpdocument>

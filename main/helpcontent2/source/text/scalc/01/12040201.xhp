@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+<topic id="textscalc0112040201xml" indexer="include">
+<title id="tit" xml-lang="en-US">More</title>
+<filename>/text/scalc/01/12040201.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3148492" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/12040201.xhp" name="More">More</link></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:MoreButton:RID_SCDLG_FILTER:BTN_MORE" id="bm_id3152350" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:MoreButton:RID_SCDLG_SPEC_FILTER:BTN_MORE" id="bm_id3156023" localize="false"/>
+<paragraph role="paragraph" id="par_id3159400" xml-lang="en-US" l10n="U" oldref="2"><variable id="zusaetzetext"><ahelp hid="SC:MOREBUTTON:RID_SCDLG_SPEC_FILTER:BTN_MORE">Shows additional filter options.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+<embed href="text/scalc/00/00000412.xhp#filterzus"/>
+</section>
+<paragraph role="heading" id="hd_id3150791" xml-lang="en-US" level="2" l10n="U" oldref="3">Options</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_FILTER:BTN_CASE" id="bm_id3151210" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_SPEC_FILTER:BTN_CASE" id="bm_id3150871" localize="false"/>
+<paragraph role="heading" id="hd_id3154138" xml-lang="en-US" level="3" l10n="U" oldref="5">Case sensitive</paragraph>
+<paragraph role="paragraph" id="par_id3147228" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SC:CHECKBOX:RID_SCDLG_SPEC_FILTER:BTN_CASE">Distinguishes between uppercase and lowercase letters when filtering the data.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_FILTER:BTN_HEADER" id="bm_id3153968" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_SPEC_FILTER:BTN_HEADER" id="bm_id3145173" localize="false"/>
+<paragraph role="heading" id="hd_id3154908" xml-lang="en-US" level="3" l10n="U" oldref="7">Range contains column labels</paragraph>
+<paragraph role="paragraph" id="par_id3153768" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SC:CHECKBOX:RID_SCDLG_SPEC_FILTER:BTN_HEADER">Includes the column labels in the first row of a cell range.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_FILTER:BTN_COPY_RESULT" id="bm_id3147426" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_SPEC_FILTER:BTN_COPY_RESULT" id="bm_id3148576" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_COPY_AREA" id="bm_id3163713" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_SPEC_FILTER:LB_COPY_AREA" id="bm_id3147349" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_FILTER:ED_COPY_AREA" id="bm_id3147348" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_SPEC_FILTER:ED_COPY_AREA" id="bm_id3153093" localize="false"/>
+<paragraph role="heading" id="hd_id3155306" xml-lang="en-US" level="3" l10n="U" oldref="9">Copy results to</paragraph>
+<paragraph role="paragraph" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SC:EDIT:RID_SCDLG_SPEC_FILTER:ED_COPY_AREA">Select the check box, and then select the cell range where you want to display the filter results.</ahelp> You can also select a named range from the list.</paragraph>
+<embed href="text/shared/00/00000001.xhp#eingabesymbol"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_FILTER:BTN_REGEXP" id="bm_id3153726" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_SPEC_FILTER:BTN_REGEXP" id="bm_id3153144" localize="false"/>
+<paragraph role="heading" id="hd_id3145272" xml-lang="en-US" level="3" l10n="U" oldref="11">Regular expression</paragraph>
+<paragraph role="paragraph" id="par_id3152576" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SC:CHECKBOX:RID_SCDLG_SPEC_FILTER:BTN_REGEXP">Allows you to use wildcards in the filter definition.</ahelp> For a list of the regular expressions that $[officename] supports, click <link href="text/shared/01/02100001.xhp" name="here">here</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3149377" xml-lang="en-US" l10n="CHG" oldref="33">If the <emph>Regular Expressions</emph> check box is selected, you can use regular expressions in the Value field if the Condition list box is set to '=' EQUAL or '&lt;&gt;' UNEQUAL. This also applies to the respective cells that you reference for an advanced filter.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_FILTER:BTN_UNIQUE" id="bm_id3149410" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_SPEC_FILTER:BTN_UNIQUE" id="bm_id3147126" localize="false"/>
+<paragraph role="heading" id="hd_id3149958" xml-lang="en-US" level="3" l10n="U" oldref="34">No duplication</paragraph>
+<paragraph role="paragraph" id="par_id3153876" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="SC:CHECKBOX:RID_SCDLG_SPEC_FILTER:BTN_UNIQUE">Excludes duplicate rows in the list of filtered data.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_SPEC_FILTER:BTN_DEST_PERS" id="bm_id3149403" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_FILTER:BTN_DEST_PERS" id="bm_id3149402" localize="false"/>
+<paragraph role="heading" id="hd_id3154018" xml-lang="en-US" level="3" l10n="U" oldref="40">Keep filter criteria</paragraph>
+<paragraph role="paragraph" id="par_id3149123" xml-lang="en-US" l10n="U" oldref="41"><ahelp hid="SC:CHECKBOX:RID_SCDLG_FILTER:BTN_DEST_PERS">Select the <emph>Copy results to</emph> check box, and then specify the destination range where you want to display the filtered data. If this box is checked, the destination range remains linked to the source range. You must have defined the source range under <emph>Data - Define range</emph> as a database range.</ahelp> Following this, you can reapply the defined filter at any time as follows: click into the source range, then choose <emph>Data - Refresh Range</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3149018" xml-lang="en-US" level="2" l10n="U" oldref="36">Data range</paragraph>
+<paragraph role="paragraph" id="par_id3150042" xml-lang="en-US" l10n="U" oldref="37">Displays the cell range or the name of the cell range that you want to filter.</paragraph>
+<embed href="text/shared/00/00000001.xhp#zusaetze"/>
+</body>
+</helpdocument>

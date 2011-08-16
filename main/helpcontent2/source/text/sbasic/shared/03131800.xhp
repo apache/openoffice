@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03131800xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">CreateUnoDialog Function [Runtime]</title>
+<filename>/text/sbasic/shared/03131800.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T11:10:37">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="createunodialog">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150040"><bookmark_value>CreateUnoDialog function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150040" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03131800.xhp" name="CreateUnoDialog Function [Runtime]">CreateUnoDialog Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3154186" xml-lang="en-US" l10n="U" oldref="2">Creates a Basic Uno object that represents a Uno dialog control during Basic runtime.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3153750" xml-lang="en-US" l10n="U" oldref="3">Dialogs are defined in the dialog libraries. To display a dialog, a "live" dialog must be created from the library.</paragraph>
+<paragraph role="paragraph" id="par_id3153681" xml-lang="en-US" l10n="U" oldref="4">See <link href="text/sbasic/guide/sample_code.xhp" name="Examples">Examples</link>.</paragraph>
+<paragraph role="heading" id="hd_id3154286" xml-lang="en-US" level="2" l10n="U" oldref="5">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3159176" xml-lang="en-US" l10n="U" oldref="6">CreateUnoDialog( oDlgDesc )</paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="8">' Get dialog description from the dialog library</paragraph>
+<paragraph role="paragraph" id="par_id3149234" xml-lang="en-US" l10n="U" oldref="9">oDlgDesc = DialogLibraries.Standard.Dialog1</paragraph>
+<paragraph role="paragraph" id="par_id3154923" xml-lang="en-US" l10n="U" oldref="10">' generate "live" dialog</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="11">oDlgControl = CreateUnoDialog( oDlgDesc )</paragraph>
+<paragraph role="paragraph" id="par_id3148550" xml-lang="en-US" l10n="U" oldref="12">' display "live" dialog</paragraph>
+<paragraph role="paragraph" id="par_id3154072" xml-lang="en-US" l10n="U" oldref="13">oDlgControl.execute</paragraph>
+</body>
+</helpdocument>

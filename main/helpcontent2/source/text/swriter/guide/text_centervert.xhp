@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textswriterguidetext_centervertxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Using a Frame to Center Text on a Page</title>
+         <filename>/text/swriter/guide/text_centervert.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155177"><bookmark_value>text frames; centering on pages</bookmark_value>
+      <bookmark_value>centering;text frames on pages</bookmark_value>
+      <bookmark_value>title pages; centering text on</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3155177" role="heading" level="1" l10n="U"
+                 oldref="94"><variable id="text_centervert"><link href="text/swriter/guide/text_centervert.xhp" name="Using a Frame to Center Text on a Page">Using a Frame to Center Text on a Page</link>
+</variable></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155920" role="listitem" l10n="U" oldref="78">Select the text that you want to center on the page.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155868" role="listitem" l10n="U" oldref="79">Choose <emph>Insert - Frame</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152765" role="listitem" l10n="U" oldref="82">In the <item type="menuitem">Anchor</item>
+               <emph/>area, select <item type="menuitem">To page</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149844" role="listitem" l10n="U" oldref="95">In the <item type="menuitem">Size</item>
+               <emph/>area, set the dimensions of the frame.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156114" role="listitem" l10n="U" oldref="96">In the <item type="menuitem">Position</item>
+               <emph/>area, select "Center" in the <item type="menuitem">Horizontal</item>
+               <emph/>and <item type="menuitem">Vertical</item>
+               <emph/>boxes.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153410" role="listitem" l10n="U" oldref="97">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3149615" role="note" l10n="U" oldref="84">To hide the borders of the frame, select the frame, and then choose <item type="menuitem">Format - Frame/Object</item>. Click the <item type="menuitem">Borders</item> tab, and then click in the<emph/>
+         <item type="menuitem">Set No Border</item> box in the<emph/>
+         <item type="menuitem">Line Arrangement</item> area.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145098" role="paragraph" l10n="U" oldref="83">To resize the frame, drag the edges of the frame.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/text_emphasize.xhp#text_emphasize"/>
+      <embed href="text/swriter/guide/text_frame.xhp#text_frame"/>
+   </body>
+</helpdocument>

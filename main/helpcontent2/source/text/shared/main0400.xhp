@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************--><helpdocument version="1.0">
+<meta>
+<topic id="textsharedmain0400xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Shortcut Keys</title>
+<filename>/text/shared/main0400.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="tastaturbefehle">
+  <paragraph id="hd_id3149495" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/shared/main0400.xhp" name="Shortcut Keys">Shortcut Keys</link></paragraph>
+  <paragraph role="paragraph" id="par_id3150040" l10n="U" xml-lang="en-US" oldref="2">This section contains descriptions of frequently used shortcut keys in $[officename].</paragraph>
+  </section>
+  <embed href="text/shared/04/01010000.xhp#allgemeine"/>
+  <switch select="appl"> <case select="WRITER"><embed href="text/swriter/04/01020000.xhp#starwritertastaturbefehle"/></case> </switch>
+  <switch select="appl"> <case select="CALC"><embed href="text/scalc/04/01020000.xhp#starcalctasten"/></case> </switch>
+  <switch select="appl"> <case select="IMPRESS"><embed href="text/simpress/04/01020000.xhp#stardrawtastaturbefehle"/></case> </switch>
+  <switch select="appl"> <case select="DRAW"><embed href="text/sdraw/04/01020000.xhp#stardrawtastaturbefehle"/></case> </switch>
+  <switch select="appl"> <case select="MATH"><embed href="text/smath/04/01020000.xhp#smathbef"/></case> </switch>
+ </body>
+</helpdocument>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03060100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">AND Operator [Runtime]</title>
+<filename>/text/sbasic/shared/03060100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-02-01T12:42:55">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="and">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146117"><bookmark_value>AND operator (logical)</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3146117" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03060100.xhp" name="AND Operator [Runtime]">AND Operator [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3143268" xml-lang="en-US" l10n="U" oldref="2">Logically combines two expressions.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147574" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U" oldref="4">Result = Expression1 And Expression2</paragraph>
+<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Result:</emph> Any numeric variable that records the result of the combination.</paragraph>
+<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Expression1, Expression2:</emph> Any expressions that you want to combine.</paragraph>
+<paragraph role="paragraph" id="par_id3156215" xml-lang="en-US" l10n="U" oldref="8">Boolean expressions combined with AND only return the value <emph>True</emph> if both expressions evaluate to <emph>True</emph>:</paragraph>
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="9">
+<emph>True</emph> AND <emph>True</emph> returns <emph>True</emph>; for all other combinations the result is <emph>False</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3153768" xml-lang="en-US" l10n="U" oldref="10">The AND operator also performs a bitwise comparison of identically positioned bits in two numeric expressions.</paragraph>
+<paragraph role="heading" id="hd_id3153727" xml-lang="en-US" level="2" l10n="U" oldref="11">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="12">Sub ExampleAnd</paragraph>
+<paragraph role="paragraph" id="par_id3152577" xml-lang="en-US" l10n="CHG" oldref="13">Dim A as Variant, B as Variant, C as Variant, D as Variant</paragraph>
+<paragraph role="paragraph" id="par_id3152598" xml-lang="en-US" l10n="U" oldref="14">Dim vVarOut as Variant</paragraph>
+<paragraph role="paragraph" id="par_id3153092" xml-lang="en-US" l10n="U" oldref="15">A = 10: B = 8: C = 6: D = Null</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="16">vVarOut = A &gt; B And B &gt; C REM returns -1</paragraph>
+<paragraph role="paragraph" id="par_id3154014" xml-lang="en-US" l10n="U" oldref="17">vVarOut = B &gt; A And B &gt; C REM returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3149262" xml-lang="en-US" l10n="CHG" oldref="18">vVarOut = A &gt; B And B &gt; D REM returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3145751" xml-lang="en-US" l10n="U" oldref="19">vVarOut = (B &gt; D And B &gt; A) REM returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3147394" xml-lang="en-US" l10n="U" oldref="20">vVarOut = B And A REM returns 8 due to the bitwise AND combination of both arguments</paragraph>
+<paragraph role="paragraph" id="par_id3151073" xml-lang="en-US" l10n="U" oldref="21">End Sub</paragraph>
+</body>
+</helpdocument>

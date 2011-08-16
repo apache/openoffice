@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textsbasicshared03132100xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">GetGuiType Function [Runtime]</title>
+         <filename>/text/sbasic/shared/03132100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="getguitype">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147143"><bookmark_value>GetGuiType function</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3155310" role="heading" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03132100.xhp" name="GetGuiType Function [Runtime]">GetGuiType Function [Runtime]</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152459" role="paragraph" l10n="U" oldref="2">Returns a numerical value that specifies the graphical user interface.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3153323" role="paragraph" l10n="U" oldref="3">This runtime function is only provided for downward compatibility to previous versions. The return value is not defined in client-server environments.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154894" role="heading" level="2" l10n="U" oldref="4">Syntax:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147143" role="paragraph" l10n="U" oldref="5">GetGUIType()</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149346" role="heading" level="2" l10n="U" oldref="6">Return value:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153748" role="paragraph" l10n="U" oldref="7">Integer</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149177" role="heading" level="2" l10n="U" oldref="8">Return values:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147242" role="paragraph" l10n="U" oldref="9">1: Windows</paragraph><comment>removed 3: Mac OS, see i95717</comment>
+<paragraph xml-lang="en-US" id="par_id3156152" role="paragraph" l10n="U" oldref="11">4: UNIX</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3148685" role="heading" level="2" l10n="U"
+                 oldref="12">Example:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149233" role="paragraph" l10n="U" oldref="13">Sub ExampleEnvironment</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145609" role="paragraph" l10n="U" oldref="14">MsgBox GetGUIType</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145069" role="paragraph" l10n="U" oldref="15">End Sub</paragraph>
+   </body>
+</helpdocument>

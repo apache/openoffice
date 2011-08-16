@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriterguidetable_selectxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Selecting Tables, Rows, and Columns</title>
+<filename>/text/swriter/guide/table_select.xhp</filename>
+</topic>
+<history>
+<created date="2004-09-27T15:16:47">UFI: Selexting tables</created>
+<lastedited date="2005-08-24T13:48:59">UFI: due to new feature sw-features "Enhanced selection for text and tables"
+DEDR: Reviewed</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id7693411"><bookmark_value>selecting;tables</bookmark_value>
+<bookmark_value>tables;selecting</bookmark_value>
+<bookmark_value>columns;selecting</bookmark_value>
+<bookmark_value>rows;selecting</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="par_idN105F0" xml-lang="en-US" level="1" l10n="NEW"><variable id="table_select"><link href="text/swriter/guide/table_select.xhp">Selecting Tables, Rows, and Columns</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN1060E" xml-lang="en-US" l10n="NEW">You can select a table in a text document with a keyboard or with a mouse.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10614" xml-lang="en-US" l10n="NEW">To select a table with the keyboard, move the cursor into the table, and then press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+A until all the cells are selected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10633" xml-lang="en-US" l10n="NEW">To select a table with the mouse, move the mouse pointer to a position just above and left of the table. The mouse pointer becomes a diagonal arrow. Click to select the table.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10637" xml-lang="en-US" l10n="NEW">To select a row or column with the mouse, point to a position just left of the row or above the column. The mouse pointer becomes an arrow. Click to select the row or column.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/swriter/guide/table_insert.xhp#table_insert"/>
+</section>
+</body>
+</helpdocument>

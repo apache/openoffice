@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0212110000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Form-based Filters</title>
+<filename>/text/shared/02/12110000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-10-07T12:28:01">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormFilter" id="bm_id7677230" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:FormFilter" id="bm_id3154894" localize="false"/>
+<section id="formbasedfilters">
+<paragraph role="heading" id="hd_id3147000" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="formfilter"><link href="text/shared/02/12110000.xhp" name="Form-based Filters">Form-based Filters</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154230" xml-lang="en-US" l10n="U" oldref="2"><variable id="formfiltertext"><ahelp hid=".uno:FormFilter">Prompts the database server to filter the visible data by specified criteria.</ahelp>
+</variable></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3152918" xml-lang="en-US" l10n="U" oldref="3">Unlike the normal search, which is activated by the <link href="text/shared/02/12100200.xhp" name="Find Record">Find Record</link> icon on the <emph>Form</emph> Bar, you can search more quickly by using the form-based filter. Usually a quick database server is charged with the search. Also, you can enter more complex search conditions.</paragraph>
+<section id="syformfilter">
+<table id="tbl_id3156136">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="E">
+<image id="img_id3147226" src="res/commandimagelist/sc_formfilter.png" width="0.564cm" height="0.564cm"><alt id="alt_id3147226" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149751" xml-lang="en-US" l10n="U" oldref="4">Form-based Filters</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<embed href="text/shared/guide/data_search2.xhp#data_search2"/>
+</body>
+</helpdocument>

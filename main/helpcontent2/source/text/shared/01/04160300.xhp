@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0104160300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Formula</title>
+<filename>/text/shared/01/04160300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-11-28T15:33:02">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152937"><bookmark_value>formulas; starting formula editor</bookmark_value>
+<bookmark_value>$[officename] Math start</bookmark_value>
+<bookmark_value>Math formula editor</bookmark_value>
+<bookmark_value>equations in formula editor</bookmark_value>
+<bookmark_value>editors;formula editor</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertMath" id="bm_id6753888" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertMath" id="bm_id3149962" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertObjectStarMath" id="bm_id4141990" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertObjectStarMath" id="bm_id3154812" localize="false"/>
+<paragraph role="heading" id="hd_id3152937" xml-lang="en-US" level="1" l10n="U" oldref="1">Formula</paragraph>
+<paragraph role="paragraph" id="par_id3149495" xml-lang="en-US" l10n="U" oldref="2"><variable id="starmath"><ahelp hid=".uno:InsertObjectStarMath">Inserts a formula into the current document.</ahelp><switchinline select="appl"><caseinline select="MATH">
+</caseinline><defaultinline> For more information open the $[officename] Math Help.</defaultinline></switchinline>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000404.xhp#math"/>
+</section>
+<switch select="appl">
+<case select="MATH">
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3154317" xml-lang="en-US" l10n="C"><link href="text/smath/main0000.xhp" name="Formulas">Formulas</link></paragraph>
+</section>
+</case>
+</switch>
+</body>
+</helpdocument>

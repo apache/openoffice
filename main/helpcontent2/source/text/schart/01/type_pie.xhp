@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textschart01type_piexhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Chart Type Pie </title>
+         <filename>/text/schart/01/type_pie.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id7621997"><bookmark_value>donut charts</bookmark_value>
+      <bookmark_value>pie charts;types</bookmark_value>
+      <bookmark_value>chart types;pie/donut</bookmark_value>
+</bookmark><comment>mw made one index entry out of two "chart types;"</comment><comment>mw  made "pie charts" a two level entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3365276" role="heading" level="1" l10n="NEW"><variable id="type_pie"><link href="text/schart/01/type_pie.xhp">Chart Type Pie</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id245979" role="paragraph" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type. </paragraph>
+      <section id="howtoget">
+         <embed href="text/schart/00/00000004.xhp#wiz"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id5799432" role="heading" level="2" l10n="NEW">Pie</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6549272" role="paragraph" l10n="NEW">A pie chart shows values as circular sectors of the total circle. The length of the arc, or the area of each sector, is proportional to its value.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6529740" role="paragraph" l10n="NEW">Pie - this subtype shows sectors as colored areas of the total pie, for one data column only. In the created chart, you can click and drag any sector to separate that sector from the remaining pie or to join it back.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9121982" role="paragraph" l10n="NEW">Exploded pie - this subtype shows the sectors already separated from each other. In the created chart, you can click and drag any sector to move it along a radial from the pie's center.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3808404" role="paragraph" l10n="NEW">Donut - this subtype can show multiple data columns. Each data column is shown as one donut shape with a hole inside, where the next data column can be shown. In the created chart, you can click and drag an outer sector to move it along a radial from the donut's center.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2394482" role="paragraph" l10n="NEW">Exploded donut - this subtype shows the outer sectors already separated from the remaining donut. In the created chart, you can click and drag an outer sector to move it along a radial from the donut's center.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+         <embed href="text/schart/01/wiz_chart_type.xhp#wiz_chart_type"/>
+         <embed href="text/schart/01/wiz_data_range.xhp#wiz_data_range"/>
+         <embed href="text/schart/01/wiz_data_series.xhp#wiz_data_series"/>
+         <embed href="text/schart/01/wiz_chart_elements.xhp#wiz_chart_elements"/>
+      </section>
+   </body>
+</helpdocument>

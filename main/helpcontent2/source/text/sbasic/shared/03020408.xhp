@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020408xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">FileLen-Function [Runtime]</title>
+<filename>/text/sbasic/shared/03020408.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-01T15:28:40">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="filelen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153126"><bookmark_value>FileLen function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153126" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020408.xhp" name="FileLen-Function [Runtime]">FileLen Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="2">Returns the length of a file in bytes.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3159414" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="4">FileLen (Text As String)</paragraph>
+<paragraph role="heading" id="hd_id3148798" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156282" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
+<paragraph role="heading" id="hd_id3150768" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Text:</emph> Any string expression that contains an unambiguous file specification. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="9">This function determines the length of a file. If the FileLen function is called for an open file, it returns the file length before it was opened. To determine the current file length of an open file, use the Lof function.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3163710" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="code" id="par_id3159154" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleFileLen</paragraph>
+<paragraph role="code" id="par_id3145271" xml-lang="en-US" l10n="U" oldref="12">msgbox FileLen("C:\autoexec.bat")</paragraph>
+<paragraph role="code" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="13">end sub</paragraph>
+</body>
+</helpdocument>

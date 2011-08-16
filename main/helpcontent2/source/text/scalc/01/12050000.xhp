@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************--><helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112050000xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Subtotals</title>
+<filename>/text/scalc/01/12050000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <bookmark xml-lang="en-US" branch="hid/.uno:DataSubTotals" id="bm_id1614637" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:DataSubTotals" xml-lang="en-US" id="bm_id3154515"/><paragraph role="heading" level="1" id="hd_id3153822" l10n="U" xml-lang="en-US" oldref="1">Subtotals</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3145119" xml-lang="en-US" oldref="2"><variable id="teilergebnisse"><ahelp hid=".uno:DataSubTotals" visibility="visible">Calculates subtotals for the columns that you select.</ahelp></variable> $[officename] uses the SUM function to automatically calculate the subtotal and grand total values in a labeled range. You can also use other functions to perform the calculation. $[officename] automatically recognizes a defined database area when you place the cursor in it.</paragraph>
+  <section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#dntegs"/>
+</section>
+  <paragraph role="paragraph" id="par_id3153896" l10n="U" xml-lang="en-US" oldref="3">For example, you can generate a sales summary for a certain postal code based on data from a client database.</paragraph>
+  <embed href="text/scalc/01/12050100.xhp#gruppe"/>
+  <embed href="text/scalc/01/12050200.xhp#optionen"/>
+  <embed href="text/shared/00/00000001.xhp#zurueck"/>
+  <paragraph role="heading" level="2" id="hd_id3163708" l10n="U" xml-lang="en-US" oldref="4">Delete</paragraph>
+  <paragraph role="paragraph" id="par_id3154125" l10n="U" xml-lang="en-US" oldref="5">Deletes the subtotal rows in the selected area.</paragraph>
+  
+ </body>
+</helpdocument>

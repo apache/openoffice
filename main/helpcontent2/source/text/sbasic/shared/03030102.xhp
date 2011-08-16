@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03030102xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">DateValue Function [Runtime]</title>
+<filename>/text/sbasic/shared/03030102.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-06-27T11:15:11">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="datevalue">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156344"><bookmark_value>DateValue function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3156344" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03030102.xhp" name="DateValue Function [Runtime]">DateValue Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150542" xml-lang="en-US" l10n="CHG" oldref="2">Returns a date value from a date string. The date string is a complete date in a single numeric value. You can also use this serial number to determine the difference between two dates.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3148799" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154910" xml-lang="en-US" l10n="U" oldref="4">DateValue [(date)]</paragraph>
+<paragraph role="heading" id="hd_id3150870" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3153194" xml-lang="en-US" l10n="CHG" oldref="6">Date<comment>i66764</comment></paragraph>
+<paragraph role="heading" id="hd_id3153969" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153770" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Date:</emph> String expression that contains the date that you want to calculate. The date can be specified in almost any format.</paragraph>
+<paragraph role="paragraph" id="par_id3153189" xml-lang="en-US" l10n="U" oldref="22">You can use this function to convert a date that occurs between December 1, 1582 and December 31, 9999 into a single integer value. You can then use this value to calculate the difference between two dates. If the date argument lies outside the acceptable range, $[officename] Basic returns an error message.</paragraph>
+<paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="U" oldref="23">In contrast to the DateSerial function that passes years, months, and days as separate numeric values, the DateValue function passes the date using the format "month.[,]day.[,]year".</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#languageformat"/>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3153142" xml-lang="en-US" level="2" l10n="U" oldref="24">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3155412" xml-lang="en-US" l10n="U" oldref="25">Sub ExampleDateValue</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="26">msgbox DateValue("12/02/1997")</paragraph>
+<paragraph role="paragraph" id="par_id3149262" xml-lang="en-US" l10n="U" oldref="27">end sub</paragraph>
+</body>
+</helpdocument>

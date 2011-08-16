@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************--><helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01120200xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Group Element Wizard: Default Field Selection</title>
+<filename>/text/shared/autopi/01120200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="seite2">
+  <paragraph id="hd_id3151299" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/shared/autopi/01120200.xhp" name="Group Element Wizard: Default Field Selection">Group Element Wizard: Default Field Selection</link></paragraph>
+  <paragraph role="paragraph" id="par_id3144740" l10n="U" xml-lang="en-US" oldref="2">Determines that you want one option field to be selected as the default choice.</paragraph>
+  </section>
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3154094" l10n="U" oldref="11">The default settings will be accepted if you open the form in the user mode. With these settings you determine the control property <link href="text/shared/02/01170101.xhp" name="Default Status">Default Status</link>.</paragraph>
+  <section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#gruppen2"/>
+</section>
+  <paragraph role="heading" level="2" id="hd_id3157896" l10n="U" xml-lang="en-US" oldref="3">Should one option field be selected as a default?</paragraph>
+  <paragraph role="paragraph" id="par_id3149346" l10n="U" xml-lang="en-US" oldref="4">Specifies whether you want to set default settings for the option box.</paragraph>
+  <!-- removed HID DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_YES --><paragraph role="heading" level="3" id="hd_id3147226" l10n="U" xml-lang="en-US" oldref="5">Yes, the following:</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150774" xml-lang="en-US" oldref="10"><ahelp hid="DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_YES" visibility="visible">Specifies that you want an option field to be selected as a default after opening the form.</ahelp> Choose the option field from the box.</paragraph>
+  <!-- removed HID DBP_LISTBOX_RID_PAGE_DEFAULTFIELDSELECTION_LB_DEFSELECTIONFIELD --><paragraph role="heading" level="3" id="hd_id3153345" l10n="U" xml-lang="en-US" oldref="6">List box</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3146957" xml-lang="en-US" oldref="7"><ahelp hid="DBP_LISTBOX_RID_PAGE_DEFAULTFIELDSELECTION_LB_DEFSELECTIONFIELD" visibility="visible">Select the option field that you want to have as the default when opening the form.</ahelp></paragraph>
+  <!-- removed HID DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_NO --><paragraph role="heading" level="3" id="hd_id3147242" l10n="U" xml-lang="en-US" oldref="8">No, one particular field is not going to be selected</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3163802" xml-lang="en-US" oldref="9"><ahelp hid="DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_NO" visibility="visible">Specifies that you do not want any option field to be the default choice.</ahelp></paragraph>
+ </body>
+</helpdocument>
