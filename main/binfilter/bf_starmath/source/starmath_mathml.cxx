@@ -36,6 +36,8 @@
 into one string, xml parser hands them to us line by line rather than all in
 one go*/
 
+#include <rtl/uuid.h>
+
 #ifndef _TOOLS_DEBUG_H
 #include <tools/debug.hxx>
 #endif

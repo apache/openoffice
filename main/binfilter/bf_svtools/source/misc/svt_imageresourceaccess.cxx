@@ -66,7 +66,6 @@ namespace binfilter
 //........................................................................
 
     using namespace ::utl;
-    using namespace ::comphelper;
     using namespace ::com::sun::star::io;
     using namespace ::com::sun::star::uno;
     using namespace ::com::sun::star::lang;
