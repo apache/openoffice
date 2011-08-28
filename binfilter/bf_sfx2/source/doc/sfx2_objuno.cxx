@@ -51,6 +51,7 @@
 #include <legacysmgr/legacy_binfilters_smgr.hxx>
 #endif
 
+#include <cppuhelper/typeprovider.hxx>
 #include <tools/errcode.hxx>
 #include <bf_so3/svstor.hxx>
 #include <bf_svtools/cntwids.hrc>
