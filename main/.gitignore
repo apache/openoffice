@@ -1,3 +1,5 @@
+# various extensions left behind
+*.sw[op]
 *-
 *-HEAD
 *-git
@@ -15,11 +17,46 @@
 *.rej
 *~
 .\#*
+
+# configure autoconf related
 /Linux*Env.Set*
+/autom4te.cache
+/config.guess
+/config.log
+/config.parms
+/config.status
+/set_soenv
 /bootstrap
 /makefile.mk
 /solver
+
+# misc
 CVS
 TAGS
 \#*
-unxlng*.pro
+
+# id-utils, ctags, cscope
+/ID
+/tags
+/*/ID
+/*/tags
+/*/cscope.files
+/*/cscope.in.out
+/*/cscope.out
+/*/cscope.po.out
+
+# externals
+/external/unowinreg/unowinreg.dll
+/moz/zipped/*.zip
+
+# $INPATH output directories
+/*/unxlng??
+/*/unxlng??.pro
+/*/wntmsc???
+/*/wntmsc???.pro
+/*/wntgcc?
+/*/wntgcc?.pro
+/*/unxso???
+/*/unxso???.pro
+/*/unxmac??
+/*/unxmac??.pro
