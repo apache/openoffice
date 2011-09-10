@@ -407,7 +407,7 @@ void SfxItemPool::readTheItems (
 		nLastSurrogate = nSurrogate;
 
 		// Ref-Count und Item laden
-		USHORT nRef;
+		USHORT nRef(0);
 		rStream >> nRef;
 
 		pItem = pDefItem->Create(rStream, nVersion);
@@ -610,7 +610,7 @@ SvStream &SfxItemPool::Load(SvStream &rStream)
 		for ( USHORT nVerNo = 0; aVerRec.GetContent(); ++nVerNo )
 		{
 			// Header f"ur einzelne Version einlesen
-			USHORT nVersion, nHStart, nHEnd;
+			USHORT nVersion(0), nHStart(0), nHEnd(0);
 			rStream >> nVersion >> nHStart >> nHEnd;
 			USHORT nCount = nHEnd - nHStart + 1;
 
@@ -619,6 +619,7 @@ SvStream &SfxItemPool::Load(SvStream &rStream)
 			{
 				// neue Version hinzufuegen
 				USHORT *pMap = new USHORT[nCount];
+                memset(pMap, 0, nCount * sizeof(USHORT));
 				for ( USHORT n = 0; n < nCount; ++n )
 					rStream >> pMap[n];
 				SetVersionMap( nVersion, nHStart, nHEnd, pMap );
@@ -635,7 +636,7 @@ SvStream &SfxItemPool::Load(SvStream &rStream)
 		while ( aWhichIdsRec.GetContent() )
 		{
 			// SlotId, Which-Id und Item-Version besorgen
-			USHORT nCount, nVersion, nWhich;
+			USHORT nCount(0), nVersion(0), nWhich(0);
 			//!USHORT nSlotId = aWhichIdsRec.GetContentTag();
 			rStream >> nWhich;
 			if ( pImp->nLoadingVersion != pImp->nVersion )
@@ -688,7 +689,7 @@ SvStream &SfxItemPool::Load(SvStream &rStream)
 		while ( aDefsRec.GetContent() )
 		{
 			// SlotId, Which-Id und Item-Version besorgen
-			USHORT nVersion, nWhich;
+			USHORT nVersion(0), nWhich(0);
 			//!USHORT nSlotId = aDefsRec.GetContentTag();
 			rStream >> nWhich;
 			if ( pImp->nLoadingVersion != pImp->nVersion )
@@ -741,7 +742,7 @@ SvStream &SfxItemPool::Load1_Impl(SvStream &rStream)
 		CHECK_FILEFORMAT( rStream, SFX_ITEMPOOL_TAG_STARTPOOL_4 );
 		rStream >> pImp->nMajorVer >> pImp->nMinorVer;
 	}
-	sal_uInt32 nAttribSize;
+	sal_uInt32 nAttribSize(0);
 	int bOwnPool = TRUE;
 	UniString aExternName;
 	if ( pImp->nMajorVer > 1 || pImp->nMinorVer >= 2 )
@@ -774,7 +775,7 @@ SvStream &SfxItemPool::Load1_Impl(SvStream &rStream)
 	ULONG nStartPos = rStream.Tell();
 	rStream.SeekRel( nAttribSize );
 	CHECK_FILEFORMAT( rStream, SFX_ITEMPOOL_TAG_SIZES );
-	sal_uInt32 nSizeTableLen;
+	sal_uInt32 nSizeTableLen(0);
 	rStream >> nSizeTableLen;
 	sal_Char *pBuf = new sal_Char[nSizeTableLen];
 	rStream.Read( pBuf, nSizeTableLen );
@@ -786,18 +787,18 @@ SvStream &SfxItemPool::Load1_Impl(SvStream &rStream)
 	{
 		// Version-Map finden (letztes ULONG der Size-Table gibt Pos an)
 		rStream.Seek( nEndOfSizes - sizeof(sal_uInt32) );
-		sal_uInt32 nVersionMapPos;
+		sal_uInt32 nVersionMapPos(0);
 		rStream >> nVersionMapPos;
 		rStream.Seek( nVersionMapPos );
 
 		// Versions-Maps einlesen
 		CHECK_FILEFORMAT( rStream, SFX_ITEMPOOL_TAG_VERSIONMAP );
-		USHORT nVerCount;
+		USHORT nVerCount(0);
 		rStream >> nVerCount;
 		for ( USHORT nVerNo = 0; nVerNo < nVerCount; ++nVerNo )
 		{
 			// Header f"ur einzelne Version einlesen
-			USHORT nVersion, nHStart, nHEnd;
+			USHORT nVersion(0), nHStart(0), nHEnd(0);
 			rStream >> nVersion >> nHStart >> nHEnd;
 			USHORT nCount = nHEnd - nHStart + 1;
 			USHORT nBytes = (nCount)*sizeof(USHORT);
@@ -807,6 +808,7 @@ SvStream &SfxItemPool::Load1_Impl(SvStream &rStream)
 			{
 				// neue Version hinzufuegen
 				USHORT *pMap = new USHORT[nCount];
+                memset(pMap, 0, nCount * sizeof(USHORT));
 				for ( USHORT n = 0; n < nCount; ++n )
 					rStream >> pMap[n];
 				SetVersionMap( nVersion, nHStart, nHEnd, pMap );
@@ -822,7 +824,7 @@ SvStream &SfxItemPool::Load1_Impl(SvStream &rStream)
 	CHECK_FILEFORMAT( rStream, SFX_ITEMPOOL_TAG_ITEMS );
 	FASTBOOL bSecondaryLoaded = FALSE;
 	long nSecondaryEnd = 0;
-	USHORT nWhich, nSlot;
+	USHORT nWhich(0), nSlot(0);
 	while ( rStream >> nWhich, nWhich )
 	{
 		// ggf. Which-Id aus alter Version verschieben?
@@ -833,8 +835,8 @@ SvStream &SfxItemPool::Load1_Impl(SvStream &rStream)
 		USHORT nMappedWhich = GetWhich(nSlot, FALSE);
 		int bKnownItem = bOwnPool || IsWhich(nMappedWhich);
 
-		USHORT nRef, nCount, nVersion;
-		sal_uInt32 nAttrSize;
+		USHORT nRef(0), nCount(0), nVersion(0);
+		sal_uInt32 nAttrSize(0);
 		rStream >> nVersion >> nCount;
 
 		SfxPoolItemArray_Impl **ppArr = 0;
@@ -984,8 +986,8 @@ SvStream &SfxItemPool::Load1_Impl(SvStream &rStream)
 		int bKnownItem = bOwnPool || IsWhich(nMappedWhich);
 
 		ULONG nPos = nLastPos;
-		sal_uInt32 nSize;
-		USHORT nVersion;
+		sal_uInt32 nSize(0);
+		USHORT nVersion(0);
 		rStream >> nVersion;
 
 		if ( bKnownItem )
@@ -1075,7 +1077,7 @@ const SfxPoolItem* SfxItemPool::LoadSurrogate
 
 {
 	// erstmal das Surrogat lesen
-	USHORT nSurrogat;
+	USHORT nSurrogat(0);
 	rStream >> nSurrogat;
 
 	// direkt gespeichertes Item?
@@ -1589,7 +1591,7 @@ const SfxPoolItem* SfxItemPool::LoadItem( SvStream &rStream, FASTBOOL bDirect,
 // pRefPool==-1 => nicht putten!
 
 {
-	USHORT nWhich, nSlot; // nSurrogate;
+	USHORT nWhich(0), nSlot(0); // nSurrogate;
 	rStream >> nWhich >> nSlot;
 
 	BOOL bDontPut = (SfxItemPool*)-1 == pRefPool;
@@ -1604,7 +1606,7 @@ const SfxPoolItem* SfxItemPool::LoadItem( SvStream &rStream, FASTBOOL bDirect,
 		else
 		{
 			// WID in der Version nicht vorhanden => ueberspringen
-			USHORT nSurro, nVersion, nLen;
+			USHORT nSurro(0), nVersion(0), nLen(0);
 			rStream >> nSurro;
 			if ( SFX_ITEMS_DIRECT == nSurro )
 			{
@@ -1642,8 +1644,8 @@ const SfxPoolItem* SfxItemPool::LoadItem( SvStream &rStream, FASTBOOL bDirect,
 	if ( bDirect || ( nWhich && !pItem ) )
 	{
 		// bDirekt bzw. nicht IsPoolable() => Item direkt laden
-		USHORT nVersion;
-		sal_uInt32 nLen;
+		USHORT nVersion(0);
+		sal_uInt32 nLen(0);
 		rStream >> nVersion >> nLen;
 		ULONG nIStart = rStream.Tell();
 
