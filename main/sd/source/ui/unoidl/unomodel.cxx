@@ -1980,7 +1980,7 @@ void SAL_CALL SdXImpressDocument::render( sal_Int32 nRenderer, const uno::Any& r
 									// if necessary, the master page interactions will be exported first
 									sal_Bool bIsBackgroundObjectsVisible = sal_False;	// SJ: #i39428# IsBackgroundObjectsVisible not available for Draw
 									const rtl::OUString sIsBackgroundObjectsVisible( RTL_CONSTASCII_USTRINGPARAM( "IsBackgroundObjectsVisible" ) );
-									if ( mbImpressDoc && ( xPagePropSet->getPropertyValue( sIsBackgroundObjectsVisible ) >>= bIsBackgroundObjectsVisible ) && bIsBackgroundObjectsVisible )
+									if ( mbImpressDoc && !pPDFExtOutDevData->GetIsExportNotesPages() && ( xPagePropSet->getPropertyValue( sIsBackgroundObjectsVisible ) >>= bIsBackgroundObjectsVisible ) && bIsBackgroundObjectsVisible )
 									{
 										uno::Reference< drawing::XMasterPageTarget > xMasterPageTarget( xPage, uno::UNO_QUERY );
 										if ( xMasterPageTarget.is() )
@@ -2013,7 +2013,7 @@ void SAL_CALL SdXImpressDocument::render( sal_Int32 nRenderer, const uno::Any& r
 									}
 
 									// exporting transition effects to pdf
-									if ( mbImpressDoc && pPDFExtOutDevData->GetIsExportTransitionEffects() )	// SJ: #i39428# TransitionEffects not available for Draw
+									if ( mbImpressDoc && !pPDFExtOutDevData->GetIsExportNotesPages() && pPDFExtOutDevData->GetIsExportTransitionEffects() )
 									{
 										const rtl::OUString sEffect( RTL_CONSTASCII_USTRINGPARAM( "Effect" ) );
 										const rtl::OUString sSpeed ( RTL_CONSTASCII_USTRINGPARAM( "Speed" ) );
@@ -2098,7 +2098,6 @@ void SAL_CALL SdXImpressDocument::render( sal_Int32 nRenderer, const uno::Any& r
 									}
 								}
 							}
-
 							Size		aPageSize( mpDoc->GetSdPage( 0, PK_STANDARD )->GetSize() );
 							Point aPoint( 0, 0 );
 							Rectangle	aPageRect( aPoint, aPageSize );
@@ -2111,40 +2110,40 @@ void SAL_CALL SdXImpressDocument::render( sal_Int32 nRenderer, const uno::Any& r
 							{
 								sal_Int32 nPage = ImplPDFGetBookmarkPage( aIBeg->aBookmark, *mpDoc );
 								if ( nPage != -1 )
-                                {
-                                    if ( aIBeg->nLinkId != -1 )
-									    pPDFExtOutDevData->SetLinkDest( aIBeg->nLinkId, pPDFExtOutDevData->CreateDest( aPageRect, nPage, vcl::PDFWriter::FitRectangle ) );
-                                    else
-									    pPDFExtOutDevData->DescribeRegisteredDest( aIBeg->nDestId, aPageRect, nPage, vcl::PDFWriter::FitRectangle );
-                                }
+								{
+									if ( aIBeg->nLinkId != -1 )
+										pPDFExtOutDevData->SetLinkDest( aIBeg->nLinkId, pPDFExtOutDevData->CreateDest( aPageRect, nPage, vcl::PDFWriter::FitRectangle ) );
+									else
+										pPDFExtOutDevData->DescribeRegisteredDest( aIBeg->nDestId, aPageRect, nPage, vcl::PDFWriter::FitRectangle );
+								}
 								else
 									pPDFExtOutDevData->SetLinkURL( aIBeg->nLinkId, aIBeg->aBookmark );
 								aIBeg++;
 							}
 							rBookmarks.clear();
-                            //---> i56629, i40318
-                            //get the page name, will be used as outline element in PDF bookmark pane
-                            String aPageName = mpDoc->GetSdPage( (sal_uInt16)nPageNumber - 1 , PK_STANDARD )->GetName();
-                            if( aPageName.Len() > 0 )
-                            {
-                                // insert the bookmark to this page into the NamedDestinations
-                                if( pPDFExtOutDevData->GetIsExportNamedDestinations() )
-                                    pPDFExtOutDevData->CreateNamedDest( aPageName, aPageRect,  nPageNumber - 1 );
-                                //
-                                // add the name to the outline, (almost) same code as in sc/source/ui/unoobj/docuno.cxx
-                                // issue i40318.
-                                //
-                                if( pPDFExtOutDevData->GetIsExportBookmarks() )
-                                {
-                                    // Destination Export
-                                    const sal_Int32 nDestId =
-                                        pPDFExtOutDevData->CreateDest( aPageRect , nPageNumber - 1 );
+							//---> i56629, i40318
+							//get the page name, will be used as outline element in PDF bookmark pane
+							String aPageName = mpDoc->GetSdPage( (sal_uInt16)nPageNumber - 1 , PK_STANDARD )->GetName();
+							if( aPageName.Len() > 0 )
+							{
+								// insert the bookmark to this page into the NamedDestinations
+								if( pPDFExtOutDevData->GetIsExportNamedDestinations() )
+									pPDFExtOutDevData->CreateNamedDest( aPageName, aPageRect,  nPageNumber - 1 );
+								//
+								// add the name to the outline, (almost) same code as in sc/source/ui/unoobj/docuno.cxx
+								// issue i40318.
+								//
+								if( pPDFExtOutDevData->GetIsExportBookmarks() )
+								{
+									// Destination Export
+									const sal_Int32 nDestId =
+										pPDFExtOutDevData->CreateDest( aPageRect , nPageNumber - 1 );
     
-                                    // Create a new outline item:
-                                    pPDFExtOutDevData->CreateOutlineItem( -1 , aPageName, nDestId );
-                                }                            
-                            }
-                            //<--- i56629, i40318
+									// Create a new outline item:
+									pPDFExtOutDevData->CreateOutlineItem( -1 , aPageName, nDestId );
+								}                            
+							}
+							//<--- i56629, i40318
 						}
 						catch( uno::Exception& )
 						{
