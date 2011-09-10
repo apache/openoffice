@@ -25,20 +25,16 @@
 #
 #*************************************************************************
 
-PRJ=..$/..
-PRJNAME=drawinglayer
-TARGET=geometry
+PRJ=..
+TARGET=prj
 
-# --- Settings ----------------------------------
+.INCLUDE : settings.mk
 
-.INCLUDE :  	settings.mk
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-# --- Files -------------------------------------
-
-SLOFILES= \
-		$(SLO)$/viewinformation2d.obj	\
-		$(SLO)$/viewinformation3d.obj
-
-# --- Targets ----------------------------------
-
-.INCLUDE : target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

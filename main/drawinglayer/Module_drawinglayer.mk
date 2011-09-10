@@ -2,7 +2,7 @@
 #
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
 # 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
+# Copyright 2000, 2011 Oracle and/or its affiliates.
 #
 # OpenOffice.org - a multi-platform office productivity suite
 #
@@ -25,38 +25,10 @@
 #
 #*************************************************************************
 
-PRJ=..$/..
-PRJNAME=drawinglayer
-TARGET=primitive3d
-ENABLE_EXCEPTIONS=TRUE
+$(eval $(call gb_Module_Module,drawinglayer))
 
-# --- Settings ----------------------------------
+$(eval $(call gb_Module_add_targets,drawinglayer,\
+	Library_drawinglayer \
+))
 
-.INCLUDE :  	settings.mk
-
-# --- Files -------------------------------------
-
-SLOFILES= \
-		$(SLO)$/baseprimitive3d.obj				\
-		$(SLO)$/groupprimitive3d.obj			\
-		$(SLO)$/hatchtextureprimitive3d.obj		\
-		$(SLO)$/hiddengeometryprimitive3d.obj	\
-		$(SLO)$/modifiedcolorprimitive3d.obj	\
-		$(SLO)$/polypolygonprimitive3d.obj		\
-		$(SLO)$/polygonprimitive3d.obj			\
-		$(SLO)$/polygontubeprimitive3d.obj		\
-		$(SLO)$/sdrcubeprimitive3d.obj			\
-		$(SLO)$/sdrdecompositiontools3d.obj		\
-		$(SLO)$/sdrextrudelathetools3d.obj		\
-		$(SLO)$/sdrextrudeprimitive3d.obj		\
-		$(SLO)$/sdrlatheprimitive3d.obj			\
-		$(SLO)$/sdrpolypolygonprimitive3d.obj	\
-		$(SLO)$/sdrprimitive3d.obj				\
-		$(SLO)$/sdrsphereprimitive3d.obj		\
-		$(SLO)$/shadowprimitive3d.obj			\
-		$(SLO)$/textureprimitive3d.obj			\
-		$(SLO)$/transformprimitive3d.obj
-
-# --- Targets ----------------------------------
-
-.INCLUDE : target.mk
+# vim: set noet ts=4 sw=4:
