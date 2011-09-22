@@ -17,6 +17,7 @@
 *.rej
 *~
 .\#*
+*.o
 
 # configure autoconf related
 /Linux*Env.Set*
@@ -29,6 +30,11 @@
 /bootstrap
 /makefile.mk
 /solver
+/winenv.set*
+/Makefile
+/dmake/*
+/guw/guw.exe*
+/warn
 
 # misc
 CVS
@@ -47,6 +53,7 @@ TAGS
 
 # externals
 /external/unowinreg/unowinreg.dll
+external/msvcp90/*
 /moz/zipped/*.zip
 
 # $INPATH output directories
