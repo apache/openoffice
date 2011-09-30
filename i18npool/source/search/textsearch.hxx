@@ -38,12 +38,15 @@
 
 #include <map>
 
-class Regexpr;
+#include <unicode/regex.h>
+using namespace U_ICU_NAMESPACE;
+typedef U_ICU_NAMESPACE::UnicodeString IcuUniString;
+
 class WLevDistance;
 typedef ::std::map< sal_Unicode, sal_Int32 > TextSearchJumpTable;
 
 //	----------------------------------------------------
-//	class SearchClass
+//	class TextSearch
 //	----------------------------------------------------
 class TextSearch: public cppu::WeakImplHelper2
 <
@@ -93,7 +96,7 @@ class TextSearch: public cppu::WeakImplHelper2
 							throw(::com::sun::star::uno::RuntimeException);
 
 	// Members and methods for the regular expression search
-	Regexpr* pRegExp;
+	RegexMatcher* pRegexMatcher;
 	::com::sun::star::util::SearchResult SAL_CALL
 		RESrchFrwrd( const ::rtl::OUString& searchStr,
 								sal_Int32 startPos, sal_Int32 endPos )
@@ -150,5 +153,4 @@ public:
                 throw( ::com::sun::star::uno::RuntimeException );
 };
 
- 
 #endif
