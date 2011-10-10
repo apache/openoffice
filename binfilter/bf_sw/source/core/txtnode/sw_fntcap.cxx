@@ -60,7 +60,7 @@ namespace binfilter {
 using namespace ::com::sun::star::i18n;
 
 
-#define KAPITAELCHENPROP 75
+#define KAPITAELCHENPROP 74
 /*************************************************************************
  *						class SwCapitalInfo
  *

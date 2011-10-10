@@ -51,7 +51,7 @@ namespace binfilter {
 #define MINKERNPERCENT 5
 
 // prop. Size of the small cap letters
-#define KAPITAELCHENPROP 75
+#define KAPITAELCHENPROP 74
 
 #ifndef REDUCEDSVXFONT
 	const sal_Unicode CH_BLANK = sal_Unicode(' ');  	// ' ' Leerzeichen
