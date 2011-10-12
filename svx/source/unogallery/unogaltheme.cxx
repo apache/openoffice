@@ -36,6 +36,9 @@
 #include "svx/gallery1.hxx"
 #include "svx/galmisc.hxx"
 #include <svx/fmmodel.hxx>
+#include <svx/svdpage.hxx>
+#include <svx/unopage.hxx>
+#include <svl/itempool.hxx>
 #include <rtl/uuid.h>
 #include <vos/mutex.hxx>
 #ifndef _SV_SVAPP_HXX_
@@ -313,23 +316,51 @@ void SAL_CALL GalleryTheme::update(  )
 	const uno::Reference< lang::XComponent >& Drawing, sal_Int32 nIndex )
 	throw (lang::WrappedTargetException, uno::RuntimeException)
 {
-	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
-	sal_Int32 			nRet = -1;
+    const ::vos::OGuard aGuard( Application::GetSolarMutex() );
+    sal_Int32           nRet = -1;
 
-	if( mpTheme )
-	{
-		GalleryDrawingModel* pModel = GalleryDrawingModel::getImplementation( Drawing );
+    if( mpTheme )
+    {
+        GalleryDrawingModel* pModel = GalleryDrawingModel::getImplementation( Drawing );
 
-		if( pModel && pModel->GetDoc() && pModel->GetDoc()->ISA( FmFormModel ) )
-		{
-			nIndex = ::std::max( ::std::min( nIndex, getCount() ), sal_Int32( 0 ) );
+        if( pModel && pModel->GetDoc() && pModel->GetDoc()->ISA( FmFormModel ) )
+        {
+            nIndex = ::std::max( ::std::min( nIndex, getCount() ), sal_Int32( 0 ) );
 
-			if( mpTheme->InsertModel( *static_cast< FmFormModel* >( pModel->GetDoc() ), nIndex ) )
-				nRet = nIndex;
-		}
-	}
+            if( mpTheme->InsertModel( *static_cast< FmFormModel* >( pModel->GetDoc() ), nIndex ) )
+                nRet = nIndex;
+        }
+        else if (!pModel)
+        {
+            try
+            {
+                uno::Reference< drawing::XDrawPagesSupplier > xDrawPagesSupplier( Drawing, uno::UNO_QUERY_THROW );
+                uno::Reference< drawing::XDrawPages > xDrawPages( xDrawPagesSupplier->getDrawPages(), uno::UNO_QUERY_THROW );
+                uno::Reference< drawing::XDrawPage > xPage( xDrawPages->getByIndex( 0 ), uno::UNO_QUERY_THROW );
+                SvxDrawPage* pUnoPage = xPage.is() ? SvxDrawPage::getImplementation( xPage ) : NULL;
+                SdrModel* pOrigModel = pUnoPage ? pUnoPage->GetSdrPage()->GetModel() : NULL;
+                SdrPage* pOrigPage = pUnoPage ? pUnoPage->GetSdrPage() : NULL;
 
-	return nRet;
+                if (pOrigPage && pOrigModel)
+                {
+                    FmFormModel* pTmpModel = new FmFormModel(&pOrigModel->GetItemPool());
+                    SdrPage* pNewPage = pOrigPage->Clone();
+                    pTmpModel->InsertPage(pNewPage, 0);
+
+                    uno::Reference< lang::XComponent > xDrawing( new GalleryDrawingModel( pTmpModel ) );
+                    pTmpModel->setUnoModel( uno::Reference< uno::XInterface >::query( xDrawing ) );
+
+                    nRet = insertDrawingByIndex( xDrawing, nIndex );
+                    return nRet;
+                }
+            }
+            catch (...)
+            {
+            }
+        }
+    }
+
+    return nRet;
 }
 
 // ------------------------------------------------------------------------------
