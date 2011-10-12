@@ -138,7 +138,16 @@ sal_Bool ScTabViewShell::ActivateObject( SdrOle2Obj* pObj, long nVerb )
         if ( !(nErr & ERRCODE_ERROR_MASK) && xObj.is() )
 		{
 			Rectangle aRect = pObj->GetLogicRect();
-			Size aDrawSize = aRect.GetSize();
+
+            {   
+                // #i118485# center on BoundRect for activation,
+                // OLE may be sheared/rotated now
+        	    const Rectangle& rBoundRect = pObj->GetCurrentBoundRect();
+                const Point aDelta(rBoundRect.Center() - aRect.Center());
+                aRect.Move(aDelta.X(), aDelta.Y());
+            }
+
+            Size aDrawSize = aRect.GetSize();
 
 			MapMode aMapMode( MAP_100TH_MM );
 			Size aOleSize = pObj->GetOrigObjSize( &aMapMode );
