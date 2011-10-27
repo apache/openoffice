@@ -132,6 +132,8 @@
 #include <unotools/syslocaleoptions.hxx>
 #include <unotools/syslocale.hxx>
 #include <svl/folderrestriction.hxx>
+#include <svl/eitem.hxx>
+#include <svl/itemset.hxx>
 #include <unotools/tempfile.hxx>
 #include <rtl/logfile.hxx>
 #include <rtl/ustrbuf.hxx>
@@ -145,6 +147,7 @@
 #include <vcl/stdtext.hxx>
 #include <vcl/msgbox.hxx>
 #include <sfx2/sfx.hrc>
+#include <sfx2/app.hxx>
 #include <ucbhelper/contentbroker.hxx>
 #include <unotools/bootstrap.hxx>
 #include <cppuhelper/bootstrap.hxx>
@@ -2118,12 +2121,21 @@ sal_Bool Desktop::InitializeQuickstartMode( Reference< XMultiServiceFactory >& r
         RTL_LOGFILE_CONTEXT( aLog, "desktop (cd100003) createInstance com.sun.star.office.Quickstart" );
 
         sal_Bool bQuickstart = GetCommandLineArgs()->IsQuickstart();
+        if ( !bQuickstart )
+        {
+            SfxItemSet aOptSet( SFX_APP()->GetPool(), SID_ATTR_QUICKLAUNCHER, SID_ATTR_QUICKLAUNCHER );
+            SFX_APP()->GetOptions(aOptSet);
+            const SfxPoolItem* pItem;
+            if ( SFX_ITEM_SET == aOptSet.GetItemState( SID_ATTR_QUICKLAUNCHER, sal_False, &pItem ) )
+                bQuickstart = ((const SfxBoolItem*)pItem)->GetValue();
+        }
+
         Sequence< Any > aSeq( 1 );
         aSeq[0] <<= bQuickstart;
 
         // Try to instanciate quickstart service. This service is not mandatory, so
         // do nothing if service is not available
-        
+
         // #i105753# the following if was invented for performance
         // unfortunately this broke the QUARTZ behavior which is to always run
         // in quickstart mode since Mac applications do not usually quit
