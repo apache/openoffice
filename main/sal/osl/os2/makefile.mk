@@ -70,15 +70,16 @@ SLOFILES=   $(SLO)$/conditn.obj  \
             $(SLO)$/security.obj \
             $(SLO)$/profile.obj  \
             $(SLO)$/tempfile.obj  \
-		$(SLO)$/process_impl.obj\
-		$(SLO)$/uunxapi.obj\
-		$(SLO)$/file.obj     \
-		$(SLO)$/file_url.obj \
-		$(SLO)$/file_error_transl.obj \
-		$(SLO)$/file_path_helper.obj \
-		$(SLO)$/debug.obj \
-		$(SLO)$/except.obj \
-		$(SLO)$/salinit.obj
+	    $(SLO)$/process_impl.obj\
+	    $(SLO)$/uunxapi.obj\
+	    $(SLO)$/file.obj     \
+	    $(SLO)$/file_url.obj \
+	    $(SLO)$/file_error_transl.obj \
+	    $(SLO)$/file_path_helper.obj \
+	    $(SLO)$/debug.obj \
+	    $(SLO)$/except.obj \
+	    $(SLO)$/debug_printf.obj \
+	    $(SLO)$/salinit.obj
 
 OBJFILES=   $(OBJ)$/conditn.obj  \
             $(OBJ)$/diagnose.obj \
