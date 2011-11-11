@@ -28,8 +28,7 @@
 #ifndef _SV_SALVD_H
 #define _SV_SALVD_H
 
-#include <vcl/sv.h>
-#include <vcl/salvd.hxx>
+#include <salvd.hxx>
 
 class Os2SalGraphics;
 
@@ -47,14 +46,14 @@ public:
 	HBITMAP 				mhDefBmp;				// Default Bitmap
 	Os2SalGraphics*			mpGraphics; 			// current VirDev graphics
 	USHORT					mnBitCount; 			// BitCount (0 or 1)
-	BOOL					mbGraphics; 			// is Graphics used
+	sal_Bool					mbGraphics; 			// is Graphics used
 
     Os2SalVirtualDevice();
     virtual ~Os2SalVirtualDevice();
 
     virtual SalGraphics*			GetGraphics();
     virtual void					ReleaseGraphics( SalGraphics* pGraphics );
-    virtual BOOL                    SetSize( long nNewDX, long nNewDY );
+    virtual sal_Bool                    SetSize( long nNewDX, long nNewDY );
     virtual void				    GetSize( long& rWidth, long& rHeight );
 };
 

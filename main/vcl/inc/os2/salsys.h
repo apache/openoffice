@@ -25,20 +25,19 @@
  *
  ************************************************************************/
 
-#ifndef _SV_SALTIMER_H
-#define _SV_SALTIMER_H
+#ifndef _SV_SALSYS_H
+#define _SV_SALSYS_H
 
-#include <vcl/saltimer.hxx>
+#include <salsys.hxx>
 
-class Os2SalTimer : public SalTimer
+class SalFrame;
+
+// -----------------
+// - SalSystemData -
+// -----------------
+
+class SalSystemData
 {
-public:
-    Os2SalTimer() {}
-    virtual ~Os2SalTimer();
-
-    // overload all pure virtual methods
-	void 			Start( ULONG nMS );
-	void 			Stop();
 };
 
-#endif
+#endif // _SV_SALSYS_H
