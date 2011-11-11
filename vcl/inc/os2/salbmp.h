@@ -29,8 +29,7 @@
 #define _SV_SALBMP_H
 
 #include <tools/gen.hxx>
-#include <vcl/sv.h>
-#include <vcl/salbmp.hxx>
+#include <salbmp.hxx>
 
 // --------------
 // - SalBitmap    -
@@ -64,10 +63,10 @@ public:
 
     static HANDLE       ImplCreateDIB( const Size& rSize, USHORT nBitCount, const BitmapPalette& rPal );
 	static HANDLE		ImplCreateDIB4FromDIB1( HANDLE hDIB1 );
-    static HANDLE       ImplCopyDIBOrDDB( HANDLE hHdl, BOOL bDIB );
+    static HANDLE       ImplCopyDIBOrDDB( HANDLE hHdl, bool bDIB );
     static USHORT       ImplGetDIBColorCount( HANDLE hDIB );
-    static void         ImplDecodeRLEBuffer( const BYTE* pSrcBuf, BYTE* pDstBuf,
-                                             const Size& rSizePixel, BOOL bRLE4 );
+    static void         ImplDecodeRLEBuffer( const PM_BYTE* pSrcBuf, PM_BYTE* pDstBuf,
+                                             const Size& rSizePixel, bool bRLE4 );
 
     //BOOL                Create( HANDLE hBitmap, BOOL bDIB, BOOL bCopyHandle );
 	
