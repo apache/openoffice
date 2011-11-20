@@ -942,8 +942,11 @@ sub call_epm
 
 	my $extraflags = "";
         if ($ENV{'EPM_FLAGS'}) { $extraflags = $ENV{'EPM_FLAGS'}; }
+
+    my $verboseflag = "-v";
+    if ( ! $installer::globals::quiet ) { $verboseflag = "-v2"; };
 	
-	my $systemcall = $ldpreloadstring . $epmname . " -f " . $packageformat . " " . $extraflags . " " . $localpackagename . " " . $epmlistfilename . $outdirstring . " -v " . " 2\>\&1 |";
+	my $systemcall = $ldpreloadstring . $epmname . " -f " . $packageformat . " " . $extraflags . " " . $localpackagename . " " . $epmlistfilename . $outdirstring . " " . $verboseflag . " " . " 2\>\&1 |";
 
 	installer::logger::print_message( "... $systemcall ...\n" );
 
