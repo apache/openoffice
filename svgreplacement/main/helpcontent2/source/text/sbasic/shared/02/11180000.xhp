@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textsbasicshared0211180000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Import Dialog</title>
+         <filename>/text/sbasic/shared/02/11180000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="import">
+<bookmark xml-lang="en-US" branch="hid/.uno:ImportDialog" id="bm_id092920903013963" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156183" role="heading" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/02/11180000.xhp" name="Import Dialog">Import Dialog</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152363" role="paragraph" l10n="U" oldref="2"><ahelp hid=".">Calls an "Open" dialog to import a BASIC dialog file.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id0929200903505211" role="paragraph" l10n="NEW">If the imported dialog has a name that already exists in the library, you see a message box where you can decide to rename the imported dialog. In this case the dialog will be renamed to the next free "automatic" name like when creating a new dialog. Or you can replace the existing dialog by the imported dialog. If you click Cancel the dialog is not imported.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0929200903505360" role="paragraph" l10n="NEW">Dialogs can contain localization data. When importing a dialog, a mismatch of the dialogs' localization status can occur.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0929200903505320" role="paragraph" l10n="NEW">If the library contains additional languages compared to the imported dialog, or if the imported dialog is not localized at all, then the additional languages will silently be added to the imported dialog using the strings of the dialog's default locale.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0929200903505383" role="paragraph" l10n="NEW">If the imported dialog contains additional languages compared to the library, or if the library is not localized at all, then you see a message box with Add, Omit, and Cancel buttons.</paragraph>
+         <list type="unordered">
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0929200903505340" role="paragraph" l10n="NEW">Add: The additional languages from the imported dialog will be added to the already existing dialog. The resources from the library's default language will be used for the new languages. This is the same as if you add these languages manually.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0929200903505367" role="paragraph" l10n="NEW">Omit: The library's language settings will stay unchanged. The imported dialog's resources for the omitted languages are not copied into the library, but they remain in the imported dialog's source files.</paragraph>
+            </listitem>
+         </list>
+      </section>
+      <section id="syimport">
+         <table id="tbl_id3153750">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3143267" role="paragraph" l10n="E">
+<image id="img_id3155339" src="res/commandimagelist/sc_importdialog.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3155339">Icon</alt>
+	</image></paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3145383" role="paragraph" l10n="U" oldref="3">Import Dialog</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+      </section>
+   </body>
+</helpdocument>

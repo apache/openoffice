@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03120102xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Chr Function [Runtime]</title>
+<filename>/text/sbasic/shared/03120102.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-12-13T14:13:52">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="chr">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149205"><bookmark_value>Chr function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120102.xhp" name="Chr Function [Runtime]">Chr Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U" oldref="2">Returns the character that corresponds to the specified character code.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="4">Chr(Expression As Integer)</paragraph>
+<paragraph role="heading" id="hd_id3143228" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3153824" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
+<paragraph role="heading" id="hd_id3148944" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149295" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Expression:</emph> Numeric variables that represent a valid 8 bit ASCII value (0-255) or a 16 bit Unicode value.</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="9">Use the <emph>Chr$</emph> function to send special control sequences to a printer or to another output source. You can also use it to insert quotation marks in a string expression.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3154366" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3144502" xml-lang="en-US" l10n="U" oldref="11">sub ExampleChr</paragraph>
+<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="CHG" oldref="12">REM This example inserts quotation marks (ASCII value 34) in a string.</paragraph>
+<paragraph role="paragraph" id="par_id3151380" xml-lang="en-US" l10n="U" oldref="13">MsgBox "A "+ Chr$(34)+"short" + Chr$(34)+" trip."</paragraph>
+<paragraph role="paragraph" id="par_id3145174" xml-lang="en-US" l10n="U" oldref="14">REM The printout appears in the dialog as: A "short" trip.</paragraph>
+<paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="15">end sub</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_idN10668" xml-lang="en-US" l10n="NEW"><link href="text/sbasic/shared/03120101.xhp">ASC</link></paragraph>
+</section>
+</body>
+</helpdocument>

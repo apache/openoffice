@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Table" script:language="StarBasic">REM  *****  BASIC  *****
+
+Dim oDialog AS Object
+Dim document AS Object
+
+Sub Main
+	document = StarDesktop.CurrentComponent
+
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+	CR
+	CreateTable(2, 2, &quot;tbl_&quot;+CreateID)
+End Sub
+
+
+
+</script:module>

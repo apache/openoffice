@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidehtml_docxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Saving and Opening Sheets in HTML</title>
+<filename>/text/scalc/guide/html_doc.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150542"><bookmark_value>HTML; sheets</bookmark_value>
+<bookmark_value>sheets; HTML</bookmark_value>
+<bookmark_value>saving; sheets in HTML</bookmark_value>
+<bookmark_value>opening; sheets in HTML</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150542" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="html_doc"><link href="text/scalc/guide/html_doc.xhp" name="Saving and Opening Sheets in HTML">Saving and Opening Sheets in HTML</link>
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3154124" xml-lang="en-US" level="2" l10n="U" oldref="2">Saving Sheets in HTML</paragraph>
+<paragraph role="paragraph" id="par_id3145785" xml-lang="en-US" l10n="U" oldref="3">
+<item type="productname">%PRODUCTNAME</item> Calc saves all the sheets of a Calc document together as an HTML document. At the beginning of the HTML document, a heading and a list of hyperlinks are automatically added which lead to the individual sheets within the document.</paragraph>
+<paragraph role="paragraph" id="par_id3155854" xml-lang="en-US" l10n="U" oldref="4">Numbers are shown as written. In addition, in the &lt;SDVAL&gt; HTML tag, the exact internal number value is written so that after opening the HTML document with <item type="productname">%PRODUCTNAME</item> you know you have the exact values.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153188" xml-lang="en-US" l10n="U" oldref="5">To save the current Calc document as HTML, choose <emph>File - Save As</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148645" xml-lang="en-US" l10n="CHG" oldref="6">In the <emph>File type</emph> list box, in the area with the other <item type="productname">%PRODUCTNAME</item> Calc filters, choose the file type "HTML Document (<item type="productname">%PRODUCTNAME</item> Calc)".</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154729" xml-lang="en-US" l10n="U" oldref="7">Enter a <emph>File name</emph> and click <emph>Save</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3149379" xml-lang="en-US" level="2" l10n="U" oldref="8">Opening Sheets in HTML</paragraph>
+<paragraph role="paragraph" id="par_id3149959" xml-lang="en-US" l10n="CHG" oldref="10">
+<item type="productname">%PRODUCTNAME</item> offers various filters for opening HTML files, which you can select under <emph>File - Open</emph> in the <emph>Files of type</emph> list box:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3146969" xml-lang="en-US" l10n="U" oldref="15">Choose the file type "HTML Document (<item type="productname">%PRODUCTNAME</item> Calc)" to open in <item type="productname">%PRODUCTNAME</item> Calc.</paragraph>
+<paragraph role="listitem" id="par_id3155446" xml-lang="en-US" l10n="U" oldref="16">All <item type="productname">%PRODUCTNAME</item> Calc options are now available to you. However, not all options that <item type="productname">%PRODUCTNAME</item> Calc offers for editing can be saved in HTML format.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/html_export.xhp#html_export"/>
+<embed href="text/swriter/guide/send2html.xhp#send2html"/>
+<embed href="text/scalc/guide/webquery.xhp#webquery"/>
+<paragraph role="paragraph" id="par_id3150370" xml-lang="en-US" l10n="U" oldref="17"><link href="text/shared/01/01020000.xhp" name="File - Open">File - Open</link></paragraph>
+<paragraph role="paragraph" id="par_id3150199" xml-lang="en-US" l10n="U" oldref="18"><link href="text/shared/01/01070000.xhp" name="File - Save As">File - Save As</link></paragraph>
+</section>
+</body>
+</helpdocument>

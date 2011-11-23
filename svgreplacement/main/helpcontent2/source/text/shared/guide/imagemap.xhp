@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+<meta>
+      <topic id="textsharedguideimagemapxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Adding Clickable Hotspots to Images</title>
+         <filename>/text/shared/guide/imagemap.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150502"><bookmark_value>ImageMap; editor</bookmark_value>
+      <bookmark_value>editors; ImageMap editor</bookmark_value>
+      <bookmark_value>images; ImageMap</bookmark_value>
+      <bookmark_value>pictures; ImageMap</bookmark_value>
+      <bookmark_value>hotspots;adding to images</bookmark_value>
+      <bookmark_value>URL;in pictures</bookmark_value>
+</bookmark><comment>mw added 2 index entries</comment><comment>MW made "hotspots" a two level entry</comment>
+<paragraph xml-lang="en-US" id="par_idN10631" role="heading" level="1" l10n="NEW"><variable id="imagemap"><link href="text/shared/guide/imagemap.xhp">Adding Clickable Hotspots to Images</link>
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1064F" role="paragraph" l10n="NEW">An ImageMap allows you to attach URLs to specific areas, called hotspots, on a picture in your document. An image map is a group of one or more hotspots.</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1066C" role="paragraph" l10n="NEW">You can draw three types of hotspots: rectangles, ellipses, and polygons. When you click a hotspot, the URL is opened in the browser window or frame that you specify. You can also specify the text that appears when your mouse rests on the hotspot.</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10677" role="heading" level="2" l10n="NEW">To add a clickable hotspot to an image</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN1067E" role="paragraph" l10n="NEW">Position the cursor where you want the ImageMap in your document.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN10682" role="paragraph" l10n="NEW">Choose <emph>Insert - Picture - From File</emph>, select and insert a bitmap picture.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN1068A" role="paragraph" l10n="NEW">With the picture selected, choose <emph>Edit - ImageMap</emph>. You see the <link href="text/shared/01/02220000.xhp">ImageMap Editor</link>, which displays the picture at the background.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN106A0" role="paragraph" l10n="NEW">Use the icons in the ImageMap Editor to draw a hotspot shape, for example a rectangle, over the image at the background.</paragraph>
+    <paragraph xml-lang="en-US" id="par_idN106A3" role="paragraph" l10n="NEW">You can see an extended help text on the functions of each icon when you enable Extended Help in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - General</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN106AB" role="paragraph" l10n="NEW">Enter the "Address" URL that will be shown in a Web browser when the user clicks the hotspot.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN106AF" role="paragraph" l10n="NEW">Optionally, enter the "Text" that will be shown as a tip when the user points the mouse to the hotspot.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN106B3" role="paragraph" l10n="NEW">Click the Apply button to apply your changes, and close the ImageMap Editor.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN106B7" role="paragraph" l10n="NEW">Save the document in the %PRODUCTNAME or HTML format.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="par_idN106BA" role="paragraph" l10n="NEW">You may save the ImageMap as a file and upload that file to a Web server, for example.</paragraph>
+  <embed href="text/shared/00/00000002.xhp#imagemap"/>
+  <embed href="text/shared/00/00000002.xhp#ss_imagemaps"/>
+  <embed href="text/shared/00/00000002.xhp#cs_imagemaps"/>
+ </body>
+</helpdocument>

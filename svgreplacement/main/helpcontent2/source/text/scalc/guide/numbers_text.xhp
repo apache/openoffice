@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textscalcguidenumbers_textxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Converting Text to Numbers</title>
+         <filename>/text/scalc/guide/numbers_text.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145068"><bookmark_value>formats; text as numbers</bookmark_value>
+      <bookmark_value>time format conversion</bookmark_value>
+      <bookmark_value>date formats;conversion</bookmark_value>
+      <bookmark_value>converting;text, into numbers</bookmark_value>
+</bookmark><comment>mw changed "converting;" and added two index entries</comment>
+<paragraph xml-lang="en-US" id="hd_id0908200901265171" role="heading" level="1" l10n="NEW"><variable id="numbers_text"><link href="text/scalc/guide/numbers_text.xhp" name="Converting Text to Numbers">Converting Text to Numbers</link>
+</variable></paragraph>
+      <section id="text">
+         <paragraph xml-lang="en-US" id="par_id0908200901265127" role="paragraph" l10n="NEW">Calc converts text inside cells to the respective numeric values if an unambiguous conversion is possible. If no conversion is possible, Calc returns a #VALUE! error.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0908200901265196" role="paragraph" l10n="NEW">Only integer numbers including exponent are converted, and ISO 8601 dates and times in their extended formats with separators. Anything else, like fractional numbers with decimal separators or dates other than ISO 8601, is not converted, as the text string would be locale dependent. Leading and trailing blanks are ignored.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0908200901265220" role="paragraph" l10n="NEW">The following ISO 8601 formats are converted:</paragraph>
+         <list type="unordered">
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265288" role="paragraph" l10n="NEW">CCYY-MM-DD</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265267" role="paragraph" l10n="NEW">CCYY-MM-DDThh:mm</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265248" role="paragraph" l10n="NEW">CCYY-MM-DDThh:mm:ss</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265374" role="paragraph" l10n="NEW">CCYY-MM-DDThh:mm:ss,s</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265327" role="paragraph" l10n="NEW">CCYY-MM-DDThh:mm:ss.s</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265399" role="paragraph" l10n="NEW">hh:mm</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265347" role="paragraph" l10n="NEW">hh:mm:ss</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265349" role="paragraph" l10n="NEW">hh:mm:ss,s</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id0908200901265342" role="paragraph" l10n="NEW">hh:mm:ss.s</paragraph>
+            </listitem>
+         </list>
+         <paragraph xml-lang="en-US" id="par_id0908200901265491" role="paragraph" l10n="NEW">The century code CC may not be omitted. Instead of the T date and time separator, exactly one space character may be used.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0908200901265467" role="paragraph" l10n="NEW">If a date is given, it must be a valid Gregorian calendar date. In this case the optional time must be in the range 00:00 to 23:59:59.99999...</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0908200901265420" role="paragraph" l10n="NEW">If only a time string is given, it may have an hours value of more than 24, while minutes and seconds can have a maximum value of 59.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0908200901265448" role="paragraph" l10n="NEW">The conversion is done for single arguments only, as in =A1+A2, or ="1E2"+1. Cell range arguments are not affected, so SUM(A1:A2) differs from A1+A2 if at least one of the two cells contain a convertible string.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id090820090126540" role="paragraph" l10n="NEW">Strings inside formulas are also converted, such as in ="1999-11-22"+42, which returns the date 42 days after November 22nd, 1999. Calculations involving localized dates as strings inside the formula return an error. For example, the localized date string "11/22/1999" or "22.11.1999" cannot be used for the automatic conversion.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id1005200903485368" role="heading" level="2" l10n="NEW">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id1005200903485359" role="paragraph" l10n="NEW">In A1 enter the text <item type="literal">'1e2</item> (which is converted to the number 100 internally).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id1005200903485341" role="paragraph" l10n="NEW">In A2 enter <item type="literal">=A1+1</item> (which correctly results in 101).</paragraph>
+      </section>
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/text_numbers.xhp#text_numbers"/>
+         <embed href="text/scalc/guide/integer_leading_zero.xhp#integer_leading_zero"/>
+         <paragraph xml-lang="en-US" id="par_id0908200901265544" role="paragraph" l10n="NEW"><link href="text/shared/01/05020300.xhp" name="Format - Cells - Numbers">Format - Cells - Numbers</link></paragraph>
+         <embed href="text/scalc/guide/format_value.xhp#format_value"/>
+      </section>
+   </body>
+</helpdocument>

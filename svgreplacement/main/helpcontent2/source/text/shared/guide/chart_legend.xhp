@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidechart_legendxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Editing Chart Legends</title>
+<filename>/text/shared/guide/chart_legend.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-02-05T14:54:58">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147291"><bookmark_value>charts; editing legends</bookmark_value>
+<bookmark_value>legends; charts</bookmark_value>
+<bookmark_value>editing; chart legends</bookmark_value>
+<bookmark_value>formatting; chart legends</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147291" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="chart_legend"><link href="text/shared/guide/chart_legend.xhp" name="Editing Chart Legends">Editing Chart Legends</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147008" xml-lang="en-US" l10n="U" oldref="2">To edit a chart legend:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3146957" xml-lang="en-US" l10n="U" oldref="3">Double-click on the chart.</paragraph>
+<paragraph role="listitem" id="par_id3154824" xml-lang="en-US" l10n="U" oldref="4">A gray border appears around the chart and the menu bar now contains commands for editing the objects in the chart.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153031" xml-lang="en-US" l10n="U" oldref="5">Choose <emph>Format - Legend</emph> or double-click on the legend. This opens the <emph>Legend</emph> dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147210" xml-lang="en-US" l10n="U" oldref="6">Choose from the available tabs to make modifications, then click <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3145674" xml-lang="en-US" l10n="U" oldref="9">To select the legend, first double-click on the chart (see step 1), then click on the legend. You can now move the legend within the chart using the mouse.</paragraph><comment>ufi: removed an absolete note</comment>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U" oldref="11"><link href="text/schart/01/05010000.xhp" name="Format - Object Properties">Format - Object Properties</link></paragraph>
+<embed href="text/shared/guide/chart_axis.xhp#chart_axis"/>
+<embed href="text/shared/guide/chart_title.xhp#chart_title"/>
+</section>
+</body>
+</helpdocument>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabase02000000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Queries</title>
+<filename>/text/shared/explorer/database/02000000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="abfragen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150445"><bookmark_value>queries;overview (Base)</bookmark_value>
+<bookmark_value>tables in databases; printing queries (Base)</bookmark_value>
+<bookmark_value>printing; queries (Base)</bookmark_value>
+<bookmark_value>queries; printing (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)" to all entries </comment><paragraph role="heading" id="hd_id3150445" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/explorer/database/02000000.xhp" name="Queries">Queries</link></paragraph>
+<paragraph role="paragraph" id="par_id3150499" xml-lang="en-US" l10n="CHG" oldref="2">A "query" is a special view of a table. A query can display chosen records or chosen fields within records; it can also sort those records. A query can apply to one table to multiple tables, if they are linked by common data fields.<comment>i73680</comment></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000450.xhp#Abfragen"/>
+</section>
+<paragraph role="paragraph" id="par_id3147399" xml-lang="en-US" l10n="U" oldref="12">Use queries to find records from data tables based on certain criteria. All queries created for a database are listed under the <emph>Queries</emph> entry. Since this entry contains the database queries, it is also called the "query container".</paragraph>
+<paragraph role="heading" id="hd_id3153750" xml-lang="en-US" level="2" l10n="U" oldref="39">Printing Queries</paragraph>
+<paragraph role="paragraph" id="par_id3149183" xml-lang="en-US" l10n="U" oldref="40">To print a query or table:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156426" xml-lang="en-US" l10n="U" oldref="41">Open a text document (or a spreadsheet document if you prefer the specific printing functions of this type of document).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149827" xml-lang="en-US" l10n="CHG" oldref="42">Open the database file and click the Table icon if you want to print a table, or click the Query icon if you want to print a query.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149398" xml-lang="en-US" l10n="CHG" oldref="43">Drag the name of the table or query into the open text document or spreadsheet. The dialog <link href="text/shared/02/12070000.xhp" name="Insert Database Columns">Insert Database Columns</link> opens.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150443" xml-lang="en-US" l10n="U" oldref="44">Decide which columns = data fields you want to include. You can also click the <emph>AutoFormat</emph> button and select a corresponding formatting type. Close the dialog.</paragraph>
+<paragraph role="listitem" id="par_id3153561" xml-lang="en-US" l10n="U" oldref="49">The query or table will be inserted into your document.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150503" xml-lang="en-US" l10n="U" oldref="50">Print the document by choosing <emph>File - Print</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="tip" id="par_id3153146" xml-lang="en-US" l10n="CHG" oldref="47">You can also open the data source view (F4), select the entire database table in the data source view (button in the top left corner of the table), and then drag the selection to a text document or spreadsheet.</paragraph>
+<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="2" l10n="U" oldref="46"><link href="text/shared/main0212.xhp" name="Sorting and Filtering Data">Sorting and Filtering Data</link></paragraph>
+<paragraph role="paragraph" id="par_id3149655" xml-lang="en-US" l10n="U" oldref="28">Allows you to sort and filter the data in a query table.</paragraph>
+<paragraph role="heading" id="hd_id3153379" xml-lang="en-US" level="2" l10n="U" oldref="14"><link href="text/shared/explorer/database/02010100.xhp" name="Query Design">Query Design</link></paragraph>
+<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="18">With the <emph>Query Design</emph>, you can create and edit a query or view.</paragraph>
+<embed href="text/shared/main0214.xhp#sql"/>
+<paragraph role="heading" id="hd_id3153968" xml-lang="en-US" level="2" l10n="U" oldref="29"><link href="text/shared/explorer/database/02010100.xhp" name="Query Through Several Tables">Query Through Several Tables</link></paragraph>
+<paragraph role="paragraph" id="par_id3151043" xml-lang="en-US" l10n="U" oldref="30">The query result can contain data from several tables if these are linked to each other by suitable data fields.</paragraph>
+<paragraph role="heading" id="hd_id3159149" xml-lang="en-US" level="2" l10n="U" oldref="31"><link href="text/shared/explorer/database/02010100.xhp" name="Formulating Query Criteria">Formulating Query Criteria</link></paragraph>
+<paragraph role="paragraph" id="par_id3154910" xml-lang="en-US" l10n="U" oldref="32">You can find out which operators and commands can be used to formulate the filter conditions for a query.</paragraph>
+<paragraph role="heading" id="hd_id3156212" xml-lang="en-US" level="2" l10n="U" oldref="33"><link href="text/shared/explorer/database/02010100.xhp" name="Executing Functions">Executing Functions</link></paragraph>
+<paragraph role="paragraph" id="par_id3144762" xml-lang="en-US" l10n="U" oldref="34">You can perform calculations with the data of a table and store the results as a query result.</paragraph>
+</body>
+</helpdocument>

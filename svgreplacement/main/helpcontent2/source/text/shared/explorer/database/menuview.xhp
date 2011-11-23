@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasemenuviewxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">View</title>
+<filename>/text/shared/explorer/database/menuview.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-29T14:32:59">UFI: View menu of Database</created>
+<lastedited date="2005-02-07T14:15:18">DEDR: Reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="view">
+<paragraph role="heading" id="par_idN1054D" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/menuview.xhp">View</link></paragraph>
+</section>
+<paragraph role="paragraph" id="par_idN1055D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The View menu of a database window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDatabaseObjectsMenu" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN10560" xml-lang="en-US" level="2" l10n="NEW">Database Objects</paragraph>
+<paragraph role="paragraph" id="par_idN10564" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens a submenu.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBViewForms" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN10567" xml-lang="en-US" level="3" l10n="NEW">Forms</paragraph>
+<paragraph role="paragraph" id="par_idN1056B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Selects the forms container and shows all forms in the detail view.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBViewReports" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN1056E" xml-lang="en-US" level="3" l10n="NEW">Reports</paragraph>
+<paragraph role="paragraph" id="par_idN10572" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Selects the reports container and shows all reports in the detail view.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBViewQueries" id="bm_id1669362" localize="false"/>
+<paragraph role="heading" id="par_idN10575" xml-lang="en-US" level="3" l10n="NEW">Queries</paragraph>
+<paragraph role="paragraph" id="par_idN10579" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Selects the queries container and shows all queries in the detail view.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBViewTables" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN1057C" xml-lang="en-US" level="3" l10n="NEW">Tables</paragraph>
+<paragraph role="paragraph" id="par_idN10580" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Selects the tables container and shows all tables in the detail view.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBSort" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN10583" xml-lang="en-US" level="2" l10n="NEW">Sort</paragraph>
+<paragraph role="paragraph" id="par_idN10587" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens a submenu.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN1058A" xml-lang="en-US" level="3" l10n="NEW">Ascending</paragraph>
+<paragraph role="paragraph" id="par_idN1058E" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Sorts the entries in the detail view in ascending order.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10591" xml-lang="en-US" level="3" l10n="NEW">Descending</paragraph>
+<paragraph role="paragraph" id="par_idN10595" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Sorts the entries in the detail view in descending order.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBPreview" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN10598" xml-lang="en-US" level="2" l10n="NEW">Preview</paragraph>
+<paragraph role="paragraph" id="par_idN1059C" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens a submenu.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDisablePreview" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN1059F" xml-lang="en-US" level="3" l10n="NEW">None</paragraph>
+<paragraph role="paragraph" id="par_idN105B5" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Disables the preview in the database window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBShowDocInfoPreview" id="bm_id1669362" localize="false"/>
+<paragraph role="heading" id="par_idN105B8" xml-lang="en-US" level="3" l10n="NEW">Document Information</paragraph>
+<paragraph role="paragraph" id="par_idN105BC" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The preview window displays the document information of a form or report.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBShowDocPreview" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN105BF" xml-lang="en-US" level="3" l10n="NEW">Document</paragraph>
+<paragraph role="paragraph" id="par_idN105C3" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The preview displays the document of a form or report.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBRefreshTables" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN105C6" xml-lang="en-US" level="2" l10n="NEW">Refresh Tables</paragraph>
+<paragraph role="paragraph" id="par_idN105CA" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Refreshes the tables. </ahelp><comment>what happens? cool drinks? Icecream?</comment></paragraph>
+</body>
+</helpdocument>

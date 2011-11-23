@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090402xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Choose Function [Runtime]</title>
+<filename>/text/sbasic/shared/03090402.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T09:37:38">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="choose">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143271"><bookmark_value>Choose function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3143271" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090402.xhp" name="Choose Function [Runtime]">Choose Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149234" xml-lang="en-US" l10n="U" oldref="2">Returns a selected value from a list of arguments.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3148943" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="4">Choose (Index, Selection1[, Selection2, ... [,Selection_n]])</paragraph>
+<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148664" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Index:</emph> A numeric expression that specifies the value to return.</paragraph>
+<paragraph role="paragraph" id="par_id3150791" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Selection1:</emph> Any expression that contains one of the possible choices.</paragraph>
+<paragraph role="paragraph" id="par_id3151043" xml-lang="en-US" l10n="U" oldref="8">The <emph>Choose</emph> function returns a value from the list of expressions based on the index value. If Index = 1, the function returns the first expression in the list, if index i= 2, it returns the second expression, and so on.</paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="9">If the index value is less than 1 or greater than the number of expressions listed, the function returns a Null value.</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="10">The following example uses the <emph>Choose</emph> function to select a string from several strings that form a menu:</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3150439" xml-lang="en-US" level="2" l10n="U" oldref="11">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153091" xml-lang="en-US" l10n="U" oldref="12">Sub ExampleChoose</paragraph>
+<paragraph role="paragraph" id="par_id3152597" xml-lang="en-US" l10n="U" oldref="13">Dim sReturn As String</paragraph>
+<paragraph role="paragraph" id="par_id3155855" xml-lang="en-US" l10n="U" oldref="14">sReturn = ChooseMenu(2)</paragraph>
+<paragraph role="paragraph" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="15">Print sReturn</paragraph>
+<paragraph role="paragraph" id="par_id3154012" xml-lang="en-US" l10n="U" oldref="16">end sub</paragraph>
+<paragraph role="paragraph" id="par_id3146921" xml-lang="en-US" l10n="U" oldref="19">Function ChooseMenu(Index As Integer)</paragraph>
+<paragraph role="paragraph" id="par_id3156443" xml-lang="en-US" l10n="U" oldref="20">ChooseMenu = Choose(Index, "Quick Format", "Save Format", "System Format")</paragraph>
+<paragraph role="paragraph" id="par_id3148645" xml-lang="en-US" l10n="U" oldref="21">End Function</paragraph>
+</body>
+</helpdocument>

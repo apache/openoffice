@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidesorted_listxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Applying Sort Lists</title>
+<filename>/text/scalc/guide/sorted_list.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150870"><bookmark_value>filling;customized lists</bookmark_value>
+<bookmark_value>sort lists;applying</bookmark_value>
+<bookmark_value>defining;sort lists</bookmark_value>
+<bookmark_value>geometric lists</bookmark_value>
+<bookmark_value>arithmetic lists</bookmark_value>
+<bookmark_value>series;sort lists</bookmark_value>
+<bookmark_value>lists; user-defined</bookmark_value>
+<bookmark_value>customized lists</bookmark_value>
+</bookmark>
+  <comment>mw deleted "applying;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3150870" role="heading" level="1" l10n="U" oldref="3"><variable id="sorted_list"><link href="text/scalc/guide/sorted_list.xhp" name="Applying Sort Lists">Applying Sort Lists</link> 
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3159154" role="paragraph" l10n="U" oldref="7">Sort lists allow you to type one piece of information in a cell, then drag it to fill in a consecutive list of items.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3148645" role="paragraph" l10n="U" oldref="4">For example, enter the text "Jan" or "January" in an empty cell. Select the cell and click the mouse on the lower right corner of the cell border. Then drag the selected cell a few cells to the right or downwards. When you release the mouse button, the highlighted cells will be filled with the names of the months.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id2367931" role="paragraph" l10n="NEW">Hold down <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>if you do not want to fill the cells with different values.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3152577" role="paragraph" l10n="U" oldref="5">The predefined series can be found under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Sort Lists</emph>. You can also create your own lists of text strings tailored to your needs, such as a list of your company's branch offices. When you use the information in these lists later (for example, as headings), just enter the first name in the list and expand the entry by dragging it with your mouse.</paragraph>
+  <section id="relatedtopics">
+   
+   <embed href="text/scalc/guide/calc_series.xhp#calc_series"/>
+   <paragraph xml-lang="en-US" id="par_id3147434" role="paragraph" l10n="U" oldref="6"><link href="text/shared/optionen/01060400.xhp" name="Sort lists">Sort lists</link></paragraph>
+   
+  </section>
+ </body>
+</helpdocument>

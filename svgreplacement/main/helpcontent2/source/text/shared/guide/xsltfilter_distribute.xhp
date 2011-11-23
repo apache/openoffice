@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidexsltfilter_distributexhp" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Distributing an XML filter as package </title>
+<filename>/text/shared/guide/xsltfilter_distribute.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id7007583"><bookmark_value>distributing XML filters</bookmark_value>
+<bookmark_value>deleting;XML filters</bookmark_value>
+<bookmark_value>XML filters;saving as package/installing/deleting</bookmark_value>
+<bookmark_value>installing;XML filters</bookmark_value>
+</bookmark>
+  <comment>mw moved 2 index entries from xsltfilter.xhp and added 2 entries</comment>
+  <paragraph xml-lang="en-US" id="par_idN10ABC" role="heading" level="1" l10n="NEW"><variable id="xsltfilter"><link href="text/shared/guide/xsltfilter_distribute.xhp">Distributing An XML Filter As Package</link> 
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10AC0" role="paragraph" l10n="NEW">You can distribute an XML filter to multiple users using a special package format.</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10AC3" role="heading" level="2" l10n="NEW">To Save an XML Filter as a Package</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10ACD" role="note" l10n="NEW">The XML Filter Settings dialog is only available when a text document is open.</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN10ACA" role="paragraph" l10n="NEW">In Writer, choose <item type="menuitem">Tools - XML Filter Settings</item>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN10AD9" role="paragraph" l10n="NEW">Select the filter that you want to distribute and click <emph>Save As Package</emph>.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="par_idN10AE0" role="heading" level="2" l10n="NEW">To Install an XML Filter from a Package</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10AEA" role="note" l10n="NEW">The XML Filter Settings dialog is only available when a text document is opened.</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN10AE7" role="paragraph" l10n="NEW">In Writer, choose <item type="menuitem">Tools - XML Filter Settings</item>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN10AF6" role="paragraph" l10n="NEW">Click <emph>Open Package</emph> and select the package file with the filter you want to install.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="par_idN10535" role="heading" level="2" l10n="NEW">To Delete an Installed XML Filter</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN10B0A" role="paragraph" l10n="NEW">In Writer, choose <item type="menuitem">Tools - XML Filter Settings</item>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN10B19" role="paragraph" l10n="NEW">Select the filter you want to delete and click <emph>Delete</emph>.</paragraph>
+   </listitem>
+  </list>
+  <section id="relatedtopics">
+   
+   <paragraph xml-lang="en-US" id="par_id6011841" role="paragraph" l10n="NEW"><link href="text/shared/guide/xsltfilter.xhp">About XML Filters</link></paragraph>
+   
+  </section>
+ </body>
+</helpdocument>

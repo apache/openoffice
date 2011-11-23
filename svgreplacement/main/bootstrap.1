@@ -1,0 +1,126 @@
+
+# executables are *.exe for WNT. This variable is necessary since Cygwin 1.5.x
+# Use spawn instead of fork when building dmake on cygwin. 
+if test "$GUI" = "WNT"; then
+    EXEEXT=".exe"
+else
+    EXEEXT=""
+fi
+export EXEEXT
+
+mkdir -p "$SOLARENV/$OUTPATH/bin"
+
+if test "$GUI" = "WNT" -a ! -x "$SOLARENV/$OUTPATH/bin/guw$EXEEXT"; then
+  echo ""
+  echo "Calling $GNUMAKE in guw"
+  cd "$SRC_ROOT/guw" || exit
+  $GNUMAKE || exit
+  echo ""
+  echo "guw has been successfully made"
+  cp -f "$SRC_ROOT/guw/guw$EXEEXT" "$SOLARENV/$OUTPATH/bin/guw$EXEEXT" || exit
+  echo ""
+  echo "guw copied to $SOLARENV/$OUTPATH/bin/guw$EXEEXT"
+fi
+
+#make sure build.pl is executable 
+
+chmod +x "$SRC_ROOT/solenv/bin/build.pl"
+chmod +x "$SRC_ROOT/solenv/bin/build_client.pl"
+chmod +x "$SRC_ROOT/solenv/bin/zipdep.pl"
+chmod +x "$SRC_ROOT/solenv/bin/gccinstlib.pl"
+
+# fetch or update external tarballs
+if [ "$DO_FETCH_TARBALLS" = "yes" ]; then
+	$SRC_ROOT/fetch_tarballs.sh $SRC_ROOT/ooo.lst
+fi
+
+# ------------------------------------------------------------------------------
+# Build dmake
+
+if test -n "$DMAKE_URL" -a  ! -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
+
+    # Assume that the dmake archive has been downloaded by fetch_tarballs.sh
+    # Determine the name of the downloaded file.
+    dmake_package_name=`echo $DMAKE_URL | sed "s/^\(.*\/\)//"`
+
+    tmp_build_dir="$SOLARENV/$OUTPATH/misc/build/"
+    echo "making and entering $tmp_build_dir"
+    # Clean up any residues from a previous and unsuccessful build.
+    rm -rf "$tmp_build_dir"
+    mkdir -p "$tmp_build_dir"
+    cd "$tmp_build_dir" || exit
+
+    dmake_full_package_name="$TARFILE_LOCATION/$dmake_package_name"
+    if test "$GUI" = "WNT"; then
+        dmake_full_package_name=`cygpath -u "$dmake_full_package_name"`
+    fi
+    echo "unpacking $dmake_full_package_name"
+
+    # Unpack it.
+    case $dmake_package_name in
+        *.tar.gz)
+            tar -xzf "$dmake_full_package_name"
+            dmake_directory_name=`echo $dmake_package_name | sed "s/\(\.tar.gz\)//"`
+            ;;
+        *.tgz)
+            tar -xzf "$dmake_full_package_name"
+            dmake_directory_name=`echo $dmake_package_name | sed "s/\(\.tgz\)//"`
+            ;;
+        *.tar.bz2)
+            tar -xjf "$dmake_full_package_name"
+            dmake_directory_name=`echo $dmake_package_name | sed "s/\(\.tar.bz2\)//"`
+            ;;
+        *.zip)
+            unzip "$dmake_full_package_name"
+            dmake_directory_name=`echo $dmake_package_name | sed "s/\(\.zip\)//"`
+            ;;
+        *)
+            echo "can not unpack the dmake source"
+            dmake_directory_name=
+            exit 1
+            ;;        
+    esac
+
+    echo "entering $dmake_directory_name"
+    cd "$dmake_directory_name" || exit
+
+    # Special case! The w32/tcsh build needs CC pointing to the MSVC++ compiler
+    # but we need a cygwin/gcc build dmake to understand the posix paths
+    if test "$GUI" = "WNT"; then
+        CC=""
+        CXX=""
+        export CC
+        export CXX
+        DMAKE_CONF="--enable-spawn"
+    else
+        DMAKE_CONF=""
+    fi
+
+    # For unixy systems
+    if test -f "Makefile" ; then
+        $GNUMAKE distclean || exit
+    fi
+
+    ./configure $DMAKE_CONF || exit
+        
+    ## invoke the gnu make command set by configure.
+    $GNUMAKE || exit
+
+
+    # Deploy the dmake executable to solenv
+    cp -f "$tmp_build_dir/$dmake_directory_name/dmake$EXEEXT" "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT" || exit
+    echo ""
+    echo "dmake successfully built and copied to $SOLARENV/$OUTPATH/bin/dmake$EXEEXT"
+    echo ""
+
+    # Clean up.  Note that this is skipped when one of the exits is executed above.
+    rm -rf "$tmp_build_dir"
+
+else
+
+    if test -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
+        echo ""
+        echo "dmake present in $SOLARENV/$OUTPATH/bin/dmake$EXEEXT"
+    fi
+    
+fi

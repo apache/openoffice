@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidechart_barformatxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Adding Texture to Chart Bars</title>
+<filename>/text/shared/guide/chart_barformat.xhp</filename>
+</topic>
+</meta>
+<body>
+
+
+
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149798"><bookmark_value>charts; bars with textures</bookmark_value>
+<bookmark_value>textures;on chart bars</bookmark_value>
+<bookmark_value>inserting;textures on chart bars</bookmark_value>
+</bookmark>
+  <comment>MW changed "adding;" to "inserting;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3149798" role="heading" level="1" l10n="U" oldref="1"><variable id="chart_barformat"><link href="text/shared/guide/chart_barformat.xhp" name="Adding Texture to Chart Bars">Adding Texture to Chart Bars</link>
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3156136" role="paragraph" l10n="U" oldref="3">You can add texture to the bars in a graph or chart (instead of the default colors) via bitmap graphics:</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3153748" role="listitem" l10n="U" oldref="4">Enter edit mode by double-clicking on the chart.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3149182" role="listitem" l10n="CHG" oldref="5">Click on any bar of the bar series you want to edit. All bars of this series are now selected.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id720847" role="listitem" l10n="CHG">If you want to edit only one bar, click again on that bar.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3147275" role="listitem" l10n="U" oldref="6">In the context menu choose <emph>Object Properties</emph>. Then choose the <emph>Area</emph> tab.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3146797" role="listitem" l10n="U" oldref="7">Click on <emph>Bitmap</emph>. In the list box select a bitmap as a texture for the currently selected bars. Click <emph>OK</emph> to accept the setting.</paragraph>
+   </listitem>
+  </list>
+  <section id="relatedtopics">
+
+   <embed href="text/shared/guide/chart_axis.xhp#chart_axis"/>
+   <embed href="text/shared/guide/chart_legend.xhp#chart_legend"/>
+   <embed href="text/shared/guide/chart_title.xhp#chart_title"/>
+
+  </section>
+ </body>
+</helpdocument>

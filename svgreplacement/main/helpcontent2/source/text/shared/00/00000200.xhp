@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0000000200xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Graphics Export Options</title>
+<filename>/text/shared/00/00000200.xhp</filename>
+</topic>
+</meta>
+<body>
+
+<paragraph role="heading" level="1" id="hd_id3150127" l10n="NEW" xml-lang="en-US">Graphics Export Options</paragraph>
+<paragraph l10n="NEW" role="paragraph" id="par_id3160463" xml-lang="en-US"><ahelp hid="." visibility="visible">Defines graphics export options.</ahelp></paragraph>
+  <section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#exportgraphic"/>
+</section>
+<paragraph role="paragraph" id="par_id1" l10n="NEW" xml-lang="en-US">When you export graphical elements to a file, you can select the file type. For most supported file types a dialog opens where you can setup export options.</paragraph>
+<paragraph role="paragraph" id="par_id2" l10n="NEW" xml-lang="en-US">The following file types do not show an options dialog: PWP, RAS, SVG, TIFF, XPM.</paragraph>
+<paragraph role="paragraph" id="par_id3" l10n="NEW" xml-lang="en-US">The other file types show options dialogs where you can set the width and height of the exported image.</paragraph>
+<paragraph role="paragraph" id="par_id4" l10n="NEW" xml-lang="en-US">Depending on the file type, you can specify some more options. Press Shift+F1 and hover over the control to see an extended help text.</paragraph>
+
+<comment>Common controls</comment>
+
+<bookmark xml-lang="en-US" branch="hid/svtools:ListBox:DLG_EXPORT:LB_SIZEX" id="bm_id31523978" localize="false"/>
+<paragraph l10n="NEW" role="paragraph" id="par_id388" xml-lang="en-US"><ahelp hid="." visibility="hidden">Specifies the measurement units.</ahelp></paragraph>
+<bookmark branch="hid/svtools:MetricField:DLG_EXPORT:MF_SIZEX" xml-lang="en-US" id="bm_id3149140"/><paragraph role="heading" level="3" id="hd_id3151330" l10n="NEW" xml-lang="en-US">Width</paragraph>
+<paragraph l10n="NEW" role="paragraph" id="par_id3154561" xml-lang="en-US"><ahelp hid="." visibility="visible">Specifies the width.</ahelp></paragraph>
+<bookmark branch="hid/svtools:MetricField:DLG_EXPORT:MF_SIZEY" xml-lang="en-US" id="bm_id3154751"/><paragraph role="heading" level="3" id="hd_id3156027" l10n="NEW" xml-lang="en-US">Height</paragraph>
+<paragraph l10n="NEW" role="paragraph" id="par_id3147226" xml-lang="en-US"><ahelp hid="." visibility="visible">Specifies the height.</ahelp></paragraph>
+
+<comment>Resolution controls</comment>
+<bookmark xml-lang="en-US" branch="hid/svtools:NumericField:DLG_EXPORT:NF_RESOLUTION" id="bm_id3153698" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/svtools:ListBox:DLG_EXPORT:LB_RESOLUTION" id="bm_id3153778" localize="false"/>
+<paragraph role="heading" id="hd_id3150944" xml-lang="en-US" level="3" l10n="NEW">Resolution</paragraph>
+<paragraph role="paragraph" id="par_id3150129" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter the image resolution. Select the measurement units from the list box.</ahelp></paragraph>
+
+<paragraph role="heading" id="hd_id3143534" xml-lang="en-US" level="3" l10n="NEW">More options</paragraph>
+<comment>JPEG controls</comment>
+<paragraph role="paragraph" id="par_id10" l10n="NEW" xml-lang="en-US">For JPEG files you can set the color depth and the quality.</paragraph>
+
+<bookmark branch="hid/svtools:ListBox:DLG_EXPORT:LB_COLOR_DEPTH" xml-lang="en-US" id="bm_id3134024841"/>
+<paragraph l10n="NEW" role="paragraph" id="par_id435923952" xml-lang="en-US"><ahelp hid="." visibility="hidden">Select the color depth from 8 bit grayscale or 24 bit true color.</ahelp></paragraph>
+
+<bookmark branch="hid/svtools:NumericField:DLG_EXPORT:NF_COMPRESSION" xml-lang="en-US" id="bm_id315974841"/><comment>Unfortunately, the compression and quality sliders now share the same Help ID. Was UX on vacation?</comment>
+<paragraph l10n="NEW" role="paragraph" id="par_id355152952" xml-lang="en-US"><ahelp hid="." visibility="hidden">Sets the compression and quality for the export. Choose from a low quality with minimal file size, up to a high quality and big file size. A high compression means a low quality, a low compression means a high quality.</ahelp></paragraph>
+
+<comment>BMP controls</comment>
+<paragraph role="paragraph" id="par_id11" l10n="NEW" xml-lang="en-US">For BMP files you can set the compression and the RLE encoding.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:CheckBox:DLG_EXPORT:CB_RLE_ENCODING" id="bm_id3154372" localize="false"/>
+<paragraph role="paragraph" id="par_id312346798" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Applies RLE (Run Length Encoding) to the BMP graphics.</ahelp></paragraph>
+
+<comment>PBM PGM PPM controls</comment>
+<paragraph role="paragraph" id="par_id12" l10n="NEW" xml-lang="en-US">For PBM, PGM, and PPM files you can set the encoding.</paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_BINARY" id="bm_id702536" localize="false"/>
+<paragraph role="paragraph" id="par_id344441" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Exports the file in binary format. The resulting file is smaller than a text file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_TEXT" id="bm_id5302591" localize="false"/>
+<paragraph role="paragraph" id="par_id3555783" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Exports the file in ASCII text format. The resulting file is larger than a binary file.</ahelp></paragraph>
+
+<comment>PNG controls</comment>
+<paragraph role="paragraph" id="par_id13" l10n="NEW" xml-lang="en-US">For PNG files you can set the compression and the interlaced mode.</paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svtools:CheckBox:DLG_EXPORT:CB_INTERLACED" id="bm_id5866924" localize="false"/>
+<paragraph role="paragraph" id="par_id35674840" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether the graphic is to be saved in interlaced mode.</ahelp></paragraph>
+
+<comment>GIF controls</comment>
+<paragraph role="paragraph" id="par_id14" l10n="NEW" xml-lang="en-US">For GIF files you can set the transparency and the interlaced mode.</paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svtools:CheckBox:DLG_EXPORT:CB_SAVE_TRANSPARENCY" id="bm_id676692504" localize="false"/>
+<paragraph role="paragraph" id="par_id31456456938" xml-lang="en-US" l10n="CHG"><ahelp hid="." visibility="hidden">Specifies whether to save the background of the picture as transparent. Only objects will be visible in the GIF image. Use the Color Replacer to set the transparent color in the picture.</ahelp></paragraph>
+
+<comment>EPS controls</comment>
+<paragraph role="paragraph" id="par_id15" l10n="NEW" xml-lang="en-US">For EPS files you can set the preview, the color format, the compression, and the version.</paragraph>
+<paragraph role="paragraph" id="par_id3147779948" xml-lang="en-US" l10n="NEW"><switchinline select="sys">
+<caseinline select="WIN">You must print an EPS file with a PostScript printer. Other printers will only print the embedded preview.</caseinline></switchinline></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svtools:CheckBox:DLG_EXPORT:CB_EPS_PREVIEW_TIFF" id="bm_id993153884" localize="false"/>
+<paragraph role="paragraph" id="par_id993155271" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether a preview image is exported in the TIFF format together with the actual PostScript file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:CheckBox:DLG_EXPORT:CB_EPS_PREVIEW_EPSI" id="bm_id993155069" localize="false"/>
+<paragraph role="paragraph" id="par_id993144740" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="." visibility="hidden">Specifies whether a monochrome preview graphic in EPSI format is exported together with the PostScript file. This format only contains printable characters from the 7-bit ASCII code.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_LEVEL1" id="bm_id993150040" localize="false"/>
+<paragraph role="paragraph" id="par_id993150935" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="." visibility="hidden">Compression is not available at this level. Select the Level 1 option if your PostScript printer does not offer the capabilities of Level 2.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_LEVEL2" id="bm_id993149640" localize="false"/>
+<paragraph role="paragraph" id="par_id993159201" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="." visibility="hidden">Select the Level 2 option if your output device supports colored bitmaps, palette graphics and compressed graphics.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COLOR_FORMAT1" id="bm_id319953049" localize="false"/>
+<paragraph role="paragraph" id="par_id319947250" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="." visibility="hidden">Exports the file in color.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COLOR_FORMAT2" id="bm_id399153346" localize="false"/>
+<paragraph role="paragraph" id="par_id993147088" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="." visibility="hidden">Exports the file in grayscale tones.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COMPRESSION_LZW" id="bm_id315799863" localize="false"/>
+<paragraph role="paragraph" id="par_id399153683" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="." visibility="hidden">LZW compression is the compression of a file into a smaller file using a table-based lookup algorithm.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COMPRESSION_NONE" id="bm_id319947653" localize="false"/>
+<paragraph role="paragraph" id="par_id319952780" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="." visibility="hidden">Specifies that you do not wish to use compression.</ahelp></paragraph>
+
+<paragraph xml-lang="en-US" role="paragraph" id="par_id3147250" l10n="NEW">See <link href="text/shared/00/00000020.xhp" name="Import and Export Filter Information">Import and Export Filter Information</link> for more information about filters.</paragraph>
+</body>
+</helpdocument>

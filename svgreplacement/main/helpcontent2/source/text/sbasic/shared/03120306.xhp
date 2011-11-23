@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03120306xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Mid Function, Mid Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03120306.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-21T11:52:55">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="mid">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143268"><bookmark_value>Mid function</bookmark_value>
+<bookmark_value>Mid statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3143268" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120306.xhp" name="Mid Function, Mid Statement [Runtime]">Mid Function, Mid Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="2">Returns the specified portion of a string expression (<emph>Mid function</emph>), or replaces the portion of a string expression with another string (<emph>Mid statement</emph>).</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3154285" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3147530" xml-lang="en-US" l10n="CHG" oldref="4">Mid (Text As String, Start As Long [, Length As Long]) or Mid (Text As String, Start As Long , Length As Long, Text As String)</paragraph>
+<paragraph role="heading" id="hd_id3145068" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3149295" xml-lang="en-US" l10n="U" oldref="6">String (only by Function)</paragraph>
+<paragraph role="heading" id="hd_id3154347" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148664" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Text:</emph> Any string expression that you want to modify.</paragraph>
+<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="CHG" oldref="9">
+<emph>Start: </emph>Numeric expression that indicates the character position within the string where the string portion that you want to replace or to return begins. The maximum allowed value is 65535.<comment>UFI: see #i17928#</comment></paragraph>
+<paragraph role="paragraph" id="par_id3148451" xml-lang="en-US" l10n="CHG" oldref="10">
+<emph>Length:</emph> Numeric expression that returns the number of characters that you want to replace or return. The maximum allowed value is 65535.</paragraph>
+<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U" oldref="11">If the Length parameter in the <emph>Mid function</emph> is omitted, all characters in the string expression from the start position to the end of the string are returned.</paragraph>
+<paragraph role="paragraph" id="par_id3144762" xml-lang="en-US" l10n="U" oldref="12">If the Length parameter in the <emph>Mid statement</emph> is less than the length of the text that you want to replace, the text is reduced to the specified length.</paragraph>
+<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="U" oldref="13">
+<emph>Text:</emph> The string to replace the string expression (<emph>Mid statement</emph>).</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3149560" xml-lang="en-US" level="2" l10n="U" oldref="14">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="15">Sub ExampleUSDate</paragraph>
+<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="16">Dim sInput As String</paragraph>
+<paragraph role="paragraph" id="par_id3155854" xml-lang="en-US" l10n="U" oldref="17">Dim sUS_date As String</paragraph>
+<paragraph role="paragraph" id="par_id3153189" xml-lang="en-US" l10n="U" oldref="18">sInput = InputBox("Please input a date in the international format 'YYYY-MM-DD'")</paragraph>
+<paragraph role="paragraph" id="par_id3148645" xml-lang="en-US" l10n="U" oldref="19">sUS_date = Mid(sInput, 6, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U" oldref="20">sUS_date = sUS_date &amp; "/"</paragraph>
+<paragraph role="paragraph" id="par_id3153364" xml-lang="en-US" l10n="U" oldref="21">sUS_date = sUS_date &amp; Right(sInput, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3146975" xml-lang="en-US" l10n="U" oldref="22">sUS_date = sUS_date &amp; "/"</paragraph>
+<paragraph role="paragraph" id="par_id3149665" xml-lang="en-US" l10n="U" oldref="23">sUS_date = sUS_date &amp; Left(sInput, 4)</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="24">MsgBox sUS_date</paragraph>
+<paragraph role="paragraph" id="par_id3148618" xml-lang="en-US" l10n="U" oldref="25">End Sub</paragraph>
+</body>
+</helpdocument>

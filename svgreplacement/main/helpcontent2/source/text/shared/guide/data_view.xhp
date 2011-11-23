@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedata_viewxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Viewing a Database</title>
+<filename>/text/shared/guide/data_view.xhp</filename>
+</topic>
+<history>
+<created date="2004-08-19T12:40:42">viewing a database</created>
+<lastedited date="2005-09-13T09:26:35">checked - yj</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id2339854"><bookmark_value>opening;database files</bookmark_value>
+<bookmark_value>viewing; databases</bookmark_value>
+<bookmark_value>data sources;viewing</bookmark_value>
+<bookmark_value>databases;viewing</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="par_idN105A6" xml-lang="en-US" level="2" l10n="NEW"><variable id="data_view"><link href="text/shared/guide/data_view.xhp">Viewing a Database</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN105C4" xml-lang="en-US" l10n="NEW">There are two different methods of viewing a database in %PRODUCTNAME.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN105CA" xml-lang="en-US" l10n="NEW">Choose <emph>File - Open</emph> to open the database file.</paragraph>
+<paragraph role="paragraph" id="par_idN105D1" xml-lang="en-US" l10n="NEW">The <link href="text/shared/explorer/database/dabadoc.xhp">database file</link> gives you full access to tables, queries, reports, and forms. You can edit the structure of your tables and change the contents of the data records.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN105E3" xml-lang="en-US" l10n="NEW">Choose <emph>View - Data source</emph> to view the registered databases.</paragraph>
+<paragraph role="paragraph" id="par_idN105EA" xml-lang="en-US" l10n="NEW">The <link href="text/shared/guide/database_main.xhp">data source view</link> can be used to drag-and-drop table fields from registered databases into your documents and to produce mail merges.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_idN10606" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/explorer/database/main.xhp#base"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN1060E" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/database_main.xhp#database_main"/>
+</paragraph>
+</section>
+</body>
+</helpdocument>

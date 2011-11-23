@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared01020500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Libraries, Modules and Dialogs</title>
+<filename>/text/sbasic/shared/01020500.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-16T15:35:03">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="biblio">
+<paragraph role="heading" id="hd_id3147317" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/01020500.xhp" name="Libraries, Modules and Dialogs">Libraries, Modules and Dialogs</link></paragraph>
+<paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="2">The following describes the basic use of libraries, modules and dialogs in $[officename] Basic.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="3">$[officename] Basic provides tools to help you structuring your projects. It supports various "units" which enable you to group individual SUBS and FUNCTIONS in a Basic project.</paragraph>
+<paragraph role="heading" id="hd_id3148575" xml-lang="en-US" level="2" l10n="U" oldref="5">Libraries</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="6">Libraries serve as a tool for organizing modules, and can either be attached to a document or a template. When the document or a template is saved, all modules contained in the library are automatically saved as well.</paragraph>
+<paragraph role="paragraph" id="par_id3151112" xml-lang="en-US" l10n="U" oldref="7">A library can contain up to 16,000 modules.</paragraph>
+<paragraph role="heading" id="hd_id3149262" xml-lang="en-US" level="2" l10n="U" oldref="8">Modules</paragraph>
+<paragraph role="paragraph" id="par_id3156441" xml-lang="en-US" l10n="U" oldref="9">A module contains SUBS and FUNCTIONS along with variable declarations. The length of the program that can be saved in a module is limited to 64 KB. If more space is required you can divide a $[officename] Basic project among several modules, and then save them in a single library.</paragraph>
+<paragraph role="heading" id="hd_id3152577" xml-lang="en-US" level="2" l10n="U" oldref="11">Dialog Modules</paragraph>
+<paragraph role="paragraph" id="par_id3149377" xml-lang="en-US" l10n="U" oldref="12">Dialog modules contain dialog definitions, including the dialog box properties, the properties of each dialog element and the events assigned. Since a dialog module can only contain a single dialog, they are often referred to as "dialogs".</paragraph>
+<section id="relatedtopics">
+<embed href="text/sbasic/shared/01030400.xhp#01030400"/>
+</section>
+</body>
+</helpdocument>
