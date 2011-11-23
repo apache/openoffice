@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+<topic id="textsbasicshared03102600xml" indexer="include">
+<title id="tit" xml-lang="en-US">IsNull Function [Runtime]</title>
+<filename>/text/sbasic/shared/03102600.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="isnull">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155555"><bookmark_value>IsNull function</bookmark_value>
+<bookmark_value>Null value</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3155555" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102600.xhp" name="IsNull Function [Runtime]">IsNull Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3146957" xml-lang="en-US" l10n="U" oldref="2">Tests if a Variant contains the special Null value, indicating that the variable does not contain data.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3150670" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="4">IsNull (Var)</paragraph>
+<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
+<paragraph role="heading" id="hd_id3149669" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Var:</emph> Any variable that you want to test. This function returns True if the Variant contains the Null value, or False if the Variant does not contain the Null value.</paragraph>
+<paragraph role="paragraph" id="par_idN1062A" xml-lang="en-US" l10n="NEW">
+<emph>Null</emph> - This value is used for a variant data sub type without valid contents.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3153381" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154140" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleIsNull</paragraph>
+<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U" oldref="11">Dim vVar As Variant</paragraph>
+<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U" oldref="12">msgbox IsNull(vVar)</paragraph>
+<paragraph role="paragraph" id="par_id3153970" xml-lang="en-US" l10n="U" oldref="13">end sub</paragraph>
+</body>
+</helpdocument>

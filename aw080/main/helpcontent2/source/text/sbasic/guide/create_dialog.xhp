@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicguidecreate_dialogxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating a Basic Dialog</title>
+<filename>/text/sbasic/guide/create_dialog.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149346"><bookmark_value>dialogs;creating Basic dialogs</bookmark_value>
+</bookmark><comment>MW deleted "Basic;dialog creation"</comment><paragraph role="heading" id="hd_id3149346" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="create_dialog"><link href="text/sbasic/guide/create_dialog.xhp" name="Creating a Basic Dialog">Creating a Basic Dialog</link>
+</variable></paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3163802" xml-lang="en-US" l10n="CHG" oldref="3">Choose <emph>Tools - Macros - Organize Dialogs</emph>, and then click <emph>New</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150447" xml-lang="en-US" l10n="CHG" oldref="11">Enter a name for the dialog, and click OK. To rename the dialog later, right-click the name on the tab, and choose <emph>Rename</emph>. <comment>UFI: issue #i51589#</comment></paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_idN1065F" xml-lang="en-US" l10n="NEW">Click <emph>Edit</emph>. The Basic dialog editor opens and contains a blank dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153726" xml-lang="en-US" l10n="CHG" oldref="6">If you do not see the <emph>Toolbox</emph> bar, click the arrow next to the <emph>Insert Controls </emph>icon to open the <emph>Toolbox</emph> bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148455" xml-lang="en-US" l10n="U" oldref="12">Click a tool and then drag in the dialog to create the control.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/sbasic/guide/control_properties.xhp#control_properties"/>
+<embed href="text/sbasic/guide/insert_control.xhp#insert_control"/>
+<embed href="text/sbasic/guide/translation.xhp#translation"/>
+<embed href="text/sbasic/guide/show_dialog.xhp#show_dialog"/>
+<embed href="text/sbasic/guide/sample_code.xhp#sample_code"/>
+</section>
+</body>
+</helpdocument>

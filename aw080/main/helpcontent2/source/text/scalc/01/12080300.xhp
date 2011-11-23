@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************--><helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112080300xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Group</title>
+<filename>/text/scalc/01/12080300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="gruppieren">
+  <bookmark branch="hid/sc:ModalDialog:RID_SCDLG_GROUP" xml-lang="en-US" id="bm_id3156329"/><bookmark xml-lang="en-US" branch="hid/.uno:Group" id="bm_id9177845" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:Group" xml-lang="en-US" id="bm_id3149786"/><paragraph id="hd_id3153088" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/scalc/01/12080300.xhp" name="Group">Group</link></paragraph>
+  </section>
+  <paragraph l10n="U" role="paragraph" id="par_id3153821" xml-lang="en-US" oldref="2"><variable id="gruppierung"><ahelp hid=".uno:Group" visibility="visible">Defines the selected cell range as a group of rows or columns.</ahelp></variable></paragraph>
+  <section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#dnglgr"/>
+</section>
+  <paragraph xml-lang="en-US" oldref="3" role="paragraph" id="par_id3145069" l10n="U">When you group a cell range, and outline icon appears in the margins next to the group. To hide or show the group, click the icon. To ungroup the selection, choose <emph>Data – Outline -</emph> <link href="text/scalc/01/12080400.xhp" name="Ungroup"><emph>Ungroup</emph></link>.</paragraph>
+  <paragraph role="heading" level="2" id="hd_id3125863" l10n="U" xml-lang="en-US" oldref="4">Include</paragraph>
+  <bookmark branch="hid/SC_HID_SC_GROUP_ROWS" xml-lang="en-US" id="bm_id3150770"/><paragraph role="heading" level="3" id="hd_id3150448" l10n="U" xml-lang="en-US" oldref="6">Rows</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3153194" xml-lang="en-US" oldref="7"><ahelp hid="HID_SC_GROUP_ROWS" visibility="visible">Groups the selected rows.</ahelp></paragraph>
+  <bookmark branch="hid/SC_HID_SC_GROUP_COLS" xml-lang="en-US" id="bm_id3153771"/><paragraph role="heading" level="3" id="hd_id3145786" l10n="U" xml-lang="en-US" oldref="8">Columns</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3146984" xml-lang="en-US" oldref="9"><ahelp hid="HID_SC_GROUP_COLS" visibility="visible">Groups the selected columns.</ahelp></paragraph>
+ </body>
+</helpdocument>

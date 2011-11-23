@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03030100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Converting Date Values</title>
+<filename>/text/sbasic/shared/03030100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-04-25T13:52:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="datumswerte">
+<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03030100.xhp" name="Converting Date Values">Converting Date Values</link></paragraph>
+<paragraph role="paragraph" id="par_id3154760" xml-lang="en-US" l10n="U" oldref="2">The following functions convert date values to calculable numbers and back.</paragraph>
+</section>
+<embed href="text/sbasic/shared/03030101.xhp#dateserial"/>
+<embed href="text/sbasic/shared/03030102.xhp#datevalue"/>
+<embed href="text/sbasic/shared/03030103.xhp#day"/>
+<embed href="text/sbasic/shared/03030104.xhp#month"/>
+<embed href="text/sbasic/shared/03030105.xhp#weekday"/>
+<embed href="text/sbasic/shared/03030106.xhp#year"/>
+<embed href="text/sbasic/shared/03030107.xhp#cdatetoiso"/>
+<embed href="text/sbasic/shared/03030108.xhp#cdatefromiso"/>
+<embed href="text/sbasic/shared/03030110.xhp#dateadd"/>
+<embed href="text/sbasic/shared/03030120.xhp#datediff"/>
+<embed href="text/sbasic/shared/03030130.xhp#datepart"/>
+</body>
+</helpdocument>

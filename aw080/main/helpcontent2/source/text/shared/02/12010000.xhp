@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0212010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Sort Ascending</title>
+<filename>/text/shared/02/12010000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="aufsteigend">
+<paragraph role="heading" id="hd_id3152594" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/12010000.xhp" name="Sort Ascending">Sort Ascending</link></paragraph>
+<paragraph role="paragraph" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="." visibility="hidden">Sorts the data of the selected field in ascending order. </ahelp>Text fields are sorted alphabetically, numerical fields are sorted by number.<comment>UFI: Help ID .uno:Sortup is found in 	text/shared/explorer/database/11090000.xhp so I deleted it here</comment></paragraph>
+</section>
+<section id="syaufsteigend">
+<table id="tbl_id3150774">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154749" xml-lang="en-US" l10n="E">
+<image id="img_id3147276" src="res/commandimagelist/sc_sortascending.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id3147276" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159158" xml-lang="en-US" l10n="U" oldref="3">Sort Ascending</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+<paragraph role="paragraph" id="par_id3154380" xml-lang="en-US" l10n="U" oldref="4"><variable id="selektionsortieren">Data of the currently selected field are always sorted. A field is always selected as soon as you place the cursor in the field. To sort within tables, you can also click the corresponding column header. 
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150504" xml-lang="en-US" l10n="U" oldref="5"><variable id="dialogsortieren">To sort more than one data field, choose <emph>Data - Sort</emph>, then choose the <link href="text/shared/02/12100100.xhp" name="Sort Criteria">Sort Criteria</link> tab, where you can combine several sort criteria. 
+</variable></paragraph>
+</body>
+</helpdocument>

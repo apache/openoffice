@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicguidecontrol_propertiesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Changing the Properties of Controls in the Dialog Editor</title>
+<filename>/text/sbasic/guide/control_properties.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-07-25T15:40:12">FPE: Deleted screenshot. Cleaned.</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145786"><bookmark_value>properties; controls in dialog editor</bookmark_value>
+<bookmark_value>changing;control properties</bookmark_value>
+<bookmark_value>controls;changing properties</bookmark_value>
+<bookmark_value>dialog editor;changing control properties</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145786" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="control_properties"><link href="text/sbasic/guide/control_properties.xhp" name="Changing the Properties of Controls in the Dialog Editor">Changing the Properties of Controls in the Dialog Editor</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="2">You can set the properties of control that you add to a dialog. For example, you can change the color, name, and size of a button that you added. You can change most control properties when you create or edit a dialog. However, you can only change some properties at runtime.</paragraph>
+<paragraph role="paragraph" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="3">To change the properties of a control in design mode, right-click the control, and then choose <emph>Properties</emph>.</paragraph>
+<section id="relatedtopics">
+<embed href="text/sbasic/guide/create_dialog.xhp#create_dialog"/>
+<embed href="text/sbasic/guide/insert_control.xhp#insert_control"/>
+<embed href="text/sbasic/guide/show_dialog.xhp#show_dialog"/>
+<embed href="text/sbasic/guide/sample_code.xhp#sample_code"/>
+</section>
+</body>
+</helpdocument>

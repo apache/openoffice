@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter01mm_cusaddfiexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">New Address Block</title>
+<filename>/text/swriter/01/mm_cusaddfie.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-08T11:31:39">UFI: New Address Block dialog for mail merge</created>
+<lastedited date="2004-09-27T14:34:08">DEDR: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10542" xml-lang="en-US" level="1" l10n="NEW">New Address Block</paragraph>
+<paragraph role="paragraph" id="par_idN10546" xml-lang="en-US" l10n="NEW"><comment>UFI: was Custom Address Field in the mockup, so wrong file name...</comment>Specify the placement of address data fields in an address block of a <link href="text/swriter/01/mm_seladdblo.xhp">mail merge</link> document.</paragraph>
+<paragraph role="heading" id="par_idN10569" xml-lang="en-US" level="2" l10n="NEW">Address Elements</paragraph>
+<paragraph role="paragraph" id="par_idN1056D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select a field and drag the field to the other list.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10570" xml-lang="en-US" level="2" l10n="NEW">&gt;</paragraph>
+<paragraph role="paragraph" id="par_idN10574" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Adds the selected field from the Address Elements list to the other list. You can add the same field more than once.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10577" xml-lang="en-US" level="2" l10n="NEW">&lt;</paragraph>
+<paragraph role="paragraph" id="par_idN1057B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Removes the selected field from the other list.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN1057E" xml-lang="en-US" level="2" l10n="NEW">Drag address element to the field below</paragraph>
+<paragraph role="paragraph" id="par_idN10582" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Arrange the fields by drag-and-drop or use the arrow buttons.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10585" xml-lang="en-US" level="2" l10n="NEW">Preview</paragraph>
+<paragraph role="paragraph" id="par_idN10589" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Displays a preview of the first database record with the current address block layout.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN1058C" xml-lang="en-US" level="2" l10n="NEW">(Arrow Buttons)</paragraph>
+<paragraph role="paragraph" id="par_idN10590" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select an item in the list and click an arrow button to move the item.</ahelp></paragraph>
+</body>
+</helpdocument>

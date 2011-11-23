@@ -1,0 +1,110 @@
+/*
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+*/
+
+
+body, p, h1, h2, h3, h4, h5, h6, .listitem, .listitemintable, .tablecontent, .tablecontentintable
+	{ font-family: Arial,"DejaVu Sans",FreeSans,"Nimbus Sans L","Arial Unicode MS","Lucida Sans Unicode",Tahoma,Lucida,Helvetica,Helmet,"Bitstream Vera Sans",sans-serif; }
+
+.code, .codeintable, .example, .exampleintable, .literal, .literalintable, .path, .pathintable
+	{ font-family: "Courier New","DejaVu Sans Mono",FreeMono,"Nimbus Mono L","Lucida Sans Typewriter","Lucida Typewriter","Bitstream Vera Sans Mono",Cumberland,Courier,Monaco,Monospaced; margin-top: 1pt; margin-bottom: 1pt;}
+
+.acronym 
+	{ font-weight: bold;}
+
+.related
+	{ font-weight: bold; margin-top:20pt;}
+
+.emph, .menuitem, .keycode
+	{ font-weight: bold; }
+
+.tablehead, .tableheadintable
+	{ font-weight: bold; margin-top: 0px;}
+
+.howtogetheader
+	{ font-weight: bold; padding: 3px;}	
+
+h1, h2, h3, h4, h5, h6
+	{ margin-bottom: 5pt; }
+
+p, td
+	{ font-size: 10pt; }
+
+h1
+	{ font-size: 18pt; padding-bottom: 6px; margin-bottom: 6px;}
+
+h2
+	{ font-size: 14pt; }
+
+h3
+	{ font-size: 12pt; }
+
+h4, h5, h6
+	{ font-size: 10pt; }
+
+.relatedtopics
+	{ font-weight: normal; }
+
+.relatedbody  
+	{ margin-top: 2px; margin-bottom: 2px; margin-left: 5px; }
+
+.wide 
+	{ width: 100%; }
+
+.topalign
+	 { vertical-align: top; border: 1px;}
+
+.bug 
+	{ color: red; border: 1px solid red;}
+
+
+/* HIGH CONTRAST SPECIFIC SETTINGS */
+
+body, p, h1, h2, h3, h4, h5, h6, .listitem, .listitemintable, .tablecontent, .tablecontentintable
+	{ background: #000000; color: #FFFF00;}
+
+.related 
+	{ border-top: 1px solid #FFFF00; }
+
+.howtogetheader
+	{border: 1px solid #EFEFEF; background: #000000;}
+
+h1 
+	{ border-bottom: 1px solid #FFFF00; ]
+
+.howtoget
+	{ background:#000000;}
+
+.howtogetbody
+	{ background:#000000;}
+
+.debug
+	{ border: 1px solid red; padding: 3px; display: none;}
+
+a
+ { color: #FFFF00; }

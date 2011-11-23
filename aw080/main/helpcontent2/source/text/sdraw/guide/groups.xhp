@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsdrawguidegroupsxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Grouping Objects</title>
+<filename>/text/sdraw/guide/groups.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150793"><bookmark_value>grouping; draw objects</bookmark_value>
+<bookmark_value>draw objects; grouping</bookmark_value>
+</bookmark><comment>mw delelted "groups;entering" and copied "selecting;group objects" to the new shared guide groups.xhp.</comment><paragraph role="heading" id="hd_id3150793" xml-lang="en-US" level="1" l10n="U" oldref="26"><variable id="groups"><link href="text/sdraw/guide/groups.xhp" name="Grouping Objects">Grouping Objects</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153728" xml-lang="en-US" l10n="U" oldref="27">You can combine several objects into a group so that they act as a single object. You can move and transform all objects in a group as a single unit. You can also change the properties (for example, line size, fill color) of all objects in a group as a whole or for individual objects in a group. Groups can be temporary or assigned:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147434" xml-lang="en-US" l10n="U" oldref="64">Temporary - group only lasts as long as all of the combined objects are selected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154490" xml-lang="en-US" l10n="U" oldref="65">Assigned - group lasts until it is ungrouped through a menu command.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3145252" xml-lang="en-US" l10n="U" oldref="66">Groups can also be grouped in other groups. Actions applied to a group do not affect the relative position of the individual objects to each other in the group.</paragraph>
+<paragraph role="heading" id="hd_id3150716" xml-lang="en-US" level="3" l10n="U" oldref="28">To group objects:</paragraph>
+<table id="tbl_id3155600">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149018" xml-lang="en-US" l10n="E">
+<image id="img_id3145643" src="res/commandimagelist/sc_formatgroup.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id3145643" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147346" xml-lang="en-US" l10n="U" oldref="29">Select the objects you want to group and choose <emph>Modify - Group</emph>.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="paragraph" id="par_id3148485" xml-lang="en-US" l10n="U" oldref="30">For example, you can group all of the objects in a company logo to move and resize the logo as a single object.</paragraph>
+<paragraph role="paragraph" id="par_id3147002" xml-lang="en-US" l10n="U" oldref="31">After you have grouped objects, selecting any part of the group selects the entire group.</paragraph>
+<paragraph role="heading" id="hd_id3150205" xml-lang="en-US" level="2" l10n="U" oldref="55">Selecting Objects in a Group</paragraph>
+<table id="tbl_id3150361">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150370" xml-lang="en-US" l10n="E">
+<image id="img_id3155376" src="res/commandimagelist/sc_entergroup.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id3155376" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156450" xml-lang="en-US" l10n="U" oldref="56">You can select single objects in a group by entering the group. Double-click a group to enter it and click on the object to select it. You can also add or delete objects to and from a group in this mode. The objects that are not part of the group are grayed out.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<table id="tbl_id3152899">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151239" xml-lang="en-US" l10n="E">
+<image id="img_id3155264" src="res/commandimagelist/sc_leavegroup.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id3155264" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150213" xml-lang="en-US" l10n="U" oldref="58">To exit a group, double-click anywhere outside it.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/select_object.xhp#select_object"/>
+<embed href="text/sdraw/guide/combine_etc.xhp#combine_etc"/>
+</section>
+</body>
+</helpdocument>

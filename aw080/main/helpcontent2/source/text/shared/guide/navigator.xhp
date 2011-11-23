@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidenavigatorxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Navigator for Document Overview</title>
+<filename>/text/shared/guide/navigator.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-31T13:00:11">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147008"><bookmark_value>documents; contents as lists</bookmark_value>
+<bookmark_value>Navigator; contents as lists</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147008" xml-lang="en-US" level="1" l10n="U" oldref="4"><variable id="navigator"><link href="text/shared/guide/navigator.xhp" name="Navigator for Document Overview">Navigator for Document Overview</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="3">All contents of the Navigator window are referred to here as "categories," whether titles, sheets, tables, text frames, graphics, OLE objects, sections, hyperlinks, references, indexes or comments.</paragraph>
+<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="5">The Navigator displays all types of objects contained in a document. If a plus sign appears next to a category, this indicates that at least one object of this kind exists. If you rest the mouse pointer on the category name, the number of objects is displayed in an extended tip.</paragraph>
+<paragraph role="paragraph" id="par_id3146797" xml-lang="en-US" l10n="U" oldref="6">Open a category by clicking on the plus sign. If you only want to view the entries in a certain category, select the category and click the <emph>Content View</emph> icon. Until you click the icon again, only the objects of this category will be displayed.</paragraph>
+<paragraph role="paragraph" id="par_id3166461" xml-lang="en-US" l10n="CHG" oldref="7">You may dock the Navigator to any document border or turn it back into a free window (double click on the gray area). You can change the size of the Navigator when it is a free window.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/navigator_setcursor.xhp#navigator_setcursor"/>
+<embed href="text/shared/guide/dragdrop.xhp#dragdrop"/>
+<switch select="appl">
+<case select="CALC"><embed href="text/scalc/guide/format_table.xhp#format_table"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/arrange_chapters.xhp#arrange_chapters"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/hyperlinks.xhp#hyperlinks"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/navigator.xhp#navigator"/>
+</case>
+</switch>
+</body>
+</helpdocument>

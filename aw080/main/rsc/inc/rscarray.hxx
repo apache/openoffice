@@ -1,0 +1,132 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _RSCARRAY_HXX
+#define _RSCARRAY_HXX
+
+#include <rscall.h>
+#include <rscerror.h>
+#include <rsctop.hxx>
+
+class RscEnum;
+
+/******************* R s c A r r a y ************************************/
+class RscInstNode : public IdNode
+{
+	sal_uInt32	nTypeId;
+protected:
+    using NameNode::Search;
+public:
+	RSCINST	aInst;
+	RscInstNode( sal_uInt32 nId );
+	~RscInstNode();
+	virtual sal_uInt32	GetId() const;
+	RscInstNode *   Left() const { return (RscInstNode *)pLeft  ; };
+	RscInstNode *   Right() const{ return (RscInstNode *)pRight ; };
+	RscInstNode *	Search( sal_uInt32 nId ) const
+					{
+						return (RscInstNode *)IdNode::Search( nId );
+					}
+};
+
+struct RscArrayInst
+{
+	RscInstNode *	pNode;
+};
+
+/* Der Baum wird ueber die Werte des Enums sortiert, nicht ueber
+	seine HashId.
+*/
+class RscArray : public RscTop
+{
+protected:
+    RscEnum *       pTypeClass; // Typ der Eintraege
+    sal_uInt32          nSize;      // Groesse der Instanzdaten dieser Klasse
+                                // mit Superklassen
+    sal_uInt32          nOffInstData;// Offset auf eigen Instanzdaten
+    void            WriteSrcArray( const RSCINST & rInst, FILE * fOutput,
+                              	RscTypCont * pTC, sal_uInt32 nTab, const char * );
+public:
+                    RscArray( Atom nId, sal_uInt32 nTypId,
+                                RscTop * pSuper, RscEnum * pTypeClass );
+                    ~RscArray();
+	virtual RSCCLASS_TYPE	GetClassType() const;
+
+    void            SetTypeClass( RscEnum * pClass )
+					{
+                        pTypeClass = pClass;
+                    }
+    virtual RscTop *    GetTypeClass() const;
+    RSCINST         Create( RSCINST * pInst, const RSCINST & rDflt, sal_Bool );
+    void            Destroy( const RSCINST & rInst );
+    virtual ERRTYPE GetValueEle( const RSCINST & rInst, sal_Int32 lValue,
+								RscTop * pCreateClass,
+                                RSCINST * pGetInst );
+    virtual ERRTYPE GetArrayEle( const RSCINST & rInst, Atom nId,
+								RscTop * pCreateClass,
+                                RSCINST * pGetInst );
+
+                    // Gibt die Groesse der Klasse in Bytes
+    sal_uInt32          Size(){ return( nSize ); };
+
+    sal_Bool            IsConsistent( const RSCINST & rInst, RscInconsList * pList );
+	virtual void	SetToDefault( const RSCINST & rInst );
+    sal_Bool            IsDefault( const RSCINST & rInst );
+    sal_Bool            IsValueDefault( const RSCINST & rInst, CLASS_DATA pDef );
+
+    virtual void    WriteSrcHeader( const RSCINST & rInst, FILE * fOutput,
+                                    RscTypCont * pTC, sal_uInt32 nTab,
+                                    const RscId & aId, const char * );
+    void            WriteSrc( const RSCINST & rInst, FILE * fOutput,
+                              RscTypCont * pTC, sal_uInt32 nTab, const char * );
+    ERRTYPE         WriteRc( const RSCINST & rInst, RscWriteRc & aMem,
+                             RscTypCont * pTC, sal_uInt32, sal_Bool bExtra );
+	virtual void	WriteRcAccess( FILE * fOutput, RscTypCont * pTC,
+									const char * );
+};
+
+class RscClassArray : public RscArray
+{
+public:
+                    RscClassArray( Atom nId, sal_uInt32 nTypId,
+                                RscTop * pSuper, RscEnum * pTypeClass );
+                    ~RscClassArray();
+    virtual void    WriteSrcHeader( const RSCINST & rInst, FILE * fOutput,
+                                    RscTypCont * pTC, sal_uInt32 nTab,
+                                    const RscId & aId, const char * );
+    void            WriteSrc( const RSCINST & rInst, FILE * fOutput,
+                              RscTypCont * pTC, sal_uInt32 nTab, const char * );
+    virtual ERRTYPE WriteRcHeader( const RSCINST & rInst, RscWriteRc & aMem,
+                                   RscTypCont * pTC, const RscId & aId,
+                    				sal_uInt32 nDeep, sal_Bool bExtra );
+};
+
+
+class RscLangArray : public RscArray
+{
+public:
+                    RscLangArray( Atom nId, sal_uInt32 nTypId,
+                                RscTop * pSuper, RscEnum * pTypeClass );
+	virtual RSCCLASS_TYPE	GetClassType() const;
+};
+
+#endif //_RSCARRAY

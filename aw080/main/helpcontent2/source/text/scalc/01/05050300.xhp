@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************--><helpdocument version="1.0">
+<meta>
+<topic id="textscalc0105050300xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Show Sheet</title>
+<filename>/text/scalc/01/05050300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <bookmark branch="index" xml-lang="en-US" id="bm_id3148946"><bookmark_value>sheets; displaying</bookmark_value><bookmark_value>displaying; sheets</bookmark_value></bookmark><bookmark xml-lang="en-US" branch="hid/.uno:Show" id="bm_id8296013" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:Show" xml-lang="en-US" id="bm_id3150542"/><paragraph role="heading" level="1" id="hd_id3148946" l10n="U" xml-lang="en-US" oldref="1">Show Sheet</paragraph>
+  <paragraph l10n="U" xml-lang="en-US" role="paragraph" id="par_id3148799" oldref="2"><variable id="tabeintext"><ahelp visibility="visible" hid=".uno:Show">Displays sheets that were previously hidden with the <emph>Hide</emph> command.</ahelp></variable> Select one sheet only to call the command. The current sheet is always selected. If a sheet other than the current sheet is selected, you can deselect it by pressing <switchinline select="sys"> <caseinline select="MAC">Command</caseinline> <defaultinline>Ctrl</defaultinline> </switchinline> while clicking the corresponding sheet tab at the bottom of the window.</paragraph>
+  <section id="howtoget">
+  <embed href="text/scalc/00/00000405.xhp#fotenb"/>
+</section>
+  <bookmark branch="hid/sc:MultiListBox:RID_SCDLG_SHOW_TAB:LB_ENTRYLIST" xml-lang="en-US" id="bm_id3149260"/><paragraph role="heading" level="2" id="hd_id3151112" l10n="U" xml-lang="en-US" oldref="3">Hidden sheets</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3145273" xml-lang="en-US" oldref="4"><ahelp hid="SC:MULTILISTBOX:RID_SCDLG_SHOW_TAB:LB_ENTRYLIST" visibility="visible">Displays a list of all hidden sheets in your spreadsheet document.</ahelp> To show a certain sheet, click the corresponding entry on the list and confirm with OK.</paragraph>
+ </body>
+</helpdocument>

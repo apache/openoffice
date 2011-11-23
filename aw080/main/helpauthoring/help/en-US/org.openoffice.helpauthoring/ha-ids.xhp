@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><helpdocument version="1.0">
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************ -->
+ 
+<meta>
+<topic id="topic_0805201012545913" indexer="topic_0805201002104372">
+<title xml-lang="en-US" id="tit">ID Assignment in Help Documents</title>
+<filename>org.openoffice.helpauthoring/ha-ids.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/vnd.sun.star.script:HelpAuthoring.Helpers.InsertNewParaData?language=Basic&amp;location=application" id="bm_id07132010034305672" localize="false"/>
+<paragraph id="par_id0713201005170889" role="paragraph" xml-lang="en-US"><ahelp hid="" visibility="hidden">Assigns a paragraph ID. ID-less paragraphs automatically get a paragraph ID assigned on validation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0805201012414334">
+<bookmark_value>Help Authoring;Assigning IDs</bookmark_value>
+</bookmark>
+<paragraph id="hd_id0805201012550145" role="heading" xml-lang="en-US" level="1">IDs in Help Documents</paragraph>
+<paragraph id="par_id080520100210452" role="paragraph" xml-lang="en-US">Many elements inside a help document carry an id so that they can be identified in other production steps, mainly for localization purposes. The IDs must be unique within a help document and should even be unique across help documents to allow for moving content across help files (which currently is not officially supported without re-translation).</paragraph>
+<paragraph id="par_id0805201002104581" role="paragraph" xml-lang="en-US">The help authoring environment takes care of assigning IDs to the corresponding elements on creation, or on <link href="org.openoffice.helpauthoring/ha-validating.xhp">validating</link> the help file (which also happens when a help file is saved).</paragraph>
+<paragraph id="par_id0805201002104578" role="note" xml-lang="en-US">If you copy an element within a help file you must make sure that the assigned id is different from the original. Therefore, it is best to copy a paragraph without its leading ID.</paragraph>
+<paragraph id="par_id0805201002104546" role="paragraph" xml-lang="en-US">By default, paragraph IDs are not visible. You can show them by hovering the mouse cursor over the front of a paragraph. The ID will be displayed in a popup window. Also, <link href="org.openoffice.helpauthoring/ha-l10n.xhp">toggeling the localization status of a paragraph</link> makes its ID visible:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph id="par_id080520100210456" role="ol_item" xml-lang="en-US">Place the cursor inside the paragraph</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id0805201002104579" role="ol_item" xml-lang="en-US">Select <item type="menuitem">Help Authoring &gt; Toggle L10N</item><emph>twice</emph> (to switch back to the original state)</paragraph>
+</listitem>
+</list>
+</body>
+</helpdocument>

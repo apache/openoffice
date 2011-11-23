@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helpdocument version="1.0">
+	
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+<topic id="textscalcguidetext_wrapxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Writing Multi-line Text</title>
+<filename>/text/scalc/guide/text_wrap.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154346"><bookmark_value>text in cells; multi-line</bookmark_value>
+<bookmark_value>cells; text breaks</bookmark_value>
+<bookmark_value>breaks in cells</bookmark_value>
+<bookmark_value>multi-line text in cells</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="1" l10n="U" oldref="42"><variable id="text_wrap"><link href="text/scalc/guide/text_wrap.xhp" name="Writing Multi-line Text">Writing Multi-line Text</link>
+</variable></paragraph>
+<section id="wraptext">
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156280" xml-lang="en-US" l10n="U" oldref="41">Pressing the <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter keys inserts a manual line break. This shortcut only works directly in the cell, not in the input line.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3153142" xml-lang="en-US" l10n="U" oldref="43">If you want the text to automatically break at the right border of the cell, proceed as follows:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153951" xml-lang="en-US" l10n="U" oldref="44">Select all the cells where you want the text to break at the right border.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148575" xml-lang="en-US" l10n="CHG" oldref="45">In <emph>Format - Cells - Alignment</emph>, mark the <emph>Wrap text automatically</emph> option and click OK.</paragraph>
+</listitem>
+</list>
+</section>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3145799" xml-lang="en-US" l10n="U" oldref="46"><link href="text/scalc/01/05020000.xhp" name="Format - Cell">Format - Cell</link></paragraph>
+</section>
+</body>
+</helpdocument>
