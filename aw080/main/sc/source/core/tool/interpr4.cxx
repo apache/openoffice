@@ -2712,7 +2712,7 @@ void ScInterpreter::ScMacro()
 
     StarBASIC* pRoot = pDocSh->GetBasic();
     SbxVariable* pVar = pRoot->Find( aMacro, SbxCLASS_METHOD );
-    if( !pVar || pVar->GetType() == SbxVOID || !pVar->ISA(SbMethod) )
+    if( !pVar || pVar->GetType() == SbxVOID || !dynamic_cast< SbMethod* >(pVar) )
     {
         PushError( errNoMacro );
         return;
@@ -2721,7 +2721,7 @@ void ScInterpreter::ScMacro()
     SbMethod* pMethod = (SbMethod*)pVar;
     SbModule* pModule = pMethod->GetModule();
     SbxObject* pObject = pModule->GetParent();
-    DBG_ASSERT(pObject->IsA(TYPE(StarBASIC)), "Kein Basic gefunden!");
+    DBG_ASSERT(dynamic_cast< StarBASIC* >(pObject), "Kein Basic gefunden!");
     String aMacroStr = pObject->GetName();
     aMacroStr += '.';
     aMacroStr += pModule->GetName();
@@ -2847,7 +2847,7 @@ void ScInterpreter::ScMacro()
         else if ( eResType & SbxARRAY )
         {
             SbxBase* pElemObj = refRes->GetObject();
-            SbxDimArray* pDimArray = PTR_CAST(SbxDimArray,pElemObj);
+            SbxDimArray* pDimArray = dynamic_cast< SbxDimArray* >( pElemObj);
             short nDim = pDimArray->GetDims();
             if ( 1 <= nDim && nDim <= 2 )
             {

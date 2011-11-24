@@ -26,7 +26,7 @@
 #include <bf_svtools/bf_solar.h>
 
 #ifndef _RTTI_HXX
-#include <rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 
 #if _SOLAR__PRIVATE

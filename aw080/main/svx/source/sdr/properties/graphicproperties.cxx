@@ -80,9 +80,6 @@ namespace sdr
 		{
 			SdrGrafObj& rObj = (SdrGrafObj&)GetSdrObject();
 
-			// local changes
-			rObj.SetXPolyDirty();
-
             // #i29367# Update GraphicAttr, too. This was formerly
             // triggered by SdrGrafObj::Notify, which is no longer
             // called nowadays. BTW: strictly speaking, the whole
@@ -98,9 +95,6 @@ namespace sdr
 		void GraphicProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
 		{
 			SdrGrafObj& rObj = (SdrGrafObj&)GetSdrObject();
-
-			// local changes
-			rObj.SetXPolyDirty();
 
 			// call parent
 			RectangleProperties::SetStyleSheet(pNewStyleSheet, bDontRemoveHardAttr);

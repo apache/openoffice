@@ -44,8 +44,7 @@ namespace drawinglayer
 		mpMask(0L),
 		mpAlpha(0L)
 	{
-        basegfx::B2DRange aRangePixel(rRange);
-        aRangePixel.transform(rOutDev.GetViewTransformation());
+        const basegfx::B2DRange aRangePixel(rOutDev.GetViewTransformation() * rRange);
         const Rectangle aRectPixel(
 			(sal_Int32)floor(aRangePixel.getMinX()), (sal_Int32)floor(aRangePixel.getMinY()), 
 			(sal_Int32)ceil(aRangePixel.getMaxX()), (sal_Int32)ceil(aRangePixel.getMaxY()));

@@ -73,7 +73,7 @@ namespace binfilter {
 
 
 /*N*/ ScImportExport::ScImportExport( ScDocument* p )
-/*N*/ 	: pDoc( p ), pDocSh( PTR_CAST(ScDocShell,p->GetDocumentShell()) ),
+/*N*/ 	: pDoc( p ), pDocSh( dynamic_cast< ScDocShell* >( p->GetDocumentShell()) ),
 /*N*/ 	  nSizeLimit( 0 ), bSingle( TRUE ), bAll( TRUE ), bUndo( FALSE ),
 /*N*/ 	  cSep( '\t' ), cStr( '"' ), bFormulas( FALSE ), bIncludeFiltered( TRUE ),
 /*N*/ 	  bOverflow( FALSE )

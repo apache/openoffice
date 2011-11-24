@@ -40,12 +40,12 @@ SwObjectFactory aSwObjectFactory;
 
 IMPL_LINK( SwObjectFactory, MakeObject, SdrObjFactory*, pObjFactory )
 {
-	if ( pObjFactory->nInventor == SWGInventor )
+	if ( pObjFactory->mnInventor == SWGInventor )
 	{
 		//Kein switch, derzeit gibt es nur einen.
-		ASSERT( pObjFactory->nIdentifier == SwFlyDrawObjIdentifier,
+		ASSERT( pObjFactory->mnIdentifier == SwFlyDrawObjIdentifier,
 										"Falscher Inventor oder identifier." );
-		pObjFactory->pNewObj = new SwFlyDrawObj();
+		pObjFactory->mpNewObj = new SwFlyDrawObj(*pObjFactory->mpTargetModel);
 	}
 	return 0;
 }

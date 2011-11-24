@@ -39,7 +39,6 @@
 #include <svl/urihelper.hxx>
 #include <svtools/grfmgr.hxx>
 #include <vcl/svapp.hxx>
-
 #include <sfx2/linkmgr.hxx>
 #include <sfx2/docfile.hxx>
 #include <svx/svdetc.hxx>
@@ -50,7 +49,6 @@
 #include <svx/svdpage.hxx>
 #include <svx/svdmrkv.hxx>
 #include <svx/svdpagv.hxx>
-#include "svx/svdviter.hxx"
 #include <svx/svdview.hxx>
 #include "svtools/filter.hxx"
 #include <svx/svdograf.hxx>
@@ -66,6 +64,8 @@
 #include <svx/sdr/contact/viewcontactofgraphic.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
+#include <svx/svdlegacy.hxx>
+#include <svx/sdr/primitive2d/sdrattributecreator.hxx>
 #include <osl/thread.hxx>
 #include <vos/mutex.hxx>
 
@@ -131,7 +131,8 @@ public:
 								const ::com::sun::star::uno::Any & rValue );
 	void				DataChanged( const Graphic& rGraphic );
 
-	sal_Bool				Connect() { return 0 != GetRealObject(); }
+
+	bool				Connect() { return 0 != GetRealObject(); }
 	void				UpdateAsynchron();
 	void				RemoveGraphicUpdater();
 };
@@ -208,7 +209,7 @@ SdrGraphicLink::SdrGraphicLink(SdrGrafObj* pObj)
 , pGrafObj( pObj )
 , pGraphicUpdater( NULL )
 {
-	SetSynchron( sal_False );
+	SetSynchron( false );
 }
 
 // -----------------------------------------------------------------------------
@@ -235,10 +236,9 @@ void SdrGraphicLink::RemoveGraphicUpdater()
 
 // -----------------------------------------------------------------------------
 
-void SdrGraphicLink::DataChanged( const String& rMimeType,
-								const ::com::sun::star::uno::Any & rValue )
+void SdrGraphicLink::DataChanged( const String& rMimeType, const ::com::sun::star::uno::Any & rValue )
 {
-	SdrModel*       pModel      = pGrafObj ? pGrafObj->GetModel() : 0;
+	SdrModel* pModel = pGrafObj ? &pGrafObj->getSdrModelFromSdrObject() : 0;
 	sfx2::LinkManager* pLinkManager= pModel  ? pModel->GetLinkManager() : 0;
 
 	if( pLinkManager && rValue.hasValue() )
@@ -248,13 +248,13 @@ void SdrGraphicLink::DataChanged( const String& rMimeType,
 		Graphic aGraphic;
 		if( sfx2::LinkManager::GetGraphicFromAny( rMimeType, rValue, aGraphic ))
 		{
-   			pGrafObj->NbcSetGraphic( aGraphic );
+   			pGrafObj->SetGraphic( aGraphic );
 			pGrafObj->ActionChanged();
 		}
 		else if( SotExchange::GetFormatIdFromMimeType( rMimeType ) != sfx2::LinkManager::RegisterStatusInfoId() )
 		{
 			// broadcasting, to update slidesorter
-			pGrafObj->BroadcastObjectChange();
+		    const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pGrafObj);
 		}
 	}
 }
@@ -285,8 +285,10 @@ void SdrGraphicLink::UpdateAsynchron()
 			}
 		}
 		else
+		{
 			pGraphicUpdater = new SdrGraphicUpdater( pGrafObj->GetFileName(), pGrafObj->GetFilterName(), *this );
-	}
+    	}
+    }
 }
 
 // --------------
@@ -311,81 +313,26 @@ sdr::contact::ViewContact* SdrGrafObj::CreateObjectSpecificViewContact()
 
 //////////////////////////////////////////////////////////////////////////////
 
-TYPEINIT1(SdrGrafObj,SdrRectObj);
-
-// -----------------------------------------------------------------------------
-
-SdrGrafObj::SdrGrafObj()
-:	SdrRectObj(),
-	pGraphicLink	( NULL ),
-	bMirrored		( sal_False )
+SdrGrafObj::SdrGrafObj(
+	SdrModel& rSdrModel, 
+	const Graphic& rGrf, 
+	const basegfx::B2DHomMatrix& rTransform)
+:	SdrRectObj(
+		rSdrModel, 
+		rTransform),
+	pGraphicLink(0),
+	bMirrored(false)
 {
-	pGraphic = new GraphicObject;
+	pGraphic = new GraphicObject( rGrf );
 	pGraphic->SetSwapStreamHdl( LINK( this, SdrGrafObj, ImpSwapHdl ), SWAPGRAPHIC_TIMEOUT );
 	
     // #i118485# Shear allowed and possible now
     bNoShear = false;
 
 	// #111096#
-	mbGrafAnimationAllowed = sal_True;
-
-	// #i25616#
-	mbLineIsOutsideGeometry = sal_True;
-	mbInsidePaint = sal_False;
-	mbIsPreview = sal_False;
-
-	// #i25616#
-	mbSupportTextIndentingOnLineWidthChange = sal_False;
-}
-
-// -----------------------------------------------------------------------------
-
-SdrGrafObj::SdrGrafObj(const Graphic& rGrf, const Rectangle& rRect)
-:	SdrRectObj		( rRect ),
-	pGraphicLink	( NULL ),
-	bMirrored		( sal_False )
-{
-	pGraphic = new GraphicObject( rGrf );
-	pGraphic->SetSwapStreamHdl( LINK( this, SdrGrafObj, ImpSwapHdl ), SWAPGRAPHIC_TIMEOUT );
-
-    // #i118485# Shear allowed and possible now
-    bNoShear = false;
-
-	// #111096#
-	mbGrafAnimationAllowed = sal_True;
-
-	// #i25616#
-	mbLineIsOutsideGeometry = sal_True;
-	mbInsidePaint = sal_False;
-	mbIsPreview	= sal_False;
-
-	// #i25616#
-	mbSupportTextIndentingOnLineWidthChange = sal_False;
-}
-
-// -----------------------------------------------------------------------------
-
-SdrGrafObj::SdrGrafObj( const Graphic& rGrf )
-:	SdrRectObj(),
-	pGraphicLink	( NULL ),
-	bMirrored		( sal_False )
-{
-	pGraphic = new GraphicObject( rGrf );
-	pGraphic->SetSwapStreamHdl( LINK( this, SdrGrafObj, ImpSwapHdl ), SWAPGRAPHIC_TIMEOUT );
-
-    // #i118485# Shear allowed and possible now
-    bNoShear = false;
-
-	// #111096#
-	mbGrafAnimationAllowed = sal_True;
-
-	// #i25616#
-	mbLineIsOutsideGeometry = sal_True;
-	mbInsidePaint = sal_False;
-	mbIsPreview	= sal_False;
-
-	// #i25616#
-	mbSupportTextIndentingOnLineWidthChange = sal_False;
+	mbGrafAnimationAllowed = true;
+	mbInsidePaint = false;
+	mbIsPreview	= false;
 }
 
 // -----------------------------------------------------------------------------
@@ -396,16 +343,71 @@ SdrGrafObj::~SdrGrafObj()
 	ImpLinkAbmeldung();
 }
 
+void SdrGrafObj::copyDataFromSdrObject(const SdrObject& rSource)
+{
+	if(this != &rSource)
+	{
+		const SdrGrafObj* pSource = dynamic_cast< const SdrGrafObj* >(&rSource);
+
+		if(pSource)
+		{
+			// call parent
+			SdrRectObj::copyDataFromSdrObject(rSource);
+
+			// copy local data
+			pGraphic->SetGraphic(pSource->GetGraphic(), &pSource->GetGraphicObject());
+			aCropRect = pSource->aCropRect;
+			aFileName = pSource->aFileName;
+			aFilterName = pSource->aFilterName;
+			bMirrored = pSource->bMirrored;
+
+			if(pSource->pGraphicLink)
+            {
+				SetGraphicLink(aFileName, aFilterName);
+			}
+
+			ImpSetAttrToGrafInfo();
+		}
+		else
+		{
+			OSL_ENSURE(false, "copyDataFromSdrObject with ObjectType of Source different from Target (!)");
+		}
+	}
+}
+
+SdrObject* SdrGrafObj::CloneSdrObject(SdrModel* pTargetModel) const
+{
+	SdrGrafObj* pClone = new SdrGrafObj(
+		pTargetModel ? *pTargetModel : getSdrModelFromSdrObject(), 
+		GetGraphic());
+	OSL_ENSURE(pClone, "CloneSdrObject error (!)");
+	pClone->copyDataFromSdrObject(*this);
+
+	return pClone;
+}
+
+// -----------------------------------------------------------------------------
+
+bool SdrGrafObj::IsSdrGrafObj() const
+{
+    return true;
+}
+
+bool SdrGrafObj::DoesSupportTextIndentingOnLineWidthChange() const
+{
+    return false;
+}
+
 // -----------------------------------------------------------------------------
 
 void SdrGrafObj::SetGraphicObject( const GraphicObject& rGrfObj )
 {
+    const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
 	*pGraphic = rGrfObj;
 	pGraphic->SetSwapStreamHdl( LINK( this, SdrGrafObj, ImpSwapHdl ), SWAPGRAPHIC_TIMEOUT );
 	pGraphic->SetUserData();
-	mbIsPreview = sal_False;
+	mbIsPreview = false;
 	SetChanged();
-	BroadcastObjectChange();
 }
 
 // -----------------------------------------------------------------------------
@@ -422,18 +424,13 @@ const GraphicObject& SdrGrafObj::GetGraphicObject(bool bForceSwapIn) const
 
 // -----------------------------------------------------------------------------
 
-void SdrGrafObj::NbcSetGraphic( const Graphic& rGrf )
-{
-	pGraphic->SetGraphic( rGrf );
-	pGraphic->SetUserData();
-	mbIsPreview = sal_False;
-}
-
 void SdrGrafObj::SetGraphic( const Graphic& rGrf )
 {
-    NbcSetGraphic(rGrf);
+    const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
+	pGraphic->SetGraphic( rGrf );
+	pGraphic->SetUserData();
+	mbIsPreview = false;
 	SetChanged();
-	BroadcastObjectChange();
 }
 
 // -----------------------------------------------------------------------------
@@ -450,20 +447,18 @@ Graphic SdrGrafObj::GetTransformedGraphic( sal_uIntPtr nTransformFlags ) const
 {
     // #107947# Refactored most of the code to GraphicObject, where
     // everybody can use e.g. the cropping functionality
-
-	GraphicType	    eType = GetGraphicType();
-    MapMode   		aDestMap( pModel->GetScaleUnit(), Point(), pModel->GetScaleFraction(), pModel->GetScaleFraction() );
-    const Size      aDestSize( GetLogicRect().GetSize() );
-    const sal_Bool      bMirror = ( nTransformFlags & SDRGRAFOBJ_TRANSFORMATTR_MIRROR ) != 0;
-    const sal_Bool      bRotate = ( ( nTransformFlags & SDRGRAFOBJ_TRANSFORMATTR_ROTATE ) != 0 ) &&
-        ( aGeo.nDrehWink && aGeo.nDrehWink != 18000 ) && ( GRAPHIC_NONE != eType );
+	const GraphicType eType(GetGraphicType());
+	const MapMode aDestMap(getSdrModelFromSdrObject().GetExchangeObjectUnit(), Point(), getSdrModelFromSdrObject().GetExchangeObjectScale(), getSdrModelFromSdrObject().GetExchangeObjectScale() );
+	const Size aDestSize( sdr::legacy::GetLogicRect(*this).GetSize() );
+	const bool bMirror(0 != (nTransformFlags & SDRGRAFOBJ_TRANSFORMATTR_MIRROR));
+	const long nOldRotAngle(sdr::legacy::GetRotateAngle(*this));
+	const bool bRotate((0 != (nTransformFlags & SDRGRAFOBJ_TRANSFORMATTR_ROTATE)) && (0 != nOldRotAngle) && (GRAPHIC_NONE != eType));
 
     // #104115# Need cropping info earlier
-    ( (SdrGrafObj*) this )->ImpSetAttrToGrafInfo();
+	const_cast< SdrGrafObj* >(this)->ImpSetAttrToGrafInfo();
     GraphicAttr aActAttr;
 
-	if( SDRGRAFOBJ_TRANSFORMATTR_NONE != nTransformFlags &&
-        GRAPHIC_NONE != eType )
+	if(SDRGRAFOBJ_TRANSFORMATTR_NONE != nTransformFlags && GRAPHIC_NONE != eType)
 	{
         // actually transform the graphic only in this case. On the
         // other hand, cropping will always happen
@@ -471,15 +466,17 @@ Graphic SdrGrafObj::GetTransformedGraphic( sal_uIntPtr nTransformFlags ) const
 
         if( bMirror )
 		{
-			sal_uInt16		nMirrorCase = ( aGeo.nDrehWink == 18000 ) ? ( bMirrored ? 3 : 4 ) : ( bMirrored ? 2 : 1 );
-			FASTBOOL	bHMirr = nMirrorCase == 2 || nMirrorCase == 4;
-			FASTBOOL	bVMirr = nMirrorCase == 3 || nMirrorCase == 4;
+			const sal_uInt16 nMirrorCase((18000 == nOldRotAngle) ? (bMirrored ? 3 : 4) : (bMirrored ? 2 : 1));
+			const bool bHMirr(2 == nMirrorCase || 4 == nMirrorCase);
+			const bool bVMirr(3 == nMirrorCase || 4 == nMirrorCase);
 
 			aActAttr.SetMirrorFlags( ( bHMirr ? BMP_MIRROR_HORZ : 0 ) | ( bVMirr ? BMP_MIRROR_VERT : 0 ) );
 		}
 
 		if( bRotate )
-			aActAttr.SetRotation( sal_uInt16(aGeo.nDrehWink / 10) );
+		{
+			aActAttr.SetRotation(sal_uInt16(nOldRotAngle/10));
+		}
 	}
 
     // #107947# Delegate to moved code in GraphicObject
@@ -493,29 +490,29 @@ GraphicType SdrGrafObj::GetGraphicType() const
 	return pGraphic->GetType();
 }
 
-sal_Bool SdrGrafObj::IsAnimated() const
+bool SdrGrafObj::IsAnimated() const
 {
 	return pGraphic->IsAnimated();
 }
 
-sal_Bool SdrGrafObj::IsEPS() const
+bool SdrGrafObj::IsEPS() const
 {
 	return pGraphic->IsEPS();
 }
 
-sal_Bool SdrGrafObj::IsRenderGraphic() const
+bool SdrGrafObj::IsRenderGraphic() const
 {
 	return pGraphic->IsRenderGraphic();
 }
 
-sal_Bool SdrGrafObj::HasRenderGraphic() const
+bool SdrGrafObj::HasRenderGraphic() const
 {
 	return pGraphic->HasRenderGraphic();
 }
 
-sal_Bool SdrGrafObj::IsSwappedOut() const
+bool SdrGrafObj::IsSwappedOut() const
 {
-	return mbIsPreview ? sal_True : pGraphic->IsSwappedOut();
+	return mbIsPreview ? true : pGraphic->IsSwappedOut();
 }
 
 const MapMode& SdrGrafObj::GetGrafPrefMapMode() const
@@ -532,18 +529,24 @@ const Size& SdrGrafObj::GetGrafPrefSize() const
 
 void SdrGrafObj::SetGrafStreamURL( const String& rGraphicStreamURL )
 {
-	mbIsPreview = sal_False;
+	mbIsPreview = false;
+	
 	if( !rGraphicStreamURL.Len() )
 	{
 		pGraphic->SetUserData();
 	}
-	else if( pModel->IsSwapGraphics() )
+	else
 	{
-		pGraphic->SetUserData( rGraphicStreamURL );
+		if(getSdrModelFromSdrObject().IsSwapGraphics())
+    	{
+	    	pGraphic->SetUserData( rGraphicStreamURL );
 
-		// set state of graphic object to 'swapped out'
-		if( pGraphic->GetType() == GRAPHIC_NONE )
-			pGraphic->SetSwapState();
+    		// set state of graphic object to 'swapped out'
+			if(GRAPHIC_NONE == pGraphic->GetType())
+			{
+			    pGraphic->SetSwapState();
+    	    }
+        }
 	}
 }
 
@@ -584,7 +587,7 @@ void SdrGrafObj::ForceSwapIn() const
 		pGraphic->SetUserData( aUserData );
 		pGraphic->SetSwapState();
 
-		const_cast< SdrGrafObj* >( this )->mbIsPreview = sal_False;
+		const_cast< SdrGrafObj* >( this )->mbIsPreview = false;
 	}
 	if ( pGraphicLink && pGraphic->IsSwappedOut() )
 		ImpUpdateGraphicLink( sal_False );
@@ -612,14 +615,14 @@ void SdrGrafObj::ForceSwapOut() const
 
 void SdrGrafObj::ImpLinkAnmeldung()
 {
-	sfx2::LinkManager* pLinkManager = pModel != NULL ? pModel->GetLinkManager() : NULL;
+	sfx2::LinkManager* pLinkManager = getSdrModelFromSdrObject().GetLinkManager();
 
-	if( pLinkManager != NULL && pGraphicLink == NULL )
+	if(pLinkManager && !pGraphicLink)
 	{
 		if( aFileName.Len() )
 		{
 			pGraphicLink = new SdrGraphicLink( this );
-			pLinkManager->InsertFileLink( *pGraphicLink, OBJECT_CLIENT_GRF, aFileName, ( aFilterName.Len() ? &aFilterName : NULL ), NULL );
+			pLinkManager->InsertFileLink(*pGraphicLink, OBJECT_CLIENT_GRF, aFileName, (aFilterName.Len() ? &aFilterName : 0), 0);
 			pGraphicLink->Connect();
 		}
 	}
@@ -629,13 +632,13 @@ void SdrGrafObj::ImpLinkAnmeldung()
 
 void SdrGrafObj::ImpLinkAbmeldung()
 {
-	sfx2::LinkManager* pLinkManager = pModel != NULL ? pModel->GetLinkManager() : NULL;
+	sfx2::LinkManager* pLinkManager = getSdrModelFromSdrObject().GetLinkManager();
 
-	if( pLinkManager != NULL && pGraphicLink!=NULL)
+	if(pLinkManager && pGraphicLink)
 	{
 		// Bei Remove wird *pGraphicLink implizit deleted
 		pLinkManager->Remove( pGraphicLink );
-		pGraphicLink=NULL;
+		pGraphicLink = 0;
 	}
 }
 
@@ -666,32 +669,33 @@ void SdrGrafObj::ReleaseGraphicLink()
 
 void SdrGrafObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	FASTBOOL bAnim = pGraphic->IsAnimated();
-    FASTBOOL bRenderGraphic = pGraphic->HasRenderGraphic();
-	FASTBOOL bNoPresGrf = ( pGraphic->GetType() != GRAPHIC_NONE ) && !bEmptyPresObj;
+	bool bAnim = pGraphic->IsAnimated();
+    bool bRenderGraphic = pGraphic->HasRenderGraphic();
+	bool bNoPresGrf = ( pGraphic->GetType() != GRAPHIC_NONE ) && !IsEmptyPresObj();
 
-	rInfo.bResizeFreeAllowed = aGeo.nDrehWink % 9000 == 0 ||
-							   aGeo.nDrehWink % 18000 == 0 ||
-							   aGeo.nDrehWink % 27000 == 0;
+	const long nOldRotAngle(sdr::legacy::GetRotateAngle(*this));
+	rInfo.bResizeFreeAllowed = nOldRotAngle % 9000 == 0 ||
+							   nOldRotAngle % 18000 == 0 ||
+							   nOldRotAngle % 27000 == 0;
 
-	rInfo.bResizePropAllowed = sal_True;
+	rInfo.bResizePropAllowed = true;
 	rInfo.bRotateFreeAllowed = bNoPresGrf && !bAnim && !bRenderGraphic;
 	rInfo.bRotate90Allowed = bNoPresGrf && !bAnim && !bRenderGraphic;
 	rInfo.bMirrorFreeAllowed = bNoPresGrf && !bAnim && !bRenderGraphic;
 	rInfo.bMirror45Allowed = bNoPresGrf && !bAnim && !bRenderGraphic;
-	rInfo.bMirror90Allowed = !bEmptyPresObj && !bRenderGraphic;
-	rInfo.bTransparenceAllowed = sal_False;
-	rInfo.bGradientAllowed = sal_False;
-
+	rInfo.mbMirror90Allowed = !IsEmptyPresObj() && !bRenderGraphic;
+	rInfo.mbTransparenceAllowed = false;
+	rInfo.mbGradientAllowed = false;
+    
     // #i118485# Shear allowed and possible now
-	rInfo.bShearAllowed = true;
+	rInfo.mbShearAllowed = true;
 
-    rInfo.bEdgeRadiusAllowed=sal_False;
-	rInfo.bCanConvToPath = !IsEPS() && !bRenderGraphic;
-	rInfo.bCanConvToPathLineToArea = sal_False;
-	rInfo.bCanConvToPolyLineToArea = sal_False;
-	rInfo.bCanConvToPoly = !IsEPS() && !bRenderGraphic;
-	rInfo.bCanConvToContour = (rInfo.bCanConvToPoly || LineGeometryUsageIsNecessary());
+    rInfo.mbEdgeRadiusAllowed=false;
+	rInfo.mbCanConvToPath = false;
+	rInfo.mbCanConvToPathLineToArea = false;
+	rInfo.mbCanConvToPolyLineToArea = false;
+	rInfo.mbCanConvToPoly = !IsEPS() && !bRenderGraphic;
+	rInfo.mbCanConvToContour = (rInfo.mbCanConvToPoly || LineGeometryUsageIsNecessary());
 }
 
 // -----------------------------------------------------------------------------
@@ -706,16 +710,16 @@ sal_uInt16 SdrGrafObj::GetObjIdentifier() const
 /* The graphic of the GraphicLink will be loaded. If it is called with
    bAsynchron = true then the graphic will be set later via DataChanged
 */ 
-sal_Bool SdrGrafObj::ImpUpdateGraphicLink( sal_Bool bAsynchron ) const
+bool SdrGrafObj::ImpUpdateGraphicLink( bool bAsynchron ) const
 {
-    sal_Bool bRet = sal_False;
+    bool bRet = false;
     if( pGraphicLink )
 	{
 		if ( bAsynchron )
 			pGraphicLink->UpdateAsynchron();
 		else
 			pGraphicLink->DataChanged( ImpLoadLinkedGraphic( aFileName, aFilterName ) );
-        bRet = sal_True;
+        bRet = true;
     }
 	return bRet;
 }
@@ -724,11 +728,9 @@ sal_Bool SdrGrafObj::ImpUpdateGraphicLink( sal_Bool bAsynchron ) const
 
 void SdrGrafObj::ImpSetLinkedGraphic( const Graphic& rGraphic )
 {
-	const sal_Bool bIsChanged = GetModel()->IsChanged();
-	NbcSetGraphic( rGraphic );
-	ActionChanged();
-	BroadcastObjectChange();
-	GetModel()->SetChanged( bIsChanged );
+	const bool bIsChanged(getSdrModelFromSdrObject().IsChanged());
+	SetGraphic( rGraphic );
+	getSdrModelFromSdrObject().SetChanged( bIsChanged );
 }
 
 // -----------------------------------------------------------------------------
@@ -828,26 +830,6 @@ SdrObject* SdrGrafObj::getFullDragClone() const
     return pRetval;
 }
 
-void SdrGrafObj::operator=( const SdrObject& rObj )
-{
-	SdrRectObj::operator=( rObj );
-
-	const SdrGrafObj& rGraf = (SdrGrafObj&) rObj;
-
-	pGraphic->SetGraphic( rGraf.GetGraphic(), &rGraf.GetGraphicObject() );
-	aCropRect = rGraf.aCropRect;
-	aFileName = rGraf.aFileName;
-	aFilterName = rGraf.aFilterName;
-	bMirrored = rGraf.bMirrored;
-
-	if( rGraf.pGraphicLink != NULL)
-	{
-		SetGraphicLink( aFileName, aFilterName );
-	}
-
-	ImpSetAttrToGrafInfo();
-}
-
 // -----------------------------------------------------------------------------
 // #i25616#
 
@@ -855,169 +837,90 @@ basegfx::B2DPolyPolygon SdrGrafObj::TakeXorPoly() const
 {
 	if(mbInsidePaint)
 	{
-		basegfx::B2DPolyPolygon aRetval;
-
 		// take grown rectangle
-		const sal_Int32 nHalfLineWidth(ImpGetLineWdt() / 2);
-		const Rectangle aGrownRect(
-			aRect.Left() - nHalfLineWidth,
-			aRect.Top() - nHalfLineWidth,
-			aRect.Right() + nHalfLineWidth,
-			aRect.Bottom() + nHalfLineWidth);
+		const double fHalfLineWidth(ImpGetLineWdt() * 0.5);
+		basegfx::B2DRange aRange(sdr::legacy::GetSnapRange(*this));
 
-		XPolygon aXPoly(ImpCalcXPoly(aGrownRect, GetEckenradius()));
-		aRetval.append(aXPoly.getB2DPolygon());
+		if(!basegfx::fTools::equalZero(fHalfLineWidth))
+    	{
+			aRange.grow(fHalfLineWidth);
+        }
 
-		return aRetval;
-	}
+		double fCornerRadiusX(0.0);
+		double fCornerRadiusY(0.0);
+
+		if(GetEdgeRadius())
+        {
+			// get absolute object scale
+			const basegfx::B2DVector aObjectScale(absolute(getSdrObjectScale()));
+
+			drawinglayer::primitive2d::calculateRelativeCornerRadius(
+				GetEdgeRadius(), 
+				aObjectScale.getX(), 
+				aObjectScale.getY(),
+				fCornerRadiusX, 
+				fCornerRadiusY);
+        }
+
+		return basegfx::B2DPolyPolygon(basegfx::tools::createPolygonFromRect(aRange, fCornerRadiusX, fCornerRadiusY));
+    }
 	else
-	{
+    {
 		// call parent
 		return SdrRectObj::TakeXorPoly();
-	}
+    }
 }
 
 // -----------------------------------------------------------------------------
 
-sal_uInt32 SdrGrafObj::GetHdlCount() const
+void SdrGrafObj::AddToHdlList(SdrHdlList& rHdlList) const
 {
-	return 8L;
+	// add parent handles. Use SdrTextObj, not SdrRectObj, to add
+	// the eight object handles, but not the text frame
+	SdrTextObj::AddToHdlList(rHdlList);
 }
 
 // -----------------------------------------------------------------------------
 
-SdrHdl* SdrGrafObj::GetHdl(sal_uInt32 nHdlNum) const
+void SdrGrafObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
-	return SdrRectObj::GetHdl( nHdlNum + 1L );
+	// call parent
+	SdrRectObj::setSdrObjectTransformation(rTransformation);
+
+	// TTTT: extract mirror flags and trigger bMirrored (if needed in the future at all)
 }
 
 // -----------------------------------------------------------------------------
 
-void SdrGrafObj::NbcResize(const Point& rRef, const Fraction& xFact, const Fraction& yFact)
+void SdrGrafObj::handlePageChange(SdrPage* pOldPage, SdrPage* pNewPage)
 {
-	SdrRectObj::NbcResize( rRef, xFact, yFact );
+	if(pOldPage != pNewPage)
+    {
+		const bool bRemove(pNewPage && pOldPage);
+		const bool bInsert(pNewPage && !pOldPage);
 
-	FASTBOOL bMirrX = xFact.GetNumerator() < 0;
-	FASTBOOL bMirrY = yFact.GetNumerator() < 0;
+	    if( bRemove )
+	    {
+		    // hier kein SwapIn noetig, weil wenn nicht geladen, dann auch nicht animiert.
+		    if( pGraphic->IsAnimated())
+			{
+    			pGraphic->StopAnimation();
+			}
 
-	if( bMirrX != bMirrY )
-		bMirrored = !bMirrored;
-}
+			if(pGraphicLink)
+			{
+    			ImpLinkAbmeldung();
+	        }
+        }
 
-// -----------------------------------------------------------------------------
+		// call parent
+		SdrRectObj::handlePageChange(pOldPage, pNewPage);
 
-void SdrGrafObj::NbcRotate(const Point& rRef, long nWink, double sn, double cs)
-{
-	SdrRectObj::NbcRotate(rRef,nWink,sn,cs);
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::NbcMirror(const Point& rRef1, const Point& rRef2)
-{
-	SdrRectObj::NbcMirror(rRef1,rRef2);
-	bMirrored = !bMirrored;
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::NbcShear(const Point& rRef, long nWink, double tn, FASTBOOL bVShear)
-{
-    // #i118485# Call Shear now, old version redirected to rotate
-	SdrRectObj::NbcShear(rRef, nWink, tn, bVShear);
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::NbcSetSnapRect(const Rectangle& rRect)
-{
-	SdrRectObj::NbcSetSnapRect(rRect);
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::NbcSetLogicRect( const Rectangle& rRect)
-{
-	//int bChg=rRect.GetSize()!=aRect.GetSize();
-	SdrRectObj::NbcSetLogicRect(rRect);
-}
-
-// -----------------------------------------------------------------------------
-
-SdrObjGeoData* SdrGrafObj::NewGeoData() const
-{
-	return new SdrGrafObjGeoData;
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::SaveGeoData(SdrObjGeoData& rGeo) const
-{
-	SdrRectObj::SaveGeoData(rGeo);
-	SdrGrafObjGeoData& rGGeo=(SdrGrafObjGeoData&)rGeo;
-	rGGeo.bMirrored=bMirrored;
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::RestGeoData(const SdrObjGeoData& rGeo)
-{
-	//long		nDrehMerk = aGeo.nDrehWink;
-	//long		nShearMerk = aGeo.nShearWink;
-	//int	bMirrMerk = bMirrored;
-	Size		aSizMerk( aRect.GetSize() );
-
-	SdrRectObj::RestGeoData(rGeo);
-	SdrGrafObjGeoData& rGGeo=(SdrGrafObjGeoData&)rGeo;
-	bMirrored=rGGeo.bMirrored;
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::SetPage( SdrPage* pNewPage )
-{
-	FASTBOOL bRemove = pNewPage == NULL && pPage != NULL;
-	FASTBOOL bInsert = pNewPage != NULL && pPage == NULL;
-
-	if( bRemove )
-	{
-		// hier kein SwapIn noetig, weil wenn nicht geladen, dann auch nicht animiert.
-		if( pGraphic->IsAnimated())
-			pGraphic->StopAnimation();
-
-		if( pGraphicLink != NULL )
-			ImpLinkAbmeldung();
-	}
-
-	SdrRectObj::SetPage( pNewPage );
-
-	if(aFileName.Len() && bInsert)
-		ImpLinkAnmeldung();
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::SetModel( SdrModel* pNewModel )
-{
-	FASTBOOL bChg = pNewModel != pModel;
-
-	if( bChg )
-	{
-		if( pGraphic->HasUserData() )
+		if(aFileName.Len() && bInsert)
 		{
-			ForceSwapIn();
-			pGraphic->SetUserData();
+			ImpLinkAnmeldung();
 		}
-
-		if( pGraphicLink != NULL )
-			ImpLinkAbmeldung();
 	}
-
-	// Model umsetzen
-	SdrRectObj::SetModel(pNewModel);
-
-	if( bChg && aFileName.Len() )
-		ImpLinkAnmeldung();
 }
 
 // -----------------------------------------------------------------------------
@@ -1026,7 +929,7 @@ void SdrGrafObj::StartAnimation( OutputDevice* /*pOutDev*/, const Point& /*rPoin
 {
 	// #111096#
 	// use new graf animation
-	SetGrafAnimationAllowed(sal_True);
+	SetGrafAnimationAllowed(true);
 }
 
 // -----------------------------------------------------------------------------
@@ -1035,12 +938,12 @@ void SdrGrafObj::StopAnimation(OutputDevice* /*pOutDev*/, long /*nExtraData*/)
 {
 	// #111096#
 	// use new graf animation
-	SetGrafAnimationAllowed(sal_False);
+	SetGrafAnimationAllowed(false);
 }
 
 // -----------------------------------------------------------------------------
 
-FASTBOOL SdrGrafObj::HasGDIMetaFile() const
+bool SdrGrafObj::HasGDIMetaFile() const
 {
 	return( pGraphic->GetType() == GRAPHIC_GDIMETAFILE );
 }
@@ -1055,7 +958,7 @@ const GDIMetaFile* SdrGrafObj::GetGDIMetaFile() const
 
 // -----------------------------------------------------------------------------
 
-SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
+SdrObject* SdrGrafObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) const
 {
 	SdrObject* pRetval = NULL;
 
@@ -1064,69 +967,60 @@ SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 		case GRAPHIC_GDIMETAFILE:
 		{
 			// NUR die aus dem MetaFile erzeugbaren Objekte in eine Gruppe packen und zurueckliefern
-			ImpSdrGDIMetaFileImport aFilter(*GetModel());
-			aFilter.SetScaleRect(aRect);
+			SdrObjGroup* pGrp = new SdrObjGroup(getSdrModelFromSdrObject());
+			ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrObject());
+			const Rectangle aCurrRect(sdr::legacy::GetSnapRect(*this));
+			Point aOutPos( aCurrRect.TopLeft() );
+			const Size aOutSiz( aCurrRect.GetSize() );
+
+			aFilter.SetScaleRect(aCurrRect);
 			aFilter.SetLayer(GetLayer());
 
-			SdrObjGroup* pGrp = new SdrObjGroup();
-			sal_uInt32 nInsAnz = aFilter.DoImport(GetTransformedGraphic(
-                SDRGRAFOBJ_TRANSFORMATTR_COLOR|SDRGRAFOBJ_TRANSFORMATTR_MIRROR).GetGDIMetaFile(), 
-                *pGrp->GetSubList(), 0);
+			const sal_uInt32 nInsAnz(aFilter.DoImport(GetTransformedGraphic().GetGDIMetaFile(), *pGrp, 0));
 
-            if(nInsAnz)
+			if(nInsAnz)
 			{
-                {
-                    // copy transformation
-                	GeoStat aGeoStat(GetGeoStat());
+                // copy transformation
+                pGrp->setSdrObjectTransformation(getSdrObjectTransformation());
 
-	                if(aGeoStat.nShearWink) 
-                    {
-                        aGeoStat.RecalcTan();
-                        pGrp->NbcShear(aRect.TopLeft(), aGeoStat.nShearWink, aGeoStat.nTan, false);
-                    }
-
-	                if(aGeoStat.nDrehWink) 
-                    {
-	                    aGeoStat.RecalcSinCos();
-                        pGrp->NbcRotate(aRect.TopLeft(), aGeoStat.nDrehWink, aGeoStat.nSin, aGeoStat.nCos);
-                    }
-                }
-
-                pRetval = pGrp;
-				pGrp->NbcSetLayer(GetLayer());
-				pGrp->SetModel(GetModel());
+                // copy other aspects
+                pGrp->SetLayer(GetLayer());
+				pRetval = pGrp;
                 
                 if(bAddText)
                 {
-				    pRetval = ImpConvertAddText(pRetval, bBezier);
+    				pRetval = ImpConvertAddText(pRetval, bBezier);
                 }
 
                 // convert all children
                 if( pRetval )
                 {
                     SdrObject* pHalfDone = pRetval;
-                    pRetval = pHalfDone->DoConvertToPolyObj(bBezier, bAddText);
-                    SdrObject::Free( pHalfDone ); // resulting object is newly created
+                    pRetval = pHalfDone->DoConvertToPolygonObject(bBezier, bAddText);
+                    deleteSdrObjectSafeAndClearPointer( pHalfDone ); // resulting object is newly created
 
                     if( pRetval )
                     {
                         // flatten subgroups. As we call
-                        // DoConvertToPolyObj() on the resulting group
+						// DoConvertToPolygonObject() on the resulting group
                         // objects, subgroups can exist (e.g. text is
                         // a group object for every line).
-                        SdrObjList* pList = pRetval->GetSubList();
+		                SdrObjList* pList = pRetval->getChildrenOfSdrObject();
+	                        
                         if( pList )
+						{
                             pList->FlattenGroups();
+                        }
                     }
-                }
+		    	}
 			}
 			else
-            {
-				delete pGrp;
-            }
+			{
+				deleteSdrObjectSafeAndClearPointer(pGrp);
+			}
 
             // #i118485# convert line and fill
-            SdrObject* pLineFill = SdrRectObj::DoConvertToPolyObj(bBezier, false);
+            SdrObject* pLineFill = SdrRectObj::DoConvertToPolygonObject(bBezier, false);
 
             if(pLineFill)
             {
@@ -1136,14 +1030,13 @@ SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 
                     if(!pGrp)
                     {
-            			pGrp = new SdrObjGroup();
+                        pGrp = new SdrObjGroup(getSdrModelFromSdrObject());
 
-                        pGrp->NbcSetLayer(GetLayer());
-				        pGrp->SetModel(GetModel());
-                        pGrp->GetSubList()->NbcInsertObject(pRetval);
+                        pGrp->SetLayer(GetLayer());
+                        pGrp->getChildrenOfSdrObject()->InsertObjectToSdrObjList(pRetval);
                     }
 
-                    pGrp->GetSubList()->NbcInsertObject(pLineFill, 0);
+                    pGrp->getChildrenOfSdrObject()->InsertObjectToSdrObjList(pLineFill, 0);
                 }
                 else
                 {
@@ -1156,7 +1049,7 @@ SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 		case GRAPHIC_BITMAP:
 		{
 			// Grundobjekt kreieren und Fuellung ergaenzen
-			pRetval = SdrRectObj::DoConvertToPolyObj(bBezier, bAddText);
+			pRetval = SdrRectObj::DoConvertToPolygonObject(bBezier, bAddText);
 
 			// Bitmap als Attribut retten
 			if(pRetval)
@@ -1168,7 +1061,7 @@ SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 				Bitmap aBitmap( GetTransformedGraphic().GetBitmap() );
 				XOBitmap aXBmp(aBitmap, XBITMAP_STRETCH);
 				aSet.Put(XFillBitmapItem(String(), aXBmp));
-				aSet.Put(XFillBmpTileItem(sal_False));
+				aSet.Put(XFillBmpTileItem(false));
 
 				pRetval->SetMergedItemSet(aSet);
 			}
@@ -1177,7 +1070,7 @@ SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 		case GRAPHIC_NONE:
 		case GRAPHIC_DEFAULT:
 		{
-			pRetval = SdrRectObj::DoConvertToPolyObj(bBezier, bAddText);
+			pRetval = SdrRectObj::DoConvertToPolygonObject(bBezier, bAddText);
 			break;
 		}
 	}
@@ -1189,7 +1082,6 @@ SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 
 void SdrGrafObj::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
-	SetXPolyDirty();
 	SdrRectObj::Notify( rBC, rHint );
 	ImpSetAttrToGrafInfo();
 }
@@ -1211,8 +1103,7 @@ void SdrGrafObj::ImpSetAttrToGrafInfo()
 	aGrafInfo.SetDrawMode( ( (SdrGrafModeItem&) rSet.Get( SDRATTR_GRAFMODE ) ).GetValue() );
 	aGrafInfo.SetCrop( rCrop.GetLeft(), rCrop.GetTop(), rCrop.GetRight(), rCrop.GetBottom() );
 
-	SetXPolyDirty();
-	SetRectsDirty();
+	ActionChanged();
 }
 
 // -----------------------------------------------------------------------------
@@ -1233,54 +1124,58 @@ void SdrGrafObj::ImpSetGrafInfoToAttr()
 
 // -----------------------------------------------------------------------------
 
-void SdrGrafObj::AdjustToMaxRect( const Rectangle& rMaxRect, bool bShrinkOnly )
+void SdrGrafObj::AdjustToMaxRange( const basegfx::B2DRange& rMaxRange, bool bShrinkOnly )
 {
-	Size aSize;
-	Size aMaxSize( rMaxRect.GetSize() );
-	if ( pGraphic->GetPrefMapMode().GetMapUnit() == MAP_PIXEL )
-		aSize = Application::GetDefaultDevice()->PixelToLogic( pGraphic->GetPrefSize(), MAP_100TH_MM );
+	Size aLogicSize;
+
+	if(MAP_PIXEL == pGraphic->GetPrefMapMode().GetMapUnit())
+    {
+		aLogicSize = Application::GetDefaultDevice()->PixelToLogic(pGraphic->GetPrefSize(), MAP_100TH_MM);
+	}
 	else
-		aSize = OutputDevice::LogicToLogic( pGraphic->GetPrefSize(),
-										    pGraphic->GetPrefMapMode(),
-										    MapMode( MAP_100TH_MM ) );
-
-	if( aSize.Height() != 0 && aSize.Width() != 0 )
 	{
-		Point aPos( rMaxRect.TopLeft() );
+		aLogicSize = OutputDevice::LogicToLogic(pGraphic->GetPrefSize(), pGraphic->GetPrefMapMode(), MapMode(MAP_100TH_MM));
+	}
 
-		// Falls Grafik zu gross, wird die Grafik
-		// in die Seite eingepasst
-		if ( (!bShrinkOnly                          ||
-	    	 ( aSize.Height() > aMaxSize.Height() ) ||
-		 	( aSize.Width()  > aMaxSize.Width()  ) )&&
-		 	aSize.Height() && aMaxSize.Height() )
+	basegfx::B2DVector aSize(aLogicSize.Width(), aLogicSize.Height());
+	const basegfx::B2DVector aMaxSize(rMaxRange.getRange());
+
+	if(!aSize.equalZero())
+	{
+		basegfx::B2DPoint aPos(rMaxRange.getMinimum());
+
+		if(!bShrinkOnly 
+			|| basegfx::fTools::more(aSize.getY(), aMaxSize.getY()) 
+			|| basegfx::fTools::more(aSize.getX(), aMaxSize.getX()))
 		{
-			float fGrfWH =	(float)aSize.Width() /
-							(float)aSize.Height();
-			float fWinWH =	(float)aMaxSize.Width() /
-							(float)aMaxSize.Height();
+		 	if(!basegfx::fTools::equalZero(aSize.getX()) && !basegfx::fTools::equalZero(aMaxSize.getY()))
+    		{
+				const double fScaleGraphic(aSize.getX() / aSize.getY());
+				const double fScaleLimit(aMaxSize.getX() / aMaxSize.getY());
 
-			// Grafik an Pagesize anpassen (skaliert)
-			if ( fGrfWH < fWinWH )
-			{
-				aSize.Width() = (long)(aMaxSize.Height() * fGrfWH);
-				aSize.Height()= aMaxSize.Height();
-			}
-			else if ( fGrfWH > 0.F )
-			{
-				aSize.Width() = aMaxSize.Width();
-				aSize.Height()= (long)(aMaxSize.Width() / fGrfWH);
-			}
+				if(basegfx::fTools::less(fScaleGraphic, fScaleLimit))
+    			{
+					aSize.setX(aMaxSize.getY() * fScaleGraphic);
+					aSize.setY(aMaxSize.getY());
+			    }
+				else if(basegfx::fTools::more(fScaleGraphic, 0.0))
+    			{
+					aSize.setX(aMaxSize.getX());
+					aSize.setY(aMaxSize.getX() / fScaleGraphic);
+	    		}
 
-			aPos = rMaxRect.Center();
+				aPos = rMaxRange.getCenter();
+			}
 		}
 
 		if( bShrinkOnly )
-			aPos = aRect.TopLeft();
+		{
+			aPos = getSdrObjectTranslate();
+		}
 
-		aPos.X() -= aSize.Width() / 2;
-		aPos.Y() -= aSize.Height() / 2;
-		SetLogicRect( Rectangle( aPos, aSize ) );
+		aPos -= aSize * 0.5;
+
+		sdr::legacy::SetLogicRange(*this, basegfx::B2DRange(aPos, aPos + aSize));
 	}
 }
 
@@ -1292,13 +1187,13 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
 
 	if( pO->IsInSwapOut() )
 	{
-		if( pModel && !mbIsPreview && pModel->IsSwapGraphics() && pGraphic->GetSizeBytes() > 20480 )
+		if( !mbIsPreview && getSdrModelFromSdrObject().IsSwapGraphics() && pGraphic->GetSizeBytes() > 20480 )
 		{
 			// test if this object is visualized from someone
             // ## test only if there are VOCs other than the preview renderer
 			if(!GetViewContact().HasViewObjectContacts(true))
 			{
-				const sal_uIntPtr	nSwapMode = pModel->GetSwapGraphicsMode();
+				const sal_uInt32 nSwapMode = getSdrModelFromSdrObject().GetSwapGraphicsMode();
 
 				if( ( pGraphic->HasUserData() || pGraphicLink ) &&
 					( nSwapMode & SDR_SWAPGRAPHICSMODE_PURGE ) )
@@ -1324,81 +1219,71 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
 	else if( pO->IsInSwapIn() )
 	{
 		// kann aus dem original Doc-Stream nachgeladen werden...
-		if( pModel != NULL )
+		if( pGraphic->HasUserData() )
 		{
-			if( pGraphic->HasUserData() )
+			SdrDocumentStreamInfo aStreamInfo;
+			aStreamInfo.mbDeleteAfterUse = false;
+			aStreamInfo.maUserData = pGraphic->GetUserData();
+			SvStream* pStream = getSdrModelFromSdrObject().GetDocumentStream( aStreamInfo );
+
+			if( pStream != NULL )
 			{
-				SdrDocumentStreamInfo aStreamInfo;
+				Graphic aGraphic;
 
-				aStreamInfo.mbDeleteAfterUse = sal_False;
-				aStreamInfo.maUserData = pGraphic->GetUserData();
-
-				SvStream* pStream = pModel->GetDocumentStream( aStreamInfo );
-
-				if( pStream != NULL )
-				{
-					Graphic aGraphic;
-
-                    com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >* pFilterData = NULL;
+                com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >* pFilterData = NULL;
                     
-					if(mbInsidePaint && !GetViewContact().HasViewObjectContacts(true))
-                    {
-//							Rectangle aSnapRect(GetSnapRect());
-//							const Rectangle aSnapRectPixel(pOutDev->LogicToPixel(aSnapRect));
+				if(mbInsidePaint && !GetViewContact().HasViewObjectContacts(true))
+                {
+                    pFilterData = new com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >( 3 );
 
-                        pFilterData = new com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >( 3 );
+                    com::sun::star::awt::Size aPreviewSizeHint( 64, 64 );
+			    	bool bAllowPartialStreamRead = true;
+				    bool bCreateNativeLink = false;
+                    (*pFilterData)[ 0 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "PreviewSizeHint" ) );
+                    (*pFilterData)[ 0 ].Value <<= aPreviewSizeHint;
+                    (*pFilterData)[ 1 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "AllowPartialStreamRead" ) );
+                    (*pFilterData)[ 1 ].Value <<= bAllowPartialStreamRead;
+                    (*pFilterData)[ 2 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "CreateNativeLink" ) );
+                    (*pFilterData)[ 2 ].Value <<= bCreateNativeLink;
 
-                        com::sun::star::awt::Size aPreviewSizeHint( 64, 64 );
-                        sal_Bool bAllowPartialStreamRead = sal_True;
-                        sal_Bool bCreateNativeLink = sal_False;
-                        (*pFilterData)[ 0 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "PreviewSizeHint" ) );
-                        (*pFilterData)[ 0 ].Value <<= aPreviewSizeHint;
-                        (*pFilterData)[ 1 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "AllowPartialStreamRead" ) );
-                        (*pFilterData)[ 1 ].Value <<= bAllowPartialStreamRead;
-                        (*pFilterData)[ 2 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "CreateNativeLink" ) );
-                        (*pFilterData)[ 2 ].Value <<= bCreateNativeLink;
-
-                        mbIsPreview = sal_True;
-                    }
-
-                    if( !GraphicFilter::GetGraphicFilter()->ImportGraphic( aGraphic, String(), *pStream,
-                                                        GRFILTER_FORMAT_DONTKNOW, NULL, 0, pFilterData ) )
-                    {
-                        const String aUserData( pGraphic->GetUserData() );
-
-                        pGraphic->SetGraphic( aGraphic );
-                        pGraphic->SetUserData( aUserData );
-
-                        // #142146# Graphic successfully swapped in.
-                        pRet = GRFMGR_AUTOSWAPSTREAM_LOADED;
-                    }
-                    delete pFilterData;
-
-                    pStream->ResetError();
-
-                    if( aStreamInfo.mbDeleteAfterUse || aStreamInfo.mxStorageRef.is() )
-                    {
-                        if ( aStreamInfo.mxStorageRef.is() )
-                        {
-                            aStreamInfo.mxStorageRef->dispose();
-                            aStreamInfo.mxStorageRef = 0;
-                        }
-
-                        delete pStream;
-                    }
+    				mbIsPreview = true;
                 }
-			}
-			else if( !ImpUpdateGraphicLink( sal_False ) )
-            {
-				pRet = GRFMGR_AUTOSWAPSTREAM_TEMP;
-            }
-			else
-            {
-                pRet = GRFMGR_AUTOSWAPSTREAM_LOADED;
+
+                if( !GraphicFilter::GetGraphicFilter()->ImportGraphic( aGraphic, String(), *pStream,
+                                                    GRFILTER_FORMAT_DONTKNOW, NULL, 0, pFilterData ) )
+                {
+                    const String aUserData( pGraphic->GetUserData() );
+
+                    pGraphic->SetGraphic( aGraphic );
+                    pGraphic->SetUserData( aUserData );
+
+                    // #142146# Graphic successfully swapped in.
+                    pRet = GRFMGR_AUTOSWAPSTREAM_LOADED;
+                }
+                delete pFilterData;
+
+                pStream->ResetError();
+
+                if( aStreamInfo.mbDeleteAfterUse || aStreamInfo.mxStorageRef.is() )
+                {
+                    if ( aStreamInfo.mxStorageRef.is() )
+                    {
+                        aStreamInfo.mxStorageRef->dispose();
+                        aStreamInfo.mxStorageRef = 0;
+                    }
+
+                    delete pStream;
+                }
             }
 		}
-		else
+		else if( !ImpUpdateGraphicLink( false ) )
+        {
 			pRet = GRFMGR_AUTOSWAPSTREAM_TEMP;
+        }
+		else
+        {
+            pRet = GRFMGR_AUTOSWAPSTREAM_LOADED;
+        }
 	}
 
 	return (long)(void*) pRet;
@@ -1408,12 +1293,12 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
 
 // #111096#
 // Access to GrafAnimationAllowed flag
-sal_Bool SdrGrafObj::IsGrafAnimationAllowed() const
+bool SdrGrafObj::IsGrafAnimationAllowed() const
 {
 	return mbGrafAnimationAllowed;
 }
 
-void SdrGrafObj::SetGrafAnimationAllowed(sal_Bool bNew)
+void SdrGrafObj::SetGrafAnimationAllowed(bool bNew)
 {
 	if(mbGrafAnimationAllowed != bNew)
 	{
@@ -1423,65 +1308,59 @@ void SdrGrafObj::SetGrafAnimationAllowed(sal_Bool bNew)
 }
 
 // #i25616#
-sal_Bool SdrGrafObj::IsObjectTransparent() const
+bool SdrGrafObj::IsObjectTransparent() const
 {
 	if(((const SdrGrafTransparenceItem&)GetObjectItem(SDRATTR_GRAFTRANSPARENCE)).GetValue()
 		|| pGraphic->IsTransparent())
 	{
-		return sal_True;
+		return true;
 	}
 
-	return sal_False;
+	return false;
 }
 
 Reference< XInputStream > SdrGrafObj::getInputStream()
 {
 	Reference< XInputStream > xStream;
 
-	if( pModel )
+	// kann aus dem original Doc-Stream nachgeladen werden...
+	if( pGraphic->HasUserData() )
 	{
-//		if( !pGraphic->HasUserData() )
-//			pGraphic->SwapOut();
+		SdrDocumentStreamInfo aStreamInfo;
 
-		// kann aus dem original Doc-Stream nachgeladen werden...
-		if( pGraphic->HasUserData() )
+    	aStreamInfo.mbDeleteAfterUse = false;
+		aStreamInfo.maUserData = pGraphic->GetUserData();
+
+	    SvStream* pStream = getSdrModelFromSdrObject().GetDocumentStream( aStreamInfo );
+
+		if( pStream )
+		xStream.set( new utl::OInputStreamWrapper( pStream, true ) );
+	}
+	else if( pGraphic && GetGraphic().IsLink() )
+	{
+		Graphic aGraphic( GetGraphic() );
+		GfxLink aLink( aGraphic.GetLink() );
+		sal_uInt32 nSize = aLink.GetDataSize();
+		const void* pSourceData = (const void*)aLink.GetData();
+		if( nSize && pSourceData )
 		{
-			SdrDocumentStreamInfo aStreamInfo;
-
-			aStreamInfo.mbDeleteAfterUse = sal_False;
-			aStreamInfo.maUserData = pGraphic->GetUserData();
-
-			SvStream* pStream = pModel->GetDocumentStream( aStreamInfo );
-
-			if( pStream )
-				xStream.set( new utl::OInputStreamWrapper( pStream, sal_True ) );
-		}
-		else if( pGraphic && GetGraphic().IsLink() )
-		{
-			Graphic aGraphic( GetGraphic() );
-			GfxLink aLink( aGraphic.GetLink() );
-			sal_uInt32 nSize = aLink.GetDataSize();
-			const void* pSourceData = (const void*)aLink.GetData();
-			if( nSize && pSourceData )
+			sal_uInt8 * pBuffer = new sal_uInt8[ nSize ];
+			if( pBuffer )
 			{
-				sal_uInt8 * pBuffer = new sal_uInt8[ nSize ];
-				if( pBuffer )
-				{
-					memcpy( pBuffer, pSourceData, nSize );
+				memcpy( pBuffer, pSourceData, nSize );
 
-					SvMemoryStream* pStream = new SvMemoryStream( (void*)pBuffer, (sal_Size)nSize, STREAM_READ );
-					pStream->ObjectOwnsMemory( sal_True );
-					xStream.set( new utl::OInputStreamWrapper( pStream, sal_True ) );
-				}
+				SvMemoryStream* pStream = new SvMemoryStream( (void*)pBuffer, (sal_Size)nSize, STREAM_READ );
+			pStream->ObjectOwnsMemory( true );
+			xStream.set( new utl::OInputStreamWrapper( pStream, true ) );
 			}
 		}
+	}
 
-		if( !xStream.is() && aFileName.Len() )
-		{
-			SvFileStream* pStream = new SvFileStream( aFileName, STREAM_READ );
-			if( pStream )
-				xStream.set( new utl::OInputStreamWrapper( pStream ) );
-		}
+	if( !xStream.is() && aFileName.Len() )
+	{
+		SvFileStream* pStream = new SvFileStream( aFileName, STREAM_READ );
+		if( pStream )
+			xStream.set( new utl::OInputStreamWrapper( pStream ) );
 	}
 
 	return xStream;

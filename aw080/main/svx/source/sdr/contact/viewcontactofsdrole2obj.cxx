@@ -67,17 +67,10 @@ namespace sdr
         drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrOle2Obj::createPrimitive2DSequenceWithParameters(
             bool bHighContrast) const
         {
-            // take unrotated snap rect (direct model data) for position and size
-		    const Rectangle& rRectangle = GetOle2Obj().GetGeoRect();
-		    const basegfx::B2DRange aObjectRange(rRectangle.Left(), rRectangle.Top(), rRectangle.Right(), rRectangle.Bottom());
+			drawinglayer::primitive2d::Primitive2DSequence xRetval;
 
-		    // create object matrix
-		    const GeoStat& rGeoStat(GetOle2Obj().GetGeoStat());
-            const double fShearX(rGeoStat.nShearWink ? tan((36000 - rGeoStat.nShearWink) * F_PI18000) : 0.0);
-            const double fRotate(rGeoStat.nDrehWink ? (36000 - rGeoStat.nDrehWink) * F_PI18000 : 0.0);
-			const basegfx::B2DHomMatrix aObjectMatrix(basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
-				aObjectRange.getWidth(), aObjectRange.getHeight(), fShearX, fRotate,
-				aObjectRange.getMinX(), aObjectRange.getMinY()));
+			// get object transformation
+			const basegfx::B2DHomMatrix& rObjectMatrix(GetOle2Obj().getSdrObjectTransformation());
 
 		    // Prepare attribute settings, will be used soon anyways
 			const SfxItemSet& rItemSet = GetOle2Obj().GetMergedItemSet();
@@ -93,7 +86,7 @@ namespace sdr
             const drawinglayer::primitive2d::Primitive2DReference xOleContent(
                 new drawinglayer::primitive2d::SdrOleContentPrimitive2D(
                     GetOle2Obj(),
-                    aObjectMatrix,
+                    rObjectMatrix,
 
                     // #i104867# add GraphicVersion number to be able to check for
                     // content change in the primitive later
@@ -108,10 +101,12 @@ namespace sdr
             const drawinglayer::primitive2d::Primitive2DReference xReference(
                 new drawinglayer::primitive2d::SdrOle2Primitive2D(
 			        xOLEContent,
-			        aObjectMatrix, 
+			        rObjectMatrix, 
 			        aAttribute));
 
-			return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
+			xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
+
+			return xRetval;
         }
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrOle2Obj::createViewIndependentPrimitive2DSequence() const

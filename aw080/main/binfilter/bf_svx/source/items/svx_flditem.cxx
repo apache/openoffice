@@ -68,7 +68,8 @@ namespace binfilter {
 
 /*N*/ TYPEINIT1( SvxFieldItem, SfxPoolItem );
 
-/*N*/ SV_IMPL_PERSIST1( SvxFieldData, SvPersistBase );
+/*N*/ TYPEINIT1( SvxFieldData, BfSvPersistBase);
+/*N*/ SV_IMPL_PERSIST1( SvxFieldData, BfSvPersistBase);
 
 // -----------------------------------------------------------------------
 
@@ -217,6 +218,7 @@ namespace binfilter {
 // Es folgen die Ableitungen von SvxFieldData...
 // =================================================================
 
+/*N*/ TYPEINIT1( SvxDateField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxDateField, SvxFieldData );
 
 // -----------------------------------------------------------------------
@@ -282,6 +284,7 @@ namespace binfilter {
 
 // -----------------------------------------------------------------------
 
+/*N*/ TYPEINIT1( SvxURLField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxURLField, SvxFieldData );
 
 // -----------------------------------------------------------------------
@@ -402,6 +405,7 @@ namespace binfilter {
 // Die Felder, die aus Calc ausgebaut wurden:
 // =================================================================
 
+/*N*/ TYPEINIT1( SvxPageField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxPageField, SvxFieldData );
 
 /*N*/ SvxFieldData* __EXPORT SvxPageField::Clone() const
@@ -424,6 +428,7 @@ namespace binfilter {
 
 
 
+/*N*/ TYPEINIT1( SvxPagesField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxPagesField, SvxFieldData );
 
 /*N*/ SvxFieldData* __EXPORT SvxPagesField::Clone() const
@@ -444,6 +449,7 @@ namespace binfilter {
 /*N*/ {
 /*N*/ }
 
+/*N*/ TYPEINIT1( SvxTimeField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxTimeField, SvxFieldData );
 
 /*N*/ SvxFieldData* __EXPORT SvxTimeField::Clone() const
@@ -465,6 +471,7 @@ namespace binfilter {
 /*N*/ }
 
 
+/*N*/ TYPEINIT1( SvxFileField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxFileField, SvxFieldData );
 
 /*N*/ SvxFieldData* __EXPORT SvxFileField::Clone() const
@@ -485,6 +492,7 @@ namespace binfilter {
 /*N*/ {
 /*N*/ }
 
+/*N*/ TYPEINIT1( SvxTableField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxTableField, SvxFieldData );
 
 /*N*/ SvxFieldData* __EXPORT SvxTableField::Clone() const
@@ -509,6 +517,7 @@ namespace binfilter {
 //		SvxExtTimeField
 //----------------------------------------------------------------------------
 
+/*N*/ TYPEINIT1( SvxExtTimeField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxExtTimeField, SvxFieldData );
 
 //----------------------------------------------------------------------------
@@ -578,6 +587,7 @@ namespace binfilter {
 //		SvxExtFileField
 //----------------------------------------------------------------------------
 
+/*N*/ TYPEINIT1( SvxExtFileField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxExtFileField, SvxFieldData );
 
 //----------------------------------------------------------------------------
@@ -650,6 +660,7 @@ namespace binfilter {
 //		SvxAuthorField
 //----------------------------------------------------------------------------
 
+/*N*/ TYPEINIT1( SvxAuthorField, SvxFieldData );
 /*N*/ SV_IMPL_PERSIST1( SvxAuthorField, SvxFieldData );
 
 //----------------------------------------------------------------------------

@@ -105,7 +105,7 @@ SvtSysLocale_Impl::~SvtSysLocale_Impl()
 
 void SvtSysLocale_Impl::Notify( SvtBroadcaster&, const SfxHint& rHint )
 {
-    const SfxSimpleHint* p = PTR_CAST( SfxSimpleHint, &rHint );
+    const SfxSimpleHint* p = dynamic_cast< const SfxSimpleHint* >( &rHint );
     if( p && (p->GetId() & SYSLOCALEOPTIONS_HINT_LOCALE) )
     {
         MutexGuard aGuard( SvtSysLocale::GetMutex() );

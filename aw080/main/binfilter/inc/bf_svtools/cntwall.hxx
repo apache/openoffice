@@ -29,7 +29,7 @@
 #include <tools/shl.hxx>
 #endif
 #ifndef _RTTI_HXX
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 #ifndef _TOOLS_COLOR_HXX
 #include <tools/color.hxx>

@@ -1782,7 +1782,7 @@ const int RES_POOLCOLL_HTML_DT_40 = 0x3007;
 /*N*/ 			const SwSection* pSect = pSectFmt->GetSection();
 /*N*/ 			if( pSect && TOX_CONTENT_SECTION == pSect->GetType() &&
 /*N*/ 				pSect->GetFmt() && pSectFmt->GetSectionNode() &&
-/*N*/ 				0 != (pTOXBaseSect = PTR_CAST( SwTOXBaseSection, pSect )) &&
+/*N*/ 				0 != (pTOXBaseSect = dynamic_cast< const SwTOXBaseSection* >( pSect )) &&
 /*N*/ 				0 != (pType = pTOXBaseSect->GetTOXType()) )
 /*N*/ 			{
 /*N*/ 				// All types above TOX_USER are new in version 5.2. That for,

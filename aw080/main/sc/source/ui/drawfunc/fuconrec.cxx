@@ -35,6 +35,7 @@
 #include <svx/svdocapt.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/point/b2dpoint.hxx>
+#include <svx/svdlegacy.hxx>
 
 #include "scresid.hxx"
 
@@ -78,20 +79,19 @@ sal_Bool __EXPORT FuConstRectangle::MouseButtonDown(const MouseEvent& rMEvt)
 
 	if ( rMEvt.IsLeft() && !pView->IsAction() )
 	{
-		Point aPos( pWindow->PixelToLogic( rMEvt.GetPosPixel() ) );
+		const basegfx::B2DPoint aPixelPos(rMEvt.GetPosPixel().X(), rMEvt.GetPosPixel().Y());
+		const basegfx::B2DPoint aLogicPos(pWindow->GetInverseViewTransformation() * aPixelPos);
 
 		pWindow->CaptureMouse();
 
 		if ( pView->GetCurrentObjIdentifier() == OBJ_CAPTION )
 		{
-			Size aCaptionSize ( 2268, 1134 ); // 4x2cm
-
-			bReturn = pView->BegCreateCaptionObj( aPos, aCaptionSize );
+			bReturn = pView->BegCreateCaptionObj( aLogicPos, basegfx::B2DVector(2268.0, 1134.0)); // 4x2cm
 
 			// wie stellt man den Font ein, mit dem geschrieben wird
 		}
 		else
-			bReturn = pView->BegCreateObj(aPos);
+			bReturn = pView->BegCreateObj(aLogicPos);
 	}
 	return bReturn;
 }
@@ -120,7 +120,7 @@ sal_Bool __EXPORT FuConstRectangle::MouseButtonUp(const MouseEvent& rMEvt)
 
 	sal_Bool bReturn = sal_False;
 
-	if ( pView->IsCreateObj() && rMEvt.IsLeft() )
+	if ( pView->GetCreateObj() && rMEvt.IsLeft() )
 	{
 		Point aPnt( pWindow->PixelToLogic( rMEvt.GetPosPixel() ) );
 		pView->EndCreateObj(SDRCREATE_FORCEEND);
@@ -128,15 +128,18 @@ sal_Bool __EXPORT FuConstRectangle::MouseButtonUp(const MouseEvent& rMEvt)
 		if (aSfxRequest.GetSlot() == SID_DRAW_CAPTION_VERTICAL)
 		{
 			//	set vertical flag for caption object
+			SdrObject* pSelected = pView->getSelectedIfSingle();
 
-			const SdrMarkList& rMarkList = pView->GetMarkedObjectList();
-			if (rMarkList.GetMark(0))
+			if (pSelected)
 			{
-				SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 				//	create OutlinerParaObject now so it can be set to vertical
-				if ( pObj->ISA(SdrTextObj) )
-					((SdrTextObj*)pObj)->ForceOutlinerParaObject();
-				OutlinerParaObject* pOPO = pObj->GetOutlinerParaObject();
+				SdrTextObj* pSdrTextObj = dynamic_cast< SdrTextObj* >(pSelected);
+				
+				if ( pSdrTextObj )
+					pSdrTextObj->ForceOutlinerParaObject();
+
+				OutlinerParaObject* pOPO = pSelected->GetOutlinerParaObject();
+				
 				if( pOPO && !pOPO->IsVertical() )
 					pOPO->SetVertical( sal_True );
 			}
@@ -222,7 +225,7 @@ void FuConstRectangle::Deactivate()
 }
 
 // #98185# Create default drawing objects via keyboard
-SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const Rectangle& rRectangle)
+SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const basegfx::B2DRange& rRange)
 {
 	// case SID_DRAW_LINE:
 	// case SID_DRAW_RECT:
@@ -231,26 +234,25 @@ SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const Rec
 	// case SID_DRAW_CAPTION_VERTICAL:
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
-		pView->GetCurrentObjInventor(), pView->GetCurrentObjIdentifier(),
-		0L, pDrDoc);
+		pView->getSdrModelFromSdrView(),
+		pView->GetCurrentObjInventor(), 
+		pView->GetCurrentObjIdentifier());
 
 	if(pObj)
 	{
-		Rectangle aRect(rRectangle);
-		Point aStart = aRect.TopLeft();
-		Point aEnd = aRect.BottomRight();
-
 		switch(nID)
 		{
 			case SID_DRAW_LINE:
 			{
-				if(pObj->ISA(SdrPathObj))
+				SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
+				
+				if(pSdrPathObj)
 				{
-					sal_Int32 nYMiddle((aRect.Top() + aRect.Bottom()) / 2);
+					const double fYMiddle((rRange.getMinY() + rRange.getMaxY()) * 0.5);
 					basegfx::B2DPolygon aPoly;
-					aPoly.append(basegfx::B2DPoint(aStart.X(), nYMiddle));
-					aPoly.append(basegfx::B2DPoint(aEnd.X(), nYMiddle));
-					((SdrPathObj*)pObj)->SetPathPoly(basegfx::B2DPolyPolygon(aPoly));
+					aPoly.append(basegfx::B2DPoint(rRange.getMinX(), fYMiddle));
+					aPoly.append(basegfx::B2DPoint(rRange.getMaxX(), fYMiddle));
+					pSdrPathObj->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aPoly));
 				}
 				else
 				{
@@ -262,29 +264,30 @@ SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const Rec
 			case SID_DRAW_CAPTION:
 			case SID_DRAW_CAPTION_VERTICAL:
 			{
-				if(pObj->ISA(SdrCaptionObj))
+				SdrCaptionObj* pSdrCaptionObj = dynamic_cast< SdrCaptionObj* >(pObj);
+				
+				if(pSdrCaptionObj)
 				{
 					sal_Bool bIsVertical(SID_DRAW_CAPTION_VERTICAL == nID);
 
-					((SdrTextObj*)pObj)->SetVerticalWriting(bIsVertical);
+					pSdrCaptionObj->SetVerticalWriting(bIsVertical);
 						
 					if(bIsVertical)
 					{
-						SfxItemSet aSet(pObj->GetMergedItemSet());
+						SfxItemSet aSet(pSdrCaptionObj->GetMergedItemSet());
 						aSet.Put(SdrTextVertAdjustItem(SDRTEXTVERTADJUST_CENTER));
 						aSet.Put(SdrTextHorzAdjustItem(SDRTEXTHORZADJUST_RIGHT));
-						pObj->SetMergedItemSet(aSet);
+						pSdrCaptionObj->SetMergedItemSet(aSet);
 					}
 
 					//  #105815# don't set default text, start edit mode instead
 					//  (Edit mode is started in ScTabViewShell::ExecDraw, because
 					//  it must be handled by FuText)
 					// String aText(ScResId(STR_CAPTION_DEFAULT_TEXT));
-					// ((SdrCaptionObj*)pObj)->SetText(aText);
+					// pSdrCaptionObj->SetText(aText);
 
-					((SdrCaptionObj*)pObj)->SetLogicRect(aRect);
-					((SdrCaptionObj*)pObj)->SetTailPos(
-						aRect.TopLeft() - Point(aRect.GetWidth() / 2, aRect.GetHeight() / 2));
+					sdr::legacy::SetLogicRange(*pSdrCaptionObj, rRange);
+					pSdrCaptionObj->SetTailPos(rRange.getMinimum() - (rRange.getRange() * 0.5));
 				}
 				else
 				{
@@ -296,7 +299,7 @@ SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const Rec
 
 			default:
 			{
-				pObj->SetLogicRect(aRect);
+				sdr::legacy::SetLogicRange(*pObj, rRange);
 
 				break;
 			}

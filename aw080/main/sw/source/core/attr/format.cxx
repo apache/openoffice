@@ -34,8 +34,6 @@
 #include <swcache.hxx>
 #include <fmtcolfunc.hxx>
 
-TYPEINIT1( SwFmt, SwClient );	//rtti fuer SwFmt
-
 /*************************************************************************
 |*    SwFmt::SwFmt
 *************************************************************************/
@@ -352,7 +350,7 @@ void SwFmt::Modify( const SfxPoolItem* pOldValue, const SfxPoolItem* pNewValue )
             // mba: here we don't use the additional stuff from NotifyClients().
             // should we?!
             // mba: move the code that ignores this event to the clients
-            ModifyBroadcast( pOldValue, pNewValue, TYPE(SwFmt) );
+            ModifyBroadcast( pOldValue, pNewValue, &typeid(SwFmt) );
 			bWeiter = sal_False;
 		}
 		break;

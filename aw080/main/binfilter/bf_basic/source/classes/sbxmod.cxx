@@ -118,13 +118,13 @@ void SbModule::StartDefinitions()
 	USHORT i;
 	for( i = 0; i < pMethods->Count(); i++ )
 	{
-		SbMethod* p = PTR_CAST(SbMethod,pMethods->Get( i ) );
+		SbMethod* p = dynamic_cast< SbMethod* >( pMethods->Get( i ) );
 		if( p )
 			p->bInvalid = TRUE;
 	}
 	for( i = 0; i < pProps->Count(); )
 	{
-		SbProperty* p = PTR_CAST(SbProperty,pProps->Get( i ) );
+		SbProperty* p = dynamic_cast< SbProperty* >( pProps->Get( i ) );
 		if( p )
 			pProps->Remove( i );
 		else
@@ -137,7 +137,7 @@ void SbModule::StartDefinitions()
 SbMethod* SbModule::GetMethod( const String& rName, SbxDataType t )
 {
 	SbxVariable* p = pMethods->Find( rName, SbxCLASS_METHOD );
-	SbMethod* pMeth = p ? PTR_CAST(SbMethod,p) : NULL;
+	SbMethod* pMeth = p ? dynamic_cast< SbMethod* >( p) : NULL;
 	if( p && !pMeth )
 		pMethods->Remove( p );
 	if( !pMeth )
@@ -175,7 +175,7 @@ void SbModule::EndDefinitions( BOOL bNewState )
 {
 	for( USHORT i = 0; i < pMethods->Count(); )
 	{
-		SbMethod* p = PTR_CAST(SbMethod,pMethods->Get( i ) );
+		SbMethod* p = dynamic_cast< SbMethod* >( pMethods->Get( i ) );
 		if( p )
 		{
 			if( p->bInvalid )
@@ -215,7 +215,7 @@ SbxVariable* SbModule::Find( const XubString& rName, SbxClassType t )
 /*?*/ // 			if( xArray.Is() )
 /*?*/ // 			{
 /*?*/ // 				SbxVariable* pEnumVar = xArray->Find( rName, SbxCLASS_DONTCARE );
-/*?*/ // 				SbxObject* pEnumObject = PTR_CAST( SbxObject, pEnumVar );
+/*?*/ // 				SbxObject* pEnumObject = dynamic_cast< SbxObject* >( pEnumVar );
 /*?*/ // 				if( pEnumObject )
 /*?*/ // 				{
 /*?*/ // 					bool bPrivate = pEnumObject->IsSet( SBX_PRIVATE );
@@ -259,12 +259,12 @@ void SbModule::SetParent( SbxObject* p )
 void SbModule::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 						   const SfxHint& rHint, const TypeId& rHintType )
 {
-	const SbxHint* pHint = PTR_CAST(SbxHint,&rHint);
+	const SbxHint* pHint = dynamic_cast< const SbxHint* >( &rHint);
 	if( pHint )
 	{
 		SbxVariable* pVar = pHint->GetVar();
-		SbProperty* pProp = PTR_CAST(SbProperty,pVar);
-		SbMethod* pMeth = PTR_CAST(SbMethod,pVar);
+		SbProperty* pProp = dynamic_cast< SbProperty* >( pVar);
+		SbMethod* pMeth = dynamic_cast< SbMethod* >( pVar);
 		if( pProp )
 		{
 			if( pProp->GetModule() != this )
@@ -402,7 +402,7 @@ static void _SendHint( SbxObject* pObj, ULONG nId, SbMethod* p )
 	{
 		SbxVariable* pVar = pObjs->Get( i );
 		if( pVar->IsA( TYPE(SbxObject) ) )
-			_SendHint( PTR_CAST(SbxObject,pVar), nId, p );
+			_SendHint( dynamic_cast< SbxObject* >( pVar), nId, p );
 	}
 }
 
@@ -447,7 +447,7 @@ void ClearUnoObjectsInRTL_Impl_Rek( StarBASIC* pBasic )
 	for( USHORT i = 0 ; i < nCount ; i++ )
 	{
 		SbxVariable* pObjVar = pObjs->Get( i );
-		StarBASIC* pSubBasic = PTR_CAST( StarBASIC, pObjVar );
+		StarBASIC* pSubBasic = dynamic_cast< StarBASIC* >( pObjVar );
 		if( pSubBasic )
 			ClearUnoObjectsInRTL_Impl_Rek( pSubBasic );
 	}
@@ -558,7 +558,7 @@ SbModule::fixUpMethodStart( bool bCvtToLegacy, SbiImage* pImg ) const
 			pImg = pImage;
 		for( UINT32 i = 0; i < pMethods->Count(); i++ )
 		{
-			SbMethod* pMeth = PTR_CAST(SbMethod,pMethods->Get( (USHORT)i ) );
+			SbMethod* pMeth = dynamic_cast< SbMethod* >( pMethods->Get( (USHORT)i ) );
 			if( pMeth )
 			{
 				//fixup method start positions
@@ -664,14 +664,14 @@ BOOL SbModule::LoadCompleted()
 	USHORT i;
 	for( i = 0; i < p->Count(); i++ )
 	{
-		SbMethod* q = PTR_CAST(SbMethod,p->Get( i ) );
+		SbMethod* q = dynamic_cast< SbMethod* >( p->Get( i ) );
 		if( q )
 			q->pMod = this;
 	}
 	p = GetProperties();
 	for( i = 0; i < p->Count(); i++ )
 	{
-		SbProperty* q = PTR_CAST(SbProperty,p->Get( i ) );
+		SbProperty* q = dynamic_cast< SbProperty* >( p->Get( i ) );
 		if( q )
 			q->pMod = this;
 	}

@@ -66,7 +66,7 @@ protected:
 public:
 	TYPEINFO();		//Bereits in Basisklasse Client drin.
 
-	//Vernichtet alle Frms in aDepend (Frms werden per PTR_CAST erkannt).
+	//Vernichtet alle Frms in aDepend
 	virtual void DelFrms();
 
 	//Erzeugt die Ansichten

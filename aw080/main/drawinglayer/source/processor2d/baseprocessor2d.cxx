@@ -36,7 +36,9 @@ namespace drawinglayer
 {
 	namespace processor2d
 	{
-		void BaseProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& /*rCandidate*/)
+		void BaseProcessor2D::processBasePrimitive2D(
+			const primitive2d::BasePrimitive2D& /*rCandidate*/,
+			const primitive2d::Primitive2DReference& /*rUnoCandidate*/)
 		{
 		}
 
@@ -68,7 +70,7 @@ namespace drawinglayer
 						if(pBasePrimitive)
 						{
 							// it is a BasePrimitive2D implementation, use local processor
-							processBasePrimitive2D(*pBasePrimitive);
+							processBasePrimitive2D(*pBasePrimitive, xReference);
 						}
 						else
 						{

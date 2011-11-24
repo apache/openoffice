@@ -956,7 +956,7 @@ Sequence< Any > SwXTextSection::getPropertyValues(
                         {
                             // convert section to TOXBase and get SwXDocumentIndex
                             SwTOXBaseSection* pTOXBaseSect =
-                                PTR_CAST(SwTOXBaseSection, pEnclosingSection);
+                                dynamic_cast< SwTOXBaseSection* >( pEnclosingSection);
                             Reference<XDocumentIndex> xIndex =
                                 SwXDocumentIndexes::GetObject(pTOXBaseSect);
                             pRet[nProperty] <<= xIndex;

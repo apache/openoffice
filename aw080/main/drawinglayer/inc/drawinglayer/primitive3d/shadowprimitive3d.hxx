@@ -54,7 +54,7 @@ namespace drawinglayer
 			double									mfShadowTransparence;
 
 			/// bitfield
-			unsigned								mbShadow3D : 1;
+			bool									mbShadow3D : 1;
 
 		public:
             /// constructor

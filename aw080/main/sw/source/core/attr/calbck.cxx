@@ -32,8 +32,6 @@
 
 static SwClientIter* pClientIters = 0;
 
-TYPEINIT0(SwClient);
-
 /*************************************************************************/
 SwClient::SwClient(SwModify *pToRegisterIn)
 	: pLeft( 0 ), pRight( 0 ), pRegisteredIn( 0 ), mbIsAllowedToBeRemovedInModifyCall(false)
@@ -363,10 +361,10 @@ void SwModify::CallSwClientNotify( const SfxHint& rHint ) const
     }
 }
 
-void SwModify::ModifyBroadcast( const SfxPoolItem *pOldValue, const SfxPoolItem *pNewValue, TypeId nType )
+void SwModify::ModifyBroadcast( const SfxPoolItem *pOldValue, const SfxPoolItem *pNewValue, const std::type_info* pType )
 {
     SwClientIter aIter(*this);
-    SwClient * pClient = aIter.First( nType );
+    SwClient * pClient = aIter.First( *pType );
     while (pClient)
     {
         pClient->Modify( pOldValue, pNewValue );
@@ -486,13 +484,13 @@ SwClient* SwClientIter::GoEnd()
 	return pAct;
 }
 
-SwClient* SwClientIter::First( TypeId nType )
+SwClient* SwClientIter::First( const std::type_info& rType )
 {
-	aSrchId = nType;
+	mpSrchId = &rType;
 	GoStart();
 	if( pAct )
 		do {
-			if( pAct->IsA( aSrchId ) )
+			if( pAct && typeid(*pAct) == *mpSrchId )
 				break;
 
 			if( pDelNext == pAct )
@@ -518,19 +516,19 @@ SwClient* SwClientIter::Next()
 		else
 			pAct = pDelNext;
 
-		if( pAct && pAct->IsA( aSrchId ) )
+		if( pAct && mpSrchId && typeid(*pAct) == *mpSrchId )
 			break;
 	} while( pAct );
 	return pAct;
 }
 
-SwClient* SwClientIter::Last( TypeId nType )
+SwClient* SwClientIter::Last( const std::type_info& rType )
 {
-	aSrchId = nType;
+	mpSrchId = &rType;
 	GoEnd();
 	if( pAct )
 		do {
-			if( pAct->IsA( aSrchId ) )
+			if( pAct && typeid(*pAct) == *mpSrchId )
 				break;
 
 	        if( pDelNext == pAct )
@@ -552,7 +550,7 @@ SwClient* SwClientIter::Previous()
 		    pAct = pDelNext->pLeft;
 	    pDelNext = pAct;
 
-		if( pAct && pAct->IsA( aSrchId ) )
+		if( pAct && typeid(*pAct) == *mpSrchId )
 			break;
 	} while( pAct );
 	return pAct;

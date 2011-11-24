@@ -62,6 +62,8 @@
 #include "swcss1.hxx"
 #include "swhtml.hxx"
 #include "wrthtml.hxx"
+#include <svx/svdlegacy.hxx>
+#include <svx/fmmodel.hxx>
 
 using namespace ::com::sun::star;
 
@@ -192,8 +194,17 @@ void SwHTMLParser::InsertDrawObject( SdrObject* pNewDrawObj,
             aAnchor.SetType( FLY_AT_PAGE );
         }
         // OD 2004-04-13 #i26791# - direct positioning for <SwDoc::Insert(..)>
-        pNewDrawObj->SetRelativePos( Point(rCSS1PropInfo.nLeft + nLeftSpace,
-										   rCSS1PropInfo.nTop + nUpperSpace) );
+
+        // #i108739#
+        {
+            const Point aRelativePos(rCSS1PropInfo.nLeft + nLeftSpace, rCSS1PropInfo.nTop + nUpperSpace);
+            const Point aTopLeft(sdr::legacy::GetSnapRect(*pNewDrawObj).TopLeft());
+            const Point aAnchorPos(sdr::legacy::GetAnchorPos(*pNewDrawObj));
+			sdr::legacy::transformSdrObject(*pNewDrawObj, basegfx::tools::createTranslateB2DHomMatrix(
+                aRelativePos.X() - aTopLeft.X() + aAnchorPos.X(),
+                aRelativePos.Y() - aTopLeft.Y() + aAnchorPos.Y()));
+        }
+
 		aFrmSet.Put( SwFmtSurround(SURROUND_THROUGHT) );
 	}
 	else if( SVX_ADJUST_LEFT == rCSS1PropInfo.eFloat ||
@@ -203,7 +214,15 @@ void SwHTMLParser::InsertDrawObject( SdrObject* pNewDrawObj,
 		aFrmSet.Put( SwFmtSurround(bHidden ? SURROUND_THROUGHT
 											 : SURROUND_RIGHT) );
         // OD 2004-04-13 #i26791# - direct positioning for <SwDoc::Insert(..)>
-		pNewDrawObj->SetRelativePos( Point(nLeftSpace, nUpperSpace) );
+        // #i108739#
+        {
+		    const Point aRelativePos(nLeftSpace, nUpperSpace);
+            const Point aTopLeft(sdr::legacy::GetSnapRect(*pNewDrawObj).TopLeft());
+            const Point aAnchorPos(sdr::legacy::GetAnchorPos(*pNewDrawObj));
+			sdr::legacy::transformSdrObject(*pNewDrawObj, basegfx::tools::createTranslateB2DHomMatrix(
+                aRelativePos.X() - aTopLeft.X() + aAnchorPos.X(),
+                aRelativePos.Y() - aTopLeft.Y() + aAnchorPos.Y()));
+        }
 	}
     else if( text::VertOrientation::NONE != eVertOri )
 	{
@@ -386,12 +405,11 @@ void SwHTMLParser::NewMarquee( HTMLTable *pCurTable )
     SdrModel* pModel = pDoc->GetOrCreateDrawModel();
     // <--
 	SdrPage* pPg = pModel->GetPage( 0 );
-	pMarquee = SdrObjFactory::MakeNewObject( SdrInventor,
-											 OBJ_TEXT, pPg, pModel );
+	pMarquee = SdrObjFactory::MakeNewObject( *pModel, SdrInventor, OBJ_TEXT);
 	if( !pMarquee )
 		return;
 
-	pPg->InsertObject( pMarquee );
+	pPg->InsertObjectToSdrObjList( pMarquee );
 
 	if( aId.Len() )
 		InsertBookmark( aId );
@@ -405,19 +423,19 @@ void SwHTMLParser::NewMarquee( HTMLTable *pCurTable )
 							  SDRATTR_MISC_FIRST, SDRATTR_MISC_LAST,
 							  EE_CHAR_START,	  EE_CHAR_END,
 							  0	};
-	SfxItemSet aItemSet( pModel->GetItemPool(), aWhichMap );
-	aItemSet.Put( SdrTextAutoGrowWidthItem( sal_False ) );
-	aItemSet.Put( SdrTextAutoGrowHeightItem( sal_True ) );
+	SfxItemSet aItemSet( pMarquee->GetObjectItemPool(), aWhichMap );
+	aItemSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, sal_False ) );
+	aItemSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWHEIGHT, sal_True ) );
 	aItemSet.Put( SdrTextAniKindItem( eAniKind ) );
 	aItemSet.Put( SdrTextAniDirectionItem( eAniDir ) );
-	aItemSet.Put( SdrTextAniCountItem( nCount ) );
+	aItemSet.Put( SfxUInt16Item(SDRATTR_TEXT_ANICOUNT, nCount ) );
 	aItemSet.Put( SdrTextAniDelayItem( nDelay ) );
 	aItemSet.Put( SdrTextAniAmountItem( nAmount ) );
 	if( SDRTEXTANI_ALTERNATE==eAniKind )
 	{
 		// (Nur) Alternate startet und stoppt per default Inside
-		aItemSet.Put( SdrTextAniStartInsideItem(sal_True) );
-		aItemSet.Put( SdrTextAniStopInsideItem(sal_True) );
+		aItemSet.Put( SdrYesNoItem(SDRATTR_TEXT_ANISTARTINSIDE, sal_True) );
+		aItemSet.Put( SdrYesNoItem(SDRATTR_TEXT_ANISTOPINSIDE, sal_True) );
 		if( SDRTEXTANI_LEFT==eAniDir )
 			aItemSet.Put( SdrTextHorzAdjustItem(SDRTEXTHORZADJUST_RIGHT) );
 	}
@@ -540,13 +558,13 @@ void SwHTMLParser::NewMarquee( HTMLTable *pCurTable )
 	// Die Hoehe ist nur eine Mindest-Hoehe
 	if( aTwipSz.Height() < MINFLY )
 		aTwipSz.Height() = MINFLY;
-	aItemSet.Put( SdrTextMinFrameHeightItem( aTwipSz.Height() ) );
+	aItemSet.Put( SdrMetricItem(SDRATTR_TEXT_MINFRAMEHEIGHT, aTwipSz.Height() ) );
 
 	pMarquee->SetMergedItemSetAndBroadcast(aItemSet);
 
 	if( aTwipSz.Width() < MINFLY )
 		aTwipSz.Width() = MINFLY;
-	pMarquee->SetLogicRect( Rectangle( 0, 0, aTwipSz.Width(), aTwipSz.Height() ) );
+	sdr::legacy::SetLogicRect(*pMarquee, Rectangle( 0, 0, aTwipSz.Width(), aTwipSz.Height() ) );
 
 	// und das Objekt in das Dok einfuegen
 	InsertDrawObject( pMarquee, aSpace, eVertOri, eHoriOri, aStyleItemSet,
@@ -571,9 +589,8 @@ void SwHTMLParser::EndMarquee()
 	{
 		// Da es keine fixe Hoehe gibt, das Text-Objekt erstmal breiter
 		// als den Text machen, damit nicht umgebrochen wird.
-		const Rectangle& rOldRect = pMarquee->GetLogicRect();
-		pMarquee->SetLogicRect( Rectangle( rOldRect.TopLeft(),
-										   Size( USHRT_MAX, 240 ) ) );
+		const Rectangle aOldRect(sdr::legacy::GetLogicRect(*pMarquee));
+		sdr::legacy::SetLogicRect(*pMarquee, Rectangle( aOldRect.TopLeft(), Size( USHRT_MAX, 240 ) ) );
 	}
 
 	// den gesammelten Text einfuegen
@@ -608,9 +625,9 @@ void SwHTMLParser::ResizeDrawObject( SdrObject* pObj, SwTwips nWidth )
 		return;
 
 	// die alte Groesse
-	const Rectangle& rOldRect = pObj->GetLogicRect();
-	Size aNewSz( nWidth, rOldRect.GetSize().Height() );
-	pObj->SetLogicRect( Rectangle( rOldRect.TopLeft(), aNewSz ) );
+	const Rectangle aOldRect(sdr::legacy::GetLogicRect(*pObj));
+	Size aNewSz( nWidth, aOldRect.GetSize().Height() );
+	sdr::legacy::SetLogicRect(*pObj, Rectangle( aOldRect.TopLeft(), aNewSz ) );
 }
 
 /*  */
@@ -739,7 +756,7 @@ Writer& OutHTML_DrawFrmFmtAsMarquee( Writer& rWrt,
 
 	// LOOP
 	sal_Int32 nCount =
-		((const SdrTextAniCountItem&)rItemSet.Get( SDRATTR_TEXT_ANICOUNT ))
+		((const SfxUInt16Item&)rItemSet.Get( SDRATTR_TEXT_ANICOUNT ))
 											 .GetValue();
 	if( 0==nCount )
 		nCount = SDRTEXTANI_SLIDE==eAniKind ? 1 : -1;
@@ -771,7 +788,7 @@ Writer& OutHTML_DrawFrmFmtAsMarquee( Writer& rWrt,
 		(((sOut += ' ') += OOO_STRING_SVTOOLS_HTML_O_scrollamount) += '=')
 			+= ByteString::CreateFromInt32( nAmount );
 
-	Size aTwipSz( pTextObj->GetLogicRect().GetSize() );
+	Size aTwipSz( sdr::legacy::GetLogicRect(*pTextObj).GetSize() );
 	if( pTextObj->IsAutoGrowWidth() )
 		aTwipSz.Width() = 0;
 	// Die Hoehe ist bei MS eine Mindesthoehe, also geben wir auch die

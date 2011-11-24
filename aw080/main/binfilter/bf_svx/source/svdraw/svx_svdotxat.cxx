@@ -96,7 +96,7 @@ namespace binfilter {
 /*N*/ 	{
 /*N*/ 		if (HAS_BASE(SfxStyleSheet, &rBC))
 /*N*/ 		{
-/*N*/ 			SfxSimpleHint* pSimple=PTR_CAST(SfxSimpleHint,&rHint);
+/*N*/ 			const SfxSimpleHint* pSimple=dynamic_cast< const SfxSimpleHint* >( &rHint);
 /*N*/ 			ULONG nId=pSimple==NULL ? 0 : pSimple->GetId();
 /*N*/ 			if (nId==SFX_HINT_DATACHANGED)
 /*N*/ 			{
@@ -116,7 +116,7 @@ namespace binfilter {
 /*N*/ 		}
 /*N*/ 		else if (HAS_BASE(SfxStyleSheetBasePool, &rBC))
 /*N*/ 		{
-/*N*/ 			SfxStyleSheetHintExtended* pExtendedHint = PTR_CAST(SfxStyleSheetHintExtended, &rHint);
+/*N*/ 			SfxStyleSheetHintExtended* pExtendedHint = const_cast< SfxStyleSheetHintExtended* >( dynamic_cast< const SfxStyleSheetHintExtended* >( &rHint) );
 /*N*/ 
 /*N*/ 			if (pExtendedHint && pExtendedHint->GetHint() == SFX_STYLESHEET_MODIFIED)
 /*N*/ 			{
@@ -498,7 +498,7 @@ namespace binfilter {
 /*N*/ 
 /*N*/ 			SfxStyleFamily eFam=(SfxStyleFamily)nFam;
 /*N*/ 			SfxStyleSheetBase* pStyleBase=pStylePool->Find(*pName,eFam);
-/*N*/ 			SfxStyleSheet* pStyle=PTR_CAST(SfxStyleSheet,pStyleBase);
+/*N*/ 			SfxStyleSheet* pStyle=dynamic_cast< SfxStyleSheet* >( pStyleBase);
 /*N*/ 			delete pName;
 /*N*/ 			if (pStyle!=NULL && pStyle!=GetStyleSheet()) {
 /*?*/ 				aStyles.Replace(pStyle,nNum);
@@ -511,7 +511,7 @@ namespace binfilter {
 /*N*/ 		while (nNum>0) {
 /*N*/ 			nNum--;
 /*N*/ 			SfxBroadcaster* pBroadcast=GetBroadcasterJOE((USHORT)nNum);
-/*N*/ 			SfxStyleSheet* pStyle=PTR_CAST(SfxStyleSheet,pBroadcast);
+/*N*/ 			SfxStyleSheet* pStyle=dynamic_cast< SfxStyleSheet* >( pBroadcast);
 /*N*/ 			if (pStyle!=NULL && pStyle!=GetStyleSheet()) { // Sonderbehandlung fuer den StyleSheet des Objekts
 /*N*/ 				if (aStyles.GetPos(pStyle)==CONTAINER_ENTRY_NOTFOUND) {
 /*N*/ 					EndListening(*pStyle);

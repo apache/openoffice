@@ -31,12 +31,12 @@ template< class TElementType, class TSource > class SwIterator
     SwClientIter aClientIter;
 public:
 
-    SwIterator( const TSource& rSrc ) : aClientIter(rSrc) { DBG_ASSERT( TElementType::IsOf( TYPE(SwClient) ), "Incompatible types!" ); }
-    TElementType* First()     { SwClient* p = aClientIter.First(TYPE(TElementType)); return PTR_CAST(TElementType,p); }
-    TElementType* Last()      { SwClient* p = aClientIter.Last( TYPE(TElementType)); return PTR_CAST(TElementType,p); }
-    TElementType* Next()      { SwClient* p = aClientIter.Next();     return PTR_CAST(TElementType,p); }
-    TElementType* Previous()  { SwClient* p = aClientIter.Previous(); return PTR_CAST(TElementType,p);  }
-    static TElementType* FirstElement( const TSource& rMod ) { SwClient* p = SwClientIter(rMod).First(TYPE(TElementType)); return PTR_CAST(TElementType,p); }
+    SwIterator( const TSource& rSrc ) : aClientIter(rSrc) { DBG_ASSERT( 0 != dynamic_cast< const SwClient* >(&rSrc), "Incompatible types!" ); }
+    TElementType* First()     { SwClient* p = aClientIter.First(typeid(TElementType)); return dynamic_cast<TElementType*>(p); }
+    TElementType* Last()      { SwClient* p = aClientIter.Last(typeid(TElementType)); return dynamic_cast<TElementType*>(p); }
+    TElementType* Next()      { SwClient* p = aClientIter.Next();     return dynamic_cast<TElementType*>(p); }
+    TElementType* Previous()  { SwClient* p = aClientIter.Previous(); return dynamic_cast<TElementType*>(p);  }
+    static TElementType* FirstElement( const TSource& rMod ) { SwClient* p = SwClientIter(rMod).First(typeid(TElementType)); return dynamic_cast<TElementType*>(p); }
     bool IsChanged()          { return aClientIter.IsChanged(); }
 };
 

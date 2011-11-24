@@ -2551,7 +2551,7 @@ struct TabInfo
 /*?*/ 								    GDIMetaFile* pMtf = pOutDev->GetConnectMetaFile();
 /*?*/ 								    if( pMtf )
 /*?*/ 									{
-/*?*/ 										SvxFieldItem* pFieldItem = PTR_CAST( SvxFieldItem, pAttr->GetItem() );
+/*?*/ 										const SvxFieldItem* pFieldItem = dynamic_cast< const SvxFieldItem* >( pAttr->GetItem() );
 /*?*/ 
 /*?*/ 										if( pFieldItem )
 /*?*/ 										{
@@ -2688,7 +2688,7 @@ struct TabInfo
 /*?*/ 								    GDIMetaFile* pMtf = pOutDev->GetConnectMetaFile();
 /*?*/ 								    if( pMtf )
 /*?*/ 									{
-/*?*/ 										SvxFieldItem* pFieldItem = PTR_CAST( SvxFieldItem, pAttr->GetItem() );
+/*?*/ 										const SvxFieldItem* pFieldItem = dynamic_cast< const SvxFieldItem* >( pAttr->GetItem() );
 /*?*/ 
 /*?*/ 										if( pFieldItem )
 /*?*/ 										{

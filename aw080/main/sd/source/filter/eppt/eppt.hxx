@@ -143,9 +143,9 @@ struct PHLayout
 	sal_uInt8	nTypeOfTitle;
 	sal_uInt8	nTypeOfOutliner;
 
-	sal_Bool	bTitlePossible;
-	sal_Bool	bOutlinerPossible;
-	sal_Bool	bSecOutlinerPossible;
+	bool	bTitlePossible;
+	bool	bOutlinerPossible;
+	bool	bSecOutlinerPossible;
 };
 
 struct SOParagraph
@@ -176,12 +176,12 @@ struct SOParagraph
 	SOParagraph()
 	{
 		nDepth = 0;
-		bExtendedParameters = sal_False;
+		bExtendedParameters = false;
 		nParaFlags = 0;
 		nBulletFlags = 0;
 		nBulletOfs = 0;
 		nTextOfs = 0;
-		bExtendedBulletsUsed = sal_False;
+		bExtendedBulletsUsed = false;
 		nBulletId = 0xffff;
 		bNumberingIsNumber = sal_True;
 	};
@@ -711,7 +711,7 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 		::com::sun::star::uno::Reference< ::com::sun::star::text::XTextField >				mXTextField;
 		::com::sun::star::awt::Size			maSize;
 		::com::sun::star::awt::Point		maPosition;
-		Rectangle			maRect;
+		basegfx::B2DRange	maRange;
 		ByteString			mType;
 		sal_Bool			mbPresObj;
 		sal_Bool			mbEmptyPresObj;
@@ -825,7 +825,7 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 								EscherPropertyContainer& aPropOpt );
 		::com::sun::star::awt::Point		ImplMapPoint( const ::com::sun::star::awt::Point& );
 		::com::sun::star::awt::Size			ImplMapSize( const ::com::sun::star::awt::Size& );
-		Rectangle							ImplMapRectangle( const ::com::sun::star::awt::Rectangle& );
+		basegfx::B2DRange ImplMapRectangle( const ::com::sun::star::awt::Rectangle& );
 
 		sal_Bool							ImplCloseDocument();		// die font-, hyper-, Soundliste wird geschrieben ..
 

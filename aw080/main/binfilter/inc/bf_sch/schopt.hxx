@@ -28,7 +28,7 @@
 
 // header for TYPEINFO
 #ifndef _RTTI_HXX
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 // header for ConfigItem
 #ifndef _UTL_CONFIGITEM_HXX_ 

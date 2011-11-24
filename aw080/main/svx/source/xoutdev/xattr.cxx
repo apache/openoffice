@@ -39,11 +39,9 @@
 #include <svl/itempool.hxx>
 #include <editeng/memberids.hrc>
 #include <tools/stream.hxx>
-
-#include "svx/unoapi.hxx"
+#include <svx/unoapi.hxx>
 #include <svl/style.hxx>
 #include "unopolyhelper.hxx"
-
 #include <tools/bigint.hxx>
 #include <svl/itemset.hxx>
 #include <svx/dialogs.hrc>
@@ -58,8 +56,8 @@
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/point/b2dpoint.hxx>
 #include <basegfx/vector/b2dvector.hxx>
-
 #include <stdio.h>
+#include <basegfx/polygon/b2dpolypolygontools.hxx>
 
 using namespace ::rtl;
 using namespace ::com::sun::star;
@@ -76,8 +74,6 @@ using namespace ::com::sun::star;
 /************************************************************************/
 
 XubString aNameOrIndexEmptyString;
-
-TYPEINIT1_AUTOFACTORY(NameOrIndex, SfxStringItem);
 
 /*************************************************************************
 |*
@@ -290,25 +286,25 @@ String NameOrIndex::CheckNamedItem( const NameOrIndex* pCheckItem, const sal_uIn
 
 					switch( nWhich )
 					{
-					case XATTR_FILLBITMAP:
-						bFound =  (((XFillBitmapItem*)pCheckItem)->GetBitmapValue().GetGraphicObject().GetUniqueID() ==
-							((XBitmapEntry*)pEntry)->GetXBitmap().GetGraphicObject().GetUniqueID());
-						break;
-					case XATTR_LINEDASH:
-						bFound = (((XLineDashItem*)pCheckItem)->GetDashValue() == ((XDashEntry*)pEntry) ->GetDash());
-						break;
-					case XATTR_LINESTART:
-						bFound = (((XLineStartItem*)pCheckItem)->GetLineStartValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
-						break;
-					case XATTR_LINEEND:
-						bFound = (((XLineEndItem*)pCheckItem)->GetLineEndValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
-						break;
-					case XATTR_FILLGRADIENT:
-						bFound = (((XFillGradientItem*)pCheckItem)->GetGradientValue() == ((XGradientEntry*)pEntry)->GetGradient());
-						break;
-					case XATTR_FILLHATCH:
-						bFound = (((XFillHatchItem*)pCheckItem)->GetHatchValue() == ((XHatchEntry*)pEntry)->GetHatch());
-						break;
+					    case XATTR_FILLBITMAP:
+						    bFound =  (((XFillBitmapItem*)pCheckItem)->GetBitmapValue().GetGraphicObject().GetUniqueID() ==
+							    ((XBitmapEntry*)pEntry)->GetXBitmap().GetGraphicObject().GetUniqueID());
+						    break;
+					    case XATTR_LINEDASH:
+						    bFound = (((XLineDashItem*)pCheckItem)->GetDashValue() == ((XDashEntry*)pEntry) ->GetDash());
+						    break;
+					    case XATTR_LINESTART:
+						    bFound = (((XLineStartItem*)pCheckItem)->GetLineStartValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
+						    break;
+					    case XATTR_LINEEND:
+						    bFound = (((XLineEndItem*)pCheckItem)->GetLineEndValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
+						    break;
+					    case XATTR_FILLGRADIENT:
+						    bFound = (((XFillGradientItem*)pCheckItem)->GetGradientValue() == ((XGradientEntry*)pEntry)->GetGradient());
+						    break;
+					    case XATTR_FILLHATCH:
+						    bFound = (((XFillHatchItem*)pCheckItem)->GetHatchValue() == ((XHatchEntry*)pEntry)->GetHatch());
+						    break;
 					}
 
 					if( bFound )
@@ -360,7 +356,6 @@ String NameOrIndex::CheckNamedItem( const NameOrIndex* pCheckItem, const sal_uIn
 // -------------------
 // class XColorItem
 // -------------------
-TYPEINIT1_AUTOFACTORY(XColorItem, NameOrIndex);
 
 /*************************************************************************
 |*
@@ -503,7 +498,8 @@ sal_Bool XColorItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uInt8
 //---------------------
 // class XLineStyleItem
 //---------------------
-TYPEINIT1_AUTOFACTORY(XLineStyleItem, SfxEnumItem);
+
+IMPL_POOLITEM_FACTORY(XLineStyleItem)
 
 /*************************************************************************
 |*
@@ -875,7 +871,8 @@ double XDash::CreateDotDashArray(::std::vector< double >& rDotDashArray, double 
 // -------------------
 // class XLineDashItem
 // -------------------
-TYPEINIT1_AUTOFACTORY(XLineDashItem, NameOrIndex);
+
+IMPL_POOLITEM_FACTORY(XLineDashItem)
 
 /*************************************************************************
 |*
@@ -1085,19 +1082,18 @@ SfxItemPresentation XLineDashItem::GetPresentation
 
 //------------------------------------------------------------------------
 
-FASTBOOL XLineDashItem::HasMetrics() const
+bool XLineDashItem::HasMetrics() const
 {
-	return sal_True;
+	return true;
 }
 
 //------------------------------------------------------------------------
 
-FASTBOOL XLineDashItem::ScaleMetrics(long nMul, long nDiv)
+void XLineDashItem::ScaleMetrics(long nMul, long nDiv)
 {
 	aDash.SetDotLen( ScaleMetricValue( aDash.GetDotLen(), nMul, nDiv ) );
 	aDash.SetDashLen( ScaleMetricValue( aDash.GetDashLen(), nMul, nDiv ) );
 	aDash.SetDistance( ScaleMetricValue( aDash.GetDistance(), nMul, nDiv ) );
-	return sal_True;
 }
 
 sal_Bool XLineDashItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId ) const
@@ -1380,7 +1376,8 @@ XLineDashItem* XLineDashItem::checkForUniqueItem( SdrModel* pModel ) const
 // -------------------
 // class XLineWidthItem
 // -------------------
-TYPEINIT1_AUTOFACTORY(XLineWidthItem, SfxMetricItem);
+
+IMPL_POOLITEM_FACTORY(XLineWidthItem)
 
 /*************************************************************************
 |*
@@ -1492,7 +1489,8 @@ sal_Bool XLineWidthItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_u
 // -------------------
 // class XLineColorItem
 // -------------------
-TYPEINIT1_AUTOFACTORY(XLineColorItem, XColorItem);
+
+IMPL_POOLITEM_FACTORY(XLineColorItem)
 
 /*************************************************************************
 |*
@@ -1610,7 +1608,7 @@ sal_Bool XLineColorItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_u
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// tooling for simple spooling B2DPolygon to file and back
+// tooling for simple spooling B2DPolygon to file and back TTTT used where..?
 
 namespace
 {
@@ -1711,7 +1709,8 @@ namespace
 // -----------------------
 // class XLineStartItem
 // -----------------------
-TYPEINIT1_AUTOFACTORY(XLineStartItem, NameOrIndex);
+
+IMPL_POOLITEM_FACTORY(XLineStartItem)
 
 /*************************************************************************
 |*
@@ -1922,7 +1921,7 @@ sal_Bool XLineStartItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8
 	else
 	{
 		com::sun::star::drawing::PolyPolygonBezierCoords aBezier;
-		SvxConvertB2DPolyPolygonToPolyPolygonBezier( maPolyPolygon, aBezier );
+		basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(maPolyPolygon, aBezier);
 		rVal <<= aBezier;
 	}
 
@@ -1947,9 +1946,9 @@ sal_Bool XLineStartItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_u
 				return sal_False;
 
 			com::sun::star::drawing::PolyPolygonBezierCoords* pCoords = (com::sun::star::drawing::PolyPolygonBezierCoords*)rVal.getValue();
-			if( pCoords->Coordinates.getLength() > 0 )
+			if(pCoords &&  pCoords->Coordinates.getLength() > 0)
 			{
-				maPolyPolygon = SvxConvertPolyPolygonBezierToB2DPolyPolygon( pCoords );
+				maPolyPolygon = basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(*pCoords);
 				// #i72807# close line start/end polygons hard
 				// maPolyPolygon.setClosed(true);
 			}
@@ -2183,7 +2182,8 @@ XLineStartItem* XLineStartItem::checkForUniqueItem( SdrModel* pModel ) const
 // ---------------------
 // class XLineEndItem
 // ---------------------
-TYPEINIT1_AUTOFACTORY(XLineEndItem, NameOrIndex);
+
+IMPL_POOLITEM_FACTORY(XLineEndItem)
 
 /*************************************************************************
 |*
@@ -2616,7 +2616,7 @@ sal_Bool XLineEndItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8 n
 	else
 	{
 		com::sun::star::drawing::PolyPolygonBezierCoords aBezier;
-		SvxConvertB2DPolyPolygonToPolyPolygonBezier( maPolyPolygon, aBezier );
+		basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(maPolyPolygon, aBezier);
 		rVal <<= aBezier;
 	}
 	return sal_True;
@@ -2640,9 +2640,9 @@ sal_Bool XLineEndItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uIn
 				return sal_False;
 
 			com::sun::star::drawing::PolyPolygonBezierCoords* pCoords = (com::sun::star::drawing::PolyPolygonBezierCoords*)rVal.getValue();
-			if( pCoords->Coordinates.getLength() > 0 )
+			if(pCoords && pCoords->Coordinates.getLength() > 0)
 			{
-				maPolyPolygon = SvxConvertPolyPolygonBezierToB2DPolyPolygon( pCoords );
+				maPolyPolygon = basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(*pCoords);
 				// #i72807# close line start/end polygons hard
 				// maPolyPolygon.setClosed(true);
 			}
@@ -2655,7 +2655,6 @@ sal_Bool XLineEndItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uIn
 // ----------------------------
 // class XLineStartWidthItem
 // ----------------------------
-TYPEINIT1_AUTOFACTORY(XLineStartWidthItem, SfxMetricItem);
 
 /*************************************************************************
 |*
@@ -2763,7 +2762,6 @@ sal_Bool XLineStartWidthItem::PutValue( const ::com::sun::star::uno::Any& rVal, 
 // --------------------------
 // class XLineEndWidthItem
 // --------------------------
-TYPEINIT1_AUTOFACTORY(XLineEndWidthItem, SfxMetricItem);
 
 /*************************************************************************
 |*
@@ -2869,7 +2867,6 @@ sal_Bool XLineEndWidthItem::PutValue( const ::com::sun::star::uno::Any& rVal, sa
 // -----------------------------
 // class XLineStartCenterItem
 // -----------------------------
-TYPEINIT1_AUTOFACTORY(XLineStartCenterItem, SfxBoolItem);
 
 /*************************************************************************
 |*
@@ -2977,7 +2974,6 @@ sal_Bool XLineStartCenterItem::PutValue( const ::com::sun::star::uno::Any& rVal,
 // ---------------------------
 // class XLineEndCenterItem
 // ---------------------------
-TYPEINIT1_AUTOFACTORY(XLineEndCenterItem, SfxBoolItem);
 
 /*************************************************************************
 |*
@@ -3089,7 +3085,8 @@ sal_Bool XLineEndCenterItem::PutValue( const ::com::sun::star::uno::Any& rVal, s
 // --------------------
 // class XFillStyleItem
 // --------------------
-TYPEINIT1_AUTOFACTORY(XFillStyleItem, SfxEnumItem);
+
+IMPL_POOLITEM_FACTORY(XFillStyleItem)
 
 /*************************************************************************
 |*
@@ -3240,7 +3237,8 @@ sal_Bool XFillStyleItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_u
 // -------------------
 // class XFillColorItem
 // -------------------
-TYPEINIT1_AUTOFACTORY(XFillColorItem, XColorItem);
+
+IMPL_POOLITEM_FACTORY(XFillColorItem)
 
 /*************************************************************************
 |*
@@ -3365,7 +3363,6 @@ sal_Bool XFillColorItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_u
 // -----------------------------
 // class XSecondaryFillColorItem
 // -----------------------------
-TYPEINIT1_AUTOFACTORY(XSecondaryFillColorItem, XColorItem);
 
 XSecondaryFillColorItem::XSecondaryFillColorItem(sal_Int32 nIndex, const Color& rTheColor) :
 	XColorItem(XATTR_SECONDARYFILLCOLOR, nIndex, rTheColor)
@@ -3501,7 +3498,8 @@ bool XGradient::operator==(const XGradient& rGradient) const
 // -----------------------
 // class XFillGradientItem
 // -----------------------
-TYPEINIT1_AUTOFACTORY(XFillGradientItem, NameOrIndex);
+
+IMPL_POOLITEM_FACTORY(XFillGradientItem)
 
 /*************************************************************************
 |*
@@ -4025,7 +4023,6 @@ XFillGradientItem* XFillGradientItem::checkForUniqueItem( SdrModel* pModel ) con
 // class XFillFloatTransparenceItem -
 // ----------------------------------
 
-TYPEINIT1_AUTOFACTORY( XFillFloatTransparenceItem, XFillGradientItem );
 
 // -----------------------------------------------------------------------------
 
@@ -4062,15 +4059,6 @@ XFillFloatTransparenceItem::XFillFloatTransparenceItem( const XFillFloatTranspar
 	SetWhich( XATTR_FILLFLOATTRANSPARENCE );
 }
 
-//------------------------------------------------------------------------
-
-//XFillFloatTransparenceItem::XFillFloatTransparenceItem( SvStream& rIn, sal_uInt16 nVer ) :
-//	XFillGradientItem	( rIn, nVer )
-//{
-//	SetWhich( XATTR_FILLFLOATTRANSPARENCE );
-//	rIn >> bEnabled;
-//}
-
 //*************************************************************************
 
 XFillFloatTransparenceItem::XFillFloatTransparenceItem(SfxItemPool* /*pPool*/, const XGradient& rTheGradient, sal_Bool bEnable )
@@ -4102,22 +4090,6 @@ SfxPoolItem* XFillFloatTransparenceItem::Clone( SfxItemPool* /*pPool*/) const
 {
 	return new XFillFloatTransparenceItem( *this );
 }
-
-//------------------------------------------------------------------------
-
-//SfxPoolItem* XFillFloatTransparenceItem::Create( SvStream& rIn, sal_uInt16 nVer ) const
-//{
-//	return( ( 0 == nVer ) ? Clone( NULL ) : new XFillFloatTransparenceItem( rIn, nVer ) );
-//}
-
-//------------------------------------------------------------------------
-
-//SvStream& XFillFloatTransparenceItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
-//{
-//	XFillGradientItem::Store( rOut, nItemVersion );
-//	rOut << bEnabled;
-//	return rOut;
-//}
 
 //------------------------------------------------------------------------
 
@@ -4237,7 +4209,8 @@ bool XHatch::operator==(const XHatch& rHatch) const
 // -----------------------
 // class XFillHatchItem
 // -----------------------
-TYPEINIT1_AUTOFACTORY(XFillHatchItem, NameOrIndex);
+
+IMPL_POOLITEM_FACTORY(XFillHatchItem)
 
 /*************************************************************************
 |*
@@ -4461,17 +4434,16 @@ SfxItemPresentation XFillHatchItem::GetPresentation
 
 //------------------------------------------------------------------------
 
-FASTBOOL XFillHatchItem::HasMetrics() const
+bool XFillHatchItem::HasMetrics() const
 {
-	return sal_True;
+	return true;
 }
 
 //------------------------------------------------------------------------
 
-FASTBOOL XFillHatchItem::ScaleMetrics(long nMul, long nDiv)
+void XFillHatchItem::ScaleMetrics(long nMul, long nDiv)
 {
 	aHatch.SetDistance( ScaleMetricValue( aHatch.GetDistance(), nMul, nDiv ) );
-	return sal_True;
 }
 
 // -----------------------------------------------------------------------
@@ -4669,7 +4641,8 @@ XFillHatchItem* XFillHatchItem::checkForUniqueItem( SdrModel* pModel ) const
 //-------------------------
 // class XFormTextStyleItem
 //-------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextStyleItem, SfxEnumItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextStyleItem)
 
 /*************************************************************************
 |*
@@ -4774,7 +4747,8 @@ sal_Bool XFormTextStyleItem::PutValue( const uno::Any& rVal, sal_uInt8 /*nMember
 //-------------------------
 // class XFormTextAdjustItem
 //-------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextAdjustItem, SfxEnumItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextAdjustItem)
 
 /*************************************************************************
 |*
@@ -4879,7 +4853,8 @@ sal_Bool XFormTextAdjustItem::PutValue( const uno::Any& rVal, sal_uInt8 /*nMembe
 //----------------------------
 // class XFormTextDistanceItem
 //----------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextDistanceItem, SfxMetricItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextDistanceItem)
 
 /*************************************************************************
 |*
@@ -4944,7 +4919,8 @@ SfxPoolItem* XFormTextDistanceItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/) c
 //-------------------------
 // class XFormTextStartItem
 //-------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextStartItem, SfxMetricItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextStartItem)
 
 /*************************************************************************
 |*
@@ -5009,7 +4985,8 @@ SfxPoolItem* XFormTextStartItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/) cons
 // -------------------------
 // class XFormTextMirrorItem
 // -------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextMirrorItem, SfxBoolItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextMirrorItem)
 
 /*************************************************************************
 |*
@@ -5072,7 +5049,8 @@ SfxPoolItem* XFormTextMirrorItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/) con
 // --------------------------
 // class XFormTextOutlineItem
 // --------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextOutlineItem, SfxBoolItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextOutlineItem)
 
 /*************************************************************************
 |*
@@ -5134,7 +5112,8 @@ SfxPoolItem* XFormTextOutlineItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/) co
 //--------------------------
 // class XFormTextShadowItem
 //--------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextShadowItem, SfxEnumItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextShadowItem)
 
 /*************************************************************************
 |*
@@ -5241,7 +5220,8 @@ sal_Bool XFormTextShadowItem::PutValue( const uno::Any& rVal, sal_uInt8 /*nMembe
 // -------------------------------
 // class XFormTextShadowColorItem
 // -------------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextShadowColorItem, XColorItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextShadowColorItem)
 
 /*************************************************************************
 |*
@@ -5323,7 +5303,8 @@ SfxPoolItem* XFormTextShadowColorItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/
 //------------------------------
 // class XFormTextShadowXValItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextShadowXValItem, SfxMetricItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextShadowXValItem)
 
 /*************************************************************************
 |*
@@ -5388,7 +5369,8 @@ SfxPoolItem* XFormTextShadowXValItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/)
 //------------------------------
 // class XFormTextShadowYValItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextShadowYValItem, SfxMetricItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextShadowYValItem)
 
 /*************************************************************************
 |*
@@ -5453,7 +5435,8 @@ SfxPoolItem* XFormTextShadowYValItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/)
 //---------------------------
 // class XFormTextStdFormItem
 //---------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextStdFormItem, SfxEnumItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextStdFormItem)
 
 /*************************************************************************
 |*
@@ -5560,7 +5543,8 @@ sal_Bool XFormTextStdFormItem::PutValue( const uno::Any& rVal, sal_uInt8 /*nMemb
 // --------------------------
 // class XFormTextHideFormItem
 // --------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextHideFormItem, SfxBoolItem);
+
+IMPL_POOLITEM_FACTORY(XFormTextHideFormItem)
 
 /*************************************************************************
 |*
@@ -5624,8 +5608,6 @@ SfxPoolItem* XFormTextHideFormItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/) c
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //								SetItems
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-TYPEINIT1(XLineAttrSetItem, SfxSetItem);
 
 /*************************************************************************
 |*
@@ -5697,8 +5679,6 @@ SvStream& XLineAttrSetItem::Store( SvStream& rStream, sal_uInt16 nItemVersion ) 
 	return SfxSetItem::Store( rStream, nItemVersion );
 }
 
-
-TYPEINIT1(XFillAttrSetItem, SfxSetItem);
 
 /*************************************************************************
 |*

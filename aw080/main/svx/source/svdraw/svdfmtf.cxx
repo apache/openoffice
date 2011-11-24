@@ -53,7 +53,8 @@
 #include <svx/svdmodel.hxx>
 #include <svx/svdpage.hxx>
 #include <svx/svdobj.hxx>
-#include "svx/svditext.hxx"
+#include <editeng/editdata.hxx>
+#include <svx/svditext.hxx>
 #include <svx/svdotext.hxx>
 #include <svx/svdorect.hxx>
 #include <svx/svdocirc.hxx>
@@ -67,13 +68,19 @@
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <svx/xlinjoit.hxx>
 #include <svx/xlndsit.hxx>
+#include <svx/svdlegacy.hxx>
+#include <svx/svdtrans.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpSdrGDIMetaFileImport::ImpSdrGDIMetaFileImport(SdrModel& rModel):
 	nMapScalingOfs(0),
-	pLineAttr(NULL),pFillAttr(NULL),pTextAttr(NULL),
-	pPage(NULL),pModel(NULL),nLayer(0),
+	pLineAttr(NULL),
+	pFillAttr(NULL),
+	pTextAttr(NULL),
+	pPage(NULL),
+	mrModel(rModel),
+	nLayer(0),
 	nLineWidth(0),
 	maLineJoin(basegfx::B2DLINEJOIN_NONE),
 	maDash(XDASH_RECT, 0, 0, 0, 0, 0),
@@ -90,7 +97,6 @@ ImpSdrGDIMetaFileImport::ImpSdrGDIMetaFileImport(SdrModel& rModel):
 	pLineAttr=new SfxItemSet(rModel.GetItemPool(),XATTR_LINE_FIRST,XATTR_LINE_LAST);
 	pFillAttr=new SfxItemSet(rModel.GetItemPool(),XATTR_FILL_FIRST,XATTR_FILL_LAST);
 	pTextAttr=new SfxItemSet(rModel.GetItemPool(),EE_ITEMS_START,EE_ITEMS_END);
-	pModel=&rModel;
 }
 
 ImpSdrGDIMetaFileImport::~ImpSdrGDIMetaFileImport()
@@ -100,23 +106,22 @@ ImpSdrGDIMetaFileImport::~ImpSdrGDIMetaFileImport()
 	delete pTextAttr;
 }
 
-sal_uIntPtr ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
+sal_uInt32 ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 	SdrObjList& rOL,
-	sal_uIntPtr nInsPos,
+	sal_uInt32 nInsPos,
 	SvdProgressInfo *pProgrInfo)
 {
-	pPage = rOL.GetPage();
+	pPage = rOL.getSdrPageFromSdrObjList();
 	GDIMetaFile* pTmpMtf=NULL;
 	GDIMetaFile* pMtf = (GDIMetaFile*) &rMtf;
-	sal_uIntPtr nActionAnz=pMtf->GetActionCount();
-	sal_Bool bError = sal_False;
-
+	sal_uInt32 nActionAnz=pMtf->GetActionCount();
+	bool bError = false;
 
 	// setup some global scale parameter
 	// fScaleX, fScaleY, aScaleX, aScaleY, bMov, bSize
     fScaleX = fScaleY = 1.0;
 	Size  aMtfSize( pMtf->GetPrefSize() );
-	if ( aMtfSize.Width() & aMtfSize.Height() && ( aScaleRect.IsEmpty() == sal_False ) )
+	if ( aMtfSize.Width() & aMtfSize.Height() && ( aScaleRect.IsEmpty() == false ) )
     {
 		aOfs = aScaleRect.TopLeft();
         if ( aMtfSize.Width() != ( aScaleRect.GetWidth() - 1 ) )
@@ -126,19 +131,19 @@ sal_uIntPtr ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
     }
 
 	bMov = aOfs.X()!=0 || aOfs.Y()!=0;
-    bSize = sal_False;
+    bSize = false;
 
 	aScaleX = Fraction( 1, 1 );
 	aScaleY = Fraction( 1, 1 );
     if ( aMtfSize.Width() != ( aScaleRect.GetWidth() - 1 ) )
     {
         aScaleX = Fraction( aScaleRect.GetWidth() - 1, aMtfSize.Width() );
-        bSize = sal_True;
+        bSize = true;
     }
     if ( aMtfSize.Height() != ( aScaleRect.GetHeight() - 1 ) )
     {
         aScaleY = Fraction( aScaleRect.GetHeight() - 1, aMtfSize.Height() );
-        bSize = sal_True;
+        bSize = true;
     }
 
 	if(65000 < nActionAnz)
@@ -150,7 +155,7 @@ sal_uIntPtr ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 	if(pProgrInfo)
 		pProgrInfo->SetActionCount(nActionAnz);
 
-	sal_uIntPtr nActionsToReport = 0;
+	sal_uInt32 nActionsToReport = 0;
 
 	for( MetaAction* pAct = pMtf->FirstAction(); pAct; pAct = pMtf->NextAction() )
 	{
@@ -196,13 +201,13 @@ sal_uIntPtr ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 
 		if(pProgrInfo != NULL)
 		{
-		  nActionsToReport++;
-		  if(nActionsToReport >= 16) // Alle 16 Action updaten
-		  {
-			if(!pProgrInfo->ReportActions(nActionsToReport))
-			  break;
-			nActionsToReport = 0;
-		  }
+            nActionsToReport++;
+            if(nActionsToReport >= 16) // Alle 16 Action updaten
+            {
+                if(!pProgrInfo->ReportActions(nActionsToReport))
+                    break;
+                nActionsToReport = 0;
+            }
 		}
 	}
 
@@ -215,7 +220,7 @@ sal_uIntPtr ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 	// MapMode-Scaling  vornehmen
 	MapScaling();
 	// Objekte in vorgegebenes Rechteck hineinskalieren
-	sal_uIntPtr nAnz=aTmpList.GetObjCount();
+	sal_uInt32 nAnz=aTmpList.GetObjCount();
 
 	// Beim berechnen der Fortschrittsanzeige wird GetActionCount()*3 benutzt.
 	// Da in aTmpList allerdings weniger eintraege als GetActionCount()
@@ -234,11 +239,11 @@ sal_uIntPtr ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 
 	// alle in aTmpList zwischengespeicherten Objekte nun in rOL ab der Position nInsPos einfuegen
 	if (nInsPos>rOL.GetObjCount()) nInsPos=rOL.GetObjCount();
-	SdrInsertReason aReason(SDRREASON_VIEWCALL);
-	for (sal_uIntPtr i=0; i<nAnz; i++)
+
+	for (sal_uInt32 i=0; i<nAnz; i++)
 	{
 		 SdrObject* pObj=aTmpList.GetObj(i);
-		 rOL.NbcInsertObject(pObj,nInsPos,&aReason);
+		 rOL.InsertObjectToSdrObjList(pObj,nInsPos);
 		 nInsPos++;
 
 		if(pProgrInfo != NULL)
@@ -264,12 +269,12 @@ sal_uIntPtr ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 	return aTmpList.GetObjCount();
 }
 
-void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, FASTBOOL bForceTextAttr)
+void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, bool bForceTextAttr)
 {
 	bNoLine = sal_False; bNoFill = sal_False;
-	FASTBOOL bLine=sal_True && !bForceTextAttr;
-	FASTBOOL bFill=pObj==NULL || ( pObj->IsClosedObj() && !bForceTextAttr );
-	FASTBOOL bText=bForceTextAttr || (pObj!=NULL && pObj->GetOutlinerParaObject()!=NULL);
+	bool bLine=sal_True && !bForceTextAttr;
+	bool bFill=pObj==NULL || ( pObj->IsClosedObj() && !bForceTextAttr );
+	bool bText=bForceTextAttr || (pObj!=NULL && pObj->GetOutlinerParaObject()!=NULL);
 
 	if ( bLine )
 	{
@@ -374,14 +379,18 @@ void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, FASTBOOL bForceText
 	}
 }
 
-void ImpSdrGDIMetaFileImport::InsertObj( SdrObject* pObj, sal_Bool bScale )
+void ImpSdrGDIMetaFileImport::InsertObj( SdrObject* pObj, bool bScale )
 {
 	if ( bScale && !aScaleRect.IsEmpty() )
     {
 		if ( bSize )
-			pObj->NbcResize( Point(), aScaleX, aScaleY );
+		{
+			sdr::legacy::ResizeSdrObject(*pObj, Point(), aScaleX, aScaleY );
+		}
 		if ( bMov )
-			pObj->NbcMove( Size( aOfs.X(), aOfs.Y() ) );
+		{
+			sdr::legacy::MoveSdrObject(*pObj, Size( aOfs.X(), aOfs.Y() ) );
+		}
 	}
 
     // #i111954# check object for visibility
@@ -423,14 +432,14 @@ void ImpSdrGDIMetaFileImport::InsertObj( SdrObject* pObj, sal_Bool bScale )
 
     if(!bVisible)
     {
-        SdrObject::Free(pObj);
+        deleteSdrObjectSafeAndClearPointer(pObj);
     }
     else
     {
 	    aTmpList.InsertObject( pObj );
-	    if ( HAS_BASE( SdrPathObj, pObj ) )
+	    if ( dynamic_cast<  SdrPathObj* >(pObj ) )
 	    {
-		    FASTBOOL bClosed=pObj->IsClosedObj();
+		    bool bClosed=pObj->IsClosedObj();
 		    bLastObjWasPolyWithoutLine=bNoLine && bClosed;
 		    bLastObjWasLine=!bClosed;
 	    }
@@ -478,7 +487,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaLineAction& rAct)
 
 		if(bCreateLineObject)
 		{
-			SdrPathObj* pPath = new SdrPathObj(OBJ_LINE, basegfx::B2DPolyPolygon(aLine));
+			SdrPathObj* pPath = new SdrPathObj(mrModel, OBJ_LINE, basegfx::B2DPolyPolygon(aLine));
 			nLineWidth = nNewLineWidth;
 			maLineJoin = rLineInfo.GetLineJoin();
 			maDash = XDash(XDASH_RECT,
@@ -496,19 +505,29 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaLineAction& rAct)
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaRectAction& rAct)
 {
-	SdrRectObj* pRect=new SdrRectObj(rAct.GetRect());
+	const Rectangle& rRect(rAct.GetRect());
+	SdrRectObj* pRect = new SdrRectObj(
+		mrModel, 
+		basegfx::tools::createScaleTranslateB2DHomMatrix(
+			rRect.getWidth(), rRect.getHeight(), 
+			rRect.Left(), rRect.Top()));
 	SetAttributes(pRect);
 	InsertObj(pRect);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaRoundRectAction& rAct)
 {
-	SdrRectObj* pRect=new SdrRectObj(rAct.GetRect());
+	const Rectangle& rRect(rAct.GetRect());
+	SdrRectObj* pRect = new SdrRectObj(
+		mrModel, 
+		basegfx::tools::createScaleTranslateB2DHomMatrix(
+			rRect.getWidth(), rRect.getHeight(), 
+			rRect.Left(), rRect.Top()));
 	SetAttributes(pRect);
 	long nRad=(rAct.GetHorzRound()+rAct.GetVertRound())/2;
 	if (nRad!=0) {
 		SfxItemSet aSet(*pLineAttr->GetPool(),SDRATTR_ECKENRADIUS,SDRATTR_ECKENRADIUS);
-		aSet.Put(SdrEckenradiusItem(nRad));
+		aSet.Put(SdrMetricItem(SDRATTR_ECKENRADIUS, nRad));
 		pRect->SetMergedItemSet(aSet);
 	}
 	InsertObj(pRect);
@@ -518,37 +537,85 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaRoundRectAction& rAct)
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaEllipseAction& rAct)
 {
-	SdrCircObj* pCirc=new SdrCircObj(OBJ_CIRC,rAct.GetRect());
+	const Rectangle& rRect(rAct.GetRect());
+	SdrCircObj* pCirc = new SdrCircObj(mrModel, OBJ_CIRC, basegfx::tools::createScaleTranslateB2DHomMatrix(rRect.getWidth(), rRect.getHeight(), rRect.Left(), rRect.Top()));
 	SetAttributes(pCirc);
 	InsertObj(pCirc);
 }
 
+namespace
+{
+	void impPrepareAngles(const Point& rCenter, const Point& rStart, const Point& rEnd, double& o_Start, double& o_End)
+	{
+		o_Start = atan2((double)(rStart.Y() - rCenter.Y()), (double)(rStart.X() - rCenter.X()));
+
+		if(o_Start < 0.0)
+		{
+			o_Start += F_2PI;
+		}
+
+		o_End = atan2((double)(rEnd.Y() - rCenter.Y()), (double)(rEnd.X() - rCenter.X()));
+
+		if(o_End < 0.0)
+		{
+			o_End += F_2PI;
+		}
+	}
+}
+
 void ImpSdrGDIMetaFileImport::DoAction(MetaArcAction& rAct)
 {
-	Point aCenter(rAct.GetRect().Center());
-	long nStart=GetAngle(rAct.GetStartPoint()-aCenter);
-	long nEnd=GetAngle(rAct.GetEndPoint()-aCenter);
-	SdrCircObj* pCirc=new SdrCircObj(OBJ_CARC,rAct.GetRect(),nStart,nEnd);
+	double fStart(0.0);
+	double fEnd(F_2PI);
+	const Rectangle& rRect(rAct.GetRect());
+
+	impPrepareAngles(rRect.Center(), rAct.GetStartPoint(), rAct.GetEndPoint(), fStart, fEnd);
+
+	SdrCircObj* pCirc = new SdrCircObj(
+		mrModel, 
+		OBJ_CIRC, 
+		basegfx::tools::createScaleTranslateB2DHomMatrix(rRect.getWidth(), rRect.getHeight(), rRect.Left(), rRect.Top()),
+		fStart,
+		fEnd);
+
 	SetAttributes(pCirc);
 	InsertObj(pCirc);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaPieAction& rAct)
 {
-	Point aCenter(rAct.GetRect().Center());
-	long nStart=GetAngle(rAct.GetStartPoint()-aCenter);
-	long nEnd=GetAngle(rAct.GetEndPoint()-aCenter);
-	SdrCircObj* pCirc=new SdrCircObj(OBJ_SECT,rAct.GetRect(),nStart,nEnd);
+	double fStart(0.0);
+	double fEnd(F_2PI);
+	const Rectangle& rRect(rAct.GetRect());
+
+	impPrepareAngles(rRect.Center(), rAct.GetStartPoint(), rAct.GetEndPoint(), fStart, fEnd);
+
+	SdrCircObj* pCirc = new SdrCircObj(
+		mrModel, 
+		OBJ_SECT, 
+		basegfx::tools::createScaleTranslateB2DHomMatrix(rRect.getWidth(), rRect.getHeight(), rRect.Left(), rRect.Top()),
+		fStart,
+		fEnd);
+
 	SetAttributes(pCirc);
 	InsertObj(pCirc);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaChordAction& rAct)
 {
-	Point aCenter(rAct.GetRect().Center());
-	long nStart=GetAngle(rAct.GetStartPoint()-aCenter);
-	long nEnd=GetAngle(rAct.GetEndPoint()-aCenter);
-	SdrCircObj* pCirc=new SdrCircObj(OBJ_CCUT,rAct.GetRect(),nStart,nEnd);
+	double fStart(0.0);
+	double fEnd(F_2PI);
+	const Rectangle& rRect(rAct.GetRect());
+
+	impPrepareAngles(rRect.Center(), rAct.GetStartPoint(), rAct.GetEndPoint(), fStart, fEnd);
+
+	SdrCircObj* pCirc = new SdrCircObj(
+		mrModel,
+		OBJ_CCUT, 
+		basegfx::tools::createScaleTranslateB2DHomMatrix(rRect.getWidth(), rRect.getHeight(), rRect.Left(), rRect.Top()),
+		fStart,
+		fEnd);
+
 	SetAttributes(pCirc);
 	InsertObj(pCirc);
 }
@@ -567,14 +634,14 @@ bool ImpSdrGDIMetaFileImport::CheckLastLineMerge(const basegfx::B2DPolygon& rSrc
 	if(bLastObjWasLine && (aOldLineColor == aVD.GetLineColor()) && rSrcPoly.count())
 	{
 		SdrObject* pTmpObj = aTmpList.GetObj(aTmpList.GetObjCount() - 1);
-		SdrPathObj* pLastPoly = PTR_CAST(SdrPathObj, pTmpObj);
+		SdrPathObj* pLastPoly = dynamic_cast< SdrPathObj* >( pTmpObj);
 
 		if(pLastPoly)
 		{
-			if(1L == pLastPoly->GetPathPoly().count())
+			if(1L == pLastPoly->getB2DPolyPolygonInObjectCoordinates().count())
 			{
 				bool bOk(false);
-				basegfx::B2DPolygon aDstPoly(pLastPoly->GetPathPoly().getB2DPolygon(0L));
+				basegfx::B2DPolygon aDstPoly(pLastPoly->getB2DPolyPolygonInObjectCoordinates().getB2DPolygon(0L));
 
 				// #i102706# Do not merge closed polygons
 				if(aDstPoly.isClosed())
@@ -616,7 +683,7 @@ bool ImpSdrGDIMetaFileImport::CheckLastLineMerge(const basegfx::B2DPolygon& rSrc
 
 				if(bOk)
 				{
-					pLastPoly->NbcSetPathPoly(basegfx::B2DPolyPolygon(aDstPoly));
+					pLastPoly->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aDstPoly));
 				}
 
 				return bOk;
@@ -633,11 +700,11 @@ bool ImpSdrGDIMetaFileImport::CheckLastPolyLineAndFillMerge(const basegfx::B2DPo
 	if(bLastObjWasPolyWithoutLine)
 	{
 		SdrObject* pTmpObj = aTmpList.GetObj(aTmpList.GetObjCount() - 1);
-		SdrPathObj* pLastPoly = PTR_CAST(SdrPathObj, pTmpObj);
+		SdrPathObj* pLastPoly = dynamic_cast< SdrPathObj* >( pTmpObj);
 
 		if(pLastPoly)
 		{
-			if(pLastPoly->GetPathPoly() == rPolyPolygon)
+			if(pLastPoly->getB2DPolyPolygonInObjectCoordinates() == rPolyPolygon)
 			{
 				SetAttributes(NULL);
 
@@ -682,8 +749,10 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaPolyLineAction& rAct )
 	if(bCreateLineObject)
 	{
 		SdrPathObj* pPath = new SdrPathObj(
+			mrModel,
 			aSource.isClosed() ? OBJ_POLY : OBJ_PLIN,
 			basegfx::B2DPolyPolygon(aSource));
+
 		nLineWidth = nNewLineWidth;
 		maLineJoin = rLineInfo.GetLineJoin();
 		maDash = XDash(XDASH_RECT,
@@ -713,7 +782,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaPolygonAction& rAct )
 			// #i73407# make sure polygon is closed, it's a filled primitive
 			aSource.setClosed(true);
 
-			SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, basegfx::B2DPolyPolygon(aSource));
+			SdrPathObj* pPath = new SdrPathObj(mrModel, OBJ_POLY, basegfx::B2DPolyPolygon(aSource));
 			SetAttributes(pPath);
 			InsertObj(pPath, false);
 		}
@@ -735,7 +804,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaPolyPolygonAction& rAct)
 			// #i73407# make sure polygon is closed, it's a filled primitive
 			aSource.setClosed(true);
 
-			SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
+			SdrPathObj* pPath = new SdrPathObj(mrModel, OBJ_POLY, aSource);
 			SetAttributes(pPath);
 			InsertObj(pPath, false);
 		}
@@ -765,28 +834,32 @@ void ImpSdrGDIMetaFileImport::ImportText( const Point& rPos, const XubString& rS
 	else if ( eAlg == ALIGN_BOTTOM )
 		aPos.Y() -= nTextHeight;
 
-	Rectangle aTextRect( aPos, aSize );
-	SdrRectObj* pText =new SdrRectObj( OBJ_TEXT, aTextRect );
+	const basegfx::B2DHomMatrix aTextMatrix(basegfx::tools::createScaleTranslateB2DHomMatrix(aSize.getWidth(), aSize.getHeight(), aPos.X(), aPos.Y()));
+	SdrRectObj* pText = new SdrRectObj(
+		mrModel, 
+		aTextMatrix,
+		OBJ_TEXT, 
+		true);
 
 	if ( aFnt.GetWidth() || ( rAct.GetType() == META_STRETCHTEXT_ACTION ) )
 	{
 		pText->ClearMergedItem( SDRATTR_TEXT_AUTOGROWWIDTH );
-		pText->SetMergedItem( SdrTextAutoGrowHeightItem( sal_False ) );
+		pText->SetMergedItem( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWHEIGHT, false) );
 		// don't let the margins eat the space needed for the text
-		pText->SetMergedItem ( SdrTextUpperDistItem (0));
-		pText->SetMergedItem ( SdrTextLowerDistItem (0));
-		pText->SetMergedItem ( SdrTextRightDistItem (0));
-		pText->SetMergedItem ( SdrTextLeftDistItem (0));
+		pText->SetMergedItem ( SdrMetricItem(SDRATTR_TEXT_UPPERDIST, 0));
+		pText->SetMergedItem ( SdrMetricItem(SDRATTR_TEXT_LOWERDIST, 0));
+		pText->SetMergedItem ( SdrMetricItem(SDRATTR_TEXT_RIGHTDIST, 0));
+		pText->SetMergedItem ( SdrMetricItem(SDRATTR_TEXT_LEFTDIST, 0));
 		pText->SetMergedItem( SdrTextFitToSizeTypeItem( SDRTEXTFIT_ALLLINES ) );
 	}
 	else
-		pText->SetMergedItem( SdrTextAutoGrowWidthItem( sal_True ) );
+		pText->SetMergedItem( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, true ) );
 
-	pText->SetModel( pModel );
+	//pText->SetModel( mrModel );
 	pText->SetLayer( nLayer );
-	pText->NbcSetText( rStr );
-	SetAttributes( pText, sal_True );
-	pText->SetSnapRect( aTextRect );
+	pText->SetText( rStr );
+	SetAttributes( pText, true);
+	pText->setSdrObjectTransformation(aTextMatrix);
 
 	if (!aFnt.IsTransparent())
 	{
@@ -798,13 +871,9 @@ void ImpSdrGDIMetaFileImport::ImportText( const Point& rPos, const XubString& rS
 	sal_uInt32 nWink = aFnt.GetOrientation();
 	if ( nWink )
 	{
-		nWink*=10;
-		double a=nWink*nPi180;
-		double nSin=sin(a);
-		double nCos=cos(a);
-		pText->NbcRotate(aPos,nWink,nSin,nCos);
+		sdr::legacy::RotateSdrObject(*pText,aPos,nWink * 10);
 	}
-	InsertObj( pText, sal_False );
+	InsertObj( pText, false );
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaTextAction& rAct)
@@ -833,33 +902,49 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaStretchTextAction& rAct)
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaBmpAction& rAct)
 {
-	Rectangle aRect(rAct.GetPoint(),rAct.GetBitmap().GetSizePixel());
-	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
+	const Rectangle aRect(rAct.GetPoint(), rAct.GetBitmap().GetSizePixel());
+	const basegfx::B2DHomMatrix aGrafMatrix(
+		basegfx::tools::createScaleTranslateB2DHomMatrix(
+			aRect.getWidth() + 1, aRect.getHeight() + 1,
+			aRect.Left(), aRect.Top()));
+
+	SdrGrafObj* pGraf = new SdrGrafObj(mrModel, Graphic(rAct.GetBitmap()), aGrafMatrix);
 	InsertObj(pGraf);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaBmpScaleAction& rAct)
 {
-	Rectangle aRect(rAct.GetPoint(),rAct.GetSize());
-	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
+	const Rectangle aRect(rAct.GetPoint(), rAct.GetSize());
+	const basegfx::B2DHomMatrix aGrafMatrix(
+		basegfx::tools::createScaleTranslateB2DHomMatrix(
+			aRect.getWidth() + 1, aRect.getHeight() + 1,
+			aRect.Left(), aRect.Top()));
+
+	SdrGrafObj* pGraf = new SdrGrafObj(mrModel, Graphic(rAct.GetBitmap()), aGrafMatrix);
 	InsertObj(pGraf);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExAction& rAct)
 {
-	Rectangle aRect(rAct.GetPoint(),rAct.GetBitmapEx().GetSizePixel());
-	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
+	const Rectangle aRect(rAct.GetPoint(), rAct.GetBitmapEx().GetSizePixel());
+	const basegfx::B2DHomMatrix aGrafMatrix(
+		basegfx::tools::createScaleTranslateB2DHomMatrix(
+			aRect.getWidth() + 1, aRect.getHeight() + 1,
+			aRect.Left(), aRect.Top()));
+
+	SdrGrafObj* pGraf = new SdrGrafObj(mrModel, rAct.GetBitmapEx(), aGrafMatrix);
 	InsertObj(pGraf);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExScaleAction& rAct)
 {
-	Rectangle aRect(rAct.GetPoint(),rAct.GetSize());
-	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
+	const Rectangle aRect(rAct.GetPoint(), rAct.GetSize());
+	const basegfx::B2DHomMatrix aGrafMatrix(
+		basegfx::tools::createScaleTranslateB2DHomMatrix(
+			aRect.getWidth() + 1, aRect.getHeight() + 1,
+			aRect.Left(), aRect.Top()));
+
+	SdrGrafObj* pGraf = new SdrGrafObj(mrModel, rAct.GetBitmapEx(), aGrafMatrix);
 	InsertObj(pGraf);
 }
 
@@ -878,8 +963,8 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaHatchAction& rAct )
 		if(!bLastObjWasPolyWithoutLine || !CheckLastPolyLineAndFillMerge(aSource))
 		{
 			const Hatch& rHatch = rAct.GetHatch();
-			SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
-			SfxItemSet aHatchAttr(pModel->GetItemPool(),
+			SdrPathObj* pPath = new SdrPathObj(mrModel, OBJ_POLY, aSource);
+			SfxItemSet aHatchAttr(pPath->GetObjectItemPool(),
 				XATTR_FILLSTYLE, XATTR_FILLSTYLE,
 				XATTR_FILLHATCH, XATTR_FILLHATCH, 0, 0 );
 			XHatchStyle eStyle;
@@ -907,7 +992,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaHatchAction& rAct )
 
 			SetAttributes(pPath);
 			aHatchAttr.Put(XFillStyleItem(XFILL_HATCH));
-			aHatchAttr.Put(XFillHatchItem(&pModel->GetItemPool(), XHatch(rHatch.GetColor(), eStyle, rHatch.GetDistance(), rHatch.GetAngle())));
+			aHatchAttr.Put(XFillHatchItem(&pPath->GetObjectItemPool(), XHatch(rHatch.GetColor(), eStyle, rHatch.GetDistance(), rHatch.GetAngle())));
 			pPath->SetMergedItemSet(aHatchAttr);
 
 			InsertObj(pPath, false);
@@ -935,14 +1020,16 @@ void ImpSdrGDIMetaFileImport::MapScaling()
 	sal_uInt32 i, nAnz = aTmpList.GetObjCount();
 	const MapMode& rMap = aVD.GetMapMode();
 	Point aMapOrg( rMap.GetOrigin() );
-	sal_Bool bMov2 = aMapOrg.X() != 0 || aMapOrg.Y() != 0;
+	bool bMov2 = aMapOrg.X() != 0 || aMapOrg.Y() != 0;
 	if ( bMov2 )
     {
 		for ( i = nMapScalingOfs; i < nAnz; i++ )
         {
 			SdrObject* pObj = aTmpList.GetObj(i);
 			if ( bMov2 )
-				pObj->NbcMove( Size( aMapOrg.X(), aMapOrg.Y() ) );
+			{
+				sdr::legacy::MoveSdrObject(*pObj, Size( aMapOrg.X(), aMapOrg.Y() ) );
+			}
 		}
 	}
 	nMapScalingOfs = nAnz;
@@ -968,8 +1055,8 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaCommentAction& rAct, GDIMetaFile* pM
 				if(!bLastObjWasPolyWithoutLine || !CheckLastPolyLineAndFillMerge(aSource))
 				{
 					const Gradient&	rGrad = pAct->GetGradient();
-					SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
-					SfxItemSet aGradAttr(pModel->GetItemPool(),
+					SdrPathObj* pPath = new SdrPathObj(mrModel, OBJ_POLY, aSource);
+					SfxItemSet aGradAttr(pPath->GetObjectItemPool(),
 					   XATTR_FILLSTYLE, XATTR_FILLSTYLE,
 					   XATTR_FILLGRADIENT, XATTR_FILLGRADIENT, 0, 0 );
 					XGradient aXGradient;
@@ -1000,7 +1087,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaCommentAction& rAct, GDIMetaFile* pM
                     }
 
 					aGradAttr.Put(XFillStyleItem(XFILL_GRADIENT));
-					aGradAttr.Put(XFillGradientItem(&pModel->GetItemPool(), aXGradient));
+					aGradAttr.Put(XFillGradientItem(&pPath->GetObjectItemPool(), aXGradient));
 					pPath->SetMergedItemSet(aGradAttr);
 
 					InsertObj(pPath);
@@ -1030,18 +1117,23 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaRenderGraphicAction& rAct)
 {
 	GDIMetaFile                 aMtf;
 	const ::vcl::RenderGraphic& rRenderGraphic = rAct.GetRenderGraphic();
-	Rectangle                   aRect( rAct.GetPoint(), rAct.GetSize() );
     const Point                 aPos;
     const Size                  aPrefSize( rRenderGraphic.GetPrefSize() );
-
-	aRect.Right()++; aRect.Bottom()++;
 
     aMtf.SetPrefMapMode( rRenderGraphic.GetPrefMapMode() );
     aMtf.SetPrefSize( aPrefSize );
     aMtf.AddAction( new MetaRenderGraphicAction( aPos, aPrefSize, rRenderGraphic ) );
     aMtf.WindStart();
 
-	SdrGrafObj* pGraf=new SdrGrafObj( aMtf, aRect );
+	const basegfx::B2DRange aObjectRange(
+		rAct.GetPoint().X(), rAct.GetPoint().Y(), 
+		rAct.GetPoint().X() + rAct.GetSize().Width(), rAct.GetPoint().Y() + rAct.GetSize().Height());
+
+	SdrGrafObj* pGraf=new SdrGrafObj( 
+		mrModel, 
+		Graphic(aMtf), 
+		basegfx::tools::createScaleTranslateB2DHomMatrix(aObjectRange.getRange(), aObjectRange.getMinimum()));
+
 	InsertObj( pGraf );
 }
 

@@ -177,7 +177,7 @@ namespace binfilter {
 /*N*/ 	// call parent
 /*N*/ 	SdrObject::operator=(rObj);
 /*N*/ 
-/*N*/ 	SdrAttrObj* pAO = PTR_CAST(SdrAttrObj, (SdrObject*)&rObj);
+/*N*/ 	const SdrAttrObj* pAO = dynamic_cast< const SdrAttrObj* >( (SdrObject*)&rObj);
 /*N*/ 	if(pAO)
 /*N*/ 	{
 /*N*/ 		ImpDeleteItemSet();
@@ -514,13 +514,13 @@ namespace binfilter {
 
 /*N*/ void SdrAttrObj::ForceDefaultAttr()
 /*N*/ {
-/*N*/ 	SdrTextObj* pText = PTR_CAST(SdrTextObj, this);
+/*N*/ 	SdrTextObj* pText = dynamic_cast< SdrTextObj* >( this);
 /*N*/ 	BOOL bTextFrame(pText && pText->IsTextFrame());
 /*N*/ 
 /*N*/ 	ImpForceItemSet();
 /*N*/ 	if(bTextFrame)
 /*N*/ 	{
-/*N*/ 		SdrCaptionObj* pCapt = PTR_CAST(SdrCaptionObj, this);
+/*N*/ 		SdrCaptionObj* pCapt = dynamic_cast< SdrCaptionObj* >( this);
 /*N*/ 		BOOL bCaption(pCapt != 0L);
 /*N*/ 
 /*N*/ 		if(!bCaption)
@@ -637,9 +637,9 @@ namespace binfilter {
 /*N*/ void __EXPORT SdrAttrObj::SFX_NOTIFY(SfxBroadcaster& rBC, const TypeId& rBCType,
 /*N*/ 	const SfxHint& rHint, const TypeId& rHintType)
 /*N*/ {
-/*N*/ 	SfxSimpleHint *pSimple = PTR_CAST(SfxSimpleHint, &rHint);
+/*N*/ 	const SfxSimpleHint *pSimple = dynamic_cast< const SfxSimpleHint* >( &rHint);
 /*N*/ 	BOOL bDataChg(pSimple && SFX_HINT_DATACHANGED == pSimple->GetId());
-/*N*/ 	SfxStyleSheetHint *pStyleHint = PTR_CAST(SfxStyleSheetHint, &rHint);
+/*N*/ 	const SfxStyleSheetHint *pStyleHint = dynamic_cast< const SfxStyleSheetHint* >( &rHint);
 /*N*/ 	BOOL bDying(pStyleHint
 /*N*/ 				&& pStyleHint->GetStyleSheet() == GetStyleSheet()
 /*N*/ 				&& ( SFX_STYLESHEET_INDESTRUCTION == pStyleHint->GetHint() ||

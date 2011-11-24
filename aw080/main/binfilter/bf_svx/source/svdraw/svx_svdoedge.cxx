@@ -1585,7 +1585,7 @@ je Objekt variiert von 0-3:
 
 /*N*/ void __EXPORT SdrEdgeObj::SFX_NOTIFY(SfxBroadcaster& rBC, const TypeId&, const SfxHint& rHint, const TypeId&)
 /*N*/ {
-/*N*/ 	SfxSimpleHint* pSimple=PTR_CAST(SfxSimpleHint,&rHint);
+/*N*/ 	const SfxSimpleHint* pSimple=dynamic_cast< const SfxSimpleHint* >( &rHint);
 /*N*/ 	ULONG nId=pSimple==0 ? 0 : pSimple->GetId();
 /*N*/ 	FASTBOOL bDataChg=nId==SFX_HINT_DATACHANGED;
 /*N*/ 	FASTBOOL bDying=nId==SFX_HINT_DYING;
@@ -1601,7 +1601,7 @@ je Objekt variiert von 0-3:
 /*N*/ 	SdrTextObj::SFX_NOTIFY(rBC,rBCType,rHint,rHintType);
 /*N*/ 	if (nNotifyingCount==0) { // Hier nun auch ein VerriegelungsFlag
 /*N*/ 		((SdrEdgeObj*)this)->nNotifyingCount++;
-/*N*/ 		SdrHint* pSdrHint=PTR_CAST(SdrHint,&rHint);
+/*N*/ 		const SdrHint* pSdrHint=dynamic_cast< const SdrHint* >( &rHint);
 /*N*/ 		if (bDataChg) { // StyleSheet geaendert
 /*N*/ 			ImpSetAttrToEdgeInfo(); // Werte bei Vorlagenaenderung vom Pool nach aEdgeInfo kopieren
 /*N*/ 		}

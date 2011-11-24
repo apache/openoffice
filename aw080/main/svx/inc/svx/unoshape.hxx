@@ -65,12 +65,8 @@ class SfxItemSet;
 class SdrModel;
 class SvxDrawPage;
 class SvGlobalName;
-// --> OD 2009-01-16 #i59051#
-namespace basegfx
-    {
-        class B2DPolyPolygon;
-    } // end of namespace basegfx
-// <--
+namespace basegfx { class B2DPolyPolygon; }
+namespace basegfx { class B2DHomMatrix; }
 
 class SvxShapeMutex
 {
@@ -132,13 +128,17 @@ protected:
 
     ::tools::WeakReference< SdrObject > mpObj;
 	SdrModel* mpModel;
+	
 	// Umrechnungen fuer den Writer, der in TWIPS arbeitet
-	void ForceMetricToItemPoolMetric(Pair& rPoint) const throw();
-	void ForceMetricTo100th_mm(Pair& rPoint) const throw();
-    // --> OD 2009-01-16 #i59051#
+	void ForceMetricToItemPoolMetric(basegfx::B2DPoint& rPoint) const throw();
+	void ForceMetricTo100th_mm(basegfx::B2DPoint& rPoint) const throw();
     void ForceMetricToItemPoolMetric(basegfx::B2DPolyPolygon& rPolyPolygon) const throw();
     void ForceMetricTo100th_mm(basegfx::B2DPolyPolygon& rPolyPolygon) const throw();
-    // <--
+    void ForceMetricToItemPoolMetric(basegfx::B2DHomMatrix& rMatrix) const throw();
+    void ForceMetricTo100th_mm(basegfx::B2DHomMatrix& rMatrix) const throw();
+
+    // check if model is a WriterModel and if anchor is used
+    bool isWriterAnchorUsed() const;
 
     ::com::sun::star::uno::Any GetAnyForItem( SfxItemSet& aSet, const SfxItemPropertySimpleEntry* pMap ) const;
 
@@ -230,12 +230,6 @@ public:
 
 	// SfxListener
 	virtual void Notify( SfxBroadcaster& rBC, const SfxHint& rHint ) throw ();
-
-
-	/** @obsolete
-        not used anymore
-	*/
-	virtual void onUserCall(SdrUserCallType eUserCall, const Rectangle& rBoundRect);
 
 	// XAggregation
     virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);

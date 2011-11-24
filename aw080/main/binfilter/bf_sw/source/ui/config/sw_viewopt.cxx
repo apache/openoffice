@@ -310,7 +310,7 @@ static const char __FAR_DATA aPostItStr[] = "  ";
 /*N*/ USHORT		GetHtmlMode(const SwDocShell* pShell)
 /*N*/ {
 /*N*/ 	USHORT nRet = 0;
-/*N*/ 	if(!pShell || PTR_CAST(SwWebDocShell, pShell))
+/*N*/ 	if(!pShell || dynamic_cast< const SwWebDocShell* >( pShell))
 /*N*/ 	{DBG_BF_ASSERT(0, "STRIP"); //STRIP001
 /*N*/ 	}
 /*N*/ 	return nRet;

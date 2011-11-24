@@ -1578,13 +1578,13 @@ void SbUnoObject::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 	if( bNeedIntrospection )
 		doIntrospection();
 
-	const SbxHint* pHint = PTR_CAST(SbxHint,&rHint);
+	const SbxHint* pHint = dynamic_cast< const SbxHint* >( &rHint);
 	if( pHint )
 	{
 		SbxVariable* pVar = pHint->GetVar();
 		SbxArray* pParams = pVar->GetParameters();
-		SbUnoProperty* pProp = PTR_CAST(SbUnoProperty,pVar);
-		SbUnoMethod* pMeth = PTR_CAST(SbUnoMethod,pVar);
+		SbUnoProperty* pProp = dynamic_cast< SbUnoProperty* >( pVar);
+		SbUnoMethod* pMeth = dynamic_cast< SbUnoMethod* >( pVar);
 		if( pProp )
 		{
 			bool bInvocation = pProp->isInvocationBased();
@@ -1828,7 +1828,7 @@ void SbUnoObject::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 
 					AutomationNamedArgsSbxArray* pArgNamesArray = NULL;
 					if( bOLEAutomation )
-						pArgNamesArray = PTR_CAST(AutomationNamedArgsSbxArray,pParams);
+						pArgNamesArray = dynamic_cast< AutomationNamedArgsSbxArray* >( pParams);
 
 					args.realloc( nParamCount );
 					Any* pAnyArgs = args.getArray();

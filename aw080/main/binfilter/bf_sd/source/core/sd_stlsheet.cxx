@@ -367,7 +367,7 @@ namespace binfilter {
 /*N*/ 	// wenn der Stellvertreter ein Notify bezueglich geaenderter Attribute
 /*N*/ 	// bekommt, sorgt er dafuer, dass das eigentlich gemeinte StyleSheet
 /*N*/ 	// broadcastet
-/*N*/ 	SfxSimpleHint* pSimple = PTR_CAST(SfxSimpleHint, &rHint);
+/*N*/ 	const SfxSimpleHint* pSimple = dynamic_cast< const SfxSimpleHint* >( &rHint);
 /*N*/ 	ULONG nId = pSimple == NULL ? 0 : pSimple->GetId();
 /*N*/ 	if (nId == SFX_HINT_DATACHANGED && nFamily == SFX_STYLE_FAMILY_PSEUDO)
 /*N*/ 	{

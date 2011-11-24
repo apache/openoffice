@@ -29,7 +29,7 @@
 #include <tools/ref.hxx>
 #endif
 #ifndef _RTTI_HXX
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 
 #ifndef _SAL_CONFIG_H

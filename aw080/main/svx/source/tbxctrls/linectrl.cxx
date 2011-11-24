@@ -199,7 +199,7 @@ void SvxLineStyleToolBoxControl::Update( const SfxPoolItem* pState )
 		}
 	}
 
-	if ( pState && ( pState->ISA( SvxDashListItem ) ) )
+	if ( pState && ( dynamic_cast< const SvxDashListItem* >(pState) ) )
 	{
 		// Die Liste der Linienstile hat sich geaendert
 		SvxLineBox* pBox = (SvxLineBox*)GetToolBox().GetItemWindow( GetId() );
@@ -266,7 +266,7 @@ void SvxLineWidthToolBoxControl::StateChanged(
 
 		    if ( eState == SFX_ITEM_AVAILABLE )
 		    {
-			    DBG_ASSERT( pState->ISA(XLineWidthItem), "falscher ItemType" );
+			    DBG_ASSERT( dynamic_cast< const XLineWidthItem* >(pState), "falscher ItemType" );
 
 			    // Core-Unit an MetricField uebergeben
 			    // Darf nicht in CreateItemWin() geschehen!
@@ -330,7 +330,7 @@ void SvxLineColorToolBoxControl::StateChanged(
 
 		    if ( eState == SFX_ITEM_AVAILABLE )
 		    {
-			    DBG_ASSERT( pState->ISA(XLineColorItem), "falscher ItemTyoe" );
+			    DBG_ASSERT( dynamic_cast< const XLineColorItem* >(pState), "falscher ItemTyoe" );
 			    pBox->Update( (const XLineColorItem*) pState );
 		    }
 		    else
@@ -345,7 +345,7 @@ void SvxLineColorToolBoxControl::StateChanged(
 
 void SvxLineColorToolBoxControl::Update( const SfxPoolItem* pState )
 {
-	if ( pState && ( pState->ISA( SvxColorTableItem ) ) )
+	if ( pState && ( dynamic_cast< const SvxColorTableItem* >(pState) ) )
 	{
 		SvxColorBox* pBox = (SvxColorBox*)GetToolBox().GetItemWindow( GetId() );
 
@@ -663,7 +663,7 @@ void SvxLineEndWindow::StateChanged(
     if ( nSID == SID_LINEEND_LIST )
     {
 		// Die Liste der LinienEnden (LineEndList) hat sich geaendert:
-        if ( pState && pState->ISA( SvxLineEndListItem ))
+        if ( pState && dynamic_cast< const SvxLineEndListItem* >(pState))
         {
 		    pLineEndList = ((SvxLineEndListItem*)pState)->GetLineEndList();
 		    DBG_ASSERT( pLineEndList, "LineEndList nicht gefunden" );

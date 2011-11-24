@@ -132,7 +132,7 @@ using namespace ::com::sun::star;
 /*N*/ 	if (nCloneErrCnt==0) {
 /*N*/ 		for (no=0; no<nAnz; no++) {
 /*N*/ 			const SdrObject* pSrcOb=rSrcList.GetObj(no);
-/*N*/ 			SdrEdgeObj* pSrcEdge=PTR_CAST(SdrEdgeObj,pSrcOb);
+/*N*/ 			const SdrEdgeObj* pSrcEdge=dynamic_cast< const SdrEdgeObj* >( pSrcOb);
 /*N*/ 			if (pSrcEdge!=NULL) {
 /*?*/ 				SdrObject* pSrcNode1=pSrcEdge->GetConnectedNode(TRUE);
 /*?*/ 				SdrObject* pSrcNode2=pSrcEdge->GetConnectedNode(FALSE);
@@ -140,7 +140,7 @@ using namespace ::com::sun::star;
 /*?*/ 				if (pSrcNode2!=NULL && pSrcNode2->GetObjList()!=pSrcEdge->GetObjList()) pSrcNode2=NULL; // ist (noch) nicht
 /*?*/ 				if (pSrcNode1!=NULL || pSrcNode2!=NULL) {
 /*?*/ 					SdrObject* pEdgeObjTmp=GetObj(no);
-/*?*/ 					SdrEdgeObj* pDstEdge=PTR_CAST(SdrEdgeObj,pEdgeObjTmp);
+/*?*/ 					SdrEdgeObj* pDstEdge=dynamic_cast< SdrEdgeObj* >( pEdgeObjTmp);
 /*?*/ 					if (pDstEdge!=NULL) {
 /*?*/ 						if (pSrcNode1!=NULL) {
 /*?*/ 							ULONG nDstNode1=pSrcNode1->GetOrdNum();

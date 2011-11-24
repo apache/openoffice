@@ -38,6 +38,7 @@
 #include <svx/sdrpagewindow.hxx>
 #include <svx/sdrpaintwindow.hxx>
 #include <svx/sdr/primitive2d/sdrprimitivetools.hxx>
+#include <svx/svdlegacy.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -61,10 +62,11 @@ namespace sdr
 			meRememberedAnimationKind(SDRTEXTANI_NONE)
 		{
 			// init AnimationKind
-			if(GetSdrObject().ISA(SdrTextObj))
+			SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >(&GetSdrObject());
+
+			if(pTextObj)
 			{
-				SdrTextObj& rTextObj = (SdrTextObj&)GetSdrObject();
-				meRememberedAnimationKind = rTextObj.GetTextAniKind();
+				meRememberedAnimationKind = pTextObj->GetTextAniKind();
 			}
 		}
 
@@ -75,9 +77,9 @@ namespace sdr
 		// Access to possible sub-hierarchy
 		sal_uInt32 ViewContactOfSdrObj::GetObjectCount() const
 		{
-			if(GetSdrObject().GetSubList())
+			if(GetSdrObject().getChildrenOfSdrObject())
 			{
-				return GetSdrObject().GetSubList()->GetObjCount();
+				return GetSdrObject().getChildrenOfSdrObject()->GetObjCount();
 			}
 
 			return 0L;
@@ -85,9 +87,9 @@ namespace sdr
 
 		ViewContact& ViewContactOfSdrObj::GetViewContact(sal_uInt32 nIndex) const
 		{
-			DBG_ASSERT(GetSdrObject().GetSubList(),
+			DBG_ASSERT(GetSdrObject().getChildrenOfSdrObject(),
 				"ViewContactOfSdrObj::GetViewContact: Access to non-existent Sub-List (!)");
-			SdrObject* pObj = GetSdrObject().GetSubList()->GetObj(nIndex);
+			SdrObject* pObj = GetSdrObject().getChildrenOfSdrObject()->GetObj(nIndex);
 			DBG_ASSERT(pObj, "ViewContactOfSdrObj::GetViewContact: Corrupt SdrObjList (!)");
 			return pObj->GetViewContact();
 		}
@@ -95,21 +97,23 @@ namespace sdr
 		ViewContact* ViewContactOfSdrObj::GetParentContact() const
 		{
 			ViewContact* pRetval = 0L;
-			SdrObjList* pObjList = GetSdrObject().GetObjList();
+			SdrObjList* pObjList = GetSdrObject().getParentOfSdrObject();
 
 			if(pObjList)
 			{
-				if(pObjList->ISA(SdrPage))
+				SdrPage* pSdrPage = dynamic_cast< SdrPage* >(pObjList);
+				
+				if(pSdrPage)
 				{
 					// Is a page
-					pRetval = &(((SdrPage*)pObjList)->GetViewContact());
+					pRetval = &(pSdrPage->GetViewContact());
 				}
 				else
 				{
 					// Is a group?
-					if(pObjList->GetOwnerObj())
+					if(pObjList->getSdrObjectFromSdrObjList())
 					{
-						pRetval = &(pObjList->GetOwnerObj()->GetViewContact());
+						pRetval = &(pObjList->getSdrObjectFromSdrObjList()->GetViewContact());
 					}
 				}
 			}
@@ -121,14 +125,14 @@ namespace sdr
 		void ViewContactOfSdrObj::ActionChanged()
 		{
 			// look for own changes
-			if(GetSdrObject().ISA(SdrTextObj))
-			{
-				SdrTextObj& rTextObj = (SdrTextObj&)GetSdrObject();
+			SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >(&GetSdrObject());
 
-				if(rTextObj.GetTextAniKind() != meRememberedAnimationKind)
+			if(pTextObj)
+			{
+				if(pTextObj->GetTextAniKind() != meRememberedAnimationKind)
 				{
 					// #i38135# now remember new type
-					meRememberedAnimationKind = rTextObj.GetTextAniKind();
+					meRememberedAnimationKind = pTextObj->GetTextAniKind();
 				}
 			}
 
@@ -164,9 +168,9 @@ namespace sdr
 					for(sal_uInt32 a(0L); a < nCount; a++)
 					{
 						const SdrGluePoint& rCandidate = (*pGluePointList)[(sal_uInt16)a];
-						const Point aPosition(rCandidate.GetAbsolutePos(GetSdrObject()));
+						const basegfx::B2DPoint aPosition(rCandidate.GetAbsolutePos(sdr::legacy::GetSnapRange(GetSdrObject())));
 
-						aGluepointVector.push_back(basegfx::B2DPoint(aPosition.X(), aPosition.Y()));
+						aGluepointVector.push_back(aPosition);
 					}
 
 					if(!aGluepointVector.empty())

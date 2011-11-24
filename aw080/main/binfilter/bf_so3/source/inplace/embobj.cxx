@@ -53,6 +53,7 @@ namespace binfilter {
 
 /************** class SvEmbeddedInfoObject ***************************************/
 /*************************************************************************/
+TYPEINIT1(SvEmbeddedInfoObject,SvInfoObject)
 SV_IMPL_PERSIST1(SvEmbeddedInfoObject,SvInfoObject)
 
 /************************************************************************
@@ -94,7 +95,7 @@ SvEmbeddedInfoObject::~SvEmbeddedInfoObject()
 void SvEmbeddedInfoObject::Assign( const SvInfoObject * pObj )
 {
 	SvInfoObject::Assign( pObj );
-	SvEmbeddedInfoObject * pI = PTR_CAST(SvEmbeddedInfoObject, pObj );
+	const SvEmbeddedInfoObject * pI = dynamic_cast< const SvEmbeddedInfoObject* >( pObj );
 	if( pI )
 	{
 		aVisArea = pI->aVisArea;

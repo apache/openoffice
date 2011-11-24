@@ -98,7 +98,7 @@ namespace sdr
 		void AttributeProperties::ImpRemoveStyleSheet()
 		{
 			// Check type since it is destroyed when the type is deleted
-			if(GetStyleSheet() && HAS_BASE(SfxStyleSheet, mpStyleSheet))
+			if(GetStyleSheet() && dynamic_cast< SfxStyleSheet* >(mpStyleSheet))
 			{
 				EndListening(*mpStyleSheet);
 				EndListening(mpStyleSheet->GetPool());
@@ -110,8 +110,7 @@ namespace sdr
 				}
 
 				SdrObject& rObj = GetSdrObject();
-				rObj.SetBoundRectDirty();
-				rObj.SetRectsDirty(sal_True);
+				rObj.ActionChanged();
 			}
 
 			mpStyleSheet = 0L;
@@ -162,8 +161,6 @@ namespace sdr
 			// own modifications
 			SdrObject& rObj = GetSdrObject();
 
-			rObj.SetBoundRectDirty();
-			rObj.SetRectsDirty(sal_True);
 			rObj.SetChanged();
 		}
 
@@ -172,44 +169,43 @@ namespace sdr
 			if(pNewItem)
 			{
 				const SfxPoolItem* pItem = pNewItem;
-				SdrModel* pModel = GetSdrObject().GetModel();
 
 				switch( nWhich )
 				{
 					case XATTR_FILLBITMAP:
 					{
-						pItem = ((XFillBitmapItem*)pItem)->checkForUniqueItem( pModel );
+						pItem = ((XFillBitmapItem*)pItem)->checkForUniqueItem( &GetSdrObject().getSdrModelFromSdrObject() );
 						break;
 					}
 					case XATTR_LINEDASH:
 					{
-						pItem = ((XLineDashItem*)pItem)->checkForUniqueItem( pModel );
+						pItem = ((XLineDashItem*)pItem)->checkForUniqueItem( &GetSdrObject().getSdrModelFromSdrObject() );
 						break;
 					}
 					case XATTR_LINESTART:
 					{
-						pItem = ((XLineStartItem*)pItem)->checkForUniqueItem( pModel );
+						pItem = ((XLineStartItem*)pItem)->checkForUniqueItem( &GetSdrObject().getSdrModelFromSdrObject() );
 						break;
 					}
 					case XATTR_LINEEND:
 					{
-						pItem = ((XLineEndItem*)pItem)->checkForUniqueItem( pModel );
+						pItem = ((XLineEndItem*)pItem)->checkForUniqueItem( &GetSdrObject().getSdrModelFromSdrObject() );
 						break;
 					}
 					case XATTR_FILLGRADIENT:
 					{
-						pItem = ((XFillGradientItem*)pItem)->checkForUniqueItem( pModel );
+						pItem = ((XFillGradientItem*)pItem)->checkForUniqueItem( &GetSdrObject().getSdrModelFromSdrObject() );
 						break;
 					}
 					case XATTR_FILLFLOATTRANSPARENCE:
 					{
 						// #85953# allow all kinds of XFillFloatTransparenceItem to be set
-						pItem = ((XFillFloatTransparenceItem*)pItem)->checkForUniqueItem( pModel );
+						pItem = ((XFillFloatTransparenceItem*)pItem)->checkForUniqueItem( &GetSdrObject().getSdrModelFromSdrObject() );
 						break;
 					}
 					case XATTR_FILLHATCH:
 					{
-						pItem = ((XFillHatchItem*)pItem)->checkForUniqueItem( pModel );
+						pItem = ((XFillHatchItem*)pItem)->checkForUniqueItem( &GetSdrObject().getSdrModelFromSdrObject() );
 						break;
 					}
 				}
@@ -244,8 +240,7 @@ namespace sdr
 			ImpAddStyleSheet(pNewStyleSheet, bDontRemoveHardAttr);
 
 			SdrObject& rObj = GetSdrObject();
-			rObj.SetBoundRectDirty();
-			rObj.SetRectsDirty(sal_True);
+			rObj.ActionChanged();
 		}
 
 		SfxStyleSheet* AttributeProperties::GetStyleSheet() const
@@ -273,8 +268,8 @@ namespace sdr
 						ImpRemoveStyleSheet();
 					}
 
-					mpItemSet = mpItemSet->Clone(sal_False, pDestPool);
-					GetSdrObject().GetModel()->MigrateItemSet(pOldSet, mpItemSet, pNewModel);
+					mpItemSet = mpItemSet->Clone(false, pDestPool);
+					GetSdrObject().getSdrModelFromSdrObject().MigrateItemSet(pOldSet, mpItemSet, pNewModel);
 
 					// set stylesheet (if used)
 					if(pStySheet)
@@ -315,180 +310,9 @@ namespace sdr
 			}
 		}
 
-		void AttributeProperties::SetModel(SdrModel* pOldModel, SdrModel* pNewModel)
-		{
-			if(pOldModel != pNewModel && pNewModel && !pNewModel->IsLoading())
-			{
-				// For a living model move the items from one pool to the other
-				if(pOldModel)
-				{
-					// If metric has changed, scale items.
-					MapUnit aOldUnit(pOldModel->GetScaleUnit());
-					MapUnit aNewUnit(pNewModel->GetScaleUnit());
-					sal_Bool bScaleUnitChanged(aNewUnit != aOldUnit);
-					Fraction aMetricFactor;
-
-					if(bScaleUnitChanged)
-					{
-						aMetricFactor = GetMapFactor(aOldUnit, aNewUnit).X();
-						Scale(aMetricFactor);
-					}
-
-					// Move all styles which are used by the object to the new
-					// StyleSheet pool
-					SfxStyleSheet* pOldStyleSheet = GetStyleSheet();
-
-					if(pOldStyleSheet)
-					{
-						SfxStyleSheetBase* pSheet = pOldStyleSheet;
-						SfxStyleSheetBasePool* pOldPool = pOldModel->GetStyleSheetPool();
-						SfxStyleSheetBasePool* pNewPool = pNewModel->GetStyleSheetPool();
-						DBG_ASSERT(pOldPool, "Properties::SetModel(): Object has StyleSheet but no StyleSheetPool (!)");
-
-						if(pOldPool && pNewPool)
-						{
-							// build a list of to-be-copied Styles
-							List aList;
-							SfxStyleSheetBase* pAnchor = 0L;
-
-							while(pSheet)
-							{
-								pAnchor = pNewPool->Find(pSheet->GetName(), pSheet->GetFamily());
-
-								if(!pAnchor)
-								{
-									aList.Insert(pSheet, LIST_APPEND);
-									pSheet = pOldPool->Find(pSheet->GetParent(), pSheet->GetFamily());
-								}
-								else
-								{
-									// the style does exist
-									pSheet = 0L;
-								}
-							}
-
-							// copy and set the parents
-							pSheet = (SfxStyleSheetBase*)aList.First();
-							SfxStyleSheetBase* pNewSheet = 0L;
-							SfxStyleSheetBase* pLastSheet = 0L;
-							SfxStyleSheetBase* pForThisObject = 0L;
-
-							while(pSheet)
-							{
-								pNewSheet = &pNewPool->Make(pSheet->GetName(), pSheet->GetFamily(), pSheet->GetMask());
-								pNewSheet->GetItemSet().Put(pSheet->GetItemSet(), sal_False);
-
-								if(bScaleUnitChanged)
-								{
-									sdr::properties::ScaleItemSet(pNewSheet->GetItemSet(), aMetricFactor);
-								}
-
-								if(pLastSheet)
-								{
-									pLastSheet->SetParent(pNewSheet->GetName());
-								}
-
-								if(!pForThisObject)
-								{
-									pForThisObject = pNewSheet;
-								}
-
-								pLastSheet = pNewSheet;
-								pSheet = (SfxStyleSheetBase*)aList.Next();
-							}
-
-							// Set link to the Style found in the Pool
-							if(pAnchor && pLastSheet)
-							{
-								pLastSheet->SetParent(pAnchor->GetName());
-							}
-
-							// if list was empty (all Styles exist in destination pool)
-							// pForThisObject is not yet set
-							if(!pForThisObject && pAnchor)
-							{
-								pForThisObject = pAnchor;
-							}
-
-							// De-register at old and register at new Style
-							if(GetStyleSheet() != pForThisObject)
-							{
-								ImpRemoveStyleSheet();
-								ImpAddStyleSheet((SfxStyleSheet*)pForThisObject, sal_True);
-							}
-						}
-						else
-						{
-							// there is no StyleSheetPool in the new model, thus set
-							// all items as hard items in the object
-							List aList;
-							const SfxItemSet* pItemSet = &pOldStyleSheet->GetItemSet();
-
-							while(pItemSet)
-							{
-								aList.Insert((void*)pItemSet, CONTAINER_APPEND);
-								pItemSet = pItemSet->GetParent();
-							}
-
-							SfxItemSet* pNewSet = &CreateObjectSpecificItemSet(pNewModel->GetItemPool());
-							pItemSet = (SfxItemSet*)aList.Last();
-
-							while(pItemSet)
-							{
-								pNewSet->Put(*pItemSet);
-								pItemSet = (SfxItemSet*)aList.Prev();
-							}
-
-							// Items which were hard attributes before need to stay
-							if(mpItemSet)
-							{
-								SfxWhichIter aIter(*mpItemSet);
-								sal_uInt16 nWhich = aIter.FirstWhich();
-
-								while(nWhich)
-								{
-									if(mpItemSet->GetItemState(nWhich, sal_False) == SFX_ITEM_SET)
-									{
-										pNewSet->Put(mpItemSet->Get(nWhich));
-									}
-
-									nWhich = aIter.NextWhich();
-								}
-							}
-
-							if(bScaleUnitChanged)
-							{
-								ScaleItemSet(*pNewSet, aMetricFactor);
-							}
-
-							if(mpItemSet)
-							{
-								if(GetStyleSheet())
-								{
-									ImpRemoveStyleSheet();
-								}
-								
-								delete mpItemSet;
-								mpItemSet = 0L;
-							}
-
-							mpItemSet = pNewSet;
-						}
-					}
-				}
-
-				// each object gets the default Style if there is none set yet.
-				if(!GetStyleSheet() && pNewModel && !pNewModel->IsLoading())
-				{
-				    GetObjectItemSet(); // #118414# force ItemSet to allow style to be set
-                    SetStyleSheet(pNewModel->GetDefaultStyleSheet(), sal_True);
-				}
-			}
-		}
-
 		void AttributeProperties::ForceStyleToHardAttributes()
 		{
-			if(GetStyleSheet() && HAS_BASE(SfxStyleSheet, mpStyleSheet))
+			if(GetStyleSheet() && dynamic_cast< SfxStyleSheet* >(mpStyleSheet))
 			{
 				// prepare copied, new itemset, but WITHOUT parent
 				GetObjectItemSet();
@@ -523,8 +347,7 @@ namespace sdr
 				mpItemSet = pDestItemSet;
 
 				// set necessary changes like in RemoveStyleSheet()
-				GetSdrObject().SetBoundRectDirty();
-				GetSdrObject().SetRectsDirty(sal_True);
+				GetSdrObject().ActionChanged();
 
 				mpStyleSheet = NULL;
 			}
@@ -534,12 +357,12 @@ namespace sdr
 		{
 			sal_Bool bHintUsed(sal_False);
 
-			SfxStyleSheetHint *pStyleHint = PTR_CAST(SfxStyleSheetHint, &rHint);
+			const SfxStyleSheetHint *pStyleHint = dynamic_cast< const SfxStyleSheetHint* >( &rHint);
 
 			if(pStyleHint && pStyleHint->GetStyleSheet() == GetStyleSheet())
 			{
 				SdrObject& rObj = GetSdrObject();
-				//SdrPage* pPage = rObj.GetPage();
+				const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(rObj, HINT_OBJCHG_ATTR);
 
 				switch(pStyleHint->GetHint())
 				{
@@ -559,23 +382,22 @@ namespace sdr
 					{
 						// Style needs to be exchanged
 						SfxStyleSheet* pNewStSh = 0L;
-						SdrModel* pModel = rObj.GetModel();
 
 						// #111111#
 						// Do nothing if object is in destruction, else a StyleSheet may be found from
 						// a StyleSheetPool which is just being deleted itself. and thus it would be fatal
 						// to register as listener to that new StyleSheet.
-						if(pModel && !rObj.IsInDestruction())
+						if(!rObj.getSdrModelFromSdrObject().IsInDestruction())
 						{
-							if(HAS_BASE(SfxStyleSheet, GetStyleSheet()))
+							if(dynamic_cast< SfxStyleSheet* >(GetStyleSheet()))
 							{
-								pNewStSh = (SfxStyleSheet*)pModel->GetStyleSheetPool()->Find(
+								pNewStSh = (SfxStyleSheet*)rObj.getSdrModelFromSdrObject().GetStyleSheetPool()->Find(
 									GetStyleSheet()->GetParent(), GetStyleSheet()->GetFamily());
 							}
 
 							if(!pNewStSh)
 							{
-								pNewStSh = pModel->GetDefaultStyleSheet();
+								pNewStSh = rObj.getSdrModelFromSdrObject().GetDefaultStyleSheet();
 							}
 						}
 
@@ -593,20 +415,7 @@ namespace sdr
 
 				// Get old BoundRect. Do this after the style change is handled
 				// in the ItemSet parts because GetBoundRect() may calculate a new
-				Rectangle aBoundRect = rObj.GetLastBoundRect();
-
-				rObj.SetRectsDirty(sal_True);
-
-				// tell the object about the change
 				rObj.SetChanged();
-				rObj.BroadcastObjectChange();
-
-				//if(pPage && pPage->IsInserted())
-				//{
-				//	rObj.BroadcastObjectChange();
-				//}
-
-				rObj.SendUserCall(SDRUSERCALL_CHGATTR, aBoundRect);
 
 				bHintUsed = sal_True;
 			}

@@ -3047,7 +3047,7 @@ void AttributeOutputBase::TextField( const SwFmtFld& rField )
 
 void AttributeOutputBase::TextFlyContent( const SwFmtFlyCnt& rFlyContent )
 {
-    if ( GetExport().pOutFmtNode && GetExport().pOutFmtNode->ISA( SwCntntNode ) )
+    if ( GetExport().pOutFmtNode && dynamic_cast< const SwCntntNode* >(GetExport().pOutFmtNode) )
     {
         SwTxtNode* pTxtNd = (SwTxtNode*)GetExport().pOutFmtNode;
 
@@ -3387,7 +3387,7 @@ void AttributeOutputBase::ParaNumRule( const SwNumRuleItem& rNumRule )
             ++nNumId;
             if ( GetExport().pOutFmtNode )
             {
-                if ( GetExport().pOutFmtNode->ISA( SwCntntNode ) )
+                if ( dynamic_cast< const SwCntntNode* >(GetExport().pOutFmtNode) )
                 {
                     pTxtNd = (SwTxtNode*)GetExport().pOutFmtNode;
 
@@ -3412,7 +3412,7 @@ void AttributeOutputBase::ParaNumRule( const SwNumRuleItem& rNumRule )
                         nNumId = 0;
                     }
                 }
-                else if ( GetExport().pOutFmtNode->ISA( SwTxtFmtColl ) )
+                else if ( dynamic_cast< const SwTxtFmtColl* >(GetExport().pOutFmtNode) )
                 {
                     const SwTxtFmtColl* pC = (SwTxtFmtColl*)GetExport().pOutFmtNode;
                     if ( pC && pC->IsAssignedToListLevelOfOutlineStyle() )
@@ -3620,7 +3620,7 @@ void WW8AttributeOutput::TableRowEnd(sal_uInt32 nDepth)
 
 void AttributeOutputBase::FormatPageDescription( const SwFmtPageDesc& rPageDesc )
 {
-    if ( GetExport().bStyDef && GetExport().pOutFmtNode && GetExport().pOutFmtNode->ISA( SwTxtFmtColl ) )
+    if ( GetExport().bStyDef && GetExport().pOutFmtNode && dynamic_cast< const SwTxtFmtColl* >(GetExport().pOutFmtNode) )
     {
         const SwTxtFmtColl* pC = (SwTxtFmtColl*)GetExport().pOutFmtNode;
         if ( (SFX_ITEM_SET != pC->GetItemState( RES_BREAK, false ) ) && rPageDesc.KnowsPageDesc() )
@@ -4558,12 +4558,12 @@ void AttributeOutputBase::ParaLineSpacing( const SvxLineSpacingItem& rSpacing )
                     sal_uInt16 nScript =
                         i18n::ScriptType::LATIN;
                     const SwAttrSet *pSet = 0;
-                    if ( GetExport().pOutFmtNode && GetExport().pOutFmtNode->ISA( SwFmt ) )
+                    if ( GetExport().pOutFmtNode && dynamic_cast< const SwFmt* >(GetExport().pOutFmtNode) )
                     {
                         const SwFmt *pFmt = (const SwFmt*)( GetExport().pOutFmtNode );
                         pSet = &pFmt->GetAttrSet();
                     }
-                    else if ( GetExport().pOutFmtNode && GetExport().pOutFmtNode->ISA( SwTxtNode ) )
+                    else if ( GetExport().pOutFmtNode && dynamic_cast< const SwTxtNode* >(GetExport().pOutFmtNode) )
                     {
                         const SwTxtNode* pNd = (const SwTxtNode*)GetExport().pOutFmtNode;
                         pSet = &pNd->GetSwAttrSet();
@@ -4642,12 +4642,12 @@ void WW8AttributeOutput::ParaAdjust( const SvxAdjustItem& rAdjust )
             if ( m_rWW8Export.pOutFmtNode )
             {
                 short nDirection = FRMDIR_HORI_LEFT_TOP;
-                if ( m_rWW8Export.pOutFmtNode->ISA( SwTxtNode ) )
+                if ( dynamic_cast< const SwTxtNode* >(m_rWW8Export.pOutFmtNode) )
                 {
                     SwPosition aPos(*(const SwCntntNode*)m_rWW8Export.pOutFmtNode);
                     nDirection = m_rWW8Export.pDoc->GetTextDirection(aPos);
                 }
-                else if ( m_rWW8Export.pOutFmtNode->ISA( SwTxtFmtColl ) )
+                else if ( dynamic_cast< const SwTxtFmtColl* >(m_rWW8Export.pOutFmtNode) )
                 {
                     const SwTxtFmtColl* pC =
                         (const SwTxtFmtColl*)m_rWW8Export.pOutFmtNode;
@@ -4695,14 +4695,14 @@ void WW8AttributeOutput::FormatFrameDirection( const SvxFrameDirectionItem& rDir
                 nDir = m_rWW8Export.TrueFrameDirection(
                     *(const SwFrmFmt*)m_rWW8Export.pOutFmtNode );
             }
-            else if ( m_rWW8Export.pOutFmtNode->ISA( SwCntntNode ) )   //pagagraph
+            else if ( dynamic_cast< const SwCntntNode* >(m_rWW8Export.pOutFmtNode) )   //pagagraph
             {
                 const SwCntntNode* pNd =
                     (const SwCntntNode*)m_rWW8Export.pOutFmtNode;
                 SwPosition aPos( *pNd );
                 nDir = m_rWW8Export.pDoc->GetTextDirection( aPos );
             }
-            else if ( m_rWW8Export.pOutFmtNode->ISA( SwTxtFmtColl ) )
+            else if ( dynamic_cast< const SwTxtFmtColl* >(m_rWW8Export.pOutFmtNode) )
                 nDir = FRMDIR_HORI_LEFT_TOP;    //what else can we do :-(
         }
 

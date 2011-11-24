@@ -1123,7 +1123,7 @@ void SwXStyleFamily::removeByName(const OUString& rName) throw( container::NoSuc
   -----------------------------------------------------------------------*/
 void SwXStyleFamily::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
-    SfxSimpleHint *pHint = PTR_CAST( SfxSimpleHint, &rHint );
+    const SfxSimpleHint *pHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
     if( pHint && ( pHint->GetId() & SFX_HINT_DYING ) )
     {
         pBasePool = 0;
@@ -1141,7 +1141,7 @@ SwXStyle*   SwXStyleFamily::_FindStyle(const String& rStyleName)const
     for( sal_uInt16 i = 0; i < nLCount; i++)
     {
         pListener = pBasePool->GetListener( i );
-        if(PTR_CAST(SwXStyle, pListener) && ((SwXStyle*)pListener)->GetFamily() == eFamily && ((SwXStyle*)pListener)->GetStyleName() == rStyleName)
+        if(dynamic_cast< SwXStyle* >( pListener) && ((SwXStyle*)pListener)->GetFamily() == eFamily && ((SwXStyle*)pListener)->GetStyleName() == rStyleName)
         {
             return (SwXStyle*)pListener;
         }
@@ -2864,7 +2864,7 @@ Any SwXStyle::getPropertyDefault(const OUString& rPropertyName)
  * --------------------------------------------------*/
 void SwXStyle::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
-    SfxSimpleHint *pHint = PTR_CAST( SfxSimpleHint, &rHint );
+    const SfxSimpleHint *pHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
     if( pHint )
     {
         if(( pHint->GetId() & SFX_HINT_DYING ) || ( pHint->GetId() & SFX_STYLESHEET_ERASED))

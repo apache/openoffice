@@ -26,7 +26,7 @@
 #include <limits.h>
 
 #ifndef _RTTI_HXX //autogen
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 #ifndef _APP_HXX
 #include <vcl/svapp.hxx>

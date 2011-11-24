@@ -47,6 +47,7 @@
 #ifndef _SVDLAYER_HXX
 #include <bf_svx/svdlayer.hxx>
 #endif
+#include <bf_tools/rtti.hxx>
 class Color;
 namespace binfilter {
 

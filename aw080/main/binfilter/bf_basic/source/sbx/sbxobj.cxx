@@ -143,7 +143,7 @@ void SbxObject::Clear()
 void SbxObject::SFX_NOTIFY( SfxBroadcaster&, const TypeId&,
 							const SfxHint& rHint, const TypeId& )
 {
-	const SbxHint* p = PTR_CAST(SbxHint,&rHint);
+	const SbxHint* p = dynamic_cast< const SbxHint* >( &rHint);
 	if( p )
 	{
 		ULONG nId = p->GetId();
@@ -440,7 +440,7 @@ SbxObject* SbxObject::MakeObject( const XubString& rName, const XubString& rClas
 			}
 #endif
 */
-			return PTR_CAST(SbxObject,pRes);
+			return dynamic_cast< SbxObject* >( pRes);
 		}
 	}
 	SbxObject* pVar = CreateObject( rClass );
@@ -510,7 +510,7 @@ void SbxObject::Insert( SbxVariable* pVar )
 	{ "DontCare","Array","Value","Variable","Method","Property","Object" };
 	XubString aVarName( pVar->GetName() );
 	if ( !aVarName.Len() && pVar->ISA(SbxObject) )
-		aVarName = PTR_CAST(SbxObject,pVar)->GetClassName();
+		aVarName = dynamic_cast< SbxObject* >( pVar)->GetClassName();
 	ByteString aNameStr1( (const UniString&)aVarName, RTL_TEXTENCODING_ASCII_US );
 	ByteString aNameStr2( (const UniString&)SbxVariable::GetName(), RTL_TEXTENCODING_ASCII_US );
 	DbgOutf( "SBX: Insert %s %s in %s",
@@ -550,7 +550,7 @@ void SbxObject::QuickInsert( SbxVariable* pVar )
 	{ "DontCare","Array","Value","Variable","Method","Property","Object" };
 	XubString aVarName( pVar->GetName() );
 	if ( !aVarName.Len() && pVar->ISA(SbxObject) )
-		aVarName = PTR_CAST(SbxObject,pVar)->GetClassName();
+		aVarName = dynamic_cast< SbxObject* >( pVar)->GetClassName();
 	ByteString aNameStr1( (const UniString&)aVarName, RTL_TEXTENCODING_ASCII_US );
 	ByteString aNameStr2( (const UniString&)SbxVariable::GetName(), RTL_TEXTENCODING_ASCII_US );
 	DbgOutf( "SBX: Insert %s %s in %s",
@@ -575,7 +575,7 @@ void SbxObject::Remove( SbxVariable* pVar )
 #ifdef DBG_UTIL
 	XubString aVarName( pVar->GetName() );
 	if ( !aVarName.Len() && pVar->ISA(SbxObject) )
-		aVarName = PTR_CAST(SbxObject,pVar)->GetClassName();
+		aVarName = dynamic_cast< SbxObject* >( pVar)->GetClassName();
 	ByteString aNameStr1( (const UniString&)aVarName, RTL_TEXTENCODING_ASCII_US );
 	ByteString aNameStr2( (const UniString&)SbxVariable::GetName(), RTL_TEXTENCODING_ASCII_US );
 #endif

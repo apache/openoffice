@@ -539,7 +539,7 @@ void SdXMLShapeContext::SetStyle( bool bSupportsStyle /* = true */)
 
 			if( pStyle && pStyle->ISA(XMLShapeStyleContext) )
 			{
-				pDocStyle = PTR_CAST( XMLShapeStyleContext, pStyle );
+				pDocStyle = const_cast< XMLShapeStyleContext* >( dynamic_cast< const XMLShapeStyleContext* >( pStyle ) );
 
 				if( pDocStyle->GetStyle().is() )
 				{
@@ -628,7 +628,8 @@ void SdXMLShapeContext::SetStyle( bool bSupportsStyle /* = true */)
 			if( NULL == GetImport().GetShapeImport()->GetAutoStylesContext())
 				break;
 
-			XMLPropStyleContext* pStyle = PTR_CAST( XMLPropStyleContext, GetImport().GetShapeImport()->GetAutoStylesContext()->FindStyleChildContext(XML_STYLE_FAMILY_TEXT_PARAGRAPH, maTextStyleName) );
+			XMLPropStyleContext* pStyle = const_cast< XMLPropStyleContext* >( dynamic_cast< const XMLPropStyleContext* >( 
+				GetImport().GetShapeImport()->GetAutoStylesContext()->FindStyleChildContext(XML_STYLE_FAMILY_TEXT_PARAGRAPH, maTextStyleName) ) );
 			if( pStyle == NULL )
 				break;
 

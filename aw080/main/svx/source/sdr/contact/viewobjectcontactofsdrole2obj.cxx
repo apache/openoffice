@@ -85,15 +85,8 @@ namespace sdr
 
             if( !bDone )
             {
-                const Rectangle& rObjectRectangle(rSdrOle2.GetGeoRect());
-		        const basegfx::B2DRange aObjectRange(rObjectRectangle.Left(), rObjectRectangle.Top(), rObjectRectangle.Right(), rObjectRectangle.Bottom());
-
-		        // create object transform
-		        basegfx::B2DHomMatrix aObjectTransform;
-		        aObjectTransform.set(0, 0, aObjectRange.getWidth());
-		        aObjectTransform.set(1, 1, aObjectRange.getHeight());
-		        aObjectTransform.set(0, 2, aObjectRange.getMinX());
-		        aObjectTransform.set(1, 2, aObjectRange.getMinY());
+				// get object transformation
+				const basegfx::B2DHomMatrix& rObjectMatrix(rSdrOle2.getSdrObjectTransformation());
 
                 if(bIsChart)
 		        {
@@ -152,7 +145,10 @@ namespace sdr
 				        // embed MetaFile data in a specialized Wrapper Primitive which holds also the ChartModel needed
 				        // for PrettyPrinting
 				        const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::ChartPrimitive2D(
-					        xChartModel, aObjectTransform, xRetval));
+					        xChartModel, 
+							rObjectMatrix, 
+							xRetval));
+
 				        xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
                         bDone = true;
 			        }
@@ -179,11 +175,12 @@ namespace sdr
 	                            const_cast< SdrOle2Obj* >(&rSdrOle2)->SetResizeProtect(true);
                             }
 
-                            SdrPageView* pPageView = GetObjectContact().TryToGetSdrPageView();
-	                        if(pPageView && (nMiscStatus & embed::EmbedMisc::MS_EMBED_ACTIVATEWHENVISIBLE))
+                            SdrView* pSdrView = GetObjectContact().TryToGetSdrView();
+
+	                        if(pSdrView && (nMiscStatus & embed::EmbedMisc::MS_EMBED_ACTIVATEWHENVISIBLE))
 	                        {
 		                        // connect plugin object
-		                        pPageView->GetView().DoConnect(const_cast< SdrOle2Obj* >(&rSdrOle2));
+		                        pSdrView->DoConnect(const_cast< SdrOle2Obj* >(&rSdrOle2));
 	                        }
                         }
                     }//end old stuff to rework
@@ -200,7 +197,7 @@ namespace sdr
 			        {
 				        // shade the representation if the object is activated outplace
 				        basegfx::B2DPolygon aObjectOutline(basegfx::tools::createUnitPolygon());
-				        aObjectOutline.transform(aObjectTransform);
+				        aObjectOutline.transform(rObjectMatrix);
 
 				        // Use a FillHatchPrimitive2D with necessary attributes
 				        const drawinglayer::attribute::FillHatchAttribute aFillHatch(

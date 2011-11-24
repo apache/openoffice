@@ -920,8 +920,7 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
                                           pShell->GetWin();
                 // <--
 
-				if( bAnimate &&
-					FindFlyFrm() != ::GetFlyFromMarked( 0, pShell ))
+				if( bAnimate && FindFlyFrm() != ::GetFlyFromMarked( pShell ))
 				{
 					OutputDevice* pVout;
 					if( pOut == pShell->GetOut() && SwRootFrm::FlushVout() )
@@ -1041,7 +1040,7 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
             delete pJobSetup;  // ... und raeumen wieder auf.
 
         sal_Int64 nMiscStatus = pOLENd->GetOLEObj().GetOleRef()->getStatus( pOLENd->GetAspect() );
-        if ( !bPrn && pShell->ISA( SwCrsrShell ) &&
+        if ( !bPrn && dynamic_cast< SwCrsrShell* >(pShell) &&
                 nMiscStatus & embed::EmbedMisc::MS_EMBED_ACTIVATEWHENVISIBLE )
         {
             const SwFlyFrm *pFly = FindFlyFrm();

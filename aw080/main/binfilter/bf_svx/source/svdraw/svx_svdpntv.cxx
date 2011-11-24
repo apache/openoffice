@@ -392,7 +392,7 @@ using namespace ::com::sun::star;
 /*N*/ 	BOOL bObjChg=!bSomeObjChgdFlag; // TRUE= auswerten fuer ComeBack-Timer
 /*N*/ 	BOOL bMaster=pMasterBmp!=NULL;	// TRUE= auswerten fuer MasterPagePaintCache
 /*N*/ 	if (bObjChg || bMaster) {
-/*N*/ 		SdrHint* pSdrHint=PTR_CAST(SdrHint,&rHint);
+/*N*/ 		const SdrHint* pSdrHint=dynamic_cast< const SdrHint* >( &rHint);
 /*N*/ 		if (pSdrHint!=NULL) {
 /*N*/ 			SdrHintKind eKind=pSdrHint->GetKind();
 /*N*/ 			if (eKind==HINT_OBJCHG || eKind==HINT_OBJINSERTED || eKind==HINT_OBJREMOVED) {

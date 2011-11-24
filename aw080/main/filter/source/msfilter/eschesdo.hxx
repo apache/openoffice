@@ -25,6 +25,7 @@
 #include <filter/msfilter/escherex.hxx>
 #include <svx/unopage.hxx>
 #include <vcl/mapmod.hxx>
+#include <basegfx/matrix/b2dhommatrix.hxx>
 
 // ===================================================================
 // fractions of Draw PPTWriter etc.
@@ -39,7 +40,7 @@ class ImplEESdrObject
 	::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >			mXShape;
 //	XTextRef			mXText;	// TextRef des globalen Text
 	::com::sun::star::uno::Any				mAny;
-	Rectangle			maRect;
+	basegfx::B2DRange	maRange;
 	String				mType;
 	sal_uInt32				mnShapeId;
 	sal_uInt32				mnTextSize;
@@ -66,10 +67,8 @@ public:
 	const String&		GetType() const 		{ return mType; }
 	void				SetType( const String& rS ) { mType = rS; }
 
-	const Rectangle&	GetRect() const 		{ return maRect; }
-	void				SetRect( const Point& rPos, const Size& rSz );
-	void				SetRect( const Rectangle& rRect )
-							{ maRect = rRect; }
+	const basegfx::B2DRange& GetRange() const { return maRange; }
+	void SetRange(const basegfx::B2DRange& rRange ) { maRange = rRange; }
 
 	sal_Int32				GetAngle() const 		{ return mnAngle; }
 	void				SetAngle( sal_Int32 nVal ) 	{ mnAngle = nVal; }
@@ -112,6 +111,9 @@ protected:
 		EscherEx*			mpEscherEx;
 		MapMode				maMapModeSrc;
 		MapMode				maMapModeDest;
+		basegfx::B2DHomMatrix	maLogicToLogic;
+
+		void implPrepareLogicToLogic();
 
 		::com::sun::star::uno::Reference< ::com::sun::star::task::XStatusIndicator >	mXStatusIndicator;
 		::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage >		mXDrawPage;
@@ -161,12 +163,13 @@ protected:
 												const Point& rTextRefPoint );
 			sal_uInt32				ImplEnterAdditionalTextGroup(
 										const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& rShape,
-										const Rectangle* pBoundRect = NULL );
+										const basegfx::B2DRange* pBoundRange = 0 );
 
 
 public:
-			Point				ImplMapPoint( const Point& rPoint );
-			Size				ImplMapSize( const Size& rSize );
+			basegfx::B2DPoint ImplMapB2DPoint( const basegfx::B2DPoint& rPoint );
+			basegfx::B2DVector ImplMapB2DVector( const basegfx::B2DVector& rScale );
+
 			EscherExHostAppData* ImplGetHostData() { return mpHostAppData; }
             void MapRect(ImplEESdrObject& rObj);
 };

@@ -56,7 +56,8 @@ SV_DECL_IMPL_REF_LIST( SvLockBytes, SvLockBytes* )
 //
 //============================================================================
 
-TYPEINIT1(SvSyncLockBytes, SvOpenLockBytes);
+TYPEINIT0(BfSvOpenLockBytes);
+TYPEINIT1(SvSyncLockBytes, BfSvOpenLockBytes);
 
 //============================================================================
 // virtual

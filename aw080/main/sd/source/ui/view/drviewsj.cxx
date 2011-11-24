@@ -27,16 +27,10 @@
 #include "DrawViewShell.hxx"
 #include <com/sun/star/embed/EmbedMisc.hpp>
 #include <svl/aeitem.hxx>
-#ifndef _SVXIDS_HRC //autogen
 #include <svx/svxids.hrc>
-#endif
-#ifndef _GLOBL3D_HXX //autogen
 #include <svx/globl3d.hxx>
-#endif
 #include <editeng/eeitem.hxx>
-#ifndef _FLDITEM_HXX
 #include <editeng/flditem.hxx>
-#endif
 #include <svx/svdogrp.hxx>
 #include <svx/svdograf.hxx>
 #include <svx/svdoole2.hxx>
@@ -44,15 +38,11 @@
 #include <sfx2/dispatch.hxx>
 #include <sfx2/request.hxx>
 #include <svx/svdopath.hxx>
-#include <svx/polysc3d.hxx>
 #include <svx/obj3d.hxx>
 #include <sfx2/event.hxx>
 #include <sfx2/docfile.hxx>
 #include <rtl/ustrbuf.hxx>
-
-
 #include "app.hrc"
-
 #include "Outliner.hxx"
 #include "sdpage.hxx"
 #include "fupoor.hxx"
@@ -61,6 +51,7 @@
 #include "DrawDocShell.hxx"
 #include "drawview.hxx"
 #include "optsitem.hxx"
+#include <svx/scene3d.hxx>
 
 using namespace com::sun::star;
 
@@ -75,21 +66,16 @@ namespace sd {
 void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 {
 	// Status der Menueintraege, bzw. Buttons
-	// Einfachselektion
+	const SdrObject* pSingleObject = mpDrawView->getSelectedIfSingle();
 
-	const SdrMarkList& rMarkList = mpDrawView->GetMarkedObjectList();
-	sal_uLong nMarkCount = rMarkList.GetMarkCount();
-
-	if ( nMarkCount == 1 )
+	if(pSingleObject)
 	{
+		// Einfachselektion
 		if( SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_BEZIER_EDIT ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_UNGROUP ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_ENTER_GROUP ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_NAME_GROUP ) ||
-
-			// #i68101#
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_TITLE_DESCRIPTION ) ||
-
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_ATTR_FILL_STYLE ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CHANGEBEZIER ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CHANGEPOLYGON ) ||
@@ -99,8 +85,6 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_MEASURE_DLG ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONNECTION_DLG ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONNECTION_NEW_ROUTING ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONVERT_TO_3D_LATHE ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONVERT_TO_3D_LATHE_FAST ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_SHEAR ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONVERT_TO_1BIT_THRESHOLD ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONVERT_TO_1BIT_MATRIX ) ||
@@ -126,50 +110,46 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
  			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_SAVEGRAPHIC ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_TEXTATTR_DLG ) )
 		{
-			const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-			sal_uInt32 nInv = pObj->GetObjInventor();
-			sal_uInt16 nId = pObj->GetObjIdentifier();
+			const sal_uInt32 nInv = pSingleObject->GetObjInventor();
+			const sal_uInt16 nId = pSingleObject->GetObjIdentifier();
 			SdrObjTransformInfoRec aInfoRec;
-			pObj->TakeObjInfo( aInfoRec );
+			pSingleObject->TakeObjInfo( aInfoRec );
 
 
 			// #91929#; don't show original size entry if not possible
-            if ( pObj->ISA( SdrOle2Obj ) )
+			const SdrOle2Obj* pOleObj = dynamic_cast< const SdrOle2Obj* >(pSingleObject);
+            
+			if ( pOleObj )
 			{
-				SdrOle2Obj* pOleObj = PTR_CAST(SdrOle2Obj, pObj);
                 if (pOleObj->GetObjRef().is() &&
                     ((pOleObj->GetObjRef()->getStatus( pOleObj->GetAspect() ) & embed::EmbedMisc::MS_EMBED_RECOMPOSEONRESIZE) ) )
 					rSet.DisableItem(SID_ORIGINAL_SIZE);
             }
 
-			if ( !( pObj->ISA( SdrGrafObj ) ) )
+			const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(pSingleObject);
+
+			if ( !pSdrGrafObj )
 			{
 				rSet.DisableItem(SID_SAVEGRAPHIC);
 			}
 
 			// Wenn es sich um kein Gruppenobjekt oder 3D-Objekt handelt
 			// wird "Gruppe betreten" disabled
-			if( !( ( pObj->ISA( SdrObjGroup ) && nInv == SdrInventor ) ||
-				(pObj->ISA (E3dPolyScene) || pObj->ISA (E3dScene) /*|| pObj->ISA (E3dCompoundObject) */) ) )
+			if( ! pSingleObject->getChildrenOfSdrObject() )
 			{
 				rSet.DisableItem( SID_ENTER_GROUP );
 			}
 
 			// Wenn es sich um kein Gruppenobjekt handelt
 			// wird "Gruppierung aufheben" disabled
-			if (!(pObj->ISA(SdrObjGroup) && nInv == SdrInventor))
+			if (!(dynamic_cast< const SdrObjGroup* >(pSingleObject) && nInv == SdrInventor))
 			{
 				rSet.DisableItem(SID_UNGROUP);
 			}
-/*
-			if (!pObj->ISA(SdrObjGroup) && !pObj->ISA(SdrGrafObj) && !pObj->ISA(SdrOle2Obj))
-			{
-				rSet.DisableItem( SID_NAME_GROUP );
-			}
-*/
-			if (!pObj->ISA(SdrGrafObj) ||
-				((SdrGrafObj*) pObj)->GetGraphicType() != GRAPHIC_BITMAP ||
-				((SdrGrafObj*) pObj)->IsLinkedGraphic())
+
+			if (!pSdrGrafObj ||
+				pSdrGrafObj->GetGraphicType() != GRAPHIC_BITMAP ||
+				pSdrGrafObj->IsLinkedGraphic())
 			{
 				rSet.DisableItem(SID_CONVERT_TO_1BIT_THRESHOLD);
 				rSet.DisableItem(SID_CONVERT_TO_1BIT_MATRIX);
@@ -189,16 +169,18 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 				//rSet.DisableItem( SID_ATTRIBUTES_AREA ); // wieder raus!
 				rSet.DisableItem( SID_ATTR_FILL_STYLE );
 			}
-			if( (!pObj->ISA( SdrPathObj ) && !aInfoRec.bCanConvToPath) || pObj->ISA( SdrObjGroup ) ) // Solange es JOE fehlerhaft behandelt!
-			{ // JOE: Ein Gruppenobjekt kann eben u.U. in ein PathObj gewandelt werden
+			if( (!dynamic_cast< const SdrPathObj* >(pSingleObject) && !aInfoRec.mbCanConvToPath) 
+				|| dynamic_cast< const SdrObjGroup* >(pSingleObject) ) // Solange es JOE fehlerhaft behandelt!
+			{ 
+				// JOE: Ein Gruppenobjekt kann eben u.U. in ein PathObj gewandelt werden
 				rSet.DisableItem( SID_LINEEND_POLYGON );
 			}
 			if(nInv == SdrInventor &&
-			   (nId == OBJ_PATHFILL || nId == OBJ_PATHLINE || !aInfoRec.bCanConvToPath))
+			   (nId == OBJ_PATHFILL || nId == OBJ_PATHLINE || !aInfoRec.mbCanConvToPath))
 				rSet.DisableItem( SID_CHANGEBEZIER );
 
 			if( nInv == SdrInventor &&
-				( nId == OBJ_POLY || nId == OBJ_PLIN || !aInfoRec.bCanConvToPoly ) &&
+				( nId == OBJ_POLY || nId == OBJ_PLIN || !aInfoRec.mbCanConvToPoly ) &&
 				!GetView()->IsVectorizeAllowed() )
 			{
 				rSet.DisableItem( SID_CHANGEPOLYGON );
@@ -216,8 +198,8 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 				rSet.DisableItem( SID_CONNECTION_DLG );
 			else
 			{
-				sal_Bool bDisable = sal_True;
-				SfxItemSet aAttrSet( GetDoc()->GetPool() );
+				bool bDisable = true;
+				SfxItemSet aAttrSet( GetDoc()->GetItemPool() );
 				GetView()->GetAttributes( aAttrSet );
 
 				if( aAttrSet.GetItemState( SDRATTR_EDGELINE1DELTA ) >= SFX_ITEM_AVAILABLE &&
@@ -229,7 +211,7 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 					long nVal3 = ( ( const SdrEdgeLine3DeltaItem& ) aAttrSet.Get( SDRATTR_EDGELINE3DELTA ) ).GetValue();
 					{
 						if( nVal1 != 0 || nVal2 != 0 || nVal3 != 0 )
-							bDisable = sal_False;
+							bDisable = false;
 					}
 				}
 				if( bDisable )
@@ -237,14 +219,14 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			}
 
 			if ( nInv == E3dInventor                          ||
-				 (!mpDrawView->IsConvertToPathObjPossible(sal_False) &&
+				 (!mpDrawView->IsConvertToPathObjPossible(false) &&
 				  !mpDrawView->IsShearAllowed()                  &&
 				  !mpDrawView->IsDistortAllowed()) )
 			{
 				rSet.DisableItem( SID_OBJECT_SHEAR );
 			}
 
-			if(pObj->ISA(E3dCompoundObject))
+			if(dynamic_cast< const E3dCompoundObject* >(pSingleObject))
 			{
 				rSet.DisableItem( SID_OBJECT_ALIGN_LEFT );
 				rSet.DisableItem( SID_OBJECT_ALIGN_CENTER );
@@ -265,12 +247,12 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 		if( SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_DISMANTLE ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_BREAK ) )
 		{
-			if ( !mpDrawView->IsDismantlePossible(sal_False) )
+			if ( !mpDrawView->IsDismantlePossible(false) )
 			{
 				rSet.DisableItem( SID_DISMANTLE );
 			}
 
-			if ( !mpDrawView->IsDismantlePossible(sal_True) &&
+			if ( !mpDrawView->IsDismantlePossible(true) &&
 				 !mpDrawView->IsImportMtfPossible()     &&
 				 !mpDrawView->IsBreak3DObjPossible() )
 			{
@@ -285,10 +267,11 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			{
 				const SvxFieldItem* pFldItem = pOLV->GetFieldAtSelection();
 
-				if( !( pFldItem && (pFldItem->GetField()->ISA( SvxDateField ) ||
-								 pFldItem->GetField()->ISA( SvxAuthorField ) ||
-								 pFldItem->GetField()->ISA( SvxExtFileField ) ||
-								 pFldItem->GetField()->ISA( SvxExtTimeField ) ) ) )
+				if( !( pFldItem && (
+					dynamic_cast< const SvxDateField* >(pFldItem->GetField()) ||
+					dynamic_cast< const SvxAuthorField* >(pFldItem->GetField()) ||
+					dynamic_cast< const SvxExtFileField* >(pFldItem->GetField()) ||
+					dynamic_cast< const SvxExtTimeField* >(pFldItem->GetField()) ) ) )
 				{
 					rSet.DisableItem( SID_MODIFY_FIELD );
 				}
@@ -305,72 +288,51 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
         rSet.DisableItem(SID_POLY_INTERSECT);
 		rSet.DisableItem( SID_CONNECT );
 	}
-	// Mehrfachselektion
-	else if( nMarkCount > 1 )
+	else
 	{
+		if(mpDrawView->areSdrObjectsSelected())
+		{
+			const SdrObjectVector aSelection(mpDrawView->getSelectedSdrObjectVectorFromSdrMarkView());
+			
+			// Mehrfachselektion
 		// distribure dialog for 3+n objects
-		if(nMarkCount <= 2)
+			if(aSelection.size() <= 2)
+			{
 			rSet.DisableItem(SID_DISTRIBUTE_DLG);
+			}
 
-//        rSet.ClearItem( SID_BEZIER_EDIT );
-//        rSet.DisableItem( SID_BEZIER_EDIT );
 		rSet.DisableItem( SID_LINEEND_POLYGON );
 		rSet.DisableItem( SID_ENTER_GROUP );
-		// Jetzt (28.10.96) muessen Namen fuer Objekte eindeutig sein
 		rSet.DisableItem( SID_NAME_GROUP );
-		// #i68101#
 		rSet.DisableItem( SID_OBJECT_TITLE_DESCRIPTION );
 		rSet.DisableItem( SID_MODIFY_FIELD );
 
-		if( 1 )
-//		if( SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_ATTR_FILL_STYLE ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_UNGROUP ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_MEASURE_DLG ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONNECTION_DLG ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_COMBINE ) ||
-//            SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_SHEAR ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_TEXTATTR_DLG ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONVERT_TO_3D_LATHE ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CONVERT_TO_3D_LATHE_FAST ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_ALIGN_LEFT ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_ALIGN_CENTER ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_ALIGN_RIGHT ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_ALIGN_UP ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_ALIGN_MIDDLE ) ||
-//			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_ALIGN_DOWN ) )
-		{
-			sal_Bool bText = sal_False;
-			sal_Bool bLine = sal_False;
-			sal_Bool bGroup = sal_False;
-			sal_Bool bGraf = sal_False;
-			sal_Bool bDrawObj = sal_False;
-			sal_Bool b3dObj = sal_False;
-			sal_Bool bTitOutText = sal_False;
+			bool bText = false;
+			bool bLine = false;
+			bool bGroup = false;
+			bool bGraf = false;
+			bool bDrawObj = false;
+			bool b3dObj = false;
+			bool bTitOutText = false;
 			bool bTable = false;
-			sal_Bool bMeasureObj = sal_False;
-			sal_Bool bEdgeObj = sal_False; // Connector
-			sal_Bool bE3dCompoundObject = sal_False;
+			bool bMeasureObj = false;
+			bool bEdgeObj = false; // Connector
+			bool bE3dCompoundObject = false;
 
-			for( sal_uLong i = 0;
-				 i < nMarkCount && !bText && i < 50;
-				 i++ )
+			for( sal_uLong i = 0; i < aSelection.size() && !bText && i < 50; i++ )
 			{
-				SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-				sal_uInt32 nInv = pObj->GetObjInventor();
-				sal_uInt16 nId = pObj->GetObjIdentifier();
+				SdrObject* pObj = aSelection[i];
+				const sal_uInt32 nInv = pObj->GetObjInventor();
+				const sal_uInt16 nId = pObj->GetObjIdentifier();
 
 				if (nInv == SdrInventor)
 				{
 					switch (nId)
 					{
-						case OBJ_TEXT: bText = sal_True; break;
-
-						case OBJ_LINE: bLine = sal_True; break;
-
-						case OBJ_EDGE: bEdgeObj = sal_True; break;
-
-						case OBJ_MEASURE: bMeasureObj = sal_True; break;
-
+						case OBJ_TEXT: bText = true; break;
+						case OBJ_LINE: bLine = true; break;
+						case OBJ_EDGE: bEdgeObj = true; break;
+						case OBJ_MEASURE: bMeasureObj = true; break;
 						case OBJ_RECT:
 						case OBJ_CIRC:
 						case OBJ_FREELINE:
@@ -379,36 +341,24 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 						case OBJ_PATHLINE:
 						case OBJ_SECT:
 						case OBJ_CARC:
-						case OBJ_CCUT: bDrawObj = sal_True; break;
-
-						case OBJ_GRUP: bGroup = sal_True; break;
-
-						case OBJ_GRAF: bGraf = sal_True; break;
-
+						case OBJ_CCUT: bDrawObj = true; break;
+						case OBJ_GRUP: bGroup = true; break;
+						case OBJ_GRAF: bGraf = true; break;
 						case OBJ_TITLETEXT:
-						case OBJ_OUTLINETEXT: bTitOutText = sal_True; break;
+						case OBJ_OUTLINETEXT: bTitOutText = true; break;
 						case OBJ_TABLE: bTable = true; break;
 					}
 				}
 				else if (nInv == E3dInventor)
 				{
-					if(pObj->ISA(E3dScene))
-						b3dObj = sal_True;
-					else if(pObj->ISA(E3dCompoundObject))
-						bE3dCompoundObject = sal_True;
-				}
+					if(dynamic_cast< E3dScene* >(pObj))
+						b3dObj = true;
+					else if(dynamic_cast< E3dCompoundObject* >(pObj))
+						bE3dCompoundObject = true;
 			}
-			/* Kann wohl raus, da jedes(?) Objekt Text enthalten kann
-			if( !bText )
-			{
-				rSet.DisableItem( SID_CHAR_DLG );
-				rSet.DisableItem( SID_PARA_DLG );
-				rSet.DisableItem( SID_CHARMAP );
 			}
-			*/
 			if( bLine && !bText && !bDrawObj &&!b3dObj)
 			{
-				//rSet.DisableItem( SID_ATTRIBUTES_AREA );
 				rSet.DisableItem( SID_ATTR_FILL_STYLE );
 			}
 			if( !bEdgeObj )
@@ -423,7 +373,7 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			}
 
 			if (b3dObj                                        ||
-				 (!mpDrawView->IsConvertToPathObjPossible(sal_False) &&
+				(!mpDrawView->IsConvertToPathObjPossible(false) &&
 				  !mpDrawView->IsShearAllowed()                  &&
 				  !mpDrawView->IsDistortAllowed()) )
 			{
@@ -467,90 +417,85 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 				rSet.DisableItem( SID_BEHIND_OBJ );
 				rSet.DisableItem( SID_REVERSE_ORDER );
 			}
-		}
 
-		if ( !mpDrawView->IsDismantlePossible(sal_False) )
-		{
-			rSet.DisableItem( SID_DISMANTLE );
-		}
-		if ( !mpDrawView->IsDismantlePossible(sal_True) &&
+			if ( !mpDrawView->IsDismantlePossible(false) )
+		    {
+			    rSet.DisableItem( SID_DISMANTLE );
+		    }
+			if ( !mpDrawView->IsDismantlePossible(true) &&
 			 !mpDrawView->IsImportMtfPossible()     &&
 			 !mpDrawView->IsBreak3DObjPossible() )
-		{
-			rSet.DisableItem( SID_BREAK );
-		}
-		if ( !mpDrawView->IsCombinePossible(sal_False) )
-		{
-			rSet.DisableItem( SID_COMBINE );
-			rSet.DisableItem(SID_POLY_MERGE);
-			rSet.DisableItem(SID_POLY_SUBSTRACT);
-			rSet.DisableItem(SID_POLY_INTERSECT);
-		}
-		if ( !mpDrawView->IsCombinePossible(sal_True) )
-		{
-			rSet.DisableItem( SID_CONNECT );
-		}
-		if ( !mpDrawView->IsGroupPossible() )
-		{
-			rSet.DisableItem( SID_GROUP );
-		}
-		if ( !mpDrawView->IsUnGroupPossible() )
-		{
-			rSet.DisableItem( SID_UNGROUP );
-		}
+		    {
+			    rSet.DisableItem( SID_BREAK );
+		    }
+			if ( !mpDrawView->IsCombinePossible(false) )
+		    {
+			    rSet.DisableItem( SID_COMBINE );
+			    rSet.DisableItem(SID_POLY_MERGE);
+			    rSet.DisableItem(SID_POLY_SUBSTRACT);
+			    rSet.DisableItem(SID_POLY_INTERSECT);
+		    }
+			if ( !mpDrawView->IsCombinePossible(true) )
+		    {
+			    rSet.DisableItem( SID_CONNECT );
+		    }
+		    if ( !mpDrawView->IsGroupPossible() )
+		    {
+			    rSet.DisableItem( SID_GROUP );
+		    }
+		    if ( !mpDrawView->IsUnGroupPossible() )
+		    {
+			    rSet.DisableItem( SID_UNGROUP );
+		    }
+	    }
+	    else
+	    {
+			// kein Objekt selektiert
+		    rSet.DisableItem( SID_ENTER_GROUP );
+		    rSet.DisableItem( SID_CUT );
+		    rSet.DisableItem( SID_COPY );
+		    rSet.DisableItem( SID_DELETE );
+		    rSet.DisableItem( SID_ATTR_TRANSFORM );
+
+		    rSet.DisableItem( SID_OBJECT_ALIGN_LEFT );
+		    rSet.DisableItem( SID_OBJECT_ALIGN_CENTER );
+		    rSet.DisableItem( SID_OBJECT_ALIGN_RIGHT );
+		    rSet.DisableItem( SID_OBJECT_ALIGN_UP );
+		    rSet.DisableItem( SID_OBJECT_ALIGN_MIDDLE );
+		    rSet.DisableItem( SID_OBJECT_ALIGN_DOWN );
+
+		    rSet.DisableItem( SID_FRAME_TO_TOP );
+		    rSet.DisableItem( SID_MOREFRONT );
+		    rSet.DisableItem( SID_MOREBACK );
+		    rSet.DisableItem( SID_FRAME_TO_BOTTOM );
+		    rSet.DisableItem( SID_BEFORE_OBJ );
+		    rSet.DisableItem( SID_BEHIND_OBJ );
+		    rSet.DisableItem( SID_CONVERT );
+
+		    rSet.DisableItem( SID_SIZE_OPTIMAL );
+		    rSet.DisableItem( SID_LINEEND_POLYGON );
+		    rSet.DisableItem( SID_COPYOBJECTS );
+		    rSet.DisableItem( SID_HORIZONTAL );
+		    rSet.DisableItem( SID_VERTICAL );
+		    rSet.DisableItem( SID_GROUP );
+		    rSet.DisableItem( SID_UNGROUP );
+		    rSet.DisableItem( SID_NAME_GROUP );
+
+		    rSet.DisableItem( SID_OBJECT_TITLE_DESCRIPTION );
+
+		    rSet.DisableItem( SID_DISMANTLE );
+		    rSet.DisableItem( SID_BREAK );
+		    rSet.DisableItem( SID_COMBINE );
+            rSet.DisableItem(SID_DISTRIBUTE_DLG);
+            rSet.DisableItem(SID_POLY_MERGE);
+            rSet.DisableItem(SID_POLY_SUBSTRACT);
+            rSet.DisableItem(SID_POLY_INTERSECT);
+		    rSet.DisableItem( SID_CONNECT );
+		    rSet.DisableItem( SID_ANIMATION_EFFECTS );
+		    rSet.DisableItem( SID_MODIFY_FIELD );
+		    rSet.DisableItem (SID_OBJECT_SHEAR);
+	    }
 	}
-	// kein Objekt selektiert
-	else
-	{
-//        rSet.ClearItem( SID_BEZIER_EDIT );
-
-		rSet.DisableItem( SID_ENTER_GROUP );
-		rSet.DisableItem( SID_CUT );
-		rSet.DisableItem( SID_COPY );
-		rSet.DisableItem( SID_DELETE );
-		rSet.DisableItem( SID_ATTR_TRANSFORM );
-
-		rSet.DisableItem( SID_OBJECT_ALIGN_LEFT );
-		rSet.DisableItem( SID_OBJECT_ALIGN_CENTER );
-		rSet.DisableItem( SID_OBJECT_ALIGN_RIGHT );
-		rSet.DisableItem( SID_OBJECT_ALIGN_UP );
-		rSet.DisableItem( SID_OBJECT_ALIGN_MIDDLE );
-		rSet.DisableItem( SID_OBJECT_ALIGN_DOWN );
-
-		rSet.DisableItem( SID_FRAME_TO_TOP );
-		rSet.DisableItem( SID_MOREFRONT );
-		rSet.DisableItem( SID_MOREBACK );
-		rSet.DisableItem( SID_FRAME_TO_BOTTOM );
-		rSet.DisableItem( SID_BEFORE_OBJ );
-		rSet.DisableItem( SID_BEHIND_OBJ );
-		rSet.DisableItem( SID_CONVERT );
-
-//		rSet.DisableItem( SID_BEZIER_EDIT );
-		rSet.DisableItem( SID_SIZE_OPTIMAL );
-		rSet.DisableItem( SID_LINEEND_POLYGON );
-		rSet.DisableItem( SID_COPYOBJECTS );
-		rSet.DisableItem( SID_HORIZONTAL );
-		rSet.DisableItem( SID_VERTICAL );
-		rSet.DisableItem( SID_GROUP );
-		rSet.DisableItem( SID_UNGROUP );
-		rSet.DisableItem( SID_NAME_GROUP );
-
-		// #i68101#
-		rSet.DisableItem( SID_OBJECT_TITLE_DESCRIPTION );
-
-		rSet.DisableItem( SID_DISMANTLE );
-		rSet.DisableItem( SID_BREAK );
-		rSet.DisableItem( SID_COMBINE );
-        rSet.DisableItem(SID_DISTRIBUTE_DLG);
-        rSet.DisableItem(SID_POLY_MERGE);
-        rSet.DisableItem(SID_POLY_SUBSTRACT);
-        rSet.DisableItem(SID_POLY_INTERSECT);
-		rSet.DisableItem( SID_CONNECT );
-		rSet.DisableItem( SID_ANIMATION_EFFECTS );
-		rSet.DisableItem( SID_MODIFY_FIELD );
-		rSet.DisableItem (SID_OBJECT_SHEAR);
-	}
-
 }
 
 

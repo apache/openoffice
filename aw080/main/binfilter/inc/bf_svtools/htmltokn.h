@@ -37,7 +37,7 @@
 #include <sal/types.h>
 #endif
 #ifndef _SOLAR_h
-#include <tools/solar.h>
+#include <bf_tools/bf_solar.h>
 #endif
 
 class String;

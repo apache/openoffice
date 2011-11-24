@@ -28,7 +28,7 @@
 #include <limits.h>
 
 #ifndef _RTTI_HXX
-#include <tools/rtti.hxx>				// for RTTI of SwIndexReg
+#include <bf_tools/rtti.hxx>				// for RTTI of SwIndexReg
 #endif
 /*N*/ #include <tools/debug.hxx> //for stripping
 namespace binfilter {

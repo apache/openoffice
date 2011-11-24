@@ -68,8 +68,7 @@ namespace drawinglayer
 						// create logic object range; do NOT use ObjectTransformation for this 
                         // (rViewInformation2D.getObjectTransformation()), only the logic object 
                         // size is wanted
-						basegfx::B2DRange aObjectRange(0.0, 0.0, 1.0, 1.0);
-						aObjectRange.transform(rChartCandidate.getTransformation());
+						const basegfx::B2DRange aObjectRange(rChartCandidate.getTransformation() * basegfx::B2DRange::getUnitB2DRange());
 						const Rectangle aRectangle(
 								(sal_Int32)aObjectRange.getMinX(), (sal_Int32)aObjectRange.getMinY(), 
 								(sal_Int32)aObjectRange.getMaxX(), (sal_Int32)aObjectRange.getMaxY());
@@ -90,7 +89,8 @@ namespace drawinglayer
                             // changed size what really will change the chart model and leads
                             // to re-layouts and re-formattings
                             const MapMode aOldMapMode(rOutputDevice.GetMapMode());
-					        basegfx::B2DVector aVTScale, aScale, aTranslate;
+					        basegfx::B2DVector aVTScale, aScale;
+					        basegfx::B2DPoint aTranslate;
 					        double fRotate, fShearX;
 
                             // get basic scaling with current MapMode (aVTScale), containing

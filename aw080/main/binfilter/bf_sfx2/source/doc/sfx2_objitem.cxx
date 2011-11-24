@@ -39,7 +39,7 @@ namespace binfilter {
 
 /*N*/ int SfxObjectShellItem::operator==( const SfxPoolItem &rItem ) const
 /*N*/ {
-/*N*/ 	 return PTR_CAST(SfxObjectShellItem, &rItem)->pObjSh == pObjSh;
+/*N*/ 	 return dynamic_cast< const SfxObjectShellItem* >( &rItem)->pObjSh == pObjSh;
 /*N*/ }
 
 //--------------------------------------------------------------------
@@ -67,7 +67,7 @@ namespace binfilter {
 
 /*N*/ int SfxObjectItem::operator==( const SfxPoolItem &rItem ) const
 /*N*/ {
-/*N*/ 	 SfxObjectItem *pOther = PTR_CAST(SfxObjectItem, &rItem);
+/*N*/ 	 const SfxObjectItem *pOther = dynamic_cast< const SfxObjectItem* >( &rItem);
 /*N*/      return pOther->_pSh == _pSh;
 /*N*/ }
 

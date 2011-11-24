@@ -1210,7 +1210,7 @@ void SwXFrame::setPropertyValue(const OUString& rPropertyName, const uno::Any& a
                 // see SwFEShell::SetFrmFmt( SwFrmFmt *pNewFmt, sal_Bool bKeepOrient, Point* pDocPos )
                 SwFlyFrm *pFly = 0;
                 const SwFrmFmt* pFmtXX = pFmt;
-                if (PTR_CAST(SwFlyFrmFmt, pFmtXX))
+                if (dynamic_cast< const SwFlyFrmFmt* >( pFmtXX))
                     pFly = ((SwFlyFrmFmt*)pFmtXX)->GetFrm();
                 SfxItemSet* pSet = 0;
                 if (pFly)
@@ -1406,7 +1406,7 @@ void SwXFrame::setPropertyValue(const OUString& rPropertyName, const uno::Any& a
 
                 // see SwFEShell::SetFlyFrmAttr( SfxItemSet& rSet )
                 SwFlyFrm *pFly = 0;
-                if (PTR_CAST(SwFlyFrmFmt, pFmt))
+                if (dynamic_cast< SwFlyFrmFmt* >( pFmt))
                     pFly = ((SwFlyFrmFmt*)pFmt)->GetFrm();
                 if (pFly)
                 {

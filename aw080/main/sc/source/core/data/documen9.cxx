@@ -47,6 +47,7 @@
 #include <sfx2/printer.hxx>
 #include <unotools/saveopt.hxx>
 #include <unotools/pathoptions.hxx>
+#include <svx/svdlegacy.hxx>
 
 #include "document.hxx"
 #include "docoptio.hxx"
@@ -108,17 +109,12 @@ void ScDocument::TransferDrawPage(ScDocument* pSrcDoc, SCTAB nSrcPos, SCTAB nDes
 			while (pOldObject)
 			{
                 // #i112034# do not copy internal objects (detective) and note captions
-                if ( pOldObject->GetLayer() != SC_LAYER_INTERN && !ScDrawLayer::IsNoteCaption( pOldObject ) )
+                if ( pOldObject->GetLayer() != SC_LAYER_INTERN && !ScDrawLayer::IsNoteCaption( *pOldObject ) )
                 {
                     // #116235#
-                    SdrObject* pNewObject = pOldObject->Clone();
-                    // SdrObject* pNewObject = pOldObject->Clone( pNewPage, pDrawLayer );
-                    pNewObject->SetModel(pDrawLayer);
-                    pNewObject->SetPage(pNewPage);
+					SdrObject* pNewObject = pOldObject->CloneSdrObject();
 
-                    pNewObject->NbcMove(Size(0,0));
-                    pNewPage->InsertObject( pNewObject );
-
+					pNewPage->InsertObjectToSdrObjList( pNewObject );
                     if (pDrawLayer->IsRecording())
                         pDrawLayer->AddCalcUndo( new SdrUndoInsertObj( *pNewObject ) );
                 }
@@ -129,7 +125,7 @@ void ScDocument::TransferDrawPage(ScDocument* pSrcDoc, SCTAB nSrcPos, SCTAB nDes
 	}
 
     //	#71726# make sure the data references of charts are adapted
-	//	(this must be after InsertObject!)
+	//	(this must be after InsertObjectToSdrObjList!)
     ScChartHelper::AdjustRangesOfChartsOnDestinationPage( pSrcDoc, this, nSrcPos, nDestPos );
 }
 
@@ -196,6 +192,7 @@ void ScDocument::UpdateDrawLanguages()
 	if (pDrawLayer)
 	{
 		SfxItemPool& rDrawPool = pDrawLayer->GetItemPool();
+		
 		rDrawPool.SetPoolDefaultItem( SvxLanguageItem( eLanguage, EE_CHAR_LANGUAGE ) );
 		rDrawPool.SetPoolDefaultItem( SvxLanguageItem( eCjkLanguage, EE_CHAR_LANGUAGE_CJK ) );
 		rDrawPool.SetPoolDefaultItem( SvxLanguageItem( eCtlLanguage, EE_CHAR_LANGUAGE_CTL ) );
@@ -223,7 +220,7 @@ void ScDocument::UpdateDrawPrinter()
 
 //		OutputDevice* pRefDev = GetPrinter();
 //		pRefDev->SetMapMode( MAP_100TH_MM );
-		pDrawLayer->SetRefDevice(GetRefDevice());
+		pDrawLayer->SetReferenceDevice(GetRefDevice());
 	}
 }
 
@@ -322,7 +319,7 @@ sal_Bool ScDocument::HasOLEObjectsInArea( const ScRange& rRange, const ScMarkDat
 				while (pObject)
 				{
 					if ( pObject->GetObjIdentifier() == OBJ_OLE2 &&
-							aMMRect.IsInside( pObject->GetCurrentBoundRect() ) )
+							aMMRect.IsInside( sdr::legacy::GetBoundRect(*pObject) ) )
 						return sal_True;
 
 					pObject = aIter.Next();
@@ -348,13 +345,14 @@ void ScDocument::StartAnimations( SCTAB nTab, Window* pWin )
 	SdrObject* pObject = aIter.Next();
 	while (pObject)
 	{
-		if (pObject->ISA(SdrGrafObj))
+		SdrGrafObj* pGrafObj = dynamic_cast< SdrGrafObj* >(pObject);
+		
+		if (pGrafObj)
 		{
-			SdrGrafObj* pGrafObj = (SdrGrafObj*)pObject;
 			if ( pGrafObj->IsAnimated() )
 			{
-				const Rectangle& rRect = pGrafObj->GetCurrentBoundRect();
-				pGrafObj->StartAnimation( pWin, rRect.TopLeft(), rRect.GetSize() );
+				const Rectangle aRect = sdr::legacy::GetBoundRect(*pGrafObj);
+				pGrafObj->StartAnimation( pWin, aRect.TopLeft(), aRect.GetSize() );
 			}
 		}
 		pObject = aIter.Next();
@@ -383,7 +381,7 @@ void ScDocument::StartAnimations( SCTAB nTab, Window* pWin )
 //UNUSED2008-05                  {
 //UNUSED2008-05                      bAnyIntObj = sal_True;  // for all internal objects, including detective
 //UNUSED2008-05
-//UNUSED2008-05                      if ( pObject->ISA( SdrCaptionObj ) )
+//UNUSED2008-05                      if ( dynamic_cast< SdrCaptionObj* >(pObject) )
 //UNUSED2008-05                      {
 //UNUSED2008-05                          ScDrawObjData* pData = ScDrawLayer::GetObjData( pObject );
 //UNUSED2008-05                          if ( pData )
@@ -433,7 +431,7 @@ sal_Bool ScDocument::HasBackgroundDraw( SCTAB nTab, const Rectangle& rMMRect )
 	SdrObject* pObject = aIter.Next();
 	while (pObject && !bFound)
 	{
-		if ( pObject->GetLayer() == SC_LAYER_BACK && pObject->GetCurrentBoundRect().IsOver( rMMRect ) )
+		if ( pObject->GetLayer() == SC_LAYER_BACK && sdr::legacy::GetBoundRect(*pObject).IsOver( rMMRect ) )
 			bFound = sal_True;
 		pObject = aIter.Next();
 	}
@@ -460,7 +458,7 @@ sal_Bool ScDocument::HasAnyDraw( SCTAB nTab, const Rectangle& rMMRect )
 	SdrObject* pObject = aIter.Next();
 	while (pObject && !bFound)
 	{
-		if ( pObject->GetCurrentBoundRect().IsOver( rMMRect ) )
+		if ( sdr::legacy::GetBoundRect(*pObject).IsOver( rMMRect ) )
 			bFound = sal_True;
 		pObject = aIter.Next();
 	}
@@ -474,7 +472,7 @@ void ScDocument::EnsureGraphicNames()
 		pDrawLayer->EnsureGraphicNames();
 }
 
-SdrObject* ScDocument::GetObjectAtPoint( SCTAB nTab, const Point& rPos )
+SdrObject* ScDocument::GetObjectAtPoint( SCTAB nTab, const basegfx::B2DPoint& rPos, const SdrView* pSdrView )
 {
 	//	fuer Drag&Drop auf Zeichenobjekt
 
@@ -489,7 +487,7 @@ SdrObject* ScDocument::GetObjectAtPoint( SCTAB nTab, const Point& rPos )
 			SdrObject* pObject = aIter.Next();
 			while (pObject)
 			{
-				if ( pObject->GetCurrentBoundRect().IsInside(rPos) )
+				if ( pObject->getObjectRange(pSdrView).isInside(rPos) )
 				{
 					//	Intern interessiert gar nicht
 					//	Objekt vom Back-Layer nur, wenn kein Objekt von anderem Layer getroffen
@@ -606,9 +604,9 @@ sal_Bool ScDocument::HasControl( SCTAB nTab, const Rectangle& rMMRect )
 			SdrObject* pObject = aIter.Next();
 			while (pObject && !bFound)
 			{
-				if (pObject->ISA(SdrUnoObj))
+				if (dynamic_cast< SdrUnoObj* >(pObject))
 				{
-					Rectangle aObjRect = pObject->GetLogicRect();
+					const Rectangle aObjRect(sdr::legacy::GetLogicRect(*pObject));
 					if ( aObjRect.IsOver( rMMRect ) )
 						bFound = sal_True;
 				}
@@ -633,9 +631,9 @@ void ScDocument::InvalidateControls( Window* pWin, SCTAB nTab, const Rectangle& 
 			SdrObject* pObject = aIter.Next();
 			while (pObject)
 			{
-				if (pObject->ISA(SdrUnoObj))
+				if (dynamic_cast< SdrUnoObj* >(pObject))
 				{
-					Rectangle aObjRect = pObject->GetLogicRect();
+					const Rectangle aObjRect(sdr::legacy::GetLogicRect(*pObject));
 					if ( aObjRect.IsOver( rMMRect ) )
 					{
 						//	Uno-Controls zeichnen sich immer komplett, ohne Ruecksicht
@@ -671,7 +669,7 @@ sal_Bool ScDocument::HasDetectiveObjects(SCTAB nTab) const
 			while (pObject && !bFound)
 			{
 				// anything on the internal layer except captions (annotations)
-                if ( (pObject->GetLayer() == SC_LAYER_INTERN) && !ScDrawLayer::IsNoteCaption( pObject ) )
+                if ( (pObject->GetLayer() == SC_LAYER_INTERN) && !ScDrawLayer::IsNoteCaption( *pObject ) )
 					bFound = sal_True;
 
 				pObject = aIter.Next();

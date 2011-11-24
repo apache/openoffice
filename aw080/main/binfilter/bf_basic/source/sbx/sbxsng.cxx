@@ -134,7 +134,7 @@ start:
 			break;
 		case SbxOBJECT:
 		{
-			SbxValue* pVal = PTR_CAST(SbxValue,p->pObj);
+			SbxValue* pVal = dynamic_cast< SbxValue* >( p->pObj);
 			if( pVal )
 				nRes = pVal->GetSingle();
 			else
@@ -242,7 +242,7 @@ start:
 		}
 		case SbxOBJECT:
 		{
-			SbxValue* pVal = PTR_CAST(SbxValue,p->pObj);
+			SbxValue* pVal = dynamic_cast< SbxValue* >( p->pObj);
 			if( pVal )
 				pVal->PutSingle( n );
 			else

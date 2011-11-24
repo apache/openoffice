@@ -41,7 +41,7 @@ namespace drawinglayer
 	{
         basegfx::B3DRange SdrPrimitive3D::getStandard3DRange() const
 		{
-			basegfx::B3DRange aUnitRange(0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
+			basegfx::B3DRange aUnitRange(basegfx::B3DRange::getUnitB3DRange());
 			aUnitRange.transform(getTransform());
 
 			if(!getSdrLFSAttribute().getLine().isDefault())

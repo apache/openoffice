@@ -32,12 +32,19 @@
 #ifndef _STREAM_HXX
 #include <tools/stream.hxx>
 #endif
+#include <bf_tools/rtti.hxx>
 
 namespace binfilter
 {
 
 //============================================================================
-class SvSyncLockBytes: public SvOpenLockBytes
+class BfSvOpenLockBytes : public SvOpenLockBytes
+{
+public:
+	TYPEINFO();
+};
+
+class SvSyncLockBytes: public BfSvOpenLockBytes
 {
 	SvAsyncLockBytesRef m_xAsyncLockBytes;
 

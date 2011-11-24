@@ -44,8 +44,6 @@
 //------------------------------
 // class XLineTransparenceItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY(XLineTransparenceItem, SfxUInt16Item);
-
 /*************************************************************************
 |*
 |*	  XLineTransparenceItem::XLineTransparenceItem(sal_uInt16)
@@ -137,10 +135,6 @@ SfxItemPresentation XLineTransparenceItem::GetPresentation
 //-----------------------
 // class XLineJointItem	-
 //-----------------------
-
-TYPEINIT1_AUTOFACTORY(XLineJointItem, SfxEnumItem);
-
-// -----------------------------------------------------------------------------
 
 XLineJointItem::XLineJointItem( XLineJoint eLineJoint ) :
 	SfxEnumItem(XATTR_LINEJOINT, sal::static_int_cast< sal_uInt16 >(eLineJoint))
@@ -312,8 +306,6 @@ sal_uInt16 XLineJointItem::GetValueCount() const
 //------------------------------
 // class XFillTransparenceItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY(XFillTransparenceItem, SfxUInt16Item);
-
 /*************************************************************************
 |*
 |*	  XFillTransparenceItem::XFillTransparenceItem(sal_uInt16)
@@ -405,8 +397,6 @@ SfxItemPresentation XFillTransparenceItem::GetPresentation
 //------------------------------
 // class XFormTextShadowTranspItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextShadowTranspItem, SfxUInt16Item);
-
 /*************************************************************************
 |*
 |*	  XFormTextShadowTranspItem::XFormTextShadowTranspItem(sal_uInt16)
@@ -471,8 +461,6 @@ SfxPoolItem* XFormTextShadowTranspItem::Create(SvStream& rIn, sal_uInt16 /*nVer*
 //------------------------------
 // class XFillGradientStepCountItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY(XGradientStepCountItem, SfxUInt16Item);
-
 /*************************************************************************
 |*
 |*	  XGradientStepCountItem::XGradientStepCountItem( sal_uInt16 )
@@ -564,8 +552,6 @@ SfxItemPresentation XGradientStepCountItem::GetPresentation
 //------------------------------
 // class XFillBmpTileItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpTileItem, SfxBoolItem );
-
 /*************************************************************************
 |*
 |*
@@ -666,8 +652,6 @@ SfxItemPresentation XFillBmpTileItem::GetPresentation
 //------------------------------
 // class XFillBmpTilePosItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpPosItem, SfxEnumItem );
-
 /*************************************************************************
 |*
 |*
@@ -779,8 +763,6 @@ sal_uInt16 XFillBmpPosItem::GetValueCount() const
 //------------------------------
 // class XFillBmpTileSizeXItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpSizeXItem, SfxMetricItem );
-
 /*************************************************************************
 |*
 |*
@@ -886,7 +868,7 @@ SfxItemPresentation XFillBmpSizeXItem::GetPresentation
 |*
 \*************************************************************************/
 
-FASTBOOL XFillBmpSizeXItem::HasMetrics() const
+bool XFillBmpSizeXItem::HasMetrics() const
 {
 	return GetValue() > 0L;
 }
@@ -895,8 +877,6 @@ FASTBOOL XFillBmpSizeXItem::HasMetrics() const
 //------------------------------
 // class XFillBmpTileSizeYItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpSizeYItem, SfxMetricItem );
-
 /*************************************************************************
 |*
 |*
@@ -1002,7 +982,7 @@ SfxItemPresentation XFillBmpSizeYItem::GetPresentation
 |*
 \*************************************************************************/
 
-FASTBOOL XFillBmpSizeYItem::HasMetrics() const
+bool XFillBmpSizeYItem::HasMetrics() const
 {
 	return GetValue() > 0L;
 }
@@ -1011,8 +991,6 @@ FASTBOOL XFillBmpSizeYItem::HasMetrics() const
 //------------------------------
 // class XFillBmpTileLogItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpSizeLogItem, SfxBoolItem );
-
 /*************************************************************************
 |*
 |*
@@ -1113,8 +1091,6 @@ SfxItemPresentation XFillBmpSizeLogItem::GetPresentation
 //------------------------------
 // class XFillBmpTileOffXItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpTileOffsetXItem, SfxUInt16Item );
-
 /*************************************************************************
 |*
 |*
@@ -1215,8 +1191,6 @@ SfxItemPresentation XFillBmpTileOffsetXItem::GetPresentation
 //------------------------------
 // class XFillBmpTileOffYItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpTileOffsetYItem, SfxUInt16Item );
-
 /*************************************************************************
 |*
 |*
@@ -1317,8 +1291,6 @@ SfxItemPresentation XFillBmpTileOffsetYItem::GetPresentation
 //------------------------------
 // class XFillBmpStretchItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpStretchItem, SfxBoolItem );
-
 /*************************************************************************
 |*
 |*
@@ -1419,8 +1391,6 @@ SfxItemPresentation XFillBmpStretchItem::GetPresentation
 //------------------------------
 // class XFillBmpTileOffPosXItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpPosOffsetXItem, SfxUInt16Item );
-
 /*************************************************************************
 |*
 |*
@@ -1521,8 +1491,6 @@ SfxItemPresentation XFillBmpPosOffsetXItem::GetPresentation
 //------------------------------
 // class XFillBmpTileOffPosYItem
 //------------------------------
-TYPEINIT1_AUTOFACTORY( XFillBmpPosOffsetYItem, SfxUInt16Item );
-
 /*************************************************************************
 |*
 |*
@@ -1622,8 +1590,6 @@ SfxItemPresentation XFillBmpPosOffsetYItem::GetPresentation
 //--------------------------
 // class XFillBackgroundItem
 //--------------------------
-TYPEINIT1_AUTOFACTORY(XFillBackgroundItem, SfxBoolItem);
-
 /*************************************************************************
 |*
 |*	  XFillBackgroundItem::XFillBackgroundItem( sal_Bool )

@@ -134,6 +134,7 @@
 // --> OD 2005-08-29 #125370#
 #include <layouter.hxx>
 // <--
+#include <svx/fmmodel.hxx>
 
 using namespace ::com::sun::star;
 using ::rtl::OUString;
@@ -504,7 +505,7 @@ void SwDoc::setPrinter(/*[in]*/ SfxPrinter *pP,/*[in]*/ bool bDeleteOld,/*[in]*/
         }
 
         if ( pDrawModel && !get( IDocumentSettingAccess::USE_VIRTUAL_DEVICE ) )
-            pDrawModel->SetRefDevice( pPrt );
+            pDrawModel->SetReferenceDevice( pPrt );
     }
 
     if ( bCallPrtDataChanged &&
@@ -535,7 +536,7 @@ void SwDoc::setVirtualDevice(/*[in]*/ VirtualDevice* pVd,/*[in]*/ bool bDeleteOl
         pVirDev = pVd;
 
         if ( pDrawModel && get( IDocumentSettingAccess::USE_VIRTUAL_DEVICE ) )
-            pDrawModel->SetRefDevice( pVirDev );
+            pDrawModel->SetReferenceDevice( pVirDev );
     }
 }
 
@@ -573,7 +574,7 @@ void SwDoc::setReferenceDeviceType(/*[in]*/ bool bNewVirtual,/*[in]*/ bool bNewH
                 pMyVirDev->SetReferenceDevice( VirtualDevice::REFDEV_MODE_MSO1 );
 
             if( pDrawModel )
-                pDrawModel->SetRefDevice( pMyVirDev );
+                pDrawModel->SetReferenceDevice( pMyVirDev );
         }
         else
         {
@@ -586,7 +587,7 @@ void SwDoc::setReferenceDeviceType(/*[in]*/ bool bNewVirtual,/*[in]*/ bool bNewH
             SfxPrinter* pPrinter = getPrinter( true );
             // <--
             if( pDrawModel )
-                pDrawModel->SetRefDevice( pPrinter );
+                pDrawModel->SetReferenceDevice( pPrinter );
         }
 
         set(IDocumentSettingAccess::USE_VIRTUAL_DEVICE, bNewVirtual );
@@ -2364,7 +2365,7 @@ bool SwDoc::HasInvisibleContent() const
     sal_Bool bRet = sal_False;
 
     SwClientIter aIter( *GetSysFldType( RES_HIDDENPARAFLD ) );
-    if( aIter.First( TYPE( SwFmtFld ) ) )
+    if( aIter.First( typeid( SwFmtFld ) ) )
         bRet = sal_True;
 
     //
@@ -2538,7 +2539,7 @@ bool SwDoc::LinksUpdated() const
         if( pLnk &&
             ( OBJECT_CLIENT_GRF == pLnk->GetObjType() ||
               OBJECT_CLIENT_FILE == pLnk->GetObjType() ) &&
-            pLnk->ISA( SwBaseLink ) )
+            dynamic_cast< SwBaseLink* >(pLnk) )
         {
                 ::sfx2::SvBaseLinkRef xLink = pLnk;
 
@@ -2639,10 +2640,12 @@ void SwDoc::ChgTOX(SwTOXBase & rTOX, const SwTOXBase & rNew)
 
     rTOX = rNew;
 
-    if (rTOX.ISA(SwTOXBaseSection))
+	SwTOXBaseSection* pSwTOXBaseSection = dynamic_cast< SwTOXBaseSection* >(&rTOX);
+    
+	if (pSwTOXBaseSection)
     {
-        static_cast<SwTOXBaseSection &>(rTOX).Update();
-        static_cast<SwTOXBaseSection &>(rTOX).UpdatePageNum();
+        pSwTOXBaseSection->Update();
+        pSwTOXBaseSection->UpdatePageNum();
     }
 }
 

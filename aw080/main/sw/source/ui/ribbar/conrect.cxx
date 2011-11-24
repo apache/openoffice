@@ -27,9 +27,7 @@
 
 #include <sfx2/bindings.hxx>
 #include <svx/htmlmode.hxx>
-#include <svx/sdtacitm.hxx>
 #include <svx/svdobj.hxx>
-#include <svx/sdtagitm.hxx>
 #include <svx/sdtakitm.hxx>
 #include <svx/sdtaditm.hxx>
 #include <svx/sdtaaitm.hxx>
@@ -77,7 +75,7 @@ sal_Bool ConstRectangle::MouseButtonDown(const MouseEvent& rMEvt)
         if (m_pView->IsDrawSelMode())
 		{
             m_pView->FlipDrawSelMode();
-            m_pSh->GetDrawView()->SetFrameDragSingles(m_pView->IsDrawSelMode());
+            m_pSh->GetDrawView()->SetFrameHandles(m_pView->IsDrawSelMode());
 		}
 	}
 	return (bReturn);
@@ -97,9 +95,8 @@ sal_Bool ConstRectangle::MouseButtonUp(const MouseEvent& rMEvt)
 	if( bRet )
 	{
         SdrView *pSdrView = m_pSh->GetDrawView();
-		const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-		SdrObject* pObj = rMarkList.GetMark(0) ? rMarkList.GetMark(0)->GetMarkedSdrObj()
-											   : 0;
+		SdrObject* pObj = pSdrView->getSelectedIfSingle();
+
         switch( m_pWin->GetSdrDrawMode() )
 		{
 		case OBJ_TEXT:
@@ -110,39 +107,43 @@ sal_Bool ConstRectangle::MouseButtonUp(const MouseEvent& rMEvt)
 				if( pObj )
 				{
 					// die fuer das Scrollen benoetigten Attribute setzen
-					SfxItemSet aItemSet( pSdrView->GetModel()->GetItemPool(),
+					SfxItemSet aItemSet( pObj->GetObjectItemPool(),
 										SDRATTR_MISC_FIRST, SDRATTR_MISC_LAST);
 
-					aItemSet.Put( SdrTextAutoGrowWidthItem( sal_False ) );
-					aItemSet.Put( SdrTextAutoGrowHeightItem( sal_False ) );
+					aItemSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, false) );
+					aItemSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWHEIGHT, false) );
 					aItemSet.Put( SdrTextAniKindItem( SDRTEXTANI_SCROLL ) );
 					aItemSet.Put( SdrTextAniDirectionItem( SDRTEXTANI_LEFT ) );
-					aItemSet.Put( SdrTextAniCountItem( 0 ) );
+					aItemSet.Put( SfxUInt16Item(SDRATTR_TEXT_ANICOUNT, 0 ) );
 					aItemSet.Put( SdrTextAniAmountItem(
                             (sal_Int16)m_pWin->PixelToLogic(Size(2,1)).Width()) );
 
 					pObj->SetMergedItemSetAndBroadcast(aItemSet);
 				}
 			}
-			else if(mbVertical && pObj && pObj->ISA(SdrTextObj))
+			else if(mbVertical)
+			{
+				SdrTextObj* pText = dynamic_cast< SdrTextObj* >(pObj);
+				
+				if(pText)
 			{
 				// #93382#
-				SdrTextObj* pText = (SdrTextObj*)pObj;
-				SfxItemSet aSet(pSdrView->GetModel()->GetItemPool());
+					SfxItemSet aSet(pText->GetObjectItemPool());
 
-				pText->SetVerticalWriting(sal_True);
+					pText->SetVerticalWriting(true);
 
-				aSet.Put(SdrTextAutoGrowWidthItem(sal_True));
-				aSet.Put(SdrTextAutoGrowHeightItem(sal_False));
+					aSet.Put(SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, true));
+					aSet.Put(SdrOnOffItem(SDRATTR_TEXT_AUTOGROWHEIGHT, false));
 				aSet.Put(SdrTextVertAdjustItem(SDRTEXTVERTADJUST_TOP));
 				aSet.Put(SdrTextHorzAdjustItem(SDRTEXTHORZADJUST_RIGHT));
 
 				pText->SetMergedItemSet(aSet);
 			}
+			}
+
 			if( pObj )
 			{
-				SdrPageView* pPV = pSdrView->GetSdrPageView();
-                m_pView->BeginTextEdit( pObj, pPV, m_pWin, sal_True );
+                m_pView->BeginTextEdit( pObj, m_pWin, sal_True );
 			}
             m_pView->LeaveDrawCreate();  // In Selektionsmode wechseln
             m_pSh->GetView().GetViewFrame()->GetBindings().Invalidate(SID_INSERT_DRAW);

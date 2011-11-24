@@ -88,7 +88,7 @@ namespace com { namespace sun { namespace star {
 #include <i18npool/lang.h>
 #endif
 
-#include <tools/rtti.hxx>	// wegen typedef TypeId
+#include <bf_tools/rtti.hxx>	// wegen typedef TypeId
 namespace binfilter {
 /** values for GetAttribs
 */

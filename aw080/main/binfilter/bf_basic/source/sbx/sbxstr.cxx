@@ -86,7 +86,7 @@ XubString ImpGetString( const SbxValues* p )
 			break;
 		case SbxOBJECT:
 		{
-			SbxValue* pVal = PTR_CAST(SbxValue,p->pObj);
+			SbxValue* pVal = dynamic_cast< SbxValue* >( p->pObj);
 			if( pVal )
 				aRes = pVal->GetString();
 			else
@@ -207,7 +207,7 @@ void ImpPutString( SbxValues* p, const XubString* n )
 			break;
 		case SbxOBJECT:
 		{
-			SbxValue* pVal = PTR_CAST(SbxValue,p->pObj);
+			SbxValue* pVal = dynamic_cast< SbxValue* >( p->pObj);
 			if( pVal )
 				pVal->PutString( *n );
 			else

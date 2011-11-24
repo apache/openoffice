@@ -653,7 +653,7 @@ void FrameworkHelper::HandleModeChangeSlot (
     sal_uLong nSlotId, 
     SfxRequest& rRequest)
 {
-    sal_Bool bIsActive = sal_True;
+    bool bIsActive = true;
 
     if ( ! mxConfigurationController.is())
         return;
@@ -669,11 +669,7 @@ void FrameworkHelper::HandleModeChangeSlot (
 			const SfxItemSet* pRequestArguments = rRequest.GetArgs();
 			if (pRequestArguments)
             {
-                SFX_REQUEST_ARG (rRequest, 
-                    pIsActive, 
-                    SfxBoolItem, 
-                    (sal_uInt16)nSlotId,
-                    sal_False);
+                SFX_REQUEST_ARG (rRequest, pIsActive,  SfxBoolItem, (sal_uInt16)nSlotId );
 				bIsActive = pIsActive->GetValue ();
 			}
         }

@@ -326,7 +326,7 @@ using namespace ::binfilter::svxform;//STRIP008 using namespace ::svxform;
 /*N*/         SdrObject* pObj = aIter.Next();
 /*N*/         if (pObj && pObj->GetObjInventor() == FmFormInventor)
 /*N*/         {
-/*N*/             FmFormObj* pFormObj = PTR_CAST(FmFormObj, pObj);
+/*N*/             FmFormObj* pFormObj = dynamic_cast< FmFormObj* >( pObj);
 /*N*/             DBG_ASSERT(!bConnected || pFormObj->GetUnoControlModel().is(), "Controlshape ohne Control");
 /*N*/             if (!bConnected || pFormObj->GetUnoControlModel().is())
 /*N*/                 rList.Insert(pFormObj, LIST_APPEND);

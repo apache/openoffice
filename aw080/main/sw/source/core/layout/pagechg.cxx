@@ -73,6 +73,7 @@
 #include <sortedobjs.hxx>
 #include <switerator.hxx>
 #include <vcl/svapp.hxx>
+#include <svx/svdlegacy.hxx>
 
 using namespace ::com::sun::star;
 
@@ -447,11 +448,11 @@ void MA_FASTCALL lcl_MakeObjs( const SwSpzFrmFmts &rTbl, SwPageFrm *pPage )
 			if ( bSdrObj )
 			{
                 // OD 23.06.2003 #108784# - consider 'virtual' drawing objects
-                SwDrawContact *pContact =
-                            static_cast<SwDrawContact*>(::GetUserCall(pSdrObj));
-                if ( pSdrObj->ISA(SwDrawVirtObj) )
+                SwDrawContact *pContact = static_cast<SwDrawContact*>(::findConnectionToSdrObject(pSdrObj));
+                SwDrawVirtObj* pDrawVirtObj = dynamic_cast< SwDrawVirtObj* >(pSdrObj);
+                
+				if ( pDrawVirtObj )
                 {
-                    SwDrawVirtObj* pDrawVirtObj = static_cast<SwDrawVirtObj*>(pSdrObj);
                     if ( pContact )
                     {
                         pDrawVirtObj->RemoveFromWriterLayout();
@@ -906,10 +907,10 @@ void SwPageFrm::Cut()
 			{
                 // --> OD 2004-06-29 #i28701#
                 SwAnchoredObject* pAnchoredObj = (*GetSortedObjs())[i];
+                SwFlyAtCntFrm* pFly = dynamic_cast< SwFlyAtCntFrm* >(pAnchoredObj);
 
-                if ( pAnchoredObj->ISA(SwFlyAtCntFrm) )
+                if ( pFly )
                 {
-                    SwFlyFrm* pFly = static_cast<SwFlyAtCntFrm*>(pAnchoredObj);
                     SwPageFrm *pAnchPage = pFly->GetAnchorFrm() ?
                                 pFly->AnchorFrm()->FindPageFrm() : 0;
                     if ( pAnchPage && (pAnchPage != this) )
@@ -1021,9 +1022,10 @@ void lcl_PrepFlyInCntRegister( SwCntntFrm *pFrm )
 		{
             // --> OD 2004-06-29 #i28701#
             SwAnchoredObject* pAnchoredObj = (*pFrm->GetDrawObjs())[i];
-            if ( pAnchoredObj->ISA(SwFlyInCntFrm) )
+            SwFlyInCntFrm* pFly = dynamic_cast< SwFlyInCntFrm* >(pAnchoredObj);
+            
+			if ( pFly )
             {
-                SwFlyFrm* pFly = static_cast<SwFlyInCntFrm*>(pAnchoredObj);
                 SwCntntFrm *pCnt = pFly->ContainsCntnt();
                 while ( pCnt )
                 {
@@ -1052,9 +1054,10 @@ void SwPageFrm::PrepareRegisterChg()
 		{
             // --> OD 2004-06-29 #i28701#
             SwAnchoredObject* pAnchoredObj = (*GetSortedObjs())[i];
-            if ( pAnchoredObj->ISA(SwFlyFrm) )
+            SwFlyFrm* pFly = dynamic_cast< SwFlyFrm* >(pAnchoredObj);
+            
+			if ( pFly )
 			{
-                SwFlyFrm *pFly = static_cast<SwFlyFrm*>(pAnchoredObj);
 				pFrm = pFly->ContainsCntnt();
 				while ( pFrm )
 				{
@@ -1841,7 +1844,7 @@ void SwRootFrm::ImplCalcBrowseWidth()
                 // --> OD 2004-06-29 #i28701#
                 SwAnchoredObject* pAnchoredObj = (*pFrm->GetDrawObjs())[i];
                 const SwFrmFmt& rFmt = pAnchoredObj->GetFrmFmt();
-                const sal_Bool bFly = pAnchoredObj->ISA(SwFlyFrm);
+                const bool bFly(dynamic_cast< SwFlyFrm* >(pAnchoredObj));
                 if ((bFly && (WEIT_WECH == pAnchoredObj->GetObjRect().Width()))
                     || rFmt.GetFrmSize().GetWidthPercent())
                 {
@@ -1885,7 +1888,7 @@ void SwRootFrm::ImplCalcBrowseWidth()
                                 //weil sie keine Attribute haben, also durch ihre
                                 //aktuelle Groesse bestimmt werden.
                                 nWidth = pAnchoredObj->GetObjRect().Right() -
-                                         pAnchoredObj->GetDrawObj()->GetAnchorPos().X();
+									basegfx::fround(pAnchoredObj->GetDrawObj()->GetAnchorPos().getX());
                             // <--
                         }
 						break;
@@ -1912,7 +1915,7 @@ void SwRootFrm::StartAllAction()
 	ViewShell *pSh = GetCurrShell();
 	if ( pSh )
 		do
-		{	if ( pSh->ISA( SwCrsrShell ) )
+		{	if ( dynamic_cast< SwCrsrShell* >(pSh) )
 				((SwCrsrShell*)pSh)->StartAction();
 			else
 				pSh->StartAction();
@@ -1929,11 +1932,14 @@ void SwRootFrm::EndAllAction( sal_Bool bVirDev )
 		{
 			const sal_Bool bOldEndActionByVirDev = pSh->IsEndActionByVirDev();
 			pSh->SetEndActionByVirDev( bVirDev );
-			if ( pSh->ISA( SwCrsrShell ) )
+			SwCrsrShell* pSwCrsrShell = dynamic_cast< SwCrsrShell* >(pSh);
+
+			if ( pSwCrsrShell )
 			{
-				((SwCrsrShell*)pSh)->EndAction();
-				((SwCrsrShell*)pSh)->CallChgLnk();
-				if ( pSh->ISA( SwFEShell ) )
+				pSwCrsrShell->EndAction();
+				pSwCrsrShell->CallChgLnk();
+				
+				if ( dynamic_cast< SwFEShell* >(pSh) )
 					((SwFEShell*)pSh)->SetChainMarker();
 			}
 			else
@@ -1956,8 +1962,8 @@ void SwRootFrm::UnoRemoveAllActions()
             if ( !pSh->IsInEndAction() )
             {
                 DBG_ASSERT(!pSh->GetRestoreActions(), "Restore action count is already set!");
-                sal_Bool bCrsr = pSh->ISA( SwCrsrShell );
-                sal_Bool bFE = pSh->ISA( SwFEShell );
+                const bool bCrsr(dynamic_cast< SwCrsrShell* >(pSh));
+                const bool bFE(dynamic_cast< SwFEShell* >(pSh));
                 sal_uInt16 nRestore = 0;
                 while( pSh->ActionCount() )
                 {
@@ -1990,7 +1996,7 @@ void SwRootFrm::UnoRestoreAllActions()
 			sal_uInt16 nActions = pSh->GetRestoreActions();
 			while( nActions-- )
 			{
-				if ( pSh->ISA( SwCrsrShell ) )
+				if ( dynamic_cast< SwCrsrShell* >(pSh) )
 					((SwCrsrShell*)pSh)->StartAction();
 				else
 					pSh->StartAction();
@@ -2030,9 +2036,10 @@ void lcl_MoveAllLowerObjs( SwFrm* pFrm, const Point& rOffset )
 
         SwObjPositioningInProgress aPosInProgress( *pAnchoredObj );
 
-        if ( pAnchoredObj->ISA(SwFlyFrm) )
+        SwFlyFrm* pFlyFrm = dynamic_cast< SwFlyFrm* >(pAnchoredObj);
+
+		if ( pFlyFrm )
         {
-            SwFlyFrm* pFlyFrm( static_cast<SwFlyFrm*>(pAnchoredObj) );
             lcl_MoveAllLowers( pFlyFrm, rOffset );
             pFlyFrm->NotifyDrawObj();
 			// --> let the active embedded object be moved
@@ -2066,18 +2073,24 @@ void lcl_MoveAllLowerObjs( SwFrm* pFrm, const Point& rOffset )
 			}
 			// <--
         }
-        else if ( pAnchoredObj->ISA(SwAnchoredDrawObject) )
+        else
         {
-            SwAnchoredDrawObject* pAnchoredDrawObj( static_cast<SwAnchoredDrawObject*>(pAnchoredObj) );
+			SwAnchoredDrawObject* pAnchoredDrawObj = dynamic_cast< SwAnchoredDrawObject* >(pAnchoredObj);
 
+			if ( pAnchoredDrawObj )
+			{
             // don't touch objects that are not yet positioned:
             const bool bNotYetPositioned = pAnchoredDrawObj->NotYetPositioned();
             if ( bNotYetPositioned )
                 continue;
 
-            const Point aCurrAnchorPos = pAnchoredDrawObj->GetDrawObj()->GetAnchorPos();
-            const Point aNewAnchorPos( ( aCurrAnchorPos + rOffset ) );
-            pAnchoredDrawObj->DrawObj()->SetAnchorPos( aNewAnchorPos );
+				// #i108739#
+				{
+					sdr::legacy::transformSdrObject(*pAnchoredDrawObj->DrawObj(), basegfx::tools::createTranslateB2DHomMatrix(rOffset.X(), rOffset.Y()));
+					pAnchoredDrawObj->DrawObj()->SetAnchorPos(
+						pAnchoredDrawObj->GetDrawObj()->GetAnchorPos() + basegfx::B2DTuple( rOffset.X(), rOffset.Y() ));
+				}
+
             pAnchoredDrawObj->SetLastObjRect( pAnchoredDrawObj->GetObjRect().SVRect() );
         }
         // --> OD 2009-08-20 #i92511#
@@ -2085,6 +2098,7 @@ void lcl_MoveAllLowerObjs( SwFrm* pFrm, const Point& rOffset )
         pAnchoredObj->InvalidateObjRectWithSpaces();
         // <--
     }
+}
 }
 
 void lcl_MoveAllLowers( SwFrm* pFrm, const Point& rOffset )
@@ -2109,7 +2123,7 @@ void lcl_MoveAllLowers( SwFrm* pFrm, const Point& rOffset )
     lcl_MoveAllLowerObjs( pFrm, rOffset );
 
     // finally, for layout frames we have to call this function recursively:
-    if ( pFrm->ISA(SwLayoutFrm) )
+    if ( dynamic_cast< SwLayoutFrm* >(pFrm) )
     {
         SwFrm* pLowerFrm = pFrm->GetLower();
         while ( pLowerFrm )

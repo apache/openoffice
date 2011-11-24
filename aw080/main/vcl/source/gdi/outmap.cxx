@@ -2425,6 +2425,49 @@ long OutputDevice::LogicToLogic( long nLongSource,
 
 // -----------------------------------------------------------------------
 
+basegfx::B2DHomMatrix OutputDevice::GetTransformLogicToLogic(const MapMode& rMapModeSource, const MapMode& rMapModeDest) const
+{
+	basegfx::B2DHomMatrix aRetval;
+
+	if(rMapModeSource != rMapModeDest)
+	{
+		aRetval = GetViewTransformation(rMapModeSource);
+		aRetval.invert();
+		aRetval = GetViewTransformation(rMapModeDest) * aRetval;
+	}
+
+	return aRetval;
+}
+
+// -----------------------------------------------------------------------
+
+double OutputDevice::GetFactorLogicToLogic(MapUnit eUnitSource, MapUnit eUnitDest)
+{
+	if ( eUnitSource == eUnitDest )
+		return 1.0;
+
+	ENTER2( eUnitSource, eUnitDest );
+	ENTER3( eUnitSource, eUnitDest );
+
+	return (double)nNumerator / (double)nDenominator;
+}
+
+// -----------------------------------------------------------------------
+
+basegfx::B2DRange OutputDevice::GetLogicRange() const
+{
+	return GetInverseViewTransformation() * GetDiscreteRange();
+}
+
+// -----------------------------------------------------------------------
+
+basegfx::B2DRange OutputDevice::GetDiscreteRange() const
+{
+	return basegfx::B2DRange(0.0, 0.0, GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
+}
+
+// -----------------------------------------------------------------------
+
 void OutputDevice::SetPixelOffset( const Size& rOffset )
 {
     mnOutOffOrigX  = rOffset.Width();

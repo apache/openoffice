@@ -28,6 +28,7 @@
 
 
 #include <svtools/grfmgr.hxx>
+#include <bf_svtools/hint.hxx>
 
 // wrapper for GraphicAttr for binfilter
 namespace binfilter {

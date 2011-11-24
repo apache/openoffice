@@ -2233,7 +2233,7 @@ const USHORT ScChangeTrack::nContentSlots =
 /*N*/ {
 /*N*/ 	if ( !pDoc->IsInDtorClear() )
 /*N*/ 	{
-/*N*/ 		const SfxItemSetHint* pHint = PTR_CAST( SfxItemSetHint, &rHint );
+/*N*/ 		const SfxItemSetHint* pHint = dynamic_cast< const SfxItemSetHint* >( &rHint );
 /*N*/ 		if ( pHint )
 /*N*/ 		{
 /*N*/ 			const SfxItemSet& rSet = pHint->GetItemSet();

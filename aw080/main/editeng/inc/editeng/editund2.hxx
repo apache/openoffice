@@ -53,7 +53,6 @@ private:
 	ImpEditEngine*	pImpEE;
 
 public:
-					TYPEINFO();
 					EditUndo( sal_uInt16 nI, ImpEditEngine* pImpEE );
 	virtual 		~EditUndo();
 

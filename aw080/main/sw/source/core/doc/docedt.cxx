@@ -842,7 +842,7 @@ bool SwDoc::Overwrite( const SwPaM &rRg, const String &rStr )
 	if( nOldAttrCnt != nNewAttrCnt )
 	{
 		SwUpdateAttr aHint( 0, 0, 0 );
-        pNode->ModifyBroadcast( 0, &aHint, TYPE( SwCrsrShell ) );
+        pNode->ModifyBroadcast( 0, &aHint, &typeid( SwCrsrShell ) );
 	}
 
     if (!GetIDocumentUndoRedo().DoesUndo() &&

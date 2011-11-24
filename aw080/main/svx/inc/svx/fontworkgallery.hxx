@@ -95,8 +95,8 @@ class SVX_DLLPUBLIC FontWorkGalleryDialog : public ModalDialog
 
 	sal_uInt16			mnThemeId;
 
-	SdrView*			mpSdrView;
-	FmFormModel*		mpModel;
+	SdrView&			mrSdrView;
+	FmFormModel&		mrModel;
 
 	String				maStrClickToAddText;
 
@@ -115,7 +115,7 @@ class SVX_DLLPUBLIC FontWorkGalleryDialog : public ModalDialog
 	std::vector< Bitmap * > maFavoritesHorizontal;
 
 public:
-	FontWorkGalleryDialog( SdrView* pView, Window* pParent, sal_uInt16 nSID );
+	FontWorkGalleryDialog( SdrView& rView, Window* pParent, sal_uInt16 nSID );
 	~FontWorkGalleryDialog();
 
 	// SJ: if the SdrObject** is set, the SdrObject is not inserted into the page when executing the dialog

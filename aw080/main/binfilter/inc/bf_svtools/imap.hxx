@@ -36,6 +36,7 @@
 #ifndef _STREAM_HXX //autogen
 #include <tools/stream.hxx>
 #endif
+#include <bf_tools/rtti.hxx>
 
 class Point;
 class Rectangle;

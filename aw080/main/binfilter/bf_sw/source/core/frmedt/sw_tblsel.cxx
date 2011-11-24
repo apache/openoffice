@@ -1258,7 +1258,7 @@ void _FndBox::DelFrms( SwTable &rTable )
         if( pLast )
         {
             do {
-                SwFrm *pFrm = PTR_CAST( SwFrm, pLast );
+                SwFrm *pFrm = dynamic_cast< SwFrm* >( pLast );
                 if ( pFrm &&
                      ((SwRowFrm*)pFrm)->GetTabLine() == rTable.GetTabLines()[i] )
                 {

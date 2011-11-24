@@ -50,6 +50,7 @@
 #include <svx/svdpagv.hxx>
 #include <svx/svdpage.hxx>
 #include <svx/svdundo.hxx>
+#include <svx/svdlegacy.hxx>
 #include <sfx2/msgpool.hxx>
 #include <scmod.hxx>
 
@@ -233,7 +234,7 @@ FuInsertOLE::FuInsertOLE(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* pVie
 
 
 	sal_uInt16 nSlot = rReq.GetSlot();
-    SFX_REQUEST_ARG( rReq, pNameItem, SfxGlobalNameItem, SID_INSERT_OBJECT, sal_False );
+    SFX_REQUEST_ARG( rReq, pNameItem, SfxGlobalNameItem, SID_INSERT_OBJECT );
     if ( nSlot == SID_INSERT_OBJECT && pNameItem )
 	{
         SvGlobalName aClassName = pNameItem->GetValue();
@@ -331,14 +332,15 @@ FuInsertOLE::FuInsertOLE(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* pVie
 		try
 		{
 			::svt::EmbeddedObjectRef aObjRef( xObj, nAspect );
-			Size aSize;
-			MapMode aMap100( MAP_100TH_MM );
-			MapUnit aMapUnit = MAP_100TH_MM;
+			basegfx::B2DVector aScale;
+			MapUnit aMapUnit(MAP_100TH_MM);
 
 			if ( nAspect == embed::Aspects::MSOLE_ICON )
 			{
 				aObjRef.SetGraphicStream( xIconMetaFile, aIconMediaType );
-				aSize = aObjRef.GetSize( &aMap100 );
+				MapMode aMap100( MAP_100TH_MM );
+				const Size aSize(aObjRef.GetSize( &aMap100 ));
+				aScale = basegfx::B2DVector(aSize.Width(), aSize.Height());
 			}
 			else
 			{
@@ -352,26 +354,22 @@ FuInsertOLE::FuInsertOLE(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* pVie
 					// the default size will be set later
 				}
 
-            	aSize = Size( aSz.Width, aSz.Height );
-
+            	aScale = basegfx::B2DVector( aSz.Width, aSz.Height );
             	aMapUnit = VCLUnoHelper::UnoEmbed2VCLMapUnit( xObj->getMapUnit( nAspect ) );
-            	if (aSize.Height() == 0 || aSize.Width() == 0)
+            	
+				if(basegfx::fTools::equalZero(aScale.getY()) || basegfx::fTools::equalZero(aScale.getX()))
             	{
                 	// Rechteck mit ausgewogenem Kantenverhaeltnis
-					aSize.Width() = 5000;
-					aSize.Height() = 5000;
-                	Size aTmp = OutputDevice::LogicToLogic( aSize, MAP_100TH_MM, aMapUnit );
-                	aSz.Width = aTmp.Width();
-                	aSz.Height = aTmp.Height();
+					aScale = basegfx::B2DVector(5000.0, 5000.0);
+					
+					basegfx::B2DVector aTmp(aScale * OutputDevice::GetFactorLogicToLogic(MAP_100TH_MM, aMapUnit));
+                	aSz.Width = basegfx::fround(aTmp.getX());
+                	aSz.Height = basegfx::fround(aTmp.getY());
                 	xObj->setVisualAreaSize( nAspect, aSz );
+				}
 
                 	//  re-convert aSize to 1/100th mm to avoid rounding errors in comparison below
-                	aSize = Window::LogicToLogic( aTmp,
-                                	MapMode( aMapUnit ), aMap100 );
-				}
-				else
-					aSize = Window::LogicToLogic( aSize,
-                                	MapMode( aMapUnit ), aMap100 );
+                aScale *= Window::GetFactorLogicToLogic(aMapUnit, MAP_100TH_MM);
 			}
 
 			//	Chart initialisieren ?
@@ -380,37 +378,42 @@ FuInsertOLE::FuInsertOLE(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* pVie
 
 			ScViewData* pData = pViewSh->GetViewData();
 
-			Point aPnt = pViewSh->GetInsertPos();
+			basegfx::B2DPoint aPnt(pViewSh->GetInsertPos());
 			if ( pData->GetDocument()->IsNegativePage( pData->GetTabNo() ) )
-				aPnt.X() -= aSize.Width();		// move position to left edge
-			Rectangle aRect (aPnt, aSize);
-            SdrOle2Obj* pObj = new SdrOle2Obj( aObjRef, aName, aRect);
+				aPnt.setX(aPnt.getX() - aScale.getX());		// move position to left edge
+
+			SdrOle2Obj* pObj = new SdrOle2Obj( 
+				pView->getSdrModelFromSdrView(),
+				aObjRef, 
+				aName, 
+				basegfx::tools::createScaleTranslateB2DHomMatrix(
+					aScale,
+					aPnt));
 
 				// Dieses Objekt nicht vor dem Aktivieren zeichnen
 				// (in MarkListHasChanged kommt ein Update)
 			if (!bIsFromFile)
 				pSkipPaintObj = pObj;
 
-			SdrPageView* pPV = pView->GetSdrPageView();
-			pView->InsertObjectAtView(pObj, *pPV);
+			pView->InsertObjectAtView(*pObj);
 
 			if ( nAspect != embed::Aspects::MSOLE_ICON )
 			{
-				//	#73279# Math objects change their object size during InsertObject.
+				//	#73279# Math objects change their object size during InsertObjectToSdrObjList.
 				//	New size must be set in SdrObject, or a wrong scale will be set at
 				//	ActivateObject.
 
 				try
 				{
-            		awt::Size aSz = xObj->getVisualAreaSize( nAspect );
+            		const awt::Size aSz(xObj->getVisualAreaSize( nAspect ));
+            		const basegfx::B2DVector aNewSize(basegfx::B2DVector(aSz.Width, aSz.Height) * OutputDevice::GetFactorLogicToLogic(aMapUnit, MAP_100TH_MM));
 
-            		Size aNewSize( aSz.Width, aSz.Height );
-            		aNewSize = OutputDevice::LogicToLogic( aNewSize, aMapUnit, MAP_100TH_MM );
-
-            		if ( aNewSize != aSize )
+            		if ( !aNewSize.equal(aScale) )
 					{
-						aRect.SetSize( aNewSize );
-						pObj->SetLogicRect( aRect );
+						pObj->setSdrObjectTransformation(
+							basegfx::tools::createScaleTranslateB2DHomMatrix(
+								aNewSize,
+								aPnt));
 					}
 				}
 				catch( embed::NoVisualAreaSizeException& )
@@ -560,33 +563,32 @@ FuInsertChart::FuInsertChart(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* 
             xChartModel->lockControllers();
 
         ScRangeListRef aDummy;
-        Rectangle aMarkDest;
+        basegfx::B2DRange aMarkDest;
         SCTAB nMarkTab;
         sal_Bool bDrawRect = pViewShell->GetChartArea( aDummy, aMarkDest, nMarkTab );
 
         //	Objekt-Groesse
         awt::Size aSz = xObj->getVisualAreaSize( nAspect );
-        Size aSize( aSz.Width, aSz.Height );
+        basegfx::B2DVector aScale( aSz.Width, aSz.Height );
 
         MapUnit aMapUnit = VCLUnoHelper::UnoEmbed2VCLMapUnit( xObj->getMapUnit( nAspect ) );
 
         sal_Bool bSizeCh = sal_False;
-        if (bDrawRect && !aMarkDest.IsEmpty())
+        if (bDrawRect && !aMarkDest.isEmpty())
         {
-            aSize = aMarkDest.GetSize();
+            aScale = aMarkDest.getRange();
             bSizeCh = sal_True;
         }
-        if (aSize.Height() <= 0 || aSize.Width() <= 0)
+        if (aScale.getY() <= 0.0 || aScale.getX() <= 0.0)
         {
-            aSize.Width() = 5000;
-            aSize.Height() = 5000;
+            aScale = basegfx::B2DVector(5000.0, 5000.0);
             bSizeCh = sal_True;
         }
         if (bSizeCh)
         {
-            aSize = Window::LogicToLogic( aSize, MapMode( MAP_100TH_MM ), MapMode( aMapUnit ) );
-            aSz.Width = aSize.Width();
-            aSz.Height = aSize.Height();
+			aScale = Window::GetFactorLogicToLogic(MAP_100TH_MM, aMapUnit) * aScale;
+            aSz.Width = basegfx::fround(aScale.getX());
+            aSz.Height = basegfx::fround(aScale.getY());
             xObj->setVisualAreaSize( nAspect, aSz );
         }
 
@@ -602,9 +604,11 @@ FuInsertChart::FuInsertChart(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* 
 
             if( IS_AVAILABLE( FN_PARAM_4, &pItem ) )
             {
-                if ( pItem->ISA( SfxUInt16Item ) )
+                if ( dynamic_cast< const SfxUInt16Item* >(pItem) )
+				{
                     nToTable = ((const SfxUInt16Item*)pItem)->GetValue();
-                else if ( pItem->ISA( SfxBoolItem ) )
+				}
+                else if ( dynamic_cast< const SfxBoolItem* >(pItem) )
                 {
                     //	#46033# in der idl fuer Basic steht FN_PARAM_4 als SfxBoolItem
                     //	-> wenn gesetzt, neue Tabelle, sonst aktuelle Tabelle
@@ -661,31 +665,40 @@ FuInsertChart::FuInsertChart(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* 
 
         //	Objekt-Position
 
-        Point aStart;
+        basegfx::B2DPoint aStart(0.0, 0.0);
         if ( bDrawRect )
-            aStart = aMarkDest.TopLeft();						// marked by hand
+		{
+            aStart = aMarkDest.getMinimum(); // marked by hand
+		}
         else
         {
             // get chart position (from window size and data range)
-            aStart = pViewSh->GetChartInsertPos( aSize, aPositionRange );
+            aStart = pViewSh->GetChartInsertPos( aScale, aPositionRange );
         }
 
-        Rectangle aRect (aStart, aSize);
-        SdrOle2Obj* pObj = new SdrOle2Obj( svt::EmbeddedObjectRef( xObj, nAspect ), aName, aRect);
+        SdrOle2Obj* pObj = new SdrOle2Obj( 
+			pView->getSdrModelFromSdrView(),
+			svt::EmbeddedObjectRef( xObj, nAspect ), 
+			aName, 
+			basegfx::tools::createScaleTranslateB2DHomMatrix(
+				aScale,
+				aStart));
 
         // Dieses Objekt nicht vor dem Aktivieren zeichnen
-        // (in MarkListHasChanged kommt ein Update)
         pSkipPaintObj = pObj;
 
         SdrPageView* pPV = pView->GetSdrPageView();
 
+		if(pPV)
+		{
+
 //        pView->InsertObjectAtView(pObj, *pPV);//this call leads to an immidiate redraw and asks the chart for a visual representation
 
         // use the page instead of the view to insert, so no undo action is created yet
-        SdrPage* pInsPage = pPV->GetPage();
-        pInsPage->InsertObject( pObj );
+			SdrPage& rInsPage = pPV->getSdrPageFromSdrPageView();
+			rInsPage.InsertObjectToSdrObjList( pObj );
         pView->UnmarkAllObj();
-        pView->MarkObj( pObj, pPV );
+			pView->MarkObj( *pObj );
         bool bAddUndo = true;               // add undo action later, unless the dialog is canceled
 
         if (rReq.IsAPI())
@@ -741,13 +754,19 @@ FuInsertChart::FuInsertChart(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* 
                                 if( xDialogProps->getPropertyValue( ::rtl::OUString::createFromAscii("Size") )
                                     >>= aDialogAWTSize )
                                 {
-                                    Size aDialogSize( aDialogAWTSize.Width, aDialogAWTSize.Height );
-                                    if ( aDialogSize.Width() > 0 && aDialogSize.Height() > 0 )
+									const basegfx::B2DVector aDialogScale(aDialogAWTSize.Width, aDialogAWTSize.Height);
+
+									if( aDialogScale.getX() > 0 && aDialogScale.getY() > 0 )
                                     {
                                         //calculate and set new position
-                                        Point aDialogPos = pViewShell->GetChartDialogPos( aDialogSize, aRect );
+										const basegfx::B2DRange aOldObjRange(sdr::legacy::GetLogicRange(*pObj));
+										const basegfx::B2DPoint aDialogPos(pViewShell->GetChartDialogPos(aDialogScale, aOldObjRange));
+                                        
                                         xDialogProps->setPropertyValue( ::rtl::OUString::createFromAscii("Position"),
-                                            uno::makeAny( awt::Point(aDialogPos.getX(),aDialogPos.getY()) ) );
+												uno::makeAny( 
+													awt::Point(
+														basegfx::fround(aDialogPos.getX()), 
+														basegfx::fround(aDialogPos.getY())) ) );
                                     }
                                 }
                                 //tell the dialog to unlock controller
@@ -775,11 +794,9 @@ FuInsertChart::FuInsertChart(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* 
 
                             // remove the chart
                             OSL_ASSERT( pPV );
-                            SdrPage * pPage( pPV->GetPage());
-                            OSL_ASSERT( pPage );
+								SdrPage& rPage = pPV->getSdrPageFromSdrPageView();
                             OSL_ASSERT( pObj );
-                            if( pPage )
-                                pPage->RemoveObject( pObj->GetOrdNum());
+								rPage.RemoveObjectFromSdrObjList(pObj->GetNavigationPosition());
 
                             bAddUndo = false;       // don't create the undo action for inserting
 
@@ -805,6 +822,7 @@ FuInsertChart::FuInsertChart(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* 
             // (using UndoActionHdl etc.)
             pView->AddUndo(pDoc->GetSdrUndoFactory().CreateUndoNewObject(*pObj));
         }
+		}
 
         // BM/IHA --
     }

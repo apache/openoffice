@@ -57,7 +57,7 @@ namespace
             {
                 // the parent scene of rCandidate is a in-between scene, call recursively and collect
                 // the in-between scene's object transformation part in o_rInBetweenObjectTransform
-                const basegfx::B3DHomMatrix& rSceneParentTransform = pSceneParent->GetE3dScene().GetTransform();
+                const basegfx::B3DHomMatrix& rSceneParentTransform = pSceneParent->GetE3dScene().GetB3DTransform();
                 o_rInBetweenObjectTransform = rSceneParentTransform * o_rInBetweenObjectTransform;
 			    return tryToFindVCOfE3DScene(*pSceneParent, o_rInBetweenObjectTransform);
             }
@@ -170,7 +170,7 @@ namespace sdr
 			if(xRetval.hasElements())
 			{
 				// add object transform if it's used
-				const basegfx::B3DHomMatrix& rObjectTransform(GetE3dObject().GetTransform());
+				const basegfx::B3DHomMatrix& rObjectTransform(GetE3dObject().GetB3DTransform());
 
 				if(!rObjectTransform.isIdentity())
 				{

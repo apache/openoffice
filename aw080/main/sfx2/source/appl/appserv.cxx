@@ -235,8 +235,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
 
 			if ( pFact )
 			{
-				SFX_REQUEST_ARG(rReq, pStringItem,
-					SfxStringItem, SID_CONFIG, sal_False);
+				SFX_REQUEST_ARG(rReq, pStringItem, SfxStringItem, SID_CONFIG );
 
 				SfxItemSet aSet(
 					GetPool(), SID_CONFIG, SID_CONFIG );
@@ -249,7 +248,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
 
                 Reference< XFrame > xFrame;
 				const SfxItemSet* pIntSet = rReq.GetInternalArgs_Impl();
-                SFX_ITEMSET_ARG( pIntSet, pFrameItem, SfxUnoFrameItem, SID_FILLFRAME, sal_False );
+                SFX_ITEMSET_ARG( pIntSet, pFrameItem, SfxUnoFrameItem, SID_FILLFRAME );
                 if ( pFrameItem )
                     xFrame = pFrameItem->GetFrame();
 
@@ -317,7 +316,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
 				if ( pObjSh->IsModified() )
 				{
 					pObjSh->ExecuteSlot( aReq );
-					SfxBoolItem *pItem = PTR_CAST( SfxBoolItem, aReq.GetReturnValue() );
+					const SfxBoolItem *pItem = dynamic_cast< const SfxBoolItem* >( aReq.GetReturnValue() );
 					bTmpDone = aReq.IsDone();
 					if ( !pItem || !pItem->GetValue() )
 						bOK = sal_False;
@@ -357,7 +356,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
 		case SID_HELPTIPS:
 		{
 			// Parameter aus werten
-			SFX_REQUEST_ARG(rReq, pOnItem, SfxBoolItem, SID_HELPTIPS, sal_False);
+			SFX_REQUEST_ARG(rReq, pOnItem, SfxBoolItem, SID_HELPTIPS );
 			bool bOn = pOnItem
 							? ((SfxBoolItem*)pOnItem)->GetValue()
 							: !Help::IsQuickHelpEnabled();
@@ -385,7 +384,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
 		case SID_HELPBALLOONS:
 		{
 			// Parameter auswerten
-			SFX_REQUEST_ARG(rReq, pOnItem, SfxBoolItem, SID_HELPBALLOONS, sal_False);
+			SFX_REQUEST_ARG(rReq, pOnItem, SfxBoolItem, SID_HELPBALLOONS );
 			bool bOn = pOnItem
 							? ((SfxBoolItem*)pOnItem)->GetValue()
 							: !Help::IsBalloonHelpEnabled();
@@ -409,7 +408,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
 		case SID_HELP_PI:
 		{
 			SvtHelpOptions aHelpOpt;
-			SFX_REQUEST_ARG(rReq, pOnItem, SfxBoolItem, SID_HELP_PI, sal_False);
+			SFX_REQUEST_ARG(rReq, pOnItem, SfxBoolItem, SID_HELP_PI );
 			sal_Bool bOn = pOnItem
 							? ((SfxBoolItem*)pOnItem)->GetValue()
 							: !aHelpOpt.IsHelpAgentAutoStartMode();
@@ -472,8 +471,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
             if (pAppData_Impl->m_xImeStatusWindow->canToggle())
             {
                 SfxBoolItem const * pItem = static_cast< SfxBoolItem const * >(
-                    rReq.GetArg(SID_SHOW_IME_STATUS_WINDOW, false,
-                                TYPE(SfxBoolItem)));
+                    rReq.GetArg(SID_SHOW_IME_STATUS_WINDOW));
                 bool bShow = pItem == 0
                     ? !pAppData_Impl->m_xImeStatusWindow->isShowing()
                     : ( pItem->GetValue() == sal_True );
@@ -488,7 +486,7 @@ void SfxApplication::MiscExec_Impl( SfxRequest& rReq )
         case SID_AVAILABLE_TOOLBARS:
         {
             SfxStringItem const * pToolbarName = static_cast< SfxStringItem const *>(
-                    rReq.GetArg(SID_AVAILABLE_TOOLBARS, false, TYPE(SfxStringItem)));
+                    rReq.GetArg(SID_AVAILABLE_TOOLBARS));
 
             if ( pToolbarName )
             {
@@ -821,7 +819,7 @@ void SfxApplication::OfaExec_Impl( SfxRequest& rReq )
 		case SID_OPTIONS_TREEDIALOG:
 		{
             String sPageURL;
-            SFX_REQUEST_ARG( rReq, pURLItem, SfxStringItem, SID_OPTIONS_PAGEURL, sal_False );
+            SFX_REQUEST_ARG( rReq, pURLItem, SfxStringItem, SID_OPTIONS_PAGEURL );
             if ( pURLItem )
                 sPageURL = pURLItem->GetValue();
             const SfxItemSet* pArgs = rReq.GetInternalArgs_Impl();
@@ -829,7 +827,7 @@ void SfxApplication::OfaExec_Impl( SfxRequest& rReq )
             Reference < XFrame > xFrame;
             if ( pArgs && pArgs->GetItemState( SID_FILLFRAME, sal_False, &pItem ) == SFX_ITEM_SET )
             {
-                OSL_ENSURE( pItem->ISA( SfxUnoFrameItem ), "SfxApplication::OfaExec_Impl: XFrames are to be transported via SfxUnoFrameItem by now!" );
+                OSL_ENSURE( dynamic_cast<const SfxUnoFrameItem* >(pItem), "SfxApplication::OfaExec_Impl: XFrames are to be transported via SfxUnoFrameItem by now!" );
                 xFrame = static_cast< const SfxUnoFrameItem*>( pItem )->GetFrame();
             }
 			SfxAbstractDialogFactory* pFact = SfxAbstractDialogFactory::Create();
@@ -1026,7 +1024,7 @@ void SfxApplication::OfaExec_Impl( SfxRequest& rReq )
 
             Reference< XFrame > xFrame;
 			const SfxItemSet* pIntSet = rReq.GetInternalArgs_Impl();
-            SFX_ITEMSET_ARG( pIntSet, pFrameItem, SfxUnoFrameItem, SID_FILLFRAME, sal_False );
+            SFX_ITEMSET_ARG( pIntSet, pFrameItem, SfxUnoFrameItem, SID_FILLFRAME );
             if ( pFrameItem )
                 xFrame = pFrameItem->GetFrame();
 
@@ -1103,7 +1101,7 @@ void SfxApplication::OfaExec_Impl( SfxRequest& rReq )
 		case SID_OFFICE_CHECK_PLZ:
 		{
 			sal_Bool bRet = sal_False;
-			SFX_REQUEST_ARG(rReq, pStringItem, SfxStringItem, rReq.GetSlot(), sal_False);
+			SFX_REQUEST_ARG(rReq, pStringItem, SfxStringItem, rReq.GetSlot() );
 
 			if ( pStringItem )
 			{

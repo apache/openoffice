@@ -68,6 +68,7 @@
 #include "sfx2/opengrf.hxx"
 #include <svx/dialmgr.hxx>
 #include <svx/dialogs.hrc>
+#include <svx/svdlegacy.hxx>
 
 #define MAX_BMP_WIDTH 	16
 #define MAX_BMP_HEIGHT  16
@@ -316,7 +317,7 @@ void SvxLineTabPage::FillListboxes()
 
 void SvxLineTabPage::ActivatePage( const SfxItemSet& rSet )
 {
-	SFX_ITEMSET_ARG (&rSet,pPageTypeItem,CntUInt16Item,SID_PAGE_TYPE,sal_False); //add CHINA001 begin
+	SFX_ITEMSET_ARG (&rSet,pPageTypeItem,CntUInt16Item,SID_PAGE_TYPE); //add CHINA001 begin
 	if (pPageTypeItem)
 		SetPageType(pPageTypeItem->GetValue());	//add CHINA001 end
 	if( nDlgType == 0 && pDashList )  //CHINA001 if( *pDlgType == 0 && pDashList ) // Linien-Dialog
@@ -937,15 +938,13 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 		VirtualDevice aVDev;
 		aVDev.SetMapMode(MapMode(MAP_100TH_MM));
 
-		SdrModel* pModel = new SdrModel(NULL, NULL, LOADREFCOUNTS);
+		SdrModel* pModel = new SdrModel();
 		pModel->GetItemPool().FreezeIdRanges();
 		SdrPage* pPage = new SdrPage( *pModel, sal_False );
-		pPage->SetSize(Size(1000,1000));
+		pPage->SetPageScale(basegfx::B2DVector(1000.0, 1000.0));
 		pModel->InsertPage( pPage, 0 );
-		SdrView* pView = new SdrView( pModel, &aVDev );
-		pView->hideMarkHandles();
-		SdrPageView* pPageView = pView->ShowSdrPage(pPage);
-//		SdrPageView* pPageView = pView->ShowSdrPage(pPage, Point());
+		SdrView* pView = new SdrView( *pModel, &aVDev );
+		pView->ShowSdrPage(*pPage);
 		SdrObject *pObj=NULL;
 		long nSymTmp=nSymType;
 		if(pSymbolList)
@@ -956,9 +955,9 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 				pObj=pSymbolList->GetObj(nSymTmp);
 				if(pObj)
 				{
-					pObj=pObj->Clone();
-					pPage->NbcInsertObject(pObj);
-					pView->MarkObj(pObj,pPageView);
+					pObj = pObj->CloneSdrObject();
+					pPage->InsertObjectToSdrObjList(pObj);
+					pView->MarkObj(*pObj);
 					if(pSymbolAttr)
 					{
 						pObj->SetMergedItemSet(*pSymbolAttr);
@@ -970,7 +969,7 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 					GDIMetaFile aMeta(pView->GetAllMarkedMetaFile());
 
 					aSymbolGraphic=Graphic(aMeta);
-					aSymbolSize=pObj->GetSnapRect().GetSize();
+					aSymbolSize=sdr::legacy::GetSnapRect(*pObj).GetSize();
 					aSymbolGraphic.SetPrefSize(aSymbolSize);
 					aSymbolGraphic.SetPrefMapMode(MAP_100TH_MM);
 					bPrevSym=sal_True;
@@ -978,8 +977,8 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 					bIgnoreGraphic=sal_True;
 
 					pView->UnmarkAll();
-					pObj=pPage->RemoveObject(0);
-                    SdrObject::Free( pObj );
+					pObj=pPage->RemoveObjectFromSdrObjList(0);
+                    deleteSdrObjectSafeAndClearPointer( pObj );
 				}
 			}
 		}
@@ -1612,17 +1611,15 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
 	{
 		VirtualDevice aVDev;
 		aVDev.SetMapMode(MapMode(MAP_100TH_MM));
-		SdrModel* pModel = new SdrModel(NULL, NULL, LOADREFCOUNTS);
+		SdrModel* pModel = new SdrModel();
 		pModel->GetItemPool().FreezeIdRanges();
 		// Page
 		SdrPage* pPage = new SdrPage( *pModel, sal_False );
-		pPage->SetSize(Size(1000,1000));
+		pPage->SetPageScale(basegfx::B2DVector(1000.0, 1000.0));
 		pModel->InsertPage( pPage, 0 );
 		// 3D View
-		SdrView* pView = new SdrView( pModel, &aVDev );
-		pView->hideMarkHandles();
-//		SdrPageView* pPageView = pView->ShowSdrPage(pPage, Point());
-		SdrPageView* pPageView = pView->ShowSdrPage(pPage);
+		SdrView* pView = new SdrView( *pModel, &aVDev );
+		pView->ShowSdrPage(*pPage);
 
 		PopupMenu* pPopup = new PopupMenu;
 		String aEmptyStr;
@@ -1631,13 +1628,13 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
             SdrObject *pObj=pSymbolList->GetObj(i);
             if(pObj==NULL)
                 break;
-			pObj=pObj->Clone();
+			pObj = pObj->CloneSdrObject();
 			//const String* pGrfName = (const String*)aGrfNames.GetObject(i);
 			String *pStr=new String();//String(i));
 			aGrfNames.Insert(pStr,LIST_APPEND);
 			//Rectangle aRect(pObj->GetLogicRect());
-			pPage->NbcInsertObject(pObj);
-			pView->MarkObj(pObj,pPageView);
+			pPage->InsertObjectToSdrObjList(pObj);
+			pView->MarkObj(*pObj);
 			if(pSymbolAttr)
 			{
 				pObj->SetMergedItemSet(*pSymbolAttr);
@@ -1650,8 +1647,8 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
 			Bitmap aBitmap(pView->GetAllMarkedBitmap());
 			GDIMetaFile aMeta(pView->GetAllMarkedMetaFile());
 			pView->UnmarkAll();
-			pObj=pPage->RemoveObject(0);
-            SdrObject::Free(pObj);
+			pObj=pPage->RemoveObjectFromSdrObjList(0);
+            deleteSdrObjectSafeAndClearPointer(pObj);
 
             SvxBrushItem* pBrushItem = new SvxBrushItem(Graphic(aMeta), GPOS_AREA, SID_ATTR_BRUSH);
 			pBrushItem->SetDoneLink(STATIC_LINK(this, SvxLineTabPage, GraphicArrivedHdl_Impl));
@@ -1897,14 +1894,14 @@ void SvxLineTabPage::DataChanged( const DataChangedEvent& rDCEvt )
 
 void SvxLineTabPage::PageCreated (SfxAllItemSet aSet) //add CHINA001
 {
-	SFX_ITEMSET_ARG (&aSet,pColorTabItem,SvxColorTableItem,SID_COLOR_TABLE,sal_False);
-	SFX_ITEMSET_ARG (&aSet,pDashListItem,SvxDashListItem,SID_DASH_LIST,sal_False);
-	SFX_ITEMSET_ARG (&aSet,pLineEndListItem,SvxLineEndListItem,SID_LINEEND_LIST,sal_False);
-	SFX_ITEMSET_ARG (&aSet,pPageTypeItem,SfxUInt16Item,SID_PAGE_TYPE,sal_False);
-	SFX_ITEMSET_ARG (&aSet,pDlgTypeItem,SfxUInt16Item,SID_DLG_TYPE,sal_False);
-	SFX_ITEMSET_ARG (&aSet,pSdrObjListItem,OfaPtrItem,SID_OBJECT_LIST,sal_False);
-	SFX_ITEMSET_ARG (&aSet,pSymbolAttrItem,SfxTabDialogItem,SID_ATTR_SET,sal_False);
-	SFX_ITEMSET_ARG (&aSet,pGraphicItem,SvxGraphicItem,SID_GRAPHIC,sal_False);
+	SFX_ITEMSET_ARG (&aSet,pColorTabItem,SvxColorTableItem,SID_COLOR_TABLE);
+	SFX_ITEMSET_ARG (&aSet,pDashListItem,SvxDashListItem,SID_DASH_LIST);
+	SFX_ITEMSET_ARG (&aSet,pLineEndListItem,SvxLineEndListItem,SID_LINEEND_LIST);
+	SFX_ITEMSET_ARG (&aSet,pPageTypeItem,SfxUInt16Item,SID_PAGE_TYPE);
+	SFX_ITEMSET_ARG (&aSet,pDlgTypeItem,SfxUInt16Item,SID_DLG_TYPE);
+	SFX_ITEMSET_ARG (&aSet,pSdrObjListItem,OfaPtrItem,SID_OBJECT_LIST);
+	SFX_ITEMSET_ARG (&aSet,pSymbolAttrItem,SfxTabDialogItem,SID_ATTR_SET);
+	SFX_ITEMSET_ARG (&aSet,pGraphicItem,SvxGraphicItem,SID_GRAPHIC);
 
 	if (pColorTabItem)
 		SetColorTable(pColorTabItem->GetColorTable());

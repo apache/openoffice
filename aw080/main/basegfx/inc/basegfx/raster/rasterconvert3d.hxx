@@ -152,7 +152,7 @@ namespace basegfx
 
 	    sal_uInt32 addNormalInterpolator(const B3DVector& rA, const B3DVector& rB, double fInvYDelta)
 	    {
-		    B3DVector aDelta(rB.getX() - rA.getX(), rB.getY() - rA.getY(), rB.getZ() - rA.getZ());
+		    B3DVector aDelta(rB - rA);
 		    aDelta *= fInvYDelta;
 		    maNormalInterpolators.push_back(ip_triple(rA.getX(), aDelta.getX(), rA.getY(), aDelta.getY(), rA.getZ(), aDelta.getZ()));
 		    return (maNormalInterpolators.size() - 1L);

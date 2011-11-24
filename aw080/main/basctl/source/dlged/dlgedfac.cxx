@@ -68,28 +68,46 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 		bNeedsInit = sal_False;
 	}
 	
-	if( (pObjFactory->nInventor == DlgInventor) &&
-		(pObjFactory->nIdentifier >= OBJ_DLG_PUSHBUTTON) &&
-		(pObjFactory->nIdentifier <= OBJ_DLG_TREECONTROL)    )
+	if( (pObjFactory->mnInventor == DlgInventor) &&
+		(pObjFactory->mnIdentifier >= OBJ_DLG_PUSHBUTTON) &&
+		(pObjFactory->mnIdentifier <= OBJ_DLG_TREECONTROL)    )
 	{
-		switch( pObjFactory->nIdentifier )
+		switch( pObjFactory->mnIdentifier )
 		{
 			case OBJ_DLG_PUSHBUTTON:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlButtonModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlButtonModel") , xDialogSFact );
  				 break;
+			}
 			case OBJ_DLG_RADIOBUTTON:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlRadioButtonModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlRadioButtonModel") , xDialogSFact );
 				 break;
+			}
 			case OBJ_DLG_CHECKBOX:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlCheckBoxModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlCheckBoxModel") , xDialogSFact );
 				 break;
+			}
 			case OBJ_DLG_LISTBOX:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlListBoxModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlListBoxModel") , xDialogSFact );
 				 break;
+			}
 			case OBJ_DLG_COMBOBOX:
 			{	 
-				 DlgEdObj* pNew = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlComboBoxModel") , xDialogSFact );
-				 pObjFactory->pNewObj = pNew;
+				DlgEdObj* pNew = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlComboBoxModel") , xDialogSFact );
+				pObjFactory->mpNewObj = pNew;
 				 try
 				 {
 					uno::Reference< beans::XPropertySet >  xPSet(pNew->GetUnoControlModel(), uno::UNO_QUERY);
@@ -102,29 +120,56 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 				 catch(...)
 				 {
 				 }
-			}	 break;
+				break;
+			}	 
 			case OBJ_DLG_GROUPBOX:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlGroupBoxModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlGroupBoxModel") , xDialogSFact );
 				 break;
+			}	 
 			case OBJ_DLG_EDIT:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlEditModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlEditModel") , xDialogSFact );
 				 break;
+			}	 
 			case OBJ_DLG_FIXEDTEXT:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFixedTextModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFixedTextModel") , xDialogSFact );
 				 break;
+			}	 
 			case OBJ_DLG_IMAGECONTROL:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlImageControlModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlImageControlModel") , xDialogSFact );
 				 break;
+			}	 
 			case OBJ_DLG_PROGRESSBAR:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlProgressBarModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlProgressBarModel") , xDialogSFact );
 				 break;            
+			}	 
             case OBJ_DLG_HSCROLLBAR:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlScrollBarModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlScrollBarModel") , xDialogSFact );
 				 break;
+			}	 
 			case OBJ_DLG_VSCROLLBAR:
 			{
-				 DlgEdObj* pNew = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlScrollBarModel") , xDialogSFact );
-				 pObjFactory->pNewObj = pNew;
+				 DlgEdObj* pNew = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlScrollBarModel") , xDialogSFact );
+				 pObjFactory->mpNewObj = pNew;
 				 // set vertical orientation	
 				 try
 				 {
@@ -139,14 +184,21 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 				 catch(...)
 				 {
 				 }
-			}	 break;
-            case OBJ_DLG_HFIXEDLINE:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFixedLineModel") , xDialogSFact );
 				 break;
+			}
+            case OBJ_DLG_HFIXEDLINE:
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFixedLineModel") , xDialogSFact );
+				 break;
+			}	 
 			case OBJ_DLG_VFIXEDLINE:
 			{
-				 DlgEdObj* pNew = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFixedLineModel") , xDialogSFact );
-				 pObjFactory->pNewObj = pNew;
+				 DlgEdObj* pNew = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFixedLineModel") , xDialogSFact );
+				 pObjFactory->mpNewObj = pNew;
 				 // set vertical orientation	
 				 try
 				 {
@@ -161,31 +213,63 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 				 catch(...)
 				 {
 				 }
-			}	 break;
+				 break;
+			}
 			case OBJ_DLG_DATEFIELD:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlDateFieldModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlDateFieldModel") , xDialogSFact );
 				 break;            
+			}
 			case OBJ_DLG_TIMEFIELD:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlTimeFieldModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlTimeFieldModel") , xDialogSFact );
 				 break;            
+			}
 			case OBJ_DLG_NUMERICFIELD:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlNumericFieldModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlNumericFieldModel") , xDialogSFact );
 				 break;            
+			}
 			case OBJ_DLG_CURRENCYFIELD:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlCurrencyFieldModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlCurrencyFieldModel") , xDialogSFact );
 				 break;            
+			}
 			case OBJ_DLG_FORMATTEDFIELD:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFormattedFieldModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFormattedFieldModel") , xDialogSFact );
 				 break;            
+			}
 			case OBJ_DLG_PATTERNFIELD:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlPatternFieldModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlPatternFieldModel") , xDialogSFact );
 				 break;            
+			}
 			case OBJ_DLG_FILECONTROL:
-				 pObjFactory->pNewObj = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFileControlModel") , xDialogSFact );
+			{
+				 pObjFactory->mpNewObj = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.UnoControlFileControlModel") , xDialogSFact );
 				 break;            
+			}
 			case OBJ_DLG_TREECONTROL:
-				 DlgEdObj* pNew = new DlgEdObj( ::rtl::OUString::createFromAscii("com.sun.star.awt.tree.TreeControlModel") , xDialogSFact );
-				 pObjFactory->pNewObj = pNew;
+			{
+				 DlgEdObj* pNew = new DlgEdObj(
+					 *pObjFactory->mpTargetModel,
+					 ::rtl::OUString::createFromAscii("com.sun.star.awt.tree.TreeControlModel") , xDialogSFact );
+				 pObjFactory->mpNewObj = pNew;
 				 /*
 				 try
 				 {
@@ -255,6 +339,7 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 				 }*/
 				 break;            
 		}
+	}
 	}
 
 	return 0;

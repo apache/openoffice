@@ -470,7 +470,7 @@ SV_DECL_PTRARR(SwpHts,SwTxtAttr*,1,1)
 /*?*/ 		SwClient* pLast = aIter.GoStart();
 /*?*/ 		if( pLast )
 /*?*/ 			do
-/*?*/ 			{	SwCntntFrm *pFrm = PTR_CAST( SwCntntFrm, pLast );
+/*?*/ 			{	SwCntntFrm *pFrm = dynamic_cast< SwCntntFrm* >( pLast );
 /*?*/ 				if ( pFrm )
 /*?*/ 				{
 /*?*/ 					pNode->Add( pFrm );

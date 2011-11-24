@@ -60,6 +60,7 @@ SHL1STDLIBS=$(CPPULIB)			\
 			$(CPPUHELPERLIB)	\
 			$(SALLIB)			\
             $(BFSO3LIB)                       \
+			$(BFSVTOOLLIB)		\
 			$(ONELIB)			\
 			$(TOOLSLIB)			\
 			$(LEGACYSMGRLIB)	\

@@ -151,8 +151,6 @@ protected:
 
 public:
     // OD 2004-03-23 #i26791#
-    TYPEINFO();
-
 	virtual ~SwFlyFrm();
 		// erfrage vom Client Informationen
 	virtual sal_Bool GetInfo( SfxPoolItem& ) const;

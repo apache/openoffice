@@ -45,8 +45,7 @@ TYPEINIT1_AUTOFACTORY(CntTransferResultItem, SfxPoolItem)
 // virtual
 int CntTransferResultItem::operator ==(SfxPoolItem const & rItem) const
 {
-	if (CntTransferResultItem * pResultItem = PTR_CAST(CntTransferResultItem,
-													   &rItem))
+	if (const CntTransferResultItem * pResultItem = dynamic_cast< const CntTransferResultItem* >( &rItem))
 		return m_aResult.Source == pResultItem->m_aResult.Source
 			   && m_aResult.Target == pResultItem->m_aResult.Target
 			   && m_aResult.Result == pResultItem->m_aResult.Result;

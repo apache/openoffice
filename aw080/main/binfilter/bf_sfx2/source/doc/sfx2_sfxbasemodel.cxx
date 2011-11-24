@@ -1495,11 +1495,11 @@ extern sal_Bool supportsMetaFileHandle_Impl();
 /*N*/
 /*N*/ 	if ( &rBC == m_pData->m_pObjectShell )
 /*N*/ 	{
-/*N*/ 		SfxSimpleHint* pSimpleHint = PTR_CAST( SfxSimpleHint, &rHint );
+/*N*/ 		const SfxSimpleHint* pSimpleHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
 /*N*/ 		if ( pSimpleHint && pSimpleHint->GetId() == SFX_HINT_DOCCHANGED )
 /*N*/ 			changing();
 /*N*/
-/*N*/ 		SfxEventHint* pNamedHint = PTR_CAST( SfxEventHint, &rHint );
+/*N*/ 		const SfxEventHint* pNamedHint = dynamic_cast< const SfxEventHint* >( &rHint );
 /*N*/ 		if ( pNamedHint )
 /*N*/ 		{
 /*N*/ 			if ( SFX_EVENT_SAVEASDOCDONE == pNamedHint->GetEventId() )

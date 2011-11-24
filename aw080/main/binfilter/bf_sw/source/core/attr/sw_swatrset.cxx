@@ -216,8 +216,8 @@ namespace binfilter {
 /*N*/ void SwAttrSet::CopyToModify( SwModify& rMod ) const
 /*N*/ {
 /*N*/ 	// kopiere die Attribute ggfs. ueber Dokumentgrenzen
-/*N*/ 	SwCntntNode* pCNd = PTR_CAST( SwCntntNode, &rMod );
-/*N*/ 	SwFmt* pFmt = PTR_CAST( SwFmt, &rMod );
+/*N*/ 	SwCntntNode* pCNd = dynamic_cast< SwCntntNode* >( &rMod );
+/*N*/ 	SwFmt* pFmt = dynamic_cast< SwFmt* >( &rMod );
 /*N*/ 
 /*N*/ 	if( pCNd || pFmt )
 /*N*/ 	{

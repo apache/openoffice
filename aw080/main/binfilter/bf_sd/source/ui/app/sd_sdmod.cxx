@@ -121,7 +121,7 @@ SdOptions* SdModule::GetSdOptions(DocumentType eDocType)
 	if( pOptions )
  	{
  		UINT16 nMetric = pOptions->GetMetric();
- 		SdDrawDocShell* pDocSh = PTR_CAST( SdDrawDocShell, SfxObjectShell::Current() );
+ 		SdDrawDocShell* pDocSh = dynamic_cast< SdDrawDocShell* >( SfxObjectShell::Current() );
  		SdDrawDocument* pDoc = NULL;
  		if (pDocSh)
 			pDoc = pDocSh->GetDoc();

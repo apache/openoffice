@@ -27,7 +27,7 @@
 #include <bf_svtools/bf_solar.h>
 
 #ifndef _RTTI_HXX
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 
 #ifndef _TOOLS_TIME_HXX //autogen

@@ -496,7 +496,7 @@ Reference< XPropertySet > SwXMLTextImportHelper::createAndInsertOLEObject(
 	SvInfoObject *pInfo = pDoc->GetPersist()->Find( aObjName );
 	if( pInfo )
 	{
-		SvEmbeddedInfoObject * pEmbed = PTR_CAST(SvEmbeddedInfoObject, pInfo );
+		SvEmbeddedInfoObject * pEmbed = dynamic_cast< SvEmbeddedInfoObject* >( pInfo );
 		pEmbed->SetInfoVisArea( aVisArea );
 		if( nDrawAspect )
 			pEmbed->SetInfoViewAspect( (UINT32)nDrawAspect );

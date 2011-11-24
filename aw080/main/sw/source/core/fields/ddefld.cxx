@@ -123,8 +123,7 @@ void SwIntrnlRefLink::DataChanged( const String& rMimeType,
 		if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 			do {
 				// eine DDE-Tabelle oder ein DDE-FeldAttribut im Text
-				if( !pLast->IsA( TYPE( SwFmtFld ) ) ||
-					((SwFmtFld*)pLast)->GetTxtFld() )
+				if( !dynamic_cast< SwFmtFld* >(pLast) || ((SwFmtFld*)pLast)->GetTxtFld() )
 				{
 					if( !bCallModify )
 					{
@@ -185,7 +184,7 @@ const SwNode* SwIntrnlRefLink::GetAnchor() const
 	if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 		do {
 			// eine DDE-Tabelle oder ein DDE-FeldAttribut im Text
-			if( !pLast->IsA( TYPE( SwFmtFld ) ))
+			if( !dynamic_cast< SwFmtFld* >(pLast))
 			{
 				SwDepend* pDep = (SwDepend*)pLast;
 				SwDDETable* pDDETbl = (SwDDETable*)pDep->GetToTell();
@@ -212,7 +211,7 @@ sal_Bool SwIntrnlRefLink::IsInRange( sal_uLong nSttNd, sal_uLong nEndNd,
 	if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 		do {
 			// eine DDE-Tabelle oder ein DDE-FeldAttribut im Text
-			if( !pLast->IsA( TYPE( SwFmtFld ) ))
+			if( !dynamic_cast< SwFmtFld* >(pLast))
 			{
 				SwDepend* pDep = (SwDepend*)pLast;
 				SwDDETable* pDDETbl = (SwDDETable*)pDep->GetToTell();

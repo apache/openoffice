@@ -61,9 +61,9 @@ namespace sd {
 |*
 \************************************************************************/
 
-sal_Bool DrawViewShell::GotoBookmark(const String& rBookmark)
+bool DrawViewShell::GotoBookmark(const String& rBookmark)
 {
-    sal_Bool bRet = sal_False;
+    bool bRet = false;
     ::sd::DrawDocShell* pDocSh = GetDocSh();
     if( pDocSh )
     {
@@ -80,7 +80,7 @@ sal_Bool DrawViewShell::GotoBookmark(const String& rBookmark)
 |*
 \************************************************************************/
 
-void DrawViewShell::MakeVisible(const Rectangle& rRect, ::Window& rWin)
+void DrawViewShell::MakeVisibleAtView(const basegfx::B2DRange& rRange, ::Window& rWin)
 {
 	// #98568# In older versions, if in X or Y the size of the object was
 	// smaller than the visible area, the user-defined zoom was
@@ -88,99 +88,98 @@ void DrawViewShell::MakeVisible(const Rectangle& rRect, ::Window& rWin)
 	// version which instead handles X/Y bigger/smaller and visibility
 	// questions seperately. The new behaviour is triggered with the
 	// bZoomAllowed parameter which for old behaviour should be set to
-	// sal_True. I looked at all uses of MakeVisible() in the application
+	// sal_True. I looked at all uses of MakeVisibleAtView() in the application
 	// and found no valid reason for really changing the zoom factor, thus I
 	// decided to NOT expand (incompatible) this virtual method to get one
 	// more parameter. If this is wanted in later versions, feel free to add
 	// that bool to the parameter list.
 	sal_Bool bZoomAllowed(sal_False);
-	Size aLogicSize(rRect.GetSize());
+	const basegfx::B2DVector aLogicSize(rRange.getRange());
 
 	// Sichtbarer Bereich
-	Size aVisSizePixel(rWin.GetOutputSizePixel());
-	Rectangle aVisArea(rWin.PixelToLogic(Rectangle(Point(0,0), aVisSizePixel)));
-	Size aVisAreaSize(aVisArea.GetSize());
+	const Size aVisSizePixel(rWin.GetOutputSizePixel());
+	basegfx::B2DRange aVisArea(rWin.GetInverseViewTransformation() *
+		basegfx::B2DRange(0.0, 0.0, aVisSizePixel.Width(), aVisSizePixel.Height()));
 
-	if(!aVisArea.IsInside(rRect) && !SlideShow::IsRunning( GetViewShellBase() ) )
+	if(!aVisArea.isInside(rRange) && !SlideShow::IsRunning( GetViewShellBase() ) )
 	{
 		// Objekt liegt nicht komplett im sichtbaren Bereich
-		sal_Int32 nFreeSpaceX(aVisAreaSize.Width() - aLogicSize.Width());
-		sal_Int32 nFreeSpaceY(aVisAreaSize.Height() - aLogicSize.Height());
+		basegfx::B2DVector aFreeSpace(aVisArea.getRange() - aLogicSize);
 
-		if(bZoomAllowed && (nFreeSpaceX < 0 || nFreeSpaceY < 0))
+		if(bZoomAllowed && (aFreeSpace.getX() < 0.0 || aFreeSpace.getY() < 0.0))
 		{
 			// Objekt passt nicht in sichtbaren Bereich -> auf Objektgroesse zoomen
-			SetZoomRect(rRect);
+			SetZoomRange(rRange);
 		}
 		else
 		{
 			// #98568# allow a mode for move-only visibility without zooming.
-			const sal_Int32 nPercentBorder(30);
-			const Rectangle aInnerRectangle(
-				aVisArea.Left() + ((aVisAreaSize.Width() * nPercentBorder) / 200),
-				aVisArea.Top() + ((aVisAreaSize.Height() * nPercentBorder) / 200),
-				aVisArea.Right() - ((aVisAreaSize.Width() * nPercentBorder) / 200),
-				aVisArea.Bottom() - ((aVisAreaSize.Height() * nPercentBorder) / 200)
-				);
-			Point aNewPos(aVisArea.TopLeft());
+			const double fPercentBorder(30.0 / 200.0);
+			const basegfx::B2DRange aInnerRange(
+				aVisArea.getMinX() + (aVisArea.getWidth() * fPercentBorder),
+				aVisArea.getMinY() + (aVisArea.getHeight() * fPercentBorder),
+				aVisArea.getMaxX() - (aVisArea.getWidth() * fPercentBorder),
+				aVisArea.getMaxY() - (aVisArea.getHeight() * fPercentBorder));
+			basegfx::B2DPoint aNewPos(aVisArea.getMinimum());
 
-			if(nFreeSpaceX < 0)
+			if(aFreeSpace.getX() < 0.0)
 			{
-				if(aInnerRectangle.Left() > rRect.Right())
+				if(aInnerRange.getMinX() > rRange.getMaxX())
 				{
 					// object moves out to the left
-					aNewPos.X() -= aVisAreaSize.Width() / 2;
+					aNewPos.setX(aNewPos.getX() - (aVisArea.getWidth() * 0.5));
 				}
 
-				if(aInnerRectangle.Right() < rRect.Left())
+				if(aInnerRange.getMaxX() < rRange.getMinX())
 				{
 					// object moves out to the right
-					aNewPos.X() += aVisAreaSize.Width() / 2;
+					aNewPos.setX(aNewPos.getX() + (aVisArea.getWidth() * 0.5));
 				}
 			}
 			else
 			{
-				if(nFreeSpaceX > rRect.GetWidth())
-					nFreeSpaceX = rRect.GetWidth();
+				if(aFreeSpace.getX() > rRange.getWidth())
+					aFreeSpace.setX(rRange.getWidth());
 
-				while(rRect.Right() > aNewPos.X() + aVisAreaSize.Width())
-					aNewPos.X() += nFreeSpaceX;
+				while(rRange.getMaxX() > aNewPos.getX() + aVisArea.getWidth())
+					aNewPos.setX(aNewPos.getX() + aFreeSpace.getX());
 				
-				while(rRect.Left() < aNewPos.X())
-					aNewPos.X() -= nFreeSpaceX;
+				while(rRange.getMinX() < aNewPos.getX())
+					aNewPos.setX(aNewPos.getX() - aFreeSpace.getX());
 			}
 
-			if(nFreeSpaceY < 0)
+			if(aFreeSpace.getY() < 0.0)
 			{
-				if(aInnerRectangle.Top() > rRect.Bottom())
+				if(aInnerRange.getMinY() > rRange.getMaxY())
 				{
 					// object moves out to the top
-					aNewPos.Y() -= aVisAreaSize.Height() / 2;
+					aNewPos.setY(aNewPos.getY() - (aVisArea.getHeight() * 0.5));
 				}
 
-				if(aInnerRectangle.Bottom() < rRect.Top())
+				if(aInnerRange.getMaxY() < rRange.getMinY())
 				{
 					// object moves out to the right
-					aNewPos.Y() += aVisAreaSize.Height() / 2;
+					aNewPos.setY(aNewPos.getY() + (aVisArea.getHeight() * 0.5));
 				}
 			}
 			else
 			{
-				if(nFreeSpaceY > rRect.GetHeight())
-					nFreeSpaceY = rRect.GetHeight();
+				if(aFreeSpace.getX() > rRange.getHeight())
+					aFreeSpace.setY(rRange.getHeight());
 
-				while(rRect.Bottom() > aNewPos.Y() + aVisAreaSize.Height())
-					aNewPos.Y() += nFreeSpaceY;
+				while(rRange.getMaxY() > aNewPos.getY() + aVisArea.getHeight())
+					aNewPos.setY(aNewPos.getY() + aFreeSpace.getY());
 				
-				while(rRect.Top() < aNewPos.Y())
-					aNewPos.Y() -= nFreeSpaceY;
+				while(rRange.getMinY() < aNewPos.getY())
+					aNewPos.setY(aNewPos.getY() - aFreeSpace.getY());
 			}
 
 			// did position change? Does it need to be set?
-			if(aNewPos != aVisArea.TopLeft())
+			if(!aNewPos.equal(aVisArea.getMinimum()))
 			{
-				aVisArea.SetPos(aNewPos);
-				SetZoomRect(aVisArea);
+				aVisArea = basegfx::B2DRange(aNewPos, aNewPos + aVisArea.getRange());
+
+				SetZoomRange(aVisArea);
 			}
 		}
 	}

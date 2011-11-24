@@ -28,7 +28,6 @@
 #include <svl/style.hxx>
 #include <svx/svdoashp.hxx>
 #include <editeng/eeitem.hxx>
-#include <svx/sdtagitm.hxx>
 #include <svl/whiter.hxx>
 #include <svl/itemset.hxx>
 #include <svl/smplhint.hxx>
@@ -42,12 +41,12 @@ namespace sdr
 		void CustomShapeProperties::UpdateTextFrameStatus()
 		{
 			SdrTextObj& rObj = (SdrTextObj&)GetSdrObject();
-			SdrTextAutoGrowHeightItem& rAutoGrowHeightItem =
-				(SdrTextAutoGrowHeightItem&)rObj.GetMergedItem( SDRATTR_TEXT_AUTOGROWHEIGHT );
+			SdrOnOffItem& rAutoGrowHeightItem =
+				(SdrOnOffItem&)rObj.GetMergedItem( SDRATTR_TEXT_AUTOGROWHEIGHT );
 			rObj.bTextFrame = rAutoGrowHeightItem.GetValue() != 0;
 
 			if ( rObj.bTextFrame )
-				rObj.NbcAdjustTextFrameWidthAndHeight();
+				rObj.AdjustTextFrameWidthAndHeight();
 		}
 
 		SfxItemSet& CustomShapeProperties::CreateObjectSpecificItemSet(SfxItemPool& rPool)
@@ -97,7 +96,7 @@ namespace sdr
 					TextProperties::ClearObjectItemDirect( nWhich2 );
 					nWhich2 = aIter.NextWhich();
 				}
-				SfxItemSet aSet((SfxItemPool&)(*GetSdrObject().GetObjectItemPool()));
+				SfxItemSet aSet((SfxItemPool&)(GetSdrObject().GetObjectItemPool()));
 				ItemSetChanged(aSet);
 			}
 			else
@@ -124,7 +123,7 @@ namespace sdr
 
 			if( SFX_ITEM_SET == rSet.GetItemState( SDRATTR_TEXT_AUTOGROWHEIGHT ) )
 			{
-				rObj.bTextFrame = ((SdrTextAutoGrowHeightItem&)rSet.Get( SDRATTR_TEXT_AUTOGROWHEIGHT )).GetValue() != 0;
+				rObj.bTextFrame = ((SdrOnOffItem&)rSet.Get( SDRATTR_TEXT_AUTOGROWHEIGHT )).GetValue() != 0;
 			}
 
 			// call parent
@@ -140,7 +139,7 @@ namespace sdr
 
 			if( pNewItem && ( SDRATTR_TEXT_AUTOGROWHEIGHT == nWhich ) )
 			{
-				rObj.bTextFrame = ((SdrTextAutoGrowHeightItem*)pNewItem)->GetValue() != 0;
+				rObj.bTextFrame = ((SdrOnOffItem*)pNewItem)->GetValue() != 0;
 			}
 			// call parent
 			TextProperties::ItemChange( nWhich, pNewItem );
@@ -196,14 +195,16 @@ namespace sdr
 		{
 			return *(new CustomShapeProperties(*this, rObj));
 		}
+		
 		void CustomShapeProperties::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 		{
 			TextProperties::Notify( rBC, rHint );
 
 			sal_Bool bRemoveRenderGeometry = sal_False;
 
-			const SfxStyleSheetHint *pStyleHint = PTR_CAST( SfxStyleSheetHint, &rHint );
-			const SfxSimpleHint *pSimpleHint = PTR_CAST( SfxSimpleHint, &rHint );
+			const SfxStyleSheetHint *pStyleHint = dynamic_cast< const SfxStyleSheetHint* >( &rHint );
+			const SfxSimpleHint *pSimpleHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
+			
 			if ( pStyleHint && pStyleHint->GetStyleSheet() == GetStyleSheet() )
 			{
 				switch( pStyleHint->GetHint() )

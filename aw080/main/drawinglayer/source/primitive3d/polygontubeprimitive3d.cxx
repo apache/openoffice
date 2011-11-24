@@ -438,7 +438,7 @@ namespace drawinglayer
 							basegfx::B3DHomMatrix aVectorTrans;
 							aVectorTrans.scale(fForwLen, getRadius(), getRadius());
 							aVectorTrans *= aRotVector;
-							aVectorTrans.translate(aCurr.getX(), aCurr.getY(), aCurr.getZ());
+							aVectorTrans.translate(aCurr);
 
 							if(bNoLineJoin || (!bClosed && !a))
 							{
@@ -470,7 +470,7 @@ namespace drawinglayer
 									aSphereTrans.rotate(F_PI - fRotInYZ, 0.0, 0.0);
 									aSphereTrans *= aRotVector;
 									aSphereTrans.scale(getRadius(), getRadius(), getRadius());
-									aSphereTrans.translate(aCurr.getX(), aCurr.getY(), aCurr.getZ());
+									aSphereTrans.translate(aCurr);
 
 									// line start edge, build transformed primitiveVector3D
 									TransformPrimitive3D* pNewTransformedB = new TransformPrimitive3D(aSphereTrans, aNewList);
@@ -490,7 +490,7 @@ namespace drawinglayer
 								aBackTrans.translate(1.0, 0.0, 0.0);
 								aBackTrans.scale(fForwLen, getRadius(), getRadius());
 								aBackTrans *= aRotVector;
-								aBackTrans.translate(aCurr.getX(), aCurr.getY(), aCurr.getZ());
+								aBackTrans.translate(aCurr);
 								
 								// line end edge, build transformed primitiveVector3D
 								TransformPrimitive3D* pNewTransformedD = new TransformPrimitive3D(aBackTrans, getLineCapSegments(nSegments, aMaterial));

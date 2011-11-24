@@ -126,7 +126,7 @@ void _CheckBoxWidth( const SwTableLine& rLine, SwTwips nSize )
              {                                                       \
                  do                                                  \
                  {                                                   \
-                     SwFrm *pFrm = PTR_CAST( SwFrm, pLast );         \
+                     SwFrm *pFrm = dynamic_cast< SwFrm* >( pLast );         \
                      if ( pFrm &&                                    \
                           ((SwRowFrm*)pFrm)->GetTabLine() == GetTabLines()[i] ) \
                      {                                               \

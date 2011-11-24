@@ -848,7 +848,7 @@ TYPEINIT1( SwXMLStylesContext_Impl, SvXMLStylesContext );
 inline SwXMLItemSetStyleContext_Impl *SwXMLStylesContext_Impl::GetSwStyle(
 		sal_uInt16 i ) const
 {
-	return PTR_CAST( SwXMLItemSetStyleContext_Impl, GetStyle( i ) );
+	return const_cast< SwXMLItemSetStyleContext_Impl* >( dynamic_cast< const SwXMLItemSetStyleContext_Impl* >( GetStyle( i ) ) );
 }
 
 SvXMLStyleContext *SwXMLStylesContext_Impl::CreateStyleStyleChildContext(
@@ -1162,10 +1162,8 @@ sal_Bool SwXMLImport::FindAutomaticStyle(
 	SwXMLItemSetStyleContext_Impl *pStyle = 0;
 	if( GetAutoStyles() )
 	{
-		pStyle = PTR_CAST( SwXMLItemSetStyleContext_Impl,
-			  GetAutoStyles()->
-					FindStyleChildContext( nFamily, rName,
-										   sal_True ) );
+		pStyle = const_cast< SwXMLItemSetStyleContext_Impl* >( dynamic_cast< const SwXMLItemSetStyleContext_Impl* >( GetAutoStyles()->
+			FindStyleChildContext( nFamily, rName, sal_True ) ) );
 		if( pStyle )
 		{
 			if( ppItemSet )

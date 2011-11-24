@@ -288,7 +288,7 @@ void lcl_addOutplaceProperties(
 		const XMLPropertyState **pStates,
 		const UniReference < XMLPropertySetMapper >& rMapper )
 {
-	SvEmbeddedInfoObject * pEmbed = PTR_CAST(SvEmbeddedInfoObject, pInfo );
+	const SvEmbeddedInfoObject * pEmbed = dynamic_cast< const SvEmbeddedInfoObject* >( pInfo );
 	if( pEmbed )
 	{
 		const Rectangle& rVisArea = pEmbed->GetVisArea();

@@ -90,6 +90,7 @@
 #include <vcl/virdev.hxx>
 #include <rtl/crc.h>
 #include <vos/xception.hxx>
+#include <svx/svdlegacy.hxx>
 using namespace vos;
 
 using namespace ::rtl;
@@ -167,11 +168,11 @@ EscherPropertyContainer::EscherPropertyContainer() :
 EscherPropertyContainer::EscherPropertyContainer(
 	EscherGraphicProvider& rGraphProv,
 			SvStream* pPiOutStrm,
-				Rectangle& rBoundRect ) :
+	basegfx::B2DRange& rShapeBoundRange ) :
 
 	pGraphicProvider	( &rGraphProv ),
 	pPicOutStrm			( pPiOutStrm ),
-	pShapeBoundRect		( &rBoundRect )
+	pShapeBoundRange	( &rShapeBoundRange )
 {
 	ImplInit();
 }
@@ -1129,7 +1130,7 @@ sal_Bool EscherPropertyContainer::CreateOLEGraphicProperties(
 	if ( rXShape.is() )
 	{
 		SdrObject* pSdrOLE2( GetSdrObjectFromXShape( rXShape ) );	// SJ: leaving unoapi, because currently there is
-		if ( pSdrOLE2 && pSdrOLE2->ISA( SdrOle2Obj ) )				// no access to the native graphic object
+		if ( pSdrOLE2 && dynamic_cast< SdrOle2Obj* >(pSdrOLE2) )				// no access to the native graphic object
 		{
 			Graphic* pGraphic = ((SdrOle2Obj*)pSdrOLE2)->GetGraphic();
 			if ( pGraphic )
@@ -1141,7 +1142,7 @@ sal_Bool EscherPropertyContainer::CreateOLEGraphicProperties(
 					AddOpt( ESCHER_Prop_fillType, ESCHER_FillPicture );
 					uno::Reference< beans::XPropertySet > aXPropSet( rXShape, uno::UNO_QUERY );
 
-					if ( pGraphicProvider && pPicOutStrm && pShapeBoundRect && aXPropSet.is() )
+					if ( pGraphicProvider && pPicOutStrm && pShapeBoundRange && aXPropSet.is() )
 					{
 						::com::sun::star::uno::Any aAny;
 						::com::sun::star::awt::Rectangle* pVisArea = NULL;
@@ -1150,8 +1151,8 @@ sal_Bool EscherPropertyContainer::CreateOLEGraphicProperties(
 							pVisArea = new ::com::sun::star::awt::Rectangle;
 							aAny >>= (*pVisArea);
 						}
-						Rectangle aRect( Point( 0, 0 ), pShapeBoundRect->GetSize() );
-						sal_uInt32 nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRect, pVisArea, NULL );
+						const basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0), pShapeBoundRange->getRange());
+						sal_uInt32 nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRange, pVisArea, NULL );
 						if ( nBlibId )
 						{
 							AddOpt( ESCHER_Prop_pib, nBlibId, sal_True );
@@ -1174,8 +1175,8 @@ sal_Bool EscherPropertyContainer::ImplCreateEmbeddedBmp( const ByteString& rUniq
     {
         EscherGraphicProvider aProvider;
         SvMemoryStream aMemStrm;
-        Rectangle aRect;
-        if ( aProvider.GetBlibID( aMemStrm, rUniqueId, aRect ) )
+        basegfx::B2DRange aRange;
+        if ( aProvider.GetBlibID( aMemStrm, rUniqueId, aRange ) )
         {
             // grab BLIP from stream and insert directly as complex property
             // ownership of stream memory goes to complex property
@@ -1444,11 +1445,15 @@ sal_Bool EscherPropertyContainer::CreateGraphicProperties(
                 else
                 {
                     pGraphicAttr->SetRotation( nAngle );
-                    if ( nAngle && pShapeBoundRect )   // up to xp ppoint does not rotate bitmaps !
+                    if ( nAngle && pShapeBoundRange )   // up to xp ppoint does not rotate bitmaps !
                     {
-                        Polygon aPoly( *pShapeBoundRect );
-                        aPoly.Rotate( pShapeBoundRect->TopLeft(), nAngle );
-                        *pShapeBoundRect = aPoly.GetBoundRect();
+						Rectangle aOldRect(
+							basegfx::fround(pShapeBoundRange->getMinX()), basegfx::fround(pShapeBoundRange->getMinY()), 
+							basegfx::fround(pShapeBoundRange->getMaxX()), basegfx::fround(pShapeBoundRange->getMaxY()));
+                        Polygon aPoly( aOldRect );
+                        aPoly.Rotate( aOldRect.TopLeft(), nAngle );
+                        aOldRect = aPoly.GetBoundRect();
+						*pShapeBoundRange = basegfx::B2DRange(aOldRect.Left(), aOldRect.Top(), aOldRect.Right(), aOldRect.Bottom());
                         bSuppressRotation = sal_True;
                     }
                 }
@@ -1462,12 +1467,12 @@ sal_Bool EscherPropertyContainer::CreateGraphicProperties(
             if ( aUniqueId.Len() )
             {
                 // write out embedded graphic
-                if ( pGraphicProvider && pPicOutStrm && pShapeBoundRect )
+                if ( pGraphicProvider && pPicOutStrm && pShapeBoundRange )
                 {
-                    Rectangle aRect( Point( 0, 0 ), pShapeBoundRect->GetSize() );
+                    const basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0), pShapeBoundRange->getRange());
 
                     sal_uInt32 nBlibId = 0;
-                    nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRect, NULL, pGraphicAttr );
+                    nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRange, NULL, pGraphicAttr );
                     if ( nBlibId )
                     {
                         if ( bCreateFillBitmap )
@@ -1484,9 +1489,9 @@ sal_Bool EscherPropertyContainer::CreateGraphicProperties(
                 {
                     EscherGraphicProvider aProvider;
                     SvMemoryStream aMemStrm;
-                    Rectangle aRect;
+					const basegfx::B2DRange aRange;
 
-                    if ( aProvider.GetBlibID( aMemStrm, aUniqueId, aRect, NULL, pGraphicAttr ) )
+                    if ( aProvider.GetBlibID( aMemStrm, aUniqueId, aRange, NULL, pGraphicAttr ) )
                     {
                         // grab BLIP from stream and insert directly as complex property
                         // ownership of stream memory goes to complex property
@@ -1713,7 +1718,7 @@ sal_Bool EscherPropertyContainer::CreatePolygonProperties(
 			Polygon aPolygon;
 
 			sal_uInt16 i, j, k, nPoints, nBezPoints, nPolyCount = aPolyPolygon.Count();
-			Rectangle aRect( aPolyPolygon.GetBoundRect() );
+			const Rectangle aRect( aPolyPolygon.GetBoundRect() );
 			rGeoRect = ::com::sun::star::awt::Rectangle( aRect.Left(), aRect.Top(), aRect.GetWidth(), aRect.GetHeight() );
 
 			for ( nBezPoints = nPoints = i = 0; i < nPolyCount; i++ )
@@ -1942,7 +1947,7 @@ sal_Bool EscherPropertyContainer::CreateShadowProperties(
 	GetOpt( ESCHER_Prop_fNoFillHitTest, nFillFlags );
 
 	sal_uInt32 nDummy;
-	sal_Bool bGraphic = GetOpt( DFF_Prop_pib, nDummy ) || GetOpt( DFF_Prop_pibName, nDummy ) || GetOpt( DFF_Prop_pibFlags, nDummy );
+	bool bGraphic = GetOpt( DFF_Prop_pib, nDummy ) || GetOpt( DFF_Prop_pibName, nDummy ) || GetOpt( DFF_Prop_pibFlags, nDummy );
 
 	sal_uInt32 nShadowFlags = 0x20000;
 	if ( ( nLineFlags & 8 ) || ( nFillFlags & 0x10 ) || bGraphic )
@@ -3751,7 +3756,7 @@ sal_Bool EscherGraphicProvider::GetPrefSize( const sal_uInt32 nBlibId, Size& rPr
 }
 
 sal_uInt32 EscherGraphicProvider::GetBlibID( SvStream& rPicOutStrm, const ByteString& rId,
-											const Rectangle& /* rBoundRect */, const com::sun::star::awt::Rectangle* pVisArea, const GraphicAttr* pGraphicAttr )
+	const basegfx::B2DRange& /* rBoundRange */, const com::sun::star::awt::Rectangle* pVisArea, const GraphicAttr* pGraphicAttr )
 {
 	sal_uInt32			nBlibId = 0;
 	GraphicObject		aGraphicObject( rId );
@@ -4140,12 +4145,11 @@ sal_uInt32 EscherConnectorListEntry::GetConnectorRule( sal_Bool bFirst )
 
 		if ( aType == "drawing.Custom" )
 		{
-			SdrObject* pCustoShape( GetSdrObjectFromXShape( aXShape ) );
-			if ( pCustoShape && pCustoShape->ISA( SdrObjCustomShape ) )
-			{
-				SdrCustomShapeGeometryItem& rGeometryItem = (SdrCustomShapeGeometryItem&)(const SdrCustomShapeGeometryItem&)
-					pCustoShape->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY );
+			SdrObjCustomShape* pCustoShape( dynamic_cast< SdrObjCustomShape* >(GetSdrObjectFromXShape( aXShape ) ) );
 
+			if ( pCustoShape )
+			{
+				SdrCustomShapeGeometryItem& rGeometryItem = (SdrCustomShapeGeometryItem&)pCustoShape->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY );
 				const rtl::OUString sPath( RTL_CONSTASCII_USTRINGPARAM( "Path" ) );
 				const rtl::OUString	sType( RTL_CONSTASCII_USTRINGPARAM ( "Type" ) );
 				const rtl::OUString sGluePointType( RTL_CONSTASCII_USTRINGPARAM( "GluePointType" ) );
@@ -4175,8 +4179,8 @@ sal_uInt32 EscherConnectorListEntry::GetConnectorRule( sal_Bool bFirst )
 							for ( nNum = 0; nNum < nAnz; nNum++ )
 							{
 								const SdrGluePoint& rGP = (*pList)[ nNum ];
-								Point aPt( rGP.GetAbsolutePos( *pCustoShape ) );
-								aPoly.Insert( POLY_APPEND, aPt );
+								const basegfx::B2DPoint aPt( rGP.GetAbsolutePos( sdr::legacy::GetSnapRange(*pCustoShape) ) );
+								aPoly.Insert( POLY_APPEND, Point(basegfx::fround(aPt.getX()), basegfx::fround(aPt.getY())) );
 							}
 							nRule = GetClosestPoint( aPoly, aRefPoint );
 							bRectangularConnection = false;
@@ -4185,15 +4189,16 @@ sal_uInt32 EscherConnectorListEntry::GetConnectorRule( sal_Bool bFirst )
 				}
 				else if ( nGluePointType == com::sun::star::drawing::EnhancedCustomShapeGluePointType::SEGMENTS )
 				{
-					SdrObject* pPoly = pCustoShape->DoConvertToPolyObj( sal_True, true );
-					if ( pPoly && pPoly->ISA( SdrPathObj ) )
+					SdrPathObj* pPoly = dynamic_cast< SdrPathObj* >(pCustoShape->DoConvertToPolygonObject(true, true));
+					
+					if ( pPoly )
 					{
 						sal_Int16 a, b, nIndex = 0;
 						sal_uInt32 nDistance = 0xffffffff;
 
 						// #i74631# use explicit constructor here. Also XPolyPolygon is not necessary,
 						// reducing to PolyPolygon
-						const PolyPolygon aPolyPoly(((SdrPathObj*)pPoly)->GetPathPoly());
+						const PolyPolygon aPolyPoly(pPoly->getB2DPolyPolygonInObjectCoordinates());
 
 						for ( a = 0; a < aPolyPoly.Count(); a++ )
 						{
@@ -4774,24 +4779,26 @@ void EscherEx::AddAtom( sal_uInt32 nAtomSize, sal_uInt16 nRecType, int nRecVersi
 
 // ---------------------------------------------------------------------------------------------
 
-void EscherEx::AddChildAnchor( const Rectangle& rRect )
+void EscherEx::AddChildAnchor( const basegfx::B2DRange& rRange )
 {
     AddAtom( 16, ESCHER_ChildAnchor );
-    *mpOutStrm  << (sal_Int32)rRect.Left()
-                << (sal_Int32)rRect.Top()
-                << (sal_Int32)rRect.Right()
-                << (sal_Int32)rRect.Bottom();
+    *mpOutStrm  << (sal_Int32)basegfx::fround(rRange.getMinX())
+                << (sal_Int32)basegfx::fround(rRange.getMinY())
+                << (sal_Int32)basegfx::fround(rRange.getMaxX())
+                << (sal_Int32)basegfx::fround(rRange.getMaxY());
 }
 
 // ---------------------------------------------------------------------------------------------
 
-void EscherEx::AddClientAnchor( const Rectangle& rRect )
+void EscherEx::AddClientAnchor( const basegfx::B2DRange& rRange )
 {
 	AddAtom( 8, ESCHER_ClientAnchor );
-    *mpOutStrm << (sal_Int16)rRect.Top()
-               << (sal_Int16)rRect.Left()
-               << (sal_Int16)( rRect.GetWidth()  + rRect.Left() )
-               << (sal_Int16)( rRect.GetHeight() + rRect.Top() );
+	// Askes SJ, here it is CORRECT to first write Y, then X (!)
+	// Do NOT change this, it's NOT a typo (!)
+    *mpOutStrm << (sal_Int16)basegfx::fround(rRange.getMinY())
+               << (sal_Int16)basegfx::fround(rRange.getMinX())
+               << (sal_Int16)basegfx::fround(rRange.getMaxX())
+               << (sal_Int16)basegfx::fround(rRange.getMaxY());
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -4803,21 +4810,21 @@ EscherExHostAppData* EscherEx::EnterAdditionalTextGroup()
 
 // ---------------------------------------------------------------------------------------------
 
-sal_uInt32 EscherEx::EnterGroup( const String& rShapeName, const Rectangle* pBoundRect )
+sal_uInt32 EscherEx::EnterGroup( const String& rShapeName, const basegfx::B2DRange* pBoundRange )
 {
-	Rectangle aRect;
-	if( pBoundRect )
-		aRect = *pBoundRect;
+	basegfx::B2DRange aRange;
+	if( pBoundRange )
+		aRange = *pBoundRange;
 
 	OpenContainer( ESCHER_SpgrContainer );
 	OpenContainer( ESCHER_SpContainer );
 	AddAtom( 16, ESCHER_Spgr, 1 );
 	PtReplaceOrInsert( ESCHER_Persist_Grouping_Snap | mnGroupLevel,
 						mpOutStrm->Tell() );
-	*mpOutStrm	<< (sal_Int32)aRect.Left()	// Bounding box fuer die Gruppierten shapes an die sie attached werden
-				<< (sal_Int32)aRect.Top()
-				<< (sal_Int32)aRect.Right()
-				<< (sal_Int32)aRect.Bottom();
+	*mpOutStrm	<< (sal_Int32)basegfx::fround(aRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
+				<< (sal_Int32)basegfx::fround(aRange.getMinY())
+				<< (sal_Int32)basegfx::fround(aRange.getMaxX())
+				<< (sal_Int32)basegfx::fround(aRange.getMaxY());
 
     sal_uInt32 nShapeId = GenerateShapeId();
 	if ( !mnGroupLevel )
@@ -4834,15 +4841,15 @@ sal_uInt32 EscherEx::EnterGroup( const String& rShapeName, const Rectangle* pBou
         if( rShapeName.Len() > 0 )
             aPropOpt.AddOpt( ESCHER_Prop_wzName, rShapeName );
 
-		Commit( aPropOpt, aRect );
+		Commit( aPropOpt, aRange );
 		if ( mnGroupLevel > 1 )
-            AddChildAnchor( aRect );
+            AddChildAnchor( aRange );
 
 		EscherExHostAppData* pAppData = mpImplEscherExSdr->ImplGetHostData();
 		if( pAppData )
 		{
 			if ( mnGroupLevel <= 1 )
-				pAppData->WriteClientAnchor( *this, aRect );
+				pAppData->WriteClientAnchor( *this, aRange );
 			pAppData->WriteClientData( *this );
 		}
 	}
@@ -4851,14 +4858,14 @@ sal_uInt32 EscherEx::EnterGroup( const String& rShapeName, const Rectangle* pBou
     return nShapeId;
 }
 
-sal_uInt32 EscherEx::EnterGroup( const Rectangle* pBoundRect )
+sal_uInt32 EscherEx::EnterGroup( const basegfx::B2DRange* pBoundRange )
 {
-    return EnterGroup( String::EmptyString(), pBoundRect );
+    return EnterGroup( String::EmptyString(), pBoundRange );
 }
 
 // ---------------------------------------------------------------------------------------------
 
-sal_Bool EscherEx::SetGroupSnapRect( sal_uInt32 nGroupLevel, const Rectangle& rRect )
+sal_Bool EscherEx::SetGroupSnapRange( sal_uInt32 nGroupLevel, const basegfx::B2DRange& rRange )
 {
 	sal_Bool bRetValue = sal_False;
 	if ( nGroupLevel )
@@ -4866,10 +4873,10 @@ sal_Bool EscherEx::SetGroupSnapRect( sal_uInt32 nGroupLevel, const Rectangle& rR
 		sal_uInt32 nCurrentPos = mpOutStrm->Tell();
 		if ( DoSeek( ESCHER_Persist_Grouping_Snap | ( nGroupLevel - 1 ) ) )
 		{
-			*mpOutStrm	<< (sal_Int32)rRect.Left()	// Bounding box fuer die Gruppierten shapes an die sie attached werden
-						<< (sal_Int32)rRect.Top()
-						<< (sal_Int32)rRect.Right()
-						<< (sal_Int32)rRect.Bottom();
+			*mpOutStrm	<< (sal_Int32)basegfx::fround(rRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
+						<< (sal_Int32)basegfx::fround(rRange.getMinY())
+						<< (sal_Int32)basegfx::fround(rRange.getMaxX())
+						<< (sal_Int32)basegfx::fround(rRange.getMaxY());
 			mpOutStrm->Seek( nCurrentPos );
 		}
 	}
@@ -4878,7 +4885,7 @@ sal_Bool EscherEx::SetGroupSnapRect( sal_uInt32 nGroupLevel, const Rectangle& rR
 
 // ---------------------------------------------------------------------------------------------
 
-sal_Bool EscherEx::SetGroupLogicRect( sal_uInt32 nGroupLevel, const Rectangle& rRect )
+sal_Bool EscherEx::SetGroupLogicRange( sal_uInt32 nGroupLevel, const basegfx::B2DRange& rRange )
 {
 	sal_Bool bRetValue = sal_False;
 	if ( nGroupLevel )
@@ -4886,7 +4893,10 @@ sal_Bool EscherEx::SetGroupLogicRect( sal_uInt32 nGroupLevel, const Rectangle& r
 		sal_uInt32 nCurrentPos = mpOutStrm->Tell();
 		if ( DoSeek( ESCHER_Persist_Grouping_Logic | ( nGroupLevel - 1 ) ) )
 		{
-			*mpOutStrm << (sal_Int16)rRect.Top() << (sal_Int16)rRect.Left() << (sal_Int16)rRect.Right() << (sal_Int16)rRect.Bottom();
+			*mpOutStrm << (sal_Int16)basegfx::fround(rRange.getMinX()) 
+					   << (sal_Int16)basegfx::fround(rRange.getMinY()) 
+					   << (sal_Int16)basegfx::fround(rRange.getMaxX()) 
+					   << (sal_Int16)basegfx::fround(rRange.getMaxY());
 			mpOutStrm->Seek( nCurrentPos );
 		}
 	}
@@ -4922,7 +4932,7 @@ void EscherEx::AddShape( sal_uInt32 nShpInstance, sal_uInt32 nFlags, sal_uInt32 
 
 // ---------------------------------------------------------------------------------------------
 
-void EscherEx::Commit( EscherPropertyContainer& rProps, const Rectangle& )
+void EscherEx::Commit( EscherPropertyContainer& rProps, const basegfx::B2DRange& )
 {
 	rProps.Commit( GetStream() );
 }

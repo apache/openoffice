@@ -98,7 +98,7 @@ public:
 
     virtual EscherExHostAppData* StartShape(
                             const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape>& rxShape,
-                            const Rectangle* pChildAnchor );
+                            const basegfx::B2DRange* pChildAnchor );
 	virtual	void				EndShape( sal_uInt16 nShapeType, sal_uInt32 nShapeID );
 	virtual	EscherExHostAppData*	EnterAdditionalTextGroup();
 
@@ -110,7 +110,7 @@ public:
         @descr  Writes the form control data to the 'Ctls' stream. */
     XclExpOcxControlObj* CreateCtrlObj(
                             ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > xShape,
-                            const Rectangle* pChildAnchor );
+                            const basegfx::B2DRange* pChildAnchor );
 
 private:
     SotStorageStreamRef  mxCtlsStrm;         /// The 'Ctls' stream.
@@ -118,7 +118,7 @@ private:
     /** Creates a TBX form control OBJ record from the passed form control. */
     XclExpTbxControlObj* CreateCtrlObj(
                             ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > xShape,
-                            const Rectangle* pChildAnchor );
+                            const basegfx::B2DRange* pChildAnchor );
 
 private:
     /** Tries to get the name of a Basic macro from a control. */

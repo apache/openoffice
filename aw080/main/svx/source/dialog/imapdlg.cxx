@@ -133,7 +133,7 @@ void SvxIMapDlgItem::StateChanged( sal_uInt16 nSID, SfxItemState /*eState*/,
 {
 	if ( ( nSID == SID_IMAP_EXEC ) && pItem )
 	{
-		const SfxBoolItem* pStateItem = PTR_CAST( SfxBoolItem, pItem );
+		const SfxBoolItem* pStateItem = dynamic_cast< const SfxBoolItem* >( pItem );
 
 		DBG_ASSERT( pStateItem || pItem == 0, "SfxBoolItem erwartet");
 
@@ -972,8 +972,8 @@ IMPL_LINK( SvxIMapDlg, StateHdl, IMapWindow*, pWnd )
 	const SdrObject*	pObj = pWnd->GetSelectedSdrObject();
 	const SdrModel*		pModel = pWnd->GetSdrModel();
 	const SdrView*		pView = pWnd->GetSdrView();
-	const sal_Bool			bPolyEdit = ( pObj != NULL ) && pObj->ISA( SdrPathObj );
-	const sal_Bool			bDrawEnabled = !( bPolyEdit && aTbxIMapDlg1.IsItemChecked( TBI_POLYEDIT ) );
+	const bool bPolyEdit = pObj && dynamic_cast< const SdrPathObj* >(pObj);
+	const bool bDrawEnabled = !( bPolyEdit && aTbxIMapDlg1.IsItemChecked( TBI_POLYEDIT ) );
 
 	aTbxIMapDlg1.EnableItem( TBI_APPLY, pOwnData->bExecState && pWnd->IsChanged() );
 

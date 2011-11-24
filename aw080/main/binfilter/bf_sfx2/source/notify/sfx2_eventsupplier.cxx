@@ -454,7 +454,7 @@ namespace binfilter {
 
 /*N*/ void SfxGlobalEvents_Impl::Notify( SfxBroadcaster& aBC, const SfxHint& aHint )
 /*N*/ {
-/*N*/ 	SfxEventHint* pNamedHint = PTR_CAST( SfxEventHint, &aHint );
+/*N*/ 	const SfxEventHint* pNamedHint = dynamic_cast< const SfxEventHint* >( &aHint );
 /*N*/ 	if ( pNamedHint )
 /*N*/ 	{
 /*N*/ 		OUSTRING aName = SfxEventConfiguration::GetEventName_Impl( pNamedHint->GetEventId() );

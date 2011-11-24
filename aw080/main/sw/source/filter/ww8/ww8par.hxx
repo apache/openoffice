@@ -568,8 +568,8 @@ private:
     // indicates, if the OLE object is imported inside a group object
     virtual SdrObject* ImportOLE( long nOLEId,
                                   const Graphic& rGrf,
-                                  const Rectangle& rBoundRect,
-								  const Rectangle& rVisArea,
+                                  const basegfx::B2DRange& rBoundRect,
+								  const basegfx::B2DRange& rVisArea,
                                   const int _nCalledByGroup,
                                   sal_Int64 nAspect ) const;
     // <--
@@ -585,7 +585,7 @@ public:
     void DisableFallbackStream();
     void EnableFallbackStream();
 protected:
-    virtual SdrObject* ProcessObj( SvStream& rSt, DffObjData& rObjData, void* pData, Rectangle& rTextRect, SdrObject* pObj );
+    virtual SdrObject* ProcessObj( SvStream& rSt, DffObjData& rObjData, void* pData, basegfx::B2DRange& rTextRect, SdrObject* pObj );
 };
 
 
@@ -1239,10 +1239,10 @@ private:
     SwFrmFmt* ImportGraf(SdrTextObj* pTextObj = 0, SwFrmFmt* pFlyFmt = 0);
 
     SdrObject* ImportOleBase( Graphic& rGraph, const Graphic* pGrf=0,
-        const SfxItemSet* pFlySet=0, const Rectangle& aVisArea = Rectangle() );
+        const SfxItemSet* pFlySet=0, const basegfx::B2DRange& aVisArea = basegfx::B2DRange() );
 
     SwFrmFmt* ImportOle( const Graphic* = 0, const SfxItemSet* pFlySet = 0,
-        const SfxItemSet* pGrfSet = 0, const Rectangle& aVisArea = Rectangle() );
+        const SfxItemSet* pGrfSet = 0, const basegfx::B2DRange& aVisArea = basegfx::B2DRange() );
     SwFlyFrmFmt* InsertOle(SdrOle2Obj &rObject, const SfxItemSet &rFlySet,
         const SfxItemSet &rGrfSet);
 

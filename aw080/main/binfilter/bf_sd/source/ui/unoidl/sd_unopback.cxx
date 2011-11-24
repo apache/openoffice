@@ -103,7 +103,7 @@ SdUnoPageBackground::~SdUnoPageBackground() throw()
 
 void SdUnoPageBackground::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
-	const SdrHint* pSdrHint = PTR_CAST( SdrHint, &rHint );
+	const SdrHint* pSdrHint = dynamic_cast< const SdrHint* >( &rHint );
 
 	if( pSdrHint )
 	{

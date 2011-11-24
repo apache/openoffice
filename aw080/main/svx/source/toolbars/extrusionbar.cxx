@@ -78,9 +78,6 @@ SFX_IMPL_INTERFACE(ExtrusionBar, SfxShell, SVX_RES(RID_SVX_EXTRUSION_BAR))
 	SFX_OBJECTBAR_REGISTRATION( SFX_OBJECTBAR_OBJECT, SVX_RES(RID_SVX_EXTRUSION_BAR) );
 }
 
-TYPEINIT1( ExtrusionBar, SfxShell );
-
-
 /*************************************************************************
 |*
 |* Standard-Konstruktor
@@ -333,8 +330,8 @@ static void impl_execute( SdrView*, SfxRequest& rReq, SdrCustomShapeGeometryItem
 		if( rReq.GetArgs() && rReq.GetArgs()->GetItemState( SID_EXTRUSION_3D_COLOR ) == SFX_ITEM_SET)
 		{
 			Color aColor( ((const SvxColorItem&)rReq.GetArgs()->Get(SID_EXTRUSION_3D_COLOR)).GetValue() );
-
 			const bool bAuto = aColor == COL_AUTO;
+            const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pObj);
 
 			com::sun::star::beans::PropertyValue aPropValue;
 			aPropValue.Name = sExtrusionColor;
@@ -349,7 +346,6 @@ static void impl_execute( SdrView*, SfxRequest& rReq, SdrCustomShapeGeometryItem
 			{
 				pObj->SetMergedItem( XSecondaryFillColorItem( String(), aColor ) );
 			}
-			pObj->BroadcastObjectChange();
 		}
 	}
 	break;
@@ -570,34 +566,32 @@ void ExtrusionBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rB
 		}	// PASSTROUGH
 		case SID_EXTRUSION_LIGHTING_DIRECTION:
 		{
+			if(pSdrView->areSdrObjectsSelected())
+			{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING;
 
-			const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-			sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
+				const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
 
-			for(i=0; i<nCount; i++)
+				for(sal_uInt32 i(0); i < aSelection.size(); i++)
 			{
-				SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-				if( pObj->ISA(SdrObjCustomShape) )
+					SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
+
+					if( pObj )
 				{
+						const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pObj);
 					if( bUndo )
 					{
 						String aStr( SVX_RES( nStrResId ) );
 						pSdrView->BegUndo( aStr );
-						pSdrView->AddUndo( pSdrView->GetModel()->GetSdrUndoFactory().CreateUndoAttrObject( *pObj ) );
+							pSdrView->AddUndo( pSdrView->getSdrModelFromSdrView().GetSdrUndoFactory().CreateUndoAttrObject( *pObj ) );
 					}
 					SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
 					impl_execute( pSdrView, rReq, aGeometryItem, pObj );
 					pObj->SetMergedItem( aGeometryItem );
-					pObj->BroadcastObjectChange();
 					if( bUndo )
 						pSdrView->EndUndo();
-
-                    // simulate a context change:
-                    // force SelectionHasChanged() being called
-                    // so that extrusion bar will be visible/hidden
-                    pSdrView->MarkListHasChanged();
+					}
 				}
 			}
 		}
@@ -651,24 +645,24 @@ void ExtrusionBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rB
 
 void getExtrusionDirectionState( SdrView* pSdrView, SfxItemSet& rSet )
 {
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
+	double fFinalSkewAngle = -1;
+	bool bHasCustomShape = false;
 
+	if(pSdrView->areSdrObjectsSelected())
+	{
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
 	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
 	static const rtl::OUString	sViewPoint( RTL_CONSTASCII_USTRINGPARAM ( "ViewPoint" ) );
 	static const rtl::OUString	sOrigin( RTL_CONSTASCII_USTRINGPARAM ( "Origin" ) );
 	static const rtl::OUString	sSkew( RTL_CONSTASCII_USTRINGPARAM ( "Skew" ) );
 	static const rtl::OUString	sProjectionMode( RTL_CONSTASCII_USTRINGPARAM ( "ProjectionMode" ) );
-	
 	com::sun::star::uno::Any* pAny;
 
-	double fFinalSkewAngle = -1;
-	bool bHasCustomShape = false;
-
-	for(i=0;i<nCount; i++)
+		for(sal_uInt32 i(0); i < aSelection.size(); i++)
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
+
+			if( pObj )
 		{
 			SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
 
@@ -793,6 +787,7 @@ void getExtrusionDirectionState( SdrView* pSdrView, SfxItemSet& rSet )
 				break;
 		}
 	}
+	}
 
 	if( bHasCustomShape )
 		rSet.Put( SfxInt32Item( SID_EXTRUSION_DIRECTION, (sal_Int32)fFinalSkewAngle ) );
@@ -802,52 +797,53 @@ void getExtrusionDirectionState( SdrView* pSdrView, SfxItemSet& rSet )
 
 void getExtrusionProjectionState( SdrView* pSdrView, SfxItemSet& rSet )
 {
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
-
-	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-	static const rtl::OUString	sProjectionMode( RTL_CONSTASCII_USTRINGPARAM ( "ProjectionMode" ) );
-	
-	com::sun::star::uno::Any* pAny;
-
 	sal_Int32 nFinalProjection = -1;
 	bool bHasCustomShape = false;
 
-	for(i=0;i<nCount; i++)
+	if(pSdrView->areSdrObjectsSelected())
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
-		{
-			// see if this is an extruded customshape
-			if( !bHasCustomShape )
-			{
-				SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
-				Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
-				if( pAny_ )
-					*pAny_ >>= bHasCustomShape;
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
+	    static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
+	    static const rtl::OUString	sProjectionMode( RTL_CONSTASCII_USTRINGPARAM ( "ProjectionMode" ) );
+	    com::sun::star::uno::Any* pAny;
 
-				if( !bHasCustomShape )
-					continue;
-			}
+	    for(sal_uInt32 i(0); i < aSelection.size(); i++)
+	    {
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
 
-			SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+			if( pObj )
+    		{
+			    // see if this is an extruded customshape
+			    if( !bHasCustomShape )
+			    {
+				    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+				    Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
+				    if( pAny_ )
+					    *pAny_ >>= bHasCustomShape;
 
-			sal_Bool	bParallel = sal_True;
-			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sProjectionMode );
-			ProjectionMode eProjectionMode;
-			if( pAny && ( *pAny >>= eProjectionMode ) )
-				bParallel = eProjectionMode == ProjectionMode_PARALLEL;
+				    if( !bHasCustomShape )
+					    continue;
+			    }
 
-			if( nFinalProjection == -1 )
-			{
-				nFinalProjection = bParallel;
-			}
-			else if( nFinalProjection != bParallel )
-			{
-				nFinalProjection = -1;
-				break;
-			}
-		}
+			    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+
+			    sal_Bool	bParallel = sal_True;
+			    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sProjectionMode );
+			    ProjectionMode eProjectionMode;
+			    if( pAny && ( *pAny >>= eProjectionMode ) )
+				    bParallel = eProjectionMode == ProjectionMode_PARALLEL;
+
+			    if( nFinalProjection == -1 )
+			    {
+				    nFinalProjection = bParallel;
+			    }
+			    else if( nFinalProjection != bParallel )
+			    {
+				    nFinalProjection = -1;
+				    break;
+			    }
+		    }
+	    }
 	}
 
 	if( bHasCustomShape )
@@ -858,85 +854,86 @@ void getExtrusionProjectionState( SdrView* pSdrView, SfxItemSet& rSet )
 
 void getExtrusionSurfaceState( SdrView* pSdrView, SfxItemSet& rSet )
 {
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
-
-	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-	static const rtl::OUString	sShadeMode( RTL_CONSTASCII_USTRINGPARAM ( "ShadeMode" ) );
-	static const rtl::OUString	sSpecularity( RTL_CONSTASCII_USTRINGPARAM ( "Specularity" ) );
-	static const rtl::OUString	sDiffusion( RTL_CONSTASCII_USTRINGPARAM ( "Diffusion" ) );
-	static const rtl::OUString	sMetal( RTL_CONSTASCII_USTRINGPARAM ( "Metal" ) );
-	
-	com::sun::star::uno::Any* pAny;
-
 	sal_Int32 nFinalSurface = -1;
 	bool bHasCustomShape = false;
 
-	for(i=0;i<nCount; i++)
+	if(pSdrView->areSdrObjectsSelected())
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
-		{
-			SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
+	    static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
+	    static const rtl::OUString	sShadeMode( RTL_CONSTASCII_USTRINGPARAM ( "ShadeMode" ) );
+	    static const rtl::OUString	sSpecularity( RTL_CONSTASCII_USTRINGPARAM ( "Specularity" ) );
+	    static const rtl::OUString	sDiffusion( RTL_CONSTASCII_USTRINGPARAM ( "Diffusion" ) );
+	    static const rtl::OUString	sMetal( RTL_CONSTASCII_USTRINGPARAM ( "Metal" ) );
+	    com::sun::star::uno::Any* pAny;
 
-			// see if this is an extruded customshape
-			if( !bHasCustomShape )
-			{
-				Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
-				if( pAny_ )
-					*pAny_ >>= bHasCustomShape;
+		for(sal_uInt32 i(0); i < aSelection.size(); i++)
+    	{
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
 
-				if( !bHasCustomShape )
-					continue;
-			}
+			if( pObj )
+	    	{
+			    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
 
-			sal_Int32 nSurface = 0; // wire frame
+			    // see if this is an extruded customshape
+			    if( !bHasCustomShape )
+			    {
+				    Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
+				    if( pAny_ )
+					    *pAny_ >>= bHasCustomShape;
 
-			ShadeMode eShadeMode( ShadeMode_FLAT );
-			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sShadeMode );
-			if( pAny )
-				*pAny >>= eShadeMode;
+				    if( !bHasCustomShape )
+					    continue;
+			    }
 
-			if( eShadeMode == ShadeMode_FLAT )
-			{
-				sal_Bool bMetal = sal_False;
-				pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sMetal );
-				if( pAny )
-					*pAny >>= bMetal;
+			    sal_Int32 nSurface = 0; // wire frame
 
-				if( bMetal )
-				{
-					nSurface = 3; // metal
-				}
-				else
-				{	
-					double fSpecularity = 0;
-					pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sSpecularity );
-					if( pAny )
-						*pAny >>= fSpecularity;
+			    ShadeMode eShadeMode( ShadeMode_FLAT );
+			    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sShadeMode );
+			    if( pAny )
+				    *pAny >>= eShadeMode;
 
-					const double e = 0.0001;
-					if( (fSpecularity > -e) && (fSpecularity < e) )
-					{
-						nSurface = 1; // matte
-					}
-					else
-					{
-						nSurface = 2; // plastic
-					}
-				}
-			}
+			    if( eShadeMode == ShadeMode_FLAT )
+			    {
+				    sal_Bool bMetal = sal_False;
+				    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sMetal );
+				    if( pAny )
+					    *pAny >>= bMetal;
 
-			if( nFinalSurface == -1 )
-			{
-				nFinalSurface = nSurface;
-			}
-			else if( nFinalSurface != nSurface )
-			{
-				nFinalSurface = -1;
-				break;
-			}
-		}
+				    if( bMetal )
+				    {
+					    nSurface = 3; // metal
+				    }
+				    else
+				    {	
+					    double fSpecularity = 0;
+					    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sSpecularity );
+					    if( pAny )
+						    *pAny >>= fSpecularity;
+
+					    const double e = 0.0001;
+					    if( (fSpecularity > -e) && (fSpecularity < e) )
+					    {
+						    nSurface = 1; // matte
+					    }
+					    else
+					    {
+						    nSurface = 2; // plastic
+					    }
+				    }
+			    }
+
+			    if( nFinalSurface == -1 )
+			    {
+				    nFinalSurface = nSurface;
+			    }
+			    else if( nFinalSurface != nSurface )
+			    {
+				    nFinalSurface = -1;
+				    break;
+			    }
+		    }
+	    }
 	}
 
 	if( bHasCustomShape )
@@ -947,61 +944,59 @@ void getExtrusionSurfaceState( SdrView* pSdrView, SfxItemSet& rSet )
 
 void getExtrusionDepthState( SdrView* pSdrView, SfxItemSet& rSet )
 {
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
-
-	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-	static const rtl::OUString	sDepth( RTL_CONSTASCII_USTRINGPARAM ( "Depth" ) );
-	
-	com::sun::star::uno::Any* pAny;
-
 	double fFinalDepth = -1;
 	bool bHasCustomShape = false;
 
-	for(i=0;i<nCount; i++)
+	if(pSdrView->areSdrObjectsSelected())
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
-		{
-			SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
+	    static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
+	    static const rtl::OUString	sDepth( RTL_CONSTASCII_USTRINGPARAM ( "Depth" ) );
+	    com::sun::star::uno::Any* pAny;
 
-			// see if this is an extruded customshape
-			if( !bHasCustomShape )
-			{
-				Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
-				if( pAny_ )
-					*pAny_ >>= bHasCustomShape;
+		for(sal_uInt32 i(0); i < aSelection.size(); i++)
+	    {
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
 
-				if( !bHasCustomShape )
-					continue;
-			}
+			if( pObj )
+		    {
+			    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
 
-			double fDepth = 1270.0;
-			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sDepth );
-			if( pAny )
-			{
-				EnhancedCustomShapeParameterPair aDepthPropPair;
-				if ( *pAny >>= aDepthPropPair )
-					aDepthPropPair.First.Value >>= fDepth;
-			}
+			    // see if this is an extruded customshape
+			    if( !bHasCustomShape )
+			    {
+				    Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
+				    if( pAny_ )
+					    *pAny_ >>= bHasCustomShape;
 
-			if( fFinalDepth == -1 )
-			{
-				fFinalDepth = fDepth;
-			}
-			else if( fFinalDepth != fDepth )
-			{
-				fFinalDepth = -1;
-				break;
-			}
-		}
+				    if( !bHasCustomShape )
+					    continue;
+			    }
+
+			    double fDepth = 1270.0;
+			    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sDepth );
+			    if( pAny )
+			    {
+				    EnhancedCustomShapeParameterPair aDepthPropPair;
+				    if ( *pAny >>= aDepthPropPair )
+					    aDepthPropPair.First.Value >>= fDepth;
+			    }
+
+			    if( fFinalDepth == -1 )
+			    {
+				    fFinalDepth = fDepth;
+			    }
+			    else if( fFinalDepth != fDepth )
+			    {
+				    fFinalDepth = -1;
+				    break;
+			    }
+		    }
+	    }
 	}
 
-	if( pSdrView->GetModel() )
-	{
-		FieldUnit eUnit = pSdrView->GetModel()->GetUIUnit();
+	FieldUnit eUnit = pSdrView->getSdrModelFromSdrView().GetUIUnit();
 		rSet.Put( SfxUInt16Item( SID_ATTR_METRIC, (sal_uInt16)eUnit ) );
-	}
 
 	if( bHasCustomShape )
 		rSet.Put( SvxDoubleItem( fFinalDepth, SID_EXTRUSION_DEPTH ) );
@@ -1027,77 +1022,76 @@ static bool compare_direction( const Direction3D& d1, const Direction3D& d2 )
 
 void getExtrusionLightingDirectionState( SdrView* pSdrView, SfxItemSet& rSet )
 {
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
-
-	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-	static const rtl::OUString	sFirstLightDirection( RTL_CONSTASCII_USTRINGPARAM ( "FirstLightDirection" ) );
-	static const rtl::OUString	sSecondLightDirection( RTL_CONSTASCII_USTRINGPARAM ( "SecondLightDirection" ) );
-
-	const Direction3D * pLighting1Defaults;
-	const Direction3D * pLighting2Defaults;
-
-	getLightingDirectionDefaults( &pLighting1Defaults, &pLighting2Defaults );
-
-	com::sun::star::uno::Any* pAny;
-
 	int nFinalDirection = -1;
 	bool bHasCustomShape = false;
 
-	for(i=0;i<nCount; i++)
+	if(pSdrView->areSdrObjectsSelected())
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
-		{
-			SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
+	    static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
+	    static const rtl::OUString	sFirstLightDirection( RTL_CONSTASCII_USTRINGPARAM ( "FirstLightDirection" ) );
+	    static const rtl::OUString	sSecondLightDirection( RTL_CONSTASCII_USTRINGPARAM ( "SecondLightDirection" ) );
+	    const Direction3D * pLighting1Defaults;
+	    const Direction3D * pLighting2Defaults;
+	    getLightingDirectionDefaults( &pLighting1Defaults, &pLighting2Defaults );
+	    com::sun::star::uno::Any* pAny;
 
-			// see if this is an extruded customshape
-			if( !bHasCustomShape )
-			{
-				Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
-				if( pAny_ )
-					*pAny_ >>= bHasCustomShape;
+		for(sal_uInt32 i(0); i < aSelection.size(); i++)
+    	{
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
 
-				if( !bHasCustomShape )
-					continue;
-			}
+			if( pObj )
+		    {
+			    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
 
-			Direction3D aFirstLightDirection( 50000, 0, 10000 );
-			Direction3D aSecondLightDirection( -50000, 0, 10000 );
+			    // see if this is an extruded customshape
+			    if( !bHasCustomShape )
+			    {
+				    Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
+				    if( pAny_ )
+					    *pAny_ >>= bHasCustomShape;
 
-			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sFirstLightDirection );
-			if( pAny )
-				*pAny >>= aFirstLightDirection;
+				    if( !bHasCustomShape )
+					    continue;
+			    }
 
-			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sSecondLightDirection );
-			if( pAny )
-				*pAny >>= aSecondLightDirection;
+			    Direction3D aFirstLightDirection( 50000, 0, 10000 );
+			    Direction3D aSecondLightDirection( -50000, 0, 10000 );
 
-			int nDirection = -1;
+			    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sFirstLightDirection );
+			    if( pAny )
+				    *pAny >>= aFirstLightDirection;
 
-			int j;
-			for( j = 0; j < 9; j++ )
-			{
-				if( compare_direction( aFirstLightDirection, pLighting1Defaults[j] ) &&
-					compare_direction( aSecondLightDirection, pLighting2Defaults[j] ))
-				{
-					nDirection = j;
-					break;
-				}
-			}
+			    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sSecondLightDirection );
+			    if( pAny )
+				    *pAny >>= aSecondLightDirection;
 
-			if( nFinalDirection == -1 )
-			{
-				nFinalDirection = nDirection;
-			}
-			else if( nDirection != nFinalDirection )
-			{
-				nFinalDirection = -1;
-			}
+			    int nDirection = -1;
 
-			if( nFinalDirection == -1 )
-				break;
-		}
+			    int j;
+			    for( j = 0; j < 9; j++ )
+			    {
+				    if( compare_direction( aFirstLightDirection, pLighting1Defaults[j] ) &&
+					    compare_direction( aSecondLightDirection, pLighting2Defaults[j] ))
+				    {
+					    nDirection = j;
+					    break;
+				    }
+			    }
+
+			    if( nFinalDirection == -1 )
+			    {
+				    nFinalDirection = nDirection;
+			    }
+			    else if( nDirection != nFinalDirection )
+			    {
+				    nFinalDirection = -1;
+			    }
+
+			    if( nFinalDirection == -1 )
+				    break;
+		    }
+	    }
 	}
 
 	if( bHasCustomShape )
@@ -1108,64 +1102,65 @@ void getExtrusionLightingDirectionState( SdrView* pSdrView, SfxItemSet& rSet )
 
 void getExtrusionLightingIntensityState( SdrView* pSdrView, SfxItemSet& rSet )
 {
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
-
-	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-	static const rtl::OUString	sBrightness( RTL_CONSTASCII_USTRINGPARAM ( "Brightness" ) );
-	
-	com::sun::star::uno::Any* pAny;
-
 	int nFinalLevel = -1;
 	bool bHasCustomShape = false;
 
-	for(i=0;i<nCount; i++)
+	if(pSdrView->areSdrObjectsSelected())
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
-		{
-			SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
+	    static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
+	    static const rtl::OUString	sBrightness( RTL_CONSTASCII_USTRINGPARAM ( "Brightness" ) );
+	    com::sun::star::uno::Any* pAny;
 
-			// see if this is an extruded customshape
-			if( !bHasCustomShape )
-			{
-				Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
-				if( pAny_ )
-					*pAny_ >>= bHasCustomShape;
+		for(sal_uInt32 i(0); i < aSelection.size(); i++)
+    	{
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
 
-				if( !bHasCustomShape )
-					continue;
-			}
+			if( pObj )
+		    {
+			    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
 
-			double fBrightness = 22178.0 / 655.36;
-			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sBrightness );
-			if( pAny )
-				*pAny >>= fBrightness;
+			    // see if this is an extruded customshape
+			    if( !bHasCustomShape )
+			    {
+				    Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
+				    if( pAny_ )
+					    *pAny_ >>= bHasCustomShape;
 
-			int nLevel;
-			if( fBrightness >= 30.0 )
-			{
-				nLevel = 0; // Bright
-			}
-			else if( fBrightness >= 10.0 )
-			{
-				nLevel = 1; // Noraml;
-			}
-			else
-			{
-				nLevel = 2; // Dim
-			}
+				    if( !bHasCustomShape )
+					    continue;
+			    }
 
-			if( nFinalLevel == -1 )
-			{
-				nFinalLevel = nLevel;
-			}
-			else if( nFinalLevel != nLevel )
-			{
-				nFinalLevel = -1;
-				break;
-			}
-		}
+			    double fBrightness = 22178.0 / 655.36;
+			    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sBrightness );
+			    if( pAny )
+				    *pAny >>= fBrightness;
+
+			    int nLevel;
+			    if( fBrightness >= 30.0 )
+			    {
+				    nLevel = 0; // Bright
+			    }
+			    else if( fBrightness >= 10.0 )
+			    {
+				    nLevel = 1; // Noraml;
+			    }
+			    else
+			    {
+				    nLevel = 2; // Dim
+			    }
+
+			    if( nFinalLevel == -1 )
+			    {
+				    nFinalLevel = nLevel;
+			    }
+			    else if( nFinalLevel != nLevel )
+			    {
+				    nFinalLevel = -1;
+				    break;
+			    }
+		    }
+	    }
 	}
 
 	if( bHasCustomShape )
@@ -1176,65 +1171,66 @@ void getExtrusionLightingIntensityState( SdrView* pSdrView, SfxItemSet& rSet )
 
 void getExtrusionColorState( SdrView* pSdrView, SfxItemSet& rSet )
 {
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
-
-	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-	static const rtl::OUString  sExtrusionColor( RTL_CONSTASCII_USTRINGPARAM ( "Color" ) );
-
-	com::sun::star::uno::Any* pAny;
-
-	bool bInit = false;
 	bool bAmbigius = false;
 	Color aFinalColor;
 	bool bHasCustomShape = false;
 
-	for(i=0;i<nCount; i++)
+	if(pSdrView->areSdrObjectsSelected())
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
-		{
-			SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
+	    static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
+	    static const rtl::OUString  sExtrusionColor( RTL_CONSTASCII_USTRINGPARAM ( "Color" ) );
+	    com::sun::star::uno::Any* pAny;
+	    bool bInit = false;
 
-			// see if this is an extruded customshape
-			if( !bHasCustomShape )
-			{
-				Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
-				if( pAny_ )
-					*pAny_ >>= bHasCustomShape;
+		for(sal_uInt32 i(0); i < aSelection.size(); i++)
+	    {
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
 
-				if( !bHasCustomShape )
-					continue;
-			}
+			if( pObj )
+		    {
+			    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
 
-			Color aColor;
+			    // see if this is an extruded customshape
+			    if( !bHasCustomShape )
+			    {
+				    Any* pAny_ = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
+				    if( pAny_ )
+					    *pAny_ >>= bHasCustomShape;
 
-			bool bUseColor = false;
-			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusionColor );
-			if( pAny )
-				*pAny >>= bUseColor;
+				    if( !bHasCustomShape )
+					    continue;
+			    }
 
-			if( bUseColor )
-			{
-				const XSecondaryFillColorItem& rItem = *(XSecondaryFillColorItem*)&(pObj->GetMergedItem( XATTR_SECONDARYFILLCOLOR ));
-				aColor = rItem.GetColorValue();
-			}
-			else
-			{
-				aColor = COL_AUTO;
-			}
+			    Color aColor;
 
-			if( !bInit )
-			{
-				aFinalColor = aColor;
-				bInit = true;
-			}
-			else if( aFinalColor != aColor )
-			{
-				bAmbigius = true;
-				break;
-			}
-		}
+			    bool bUseColor = false;
+			    pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusionColor );
+			    if( pAny )
+				    *pAny >>= bUseColor;
+
+			    if( bUseColor )
+			    {
+				    const XSecondaryFillColorItem& rItem = *(XSecondaryFillColorItem*)&(pObj->GetMergedItem( XATTR_SECONDARYFILLCOLOR ));
+				    aColor = rItem.GetColorValue();
+			    }
+			    else
+			    {
+				    aColor = COL_AUTO;
+			    }
+
+			    if( !bInit )
+			    {
+				    aFinalColor = aColor;
+				    bInit = true;
+			    }
+			    else if( aFinalColor != aColor )
+			    {
+				    bAmbigius = true;
+				    break;
+			    }
+		    }
+	    }
 	}
 
 	if( bAmbigius )
@@ -1250,28 +1246,31 @@ namespace svx {
 bool checkForSelectedCustomShapes( SdrView* pSdrView, bool bOnlyExtruded )
 {
 	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-
-	const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
 	bool bFound = false;
 
-	for(i=0;(i<nCount) && !bFound ; i++)
+	if(pSdrView->areSdrObjectsSelected())
 	{
-		SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-		if( pObj->ISA(SdrObjCustomShape) )
+		const SdrObjectVector aSelection(pSdrView->getSelectedSdrObjectVectorFromSdrMarkView());
+
+		for(sal_uInt32 i(0); ( i < aSelection.size()) && !bFound ; i++)
 		{
-			if( bOnlyExtruded )
-			{
-				SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
-				Any* pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
-				if( pAny )
-					*pAny >>= bFound;
-			}
-			else
-			{
-				bFound = true;
-			}
-		}
+			SdrObjCustomShape* pObj = dynamic_cast< SdrObjCustomShape* >(aSelection[i]);
+
+			if( pObj )
+    		{
+			    if( bOnlyExtruded )
+			    {
+				    SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)pObj->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+				    Any* pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sExtrusion );
+				    if( pAny )
+					    *pAny >>= bFound;
+			    }
+			    else
+			    {
+				    bFound = true;
+			    }
+		    }
+	    }
 	}
 
 	return bFound;

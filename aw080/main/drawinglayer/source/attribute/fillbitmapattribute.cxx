@@ -45,7 +45,7 @@ namespace drawinglayer
 			basegfx::B2DVector						maSize;
 
 			// bitfield
-			unsigned								mbTiling : 1;
+			bool									mbTiling : 1;
 
 			ImpFillBitmapAttribute(
                 const BitmapEx& rBitmapEx, 

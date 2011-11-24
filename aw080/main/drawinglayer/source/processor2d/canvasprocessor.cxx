@@ -551,8 +551,7 @@ using namespace com::sun::star;
                     // gradient will always display at the origin, and
                     // not within the polygon bound (which might be
                     // miles away from the origin).
-                    aTextureTransformation.translate( rBounds.getMinX(), 
-                                                      rBounds.getMinY() );
+                    aTextureTransformation.translate( rBounds.getMinimum() );
 
                     basegfx::unotools::affineMatrixFromHomMatrix( aTexture.AffineTransform, 
                                                                     aTextureTransformation );
@@ -954,8 +953,7 @@ using namespace com::sun::star;
                 //  remember last worldToView and add pixel offset
                 basegfx::B2DHomMatrix aLastWorldToView(maWorldToView);
                 basegfx::B2DHomMatrix aPixelOffset;
-                aPixelOffset.translate(aRange.getMinX(),
-                                       aRange.getMinY());
+                aPixelOffset.translate(aRange.getMinimum());
                 setWorldToView(aPixelOffset * maWorldToView);
 
                 // remember last canvas, set bitmap as target
@@ -1492,7 +1490,8 @@ namespace drawinglayer
                 double fShearX(0.0);
                 {
     			    const basegfx::B2DHomMatrix aLocalTransform(getViewInformation2D().getObjectToViewTransformation() * rTextCandidate.getTextTransform());
-    			    basegfx::B2DVector aScale, aTranslate;
+    			    basegfx::B2DVector aScale;
+    			    basegfx::B2DPoint aTranslate;
 	    		    double fRotate;
     			    aLocalTransform.decompose(aScale, aTranslate, fRotate, fShearX);
                 }
@@ -1590,16 +1589,20 @@ namespace drawinglayer
             else
             {
                 // adapt object's transformation to the correct scale
-		        basegfx::B2DVector aScale, aTranslate;
+		        basegfx::B2DVector aScale;
+		        basegfx::B2DPoint aTranslate;
 		        double fRotate, fShearX;
                 const Size aSizePixel(aModifiedBitmapEx.GetSizePixel());
 
                 if(0 != aSizePixel.Width() && 0 != aSizePixel.Height())
                 {
 		            rBitmapCandidate.getTransform().decompose(aScale, aTranslate, fRotate, fShearX);
-					const basegfx::B2DHomMatrix aNewMatrix(basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
+					const basegfx::B2DHomMatrix aNewMatrix(
+                        basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
 						aScale.getX() / aSizePixel.Width(), aScale.getY() / aSizePixel.Height(),
-						fShearX, fRotate, aTranslate.getX(), aTranslate.getY()));
+						    fShearX, 
+                            fRotate, 
+                            aTranslate.getX(), aTranslate.getY()));
                     
                     canvas::tools::setRenderStateTransform(maRenderState, 
                         getViewInformation2D().getObjectTransformation() * aNewMatrix);
@@ -1913,7 +1916,9 @@ namespace drawinglayer
 		//////////////////////////////////////////////////////////////////////////////
 		// internal processing support
 
-        void canvasProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate)
+        void canvasProcessor2D::processBasePrimitive2D(
+			const primitive2d::BasePrimitive2D& rCandidate, 
+			const primitive2d::Primitive2DReference& /*rUnoCandidate*/)
 		{
 			switch(rCandidate.getPrimitive2DID())
 			{

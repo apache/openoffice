@@ -25,8 +25,8 @@
 #include <tools/string.hxx>
 #include <com/sun/star/beans/PropertyValue.hpp>
 #include <rtl/ustrbuf.hxx>
-#include <tools/rtti.hxx>
-#include <bf_svtools/bf_solar.h>
+#include <bf_tools/rtti.hxx>
+#include <tools/solar.h>
 #include "unoevent.hxx"
 #include <bf_svtools/macitem.hxx>
 

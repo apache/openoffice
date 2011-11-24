@@ -41,7 +41,7 @@
 #include <bf_svtools/eitem.hxx>
 #endif
 #ifndef _RTTI_HXX //autogen
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 #ifndef _SFXLSTNER_HXX //autogen
 #include <bf_svtools/lstner.hxx>

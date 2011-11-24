@@ -27,35 +27,33 @@
 #include <editeng/svxenum.hxx>
 
 
-class SvxDrawToolItem : public SfxEnumItem
-{
-public:
-
-		SvxDrawToolItem( const SvxDrawToolItem& rDrawToolItem ) :
-								SfxEnumItem( rDrawToolItem ){}
-
-        SvxDrawToolItem(sal_uInt16 nWhichP) : SfxEnumItem(nWhichP){}
-
-
-	virtual String      		GetValueText() const;
-
-
-	virtual String				GetValueText(sal_uInt16 nVal) const;
-	virtual sal_uInt16 				GetValueCount() const
-									{return((sal_uInt16)SVX_SNAP_DRAW_TEXT);}
-
-	virtual SfxPoolItem*    	Clone( SfxItemPool *pPool = 0 ) const;
-
-	virtual SfxPoolItem*    	Create( SvStream& rStream, sal_uInt16 nVer ) const;
-
-	inline SvxDrawToolItem& operator=(const  SvxDrawToolItem&
-														rDrawTool)
-			{
-				SetValue( rDrawTool.GetValue() );
-				return *this;
-
-			}
-};
+//class SvxDrawToolItem : public SfxEnumItem
+//{
+//public:
+//
+//		SvxDrawToolItem( const SvxDrawToolItem& rDrawToolItem );
+//        SvxDrawToolItem(sal_uInt16 nWhichP);
+//
+//
+//	virtual String      		GetValueText() const;
+//
+//
+//	virtual String				GetValueText(sal_uInt16 nVal) const;
+//	virtual sal_uInt16 				GetValueCount() const
+//									{return((sal_uInt16)SVX_SNAP_DRAW_TEXT);}
+//
+//	virtual SfxPoolItem*    	Clone( SfxItemPool *pPool = 0 ) const;
+//
+//	virtual SfxPoolItem*    	Create( SvStream& rStream, sal_uInt16 nVer ) const;
+//
+//	inline SvxDrawToolItem& operator=(const  SvxDrawToolItem&
+//														rDrawTool)
+//			{
+//				SetValue( rDrawTool.GetValue() );
+//				return *this;
+//
+//			}
+//};
 #endif
 
 

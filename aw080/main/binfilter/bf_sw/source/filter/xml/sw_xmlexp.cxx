@@ -326,7 +326,7 @@ sal_uInt32 SwXMLExport::exportDoc( enum XMLTokenEnum eClass )
 				if( 0 != (pItem = rPool.GetItem( nWhichId , i ) ) )
 				{
 					const SvXMLAttrContainerItem *pUnknown = 
-								PTR_CAST( SvXMLAttrContainerItem, pItem );
+								dynamic_cast< const SvXMLAttrContainerItem* >( pItem );
 					ASSERT( pUnknown, "illegal attribute container item" );
 					if( pUnknown && (pUnknown->GetAttrCount() > 0) )
 					{

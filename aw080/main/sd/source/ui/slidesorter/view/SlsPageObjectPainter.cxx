@@ -371,7 +371,7 @@ void PageObjectPainter::PaintPageNumber (
 
     // Paint the page number.
     OSL_ASSERT(rpDescriptor->GetPage()!=NULL);
-    const sal_Int32 nPageNumber ((rpDescriptor->GetPage()->GetPageNum() - 1) / 2 + 1);
+    const sal_Int32 nPageNumber ((rpDescriptor->GetPage()->GetPageNumber() - 1) / 2 + 1);
     const String sPageNumber (String::CreateFromInt32(nPageNumber));
     rDevice.SetFont(*mpPageNumberFont);
     rDevice.SetTextColor(aPageNumberColor);

@@ -3004,11 +3004,6 @@ void MSWordExportBase::ExportDocument( bool bWriteAll )
     GatherChapterFields();
 
     CollectOutlineBookmarks(*pDoc);
-
-    // make unique OrdNums (Z-Order) for all drawing-/fly Objects
-    if ( pDoc->GetDrawModel() )
-        pDoc->GetDrawModel()->GetPage( 0 )->RecalcObjOrdNums();
-
     ExportDocument_Impl();
 
     if ( mnRedlineMode != pDoc->GetRedlineMode() )
@@ -3021,7 +3016,7 @@ bool SwWW8Writer::InitStd97CodecUpdateMedium( ::msfilter::MSCodec_Std97& rCodec 
 
     if ( mpMedium )
     {
-        SFX_ITEMSET_ARG( mpMedium->GetItemSet(), pEncryptionDataItem, SfxUnoAnyItem, SID_ENCRYPTIONDATA, sal_False );
+        SFX_ITEMSET_ARG( mpMedium->GetItemSet(), pEncryptionDataItem, SfxUnoAnyItem, SID_ENCRYPTIONDATA );
         if ( pEncryptionDataItem && ( pEncryptionDataItem->GetValue() >>= aEncryptionData ) && !rCodec.InitCodec( aEncryptionData ) )
         {
             OSL_ENSURE( false, "Unexpected EncryptionData!" );
@@ -3031,7 +3026,7 @@ bool SwWW8Writer::InitStd97CodecUpdateMedium( ::msfilter::MSCodec_Std97& rCodec 
         if ( !aEncryptionData.getLength() )
         {
             // try to generate the encryption data based on password
-            SFX_ITEMSET_ARG( mpMedium->GetItemSet(), pPasswordItem, SfxStringItem, SID_PASSWORD, sal_False );
+            SFX_ITEMSET_ARG( mpMedium->GetItemSet(), pPasswordItem, SfxStringItem, SID_PASSWORD );
             if ( pPasswordItem && pPasswordItem->GetValue().Len() && pPasswordItem->GetValue().Len() <= 15 )
             {
                 // Generate random number with a seed of time as salt.

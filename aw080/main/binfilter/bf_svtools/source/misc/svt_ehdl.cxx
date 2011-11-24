@@ -208,7 +208,7 @@ BOOL SfxErrorHandler::CreateString(
 	ULONG nErrCode = pErr->GetErrorCode() & ERRCODE_ERROR_MASK;
 	if( nErrCode>=lEnd || nErrCode<=lStart )
 		return FALSE;
-	MessageInfo *pMsgInfo=PTR_CAST(MessageInfo,pErr);
+	const MessageInfo *pMsgInfo=dynamic_cast< const MessageInfo* >( pErr);
 	if(pMsgInfo)
 	{
 		if(GetMessageString(nErrCode, rStr, nFlags))
@@ -226,7 +226,7 @@ BOOL SfxErrorHandler::CreateString(
 	}
 	else if(GetErrorString(nErrCode, rStr, nFlags))
 	{
-		StringErrorInfo *pStringInfo=PTR_CAST(StringErrorInfo,pErr);
+		const StringErrorInfo *pStringInfo=dynamic_cast< const StringErrorInfo* >( pErr);
 		if(pStringInfo)
 			for (xub_StrLen i = 0; i < rStr.Len();)
 			{
@@ -238,8 +238,7 @@ BOOL SfxErrorHandler::CreateString(
 			}
 		else
 		{
-			TwoStringErrorInfo * pTwoStringInfo = PTR_CAST(TwoStringErrorInfo,
-														   pErr);
+			const TwoStringErrorInfo * pTwoStringInfo = dynamic_cast< const TwoStringErrorInfo* >( pErr);
 			if (pTwoStringInfo)
 				for (USHORT i = 0; i < rStr.Len();)
 				{

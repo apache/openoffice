@@ -232,7 +232,7 @@ int __EXPORT SwFmtFlyCnt::operator==( const SfxPoolItem& rAttr ) const
 /*N*/ 		while ( pFirst->IsFollow() )
 /*?*/ 			pFirst = pFirst->FindMaster();
 /*N*/ 		do
-/*N*/ 		{   SwFrm * pFrm = PTR_CAST( SwFrm, aIter() );
+/*N*/ 		{   SwFrm * pFrm = dynamic_cast< SwFrm* >( aIter() );
 /*N*/ 			if ( pFrm )
 /*N*/ 			{
 /*N*/ 				SwTxtFrm *pTmp = pFirst;

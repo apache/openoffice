@@ -615,11 +615,11 @@ void SdUnoPseudoStyle::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
 	sal_Bool bGoneDead = sal_False;
 
-	const SfxSimpleHint* pSimpleHint = PTR_CAST( SfxSimpleHint, &rHint );
+	const SfxSimpleHint* pSimpleHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
 	if( pSimpleHint && pSimpleHint->GetId() == SFX_HINT_DYING )
 		bGoneDead = sal_True;
 
-	const SfxStyleSheetHint* pStyleSheetHint = PTR_CAST( SfxStyleSheetHint, &rHint );
+	const SfxStyleSheetHint* pStyleSheetHint = dynamic_cast< const SfxStyleSheetHint* >( &rHint );
 	if( pStyleSheetHint && pStyleSheetHint->GetHint() == SFX_STYLESHEET_ERASED )
 	{
 		if( pStyleSheetHint->GetStyleSheet() == mpStyleSheet )

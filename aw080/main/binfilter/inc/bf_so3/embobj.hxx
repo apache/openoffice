@@ -209,6 +209,7 @@ protected:
 					~SvEmbeddedInfoObject();
 	virtual void	Assign( const SvInfoObject * pObj );
 public:
+	TYPEINFO();
 					SV_DECL_PERSIST1(SvEmbeddedObject,SvInfoObject,2)
 					SvEmbeddedInfoObject();
 					SvEmbeddedInfoObject( SvEmbeddedObject *, const String & rObjName );

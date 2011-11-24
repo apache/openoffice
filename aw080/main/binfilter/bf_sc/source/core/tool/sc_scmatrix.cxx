@@ -34,6 +34,7 @@
 #include <math.h>
 
 #include "scmatrix.hxx"
+#include <string.h>		// memset() etc
 
 #ifndef INCLUDED_RTL_MATH_HXX
 #include <rtl/math.hxx>

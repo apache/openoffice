@@ -57,9 +57,6 @@ namespace drawinglayer
 			const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel >& getChartModel() const { return mxChartModel; }
 			const basegfx::B2DHomMatrix& getTransformation() const { return maTransformation; }
 
-			// compare operator
-			virtual bool operator==(const BasePrimitive2D& rPrimitive) const;
-
 			// provide unique ID
 			DeclPrimitrive2DIDBlock()
 

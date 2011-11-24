@@ -129,7 +129,7 @@ private:
     sal_Bool						HasView() const { return mpView ? sal_True : sal_False; }
     sal_Bool						IsEditMode() const 
     								{ 
-                                        SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+                                        SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
                                         return mbShapeIsEditMode && pTextObj && pTextObj->IsTextEditActive() ? sal_True : sal_False;
                                     }
 
@@ -236,8 +236,8 @@ void SAL_CALL SvxTextEditSourceImpl::release()
 
 void SvxTextEditSourceImpl::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
-	const SdrHint* pSdrHint = PTR_CAST( SdrHint, &rHint );
-	const SvxViewHint* pViewHint = PTR_CAST( SvxViewHint, &rHint );
+	const SdrHint* pSdrHint = dynamic_cast< const SdrHint* >( &rHint );
+	const SvxViewHint* pViewHint = dynamic_cast< const SvxViewHint* >( &rHint );
 
     if( pViewHint )
     {
@@ -403,7 +403,7 @@ void SvxTextEditSourceImpl::SetupOutliner()
     // layout
     if( mpObject && mpOutliner )
     {
-        SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+        SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
         Rectangle aPaintRect;
         if( pTextObj )
         {
@@ -429,7 +429,7 @@ SvxTextForwarder* SvxTextEditSourceImpl::GetBackgroundTextForwarder()
 	{
 		if( mpOutliner == NULL )
 		{
-			SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+			SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
 			USHORT nOutlMode = OUTLINERMODE_TEXTOBJECT;
 			if( pTextObj && pTextObj->IsTextFrame() && pTextObj->GetTextKind() == OBJ_OUTLINETEXT )
 				nOutlMode = OUTLINERMODE_OUTLINEOBJECT;
@@ -471,7 +471,7 @@ SvxTextForwarder* SvxTextEditSourceImpl::GetBackgroundTextForwarder()
 
 		OutlinerParaObject* mpOutlinerParaObject = NULL;
 		BOOL bTextEditActive = FALSE;
-		SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+		SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
 		if( pTextObj )
 			mpOutlinerParaObject = pTextObj->GetEditOutlinerParaObject(); // Get the OutlinerParaObject if text edit is active
 
@@ -602,7 +602,7 @@ SvxDrawOutlinerViewForwarder* SvxTextEditSourceImpl::CreateViewForwarder()
         // register as listener - need to broadcast state change messages
         mpView->GetTextEditOutliner()->SetNotifyHdl( LINK(this, SvxTextEditSourceImpl, NotifyHdl) );
 
-		SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+		SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
 		if( pTextObj )
         {
             Rectangle aBoundRect( pTextObj->GetBoundRect() );
@@ -657,7 +657,7 @@ SvxEditViewForwarder* SvxTextEditSourceImpl::GetEditViewForwarder( sal_Bool bCre
             mpView->EndTextEdit();
             if( mpView->BegTextEdit( mpObject, NULL, NULL, (SdrOutliner*)NULL, NULL, FALSE, FALSE ) )
             {
-                SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+                SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
                 if( pTextObj->IsTextEditActive() )
                 {                
                     // create new view forwarder
@@ -698,7 +698,7 @@ void SvxTextEditSourceImpl::UpdateData()
 				{
 					if( mpOutliner->GetParagraphCount() > 1 )
 					{
-						SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+						SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
 						if( pTextObj && pTextObj->IsTextFrame() && pTextObj->GetTextKind() == OBJ_TITLETEXT )
 						{
 							while( mpOutliner->GetParagraphCount() > 1 )
@@ -761,7 +761,7 @@ Rectangle SvxTextEditSourceImpl::GetVisArea()
         Rectangle aVisArea = mpView->GetVisibleArea( mpView->FindWin( const_cast< Window* > (mpWindow) ) );
 
         // offset vis area by edit engine left-top position
-        SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
+        SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
         if( pTextObj )
         {
             Rectangle aAnchorRect;

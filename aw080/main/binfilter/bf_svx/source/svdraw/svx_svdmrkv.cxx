@@ -100,7 +100,7 @@ namespace binfilter {
 
 /*N*/ void __EXPORT SdrMarkView::SFX_NOTIFY(SfxBroadcaster& rBC, const TypeId& rBCType, const SfxHint& rHint, const TypeId& rHintType)
 /*N*/ {
-/*N*/ 	SdrHint* pSdrHint=PTR_CAST(SdrHint,&rHint);
+/*N*/ 	const SdrHint* pSdrHint=dynamic_cast< const SdrHint* >( &rHint);
 /*N*/ 	if (pSdrHint!=NULL) {
 /*N*/ 		SdrHintKind eKind=pSdrHint->GetKind();
 /*N*/ 		if (eKind==HINT_OBJLISTCLEARED) {

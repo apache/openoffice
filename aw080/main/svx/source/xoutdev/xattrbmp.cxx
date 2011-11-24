@@ -411,7 +411,8 @@ void XOBitmap::Array2Bitmap()
 // -----------------------
 // class XFillBitmapItem
 // -----------------------
-TYPEINIT1_AUTOFACTORY(XFillBitmapItem, NameOrIndex);
+
+IMPL_POOLITEM_FACTORY(XFillBitmapItem)
 
 /*************************************************************************
 |*

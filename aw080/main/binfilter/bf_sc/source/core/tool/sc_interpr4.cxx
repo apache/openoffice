@@ -2151,7 +2151,7 @@ void ScInterpreter::ScMissing()
 /*N*/ 		else if ( eResType & SbxARRAY )
 /*N*/ 		{
 /*?*/ 			SbxBase* pElemObj = refRes->GetObject();
-/*?*/ 			SbxDimArray* pDimArray = PTR_CAST(SbxDimArray,pElemObj);
+/*?*/ 			SbxDimArray* pDimArray = dynamic_cast< SbxDimArray* >( pElemObj);
 /*?*/ 			short nDim = pDimArray->GetDims();
 /*?*/ 			if ( 1 <= nDim && nDim <= 2 )
 /*?*/ 			{

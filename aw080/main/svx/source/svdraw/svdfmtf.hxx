@@ -53,11 +53,11 @@ public:
 	{}
 
 	void Clear() { aList.Clear(); }
-	sal_uLong GetObjCount() const { return aList.Count(); }
-	SdrObject* GetObj(sal_uLong nNum) const { return (SdrObject*)aList.GetObject(nNum); }
-	SdrObject* operator[](sal_uLong nNum) const { return (SdrObject*)aList.GetObject(nNum); }
-	void InsertObject(SdrObject* pObj, sal_uLong nPos=CONTAINER_APPEND) { aList.Insert(pObj,nPos); }
-	void RemoveObject(sal_uLong nPos) { aList.Remove(nPos); }
+	sal_uInt32 GetObjCount() const { return aList.Count(); }
+	SdrObject* GetObj(sal_uInt32 nNum) const { return (SdrObject*)aList.GetObject(nNum); }
+	SdrObject* operator[](sal_uInt32 nNum) const { return (SdrObject*)aList.GetObject(nNum); }
+	void InsertObject(SdrObject* pObj, sal_uInt32 nPos=CONTAINER_APPEND) { aList.Insert(pObj,nPos); }
+	void RemoveObject(sal_uInt32 nPos) { aList.Remove(nPos); }
 };
 
 //************************************************************
@@ -70,35 +70,35 @@ protected:
 	SdrObjRefList				aTmpList;
 	VirtualDevice				aVD;
 	Rectangle					aScaleRect;
-	sal_uLong						nMapScalingOfs; // ab hier nocht nicht mit MapScaling bearbeitet
+	sal_uInt32					nMapScalingOfs; // ab hier nocht nicht mit MapScaling bearbeitet
 	SfxItemSet*					pLineAttr;
 	SfxItemSet*					pFillAttr;
 	SfxItemSet*					pTextAttr;
 	SdrPage*					pPage;
-	SdrModel*					pModel;
+	SdrModel&					mrModel;
 	SdrLayerID					nLayer;
 	Color						aOldLineColor;
 	sal_Int32					nLineWidth;
 	basegfx::B2DLineJoin		maLineJoin;
 	XDash						maDash;
 
-	sal_Bool					bMov;
-	sal_Bool					bSize;
+	bool						bMov;
+	bool						bSize;
 	Point						aOfs;
     double                      fScaleX;
     double                      fScaleY;
 	Fraction					aScaleX;
 	Fraction					aScaleY;
 
-	sal_Bool                    bFntDirty;
+	bool	                    bFntDirty;
 
 	// fuer Optimierung von (PenNULL,Brush,DrawPoly),(Pen,BrushNULL,DrawPoly) -> aus 2 mach ein
-	sal_Bool                    bLastObjWasPolyWithoutLine;
-	sal_Bool                    bNoLine;
-	sal_Bool                    bNoFill;
+	bool			            bLastObjWasPolyWithoutLine;
+	bool		                bNoLine;
+	bool	                    bNoFill;
 
 	// fuer Optimierung mehrerer Linien zu einer Polyline
-	sal_Bool                    bLastObjWasLine;
+	bool	                    bLastObjWasLine;
 
 protected:
 	void DoAction(MetaPixelAction			& rAct);
@@ -139,8 +139,8 @@ protected:
 	void DoAction(MetaRenderGraphicAction& rAct);
 
 	void ImportText( const Point& rPos, const XubString& rStr, const MetaAction& rAct );
-	void SetAttributes(SdrObject* pObj, FASTBOOL bForceTextAttr=sal_False);
-	void InsertObj( SdrObject* pObj, sal_Bool bScale = sal_True );
+	void SetAttributes(SdrObject* pObj, bool bForceTextAttr = false);
+	void InsertObj( SdrObject* pObj, bool bScale = true );
 	void MapScaling();
 
 	// #i73407# reformulation to use new B2DPolygon classes
@@ -150,7 +150,7 @@ protected:
 public:
 	ImpSdrGDIMetaFileImport(SdrModel& rModel);
 	~ImpSdrGDIMetaFileImport();
-	sal_uLong DoImport(const GDIMetaFile& rMtf, SdrObjList& rDestList, sal_uLong nInsPos=CONTAINER_APPEND, SvdProgressInfo *pProgrInfo = NULL);
+	sal_uInt32 DoImport(const GDIMetaFile& rMtf, SdrObjList& rDestList, sal_uInt32 nInsPos = CONTAINER_APPEND, SvdProgressInfo *pProgrInfo = NULL);
 	void SetLayer(SdrLayerID nLay) { nLayer=nLay; }
 	SdrLayerID GetLayer() const { return nLayer; }
 	void SetScaleRect(const Rectangle& rRect) { aScaleRect=rRect; }

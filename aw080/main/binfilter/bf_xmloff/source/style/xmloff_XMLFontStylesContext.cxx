@@ -275,7 +275,7 @@ sal_Bool XMLFontStylesContext::FillProperties( const OUString& rName,
 						 sal_Int32 nCharsetIdx ) const
 {
 	const XMLFontStyleContext_Impl *pFontStyle =
-		PTR_CAST( XMLFontStyleContext_Impl,
+		dynamic_cast< const XMLFontStyleContext_Impl* >( 
 			FindStyleChildContext( XML_STYLE_FAMILY_FONT, rName, sal_True ) );
 	if( pFontStyle )
 		pFontStyle->FillProperties( rProps, nFamilyNameIdx, nStyleNameIdx,

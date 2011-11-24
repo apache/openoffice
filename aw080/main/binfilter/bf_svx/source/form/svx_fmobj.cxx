@@ -108,7 +108,7 @@ using namespace ::binfilter::svxform;//STRIP008 using namespace ::svxform;
 //------------------------------------------------------------------
 /*N*/ void FmFormObj::SetPage(SdrPage* _pNewPage)
 /*N*/ {
-/*N*/ 	FmFormPage* pNewFormPage = PTR_CAST(FmFormPage, _pNewPage);
+/*N*/ 	FmFormPage* pNewFormPage = dynamic_cast< FmFormPage* >( _pNewPage);
 /*N*/ 	if (!pNewFormPage || (GetPage() == _pNewPage))
 /*N*/ 	{	// Maybe it makes sense to create an environment history here : if somebody set's our page to NULL, and we have a valid page before,
 /*N*/ 		// me may want to remember our place within the old page. For this we could create a new m_pEnvironmentHistory to store it.
@@ -132,7 +132,7 @@ using namespace ::binfilter::svxform;//STRIP008 using namespace ::svxform;
 /*N*/ 	if (!xNewParent.is())
 /*N*/ 	{
 /*N*/ 		// are we a valid part of our current page forms ?
-/*N*/ 		FmFormPage* pOldFormPage = PTR_CAST(FmFormPage, GetPage());
+/*N*/ 		FmFormPage* pOldFormPage = dynamic_cast< FmFormPage* >( GetPage());
 /*N*/ 		::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer >  xOldForms = pOldFormPage ? ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer > (pOldFormPage->GetForms(), ::com::sun::star::uno::UNO_QUERY) : ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer > ();
 /*N*/ 		if (xOldForms.is())
 /*N*/ 		{

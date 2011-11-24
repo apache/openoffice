@@ -642,7 +642,7 @@ Reference< awt::XControlModel > SAL_CALL SvxShapeControl::getControl()
 
 	Reference< awt::XControlModel > xModel;
 
-	SdrUnoObj* pUnoObj = PTR_CAST(SdrUnoObj, pObj);
+	SdrUnoObj* pUnoObj = dynamic_cast< SdrUnoObj* >( pObj);
 	if( pUnoObj )
 		xModel = pUnoObj->GetUnoControlModel();
 
@@ -655,7 +655,7 @@ void SAL_CALL SvxShapeControl::setControl( const Reference< awt::XControlModel >
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
-	SdrUnoObj* pUnoObj = PTR_CAST(SdrUnoObj, pObj);
+	SdrUnoObj* pUnoObj = dynamic_cast< SdrUnoObj* >( pObj);
 	if( pUnoObj )
 		pUnoObj->SetUnoControlModel( xControl );
 

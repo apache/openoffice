@@ -36,9 +36,7 @@
 #include <svx/xftshcit.hxx>
 #include <svx/xftmrit.hxx>
 #include <svx/xftouit.hxx>
-#include <svx/sdshtitm.hxx>
 #include <svx/xlntrit.hxx>
-#include <svx/sdshcitm.hxx>
 #include <svx/xlnclit.hxx>
 #include <svx/xlnwtit.hxx>
 #include <svx/xlinjoit.hxx>
@@ -48,6 +46,8 @@
 #include <drawinglayer/attribute/lineattribute.hxx>
 #include <drawinglayer/attribute/strokeattribute.hxx>
 #include <svx/sdr/attribute/sdrformtextoutlineattribute.hxx>
+#include <svx/sdprcitm.hxx>
+#include <svx/svddef.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // helper to get line, stroke and transparence attributes from SfxItemSet
@@ -87,7 +87,7 @@ namespace
 
 		if(bShadow)
 		{
-			nRetval = (sal_uInt8)((((SdrShadowTransparenceItem&)(rSet.Get(SDRATTR_SHADOWTRANSPARENCE))).GetValue() * 255) / 100);
+			nRetval = (sal_uInt8)((((SdrPercentItem&)(rSet.Get(SDRATTR_SHADOWTRANSPARENCE))).GetValue() * 255) / 100);
 		}
 		else
 		{
@@ -103,7 +103,7 @@ namespace
 
 		if(bShadow)
 		{
-			const Color aShadowColor(((SdrShadowColorItem&)(rSet.Get(SDRATTR_SHADOWCOLOR))).GetColorValue());
+			const Color aShadowColor(((XColorItem&)(rSet.Get(SDRATTR_SHADOWCOLOR))).GetColorValue());
 			aColorAttribute = aShadowColor.getBColor();
 		}
 		else
@@ -168,8 +168,8 @@ namespace drawinglayer
             SdrFormTextOutlineAttribute				maShadowOutline;
 
 		    // bitfield
-		    unsigned								mbFormTextMirror : 1;	// change orientation
-		    unsigned								mbFormTextOutline : 1;	// show contour of objects
+		    bool									mbFormTextMirror : 1;	// change orientation
+		    bool									mbFormTextOutline : 1;	// show contour of objects
 
 		    ImpSdrFormTextAttribute(const SfxItemSet& rSet)
 			:	mnRefCount(0),

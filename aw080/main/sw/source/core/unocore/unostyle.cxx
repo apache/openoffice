@@ -1116,7 +1116,7 @@ void SAL_CALL SwXStyleFamily::removeVetoableChangeListener( const ::rtl::OUStrin
   -----------------------------------------------------------------------*/
 void SwXStyleFamily::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
-    SfxSimpleHint *pHint = PTR_CAST( SfxSimpleHint, &rHint );
+    const SfxSimpleHint *pHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
     if( pHint && ( pHint->GetId() & SFX_HINT_DYING ) )
     {
         pBasePool = 0;
@@ -1289,7 +1289,6 @@ sal_Int64 SAL_CALL SwXStyle::getSomething( const uno::Sequence< sal_Int8 >& rId 
     return 0;
 }
 
-TYPEINIT1(SwXStyle, SfxListener);
 /* -----------------------------06.04.00 11:24--------------------------------
 
  ---------------------------------------------------------------------------*/
@@ -3121,7 +3120,7 @@ uno::Any SwXStyle::getPropertyDefault(const OUString& rPropertyName)
  * --------------------------------------------------*/
 void SwXStyle::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
-    SfxSimpleHint *pHint = PTR_CAST( SfxSimpleHint, &rHint );
+    const SfxSimpleHint *pHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
     if( pHint )
     {
         if(( pHint->GetId() & SFX_HINT_DYING ) || ( pHint->GetId() & SFX_STYLESHEET_ERASED))

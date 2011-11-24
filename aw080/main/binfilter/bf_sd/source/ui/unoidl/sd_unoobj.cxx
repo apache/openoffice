@@ -817,7 +817,7 @@ sal_Bool SdXShape::IsPresObj() const throw()
 	SdrObject* pObj = mpShape->GetSdrObject();
 	if(pObj)
 	{
-		SdPage* pPage = PTR_CAST(SdPage,pObj->GetPage());
+		SdPage* pPage = dynamic_cast< SdPage* >( pObj->GetPage());
 		if(pPage)
 			return pPage->GetPresObjKind(pObj) != PRESOBJ_NONE;
 	}
@@ -833,7 +833,7 @@ sal_Bool SdXShape::IsEmptyPresObj() const throw()
 		return sal_False;
 
 	// check if the object is in edit, than its temporarely not empty
-	SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, pObj );
+	SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( pObj );
 	return (NULL == pTextObj) || ( NULL == pTextObj->GetEditOutlinerParaObject() );
 }
 
@@ -858,10 +858,10 @@ void SdXShape::SetEmptyPresObj( sal_Bool bEmpty ) throw()
 
 			// really delete SdrOutlinerObj at pObj
 			pObj->NbcSetOutlinerParaObject(0L);
-			if( bVertical && PTR_CAST( SdrTextObj, pObj ) )
+			if( bVertical && dynamic_cast< SdrTextObj* >( pObj ) )
 				((SdrTextObj*)pObj)->SetVerticalWriting( sal_True );
 
-			SdrGrafObj* pGraphicObj = PTR_CAST( SdrGrafObj, pObj );
+			SdrGrafObj* pGraphicObj = dynamic_cast< SdrGrafObj* >( pObj );
 			if( pGraphicObj )
 			{
 				Graphic aEmpty;
@@ -869,7 +869,7 @@ void SdXShape::SetEmptyPresObj( sal_Bool bEmpty ) throw()
 			}
 			else
 			{
-				SdrOle2Obj* pOleObj = PTR_CAST( SdrOle2Obj, pObj );
+				SdrOle2Obj* pOleObj = dynamic_cast< SdrOle2Obj* >( pObj );
 				if( pOleObj )
 				{
 					pOleObj->SetGraphic( NULL );
@@ -893,7 +893,7 @@ void SdXShape::SetEmptyPresObj( sal_Bool bEmpty ) throw()
 				if( pOutliner == NULL )
 					break;
 
-				SdPage* pPage = PTR_CAST(SdPage,pObj->GetPage());
+				SdPage* pPage = dynamic_cast< SdPage* >( pObj->GetPage());
 				DBG_ASSERT( pPage, "no page?" );
 				if( pPage == NULL )
 					break;
@@ -933,7 +933,7 @@ void SdXShape::SetMasterDepend( sal_Bool bDepend ) throw()
 		{
 			if( bDepend )
 			{
-				SdPage* pPage = PTR_CAST(SdPage,pObj->GetPage());
+				SdPage* pPage = dynamic_cast< SdPage* >( pObj->GetPage());
 				pObj->SetUserCall( pPage );
 			}
 			else

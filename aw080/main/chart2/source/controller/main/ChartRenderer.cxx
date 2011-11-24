@@ -115,7 +115,7 @@ bool ChartRenderer::DoPaint(OutputDevice* pOutDev, const Rectangle& rLogicObject
         ::boost::shared_ptr< DrawModelWrapper > pDrawModelWrapper = pProvider->getDrawModelWrapper();
         if( !pDrawModelWrapper.get() )
             return false;
-        ::boost::shared_ptr< DrawViewWrapper > pDrawViewWrapper( new DrawViewWrapper(&pDrawModelWrapper->getSdrModel(),pOutDev,false) );
+        ::boost::shared_ptr< DrawViewWrapper > pDrawViewWrapper( new DrawViewWrapper(pDrawModelWrapper->getSdrModel(),pOutDev,false) );
         pDrawViewWrapper->attachParentReferenceDevice( xModel );
         
         MapMode aOldMapMode( pOutDev->GetMapMode()  );

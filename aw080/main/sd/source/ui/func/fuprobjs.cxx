@@ -53,9 +53,6 @@
 #include "sdabstdlg.hxx"
 namespace sd {
 
-TYPEINIT1( FuPresentationObjects, FuPoor );
-
-
 /*************************************************************************
 |*
 |* Konstruktor
@@ -93,7 +90,7 @@ void FuPresentationObjects::DoExecute( SfxRequest& )
 	String aLayoutName = (((SfxStringItem&)aSet.Get(SID_STATUS_LAYOUT)).GetValue());
 	DBG_ASSERT(aLayoutName.Len(), "Layout unbestimmt");
 
-	sal_Bool	bUnique = sal_False;
+	bool	bUnique = false;
 	sal_Int16	nDepth, nTmp;
 	OutlineView* pOlView = static_cast<OutlineView*>(pOutlineViewShell->GetView());
 	OutlinerView* pOutlinerView = pOlView->GetViewByWindow( (Window*) mpWindow );
@@ -109,16 +106,16 @@ void FuPresentationObjects::DoExecute( SfxRequest& )
 
 		if( nDepth != nTmp )
 		{
-			bUnique = sal_False;
+			bUnique = false;
 			break;
 		}
 
 		if( pOutl->HasParaFlag( pPara, PARAFLAG_ISPAGE ) != bPage )
 		{
-			bUnique = sal_False;
+			bUnique = false;
 			break;
 		}
-		bUnique = sal_True;
+		bUnique = true;
 
 		pPara = (Paragraph*) pList->Next();
 	}

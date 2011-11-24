@@ -96,7 +96,7 @@ bool ChartPrettyPainter::ShouldPrettyPaintChartOnThisDevice( OutputDevice* pOutD
         return false;
     if( OUTDEV_PRINTER == pOutDev->GetOutDevType() )
         return true;
-    vcl::PDFExtOutDevData* pPDFData = PTR_CAST( vcl::PDFExtOutDevData, pOutDev->GetExtOutDevData() );
+    vcl::PDFExtOutDevData* pPDFData = dynamic_cast< vcl::PDFExtOutDevData* >( pOutDev->GetExtOutDevData() );
     if( pPDFData )
         return true;
     return false;

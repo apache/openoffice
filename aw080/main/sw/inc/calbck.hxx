@@ -24,9 +24,10 @@
 #ifndef _CALBCK_HXX
 #define _CALBCK_HXX
 
-#include <tools/rtti.hxx>
+#include <tools/solar.h>
 #include "swdllapi.h"
-#include <boost/noncopyable.hpp>
+#include <typeinfo>
+#include <boost/utility.hpp>
 
 class SwModify;
 class SwClientIter;
@@ -109,10 +110,6 @@ public:
 	const SwModify* GetRegisteredIn() const { return pRegisteredIn; }
     bool IsLast() const { return !pLeft && !pRight; }
 
-    // needed for class SwClientIter
-	TYPEINFO();
-
-	// get information about attribute
 	virtual sal_Bool GetInfo( SfxPoolItem& ) const;
 };
 
@@ -147,7 +144,7 @@ public:
     // the same, but without setting bModifyLocked or checking for any of the flags
     // mba: it would be interesting to know why this is necessary
     // also allows to limit callback to certain type (HACK)
-	void ModifyBroadcast( const SfxPoolItem *pOldValue, const SfxPoolItem *pNewValue, TypeId nType = TYPE(SwClient) );
+	void ModifyBroadcast( const SfxPoolItem *pOldValue, const SfxPoolItem *pNewValue, const std::type_info* pType = &typeid(SwClient) );
 
     // a more universal broadcasting mechanism
 	void CallSwClientNotify( const SfxHint& rHint ) const;
@@ -223,8 +220,10 @@ class SwClientIter
     // from its SwModify
 	SwClientIter *pNxtIter;
 
+    SwClient* mpWatchClient;    // if set, SwModify::_Remove checks if this client is removed
+
     // iterator can be limited to return only SwClient objects of a certain type
-	TypeId aSrchId;
+	const std::type_info* mpSrchId;
 
 public:
     SW_DLLPUBLIC SwClientIter( const SwModify& );
@@ -247,9 +246,9 @@ public:
     // SwModify::Add() asserts this
 	bool IsChanged() const { return pDelNext != pAct; }
 
-	SW_DLLPUBLIC SwClient* First( TypeId nType );
+	SW_DLLPUBLIC SwClient* First( const std::type_info& rType );
 	SW_DLLPUBLIC SwClient* Next();
-	SW_DLLPUBLIC SwClient* Last( TypeId nType );
+	SW_DLLPUBLIC SwClient* Last( const std::type_info& rType );
 	SW_DLLPUBLIC SwClient* Previous();
 };
 

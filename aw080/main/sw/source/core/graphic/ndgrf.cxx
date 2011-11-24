@@ -1033,7 +1033,7 @@ void DelAllGrfCacheEntries( SwDoc* pDoc )
             ::sfx2::SvBaseLink* pLnk = &(*rLnks[ --n ]);
 			if( pLnk && OBJECT_CLIENT_GRF == pLnk->GetObjType() &&
 				rLnkMgr.GetDisplayNames( pLnk, 0, &sFileNm ) &&
-				pLnk->ISA( SwBaseLink ) && 0 != ( pGrfNd =
+				dynamic_cast< SwBaseLink* >(pLnk) && 0 != ( pGrfNd =
 				((SwBaseLink*)pLnk)->GetCntntNode()->GetGrfNode()) )
 			{
 				pGrfNd->GetGrfObj().ReleaseFromCache();
@@ -1117,7 +1117,7 @@ sal_Bool SwGrfNode::IsSelected() const
 		const SwNode* pN = this;
 		const ViewShell* pV = pESh;
 		do {
-			if( pV->ISA( SwEditShell ) && pN == &((SwCrsrShell*)pV)
+			if( dynamic_cast< const SwEditShell* >(pV) && pN == &((SwCrsrShell*)pV)
 								->GetCrsr()->GetPoint()->nNode.GetNode() )
 			{
 				bRet = sal_True;

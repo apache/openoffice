@@ -99,7 +99,9 @@ namespace drawinglayer
 
 			// as tooling, the process() implementation takes over API handling and calls this
 			// virtual render method when the primitive implementation is BasePrimitive2D-based.
-			virtual void processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate);
+			virtual void processBasePrimitive2D(
+				const primitive2d::BasePrimitive2D& rCandidate, 
+				const primitive2d::Primitive2DReference& rUnoCandidate);
 
             // direct primitive renderer support
             void impRenderMaskPrimitive2D(const primitive2d::MaskPrimitive2D& rMaskCandidate);

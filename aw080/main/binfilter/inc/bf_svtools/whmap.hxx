@@ -23,7 +23,7 @@
 #ifndef _SFX_WHMAP_HXX
 #define _SFX_WHMAP_HXX
 
-#include <solar.h>
+#include <bf_tools/bf_solar.h>
 
 namespace binfilter
 {

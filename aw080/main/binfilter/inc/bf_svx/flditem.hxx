@@ -29,6 +29,7 @@
 #include <tools/pstm.hxx>
 #include <bf_svtools/poolitem.hxx>
 #include <bf_svx/itemdata.hxx>
+#include <bf_svtools/BfSvPersist.hxx>
 
 class MetaAction;
 
@@ -43,10 +44,11 @@ class SvxAddressItem;
 
 #ifdef ITEMID_FIELD
 
-class SvxFieldData : public SvPersistBase
+class SvxFieldData : public BfSvPersistBase
 {
 public:
-							SV_DECL_PERSIST1( SvxFieldData, SvPersistBase, 1 )
+	TYPEINFO();
+							SV_DECL_PERSIST1( SvxFieldData, BfSvPersistBase, 1 )
 
 							SvxFieldData();
 	virtual 				~SvxFieldData();
@@ -126,6 +128,7 @@ class SvxDateField : public SvxFieldData
 	SvxDateFormat			eFormat;
 
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxDateField, SvxFieldData, SVX_DATEFIELD )
 
 							SvxDateField();
@@ -165,6 +168,7 @@ private:
 	XubString				aTargetFrame;		// In welchem Frame
 
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxURLField, SvxFieldData, SVX_URLFIELD )
 
 							SvxURLField();
@@ -190,6 +194,7 @@ public:
 class SvxPageField : public SvxFieldData
 {
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxPageField, SvxFieldData, SVX_PAGEFIELD )
 							SvxPageField() {}
 	virtual SvxFieldData*	Clone() const;
@@ -200,6 +205,7 @@ public:
 class SvxPagesField : public SvxFieldData
 {
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxPagesField, SvxFieldData, SVX_PAGESFIELD )
 							SvxPagesField() {}
 	virtual SvxFieldData*	Clone() const;
@@ -209,6 +215,7 @@ public:
 class SvxTimeField : public SvxFieldData
 {
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxTimeField, SvxFieldData, SVX_TIMEFIELD )
 							SvxTimeField() {}
 	virtual SvxFieldData*	Clone() const;
@@ -219,6 +226,7 @@ public:
 class SvxFileField : public SvxFieldData
 {
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxFileField, SvxFieldData, SVX_FILEFIELD )
 							SvxFileField() {}
 	virtual SvxFieldData*	Clone() const;
@@ -228,6 +236,7 @@ public:
 class SvxTableField : public SvxFieldData
 {
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxTableField, SvxFieldData, SVX_TABLEFIELD )
 							SvxTableField() {}
 	virtual SvxFieldData*	Clone() const;
@@ -257,6 +266,7 @@ private:
 	SvxTimeFormat			eFormat;
 
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxExtTimeField, SvxFieldData, SVX_EXT_TIMEFIELD )
 							SvxExtTimeField();
 							SvxExtTimeField( const Time& rTime,
@@ -298,6 +308,7 @@ private:
 	SvxFileFormat			eFormat;
 
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxExtFileField, SvxFieldData, SVX_EXT_FILEFIELD )
 							SvxExtFileField();
 							SvxExtFileField( const XubString& rString,
@@ -334,6 +345,7 @@ private:
 	SvxAuthorFormat	eFormat;
 
 public:
+	TYPEINFO();
 							SV_DECL_PERSIST1( SvxAuthorField, SvxFieldData, SVX_AUTHORFIELD )
 							SvxAuthorField();
 							SvxAuthorField( const SvxAddressItem& rAdrItem,

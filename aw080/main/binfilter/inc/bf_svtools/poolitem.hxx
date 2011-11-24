@@ -28,7 +28,7 @@
 #define TF_POOLABLE
 
 #include <sal/config.h>
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #include <limits.h>
 #include <bf_svtools/bf_solar.h>
 #include <tools/debug.hxx>

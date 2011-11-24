@@ -171,7 +171,7 @@ void AccessibleShape::Init (void)
             SdrObject* pSdrObject = GetSdrObjectFromXShape(mxShape);
 			if( pSdrObject )
 			{
-                SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, pSdrObject );
+                SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( pSdrObject );
                 OutlinerParaObject* pOutlinerParaObject = NULL;
 
                 if( pTextObj )
@@ -250,7 +250,7 @@ void AccessibleShape::UpdateStates (void)
 	// XXX fix_me this has to be done with an extra interface later on
 	if ( m_pShape && maShapeTreeInfo.GetSdrView() )
 	{
-		bShapeIsSelected = maShapeTreeInfo.GetSdrView()->IsObjMarked(m_pShape) == sal_True;
+		bShapeIsSelected = maShapeTreeInfo.GetSdrView()->IsObjMarked(*m_pShape) == sal_True;
 	}
 
     if (bShapeIsSelected)

@@ -55,6 +55,7 @@
 #include <svx/svditer.hxx>
 #include <svx/svdocapt.hxx>
 #include <svx/svdpagv.hxx>
+#include <svx/svdlegacy.hxx>
 
 #include <com/sun/star/sheet/DataPilotFieldFilter.hpp>
 #include <com/sun/star/sheet/DataPilotFieldOrientation.hpp>
@@ -346,7 +347,7 @@ sal_Bool lcl_IsEditableMatrix( ScDocument* pDoc, const ScRange& rRange )
 
 }
 
-void lcl_UnLockComment( ScDrawView* pView, SdrPageView* pPV, SdrModel* pDrDoc, const Point& rPos, ScViewData* pViewData )
+void lcl_UnLockComment( ScDrawView* pView, SdrPageView* pPV, SdrModel* pDrDoc, const basegfx::B2DPoint& rPos, ScViewData* pViewData )
 {
     if (!pView && !pPV && !pDrDoc && !pViewData)
         return;
@@ -355,12 +356,13 @@ void lcl_UnLockComment( ScDrawView* pView, SdrPageView* pPV, SdrModel* pDrDoc, c
     ScAddress aCellPos( pViewData->GetCurX(), pViewData->GetCurY(), pViewData->GetTabNo() );
     ScPostIt* pNote = rDoc.GetNote( aCellPos );
     SdrObject* pObj = pNote ? pNote->GetCaption() : 0;
-    if( pObj && pObj->GetLogicRect().IsInside( rPos ) && ScDrawLayer::IsNoteCaption( pObj ) )
+    if( pObj && sdr::legacy::GetLogicRange(*pObj).isInside( rPos ) && ScDrawLayer::IsNoteCaption( *pObj ) )
     {
         const ScProtectionAttr* pProtAttr =  static_cast< const ScProtectionAttr* > (rDoc.GetAttr( aCellPos.Col(), aCellPos.Row(), aCellPos.Tab(), ATTR_PROTECTION ) );
         bool bProtectAttr = pProtAttr->GetProtection() || pProtAttr->GetHideCell() ;
         bool bProtectDoc =  rDoc.IsTabProtected( aCellPos.Tab() ) || pViewData->GetSfxDocShell()->IsReadOnly() ;
-        // unlock internal layer (if not protected), will be relocked in ScDrawView::MarkListHasChanged()
+        
+		// unlock internal layer (if not protected)
         pView->LockInternalLayer( bProtectDoc && bProtectAttr );
     }
 }
@@ -378,11 +380,10 @@ sal_Bool lcl_GetHyperlinkCell(ScDocument* pDoc, SCCOL& rPosX, SCROW& rPosY, SCTA
 			else
 				--rPosX;								// weitersuchen
 		}
-                else if ( rpCell->GetCellType() == CELLTYPE_EDIT)
-                    bFound = sal_True;
-                else if (rpCell->GetCellType() == CELLTYPE_FORMULA &&
-                  static_cast<ScFormulaCell*>(rpCell)->IsHyperLinkCell())
-                    bFound = sal_True;
+        else if ( rpCell->GetCellType() == CELLTYPE_EDIT)
+            bFound = sal_True;
+        else if (rpCell->GetCellType() == CELLTYPE_FORMULA && static_cast<ScFormulaCell*>(rpCell)->IsHyperLinkCell())
+            bFound = sal_True;
 	    else
 			return sal_False;								// andere Zelle
 	}
@@ -1512,8 +1513,6 @@ void ScGridWindow::HandleMouseButtonDown( const MouseEvent& rMEvt )
 	sal_Bool bFormulaMode = pScMod->IsFormulaMode();			// naechster Klick -> Referenz
 	sal_Bool bEditMode = pViewData->HasEditView(eWhich);		// auch bei Mode==SC_INPUT_TYPE
     sal_Bool bDouble = (rMEvt.GetClicks() == 2);
-
-	//	DeactivateIP passiert nur noch bei MarkListHasChanged
 
 	//	im GrabFocus Aufruf kann eine Fehlermeldung hochkommen
 	//	(z.B. beim Umbenennen von Tabellen per Tab-Reiter)
@@ -2863,10 +2862,13 @@ void __EXPORT ScGridWindow::Command( const CommandEvent& rCEvt )
 		            //	Is a draw object selected?
 
 		            SdrView* pDrawView = pViewSh->GetSdrView();
-		            if (pDrawView && pDrawView->AreObjectsMarked())
+		            if (pDrawView && pDrawView->areSdrObjectsSelected())
 		            {
                         // #100442#; the conext menu should open in the middle of the selected objects
-                        Rectangle aSelectRect(LogicToPixel(pDrawView->GetAllMarkedBoundRect()));
+                        const Rectangle aSelectRect(
+							LogicToPixel(
+								sdr::legacy::GetAllObjBoundRect(
+									pDrawView->getSelectedSdrObjectVectorFromSdrMarkView())));
                         aMenuPos = aSelectRect.Center();
 		            }
                 }
@@ -2944,33 +2946,38 @@ void ScGridWindow::SelectForContextMenu( const Point& rPosPixel, SCsCOL nCellX, 
     }
 
     //  check draw text edit mode
+	const basegfx::B2DPoint aPixelPos(rPosPixel.X(), rPosPixel.Y());
+	const basegfx::B2DPoint aLogicPos(GetInverseViewTransformation() * aPixelPos); // after cell edit mode is ended
 
-    Point aLogicPos = PixelToLogic( rPosPixel );        // after cell edit mode is ended
     if ( pDrawView && pDrawView->GetTextEditObject() && pDrawView->GetTextEditOutlinerView() )
     {
         OutlinerView* pOlView = pDrawView->GetTextEditOutlinerView();
-        Rectangle aOutputArea = pOlView->GetOutputArea();
-        if ( aOutputArea.IsInside( aLogicPos ) )
+		Rectangle aOldArea(pOlView->GetOutputArea());
+        const basegfx::B2DRange aOutputArea(aOldArea.Left(), aOldArea.Top(), aOldArea.Right(), aOldArea.Bottom());
+        
+		if ( aOutputArea.isInside( aLogicPos ) )
         {
             //  handle selection within the OutlinerView
 
             Outliner* pOutliner = pOlView->GetOutliner();
-            const EditEngine& rEditEngine = pOutliner->GetEditEngine();
-            Rectangle aVisArea = pOlView->GetVisArea();
+			aOldArea = pOlView->GetVisArea();
+            const basegfx::B2DRange aVisArea(aOldArea.Left(), aOldArea.Top(), aOldArea.Right(), aOldArea.Bottom());
+            basegfx::B2DPoint aTextPos(aLogicPos);
 
-            Point aTextPos = aLogicPos;
             if ( pOutliner->IsVertical() )              // have to manually transform position
             {
-                aTextPos -= aOutputArea.TopRight();
-                long nTemp = -aTextPos.X();
-                aTextPos.X() = aTextPos.Y();
-                aTextPos.Y() = nTemp;
+                aTextPos -= basegfx::B2DPoint(aOutputArea.getMaxX(), aOutputArea.getMinY());
+				aTextPos = basegfx::B2DPoint(aTextPos.getX(), -aTextPos.getX());
             }
             else
-                aTextPos -= aOutputArea.TopLeft();
-            aTextPos += aVisArea.TopLeft();             // position in the edit document
+			{
+                aTextPos -= aOutputArea.getMinimum();
+			}
 
-            EPosition aDocPosition = rEditEngine.FindDocPosition(aTextPos);
+            aTextPos += aVisArea.getMinimum();             // position in the edit document
+
+            const EditEngine& rEditEngine = pOutliner->GetEditEngine();
+            EPosition aDocPosition = rEditEngine.FindDocPosition(Point(basegfx::fround(aTextPos.getX()), basegfx::fround(aTextPos.getY())));
             ESelection aCompare(aDocPosition.nPara, aDocPosition.nIndex);
             ESelection aSelection = pOlView->GetSelection();
             aSelection.Adjust();    // needed for IsLess/IsGreater
@@ -3012,16 +3019,14 @@ void ScGridWindow::SelectForContextMenu( const Point& rPosPixel, SCsCOL nCellX, 
 
     if ( !bHitSelected )
     {
-        sal_Bool bWasDraw = ( pDrawView && pDrawView->AreObjectsMarked() );
+        sal_Bool bWasDraw = ( pDrawView && pDrawView->areSdrObjectsSelected() );
         sal_Bool bHitDraw = sal_False;
         if ( pDrawView )
         {
             pDrawView->UnmarkAllObj();
             // Unlock the Internal Layer in order to activate the context menu.
-            // re-lock in ScDrawView::MarkListHasChanged()
-            lcl_UnLockComment( pDrawView, pDrawView->GetSdrPageView(), pDrawView->GetModel(), aLogicPos ,pViewData);
+            lcl_UnLockComment( pDrawView, pDrawView->GetSdrPageView(), &pDrawView->getSdrModelFromSdrView(), aLogicPos ,pViewData);
             bHitDraw = pDrawView->MarkObj( aLogicPos );
-            // draw shell is activated in MarkListHasChanged
         }
         if ( !bHitDraw )
         {
@@ -3262,7 +3267,11 @@ sal_Int8 ScGridWindow::AcceptPrivateDrop( const AcceptDropEvent& rEvt )
 		ScDocument* pThisDoc   = pViewData->GetDocument();
 		if (pSourceDoc == pThisDoc)
 		{
-			if ( pThisDoc->HasChartAtPoint(pViewData->GetTabNo(), PixelToLogic(aPos)) )
+			const basegfx::B2DPoint aPixelPos(aPos.X(), aPos.Y());
+			const basegfx::B2DPoint aLogicPos(GetInverseViewTransformation() * aPixelPos); // after cell edit mode is ended
+			const SdrView* pSdrView = pViewData->GetView()->GetScDrawView();
+
+			if(pThisDoc->HasChartAtPoint(pViewData->GetTabNo(), aLogicPos, 0, pSdrView))
 			{
 				if (bDragRect)			// Rechteck loeschen
 				{
@@ -3532,8 +3541,11 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 					nMyAction = DND_ACTION_COPY;
 
 			ScDocument* pThisDoc = pViewData->GetDocument();
-			SdrObject* pHitObj = pThisDoc->GetObjectAtPoint(
-						pViewData->GetTabNo(), PixelToLogic(rEvt.maPosPixel) );
+			const basegfx::B2DPoint aPixelPos(rEvt.maPosPixel.X(), rEvt.maPosPixel.Y());
+			const basegfx::B2DPoint aLogicPos(GetInverseViewTransformation() * aPixelPos); // after cell edit mode is ended
+			const SdrView* pSdrView = pViewData->GetView()->GetScDrawView();
+			SdrObject* pHitObj = pThisDoc->GetObjectAtPoint(pViewData->GetTabNo(), aLogicPos, pSdrView);
+
 			if ( pHitObj && nMyAction == DND_ACTION_LINK && !rData.pDrawTransfer )
 			{
 				if ( IsDropFormatSupported(SOT_FORMATSTR_ID_SVXB)
@@ -3756,13 +3768,15 @@ sal_Int8 ScGridWindow::ExecutePrivateDrop( const ExecuteDropEvent& rEvt )
 
 	ScModule* pScMod = SC_MOD();
 	const ScDragData& rData = pScMod->GetDragData();
+	const basegfx::B2DPoint aPixelPos(rEvt.maPosPixel.X(), rEvt.maPosPixel.Y());
+	const basegfx::B2DPoint aLogicPos(GetInverseViewTransformation() * aPixelPos); // after cell edit mode is ended
 
 	return DropTransferObj( rData.pCellTransfer, nDragStartX, nDragStartY,
-								PixelToLogic(rEvt.maPosPixel), rEvt.mnAction );
+		aLogicPos, rEvt.mnAction );
 }
 
 sal_Int8 ScGridWindow::DropTransferObj( ScTransferObj* pTransObj, SCCOL nDestPosX, SCROW nDestPosY,
-										const Point& rLogicPos, sal_Int8 nDndAction )
+	const basegfx::B2DPoint& rLogicPos, sal_Int8 nDndAction )
 {
 	if ( !pTransObj )
 		return 0;
@@ -3843,7 +3857,9 @@ sal_Int8 ScGridWindow::DropTransferObj( ScTransferObj* pTransObj, SCCOL nDestPos
 		else										// move/copy block
 		{
 			String aChartName;
-			if (pThisDoc->HasChartAtPoint( nThisTab, rLogicPos, &aChartName ))
+			const SdrView* pSdrView = pViewData->GetView()->GetScDrawView();
+
+			if (pThisDoc->HasChartAtPoint( nThisTab, rLogicPos, &aChartName, pSdrView ))
 			{
 				String aRangeName;
 				aSource.Format( aRangeName, SCR_ABS_3D, pThisDoc );
@@ -4151,7 +4167,8 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 		return bOk ? rEvt.mnAction : DND_ACTION_NONE;			// don't try anything else
 	}
 
-	Point aLogicPos = PixelToLogic(aPos);
+	const basegfx::B2DPoint aPixelPos(aPos.X(), aPos.Y());
+	basegfx::B2DPoint aLogicPos(GetInverseViewTransformation() * aPixelPos); // after cell edit mode is ended
 
 	if (rData.pDrawTransfer)
 	{
@@ -4192,7 +4209,8 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 	sal_Bool bIsLink = ( rEvt.mnAction == DND_ACTION_LINK );
 
 	ScDocument* pThisDoc = pViewData->GetDocument();
-	SdrObject* pHitObj = pThisDoc->GetObjectAtPoint( pViewData->GetTabNo(), PixelToLogic(aPos) );
+	const SdrView* pSdrView = pViewData->GetView()->GetScDrawView();
+	SdrObject* pHitObj = pThisDoc->GetObjectAtPoint(pViewData->GetTabNo(), aLogicPos, pSdrView);
 	if ( pHitObj && bIsLink )
 	{
 		//	dropped on drawing object
@@ -4224,7 +4242,8 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 
 void ScGridWindow::PasteSelection( const Point& rPosPixel )
 {
-	Point aLogicPos = PixelToLogic( rPosPixel );
+	const basegfx::B2DPoint aPixelPos(rPosPixel.X(), rPosPixel.Y());
+	basegfx::B2DPoint aLogicPos(GetInverseViewTransformation() * aPixelPos); // after cell edit mode is ended
 
 	SCsCOL	nPosX;
 	SCsROW	nPosY;
@@ -5006,18 +5025,18 @@ sal_Bool ScGridWindow::GetEditUrlOrError( sal_Bool bSpellErr, const Point& rPos,
 
 			if (pFieldItem)
 			{
-				const SvxFieldData* pField = pFieldItem->GetField();
-				if ( pField && pField->ISA(SvxURLField) )
+				const SvxURLField* pField = dynamic_cast< const SvxURLField* >(pFieldItem->GetField());
+				
+				if ( pField )
 				{
 					if ( pName || pUrl || pTarget )
 					{
-						const SvxURLField* pURLField = (const SvxURLField*)pField;
 						if (pName)
-							*pName = pURLField->GetRepresentation();
+							*pName = pField->GetRepresentation();
 						if (pUrl)
-							*pUrl = pURLField->GetURL();
+							*pUrl = pField->GetURL();
 						if (pTarget)
-							*pTarget = pURLField->GetTargetFrame();
+							*pTarget = pField->GetTargetFrame();
 					}
 					bRet = sal_True;
 				}
@@ -5276,9 +5295,8 @@ void ScGridWindow::UpdateCursorOverlay()
 			for(sal_uInt32 a(0); a < aPixelRects.size(); a++)
 			{
 				const Rectangle aRA(aPixelRects[a]);
-				basegfx::B2DRange aRB(aRA.Left(), aRA.Top(), aRA.Right() + 1, aRA.Bottom() + 1);
-				aRB.transform(aTransform);
-				aRanges.push_back(aRB);
+				const basegfx::B2DRange aRB(aRA.Left(), aRA.Top(), aRA.Right() + 1, aRA.Bottom() + 1);
+				aRanges.push_back(aTransform * aRB);
 			}
 			
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
@@ -5326,9 +5344,9 @@ void ScGridWindow::UpdateSelectionOverlay()
 			for(sal_uInt32 a(0); a < aPixelRects.size(); a++)
 			{
 				const Rectangle aRA(aPixelRects[a]);
-				basegfx::B2DRange aRB(aRA.Left() - 1, aRA.Top() - 1, aRA.Right(), aRA.Bottom());
-				aRB.transform(aTransform);
-				aRanges.push_back(aRB);
+				const basegfx::B2DRange aRB(aRA.Left() - 1, aRA.Top() - 1, aRA.Right(), aRA.Bottom());
+
+				aRanges.push_back(aTransform * aRB);
 			}
 
             // #i97672# get the system's hilight color and limit it to the maximum
@@ -5421,10 +5439,9 @@ void ScGridWindow::UpdateAutoFillOverlay()
             const Color aHandleColor( SC_MOD()->GetColorConfig().GetColorValue(svtools::FONTCOLOR).nColor );
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
-            basegfx::B2DRange aRB(mpAutoFillRect->Left(), mpAutoFillRect->Top(), mpAutoFillRect->Right() + 1, mpAutoFillRect->Bottom() + 1);
+            const basegfx::B2DRange aRB(mpAutoFillRect->Left(), mpAutoFillRect->Top(), mpAutoFillRect->Right() + 1, mpAutoFillRect->Bottom() + 1);
 			
-			aRB.transform(aTransform);
-			aRanges.push_back(aRB);
+			aRanges.push_back(aTransform * aRB);
 
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection( 
 				sdr::overlay::OVERLAY_SOLID, 
@@ -5553,9 +5570,9 @@ void ScGridWindow::UpdateDragRectOverlay()
 			for(sal_uInt32 a(0); a < aPixelRects.size(); a++)
 			{
 				const Rectangle aRA(aPixelRects[a]);
-				basegfx::B2DRange aRB(aRA.Left(), aRA.Top(), aRA.Right() + 1, aRA.Bottom() + 1);
-				aRB.transform(aTransform);
-				aRanges.push_back(aRB);
+				const basegfx::B2DRange aRB(aRA.Left(), aRA.Top(), aRA.Right() + 1, aRA.Bottom() + 1);
+
+				aRanges.push_back(aTransform * aRB);
 			}
 
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection( 
@@ -5599,10 +5616,9 @@ void ScGridWindow::UpdateHeaderOverlay()
             // Color aHighlight = GetSettings().GetStyleSettings().GetHighlightColor();
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
-			basegfx::B2DRange aRB(aInvertRect.Left(), aInvertRect.Top(), aInvertRect.Right() + 1, aInvertRect.Bottom() + 1);
+			const basegfx::B2DRange aRB(aInvertRect.Left(), aInvertRect.Top(), aInvertRect.Right() + 1, aInvertRect.Bottom() + 1);
 			
-			aRB.transform(aTransform);
-			aRanges.push_back(aRB);
+			aRanges.push_back(aTransform * aRB);
 
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
 				sdr::overlay::OVERLAY_INVERT, 
@@ -5669,10 +5685,9 @@ void ScGridWindow::UpdateShrinkOverlay()
             // Color aHighlight = GetSettings().GetStyleSettings().GetHighlightColor();
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
-			basegfx::B2DRange aRB(aPixRect.Left(), aPixRect.Top(), aPixRect.Right() + 1, aPixRect.Bottom() + 1);
+			const basegfx::B2DRange aRB(aPixRect.Left(), aPixRect.Top(), aPixRect.Right() + 1, aPixRect.Bottom() + 1);
 			
-			aRB.transform(aTransform);
-			aRanges.push_back(aRB);
+			aRanges.push_back(aTransform * aRB);
 
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
 				sdr::overlay::OVERLAY_INVERT, 

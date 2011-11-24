@@ -32,7 +32,6 @@
 
 #include <svx/xtable.hxx>
 #include <svx/xpool.hxx>
-
 #include <svx/dialogs.hrc>
 #include "accessibility.hrc"
 #include <svx/dlgctrl.hxx>
@@ -42,18 +41,17 @@
 #include <vcl/gradient.hxx>
 #include <vcl/hatch.hxx>
 #include <svtools/colorcfg.hxx>
-
 #include "svxrectctaccessiblecontext.hxx"
 #include <com/sun/star/lang/XUnoTunnel.hpp>
 #include <basegfx/point/b2dpoint.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <svx/svdorect.hxx>
-
 #include <svx/svdmodel.hxx>
 #include <svx/svdopath.hxx>
 #include <svx/sdr/contact/objectcontactofobjlistpainter.hxx>
 #include <svx/sdr/contact/displayinfo.hxx>
 #include "linectrl.hrc"
+#include <svx/svdlegacy.hxx>
 
 #define OUTPUT_DRAWMODE_COLOR		(DRAWMODE_DEFAULT)
 #define OUTPUT_DRAWMODE_CONTRAST	(DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT)
@@ -2063,8 +2061,8 @@ SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
 	basegfx::B2DPolygon aPolygonA;
 	aPolygonA.append(aPointA1);
 	aPolygonA.append(aPointA2);
-	mpLineObjA = new SdrPathObj(OBJ_LINE, basegfx::B2DPolyPolygon(aPolygonA));
-	mpLineObjA->SetModel(&getModel());
+	mpLineObjA = new SdrPathObj(getModel(), OBJ_LINE, basegfx::B2DPolyPolygon(aPolygonA));
+	//mpLineObjA->SetModel(&getModel());
 
 	// create DrawObectB
 	const sal_Int32 aYPosB1((aOutputSize.Height() * 3) / 4);
@@ -2076,8 +2074,8 @@ SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
 	aPolygonB.append(aPointB1);
 	aPolygonB.append(aPointB2);
 	aPolygonB.append(aPointB3);
-	mpLineObjB = new SdrPathObj(OBJ_PLIN, basegfx::B2DPolyPolygon(aPolygonB));
-	mpLineObjB->SetModel(&getModel());
+	mpLineObjB = new SdrPathObj(getModel(), OBJ_PLIN, basegfx::B2DPolyPolygon(aPolygonB));
+	//mpLineObjB->SetModel(&getModel());
 	
 	// create DrawObectC
 	const basegfx::B2DPoint aPointC1( aPointB3.getX() + nDistance,  aYPosB1);
@@ -2087,15 +2085,15 @@ SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
 	aPolygonC.append(aPointC1);
 	aPolygonC.append(aPointC2);
 	aPolygonC.append(aPointC3);
-	mpLineObjC = new SdrPathObj(OBJ_PLIN, basegfx::B2DPolyPolygon(aPolygonC));
-	mpLineObjC->SetModel(&getModel());
+	mpLineObjC = new SdrPathObj(getModel(), OBJ_PLIN, basegfx::B2DPolyPolygon(aPolygonC));
+	//mpLineObjC->SetModel(&getModel());
 }
 
 SvxXLinePreview::~SvxXLinePreview()
 {
-    SdrObject::Free( mpLineObjA );
-    SdrObject::Free( mpLineObjB );
-    SdrObject::Free( mpLineObjC );
+    deleteSdrObjectSafeAndClearPointer( mpLineObjA );
+    deleteSdrObjectSafeAndClearPointer( mpLineObjB );
+    deleteSdrObjectSafeAndClearPointer( mpLineObjC );
 }
 
 // -----------------------------------------------------------------------
@@ -2140,7 +2138,7 @@ void SvxXLinePreview::Paint( const Rectangle& )
 	LocalPrePaint();
 
 	// paint objects to buffer device
-	sdr::contact::SdrObjectVector aObjectVector;
+	SdrObjectVector aObjectVector;
 	aObjectVector.push_back(mpLineObjA);
 	aObjectVector.push_back(mpLineObjB);
 	aObjectVector.push_back(mpLineObjC);
@@ -2176,14 +2174,16 @@ SvxXRectPreview::SvxXRectPreview( Window* pParent, const ResId& rResId )
 	InitSettings(true, true);
 
 	// create RectangleObject
-    const Rectangle aObjectSize(Point(), GetOutputSize());
-	mpRectangleObject = new SdrRectObj(aObjectSize);
-	mpRectangleObject->SetModel(&getModel());
+	mpRectangleObject = new SdrRectObj(
+		getModel(), 
+		basegfx::tools::createScaleB2DHomMatrix(
+			GetOutputSize().getWidth(), GetOutputSize().getHeight()));
+	//mpRectangleObject->SetModel(&getModel());
 }
 
 SvxXRectPreview::~SvxXRectPreview()
 {
-    SdrObject::Free(mpRectangleObject);
+    deleteSdrObjectSafeAndClearPointer(mpRectangleObject);
 }
 
 void SvxXRectPreview::SetAttributes(const SfxItemSet& rItemSet)
@@ -2196,7 +2196,7 @@ void SvxXRectPreview::Paint( const Rectangle& )
 {
 	LocalPrePaint();
 
-    sdr::contact::SdrObjectVector aObjectVector;
+    SdrObjectVector aObjectVector;
 
     aObjectVector.push_back(mpRectangleObject);
 
@@ -2227,20 +2227,24 @@ SvxXShadowPreview::SvxXShadowPreview( Window* pParent, const ResId& rResId )
 	aSize.Height() = aSize.Height() / 3;
 
     // create RectangleObject
-    const Rectangle aObjectSize( Point( aSize.Width(), aSize.Height() ), aSize );
-	mpRectangleObject = new SdrRectObj(aObjectSize);
-	mpRectangleObject->SetModel(&getModel());
+	mpRectangleObject = new SdrRectObj(
+		getModel(), 
+		basegfx::tools::createScaleTranslateB2DHomMatrix(
+			aSize.getWidth(), aSize.getHeight(), 
+			aSize.getWidth(), aSize.getHeight()));
+	//mpRectangleObject->SetModel(&getModel());
 
     // create ShadowObject
-    const Rectangle aShadowSize( Point( aSize.Width(), aSize.Height() ), aSize );
-	mpRectangleShadow = new SdrRectObj(aShadowSize);
-	mpRectangleShadow->SetModel(&getModel());
+	mpRectangleShadow = new SdrRectObj(
+		getModel(), 
+		mpRectangleObject->getSdrObjectTransformation());
+	//mpRectangleShadow->SetModel(&getModel());
 }
 
 SvxXShadowPreview::~SvxXShadowPreview()
 {
-    SdrObject::Free(mpRectangleObject);
-    SdrObject::Free(mpRectangleShadow);
+    deleteSdrObjectSafeAndClearPointer(mpRectangleObject);
+    deleteSdrObjectSafeAndClearPointer(mpRectangleShadow);
 }
 
 void SvxXShadowPreview::SetRectangleAttributes(const SfxItemSet& rItemSet)
@@ -2257,16 +2261,14 @@ void SvxXShadowPreview::SetShadowAttributes(const SfxItemSet& rItemSet)
 
 void SvxXShadowPreview::SetShadowPosition(const Point& rPos) 
 { 
-    Rectangle aObjectPosition(mpRectangleObject->GetSnapRect());
-    aObjectPosition.Move(rPos.X(), rPos.Y());
-    mpRectangleShadow->SetSnapRect(aObjectPosition);
+	sdr::legacy::transformSdrObject(*mpRectangleShadow, basegfx::tools::createTranslateB2DHomMatrix(rPos.X(), rPos.Y()));
 }
 
 void SvxXShadowPreview::Paint( const Rectangle& )
 {
 	LocalPrePaint();
 
-    sdr::contact::SdrObjectVector aObjectVector;
+    SdrObjectVector aObjectVector;
 
     aObjectVector.push_back(mpRectangleShadow);
 	aObjectVector.push_back(mpRectangleObject);

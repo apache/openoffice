@@ -166,7 +166,7 @@ SdUnoForbiddenCharsTable::~SdUnoForbiddenCharsTable()
 
 void SdUnoForbiddenCharsTable::Notify( SfxBroadcaster& rBC, const SfxHint& rHint ) throw()
 {
-	const SdrHint* pSdrHint = PTR_CAST( SdrHint, &rHint );
+	const SdrHint* pSdrHint = dynamic_cast< const SdrHint* >( &rHint );
 
 	if( pSdrHint )
 	{
@@ -367,7 +367,7 @@ void SdXImpressDocument::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
 	if( pDoc )
 	{
-		const SdrHint* pSdrHint = PTR_CAST( SdrHint, &rHint );
+		const SdrHint* pSdrHint = dynamic_cast< const SdrHint* >( &rHint );
 
 		if( pSdrHint )
 		{
@@ -402,7 +402,7 @@ void SdXImpressDocument::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 		}
 		else
 		{
-			const SfxSimpleHint* pSfxHint = PTR_CAST(SfxSimpleHint, &rHint );
+			const SfxSimpleHint* pSfxHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
 
 			// ist unser SdDrawDocument gerade gestorben?
 			if(pSfxHint && pSfxHint->GetId() == SFX_HINT_DYING)

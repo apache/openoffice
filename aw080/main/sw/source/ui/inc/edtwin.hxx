@@ -229,7 +229,7 @@ public:
 	sal_Bool			IsFrmAction() 					{ return (bInsFrm); }
 	inline sal_uInt16	GetBezierMode() 				{ return eBezierMode; }
 	void			SetBezierMode(sal_uInt16 eBezMode)	{ eBezierMode = eBezMode; }
-	void			EnterDrawTextMode(const Point& aDocPos); // DrawTextEditMode einschalten
+	void			EnterDrawTextMode(const basegfx::B2DPoint& aDocPos); // DrawTextEditMode einschalten
 	void			InsFrm(sal_uInt16 nCols);
 	void 			StopInsFrm();
 	sal_uInt16			GetFrmColCount() const {return nInsFrmColCount;} //Spaltenzahl fuer interaktiven Rahmen

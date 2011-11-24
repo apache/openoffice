@@ -114,7 +114,7 @@ void SvxDrawPage::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
 	if( pModel )
 	{
-		const SdrHint* pSdrHint = PTR_CAST( SdrHint, &rHint );
+		const SdrHint* pSdrHint = dynamic_cast< const SdrHint* >( &rHint );
 
 		sal_Bool bInvalid = sal_False;
 

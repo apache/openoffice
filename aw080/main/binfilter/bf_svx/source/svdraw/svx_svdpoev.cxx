@@ -69,7 +69,7 @@ namespace binfilter {
 /*?*/ 			SdrMark* pM=aMark.GetMark(nMarkNum);
 /*?*/ 			SdrObject* pObj=pM->GetObj();
 /*?*/ 			SdrUShortCont* pPts=pM->GetMarkedPoints();
-/*?*/ 			SdrPathObj* pPath=PTR_CAST(SdrPathObj,pObj);
+/*?*/ 			SdrPathObj* pPath=dynamic_cast< SdrPathObj* >( pObj);
 /*?*/ 			if (pPath!=NULL && pPts!=NULL) {
 /*?*/ 				ULONG nMarkedPntAnz=pPts->GetCount();
 /*?*/ 				if (nMarkedPntAnz!=0) {

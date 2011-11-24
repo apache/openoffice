@@ -806,7 +806,7 @@ sal_Bool lcl_sw3io_insFtn( const SwTxtNode *pTxtNd )
 /*N*/ 		// The parent format of TOX header sections has not to be stored,
 /*N*/ 		// because the section is inserted into the newly created TOX content
 /*N*/ 		// section and that for will be replaced always.
-/*N*/ 		const SwSectionFmt* pSectFmt = PTR_CAST( SwSectionFmt, &rFmt );
+/*N*/ 		const SwSectionFmt* pSectFmt = dynamic_cast< const SwSectionFmt* >( &rFmt );
 /*N*/ 		ASSERT( pSectFmt, "no section format?" );
 /*N*/ 		if( pSectFmt )
 /*N*/ 		{

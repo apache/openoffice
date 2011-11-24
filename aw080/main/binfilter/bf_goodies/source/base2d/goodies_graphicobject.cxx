@@ -32,7 +32,7 @@ namespace binfilter {
 }//end of namespace binfilter
 
 namespace binfilter {
-	TYPEINIT1_AUTOFACTORY( BfGraphicObject, GraphicObject);
+	TYPEINIT0_AUTOFACTORY( BfGraphicObject );
 	void BfGraphicObject::GraphicManagerDestroyed() { GraphicObject::GraphicManagerDestroyed(); }
 	ULONG BfGraphicObject::GetReleaseFromCache() const { return GraphicObject::GetReleaseFromCache(); }
 	SvStream* BfGraphicObject::GetSwapStream() const { return GraphicObject::GetSwapStream(); }

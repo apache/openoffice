@@ -156,9 +156,6 @@ namespace sdr
 			// overloaded to do it for hierarchical objects like e.g. groups.
 			virtual void MoveToItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel = 0L);
 
-			// Set new model.
-			virtual void SetModel(SdrModel* pOldModel, SdrModel* pNewModel);
-
 			// force all attributes which come from styles to hard attributes
 			// to be able to live without the style.
 			virtual void ForceStyleToHardAttributes();
@@ -173,11 +170,6 @@ namespace sdr
 			// Just a convenient shortcut for GetObjectItemSet().Get(nWhich).
 			const SfxPoolItem& GetItem(const sal_uInt16 nWhich) const;
 
-			// support for convenient broadcasting. Used from SetMergedItemAndBroadcast(),
-			// ClearItemAndBroadcast() and SetItemSetAndBroadcast(), see above.
-			// But also from inside SdrObjects.
-			void BroadcastItemChange(const ItemChangeBroadcaster& rChange);
-            
             // #i101556# add versioning mechanism; used from e.g. text attribute set to
             // allow detection of e.g. style sheet or single text attribute changes. The
             // default implementation returns 0 (zero)

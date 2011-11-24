@@ -277,7 +277,7 @@ SvObjectRef SvFactory::Create( const SvGlobalName & rClassName ) const
 
 	const SvFactory * pFact = this;
 	if ( !pFact || rClassName != *this )
-		pFact = PTR_CAST( SvFactory, Find( rClassName ) );
+		pFact = dynamic_cast< const SvFactory* >( Find( rClassName ) );
 
 	if( pFact )
 	{

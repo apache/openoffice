@@ -55,52 +55,82 @@ DlgEdFactory::~DlgEdFactory()
 
 IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 {
-	if ( pObjFactory->nInventor == ReportInventor )
+	if ( pObjFactory->mnInventor == ReportInventor )
 	{
-        switch( pObjFactory->nIdentifier )
+        switch( pObjFactory->mnIdentifier )
 	    {
 		    case OBJ_DLG_FIXEDTEXT:
-				    pObjFactory->pNewObj = new OUnoObject( SERVICE_FIXEDTEXT
+			{
+				pObjFactory->mpNewObj = new OUnoObject( 
+					*pObjFactory->mpTargetModel,
+					SERVICE_FIXEDTEXT
 													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
 													    ,OBJ_DLG_FIXEDTEXT);
 				    break;
+			}
 		    case OBJ_DLG_IMAGECONTROL:
-				    pObjFactory->pNewObj = new OUnoObject( SERVICE_IMAGECONTROL
+			{
+				pObjFactory->mpNewObj = new OUnoObject( 
+					*pObjFactory->mpTargetModel,
+					SERVICE_IMAGECONTROL
 													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
 														,OBJ_DLG_IMAGECONTROL);
 				    break;
+			}
 		    case OBJ_DLG_FORMATTEDFIELD:
-				    pObjFactory->pNewObj = new OUnoObject( SERVICE_FORMATTEDFIELD
+			{
+				pObjFactory->mpNewObj = new OUnoObject( 
+					*pObjFactory->mpTargetModel,
+					SERVICE_FORMATTEDFIELD
 													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
 														,OBJ_DLG_FORMATTEDFIELD);
 				    break;
+			}
             case OBJ_DLG_VFIXEDLINE:
             case OBJ_DLG_HFIXEDLINE:
                 {
-                    OUnoObject* pObj = new OUnoObject( SERVICE_FIXEDLINE
+                OUnoObject* pObj = new OUnoObject( 
+					*pObjFactory->mpTargetModel,
+					SERVICE_FIXEDLINE
 													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel")) 
-														,pObjFactory->nIdentifier);
-                    pObjFactory->pNewObj = pObj;
-                    if ( pObjFactory->nIdentifier == OBJ_DLG_HFIXEDLINE )
+					,pObjFactory->mnIdentifier);
+                pObjFactory->mpNewObj = pObj;
+                if ( pObjFactory->mnIdentifier == OBJ_DLG_HFIXEDLINE )
                     {
                         uno::Reference<beans::XPropertySet> xProp = pObj->getAwtComponent();
                         xProp->setPropertyValue( PROPERTY_ORIENTATION, uno::makeAny(sal_Int32(0)) );
                     }
-                }
                 break;
+            }
             case OBJ_CUSTOMSHAPE:
-                pObjFactory->pNewObj = new OCustomShape(SERVICE_SHAPE);
+            {
+                pObjFactory->mpNewObj = new OCustomShape(
+					*pObjFactory->mpTargetModel,
+					SERVICE_SHAPE);
                 break;
+			}
             case OBJ_DLG_SUBREPORT:
-                pObjFactory->pNewObj = new OOle2Obj(SERVICE_REPORTDEFINITION,OBJ_DLG_SUBREPORT);
+            {
+                pObjFactory->mpNewObj = new OOle2Obj(
+					*pObjFactory->mpTargetModel,
+					SERVICE_REPORTDEFINITION,
+					OBJ_DLG_SUBREPORT);
                 break;
+			}
             case OBJ_OLE2:
-                pObjFactory->pNewObj = new OOle2Obj(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.chart2.ChartDocument")),OBJ_OLE2);
+            {
+                pObjFactory->mpNewObj = new OOle2Obj(
+					*pObjFactory->mpTargetModel,
+					::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.chart2.ChartDocument")),
+					OBJ_OLE2);
                 break;
+			}
 		    default:
+            {
 			    OSL_ENSURE(0,"Unknown object id");
 			    break;
 	    }
+	}
 	}
 
 	return 0;

@@ -201,7 +201,7 @@ SvContainerEnvironment * SvInPlaceClient::GetEnv()
 {
 	if( !pData && GetProtocol().IsConnect() )
 		MakeViewData();
-	return PTR_CAST( SvContainerEnvironment, pData );
+	return dynamic_cast< SvContainerEnvironment* >( pData );
 }
 
 //=========================================================================

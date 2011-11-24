@@ -118,7 +118,7 @@ namespace binfilter {
 /*N*/ 		USHORT nLsAnz=pModel->GetListenerCount();
 /*N*/ 		while (nListenerNum<nLsAnz) {
 /*N*/ 			SfxListener* pLs=pModel->GetListener(nListenerNum);
-/*N*/ 			pAktView=PTR_CAST(SdrView,pLs);
+/*N*/ 			pAktView=dynamic_cast< SdrView* >( pLs);
 /*N*/ 			if (pAktView!=NULL) {
 /*N*/ 				if (pPage!=NULL) {
 /*N*/ 					USHORT nPvAnz=pAktView->GetPageViewCount();

@@ -40,7 +40,7 @@
 #include <bf_svtools/bf_solar.h>
 #include <tools/string.hxx>
 #include <bf_svtools/solar.hrc>
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #include <string.h>
 #include <tools/contnr.hxx>
 #include <vcl/sv.h>

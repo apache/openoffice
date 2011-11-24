@@ -37,14 +37,12 @@ class DrawViewShell;
 class FuFormatPaintBrush : public FuText
 {
 public:
-	TYPEINFO();
-
 	static FunctionReference Create( ViewShell* pViewSh, ::sd::Window* pWin, ::sd::View* pView, SdDrawDocument* pDoc, SfxRequest& rReq );
 
-    virtual sal_Bool MouseMove(const MouseEvent& rMEvt);
-	virtual sal_Bool MouseButtonUp(const MouseEvent& rMEvt);
-	virtual sal_Bool MouseButtonDown(const MouseEvent& rMEvt);
-    virtual sal_Bool KeyInput(const KeyEvent& rKEvt);
+    virtual bool MouseMove(const MouseEvent& rMEvt);
+	virtual bool MouseButtonUp(const MouseEvent& rMEvt);
+	virtual bool MouseButtonDown(const MouseEvent& rMEvt);
+    virtual bool KeyInput(const KeyEvent& rKEvt);
 
     virtual void Activate();
 	virtual void Deactivate();

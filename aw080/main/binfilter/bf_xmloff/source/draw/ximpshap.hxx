@@ -61,7 +61,7 @@
 #endif
 
 #ifndef _RTTI_HXX
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 
 #ifndef _XEXPTRANSFORM_HXX

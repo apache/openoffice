@@ -32,6 +32,9 @@
 #include <bf_so3/so2ref.hxx>
 #include <bf_so3/iface.hxx>
 
+// get BfSvPersist helper as RTTI-Replacement for SvPersistBase from original tools lib
+#include <bf_svtools/BfSvPersist.hxx>
+
 #ifndef INCLUDED_SO3DLLAPI_H
 #include "bf_so3/so3dllapi.h"
 #endif
@@ -249,7 +252,7 @@ SO2_IMPL_REF(SvPersist)
 
 SV_DECL_REF(SvInfoObject)
 class SvInfoObject_Impl;
-class SO3_DLLPUBLIC SvInfoObject : public SvPersistBase
+class SO3_DLLPUBLIC SvInfoObject : public BfSvPersistBase
 {
 friend class SvPersist;
 private:
@@ -267,7 +270,8 @@ protected:
 	SO3_DLLPRIVATE void            SetStorageName( const String & rName )
 					{ aStorName = rName; }
 public:
-					SV_DECL_PERSIST1(SvInfoObject,SvPersistBase,1)
+	TYPEINFO();
+					SV_DECL_PERSIST1(SvInfoObject,BfSvPersistBase,1)
 					SvInfoObject();
 					SvInfoObject( SvPersist *, const String & rObjName );
 					SvInfoObject( const String& rObjName,

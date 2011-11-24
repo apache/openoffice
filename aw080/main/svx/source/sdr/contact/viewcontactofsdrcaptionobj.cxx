@@ -66,25 +66,25 @@ namespace sdr
                     rItemSet, 
                     rCaptionObj.getText(0)));
 
-			// take unrotated snap rect (direct model data) for position and size
-			const Rectangle& rRectangle = rCaptionObj.GetGeoRect();
-			const ::basegfx::B2DRange aObjectRange(
-				rRectangle.Left(), rRectangle.Top(), 
-				rRectangle.Right(), rRectangle.Bottom());
-			const GeoStat& rGeoStat(rCaptionObj.GetGeoStat());
-			
-			// fill object matrix
-			basegfx::B2DHomMatrix aObjectMatrix(basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
-				aObjectRange.getWidth(), aObjectRange.getHeight(),
-				rGeoStat.nShearWink ? tan((36000 - rGeoStat.nShearWink) * F_PI18000) : 0.0,
-				rGeoStat.nDrehWink ? (36000 - rGeoStat.nDrehWink) * F_PI18000 : 0.0,
-				aObjectRange.getMinX(), aObjectRange.getMinY()));
+			// get object transformation
+			basegfx::B2DHomMatrix aObjectMatrix(rCaptionObj.getSdrObjectTransformation());
 
 			// calculate corner radius
-			double fCornerRadiusX;
-			double fCornerRadiusY;
+			double fCornerRadiusX(0.0);
+			double fCornerRadiusY(0.0);
+
+			if(rCaptionObj.GetEdgeRadius())
+			{
+				// get absolute object size
+				const basegfx::B2DVector aObjectScale(absolute(rCaptionObj.getSdrObjectScale()));
+
 			drawinglayer::primitive2d::calculateRelativeCornerRadius(
-				rCaptionObj.GetEckenradius(), aObjectRange, fCornerRadiusX, fCornerRadiusY);
+					rCaptionObj.GetEdgeRadius(), 
+					aObjectScale.getX(), 
+					aObjectScale.getY(),
+					fCornerRadiusX, 
+					fCornerRadiusY);
+			}
 
 			// create primitive. Always create one (even if invisible) to let the decomposition
 			// of SdrCaptionPrimitive2D create needed invisible elements for HitTest and BoundRect
@@ -102,8 +102,8 @@ namespace sdr
 			{
 				// for SC, the caption object may have a specialized shadow. The usual object shadow is off
 				// and a specialized shadow gets created here (see old paint)
-				const SdrShadowColorItem& rShadColItem = (SdrShadowColorItem&)(rItemSet.Get(SDRATTR_SHADOWCOLOR));
-				const sal_uInt16 nTransp(((SdrShadowTransparenceItem&)(rItemSet.Get(SDRATTR_SHADOWTRANSPARENCE))).GetValue());
+				const XColorItem& rShadColItem = (XColorItem&)(rItemSet.Get(SDRATTR_SHADOWCOLOR));
+				const sal_uInt16 nTransp(((SdrPercentItem&)(rItemSet.Get(SDRATTR_SHADOWTRANSPARENCE))).GetValue());
 				const Color aShadCol(rShadColItem.GetColorValue());
 				const XFillStyle eStyle = ((XFillStyleItem&)(rItemSet.Get(XATTR_FILLSTYLE))).GetValue();
 
@@ -139,13 +139,13 @@ namespace sdr
 				if(!aFill.isDefault() && 1.0 != aFill.getTransparence())
 				{
 					// add shadow offset to object matrix
-					const sal_uInt32 nXDist(((SdrShadowXDistItem&)(rItemSet.Get(SDRATTR_SHADOWXDIST))).GetValue());
-					const sal_uInt32 nYDist(((SdrShadowYDistItem&)(rItemSet.Get(SDRATTR_SHADOWYDIST))).GetValue());
+					const sal_uInt32 nXDist(((SdrMetricItem&)(rItemSet.Get(SDRATTR_SHADOWXDIST))).GetValue());
+					const sal_uInt32 nYDist(((SdrMetricItem&)(rItemSet.Get(SDRATTR_SHADOWYDIST))).GetValue());
 					aObjectMatrix.translate(nXDist, nYDist);
 					
 					// create unit outline polygon as geometry (see SdrCaptionPrimitive2D::create2DDecomposition)
 					basegfx::B2DPolygon aUnitOutline(basegfx::tools::createPolygonFromRect(
-						basegfx::B2DRange(0.0, 0.0, 1.0, 1.0), fCornerRadiusX, fCornerRadiusY));
+						basegfx::B2DRange::getUnitB2DRange(), fCornerRadiusX, fCornerRadiusY));
 
 					// create the specialized shadow primitive
 					xSpecialShadow = drawinglayer::primitive2d::createPolyPolygonFillPrimitive(

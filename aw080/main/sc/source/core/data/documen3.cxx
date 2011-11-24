@@ -824,9 +824,11 @@ void ScDocument::BroadcastUno( const SfxHint &rHint )
 		// The listener calls must be processed after completing the broadcast,
 		// because they can add or remove objects from pUnoBroadcaster.
 
-		if ( pUnoListenerCalls && rHint.ISA( SfxSimpleHint ) &&
-				((const SfxSimpleHint&)rHint).GetId() == SFX_HINT_DATACHANGED &&
-				!bInUnoListenerCall )
+		if ( pUnoListenerCalls )
+		{
+			const SfxSimpleHint* pSfxSimpleHint = dynamic_cast< const SfxSimpleHint* >(&rHint);
+			
+			if(pSfxSimpleHint && SFX_HINT_DATACHANGED == pSfxSimpleHint->GetId() && !bInUnoListenerCall )
 		{
 			// Listener calls may lead to BroadcastUno calls again. The listener calls
 			// are not nested, instead the calls are collected in the list, and the
@@ -838,6 +840,7 @@ void ScDocument::BroadcastUno( const SfxHint &rHint )
 			bInUnoListenerCall = sal_False;
 		}
 	}
+}
 }
 
 void ScDocument::AddUnoListenerCall( const uno::Reference<util::XModifyListener>& rListener,

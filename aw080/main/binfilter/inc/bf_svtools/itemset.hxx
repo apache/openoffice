@@ -33,7 +33,7 @@
 #include <bf_svtools/poolitem.hxx>
 #endif
 #ifndef _RTTI_HXX //autogen
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 #include <bf_svtools/bf_solar.h>
 

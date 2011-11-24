@@ -107,19 +107,6 @@ namespace drawinglayer
 		{
 		}
 
-		bool FillBitmapPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
-		{
-			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
-			{
-				const FillBitmapPrimitive2D& rCompare = static_cast< const FillBitmapPrimitive2D& >(rPrimitive);
-
-				return (getTransformation() == rCompare.getTransformation()
-					&& getFillBitmap() == rCompare.getFillBitmap());
-			}
-
-			return false;
-		}
-
 		basegfx::B2DRange FillBitmapPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
 			// return range of it

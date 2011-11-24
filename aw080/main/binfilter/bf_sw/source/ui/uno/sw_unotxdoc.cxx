@@ -1727,8 +1727,8 @@ OUString SwXTextDocument::getImplementationName(void) throw( RuntimeException )
  * --------------------------------------------------*/
 sal_Bool SwXTextDocument::supportsService(const OUString& rServiceName) throw( RuntimeException )
 {
-    BOOL bWebDoc    = 0 != PTR_CAST(SwWebDocShell,    pDocShell);
-    BOOL bGlobalDoc = 0 != PTR_CAST(SwGlobalDocShell, pDocShell);
+    BOOL bWebDoc    = 0 != dynamic_cast< SwWebDocShell* >( pDocShell);
+    BOOL bGlobalDoc = 0 != dynamic_cast< SwGlobalDocShell* >( pDocShell);
     BOOL bTextDoc   = !bWebDoc && !bGlobalDoc;
 
     sal_Bool bRet = (
@@ -1755,8 +1755,8 @@ sal_Bool SwXTextDocument::supportsService(const OUString& rServiceName) throw( R
  * --------------------------------------------------*/
 Sequence< OUString > SwXTextDocument::getSupportedServiceNames(void) throw( RuntimeException )
 {
-    BOOL bWebDoc    = 0 != PTR_CAST(SwWebDocShell,    pDocShell);
-    BOOL bGlobalDoc = 0 != PTR_CAST(SwGlobalDocShell, pDocShell);
+    BOOL bWebDoc    = 0 != dynamic_cast< SwWebDocShell* >( pDocShell);
+    BOOL bGlobalDoc = 0 != dynamic_cast< SwGlobalDocShell* >( pDocShell);
     BOOL bTextDoc   = !bWebDoc && !bGlobalDoc;
 
     Sequence< OUString > aRet ( 3 );

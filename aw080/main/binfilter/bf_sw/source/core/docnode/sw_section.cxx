@@ -536,7 +536,7 @@ void SwSection::SetCondHidden( int bFlag )
 
 /*N*/ extern void lcl_DeleteFtn( SwSectionNode *pNd, ULONG nStt, ULONG nEnd );
 
-//Vernichtet alle Frms in aDepend (Frms werden per PTR_CAST erkannt).
+//Vernichtet alle Frms in aDepend
 /*N*/ void SwSectionFmt::DelFrms()
 /*N*/ {
 /*N*/ 	SwSectionNode* pSectNd;

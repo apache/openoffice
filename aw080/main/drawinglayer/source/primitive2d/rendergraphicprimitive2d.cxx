@@ -62,19 +62,6 @@ namespace drawinglayer
             mapCurrentRasterizer.reset( new vcl::RenderGraphicRasterizer( rCurrentRasterizer ) );
         }
 
-		bool RenderGraphicPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
-		{
-			if(BasePrimitive2D::operator==(rPrimitive))
-			{
-				const RenderGraphicPrimitive2D& rCompare = (RenderGraphicPrimitive2D&)rPrimitive;
-
-				return (getRenderGraphic() == rCompare.getRenderGraphic()
-					&& getTransform() == rCompare.getTransform());
-			}
-
-			return false;
-		}
-
 		basegfx::B2DRange RenderGraphicPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
 			basegfx::B2DRange aRetval(0.0, 0.0, 1.0, 1.0);

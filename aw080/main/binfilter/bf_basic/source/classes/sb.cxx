@@ -310,7 +310,7 @@ SbxObject* SbTypeFactory::cloneTypeObjectImpl( const SbxObject& rTypeObj )
 	for( UINT32 i = 0 ; i < nCount ; i++ )
 	{
 		SbxVariable* pVar = pProps->Get32( i );
-		SbxProperty* pProp = PTR_CAST( SbxProperty, pVar );
+		SbxProperty* pProp = dynamic_cast< SbxProperty* >( pVar );
 		if( pProp )
 		{
 			SbxProperty* pNewProp = new SbxProperty( *pProp );
@@ -358,10 +358,10 @@ SbClassModuleObject::SbClassModuleObject( SbModule* pClassModule )
 		SbxVariable* pVar = pClassMethods->Get32( i );
 
 		// Exclude SbIfaceMapperMethod to copy them in a second step
-		SbIfaceMapperMethod* pIfaceMethod = PTR_CAST( SbIfaceMapperMethod, pVar );
+		SbIfaceMapperMethod* pIfaceMethod = dynamic_cast< SbIfaceMapperMethod* >( pVar );
 		if( !pIfaceMethod )
 		{
-			SbMethod* pMethod = PTR_CAST(SbMethod, pVar );
+			SbMethod* pMethod = dynamic_cast< SbMethod* >( pVar );
 			if( pMethod )
 			{
 				USHORT nFlags_ = pMethod->GetFlags();
@@ -383,7 +383,7 @@ SbClassModuleObject::SbClassModuleObject( SbModule* pClassModule )
 	{
 		SbxVariable* pVar = pClassMethods->Get32( i );
 
-		SbIfaceMapperMethod* pIfaceMethod = PTR_CAST( SbIfaceMapperMethod, pVar );
+		SbIfaceMapperMethod* pIfaceMethod = dynamic_cast< SbIfaceMapperMethod* >( pVar );
 		if( pIfaceMethod )
 		{
 			SbMethod* pImplMethod = pIfaceMethod->getImplMethod();
@@ -396,7 +396,7 @@ SbClassModuleObject::SbClassModuleObject( SbModule* pClassModule )
 			// Search for own copy of ImplMethod
 			String aImplMethodName = pImplMethod->GetName();
 			SbxVariable* p = pMethods->Find( aImplMethodName, SbxCLASS_METHOD );
-			SbMethod* pImplMethodCopy = p ? PTR_CAST(SbMethod,p) : NULL;
+			SbMethod* pImplMethodCopy = p ? dynamic_cast< SbMethod* >( p) : NULL;
 			if( !pImplMethodCopy )
 			{
 				DBG_ERROR( "Found no ImplMethod copy" );
@@ -414,7 +414,7 @@ SbClassModuleObject::SbClassModuleObject( SbModule* pClassModule )
 	for( i = 0 ; i < nPropertyCount ; i++ )
 	{
 		SbxVariable* pVar = pClassProps->Get32( i );
-		SbProcedureProperty* pProcedureProp = PTR_CAST( SbProcedureProperty, pVar );
+		SbProcedureProperty* pProcedureProp = dynamic_cast< SbProcedureProperty* >( pVar );
 		if( pProcedureProp )
 		{
 			USHORT nFlags_ = pProcedureProp->GetFlags();
@@ -429,7 +429,7 @@ SbClassModuleObject::SbClassModuleObject( SbModule* pClassModule )
 		}
 		else
 		{
-			SbxProperty* pProp = PTR_CAST( SbxProperty, pVar );
+			SbxProperty* pProp = dynamic_cast< SbxProperty* >( pVar );
 			if( pProp )
 			{
 				USHORT nFlags_ = pProp->GetFlags();
@@ -458,11 +458,11 @@ void SbClassModuleObject::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType
 {
 	bool bDone = false;
 
-	const SbxHint* pHint = PTR_CAST(SbxHint,&rHint);
+	const SbxHint* pHint = dynamic_cast< const SbxHint* >( &rHint);
 	if( pHint )
 	{
 		SbxVariable* pVar = pHint->GetVar();
-		SbProcedureProperty* pProcProperty = PTR_CAST( SbProcedureProperty, pVar );
+		SbProcedureProperty* pProcProperty = dynamic_cast< SbProcedureProperty* >( pVar );
 		if( pProcProperty )
 		{
 			bDone = true;
@@ -531,7 +531,7 @@ SbxVariable* SbClassModuleObject::Find( const XubString& rName, SbxClassType t )
 	{
 		triggerInitializeEvent();
 
-		SbIfaceMapperMethod* pIfaceMapperMethod = PTR_CAST(SbIfaceMapperMethod,pRes);
+		SbIfaceMapperMethod* pIfaceMapperMethod = dynamic_cast< SbIfaceMapperMethod* >( pRes);
 		if( pIfaceMapperMethod )
 		{
 			pRes = pIfaceMapperMethod->getImplMethod();
@@ -773,7 +773,7 @@ void StarBASIC::InitAllModules( StarBASIC* pBasicNotToInit )
 	for ( USHORT nObj = 0; nObj < pObjs->Count(); nObj++ )
 	{
 		SbxVariable* pVar = pObjs->Get( nObj );
-		StarBASIC* pBasic = PTR_CAST(StarBASIC,pVar);
+		StarBASIC* pBasic = dynamic_cast< StarBASIC* >( pVar);
 		if( pBasic && pBasic != pBasicNotToInit )
 			pBasic->InitAllModules();
 	}
@@ -795,7 +795,7 @@ void StarBASIC::DeInitAllModules( void )
 	for ( USHORT nObj = 0; nObj < pObjs->Count(); nObj++ )
 	{
 		SbxVariable* pVar = pObjs->Get( nObj );
-		StarBASIC* pBasic = PTR_CAST(StarBASIC,pVar);
+		StarBASIC* pBasic = dynamic_cast< StarBASIC* >( pVar);
 		if( pBasic )
 			pBasic->DeInitAllModules();
 	}
@@ -1136,7 +1136,7 @@ BOOL StarBASIC::LoadData( SvStream& r, USHORT nVer )
 	for( nObj = 0 ; nObj < nObjCount ; nObj++ )
 	{
 		SbxVariable* pVar = pObjs->Get( nObj );
-		StarBASIC* pBasic = PTR_CAST( StarBASIC, pVar );
+		StarBASIC* pBasic = dynamic_cast< StarBASIC* >( pVar );
         ppDeleteTab[nObj] = pBasic ? NULL : pVar;
 	}
 	for( nObj = 0 ; nObj < nObjCount ; nObj++ )
@@ -1254,7 +1254,7 @@ SbxVariable* BasicCollection::Find( const XubString& rName, SbxClassType t )
 void BasicCollection::SFX_NOTIFY( SfxBroadcaster& rCst, const TypeId& rId1,
 								const SfxHint& rHint, const TypeId& rId2 )
 {
-	const SbxHint* p = PTR_CAST(SbxHint,&rHint);
+	const SbxHint* p = dynamic_cast< const SbxHint* >( &rHint);
 	if( p )
 	{
 		ULONG nId = p->GetId();

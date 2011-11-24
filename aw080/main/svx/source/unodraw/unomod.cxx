@@ -125,17 +125,17 @@ const SvEventDescription* ImplGetSupportedMacroItems()
 
 //-////////////////////////////////////////////////////////////////////
 
-/** fills the given EventObject from the given SdrHint.
+/** fills the given EventObject from the given SdrBaseHint.
 	@returns
-		true	if the SdrHint could be translated to an EventObject<br>
+		true	if the SdrBaseHint could be translated to an EventObject<br>
 		false	if not
 */
-sal_Bool SvxUnoDrawMSFactory::createEvent( const SdrModel* pDoc, const SdrHint* pSdrHint, ::com::sun::star::document::EventObject& aEvent )
+sal_Bool SvxUnoDrawMSFactory::createEvent( const SdrModel* pDoc, const SdrBaseHint* pSdrHint, ::com::sun::star::document::EventObject& aEvent )
 {
 	const SdrObject* pObj = NULL;
 	const SdrPage* pPage = NULL;
 
-	switch( pSdrHint->GetKind() )
+	switch( pSdrHint->GetSdrHintKind() )
 	{
 //				case HINT_LAYERCHG:				// Layerdefinition geaendert
 //				case HINT_LAYERORDERCHG:		// Layerreihenfolge geaendert (Insert/Remove/ChangePos)
@@ -145,23 +145,26 @@ sal_Bool SvxUnoDrawMSFactory::createEvent( const SdrModel* pDoc, const SdrHint* 
 // #115423#
 //		case HINT_PAGECHG:				// Page geaendert
 //			aEvent.EventName = OUString( RTL_CONSTASCII_USTRINGPARAM( "PageModified" ) );
-//			pPage = pSdrHint->GetPage();
+//			pPage = pSdrHint->GetSdrHintPage();
 //			break;
 		case HINT_PAGEORDERCHG:			// Reihenfolge der Seiten (Zeichenseiten oder Masterpages) geaendert (Insert/Remove/ChangePos)
 			aEvent.EventName = OUString( RTL_CONSTASCII_USTRINGPARAM( "PageOrderModified" ) );
-			pPage = pSdrHint->GetPage();
+			pPage = pSdrHint->GetSdrHintPage();
 			break;
-		case HINT_OBJCHG:				// Objekt geaendert
+		case HINT_OBJCHG_MOVE:				
+		case HINT_OBJCHG_RESIZE:				
+		case HINT_OBJCHG_ATTR:				
+            // Objekt geaendert
 			aEvent.EventName = OUString( RTL_CONSTASCII_USTRINGPARAM( "ShapeModified" ) );
-			pObj = pSdrHint->GetObject();
+			pObj = pSdrHint->GetSdrHintObject();
 			break;
 		case HINT_OBJINSERTED:			// Neues Zeichenobjekt eingefuegt
 			aEvent.EventName = OUString( RTL_CONSTASCII_USTRINGPARAM( "ShapeInserted" ) );
-			pObj = pSdrHint->GetObject();
+			pObj = pSdrHint->GetSdrHintObject();
 			break;
 		case HINT_OBJREMOVED:			// Zeichenobjekt aus Liste entfernt
 			aEvent.EventName = OUString( RTL_CONSTASCII_USTRINGPARAM( "ShapeRemoved" ) );
-			pObj = pSdrHint->GetObject();
+			pObj = pSdrHint->GetSdrHintObject();
 			break;
 //				  HINT_DEFAULTTABCHG,   // Default Tabulatorweite geaendert
 //				  HINT_DEFFONTHGTCHG,   // Default FontHeight geaendert
@@ -270,6 +273,11 @@ uno::Sequence< OUString > SvxUnoDrawMSFactory::concatServiceNames( uno::Sequence
 #ifndef SVX_LIGHT
 
 ///
+SdrModel* SvxUnoDrawingModel::getSdrModel() const
+{
+	return mpDoc;
+}
+
 SvxUnoDrawingModel::SvxUnoDrawingModel( SdrModel* pDoc ) throw()
 : mpDoc( pDoc )
 {
@@ -638,23 +646,28 @@ uno::Any SAL_CALL SvxUnoDrawPagesAccess::getByIndex( sal_Int32 Index )
 
 	if( mrModel.mpDoc )
 	{
-		if( (Index < 0) || (Index >= mrModel.mpDoc->GetPageCount() ) )
+		if( (Index < 0) || (Index >= (sal_Int32)mrModel.mpDoc->GetPageCount() ) )
 			throw lang::IndexOutOfBoundsException();
 
 		SdrPage* pPage = mrModel.mpDoc->GetPage( (sal_uInt16)Index );
 		if( pPage )
 		{
-			uno::Reference< uno::XInterface > xPage( pPage->mxUnoPage );
+			uno::Reference< uno::XInterface > xPage( pPage->getUnoPage() );
 
-			if( !xPage.is() )
-			{
-				if( PTR_CAST( FmFormModel, mrModel.mpDoc ) )
-					xPage = (drawing::XDrawPage*)new SvxFmDrawPage( pPage );
-				else
-					xPage = (drawing::XDrawPage*)new SvxDrawPage( pPage );
-
-				pPage->mxUnoPage = xPage;
-			}
+// by using pPage->getUnoPage() instead of pPage->mxUnoPage there is alraedy code used
+// to create a needed page there when no one exists. Only missing feature there is the
+// model casting, so added there (it always created a SvxFmDrawPage)
+//
+//			if( !xPage.is() )
+//			{
+//				xPage = pPage->createUnoPage();
+//				if( dynamic_cast< FmFormModel* >( mrModel.mpDoc ) )
+//					xPage = (drawing::XDrawPage*)new SvxFmDrawPage( pPage );
+//				else
+//					xPage = (drawing::XDrawPage*)new SvxDrawPage( pPage );
+//
+//				pPage->mxUnoPage = xPage;
+//			}
 
 			aAny <<= xPage;
 		}
@@ -692,7 +705,7 @@ uno::Reference< drawing::XDrawPage > SAL_CALL SvxUnoDrawPagesAccess::insertNewBy
 	{
 		SdrPage* pPage;
 
-		if( PTR_CAST( FmFormModel, mrModel.mpDoc ) )
+		if( dynamic_cast< FmFormModel* >( mrModel.mpDoc ) )
 			pPage = new FmFormPage(*(FmFormModel*)mrModel.mpDoc, NULL);
 		else
 			pPage = new SdrPage(*mrModel.mpDoc);
@@ -719,7 +732,7 @@ void SAL_CALL SvxUnoDrawPagesAccess::remove( const uno::Reference< drawing::XDra
 			SdrPage* pPage = pSvxPage->GetSdrPage();
 			if(pPage)
 			{
-				sal_uInt16 nPage = pPage->GetPageNum();
+				sal_uInt32 nPage = pPage->GetPageNumber();
 				mrModel.mpDoc->DeletePage( nPage );
 			}
 		}

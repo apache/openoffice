@@ -49,7 +49,6 @@
 class SdrPage;
 class SdrModel;
 class SdrView;
-class SdrPageView;
 class SdrObject;
 class List;
 class SvxShapeDescriptor;
@@ -83,8 +82,8 @@ class SVX_DLLPUBLIC SvxDrawPage : public ::cppu::WeakAggImplHelper5< ::com::sun:
 	SdrModel* 		mpModel;
 	SdrView*		mpView;
 
-	void	_SelectObjectsInView( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShapes >& aShapes, SdrPageView* 	pPageView ) throw ();
-	void	_SelectObjectInView( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& xShape, SdrPageView* 	pPageView ) throw();
+	void	_SelectObjectsInView( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShapes >& aShapes ) throw ();
+	void	_SelectObjectInView( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& xShape ) throw();
 
 	virtual void disposing() throw();
 

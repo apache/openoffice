@@ -40,7 +40,6 @@
 #include <svx/svdopath.hxx>
 #include <svx/svdogrp.hxx>
 #include <svx/svdpage.hxx>
-#include <svx/polysc3d.hxx>
 #include <svx/svddef.hxx>
 #include <svx/svx3ditems.hxx>
 #include <svx/extrud3d.hxx>
@@ -56,6 +55,9 @@
 #include <com/sun/star/drawing/EnhancedCustomShapeParameterPair.hpp>
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
 #include <basegfx/range/b2drange.hxx>
+#include <svx/svdlegacy.hxx>
+#include <svx/svdtrans.hxx>
+#include <svx/scene3d.hxx>
 
 #define ITEMVALUE(ItemSet,Id,Cast)  ((const Cast&)(ItemSet).Get(Id)).GetValue()
 using namespace com::sun::star;
@@ -200,7 +202,7 @@ drawing::Direction3D GetDirection3D( SdrCustomShapeGeometryItem& rItem, const rt
 }
 
 EnhancedCustomShape3d::Transformation2D::Transformation2D( const SdrObject* pCustomShape, const Rectangle& /*rBoundRect*/, const double *pM )
-:	aCenter( pCustomShape->GetSnapRect().Center() )
+:	aCenter( sdr::legacy::GetSnapRect(*pCustomShape).Center() )
 ,	eProjectionMode( drawing::ProjectionMode_PARALLEL )
 ,	pMap( pM )
 {
@@ -216,8 +218,9 @@ EnhancedCustomShape3d::Transformation2D::Transformation2D( const SdrObject* pCus
 	{
 		fZScreen = 0.0;
 		GetOrigin( rGeometryItem, fOriginX, fOriginY );
-		fOriginX = fOriginX * pCustomShape->GetLogicRect().GetWidth();
-		fOriginY = fOriginY * pCustomShape->GetLogicRect().GetHeight();
+		const Rectangle aLogicRect(sdr::legacy::GetLogicRect(*pCustomShape));
+		fOriginX = fOriginX * aLogicRect.GetWidth();
+		fOriginY = fOriginY * aLogicRect.GetHeight();
 
 		const rtl::OUString	sViewPoint( RTL_CONSTASCII_USTRINGPARAM ( "ViewPoint" ) );
 		drawing::Position3D aViewPointDefault( 3472, -3472, 25000 );
@@ -274,40 +277,35 @@ sal_Bool EnhancedCustomShape3d::Transformation2D::IsParallel() const
 SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, const SdrObject* pCustomShape )
 {
 	SdrObject*	pRet = NULL;
-	SdrModel*	pModel = pCustomShape->GetModel();
 	SdrCustomShapeGeometryItem& rGeometryItem = (SdrCustomShapeGeometryItem&)pCustomShape->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY );
 	
-	double		fMap, *pMap = NULL;
-	if ( pModel )
-	{
-		fMap = 1.0;
-		Fraction aFraction( pModel->GetScaleFraction() );
+	double fMap = 1.0, *pMap = NULL;
+	Fraction aFraction( pCustomShape->getSdrModelFromSdrObject().GetExchangeObjectScale() );
 		if ( ( aFraction.GetNumerator() ) != 1 || ( aFraction.GetDenominator() != 1 ) )
 		{
 			fMap *= aFraction.GetNumerator();
 			fMap /= aFraction.GetDenominator();
 			pMap = &fMap;
 		}
-		if ( pModel->GetScaleUnit() != MAP_100TH_MM )
+	if ( pCustomShape->getSdrModelFromSdrObject().GetExchangeObjectUnit() != MAP_100TH_MM )
 		{
-			DBG_ASSERT( pModel->GetScaleUnit() == MAP_TWIP, "EnhancedCustomShape3d::Current MapMode is Unsupported" );
+		DBG_ASSERT( pCustomShape->getSdrModelFromSdrObject().GetExchangeObjectUnit() == MAP_TWIP, "EnhancedCustomShape3d::Current MapMode is Unsupported" );
 			fMap *= 1440.0 / 2540.0;
 			pMap = &fMap;
 		}
-	}
 	if ( GetBool( rGeometryItem, sExtrusion, sal_False ) )
 	{
 		sal_Bool bIsMirroredX = ((SdrObjCustomShape*)pCustomShape)->IsMirroredX();
 		sal_Bool bIsMirroredY = ((SdrObjCustomShape*)pCustomShape)->IsMirroredY();
-		Rectangle aSnapRect( pCustomShape->GetLogicRect() );
-		long nObjectRotation = pCustomShape->GetRotateAngle();
+		Rectangle aSnapRect( sdr::legacy::GetLogicRect(*pCustomShape) );
+		long nObjectRotation(sdr::legacy::GetRotateAngle(*pCustomShape));
 		if ( nObjectRotation )
 		{
 			double a = ( 36000 - nObjectRotation ) * nPi180;
 			long dx = aSnapRect.Right() - aSnapRect.Left();
 			long dy = aSnapRect.Bottom()- aSnapRect.Top();
 			Point aP( aSnapRect.TopLeft() );
-			RotatePoint( aP, pCustomShape->GetSnapRect().Center(), sin( a ), cos( a ) );
+			RotatePoint( aP, sdr::legacy::GetSnapRect(*pCustomShape).Center(), sin( a ), cos( a ) );
 			aSnapRect.Left() = aP.X();
 			aSnapRect.Top() = aP.Y();
 			aSnapRect.Right() = aSnapRect.Left() + dx;
@@ -347,7 +345,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 		a3DDefaultAttr.SetDefaultLatheCharacterMode( sal_True );
 		a3DDefaultAttr.SetDefaultExtrudeCharacterMode( sal_True );
 
-		E3dScene* pScene = new E3dPolyScene( a3DDefaultAttr );
+		E3dScene* pScene = new E3dScene( pCustomShape->getSdrModelFromSdrObject(), a3DDefaultAttr );
 
 		sal_Bool bSceneHasObjects ( sal_False );
 		sal_Bool bUseTwoFillStyles( sal_False );
@@ -358,7 +356,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 
 		XFillStyle eFillStyle( ITEMVALUE( aSet, XATTR_FILLSTYLE, XFillStyleItem ) );
 		pScene->GetProperties().SetObjectItem( Svx3DShadeModeItem( 0 ) );
-		aSet.Put( Svx3DPercentDiagonalItem( 0 ) );
+		aSet.Put( SfxUInt16Item(SDRATTR_3DOBJ_PERCENT_DIAGONAL, 0 ) );
 		aSet.Put( Svx3DTextureModeItem( 1 ) );
 		aSet.Put( Svx3DNormalsKindItem( 1 ) );
 
@@ -366,7 +364,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 		{
 			aSet.Put( XLineStyleItem( XLINE_SOLID ) );
 			aSet.Put( XFillStyleItem ( XFILL_NONE ) );
-			aSet.Put( Svx3DDoubleSidedItem( sal_True ) );
+			aSet.Put( SfxBoolItem(SDRATTR_3DOBJ_DOUBLE_SIDED, sal_True ) );
 		}
 		else
 		{
@@ -381,8 +379,8 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			// double-sided at the object and two-sided-lighting at the scene need to be set.
 			if((bIsMirroredX && !bIsMirroredY) || (!bIsMirroredX && bIsMirroredY))
 			{
-				aSet.Put( Svx3DDoubleSidedItem( sal_True ) );
-				pScene->GetProperties().SetObjectItem( Svx3DTwoSidedLightingItem( sal_True ) );
+				aSet.Put( SfxBoolItem(SDRATTR_3DOBJ_DOUBLE_SIDED, sal_True ) );
+				pScene->GetProperties().SetObjectItem( SfxBoolItem(SDRATTR_3DSCENE_TWO_SIDED_LIGHTING, sal_True ) );
 			}
 		}
 
@@ -391,13 +389,12 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 		while( aIter.IsMore() )
 		{
 			const SdrObject* pNext = aIter.Next();
-			sal_Bool bIsPlaceholderObject = (((XFillStyleItem&)pNext->GetMergedItem( XATTR_FILLSTYLE )).GetValue() == XFILL_NONE )
-										&& (((XLineStyleItem&)pNext->GetMergedItem( XATTR_LINESTYLE )).GetValue() == XLINE_NONE );
 			basegfx::B2DPolyPolygon aPolyPoly;
+			const SdrPathObj* pSdrPathObj = dynamic_cast< const SdrPathObj* >(pNext);
 
-			if ( pNext->ISA( SdrPathObj ) )
+			if ( pSdrPathObj )
 			{
-				aPolyPoly = ((SdrPathObj*)pNext)->GetPathPoly();
+				aPolyPoly = pSdrPathObj->getB2DPolyPolygonInObjectCoordinates();
 
 				if(aPolyPoly.areControlPointsUsed())
 				{
@@ -406,11 +403,11 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			}
 			else
 			{
-				SdrObject* pNewObj = pNext->ConvertToPolyObj( sal_False, sal_False );
-				SdrPathObj* pPath = PTR_CAST( SdrPathObj, pNewObj );
+				SdrObject* pNewObj = pNext->ConvertToPolyObj( false, false);
+				SdrPathObj* pPath = dynamic_cast< SdrPathObj* >(pNewObj);
 				if ( pPath )
-					aPolyPoly = pPath->GetPathPoly();
-                SdrObject::Free( pNewObj );
+					aPolyPoly = pPath->getB2DPolyPolygonInObjectCoordinates();
+                deleteSdrObjectSafeAndClearPointer( pNewObj );
 			}
 
 			if( aPolyPoly.count() )
@@ -419,9 +416,11 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
                 const Rectangle aBoundRect(basegfx::fround(aTempRange.getMinX()), basegfx::fround(aTempRange.getMinY()), basegfx::fround(aTempRange.getMaxX()), basegfx::fround(aTempRange.getMaxY()));
 				aBoundRect2d.Union( aBoundRect );
 
-				E3dCompoundObject* p3DObj = new E3dExtrudeObj( a3DDefaultAttr, aPolyPoly, bUseTwoFillStyles ? 10 : fDepth );
-				p3DObj->NbcSetLayer( pShape2d->GetLayer() );
+				E3dCompoundObject* p3DObj = new E3dExtrudeObj( pCustomShape->getSdrModelFromSdrObject(), a3DDefaultAttr, aPolyPoly, bUseTwoFillStyles ? 10 : fDepth );
+				p3DObj->SetLayer( pShape2d->GetLayer() );
 				p3DObj->SetMergedItemSet( aSet );
+				const bool bIsPlaceholderObject((((XFillStyleItem&)pNext->GetMergedItem( XATTR_FILLSTYLE )).GetValue() == XFILL_NONE )
+					&& (((XLineStyleItem&)pNext->GetMergedItem( XATTR_LINESTYLE )).GetValue() == XLINE_NONE ));
 				if ( bIsPlaceholderObject )
 					aPlaceholderObjectList.push_back( p3DObj );
 				else if ( bUseTwoFillStyles )
@@ -465,8 +464,8 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 						}
 					}
 					pScene->Insert3DObj( p3DObj );
-					p3DObj = new E3dExtrudeObj( a3DDefaultAttr, aPolyPoly, fDepth );
-					p3DObj->NbcSetLayer( pShape2d->GetLayer() );
+					p3DObj = new E3dExtrudeObj( pCustomShape->getSdrModelFromSdrObject(), a3DDefaultAttr, aPolyPoly, fDepth );
+					p3DObj->SetLayer( pShape2d->GetLayer() );
 					p3DObj->SetMergedItemSet( aSet );
 					if ( bUseExtrusionColor )
 						p3DObj->SetMergedItem( XFillColorItem( String(), ((XSecondaryFillColorItem&)pCustomShape->GetMergedItem( XATTR_SECONDARYFILLCOLOR )).GetColorValue() ) );
@@ -474,13 +473,13 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 					p3DObj->SetMergedItem( Svx3DCloseFrontItem( sal_False ) );
 					p3DObj->SetMergedItem( Svx3DCloseBackItem( sal_False ) );
 					pScene->Insert3DObj( p3DObj );
-					p3DObj = new E3dExtrudeObj( a3DDefaultAttr, aPolyPoly, 10 );
-					p3DObj->NbcSetLayer( pShape2d->GetLayer() );
+					p3DObj = new E3dExtrudeObj( pCustomShape->getSdrModelFromSdrObject(), a3DDefaultAttr, aPolyPoly, 10 );
+					p3DObj->SetLayer( pShape2d->GetLayer() );
 					p3DObj->SetMergedItemSet( aSet );
 					
-					basegfx::B3DHomMatrix aFrontTransform( p3DObj->GetTransform() );
+					basegfx::B3DHomMatrix aFrontTransform( p3DObj->GetB3DTransform() );
 					aFrontTransform.translate( 0.0, 0.0, fDepth );
-					p3DObj->NbcSetTransform( aFrontTransform );
+					p3DObj->SetB3DTransform( aFrontTransform );
 
 					if ( ( eFillStyle == XFILL_BITMAP ) && !aFillBmp.IsEmpty() )
 						p3DObj->SetMergedItem( XFillBitmapItem( String(), aFillBmp ) );
@@ -489,7 +488,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 				{
 					XLineColorItem& rLineColor = (XLineColorItem&)p3DObj->GetMergedItem( XATTR_LINECOLOR );
 					p3DObj->SetMergedItem( XFillColorItem( String(), rLineColor.GetColorValue() ) );
-					p3DObj->SetMergedItem( Svx3DDoubleSidedItem( sal_True ) );
+					p3DObj->SetMergedItem( SfxBoolItem(SDRATTR_3DOBJ_DOUBLE_SIDED, sal_True ) );
 					p3DObj->SetMergedItem( Svx3DCloseFrontItem( sal_False ) );
 					p3DObj->SetMergedItem( Svx3DCloseBackItem( sal_False ) );
 				}
@@ -506,7 +505,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			// Kameraeinstellungen, Perspektive ...
 			Camera3D& rCamera = (Camera3D&)pScene->GetCamera();
 			const basegfx::B3DRange& rVolume = pScene->GetBoundVolume();
-			pScene->NbcSetSnapRect( aSnapRect );
+			sdr::legacy::SetSnapRect(*pScene, aSnapRect );
 
 			// InitScene replacement
 			double fW = rVolume.getWidth();
@@ -521,14 +520,14 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			rCamera.SetFocalLength( 1.0 );
 			rCamera.SetProjection( eProjectionType );
 			pScene->SetCamera( rCamera );
-			pScene->SetRectsDirty();
+			pScene->ActionChanged();
 
 			double fOriginX, fOriginY;
 			GetOrigin( rGeometryItem, fOriginX, fOriginY );
 			fOriginX = fOriginX * aSnapRect.GetWidth();
 			fOriginY = fOriginY * aSnapRect.GetHeight();
 
-			basegfx::B3DHomMatrix aNewTransform( pScene->GetTransform() );
+			basegfx::B3DHomMatrix aNewTransform( pScene->GetB3DTransform() );
 			aNewTransform.translate( -aCenter.X(), aCenter.Y(), -pScene->GetBoundVolume().getDepth() );
 
 			double fXRotate, fYRotate;
@@ -579,7 +578,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 				pScene->SetCamera( rCamera );
 			}
 
-			pScene->NbcSetTransform( aNewTransform );
+			pScene->SetB3DTransform( aNewTransform );
 
 			///////////
 			// light //
@@ -619,30 +618,30 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			if ( nAmbientColor > 255 )
 				nAmbientColor = 255;
 			Color aGlobalAmbientColor( (sal_uInt8)nAmbientColor, (sal_uInt8)nAmbientColor, (sal_uInt8)nAmbientColor );
-			pScene->GetProperties().SetObjectItem( Svx3DAmbientcolorItem( aGlobalAmbientColor ) );
+			pScene->GetProperties().SetObjectItem( SvxColorItem(aGlobalAmbientColor, SDRATTR_3DSCENE_AMBIENTCOLOR) );
 
 			sal_uInt8 nSpotLight1 = (sal_uInt8)( fLightIntensity * 255.0 );
 			basegfx::B3DVector aSpotLight1( aFirstLightDirection.DirectionX, - ( aFirstLightDirection.DirectionY ), -( aFirstLightDirection.DirectionZ ) );
 			aSpotLight1.normalize();
-			pScene->GetProperties().SetObjectItem( Svx3DLightOnOff1Item( sal_True ) );
+			pScene->GetProperties().SetObjectItem( SfxBoolItem(SDRATTR_3DSCENE_LIGHTON_1, sal_True ) );
 			Color aAmbientSpot1Color( nSpotLight1, nSpotLight1, nSpotLight1 );
-			pScene->GetProperties().SetObjectItem( Svx3DLightcolor1Item( aAmbientSpot1Color ) );
-			pScene->GetProperties().SetObjectItem( Svx3DLightDirection1Item( aSpotLight1 ) );
+			pScene->GetProperties().SetObjectItem( SvxColorItem(aAmbientSpot1Color, SDRATTR_3DSCENE_LIGHTCOLOR_1) );
+			pScene->GetProperties().SetObjectItem( SvxB3DVectorItem(SDRATTR_3DSCENE_LIGHTDIRECTION_1, aSpotLight1 ) );
 
 			sal_uInt8 nSpotLight2 = (sal_uInt8)( fLight2Intensity * 255.0 );
 			basegfx::B3DVector aSpotLight2( aSecondLightDirection.DirectionX, -aSecondLightDirection.DirectionY, -aSecondLightDirection.DirectionZ );
 			aSpotLight2.normalize();
-			pScene->GetProperties().SetObjectItem( Svx3DLightOnOff2Item( sal_True ) );
+			pScene->GetProperties().SetObjectItem( SfxBoolItem(SDRATTR_3DSCENE_LIGHTON_2, sal_True ) );
 			Color aAmbientSpot2Color( nSpotLight2, nSpotLight2, nSpotLight2 );
-			pScene->GetProperties().SetObjectItem( Svx3DLightcolor2Item( aAmbientSpot2Color ) );
-			pScene->GetProperties().SetObjectItem( Svx3DLightDirection2Item( aSpotLight2 ) );
+			pScene->GetProperties().SetObjectItem( SvxColorItem(aAmbientSpot2Color, SDRATTR_3DSCENE_LIGHTCOLOR_2) );
+			pScene->GetProperties().SetObjectItem( SvxB3DVectorItem(SDRATTR_3DSCENE_LIGHTDIRECTION_2, aSpotLight2 ) );
 
 				sal_uInt8 nSpotLight3 = 70;
 				basegfx::B3DVector aSpotLight3( 0.0, 0.0, 1.0 );
-				pScene->GetProperties().SetObjectItem( Svx3DLightOnOff3Item( sal_True ) );
+				pScene->GetProperties().SetObjectItem( SfxBoolItem(SDRATTR_3DSCENE_LIGHTON_3, sal_True ) );
 				Color aAmbientSpot3Color( nSpotLight3, nSpotLight3, nSpotLight3 );
-				pScene->GetProperties().SetObjectItem( Svx3DLightcolor3Item( aAmbientSpot3Color ) );
-				pScene->GetProperties().SetObjectItem( Svx3DLightDirection3Item( aSpotLight3 ) );
+				pScene->GetProperties().SetObjectItem( SvxColorItem(aAmbientSpot3Color, SDRATTR_3DSCENE_LIGHTCOLOR_3) );
+				pScene->GetProperties().SetObjectItem( SvxB3DVectorItem(SDRATTR_3DSCENE_LIGHTDIRECTION_3, aSpotLight3 ) );
 
 			const rtl::OUString	sSpecularity( RTL_CONSTASCII_USTRINGPARAM ( "Specularity" ) );
 			const rtl::OUString	sDiffusion( RTL_CONSTASCII_USTRINGPARAM ( "Diffusion" ) );
@@ -663,21 +662,23 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			else if ( nIntensity < 0 )
 				nIntensity = 0;
 			nIntensity = 100 - nIntensity;
-			pScene->GetProperties().SetObjectItem( Svx3DMaterialSpecularItem( aSpecularCol ) );
-			pScene->GetProperties().SetObjectItem( Svx3DMaterialSpecularIntensityItem( (sal_uInt16)nIntensity ) );
+			pScene->GetProperties().SetObjectItem( SvxColorItem(aSpecularCol, SDRATTR_3DOBJ_MAT_SPECULAR) );
+			pScene->GetProperties().SetObjectItem( SfxUInt16Item(SDRATTR_3DOBJ_MAT_SPECULAR_INTENSITY, (sal_uInt16)nIntensity ) );
 
-			pScene->SetLogicRect( CalculateNewSnapRect( pCustomShape, aSnapRect, aBoundRect2d, pMap ) );
+			sdr::legacy::SetLogicRect(*pScene, CalculateNewSnapRect( pCustomShape, aSnapRect, aBoundRect2d, pMap ) );
 
 			// removing placeholder objects
 			std::vector< E3dCompoundObject* >::iterator aObjectListIter( aPlaceholderObjectList.begin() );
 			while ( aObjectListIter != aPlaceholderObjectList.end() )
 			{
 				pScene->Remove3DObj( *aObjectListIter );
-				delete *aObjectListIter++;
+				deleteSdrObjectSafeAndClearPointer(*aObjectListIter++);
 			}
 		}
 		else
-			delete pScene;
+		{
+			deleteSdrObjectSafeAndClearPointer(pScene);
+		}
 	}
 	return pRet;
 }

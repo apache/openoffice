@@ -34,6 +34,8 @@
 #include <tools/stream.hxx>
 #endif
 
+#include <memory.h>
+
 #ifndef _STRING_H
 #define _STRING_H
 #endif

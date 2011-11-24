@@ -801,7 +801,8 @@ namespace drawinglayer
 					if(getGraphicAttr().IsCropped())
 					{
 						// decompose to get current pos and size
-						basegfx::B2DVector aScale, aTranslate;
+						basegfx::B2DVector aScale;
+						basegfx::B2DPoint aTranslate;
 						double fRotate, fShearX;
 						getTransform().decompose(aScale, aTranslate, fRotate, fShearX);
 
@@ -864,8 +865,11 @@ namespace drawinglayer
 								* aNewObjectTransform;
 
 							// add shear, rotate and translate using combined matrix to speedup
-							const basegfx::B2DHomMatrix aCombinedMatrix(basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
-								fShearX, fRotate, aTranslate.getX(), aTranslate.getY()));
+							const basegfx::B2DHomMatrix aCombinedMatrix(
+                                basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
+								    fShearX, 
+                                    fRotate, 
+                                    aTranslate.getX(), aTranslate.getY()));
 							aNewObjectTransform = aCombinedMatrix * aNewObjectTransform;
 
 							// prepare TransformPrimitive2D with xPrimitive
@@ -920,25 +924,9 @@ namespace drawinglayer
 		{
 		}
 
-		bool GraphicPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
-		{
-			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
-			{
-				const GraphicPrimitive2D& rCompare = (GraphicPrimitive2D&)rPrimitive;
-
-				return (getTransform() == rCompare.getTransform()
-					&& getGraphicObject() == rCompare.getGraphicObject()
-					&& getGraphicAttr() == rCompare.getGraphicAttr());
-			}
-
-			return false;
-		}
-
 		basegfx::B2DRange GraphicPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
-			basegfx::B2DRange aRetval(0.0, 0.0, 1.0, 1.0);
-			aRetval.transform(getTransform());
-			return aRetval;
+			return getTransform() * basegfx::B2DRange::getUnitB2DRange();
 		}
 
 		// provide unique ID

@@ -61,7 +61,7 @@ using namespace ::com::sun::star;
 #define ITEMID_PARAVERTALIGN 0
 #define ITEMID_PARAGRID 0
 
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #include "bf_basic/sbx.hxx"
 #define GLOBALOVERFLOW3
 

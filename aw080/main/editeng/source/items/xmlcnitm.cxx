@@ -36,8 +36,6 @@ using namespace ::com::sun::star::xml;
 
 // ------------------------------------------------------------------------
 
-TYPEINIT1(SvXMLAttrContainerItem, SfxPoolItem);
-
 SvXMLAttrContainerItem::SvXMLAttrContainerItem( sal_uInt16 _nWhich ) :
     SfxPoolItem( _nWhich )
 {
@@ -58,8 +56,7 @@ SvXMLAttrContainerItem::~SvXMLAttrContainerItem()
 
 int SvXMLAttrContainerItem::operator==( const SfxPoolItem& rItem ) const
 {
-	DBG_ASSERT( rItem.ISA(SvXMLAttrContainerItem),
-			   "SvXMLAttrContainerItem::operator ==(): Bad type");
+	DBG_ASSERT( dynamic_cast< const SvXMLAttrContainerItem* >(&rItem), "SvXMLAttrContainerItem::operator ==(): Bad type");
 	return *pImpl == *((const SvXMLAttrContainerItem&)rItem).pImpl;
 }
 

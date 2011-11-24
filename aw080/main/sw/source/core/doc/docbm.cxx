@@ -268,23 +268,23 @@ namespace
 
 IDocumentMarkAccess::MarkType IDocumentMarkAccess::GetType(const IMark& rBkmk)
 {
-    const std::type_info* const pMarkTypeInfo = &typeid(rBkmk);
+    const std::type_info& rMarkTypeInfo = typeid(rBkmk);
     // not using dynamic_cast<> here for performance
-    if(*pMarkTypeInfo == typeid(UnoMark))
+    if(rMarkTypeInfo == typeid(UnoMark))
         return UNO_BOOKMARK;
-    else if(*pMarkTypeInfo == typeid(DdeBookmark))
+    else if(rMarkTypeInfo == typeid(DdeBookmark))
         return DDE_BOOKMARK;
-    else if(*pMarkTypeInfo == typeid(Bookmark))
+    else if(rMarkTypeInfo == typeid(Bookmark))
         return BOOKMARK;
-    else if(*pMarkTypeInfo == typeid(CrossRefHeadingBookmark))
+    else if(rMarkTypeInfo == typeid(CrossRefHeadingBookmark))
         return CROSSREF_HEADING_BOOKMARK;
-    else if(*pMarkTypeInfo == typeid(CrossRefNumItemBookmark))
+    else if(rMarkTypeInfo == typeid(CrossRefNumItemBookmark))
         return CROSSREF_NUMITEM_BOOKMARK;
-    else if(*pMarkTypeInfo == typeid(TextFieldmark))
+    else if(rMarkTypeInfo == typeid(TextFieldmark))
         return TEXT_FIELDMARK;
-    else if(*pMarkTypeInfo == typeid(CheckboxFieldmark))
+    else if(rMarkTypeInfo == typeid(CheckboxFieldmark))
         return CHECKBOX_FIELDMARK;
-    else if(*pMarkTypeInfo == typeid(NavigatorReminder))
+    else if(rMarkTypeInfo == typeid(NavigatorReminder))
         return NAVIGATOR_REMINDER;
     else
     {
@@ -850,7 +850,8 @@ namespace sw { namespace mark
     {\
 		ViewShell *_pStartShell = pEShell; \
 		do { \
-			if( _pStartShell->IsA( TYPE( SwCrsrShell )) ) \
+			SwCrsrShell* pSwCrsrShell = dynamic_cast< SwCrsrShell* >(_pStartShell); \
+			if( pSwCrsrShell ) \
 			{
 
 #define FOREACHSHELL_END( pEShell ) \

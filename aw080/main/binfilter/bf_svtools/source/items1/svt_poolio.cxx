@@ -221,7 +221,7 @@ SvStream &SfxItemPool::Store(SvStream &rStream) const
 #else
 				if ( *pArr && (*ppDefItem)->IsPoolable() &&
 #endif
-					 pImp->bInSetItem == (*ppDefItem)->ISA(SfxSetItem) )
+					 (bool)pImp->bInSetItem == (*ppDefItem)->ISA(SfxSetItem) )
 				{
 					// eigene Kennung, globale Which-Id und Item-Version
 					USHORT nSlotId = GetSlotId( (*ppDefItem)->Which(), FALSE );

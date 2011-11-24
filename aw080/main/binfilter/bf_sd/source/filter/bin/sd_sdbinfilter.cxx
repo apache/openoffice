@@ -287,10 +287,10 @@ static void ImplPostLoadFixTextStyles( SdDrawDocument* pDoc, SdrObjList* pList)
 	while( aIter.IsMore() )
 	{
 		SdrObject* pObj = aIter.Next();
-		SdrTextObj* pText = PTR_CAST( SdrTextObj, pObj );
+		SdrTextObj* pText = dynamic_cast< SdrTextObj* >( pObj );
 		if( pText && pText->HasText() )
 		{
-			SdPage* pPage = PTR_CAST(SdPage,pList);
+			SdPage* pPage = dynamic_cast< SdPage* >( pList);
 			if( pPage && (pPage->GetPresObjKind(pObj) == PRESOBJ_NONE) )
 				ImplPostLoadFixTextStyles( pDoc, pText );
 		}

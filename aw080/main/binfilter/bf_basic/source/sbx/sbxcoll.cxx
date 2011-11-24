@@ -122,7 +122,7 @@ SbxVariable* SbxCollection::Find( const XubString& rName, SbxClassType t )
 void SbxCollection::SFX_NOTIFY( SfxBroadcaster& rCst, const TypeId& rId1,
 								const SfxHint& rHint, const TypeId& rId2 )
 {
-	const SbxHint* p = PTR_CAST(SbxHint,&rHint);
+	const SbxHint* p = dynamic_cast< const SbxHint* >( &rHint);
 	if( p )
 	{
 		ULONG nId = p->GetId();
@@ -250,7 +250,7 @@ SbxStdCollection::~SbxStdCollection()
 
 void SbxStdCollection::Insert( SbxVariable* p )
 {
-	SbxObject* pObj = PTR_CAST(SbxObject,p);
+	SbxObject* pObj = dynamic_cast< SbxObject* >( p);
 	if( pObj && !pObj->IsClass( aElemClass ) )
 		SetError( SbxERR_BAD_ACTION );
 	else

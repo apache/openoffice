@@ -58,7 +58,7 @@ namespace drawinglayer
 			basegfx::BColor							maColor;
 
 			// bitfield
-			unsigned								mbFillBackground : 1;
+			bool									mbFillBackground : 1;
 
 			ImpFillHatchAttribute(
                 HatchStyle eStyle, 

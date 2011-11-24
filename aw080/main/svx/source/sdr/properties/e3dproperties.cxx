@@ -87,13 +87,17 @@ namespace sdr
 			AttributeProperties::SetStyleSheet(pNewStyleSheet, bDontRemoveHardAttr);
 
 			// propagate call to contained objects
-			const SdrObjList* pSub = ((const E3dObject&)GetSdrObject()).GetSubList();
-			const sal_uInt32 nCount(pSub->GetObjCount());
+			const SdrObjList* pSub = GetSdrObject().getChildrenOfSdrObject();
 
-			for(sal_uInt32 a(0L); a < nCount; a++)
-			{
-				pSub->GetObj(a)->GetProperties().SetStyleSheet(pNewStyleSheet, bDontRemoveHardAttr);
-			}
+            if(pSub)
+            {
+			    const sal_uInt32 nCount(pSub->GetObjCount());
+
+			    for(sal_uInt32 a(0L); a < nCount; a++)
+			    {
+				    pSub->GetObj(a)->GetProperties().SetStyleSheet(pNewStyleSheet, bDontRemoveHardAttr);
+			    }
+		    }
 		}
 	} // end of namespace properties
 } // end of namespace sdr

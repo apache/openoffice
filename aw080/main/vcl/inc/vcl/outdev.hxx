@@ -942,6 +942,11 @@ public:
 	basegfx::B2DHomMatrix GetViewTransformation( const MapMode& rMapMode ) const;
 	basegfx::B2DHomMatrix GetInverseViewTransformation( const MapMode& rMapMode ) const;
 
+	basegfx::B2DHomMatrix GetTransformLogicToLogic(const MapMode& rMapModeSource, const MapMode& rMapModeDest) const;
+    static double GetFactorLogicToLogic(MapUnit eUnitSource, MapUnit eUnitDest);
+
+	basegfx::B2DRange GetLogicRange() const;
+	basegfx::B2DRange GetDiscreteRange() const;
 
 	/** Set an offset in pixel
 

@@ -114,12 +114,11 @@ Image PreviewRenderer::RenderPage (
 {
     if (pPage != NULL)
     {
-        const Size aPageModelSize (pPage->GetSize());
-        const double nAspectRatio (
-            double(aPageModelSize.Width()) / double(aPageModelSize.Height()));
+		const basegfx::B2DVector& aPageModelSize = pPage->GetPageScale();
+        const double fAspectRatio(aPageModelSize.getX() / aPageModelSize.getY());
         const sal_Int32 nFrameWidth (mbHasFrame ? snFrameWidth : 0);
         const sal_Int32 nHeight (sal::static_int_cast<sal_Int32>(
-            (nWidth - 2*nFrameWidth) / nAspectRatio + 2*nFrameWidth + 0.5));
+            (nWidth - 2*nFrameWidth) / fAspectRatio + 2*nFrameWidth + 0.5));
         return RenderPage (
             pPage,
             Size(nWidth,nHeight),
@@ -188,8 +187,8 @@ Image PreviewRenderer::RenderSubstitution (
         const bool bUseContrast (
             Application::GetSettings().GetStyleSettings().GetHighContrastMode());
         mpPreviewDevice->SetDrawMode (bUseContrast 
-            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST 
-            : ViewShell::OUTPUT_DRAWMODE_COLOR);
+            ? SD_OUTPUT_DRAWMODE_CONTRAST 
+            : SD_OUTPUT_DRAWMODE_COLOR);
 
         // Set a map mode that makes a typical substitution text completely
         // visible.
@@ -207,12 +206,12 @@ Image PreviewRenderer::RenderSubstitution (
         const Rectangle aPaintRectangle (
             Point(0,0),
             mpPreviewDevice->GetOutputSizePixel());
-        mpPreviewDevice->EnableMapMode(sal_False);
+        mpPreviewDevice->EnableMapMode(false);
         mpPreviewDevice->SetLineColor();
         svtools::ColorConfig aColorConfig;
         mpPreviewDevice->SetFillColor(aColorConfig.GetColorValue(svtools::DOCCOLOR).nColor);
         mpPreviewDevice->DrawRect (aPaintRectangle);
-        mpPreviewDevice->EnableMapMode(sal_True);
+        mpPreviewDevice->EnableMapMode(true);
 
         // Paint substitution text and a frame around it.
         PaintSubstitutionText (rSubstitutionText);
@@ -245,15 +244,9 @@ bool PreviewRenderer::Initialize (
         if (pPage == NULL)
             break;
 
-        SdrModel* pModel = pPage->GetModel();
-        if (pModel == NULL)
-            break;
-
         SetupOutputSize(*pPage, rPixelSize);
-
-        SdDrawDocument* pDocument 
-            = static_cast<SdDrawDocument*>(pPage->GetModel());
-        DrawDocShell* pDocShell = pDocument->GetDocSh();
+        SdDrawDocument& rDocument = static_cast< SdDrawDocument& >(pPage->getSdrModelFromSdrPage());
+        DrawDocShell* pDocShell = rDocument.GetDocSh();
 
         // Create view
         ProvideView (pDocShell);
@@ -264,19 +257,19 @@ bool PreviewRenderer::Initialize (
         bool bUseContrast (bObeyHighContrastMode
             && Application::GetSettings().GetStyleSettings().GetHighContrastMode());
         mpPreviewDevice->SetDrawMode (bUseContrast 
-            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST 
-            : ViewShell::OUTPUT_DRAWMODE_COLOR);
+            ? SD_OUTPUT_DRAWMODE_CONTRAST 
+            : SD_OUTPUT_DRAWMODE_COLOR);
         mpPreviewDevice->SetSettings(Application::GetSettings());
 
         // Tell the view to show the given page.
         SdPage* pNonConstPage = const_cast<SdPage*>(pPage);
         if (pPage->IsMasterPage())
 		{
-			mpView->ShowSdrPage(mpView->GetModel()->GetMasterPage(pPage->GetPageNum()));
+			mpView->ShowSdrPage(*mpView->getSdrModelFromSdrView().GetMasterPage(pPage->GetPageNumber()));
 		}
         else
 		{
-            mpView->ShowSdrPage(pNonConstPage);
+            mpView->ShowSdrPage(*pNonConstPage);
 		}
 
         // Make sure that a page view exists.
@@ -287,9 +280,9 @@ bool PreviewRenderer::Initialize (
         svtools::ColorConfig aColorConfig;
         const Color aPageBackgroundColor(pPage->GetPageBackgroundColor(pPageView));
         pPageView->SetApplicationBackgroundColor(aPageBackgroundColor);
-        SdrOutliner& rOutliner (pDocument->GetDrawOutliner(NULL));
+        SdrOutliner& rOutliner (rDocument.GetDrawOutliner(NULL));
         rOutliner.SetBackgroundColor(aPageBackgroundColor);
-        rOutliner.SetDefaultLanguage(pDocument->GetLanguage(EE_CHAR_LANGUAGE));
+        rOutliner.SetDefaultLanguage(rDocument.GetLanguage(EE_CHAR_LANGUAGE));
         mpView->SetApplicationBackgroundColor(
             Color(aColorConfig.GetColorValue(svtools::APPBACKGROUND).nColor));
         mpPreviewDevice->SetBackground(Wallpaper(aPageBackgroundColor));
@@ -318,8 +311,8 @@ void PreviewRenderer::PaintPage (
     const bool bDisplayPresentationObjects)
 {
     // Paint the page.
-    Rectangle aPaintRectangle (Point(0,0), pPage->GetSize());
-    Region aRegion (aPaintRectangle);
+    const Rectangle aPaintRectangle(0, 0, basegfx::fround(pPage->GetPageScale().getX()), basegfx::fround(pPage->GetPageScale().getY()));
+    const Region aRegion (aPaintRectangle);
 
     // Turn off online spelling and redlining.
     SdrOutliner* pOutliner = NULL;
@@ -392,11 +385,11 @@ void PreviewRenderer::PaintFrame (void)
         Rectangle aPaintRectangle (
             Point(0,0),
             mpPreviewDevice->GetOutputSizePixel());
-        mpPreviewDevice->EnableMapMode(sal_False);
+        mpPreviewDevice->EnableMapMode(false);
         mpPreviewDevice->SetLineColor(maFrameColor);
         mpPreviewDevice->SetFillColor();
         mpPreviewDevice->DrawRect(aPaintRectangle);
-        mpPreviewDevice->EnableMapMode(sal_True);
+        mpPreviewDevice->EnableMapMode(true);
      }
 }
 
@@ -413,7 +406,7 @@ void PreviewRenderer::SetupOutputSize (
 	aMapMode.SetMapUnit(MAP_PIXEL);
 
     // Adapt it to the desired width.
-    const Size aPageModelSize (rPage.GetSize());
+    const Size aPageModelSize(basegfx::fround(rPage.GetPageScale().getX()), basegfx::fround(rPage.GetPageScale().getY()));
     if (aPageModelSize.Width()>0 || aPageModelSize.Height()>0)
     {
         const sal_Int32 nFrameWidth (mbHasFrame ? snFrameWidth : 0);
@@ -484,8 +477,8 @@ Image PreviewRenderer::ScaleBitmap (
         bool bUseContrast = Application::GetSettings().GetStyleSettings().
             GetHighContrastMode();
         mpPreviewDevice->SetDrawMode (bUseContrast 
-            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST 
-            : ViewShell::OUTPUT_DRAWMODE_COLOR);
+            ? SD_OUTPUT_DRAWMODE_CONTRAST 
+            : SD_OUTPUT_DRAWMODE_COLOR);
 
         // Set output size.
         Size aSize (rBitmapEx.GetSizePixel());
@@ -529,12 +522,11 @@ Image PreviewRenderer::ScaleBitmap (
 
 void PreviewRenderer::Notify(SfxBroadcaster&, const SfxHint& rHint)
 {
-	if (rHint.IsA(TYPE(SfxSimpleHint))
-        && mpDocShellOfView != NULL)
+	if(mpDocShellOfView)
     {
-        const SfxSimpleHint* pSimpleHint = PTR_CAST(SfxSimpleHint, &rHint);
-        if (pSimpleHint != NULL
-            && pSimpleHint->GetId() == SFX_HINT_DYING)
+        const SfxSimpleHint* pSimpleHint = dynamic_cast< const SfxSimpleHint* >(&rHint);
+        
+		if(pSimpleHint && SFX_HINT_DYING == pSimpleHint->GetId())
 		{
             // The doc shell is dying.  Our view uses its item pool and
             // has to be destroyed as well.  The next call to
@@ -572,8 +564,9 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 	const sdr::contact::DisplayInfo& rDisplayInfo)
 {
 	SdrObject* pObject = rOriginal.GetViewContact().TryToGetSdrObject();
+	SdrPage* pOwningPage = pObject ? pObject->getSdrPageFromSdrObject() : 0;
 
-	if (pObject==NULL || pObject->GetPage() == NULL)
+	if(!pObject || !pOwningPage)
 	{
 		// not a SdrObject visualisation (maybe e.g. page) or no page
 		return sdr::contact::ViewObjectContactRedirector::createRedirectedPrimitive2DSequence(
@@ -581,10 +574,10 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
             rDisplayInfo);
     }
 
-    const bool bDoCreateGeometry (pObject->GetPage()->checkVisibility( rOriginal, rDisplayInfo, true));
+    const bool bDoCreateGeometry(pOwningPage->checkVisibility( rOriginal, rDisplayInfo, true));
 
     if ( ! bDoCreateGeometry
-        && (pObject->GetObjInventor() != SdrInventor || pObject->GetObjIdentifier() != OBJ_PAGE))
+        && (SdrInventor != pObject->GetObjInventor() || OBJ_PAGE != pObject->GetObjIdentifier()))
     {
         return drawinglayer::primitive2d::Primitive2DSequence();
     }

@@ -448,7 +448,7 @@ using namespace ::com::sun::star;
 /*N*/ 
 /*N*/ 		if (pObj->IsUnoObj())
 /*N*/ 		{
-/*N*/ 			SdrUnoObj* pSdrUnoObj = PTR_CAST(SdrUnoObj, pObj);
+/*N*/ 			SdrUnoObj* pSdrUnoObj = dynamic_cast< SdrUnoObj* >( pObj);
 /*N*/ 			ImpInsertControl(pSdrUnoObj, pRec);
 /*N*/ 		}
 /*N*/ 		else if (pObj->GetObjIdentifier() == OBJ_GRUP &&
@@ -465,7 +465,7 @@ using namespace ::com::sun::star;
 /*N*/ 
 /*N*/ 				if (pObj && pObj->IsUnoObj())
 /*N*/ 				{
-/*?*/ 					SdrUnoObj* pSdrUnoObj = PTR_CAST(SdrUnoObj, pObj);
+/*?*/ 					SdrUnoObj* pSdrUnoObj = dynamic_cast< SdrUnoObj* >( pObj);
 /*?*/ 					ImpInsertControl(pSdrUnoObj, pRec);
 /*N*/ 				}
 /*N*/ 			}
@@ -581,7 +581,7 @@ using namespace ::com::sun::star;
 /*N*/ void __EXPORT SdrPageView::SFX_NOTIFY(SfxBroadcaster& rBC, const TypeId& rBCType, const SfxHint& rHint, const TypeId& rHintType)
 /*N*/ {
 /*N*/ 	if (bVisible) {
-/*N*/ 		SdrHint* pSdrHint=PTR_CAST(SdrHint,&rHint);
+/*N*/ 		const SdrHint* pSdrHint=dynamic_cast< const SdrHint* >( &rHint);
 /*N*/ 		if (pSdrHint!=NULL) {
 /*N*/ 			SdrHintKind eKind=pSdrHint->GetKind();
 /*N*/ 			const SdrObject* pObj=pSdrHint->GetObject();

@@ -165,7 +165,7 @@ namespace binfilter {//STRIP009
 /*?*/ 			// Derzeit nur fuer Einfachselektion implementiert.
 /*?*/ 			if (nMarkAnz==1) {
 /*?*/ 				SdrObject* pObj=aMark.GetMark(0)->GetObj();
-/*?*/ 				SdrEdgeObj* pEdge=PTR_CAST(SdrEdgeObj,pObj);
+/*?*/ 				SdrEdgeObj* pEdge=dynamic_cast< SdrEdgeObj* >( pObj);
 /*?*/ 				if (pEdge!=NULL) {
 /*?*/ 					SdrObject* pNode1=pEdge->GetConnectedNode(TRUE);
 /*?*/ 					SdrObject* pNode2=pEdge->GetConnectedNode(FALSE);

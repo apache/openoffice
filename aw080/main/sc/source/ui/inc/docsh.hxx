@@ -166,8 +166,6 @@ protected:
 	virtual void Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 
 public:
-					TYPEINFO();
-
 					SFX_DECL_INTERFACE(SCID_DOC_SHELL)
 					SFX_DECL_OBJECTFACTORY();
 

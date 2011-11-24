@@ -24,7 +24,7 @@
 #define _SVT_LISTENERITER_HXX
 
 #ifndef _RTTI_HXX //autogen
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 
 namespace binfilter

@@ -49,6 +49,7 @@ enum SdrMeasureFieldKind {SDRMEASUREFIELD_VALUE,SDRMEASUREFIELD_UNIT,SDRMEASUREF
 class SdrMeasureField: public SvxFieldData {
 	SdrMeasureFieldKind eMeasureFieldKind;
 public:
+	TYPEINFO();
 	SV_DECL_PERSIST1(SdrMeasureField,SvxFieldData,SDR_MEASUREFIELD)
 	SdrMeasureField(): eMeasureFieldKind(SDRMEASUREFIELD_VALUE) {}
 	SdrMeasureField(SdrMeasureFieldKind eNewKind): eMeasureFieldKind(eNewKind) {}

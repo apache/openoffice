@@ -101,7 +101,7 @@ namespace binfilter {
 /*N*/ 
 /*N*/ 	if (!pDocSh)
 /*N*/ 	{
-/*?*/ 		pDocSh = PTR_CAST(SchChartDocShell, SfxObjectShell::Current());
+/*?*/ 		pDocSh = dynamic_cast< SchChartDocShell* >( SfxObjectShell::Current());
 /*N*/ 	}
 /*N*/ 
 /*N*/ 	if (pDocSh)

@@ -47,7 +47,9 @@ namespace drawinglayer
             std::vector< basegfx::B2DPolyPolygon >  maExtractedContour;
 
 			/// tooling methods
-			void processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate);
+			void processBasePrimitive2D(
+				const primitive2d::BasePrimitive2D& rCandidate, 
+				const primitive2d::Primitive2DReference& rUnoCandidate);
 
 		public:
 			ContourExtractor2D(const geometry::ViewInformation2D& rViewInformation);

@@ -48,27 +48,12 @@ namespace drawinglayer
 		{
 		}
 
-		bool ChartPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
-		{
-			if(GroupPrimitive2D::operator==(rPrimitive))
-			{
-				const ChartPrimitive2D& rCompare = static_cast< const ChartPrimitive2D& >(rPrimitive);
-
-				return (getChartModel() == rCompare.getChartModel()
-					&& getTransformation() == rCompare.getTransformation());
-			}
-
-			return false;
-		}
-
 		// provide unique ID
 		ImplPrimitrive2DIDBlock(ChartPrimitive2D, PRIMITIVE2D_ID_CHARTPRIMITIVE2D)
 
         basegfx::B2DRange ChartPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
         {
-            basegfx::B2DRange aRetval(0.0, 0.0, 1.0, 1.0);
-            aRetval.transform(getTransformation());
-            return aRetval;
+			return getTransformation() * basegfx::B2DRange::getUnitB2DRange();
         }
 
 	} // end of namespace primitive2d

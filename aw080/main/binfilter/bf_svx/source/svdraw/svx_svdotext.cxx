@@ -906,7 +906,7 @@ inline double ImplMMToTwips(double fVal) { return (fVal * (72.0 / 127.0)); }
 /*N*/ void SdrTextObj::operator=(const SdrObject& rObj)
 /*N*/ {
 /*N*/ 	SdrAttrObj::operator=(rObj);
-/*N*/ 	const SdrTextObj* pText=PTR_CAST(SdrTextObj,&rObj);
+/*N*/ 	const SdrTextObj* pText=dynamic_cast< const SdrTextObj* >( &rObj);
 /*N*/ 	if (pText!=NULL) {
 /*N*/ 		aRect     =pText->aRect;
 /*N*/ 		aGeo      =pText->aGeo;

@@ -764,10 +764,8 @@ namespace cppcanvas
                     // gradient will always display at the origin, and
                     // not within the polygon bound (which might be
                     // miles away from the origin).
-                    aGradInfo.maTextureTransform.translate( aBounds.getMinX(),
-                                                            aBounds.getMinY() );
-                    ::basegfx::unotools::affineMatrixFromHomMatrix( aTexture.AffineTransform,
-                                                                    aGradInfo.maTextureTransform );
+                    aGradInfo.maTextureTransform.translate( aBounds.getMinimum() );
+                    ::basegfx::unotools::affineMatrixFromHomMatrix( aTexture.AffineTransform, aGradInfo.maTextureTransform );
 
                     uno::Sequence<uno::Any> args(3);
                     beans::PropertyValue aProp;
@@ -1651,8 +1649,7 @@ namespace cppcanvas
                         const ::Point& rPos( rVDev.LogicToPixel( pAct->GetPoint() ) );
                         const ::Size&  rSize( rVDev.LogicToPixel( pAct->GetSize() ) );
 
-                        getState( rStates ).transform.translate( rPos.X(),
-                                                                 rPos.Y() );
+                        getState( rStates ).transform.translate( rPos.X(), rPos.Y() );
                         getState( rStates ).transform.scale( (double)rSize.Width() / aMtfSizePix.Width(),
                                                              (double)rSize.Height() / aMtfSizePix.Height() );
 

@@ -59,7 +59,7 @@ BOOL SmDLL::bInitialized = FALSE;
 /*N*/ 
 /*N*/ 	SmModuleDummy** ppShlPtr = (SmModuleDummy**) GetAppData(BF_SHL_SM);
 /*N*/ 
-/*N*/     SvFactory* pFact = PTR_CAST(SvFactory,(*ppShlPtr)->pSmDocShellFactory);
+/*N*/     SvFactory* pFact = dynamic_cast< SvFactory* >( (*ppShlPtr)->pSmDocShellFactory);
 /*N*/     delete (*ppShlPtr);
 /*N*/     (*ppShlPtr) = new SmModule(pFact);
 /*N*/     (*ppShlPtr)->pSmDocShellFactory = pFact;

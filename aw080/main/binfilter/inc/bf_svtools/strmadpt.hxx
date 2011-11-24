@@ -39,12 +39,15 @@
 #ifndef _STREAM_HXX
 #include <tools/stream.hxx>
 #endif
+#include <bf_tools/rtti.hxx>
+#include <bf_svtools/flbytes.hxx>
+
 namespace binfilter
 {
 
 
 //============================================================================
-class  SvOutputStreamOpenLockBytes: public SvOpenLockBytes
+class  SvOutputStreamOpenLockBytes: public BfSvOpenLockBytes
 {
 	com::sun::star::uno::Reference< com::sun::star::io::XOutputStream >
 	    m_xOutputStream;

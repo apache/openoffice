@@ -106,8 +106,8 @@ namespace sdr
 					{
 						// use visible pixels, but transform to world coordinates
 						const Size aOutputSizePixel(pTargetDevice->GetOutputSizePixel());
-						aViewRange = ::basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight());
-						aViewRange.transform(pTargetDevice->GetInverseViewTransformation());
+						aViewRange = pTargetDevice->GetInverseViewTransformation() *
+							::basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight());
 					}
 
 					// upate local ViewInformation2D

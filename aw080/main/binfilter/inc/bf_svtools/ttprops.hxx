@@ -31,7 +31,7 @@
 #endif
 
 #ifndef _RTTI_HXX // manual
-#include <tools/rtti.hxx>
+#include <bf_tools/rtti.hxx>
 #endif
 #ifndef _VCL_APPTYPES_HXX //autogen
 #include <vcl/apptypes.hxx>

@@ -105,7 +105,7 @@ void SfxDocumentInfoObject_Impl::Notify( SfxBroadcaster& rBC,
 				"notify on unreferenced object => dying!!!" )
 	SbxObjectRef xSelfRef( this );
 
-	const SbxHint* pHint = PTR_CAST(SbxHint,&rHint);
+	const SbxHint* pHint = dynamic_cast< const SbxHint* >( &rHint);
 	if( pHint )
 	{
 		// Art des Hint und SID auswerten

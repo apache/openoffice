@@ -398,7 +398,7 @@ SbxValue::~SbxValue()
 		if( aData.pObj && aData.pObj != this )
 		{
 			HACK(nicht bei Parent-Prop - sonst CyclicRef)
-			SbxVariable *pThisVar = PTR_CAST(SbxVariable, this);
+			SbxVariable *pThisVar = dynamic_cast< SbxVariable* >( this);
 			BOOL bParentProp = pThisVar && 5345 ==
 			( (INT16) ( pThisVar->GetUserData() & 0xFFFF ) );
 			if ( !bParentProp )
@@ -429,7 +429,7 @@ void SbxValue::Clear()
 				if( aData.pObj != this )
 				{
 					HACK(nicht bei Parent-Prop - sonst CyclicRef)
-					SbxVariable *pThisVar = PTR_CAST(SbxVariable, this);
+					SbxVariable *pThisVar = dynamic_cast< SbxVariable* >( this);
 					BOOL bParentProp = pThisVar && 5345 ==
 					( (INT16) ( pThisVar->GetUserData() & 0xFFFF ) );
 					if ( !bParentProp )
@@ -481,7 +481,7 @@ SbxValue* SbxValue::TheRealValue( BOOL bObjInObjError ) const
 		if( t == SbxOBJECT )
 		{
 			// Der Block enthaelt ein Objekt oder eine Variable
-			SbxObject* pObj = PTR_CAST(SbxObject,p->aData.pObj);
+			SbxObject* pObj = dynamic_cast< SbxObject* >( p->aData.pObj);
 			if( pObj )
 			{
 				// Hat das Objekt eine Default-Property?
@@ -509,18 +509,18 @@ SbxValue* SbxValue::TheRealValue( BOOL bObjInObjError ) const
 				break;
 			}
 			// Haben wir ein Array?
-			SbxArray* pArray = PTR_CAST(SbxArray,p->aData.pObj);
+			SbxArray* pArray = dynamic_cast< SbxArray* >( p->aData.pObj);
 			if( pArray )
 			{
 				// Ggf. Parameter holen
 				SbxArray* pPar = NULL;
-				SbxVariable* pVar = PTR_CAST(SbxVariable,p);
+				SbxVariable* pVar = dynamic_cast< SbxVariable* >( p);
 				if( pVar )
 					pPar = pVar->GetParameters();
 				if( pPar )
 				{
 					// Haben wir ein dimensioniertes Array?
-					SbxDimArray* pDimArray = PTR_CAST(SbxDimArray,p->aData.pObj);
+					SbxDimArray* pDimArray = dynamic_cast< SbxDimArray* >( p->aData.pObj);
 					if( pDimArray )
 						p = pDimArray->Get( pPar );
 					else
@@ -529,7 +529,7 @@ SbxValue* SbxValue::TheRealValue( BOOL bObjInObjError ) const
 				}
 			}
 			// Sonst einen SbxValue annehmen
-			SbxValue* pVal = PTR_CAST(SbxValue,p->aData.pObj);
+			SbxValue* pVal = dynamic_cast< SbxValue* >( p->aData.pObj);
 			if( pVal )
 				p = pVal;
 			else
@@ -776,7 +776,7 @@ BOOL SbxValue::Put( const SbxValues& rVal )
 								DBG_ERROR( "TheRealValue" );
                             }
 							HACK(nicht bei Parent-Prop - sonst CyclicRef)
-							SbxVariable *pThisVar = PTR_CAST(SbxVariable, this);
+							SbxVariable *pThisVar = dynamic_cast< SbxVariable* >( this);
 							BOOL bParentProp = pThisVar && 5345 ==
 									( (INT16) ( pThisVar->GetUserData() & 0xFFFF ) );
 							if ( !bParentProp )
@@ -950,7 +950,7 @@ BOOL SbxValue::SetType( SbxDataType t )
 					if( aData.pObj && aData.pObj != this )
 					{
 						HACK(nicht bei Parent-Prop - sonst CyclicRef)
-						SbxVariable *pThisVar = PTR_CAST(SbxVariable, this);
+						SbxVariable *pThisVar = dynamic_cast< SbxVariable* >( this);
 						UINT16 nSlotId = pThisVar
 									? ( (INT16) ( pThisVar->GetUserData() & 0xFFFF ) )
 									: 0;
@@ -1658,7 +1658,7 @@ BOOL SbxValue::StoreData( SvStream& r ) const
 			// sich selbst als Objektptr speichern geht nicht!
 			if( aData.pObj )
 			{
-				if( PTR_CAST(SbxValue,aData.pObj) != this )
+				if( dynamic_cast< SbxValue* >( aData.pObj) != this )
 				{
 					r << (BYTE) 1;
 					return aData.pObj->Store( r );

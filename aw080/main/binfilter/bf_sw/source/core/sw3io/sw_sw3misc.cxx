@@ -814,7 +814,7 @@ extern sal_Bool lcl_sw3io_isTOXHeaderSection( const SwStartNode& rSttNd );
 /*N*/ 			continue;
 /*N*/ 
 /*N*/ 		const SwTOXBaseSection *pTOXBaseSect =
-/*N*/ 			PTR_CAST( SwTOXBaseSection, pSect );
+/*N*/ 			dynamic_cast< const SwTOXBaseSection* >( pSect );
 /*N*/ 		if( !pTOXBaseSect || !pTOXBaseSect->GetTOXType() )
 /*N*/ 			continue;
 /*N*/ 
@@ -1294,7 +1294,7 @@ extern sal_Bool lcl_sw3io_isTOXHeaderSection( const SwStartNode& rSttNd );
 /*N*/ 			continue;
 /*N*/ 
 /*N*/ 		const SwTOXBaseSection *pTOXBaseSect =
-/*N*/ 			PTR_CAST( SwTOXBaseSection, pSect );
+/*N*/ 			dynamic_cast< const SwTOXBaseSection* >( pSect );
 /*N*/ 		if( !pTOXBaseSect )
 /*N*/ 			continue;
 /*N*/ 
@@ -1842,7 +1842,7 @@ extern sal_uInt16 lcl_sw3io_GetSetExpFieldPoolId( const String& rName );
 /*N*/ 			continue;
 /*N*/ 
 /*N*/ 		const SwTOXBaseSection *pTOXBaseSect =
-/*N*/ 			PTR_CAST( SwTOXBaseSection, pSect );
+/*N*/ 			dynamic_cast< const SwTOXBaseSection* >( pSect );
 /*N*/ 		if( !pTOXBaseSect )
 /*N*/ 			continue;
 /*N*/ 

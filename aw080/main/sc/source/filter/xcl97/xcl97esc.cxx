@@ -190,7 +190,7 @@ bool lcl_IsFontwork( const SdrObject* pObj )
 
 } // namespace
 
-EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape, const Rectangle* pChildAnchor )
+EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape, const basegfx::B2DRange* pChildAnchor )
 {
 	if ( nAdditionalText )
 		nAdditionalText++;
@@ -250,7 +250,7 @@ EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape
             if( !pCurrXclObj )
                 pCurrXclObj = new XclObjAny( mrObjMgr );   // just a metafile
         }
-        else if( !ScDrawLayer::IsNoteCaption( pObj ) )
+        else if( !ScDrawLayer::IsNoteCaption( *pObj ) )
         {
             // #107540# ignore permanent note shapes
             // #i12190# do not ignore callouts (do not filter by object type ID)
@@ -274,12 +274,12 @@ EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape
                     {
                         /*  Create a dummy anchor carrying the flags. Real
                             coordinates are calculated later in virtual call of
-                            WriteData(EscherEx&,const Rectangle&). */
+                            WriteData(EscherEx&,const basegfx::B2DRange&). */
                         XclExpDffAnchorBase* pAnchor = mrObjMgr.CreateDffAnchor();
                         pAnchor->SetFlags( *pObj );
                         pCurrAppData->SetClientAnchor( pAnchor );
                     }
-					const SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, pObj );
+					const SdrTextObj* pTextObj = dynamic_cast< const SdrTextObj* >( pObj );
                     if( pTextObj && !lcl_IsFontwork( pTextObj ) && (pObj->GetObjIdentifier() != OBJ_CAPTION) )
 					{
 						const OutlinerParaObject* pParaObj = pTextObj->GetOutlinerParaObject();
@@ -369,7 +369,7 @@ void XclEscherEx::EndDocument()
 
 #if EXC_EXP_OCX_CTRL
 
-XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, const Rectangle* pChildAnchor )
+XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, const basegfx::B2DRange* pChildAnchor )
 {
     ::std::auto_ptr< XclExpOcxControlObj > xOcxCtrl;
 
@@ -399,7 +399,7 @@ XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, con
 
 #else
 
-XclExpTbxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, const Rectangle* pChildAnchor )
+XclExpTbxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, const basegfx::B2DRange* pChildAnchor )
 {
     ::std::auto_ptr< XclExpTbxControlObj > xTbxCtrl( new XclExpTbxControlObj( mrObjMgr, xShape, pChildAnchor ) );
     if( xTbxCtrl->GetObjType() == EXC_OBJTYPE_UNKNOWN )

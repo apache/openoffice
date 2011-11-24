@@ -127,20 +127,6 @@ namespace drawinglayer
 		{
 		}
 
-		bool FillHatchPrimitive2D::operator==(const BasePrimitive2D& rPrimitive) const
-		{
-			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
-			{
-				const FillHatchPrimitive2D& rCompare = (FillHatchPrimitive2D&)rPrimitive;
-
-				return (getObjectRange() == rCompare.getObjectRange() 
-					&& getFillHatch() == rCompare.getFillHatch()
-					&& getBColor() == rCompare.getBColor());
-			}
-
-			return false;
-		}
-
 		basegfx::B2DRange FillHatchPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
 			// return ObjectRange

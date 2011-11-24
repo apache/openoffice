@@ -102,22 +102,8 @@ void SdrPreRenderDevice::OutputPreRenderDevice(const Region& rExpandedRegion)
 	maPreRenderDevice.EnableMapMode(bMapModeWasEnabledSource);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-void SdrPaintWindow::impCreateOverlayManager(const bool bUseBuffer)
-{
-    // When the buffer usage has changed then we have to create a new
-    // overlay manager.  Save the current one so that later we can move its
-    // overlay objects to the new one.
-    sdr::overlay::OverlayManager* pOldOverlayManager = NULL;
-    
-	if(mbUseBuffer != bUseBuffer)
+void SdrPaintWindow::impCreateOverlayManager()
     {
-        mbUseBuffer = bUseBuffer;
-        pOldOverlayManager = mpOverlayManager;
-        mpOverlayManager = NULL;
-    }
-
 	// not yet one created?
 	if(!mpOverlayManager)
 	{
@@ -125,14 +111,14 @@ void SdrPaintWindow::impCreateOverlayManager(const bool bUseBuffer)
 		if(OUTDEV_WINDOW == GetOutputDevice().GetOutDevType())
 		{
 			// decide which OverlayManager to use
-			if(GetPaintView().IsBufferedOverlayAllowed() && mbUseBuffer)
+			if(GetPaintView().IsBufferedOverlayAllowed())
 			{
 				// buffered OverlayManager, buffers it's background and refreshes from there
 				// for pure overlay changes (no system redraw). The 3rd parameter specifies
 				// if that refresh itself will use a 2nd vdev to avoid flickering.
 				// Also hand over the evtl. existing old OverlayManager; this means to take over 
 				// the registered OverlayObjects from it
-				mpOverlayManager = new ::sdr::overlay::OverlayManagerBuffered(GetOutputDevice(), pOldOverlayManager, true);
+				mpOverlayManager = new ::sdr::overlay::OverlayManagerBuffered(GetOutputDevice(), true);
 			}
 			else
 			{
@@ -140,7 +126,7 @@ void SdrPaintWindow::impCreateOverlayManager(const bool bUseBuffer)
 				// take place
 				// Also hand over the evtl. existing old OverlayManager; this means to take over 
 				// the registered OverlayObjects from it
-				mpOverlayManager = new ::sdr::overlay::OverlayManager(GetOutputDevice(), pOldOverlayManager);
+				mpOverlayManager = new ::sdr::overlay::OverlayManager(GetOutputDevice());
 			}
 
 			OSL_ENSURE(mpOverlayManager, "SdrPaintWindow::SdrPaintWindow: Could not allocate an overlayManager (!)");
@@ -166,23 +152,14 @@ void SdrPaintWindow::impCreateOverlayManager(const bool bUseBuffer)
 			mpOverlayManager->setStripeLengthPixel(GetPaintView().getOptionsDrawinglayer().GetStripeLength());
 		}
 	}
-
-	// OverlayObjects are transfered for the evtl. newly created OverlayManager by handing over
-	// at construction time
-	if(pOldOverlayManager)
-    {
-        // The old overlay manager is not used anymore and can be (has to be) deleted.
-        delete pOldOverlayManager;
-    }
 }
 
 SdrPaintWindow::SdrPaintWindow(SdrPaintView& rNewPaintView, OutputDevice& rOut)
 :	mrOutputDevice(rOut),
 	mrPaintView(rNewPaintView),
-	mpOverlayManager(0L),
-	mpPreRenderDevice(0L),
-	mbTemporaryTarget(false), // #i72889#
-    mbUseBuffer(true)
+	mpOverlayManager(0),
+	mpPreRenderDevice(0),
+	mbTemporaryTarget(false)
 {
 }
 
@@ -202,7 +179,7 @@ SdrPaintWindow::~SdrPaintWindow()
 	if(!mpOverlayManager)
 	{
         // Create buffered overlay manager by default.
-		const_cast< SdrPaintWindow* >(this)->impCreateOverlayManager(true);
+		const_cast< SdrPaintWindow* >(this)->impCreateOverlayManager();
 	}
 
 	return mpOverlayManager;
@@ -264,15 +241,15 @@ void SdrPaintWindow::OutputPreRenderDevice(const Region& rExpandedRegion)
 }
 
 // #i73602# add flag if buffer shall be used
-void SdrPaintWindow::DrawOverlay(const Region& rRegion, bool bUseBuffer)
+void SdrPaintWindow::DrawOverlay(const Region& rRegion)
 {
-	// ## force creation of OverlayManager since the first repaint needs to
+	// force creation of OverlayManager since the first repaint needs to
 	// save the background to get a controlled start into overlay mechanism
-	impCreateOverlayManager(bUseBuffer);
+	impCreateOverlayManager();
 
 	if(mpOverlayManager && !OutputToPrinter())
 	{
-		if(mpPreRenderDevice && bUseBuffer)
+		if(mpPreRenderDevice)
 		{
 			mpOverlayManager->completeRedraw(rRegion, &mpPreRenderDevice->GetPreRenderDevice());
 		}

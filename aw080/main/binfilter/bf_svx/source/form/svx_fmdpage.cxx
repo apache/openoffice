@@ -108,7 +108,7 @@ namespace binfilter {
 /*N*/ {
 /*N*/ 	::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer >  xForms;
 /*N*/ 
-/*N*/ 	FmFormPage *pFmPage = PTR_CAST( FmFormPage, GetSdrPage() );
+/*N*/ 	FmFormPage *pFmPage = dynamic_cast< FmFormPage* >( GetSdrPage() );
 /*N*/ 	if( pFmPage )
 /*N*/ 		xForms = pFmPage->GetForms();
 /*N*/ 

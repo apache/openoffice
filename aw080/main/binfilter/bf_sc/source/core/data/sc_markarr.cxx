@@ -34,6 +34,8 @@
 
 #include "markarr.hxx"
 #include "global.hxx"
+#include <string.h>
+
 namespace binfilter {
 
 // STATIC DATA -----------------------------------------------------------

@@ -1055,7 +1055,7 @@ void SwDrawContact::ConnectToLayout( const SwFmtAnchor* pAnch )
 						{
 							SwFrmFmt *pFmt = rFmts[i];
 							SwFlyFrmFmt* pFlyFmt;
-							if( 0 != (pFlyFmt = PTR_CAST( SwFlyFrmFmt, pFmt )) &&
+							if( 0 != (pFlyFmt = dynamic_cast< SwFlyFrmFmt* >( pFmt )) &&
 								pFlyFmt->GetCntnt().GetCntntIdx() && //#57390#, Reader
 								rIdx == *pFlyFmt->GetCntnt().GetCntntIdx() )
 							{

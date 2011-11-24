@@ -106,7 +106,7 @@ namespace binfilter {
 /*N*/ {
 /*N*/     SdrGlueEditView::SFX_NOTIFY(rBC,rBCType,rHint,rHintType);
 /*N*/     // Printerwechsel waerend des Editierens
-/*N*/     SdrHint* pSdrHint=PTR_CAST(SdrHint,&rHint);
+/*N*/     const SdrHint* pSdrHint=dynamic_cast< const SdrHint* >( &rHint);
 /*N*/     if (pSdrHint!=NULL && pTextEditOutliner!=NULL) {
 /*?*/         SdrHintKind eKind=pSdrHint->GetKind();
 /*?*/         if (eKind==HINT_REFDEVICECHG) {

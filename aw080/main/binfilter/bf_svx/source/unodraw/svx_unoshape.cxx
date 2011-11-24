@@ -846,7 +846,7 @@ void SvxShape::Notify( SfxBroadcaster& rBC, const SfxHint& rHint ) throw()
 	if( pObj == NULL )
 		return;
 
-    const SdrHint* pSdrHint = PTR_CAST( SdrHint, &rHint );
+    const SdrHint* pSdrHint = dynamic_cast< const SdrHint* >( &rHint );
     if (!pSdrHint || ( /* (pSdrHint->GetKind() != HINT_OBJREMOVED)  && */
         (pSdrHint->GetKind() != HINT_MODELCLEARED) &&
         (pSdrHint->GetKind() != HINT_OBJLISTCLEAR) &&
@@ -1623,7 +1623,7 @@ void SAL_CALL SvxShape::_setPropertyValue( const OUString& rPropertyName, const 
 		case OWN_ATTR_EDGE_START_POS:
 		case OWN_ATTR_EDGE_END_POS:
 		{
-			SdrEdgeObj* pEdgeObj = PTR_CAST(SdrEdgeObj,pObj);
+			SdrEdgeObj* pEdgeObj = dynamic_cast< SdrEdgeObj* >( pObj);
 			if(pEdgeObj)
 			{
 				switch(pMap->nWID)
@@ -1678,7 +1678,7 @@ void SAL_CALL SvxShape::_setPropertyValue( const OUString& rPropertyName, const 
 		case OWN_ATTR_MEASURE_START_POS:
 		case OWN_ATTR_MEASURE_END_POS:
 		{
-			SdrMeasureObj* pMeasureObj = PTR_CAST(SdrMeasureObj,pObj);
+			SdrMeasureObj* pMeasureObj = dynamic_cast< SdrMeasureObj* >( pObj);
 			awt::Point aUnoPoint;
 			if(pMeasureObj && ( rVal >>= aUnoPoint ) )
 			{
@@ -1827,7 +1827,7 @@ void SAL_CALL SvxShape::_setPropertyValue( const OUString& rPropertyName, const 
 				nPageNum <<= 1;
 				nPageNum -= 1;
 
-				SdrPageObj* pPageObj = PTR_CAST(SdrPageObj,pObj);
+				SdrPageObj* pPageObj = dynamic_cast< SdrPageObj* >( pObj);
 				if( pPageObj )
 					pPageObj->SetPageNum( (sal_uInt16)nPageNum );
 				return;
@@ -2275,7 +2275,7 @@ uno::Any SvxShape::_getPropertyValue( const OUString& PropertyName )
 			case OWN_ATTR_GLUEID_HEAD:
 			case OWN_ATTR_GLUEID_TAIL:
 			{
-				SdrEdgeObj* pEdgeObj = PTR_CAST(SdrEdgeObj,pObj);
+				SdrEdgeObj* pEdgeObj = dynamic_cast< SdrEdgeObj* >( pObj);
 				if(pEdgeObj)
 				{
 					switch(pMap->nWID)
@@ -2319,7 +2319,7 @@ uno::Any SvxShape::_getPropertyValue( const OUString& PropertyName )
 			case OWN_ATTR_MEASURE_START_POS:
 			case OWN_ATTR_MEASURE_END_POS:
 			{
-				SdrMeasureObj* pMeasureObj = PTR_CAST(SdrMeasureObj,pObj);
+				SdrMeasureObj* pMeasureObj = dynamic_cast< SdrMeasureObj* >( pObj);
 				if(pMeasureObj)
 				{
 					Point aPoint( pMeasureObj->GetPoint( pMap->nWID == OWN_ATTR_MEASURE_START_POS ? 0 : 1 ) );
@@ -2388,7 +2388,7 @@ uno::Any SvxShape::_getPropertyValue( const OUString& PropertyName )
 				break;
 			case OWN_ATTR_PAGE_NUMBER:
 			{
-				SdrPageObj* pPageObj = PTR_CAST(SdrPageObj,pObj);
+				SdrPageObj* pPageObj = dynamic_cast< SdrPageObj* >( pObj);
 				if(pPageObj)
 				{
 					sal_Int32 nPageNumber = pPageObj->GetPageNum();
@@ -3526,13 +3526,13 @@ uno::Reference< uno::XInterface > SAL_CALL SvxShape::getParent(  )
 		{
 		case SDROBJLIST_GROUPOBJ:
 			if( pObjList->GetOwnerObj()->ISA( SdrObjGroup ) )
-				return PTR_CAST( SdrObjGroup, pObjList->GetOwnerObj())->getUnoShape();
+				return dynamic_cast< SdrObjGroup* >( pObjList->GetOwnerObj())->getUnoShape();
 			else if( pObjList->GetOwnerObj()->ISA( E3dScene ) )
-				return PTR_CAST( E3dScene, pObjList->GetOwnerObj())->getUnoShape();
+				return dynamic_cast< E3dScene* >( pObjList->GetOwnerObj())->getUnoShape();
 			break;
 		case SDROBJLIST_DRAWPAGE:
 		case SDROBJLIST_MASTERPAGE:
-			return PTR_CAST( SdrPage, pObjList )->getUnoPage();
+			return dynamic_cast< SdrPage* >( pObjList )->getUnoPage();
 		}
 
 

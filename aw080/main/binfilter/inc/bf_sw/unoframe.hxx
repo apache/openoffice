@@ -154,7 +154,7 @@ public:
 
 	SwFrmFmt* 		GetFrmFmt() const
 	{
-		return PTR_CAST ( SwFrmFmt, GetRegisteredIn() );
+		return const_cast< SwFrmFmt* >( dynamic_cast< const SwFrmFmt* >( GetRegisteredIn() ) );
 	}
 	FlyCntType 		GetFlyCntType()const {return eType;}
 

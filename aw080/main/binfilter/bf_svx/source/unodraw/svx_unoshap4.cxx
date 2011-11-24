@@ -154,7 +154,7 @@ void SAL_CALL SvxOle2Shape::setPropertyValue( const OUString& aPropertyName, con
 		OUString aURL;
 		if( aValue >>= aURL )
 		{
-			SdrOle2Obj* pOle = PTR_CAST( SdrOle2Obj, pObj );
+			SdrOle2Obj* pOle = dynamic_cast< SdrOle2Obj* >( pObj );
 			if( pOle )
 			{
 				BfGraphicObject aGrafObj( CreateGraphicObjectFromURL( aURL ) );
@@ -172,7 +172,7 @@ void SAL_CALL SvxOle2Shape::setPropertyValue( const OUString& aPropertyName, con
 		
         if( aValue >>= aPersistName )
 		{
-			SdrOle2Obj* pOle = PTR_CAST( SdrOle2Obj, pObj );
+			SdrOle2Obj* pOle = dynamic_cast< SdrOle2Obj* >( pObj );
 			
             if( pOle )
 				pOle->SetPersistName( aPersistName );
@@ -193,7 +193,7 @@ Any SAL_CALL SvxOle2Shape::getPropertyValue( const OUString& PropertyName ) thro
 	if( PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "ThumbnailGraphicURL" ) ) )
 	{
 		OUString    aURL;
-		SdrOle2Obj* pOle = PTR_CAST( SdrOle2Obj, pObj );
+		SdrOle2Obj* pOle = dynamic_cast< SdrOle2Obj* >( pObj );
 		
         if( pOle )
 		{
@@ -224,7 +224,7 @@ Any SAL_CALL SvxOle2Shape::getPropertyValue( const OUString& PropertyName ) thro
     else if( PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( UNO_NAME_OLE2_PERSISTNAME ) ) )
     {
 		OUString    aPersistName;
-		SdrOle2Obj* pOle = PTR_CAST( SdrOle2Obj, pObj );
+		SdrOle2Obj* pOle = dynamic_cast< SdrOle2Obj* >( pObj );
 		
         if( pOle )
 		{

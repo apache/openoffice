@@ -29,6 +29,7 @@
 #include <svl/style.hxx>
 #include <svl/smplhint.hxx>
 #include <svx/svdobj.hxx>
+#include <svx/globaldrawitempool.hxx>
 
 #include "unchss.hxx"
 
@@ -38,10 +39,6 @@
 #include "drawdoc.hxx"
 #include "stlsheet.hxx"
 #include "glob.hrc"
-
-
-TYPEINIT1(StyleSheetUndoAction, SdUndoAction);
-
 
 
 /*************************************************************************
@@ -60,10 +57,10 @@ StyleSheetUndoAction::StyleSheetUndoAction(SdDrawDocument* pTheDoc,
 
 	// ItemSets anlegen; Vorsicht, das neue koennte aus einem anderen Pool
 	// stammen, also mitsamt seinen Items clonen
-	pNewSet = new SfxItemSet((SfxItemPool&)SdrObject::GetGlobalDrawObjectItemPool(), pTheNewItemSet->GetRanges());
+	pNewSet = new SfxItemSet((SfxItemPool&)GetGlobalDrawObjectItemPool(), pTheNewItemSet->GetRanges());
 	pTheDoc->MigrateItemSet( pTheNewItemSet, pNewSet, pTheDoc );
 
-	pOldSet = new SfxItemSet((SfxItemPool&)SdrObject::GetGlobalDrawObjectItemPool(),pStyleSheet->GetItemSet().GetRanges());
+	pOldSet = new SfxItemSet((SfxItemPool&)GetGlobalDrawObjectItemPool(),pStyleSheet->GetItemSet().GetRanges());
 	pTheDoc->MigrateItemSet( &pStyleSheet->GetItemSet(), pOldSet, pTheDoc );
 
 	aComment = String(SdResId(STR_UNDO_CHANGE_PRES_OBJECT));

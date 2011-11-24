@@ -47,6 +47,7 @@
 #include <editeng/editobj.hxx>
 #include <unotools/tempfile.hxx>
 #include <unotools/ucbstreamhelper.hxx>
+#include <svx/svdlegacy.hxx>
 
 #include "editutil.hxx"
 #include "unonames.hxx"
@@ -99,7 +100,7 @@ void XclExpDffAnchorBase::SetFlags( const SdrObject& rSdrObj )
 void XclExpDffAnchorBase::SetSdrObject( const SdrObject& rSdrObj )
 {
     ImplSetFlags( rSdrObj );
-    ImplCalcAnchorRect( rSdrObj.GetCurrentBoundRect(), MAP_100TH_MM );
+    ImplCalcAnchorRange( rSdrObj.getObjectRange(0), MAP_100TH_MM );
 }
 
 void XclExpDffAnchorBase::WriteDffData( EscherEx& rEscherEx ) const
@@ -108,10 +109,10 @@ void XclExpDffAnchorBase::WriteDffData( EscherEx& rEscherEx ) const
     rEscherEx.GetStream() << mnFlags << maAnchor;
 }
 
-void XclExpDffAnchorBase::WriteData( EscherEx& rEscherEx, const Rectangle& rRect )
+void XclExpDffAnchorBase::WriteData( EscherEx& rEscherEx, const basegfx::B2DRange& rRange )
 {
     // the passed rectangle is in twips
-    ImplCalcAnchorRect( rRect, MAP_TWIP );
+    ImplCalcAnchorRange( rRange, MAP_TWIP );
     WriteDffData( rEscherEx );
 }
 
@@ -120,7 +121,7 @@ void XclExpDffAnchorBase::ImplSetFlags( const SdrObject& )
     OSL_ENSURE( false, "XclExpDffAnchorBase::ImplSetFlags - not implemented" );
 }
 
-void XclExpDffAnchorBase::ImplCalcAnchorRect( const Rectangle&, MapUnit )
+void XclExpDffAnchorBase::ImplCalcAnchorRange( const basegfx::B2DRange&, MapUnit )
 {
     OSL_ENSURE( false, "XclExpDffAnchorBase::ImplCalcAnchorRect - not implemented" );
 }
@@ -135,24 +136,23 @@ XclExpDffSheetAnchor::XclExpDffSheetAnchor( const XclExpRoot& rRoot ) :
 
 void XclExpDffSheetAnchor::ImplSetFlags( const SdrObject& rSdrObj )
 {
-    // Special case "page anchor" (X==0,Y==1) -> lock pos and size.
-    const Point& rPos = rSdrObj.GetAnchorPos();
-    mnFlags = ((rPos.X() == 0) && (rPos.Y() == 1)) ? EXC_ESC_ANCHOR_LOCKED : 0;
+    // #i108739# use extra bool flag to get rid of the old Anchor-Hack
+    mnFlags = rSdrObj.getUniversalApplicationFlag01() ? EXC_ESC_ANCHOR_LOCKED : 0;
 }
 
-void XclExpDffSheetAnchor::ImplCalcAnchorRect( const Rectangle& rRect, MapUnit eMapUnit )
+void XclExpDffSheetAnchor::ImplCalcAnchorRange( const basegfx::B2DRange& rRange, MapUnit eMapUnit )
 {
-    maAnchor.SetRect( GetRoot(), mnScTab, rRect, eMapUnit );
+    maAnchor.SetRangeAtAnchor( GetRoot(), mnScTab, rRange, eMapUnit );
 }
 
 // ----------------------------------------------------------------------------
 
 XclExpDffEmbeddedAnchor::XclExpDffEmbeddedAnchor( const XclExpRoot& rRoot,
-        const Size& rPageSize, sal_Int32 nScaleX, sal_Int32 nScaleY ) :
+        const basegfx::B2DVector& rPageScale, double fScaleX, double fScaleY ) :
     XclExpDffAnchorBase( rRoot ),
-    maPageSize( rPageSize ),
-    mnScaleX( nScaleX ),
-    mnScaleY( nScaleY )
+    maPageScale( rPageScale ),
+    mfScaleX( fScaleX ),
+    mfScaleY( fScaleY )
 {
 }
 
@@ -161,17 +161,17 @@ void XclExpDffEmbeddedAnchor::ImplSetFlags( const SdrObject& /*rSdrObj*/ )
     // TODO (unsupported feature): fixed size
 }
 
-void XclExpDffEmbeddedAnchor::ImplCalcAnchorRect( const Rectangle& rRect, MapUnit eMapUnit )
+void XclExpDffEmbeddedAnchor::ImplCalcAnchorRange( const basegfx::B2DRange& rRange, MapUnit eMapUnit )
 {
-    maAnchor.SetRect( maPageSize, mnScaleX, mnScaleY, rRect, eMapUnit, true );
+    maAnchor.SetRangeAtAnchor( maPageScale, mfScaleX, mfScaleY, rRange, eMapUnit, true );
 }
 
 // ----------------------------------------------------------------------------
 
-XclExpDffNoteAnchor::XclExpDffNoteAnchor( const XclExpRoot& rRoot, const Rectangle& rRect ) :
+XclExpDffNoteAnchor::XclExpDffNoteAnchor( const XclExpRoot& rRoot, const basegfx::B2DRange& rRange ) :
     XclExpDffAnchorBase( rRoot, EXC_ESC_ANCHOR_SIZELOCKED )
 {
-    maAnchor.SetRect( rRoot, rRoot.GetCurrScTab(), rRect, MAP_100TH_MM );
+    maAnchor.SetRangeAtAnchor( rRoot, rRoot.GetCurrScTab(), rRange, MAP_100TH_MM );
 }
 
 // ----------------------------------------------------------------------------
@@ -376,7 +376,7 @@ void XclExpControlHelper::WriteFormulaSubRec( XclExpStream& rStrm, sal_uInt16 nS
 #if EXC_EXP_OCX_CTRL
 
 XclExpOcxControlObj::XclExpOcxControlObj( XclExpObjectManager& rObjMgr, Reference< XShape > xShape,
-        const Rectangle* pChildAnchor, const String& rClassName, sal_uInt32 nStrmStart, sal_uInt32 nStrmSize ) :
+        const basegfx::B2DRange* pChildAnchor, const String& rClassName, sal_uInt32 nStrmStart, sal_uInt32 nStrmSize ) :
     XclObj( rObjMgr, EXC_OBJTYPE_PICTURE, true ),
     XclExpControlHelper( rObjMgr.GetRoot() ),
     maClassName( rClassName ),
@@ -480,7 +480,7 @@ void XclExpOcxControlObj::WriteSubRecs( XclExpStream& rStrm )
 
 #else
 
-XclExpTbxControlObj::XclExpTbxControlObj( XclExpObjectManager& rObjMgr, Reference< XShape > xShape, const Rectangle* pChildAnchor ) :
+XclExpTbxControlObj::XclExpTbxControlObj( XclExpObjectManager& rObjMgr, Reference< XShape > xShape, const basegfx::B2DRange* pChildAnchor ) :
     XclObj( rObjMgr, EXC_OBJTYPE_UNKNOWN, true ),
     XclExpControlHelper( rObjMgr.GetRoot() ),
     mnHeight( 0 ),
@@ -914,7 +914,7 @@ void XclExpTbxControlObj::WriteSbs( XclExpStream& rStrm )
 
 // ----------------------------------------------------------------------------
 
-XclExpChartObj::XclExpChartObj( XclExpObjectManager& rObjMgr, Reference< XShape > xShape, const Rectangle* pChildAnchor ) :
+XclExpChartObj::XclExpChartObj( XclExpObjectManager& rObjMgr, Reference< XShape > xShape, const basegfx::B2DRange* pChildAnchor ) :
     XclObj( rObjMgr, EXC_OBJTYPE_CHART ),
     XclExpRoot( rObjMgr.GetRoot() )
 {
@@ -952,8 +952,8 @@ XclExpChartObj::XclExpChartObj( XclExpObjectManager& rObjMgr, Reference< XShape 
     aShapeProp.GetProperty( xModel, CREATE_OUSTRING( "Model" ) );
     ::com::sun::star::awt::Rectangle aBoundRect;
     aShapeProp.GetProperty( aBoundRect, CREATE_OUSTRING( "BoundRect" ) );
-    Rectangle aChartRect( Point( aBoundRect.X, aBoundRect.Y ), Size( aBoundRect.Width, aBoundRect.Height ) );
-    mxChart.reset( new XclExpChart( GetRoot(), xModel, aChartRect ) );
+    const basegfx::B2DRange aChartRange(aBoundRect.X, aBoundRect.Y, aBoundRect.X + aBoundRect.Width, aBoundRect.Y + aBoundRect.Height);
+    mxChart.reset( new XclExpChart( GetRoot(), xModel, aChartRange ) );
 }
 
 XclExpChartObj::~XclExpChartObj()
@@ -998,7 +998,7 @@ XclExpNote::XclExpNote( const XclExpRoot& rRoot, const ScAddress& rScPos,
             if( pScNote )
                 if( SdrCaptionObj* pCaption = pScNote->GetOrCreateCaption( maScPos ) )
                     if( const OutlinerParaObject* pOPO = pCaption->GetOutlinerParaObject() )
-                        mnObjId = rRoot.GetObjectManager().AddObj( new XclObjComment( rRoot.GetObjectManager(), pCaption->GetLogicRect(), pOPO->GetTextObject(), pCaption, mbVisible ) );
+                        mnObjId = rRoot.GetObjectManager().AddObj( new XclObjComment( rRoot.GetObjectManager(), sdr::legacy::GetLogicRange(*pCaption), pOPO->GetTextObject(), pCaption, mbVisible ) );
 
             SetRecSize( 9 + maAuthor.GetSize() );
         }
@@ -1263,17 +1263,17 @@ void XclExpObjectManager::InitStream( bool bTempFile )
 // ----------------------------------------------------------------------------
 
 XclExpEmbeddedObjectManager::XclExpEmbeddedObjectManager(
-        const XclExpObjectManager& rParent, const Size& rPageSize, sal_Int32 nScaleX, sal_Int32 nScaleY ) :
+        const XclExpObjectManager& rParent, const basegfx::B2DVector& rPageScale, double fScaleX, double fScaleY ) :
     XclExpObjectManager( rParent ),
-    maPageSize( rPageSize ),
-    mnScaleX( nScaleX ),
-    mnScaleY( nScaleY )
+    maPageScale( rPageScale ),
+    mfScaleX( fScaleX ),
+    mfScaleY( fScaleY )
 {
 }
 
 XclExpDffAnchorBase* XclExpEmbeddedObjectManager::CreateDffAnchor() const
 {
-    return new XclExpDffEmbeddedAnchor( GetRoot(), maPageSize, mnScaleX, mnScaleY );
+    return new XclExpDffEmbeddedAnchor( GetRoot(), maPageScale, mfScaleX, mfScaleY );
 }
 
 // ============================================================================

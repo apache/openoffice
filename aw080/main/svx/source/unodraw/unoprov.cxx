@@ -860,7 +860,7 @@ UHashMapEntry pSdrShapeIdentifierMap[] =
 	UHashMapEntry (RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.CustomShape"),			OBJ_CUSTOMSHAPE ),
 	UHashMapEntry (RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.MediaShape"),			OBJ_MEDIA ),
 
-	UHashMapEntry (RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.Shape3DSceneObject"),	E3D_POLYSCENE_ID  | E3D_INVENTOR_FLAG ),
+	UHashMapEntry (RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.Shape3DSceneObject"),	E3D_SCENE_ID      | E3D_INVENTOR_FLAG ),
 	UHashMapEntry (RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.Shape3DCubeObject"),	E3D_CUBEOBJ_ID    | E3D_INVENTOR_FLAG ),
 	UHashMapEntry (RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.Shape3DSphereObject"),	E3D_SPHEREOBJ_ID  | E3D_INVENTOR_FLAG ),
 	UHashMapEntry (RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.Shape3DLatheObject"),	E3D_LATHEOBJ_ID   | E3D_INVENTOR_FLAG ),

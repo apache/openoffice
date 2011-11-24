@@ -213,7 +213,7 @@ void SdDrawDocument::CreateLayoutTemplates()
 
 	// Schattenattribute (Drawing Engine)
 	rISet.Put(SdrShadowItem(FALSE));
-	rISet.Put(SdrShadowColorItem(aNullStr, RGB_Color(COL_GRAY)));
+	rISet.Put(XColorItem(SDRATTR_SHADOWCOLOR, aNullStr, RGB_Color(COL_GRAY)));
 	rISet.Put(SdrShadowXDistItem(300)); 		// 3 mm Schattendistanz
 	rISet.Put(SdrShadowYDistItem(300));
 
@@ -312,7 +312,7 @@ void SdDrawDocument::CreateLayoutTemplates()
 	pISet = &pSheet->GetItemSet();
 
 	pISet->Put(SdrShadowItem(TRUE));
-	pISet->Put(SdrShadowColorItem(aNullStr, RGB_Color(COL_GRAY)));
+	pISet->Put(XColorItem(SDRATTR_SHADOWCOLOR, aNullStr, RGB_Color(COL_GRAY)));
 	pISet->Put(SdrShadowXDistItem(300));		// 3 mm Schattendistanz
 	pISet->Put(SdrShadowYDistItem(300));
 
@@ -409,7 +409,7 @@ void SdDrawDocument::CreateLayoutTemplates()
 	pISet->Put(XFillColorItem(String(), RGB_Color(COL_CYAN)));
 
 	pISet->Put(SdrShadowItem(TRUE));
-	pISet->Put(SdrShadowColorItem(aNullStr, RGB_Color(COL_GRAY)));
+	pISet->Put(XColorItem(SDRATTR_SHADOWCOLOR, aNullStr, RGB_Color(COL_GRAY)));
 	pISet->Put(SdrShadowXDistItem(200));		// 2 mm Schattendistanz
 	pISet->Put(SdrShadowYDistItem(200));
 
@@ -433,7 +433,7 @@ void SdDrawDocument::CreateLayoutTemplates()
 	pISet->Put(XFillColorItem(String(), aOrange4));
 
 	pISet->Put(SdrShadowItem(TRUE));
-	pISet->Put(SdrShadowColorItem(aNullStr, RGB_Color(COL_GRAY)));
+	pISet->Put(XColorItem(SDRATTR_SHADOWCOLOR, aNullStr, RGB_Color(COL_GRAY)));
 	pISet->Put(SdrShadowXDistItem(200));		// 2 mm Schattendistanz
 	pISet->Put(SdrShadowYDistItem(200));
 

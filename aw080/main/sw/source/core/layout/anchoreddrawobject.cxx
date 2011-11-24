@@ -48,6 +48,7 @@
 // --> OD 2005-03-09 #i44559#
 #include <ndtxt.hxx>
 // <--
+#include <svx/svdlegacy.hxx>
 
 using namespace ::com::sun::star;
 
@@ -219,7 +220,6 @@ bool SwObjPosOscillationControl::OscillationDetected()
 // ============================================================================
 // implementation of class <SwAnchoredDrawObject>
 // ============================================================================
-TYPEINIT1(SwAnchoredDrawObject,SwAnchoredObject);
 
 SwAnchoredDrawObject::SwAnchoredDrawObject() :
     SwAnchoredObject(),
@@ -305,7 +305,7 @@ void SwAnchoredDrawObject::MakeObjPos()
     }
 
     SwDrawContact* pDrawContact =
-                        static_cast<SwDrawContact*>(::GetUserCall( GetDrawObj() ));
+                        static_cast<SwDrawContact*>(::findConnectionToSdrObject( GetDrawObj() ));
 
     // --> OD 2004-08-09 #i28749# - if anchored drawing object hasn't been yet
     // positioned, convert its positioning attributes, if its positioning
@@ -325,7 +325,7 @@ void SwAnchoredDrawObject::MakeObjPos()
         // attributes only for 'master' drawing objects
         // --> OD 2005-03-11 #i44334#, #i44681# - check, if positioning
         // attributes already have been set.
-        if ( !GetDrawObj()->ISA(SwDrawVirtObj) &&
+        if ( !dynamic_cast< const SwDrawVirtObj* >(GetDrawObj()) &&
              !static_cast<SwDrawFrmFmt&>(GetFrmFmt()).IsPosAttrSet() )
         {
             _SetPositioningAttr();
@@ -384,7 +384,7 @@ void SwAnchoredDrawObject::MakeObjPos()
         // Assure for 'master' drawing object, that it's registered at the correct page.
         // Perform check not for as-character anchored drawing objects and only if
         // the anchor frame is valid.
-        if ( !GetDrawObj()->ISA(SwDrawVirtObj) &&
+        if ( !dynamic_cast< const SwDrawVirtObj* >(GetDrawObj()) &&
              !pDrawContact->ObjAnchoredAsChar() &&
              GetAnchorFrm()->IsValid() )
         {
@@ -401,14 +401,14 @@ void SwAnchoredDrawObject::MakeObjPos()
         if ( aObjRect.Right() >= aPageRect.Right() + 10 )
         {
             Size aSize( aPageRect.Right() - aObjRect.Right(), 0 );
-            DrawObj()->Move( aSize );
+			sdr::legacy::transformSdrObject(*DrawObj(), basegfx::tools::createTranslateB2DHomMatrix(aSize.Width(), aSize.Height()));
             aObjRect = GetObjRect();
         }
 
         if ( aObjRect.Left() + 10 <= aPageRect.Left() )
         {
             Size aSize( aPageRect.Left() - aObjRect.Left(), 0 );
-            DrawObj()->Move( aSize );
+			sdr::legacy::transformSdrObject(*DrawObj(), basegfx::tools::createTranslateB2DHomMatrix(aSize.Width(), aSize.Height()));
         }
 
         mbCaptureAfterLayoutDirChange = false;
@@ -541,7 +541,16 @@ void SwAnchoredDrawObject::_MakeObjPosAnchoredAtLayout()
     {
         const Point aNewAnchorPos =
                     GetAnchorFrm()->GetFrmAnchorPos( ::HasWrap( GetDrawObj() ) );
-        DrawObj()->SetAnchorPos( aNewAnchorPos );
+
+        // #i108739#
+        {
+			const Point aCurrentAnchor(sdr::legacy::GetAnchorPos(*DrawObj()));
+			sdr::legacy::transformSdrObject(*DrawObj(), basegfx::tools::createTranslateB2DHomMatrix(
+				aNewAnchorPos.X() - aCurrentAnchor.X(), 
+				aNewAnchorPos.Y() - aCurrentAnchor.Y()));
+            DrawObj()->SetAnchorPos( basegfx::B2DPoint( aNewAnchorPos.X(), aNewAnchorPos.Y() ) );
+        }
+
         // --> OD 2006-10-05 #i70122# - missing invalidation
         InvalidateObjRectWithSpaces();
         // <--
@@ -562,16 +571,14 @@ void SwAnchoredDrawObject::_SetDrawObjAnchor()
     // --> OD 2004-07-29 #i31698# -
     Point aNewAnchorPos =
                 GetAnchorFrm()->GetFrmAnchorPos( ::HasWrap( GetDrawObj() ) );
-    Point aCurrAnchorPos = GetDrawObj()->GetAnchorPos();
+    const Point aCurrAnchorPos(sdr::legacy::GetAnchorPos(*GetDrawObj()));
     if ( aNewAnchorPos != aCurrAnchorPos )
     {
-        // determine movement to be applied after setting the new anchor position
-        Size aMove( aCurrAnchorPos.X() - aNewAnchorPos.X(),
-                    aCurrAnchorPos.Y() - aNewAnchorPos.Y() );
-        // set new anchor position
-        DrawObj()->SetAnchorPos( aNewAnchorPos );
-        // correct object position, caused by setting new anchor position
-        DrawObj()->Move( aMove );
+        // #i108739#
+        {
+            DrawObj()->SetAnchorPos( basegfx::B2DPoint( aNewAnchorPos.X(), aNewAnchorPos.Y() ) );
+        }
+
         // --> OD 2006-10-05 #i70122# - missing invalidation
         InvalidateObjRectWithSpaces();
         // <--
@@ -633,7 +640,7 @@ void SwAnchoredDrawObject::InvalidateObjPos()
             // anchored object, because its positioned by the format of its anchor frame.
             // --> OD 2005-03-09 #i44559# - assure, that text hint is already
             // existing in the text frame
-            if ( GetAnchorFrm()->ISA(SwTxtFrm) &&
+            if ( dynamic_cast< const SwTxtFrm* >(GetAnchorFrm()) &&
                  (GetFrmFmt().GetAnchor().GetAnchorId() == FLY_AS_CHAR) )
             {
                 SwTxtFrm* pAnchorTxtFrm( static_cast<SwTxtFrm*>(AnchorFrm()) );
@@ -675,28 +682,27 @@ void SwAnchoredDrawObject::InvalidateObjPos()
 
 SwFrmFmt& SwAnchoredDrawObject::GetFrmFmt()
 {
-    ASSERT( static_cast<SwDrawContact*>(GetUserCall(GetDrawObj()))->GetFmt(),
+    ASSERT( static_cast<SwDrawContact*>(findConnectionToSdrObject(GetDrawObj()))->GetFmt(),
             "<SwAnchoredDrawObject::GetFrmFmt()> - missing frame format -> crash." );
-    return *(static_cast<SwDrawContact*>(GetUserCall(GetDrawObj()))->GetFmt());
+    return *(static_cast<SwDrawContact*>(findConnectionToSdrObject(GetDrawObj()))->GetFmt());
 }
 const SwFrmFmt& SwAnchoredDrawObject::GetFrmFmt() const
 {
-    ASSERT( static_cast<SwDrawContact*>(GetUserCall(GetDrawObj()))->GetFmt(),
+    ASSERT( static_cast<SwDrawContact*>(findConnectionToSdrObject(GetDrawObj()))->GetFmt(),
             "<SwAnchoredDrawObject::GetFrmFmt()> - missing frame format -> crash." );
-    return *(static_cast<SwDrawContact*>(GetUserCall(GetDrawObj()))->GetFmt());
+    return *(static_cast<SwDrawContact*>(findConnectionToSdrObject(GetDrawObj()))->GetFmt());
 }
 
 const SwRect SwAnchoredDrawObject::GetObjRect() const
 {
     // use geometry of drawing object
-    //return GetDrawObj()->GetCurrentBoundRect();
-    return GetDrawObj()->GetSnapRect();
+    return sdr::legacy::GetSnapRect(*GetDrawObj());
 }
 
 // --> OD 2006-10-05 #i70122#
 const SwRect SwAnchoredDrawObject::GetObjBoundRect() const
 {
-    return GetDrawObj()->GetCurrentBoundRect();
+    return sdr::legacy::GetBoundRect(*GetDrawObj());
 }
 // <--
 
@@ -704,14 +710,14 @@ const SwRect SwAnchoredDrawObject::GetObjBoundRect() const
 bool SwAnchoredDrawObject::_SetObjTop( const SwTwips _nTop )
 {
     SwTwips nDiff = _nTop - GetObjRect().Top();
-    DrawObj()->Move( Size( 0, nDiff ) );
+	sdr::legacy::transformSdrObject(*DrawObj(), basegfx::tools::createTranslateB2DHomMatrix(0.0, nDiff));
 
     return nDiff != 0;
 }
 bool SwAnchoredDrawObject::_SetObjLeft( const SwTwips _nLeft )
 {
     SwTwips nDiff = _nLeft - GetObjRect().Left();
-    DrawObj()->Move( Size( nDiff, 0 ) );
+	sdr::legacy::transformSdrObject(*DrawObj(), basegfx::tools::createTranslateB2DHomMatrix(nDiff, 0.0));
 
     return nDiff != 0;
 }
@@ -799,7 +805,7 @@ void SwAnchoredDrawObject::ObjectAttachedToAnchorFrame()
 void SwAnchoredDrawObject::_SetPositioningAttr()
 {
     SwDrawContact* pDrawContact =
-                        static_cast<SwDrawContact*>(GetUserCall( GetDrawObj() ));
+                        static_cast<SwDrawContact*>(findConnectionToSdrObject( GetDrawObj() ));
 
     if ( !pDrawContact->ObjAnchoredAsChar() )
     {

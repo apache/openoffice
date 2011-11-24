@@ -383,7 +383,7 @@ namespace binfilter {
 /*N*/ SwCntntFrm::~SwCntntFrm()
 /*N*/ {
 /*N*/ 	SwCntntNode* pCNd;
-/*N*/ 	if( 0 != ( pCNd = PTR_CAST( SwCntntNode, pRegisteredIn )) &&
+/*N*/ 	if( 0 != ( pCNd = dynamic_cast< SwCntntNode* >( pRegisteredIn )) &&
 /*N*/ 		!pCNd->GetDoc()->IsInDtor() )
 /*N*/ 	{
 /*N*/ 		//Bei der Root abmelden wenn ich dort noch im Turbo stehe.

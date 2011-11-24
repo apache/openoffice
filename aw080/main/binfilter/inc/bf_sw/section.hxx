@@ -213,7 +213,7 @@ public:
 	TYPEINFO();		//Bereits in Basisklasse Client drin.
 	~SwSectionFmt();
 
-	//Vernichtet alle Frms in aDepend (Frms werden per PTR_CAST erkannt).
+	//Vernichtet alle Frms in aDepend
 	virtual void DelFrms();
 
 	//Erzeugt die Ansichten
@@ -260,7 +260,7 @@ inline SwSectionFmt* SwSectionFmt::GetParent() const
 {
 	register SwSectionFmt* pRet = 0;
 	if( GetRegisteredIn() )
-		pRet = PTR_CAST( SwSectionFmt, GetRegisteredIn() );
+		pRet = const_cast< SwSectionFmt* >( dynamic_cast< const SwSectionFmt* >( GetRegisteredIn() ) );
 	return pRet;
 }
 

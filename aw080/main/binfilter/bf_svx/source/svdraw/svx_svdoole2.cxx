@@ -891,7 +891,7 @@ SO2_DECL_REF(SvInPlaceObject)
 /*N*/ 		if (pPers)
 /*N*/ 		{
 /*N*/ 			SvInfoObject* pInfo = pPers->Find(mpImpl->aPersistName);
-/*N*/ 			SvEmbeddedInfoObject * pEmbed = PTR_CAST(SvEmbeddedInfoObject, pInfo );
+/*N*/ 			SvEmbeddedInfoObject * pEmbed = dynamic_cast< SvEmbeddedInfoObject* >( pInfo );
 /*N*/ 
 /*N*/ 			if( pEmbed )
 /*N*/ 				pEmbed->SetInfoVisArea( rVisArea );

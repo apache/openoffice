@@ -46,16 +46,16 @@ SdObjectFactory aSdObjectFactory;
 
 IMPL_LINK( SdObjectFactory, MakeUserData, SdrObjFactory *, pObjFactory )
 {
-	if ( pObjFactory->nInventor == SdUDInventor )
+	if ( pObjFactory->mnInventor == SdUDInventor )
 	{
-		switch( pObjFactory->nIdentifier )
+		switch( pObjFactory->mnIdentifier )
 		{
 			case( SD_ANIMATIONINFO_ID ):
-				pObjFactory->pNewData = new SdAnimationInfo( *pObjFactory->pObj );
+				pObjFactory->mpNewData = new SdAnimationInfo( *pObjFactory->mpObj );
 			break;
 
 			case( SD_IMAPINFO_ID ):
-				pObjFactory->pNewData = new SdIMapInfo;
+				pObjFactory->mpNewData = new SdIMapInfo;
 			break;
 
 			default:
@@ -63,7 +63,7 @@ IMPL_LINK( SdObjectFactory, MakeUserData, SdrObjFactory *, pObjFactory )
 		}
 	}
 
-	if ( pObjFactory->pNewData )
+	if ( pObjFactory->mpNewData )
 		return 0;
 
 	if( aOldMakeUserDataLink.IsSet() )

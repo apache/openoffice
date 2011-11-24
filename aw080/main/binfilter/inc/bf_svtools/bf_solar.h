@@ -39,6 +39,9 @@
 #define FALSE		0
 #endif
 
+/*** misc. macros to leverage platform and compiler differences ********/
+typedef int 			FASTBOOL;
+
 /*** common solar types ********************************************/
 /* NOTE: these types are deprecated, or soon will be.  They should */
 /* not be used in new code, and should be replaced with their      */

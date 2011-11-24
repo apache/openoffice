@@ -159,7 +159,7 @@ inline sal_uInt32 SvDataPipe_Impl::getReadPosition() const
 //
 //============================================================================
 
-TYPEINIT1(SvOutputStreamOpenLockBytes, SvOpenLockBytes)
+TYPEINIT1(SvOutputStreamOpenLockBytes, BfSvOpenLockBytes)
 
 //============================================================================
 // virtual

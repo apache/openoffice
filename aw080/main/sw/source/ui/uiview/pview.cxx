@@ -104,8 +104,6 @@ SFX_IMPL_INTERFACE(SwPagePreView, SfxViewShell, SW_RES(RID_PVIEW_TOOLBOX))
 }
 
 
-TYPEINIT1(SwPagePreView,SfxViewShell)
-
 #define SWVIEWFLAGS ( SFX_VIEW_CAN_PRINT|SFX_VIEW_HAS_PRINTOPTIONS )
 
 #define MIN_PREVIEW_ZOOM 25
@@ -1326,11 +1324,11 @@ SwPagePreView::SwPagePreView(SfxViewFrame *pViewFrame, SfxViewShell* pOldSh):
 
 	ViewShell *pVS, *pNew;
 
-	if( pOldSh && pOldSh->IsA( TYPE( SwPagePreView ) ) )
+	if( pOldSh && dynamic_cast< SwPagePreView* >(pOldSh) )
         pVS = ((SwPagePreView*)pOldSh)->GetViewShell();
 	else
 	{
-		if( pOldSh && pOldSh->IsA( TYPE( SwView ) ) )
+		if( pOldSh && dynamic_cast< SwView* >(pOldSh) )
 		{
 			pVS = ((SwView*)pOldSh)->GetWrtShellPtr();
 			// save the current ViewData of the previous SwView
@@ -1404,7 +1402,7 @@ SwPagePreView::SwPagePreView(SfxViewFrame *pViewFrame, SfxViewShell* pOldSh):
 
 SwDocShell* SwPagePreView::GetDocShell()
 {
-	return PTR_CAST(SwDocShell, GetViewFrame()->GetObjectShell());
+	return dynamic_cast< SwDocShell* >( GetViewFrame()->GetObjectShell());
 }
 
 /*--------------------------------------------------------------------

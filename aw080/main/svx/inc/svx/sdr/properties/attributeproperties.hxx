@@ -77,9 +77,6 @@ namespace sdr
 			// Move properties to a new ItemPool.
 			virtual void MoveToItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel = 0L);
 
-			// Set new model.
-			virtual void SetModel(SdrModel* pOldModel, SdrModel* pNewModel);
-
 			// force all attributes which come from styles to hard attributes
 			// to be able to live without the style.
 			virtual void ForceStyleToHardAttributes();

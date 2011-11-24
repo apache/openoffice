@@ -52,7 +52,7 @@ namespace binfilter {
 /*N*/ 	SchModuleDummy** ppShlPtr = (SchModuleDummy**) GetAppData(BF_SHL_SCH);
 /*N*/ 	if ( (*ppShlPtr)->IsLoaded() ) return;
 /*N*/ 
-/*N*/ 	SvFactory* pFact = PTR_CAST(SvFactory,(*ppShlPtr)->pSchChartDocShellFactory);
+/*N*/ 	SvFactory* pFact = dynamic_cast< SvFactory* >((*ppShlPtr)->pSchChartDocShellFactory);
 /*N*/ 
 /*N*/ 	delete (*ppShlPtr);
 /*N*/ 	(*ppShlPtr) = new SchModule(pFact);

@@ -169,7 +169,7 @@ SvNumberFormatterRegistry_Impl::~SvNumberFormatterRegistry_Impl()
 
 void SvNumberFormatterRegistry_Impl::Notify( SvtBroadcaster&, const SfxHint& rHint )
 {
-    const SfxSimpleHint* pHint = PTR_CAST( SfxSimpleHint, &rHint );
+    const SfxSimpleHint* pHint = dynamic_cast< const SfxSimpleHint* >( &rHint );
     if( pHint )
     {
         if ( pHint->GetId() & SYSLOCALEOPTIONS_HINT_LOCALE )

@@ -65,27 +65,28 @@ void SwBaseShell::InsertURLButton(const String& rURL, const String& rTarget, con
 	SdrView *pSdrView = rSh.GetDrawView();
 
 	// OBJ_FM_BUTTON
-    pSdrView->SetDesignMode(sal_True);
+    pSdrView->SetDesignMode(true);
 	pSdrView->SetCurrentObj(OBJ_FM_BUTTON);
-	pSdrView->SetEditMode(sal_False);
+	pSdrView->SetViewEditMode(SDREDITMODE_CREATE);
 
-	Point aStartPos(rSh.GetCharRect().Pos() + Point(0, 1));
+	const basegfx::B2DPoint aStartPos(rSh.GetCharRect().Pos().X(), rSh.GetCharRect().Pos().Y() + 1.0);
 
 	rSh.StartAction();
     rSh.StartUndo( UNDO_UI_INSERT_URLBTN );
 	if (rSh.BeginCreate(OBJ_FM_BUTTON, FmFormInventor, aStartPos))
 	{
-		pSdrView->SetOrtho(sal_False);
-	 	Size aSz(GetView().GetEditWin().PixelToLogic(Size(140, 20)));
-		Point aEndPos(aSz.Width(), aSz.Height());
+		pSdrView->SetOrthogonal(false);
+		const basegfx::B2DVector aObjSize(
+			GetView().GetEditWin().GetInverseViewTransformation() * 
+			basegfx::B2DVector(140.0, 20.0));
 
-		rSh.MoveCreate(aStartPos + aEndPos);
+		rSh.MoveCreate(aStartPos + aObjSize);
 		rSh.EndCreate(SDRCREATE_FORCEEND);
 
-		const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-		if (rMarkList.GetMark(0))
+		SdrUnoObj* pUnoCtrl = dynamic_cast< SdrUnoObj* >(pSdrView->getSelectedIfSingle());
+
+		if (pUnoCtrl)
 		{
-			SdrUnoObj* pUnoCtrl = PTR_CAST(SdrUnoObj, rMarkList.GetMark(0)->GetMarkedSdrObj());
 			uno::Reference< awt::XControlModel >  xControlModel = pUnoCtrl->GetUnoControlModel();
 
 			ASSERT( xControlModel.is(), "UNO-Control ohne Model" );

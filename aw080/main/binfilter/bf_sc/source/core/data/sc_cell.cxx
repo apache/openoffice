@@ -1418,7 +1418,7 @@ DBG_BF_ASSERT(0, "STRIP"); //STRIP001 /*?*/ 			ULONG nValidation = ((const SfxUI
 /*N*/ {
 /*N*/ 	if ( !pDocument->IsInDtorClear() && !pDocument->GetHardRecalcState() )
 /*N*/ 	{
-/*N*/ 		const ScHint* p = PTR_CAST( ScHint, &rHint );
+/*N*/ 		const ScHint* p = dynamic_cast< const ScHint* >( &rHint );
 /*N*/ 		if( p && (p->GetId() & (SC_HINT_DATACHANGED | SC_HINT_DYING |
 /*N*/ 				SC_HINT_TABLEOPDIRTY)) )
 /*N*/ 		{

@@ -296,11 +296,11 @@ sal_uInt16 EditView::GetSelectedScriptType() const
 	return PIMPEE->GetScriptType( pImpEditView->GetEditSelection() );
 }
 
-void EditView::Paint( const Rectangle& rRect )
+void EditView::Paint( const Rectangle& rRect, OutputDevice* pTargetDevice )
 {
 	DBG_CHKTHIS( EditView, 0 );
 	DBG_CHKOBJ( pImpEditView->pEditEngine, EditEngine, 0 );
-	PIMPEE->Paint( pImpEditView, rRect );
+	PIMPEE->Paint( pImpEditView, rRect, pTargetDevice );
 }
 
 void EditView::SetEditEngine( EditEngine* pEditEng )
@@ -1381,7 +1381,7 @@ const SvxFieldItem* EditView::GetFieldAtSelection() const
 			if ( pAttr->GetStart() == nXPos )
 				if ( pAttr->Which() == EE_FEATURE_FIELD )
 				{
-					DBG_ASSERT( pAttr->GetItem()->ISA( SvxFieldItem ), "Kein FeldItem..." );
+					DBG_ASSERT( dynamic_cast< const SvxFieldItem* >(pAttr->GetItem()), "Kein FeldItem..." );
 					return (const SvxFieldItem*)pAttr->GetItem();
 				}
 		}

@@ -57,7 +57,7 @@ SwPosFlyFrm::SwPosFlyFrm( const SwNodeIndex& rIdx, const SwFrmFmt* pFmt,
             SwFlyFrm* pFly = SwIterator<SwFlyFrm,SwFmt>::FirstElement(*pFmt);
 			if( pFly )
             {
-				nOrdNum = pFly->GetVirtDrawObj()->GetOrdNum();
+				nOrdNum = pFly->GetVirtDrawObj()->GetNavigationPosition();
 				bFnd = true;
 		    }
 		}
@@ -67,7 +67,7 @@ SwPosFlyFrm::SwPosFlyFrm( const SwNodeIndex& rIdx, const SwFrmFmt* pFmt,
             SwDrawContact* pContact = SwIterator<SwDrawContact,SwFmt>::FirstElement(*pFmt);
 			if( pContact )
             {
-				nOrdNum = pContact->GetMaster()->GetOrdNum();
+				nOrdNum = pContact->GetMaster()->GetNavigationPosition();
 				bFnd = true;
 		    }
 	    }

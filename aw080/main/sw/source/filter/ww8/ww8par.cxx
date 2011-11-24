@@ -33,7 +33,6 @@
 #include <tools/solar.h>
 #include <rtl/tencinfo.h>
 #include <rtl/random.h>
-
 #include <sot/storage.hxx>
 #include <sfx2/docinf.hxx>
 #include <sfx2/docfile.hxx>
@@ -42,10 +41,8 @@
 #include <tools/urlobj.hxx>
 #include <unotools/tempfile.hxx>
 #include <svtools/sfxecode.hxx>
-
 #include <comphelper/docpasswordrequest.hxx>
 #include <hintids.hxx>
-
 #include <editeng/tstpitem.hxx>
 #include <editeng/cscoitem.hxx>
 #include <svx/svdobj.hxx>
@@ -66,7 +63,6 @@
 #include <svx/svdmodel.hxx>
 #include <svx/svdogrp.hxx>
 #include <svx/xflclit.hxx>
-
 #include <unotools/fltrcfg.hxx>
 #include <fmtfld.hxx>
 #include <fmturl.hxx>
@@ -99,35 +95,26 @@
 #include <swunodef.hxx>
 #include <unodraw.hxx>
 #include <swtable.hxx>          // class SwTableLines, ...
-// #i18732#
 #include <fmtfollowtextflow.hxx>
 #include <fchrfmt.hxx>
 #include <charfmt.hxx>
-
-
 #include <com/sun/star/i18n/ForbiddenCharacters.hpp>
 #include <comphelper/extract.hxx>
 #include <comphelper/sequenceashashmap.hxx>
 #include <fltini.hxx>
-
 #include <algorithm>
 #include <functional>
 #include "writerhelper.hxx"
 #include "writerwordglue.hxx"
-
-
 #include "ww8par2.hxx"          // class WW8RStyle, class WW8AnchorPara
-
 #include <frmatr.hxx>
-
 #include <math.h>
 #include <com/sun/star/beans/XPropertyContainer.hpp>
-
 #include <com/sun/star/beans/PropertyAttribute.hpp>
 #include <com/sun/star/document/XDocumentPropertiesSupplier.hpp>
 #include <com/sun/star/document/XDocumentProperties.hpp>
 #include <svl/itemiter.hxx>  //SfxItemIter
-
+#include <svx/svdlegacy.hxx>
 #include <stdio.h>
 
 #ifdef DEBUG
@@ -183,8 +170,8 @@ sal_uInt32 SwMSDffManager::GetFilterFlags()
 // --> OD 2004-12-14 #i32596# - consider new parameter <_nCalledByGroup>
 SdrObject* SwMSDffManager::ImportOLE( long nOLEId,
                                       const Graphic& rGrf,
-                                      const Rectangle& rBoundRect,
-									  const Rectangle& rVisArea,
+									  const basegfx::B2DRange& rBoundRect,
+									  const basegfx::B2DRange& rVisArea,
                                       const int _nCalledByGroup,
                                       sal_Int64 nAspect ) const
 {
@@ -215,8 +202,18 @@ SdrObject* SwMSDffManager::ImportOLE( long nOLEId,
         else
         {
             ErrCode nError = ERRCODE_NONE;
-            pRet = CreateSdrOLEFromStorage( sStorageName, xSrcStg, xDstStg,
-                rGrf, rBoundRect, rVisArea, pStData, nError, nSvxMSDffOLEConvFlags, nAspect );
+            pRet = CreateSdrOLEFromStorage(
+				*GetModel(),
+				sStorageName, 
+				xSrcStg, 
+				xDstStg, 
+				rGrf, 
+				rBoundRect, 
+				rVisArea, 
+				pStData, 
+				nError, 
+				nSvxMSDffOLEConvFlags, 
+				nAspect );
         }
     }
     return pRet;
@@ -266,11 +263,11 @@ void SwWW8ImplReader::SetToggleBiDiAttrFlags(sal_uInt16 nFlags)
 SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
 									   DffObjData& rObjData,
 									   void* pData,
-									   Rectangle& rTextRect,
+									   basegfx::B2DRange& rTextRange,
 									   SdrObject* pObj
 									   )
 {
-	if( !rTextRect.IsEmpty() )
+	if( !rTextRange.isEmpty() )
 	{
 		SvxMSDffImportData& rImportData = *(SvxMSDffImportData*)pData;
 		SvxMSDffImportRec* pImpRec = new SvxMSDffImportRec;
@@ -403,9 +400,9 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
                 {
                     case 9000:
                         {
-                            long nWidth = rTextRect.GetWidth();
-                            rTextRect.Right() = rTextRect.Left() + rTextRect.GetHeight();
-                            rTextRect.Bottom() = rTextRect.Top() + nWidth;
+							rTextRange = basegfx::B2DRange(
+								rTextRange.getMinX(), rTextRange.getMinY(),
+								rTextRange.getMinX() + rTextRange.getHeight(), rTextRange.getMinY() + rTextRange.getWidth());
 
                             sal_Int32 nOldTextLeft = nTextLeft;
                             sal_Int32 nOldTextRight = nTextRight;
@@ -420,9 +417,9 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
                         break;
                     case 27000:
                         {
-                            long nWidth = rTextRect.GetWidth();
-                            rTextRect.Right() = rTextRect.Left() + rTextRect.GetHeight();
-                            rTextRect.Bottom() = rTextRect.Top() + nWidth;
+							rTextRange = basegfx::B2DRange(
+								rTextRange.getMinX(), rTextRange.getMinY(),
+								rTextRange.getMinX() + rTextRange.getHeight(), rTextRange.getMinY() + rTextRange.getWidth());
 
                             sal_Int32 nOldTextLeft = nTextLeft;
                             sal_Int32 nOldTextRight = nTextRight;
@@ -442,15 +439,23 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
 
             if (bIsSimpleDrawingTextBox)
             {
-                SdrObject::Free( pObj );
-				pObj = new SdrRectObj(OBJ_TEXT, rTextRect);
+                deleteSdrObjectSafeAndClearPointer( pObj );
+				pObj = new SdrRectObj(
+					*pSdrModel,
+					basegfx::tools::createScaleTranslateB2DHomMatrix(
+						rTextRange.getRange(),
+						rTextRange.getMinimum()),
+					OBJ_TEXT, 
+					true);
             }
 
             // Die vertikalen Absatzeinrueckungen sind im BoundRect mit drin,
             // hier rausrechnen
-            Rectangle aNewRect(rTextRect);
-			aNewRect.Bottom() -= nTextTop + nTextBottom;
-            aNewRect.Right() -= nTextLeft + nTextRight;
+            const Rectangle aNewRect(
+				basegfx::fround(rTextRange.getMinX()), 
+				basegfx::fround(rTextRange.getMinY()), 
+				basegfx::fround(rTextRange.getMaxX()) - nTextLeft + nTextRight, 
+				basegfx::fround(rTextRange.getMaxY()) - nTextTop + nTextBottom);
 
 			// Nur falls es eine einfache Textbox ist, darf der Writer
 			// das Objekt durch einen Rahmen ersetzen, ansonsten
@@ -474,38 +479,36 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
             bool bFitText = false;
             if (GetPropertyValue(DFF_Prop_FitTextToShape) & 2)
             {
-                aSet.Put( SdrTextAutoGrowHeightItem( sal_True ) );
-                aSet.Put( SdrTextMinFrameHeightItem(
-                    aNewRect.Bottom() - aNewRect.Top() ) );
-                aSet.Put( SdrTextMinFrameWidthItem(
-                    aNewRect.Right() - aNewRect.Left() ) );
+                aSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWHEIGHT, true) );
+                aSet.Put( SdrMetricItem(SDRATTR_TEXT_MINFRAMEHEIGHT, aNewRect.Bottom() - aNewRect.Top() ) );
+                aSet.Put( SdrMetricItem(SDRATTR_TEXT_MINFRAMEWIDTH, aNewRect.Right() - aNewRect.Left() ) );
                 bFitText = true;
             }
             else
             {
-                aSet.Put( SdrTextAutoGrowHeightItem( sal_False ) );
-                aSet.Put( SdrTextAutoGrowWidthItem( sal_False ) );
+                aSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWHEIGHT, false) );
+                aSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, false) );
             }
 
 			switch ( (MSO_WrapMode)
                 GetPropertyValue( DFF_Prop_WrapText, mso_wrapSquare ) )
 			{
 				case mso_wrapNone :
-    				aSet.Put( SdrTextAutoGrowWidthItem( sal_True ) );
+    				aSet.Put( SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, true) );
                     pImpRec->bAutoWidth = true;
 				break;
 				case mso_wrapByPoints :
-					aSet.Put( SdrTextContourFrameItem( sal_True ) );
+					aSet.Put( SdrOnOffItem(SDRATTR_TEXT_CONTOURFRAME, true) );
 				break;
 				default:
 					;
 			}
 
 			// Abstaende an den Raendern der Textbox setzen
-			aSet.Put( SdrTextLeftDistItem( nTextLeft ) );
-			aSet.Put( SdrTextRightDistItem( nTextRight ) );
-			aSet.Put( SdrTextUpperDistItem( nTextTop ) );
-			aSet.Put( SdrTextLowerDistItem( nTextBottom ) );
+			aSet.Put( SdrMetricItem(SDRATTR_TEXT_LEFTDIST, nTextLeft ) );
+			aSet.Put( SdrMetricItem(SDRATTR_TEXT_RIGHTDIST, nTextRight ) );
+			aSet.Put( SdrMetricItem(SDRATTR_TEXT_UPPERDIST, nTextTop ) );
+			aSet.Put( SdrMetricItem(SDRATTR_TEXT_LOWERDIST, nTextBottom ) );
 			pImpRec->nDxTextLeft	= nTextLeft;
 			pImpRec->nDyTextTop		= nTextTop;
 			pImpRec->nDxTextRight	= nTextRight;
@@ -577,7 +580,7 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
             if (pObj != NULL)
             {
                 pObj->SetMergedItemSet(aSet);
-                pObj->SetModel(pSdrModel);
+                //pObj->SetModel(pSdrModel);
                 
                 if (bVerticalText && dynamic_cast< SdrTextObj* >( pObj ) )
                     dynamic_cast< SdrTextObj* >( pObj )->SetVerticalWriting(sal_True);
@@ -586,14 +589,15 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
                 {
                     if ( nTextRotationAngle )
                     {
-                        long nMinWH = rTextRect.GetWidth() < rTextRect.GetHeight() ?
-                            rTextRect.GetWidth() : rTextRect.GetHeight();
-                        nMinWH /= 2;
-                        Point aPivot(rTextRect.TopLeft());
-                        aPivot.X() += nMinWH;
-                        aPivot.Y() += nMinWH;
-                        double a = nTextRotationAngle * nPi180;
-                        pObj->NbcRotate(aPivot, nTextRotationAngle, sin(a), cos(a));
+						const double fDist(std::min(rTextRange.getWidth(), rTextRange.getHeight()) * 0.5);
+                        const basegfx::B2DPoint aPivot(rTextRange.getMinimum() + basegfx::B2DPoint(fDist, fDist));
+						basegfx::B2DHomMatrix aTransform;
+
+						aTransform.translate(-aPivot);
+						aTransform.rotate((-nTextRotationAngle * F_PI) / 18000.0);
+						aTransform.translate(aPivot);
+
+						sdr::legacy::transformSdrObject(*pObj, aTransform);
                     }
                 }
 
@@ -626,9 +630,14 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
                 else if ( mnFix16Angle )
                 {
                     // rotate text with shape ?
-                    double a = mnFix16Angle * nPi180;
-                    pObj->NbcRotate( rObjData.aBoundRect.Center(), mnFix16Angle,
-                                     sin( a ), cos( a ) );
+					const basegfx::B2DPoint aCenter(rObjData.aBoundRect.getCenter());
+					basegfx::B2DHomMatrix aTransform;
+
+					aTransform.translate(-aCenter);
+					aTransform.rotate((-mnFix16Angle * F_PI) / 18000.0);
+					aTransform.translate(aCenter);
+
+					sdr::legacy::transformSdrObject(*pObj, aTransform);
                 }
             }
         }
@@ -637,9 +646,14 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
 			// simple rectangular objects are ignored by ImportObj()  :-(
 			// this is OK for Draw but not for Calc and Writer
 			// cause here these objects have a default border
-			pObj = new SdrRectObj(rTextRect);
-			pObj->SetModel( pSdrModel );
-            SfxItemSet aSet( pSdrModel->GetItemPool() );
+			pObj = new SdrRectObj(
+				*pSdrModel,
+				basegfx::tools::createScaleTranslateB2DHomMatrix(
+					rTextRange.getRange(),
+					rTextRange.getMinimum()));
+
+			//pObj->SetModel( pSdrModel );
+            SfxItemSet aSet( pObj->GetObjectItemPool() );
             ApplyAttributes( rSt, aSet, rObjData );
 
 			const SfxPoolItem* pPoolItem=NULL;
@@ -1693,9 +1707,9 @@ void SwWW8ImplReader::Read_HdFtTextAsHackedFrame(long nStart, long nLen,
     SdrObject* pFrmObj = CreateContactObject( pFrame );
     ASSERT( pFrmObj,
             "<SwWW8ImplReader::Read_HdFtTextAsHackedFrame(..)> - missing SdrObject instance" );
-    if ( pFrmObj )
+    if ( pFrmObj && pFrmObj->getParentOfSdrObject() )
     {
-        pFrmObj->SetOrdNum( 0L );
+		pFrmObj->getParentOfSdrObject()->SetNavigationPosition(pFrmObj->GetNavigationPosition(), 0);
     }
     // <--
     MoveInsideFly(pFrame);
@@ -3360,8 +3374,7 @@ void wwSectionManager::SetSegmentToPageDesc(const wwSection &rSection,
 
     if (mrReader.pWDop->fUseBackGroundInAllmodes && mrReader.pMSDffManager)
     {
-        Rectangle aRect(0, 0, 100, 100); //A dummy, we don't care about the size
-        SvxMSDffImportData aData(aRect);
+        SvxMSDffImportData aData(basegfx::B2DRange(0.0, 0.0, 100.0, 100.0)); //A dummy, we don't care about the size
         SdrObject* pObject = 0;
         if (mrReader.pMSDffManager->GetShape(0x401, pObject, aData))
         {
@@ -3371,8 +3384,9 @@ void wwSectionManager::SetSegmentToPageDesc(const wwSection &rSection,
             if ((pRec->nFlags & 0x400) != 0)
             {
                 SfxItemSet aSet(rFmt.GetAttrSet());
+				Rectangle aRectangle(0, 0, 100, 100);
                 mrReader.MatchSdrItemsIntoFlySet(pObject, aSet, mso_lineSimple,
-                                                 mso_sptRectangle, aRect);
+					mso_sptRectangle, aRectangle);
                 rFmt.SetFmtAttr(aSet.Get(RES_BACKGROUND));
             }
         }
@@ -4346,7 +4360,7 @@ namespace
     uno::Sequence< beans::NamedValue > InitXorWord95Codec( ::msfilter::MSCodec_XorWord95& rCodec, SfxMedium& rMedium, WW8Fib* pWwFib )
     {
         uno::Sequence< beans::NamedValue > aEncryptionData;
-        SFX_ITEMSET_ARG( rMedium.GetItemSet(), pEncryptionData, SfxUnoAnyItem, SID_ENCRYPTIONDATA, sal_False );
+        SFX_ITEMSET_ARG( rMedium.GetItemSet(), pEncryptionData, SfxUnoAnyItem, SID_ENCRYPTIONDATA );
         if ( pEncryptionData && ( pEncryptionData->GetValue() >>= aEncryptionData ) && !rCodec.InitCodec( aEncryptionData ) )
             aEncryptionData.realloc( 0 );
 
@@ -4404,7 +4418,7 @@ namespace
     uno::Sequence< beans::NamedValue > InitStd97Codec( ::msfilter::MSCodec_Std97& rCodec, sal_uInt8 pDocId[16], SfxMedium& rMedium )
     {
         uno::Sequence< beans::NamedValue > aEncryptionData;
-        SFX_ITEMSET_ARG( rMedium.GetItemSet(), pEncryptionData, SfxUnoAnyItem, SID_ENCRYPTIONDATA, sal_False );
+        SFX_ITEMSET_ARG( rMedium.GetItemSet(), pEncryptionData, SfxUnoAnyItem, SID_ENCRYPTIONDATA );
         if ( pEncryptionData && ( pEncryptionData->GetValue() >>= aEncryptionData ) && !rCodec.InitCodec( aEncryptionData ) )
             aEncryptionData.realloc( 0 );
 

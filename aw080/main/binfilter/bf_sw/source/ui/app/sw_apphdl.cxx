@@ -120,7 +120,7 @@ namespace binfilter {
 /*M*/ 	if( rHint.ISA( SfxEventHint ) )
 /*M*/ 	{
 /*M*/ 		SfxEventHint& rEvHint = (SfxEventHint&) rHint;
-/*M*/ 		SwDocShell* pDocSh = PTR_CAST( SwDocShell, rEvHint.GetObjShell() );
+/*M*/ 		SwDocShell* pDocSh = dynamic_cast< SwDocShell* >( rEvHint.GetObjShell() );
 /*M*/ 		if( pDocSh )
 /*M*/ 		{
 /*M*/ 			SwWrtShell* pWrtSh = pDocSh ? pDocSh->GetWrtShell() : 0;

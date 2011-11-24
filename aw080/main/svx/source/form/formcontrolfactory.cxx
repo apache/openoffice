@@ -54,6 +54,7 @@
 #include <unotools/syslocale.hxx>
 #include <tools/gen.hxx>
 #include <tools/diagnose_ex.h>
+#include <svx/svdlegacy.hxx>
 
 #include <set>
 
@@ -135,7 +136,7 @@ namespace svxform
         return initializeControlModel(
             _eDocType,
             Reference< XPropertySet >( _rObject.GetUnoControlModel(), UNO_QUERY ),
-            _rObject.GetCurrentBoundRect()
+            sdr::legacy::GetBoundRect(_rObject)
         );
     }
 

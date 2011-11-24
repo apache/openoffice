@@ -346,7 +346,7 @@ void SdUnoPseudoStyleFamily::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 {
 	sal_Bool bGoneDead = sal_False;
 
-	const SdrHint* pSdrHint = PTR_CAST( SdrHint, &rHint );
+	const SdrHint* pSdrHint = dynamic_cast< const SdrHint* >( &rHint );
 
 	if( pSdrHint )
 	{

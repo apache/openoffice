@@ -44,6 +44,7 @@ SRC1FILES=\
 	errtxt.src
 
 SLOFILES=\
+	$(SLO)$/svt_BfSvPersist.obj			\
 	$(SLO)$/svt_asynclink.obj			\
 	$(SLO)$/svt_ctrltool.obj			\
     $(SLO)$/svt_imageresourceaccess.obj \

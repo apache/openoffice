@@ -97,8 +97,6 @@ using namespace	::com::sun::star::ui::dialogs;
 
 DBG_NAME( DialogWindow )
 
-TYPEINIT1( DialogWindow, IDEBaseWindow );
-
 DialogWindow::DialogWindow( Window* pParent, const ScriptDocument& rDocument, String aLibName, String aName,
 	const com::sun::star::uno::Reference< com::sun::star::container::XNameContainer >& xDialogModel )
 		:IDEBaseWindow( pParent, rDocument, aLibName, aName )
@@ -242,18 +240,33 @@ void DialogWindow::Command( const CommandEvent& rCEvt )
         if ( pDispatcher )
         {
 	        SdrView* pView = GetView();
-        	if( !rCEvt.IsMouseEvent() && pView->AreObjectsMarked() )
+        	if( !rCEvt.IsMouseEvent() && pView->areSdrObjectsSelected() )
             {
-            	Rectangle aMarkedRect( pView->GetMarkedRect() );
-                Point MarkedCenter( aMarkedRect.Center() );
-                Point PosPixel( LogicToPixel( MarkedCenter ) );
-    			pDispatcher->ExecutePopup( IDEResId(RID_POPUP_DLGED), this, &PosPixel );
+				basegfx::B2DRange aMarkedRange(pView->getMarkedObjectSnapRange());
+
+				if(pView->IsGluePointEditMode() && pView->areGluesSelected()) 
+                {
+					aMarkedRange = pView->getMarkedGluePointRange();
+				}
+
+				if(pView->HasMarkedPoints()) 
+				{
+					aMarkedRange = pView->getMarkedPointRange();
+				}
+
+				const basegfx::B2DPoint aMarkedCenter(aMarkedRange.getCenter());
+				const basegfx::B2DPoint aDiscreteMarkedCenter(GetViewTransformation() * aMarkedCenter);
+				const Point aOldPoint(basegfx::fround(aDiscreteMarkedCenter.getX()), basegfx::fround(aDiscreteMarkedCenter.getY()));
+				
+				pDispatcher->ExecutePopup( 
+					IDEResId(RID_POPUP_DLGED), 
+					this, 
+					&aOldPoint);
             }
             else
             {
 			    pDispatcher->ExecutePopup( IDEResId(RID_POPUP_DLGED) );
             }
-            
         }
     }
     else	
@@ -316,7 +329,7 @@ void __EXPORT DialogWindow::GetState( SfxItemSet& rSet )
 			case SID_COPY:
             {
 				// any object selected?
-                if ( !pEditor->GetView()->AreObjectsMarked() )
+                if ( !pEditor->GetView()->areSdrObjectsSelected() )
                     rSet.DisableItem( nWh );
             }
             break;
@@ -325,7 +338,7 @@ void __EXPORT DialogWindow::GetState( SfxItemSet& rSet )
 			case SID_BACKSPACE:
             {
 				// any object selected?
-                if ( !pEditor->GetView()->AreObjectsMarked() )
+                if ( !pEditor->GetView()->areSdrObjectsSelected() )
                     rSet.DisableItem( nWh );
 
                 if ( IsReadOnly() )
@@ -411,7 +424,7 @@ void __EXPORT DialogWindow::GetState( SfxItemSet& rSet )
 			{
                 BasicIDEShell* pIDEShell = IDE_DLL()->GetShell();
                 SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;        
-                if ( pViewFrame && !pViewFrame->HasChildWindow( SID_SHOW_PROPERTYBROWSER ) && !pEditor->GetView()->AreObjectsMarked() )
+                if ( pViewFrame && !pViewFrame->HasChildWindow( SID_SHOW_PROPERTYBROWSER ) && !pEditor->GetView()->areSdrObjectsSelected() )
                     rSet.DisableItem( nWh );
 
                 if ( IsReadOnly() )

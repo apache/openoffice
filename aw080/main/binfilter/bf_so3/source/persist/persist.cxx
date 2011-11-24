@@ -44,7 +44,8 @@ namespace binfilter {
 
 /************** class SvInfoObject ***************************************/
 /*************************************************************************/
-SV_IMPL_PERSIST1(SvInfoObject,SvPersistBase)
+TYPEINIT1(SvInfoObject,BfSvPersistBase)
+SV_IMPL_PERSIST1(SvInfoObject,BfSvPersistBase)
 
 class SvInfoObject_Impl
 {
@@ -108,7 +109,7 @@ SvInfoObjectRef SvInfoObject::CreateCopy() const
 	(*pFunc)(&pB);
 //    CreateInstance( &pB );
 
-	pI = PTR_CAST(SvInfoObject,pB);
+	pI = dynamic_cast< SvInfoObject* >( pB);
 	DBG_ASSERT( pI, "cannot cast" );
 	SvInfoObjectRef xI( pI );
 	xI->Assign( this );
@@ -657,7 +658,7 @@ SvPersistRef SvPersist::CopyObject( const String& rObjName, const String& rNewNa
 
     	if ( pOld->GetPersist() )
     	{
-        	SvEmbeddedInfoObject* pI = PTR_CAST( SvEmbeddedInfoObject, pOld );
+        	SvEmbeddedInfoObject* pI = dynamic_cast< SvEmbeddedInfoObject* >( pOld );
         	SvEmbeddedObjectRef xEmbObj( pOld->GetPersist() );
         	if ( pI && xEmbObj.Is() )
             	pI->SetInfoVisArea( xEmbObj->GetVisArea() );
@@ -855,7 +856,7 @@ BOOL SvPersist::Unload( SvInfoObject *pInfoObj)
 		}
 
 		// update info object before unload
-		SvEmbeddedInfoObject * pI = PTR_CAST(SvEmbeddedInfoObject, pInfoObj );
+		SvEmbeddedInfoObject * pI = dynamic_cast< SvEmbeddedInfoObject* >( pInfoObj );
 		if( pI )
 		{
 			pI->GetVisArea();
@@ -1036,7 +1037,7 @@ SvPersistRef SvPersist::CreateObjectFromStorage( SvInfoObject* pEle, const SvSto
         pEle->SetObj( xPer );
     }
 
-    SvEmbeddedInfoObject* pI = PTR_CAST( SvEmbeddedInfoObject, pEle );
+    SvEmbeddedInfoObject* pI = dynamic_cast< SvEmbeddedInfoObject* >( pEle );
     SvEmbeddedObjectRef xEmbObj( xPer );
     if ( pI && xEmbObj.Is() )
     {

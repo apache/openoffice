@@ -1003,7 +1003,7 @@ Rectangle SvOutPlaceObject::GetVisArea( USHORT nAspect ) const
 		if( pPar )
 		{
 			SvInfoObject * p = pPar->Find( this );
-			SvEmbeddedInfoObject * pEle = PTR_CAST( SvEmbeddedInfoObject, p );
+			SvEmbeddedInfoObject * pEle = dynamic_cast< SvEmbeddedInfoObject* >( p );
 			if( pEle )
 			{
 				BOOL bIsEnableSetModified = IsEnableSetModified();
@@ -1062,7 +1062,7 @@ UINT32 SvOutPlaceObject::GetViewAspect() const
     if( pPar )
     {
         SvInfoObject * p = pPar->Find( this );
-        SvEmbeddedInfoObject * pEle = PTR_CAST( SvEmbeddedInfoObject, p );
+        SvEmbeddedInfoObject * pEle = dynamic_cast< SvEmbeddedInfoObject* >( p );
         if( pEle )
         {
             pImpl->dwAspect = pEle->GetInfoViewAspect();

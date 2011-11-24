@@ -40,6 +40,7 @@
 #include <svl/zformat.hxx>
 #include "cell.hxx"
 #include "drwlayer.hxx"
+#include <svx/svdlegacy.hxx>
 
 #include "xcl97rec.hxx"
 #include "xcl97esc.hxx"
@@ -93,8 +94,8 @@ XclExpObjList::XclExpObjList( const XclExpRoot& rRoot, XclEscherEx& rEscherEx ) 
     pMsodrawingPerSheet = new XclExpMsoDrawing( rEscherEx );
     // open the DGCONTAINER and the patriarch group shape
     mrEscherEx.OpenContainer( ESCHER_DgContainer );
-    Rectangle aRect( 0, 0, 0, 0 );
-    mrEscherEx.EnterGroup( &aRect );
+    basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0));
+    mrEscherEx.EnterGroup( &aRange );
     mrEscherEx.UpdateDffFragmentEnd();
 }
 
@@ -173,7 +174,7 @@ XclObj::~XclObj()
 	delete pTxo;
 }
 
-void XclObj::ImplWriteAnchor( const XclExpRoot& /*rRoot*/, const SdrObject* pSdrObj, const Rectangle* pChildAnchor )
+void XclObj::ImplWriteAnchor( const XclExpRoot& /*rRoot*/, const SdrObject* pSdrObj, const basegfx::B2DRange* pChildAnchor )
 {
     if( pChildAnchor )
     {
@@ -284,15 +285,15 @@ void XclObj::SaveTextRecs( XclExpStream& rStrm )
 
 // --- class XclObjComment -------------------------------------------
 
-XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const Rectangle& rRect, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible ) :
+XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const basegfx::B2DRange& rRange, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible ) :
     XclObj( rObjMgr, EXC_OBJTYPE_NOTE, true )
 {
-    ProcessEscherObj( rObjMgr.GetRoot(), rRect, pCaption, bVisible);
+    ProcessEscherObj( rObjMgr.GetRoot(), rRange, pCaption, bVisible);
 	// TXO
     pTxo = new XclTxo( rObjMgr.GetRoot(), rEditObj, pCaption );
 }
 
-void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const Rectangle& rRect, SdrObject* pCaption, const bool bVisible )
+void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2DRange& rRange, SdrObject* pCaption, const bool bVisible )
 {
     Reference<XShape> aXShape;
     EscherPropertyContainer aPropOpt;
@@ -347,7 +348,7 @@ void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const Rectangle& 
     aPropOpt.AddOpt( ESCHER_Prop_fPrint, nFlags );                  // bool field
     aPropOpt.Commit( mrEscherEx.GetStream() );
 
-    XclExpDffNoteAnchor( rRoot, rRect ).WriteDffData( mrEscherEx );
+    XclExpDffNoteAnchor( rRoot, rRange ).WriteDffData( mrEscherEx );
 
     mrEscherEx.AddAtom( 0, ESCHER_ClientData );                        // OBJ record
     mrEscherEx.UpdateDffFragmentEnd();
@@ -483,7 +484,7 @@ XclTxo::XclTxo( const XclExpRoot& rRoot, const SdrTextObj& rTextObj ) :
     SetVerAlign( lcl_GetVerAlignFromItemSet( rItemSet ) );
 
     // rotation
-    long nAngle = rTextObj.GetRotateAngle();
+    const long nAngle(sdr::legacy::GetRotateAngle(rTextObj));
     if( (4500 < nAngle) && (nAngle < 13500) )
         mnRotation = EXC_OBJ_ORIENT_90CCW;
     else if( (22500 < nAngle) && (nAngle < 31500) )

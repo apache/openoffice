@@ -397,7 +397,7 @@ static USHORT nIdleCount = 0;
 /*N*/ 	}
 /*N*/
 /*N*/ 	BOOL bMore = FALSE;
-/*N*/ 	ScDocShell* pDocSh = PTR_CAST( ScDocShell, SfxObjectShell::Current() );
+/*N*/ 	ScDocShell* pDocSh = dynamic_cast< ScDocShell* >( SfxObjectShell::Current() );
 /*N*/ 	if ( pDocSh )
 /*N*/ 	{
 /*?*/ 		ScDocument* pDoc = pDocSh->GetDocument();

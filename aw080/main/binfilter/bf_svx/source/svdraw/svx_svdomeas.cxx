@@ -90,6 +90,7 @@ namespace binfilter {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*N*/ TYPEINIT1(SdrMeasureField,SvxFieldData);
 /*N*/ SV_IMPL_PERSIST1(SdrMeasureField,SvxFieldData);
 /*N*/ 
 /*N*/ __EXPORT SdrMeasureField::~SdrMeasureField()
@@ -584,7 +585,7 @@ namespace binfilter {
 /*N*/ 	Color*& rpTxtColor, Color*& rpFldColor, XubString& rRet) const
 /*N*/ {
 /*N*/ 	const SvxFieldData* pField=rField.GetField();
-/*N*/ 	SdrMeasureField* pMeasureField=PTR_CAST(SdrMeasureField,pField);
+/*N*/ 	const SdrMeasureField* pMeasureField=dynamic_cast< const SdrMeasureField* >( pField);
 /*N*/ 	if (pMeasureField!=NULL) {
 /*N*/ 		pMeasureField->TakeRepresentation(*this,rRet);
 /*N*/ 		if (rpFldColor!=NULL) {
@@ -888,7 +889,7 @@ namespace binfilter {
 /*N*/ void __EXPORT SdrMeasureObj::SFX_NOTIFY(SfxBroadcaster& rBC, const TypeId& rBCType, const SfxHint& rHint, const TypeId& rHintType)
 /*N*/ {
 /*N*/ 	if (HAS_BASE(SfxStyleSheet,&rBC)) {
-/*?*/ 		SfxSimpleHint* pSimple=PTR_CAST(SfxSimpleHint,&rHint);
+/*?*/ 		const SfxSimpleHint* pSimple=dynamic_cast< const SfxSimpleHint* >( &rHint);
 /*?*/ 		ULONG nId=pSimple==NULL ? 0 : pSimple->GetId();
 /*?*/ 
 /*?*/ 		if(nId == SFX_HINT_DATACHANGED)

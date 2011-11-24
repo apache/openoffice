@@ -137,7 +137,7 @@ using namespace ::com::sun::star;
 
 /*N*/ void __EXPORT ScChartListener::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 /*N*/ {
-/*N*/ 	const ScHint* p = PTR_CAST( ScHint, &rHint );
+/*N*/ 	const ScHint* p = dynamic_cast< const ScHint* >( &rHint );
 /*N*/ 	if( p && (p->GetId() & (SC_HINT_DATACHANGED | SC_HINT_DYING)) )
 /*N*/ 	{
 /*N*/ 		bDirty = TRUE;

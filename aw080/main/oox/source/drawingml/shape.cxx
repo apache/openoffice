@@ -291,7 +291,7 @@ Reference< XShape > Shape::createAndInsert(
         aCenter *= aTransformation;
 
         // center object at origin
-        aTransformation.translate( -aCenter.getX(), -aCenter.getY() );
+        aTransformation.translate( -aCenter );
 
         if( !bIsCustomShape && ( mbFlipH || mbFlipV ) )
         {
@@ -306,7 +306,7 @@ Reference< XShape > Shape::createAndInsert(
         }
 
         // move object back from center
-        aTransformation.translate( aCenter.getX(), aCenter.getY() );
+        aTransformation.translate( aCenter );
     }
 
     if( aPosition.X != 0 || aPosition.Y != 0)

@@ -333,7 +333,7 @@ BOOL SdDrawDocShell::Load( SvStorage* pStore )
 		{
 			SdPage* pPage = pDoc->GetSdPage( 0, PK_STANDARD );
 			if( pPage )
-				SetVisArea( Rectangle( pPage->GetAllObjBoundRect() ) );
+				SetVisArea(pPage->GetAllObjBoundRect());
 		}
 
 		FinishedLoading( SFX_LOADED_ALL );
