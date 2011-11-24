@@ -32,8 +32,8 @@ $(eval $(call gb_CppunitTest_add_exception_objects,sfx2_metadatable, \
 ))
 
 $(eval $(call gb_CppunitTest_add_linked_libs,sfx2_metadatable, \
-	sal \
-	sfx \
+    sal \
+    sfx \
     stl \
     $(gb_STDLIBS) \
 ))
@@ -42,6 +42,11 @@ $(eval $(call gb_CppunitTest_set_include,sfx2_metadatable,\
 	$$(INCLUDE) \
 	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc \
+))
+
+$(eval $(call gb_CppunitTest_set_ldflags,sfx2_metadatable,\
+    $$(LDFLAGS) \
+    -lcppunit \
 ))
 
 # vim: set noet sw=4 ts=4:
