@@ -49,6 +49,27 @@ EXTENSION_ZIPNAME:=dict-it
 
 # just copy:
 COMPONENT_FILES= \
+    $(EXTENSIONDIR)$/legacy/it_IT_AUTHORS \
+    $(EXTENSIONDIR)$/legacy/it_IT_ChangeLog \
+    $(EXTENSIONDIR)$/legacy/it_IT_COPYING \
+    $(EXTENSIONDIR)$/legacy/it_IT_license.txt \
+    $(EXTENSIONDIR)$/legacy/it_IT_notes.txt \
+    $(EXTENSIONDIR)$/legacy/it_IT_README.1st \
+    $(EXTENSIONDIR)$/legacy/it_IT_README.txt \
+    $(EXTENSIONDIR)$/legacy/it_IT_statistiche.ods \
+    $(EXTENSIONDIR)$/legacy/it_IT_todo.txt \
+    $(EXTENSIONDIR)$/legacy/thes_gpl.txt \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_AUTHORS \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_ChangeLog \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_COPYING \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_copyright_licenza.txt \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_INSTALL \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_lettera_in_inglese.txt \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_Lingua.png \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_Linguistica-Modifica.png \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_README \
+    $(EXTENSIONDIR)$/legacy/th_it_IT_sinonimi.jpg \
+    $(EXTENSIONDIR)$/CHANGELOG.txt \
     $(EXTENSIONDIR)$/desc_en.txt \
     $(EXTENSIONDIR)$/desc_it.txt \
     $(EXTENSIONDIR)$/hyph_it_IT.dic \
@@ -65,7 +86,7 @@ COMPONENT_XCU= \
     $(EXTENSIONDIR)$/dictionaries.xcu
 
 # disable fetching default OOo license text
-CUSTOM_LICENSE=README_it_IT.txt
+CUSTOM_LICENSE=README.txt
 # override default license destination
 PACKLICS= $(EXTENSIONDIR)$/$(CUSTOM_LICENSE)
 
