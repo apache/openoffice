@@ -27,6 +27,8 @@
 
 $(eval $(call gb_Library_Library,drawinglayer))
 
+$(eval $(call gb_Library_set_componentfile,drawinglayer,drawinglayer/drawinglayer))
+
 $(eval $(call gb_Library_add_package_headers,drawinglayer,drawinglayer_inc))
 
 $(eval $(call gb_Library_add_precompiled_header,drawinglayer,$(SRCDIR)/drawinglayer/inc/pch/precompiled_drawinglayer))
@@ -117,11 +119,12 @@ $(eval $(call gb_Library_add_exception_objects,drawinglayer,\
 	drawinglayer/source/primitive2d/polypolygonprimitive2d \
 	drawinglayer/source/primitive2d/polygonprimitive2d \
 	drawinglayer/source/primitive2d/primitivetools2d \
-	drawinglayer/source/primitive2d/rendergraphicprimitive2d \
 	drawinglayer/source/primitive2d/sceneprimitive2d \
 	drawinglayer/source/primitive2d/sdrdecompositiontools2d \
 	drawinglayer/source/primitive2d/shadowprimitive2d \
 	drawinglayer/source/primitive2d/structuretagprimitive2d \
+	drawinglayer/source/primitive2d/svggradientprimitive2d \
+	drawinglayer/source/primitive2d/textbreakuphelper \
 	drawinglayer/source/primitive2d/texteffectprimitive2d \
 	drawinglayer/source/primitive2d/textenumsprimitive2d \
 	drawinglayer/source/primitive2d/textlayoutdevice \
@@ -176,6 +179,9 @@ $(eval $(call gb_Library_add_exception_objects,drawinglayer,\
 	drawinglayer/source/processor3d/zbufferprocessor3d \
 	drawinglayer/source/texture/texture \
 	drawinglayer/source/texture/texture3d \
+	drawinglayer/source/tools/converters \
+	drawinglayer/source/drawinglayeruno/drawinglayeruno \
+	drawinglayer/source/drawinglayeruno/xprimitive2drenderer \
 ))
 
 # vim: set noet sw=4 ts=4:

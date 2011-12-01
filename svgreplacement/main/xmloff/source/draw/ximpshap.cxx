@@ -3328,7 +3328,10 @@ SdXMLFrameShapeContext::SdXMLFrameShapeContext( SvXMLImport& rImport, sal_uInt16
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape)
 : SdXMLShapeContext( rImport, nPrfx, rLocalName, xAttrList, rShapes, bTemporaryShape ),
-	mbSupportsReplacement( sal_False )
+    multiImageImportHelper(),
+	mbSupportsReplacement( sal_False ),
+    mxImplContext(),
+    mxReplImplContext()
 {
 	uno::Reference < util::XCloneable > xClone( xAttrList, uno::UNO_QUERY );
 	if( xClone.is() )
@@ -3342,6 +3345,67 @@ SdXMLFrameShapeContext::~SdXMLFrameShapeContext()
 {
 }
 
+void SdXMLFrameShapeContext::removeGraphicFromImportContext(const SvXMLImportContext& rContext) const
+{
+    const SdXMLGraphicObjectShapeContext* pSdXMLGraphicObjectShapeContext = dynamic_cast< const SdXMLGraphicObjectShapeContext* >(&rContext);
+
+    if(pSdXMLGraphicObjectShapeContext)
+    {
+        try
+        {
+            uno::Reference< container::XChild > xChild(pSdXMLGraphicObjectShapeContext->getShape(), uno::UNO_QUERY_THROW);
+
+            if(xChild.is())
+            {
+                uno::Reference< drawing::XShapes > xParent(xChild->getParent(), uno::UNO_QUERY_THROW);
+            
+                if(xParent.is())
+                {
+                    // remove from parent
+                    xParent->remove(pSdXMLGraphicObjectShapeContext->getShape());
+
+                    // dispose
+                    uno::Reference< lang::XComponent > xComp(pSdXMLGraphicObjectShapeContext->getShape(), UNO_QUERY);
+
+                    if(xComp.is())
+                    {
+                        xComp->dispose();
+                    }
+                }
+            }
+        }
+        catch( uno::Exception& )
+        {
+            DBG_ERROR( "Error in cleanup of multiple graphic object import (!)" );
+        }
+    }
+}
+
+rtl::OUString SdXMLFrameShapeContext::getGraphicURLFromImportContext(const SvXMLImportContext& rContext) const
+{
+    rtl::OUString aRetval;
+    const SdXMLGraphicObjectShapeContext* pSdXMLGraphicObjectShapeContext = dynamic_cast< const SdXMLGraphicObjectShapeContext* >(&rContext);
+
+    if(pSdXMLGraphicObjectShapeContext)
+    {
+        try
+        {
+            const uno::Reference< beans::XPropertySet > xPropSet(pSdXMLGraphicObjectShapeContext->getShape(), uno::UNO_QUERY_THROW);
+
+            if(xPropSet.is())
+            {
+                xPropSet->getPropertyValue(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("GraphicStreamURL"))) >>= aRetval;
+            }
+        }
+        catch( uno::Exception& )
+        {
+            DBG_ERROR( "Error in cleanup of multiple graphic object import (!)" );
+        }
+    }
+
+    return aRetval;
+}
+
 SvXMLImportContext *SdXMLFrameShapeContext::CreateChildContext( sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const uno::Reference< xml::sax::XAttributeList>& xAttrList )
@@ -3350,13 +3414,30 @@ SvXMLImportContext *SdXMLFrameShapeContext::CreateChildContext( sal_uInt16 nPref
 
 	if( !mxImplContext.Is() )
 	{
-		pContext = GetImport().GetShapeImport()->CreateFrameChildContext(
-						GetImport(), nPrefix, rLocalName, xAttrList, mxShapes, mxAttrList );
+        pContext = GetImport().GetShapeImport()->CreateFrameChildContext(
+            GetImport(), nPrefix, rLocalName, xAttrList, mxShapes, mxAttrList);
 
-		mxImplContext = pContext;
-		mbSupportsReplacement = IsXMLToken( rLocalName, XML_OBJECT ) ||
-								IsXMLToken( rLocalName, XML_OBJECT_OLE );
-	}
+        mxImplContext = pContext;
+        mbSupportsReplacement = IsXMLToken(rLocalName, XML_OBJECT ) || IsXMLToken(rLocalName, XML_OBJECT_OLE);
+        setSupportsMultipleContents(IsXMLToken(rLocalName, XML_IMAGE));
+
+        if(getSupportsMultipleContents() && dynamic_cast< SdXMLGraphicObjectShapeContext* >(pContext))
+        {
+            addContent(*mxImplContext);
+        }
+    }
+    else if(getSupportsMultipleContents() && XML_NAMESPACE_DRAW == nPrefix && IsXMLToken(rLocalName, XML_IMAGE))
+    {
+        // read another image
+        pContext = GetImport().GetShapeImport()->CreateFrameChildContext(
+            GetImport(), nPrefix, rLocalName, xAttrList, mxShapes, mxAttrList);
+        mxImplContext = pContext;
+
+        if(dynamic_cast< SdXMLGraphicObjectShapeContext* >(pContext))
+        {
+            addContent(*mxImplContext);
+        }
+    }
 	else if( mbSupportsReplacement && !mxReplImplContext &&
 			 XML_NAMESPACE_DRAW == nPrefix &&
 			 IsXMLToken( rLocalName, XML_IMAGE ) )
@@ -3415,6 +3496,9 @@ void SdXMLFrameShapeContext::StartElement(const uno::Reference< xml::sax::XAttri
 
 void SdXMLFrameShapeContext::EndElement()
 {
+    /// solve if multiple image child contexts were imported
+    solveMultipleImages();
+
 	if( !mxImplContext.Is() )
 	{
 		// now check if this is an empty presentation object

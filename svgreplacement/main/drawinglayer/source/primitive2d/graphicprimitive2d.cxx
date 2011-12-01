@@ -27,7 +27,6 @@
 #include <drawinglayer/primitive2d/graphicprimitive2d.hxx>
 #include <drawinglayer/animation/animationtiming.hxx>
 #include <drawinglayer/primitive2d/bitmapprimitive2d.hxx>
-#include <drawinglayer/primitive2d/rendergraphicprimitive2d.hxx>
 #include <drawinglayer/primitive2d/animatedprimitive2d.hxx>
 #include <drawinglayer/primitive2d/metafileprimitive2d.hxx>
 #include <drawinglayer/primitive2d/transformprimitive2d.hxx>
@@ -258,9 +257,9 @@ namespace drawinglayer
 		        aSuppressGraphicAttr.SetCrop(0, 0, 0, 0);
 		        aSuppressGraphicAttr.SetRotation(0);
 		        aSuppressGraphicAttr.SetMirrorFlags(0);
-		        
-                const GraphicObject&    rGraphicObject = getGraphicObject();
-                const Graphic           aTransformedGraphic(rGraphicObject.GetTransformedGraphic(&aSuppressGraphicAttr));
+
+                const GraphicObject& rGraphicObject = getGraphicObject();
+                const Graphic aTransformedGraphic(rGraphicObject.GetTransformedGraphic(&aSuppressGraphicAttr));
 
                 switch(aTransformedGraphic.GetType())
 				{
@@ -742,44 +741,34 @@ namespace drawinglayer
                         else
                         {
 #endif // USE_DEBUG_CODE_TO_TEST_METAFILE_DECOMPOSE
-	                        // create MetafilePrimitive2D
+                            // create MetafilePrimitive2D
                             const GDIMetaFile& rMetafile = aTransformedGraphic.GetGDIMetaFile();
+      
+                            xPrimitive = Primitive2DReference(
+                                new MetafilePrimitive2D(
+                                    aTransform,
+                                    rMetafile));
 
-                            if( aTransformedGraphic.IsRenderGraphic() )
+                            // #i100357# find out if clipping is needed for this primitive. Unfortunately,
+                            // there exist Metafiles who's content is bigger than the proposed PrefSize set
+                            // at them. This is an error, but we need to work around this
+                            const Size aMetaFilePrefSize(rMetafile.GetPrefSize());
+                            const Size aMetaFileRealSize(
+                                const_cast< GDIMetaFile& >(rMetafile).GetBoundRect(
+                                    *Application::GetDefaultDevice()).GetSize());
+
+                            if(aMetaFileRealSize.getWidth() > aMetaFilePrefSize.getWidth()
+                                || aMetaFileRealSize.getHeight() > aMetaFilePrefSize.getHeight())
                             {
+                                // clipping needed. Embed to MaskPrimitive2D. Create childs and mask polygon
+                                const primitive2d::Primitive2DSequence aChildContent(&xPrimitive, 1);
+                                basegfx::B2DPolygon aMaskPolygon(basegfx::tools::createUnitPolygon());
+                                aMaskPolygon.transform(aTransform);
+
                                 xPrimitive = Primitive2DReference(
-                                    new RenderGraphicPrimitive2D(                                        
-                                        static_cast< MetaRenderGraphicAction* >(rMetafile.GetAction(0))->GetRenderGraphic(),
-                                        aTransform));
-                            }
-                            else
-                            {
-                                xPrimitive = Primitive2DReference(
-                                    new MetafilePrimitive2D(
-                                        aTransform,
-                                        rMetafile));
-
-                                // #i100357# find out if clipping is needed for this primitive. Unfortunately,
-                                // there exist Metafiles who's content is bigger than the proposed PrefSize set
-                                // at them. This is an error, but we need to work around this
-                                const Size aMetaFilePrefSize(rMetafile.GetPrefSize());
-                                const Size aMetaFileRealSize(
-                                    const_cast< GDIMetaFile& >(rMetafile).GetBoundRect(
-                                        *Application::GetDefaultDevice()).GetSize());
-
-                                if(aMetaFileRealSize.getWidth() > aMetaFilePrefSize.getWidth()
-                                    || aMetaFileRealSize.getHeight() > aMetaFilePrefSize.getHeight())
-                                {
-                                    // clipping needed. Embed to MaskPrimitive2D. Create childs and mask polygon
-                                    const primitive2d::Primitive2DSequence aChildContent(&xPrimitive, 1);
-                                    basegfx::B2DPolygon aMaskPolygon(basegfx::tools::createUnitPolygon());
-                                    aMaskPolygon.transform(aTransform);
-
-                                    xPrimitive = Primitive2DReference(
-                                        new MaskPrimitive2D(
-                                            basegfx::B2DPolyPolygon(aMaskPolygon),
-                                            aChildContent));
-                                }
+                                    new MaskPrimitive2D(
+                                        basegfx::B2DPolyPolygon(aMaskPolygon),
+                                        aChildContent));
                             }
 #ifdef USE_DEBUG_CODE_TO_TEST_METAFILE_DECOMPOSE
                         }

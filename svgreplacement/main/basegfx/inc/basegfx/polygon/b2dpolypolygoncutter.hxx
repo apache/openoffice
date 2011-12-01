@@ -104,7 +104,7 @@ namespace basegfx
 
 			@return A single PolyPolygon containing the Or-merged result
 		*/
-		B2DPolyPolygon mergeToSinglePolyPolygon(const std::vector< basegfx::B2DPolyPolygon >& rInput);
+		B2DPolyPolygon mergeToSinglePolyPolygon(const B2DPolyPolygonVector& rInput);
 
 	} // end of namespace tools
 } // end of namespace basegfx

@@ -922,15 +922,15 @@ namespace basegfx
             }
         }
 
-		B2DPolyPolygon mergeToSinglePolyPolygon(const std::vector< basegfx::B2DPolyPolygon >& rInput)
+		B2DPolyPolygon mergeToSinglePolyPolygon(const B2DPolyPolygonVector& rInput)
 		{
-			std::vector< basegfx::B2DPolyPolygon > aInput(rInput);
+			B2DPolyPolygonVector aInput(rInput);
 			
 			// first step: prepareForPolygonOperation and simple merge of non-overlapping
 			// PolyPolygons for speedup; this is possible for the wanted OR-operation
 			if(aInput.size())
 			{
-				std::vector< basegfx::B2DPolyPolygon > aResult;
+				B2DPolyPolygonVector aResult;
 				aResult.reserve(aInput.size());
 
 				for(sal_uInt32 a(0); a < aInput.size(); a++)
@@ -972,7 +972,7 @@ namespace basegfx
 			// second step: melt pairwise to a single PolyPolygon
 			while(aInput.size() > 1)
 			{
-				std::vector< basegfx::B2DPolyPolygon > aResult;
+				B2DPolyPolygonVector aResult;
 				aResult.reserve((aInput.size() / 2) + 1);
 
 				for(sal_uInt32 a(0); a < aInput.size(); a += 2)

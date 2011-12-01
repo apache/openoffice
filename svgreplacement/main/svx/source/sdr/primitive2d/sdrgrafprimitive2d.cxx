@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include "precompiled_svx.hxx"
 #include <svx/sdr/primitive2d/sdrgrafprimitive2d.hxx>
 #include <drawinglayer/primitive2d/graphicprimitive2d.hxx>
@@ -30,6 +28,8 @@
 #include <svx/sdr/primitive2d/svx_primitivetypes2d.hxx>
 #include <drawinglayer/primitive2d/sdrdecompositiontools2d.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include <drawinglayer/primitive2d/transformprimitive2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -94,13 +94,45 @@ namespace drawinglayer
 			// add graphic content
 			if(255L != getGraphicAttr().GetTransparency())
 			{
-				const Primitive2DReference xGraphicContentPrimitive(
-                    new GraphicPrimitive2D(
-                        getTransform(), 
-                        getGraphicObject(), 
-                        getGraphicAttr()));
+                const SvgDataPtr& rSvgDataPtr = getGraphicObject().GetGraphic().getSvgData();
 
-                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xGraphicContentPrimitive);
+                if(rSvgDataPtr.get())
+                {
+                    // Svg fill, use already decomposed svg directly
+                    const basegfx::B2DRange& rRange(rSvgDataPtr->getRange());
+
+                    if(basegfx::fTools::more(rRange.getWidth(), 0.0) && basegfx::fTools::more(rRange.getHeight(), 0.0))
+                    {
+                        basegfx::B2DHomMatrix aEmbeddingTransform(
+                            basegfx::tools::createTranslateB2DHomMatrix(
+                                -rRange.getMinX(),
+                                -rRange.getMinY()));
+                                    
+                        aEmbeddingTransform.scale(
+                            1.0 / rRange.getWidth(),
+                            1.0 / rRange.getHeight());
+
+                        aEmbeddingTransform = getTransform() * aEmbeddingTransform;
+                                    
+                        const Primitive2DReference xPrimitive(
+                            new TransformPrimitive2D(
+                                aEmbeddingTransform,
+                                rSvgDataPtr->getPrimitive2DSequence()));
+
+                        appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xPrimitive);
+                    }
+                }
+                else
+                {
+                    // standard graphic fill
+				    const Primitive2DReference xGraphicContentPrimitive(
+                        new GraphicPrimitive2D(
+                            getTransform(), 
+                            getGraphicObject(), 
+                            getGraphicAttr()));
+
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xGraphicContentPrimitive);
+                }
 			}
 
 			// add text
@@ -160,7 +192,8 @@ namespace drawinglayer
 
 		bool SdrGrafPrimitive2D::isTransparent() const
 		{
-			return ((0L != getGraphicAttr().GetTransparency()) || (getGraphicObject().IsTransparent()));
+			return ((0L != getGraphicAttr().GetTransparency()) 
+                || (getGraphicObject().IsTransparent()));
 		}
 
 		// provide unique ID

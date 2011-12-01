@@ -642,7 +642,7 @@ void SdrEditView::CheckPossibilities()
 
 					if( bGraf &&
                         ((SdrGrafObj*)pObj)->HasGDIMetaFile() &&
-                        !( ((SdrGrafObj*)pObj)->IsEPS() || ((SdrGrafObj*)pObj)->IsRenderGraphic() ) )
+                        !((SdrGrafObj*)pObj)->IsEPS())
                     {
 						bImportMtfPossible = sal_True;
                     }
