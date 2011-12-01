@@ -10,18 +10,6 @@ export EXEEXT
 
 mkdir -p "$SOLARENV/$OUTPATH/bin"
 
-if test "$GUI" = "WNT" -a ! -x "$SOLARENV/$OUTPATH/bin/guw$EXEEXT"; then
-  echo ""
-  echo "Calling $GNUMAKE in guw"
-  cd "$SRC_ROOT/guw" || exit
-  $GNUMAKE || exit
-  echo ""
-  echo "guw has been successfully made"
-  cp -f "$SRC_ROOT/guw/guw$EXEEXT" "$SOLARENV/$OUTPATH/bin/guw$EXEEXT" || exit
-  echo ""
-  echo "guw copied to $SOLARENV/$OUTPATH/bin/guw$EXEEXT"
-fi
-
 #make sure build.pl is executable 
 
 chmod +x "$SRC_ROOT/solenv/bin/build.pl"
@@ -115,6 +103,20 @@ if test -n "$DMAKE_URL" -a  ! -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
 
     # Clean up.  Note that this is skipped when one of the exits is executed above.
     rm -rf "$tmp_build_dir"
+
+elif test "$IS_SYSTEM_DMAKE" = "YES"; then
+
+    echo ""
+    echo "dmake is located in search path"
+    echo ""
+
+elif test -n "$DMAKE_PATH" -a -x "$DMAKE_PATH" -a  ! -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
+
+    cp -f "$DMAKE_PATH" "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT" || exit
+
+    echo ""
+    echo "dmake copied to $SOLARENV/$OUTPATH/bin/dmake$EXEEXT"
+    echo ""
 
 else
 
