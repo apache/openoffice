@@ -29,7 +29,7 @@
 #include <vcl/outdev.hxx>
 #include <tools/poly.hxx>
 #include "grfcache.hxx"
-
+#include <rtl/crc.h>
 #include <memory>
 
 // -----------
