@@ -37,6 +37,7 @@
 #include <vcl/virdev.hxx>
 #include <vcl/gdimtf.hxx>
 #include <vcl/graphictools.hxx>
+#include <basegfx/polygon/b2dpolygon.hxx>
 
 // -----------
 // - Defines -
@@ -2712,6 +2713,73 @@ sal_uLong GDIMetaFile::GetChecksum() const
 				nCrc = rtl_crc32( nCrc, pAct->GetLink().GetData(), pAct->GetLink().GetDataSize() );
 			}
 			break;
+
+            case META_CLIPREGION_ACTION :
+            {
+                MetaClipRegionAction* pAct = dynamic_cast< MetaClipRegionAction* >(pAction);
+                const Region& rRegion = pAct->GetRegion();
+
+                if(rRegion.HasPolyPolygon())
+                {
+                    // It has shown that this is a possible bottleneck for checksum calculation.
+                    // In worst case a very expensive RegionHandle representation gets created.
+                    // In this case it's cheaper to use the PolyPolygon
+                    const basegfx::B2DPolyPolygon aPolyPolygon(rRegion.GetB2DPolyPolygon());
+                    const sal_uInt32 nPolyCount(aPolyPolygon.count());
+                    SVBT64 aSVBT64;
+
+                    for(sal_uInt32 a(0); a < nPolyCount; a++)
+                    {
+                        const basegfx::B2DPolygon aPolygon(aPolyPolygon.getB2DPolygon(a));
+                        const sal_uInt32 nPointCount(aPolygon.count());
+                        const bool bControl(aPolygon.areControlPointsUsed());
+                        
+                        for(sal_uInt32 b(0); b < nPointCount; b++)
+                        {
+                            const basegfx::B2DPoint aPoint(aPolygon.getB2DPoint(b));
+
+                            DoubleToSVBT64(aPoint.getX(), aSVBT64);
+                            nCrc = rtl_crc32(nCrc, aSVBT64, 8);
+                            DoubleToSVBT64(aPoint.getY(), aSVBT64);
+                            nCrc = rtl_crc32(nCrc, aSVBT64, 8);
+
+                            if(bControl)
+                            {
+                                if(aPolygon.isPrevControlPointUsed(b))
+                                {
+                                    const basegfx::B2DPoint aCtrl(aPolygon.getPrevControlPoint(b));
+
+                                    DoubleToSVBT64(aCtrl.getX(), aSVBT64);
+                                    nCrc = rtl_crc32(nCrc, aSVBT64, 8);
+                                    DoubleToSVBT64(aCtrl.getY(), aSVBT64);
+                                    nCrc = rtl_crc32(nCrc, aSVBT64, 8);
+                                }
+
+                                if(aPolygon.isNextControlPointUsed(b))
+                                {
+                                    const basegfx::B2DPoint aCtrl(aPolygon.getNextControlPoint(b));
+
+                                    DoubleToSVBT64(aCtrl.getX(), aSVBT64);
+                                    nCrc = rtl_crc32(nCrc, aSVBT64, 8);
+                                    DoubleToSVBT64(aCtrl.getY(), aSVBT64);
+                                    nCrc = rtl_crc32(nCrc, aSVBT64, 8);
+                                }
+                            }
+                        }
+                    }
+
+                    SVBT8 aSVBT8;
+                    ByteToSVBT8((sal_uInt8)pAct->IsClipping(), aSVBT8);
+                    nCrc = rtl_crc32(nCrc, aSVBT8, 1);
+                }
+                else
+                {
+                    pAction->Write( aMemStm, &aWriteData );
+                    nCrc = rtl_crc32( nCrc, aMemStm.GetData(), aMemStm.Tell() );
+                    aMemStm.Seek( 0 );
+                }
+            }
+            break;
 
 			default:
 			{

@@ -1091,11 +1091,67 @@ const GDIMetaFile* SdrGrafObj::GetGDIMetaFile() const
 
 // -----------------------------------------------------------------------------
 
+#include <drawinglayer/processor2d/vclmetafileprocessor2d.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
+
 SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 {
 	SdrObject* pRetval = NULL;
+    GraphicType aGraphicType(GetGraphicType());
+    GDIMetaFile aMtf;
 
-	switch( GetGraphicType() )
+    if(GRAPHIC_BITMAP == aGraphicType)
+    {
+        const Graphic& rGraphic = GetGraphic();
+
+        if(rGraphic.getSvgData().get())
+        {
+            // Embedded Svg
+            // There is currently no helper to create SdrObjects from primitives (even if I'm thinking
+            // about writing one for some time). To get the roundtrip to SdrObjects it is necessary to
+            // use the old converter path over the MetaFile mechanism. Create Metafile from Svg 
+            // primitives here pretty directly
+            VirtualDevice aOut;
+            Size aDummySize(2, 2);
+
+            aOut.SetOutputSizePixel(aDummySize);
+            aOut.EnableOutput(false);
+            aMtf.Clear();
+            aMtf.Record(&aOut);
+
+            // map to (0,0,objectsize)
+            const basegfx::B2DRange& rRange = rGraphic.getSvgData()->getRange();
+            basegfx::B2DHomMatrix aObjectMatrix(basegfx::tools::createTranslateB2DHomMatrix(-rRange.getMinX(), -rRange.getMinY()));
+
+            aObjectMatrix.scale(
+                aRect.getWidth() / (basegfx::fTools::equalZero(rRange.getWidth()) ? 1.0 : rRange.getWidth()),
+                aRect.getHeight() / (basegfx::fTools::equalZero(rRange.getHeight()) ? 1.0 : rRange.getHeight()));
+
+            const drawinglayer::geometry::ViewInformation2D aViewInformation2D(
+                aObjectMatrix,
+                basegfx::B2DHomMatrix(),
+                basegfx::B2DRange(),
+                0,
+                0.0,
+                com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >());
+            drawinglayer::processor2d::VclMetafileProcessor2D aProcessor(aViewInformation2D, aOut);
+
+            aProcessor.process(rGraphic.getSvgData()->getPrimitive2DSequence());
+            
+            aMtf.Stop();
+            aMtf.WindStart();
+            aMtf.SetPrefMapMode(rGraphic.GetPrefMapMode());
+            aMtf.SetPrefSize(rGraphic.GetPrefSize());
+
+            aGraphicType = GRAPHIC_GDIMETAFILE;
+        }
+    }
+    else if(GRAPHIC_GDIMETAFILE == aGraphicType)
+    {
+        aMtf = GetTransformedGraphic(SDRGRAFOBJ_TRANSFORMATTR_COLOR|SDRGRAFOBJ_TRANSFORMATTR_MIRROR).GetGDIMetaFile();
+    }
+
+	switch(aGraphicType)
 	{
 		case GRAPHIC_GDIMETAFILE:
 		{
@@ -1105,14 +1161,12 @@ SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 			aFilter.SetLayer(GetLayer());
 
 			SdrObjGroup* pGrp = new SdrObjGroup();
-			sal_uInt32 nInsAnz = aFilter.DoImport(GetTransformedGraphic(
-                SDRGRAFOBJ_TRANSFORMATTR_COLOR|SDRGRAFOBJ_TRANSFORMATTR_MIRROR).GetGDIMetaFile(), 
-                *pGrp->GetSubList(), 0);
+			sal_uInt32 nInsAnz = aFilter.DoImport(aMtf, *pGrp->GetSubList(), 0);
 
             if(nInsAnz)
 			{
                 {
-                    // copy transformation
+                        // copy transformation
                 	GeoStat aGeoStat(GetGeoStat());
 
 	                if(aGeoStat.nShearWink) 
