@@ -36,6 +36,7 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/borderlineprimitive2d.hxx,drawinglayer/primitive2d/borderlineprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/chartprimitive2d.hxx,drawinglayer/primitive2d/chartprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/controlprimitive2d.hxx,drawinglayer/primitive2d/controlprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/cropprimitive2d.hxx,drawinglayer/primitive2d/cropprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/discretebitmapprimitive2d.hxx,drawinglayer/primitive2d/discretebitmapprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/discreteshadowprimitive2d.hxx,drawinglayer/primitive2d/discreteshadowprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/embedded3dprimitive2d.hxx,drawinglayer/primitive2d/embedded3dprimitive2d.hxx))

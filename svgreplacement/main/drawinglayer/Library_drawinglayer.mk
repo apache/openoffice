@@ -96,6 +96,7 @@ $(eval $(call gb_Library_add_exception_objects,drawinglayer,\
 	drawinglayer/source/primitive2d/borderlineprimitive2d \
 	drawinglayer/source/primitive2d/chartprimitive2d \
 	drawinglayer/source/primitive2d/controlprimitive2d \
+	drawinglayer/source/primitive2d/cropprimitive2d \
 	drawinglayer/source/primitive2d/discretebitmapprimitive2d \
 	drawinglayer/source/primitive2d/discreteshadowprimitive2d \
 	drawinglayer/source/primitive2d/embedded3dprimitive2d \

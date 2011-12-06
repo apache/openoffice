@@ -32,8 +32,10 @@
 #include <drawinglayer/primitive2d/transformprimitive2d.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
-#include <drawinglayer/primitive2d/maskprimitive2d.hxx>
+#include <drawinglayer/primitive2d/cropprimitive2d.hxx>
 #include <drawinglayer/primitive2d/drawinglayer_primitivetypes2d.hxx>
+#include <drawinglayer/primitive2d/maskprimitive2d.hxx>
+#include <drawinglayer/primitive2d/cropprimitive2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // helper class for animated graphics
@@ -784,105 +786,58 @@ namespace drawinglayer
 					}
 				}
 
-				if(xPrimitive.is())
-				{
-					// check for cropping
-					if(getGraphicAttr().IsCropped())
-					{
-						// decompose to get current pos and size
-						basegfx::B2DVector aScale, aTranslate;
-						double fRotate, fShearX;
-						getTransform().decompose(aScale, aTranslate, fRotate, fShearX);
+                if(xPrimitive.is())
+                {
+                    // check for cropping
+                    if(getGraphicAttr().IsCropped())
+                    {
+                        // calculate scalings between real image size and logic object size. This
+                        // is necessary since the crop values are relative to original bitmap size
+                        double fFactorX(1.0);
+                        double fFactorY(1.0);
+                        
+                        {
+                            const MapMode aMapMode100thmm(MAP_100TH_MM);
+                            Size aBitmapSize(rGraphicObject.GetPrefSize());
+                            
+                            // #i95968# better support PrefMapMode; special for MAP_PIXEL was missing
+                            if(MAP_PIXEL == rGraphicObject.GetPrefMapMode().GetMapUnit())
+                            {
+                                aBitmapSize = Application::GetDefaultDevice()->PixelToLogic(aBitmapSize, aMapMode100thmm);
+                            }
+                            else
+                            {
+                                aBitmapSize = Application::GetDefaultDevice()->LogicToLogic(aBitmapSize, rGraphicObject.GetPrefMapMode(), aMapMode100thmm);
+                            }
+                            
+                            const double fDivX(aBitmapSize.Width() - getGraphicAttr().GetLeftCrop() - getGraphicAttr().GetRightCrop());
+                            const double fDivY(aBitmapSize.Height() - getGraphicAttr().GetTopCrop() - getGraphicAttr().GetBottomCrop());
+                            const basegfx::B2DVector aScale(aTransform * basegfx::B2DVector(1.0, 1.0));
+                            
+                            if(!basegfx::fTools::equalZero(fDivX))
+                            {
+                                fFactorX = fabs(aScale.getX()) / fDivX;
+                            }
+                            
+                            if(!basegfx::fTools::equalZero(fDivY))
+                            {
+                                fFactorY = fabs(aScale.getY()) / fDivY;
+                            }
+                        }
 
-						// create ranges. The current object range is just scale and translate
-						const basegfx::B2DRange aCurrent(
-							aTranslate.getX(), aTranslate.getY(), 
-							aTranslate.getX() + aScale.getX(), aTranslate.getY() + aScale.getY());
+                        // embed content in cropPrimitive
+                        xPrimitive = new CropPrimitive2D(
+                            Primitive2DSequence(&xPrimitive, 1),
+                            aTransform,
+                            getGraphicAttr().GetLeftCrop() * fFactorX,
+                            getGraphicAttr().GetTopCrop() * fFactorY,
+                            getGraphicAttr().GetRightCrop() * fFactorX,
+                            getGraphicAttr().GetBottomCrop() * fFactorY);
+                    }
 
-						// calculate scalings between real image size and logic object size. This
-						// is necessary since the crop values are relative to original bitmap size
-						double fFactorX(1.0);
-						double fFactorY(1.0);
-
-						{
-							const MapMode aMapMode100thmm(MAP_100TH_MM);
-							Size aBitmapSize(rGraphicObject.GetPrefSize());
-							
-							// #i95968# better support PrefMapMode; special for MAP_PIXEL was missing
-							if(MAP_PIXEL == rGraphicObject.GetPrefMapMode().GetMapUnit())
-							{
-								aBitmapSize = Application::GetDefaultDevice()->PixelToLogic(aBitmapSize, aMapMode100thmm);
-							}
-							else
-							{
-								aBitmapSize = Application::GetDefaultDevice()->LogicToLogic(aBitmapSize, rGraphicObject.GetPrefMapMode(), aMapMode100thmm);
-							}
-
-							const double fDivX(aBitmapSize.Width() - getGraphicAttr().GetLeftCrop() - getGraphicAttr().GetRightCrop());
-							const double fDivY(aBitmapSize.Height() - getGraphicAttr().GetTopCrop() - getGraphicAttr().GetBottomCrop());
-
-							if(!basegfx::fTools::equalZero(fDivX))
-							{
-								fFactorX = aScale.getX() / fDivX;
-							}
-
-							if(!basegfx::fTools::equalZero(fDivY))
-							{
-								fFactorY = aScale.getY() / fDivY;
-							}
-						}
-
-						// Create cropped range, describes the bounds of the original graphic
-						basegfx::B2DRange aCropped;
-						aCropped.expand(aCurrent.getMinimum() - basegfx::B2DPoint(getGraphicAttr().GetLeftCrop() * fFactorX, getGraphicAttr().GetTopCrop() * fFactorY));
-						aCropped.expand(aCurrent.getMaximum() + basegfx::B2DPoint(getGraphicAttr().GetRightCrop() * fFactorX, getGraphicAttr().GetBottomCrop() * fFactorY));
-
-						if(aCropped.isEmpty())
-						{
-							// nothing to add since cropped bitmap is completely empty
-							// xPrimitive will not be used
-						}
-						else
-						{
-							// build new object transformation for transform primitive which contains xPrimitive
-							basegfx::B2DHomMatrix aNewObjectTransform(getTransform());
-							aNewObjectTransform.invert();
-							aNewObjectTransform = basegfx::tools::createScaleTranslateB2DHomMatrix(
-								aCropped.getWidth(), aCropped.getHeight(),
-								aCropped.getMinX() - aCurrent.getMinX(), aCropped.getMinY() - aCurrent.getMinY())
-								* aNewObjectTransform;
-
-							// add shear, rotate and translate using combined matrix to speedup
-							const basegfx::B2DHomMatrix aCombinedMatrix(basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
-								fShearX, fRotate, aTranslate.getX(), aTranslate.getY()));
-							aNewObjectTransform = aCombinedMatrix * aNewObjectTransform;
-
-							// prepare TransformPrimitive2D with xPrimitive
-							const Primitive2DReference xTransformPrimitive(new TransformPrimitive2D(aNewObjectTransform, Primitive2DSequence(&xPrimitive, 1L)));
-
-							if(aCurrent.isInside(aCropped))
-							{
-								// cropped just got smaller, no need to really use a mask. Add to destination directly
-								appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xTransformPrimitive);
-							}
-							else
-							{
-								// cropped got bigger, mask it with original object's bounds
-								basegfx::B2DPolyPolygon aMaskPolyPolygon(basegfx::tools::createUnitPolygon());
-								aMaskPolyPolygon.transform(getTransform());
-
-								// create maskPrimitive with aMaskPolyPolygon and aMaskContentVector
-								const Primitive2DReference xRefB(new MaskPrimitive2D(aMaskPolyPolygon, Primitive2DSequence(&xTransformPrimitive, 1L)));
-								appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xRefB);
-							}
-						}
-					}
-					else
-					{
-						// add to decomposition
-						appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xPrimitive);
-					}
-				}
+                    // add to decomposition
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xPrimitive);
+                }
 			}
 
 			return aRetval;
