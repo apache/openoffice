@@ -23,6 +23,7 @@
 #include "precompiled_svgio.hxx"
 
 #include <svgio/svgreader/svgimagenode.hxx>
+#include <svgio/svgreader/svgdocument.hxx>
 #include <sax/tools/converter.hxx>
 #include <tools/stream.hxx>
 #include <vcl/bitmapex.hxx>
@@ -34,6 +35,8 @@
 #include <drawinglayer/primitive2d/maskprimitive2d.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
+#include <rtl/uri.hxx>
+#include <drawinglayer/geometry/viewinformation2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -162,6 +165,35 @@ namespace svgio
             }
         }
 
+        void extractFromGraphic(
+            const Graphic& rGraphic, 
+            drawinglayer::primitive2d::Primitive2DSequence& rEmbedded,
+            basegfx::B2DRange& rViewBox,
+            BitmapEx& rBitmapEx)
+        {
+            if(GRAPHIC_BITMAP == rGraphic.GetType())
+            {
+                if(rGraphic.getSvgData().get())
+                {
+                    // embedded Svg
+                    rEmbedded = rGraphic.getSvgData()->getPrimitive2DSequence();
+
+                    // fill aViewBox
+                    rViewBox = rGraphic.getSvgData()->getRange();
+                }
+                else
+                {
+                    // get bitmap
+                    rBitmapEx = rGraphic.GetBitmapEx();
+                }
+            }
+            else
+            {
+                // evtl. convert to bitmap
+                rBitmapEx = rGraphic.GetBitmapEx();
+            }
+        }
+
         void SvgImageNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
         {
             // get size range and create path
@@ -200,26 +232,48 @@ namespace svgio
                                 String(), 
                                 aStream))
                             {
-                                if(GRAPHIC_BITMAP == aGraphic.GetType())
-                                {
-                                    if(aGraphic.getSvgData().get())
-                                    {
-                                        // embedded Svg
-                                        aEmbedded = aGraphic.getSvgData()->getPrimitive2DSequence();
+                                extractFromGraphic(aGraphic, aEmbedded, aViewBox, aBitmapEx);
+                            }
+                        }
+                    }
+                    else if(maUrl.getLength())
+                    {
+                        const rtl::OUString& rPath = getDocument().getAbsolutePath();
+                        const rtl::OUString aAbsUrl(rtl::Uri::convertRelToAbs(rPath, maUrl));
 
-                                        // fill aViewBox
-                                        aViewBox = aGraphic.getSvgData()->getRange();
-                                    }
-                                    else
-                                    {
-                                        // get bitmap
-                                        aBitmapEx = aGraphic.GetBitmapEx();
-                                    }
-                                }
-                                else
+                        if(aAbsUrl.getLength())
+                        {
+                            SvFileStream aStream(aAbsUrl, STREAM_STD_READ);
+                            Graphic aGraphic;
+
+                            if(GRFILTER_OK == GraphicFilter::GetGraphicFilter()->ImportGraphic(
+                                aGraphic, 
+                                aAbsUrl, 
+                                aStream))
+                            {
+                                extractFromGraphic(aGraphic, aEmbedded, aViewBox, aBitmapEx);
+                            }
+                        }
+                    }
+                    else if(maXLink.getLength())
+                    {
+                        const SvgNode* mpXLink = getDocument().findSvgNodeById(maXLink);
+
+                        if(mpXLink)
+                        {
+                            drawinglayer::primitive2d::Primitive2DVector aLinkedTarget;
+
+                            mpXLink->decomposeSvgNode(aLinkedTarget, true);
+
+                            if(aLinkedTarget.size())
+                            {
+                                aEmbedded = Primitive2DVectorToPrimitive2DSequence(aLinkedTarget);
+
+                                if(aEmbedded.hasElements())
                                 {
-                                    // evtl. convert to bitmap
-                                    aBitmapEx = aGraphic.GetBitmapEx();
+                                    const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
+
+                                    aViewBox = drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(aEmbedded, aViewInformation2D);
                                 }
                             }
                         }

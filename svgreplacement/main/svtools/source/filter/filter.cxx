@@ -1523,7 +1523,8 @@ sal_uInt16 GraphicFilter::ImportGraphic( Graphic& rGraphic, const String& rPath,
                     SvgDataPtr aSvgDataPtr(
                         new SvgData(
                             aNewData,
-                            nStmLen));
+                            nStmLen,
+                            rPath));
 
                     rGraphic = Graphic(aSvgDataPtr);
                     bOkay = true;

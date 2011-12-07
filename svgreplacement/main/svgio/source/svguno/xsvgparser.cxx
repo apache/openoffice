@@ -54,7 +54,8 @@ namespace svgio
 
             // XSvgParser
             virtual uno::Sequence< uno::Reference< ::graphic::XPrimitive2D > > SAL_CALL getDecomposition( 
-                const uno::Reference< ::io::XInputStream >& xSVGStream) throw (uno::RuntimeException);
+                const uno::Reference< ::io::XInputStream >& xSVGStream,
+                const ::rtl::OUString& aAbsolutePath) throw (uno::RuntimeException);
 
             // XServiceInfo
             virtual rtl::OUString SAL_CALL getImplementationName() throw(uno::RuntimeException);
@@ -105,14 +106,16 @@ namespace svgio
         {
         }
 
-        uno::Sequence< uno::Reference< ::graphic::XPrimitive2D > > XSvgParser::getDecomposition(const uno::Reference< ::io::XInputStream >& xSVGStream) throw (uno::RuntimeException)
+        uno::Sequence< uno::Reference< ::graphic::XPrimitive2D > > XSvgParser::getDecomposition(
+            const uno::Reference< ::io::XInputStream >& xSVGStream, 
+            const ::rtl::OUString& aAbsolutePath ) throw (uno::RuntimeException)
         {
             drawinglayer::primitive2d::Primitive2DSequence aRetval;
 
             if(xSVGStream.is())
             {
                 // local document handler
-                SvgDocHdl* pSvgDocHdl = new SvgDocHdl();
+                SvgDocHdl* pSvgDocHdl = new SvgDocHdl(aAbsolutePath);
                 uno::Reference< xml::sax::XDocumentHandler > xSvgDocHdl(pSvgDocHdl);
 
                 try

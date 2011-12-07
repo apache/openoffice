@@ -50,7 +50,7 @@ namespace svgio
             bool                mbValidToken : 1;
 
         public:
-            SvgDocHdl();
+            SvgDocHdl(const rtl::OUString& rAbsolutePath);
             ~SvgDocHdl();
 
             // Methods XDocumentHandler

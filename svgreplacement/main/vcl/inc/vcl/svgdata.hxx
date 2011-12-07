@@ -27,6 +27,7 @@
 #include <boost/utility.hpp>
 #include <com/sun/star/graphic/XPrimitive2D.hpp>
 #include <vcl/bitmapex.hxx>
+#include <rtl/ustring.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -43,6 +44,9 @@ private:
     SvgDataArray            maSvgDataArray;
     sal_uInt32              mnSvgDataArrayLength;
 
+    // The absolute Path if available
+    rtl::OUString           maPath;
+
     // on demand created content
     basegfx::B2DRange       maRange;
     Primitive2DSequence     maSequence;
@@ -53,11 +57,12 @@ private:
     void ensureSequenceAndRange();
 
 public:
-    SvgData(const SvgDataArray& rSvgDataArray, sal_uInt32 nSvgDataArrayLength);
+    SvgData(const SvgDataArray& rSvgDataArray, sal_uInt32 nSvgDataArrayLength, const rtl::OUString& rPath);
 
     /// data read
     const SvgDataArray& getSvgDataArray() const { return maSvgDataArray; }
     sal_uInt32 getSvgDataArrayLength() const { return mnSvgDataArrayLength; }
+    const rtl::OUString& getPath() const { return maPath; }
 
     /// data read and evtl. on demand creation
     const basegfx::B2DRange& getRange() const;

@@ -829,26 +829,40 @@ namespace svgio
                             if(nPos < nLen)
                             {
                                 const sal_Unicode aChar(rCandidate[nPos]);
-                                const bool bIsPercent(aChar == sal_Unicode('%'));
-                                const sal_Unicode aSkipChar(bIsPercent ? '%' : ',');
+                                const bool bIsPercent(sal_Unicode('%') == aChar);
                                 double fG(0.0);
 
-                                skip_char(rCandidate, sal_Unicode(' '), aSkipChar, nPos, nLen);
+                                if(bIsPercent)
+                                {
+                                    skip_char(rCandidate, sal_Unicode('%'), nPos, nLen);
+                                }
+
+                                skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
 
                                 if(readNumber(rCandidate, nPos, fG, nLen))
                                 {
                                     double fB(0.0);
-                            
-                                    skip_char(rCandidate, sal_Unicode(' '), aSkipChar, nPos, nLen);
-                            
+
+                                    if(bIsPercent)
+                                    {
+                                        skip_char(rCandidate, sal_Unicode('%'), nPos, nLen);
+                                    }
+
+                                    skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
+
                                     if(readNumber(rCandidate, nPos, fB, nLen))
                                     {
-                                        const double fFac(bIsPercent ? 0.001 : fFactor);
-    
+                                        const double fFac(bIsPercent ? 0.01 : fFactor);
+
                                         rColor.setRed(fR * fFac);
                                         rColor.setGreen(fG * fFac);
                                         rColor.setBlue(fB * fFac);
-                                
+
+                                        if(bIsPercent)
+                                        {
+                                            skip_char(rCandidate, sal_Unicode('%'), nPos, nLen);
+                                        }
+
                                         skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(')'), nPos, nLen);
                                         return true;
                                     }

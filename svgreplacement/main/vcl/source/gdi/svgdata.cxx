@@ -115,7 +115,7 @@ void SvgData::ensureSequenceAndRange()
 
                 if(xSvgParser.is())
                 {
-                    maSequence = xSvgParser->getDecomposition(myInputStream);
+                    maSequence = xSvgParser->getDecomposition(myInputStream, maPath);
                 }
             }
             catch(const uno::Exception&)
@@ -153,9 +153,10 @@ void SvgData::ensureSequenceAndRange()
 
 //////////////////////////////////////////////////////////////////////////////
 
-SvgData::SvgData(const SvgDataArray& rSvgDataArray, sal_uInt32 nSvgDataArrayLength)
+SvgData::SvgData(const SvgDataArray& rSvgDataArray, sal_uInt32 nSvgDataArrayLength, const rtl::OUString& rPath)
 :   maSvgDataArray(rSvgDataArray),
     mnSvgDataArrayLength(nSvgDataArrayLength),
+    maPath(rPath),
     maRange(),
     maSequence(),
     maReplacement()

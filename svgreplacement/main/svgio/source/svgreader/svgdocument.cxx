@@ -30,8 +30,9 @@ namespace svgio
 {
     namespace svgreader
     {
-        SvgDocument::SvgDocument()
+        SvgDocument::SvgDocument(const rtl::OUString& rAbsolutePath)
         :   maNodes(),
+            maAbsolutePath(rAbsolutePath),
             maIdTokenMapperList(),
             maIdStyleTokenMapperList()
         {

@@ -119,8 +119,8 @@ namespace svgio
 {
     namespace svgreader
     {
-        SvgDocHdl::SvgDocHdl()
-        :   maDocument(),
+        SvgDocHdl::SvgDocHdl(const rtl::OUString& aAbsolutePath)
+        :   maDocument(aAbsolutePath),
             mpTarget(0)
         {
         }

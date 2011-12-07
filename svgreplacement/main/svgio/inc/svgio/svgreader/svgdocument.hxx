@@ -36,7 +36,10 @@ namespace svgio
         {
         private:
             /// the document hierarchy with all root nodes
-            SvgNodeVector       maNodes;
+            SvgNodeVector           maNodes;
+
+            /// the absolute path of the Svg file in progress (if available)
+            const rtl::OUString     maAbsolutePath;
 
             /// hash mapper to find nodes by their id
             typedef std::hash_map< const rtl::OUString, const SvgNode*, rtl::OUStringHash > IdTokenMapper;
@@ -49,7 +52,7 @@ namespace svgio
             IdStyleTokenMapper      maIdStyleTokenMapperList;
 
         public:
-            SvgDocument();
+            SvgDocument(const rtl::OUString& rAbsolutePath);
             ~SvgDocument();
 
             /// append anopther root node, ownership changes
@@ -73,6 +76,7 @@ namespace svgio
 
             /// data read access
             const SvgNodeVector& getSvgNodeVector() const { return maNodes; }
+            const rtl::OUString& getAbsolutePath() const { return maAbsolutePath; }
         };
     } // end of namespace svgreader
 } // end of namespace svgio

@@ -40,7 +40,9 @@ interface XSvgParser : ::com::sun::star::uno::XInterface
         @param xSvgStream
         The file containing the SVG XML data
      */
-    sequence< XPrimitive2D > getDecomposition( [in] io::XInputStream xSvgStream );
+    sequence< XPrimitive2D > getDecomposition( 
+        [in] io::XInputStream xSvgStream,
+        [in] string aAbsolutePath);
 };
 
 }; }; }; };
