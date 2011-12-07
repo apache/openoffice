@@ -1335,6 +1335,66 @@ namespace svgio
             return !rSvgStringVector.empty();
         }
 
+        void readImageLink(const rtl::OUString& rCandidate, rtl::OUString& rXLink, rtl::OUString& rUrl, rtl::OUString& rMimeType, rtl::OUString& rData)
+        {
+            rXLink = rUrl = rMimeType = rData = rtl::OUString();
+
+            if(sal_Unicode('#') == rCandidate[0])
+            {
+                // local link
+                rXLink = rCandidate.copy(1);
+            }
+            else
+            {
+                static rtl::OUString aStrData(rtl::OUString::createFromAscii("data:"));
+
+                if(rCandidate.match(aStrData, 0))
+                {
+                    // embedded data
+                    sal_Int32 nPos(aStrData.getLength());
+                    sal_Int32 nLen(rCandidate.getLength());
+                    rtl::OUStringBuffer aBuffer;
+
+                    // read mime type
+                    skip_char(rCandidate, sal_Unicode(' '), nPos, nLen);
+                    copyToLimiter(rCandidate, sal_Unicode(';'), nPos, aBuffer, nLen);
+                    skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(';'), nPos, nLen);
+                    rMimeType = aBuffer.makeStringAndClear();
+
+                    if(rMimeType.getLength() && nPos < nLen)
+                    {
+                        static rtl::OUString aStrImage(rtl::OUString::createFromAscii("image"));
+
+                        if(rMimeType.match(aStrImage, 0))
+                        {
+                            // image data
+                            rtl::OUString aData(rCandidate.copy(nPos));
+                            static rtl::OUString aStrBase64(rtl::OUString::createFromAscii("base64"));
+                                    
+                            if(aData.match(aStrBase64, 0))
+                            {
+                                // base64 encoded
+                                nPos = aStrBase64.getLength();
+                                nLen = aData.getLength();
+                                            
+                                skip_char(aData, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
+
+                                if(nPos < nLen)
+                                {
+                                    rData = aData.copy(nPos);
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    // Url (path and filename)
+                    rUrl = rCandidate;
+                }
+            }
+        }
+
         rtl::OUString convert(const rtl::OUString& rCandidate, const sal_Unicode& rPattern, const sal_Unicode& rNew, bool bRemove)
         {
             const sal_Int32 nLen(rCandidate.getLength());

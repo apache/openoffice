@@ -45,7 +45,12 @@ namespace svgio
             SvgNumber               maY;
             SvgNumber               maWidth;
             SvgNumber               maHeight;
-            rtl::OUString           maXLink;
+
+            rtl::OUString           maXLink;        // internal link
+            rtl::OUString           maUrl;          // external link
+            
+            rtl::OUString           maMimeType;     // mimetype and
+            rtl::OUString           maData;         // base64 data
 
         public:
             SvgImageNode(

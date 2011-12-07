@@ -49,6 +49,9 @@ $(eval $(call gb_Library_add_linked_libs,svgio,\
     sal \
     stl \
     tl \
+    sax \
+    vcl \
+    svt \
     $(gb_STDLIBS) \
 ))
 

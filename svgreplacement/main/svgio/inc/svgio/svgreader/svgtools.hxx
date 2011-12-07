@@ -195,6 +195,8 @@ namespace svgio
         typedef ::std::vector< rtl::OUString > SvgStringVector;
         bool readSvgStringVector(const rtl::OUString& rCandidate, SvgStringVector& rSvgStringVector);
 
+        void readImageLink(const rtl::OUString& rCandidate, rtl::OUString& rXLink, rtl::OUString& rUrl, rtl::OUString& rMimeType, rtl::OUString& rData);
+
         rtl::OUString convert(const rtl::OUString& rCandidate, const sal_Unicode& rPattern, const sal_Unicode& rNew, bool bRemove);
         rtl::OUString consolidateContiguosSpace(const rtl::OUString& rCandidate);
         rtl::OUString whiteSpaceHandlingDefault(const rtl::OUString& rCandidate);
