@@ -83,6 +83,7 @@ namespace svgio
             SVGTokenClass,
             SVGTokenTextAnchor,
             SVGTokenXmlSpace,
+            SVGTokenColor,
 
             // AspectRatio and params
             SVGTokenPreserveAspectRatio,

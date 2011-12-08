@@ -665,6 +665,7 @@ namespace svgio
             maTextAlign(TextAlign_notset),
             maTextDecoration(TextDecoration_notset),
             maTextAnchor(TextAnchor_notset),
+            maColor(),
             
             maFillRule(true),
             maFillRuleSet(false)
@@ -683,6 +684,7 @@ namespace svgio
                 {
                     SvgPaint aSvgPaint;
                     rtl::OUString aURL;
+                    bool bUseCurrent(false);
 
                     if(readSvgPaint(aContent, aSvgPaint, aURL))
                     {
@@ -1190,6 +1192,17 @@ namespace svgio
                     }
                     break;
                 }
+                case SVGTokenColor:
+                {
+                    SvgPaint aSvgPaint;
+                    rtl::OUString aURL;
+
+                    if(readSvgPaint(aContent, aSvgPaint, aURL))
+                    {
+                        setColor(aSvgPaint);
+                    }
+                    break;
+                }
             }
         }
 
@@ -1197,7 +1210,11 @@ namespace svgio
         { 
             if(maFill.isSet()) 
             {
-                if(maFill.isOn()) 
+                if(maFill.isCurrent())
+                {
+                    return getColor();
+                }
+                else if(maFill.isOn()) 
                 {
                     return &maFill.getBColor();
                 }
@@ -1219,7 +1236,11 @@ namespace svgio
         { 
             if(maStroke.isSet()) 
             {
-                if(maStroke.isOn()) 
+                if(maStroke.isCurrent())
+                {
+                    return getColor();
+                }
+                else if(maStroke.isOn()) 
                 {
                     return &maStroke.getBColor();
                 }
@@ -1235,6 +1256,18 @@ namespace svgio
             }
 
             return 0;
+        }
+
+        const basegfx::BColor& SvgStyleAttributes::getStopColor() const 
+        {
+            if(maStopColor.isCurrent())
+            {
+                return *getColor();
+            }
+            else
+            {
+                return maStopColor.getBColor(); 
+            }
         }
 
         const SvgGradientNode* SvgStyleAttributes::getSvgGradientNodeFill() const 
@@ -1646,6 +1679,33 @@ namespace svgio
 
             // default is TextAnchor_start
             return TextAnchor_start; 
+        }
+
+        const basegfx::BColor* SvgStyleAttributes::getColor() const 
+        { 
+            if(maColor.isSet()) 
+            {
+                if(maColor.isCurrent())
+                {
+                    OSL_ENSURE(false, "Svg error: current color uses current color (!)");
+                    return 0;
+                }
+                else if(maColor.isOn()) 
+                {
+                    return &maColor.getBColor();
+                }
+            }
+            else
+            {
+                const SvgStyleAttributes* pSvgStyleAttributes = getParentStyle();
+
+                if(pSvgStyleAttributes)
+                {
+                    return pSvgStyleAttributes->getColor();
+                }
+            }
+
+            return 0;
         }
 
     } // end of namespace svgreader

@@ -273,7 +273,18 @@ namespace svgio
 
                         if(pStyle)
                         {
-                            double fOffset(pCandidate->getOffset().solve(*this));
+                            const SvgNumber aOffset(pCandidate->getOffset());
+                            double fOffset(0.0);
+                            
+                            if(Unit_percent == aOffset.getUnit())
+                            {
+                                // percent is not relative to distances in ColorStop context, solve locally
+                                fOffset = aOffset.getNumber() * 0.01;
+                            }
+                            else
+                            {
+                                fOffset = aOffset.solve(*this);
+                            }
 
                             if(fOffset < 0.0)
                             {

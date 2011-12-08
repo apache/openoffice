@@ -1155,10 +1155,11 @@ namespace svgio
                 {
                     static rtl::OUString aStrNone(rtl::OUString::createFromAscii("none"));
                     static rtl::OUString aStrUrl(rtl::OUString::createFromAscii("url"));
+                    static rtl::OUString aStrCurrentColor(rtl::OUString::createFromAscii("currentColor"));
 
                     if(rCandidate.match(aStrNone, 0))
                     {
-                        rSvgPaint = SvgPaint(aColor, true, false);
+                        rSvgPaint = SvgPaint(aColor, true, false, false);
                         return true;
                     }
                     else if(rCandidate.match(aStrUrl, 0))
@@ -1172,6 +1173,11 @@ namespace svgio
                         skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(')'), nPos, nLen);
                         rURL = aTokenValue.makeStringAndClear();
                         return false;
+                    }
+                    else if(rCandidate.match(aStrCurrentColor, 0))
+                    {
+                        rSvgPaint = SvgPaint(aColor, true, true, true);
+                        return true;
                     }
                 }
             }

@@ -74,6 +74,7 @@ namespace svgio
         static rtl::OUString aSVGStrClass(rtl::OUString::createFromAscii("class")); 
         static rtl::OUString aSVGStrTextAnchor(rtl::OUString::createFromAscii("text-anchor")); 
         static rtl::OUString aSVGStrXmlSpace(rtl::OUString::createFromAscii("xml:space")); 
+        static rtl::OUString aSVGStrColor(rtl::OUString::createFromAscii("color")); 
 
         static rtl::OUString aSVGStrPreserveAspectRatio(rtl::OUString::createFromAscii("preserveAspectRatio")); 
         static rtl::OUString aSVGStrDefer(rtl::OUString::createFromAscii("defer")); 
@@ -190,6 +191,7 @@ namespace svgio
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrClass, SVGTokenClass));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrTextAnchor, SVGTokenTextAnchor));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrXmlSpace, SVGTokenXmlSpace));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrColor, SVGTokenColor));
 
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPreserveAspectRatio, SVGTokenPreserveAspectRatio));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrDefer, SVGTokenDefer));

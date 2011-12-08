@@ -164,6 +164,7 @@ namespace svgio
             TextAlign                   maTextAlign;
             TextDecoration              maTextDecoration;
             TextAnchor                  maTextAnchor;
+            SvgPaint                    maColor;
 
             /// bitfield
             bool                        maFillRule : 1; // true: NonZero, false: EvenOdd
@@ -216,7 +217,7 @@ namespace svgio
             void setStroke(const SvgPaint& rStroke) { maStroke = rStroke; }
 
             /// stop color content
-            const basegfx::BColor& getStopColor() const { return maStopColor.getBColor(); }
+            const basegfx::BColor& getStopColor() const;
             void setStopColor(const SvgPaint& rStopColor) { maStopColor = rStopColor; }
 
             /// stroke-width content
@@ -303,6 +304,10 @@ namespace svgio
             /// TextAnchor content
             const TextAnchor getTextAnchor() const;
             void setTextAnchor(const TextAnchor aTextAnchor = TextAnchor_notset) { maTextAnchor = aTextAnchor; }
+
+            /// Color content
+            const basegfx::BColor* getColor() const;
+            void setColor(const SvgPaint& rColor) { maColor = rColor; }
 
         };
     } // end of namespace svgreader

@@ -39,18 +39,21 @@ namespace svgio
             /// bitfield
             bool                mbSet : 1;
             bool                mbOn : 1;
+            bool                mbCurrent : 1;
 
         public:
-            SvgPaint(const basegfx::BColor& rColor = basegfx::BColor(0.0, 0.0, 0.0), bool bSet = false, bool bOn = false)
+            SvgPaint(const basegfx::BColor& rColor = basegfx::BColor(0.0, 0.0, 0.0), bool bSet = false, bool bOn = false, bool bCurrent = false)
             :   maColor(rColor),
                 mbSet(bSet),
-                mbOn(bOn)
+                mbOn(bOn),
+                mbCurrent(bCurrent)
             {
             }
 
             const basegfx::BColor& getBColor() const { return maColor; }
             bool isSet() const { return mbSet; }
             bool isOn() const { return mbOn; }
+            bool isCurrent() const { return mbCurrent; }
         };
     } // end of namespace svgreader
 } // end of namespace svgio
