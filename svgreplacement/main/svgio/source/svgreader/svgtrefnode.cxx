@@ -31,21 +31,12 @@ namespace svgio
 {
     namespace svgreader
     {
-        void SvgTrefNode::tryToFindLink()
-        {
-            if(!mpXLink && maXLink.getLength())
-            {
-                mpXLink = dynamic_cast< const SvgTextNode* >(getDocument().findSvgNodeById(maXLink));
-            }
-        }
-
         SvgTrefNode::SvgTrefNode(
             SvgDocument& rDocument,
             SvgNode* pParent)
         :   SvgNode(SVGTokenTref, rDocument, pParent),
             maSvgStyleAttributes(*this),
-            maXLink(),
-            mpXLink(0)
+            maXLink()
         {
         }
 
@@ -81,7 +72,6 @@ namespace svgio
                     if(nLen && sal_Unicode('#') == aContent[0])
                     {
                         maXLink = aContent.copy(1);
-                        tryToFindLink();
                     }
                     break;
                 }
@@ -90,9 +80,7 @@ namespace svgio
 
         const SvgTextNode* SvgTrefNode::getReferencedSvgTextNode() const
         {
-            const_cast< SvgTrefNode* >(this)->tryToFindLink();
-
-            return mpXLink;
+            return dynamic_cast< const SvgTextNode* >(getDocument().findSvgNodeById(maXLink));
         }
 
     } // end of namespace svgreader

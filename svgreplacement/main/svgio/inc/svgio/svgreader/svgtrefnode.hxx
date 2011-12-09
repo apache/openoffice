@@ -42,10 +42,6 @@ namespace svgio
             /// link to text content. If maXLink
             /// is set, the node can be fetched on demand
             rtl::OUString               maXLink;
-            const SvgTextNode*          mpXLink;
-
-            /// link on demand
-            void tryToFindLink();
 
         public:
             SvgTrefNode(

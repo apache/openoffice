@@ -42,7 +42,6 @@ namespace svgio
             /// link to path content. If maXLink
             /// is set, the node can be fetched on demand
             rtl::OUString           maXLink;
-            const SvgPathNode*      mpXLink;
 
             /// variable scan values, dependent of given XAttributeList
             SvgNumber               maStartOffset;
@@ -50,9 +49,6 @@ namespace svgio
             /// bitfield
             bool                    mbMethod : 1; // true = align, false = stretch
             bool                    mbSpacing : 1; // true = auto, false = exact
-
-            /// link on demand
-            void tryToFindLink();
 
         public:
             SvgTextPathNode(
@@ -79,9 +75,6 @@ namespace svgio
             /// Spacing content
             bool getSpacing() const { return mbSpacing; }
             void setSpacing(bool bNew) { mbSpacing = bNew; }
-
-            /// access to referenced SvgPathNode
-            const SvgPathNode* getReferencedSvgPathNode() const;
         };
     } // end of namespace svgreader
 } // end of namespace svgio

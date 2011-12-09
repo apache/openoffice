@@ -45,6 +45,8 @@
 #include <svgio/svgreader/svgtextpathnode.hxx>
 #include <svgio/svgreader/svgstylenode.hxx>
 #include <svgio/svgreader/svgimagenode.hxx>
+#include <svgio/svgreader/svgclippathnode.hxx>
+#include <svgio/svgreader/svgmasknode.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -295,6 +297,23 @@ namespace svgio
                         break;
                     }
 
+                    /// structural elements clip-path and mask. Content gets scanned, but
+                    /// will not be decomposed (see SvgNode::decomposeSvgNode and bReferenced)
+                    case SVGTokenClipPathNode:
+                    {
+                        /// new node for ClipPath
+                        mpTarget = new SvgClipPathNode(maDocument, mpTarget);
+                        mpTarget->parseAttributes(xAttribs);
+                        break;
+                    }
+                    case SVGTokenMask:
+                    {
+                        /// new node for Mask
+                        mpTarget = new SvgMaskNode(maDocument, mpTarget);
+                        mpTarget->parseAttributes(xAttribs);
+                        break;
+                    }
+
                     default:
                     {
                         /// invalid token, ignore
@@ -353,6 +372,10 @@ namespace svgio
                     
                     /// styles (as stylesheets)
                     case SVGTokenStyle:
+
+                    /// structural elements clip-path and mask
+                    case SVGTokenClipPathNode:
+                    case SVGTokenMask:
 
                     /// content handling after parsing
                     {

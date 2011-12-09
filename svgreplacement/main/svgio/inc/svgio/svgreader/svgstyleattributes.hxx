@@ -166,9 +166,18 @@ namespace svgio
             TextAnchor                  maTextAnchor;
             SvgPaint                    maColor;
 
+            /// link to content. If maXLink is set, the node can be fetched on demand
+            rtl::OUString               maClipPathXLink;
+            rtl::OUString               maMaskXLink;
+
             /// bitfield
             bool                        maFillRule : 1; // true: NonZero, false: EvenOdd
             bool                        maFillRuleSet : 1;
+
+            // defines if this attributes are part of a ClipPath. If yes,
+            // rough geometry will be created on decomposition by patching
+            // vaules for fill, stroke, strokeWidth and others
+            bool                        mbIsClipPathContent : 1;
 
             /// internal helpers
             void add_fillGradient(
@@ -200,6 +209,9 @@ namespace svgio
 
             /// helper to evtl. link to css style
             void checkForCssStyle(const rtl::OUString& rClassStr) const;
+
+            /// helper to postprocess created primitives
+            void decomposePostProcess(drawinglayer::primitive2d::Primitive2DVector& rTarget) const;
 
             /// scan helpers
             void readStyle(const rtl::OUString& rCandidate);
@@ -308,6 +320,14 @@ namespace svgio
             /// Color content
             const basegfx::BColor* getColor() const;
             void setColor(const SvgPaint& rColor) { maColor = rColor; }
+
+            // ClipPathXLink content
+            const rtl::OUString getClipPathXLink() const { return maClipPathXLink; }
+            void setClipPathXLink(const rtl::OUString& rNew) { maClipPathXLink = rNew; }
+
+            // MaskXLink content
+            const rtl::OUString getMaskXLink() const { return maMaskXLink; }
+            void setMaskXLink(const rtl::OUString& rNew) { maMaskXLink = rNew; }
 
         };
     } // end of namespace svgreader

@@ -40,6 +40,19 @@ namespace svgio
         void myAssert(const rtl::OUString& rMessage);
 #endif
 
+        // common non-token strings
+        struct commonStrings
+        {
+            static const rtl::OUString aStrUserSpaceOnUse;
+            static const rtl::OUString aStrObjectBoundingBox;
+        };
+
+        enum SvgUnits
+        {
+            userSpaceOnUse,
+            objectBoundingBox
+        };
+
         enum NumberType
         {
             xcoordinate,
@@ -185,6 +198,7 @@ namespace svgio
         basegfx::B2DRange readViewBox(const rtl::OUString& rCandidate, InfoProvider& rInfoProvider);
         basegfx::B2DHomMatrix readTransform(const rtl::OUString& rCandidate, InfoProvider& rInfoProvider);
         bool readSingleNumber(const rtl::OUString& rCandidate, SvgNumber& aNum);
+        bool readLocalUrl(const rtl::OUString& rCandidate, rtl::OUString& rURL);
         bool readSvgPaint(const rtl::OUString& rCandidate, SvgPaint& rSvgPaint, rtl::OUString& rURL);
 
         bool readSvgNumberVector(const rtl::OUString& rCandidate, SvgNumberVector& rSvgNumberVector);

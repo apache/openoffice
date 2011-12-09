@@ -58,6 +58,7 @@ $(eval $(call gb_Library_add_linked_libs,svgio,\
 $(eval $(call gb_Library_add_exception_objects,svgio,\
     svgio/source/svgreader/svgcharacternode \
     svgio/source/svgreader/svgcirclenode \
+    svgio/source/svgreader/svgclippathnode \
     svgio/source/svgreader/svgdocument \
     svgio/source/svgreader/svgdocumenthandler \
     svgio/source/svgreader/svgellipsenode \
@@ -66,6 +67,7 @@ $(eval $(call gb_Library_add_exception_objects,svgio,\
     svgio/source/svgreader/svggradientstopnode \
     svgio/source/svgreader/svgimagenode \
     svgio/source/svgreader/svglinenode \
+    svgio/source/svgreader/svgmasknode \
     svgio/source/svgreader/svgnode \
     svgio/source/svgreader/svgpaint \
     svgio/source/svgreader/svgpathnode \

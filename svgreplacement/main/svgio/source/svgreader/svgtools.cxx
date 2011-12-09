@@ -46,6 +46,10 @@ namespace svgio
         }
 #endif
 
+        // common non-token strings
+        const rtl::OUString commonStrings::aStrUserSpaceOnUse(rtl::OUString::createFromAscii("userSpaceOnUse"));
+        const rtl::OUString commonStrings::aStrObjectBoundingBox(rtl::OUString::createFromAscii("objectBoundingBox"));
+
         basegfx::B2DHomMatrix SvgAspectRatio::createLinearMapping(const basegfx::B2DRange& rTarget, const basegfx::B2DRange& rSource)
         {
             basegfx::B2DHomMatrix aRetval;
@@ -1138,6 +1142,26 @@ namespace svgio
             return readNumberAndUnit(rCandidate, nPos, aNum, nLen);
         }
 
+        bool readLocalUrl(const rtl::OUString& rCandidate, rtl::OUString& rURL)
+        {
+            static rtl::OUString aStrUrl(rtl::OUString::createFromAscii("url"));
+
+            if(rCandidate.match(aStrUrl, 0))
+            {
+                const sal_Int32 nLen(rCandidate.getLength());
+                sal_Int32 nPos(aStrUrl.getLength());
+                        
+                skip_char(rCandidate, sal_Unicode('('), sal_Unicode('#'), nPos, nLen);
+                rtl::OUStringBuffer aTokenValue;
+                copyToLimiter(rCandidate, sal_Unicode(')'), nPos, aTokenValue, nLen);
+                rURL = aTokenValue.makeStringAndClear();
+                
+                return true;
+            }
+
+            return false;
+        }
+
         bool readSvgPaint(const rtl::OUString& rCandidate, SvgPaint& rSvgPaint, rtl::OUString& rURL)
         {
             const sal_Int32 nLen(rCandidate.getLength());
@@ -1154,7 +1178,6 @@ namespace svgio
                 else
                 {
                     static rtl::OUString aStrNone(rtl::OUString::createFromAscii("none"));
-                    static rtl::OUString aStrUrl(rtl::OUString::createFromAscii("url"));
                     static rtl::OUString aStrCurrentColor(rtl::OUString::createFromAscii("currentColor"));
 
                     if(rCandidate.match(aStrNone, 0))
@@ -1162,16 +1185,9 @@ namespace svgio
                         rSvgPaint = SvgPaint(aColor, true, false, false);
                         return true;
                     }
-                    else if(rCandidate.match(aStrUrl, 0))
+                    else if(readLocalUrl(rCandidate, rURL))
                     {
-                        const sal_Int32 nLen(rCandidate.getLength());
-                        sal_Int32 nPos(aStrUrl.getLength());
-                        
-                        skip_char(rCandidate, sal_Unicode('('), sal_Unicode('#'), nPos, nLen);
-                        rtl::OUStringBuffer aTokenValue;
-                        copyToLimiter(rCandidate, sal_Unicode(')'), nPos, aTokenValue, nLen);
-                        skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(')'), nPos, nLen);
-                        rURL = aTokenValue.makeStringAndClear();
+                        /// Url is copied to rURL, but needs to be solved outside this helper
                         return false;
                     }
                     else if(rCandidate.match(aStrCurrentColor, 0))

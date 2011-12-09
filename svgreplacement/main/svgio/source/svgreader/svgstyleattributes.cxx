@@ -34,6 +34,8 @@
 #include <drawinglayer/processor2d/linegeometryextractor2d.hxx>
 #include <drawinglayer/processor2d/textaspolygonextractor2d.hxx>
 #include <basegfx/polygon/b2dpolypolygoncutter.hxx>
+#include <svgio/svgreader/svgclippathnode.hxx>
+#include <svgio/svgreader/svgmasknode.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -199,6 +201,37 @@ namespace svgio
                     {
                         // found css style, set as parent
                         const_cast< SvgStyleAttributes* >(this)->mpCssStyleParent = pNew;
+                    }
+                }
+            }
+        }
+
+        void SvgStyleAttributes::decomposePostProcess(drawinglayer::primitive2d::Primitive2DVector& rTarget) const
+        {
+            if(rTarget.size())
+            {
+                if(getClipPathXLink().getLength())
+                {
+                    // try to access linked ClipPath
+                    const SvgClipPathNode* mpClip = dynamic_cast< const SvgClipPathNode* >(mrOwner.getDocument().findSvgNodeById(getClipPathXLink()));
+
+                    if(mpClip)
+                    {
+                        mpClip->apply(rTarget);
+                    }
+                }
+            }
+
+            if(rTarget.size()) // test again, applied clipPath may have lead to empty geometry
+            {
+                if(getMaskXLink().getLength())
+                {
+                    // try to access linked Mask
+                    const SvgMaskNode* mpMask = dynamic_cast< const SvgMaskNode* >(mrOwner.getDocument().findSvgNodeById(getMaskXLink()));
+
+                    if(mpMask)
+                    {
+                        mpMask->apply(rTarget);
                     }
                 }
             }
@@ -666,10 +699,22 @@ namespace svgio
             maTextDecoration(TextDecoration_notset),
             maTextAnchor(TextAnchor_notset),
             maColor(),
-            
+            maClipPathXLink(),
+            maMaskXLink(),
+
             maFillRule(true),
-            maFillRuleSet(false)
+            maFillRuleSet(false),
+            mbIsClipPathContent(SVGTokenClipPathNode == mrOwner.getType())
         {
+            if(!mbIsClipPathContent)
+            {
+                const SvgStyleAttributes* pParentStyle = getParentStyle();
+
+                if(pParentStyle)
+                {
+                    mbIsClipPathContent = pParentStyle->mbIsClipPathContent;
+                }
+            }
         }
 
         SvgStyleAttributes::~SvgStyleAttributes()
@@ -1203,12 +1248,28 @@ namespace svgio
                     }
                     break;
                 }
+                case SVGTokenClipPathProperty:
+                {
+                    readLocalUrl(aContent, maClipPathXLink);
+                    break;
+                }
+                case SVGTokenMask:
+                {
+                    readLocalUrl(aContent, maMaskXLink);
+                    break;
+                }
             }
         }
 
         const basegfx::BColor* SvgStyleAttributes::getFill() const 
         { 
-            if(maFill.isSet()) 
+            if(mbIsClipPathContent)
+            {
+                static basegfx::BColor aBlack(0.0, 0.0, 0.0);
+
+                return &aBlack;
+            }
+            else if(maFill.isSet()) 
             {
                 if(maFill.isCurrent())
                 {
@@ -1234,7 +1295,11 @@ namespace svgio
 
         const basegfx::BColor* SvgStyleAttributes::getStroke() const 
         { 
-            if(maStroke.isSet()) 
+            if(mbIsClipPathContent)
+            {
+                return 0;
+            }
+            else if(maStroke.isSet()) 
             {
                 if(maStroke.isCurrent())
                 {
@@ -1272,7 +1337,11 @@ namespace svgio
 
         const SvgGradientNode* SvgStyleAttributes::getSvgGradientNodeFill() const 
         { 
-            if(mpSvgGradientNodeFill)
+            if(mbIsClipPathContent)
+            {
+                return 0;
+            }
+            else if(mpSvgGradientNodeFill)
             {
                 return mpSvgGradientNodeFill; 
             }
@@ -1291,7 +1360,11 @@ namespace svgio
 
         const SvgGradientNode* SvgStyleAttributes::getSvgGradientNodeStroke() const 
         { 
-            if(mpSvgGradientNodeStroke)
+            if(mbIsClipPathContent)
+            {
+                return 0;
+            }
+            else if(mpSvgGradientNodeStroke)
             {
                 return mpSvgGradientNodeStroke; 
             }
@@ -1310,7 +1383,11 @@ namespace svgio
 
         const SvgNumber SvgStyleAttributes::getStrokeWidth() const 
         { 
-            if(maStrokeWidth.isSet()) 
+            if(mbIsClipPathContent)
+            {
+                return SvgNumber(0.0);
+            }
+            else if(maStrokeWidth.isSet()) 
             {
                 return maStrokeWidth; 
             }
@@ -1339,7 +1416,11 @@ namespace svgio
 
         const SvgNumber SvgStyleAttributes::getFillOpacity() const 
         { 
-            if(maFillOpacity.isSet()) 
+            if(mbIsClipPathContent)
+            {
+                return SvgNumber(1.0);
+            }
+            else if(maFillOpacity.isSet()) 
             {
                 return maFillOpacity; 
             }

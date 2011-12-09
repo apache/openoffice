@@ -33,12 +33,6 @@ namespace svgio
 {
     namespace svgreader
     {
-        enum gradientUnits
-        {
-            userSpaceOnUse,
-            objectBoundingBox
-        };
-
         class SvgGradientNode : public SvgNode
         {
         private:
@@ -59,12 +53,13 @@ namespace svgio
             SvgNumber                   maFy;
 
             /// variable scan values, dependent of given XAttributeList
-            gradientUnits               maGradientUnits;
+            SvgUnits                    maGradientUnits;
             drawinglayer::primitive2d::SpreadMethod   maSpreadMethod;
             basegfx::B2DHomMatrix*      mpaGradientTransform;
 
             /// link to another gradient used as style. If maXLink
-            /// is set, the node can be fetched on demand
+            /// is set, the node can be fetched on demand by using 
+            // tryToFindLink (buffered)
             rtl::OUString               maXLink;
             const SvgGradientNode*      mpXLink;
 
@@ -121,8 +116,8 @@ namespace svgio
             void setFy(const SvgNumber& rFy = SvgNumber()) { maFy = rFy; }
 
             /// gradientUnits content
-            gradientUnits getGradientUnits() const { return maGradientUnits; }
-            void setGradientUnits(const gradientUnits aGradientUnits) { maGradientUnits = aGradientUnits; }
+            SvgUnits getGradientUnits() const { return maGradientUnits; }
+            void setGradientUnits(const SvgUnits aGradientUnits) { maGradientUnits = aGradientUnits; }
 
             /// SpreadMethod content
             drawinglayer::primitive2d::SpreadMethod getSpreadMethod() const { return maSpreadMethod; }

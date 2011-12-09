@@ -75,6 +75,12 @@ namespace svgio
         static rtl::OUString aSVGStrTextAnchor(rtl::OUString::createFromAscii("text-anchor")); 
         static rtl::OUString aSVGStrXmlSpace(rtl::OUString::createFromAscii("xml:space")); 
         static rtl::OUString aSVGStrColor(rtl::OUString::createFromAscii("color")); 
+        static rtl::OUString aSVGStrClipPathNode(rtl::OUString::createFromAscii("clipPath")); 
+        static rtl::OUString aSVGStrClipPathProperty(rtl::OUString::createFromAscii("clip-path")); 
+        static rtl::OUString aSVGStrMask(rtl::OUString::createFromAscii("mask")); 
+        static rtl::OUString aSVGStrClipPathUnits(rtl::OUString::createFromAscii("clipPathUnits")); 
+        static rtl::OUString aSVGStrMaskUnits(rtl::OUString::createFromAscii("maskUnits")); 
+        static rtl::OUString aSVGStrMaskContentUnits(rtl::OUString::createFromAscii("maskContentUnits")); 
 
         static rtl::OUString aSVGStrPreserveAspectRatio(rtl::OUString::createFromAscii("preserveAspectRatio")); 
         static rtl::OUString aSVGStrDefer(rtl::OUString::createFromAscii("defer")); 
@@ -192,6 +198,12 @@ namespace svgio
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrTextAnchor, SVGTokenTextAnchor));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrXmlSpace, SVGTokenXmlSpace));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrColor, SVGTokenColor));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrClipPathNode, SVGTokenClipPathNode));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrClipPathProperty, SVGTokenClipPathProperty));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMask, SVGTokenMask));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrClipPathUnits, SVGTokenClipPathUnits));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMaskUnits, SVGTokenMaskUnits));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMaskContentUnits, SVGTokenMaskContentUnits));
 
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPreserveAspectRatio, SVGTokenPreserveAspectRatio));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrDefer, SVGTokenDefer));

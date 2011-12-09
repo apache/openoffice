@@ -46,12 +46,8 @@ namespace svgio
             SvgNumber                   maHeight;
 
             /// link to content. If maXLink is set, the node can be fetched
-            // on demand by using tryToFindLink in accessors
+            // on demand
             rtl::OUString               maXLink;
-            const SvgNode*              mpXLink;
-
-            /// link on demand
-            void tryToFindLink();
 
         public:
             SvgUseNode(

@@ -32,14 +32,6 @@ namespace svgio
 {
     namespace svgreader
     {
-        void SvgUseNode::tryToFindLink()
-        {
-            if(!mpXLink && maXLink.getLength())
-            {
-                mpXLink = getDocument().findSvgNodeById(maXLink);
-            }
-        }
-
         SvgUseNode::SvgUseNode(
             SvgDocument& rDocument,
             SvgNode* pParent)
@@ -50,8 +42,7 @@ namespace svgio
             maY(),
             maWidth(),
             maHeight(),
-            maXLink(),
-            mpXLink(0)
+            maXLink()
         {
         }
 
@@ -143,7 +134,6 @@ namespace svgio
                     if(nLen && sal_Unicode('#') == aContent[0])
                     {
                         maXLink = aContent.copy(1);
-                        tryToFindLink();
                     }
                     break;
                 }
@@ -153,7 +143,7 @@ namespace svgio
         void SvgUseNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
         {
             // try to access link to content
-            const_cast< SvgUseNode* >(this)->tryToFindLink();
+            const SvgNode* mpXLink = getDocument().findSvgNodeById(maXLink);
 
             if(mpXLink)
             {

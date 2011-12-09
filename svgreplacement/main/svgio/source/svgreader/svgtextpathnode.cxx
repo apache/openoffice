@@ -272,21 +272,12 @@ namespace svgio
 {
     namespace svgreader
     {
-        void SvgTextPathNode::tryToFindLink()
-        {
-            if(!mpXLink && maXLink.getLength())
-            {
-                mpXLink = dynamic_cast< const SvgPathNode* >(getDocument().findSvgNodeById(maXLink));
-            }
-        }
-
         SvgTextPathNode::SvgTextPathNode(
             SvgDocument& rDocument,
             SvgNode* pParent)
         :   SvgNode(SVGTokenTextPath, rDocument, pParent),
             maSvgStyleAttributes(*this),
             maXLink(),
-            mpXLink(0),
             maStartOffset(),
             mbMethod(true),
             mbSpacing(false)
@@ -374,23 +365,15 @@ namespace svgio
                     if(nLen && sal_Unicode('#') == aContent[0])
                     {
                         maXLink = aContent.copy(1);
-                        tryToFindLink();
                     }
                     break;
                 }
             }
         }
 
-        const SvgPathNode* SvgTextPathNode::getReferencedSvgPathNode() const
-        {
-            const_cast< SvgTextPathNode* >(this)->tryToFindLink();
-
-            return mpXLink;
-        }
-
         bool SvgTextPathNode::isValid() const
         {
-            const SvgPathNode* pSvgPathNode = getReferencedSvgPathNode();
+            const SvgPathNode* pSvgPathNode = dynamic_cast< const SvgPathNode* >(getDocument().findSvgNodeById(maXLink));
 
             if(!pSvgPathNode)
             {
@@ -428,7 +411,7 @@ namespace svgio
         {
             if(rPathContent.hasElements())
             {
-                const SvgPathNode* pSvgPathNode = getReferencedSvgPathNode();
+                const SvgPathNode* pSvgPathNode = dynamic_cast< const SvgPathNode* >(getDocument().findSvgNodeById(maXLink));
 
                 if(pSvgPathNode)
                 {

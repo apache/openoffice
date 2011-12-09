@@ -84,6 +84,12 @@ namespace svgio
             SVGTokenTextAnchor,
             SVGTokenXmlSpace,
             SVGTokenColor,
+            SVGTokenClipPathNode,
+            SVGTokenClipPathProperty,
+            SVGTokenMask,
+            SVGTokenClipPathUnits,
+            SVGTokenMaskUnits,
+            SVGTokenMaskContentUnits,
 
             // AspectRatio and params
             SVGTokenPreserveAspectRatio,

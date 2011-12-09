@@ -136,12 +136,22 @@ namespace svgio
 
         void SvgNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
         {
-            if(!bReferenced && (SVGTokenDefs == getType() || SVGTokenSymbol == getType()))
+            if(!bReferenced)
             {
-                // do not decompose defs or symbol nodes (these hold only style-like
-                // objects which may be used by referencing them) except when doing
-                // so controlled referenced
-                return;
+                if(SVGTokenDefs == getType() || 
+                    SVGTokenSymbol == getType() ||
+                    SVGTokenClipPathNode == getType() ||
+                    SVGTokenMask == getType())
+                {
+                    // do not decompose defs or symbol nodes (these hold only style-like
+                    // objects which may be used by referencing them) except when doing
+                    // so controlled referenced
+
+                    // also do not decompose ClipPaths and Masks. These should be embedded
+                    // in a defs node (which gets not decomposed by itself), but you never
+                    // know
+                    return;
+                }
             }
 
             const SvgNodeVector& rChildren = getChildren();
@@ -152,7 +162,32 @@ namespace svgio
 
                 for(sal_uInt32 a(0); a < nCount; a++)
                 {
-                    rChildren[a]->decomposeSvgNode(rTarget, bReferenced);
+                    SvgNode* pCandidate = rChildren[a];
+
+                    if(pCandidate)
+                    {
+                        drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+
+                        pCandidate->decomposeSvgNode(aNewTarget, bReferenced);
+
+                        if(aNewTarget.size())
+                        {
+                            const SvgStyleAttributes* pAttributes = pCandidate->getSvgStyleAttributes();
+
+                            if(pAttributes)
+                            {
+                                // check for global attributes which need to be applied,
+                                // e.g. ClipPath or Mask
+                                pAttributes->decomposePostProcess(aNewTarget);
+                            }
+
+                            rTarget.insert(rTarget.end(), aNewTarget.begin(), aNewTarget.end());
+                        }
+                    }
+                    else
+                    {
+                        OSL_ENSURE(false, "Null-Pointer in child node list (!)");
+                    }
                 }
             }
         }

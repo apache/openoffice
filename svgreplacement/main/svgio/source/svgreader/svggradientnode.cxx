@@ -187,14 +187,11 @@ namespace svgio
                 {
                     if(aContent.getLength())
                     {
-                        static rtl::OUString aStrUserSpaceOnUse(rtl::OUString::createFromAscii("userSpaceOnUse"));
-                        static rtl::OUString aStrObjectBoundingBox(rtl::OUString::createFromAscii("objectBoundingBox"));
-                        
-                        if(aContent.match(aStrUserSpaceOnUse, 0))
+                        if(aContent.match(commonStrings::aStrUserSpaceOnUse, 0))
                         {
                             setGradientUnits(userSpaceOnUse);
                         }
-                        else if(aContent.match(aStrObjectBoundingBox, 0))
+                        else if(aContent.match(commonStrings::aStrObjectBoundingBox, 0))
                         {
                             setGradientUnits(objectBoundingBox);
                         }
