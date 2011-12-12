@@ -90,6 +90,7 @@ namespace svgio
             SVGTokenClipPathUnits,
             SVGTokenMaskUnits,
             SVGTokenMaskContentUnits,
+            SVGTokenClipRule,
 
             // AspectRatio and params
             SVGTokenPreserveAspectRatio,

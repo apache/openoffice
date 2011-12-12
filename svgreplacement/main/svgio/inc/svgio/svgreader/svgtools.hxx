@@ -45,6 +45,8 @@ namespace svgio
         {
             static const rtl::OUString aStrUserSpaceOnUse;
             static const rtl::OUString aStrObjectBoundingBox;
+            static const rtl::OUString aStrNonzero;
+            static const rtl::OUString aStrEvenOdd;
         };
 
         enum SvgUnits

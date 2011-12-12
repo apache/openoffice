@@ -36,6 +36,8 @@
 #include <basegfx/polygon/b2dpolypolygoncutter.hxx>
 #include <svgio/svgreader/svgclippathnode.hxx>
 #include <svgio/svgreader/svgmasknode.hxx>
+#include <basegfx/polygon/b2dpolypolygoncutter.hxx>
+#include <basegfx/polygon/b2dpolypolygontools.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -649,13 +651,23 @@ namespace svgio
             }
 
             drawinglayer::primitive2d::Primitive2DVector aNewPrimitives;
+            basegfx::B2DPolyPolygon aPath(rPath);
+            const bool bNeedToCheckClipRule(SVGTokenPath == mrOwner.getType() || SVGTokenPolygon == mrOwner.getType());
+            const bool bClipPathIsNonzero(!bIsLine && bNeedToCheckClipRule && mbIsClipPathContent && mbClipRule);
+            const bool bFillRuleIsNonzero(!bIsLine && bNeedToCheckClipRule && !mbIsClipPathContent && getFillRule());
+
+            if(bClipPathIsNonzero || bFillRuleIsNonzero)
+            {
+                // nonzero is wanted, solve geometrically (see description on basegfx)
+                aPath = basegfx::tools::createNonzeroConform(aPath);
+            }
 
             if(!bIsLine)
             {
-                add_fill(rPath, aNewPrimitives, aGeoRange);
+                add_fill(aPath, aNewPrimitives, aGeoRange);
             }
 
-            add_stroke(rPath, aNewPrimitives, aGeoRange);
+            add_stroke(aPath, aNewPrimitives, aGeoRange);
 
             if(pTransform && !aNewPrimitives.empty())
             {
@@ -704,7 +716,8 @@ namespace svgio
 
             maFillRule(true),
             maFillRuleSet(false),
-            mbIsClipPathContent(SVGTokenClipPathNode == mrOwner.getType())
+            mbIsClipPathContent(SVGTokenClipPathNode == mrOwner.getType()),
+            mbClipRule(true)
         {
             if(!mbIsClipPathContent)
             {
@@ -763,15 +776,12 @@ namespace svgio
                 {
                     if(aContent.getLength())
                     {
-                        static rtl::OUString aStrNonzero(rtl::OUString::createFromAscii("nonzero"));
-                        static rtl::OUString aStrEvenOdd(rtl::OUString::createFromAscii("evenodd"));
-
-                        if(aContent.match(aStrNonzero))
+                        if(aContent.match(commonStrings::aStrNonzero))
                         {
                             maFillRule = true;
                             maFillRuleSet = true;
                         }
-                        else if(aContent.match(aStrEvenOdd))
+                        else if(aContent.match(commonStrings::aStrEvenOdd))
                         {
                             maFillRule = false;
                             maFillRuleSet = true;
@@ -1256,6 +1266,21 @@ namespace svgio
                 case SVGTokenMask:
                 {
                     readLocalUrl(aContent, maMaskXLink);
+                    break;
+                }
+                case SVGTokenClipRule:
+                {
+                    if(aContent.getLength())
+                    {
+                        if(aContent.match(commonStrings::aStrNonzero))
+                        {
+                            mbClipRule = true;
+                        }
+                        else if(aContent.match(commonStrings::aStrEvenOdd))
+                        {
+                            mbClipRule = false;
+                        }
+                    }
                     break;
                 }
             }

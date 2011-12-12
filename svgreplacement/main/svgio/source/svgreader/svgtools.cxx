@@ -49,6 +49,8 @@ namespace svgio
         // common non-token strings
         const rtl::OUString commonStrings::aStrUserSpaceOnUse(rtl::OUString::createFromAscii("userSpaceOnUse"));
         const rtl::OUString commonStrings::aStrObjectBoundingBox(rtl::OUString::createFromAscii("objectBoundingBox"));
+        const rtl::OUString commonStrings::aStrNonzero(rtl::OUString::createFromAscii("nonzero"));
+        const rtl::OUString commonStrings::aStrEvenOdd(rtl::OUString::createFromAscii("evenodd"));
 
         basegfx::B2DHomMatrix SvgAspectRatio::createLinearMapping(const basegfx::B2DRange& rTarget, const basegfx::B2DRange& rSource)
         {

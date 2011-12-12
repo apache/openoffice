@@ -81,6 +81,7 @@ namespace svgio
         static rtl::OUString aSVGStrClipPathUnits(rtl::OUString::createFromAscii("clipPathUnits")); 
         static rtl::OUString aSVGStrMaskUnits(rtl::OUString::createFromAscii("maskUnits")); 
         static rtl::OUString aSVGStrMaskContentUnits(rtl::OUString::createFromAscii("maskContentUnits")); 
+        static rtl::OUString aSVGStrClipRule(rtl::OUString::createFromAscii("clip-rule")); 
 
         static rtl::OUString aSVGStrPreserveAspectRatio(rtl::OUString::createFromAscii("preserveAspectRatio")); 
         static rtl::OUString aSVGStrDefer(rtl::OUString::createFromAscii("defer")); 
@@ -204,6 +205,7 @@ namespace svgio
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrClipPathUnits, SVGTokenClipPathUnits));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMaskUnits, SVGTokenMaskUnits));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMaskContentUnits, SVGTokenMaskContentUnits));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrClipRule, SVGTokenClipRule));
 
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPreserveAspectRatio, SVGTokenPreserveAspectRatio));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrDefer, SVGTokenDefer));

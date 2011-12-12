@@ -179,6 +179,9 @@ namespace svgio
             // vaules for fill, stroke, strokeWidth and others
             bool                        mbIsClipPathContent : 1;
 
+            // ClipRule setting (only valid wne mbIsClipPathContent == true)
+            bool                        mbClipRule : 1; // true == nonzero(default), false == evenodd
+
             /// internal helpers
             void add_fillGradient(
                 const basegfx::B2DPolyPolygon& rPath, 
@@ -328,7 +331,6 @@ namespace svgio
             // MaskXLink content
             const rtl::OUString getMaskXLink() const { return maMaskXLink; }
             void setMaskXLink(const rtl::OUString& rNew) { maMaskXLink = rNew; }
-
         };
     } // end of namespace svgreader
 } // end of namespace svgio
