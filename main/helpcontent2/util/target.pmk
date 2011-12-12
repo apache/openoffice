@@ -30,10 +30,6 @@ LINKALLADDEDDEPS=$(foreach,i,$(aux_alllangiso) $(subst,LANGUAGE,$i $(LINKADDEDDP
 
 ALLTAR : $(LINKALLTARGETS)
 
-.IF "$(SYSTEM_DB)" != "YES"
-JAVA_LIBRARY_PATH= -Djava.library.path=$(SOLARSHAREDBIN)
-.ENDIF
-
 XSL_DIR*:=$(SOLARBINDIR)
 
 $(LINKALLTARGETS) : $(foreach,i,$(LINKLINKFILES) $(COMMONMISC)$/$$(@:b:s/_/./:e:s/.//)/$i) $(subst,LANGUAGE,$$(@:b:s/_/./:e:s/.//) $(LINKADDEDDEPS)) $(COMMONMISC)$/xhp_changed.flag 
