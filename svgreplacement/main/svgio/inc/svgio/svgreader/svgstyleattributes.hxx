@@ -30,7 +30,10 @@
 //////////////////////////////////////////////////////////////////////////////
 // predefines
 
-namespace svgio { namespace svgreader { class SvgGradientNode; }}
+namespace svgio { namespace svgreader { 
+    class SvgGradientNode; 
+    class SvgMarkerNode; 
+}}
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -166,9 +169,17 @@ namespace svgio
             TextAnchor                  maTextAnchor;
             SvgPaint                    maColor;
 
-            /// link to content. If maXLink is set, the node can be fetched on demand
+            /// link to content. If set, the node can be fetched on demand
             rtl::OUString               maClipPathXLink;
             rtl::OUString               maMaskXLink;
+
+            /// link to markers. If set, the node can be fetched on demand
+            rtl::OUString               maMarkerStartXLink;
+            const SvgMarkerNode*        mpMarkerStartXLink;
+            rtl::OUString               maMarkerMidXLink;
+            const SvgMarkerNode*        mpMarkerMidXLink;
+            rtl::OUString               maMarkerEndXLink;
+            const SvgMarkerNode*        mpMarkerEndXLink;
 
             /// bitfield
             bool                        maFillRule : 1; // true: NonZero, false: EvenOdd
@@ -196,6 +207,22 @@ namespace svgio
                 const basegfx::B2DPolyPolygon& rPath, 
                 drawinglayer::primitive2d::Primitive2DVector& rTarget,
                 const basegfx::B2DRange& rGeoRange) const;
+            bool prepare_singleMarker(
+                drawinglayer::primitive2d::Primitive2DSequence& rMarkerPrimitives,
+                basegfx::B2DHomMatrix& rMarkerTransform,
+                basegfx::B2DRange& rClipRange,
+                const SvgMarkerNode& rMarker) const;
+            void add_singleMarker(
+                drawinglayer::primitive2d::Primitive2DVector& rTarget,
+                const drawinglayer::primitive2d::Primitive2DSequence& rMarkerPrimitives,
+                const basegfx::B2DHomMatrix& rMarkerTransform,
+                const basegfx::B2DRange& rClipRange,
+                const SvgMarkerNode& rMarker,
+                const basegfx::B2DPolygon& rCandidate,
+                const sal_uInt32 nIndex) const;
+            void add_markers(
+                const basegfx::B2DPolyPolygon& rPath, 
+                drawinglayer::primitive2d::Primitive2DVector& rTarget) const;
 
         public:
             /// local attribute scanner
@@ -331,6 +358,22 @@ namespace svgio
             // MaskXLink content
             const rtl::OUString getMaskXLink() const { return maMaskXLink; }
             void setMaskXLink(const rtl::OUString& rNew) { maMaskXLink = rNew; }
+
+            // MarkerStartXLink content
+            const rtl::OUString getMarkerStartXLink() const;
+            const SvgMarkerNode* accessMarkerStartXLink() const;
+            void setMarkerStartXLink(const rtl::OUString& rNew) { maMarkerStartXLink = rNew; }
+
+            // MarkerMidXLink content
+            const rtl::OUString getMarkerMidXLink() const;
+            const SvgMarkerNode* accessMarkerMidXLink() const;
+            void setMarkerMidXLink(const rtl::OUString& rNew) { maMarkerMidXLink = rNew; }
+
+            // MarkerEndXLink content
+            const rtl::OUString getMarkerEndXLink() const;
+            const SvgMarkerNode* accessMarkerEndXLink() const;
+            void setMarkerEndXLink(const rtl::OUString& rNew) { maMarkerEndXLink = rNew; }
+
         };
     } // end of namespace svgreader
 } // end of namespace svgio

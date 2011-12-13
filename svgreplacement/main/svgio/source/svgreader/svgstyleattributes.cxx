@@ -38,6 +38,8 @@
 #include <svgio/svgreader/svgmasknode.hxx>
 #include <basegfx/polygon/b2dpolypolygoncutter.hxx>
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
+#include <svgio/svgreader/svgmarkernode.hxx>
+#include <basegfx/curve/b2dcubicbezier.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -181,24 +183,31 @@ namespace svgio
 
         void SvgStyleAttributes::checkForCssStyle(const rtl::OUString& rClassStr) const
         {
-            if(!mpCssStyleParent && mrOwner.getClass())
+            if(!mpCssStyleParent)
             {
                 const SvgDocument& rDocument = mrOwner.getDocument();
+                const SvgStyleAttributes* pNew = 0;
 
                 if(rDocument.hasSvgStyleAttributesById())
                 {
-                    rtl::OUString aId(rtl::OUString::createFromAscii("."));
-                    aId = aId + *mrOwner.getClass();
-                    
-                    const SvgStyleAttributes* pNew = rDocument.findSvgStyleAttributesById(aId);
-
-                    if(!pNew)
+                    if(mrOwner.getClass())
                     {
-                        aId = rClassStr + aId;
-                    
+                        rtl::OUString aId(rtl::OUString::createFromAscii("."));
+                        aId = aId + *mrOwner.getClass();
                         pNew = rDocument.findSvgStyleAttributesById(aId);
-                    }
 
+                        if(!pNew)
+                        {
+                            aId = rClassStr + aId;
+                    
+                            pNew = rDocument.findSvgStyleAttributesById(aId);
+                        }
+                    }
+                    else if(mrOwner.getId())
+                    {
+                        pNew = rDocument.findSvgStyleAttributesById(*mrOwner.getId());
+                    }
+                    
                     if(pNew)
                     {
                         // found css style, set as parent
@@ -622,6 +631,225 @@ namespace svgio
             }
         }
 
+        double get_markerRotation(
+            const SvgMarkerNode& rMarker,
+            const basegfx::B2DPolygon& rPolygon,
+            const sal_uInt32 nIndex)
+        {
+            double fAngle(0.0);
+            const sal_uInt32 nPointCount(rPolygon.count());
+
+            if(nPointCount)
+            {
+                if(rMarker.getOrientAuto())
+                {
+                    const bool bPrev(rPolygon.isClosed() || nIndex > 0);
+                    basegfx::B2DCubicBezier aSegment;
+                    basegfx::B2DVector aPrev;
+                    basegfx::B2DVector aNext;
+
+                    if(bPrev)
+                    {
+                        rPolygon.getBezierSegment((nIndex - 1) % nPointCount, aSegment);
+                        aPrev = aSegment.getTangent(1.0);
+                    }
+
+                    const bool bNext(rPolygon.isClosed() || nIndex + 1 < nPointCount);
+
+                    if(bNext)
+                    {
+                        rPolygon.getBezierSegment(nIndex % nPointCount, aSegment);
+                        aNext = aSegment.getTangent(0.0);
+                    }
+
+                    if(bPrev && bNext)
+                    {
+                        fAngle = atan2(aPrev.getY() + aNext.getY(), aPrev.getX() + aNext.getX());
+                    }
+                    else if(bPrev)
+                    {
+                        fAngle = atan2(aPrev.getY(), aPrev.getX());
+                    }
+                    else if(bNext)
+                    {
+                        fAngle = atan2(aNext.getY(), aNext.getX());
+                    }
+                }
+                else
+                {
+                    fAngle = rMarker.getAngle();
+                }
+            }
+
+            return fAngle;
+        }
+
+        bool SvgStyleAttributes::prepare_singleMarker(
+            drawinglayer::primitive2d::Primitive2DSequence& rMarkerPrimitives,
+            basegfx::B2DHomMatrix& rMarkerTransform,
+            basegfx::B2DRange& rClipRange,
+            const SvgMarkerNode& rMarker) const
+        {
+            // get marker primitive representation
+            rMarkerPrimitives = rMarker.getMarkerPrimitives();
+
+            if(rMarkerPrimitives.hasElements())
+            {
+                basegfx::B2DRange aPrimitiveRange;
+
+                if(rMarker.getViewBox())
+                {
+                    aPrimitiveRange = *rMarker.getViewBox();
+                }
+                else
+                {
+                    aPrimitiveRange = drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(
+                        rMarkerPrimitives,
+                        drawinglayer::geometry::ViewInformation2D());
+                }
+
+                if(aPrimitiveRange.getWidth() > 0.0 && aPrimitiveRange.getHeight() > 0.0)
+                {
+                    double fTargetWidth(rMarker.getMarkerWidth().isSet() ? rMarker.getMarkerWidth().solve(mrOwner, xcoordinate) : 0.0);
+                    double fTargetHeight(rMarker.getMarkerHeight().isSet() ? rMarker.getMarkerHeight().solve(mrOwner, xcoordinate) : 0.0);
+
+                    if(SvgMarkerNode::strokeWidth == rMarker.getMarkerUnits())
+                    {
+                        // relative to strokeWidth
+                        const double fStrokeWidth(getStrokeWidth().isSet() ? getStrokeWidth().solve(mrOwner, length) : 1.0);
+
+                        fTargetWidth *= fStrokeWidth;
+                        fTargetHeight *= fStrokeWidth;
+                    }
+
+                    if(fTargetWidth > 0.0 && fTargetHeight > 0.0)
+                    {
+                        const basegfx::B2DRange aTargetRange(0.0, 0.0, fTargetWidth, fTargetHeight);
+
+                        // subbstract refX, refY first, it's in marker local coordinates
+                        rMarkerTransform.identity();
+                        rMarkerTransform.translate(
+                            rMarker.getRefX().isSet() ? -rMarker.getRefX().solve(mrOwner, xcoordinate) : 0.0,
+                            rMarker.getRefY().isSet() ? -rMarker.getRefY().solve(mrOwner, ycoordinate) : 0.0);
+
+                        // create mapping
+                        const SvgAspectRatio& rRatio = rMarker.getSvgAspectRatio();
+
+                        if(rRatio.isSet())
+                        {
+                            // let mapping be created from SvgAspectRatio
+                            rMarkerTransform = rRatio.createMapping(aTargetRange, aPrimitiveRange) * rMarkerTransform;
+                            
+                            if(rRatio.isMeetOrSlice())
+                            {
+                                // need to clip
+                                rClipRange = basegfx::B2DRange(0.0, 0.0, 1.0, 1.0);
+                            }
+                        }
+                        else
+                        {
+                            // choose default mapping
+                            rMarkerTransform = rRatio.createLinearMapping(aTargetRange, aPrimitiveRange) * rMarkerTransform;
+                        }
+
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        void SvgStyleAttributes::add_singleMarker(
+            drawinglayer::primitive2d::Primitive2DVector& rTarget,
+            const drawinglayer::primitive2d::Primitive2DSequence& rMarkerPrimitives,
+            const basegfx::B2DHomMatrix& rMarkerTransform,
+            const basegfx::B2DRange& rClipRange,
+            const SvgMarkerNode& rMarker,
+            const basegfx::B2DPolygon& rCandidate,
+            const sal_uInt32 nIndex) const
+        {
+            const sal_uInt32 nPointCount(rCandidate.count());
+
+            if(nPointCount)
+            {
+                // get and apply rotation
+                basegfx::B2DHomMatrix aCombinedTransform(rMarkerTransform);
+                aCombinedTransform.rotate(get_markerRotation(rMarker, rCandidate, nIndex));
+
+                // get and apply target position
+                const basegfx::B2DPoint aPoint(rCandidate.getB2DPoint(nIndex % nPointCount));
+                aCombinedTransform.translate(aPoint.getX(), aPoint.getY());
+
+                // add marker
+                rTarget.push_back(
+                    new drawinglayer::primitive2d::TransformPrimitive2D(
+                        aCombinedTransform,
+                        rMarkerPrimitives));
+            }
+        }
+
+        void SvgStyleAttributes::add_markers(
+            const basegfx::B2DPolyPolygon& rPath,
+            drawinglayer::primitive2d::Primitive2DVector& rTarget) const
+        {
+            // try to access linked markers
+            const SvgMarkerNode* pStart = accessMarkerStartXLink();
+            const SvgMarkerNode* pMid = accessMarkerMidXLink();
+            const SvgMarkerNode* pEnd = accessMarkerEndXLink();
+
+            if(pStart || pMid || pEnd)
+            {
+                const sal_uInt32 nCount(rPath.count());
+
+                for (sal_uInt32 a(0); a < nCount; a++)
+                {
+                    const basegfx::B2DPolygon aCandidate(rPath.getB2DPolygon(a));
+                    const sal_uInt32 nPointCount(aCandidate.count());
+
+                    if(nPointCount)
+                    {
+                        const sal_uInt32 nMarkerCount(aCandidate.isClosed() ? nPointCount + 1 : nPointCount);
+                        drawinglayer::primitive2d::Primitive2DSequence aMarkerPrimitives;
+                        basegfx::B2DHomMatrix aMarkerTransform;
+                        basegfx::B2DRange aClipRange;
+                        const SvgMarkerNode* pPrepared = 0;
+
+                        if(pStart)
+                        {
+                            if(prepare_singleMarker(aMarkerPrimitives, aMarkerTransform, aClipRange, *pStart))
+                            {
+                                pPrepared = pStart;
+                                add_singleMarker(rTarget, aMarkerPrimitives, aMarkerTransform, aClipRange, *pPrepared, aCandidate, 0);
+                            }
+                        }
+
+                        if(pMid && nMarkerCount > 2)
+                        {
+                            if(pMid == pPrepared || prepare_singleMarker(aMarkerPrimitives, aMarkerTransform, aClipRange, *pMid))
+                            {
+                                pPrepared = pMid;
+
+                                for(sal_uInt32 a(1); a < nMarkerCount - 1; a++)
+                                {
+                                    add_singleMarker(rTarget, aMarkerPrimitives, aMarkerTransform, aClipRange, *pPrepared, aCandidate, a);
+                                }
+                            }
+                        }
+
+                        if(pEnd)
+                        {
+                            if(pEnd == pPrepared || prepare_singleMarker(aMarkerPrimitives, aMarkerTransform, aClipRange, *pEnd))
+                            {
+                                pPrepared = pEnd;
+                                add_singleMarker(rTarget, aMarkerPrimitives, aMarkerTransform, aClipRange, *pPrepared, aCandidate, nMarkerCount - 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         void SvgStyleAttributes::add_path(
             const basegfx::B2DPolyPolygon& rPath, 
             drawinglayer::primitive2d::Primitive2DVector& rTarget, 
@@ -651,23 +879,33 @@ namespace svgio
             }
 
             drawinglayer::primitive2d::Primitive2DVector aNewPrimitives;
-            basegfx::B2DPolyPolygon aPath(rPath);
-            const bool bNeedToCheckClipRule(SVGTokenPath == mrOwner.getType() || SVGTokenPolygon == mrOwner.getType());
-            const bool bClipPathIsNonzero(!bIsLine && bNeedToCheckClipRule && mbIsClipPathContent && mbClipRule);
-            const bool bFillRuleIsNonzero(!bIsLine && bNeedToCheckClipRule && !mbIsClipPathContent && getFillRule());
-
-            if(bClipPathIsNonzero || bFillRuleIsNonzero)
-            {
-                // nonzero is wanted, solve geometrically (see description on basegfx)
-                aPath = basegfx::tools::createNonzeroConform(aPath);
-            }
 
             if(!bIsLine)
             {
+                basegfx::B2DPolyPolygon aPath(rPath);
+                const bool bNeedToCheckClipRule(SVGTokenPath == mrOwner.getType() || SVGTokenPolygon == mrOwner.getType());
+                const bool bClipPathIsNonzero(!bIsLine && bNeedToCheckClipRule && mbIsClipPathContent && mbClipRule);
+                const bool bFillRuleIsNonzero(!bIsLine && bNeedToCheckClipRule && !mbIsClipPathContent && getFillRule());
+
+                if(bClipPathIsNonzero || bFillRuleIsNonzero)
+                {
+                    // nonzero is wanted, solve geometrically (see description on basegfx)
+                    aPath = basegfx::tools::createNonzeroConform(aPath);
+                }
+
                 add_fill(aPath, aNewPrimitives, aGeoRange);
             }
 
-            add_stroke(aPath, aNewPrimitives, aGeoRange);
+            add_stroke(rPath, aNewPrimitives, aGeoRange);
+
+            // Svg supports markers for path, polygon, polyline and line
+            if(SVGTokenPath == mrOwner.getType() ||         // path
+                SVGTokenPolygon == mrOwner.getType() ||     // polygon, polyline
+                SVGTokenLine == mrOwner.getType())          // line
+            {
+                // try to add markers
+                add_markers(rPath, aNewPrimitives);
+            }
 
             if(pTransform && !aNewPrimitives.empty())
             {
@@ -713,7 +951,12 @@ namespace svgio
             maColor(),
             maClipPathXLink(),
             maMaskXLink(),
-
+            maMarkerStartXLink(),
+            mpMarkerStartXLink(0),
+            maMarkerMidXLink(),
+            mpMarkerMidXLink(0),
+            maMarkerEndXLink(),
+            mpMarkerEndXLink(0),
             maFillRule(true),
             maFillRuleSet(false),
             mbIsClipPathContent(SVGTokenClipPathNode == mrOwner.getType()),
@@ -1283,6 +1526,27 @@ namespace svgio
                     }
                     break;
                 }
+                case SVGTokenMarker:
+                {
+                    readLocalUrl(aContent, maMarkerEndXLink);
+                    maMarkerStartXLink = maMarkerMidXLink = maMarkerEndXLink;
+                    break;
+                }
+                case SVGTokenMarkerStart:
+                {
+                    readLocalUrl(aContent, maMarkerStartXLink);
+                    break;
+                }
+                case SVGTokenMarkerMid:
+                {
+                    readLocalUrl(aContent, maMarkerMidXLink);
+                    break;
+                }
+                case SVGTokenMarkerEnd:
+                {
+                    readLocalUrl(aContent, maMarkerEndXLink);
+                    break;
+                }
             }
         }
 
@@ -1812,6 +2076,102 @@ namespace svgio
             }
 
             return 0;
+        }
+
+        const rtl::OUString SvgStyleAttributes::getMarkerStartXLink() const 
+        { 
+            if(maMarkerStartXLink.getLength())
+            {
+                return maMarkerStartXLink;
+            }
+
+            const SvgStyleAttributes* pSvgStyleAttributes = getParentStyle();
+
+            if(pSvgStyleAttributes)
+            {
+                return pSvgStyleAttributes->getMarkerStartXLink(); 
+            }
+
+            return rtl::OUString(); 
+        }
+
+        const SvgMarkerNode* SvgStyleAttributes::accessMarkerStartXLink() const
+        {
+            if(!mpMarkerStartXLink)
+            {
+                const rtl::OUString aMarker(getMarkerStartXLink());
+
+                if(aMarker.getLength())
+                {
+                    const_cast< SvgStyleAttributes* >(this)->mpMarkerStartXLink = dynamic_cast< const SvgMarkerNode* >(mrOwner.getDocument().findSvgNodeById(getMarkerStartXLink()));
+                }
+            }
+
+            return mpMarkerStartXLink;
+        }
+
+        const rtl::OUString SvgStyleAttributes::getMarkerMidXLink() const 
+        { 
+            if(maMarkerMidXLink.getLength())
+            {
+                return maMarkerMidXLink;
+            }
+
+            const SvgStyleAttributes* pSvgStyleAttributes = getParentStyle();
+
+            if(pSvgStyleAttributes)
+            {
+                return pSvgStyleAttributes->getMarkerMidXLink(); 
+            }
+
+            return rtl::OUString(); 
+        }
+
+        const SvgMarkerNode* SvgStyleAttributes::accessMarkerMidXLink() const
+        {
+            if(!mpMarkerMidXLink)
+            {
+                const rtl::OUString aMarker(getMarkerMidXLink());
+
+                if(aMarker.getLength())
+                {
+                    const_cast< SvgStyleAttributes* >(this)->mpMarkerMidXLink = dynamic_cast< const SvgMarkerNode* >(mrOwner.getDocument().findSvgNodeById(getMarkerMidXLink()));
+                }
+            }
+
+            return mpMarkerMidXLink;
+        }
+
+        const rtl::OUString SvgStyleAttributes::getMarkerEndXLink() const 
+        { 
+            if(maMarkerEndXLink.getLength())
+            {
+                return maMarkerEndXLink;
+            }
+
+            const SvgStyleAttributes* pSvgStyleAttributes = getParentStyle();
+
+            if(pSvgStyleAttributes)
+            {
+                return pSvgStyleAttributes->getMarkerEndXLink(); 
+            }
+
+            return rtl::OUString(); 
+        }
+
+        const SvgMarkerNode* SvgStyleAttributes::accessMarkerEndXLink() const
+        {
+            if(!mpMarkerEndXLink)
+            {
+                const rtl::OUString aMarker(getMarkerEndXLink());
+
+                if(aMarker.getLength())
+                {
+                    const_cast< SvgStyleAttributes* >(this)->mpMarkerEndXLink = dynamic_cast< const SvgMarkerNode* >(mrOwner.getDocument().findSvgNodeById(getMarkerEndXLink()));
+                }
+            }
+
+            return mpMarkerEndXLink;
         }
 
     } // end of namespace svgreader

@@ -33,6 +33,7 @@ $(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svggradientstopn
 $(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svgimagenode.hxx,svgio/svgreader/svgimagenode.hxx))
 $(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svglinenode.hxx,svgio/svgreader/svglinenode.hxx))
 $(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svgnode.hxx,svgio/svgreader/svgnode.hxx))
+$(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svgmarkernode.hxx,svgio/svgreader/svgmarkernode.hxx))
 $(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svgmasknode.hxx,svgio/svgreader/svgmasknode.hxx))
 $(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svgpaint.hxx,svgio/svgreader/svgpaint.hxx))
 $(eval $(call gb_Package_add_file,svgio_inc,inc/svgio/svgreader/svgpathnode.hxx,svgio/svgreader/svgpathnode.hxx))

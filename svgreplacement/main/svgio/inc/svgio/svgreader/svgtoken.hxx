@@ -91,6 +91,16 @@ namespace svgio
             SVGTokenMaskUnits,
             SVGTokenMaskContentUnits,
             SVGTokenClipRule,
+            SVGTokenMarker,
+            SVGTokenMarkerStart,
+            SVGTokenMarkerMid,
+            SVGTokenMarkerEnd,
+            SVGTokenRefX,
+            SVGTokenRefY,
+            SVGTokenMarkerUnits,
+            SVGTokenMarkerWidth,
+            SVGTokenMarkerHeight,
+            SVGTokenOrient,
 
             // AspectRatio and params
             SVGTokenPreserveAspectRatio,

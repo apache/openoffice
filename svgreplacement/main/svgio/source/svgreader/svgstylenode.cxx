@@ -82,6 +82,7 @@ namespace svgio
                 sal_Int32 nPos(0);
                 rtl::OUStringBuffer aTokenValue;
 
+                skip_char(aContent, sal_Unicode(' '), sal_Unicode('#'), nPos, nLen);
                 copyToLimiter(aContent, sal_Unicode('{'), nPos, aTokenValue, nLen);
                 const rtl::OUString aStyleName = aTokenValue.makeStringAndClear().trim();
 

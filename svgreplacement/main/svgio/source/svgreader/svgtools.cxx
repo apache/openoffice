@@ -1106,8 +1106,8 @@ namespace svgio
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(')'), nPos, nLen);
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
 
-                                    const double fX(aX.solve(rInfoProvider, xcoordinate));
-                                    const double fY(aY.solve(rInfoProvider, ycoordinate));
+                                    const double fX(aX.isSet() ? aX.solve(rInfoProvider, xcoordinate) : 0.0);
+                                    const double fY(aY.isSet() ? aY.solve(rInfoProvider, ycoordinate) : 0.0);
 
                                     if(!basegfx::fTools::equalZero(fX) || !basegfx::fTools::equalZero(fY))
                                     {

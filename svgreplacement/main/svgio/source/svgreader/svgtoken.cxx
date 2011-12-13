@@ -82,6 +82,16 @@ namespace svgio
         static rtl::OUString aSVGStrMaskUnits(rtl::OUString::createFromAscii("maskUnits")); 
         static rtl::OUString aSVGStrMaskContentUnits(rtl::OUString::createFromAscii("maskContentUnits")); 
         static rtl::OUString aSVGStrClipRule(rtl::OUString::createFromAscii("clip-rule")); 
+        static rtl::OUString aSVGStrMarker(rtl::OUString::createFromAscii("marker")); 
+        static rtl::OUString aSVGStrMarkerStart(rtl::OUString::createFromAscii("marker-start")); 
+        static rtl::OUString aSVGStrMarkerMid(rtl::OUString::createFromAscii("marker-mid")); 
+        static rtl::OUString aSVGStrMarkerEnd(rtl::OUString::createFromAscii("marker-end")); 
+        static rtl::OUString aSVGStrRefX(rtl::OUString::createFromAscii("refX")); 
+        static rtl::OUString aSVGStrRefY(rtl::OUString::createFromAscii("refY")); 
+        static rtl::OUString aSVGStrMarkerUnits(rtl::OUString::createFromAscii("markerUnits")); 
+        static rtl::OUString aSVGStrMarkerWidth(rtl::OUString::createFromAscii("markerWidth")); 
+        static rtl::OUString aSVGStrMarkerHeight(rtl::OUString::createFromAscii("markerHeight")); 
+        static rtl::OUString aSVGStrOrient(rtl::OUString::createFromAscii("orient")); 
 
         static rtl::OUString aSVGStrPreserveAspectRatio(rtl::OUString::createFromAscii("preserveAspectRatio")); 
         static rtl::OUString aSVGStrDefer(rtl::OUString::createFromAscii("defer")); 
@@ -206,6 +216,16 @@ namespace svgio
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMaskUnits, SVGTokenMaskUnits));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMaskContentUnits, SVGTokenMaskContentUnits));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrClipRule, SVGTokenClipRule));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarker, SVGTokenMarker));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerStart, SVGTokenMarkerStart));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerMid, SVGTokenMarkerMid));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerEnd, SVGTokenMarkerEnd));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrRefX, SVGTokenRefX));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrRefY, SVGTokenRefY));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerUnits, SVGTokenMarkerUnits));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerWidth, SVGTokenMarkerWidth));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerHeight, SVGTokenMarkerHeight));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrOrient, SVGTokenOrient));
 
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPreserveAspectRatio, SVGTokenPreserveAspectRatio));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrDefer, SVGTokenDefer));
