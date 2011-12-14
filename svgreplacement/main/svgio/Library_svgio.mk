@@ -72,6 +72,7 @@ $(eval $(call gb_Library_add_exception_objects,svgio,\
     svgio/source/svgreader/svgnode \
     svgio/source/svgreader/svgpaint \
     svgio/source/svgreader/svgpathnode \
+    svgio/source/svgreader/svgpatternnode \
     svgio/source/svgreader/svgpolynode \
     svgio/source/svgreader/svgrectnode \
     svgio/source/svgreader/svgstyleattributes \

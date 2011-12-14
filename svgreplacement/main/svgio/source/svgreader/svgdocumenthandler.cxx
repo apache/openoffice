@@ -48,6 +48,7 @@
 #include <svgio/svgreader/svgclippathnode.hxx>
 #include <svgio/svgreader/svgmasknode.hxx>
 #include <svgio/svgreader/svgmarkernode.hxx>
+#include <svgio/svgreader/svgpatternnode.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -324,6 +325,15 @@ namespace svgio
                         break;
                     }
 
+                    /// structural element pattern
+                    case SVGTokenPattern:
+                    {
+                        /// new node for pattern
+                        mpTarget = new SvgPatternNode(maDocument, mpTarget);
+                        mpTarget->parseAttributes(xAttribs);
+                        break;
+                    }
+
                     default:
                     {
                         /// invalid token, ignore
@@ -389,6 +399,9 @@ namespace svgio
 
                     /// structural element marker
                     case SVGTokenMarker:
+
+                    /// structural element pattern
+                    case SVGTokenPattern:
 
                     /// content handling after parsing
                     {

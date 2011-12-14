@@ -55,6 +55,7 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/metafileprimitive2d.hxx,drawinglayer/primitive2d/metafileprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx,drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/pagepreviewprimitive2d.hxx,drawinglayer/primitive2d/pagepreviewprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/patternfillprimitive2d.hxx,drawinglayer/primitive2d/patternfillprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/pointarrayprimitive2d.hxx,drawinglayer/primitive2d/pointarrayprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/polygonprimitive2d.hxx,drawinglayer/primitive2d/polygonprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/polypolygonprimitive2d.hxx,drawinglayer/primitive2d/polypolygonprimitive2d.hxx))

@@ -92,6 +92,10 @@ namespace svgio
         static rtl::OUString aSVGStrMarkerWidth(rtl::OUString::createFromAscii("markerWidth")); 
         static rtl::OUString aSVGStrMarkerHeight(rtl::OUString::createFromAscii("markerHeight")); 
         static rtl::OUString aSVGStrOrient(rtl::OUString::createFromAscii("orient")); 
+        static rtl::OUString aSVGStrPattern(rtl::OUString::createFromAscii("pattern")); 
+        static rtl::OUString aSVGStrPatternUnits(rtl::OUString::createFromAscii("patternUnits")); 
+        static rtl::OUString aSVGStrPatternContentUnits(rtl::OUString::createFromAscii("patternContentUnits")); 
+        static rtl::OUString aSVGStrPatternTransform(rtl::OUString::createFromAscii("patternTransform")); 
 
         static rtl::OUString aSVGStrPreserveAspectRatio(rtl::OUString::createFromAscii("preserveAspectRatio")); 
         static rtl::OUString aSVGStrDefer(rtl::OUString::createFromAscii("defer")); 
@@ -226,6 +230,10 @@ namespace svgio
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerWidth, SVGTokenMarkerWidth));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrMarkerHeight, SVGTokenMarkerHeight));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrOrient, SVGTokenOrient));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPattern, SVGTokenPattern));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPatternUnits, SVGTokenPatternUnits));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPatternContentUnits, SVGTokenPatternContentUnits));
+                aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPatternTransform, SVGTokenPatternTransform));
 
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrPreserveAspectRatio, SVGTokenPreserveAspectRatio));
                 aSVGTokenMapperList.insert(SVGTokenValueType(aSVGStrDefer, SVGTokenDefer));

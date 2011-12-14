@@ -101,6 +101,10 @@ namespace svgio
             SVGTokenMarkerWidth,
             SVGTokenMarkerHeight,
             SVGTokenOrient,
+            SVGTokenPattern,
+            SVGTokenPatternUnits,
+            SVGTokenPatternContentUnits,
+            SVGTokenPatternTransform,
 
             // AspectRatio and params
             SVGTokenPreserveAspectRatio,

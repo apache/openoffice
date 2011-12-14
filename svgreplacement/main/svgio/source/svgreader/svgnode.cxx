@@ -141,8 +141,9 @@ namespace svgio
                 if(SVGTokenDefs == getType() || 
                     SVGTokenSymbol == getType() ||
                     SVGTokenClipPathNode == getType() ||
+                    SVGTokenMask == getType() ||
                     SVGTokenMarker == getType() ||
-                    SVGTokenMask == getType() )
+                    SVGTokenPattern == getType())
                 {
                     // do not decompose defs or symbol nodes (these hold only style-like
                     // objects which may be used by referencing them) except when doing
@@ -151,6 +152,9 @@ namespace svgio
                     // also do not decompose ClipPaths and Masks. These should be embedded
                     // in a defs node (which gets not decomposed by itself), but you never
                     // know
+
+                    // also not directly used are Markers and Patterns, only indirecty used
+                    // by reference
                     return;
                 }
             }

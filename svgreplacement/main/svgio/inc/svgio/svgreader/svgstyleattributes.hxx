@@ -32,6 +32,7 @@
 
 namespace svgio { namespace svgreader { 
     class SvgGradientNode; 
+    class SvgPatternNode; 
     class SvgMarkerNode; 
 }}
 
@@ -151,6 +152,8 @@ namespace svgio
             SvgNumber                   maStopOpacity;
             const SvgGradientNode*      mpSvgGradientNodeFill;
             const SvgGradientNode*      mpSvgGradientNodeStroke;
+            const SvgPatternNode*       mpSvgPatternNodeFill;
+            const SvgPatternNode*       mpSvgPatternNodeStroke;
             SvgNumber                   maFillOpacity;
             SvgNumberVector             maStrokeDasharray;
             SvgNumber                   maStrokeDashOffset;
@@ -198,6 +201,16 @@ namespace svgio
                 const basegfx::B2DPolyPolygon& rPath, 
                 drawinglayer::primitive2d::Primitive2DVector& rTarget, 
                 const SvgGradientNode& rFillGradient,
+                const basegfx::B2DRange& rGeoRange) const;
+            void add_fillPatternTransform(
+                const basegfx::B2DPolyPolygon& rPath, 
+                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                const SvgPatternNode& rFillGradient,
+                const basegfx::B2DRange& rGeoRange) const;
+            void add_fillPattern(
+                const basegfx::B2DPolyPolygon& rPath, 
+                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                const SvgPatternNode& rFillGradient,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_fill(
                 const basegfx::B2DPolyPolygon& rPath, 
@@ -274,9 +287,17 @@ namespace svgio
             const SvgGradientNode* getSvgGradientNodeFill() const;
             void setSvgGradientNodeFill(const SvgGradientNode* pNew) { mpSvgGradientNodeFill = pNew; }
 
+            /// access to evtl. set fill pattern
+            const SvgPatternNode* getSvgPatternNodeFill() const;
+            void setSvgPatternNodeFill(const SvgPatternNode* pNew) { mpSvgPatternNodeFill = pNew; }
+
             /// access to evtl. set stroke gradient
             const SvgGradientNode* getSvgGradientNodeStroke() const;
             void setSvgGradientNodeStroke(const SvgGradientNode* pNew) { mpSvgGradientNodeStroke = pNew; }
+
+            /// access to evtl. set stroke pattern
+            const SvgPatternNode* getSvgPatternNodeStroke() const;
+            void setSvgPatternNodeStroke(const SvgPatternNode* pNew) { mpSvgPatternNodeStroke = pNew; }
 
             /// fill opacity content
             const SvgNumber getFillOpacity() const;
