@@ -101,53 +101,50 @@ namespace svgio
             }
         }
 
-        void SvgClipPathNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgClipPathNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
-            drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+            drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
             // decompose childs
             SvgNode::decomposeSvgNode(aNewTarget, bReferenced);
 
-            if(!aNewTarget.empty())
+            if(aNewTarget.hasElements())
             {
                 if(getTransform())
                 {
                     // create embedding group element with transformation
-                    rTarget.push_back(
+                    const drawinglayer::primitive2d::Primitive2DReference xRef(
                         new drawinglayer::primitive2d::TransformPrimitive2D(
                             *getTransform(),
-                            drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget)));
-                    aNewTarget.clear();
+                            aNewTarget));
+
+                    drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(rTarget, xRef);
                 }
                 else
                 {
                     // append to current target
-                    rTarget.insert(rTarget.end(), aNewTarget.begin(), aNewTarget.end());
+                    drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aNewTarget);
                 }
             }
         }
 
-        void SvgClipPathNode::apply(drawinglayer::primitive2d::Primitive2DVector& rTarget) const
+        void SvgClipPathNode::apply(drawinglayer::primitive2d::Primitive2DSequence& rContent) const
         {
-            if(rTarget.size())
+            if(rContent.hasElements())
             {
-                drawinglayer::primitive2d::Primitive2DVector aClipTarget;
+                drawinglayer::primitive2d::Primitive2DSequence aClipTarget;
 
                 // get clipPath definition as primitives
                 decomposeSvgNode(aClipTarget, true);
 
-                if(aClipTarget.size())
+                if(aClipTarget.hasElements())
                 {
-                    // put content and clip definition to primitive sequence
-                    const drawinglayer::primitive2d::Primitive2DSequence aContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(rTarget));
-                    drawinglayer::primitive2d::Primitive2DSequence aClip(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aClipTarget));
-
                     if(objectBoundingBox == getClipPathUnits())
                     {
                         // clip is object-relative, embed in content transformation
                         const basegfx::B2DRange aContentRange(
                             drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(
-                                aContent,
+                                rContent,
                                 drawinglayer::geometry::ViewInformation2D()));
 
                         const drawinglayer::primitive2d::Primitive2DReference xTransform(
@@ -155,26 +152,27 @@ namespace svgio
                                 basegfx::tools::createScaleTranslateB2DHomMatrix(
                                     aContentRange.getRange(),
                                     aContentRange.getMinimum()),
-                                aClip));
+                                aClipTarget));
 
-                        aClip = drawinglayer::primitive2d::Primitive2DSequence(&xTransform, 1);
+                        aClipTarget = drawinglayer::primitive2d::Primitive2DSequence(&xTransform, 1);
                     }
 
                     // redefine target. Use TransparencePrimitive2D with created clip
                     // geometry. Using the automatically set mbIsClipPathContent at 
                     // SvgStyleAttributes the clip definition is without fill, stroke, 
                     // and strokeWidth and forced to black, thus being 100% opaque
-                    rTarget.clear();
-                    rTarget.push_back(
+                    const drawinglayer::primitive2d::Primitive2DReference xEmbedTransparence(
                         new drawinglayer::primitive2d::TransparencePrimitive2D(
-                            aContent,
-                            aClip));
+                            rContent,
+                            aClipTarget));
+
+                    rContent = drawinglayer::primitive2d::Primitive2DSequence(&xEmbedTransparence, 1);
                 }
                 else
                 {
                     // An empty clipping path will completely clip away the element that had 
                     // the ‘clip-path’ property applied. (Svg spec)
-                    rTarget.clear();
+                    rContent.realloc(0);
                 }
             }
         }

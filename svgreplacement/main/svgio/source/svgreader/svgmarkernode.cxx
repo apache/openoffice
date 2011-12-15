@@ -187,14 +187,7 @@ namespace svgio
         {
             if(!aPrimitives.hasElements())
             {
-                drawinglayer::primitive2d::Primitive2DVector aNewTarget;
-
-                decomposeSvgNode(aNewTarget, true);
-
-                if(aNewTarget.size())
-                {
-                    const_cast< SvgMarkerNode* >(this)->aPrimitives = drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget);
-                }
+                decomposeSvgNode(const_cast< SvgMarkerNode* >(this)->aPrimitives, true);
             }
 
             return aPrimitives;

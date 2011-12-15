@@ -108,14 +108,21 @@ namespace svgio
             }
         }
 
-        void SvgPathNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgPathNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             // fill and/or stroke needed, also a path
             const SvgStyleAttributes* pStyle = getSvgStyleAttributes();
             
             if(pStyle && getPath())
             {
-                pStyle->add_path(*getPath(), rTarget, getTransform());
+                drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
+
+                pStyle->add_path(*getPath(), aNewTarget);
+
+                if(aNewTarget.hasElements())
+                {
+                    pStyle->add_postProcess(rTarget, aNewTarget, getTransform());
+                }
             }
         }
     } // end of namespace svgreader

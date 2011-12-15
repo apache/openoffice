@@ -219,37 +219,6 @@ namespace svgio
             }
         }
 
-        void SvgStyleAttributes::decomposePostProcess(drawinglayer::primitive2d::Primitive2DVector& rTarget) const
-        {
-            if(rTarget.size())
-            {
-                if(getClipPathXLink().getLength())
-                {
-                    // try to access linked ClipPath
-                    const SvgClipPathNode* mpClip = dynamic_cast< const SvgClipPathNode* >(mrOwner.getDocument().findSvgNodeById(getClipPathXLink()));
-
-                    if(mpClip)
-                    {
-                        mpClip->apply(rTarget);
-                    }
-                }
-            }
-
-            if(rTarget.size()) // test again, applied clipPath may have lead to empty geometry
-            {
-                if(getMaskXLink().getLength())
-                {
-                    // try to access linked Mask
-                    const SvgMaskNode* mpMask = dynamic_cast< const SvgMaskNode* >(mrOwner.getDocument().findSvgNodeById(getMaskXLink()));
-
-                    if(mpMask)
-                    {
-                        mpMask->apply(rTarget);
-                    }
-                }
-            }
-        }
-
         const SvgStyleAttributes* SvgStyleAttributes::getParentStyle() const 
         { 
             if(mpCssStyleParent)
@@ -266,10 +235,10 @@ namespace svgio
         }
 
         void SvgStyleAttributes::add_text(
-            drawinglayer::primitive2d::Primitive2DVector& rTarget, 
-            drawinglayer::primitive2d::Primitive2DVector& rSource) const
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+            drawinglayer::primitive2d::Primitive2DSequence& rSource) const
         {
-            if(!rSource.empty())
+            if(rSource.hasElements())
             {
                 // at this point the primitives in rSource are of type TextSimplePortionPrimitive2D
                 // or TextDecoratedPortionPrimitive2D and have the Fill Color (pAttributes->getFill())
@@ -283,9 +252,6 @@ namespace svgio
                 const SvgPatternNode* pStrokePattern = getSvgPatternNodeStroke();
                 basegfx::B2DPolyPolygon aMergedArea;
                 
-                // put primitives into Primitive2DSequence to have clear owner definitions
-                const drawinglayer::primitive2d::Primitive2DSequence aSeq(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(rSource));
-
                 if(pFillGradient || pFillPattern || pStroke || pStrokeGradient || pStrokePattern)
                 {
                     // text geometry is needed, create
@@ -294,7 +260,7 @@ namespace svgio
                     drawinglayer::processor2d::TextAsPolygonExtractor2D aExtractor(aViewInformation2D);
 
                     // proccess
-                    aExtractor.process(aSeq);
+                    aExtractor.process(rSource);
 
                     // get results
                     const drawinglayer::processor2d::TextAsPolygonDataNodeVector& rResult = aExtractor.getTarget();
@@ -332,7 +298,7 @@ namespace svgio
                 else if(pFill)
                 {
                     // add the already prepared primitives for single color fill
-                    rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aSeq));
+                    drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, rSource);
                 }
 
                 // add stroke
@@ -346,7 +312,7 @@ namespace svgio
 
         void SvgStyleAttributes::add_fillGradient(
             const basegfx::B2DPolyPolygon& rPath, 
-            drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
             const SvgGradientNode& rFillGradient,
             const basegfx::B2DRange& rGeoRange) const
         {
@@ -404,7 +370,8 @@ namespace svgio
                         aEnd *= aGeoToUnit;
                     }
 
-                    rTarget.push_back(
+                    drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                        rTarget,
                         new drawinglayer::primitive2d::SvgLinearGradientPrimitive2D(
                             rPath, 
                             aSvgGradientEntryVector,
@@ -463,7 +430,8 @@ namespace svgio
                         }
                     }
 
-                    rTarget.push_back(
+                    drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                        rTarget,
                         new drawinglayer::primitive2d::SvgRadialGradientPrimitive2D(
                             rPath, 
                             aSvgGradientEntryVector,
@@ -477,7 +445,7 @@ namespace svgio
 
         void SvgStyleAttributes::add_fillPatternTransform(
             const basegfx::B2DPolyPolygon& rPath, 
-            drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
             const SvgPatternNode& rFillPattern,
             const basegfx::B2DRange& rGeoRange) const
         {
@@ -488,20 +456,19 @@ namespace svgio
                 // path and back-transforming the result
                 basegfx::B2DPolyPolygon aPath(rPath);
                 basegfx::B2DHomMatrix aInv(*rFillPattern.getPatternTransform());
-                drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
                 aInv.invert();
                 aPath.transform(aInv);
                 add_fillPattern(aPath, aNewTarget, rFillPattern, aPath.getB2DRange());
 
-                if(aNewTarget.size())
+                if(aNewTarget.hasElements())
                 {
-                    const drawinglayer::primitive2d::Primitive2DSequence aSequence(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
-
-                    rTarget.push_back(
+                    drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                        rTarget,
                         new drawinglayer::primitive2d::TransformPrimitive2D(
                             *rFillPattern.getPatternTransform(),
-                            aSequence));
+                            aNewTarget));
                 }
             }
             else
@@ -513,7 +480,7 @@ namespace svgio
 
         void SvgStyleAttributes::add_fillPattern(
             const basegfx::B2DPolyPolygon& rPath, 
-            drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
             const SvgPatternNode& rFillPattern,
             const basegfx::B2DRange& rGeoRange) const
         {
@@ -591,7 +558,8 @@ namespace svgio
                         }
 
                         // embed in PatternFillPrimitive2D
-                        rTarget.push_back(
+                        drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                            rTarget,
                             new drawinglayer::primitive2d::PatternFillPrimitive2D(
                                 rPath,
                                 aPrimitives,
@@ -603,7 +571,7 @@ namespace svgio
 
         void SvgStyleAttributes::add_fill(
             const basegfx::B2DPolyPolygon& rPath, 
-            drawinglayer::primitive2d::Primitive2DVector& rTarget,
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget,
             const basegfx::B2DRange& rGeoRange) const
         {
             const basegfx::BColor* pFill = getFill();
@@ -616,7 +584,7 @@ namespace svgio
 
                 if(basegfx::fTools::more(fFillOpacity, 0.0))
                 {
-                    drawinglayer::primitive2d::Primitive2DVector aNewFill;
+                    drawinglayer::primitive2d::Primitive2DSequence aNewFill;
 
                     if(pFillGradient)
                     {
@@ -631,26 +599,27 @@ namespace svgio
                     else // if(pFill)
                     {
                         // create fill content
-                        aNewFill.push_back(
-                            new drawinglayer::primitive2d::PolyPolygonColorPrimitive2D(
-                                rPath, 
-                                *pFill));
+                        aNewFill.realloc(1);
+                        aNewFill[0] = new drawinglayer::primitive2d::PolyPolygonColorPrimitive2D(
+                            rPath, 
+                            *pFill);
                     }
 
-                    if(!aNewFill.empty())
+                    if(aNewFill.hasElements())
                     {
                         if(basegfx::fTools::less(fFillOpacity, 1.0))
                         {
                             // embed in UnifiedTransparencePrimitive2D
-                            rTarget.push_back(
+                            drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                                rTarget,
                                 new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                                    drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewFill),
+                                    aNewFill,
                                     1.0 - fFillOpacity));
                         }
                         else
                         {
                             // append
-                            rTarget.insert(rTarget.end(), aNewFill.begin(), aNewFill.end());
+                            drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aNewFill);
                         }
                     }
                 }
@@ -659,7 +628,7 @@ namespace svgio
 
         void SvgStyleAttributes::add_stroke(
             const basegfx::B2DPolyPolygon& rPath, 
-            drawinglayer::primitive2d::Primitive2DVector& rTarget,
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget,
             const basegfx::B2DRange& rGeoRange) const
         {
             const basegfx::BColor* pStroke = getStroke();
@@ -668,7 +637,7 @@ namespace svgio
 
             if(pStroke || pStrokeGradient || pStrokePattern)
             {
-                drawinglayer::primitive2d::Primitive2DVector aNewStroke;
+                drawinglayer::primitive2d::Primitive2DSequence aNewStroke;
                 const double fStrokeOpacity(getStrokeOpacity().solve(mrOwner, length));
 
                 if(basegfx::fTools::more(fStrokeOpacity, 0.0))
@@ -691,7 +660,7 @@ namespace svgio
                         // todo: Handle getStrokeLinecap()
                         
                         // prepare line attribute
-                        drawinglayer::primitive2d::PolyPolygonStrokePrimitive2D* pNewLinePrimitive = 0;
+                        drawinglayer::primitive2d::Primitive2DReference aNewLinePrimitive;
                         const drawinglayer::attribute::LineAttribute aLineAttribute(
                             pStroke ? *pStroke : basegfx::BColor(0.0, 0.0, 0.0),
                             fStrokeWidth,
@@ -699,7 +668,7 @@ namespace svgio
 
                         if(aDashArray.empty())
                         {
-                            pNewLinePrimitive = new drawinglayer::primitive2d::PolyPolygonStrokePrimitive2D(
+                            aNewLinePrimitive = new drawinglayer::primitive2d::PolyPolygonStrokePrimitive2D(
                                 rPath, 
                                 aLineAttribute);
                         }
@@ -707,7 +676,7 @@ namespace svgio
                         {
                             const drawinglayer::attribute::StrokeAttribute aStrokeAttribute(aDashArray);
 
-                            pNewLinePrimitive = new drawinglayer::primitive2d::PolyPolygonStrokePrimitive2D(
+                            aNewLinePrimitive = new drawinglayer::primitive2d::PolyPolygonStrokePrimitive2D(
                                 rPath, 
                                 aLineAttribute,
                                 aDashArray);
@@ -716,8 +685,7 @@ namespace svgio
                         if(pStrokeGradient || pStrokePattern)
                         {
                             // put primitive into Primitive2DReference and Primitive2DSequence
-                            const drawinglayer::primitive2d::Primitive2DReference aRef(pNewLinePrimitive);
-                            const drawinglayer::primitive2d::Primitive2DSequence aSeq(&aRef, 1);
+                            const drawinglayer::primitive2d::Primitive2DSequence aSeq(&aNewLinePrimitive, 1);
 
                             // use neutral ViewInformation and create LineGeometryExtractor2D
                             const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
@@ -754,23 +722,24 @@ namespace svgio
                         }
                         else // if(pStroke)
                         {
-                            aNewStroke.push_back(pNewLinePrimitive);
+                            drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(aNewStroke, aNewLinePrimitive);
                         }
 
-                        if(!aNewStroke.empty())
+                        if(aNewStroke.hasElements())
                         {
                             if(basegfx::fTools::less(fStrokeOpacity, 1.0))
                             {
                                 // embed in UnifiedTransparencePrimitive2D
-                                rTarget.push_back(
+                                drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                                    rTarget,
                                     new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                                        drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewStroke),
+                                        aNewStroke,
                                         1.0 - fStrokeOpacity));
                             }
                             else
                             {
                                 // append
-                                rTarget.insert(rTarget.end(), aNewStroke.begin(), aNewStroke.end());
+                                drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aNewStroke);
                             }
                         }
                     }
@@ -837,6 +806,10 @@ namespace svgio
             basegfx::B2DRange& rClipRange,
             const SvgMarkerNode& rMarker) const
         {
+            // reset return values
+            rMarkerTransform.identity();
+            rClipRange.reset();
+
             // get marker primitive representation
             rMarkerPrimitives = rMarker.getMarkerPrimitives();
 
@@ -874,7 +847,6 @@ namespace svgio
                         const basegfx::B2DRange aTargetRange(0.0, 0.0, fTargetWidth, fTargetHeight);
 
                         // subbstract refX, refY first, it's in marker local coordinates
-                        rMarkerTransform.identity();
                         rMarkerTransform.translate(
                             rMarker.getRefX().isSet() ? -rMarker.getRefX().solve(mrOwner, xcoordinate) : 0.0,
                             rMarker.getRefY().isSet() ? -rMarker.getRefY().solve(mrOwner, ycoordinate) : 0.0);
@@ -908,7 +880,7 @@ namespace svgio
         }
 
         void SvgStyleAttributes::add_singleMarker(
-            drawinglayer::primitive2d::Primitive2DVector& rTarget,
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget,
             const drawinglayer::primitive2d::Primitive2DSequence& rMarkerPrimitives,
             const basegfx::B2DHomMatrix& rMarkerTransform,
             const basegfx::B2DRange& rClipRange,
@@ -929,7 +901,8 @@ namespace svgio
                 aCombinedTransform.translate(aPoint.getX(), aPoint.getY());
 
                 // add marker
-                rTarget.push_back(
+                drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(
+                    rTarget,
                     new drawinglayer::primitive2d::TransformPrimitive2D(
                         aCombinedTransform,
                         rMarkerPrimitives));
@@ -938,7 +911,7 @@ namespace svgio
 
         void SvgStyleAttributes::add_markers(
             const basegfx::B2DPolyPolygon& rPath,
-            drawinglayer::primitive2d::Primitive2DVector& rTarget) const
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget) const
         {
             // try to access linked markers
             const SvgMarkerNode* pStart = accessMarkerStartXLink();
@@ -999,8 +972,7 @@ namespace svgio
 
         void SvgStyleAttributes::add_path(
             const basegfx::B2DPolyPolygon& rPath, 
-            drawinglayer::primitive2d::Primitive2DVector& rTarget, 
-            const basegfx::B2DHomMatrix* pTransform) const
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget) const
         {
             const bool bIsLine(1 == rPath.count()
                 && !rPath.areControlPointsUsed()
@@ -1032,8 +1004,6 @@ namespace svgio
                 return;
             }
 
-            drawinglayer::primitive2d::Primitive2DVector aNewTarget;
-
             if(!bIsLine)
             {
                 basegfx::B2DPolyPolygon aPath(rPath);
@@ -1047,10 +1017,10 @@ namespace svgio
                     aPath = basegfx::tools::createNonzeroConform(aPath);
                 }
 
-                add_fill(aPath, aNewTarget, aGeoRange);
+                add_fill(aPath, rTarget, aGeoRange);
             }
 
-            add_stroke(rPath, aNewTarget, aGeoRange);
+            add_stroke(rPath, rTarget, aGeoRange);
 
             // Svg supports markers for path, polygon, polyline and line
             if(SVGTokenPath == mrOwner.getType() ||         // path
@@ -1058,38 +1028,78 @@ namespace svgio
                 SVGTokenLine == mrOwner.getType())          // line
             {
                 // try to add markers
-                add_markers(rPath, aNewTarget);
+                add_markers(rPath, rTarget);
             }
+        }
 
-            if(aNewTarget.size())
+        void SvgStyleAttributes::add_postProcess(
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+            const drawinglayer::primitive2d::Primitive2DSequence& rSource, 
+            const basegfx::B2DHomMatrix* pTransform) const
+        {
+            if(rSource.hasElements())
             {
-                // put content to primitive sequence
-                drawinglayer::primitive2d::Primitive2DSequence aContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
+                const double fOpacity(getOpacity().getNumber());
+
+                if(basegfx::fTools::equalZero(fOpacity))
+                {
+                    return;
+                }
+
+                drawinglayer::primitive2d::Primitive2DSequence aSource(rSource);
 
                 if(basegfx::fTools::less(fOpacity, 1.0))
                 {
                     // embed in UnifiedTransparencePrimitive2D
                     const drawinglayer::primitive2d::Primitive2DReference xRef(
                         new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                            aContent,
+                            aSource,
                             1.0 - fOpacity));
 
-                    aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                    aSource = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
                 }
 
-                if(pTransform)
+                if(getClipPathXLink().getLength())
                 {
-                    // create embedding group element with transformation
-                    const drawinglayer::primitive2d::Primitive2DReference xRef(
-                        new drawinglayer::primitive2d::TransformPrimitive2D(
-                            *pTransform,
-                            aContent));
+                    // try to access linked ClipPath
+                    const SvgClipPathNode* mpClip = dynamic_cast< const SvgClipPathNode* >(mrOwner.getDocument().findSvgNodeById(getClipPathXLink()));
 
-                    aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                    if(mpClip)
+                    {
+                        mpClip->apply(aSource);
+                    }
                 }
 
-                // append to current target
-                rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aContent));
+                if(aSource.hasElements()) // test again, applied clipPath may have lead to empty geometry
+                {
+                    if(getMaskXLink().getLength())
+                    {
+                        // try to access linked Mask
+                        const SvgMaskNode* mpMask = dynamic_cast< const SvgMaskNode* >(mrOwner.getDocument().findSvgNodeById(getMaskXLink()));
+
+                        if(mpMask)
+                        {
+                            mpMask->apply(aSource);
+                        }
+                    }
+
+                    if(aSource.hasElements()) // test again, applied mask may have lead to empty geometry
+                    {
+                        if(pTransform)
+                        {
+                            // create embedding group element with transformation
+                            const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                new drawinglayer::primitive2d::TransformPrimitive2D(
+                                    *pTransform,
+                                    aSource));
+
+                            aSource = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                        }
+
+                        // append to current target
+                        drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aSource);
+                    }
+                }
             }
         }
 

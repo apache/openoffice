@@ -50,10 +50,10 @@ namespace svgio
 
             virtual const SvgStyleAttributes* getSvgStyleAttributes() const;
             virtual void parseAttribute(const rtl::OUString& rTokenName, SVGToken aSVGToken, const rtl::OUString& aContent);
-            virtual void decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const;
+            virtual void decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const;
 
             /// apply contained clipPath to given geometry
-            void apply(drawinglayer::primitive2d::Primitive2DVector& rTarget) const;
+            void apply(drawinglayer::primitive2d::Primitive2DSequence& rTarget) const;
 
             /// clipPathUnits content
             SvgUnits getClipPathUnits() const { return maClipPathUnits; }

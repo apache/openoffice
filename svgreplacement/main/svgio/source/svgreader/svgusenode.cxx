@@ -140,7 +140,7 @@ namespace svgio
             }
         }
 
-        void SvgUseNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgUseNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             // try to access link to content
             const SvgNode* mpXLink = getDocument().findSvgNodeById(maXLink);
@@ -148,7 +148,7 @@ namespace svgio
             if(mpXLink)
             {
                 // decompose childs
-                drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
                 // todo: in case mpXLink is a SVGTokenSvg or SVGTokenSymbol the
                 // SVG docs want the getWidth() and getHeight() from this node
@@ -157,7 +157,7 @@ namespace svgio
                 mpXLink->decomposeSvgNode(aNewTarget, true);
                 const_cast< SvgNode* >(mpXLink)->setAlternativeParent(0);
 
-                if(!aNewTarget.empty())
+                if(aNewTarget.hasElements())
                 {
                     basegfx::B2DHomMatrix aTransform;
 
@@ -175,14 +175,16 @@ namespace svgio
 
                     if(!aTransform.isIdentity())
                     {
-                        rTarget.push_back(
+                        const drawinglayer::primitive2d::Primitive2DReference xRef(
                             new drawinglayer::primitive2d::TransformPrimitive2D(
                                 aTransform,
-                                drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget)));
+                                aNewTarget));
+
+                        drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(rTarget, xRef);
                     }
                     else
                     {
-                        rTarget.insert(rTarget.end(), aNewTarget.begin(), aNewTarget.end());
+                        drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aNewTarget);
                     }
                 }
             }

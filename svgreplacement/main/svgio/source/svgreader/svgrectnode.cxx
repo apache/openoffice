@@ -161,7 +161,7 @@ namespace svgio
             }
         }
 
-        void SvgRectNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgRectNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             // get size range and create path
             const SvgStyleAttributes* pStyle = getSvgStyleAttributes();
@@ -208,7 +208,14 @@ namespace svgio
                         aPath = basegfx::tools::createPolygonFromRect(aRange);
                     }
 
-                    pStyle->add_path(basegfx::B2DPolyPolygon(aPath), rTarget, getTransform());
+                    drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
+
+                    pStyle->add_path(basegfx::B2DPolyPolygon(aPath), aNewTarget);
+
+                    if(aNewTarget.hasElements())
+                    {
+                        pStyle->add_postProcess(rTarget, aNewTarget, getTransform());
+                    }
                 }
             }
         }

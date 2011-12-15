@@ -60,7 +60,7 @@ namespace svgio
             virtual void parseAttribute(const rtl::OUString& rTokenName, SVGToken aSVGToken, const rtl::OUString& aContent);
             void decomposePathNode(
                 const drawinglayer::primitive2d::Primitive2DSequence& rPathContent, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
                 const basegfx::B2DPoint& rTextStart) const;
             bool isValid() const;
 

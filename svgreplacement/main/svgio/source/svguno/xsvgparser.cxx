@@ -148,17 +148,10 @@ namespace svgio
                 // decompose to primitives
                 const SvgNodeVector& rResults = pSvgDocHdl->getSvgDocument().getSvgNodeVector();
                 const sal_uInt32 nCount(rResults.size());
-                drawinglayer::primitive2d::Primitive2DVector aTarget;
 
                 for(sal_uInt32 a(0); a < nCount; a++)
                 {
-                    rResults[a]->decomposeSvgNode(aTarget, false);
-                }
-
-                if(!aTarget.empty())
-                {
-                    // append created primitives
-                    aRetval = drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aTarget);
+                    rResults[a]->decomposeSvgNode(aRetval, false);
                 }
             }
             else

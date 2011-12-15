@@ -89,7 +89,7 @@ namespace svgio
             void parseAttributes(const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttribs);
             virtual const SvgStyleAttributes* getSvgStyleAttributes() const;
             virtual void parseAttribute(const rtl::OUString& rTokenName, SVGToken aSVGToken, const rtl::OUString& aContent);
-            virtual void decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const;
+            virtual void decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const;
 
             /// basic data read access
             const SVGToken getType() const { return maType; }

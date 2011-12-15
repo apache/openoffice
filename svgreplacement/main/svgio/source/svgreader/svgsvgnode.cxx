@@ -156,18 +156,15 @@ namespace svgio
             }
         }
 
-        void SvgSvgNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgSvgNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
-            drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+            drawinglayer::primitive2d::Primitive2DSequence aSequence;
 
             // decompose childs
-            SvgNode::decomposeSvgNode(aNewTarget, bReferenced);
+            SvgNode::decomposeSvgNode(aSequence, bReferenced);
 
-            if(!aNewTarget.empty())
+            if(aSequence.hasElements())
             {
-                // pack into Primitive2DSequence to ensure ownership
-                const drawinglayer::primitive2d::Primitive2DSequence aSequence(Primitive2DVectorToPrimitive2DSequence(aNewTarget));
-
                 if(getParent())
                 {
                     if(getViewBox())
@@ -186,9 +183,7 @@ namespace svgio
                             if(aTarget.equal(*getViewBox()))
                             {
                                 // no mapping needed, append
-                                rTarget.push_back(
-                                    new drawinglayer::primitive2d::GroupPrimitive2D(
-                                        aSequence));
+                                drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aSequence);
                             }
                             else
                             {
@@ -202,25 +197,25 @@ namespace svgio
                                         rRatio.createMapping(aTarget, *getViewBox()));
 
                                     // prepare embedding in transformation
-                                    drawinglayer::primitive2d::TransformPrimitive2D* pNew = 
+                                    const drawinglayer::primitive2d::Primitive2DReference xRef(
                                         new drawinglayer::primitive2d::TransformPrimitive2D(
                                             aEmbeddingTransform,
-                                            aSequence);
+                                            aSequence));
 
                                     if(rRatio.isMeetOrSlice())
                                     {
                                         // embed in transformation
-                                        rTarget.push_back(pNew);
+                                        drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(rTarget, xRef);
                                     }
                                     else
                                     {
                                         // need to embed in MaskPrimitive2D, too
-                                        const drawinglayer::primitive2d::Primitive2DReference xRef(pNew);
-
-                                        rTarget.push_back(
+                                        const drawinglayer::primitive2d::Primitive2DReference xMask(
                                             new drawinglayer::primitive2d::MaskPrimitive2D(
                                                 basegfx::B2DPolyPolygon(basegfx::tools::createPolygonFromRect(aTarget)),
                                                 drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1)));
+
+                                        drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(rTarget, xMask);
                                     }
                                 }
                                 else
@@ -231,20 +226,51 @@ namespace svgio
                                             aTarget, *getViewBox()));
                                     
                                     // embed in transformation
-                                    rTarget.push_back(
+                                    const drawinglayer::primitive2d::Primitive2DReference xTransform(
                                         new drawinglayer::primitive2d::TransformPrimitive2D(
                                             aEmbeddingTransform,
                                             aSequence));
+
+                                    drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(rTarget, xTransform);
                                 }
                             }
                         }
                     }
                     else
                     {
-                        // no viewBox, append
-                        rTarget.push_back(
-                            new drawinglayer::primitive2d::GroupPrimitive2D(
-                                aSequence));
+                        // check if we have a size
+                        const double fW(getWidth().isSet() ? getWidth().solve(*this, xcoordinate) : 0.0);
+                        const double fH(getHeight().isSet() ? getHeight().solve(*this, ycoordinate) : 0.0);
+
+                        // Svg defines that a negative value is an error and that 0.0 disables rendering
+                        if(basegfx::fTools::more(fW, 0.0) && basegfx::fTools::more(fH, 0.0))
+                        {
+                            // check if we have a x,y position
+                            const double fX(getX().isSet() ? getX().solve(*this, xcoordinate) : 0.0);
+                            const double fY(getY().isSet() ? getY().solve(*this, ycoordinate) : 0.0);
+
+                            if(!basegfx::fTools::equalZero(fX) || !basegfx::fTools::equalZero(fY))
+                            {
+                                // embed in transform
+                                const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                    new drawinglayer::primitive2d::TransformPrimitive2D(
+                                        basegfx::tools::createTranslateB2DHomMatrix(fX, fY),
+                                        aSequence));
+
+                                aSequence = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                            }
+
+                            // embed in MaskPrimitive2D to clip
+                            const drawinglayer::primitive2d::Primitive2DReference xMask(
+                                new drawinglayer::primitive2d::MaskPrimitive2D(
+                                    basegfx::B2DPolyPolygon(
+                                        basegfx::tools::createPolygonFromRect(
+                                            basegfx::B2DRange(fX, fY, fX + fW, fY + fH))),
+                                    aSequence));
+
+                            // append
+                            drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(rTarget, xMask);
+                        }
                     }
                 }
                 else
@@ -259,18 +285,60 @@ namespace svgio
                     // Svg defines that a negative value is an error and that 0.0 disables rendering
                     if(basegfx::fTools::more(fW, 0.0) && basegfx::fTools::more(fH, 0.0))
                     {
-                        // append embedded in transform primitive to scale to 1/100th mm
-                        // where 1 mm == 3.543307 px
-                        const double fScaleTo100thmm(100.0 / 3.543307);
-                        basegfx::B2DHomMatrix aTransform(
-                            basegfx::tools::createScaleB2DHomMatrix(
-                                fScaleTo100thmm,
-                                fScaleTo100thmm));
+                        // to be completely correct in Svg sense it is necessary to clip
+                        // the whole content to the given canvas. I choose here to do this
+                        // initially despite I found various examples of Svg files out there
+                        // which have no correct values for this clipping. It's correct
+                        // due to the Svg spec.
+                        bool bDoCorrectCanvasClipping(true);
 
-                        rTarget.push_back(
-                            new drawinglayer::primitive2d::TransformPrimitive2D(
-                                aTransform,
-                                aSequence));
+                        if(bDoCorrectCanvasClipping)
+                        {
+                            // different from Svg we have the possibility with primitives to get
+                            // a correct bounding box for the geometry, thhus I will allow to
+                            // only clip if necessary. This will make Svg images evtl. smaller
+                            // than wanted from Svg (the free space which may be around it is
+                            // conform to the Svg spec), but avoids an expensive and unneccessary
+                            // clip.
+                            const basegfx::B2DRange aContentRange(
+                                drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(
+                                    aSequence,
+                                    drawinglayer::geometry::ViewInformation2D()));
+                            const basegfx::B2DRange aSvgCanvasRange(0.0, 0.0, fW, fH);
+
+                            if(!aSvgCanvasRange.isInside(aContentRange))
+                            {
+                                const drawinglayer::primitive2d::Primitive2DReference xMask(
+                                    new drawinglayer::primitive2d::MaskPrimitive2D(
+                                        basegfx::B2DPolyPolygon(
+                                            basegfx::tools::createPolygonFromRect(
+                                                aSvgCanvasRange)),
+                                        aSequence));
+
+                                aSequence = drawinglayer::primitive2d::Primitive2DSequence(&xMask, 1);
+                            }
+                        }
+
+                        {
+                            // embed in transform primitive to scale to 1/100th mm
+                            // where 1 mm == 3.543307 px to get from Svg coordinates to
+                            // drawinglayer ones
+                            const double fScaleTo100thmm(100.0 / 3.543307);
+                            const basegfx::B2DHomMatrix aTransform(
+                                basegfx::tools::createScaleB2DHomMatrix(
+                                    fScaleTo100thmm,
+                                    fScaleTo100thmm));
+
+                            const drawinglayer::primitive2d::Primitive2DReference xTransform(
+                                new drawinglayer::primitive2d::TransformPrimitive2D(
+                                    aTransform,
+                                    aSequence));
+
+                            aSequence = drawinglayer::primitive2d::Primitive2DSequence(&xTransform, 1);
+                        }
+
+                        // append
+                        drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aSequence);
                     }
                 }
             }

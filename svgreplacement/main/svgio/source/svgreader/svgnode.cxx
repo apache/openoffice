@@ -134,7 +134,7 @@ namespace svgio
             }
         }
 
-        void SvgNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             if(!bReferenced)
             {
@@ -171,22 +171,13 @@ namespace svgio
 
                     if(pCandidate)
                     {
-                        drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                        drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
                         pCandidate->decomposeSvgNode(aNewTarget, bReferenced);
 
-                        if(aNewTarget.size())
+                        if(aNewTarget.hasElements())
                         {
-                            const SvgStyleAttributes* pAttributes = pCandidate->getSvgStyleAttributes();
-
-                            if(pAttributes)
-                            {
-                                // check for global attributes which need to be applied,
-                                // e.g. ClipPath or Mask
-                                pAttributes->decomposePostProcess(aNewTarget);
-                            }
-
-                            rTarget.insert(rTarget.end(), aNewTarget.begin(), aNewTarget.end());
+                            drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aNewTarget);
                         }
                     }
                     else

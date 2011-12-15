@@ -92,9 +92,12 @@ namespace svgio
             }
         }
 
-        void SvgTextNode::addTextPrimitives(const SvgNode& rCandidate, drawinglayer::primitive2d::Primitive2DVector& rTarget, drawinglayer::primitive2d::Primitive2DVector& rSource) const
+        void SvgTextNode::addTextPrimitives(
+            const SvgNode& rCandidate, 
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+            drawinglayer::primitive2d::Primitive2DSequence& rSource) const
         {
-            if(!rSource.empty())
+            if(rSource.hasElements())
             {
                 const SvgStyleAttributes* pAttributes = rCandidate.getSvgStyleAttributes();
 
@@ -107,12 +110,12 @@ namespace svgio
                 {
                     // should not happen, every subnode from SvgTextNode will at least
                     // return the attributes from SvgTextNode. Nonetheless, add text
-                    rTarget.insert(rTarget.end(), rSource.begin(), rSource.end());
+                    drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, rSource);
                 }
             }
         }
 
-        void SvgTextNode::DecomposeChild(const SvgNode& rCandidate, drawinglayer::primitive2d::Primitive2DVector& rTarget, SvgTextPosition& rSvgTextPosition) const
+        void SvgTextNode::DecomposeChild(const SvgNode& rCandidate, drawinglayer::primitive2d::Primitive2DSequence& rTarget, SvgTextPosition& rSvgTextPosition) const
         {
             switch(rCandidate.getType())
             {
@@ -134,7 +137,7 @@ namespace svgio
                     {
                         // remember original TextStart to later detect hor/ver offsets
                         const basegfx::B2DPoint aTextStart(rSvgTextPosition.getPosition());
-                        drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                        drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
                         // decompose to regular TextPrimitives
                         for(sal_uInt32 a(0); a < nCount; a++)
@@ -142,16 +145,16 @@ namespace svgio
                             DecomposeChild(*rChildren[a], aNewTarget, rSvgTextPosition);
                         }
 
-                        if(!aNewTarget.empty())
+                        if(aNewTarget.hasElements())
                         {
-                            const drawinglayer::primitive2d::Primitive2DSequence aPathContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
-                            aNewTarget.clear();
+                            const drawinglayer::primitive2d::Primitive2DSequence aPathContent(aNewTarget);
+                            aNewTarget.realloc(0);
 
                             // dismantle TextPrimitives and map them on curve/path
                             rSvgTextPathNode.decomposePathNode(aPathContent, aNewTarget, aTextStart);
                         }
 
-                        if(!aNewTarget.empty())
+                        if(aNewTarget.hasElements())
                         {
                             addTextPrimitives(rCandidate, rTarget, aNewTarget);
                         }
@@ -169,7 +172,7 @@ namespace svgio
                     if(nCount)
                     {
                         SvgTextPosition aSvgTextPosition(&rSvgTextPosition, rSvgTspanNode, rSvgTspanNode.getSvgTextPositions());
-                        drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                        drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
                         for(sal_uInt32 a(0); a < nCount; a++)
                         {
@@ -178,7 +181,7 @@ namespace svgio
 
                         rSvgTextPosition.setPosition(aSvgTextPosition.getPosition());
                         
-                        if(!aNewTarget.empty())
+                        if(aNewTarget.hasElements())
                         {
                             addTextPrimitives(rCandidate, rTarget, aNewTarget);
                         }
@@ -194,7 +197,7 @@ namespace svgio
                     {
                         const SvgNodeVector& rChildren = pRefText->getChildren();
                         const sal_uInt32 nCount(rChildren.size());
-                        drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                        drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
                         if(nCount)
                         {
@@ -207,7 +210,7 @@ namespace svgio
                                 const_cast< SvgNode& >(rChildCandidate).setAlternativeParent(0);
                             }
                             
-                            if(!aNewTarget.empty())
+                            if(aNewTarget.hasElements())
                             {
                                 addTextPrimitives(rCandidate, rTarget, aNewTarget);
                             }
@@ -224,7 +227,7 @@ namespace svgio
             }
         }
 
-        void SvgTextNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgTextNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             // text has a group of child nodes, allowed are SVGTokenCharacter, SVGTokenTspan,
             // SVGTokenTref and SVGTokenTextPath. These increase a given current text position
@@ -237,7 +240,7 @@ namespace svgio
                 if(fOpacity > 0.0)
                 {
                     SvgTextPosition aSvgTextPosition(0, *this, getSvgTextPositions());
-                    drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                    drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
                     const SvgNodeVector& rChildren = getChildren();
                     const sal_uInt32 nCount(rChildren.size());
 
@@ -248,43 +251,17 @@ namespace svgio
                         DecomposeChild(rCandidate, aNewTarget, aSvgTextPosition);
                     }
                 
-                    if(!aNewTarget.empty())
+                    if(aNewTarget.hasElements())
                     {
-                        drawinglayer::primitive2d::Primitive2DVector aNewTarget2;
+                        drawinglayer::primitive2d::Primitive2DSequence aNewTarget2;
 
                         addTextPrimitives(*this, aNewTarget2, aNewTarget);
                         aNewTarget = aNewTarget2;
                     }
 
-                    if(!aNewTarget.empty())
+                    if(aNewTarget.hasElements())
                     {
-                         // put content to primitive sequence
-                        drawinglayer::primitive2d::Primitive2DSequence aContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
-
-                        if(basegfx::fTools::less(fOpacity, 1.0))
-                        {
-                            // embed in UnifiedTransparencePrimitive2D
-                            const drawinglayer::primitive2d::Primitive2DReference xRef(
-                                new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                                    aContent,
-                                    1.0 - fOpacity));
-
-                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
-                        }
-
-                        if(getTransform())
-                        {
-                            // create embedding group element with transformation
-                            const drawinglayer::primitive2d::Primitive2DReference xRef(
-                                new drawinglayer::primitive2d::TransformPrimitive2D(
-                                    *getTransform(),
-                                    aContent));
-
-                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
-                        }
-
-                        // append to current target
-                        rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aContent));
+                        pStyle->add_postProcess(rTarget, aNewTarget, getTransform());
                     }
                 }
             }

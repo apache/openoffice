@@ -200,26 +200,26 @@ namespace svgio
             /// internal helpers
             void add_fillGradient(
                 const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
                 const SvgGradientNode& rFillGradient,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_fillPatternTransform(
                 const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
                 const SvgPatternNode& rFillGradient,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_fillPattern(
                 const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
                 const SvgPatternNode& rFillGradient,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_fill(
                 const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget,
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_stroke(
                 const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget,
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const basegfx::B2DRange& rGeoRange) const;
             bool prepare_singleMarker(
                 drawinglayer::primitive2d::Primitive2DSequence& rMarkerPrimitives,
@@ -227,7 +227,7 @@ namespace svgio
                 basegfx::B2DRange& rClipRange,
                 const SvgMarkerNode& rMarker) const;
             void add_singleMarker(
-                drawinglayer::primitive2d::Primitive2DVector& rTarget,
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const drawinglayer::primitive2d::Primitive2DSequence& rMarkerPrimitives,
                 const basegfx::B2DHomMatrix& rMarkerTransform,
                 const basegfx::B2DRange& rClipRange,
@@ -236,7 +236,7 @@ namespace svgio
                 const sal_uInt32 nIndex) const;
             void add_markers(
                 const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget) const;
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget) const;
 
         public:
             /// local attribute scanner
@@ -244,18 +244,18 @@ namespace svgio
 
             /// helper which does the necessary with a given path
             void add_text(
-                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
-                drawinglayer::primitive2d::Primitive2DVector& rSource) const;
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rSource) const;
             void add_path(
                 const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget) const;
+            void add_postProcess(
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                const drawinglayer::primitive2d::Primitive2DSequence& rSource, 
                 const basegfx::B2DHomMatrix* pTransform) const;
 
             /// helper to evtl. link to css style
             void checkForCssStyle(const rtl::OUString& rClassStr) const;
-
-            /// helper to postprocess created primitives
-            void decomposePostProcess(drawinglayer::primitive2d::Primitive2DVector& rTarget) const;
 
             /// scan helpers
             void readStyle(const rtl::OUString& rCandidate);

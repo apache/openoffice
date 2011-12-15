@@ -44,8 +44,14 @@ namespace svgio
             SvgTextPositions        maSvgTextPositions;
 
             /// local helpers
-            void DecomposeChild(const SvgNode& rCandidate, drawinglayer::primitive2d::Primitive2DVector& rTarget, SvgTextPosition& rSvgTextPosition) const;
-            void addTextPrimitives(const SvgNode& rCandidate, drawinglayer::primitive2d::Primitive2DVector& rTarget, drawinglayer::primitive2d::Primitive2DVector& rSource) const;
+            void DecomposeChild(
+                const SvgNode& rCandidate, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                SvgTextPosition& rSvgTextPosition) const;
+            void addTextPrimitives(
+                const SvgNode& rCandidate, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rSource) const;
 
         public:
             SvgTextNode(
@@ -55,7 +61,7 @@ namespace svgio
 
             virtual const SvgStyleAttributes* getSvgStyleAttributes() const;
             virtual void parseAttribute(const rtl::OUString& rTokenName, SVGToken aSVGToken, const rtl::OUString& aContent);
-            virtual void decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const;
+            virtual void decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const;
 
             /// transform content, set if found in current context
             const basegfx::B2DHomMatrix* getTransform() const { return mpaTransform; }

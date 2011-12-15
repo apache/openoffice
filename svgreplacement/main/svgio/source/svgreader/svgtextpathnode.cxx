@@ -406,7 +406,7 @@ namespace svgio
 
         void SvgTextPathNode::decomposePathNode(
             const drawinglayer::primitive2d::Primitive2DSequence& rPathContent, 
-            drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
             const basegfx::B2DPoint& rTextStart) const
         {
             if(rPathContent.hasElements())
@@ -487,7 +487,7 @@ namespace svgio
 
                                         if(aResult.hasElements())
                                         {
-                                            rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aResult));
+                                            drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aResult);
                                         }
 
                                         // advance position to consumed

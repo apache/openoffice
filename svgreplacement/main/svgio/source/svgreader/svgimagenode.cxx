@@ -194,7 +194,7 @@ namespace svgio
             }
         }
 
-        void SvgImageNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgImageNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             // get size range and create path
             const SvgStyleAttributes* pStyle = getSvgStyleAttributes();
@@ -207,8 +207,7 @@ namespace svgio
                 if(fWidth > 0.0 && fHeight > 0.0)
                 {
                     BitmapEx aBitmapEx;
-                    drawinglayer::primitive2d::Primitive2DVector aNewTarget;
-                    drawinglayer::primitive2d::Primitive2DSequence aEmbedded;
+                    drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
 
                     // prepare Target and ViewBox for evtl. AspectRatio mappings
                     const double fX(getX().isSet() ? getX().solve(*this, xcoordinate) : 0.0);
@@ -232,7 +231,7 @@ namespace svgio
                                 String(), 
                                 aStream))
                             {
-                                extractFromGraphic(aGraphic, aEmbedded, aViewBox, aBitmapEx);
+                                extractFromGraphic(aGraphic, aNewTarget, aViewBox, aBitmapEx);
                             }
                         }
                     }
@@ -251,7 +250,7 @@ namespace svgio
                                 aAbsUrl, 
                                 aStream))
                             {
-                                extractFromGraphic(aGraphic, aEmbedded, aViewBox, aBitmapEx);
+                                extractFromGraphic(aGraphic, aNewTarget, aViewBox, aBitmapEx);
                             }
                         }
                     }
@@ -261,97 +260,86 @@ namespace svgio
 
                         if(mpXLink)
                         {
-                            drawinglayer::primitive2d::Primitive2DVector aLinkedTarget;
+                            mpXLink->decomposeSvgNode(aNewTarget, true);
 
-                            mpXLink->decomposeSvgNode(aLinkedTarget, true);
-
-                            if(aLinkedTarget.size())
+                            if(aNewTarget.hasElements())
                             {
-                                aEmbedded = drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aLinkedTarget);
-
-                                if(aEmbedded.hasElements())
-                                {
-                                    const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
-
-                                    aViewBox = drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(aEmbedded, aViewInformation2D);
-                                }
+                                aViewBox = drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(
+                                    aNewTarget, 
+                                    drawinglayer::geometry::ViewInformation2D());
                             }
                         }
                     }
 
                     if(!aBitmapEx.IsEmpty())
                     {
-                        // create content from bitmap
-                        aNewTarget.push_back(
-                            new drawinglayer::primitive2d::BitmapPrimitive2D(
-                                aBitmapEx,
-                                basegfx::B2DHomMatrix()));
+                        // create content from created bitmap
+                        aNewTarget.realloc(1);
+                        aNewTarget[0] = new drawinglayer::primitive2d::BitmapPrimitive2D(
+                            aBitmapEx,
+                            basegfx::B2DHomMatrix());
 
                         // fill aViewBox. No size set yet, use unit size
                         aViewBox = basegfx::B2DRange(0.0, 0.0, 1.0, 1.0);
                     }
-                    else if(aEmbedded.hasElements())
-                    {
-                        // add to aNewTarget as Group
-                        aNewTarget.push_back(
-                            new drawinglayer::primitive2d::GroupPrimitive2D(
-                                aEmbedded));
-                    }
 
-                    if(aNewTarget.size())
+                    if(aNewTarget.hasElements())
                     {
                         if(aTarget.equal(aViewBox))
                         {
                             // just add to rTarget
-                            rTarget.insert(rTarget.end(), aNewTarget.begin(), aNewTarget.end());
+                            drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aNewTarget);
                         }
                         else
                         {
                             // create mapping
                             const SvgAspectRatio& rRatio = getSvgAspectRatio();
-                            const drawinglayer::primitive2d::Primitive2DSequence aSequence(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
 
                             if(rRatio.isSet())
                             {
                                 // let mapping be created from SvgAspectRatio
-                                const basegfx::B2DHomMatrix aEmbeddingTransform(
-                                    rRatio.createMapping(aTarget, aViewBox));
+                                const basegfx::B2DHomMatrix aEmbeddingTransform(rRatio.createMapping(aTarget, aViewBox));
 
-                                // prepare embedding in transformation
-                                drawinglayer::primitive2d::TransformPrimitive2D* pNew = 
-                                    new drawinglayer::primitive2d::TransformPrimitive2D(
-                                        aEmbeddingTransform,
-                                        aSequence);
-
-                                if(rRatio.isMeetOrSlice())
+                                if(!aEmbeddingTransform.isIdentity())
                                 {
-                                    // embed in transformation
-                                    rTarget.push_back(pNew);
+                                    const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                        new drawinglayer::primitive2d::TransformPrimitive2D(
+                                            aEmbeddingTransform,
+                                            aNewTarget));
+
+                                    aNewTarget = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
                                 }
-                                else
-                                {
-                                    // need to embed in MaskPrimitive2D, too
-                                    const drawinglayer::primitive2d::Primitive2DReference xRef(pNew);
 
-                                    rTarget.push_back(
+                                if(!rRatio.isMeetOrSlice())
+                                {
+                                    // need to embed in MaskPrimitive2D to ensure clipping
+                                    const drawinglayer::primitive2d::Primitive2DReference xMask(
                                         new drawinglayer::primitive2d::MaskPrimitive2D(
-                                            basegfx::B2DPolyPolygon(basegfx::tools::createPolygonFromRect(aTarget)),
-                                            drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1)));
+                                            basegfx::B2DPolyPolygon(
+                                                basegfx::tools::createPolygonFromRect(aTarget)),
+                                            aNewTarget));
+                                    
+                                    aNewTarget = drawinglayer::primitive2d::Primitive2DSequence(&xMask, 1);
                                 }
                             }
                             else
                             {
                                 // choose default mapping
-                                const basegfx::B2DHomMatrix aEmbeddingTransform(
-                                    rRatio.createLinearMapping(
-                                        aTarget, aViewBox));
-                                    
-                                // embed in transformation
-                                rTarget.push_back(
-                                    new drawinglayer::primitive2d::TransformPrimitive2D(
-                                        aEmbeddingTransform,
-                                        aSequence));
+                                const basegfx::B2DHomMatrix aEmbeddingTransform(rRatio.createLinearMapping(aTarget, aViewBox));
+                                
+                                if(!aEmbeddingTransform.isIdentity())
+                                {
+                                    const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                        new drawinglayer::primitive2d::TransformPrimitive2D(
+                                            aEmbeddingTransform,
+                                            aNewTarget));
+
+                                    aNewTarget = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                                }
                             }
+
+                            // embed and add to rTarget, take local extra-transform into account
+                            pStyle->add_postProcess(rTarget, aNewTarget, getTransform());
                         }
                     }
                 }

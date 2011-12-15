@@ -105,13 +105,20 @@ namespace svgio
             }
         }
 
-        void SvgPolyNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgPolyNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             const SvgStyleAttributes* pStyle = getSvgStyleAttributes();
 
             if(pStyle && getPolygon())
             {
-                pStyle->add_path(basegfx::B2DPolyPolygon(*getPolygon()), rTarget, getTransform());
+                drawinglayer::primitive2d::Primitive2DSequence aNewTarget;
+
+                pStyle->add_path(basegfx::B2DPolyPolygon(*getPolygon()), aNewTarget);
+
+                if(aNewTarget.hasElements())
+                {
+                    pStyle->add_postProcess(rTarget, aNewTarget, getTransform());
+                }
             }
         }
     } // end of namespace svgreader

@@ -154,7 +154,7 @@ namespace svgio
                 SvgTextPosition& rSvgTextPosition,
                 const SvgStyleAttributes& rSvgStyleAttributes) const;
             void decomposeTextWithStyle(
-                drawinglayer::primitive2d::Primitive2DVector& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
                 SvgTextPosition& rSvgTextPosition,
                 const SvgStyleAttributes& rSvgStyleAttributes) const;
 
@@ -166,7 +166,7 @@ namespace svgio
             virtual ~SvgCharacterNode();
 
             virtual const SvgStyleAttributes* getSvgStyleAttributes() const;
-            virtual void decomposeText(drawinglayer::primitive2d::Primitive2DVector& rTarget, SvgTextPosition& rSvgTextPosition) const;
+            virtual void decomposeText(drawinglayer::primitive2d::Primitive2DSequence& rTarget, SvgTextPosition& rSvgTextPosition) const;
             void whiteSpaceHandling();
             void addGap();
             void concatenate(const rtl::OUString& rText);

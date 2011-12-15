@@ -85,7 +85,7 @@ namespace svgio
             }
         }
 
-        void SvgGNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
+        void SvgGNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DSequence& rTarget, bool bReferenced) const
         {
             const SvgStyleAttributes* pStyle = getSvgStyleAttributes();
 
@@ -95,40 +95,14 @@ namespace svgio
 
                 if(fOpacity > 0.0)
                 {
-                    drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                    drawinglayer::primitive2d::Primitive2DSequence aContent;
 
                     // decompose childs
-                    SvgNode::decomposeSvgNode(aNewTarget, bReferenced);
+                    SvgNode::decomposeSvgNode(aContent, bReferenced);
 
-                    if(!aNewTarget.empty())
+                    if(aContent.hasElements())
                     {
-                        // put content to primitive sequence
-                        drawinglayer::primitive2d::Primitive2DSequence aContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
-
-                        if(basegfx::fTools::less(fOpacity, 1.0))
-                        {
-                            // embed in UnifiedTransparencePrimitive2D
-                            const drawinglayer::primitive2d::Primitive2DReference xRef(
-                                new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                                    aContent,
-                                    1.0 - fOpacity));
-
-                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
-                        }
-
-                        if(getTransform())
-                        {
-                            // create embedding group element with transformation
-                            const drawinglayer::primitive2d::Primitive2DReference xRef(
-                                new drawinglayer::primitive2d::TransformPrimitive2D(
-                                    *getTransform(),
-                                    aContent));
-
-                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
-                        }
-
-                        // append to current target
-                        rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aContent));
+                        pStyle->add_postProcess(rTarget, aContent, getTransform());
                     }
                 }
             }
