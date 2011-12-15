@@ -24,6 +24,7 @@
 
 #include <svgio/svgreader/svggnode.hxx>
 #include <drawinglayer/primitive2d/transformprimitive2d.hxx>
+#include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -86,26 +87,49 @@ namespace svgio
 
         void SvgGNode::decomposeSvgNode(drawinglayer::primitive2d::Primitive2DVector& rTarget, bool bReferenced) const
         {
-            drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+            const SvgStyleAttributes* pStyle = getSvgStyleAttributes();
 
-            // decompose childs
-            SvgNode::decomposeSvgNode(aNewTarget, bReferenced);
-
-            if(!aNewTarget.empty())
+            if(pStyle)
             {
-                if(getTransform())
+                const double fOpacity(pStyle->getOpacity().getNumber());
+
+                if(fOpacity > 0.0)
                 {
-                    // create embedding group element with transformation
-                    rTarget.push_back(
-                        new drawinglayer::primitive2d::TransformPrimitive2D(
-                            *getTransform(),
-                            Primitive2DVectorToPrimitive2DSequence(aNewTarget)));
-                    aNewTarget.clear();
-                }
-                else
-                {
-                    // append to current target
-                    rTarget.insert(rTarget.end(), aNewTarget.begin(), aNewTarget.end());
+                    drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+
+                    // decompose childs
+                    SvgNode::decomposeSvgNode(aNewTarget, bReferenced);
+
+                    if(!aNewTarget.empty())
+                    {
+                        // put content to primitive sequence
+                        drawinglayer::primitive2d::Primitive2DSequence aContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
+
+                        if(basegfx::fTools::less(fOpacity, 1.0))
+                        {
+                            // embed in UnifiedTransparencePrimitive2D
+                            const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
+                                    aContent,
+                                    1.0 - fOpacity));
+
+                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                        }
+
+                        if(getTransform())
+                        {
+                            // create embedding group element with transformation
+                            const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                new drawinglayer::primitive2d::TransformPrimitive2D(
+                                    *getTransform(),
+                                    aContent));
+
+                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                        }
+
+                        // append to current target
+                        rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aContent));
+                    }
                 }
             }
         }

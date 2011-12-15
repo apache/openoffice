@@ -116,7 +116,7 @@ namespace svgio
                     rTarget.push_back(
                         new drawinglayer::primitive2d::TransformPrimitive2D(
                             *getTransform(),
-                            Primitive2DVectorToPrimitive2DSequence(aNewTarget)));
+                            drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget)));
                     aNewTarget.clear();
                 }
                 else

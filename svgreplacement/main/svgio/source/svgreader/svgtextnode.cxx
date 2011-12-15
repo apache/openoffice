@@ -29,6 +29,7 @@
 #include <svgio/svgreader/svgtextpathnode.hxx>
 #include <svgio/svgreader/svgtspannode.hxx>
 #include <drawinglayer/primitive2d/transformprimitive2d.hxx>
+#include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -143,7 +144,7 @@ namespace svgio
 
                         if(!aNewTarget.empty())
                         {
-                            const drawinglayer::primitive2d::Primitive2DSequence aPathContent(Primitive2DVectorToPrimitive2DSequence(aNewTarget));
+                            const drawinglayer::primitive2d::Primitive2DSequence aPathContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
                             aNewTarget.clear();
 
                             // dismantle TextPrimitives and map them on curve/path
@@ -231,41 +232,59 @@ namespace svgio
 
             if(pStyle && !getChildren().empty())
             {
-                SvgTextPosition aSvgTextPosition(0, *this, getSvgTextPositions());
-                drawinglayer::primitive2d::Primitive2DVector aNewTarget;
-                const SvgNodeVector& rChildren = getChildren();
-                const sal_uInt32 nCount(rChildren.size());
+                const double fOpacity(pStyle->getOpacity().getNumber());
 
-                for(sal_uInt32 a(0); a < nCount; a++)
+                if(fOpacity > 0.0)
                 {
-                    const SvgNode& rCandidate = *rChildren[a];
+                    SvgTextPosition aSvgTextPosition(0, *this, getSvgTextPositions());
+                    drawinglayer::primitive2d::Primitive2DVector aNewTarget;
+                    const SvgNodeVector& rChildren = getChildren();
+                    const sal_uInt32 nCount(rChildren.size());
+
+                    for(sal_uInt32 a(0); a < nCount; a++)
+                    {
+                        const SvgNode& rCandidate = *rChildren[a];
     
-                    DecomposeChild(rCandidate, aNewTarget, aSvgTextPosition);
-                }
-                
-                if(!aNewTarget.empty())
-                {
-                    drawinglayer::primitive2d::Primitive2DVector aNewTarget2;
-
-                    addTextPrimitives(*this, aNewTarget2, aNewTarget);
-                    aNewTarget = aNewTarget2;
-                }
-
-                if(!aNewTarget.empty())
-                {
-                    if(getTransform())
-                    {
-                        // create embedding group element with transformation
-                        rTarget.push_back(
-                            new drawinglayer::primitive2d::TransformPrimitive2D(
-                                *getTransform(),
-                                Primitive2DVectorToPrimitive2DSequence(aNewTarget)));
-                        aNewTarget.clear();
+                        DecomposeChild(rCandidate, aNewTarget, aSvgTextPosition);
                     }
-                    else
+                
+                    if(!aNewTarget.empty())
                     {
+                        drawinglayer::primitive2d::Primitive2DVector aNewTarget2;
+
+                        addTextPrimitives(*this, aNewTarget2, aNewTarget);
+                        aNewTarget = aNewTarget2;
+                    }
+
+                    if(!aNewTarget.empty())
+                    {
+                         // put content to primitive sequence
+                        drawinglayer::primitive2d::Primitive2DSequence aContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
+
+                        if(basegfx::fTools::less(fOpacity, 1.0))
+                        {
+                            // embed in UnifiedTransparencePrimitive2D
+                            const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
+                                    aContent,
+                                    1.0 - fOpacity));
+
+                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                        }
+
+                        if(getTransform())
+                        {
+                            // create embedding group element with transformation
+                            const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                new drawinglayer::primitive2d::TransformPrimitive2D(
+                                    *getTransform(),
+                                    aContent));
+
+                            aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                        }
+
                         // append to current target
-                        rTarget.insert(rTarget.end(), aNewTarget.begin(), aNewTarget.end());
+                        rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aContent));
                     }
                 }
             }

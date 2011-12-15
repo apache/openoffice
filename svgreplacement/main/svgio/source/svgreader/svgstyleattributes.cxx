@@ -496,7 +496,7 @@ namespace svgio
 
                 if(aNewTarget.size())
                 {
-                    const drawinglayer::primitive2d::Primitive2DSequence aSequence(Primitive2DVectorToPrimitive2DSequence(aNewTarget));
+                    const drawinglayer::primitive2d::Primitive2DSequence aSequence(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
 
                     rTarget.push_back(
                         new drawinglayer::primitive2d::TransformPrimitive2D(
@@ -644,7 +644,7 @@ namespace svgio
                             // embed in UnifiedTransparencePrimitive2D
                             rTarget.push_back(
                                 new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                                    Primitive2DVectorToPrimitive2DSequence(aNewFill),
+                                    drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewFill),
                                     1.0 - fFillOpacity));
                         }
                         else
@@ -764,7 +764,7 @@ namespace svgio
                                 // embed in UnifiedTransparencePrimitive2D
                                 rTarget.push_back(
                                     new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                                        Primitive2DVectorToPrimitive2DSequence(aNewStroke),
+                                        drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewStroke),
                                         1.0 - fStrokeOpacity));
                             }
                             else
@@ -1025,7 +1025,14 @@ namespace svgio
                 return;
             }
 
-            drawinglayer::primitive2d::Primitive2DVector aNewPrimitives;
+            const double fOpacity(getOpacity().getNumber());
+
+            if(basegfx::fTools::equalZero(fOpacity))
+            {
+                return;
+            }
+
+            drawinglayer::primitive2d::Primitive2DVector aNewTarget;
 
             if(!bIsLine)
             {
@@ -1040,10 +1047,10 @@ namespace svgio
                     aPath = basegfx::tools::createNonzeroConform(aPath);
                 }
 
-                add_fill(aPath, aNewPrimitives, aGeoRange);
+                add_fill(aPath, aNewTarget, aGeoRange);
             }
 
-            add_stroke(rPath, aNewPrimitives, aGeoRange);
+            add_stroke(rPath, aNewTarget, aGeoRange);
 
             // Svg supports markers for path, polygon, polyline and line
             if(SVGTokenPath == mrOwner.getType() ||         // path
@@ -1051,21 +1058,38 @@ namespace svgio
                 SVGTokenLine == mrOwner.getType())          // line
             {
                 // try to add markers
-                add_markers(rPath, aNewPrimitives);
+                add_markers(rPath, aNewTarget);
             }
 
-            if(pTransform && !aNewPrimitives.empty())
+            if(aNewTarget.size())
             {
-                // embed in transformation
-                rTarget.push_back(
-                    new drawinglayer::primitive2d::TransformPrimitive2D(
-                        *pTransform,
-                        Primitive2DVectorToPrimitive2DSequence(aNewPrimitives)));
-            }
-            else
-            {
-                // just append
-                rTarget.insert(rTarget.end(), aNewPrimitives.begin(), aNewPrimitives.end());
+                // put content to primitive sequence
+                drawinglayer::primitive2d::Primitive2DSequence aContent(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
+
+                if(basegfx::fTools::less(fOpacity, 1.0))
+                {
+                    // embed in UnifiedTransparencePrimitive2D
+                    const drawinglayer::primitive2d::Primitive2DReference xRef(
+                        new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
+                            aContent,
+                            1.0 - fOpacity));
+
+                    aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                }
+
+                if(pTransform)
+                {
+                    // create embedding group element with transformation
+                    const drawinglayer::primitive2d::Primitive2DReference xRef(
+                        new drawinglayer::primitive2d::TransformPrimitive2D(
+                            *pTransform,
+                            aContent));
+
+                    aContent = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                }
+
+                // append to current target
+                rTarget.push_back(new drawinglayer::primitive2d::GroupPrimitive2D(aContent));
             }
         }
 
@@ -1098,6 +1122,7 @@ namespace svgio
             maTextDecoration(TextDecoration_notset),
             maTextAnchor(TextAnchor_notset),
             maColor(),
+            maOpacity(1.0),
             maClipPathXLink(),
             maMaskXLink(),
             maMarkerStartXLink(),
@@ -1661,6 +1686,16 @@ namespace svgio
                     if(readSvgPaint(aContent, aSvgPaint, aURL))
                     {
                         setColor(aSvgPaint);
+                    }
+                    break;
+                }
+                case SVGTokenOpacity:
+                {
+                    SvgNumber aNum;
+
+                    if(readSingleNumber(aContent, aNum))
+                    {
+                        setOpacity(SvgNumber(basegfx::clamp(aNum.getNumber(), 0.0, 1.0), aNum.getUnit(), aNum.isSet()));
                     }
                     break;
                 }

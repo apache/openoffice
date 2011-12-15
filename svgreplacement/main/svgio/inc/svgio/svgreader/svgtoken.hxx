@@ -105,6 +105,7 @@ namespace svgio
             SVGTokenPatternUnits,
             SVGTokenPatternContentUnits,
             SVGTokenPatternTransform,
+            SVGTokenOpacity,
 
             // AspectRatio and params
             SVGTokenPreserveAspectRatio,

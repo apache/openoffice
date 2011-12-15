@@ -171,6 +171,7 @@ namespace svgio
             TextDecoration              maTextDecoration;
             TextAnchor                  maTextAnchor;
             SvgPaint                    maColor;
+            SvgNumber                   maOpacity;
 
             /// link to content. If set, the node can be fetched on demand
             rtl::OUString               maClipPathXLink;
@@ -371,6 +372,10 @@ namespace svgio
             /// Color content
             const basegfx::BColor* getColor() const;
             void setColor(const SvgPaint& rColor) { maColor = rColor; }
+
+            /// Opacity content
+            const SvgNumber getOpacity() const { return maOpacity; }
+            void setOpacity(const SvgNumber& rOpacity = SvgNumber()) { maOpacity = rOpacity; }
 
             // ClipPathXLink content
             const rtl::OUString getClipPathXLink() const { return maClipPathXLink; }

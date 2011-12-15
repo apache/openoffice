@@ -267,7 +267,7 @@ namespace svgio
 
                             if(aLinkedTarget.size())
                             {
-                                aEmbedded = Primitive2DVectorToPrimitive2DSequence(aLinkedTarget);
+                                aEmbedded = drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aLinkedTarget);
 
                                 if(aEmbedded.hasElements())
                                 {
@@ -309,7 +309,7 @@ namespace svgio
                         {
                             // create mapping
                             const SvgAspectRatio& rRatio = getSvgAspectRatio();
-                            const drawinglayer::primitive2d::Primitive2DSequence aSequence(Primitive2DVectorToPrimitive2DSequence(aNewTarget));
+                            const drawinglayer::primitive2d::Primitive2DSequence aSequence(drawinglayer::primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewTarget));
 
                             if(rRatio.isSet())
                             {
