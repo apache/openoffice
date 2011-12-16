@@ -35,7 +35,6 @@
 #include <drawinglayer/primitive2d/cropprimitive2d.hxx>
 #include <drawinglayer/primitive2d/drawinglayer_primitivetypes2d.hxx>
 #include <drawinglayer/primitive2d/maskprimitive2d.hxx>
-#include <drawinglayer/primitive2d/cropprimitive2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // helper class for animated graphics
@@ -294,6 +293,32 @@ namespace drawinglayer
 								xPrimitive = Primitive2DReference(new AnimatedSwitchPrimitive2D(aAnimationList, aBitmapPrimitives, false));
 							}
 						}
+                        else if(aTransformedGraphic.getSvgData().get())
+                        {
+                            // embedded Svg fill, create embed transform
+                            const basegfx::B2DRange& rSvgRange(aTransformedGraphic.getSvgData()->getRange());
+
+                            if(basegfx::fTools::more(rSvgRange.getWidth(), 0.0) && basegfx::fTools::more(rSvgRange.getHeight(), 0.0))
+                            {
+                                // translate back to origin, scale to unit coordinates
+                                basegfx::B2DHomMatrix aEmbedSvg(
+                                    basegfx::tools::createTranslateB2DHomMatrix(
+                                        -rSvgRange.getMinX(),
+                                        -rSvgRange.getMinY()));
+
+                                aEmbedSvg.scale(
+                                    1.0 / rSvgRange.getWidth(),
+                                    1.0 / rSvgRange.getHeight());
+
+                                // apply created object transformation
+                                aEmbedSvg = aTransform * aEmbedSvg;
+
+                                // add Svg primitives embedded
+                                xPrimitive = new TransformPrimitive2D(
+                                    aEmbedSvg,
+                                    aTransformedGraphic.getSvgData()->getPrimitive2DSequence());
+                            }
+                        }
 						else
 						{
 							xPrimitive = Primitive2DReference(new BitmapPrimitive2D(aTransformedGraphic.GetBitmapEx(), aTransform));

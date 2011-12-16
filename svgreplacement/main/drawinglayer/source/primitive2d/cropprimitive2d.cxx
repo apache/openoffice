@@ -137,10 +137,9 @@ namespace drawinglayer
                 {
                     // nothing to return since cropped content is completely empty
                 }
-                else if(aCurrent.isInside(aCropped))
+                else if(aCurrent.equal(aCropped))
                 {
-                    // crop just shrunk so that its inside content, 
-                    // no need to use a mask since not really cropped.
+                    // no crop, just use content
                     xRetval = getChildren();
                 }
                 else
@@ -167,17 +166,26 @@ namespace drawinglayer
                             aNewObjectTransform, 
                             getChildren()));
 
-                    // mask with original object's bounds
-                    basegfx::B2DPolyPolygon aMaskPolyPolygon(basegfx::tools::createUnitPolygon());
-                    aMaskPolyPolygon.transform(getTransformation());
+                    if(aCurrent.isInside(aCropped))
+                    {
+                        // crop just shrunk so that its inside content, 
+                        // no need to use a mask since not really cropped.
+                        xRetval = Primitive2DSequence(&xTransformPrimitive, 1);
+                    }
+                    else
+                    {
+                        // mask with original object's bounds
+                        basegfx::B2DPolyPolygon aMaskPolyPolygon(basegfx::tools::createUnitPolygon());
+                        aMaskPolyPolygon.transform(getTransformation());
 
-                    // create maskPrimitive with aMaskPolyPolygon and aMaskContentVector
-                    const Primitive2DReference xMask(
-                        new MaskPrimitive2D(
-                            aMaskPolyPolygon, 
-                            Primitive2DSequence(&xTransformPrimitive, 1)));
+                        // create maskPrimitive with aMaskPolyPolygon and aMaskContentVector
+                        const Primitive2DReference xMask(
+                            new MaskPrimitive2D(
+                                aMaskPolyPolygon, 
+                                Primitive2DSequence(&xTransformPrimitive, 1)));
 
-                    xRetval = Primitive2DSequence(&xMask, 1);
+                        xRetval = Primitive2DSequence(&xMask, 1);
+                    }
                 }
             }
 

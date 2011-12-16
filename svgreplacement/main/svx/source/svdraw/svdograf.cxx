@@ -68,8 +68,6 @@
 #include <basegfx/polygon/b2dpolygontools.hxx>
 #include <osl/thread.hxx>
 #include <vos/mutex.hxx>
-#include <drawinglayer/processor2d/vclmetafileprocessor2d.hxx>
-#include <basegfx/matrix/b2dhommatrixtools.hxx>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::io;
@@ -1093,57 +1091,50 @@ const GDIMetaFile* SdrGrafObj::GetGDIMetaFile() const
 
 // -----------------------------------------------------------------------------
 
+bool SdrGrafObj::isEmbeddedSvg() const
+{
+    return GRAPHIC_BITMAP == GetGraphicType() && GetGraphic().getSvgData().get();
+}
+
+GDIMetaFile SdrGrafObj::getMetafileFromEmbeddedSvg() const
+{
+    GDIMetaFile aRetval;
+
+    if(isEmbeddedSvg() && GetModel())
+    {
+        VirtualDevice aOut;
+        const Rectangle aBoundRect(GetCurrentBoundRect());
+        const MapMode aMap(GetModel()->GetScaleUnit(), Point(), GetModel()->GetScaleFraction(), GetModel()->GetScaleFraction());
+
+        aOut.EnableOutput(false);
+        aOut.SetMapMode(aMap);
+        aRetval.Record(&aOut);
+        SingleObjectPainter(aOut);
+        aRetval.Stop();
+        aRetval.WindStart();
+        aRetval.Move(-aBoundRect.Left(), -aBoundRect.Top());
+        aRetval.SetPrefMapMode(aMap);
+        aRetval.SetPrefSize(aBoundRect.GetSize());
+    }
+
+    return aRetval;
+}
+
 SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 {
 	SdrObject* pRetval = NULL;
     GraphicType aGraphicType(GetGraphicType());
     GDIMetaFile aMtf;
 
-    if(GRAPHIC_BITMAP == aGraphicType)
+    if(isEmbeddedSvg())
     {
-        const Graphic& rGraphic = GetGraphic();
-
-        if(rGraphic.getSvgData().get())
-        {
-            // Embedded Svg
-            // There is currently no helper to create SdrObjects from primitives (even if I'm thinking
-            // about writing one for some time). To get the roundtrip to SdrObjects it is necessary to
-            // use the old converter path over the MetaFile mechanism. Create Metafile from Svg 
-            // primitives here pretty directly
-            VirtualDevice aOut;
-            Size aDummySize(2, 2);
-
-            aOut.SetOutputSizePixel(aDummySize);
-            aOut.EnableOutput(false);
-            aMtf.Clear();
-            aMtf.Record(&aOut);
-
-            // map to (0,0,objectsize)
-            const basegfx::B2DRange& rRange = rGraphic.getSvgData()->getRange();
-            basegfx::B2DHomMatrix aObjectMatrix(basegfx::tools::createTranslateB2DHomMatrix(-rRange.getMinX(), -rRange.getMinY()));
-
-            aObjectMatrix.scale(
-                aRect.getWidth() / (basegfx::fTools::equalZero(rRange.getWidth()) ? 1.0 : rRange.getWidth()),
-                aRect.getHeight() / (basegfx::fTools::equalZero(rRange.getHeight()) ? 1.0 : rRange.getHeight()));
-
-            const drawinglayer::geometry::ViewInformation2D aViewInformation2D(
-                aObjectMatrix,
-                basegfx::B2DHomMatrix(),
-                basegfx::B2DRange(),
-                0,
-                0.0,
-                com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >());
-            drawinglayer::processor2d::VclMetafileProcessor2D aProcessor(aViewInformation2D, aOut);
-
-            aProcessor.process(rGraphic.getSvgData()->getPrimitive2DSequence());
-            
-            aMtf.Stop();
-            aMtf.WindStart();
-            aMtf.SetPrefMapMode(rGraphic.GetPrefMapMode());
-            aMtf.SetPrefSize(rGraphic.GetPrefSize());
-
-            aGraphicType = GRAPHIC_GDIMETAFILE;
-        }
+        // Embedded Svg
+        // There is currently no helper to create SdrObjects from primitives (even if I'm thinking
+        // about writing one for some time). To get the roundtrip to SdrObjects it is necessary to
+        // use the old converter path over the MetaFile mechanism. Create Metafile from Svg 
+        // primitives here pretty directly
+        aMtf = getMetafileFromEmbeddedSvg();
+        aGraphicType = GRAPHIC_GDIMETAFILE;
     }
     else if(GRAPHIC_GDIMETAFILE == aGraphicType)
     {

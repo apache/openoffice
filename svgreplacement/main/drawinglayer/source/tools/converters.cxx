@@ -82,6 +82,10 @@ namespace drawinglayer
                 maContent.SetMapMode(aMapModePixel);
                 maContent.SetAntialiasing(true);
 
+                // set to all white
+                maContent.SetBackground(Wallpaper(Color(COL_WHITE)));
+                maContent.Erase();
+
                 // create processor
                 processor2d::VclPixelProcessor2D aContentProcessor(aViewInformation2D, maContent);
 
@@ -97,7 +101,6 @@ namespace drawinglayer
                 maContent.SetAntialiasing(true);
 
                 // set alpha to all white (fully transparent)
-                maContent.SetBackground(Wallpaper(Color(COL_WHITE)));
                 maContent.Erase();
 
                 // embed primitives to paint them black

@@ -94,45 +94,14 @@ namespace drawinglayer
 			// add graphic content
 			if(255L != getGraphicAttr().GetTransparency())
 			{
-                const SvgDataPtr& rSvgDataPtr = getGraphicObject().GetGraphic().getSvgData();
+                // standard graphic fill
+                const Primitive2DReference xGraphicContentPrimitive(
+                    new GraphicPrimitive2D(
+                        getTransform(), 
+                        getGraphicObject(), 
+                        getGraphicAttr()));
 
-                if(rSvgDataPtr.get())
-                {
-                    // Svg fill, use already decomposed svg directly
-                    const basegfx::B2DRange& rRange(rSvgDataPtr->getRange());
-
-                    if(basegfx::fTools::more(rRange.getWidth(), 0.0) && basegfx::fTools::more(rRange.getHeight(), 0.0))
-                    {
-                        basegfx::B2DHomMatrix aEmbeddingTransform(
-                            basegfx::tools::createTranslateB2DHomMatrix(
-                                -rRange.getMinX(),
-                                -rRange.getMinY()));
-                                    
-                        aEmbeddingTransform.scale(
-                            1.0 / rRange.getWidth(),
-                            1.0 / rRange.getHeight());
-
-                        aEmbeddingTransform = getTransform() * aEmbeddingTransform;
-                                    
-                        const Primitive2DReference xPrimitive(
-                            new TransformPrimitive2D(
-                                aEmbeddingTransform,
-                                rSvgDataPtr->getPrimitive2DSequence()));
-
-                        appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xPrimitive);
-                    }
-                }
-                else
-                {
-                    // standard graphic fill
-				    const Primitive2DReference xGraphicContentPrimitive(
-                        new GraphicPrimitive2D(
-                            getTransform(), 
-                            getGraphicObject(), 
-                            getGraphicAttr()));
-
-                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xGraphicContentPrimitive);
-                }
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xGraphicContentPrimitive);
 			}
 
 			// add text
