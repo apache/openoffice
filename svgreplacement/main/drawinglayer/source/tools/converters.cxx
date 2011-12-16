@@ -38,8 +38,8 @@
 
 namespace drawinglayer
 {
-	namespace tools
-	{
+    namespace tools
+    {
         BitmapEx DRAWINGLAYER_DLLPUBLIC convertToBitmapEx(
             const drawinglayer::primitive2d::Primitive2DSequence& rSeq, 
             const geometry::ViewInformation2D& rViewInformation2D,
@@ -53,16 +53,16 @@ namespace drawinglayer
             {
                 // get destination size in pixels
                 const MapMode aMapModePixel(MAP_PIXEL);
-				const sal_uInt32 nViewVisibleArea(nDiscreteWidth * nDiscreteHeight);
-				double fReduceFactor(1.0);
+                const sal_uInt32 nViewVisibleArea(nDiscreteWidth * nDiscreteHeight);
+                double fReduceFactor(1.0);
                 drawinglayer::primitive2d::Primitive2DSequence aSequence(rSeq);
 
-				if(nViewVisibleArea > nMaxQuadratPixels)
-				{
+                if(nViewVisibleArea > nMaxQuadratPixels)
+                {
                     // reduce render size
-					fReduceFactor = sqrt((double)nMaxQuadratPixels / (double)nViewVisibleArea);
-					nDiscreteWidth = basegfx::fround((double)nDiscreteWidth * fReduceFactor);
-					nDiscreteHeight = basegfx::fround((double)nDiscreteHeight * fReduceFactor);
+                    fReduceFactor = sqrt((double)nMaxQuadratPixels / (double)nViewVisibleArea);
+                    nDiscreteWidth = basegfx::fround((double)nDiscreteWidth * fReduceFactor);
+                    nDiscreteHeight = basegfx::fround((double)nDiscreteHeight * fReduceFactor);
 
                     const drawinglayer::primitive2d::Primitive2DReference aEmbed(
                         new drawinglayer::primitive2d::TransformPrimitive2D(
@@ -70,78 +70,70 @@ namespace drawinglayer
                             rSeq));
 
                     aSequence = drawinglayer::primitive2d::Primitive2DSequence(&aEmbed, 1);
-				}
+                }
 
-        		const Point aEmptyPoint;
+                const Point aEmptyPoint;
                 const Size aSizePixel(nDiscreteWidth, nDiscreteHeight);
                 geometry::ViewInformation2D aViewInformation2D(rViewInformation2D);
-		        Bitmap aContent; 
-                AlphaMask aAlphaMask;
-                
-                {
-                    // prepare vdev
-                    VirtualDevice maContent;
+                VirtualDevice maContent;
                     
-                    maContent.SetOutputSizePixel(aSizePixel, false);
-                    maContent.SetMapMode(aMapModePixel);
-                    maContent.SetAntialiasing(true);
+                // prepare vdev
+                maContent.SetOutputSizePixel(aSizePixel, false);
+                maContent.SetMapMode(aMapModePixel);
+                maContent.SetAntialiasing(true);
 
-                    // render content
-                    processor2d::VclPixelProcessor2D aContentProcessor(aViewInformation2D, maContent);
-                    aContentProcessor.process(aSequence);
+                // create processor
+                processor2d::VclPixelProcessor2D aContentProcessor(aViewInformation2D, maContent);
 
-                    // get content pixels
-                    maContent.EnableMapMode(false);
-		            aContent = maContent.GetBitmap(aEmptyPoint, aSizePixel); 
-                }
+                // render content
+                aContentProcessor.process(aSequence);
 
-                {
-                    // prepare vdev
-                    VirtualDevice maAlpha;
-		        
-                    maAlpha.SetOutputSizePixel(aSizePixel, false);
-                    maAlpha.SetMapMode(aMapModePixel);
-                    maAlpha.SetAntialiasing(true);
+                // get content
+                maContent.EnableMapMode(false);
+                const Bitmap aContent(maContent.GetBitmap(aEmptyPoint, aSizePixel)); 
 
-                    // set alöpha to all white (fully transparent)
-                    maAlpha.SetBackground(Wallpaper(Color(COL_WHITE)));
-					maAlpha.Erase();
+                // prepare for mask creation
+                maContent.SetMapMode(aMapModePixel);
+                maContent.SetAntialiasing(true);
 
-                    // embed primitives to paint them black
-                    const primitive2d::Primitive2DReference xRef(
-                        new primitive2d::ModifiedColorPrimitive2D(
-                            aSequence,
-                            basegfx::BColorModifier(
-                                basegfx::BColor(0.0, 0.0, 0.0),
-                                0.5,
-                                basegfx::BCOLORMODIFYMODE_REPLACE)));
-                    const primitive2d::Primitive2DSequence xSeq(&xRef, 1);
+                // set alpha to all white (fully transparent)
+                maContent.SetBackground(Wallpaper(Color(COL_WHITE)));
+                maContent.Erase();
 
-                    // render
-                    processor2d::VclPixelProcessor2D aAlphaProcessor(aViewInformation2D, maAlpha);
-                    aAlphaProcessor.process(xSeq);
+                // embed primitives to paint them black
+                const primitive2d::Primitive2DReference xRef(
+                    new primitive2d::ModifiedColorPrimitive2D(
+                        aSequence,
+                        basegfx::BColorModifier(
+                            basegfx::BColor(0.0, 0.0, 0.0),
+                            0.5,
+                            basegfx::BCOLORMODIFYMODE_REPLACE)));
+                const primitive2d::Primitive2DSequence xSeq(&xRef, 1);
 
-                    // get alpha cahannel from vdev
-                    maAlpha.EnableMapMode(false);
-			        aAlphaMask = maAlpha.GetBitmap(aEmptyPoint, aSizePixel);
-                }
+                // render
+                aContentProcessor.process(xSeq);
 
+                // get alpha cahannel from vdev
+                maContent.EnableMapMode(false);
+                const AlphaMask aAlphaMask(maContent.GetBitmap(aEmptyPoint, aSizePixel));
+
+                // create BitmapEx result
                 aRetval = BitmapEx(aContent, aAlphaMask);
             }
 
 #ifdef DBG_UTIL
-			static bool bDoSaveForVisualControl(false);
-			if(bDoSaveForVisualControl)
-			{
-				SvFileStream aNew((const String&)String(ByteString( "c:\\test.png" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
-				aNew << aRetval;
-			}
+            static bool bDoSaveForVisualControl(false);
+            if(bDoSaveForVisualControl)
+            {
+                SvFileStream aNew((const String&)String(ByteString( "c:\\test.png" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
+                aNew << aRetval;
+            }
 #endif
 
             return aRetval;
         }
 
-	} // end of namespace tools
+    } // end of namespace tools
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////

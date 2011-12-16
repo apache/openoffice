@@ -68,6 +68,8 @@
 #include <basegfx/polygon/b2dpolygontools.hxx>
 #include <osl/thread.hxx>
 #include <vos/mutex.hxx>
+#include <drawinglayer/processor2d/vclmetafileprocessor2d.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::io;
@@ -1090,9 +1092,6 @@ const GDIMetaFile* SdrGrafObj::GetGDIMetaFile() const
 }
 
 // -----------------------------------------------------------------------------
-
-#include <drawinglayer/processor2d/vclmetafileprocessor2d.hxx>
-#include <basegfx/matrix/b2dhommatrixtools.hxx>
 
 SdrObject* SdrGrafObj::DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const
 {

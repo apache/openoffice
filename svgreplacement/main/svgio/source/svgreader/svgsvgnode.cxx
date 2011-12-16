@@ -277,14 +277,47 @@ namespace svgio
                 {
                     // Outermost SVG element; create target range homing width and height as given.
                     // SVG defines that x,y has no meanig for the outermost SVG element. Use a fallback
-                    // width and height of 8x8 cm (8 * 35.43307px)
-                    const double fFallbackMetric(8.0 * 35.43307);
-                    double fW(getWidth().isSet() ? getWidth().solve(*this, xcoordinate) : fFallbackMetric);
-                    double fH(getHeight().isSet() ? getHeight().solve(*this, ycoordinate) : fFallbackMetric);
+                    // width and height of din A 4 (21 x 29,7 cm)
+                    double fW(getWidth().isSet() ? getWidth().solve(*this, xcoordinate) : (210.0 * 3.543307));
+                    double fH(getHeight().isSet() ? getHeight().solve(*this, ycoordinate) : (297.0 * 3.543307));
 
                     // Svg defines that a negative value is an error and that 0.0 disables rendering
                     if(basegfx::fTools::more(fW, 0.0) && basegfx::fTools::more(fH, 0.0))
                     {
+                        const basegfx::B2DRange aSvgCanvasRange(0.0, 0.0, fW, fH);
+
+                        if(getViewBox())
+                        {
+                            if(!basegfx::fTools::equalZero(getViewBox()->getWidth()) && !basegfx::fTools::equalZero(getViewBox()->getHeight()))
+                            {
+                                // create mapping
+                                const SvgAspectRatio& rRatio = getSvgAspectRatio();
+                                basegfx::B2DHomMatrix aViewBoxMapping;
+
+                                if(rRatio.isSet())
+                                {
+                                    // let mapping be created from SvgAspectRatio
+                                    aViewBoxMapping = rRatio.createMapping(aSvgCanvasRange, *getViewBox());
+
+                                    // no need to check ratio here for slice, the outermost Svg will
+                                    // be clipped anyways (see below)
+                                }
+                                else
+                                {
+                                    // choose default mapping
+                                    aViewBoxMapping = rRatio.createLinearMapping(aSvgCanvasRange, *getViewBox());
+                                }
+
+                                // scale content to viewBox definitions
+                                const drawinglayer::primitive2d::Primitive2DReference xTransform(
+                                    new drawinglayer::primitive2d::TransformPrimitive2D(
+                                        aViewBoxMapping,
+                                        aSequence));
+
+                                aSequence = drawinglayer::primitive2d::Primitive2DSequence(&xTransform, 1);
+                            }
+                        }
+
                         // to be completely correct in Svg sense it is necessary to clip
                         // the whole content to the given canvas. I choose here to do this
                         // initially despite I found various examples of Svg files out there
@@ -304,7 +337,6 @@ namespace svgio
                                 drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(
                                     aSequence,
                                     drawinglayer::geometry::ViewInformation2D()));
-                            const basegfx::B2DRange aSvgCanvasRange(0.0, 0.0, fW, fH);
 
                             if(!aSvgCanvasRange.isInside(aContentRange))
                             {
