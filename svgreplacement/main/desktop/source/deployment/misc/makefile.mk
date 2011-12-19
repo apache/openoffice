@@ -42,10 +42,6 @@ TARGET = deplmisc
 # Reduction of exported symbols:
 CDEFS += -DDESKTOP_DEPLOYMENTMISC_DLLIMPLEMENTATION
 
-.IF "$(SYSTEM_DB)" == "YES"
-CFLAGS+=-DSYSTEM_DB -I$(DB_INCLUDES)
-.ENDIF
-
 SRS1NAME = $(TARGET)
 SRC1FILES = \
 	dp_misc.src
@@ -61,7 +57,6 @@ SHL1OBJS = \
         $(SLO)$/dp_identifier.obj \
         $(SLO)$/dp_interact.obj \
         $(SLO)$/dp_ucb.obj \
-        $(SLO)$/db.obj \
         $(SLO)$/dp_version.obj \
         $(SLO)$/dp_descriptioninfoset.obj \
         $(SLO)$/dp_dependencies.obj \
@@ -69,7 +64,6 @@ SHL1OBJS = \
         $(SLO)$/dp_update.obj
         
 SHL1STDLIBS = \
-    $(BERKELEYLIB) \
     $(CPPUHELPERLIB) \
     $(CPPULIB) \
     $(SALLIB) \

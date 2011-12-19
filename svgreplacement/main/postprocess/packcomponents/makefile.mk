@@ -259,9 +259,7 @@ my_components += productregistration.jar
 my_components += \
     LuceneHelpWrapper \
     ScriptFramework \
-    ScriptProviderForBeanShell \
     ScriptProviderForJava \
-    ScriptProviderForJavaScript \
     XMergeBridge \
     XSLTValidate \
     agenda \
@@ -274,6 +272,12 @@ my_components += \
     report \
     table \
     web
+.IF "$(ENABLE_BEANSHELL)" == "YES"
+my_components += ScriptProviderForBeanShell
+.END
+.IF "$(ENABLE_JAVASCRIPT)" == "YES"
+my_components += ScriptProviderForJavaScript
+.END
 .END
 
 .IF "$(WITH_BINFILTER)" != "NO"

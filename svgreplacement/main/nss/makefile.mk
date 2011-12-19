@@ -37,9 +37,11 @@ TARGET=nss
 # --- Files --------------------------------------------------------
 
 .IF "$(ENABLE_NSS_MODULE)"!="YES"
+
 all:
 	@echo "NSS will not be built. ENABLE_NSS_MODULE is '$(ENABLE_NSS_MODULE)'"
-.ENDIF	
+
+.ELSE
 
 TARFILE_NAME=nss-3.12.6-with-nspr-4.8.4
 TARFILE_MD5=b92261a5679276c400555004937af965
@@ -47,6 +49,8 @@ TARFILE_ROOTDIR=nss-3.12.6
 PATCH_FILES=nss.patch
 
 .IF "$(OS)"=="MACOSX"
+MACOS_SDK_DIR=/Developer/SDKs/MacOSX10.4u.sdk
+.EXPORT : MACOS_SDK_DIR
 PATCH_FILES+=nss_macosx.patch
 .ENDIF # "$(OS)"=="MACOSX"
 
@@ -78,8 +82,7 @@ USE_64:=1
 CPP:=gcc -E $(EXTRA_CFLAGS)
 CXX:=g++ $(EXTRA_CFLAGS)
 CC:=gcc $(EXTRA_CFLAGS)
-MACOS_SDK_DIR*=$(MACDEVSDK)
-.EXPORT : CPP MACOS_SDK_DIR
+.EXPORT : CPP
 .ENDIF # "$(EXTRA_CFLAGS)"!=""
 .ENDIF # "$(OS)"=="MACOSX"
 
@@ -90,6 +93,7 @@ BUILD_ACTION= $(GNUMAKE) nss_build_all
 #See #i105566# && moz#513024#
 .IF "$(OS)"=="LINUX"
 BUILD_ACTION+=FREEBL_NO_DEPEND=1
+PATCH_FILES+=nss_linux.patch
 .ENDIF
 
 .ENDIF			# "$(GUI)"=="UNX"
@@ -154,16 +158,16 @@ BUILD_ACTION= PATH="$(moz_build)/msys/bin:$(moz_build)/moztools/bin:$(PATH)" && 
 	-c "cd $(NSS_BUILD_DIR) && make nss_build_all"
 
 OUT2LIB= \
- 	mozilla$/dist$/out$/lib$/nspr4.lib \
- 	mozilla$/dist$/out$/lib$/nss3.lib \
- 	mozilla$/dist$/out$/lib$/nssdbm3.lib \
- 	mozilla$/dist$/out$/lib$/nssutil3.lib \
- 	mozilla$/dist$/out$/lib$/plc4.lib \
- 	mozilla$/dist$/out$/lib$/plds4.lib \
- 	mozilla$/dist$/out$/lib$/smime3.lib \
- 	mozilla$/dist$/out$/lib$/softokn3.lib \
- 	mozilla$/dist$/out$/lib$/sqlite3.lib \
- 	mozilla$/dist$/out$/lib$/ssl3.lib
+	mozilla$/dist$/out$/lib$/nspr4.lib \
+	mozilla$/dist$/out$/lib$/nss3.lib \
+	mozilla$/dist$/out$/lib$/nssdbm3.lib \
+	mozilla$/dist$/out$/lib$/nssutil3.lib \
+	mozilla$/dist$/out$/lib$/plc4.lib \
+	mozilla$/dist$/out$/lib$/plds4.lib \
+	mozilla$/dist$/out$/lib$/smime3.lib \
+	mozilla$/dist$/out$/lib$/softokn3.lib \
+	mozilla$/dist$/out$/lib$/sqlite3.lib \
+	mozilla$/dist$/out$/lib$/ssl3.lib
 
 .ENDIF			# "$(COM)"=="GCC"
 
@@ -179,4 +183,4 @@ OUTDIR2INC=mozilla$/dist$/public$/nss mozilla$/dist$/out$/include
 .INCLUDE :	target.mk
 .INCLUDE :	tg_ext.mk
 
-
+.ENDIF

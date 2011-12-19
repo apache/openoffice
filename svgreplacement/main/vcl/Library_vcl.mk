@@ -445,7 +445,7 @@ $(eval $(call gb_Library_add_exception_objects,vcl,\
 ))
 
 ## handle Graphite
-ifneq ($(ENABLE_GRAPHITE),)
+ifeq ($(ENABLE_GRAPHITE),TRUE)
 # add defines, graphite sources for all platforms
 $(eval $(call gb_Library_set_defs,vcl,\
 	$$(DEFS) \
