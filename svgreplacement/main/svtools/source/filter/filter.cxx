@@ -1997,7 +1997,7 @@ sal_uInt16 GraphicFilter::ExportGraphic( const Graphic& rGraphic, const String& 
 			}
 			else if( aFilterName.EqualsIgnoreCaseAscii( EXP_SVG ) )
 			{
-                sal_Bool bDone = sal_False;
+                bool bDone(false);
                
                 // do we have a native SVG RenderGraphic, whose data can be written directly?
                 const SvgDataPtr aSvgDataPtr(rGraphic.getSvgData());
