@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #include "precompiled_svx.hxx"
 #include <svx/sdr/primitive2d/sdrgrafprimitive2d.hxx>
 #include <drawinglayer/primitive2d/graphicprimitive2d.hxx>
@@ -30,6 +28,8 @@
 #include <svx/sdr/primitive2d/svx_primitivetypes2d.hxx>
 #include <drawinglayer/primitive2d/sdrdecompositiontools2d.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include <drawinglayer/primitive2d/transformprimitive2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -94,7 +94,8 @@ namespace drawinglayer
 			// add graphic content
 			if(255L != getGraphicAttr().GetTransparency())
 			{
-				const Primitive2DReference xGraphicContentPrimitive(
+                // standard graphic fill
+                const Primitive2DReference xGraphicContentPrimitive(
                     new GraphicPrimitive2D(
                         getTransform(), 
                         getGraphicObject(), 
@@ -160,7 +161,8 @@ namespace drawinglayer
 
 		bool SdrGrafPrimitive2D::isTransparent() const
 		{
-			return ((0L != getGraphicAttr().GetTransparency()) || (getGraphicObject().IsTransparent()));
+			return ((0L != getGraphicAttr().GetTransparency()) 
+                || (getGraphicObject().IsTransparent()));
 		}
 
 		// provide unique ID
