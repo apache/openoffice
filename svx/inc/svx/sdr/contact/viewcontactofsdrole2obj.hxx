@@ -25,6 +25,7 @@
 #define _SDR_CONTACT_VIEWCONTACTOFSDROLE2OBJ_HXX
 
 #include <svx/sdr/contact/viewcontactofsdrrectobj.hxx>
+#include <basegfx/matrix/b2dhommatrix.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // predeclarations
@@ -52,7 +53,10 @@ namespace sdr
 				return (SdrOle2Obj&)GetSdrObject();
 			}
 
-			// basic constructor, used from SdrObject.
+            /// helper to create transformation from SdrObject
+            basegfx::B2DHomMatrix createObjectTransform() const;
+
+            // basic constructor, used from SdrObject.
 			ViewContactOfSdrOle2Obj(SdrOle2Obj& rOle2Obj);
 			virtual ~ViewContactOfSdrOle2Obj();
 
