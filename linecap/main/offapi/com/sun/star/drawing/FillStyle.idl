@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_drawing_FillStyle_idl__ 
+#define __com_sun_star_drawing_FillStyle_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module drawing {  
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: enum com::sun::star::drawing::FillStyle
+/** specifies how an area will be filled.
+ */
+published enum FillStyle
+{ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR FillStyle::	NONE, 
+	
+	// DocMerge from xml: value com::sun::star::drawing::FillStyle::NONE
+	/** the area is not filled.
+	 */
+	NONE, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR FillStyle::	SOLID, 
+	
+	// DocMerge from xml: value com::sun::star::drawing::FillStyle::SOLID
+	/** use a solid color to fill the area.
+	 */
+	SOLID, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR FillStyle::	GRADIENT, 
+	
+	// DocMerge from xml: value com::sun::star::drawing::FillStyle::GRADIENT
+	/** use a gradient color to fill the area.
+	 */
+	GRADIENT, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR FillStyle::	HATCH, 
+	
+	// DocMerge from xml: value com::sun::star::drawing::FillStyle::HATCH
+	/** use a hatch to fill the area.
+	 */
+	HATCH, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR FillStyle::	BITMAP 
+	
+	// DocMerge from xml: value com::sun::star::drawing::FillStyle::BITMAP
+	/** use a bitmap to fill the  area.
+	 */
+	BITMAP 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 
+

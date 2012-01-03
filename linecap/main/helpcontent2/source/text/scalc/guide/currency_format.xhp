@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+<topic id="textscalcguidecurrency_formatxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Cells in Currency Format</title>
+<filename>/text/scalc/guide/currency_format.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156329"><bookmark_value>currency formats; spreadsheets</bookmark_value>
+<bookmark_value>cells; currency formats</bookmark_value>
+<bookmark_value>international currency formats</bookmark_value>
+<bookmark_value>formats; currency formats in cells</bookmark_value>
+<bookmark_value>currencies; default currencies</bookmark_value>
+<bookmark_value>defaults;currency formats</bookmark_value>
+<bookmark_value>changing;currency formats</bookmark_value>
+</bookmark><comment>mw changed one index entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3156329" role="heading" level="1" l10n="U"
+oldref="46"><variable id="currency_format"><link href="text/scalc/guide/currency_format.xhp" name="Cells in Currency Format">Cells in Currency Format</link>
+</variable></paragraph>
+<paragraph xml-lang="en-US" id="par_id3153968" role="paragraph" l10n="CHG" oldref="47">In <item type="productname">%PRODUCTNAME</item> Calc you can give numbers any currency format. When you click the <item type="menuitem">Currency</item> icon 
+<image id="img_id3150791" src="res/commandimagelist/sc_currencyfield.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3150791">Icon</alt>
+</image> in the <item type="menuitem">Formatting</item> bar to format a number, the cell is given the default currency format set under <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages</item>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150010" role="note" l10n="CHG" oldref="48">Exchanging of <item type="productname">%PRODUCTNAME</item> Calc documents can lead to misunderstandings, if your <item type="productname">%PRODUCTNAME</item> Calc document is loaded by a user who uses a different default currency format.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156442" role="paragraph" l10n="U" oldref="52">In <item type="productname">%PRODUCTNAME</item> Calc you can define that a number that you have formatted as "1,234.50 €", still remains in euros in another country and does not become dollars.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151075" role="paragraph" l10n="CHG" oldref="49">You can change the currency format in the <item type="menuitem">Format Cells</item> dialog (choose <item type="menuitem">Format - Cells - Numbers</item> tab) by two country settings. In the <item type="menuitem">Language</item> combo box select the basic setting for decimal and thousands separators. In the <item type="menuitem">Format</item> list box you can select the currency symbol and its position.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3150749" role="listitem" l10n="U" oldref="50">For example, if the language is set to "Default" and you are using a german locale setting, the currency format will be "1.234,00 €". A point is used before the thousand digits and a comma before the decimal places. If you now select the subordinate currency format "$ English (US)" from the <item type="menuitem">Format</item> list box , you will get the following format: "$ 1.234,00". As you can see, the separators have remained the same. Only the currency symbol has been changed and converted, but the underlying format of the notation remains the same as in the locale setting.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3145640" role="listitem" l10n="U" oldref="51">If, under <item type="menuitem">Language</item>, you convert the cells to "English (US)", the English-language locale setting is also transferred and the default currency format is now "$ 1,234.00".</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/scalc/guide/text_numbers.xhp#text_numbers"/>
+<paragraph xml-lang="en-US" id="par_id3154255" role="paragraph" l10n="U" oldref="53"><link href="text/shared/01/05020300.xhp" name="Format - Cells - Numbers">Format - Cells - Numbers</link></paragraph>
+</section>
+</body>
+</helpdocument>

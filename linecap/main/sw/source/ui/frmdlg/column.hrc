@@ -1,0 +1,82 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define FT_NUMBER		1
+#define ED_NUMBER		2
+#define FT_DISTANCE		3
+#define ED_DISTANCE		4
+#define CB_AUTO_WIDTH	4
+#define FL_COLUMNS              6
+
+#define FT_1			20
+#define FT_2			21
+#define FT_3			22
+
+
+#define ED_1			25
+#define ED_2			26
+#define ED_3			27
+
+
+#define BTN_UP			30
+#define BTN_DOWN		31
+#define FL_LAYOUT		32
+
+#define FT_STYLE		33
+#define LB_STYLE		34
+#define FT_HEIGHT		35
+#define ED_HEIGHT		36
+#define FT_POSITION		37
+#define LB_POSITION		38
+#define FL_LINETYPE		39
+
+#define WN_BSP			41
+
+#define LB_REFERENCE		42
+#define CB_REGISTER             43
+#define FL_REGISTER             44
+#define FT_REFERENCE 		45
+
+#define ED_DIST1                46
+#define ED_DIST2                47
+
+#define FT_COLUMN               48
+#define FT_WIDTH                49
+#define FT_DIST                 50
+#define VS_DEFAULTS             51
+#define IL_PRE_COLS          	52
+
+#define FT_APPLY_TO				53
+#define LB_APPLY_TO             54
+#define PB_HELP					55
+#define PB_CANCEL               56
+#define PB_OK                   57
+#define CB_BALANCECOLS			58
+#define FL_PROPERTIES           59
+#define FT_TEXTDIRECTION        60
+#define LB_TEXTDIRECTION        61
+#define FL_VERT                 62
+#define LISTBOX_SELECTION		0
+#define LISTBOX_SECTION			1
+#define LISTBOX_SECTIONS		2
+#define LISTBOX_PAGE			3
+#define LISTBOX_FRAME			4

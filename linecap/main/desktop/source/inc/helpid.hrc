@@ -1,0 +1,63 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#if ! defined INCLUDED_DESKTOP_HELPID_HRC
+#define INCLUDED_DESKTOP_HELPID_HRC
+
+#define HID_PACKAGE_MANAGER                                "DESKTOP_HID_PACKAGE_MANAGER"
+#define HID_PACKAGE_MANAGER_TREELISTBOX                    "DESKTOP_HID_PACKAGE_MANAGER_TREELISTBOX"
+#define HID_PACKAGE_MANAGER_PROGRESS                       "DESKTOP_HID_PACKAGE_MANAGER_PROGRESS"
+#define HID_PACKAGE_MANAGER_PROGRESS_CANCEL                "DESKTOP_HID_PACKAGE_MANAGER_PROGRESS_CANCEL"
+#define HID_PACKAGE_MANAGER_MENU_ITEM                      "DESKTOP_HID_PACKAGE_MANAGER_MENU_ITEM"
+
+#define HID_FIRSTSTART_DIALOG                              "DESKTOP_HID_FIRSTSTART_DIALOG"
+#define HID_FIRSTSTART_WELCOME                             "DESKTOP_HID_FIRSTSTART_WELCOME"
+#define HID_FIRSTSTART_LICENSE                             "DESKTOP_HID_FIRSTSTART_LICENSE"
+#define HID_FIRSTSTART_MIGRATION                           "DESKTOP_HID_FIRSTSTART_MIGRATION"
+#define HID_FIRSTSTART_REGISTRATION                        "DESKTOP_HID_FIRSTSTART_REGISTRATION"
+#define HID_FIRSTSTART_USER                                "DESKTOP_HID_FIRSTSTART_USER"
+#define HID_FIRSTSTART_PREV                                "DESKTOP_HID_FIRSTSTART_PREV"
+#define HID_FIRSTSTART_NEXT                                "DESKTOP_HID_FIRSTSTART_NEXT"
+#define HID_FIRSTSTART_CANCEL                              "DESKTOP_HID_FIRSTSTART_CANCEL"
+#define HID_FIRSTSTART_FINISH                              "DESKTOP_HID_FIRSTSTART_FINISH"
+#define UID_FIRSTSTART_HELP                                "DESKTOP_UID_FIRSTSTART_HELP"
+#define UID_BTN_LICENSE_ACCEPT                             "DESKTOP_UID_BTN_LICENSE_ACCEPT"
+#define HID_FIRSTSTART_UPDATE_CHECK                        "DESKTOP_HID_FIRSTSTART_UPDATE_CHECK"
+#define HID_DEPLOYMENT_GUI_UPDATE                          "DESKTOP_HID_DEPLOYMENT_GUI_UPDATE"
+#define HID_DEPLOYMENT_GUI_UPDATEINSTALL                   "DESKTOP_HID_DEPLOYMENT_GUI_UPDATEINSTALL"
+#define HID_DEPLOYMENT_GUI_UPDATE_PUBLISHER                "DESKTOP_HID_DEPLOYMENT_GUI_UPDATE_PUBLISHER"
+#define HID_DEPLOYMENT_GUI_UPDATE_RELEASENOTES             "DESKTOP_HID_DEPLOYMENT_GUI_UPDATE_RELEASENOTES"
+#define HID_DEPLOYMENT_GUI_UPDATE_AVAILABLE_UPDATES        "DESKTOP_HID_DEPLOYMENT_GUI_UPDATE_AVAILABLE_UPDATES"
+
+#define HID_EXTENSION_MANAGER_LISTBOX                      "DESKTOP_HID_EXTENSION_MANAGER_LISTBOX"
+#define HID_EXTENSION_MANAGER_LISTBOX_OPTIONS              "DESKTOP_HID_EXTENSION_MANAGER_LISTBOX_OPTIONS"
+#define HID_EXTENSION_MANAGER_LISTBOX_ENABLE               "DESKTOP_HID_EXTENSION_MANAGER_LISTBOX_ENABLE"
+#define HID_EXTENSION_MANAGER_LISTBOX_DISABLE              "DESKTOP_HID_EXTENSION_MANAGER_LISTBOX_DISABLE"
+#define HID_EXTENSION_MANAGER_LISTBOX_REMOVE               "DESKTOP_HID_EXTENSION_MANAGER_LISTBOX_REMOVE"
+
+#define HID_EXTENSION_DEPENDENCIES                         "DESKTOP_HID_EXTENSION_DEPENDENCIES"
+
+#define HID_PACKAGE_MANAGER_UPD_REQ                        "DESKTOP_HID_PACKAGE_MANAGER_UPD_REQ"
+
+#endif
+

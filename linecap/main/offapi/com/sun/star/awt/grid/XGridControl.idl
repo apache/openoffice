@@ -1,0 +1,103 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_grid_XGridControl_idl__
+#define __com_sun_star_awt_grid_XGridControl_idl__
+
+#include <com/sun/star/uno/XInterface.idl>
+#include <com/sun/star/lang/IndexOutOfBoundsException.idl>
+#include <com/sun/star/util/VetoException.idl>
+
+//=============================================================================
+
+module com {  module sun {  module star {  module awt { module grid {
+
+//=============================================================================
+
+/** An interface to a control that displays a tabular data.
+
+	@see UnoControlGrid
+
+	@since OOo 3.3
+ */
+published interface XGridControl
+{
+	/** retrieves the column which a given point belongs to
+
+        @param X
+            the ordinate of the point, in pixel coordinates.
+        @param Y
+            the abscissa of the point, in pixel coordinates.
+        @return
+            the index of the column which the point lies in, or -1 if no column is under the given point.
+	*/
+    long getColumnAtPoint( [in] long X, [in] long Y );
+
+	/** retrieves the row which a given point belongs to
+
+        @param X
+            the ordinate of the point, in pixel coordinates.
+        @param Y
+            the abscissa of the point, in pixel coordinates.
+        @return
+            the index of the row which the point lies in, or -1 if no row is under the given point.
+	*/
+    long getRowAtPoint( [in] long X, [in] long Y );
+
+    /** returns the column index of the currently active cell
+
+        <p>If the grid control's does not contain any cells (which happens if the grid column model does not contain any
+        columns, or if grid data model does not contain any rows), then <code>-1</code> is returned.</p>
+    */
+    long getCurrentColumn();
+
+    /** returns the row index of the currently active cell
+
+        <p>If the grid control's does not contain any cells (which happens if the grid column model does not contain any
+        columns, or if grid data model does not contain any rows), then <code>-1</code> is returned.</p>
+    */
+    long getCurrentRow();
+
+    /** moves the cursor to the given cell
+        @param ColumnIndex
+            the column index of the cell to activate.
+        @param RowIndex
+            the row index of the cell to activate.
+        @throws ::com::sun::star::lang::IndexOutOfBoundsException
+            if either <code>ColumnIndex</code> or <code>RowIndex</code> are out of range.
+        @throws ::com::sun::star::util::VetoException
+            if moving the cursor to another cell is vetoed.
+    */
+    void    goToCell(
+                [in] long ColumnIndex,
+                [in] long RowIndex
+            )
+            raises  (   ::com::sun::star::lang::IndexOutOfBoundsException
+                    ,   ::com::sun::star::util::VetoException
+                    );
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

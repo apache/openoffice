@@ -1,0 +1,72 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_drawing_framework_XPane2_idl__
+#define __com_sun_star_drawing_framework_XPane2_idl__
+
+#ifndef __com_sun_star_accessibility_XAccessible_idl__
+#include <com/sun/star/accessibility/XAccessible.idl>
+#endif
+
+module com { module sun { module star { module drawing { module framework {
+
+/** An extension of the XPane interface that adds support for
+    a) showing and hiding the windows that internally belong to the pane and
+    b) setting the accessibility object.
+    This is typically an optional interface.
+*/
+interface XPane2
+{
+    /** Return whether all windows that are used to implement the pane are
+        visible.
+        @Returns <TRUE> when all windows of the pane are visible.
+    */
+    boolean isVisible ();
+
+    /** Hide or show the pane.  If there is more than one window used to
+        implement the pane then it is left to the implementation if one,
+        some, or all windows are hidden or shown as long as the pane becomes
+        hidden or visible.
+        @param bIsVisible
+            When <TRUE> then show the pane.  Hide it otherwise.
+    */
+    void setVisible ([in] boolean bIsVisible);
+
+    /** Set the accessibility object for the pane. When there is more than
+        one window used to implement the pane then the given accessibility
+        object is usually set at the topmost window.  However, the details
+        are implementation dependent.
+        @param xAccessible
+            May be an empty reference.  
+    */
+    void setAccessible ([in] ::com::sun::star::accessibility::XAccessible xAccessible);
+
+    /** Return the accessibility object that is currently associated with
+        the windows that implement the pane.
+    */
+    ::com::sun::star::accessibility::XAccessible getAccessible ();
+};
+
+}; }; }; }; }; // ::com::sun::star::drawing::framework
+
+#endif

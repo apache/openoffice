@@ -1,0 +1,70 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_linguistic2_XSetSpellAlternatives_idl__
+#define __com_sun_star_linguistic2_XSetSpellAlternatives_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+
+//=============================================================================
+
+module com { module sun { module star { module linguistic2 {
+
+//=============================================================================
+/** 
+    allows to modify the suggestion list returned by a spell checker.
+
+    <P>Basically this is needed to post-add further suggestions while keeping the
+    originally returned reference from the spell checker.
+    E.g. from the user dictionaries.</P>
+
+    @see    <type scope="com::sun::star::linguistic2">XSpellAlternatives</type>
+*/
+interface XSetSpellAlternatives : com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/**
+        set the list of suggestions to be returned.
+
+        @since  OOo 3.0.1
+	*/
+    void setAlternatives( [in] sequence< string > aAlternatives );
+
+    //-------------------------------------------------------------------------
+    /**
+        set the type of error found.
+
+        @see    <tyoe scope="com::sun::star::linguistic2">SpellFailure</type>
+        @since  OOo 3.0.1
+    */
+    void setFailureType( [in] short nFailureType );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

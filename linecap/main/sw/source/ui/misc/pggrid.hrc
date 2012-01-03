@@ -1,0 +1,48 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#define FL_GRID_TYPE        1
+#define RB_NOGRID           2
+#define RB_LINESGRID        3
+#define RB_CHARSGRID        4
+#define WN_EXAMPLE          5
+#define FL_LAYOUT           6
+#define FT_LINESPERPAGE     7
+#define NF_LINESPERPAGE     8
+#define FT_LINESPERPAGEHINT 9
+#define FT_TEXTSIZE         10
+#define MF_TEXTSIZE         11
+#define FT_CHARSPERLINE     12
+#define NF_CHARSPERLINE     13
+#define FT_CHARSPERLINEHINT 14
+#define FT_RUBYSIZE         15
+#define MF_RUBYSIZE         16
+#define CB_RUBYBELOW        17
+#define FL_DISPLAY          18
+#define CB_DISPLAY          19
+#define CB_PRINT            20
+#define FT_COLOR            21
+#define LB_COLOR            22
+#define CB_SNAPTOCHARS      23
+#define FT_CHARWIDTH        24
+#define MF_CHARWIDTH        25

@@ -1,0 +1,107 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include "basic/ttglobal.hrc"
+
+
+// Here are the messages of directory /basic/source/testtool included
+
+///////////////////////////////
+// Error message that go to the Resultfile.
+// *********************
+// ***  !!ATTENTION!!    ***
+// *********************
+// Theses numbers MUST NOT change ever!
+// Because they are stored in the Resultfiles and if you showed them again
+// the appropriate new or no Strings are viewed.
+///////////////////////////////
+
+#define S_NAME_NOT_THERE					( TT_START +   0 )
+#define	S_DOUBLE_NAME						( TT_START +   1 )
+#define	S_READING_FILE						( TT_START +   2 )
+#define	S_CANNOT_OPEN_FILE					( TT_START +   3 )
+#define	S_INVALID_LINE						( TT_START +   4 )
+#define	S_SHORTNAME_UNKNOWN					( TT_START +   5 )
+#define	S_LONGNAME_UNKNOWN					( TT_START +   6 )
+#define	S_FIRST_SHORTNAME_REQ_ASTRX			( TT_START +   7 )
+#define	S_TIMOUT_WAITING					( TT_START +   8 )
+#define	S_APPLICATION_RESTARTED				( TT_START +   9 )
+#define	S_APPLICATION_START_FAILED			( TT_START +  10 )
+#define	S_TIMOUT_SENDING					( TT_START +  11 )
+#define	S_NO_CONNECTION						( TT_START +  12 )
+#define	S_NO_FILES_FOUND					( TT_START +  13 )  // Not used anymore. needed only for old *.res files
+#define	S_ERRORS_DETECTED					( TT_START +  14 )
+#define	S_NO_ERRORS_DETECTED				( TT_START +  15 )
+#define	S_WARNINGS_DETECTED					( TT_START +  16 )
+#define	S_NO_WARNINGS_DETECTED				( TT_START +  17 )
+#define	S_UNKNOWN_SLOT_CONTROL				( TT_START +  18 )
+#define	S_RETURN_SEQUENCE_MISSMATCH			( TT_START +  19 )
+#define	S_RETURNED_VALUE_ID_MISSMATCH		( TT_START +  20 )
+#define	S_RETURNED_VALUE_NO_RECEIVER		( TT_START +  21 )
+#define	S_UNKNOWN_METHOD					( TT_START +  22 )
+#define	S_INCLUDE_FILE_WARNINGS_DETECTED	( TT_START +  23 )
+#define	S_NO_INCLUDE_FILE_WARNINGS_DETECTED	( TT_START +  24 )
+
+// Strings
+
+
+/*
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+#define S_				( TT_START +   0 )
+*/

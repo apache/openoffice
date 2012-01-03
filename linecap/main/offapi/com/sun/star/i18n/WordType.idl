@@ -1,0 +1,69 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_i18n_WordType_idl__
+#define __com_sun_star_i18n_WordType_idl__
+
+//=============================================================================
+
+module com {  module sun {  module star {  module i18n {
+
+//=============================================================================
+
+/** Constants to specify the type of words.
+
+    <p> Used with <member>XBreakIterator::nextWord()</member>,
+    <member>XBreakIterator::previousWord()</member>,
+    <member>XBreakIterator::getWordBoundary()</member>,
+    <member>XBreakIterator::getWordType()</member>,
+    <member>XBreakIterator::isBeginWord()</member>,
+    <member>XBreakIterator::isEndWord()</member> </p>
+*/
+published constants WordType
+{
+    /** Any "words" - words in the meaning of same character types,
+        collection of alphanumeric characters, or collection of
+        non-alphanumeric characters.
+	*/
+	const short ANY_WORD                 = 0;
+
+    /** Any "words" - words in the meaning of same character types,
+        collection of alphanumeric characters, or collection of
+        non-alphanumeric characters except blanks.
+	*/
+	const short ANYWORD_IGNOREWHITESPACES= 1;
+
+    /** "words" - in the meaning of a collection of alphanumeric
+        characters and some punctuations, like dot for abbreviation.
+	*/
+    const short DICTIONARY_WORD          = 2;
+
+    /** The mode for counting words, it will combine punctuations and
+        spaces as word trail.
+ 	*/
+    const short WORD_COUNT               = 3;
+};
+
+//=============================================================================
+}; }; }; };
+
+#endif

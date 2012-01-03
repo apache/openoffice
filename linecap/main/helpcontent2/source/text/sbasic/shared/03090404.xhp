@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090404xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">End Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090404.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T11:34:58">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="end">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150771"><bookmark_value>End statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090404.xhp" name="End Statement [Runtime]">End Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="U" oldref="2">Ends a procedure or block.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147264" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="4">End, End Function, End If, End Select, End Sub</paragraph>
+<paragraph role="heading" id="hd_id3149456" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150398" xml-lang="en-US" l10n="U" oldref="6">Use the End statement as follows:</paragraph>
+<paragraph role="heading" id="hd_id3154366" xml-lang="en-US" level="2" l10n="U" oldref="7">Statement</paragraph>
+<paragraph role="paragraph" id="par_id3151043" xml-lang="en-US" l10n="U" oldref="8">End: Is not required, but can be entered anywhere within a procedure to end the program execution.</paragraph>
+<paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="U" oldref="9">End Function: Ends a <emph>Function</emph> statement.</paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="10">End If: Marks the end of a <emph>If...Then...Else</emph> block.</paragraph>
+<paragraph role="paragraph" id="par_id3148451" xml-lang="en-US" l10n="U" oldref="11">End Select: Marks the end of a <emph>Select Case</emph> block.</paragraph>
+<paragraph role="paragraph" id="par_id3155131" xml-lang="en-US" l10n="U" oldref="12">End Sub: Ends a <emph>Sub</emph> statement.</paragraph>
+<paragraph role="heading" id="hd_id3146120" xml-lang="en-US" level="2" l10n="U" oldref="13">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3146985" xml-lang="en-US" l10n="U" oldref="14">Sub ExampleRandomSelect</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="15">Dim iVar As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="16">iVar = Int((15 * Rnd) -2)</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="17">Select Case iVar</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="18">Case 1 To 5</paragraph>
+<paragraph role="paragraph" id="par_id3152887" xml-lang="en-US" l10n="U" oldref="19">Print "Number from 1 to 5"</paragraph>
+<paragraph role="paragraph" id="par_id3163713" xml-lang="en-US" l10n="U" oldref="20">Case 6, 7, 8</paragraph>
+<paragraph role="paragraph" id="par_id3148618" xml-lang="en-US" l10n="U" oldref="21">Print "Number from 6 to 8"</paragraph>
+<paragraph role="paragraph" id="par_id3153144" xml-lang="en-US" l10n="U" oldref="22">Case Is &gt; 8 And iVar &lt; 11</paragraph>
+<paragraph role="paragraph" id="par_id3147436" xml-lang="en-US" l10n="U" oldref="23">Print "Greater than 8"</paragraph>
+<paragraph role="paragraph" id="par_id3155418" xml-lang="en-US" l10n="U" oldref="24">Case Else</paragraph>
+<paragraph role="paragraph" id="par_id3150418" xml-lang="en-US" l10n="U" oldref="25">Print "Outside range 1 to 10"</paragraph>
+<paragraph role="paragraph" id="par_id3156285" xml-lang="en-US" l10n="U" oldref="26">End Select</paragraph>
+<paragraph role="paragraph" id="par_id3149582" xml-lang="en-US" l10n="U" oldref="27">end sub</paragraph>
+</body>
+</helpdocument>

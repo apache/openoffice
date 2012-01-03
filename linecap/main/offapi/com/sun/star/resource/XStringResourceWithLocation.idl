@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_resource_XStringResourceWithLocation_idl__
+#define __com_sun_star_resource_XStringResourceWithLocation_idl__
+
+#ifndef __com_sun_star_resource_XStringResourcePersistence_idl__
+#include <com/sun/star/resource/XStringResourcePersistence.idl>
+#endif
+
+
+//=============================================================================
+
+module com { module sun { module star { module resource {
+
+//=============================================================================
+/**
+    Extends <type>XStringResourcePersistence</type> by methods to handle an
+    associated location.
+
+    @see <type>XStringResourcePersistence</type>.
+*/
+published interface XStringResourceWithLocation: com::sun::star::resource::XStringResourcePersistence
+{
+    /**
+        Stores all string table data to a location and associates this location
+        to this instance as if <member>setLocation</member> was called with this
+        location. The modified state will be unmodified after the call.
+
+        @param URL
+            the location the string table data should be stored to.
+    */
+    void storeAsURL( [in] string URL )
+        raises( com::sun::star::uno::Exception );
+
+
+    /**
+        Associates a location to the StringResourceWithStorage instance
+        which is used on subsequent calls of <member>store</member>.
+
+        @param URL
+            the location to be associated to the StringResourceManager
+
+        <p>
+        This call has to be used carefully as it removes the location
+        previously connected to the StringResourceWithStorage. It may
+        force the implementation to reload data from the previous
+        location before releasing it. The StringResourceManager will
+        be modified after calling this method as the data isn't stored
+        to the new location yet. <member>storeAsURL</member> should
+        be prefered as it directly stores the data to the new location
+        and afterwards this location is in sync with the resource data.
+        </p>
+
+        @throws <type scope="com::sun::star::lang">IllegalArgumentException</type>
+            if an empty string is passed as URL
+    */
+    void setURL( [in] string URL )
+        raises( ::com::sun::star::lang::IllegalArgumentException );
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,95 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "svtools/svtools.hrc"
+
+String STR_SVT_FILEPICKER_AUTO_EXTENSION
+{
+    Text [ en-US ] = "~Automatic file name extension" ;
+};
+
+String STR_SVT_FILEPICKER_PASSWORD
+{
+    Text [ en-US ] = "Save with pass~word" ;
+};
+
+String STR_SVT_FILEPICKER_FILTER_OPTIONS
+{
+    Text [ en-US ] = "~Edit filter settings";
+};
+
+String STR_SVT_FILEPICKER_READONLY
+{
+    Text [ en-US ] = "~Read-only" ;
+};
+
+String STR_SVT_FILEPICKER_INSERT_AS_LINK
+{
+    Text [ en-US ] = "~Link" ;
+};
+
+String STR_SVT_FILEPICKER_SHOW_PREVIEW
+{
+    Text [ en-US ] = "Pr~eview" ;
+};
+
+String STR_SVT_FILEPICKER_PLAY
+{
+    Text [ en-US ] = "~Play" ;
+};
+
+String STR_SVT_FILEPICKER_VERSION
+{
+    Text [ en-US ] = "~Version:";
+};
+
+String STR_SVT_FILEPICKER_TEMPLATES
+{
+    Text [ en-US ] = "S~tyles:" ;
+};
+
+String STR_SVT_FILEPICKER_IMAGE_TEMPLATE
+{
+	Text [ en-US ] = "Style:";
+};
+
+String STR_SVT_FILEPICKER_SELECTION
+{
+    Text [ en-US ] = "~Selection" ;
+};
+
+String STR_SVT_FILEPICKER_FILTER_TITLE
+{
+    Text [ en-US ] = "File ~type:" ;
+};
+
+String STR_SVT_FOLDERPICKER_DEFAULT_TITLE
+{
+	Text [ en-US ] = "Select Path" ;
+};
+
+String STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION
+{
+	Text [ en-US ] = "Please select a folder.";
+};
+

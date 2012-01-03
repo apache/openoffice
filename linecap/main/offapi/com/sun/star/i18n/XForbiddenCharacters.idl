@@ -1,0 +1,82 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_i18n_XForbiddenCharacters_idl__
+#define __com_sun_star_i18n_XForbiddenCharacters_idl__
+
+#include <com/sun/star/i18n/ForbiddenCharacters.idl>
+
+#ifndef __com_sun_star_lang_Locale_idl__
+#include <com/sun/star/lang/Locale.idl>
+#endif
+#ifndef __com_sun_star_container_NoSuchElementException_idl__
+#include <com/sun/star/container/NoSuchElementException.idl>
+#endif
+
+
+//============================================================================
+
+module com {  module sun {  module star {  module i18n {
+
+//============================================================================
+
+/**
+    provides access to forbidden character settings in a document.
+
+    <p> In some languages, particular characters are not allowed to be
+    placed at the beginning or at the end of a text line. </p>
+ */
+
+published interface XForbiddenCharacters : com::sun::star::uno::XInterface
+{
+    //------------------------------------------------------------------------
+    /** returns the forbidden characters for a given locale.
+     */
+    ForbiddenCharacters getForbiddenCharacters(
+                    [in] com::sun::star::lang::Locale aLocale )
+            raises( com::sun::star::container::NoSuchElementException );
+
+    //------------------------------------------------------------------------
+    /** determines if forbidden characters are set for a given locale.
+     */
+    boolean     hasForbiddenCharacters(
+                    [in] com::sun::star::lang::Locale aLocale );
+
+    //------------------------------------------------------------------------
+    /** sets the forbidden characters for a given Locale.
+     */
+    void        setForbiddenCharacters(
+                    [in] com::sun::star::lang::Locale aLocale,
+                    [in] ForbiddenCharacters aForbiddenCharacters );
+
+    //------------------------------------------------------------------------
+    /** removes the setting of forbidden characters for a given locale.
+     */
+    void        removeForbiddenCharacters(
+                    [in] com::sun::star::lang::Locale aLocale );
+};
+
+//============================================================================
+}; }; }; };
+
+#endif
+

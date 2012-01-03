@@ -1,0 +1,50 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_rendering_PanoseSerifStyle_idl__
+#define __com_sun_star_rendering_PanoseSerifStyle_idl__
+
+module com { module sun { module star { module rendering {
+
+constants PanoseSerifStyle
+{
+	const byte ANYTHING=0;
+	const byte NO_FIT=1;
+	const byte COVE=2;
+	const byte OBTUSE_COVE=3;
+	const byte SQUARE_COVE=4;
+	const byte OBTUSE_SQUARE_COVE=5;
+	const byte SQUARE=6;
+	const byte THIN=7;
+	const byte BONE=8;
+	const byte EXAGGERATED=9;
+	const byte TRIANGLE=10;
+	const byte NORMAL_SANS=11;
+	const byte OBTUSE_SANS=12;
+	const byte PERP_SANS=13;
+	const byte FLARED=14;
+	const byte ROUNDED=15;
+};
+
+}; }; }; };
+
+#endif

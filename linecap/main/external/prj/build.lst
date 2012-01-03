@@ -1,0 +1,4 @@
+el      external :       soltools NULL
+el	external					usr1 - all el_mkout NULL
+el	external\gcc3_specific	nmake	-	all	el_gcc3 NULL
+el	external\mingwheaders		nmake	-	w	el_mingwheaders NULL

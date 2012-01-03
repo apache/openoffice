@@ -1,0 +1,256 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "acredlin.hrc"
+ModelessDialog RID_SCDLG_CHANGES
+{
+	OutputSize = TRUE ;
+	HelpId = CMD_FID_CHG_ACCEPT ;
+	Hide = TRUE ;
+	SVLook = TRUE ;
+	Size = MAP_APPFONT ( 282 , 142 ) ;
+	Moveable = TRUE ;
+	Sizeable = TRUE ;
+	Closeable = TRUE ;
+	 // Dieser Dialog hat einen Cancel-Button !
+	Control CTR_REDLINING
+	{
+		HelpId = HID_SC_REDLIN_CTR ;
+		Pos = MAP_APPFONT ( 2 , 2 ) ;
+		Size = MAP_APPFONT ( 270 , 105 ) ;
+	};
+	CancelButton BTN_CANCEL
+	{
+		Pos = MAP_APPFONT ( 271 , 105 ) ;
+		Size = MAP_APPFONT ( 1 , 1 ) ;
+		TabStop = FALSE ;
+	};
+	FixedText FT_ASSIGN
+	{
+		Hide = TRUE ;
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 12 , 105 ) ;
+		Size = MAP_APPFONT ( 128 , 12 ) ;
+		TabStop = TRUE ;
+		Text [ en-US ] = "Range" ;
+	};
+	Edit ED_ASSIGN
+	{
+	    HelpID = "sc:Edit:RID_SCDLG_CHANGES:ED_ASSIGN";
+		Hide = TRUE ;
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 12 , 119 ) ;
+		Size = MAP_APPFONT ( 128 , 12 ) ;
+		TabStop = TRUE ;
+	};
+	ImageButton RB_ASSIGN
+	{
+	    HelpID = "sc:ImageButton:RID_SCDLG_CHANGES:RB_ASSIGN";
+		Hide = TRUE ;
+		Pos = MAP_APPFONT ( 142 , 118 ) ;
+		Size = MAP_APPFONT ( 13 , 15 ) ;
+		TabStop = FALSE ;
+		QuickHelpText [ en-US ] = "Minimize/Maximize" ;
+	};
+	String STR_INSERT_COLS
+	{
+		Text [ en-US ] = "Column inserted" ;
+	};
+	String STR_INSERT_ROWS
+	{
+		Text [ en-US ] = "Row inserted " ;
+	};
+	String STR_INSERT_TABS
+	{
+		Text [ en-US ] = "Sheet inserted " ;
+	};
+	String STR_DELETE_COLS
+	{
+		Text [ en-US ] = "Column deleted" ;
+	};
+	String STR_DELETE_ROWS
+	{
+		Text [ en-US ] = "Row deleted" ;
+	};
+	String STR_DELETE_TABS
+	{
+		Text [ en-US ] = "Sheet deleted" ;
+	};
+	String STR_MOVE
+	{
+		Text [ en-US ] = "Range moved" ;
+	};
+	String STR_CONTENT
+	{
+		Text [ en-US ] = "Changed contents" ;
+	};
+	String STR_CONTENT_WITH_CHILD
+	{
+		Text [ en-US ] = "Changed contents" ;
+	};
+	String STR_CHILD_CONTENT
+	{
+		Text [ en-US ] = "Changed to " ;
+	};
+	String STR_CHILD_ORGCONTENT
+	{
+		Text [ en-US ] = "Original" ;
+	};
+	String STR_REJECT
+	{
+		Text [ en-US ] = "Changes rejected" ;
+	};
+	String STR_ACCEPTED
+	{
+		Text [ en-US ] = "Accepted" ;
+	};
+	String STR_REJECTED
+	{
+		Text [ en-US ] = "Rejected" ;
+	};
+	String STR_NO_ENTRY
+	{
+		Text [ en-US ] = "No Entry" ;
+	};
+	String STR_EMPTY
+	{
+		Text [ en-US ] = "<empty>" ;
+	};
+	Bitmap BMP_STR_CLOSE
+	{
+		File = "dir-clos.bmp" ;
+	};
+	Bitmap BMP_STR_OPEN
+	{
+		File = "dir-open.bmp" ;
+	};
+	Bitmap BMP_STR_END
+	{
+		File = "basobj2.bmp" ;
+	};
+	Bitmap BMP_STR_ERROR
+	{
+		File = "basbrk.bmp" ;
+	};
+	Text [ en-US ] = "Accept or Reject Changes" ;
+};
+Menu RID_POPUP_CHANGES
+{
+	ItemList =
+	{
+		MenuItem
+		{
+			Identifier = SC_CHANGES_COMMENT ;
+			HelpId = HID_SC_CHANGES_COMMENT ;
+			Text [ en-US ] = "Edit Comment..." ;
+
+		};
+		MenuItem
+		{
+			Identifier = SC_SUB_SORT ;
+			SubMenu = Menu
+			{
+				ItemList =
+				{
+					MenuItem
+					{
+						Identifier = SC_SORT_ACTION ;
+						HelpID = HID_SC_SORT_ACTION ;
+						RadioCheck = TRUE ;
+						Text [ en-US ] = "Action" ;
+					};
+					MenuItem
+					{
+						Identifier = SC_SORT_POSITION ;
+						HelpID = HID_SORT_POSITION ;
+						RadioCheck = TRUE ;
+						Text [ en-US ] = "Position" ;
+					};
+					MenuItem
+					{
+						Identifier = SC_SORT_AUTHOR ;
+						HelpID = HID_SC_SORT_AUTHOR ;
+						RadioCheck = TRUE ;
+						Text [ en-US ] = "Author" ;
+					};
+					MenuItem
+					{
+						Identifier = SC_SORT_DATE ;
+						HelpID = HID_SC_SORT_DATE ;
+						RadioCheck = TRUE ;
+						Text [ en-US ] = "Date" ;
+					};
+					MenuItem
+					{
+						Identifier = SC_SORT_COMMENT ;
+						HelpID = HID_SC_SORT_COMMENT ;
+						RadioCheck = TRUE ;
+						Text [ en-US ] = "Description" ;
+					};
+				};
+			};
+			Text [ en-US ] = "Sorting" ;
+		};
+	};
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

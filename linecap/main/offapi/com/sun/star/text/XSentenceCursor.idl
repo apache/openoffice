@@ -1,0 +1,101 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_text_XSentenceCursor_idl__ 
+#define __com_sun_star_text_XSentenceCursor_idl__ 
+ 
+#ifndef __com_sun_star_text_XTextCursor_idl__ 
+#include <com/sun/star/text/XTextCursor.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module text {  
+ 
+//============================================================================= 
+ 
+/** makes it possible to perform cursor movements through sentences.
+ */
+published interface XSentenceCursor: com::sun::star::text::XTextCursor
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** determines if the cursor is positioned at the start of a sentence.
+	 */
+	boolean isStartOfSentence(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** determines if the cursor is positioned at the end of a sentence.
+	 */
+	boolean isEndOfSentence(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** moves the cursor to the start of the next sentence.
+
+        @returns
+            <true/> if the cursor was moved. It returns <false/> it the
+            cursor can not advance further.
+     */
+	boolean gotoNextSentence( [in] boolean Expand ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** moves the cursor to the start of the previous sentence.
+
+        @returns
+            <true/> if the cursor was moved. It returns <false/> it the
+            cursor can not advance further.
+     */
+	boolean gotoPreviousSentence( [in] boolean Expand ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** moves the cursor to the start of the current sentence.
+
+        @returns
+            <true/> if the cursor is now at the start of a sentence, 
+            <false/> otherwise. If <false/> was returned the cursor
+            will remain at its original position.
+	 */
+	boolean gotoStartOfSentence( [in] boolean Expand ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** moves the cursor to the end of the current sentence.
+
+        @returns
+            <true/> if the cursor is now at the end of a sentence, 
+            <false/> otherwise. If <false/> was returned the cursor
+            will remain at its original position.
+	 */
+	boolean gotoEndOfSentence( [in] boolean Expand ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

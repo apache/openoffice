@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_tree_XTreeEditListener_idl__
+#define __com_sun_star_awt_tree_XTreeEditListener_idl__
+
+#ifndef __com_sun_star_awt_tree_XTreeNode_idl__
+#include <com/sun/star/awt/tree/XTreeNode.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XEventListener_idl__
+#include <com/sun/star/lang/XEventListener.idl>
+#endif
+
+#ifndef __com_sun_star_util_VetoException_idl__
+#include <com/sun/star/util/VetoException.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module awt {  module tree {
+
+//=============================================================================
+
+/** You can implement this interface and register with <method scope="XTreeControl">addTreeEditListener</method>
+    to get notifcaitons when editing of a node starts and ends.
+
+    <p>You have to set the <member>TreeControlModel::Editable</member> property to
+    <TRUE/> before a tree supports editing.</p>
+ */
+published interface XTreeEditListener : ::com::sun::star::lang::XEventListener
+{
+    /** This method is called from the <type>TreeControl</type> implementation when editing of
+        <var>Node</var> is requested by calling <member>XTreeControl::startEditingAtNode()</member>.
+
+        @param Node
+            the <type>XTreeNode</type> for that an edit request was fired by calling
+            <method scope="XTreeControl">startEditingAtNode</method>
+
+        @throws VetoException
+            if thrown the editing will not start.
+    */
+    void nodeEditing( [in] XTreeNode Node )
+        raises ( ::com::sun::star::util::VetoException );
+
+    /** This method is called from the <type>TreeControl</type> implementation when editing
+        of <var>Node</var> is finished and was not canceled.
+
+        <p>Implementations that register a <type>XTreeEditListener</type> must update the
+        display value at the Node.</p>
+
+        @param Node
+            the <type>XTreeNode</type> for that an edit request was fired by calling
+            <method scope="XTreeControl">startEditingAtNode</method>
+
+        @param NewText
+            the text that was entered by the user.
+    */
+    void nodeEdited( [in] XTreeNode Node, [in] string NewText );
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

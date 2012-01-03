@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************-->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidetable_viewxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Changing Table Views</title>
+<filename>/text/scalc/guide/table_view.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-08-15T13:31:37">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147304"><bookmark_value>row headers; hiding</bookmark_value>
+<bookmark_value>column headers; hiding</bookmark_value>
+<bookmark_value>tables; views</bookmark_value>
+<bookmark_value>views; tables</bookmark_value>
+<bookmark_value>grids;hiding lines in sheets</bookmark_value>
+<bookmark_value>hiding;headers/grid lines</bookmark_value>
+<bookmark_value>changing;table views</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147304" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="table_view"><link href="text/scalc/guide/table_view.xhp" name="Changing Table Views">Changing Table Views</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="2">To hide column and line headers in a table:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153768" xml-lang="en-US" l10n="CHG" oldref="3">Under the menu item <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc,</emph> go to the <emph>View</emph> tab page. Unmark<emph> Column/row headers</emph>. Confirm with <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3147436" xml-lang="en-US" l10n="U" oldref="4">To hide grid lines:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153726" xml-lang="en-US" l10n="CHG" oldref="5">Under the menu item <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc</emph>
+<emph>,</emph> go to the <emph>View</emph> tab page. Unmark <emph>Grid lines</emph>. Confirm with <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/scalc/guide/autoformat.xhp#autoformat"/>
+</section>
+</body>
+</helpdocument>

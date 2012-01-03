@@ -1,0 +1,108 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_ui_UIElement_idl__
+#define __com_sun_star_ui_UIElement_idl__
+
+#ifndef __com_sun_star_ui_XUIElement_idl__
+#include <com/sun/star/ui/XUIElement.idl>
+#endif
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__ 
+#include <com/sun/star/beans/XPropertySet.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XInitialization_idl__
+#include <com/sun/star/lang/XInitialization.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XComponent_idl__
+#include <com/sun/star/lang/XComponent.idl>
+#endif
+
+#ifndef __com_sun_star_util_XUpdatable_idl__
+#include <com/sun/star/util/XUpdatable.idl>
+#endif
+
+//============================================================================= 
+
+module com { module sun { module star { module ui {
+
+//============================================================================= 
+
+/** specifies a user interface element.
+
+    <p>
+    A user interface element consists of a unique identifier and a type specifier. It
+    provides an interface to retrieve a special purpose interface which depends on 
+    the specific user interface element type. Every user interface must be initialized
+    before it can be used.
+    </p>
+    
+    @since OOo 2.0
+*/
+
+service UIElement
+{
+    /** provides a function to retrieve a special purpose interface which depends on 
+        the specific user interface element type.
+    */
+    interface ::com::sun::star::ui::XUIElement;
+
+    /** interface to initialize a user interface element instance. 
+    
+        A user interface element must be initialized using 
+        <member scope=com::sun::star::lang>XInitialization::initialize</member> before
+        it can be used. The following property must be provided:
+        <ul>
+            <li><b>ResourceURL</b>specifies a string property which is the unique identifier of 
+            the user interface element.</li>
+        </ul>
+
+        A user interface element factory creates and initializes every user interface element
+        correctly.
+
+        @see com::sun::star::ui::UIElementFactoryManager;
+        @see com::sun::star::ui::UIElementFactory
+    */
+    [optional] interface ::com::sun::star::lang::XInitialization;
+
+    /** used to notify an implementation that it needs to update its visual representation.
+
+        <p>
+        A user interface element implementation should check if it has to update its visual
+        representation. It is up to the implementation if it ignores notifications.
+        </p>
+    */
+    [optional] interface com::sun::star::util::XUpdatable;
+    
+    /** controls the life-time of the object.
+    */
+    interface ::com::sun::star::lang::XComponent;
+};
+
+}; }; }; };
+
+//============================================================================= 
+
+#endif

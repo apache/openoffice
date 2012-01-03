@@ -1,0 +1,79 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_lang_XInitialization_idl__ 
+#define __com_sun_star_lang_XInitialization_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_uno_Exception_idl__ 
+#include <com/sun/star/uno/Exception.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module lang {  
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: interface com::sun::star::lang::XInitialization
+/** initializes an object directly after its creation.
+	
+	<p>This interface works together with factories. If you want to 
+	initialize the object after creation, you should
+	support this interface and you may support other interfaces 
+	which offer type-safe initialization methods.  </p>
+
+    <p>Instead of calling <member>XSingleComponentFactory::createInstanceWithContext</member>
+    and later initialize(), you should call 
+    <member>XSingleComponentFactory::createInstanceWithArgumentsAndContext</member>
+    to pass the arguments to the instance. The reason is, that a component may want to
+    return the same instance for the same set of parameters, and it can do so by implementing
+    the factory itself.
+    </p>
+
+ */
+published interface XInitialization: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: method com::sun::star::lang::XInitialization::initialize
+	/** initializes the object. 
+		
+		<p>It should be called directly after the object is created.
+	 */
+	void initialize( [in] sequence<any> aArguments ) 
+			raises( com::sun::star::uno::Exception ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

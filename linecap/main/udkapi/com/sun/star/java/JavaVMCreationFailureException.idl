@@ -1,0 +1,57 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_java_JavaVMCreationFailureException_idl__
+#define __com_sun_star_java_JavaVMCreationFailureException_idl__
+
+#ifndef __com_sun_star_java_JavaInitializationException_idl__
+#include <com/sun/star/java/JavaInitializationException.idl>
+#endif
+
+module com { module sun { module star { module java {
+
+
+/** indicates that the Java Virtual Machine could not be created <p>
+    This exception can be thrown when the creation of the Java Virtual
+    Machine failed, even if the runtime library could be loaded.
+    Possible reasons for a failure are that JNI_CreateJavaVM returns
+    an error code that reflects a failure, JNI_CreateJavaVM does not
+    return because it tries to quit the process ( _exit), the shared 
+    library is corrupted, so that the symbols for JNI_GetDefaultVMInitArgs
+    or JNI_CreateJavaVM cannot be found, etc.
+
+    @since OOo 1.1.2
+ */
+published exception JavaVMCreationFailureException: JavaInitializationException
+{
+    /** contains an error code that reflects the returned error code of
+        JNI_CreateJavaVM or other errors. A negative value represents 
+        the returned error code of JNI_CreateJavaVM. All other values 
+        indicate a different cause.
+    */
+    long ErrorCode;
+};
+
+}; }; }; };
+
+#endif

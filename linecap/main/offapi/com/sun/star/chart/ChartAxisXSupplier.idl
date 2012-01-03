@@ -1,0 +1,86 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_chart_ChartAxisXSupplier_idl__ 
+#define __com_sun_star_chart_ChartAxisXSupplier_idl__ 
+ 
+#ifndef __com_sun_star_chart_XAxisXSupplier_idl__ 
+#include <com/sun/star/chart/XAxisXSupplier.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module chart {  
+ 
+//============================================================================= 
+ 
+/** has to be supported by charts providing the cpabilities of a
+   horizontal axis, i.e., an <em>x</em>-axis.
+ */
+published service ChartAxisXSupplier
+{ 
+    /** offers access to the axis object, the title, and the grids
+     */
+	interface com::sun::star::chart::XAxisXSupplier; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** This property determines if the x-axis is shown or hidden.@see ChartAxis
+	 */
+	[property] boolean HasXAxis; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** Determines if the description of the x-axis is
+		shown or hidden.
+	 */
+	[property] boolean HasXAxisDescription; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** Determines if the major grid of the x-axis is
+		shown or hidden.@see ChartGrid
+	 */
+	[property] boolean HasXAxisGrid; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** Determines if the minor grid of the x-axis is shown
+		or hidden.@see ChartGrid
+	 */
+	[property] boolean HasXAxisHelpGrid; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** Determines if the title of the x-axis is shown
+		or hidden.@see ChartTitle
+	 */
+	[property] boolean HasXAxisTitle; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

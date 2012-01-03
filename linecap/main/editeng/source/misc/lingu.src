@@ -1,0 +1,100 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+ // include ---------------------------------------------------------------
+#include <editeng/editrids.hrc>
+ // pragma ----------------------------------------------------------------
+
+ // QueryBoxen ---------------------------------------------------------------
+QueryBox RID_SVXQB_CONTINUE
+{
+	BUTTONS = WB_YES_NO ;
+	DEFBUTTON = WB_DEF_YES ;
+	/* ### ACHTUNG: Neuer Text in Resource? Überprüfung am Anfang des Dokumentes fortsetzen? : šberpr³fung am Anfang des Dokumentes fortsetzen? */
+	/* ### ACHTUNG: Neuer Text in Resource? Überprüfung am Anfang des Dokumentes fortsetzen? : šberpr³fung am Anfang des Dokumentes fortsetzen? */
+	Message [ en-US ] = "Continue checking at beginning of document?" ;
+};
+QueryBox RID_SVXQB_BW_CONTINUE
+{
+	BUTTONS = WB_YES_NO ;
+	DEFBUTTON = WB_DEF_YES ;
+	/* ### ACHTUNG: Neuer Text in Resource? Überprüfung am Ende des Dokumentes fortsetzen? : šberpr³fung am Ende des Dokumentes fortsetzen? */
+	/* ### ACHTUNG: Neuer Text in Resource? Überprüfung am Ende des Dokumentes fortsetzen? : šberpr³fung am Ende des Dokumentes fortsetzen? */
+	Message [ en-US ] = "Continue checking at end of document?" ;
+};
+String RID_SVXSTR_HMERR_THESAURUS
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Ein Thesaurus für die eingestellte Sprache ist nicht verfügbar. \nÜberprüfen Sie bitte Ihre Installation und installieren Sie \ngegebenenfalls die gewünschte Sprache : Ein Thesaurus f³r die eingestellte Sprache ist nicht verf³gbar. \nšberpr³fen Sie bitte Ihre Installation und installieren Sie \ngegebenenfalls die gew³nschte Sprache */
+	/* ### ACHTUNG: Neuer Text in Resource? Ein Thesaurus für die eingestellte Sprache ist nicht verfügbar. \nÜberprüfen Sie bitte Ihre Installation und installieren Sie \ngegebenenfalls die gewünschte Sprache : Ein Thesaurus f³r die eingestellte Sprache ist nicht verf³gbar. \nšberpr³fen Sie bitte Ihre Installation und installieren Sie \ngegebenenfalls die gew³nschte Sprache */
+	Text [ en-US ] = "No thesaurus is available for the selected language. \nPlease check your installation and install the desired language\n" ;
+};
+String RID_SVXSTR_DIC_ERR_UNKNOWN
+{
+	Text [ en-US ] = "Word cannot be added to dictionary\ndue to unknown reason.";
+};
+String RID_SVXSTR_DIC_ERR_FULL
+{
+	Text [ en-US ] = "The dictionary is already full.";
+};
+String RID_SVXSTR_DIC_ERR_READONLY
+{
+	Text [ en-US ] = "The dictionary is read-only.";
+};
+
+ // ********************************************************************** EOF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include "sc.hrc"
+
+#define ID_FUNCTION_GRP_DATABASE	1
+#define ID_FUNCTION_GRP_DATETIME	2
+#define ID_FUNCTION_GRP_FINANZ		3
+#define ID_FUNCTION_GRP_INFO		4
+#define ID_FUNCTION_GRP_LOGIC		5
+#define ID_FUNCTION_GRP_MATH		6
+#define ID_FUNCTION_GRP_MATRIX		7
+#define ID_FUNCTION_GRP_STATISTIC	8
+#define ID_FUNCTION_GRP_TABLE		9
+#define ID_FUNCTION_GRP_TEXT		10
+#define ID_FUNCTION_GRP_ADDINS		11
+
+#define ID_FUNCTION_OFFSET			90
+

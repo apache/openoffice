@@ -1,0 +1,72 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XWebDAVCommandEnvironment_idl__
+#define __com_sun_star_ucb_XWebDAVCommandEnvironment_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+#ifndef __com_sun_star_beans_NamedValue_idl__
+#include <com/sun/star/beans/NamedValue.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** A command environment that can be used to deal with WebDAV/HTTP specific
+    commands.
+
+    <p>Supply an implementation of this interface together with an
+    <type>XCommandEnvironment</type> implementation, when executing a command
+    using <type>XCommandProcessor</type>.
+*/
+published interface XWebDAVCommandEnvironment : com::sun::star::uno::XInterface
+{
+    //-------------------------------------------------------------------------
+    /** This method gets called while assembling an WebDAV/HTTP request.
+        The returned headername-headervalue pairs will be appended to
+        the list of request headers before the request is dispatched.
+
+    @param aURI
+    The request URI.
+
+    @param aMethod
+    The WebDAV/HTTP method ("GET","PUT","MKCOL",...).
+
+    @return
+        A sequence of header name, header value pairs. The header
+        names must be the plain names and contain no trailing ":".
+        The header value must be an Any containing a string.
+    */
+    sequence<com::sun::star::beans::NamedValue> getUserRequestHeaders(
+        [in] string aURI,
+        [in] string aMethod);
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

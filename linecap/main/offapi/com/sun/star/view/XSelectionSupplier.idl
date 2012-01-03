@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_view_XSelectionSupplier_idl__ 
+#define __com_sun_star_view_XSelectionSupplier_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__ 
+#include <com/sun/star/lang/IllegalArgumentException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_view_XSelectionChangeListener_idl__ 
+#include <com/sun/star/view/XSelectionChangeListener.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module view {  
+ 
+//============================================================================= 
+ 
+/** makes it possible to access and change the selection in a view.
+
+	@see OfficeDocumentView
+ */
+published interface XSelectionSupplier: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	/** selects the object represented by <var>xSelection</var> if it is
+		known and selectable in this object.
+	 */
+	boolean select( [in] any xSelection ) 
+			raises( com::sun::star::lang::IllegalArgumentException ); 
+ 
+	//------------------------------------------------------------------------- 
+	/** @returns 
+				the current selection. 
+				 
+		<p>The selection is either specified by an object which is contained 
+		in the component to which the view belongs, or it is an interface of a 
+		collection which contains such objects.
+	 */
+	any getSelection(); 
+ 
+	//------------------------------------------------------------------------- 
+	/** registers an event listener, which is called when the selection changes.
+	 */
+	void addSelectionChangeListener( [in] com::sun::star::view::XSelectionChangeListener xListener ); 
+ 
+	//------------------------------------------------------------------------- 
+	/** unregisters an event listener which was registered with
+		<method>XSelectionSupplier::addSelectionChangeListener</method>.
+	 */
+	void removeSelectionChangeListener( [in] com::sun::star::view::XSelectionChangeListener xListener ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

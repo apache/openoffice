@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<!DOCTYPE oor:component-data SYSTEM "../../../../component-update.dtd">
+<oor:component-data oor:name="Configuration" oor:package="org.openoffice.ucb" xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <node oor:name="ContentProviders">
+    <node oor:name="Local" oor:op="replace">
+      <node oor:name="SecondaryKeys">
+        <node oor:name="Office" oor:op="replace">
+          <node oor:name="ProviderData">
+            <node oor:name="Provider1" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.HierarchyContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.hier</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider2" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.FileContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>file</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider3" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.WebDAVContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>http</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider4" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.WebDAVContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.webdav</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider5" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.help.XMLHelp</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.help</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider6" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.FTPContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>ftp</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider7" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.WebDAVContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>dav</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider8" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.PackageContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.pkg</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider9" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.ExpandContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.expand</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider10" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.TransientDocumentsContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.tdoc</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider11" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.PackageContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.zip</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider12" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.WebDAVContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>https</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider13" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.WebDAVContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>davs</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <node oor:name="Provider14" oor:op="replace">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.ExtensionContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>vnd.sun.star.extension</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+            <!-- We want the Provider to be the final fallback provider -->
+            <node oor:name="Provider999" oor:op="replace" install:module="gio">
+              <prop oor:name="ServiceName">
+                <value>com.sun.star.ucb.GIOContentProvider</value>
+              </prop>
+              <prop oor:name="URLTemplate">
+                <value>.*</value>
+              </prop>
+              <prop oor:name="Arguments">
+                <value/>
+              </prop>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</oor:component-data>

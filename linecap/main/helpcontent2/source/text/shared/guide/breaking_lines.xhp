@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textsharedguidebreaking_linesxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Inserting Line Breaks in Cells</title>
+         <filename>/text/shared/guide/breaking_lines.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id6305734"><bookmark_value>line breaks; in cells</bookmark_value>
+      <bookmark_value>cells; line breaks</bookmark_value>
+      <bookmark_value>text flow; in cells</bookmark_value>
+      <bookmark_value>text breaks in cells</bookmark_value>
+      <bookmark_value>wrapping text; in cells</bookmark_value>
+      <bookmark_value>words; wrapping in cells</bookmark_value>
+      <bookmark_value>automatic line breaks</bookmark_value>
+      <bookmark_value>new lines in cells</bookmark_value>
+      <bookmark_value>inserting;line breaks in cells</bookmark_value>
+      <bookmark_value>tables;inserting line breaks</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="par_idN106D5" role="heading" level="1" l10n="NEW"><variable id="breaking_lines"><link href="text/shared/guide/breaking_lines.xhp">Inserting Line Breaks in Cells</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106D9" role="heading" level="2" l10n="NEW">Inserting line breaks in $[officename] Calc spreadsheet cells</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106E0" role="paragraph" l10n="NEW">To insert a line break in a spreadsheet cell, press the <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter keys. </paragraph>
+            <paragraph xml-lang="en-US" id="par_idN106E3" role="paragraph" l10n="NEW">This will work only with the text edit cursor inside the cell, not at the input line. So first double-click the cell, then single-click at the text position where you want the line break.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id0509200914160968" role="note" l10n="NEW">You can search for a newline character in the Find &amp; Replace dialog by searching for \n as a regular expression. You can use the text function CHAR(10) to insert a newline character into a text formula.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106E6" role="heading" level="2" l10n="NEW">Formatting $[officename] Calc cells for automatic line wrapping</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106ED" role="paragraph" l10n="NEW">Select the cells for which you want an automatic line break.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106F1" role="paragraph" l10n="NEW">Choose <emph>Format - Cells - Alignment</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106F9" role="paragraph" l10n="CHG">Select <emph>Wrap text automatically</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN10700" role="heading" level="2" l10n="NEW">Inserting line breaks in $[officename] Writer text document tables</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10707" role="paragraph" l10n="NEW">To insert a line break in a text document table cell, press the Enter key.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1070A" role="paragraph" l10n="NEW">An automatic line break will be performed while you type across the end of each cell.</paragraph>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_idN10718" role="paragraph" l10n="NEW"><link href="text/shared/01/05340300.xhp">Alignment</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

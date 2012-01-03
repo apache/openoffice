@@ -1,0 +1,84 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_form_control_SubmitButton_idl__
+#define __com_sun_star_form_control_SubmitButton_idl__
+
+#ifndef __com_sun_star_awt_UnoControlButton_idl__
+#include <com/sun/star/awt/UnoControlButton.idl>
+#endif
+
+#ifndef __com_sun_star_form_submission_XSubmission_idl__
+#include <com/sun/star/form/submission/XSubmission.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module form {  module control {
+
+//=============================================================================
+
+/** specifies a button control which can execute external submissions
+
+	<p>The model of the control has to support the <type scope="com::sun::star::form::component">SubmitButton</type>
+	service.</p>
+
+    <p>The control is clickable. When clicked (by mouse or keyboard, or programmatically),
+        the following happens:
+    <ol><li>Any <type scope="com::sun::star::form::submission">XSubmissionVetoListener</type>s registered
+            at the component are given the chance to veto the submission.
+        </li>
+        <li>The model of the control is examined for an external submission object. That is,
+            <member scope="com::sun::star::form::submission">XSubmissionSupplier::getSubmission</member>
+            is called at the model.<br/>
+            If there is such a submission object, its
+            <member scope="com::sun::star::form::submission">XSubmission::submit</member> method is invoked.
+        </li>
+        <li>If there is no external submission, the parent object of the model is examined
+            for the presence of the <type scope="com::sun::star::form">XSubmit</type> interface. If it
+            is present, it's <member scope="com::sun::star::form">XSubmit::submit</member> method is
+            invoked.<br/>
+            Since the parent object of a submit button can only be a <type scope="com::sun::star::form::component">Form</type>,
+            this means that <type>SubmitButton</type>s are also able to submit <type scope="com::sun::star::form::component">HTMLForm</type>s.
+        </li>
+    </ol>
+    </p>
+*/
+service SubmitButton
+{
+    /** allows interception (and vetoing) of submissions triggered by the control.
+    */
+    interface com::sun::star::form::submission::XSubmission;
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+/*=============================================================================
+
+=============================================================================*/
+
+#endif
+
+

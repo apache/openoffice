@@ -1,0 +1,54 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _EDITENG_HRC
+#define _EDITENG_HRC
+
+#ifndef _SOLAR_HRC
+#include <bf_svtools/solar.hrc>
+#endif
+
+#define RID_EDITUNDO_DEL			( RID_EDIT_START + 0 )
+#define RID_EDITUNDO_MOVE			( RID_EDIT_START + 1 )
+#define RID_EDITUNDO_INSERT			( RID_EDIT_START + 2 )
+#define RID_EDITUNDO_REPLACE 		( RID_EDIT_START + 3 )
+#define RID_EDITUNDO_SETATTRIBS		( RID_EDIT_START + 4 )
+#define RID_EDITUNDO_SETSTYLE		( RID_EDIT_START + 5 )
+#define RID_EDITUNDO_RESETATTRIBS	( RID_EDIT_START + 6 )
+#define RID_EDITUNDO_INDENT			( RID_EDIT_START + 7 )
+#define RID_EDITUNDO_TRANSLITERATE	( RID_EDIT_START + 8 )
+
+#define RID_MENU_SPELL				( RID_EDIT_START + 10 )
+
+#define MN_SPELLING         1
+#define MN_INSERT           2
+#define MN_IGNORE           3
+#define MN_AUTOCORR         4
+#define MN_WORDLANGUAGE     5
+#define MN_PARALANGUAGE     6
+
+#define MN_ALTSTART		1000
+#define MN_AUTOSTART	2000
+#define MN_DICTSTART	3000
+
+
+#endif	// _EDITENG_HRC

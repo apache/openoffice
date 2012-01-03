@@ -1,0 +1,72 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+
+#include "dochdl.hrc"
+#include "globals.hrc"
+
+
+String STR_NOGLOS
+{
+	Text [ en-US ] = "AutoText for Shortcut '%1' not found." ;
+};
+String STR_NO_TABLE
+{
+    Text [ en-US ] = "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table.";
+};
+
+
+InfoBox MSG_ERR_INSERT_GLOS
+{
+	Message [ en-US ] = "AutoText could not be created." ;
+};
+
+InfoBox MSG_CLPBRD_FORMAT_ERROR
+{
+	Message [ en-US ] = "Requested clipboard format is not available." ;
+};
+
+QueryBox MSG_UPDATE_NEW_GLOS_FMT
+{
+	BUTTONS = WB_YES_NO ;
+	DEFBUTTON = WB_DEF_YES ;
+	Message [ en-US ] = "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?" ;
+};
+
+String STR_PRIVATETEXT
+{
+	Text [ en-US ] = "%PRODUCTNAME Writer" ;
+};
+String STR_PRIVATEGRAPHIC
+{
+	Text [ en-US ] = "Graphics [%PRODUCTNAME Writer]" ;
+};
+String STR_PRIVATEOLE
+{
+	Text [ en-US ] = "Object [%PRODUCTNAME Writer]" ;
+};
+String STR_DDEFORMAT
+{
+	Text [ en-US ] = "DDE link" ;
+};
+

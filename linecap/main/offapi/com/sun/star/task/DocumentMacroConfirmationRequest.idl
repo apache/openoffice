@@ -1,0 +1,75 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_task_DocumentMacroConfirmationRequest_idl__
+#define __com_sun_star_task_DocumentMacroConfirmationRequest_idl__
+
+#include <com/sun/star/task/ClassifiedInteractionRequest.idl>
+#include <com/sun/star/embed/XStorage.idl>
+#include <com/sun/star/security/DocumentSignatureInformation.idl>
+
+//=============================================================================
+
+module com { module sun { module star { module task { 
+
+//=============================================================================
+
+/** describes the request to approve or deny the execution of macros contained in
+    a document.
+ */
+exception DocumentMacroConfirmationRequest : ClassifiedInteractionRequest
+{
+    /** specifies the URL of the document which contains macros whose execution
+        should be approved or rejected.
+    */
+    string  DocumentURL;
+
+    /** refers to the storage related to the last commited version of the
+        document.
+
+        This storage is necessary e.g. for displaying the existing signatures to
+        the user, to allow him a decision whether or not to trust those signatures
+        and thus the signed macros.
+
+        @see ::com::sun::star::security::XDocumentDigitalSignatures::showScriptingContentSignatures
+    */
+    ::com::sun::star::embed::XStorage
+            DocumentStorage;
+
+    /** contains informations about the ODF version of the document
+    */
+    string DocumentVersion;
+
+    /** contains informations about the signatures in the document
+    */
+    sequence< ::com::sun::star::security::DocumentSignatureInformation >
+            DocumentSignatureInformation;
+};
+
+//=============================================================================
+
+}; }; }; }; 
+
+//=============================================================================
+
+#endif

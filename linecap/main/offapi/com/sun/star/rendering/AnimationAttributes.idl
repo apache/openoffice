@@ -1,0 +1,67 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_rendering_AnimationAttributes_idl__
+#define __com_sun_star_rendering_AnimationAttributes_idl__
+
+#ifndef __com_sun_star_geometry_RealSize2D_idl__
+#include <com/sun/star/geometry/RealSize2D.idl>
+#endif
+
+module com { module sun { module star { module rendering {
+
+/** This structure contains attributes needed to run an animation.
+
+    @since OOo 2.0
+ */
+published struct AnimationAttributes
+{
+    /// Preferred duration of the animation sequence in seconds.
+    double                                          Duration;
+
+    //-------------------------------------------------------------------------
+
+    /** Repeat mode of the animation sequence.<p>
+
+        This value determines how the [0,1] parameter space of the animation
+        should be sweeped through. Permissible values are given in
+        <type>AnimationRepeat</type>.<p>
+
+        @see AnimationRepeat.
+     */
+    byte										RepeatMode;
+
+    //-------------------------------------------------------------------------
+
+    /** Size of the untrasnformed animation sequence.<p>
+
+        This value specifies the size of the animation when rendered
+        with the identity view transform. This permits
+        e.g. <type>XSprite</type> implementations to cache rendered
+        animation content in finite-sized bitmaps.<p>
+     */
+    ::com::sun::star::geometry::RealSize2D	UntransformedSize;
+};
+
+}; }; }; };
+
+#endif

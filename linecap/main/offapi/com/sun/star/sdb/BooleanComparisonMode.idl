@@ -1,0 +1,70 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sdb_BooleanComparisonMode_idl__
+#define __com_sun_star_sdb_BooleanComparisonMode_idl__
+
+//=============================================================================
+
+module com { module sun { module star { module sdb { 
+
+//=============================================================================
+
+/** specifies different modi how boolean comparison predicates are to be generated
+    by a <type>SingleSelectQueryComposer</type>.
+ */
+constants BooleanComparisonMode
+{
+    /** denotes the default comparison
+
+        <p>Most databases support comparing boolean expressions or column values directly with
+        integer values: <code><em>column</em> = 0</code> respectively <code><em>column</em> = 1</code>.</p>
+    */
+    const long EQUAL_INTEGER    = 0;
+
+    /** requires to use <code>IS <em>boolean_literal</em></code> for boolean comparison.
+
+        <p>That is, the generated comparison predicates will be <code><em>column</em> IS TRUE</code> resp.
+        <code><em>column</em> IS FALSE</code>.</p>
+    */
+    const long IS_LITERAL       = 1;
+
+    /** requires to use <code>= <em>boolean_literal</em></code> for boolean comparison.
+
+        <p>That is, the generated comparison predicates will be <code><em>column</em> = TRUE</code> resp.
+        <code><em>column</em> = FALSE</code>.</p>
+    */
+    const long EQUAL_LITERAL    = 2;
+
+    /** requires to use an Microsoft Access compatible syntax for boolean comparison.
+    */
+    const long ACCESS_COMPAT    = 3;
+};
+
+//=============================================================================
+
+}; }; }; }; 
+
+//=============================================================================
+
+#endif

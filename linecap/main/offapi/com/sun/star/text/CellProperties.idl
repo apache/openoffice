@@ -1,0 +1,172 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_text_CellProperties_idl__
+#define __com_sun_star_text_CellProperties_idl__
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__
+#include <com/sun/star/beans/XPropertySet.idl>
+#endif
+
+#ifndef __com_sun_star_util_Color_idl__
+#include <com/sun/star/util/Color.idl>
+#endif
+
+#ifndef __com_sun_star_text_XTextSection_idl__
+#include <com/sun/star/text/XTextSection.idl>
+#endif
+#ifndef __com_sun_star_style_GraphicLocation_idl__
+#include <com/sun/star/style/GraphicLocation.idl>
+#endif
+#ifndef __com_sun_star_table_BorderLine_idl__
+#include <com/sun/star/table/BorderLine.idl>
+#endif
+#ifndef __com_sun_star_container_XNameContainer_idl__
+#include <com/sun/star/container/XNameContainer.idl>
+#endif
+#ifndef _com_sun_star_xml_UserDefinedAttributesSupplier_idl_
+#include <com/sun/star/xml/UserDefinedAttributesSupplier.idl>
+#endif
+
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module text {
+
+//=============================================================================
+
+/** service that holds all cell properties of a text table cell in a text document.
+
+    @see com::sun::star::text::Cell
+ */
+published service CellProperties
+{
+    //-------------------------------------------------------------------------
+    /** contains user defined attributes.
+
+        @see    <type scope="com::sun::star::xml">UserDefinedAttributesSupplier</type>
+     */
+    service com::sun::star::xml::UserDefinedAttributesSupplier;
+    
+    //-------------------------------------------------------------------------
+
+    /** gives access to the objects properties
+     */
+    interface com::sun::star::beans::XPropertySet;
+    
+    //-------------------------------------------------------------------------
+    /** contains the cell name, see SwXTextTable::getCellByName for more information
+	 */
+    [property] string CellName;
+    
+    //-------------------------------------------------------------------------
+    /** contains the background color.
+	 */
+    [property] com::sun::star::util::Color BackColor;
+    
+    //-------------------------------------------------------------------------
+    /** contains the URL to the background graphic.
+	 */
+    [property] string BackGraphicURL;
+    
+    //-------------------------------------------------------------------------
+    /** contains the name of the graphic filter of the background graphic.
+	 */
+    [property] string BackGraphicFilter;
+    
+    //-------------------------------------------------------------------------
+    /** determins the position of the background graphic.
+	 */
+    [property] com::sun::star::style::GraphicLocation BackGraphicLocation;
+    
+    //-------------------------------------------------------------------------
+    /** contains the number format.
+     */
+    [property] long NumberFormat;
+    
+    //-------------------------------------------------------------------------
+    /** determins whether the background is transparent.
+     */
+    [property] boolean BackTransparent;
+    
+    //-------------------------------------------------------------------------
+    /** contains the left border line.
+     */
+    [property] com::sun::star::table::BorderLine LeftBorder;
+    
+    //-------------------------------------------------------------------------
+    /** contains the right border line.
+     */
+    [property] com::sun::star::table::BorderLine RightBorder;
+    
+    //-------------------------------------------------------------------------
+    /** contains the top border line.
+     */
+    [property] com::sun::star::table::BorderLine TopBorder;
+    
+    //-------------------------------------------------------------------------
+    /** contains the bottom border line.
+	 */
+    [property] com::sun::star::table::BorderLine BottomBorder;
+    
+    //-------------------------------------------------------------------------
+    /** contains the distance of the left border.
+     */
+    [property] long LeftBorderDistance;
+    
+    //-------------------------------------------------------------------------
+    /** contains the distance of the right border.
+     */
+    [property] long RightBorderDistance;
+    
+    //-------------------------------------------------------------------------
+    /** contains the distance of the top border.
+     */
+    [property] long TopBorderDistance;
+    
+    //-------------------------------------------------------------------------
+    /** contains the distance of the bottom border.
+	 */
+    [property] long BottomBorderDistance;
+    
+    //-------------------------------------------------------------------------
+    /** contains the text section the text table is contained in if there is any.
+	 */
+    [readonly, property]com::sun::star::text::XTextSection TextSection;
+    
+    //-------------------------------------------------------------------------
+    /** determins whether the cell is write protected or not.
+	 */
+    [property] boolean IsProtected;
+
+	//-------------------------------------------------------------------------
+	/** the vertical orientation of the text inside of the table cells in
+		this row.@see VertOrientation
+	 */
+	[property] short VertOrient;
+
+};
+
+//=============================================================================
+
+}; }; }; };
+#endif

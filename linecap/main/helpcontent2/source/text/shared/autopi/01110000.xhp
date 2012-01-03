@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01110000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">HTML Export</title>
+<filename>/text/shared/autopi/01110000.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3154788" xml-lang="en-US" level="1" l10n="U" oldref="1">HTML Export</paragraph>
+<paragraph role="paragraph" id="par_id3157898" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Determines the settings for publishing $[officename] Draw or $[officename] Impress documents in HTML format.</ahelp></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#htmlspeichern"/>
+</section>
+<paragraph role="paragraph" id="par_id3155391" xml-lang="en-US" l10n="U" oldref="10">The pages displayed differ depending on what you select on the second page of the Wizard.</paragraph>
+<embed href="text/shared/autopi/01110100.xhp#seite1"/>
+<embed href="text/shared/autopi/01110200.xhp#seite2"/>
+<embed href="text/shared/autopi/01110300.xhp#seite3"/>
+<embed href="text/shared/autopi/01110400.xhp#seite4"/>
+<embed href="text/shared/autopi/01110500.xhp#seite5"/>
+<embed href="text/shared/autopi/01110600.xhp#seite6"/>
+<paragraph role="heading" id="hd_id3146797" xml-lang="en-US" level="2" l10n="U" oldref="3">&lt;&lt; Back</paragraph>
+<paragraph role="paragraph" id="par_id3150444" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SD:PUSHBUTTON:DLG_PUBLISHING:BUT_LAST">Returns to the selections made on the previous page.</ahelp> The current settings remain saved. You can select this button once you are in the second editing step.</paragraph>
+<paragraph role="heading" id="hd_id3147242" xml-lang="en-US" level="2" l10n="U" oldref="5">Next &gt;&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3147574" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SD:PUSHBUTTON:DLG_PUBLISHING:BUT_NEXT">Saves the current settings and moves to the next page.</ahelp> This button becomes inactive on the last page of the dialog.</paragraph>
+<paragraph role="heading" id="hd_id3154046" xml-lang="en-US" level="2" l10n="U" oldref="7">Create</paragraph>
+<paragraph role="paragraph" id="par_id3157909" xml-lang="en-US" l10n="CHG" oldref="8"><ahelp hid=".">Creates new documents according to your selections and saves the documents.</ahelp></paragraph>
+<paragraph role="note" id="par_id3154897" xml-lang="en-US" l10n="U" oldref="9">$[officename] saves the current Wizard settings and uses them as default the next time that you open the Wizard.</paragraph>
+</body>
+</helpdocument>

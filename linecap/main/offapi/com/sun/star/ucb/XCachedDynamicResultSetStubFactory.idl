@@ -1,0 +1,123 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XCachedDynamicResultSetStubFactory_idl__
+#define __com_sun_star_ucb_XCachedDynamicResultSetStubFactory_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_XDynamicResultSet_idl__
+#include <com/sun/star/ucb/XDynamicResultSet.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_NumberedSortingInfo_idl__
+#include <com/sun/star/ucb/NumberedSortingInfo.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_XAnyCompareFactory_idl__
+#include <com/sun/star/ucb/XAnyCompareFactory.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** creates a <type>CachedDynamicResultSetStub</type> and connects a non-remote
+	optimized <type>DynamicResultSet</type> to a remote optimized
+	<type>CachedDynamicResultSet</type>.
+
+	<p>Pay attention to instanciate this helper on serverside where your source
+	<type>DynamicResultSet</type> was instanciated.
+
+	<p>Method 
+    <member>XCachedDynamicResultSetStubFactory::createCachedDynamicResultSetStub</member>
+    can be used to create a stub on serverside.
+
+	<p>If you have instanciated a <type>CachedDynamicResultSet</type> on client
+	side already, use method <member>connectToCache</member> to connect your
+	given DynamicResultSet with this Cache.
+
+	<p>The needed cache on server side you can create using
+	<type>XCachedDynamicResultSetFactory</type>.
+*/
+
+published interface XCachedDynamicResultSetStubFactory: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/**	creates a remote optimizes <type>XDynamicResultSet</type>.
+
+		@param Source
+		must be an instance of service <type>DynamicResultSet</type>.
+
+		@returns
+		an instance of service <type>CachedDynamicResultSetStub</type>.
+	*/
+
+	com::sun::star::ucb::XDynamicResultSet	createCachedDynamicResultSetStub(
+				[in] com::sun::star::ucb::XDynamicResultSet Source );
+
+	//-------------------------------------------------------------------------
+	/** If you have instanciated a <type>CachedDynamicResultSet</type> on
+		client side already, use this to connect your given Source on server
+		side to the TargetCache.
+
+		@param Source
+		is an instance of service <type>DynamicResultSet</type>.
+
+		@param TargetCache
+		is an instance of service <type>CachedDynamicResultSet</type>.
+
+		@param SortingInfo
+		can be an empty sequence. Otherwise, Source will be sorted according
+		to the given sorting data.
+
+		@param CompareFactory
+		will be ignored unless SortingInfo is not empty. Then the supplied
+		factory will be used to instanciate objects used to compare the
+		properties that are involved in sorting.
+
+		@throws ListenerAlreadySetException
+		if <member>Source</member> is already in use.
+
+		@throws AlreadyInitializedException
+		if <member>TargetCache</member> already has been initialized.
+	*/
+	void connectToCache(
+				  [in] com::sun::star::ucb::XDynamicResultSet Source
+				, [in] com::sun::star::ucb::XDynamicResultSet TargetCache
+				, [in] sequence< com::sun::star::ucb::NumberedSortingInfo > SortingInfo
+				, [in] com::sun::star::ucb::XAnyCompareFactory CompareFactory
+				)
+				raises(
+				  com::sun::star::ucb::ListenerAlreadySetException
+				, com::sun::star::ucb::AlreadyInitializedException
+				 );
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

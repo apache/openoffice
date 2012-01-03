@@ -1,0 +1,79 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_drawing_XControlShape_idl__ 
+#define __com_sun_star_drawing_XControlShape_idl__ 
+ 
+#ifndef __com_sun_star_drawing_XShape_idl__ 
+#include <com/sun/star/drawing/XShape.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_XControlModel_idl__ 
+#include <com/sun/star/awt/XControlModel.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module drawing {  
+ 
+//============================================================================= 
+ 
+/** is implemented by a <type>ControlShape</type> to access the controls model.
+
+	@see com::sun::star::drawing::ControlShape
+	@see com::sun::star::awt::UnoControlModel
+*/
+published interface XControlShape: com::sun::star::drawing::XShape
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the control model of this <type>Shape</type>.
+
+		@return
+			if there is already a control model assigned
+			to this <type>ControlShape</type>, than its returned.
+			Otherwise you get an empty reference.
+	 */
+	com::sun::star::awt::XControlModel getControl(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** sets the control model for this <type>Shape</type>.
+
+		@param xControl
+			this will be the new control model that is
+			displayed with this shape. You may change
+			the model more than once during the lifetime
+			of a <type>ControlShape</type> 
+	
+	 */
+	[oneway] void setControl( [in] com::sun::star::awt::XControlModel xControl ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 
+

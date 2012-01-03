@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textsharedguideworkfolderxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Changing Your Working Directory </title>
+         <filename>/text/shared/guide/workfolder.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="chapter_all">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150789"><bookmark_value>working directory change</bookmark_value>
+         <bookmark_value>My Documents folder;changing work directory</bookmark_value>
+         <bookmark_value>paths; changing work directory</bookmark_value>
+         <bookmark_value>pictures; changing paths</bookmark_value>
+         <bookmark_value>changing;work directory</bookmark_value>
+</bookmark><comment>work --&gt; working, i85615</comment>
+<paragraph xml-lang="en-US" id="hd_id3149346" role="heading" level="1" l10n="CHG"
+                    oldref="2"><variable id="workfolder"><link href="text/shared/guide/workfolder.xhp" name="Changing Your Working Directory">Changing Your Working Directory</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150774" role="paragraph" l10n="CHG" oldref="3">When you start a dialog to open or save a document, $[officename] initially displays your working directory. To change this directory:</paragraph>
+         <list type="ordered">
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3153681" role="listitem" l10n="U" oldref="4">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - Paths</emph>.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3163802" role="listitem" l10n="U" oldref="5">Click <emph>My Documents </emph>and click the <emph>Edit</emph> button, or double-click on <emph>My Documents</emph>.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3153880" role="listitem" l10n="CHG" oldref="6">In the <emph>Select Path</emph> dialog, choose the working directory you want and click <emph>Select</emph>.</paragraph>
+            </listitem>
+         </list>
+         <paragraph xml-lang="en-US" id="par_id3158430" role="paragraph" l10n="U" oldref="7">You also use this procedure to change the directory displayed by $[officename] when you want to insert a graphic. Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - Paths - Graphics</emph>, then follow step 3.</paragraph>
+      </section>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <paragraph xml-lang="en-US" id="par_id3154286" role="paragraph" l10n="U" oldref="8"><link href="text/shared/optionen/01010300.xhp" name="Paths">Paths</link></paragraph>
+   </body>
+</helpdocument>

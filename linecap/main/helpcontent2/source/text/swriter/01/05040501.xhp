@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105040501xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Options</title>
+<filename>/text/swriter/01/05040501.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-10T15:00:18">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3149871" xml-lang="en-US" level="1" l10n="U" oldref="1">Options</paragraph>
+<paragraph role="paragraph" id="par_id3148569" xml-lang="en-US" l10n="U" oldref="2">Specifies the number of columns and the column layout for the section.</paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#spaltenber"/>
+</section>
+<paragraph role="paragraph" id="par_id3151390" xml-lang="en-US" l10n="U" oldref="4">Sections follow the text flow behavior of the page they are inserted into.</paragraph>
+<paragraph role="paragraph" id="par_id3083448" xml-lang="en-US" l10n="U" oldref="5">For example, if you insert a section that uses a two-column layout into a page style that uses a four-column layout, the two-column layout is nested inside one of the four columns.</paragraph>
+<paragraph role="paragraph" id="par_id3155625" xml-lang="en-US" l10n="U" oldref="6">You can also nest sections, that is, you can insert a section into another section.</paragraph>
+<embed href="text/swriter/01/05040500.xhp#spalten"/>
+<embed href="text/swriter/01/04020200.xhp#indents"/><comment>UFI: changed embedded links, see #i64128</comment><embed href="text/shared/01/05030600.xhp#hintergrund"/>
+<embed href="text/swriter/01/05040700.xhp#fussendnoten"/>
+</body>
+</helpdocument>

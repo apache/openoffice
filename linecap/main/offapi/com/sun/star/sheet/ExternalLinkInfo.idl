@@ -1,0 +1,73 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sheet_ExternalLinkInfo_idl__
+#define __com_sun_star_sheet_ExternalLinkInfo_idl__
+
+#ifndef __com_sun_star_sheet_ExternalLinkType_idl__
+#include <com/sun/star/sheet/ExternalLinkType.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+/** describes an external link in a formula.
+
+    @since OOo 3.1
+ */
+struct ExternalLinkInfo
+{
+    //-------------------------------------------------------------------------
+    /** Link type, one of <type>ExternalLinkType</type> constants.
+     */
+    long Type;
+
+    //-------------------------------------------------------------------------
+    /** Location of this link type.
+
+        <p>Modes used:
+
+        <ol>
+        <li>If <member>Type</member> is <const>ExternalLinkType::EXTERNAL
+        </const>, this member shall contain a <atom>string</atom> with the
+        <em>URI</em> of a document. The formula that would need this
+        information for example would contain <code>=[1]Sheet1!A1</code> or
+        <code>='[1]Sheet name'!A1</code> where <em>[1]</em> does resolve to
+        the URI contained in the member <member>Data</member>. Note that the
+        quotes cover both, the document name and the sheet name.</li>
+
+        <li>If <member>Type</member> is <const>ExternalLinkType::DDE</const>,
+        this member shall contain a <type>DDELinkInfo</type> describing
+        service name, topic, and all known items of a DDE link.</li>
+        </ol></p>
+     */
+    any Data;
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

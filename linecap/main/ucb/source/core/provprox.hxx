@@ -1,0 +1,162 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _PROVPROX_HXX
+#define _PROVPROX_HXX
+
+#include <osl/mutex.hxx>
+#include <com/sun/star/lang/XMultiServiceFactory.hpp>
+#include <com/sun/star/lang/XTypeProvider.hpp>
+#include <com/sun/star/lang/XServiceInfo.hpp>
+#include <com/sun/star/ucb/XContentProviderFactory.hpp>
+#include <com/sun/star/ucb/XContentProvider.hpp>
+#include <com/sun/star/ucb/XParameterizedContentProvider.hpp>
+#include <com/sun/star/ucb/XContentProviderSupplier.hpp>
+#include <cppuhelper/weak.hxx>
+#include <ucbhelper/macros.hxx>
+
+//=========================================================================
+
+#define PROVIDER_FACTORY_SERVICE_NAME \
+							"com.sun.star.ucb.ContentProviderProxyFactory"
+#define PROVIDER_PROXY_SERVICE_NAME \
+							"com.sun.star.ucb.ContentProviderProxy"
+
+//============================================================================
+//
+// class UcbContentProviderProxyFactory.
+//
+//============================================================================
+
+class UcbContentProviderProxyFactory :
+				public cppu::OWeakObject,
+				public com::sun::star::lang::XTypeProvider,
+				public com::sun::star::lang::XServiceInfo,
+				public com::sun::star::ucb::XContentProviderFactory
+{
+	com::sun::star::uno::Reference<	com::sun::star::lang::XMultiServiceFactory >
+								m_xSMgr;
+
+public:
+	UcbContentProviderProxyFactory(
+			const com::sun::star::uno::Reference<
+				com::sun::star::lang::XMultiServiceFactory >& rxSMgr );
+	virtual ~UcbContentProviderProxyFactory();
+
+	// XInterface
+	XINTERFACE_DECL()
+
+	// XTypeProvider
+	XTYPEPROVIDER_DECL()
+
+    // XServiceInfo
+	XSERVICEINFO_DECL()
+
+	// XContentProviderFactory
+    virtual ::com::sun::star::uno::Reference<
+		::com::sun::star::ucb::XContentProvider > SAL_CALL
+	createContentProvider( const ::rtl::OUString& Service )
+		throw( ::com::sun::star::uno::RuntimeException );
+};
+
+//============================================================================
+//
+// class UcbContentProviderProxy.
+//
+//============================================================================
+
+class UcbContentProviderProxy :
+				public cppu::OWeakObject,
+				public com::sun::star::lang::XTypeProvider,
+				public com::sun::star::lang::XServiceInfo,
+				public com::sun::star::ucb::XContentProviderSupplier,
+				public com::sun::star::ucb::XContentProvider,
+				public com::sun::star::ucb::XParameterizedContentProvider
+{
+	::osl::Mutex 	m_aMutex;
+	::rtl::OUString m_aService;
+	::rtl::OUString m_aTemplate;
+	::rtl::OUString m_aArguments;
+	sal_Bool		m_bReplace;
+	sal_Bool		m_bRegister;
+
+	com::sun::star::uno::Reference<	com::sun::star::lang::XMultiServiceFactory >
+								m_xSMgr;
+	com::sun::star::uno::Reference<	com::sun::star::ucb::XContentProvider >
+								m_xProvider;
+	com::sun::star::uno::Reference<	com::sun::star::ucb::XContentProvider >
+								m_xTargetProvider;
+
+public:
+	UcbContentProviderProxy(
+			const com::sun::star::uno::Reference<
+				com::sun::star::lang::XMultiServiceFactory >& rxSMgr,
+			const ::rtl::OUString& Service );
+	virtual ~UcbContentProviderProxy();
+
+	// XInterface
+	XINTERFACE_DECL()
+
+	// XTypeProvider
+	XTYPEPROVIDER_DECL()
+
+    // XServiceInfo
+	XSERVICEINFO_NOFACTORY_DECL()
+
+	// XContentProviderSupplier
+    virtual ::com::sun::star::uno::Reference<
+		::com::sun::star::ucb::XContentProvider > SAL_CALL
+	getContentProvider()
+		throw( ::com::sun::star::uno::RuntimeException );
+
+	// XContentProvider
+    virtual ::com::sun::star::uno::Reference<
+		::com::sun::star::ucb::XContent > SAL_CALL
+	queryContent( const ::com::sun::star::uno::Reference<
+					::com::sun::star::ucb::XContentIdentifier >& Identifier )
+		throw( ::com::sun::star::ucb::IllegalIdentifierException,
+			   ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL
+	compareContentIds( const ::com::sun::star::uno::Reference<
+						::com::sun::star::ucb::XContentIdentifier >& Id1,
+					   const ::com::sun::star::uno::Reference<
+					   	::com::sun::star::ucb::XContentIdentifier >& Id2 )
+		throw( ::com::sun::star::uno::RuntimeException );
+
+	// XParameterizedContentProvider
+    virtual ::com::sun::star::uno::Reference<
+		::com::sun::star::ucb::XContentProvider > SAL_CALL
+	registerInstance( const ::rtl::OUString& Template,
+					  const ::rtl::OUString& Arguments,
+					  sal_Bool ReplaceExisting )
+		throw( ::com::sun::star::lang::IllegalArgumentException,
+			   ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Reference<
+		::com::sun::star::ucb::XContentProvider > SAL_CALL
+	deregisterInstance( const ::rtl::OUString& Template,
+						const ::rtl::OUString& Arguments )
+		throw( ::com::sun::star::lang::IllegalArgumentException,
+			   ::com::sun::star::uno::RuntimeException );
+};
+
+#endif /* !_PROVPROX_HXX */

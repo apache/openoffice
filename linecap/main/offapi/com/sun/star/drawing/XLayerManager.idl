@@ -1,0 +1,113 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_drawing_XLayerManager_idl__ 
+#define __com_sun_star_drawing_XLayerManager_idl__ 
+ 
+#ifndef __com_sun_star_container_XIndexAccess_idl__ 
+#include <com/sun/star/container/XIndexAccess.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_drawing_XLayer_idl__ 
+#include <com/sun/star/drawing/XLayer.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_container_NoSuchElementException_idl__ 
+#include <com/sun/star/container/NoSuchElementException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_drawing_XShape_idl__ 
+#include <com/sun/star/drawing/XShape.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module drawing {  
+ 
+//============================================================================= 
+ 
+/** This interface makes it possible to access and manage the
+	<type>Layer</type>s	of a document.
+
+	@see LayerManager
+ */
+published interface XLayerManager: com::sun::star::container::XIndexAccess
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** creates a new <type>Layer</type>
+
+		@param nIndex
+			the index at which the new layer is inserted
+
+		@returns
+			the new created <type>Layer</type>
+	 */
+	com::sun::star::drawing::XLayer insertNewByIndex( [in] long nIndex ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** removes a <type>Layer</type> and all <type>Shape</type>s on
+		this <type>Layer</type>.
+
+		@param xLayer
+			this <type>Layer</type> will be removed and disposed
+	 */
+	void remove( [in] com::sun::star::drawing::XLayer xLayer ) 
+			raises( com::sun::star::container::NoSuchElementException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** attaches a <type>Shape</type> to the given <type>Layer</type>.
+
+		@param xShape
+			this is the <type>Shape</type> that will be attached to a <type>Layer</type>
+
+		@param xLayer
+			this is the <type>Layer</type> that will be attached to a <type>Shape</type>
+	 */
+	void attachShapeToLayer( [in] com::sun::star::drawing::XShape xShape, 
+			 [in] com::sun::star::drawing::XLayer xLayer ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** queries the <type>Layer</type> that a <type>Shape</type> is attached to
+
+		@param xShape 
+			specifies the <type>Shape</type> for which the layer is requested.
+
+		@returns 
+			the <type>Layer</type> to which the <type>Shape</type> is 
+			attached. 
+				 
+	 */
+	com::sun::star::drawing::XLayer getLayerForShape( [in] com::sun::star::drawing::XShape xShape ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 
+

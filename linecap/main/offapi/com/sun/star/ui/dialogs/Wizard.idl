@@ -1,0 +1,72 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_ui_dialogs_Wizard_idl__
+#define __com_sun_star_ui_dialogs_Wizard_idl__
+
+#include <com/sun/star/ui/dialogs/XWizard.idl>
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+
+//==================================================================================================================
+
+module com { module sun { module star { module ui { module dialogs {
+
+published interface XWizardController;
+
+//==================================================================================================================
+
+/** provides a framework for implementing a wizard dialog.
+ */
+published service Wizard : XWizard
+{
+    /** creates a wizard with a single execution path
+        @param PageIds
+            the IDs of the pages which constitute the execution path. IDs must be in ascending order.
+    */
+    createSinglePathWizard(
+        [in] sequence< short > PageIds,
+        [in] XWizardController Controller
+    )
+    raises  (   ::com::sun::star::lang::IllegalArgumentException
+            );
+
+    /** creates a wizard with a multiple possible execution paths
+
+        @param PageIds
+            the IDs of the pages which constitute the execution paths. IDs in each path must be in ascending order.
+    */
+    createMultiplePathsWizard(
+        [in] sequence< sequence< short > > PageIds,
+        [in] XWizardController Controller
+    )
+    raises  (   ::com::sun::star::lang::IllegalArgumentException
+            );
+};
+
+//==================================================================================================================
+
+}; }; }; }; };
+
+//==================================================================================================================
+
+#endif

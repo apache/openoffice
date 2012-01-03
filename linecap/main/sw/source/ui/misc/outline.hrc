@@ -1,0 +1,94 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define RB_1            1
+#define RB_2            2
+#define RB_3            3
+#define RB_4            4
+#define RB_5            5
+#define FT_1            6
+#define FT_2            7
+#define FT_3            8
+#define FT_4            9
+#define FT_5            10
+#define FI_1            11
+#define FI_2            12
+#define FI_3            13
+#define FI_4            14
+#define FI_5            15
+//#define FL_LEVEL        16
+
+#define FT_COLL         20
+#define LB_COLL         21
+#define FT_NUMBER       22
+#define LB_NUMBER       23
+#define FT_DELIM        24
+#define FT_DELIM_BEVOR  25
+#define FT_DELIM_AFTER  26
+#define ED_DELIM_BEVOR  27
+#define ED_DELIM_AFTER  28
+#define CB_COMPLETE     29
+#define FL_NUMBER       30
+
+#define LB_ALIGN       	31
+#define FL_ALIGN        33
+
+#define FT_START        40
+#define ED_START        41
+#define FL_START        42
+
+#define BT_OK           100
+#define BT_CANCEL       101
+#define BT_HELP         102
+#define BT_FORM         103
+#define BT_RESET        104
+#define FL_FORM         105
+#define LB_FORM         106
+#define ED_FORM         107
+#define FT_ALL_LEVEL    108
+#define NF_ALL_LEVEL    109
+
+#define MN_FORM		110
+#define MN_FORM1        111
+#define MN_FORMBASE     MN_FORM1
+#define MN_FORM2        112
+#define MN_FORM3        113
+#define MN_FORM4        114
+#define MN_FORM5        115
+#define MN_FORM6        116
+#define MN_FORM7        117
+#define MN_FORM8        118
+#define MN_FORM9        119
+#define MN_SAVE         120
+
+#define FL_LEVEL                130
+#define LB_LEVEL	    131
+#define WIN_PREVIEW     132
+#define FT_SUFFIX	    134
+#define ED_SUFFIX	    135
+#define FT_PREFIX	    136
+#define ED_PREFIX	    137
+#define ST_NO_COLL 		138
+
+#define ST_FORM			140
+#define FT_CHARFMT		141
+#define LB_CHARFMT      141

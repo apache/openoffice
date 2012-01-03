@@ -1,0 +1,98 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_datatransfer_dnd_OleDragSource_idl__
+#define __com_sun_star_datatransfer_dnd_OleDragSource_idl__
+
+#ifndef __com_sun_star_lang_XComponent_idl__
+#include <com/sun/star/lang/XComponent.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XServiceInfo_idl__
+#include <com/sun/star/lang/XServiceInfo.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XInitialization_idl__
+#include <com/sun/star/lang/XInitialization.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XTypeProvider_idl__
+#include <com/sun/star/lang/XTypeProvider.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module datatransfer { module dnd {
+
+//=============================================================================
+
+ published interface XDragSource;
+
+//=============================================================================
+/** This service connects the Java-like UNO drag and drop protocol to the protocol
+	used on window platforms. It realized the drag source.
+
+	@see XDragSource
+*/
+
+published service OleDragSource
+{
+	//-------------------------------------------------------------------------
+	/** Used to provide data to other applications via the Ole Drag & Drop protocol.
+	*/
+	interface XDragSource;
+
+	//-------------------------------------------------------------------------
+	/** The service expects a byte sequence uniquely identifying the machine as 
+		the first, and only, parameter. This idenifier should be checked to
+		ensure that	the window ids used for creating DropTargets are valid for
+		the service, that is, come from the same machine.
+
+		<p>TODO: specify how such a machine id should look like.</p>
+	
+		The second parameter is a window handle of the native windows window.
+		Is is passed as an unsigned long.
+	*/
+	interface com::sun::star::lang::XInitialization;
+
+	//-------------------------------------------------------------------------
+	/** For shutdown and listener support.
+	*/
+	interface com::sun::star::lang::XComponent;
+
+	//-------------------------------------------------------------------------
+	/** Service should always support this interface.
+	*/
+	interface com::sun::star::lang::XServiceInfo;
+
+	//-------------------------------------------------------------------------
+	/** Service should always support this interface.
+	*/
+	interface com::sun::star::lang::XTypeProvider;
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

@@ -1,0 +1,96 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_beans_XPropertyAccess_idl__ 
+#define __com_sun_star_beans_XPropertyAccess_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_beans_PropertyValue_idl__ 
+#include <com/sun/star/beans/PropertyValue.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_beans_UnknownPropertyException_idl__ 
+#include <com/sun/star/beans/UnknownPropertyException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_beans_PropertyVetoException_idl__ 
+#include <com/sun/star/beans/PropertyVetoException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__ 
+#include <com/sun/star/lang/IllegalArgumentException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_WrappedTargetException_idl__ 
+#include <com/sun/star/lang/WrappedTargetException.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module beans {  
+ 
+//============================================================================= 
+ 
+/** makes it possible to access all property values and to set them at once.
+	
+	<p>In most cases this interface will be in addition to
+	<type>XPropertySet</type>. It is especially useful for remote 
+	communication because it lessens the number of calls for getting
+	property values; that is especially important because these calls 
+	are necessarily synchronous.  </p>
+
+	<p>Another advantage of this method is that conflicts are avoided 
+	if property value restrictions depend on the value of other properties.</p>
+ */
+published interface XPropertyAccess: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** @returns 
+			a sequence of all property values within the object in a single call.
+	 */
+	sequence<com::sun::star::beans::PropertyValue> getPropertyValues(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** sets the values of given properties.
+		
+		<p>All properties which are not contained in the sequence 
+		<var>aProps</var> will be left unchanged.</p>
+	 */
+	void setPropertyValues( [in] sequence<com::sun::star::beans::PropertyValue> aProps ) 
+			raises( com::sun::star::beans::UnknownPropertyException, 
+					com::sun::star::beans::PropertyVetoException, 
+					com::sun::star::lang::IllegalArgumentException, 
+					com::sun::star::lang::WrappedTargetException ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

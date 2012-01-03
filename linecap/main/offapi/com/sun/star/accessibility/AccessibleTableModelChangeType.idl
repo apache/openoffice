@@ -1,0 +1,78 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_accessibility_XAccessibleTableModelChange_idl__
+#define __com_sun_star_accessibility_XAccessibleTableModelChange_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+module com { module sun { module star { module accessibility {
+
+/** Type of a change made to a table model.
+
+        <p>The value of this constants group are used by the
+        <type>AccessibleTableModelChange</type> structure to specifiy the
+        type of change that has been made to a table model.</p>
+        
+        <p>Two of the constants,
+        <const>AccessibleTableModelChangeType::INSERT</const> and
+        <const>AccessibleTableModelChangeType::DELETE</const> describe
+        changes to the table's geometry.  One or more rows and/or columns have
+        been inserted or deleted.  In constrast, the remaining constant
+        <const>AccessibleTabelModelChangeType::UPDATE</const> specifies a
+        change of the table's content.</p>
+
+    @since OOo 1.1.2
+*/
+published constants AccessibleTableModelChangeType
+{
+    /** One or more rows and/or columns have been inserted.
+        
+        <p>Use the fields of the <type>AccessibleTableModelChange</type>
+        structure to determine the indices of the rows and/or columns that
+        have been inserted.</p>
+    */
+    const short INSERT = 1;
+    
+    /** One or more rows and/or columns have been deleted.
+        
+        <p>The affected area of the table is stored in the fields of the 
+        <type>AccessibleTableModelChange</type> structure.</p>
+     */
+    const short DELETE = 2;
+    
+    /** Some of the table data has changed.
+        
+        <p>The number of rows and columns remains unchanged.  Only (some of)
+        the content of the cells in the range that is specified by the
+        fields of the <type>AccessibleTableModelChange</type> structure have
+        been changed.</p>
+    */
+    const short UPDATE = 3;
+};
+          
+}; }; }; };
+
+#endif

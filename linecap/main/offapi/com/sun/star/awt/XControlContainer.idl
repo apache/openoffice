@@ -1,0 +1,83 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_XControlContainer_idl__ 
+#define __com_sun_star_awt_XControlContainer_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_XControl_idl__ 
+#include <com/sun/star/awt/XControl.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module awt {  
+ 
+//============================================================================= 
+ 
+/** Provides access to the controls within an
+    <type>UnoControlContainer</type>.
+ */
+published interface XControlContainer: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** sets the status text in the status bar of the container.
+	 */
+	[oneway] void setStatusText( [in] string StatusText ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns all controls.
+	 */
+	sequence<com::sun::star::awt::XControl> getControls(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the control with the specified name.
+	 */
+	com::sun::star::awt::XControl getControl( [in] string aName ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** adds the given control with the specified name to the container.
+	 */
+	[oneway] void addControl( [in] string Name, 
+			 [in] com::sun::star::awt::XControl Control ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** removes the given control from the container.
+	 */
+	[oneway] void removeControl( [in] com::sun::star::awt::XControl Control ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

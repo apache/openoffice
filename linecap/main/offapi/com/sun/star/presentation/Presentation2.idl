@@ -1,0 +1,61 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_presentation_Presentation2_idl__ 
+#define __com_sun_star_presentation_Presentation2_idl__ 
+
+#ifndef __com_sun_star_presentation_Presentation_idl__ 
+#include <com/sun/star/presentation/Presentation.idl> 
+#endif 
+
+#ifndef __com_sun_star_presentation_XPresentation2_idl__ 
+#include <com/sun/star/presentation/XPresentation2.idl> 
+#endif 
+
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module presentation {  
+ 
+//============================================================================= 
+ 
+/** enhances the Presentation service to give access to a <type>XPresentation2</type> interface.
+
+	@since OOo 3.0
+*/
+service Presentation2
+{ 
+    service Presentation;
+
+	/** enhances the XPresentation interface to give access to
+	    a <type>XSlideShowController</type>  and
+	    to start a presentation with arguments.
+	 */
+	interface com::sun::star::presentation::XPresentation2;
+
+	//------------------------------------------------------------------------- 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

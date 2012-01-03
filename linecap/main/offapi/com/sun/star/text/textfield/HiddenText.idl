@@ -1,0 +1,60 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_text_textfield_HiddenText_idl__
+#define __com_sun_star_text_textfield_HiddenText_idl_
+
+#include <com/sun/star/text/TextField.idl>
+
+//=============================================================================
+
+module com { module sun { module star { module text { module textfield {
+
+//=============================================================================
+/**	specifies service of a hidden text field.
+	@see com::sun::star::text::TextField
+*/
+published service HiddenText
+{
+	service  com::sun::star::text::TextField;
+
+	/** contains the text content of the hidden text field.
+        <p> The content is displayed if the condition evaluates to <FALSE/>.</p>
+	 */
+	[property] string Content;
+	/** contains the condition.
+	 */
+	[property] string Condition;
+    /** contains the result of the last evaluation of the condition.
+     <p>This property has to be read/written in file export/import to save and
+     restore the result without initiation of a new evaluation.</p>
+	 */
+    [property] boolean IsHidden;
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif
+

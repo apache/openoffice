@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--
+***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+ 
+	
+<meta>
+      <topic id="textswriterguideheader_footerxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">About Headers and Footers</title>
+         <filename>/text/swriter/guide/header_footer.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155863"><bookmark_value>headers;about</bookmark_value>
+      <bookmark_value>footers;about</bookmark_value>
+      <bookmark_value>HTML documents; headers and footers</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3155863" role="heading" level="1" l10n="U"
+                 oldref="38"><variable id="header_footer"><link href="text/swriter/guide/header_footer.xhp" name="About Headers and Footers">About Headers and Footers</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154255" role="paragraph" l10n="U" oldref="35">Headers and footers are areas in the top and the bottom page margins, where you can add text or graphics. Headers and footers are added to the current page style. Any page that uses the same style automatically receives the header or footer that you add. You can insert <link href="text/swriter/01/04090000.xhp" name="Fields">Fields</link>, such as page numbers and chapter headings, in headers and footers in a text document.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150511" role="note" l10n="U" oldref="44">The page style for the current page is displayed in the <emph>Status Bar</emph>.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155896" role="listitem" l10n="U" oldref="39">To add a header to a page, choose <emph>Insert - Header</emph>, and then select the page style for the current page from the submenu.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147119" role="listitem" l10n="U" oldref="43">To add a footer to a page, choose <emph>Insert - Footer</emph>, and then select the page style for the current page from the submenu.</paragraph>
+         </listitem>
+      </list>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153726" role="listitem" l10n="U" oldref="40">You can also choose <item type="menuitem">Format - Page</item>, click the <item type="menuitem">Header</item> or <item type="menuitem">Footer</item>
+               <emph/>tab, and then select <item type="menuitem">Header on</item>
+               <emph/>or <item type="menuitem">Footer on</item>. Clear the <item type="menuitem">Same content left/right</item> check box if you want to define different headers and footers for even and odd pages.</paragraph>
+         </listitem>
+      </list>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146876" role="listitem" l10n="U" oldref="36">To use different headers or footers in your document, you must add them to different <link href="text/swriter/guide/header_pagestyles.xhp" name="Page Styles">Page Styles</link>, and then apply the styles to the pages where you want the headers or footer to appear.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3150704" role="heading" level="2" l10n="U"
+                 oldref="41">Headers and Footers in HTML Documents</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150717" role="paragraph" l10n="CHG" oldref="34">Some of the header and footer options are also available for HTML documents. Headers and footers are not supported by HTML and instead are exported with special tags, so that they can be viewed in a browser. Headers and footers are only exported in HTML documents if they are enabled in Web Layout mode. When you reopen the document in $[officename], the headers and footers are displayed correctly, including any fields that you inserted. </paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/change_header.xhp#change_header"/>
+         <embed href="text/swriter/guide/header_pagestyles.xhp#header_pagestyles"/>
+         <embed href="text/swriter/guide/header_with_chapter.xhp#header_with_chapter"/>
+         <embed href="text/swriter/guide/header_with_line.xhp#header_with_line"/>
+         <paragraph xml-lang="en-US" id="par_id3153174" role="paragraph" l10n="C"><link href="text/swriter/guide/header_pagestyles.xhp" name="Page Styles">Page Styles</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

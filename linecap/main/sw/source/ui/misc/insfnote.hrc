@@ -1,0 +1,41 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#define RB_NUMBER_AUTO		1
+#define RB_NUMBER_CHAR		2
+#define ED_NUMBER_CHAR		3
+#define BT_NUMBER_CHAR		4
+#define FL_NUMBER                       5
+#define FL_TYPE                         6
+#define RB_TYPE_FTN			7
+#define RB_TYPE_ENDNOTE		8
+
+#define BT_OK				100
+#define BT_CANCEL			101
+#define BT_HELP				102
+#define BT_PREV				103
+#define BT_NEXT				104
+
+//IAccessibility2 Implementation 2009-----
+#define STR_CHAR			105
+//-----IAccessibility2 Implementation 2009

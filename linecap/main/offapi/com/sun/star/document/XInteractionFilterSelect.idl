@@ -1,0 +1,76 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_document_XInteractionFilterSelect_idl__
+#define __com_sun_star_document_XInteractionFilterSelect_idl__
+
+#ifndef __com_sun_star_task_XInteractionContinuation_idl__
+#include <com/sun/star/task/XInteractionContinuation.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module document {
+
+//=============================================================================
+/** continuation used by interaction mechanism at filter detection during
+    loading documents
+
+    <p>
+    If during loading time the filter can't be detected and wasn't given at calling time,
+    a possible <type scope="com::sun::star::task">InteractionHandler</type> will be used.
+    (it's a a part of used <type>MediaDescriptor</type>)
+    A <type>NoSuchFilterRequest</type> will be used then to start right interaction on that to
+    get a decision wich filter should be used for given URL. A possible continiuation
+    of that can be this XInteractionFilterSelect. It will transport the decision back to
+    generic filter detection and force using of it. Of course it's possible to abort
+    the loading process by use another continuation <type scope="com::sun::star::task">XInteractionAbort</type>.
+    </p>
+
+    @see MediaDescriptor
+    @see com::sun::star::task::InteractionHandler
+    @see NoSuchFilterRequest
+    @see com::sun::star::task::XInteractionAbort
+ */
+published interface XInteractionFilterSelect : com::sun::star::task::XInteractionContinuation
+{
+    //-------------------------------------------------------------------------
+    /** used by interaction to set selected filter
+
+        <p>
+        This value must be save till another one will be set
+        and must be provided on getFilter() for interest users.
+        </p>
+     */
+    void setFilter( [in] string Name );
+
+    //-------------------------------------------------------------------------
+    /** used by detection to get selected filter
+     */
+    string getFilter();
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

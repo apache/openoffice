@@ -1,0 +1,60 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _COM_SUN_STAR_BRIDGE_XBRIDGE_IDL_ 
+#define _COM_SUN_STAR_BRIDGE_XBRIDGE_IDL_ 
+ 
+#include <com/sun/star/uno/XInterface.idl> 
+ 
+module com {  module sun {  module star {  module bridge { 
+ 
+/** main interface for an interprocess bridge.
+ */
+published interface XBridge: com::sun::star::uno::XInterface
+{ 
+	/** tries to get an interface from the remote that is known by this name.
+
+		<p>In general, this method is called once to get the initial object from the 
+		remote, but it is allowed to call the method multiple times. </p>
+
+		@param sInstanceName The name of the object, that shall be retrieved from the
+		                     remote process. The call is delegated to
+							 com.sun.star.bridge.XInstanceProvider.getInstance() in the
+							 remote process.
+		@see com.sun.star.bridge.XInstanceProvider					 
+	 */
+	com::sun::star::uno::XInterface getInstance( [in] string sInstanceName ); 
+ 
+	 
+	/** name that the bridge got when it was created.
+	 */
+	string getName(); 
+	 
+			  
+	/** a unique descriptive string: protocol + ":" + XConnection.getDescription()
+	 */
+	string getDescription(); 
+}; 
+ 
+};};};};  
+ 
+#endif 

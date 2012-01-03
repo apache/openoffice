@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+ ***********************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************
+ -->
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidebackgroundxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Defining Background Colors or Background Graphics</title>
+<filename>/text/shared/guide/background.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149346"><bookmark_value>backgrounds; defining colors/pictures</bookmark_value>
+<bookmark_value>colors; backgrounds</bookmark_value>
+<bookmark_value>pictures; backgrounds</bookmark_value>
+<bookmark_value>pages; backgrounds in all applications</bookmark_value>
+<bookmark_value>watermarks</bookmark_value>
+<bookmark_value>text, see also text documents, paragraphs and characters</bookmark_value>
+</bookmark>
+  <comment>MW deleted 6 entries and changed "pages;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3149346" role="heading" level="1" l10n="U" oldref="1"><variable id="background"><link href="text/shared/guide/background.xhp" name="Defining Graphics or Colors in the Background of Pages (Watermark)">Defining Graphics or Colors in the Background of Pages (Watermark)</link> 
+</variable></paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3153878" role="listitem" l10n="U" oldref="25">Choose <emph>Format - Page</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3149581" role="listitem" l10n="U" oldref="26">On the <emph>Background</emph> tab page, select a background color or a background graphic.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id3154097" role="note" l10n="U" oldref="27">In spreadsheets this background appears only in the print behind the cells not formatted elsewhere.</paragraph>
+   </listitem>
+  </list>
+  <section id="relatedtopics">
+   
+   
+<switch select="appl">
+   
+<case select="IMPRESS">
+   <embed href="text/simpress/guide/background.xhp#background"/>
+   
+</case>
+   
+</switch>
+   <paragraph xml-lang="en-US" id="par_id3156180" role="paragraph" l10n="U" oldref="30"><link href="text/shared/01/05030600.xhp" name="Background tab page"><emph>Background</emph> tab page</link></paragraph>
+   <paragraph xml-lang="en-US" id="par_id2711569" role="paragraph" l10n="NEW"><link href="text/swriter/guide/background.xhp">Backgrounds in Text</link></paragraph>
+   <paragraph xml-lang="en-US" id="par_id8591570" role="paragraph" l10n="NEW"><link href="text/scalc/guide/background.xhp">Backgrounds in Spreadsheets</link></paragraph>
+   
+  </section>
+ </body>
+</helpdocument>

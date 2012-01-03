@@ -1,0 +1,87 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_form_runtime_FormOperations_idl__
+#define __com_sun_star_form_runtime_FormOperations_idl__
+
+#ifndef __com_sun_star_form_runtime_XFormOperations_idl__
+#include <com/sun/star/form/runtime/XFormOperations.idl>
+#endif
+#ifndef __com_sun_star_form_runtime_XFormController_idl__ 
+#include <com/sun/star/form/runtime/XFormController.idl>
+#endif
+#ifndef __com_sun_star_form_XForm_idl__ 
+#include <com/sun/star/form/XForm.idl>
+#endif
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__ 
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module form { module runtime { 
+
+//=============================================================================
+
+/** encapsulates operations on a database form which has a UI representation,
+    and is interacting with the user.
+
+    @since OOo 2.2
+ */
+service FormOperations : XFormOperations
+{
+    /** creates a <code>FormOperations</code> instance which works on a <type scope="com::sun::star::form">FormController</type>
+        instance.
+        @throws IllegalArgumentException
+            if the given form controller is <NULL/>, or does not have a model denoting a valid
+            <type scope="com::sun::star::form::component">DataForm</type> instance.
+    */
+    createWithFormController(
+        [in] XFormController Controller
+    )
+    raises(
+        ::com::sun::star::lang::IllegalArgumentException
+    );
+
+    /** creates a <code>FormOperations</code> instance which works on a <type scope="com::sun::star::form::component">DataForm</type>
+        instance.
+
+        @throws IllegalArgumentException
+            if the given form is <NULL/>, or does not support the <type scope="com::sun::star::form::component">DataForm</type>
+            service.
+    */
+    createWithForm(
+        [in] XForm Form
+    )
+    raises(
+        ::com::sun::star::lang::IllegalArgumentException
+    );
+};
+
+//=============================================================================
+
+}; }; }; }; }; 
+
+//=============================================================================
+
+#endif

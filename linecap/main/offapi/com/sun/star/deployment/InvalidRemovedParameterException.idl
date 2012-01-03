@@ -1,0 +1,58 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef INCLUDED_COM_SUN_STAR_DEPLOYMENT_INVALIDREMOVEDPARAMETEREXCEPTION_IDL
+#define INCLUDED_COM_SUN_STAR_DEPLOYMENT_INVALIDREMOVEDPARAMETEREXCEPTION_IDL
+
+#include "com/sun/star/uno/Exception.idl"
+
+module com { module sun { module star { module deployment {
+
+interface XPackage;
+
+/**
+   indicates that <member>XPackageRegistry::bindPackage</member> was previously
+   called with a different value for the <code>removed</code> parameter and that
+   the <type>XPackage</type> object created by that call still exist.
+
+   @since OOo 3.3
+*/
+exception InvalidRemovedParameterException: com::sun::star::uno::Exception {
+    /** the value of the <code>removed</code> parameter which was used in
+        <member>XPackageRegistry::bindPackage</member> to create the currently
+        existing <type>XPackage</type> object.
+    */
+    boolean PreviousValue;
+    /**
+       the <type>XPackage</type> that was already bound to the provided
+       <code>url</code> paramter during
+       <member>XPackageRegistry::bindPackage</member>.
+
+       <p>Must not be <NULL/>.</p>
+    */
+    XPackage Extension;
+};
+
+}; }; }; };
+
+#endif

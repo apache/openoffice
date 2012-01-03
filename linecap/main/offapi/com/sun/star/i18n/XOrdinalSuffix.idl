@@ -1,0 +1,66 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef INCLUDED_com_sun_star_i18n_XOrdinalSuffix_idl
+#define INCLUDED_com_sun_star_i18n_XOrdinalSuffix_idl
+
+#include <com/sun/star/lang/Locale.idl>
+
+//============================================================================
+
+module com { module sun { module star { module i18n {
+
+//============================================================================
+
+/** provides access to locale specific ordinal suffix systems.
+
+    @since OOo 2.2
+
+    @internal
+
+    ATTENTION: This interface is marked <em>internal</em> and does not
+    have the <em>published</em> flag, which means it is subject to
+    change without notice and should not be used outside the OOo core.
+    The current version is a draft and works only for English language
+    locales. Future enhancements adding functionality for other locales
+    should use the 'ordinal' RuleBasedNumberFormat of the ICU if
+    possible, see
+    http://icu.sourceforge.net/apiref/icu4c/classRuleBasedNumberFormat.html
+    which might make it necessary to change the interface.
+ */
+
+interface XOrdinalSuffix : com::sun::star::uno::XInterface
+{
+    //------------------------------------------------------------------------
+    /** Returns the ordinal suffix for the number, for example,
+        "<b>st</b>", "<b>nd</b>", "<b>rd</b>", "<b>th</b>"
+        in an English locale.
+     */
+    string getOrdinalSuffix( [in] long nNumber, [in] com::sun::star::lang::Locale aLocale );
+};
+
+//============================================================================
+}; }; }; };
+//============================================================================
+
+#endif

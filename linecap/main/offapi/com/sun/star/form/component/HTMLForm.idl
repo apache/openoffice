@@ -1,0 +1,102 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_form_component_HTMLForm_idl__ 
+#define __com_sun_star_form_component_HTMLForm_idl__ 
+ 
+#ifndef __com_sun_star_form_component_Form_idl__ 
+#include <com/sun/star/form/component/Form.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_form_XReset_idl__ 
+#include <com/sun/star/form/XReset.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_form_XSubmit_idl__ 
+#include <com/sun/star/form/XSubmit.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_form_FormSubmitMethod_idl__ 
+#include <com/sun/star/form/FormSubmitMethod.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_form_FormSubmitEncoding_idl__ 
+#include <com/sun/star/form/FormSubmitEncoding.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module form {  module component { 
+ 
+//============================================================================= 
+ 
+/** This service specifies the special kind of <type>Form</type>s for HTML documents.
+	
+	<p>An HTMLForm fulfills the specification of forms in HTML. It supplies
+	the possibility of submitting or resetting the contents of a form.
+	For more information on HTML forms, please see the documentation of HTML.</p>
+ */
+published service HTMLForm
+{ 
+	service com::sun::star::form::component::Form; 
+	
+	/** resets the control.
+	*/
+	interface com::sun::star::form::XReset; 
+	
+	/** allows to submit changes.
+
+		<p>When a form is submitted, the data contained in the form is sent 
+		to the target URL as a series of name/value pairs. The name portion
+		of each pair is the name of a form component as specified by its NAME
+		attribute. In most cases the value portion is the value displayed 
+		by the element, for example, the text displayed in a text field.</p>
+	*/
+	interface com::sun::star::form::XSubmit; 
+ 
+	/** describes the frame, where to open the document specified by the TargetURL.
+	 */
+	[property] string TargetFrame; 
+
+	//------------------------------------------------------------------------- 
+	 
+	/** specifies the URL, which should be used for submission.
+	 */
+	[property] string TargetURL; 
+	//------------------------------------------------------------------------- 
+	 
+	/** specifies the kind of submission.
+	 */
+	[property] com::sun::star::form::FormSubmitMethod SubmitMethod; 
+	//------------------------------------------------------------------------- 
+	 
+	/** specifies the kind of encoding for submission.
+	 */
+	[property] com::sun::star::form::FormSubmitEncoding SubmitEncoding; 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; }; 
+ 
+#endif 
