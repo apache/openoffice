@@ -124,6 +124,7 @@ IDLFILES=\
 	Layer.idl\
 	LayerManager.idl\
 	LayerType.idl\
+	LineCap.idl\
 	LineDash.idl\
 	LineEndType.idl\
 	LineJoint.idl\

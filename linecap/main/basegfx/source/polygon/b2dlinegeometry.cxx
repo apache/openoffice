@@ -34,6 +34,7 @@
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <basegfx/curve/b2dcubicbezier.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include <com/sun/star/drawing/LineCap.hpp>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -566,6 +567,82 @@ namespace basegfx
 
             return aEdgePolygon;
         }
+
+        B2DPolygon createAreaGeometryForCap(
+            const B2DVector& rTangent,
+            const B2DPoint& rPoint,
+            double fHalfLineWidth,
+            com::sun::star::drawing::LineCap eCap,
+            bool bIsStart)
+        {
+            OSL_ENSURE(fHalfLineWidth > 0.0, "createAreaGeometryForJoin: LineWidth too small (!)");
+
+            const B2DVector aScaledPerpend(getNormalizedPerpendicular(rTangent)
+                                 * (bIsStart ? fHalfLineWidth : -fHalfLineWidth));
+            // Vector from rPoint towards cap
+            B2DVector aScaledTangent(rTangent);
+            aScaledTangent.normalize();
+            aScaledTangent *= (bIsStart ? -fHalfLineWidth : fHalfLineWidth);
+
+            B2DPolygon aCapPolygon;
+            const B2DPoint aStartPoint(rPoint + aScaledPerpend);
+            const B2DPoint aEndPoint(rPoint - aScaledPerpend);
+
+            switch(eCap)
+            {
+                case com::sun::star::drawing::LineCap_ROUND :
+                {
+                    // use tooling to add needed EllipseSegment
+                    double fAngleStart(atan2(aScaledPerpend.getY(), aScaledPerpend.getX()));
+
+                    // atan2 results are [-PI .. PI], consolidate to [0.0 .. 2PI]
+                    if(fAngleStart < 0.0)
+                    {
+                        fAngleStart += F_2PI;
+                    }
+
+                    double fAngleEnd = fAngleStart + F_PI;
+                    if(fAngleEnd > F_2PI)
+                    {
+                        fAngleEnd -= F_2PI;
+                    }
+
+                    const B2DPolygon aBow(tools::createPolygonFromEllipseSegment(rPoint, fHalfLineWidth, fHalfLineWidth, fAngleStart, fAngleEnd));
+                    // #i101491#
+                    // use the original start/end positions; the ones from bow creation may be numerically
+                    // different due to their different creation. To guarantee good merging quality with edges
+                    // and edge roundings (and to reduce point count)
+                    
+                    // ToDo Are there at least two points in aBow ?
+                    aCapPolygon = aBow;
+                    aCapPolygon.setB2DPoint(0, aStartPoint);
+                    aCapPolygon.setB2DPoint(aBow.count() - 1, aEndPoint);
+                    aCapPolygon.append(rPoint);
+                    break;
+                }
+                case com::sun::star::drawing::LineCap_SQUARE :
+                {
+                    aCapPolygon.append(aStartPoint);
+                    aCapPolygon.append(aStartPoint + aScaledTangent);
+                    aCapPolygon.append(aEndPoint + aScaledTangent);
+                    aCapPolygon.append(aEndPoint);
+                    aCapPolygon.append(rPoint);
+                    break;
+                }
+                default: // com::sun::star::drawing::LineCap_BUTT
+                {
+                    // No cap.
+                    // ToDo. Is actually not called with BUTT. What setting is
+                    // useful to prevend errors, if called with BUTT anyway?
+                    break;
+                }
+            }
+
+            // create last polygon part for cap
+            aCapPolygon.setClosed(true);
+
+            return aCapPolygon;
+        }
     } // end of anonymus namespace
 
 	namespace tools
@@ -574,6 +651,7 @@ namespace basegfx
             const B2DPolygon& rCandidate, 
             double fHalfLineWidth, 
             B2DLineJoin eJoin, 
+            com::sun::star::drawing::LineCap eCap,
             double fMaxAllowedAngle, 
 			double fMaxPartOfEdge,
             double fMiterMinimumAngle)
@@ -619,6 +697,7 @@ namespace basegfx
 				const bool bEventuallyCreateLineJoin(B2DLINEJOIN_NONE != eJoin);
                 const bool bIsClosed(aCandidate.isClosed());
                 const sal_uInt32 nEdgeCount(bIsClosed ? nPointCount : nPointCount - 1);
+                const bool bCreateLineCap(com::sun::star::drawing::LineCap_BUTT != eCap);
 
                 if(nEdgeCount)
                 {
@@ -627,6 +706,18 @@ namespace basegfx
 
                     // prepare edge
                     aEdge.setStartPoint(aCandidate.getB2DPoint(0));
+
+                    // eventually create start line cap
+                    if (!bIsClosed && bCreateLineCap)
+                    {
+                      aEdge.setControlPointA(aCandidate.getNextControlPoint(0));
+                      aEdge.setControlPointB(aCandidate.getPrevControlPoint(1 % nPointCount));
+                      aEdge.setEndPoint(aCandidate.getB2DPoint(1 % nPointCount ));
+                      const B2DVector aTangentStart(aEdge.getTangent(0.0));
+                      aRetval.append(createAreaGeometryForCap(
+                                    aTangentStart, aEdge.getStartPoint(),
+                                    fHalfLineWidth, eCap, true /*IsStart*/));
+                    }
 
                     if(bIsClosed && bEventuallyCreateLineJoin)
                     {
@@ -705,8 +796,21 @@ namespace basegfx
 
                         aEdge.setStartPoint(aEdge.getEndPoint());
                     }
-                }
 
+                    // eventually create end line cap
+                    if (!bIsClosed && bCreateLineCap)
+                    {
+                        aEdge.setStartPoint(aCandidate.getB2DPoint(nEdgeCount -1));
+                        aEdge.setControlPointA(aCandidate.getNextControlPoint(nEdgeCount -1));
+                        aEdge.setControlPointB(aCandidate.getPrevControlPoint(nEdgeCount % nPointCount));
+                        aEdge.setEndPoint(aCandidate.getB2DPoint(nEdgeCount % nPointCount ));
+                        const B2DVector aTangentEnd(aEdge.getTangent(1.0));
+                        aRetval.append(createAreaGeometryForCap(
+                                    aTangentEnd, aEdge.getEndPoint(),
+                                    fHalfLineWidth, eCap, false /*IsStart*/));
+                    }
+                }
+                // ToDo Returns empty PolyPolygon if rCandidate is a single point?
                 return aRetval;
 			}
             else

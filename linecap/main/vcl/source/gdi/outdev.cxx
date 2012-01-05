@@ -1596,7 +1596,8 @@ void OutputDevice::impPaintLineGeometryWithEvtlExpand(
 	        aFillPolyPolygon.append(basegfx::tools::createAreaGeometry(
                 aLinePolyPolygon.getB2DPolygon(a), 
                 fHalfLineWidth, 
-                rInfo.GetLineJoin()));
+                rInfo.GetLineJoin(),
+                rInfo.GetLineCap()));
         }
         
         aLinePolyPolygon.clear();
@@ -1646,7 +1647,10 @@ void OutputDevice::impPaintLineGeometryWithEvtlExpand(
         {
             for(sal_uInt32 a(0); a < aFillPolyPolygon.count(); a++)
             {
-                const Polygon aPolygon(aFillPolyPolygon.getB2DPolygon(a));
+                Polygon aPolygon(aFillPolyPolygon.getB2DPolygon(a));
+
+                // need to subdivide, mpGraphics->DrawPolygon ignores curves
+                aPolygon.AdaptiveSubdivide(aPolygon);
 			    mpGraphics->DrawPolygon(aPolygon.GetSize(), (const SalPoint*)aPolygon.GetConstPointAry(), this);
             }
         }

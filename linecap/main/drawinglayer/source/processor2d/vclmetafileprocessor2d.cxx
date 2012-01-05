@@ -421,7 +421,8 @@ namespace drawinglayer
 					}
 				}
 
-	            SvtGraphicStroke::JoinType eJoin(SvtGraphicStroke::joinNone);
+                SvtGraphicStroke::JoinType eJoin(SvtGraphicStroke::joinNone);
+                SvtGraphicStroke::CapType eCap(SvtGraphicStroke::capButt);
 				double fLineWidth(0.0);
 				double fMiterLength(0.0);
 				SvtGraphicStroke::DashArray aDashArray;
@@ -461,6 +462,26 @@ namespace drawinglayer
 							break;
 						}
 					}
+
+                    // get stroke
+                    switch(pLineAttribute->getLineCap())
+                    {
+                        default: /* com::sun::star::drawing::LineCap_BUTT */
+                        {
+                            eCap = SvtGraphicStroke::capButt;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineCap_ROUND:
+                        {
+                            eCap = SvtGraphicStroke::capRound;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineCap_SQUARE:
+                        {
+                            eCap = SvtGraphicStroke::capSquare;
+                            break;
+                        }
+                    }
                 }
 
 				if(pStrokeAttribute)
@@ -488,7 +509,7 @@ namespace drawinglayer
 					PolyPolygon(aEndArrow),
 					mfCurrentUnifiedTransparence,
 					fLineWidth,
-					SvtGraphicStroke::capButt,
+					eCap,
 					eJoin,
 					fMiterLength,
 					aDashArray);
@@ -1209,6 +1230,7 @@ namespace drawinglayer
 
 							LineInfo aLineInfo(LINE_SOLID, basegfx::fround(fDiscreteLineWidth));
 						    aLineInfo.SetLineJoin(rLine.getLineJoin());
+                            aLineInfo.SetLineCap(rLine.getLineCap());
 
 						    for(sal_uInt32 a(0); a < aHairLinePolyPolygon.count(); a++)
 						    {
