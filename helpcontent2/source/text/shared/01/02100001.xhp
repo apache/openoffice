@@ -142,18 +142,18 @@
          </tablerow>
          <tablerow>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3146775" role="tablecontent" l10n="U" oldref="33">\&gt;</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3146775" role="tablecontent" l10n="U" oldref="33">\W</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3148644" role="tablecontent" l10n="U" oldref="34">Only finds the search term if it appears at the end of a word. For example, "book\&gt;" finds "checkbook", but not "bookmark".</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3148644" role="tablecontent" l10n="U" oldref="34">Match a non-word character. For example, "book\W" finds "checkbook", but not "bookmark".</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3150670" role="tablecontent" l10n="U" oldref="35">\&lt;</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3150670" role="tablecontent" l10n="U" oldref="35">\b</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3153666" role="tablecontent" l10n="CHG" oldref="36">Only finds the search term if it appears at the beginning of a word. For example, "\&lt;book" finds "bookmark", but not "checkbook".</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153666" role="tablecontent" l10n="CHG" oldref="36">Only finds the search term if it appears at the beginning of a word. For example, "\bbook" finds "bookmark", but not "checkbook".</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
