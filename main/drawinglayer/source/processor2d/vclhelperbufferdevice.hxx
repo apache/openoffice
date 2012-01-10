@@ -38,11 +38,11 @@ namespace drawinglayer
 {
 	class impBufferDevice
 	{
-		OutputDevice&						mrOutDev;
-		VirtualDevice						maContent;
-		VirtualDevice*						mpMask;
-		VirtualDevice*						mpAlpha;
-		Rectangle							maDestPixel;
+        OutputDevice&                       mrOutDev;
+        VirtualDevice*                      mpContent;
+        VirtualDevice*                      mpMask;
+        VirtualDevice*                      mpAlpha;
+        Rectangle                           maDestPixel;
 
 	public:
 		impBufferDevice(
@@ -53,7 +53,7 @@ namespace drawinglayer
 
 		void paint(double fTrans = 0.0);
 		bool isVisible() const { return !maDestPixel.IsEmpty(); }
-		VirtualDevice& getContent() { return maContent; }
+		VirtualDevice& getContent();
 		VirtualDevice& getMask();
 		VirtualDevice& getTransparence();
 	};
