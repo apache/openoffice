@@ -62,8 +62,6 @@
 #include <com/sun/star/rendering/TexturingMode.hpp>
 #include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 #include <vclhelperbufferdevice.hxx>
-#include <drawinglayer/primitive2d/chartprimitive2d.hxx>
-#include <helperchartrenderer.hxx>
 #include <drawinglayer/primitive2d/wrongspellprimitive2d.hxx>
 #include <helperwrongspellrenderer.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
@@ -2108,26 +2106,6 @@ namespace drawinglayer
 
 					break;
 				}
-				case PRIMITIVE2D_ID_CHARTPRIMITIVE2D :
-				{
-					// chart primitive in canvas renderer; restore original DrawMode during call
-					// since the evtl. used ChartPrettyPainter will use the MapMode
-					const primitive2d::ChartPrimitive2D& rChartPrimitive = static_cast< const primitive2d::ChartPrimitive2D& >(rCandidate);
-		   			mpOutputDevice->Push(PUSH_MAPMODE);
-					mpOutputDevice->SetMapMode(maOriginalMapMode);
-					
-					if(!renderChartPrimitive2D(
-						rChartPrimitive, 
-						*mpOutputDevice,
-						getViewInformation2D()))
-					{
-						// fallback to decomposition (MetaFile)
-						process(rChartPrimitive.get2DDecomposition(getViewInformation2D()));
-					}
-
-					mpOutputDevice->Pop();
-					break;
-				}
                 case PRIMITIVE2D_ID_WRONGSPELLPRIMITIVE2D :
                 {
 					// wrong spell primitive. Handled directly here using VCL since VCL has a nice and
@@ -2173,7 +2151,6 @@ namespace drawinglayer
 			const geometry::ViewInformation2D& rViewInformation, 
 			OutputDevice& rOutDev) 
 		:	BaseProcessor2D(rViewInformation),
-            maOriginalMapMode(rOutDev.GetMapMode()),
             mpOutputDevice(&rOutDev),
 			mxCanvas(rOutDev.GetCanvas()),
 			maViewState(),

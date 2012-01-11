@@ -904,10 +904,12 @@ dnl Configure pre-requisites.
 dnl ===================================================================
 cat /dev/null > warn
 
-AC_MSG_CHECKING([configure is up-to-date])
-if test "configure" -ot "configure.in"
-then
+AC_MSG_CHECKING([whether configure is up-to-date])
+if test "configure" -ot "configure.in"; then
+   AC_MSG_RESULT([no])
    AC_MSG_ERROR([configure is not up-to-date, run autoconf first!])
+else
+   AC_MSG_RESULT([yes])
 fi
 
 AC_PROG_EGREP
@@ -2569,7 +2571,7 @@ dnl ===================================================================
    elif test "$_os" = "OS2"; then
       DEFAULT_TO_STLPORT="yes" 
    elif test "$_os" = "FreeBSD"; then
-      DEFAULT_TO_STLPORT="no"
+      DEFAULT_TO_STLPORT="yes"
    fi
    if test "$DEFAULT_TO_STLPORT" = "yes"; then
       AC_MSG_RESULT([stlport])
