@@ -47,8 +47,13 @@ $(eval $(call gb_Library_set_cflags,qstart_gtk,\
 
 $(eval $(call gb_Library_set_ldflags,qstart_gtk,\
     $$(LDFLAGS) \
-    $(GTK_LIBS) \
 ))
+
+$(eval $(call gb_Library_add_external_libs,qstart_gtk,	\
+    $(patsubst -l%,%, $(filter -l%,	$(GTK_LIBS)))	\
+))
+
+
 
 $(eval $(call gb_Library_add_linked_libs,qstart_gtk,\
 	comphelper \
@@ -70,7 +75,7 @@ $(eval $(call gb_Library_add_linked_libs,qstart_gtk,\
 	vcl \
 	vos3 \
 	xml2 \
-    sfx \
+	sfx \
 ))
 
 $(eval $(call gb_Library_add_exception_objects,qstart_gtk,\
