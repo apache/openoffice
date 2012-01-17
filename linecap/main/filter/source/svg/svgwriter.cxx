@@ -493,8 +493,8 @@ PolyPolygon& SVGActionWriter::ImplMap( const PolyPolygon& rPolyPoly, PolyPolygon
 			aPathData += ::rtl::OUString::valueOf( ( aPolyPoint = rPoly[ 0 ] ).X() );
 			aPathData += aComma;
 			aPathData += ::rtl::OUString::valueOf( aPolyPoint.Y() );
-			
             sal_Char nCurrentMode = 0;
+            const bool bClose(!bLine || rPoly[0] == rPoly[nSize - 1]);
 
 			while( n < nSize )
 			{
@@ -529,7 +529,7 @@ PolyPolygon& SVGActionWriter::ImplMap( const PolyPolygon& rPolyPoly, PolyPolygon
 				}
 			}
 
-			if( !bLine )
+			if(bClose)
 				aPathData += B2UCONST( " Z" );
 
 			if( i < ( nCount - 1 ) )
@@ -1088,6 +1088,10 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                                         sal_uInt32 nWriteFlags,
                                         const ::rtl::OUString* pElementId )
 {
+    // need a counter fo rthe actions written per shape to avoid double ID
+    // generation
+    sal_Int32 nEntryCount(0);
+
     if( mnInnerMtfCount )
         nWriteFlags |= SVGWRITER_NO_SHAPE_COMMENTS;
 
@@ -1430,8 +1434,10 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                             mapCurShape.reset( new SVGShapeDescriptor );
                             
                             if( pElementId )
-                                mapCurShape->maId = *pElementId;
-                            
+                            {
+                                mapCurShape->maId = *pElementId + B2UCONST("_") + ::rtl::OUString::valueOf(nEntryCount++);
+                            }
+
                             mapCurShape->maShapePolyPoly = aShapePolyPoly;
                             mapCurShape->maShapeFillColor = aFill.getFillColor();
                             mapCurShape->maShapeFillColor.SetTransparency( (sal_uInt8) FRound( 255.0 * aFill.getTransparency() ) );
@@ -1496,16 +1502,32 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                     
                     if( bSkip )
                     {
+                        Polygon aPoly;
+
+                        aStroke.getPath(aPoly);
+
+                        if(mapCurShape.get())
+                        {
+                            if(1 != mapCurShape->maShapePolyPoly.Count()
+                                || !mapCurShape->maShapePolyPoly[0].IsEqual(aPoly))
+                            {
+                                // this path action is not covering the same path than the already existing
+                                // fill polypolygon, so write out the fill polygon
+                                ImplWriteShape( *mapCurShape );
+                                mapCurShape.reset();
+                            }
+                        }
+
                         if( !mapCurShape.get() )
                         {
-                            Polygon aPoly;
                             
                             mapCurShape.reset( new SVGShapeDescriptor );
                             
                             if( pElementId )
-                                mapCurShape->maId = *pElementId;
+                            {
+                                mapCurShape->maId = *pElementId + B2UCONST("_") + ::rtl::OUString::valueOf(nEntryCount++);
+                            }
                             
-                            aStroke.getPath( aPoly );
                             mapCurShape->maShapePolyPoly = aPoly;
                         }
                             
