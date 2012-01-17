@@ -187,7 +187,12 @@ bool WinSalGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon& rPolyPoly
  	return true;
 }
 
-bool WinSalGraphics::drawPolyLine( const basegfx::B2DPolygon& rPolygon, double fTransparency, const basegfx::B2DVector& rLineWidths, basegfx::B2DLineJoin eLineJoin )
+bool WinSalGraphics::drawPolyLine( 
+    const basegfx::B2DPolygon& rPolygon, 
+    double fTransparency, 
+    const basegfx::B2DVector& rLineWidths, 
+    basegfx::B2DLineJoin eLineJoin,
+    com::sun::star::drawing::LineCap eLineCap)
 {
     const sal_uInt32 nCount(rPolygon.count());
 
@@ -229,6 +234,27 @@ bool WinSalGraphics::drawPolyLine( const basegfx::B2DPolygon& rPolygon, double f
 				break;
 			}
 		}
+
+        switch(eLineCap)
+        {
+            default: /*com::sun::star::drawing::LineCap_BUTT*/
+            {
+                // nothing to do
+                break;
+            }
+            case com::sun::star::drawing::LineCap_ROUND:
+            {
+                aTestPen.SetStartCap(Gdiplus::LineCapRound);
+                aTestPen.SetEndCap(Gdiplus::LineCapRound);
+                break;
+            }
+            case com::sun::star::drawing::LineCap_SQUARE:
+            {
+                aTestPen.SetStartCap(Gdiplus::LineCapSquare);
+                aTestPen.SetEndCap(Gdiplus::LineCapSquare);
+                break;
+            }
+        }
 
 		if(nCount > 250 && basegfx::fTools::more(rLineWidths.getX(), 1.5))
         {
