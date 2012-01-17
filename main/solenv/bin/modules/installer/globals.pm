@@ -128,7 +128,7 @@ BEGIN
 	$setupscript_defined_in_productlist = 0;
 	$islinux = 0;	
 	$issolaris = 0;
-    $ismacosx = 0;
+	$ismacosx = 0;
 	$iswindowsbuild = 0;
 	$islinuxbuild = 0;
 	$islinuxrpmbuild = 0;
@@ -346,6 +346,7 @@ BEGIN
 	$patch_user_dir = 0;
 	$addchildprojects = 0;
 	$languagepack = 0;
+	$devsnapshotbuild = 0;
 	$tab = 0;
 	$patch = 0;
 	$patchincludepath = "";
