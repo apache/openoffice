@@ -1,0 +1,4 @@
+mkdir: %_DEST%\inc%_EXT%\coinmp
+..\%__SRC%\bin\CoinMP.dll %_DEST%\bin%_EXT%\
+..\%__SRC%\lib\* %_DEST%\lib%_EXT%
+..\%__SRC%\inc\CoinMP.h %_DEST%\inc%_EXT%\coinmp
