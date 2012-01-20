@@ -1,9 +1,0 @@
--o sm.SmEditAccessible
--o sm.SmGraphicAccessible
--o sm.SmModel
--o sm.XMLExporter
--o sm.XMLImporter
--o sm.XMLMetaExporter
--o sm.XMLMetaImporter
--o sm.XMLSettingsExporter
--o sm.XMLSettingsImporter
