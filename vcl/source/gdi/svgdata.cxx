@@ -30,6 +30,8 @@
 #include <com/sun/star/rendering/XIntegerReadOnlyBitmap.hpp>
 #include <vcl/canvastools.hxx>
 #include <comphelper/seqstream.hxx>
+#include <vcl/svapp.hxx>
+#include <vcl/outdev.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -62,13 +64,16 @@ void SvgData::ensureReplacement()
                 aRealRect.Y1 = rRange.getMinY();
                 aRealRect.X2 = rRange.getMaxX();
                 aRealRect.Y2 = rRange.getMaxY();
-                
+
+                // get system DPI
+                const Size aDPI(Application::GetDefaultDevice()->LogicToPixel(Size(1, 1), MAP_INCH));
+
                 const uno::Reference< rendering::XBitmap > xBitmap(
                     xPrimitive2DRenderer->rasterize( 
                         maSequence,
                         aViewParameters, 
-                        72, 
-                        72, 
+                        aDPI.getWidth(), 
+                        aDPI.getHeight(), 
                         aRealRect, 
                         500000));
 
