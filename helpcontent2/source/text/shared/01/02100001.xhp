@@ -136,18 +136,10 @@
          </tablerow>
          <tablerow>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3146775" role="tablecontent" l10n="U" oldref="33">\W</paragraph>
-            </tablecell>
-            <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3148644" role="tablecontent" l10n="U" oldref="34">Match a non-word character. For example, "book\W" finds "checkbook", but not "bookmark".</paragraph>
-            </tablecell>
-         </tablerow>
-         <tablerow>
-            <tablecell>
                <paragraph xml-lang="en-US" id="par_id3150670" role="tablecontent" l10n="U" oldref="35">\b</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3153666" role="tablecontent" l10n="CHG" oldref="36">Only finds the search term if it appears at the beginning of a word. For example, "\bbook" finds "bookmark", but not "checkbook".</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153666" role="tablecontent" l10n="CHG" oldref="36">Match a word boundary. For example, "\bbook" finds "bookmark" but not "checkbook" whereas "book\b" finds "checkbook" but not "bookmark". The discrete word "book" is found by both search terms.</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
