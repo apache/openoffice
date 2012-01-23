@@ -37,8 +37,8 @@ all:
 
 .ELSE
 
-TARFILE_NAME=CoinMP-1.6
-TARFILE_MD5=3ac29d92c880e0bc703d66213f559c8b
+TARFILE_NAME=CoinMP-1.6.0
+TARFILE_MD5=2b5f1ca58d6ef30f18f1415b65bed81c
 
 .IF "$(COM)"=="MSC"
 BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|Win32"
