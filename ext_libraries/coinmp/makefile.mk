@@ -44,6 +44,7 @@ TARFILE_MD5=2b5f1ca58d6ef30f18f1415b65bed81c
 BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|Win32"
 .ELSE
 CONFIGURE_ACTION=./configure
+CONFIGURE_FLAGS=--disable-pkg-config --disable-bzlib --disable-zlib
 BUILD_ACTION=$(GNUMAKE)
 .ENDIF
 
