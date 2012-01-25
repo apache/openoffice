@@ -135,30 +135,45 @@ interface XMailService: ::com::sun::star::uno::XInterface {
     */
     com::sun::star::uno::XCurrentContext getCurrentConnectionContext()
         raises(com::sun::star::io::NotConnectedException);
-                          
+
     /** 
         Connect to a mail service. Only one connection to a mail service
         can be established at a time. 
-        
+
         @param xConnectionContext
         [in] an interface used to query for connection related information.
         The context must contain the following values:
-        "ServerName" of type 'string', "Port" of type 'long', "ConnectionType"
-        of type 'string'. A list of supported connection types can be queried
-        using <code>getSupportedConnectionTypes</code>.
-        
+        <ul>
+            <li>
+                <b>ServerName</b> of type 'string'.
+            </li>
+            <li>
+                <b>Port</b> of type 'long'.
+            </li>
+            <li>
+                <b>ConnectionType</b> of type 'string'.
+                A list of supported connection types can be queried using
+                <member>getSupportedConnectionTypes</member>.
+            </li>
+            <li>
+                <b>Timeout</b> of type 'long' (Optional).
+                Specifies a timeout in seconds for blocking operations,
+                like the connection attempt.
+            </li>
+        </ul>
+
         @param xAuthenticator
         [in] an interface used to query for the necessary user information
         needed to login to the mail server. If no authentication is required
         the xAuthenticator must return an empty user name and an empty password.
-        
+
         @throws com::sun::star::lang::IllegalArgumentException
         if the provided connection context contains invalid values or 
         misses required connection parameters.
-        
+
         @throws com::sun::star::io::AlreadyConnectedException
         on a try to connect to an already connect mail server.
-        
+
         @throws com::sun::star::io::UnknownHostException  
         usually if the IP address of the mail server could not be
         determined. Possible causes are a broken network connection,
