@@ -40,6 +40,8 @@ all:
 TARFILE_NAME=CoinMP-1.6.0
 TARFILE_MD5=2b5f1ca58d6ef30f18f1415b65bed81c
 
+PATCH_FILES=coinmp-1.6.0.patch
+
 .IF "$(COM)"=="MSC"
 BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|Win32"
 .ELSE
