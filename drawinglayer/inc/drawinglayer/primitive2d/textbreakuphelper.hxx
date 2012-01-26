@@ -31,8 +31,8 @@
 
 namespace drawinglayer
 {
-	namespace primitive2d
-	{
+    namespace primitive2d
+    {
         enum BreakupUnit
         {
             BreakupUnit_character,
@@ -43,17 +43,16 @@ namespace drawinglayer
         class DRAWINGLAYER_DLLPUBLIC TextBreakupHelper
         {
         private:
-            const Primitive2DReference              mxSource;
+            const TextSimplePortionPrimitive2D&     mrSource;
             Primitive2DSequence                     mxResult;
-            const TextSimplePortionPrimitive2D*     mpSource;
-    		TextLayouterDevice                      maTextLayouter;
+            TextLayouterDevice                      maTextLayouter;
             basegfx::tools::B2DHomMatrixBufferedOnDemandDecompose maDecTrans;
 
             /// bitfield
             bool                                    mbNoDXArray : 1;
 
             /// create a portion from nIndex to nLength and append to rTempResult
-            void breakupPortion(Primitive2DVector& rTempResult, sal_uInt32 nIndex, sal_uInt32 nLength);
+            void breakupPortion(Primitive2DVector& rTempResult, sal_uInt32 nIndex, sal_uInt32 nLength, bool bWordLineMode);
 
             /// breakup complete primitive
             void breakup(BreakupUnit aBreakupUnit);
@@ -65,22 +64,19 @@ namespace drawinglayer
             virtual bool allowChange(sal_uInt32 nCount, basegfx::B2DHomMatrix& rNewTransform, sal_uInt32 nIndex, sal_uInt32 nLength);
 
             /// allow read access to evtl. useful local parts
-            const TextSimplePortionPrimitive2D* getCastedSource() const { return mpSource; }
             const TextLayouterDevice& getTextLayouter() const { return maTextLayouter; }
             const basegfx::tools::B2DHomMatrixBufferedOnDemandDecompose& getDecTrans() const { return maDecTrans; }
+            const TextSimplePortionPrimitive2D& getSource() const { return mrSource; }
 
         public:
-            TextBreakupHelper(const Primitive2DReference& rxSource);
+            TextBreakupHelper(const TextSimplePortionPrimitive2D& rSource);
             virtual ~TextBreakupHelper();
 
             /// get result
             const Primitive2DSequence& getResult(BreakupUnit aBreakupUnit = BreakupUnit_character) const;
-
-            /// data read access
-            const Primitive2DReference& getSource() const { return mxSource; }
         };
 
-	} // end of namespace primitive2d
+    } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
