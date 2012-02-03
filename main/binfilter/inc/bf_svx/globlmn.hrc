@@ -4717,39 +4717,6 @@
 	Text[ he ] = "~Support";\
 	
 
-#define ITEM_HELP_ONLINE_REGISTRATION \
-    Identifier = SID_ONLINE_REGISTRATION ; \
-	Command = ".uno:OnlineRegistrationDlg" ; \
-    HelpID = SID_ONLINE_REGISTRATION ; \
-    Text [ de ] = "~Registrierung..." ; \
-    Text [ en-US ] = "~Registration..." ; \
-	Text [ x-comment ] = " ";	\
-	Text[ pt ] = "~Registo...";\
-	Text[ ru ] = "Регистрация...";\
-	Text[ el ] = "Δή~λωση...";\
-	Text[ nl ] = "~Registratie...";\
-	Text[ fr ] = "Enregistrement...";\
-	Text[ es ] = "~Registro...";\
-	Text[ fi ] = "~Rekisteröityminen...";\
-	Text[ ca ] = "~Registre...";\
-	Text[ it ] = "~Registrazione...";\
-	Text[ cs ] = "Registrace...";\
-	Text[ sk ] = "Re~gistrácia...";\
-	Text[ da ] = "~Registrering...";\
-	Text[ sv ] = "~Registrering...";\
-	Text[ pl ] = "~Rejestracja...";\
-	Text[ pt-BR ] = "~Registro..";\
-	Text[ th ] = "~ลงทะเบียน...";\
-	Text[ ja ] = "登録(~R)...";\
-	Text[ ko ] = "Suite 웹 등록(~R)...";\
-	Text[ zh-CN ] = "注册(~R)...";\
-	Text[ zh-TW ] = "註冊(~R)...";\
-	Text[ tr ] = "Kayıt...";\
-	Text[ hi-IN ] = "~रिजिस्टरी...";\
-	Text[ ar ] = "...تسجيل";\
-	Text[ he ] = "‮הרשמה...‬";\
-	
-
 #define ITEM_HELP_CHANNELS \
     Identifier = SID_CHANNELS ; \
     HelpID = SID_CHANNELS ; \
@@ -4854,10 +4821,6 @@
 				MenuItem\
                 {\
 					ITEM_HELP_SUPPORTPAGE\
-				};\
-				MenuItem\
-                {\
-					ITEM_HELP_ONLINE_REGISTRATION\
 				};\
                 MenuItem\
                 {\

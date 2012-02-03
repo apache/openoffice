@@ -357,7 +357,6 @@ LINKLINKFILES= \
    text$/shared$/01$/06990000.xhp \
    text$/shared$/01$/07010000.xhp \
    text$/shared$/01$/07080000.xhp \
-   text$/shared$/01$/08060100.xhp \
    text$/shared$/01$/about_meta_tags.xhp \
    text$/shared$/01$/digitalsignatures.xhp \
    text$/shared$/01$/extensionupdate.xhp \
