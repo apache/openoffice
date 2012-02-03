@@ -221,14 +221,6 @@ shell SfxApplication
 		ExecMethod = OfaExec_Impl;
 	]
 
-    //----------------------------------------------------------------------
-
-	SID_ONLINE_REGISTRATION
-	[
-		ExecMethod = OfaExec_Impl;
-		StateMethod = OfaState_Impl;
-	]
-
 	//----------------------------------------------------------------------
 
 	SID_OFFICE_CHECK_PLZ

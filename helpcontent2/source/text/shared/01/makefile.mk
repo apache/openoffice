@@ -307,7 +307,6 @@ XHPFILES = \
    06990000.xhp \
    07010000.xhp \
    07080000.xhp \
-   08060100.xhp \
    about_meta_tags.xhp \
    digitalsignatures.xhp \
    extensionupdate.xhp \
@@ -334,7 +333,7 @@ XHPFILES = \
    xformsdatachange.xhp \
    xformsdataname.xhp \
    xformsdatatab.xhp 
-	
+
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
