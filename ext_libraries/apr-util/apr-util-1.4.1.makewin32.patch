@@ -47,48 +47,48 @@
 +))
 +
 +$(eval $(call gb_Library_add_cobjects,apr-util,\
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_brigade \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_alloc \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_eos \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_file \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_flush \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_heap \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_mmap \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_pipe \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_pool \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_refcount \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_simple \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_socket \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/crypto/apr_crypto \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/crypto/apr_md4 \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/crypto/apr_md5 \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/crypto/apr_sha1 \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/crypto/getuuid \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/crypto/uuid \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/dbd/apr_dbd \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/dbm/apr_dbm \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/dbm/apr_dbm_sdbm \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm_hash \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm_lock \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm_pair \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/encoding/apr_base64 \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/hooks/apr_hooks \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/ldap/apr_ldap_stub \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/ldap/apr_ldap_url \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/memcache/apr_memcache \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/misc/apr_date \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/misc/apr_queue \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/misc/apr_reslist \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/misc/apr_rmm \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/misc/apr_thread_pool \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/misc/apu_dso \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/misc/apu_version \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/strmatch/apr_strmatch \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/uri/apr_uri \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/xlate/xlate \
-+	apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/xml/apr_xml \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_brigade \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_alloc \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_eos \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_file \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_flush \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_heap \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_mmap \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_pipe \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_pool \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_refcount \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_simple \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/buckets/apr_buckets_socket \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/crypto/apr_crypto \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/crypto/apr_md4 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/crypto/apr_md5 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/crypto/apr_sha1 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/crypto/getuuid \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/crypto/uuid \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/dbd/apr_dbd \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/dbm/apr_dbm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/dbm/apr_dbm_sdbm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm_hash \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm_lock \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/dbm/sdbm/sdbm_pair \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/encoding/apr_base64 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/hooks/apr_hooks \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/ldap/apr_ldap_stub \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/ldap/apr_ldap_url \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/memcache/apr_memcache \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/misc/apr_date \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/misc/apr_queue \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/misc/apr_reslist \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/misc/apr_rmm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/misc/apr_thread_pool \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/misc/apu_dso \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/misc/apu_version \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/strmatch/apr_strmatch \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/uri/apr_uri \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/xlate/xlate \
++	apr-util/$(INPATH)/misc/build/apr-util-1.4.1/xml/apr_xml \
 +))
 +
 +# vim: set noet sw=4 ts=4:
@@ -186,7 +186,7 @@
 +# * 
 +# *************************************************************/
 +
-+$(eval $(call gb_Package_Package,apr-util_inc,$(EXT_LIBRARIES)/apr-util/$(OUTPATH)/misc/build/apr-util-1.4.1/include))
++$(eval $(call gb_Package_Package,apr-util_inc,$(EXT_LIBRARIES)/apr-util/$(INPATH)/misc/build/apr-util-1.4.1/include))
 +$(eval $(call gb_Package_add_files, apr-util_inc, inc/apr-util,        \
 +       apu.h                                                           \
 +       apr_uri.h                                                       \
