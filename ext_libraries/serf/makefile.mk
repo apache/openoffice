@@ -51,7 +51,7 @@ BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 
 .ELSE
 
-.IF "$(OS)"=="MACOSX"
+.IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD"
 # Do not link against expat.  It is not necessary (apr-util is already linked against it)
 # and does not work (we use a different expat library schema.)
 PATCH_FILES=$(TARFILE_NAME).mac.patch
