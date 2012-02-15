@@ -272,7 +272,7 @@ BEGIN
 	$isopensourceproduct = 1;
 	$manufacturer = "";
 	$longmanufacturer = "";
-	$sundirname = "Oracle";
+	$sundirname = "Apache";
 	$codefilename = "codes.txt";
 	$componentfilename = "components.txt";	
 	$productcode = "";
