@@ -71,7 +71,7 @@ OpenOffice
 			REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
 			ADDSYSTEMINTEGRATION 1
 			EVAL
-			FILEFORMATNAME Apache OpenOffice
+			FILEFORMATNAME OpenOffice.org
 			FILEFORMATVERSION 1.0
 			WRITERCOMPATIBILITYVERSIONOOO11 OpenOffice.org 1.1
 			PACKAGEVERSION 3.4.0
@@ -134,7 +134,7 @@ OpenOffice_wJRE
 			REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
 			ADDSYSTEMINTEGRATION 1
 			EVAL
-			FILEFORMATNAME Apache OpenOffice
+			FILEFORMATNAME OpenOffice.org
 			FILEFORMATVERSION 1.0
 			WRITERCOMPATIBILITYVERSIONOOO11 OpenOffice.org 1.1
 			PACKAGEVERSION 3.4.0
@@ -204,7 +204,7 @@ OpenOffice_Dev
 			ODFNOTIFYURL http://odfnotify.services.openoffice.org/OOo3.0/notification.jsp?version=ODF
 			ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,javaversion2.dat,userland.txt,version.lst
 			EVAL
-			FILEFORMATNAME Apache OpenOffice
+			FILEFORMATNAME OpenOffice.org
 			FILEFORMATVERSION 1.0
 			WRITERCOMPATIBILITYVERSIONOOO11 OpenOffice.org 1.1
 			PACKAGEVERSION 3.4.0
