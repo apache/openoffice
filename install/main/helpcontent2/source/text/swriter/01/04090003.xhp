@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textswriter0104090003xml" indexer="include">
+<title id="tit" xml-lang="en-US">Functions</title>
+<filename>/text/swriter/01/04090003.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="funktionen">
+<bookmark xml-lang="en-US" branch="hid/SW_HID_FLD_FUNC" id="bm_id3156382" localize="false"/>
+<paragraph role="heading" id="hd_id3149123" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/04090003.xhp" name="Functions">Functions</link></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_FUNC:ED_FUNCNAME" id="bm_id3149875" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_FUNC:ED_FUNCVALUE" id="bm_id3150251" localize="false"/>
+<paragraph role="paragraph" id="par_id3150343" xml-lang="en-US" l10n="U" oldref="45"><ahelp hid="SW_EDIT_TP_FLD_FUNC_ED_FUNCVALUE" visibility="hidden">Sets additional function parameters for fields. The type of parameter depends on the field type that you select.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3151242" xml-lang="en-US" l10n="U" oldref="2">Depending on the field type that you select, you can assign conditions to certain functions. For example, you can define a field that executes a macro when you click the field in the document, or a condition that, when met, hides a field. You can also define placeholder fields that insert graphics, tables, frames and other objects into your document when needed.</paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/swriter/00/00000404.xhp#feldfunktionen"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_FUNC:LB_FUNCTYPE" id="bm_id3146964" localize="false"/>
+<paragraph role="paragraph" id="par_id0902200804352037" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Lists the available field types. To add a field to your document, click a field type, click a field in the <emph>Select </emph>list, and then click <emph>Insert</emph>.</ahelp></paragraph>
+<embed href="text/swriter/01/04090001.xhp#feldtyp"/>
+<table id="tbl_id3147403">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id3150537" xml-lang="en-US" l10n="U" oldref="3">Type</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3155623" xml-lang="en-US" l10n="U" oldref="4">Meaning</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3152999" xml-lang="en-US" l10n="U" oldref="5">Conditional text</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149881" xml-lang="en-US" l10n="U" oldref="6">Inserts text if a certain <link href="text/swriter/01/04090200.xhp" name="condition">condition</link> is met. For example, enter "sun eq 1" in the <emph>Condition</emph> box, and then the text that you want to insert when the variable "sun" equals "1" in the <emph>Then </emph>box. If you want, you can also enter the text that you want to display when this condition is not met in the <emph>Else</emph> box. To define the variable "sun", click the <link href="text/swriter/01/04090005.xhp" name="Variables"><emph>Variables</emph></link> tab, select "Set variable", type "sun" in the<emph> Name</emph> box, and its value in the<emph> Value</emph> box.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153719" xml-lang="en-US" l10n="U" oldref="47">Input list</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147564" xml-lang="en-US" l10n="U" oldref="48">Inserts a text field that displays one item from a list. You can add, edit, and remove items, and change their order in the list. Click an <emph>Input list</emph> field in your document or press Ctrl+Shift+F9 to display the <link href="text/swriter/01/04090003.xhp" name="Choose Item"><emph>Choose Item</emph></link> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153146" xml-lang="en-US" l10n="U" oldref="7">Input field</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149287" xml-lang="en-US" l10n="U" oldref="8">Inserts a text field that you can open by <link href="text/swriter/01/04090100.xhp" name="clicking">clicking</link> it in the document. You can then change the text that is displayed.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154691" xml-lang="en-US" l10n="U" oldref="9">Execute macro</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147515" xml-lang="en-US" l10n="U" oldref="10">Inserts a text field that runs a macro when you click the field in the document. To assign a macro to the field, click the <emph>Macro</emph> button. </paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3152946" xml-lang="en-US" l10n="U" oldref="11">Placeholder</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153527" xml-lang="en-US" l10n="U" oldref="12">Inserts a placeholder field in the document, for example, for graphics. When you click a placeholder field in the document, you are prompted to insert the item that is missing.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150973" xml-lang="en-US" l10n="U" oldref="13">Hidden text</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147524" xml-lang="en-US" l10n="CHG" oldref="14">Inserts a text field that is hidden when the condition that you specify is met. To use this function, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01040600.xhp" name="Text Document - Formatting Aids">%PRODUCTNAME Writer - Formatting Aids</link></emph> and clear the <emph>Fields: Hidden text</emph> check box.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154480" xml-lang="en-US" l10n="U" oldref="15">Hidden Paragraph</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153677" xml-lang="en-US" l10n="CHG" oldref="16">Hides a paragraph when the condition that you specify is met. To use this function, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01040600.xhp" name="Text Document - Formatting Aids">%PRODUCTNAME Writer - Formatting Aids</link></emph> and clear the <emph>Fields: Hidden paragraph</emph> check box.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154192" xml-lang="en-US" l10n="U" oldref="39">Combine characters </paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3159199" xml-lang="en-US" l10n="U" oldref="42">Combines up to 6 characters, so that they behave as a single character. This feature is only available when Asian fonts are supported.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<embed href="text/swriter/01/04090001.xhp#hinweis"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_FUNC:LB_FUNCFORMAT" id="bm_id3149307" localize="false"/>
+<paragraph role="paragraph" id="par_id0902200804352213" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Click the format that you want to apply to the selected field, or click "Additional formats" to define a custom format.</ahelp></paragraph>
+<embed href="text/swriter/01/04090001.xhp#format"/>
+<paragraph role="paragraph" id="par_id3151329" xml-lang="en-US" l10n="U" oldref="17">For function fields, the format field is only used for fields of the type placeholder. Here, the format determines the object for which the placeholder stands.</paragraph>
+<section id="bedingung">
+<paragraph role="heading" id="hd_id3149494" xml-lang="en-US" level="2" l10n="U" oldref="18">Condition</paragraph>
+<paragraph role="paragraph" id="par_id3143281" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SW:EDIT:TP_FLD_DB:ED_DBCONDITION">For fields linked to a <link href="text/swriter/01/04090200.xhp" name="condition">condition</link>, enter the criteria here.</ahelp></paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_FUNC:ED_FUNCCOND1" id="bm_id3151259" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_FUNC:ED_FUNCCOND2" id="bm_id3151262" localize="false"/>
+<paragraph role="heading" id="hd_id3151248" xml-lang="en-US" level="2" l10n="U" oldref="20">Then, Else</paragraph>
+<paragraph role="paragraph" id="par_id3154830" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SW_EDIT_TP_FLD_FUNC_ED_FUNCCOND2">Enter the text to display when the condition is met in the <emph>Then </emph>box, and the text to display when the condition is not met in the <emph>Else </emph>box.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3146865" xml-lang="en-US" l10n="U" oldref="22">You can also insert database fields in the <emph>Then </emph>and <emph>Else </emph>boxes using the format "databasename.tablename.fieldname".</paragraph>
+<paragraph role="note" id="par_id3147583" xml-lang="en-US" l10n="U" oldref="24">If the table or the field name does not exist in a database, nothing is inserted.</paragraph>
+<paragraph role="note" id="par_id3152585" xml-lang="en-US" l10n="U" oldref="23">If you include the quotes in "databasename.tablename.fieldname", the expression is inserted as text.</paragraph>
+<section id="hinweis">
+<paragraph role="heading" id="hd_id3155136" xml-lang="en-US" level="2" l10n="U" oldref="26">Reference</paragraph>
+<paragraph role="paragraph" id="par_id3155149" xml-lang="en-US" l10n="U" oldref="27">Type the text that you want to display in the field. If you are inserting a placeholder field, type the text that you want to display as a help tip when you rest the mouse pointer over the field. </paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147071" xml-lang="en-US" level="2" l10n="CHG" oldref="28">Format<comment>UFI: see spec "Macro Selector..."</comment></paragraph>
+<paragraph role="paragraph" id="par_id3147084" xml-lang="en-US" l10n="U" oldref="29">Select the macro that you want to run when the field is clicked.</paragraph>
+<paragraph role="heading" id="hd_id3154384" xml-lang="en-US" level="2" l10n="U" oldref="30">Macro name</paragraph>
+<paragraph role="paragraph" id="par_id3153351" xml-lang="en-US" l10n="U" oldref="31">Displays the name of the selected macro.</paragraph>
+<paragraph role="heading" id="hd_id3156269" xml-lang="en-US" level="2" l10n="U" oldref="32">Placeholder</paragraph>
+<paragraph role="paragraph" id="par_id3156282" xml-lang="en-US" l10n="U" oldref="33">Type the text that you want to appear in the placeholder field.</paragraph>
+<paragraph role="heading" id="hd_id3150587" xml-lang="en-US" level="2" l10n="U" oldref="34">Hidden text</paragraph>
+<paragraph role="paragraph" id="par_id3149173" xml-lang="en-US" l10n="U" oldref="35">Type the text that you want to hide if a condition is met.</paragraph>
+<paragraph role="heading" id="hd_id3151028" xml-lang="en-US" level="2" l10n="U" oldref="40">Characters</paragraph>
+<paragraph role="paragraph" id="par_id3145771" xml-lang="en-US" l10n="U" oldref="43">Enter the characters that you want to combine. You can combine a maximum of 6 characters. This option is only available for the <emph>Combine characters</emph> field type.</paragraph>
+<paragraph role="heading" id="hd_id3156369" xml-lang="en-US" level="2" l10n="U" oldref="41">Value</paragraph>
+<paragraph role="paragraph" id="par_id3151370" xml-lang="en-US" l10n="U" oldref="44">Enter a value for the selected field.</paragraph>
+<section id="makro">
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_FLD_FUNC:BT_FUNCMACRO" id="bm_id3148889" localize="false"/>
+<paragraph role="heading" id="hd_id3148877" xml-lang="en-US" level="2" l10n="U" oldref="36">Macro</paragraph>
+<paragraph role="paragraph" id="par_id3155912" xml-lang="en-US" l10n="CHG" oldref="37"><ahelp hid="SW_PUSHBUTTON_TP_FLD_FUNC_BT_FUNCMACRO">Opens the <emph>Macro Selector</emph>, where you can choose the macro that will run when you click the selected field in the document.</ahelp> This button is only available for the "Execute macro" function field.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3150111" xml-lang="en-US" l10n="U" oldref="49">The following controls are displayed for <emph>Input list</emph> fields:</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_FUNC:ED_LISTITEM" id="bm_id3155871" localize="false"/>
+<paragraph role="heading" id="hd_id3155860" xml-lang="en-US" level="2" l10n="U" oldref="50">Item</paragraph>
+<paragraph role="paragraph" id="par_id3150688" xml-lang="en-US" l10n="U" oldref="51"><ahelp hid="SW_EDIT_TP_FLD_FUNC_ED_LISTITEM">Enter a new item.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_FLD_FUNC:PB_LISTADD" id="bm_id3147425" localize="false"/>
+<paragraph role="heading" id="hd_id3147413" xml-lang="en-US" level="2" l10n="U" oldref="52">Add</paragraph>
+<paragraph role="paragraph" id="par_id3147473" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="SW_PUSHBUTTON_TP_FLD_FUNC_PB_LISTADD">Adds the <emph>Item</emph> to the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_FUNC:LB_LISTITEMS" id="bm_id3147612" localize="false"/>
+<paragraph role="heading" id="hd_id3147496" xml-lang="en-US" level="2" l10n="U" oldref="54">Items on list</paragraph>
+<paragraph role="paragraph" id="par_id3147618" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="SW_LISTBOX_TP_FLD_FUNC_LB_LISTITEMS">Lists the items. The topmost item is shown in the document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_FLD_FUNC:PB_LISTREMOVE" id="bm_id3149552" localize="false"/>
+<paragraph role="heading" id="hd_id3145263" xml-lang="en-US" level="2" l10n="U" oldref="56">Remove</paragraph>
+<paragraph role="paragraph" id="par_id3149558" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="SW_PUSHBUTTON_TP_FLD_FUNC_PB_LISTREMOVE">Removes the selected item from the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_FLD_FUNC:PB_LISTUP" id="bm_id3155964" localize="false"/>
+<paragraph role="heading" id="hd_id3145126" xml-lang="en-US" level="2" l10n="U" oldref="58">Move Up</paragraph>
+<paragraph role="paragraph" id="par_id3155970" xml-lang="en-US" l10n="U" oldref="59"><ahelp hid="SW_PUSHBUTTON_TP_FLD_FUNC_PB_LISTUP">Moves the selected item up in the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_FLD_FUNC:PB_LISTDOWN" id="bm_id3150562" localize="false"/>
+<paragraph role="heading" id="hd_id3150549" xml-lang="en-US" level="2" l10n="U" oldref="60">Move Down</paragraph>
+<paragraph role="paragraph" id="par_id3156221" xml-lang="en-US" l10n="U" oldref="61"><ahelp hid="SW_PUSHBUTTON_TP_FLD_FUNC_PB_LISTDOWN">Moves the selected item down in the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_FUNC:ED_LISTNAME" id="bm_id3149226" localize="false"/>
+<paragraph role="heading" id="hd_id3149215" xml-lang="en-US" level="2" l10n="U" oldref="62">Name</paragraph>
+<paragraph role="paragraph" id="par_id3147733" xml-lang="en-US" l10n="U" oldref="63"><ahelp hid="SW_EDIT_TP_FLD_FUNC_ED_LISTNAME">Enter a unique name for the <emph>Input list</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_FLD_DROPDOWN:LB_LISTITEMS" id="bm_id3146344" localize="false"/>
+<paragraph role="heading" id="hd_id3146332" xml-lang="en-US" level="2" l10n="U" oldref="64">Choose Item</paragraph>
+<paragraph role="paragraph" id="par_id3147455" xml-lang="en-US" l10n="U" oldref="65">This dialog is shown when you click an <emph>Input list</emph> field in the document. </paragraph>
+<paragraph role="paragraph" id="par_id3149837" xml-lang="en-US" l10n="U" oldref="66"><ahelp hid="SW_LISTBOX_DLG_FLD_DROPDOWN_LB_LISTITEMS">Choose the item that you want to display in the document, then click <emph>OK</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_FLD_DROPDOWN:PB_EDIT" id="bm_id3148848" localize="false"/>
+<paragraph role="heading" id="hd_id3147602" xml-lang="en-US" level="2" l10n="U" oldref="67">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3148855" xml-lang="en-US" l10n="U" oldref="68"><ahelp hid="SW_PUSHBUTTON_DLG_FLD_DROPDOWN_PB_EDIT">Displays the <emph>Edit Fields: Functions</emph> dialog, where you can edit the <emph>Input list</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_FLD_DROPDOWN:PB_NEXT" id="bm_id3155570" localize="false"/>
+<paragraph role="heading" id="hd_id3155558" xml-lang="en-US" level="2" l10n="U" oldref="69">Next</paragraph>
+<paragraph role="paragraph" id="par_id3148434" xml-lang="en-US" l10n="U" oldref="70"><ahelp hid="SW_PUSHBUTTON_DLG_FLD_DROPDOWN_PB_NEXT">Closes the current <emph>Input list</emph> and displays the next, if available.</ahelp> You see this button when you open the <emph>Choose Item</emph> dialog by Ctrl+Shift+F9.</paragraph>
+</body>
+</helpdocument>

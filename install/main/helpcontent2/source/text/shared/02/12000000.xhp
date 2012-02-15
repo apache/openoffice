@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0212000000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Explorer On/Off</title>
+<filename>/text/shared/02/12000000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="explorer">
+<bookmark xml-lang="en-US" branch="hid/.uno:DSBrowserExplorer" id="bm_id6761446" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DSBrowserExplorer" id="bm_id3154682" localize="false"/>
+<paragraph role="heading" id="hd_id3147588" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/12000000.xhp" name="Explorer On/Off">Explorer On/Off</link></paragraph>
+<paragraph role="paragraph" id="par_id3144740" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:DSBrowserExplorer">Turns on and off the view of the data source explorer.</ahelp> The <emph>Explorer On/Off</emph> icon is visible on the <link href="text/shared/main0212.xhp" name="Database Bar">Table Data bar</link>.</paragraph>
+</section>
+<section id="syexplorer">
+<table id="tbl_id3153894">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153114" xml-lang="en-US" l10n="E">
+<image id="img_id3150710" src="res/commandimagelist/sc_dsbrowserexplorer.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150710" xml-lang="en-US">Icon</alt></image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U" oldref="3">Explorer On/Off</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<embed href="text/shared/guide/database_main.xhp#database_main"/>
+<paragraph role="paragraph" id="par_id3145345" xml-lang="en-US" l10n="U" oldref="4">In the data source explorer you see the data sources registered in $[officename] with their queries and tables.</paragraph>
+<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="53">
+<emph>Establishing a connection</emph> - As soon as you select an individual table or query, a connection to the data source is established. Once the connection is opened, the name of the data source, the Queries or Tables entry, and the name of the query or table selected is shown in bold type.</paragraph>
+<section id="kontextmenue">
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_BROWSER_CLOSECONN" id="bm_id3155135" localize="false"/>
+<paragraph role="paragraph" id="par_id3154860" xml-lang="en-US" l10n="CHG" oldref="16"><ahelp hid="." visibility="hidden">Closes the connection to the data source. See <emph>%PRODUCTNAME Base - Connections</emph> in the Options dialog box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_BROWSER_RENAME_ENTRY" id="bm_id3156192" localize="false"/>
+<paragraph role="paragraph" id="par_id3151379" xml-lang="en-US" l10n="CHG" oldref="52"><ahelp hid="." visibility="hidden">To rename an entry, call this command and enter the new name. You can also do this by selecting the entry and pressing F2. The database must support renaming, otherwise this command is not enabled.</ahelp></paragraph>
+<!-- removed HID HID_BROWSER_DSADMINISTRATE -->
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_BROWSER_EDIT_DATABASE" id="bm_id189826" localize="false"/>
+<paragraph role="paragraph" id="par_id273445" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Opens the selected database file for editing.</ahelp></paragraph><comment>i66574 new command "Database Registrations" / but name in UI is "Registered databases"</comment>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_BROWSER_ADMINISTRATE" id="bm_id321665" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_BROWSER_ADMINISTRATE" id="bm_id5135044" localize="false"/>
+<paragraph role="paragraph" id="par_id5943479" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog to add/edit/remove a database file from the list of registered databases. The same dialog opens by choosing <emph>%PRODUCTNAME Base - Databases</emph> in the Options dialog box.</ahelp></paragraph>
+</section>
+</body>
+</helpdocument>

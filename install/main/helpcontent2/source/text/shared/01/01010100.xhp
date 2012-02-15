@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0101010100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Templates and Documents</title>
+<filename>/text/shared/01/01010100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-12-02T10:37:43">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3152937" xml-lang="en-US" level="1" l10n="U" oldref="99"><variable id="vor_und_dok"><link href="text/shared/01/01010100.xhp" name="Templates and Documents">Templates and Documents</link>
+</variable></paragraph>
+<section id="vudintrotext">
+<paragraph role="paragraph" id="par_id3148520" xml-lang="en-US" l10n="U" oldref="117">The <emph>Templates and Documents</emph> dialog allows you to manage your templates and sample documents.</paragraph>
+<paragraph role="paragraph" id="par_id3157898" xml-lang="en-US" l10n="U" oldref="118">To open the <emph>Templates and Documents</emph> dialog, do one of the following:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156414" xml-lang="en-US" l10n="U" oldref="125">Choose <emph>File - New - Templates and Documents</emph>
+</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153114" xml-lang="en-US" l10n="U" oldref="126">Press Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+N.</paragraph>
+</listitem>
+</list>
+</section>
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_TEMPLATEDLG_ICONCTRL" id="bm_id3154317" localize="false"/>
+<paragraph role="heading" id="hd_id3159234" xml-lang="en-US" level="2" l10n="U" oldref="5">Categories</paragraph>
+<paragraph role="paragraph" id="par_id3157958" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid=".">Categories are shown in the box on the left side of the<emph> Templates and Documents</emph> dialog. Click a category to display the files associated with that category in the <emph>Title </emph>box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_TEMPLATEDLG_FILEVIEW" id="bm_id3147275" localize="false"/>
+<paragraph role="heading" id="hd_id3149388" xml-lang="en-US" level="2" l10n="U" oldref="100">Title Box</paragraph>
+<paragraph role="paragraph" id="par_id3150355" xml-lang="en-US" l10n="U" oldref="101"><ahelp hid="HID_TEMPLATEDLG_FILEVIEW">Lists the available templates or documents for the selected category. Select a template or document and, then click <emph>Open</emph>. To preview the document, click the <emph>Preview</emph> button above the box on the right.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_TEMPLATEDLG_TB_BACK" id="bm_id3154897" localize="false"/>
+<paragraph role="heading" id="hd_id3152996" xml-lang="en-US" level="3" l10n="U" oldref="102">Back</paragraph>
+<table id="tbl_id3155449">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153257" xml-lang="en-US" l10n="E">
+<image id="img_id3149784" src="res/sc06301.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149784" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153822" xml-lang="en-US" l10n="U" oldref="103"><ahelp hid="HID_TEMPLATEDLG_TB_BACK">Moves back to the previous window in the dialog.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_TEMPLATEDLG_TB_PREV" id="bm_id3150275" localize="false"/>
+<paragraph role="heading" id="hd_id3148685" xml-lang="en-US" level="3" l10n="U" oldref="104">Up One Level</paragraph>
+<table id="tbl_id3150976">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156152" xml-lang="en-US" l10n="E">
+<image id="img_id3149762" src="svtools/res/up_small.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149762" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U" oldref="105"><ahelp hid="HID_TEMPLATEDLG_TB_PREV">Moves up one folder level, if available.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_TEMPLATEDLG_TB_PRINT" id="bm_id3159414" localize="false"/>
+<paragraph role="heading" id="hd_id3147264" xml-lang="en-US" level="3" l10n="U" oldref="106">Print</paragraph>
+<table id="tbl_id3147559">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154346" xml-lang="en-US" l10n="E">
+<image id="img_id3148663" src="res/commandimagelist/sc_print.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148663" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="U" oldref="107"><ahelp hid="HID_TEMPLATEDLG_TB_PRINT">Prints the selected template or document.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3149651" xml-lang="en-US" level="2" l10n="U" oldref="9">Preview</paragraph>
+<paragraph role="paragraph" id="par_id3148799" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_TEMPLATEDLG_TB_PRINT">Allows you to preview the template or document, as well as view the document properties.</ahelp> To preview the template or document, click the <emph>Preview</emph> icon at the top of the Preview box on the right side of the dialog. To view the properties of the document, click the <emph>Document Properties</emph> icon at the top of the Preview box.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_TEMPLATEDLG_TB_PREVIEW" id="bm_id3157322" localize="false"/>
+<paragraph role="heading" id="hd_id3149807" xml-lang="en-US" level="3" l10n="U" oldref="108">Preview</paragraph>
+<table id="tbl_id3151178">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150741" xml-lang="en-US" l10n="E">
+<image id="img_id3148451" src="svtools/res/preview_small.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148451" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151043" xml-lang="en-US" l10n="U" oldref="109"><ahelp hid="HID_TEMPLATEDLG_TB_PREVIEW">Allows you to preview the selected template or document.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_TEMPLATEDLG_TB_DOCINFO" id="bm_id3155996" localize="false"/>
+<paragraph role="heading" id="hd_id3145606" xml-lang="en-US" level="3" l10n="U" oldref="110">Document Properties</paragraph>
+<table id="tbl_id3152935">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147353" xml-lang="en-US" l10n="E">
+<image id="img_id3153367" src="svtools/res/info_small.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153367" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153210" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_TEMPLATEDLG_TB_DOCINFO">Displays the properties for the selected template or document.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svtools:PushButton:DLG_DOCTEMPLATE:BTN_DOCTEMPLATE_MANAGE" id="bm_id3153188" localize="false"/>
+<paragraph role="heading" id="hd_id3153142" xml-lang="en-US" level="2" l10n="U" oldref="111">Organize</paragraph>
+<paragraph role="paragraph" id="par_id3156441" xml-lang="en-US" l10n="U" oldref="112"><ahelp hid="SVTOOLS_PUSHBUTTON_DLG_DOCTEMPLATE_BTN_DOCTEMPLATE_MANAGE">Adds, removes, or rearranges templates or sample documents.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:PushButton:DLG_DOCTEMPLATE:BTN_DOCTEMPLATE_EDIT" id="bm_id3145364" localize="false"/>
+<paragraph role="heading" id="hd_id3149483" xml-lang="en-US" level="2" l10n="U" oldref="113">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3154470" xml-lang="en-US" l10n="U" oldref="114"><ahelp hid="SVTOOLS_PUSHBUTTON_DLG_DOCTEMPLATE_BTN_DOCTEMPLATE_EDIT">Opens the selected template for editing.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147428" xml-lang="en-US" level="2" l10n="U" oldref="115">Open</paragraph>
+<paragraph role="paragraph" id="par_id3148617" xml-lang="en-US" l10n="U" oldref="116"><ahelp hid="SVTOOLS_PUSHBUTTON_DLG_DOCTEMPLATE_BTN_DOCTEMPLATE_EDIT">Opens the selected document or creates a document based on the selected template.</ahelp></paragraph>
+<paragraph role="note" id="par_id3155306" xml-lang="en-US" l10n="CHG" oldref="98">To add another folder to the template path, choose <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010300.xhp" name="$[officename] - Paths"><emph>$[officename] - Paths</emph></link>, and then enter the path.</paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/guide/aaa_start.xhp#aaa_start"/>
+<paragraph role="paragraph" id="par_id3149379" xml-lang="en-US" l10n="C"><link href="text/shared/01/01100000.xhp" name="File properties">File properties</link></paragraph>
+<paragraph role="paragraph" id="par_id3147396" xml-lang="en-US" l10n="C"><link href="text/shared/01/01110100.xhp" name="Template Management">Template Management</link></paragraph>
+</section>
+</body>
+</helpdocument>

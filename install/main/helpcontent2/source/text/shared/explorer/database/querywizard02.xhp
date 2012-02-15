@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasequerywizard02xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Query Wizard - Sorting Order</title>
+<filename>/text/shared/explorer/database/querywizard02.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-05T16:52:34">UFI: new Query Wizard page 2</created>
+<lastedited date="2005-03-02T09:49:38">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<section id="sortingorder">
+<paragraph role="heading" id="par_idN10543" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/querywizard02.xhp">Query Wizard - Sorting Order</link></paragraph>
+<paragraph role="paragraph" id="par_idN10553" xml-lang="en-US" l10n="NEW">Specifies the sorting order for the data records in your query.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_SORT1" id="bm_id1624805" localize="false"/>
+<paragraph role="heading" id="par_idN10556" xml-lang="en-US" level="2" l10n="NEW">Sort by</paragraph>
+<paragraph role="paragraph" id="par_idN105B2" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the field by which the created query is sorted.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTASCEND1" id="bm_id7582934" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTASCEND2" id="bm_id5498825" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTASCEND3" id="bm_id9416486" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTASCEND4" id="bm_id3401287" localize="false"/>
+<paragraph role="heading" id="par_idN1055C" xml-lang="en-US" level="3" l10n="NEW">Ascending</paragraph>
+<paragraph role="paragraph" id="par_idN105BF" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to sort in alphabetically or numerically ascending order.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTDESCEND1" id="bm_id4680013" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTDESCEND2" id="bm_id9574571" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTDESCEND3" id="bm_id5775933" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTDESCEND4" id="bm_id5564439" localize="false"/>
+<paragraph role="heading" id="par_idN10562" xml-lang="en-US" level="3" l10n="NEW">Descending</paragraph>
+<paragraph role="paragraph" id="par_idN105CC" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to sort in alphabetically or numerically descending order.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_SORT2" id="bm_id9547715" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_SORT3" id="bm_id5757316" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_SORT4" id="bm_id6009094" localize="false"/>
+<paragraph role="heading" id="par_idN10568" xml-lang="en-US" level="2" l10n="NEW">And then by</paragraph>
+<paragraph role="paragraph" id="par_idN105D9" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies additional fields by which the created query is sorted, if previous sort fields are equal.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN1056E" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/querywizard03.xhp" name="Query Wizard - Search conditions">Query Wizard - Search conditions</link></paragraph>
+</body>
+</helpdocument>

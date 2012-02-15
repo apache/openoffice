@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0105340400xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Data Sources</title>
+<filename>/text/shared/01/05340400.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="umgang">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153116"><bookmark_value>data source browser</bookmark_value>
+<bookmark_value>tables in databases;browsing and editing</bookmark_value>
+<bookmark_value>databases; editing tables</bookmark_value>
+<bookmark_value>editing; database tables and queries</bookmark_value>
+<bookmark_value>queries; editing in data source view</bookmark_value>
+</bookmark><comment>mw deleted "database tables," and changed "tables in databases;"</comment><paragraph role="paragraph" id="par_id3153116" xml-lang="en-US" l10n="E" oldref="1" localize="false"/>
+<paragraph role="heading" id="hd_id3153323" xml-lang="en-US" level="1" l10n="U" oldref="68"><link href="text/shared/01/05340400.xhp" name="Data Sources">Data Sources</link></paragraph>
+<paragraph role="paragraph" id="par_id3149511" xml-lang="en-US" l10n="U" oldref="2">This section contains information on browsing and editing database tables.</paragraph>
+</section>
+<embed href="text/shared/guide/database_main.xhp#database_main"/>
+<paragraph role="note" id="par_id3149150" xml-lang="en-US" l10n="U" oldref="51">You cannot use the data source browser on a database table that is open in Design view.</paragraph>
+<paragraph role="heading" id="hd_id3149235" xml-lang="en-US" level="2" l10n="U" oldref="8">Data source browser</paragraph>
+<paragraph role="paragraph" id="par_id3154897" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".">The commands for the data source browser are found on the <link href="text/shared/01/05340400.xhp" name="Database Bar">Table Data bar</link> and in <link href="text/shared/01/05340400.xhp" name="context menus">context menus</link>.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154514" xml-lang="en-US" level="3" l10n="U" oldref="12">Selecting records</paragraph>
+<paragraph role="paragraph" id="par_id3149514" xml-lang="en-US" l10n="U" oldref="34">To select a record in a database table, click the row header, or click a row header, and then use the Up or Down arrow keys.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_TABBROWSER" id="bm_id6056703" localize="false"/><paragraph role="paragraph" id="par_id7812433001" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select database records. Drag-and-drop rows or cells to the document to insert contents. Drag-and-drop column headers to insert fields.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149578" xml-lang="en-US" l10n="U" oldref="13">The following table describes how to select individual elements in the data source browser:</paragraph>
+<table id="tbl_id3149795">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3158432" xml-lang="en-US" l10n="U" oldref="66">Selection</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150670" xml-lang="en-US" l10n="U" oldref="67">Action</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153332" xml-lang="en-US" l10n="U" oldref="14">Record</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153700" xml-lang="en-US" l10n="U" oldref="15">Click the row header</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149575" xml-lang="en-US" l10n="U" oldref="16">Several records or removing a selection</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149295" xml-lang="en-US" l10n="U" oldref="17">Hold down <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>and click the row header</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152360" xml-lang="en-US" l10n="U" oldref="18">Column</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153960" xml-lang="en-US" l10n="U" oldref="19">Click the column header</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="20">Data field</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="21">Click in the data field</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="22">Entire table</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156422" xml-lang="en-US" l10n="U" oldref="23">Click the row header of the column headings</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3154822" xml-lang="en-US" level="3" l10n="CHG" oldref="49">Table Data toolbar (editing table data)</paragraph>
+<table id="tbl_id3145608">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151041" xml-lang="en-US" l10n="E">
+<image id="img_id3150740" src="res/commandimagelist/sc_editdoc.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150740" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3158410" xml-lang="en-US" l10n="U" oldref="7">Allows you to edit, add, or delete records from the database table.<comment>removed 3  ancient paras</comment></paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3152463" xml-lang="en-US" level="3" l10n="U" oldref="53">Cutting, copying and pasting data</paragraph>
+<paragraph role="paragraph" id="par_id3149287" xml-lang="en-US" l10n="CHG" oldref="54">You can cut, copy, and paste records in <emph>Data Source</emph> view. The Data Source browser also supports the dragging and dropping of records, or text and numbers from other $[officename] files.</paragraph>
+<paragraph role="paragraph" id="par_id3146921" xml-lang="en-US" l10n="U" oldref="64">You cannot drag and drop to Yes/No, binary, image, or counting table fields.</paragraph>
+<paragraph role="note" id="par_id3149064" xml-lang="en-US" l10n="U" oldref="63">Drag and drop only works in <emph>Edit</emph> mode.</paragraph>
+<embed href="text/shared/main0212.xhp#datenbank"/>
+<paragraph role="heading" id="hd_id3147295" xml-lang="en-US" level="3" l10n="U" oldref="24">Navigating in the Data Source Browser</paragraph>
+<paragraph role="paragraph" id="par_id3152598" xml-lang="en-US" l10n="U" oldref="25">Use the Form Navigation bar at the bottom of the Data Source view to navigate between different records.</paragraph>
+<paragraph role="heading" id="hd_id3145263" xml-lang="en-US" level="3" l10n="U" oldref="35">First record</paragraph>
+<table id="tbl_id3149260">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149266" xml-lang="en-US" l10n="E">
+<image id="img_id3156060" src="res/commandimagelist/sc_firstrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156060" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_GRID_TRAVEL_FIRST" id="bm_id3152821005" localize="false"/>
+<paragraph role="paragraph" id="par_id3151173" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid=".">Go to the first record in the table.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3149417" xml-lang="en-US" level="3" l10n="U" oldref="37">Previous record</paragraph>
+<table id="tbl_id3153223">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147484" xml-lang="en-US" l10n="E">
+<image id="img_id3156736" src="res/commandimagelist/sc_prevrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156736" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_GRID_TRAVEL_PREV" id="bm_id3152821002" localize="false"/>
+<paragraph role="paragraph" id="par_id3153280" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid=".">Go to the previous record in the table.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3153053" xml-lang="en-US" level="3" l10n="U" oldref="39">Record number</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_GRID_TRAVEL_ABSOLUTE" id="bm_id3152821001" localize="false"/>
+<paragraph role="paragraph" id="par_id3155851" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid=".">Type the number of the record that you want to display, and then press Enter.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3157876" xml-lang="en-US" level="3" l10n="U" oldref="41">Next record</paragraph>
+<table id="tbl_id3148880">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151075" xml-lang="en-US" l10n="E">
+<image id="img_id3153214" src="res/commandimagelist/sc_nextrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153214" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_GRID_TRAVEL_NEXT" id="bm_id3152821003" localize="false"/>
+<paragraph role="paragraph" id="par_id3166414" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid=".">Go to the next record in the table.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3154015" xml-lang="en-US" level="3" l10n="U" oldref="43">Last record</paragraph>
+<table id="tbl_id3153512">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153838" xml-lang="en-US" l10n="E">
+<image id="img_id3156320" src="res/commandimagelist/sc_lastrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156320" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_GRID_TRAVEL_LAST" id="bm_id3152821004" localize="false"/>
+<paragraph role="paragraph" id="par_id3147175" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid=".">Go to the last record in the table.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3145162" xml-lang="en-US" level="3" l10n="U" oldref="45">New record</paragraph>
+<table id="tbl_id3147496">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151019" xml-lang="en-US" l10n="E">
+<image id="img_id3154636" src="svtools/res/ed03.png" width="0.1528inch" height="0.1528inch"><alt id="alt_id3154636" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_GRID_TRAVEL_NEW" id="bm_id3152821006" localize="false"/>
+<paragraph role="paragraph" id="par_id3146913" xml-lang="en-US" l10n="U" oldref="46"><ahelp hid=".">Inserts a new record into the current table.</ahelp> To create a record, click the asterisk (*) button at the bottom of the table view. An empty row is added at the end of the table.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3150656" xml-lang="en-US" level="3" l10n="U" oldref="47">Number of records</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_GRID_NUMBEROFRECORDS" id="bm_id3152821013" localize="false"/>
+<paragraph role="paragraph" id="par_id3148483" xml-lang="en-US" l10n="U" oldref="48"><ahelp hid=".">Displays the number of records. For example, "Record 7 of 9(2)" indicates that two records (2) are selected in a table containing 9 records, and that the cursor is in record number 7.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151357" xml-lang="en-US" level="3" l10n="U" oldref="26">Organizing tables</paragraph>
+<paragraph role="paragraph" id="par_id3153357" xml-lang="en-US" l10n="U" oldref="28">To access the commands for formatting the table, right-click a column header, or a row header.</paragraph>
+<paragraph role="heading" id="hd_id3148405" xml-lang="en-US" level="2" l10n="U" oldref="3"><link href="text/shared/01/05340402.xhp" name="Table Format">Table Format</link></paragraph>
+<embed href="text/shared/01/05340402.xhp#tabformtext"/>
+<paragraph role="heading" id="hd_id3083283" xml-lang="en-US" level="2" l10n="U" oldref="4"><link href="text/shared/01/05340100.xhp" name="Row Height">Row Height</link></paragraph>
+<embed href="text/shared/01/05340100.xhp#zeilenhoehetext"/>
+<embed href="text/shared/01/05340404.xhp#zeilenloeschen"/>
+<paragraph role="heading" id="hd_id3150321" xml-lang="en-US" level="2" l10n="U" oldref="5"><link href="text/shared/01/05340405.xhp" name="Column Format">Column Format</link></paragraph>
+<embed href="text/shared/01/05340405.xhp#spaltformtext"/>
+<paragraph role="heading" id="hd_id3147341" xml-lang="en-US" level="2" l10n="U" oldref="6"><link href="text/shared/01/05340200.xhp" name="Column Width">Column Width</link></paragraph>
+<embed href="text/shared/01/05340200.xhp#spaltetext"/>
+<embed href="text/shared/01/05340500.xhp#feldausblenden"/>
+<embed href="text/shared/01/05340600.xhp#alleeinblenden"/>
+</body>
+</helpdocument>

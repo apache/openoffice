@@ -1,0 +1,44 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_rendering_PanoseProportion_idl__
+#define __com_sun_star_rendering_PanoseProportion_idl__
+
+module com { module sun { module star { module rendering {
+
+constants PanoseProportion
+{
+	const byte ANYTHING=0;
+	const byte NO_FIT=1;
+	const byte OLD_SKOOL=2;
+	const byte MODERN=3;
+	const byte EVEN_WIDTH=4;
+	const byte EXPANDED=5;
+	const byte CONDENSED=6;
+	const byte VERY_EXPANDED=7;
+	const byte VERY_CONDENSED=8;
+	const byte MONO_SPACED=9;
+};
+
+}; }; }; };
+
+#endif

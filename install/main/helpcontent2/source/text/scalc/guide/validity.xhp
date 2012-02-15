@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidevalidityxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Validity of Cell Contents</title>
+<filename>/text/scalc/guide/validity.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-03-07T11:48:35">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156442"><bookmark_value>values; limiting on input</bookmark_value>
+<bookmark_value>limits; specifying value limits on input</bookmark_value>
+<bookmark_value>permitted cell contents</bookmark_value>
+<bookmark_value>data validity</bookmark_value>
+<bookmark_value>validity</bookmark_value>
+<bookmark_value>cells; validity</bookmark_value>
+<bookmark_value>error messages; defining for incorrect input</bookmark_value>
+<bookmark_value>actions in case of incorrect input</bookmark_value>
+<bookmark_value>Help tips; defining text for cell input</bookmark_value>
+<bookmark_value>comments;help text for cells</bookmark_value>
+<bookmark_value>cells; defining input help</bookmark_value>
+<bookmark_value>macros; running when incorrect input</bookmark_value>
+<bookmark_value>data; validity check</bookmark_value>
+</bookmark><comment>mw changed "limit...;"</comment>
+<paragraph role="heading" id="hd_id3156442" xml-lang="en-US" level="1" l10n="U" oldref="22"><variable id="validity"><link href="text/scalc/guide/validity.xhp" name="Validity of Cell Contents">Validity of Cell Contents</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3156283" xml-lang="en-US" l10n="U" oldref="2">For each cell, you can define entries to be valid. Invalid entries to a cell will be rejected.</paragraph>
+<paragraph role="warning" id="par_id3145252" xml-lang="en-US" l10n="U" oldref="3">The validity rule is activated when a new value is entered. If an invalid value has already been inserted into the cell, or if you insert a value in the cell either with drag-and-drop or by copying and pasting, the validity rule will not take effect.</paragraph>
+<paragraph role="note" id="par_id5174718" xml-lang="en-US" l10n="NEW">You can choose <emph>Tools - Detective</emph> at any time and choose the command <link href="text/scalc/01/06030800.xhp" name="Mark Invalid Data"><emph>Mark Invalid Data</emph></link> to display which cells contain invalid values.</paragraph>
+<paragraph role="heading" id="hd_id3155603" xml-lang="en-US" level="2" l10n="U" oldref="5">Using Cell Contents Validity</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="6">Select the cells for which you want to define a new validity rule.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3148837" xml-lang="en-US" l10n="U" oldref="8">Choose <item type="menuitem">Data - Validity</item>. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3156020" xml-lang="en-US" l10n="U" oldref="9">On the <emph>Criteria</emph> tab page, enter the conditions for new values entered into cells. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3159208" xml-lang="en-US" l10n="U" oldref="10">In the <emph>Allow</emph> field, select an option.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3153011" xml-lang="en-US" l10n="U" oldref="11">If you select "Whole Numbers", values such as "12.5" are not allowed. Choosing "Date" allows date information both in the local date format as well as in the form of a <link href="text/sbasic/shared/03030101.xhp" name="serial date">serial date</link>. Similarly, the "Time" condition permits time values such as "12:00" or serial time numbers. "Text Length" stipulates that cells are allowed to contain text only.</paragraph>
+<paragraph role="paragraph" id="par_id9224829" xml-lang="en-US" l10n="NEW">Select "List" to enter a list of valid entries.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3149317" xml-lang="en-US" l10n="U" oldref="13">Select the next condition under <emph>Data</emph>. According to what you choose, additional options will be selectable.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3151389" xml-lang="en-US" l10n="U" oldref="15">After you have determined the conditions for cell validity, you can use the other two tab pages to create message boxes:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3159261" xml-lang="en-US" l10n="U" oldref="16">On the <emph>Input Help</emph> tab page, enter the title and the text of the tip, which will then be displayed if the cell is selected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156396" xml-lang="en-US" l10n="U" oldref="17">On the <emph>Error Alert</emph> tab page, select the action to be carried out in the event of an error.</paragraph>
+<paragraph role="listitem" id="par_id3147416" xml-lang="en-US" l10n="U" oldref="18">If you select "Stop" as the action, invalid entries are not accepted, and the previous cell contents are retained.</paragraph>
+<paragraph role="listitem" id="par_id3150033" xml-lang="en-US" l10n="U" oldref="19">Select "Warning" or "Information" to display a dialog in which the entry can either be canceled or accepted.</paragraph>
+<paragraph role="listitem" id="par_id3149947" xml-lang="en-US" l10n="U" oldref="20">If you select "Macro", then by using the <emph>Browse</emph> button you can specify a macro to be run in the event of an error.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3149011" xml-lang="en-US" l10n="U" oldref="35">To display the error message, select <emph>Show error message when invalid values are entered</emph>. </paragraph>
+<embed href="text/scalc/01/12120300.xhp#examplemakro"/>
+<paragraph role="note" id="par_id3148586" xml-lang="en-US" l10n="U" oldref="21">After changing the action for a cell on the <emph>Error Alert</emph> tab page and closing the dialog with OK, you must first select another cell before the change takes effect.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3154805" xml-lang="en-US" l10n="U" oldref="30"><link href="text/scalc/01/12120000.xhp" name="Data - Validity">Data - Validity</link></paragraph>
+</section>
+</body>
+</helpdocument>

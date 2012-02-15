@@ -1,0 +1,88 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_drawing_XShapeCombiner_idl__ 
+#define __com_sun_star_drawing_XShapeCombiner_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_drawing_XShape_idl__ 
+#include <com/sun/star/drawing/XShape.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_drawing_XShapes_idl__ 
+#include <com/sun/star/drawing/XShapes.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module drawing {  
+ 
+//============================================================================= 
+ 
+/** specifies the combine/split functionality.
+ */
+published interface XShapeCombiner: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** combines <type>Shape</type>s
+		
+		@param xShapes
+			the <type>Shape</type>s inside this container are converted
+			to <type>PolyPolygonBezierShape</type>s and are than combined
+			into one <type>PolyPolygonBezierShape</type>.
+			The <type>Shape</types>s in xShape will be removed from the
+			<type>GenericDrawPage</type> and disposed.
+
+		@returns
+			a newly created <type>PolyPolygonBezierShape</type> which contains all
+			converted <type>PolyPolygonBezierShape</type> combined. It is also added
+			to the <type>GenericDrawPage</type> of the source <type>Shape</type>s.
+			
+	 */
+	com::sun::star::drawing::XShape combine( [in] com::sun::star::drawing::XShapes xShapes ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** splits <type>Shape</type>s.
+
+		@param xShapes
+			the <type>Shape</type> is converted to a 
+			<type>PolyPolygonBezierShape</type>s and then splited into
+			several <type>PolyPolygonBezierShape</type>s
+			The <type>Shape</types>s in xShape will be removed from the
+			<type>GenericDrawPage</type> and disposed.
+	 */
+	void split( [in] com::sun::star::drawing::XShape xGroup ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 
+

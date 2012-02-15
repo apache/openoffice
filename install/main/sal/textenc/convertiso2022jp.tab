@@ -1,0 +1,64 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef INCLUDED_RTL_TEXTENC_CONTEXT_H
+#include "context.h"
+#endif
+#ifndef INCLUDED_RTL_TEXTENC_CONVERTISO2022JP_H
+#include "convertiso2022jp.h"
+#endif
+#ifndef INCLUDED_RTL_TEXTENC_TENCHELP_H
+#include "tenchelp.h"
+#endif
+
+#ifndef _RTL_TENCINFO_H
+#include "rtl/tencinfo.h"
+#endif
+#ifndef _RTL_TEXTENC_H
+#include "rtl/textenc.h"
+#endif
+
+static ImplIso2022JpConverterData const aImplIso2022JpConvertData
+    = { aJIS0208UniLeadTab, /* from tcvtjp6.tab */
+        aJIS0208DBCSHighTab }; /* from tcvtjp6.tab */
+
+static ImplTextEncodingData const aImplIso2022JpTextEncodingData
+    = { { &aImplIso2022JpConvertData,
+          &ImplConvertIso2022JpToUnicode,
+          &ImplConvertUnicodeToIso2022Jp,
+          &ImplCreateIso2022JpToUnicodeContext,
+          &ImplDestroyContext,
+          &ImplResetIso2022JpToUnicodeContext,
+          &ImplCreateUnicodeToIso2022JpContext,
+          &ImplDestroyContext,
+          &ImplResetUnicodeToIso2022JpContext },
+        1,
+        8,
+        2,
+        128,
+        "euc-jp",
+        "ISO-2022-JP",
+        RTL_TEXTENCODING_INFO_CONTEXT
+             | RTL_TEXTENCODING_INFO_MULTIBYTE
+             | RTL_TEXTENCODING_INFO_MIME };
+    /* SCRIPT_JAPANESE */

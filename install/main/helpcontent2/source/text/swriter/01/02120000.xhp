@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textswriter0102120000xml" indexer="include">
+<title id="tit" xml-lang="en-US">AutoText</title>
+<filename>/text/swriter/01/02120000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="autotext">
+<bookmark xml-lang="en-US" branch="hid/.uno:EditGlossary" id="bm_id3098317" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:EditGlossary" id="bm_id3154100" localize="false"/>
+<paragraph role="heading" id="hd_id3147512" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/02120000.xhp" name="AutoText">AutoText</link></paragraph>
+<paragraph role="paragraph" id="par_id3154571" xml-lang="en-US" l10n="U" oldref="2"><variable id="autotexttext"><ahelp hid=".uno:EditGlossary">Creates, edits, or inserts AutoText. You can store formatted text, text with graphics, tables, and fields as AutoText. To quickly insert AutoText, type the shortcut for the AutoText in your document, and then press F3.</ahelp>
+</variable></paragraph>
+</section>
+<paragraph role="tip" id="par_id3143277" xml-lang="en-US" l10n="CHG" oldref="52">You can also click the arrow next to the <emph>AutoText</emph> icon on the <emph>Insert</emph> bar, and then choose the AutoText that you want to insert.</paragraph>
+<section id="howtoget">
+<embed href="text/swriter/00/00000402.xhp#autotext"/>
+</section>
+<embed href="text/swriter/guide/autotext.xhp#autotext"/>
+<paragraph role="heading" id="hd_id3148982" xml-lang="en-US" level="2" l10n="U" oldref="4">AutoText</paragraph>
+<paragraph role="paragraph" id="par_id3153640" xml-lang="en-US" l10n="U" oldref="5">The <emph>AutoText </emph>dialog lists the AutoText categories and entries.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_GLOSSARY:CB_INSERT_TIP" id="bm_id3152778" localize="false"/>
+<paragraph role="heading" id="hd_id3152766" xml-lang="en-US" level="3" l10n="U" oldref="6">Display remainder of name as a suggestion while typing</paragraph>
+<paragraph role="paragraph" id="par_id3145758" xml-lang="en-US" l10n="CHG" oldref="51"><ahelp hid="SW:CHECKBOX:DLG_GLOSSARY:CB_INSERT_TIP">Displays a suggestion for completing a word as a Help Tip after you type the first three letters of a word that matches an AutoText entry. To accept the suggestion, press Enter. If more than one AutoText entry matches the letters that you type, press Ctrl+Tab to advance through the entries.</ahelp> For example, to insert dummy text, type "Dum", and then press Enter.</paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="53">To display the list in reverse order, press <switchinline select="sys"><caseinline select="MAC">Command 
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Tab.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_GLOSSARY:ED_NAME" id="bm_id3155856" localize="false"/>
+<paragraph role="heading" id="hd_id3151378" xml-lang="en-US" level="3" l10n="U" oldref="9">Name</paragraph>
+<paragraph role="paragraph" id="par_id3155862" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SW:EDIT:DLG_GLOSSARY:ED_NAME">Lists the name of the currently selected AutoText entry. If you have selected text in the document, type the name of the new AutoText entry, click the <emph>AutoText </emph>button, and then choose <emph>New</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_GLOSSARY:ED_SHORTNAME" id="bm_id3150124" localize="false"/>
+<paragraph role="heading" id="hd_id3150113" xml-lang="en-US" level="3" l10n="U" oldref="12">Shortcut</paragraph>
+<paragraph role="paragraph" id="par_id3147413" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SW:EDIT:DLG_GLOSSARY:ED_SHORTNAME">Displays the shortcut for the selected AutoText entry. If you are creating a new AutoText entry, type the shortcut that you want to use for the entry.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149558" xml-lang="en-US" level="3" l10n="U" oldref="65">List box</paragraph>
+<paragraph role="paragraph" id="par_id3145257" xml-lang="en-US" l10n="U" oldref="8">Lists the AutoText categories. To view the AutoText entries in a category, double-click the category, or click the plus sign (+) in front of the category. To insert an AutoText entry into the current document, select the entry in the list, and then click <emph>Insert</emph>.</paragraph>
+<paragraph role="tip" id="par_id3153300" xml-lang="en-US" l10n="U" oldref="66">You can drag and drop AutoText entries from one category to another.</paragraph>
+<paragraph role="heading" id="hd_id3156124" xml-lang="en-US" level="2" l10n="U" oldref="14">Insert</paragraph>
+<paragraph role="paragraph" id="par_id3156094" xml-lang="en-US" l10n="U" oldref="15">Inserts the selected AutoText into the current document.</paragraph>
+<paragraph role="note" id="par_id3148788" xml-lang="en-US" l10n="U" oldref="75">If you insert an unformatted AutoText entry into a paragraph, the entry is formatted with the current paragraph style.</paragraph>
+<embed href="text/shared/00/00000001.xhp#schliessen"/>
+<bookmark xml-lang="en-US" branch="hid/sw:MenuButton:DLG_GLOSSARY:PB_EDIT" id="bm_id3153121" localize="false"/>
+<paragraph role="heading" id="hd_id3150039" xml-lang="en-US" level="2" l10n="U" oldref="17">AutoText</paragraph>
+<paragraph role="paragraph" id="par_id3153127" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SW:MENUBUTTON:DLG_GLOSSARY:PB_EDIT">Click to display additional AutoText commands, for example, to create a new AutoText entry from a text selection in the current document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_GLOS_DEFINE" id="bm_id3154628" localize="false"/>
+<paragraph role="heading" id="hd_id3154618" xml-lang="en-US" level="3" l10n="U" oldref="19">New</paragraph>
+<paragraph role="paragraph" id="par_id3154635" xml-lang="en-US" l10n="CHG" oldref="20"><ahelp hid="HID_MD_GLOS_DEFINE">Creates a new AutoText entry from the selection that you made in the current document. The entry is added to the currently selected AutoText category. You must first enter a name before you see this command.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_GLOS_DEFINE_TEXT" id="bm_id3150662" localize="false"/>
+<paragraph role="heading" id="hd_id3149643" xml-lang="en-US" level="3" l10n="U" oldref="62">New (text only)</paragraph>
+<paragraph role="paragraph" id="par_id3150668" xml-lang="en-US" l10n="CHG" oldref="63"><ahelp hid="HID_MD_GLOS_DEFINE_TEXT">Creates a new AutoText entry only from the text in the selection that you made in the current document. Graphics, tables and other objects are not included. You must first enter a name before you see this command.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_COPY_TO_CLIPBOARD" id="bm_id3154037" localize="false"/>
+<paragraph role="heading" id="hd_id3154025" xml-lang="en-US" level="3" l10n="U" oldref="73">Copy</paragraph>
+<paragraph role="paragraph" id="par_id3154043" xml-lang="en-US" l10n="U" oldref="74"><ahelp hid="HID_MD_COPY_TO_CLIPBOARD">Copies the selected AutoText to the clipboard.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_GLOS_REPLACE" id="bm_id3149601" localize="false"/>
+<paragraph role="heading" id="hd_id3149965" xml-lang="en-US" level="3" l10n="U" oldref="21">Replace</paragraph>
+<paragraph role="paragraph" id="par_id3149607" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_MD_GLOS_REPLACE">Replaces the contents of the selected AutoText entry with the selection that was made in the current document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_GLOS_RENAME" id="bm_id3150779" localize="false"/>
+<paragraph role="heading" id="hd_id3150768" xml-lang="en-US" level="3" l10n="U" oldref="23">Rename</paragraph>
+<paragraph role="paragraph" id="par_id3150786" xml-lang="en-US" l10n="CHG" oldref="24"><ahelp hid="." visibility="hidden">Opens the Rename AutoText dialog, where you can change the name of the selected AutoText entry.</ahelp>Opens the <link href="text/swriter/01/02120100.xhp" name="Rename Text Block">Rename AutoText</link> dialog, where you can change the name of the selected AutoText entry.</paragraph>
+<embed href="text/shared/00/00000001.xhp#loeschen"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_GLOS_EDIT" id="bm_id3155352" localize="false"/>
+<paragraph role="heading" id="hd_id3155341" xml-lang="en-US" level="3" l10n="U" oldref="35">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3155358" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="HID_MD_GLOS_EDIT">Opens the selected AutoText entry for editing in a separate document. Make the changes that you want, choose <emph>File - Save AutoText</emph>, and then choose <emph>File - Close</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_GLOS_MACRO" id="bm_id3145100" localize="false"/>
+<paragraph role="heading" id="hd_id3155555" xml-lang="en-US" level="3" l10n="U" oldref="43">Macro</paragraph>
+<paragraph role="paragraph" id="par_id3145106" xml-lang="en-US" l10n="CHG" oldref="44"><ahelp hid="." visibility="hidden">Opens the Assign Macro dialog, where you attach a macro to the selected AutoText entry.</ahelp>Opens the <link href="text/swriter/01/05060700.xhp" name="Assign Macro">Assign Macro</link> dialog, where you attach a macro to the selected AutoText entry.</paragraph>
+<paragraph role="paragraph" id="par_id3149583" xml-lang="en-US" l10n="CHG" oldref="76">You can also use the macros that are linked to some of the provided AutoText entries in AutoText entries that you create. The AutoText entries must be created with the "text only" option. For example, insert the string &lt;field:company&gt; in an AutoText entry, and $[officename] replaces the string with the contents of the corresponding database field.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_MD_GLOS_IMPORT" id="bm_id3156263" localize="false"/>
+<paragraph role="heading" id="hd_id3149597" xml-lang="en-US" level="3" l10n="U" oldref="77">Import</paragraph>
+<paragraph role="paragraph" id="par_id3148937" xml-lang="en-US" l10n="U" oldref="78"><ahelp hid="HID_MD_GLOS_IMPORT">Opens a dialog where you can select the MS 97/2000/XP Word document or template, containing the AutoText entries that you want to import.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_GLOSSARY:PB_BIB" id="bm_id3156049" localize="false"/>
+<paragraph role="heading" id="hd_id3156038" xml-lang="en-US" level="2" l10n="U" oldref="37">Categories</paragraph>
+<paragraph role="paragraph" id="par_id3156055" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="SW:PUSHBUTTON:DLG_GLOSSARY:PB_BIB">Adds, renames, or deletes AutoText categories.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_BIB_BASE" id="bm_id3159229" localize="false"/>
+<paragraph role="heading" id="hd_id3159217" xml-lang="en-US" level="2" l10n="U" oldref="54">Edit Categories</paragraph>
+<paragraph role="paragraph" id="par_id3145173" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="HID_BIB_BASE">Adds, renames, or deletes AutoText categories.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_BIB_BASE:ED_NAME" id="bm_id3150796" localize="false"/>
+<paragraph role="heading" id="hd_id3145192" xml-lang="en-US" level="3" l10n="U" oldref="39">Category</paragraph>
+<paragraph role="paragraph" id="par_id3150802" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="SW:EDIT:DLG_BIB_BASE:ED_NAME">Displays the name of the selected AutoText category. To change the name of the category, type a new name, and then click <emph>Rename</emph>. To create a new category, type a name, and then click <emph>New</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_BIB_BASE:LB_PATH" id="bm_id3155328" localize="false"/>
+<paragraph role="heading" id="hd_id3155318" xml-lang="en-US" level="3" l10n="U" oldref="79">Path</paragraph>
+<paragraph role="paragraph" id="par_id3155335" xml-lang="en-US" l10n="U" oldref="80"><ahelp hid="SW_LISTBOX_DLG_BIB_BASE_LB_PATH">Displays the current path to the directory where the selected AutoText category files are stored. If you are creating an AutoText category, select where you want to store the category files.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_BIB_BASE:PB_NEW" id="bm_id3154421" localize="false"/>
+<paragraph role="heading" id="hd_id3154410" xml-lang="en-US" level="3" l10n="U" oldref="41">New</paragraph>
+<paragraph role="paragraph" id="par_id3154933" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SW:PUSHBUTTON:DLG_BIB_BASE:PB_NEW">Creates a new AutoText category using the name that you entered in the<emph> Name</emph> box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_BIB_BASE:PB_RENAME" id="bm_id3153372" localize="false"/>
+<paragraph role="heading" id="hd_id3154959" xml-lang="en-US" level="3" l10n="U" oldref="67">Rename</paragraph>
+<paragraph role="paragraph" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="68"><ahelp hid="SW:PUSHBUTTON:DLG_BIB_BASE:PB_RENAME">Changes the name of the selected AutoText category to the name that you enter in the <emph>Name </emph>box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_GLOS_GROUP_TREE" id="bm_id3154131" localize="false"/>
+<paragraph role="heading" id="hd_id3154120" xml-lang="en-US" level="3" l10n="U" oldref="81">Selection list</paragraph>
+<paragraph role="paragraph" id="par_id3154137" xml-lang="en-US" l10n="U" oldref="58"><ahelp hid="HID_GLOS_GROUP_TREE">Lists the existing AutoText categories and the corresponding paths.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#loeschen1"/>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_GLOSSARY:PB_PATH" id="bm_id3154845" localize="false"/>
+<paragraph role="heading" id="hd_id3145615" xml-lang="en-US" level="2" l10n="U" oldref="56">Path</paragraph>
+<paragraph role="paragraph" id="par_id3154852" xml-lang="en-US" l10n="CHG" oldref="57"><ahelp hid="." visibility="hidden">Opens the Edit Paths dialog, where you can select the directory to store AutoText.</ahelp>Opens the <link href="text/shared/optionen/01010301.xhp" name="Edit Paths">Edit Paths</link> dialog, where you can select the directory to store AutoText.</paragraph>
+<paragraph role="paragraph" id="par_id3156064" xml-lang="en-US" l10n="CHG" oldref="61">To add a new path to an AutoText directory, click the <emph>Path</emph> button in the <emph>AutoText </emph>dialog.</paragraph>
+<paragraph role="heading" id="hd_id3155383" xml-lang="en-US" level="2" l10n="U" oldref="45">Save links relative to</paragraph>
+<paragraph role="paragraph" id="par_id3155396" xml-lang="en-US" l10n="U" oldref="46">Use this area to set the way $[officename] inserts links to the AutoText directory. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_GLOSSARY:CB_FILE_REL" id="bm_id3148755" localize="false"/>
+<paragraph role="heading" id="hd_id3148743" xml-lang="en-US" level="3" l10n="U" oldref="47">File system</paragraph>
+<paragraph role="paragraph" id="par_id3148762" xml-lang="en-US" l10n="U" oldref="48"><ahelp hid="SW:CHECKBOX:DLG_GLOSSARY:CB_FILE_REL">Links to AutoText directories on your computer are relative.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_GLOSSARY:CB_NET_REL" id="bm_id3153031" localize="false"/>
+<paragraph role="heading" id="hd_id3153020" xml-lang="en-US" level="3" l10n="U" oldref="49">Internet</paragraph>
+<paragraph role="paragraph" id="par_id3153037" xml-lang="en-US" l10n="U" oldref="50"><ahelp hid="SW:CHECKBOX:DLG_GLOSSARY:CB_NET_REL">Links to files on the Internet are relative.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_GLOSSARY:CB_SHOW_EXAMPLE" id="bm_id3154603" localize="false"/>
+<paragraph role="heading" id="hd_id3154590" xml-lang="en-US" level="3" l10n="U" oldref="71">Show preview</paragraph>
+<paragraph role="paragraph" id="par_id3154610" xml-lang="en-US" l10n="U" oldref="72"><ahelp hid="SW:CHECKBOX:DLG_GLOSSARY:CB_SHOW_EXAMPLE">Turns on or off a preview of the selected AutoText entry.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154909" xml-lang="en-US" level="3" l10n="U" oldref="69">Preview</paragraph>
+<paragraph role="paragraph" id="par_id3154922" xml-lang="en-US" l10n="U" oldref="70">Shows a preview of the selected AutoText entry.</paragraph>
+</body>
+</helpdocument>

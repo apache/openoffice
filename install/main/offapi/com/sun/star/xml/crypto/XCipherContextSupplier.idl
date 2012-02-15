@@ -1,0 +1,87 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_xml_crypto_xciphercontextsupplier_idl_
+#define __com_sun_star_xml_crypto_xciphercontextsupplier_idl_
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_beans_NamedValue_idl__
+#include <com/sun/star/beans/NamedValue.idl>
+#endif
+
+#ifndef __com_sun_star_xml_crypto_XCipherContext_idl__
+#include <com/sun/star/xml/crypto/XCipherContext.idl>
+#endif
+
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+//============================================================================
+
+ module com {  module sun {  module star {  module xml { module crypto {
+
+//============================================================================
+/** This interface allows to get an object that allows to encrypt/decrypt data
+    using the specified algorithm.
+
+    @since OOo 3.4
+ */
+interface XCipherContextSupplier : com::sun::star::uno::XInterface
+{
+    //------------------------------------------------------------------------
+    /** returns an object that allows to encrypt/decrypt data.
+
+        @param nCipherID
+            the internal ID specifying the algorithm,
+            should take value from <type>CipherID</type>
+        
+        @param aKey
+            the key that should be used for the encryption
+
+        @param aInitializationVector
+            the initialization vector that should be used for the encryption
+
+        @param bEncryption
+            whether an encryption or decryption cipher should be created
+            <TRUE/> - Encryption
+            <FALSE/> - Decryption
+
+        @param aParams
+            optional parameters that could be used to initialize the cipher,
+
+        @throws ::com::sun::star::lang::IllegalArgumentException
+            one of provided arguments is illegal
+     */
+
+    XCipherContext getCipherContext( [in] long nCipherID, [in] sequence< byte > aKey, [in] sequence< byte > aInitializationVector, [in] boolean bEncryption, [in] sequence< ::com::sun::star::beans::NamedValue > aParams )
+        raises( ::com::sun::star::lang::IllegalArgumentException );
+};
+
+//============================================================================
+
+}; }; }; }; };
+
+#endif

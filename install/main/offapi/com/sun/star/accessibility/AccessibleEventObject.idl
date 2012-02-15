@@ -1,0 +1,65 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_accessibility_AccessibleEventObject_idl__
+#define __com_sun_star_accessibility_AccessibleEventObject_idl__
+
+#ifndef __com_sun_star_lang_EventObject_idl__
+#include <com/sun/star/lang/EventObject.idl>
+#endif
+
+module com { module sun { module star { module accessibility {
+
+/** this struct describes an accessible event, that is broadcasted from
+	the <type>XAccessibleEventBroadcaster</type> and notified to
+	<type>XAccessibleEventListener</type>.
+
+	<p>It is usualy implemented by <type>AccessibleContext</type>.
+
+    @since OOo 1.1.2
+*/
+published struct AccessibleEventObject: ::com::sun::star::lang::EventObject
+{
+	/** specifies the type of this event.
+
+		<p>For a list of possible events see <type>AccessibleEventId</type>.
+	 */
+	short EventId;
+
+	/** for events that specifies a value change, this is
+		the new value.
+
+		Depending on the <member>EventId</member>, this can be void.
+	*/
+	any NewValue;
+
+	/** for events that specifies a value change, this is
+		the old value.
+
+		Depending on the <member>EventId</member>, this can be void.
+	*/
+	any OldValue;
+};
+
+}; }; }; };
+
+#endif

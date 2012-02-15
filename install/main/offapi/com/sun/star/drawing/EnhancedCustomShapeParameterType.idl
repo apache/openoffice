@@ -1,0 +1,103 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_drawing_EnhancedCustomShapeParameterType_idl__
+#define __com_sun_star_drawing_EnhancedCustomShapeParameterType_idl__
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module drawing {  
+ 
+//============================================================================= 
+ 
+/** defines how a EnhancedCustomShapeParameter has to be interpreted
+ */
+constants EnhancedCustomShapeParameterType
+{ 
+	/** the value of the point component is normal, the Coordinate is taken as it is
+	 */
+	const short NORMAL = 0;
+ 
+	/** the value of the point component has to be interpreted as index to a Equation
+	 */
+	const short EQUATION = 1;
+ 
+	/** the value of the point component has to be interpreted as index into the list of AdjustmentValues
+	 */
+	const short ADJUSTMENT = 2;
+ 
+	/** the logical left border of the CustomShape is used
+	 */
+	const short LEFT = 3;
+
+	/** the logical top border of the CustomShape is used
+	 */
+	const short TOP = 4;
+
+	/** the logical right border of the CustomShape is used
+	 */
+	const short RIGHT = 5;
+
+	/** the logical bottom border of the CustomShape is used
+	 */
+	const short BOTTOM = 6;
+
+	/** the x value of the stretch point is used
+	 */
+	const short XSTRETCH = 7;
+
+	/** the y value of the stretch point is used
+	 */
+	const short YSTRETCH = 8;
+
+	/** If the shape has a line style, a value of 1 is used.
+	 */
+	const short HASSTROKE = 9;
+
+	/** If the shape has a fill style, a value of 1 is used.
+	 */
+	const short HASFILL = 10;
+
+	/** The width of the svg:viewBox is used.
+	 */
+	const short WIDTH = 11;
+
+	/** The height of the svg:viewBox is used.
+	 */
+	const short HEIGHT = 12;
+
+	/** The logical width of the shape is used.
+	 */
+	const short LOGWIDTH = 13;
+
+	/** The logical height of the shape is used.
+	 */
+	const short LOGHEIGHT = 14;
+}; 
+ 
+//============================================================================= 
+ 
+ }; }; }; };
+ 
+#endif 
+

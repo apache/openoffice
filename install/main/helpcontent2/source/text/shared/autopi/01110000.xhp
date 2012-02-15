@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01110000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">HTML Export</title>
+<filename>/text/shared/autopi/01110000.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3154788" xml-lang="en-US" level="1" l10n="U" oldref="1">HTML Export</paragraph>
+<paragraph role="paragraph" id="par_id3157898" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Determines the settings for publishing $[officename] Draw or $[officename] Impress documents in HTML format.</ahelp></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#htmlspeichern"/>
+</section>
+<paragraph role="paragraph" id="par_id3155391" xml-lang="en-US" l10n="U" oldref="10">The pages displayed differ depending on what you select on the second page of the Wizard.</paragraph>
+<embed href="text/shared/autopi/01110100.xhp#seite1"/>
+<embed href="text/shared/autopi/01110200.xhp#seite2"/>
+<embed href="text/shared/autopi/01110300.xhp#seite3"/>
+<embed href="text/shared/autopi/01110400.xhp#seite4"/>
+<embed href="text/shared/autopi/01110500.xhp#seite5"/>
+<embed href="text/shared/autopi/01110600.xhp#seite6"/>
+<paragraph role="heading" id="hd_id3146797" xml-lang="en-US" level="2" l10n="U" oldref="3">&lt;&lt; Back</paragraph>
+<paragraph role="paragraph" id="par_id3150444" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SD:PUSHBUTTON:DLG_PUBLISHING:BUT_LAST">Returns to the selections made on the previous page.</ahelp> The current settings remain saved. You can select this button once you are in the second editing step.</paragraph>
+<paragraph role="heading" id="hd_id3147242" xml-lang="en-US" level="2" l10n="U" oldref="5">Next &gt;&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3147574" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SD:PUSHBUTTON:DLG_PUBLISHING:BUT_NEXT">Saves the current settings and moves to the next page.</ahelp> This button becomes inactive on the last page of the dialog.</paragraph>
+<paragraph role="heading" id="hd_id3154046" xml-lang="en-US" level="2" l10n="U" oldref="7">Create</paragraph>
+<paragraph role="paragraph" id="par_id3157909" xml-lang="en-US" l10n="CHG" oldref="8"><ahelp hid=".">Creates new documents according to your selections and saves the documents.</ahelp></paragraph>
+<paragraph role="note" id="par_id3154897" xml-lang="en-US" l10n="U" oldref="9">$[officename] saves the current Wizard settings and uses them as default the next time that you open the Wizard.</paragraph>
+</body>
+</helpdocument>

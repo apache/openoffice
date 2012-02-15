@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090404xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">End Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090404.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T11:34:58">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="end">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150771"><bookmark_value>End statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090404.xhp" name="End Statement [Runtime]">End Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="U" oldref="2">Ends a procedure or block.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147264" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="4">End, End Function, End If, End Select, End Sub</paragraph>
+<paragraph role="heading" id="hd_id3149456" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150398" xml-lang="en-US" l10n="U" oldref="6">Use the End statement as follows:</paragraph>
+<paragraph role="heading" id="hd_id3154366" xml-lang="en-US" level="2" l10n="U" oldref="7">Statement</paragraph>
+<paragraph role="paragraph" id="par_id3151043" xml-lang="en-US" l10n="U" oldref="8">End: Is not required, but can be entered anywhere within a procedure to end the program execution.</paragraph>
+<paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="U" oldref="9">End Function: Ends a <emph>Function</emph> statement.</paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="10">End If: Marks the end of a <emph>If...Then...Else</emph> block.</paragraph>
+<paragraph role="paragraph" id="par_id3148451" xml-lang="en-US" l10n="U" oldref="11">End Select: Marks the end of a <emph>Select Case</emph> block.</paragraph>
+<paragraph role="paragraph" id="par_id3155131" xml-lang="en-US" l10n="U" oldref="12">End Sub: Ends a <emph>Sub</emph> statement.</paragraph>
+<paragraph role="heading" id="hd_id3146120" xml-lang="en-US" level="2" l10n="U" oldref="13">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3146985" xml-lang="en-US" l10n="U" oldref="14">Sub ExampleRandomSelect</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="15">Dim iVar As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="16">iVar = Int((15 * Rnd) -2)</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="17">Select Case iVar</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="18">Case 1 To 5</paragraph>
+<paragraph role="paragraph" id="par_id3152887" xml-lang="en-US" l10n="U" oldref="19">Print "Number from 1 to 5"</paragraph>
+<paragraph role="paragraph" id="par_id3163713" xml-lang="en-US" l10n="U" oldref="20">Case 6, 7, 8</paragraph>
+<paragraph role="paragraph" id="par_id3148618" xml-lang="en-US" l10n="U" oldref="21">Print "Number from 6 to 8"</paragraph>
+<paragraph role="paragraph" id="par_id3153144" xml-lang="en-US" l10n="U" oldref="22">Case Is &gt; 8 And iVar &lt; 11</paragraph>
+<paragraph role="paragraph" id="par_id3147436" xml-lang="en-US" l10n="U" oldref="23">Print "Greater than 8"</paragraph>
+<paragraph role="paragraph" id="par_id3155418" xml-lang="en-US" l10n="U" oldref="24">Case Else</paragraph>
+<paragraph role="paragraph" id="par_id3150418" xml-lang="en-US" l10n="U" oldref="25">Print "Outside range 1 to 10"</paragraph>
+<paragraph role="paragraph" id="par_id3156285" xml-lang="en-US" l10n="U" oldref="26">End Select</paragraph>
+<paragraph role="paragraph" id="par_id3149582" xml-lang="en-US" l10n="U" oldref="27">end sub</paragraph>
+</body>
+</helpdocument>

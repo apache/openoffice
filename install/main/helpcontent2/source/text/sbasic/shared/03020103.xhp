@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020103xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Open Statement[Runtime]</title>
+<filename>/text/sbasic/shared/03020103.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-08T13:20:10">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="open">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150791"><bookmark_value>Open statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150791" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020103.xhp" name="Open Statement[Runtime]">Open Statement[Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="U" oldref="2">Opens a data channel.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147230" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3154124" xml-lang="en-US" l10n="CHG" oldref="4">Open FileName As String [For Mode] [Access IOMode] [Protected] As [#]FileNumber As Integer [Len = DatasetLength]<comment>UFI: #i37502#</comment></paragraph>
+<paragraph role="heading" id="hd_id3156280" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="6">
+<emph>FileName: </emph>Name and path of the file that you wan to open. If you try to read a file that does not exist (Access = Read), an error message appears. If you try to write to a file that does not exist (Access = Write), a new file is created.</paragraph>
+<paragraph role="paragraph" id="par_id3149262" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Mode:</emph> Keyword that specifies the file mode. Valid values: Append (append to sequential file), Binary (data can be accessed by bytes using Get and Put), Input (opens data channel for reading), Output (opens data channel for writing), and Random (edits relative files).</paragraph>
+<paragraph role="paragraph" id="par_id3154014" xml-lang="en-US" l10n="CHG" oldref="8">
+<emph>IOMode:</emph> Keyword that defines the access type. Valid values: Read (read-only), Write (write-only), Read Write (both).</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="9">
+<emph>Protected:</emph> Keyword that defines the security status of a file after opening. Valid values: Shared (file may be opened by other applications), Lock Read (file is protected against reading), Lock Write (file is protected against writing), Lock Read Write (denies file access).</paragraph>
+<paragraph role="paragraph" id="par_id3153190" xml-lang="en-US" l10n="U" oldref="10">
+<emph>FileNumber:</emph> Any integer expression from 0 to 511 to indicate the number of a free data channel. You can then pass commands through the data channel to access the file. The file number must be determined by the FreeFile function immediately before the Open statement.</paragraph>
+<paragraph role="paragraph" id="par_id3151115" xml-lang="en-US" l10n="CHG" oldref="11">
+<emph>DatasetLength:</emph> For random access files, set the length of the records.<comment>UFI: #61736</comment></paragraph>
+<paragraph role="note" id="par_id3153418" xml-lang="en-US" l10n="U" oldref="12">You can only modify the contents of a file that was opened with the Open statement. If you try to open a file that is already open, an error message appears.</paragraph>
+<paragraph role="heading" id="hd_id3149123" xml-lang="en-US" level="2" l10n="U" oldref="13">Example:</paragraph>
+<paragraph role="code" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="14">Sub ExampleWorkWithAFile</paragraph>
+<paragraph role="code" id="par_id3155064" xml-lang="en-US" l10n="U" oldref="15">Dim iNumber As Integer</paragraph>
+<paragraph role="code" id="par_id3154754" xml-lang="en-US" l10n="U" oldref="16">Dim sLine As String</paragraph>
+<paragraph role="code" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="17">Dim aFile As String</paragraph>
+<paragraph role="code" id="par_id3155764" xml-lang="en-US" l10n="U" oldref="40">Dim sMsg as String</paragraph>
+<paragraph role="code" id="par_id3159264" xml-lang="en-US" l10n="U" oldref="18">aFile = "c:\data.txt"</paragraph>
+<paragraph role="code" id="par_id3153963" xml-lang="en-US" l10n="U" oldref="20">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="21">Open aFile For Output As #iNumber</paragraph>
+<paragraph role="code" id="par_id3154705" xml-lang="en-US" l10n="U" oldref="22">Print #iNumber, "This is a line of text"</paragraph>
+<paragraph role="code" id="par_id3146916" xml-lang="en-US" l10n="U" oldref="23">Print #iNumber, "This is another line of text"</paragraph>
+<paragraph role="code" id="par_id3150942" xml-lang="en-US" l10n="U" oldref="24">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3150300" xml-lang="en-US" l10n="U" oldref="28">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3154022" xml-lang="en-US" l10n="U" oldref="29">Open aFile For Input As iNumber</paragraph>
+<paragraph role="code" id="par_id3150783" xml-lang="en-US" l10n="U" oldref="30">While not eof(iNumber)</paragraph>
+<paragraph role="code" id="par_id3153270" xml-lang="en-US" l10n="U" oldref="31">Line Input #iNumber, sLine</paragraph>
+<paragraph role="code" id="par_id3153784" xml-lang="en-US" l10n="U" oldref="32">If sLine &lt;&gt;"" then</paragraph>
+<paragraph role="code" id="par_id3149208" xml-lang="en-US" l10n="U" oldref="33">sMsg = sMsg &amp; sLine &amp; chr(13)</paragraph>
+<paragraph role="code" id="par_id3150304" xml-lang="en-US" l10n="U" oldref="35">end if</paragraph>
+<paragraph role="code" id="par_id3151217" xml-lang="en-US" l10n="U" oldref="36">wend</paragraph>
+<paragraph role="code" id="par_id3152582" xml-lang="en-US" l10n="U" oldref="37">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3159100" xml-lang="en-US" l10n="U" oldref="41">Msgbox sMsg</paragraph>
+<paragraph role="code" id="par_id3159091" xml-lang="en-US" l10n="U" oldref="38">End Sub</paragraph>
+</body>
+</helpdocument>

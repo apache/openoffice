@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020403xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">CurDir Function [Runtime]</title>
+<filename>/text/sbasic/shared/03020403.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-09-19T11:27:49">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="curdir">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153126"><bookmark_value>CurDir function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153126" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020403.xhp">CurDir Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U" oldref="2">Returns a variant string that represents the current path of the specified drive.</paragraph>
+</section>
+<embed href="text/sbasic/shared/03020401.xhp#i30692"/>
+<paragraph role="heading" id="hd_id3149457" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3153381" xml-lang="en-US" l10n="U" oldref="4">CurDir [(Text As String)]</paragraph>
+<paragraph role="heading" id="hd_id3154366" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
+<paragraph role="heading" id="hd_id3156423" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Text:</emph> Any string expression that specifies an existing drive (for example, "C" for the first partition of the first hard drive).</paragraph>
+<paragraph role="paragraph" id="par_id3155133" xml-lang="en-US" l10n="U" oldref="9">If no drive is specified or if the drive is a zero-length string (""), CurDir returns the path for the current drive. $[officename] Basic reports an error if the syntax of the drive description is incorrect, the drive does not exist, or if the drive letter occurs after the letter defined in the CONFIG.SYS with the Lastdrive statement.</paragraph>
+<paragraph role="paragraph" id="par_id3150010" xml-lang="en-US" l10n="U" oldref="10">This function is not case-sensitive.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<embed href="text/sbasic/shared/00000003.xhp#err68"/>
+<embed href="text/sbasic/shared/00000003.xhp#err7"/>
+<embed href="text/sbasic/shared/00000003.xhp#err51"/>
+<paragraph role="heading" id="hd_id3155411" xml-lang="en-US" level="2" l10n="U" oldref="11">Example:</paragraph>
+<paragraph role="code" id="par_id3151113" xml-lang="en-US" l10n="U" oldref="12">Sub ExampleCurDir</paragraph>
+<paragraph role="code" id="par_id3155306" xml-lang="en-US" l10n="U" oldref="13">Dim sDir1 as String , sDir2 as String</paragraph>
+<paragraph role="code" id="par_id3156444" xml-lang="en-US" l10n="U" oldref="14">sDir1 = "c:\Test"</paragraph>
+<paragraph role="code" id="par_id3147318" xml-lang="en-US" l10n="U" oldref="15">sDir2 = "d:\private"</paragraph>
+<paragraph role="code" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="16">ChDir( sDir1 )</paragraph>
+<paragraph role="code" id="par_id3153877" xml-lang="en-US" l10n="U" oldref="17">msgbox CurDir</paragraph>
+<paragraph role="code" id="par_id3144764" xml-lang="en-US" l10n="U" oldref="18">ChDir( sDir2 )</paragraph>
+<paragraph role="code" id="par_id3147125" xml-lang="en-US" l10n="U" oldref="19">msgbox CurDir</paragraph>
+<paragraph role="code" id="par_id3149581" xml-lang="en-US" l10n="U" oldref="20">end sub</paragraph>
+</body>
+</helpdocument>

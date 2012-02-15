@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105060300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Picture</title>
+<filename>/text/swriter/01/05060300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-12T14:34:23">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="grafik">
+<bookmark xml-lang="en-US" branch="hid/SW_HID_GRF_EXT" id="bm_id3152952" localize="false"/>
+<paragraph role="heading" id="hd_id3154473" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/swriter/01/05060300.xhp" name="Graphics">Picture</link></paragraph>
+<paragraph role="paragraph" id="par_id3152961" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_GRF_EXT">Specify the flip and the link options for the selected graphic.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#grafik1"/>
+</section>
+<paragraph role="heading" id="hd_id3154191" xml-lang="en-US" level="2" l10n="U" oldref="3">Flip</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FlipHorizontal" id="bm_id8328881" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:FlipHorizontal" id="bm_id3155185" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_GRF_EXT:CB_VERT" id="bm_id3143270" localize="false"/>
+<paragraph role="heading" id="hd_id3155174" xml-lang="en-US" level="3" l10n="U" oldref="7">Vertically<comment>see bug 106420;Writer uses VERT for HOR and HORZ for VERT</comment></paragraph>
+<paragraph role="paragraph" id="par_id3149485" xml-lang="en-US" l10n="U" oldref="8"><variable id="vertikaltext"><ahelp hid="SW:CHECKBOX:TP_GRF_EXT:CB_VERT">Flips the selected graphic vertically.</ahelp>
+</variable></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FlipVertical" id="bm_id9859908" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:FlipVertical" id="bm_id3151248" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_GRF_EXT:CB_HOR" id="bm_id3151251" localize="false"/>
+<paragraph role="heading" id="hd_id3154829" xml-lang="en-US" level="3" l10n="U" oldref="5">Horizontally</paragraph>
+<paragraph role="paragraph" id="par_id3151261" xml-lang="en-US" l10n="U" oldref="6"><variable id="horizontaltext"><ahelp hid="SW:CHECKBOX:TP_GRF_EXT:CB_HOR">Flips the selected graphic horizontally.</ahelp>
+</variable></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_GRF_EXT:RB_MIRROR_ALL_PAGES" id="bm_id3148979" localize="false"/>
+<paragraph role="heading" id="hd_id3147101" xml-lang="en-US" level="3" l10n="U" oldref="15">On all pages</paragraph>
+<paragraph role="paragraph" id="par_id3147212" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SW_RADIOBUTTON_TP_GRF_EXT_RB_MIRROR_ALL_PAGES">Flips the selected graphic horizontally on all pages.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_GRF_EXT:RB_MIRROR_LEFT_PAGES" id="bm_id3153644" localize="false"/>
+<paragraph role="heading" id="hd_id3153632" xml-lang="en-US" level="3" l10n="U" oldref="17">On left pages</paragraph>
+<paragraph role="paragraph" id="par_id3149037" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SW_RADIOBUTTON_TP_GRF_EXT_RB_MIRROR_LEFT_PAGES">Flips the selected graphic horizontally only on even pages.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_GRF_EXT:RB_MIRROR_RIGHT_PAGES" id="bm_id3152769" localize="false"/>
+<paragraph role="heading" id="hd_id3147580" xml-lang="en-US" level="3" l10n="U" oldref="19">On right pages</paragraph>
+<paragraph role="paragraph" id="par_id3152775" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SW_RADIOBUTTON_TP_GRF_EXT_RB_MIRROR_RIGHT_PAGES">Flips the selected graphic horizontally only on odd pages.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#vorschau"/>
+<paragraph role="heading" id="hd_id3153349" xml-lang="en-US" level="2" l10n="U" oldref="9">Link</paragraph>
+<paragraph role="paragraph" id="par_id3149164" xml-lang="en-US" l10n="U" oldref="10">Inserts the graphic as a link.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_GRF_EXT:ED_CONNECT" id="bm_id3156272" localize="false"/>
+<paragraph role="heading" id="hd_id3149178" xml-lang="en-US" level="3" l10n="U" oldref="11">File name</paragraph>
+<paragraph role="paragraph" id="par_id3156278" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SW:EDIT:TP_GRF_EXT:ED_CONNECT">Displays the path to the linked graphic file. To change the link, click the browse button (<emph>...</emph>) and then locate the file that you want to link to. </ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_GRF_EXT:PB_BROWSE" id="bm_id3145786" localize="false"/>
+<paragraph role="heading" id="hd_id3145776" xml-lang="en-US" level="3" l10n="U" oldref="13">...</paragraph>
+<paragraph role="paragraph" id="par_id3151373" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SW:PUSHBUTTON:TP_GRF_EXT:PB_BROWSE">Locate the new graphic file that you want to link to, and then click <emph>Open</emph>.</ahelp></paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<paragraph role="paragraph" id="par_id3155855" xml-lang="en-US" l10n="U" oldref="21"><link href="text/shared/01/05240000.xhp" name="Format - Flip">Format - Flip</link></paragraph>
+<paragraph role="paragraph" id="par_id3158743" xml-lang="en-US" l10n="U" oldref="22"><link href="text/shared/01/02180000.xhp" name="Edit - Links">Edit - Links</link></paragraph>
+</body>
+</helpdocument>

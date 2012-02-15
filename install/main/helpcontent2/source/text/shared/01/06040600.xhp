@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0106040600xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Word Completion</title>
+         <filename>/text/shared/01/06040600.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="worterg">
+         <paragraph xml-lang="en-US" id="hd_id3148882" role="heading" level="1" l10n="U"
+                    oldref="92"><link href="text/shared/01/06040600.xhp" name="Word Completion">Word Completion</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153624" role="paragraph" l10n="U" oldref="93">Set the options for completing frequently occurring words while you type.</paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#autokoworterg"/>
+      </section>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/word_completion.xhp#word_completion"/>
+</case>
+</switch>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_ACTIV -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_ACTIV" id="bm_id4897915" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154514" role="heading" level="2" l10n="U"
+                 oldref="94">Enable word completion</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156153" role="paragraph" l10n="U" oldref="95"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_ACTIV">Stores frequently used words, and automatically completes a word after you type three letters that match the first three letters of a stored word.</ahelp></paragraph>
+<!-- removed HID OFFMGR_CHECKBOX_RID_OFAPAGE_AUTOCOMPLETE_OPTIONS_CB_APPEND_SPACE -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_APPEND_SPACE" id="bm_id6168401" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150978" role="heading" level="2" l10n="U"
+                 oldref="100">Append space</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153700" role="paragraph" l10n="U" oldref="101"><ahelp hid="OFFMGR_CHECKBOX_RID_OFAPAGE_AUTOCOMPLETE_OPTIONS_CB_APPEND_SPACE">If you do not add punctuation after the word, $[officename] adds a space.</ahelp> The space is added as soon as you begin typing the next word.</paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_AS_TIP -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_AS_TIP" id="bm_id668355" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150771" role="heading" level="2" l10n="U"
+                 oldref="102">Show as tip</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149819" role="paragraph" l10n="U" oldref="103"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_AS_TIP">Displays the completed word as a Help Tip.</ahelp></paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_COLLECT -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_COLLECT" id="bm_id2998138" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154046" role="heading" level="2" l10n="U"
+                 oldref="96">Collect words</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155449" role="paragraph" l10n="U" oldref="97"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_COLLECT">Adds the frequently used words to a list. To remove a word from the Word Completion list, select the word, and then click<emph> Delete Entry</emph>.</ahelp></paragraph>
+<!-- removed HID OFFMGR_CHECKBOX_RID_OFAPAGE_AUTOCOMPLETE_OPTIONS_CB_KEEP_LIST -->
+<!-- removed HID svx_CheckBox_RID_OFAPAGE_AUTOCOMPLETE_OPTIONS_CB_KEEP_LIST -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:CB_REMOVE_LIST" id="bm_id29981338" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156193" role="heading" level="2" l10n="CHG"
+                 oldref="98">When closing a document, remove the words collected from it from the list</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3158430" role="paragraph" l10n="CHG" oldref="99"><ahelp hid="OFFMGR_CHECKBOX_RID_OFAPAGE_AUTOCOMPLETE_OPTIONS_CB_KEEP_LIST">When enabled, the list gets cleared when closing the current document. When disabled, makes the current Word Completion list available to other documents after you close the current document. The list remains available until you exit %PRODUCTNAME.</ahelp></paragraph>
+<!-- removed HID OFFMGR:LISTBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:DCB_EXPAND_KEY -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:DCB_EXPAND_KEY" id="bm_id3945738" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149580" role="heading" level="2" l10n="U"
+                 oldref="104">Accept with</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153061" role="paragraph" l10n="U" oldref="105"><ahelp hid="OFFMGR:LISTBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:DCB_EXPAND_KEY">Select the key that you want to use to accept the automatic word completion.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106F8" role="tip" l10n="NEW">Press Esc to decline the word completion.</paragraph>
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:NF_MIN_WORDLEN -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:NF_MIN_WORDLEN" id="bm_id7839594" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151245" role="heading" level="2" l10n="U"
+                 oldref="84">Min. word length</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145609" role="paragraph" l10n="CHG" oldref="85"><ahelp hid="OFFMGR:NUMERICFIELD:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:NF_MIN_WORDLEN">Enter the minimum word length for a word to become eligible for the word completion feature.</ahelp><comment>UFI: changed due to BH phone call.</comment></paragraph>
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:NF_MAX_ENTRIES -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:NF_MAX_ENTRIES" id="bm_id3337199" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154758" role="heading" level="2" l10n="U"
+                 oldref="86">Max. entries</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159414" role="paragraph" l10n="U" oldref="87"><ahelp hid="OFFMGR:NUMERICFIELD:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:NF_MAX_ENTRIES">Enter the maximum number of words that you want to store in the Word Completion list.</ahelp></paragraph>
+<!-- removed HID OFFMGR:MULTILISTBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:LB_ENTRIES -->
+<bookmark xml-lang="en-US" branch="hid/cui:MultiListBox:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:LB_ENTRIES" id="bm_id6878566" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147265" role="heading" level="2" l10n="U"
+                 oldref="106">Word Completion list</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152773" role="paragraph" l10n="CHG" oldref="107"><ahelp hid="OFFMGR:MULTILISTBOX:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:LB_ENTRIES">Lists the collected words. The list is valid until you close the current document. To make the list available to other documents in the current session, disable "When closing a document, remove the words collected from it from the list".</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156423" role="note" l10n="U" oldref="112">If the automatic spellcheck option is enabled, only the words that are recognized by the spellcheck are collected.</paragraph>
+<!-- removed HID OFFMGR:PUSHBUTTON:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:PB_ENTRIES -->
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:PB_ENTRIES" id="bm_id6572161" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3144434" role="heading" level="2" l10n="U"
+                 oldref="110">Delete Entry</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153351" role="paragraph" l10n="U" oldref="111"><ahelp hid="OFFMGR:PUSHBUTTON:RID_OFAPAGE_AUTOCOMPLETE_OPTIONS:PB_ENTRIES">Removes the selected word or words from the Word Completion list.</ahelp></paragraph>
+<switch select="appl">
+<case select="WRITER">
+<section id="relatedtopics">
+         <embed href="text/swriter/guide/word_completion.xhp#word_completion"/>
+      </section>
+</case>
+</switch>
+</body>
+</helpdocument>

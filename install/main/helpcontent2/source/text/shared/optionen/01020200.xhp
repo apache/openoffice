@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01020200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Search</title>
+<filename>/text/shared/optionen/01020200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-03T13:59:21">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="suche">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154515"><bookmark_value>search engines; selecting</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_SEARCH" id="bm_id3156346" localize="false"/>
+<paragraph role="heading" id="hd_id3155892" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01020200.xhp" name="Search">Search</link></paragraph>
+<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_OPTIONS_SEARCH">Use this tab page to define the settings for searching in the Internet.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#internet4"/>
+</section>
+<embed href="text/shared/guide/hyperlink_search.xhp#hyperlink_search"/>
+<paragraph role="heading" id="hd_id3154306" xml-lang="en-US" level="2" l10n="U" oldref="7">Search in</paragraph>
+<paragraph role="paragraph" id="par_id3157909" xml-lang="en-US" l10n="U" oldref="8">Specifies the search engine and its corresponding configuration.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_INET_SEARCH:LB_SEARCH" id="bm_id3150986" localize="false"/>
+<paragraph role="heading" id="hd_id3154515" xml-lang="en-US" level="3" l10n="U" oldref="9">Search engines</paragraph>
+<paragraph role="paragraph" id="par_id3153880" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_INET_SEARCH:LB_SEARCH">Displays the available search engines.</ahelp> Select a search engine to display its configuration in the adjacent text and option boxes.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_INET_SEARCH:ED_SEARCH_NAME" id="bm_id3153562" localize="false"/>
+<paragraph role="heading" id="hd_id3150276" xml-lang="en-US" level="3" l10n="U" oldref="11">Name</paragraph>
+<paragraph role="paragraph" id="par_id3155449" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX:EDIT:RID_SVXPAGE_INET_SEARCH:ED_SEARCH_NAME">Displays the name of the selected search engine.</ahelp> This is the name that will be shown in the sub-menu of the <emph>Search</emph> icon on the Hyperlink bar. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_INET_SEARCH:RB_AND" id="bm_id3148943" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_INET_SEARCH:RB_OR" id="bm_id3148946" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_INET_SEARCH:RB_EXACT" id="bm_id3147264" localize="false"/>
+<paragraph role="heading" id="hd_id3151245" xml-lang="en-US" level="3" l10n="U" oldref="13">Type</paragraph>
+<paragraph role="paragraph" id="par_id3154758" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_INET_SEARCH:RB_EXACT">Sets the advanced search preferences (and, or, exact) as well as the way the results are defined and displayed.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3148663" xml-lang="en-US" l10n="U" oldref="15">The links <emph>And, Or</emph> and <emph>Exactly</emph> are available.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_INET_SEARCH:ED_URL" id="bm_id3154365" localize="false"/>
+<paragraph role="heading" id="hd_id3150358" xml-lang="en-US" level="3" l10n="U" oldref="17">Prefix</paragraph>
+<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX:EDIT:RID_SVXPAGE_INET_SEARCH:ED_URL">This text box displays the URL and the first part of the query command for a search machine. A URL can also be typed directly.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_INET_SEARCH:ED_POSTFIX" id="bm_id3151041" localize="false"/>
+<paragraph role="heading" id="hd_id3153193" xml-lang="en-US" level="3" l10n="U" oldref="22">Suffix</paragraph>
+<paragraph role="paragraph" id="par_id3153970" xml-lang="en-US" l10n="U" oldref="23">The search terms are passed between the prefix and the suffix.<ahelp hid="SVX:EDIT:RID_SVXPAGE_INET_SEARCH:ED_POSTFIX">The suffix provides the command sequence, sent at the end of a search.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_INET_SEARCH:ED_SEPARATOR" id="bm_id3145171" localize="false"/>
+<paragraph role="heading" id="hd_id3147086" xml-lang="en-US" level="3" l10n="U" oldref="24">Separator</paragraph>
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SVX:EDIT:RID_SVXPAGE_INET_SEARCH:ED_SEPARATOR">If you type more than one word while running a search, these words will be separated by the character specified here.</ahelp> Most search engines require the "+" character.</paragraph>
+<paragraph role="paragraph" id="par_id3149560" xml-lang="en-US" l10n="U" oldref="27">To determine which prefixes, separators and suffixes to use when defining a new search engine:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3159255" xml-lang="en-US" l10n="U" oldref="28">Activate the search engine and perform a search with at least two words.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147434" xml-lang="en-US" l10n="CHG" oldref="29">Copy the URL from your browser's <emph>URL</emph> field and paste it into a blank document.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148647" xml-lang="en-US" l10n="U" oldref="30">Change the conditions for the search in the search engine, if it offers you the choice.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="31">Again, copy the contents of the <emph>URL</emph> field.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147213" xml-lang="en-US" l10n="U" oldref="32">Compare the URLs with the sample URLs in the fields of this dialog and make a note of the prefixes, suffixes and separators used.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_INET_SEARCH:ED_CASE" id="bm_id3153363" localize="false"/>
+<paragraph role="heading" id="hd_id3147348" xml-lang="en-US" level="3" l10n="U" oldref="33">Case match</paragraph>
+<paragraph role="paragraph" id="par_id3154918" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_INET_SEARCH:ED_CASE">Determines the case match for running a search.</ahelp> The list contains the following entries: <emph>None</emph>, <emph>Upper</emph> and <emph>Lower</emph>. The search terms entered are converted according to your selection.</paragraph>
+<paragraph role="paragraph" id="par_id3149262" xml-lang="en-US" l10n="U" oldref="35">Search engines handle queries differently according to the way they are constructed. For example, some are case sensitive and some are not. Because of this, it is best to select <emph>None</emph> as the case match option.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SEARCH:PB_NEW" id="bm_id3148455" localize="false"/>
+<paragraph role="heading" id="hd_id3156283" xml-lang="en-US" level="3" l10n="U" oldref="44">New</paragraph>
+<paragraph role="paragraph" id="par_id3149413" xml-lang="en-US" l10n="U" oldref="45"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_INET_SEARCH:PB_NEW">Use this button to include a new search engine.</ahelp><emph>New</emph> deletes all important entries of the entry mask such as "Name" and "Suffix". Enter the new search engine together with all of the necessary details. As soon as you accept your entries with <emph>Add</emph>, the new search engine will appear in the search engine list under <emph>Search in</emph>. Close the dialog with the <emph>OK</emph> button.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SEARCH:PB_ADD" id="bm_id3149581" localize="false"/>
+<paragraph role="heading" id="hd_id3145254" xml-lang="en-US" level="3" l10n="U" oldref="36">Add</paragraph>
+<paragraph role="paragraph" id="par_id3144767" xml-lang="en-US" l10n="U" oldref="37"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_INET_SEARCH:PB_ADD">Click this button to add a new configuration to the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SEARCH:PB_CHANGE" id="bm_id3154018" localize="false"/>
+<paragraph role="heading" id="hd_id3155603" xml-lang="en-US" level="3" l10n="U" oldref="38">Modify</paragraph>
+<paragraph role="paragraph" id="par_id3151320" xml-lang="en-US" l10n="U" oldref="39"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_INET_SEARCH:PB_CHANGE">Click this button to apply the modifications made to an existing configuration.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SEARCH:PB_DELETE" id="bm_id3154164" localize="false"/>
+<paragraph role="heading" id="hd_id3149122" xml-lang="en-US" level="3" l10n="U" oldref="40">Delete</paragraph>
+<paragraph role="paragraph" id="par_id3154270" xml-lang="en-US" l10n="U" oldref="41"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_INET_SEARCH:PB_DELETE">Click this button to delete the selected search engine from the list. There will be no security response.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasemenueditxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Edit</title>
+<filename>/text/shared/explorer/database/menuedit.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-29T14:30:39">UFI: Edit menu of Database</created>
+<lastedited date="2006-09-26T12:53:04">dedr: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="edit">
+<paragraph role="heading" id="par_idN1054D" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/menuedit.xhp">Edit</link></paragraph>
+</section>
+<paragraph role="paragraph" id="par_idN1055D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The Edit menu of a database window.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10560" xml-lang="en-US" level="2" l10n="NEW">Copy</paragraph>
+<paragraph role="paragraph" id="par_idN10564" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Copies the selected object to the clipboard.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10567" xml-lang="en-US" level="2" l10n="NEW">Paste</paragraph>
+<paragraph role="paragraph" id="par_idN1056B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Inserts an item from the clipboard. If you want, you can insert forms and reports, including subfolders, from one database file to another.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN1056E" xml-lang="en-US" level="2" l10n="NEW">Paste Special</paragraph>
+<paragraph role="paragraph" id="par_idN10572" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Inserts an item from the clipboard. If you want, you can insert forms and reports, including subfolders, from one database file to another.</ahelp></paragraph>
+<section id="tabbea">
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_BROWSER_TABLE_EDIT" id="bm_id3152996" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBEdit" id="bm_id2726523" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBEdit" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="hd_id3153683" xml-lang="en-US" level="2" l10n="CHG" oldref="27">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3147209" xml-lang="en-US" l10n="CHG" oldref="28"><ahelp hid=".">Opens a window where you can edit the selected table, query, form, or report.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_BROWSER_TABLE_DELETE" id="bm_id3153824" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDelete" id="bm_id4481643" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDelete" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U" oldref="29">Delete</paragraph>
+<paragraph role="paragraph" id="par_id3153666" xml-lang="en-US" l10n="CHG" oldref="30"><ahelp hid="HID_BROWSER_TABLE_DELETE">Deletes the selected table, query, form, or report.</ahelp></paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBRename" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN1057C" xml-lang="en-US" level="2" l10n="NEW">Rename</paragraph>
+<paragraph role="paragraph" id="par_idN10580" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Renames the selected object. Depending on the database, some names, characters, and name length might be invalid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBOpen" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN1058A" xml-lang="en-US" level="2" l10n="NEW">Open</paragraph>
+<paragraph role="paragraph" id="par_idN1058E" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected object in the last saved state.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBConvertToView" id="bm_id1669362" localize="false"/>
+<paragraph role="heading" id="par_idN10591" xml-lang="en-US" level="2" l10n="NEW">Create as View</paragraph>
+<paragraph role="paragraph" id="par_idN105A7" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Converts the selected query to a view. The original query remains in your database file and an additional view is generated on the database server. You must have write permission to add a view to a database.</ahelp></paragraph>
+<paragraph role="note" id="par_idN105AA" xml-lang="en-US" l10n="NEW">Most databases use queries to filter or to sort database tables to display records on your computer. Views offer the same functionality as queries, but on the server side. If your database is on a server that supports views, you can use views to filter the records on the server to speed up the display time.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBNewFormAutoPilotWithPreSelection" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN105AD" xml-lang="en-US" level="2" l10n="NEW">Form Wizard</paragraph>
+<paragraph role="paragraph" id="par_idN105B1" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Starts the <link href="text/shared/autopi/01090000.xhp">Form Wizard</link> for the selected table, query, or view.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBNewReportAutoPilotWithPreSelection" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN105C2" xml-lang="en-US" level="2" l10n="NEW">Report Wizard</paragraph>
+<paragraph role="paragraph" id="par_idN105C6" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Starts the <link href="text/shared/autopi/01100000.xhp">Report Wizard</link> for the selected table, query, or view.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN105D7" xml-lang="en-US" level="2" l10n="NEW">Select All</paragraph>
+<paragraph role="paragraph" id="par_idN105DB" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Selects all entries, including subfolders, in the lower part of the database window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDatabasePropertiesMenu" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN105DE" xml-lang="en-US" level="2" l10n="NEW">Database</paragraph>
+<paragraph role="paragraph" id="par_idN105E2" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens a submenu.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDSProperties" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN105E5" xml-lang="en-US" level="3" l10n="NEW">Properties</paragraph>
+<paragraph role="paragraph" id="par_idN105E9" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Opens the Database Properties dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDSConnectionType" id="bm_id1669362" localize="false"/>
+<paragraph role="heading" id="par_idN105EC" xml-lang="en-US" level="3" l10n="NEW">Connection Type</paragraph>
+<paragraph role="paragraph" id="par_idN105F0" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Opens the Connection Type Wizard.</ahelp><comment>shortened the paragraph, see i58462</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBDSAdvancedSettings" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN105F3" xml-lang="en-US" level="3" l10n="NEW">Advanced Properties</paragraph>
+<paragraph role="paragraph" id="par_idN105F7" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Opens the Advanced Properties dialog.</ahelp></paragraph>
+</body>
+</helpdocument>

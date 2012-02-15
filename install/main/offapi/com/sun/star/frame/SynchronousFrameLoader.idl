@@ -1,0 +1,95 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_frame_SynchronousFrameLoader_idl__
+#define __com_sun_star_frame_SynchronousFrameLoader_idl__
+
+#ifndef __com_sun_star_frame_XSynchronousFrameLoader_idl__
+#include <com/sun/star/frame/XSynchronousFrameLoader.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XInitialization_idl__
+#include <com/sun/star/lang/XInitialization.idl>
+#endif
+
+#ifndef __com_sun_star_container_XNamed_idl__
+#include <com/sun/star/container/XNamed.idl>
+#endif
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module frame {
+
+//=============================================================================
+/** derivations of this abstract service are used to load components
+    into <type>Frame</type>s of the environment
+
+    <p>
+    Concrete implementations of this service register, for example,
+	for file name extensions or MIME types to load appropriate
+    components. The components loaded are at least <type>Controller</type>.
+    Instead of service <type>FrameLoader</type> this one use synchronous
+    processes to load the component.
+    </p>
+
+    @see FrameLoader
+ */
+published service SynchronousFrameLoader
+{
+	//-------------------------------------------------------------------------
+    /** support synchronous loading of component
+	 */
+    interface XSynchronousFrameLoader;
+
+	//-------------------------------------------------------------------------
+	/**	support initialization of loader with its own configuration!
+
+        <p>
+        Concrete implementations should use it to get her own configuration data
+        directly after creation by the <type>FrameLoaderFactory</type>.
+        Otherwhise they must use normal configuration api to do so.
+		</p>
+	 */
+	[optional] interface com::sun::star::lang::XInitialization;
+
+	//-------------------------------------------------------------------------
+    /** provides access to the internal name of this frame loader
+
+        <p>
+        The internal name is a part of his configuration and will be passed by
+        the <type>FrameLoaderFactory</type> after creation
+        if optional interface <type scope="com::sun::star::lang">XInitialization</type>
+        is supported. Value of function <member scope="com::sun::star::container">XNamed::getName()</member> can be
+        used on service <type>FrameLoaderFactory</type> to get further informations about this loader.
+        Setting of this name by calling <member scope="com::sun::star::container">XNamed::setName()</member> must be
+        forwarded to same factory service. He should decide, if it's allowed or not.
+        The reason: prevent code against name ambigities.
+        </p>
+     */
+     [optional] interface com::sun::star::container::XNamed;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

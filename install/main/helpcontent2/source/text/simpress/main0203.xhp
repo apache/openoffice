@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsimpressmain0203xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Text Formatting Bar</title>
+         <filename>/text/simpress/main0203.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="objektleistetext">
+         <paragraph xml-lang="en-US" id="hd_id3150010" role="heading" level="1" l10n="CHG"
+                    oldref="1"><link href="text/simpress/main0203.xhp" name="Text Formatting Bar">Text Formatting Bar</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152597" role="paragraph" l10n="CHG" oldref="2">To display the <emph>Text Formatting</emph> Bar, place the cursor inside a text object.</paragraph>
+      </section>
+      <embed href="text/shared/02/02020000.xhp#schriftart"/>
+      <embed href="text/shared/02/02020000.xhp#syschriftart"/>
+      <embed href="text/shared/02/02030000.xhp#schriftgroesse"/>
+      <embed href="text/shared/02/02030000.xhp#syschriftgroesse"/>
+      <embed href="text/shared/01/05110100.xhp#fett"/>
+      <embed href="text/shared/00/00040502.xhp#syfett"/>
+      <embed href="text/shared/01/05110200.xhp#kursiv"/>
+      <embed href="text/shared/00/00040502.xhp#sykursiv"/>
+      <embed href="text/shared/01/05110300.xhp#unter"/>
+      <embed href="text/shared/00/00040502.xhp#syunterstreichen"/>
+      <paragraph xml-lang="en-US" id="hd_id3151391" role="heading" level="2" l10n="U" oldref="4"><link href="text/shared/01/05020200.xhp" name="Font Color">Font Color</link></paragraph>
+      <embed href="text/shared/01/05020200.xhp#textfarbe"/>
+      <embed href="text/shared/00/00000004.xhp#sytextfarbe"/>
+      <embed href="text/shared/01/05080100.xhp#links"/>
+      <embed href="text/shared/00/00040502.xhp#sylinksbuendig"/>
+      <embed href="text/shared/01/05080300.xhp#zentriert"/>
+      <embed href="text/shared/00/00040502.xhp#syzentriert"/>
+      <embed href="text/shared/01/05080200.xhp#rechts"/>
+      <embed href="text/shared/00/00040502.xhp#syrechtsbuendig"/>
+      <embed href="text/shared/01/05080400.xhp#block"/>
+      <embed href="text/shared/00/00040502.xhp#syblocksatz"/>
+      <embed href="text/shared/02/03110000.xhp#abstanderhoehen"/>
+      <embed href="text/shared/02/03110000.xhp#syabstanderhoehen"/>
+      <embed href="text/shared/02/03120000.xhp#abstandvermindern"/>
+      <embed href="text/shared/02/03120000.xhp#syabstandvermindern"/>
+<switch select="appl">
+<case select="DRAW"><embed href="text/shared/01/05120100.xhp#zeilen1"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="DRAW"><embed href="text/shared/00/00000004.xhp#syeinzeilig"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="DRAW"><embed href="text/shared/01/05120200.xhp#zeilen15"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="DRAW"><embed href="text/shared/00/00000004.xhp#syeineinhalbzeilig"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="DRAW"><embed href="text/shared/01/05120300.xhp#zeilen2"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="DRAW"><embed href="text/shared/00/00000004.xhp#syzweizeilig"/>
+</case>
+</switch><embed href="text/shared/02/06120000.xhp#aufzaehlung"/>
+      <embed href="text/shared/02/06120000.xhp#syaufzaehlung"/>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06060000.xhp#hochstufen"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06060000.xhp#syhochstufen"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06050000.xhp#hinunterstufen"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06050000.xhp#syhinunterstufen"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06100000.xhp#hochschieben"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06100000.xhp#syhochschieben"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06110000.xhp#hinunterschieben"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/02/06110000.xhp#syhinunterschieben"/>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="hd_id3154645" role="heading" level="2" l10n="U" oldref="5"><link href="text/shared/01/05020000.xhp" name="Character">Character</link></paragraph>
+      <embed href="text/shared/01/05020000.xhp#zeichentext"/>
+      <embed href="text/shared/00/00040500.xhp#syzeich"/>
+      <paragraph xml-lang="en-US" id="hd_id3149984" role="heading" level="2" l10n="U" oldref="6"><link href="text/shared/01/05030000.xhp" name="Paragraph">Paragraph</link></paragraph>
+      <embed href="text/shared/01/05030000.xhp#absatztext"/>
+      <embed href="text/shared/00/00040500.xhp#syabsatz"/>
+      <paragraph xml-lang="en-US" id="hd_id3153619" role="heading" level="2" l10n="U" oldref="7"><switchinline select="appl"><caseinline select="IMPRESS"><link href="text/shared/01/06050000.xhp" name="Numbering Symbols">Numbering Symbols</link>
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/01/06050000.xhp#numauftext"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/shared/00/00040500.xhp#synumauf"/>
+</case>
+</switch><embed href="text/shared/00/00000007.xhp#asia"/>
+      <embed href="text/shared/02/02040000.xhp#textlire"/>
+      <embed href="text/shared/02/02040000.xhp#sytextlire"/>
+      <embed href="text/shared/02/02050000.xhp#textobun"/>
+      <embed href="text/shared/02/02050000.xhp#sytextobun"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Grow" id="bm_id0122200902451213" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0122200903104143" role="heading" level="2" l10n="NEW">Increase Font</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0122200903104255" role="paragraph" l10n="NEW"><ahelp hid=".">Increases the font size of the selected text.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:Shrink" id="bm_id0122200902452932" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0122200903104228" role="heading" level="2" l10n="NEW">Reduce Font</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0122200903104247" role="paragraph" l10n="NEW"><ahelp hid=".">Reduces the font size of the selected text.</ahelp></paragraph>
+   </body>
+</helpdocument>

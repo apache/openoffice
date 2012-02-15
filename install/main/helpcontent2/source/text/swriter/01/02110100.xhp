@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0102110100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Navigation</title>
+<filename>/text/swriter/01/02110100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-01-20T11:19:16">UFI: fixed #i39357#</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SCRL_NAVI" id="bm_id3149832" localize="false"/>
+<paragraph role="heading" id="hd_id3147745" xml-lang="en-US" level="1" l10n="U" oldref="1">Navigation</paragraph>
+<paragraph role="paragraph" id="par_id3149844" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SCRL_NAVI">If you click this icon in the Navigator or in the lower right of the document window, a toolbar will appear which enables you to choose among the existing targets within a document.</ahelp> You can then use the up and down arrow icons to position the text cursor in the document on the previous or next target.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SCRL_PAGEUP" id="bm_id3153304" localize="false"/>
+<paragraph role="paragraph" id="par_id3153293" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="HID_SCRL_PAGEUP">Click the up button to scroll to the previous page or object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SCRL_PAGEDOWN" id="bm_id3156109" localize="false"/>
+<paragraph role="paragraph" id="par_id3156098" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_SCRL_PAGEDOWN">Click the down button to scroll to the next page or object.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3155076" xml-lang="en-US" l10n="U" oldref="3">By default, as long as you have not selected any other entry, the arrow buttons jump to the previous or the next page in the document. The arrow buttons are black if you are browsing through pages and blue if you jump to other objects.</paragraph>
+<paragraph role="paragraph" id="par_id3154330" xml-lang="en-US" l10n="U" oldref="4">The entries largely correspond to those in the <link href="text/swriter/01/02110000.xhp" name="Navigator">Navigator</link> selection box. You can also select other jump destinations. An example are the reminders, which you can set with the <emph>Set Reminder</emph> icon in the Navigator. You can select an object from among the following options on the <emph>Navigation</emph> toolbar: table, text frame, graphics, OLE object, page, headings, reminder, drawing object, control field, section, bookmark, selection, footnote, note, index entry, table formula, wrong table formula.</paragraph>
+<paragraph role="paragraph" id="par_id3148783" xml-lang="en-US" l10n="U" oldref="12">For table formulas, you can either jump to all table formulas located within your document or only to the incorrect ones. For incorrect formulas, you jump only to formulas that have resulted in errors. The program skips over formulas with resulting errors (those that reference incorrect formulas).</paragraph>
+<paragraph role="heading" id="hd_id3150031" xml-lang="en-US" level="2" l10n="U" oldref="5">Working With the Navigation Toolbar</paragraph>
+<paragraph role="paragraph" id="par_id3150045" xml-lang="en-US" l10n="CHG" oldref="6">Open the <emph>Navigation</emph> toolbar by clicking on its icon located in the vertical scrollbar. You can break the toolbar away from its place by dragging and arrange it on the screen.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NAVI_VS" id="bm_id3154622" localize="false"/>
+<paragraph role="paragraph" id="par_id3153141" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="HID_NAVI_VS">Click the icon for the type of objects you want to browse through. Then click one of the "Previous Object" or "Next Object" arrow buttons. The names of these buttons indicate the type of object you have selected. The text cursor is placed on whichever object you have selected.</ahelp></paragraph>
+<paragraph role="tip" id="par_id3149968" xml-lang="en-US" l10n="CHG" oldref="11">You can configure $[officename] according to your specific preferences for navigating within a document. To do this, choose <link href="text/shared/01/06140000.xhp" name="Tools - Customize"><emph>Tools - Customize</emph></link>. The various tables for adapting <link href="text/shared/01/06140100.xhp" name="menus">menus</link>, <link href="text/shared/01/06140200.xhp" name="keyboard input">keyboard input</link> or toolbars contain various functions for navigation within the document under the "Navigate" area. In this way you can jump to the index tags in the document with the "To Next/Previous Index Tag" functions.</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155338"><bookmark_value>searching; repeating a search</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3155338" xml-lang="en-US" level="2" l10n="U" oldref="8">Repeat Search</paragraph>
+<paragraph role="paragraph" id="par_id3155361" xml-lang="en-US" l10n="U" oldref="9">With the <emph>Repeat search</emph> icon on the <emph>Navigation</emph> toolbar you can repeat a search you started with the <emph>Search and Replace</emph> dialog. To do this, click the icon. The blue arrow buttons on the vertical scrollbar now take on the functions <emph>Continue search forwards</emph> and <emph>Continue search backwards</emph>. If you now click one of the arrow surfaces, the search will be continued for the term entered in the Search and Replace dialog.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_BKM" id="bm_id2258064" localize="false"/>
+<paragraph role="paragraph" id="par_idN106DD" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through bookmarks.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_CTRL" id="bm_id9021576" localize="false"/>
+<paragraph role="paragraph" id="par_idN106F4" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through control fields.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_DRW" id="bm_id4192327" localize="false"/>
+<paragraph role="paragraph" id="par_idN1070B" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through drawing objects.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_FRM" id="bm_id8498794" localize="false"/>
+<paragraph role="paragraph" id="par_idN10722" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through text frames.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_FTN" id="bm_id66835" localize="false"/>
+<paragraph role="paragraph" id="par_idN10739" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through footnotes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_GRF" id="bm_id7068697" localize="false"/>
+<paragraph role="paragraph" id="par_idN10750" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through graphics.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_INDEX_ENTRY" id="bm_id9798577.00000001" localize="false"/>
+<paragraph role="paragraph" id="par_idN10767" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through index entries.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_MARK" id="bm_id9345988" localize="false"/>
+<paragraph role="paragraph" id="par_idN1077E" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through reminders.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_NEXT" id="bm_id3960692" localize="false"/>
+<paragraph role="paragraph" id="par_idN10795" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Sets the cursor to the next object of the selected type.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_OLE" id="bm_id5234534" localize="false"/>
+<paragraph role="paragraph" id="par_idN107AF" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through OLE objects.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_OUTL" id="bm_id1883602" localize="false"/>
+<paragraph role="paragraph" id="par_idN107C6" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through headings.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_PGE" id="bm_id6152836" localize="false"/>
+<paragraph role="paragraph" id="par_idN107DD" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through pages.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_POSTIT" id="bm_id5230567" localize="false"/>
+<paragraph role="paragraph" id="par_idN107F4" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through comments.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_PREV" id="bm_id1692556" localize="false"/>
+<paragraph role="paragraph" id="par_idN1080B" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Sets the cursor to the previous object of the selected type.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_REG" id="bm_id9508651" localize="false"/>
+<paragraph role="paragraph" id="par_idN10829" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through sections.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_SEL" id="bm_id7225257" localize="false"/>
+<paragraph role="paragraph" id="par_idN10840" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through selections.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_SRCH_REP" id="bm_id1448408" localize="false"/>
+<paragraph role="paragraph" id="par_idN10857" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through search results.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_TABLE_FORMULA" id="bm_id7630237" localize="false"/>
+<paragraph role="paragraph" id="par_idN1086E" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through table formulas.</ahelp></paragraph>
+<!-- removed HID HID_NID_FORMULA_ERROR -->
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_TABLE_FORMULA_ERROR" id="bm_id8653523" localize="false"/>
+<paragraph role="paragraph" id="par_idN10885" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through wrong table formulas.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NID_TBL" id="bm_id4498428" localize="false"/>
+<paragraph role="paragraph" id="par_idN1089C" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select this icon to browse through tables.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01014000xml" indexer="exclude" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Network Identity</title>
+<filename>/text/shared/optionen/01014000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-06-14T15:10:13">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="networkid">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153681"><bookmark_value>network identity options</bookmark_value>
+<bookmark_value>options; network identity</bookmark_value>
+<bookmark_value>single sign on options</bookmark_value>
+<bookmark_value>LDAP server; sign on options</bookmark_value>
+<bookmark_value>remote configurations</bookmark_value>
+<bookmark_value>Configuration Manager</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153681" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01014000.xhp" name="Network Identity">Network Identity</link></paragraph>
+<paragraph role="paragraph" id="par_id3153562" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Sets the options for a remote configuration access to your personal $[officename] settings stored on an LDAP server.</ahelp> To see this tab page and to use this feature, remote configuration must be active: You need an account on an LDAP server that is running and configured to store $[officename] user settings.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3149797" xml-lang="en-US" l10n="U" oldref="7">Using remote configuration, you can start a copy of $[officename] on any computer in the network with your own user data and personal configuration.</paragraph><comment>link to how-to ldap config, single signon how-to, etc</comment>
+<!-- removed HID SVX_LISTBOX_RID_SVXPAGE_SSO_LB_MECHANISM -->
+<paragraph role="heading" id="hd_id3155388" xml-lang="en-US" level="2" l10n="U" oldref="3">Authentication Method</paragraph>
+<paragraph role="paragraph" id="par_id3147335" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_SSO_LB_MECHANISM">Choose your security mechanism for access to the LDAP server.</ahelp> Choices are Simple or Kerberos.</paragraph>
+<!-- removed HID SVX_EDIT_RID_SVXPAGE_SSO_ED_USERNAME -->
+<paragraph role="heading" id="hd_id3153881" xml-lang="en-US" level="2" l10n="U" oldref="4">User name</paragraph>
+<paragraph role="paragraph" id="par_id3148943" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SVX_EDIT_RID_SVXPAGE_SSO_ED_USERNAME">Using "simple" authentication method, you enter your user name on the LDAP server here.</ahelp> Using "Kerberos", you just see your user name, but cannot edit it.</paragraph>
+<!-- removed HID SVX_EDIT_RID_SVXPAGE_SSO_ED_PASSWORD -->
+<paragraph role="heading" id="hd_id3153061" xml-lang="en-US" level="2" l10n="U" oldref="5">Password</paragraph>
+<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX_EDIT_RID_SVXPAGE_SSO_ED_PASSWORD">Using "simple" authentication method, enter your password for access to the LDAP server here.</ahelp> Using "Kerberos", this box is not active.</paragraph>
+<!-- removed HID SVX_CHECKBOX_RID_SVXPAGE_SSO_CB_PASSWORD -->
+<paragraph role="heading" id="hd_id3146795" xml-lang="en-US" level="2" l10n="U" oldref="6">Save password</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_SSO_CB_PASSWORD">Using "simple" authentication method, check this box to make your password persistent.</ahelp> If the password is persistent and the same user starts $[officename] later on, the user name and password will not be requested again. Using "Kerberos", this box is not active.</paragraph>
+<paragraph role="paragraph" id="par_id3154939" xml-lang="en-US" l10n="U" oldref="12">The password will be stored encrypted in a file called .ssop in your <switchinline select="sys"><caseinline select="UNIX">home directory 
+</caseinline><defaultinline>"My Documents" folder</defaultinline></switchinline>.</paragraph>
+</body>
+</helpdocument>

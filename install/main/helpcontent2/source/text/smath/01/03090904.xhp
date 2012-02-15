@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0103090904xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Matrix with Varying Font Sizes</title>
+<filename>/text/smath/01/03090904.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-06T11:45:22">FPE: Icon resource modified</lastedited>
+</history>
+</meta>
+<body>
+<section id="matrix">
+<paragraph role="heading" id="hd_id3155960" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090904.xhp" name="Matrix with Varying Font Sizes">Matrix with Varying Font Sizes</link></paragraph>
+<paragraph role="paragraph" id="par_id3154656" xml-lang="en-US" l10n="U" oldref="2">Here is an example of how to create a matrix with varying font sizes in <emph>$[officename] Math</emph>. You can copy this example to the <emph>Commands</emph> window using the clipboard and use it in your own formula.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3153915" xml-lang="en-US" l10n="E">
+<image id="img_id3150213" src="res/helpimg/smzb5.png" width="16.51cm" height="4.971cm"><alt id="alt_id3150213" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<paragraph role="code" id="par_id3146965" xml-lang="en-US" l10n="U" oldref="4">func G^{(%alpha" ," %beta)}_{ x_m x_n} = left[ matrix { arctan(%alpha) # arctan(%beta) ## x_m + x_n # x_m - x_n }right]</paragraph>
+</body>
+</helpdocument>

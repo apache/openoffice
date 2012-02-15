@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedoptionen01140000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Languages</title>
+         <filename>/text/shared/optionen/01140000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="sprachen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154751"><bookmark_value>languages; locale settings</bookmark_value>
+         <bookmark_value>locale settings</bookmark_value>
+         <bookmark_value>Asian languages; enabling</bookmark_value>
+         <bookmark_value>languages; Asian support</bookmark_value>
+         <bookmark_value>complex text layout; enabling</bookmark_value>
+         <bookmark_value>Arabic;language settings</bookmark_value>
+         <bookmark_value>Hebrew;language settings</bookmark_value>
+         <bookmark_value>Thai;language settings</bookmark_value>
+         <bookmark_value>Hindi;language settings</bookmark_value>
+         <bookmark_value>decimal separator key</bookmark_value>
+</bookmark><comment>mw deleted "language settings;" and "Asian languages;supporting"</comment>
+<paragraph xml-lang="en-US" id="hd_id3151299" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01140000.xhp" name="Languages">Languages</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148520" role="paragraph" l10n="CHG" oldref="2"><ahelp hid=".">Defines the default languages and some other locale settings for documents.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#sprachen"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3156042" role="heading" level="2" l10n="U"
+                 oldref="21">Language of</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_LANGUAGES:LB_USERINTERFACE" id="bm_id7035737" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10681" role="heading" level="3" l10n="NEW">User interface</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10685" role="paragraph" l10n="CHG"><ahelp hid=".">Select the language used for the user interface, for example menus, dialogs, help files. You must have installed at least one additional language pack or a multi-language version of %PRODUCTNAME.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id0125201009445727" role="paragraph" l10n="NEW">The "Default" entry selects the language of the user interface for the operating system. If this language is not available in the %PRODUCTNAME installation, the language of the %PRODUCTNAME installation is the default language.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_LANGUAGES:LB_LOCALESETTING" id="bm_id1609241" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154751" role="heading" level="3" l10n="U"
+                 oldref="22">Locale setting</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3157958" role="paragraph" l10n="CHG" oldref="23"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_LANGUAGES_LB_LOCALESETTING">Specifies the locale setting of the country setting. This influences settings for numbering, currency and units of measure.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id0125201009445950" role="paragraph" l10n="NEW">The "Default" entry selects the locale setting that is selected for the operating system.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156410" role="paragraph" l10n="U" oldref="27">A change in this field is immediately applicable. However, some formats that were formatted by default change only if the document is newly loaded.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_LANGUAGES:CB_DECIMALSEPARATOR" id="bm_id2873012" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN106DE" role="heading" level="3" l10n="NEW">Decimal separator key - Same as locale setting</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106E2" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies to use the decimal separator key that is set in your system when you press the respective key on the number pad.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106F1" role="paragraph" l10n="NEW">If this checkbox is activated, the character shown after "Same as locale setting" is inserted when you press the key on the number pad. If this checkbox is not activated, the character that your keyboard driver software provides is inserted.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_LANGUAGES:LB_CURRENCY" id="bm_id9471419" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147209" role="heading" level="3" l10n="U"
+                 oldref="24">Default currency</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145120" role="paragraph" l10n="U" oldref="25"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_LANGUAGES_LB_CURRENCY">Specifies the default currency that is used for the currency format and the currency fields.</ahelp> If you change the locale setting, the default currency changes automatically.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148491" role="paragraph" l10n="U" oldref="29">The default entry applies to the currency format that is assigned to the selected locale setting.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3157909" role="paragraph" l10n="U" oldref="26">A change in <emph>Default currency</emph> field will be transmitted to all open documents and will lead to corresponding changes in the dialogs and icons that control the currency format in these documents.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153127" role="heading" level="2" l10n="U" oldref="5">Default languages for documents</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149763" role="paragraph" l10n="U" oldref="6">Specifies the languages for spellchecking, thesaurus and hyphenation.</paragraph>
+      <embed href="text/shared/guide/language_select.xhp#language_select"/>
+      <section id="sprachmodul">
+         <paragraph xml-lang="en-US" id="par_id3148663" role="warning" l10n="U" oldref="8">The spellcheck for the selected language only functions when you have installed the corresponding language module. <embedvar href="text/shared/optionen/01010401.xhp#sprachenfeld"/>
+         </paragraph>
+      </section>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_LANGUAGES:LB_WEST_LANG" id="bm_id4734946" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151210" role="heading" level="3" l10n="U" oldref="9">Western</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153192" role="paragraph" l10n="U" oldref="10"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_LANGUAGES_LB_WEST_LANG">Specifies the language used for the spellcheck function in western alphabets.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_LANGUAGES:LB_ASIAN_LANG" id="bm_id908841" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156422" role="heading" level="3" l10n="U"
+                 oldref="11">Asian</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159149" role="paragraph" l10n="U" oldref="12"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_LANGUAGES_LB_ASIAN_LANG">Specifies the language used for the spellcheck function in Asian alphabets.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_LANGUAGES:LB_COMPLEX_LANG" id="bm_id2717062" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3158407" role="heading" level="3" l10n="U"
+                 oldref="31">CTL</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156212" role="paragraph" l10n="U" oldref="32"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_LANGUAGES_LB_COMPLEX_LANG">Specifies the language for the complex text layout spellcheck.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_LANGUAGES:CB_CURRENT_DOC" id="bm_id3376262" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149807" role="heading" level="3" l10n="U"
+                 oldref="15">For the current document only</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155432" role="paragraph" l10n="U" oldref="16"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_LANGUAGES_CB_CURRENT_DOC">Specifies that the settings for default languages are valid only for the current document.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3156441" role="heading" level="2" l10n="CHG"
+                 oldref="17">Enhanced language support</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_LANGUAGES:CB_ASIANSUPPORT" id="bm_id105594" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148575" role="heading" level="3" l10n="CHG"
+                 oldref="19">Enabled for Asian languages</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145748" role="paragraph" l10n="U" oldref="20"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_LANGUAGES_CB_ASIANSUPPORT">Activates Asian languages support. You can now modify the corresponding Asian language settings in <item type="productname">%PRODUCTNAME</item>.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152938" role="paragraph" l10n="U" oldref="18">If you want to write in Chinese, Japanese or Korean, you can activate the support for these languages in the user interface.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_LANGUAGES:CB_CTLSUPPORT" id="bm_id295724" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146147" role="heading" level="3" l10n="CHG"
+                 oldref="33">Enabled for complex text layout (CTL)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149667" role="paragraph" l10n="U" oldref="35"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_LANGUAGES_CB_CTLSUPPORT">Activates complex text layout support. You can now modify the settings corresponding to complex text layout in <item type="productname">%PRODUCTNAME</item>.</ahelp></paragraph>
+      <embed href="text/shared/guide/ctl.xhp#ctl"/>
+   </body>
+</helpdocument>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0104070100xml" indexer="include">
+<title id="tit" xml-lang="en-US">Define Names</title>
+<filename>/text/scalc/01/04070100.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:DefineName" id="bm_id4757802" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DefineName" id="bm_id3155922" localize="false"/>
+<paragraph role="heading" id="hd_id3156330" xml-lang="en-US" level="1" l10n="U" oldref="1">Define Names</paragraph>
+<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="2"><variable id="namenfestlegentext"><ahelp hid=".uno:DefineName">Opens a dialog where you can specify a name for a selected area.</ahelp>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="31">Use the mouse to define ranges or type the reference into the <emph>Define Name </emph>dialog fields.</paragraph>
+<section id="howtoget">
+<embed href="text/scalc/00/00000404.xhp#einafe"/>
+</section>
+<paragraph role="paragraph" id="par_id3155131" xml-lang="en-US" l10n="U" oldref="30">The <emph>Sheet Area</emph> box on the Formula bar contains a list of defined names for the ranges. Click a name from this box to highlight the corresponding reference on the spreadsheet. Names given formulas or parts of a formula are not listed here.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ComboBox:RID_SCDLG_NAMES:ED_NAME" id="bm_id3151114" localize="false"/>
+<paragraph role="heading" id="hd_id3151118" xml-lang="en-US" level="2" l10n="U" oldref="3">Name</paragraph>
+<paragraph role="paragraph" id="par_id3163712" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SC:COMBOBOX:RID_SCDLG_NAMES:ED_NAME">Enter the name of the area for which you want to define a reference. All area names already defined in the spreadsheet are listed in the text field below.</ahelp> If you click a name on the list, the corresponding reference in the document will be shown with a blue frame. If multiple cell ranges belong to the same area name, they are displayed with different colored frames.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_NAMES:ED_ASSIGN" id="bm_id3145750" localize="false"/>
+<paragraph role="heading" id="hd_id3153728" xml-lang="en-US" level="2" l10n="U" oldref="9">Assigned to</paragraph>
+<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SC:EDIT:RID_SCDLG_NAMES:ED_ASSIGN">The reference of the selected area name is shown here as an absolute value.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3146986" xml-lang="en-US" l10n="U" oldref="12">To insert a new area reference, place the cursor in this field and use your mouse to select the desired area in any sheet of your spreadsheet document.</paragraph>
+<embed href="text/shared/00/00000001.xhp#eingabesymbol"/>
+<bookmark xml-lang="en-US" branch="hid/sc:MoreButton:RID_SCDLG_NAMES:BTN_MORE" id="bm_id3148455" localize="false"/>
+<paragraph role="heading" id="hd_id3154729" xml-lang="en-US" level="2" l10n="U" oldref="13">More</paragraph>
+<paragraph role="paragraph" id="par_id3149958" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SC:MOREBUTTON:RID_SCDLG_NAMES:BTN_MORE">Allows you to specify the <emph>Area type </emph>(optional) for the reference.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147394" xml-lang="en-US" level="3" l10n="U" oldref="15">Area type</paragraph>
+<paragraph role="paragraph" id="par_id3155416" xml-lang="en-US" l10n="U" oldref="16">Defines additional options related to the type of reference area.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NAMES:BTN_PRINTAREA" id="bm_id3146972" localize="false"/>
+<paragraph role="heading" id="hd_id3150716" xml-lang="en-US" level="4" l10n="U" oldref="17">Print range</paragraph>
+<paragraph role="paragraph" id="par_id3150751" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SC:CHECKBOX:RID_SCDLG_NAMES:BTN_PRINTAREA">Defines the area as a print range.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NAMES:BTN_CRITERIA" id="bm_id3155446" localize="false"/>
+<paragraph role="heading" id="hd_id3153764" xml-lang="en-US" level="4" l10n="U" oldref="19">Filter</paragraph>
+<paragraph role="paragraph" id="par_id3155766" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SC:CHECKBOX:RID_SCDLG_NAMES:BTN_CRITERIA">Defines the selected area to be used in an <link href="text/scalc/01/12040300.xhp" name="advanced filter">advanced filter</link>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NAMES:BTN_COLHEADER" id="bm_id3147344" localize="false"/>
+<paragraph role="heading" id="hd_id3159267" xml-lang="en-US" level="4" l10n="U" oldref="21">Repeat column</paragraph>
+<paragraph role="paragraph" id="par_id3149565" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SC:CHECKBOX:RID_SCDLG_NAMES:BTN_COLHEADER">Defines the area as a repeating column.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NAMES:BTN_ROWHEADER" id="bm_id3154021" localize="false"/>
+<paragraph role="heading" id="hd_id3153966" xml-lang="en-US" level="4" l10n="U" oldref="23">Repeat row</paragraph>
+<paragraph role="paragraph" id="par_id3150300" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SC:CHECKBOX:RID_SCDLG_NAMES:BTN_ROWHEADER">Defines the area as a repeating row.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_NAMES:BTN_ADD" id="bm_id3150207" localize="false"/>
+<paragraph role="heading" id="hd_id3155112" xml-lang="en-US" level="2" l10n="U" oldref="27">Add/Modify</paragraph>
+<paragraph role="paragraph" id="par_id3159236" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SC:PUSHBUTTON:RID_SCDLG_NAMES:BTN_ADD">Click the <emph>Add</emph> button to add the defined name to the list. Click the <emph>Modify</emph> button to enter another name for an already existing name selected from the list.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#loeschen"/>
+</body>
+</helpdocument>

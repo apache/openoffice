@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0201170902xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Combo/List Box Wizard: Field Selection</title>
+<filename>/text/shared/02/01170902.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="seite2">
+<paragraph role="heading" id="hd_id3153323" xml-lang="en-US" level="1" l10n="U" oldref="14"><link href="text/shared/02/01170902.xhp" name="Combo/List Box Wizard: Field Selection">Combo/List Box Wizard: Field Selection</link></paragraph>
+<paragraph role="paragraph" id="par_id3154228" xml-lang="en-US" l10n="U" oldref="9">Select the data field specified in the table on the previous page, whose contents should be displayed in the list or combo box.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00040501.xhp#aupikomli2"/>
+</section>
+<!-- removed HID DBP_LISTBOX_RID_PAGE_LCW_CONTENTSELECTION_FIELD_LB_SELECTFIELD --><paragraph role="heading" id="hd_id3153894" xml-lang="en-US" level="2" l10n="U" oldref="10">Available Fields</paragraph>
+<paragraph role="paragraph" id="par_id3093440" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="DBP_LISTBOX_RID_PAGE_LCW_CONTENTSELECTION_FIELD_LB_SELECTFIELD">Displays all table fields chosen on the previous Wizard page.</ahelp></paragraph>
+<!-- removed HID DBP_EDIT_RID_PAGE_LCW_CONTENTSELECTION_FIELD_ET_DISPLAYEDFIELD --><paragraph role="heading" id="hd_id3145669" xml-lang="en-US" level="2" l10n="U" oldref="12">Display Field</paragraph>
+<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="DBP_EDIT_RID_PAGE_LCW_CONTENTSELECTION_FIELD_ET_DISPLAYEDFIELD">Specifies the field whose data are to be shown in the combo or list boxes.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3145345" xml-lang="en-US" l10n="U" oldref="19">The field name given here appears in the <link href="text/shared/02/01170102.xhp" name="Control properties">Control properties</link> as an element of an SQL statement in the <emph>List Contents</emph> field.</paragraph>
+</body>
+</helpdocument>

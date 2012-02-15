@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabaserep_navigatorxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Report Navigator</title>
+<filename>/text/shared/explorer/database/rep_navigator.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id5823847"><bookmark_value>formulas in reports;editing</bookmark_value>
+<bookmark_value>functions in reports;editing</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ReportNavigator" id="bm_id8798791" localize="false"/><paragraph role="heading" id="hd_id1821955" xml-lang="en-US" level="1" l10n="NEW"><variable id="rep_navigator"><link href="text/shared/explorer/database/rep_navigator.xhp">Report Navigator</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id1150852" xml-lang="en-US" l10n="NEW">You can open the Report Navigator window of the <link href="text/shared/explorer/database/rep_main.xhp">Report Builder</link> by choosing <item type="menuitem">View - Report Navigator</item>.</paragraph>
+<paragraph role="paragraph" id="par_id1111484" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The Report Navigator reveals the structure of the report. You can use the Report Navigator to insert functions into the report.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_REPORT_NAVIGATOR_TREE" id="bm_id7007354" localize="false"/><paragraph role="paragraph" id="par_id8314157" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click an entry in the Report Navigator. The corresponding object or area is selected in the Report Builder view. Right-click an entry to open the context menu.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id2932828" xml-lang="en-US" level="2" l10n="NEW">To enter functions to the report</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:NewFunction" id="bm_id974456" localize="false"/><paragraph role="paragraph" id="par_id5091708" xml-lang="en-US" l10n="NEW"><ahelp hid=".">In the context menu of the Report Navigator, you see the same commands as in the Report Builder view, plus additional commands to create new functions or to delete them.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id9449446" xml-lang="en-US" l10n="NEW">Functions can be entered using a syntax as specified by the <link href="http://en.wikipedia.org/wiki/OpenFormula">OpenFormula</link> proposal.</paragraph>
+<paragraph role="paragraph" id="par_id4095583" xml-lang="en-US" l10n="NEW">See <link href="http://wiki.services.openoffice.org/wiki/Database">Wiki page about Base</link> for some more help regarding the functions in a report.</paragraph>
+<paragraph role="heading" id="hd_id311593" xml-lang="en-US" level="3" l10n="NEW">To calculate a sum for each client<comment>copied from a mail by Ocke - did not test</comment></paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3948789" xml-lang="en-US" l10n="NEW">Open the Report Navigator.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id5391399" xml-lang="en-US" l10n="NEW">Open the Groups entry and the group where you want to calculate the cost. </paragraph>
+<paragraph role="paragraph" id="par_id6989654" xml-lang="en-US" l10n="NEW">The group has a sub entry called functions. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1803643" xml-lang="en-US" l10n="NEW">Open the context menu (right click) on the functions entry, choose to create a new function, and select it. </paragraph>
+<paragraph role="paragraph" id="par_id868251" xml-lang="en-US" l10n="NEW">In the property browser you see the function. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id6247749" xml-lang="en-US" l10n="NEW">Change the name to e.g. CostCalc and the formula to [CostCalc] + [enter your cost column name].</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1565904" xml-lang="en-US" l10n="NEW">In the initial value enter 0.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1569261" xml-lang="en-US" l10n="NEW">Now you can insert a text field and bind it to your [CostCalc] (appears in the data field list box).</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id9256874" xml-lang="en-US" l10n="NEW">Maybe you have to set the initial value to the value of the field like [field].<comment>these 3 paras copied from another mail by Ocke in users@dba.o.o</comment></paragraph>
+<paragraph role="paragraph" id="par_id4601886" xml-lang="en-US" l10n="NEW">If there are blank fields in the cost column, use the following formula to replace the blank fields' content with zero:</paragraph>
+<paragraph role="code" id="par_id1754509" xml-lang="en-US" l10n="NEW">[SumCost] + IF(ISBLANK([field]);0;[field])</paragraph><comment>need some real working examples. See i81874</comment><comment>Formula</comment>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_PROP_FORMULA" id="bm_id2767113" localize="false"/><paragraph role="paragraph" id="par_id8122196" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the formula that defines the function. Use OpenFormula syntax.</ahelp></paragraph><comment>Initial value</comment>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_PROP_INITIALFORMULA" id="bm_id301828" localize="false"/><paragraph role="paragraph" id="par_id9909665" xml-lang="en-US" l10n="CHG"><ahelp hid="." visibility="hidden">Enter the initial value for the evaluation of the formula. Often this is set to 0 or to 1.</ahelp></paragraph><comment>Deep traversing</comment>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_PROP_DEEPTRAVERSING" id="bm_id8996246" localize="false"/><paragraph role="paragraph" id="par_id9141819" xml-lang="en-US" l10n="CHG"><ahelp hid="." visibility="hidden">If Deep traversing is enabled, functions are evaluated considering all lower levels of hierarchy. This would be used for instance for line numbering. If Deep traversing is not enabled, only the first level of hierarchy is evaluated.</ahelp></paragraph><comment>Pre evaluation</comment>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_PROP_PREEVALUATED" id="bm_id5729544" localize="false"/><paragraph role="paragraph" id="par_id6354869" xml-lang="en-US" l10n="CHG"><ahelp hid="." visibility="hidden">If Pre evaluation is enabled, functions are evaluated only when the report is finished.</ahelp></paragraph>
+</body>
+</helpdocument>

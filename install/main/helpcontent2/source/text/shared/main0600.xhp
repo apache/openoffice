@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedmain0600xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Programming $[officename]</title>
+<filename>/text/shared/main0600.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-03-13T12:12:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154232"><bookmark_value>programming;$[officename]</bookmark_value>
+<bookmark_value>Basic;programming</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154232" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="programming"><link href="text/shared/main0600.xhp" name="Programming $[officename]">Programming $[officename]</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149760" xml-lang="en-US" l10n="U" oldref="2"><variable id="basic">$[officename] can be controlled by using the $[officename] API. 
+</variable></paragraph>
+<section id="basicalt">
+<paragraph role="warning" id="par_id3151111" xml-lang="en-US" l10n="U" oldref="12">$[officename] provides an Application Programming Interface (API) that enables you to control $[officename] components by using various programming languages. A $[officename] Software Development Kit is available for the programming interface.</paragraph>
+<paragraph role="warning" id="par_id3156346" xml-lang="en-US" l10n="CHG" oldref="15">For more information about $[officename] API reference, please visit http://api.openoffice.org/<comment>removed link; see i75345</comment></paragraph>
+<paragraph role="warning" id="par_id3153825" xml-lang="en-US" l10n="U" oldref="13">Macros created with $[officename] Basic based on the old programming interface will no longer be supported by the current version.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3149795" xml-lang="en-US" l10n="CHG" oldref="14">For more information on $[officename] Basic, select "$[officename] Basic" in the list box.</paragraph>
+</body>
+</helpdocument>

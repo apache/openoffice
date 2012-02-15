@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Filter" oor:package="org.openoffice.TypeDetection">
+ <node oor:name="Filters">
+  <node oor:name="XHP_Help" oor:op="replace">
+        <prop oor:name="UIComponent"/>
+        <prop oor:name="TemplateName"/>
+        <prop oor:name="FileFormatVersion"><value>0</value></prop>
+        <prop oor:name="Type"><value>XHP_Help</value></prop>
+        <prop oor:name="DocumentService"><value>com.sun.star.text.TextDocument</value></prop>
+        <prop oor:name="UserData"><value oor:separator=",">com.sun.star.documentconversion.XSLTFilter,,com.sun.star.comp.Writer.XMLOasisImporter,com.sun.star.comp.Writer.XMLOasisExporter,%origin%/filter/xmlhelp2soffice.xsl,%origin%/filter/soffice2xmlhelp.xsl,%origin%/filter/xmlhel.dtd,%origin%/filter/xmlhelptemplate.ott</value></prop>
+        <prop oor:name="FilterService"><value>com.sun.star.comp.Writer.XmlFilterAdaptor</value></prop>
+        <prop oor:name="UIName"><value>Help (xhp)</value></prop>
+        <prop oor:name="Flags"><value>IMPORT EXPORT ALIEN 3RDPARTYFILTER</value></prop>
+  </node>
+ </node>
+</oor:component-data>

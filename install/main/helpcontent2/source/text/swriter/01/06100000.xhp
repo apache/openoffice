@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textswriter0106100000xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Sort</title>
+<filename>/text/swriter/01/06100000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149353"><bookmark_value>tables;sorting rows</bookmark_value>
+      <bookmark_value>sorting;paragraphs/table rows</bookmark_value>
+      <bookmark_value>text; sorting paragraphs</bookmark_value>
+      <bookmark_value>lines of text; sorting paragraphs</bookmark_value>
+      <bookmark_value>sorting;paragraphs in special languages</bookmark_value>
+      <bookmark_value>Asian languages;sorting paragraphs/table rows</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:SortDialog" id="bm_id849221" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:TableSort" id="bm_id6670125" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149353" role="heading" level="1" l10n="U" oldref="1">Sort</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150015" role="paragraph" l10n="CHG" oldref="2"><variable id="sort"><ahelp hid=".uno:SortDialog">Sorts the selected paragraphs or table rows alphabetically or numerically.</ahelp> You can define up to three sort keys as well as combine alphanumeric and numeric sort keys.
+</variable></paragraph>
+      <section id="howtoget">
+         <embed href="text/swriter/00/00000406.xhp#sortieren"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3150931" role="heading" level="2" l10n="U" oldref="3">Sort criteria</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_SORTING:CB_KEY1" id="bm_id3153926" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_SORTING:CB_KEY2" id="bm_id3166462" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_SORTING:CB_KEY3" id="bm_id3166466" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149029" role="heading" level="2" l10n="U" oldref="4">Keys 1 to 3</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147170" role="paragraph" l10n="U" oldref="5"><ahelp hid="SW:CHECKBOX:DLG_SORTING:CB_KEY3">Specifies additional sorting criteria. You can also combine sort keys.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:DLG_SORTING:ED_KEY1" id="bm_id3156318" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:DLG_SORTING:ED_KEY2" id="bm_id3156322" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:DLG_SORTING:ED_KEY3" id="bm_id3154638" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147565" role="heading" level="2" l10n="U" oldref="6">Column 1 to 3</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154644" role="paragraph" l10n="CHG" oldref="7"><ahelp hid="SW:NUMERICFIELD:DLG_SORTING:ED_KEY3">Enter the number of the table column that you want to use as a basis for sorting.</ahelp></paragraph><comment>removed a para</comment>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_SORTING:DLB_KEY1" id="bm_id3149286" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_SORTING:DLB_KEY2" id="bm_id3149289" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_SORTING:DLB_KEY3" id="bm_id3149292" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150254" role="heading" level="2" l10n="U" oldref="9">Key type 1 to 3</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149752" role="paragraph" l10n="U" oldref="10"><ahelp hid="SW:LISTBOX:DLG_SORTING:DLB_KEY3">Select the sorting option that you want to use.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3151177" role="heading" level="2" l10n="U"
+                 oldref="16">Order</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id072020090105453" role="heading" level="3" l10n="NEW">Ascending</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_UP" id="bm_id3147506" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_UP2" id="bm_id3147509" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_UP3" id="bm_id3147513" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3154270" role="paragraph" l10n="U" oldref="18"><ahelp hid="SW:RADIOBUTTON:DLG_SORTING:RB_UP3">Sorts in ascending order, (for example, 1, 2, 3 or a, b, c).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_DN" id="bm_id3154101" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_DN2" id="bm_id3154104" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_DN3" id="bm_id3152938" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150708" role="heading" level="2" l10n="U"
+                 oldref="19">Descending</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152946" role="paragraph" l10n="U" oldref="20"><ahelp hid="SW:RADIOBUTTON:DLG_SORTING:RB_DN3">Sorts in descending order (for example, 9, 8, 7 or z, y, x).</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149812" role="heading" level="2" l10n="U"
+                 oldref="11">Direction</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_COL" id="bm_id3152962" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153540" role="heading" level="2" l10n="U"
+                 oldref="12">Columns</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150973" role="paragraph" l10n="U" oldref="13"><ahelp hid="SW:RADIOBUTTON:DLG_SORTING:RB_COL">Sorts the columns in the table according to the current sort options.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_ROW" id="bm_id3153670" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147526" role="heading" level="2" l10n="U"
+                 oldref="14">Rows</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153677" role="paragraph" l10n="U" oldref="15"><ahelp hid="SW:RADIOBUTTON:DLG_SORTING:RB_ROW">Sorts the rows in the table or the paragraphs in the selection according to the current sort options.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3151312" role="heading" level="2" l10n="U"
+                 oldref="21">Separator</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150350" role="paragraph" l10n="U" oldref="22">Paragraphs are separated by nonprinting paragraph marks. You can also specify that tabs or a character act as separators when you sort paragraphs.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_TAB" id="bm_id3155896" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154570" role="heading" level="2" l10n="U"
+                 oldref="23">Tabs</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155902" role="paragraph" l10n="U" oldref="24"><ahelp hid="SW:RADIOBUTTON:DLG_SORTING:RB_TAB">If the selected paragraphs correspond to a list separated by tabs, select this option.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SORTING:RB_TABCH" id="bm_id3154201" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_SORTING:ED_TABCH" id="bm_id3159190" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154190" role="heading" level="2" l10n="U"
+                 oldref="25">Character</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159196" role="paragraph" l10n="U" oldref="26"><ahelp hid="SW:EDIT:DLG_SORTING:ED_TABCH">Enter the character that you want to use as a separator in the selected area.</ahelp> By using the separator, $[officename] can determine the position of the sorting key in the selected paragraph.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_SORTING:PB_DELIM" id="bm_id3151335" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151324" role="heading" level="2" l10n="U"
+                 oldref="31">...</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155178" role="paragraph" l10n="U" oldref="32"><ahelp hid="SW_PUSHBUTTON_DLG_SORTING_PB_DELIM">Opens the <emph>Special Characters</emph> dialog, where you can select the character that you want to use as a separator.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_SORTING:LB_LANG" id="bm_id3149494" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149482" role="heading" level="2" l10n="U"
+                 oldref="33">Language</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151252" role="paragraph" l10n="U" oldref="34"><ahelp hid="SW_LISTBOX_DLG_SORTING_LB_LANG">Select the language that defines the sorting rules.</ahelp> Some languages sort special characters differently than other languages.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_SORTING:CB_CASE" id="bm_id3154832" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149104" role="heading" level="2" l10n="U"
+                 oldref="35">Match case</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154838" role="paragraph" l10n="CHG" oldref="36"><ahelp hid="SW_CHECKBOX_DLG_SORTING_CB_CASE">Distinguishes between uppercase and lowercase letters when you sort a table. For Asian languages special handling applies.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10895" role="note" l10n="NEW">For Asian languages, select <emph>Match case </emph>to apply multi-level collation. In the multi-level collation, the primitive forms of the entries are first compared with the cases of the forms and diacritics ignored. If the forms are the same, the diacritics of the forms are compared. If the forms are still the same, the cases, character widths, and Japanese Kana differences of the forms are compared.<comment>UFI: see #112590# and #112507#</comment></paragraph>
+   </body>
+</helpdocument>

@@ -1,0 +1,76 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_view_OfficeDocumentView_idl__ 
+#define __com_sun_star_view_OfficeDocumentView_idl__ 
+ 
+#ifndef __com_sun_star_view_XSelectionSupplier_idl__ 
+#include <com/sun/star/view/XSelectionSupplier.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_view_XViewSettingsSupplier_idl__ 
+#include <com/sun/star/view/XViewSettingsSupplier.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_view_XControlAccess_idl__ 
+#include <com/sun/star/view/XControlAccess.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module view {  
+ 
+//============================================================================= 
+ 
+/** specifies a view of a standard office document.
+ */
+published service OfficeDocumentView
+{ 
+	/** This mandatory interface gives access to the current user selection 
+				within this office document view.
+
+		<p>The type of the selection depends on the actual document type.</p>
+	 */
+	interface com::sun::star::view::XSelectionSupplier; 
+ 
+	 
+	/** This optional interface gives access to the view properties within this 
+		control for an office document.
+
+		@see ViewSettings
+	 */
+	[optional] interface com::sun::star::view::XViewSettingsSupplier; 
+ 
+	 
+	/** Within this office document view, this optional interface gives 
+		access to the controls which belong to specified control models.
+	 */
+	[optional] interface com::sun::star::view::XControlAccess; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

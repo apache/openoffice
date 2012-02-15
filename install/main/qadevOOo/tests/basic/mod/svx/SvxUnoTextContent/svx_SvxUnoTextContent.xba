@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="svx_SvxUnoTextContent" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+' Requiered for  com.sun.star.lang.XComponent
+ Global oComponentInstance As Object ' it will be disposed
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' svx.SvxUnoTextContent
+'*************************************************************************
+On Error Goto ErrHndl
+
+    Dim bOK As Boolean
+    Dim oEnum As Object
+    Dim oCursor As Object
+    Dim oShape As Object
+
+    bOK = true
+
+    oDoc = utils.createDocument("sdraw", cObjectName)
+
+    oShape = oDoc.createInstance("com.sun.star.drawing.TextShape")
+    oDoc.DrawPages(0).Add(oShape)
+
+    Dim oSize As new com.sun.star.awt.Size
+    Dim oPos As new com.sun.star.awt.Point
+    oSize.Width = 5000
+    oSize.Height = 3500
+    oPos.X = 7500
+    oPos.Y = 5000
+    oShape.Size = oSize
+    oShape.Position = oPos
+
+    oCursor = oShape.createTextCursor()
+    oShape.insertString(oCursor, "String1 from SvxUnoTextContent", false)
+    oShape.insertControlCharacter(oCursor, com.sun.star.text.ControlCharacter.PARAGRAPH_BREAK, false)
+    oShape.insertString(oCursor, "String2 from SvxUnoTextContent", false)
+    oShape.insertControlCharacter(oCursor, com.sun.star.text.ControlCharacter.PARAGRAPH_BREAK, false)
+
+    oEnum = oShape.createEnumeration()
+
+    oObj = oEnum.nextElement()
+    oComponentInstance = oEnum.nextElement()
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+</script:module>

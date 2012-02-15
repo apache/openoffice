@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0101110101xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Templates: Address Book Assignment</title>
+<filename>/text/shared/01/01110101.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-06-14T15:05:30">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="paragraph" id="par_id3149355" xml-lang="en-US" l10n="E" oldref="15" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AddressBookSource" id="bm_id6705706" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AddressBookSource" id="bm_id3145345" localize="false"/>
+<paragraph role="heading" id="hd_id3156411" xml-lang="en-US" level="1" l10n="U" oldref="1">Templates: Address Book Assignment</paragraph>
+<section id="voradzutxt">
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:AddressBookSource">Edit the field assignments and the data source for your address book.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#voradzu"/>
+</section>
+<paragraph role="heading" id="hd_id3149399" xml-lang="en-US" level="2" l10n="U" oldref="3">Address Book Source</paragraph>
+<paragraph role="paragraph" id="par_id3152996" xml-lang="en-US" l10n="U" oldref="4">Set the data source and data table for your address book.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:ComboBox:DLG_ADDRESSBOOKSOURCE:CB_DATASOURCE" id="bm_id3155390" localize="false"/>
+<paragraph role="heading" id="hd_id3147654" xml-lang="en-US" level="3" l10n="U" oldref="5">Data Source</paragraph>
+<paragraph role="paragraph" id="par_id3154306" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVTOOLS_COMBOBOX_DLG_ADDRESSBOOKSOURCE_CB_DATASOURCE">Select the data source for your address book.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:ComboBox:DLG_ADDRESSBOOKSOURCE:CB_TABLE" id="bm_id3143271" localize="false"/>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="3" l10n="U" oldref="7">Table</paragraph>
+<paragraph role="paragraph" id="par_id3149164" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVTOOLS_COMBOBOX_DLG_ADDRESSBOOKSOURCE_CB_TABLE">Select the data table for your address book.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svtools:PushButton:DLG_ADDRESSBOOKSOURCE:PB_ADMINISTATE_DATASOURCES" id="bm_id3154811" localize="false"/>
+<paragraph role="heading" id="hd_id3145119" xml-lang="en-US" level="3" l10n="U" oldref="9">Configure</paragraph>
+<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVTOOLS_PUSHBUTTON_DLG_ADDRESSBOOKSOURCE_PB_ADMINISTATE_DATASOURCES">Add a new data source to the <emph>Address Book Source </emph>list.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155629" xml-lang="en-US" level="2" l10n="U" oldref="11">Field assignment</paragraph>
+<paragraph role="paragraph" id="par_id3153320" xml-lang="en-US" l10n="U" oldref="12">Define the field assignments for your address book.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_ADDRTEMPL_FIELD_ASSIGNMENT" id="bm_id3155179" localize="false"/>
+<paragraph role="heading" id="hd_id3155830" xml-lang="en-US" level="3" l10n="U" oldref="13">(Field name)</paragraph>
+<paragraph role="paragraph" id="par_id3154143" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="HID_ADDRTEMPL_FIELD_ASSIGNMENT">Select the field in the data table that corresponds to the address book entry.</ahelp></paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/guide/data_addressbook.xhp#data_addressbook"/>
+</section>
+</body>
+</helpdocument>

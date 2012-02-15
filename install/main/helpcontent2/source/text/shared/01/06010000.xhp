@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0106010000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Spelling and Grammar</title>
+         <filename>/text/shared/01/06010000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="rechtschreibung">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149047"><bookmark_value>dictionaries; spellcheck</bookmark_value>
+         <bookmark_value>spellcheck; dialog</bookmark_value>
+         <bookmark_value>languages; spellcheck</bookmark_value>
+</bookmark><comment>mw changes "spellcheck;languages"</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:Spelling" id="bm_id3150702" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SpellingAndGrammarDialog" id="bm_id1022200801253693" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153882" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/01/06010000.xhp" name="Spellcheck">Spelling and Grammar</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154682" role="paragraph" l10n="CHG" oldref="2"><variable id="recht"><ahelp hid=".uno:Spelling">Checks the document or the current selection for spelling errors. If a grammar checking extension is installed, the dialog also checks for grammar errors.</ahelp>
+</variable></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#rechtschreibung"/>
+      </section>
+      <embed href="text/swriter/guide/spellcheck_dialog.xhp#spellcheck_dialog"/>
+      <paragraph xml-lang="en-US" id="par_idN1064B" role="paragraph" l10n="NEW">The spellcheck starts at the current cursor position and advances to the end of the document or selection. You can then choose to continue the spellcheck from the beginning of the document.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3166445" role="paragraph" l10n="U" oldref="3">Spellcheck looks for misspelled words and gives you the option of adding an unknown word to a user dictionary. When the first misspelled word is found, the <emph>Spellcheck</emph> dialog opens.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1022200801300654" role="paragraph" l10n="NEW">If a grammar checking extension is installed, this dialog is called <emph>Spelling and Grammar</emph>. Spelling errors are underlined in red, grammar errors in blue. First the dialog presents all spelling errors, then all grammar errors.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SPELLCHECK:CB_CHECK_GRAMMAR" id="bm_id1024200804045685" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id1022200801354366" role="paragraph" l10n="NEW"><ahelp hid=".">Enable <emph>Check grammar</emph> to work first on all spellcheck errors, then on all grammar errors.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MultiLineEdit:RID_SVXDLG_SPELLCHECK:ED_NEWWORD" id="bm_id756859" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149511" role="heading" level="2" l10n="CHG"
+                 oldref="6">Not in dictionary</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149798" role="paragraph" l10n="CHG" oldref="7"><ahelp hid=".">Displays the sentence with the misspelled word highlighted. Edit the word or the sentence, or click one of the suggestions in the text box below.</ahelp></paragraph>
+<!-- removed HID SVX_LISTBOX_RID_SVXDLG_SPELLCHECK_LB_NEWWORD -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXDLG_SPELLCHECK:LB_SUGGESTION" id="bm_id9300210" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149885" role="heading" level="2" l10n="U"
+                 oldref="10">Suggestions</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155628" role="paragraph" l10n="CHG" oldref="11"><ahelp hid="SVX_LISTBOX_RID_SVXDLG_SPELLCHECK_LB_NEWWORD">Lists suggested words to replace the misspelled word. Select the word that you want to use, and then click <emph>Change</emph> or <emph>Change All</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXDLG_SPELLCHECK:LB_LANGUAGE" id="bm_id3150822" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145087" role="heading" level="2" l10n="CHG"
+                 oldref="12">Text Language<comment>spec doc Spelling_and_Grammar.odt</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3144422" role="paragraph" l10n="CHG" oldref="13"><ahelp hid="SVX_LISTBOX_RID_SVXDLG_SPELLCHECK_LB_LANGUAGE">Specifies the language to use to check the spelling.</ahelp></paragraph>
+      <embed href="text/shared/optionen/01010401.xhp#sprachenfeld"/>
+<!-- removed HID SVX_PUSHBUTTON_RID_SVXDLG_SPELLCHECK_BTN_AUTOCORR -->
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_SPELLCHECK:PB_AUTOCORR" id="bm_id9182103" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154071" role="heading" level="2" l10n="U"
+                 oldref="52"><switchinline select="appl"><caseinline select="WRITER">AutoCorrect
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153798" role="paragraph" l10n="U" oldref="53"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_SPELLCHECK_BTN_AUTOCORR">Adds the current combination of the incorrect word and the replacement word to the AutoCorrect replacements table.</ahelp>
+</caseinline></switchinline></paragraph>
+<!-- removed HID SVX_PUSHBUTTON_RID_SVXDLG_SPELLCHECK_BTN_OPTIONS -->
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_SPELLCHECK:PB_OPTIONS" id="bm_id9094821" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151382" role="heading" level="2" l10n="U"
+                 oldref="56">Options</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154123" role="paragraph" l10n="CHG" oldref="57"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_SPELLCHECK_BTN_OPTIONS">Opens a dialog, where you can select the user-defined dictionaries, and set the rules for the spellchecking.</ahelp><comment>UFI: dialog has no name at all in 680m104</comment></paragraph>
+<!-- removed HID SVX_PUSHBUTTON_RID_SVXDLG_SPELLCHECK_BTN_ADD -->
+<bookmark xml-lang="en-US" branch="hid/cui:MenuButton:RID_SVXDLG_SPELLCHECK:MB_ADDTODICT" id="bm_id5068819" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153353" role="heading" level="2" l10n="U"
+                 oldref="24">Add</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3144432" role="paragraph" l10n="CHG" oldref="25"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_SPELLCHECK_BTN_ADD">Adds the unknown word to a user-defined dictionary.</ahelp></paragraph>
+<!-- removed HID SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_IGNORE -->
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SPLDLG_BUTTON_IGNORE" id="bm_id7157811" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155994" role="heading" level="2" l10n="CHG"
+                 oldref="22">Ignore Once</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148920" role="paragraph" l10n="U" oldref="23"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_IGNORE">Skips the unknown word and continues with the spellcheck.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN107CB" role="note" l10n="NEW">This label of this button changes to <emph>Resume</emph> if you leave the Spellcheck dialog open when you return to your document. To continue the spellcheck from the current position of the cursor, click <emph>Resume</emph>.</paragraph><comment>Ignore Rule button</comment>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SPLDLG_BUTTON_IGNORERULE" id="bm_id1024200804072166" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id1024200804091149" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">While performing a grammar check, click Ignore Rule to ignore the rule that is currently flagged as a grammar error.</ahelp></paragraph>
+<!-- removed HID SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_IGNOREALL -->
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SPLDLG_BUTTON_IGNOREALL" id="bm_id4155705" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150740" role="heading" level="2" l10n="CHG"
+                 oldref="20">Ignore All</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145318" role="paragraph" l10n="U" oldref="21"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_IGNOREALL">Skips all occurrences of the unknown word in the entire document and continues with the spellcheck.</ahelp></paragraph>
+<!-- removed HID SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_CHANGE -->
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SPLDLG_BUTTON_CHANGE" id="bm_id2069765" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153056" role="heading" level="2" l10n="CHG"
+                 oldref="18">Change</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148559" role="paragraph" l10n="CHG" oldref="19"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_CHANGE">Replaces the unknown word with the current suggestion. If you changed more than just the misspelled word, the entire sentence is replaced.</ahelp></paragraph>
+<!-- removed HID SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_CHANGEALL -->
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SPLDLG_BUTTON_CHANGEALL" id="bm_id9187902" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145787" role="heading" level="2" l10n="CHG"
+                 oldref="16">Change All</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3144446" role="paragraph" l10n="CHG" oldref="17"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SPELLCHECK:BTN_CHANGEALL">Replaces all occurrences of the unknown word with the current suggestion.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_SPELLCHECK:PB_UNDO" id="bm_id9617297" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10850" role="heading" level="2" l10n="NEW">Undo</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10854" role="paragraph" l10n="CHG"><ahelp hid=".">Click to undo the last change in the current sentence. Click again to undo the previous change in the same sentence.</ahelp></paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/spellcheck_dialog.xhp#spellcheck_dialog"/>
+         <paragraph xml-lang="en-US" id="par_id3147426" role="paragraph" l10n="C"><link href="text/shared/01/06020000.xhp" name="Thesaurus">Thesaurus</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidectlxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Languages Using Complex Text Layout</title>
+<filename>/text/shared/guide/ctl.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153662"><bookmark_value>CTL;complex text layout languages</bookmark_value>
+<bookmark_value>languages;complex text layout</bookmark_value>
+<bookmark_value>text;CTL languages</bookmark_value>
+<bookmark_value>text layout for special languages</bookmark_value>
+<bookmark_value>right-to-left text</bookmark_value>
+<bookmark_value>entering text from right to left</bookmark_value>
+<bookmark_value>bi-directional writing</bookmark_value>
+<bookmark_value>Hindi;entering text</bookmark_value>
+<bookmark_value>Hebrew;entering text</bookmark_value>
+<bookmark_value>Arabic;entering text</bookmark_value>
+<bookmark_value>Thai;entering text</bookmark_value>
+</bookmark><comment>mw made "text layout;" a one level entry</comment>
+<paragraph role="heading" id="hd_id3153662" xml-lang="en-US" level="1" l10n="U" oldref="13"><variable id="ctl"><link href="text/shared/guide/ctl.xhp" name="Languages Using Complex Text Layout">Languages Using Complex Text Layout</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147618" xml-lang="en-US" l10n="U" oldref="10">Currently, $[officename] supports Hindi, Thai, Hebrew, and Arabic as <link href="text/shared/00/00000005.xhp#ctl" name="CTL languages">CTL languages</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3155420" xml-lang="en-US" l10n="U" oldref="11">If you select the text flow from right to left, embedded Western text still runs from left to right. The cursor responds to the arrow keys in that Right Arrow moves it "to the text end" and Left Arrow "to the text start".</paragraph>
+<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U" oldref="1">You can change the text writing direction directly be pressing one of the following keys:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154758" xml-lang="en-US" l10n="U" oldref="2"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+D or <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Right Shift Key - switch to right-to-left text entry</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149047" xml-lang="en-US" l10n="U" oldref="3"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+A or <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Left Shift Key - switch to left-to-right text entry</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="4">The modifier-only key combinations only work when CTL support is enabled.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="5">In multicolumn pages, sections or frames that are formatted with text flow from right to left, the first column is the right column and the last column is the left column.</paragraph>
+<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="U" oldref="6">In $[officename] Writer text formatted in <emph>Thai language</emph> has the following features:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156280" xml-lang="en-US" l10n="U" oldref="7">In paragraphs with justified alignment, the characters are stretched to flush the lines at the margins. In other languages the spaces between words are stretched.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154909" xml-lang="en-US" l10n="U" oldref="8">Use the Delete key to delete a whole composite character. Use the Backspace key to delete the last part of the previous composite character.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149809" xml-lang="en-US" l10n="U" oldref="9">Use the Right or Left Arrow key to jump to the next or previous whole composite character. To position the cursor into a composite character, use <switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Arrow key.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/language_select.xhp#language_select"/>
+<paragraph role="paragraph" id="par_id3145786" xml-lang="en-US" l10n="U" oldref="12"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01140000.xhp" name="Language Settings - Languages">Language Settings - Languages</link></paragraph>
+<paragraph role="paragraph" id="par_id3153770" xml-lang="en-US" l10n="U" oldref="14"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01150300.xhp" name="Language Settings - Complex Text Layout">Language Settings - Complex Text Layout</link></paragraph>
+</body>
+</helpdocument>

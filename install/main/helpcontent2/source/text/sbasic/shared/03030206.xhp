@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03030206xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">TimeValue Function [Runtime]</title>
+<filename>/text/sbasic/shared/03030206.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T14:40:35">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="timevalue">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149670"><bookmark_value>TimeValue function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149670" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03030206.xhp" name="TimeValue Function [Runtime]">TimeValue Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="U" oldref="2">Calculates a serial time value from the specified hour, minute, and second - parameters passed as strings - that represents the time in a single numeric value. This value can be used to calculate the difference between times.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3154138" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3156282" xml-lang="en-US" l10n="U" oldref="4">TimeValue (Text As String)</paragraph>
+<paragraph role="heading" id="hd_id3153969" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156424" xml-lang="en-US" l10n="U" oldref="6">Date</paragraph>
+<paragraph role="heading" id="hd_id3145172" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3145786" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Text:</emph> Any string expression that contains the time that you want to calculate in the format "HH:MM:SS".</paragraph>
+<paragraph role="paragraph" id="par_id3152578" xml-lang="en-US" l10n="U" oldref="9">Use the TimeValue function to convert any time into a single value, so that you can calculate time differences.</paragraph>
+<paragraph role="paragraph" id="par_id3163710" xml-lang="en-US" l10n="U" oldref="10">This TimeValue function returns the type Variant with VarType 7 (Date), and stores this value internally as a double-precision number between 0 and 0.9999999999.</paragraph>
+<paragraph role="paragraph" id="par_id3151117" xml-lang="en-US" l10n="U" oldref="11">As opposed to the DateSerial or the DateValue function, where serial date values result in days relative to a fixed date, you can calculate with the values that are returned by the TimeValue function, but you cannot evaluate them.</paragraph>
+<paragraph role="paragraph" id="par_id3147426" xml-lang="en-US" l10n="U" oldref="12">In the TimeSerial function, you can pass individual parameters (hour, minute, second) as separate numeric expressions. For the TimeValue function, however, you can pass a string as a parameter containing the time.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<embed href="text/sbasic/shared/00000003.xhp#err13"/>
+<paragraph role="heading" id="hd_id3145271" xml-lang="en-US" level="2" l10n="U" oldref="13">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3152597" xml-lang="en-US" l10n="U" oldref="30">Sub ExampleTimerValue</paragraph>
+<paragraph role="paragraph" id="par_id3147348" xml-lang="en-US" l10n="U" oldref="31">Dim daDT as Date</paragraph>
+<paragraph role="paragraph" id="par_id3148576" xml-lang="en-US" l10n="U" oldref="32">Dim a1, b1, c1, a2, b2, c2 as String</paragraph>
+<paragraph role="paragraph" id="par_id3149378" xml-lang="en-US" l10n="U" oldref="33">a1 = "start time"</paragraph>
+<paragraph role="paragraph" id="par_id3145800" xml-lang="en-US" l10n="U" oldref="34">b1 = "end time"</paragraph>
+<paragraph role="paragraph" id="par_id3151074" xml-lang="en-US" l10n="U" oldref="35">c1 = "total time"</paragraph>
+<paragraph role="paragraph" id="par_id3154492" xml-lang="en-US" l10n="U" oldref="37">a2 = "8:34"</paragraph>
+<paragraph role="paragraph" id="par_id3155602" xml-lang="en-US" l10n="U" oldref="38">b2 = "18:12"</paragraph>
+<paragraph role="paragraph" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="39">daDT = TimeValue(b2) - TimeValue(a2)</paragraph>
+<paragraph role="paragraph" id="par_id3153838" xml-lang="en-US" l10n="U" oldref="40">c2 = a1 &amp; ": " &amp; a2 &amp; chr(13)</paragraph>
+<paragraph role="paragraph" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="41">c2 = c2 &amp; b1 &amp; ": " &amp; b2 &amp; chr(13)</paragraph>
+<paragraph role="paragraph" id="par_id3154755" xml-lang="en-US" l10n="U" oldref="42">c2 = c2 &amp; c1 &amp; ": " &amp; trim(Str(Hour(daDT))) &amp; ":" &amp; trim(Str(Minute(daDT))) &amp; ":" &amp; trim(Str(Second(daDT)))</paragraph>
+<paragraph role="paragraph" id="par_id3153714" xml-lang="en-US" l10n="U" oldref="43">Msgbox c2</paragraph>
+<paragraph role="paragraph" id="par_id3155767" xml-lang="en-US" l10n="U" oldref="44">end sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalc01func_datevaluexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">DATEVALUE </title>
+         <filename>/text/scalc/01/func_datevalue.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145621"><bookmark_value>DATEVALUE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DATWERT" id="bm_id3163820" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145621" role="heading" level="2" l10n="U"
+                 oldref="18"><variable id="datevalue"><link href="text/scalc/01/func_datevalue.xhp">DATEVALUE</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145087" role="paragraph" l10n="U" oldref="19"><ahelp hid="HID_FUNC_DATWERT">Returns the internal date number for text in quotes.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149281" role="paragraph" l10n="CHG" oldref="20">The internal date number is returned as a number. The number is determined by the date system that is used by $[officename] to calculate dates.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0119200903491982" role="paragraph" l10n="NEW">If the text string also includes a time value, DATEVALUE only returns the integer part of the conversion.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3156294" role="heading" level="3" l10n="U"
+                 oldref="21">Syntax</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149268" role="code" l10n="U" oldref="22">DATEVALUE("Text")</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154819" role="paragraph" l10n="U" oldref="23">
+         <emph>Text</emph> is a valid date expression and must be entered with quotation marks.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3156309" role="heading" level="3" l10n="U"
+                 oldref="24">Example</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155841" role="paragraph" l10n="CHG" oldref="25">
+         <emph>=DATEVALUE("1954-07-20")</emph> yields 19925.</paragraph>
+   </body>
+</helpdocument>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidecopytext2applicationxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Inserting Data From Text Documents</title>
+<filename>/text/shared/guide/copytext2application.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-18T11:33:03">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152924"><bookmark_value>sending; AutoAbstract function in presentations</bookmark_value>
+<bookmark_value>AutoAbstract function for sending text to presentations</bookmark_value>
+<bookmark_value>outlines; sending to presentations</bookmark_value>
+<bookmark_value>text; copying by drag and drop</bookmark_value>
+<bookmark_value>drag and drop; copying and pasting text</bookmark_value>
+<bookmark_value>inserting;data from text documents</bookmark_value>
+<bookmark_value>copying;data from text documents</bookmark_value>
+<bookmark_value>pasting;data from text documents</bookmark_value>
+</bookmark><comment>mw added "pasting; and changed "drag and drop;""</comment>
+<paragraph role="heading" id="hd_id3152924" xml-lang="en-US" level="1" l10n="U" oldref="3"><variable id="copytext2application"><link href="text/shared/guide/copytext2application.xhp" name="Inserting Data From Text Documents">Inserting Data From Text Documents</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3156426" xml-lang="en-US" l10n="U" oldref="4">You can insert text into other document types, such as spreadsheets and presentations. Note that there is a difference between whether the text is inserted into a text frame, a spreadsheet cell, or into the outline view of a presentation.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="5">If you copy text to the clipboard, you can paste it with or without text attributes. Use the shortcut keys <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+C to copy and <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+V to paste.</paragraph>
+</listitem>
+</list>
+<table id="tbl_id3166460">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="E">
+<image id="img_id3143270" src="res/commandimagelist/sc_paste.png" width="5.64mm" height="5.64mm"><alt id="alt_id3143270" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3158430" xml-lang="en-US" l10n="CHG" oldref="12">To select the format in which the clipboard contents will be pasted, click the arrow next to the <emph>Paste</emph> icon on the Standard bar, or choose <emph>Edit - Paste Special</emph>, then select the proper format.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156155" xml-lang="en-US" l10n="U" oldref="6">If a text document contains headings formatted with the Heading Paragraph Style, choose <emph>File - Send - Outline to Presentation</emph>. A new presentation document is created, which contains the headings as an outline.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145316" xml-lang="en-US" l10n="U" oldref="9">If you want to transfer each heading together with its accompanying paragraphs, select the <emph>File - Send - AutoAbstract to Presentation</emph> command. You must have formatted the headings with a corresponding Paragraph Style to be able to see this command.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3156024" xml-lang="en-US" level="2" l10n="U" oldref="10">Copying Text Using Drag-and-Drop</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147303" xml-lang="en-US" l10n="U" oldref="7">If you select text and drag it into a spreadsheet with drag-and-drop, it will be inserted as text into the cell where you release the mouse.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149655" xml-lang="en-US" l10n="U" oldref="8">If you drag text to the normal view of a presentation, an OLE object is inserted as a $[officename] plug-in.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150793" xml-lang="en-US" l10n="U" oldref="11">If you drag the text to the outline view of a presentation, it will be inserted at the cursor location.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/copytable2application.xhp#copytable2application"/>
+<embed href="text/shared/guide/copy_drawfunctions.xhp#copy_drawfunctions"/>
+</body>
+</helpdocument>

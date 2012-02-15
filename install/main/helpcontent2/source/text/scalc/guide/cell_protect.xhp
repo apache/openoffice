@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguidecell_protectxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Protecting Cells from Changes</title>
+         <filename>/text/scalc/guide/cell_protect.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146119"><bookmark_value>protecting;cells and sheets</bookmark_value>
+      <bookmark_value>cells; protecting</bookmark_value>
+      <bookmark_value>cell protection; enabling</bookmark_value>
+      <bookmark_value>sheets; protecting</bookmark_value>
+      <bookmark_value>documents; protecting</bookmark_value>
+      <bookmark_value>cells; hiding for printing</bookmark_value>
+      <bookmark_value>changing; sheet protection</bookmark_value>
+      <bookmark_value>hiding;formulas</bookmark_value>
+      <bookmark_value>formulas;hiding</bookmark_value>
+</bookmark><comment>MW transferred "modifying;..." and "changing;..." into one index entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3146119" role="heading" level="1" l10n="U" oldref="5"><variable id="cell_protect"><link href="text/scalc/guide/cell_protect.xhp" name="Protecting Cells from Changes">Protecting Cells from Changes</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153368" role="paragraph" l10n="U" oldref="17">In <item type="productname">%PRODUCTNAME</item> Calc you can protect sheets and the document as a whole. You can choose whether the cells are protected against accidental changes, whether the formulas can be viewed from within Calc, whether the cells are visible or whether the cells can be printed.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145261" role="paragraph" l10n="U" oldref="18">Protection can be provided by means of a password, but it does not have to be. If you have assigned a password, protection can only be removed once the correct password has been entered.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148576" role="paragraph" l10n="U" oldref="19">Note that the cell protection for cells with the <emph>Protected</emph> attribute is only effective when you protect the whole sheet. In the default condition, every cell has the <emph>Protected</emph> attribute. Therefore you must remove the attribute selectively for those cells where the user may make changes. You then protect the whole sheet and save the document.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5974303" role="warning" l10n="NEW">These protection features are just switches to prevent accidental action. The features are not intended to provide any secure protection. For example, by exporting a sheet to another file format, a user may be able to surpass the protection features. There is only one secure protection: the password that you can apply when saving an OpenDocument file. A file that has been saved with a password can be opened only with the same password.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1066B" role="listitem" l10n="NEW">Select the cells that you want to specify the cell protection options for.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149019" role="listitem" l10n="U" oldref="7">Choose <item type="menuitem">Format - Cells</item> and click the <emph>Cell Protection</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152985" role="listitem" l10n="U" oldref="9">Select the protection options that you want. All options will be applied only after you protect the sheet from the Tools menu - see below.</paragraph>
+                        <paragraph xml-lang="en-US" id="par_id31529866655" role="listitem" l10n="NEW">Uncheck <emph>Protected</emph> to allow the user to change the currently selected cells.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3152898" role="listitem" l10n="U" oldref="10">Select <emph>Protected</emph> to prevent changes to the contents and the format of a cell. </paragraph>
+            <paragraph xml-lang="en-US" id="par_idN1069A" role="listitem" l10n="NEW">Select <emph>Hide formula</emph> to hide and to protect formulas from changes.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN106A1" role="listitem" l10n="NEW">Select <emph>Hide when printing</emph> to hide protected cells in the printed document. The cells are not hidden onscreen.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152872" role="listitem" l10n="U" oldref="11">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145362" role="listitem" l10n="U" oldref="12">Apply the protection options.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN106C0" role="listitem" l10n="NEW">To protect the cells from being changed / viewed / printed according to your settings in the <emph>Format - Cells</emph> dialog, choose <item type="menuitem">Tools - Protect Document - Sheet</item>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN106C7" role="listitem" l10n="CHG">To protect the structure of the document, for example the count, <link href="text/scalc/guide/rename_table.xhp">names</link>, and order of the sheets, from being changed, choose <item type="menuitem">Tools - Protect Document - Document</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106CF" role="listitem" l10n="CHG">(Optional) Enter a password.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN106D2" role="warning" l10n="NEW">If you forget your password, you cannot deactivate the protection. If you only want to protect cells from accidental changes, set the sheet protection, but do not enter a password.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153810" role="listitem" l10n="U" oldref="13">Click <emph>OK</emph>. </paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/cell_unprotect.xhp#cell_unprotect"/>
+         <embed href="text/shared/guide/protection.xhp#protection"/>
+         <paragraph xml-lang="en-US" id="par_idN10B8C" role="paragraph" l10n="NEW">
+            <embedvar href="text/shared/guide/digital_signatures.xhp#digital_signatures"/>
+         </paragraph>
+      </section>
+   </body>
+</helpdocument>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0105030700xml" indexer="include">
+<title id="tit" xml-lang="en-US">Alignment</title>
+<filename>/text/shared/01/05030700.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="ausrichtung">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150008"><bookmark_value>aligning; paragraphs</bookmark_value>
+<bookmark_value>paragraphs; alignment</bookmark_value>
+<bookmark_value>lines of text; alignment</bookmark_value>
+<bookmark_value>left alignment of paragraphs</bookmark_value>
+<bookmark_value>right alignment of paragraphs</bookmark_value>
+<bookmark_value>centered text</bookmark_value>
+<bookmark_value>justifying text</bookmark_value>
+</bookmark><comment>MW deleted "text;"</comment>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_FORMAT_PARAGRAPH_ALIGN" id="bm_id3149495" localize="false"/>
+<paragraph role="heading" id="hd_id3150008" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05030700.xhp" name="Alignment">Alignment</link></paragraph>
+<paragraph role="paragraph" id="par_id3147399" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_FORMAT_PARAGRAPH_ALIGN">Sets the alignment of the paragraph relative to the margins of page.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040500.xhp#absatzausrichtung"/>
+</section>
+<paragraph role="heading" id="hd_id3143268" xml-lang="en-US" level="2" l10n="U" oldref="3">Alignment</paragraph>
+<paragraph role="paragraph" id="par_id3147008" xml-lang="en-US" l10n="CHG" oldref="4">Set the alignment options for the current paragraph.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_LEFTALIGN" id="bm_id3155941" localize="false"/>
+<paragraph role="heading" id="hd_id3153681" xml-lang="en-US" level="3" l10n="U" oldref="5">Left</paragraph>
+<paragraph role="paragraph" id="par_id3153031" xml-lang="en-US" l10n="U" oldref="6"><variable id="linkstext"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_LEFTALIGN">Aligns the paragraph to the left page margin.</ahelp>
+</variable> If Asian language support is enabled, this option is named Left/Top.</paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#sylinksbuendig"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_RIGHTALIGN" id="bm_id3150465" localize="false"/>
+<paragraph role="heading" id="hd_id3154142" xml-lang="en-US" level="3" l10n="U" oldref="7">Right</paragraph>
+<paragraph role="paragraph" id="par_id3156326" xml-lang="en-US" l10n="U" oldref="8"><variable id="rechtstext"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_RIGHTALIGN">Aligns the paragraph to the right page margin.</ahelp>
+</variable> If Asian language support is enabled, this option is named Right/Bottom.</paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#syrechtsbuendig"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_CENTERALIGN" id="bm_id3155179" localize="false"/>
+<paragraph role="heading" id="hd_id3148642" xml-lang="en-US" level="3" l10n="U" oldref="9">Centered</paragraph>
+<paragraph role="paragraph" id="par_id3153257" xml-lang="en-US" l10n="U" oldref="10"><variable id="zentrierttext"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_CENTERALIGN">Centers the contents of the paragraph on the page.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#syzentriert"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_JUSTIFYALIGN" id="bm_id3159270" localize="false"/>
+<paragraph role="heading" id="hd_id3149415" xml-lang="en-US" level="3" l10n="U" oldref="11">Justify</paragraph>
+<paragraph role="paragraph" id="par_id3152474" xml-lang="en-US" l10n="U" oldref="12"><variable id="blocksatztext"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_JUSTIFYALIGN">Aligns the paragraph to the left and to the right page margins.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#syblocksatz"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_ALIGN_PARAGRAPH:LB_LASTLINE" id="bm_id3153896" localize="false"/>
+<paragraph role="heading" id="hd_id3145068" xml-lang="en-US" level="3" l10n="U" oldref="13"><switchinline select="appl"><caseinline select="WRITER">Last Line 
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3154280" xml-lang="en-US" l10n="U" oldref="14"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_ALIGN_PARAGRAPH:LB_LASTLINE">Specify the alignment for the last line in the paragraph.</ahelp>
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ALIGN_PARAGRAPH:CB_EXPAND" id="bm_id3150542" localize="false"/>
+<paragraph role="heading" id="hd_id3154936" xml-lang="en-US" level="3" l10n="U" oldref="15"><switchinline select="appl"><caseinline select="WRITER">Expand single word 
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3154224" xml-lang="en-US" l10n="U" oldref="16"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_ALIGN_PARAGRAPH:CB_EXPAND">If the last line of a justified paragraph consists of one word, the word is stretched to the width of the paragraph.</ahelp>
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="WRITER"><embed href="text/shared/00/00000007.xhp#asia"/>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ALIGN_PARAGRAPH:CB_SNAP" id="bm_id3154123" localize="false"/>
+<paragraph role="heading" id="hd_id3150495" xml-lang="en-US" level="3" l10n="U" oldref="22">Snap to text grid (if active)<comment>UFI: asian enabled</comment></paragraph>
+<paragraph role="paragraph" id="par_id3154331" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ALIGN_PARAGRAPH_CB_SNAP">Aligns the paragraph to a text grid. To activate the text grid, choose <link href="text/swriter/01/05040800.xhp" name="Format - Page - Text Grid"><emph>Format - Page - Text Grid</emph></link>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_ALIGN_PARAGRAPH:LB_VERTALIGN" id="bm_id3384807" localize="false"/>
+<paragraph role="heading" id="hd_id3148672" xml-lang="en-US" level="2" l10n="U" oldref="18">Text-to-text - Alignment</paragraph>
+<paragraph role="paragraph" id="par_id3149807" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_ALIGN_PARAGRAPH_LB_VERTALIGN">Select an alignment option for oversized or undersized characters in the paragraph relative to the rest of the text in the paragraph.</ahelp></paragraph>
+</case>
+</switch>
+<section id="textflow">
+<paragraph role="heading" id="hd_id3144434" xml-lang="en-US" level="2" l10n="U" oldref="23">Properties</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_ALIGN_PARAGRAPH:LB_TEXTDIRECTION" id="bm_id3151044" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FORMAT_TABLE:LB_TEXTDIRECTION" id="bm_id3149791" localize="false"/>
+<!-- removed HID SVX_LISTBOX_RID_SVXPAGE_EXT_PARAGRAPH_LB_TEXTDIRECTION -->
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_COLUMN:LB_TEXTDIRECTION" id="bm_id3148971" localize="false"/>
+<paragraph role="heading" id="hd_id3154631" xml-lang="en-US" level="3" l10n="U" oldref="25">Text direction</paragraph>
+<paragraph role="paragraph" id="par_id3157960" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_ALIGN_PARAGRAPH_LB_TEXTDIRECTION">Specify the text direction for a paragraph that uses complex text layout (CTL). This feature is only available if complex text layout support is enabled.</ahelp></paragraph>
+</section>
+<embed href="text/shared/00/00000001.xhp#vorschau"/>
+</body>
+</helpdocument>

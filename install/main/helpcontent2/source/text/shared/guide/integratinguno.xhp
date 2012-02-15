@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguideintegratingunoxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Integrating new UNO components</title>
+<filename>/text/shared/guide/integratinguno.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-05-18T09:49:43">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149760"><bookmark_value>add-ons, see UNO components</bookmark_value>
+<bookmark_value>UNO components;integrating new</bookmark_value>
+<bookmark_value>installing;UNO components</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149760" xml-lang="en-US" level="1" l10n="U" oldref="7"><variable id="integratinguno"><link href="text/shared/guide/integratinguno.xhp" name="Integrating new UNO components">Integrating new UNO components</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147571" xml-lang="en-US" l10n="U" oldref="1">Programmers can write and integrate their own UNO (Universal Network Objects) components to $[officename]. Those new components can be added to the $[officename] menus and toolbars; we call them "Add-Ons".</paragraph>
+<paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="U" oldref="2">The integration of new components is supported by some tools and services. Details can be found in the $[officename] Developer's Guide. The three main steps are as follows:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153748" xml-lang="en-US" l10n="CHG" oldref="3">Register the new components within $[officename]. This can be accomplished using the tool <item type="literal">unopkg</item>, which can be found in {installpath}<switchinline select="sys"><caseinline select="UNIX">/ 
+</caseinline><defaultinline>\</defaultinline></switchinline>program.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="4">Integrate the new components as services. The ProtocolHandler and JobDispatch services assist you; more information can be found in the $[officename] Developer's Guide.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3166460" xml-lang="en-US" l10n="U" oldref="5">Change the user interface (menus or toolbars). This can be done almost automatically by writing an XML text file that describes the changes. More information can be found in the $[officename] Developer's Guide.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U" oldref="6">The Add-Ons can extend the functionality of $[officename]. They are not related to the <switchinline select="appl"><caseinline select="CALC"><link href="text/scalc/01/04060112.xhp" name="Add-Ins">Add-Ins</link>
+</caseinline><defaultinline>Add-Ins</defaultinline></switchinline> that provide new functions for $[officename] Calc.</paragraph>
+</body>
+</helpdocument>

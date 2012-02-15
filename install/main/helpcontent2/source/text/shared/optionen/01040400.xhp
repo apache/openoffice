@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedoptionen01040400xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Print</title>
+         <filename>/text/shared/optionen/01040400.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="drucken">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156156"><bookmark_value>pictures; printing</bookmark_value>
+<bookmark_value>tables in text; printing</bookmark_value>
+<bookmark_value>drawings; printing in text documents </bookmark_value>
+<bookmark_value>controls; printing</bookmark_value>
+<bookmark_value>backgrounds; printing</bookmark_value>
+<bookmark_value>printing; elements in text documents</bookmark_value>
+<bookmark_value>text documents; print settings</bookmark_value>
+<bookmark_value>printing; text always in black</bookmark_value>
+<bookmark_value>black printing in Calc</bookmark_value>
+<bookmark_value>printing; left/right pages</bookmark_value>
+<bookmark_value>even/odd pages;printing</bookmark_value>
+<bookmark_value>printing; text in reverse order</bookmark_value>
+<bookmark_value>reversing printing order</bookmark_value>
+<bookmark_value>brochures; printing several</bookmark_value>
+<bookmark_value>printing; brochures</bookmark_value>
+<bookmark_value>comments; printing in text</bookmark_value>
+<bookmark_value>printing; creating individual jobs</bookmark_value>
+<bookmark_value>faxes;selecting a fax machine</bookmark_value>
+</bookmark><comment>mw made "fax machine selection" a two level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_OPTPRINT_PAGE" id="bm_id3153750" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156414" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01040400.xhp" name="Print">Print</link></paragraph>
+<paragraph xml-lang="en-US" id="par_id3152801" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_OPTPRINT_PAGE">Specifies print settings within a text or HTML document.</ahelp></paragraph>
+</section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#drucken1"/>
+      </section>
+<paragraph xml-lang="en-US" id="par_id3153542" role="note" l10n="CHG" oldref="44">The print settings defined on this tab page apply to all subsequent print jobs, until you change the settings again. If you want to change the settings for the current print job only, use the <emph>File - Print</emph> dialog.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156330" role="heading" level="2" l10n="U" oldref="3">Contents</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155628" role="paragraph" l10n="U" oldref="4">Specifies which document contents are to be printed. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_PGRF" id="bm_id3145674" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.HelpId:vcl:PrintDialog:PrintPicturesAndObjects:CheckBox" id="bm_id3145675" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156156" role="heading" level="2" l10n="CHG" oldref="5">Pictures and objects</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153824" role="paragraph" l10n="U" oldref="6"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_PGRF">Specifies whether the graphics of your text document are printed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_PTAB" id="bm_id3148564" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150771" role="heading" level="2" l10n="U" oldref="7">Tables</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148943" role="paragraph" l10n="U" oldref="8"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_PTAB">Specifies whether the tables of the text document are printed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_PDRAW" id="bm_id3154923" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149294" role="heading" level="2" l10n="U" oldref="9">Drawings (not for HTML documents)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149457" role="paragraph" l10n="U" oldref="10"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_PDRAW">Specifies whether graphics created with $[officename] drawing functions are printed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_CTRLFLD" id="bm_id3151210" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.HelpId:vcl:PrintDialog:PrintControls:CheckBox" id="bm_id3151211" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153525" role="heading" level="2" l10n="CHG" oldref="11">Form controls</paragraph>
+ <paragraph xml-lang="en-US" id="par_id3158408" role="paragraph" l10n="CHG" oldref="12"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_CTRLFLD">Specifies whether the form control fields of the text document are printed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.HelpId:vcl:PrintDialog:PrintPageBackground:CheckBox" id="bm_id3154684" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_BACKGROUND" id="bm_id3999210" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153968" role="heading" level="2" l10n="CHG" oldref="13">Page background</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159150" role="paragraph" l10n="CHG" oldref="14"><ahelp hid=".">Specifies whether to include colors and objects that are inserted to the background of the page (Format - Page - Background) in the printed document.</ahelp><comment>UFI: fixes #i21977#</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_BLACK_FONT" id="bm_id3144760" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.HelpId:vcl:PrintDialog:PrintBlackFonts:CheckBox" id="bm_id3144761" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150868" role="heading" level="2" l10n="U" oldref="40">Print black</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149562" role="paragraph" l10n="U" oldref="42"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_BLACK_FONT">Specifies whether to always print text in black.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw_CheckBox_TP_OPTPRINT_PAGE_CB_HIDDEN_TEXT" id="bm_id342722" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintHiddenText:CheckBox" id="bm_id342723" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id8004394" role="heading" level="2" l10n="NEW">Hidden text</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2021546" role="paragraph" l10n="NEW"><ahelp hid=".">Enable this option to print text that is marked as hidden.</ahelp> The following hidden text is printed: text that is formatted as hidden by <link href="text/shared/01/05020200.xhp">Format - Character - Font Effects - Hidden</link>, and the text fields <link href="text/swriter/01/04090003.xhp">Hidden text and Hidden paragraphs</link>.<comment>UFI: sorry, due to a bug no links allowed in extended help text</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.HelpId:vcl:PrintDialog:PrintTextPlaceholder:CheckBox" id="bm_id5788750" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw_CheckBox_TP_OPTPRINT_PAGE_CB_TEXT_PLACEHOLDER" id="bm_id9393722" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id2623981" role="heading" level="2" l10n="NEW">Text placeholder</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7242042" role="paragraph" l10n="NEW"><ahelp hid=".">Enable this option to print text placeholders. Disable this option to leave the text placeholders blank in the printout.</ahelp><link href="text/swriter/01/04090003.xhp">Text placeholders</link> are fields.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3151115" role="heading" level="2" l10n="U" oldref="15">Pages</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145365" role="paragraph" l10n="U" oldref="16">Defines the print order for $[officename] Writer documents with multiple pages.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_LEFTP" id="bm_id3148618" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150874" role="heading" level="2" l10n="U" oldref="17">Left pages (not for HTML documents)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149665" role="paragraph" l10n="U" oldref="18"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_LEFTP">Specifies whether to print all left (even numbered) pages of the document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_RIGHTP" id="bm_id3147213" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152885" role="heading" level="2" l10n="U" oldref="19">Right pages (not for HTML documents)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150103" role="paragraph" l10n="U" oldref="20"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_RIGHTP">Specifies whether to print all right (odd numbered) pages of the document.</ahelp></paragraph>
+<comment>
+      <bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_REVERSE" id="bm_id3153142" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148577" role="heading" level="2" l10n="U" oldref="21">Reversed</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150486" role="paragraph" l10n="U" oldref="22"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_REVERSE">Specifies whether to reverse the printing order. The last page of the document will then be the first one printed.</ahelp></paragraph>
+</comment>
+      <bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_PROSPECT" id="bm_id3155306" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147318" role="heading" level="2" l10n="U" oldref="23">Brochure</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155417" role="paragraph" l10n="U" oldref="24"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_PROSPECT">Select the<emph> Brochure </emph>option to print your document in brochure format.</ahelp> The brochure format is as follows in $[officename] Writer:</paragraph>
+      <section id="brochure">
+         <paragraph xml-lang="en-US" id="par_id3149410" role="paragraph" l10n="CHG" oldref="25">If you print a document in portrait on a landscape page, two opposing sides in a brochure will be printed next to each other. If you have a printer with double-sided printing capability, you can create an entire brochure from your document without having to collate the pages later. If you have a printer that only has single-sided printing capability, you can achieve this effect by first printing the front pages with the "Front sides / right pages /odd pages" option marked, then re-inserting the entire paper stack in your printer and printing all the back pages with the "Back pages / left pages / even pages" option marked.</paragraph>
+      </section>
+<comment>
+<bookmark xml-lang="en-US" branch="hid/sw_CheckBox_TP_OPTPRINT_PAGE_CB_PROSPECT_RTL" id="bm_id8632770" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id9475386" role="heading" level="2" l10n="NEW">Right to left</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7894222" role="paragraph" l10n="NEW"><ahelp hid=".">Check to print the pages of the brochure in the correct order for a right-to-left script.</ahelp></paragraph>
+</comment>
+      <paragraph xml-lang="en-US" id="hd_id3149300" role="heading" level="2" l10n="U" oldref="26">Comments</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW:RADIOBUTTON:TP_OPTPRINT_PAGE:RB_NO" id="bm_id3157847" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintAnnotationMode:ListBox" id="bm_id3157848" localize="false"/>
+      <paragraph xml-lang="en-US" id="par_id3151320" role="paragraph" l10n="U" oldref="29"><ahelp hid=".">Specifies whether comments in your document are printed.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3148916" role="heading" level="2" l10n="U" oldref="45">Other</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw_CheckBox_TP_OPTPRINT_PAGE_CB_PRINTEMPTYPAGES" id="bm_id2646870" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintEmptyPages:CheckBox" id="bm_id2646871" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id4188055" role="heading" level="2" l10n="NEW">Print automatically inserted blank pages</paragraph>
+<paragraph xml-lang="en-US" id="par_id8295541" role="paragraph" l10n="CHG"><ahelp hid=".">If this option is enabled, automatically-inserted blank pages are being printed. This is best if you are printing double-sided. For example, in a book, a "chapter" paragraph style has been set to always start with an odd numbered page. If the previous chapter ends on an odd page, %PRODUCTNAME inserts an even numbered blank page. This option controls whether to print that even numbered page or not.</ahelp></paragraph>
+<comment>issue 116009
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_SINGLEJOBS" id="bm_id3153713" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145642" role="heading" level="2" l10n="CHG" oldref="47">Create single print jobs</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147338" role="paragraph" l10n="U" oldref="48"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_SINGLEJOBS">Specifies that each new print job will begin on a new page even if you are using a duplex printer.</ahelp> If this field is not checked then it is possible that the first page of the second copy is printed on the reverse side of the last page of the first copy, especially if there are an odd number of pages.</paragraph>
+</comment>
+      <bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTPRINT_PAGE:CB_PAPERFROMSETUP" id="bm_id3149107" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156384" role="heading" level="2" l10n="U" oldref="41">Paper tray from printer settings</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146316" role="paragraph" l10n="U" oldref="37"><ahelp hid="sw:CheckBox:TP_OPTPRINT_PAGE:CB_PAPERFROMSETUP">For printers with multiple trays, the "Paper tray from printer settings" option specifies whether the paper tray used is specified by the system settings of the printer.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW:LISTBOX:TP_OPTPRINT_PAGE:LB_FAX" id="bm_id3155336" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147362" role="heading" level="2" l10n="U" oldref="38">Fax</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154703" role="paragraph" l10n="U" oldref="39"><ahelp hid="SW:LISTBOX:TP_OPTPRINT_PAGE:LB_FAX">If you have installed fax software on your computer and wish to fax directly from the text document, select the desired fax machine.</ahelp></paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/print_brochure.xhp#print_brochure"/>
+      </section>
+   </body>
+</helpdocument>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104070100xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Envelope</title>
+<filename>/text/swriter/01/04070100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="umschlag">
+  <bookmark branch="hid/SW_HID_ENV_ENV" xml-lang="en-US" id="bm_id3148772"/><paragraph id="hd_id3145243" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/swriter/01/04070100.xhp" name="Envelope">Envelope</link></paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3147172" xml-lang="en-US" oldref="2"><ahelp hid="HID_ENV_ENV" visibility="visible">Enter the delivery and return addresses for the envelope. You can also insert address fields from a database, for example from the Addresses database.</ahelp></paragraph>
+  </section>
+  <section id="howtoget">
+  <embed href="text/swriter/00/00000404.xhp#umschlagb"/>
+</section>
+  <bookmark branch="hid/sw:MultiLineEdit:TP_ENV_ENV:EDT_ADDR" xml-lang="en-US" id="bm_id3151178"/><paragraph role="heading" level="2" id="hd_id3149295" l10n="U" xml-lang="en-US" oldref="3">Addressee</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3145415" xml-lang="en-US" oldref="4"><ahelp hid="SW:MULTILINEEDIT:TP_ENV_ENV:EDT_ADDR" visibility="visible">Enter the delivery address.</ahelp> You can also click in this box, and select a database, a table, and field, and then click the arrow button to insert the field in the address. If you want, you can apply  formatting, such as bold and underline, to the address text.</paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_ENV_ENV:BOX_SEND" xml-lang="en-US" id="bm_id3149802"/><bookmark branch="hid/sw:MultiLineEdit:TP_ENV_ENV:EDT_SEND" xml-lang="en-US" id="bm_id3149806"/><paragraph role="heading" level="2" id="hd_id3154102" l10n="U" xml-lang="en-US" oldref="5">Sender</paragraph>
+  <paragraph l10n="U" xml-lang="en-US" role="paragraph" id="par_id3153527" oldref="6"><ahelp visibility="visible" hid="SW:MULTILINEEDIT:TP_ENV_ENV:EDT_SEND">Includes a return address on the envelope. Select the <emph>Sender </emph>check box, and then enter the return  address.</ahelp> $[officename] automatically inserts your user data in the <emph>Sender </emph>box, but you can also enter the data that you want.</paragraph>
+  <bookmark branch="hid/sw:ListBox:TP_ENV_ENV:LB_DATABASE" xml-lang="en-US" id="bm_id3154474"/><paragraph role="heading" level="2" id="hd_id3154571" l10n="U" xml-lang="en-US" oldref="9">Database</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3154480" xml-lang="en-US" oldref="10"><ahelp hid="SW:LISTBOX:TP_ENV_ENV:LB_DATABASE" visibility="visible">Select the database containing the address data that you want to insert.</ahelp></paragraph>
+  <bookmark branch="hid/sw:ListBox:TP_ENV_ENV:LB_TABLE" xml-lang="en-US" id="bm_id3155892"/><paragraph role="heading" level="2" id="hd_id3151310" l10n="U" xml-lang="en-US" oldref="11">Table</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3155898" xml-lang="en-US" oldref="12"><ahelp hid="SW:LISTBOX:TP_ENV_ENV:LB_TABLE" visibility="visible">Select the database table containing the address data that you want to insert.</ahelp></paragraph>
+  <bookmark branch="hid/sw:ListBox:TP_ENV_ENV:LB_DBFIELD" xml-lang="en-US" id="bm_id3154197"/><bookmark branch="hid/sw:ImageButton:TP_ENV_ENV:BTN_INSERT" xml-lang="en-US" id="bm_id3154201"/><paragraph role="heading" level="2" id="hd_id3149695" l10n="U" xml-lang="en-US" oldref="13">Database field</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3155180" xml-lang="en-US" oldref="14"><ahelp hid="SW:IMAGEBUTTON:TP_ENV_ENV:BTN_INSERT" visibility="visible">Select the database field containing the address data that you want to insert, and then click the left arrow button. The data is added to the address box containing the cursor.</ahelp></paragraph>
+  <embed href="text/shared/00/00000001.xhp#vorschau"/>
+ </body>
+</helpdocument>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105090300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text Flow</title>
+<filename>/text/swriter/01/05090300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-02T10:57:18">UFI: spec "Tables: Automatic Page And Column Breaks"
+YJ:checked
+UFI: sw.features "Vertical formatting of individual table cells"; dedr: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="textfluss">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154558"><bookmark_value>tables;text flow around text tables</bookmark_value>
+<bookmark_value>text flow;around text tables</bookmark_value>
+<bookmark_value>columns; breaks in text tables</bookmark_value>
+<bookmark_value>row breaks in text tables</bookmark_value>
+<bookmark_value>tables; allowing page breaks</bookmark_value>
+<bookmark_value>page breaks; tables</bookmark_value>
+<bookmark_value>splitting tables;row breaks</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_TABLE_TEXTFLOW" id="bm_id3154507" localize="false"/>
+<paragraph role="heading" id="hd_id3154558" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05090300.xhp" name="Text Flow">Text Flow</link></paragraph>
+<paragraph role="paragraph" id="par_id3145245" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_TABLE_TEXTFLOW">Set the text flow options for the text before and after the table.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#tabelletextfluss"/>
+</section>
+<paragraph role="heading" id="hd_id3153920" xml-lang="en-US" level="2" l10n="U" oldref="3">Text flow</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TABLE_TEXTFLOW:CB_PAGEBREAK" id="bm_id3147174" localize="false"/>
+<paragraph role="heading" id="hd_id3153720" xml-lang="en-US" level="3" l10n="U" oldref="4">Break</paragraph>
+<paragraph role="paragraph" id="par_id3154643" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="SW:CHECKBOX:TP_TABLE_TEXTFLOW:CB_PAGEBREAK">Select this check box, and then select the type of break that you want to associate with the table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TABLE_TEXTFLOW:RB_BREAKPAGE" id="bm_id3147567" localize="false"/>
+<paragraph role="heading" id="hd_id3151183" xml-lang="en-US" level="3" l10n="U" oldref="6">Page</paragraph>
+<paragraph role="paragraph" id="par_id3149286" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SW:RADIOBUTTON:TP_TABLE_TEXTFLOW:RB_BREAKPAGE">Inserts a page break before or after the table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TABLE_TEXTFLOW:RB_BREAKCOLUMN" id="bm_id3154479" localize="false"/>
+<paragraph role="heading" id="hd_id3150981" xml-lang="en-US" level="3" l10n="U" oldref="8">Column</paragraph>
+<paragraph role="paragraph" id="par_id3151310" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SW:RADIOBUTTON:TP_TABLE_TEXTFLOW:RB_BREAKCOLUMN">Inserts a column break before or after the table on a multi-column page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TABLE_TEXTFLOW:RB_PAGEBREAKBEFORE" id="bm_id3149689" localize="false"/>
+<paragraph role="heading" id="hd_id3155898" xml-lang="en-US" level="3" l10n="U" oldref="10">Before</paragraph>
+<paragraph role="paragraph" id="par_id3149695" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SW:RADIOBUTTON:TP_TABLE_TEXTFLOW:RB_PAGEBREAKBEFORE">Inserts a page or column break before the table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TABLE_TEXTFLOW:RB_PAGEBREAKAFTER" id="bm_id3159201" localize="false"/>
+<paragraph role="heading" id="hd_id3159189" xml-lang="en-US" level="3" l10n="U" oldref="12">After</paragraph>
+<paragraph role="paragraph" id="par_id3155179" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SW:RADIOBUTTON:TP_TABLE_TEXTFLOW:RB_PAGEBREAKAFTER">Inserts a page or column break after the table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TABLE_TEXTFLOW:CB_PAGECOLL" id="bm_id3143276" localize="false"/>
+<paragraph role="heading" id="hd_id3149490" xml-lang="en-US" level="3" l10n="U" oldref="14">With Page Style</paragraph>
+<paragraph role="paragraph" id="par_id3143282" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="SW:CHECKBOX:TP_TABLE_TEXTFLOW:CB_PAGECOLL">Applies the page style that you specify to the first page that follows the page break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TABLE_TEXTFLOW:LB_PAGECOLL" id="bm_id3151258" localize="false"/>
+<paragraph role="heading" id="hd_id3154839" xml-lang="en-US" level="3" l10n="U" oldref="16">Page Style</paragraph>
+<paragraph role="paragraph" id="par_id3149098" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="SW:LISTBOX:TP_TABLE_TEXTFLOW:LB_PAGECOLL">Select the page style that you want to apply to the first page that follows the break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_TABLE_TEXTFLOW:NF_PAGENUM" id="bm_id3148972" localize="false"/>
+<paragraph role="heading" id="hd_id3149819" xml-lang="en-US" level="3" l10n="U" oldref="18">Page number</paragraph>
+<paragraph role="paragraph" id="par_id3148978" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SW:NUMERICFIELD:TP_TABLE_TEXTFLOW:NF_PAGENUM">Enter the page number for the first page that follows the break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TABLE_TEXTFLOW:CB_SPLIT" id="bm_id3147221" localize="false"/>
+<paragraph role="heading" id="hd_id3147100" xml-lang="en-US" level="3" l10n="CHG" oldref="33">Allow table to split across pages and columns</paragraph>
+<paragraph role="paragraph" id="par_id3153629" xml-lang="en-US" l10n="CHG" oldref="34"><ahelp hid="SW:CHECKBOX:TP_TABLE_TEXTFLOW:CB_SPLIT">Allows a page break or column break between the rows of a table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:TriStateBox:TP_TABLE_TEXTFLOW:CB_SPLIT_ROW" id="bm_id3669240" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:RowSplit" id="bm_id764262" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:RowSplit" id="bm_id6725669" localize="false"/>
+<paragraph role="heading" id="par_idN108D6" xml-lang="en-US" level="3" l10n="NEW">Allow row to break across pages and columns</paragraph>
+<paragraph role="paragraph" id="par_idN108DA" xml-lang="en-US" l10n="NEW"><ahelp hid="sw:TriStateBox:TP_TABLE_TEXTFLOW:CB_SPLIT_ROW">Allows a page break or column break inside a row of the table.</ahelp> This option is not applied to the first row in a table if the <emph>Repeat Heading</emph> option is selected.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TABLE_TEXTFLOW:CB_KEEP" id="bm_id3149046" localize="false"/>
+<paragraph role="heading" id="hd_id3149034" xml-lang="en-US" level="3" l10n="U" oldref="35">Keep with next paragraph</paragraph>
+<paragraph role="paragraph" id="par_id3147577" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SW:CHECKBOX:TP_TABLE_TEXTFLOW:CB_KEEP">Keeps the table and the following paragraph together when you insert the break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TABLE_TEXTFLOW:CB_HEADLINE" id="bm_id3155137" localize="false"/>
+<paragraph role="heading" id="hd_id3152772" xml-lang="en-US" level="3" l10n="U" oldref="19">Repeat heading</paragraph>
+<paragraph role="paragraph" id="par_id3153350" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SW:CHECKBOX:TP_TABLE_TEXTFLOW:CB_HEADLINE">Repeats the table heading on a new page when the table spans more than one page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_TABLE_TEXTFLOW:NF_REPEAT_HEADER" id="bm_id3560289" localize="false"/>
+<paragraph role="heading" id="par_idN1091C" xml-lang="en-US" level="3" l10n="NEW">The first ... rows</paragraph>
+<paragraph role="paragraph" id="par_idN10920" xml-lang="en-US" l10n="NEW"><ahelp hid="sw:NumericField:TP_TABLE_TEXTFLOW:NF_REPEAT_HEADER">Enter the number of rows to include in the heading.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TABLE_TEXTFLOW:LB_TEXTDIRECTION" id="bm_id2659993" localize="false"/>
+<paragraph role="heading" id="par_idN10940" xml-lang="en-US" level="3" l10n="NEW">Text direction</paragraph>
+<paragraph role="paragraph" id="par_idN10944" xml-lang="en-US" l10n="NEW"><ahelp hid="sw:ListBox:TP_TABLE_TEXTFLOW:LB_TEXTDIRECTION">Select the direction for the text in the cells.</ahelp> You can also use a combination of the following %PRODUCTNAME formatting options to specify the orientation of text in table cells:<comment>dedr: (put location of these options in brackets)</comment></paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10964" xml-lang="en-US" l10n="NEW">horizontal text</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10968" xml-lang="en-US" l10n="NEW">vertical text</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1096C" xml-lang="en-US" l10n="NEW">right-to-left (vertical) direction</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10970" xml-lang="en-US" l10n="NEW">left-to-right direction.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TABLE_TEXTFLOW:LB_VERTORIENT" id="bm_id3262733" localize="false"/>
+<paragraph role="heading" id="hd_id3151028" xml-lang="en-US" level="2" l10n="U" oldref="23">Vertical alignment</paragraph>
+<paragraph role="paragraph" id="par_id3149164" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="sw:ListBox:TP_TABLE_TEXTFLOW:LB_VERTORIENT">Specify the vertical text alignment for the cells in the table.</ahelp></paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/swriter/guide/table_repeat_multiple_headers.xhp#table_repeat_multiple_headers"/>
+</body>
+</helpdocument>

@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_io_XTempFile_idl__
+#define __com_sun_star_io_XTempFile_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_io_XStream_idl__
+#include <com/sun/star/io/XStream.idl>
+#endif
+
+#ifndef __com_sun_star_io_XSeekable_idl__
+#include <com/sun/star/io/XSeekable.idl>
+#endif
+
+
+//========================================================================
+module com { module sun { module star { module io {
+
+//========================================================================
+/** This interface offers access to temp files.
+ */
+published interface XTempFile
+{
+    // INTERFACES
+    //
+    // -------------------------------------------------------------------
+    /** interface <type>XStream</type> offers read and write access to
+        the same stream.
+    */
+    interface XStream;
+
+    // --------------------------------------------------------------------
+    /** interface <type>XSeekable</type> makes it possible to seek to a
+        certain position within a stream.
+    */
+    interface XSeekable;
+
+    // ATTRIBUTES
+    //
+    // --------------------------------------------------------------------
+    /** This attribute controls whether the file will be automatically
+        removed on object destruction.
+    */
+    [attribute] boolean RemoveFile;
+
+    // --------------------------------------------------------------------
+    /** This attribute specifies the URL of the temp file.
+    */
+    [readonly,attribute] string Uri;
+
+    // --------------------------------------------------------------------
+    /** This attribute specifies the temp file name.
+    */
+    [readonly,attribute] string ResourceName;
+
+};
+
+//=========================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0101130000xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Print</title>
+         <filename>/text/shared/01/01130000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154621"><bookmark_value>printing; documents</bookmark_value>
+<bookmark_value>documents; printing</bookmark_value>
+<bookmark_value>text documents; printing</bookmark_value>
+<bookmark_value>spreadsheets; printing</bookmark_value>
+<bookmark_value>presentations; print menu</bookmark_value>
+<bookmark_value>drawings; printing</bookmark_value>
+<bookmark_value>choosing printers</bookmark_value>
+<bookmark_value>printers; choosing</bookmark_value>
+<bookmark_value>print area selection</bookmark_value>
+<bookmark_value>selecting; print areas</bookmark_value>
+<bookmark_value>pages; selecting one to print</bookmark_value>
+<bookmark_value>printing; selections</bookmark_value>
+<bookmark_value>printing; copies</bookmark_value>
+<bookmark_value>copies; printing</bookmark_value>
+<bookmark_value>spoolfiles with Xprinter</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:Print" id="bm_id1076258" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Print" id="bm_id3147273" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:OK" id="bm_id0818200912034231" localize="false"/>
+
+<bookmark xml-lang="en-US" branch="hid/HID_PRINTDLG" id="bm_id081820090410118" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154621" role="heading" level="1" l10n="U" oldref="1">Print</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146946" role="paragraph" l10n="U" oldref="2"><variable id="druckentext"><ahelp hid=".uno:Print">Prints the current document, selection, or the pages that you specify. You can also set the print options for the current document.</ahelp>
+</variable> The printing options can vary according to the printer and the operating system that you use.</paragraph>
+
+
+      <section id="howtoget">
+         <embed href="text/shared/00/00000401.xhp#drucken"/>
+      </section>
+<paragraph xml-lang="en-US" id="par_id0818200912284853" role="paragraph" l10n="NEW">The Print dialog consists of three main parts: A preview with navigation buttons, several tab pages with control elements specific to the current document type, and the Print, Cancel, and Help buttons. </paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200901193992" role="paragraph" l10n="NEW">If you just want to know how to print your document, click any of the following links.</paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200912531416" role="paragraph" l10n="NEW"><emph>Printing text documents:</emph></paragraph>
+      <embed href="text/swriter/guide/print_brochure.xhp#print_brochure"/>
+      <embed href="text/swriter/guide/print_preview.xhp#print_preview"/>
+      <embed href="text/swriter/guide/print_small.xhp#print_small"/>
+      <embed href="text/swriter/guide/printing_order.xhp#printing_order"/>
+      <embed href="text/swriter/guide/printer_tray.xhp#printer_tray"/>
+<paragraph xml-lang="en-US" id="par_id0818200912531487" role="paragraph" l10n="NEW"><emph>Printing spreadsheets:</emph></paragraph>
+      <embed href="text/scalc/guide/printranges.xhp#printranges"/>
+      <embed href="text/scalc/guide/print_details.xhp#print_details"/>
+      <embed href="text/scalc/guide/print_exact.xhp#print_exact"/>
+      <embed href="text/scalc/guide/print_landscape.xhp#print_landscape"/>
+      <embed href="text/scalc/guide/print_title_row.xhp#print_title_row"/>
+<paragraph xml-lang="en-US" id="par_id0818200912531410" role="paragraph" l10n="NEW"><emph>Printing presentations:</emph></paragraph>
+      <embed href="text/simpress/guide/printing.xhp#printing"/>
+      <embed href="text/simpress/guide/print_tofit.xhp#print_tofit"/>
+<paragraph xml-lang="en-US" id="par_id0818200912531449" role="paragraph" l10n="NEW"><emph>General printing:</emph></paragraph>
+      <embed href="text/shared/guide/print_faster.xhp#print_faster"/>
+      <embed href="text/shared/guide/print_blackwhite.xhp#print_blackwhite"/>
+      <embed href="text/shared/guide/pageformat_max.xhp#pageformat_max"/>
+<paragraph xml-lang="en-US" id="par_id0818200912284952" role="note" l10n="NEW">The settings that you define in the Print dialog are valid only for the current print job that you start by clicking the Print button. <comment>is this true for Printer Settings, too?</comment>If you want to change some options permanently, open Tools - Options - %PRODUCTNAME (application name) - Print.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156080" role="paragraph" l10n="CHG" oldref="41"><switchinline select="appl"><caseinline select="WRITER">To set the default <item type="productname">%PRODUCTNAME</item> printer options for text documents, choose <link href="text/shared/optionen/01040400.xhp" name="Tools - Options - Writer - Print"><emph>Tools - Options - %PRODUCTNAME Writer - Print</emph></link>.
+</caseinline></switchinline></paragraph>
+<paragraph xml-lang="en-US" id="par_idN1099E" role="paragraph" l10n="NEW"><switchinline select="appl"><caseinline select="CALC">To set the default <item type="productname">%PRODUCTNAME</item> printer options for spreadsheet documents, choose <link href="text/shared/optionen/01060700.xhp" name="Tools - Options - Calc - Print"><emph>Tools - Options - %PRODUCTNAME Calc - Print</emph></link>.
+</caseinline></switchinline></paragraph>
+<paragraph xml-lang="en-US" id="par_idN109CD" role="paragraph" l10n="NEW"><switchinline select="appl"><caseinline select="IMPRESS">To set the default <item type="productname">%PRODUCTNAME</item>printer options for presentation documents, choose <link href="text/shared/optionen/01070400.xhp" name="Tools - Options - Impress - Print"><emph>Tools - Options - %PRODUCTNAME Impress - Print</emph></link>.
+</caseinline></switchinline></paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200901194137" role="note" l10n="NEW">Press Shift+F1 or choose <item type="menuitem">Help - What's This?</item> and point to any control element in the Print dialog to see an extended help text.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id0818200912284914" role="heading" level="2" l10n="NEW">Preview</paragraph>
+<paragraph xml-lang="en-US" id="par_id081820091228505" role="paragraph" l10n="NEW">The preview shows how each sheet of paper will look. You can browse through all sheets of paper with the buttons below the preview.</paragraph><comment>insert controls with hidden help here</comment>
+<paragraph xml-lang="en-US" id="hd_id0818200912285056" role="heading" level="2" l10n="NEW">General</paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200912285064" role="paragraph" l10n="NEW">On the General tab page, you find the most important control elements for printing. You can define which contents of your document are to be printed. You can select the printer and open the printer settings dialog.</paragraph>
+
+
+
+<comment>Writer:</comment>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintPageBackground:CheckBox" id="bm_id1" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id2" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to print colors and objects that are inserted to the background of the page (Format - Page - Background).</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintPicturesAndObjects:CheckBox" id="bm_id3" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id4" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether the graphics and drawings or OLE objects of your text document are printed.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintHiddenText:CheckBox" id="bm_id5" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id6" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Enable this option to print text that is marked as hidden.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintTextPlaceholder:CheckBox" id="bm_id7" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id8" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Enable this option to print text placeholders. Disable this option to leave the text placeholders blank in the printout.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintControls:CheckBox" id="bm_id9" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id10" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether the form control fields of the text document are printed.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintBlackFonts:CheckBox" id="bm_id11" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id12" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to always print text in black.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintEmptyPages:CheckBox" id="bm_id13" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id14" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">If this option is enabled automatically inserted blank pages are printed. This is best if you are printing double-sided. For example, in a book, a "chapter" paragraph style has been set to always start with an odd numbered page. If the previous chapter ends on an odd page, %PRODUCTNAME inserts an even numbered blank page. This option controls whether to print that even numbered page.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintAnnotationMode:FixedText" id="bm_id15" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id16" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specify where to print comments (if any).</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintAnnotationMode:ListBox" id="bm_id17" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id18" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">"Specify where to print comments (if any)."</ahelp></paragraph>
+
+
+<comment>Math:</comment>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:TitleRow:CheckBox" id="bm_id19" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id20" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether you want the name of the document to be included in the printout.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:FormulaText:CheckBox" id="bm_id21" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id22" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to include the contents of the Commands window at the bottom of the printout.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:Border:CheckBox" id="bm_id23" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id24" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Applies a thin border to the formula area in the printout.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintFormat:RadioButton:0" id="bm_id25" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id26" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Prints the formula without adjusting the current font size.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintFormat:RadioButton:1" id="bm_id27" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id28" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Adjusts the formula to the page format used in the printout.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintFormat:RadioButton:2" id="bm_id29" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id30" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Reduces or enlarges the size of the printed formula by a specified factor.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintScale:NumericField" id="bm_id31" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id32" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Reduces or enlarges the size of the printed formula by a specified factor.</ahelp></paragraph>
+
+
+<comment>Calc:</comment>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:IsIncludeEmptyPages:CheckBox" id="bm_id33" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id34" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">If checked empty pages that have no cell contents or draw objects are not printed.</ahelp></paragraph>
+
+
+
+<comment>Draw: would be the same as IMPRESS, but we cannot have the same Help ID twice in the same Help file. Even when switched this is not allowed because Help is compiled at compile time, while the appl switch gets evaluated only on run time.
+Moved all DRAW and IMPRESS to default section.</comment>
+<comment>BasicIDE: I doubt if we have a BASIC switch at all, so I moved the two IDs to default part. There they clashed with general IDs, so I removed them. Default text will be shown for BASIC IDE printing.</comment>
+
+<comment>General and Basic and Draw and Impress (at end of default case)</comment>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintPaperFromSetup:CheckBox" id="bm_id35" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id36" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">For printers with multiple trays this option specifies whether the paper tray used is specified by the system settings of the printer.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintContent:RadioButton:0" id="bm_id3149957" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3149164" role="paragraph" l10n="U" oldref="25"><ahelp hid="." visibility="hidden">Prints the entire document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintContent:RadioButton:1" id="bm_id3148924" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3152944" role="paragraph" l10n="CHG" oldref="27"><ahelp hid="." visibility="hidden">Prints only the pages or slides that you specify in the <emph>Pages</emph> box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintContent:RadioButton:2" id="bm_id3149902" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3150244" role="paragraph" l10n="U" oldref="30"><ahelp hid="." visibility="hidden">Prints only the selected area(s) or object(s) in the current document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PageRange:Edit" id="bm_id0818200903284799" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3146848" role="paragraph" l10n="U" oldref="28"><ahelp hid="." visibility="hidden">To print a range of pages, use a format like 3-6. To print single pages, use a format like 7;9;11. You can print a combination of page ranges and single pages, by using a format like 3-6;8;10;12.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:OptPage:ToFile" id="bm_id3156955A" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3150772" role="paragraph" l10n="CHG" oldref="18"><ahelp hid="." visibility="hidden">Prints to a file instead of to a printer.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:OptPage:SingleJobs" id="bm_id37" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id38" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Check to not rely on the printer to create collated copies but create a print job for each copy instead.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:OptPage:ToReverse" id="bm_id39" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id40" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Check to print pages in reverse order.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:JobPage:Copies" id="bm_id3154347" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3145069" role="paragraph" l10n="U" oldref="34"><ahelp hid="." visibility="hidden">Enter the number of copies that you want to print.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:JobPage:Collate" id="bm_id3148663" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3150865" role="paragraph" l10n="U" oldref="36"><ahelp hid="." visibility="hidden">Preserves the page order of the original document.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:JobPage:Properties" id="bm_id3150693" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3156113" role="paragraph" l10n="CHG" oldref="16"><ahelp hid="." visibility="hidden">Opens the printer properties dialog. The printer properties vary according to the printer that you select.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:JobPage:DetailsBtn" id="bm_id41" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id42" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Show/Hide detailed information of the selected printer.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:JobPage:PrinterList" id="bm_id3147144" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3149511" role="paragraph" l10n="CHG" oldref="4"><ahelp hid="." visibility="hidden">The list box shows the installed printers. Click the printer to use for the current print job. Click the Printer details button to see some information about the selected printer. Click the Properties button to change some of the printer properties.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintLeftRightPages:ListBox" id="bm_id43" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id44" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specify which pages to include in the output.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintProspect:CheckBox" id="bm_id45" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id46" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select the Brochure option to print the document in brochure format.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintProspectInclude:ListBox" id="bm_id47" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id48" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select which pages of a brochure to print.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PrintProspectRTL:ListBox" id="bm_id0818200903241442" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0818200904102910" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">For brochure printing, you can select a left-to-right order of pages or a right-to-left order.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:BorderBox" id="bm_id49" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id50" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Check to draw a border around each page.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:OrderBox" id="bm_id51" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id52" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select order in which pages are to be printed.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:OrientationBox" id="bm_id53" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id54" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select the orientation of the paper.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:SheetMarginBox" id="bm_id55" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id56" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select margin between the printed pages and paper edge.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:PageMarginBox" id="bm_id57" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id58" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select margin between individual pages on each sheet of paper.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:RowsBox" id="bm_id59" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id60" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select number of rows.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:ColumnsBox" id="bm_id61" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id62" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select number of columns.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:PagesPerSheetBox" id="bm_id63" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id64" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select how many pages to print per sheet of paper.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:NUpPage:PagesPerSheet" id="bm_id65" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id66" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Print multiple pages per sheet of paper.</ahelp></paragraph>
+
+<comment>Impress:</comment>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PageContentType:ListBox" id="bm_id67" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id68" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select which parts of the document should be printed.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:SlidesPerPage:ListBox" id="bm_id69" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id70" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select how many slides to print per page.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:SlidesPerPageOrder:ListBox" id="bm_id71" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id72" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specify how to arrange slides on the printed page.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:IsPrintName:CheckBox" id="bm_id73" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id74" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to print the page name of a document.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:IsPrintDateTime:CheckBox" id="bm_id75" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id76" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to print the current date and time.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:IsPrintHidden:CheckBox" id="bm_id77" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id78" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to print the pages that are currently hidden.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:Quality:RadioButton:0" id="bm_id79" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id80" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies to print in original colors.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:Quality:RadioButton:1" id="bm_id81" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id82" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies to print colors as grayscale.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:Quality:RadioButton:2" id="bm_id83" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id84" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies to print colors as black and white.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PageOptions:RadioButton:0" id="bm_id85" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id86" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specify how to scale slides in the printout.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PageOptions:RadioButton:1" id="bm_id87" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id88" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies that you do not want to further scale pages when printing.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PageOptions:RadioButton:2" id="bm_id89" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id90" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to scale down objects that are beyond the margins of the current printer so they fit on the paper in the printer.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.HelpID:vcl:PrintDialog:PageOptions:RadioButton:3" id="bm_id91" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id92" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies that pages are to be printed in tiled format. If the pages or slides are smaller than the paper, several pages or slides will be printed on one page of paper.</ahelp></paragraph>
+
+
+
+<paragraph xml-lang="en-US" id="hd_id0818200912285074" role="heading" level="2" l10n="NEW">%PRODUCTNAME Writer / Calc / Impress / Draw / Math</paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200912285019" role="paragraph" l10n="NEW">The tab page with the same name as the current application can be used to define the contents, color, size, and pages to be printed. You define settings that are specific to the current document type.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id0818200912285112" role="heading" level="2" l10n="NEW">Page Layout</paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200912285150" role="paragraph" l10n="NEW">The Page Layout tab page can be used to save some sheets of paper by printing several pages onto each sheet of paper. You define the arrangement and size of output pages on the physical paper.</paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200904164735" role="paragraph" l10n="NEW">Change the arrangement of pages to be printed on every sheet of paper. The preview shows how every final sheet of paper will look.</paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200904102987" role="paragraph" l10n="NEW">For some document types, you can choose to print a brochure.</paragraph>
+      <embed href="text/swriter/guide/print_brochure.xhp#print_brochure"/>
+<paragraph xml-lang="en-US" id="hd_id0818200912285138" role="heading" level="2" l10n="NEW">Options</paragraph>
+<paragraph xml-lang="en-US" id="par_id0818200912285146" role="paragraph" l10n="NEW">On the Options tab page you can set some additional options for the current print job. Here you can specify to print to a file instead of printing on a printer.</paragraph>
+
+<paragraph xml-lang="en-US" id="hd_id0819200910481678" role="heading" level="2" l10n="NEW"><switchinline select="sys"><caseinline select="UNIX">Unix hints
+</caseinline></switchinline><comment>are these still needed?</comment></paragraph>
+<paragraph xml-lang="en-US" id="par_id3157320" role="paragraph" l10n="U" oldref="47"><switchinline select="sys"><caseinline select="UNIX">If you want, you can use the STAR_SPOOL_DIR environment variable to specify the directory where the Xprinter spoolfiles are saved. For example:
+</caseinline></switchinline></paragraph>
+<paragraph xml-lang="en-US" id="par_id3154330" role="paragraph" l10n="U" oldref="48"><switchinline select="sys"><caseinline select="UNIX">setenv STAR_SPOOL_DIR /usr/local/tmp (in the csh/tcsh) or
+</caseinline></switchinline></paragraph>
+<paragraph xml-lang="en-US" id="par_id3150768" role="paragraph" l10n="U" oldref="49"><switchinline select="sys"><caseinline select="UNIX">export STAR_SPOOL_DIR=/usr/local/tmp (in the sh/bash)
+</caseinline></switchinline></paragraph>
+<paragraph xml-lang="en-US" id="par_id3150449" role="paragraph" l10n="U" oldref="50"><switchinline select="sys"><caseinline select="UNIX">You can also use the <link href="text/shared/guide/spadmin.xhp" name="spadmin printer setup program">spadmin printer setup program</link> to specify additional printer options.
+</caseinline></switchinline></paragraph>
+</body>
+</helpdocument>

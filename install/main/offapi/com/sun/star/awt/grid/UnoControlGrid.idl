@@ -1,0 +1,83 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_UnoControlGrid_idl__
+#define __com_sun_star_awt_UnoControlGrid_idl__
+ 
+#ifndef __com_sun_star_awt_UnoControl_idl__ 
+#include <com/sun/star/awt/UnoControl.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_grid_XGridControl_idl__ 
+#include <com/sun/star/awt/grid/XGridControl.idl> 
+#endif
+
+#ifndef __com_sun_star_awt_grid_XGridRowSelection_idl__ 
+#include <com/sun/star/awt/grid/XGridRowSelection.idl> 
+#endif
+
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module awt {  module grid {
+ 
+//============================================================================= 
+ 
+//============================================================================= 
+ 
+/** A control that displays a set of tabular data.
+
+	<h4>The Column Model</h4>
+
+    <p>The horizontal structure of the grid is defined by the <type>XGridColumnModel</type> implemented in <type>DefaultGridColumnModel</type>
+	The <type>XGridColumn</type> implemented in <typeGridColumn</type> describes the properties and behavior of a single column. Use the <member>XGridColumnModel::addColumn()</member> to add a column to the column model.  
+	</p>
+
+    <h4>The Data Model</h4>
+	<p> All row data are stored in the <type>XGridDataModel</type>.
+	Use the <type>DefaultGridDataModel</type> to add  <member>XGridDataModel::addRow()</member> or remove <member>XGridDataModel::removeRow()</member> rows.
+	</p>
+
+	<p>The column and data model must be set at the <member>UnoControlGridModel::ColumnModel</member> and <member>UnoControlGridModel::GridDataModel</member> properties.</p>
+
+	<h4>Selection</h4>
+	<p>If you are interested in knowing when the selection changes implement a
+	<type>XGridSelectionListener</type> and add the instance with the method
+	<member>XGridRowSelection::addSelectionListener()</member>.
+	You than will be notified for any selection change.</p>
+
+	<p>The <type>XGridSelection</type> interface provides a bunch of methods to set and get selection for the grid control.</p>
+	@since OOo 3.3
+ */
+service UnoControlGrid
+{ 
+	service com::sun::star::awt::UnoControl; 
+	
+    interface ::com::sun::star::awt::grid::XGridControl;
+
+    interface ::com::sun::star::awt::grid::XGridRowSelection;
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };};
+ 
+#endif 

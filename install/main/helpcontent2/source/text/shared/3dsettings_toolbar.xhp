@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared3dsettings_toolbarxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">3D-Settings</title>
+         <filename>/text/shared/3dsettings_toolbar.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="3dsettings">
+         <paragraph xml-lang="en-US" id="par_idN1055A" role="heading" level="1" l10n="NEW"><variable id="3dtoolbar"><link href="text/shared/3dsettings_toolbar.xhp">3D-Settings</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_idN1056A" role="paragraph" l10n="NEW"><ahelp hid=".">The 3D-Settings toolbar controls properties of selected 3D objects.</ahelp></paragraph>
+      </section>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionToggle" id="bm_id9720450" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionToggle" id="bm_id7128513" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10575" role="heading" level="2" l10n="NEW">Extrusion on/off</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10579" role="paragraph" l10n="NEW"><ahelp hid=".">Switches the 3D effects on and off for the selected objects.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltDown" id="bm_id4860377" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltDown" id="bm_id9378337" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10590" role="heading" level="2" l10n="NEW">Tilt Down</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10594" role="paragraph" l10n="NEW"><ahelp hid=".">Tilts the selected object downwards by five degrees.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltUp" id="bm_id1682790" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltUp" id="bm_id8217413" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105AB" role="heading" level="2" l10n="NEW">Tilt Up</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105AF" role="paragraph" l10n="CHG"><ahelp hid=".">Tilts the selected object upwards by five degrees.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltLeft" id="bm_id8390758" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltLeft" id="bm_id3715628" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105C6" role="heading" level="2" l10n="NEW">Tilt Left</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105CA" role="paragraph" l10n="NEW"><ahelp hid=".">Tilts the selected object left by five degrees.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltRight" id="bm_id3985717" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionTiltRight" id="bm_id5299844" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105E1" role="heading" level="2" l10n="NEW">Tilt Right</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105E5" role="paragraph" l10n="NEW"><ahelp hid=".">Tilts the selected object right by five degrees.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionDepthFloater" id="bm_id1778008" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionDepthFloater" id="bm_id408642" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105FC" role="heading" level="2" l10n="NEW">Depth</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10600" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the Extrusion Depth window.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10617" role="paragraph" l10n="NEW"><ahelp hid=".">Select an extrusion depth.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:MetricField:RID_SVX_MDLG_EXTRUSION_DEPTH:MTR_DEPTH" id="bm_id5449079" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10632" role="paragraph" l10n="NEW"><ahelp hid=".">Enter an extrusion depth.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionDirectionFloater" id="bm_id6154362" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionDirectionFloater" id="bm_id3699453" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1064C" role="heading" level="2" l10n="NEW">Direction</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10650" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the Extrusion Direction window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_POPUP_LINEEND_CTRL" id="bm_id3675649" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10667" role="paragraph" l10n="NEW"><ahelp hid=".">Select a direction.</ahelp><comment>UFI: same ID for Direction and Lighting direction</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10698" role="paragraph" l10n="NEW"><ahelp hid=".">Select a perspective or parallel extrusion method.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionLightingFloater" id="bm_id70192" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionLightingFloater" id="bm_id7180394" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN106B3" role="heading" level="2" l10n="NEW">Lighting</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106B7" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the Extrusion Lighting window.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106C6" role="paragraph" l10n="NEW"><ahelp hid=".">Select a lighting direction.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106E1" role="paragraph" l10n="NEW"><ahelp hid=".">Select a lighting intensity.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionSurfaceFloater" id="bm_id3682363" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExtrusionSurfaceFloater" id="bm_id9263893" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN106FC" role="heading" level="2" l10n="NEW">Surface</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10700" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the Extrusion Surface window.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10717" role="paragraph" l10n="NEW"><ahelp hid=".">Select a surface material or a wireframe display.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:Extrusion3DColor" id="bm_id144047" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Extrusion3DColor" id="bm_id7303994" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10732" role="heading" level="2" l10n="NEW">3D Color</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10736" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the Extrusion Color toolbar.</ahelp></paragraph>
+   </body>
+</helpdocument>

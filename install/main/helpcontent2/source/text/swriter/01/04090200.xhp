@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswriter0104090200xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Defining Conditions</title>
+         <filename>/text/swriter/01/04090200.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145828"><bookmark_value>logical expressions</bookmark_value>
+      <bookmark_value>formulating conditions</bookmark_value>
+      <bookmark_value>conditions; in fields and sections</bookmark_value>
+      <bookmark_value>fields;defining conditions</bookmark_value>
+      <bookmark_value>sections;defining conditions</bookmark_value>
+      <bookmark_value>variables; in conditions</bookmark_value>
+      <bookmark_value>user data;in conditions</bookmark_value>
+      <bookmark_value>databases;in conditions</bookmark_value>
+      <bookmark_value>hiding; database fields</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3145828" role="heading" level="1" l10n="CHG"
+                 oldref="1"><variable id="defining_conditions"><link href="text/swriter/01/04090200.xhp">Defining Conditions</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145242" role="paragraph" l10n="CHG" oldref="13">Conditions are logical expressions that you can use to control the display of <link href="text/swriter/01/04090000.xhp">fields</link> and <link href="text/swriter/01/04020000.xhp">sections</link> in your document. Although the following examples apply to fields, they also apply to sections.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147171" role="paragraph" l10n="U" oldref="93">You can define conditions for the following field types:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151185" role="listitem" l10n="U" oldref="14">Conditional text: displays text A if the condition is true, or text B if the condition is false.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149289" role="listitem" l10n="U" oldref="15">Hidden text: hides the contents of the field if the condition is true.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145412" role="listitem" l10n="U" oldref="16">Hidden paragraph: hides the paragraph if the condition is true.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147515" role="listitem" l10n="U" oldref="17">Any record and next record: controls the access to database records.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3149802" role="paragraph" l10n="U" oldref="18">The simplest way to define a condition is to type the logical expression directly in a <emph>Condition </emph>box using the following values:</paragraph>
+      <table id="tbl_id3153537">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153677" role="tablecontent" l10n="CHG" oldref="19">TRUE</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152960" role="tablecontent" l10n="U" oldref="20">The condition is always met. You can also enter any value not equal to 0 as the conditional text.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155900" role="tablecontent" l10n="CHG" oldref="21">FALSE</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154191" role="tablecontent" l10n="U" oldref="22">The condition is not met. You can also enter the value 0.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3147090" role="note" l10n="U" oldref="23">If you leave the <emph>Condition </emph>box empty, the condition is interpreted as not being met.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148980" role="paragraph" l10n="U" oldref="24">When you define a condition, use the same <link href="text/swriter/02/14020000.xhp">elements</link> for defining a formula, namely comparative operators, mathematical and statistical functions, number formats, variables and constants.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153638" role="paragraph" l10n="U" oldref="25">You can use the following types of variables when you define a condition:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155135" role="listitem" l10n="U" oldref="27">Predefined <link href="text/swriter/02/14020000.xhp">$[officename] variables</link> that use statistics on document properties</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156273" role="listitem" l10n="U" oldref="26">Custom variables, that are a created with the "Set variable" field</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149174" role="listitem" l10n="U" oldref="94">Variables based on user data</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145781" role="listitem" l10n="U" oldref="28">Variables based on the contents of database fields</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3155916" role="paragraph" l10n="U" oldref="29">You cannot use internal variables, such as page and chapter numbers, in condition expression.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3151375" role="heading" level="2" l10n="U"
+                 oldref="30">Conditions and Variables</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150122" role="paragraph" l10n="U" oldref="31">The following examples use a variable called "x":</paragraph>
+      <table id="tbl_id3155867">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147417" role="tablecontent" l10n="U" oldref="32">x == 1 or x EQ 1</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147500" role="tablecontent" l10n="U" oldref="33">The condition is true if "x" is equal to 1.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145259" role="tablecontent" l10n="U" oldref="34">x != 1 or x NEQ 1</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150551" role="tablecontent" l10n="U" oldref="35">The condition is true if "x" does not equal 1.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147749" role="tablecontent" l10n="U" oldref="36">sinx == 0</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146345" role="tablecontent" l10n="U" oldref="37">The condition is true if "x" is a multiple of pi.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3149846" role="paragraph" l10n="U" oldref="38">To use comparative operators with strings, the operands must be bounded by double quotation marks:</paragraph>
+      <table id="tbl_id3148855">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151078" role="tablecontent" l10n="U" oldref="39">x == "ABC" or x EQ "ABC"</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150162" role="tablecontent" l10n="U" oldref="40">Checks if variable "x" contains (true) the "ABC" string, or not (false).</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153301" role="tablecontent" l10n="U" oldref="41">x == "" or x EQ ""</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3156120" role="tablecontent" l10n="U" oldref="90">or</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3156133" role="tablecontent" l10n="U" oldref="42">!x or NOT x</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156112" role="tablecontent" l10n="U" oldref="44">Checks if the variable "x" contains an empty string.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3150097" role="note" l10n="CHG" oldref="45">The "equal" comparative operator must be represented by two equal signs (==) in a condition. For example, if you define a variable "x" with the value of 1, you can enter the condition as x==1.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3148791" role="heading" level="2" l10n="U"
+                 oldref="95">User Data</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150028" role="paragraph" l10n="U" oldref="96">You can include user data when you define conditions. To change your user data, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - User data</emph>. User data must be entered in the form of strings. You can query the user data with "==" (EQ), "!=" (NEQ), or "!"(NOT).</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153124" role="paragraph" l10n="U" oldref="97">The following table lists user data variables and their meanings:</paragraph>
+      <table id="tbl_id3153139">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149632" role="tablehead" l10n="U" oldref="130">Variable</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150662" role="tablehead" l10n="U" oldref="131">Meaning</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154026" role="tablecontent" l10n="U" oldref="98">user_firstname</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149953" role="tablecontent" l10n="U" oldref="99">First name</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147272" role="tablecontent" l10n="U" oldref="100">user_lastname</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149601" role="tablecontent" l10n="U" oldref="101">Last name</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150770" role="tablecontent" l10n="U" oldref="102">user_initials</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155529" role="tablecontent" l10n="U" oldref="103">Initials</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148705" role="tablecontent" l10n="U" oldref="104">user_company</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148728" role="tablecontent" l10n="U" oldref="105">Company</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155361" role="tablecontent" l10n="U" oldref="106">user_street</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154222" role="tablecontent" l10n="U" oldref="107">Street</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145108" role="tablecontent" l10n="U" oldref="108">user_country</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146885" role="tablecontent" l10n="U" oldref="109">Country</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149580" role="tablecontent" l10n="U" oldref="110">user_zipcode</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156241" role="tablecontent" l10n="U" oldref="111">Zip code</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148922" role="tablecontent" l10n="U" oldref="112">user_city</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148945" role="tablecontent" l10n="U" oldref="113">City</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156053" role="tablecontent" l10n="U" oldref="114">user_title</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159219" role="tablecontent" l10n="U" oldref="115">Title</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156435" role="tablecontent" l10n="U" oldref="116">user_position</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145178" role="tablecontent" l10n="U" oldref="117">Position</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150797" role="tablecontent" l10n="U" oldref="118">user_tel_work</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150820" role="tablecontent" l10n="U" oldref="119">Business telephone number</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150894" role="tablecontent" l10n="U" oldref="120">user_tel_home</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155320" role="tablecontent" l10n="U" oldref="121">Home telephone number</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154400" role="tablecontent" l10n="U" oldref="122">user_fax</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153363" role="tablecontent" l10n="U" oldref="123">Fax number</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153390" role="tablecontent" l10n="U" oldref="124">user_email</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154948" role="tablecontent" l10n="U" oldref="125">E-mail address</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145603" role="tablecontent" l10n="U" oldref="126">user_state</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150129" role="tablecontent" l10n="U" oldref="127">State (not in all $[officename] versions)</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3150147" role="paragraph" l10n="U" oldref="128">For example, to hide a paragraph, text, or a section from a user with a specific initial, such as "LM", enter the condition: user_initials=="LM".</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154115" role="heading" level="2" l10n="U"
+                 oldref="46">Conditions and Database Fields</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154128" role="paragraph" l10n="U" oldref="47">You can define conditions for accessing databases, or database fields. For example, you can check the contents of a database field from a condition, or use database fields in logical expressions. The following table lists a few more examples of using databases in conditions:</paragraph>
+      <table id="tbl_id3154848">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156066" role="paragraph" l10n="U" oldref="132">Example</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156088" role="paragraph" l10n="U" oldref="133">Meaning</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155948" role="paragraph" l10n="U" oldref="48">Database.Table.Company</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3148673" role="paragraph" l10n="U" oldref="91">Database.Table.Company NEQ ""</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3148687" role="paragraph" l10n="U" oldref="92">Database.Table.Company != ""</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155373" role="paragraph" l10n="U" oldref="49">The condition is true if the COMPANY field is not empty. (In the first example, no operator is required.)</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149977" role="paragraph" l10n="U" oldref="7">!Database.Table.Company</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3149991" role="paragraph" l10n="U" oldref="129">NOT Database.Table.Company</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3150004" role="paragraph" l10n="U" oldref="50">Database.Table.Company EQ ""</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3146911" role="paragraph" l10n="U" oldref="9">Database.Table.Company ==""</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148733" role="paragraph" l10n="U" oldref="8">Returns TRUE if the COMPANY field is empty.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148762" role="paragraph" l10n="U" oldref="5">Database.Table.Company !="Sun"</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153016" role="paragraph" l10n="U" oldref="149">Database.Table.Company NEQ "Sun"</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153040" role="paragraph" l10n="U" oldref="6">Returns TRUE if the current entry in the COMPANY field is not "Sun". (Exclamation sign represents a logical NOT.)</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154605" role="paragraph" l10n="U" oldref="51">Database.Table.Firstname AND Database.Table.Name</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153059" role="paragraph" l10n="U" oldref="52">Returns TRUE if the record contains the first and the last name.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3159247" role="note" l10n="U" oldref="53">Note the difference between the boolean NOT "!" and the comparative operator not equal "!=" (NEQ).</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153876" role="paragraph" l10n="CHG" oldref="54">When you refer to a database field in a condition, use the form Databasename.Tablename.Fieldname. If one of the names contains a character that is an operator, such as a minus sign (-), enclose the name in square brackets, for example, Databasename.[Table-name].Fieldname. Never use spaces inside field names.<comment>UFI: fixes bug #i25781# - but see #i25983#. Fixes also #i19571#</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153891" role="heading" level="3" l10n="U"
+                 oldref="55">Example: Hiding an Empty Database Field</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150051" role="paragraph" l10n="U" oldref="56">You may want to create a condition that hides an empty field, for example, if the COMPANY field is empty for some of the data records.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150067" role="paragraph" l10n="CHG" oldref="57">Select the <emph>Hidden Paragraph</emph> list entry, and type the following condition: Addressbook.Addresses.Company EQ ""</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147110" role="paragraph" l10n="U" oldref="150">or type the following</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147123" role="paragraph" l10n="U" oldref="151">NOT Addressbook.Addresses.Company</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147136" role="paragraph" l10n="U" oldref="152">If the COMPANY database field is empty, the condition is true and the paragraph is hidden.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150232" role="note" l10n="CHG" oldref="58">To display hidden paragraphs on the screen, you can choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Writer - Formatting Aids</emph>, and clear the <emph>Fields: Hidden paragraphs</emph> check box.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3145218" role="heading" level="2" l10n="U"
+                 oldref="59">Examples of Conditions in Fields</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145231" role="paragraph" l10n="U" oldref="60">The following examples use the Conditional text field, although they can be applied to any fields that can be linked to a condition. The syntax used for conditions is also used for the Hidden text, Hidden paragraph, Any record or Next record fields.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150311" role="heading" level="2" l10n="U"
+                 oldref="61">To display conditional text based on the number of pages:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150333" role="listitem" l10n="U" oldref="136">Choose <emph>Insert - Fields - Other</emph>, and then click the <emph>Functions</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147471" role="listitem" l10n="U" oldref="62">In the <emph>Type</emph> list, click "Conditional text".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154294" role="listitem" l10n="U" oldref="63">In the <emph>Condition </emph>box, type "page == 1".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154319" role="listitem" l10n="U" oldref="64">In the <emph>Then</emph> box, type "There is only one page".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150640" role="listitem" l10n="U" oldref="65">In the <emph>Or </emph>box, type "There are several pages".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153086" role="listitem" l10n="U" oldref="137">Click <emph>Insert</emph>, and then click <emph>Close</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3155814" role="heading" level="2" l10n="U"
+                 oldref="67">To display conditional text based on a user-defined Variable</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155836" role="listitem" l10n="U" oldref="138">Choose <emph>Insert - Fields - Other</emph>, and then click the <emph>Variables</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155109" role="listitem" l10n="U" oldref="68">In the <emph>Type </emph>list, click "Set Variable".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147008" role="listitem" l10n="U" oldref="139">In the<emph> Name</emph> box, type "Profit".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147032" role="listitem" l10n="U" oldref="140">In the<emph> Value</emph> box, type "5000".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152974" role="listitem" l10n="U" oldref="141">Click <emph>Insert</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152998" role="listitem" l10n="U" oldref="70">Click the <emph>Functions</emph> tab, and click "Conditional text" in the <emph>Type</emph> list.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150952" role="listitem" l10n="U" oldref="142">In the <emph>Condition</emph> box, type "Profit &lt; 5000".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156291" role="listitem" l10n="U" oldref="71">In the <emph>Then</emph> box, type "Target is not met".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156317" role="listitem" l10n="U" oldref="72">In the <emph>Or </emph>box, type "Target is met".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154366" role="listitem" l10n="U" oldref="143">Click <emph>Insert</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3154389" role="paragraph" l10n="U" oldref="73">To edit the contents of the "Profit" variable, double-click the variable field.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155573" role="heading" level="2" l10n="U"
+                 oldref="74">To display conditional text based on the contents of a database field:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155587" role="paragraph" l10n="CHG" oldref="144">The first part of this example inserts a space between the "First Name" and "Last Name" fields in a document, and the second part inserts text based on the contents of a field. This example requires that an address data source is registered with $[officename].</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150523" role="listitem" l10n="U" oldref="145">Choose <emph>Insert - Fields - Other</emph>, and then click the <emph>Database</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148811" role="listitem" l10n="U" oldref="75">In the <emph>Type </emph>list, click "Mail merge fields".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148841" role="listitem" l10n="U" oldref="76">In the<emph> Database selection</emph> box, double-click an address book, click "First Name", and then click<emph> Insert</emph>. Repeat for "Last Name".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147549" role="listitem" l10n="U" oldref="78">In the document, place the cursor between the two fields, press Space, and then return to the <emph>Fields </emph>dialog:</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150416" role="listitem" l10n="U" oldref="79">Click the <emph>Functions</emph> tab, and then click "Conditional text" in the <emph>Type</emph> list.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153589" role="listitem" l10n="U" oldref="146">In the <emph>Condition </emph>box, type: "Addressbook.addresses.firstname".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153615" role="listitem" l10n="U" oldref="80">In the <emph>Then </emph>box, type a space and leave the <emph>Or </emph>box blank.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3153562" role="paragraph" l10n="U" oldref="84">You can now use a condition to insert text based on the contents of the First Name field.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150574" role="listitem" l10n="U" oldref="147">In the <emph>Fields </emph>dialog, click the <emph>Functions </emph>tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150605" role="listitem" l10n="U" oldref="85">In the <emph>Type </emph>box, click "Conditional text".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151277" role="listitem" l10n="U" oldref="86">In the <emph>Condition </emph>box, type: Addressbook.addresses.firstname == "Michael"</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151303" role="listitem" l10n="U" oldref="87">In the <emph>Then </emph>box, type "Dear".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149138" role="listitem" l10n="CHG" oldref="88">In the <emph>Else</emph> box, type "Hello".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149163" role="listitem" l10n="U" oldref="148">Click <emph>Insert</emph>.</paragraph>
+         </listitem>
+      </list>
+   </body>
+</helpdocument>

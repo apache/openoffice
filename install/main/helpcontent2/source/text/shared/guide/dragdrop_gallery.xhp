@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedragdrop_galleryxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Adding Graphics to the Gallery</title>
+<filename>/text/shared/guide/dragdrop_gallery.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154927"><bookmark_value>drag and drop;to Gallery</bookmark_value>
+<bookmark_value>copying;to Gallery</bookmark_value>
+<bookmark_value>Gallery; adding pictures</bookmark_value>
+<bookmark_value>pictures;adding to Gallery</bookmark_value>
+<bookmark_value>inserting;pictures in Gallery</bookmark_value>
+<bookmark_value>pasting;to Gallery</bookmark_value>
+</bookmark>
+  <comment>mw changed "adding;" to "inserting;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3154927" role="heading" level="1" l10n="U" oldref="49"><variable id="dragdrop_gallery"><link href="text/shared/guide/dragdrop_gallery.xhp" name="Adding Graphics to the Gallery">Adding Graphics to the Gallery</link> 
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3143267" role="paragraph" l10n="U" oldref="50">You can place a graphic from a document such as an HTML page in the Gallery by drag-and-drop.</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3154823" role="listitem" l10n="U" oldref="56">Display the Gallery theme to which you want to add the graphic.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3153748" role="listitem" l10n="U" oldref="51">Position the mouse pointer above the graphic, without clicking.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3156346" role="listitem" l10n="U" oldref="52">If the mouse pointer changes to a hand symbol, the graphic refers to a hyperlink. In this case, click the graphic while pressing the <switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> key to select it without executing the respective link.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id3149578" role="listitem" l10n="U" oldref="53">If the mouse pointer does not change to a hand symbol, you can simply click the graphic to select it.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3145120" role="listitem" l10n="U" oldref="54">Once the graphic is selected, release the mouse button. Click again on the graphic image, keeping the mouse button pressed for more than two seconds. The graphic image is copied to the internal memory.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3150772" role="listitem" l10n="U" oldref="55">Without releasing the mouse button, drag the graphic into the Gallery.</paragraph>
+   </listitem>
+  </list>
+  <embed href="text/shared/00/00000004.xhp#related"/>
+  <embed href="text/shared/guide/gallery_insert.xhp#gallery_insert"/>
+  <embed href="text/shared/guide/dragdrop.xhp#dragdrop"/>
+  <embed href="text/shared/guide/dragdrop_graphic.xhp#dragdrop_graphic"/>
+  <embed href="text/shared/guide/dragdrop_table.xhp#dragdrop_table"/>
+  <embed href="text/shared/guide/dragdrop_fromgallery.xhp#dragdrop_fromgallery"/>
+  
+<switch select="appl">
+  
+<case select="WRITER">
+  <embed href="text/swriter/guide/dragdroptext.xhp#dragdroptext"/>
+  
+</case>
+  
+</switch>
+ </body>
+</helpdocument>

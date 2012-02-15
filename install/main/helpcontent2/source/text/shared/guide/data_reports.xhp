@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedata_reportsxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating Reports </title>
+<filename>/text/shared/guide/data_reports.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3729667"><bookmark_value>databases;creating reports</bookmark_value>
+<bookmark_value>reports;creating</bookmark_value>
+<bookmark_value>wizards;reports</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="par_idN105A3" xml-lang="en-US" level="1" l10n="CHG"><variable id="data_reports"><link href="text/shared/guide/data_reports.xhp">Creating Reports</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN105C1" xml-lang="en-US" l10n="CHG">A report is a Writer text document that can show your data in an organized order and formatting. In %PRODUCTNAME Base, you have a choice to create a report either manually using drag-and-drop in the Report Builder window, or semi-automatic by following a series of dialogs in the Report Wizard. </paragraph>
+<paragraph role="paragraph" id="par_id4094363" xml-lang="en-US" l10n="NEW">The following list gives you some information to decide which method to use for your data:</paragraph>
+<table id="tbl_id1888180">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id8514358" xml-lang="en-US" l10n="NEW">Report Builder</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id9764091" xml-lang="en-US" l10n="NEW">Report Wizard</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id1579638" xml-lang="en-US" l10n="NEW">Started by "Create Report in Design View" command.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id1886959" xml-lang="en-US" l10n="NEW">Started by "Use Wizard to Create Report" command.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id455030" xml-lang="en-US" l10n="NEW">Full flexibility to use report headers and footers, page headers and footers, multi-column reports.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id8409985" xml-lang="en-US" l10n="NEW">Uses a Writer template to generate a report document.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id5931272" xml-lang="en-US" l10n="NEW">Use drag-and-drop to position the record fields or other design elements like pictures or lines.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id9869075" xml-lang="en-US" l10n="NEW">Select from several given choices to arrange the data records.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id8611713" xml-lang="en-US" l10n="NEW">Generates a one-time snapshot of the data. To see an updated report, execute the same report again to create a Writer document with the updated data.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id2866908" xml-lang="en-US" l10n="NEW">You can choose to generate a one-time snapshot with fixed data, or a "live" report with links to the current data at the time when you open the Base file.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id4169743" xml-lang="en-US" l10n="NEW">Saves the report as a Writer text document. Stores the information how to create the report inside the Base file.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id408948" xml-lang="en-US" l10n="NEW">Saves the report and the information how to create the report inside the Base file.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id2891933" xml-lang="en-US" l10n="NEW">Choose Open in the context menu or double-click the report name to create a new report with the current data.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id6142765" xml-lang="en-US" l10n="NEW">Choose Open in the context menu or double-click the report name to either see again the static snapshot of the data from first creation time, or to create a new report with the current data. This depends on your choice on the last page of the wizard.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id1757560" xml-lang="en-US" l10n="NEW">Choose Edit in the context menu of a report name to open the Report Builder window, with the report's information loaded.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id4649189" xml-lang="en-US" l10n="NEW">Choose Edit in the context menu of a report name to edit the Writer template file that was used to create the report.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id8414258" xml-lang="en-US" level="2" l10n="NEW">Creating a New Report Manually In Design View</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3119602" xml-lang="en-US" l10n="NEW">Open the database file where you want to create the new report.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id4226508" xml-lang="en-US" l10n="NEW">In the left pane of the database window, click the <emph>Reports</emph> icon.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id5758842" xml-lang="en-US" l10n="NEW">Click <emph>Create Report in Design View</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id4870754" xml-lang="en-US" l10n="NEW">Follow the instructions in the <link href="text/shared/explorer/database/rep_main.xhp">Report Builder</link> guide.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="par_idN105C4" xml-lang="en-US" level="2" l10n="NEW">Creating a New Report With the Report Wizard</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN105DC" xml-lang="en-US" l10n="NEW">Open the database file where you want to create the new report.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN105E0" xml-lang="en-US" l10n="NEW">In the left pane of the database window, click the <emph>Reports</emph> icon.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN105E8" xml-lang="en-US" l10n="NEW">Click <emph>Use Wizard to Create Report</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id8032166" xml-lang="en-US" l10n="NEW">Follow the steps of the <link href="text/shared/autopi/01100000.xhp">Report Wizard</link> to create the report.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/shared/guide/data_report.xhp#data_report"/>
+<embed href="text/shared/explorer/database/main.xhp#base"/>
+<embed href="text/shared/guide/database_main.xhp#database_main"/>
+</section>
+</body>
+</helpdocument>

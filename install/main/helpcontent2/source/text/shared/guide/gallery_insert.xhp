@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidegallery_insertxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Inserting Objects From the Gallery</title>
+<filename>/text/shared/guide/gallery_insert.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145136"><bookmark_value>Gallery; inserting pictures from</bookmark_value>
+<bookmark_value>pictures; inserting from Gallery</bookmark_value>
+<bookmark_value>objects; inserting from Gallery</bookmark_value>
+<bookmark_value>patterns for objects</bookmark_value>
+<bookmark_value>textures;inserting from Gallery</bookmark_value>
+<bookmark_value>backgrounds;inserting from Gallery</bookmark_value>
+<bookmark_value>inserting;objects from Gallery</bookmark_value>
+<bookmark_value>copying;from Gallery</bookmark_value>
+</bookmark>
+  <comment>mw deleted "adding;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3145136" role="heading" level="1" l10n="U" oldref="1"><variable id="gallery_insert"><link href="text/shared/guide/gallery_insert.xhp" name="Inserting Objects From the Gallery">Inserting Objects From the Gallery</link> 
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3145345" role="paragraph" l10n="U" oldref="2">You can insert an object in a document either as a <emph>copy</emph> or as a <emph>link</emph>. A copy of an object is independent of the original object. Changes to the original object have no effect on the copy. A link remains dependent on the original object. Changes to the original object are also reflected in the link.</paragraph>
+  <paragraph xml-lang="en-US" id="hd_id3145313" role="heading" level="2" l10n="U" oldref="3">Inserting an object as a copy</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3145382" role="listitem" l10n="U" oldref="4">Open the Gallery by clicking the <emph>Gallery</emph> icon on the <emph>Standard</emph> bar, or by selecting <emph>Tools - Gallery</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3154306" role="listitem" l10n="U" oldref="5">Select a theme.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3154516" role="listitem" l10n="U" oldref="6">Select an object using a single click.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3153561" role="listitem" l10n="U" oldref="7">Drag the object into the document, or right-click to open the context menu and select <emph>Insert</emph> and <emph>Copy</emph>.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="hd_id3153061" role="heading" level="2" l10n="U" oldref="8">Inserting an object as a link</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3145068" role="listitem" l10n="U" oldref="9">Open the Gallery by clicking the <emph>Gallery</emph> icon on the <emph>Standard</emph> bar, or by selecting <emph>Tools - Gallery</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3148663" role="listitem" l10n="U" oldref="10">Select a theme.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3150543" role="listitem" l10n="U" oldref="11">Select an object by a single click.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3154140" role="listitem" l10n="U" oldref="12">Drag the object into the document while pressing the Shift and <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>keys, or right-click to open the context menu and select <emph>Insert</emph> and <emph>Link</emph>.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="hd_id3156282" role="heading" level="2" l10n="U" oldref="13">Inserting an object as a background graphic</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3152920" role="listitem" l10n="U" oldref="14">Open the Gallery by clicking the <emph>Gallery</emph> icon on the <emph>Standard</emph> bar, or by selecting <emph>Tools - Gallery</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3151041" role="listitem" l10n="U" oldref="15">Select a theme.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3145607" role="listitem" l10n="U" oldref="16">Select an object by a single click.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3147289" role="listitem" l10n="U" oldref="17">Open the context menu and choose <emph>Insert - Background - Page</emph> or <emph>Paragraph</emph>.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="hd_id3145787" role="heading" level="2" l10n="U" oldref="18">Inserting an object as a texture (pattern) for another object</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3159196" role="listitem" l10n="U" oldref="19">Open the Gallery by clicking the <emph>Gallery</emph> icon on the <emph>Standard</emph> bar, or by selecting <emph>Tools - Gallery</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3152596" role="listitem" l10n="U" oldref="20">Select a theme.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3148617" role="listitem" l10n="U" oldref="21">Select an object by a single click.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3147443" role="listitem" l10n="U" oldref="22">Drag the object on to the other object in the document while pressing <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>.</paragraph>
+   </listitem>
+  </list>
+  <section id="relatedtopics">
+   
+   <embed href="text/shared/guide/dragdrop_fromgallery.xhp#dragdrop_fromgallery"/>
+   <embed href="text/shared/guide/dragdrop_gallery.xhp#dragdrop_gallery"/>
+   
+  </section>
+ </body>
+</helpdocument>

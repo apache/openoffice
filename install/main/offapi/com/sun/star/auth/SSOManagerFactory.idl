@@ -1,0 +1,71 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_auth_SSOManagerFactory_idl__
+#define __com_sun_star_auth_SSOManagerFactory_idl__
+
+#ifndef __com_sun_star_auth_XSSOManagerFactory_idl_
+#include <com/sun/star/auth/XSSOManagerFactory.idl>
+#endif
+
+module com { module sun { module star { module auth {
+
+/** represents a starting point for Single Signon interactions.
+    <P>The Single Signon ( SSO ) apis provide UNO based access to underlying
+	   SSO implementations ( e.g. Kerberos ). The aim of the SSO apis is to
+       enable authentication ( possibly mutual ) between a client ( source or
+       initiator ) and a network service ( target or acceptor ). This is
+       achieved via. the creation and processing of security tokens sent
+       between the two parties. The steps which should be followed to
+	   successfully use the SSO apis are as follows:
+    <UL>
+        <LI>Create an <type>XSSOManagerFactory</type> instance</LI>
+        <LI>Use this factory to create/retrieve an <type>XSSOManager</type>
+            instance.</LI>
+        <LI>Depending on whether your code is acting as SSO source or target,
+            you should use the <type>XSSOManager</type> instance to create an
+            initiator security context, <type>XSSOInitiatorContext</type> or an
+            acceptor security context, <type>XSSOAcceptorContext</type>
+            respectively.</LI>
+		<LI>On the initiator side, use the previously created context to process
+            security tokens received from the acceptor side and to create
+            security tokens to send to the acceptor side. On the acceptor side,
+            use the previously created context to process security tokens 
+            received from the initiator side and to create security tokens to
+            send to the initiator side.</LI>
+    </UL>
+
+    @since OOo 1.1.2
+ */
+
+published service SSOManagerFactory
+{
+   /** supports the creation of <type>XSSOManager</type> instances which can
+       subsequently be used to create security contexts.
+    */
+	interface XSSOManagerFactory;
+};
+
+}; }; }; };
+
+#endif

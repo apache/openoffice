@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01090100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Settings</title>
+<filename>/text/shared/optionen/01090100.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156410"><bookmark_value>printing;formulas in $[officename] Math</bookmark_value>
+<bookmark_value>title rows; printing in $[officename] Math</bookmark_value>
+<bookmark_value>formula texts; printing in $[officename] Math</bookmark_value>
+<bookmark_value>frames; printing in $[officename] Math</bookmark_value>
+<bookmark_value>printing; in original size in $[officename] Math</bookmark_value>
+<bookmark_value>original size; printing in $[officename] Math</bookmark_value>
+<bookmark_value>printing; fitting to pages in $[officename] Math</bookmark_value>
+<bookmark_value>format filling printing in $[officename] Math</bookmark_value>
+<bookmark_value>printing; scaling in $[officename] Math</bookmark_value>
+<bookmark_value>scaling; printing in $[officename] Math</bookmark_value>
+<bookmark_value>fitting to pages;print settings in Math</bookmark_value>
+</bookmark><comment>mw inserted "fitting..."</comment>
+<bookmark xml-lang="en-US" branch="hid/starmath:TabPage:RID_PRINTOPTIONPAGE" id="bm_id3150178" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_PRINT_OPTIONS" id="bm_id3147226" localize="false"/><paragraph role="heading" id="hd_id3150713" xml-lang="en-US" level="1" l10n="U" oldref="1">Settings</paragraph>
+<paragraph role="paragraph" id="par_id3145090" xml-lang="en-US" l10n="U" oldref="18"><variable id="einst"><ahelp hid="HID_PRINT_OPTIONS">Defines formula settings that will be valid for all documents.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#formeinst"/>
+</section>
+<paragraph role="heading" id="hd_id3159234" xml-lang="en-US" level="2" l10n="U" oldref="2">Print options</paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_CHECKBOX_RID_PRINTOPTIONPAGE_CB_TITLEROW" id="bm_id3153528" localize="false"/><paragraph role="heading" id="hd_id3156410" xml-lang="en-US" level="3" l10n="U" oldref="4">Title</paragraph>
+<paragraph role="paragraph" id="par_id3156347" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="STARMATH_CHECKBOX_RID_PRINTOPTIONPAGE_CB_TITLEROW">Specifies whether you want the name of the document to be included in the printout.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:CheckBox:RID_PRINTOPTIONPAGE:CB_EQUATION_TEXT" id="bm_id3146798" localize="false"/><paragraph role="heading" id="hd_id3166410" xml-lang="en-US" level="3" l10n="U" oldref="6">Formula text</paragraph>
+<paragraph role="paragraph" id="par_id3155449" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="STARMATH_CHECKBOX_RID_PRINTOPTIONPAGE_CB_EQUATION_TEXT">Specifies whether to include the contents of the <emph>Commands</emph> window at the bottom of the printout.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_CHECKBOX_RID_PRINTOPTIONPAGE_CB_FRAME" id="bm_id3154515" localize="false"/><paragraph role="heading" id="hd_id3154046" xml-lang="en-US" level="3" l10n="U" oldref="8">Border</paragraph>
+<paragraph role="paragraph" id="par_id3149516" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".">Applies a thin border to the formula area in the printout.</ahelp> <emph>Title</emph> and <emph>Formula text</emph> are only set down by a frame if the corresponding check box is active.</paragraph>
+<paragraph role="heading" id="hd_id3153822" xml-lang="en-US" level="2" l10n="U" oldref="10">Print format</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:RadioButton:RID_PRINTOPTIONPAGE:RB_ORIGINAL_SIZE" id="bm_id3151246" localize="false"/><paragraph role="heading" id="hd_id3150503" xml-lang="en-US" level="3" l10n="U" oldref="12">Original size</paragraph>
+<paragraph role="paragraph" id="par_id3153627" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="STARMATH_RADIOBUTTON_RID_PRINTOPTIONPAGE_RB_ORIGINAL_SIZE">Prints the formula without adjusting the current font size.</ahelp> It is possible that with large formulas a part of the command text is cut off.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:RadioButton:RID_PRINTOPTIONPAGE:RB_FIT_TO_PAGE" id="bm_id3147264" localize="false"/><paragraph role="heading" id="hd_id3153896" xml-lang="en-US" level="3" l10n="U" oldref="14">Fit to size</paragraph>
+<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="STARMATH_RADIOBUTTON_RID_PRINTOPTIONPAGE_RB_FIT_TO_PAGE">Adjusts the formula to the page format used in the printout.</ahelp> The real size will be determined by the used paper format.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:RadioButton:RID_PRINTOPTIONPAGE:RB_ZOOM" id="bm_id3151210" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/starmath:MetricField:RID_PRINTOPTIONPAGE:MF_ZOOM" id="bm_id3154140" localize="false"/><paragraph role="heading" id="hd_id3153381" xml-lang="en-US" level="3" l10n="U" oldref="16">Scaling</paragraph>
+<paragraph role="paragraph" id="par_id3147084" xml-lang="en-US" l10n="CHG" oldref="17"><ahelp hid="STARMATH_METRICFIELD_RID_PRINTOPTIONPAGE_MF_ZOOM">Reduces or enlarges the size of the printed formula by a specified enlargement factor.</ahelp> Type the desired enlargement factor directly in the <emph>Scaling</emph> control, or set the value using the arrow buttons.</paragraph>
+<paragraph role="heading" id="hd_id3147228" xml-lang="en-US" level="2" l10n="U" oldref="19">Other options</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:CheckBox:RID_PRINTOPTIONPAGE:CB_IGNORE_SPACING" id="bm_id3159152" localize="false"/><paragraph role="heading" id="hd_id3149808" xml-lang="en-US" level="3" l10n="CHG" oldref="21">Ignore ~ and ' at the end of the line</paragraph>
+<paragraph role="paragraph" id="par_id3149203" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="STARMATH_CHECKBOX_RID_PRINTOPTIONPAGE_CB_IGNORE_SPACING">Specifies that these space wildcards will be removed if they are at the end of a line.</ahelp> In earlier versions of $[officename], adding such characters at the end of a line prevented the right edge of the formula from being cut off during printing.</paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/tobeannounced" id="bm_id34459152" localize="false"/><paragraph role="heading" id="hd_id31567808" xml-lang="en-US" level="3" l10n="NEW">Embed only used symbols (smaller file size)</paragraph>
+<paragraph role="paragraph" id="par_id3789203" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Saves only those symbols which each formula that are used in that formula.</ahelp> In earlier versions of $[officename], all symbols were saved with each formula.</paragraph>
+
+
+
+</body>
+</helpdocument>

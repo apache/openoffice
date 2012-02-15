@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidetemplates_stylesxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Templates and Styles</title>
+         <filename>/text/swriter/guide/templates_styles.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153396"><bookmark_value>formatting styles; styles and templates</bookmark_value>
+      <bookmark_value>styles; styles and templates</bookmark_value>
+      <bookmark_value>organizing; templates (guide)</bookmark_value>
+      <bookmark_value>templates; organizing (guide)</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3153396" role="heading" level="1" l10n="U"
+                 oldref="15"><variable id="templates_styles"><link href="text/swriter/guide/templates_styles.xhp" name="Templates and Styles">Templates and Styles</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149635" role="paragraph" l10n="U" oldref="2">A template is a document that contains specific formatting styles, graphics, tables, objects, and other information. A template is used as the basis for creating other documents. For example, you can define paragraph and character styles in a document, save the document as a template, and then use the template to create a new document with the same styles.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149957" role="paragraph" l10n="CHG" oldref="18">Unless you specify otherwise, every new $[officename] text document is based on the default template.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149974" role="paragraph" l10n="U" oldref="3">$[officename] has a number of <link href="text/swriter/01/05130000.xhp" name="predefined templates">predefined templates</link> that you can use to create different types or text documents, such as business letters.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149613" role="heading" level="2" l10n="U" oldref="4">Viewing and Organizing Styles in Templates</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106B0" role="listitem" l10n="NEW">Use the <link href="text/shared/01/01110100.xhp" name="Template Management">Template Management</link> dialog to copy styles from one document to another.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153377" role="listitem" l10n="U" oldref="7">To copy a style, drag it to another template or document.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/load_styles.xhp#load_styles"/>
+      <embed href="text/swriter/guide/change_header.xhp#change_header"/>
+      <embed href="text/swriter/guide/stylist_fillformat.xhp#stylist_fillformat"/>
+      <embed href="text/swriter/guide/stylist_fromselect.xhp#stylist_fromselect"/>
+      <embed href="text/swriter/guide/template_default.xhp#template_default"/>
+   </body>
+</helpdocument>

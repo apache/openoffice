@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textschart01type_column_barxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Chart Type Column and Bar</title>
+<filename>/text/schart/01/type_column_bar.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-01-29T11:56:23">new file</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id4919583"><bookmark_value>column charts</bookmark_value>
+<bookmark_value>bar charts</bookmark_value>
+<bookmark_value>chart types;column and bar</bookmark_value>
+</bookmark><comment>mw made one entry out of two "charts types;"</comment>
+<paragraph role="heading" id="hd_id649433" xml-lang="en-US" level="1" l10n="NEW"><variable id="type_column_bar"><link href="text/schart/01/type_column_bar.xhp">Chart Type Column and Bar</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3430585" xml-lang="en-US" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type. </paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#wiz"/>
+</section>
+<paragraph role="heading" id="hd_id9826960" xml-lang="en-US" level="2" l10n="NEW">Column</paragraph>
+<paragraph role="paragraph" id="par_id2244026" xml-lang="en-US" l10n="NEW">This type shows a bar chart or bar graph with vertical bars. The height of each bar is proportional to its value. The x axis shows categories. The y axis shows the value for each category.</paragraph>
+<paragraph role="paragraph" id="par_id1281167" xml-lang="en-US" l10n="NEW">Normal - this subtype shows all data values belonging to a category next to each other. Main focus is on the individual absolute values, compared to every other value.</paragraph>
+<paragraph role="paragraph" id="par_id3249000" xml-lang="en-US" l10n="NEW">Stacked - this subtype shows the data values of each category on top of each other. Main focus is the overall category value and the individual contribution of each value within its category.</paragraph>
+<paragraph role="paragraph" id="par_id6968901" xml-lang="en-US" l10n="NEW">Percent - this subtype shows the relative percentage of each data value with regard to the total of its category. Main focus is the relative contribution of each value to the category's total.</paragraph>
+<paragraph role="paragraph" id="par_id2224494" xml-lang="en-US" l10n="NEW">You can enable a <link href="text/schart/01/three_d_view.xhp">3D view</link> of the data values. The "realistic" scheme tries to give the best 3D look. The "simple" scheme tries to mimic the chart view of other Office products.</paragraph>
+<paragraph role="paragraph" id="par_id7359233" xml-lang="en-US" l10n="NEW">For 3D charts, you can select the shape of each data value from Box, Cylinder, Cone, and Pyramid.</paragraph>
+<paragraph role="heading" id="hd_id955839" xml-lang="en-US" level="2" l10n="NEW">Bar</paragraph>
+<paragraph role="paragraph" id="par_id6596881" xml-lang="en-US" l10n="NEW">This type shows a bar chart or bar graph with horizontal bars. The length of each bar is proportional to its value. The y axis shows categories. The x axis shows the value for each category.</paragraph>
+<paragraph role="paragraph" id="par_id8750572" xml-lang="en-US" l10n="NEW">The subtypes are the same as for the Column type.</paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+<embed href="text/schart/01/wiz_chart_type.xhp#wiz_chart_type"/>
+<embed href="text/schart/01/wiz_data_range.xhp#wiz_data_range"/>
+<embed href="text/schart/01/wiz_data_series.xhp#wiz_data_series"/>
+<embed href="text/schart/01/wiz_chart_elements.xhp#wiz_chart_elements"/>
+</section>
+</body>
+</helpdocument>

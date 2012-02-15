@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsdrawguidekeyboardxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Shortcut Keys for Drawing Objects</title>
+<filename>/text/sdraw/guide/keyboard.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-05T14:22:29">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155628"><bookmark_value>accessibility; %PRODUCTNAME Draw</bookmark_value>
+<bookmark_value>draw objects; text entry mode</bookmark_value>
+<bookmark_value>text entry mode for draw objects</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3155628" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="keyboard"><link href="text/sdraw/guide/keyboard.xhp" name="Shortcut Keys for Drawing Objects">Shortcut Keys for Drawing Objects</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3148663" xml-lang="en-US" l10n="U" oldref="13">You can create and edit drawing objects using the keyboard.</paragraph>
+<embed href="text/shared/00/00000099.xhp#keys"/>
+<section id="all">
+<paragraph role="heading" id="hd_id3125863" xml-lang="en-US" level="2" l10n="U" oldref="12">To Create and Edit a Drawing Object</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153188" xml-lang="en-US" l10n="CHG" oldref="11">Press <item type="keycode">F6</item> to navigate to the <emph>Drawing</emph> bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3146971" xml-lang="en-US" l10n="CHG" oldref="10">Press the <item type="keycode">Right</item> arrow key until you reach the toolbar icon of a drawing tool.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106CD" xml-lang="en-US" l10n="NEW">If there is an arrow next to the icon, the drawing tool opens a sub toolbar. Press the <item type="keycode">Up</item> or <item type="keycode">Down</item> arrow key to open the sub toolbar, then press the <item type="keycode">Right</item> or <item type="keycode">Left</item> key to select an icon.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3147338" xml-lang="en-US" l10n="U" oldref="8">Press <item type="keycode"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3154705" xml-lang="en-US" l10n="U" oldref="7">The object is created at the center of the current document.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3155962" xml-lang="en-US" l10n="U" oldref="6">To return to the document, press <item type="keycode"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3155062" xml-lang="en-US" l10n="U" oldref="5">You can use the arrow keys to position the object where you want. To choose a command from the context menu for the object, press <item type="keycode">Shift+F10</item>.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3150306" xml-lang="en-US" level="2" l10n="U" oldref="4">To Select an Object</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3152990" xml-lang="en-US" l10n="U" oldref="3">Press <item type="keycode"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item> to enter the document.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145587" xml-lang="en-US" l10n="U" oldref="2">Press <item type="keycode">Tab</item> until you reach the object you want to select.</paragraph>
+</listitem>
+</list>
+</section>
+<section id="relatedtopics">
+<embed href="text/shared/guide/keyboard.xhp#keyboard"/>
+<embed href="text/sdraw/04/01020000.xhp#draw_keys"/>
+<embed href="text/shared/04/01010000.xhp#common_keys"/>
+</section>
+</body>
+</helpdocument>

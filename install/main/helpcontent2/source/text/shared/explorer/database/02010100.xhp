@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabase02010100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Query Design</title>
+<filename>/text/shared/explorer/database/02010100.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153323"><bookmark_value>views; creating database views (Base)</bookmark_value>
+<bookmark_value>queries; creating in design view (Base)</bookmark_value>
+<bookmark_value>designing; queries (Base)</bookmark_value>
+<bookmark_value>design view; queries/views (Base)</bookmark_value>
+<bookmark_value>joining;tables (Base)</bookmark_value>
+<bookmark_value>tables in databases; joining for queries (Base)</bookmark_value>
+<bookmark_value>queries; joining tables (Base)</bookmark_value>
+<bookmark_value>tables in databases; relations (Base)</bookmark_value>
+<bookmark_value>relations; joining tables (Base)</bookmark_value>
+<bookmark_value>queries; deleting table links (Base)</bookmark_value>
+<bookmark_value>criteria of query design (Base)</bookmark_value>
+<bookmark_value>queries; formulating filter conditions (Base)</bookmark_value>
+<bookmark_value>filter conditions;in queries (Base)</bookmark_value>
+<bookmark_value>parameters; queries (Base)</bookmark_value>
+<bookmark_value>queries; parameter queries (Base)</bookmark_value>
+<bookmark_value>SQL; queries (Base)</bookmark_value>
+<bookmark_value>native SQL (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)" to all entries</comment><paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="E" oldref="2" localize="false"/>
+<paragraph role="heading" id="hd_id3153394" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/explorer/database/02010100.xhp" name="Query Design">Query Design</link></paragraph>
+<paragraph role="paragraph" id="par_id3156411" xml-lang="en-US" l10n="U" oldref="288"><ahelp hid=".">The <emph>Query Design View </emph>allows you to create and edit a database query.</ahelp></paragraph>
+<section id="howtoget">
+<embed href="text/shared/00/00000450.xhp#entwab"/>
+</section>
+<paragraph role="note" id="par_id7024140" xml-lang="en-US" l10n="NEW">Most databases use queries to filter or to sort database tables to display records on your computer. Views offer the same functionality as queries, but on the server side. If your database is on a server that supports views, you can use views to filter the records on the server to speed up the display time.</paragraph>
+<paragraph role="note" id="par_id3159176" xml-lang="en-US" l10n="CHG" oldref="276">Selecting the <emph>Create View</emph> command from the <emph>Tables</emph> tab page of a database document, you see the <emph>View Design</emph> window that resembles the <emph>Query Design</emph> window described here.</paragraph>
+<paragraph role="paragraph" id="par_id8307138" xml-lang="en-US" l10n="NEW">The Query Design window layout is stored with a created query, but cannot be stored with a created view.</paragraph>
+<paragraph role="heading" id="hd_id3149233" xml-lang="en-US" level="2" l10n="U" oldref="3">The Design View</paragraph>
+<paragraph role="paragraph" id="par_id3145673" xml-lang="en-US" l10n="CHG" oldref="4">To create a query, click the <emph>Queries</emph> icon in a database document, then click <emph>Create Query in Design View</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3150255" xml-lang="en-US" l10n="U" oldref="5">The lower pane of the Design View is where you <link href="text/shared/explorer/database/02010100.xhp" name="define">define</link> the query. To define a query, specify the database <link href="text/shared/explorer/database/02010100.xhp" name="field names">field names</link> to include and the <link href="text/shared/explorer/database/02010100.xhp" name="criteria">criteria</link> for displaying the fields. To rearrange the columns in the lower pane of the Design View, drag a column header to a new location, or select the column and press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+arrow key.</paragraph>
+<paragraph role="paragraph" id="par_id3152474" xml-lang="en-US" l10n="CHG" oldref="6">In the top of the query Design View window, the <link href="text/shared/main0214.xhp" name="icons">icons</link> of the <emph>Query Design</emph> Bar and the <emph>Design</emph> bar are displayed.</paragraph>
+<paragraph role="paragraph" id="par_id3147559" xml-lang="en-US" l10n="CHG" oldref="287">If you want to test a query, double-click the query name in the database document. The query result is displayed in a table similar to the Data Source View. Note: the table displayed is only temporary.</paragraph>
+<paragraph role="heading" id="hd_id8226264" xml-lang="en-US" level="3" l10n="NEW">Keys in Query Design View</paragraph>
+<table id="tbl_id1880855">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id2341074" xml-lang="en-US" l10n="NEW">Key</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id4384289" xml-lang="en-US" l10n="NEW">Function</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id5839106" xml-lang="en-US" l10n="NEW">F4</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id8554338" xml-lang="en-US" l10n="NEW">Preview</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id1254921" xml-lang="en-US" l10n="NEW">F5</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id7636646" xml-lang="en-US" l10n="NEW">Run Query</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id8579363" xml-lang="en-US" l10n="NEW">F7</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3227942" xml-lang="en-US" l10n="NEW">Add Table or Query</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3154939" xml-lang="en-US" level="2" l10n="U" oldref="7">Browse</paragraph>
+<paragraph role="paragraph" id="par_id3148799" xml-lang="en-US" l10n="U" oldref="8">When you open the query design for the first time, in order to create a new query, you can click <link href="text/shared/02/14020100.xhp" name="Add Tables"><emph>Add Tables</emph></link>. You then see a dialog in which you must first select the table that will be the basis for the query.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_QRYDGNTAB" id="bm_id3150767" localize="false"/><paragraph role="paragraph" id="par_id3144762" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_CTL_QRYDGNTAB">Double-click fields to add them to the query. Drag-and-drop to define relations.</ahelp></paragraph>
+<paragraph role="note" id="par_id3157894" xml-lang="en-US" l10n="U" oldref="141">While designing a query, you cannot modify the selected tables.</paragraph>
+<paragraph role="heading" id="hd_id3149562" xml-lang="en-US" level="3" l10n="U" oldref="11">Remove tables</paragraph>
+<paragraph role="paragraph" id="par_id3150685" xml-lang="en-US" l10n="U" oldref="12">To remove the table from Design View, click the upper border of the table window and display the context menu. You can use the <emph>Delete</emph> command to remove the table from the Design View. Another option is to press the Delete key.</paragraph>
+<section id="darstellungaendern">
+<paragraph role="heading" id="hd_id3150012" xml-lang="en-US" level="3" l10n="U" oldref="142">Move table and modify table size</paragraph>
+<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U" oldref="143">You can resize and arrange the tables according to your preferences. To move tables, drag the upper border to the desired position. Enlarge or reduce the size in which the table is displayed by positioning the mouse cursor on a border or on a corner and dragging the table until it is the desired size.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3145365" xml-lang="en-US" level="2" l10n="U" oldref="13">Table Relations</paragraph>
+<paragraph role="paragraph" id="par_id3154145" xml-lang="en-US" l10n="U" oldref="14">If there are data relations between a field name in one table and a field name in another table, you can use these relations for your query.</paragraph>
+<paragraph role="paragraph" id="par_id3152577" xml-lang="en-US" l10n="U" oldref="15">If, for example, you have a spreadsheet for articles identified by an article number, and a spreadsheet for customers in which you record all articles that a customer orders using the corresponding article numbers, then there is a relationship between the two "article number" data fields. If you now want to create a query that returns all articles that a customer has ordered, you must retrieve data from two spreadsheets. To do this, you must tell $[officename] what the relationship exists between the data in the two spreadsheets.</paragraph>
+<paragraph role="paragraph" id="par_id3155302" xml-lang="en-US" l10n="U" oldref="16">To do this, click a field name in a table (for example, the field name "Item-Number" from the Customer table), hold down the mouse button and then drag the field name to the field name of the other table ("Item-Number" from the Item table). When you release the mouse button, a line connecting the two fields in the two windows appears. The corresponding condition that the content of the two field names must be identical is entered in the resulting SQL query.</paragraph>
+<paragraph role="paragraph" id="par_id3153876" xml-lang="en-US" l10n="CHG" oldref="137">The creation of a query that is based on several related sheets is only possible if you use $[officename] as the interface for a relational database.</paragraph>
+<paragraph role="note" id="par_id3145646" xml-lang="en-US" l10n="U" oldref="246">You cannot access tables from different databases in a query. Queries involving multiple tables can only be created within one database.</paragraph>
+<paragraph role="heading" id="hd_id3153279" xml-lang="en-US" level="3" l10n="U" oldref="224">Specifying link type</paragraph>
+<paragraph role="paragraph" id="par_id3154791" xml-lang="en-US" l10n="U" oldref="225">If you double-click the line connecting two linked fields or call the menu command <emph>Insert - New Relation</emph>, you can specify the type of link in the <link href="text/shared/explorer/database/02010101.xhp" name="Relations"><emph>Relations</emph></link> dialog.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QUERY_EDIT_JOINCONNECTION" id="bm_id3145253" localize="false"/><paragraph role="paragraph" id="par_id3150094" xml-lang="en-US" l10n="CHG" oldref="285"><ahelp hid="HID_QUERY_EDIT_JOINCONNECTION" visibility="hidden">Edit Join Properties.</ahelp>Alternatively, press Tab until the line is selected, then press Shift+F10 to display the context menu and there choose the command <emph>Edit</emph>. Some databases support only a subset of the possible join types.</paragraph>
+<paragraph role="heading" id="hd_id3155851" xml-lang="en-US" level="3" l10n="U" oldref="145">Deleting relations</paragraph>
+<paragraph role="paragraph" id="par_id3156178" xml-lang="en-US" l10n="U" oldref="146">To delete a relation between two tables, click the connection line and then press the Delete key.</paragraph>
+<paragraph role="paragraph" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="284">Alternatively, delete the respective entries in <emph>Fields involved </emph>in the <emph>Relations</emph> dialog. Or press Tab until the connecting vector is displayed highlighted, then press Shift+F10 to open the context menu and select <emph>Delete </emph>command.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_QRYDGNCRIT" id="bm_id3152972" localize="false"/><paragraph role="heading" id="hd_id3151208" xml-lang="en-US" level="2" l10n="U" oldref="17">Define query</paragraph>
+<paragraph role="paragraph" id="par_id3158416" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_CTL_QRYDGNCRIT">Select conditions to define the query.</ahelp> Each column of the design table accepts a data field for the query. The conditions in one row are linked with a Boolean AND.</paragraph>
+<paragraph role="heading" id="hd_id3154161" xml-lang="en-US" level="3" l10n="U" oldref="19">Specify field name</paragraph>
+<paragraph role="paragraph" id="par_id3146791" xml-lang="en-US" l10n="U" oldref="20">First, select all field names from the tables that you want to add to the query. You can do this either with drag-and-drop or by double-clicking a field name in the table window. With the drag-and-drop method, use the mouse to drag a field name from the table window into the lower area of the query design. As you do this, you can decide which column you want to add the field to. Select a field name by double-clicking. It will then be added to the next free column.</paragraph>
+<paragraph role="heading" id="hd_id3150750" xml-lang="en-US" level="3" l10n="U" oldref="21">Deleting field names</paragraph>
+<paragraph role="paragraph" id="par_id3154479" xml-lang="en-US" l10n="U" oldref="22">To remove a field name from the query, click the column header of the field and choose the <emph>Delete</emph> command on the context menu for the column.</paragraph>
+<paragraph role="heading" id="hd_id3155764" xml-lang="en-US" level="3" l10n="U" oldref="277">Save query</paragraph>
+<paragraph role="paragraph" id="par_id3148481" xml-lang="en-US" l10n="U" oldref="278">Use the <emph>Save</emph> icon on the Standard Bar to save the query. You see a dialog that asks you to enter a name for the query. If the database supports schemas, you can also enter a schema.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ComboBox:DLG_SAVE_AS:ET_SCHEMA" id="bm_id3156378" localize="false"/><paragraph role="heading" id="hd_id3154362" xml-lang="en-US" level="4" l10n="U" oldref="279">Schema</paragraph>
+<paragraph role="paragraph" id="par_id3154754" xml-lang="en-US" l10n="U" oldref="280"><ahelp hid="DBACCESS_COMBOBOX_DLG_SAVE_AS_ET_SCHEMA">Enter the name of the schema that is assigned to the query or table view.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:Edit:DLG_SAVE_AS:ET_TITLE" id="bm_id3147340" localize="false"/><paragraph role="heading" id="hd_id3156717" xml-lang="en-US" level="4" l10n="U" oldref="281">Query name or table view name</paragraph>
+<paragraph role="paragraph" id="par_id3154253" xml-lang="en-US" l10n="U" oldref="282"><ahelp hid="DBACCESS_EDIT_DLG_SAVE_AS_ET_TITLE">Enter the name of the query or table view.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3163805" xml-lang="en-US" level="3" l10n="U" oldref="23">Filtering data</paragraph>
+<paragraph role="paragraph" id="par_id3154964" xml-lang="en-US" l10n="U" oldref="24">To filter data for the query, set the desired preferences in the lower area of the Design View. The following lines are available:</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FIELD" id="bm_id3148536" localize="false"/><paragraph role="heading" id="hd_id3146916" xml-lang="en-US" level="4" l10n="U" oldref="25">Field</paragraph>
+<paragraph role="paragraph" id="par_id3156372" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="HID_QRYDGN_ROW_FIELD">Enter the name of the data field that you referred to in the Query. All settings made in the lower rows refer to this field.</ahelp> If you activate a cell with a mouse click you'll see an arrow button, which enables you to select a field. The "Table name.*" option selects all data fields and the criteria is valid for all table fields.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_ALIAS" id="bm_id3154702" localize="false"/><paragraph role="heading" id="hd_id3145150" xml-lang="en-US" level="4" l10n="U" oldref="148">Alias</paragraph>
+<paragraph role="paragraph" id="par_id3146315" xml-lang="en-US" l10n="U" oldref="149"><ahelp hid="HID_QRYDGN_ROW_ALIAS">Specifies an alias. This alias will be listed in a query instead of the field name. This makes it possible to use user-defined column labels.</ahelp> For example, if the data field has the name PtNo and, instead of that name, you would like to have PartNum appear in the query, enter PartNum as alias.</paragraph>
+<paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="193">In an SQL statement, aliases are defined as following:</paragraph>
+<paragraph role="paragraph" id="par_id3149922" xml-lang="en-US" l10n="U" oldref="194">SELECT column AS alias FROM table.</paragraph>
+<paragraph role="paragraph" id="par_id3159335" xml-lang="en-US" l10n="U" oldref="195">For example:</paragraph>
+<paragraph role="paragraph" id="par_id3148478" xml-lang="en-US" l10n="U" oldref="196">SELECT "PtNo" AS "PartNum" FROM "Parts"</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_TABLE" id="bm_id3154665" localize="false"/><paragraph role="heading" id="hd_id3148485" xml-lang="en-US" level="4" l10n="U" oldref="27">Table</paragraph>
+<paragraph role="paragraph" id="par_id3163665" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="HID_QRYDGN_ROW_TABLE">The corresponding database table of the selected data field is listed here.</ahelp> If you activate the a cell with a mouse click, an arrow will appear which enables you to select another table of the current query.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_ORDER" id="bm_id3154202" localize="false"/><paragraph role="heading" id="hd_id3154207" xml-lang="en-US" level="4" l10n="U" oldref="29">Sort</paragraph>
+<paragraph role="paragraph" id="par_id3150979" xml-lang="en-US" l10n="CHG" oldref="30"><ahelp hid="HID_QRYDGN_ROW_ORDER">If you click the cell, you can select among the sorting options: ascending, descending and not sorted.</ahelp> Text fields will be sorted alphabetically and numerical fields numerically. For most databases, administrators can set the sorting options.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_VISIBLE" id="bm_id3149334" localize="false"/><paragraph role="heading" id="hd_id3150384" xml-lang="en-US" level="4" l10n="U" oldref="31">Visible</paragraph>
+<paragraph role="paragraph" id="par_id3146133" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_QRYDGN_ROW_VISIBLE">If you mark the <emph>Visible</emph> property for a data field, that field will be visible in the query</ahelp>. If you only use a data field to formulate a condition, you do not necessarily need to show it.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_CRIT" id="bm_id3147130" localize="false"/><paragraph role="heading" id="hd_id3154714" xml-lang="en-US" level="4" l10n="U" oldref="33">Criteria</paragraph>
+<paragraph role="paragraph" id="par_id3145134" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_QRYDGN_ROW_CRIT">Specifies the <link href="text/shared/explorer/database/02010100.xhp" name="criteria ">criteria </link>by which the content of the data field should be filtered.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3152477" xml-lang="en-US" level="4" l10n="U" oldref="35">or</paragraph>
+<paragraph role="paragraph" id="par_id3154585" xml-lang="en-US" l10n="U" oldref="36">Here you can enter one additional criterion for filtering in each line. Multiple criteria in one column will be connected by an OR link.</paragraph>
+<paragraph role="paragraph" id="par_id3148800" xml-lang="en-US" l10n="U" oldref="150">You can also use the context menu of the line headers in the lower area of the query design to insert another line for functions:</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FUNCTION" id="bm_id3153275" localize="false"/><paragraph role="heading" id="hd_id3148419" xml-lang="en-US" level="3" l10n="U" oldref="151">Functions</paragraph>
+<paragraph role="paragraph" id="par_id3153233" xml-lang="en-US" l10n="CHG" oldref="152"><ahelp hid="HID_QRYDGN_ROW_FUNCTION" visibility="hidden">Select a function to run in the query here.</ahelp> The functions you can run here depend on the database. </paragraph>
+<paragraph role="paragraph" id="par_id8760818" xml-lang="en-US" l10n="CHG">If you are working with the HSQL database, the list box in the <emph>Function</emph> row offers you the following options:</paragraph>
+<table id="tbl_id3148461">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150307" xml-lang="en-US" l10n="U" oldref="179">Option</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3166430" xml-lang="en-US" l10n="U" oldref="180">SQL</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152993" xml-lang="en-US" l10n="U" oldref="181">Effect</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155377" xml-lang="en-US" l10n="U" oldref="162">No function</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan=""/>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155533" xml-lang="en-US" l10n="U" oldref="163">No function will be executed.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3166420" xml-lang="en-US" l10n="U" oldref="164">Average</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145268" xml-lang="en-US" l10n="U" oldref="183">AVG</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154486" xml-lang="en-US" l10n="U" oldref="165">Calculates the arithmetic mean of a field.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149979" xml-lang="en-US" l10n="U" oldref="166">Count</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154260" xml-lang="en-US" l10n="U" oldref="184">COUNT</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155810" xml-lang="en-US" l10n="U" oldref="167">Determines the number of records in the table. Empty fields can either be counted (a) or not (b).</paragraph>
+<paragraph role="tablecontent" id="par_id3151333" xml-lang="en-US" l10n="U" oldref="197">a) COUNT(*): Passing an asterisk as the argument counts all records in the table.</paragraph>
+<paragraph role="tablecontent" id="par_id3152889" xml-lang="en-US" l10n="U" oldref="198">b) COUNT(column): Passing a field name as an argument counts only fields in which the field name in question contains a value. Null values (empty fields) will not be counted.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153067" xml-lang="en-US" l10n="U" oldref="168">Maximum</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148840" xml-lang="en-US" l10n="U" oldref="185">MAX</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159221" xml-lang="en-US" l10n="U" oldref="169">Determines the highest value of a field.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146866" xml-lang="en-US" l10n="U" oldref="170">Minimum</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148604" xml-lang="en-US" l10n="U" oldref="186">MIN</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3157982" xml-lang="en-US" l10n="U" oldref="171">Determines the lowest value of a field.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154828" xml-lang="en-US" l10n="U" oldref="172">Sum</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147070" xml-lang="en-US" l10n="U" oldref="187">SUM</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154536" xml-lang="en-US" l10n="U" oldref="173">Calculates the sum of values of associated fields.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148820" xml-lang="en-US" l10n="U" oldref="174">Group</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145375" xml-lang="en-US" l10n="U" oldref="188">GROUP BY</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149438" xml-lang="en-US" l10n="U" oldref="175">Groups query data according to the field name selected. Functions are executed according to the specified groups. In SQL, this option corresponds to the GROUP BY clause. If a criterion is added, this entry appears in the SQL HAVING.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="paragraph" id="par_id3156038" xml-lang="en-US" l10n="U" oldref="189">You can also enter function calls directly into the SQL statement. The syntax is:</paragraph>
+<paragraph role="paragraph" id="par_id3156340" xml-lang="en-US" l10n="U" oldref="190">SELECT FUNCTION(column) FROM table.</paragraph>
+<paragraph role="paragraph" id="par_id3155075" xml-lang="en-US" l10n="U" oldref="191">For example, the function call in SQL for calculating a sum is:</paragraph>
+<paragraph role="paragraph" id="par_id3154591" xml-lang="en-US" l10n="U" oldref="192">SELECT SUM("Price") FROM "Article".</paragraph>
+<paragraph role="paragraph" id="par_id3159205" xml-lang="en-US" l10n="CHG" oldref="176">Except for the <emph>Group</emph> function, the above functions are so-called Aggregate functions. These are functions that calculate data to create summaries from the results. Additional functions that are not listed in the list box might be also possible. These depend on the specific database system in use and on the current state of the Base driver.</paragraph>
+<paragraph role="paragraph" id="par_id3148651" xml-lang="en-US" l10n="CHG" oldref="177">To use other functions not listed in the list box, you must enter them under <emph>Field</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3155098" xml-lang="en-US" l10n="U" oldref="178">You can also assign aliases to function calls. If the query is not to be displayed in the column header, enter the desired name under <emph>Alias</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3155539" xml-lang="en-US" l10n="U" oldref="199">The corresponding function in an SQL statement is:</paragraph>
+<paragraph role="paragraph" id="par_id3149425" xml-lang="en-US" l10n="U" oldref="200">SELECT FUNCTION() AS alias FROM table</paragraph>
+<paragraph role="paragraph" id="par_id3144431" xml-lang="en-US" l10n="U" oldref="201">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154614" xml-lang="en-US" l10n="U" oldref="202">SELECT COUNT(*) AS count FROM "Item"</paragraph>
+<paragraph role="note" id="par_id3154610" xml-lang="en-US" l10n="U" oldref="203">If you run this function, you cannot insert any additional columns for the query other than receiving these columns as a "Group" function.</paragraph>
+<paragraph role="paragraph" id="par_id3154644" xml-lang="en-US" l10n="U" oldref="204">
+<emph>Examples</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3151120" xml-lang="en-US" l10n="U" oldref="205">In the following example, a query is run through two tables: an "Item" table with the "Item_No" field and a "Suppliers" table with the "Supplier_Name" field. In addition, both tables have a common field name "Supplier_No."</paragraph>
+<paragraph role="paragraph" id="par_id3155144" xml-lang="en-US" l10n="U" oldref="206">The following steps are required to create a query containing all suppliers who deliver more than three items.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153240" xml-lang="en-US" l10n="U" oldref="207">Insert the "Item" and "Suppliers" tables into the query design.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148807" xml-lang="en-US" l10n="U" oldref="208">Link the "Supplier_No" fields of the two tables if there is not already a relation of this type.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3161652" xml-lang="en-US" l10n="U" oldref="209">Double-click the "Item_No" field from the "Item" table. Display the <emph>Function</emph> line using the context menu and select the Count function.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3151009" xml-lang="en-US" l10n="U" oldref="210">Enter &gt;3 as a criterion and disable the Visible field.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145601" xml-lang="en-US" l10n="U" oldref="211">Double-click the "Supplier_Name" field in the "Suppliers" table and choose the Group function.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147512" xml-lang="en-US" l10n="U" oldref="212">Run the query.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3148638" xml-lang="en-US" l10n="U" oldref="213">If the "price" (for the individual price of an article) and "Supplier_No" (for the supplier of the article) fields exist in the "Item" table, you can obtain the average price of the item that a supplier provides with the following query:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153045" xml-lang="en-US" l10n="U" oldref="214">Insert the "Item" table into the query design.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149802" xml-lang="en-US" l10n="U" oldref="215">Double-click the "Price" and "Supplier_No" fields.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153554" xml-lang="en-US" l10n="U" oldref="216">Enable the <emph>Function</emph> line and select the Average function from the "Price" field.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155597" xml-lang="en-US" l10n="U" oldref="217">You can also enter "Average" in the line for the alias name (without quotation marks).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3151191" xml-lang="en-US" l10n="U" oldref="218">Choose Group for the "Supplier_No" field.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155547" xml-lang="en-US" l10n="U" oldref="219">Run the query.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3147549" xml-lang="en-US" l10n="U" oldref="247">The following context menu commands and symbols are available:</paragraph>
+<paragraph role="heading" id="hd_id3154172" xml-lang="en-US" level="3" l10n="U" oldref="248">Functions</paragraph>
+<paragraph role="paragraph" id="par_id3150414" xml-lang="en-US" l10n="U" oldref="249"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Shows or hides a row for selection of functions.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149872" xml-lang="en-US" level="3" l10n="U" oldref="153">Table Name</paragraph>
+<paragraph role="paragraph" id="par_id3147246" xml-lang="en-US" l10n="U" oldref="154"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Shows or hides the row for the table name.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145117" xml-lang="en-US" level="3" l10n="U" oldref="155">Alias Name</paragraph>
+<paragraph role="paragraph" id="par_id3155754" xml-lang="en-US" l10n="U" oldref="156"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Shows or hides the row for the alias name.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153298" xml-lang="en-US" level="3" l10n="U" oldref="157">Distinct Values</paragraph>
+<paragraph role="paragraph" id="par_id3147500" xml-lang="en-US" l10n="U" oldref="158"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Applies only distinct values to the query.</ahelp> This applies to records containing data that appears several times in the selected fields. If the <emph>Distinct Values</emph> command is active, you will see only one record in the query (DISTINCT). Otherwise, you will see all records corresponding to the query criteria (ALL).</paragraph>
+<paragraph role="paragraph" id="par_id3150436" xml-lang="en-US" l10n="U" oldref="159">For example, if the name "Smith" occurs several times in your address database, you can choose the<emph> Distinct Values</emph> command to specify in the query that the name "Smith" will occur only once.</paragraph>
+<paragraph role="paragraph" id="par_id3152352" xml-lang="en-US" l10n="U" oldref="160">For a query involving several fields, the combination of values from all fields must be unique so that the result can be formed from a specific record. For example, you have "Smith in Chicago" once in your address book and "Smith in London" twice. With the<emph> Distinct Values</emph> command, the query will use the two fields "last name" and "city" and return the query result "Smith in Chicago" once and "Smith in London" once.</paragraph>
+<paragraph role="paragraph" id="par_id3149825" xml-lang="en-US" l10n="U" oldref="161">In SQL, this command corresponds to the DISTINCT predicate.</paragraph>
+<paragraph role="heading" id="hd_id3148926" xml-lang="en-US" level="3" l10n="U" oldref="37">Formulating filter conditions</paragraph>
+<section id="abfragekriterien">
+<paragraph role="paragraph" id="par_id3153162" xml-lang="en-US" l10n="U" oldref="38">When formulating filter conditions, various operators and commands are available to you. Apart from the relational operators, there are SQL-specific commands that query the content of database fields. If you use these commands in the $[officename] syntax, $[officename] automatically converts these into the corresponding SQL syntax. You can also enter the SQL command directly. The following tables give an overview of the operators and commands:</paragraph>
+<table id="tbl_id3152803">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149044" xml-lang="en-US" l10n="U" oldref="39">Operator</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152471" xml-lang="en-US" l10n="U" oldref="40">Meaning</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147407" xml-lang="en-US" l10n="U" oldref="41">Condition is satisfied if...</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156161" xml-lang="en-US" l10n="U" oldref="42">=</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153026" xml-lang="en-US" l10n="U" oldref="43">equal to</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148895" xml-lang="en-US" l10n="U" oldref="44">... the content of the field is identical to the indicated expression.</paragraph>
+<paragraph role="tablecontent" id="par_id3153120" xml-lang="en-US" l10n="U" oldref="250">The operator = will not be displayed in the query fields. If you enter a value without any operator, the operator = will be automatically adopted.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150470" xml-lang="en-US" l10n="U" oldref="45">&lt;&gt;</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145223" xml-lang="en-US" l10n="U" oldref="46">not equal to</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145635" xml-lang="en-US" l10n="U" oldref="47">... the content of the field does not correspond to the specified expression.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153015" xml-lang="en-US" l10n="U" oldref="48">&gt;</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146815" xml-lang="en-US" l10n="U" oldref="49">greater than</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149150" xml-lang="en-US" l10n="U" oldref="50">... the content of the field is greater than the specified expression.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147270" xml-lang="en-US" l10n="U" oldref="51">&lt;</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147379" xml-lang="en-US" l10n="U" oldref="52">less than</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150375" xml-lang="en-US" l10n="U" oldref="53">... the content of the field is less than the specified expression.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149787" xml-lang="en-US" l10n="U" oldref="54">&gt;=</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150636" xml-lang="en-US" l10n="U" oldref="55">greater than or equal to</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154584" xml-lang="en-US" l10n="U" oldref="56">... the content of the field is greater than or equal to the specified expression.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3157964" xml-lang="en-US" l10n="U" oldref="57">&lt;=</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154052" xml-lang="en-US" l10n="U" oldref="58">less than or equal to</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3157902" xml-lang="en-US" l10n="U" oldref="59">... the content of the field is less than or equal to the specified expression.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<table id="tbl_id3153376">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154630" xml-lang="en-US" l10n="U" oldref="60">$[officename] command</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150484" xml-lang="en-US" l10n="U" oldref="61">SQL command</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154158" xml-lang="en-US" l10n="U" oldref="62">Meaning</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149433" xml-lang="en-US" l10n="U" oldref="63">Condition is satisfied if...</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154275" xml-lang="en-US" l10n="U" oldref="64">IS EMPTY</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149893" xml-lang="en-US" l10n="U" oldref="65">IS NULL</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3143236" xml-lang="en-US" l10n="U" oldref="66">is null</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154744" xml-lang="en-US" l10n="U" oldref="67">... The field name is empty. For Yes/No fields with three states, this command automatically queries the undetermined state (neither Yes nor No).</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146940" xml-lang="en-US" l10n="U" oldref="68">IS NOT EMPTY</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147471" xml-lang="en-US" l10n="U" oldref="69">IS NOT NULL</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151229" xml-lang="en-US" l10n="U" oldref="70">is not empty</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145304" xml-lang="en-US" l10n="U" oldref="71">... the field name is not empty.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153578" xml-lang="en-US" l10n="U" oldref="72">LIKE</paragraph>
+<paragraph role="tablecontent" id="par_id3153891" xml-lang="en-US" l10n="U" oldref="73">(placeholder * for any number of characters</paragraph>
+<paragraph role="tablecontent" id="par_id3148887" xml-lang="en-US" l10n="U" oldref="74">placeholder ? for exactly one character)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148623" xml-lang="en-US" l10n="U" oldref="75">LIKE</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157985"><bookmark_value>placeholders; in SQL queries</bookmark_value>
+</bookmark>
+<paragraph role="tablecontent" id="par_id3157985" xml-lang="en-US" l10n="U" oldref="76">(% placeholder for any number of characters</paragraph>
+<paragraph role="tablecontent" id="par_id3147422" xml-lang="en-US" l10n="U" oldref="77">Placeholder _ for exactly one character)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154845" xml-lang="en-US" l10n="U" oldref="78">is an element of</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156130" xml-lang="en-US" l10n="U" oldref="79">... the data field contains the indicated expression. The (*) placeholder indicates whether the expression x occurs at the beginning of (x*), at the end of (*x) or inside the field content (*x*). You can enter as a placeholder in SQL queries either the SQL % character or the familiar (*) file system placeholder in the $[officename] interface.</paragraph>
+<paragraph role="tablecontent" id="par_id3150271" xml-lang="en-US" l10n="U" oldref="80">The * or % placeholder stands for any number of characters. The question mark (?) in the $[officename] interface or the underscore (_) in SQL queries is used to represent exactly one character.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152954" xml-lang="en-US" l10n="U" oldref="81">NOT LIKE</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3161669" xml-lang="en-US" l10n="U" oldref="82">NOT LIKE</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159141" xml-lang="en-US" l10n="U" oldref="83">Is not an element of</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3161664" xml-lang="en-US" l10n="U" oldref="84">... the field name does not contain the specified expression.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149185" xml-lang="en-US" l10n="U" oldref="85">BETWEEN x AND y</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151259" xml-lang="en-US" l10n="U" oldref="86">BETWEEN x AND y</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159184" xml-lang="en-US" l10n="U" oldref="87">falls within the interval [x,y]</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154395" xml-lang="en-US" l10n="U" oldref="88">... the field name contains a value that lies between the two values x and y.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154561" xml-lang="en-US" l10n="U" oldref="89">NOT BETWEEN x AND y</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148753" xml-lang="en-US" l10n="U" oldref="90">NOT BETWEEN x AND y</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155498" xml-lang="en-US" l10n="U" oldref="91">Does not fall within the interval [x,y]</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148992" xml-lang="en-US" l10n="U" oldref="92">... the field name contains a value that does not lie between the two values x and y.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149995" xml-lang="en-US" l10n="U" oldref="93">IN (a; b; c...)</paragraph>
+<paragraph role="tablecontent" id="par_id3159167" xml-lang="en-US" l10n="U" oldref="251">Note that the semicolons are used as separators in all value lists!</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159085" xml-lang="en-US" l10n="U" oldref="94">IN (a, b, c...)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154809" xml-lang="en-US" l10n="U" oldref="95">contains a, b, c...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148399" xml-lang="en-US" l10n="U" oldref="96">... the field name contains one of the specified expressions a, b, c,... Any number of expressions can be specified, and the result of the query is determined by an Or link. The expressions a, b, c... can be either numbers or characters</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154112" xml-lang="en-US" l10n="U" oldref="97">NOT IN (a; b; c...)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153544" xml-lang="en-US" l10n="U" oldref="98">NOT IN (a, b, c...)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150679" xml-lang="en-US" l10n="U" oldref="99">does not contain a, b, c...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158439" xml-lang="en-US" l10n="U" oldref="100">... the field name does not contain one of the specified expressions a, b, c,...</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145145" xml-lang="en-US" l10n="U" oldref="101">= TRUE</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146804" xml-lang="en-US" l10n="U" oldref="102">= TRUE</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149248" xml-lang="en-US" l10n="U" oldref="103">has the value True</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148524" xml-lang="en-US" l10n="U" oldref="104">... the field name has the value True.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159212" xml-lang="en-US" l10n="U" oldref="105">= FALSE</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3144751" xml-lang="en-US" l10n="U" oldref="106">= FALSE</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149955" xml-lang="en-US" l10n="U" oldref="107">has the value false</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146850" xml-lang="en-US" l10n="U" oldref="108">... the field name has the value false.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3155954" xml-lang="en-US" level="3" l10n="U" oldref="117">Examples</paragraph>
+<table id="tbl_id3083279">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153792" xml-lang="en-US" l10n="U" oldref="118">='Ms.'</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150948" xml-lang="en-US" l10n="U" oldref="119">returns field names with the field content "Ms."</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150333" xml-lang="en-US" l10n="U" oldref="120">LIKE 'g?ve'</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147332" xml-lang="en-US" l10n="U" oldref="121">returns field names with field content such as "give" and "gave".</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146062" xml-lang="en-US" l10n="U" oldref="122">LIKE 'S*'</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155350" xml-lang="en-US" l10n="U" oldref="123">returns data fields with field contents such as "Sun".</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152883" xml-lang="en-US" l10n="U" oldref="124">BETWEEN 10 AND 20</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159406" xml-lang="en-US" l10n="U" oldref="125">returns field names with field content between the values 10 and 20. (The fields can be either text fields or number fields).</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148765" xml-lang="en-US" l10n="U" oldref="126">IN (1; 3; 5; 7)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149712" xml-lang="en-US" l10n="U" oldref="127">returns field names with the values 1, 3, 5, 7. If the field name contains an item number, for example, you can create a query that returns the item having the specified number.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152948" xml-lang="en-US" l10n="U" oldref="128">NOT IN ('Smith')</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147279" xml-lang="en-US" l10n="U" oldref="129">returns field names that do not contain "Smith".</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+<paragraph role="paragraph" id="par_id3157998" xml-lang="en-US" l10n="U" oldref="252">
+<emph>Date fields</emph> are represented as #Date# to clearly identify them as dates. The date condition will be reproduced in the resulting SQL statement in the following ODBC - compliant way:</paragraph>
+<table id="tbl_id3156186">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153734" xml-lang="en-US" l10n="U" oldref="253">Date</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159131" xml-lang="en-US" l10n="U" oldref="254">{D'YYYY-MM-DD'}</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153937" xml-lang="en-US" l10n="U" oldref="255">Date time</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146090" xml-lang="en-US" l10n="U" oldref="256">{D'YYYY-MM-DD HH:MM:SS'}</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155947" xml-lang="en-US" l10n="U" oldref="257">Time</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150964" xml-lang="en-US" l10n="U" oldref="258">{D'HH:MM:SS'}</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="paragraph" id="par_id3151220" xml-lang="en-US" l10n="U" oldref="260">$[officename] also supports the following <emph>Escape sequences</emph> known from ODBC and JDBC:</paragraph>
+<table id="tbl_id3154130">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3157975" xml-lang="en-US" l10n="U" oldref="261">Date</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149753" xml-lang="en-US" l10n="U" oldref="262">{d 'YYYY-MM-DD'}</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156318" xml-lang="en-US" l10n="U" oldref="263">Time</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151280" xml-lang="en-US" l10n="U" oldref="264">{t 'HH:MI:SS[.SS]'} - [ ] optional</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153264" xml-lang="en-US" l10n="U" oldref="265">DateTime</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153981" xml-lang="en-US" l10n="U" oldref="266">{ts 'YYYY-MM-DD HH:MI:SS[.SS]'} - [ ] optional</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="paragraph" id="par_id3149539" xml-lang="en-US" l10n="U" oldref="267">Example: select {d '1999-12-31'} from world.years</paragraph>
+<paragraph role="paragraph" id="par_id3146073" xml-lang="en-US" l10n="U" oldref="268">
+<emph>Like </emph>Escape Sequence: {escape 'escape-character'}</paragraph>
+<paragraph role="paragraph" id="par_id3150661" xml-lang="en-US" l10n="U" oldref="269">Example: select * from Item where ItemName like 'The *%' {escape '*'}</paragraph>
+<paragraph role="paragraph" id="par_id3148541" xml-lang="en-US" l10n="U" oldref="270">The example will give you all of the entries where the item name begins with 'The *'. This means that you can also search for characters that would otherwise be interpreted as placeholders, such as *, ?, _, % or the period.</paragraph>
+<paragraph role="paragraph" id="par_id3150572" xml-lang="en-US" l10n="U" oldref="271">
+<emph>Outer Join</emph> Escape Sequence: {oj outer-join}</paragraph>
+<paragraph role="paragraph" id="par_id3156052" xml-lang="en-US" l10n="U" oldref="272">Example: select Article.* from {oj item LEFT OUTER JOIN orders ON item.no=orders.ANR}</paragraph>
+<paragraph role="heading" id="hd_id3153674" xml-lang="en-US" level="3" l10n="U" oldref="109">Querying text fields</paragraph>
+<paragraph role="paragraph" id="par_id3149134" xml-lang="en-US" l10n="U" oldref="110">To query the content of a text field, you must put the expression between single quotes. The distinction between uppercase and lowercase letters depends on the database in use. LIKE, by definition, is case-sensitive (though some databases don't see it that strict).</paragraph>
+<paragraph role="heading" id="hd_id3149302" xml-lang="en-US" level="3" l10n="U" oldref="111">Querying date fields</paragraph>
+<paragraph role="paragraph" id="par_id3150510" xml-lang="en-US" l10n="U" oldref="112">Even if you want to filter by a date, you must place the expression between single quotation marks. The following formats are valid: YYYY-MM-DD HH:MM:SS and YYYY/MM/DD HH:MM:SS as well as YYYY.MM.DD HH:MM:SS</paragraph>
+<paragraph role="heading" id="hd_id3150427" xml-lang="en-US" level="3" l10n="U" oldref="228">Querying Yes/No fields</paragraph>
+<paragraph role="paragraph" id="par_id3149523" xml-lang="en-US" l10n="CHG" oldref="229">To query Yes/No fields, use the following syntax for dBASE tables:</paragraph>
+<table id="tbl_id3150146">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153180" xml-lang="en-US" l10n="U" oldref="230">Status</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147481" xml-lang="en-US" l10n="U" oldref="231">Query criterion</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3155187" xml-lang="en-US" l10n="U" oldref="232">Example</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156092" xml-lang="en-US" l10n="U" oldref="233">Yes</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152414" xml-lang="en-US" l10n="U" oldref="234">for dBASE tables: not equal to any given value</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151265" xml-lang="en-US" l10n="U" oldref="236">=1 returns all records where the Yes/No field has the status "Yes" or "On" (selected in black),</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152450" xml-lang="en-US" l10n="U" oldref="238">No</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150997" xml-lang="en-US" l10n="U" oldref="239">.</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155331" xml-lang="en-US" l10n="U" oldref="240">=0 returns all records for which the Yes/No field has the status "No" or "Off" (no selection).</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154179" xml-lang="en-US" l10n="U" oldref="241">Null</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147035" xml-lang="en-US" l10n="U" oldref="242">IS NULL</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159385" xml-lang="en-US" l10n="U" oldref="243">IS NULL returns all records for which the Yes/No field has neither of the states Yes or No (selected in gray).</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="note" id="par_id3157888" xml-lang="en-US" l10n="U" oldref="244">The syntax depends on the database system used. You should also note that Yes/No fields can be defined differently (only 2 states instead of 3).</paragraph>
+<paragraph role="heading" id="hd_id3145772" xml-lang="en-US" level="3" l10n="U" oldref="113">Parameter queries</paragraph>
+<paragraph role="paragraph" id="par_id3157312" xml-lang="en-US" l10n="U" oldref="114">You must place the variable between square brackets (=[x]) to create a query with variable parameters. Alternatively, you can use an equal sign followed by a colon (=:x). When the query is executed, the program will display a dialog asking you for the expression to which the variable x should be assigned.</paragraph>
+<paragraph role="paragraph" id="par_id3150818" xml-lang="en-US" l10n="U" oldref="273">If you query several parameters at the same time, you will see a list field in the dialog containing all of the parameters and an input line alongside each one. Enter the values, preferably from top to bottom, and press the Enter key after each line.</paragraph>
+<paragraph role="note" id="par_id3157855" xml-lang="en-US" l10n="U" oldref="115">Parameter queries with placeholders (*, _) or special characters (for example, ?) are not possible.</paragraph>
+<paragraph role="paragraph" id="par_id3157537" xml-lang="en-US" l10n="U" oldref="116">If you formulate a parameter query and you save it with the variables, you can later create a query in which only the variables have to be replaced by the expressions that you want. $[officename] asks for these variables in a dialog as soon as you open the query.</paragraph>
+<paragraph role="heading" id="hd_id3151035" xml-lang="en-US" level="3" l10n="U" oldref="139">Parameter Input</paragraph>
+<paragraph role="paragraph" id="par_id3153596" xml-lang="en-US" l10n="U" oldref="140"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">The <emph>Parameter Input</emph> dialog asks you which variables you defined in the query. Enter a value for each query variable and confirm by clicking <emph>OK</emph>.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150585" xml-lang="en-US" l10n="U" oldref="138">Parameter queries are also used for <link href="text/shared/02/01170203.xhp" name="subforms">subforms</link>, since they work exclusively with queries for which the values to be invoked are read internally from a variable.</paragraph>
+<paragraph role="paragraph" id="par_id3153645" xml-lang="en-US" l10n="U" oldref="274">A parameter query can have the following form in an SQL statement:</paragraph>
+<paragraph role="paragraph" id="par_id3156731" xml-lang="en-US" l10n="U" oldref="275">select * from 'addresses' where 'name' = :placeholder</paragraph>
+<paragraph role="heading" id="hd_id3145181" xml-lang="en-US" level="2" l10n="U" oldref="135">SQL Mode</paragraph>
+<paragraph role="paragraph" id="par_id3147013" xml-lang="en-US" l10n="U" oldref="220">SQL stands for "Structured Query Language" and describes instructions for updating and administering relational databases.</paragraph>
+<paragraph role="paragraph" id="par_id3152570" xml-lang="en-US" l10n="U" oldref="136">In $[officename] you do not need any knowledge of SQL for most queries, since you do not have to enter the SQL code. If you create a query in the query design, $[officename] automatically converts your instructions into the corresponding SQL syntax. If, with the help of the <emph>Switch Design View On/Off </emph>button, you change to the SQL view, you can see the SQL commands for a query that has been created previously.</paragraph>
+<paragraph role="paragraph" id="par_id3152412" xml-lang="en-US" l10n="CHG" oldref="226">You can formulate your query directly in the SQL code. Note, however, that the special syntax is dependent upon the database system that you use.</paragraph>
+<paragraph role="paragraph" id="par_id3146842" xml-lang="en-US" l10n="U" oldref="227">If you enter the SQL code manually, you can create SQL-specific queries that are not supported by the graphical interface in <emph>Query design</emph>. These queries must be executed in native SQL mode.</paragraph>
+<paragraph role="paragraph" id="par_id3149632" xml-lang="en-US" l10n="U" oldref="223">By clicking the <link href="text/shared/02/14030000.xhp" name="Run SQL command directly"><emph>Run SQL command directly</emph></link> icon in the SQL view, you can formulate a query that is not processed by $[officename].</paragraph>
+</body>
+</helpdocument>

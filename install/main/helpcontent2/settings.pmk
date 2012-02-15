@@ -1,0 +1,11 @@
+.INCLUDE : $(LOCAL_COMMON_OUT)/inc$/aux_langs.mk
+
+my_cp:=$(CLASSPATH)$(PATH_SEPERATOR)$(SOLARBINDIR)$/jaxp.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/juh.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/parser.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/xt.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/unoil.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/ridl.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/jurt.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/xmlsearch.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/LuceneHelpWrapper.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/HelpIndexerTool.jar$
+
+.IF "$(SYSTEM_LUCENE)" == "YES"
+my_cp!:=$(my_cp)$(PATH_SEPERATOR)$(LUCENE_CORE_JAR)$(PATH_SEPERATOR)$(LUCENE_ANALYZERS_JAR)
+.ELSE
+my_cp!:=$(my_cp)$(PATH_SEPERATOR)$(SOLARBINDIR)/lucene-core-2.3.jar$(PATH_SEPERATOR)$(SOLARBINDIR)/lucene-analyzers-2.3.jar
+.ENDIF
+ 
+aux_alllangiso:=$(foreach,i,$(alllangiso) $(foreach,j,$(aux_langdirs) $(eq,$i,$j  $i $(NULL))))

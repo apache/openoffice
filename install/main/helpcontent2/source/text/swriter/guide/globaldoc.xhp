@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideglobaldocxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Master Documents and Subdocuments</title>
+         <filename>/text/swriter/guide/globaldoc.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145246"><bookmark_value>master documents;properties</bookmark_value>
+      <bookmark_value>subdocuments;properties</bookmark_value>
+      <bookmark_value>central documents</bookmark_value>
+      <bookmark_value>subsidiary documents</bookmark_value>
+      <bookmark_value>documents; master documents and subdocuments</bookmark_value>
+      <bookmark_value>styles;master documents</bookmark_value>
+</bookmark><comment>Mw made "master documents" and "subdocuments" a two level entry, deleted "references;" and "bookmarks;" and added a new entry and shifted "Navigator;" and "indexes;" to the file globaldoc_howtos.xhp</comment>
+<paragraph xml-lang="en-US" id="hd_id3145246" role="heading" level="1" l10n="U" oldref="4"><variable id="globaldoc"><link href="text/swriter/guide/globaldoc.xhp">Master Documents and Subdocuments</link>
+</variable></paragraph><comment>MW: This file was split into globaldoc.xhp (concepts) and globaldoc_howtos.xhp (procedures)</comment>
+<paragraph xml-lang="en-US" id="par_id3149806" role="paragraph" l10n="CHG">A master document lets you manage large documents, such as a book with many chapters. The master document can be seen as a container for individual <item type="productname">%PRODUCTNAME</item> Writer files. The individual files are called subdocuments.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id6537369" role="heading" level="2" l10n="NEW">Characteristics of Master Documents</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150096" role="paragraph" l10n="U" oldref="13">When you print a master document, the contents of all subdocuments, indexes, and any text that you entered are printed.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153400" role="paragraph" l10n="U" oldref="12">You can create a table of contents and index in the master document for all of the subdocuments.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155854" role="paragraph" l10n="CHG" oldref="15">Styles that are used in subdocuments, such as new paragraph styles, are automatically imported into the master document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9033783" role="paragraph" l10n="NEW">When viewing the master document, styles that are already present in the master document take precedence over styles with the same name that are imported from subdocuments. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3419598" role="paragraph" l10n="NEW">Subdocuments never get changed by changes made to the master document.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3155180" role="note" l10n="C">When you add a document to a master document or create a new subdocument, a link is created in the master document. You cannot edit the content of a subdocument directly in the master document, but you can use the Navigator to open any subdocument for edit.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id7904904" role="heading" level="2" l10n="NEW">Example of Using Styles</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5817743" role="paragraph" l10n="NEW">A master document master.odm consists of some text and links to the subdocuments sub1.odt and sub2.odt. In each subdocument a new paragraph style with the same name Style1 is defined and used, and the subdocuments are saved.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9169591" role="paragraph" l10n="NEW">When you save the master document, the styles from the subdocuments are imported into the master document. First, the new style Style1 from the sub1.odt is imported. Next, the new styles from sub2.odt will be imported, but as Style1 now already is present in the master document, this style from sub2.odt will not be imported. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id1590014" role="paragraph" l10n="NEW">In the master document you now see the new style Style1 from the first subdocument. All Style1 paragraphs in the master document will be shown using the Style1 attributes from the first subdocument. However, the second subdocument by itself will not be changed. You see the Style1 paragraphs from the second subdocument with different attributes, depending whether you open the sub2.odt document by itself or as part of the master document.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5878780" role="tip" l10n="NEW">To avoid confusion, use the same document template for the master document and its subdocuments. This happens automatically when you create the master document and its subdocuments from an existing document with headings, using the command <emph>File - Send - Create Master Document</emph>.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/globaldoc_howtos.xhp#globaldoc_howtos"/>
+         <embed href="text/swriter/guide/indices_multidoc.xhp#indices_multidoc"/>
+         <paragraph xml-lang="en-US" id="par_id3154382" role="paragraph" l10n="C"><link href="text/shared/01/02110000.xhp" name="Navigator in master mode">Navigator in master mode</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

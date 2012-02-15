@@ -1,0 +1,60 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _COM_SUN_STAR_BRIDGE_XINSTANCEPROVIDER_IDL_ 
+#define _COM_SUN_STAR_BRIDGE_XINSTANCEPROVIDER_IDL_ 
+ 
+#include <com/sun/star/container/NoSuchElementException.idl> 
+ 
+ module com {  module sun {  module star {  module bridge { 
+ 
+ 
+/** allows to export UNO objects to other processes.
+
+	@see XBridge
+ */
+published interface XInstanceProvider: com::sun::star::uno::XInterface
+{ 
+	 
+	/** gets called, when an initial object is requested from a remote process.
+		You may either create a  new instance or return an existing object.
+
+	   @param sInstanceName
+	        The name of the requested object.
+			
+	   @returns 
+			the object associated with the name. The return value may be null in case
+			there is no object to offer for this string. In this case, XBridge.getInstance()
+			(in the other process) will also return a null reference.
+			
+	   @throws NoSuchElementException
+	        You may throw this exception to indicate, that there is no object for this 
+			name. Due to a specification bug, this exception will appear as a RuntimeException
+			at the XBridge.getInstance() method.
+	 */
+	com::sun::star::uno::XInterface getInstance( [in] string sInstanceName ) 
+			raises ( com::sun::star::container::NoSuchElementException ); 
+}; 
+  
+};};};};  
+ 
+#endif 

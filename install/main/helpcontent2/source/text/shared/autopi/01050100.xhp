@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01050100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Presentation Wizard Page 1</title>
+<filename>/text/shared/autopi/01050100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-06-03T10:32:42">converted from old format - fpe
+dedr: fixed #i31165#</lastedited>
+</history>
+</meta>
+<body>
+<section id="autopilotseite1">
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_AUTOPILOT_PAGE1" id="bm_id3155364" localize="false"/>
+<paragraph role="heading" id="hd_id3155320" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/autopi/01050100.xhp" name="Presentation Wizard Page 1">Presentation Wizard Page 1</link></paragraph>
+<paragraph role="paragraph" id="par_id3152594" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="HID_SD_AUTOPILOT_PAGE1">Specifies the presentation type and allows you to select a template.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#dtapse"/>
+</section>
+<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="2" l10n="U" oldref="15">Type</paragraph>
+<paragraph role="paragraph" id="par_id3153684" xml-lang="en-US" l10n="U" oldref="23">You can determine the presentation type in this area.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_ASS:RB_PAGE1_EMPTY" id="bm_id3153749" localize="false"/>
+<paragraph role="heading" id="hd_id3153527" xml-lang="en-US" level="3" l10n="U" oldref="16">Empty presentation</paragraph>
+<paragraph role="paragraph" id="par_id3149388" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SD:RADIOBUTTON:DLG_ASS:RB_PAGE1_EMPTY">Creates a new (empty) presentation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_ASS:RB_PAGE1_TEMPLATE" id="bm_id3153346" localize="false"/>
+<paragraph role="heading" id="hd_id3147008" xml-lang="en-US" level="3" l10n="U" oldref="17">From template</paragraph>
+<paragraph role="paragraph" id="par_id3154318" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SD:RADIOBUTTON:DLG_ASS:RB_PAGE1_TEMPLATE">Opens a list box containing various modifiable presentations.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_ASS:RB_PAGE1_OPEN" id="bm_id3166460" localize="false"/>
+<paragraph role="heading" id="hd_id3153662" xml-lang="en-US" level="3" l10n="U" oldref="18">Open existing presentation</paragraph>
+<paragraph role="paragraph" id="par_id3147275" xml-lang="en-US" l10n="CHG" oldref="26"><ahelp hid="SD:RADIOBUTTON:DLG_ASS:RB_PAGE1_OPEN">Displays a list of previously created presentations.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:PushButton:DLG_ASS:PB_PAGE1_OPEN" id="bm_id5456099" localize="false"/>
+<paragraph role="paragraph" id="par_idN1067B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click <emph>Open</emph> to see a file selection dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_AUTOPILOT_REGION" id="bm_id3156002" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_AUTOPILOT_TEMPLATES" id="bm_id3155136" localize="false"/>
+<paragraph role="heading" id="hd_id3149763" xml-lang="en-US" level="3" l10n="U" oldref="19">List of template categories (only available when you select the From template option)</paragraph>
+<paragraph role="paragraph" id="par_id3150503" xml-lang="en-US" l10n="U" oldref="27"><ahelp hid="HID_SD_AUTOPILOT_TEMPLATES">Lists the available template categories for presentations.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_AUTOPILOT_OPEN" id="bm_id3153665" localize="false"/>
+<paragraph role="heading" id="hd_id3153349" xml-lang="en-US" level="3" l10n="U" oldref="20">List of existing presentations (only available when you select the Open existing presentation option)</paragraph>
+<paragraph role="paragraph" id="par_id3145317" xml-lang="en-US" l10n="CHG" oldref="28"><ahelp hid="HID_SD_AUTOPILOT_OPEN">Lists the presentations that you created and saved to the Templates directory that is specified under <emph>%PRODUCTNAME - Paths</emph> in the Options dialog box. To edit the layout and formatting of a presentation with the wizard, select the presentation, and then click <emph>Next</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:DLG_ASS:CB_PREVIEW" id="bm_id3156192" localize="false"/>
+<paragraph role="heading" id="hd_id3155388" xml-lang="en-US" level="3" l10n="U" oldref="21">Preview</paragraph>
+<paragraph role="paragraph" id="par_id3150256" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SD:CHECKBOX:DLG_ASS:CB_PREVIEW">Specifies that templates appear in the preview window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:DLG_ASS:CB_STARTWITH" id="bm_id3145609" localize="false"/>
+<paragraph role="heading" id="hd_id3153561" xml-lang="en-US" level="3" l10n="U" oldref="22">Do not show this dialog again</paragraph>
+<paragraph role="paragraph" id="par_id3153061" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SD:CHECKBOX:DLG_ASS:CB_STARTWITH">Specifies that you only want the Wizard to start when you expressly request it with <emph>File - Wizard - Presentation</emph>.</ahelp> This field is only visible when you create a presentation by choosing <emph>File - New - Presentation</emph>. You can also specify whether to show the dialog with the <emph>Start with Wizard</emph> check box in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Impress - General</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="13">Continue here to <link href="text/shared/autopi/01050200.xhp" name="Wizard Page 2">Wizard Page 2</link>.</paragraph>
+</body>
+</helpdocument>

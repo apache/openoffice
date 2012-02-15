@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsdrawguidecross_fadingxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Cross-Fading Two Objects</title>
+<filename>/text/sdraw/guide/cross_fading.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-17T14:23:34">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150715"><bookmark_value>draw objects; cross-fading two objects</bookmark_value>
+<bookmark_value>cross-fading; two draw objects</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150715" xml-lang="en-US" level="1" l10n="U" oldref="17"><variable id="cross_fading"><link href="text/sdraw/guide/cross_fading.xhp" name="Cross-Fading Two Objects">Cross-Fading Two Objects</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154754" xml-lang="en-US" l10n="U" oldref="18">Cross-fading creates shapes and distributes them by uniform increments between two drawing objects.</paragraph>
+<paragraph role="note" id="par_id3155112" xml-lang="en-US" l10n="U" oldref="41">The cross-fading command is only available in $[officename] Draw. You can, however, copy and paste cross-faded objects into $[officename] Impress.</paragraph>
+<paragraph role="heading" id="hd_id3149209" xml-lang="en-US" level="3" l10n="U" oldref="20">To cross-fade two objects:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150370" xml-lang="en-US" l10n="U" oldref="45">Hold down Shift and click each object.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3166428" xml-lang="en-US" l10n="U" oldref="22">Choose <emph>Edit - Cross-fading</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156450" xml-lang="en-US" l10n="U" oldref="44">Enter a value to specify the number of objects between the start and end of the cross-fade in the <emph>Increments</emph> box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149405" xml-lang="en-US" l10n="U" oldref="23">Click <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3151240" xml-lang="en-US" l10n="U" oldref="24">A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed.</paragraph>
+<table id="tbl_id3156016">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159203" xml-lang="en-US" l10n="E">
+<image id="img_id3150210" src="res/helpimg/ueberblenden.png" width="74.88mm" height="65.62mm"><alt id="alt_id3150210" xml-lang="en-US">Illustration for crossfading</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154766" xml-lang="en-US" l10n="U" oldref="25">You can edit the individual objects of a group by selecting the group and pressing F3. Press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3 to exit the group editing mode.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<section id="relatedtopics">
+<embed href="text/sdraw/guide/duplicate_object.xhp#duplicate_object"/>
+<paragraph role="paragraph" id="par_id3155760" xml-lang="en-US" l10n="U" oldref="42"><link href="text/simpress/01/02150000.xhp" name="Editing - Cross-fading">Editing - Cross-fading</link></paragraph>
+</section></body>
+</helpdocument>

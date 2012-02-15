@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0104060183xml" indexer="include">
+<title id="tit" xml-lang="en-US">Statistical Functions Part Three</title>
+<filename>/text/scalc/01/04060183.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3166425" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="kl"><link href="text/scalc/01/04060183.xhp" name="Statistical Functions Part Three">Statistical Functions Part Three</link>
+</variable></paragraph>
+<sort order="asc">
+<section id="large">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149530"><bookmark_value>LARGE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KGROESSTE" id="bm_id3150883" localize="false"/>
+<paragraph role="heading" id="hd_id3149530" xml-lang="en-US" level="2" l10n="U" oldref="2">LARGE</paragraph>
+<paragraph role="paragraph" id="par_id3150518" xml-lang="en-US" l10n="U" oldref="3"><ahelp hid="HID_FUNC_KGROESSTE">Returns the Rank_c-th largest value in a data set.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3152990" xml-lang="en-US" level="3" l10n="U" oldref="4">Syntax</paragraph>
+<paragraph role="code" id="par_id3154372" xml-lang="en-US" l10n="U" oldref="5">LARGE(Data; RankC)</paragraph>
+<paragraph role="paragraph" id="par_id3152986" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Data</emph> is the cell range of data.</paragraph>
+<paragraph role="paragraph" id="par_id3156448" xml-lang="en-US" l10n="U" oldref="7">
+<emph>RankC</emph> is the ranking of the value.</paragraph>
+<paragraph role="heading" id="hd_id3152889" xml-lang="en-US" level="3" l10n="U" oldref="8">Example</paragraph>
+<paragraph role="paragraph" id="par_id3148702" xml-lang="en-US" l10n="U" oldref="9">
+<item type="input">=LARGE(A1:C50;2)</item> gives the second largest value in A1:C50.</paragraph>
+</section>
+<section id="small">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154532"><bookmark_value>SMALL function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KKLEINSTE" id="bm_id3148609" localize="false"/>
+<paragraph role="heading" id="hd_id3154532" xml-lang="en-US" level="2" l10n="U" oldref="11">SMALL</paragraph>
+<paragraph role="paragraph" id="par_id3157981" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_FUNC_KKLEINSTE">Returns the Rank_c-th smallest value in a data set.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154957" xml-lang="en-US" level="3" l10n="U" oldref="13">Syntax</paragraph>
+<paragraph role="code" id="par_id3153974" xml-lang="en-US" l10n="U" oldref="14">SMALL(Data; RankC)</paragraph>
+<paragraph role="paragraph" id="par_id3154540" xml-lang="en-US" l10n="U" oldref="15">
+<emph>Data</emph> is the cell range of data.</paragraph>
+<paragraph role="paragraph" id="par_id3155094" xml-lang="en-US" l10n="U" oldref="16">
+<emph>RankC</emph> is the rank of the value.</paragraph>
+<paragraph role="heading" id="hd_id3153247" xml-lang="en-US" level="3" l10n="U" oldref="17">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149897" xml-lang="en-US" l10n="U" oldref="18">
+<item type="input">=SMALL(A1:C50;2)</item> gives the second smallest value in A1:C50.</paragraph>
+</section>
+<section id="confidence">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153559"><bookmark_value>CONFIDENCE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KONFIDENZ" id="bm_id3153803" localize="false"/>
+<paragraph role="heading" id="hd_id3153559" xml-lang="en-US" level="2" l10n="U" oldref="20">CONFIDENCE</paragraph>
+<paragraph role="paragraph" id="par_id3153814" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="HID_FUNC_KONFIDENZ">Returns the (1-alpha) confidence interval for a normal distribution.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149315" xml-lang="en-US" level="3" l10n="U" oldref="22">Syntax</paragraph>
+<paragraph role="code" id="par_id3147501" xml-lang="en-US" l10n="U" oldref="23">CONFIDENCE(Alpha; StDev; Size)</paragraph>
+<paragraph role="paragraph" id="par_id3149872" xml-lang="en-US" l10n="U" oldref="24">
+<emph>Alpha</emph> is the level of the confidence interval.</paragraph>
+<paragraph role="paragraph" id="par_id3145324" xml-lang="en-US" l10n="U" oldref="25">
+<emph>StDev</emph> is the standard deviation for the total population.</paragraph>
+<paragraph role="paragraph" id="par_id3153075" xml-lang="en-US" l10n="U" oldref="26">
+<emph>Size</emph> is the size of the total population.</paragraph>
+<paragraph role="heading" id="hd_id3150435" xml-lang="en-US" level="3" l10n="U" oldref="27">Example</paragraph>
+<paragraph role="paragraph" id="par_id3153335" xml-lang="en-US" l10n="U" oldref="28">
+<item type="input">=CONFIDENCE(0.05;1.5;100)</item> gives 0.29.</paragraph>
+</section>
+<section id="correl">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148746"><bookmark_value>CORREL function</bookmark_value>
+<bookmark_value>coefficient of correlation</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KORREL" id="bm_id3147403" localize="false"/>
+<paragraph role="heading" id="hd_id3148746" xml-lang="en-US" level="2" l10n="U" oldref="30">CORREL</paragraph>
+<paragraph role="paragraph" id="par_id3147299" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="HID_FUNC_KORREL">Returns the correlation coefficient between two data sets.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3156397" xml-lang="en-US" level="3" l10n="U" oldref="32">Syntax</paragraph>
+<paragraph role="code" id="par_id3153023" xml-lang="en-US" l10n="U" oldref="33">CORREL(Data1; Data2)</paragraph>
+<paragraph role="paragraph" id="par_id3150036" xml-lang="en-US" l10n="U" oldref="34">
+<emph>Data1</emph> is the first data set.</paragraph>
+<paragraph role="paragraph" id="par_id3153021" xml-lang="en-US" l10n="U" oldref="35">
+<emph>Data2</emph> is the second data set.</paragraph>
+<paragraph role="heading" id="hd_id3149720" xml-lang="en-US" level="3" l10n="U" oldref="36">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149941" xml-lang="en-US" l10n="U" oldref="37">
+<item type="input">=CORREL(A1:A50;B1:B50)</item> calculates the correlation coefficient as a measure of the linear correlation of the two data sets.</paragraph>
+</section>
+<section id="covar">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150652"><bookmark_value>COVAR function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KOVAR" id="bm_id3152983" localize="false"/>
+<paragraph role="heading" id="hd_id3150652" xml-lang="en-US" level="2" l10n="U" oldref="39">COVAR</paragraph>
+<paragraph role="paragraph" id="par_id3146875" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="HID_FUNC_KOVAR">Returns the covariance of the product of paired deviations.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149013" xml-lang="en-US" level="3" l10n="U" oldref="41">Syntax</paragraph>
+<paragraph role="code" id="par_id3150740" xml-lang="en-US" l10n="U" oldref="42">COVAR(Data1; Data2)</paragraph>
+<paragraph role="paragraph" id="par_id3145827" xml-lang="en-US" l10n="U" oldref="43">
+<emph>Data1</emph> is the first data set.</paragraph>
+<paragraph role="paragraph" id="par_id3150465" xml-lang="en-US" l10n="U" oldref="44">
+<emph>Data2</emph> is the second data set.</paragraph>
+<paragraph role="heading" id="hd_id3154677" xml-lang="en-US" level="3" l10n="U" oldref="45">Example</paragraph>
+<paragraph role="paragraph" id="par_id3144748" xml-lang="en-US" l10n="U" oldref="46">
+<item type="input">=COVAR(A1:A30;B1:B30)</item>
+</paragraph>
+</section>
+<section id="critbinom">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147472"><bookmark_value>CRITBINOM function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KRITBINOM" id="bm_id3154848" localize="false"/>
+<paragraph role="heading" id="hd_id3147472" xml-lang="en-US" level="2" l10n="U" oldref="48">CRITBINOM</paragraph>
+<paragraph role="paragraph" id="par_id3149254" xml-lang="en-US" l10n="U" oldref="49"><ahelp hid="HID_FUNC_KRITBINOM">Returns the smallest value for which the cumulative binomial distribution is less than or equal to a criterion value.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153930" xml-lang="en-US" level="3" l10n="U" oldref="50">Syntax</paragraph>
+<paragraph role="code" id="par_id3148586" xml-lang="en-US" l10n="U" oldref="51">CRITBINOM(Trials; SP; Alpha)</paragraph>
+<paragraph role="paragraph" id="par_id3145593" xml-lang="en-US" l10n="U" oldref="52">
+<emph>Trials</emph> is the total number of trials.</paragraph>
+<paragraph role="paragraph" id="par_id3153084" xml-lang="en-US" l10n="U" oldref="53">
+<emph>SP</emph> is the probability of success for one trial.</paragraph>
+<paragraph role="paragraph" id="par_id3149726" xml-lang="en-US" l10n="U" oldref="54">
+<emph>Alpha</emph> is the threshold probability to be reached or exceeded.</paragraph>
+<paragraph role="heading" id="hd_id3148752" xml-lang="en-US" level="3" l10n="U" oldref="55">Example</paragraph>
+<paragraph role="paragraph" id="par_id3148740" xml-lang="en-US" l10n="U" oldref="56">
+<item type="input">=CRITBINOM(100;0.5;0.1)</item> yields 44.</paragraph>
+</section>
+<section id="kurt">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155956"><bookmark_value>KURT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KURT" id="bm_id3146847" localize="false"/>
+<paragraph role="heading" id="hd_id3155956" xml-lang="en-US" level="2" l10n="U" oldref="58">KURT</paragraph>
+<paragraph role="paragraph" id="par_id3153108" xml-lang="en-US" l10n="U" oldref="59"><ahelp hid="HID_FUNC_KURT">Returns the kurtosis of a data set (at least 4 values required).</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150334" xml-lang="en-US" level="3" l10n="U" oldref="60">Syntax</paragraph>
+<paragraph role="code" id="par_id3154508" xml-lang="en-US" l10n="U" oldref="61">KURT(Number1; Number2; ...Number30)</paragraph>
+<paragraph role="paragraph" id="par_id3145167" xml-lang="en-US" l10n="CHG" oldref="62">
+<emph>Number1,Number2,...Number30</emph> are numeric arguments or ranges representing a random sample of distribution.</paragraph>
+<paragraph role="heading" id="hd_id3158000" xml-lang="en-US" level="3" l10n="U" oldref="63">Example</paragraph>
+<paragraph role="paragraph" id="par_id3150016" xml-lang="en-US" l10n="U" oldref="64">
+<item type="input">=KURT(A1;A2;A3;A4;A5;A6)</item>
+</paragraph>
+</section>
+<section id="loginv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150928"><bookmark_value>LOGINV function</bookmark_value>
+<bookmark_value>inverse of lognormal distribution</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_LOGINV" id="bm_id3156062" localize="false"/>
+<paragraph role="heading" id="hd_id3150928" xml-lang="en-US" level="2" l10n="U" oldref="66">LOGINV</paragraph>
+<paragraph role="paragraph" id="par_id3145297" xml-lang="en-US" l10n="U" oldref="67"><ahelp hid="HID_FUNC_LOGINV">Returns the inverse of the lognormal distribution.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151016" xml-lang="en-US" level="3" l10n="U" oldref="68">Syntax</paragraph>
+<paragraph role="code" id="par_id3153049" xml-lang="en-US" l10n="U" oldref="69">LOGINV(Number; Mean; StDev)</paragraph>
+<paragraph role="paragraph" id="par_id3148390" xml-lang="en-US" l10n="U" oldref="70">
+<emph>Number</emph> is the probability value for which the inverse standard logarithmic distribution is to be calculated.</paragraph>
+<paragraph role="paragraph" id="par_id3149538" xml-lang="en-US" l10n="U" oldref="71">
+<emph>Mean</emph> is the arithmetic mean of the standard logarithmic distribution.</paragraph>
+<paragraph role="paragraph" id="par_id3145355" xml-lang="en-US" l10n="U" oldref="72">
+<emph>StDev</emph> is the standard deviation of the standard logarithmic distribution.</paragraph>
+<paragraph role="heading" id="hd_id3148768" xml-lang="en-US" level="3" l10n="U" oldref="73">Example</paragraph>
+<paragraph role="paragraph" id="par_id3155623" xml-lang="en-US" l10n="U" oldref="74">
+<item type="input">=LOGINV(0.05;0;1)</item> returns 0.19.</paragraph>
+</section>
+<section id="lognormdist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158417"><bookmark_value>LOGNORMDIST function</bookmark_value>
+<bookmark_value>cumulative lognormal distribution</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_LOGNORMVERT" id="bm_id3155366" localize="false"/>
+<paragraph role="heading" id="hd_id3158417" xml-lang="en-US" level="2" l10n="U" oldref="76">LOGNORMDIST</paragraph>
+<paragraph role="paragraph" id="par_id3154953" xml-lang="en-US" l10n="U" oldref="77"><ahelp hid="HID_FUNC_LOGNORMVERT">Returns the cumulative lognormal distribution.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150474" xml-lang="en-US" level="3" l10n="U" oldref="78">Syntax</paragraph>
+<paragraph role="code" id="par_id3150686" xml-lang="en-US" l10n="U" oldref="79">LOGNORMDIST(Number; Mean; StDev; Cumulative)</paragraph>
+<paragraph role="paragraph" id="par_id3154871" xml-lang="en-US" l10n="U" oldref="80">
+<emph>Number</emph> is the probability value for which the standard logarithmic distribution is to be calculated.</paragraph>
+<paragraph role="paragraph" id="par_id3155820" xml-lang="en-US" l10n="U" oldref="81">
+<emph>Mean</emph> (optional) is the mean value of the standard logarithmic distribution.</paragraph>
+<paragraph role="paragraph" id="par_id3155991" xml-lang="en-US" l10n="U" oldref="82">
+<emph>StDev</emph> (optional) is the standard deviation of the standard logarithmic distribution.</paragraph>
+<paragraph role="paragraph" id="par_id3155992" xml-lang="en-US" l10n="NEW">
+<emph>Cumulative</emph> (optional) = 0 calculates the density function, Cumulative = 1 calculates the distribution.</paragraph>
+<paragraph role="heading" id="hd_id3153178" xml-lang="en-US" level="3" l10n="U" oldref="83">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149778" xml-lang="en-US" l10n="U" oldref="84">
+<item type="input">=LOGNORMDIST(0.1;0;1)</item> returns 0.01.</paragraph>
+</section>
+</sort>
+<section id="relatedtopics">
+<embed href="text/scalc/01/04060100.xhp#drking"/>
+</section>
+</body>
+</helpdocument>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01030300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Security</title>
+<filename>/text/shared/optionen/01030300.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="security">
+<bookmark xml-lang="en-US" branch="index" id="bm_id2322153"><bookmark_value>macros;selecting security warnings</bookmark_value>
+<bookmark_value>security;options for documents with macros</bookmark_value>
+
+
+<bookmark_value>macros;security</bookmark_value>
+
+</bookmark><comment>ufi moved 4 entries to new file shared/01/01100600.xhp - cws tl79</comment><comment>mw corrected a typo in "file ..." and changed "read-only documents;..."</comment>
+<paragraph role="heading" id="hd_id3147588" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01030300.xhp" name="Security">Security</link></paragraph>
+<paragraph role="paragraph" id="par_id3153255" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".">Defines the security options for saving documents, for web connections, and for opening documents that contain macros.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#scripting"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SECURITY:PB_SEC_SECURITYOPTIONS" id="bm_id9049653" localize="false"/><paragraph role="heading" id="par_idN10640" xml-lang="en-US" level="2" l10n="CHG">Options</paragraph>
+<paragraph role="paragraph" id="par_idN10644" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Opens the "Security options and warning" dialog.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id5616626" xml-lang="en-US" l10n="NEW">The Security options and warnings dialog contains the following controls:</paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SECURITY_OPTIONS:CB_SAVESENDDOCS" id="bm_id1976683" localize="false"/><paragraph role="heading" id="par_idN10647" xml-lang="en-US" level="3" l10n="NEW">When saving or sending</paragraph>
+<paragraph role="paragraph" id="par_idN1064B" xml-lang="en-US" l10n="NEW"><ahelp hid="703988739">Select to see a warning dialog when you try to save or send a document that contains recorded changes, versions, or comments.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SECURITY_OPTIONS:CB_PRINTDOCS" id="bm_id43946" localize="false"/><paragraph role="heading" id="par_idN1064E" xml-lang="en-US" level="3" l10n="NEW">When printing</paragraph>
+<paragraph role="paragraph" id="par_idN10652" xml-lang="en-US" l10n="NEW"><ahelp hid="703988740">Select to see a warning dialog when you try to print a document that contains recorded changes or comments.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SECURITY_OPTIONS:CB_SIGNDOCS" id="bm_id6449171" localize="false"/><paragraph role="heading" id="par_idN10655" xml-lang="en-US" level="3" l10n="NEW">When signing</paragraph>
+<paragraph role="paragraph" id="par_idN10659" xml-lang="en-US" l10n="NEW"><ahelp hid="703988741">Select to see a warning dialog when you try to sign a document that contains recorded changes, versions, fields, references to other sources (for example linked sections or linked pictures), or comments.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SECURITY_OPTIONS:CB_CREATEPDF" id="bm_id7101046" localize="false"/><paragraph role="heading" id="par_idN1065C" xml-lang="en-US" level="3" l10n="NEW">When creating PDF files</paragraph>
+<paragraph role="paragraph" id="par_idN10660" xml-lang="en-US" l10n="NEW"><ahelp hid="703988742">Select to see a warning dialog when you try to export a document to PDF format that displays recorded changes in Writer, or that displays comments.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SECURITY_OPTIONS:CB_REMOVEINFO" id="bm_id4263740" localize="false"/><paragraph role="heading" id="par_idN10663" xml-lang="en-US" level="3" l10n="NEW">Remove personal information on saving</paragraph>
+<paragraph role="paragraph" id="par_idN10667" xml-lang="en-US" l10n="CHG"><ahelp hid="703988743">Select to always remove user data from the file properties. If this option is not selected, you can still remove the personal information for the current document with the <emph>Reset</emph> button on <emph>File - Properties - General</emph>.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SECURITY_OPTIONS:CB_RECOMMENDPWD" id="bm_id7186498" localize="false"/><paragraph role="heading" id="par_idN1067C" xml-lang="en-US" level="3" l10n="NEW">Recommend password protection on saving</paragraph>
+<paragraph role="paragraph" id="par_idN10680" xml-lang="en-US" l10n="CHG"><ahelp hid="703988744">Select to always enable the <emph>Save with password</emph> option in the file save dialogs. Deselect the option to save files by default without password.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXDLG_SECURITY_OPTIONS:CB_CTRLHYPERLINK" id="bm_id5288857" localize="false"/><paragraph role="heading" id="hd_id1972106" xml-lang="en-US" level="3" l10n="NEW">Ctrl-click required to follow hyperlinks</paragraph>
+<paragraph role="paragraph" id="par_id79042" xml-lang="en-US" l10n="NEW"><ahelp hid=".">If enabled, you must hold down the Ctrl key while clicking a hyperlink to follow that link. If not enabled, a click opens the hyperlink.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id4076357" xml-lang="en-US" level="2" l10n="NEW">Passwords for web connections</paragraph>
+<paragraph role="paragraph" id="par_id8231757" xml-lang="en-US" l10n="NEW">You can enter a master password to enable easy access to sites that require a user name and password.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_INET_SECURITY:CB_SEC_SAVEPASSWORDS" id="bm_id3294778" localize="false"/><paragraph role="heading" id="hd_id3168736" xml-lang="en-US" level="3" l10n="NEW">Persistently save passwords protected by a master password</paragraph>
+<paragraph role="paragraph" id="par_id1909848" xml-lang="en-US" l10n="NEW"><ahelp hid=".">If enabled, %PRODUCTNAME will securely store all passwords that you use to access files from web servers. You can retrieve the passwords from the list after you enter the master password.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SECURITY:PB_SEC_MASTERPASSWORD" id="bm_id9989013" localize="false"/><paragraph role="heading" id="hd_id3901791" xml-lang="en-US" level="3" l10n="NEW">Master Password</paragraph>
+<paragraph role="paragraph" id="par_id4571977" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the Enter Master Password dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/uui:Edit:DLG_UUI_MASTERPASSWORD_CRT:ED_MASTERPASSWORD_CRT" id="bm_id8224738" localize="false"/><paragraph role="paragraph" id="par_id5216223" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the master password.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/uui:Edit:DLG_UUI_MASTERPASSWORD_CRT:ED_MASTERPASSWORD_REPEAT" id="bm_id8702047" localize="false"/><paragraph role="paragraph" id="par_id7067171" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the master password again.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/uui:Edit:DLG_UUI_MASTERPASSWORD:ED_MASTERPASSWORD" id="bm_id2005981" localize="false"/><paragraph role="paragraph" id="par_id7499313" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the master password to continue.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SECURITY:PB_SEC_CONNECTIONS" id="bm_id2005777" localize="false"/><paragraph role="heading" id="hd_id3283486" xml-lang="en-US" level="3" l10n="CHG">Connections</paragraph>
+<paragraph role="paragraph" id="par_id3472090" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Asks for the master password. If master password is correct, shows the Stored Web Connection Information dialog.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3289590" xml-lang="en-US" l10n="NEW">The Stored Web Connection Information dialog shows a list of web sites and user names that you entered previously. You can select any entry and remove it from the list. You can view the password for the selected entry.</paragraph><comment>Remove</comment>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_WEBCONNECTION_INFO:PB_REMOVE" id="bm_id6843775" localize="false"/><paragraph role="paragraph" id="par_id7499008" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Removes the selected entry from the list.</ahelp></paragraph><comment>Remove All</comment>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_WEBCONNECTION_INFO:PB_REMOVEALL" id="bm_id7979369" localize="false"/><paragraph role="paragraph" id="par_id7021088" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Removes all entries from the list.</ahelp></paragraph><comment>Change Password</comment>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_WEBCONNECTION_INFO:PB_CHANGE" id="bm_id48524" localize="false"/><paragraph role="paragraph" id="par_id1981261" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog where you can view and change the password for the selected entry.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10687" xml-lang="en-US" level="2" l10n="NEW">Macro security</paragraph>
+<paragraph role="paragraph" id="par_idN1068B" xml-lang="en-US" l10n="NEW">Adjust the security level for executing macros and specify trusted macro authors.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_INET_SECURITY:PB_SEC_MACROSEC" id="bm_id3726920" localize="false"/>
+<paragraph role="heading" id="par_idN1068E" xml-lang="en-US" level="3" l10n="NEW">Macro Security</paragraph>
+<paragraph role="paragraph" id="par_idN10692" xml-lang="en-US" l10n="NEW"><ahelp hid="703992332">Opens the <emph>Macro Security</emph> dialog.</ahelp></paragraph>
+
+</body>
+</helpdocument>

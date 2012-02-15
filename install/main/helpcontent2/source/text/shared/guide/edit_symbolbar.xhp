@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguideedit_symbolbarxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Adding Buttons to Toolbars </title>
+<filename>/text/shared/guide/edit_symbolbar.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159201"><bookmark_value>customizing; toolbars</bookmark_value>
+<bookmark_value>buttons;toolbars</bookmark_value>
+<bookmark_value>toolbars;adding buttons</bookmark_value>
+<bookmark_value>configuring; toolbars</bookmark_value>
+<bookmark_value>editing; toolbars</bookmark_value>
+<bookmark_value>inserting;buttons in toolbars</bookmark_value>
+</bookmark><comment>MW changed "adding;" to "inserting;"</comment><paragraph role="heading" id="hd_id3159201" xml-lang="en-US" level="1" l10n="U" oldref="79"><variable id="edit_symbolbar"><link href="text/shared/guide/edit_symbolbar.xhp" name="Adding Buttons to Toolbars">Adding Buttons to Toolbars</link>
+</variable></paragraph>
+<section id="edtext">
+<paragraph role="heading" id="hd_id3153561" xml-lang="en-US" level="3" l10n="U" oldref="85">To add a button to a toolbar:</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="CHG" oldref="78">Click the arrow icon at the end of a toolbar and choose <emph>Visible Buttons</emph> and then select the button you want to display.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConfigureToolboxVisible" id="bm_id3149517" localize="false"/><paragraph role="paragraph" id="par_id2439039" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog where you can add, edit, and remove icons.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151384" xml-lang="en-US" level="3" l10n="U" oldref="86">To add a button to the list of Visible Buttons:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147264" xml-lang="en-US" l10n="CHG" oldref="87">Choose <emph>Tools - Customize</emph>, and click on the <emph>Toolbars</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154071" xml-lang="en-US" l10n="U" oldref="88">In the<emph> Toolbars </emph>box, select the toolbar you want to change.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148797" xml-lang="en-US" l10n="CHG" oldref="89">Click <emph>Add Commands</emph> , select the new command, then click <emph>Add</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3152922" xml-lang="en-US" l10n="CHG" oldref="90">If you want, you can rearrange the <emph>Commands </emph>list by selecting a command name and clicking <emph>Move Up</emph> and <emph>Move Down</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145171" xml-lang="en-US" l10n="U" oldref="91">Click <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/shared/guide/configure_overview.xhp#configure_overview"/>
+</section>
+</body>
+</helpdocument>

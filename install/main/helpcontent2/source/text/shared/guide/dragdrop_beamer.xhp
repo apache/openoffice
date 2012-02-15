@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedragdrop_beamerxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Drag-and-Drop With the Data Source View</title>
+<filename>/text/shared/guide/dragdrop_beamer.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-18T13:20:21">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145071"><bookmark_value>drag and drop; data source view</bookmark_value>
+<bookmark_value>data source view; drag and drop</bookmark_value>
+<bookmark_value>copying;from data source view</bookmark_value>
+<bookmark_value>pasting;from data source view</bookmark_value>
+</bookmark><comment>mw added "pasting;"</comment>
+<paragraph role="heading" id="hd_id3145071" xml-lang="en-US" level="1" l10n="U" oldref="10"><variable id="dragdrop_beamer"><link href="text/shared/guide/dragdrop_beamer.xhp" name="Drag-and-Drop With the Data Source View">Drag-and-Drop With the Data Source View</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3151111" xml-lang="en-US" l10n="U" oldref="34">A fast way of copying from a data source into a text or spreadsheet document, or of creating forms based on a data source, is by drag-and-drop.</paragraph>
+<table id="tbl_id3149578">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147335" xml-lang="en-US" l10n="E">
+<image id="img_id3155390" src="res/helpimg/copydata.png" width="8.47mm" height="8.47mm"><alt id="alt_id3155390" xml-lang="en-US">Mouse pointer copying data</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="35">Copying with Drag-and-Drop</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="28">If you want to reverse a drag-and-drop, position the cursor in your document and choose <emph>Edit - Undo</emph>.</paragraph>
+<paragraph role="tip" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="46">It is also possible to copy by drag-and-drop from a document into a data source:</paragraph>
+<paragraph role="tip" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="47">A text table or the selected range of a spreadsheet can be dragged using drag-and-drop to a table container in the data source explorer.</paragraph>
+<paragraph role="tip" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="48">Plain text can be copied using drag-and-drop from one document to a data field in the data source view.</paragraph>
+<paragraph role="heading" id="hd_id3145421" xml-lang="en-US" level="3" l10n="U" oldref="36">Using data in a text document</paragraph>
+<paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="12">You can insert a database field in a text document by dragging a field name from the column header of the data source view into the document. This is especially useful when designing form letters. Simply drag the desired fields - home address, form of address, and so on - into your document.</paragraph>
+<paragraph role="paragraph" id="par_id3153105" xml-lang="en-US" l10n="U" oldref="37">To insert a complete record, select the corresponding header and drag it into the document. When you release the mouse button, the <link href="text/shared/02/12070000.xhp" name="Insert database columns"><emph>Insert database columns</emph></link> dialog appears, in which you can decide whether to use all database fields, and whether to copy the data into the document as text, a table or fields. All currently selected records will be inserted.</paragraph>
+<paragraph role="heading" id="hd_id3147230" xml-lang="en-US" level="3" l10n="U" oldref="39">Applying data to a table document</paragraph>
+<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U" oldref="40">You can insert one or more records into the current sheet of a spreadsheet by selecting the rows in the data source view and dragging and dropping them into the spreadsheet. The data is inserted at the place where you release the mouse button.</paragraph>
+<paragraph role="heading" id="hd_id3149766" xml-lang="en-US" level="3" l10n="U" oldref="42">Inserting controls in a text form</paragraph>
+<paragraph role="paragraph" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="43">When you create a text form linked to a database, you can generate controls by drag-and-drop from the data source view.</paragraph>
+<paragraph role="paragraph" id="par_id3149562" xml-lang="en-US" l10n="U" oldref="45">When you drag a database column into the text document, you insert a field. If you hold down Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> while dragging, a text field is inserted, grouped with an appropriate label field. The text field already contains all the database information that you need for the form.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/dragdrop.xhp#dragdrop"/>
+<embed href="text/shared/guide/dragdrop_graphic.xhp#dragdrop_graphic"/>
+<embed href="text/shared/guide/dragdrop_table.xhp#dragdrop_table"/>
+<embed href="text/shared/guide/dragdrop_fromgallery.xhp#dragdrop_fromgallery"/>
+<embed href="text/shared/guide/dragdrop_gallery.xhp#dragdrop_gallery"/>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/dragdroptext.xhp#dragdroptext"/>
+</case>
+</switch>
+</body>
+</helpdocument>

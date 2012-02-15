@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared00000002xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">$[officename] Basic Glossary</title>
+<filename>/text/sbasic/shared/00000002.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-10-18T15:28:23">dedr: fixed #i30799#
+fpe: added sections and sort element</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3145068" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/00000002.xhp" name="$[officename] Basic Glossary">$[officename] Basic Glossary</link></paragraph>
+<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U" oldref="2">This glossary explains some technical terms that you may come across when working with $[officename] Basic.</paragraph>
+<sort order="asc">
+<section id="dezimal">
+<paragraph role="heading" id="hd_id3155133" xml-lang="en-US" level="2" l10n="U" oldref="7">Decimal Point</paragraph>
+<paragraph role="paragraph" id="par_id3156443" xml-lang="en-US" l10n="U" oldref="8">When converting numbers, $[officename] Basic uses the locale settings of the system for determining the type of decimal and thousand separator.</paragraph>
+<paragraph role="paragraph" id="par_id3153092" xml-lang="en-US" l10n="U" oldref="9">The behavior has an effect on both the implicit conversion ( 1 + "2.3" = 3.3 ) as well as the runtime function <link href="text/sbasic/shared/03102700.xhp" name="IsNumeric">IsNumeric</link>.</paragraph>
+</section>
+<section id="colors">
+<paragraph role="heading" id="hd_id3155854" xml-lang="en-US" level="2" l10n="U" oldref="29">Colors</paragraph>
+<paragraph role="paragraph" id="par_id3145366" xml-lang="en-US" l10n="U" oldref="30">In $[officename] Basic, colors are treated as long integer value. The return value of color queries is also always a long integer value. When defining properties, colors can be specified using their RGB code that is converted to a long integer value using the <link href="text/sbasic/shared/03010305.xhp" name="RGB function">RGB function</link>.</paragraph>
+</section>
+<section id="measurementunits">
+<paragraph role="heading" id="hd_id3146119" xml-lang="en-US" level="2" l10n="U" oldref="32">Measurement Units</paragraph>
+<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="CHG" oldref="33">In $[officename] Basic, a <emph>method parameter</emph> or a <emph>property</emph> expecting unit information can be specified either as integer or long integer expression without a unit, or as a character string containing a unit. If no unit is passed to the method the default unit defined for the active document type will be used. If the parameter is passed as a character string containing a measurement unit, the default setting will be ignored. The default measurement unit for a document type can be set under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - (Document Type) - General</emph>.</paragraph>
+</section>
+<section id="twips">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145801"><bookmark_value>twips; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145801" xml-lang="en-US" level="2" oldref="5">Twips</paragraph>
+<paragraph role="paragraph" id="par_id3154731" xml-lang="en-US" l10n="U" oldref="6">A twip is a screen-independent unit which is used to define the uniform position and size of screen elements on all display systems. A twip is 1/1440th of an inch or 1/20 of a printer's point. There are 1440 twips to an inch or about 567 twips to a centimeter.</paragraph>
+</section>
+<section id="urlnotation">
+<paragraph role="heading" id="hd_id3153159" xml-lang="en-US" level="2" l10n="U" oldref="106">URL Notation</paragraph>
+<paragraph role="paragraph" id="par_id3153415" xml-lang="en-US" l10n="U" oldref="108">URLs (<emph>Uniform Resource Locators</emph>) are used to determine the location of a resource like a file in a file system, typically inside a network environment. A URL consists of a protocol specifier, a host specifier and a file and path specifier:</paragraph>
+<paragraph role="paragraph" id="par_id3149121" xml-lang="en-US" l10n="U" oldref="107">
+<emph>protocol</emph>://<emph>host.name</emph>/<emph>path/to/the/file.html</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3168612" xml-lang="en-US" l10n="U" oldref="109">The most common usage of URLs is on the internet when specifying web pages. Example for protocols are <emph>http</emph>, <emph>ftp</emph>, or <emph>file</emph>. The <emph>file</emph> protocol specifier is used when referring to a file on the local file system.</paragraph>
+<paragraph role="paragraph" id="par_id3150324" xml-lang="en-US" l10n="U" oldref="110">URL notation does not allow certain special characters to be used. These are either replaced by other characters or encoded. A slash (<emph>/</emph>) is used as a path separator. For example, a file referred to as <emph>C:\My File.sxw</emph> on the local host in "Windows notation" becomes <emph>file:///C|/My%20File.sxw</emph> in URL notation.</paragraph>
+</section>
+</sort>
+</body>
+</helpdocument>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideheader_with_linexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Formatting Headers or Footers</title>
+         <filename>/text/swriter/guide/header_with_line.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154866"><bookmark_value>inserting;lines under headers/above footers</bookmark_value>
+      <bookmark_value>lines; under headers/above footers</bookmark_value>
+      <bookmark_value>headers;formatting</bookmark_value>
+      <bookmark_value>footers;formatting</bookmark_value>
+      <bookmark_value>shadows;headers/footers</bookmark_value>
+      <bookmark_value>borders;for headers/footers</bookmark_value>
+</bookmark><comment>MW changed "inserting;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3154866" role="heading" level="1" l10n="U"
+                 oldref="20"><variable id="header_with_line"><link href="text/swriter/guide/header_with_line.xhp" name="Formatting Headers or Footers">Formatting Headers or Footers</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154243" role="paragraph" l10n="U" oldref="21">You can apply direct formatting to the text in a header or footer. You can also adjust the spacing of the text relative to the header or footer frame or apply a border to the header or footer.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155873" role="listitem" l10n="U" oldref="22">Choose <item type="menuitem">Format - Page</item>
+               <emph/>and select the <item type="menuitem">Header</item>
+               <emph/>or <item type="menuitem">Footer</item>
+               <emph/>tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147109" role="listitem" l10n="U" oldref="27">Set the spacing options that you want to use.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147128" role="listitem" l10n="U" oldref="23">To add a border or a shadow to the header or the footer, click <item type="menuitem">More</item>. The <item type="menuitem">Border/Background</item>
+               <emph/>dialog opens.</paragraph>
+         </listitem>
+      </list>
+
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150520" xml-lang="en-US" l10n="U" oldref="24">To add a separator line between the header or the footer and the content of the page, click the bottom edge of the square in the <emph>Line arrangement</emph> area. Click a line style in the <emph>Style</emph> box.</paragraph>
+</listitem>
+
+<listitem>
+<paragraph role="listitem" id="par_id3153742" xml-lang="en-US" l10n="U" oldref="25">To adjust the spacing between the content of the header or footer and the line, clear the <emph>Synchronize</emph> box, and then enter a value in the<emph> Bottom</emph> box.</paragraph>
+</listitem>
+</list>
+
+
+
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/header_footer.xhp#header_footer"/>
+      <embed href="text/swriter/guide/change_header.xhp#change_header"/>
+      <embed href="text/swriter/guide/header_pagestyles.xhp#header_pagestyles"/>
+      <embed href="text/swriter/guide/header_with_chapter.xhp#header_with_chapter"/>
+   </body>
+</helpdocument>

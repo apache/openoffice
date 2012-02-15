@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="svx_SvxDrawPage" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+' Requiered for  com.sun.star.container.XNamed
+ Global cNameToSet As String ' "fixed" if name is fixed
+
+' Requiered for  com.sun.star.drawing.XShapeGrouper
+ Global oGrouperCollection As Object 'groupable objects
+' Requiered for  com.sun.star.drawing.XShapes
+ Global oXShapeInstance As Object 'to add/remove
+' Requiered for  com.sun.star.drawing.XShapeCombiner
+ Global oCombinerCollection As Object
+' Requiered for  com.sun.star.drawing.XShapeBinder
+ Global oBinderCollection As Object
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' svx.SvxDrawPage
+'*************************************************************************
+On Error Goto ErrHndl
+
+    Dim bOK As Boolean
+    bOK = true
+
+    oDoc = utils.createDocument("sdraw", cObjectName)
+
+    Dim aPoint As New com.sun.star.awt.Point
+    Dim aSize As New com.sun.star.awt.Size
+    aPoint.x = 100
+    aPoint.y = 200
+    aSize.Width = 3000
+    aSize.Height = 4000
+    oXShapeInstance = oDoc.createInstance("com.sun.star.drawing.RectangleShape")
+    oXShapeInstance.Size = aSize
+    oXShapeInstance.Position = aPoint
+    oXShapeInstance.FillColor = RGB(255, 0, 0)
+    
+    oDrawPage = oDoc.DrawPages(0)
+    oObj = oDrawPage
+
+    oGrouperCollection = createUNOService("com.sun.star.drawing.ShapeCollection")
+    oCombinerCollection = createUNOService("com.sun.star.drawing.ShapeCollection")
+    oBinderCollection = createUNOService("com.sun.star.drawing.ShapeCollection")
+
+    AddShape(oObj, 100, 200, "com.sun.star.drawing.LineShape")
+    AddShape(oObj, 200, 200, "com.sun.star.drawing.EllipseShape")
+
+    oShape = oObj.getByIndex(0)
+    oGrouperCollection.Add(oShape)
+    oShape = oObj.getByIndex(1)
+    oGrouperCollection.Add(oShape)
+
+    AddShape(oObj, 300, 200, "com.sun.star.drawing.LineShape")
+    AddShape(oObj, 400, 200, "com.sun.star.drawing.EllipseShape")
+    oShape = oObj.getByIndex(2)
+    oCombinerCollection.Add(oShape)
+    oShape = oObj.getByIndex(3)
+    oCombinerCollection.Add(oShape)
+     
+    AddShape(oObj, 500, 200, "com.sun.star.drawing.LineShape")
+    AddShape(oObj, 600, 200, "com.sun.star.drawing.EllipseShape")
+    oShape = oObj.getByIndex(4)
+    oBinderCollection.Add(oShape)
+    oShape = oObj.getByIndex(5)
+    oBinderCollection.Add(oShape)
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+sub AddShape(oPage as Object, nPosX, nPosY as Integer, shapeService As String)
+    Dim aPoint As New com.sun.star.awt.Point
+    Dim aSize As New com.sun.star.awt.Size
+    Dim oShape As Object
+
+    aPoint.x = nPosX
+    aPoint.y = nPosY
+    aSize.Width = 10000
+    aSize.Height = 10000
+    oShape = oDoc.createInstance(shapeService)
+    oShape.Size = aSize
+    oShape.Position = aPoint
+    oShape.FillColor = RGB(255, 0, 0)
+    oPage.add(oShape)
+End Sub
+</script:module>

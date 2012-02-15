@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsmath0103090600xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Attributes</title>
+         <filename>/text/smath/01/03090600.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="attribute">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154011"><bookmark_value>attributes; in %PRODUCTNAME Math</bookmark_value>
+         <bookmark_value>formulas; attributes in</bookmark_value>
+         <bookmark_value>accents; in %PRODUCTNAME Math</bookmark_value>
+         <bookmark_value>attributes; accents</bookmark_value>
+         <bookmark_value>vector arrows as attributes</bookmark_value>
+         <bookmark_value>tilde as attribute</bookmark_value>
+         <bookmark_value>circumflex attribute</bookmark_value>
+         <bookmark_value>bold attribute</bookmark_value>
+         <bookmark_value>italic attribute in %PRODUCTNAME Math</bookmark_value>
+         <bookmark_value>resizing;fonts</bookmark_value>
+         <bookmark_value>scaling;fonts</bookmark_value>
+         <bookmark_value>attributes; changing fonts</bookmark_value>
+         <bookmark_value>changing; fonts</bookmark_value>
+         <bookmark_value>attributes; colored characters</bookmark_value>
+         <bookmark_value>colored characters</bookmark_value>
+         <bookmark_value>attributes; changing defaults</bookmark_value>
+         <bookmark_value>circle attribute</bookmark_value>
+         <bookmark_value>double dot attribute</bookmark_value>
+         <bookmark_value>dot attribute</bookmark_value>
+         <bookmark_value>line through attribute</bookmark_value>
+         <bookmark_value>line above attribute</bookmark_value>
+         <bookmark_value>reversed circumflex attribute</bookmark_value>
+         <bookmark_value>overline attribute</bookmark_value>
+         <bookmark_value>wide vector arrow attribute</bookmark_value>
+         <bookmark_value>wide tilde attribute</bookmark_value>
+         <bookmark_value>wide circumflex attribute</bookmark_value>
+         <bookmark_value>underline attribute</bookmark_value>
+         <bookmark_value>triple dot attribute</bookmark_value>
+         <bookmark_value>transparent character as attribute</bookmark_value>
+</bookmark><comment>mw added "scaling;fonts"</comment>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_ATTRIBUTES_TBX" id="bm_id3153142" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_ATTRIBUTES_CAT" id="bm_id3147434" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154011" role="heading" level="1" l10n="U" oldref="1"><variable id="attributes"><link href="text/smath/01/03090600.xhp" name="Attributes">Attributes</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145802" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_SMA_ATTRIBUTES_CAT">You can choose from various attributes for <emph>%PRODUCTNAME</emph>
+            <emph>Math</emph> formulas. Some attributes are displayed in the lower part of the Elements window.</ahelp> These attributes are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All attributes not contained in the Elements window or in the context menu must be typed manually in the <emph>Commands</emph> window.</paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/smath/00/00000004.xhp#astatb"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3155962" role="paragraph" l10n="U" oldref="3">The following is a complete list of all attributes available in <item type="productname">%PRODUCTNAME</item> Math. The symbol next to the attribute indicates that it can be accessed through the Elements window (choose <emph>View - Elements</emph>) or through the context menu of the <emph>Commands</emph> window.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149604" role="note" l10n="U" oldref="4">In describing the following attribute functions, the letter "a" in the icon refers to the placeholder that you would like to assign to the respective attribute. You can substitute this character with any other character that you choose.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154650" role="heading" level="3" l10n="U" oldref="5">Attribute Functions</paragraph>
+      <table id="tbl_id3153810">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10098" role="paragraph" l10n="F">
+<image id="img_id3150391" src="starmath/res/at21701.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3150391">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_ACUTEX" id="bm_id3149054" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146322" role="tablehead" l10n="U" oldref="6">Acute accent</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3150533" role="paragraph" l10n="U" oldref="7"><ahelp hid="HID_SMA_ACUTEX">Inserts a placeholder with an acute accent.</ahelp> You can also type <emph>acute &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3145594">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN100D5" role="paragraph" l10n="F">
+<image id="img_id3154504" src="starmath/res/at21702.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3154504">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_GRAVEX" id="bm_id3154501" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149877" role="tablehead" l10n="U" oldref="22">Grave accent</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3150018" role="paragraph" l10n="U" oldref="23"><ahelp hid="HID_SMA_GRAVEX">Inserts a placeholder with a <emph>grave accent</emph> (grave).</ahelp> You can also type <emph>grave &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3156064">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10115" role="paragraph" l10n="F">
+<image id="img_id3155370" src="starmath/res/at21703.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3155370">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_CHECKX" id="bm_id3153927" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156263" role="tablehead" l10n="U" oldref="47">Reverse Circumflex</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147167" role="paragraph" l10n="U" oldref="13"><ahelp hid="HID_SMA_CHECKX">Inserts a placeholder with a reverse circumflex ("checkmark") over it.</ahelp> You can also type <emph>check &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3151186">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN1014E" role="paragraph" l10n="F">
+<image id="img_id3145202" src="starmath/res/at21704.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3145202">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_BREVEX" id="bm_id3151271" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149976" role="tablehead" l10n="U" oldref="10">Breve</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153619" role="paragraph" l10n="U" oldref="11"><ahelp hid="HID_SMA_BREVEX">Inserts a placeholder with an accent breve.</ahelp> You can also type <emph>breve &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3147255">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10187" role="paragraph" l10n="F">
+<image id="img_id3159179" src="starmath/res/at21709.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3159179">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_CIRCLEX" id="bm_id3159175" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154258" role="tablehead" l10n="U" oldref="14">Circle</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153573" role="paragraph" l10n="U" oldref="15"><ahelp hid="HID_SMA_CIRCLEX">Inserts a placeholder with a circle over it.</ahelp> You can also type <emph>circle &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3150712">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN101C0" role="paragraph" l10n="F">
+<image id="img_id3149808" src="starmath/res/im21106.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3149808">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_VECX" id="bm_id3149804" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153527" role="tablehead" l10n="U" oldref="28">Vector arrow</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153539" role="paragraph" l10n="U" oldref="29"><ahelp hid="HID_SMA_VECX">Inserts a placeholder with a vector arrow.</ahelp> You can also type <emph>vec &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3154479">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN101FB" role="paragraph" l10n="F">
+<image id="img_id3153776" src="starmath/res/at21708.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3153776">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_TILDEX" id="bm_id3153772" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150356" role="tablehead" l10n="U" oldref="26">Tilde</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3154570" role="paragraph" l10n="U" oldref="27"><ahelp hid="HID_SMA_TILDEX">Inserts a placeholder with a tilde.</ahelp> You can also type <emph>tilde &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3155896">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10236" role="paragraph" l10n="F">
+<image id="img_id3149695" src="starmath/res/at21707.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3149695">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_HATX" id="bm_id3154192" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154201" role="tablehead" l10n="U" oldref="24">Circumflex</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3159198" role="paragraph" l10n="U" oldref="25"><ahelp hid="HID_SMA_HATX">Inserts a placeholder with a circumflex ("hat").</ahelp> You can also directly enter <emph>hat &lt;?&gt;</emph> in the Commands window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3149308">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN1026E" role="paragraph" l10n="F">
+<image id="img_id3148986" src="starmath/res/at21705.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3148986">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_BARX" id="bm_id3149692" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149486" role="tablehead" l10n="U" oldref="8">Line above (bar)</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3149815" role="paragraph" l10n="U" oldref="9"><ahelp hid="HID_SMA_BARX">Inserts a line ("bar") above a placeholder .</ahelp> You can also type <emph>bar &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3154828">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN102A7" role="paragraph" l10n="F">
+<image id="img_id3147095" src="starmath/res/at21710.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3147095">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_DOTX" id="bm_id3147092" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147221" role="tablehead" l10n="U" oldref="16">Dot</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3154900" role="paragraph" l10n="U" oldref="17"><ahelp hid="HID_SMA_DOTX">Inserts a placeholder with a dot over it.</ahelp> You can also type <emph>dot &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3148736">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN102E0" role="paragraph" l10n="F">
+<image id="img_id3147328" src="starmath/res/at21724.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3147328">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_WIDEVECX" id="bm_id3147325" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153516" role="tablehead" l10n="U" oldref="54">Wide vector arrow</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147126" role="paragraph" l10n="U" oldref="53"><ahelp hid="HID_SMA_WIDEVECX">Inserts a wide vector arrow with a placeholder.</ahelp> You can also type <emph>widevec</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3153285">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10319" role="paragraph" l10n="F">
+<image id="img_id3153359" src="starmath/res/at21723.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3153359">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_WIDETILDEX" id="bm_id3153356" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156278" role="tablehead" l10n="U" oldref="56">Wide tilde</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3154116" role="paragraph" l10n="U" oldref="55"><ahelp hid="HID_SMA_WIDETILDEX">Inserts a wide tilde with a placeholder. </ahelp> You can also type <emph>widetilde</emph> directly in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3150574">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10352" role="paragraph" l10n="F">
+<image id="img_id3155117" src="starmath/res/at21722.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3155117">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_WIDEHATX" id="bm_id3149179" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148764" role="tablehead" l10n="U" oldref="58">Wide circumflex</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147311" role="paragraph" l10n="U" oldref="57"><ahelp hid="HID_SMA_WIDEHATX">Inserts a wide circumflex ("hat") with a placeholder. </ahelp> You can also type <emph>widehat</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3156364">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN1038B" role="paragraph" l10n="F">
+<image id="img_id3148873" src="starmath/res/at21711.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3148873">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_DDOTX" id="bm_id3151383" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155921" role="tablehead" l10n="U" oldref="18">Double dot</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3149541" role="paragraph" l10n="U" oldref="19"><ahelp hid="HID_SMA_DDOTX">Inserts a placeholder with two dots over it.</ahelp> You can also directly enter <emph>ddot &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3150124">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN103C4" role="paragraph" l10n="F">
+<image id="img_id3147424" src="starmath/res/at21713.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3147424">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_OVERLINEX" id="bm_id3147420" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147621" role="tablehead" l10n="U" oldref="32">Line over</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147492" role="paragraph" l10n="U" oldref="33"><ahelp hid="HID_SMA_OVERLINEX">Inserts a line over a placeholder.</ahelp> You can also type <emph>overline &lt;?</emph>
+                  <emph>&gt;</emph> in the <emph>Commands</emph> window. The line adjusts itself to correct length.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3145269">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN103FD" role="paragraph" l10n="F">
+<image id="img_id3145130" src="starmath/res/at21714.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3145130">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_UNDERLINEX" id="bm_id3145126" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153258" role="tablehead" l10n="U" oldref="30">Line below</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153269" role="paragraph" l10n="U" oldref="59"><ahelp hid="HID_SMA_UNDERLINEX">Inserts a line below a placeholder.</ahelp> You can also type <emph>underline &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3153786">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10436" role="paragraph" l10n="F">
+<image id="img_id3145318" src="starmath/res/at21715.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3145318">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_OVERSTRIKEX" id="bm_id3145315" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153292" role="tablehead" l10n="U" oldref="34">Line through (overstrike)</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153304" role="paragraph" l10n="U" oldref="35"><ahelp hid="HID_SMA_OVERSTRIKEX">Inserts a placeholder with a line (or overstrike) through it.</ahelp> You can also type <emph>overstrike &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3153987">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN1046F" role="paragraph" l10n="F">
+<image id="img_id3156104" src="starmath/res/at21712.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3156104">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_DDDOTX" id="bm_id3156101" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154707" role="tablehead" l10n="U" oldref="20">Triple dot</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3154718" role="paragraph" l10n="U" oldref="21"><ahelp hid="HID_SMA_DDDOTX">Inserts three dots over a placeholder.</ahelp> You can also type <emph>dddot &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3155591">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN104A8" role="paragraph" l10n="F">
+<image id="img_id3145626" src="starmath/res/at21716.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3145626">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_PHANTOMX" id="bm_id3145622" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149774" role="tablehead" l10n="U" oldref="40">Transparent</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3155074" role="paragraph" l10n="U" oldref="41"><ahelp hid="HID_SMA_PHANTOMX">Inserts a placeholder for a transparent character. This character takes up the space of "a" but does not display it.</ahelp> You can also type <emph>phantom &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3154329">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN104E1" role="paragraph" l10n="F">
+<image id="img_id3153240" src="res/commandimagelist/sc_bold.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3153240">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_BOLDX" id="bm_id3146954" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150089" role="tablehead" l10n="U" oldref="38">Bold font</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3150101" role="paragraph" l10n="U" oldref="39"><ahelp hid="HID_SMA_BOLDX">Inserts a placeholder with bold formatting.</ahelp> You can also type <emph>bold &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3155096">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN1051C" role="paragraph" l10n="F">
+<image id="img_id3150038" src="res/commandimagelist/sc_italic.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3150038">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_ITALX" id="bm_id3150034" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147344" role="tablehead" l10n="U" oldref="36">Italic font</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147355" role="paragraph" l10n="U" oldref="37"><ahelp hid="HID_SMA_ITALX">Inserts a placeholder with italic formatting.</ahelp> You can also type <emph>ital &lt;?&gt;</emph> or <emph>italic &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3148410">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN1055A" role="paragraph" l10n="F">
+<image id="img_id3155801" src="res/commandimagelist/sc_fontheight.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3155801">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SIZEXY" id="bm_id3155798" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145618" role="tablehead" l10n="U" oldref="44">Resize</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153125" role="paragraph" l10n="U" oldref="45"><ahelp hid="HID_SMA_SIZEXY">Inserts a command for modifying the font size with two placeholders. The first placeholder refers to the font size (for example, 12) and the second one contains the text.</ahelp> For proper structure, insert a space between the values. You can also directly enter <emph>size &lt;?&gt; &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3156085">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_idN10595" role="paragraph" l10n="F">
+<image id="img_id3148804" src="res/commandimagelist/sc_charfontname.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3148804">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_FONTXY" id="bm_id3154349" localize="false"/>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154359" role="tablehead" l10n="U" oldref="42">Change font</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3154371" role="paragraph" l10n="U" oldref="43"><ahelp hid="HID_SMA_FONTXY">Inserts a command for changing the font type, with two placeholders. Replace the first placeholder with the name of one of the <link href="text/smath/01/05010000.xhp" name="custom fonts">custom fonts</link>, <emph>Serif, Sans</emph> or <emph>Fixed</emph>. Replace the second placeholder with the text.</ahelp> You can also type <emph>font &lt;?&gt; &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3149626" role="paragraph" l10n="U" oldref="48"> Use the <emph>color</emph> command to change the color of your formula. Type <emph>color</emph>, then type the color name (the available colors are white, black, cyan, magenta, red, blue, green and yellow), then the formula, character or character sequence. The input <emph>color green size 20 a</emph> results in a green letter "a" with a font size of 20.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146071" role="paragraph" l10n="U" oldref="51">The <emph>nbold</emph> and <emph>nitalic</emph> commands remove the bold or italic default fonts of formula components. For example, remove italics from the x in the formula 5 x + 3=28 by typing <emph>nitalic</emph> before the x as in <emph>5 nitalic x + 3=28</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150612" role="note" l10n="U" oldref="46">The <link href="text/smath/01/03091300.xhp" name="attributes">attributes</link> "acute", "bar", "breve", "check", "circle", "dot", "ddot", "dddot", "grave", "hat", "tilde" and "vec" have fixed sizes. Their width or length cannot be adjusted when positioned over a long symbol.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155621" role="paragraph" l10n="U" oldref="52">For size changes you can use <emph>size n</emph>,<emph> +n</emph>,<emph> -n</emph>,<emph> *n</emph> and<emph> /n </emph>, where <emph>n</emph> is a placeholder. This method is useful when the base size of the formula is subject to change. The commands <emph>size +n</emph> and <emph>size -n</emph> change point size, and <emph>size *n</emph> and <emph>size /n</emph> change the size by a percentage. For example, the command <emph>size *1.17</emph> increases the size of a character by exactly 17%.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148695" role="warning" l10n="U" oldref="49">Note that some entries require spaces for the correct structure. This is especially true when you specify attributes with fixed values instead of placeholders.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145230" role="paragraph" l10n="U" oldref="50">For more information about formatting in <emph>%PRODUCTNAME</emph>
+         <emph>Math</emph>, see <link href="text/smath/01/03091100.xhp" name="Brackets and Grouping">Brackets and Grouping</link>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154221" role="paragraph" l10n="U" oldref="31">Information on <link href="text/smath/01/03091300.xhp" name="attributes">attributes</link>, <link href="text/smath/01/03091200.xhp" name="indexes and exponents">indexes and exponents</link>, and <link href="text/smath/01/03091400.xhp" name="scaling">scaling</link> can help you structure your documents more efficiently.</paragraph>
+   </body>
+</helpdocument>

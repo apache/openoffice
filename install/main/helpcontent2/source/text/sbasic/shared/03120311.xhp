@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03120311xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Trim Function [Runtime]</title>
+<filename>/text/sbasic/shared/03120311.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-03T15:50:32">converted from old format - fpe
+dedr: fixed #i30791#</lastedited>
+</history>
+</meta>
+<body>
+<section id="trim">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150616"><bookmark_value>Trim function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150616" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120311.xhp" name="Trim Function [Runtime]">Trim Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="2">Removes all leading and trailing spaces from a string expression.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3159157" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U" oldref="4">Trim( Text As String )</paragraph>
+<paragraph role="heading" id="hd_id3155388" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3143228" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
+<paragraph role="heading" id="hd_id3145609" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Text:</emph> Any string expression.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3148663" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150398" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleSpaces</paragraph>
+<paragraph role="paragraph" id="par_id3153525" xml-lang="en-US" l10n="U" oldref="12">Dim sText2 as String,sText as String,sOut as String</paragraph>
+<paragraph role="paragraph" id="par_id3154908" xml-lang="en-US" l10n="U" oldref="13">sText2 = " &lt;*Las Vegas*&gt; "</paragraph>
+<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U" oldref="15">sOut = "'"+sText2 +"'"+ Chr(13)</paragraph>
+<paragraph role="paragraph" id="par_id3151383" xml-lang="en-US" l10n="CHG" oldref="16">sText = Ltrim(sText2) REM sText = "&lt;*Las Vegas*&gt; "</paragraph>
+<paragraph role="paragraph" id="par_id3151044" xml-lang="en-US" l10n="U" oldref="17">sOut = sOut + "'"+sText +"'" + Chr(13)</paragraph>
+<paragraph role="paragraph" id="par_id3159149" xml-lang="en-US" l10n="CHG" oldref="18">sText = Rtrim(sText2) REM sText = " &lt;*Las Vegas*&gt;"</paragraph>
+<paragraph role="paragraph" id="par_id3150449" xml-lang="en-US" l10n="U" oldref="19">sOut = sOut +"'"+ sText +"'" + Chr(13)</paragraph>
+<paragraph role="paragraph" id="par_id3149562" xml-lang="en-US" l10n="CHG" oldref="20">sText = Trim(sText2) REM sText = "&lt;*Las Vegas*&gt;"</paragraph>
+<paragraph role="paragraph" id="par_id3161831" xml-lang="en-US" l10n="U" oldref="21">sOut = sOut +"'"+ sText +"'"</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="22">MsgBox sOut</paragraph>
+<paragraph role="paragraph" id="par_id3145364" xml-lang="en-US" l10n="U" oldref="23">end sub</paragraph>
+</body>
+</helpdocument>

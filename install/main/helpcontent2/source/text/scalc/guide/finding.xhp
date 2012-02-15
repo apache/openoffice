@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textscalcguidefindingxhp" indexer="include">
+<title id="tit" xml-lang="en-US">Finding and Replacing in Calc</title>
+<filename>/text/scalc/guide/finding.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="finding_text">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3769341"><bookmark_value>searching, see also finding</bookmark_value>
+<bookmark_value>finding;formulas/values/text/objects</bookmark_value>
+<bookmark_value>replacing; cell contents</bookmark_value>
+<bookmark_value>formatting;multiple cell texts</bookmark_value>
+</bookmark><comment>2. mw deleted 2 entries, changed "finding;" and added "formatting;"</comment><comment>1. mw copied 5 entries from shared/01/02100000.xhp and changed then "finding," and "replacing;"</comment>
+<paragraph role="heading" id="hd_id3149204" xml-lang="en-US" level="1" l10n="NEW"><variable id="finding"><link href="text/scalc/guide/finding.xhp">Finding and Replacing in Calc</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id9363689" xml-lang="en-US" l10n="NEW">In spreadsheet documents you can find words, formulas, and styles. You can navigate from one result to the next, or you can highlight all matching cells at once, then apply another format or replace the cell content by other content.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3610644" xml-lang="en-US" level="2" l10n="NEW">The Find &amp; Replace dialog</paragraph>
+<paragraph role="paragraph" id="par_id2224494" xml-lang="en-US" l10n="NEW">Cells can contain text or numbers that were entered directly as in a text document. But cells can also contain text or numbers as the result of a calculation. For example, if a cell contains the formula =1+2 it displays the result 3. You must decide whether to search for the 1 respective 2, or to search the 3.</paragraph>
+<paragraph role="heading" id="hd_id2423780" xml-lang="en-US" level="3" l10n="NEW">To find formulas or values</paragraph>
+<paragraph role="paragraph" id="par_id2569658" xml-lang="en-US" l10n="NEW">You can specify in the Find &amp; Replace dialog either to find the parts of a formula or the results of a calculation.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id6394238" xml-lang="en-US" l10n="NEW">Choose <emph>Edit - Find &amp; Replace</emph> to open the Find &amp; Replace dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id7214270" xml-lang="en-US" l10n="NEW">Click <emph>More Options</emph> to expand the dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id2186346" xml-lang="en-US" l10n="NEW">Select "Formulas" or "Values" in the <emph>Search in</emph> list box.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id1331217" xml-lang="en-US" l10n="NEW">With "Formulas" you will find all parts of the formulas. </paragraph>
+<paragraph role="paragraph" id="par_id393993" xml-lang="en-US" l10n="NEW">With "Values" you will find the results of the calculations. </paragraph>
+<paragraph role="note" id="par_id3163853" xml-lang="en-US" l10n="NEW">Cell contents can be formatted in different ways. For example, a number can be formatted as a currency, to be displayed with a currency symbol. You see the currency symbol in the cell, but you cannot search for it.</paragraph>
+<paragraph role="heading" id="hd_id7359233" xml-lang="en-US" level="3" l10n="NEW">Finding text</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id6549272" xml-lang="en-US" l10n="NEW">Choose <emph>Edit - Find &amp; Replace</emph> to open the Find &amp; Replace dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id6529740" xml-lang="en-US" l10n="NEW">Enter the text to find in the <emph>Search for</emph> text box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id9121982" xml-lang="en-US" l10n="NEW">Either click <emph>Find</emph> or <emph>Find All</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3808404" xml-lang="en-US" l10n="NEW">When you click <emph>Find</emph>, Calc will select the next cell that contains your text. You can watch and edit the text, then click <emph>Find</emph> again to advance to the next found cell. </paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id2394482" xml-lang="en-US" l10n="NEW">If you closed the dialog, you can press a key combination (<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+F) to find the next cell without opening the dialog. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id631733" xml-lang="en-US" l10n="NEW">By default, Calc searches the current sheet. Click <emph>More Options</emph>, then enable <emph>Search in all sheets</emph> to search through all sheets of the document.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id7811822" xml-lang="en-US" l10n="NEW">When you click <emph>Find All</emph>, Calc selects all cells that contain your entry. Now you can for example set all found cells to bold, or apply a Cell Style to all at once.</paragraph>
+<paragraph role="heading" id="hd_id8531449" xml-lang="en-US" level="2" l10n="NEW">The Navigator</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id9183935" xml-lang="en-US" l10n="NEW">Choose <emph>View - Navigator</emph> to open the Navigator window.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id946684" xml-lang="en-US" l10n="NEW">The Navigator is the main tool for finding and selecting objects.</paragraph>
+<paragraph role="paragraph" id="par_id9607226" xml-lang="en-US" l10n="NEW">Use the Navigator for inserting objects and links within the same document or from other open documents.</paragraph>
+<section id="relatedtopics">
+<embed href="text/swriter/guide/search_regexp.xhp#search_regexp"/>
+<embed href="text/shared/01/02100001.xhp#02100001"/>
+<embed href="text/swriter/guide/finding.xhp#finding"/>
+</section>
+</body>
+</helpdocument>

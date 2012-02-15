@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><helpdocument version="1.0">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<meta>
+<topic id="textscalcguidecalculatexml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Calculating in Spreadsheets</title>
+<filename>text/scalc/guide/calculate.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150791">
+<bookmark_value>spreadsheets; calculating</bookmark_value>
+<bookmark_value>calculating; spreadsheets</bookmark_value>
+<bookmark_value>formulas; calculating</bookmark_value>
+</bookmark><comment>mw changed "formulas;..." entry</comment>
+<paragraph id="hd_id3150791" role="heading" xml-lang="en-US" level="1"><variable id="calculate"><link href="text/scalc/guide/calculate.xhp" name="Calculating in Spreadsheets">Calculating in Spreadsheets</link></variable></paragraph>
+<paragraph id="par_id3146120" role="paragraph" xml-lang="en-US">The following is an example of a calculation in $[officename] Calc.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph id="par_id3153951" role="listitem" xml-lang="en-US">Click in a cell, and type a number</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN10656" role="listitem" xml-lang="en-US">Press Enter.</paragraph>
+<paragraph id="par_idN1065D" role="listitem" xml-lang="en-US">The cursor moves down to the next cell.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id3155064" role="listitem" xml-lang="en-US">Enter another number.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN1066F" role="listitem" xml-lang="en-US">Press the Tab key.</paragraph>
+<paragraph id="par_idN10676" role="listitem" xml-lang="en-US">The cursor moves to the right into the next cell.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id3154253" role="listitem" xml-lang="en-US">Type in a formula, for example, <item type="literal">=A3 * A4 / 100.</item></paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN1068B" role="listitem" xml-lang="en-US"> Press Enter.</paragraph>
+<paragraph id="par_id3147343" role="listitem" xml-lang="en-US">The result of the formula appears in the cell. If you want, you can edit the formula in the input line of the Formula bar.</paragraph>
+<paragraph id="par_id3155378" role="listitem" xml-lang="en-US">When you edit a formula, the new result is calculated automatically.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics"><embed href="text/scalc/guide/calc_date.xhp#calc_date"/><embed href="text/scalc/guide/calc_series.xhp#calc_series"/><embed href="text/scalc/guide/calc_timevalues.xhp#calc_timevalues"/><embed href="text/scalc/guide/cellreferences.xhp#cellreferences"/>
+</section>
+</body>
+</helpdocument>

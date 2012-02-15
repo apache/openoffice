@@ -1,0 +1,112 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_datatransfer_dnd_XDropTargetListener_idl__
+#define __com_sun_star_datatransfer_dnd_XDropTargetListener_idl__
+
+#ifndef __com_sun_star_datatransfer_dnd_DropTargetDragEnterEvent_idl__
+#include <com/sun/star/datatransfer/dnd/DropTargetDragEnterEvent.idl>
+#endif
+
+#ifndef __com_sun_star_datatransfer_dnd_DropTargetDropEvent_idl__
+#include <com/sun/star/datatransfer/dnd/DropTargetDropEvent.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XEventListener_idl__
+#include <com/sun/star/lang/XEventListener.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module datatransfer { module dnd {
+
+//=============================================================================
+/** This interface is the callback interface used by the drop target object to 
+	provide notification of Drag and Drop operations that involve the subject 
+	drop target.
+
+	<p>Methods of this interface may be implemented to provide "drag under" 
+	visual feedback to the user throughout the Drag and Drop operation.</p>
+*/
+
+published interface XDropTargetListener: com::sun::star::lang::XEventListener
+{
+	//-------------------------------------------------------------------------
+	/** The drag operation has terminated with a drop on this drop target.
+
+		<p><strong>NOTE:</strong> This method should not be oneway. The implentation
+		has to wait until the method <method>XDropTargetDropContext::dropComplete</method>
+		is called before releasing the data for the drop operation. This
+		should occur before returning from drop in a normal flow of operation.
+		Also, the implementor of <type>XDropTargetListener</type> should not assume
+		the <type>DropTargetDropEvent</type> to be meaningful after returning
+		from the <member>XDropTargetListener::drop()</member> method.</p>
+		
+		@param dtde
+		The <type>DropTargetDropEvent</type>.
+	*/
+
+	void drop( [in] DropTargetDropEvent dtde );
+
+  	//-------------------------------------------------------------------------
+	/** Called when a drag operation has encountered the drop target.
+
+		@param dtde
+		The <type>DropTargetDragEvent</type>.
+	*/
+		
+	[oneway] void dragEnter( [in] DropTargetDragEnterEvent dtdee );
+
+  	//-------------------------------------------------------------------------
+	/** The drag operation has departed the drop target without dropping.
+
+		@param dte
+		The <type>DropTargetEvent</type>.
+	*/
+
+	[oneway] void dragExit( [in] DropTargetEvent dte );
+
+  	//-------------------------------------------------------------------------
+	/** Called when a drag operation is ongoing on the drop target.
+
+		@param dtde
+		The <type>DropTargetEvent</type>.
+	*/
+
+	[oneway] void dragOver( [in] DropTargetDragEvent dtde );
+
+  	//-------------------------------------------------------------------------
+	/** Called when the user has modified the drop gesture.	
+
+		@param dtde
+		The <type>DropTargetEvent</type>.
+	*/
+
+	[oneway] void dropActionChanged( [in] DropTargetDragEvent dtde );
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

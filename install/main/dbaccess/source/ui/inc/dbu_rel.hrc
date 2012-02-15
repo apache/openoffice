@@ -1,0 +1,46 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _DBU_REL_HRC_
+#define _DBU_REL_HRC_
+
+#ifndef _DBU_RESOURCE_HRC_
+#include "dbu_resource.hrc"
+#endif
+
+
+#define STR_QUERY_REL_EDIT_RELATION			RID_STR_REL_START
+#define STR_RELATIONDESIGN					RID_STR_REL_START + 1
+#define STR_RELATIONDESIGN_NOT_AVAILABLE	RID_STR_REL_START + 2
+#define STR_QUERY_REL_DELETE_WINDOW			RID_STR_REL_START + 3
+#define STR_QUERY_REL_EDIT          		RID_STR_REL_START + 4
+#define STR_QUERY_REL_CREATE    			RID_STR_REL_START + 5
+#define STR_QUERY_REL_COULD_NOT_CREATE    	RID_STR_REL_START + 6
+// please adjust checking before insert new strings
+
+#if STR_QUERY_REL_COULD_NOT_CREATE > RID_STR_REL_END
+#error Resource-Id Ueberlauf in #file, #line
+#endif
+
+#endif //_DBU_REL_HRC_
+
+

@@ -1,0 +1,81 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_frame_status_ItemState_idl__ 
+#define __com_sun_star_frame_status_ItemState_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module frame { module status {
+ 
+//============================================================================= 
+ 
+/** these constants describe a state of a <type>ItemStatus</type>.
+
+    @see ItemStatus
+    
+    @since OOo 2.0
+ */
+constants ItemState
+{
+	//-------------------------------------------------------------------------
+	/** specifies an unknown state.
+	 */
+	const short unknown        = 0;
+
+	//-------------------------------------------------------------------------
+	/** specifies that the property is currently disabled.
+	 */
+    const short disabled       = 1;
+
+	//-------------------------------------------------------------------------
+	/** specifies that the property is currently read-only.
+	 */
+    const short read_only      = 2;
+
+	//-------------------------------------------------------------------------
+	/** specifies that the property is currently in a don't care state.
+        
+        <p>
+        This is normally used if a selection provides more than one state 
+        for a property at the same time.
+        </p>
+	 */
+    const short dont_care      = 16;
+
+	//-------------------------------------------------------------------------
+    /** specifies that the property is currently in a default state.
+    */
+    const short default_value  = 32;
+
+	//-------------------------------------------------------------------------
+    /** specifies that the property is currently in a set state.
+    */
+    const short set            = 64;
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; };
+ 
+#endif 

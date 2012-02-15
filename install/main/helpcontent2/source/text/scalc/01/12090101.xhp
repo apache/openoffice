@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112090101xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Select Data Source</title>
+<filename>/text/scalc/01/12090101.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-11-11T15:15:36">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3143268" xml-lang="en-US" level="1" l10n="U" oldref="1">Select Data Source</paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="2">Select the database and the table or query containing the data that you want to use.</paragraph>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#dndq"/>
+</section>
+<paragraph role="heading" id="hd_id3154140" xml-lang="en-US" level="2" l10n="U" oldref="3">Selection</paragraph>
+<paragraph role="paragraph" id="par_id3125863" xml-lang="en-US" l10n="CHG" oldref="4"><ahelp hid=".">You can only select databases that are registered in %PRODUCTNAME.</ahelp> To register a data source, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Base - Databases</emph>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_DAPIDATA:LB_DATABASE" id="bm_id3154684" localize="false"/>
+<paragraph role="heading" id="hd_id3151041" xml-lang="en-US" level="3" l10n="U" oldref="5">Database</paragraph>
+<paragraph role="paragraph" id="par_id3156424" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SC:LISTBOX:RID_SCDLG_DAPIDATA:LB_DATABASE">Select the database that contains the data source that you want to use.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ComboBox:RID_SCDLG_DAPIDATA:CB_OBJECT" id="bm_id3151112" localize="false"/>
+<paragraph role="heading" id="hd_id3145364" xml-lang="en-US" level="3" l10n="U" oldref="7">Data source</paragraph>
+<paragraph role="paragraph" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SC:COMBOBOX:RID_SCDLG_DAPIDATA:CB_OBJECT">Select the data source that you want to use.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_DAPIDATA:LB_OBJTYPE" id="bm_id3153726" localize="false"/>
+<paragraph role="heading" id="hd_id3147428" xml-lang="en-US" level="3" l10n="U" oldref="9">Type</paragraph>
+<paragraph role="paragraph" id="par_id3150010" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SC:LISTBOX:RID_SCDLG_DAPIDATA:LB_OBJTYPE">Click the source type of for the selected data source.</ahelp> You can choose from four source types: "Table", "Query" and "SQL" or SQL (Native).</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3147348" xml-lang="en-US" l10n="U" oldref="11"><link href="text/scalc/01/12090102.xhp" name="Pivot table dialog">Pivot table dialog</link></paragraph>
+</section>
+</body>
+</helpdocument>

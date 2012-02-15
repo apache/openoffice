@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textswriter0106090000xml" indexer="include">
+<title id="tit" xml-lang="en-US">Convert Text to Table</title>
+<filename>/text/swriter/01/06090000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147402"><bookmark_value>converting; text, into tables</bookmark_value>
+<bookmark_value>text; converting to tables</bookmark_value>
+<bookmark_value>tables; converting to text</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConvertTableText" id="bm_id3342815" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConvertTableText" id="bm_id3146323" localize="false"/>
+<paragraph role="heading" id="hd_id3147402" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/06090000.xhp" name="Convert Text to Table">Convert Text to Table</link></paragraph>
+<paragraph role="paragraph" id="par_id3145829" xml-lang="en-US" l10n="U" oldref="2"><variable id="texttab"><ahelp hid=".uno:ConvertTableText">Converts the selected text into a table, or the selected table into text.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+<embed href="text/swriter/00/00000406.xhp#texttabelle"/>
+</section>
+<paragraph role="paragraph" id="par_id3150015" xml-lang="en-US" l10n="U" oldref="15">The options available in this dialog depending on the type of conversion.</paragraph>
+<paragraph role="heading" id="hd_id3145247" xml-lang="en-US" level="2" l10n="CHG" oldref="3">Separate text at</paragraph>
+<paragraph role="paragraph" id="par_id3148388" xml-lang="en-US" l10n="U" oldref="4">A separator, such as a tab, marks the column boundaries in the selected text. Each paragraph in the selection is converted into a row in the table. Similarly, when you convert a table into text, the column markers are changed to the character that you specify, and each row is converted into a separate paragraph.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_CONV_TEXT_TABLE:CB_TAB" id="bm_id3166468" localize="false"/>
+<paragraph role="heading" id="hd_id3150936" xml-lang="en-US" level="3" l10n="U" oldref="6">Tabs</paragraph>
+<paragraph role="paragraph" id="par_id3149027" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SW:RADIOBUTTON:DLG_CONV_TEXT_TABLE:CB_TAB">Converts the text to a table using tabs as column markers.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_CONV_TEXT_TABLE:CB_SEMI" id="bm_id3153722" localize="false"/>
+<paragraph role="heading" id="hd_id3147171" xml-lang="en-US" level="3" l10n="U" oldref="10">Semicolons</paragraph>
+<paragraph role="paragraph" id="par_id3147565" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SW:RADIOBUTTON:DLG_CONV_TEXT_TABLE:CB_SEMI">Converts the text to a table using semi-colons (;) as column markers.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_CONV_TEXT_TABLE:CB_PARA" id="bm_id3154638" localize="false"/>
+<paragraph role="heading" id="hd_id3151273" xml-lang="en-US" level="3" l10n="U" oldref="12">Paragraph</paragraph>
+<paragraph role="paragraph" id="par_id3154645" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SW:RADIOBUTTON:DLG_CONV_TEXT_TABLE:CB_PARA">Converts the text to a table using paragraphs as column markers.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_CONV_TEXT_TABLE:RB_OTHER" id="bm_id3153151" localize="false"/>
+<paragraph role="heading" id="hd_id3151184" xml-lang="en-US" level="3" l10n="U" oldref="16">Other:</paragraph>
+<paragraph role="paragraph" id="par_id3150256" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="SW:RADIOBUTTON:DLG_CONV_TEXT_TABLE:RB_OTHER">Converts the text to a table using the character that you type in the box as a column marker.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_CONV_TEXT_TABLE:ED_OTHER" id="bm_id3151168" localize="false"/>
+<paragraph role="heading" id="hd_id3149295" xml-lang="en-US" level="3" l10n="U" oldref="20">Text box</paragraph>
+<paragraph role="paragraph" id="par_id3151175" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SW:EDIT:DLG_CONV_TEXT_TABLE:ED_OTHER">Type the character that you want to use as a column marker.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_CONV_TEXT_TABLE:CB_KEEPCOLUMN" id="bm_id3154273" localize="false"/>
+<paragraph role="heading" id="hd_id3147508" xml-lang="en-US" level="3" l10n="CHG" oldref="18">Equal width for all columns</paragraph>
+<paragraph role="paragraph" id="par_id3154278" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SW:CHECKBOX:DLG_CONV_TEXT_TABLE:CB_KEEPCOLUMN">Creates columns of equal width, regardless of the position of the column marker.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_CONV_TEXT_TABLE:BT_AUTOFORMAT" id="bm_id3152939" localize="false"/>
+<paragraph role="heading" id="hd_id3150703" xml-lang="en-US" level="2" l10n="CHG" oldref="14">AutoFormat</paragraph>
+<paragraph role="paragraph" id="par_id31542781" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid=".">Opens the <emph>AutoFormat</emph> dialog, where you can select a predefined layout for table.</ahelp></paragraph>
+
+<paragraph role="heading" id="hd_id3154097" xml-lang="en-US" level="2" l10n="U" oldref="22">Options</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_CONV_TEXT_TABLE:CB_HEADER" id="bm_id3153528" localize="false"/>
+<paragraph role="heading" id="hd_id3149802" xml-lang="en-US" level="3" l10n="U" oldref="23">Heading</paragraph>
+<paragraph role="paragraph" id="par_id3153535" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SW:CHECKBOX:DLG_CONV_TEXT_TABLE:CB_HEADER">Formats the first row of the new table as a heading.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_CONV_TEXT_TABLE:CB_REPEAT_HEADER" id="bm_id3152962" localize="false"/>
+<paragraph role="heading" id="hd_id3150359" xml-lang="en-US" level="3" l10n="CHG" oldref="24">Repeat heading</paragraph>
+<paragraph role="paragraph" id="par_id3150973" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SW:CHECKBOX:DLG_CONV_TEXT_TABLE:CB_REPEAT_HEADER">Repeats the table header on each page that the table spans.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:DLG_CONV_TEXT_TABLE:NF_REPEAT_HEADER" id="bm_id6823328" localize="false"/>
+<paragraph role="heading" id="hd_id5971251" xml-lang="en-US" level="3" l10n="NEW">The first ... rows</paragraph>
+<paragraph role="paragraph" id="par_id4136478" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Repeats the first n rows as a header.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_CONV_TEXT_TABLE:CB_DONT_SPLIT" id="bm_id3147524" localize="false"/>
+<paragraph role="heading" id="hd_id3151315" xml-lang="en-US" level="3" l10n="CHG" oldref="25">Don't split table</paragraph>
+<paragraph role="paragraph" id="par_id3147530" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SW:CHECKBOX:DLG_CONV_TEXT_TABLE:CB_DONT_SPLIT">Does not divide the table across pages.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_CONV_TEXT_TABLE:CB_BORDER" id="bm_id3149123" localize="false"/>
+<paragraph role="heading" id="hd_id3154472" xml-lang="en-US" level="3" l10n="U" oldref="26">Border</paragraph>
+<paragraph role="paragraph" id="par_id3154570" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="SW:CHECKBOX:DLG_CONV_TEXT_TABLE:CB_BORDER">Adds a border to the table and the table cells.</ahelp></paragraph>
+</body>
+</helpdocument>

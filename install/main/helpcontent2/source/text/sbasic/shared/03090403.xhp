@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090403xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Declare Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090403.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-02-10T10:42:25">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="declare">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148473"><bookmark_value>Declare statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3148473" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090403.xhp" name="Declare Statement [Runtime]">Declare Statement [Runtime]</link></paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145316"><bookmark_value>DLL (Dynamic Link Library)</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3145316" xml-lang="en-US" l10n="CHG" oldref="2">Declares and defines a subroutine in a DLL file that you want to execute from $[officename] Basic.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U" oldref="3">See also: <link href="text/sbasic/shared/03090405.xhp" name="FreeLibrary">FreeLibrary</link></paragraph>
+<paragraph role="heading" id="hd_id3156344" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3148664" xml-lang="en-US" l10n="U" oldref="5">Declare {Sub | Function} Name Lib "Libname" [Alias "Aliasname"] [Parameter] [As Type]</paragraph>
+<paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="2" l10n="U" oldref="6">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3154140" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Name:</emph> A different name than defined in the DLL, to call the subroutine from $[officename] Basic.</paragraph>
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="9">
+<emph>Aliasname</emph>: Name of the subroutine as defined in the DLL.</paragraph>
+<paragraph role="paragraph" id="par_id3154684" xml-lang="en-US" l10n="U" oldref="10">
+<emph>Libname:</emph> File or system name of the DLL. This library is automatically loaded the first time the function is used.</paragraph>
+<paragraph role="paragraph" id="par_id3148452" xml-lang="en-US" l10n="U" oldref="11">
+<emph>Argumentlist:</emph> List of parameters representing arguments that are passed to the procedure when it is called. The type and number of parameters is dependent on the executed procedure.</paragraph>
+<paragraph role="paragraph" id="par_id3147289" xml-lang="en-US" l10n="U" oldref="12">
+<emph>Type:</emph> Defines the data type of the value that is returned by a function procedure. You can exclude this parameter if a type-declaration character is entered after the name.</paragraph>
+<paragraph role="warning" id="par_id3146922" xml-lang="en-US" l10n="U" oldref="13">To pass a parameter to a subroutine as a value instead of as a reference, the parameter must be indicated by the keyword <emph>ByVal</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3153951" xml-lang="en-US" level="2" l10n="U" oldref="14">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154320" xml-lang="en-US" l10n="U" oldref="15">Declare Sub MyMessageBeep Lib "user32.dll" Alias "MessageBeep" ( long )</paragraph>
+<paragraph role="paragraph" id="par_id3150417" xml-lang="en-US" l10n="U" oldref="17">Sub ExampleDeclare</paragraph>
+<paragraph role="paragraph" id="par_id3149959" xml-lang="en-US" l10n="U" oldref="18">Dim lValue As Long</paragraph>
+<paragraph role="paragraph" id="par_id3145647" xml-lang="en-US" l10n="U" oldref="19">lValue = 5000</paragraph>
+<paragraph role="paragraph" id="par_id3145801" xml-lang="en-US" l10n="U" oldref="20">MyMessageBeep( lValue )</paragraph>
+<paragraph role="paragraph" id="par_id3145253" xml-lang="en-US" l10n="U" oldref="21">FreeLibrary("user32.dll" )</paragraph>
+<paragraph role="paragraph" id="par_id3149402" xml-lang="en-US" l10n="U" oldref="22">End Sub</paragraph>
+</body>
+</helpdocument>

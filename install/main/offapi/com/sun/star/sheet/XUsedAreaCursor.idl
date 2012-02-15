@@ -1,0 +1,74 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_XUsedAreaCursor_idl__
+#define __com_sun_star_sheet_XUsedAreaCursor_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** provides methods to find the used area of the entire sheet.
+
+	<p>The used area is the smallest cell range that contains all cells
+	of the spreadsheet with any contents (values, text, formulas) or
+	visible formatting (borders and background color).</p>
+
+	@see com::sun::star::sheet::SheetCellCursor
+ */
+published interface XUsedAreaCursor: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+
+	/** points the cursor to the start of the used area.
+
+		@param bExpand
+			<TRUE/> = expands the current cursor range,
+			<FALSE/> = sets size of the cursor to a single cell.
+	 */
+	void gotoStartOfUsedArea( [in] boolean bExpand );
+
+	//-------------------------------------------------------------------------
+
+	/** points the cursor to the end of the used area.
+
+		@param bExpand
+			<TRUE/> = expands the current cursor range,
+			<FALSE/> = sets size of the cursor to a single cell.
+	 */
+	void gotoEndOfUsedArea( [in] boolean bExpand );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

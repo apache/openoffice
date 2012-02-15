@@ -1,0 +1,73 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include <svx/dialogs.hrc>
+#include <helpid.hrc>
+#include "lboxctrl.hrc"
+
+FloatingWindow RID_SVXTBX_UNDO_REDO_CTRL
+{
+	Pos = MAP_APPFONT ( 0 , 0 ) ;
+	Size = MAP_APPFONT ( 150 , 74 ) ;
+	HelpID = HID_SVXTBX_UNDO_REDO_CTRL ;
+	SysWin = TRUE;
+	Border = TRUE ;
+	Hide = TRUE ;
+	SVLook = TRUE ;
+	OutputSize = TRUE ;
+
+	ListBox LB_SVXTBX_UNDO_REDO_CTRL
+	{
+	    HelpID = "svx:ListBox:RID_SVXTBX_UNDO_REDO_CTRL:LB_SVXTBX_UNDO_REDO_CTRL";
+		Pos = MAP_APPFONT ( 0 , 0 ) ;
+		Size = MAP_APPFONT ( 150 , 60 ) ;
+		Border = TRUE ;
+		DropDown = FALSE ;
+		OutputSize = TRUE ;
+	};
+	FixedText FT_NUM_OPERATIONS
+	{
+		Pos = MAP_APPFONT ( 6 , 64 ) ;
+		Size = MAP_APPFONT ( 138 , 10 ) ;
+	};
+};
+
+String RID_SVXSTR_NUM_UNDO_ACTIONS
+{
+	Text[ en-US ] = "Actions to undo: $(ARG1)";
+};
+
+String RID_SVXSTR_NUM_UNDO_ACTION
+{
+    Text[ en-US ] = "Actions to undo: $(ARG1)" ;
+};
+
+String RID_SVXSTR_NUM_REDO_ACTIONS
+{
+	Text[ en-US ] = "Actions to redo: $(ARG1)";
+};
+
+String RID_SVXSTR_NUM_REDO_ACTION
+{
+	Text[ en-US ] = "Actions to redo: $(ARG1)";
+};

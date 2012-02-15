@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared01xformsdatanamexhp" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Form Namespaces</title>
+<filename>/text/shared/01/xformsdataname.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id8286080"><bookmark_value>deleting;namespaces in XForms</bookmark_value>
+<bookmark_value>organizing;namespaces in XForms</bookmark_value>
+<bookmark_value>namespace organization in XForms</bookmark_value>
+<bookmark_value>XForms;adding/editing/deleting/organizing namespaces</bookmark_value>
+</bookmark>
+  <comment>MW deleted "editing;" and "adding;" and added "XForms;"</comment>
+  <paragraph xml-lang="en-US" id="par_idN1053E" role="heading" level="1" l10n="NEW">Form Namespaces</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10542" role="paragraph" l10n="CHG"><ahelp hid=".">Use this dialog to organize namespaces. You can access this dialog through the Add Condition dialog of the Data Navigator.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_NAMESPACEITEM_LIST" id="bm_id8072450" localize="false"/>
+  <paragraph xml-lang="en-US" id="par_idN10561" role="heading" level="2" l10n="NEW">Namespaces</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10565" role="paragraph" l10n="NEW"><ahelp hid=".">Lists the currently defined namespaces for the form.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_NAMESPACE_ITEM:PB_ADD_NAMESPACE" id="bm_id5343485" localize="false"/>
+  <paragraph xml-lang="en-US" id="par_idN10568" role="heading" level="2" l10n="NEW">Add</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1056C" role="paragraph" l10n="NEW"><ahelp hid=".">Adds a new namespace to the list.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1056F" role="paragraph" l10n="NEW">Use the <emph>Add Namespace</emph> dialog to enter the Prefix and URL.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_NAMESPACE_ITEM:PB_EDIT_NAMESPACE" id="bm_id3851435" localize="false"/>
+  <paragraph xml-lang="en-US" id="par_idN10576" role="heading" level="2" l10n="NEW">Edit</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1057A" role="paragraph" l10n="NEW"><ahelp hid=".">Edits the selected namespace.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1057D" role="paragraph" l10n="NEW">Use the <emph>Edit Namespace</emph> dialog to edit the Prefix and URL.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_NAMESPACE_ITEM:PB_DELETE_NAMESPACE" id="bm_id2580034" localize="false"/>
+  <paragraph xml-lang="en-US" id="par_idN10584" role="heading" level="2" l10n="NEW">Delete</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10588" role="paragraph" l10n="NEW"><ahelp hid=".">Deletes the selected namespace.</ahelp></paragraph>
+ </body>
+</helpdocument>

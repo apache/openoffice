@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguideautoformatxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Using AutoFormat for Tables</title>
+         <filename>/text/scalc/guide/autoformat.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155132"><bookmark_value>tables; AutoFormat function</bookmark_value>
+      <bookmark_value>defining;AutoFormat function for tables</bookmark_value>
+      <bookmark_value>AutoFormat function</bookmark_value>
+      <bookmark_value>formats; automatically formatting spreadsheets</bookmark_value>
+      <bookmark_value>automatic formatting in spreadsheets</bookmark_value>
+      <bookmark_value>sheets;AutoFormat function</bookmark_value>
+</bookmark><comment>MW deleted "applying;"</comment><comment>MW made "AutoFormat function;" a one level entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3155132" role="heading" level="1" l10n="U"
+                 oldref="11"><variable id="autoformat"><link href="text/scalc/guide/autoformat.xhp" name="Using AutoFormat for Tables">Applying Automatic Formatting to a Selected Cell Range</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149401" role="paragraph" l10n="CHG" oldref="12">You can use the AutoFormat feature to quickly apply a format to a sheet or a selected cell range.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10702" role="heading" level="2" l10n="NEW">To Apply an AutoFormat to a Sheet or Selected Cell Range</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106CE" role="listitem" l10n="NEW">Select the cells, including the column and row headers, that you want to format.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106D5" role="listitem" l10n="NEW">Choose <item type="menuitem">Format - AutoFormat</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151242" role="listitem" l10n="CHG" oldref="27">To select which properties to include in an AutoFormat, click <emph>More</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10715" role="listitem" l10n="NEW">Click <emph>OK</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN1075D" role="listitem" l10n="NEW">The format is applied to the selected range of cells.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3149210" role="note" l10n="U" oldref="14">If you do not see any change in color of the cell contents, choose <item type="menuitem">View - Value Highlighting</item>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155379" role="heading" level="2" l10n="U"
+                 oldref="22">To Define an AutoFormat for Spreadsheets</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148868" role="paragraph" l10n="U" oldref="26">You can define a new AutoFormat that is available to all spreadsheets.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152985" role="listitem" l10n="CHG" oldref="23">Format a sheet.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145384" role="listitem" l10n="CHG" oldref="24">Choose <item type="menuitem">Edit - Select All</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153815" role="listitem" l10n="U" oldref="25">Choose <item type="menuitem">Format - AutoFormat</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107A9" role="listitem" l10n="NEW">Click <emph>Add</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10760" role="listitem" l10n="NEW">In the <emph>Name</emph> box of the <emph>Add AutoFormat</emph> dialog, enter a name for the format.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107C3" role="listitem" l10n="NEW">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id3159203" role="paragraph" l10n="U" oldref="28"><link href="text/scalc/01/05110000.xhp" name="Format - AutoFormat">Format - AutoFormat</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

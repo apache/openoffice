@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0202140000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Increase Indent</title>
+         <filename>/text/shared/02/02140000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="einzerhoehen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148520"><bookmark_value>paragraphs; increasing indents of</bookmark_value></bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:IncrementIndent" id="bm_id636827" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:IncrementIndent" id="bm_id3151100" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148520" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/02/02140000.xhp" name="Increase Indent">Increase Indent</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151330" role="paragraph" l10n="CHG" oldref="2"><ahelp hid=".">Click the Increase Indent icon to increase the left indent of the current paragraph or cell content and set it to the next default tab position.</ahelp></paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3149798" role="paragraph" l10n="CHG" oldref="17"><switchinline select="appl"><caseinline select="WRITER">If several paragraphs are selected, the indentation of all selected paragraphs is increased.
+</caseinline><caseinline select="CALC">The cell content refers to the current value under <link href="text/shared/01/05340300.xhp" name="Format - Cell - Alignment"><emph>Format - Cell - Alignment</emph></link>.
+</caseinline></switchinline></paragraph>
+      <section id="syeinzerhoehen">
+         <table id="tbl_id3155535">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3147576" role="paragraph" l10n="E">
+<image id="img_id3149388" src="res/commandimagelist/sc_incrementindent.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3149388">Icon</alt></image></paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3166460" role="paragraph" l10n="U" oldref="4">Increase Indent</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3152996" role="paragraph" l10n="CHG" oldref="5"><switchinline select="appl"><caseinline select="WRITER">Click the <emph>Increase Indent</emph> icon while holding down the <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>key to move the indenting of the selected paragraph by the default tab distance set under <link href="text/shared/optionen/01040200.xhp" name="Writer - General"><emph>%PRODUCTNAME Writer - General</emph></link> in the Options dialog box.</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3157910" role="paragraph" l10n="U" oldref="6"><switchinline select="appl"><caseinline select="WRITER">Example:</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153698" role="paragraph" l10n="U" oldref="7"><switchinline select="appl"><caseinline select="WRITER">The indents of two paragraphs are moved with the <emph>Increase Indent</emph> function to a standard tab distance of 2 cm:</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="WRITER">
+<table id="tbl_id3150943">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154047" role="paragraph" l10n="U" oldref="8">Original indent</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148492" role="paragraph" l10n="U" oldref="9">Indent increased</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153126" role="paragraph" l10n="U" oldref="10">Indent increased by the amount with the <switchinline select="sys"><caseinline select="MAC">Command key</caseinline><defaultinline>Ctrl key</defaultinline></switchinline></paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155922" role="paragraph" l10n="U" oldref="11">0.25 cm</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147265" role="paragraph" l10n="U" oldref="12">2 cm</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149669" role="paragraph" l10n="U" oldref="13">2.25 cm</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3161657" role="paragraph" l10n="U" oldref="14">0.5 cm</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150791" role="paragraph" l10n="U" oldref="15">2 cm</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154138" role="paragraph" l10n="U" oldref="16">2.5 cm</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+</case>
+</switch>
+</body>
+</helpdocument>

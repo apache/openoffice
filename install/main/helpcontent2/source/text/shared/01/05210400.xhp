@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0105210400xml" indexer="include">
+<title id="tit" xml-lang="en-US">Hatching</title>
+<filename>/text/shared/01/05210400.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="schraffuren">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149962"><bookmark_value>hatching</bookmark_value>
+<bookmark_value>areas; hatched/dotted</bookmark_value>
+<bookmark_value>dotted areas</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_AREA_HATCH" id="bm_id3155620" localize="false"/>
+<paragraph role="heading" id="hd_id3149962" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05210400.xhp" name="Hatching">Hatching</link></paragraph>
+<paragraph role="paragraph" id="par_id3144436" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_AREA_HATCH">Set the properties of a hatching pattern, or save and load hatching lists.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040502.xhp#schraffur"/>
+</section>
+<paragraph role="heading" id="hd_id3156042" xml-lang="en-US" level="2" l10n="U" oldref="3">Properties</paragraph>
+<paragraph role="paragraph" id="par_id3147291" xml-lang="en-US" l10n="U" oldref="4">Define or modify a hatching pattern.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_HATCH:MTR_FLD_DISTANCE" id="bm_id3155392" localize="false"/>
+<paragraph role="heading" id="hd_id3147834" xml-lang="en-US" level="3" l10n="U" oldref="5">Spacing</paragraph>
+<paragraph role="paragraph" id="par_id3147010" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_HATCH:MTR_FLD_DISTANCE">Enter the amount of space that you want to have between the hatch lines.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_HATCH:MTR_FLD_ANGLE" id="bm_id3154289" localize="false"/>
+<paragraph role="heading" id="hd_id3155355" xml-lang="en-US" level="3" l10n="U" oldref="7">Angle</paragraph>
+<paragraph role="paragraph" id="par_id3156410" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_HATCH:MTR_FLD_ANGLE">Enter the rotation angle for the hatch lines, or click a position in the angle grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_TPHATCH_CTRL" id="bm_id3150355" localize="false"/>
+<paragraph role="heading" id="hd_id3156113" xml-lang="en-US" level="3" l10n="U" oldref="9">Angle grid</paragraph>
+<paragraph role="paragraph" id="par_id3147242" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_TPHATCH_CTRL">Click a position in the grid to define the rotation angle for the hatch lines.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_HATCH:LB_LINE_TYPE" id="bm_id3154898" localize="false"/>
+<paragraph role="heading" id="hd_id3155449" xml-lang="en-US" level="3" l10n="U" oldref="21">Line type</paragraph>
+<paragraph role="paragraph" id="par_id3152909" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_HATCH:LB_LINE_TYPE">Select the type of hatch lines that you want to use.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_HATCH:LB_LINE_COLOR" id="bm_id3154307" localize="false"/>
+<paragraph role="heading" id="hd_id3150503" xml-lang="en-US" level="3" l10n="U" oldref="23">Line color</paragraph>
+<paragraph role="paragraph" id="par_id3149578" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_HATCH:LB_LINE_COLOR">Select the color of the hatch lines.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3159147" xml-lang="en-US" level="2" l10n="U" oldref="11">Hatches List</paragraph>
+<paragraph role="paragraph" id="par_id3149955" xml-lang="en-US" l10n="U" oldref="12">Lists the available hatching patterns. You can also modify or create your own hatching pattern. To save the list, click the <emph>Save Hatches List</emph> button. To display a different list, click the <emph>Load Hatches List</emph> button.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_HATCH:LB_HATCHINGS" id="bm_id3153699" localize="false"/>
+<paragraph role="heading" id="hd_id3150670" xml-lang="en-US" level="3" l10n="U" oldref="13">Hatches list</paragraph>
+<paragraph role="paragraph" id="par_id3144438" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_HATCH:LB_HATCHINGS">Lists the available hatching patterns. Click the hatching pattern that you want to apply, and then click <emph>OK</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_HATCH:BTN_ADD" id="bm_id3155389" localize="false"/>
+<paragraph role="heading" id="hd_id3153823" xml-lang="en-US" level="3" l10n="U" oldref="15">Add</paragraph>
+<paragraph role="paragraph" id="par_id3148924" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_HATCH:BTN_ADD">Adds a custom hatching pattern to the current list. Specify the properties of your hatching pattern, and then click this button.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_HATCH:BTN_MODIFY" id="bm_id3146848" localize="false"/>
+<paragraph role="heading" id="hd_id3147620" xml-lang="en-US" level="3" l10n="U" oldref="17">Modify</paragraph>
+<paragraph role="paragraph" id="par_id3156023" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_HATCH:BTN_MODIFY">Applies the current hatching properties to the selected hatching pattern. If you want, you can save the pattern under a different name.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#loeschen"/>
+<embed href="text/shared/00/00000001.xhp#vorschau"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HATCH:BTN_LOAD" id="bm_id3153896" localize="false"/>
+<paragraph role="heading" id="hd_id3147304" xml-lang="en-US" level="2" l10n="U" oldref="25">Load Hatches List</paragraph>
+<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_HATCH:BTN_LOAD">Loads a different list of hatching patterns.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HATCH:BTN_SAVE" id="bm_id3156435" localize="false"/>
+<paragraph role="heading" id="hd_id3154347" xml-lang="en-US" level="2" l10n="U" oldref="27">Save Hatches List</paragraph>
+<paragraph role="paragraph" id="par_id3152811" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_HATCH:BTN_SAVE">Saves the current list of hatching patterns, so that you can load it later.</ahelp></paragraph>
+</body>
+</helpdocument>

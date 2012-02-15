@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0104060118xml" indexer="include">
+<title id="tit" xml-lang="en-US">Financial Functions Part Three</title>
+<filename>/text/scalc/01/04060118.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3146780" xml-lang="en-US" level="1" l10n="U" oldref="1">Financial Functions Part Three</paragraph>
+<sort>
+<section id="oddfprice">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145112"><bookmark_value>ODDFPRICE function</bookmark_value>
+<bookmark_value>prices;securities with irregular first interest date</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDFPRICE" id="bm_id3146107" localize="false"/>
+<paragraph role="heading" id="hd_id3145112" xml-lang="en-US" level="2" oldref="71">ODDFPRICE</paragraph>
+<paragraph role="paragraph" id="par_id3147250" xml-lang="en-US" l10n="U" oldref="72"><ahelp hid="HID_AAI_FUNC_ODDFPRICE">Calculates the price per 100 currency units par value of a security, if the first interest date falls irregularly.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153074" xml-lang="en-US" level="3" l10n="U" oldref="73">Syntax</paragraph>
+<paragraph role="code" id="par_id3146098" xml-lang="en-US" l10n="U" oldref="74">ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3153337" xml-lang="en-US" l10n="U" oldref="75">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3149051" xml-lang="en-US" l10n="U" oldref="76">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3147297" xml-lang="en-US" l10n="U" oldref="77">
+<emph>Issue</emph> is the date of issue of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3150393" xml-lang="en-US" l10n="U" oldref="78">
+<emph>FirstCoupon</emph> is the first interest date of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3147402" xml-lang="en-US" l10n="U" oldref="79">
+<emph>Rate</emph> is the annual rate of interest.</paragraph>
+<paragraph role="paragraph" id="par_id3151387" xml-lang="en-US" l10n="U" oldref="80">
+<emph>Yield</emph> is the annual yield of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3153023" xml-lang="en-US" l10n="U" oldref="81">
+<emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
+<paragraph role="paragraph" id="par_id3150539" xml-lang="en-US" l10n="U" oldref="82">
+<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+</section>
+<section id="oddfyield">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157871"><bookmark_value>ODDFYIELD function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDFYIELD" id="bm_id3149723" localize="false"/>
+<paragraph role="heading" id="hd_id3157871" xml-lang="en-US" level="2" oldref="87">ODDFYIELD</paragraph>
+<paragraph role="paragraph" id="par_id3147414" xml-lang="en-US" l10n="U" oldref="88"><ahelp hid="HID_AAI_FUNC_ODDFYIELD">Calculates the yield of a security if the first interest date falls irregularly.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150651" xml-lang="en-US" level="3" l10n="U" oldref="89">Syntax</paragraph>
+<paragraph role="code" id="par_id3152982" xml-lang="en-US" l10n="U" oldref="90">ODDFYIELD(Settlement; Maturity; Issue; FirstCoupon; Rate; Price; Redemption; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3157906" xml-lang="en-US" l10n="U" oldref="91">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3150026" xml-lang="en-US" l10n="U" oldref="92">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3149012" xml-lang="en-US" l10n="U" oldref="93">
+<emph>Issue</emph> is the date of issue of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3148725" xml-lang="en-US" l10n="U" oldref="94">
+<emph>FirstCoupon</emph> is the first interest period of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3150465" xml-lang="en-US" l10n="U" oldref="95">
+<emph>Rate</emph> is the annual rate of interest.</paragraph>
+<paragraph role="paragraph" id="par_id3146940" xml-lang="en-US" l10n="U" oldref="96">
+<emph>Price</emph> is the price of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3149893" xml-lang="en-US" l10n="U" oldref="97">
+<emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
+<paragraph role="paragraph" id="par_id3148888" xml-lang="en-US" l10n="U" oldref="98">
+<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+</section>
+<section id="oddlprice">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153933"><bookmark_value>ODDLPRICE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDLPRICE" id="bm_id3145596" localize="false"/>
+<paragraph role="heading" id="hd_id3153933" xml-lang="en-US" level="2" oldref="103">ODDLPRICE</paragraph>
+<paragraph role="paragraph" id="par_id3145145" xml-lang="en-US" l10n="U" oldref="104"><ahelp hid="HID_AAI_FUNC_ODDLPRICE">Calculates the price per 100 currency units par value of a security, if the last interest date falls irregularly.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3152784" xml-lang="en-US" level="3" l10n="U" oldref="105">Syntax</paragraph>
+<paragraph role="code" id="par_id3155262" xml-lang="en-US" l10n="U" oldref="106">ODDLPRICE(Settlement; Maturity; LastInterest; Rate; Yield; Redemption; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3149689" xml-lang="en-US" l10n="U" oldref="107">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3148753" xml-lang="en-US" l10n="U" oldref="108">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3150861" xml-lang="en-US" l10n="U" oldref="109">
+<emph>LastInterest</emph> is the last interest date of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3155831" xml-lang="en-US" l10n="U" oldref="110">
+<emph>Rate</emph> is the annual rate of interest.</paragraph>
+<paragraph role="paragraph" id="par_id3153328" xml-lang="en-US" l10n="U" oldref="111">
+<emph>Yield</emph> is the annual yield of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3149186" xml-lang="en-US" l10n="U" oldref="112">
+<emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
+<paragraph role="paragraph" id="par_id3149726" xml-lang="en-US" l10n="U" oldref="113">
+<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3153111" xml-lang="en-US" level="3" l10n="U" oldref="114">Example</paragraph>
+<paragraph role="paragraph" id="par_id3152999" xml-lang="en-US" l10n="U" oldref="115">Settlement date: February 7 1999, maturity date: June 15 1999, last interest: October 15 1998. Interest rate: 3.75 per cent, yield: 4.05 per cent, redemption value: 100 currency units, frequency of payments: half-yearly = 2, basis: = 0</paragraph>
+<paragraph role="paragraph" id="par_id3148567" xml-lang="en-US" l10n="U" oldref="116">The price per 100 currency units per value of a security, which has an irregular last interest date, is calculated as follows:</paragraph>
+<paragraph role="paragraph" id="par_id3150332" xml-lang="en-US" l10n="CHG" oldref="117">=ODDLPRICE("1999-02-07";"1999-06-15";"1998-10-15"; 0.0375; 0.0405;100;2;0) returns 99.87829.</paragraph>
+</section>
+<section id="oddlyield">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153564"><bookmark_value>ODDLYIELD function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDLYIELD" id="bm_id3153732" localize="false"/>
+<paragraph role="heading" id="hd_id3153564" xml-lang="en-US" level="2" oldref="118">ODDLYIELD</paragraph>
+<paragraph role="paragraph" id="par_id3158002" xml-lang="en-US" l10n="U" oldref="119"><ahelp hid="HID_AAI_FUNC_ODDLYIELD">Calculates the yield of a security if the last interest date falls irregularly.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147366" xml-lang="en-US" level="3" l10n="U" oldref="120">Syntax</paragraph>
+<paragraph role="code" id="par_id3150018" xml-lang="en-US" l10n="U" oldref="121">ODDLYIELD(Settlement; Maturity; LastInterest; Rate; Price; Redemption; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3159132" xml-lang="en-US" l10n="U" oldref="122">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3150134" xml-lang="en-US" l10n="U" oldref="123">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3145245" xml-lang="en-US" l10n="U" oldref="124">
+<emph>LastInterest</emph> is the last interest date of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3151014" xml-lang="en-US" l10n="U" oldref="125">
+<emph>Rate</emph> is the annual rate of interest.</paragraph>
+<paragraph role="paragraph" id="par_id3149003" xml-lang="en-US" l10n="U" oldref="126">
+<emph>Price</emph> is the price of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3148880" xml-lang="en-US" l10n="U" oldref="127">
+<emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
+<paragraph role="paragraph" id="par_id3155622" xml-lang="en-US" l10n="U" oldref="128">
+<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3145303" xml-lang="en-US" level="3" l10n="U" oldref="129">Example</paragraph>
+<paragraph role="paragraph" id="par_id3145350" xml-lang="en-US" l10n="U" oldref="130">Settlement date: April 20 1999, maturity date: June 15 1999, last interest: October 15 1998. Interest rate: 3.75 per cent, price: 99.875 currency units, redemption value: 100 currency units, frequency of payments: half-yearly = 2, basis: = 0</paragraph>
+<paragraph role="paragraph" id="par_id3157990" xml-lang="en-US" l10n="U" oldref="131">The yield of the security, that has an irregular last interest date, is calculated as follows:</paragraph>
+<paragraph role="paragraph" id="par_id3150572" xml-lang="en-US" l10n="CHG" oldref="132">=ODDLYIELD("1999-04-20";"1999-06-15"; "1998-10-15"; 0.0375; 99.875; 100;2;0) returns 0.044873 or 4.4873%.</paragraph>
+</section>
+<section id="vdb">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148768"><bookmark_value>calculating;variable declining depreciations</bookmark_value>
+<bookmark_value>depreciations;variable declining</bookmark_value>
+<bookmark_value>VDB function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VDB" id="bm_id3145624" localize="false"/>
+<paragraph role="heading" id="hd_id3148768" xml-lang="en-US" level="2" oldref="222">VDB</paragraph>
+<paragraph role="paragraph" id="par_id3154636" xml-lang="en-US" l10n="U" oldref="223"><ahelp hid="HID_FUNC_VDB">Returns the depreciation of an asset for a specified or partial period using a variable declining balance method.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155519" xml-lang="en-US" level="3" l10n="U" oldref="224">Syntax</paragraph>
+<paragraph role="code" id="par_id3149025" xml-lang="en-US" l10n="U" oldref="225">VDB(Cost; Salvage; Life; S; End; Factor; Type)</paragraph>
+<paragraph role="paragraph" id="par_id3150692" xml-lang="en-US" l10n="U" oldref="226">
+<emph>Cost</emph> is the initial value of an asset.</paragraph>
+<paragraph role="paragraph" id="par_id3155369" xml-lang="en-US" l10n="U" oldref="227">
+<emph>Salvage</emph> is the value of an asset at the end of the depreciation.</paragraph>
+<paragraph role="paragraph" id="par_id3154954" xml-lang="en-US" l10n="U" oldref="228">
+<emph>Life</emph> is the depreciation duration of the asset.</paragraph>
+<paragraph role="paragraph" id="par_id3152817" xml-lang="en-US" l10n="U" oldref="229">
+<emph>S</emph> is the start of the depreciation. A must be entered in the same date unit as the duration.</paragraph>
+<paragraph role="paragraph" id="par_id3153221" xml-lang="en-US" l10n="U" oldref="230">
+<emph>End</emph> is the end of the depreciation.</paragraph>
+<paragraph role="paragraph" id="par_id3147536" xml-lang="en-US" l10n="CHG" oldref="231">
+<emph>Factor</emph> (optional) is the depreciation factor. Factor = 2 is double rate depreciation.</paragraph>
+<paragraph role="paragraph" id="par_id3154865" xml-lang="en-US" l10n="CHG" oldref="232">
+<emph>Type </emph>is an optional parameter. Type = 1 means a switch to linear depreciation. In Type = 0 no switch is made.</paragraph>
+<paragraph role="paragraph" id="par_idN10A0D" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3148429" xml-lang="en-US" level="3" l10n="U" oldref="233">Example</paragraph>
+<paragraph role="paragraph" id="par_id3153927" xml-lang="en-US" l10n="U" oldref="234">What is the declining-balance double-rate depreciation for a period if the initial cost is 35,000 currency units and the value at the end of the depreciation is 7,500 currency units. The depreciation period is 3 years. The depreciation from the 10th to the 20th period is calculated.</paragraph>
+<paragraph role="paragraph" id="par_id3155991" xml-lang="en-US" l10n="U" oldref="235">
+<item type="input">=VDB(35000;7500;36;10;20;2)</item> = 8603.80 currency units. The depreciation during the period between the 10th and the 20th period is 8,603.80 currency units.</paragraph>
+</section>
+<section id="xirr">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147485"><bookmark_value>calculating;internal rates of return, irregular payments</bookmark_value>
+<bookmark_value>internal rates of return;irregular payments</bookmark_value>
+<bookmark_value>XIRR function</bookmark_value>
+</bookmark><comment>mw changed "calculating;..." and "internal rates of return"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_XIRR" id="bm_id3083443" localize="false"/>
+<paragraph role="heading" id="hd_id3147485" xml-lang="en-US" level="2" oldref="193">XIRR</paragraph>
+<paragraph role="paragraph" id="par_id3145614" xml-lang="en-US" l10n="U" oldref="194"><ahelp hid="HID_AAI_FUNC_XIRR">Calculates the internal rate of return for a list of payments which take place on different dates.</ahelp> The calculation is based on a 365 days per year basis, ignoring leap years.</paragraph>
+<paragraph role="paragraph" id="par_idN10E62" xml-lang="en-US">If the payments take place at regular intervals, use the IRR function.</paragraph>
+<paragraph role="heading" id="hd_id3146149" xml-lang="en-US" level="3" l10n="U" oldref="195">Syntax</paragraph>
+<paragraph role="code" id="par_id3149826" xml-lang="en-US" l10n="U" oldref="196">XIRR(Values; Dates; Guess)</paragraph>
+<paragraph role="paragraph" id="par_id3163821" xml-lang="en-US" l10n="U" oldref="197">
+<emph>Values</emph> and <emph>Dates</emph> refer to a series of payments and the series of associated date values. The first pair of dates defines the start of the payment plan. All other date values must be later, but need not be in any order. The series of values must contain at least one negative and one positive value (receipts and deposits).</paragraph>
+<paragraph role="paragraph" id="par_id3149708" xml-lang="en-US" l10n="U" oldref="198">
+<emph>Guess</emph> (optional) is a guess that can be input for the internal rate of return. The default is 10%.</paragraph>
+<paragraph role="heading" id="hd_id3145085" xml-lang="en-US" level="3" l10n="U" oldref="199">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149273" xml-lang="en-US" l10n="U" oldref="200">Calculation of the internal rate of return for the following five payments:</paragraph>
+<table id="tbl_id3152970">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155838" xml-lang="en-US" l10n="U" oldref="305">A</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152934" xml-lang="en-US" l10n="U" oldref="306">B</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154638" xml-lang="en-US" l10n="U" oldref="307">C</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147083" xml-lang="en-US" l10n="U" oldref="308">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151187" xml-lang="en-US" l10n="CHG" oldref="309">2001-01-01</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145212" xml-lang="en-US" l10n="U" oldref="201">-<item type="input">10000</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3146856" xml-lang="en-US" l10n="U" oldref="202">
+<item type="input">Received</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153277" xml-lang="en-US" l10n="U" oldref="310">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154052" xml-lang="en-US" l10n="CHG" oldref="203">2001-01-02</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151297" xml-lang="en-US" l10n="U" oldref="204">
+<item type="input">2000</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149985" xml-lang="en-US" l10n="U" oldref="205">
+<item type="input">Deposited</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154744" xml-lang="en-US" l10n="U" oldref="311">3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153151" xml-lang="en-US" l10n="CHG" oldref="206">2001-03-15</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145657" xml-lang="en-US" l10n="U" oldref="207">2500</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155101" xml-lang="en-US" l10n="U" oldref="312">4</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3146894" xml-lang="en-US" l10n="CHG" oldref="208">2001-05-12</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3143231" xml-lang="en-US" l10n="U" oldref="209">5000</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3156012" xml-lang="en-US" l10n="U" oldref="313">5</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149758" xml-lang="en-US" l10n="CHG" oldref="210">2001-08-10</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147495" xml-lang="en-US" l10n="U" oldref="211">1000</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3152793" xml-lang="en-US" l10n="U" oldref="212">=XIRR(B1:B5; A1:A5; 0.1) returns 0.1828.</paragraph>
+</section>
+<section id="xnpv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149198"><bookmark_value>XNPV function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_XNPV" id="bm_id3151172" localize="false"/>
+<paragraph role="heading" id="hd_id3149198" xml-lang="en-US" level="2" oldref="213">XNPV</paragraph>
+<paragraph role="paragraph" id="par_id3153904" xml-lang="en-US" l10n="U" oldref="214"><ahelp hid="HID_AAI_FUNC_XNPV">Calculates the capital value (net present value)for a list of payments which take place on different dates.</ahelp> The calculation is based on a 365 days per year basis, ignoring leap years.</paragraph>
+<paragraph role="paragraph" id="par_idN11138" xml-lang="en-US">If the payments take place at regular intervals, use the NPV function.</paragraph>
+<paragraph role="heading" id="hd_id3155323" xml-lang="en-US" level="3" l10n="U" oldref="215">Syntax</paragraph>
+<paragraph role="code" id="par_id3150117" xml-lang="en-US" l10n="U" oldref="216">XNPV(Rate; Values; Dates)</paragraph>
+<paragraph role="paragraph" id="par_id3153100" xml-lang="en-US" l10n="U" oldref="217">
+<emph>Rate</emph> is the internal rate of return for the payments.</paragraph>
+<paragraph role="paragraph" id="par_id3155395" xml-lang="en-US" l10n="U" oldref="218">
+<emph>Values</emph> and <emph>Dates</emph> refer to a series of payments and the series of associated date values. The first pair of dates defines the start of the payment plan. All other date values must be later, but need not be in any order. The series of values must contain at least one negative and one positive value (receipts and deposits)</paragraph>
+<paragraph role="heading" id="hd_id3148832" xml-lang="en-US" level="3" l10n="U" oldref="219">Example</paragraph>
+<paragraph role="paragraph" id="par_id3150525" xml-lang="en-US" l10n="U" oldref="220">Calculation of the net present value for the above-mentioned five payments for a notional internal rate of return of 6%.</paragraph>
+<paragraph role="paragraph" id="par_id3149910" xml-lang="en-US" l10n="U" oldref="221">
+<item type="input">=XNPV(0.06;B1:B5;A1:A5)</item> returns 323.02.</paragraph>
+</section>
+<section id="rri">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148822"><bookmark_value>calculating;rates of return</bookmark_value>
+<bookmark_value>RRI function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZGZ" id="bm_id3146996" localize="false"/>
+<paragraph role="heading" id="hd_id3148822" xml-lang="en-US" level="2" oldref="237">RRI</paragraph>
+<paragraph role="paragraph" id="par_id3154293" xml-lang="en-US" l10n="U" oldref="238"><ahelp hid="HID_FUNC_ZGZ">Calculates the interest rate resulting from the profit (return) of an investment.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148444" xml-lang="en-US" level="3" l10n="U" oldref="239">Syntax</paragraph>
+<paragraph role="code" id="par_id3148804" xml-lang="en-US" l10n="U" oldref="240">RRI(P; PV; FV)</paragraph>
+<paragraph role="paragraph" id="par_id3154901" xml-lang="en-US" l10n="U" oldref="241">
+<emph>P</emph> is the number of periods needed for calculating the interest rate.</paragraph>
+<paragraph role="paragraph" id="par_id3159149" xml-lang="en-US" l10n="U" oldref="242">
+<emph>PV</emph> is the present (current) value. The cash value is the deposit of cash or the current cash value of an allowance in kind. As a deposit value a positive value must be entered; the deposit must not be 0 or &lt;0.</paragraph>
+<paragraph role="paragraph" id="par_id3149771" xml-lang="en-US" l10n="U" oldref="243">
+<emph>FV</emph> determines what is desired as the cash value of the deposit.</paragraph>
+<paragraph role="heading" id="hd_id3148941" xml-lang="en-US" level="3" l10n="U" oldref="244">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154212" xml-lang="en-US" l10n="U" oldref="245">For four periods (years) and a cash value of 7,500 currency units, the interest rate of the return is to be calculated if the future value is 10,000 currency units.</paragraph>
+<paragraph role="paragraph" id="par_id3150775" xml-lang="en-US" l10n="U" oldref="246">
+<item type="input">=RRI(4;7500;10000)</item> = 7.46 %</paragraph>
+<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="U" oldref="247">The interest rate must be 7.46 % so that 7,500 currency units will become 10,000 currency units.</paragraph>
+</section>
+<section id="rate">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154267"><bookmark_value>calculating;constant interest rates</bookmark_value>
+<bookmark_value>constant interest rates</bookmark_value>
+<bookmark_value>RATE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZINS" id="bm_id3153581" localize="false"/>
+<paragraph role="heading" id="hd_id3154267" xml-lang="en-US" level="2" oldref="249">RATE</paragraph>
+<paragraph role="paragraph" id="par_id3151052" xml-lang="en-US" l10n="U" oldref="250"><ahelp hid="HID_FUNC_ZINS">Returns the constant interest rate per period of an annuity.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154272" xml-lang="en-US" level="3" l10n="U" oldref="251">Syntax</paragraph>
+<paragraph role="code" id="par_id3158423" xml-lang="en-US" l10n="U" oldref="252">RATE(NPer; Pmt; PV; FV; Type; Guess)</paragraph>
+<paragraph role="paragraph" id="par_id3148910" xml-lang="en-US" l10n="U" oldref="253">
+<emph>NPer</emph> is the total number of periods, during which payments are made (payment period).</paragraph>
+<paragraph role="paragraph" id="par_id3148925" xml-lang="en-US" l10n="U" oldref="254">
+<emph>Pmt</emph> is the constant payment (annuity) paid during each period.</paragraph>
+<paragraph role="paragraph" id="par_id3149160" xml-lang="en-US" l10n="U" oldref="255">
+<emph>PV</emph> is the cash value in the sequence of payments.</paragraph>
+<paragraph role="paragraph" id="par_id3166456" xml-lang="en-US" l10n="U" oldref="256">
+<emph>FV</emph> (optional) is the future value, which is reached at the end of the periodic payments.</paragraph>
+<paragraph role="paragraph" id="par_id3153243" xml-lang="en-US" l10n="U" oldref="257">
+<emph>Type</emph> (optional) is the due date of the periodic payment, either at the beginning or at the end of a period.</paragraph>
+<paragraph role="paragraph" id="par_id3146949" xml-lang="en-US" l10n="U" oldref="258">
+<emph>Guess</emph> (optional) determines the estimated value of the interest with iterative calculation.</paragraph>
+<paragraph role="paragraph" id="par_idN10E2A" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3149791" xml-lang="en-US" level="3" l10n="U" oldref="259">Example</paragraph>
+<paragraph role="paragraph" id="par_id3150706" xml-lang="en-US" l10n="U" oldref="260">What is the constant interest rate for a payment period of 3 periods if 10 currency units are paid regularly and the present cash value is 900 currency units.</paragraph>
+<paragraph role="paragraph" id="par_id3155586" xml-lang="en-US" l10n="U" oldref="261">
+<item type="input">=RATE(3;10;900)</item> = -121% The interest rate is therefore 121%.</paragraph>
+</section>
+<section id="intrate">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149106"><bookmark_value>INTRATE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_INTRATE" id="bm_id3152944" localize="false"/>
+<paragraph role="heading" id="hd_id3149106" xml-lang="en-US" level="2" oldref="60">INTRATE</paragraph>
+<paragraph role="paragraph" id="par_id3149918" xml-lang="en-US" l10n="U" oldref="61"><ahelp hid="HID_AAI_FUNC_INTRATE">Calculates the annual interest rate that results when a security (or other item) is purchased at an investment value and sold at a redemption value. No interest is paid.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149974" xml-lang="en-US" level="3" l10n="U" oldref="62">Syntax</paragraph>
+<paragraph role="code" id="par_id3149800" xml-lang="en-US" l10n="U" oldref="63">INTRATE(Settlement; Maturity; Investment; Redemption; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3148618" xml-lang="en-US" l10n="U" oldref="64">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3148988" xml-lang="en-US" l10n="U" oldref="65">
+<emph>Maturity</emph> is the date on which the security is sold.</paragraph>
+<paragraph role="paragraph" id="par_id3154604" xml-lang="en-US" l10n="U" oldref="66">
+<emph>Investment</emph> is the purchase price.</paragraph>
+<paragraph role="paragraph" id="par_id3154337" xml-lang="en-US" l10n="U" oldref="67">
+<emph>Redemption</emph> is the selling price.</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3145380" xml-lang="en-US" level="3" l10n="U" oldref="68">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149426" xml-lang="en-US" l10n="CHG" oldref="69">A painting is bought on 1990-01-15 for 1 million and sold on 2002-05-05 for 2 million. The basis is daily balance calculation (basis = 3). What is the average annual level of interest?</paragraph>
+<paragraph role="paragraph" id="par_id3151125" xml-lang="en-US" l10n="CHG" oldref="70">=INTRATE("1990-01-15"; "2002-05-05"; 1000000; 2000000; 3) returns 8.12%.</paragraph>
+</section>
+<section id="coupncd">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148654"><bookmark_value>COUPNCD function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPNCD" id="bm_id3148413" localize="false"/>
+<paragraph role="heading" id="hd_id3148654" xml-lang="en-US" level="2" oldref="163">COUPNCD</paragraph>
+<paragraph role="paragraph" id="par_id3149927" xml-lang="en-US" l10n="U" oldref="164"><ahelp hid="HID_AAI_FUNC_COUPNCD">Returns the date of the first interest date after the settlement date. Format the result as a date.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153317" xml-lang="en-US" level="3" l10n="U" oldref="165">Syntax</paragraph>
+<paragraph role="code" id="par_id3150423" xml-lang="en-US" l10n="U" oldref="166">COUPNCD(Settlement; Maturity; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3150628" xml-lang="en-US" l10n="U" oldref="167">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3153536" xml-lang="en-US" l10n="U" oldref="168">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3145313" xml-lang="en-US" l10n="U" oldref="169">
+<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3155424" xml-lang="en-US" level="3" l10n="U" oldref="170">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154794" xml-lang="en-US" l10n="CHG" oldref="171">A security is purchased on 2001-01-25; the date of maturity is 2001-11-15. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) when is the next interest date?</paragraph>
+<paragraph role="paragraph" id="par_id3159251" xml-lang="en-US" l10n="CHG" oldref="172">=COUPNCD("2001-01-25"; "2001-11-15"; 2; 3) returns 2001-05-15.</paragraph>
+</section>
+<section id="coupdays">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143281"><bookmark_value>COUPDAYS function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPDAYS" id="bm_id3144759" localize="false"/>
+<paragraph role="heading" id="hd_id3143281" xml-lang="en-US" level="2" oldref="143">COUPDAYS</paragraph>
+<paragraph role="paragraph" id="par_id3149488" xml-lang="en-US" l10n="U" oldref="144"><ahelp hid="HID_AAI_FUNC_COUPDAYS">Returns the number of days in the current interest period in which the settlement date falls.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148685" xml-lang="en-US" level="3" l10n="U" oldref="145">Syntax</paragraph>
+<paragraph role="code" id="par_id3149585" xml-lang="en-US" l10n="U" oldref="146">COUPDAYS(Settlement; Maturity; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3152767" xml-lang="en-US" l10n="U" oldref="147">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3151250" xml-lang="en-US" l10n="U" oldref="148">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3146126" xml-lang="en-US" l10n="U" oldref="149">
+<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3153705" xml-lang="en-US" level="3" l10n="U" oldref="150">Example</paragraph>
+<paragraph role="paragraph" id="par_id3147530" xml-lang="en-US" l10n="CHG" oldref="151">A security is purchased on 2001-01-25; the date of maturity is 2001-11-15. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) how many days are there in the interest period in which the settlement date falls?</paragraph>
+<paragraph role="paragraph" id="par_id3156338" xml-lang="en-US" l10n="CHG" oldref="152">=COUPDAYS("2001-01-25"; "2001-11-15"; 2; 3) returns 181.</paragraph>
+</section>
+<section id="coupdaysnc">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154832"><bookmark_value>COUPDAYSNC function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPDAYSNC" id="bm_id3150941" localize="false"/>
+<paragraph role="heading" id="hd_id3154832" xml-lang="en-US" level="2" oldref="153">COUPDAYSNC</paragraph>
+<paragraph role="paragraph" id="par_id3147100" xml-lang="en-US" l10n="U" oldref="154"><ahelp hid="HID_AAI_FUNC_COUPDAYSNC">Returns the number of days from the settlement date until the next interest date.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151312" xml-lang="en-US" level="3" l10n="U" oldref="155">Syntax</paragraph>
+<paragraph role="code" id="par_id3155121" xml-lang="en-US" l10n="U" oldref="156">COUPDAYSNC(Settlement; Maturity; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3158440" xml-lang="en-US" l10n="U" oldref="157">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3146075" xml-lang="en-US" l10n="U" oldref="158">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3154620" xml-lang="en-US" l10n="U" oldref="159">
+<emph>Frequency </emph>is number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3155604" xml-lang="en-US" level="3" l10n="U" oldref="160">Example</paragraph>
+<paragraph role="paragraph" id="par_id3148671" xml-lang="en-US" l10n="CHG" oldref="161">A security is purchased on 2001-01-25; the date of maturity is 2001-11-15. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) how many days are there until the next interest payment?</paragraph>
+<paragraph role="paragraph" id="par_id3156158" xml-lang="en-US" l10n="CHG" oldref="162">=COUPDAYSNC("2001-01-25"; "2001-11-15"; 2; 3) returns 110.</paragraph>
+</section>
+<section id="coupdaybs">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150408"><bookmark_value>COUPDAYBS function</bookmark_value>
+<bookmark_value>durations;first interest payment until settlement date</bookmark_value>
+<bookmark_value>securities;first interest payment until settlement date</bookmark_value>
+</bookmark><comment>mw added "durations;" and "securities;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPDAYBS" id="bm_id3153775" localize="false"/>
+<paragraph role="heading" id="hd_id3150408" xml-lang="en-US" level="2" oldref="133">COUPDAYBS</paragraph>
+<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U" oldref="134"><ahelp hid="HID_AAI_FUNC_COUPDAYBS">Returns the number of days from the first day of interest payment on a security until the settlement date.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3156142" xml-lang="en-US" level="3" l10n="U" oldref="135">Syntax</paragraph>
+<paragraph role="code" id="par_id3159083" xml-lang="en-US" l10n="U" oldref="136">COUPDAYBS(Settlement; Maturity; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3146907" xml-lang="en-US" l10n="U" oldref="137">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3159390" xml-lang="en-US" l10n="U" oldref="138">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3154414" xml-lang="en-US" l10n="U" oldref="139">
+<emph>Frequency</emph> is the number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3153880" xml-lang="en-US" level="3" l10n="U" oldref="140">Example</paragraph>
+<paragraph role="paragraph" id="par_id3150592" xml-lang="en-US" l10n="CHG" oldref="141">A security is purchased on 2001-01-25; the date of maturity is 2001-11-15. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) how many days is this?</paragraph>
+<paragraph role="paragraph" id="par_id3151103" xml-lang="en-US" l10n="CHG" oldref="142">=COUPDAYBS("2001-01-25"; "2001-11-15"; 2; 3) returns 71.</paragraph>
+</section>
+<section id="couppcd">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152957"><bookmark_value>COUPPCD function</bookmark_value>
+<bookmark_value>dates;interest date prior to settlement date</bookmark_value>
+</bookmark><comment>mw added "dates;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPPCD" id="bm_id3149553" localize="false"/>
+<paragraph role="heading" id="hd_id3152957" xml-lang="en-US" level="2" oldref="183">COUPPCD</paragraph>
+<paragraph role="paragraph" id="par_id3153678" xml-lang="en-US" l10n="U" oldref="184"><ahelp hid="HID_AAI_FUNC_COUPPCD">Returns the date of the interest date prior to the settlement date. Format the result as a date.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3156269" xml-lang="en-US" level="3" l10n="U" oldref="185">Syntax</paragraph>
+<paragraph role="code" id="par_id3153790" xml-lang="en-US" l10n="U" oldref="186">COUPPCD(Settlement; Maturity; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3150989" xml-lang="en-US" l10n="U" oldref="187">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3154667" xml-lang="en-US" l10n="U" oldref="188">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3154569" xml-lang="en-US" l10n="U" oldref="189">
+<emph>Frequency</emph> is the number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3150826" xml-lang="en-US" level="3" l10n="U" oldref="190">Example</paragraph>
+<paragraph role="paragraph" id="par_id3148968" xml-lang="en-US" l10n="CHG" oldref="191">A security is purchased on 2001-01-25; the date of maturity is 2001-11-15. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) what was the interest date prior to purchase?</paragraph>
+<paragraph role="paragraph" id="par_id3149992" xml-lang="en-US" l10n="CHG" oldref="192">=COUPPCD("2001-01-25"; "2001-11-15"; 2; 3) returns 2000-15-11.</paragraph>
+</section>
+<section id="coupnum">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150673"><bookmark_value>COUPNUM function</bookmark_value>
+<bookmark_value>number of coupons</bookmark_value>
+</bookmark><comment>mw added "number..."</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPNUM" id="bm_id3153348" localize="false"/>
+<paragraph role="heading" id="hd_id3150673" xml-lang="en-US" level="2" oldref="173">COUPNUM</paragraph>
+<paragraph role="paragraph" id="par_id3154350" xml-lang="en-US" l10n="U" oldref="174"><ahelp hid="HID_AAI_FUNC_COUPNUM">Returns the number of coupons (interest payments) between the settlement date and the maturity date.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148400" xml-lang="en-US" level="3" l10n="U" oldref="175">Syntax</paragraph>
+<paragraph role="code" id="par_id3153200" xml-lang="en-US" l10n="U" oldref="176">COUPNUM(Settlement; Maturity; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3159406" xml-lang="en-US" l10n="U" oldref="177">
+<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3155864" xml-lang="en-US" l10n="U" oldref="178">
+<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3154720" xml-lang="en-US" l10n="U" oldref="179">
+<emph>Frequency</emph> is the number of interest payments per year (1, 2 or 4).</paragraph>
+<embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+<paragraph role="heading" id="hd_id3149319" xml-lang="en-US" level="3" l10n="U" oldref="180">Example</paragraph>
+<paragraph role="paragraph" id="par_id3152460" xml-lang="en-US" l10n="CHG" oldref="181">A security is purchased on 2001-01-25; the date of maturity is 2001-11-15. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) how many interest dates are there?</paragraph>
+<paragraph role="paragraph" id="par_id3150640" xml-lang="en-US" l10n="CHG" oldref="182">=COUPNUM("2001-01-25"; "2001-11-15"; 2; 3) returns 2.</paragraph>
+</section>
+<section id="ipmt">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149339"><bookmark_value>IPMT function</bookmark_value>
+<bookmark_value>periodic amortizement rates</bookmark_value>
+</bookmark><comment>mw added "periodic..."</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZINSZ" id="bm_id3149737" localize="false"/>
+<paragraph role="heading" id="hd_id3149339" xml-lang="en-US" level="2" oldref="263">IPMT</paragraph>
+<paragraph role="paragraph" id="par_id3154522" xml-lang="en-US" l10n="U" oldref="264"><ahelp hid="HID_FUNC_ZINSZ">Calculates the periodic amortizement for an investment with regular payments and a constant interest rate.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153266" xml-lang="en-US" level="3" l10n="U" oldref="265">Syntax</paragraph>
+<paragraph role="code" id="par_id3151283" xml-lang="en-US" l10n="U" oldref="266">IPMT(Rate; Period; NPer; PV; FV; Type)</paragraph>
+<paragraph role="paragraph" id="par_id3147313" xml-lang="en-US" l10n="U" oldref="267">
+<emph>Rate</emph> is the periodic interest rate.</paragraph>
+<paragraph role="paragraph" id="par_id3145158" xml-lang="en-US" l10n="U" oldref="268">
+<emph>Period</emph> is the period, for which the compound interest is calculated. Period=NPER if compound interest for the last period is calculated.</paragraph>
+<paragraph role="paragraph" id="par_id3147577" xml-lang="en-US" l10n="U" oldref="269">
+<emph>NPer</emph> is the total number of periods, during which annuity is paid.</paragraph>
+<paragraph role="paragraph" id="par_id3156211" xml-lang="en-US" l10n="U" oldref="270">
+<emph>PV</emph> is the present cash value in sequence of payments.</paragraph>
+<paragraph role="paragraph" id="par_id3151213" xml-lang="en-US" l10n="U" oldref="271">
+<emph>FV</emph> (optional) is the desired value (future value) at the end of the periods.</paragraph>
+<paragraph role="paragraph" id="par_id3154195" xml-lang="en-US" l10n="U" oldref="272">
+<emph>Type</emph> is the due date for the periodic payments.</paragraph>
+<paragraph role="heading" id="hd_id3150102" xml-lang="en-US" level="3" l10n="U" oldref="273">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149438" xml-lang="en-US" l10n="U" oldref="274">What is the interest rate during the fifth period (year) if the constant interest rate is 5% and the cash value is 15,000 currency units? The periodic payment is seven years.</paragraph>
+<paragraph role="paragraph" id="par_id3150496" xml-lang="en-US" l10n="U" oldref="275">
+<item type="input">=IPMT(5%;5;7;15000)</item> = -352.97 currency units. The compound interest during the fifth period (year) is 352.97 currency units.</paragraph>
+</section>
+<section id="fv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151205"><bookmark_value>calculating;future values</bookmark_value>
+<bookmark_value>future values;constant interest rates</bookmark_value>
+<bookmark_value>FV function</bookmark_value>
+</bookmark><comment>mw made "future values..." a two level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZW" id="bm_id3156049" localize="false"/>
+<paragraph role="heading" id="hd_id3151205" xml-lang="en-US" level="2" oldref="277">FV</paragraph>
+<paragraph role="paragraph" id="par_id3154140" xml-lang="en-US" l10n="U" oldref="278"><ahelp hid="HID_FUNC_ZW">Returns the future value of an investment based on periodic, constant payments and a constant interest rate (Future Value).</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155178" xml-lang="en-US" level="3" l10n="U" oldref="279">Syntax</paragraph>
+<paragraph role="code" id="par_id3145215" xml-lang="en-US" l10n="U" oldref="280">FV(Rate; NPer; Pmt; PV; Type)</paragraph>
+<paragraph role="paragraph" id="par_id3155136" xml-lang="en-US" l10n="U" oldref="281">
+<emph>Rate</emph> is the periodic interest rate.</paragraph>
+<paragraph role="paragraph" id="par_id3156029" xml-lang="en-US" l10n="U" oldref="282">
+<emph>NPer</emph> is the total number of periods (payment period).</paragraph>
+<paragraph role="paragraph" id="par_id3151322" xml-lang="en-US" l10n="U" oldref="283">
+<emph>Pmt</emph> is the annuity paid regularly per period.</paragraph>
+<paragraph role="paragraph" id="par_id3145256" xml-lang="en-US" l10n="U" oldref="284">
+<emph>PV</emph> (optional) is the (present) cash value of an investment.</paragraph>
+<paragraph role="paragraph" id="par_id3150999" xml-lang="en-US" l10n="U" oldref="285">
+<emph>Type</emph> (optional) defines whether the payment is due at the beginning or the end of a period.</paragraph>
+<paragraph role="paragraph" id="par_idN114D8" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3146800" xml-lang="en-US" level="3" l10n="U" oldref="286">Example</paragraph>
+<paragraph role="paragraph" id="par_id3146813" xml-lang="en-US" l10n="U" oldref="287">What is the value at the end of an investment if the interest rate is 4% and the payment period is two years, with a periodic payment of 750 currency units. The investment has a present value of 2,500 currency units.</paragraph>
+<paragraph role="paragraph" id="par_id3149302" xml-lang="en-US" l10n="U" oldref="288">
+<item type="input">=FV(4%;2;750;2500) </item>= -4234.00 currency units. The value at the end of the investment is 4234.00 currency units.</paragraph>
+</section>
+<section id="fvschedule">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155912"><bookmark_value>FVSCHEDULE function</bookmark_value>
+<bookmark_value>future values;varying interest rates</bookmark_value>
+</bookmark><comment>mw added "future values"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_FVSCHEDULE" id="bm_id3155341" localize="false"/>
+<paragraph role="heading" id="hd_id3155912" xml-lang="en-US" level="2" oldref="51">FVSCHEDULE</paragraph>
+<paragraph role="paragraph" id="par_id3163726" xml-lang="en-US" l10n="U" oldref="52"><ahelp hid="HID_AAI_FUNC_FVSCHEDULE">Calculates the accumulated value of the starting capital for a series of periodically varying interest rates.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149571" xml-lang="en-US" level="3" l10n="U" oldref="53">Syntax</paragraph>
+<paragraph role="code" id="par_id3148891" xml-lang="en-US" l10n="U" oldref="54">FVSCHEDULE(Principal; Schedule)</paragraph>
+<paragraph role="paragraph" id="par_id3148904" xml-lang="en-US" l10n="U" oldref="55">
+<emph>Principal</emph> is the starting capital.</paragraph>
+<paragraph role="paragraph" id="par_id3148562" xml-lang="en-US" l10n="U" oldref="56">
+<emph>Schedule</emph> is a series of interest rates, for example, as a range H3:H5 or as a (List) (see example).</paragraph>
+<paragraph role="heading" id="hd_id3147288" xml-lang="en-US" level="3" l10n="U" oldref="57">Example</paragraph>
+<paragraph role="paragraph" id="par_id3148638" xml-lang="en-US" l10n="U" oldref="58">1000 currency units have been invested in for three years. The interest rates were 3%, 4% and 5% per annum. What is the value after three years?</paragraph>
+<paragraph role="paragraph" id="par_id3156358" xml-lang="en-US" l10n="U" oldref="59">
+<item type="input">=FVSCHEDULE(1000;{0.03;0.04;0.05})</item> returns 1124.76.</paragraph>
+</section>
+<section id="nper">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156435"><bookmark_value>calculating;number of payment periods</bookmark_value>
+<bookmark_value>payment periods;number of</bookmark_value>
+<bookmark_value>number of payment periods</bookmark_value>
+<bookmark_value>NPER function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZZR" id="bm_id3154917" localize="false"/>
+<paragraph role="heading" id="hd_id3156435" xml-lang="en-US" level="2" oldref="290">NPER</paragraph>
+<paragraph role="paragraph" id="par_id3152363" xml-lang="en-US" l10n="U" oldref="291"><ahelp hid="HID_FUNC_ZZR">Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147216" xml-lang="en-US" level="3" l10n="U" oldref="292">Syntax</paragraph>
+<paragraph role="code" id="par_id3155934" xml-lang="en-US" l10n="U" oldref="293">NPER(Rate; Pmt; PV; FV; Type)</paragraph>
+<paragraph role="paragraph" id="par_id3155946" xml-lang="en-US" l10n="U" oldref="294">
+<emph>Rate</emph> is the periodic interest rate.</paragraph>
+<paragraph role="paragraph" id="par_id3149042" xml-lang="en-US" l10n="U" oldref="295">
+<emph>Pmt</emph> is the constant annuity paid in each period.</paragraph>
+<paragraph role="paragraph" id="par_id3153134" xml-lang="en-US" l10n="U" oldref="296">
+<emph>PV</emph> is the present value (cash value) in a sequence of payments.</paragraph>
+<paragraph role="paragraph" id="par_id3154398" xml-lang="en-US" l10n="U" oldref="297">
+<emph>FV</emph> (optional) is the future value, which is reached at the end of the last period.</paragraph>
+<paragraph role="paragraph" id="par_id3145127" xml-lang="en-US" l10n="U" oldref="298">
+<emph>Type</emph> (optional) is the due date of the payment at the beginning or at the end of the period.</paragraph>
+<paragraph role="paragraph" id="par_idN1166C" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3155795" xml-lang="en-US" level="3" l10n="U" oldref="299">Example</paragraph>
+<paragraph role="paragraph" id="par_id3147378" xml-lang="en-US" l10n="U" oldref="300">How many payment periods does a payment period cover with a periodic interest rate of 6%, a periodic payment of 153.75 currency units and a present cash value of 2.600 currency units.</paragraph>
+<paragraph role="paragraph" id="par_id3156171" xml-lang="en-US" l10n="U" oldref="301">
+<item type="input">=NPER(6%;153.75;2600)</item> = -12,02. The payment period covers 12.02 periods.</paragraph>
+</section>
+</sort>
+<paragraph role="paragraph" id="par_id3150309" xml-lang="en-US" l10n="U" oldref="314"><link href="text/scalc/01/04060103.xhp" name="Back to Financial Functions Part One">Back to Financial Functions Part One</link></paragraph>
+<paragraph role="paragraph" id="par_id3153163" xml-lang="en-US" l10n="U" oldref="315"><link href="text/scalc/01/04060119.xhp" name="Back to Financial Functions Part Two">Back to Financial Functions Part Two</link></paragraph>
+<embed href="text/scalc/01/04060100.xhp#drking"/>
+</body>
+</helpdocument>

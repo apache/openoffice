@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasemainxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">%PRODUCTNAME Database</title>
+<filename>/text/shared/explorer/database/main.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="database">
+<bookmark xml-lang="en-US" branch="index" id="bm_id8622089"><bookmark_value>databases;main page (Base)</bookmark_value>
+<bookmark_value>$[officename] Base data sources</bookmark_value>
+<bookmark_value>data sources;$[officename] Base</bookmark_value>
+</bookmark><comment>mw changed "Base,..."</comment><paragraph role="heading" id="par_idN10579" xml-lang="en-US" level="1" l10n="NEW"><variable id="base"><link href="text/shared/explorer/database/main.xhp">Using Databases in %PRODUCTNAME Base</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN107BD" xml-lang="en-US" l10n="CHG">In %PRODUCTNAME Base, you can access data that is stored in a wide variety of database file formats. %PRODUCTNAME Base natively supports some flat file database formats, such as the dBASE format. You can also use %PRODUCTNAME Base to connect to external relational databases, such as databases from MySQL or Oracle.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id5864131" xml-lang="en-US" l10n="NEW">The following database types are read-only types in %PRODUCTNAME Base. From within %PRODUCTNAME Base it is not possible to change the database structure or to edit, insert, and delete database records for these database types:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id8865016" xml-lang="en-US" l10n="NEW">Spreadsheet files</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3786736" xml-lang="en-US" l10n="NEW">Text files</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id6747337" xml-lang="en-US" l10n="NEW">Address book data</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="par_idN107C0" xml-lang="en-US" level="2" l10n="NEW">Using a Database in %PRODUCTNAME</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10838" xml-lang="en-US" l10n="NEW">To create a new database file, choose <emph>File - New - Database</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_idN1083B" xml-lang="en-US" l10n="NEW">The <link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link> helps you to create a database file and to register a new database within %PRODUCTNAME.</paragraph>
+<paragraph role="note" id="par_idN107E7" xml-lang="en-US" l10n="NEW">The database file contains queries, reports, and forms for the database as well as a link to the database where the records are stored. Formatting information is also stored in the database file.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN1084A" xml-lang="en-US" l10n="CHG">To open a database file, choose <emph>File - Open</emph>. In the <emph>File type</emph> list box, select to view only "Database documents". Select a database document and click <emph>Open</emph>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_idN1075F" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_view.xhp#data_view"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN10767" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_register.xhp#data_register"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN1076F" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_new.xhp#data_new"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN10777" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_tables.xhp#data_tables"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN1077F" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_queries.xhp#data_queries"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN10787" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_forms.xhp#data_forms"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN1078F" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_reports.xhp#data_reports"/>
+</paragraph>
+<paragraph role="paragraph" id="par_id1311990" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/data_im_export.xhp#data_im_export"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN10797" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/database_main.xhp#database_main"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN107AD" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/explorer/database/menubar.xhp#titletext"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN107BB" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/explorer/database/toolbars.xhp#toolbars"/>
+</paragraph>
+<embed href="text/shared/04/01020000.xhp#DB_keys"/>
+<paragraph role="paragraph" id="par_id6474806" xml-lang="en-US" l10n="NEW"><link href="http://wiki.services.openoffice.org/wiki/Database">Wiki page about Base</link></paragraph>
+</section>
+</body>
+</helpdocument>

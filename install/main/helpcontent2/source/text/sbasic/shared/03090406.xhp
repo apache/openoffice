@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090406xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Function Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090406.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T12:12:48">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="function">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153346"><bookmark_value>Function statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153346" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090406.xhp" name="Function Statement [Runtime]">Function Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3159158" xml-lang="en-US" l10n="U" oldref="2">Defines a subroutine that can be used as an expression to determine a return type.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3145316" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax</paragraph>
+<paragraph role="paragraph" id="par_id3148944" xml-lang="en-US" l10n="U" oldref="4">see Parameter</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U" oldref="6">Syntax</paragraph>
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="7">Function Name[(VarName1 [As Type][, VarName2 [As Type][,...]]]) [As Type]</paragraph>
+<paragraph role="paragraph" id="par_id3153360" xml-lang="en-US" l10n="U" oldref="8">statement block</paragraph>
+<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="U" oldref="9">[Exit Function]</paragraph>
+<paragraph role="paragraph" id="par_id3145419" xml-lang="en-US" l10n="U" oldref="10">statement block</paragraph>
+<paragraph role="paragraph" id="par_id3150449" xml-lang="en-US" l10n="U" oldref="11">End Function</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="12">Parameter</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="13">
+<emph>Name:</emph> Name of the subroutine to contain the value returned by the function.</paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="14">
+<emph>VarName:</emph> Parameter to be passed to the subroutine.</paragraph>
+<paragraph role="paragraph" id="par_id3147287" xml-lang="en-US" l10n="U" oldref="15">
+<emph>Type:</emph> Type-declaration keyword.</paragraph>
+<paragraph role="heading" id="hd_id3163710" xml-lang="en-US" level="2" l10n="U" oldref="16">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3147214" xml-lang="en-US" l10n="U" oldref="17">Sub ExampleExit</paragraph>
+<paragraph role="paragraph" id="par_id3152596" xml-lang="en-US" l10n="U" oldref="18">Dim sReturn As String</paragraph>
+<paragraph role="paragraph" id="par_id3153364" xml-lang="en-US" l10n="U" oldref="19">Dim sListArray(10) as String</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="20">Dim siStep as Single</paragraph>
+<paragraph role="paragraph" id="par_id3152939" xml-lang="en-US" l10n="U" oldref="21">For siStep = 0 to 10 REM Fill array with test data</paragraph>
+<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="22">sListArray(siStep) = chr$(siStep + 65)</paragraph>
+<paragraph role="paragraph" id="par_id3147426" xml-lang="en-US" l10n="U" oldref="23">msgbox sListArray(siStep)</paragraph>
+<paragraph role="paragraph" id="par_id3152576" xml-lang="en-US" l10n="U" oldref="24">next siStep</paragraph>
+<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U" oldref="25">sReturn = LinSearch(sListArray(), "B")</paragraph>
+<paragraph role="paragraph" id="par_id3153140" xml-lang="en-US" l10n="U" oldref="26">Print sReturn</paragraph>
+<paragraph role="paragraph" id="par_id3149581" xml-lang="en-US" l10n="U" oldref="27">end sub</paragraph>
+<paragraph role="paragraph" id="par_id3154790" xml-lang="en-US" l10n="U" oldref="30">Function LinSearch( sList(), sItem As String ) as integer</paragraph>
+<paragraph role="paragraph" id="par_id3150594" xml-lang="en-US" l10n="U" oldref="31">dim iCount as Integer</paragraph>
+<paragraph role="paragraph" id="par_id3154943" xml-lang="en-US" l10n="U" oldref="32">REM Linsearch searches a TextArray:sList() for a TextEntry:</paragraph>
+<paragraph role="paragraph" id="par_id3155601" xml-lang="en-US" l10n="U" oldref="33">REM Return value is the index of the entry or 0 (Null)</paragraph>
+<paragraph role="paragraph" id="par_id3154511" xml-lang="en-US" l10n="U" oldref="34">for iCount=1 to Ubound( sList() )</paragraph>
+<paragraph role="paragraph" id="par_id3149123" xml-lang="en-US" l10n="U" oldref="35">if sList( iCount ) = sItem then</paragraph>
+<paragraph role="paragraph" id="par_id3153707" xml-lang="en-US" l10n="U" oldref="36">exit for REM sItem found</paragraph>
+<paragraph role="paragraph" id="par_id3155066" xml-lang="en-US" l10n="U" oldref="37">end if</paragraph>
+<paragraph role="paragraph" id="par_id3156275" xml-lang="en-US" l10n="U" oldref="38">next iCount</paragraph>
+<paragraph role="paragraph" id="par_id3156054" xml-lang="en-US" l10n="U" oldref="39">if iCount = Ubound( sList() ) then iCount = 0</paragraph>
+<paragraph role="paragraph" id="par_id3153765" xml-lang="en-US" l10n="U" oldref="40">LinSearch = iCount</paragraph>
+<paragraph role="paragraph" id="par_id3153713" xml-lang="en-US" l10n="U" oldref="41">end function</paragraph>
+</body>
+</helpdocument>

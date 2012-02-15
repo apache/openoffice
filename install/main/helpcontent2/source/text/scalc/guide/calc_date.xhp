@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguidecalc_datexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Calculating With Dates and Times</title>
+         <filename>/text/scalc/guide/calc_date.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146120"><bookmark_value>dates; in cells</bookmark_value>
+      <bookmark_value>times; in cells</bookmark_value>
+      <bookmark_value>cells;date and time formats</bookmark_value>
+      <bookmark_value>current date and time values</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3146120" role="heading" level="1" l10n="U"
+                 oldref="11"><variable id="calc_date"><link href="text/scalc/guide/calc_date.xhp" name="Calculating With Dates and Times">Calculating With Dates and Times</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154320" role="paragraph" l10n="CHG" oldref="12">In $[officename] Calc, you can perform calculations with current date and time values. As an example, to find out exactly how old you are in seconds or hours, follow the following steps:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150750" role="listitem" l10n="U" oldref="13">In a spreadsheet, enter your birthday in cell A1.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145642" role="listitem" l10n="U" oldref="14">Enter the following formula in cell A3: <item type="literal">=NOW()-A1</item>
+            </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149020" role="listitem" l10n="U" oldref="52">After pressing the <item type="keycode">Enter</item> key you will see the result in date format. Since the result should show the difference between two dates as a number of days, you must format cell A3 as a number.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155335" role="listitem" l10n="U" oldref="53">Place the cursor in cell A3, right-click to open a context menu and choose <emph>Format Cells</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147343" role="listitem" l10n="U" oldref="54">The <item type="menuitem">Format Cells</item> dialog appears. On the <item type="menuitem">Numbers</item> tab, the "Number" category will appear already highlighted. The format is set to "General", which causes the result of a calculation containing date entries to be displayed as a date. To display the result as a number, set the number format to "-1,234" and close the dialog with the <item type="menuitem">OK</item> button.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147001" role="listitem" l10n="U" oldref="15">The number of days between today's date and the specified date is displayed in cell A3.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150304" role="listitem" l10n="U" oldref="16">Experiment with some additional formulas: in A4 enter =A3*24 to calculate the hours, in A5 enter =A4*60 for the minutes, and in A6 enter =A5*60 for seconds. Press the <item type="keycode">Enter</item> key after each formula.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3149207" role="paragraph" l10n="U" oldref="17">The time since your date of birth will be calculated and displayed in the various units. The values are calculated as of the exact moment when you entered the last formula and pressed the <item type="keycode">Enter</item> key. This value is not automatically updated, although "Now" continuously changes. In the <emph>Tools</emph> menu, the menu item <emph>Cell Contents - AutoCalculate</emph> is normally active; however, automatic calculation does not apply to the function NOW. This ensures that your computer is not solely occupied with updating the sheet.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/calc_timevalues.xhp#calc_timevalues"/>
+      </section>
+   </body>
+</helpdocument>

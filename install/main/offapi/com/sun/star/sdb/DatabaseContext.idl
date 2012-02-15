@@ -1,0 +1,106 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sdb_DatabaseContext_idl__ 
+#define __com_sun_star_sdb_DatabaseContext_idl__ 
+ 
+#ifndef __com_sun_star_container_XEnumerationAccess_idl__ 
+#include <com/sun/star/container/XEnumerationAccess.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_container_XContainer_idl__ 
+#include <com/sun/star/container/XContainer.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_XSingleServiceFactory_idl__ 
+#include <com/sun/star/lang/XSingleServiceFactory.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_container_XNameAccess_idl__ 
+#include <com/sun/star/container/XNameAccess.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_uno_XNamingService_idl__ 
+#include <com/sun/star/uno/XNamingService.idl> 
+#endif 
+ 
+ module com {  module sun {  module star {  module sdb { 
+
+published interface XDatabaseRegistrations;
+
+/** is the context for accessing datasource.
+	
+	<p>
+	A datasource contains information how to create a connection to a database, such as, 
+	which database driver should be used, for which user should a connection be established, etc. 
+	<br/>
+	The context stores datasources under a given name. 
+	
+	</p>
+	@see com::sun::star::sdb::DataSource
+ */
+published service DatabaseContext
+{ 
+	/** Enumeration on all registered data sources.
+	 */
+	interface com::sun::star::container::XEnumerationAccess; 
+ 
+	/** NameAccess on all registered data sources.
+		<p>One exception is the <method "com.sun.star.container.XNameAccess">getByName</method>, this method also allows to ask 
+		for a <member "DataAccessDescriptor">DatabaseLocation</member>. 
+		</p>
+	 */
+	interface com::sun::star::container::XNameAccess;  
+	 
+	/** Interface for registering new datasources.
+	 */
+	interface com::sun::star::uno::XNamingService;	 
+
+	/** Interface for registering listener to get notified when new datasources are created or removed.
+	*/
+	interface com::sun::star::container::XContainer;
+
+	/** Interface for creation of new datasources.
+	*/
+	interface com::sun::star::lang::XSingleServiceFactory;
+
+    /** allows to access and modify the configuration data for registered data source.
+
+        <p>The main purpose of this interface is to allow you to register data sources which you know
+        by URL only, and have not yet loaded.</p>
+
+        <p>Also, it hides the details of the configuration data where the data source registrations
+        are maintained, so if possible at all, you should use this interface, instead of modifying or
+        querying the configuration data directly.</p>
+
+        @since OOo 3.3
+    */
+    [optional] interface XDatabaseRegistrations;
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*=========================================================================== 
+===========================================================================*/ 
+#endif 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="svx_AccessiblePresentationShape" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+Global oShape As Object
+Global accText As String
+Global hasChangeableAttrs As Boolean
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' svx.AccessiblePresentationShape
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim bOK As Boolean, oDP As Object
+    Dim oWin As Object, xRoot As Object
+
+    oDoc = utils.createImpressDocument(cObjectName)
+    oShape = oDoc.createInstance("com.sun.star.presentation.HandoutShape")
+    oDP = oDoc.getDrawPages().getByIndex(0)
+    oDP.add(oShape)
+    oShape.setPropertyValue("IsEmptyPresentationObject",false)
+    wait(1000)
+    oWin = utils.at_getCurrentWindow(oDoc)
+    xRoot = utils.at_getAccessibleObject(oWin)
+    oObj = utils.at_getAccessibleObjectForRole(xRoot, com.sun.star.accessibility.AccessibleRole.SHAPE,"ImpressHandout0")
+    Out.Log("Implementation Name: "+oObj.getImplementationName())
+    if hasUNOInterfaces(oObj,"com.sun.star.accessibility.XAccessibleText") then 
+        accText = oObj.getText()
+        Out.Log("Text: "+accText)
+    End If
+    hasChangeableAttrs = true
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+Sub DisposeObj()
+    utils.closeObject(oDoc)
+End Sub
+
+Sub fireEvent()
+    Dim oSize As New com.sun.star.awt.Size
+    oSize = oShape.getSize()
+    oSize.Width = oSize.Width + 100
+    oShape.setSize(oSize)
+End Sub
+</script:module>

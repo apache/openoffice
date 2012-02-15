@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswriterguidespellcheck_dialogxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Checking Spelling and Grammar</title>
+         <filename>/text/swriter/guide/spellcheck_dialog.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149684"><bookmark_value>spellcheck; checking text documents manually</bookmark_value>
+      <bookmark_value>checking spelling;manually</bookmark_value>
+      <bookmark_value>grammar checker</bookmark_value>
+</bookmark><comment>mw added "grammar checker"</comment>
+<paragraph xml-lang="en-US" id="hd_id3149684" role="heading" level="1" l10n="U"
+                 oldref="37"><variable id="spellcheck_dialog"><link href="text/swriter/guide/spellcheck_dialog.xhp" name="Checking Spelling and Grammar">Checking Spelling and Grammar</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149814" role="paragraph" l10n="CHG" oldref="9">You can manually check the spelling and grammar of a text selection or the entire document.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0525200902184476" role="note" l10n="NEW">To check the spelling and the grammar of a text, the appropriate dictionaries must be installed. For many languages three different dictionaries exist: a spellchecker, a hyphenation dictionary, and a thesaurus. Each dictionary covers one language only. Grammar checkers can be downloaded and installed as extensions. See the <link href="http://extensions.services.openoffice.org/dictionary">extensions web page</link>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149828" role="paragraph" l10n="U" oldref="10">The spellcheck starts at the current cursor position, or at the beginning of the text selection.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155859" role="listitem" l10n="U" oldref="43">Click in the document, or select the text that you want to check.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149836" role="listitem" l10n="CHG" oldref="44">Choose <emph>Tools - Spelling and Grammar</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156104" role="listitem" l10n="CHG" oldref="45">When a possible spelling error is encountered, the <item type="menuitem">Spellcheck</item>
+               <emph/>dialog opens and $[officename] offers some suggested corrections.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149861" role="listitem" l10n="U" oldref="46">Do one of the following:</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3145099" role="listitem" l10n="CHG" oldref="47">To accept a correction, click the suggestion, and then click <emph>Change</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3156241" role="listitem" l10n="CHG" oldref="48">Edit the sentence in the upper text box, and then click <emph>Change</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3155886" role="listitem" l10n="CHG" oldref="40">To add the unknown word to a user-defined dictionary, click <emph>Add</emph>.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/auto_spellcheck.xhp#auto_spellcheck"/>
+<comment>removed a line</comment>
+         <paragraph xml-lang="en-US" id="par_id3147107" role="paragraph" l10n="U" oldref="49"><link href="text/shared/01/06010000.xhp" name="Spellcheck dialog">Spelling and Grammar dialog</link></paragraph>
+         <embed href="text/swriter/guide/using_hyphen.xhp#using_hyphen"/>
+         <embed href="text/swriter/guide/using_thesaurus.xhp#using_thesaurus"/>
+         <paragraph xml-lang="en-US" id="par_id9625843" role="paragraph" l10n="NEW"><link href="http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Adding_More_Languages">Wiki page: Adding more languages</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id1683706" role="paragraph" l10n="NEW"><link href="http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Spellchecking_in_More_Languages">Wiki page: Multiple language spellchecking</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

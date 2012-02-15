@@ -1,0 +1,76 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+
+#define FT_RESULT			1
+#define WND_RESULT			2
+#define FT_EDITNAME			3
+#define STR_TITLE1			4
+#define STR_TITLE2			5
+#define BTN_HELP			6
+#define BTN_CANCEL			7
+#define BTN_BACKWARD		8
+#define BTN_FORWARD			9
+#define BTN_END				10
+#define BTN_MATRIX			11
+#define FT_FUNCNAME			12
+#define FT_FUNCDESC			13
+#define FT_HEADLINE			14
+#define GB_EDIT				15
+#define FT_FORMULA			16
+#define ED_FORMULA			17
+#define TC_FUNCTION			18
+#define ED_REF				19
+#define RB_REF				20
+#define FT_FORMULA_RESULT	21
+#define WND_FORMULA_RESULT	22
+#define STR_END	            23
+// Fuer Tabpage
+#define TP_FUNCTION			1
+#define TP_STRUCT			2
+
+// Funktions-Tabpage
+#define FT_FUNCTION			1
+#define FT_CATEGORY			2
+#define LB_CATEGORY			3
+#define LB_FUNCTION			4
+
+// Struktur-Tabpage
+#define FT_STRUCT			1
+#define TLB_STRUCT			2
+
+// Bitmaps
+#define BMP_STR_CLOSE		1
+#define BMP_STR_OPEN		2
+#define BMP_STR_END  		3
+#define BMP_STR_ERROR		4
+#define BMP_STR_CLOSE_H     11
+#define BMP_STR_OPEN_H      12
+#define BMP_STR_END_H       13
+#define BMP_STR_ERROR_H     14
+
+// Texte
+#define STR_STRUCT_ERR1		1
+#define STR_STRUCT_ERR2		2
+
+

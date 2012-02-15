@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textsharedexplorerdatabasedabawiz01xml" indexer="include">
+<title id="tit" xml-lang="en-US">Database Selection</title>
+<filename>/text/shared/explorer/database/dabawiz01.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="dabaselection">
+<bookmark xml-lang="en-US" branch="index" id="bm_id2082583"><bookmark_value>databases; connecting (Base)</bookmark_value>
+</bookmark><comment>mw moved databases;formats (base) to shared/explorer/database/dabawiz00.xhp</comment>
+<paragraph role="heading" id="par_idN1054D" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/dabawiz01.xhp">Database Selection</link></paragraph>
+<paragraph role="paragraph" id="par_idN1055D" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Creates a new database, opens a database file, or connects to an existing database.</ahelp></paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_GENERAL_RB_CREATEDBDATABASE" id="bm_id2482985" localize="false"/>
+<paragraph role="heading" id="par_idN10585" xml-lang="en-US" level="2" l10n="NEW">Create a new database</paragraph>
+<paragraph role="paragraph" id="par_idN10589" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to create a new database. </ahelp>This option uses the HSQL database engine with default settings. The final page of the wizard appears next.</paragraph>
+<paragraph role="paragraph" id="par_id8584246" xml-lang="en-US" l10n="NEW"><link href="http://hsqldb.org/">External web page about HSQL</link>.</paragraph>
+<!-- removed HID HID_PAGE_DBWIZARD_GENERAL_RB_OPENEXISTINGDOC -->
+<bookmark xml-lang="en-US" branch="hid/dbaccess:RadioButton:PAGE_GENERAL:RB_OPENEXISTINGDOC" id="bm_id2400585" localize="false"/>
+<paragraph role="heading" id="par_idN105F9" xml-lang="en-US" level="2" l10n="NEW">Open an existing database file</paragraph>
+<paragraph role="paragraph" id="par_idN105FD" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to open a database file from a list of recently used files or from a file selection dialog.</ahelp></paragraph>
+<!-- removed HID HID_PAGE_DBWIZARD_GENERAL_LB_DOCUMENTLIST -->
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:PAGE_GENERAL:LB_DOCUMENTLIST" id="bm_id5958128" localize="false"/>
+<paragraph role="heading" id="par_idN10614" xml-lang="en-US" level="3" l10n="NEW">Recently used</paragraph>
+<paragraph role="paragraph" id="par_idN10618" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select a database file to open from the list of recently used files. Click Finish to open the file immediately and to exit the wizard.</ahelp></paragraph>
+<!-- removed HID HID_PAGE_DBWIZARD_GENERAL_PB_OPENDOCUMENT -->
+<bookmark xml-lang="en-US" branch="hid/dbaccess:PushButton:PAGE_GENERAL:PB_OPENDOCUMENT" id="bm_id6427198" localize="false"/>
+<paragraph role="heading" id="par_idN1062F" xml-lang="en-US" level="3" l10n="NEW">Open</paragraph>
+<paragraph role="paragraph" id="par_idN10633" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens a file selection dialog where you can select a database file. Click Open or OK in the file selection dialog to open the file immediately and to exit the wizard.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_GENERAL_RB_GETEXISTINGDATABASE" id="bm_id5028229" localize="false"/>
+<paragraph role="heading" id="par_idN1058C" xml-lang="en-US" level="2" l10n="NEW">Connect to an existing database</paragraph>
+<paragraph role="paragraph" id="par_idN10590" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to create a database document for an existing database connection.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_DSTYPE" id="bm_id763267" localize="false"/>
+<paragraph role="heading" id="par_idN10593" xml-lang="en-US" level="3" l10n="NEW">Database type</paragraph>
+<paragraph role="paragraph" id="par_idN10597" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the database type for the existing database connection.</ahelp></paragraph>
+<paragraph role="note" id="par_idN1059A" xml-lang="en-US" l10n="NEW">The Outlook, Evolution, KDE Address Book, and Seamonkey database types do not need additional information. For other database types, the wizard contains additional pages to specify the required information.</paragraph>
+<paragraph role="paragraph" id="par_idN10611" xml-lang="en-US" l10n="NEW">The next wizard page is one of the following pages:</paragraph>
+<embed href="text/shared/explorer/database/dabawiz02.xhp#nextsteps"/>
+<paragraph role="paragraph" id="par_idN1061C" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02text.xhp">Set up text file connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN1062B" xml-lang="en-US" l10n="CHG"><link href="text/shared/explorer/database/dabawiz02access.xhp">Set up Microsoft Access or Microsoft Access 2007 connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN1063A" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02ldap.xhp">Set up LDAP connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN10658" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02ado.xhp">Set up ADO connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN10667" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02jdbc.xhp">Set up JDBC connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN10676" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02oracle.xhp">Set up Oracle database connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN10685" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02mysql.xhp">MySQL settings</link></paragraph>
+<paragraph role="paragraph" id="par_idN10694" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02odbc.xhp">ODBC settings</link></paragraph>
+<paragraph role="paragraph" id="par_idN106A3" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02spreadsheet.xhp">Set up Spreadsheet connection</link></paragraph>
+</body>
+</helpdocument>

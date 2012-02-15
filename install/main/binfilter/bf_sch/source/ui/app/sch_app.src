@@ -1,0 +1,62 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define NO_LOCALIZE_EXPORT
+
+
+/* StarView ressource file */
+
+#include <bf_svx/globlmn.hrc>
+#include "app.hrc"
+#include "res_bmp.hrc"
+#include "bf_svx/dialogs.hrc"
+#include "schhids.h"
+String RID_DRAW_TOOLBOX
+{
+	Text [ de ] = "Werkzeugleiste" ;
+	Text [ en-US ] = "Main Toolbar" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Barra de ferramentas";
+	Text[ ru ] = "Главная панель инструментов";
+	Text[ el ] = "Γραμμή εργαλείων";
+	Text[ nl ] = "Werktuigbalk";
+	Text[ fr ] = "Barre d'instruments";
+	Text[ es ] = "Barra de herramientas";
+	Text[ fi ] = "Päätyökalurivi";
+	Text[ ca ] = "Barra d'eines principal";
+	Text[ it ] = "Barra degli strumenti";
+	Text[ da ] = "Værktøjslinje";
+	Text[ sv ] = "Verktygslist";
+	Text[ pl ] = "Główny pasek narzędzi";
+	Text[ pt-BR ] = "Barra de Ferramentas Principal";
+	Text[ th ] = "แถบเครื่องมือหลัก";
+	Text[ ja ] = "標準ツールバー";
+	Text[ ko ] = "주 도구 모음";
+	Text[ zh-CN ] = "主工具栏";
+	Text[ zh-TW ] = "主工具列";
+	Text[ tr ] = "Ana araç çubuğu";
+	Text[ hi-IN ] = "प्रधान औज़ार पट्टी";
+	Text[ ar ] = "شريط الأدوات";
+	Text[ he ] = "‮סרגל ראשי‬";
+};
+
+

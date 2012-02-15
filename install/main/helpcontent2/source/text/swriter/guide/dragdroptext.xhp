@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidedragdroptextxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Moving and Copying Text in Documents</title>
+         <filename>/text/swriter/guide/dragdroptext.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155919"><bookmark_value>sections;moving and copying</bookmark_value>
+      <bookmark_value>moving; text sections</bookmark_value>
+      <bookmark_value>copying; text sections</bookmark_value>
+      <bookmark_value>pasting;cut/copied text sections</bookmark_value>
+      <bookmark_value>mouse;moving and copying text</bookmark_value>
+</bookmark><comment>mw deleted "text sections;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3155919" role="heading" level="1" l10n="U"
+                 oldref="10"><variable id="dragdroptext"><link href="text/swriter/guide/dragdroptext.xhp" name="Moving and Copying Text in Documents">Moving and Copying Text in Documents</link>
+</variable></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152994" role="listitem" l10n="U" oldref="11">Select the text that you want to move or copy.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155606" role="listitem" l10n="U" oldref="21">Do one of the following:</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3154236" role="listitem" l10n="U" oldref="13">To move the selected text, drag the text to a different location in the document and release. While you drag, the mouse pointer changes to include a gray box.<br/>
+<image id="img_id3153148" src="res/helpimg/movedata.png" width="0.3335in" height="0.3335in"><alt xml-lang="en-US" id="alt_id3153148">Mouse cursor moving data</alt>
+	</image></paragraph>
+            <paragraph xml-lang="en-US" id="par_id3154257" role="listitem" l10n="U" oldref="14">To copy the selected text, hold down <switchinline select="sys"><caseinline select="MAC">Command 
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline> while you drag. The mouse pointer changes to include a plus sign (+).<br/>
+<image id="img_id3152868" src="res/helpimg/copydata.png" width="0.3335in" height="0.3335in"><alt xml-lang="en-US" id="alt_id3152868">Mouse cursor copying data</alt>
+	</image></paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/dragdrop.xhp#dragdrop"/>
+         <embed href="text/shared/guide/dragdrop_graphic.xhp#dragdrop_graphic"/>
+         <embed href="text/shared/guide/dragdrop_table.xhp#dragdrop_table"/>
+         <embed href="text/shared/guide/dragdrop_fromgallery.xhp#dragdrop_fromgallery"/>
+         <embed href="text/shared/guide/dragdrop_gallery.xhp#dragdrop_gallery"/>
+      </section>
+   </body>
+</helpdocument>

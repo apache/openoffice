@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textsharedexplorerdatabasedabawiz02mysqlxml" indexer="include">
+<title id="tit" xml-lang="en-US">MySQL Connection</title>
+<filename>/text/shared/explorer/database/dabawiz02mysql.xhp</filename>
+</topic>
+</meta>
+<body><comment>** Expression is faulty **</comment>
+<paragraph role="heading" id="par_idN10549" xml-lang="en-US" level="1" l10n="NEW"><variable id="mysql"><link href="text/shared/explorer/database/dabawiz02mysql.xhp">MySQL Connection</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN1054D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the options for MySQL databases.</ahelp><comment>text copied from shared\explorer\database\11120000</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_MYSQL_RB_CONNECTVIAODBC" id="bm_id6776940" localize="false"/>
+<paragraph role="heading" id="par_idN10562" xml-lang="en-US" level="2" l10n="NEW">Connect using ODBC (Open Database Connectivity)</paragraph>
+<paragraph role="paragraph" id="par_idN10566" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Connects to an existing ODBC data source that was set on a system level.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_MYSQL_RB_CONNECTVIAJDBC" id="bm_id4285409" localize="false"/>
+<paragraph role="heading" id="par_idN10569" xml-lang="en-US" level="2" l10n="NEW">Connect using JDBC (Java Database Connectivity)</paragraph>
+<paragraph role="paragraph" id="par_idN1056D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Connects to an existing JDBC data source that was set on a system level.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN10570" xml-lang="en-US" l10n="NEW">The next wizard page depends on your choice of ODBC or JDBC:</paragraph>
+<paragraph role="paragraph" id="par_idN10573" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02odbc.xhp">ODBC Connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN10582" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz02jdbc.xhp">JDBC Connection</link></paragraph>
+<paragraph role="paragraph" id="par_idN10591" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz03auth.xhp">Authentication</link></paragraph>
+<paragraph role="paragraph" id="par_idN105A0" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link></paragraph>
+</body>
+</helpdocument>

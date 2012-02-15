@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpressguideline_drawxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Drawing Curves</title>
+<filename>/text/simpress/guide/line_draw.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-10-23T14:01:00">FPE: Deleted Screenshot. Cleaned.</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149377"><bookmark_value>lines; drawing</bookmark_value>
+<bookmark_value>curves; drawing</bookmark_value>
+<bookmark_value>control points definition</bookmark_value>
+<bookmark_value>corner points</bookmark_value>
+<bookmark_value>drawing;lines</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149377" xml-lang="en-US" level="1" l10n="U" oldref="3"><variable id="line_draw"><link href="text/simpress/guide/line_draw.xhp" name="Drawing Curves">Drawing Curves</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3148868" xml-lang="en-US" l10n="CHG" oldref="4">The <emph>Curve</emph> icon 
+<image id="img_id3150205" src="res/commandimagelist/sc_linetoolbox.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150205" xml-lang="en-US">Icon</alt>
+	</image> on the <emph>Drawing</emph> toolbar opens a toolbar to draw Bézier curves. Bézier curves are defined by a start point and an end point, which are called "anchors". The curvature of the Bézier curve is defined by control points ("handles"). Moving a control point changes the shape of the Bézier curve.</paragraph>
+<paragraph role="note" id="par_id8532364" xml-lang="en-US" l10n="NEW">Control points are only visible in "Edit Points" mode. Control points are represented by circles, anchor points are represented by squares. The start point is a little bit larger than the other anchor points.</paragraph>
+<paragraph role="paragraph" id="par_id3150210" xml-lang="en-US" l10n="CHG" oldref="39">Bézier curve segments and straight line segments can be joined to form more complex Bézier curves. Three different transitions can be applied to join adjacent segments:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154766" xml-lang="en-US" l10n="CHG" oldref="25">A <emph>symmetrical</emph> anchor point has the same line curvature on either side, and two control lines that move together as a straight line.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149874" xml-lang="en-US" l10n="CHG" oldref="26">A <emph>smooth</emph> anchor point may have different line curvatures on either side.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150435" xml-lang="en-US" l10n="CHG" oldref="27">A <emph>corner</emph> anchor point has one or two independent control lines. Changing one side has no effect on the other side.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id46388" xml-lang="en-US" level="2" l10n="NEW">How to use the Curve tool</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3155262" xml-lang="en-US" l10n="CHG" oldref="5">On the Drawing toolbar, open the <emph>Curves</emph> toolbar 
+<image id="img_id3145829" src="res/commandimagelist/sc_linetoolbox.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145829" xml-lang="en-US">Icon</alt>
+	</image> and select the <emph>Curve</emph>
+<image id="Graphic1" src="res/commandimagelist/sc_bezier_unfilled.png" width="0.222inch" height="0.222inch"><alt id="alt_" xml-lang="en-US">Icon</alt>
+	</image> tool.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3155928" xml-lang="en-US" l10n="CHG" oldref="6">Click where you want the curve to start, and drag in the direction where you want the curve to go. The control line will indicate the direction. </paragraph>
+<paragraph role="paragraph" id="par_id8174687" xml-lang="en-US" l10n="NEW">Hold down <item type="keycode">Shift</item> while you drag to restrict the direction to a 45 degree grid.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3148390" xml-lang="en-US" l10n="CHG" oldref="41">Release the mouse where the first control point should be.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3154865" xml-lang="en-US" l10n="U" oldref="22">Move the pointer to where you want the curve segment to end. The curve follows the pointer. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1556443" xml-lang="en-US" l10n="NEW">Do one of the following:</paragraph>
+</listitem>
+</list>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3151172" xml-lang="en-US" l10n="CHG" oldref="9">Double-click on the position of the end point to finish drawing the line. </paragraph>
+<paragraph role="paragraph" id="par_id5377056" xml-lang="en-US" l10n="NEW">To create a closed shape, double-click the starting point of the line.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3153919" xml-lang="en-US" l10n="CHG" oldref="23">Click and release the mouse button to add an anchor point. Move the mouse to draw the next segment.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3149451" xml-lang="en-US" l10n="CHG" oldref="43">Click and drag in any direction to add a smooth anchor point.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id2071596" xml-lang="en-US" level="2" l10n="NEW">How to use the Freeform Line tool</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id4907681" xml-lang="en-US" l10n="NEW">On the Drawing toolbar, open the <emph>Curves</emph> toolbar 
+<image id="Graphic2" src="res/commandimagelist/sc_linetoolbox.png" width="0.222inch" height="0.222inch"><alt id="alt_" xml-lang="en-US">Icon</alt>
+	</image> and select the <emph>Freeform Line</emph>
+<image id="Graphic3" src="res/commandimagelist/sc_freeline_unfilled.png" width="0.222inch" height="0.222inch"><alt id="alt_" xml-lang="en-US">Icon</alt>
+	</image> tool.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1122165" xml-lang="en-US" l10n="NEW">Click where you want the curve to start, and keep holding the mouse button down.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id5792107" xml-lang="en-US" l10n="NEW">Draw the freeform line as you would do with a pencil.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id7734916" xml-lang="en-US" l10n="NEW">Release the mouse button to finish the line.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/line_edit.xhp#line_edit"/>
+<embed href="text/simpress/guide/vectorize.xhp#vectorize"/>
+<embed href="text/simpress/guide/3d_create.xhp#3d_create"/>
+<embed href="text/simpress/guide/text2curve.xhp#text2curve"/>
+</section>
+</body>
+</helpdocument>

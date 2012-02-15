@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0209010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">URL Name</title>
+<filename>/text/shared/02/09010000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-10-19T09:28:16">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="namedesurl">
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_OFA_HYPERLINK_NAME" id="bm_id3156211" localize="false"/>
+<paragraph role="heading" id="hd_id3147588" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/09010000.xhp" name="URL Name">URL Name</link></paragraph>
+<paragraph role="paragraph" id="par_id3150476" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_OFA_HYPERLINK_NAME">Assigns a name to an Internet URL or file.</ahelp> You can also enter search criteria for an Internet search site.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3153539" xml-lang="en-US" l10n="U" oldref="3">Possible search syntax is as follows:</paragraph>
+<table id="tbl_id3149716">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154673" xml-lang="en-US" l10n="CHG" oldref="6">"Suite+Office"</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148548" xml-lang="en-US" l10n="CHG" oldref="7">Finds all pages that contain the words "Suite" AND "Office" at any position.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155805" xml-lang="en-US" l10n="CHG" oldref="8">"Suite,Office"</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147008" xml-lang="en-US" l10n="CHG" oldref="9">Finds all pages that contain "Suite" OR "Office".</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156410" xml-lang="en-US" l10n="CHG" oldref="10">Suite Office</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153346" xml-lang="en-US" l10n="U" oldref="11">Finds all pages that contain the specified text. Search text without quotation marks will be sent directly to the specified search engine in the Internet. In most cases, a search engine combines a string of words with "OR," and finds pages in which at least one of the words appear.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="note" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="12">Not all Internet <link href="text/shared/00/00000002.xhp#suchmaschine" name="search engines">search engines</link> support all logical combinations. It is recommended to use only one of the three options for linking search terms.</paragraph>
+</body>
+</helpdocument>

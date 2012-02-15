@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0106150000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">XML Filter Settings</title>
+<filename>/text/shared/01/06150000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="xmlfilter">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153272"><bookmark_value>filters; XML filter settings</bookmark_value>
+<bookmark_value>XML filters; settings</bookmark_value>
+</bookmark><comment>mw deleted "XSLT based filters;"</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:OpenXMLFilterSettings" id="bm_id1477589" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:OpenXMLFilterSettings" id="bm_id3149962" localize="false"/>
+<paragraph role="heading" id="hd_id3153272" xml-lang="en-US" level="1" l10n="U" oldref="2"><link href="text/shared/01/06150000.xhp" name="XML Filter Settings">XML Filter Settings</link></paragraph>
+<paragraph role="paragraph" id="par_id3152937" xml-lang="en-US" l10n="CHG" oldref="1"><ahelp hid=".uno:OpenXMLFilterSettings">Opens the <emph>XML Filter Settings </emph>dialog, where you can create, edit, delete, and test filters to import and to export XML files.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000406.xhp#xmlfilter"/>
+</section>
+<embed href="text/shared/guide/xsltfilter.xhp#xsltfilter"/>
+<paragraph role="note" id="par_idN10646" xml-lang="en-US" l10n="CHG">Some filters are only available as optional components during the %PRODUCTNAME installation. To install an optional filter, run the %PRODUCTNAME Setup application, select "Modify", and then select the filter that you want in the list of modules.</paragraph>
+<paragraph role="paragraph" id="par_id3154794" xml-lang="en-US" l10n="U" oldref="3">The term <emph>XML filter</emph> is used in the following as a shortcut for the more exact description as an <emph>XSLT based filter</emph>.</paragraph>
+<table id="tbl_id3151097">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id3149495" xml-lang="en-US" l10n="U" oldref="4">Term</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3149549" xml-lang="en-US" l10n="U" oldref="5">Description</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3144758" xml-lang="en-US" l10n="U" oldref="6">XML</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3152425" xml-lang="en-US" l10n="U" oldref="7">Extensible Markup Language</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155355" xml-lang="en-US" l10n="U" oldref="8">XSL</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145071" xml-lang="en-US" l10n="U" oldref="9">Extensible Stylesheet Language</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156426" xml-lang="en-US" l10n="U" oldref="10">XSLT</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154983" xml-lang="en-US" l10n="U" oldref="11">Extensible Stylesheet Language Transformation. XSLT files are also called XSLT stylesheets.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="note" id="par_idN106E7" xml-lang="en-US" l10n="CHG">The XHTML export filter produces valid "XHTML 1.0 Strict" output for Writer, Calc, Draw, and Impress documents.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_LIST" id="bm_id3166460" localize="false"/>
+<paragraph role="heading" id="hd_id3145382" xml-lang="en-US" level="2" l10n="U" oldref="12">Filter list</paragraph>
+<paragraph role="paragraph" id="par_id3147209" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="HID_XML_FILTER_LIST">Select one or more filters, then click one of the buttons.</ahelp></paragraph>
+<paragraph role="note" id="par_idN10711" xml-lang="en-US" l10n="CHG">Some filters are only available as optional components during the %PRODUCTNAME installation. To install an optional filter, run the %PRODUCTNAME Setup application, select "Modify", and then select the filter that you want in the list of modules.</paragraph>
+<paragraph role="paragraph" id="par_id3153032" xml-lang="en-US" l10n="U" oldref="33">The lists shows the name and the type of the installed filters.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154577" xml-lang="en-US" l10n="U" oldref="14">Click a filter to select it.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149885" xml-lang="en-US" l10n="U" oldref="15">Shift-click or <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>-click to select several filters.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149784" xml-lang="en-US" l10n="U" oldref="16">Double-click a name to edit the filter.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_NEW" id="bm_id3148924" localize="false"/>
+<paragraph role="heading" id="hd_id3159400" xml-lang="en-US" level="2" l10n="U" oldref="17">New</paragraph>
+<paragraph role="paragraph" id="par_id3149516" xml-lang="en-US" l10n="CHG" oldref="18"><ahelp hid="HID_XML_FILTER_NEW">Opens a dialog with the name of a new filter.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_EDIT" id="bm_id3154810" localize="false"/>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="19">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3156192" xml-lang="en-US" l10n="CHG" oldref="20"><ahelp hid="HID_XML_FILTER_EDIT">Opens a dialog with the name of the selected file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST" id="bm_id3149415" localize="false"/>
+<paragraph role="heading" id="hd_id3154380" xml-lang="en-US" level="2" l10n="U" oldref="21">Test XSLTs</paragraph>
+<paragraph role="paragraph" id="par_id3148491" xml-lang="en-US" l10n="CHG" oldref="22"><ahelp hid="HID_XML_FILTER_TEST">Opens a dialog with the name of the selected file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_DELETE" id="bm_id3150669" localize="false"/>
+<paragraph role="heading" id="hd_id3157909" xml-lang="en-US" level="2" l10n="U" oldref="23">Delete</paragraph>
+<paragraph role="paragraph" id="par_id3153564" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="HID_XML_FILTER_DELETE">Deletes the selected file after you confirm the dialog that follows.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_SAVE" id="bm_id3149245" localize="false"/>
+<paragraph role="heading" id="hd_id3151384" xml-lang="en-US" level="2" l10n="U" oldref="25">Save as Package</paragraph>
+<paragraph role="paragraph" id="par_id3149575" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="HID_XML_FILTER_SAVE">Displays a <emph>Save as </emph>dialog to save the selected file as an XSLT filter package (*.jar).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_OPEN" id="bm_id3152361" localize="false"/>
+<paragraph role="heading" id="hd_id3154758" xml-lang="en-US" level="2" l10n="U" oldref="27">Open Package</paragraph>
+<paragraph role="paragraph" id="par_id3147559" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="HID_XML_FILTER_OPEN">Displays an <emph>Open </emph>dialog to open a filter from an XSLT filter package (*.jar).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_SETTINGS_DIALOG" id="bm_id3154388" localize="false"/>
+<paragraph role="heading" id="hd_id3153960" xml-lang="en-US" level="2" l10n="U" oldref="29">Help</paragraph>
+<paragraph role="paragraph" id="par_id3150865" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="HID_XML_FILTER_SETTINGS_DIALOG">Displays the help page for this dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_CLOSE" id="bm_id3143279" localize="false"/>
+<paragraph role="heading" id="hd_id3152772" xml-lang="en-US" level="2" l10n="U" oldref="31">Close</paragraph>
+<paragraph role="paragraph" id="par_id3159086" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_XML_FILTER_CLOSE">Closes the dialog.</ahelp></paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/00/00000021.xhp#xmlformat"/>
+</section>
+</body>
+</helpdocument>

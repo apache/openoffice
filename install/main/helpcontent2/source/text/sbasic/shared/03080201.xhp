@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03080201xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Exp Function [Runtime]</title>
+<filename>/text/sbasic/shared/03080201.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-04-14T10:35:23">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="exp">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150616"><bookmark_value>Exp function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150616" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080201.xhp" name="Exp Function [Runtime]">Exp Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3155555" xml-lang="en-US" l10n="U" oldref="2">Returns the base of the natural logarithm (e = 2.718282) raised to a power.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3150984" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="4">Exp (Number)</paragraph>
+<paragraph role="heading" id="hd_id3154347" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="6">Double</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150793" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Number:</emph> Any numeric expression that specifies the power that you want to raise "e" to (the base of natural logarithms). The power must be for both single-precision numbers less than or equal to 88.02969 and double-precision numbers less than or equal to 709.782712893, since $[officename] Basic returns an Overflow error for numbers exceeding these values.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3156280" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleLogExp</paragraph>
+<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U" oldref="11">Dim dValue as Double</paragraph>
+<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U" oldref="12">const b1=12.345e12</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="13">const b2=1.345e34</paragraph>
+<paragraph role="paragraph" id="par_id3147287" xml-lang="en-US" l10n="U" oldref="14">dValue=Exp( Log(b1)+Log(b2) )</paragraph>
+<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U" oldref="15">MsgBox "" &amp; dValue &amp; chr(13) &amp; (b1*b2) ,0,"Multiplication by logarithm"</paragraph>
+<paragraph role="paragraph" id="par_id3151112" xml-lang="en-US" l10n="U" oldref="16">end sub</paragraph>
+</body>
+</helpdocument>

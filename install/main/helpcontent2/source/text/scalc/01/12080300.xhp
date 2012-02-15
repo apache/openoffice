@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112080300xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Group</title>
+<filename>/text/scalc/01/12080300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="gruppieren">
+  <bookmark branch="hid/sc:ModalDialog:RID_SCDLG_GROUP" xml-lang="en-US" id="bm_id3156329"/><bookmark xml-lang="en-US" branch="hid/.uno:Group" id="bm_id9177845" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:Group" xml-lang="en-US" id="bm_id3149786"/><paragraph id="hd_id3153088" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/scalc/01/12080300.xhp" name="Group">Group</link></paragraph>
+  </section>
+  <paragraph l10n="U" role="paragraph" id="par_id3153821" xml-lang="en-US" oldref="2"><variable id="gruppierung"><ahelp hid=".uno:Group" visibility="visible">Defines the selected cell range as a group of rows or columns.</ahelp></variable></paragraph>
+  <section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#dnglgr"/>
+</section>
+  <paragraph xml-lang="en-US" oldref="3" role="paragraph" id="par_id3145069" l10n="U">When you group a cell range, and outline icon appears in the margins next to the group. To hide or show the group, click the icon. To ungroup the selection, choose <emph>Data – Outline -</emph> <link href="text/scalc/01/12080400.xhp" name="Ungroup"><emph>Ungroup</emph></link>.</paragraph>
+  <paragraph role="heading" level="2" id="hd_id3125863" l10n="U" xml-lang="en-US" oldref="4">Include</paragraph>
+  <bookmark branch="hid/SC_HID_SC_GROUP_ROWS" xml-lang="en-US" id="bm_id3150770"/><paragraph role="heading" level="3" id="hd_id3150448" l10n="U" xml-lang="en-US" oldref="6">Rows</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3153194" xml-lang="en-US" oldref="7"><ahelp hid="HID_SC_GROUP_ROWS" visibility="visible">Groups the selected rows.</ahelp></paragraph>
+  <bookmark branch="hid/SC_HID_SC_GROUP_COLS" xml-lang="en-US" id="bm_id3153771"/><paragraph role="heading" level="3" id="hd_id3145786" l10n="U" xml-lang="en-US" oldref="8">Columns</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3146984" xml-lang="en-US" oldref="9"><ahelp hid="HID_SC_GROUP_COLS" visibility="visible">Groups the selected columns.</ahelp></paragraph>
+ </body>
+</helpdocument>

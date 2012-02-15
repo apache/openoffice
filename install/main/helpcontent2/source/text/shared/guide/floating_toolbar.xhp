@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidefloating_toolbarxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Using Toolbars</title>
+<filename>/text/shared/guide/floating_toolbar.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="chapter_all">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152801"><bookmark_value>toolbars;docking/undocking</bookmark_value>
+<bookmark_value>toolbars;viewing/closing</bookmark_value>
+<bookmark_value>closing;toolbars</bookmark_value>
+<bookmark_value>docking;toolbars</bookmark_value>
+<bookmark_value>fixing toolbars</bookmark_value>
+<bookmark_value>detaching toolbars</bookmark_value>
+<bookmark_value>placing toolbars</bookmark_value>
+<bookmark_value>positioning;toolbars</bookmark_value>
+<bookmark_value>moving;toolbars</bookmark_value>
+<bookmark_value>attaching toolbars</bookmark_value>
+<bookmark_value>floating toolbars</bookmark_value>
+<bookmark_value>windows;docking</bookmark_value>
+<bookmark_value>viewing;toolbars</bookmark_value>
+<bookmark_value>showing;toolbars</bookmark_value>
+<bookmark_value>icon bars, see toolbars</bookmark_value>
+<bookmark_value>button bars, see toolbars</bookmark_value>
+</bookmark><comment>mw added one index entry and changed a "toolbars;" entry.</comment><paragraph role="heading" id="hd_id3152801" xml-lang="en-US" level="1" l10n="CHG" oldref="9"><variable id="floating_toolbar"><link href="text/shared/guide/floating_toolbar.xhp" name="Using Toolbars">Using Toolbars</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="CHG" oldref="7">Some toolbar icons, for example the <emph>Font Color</emph> icon, can open another toolbar. Click the arrow next to the icon to open a toolbar containing further icons.</paragraph>
+<paragraph role="paragraph" id="par_id3155450" xml-lang="en-US" l10n="CHG" oldref="8">You now have a choice: either click the icon that you want to activate, or seize the toolbar by its title bar and drag it while holding down the mouse button. </paragraph>
+<paragraph role="heading" id="hd_id733970" xml-lang="en-US" level="2" l10n="NEW">Context of Toolbars</paragraph><comment>UFI: new CWS toolbarbehavior, #i50428 etc</comment><comment>UFI: #i63811</comment><paragraph role="paragraph" id="par_id341196" xml-lang="en-US" l10n="NEW">Some toolbars open automatically depending on the context. For example, when you click inside a table in a text document, the Table toolbar opens. When you click inside a numbered paragraph, the Bullets and Numbering toolbar opens.</paragraph>
+<paragraph role="heading" id="hd_id4224372" xml-lang="en-US" level="3" l10n="NEW">To Close a Toolbar Temporarily</paragraph>
+<paragraph role="paragraph" id="par_id295724" xml-lang="en-US" l10n="NEW">Click the icon in the toolbar's title bar, or choose <emph>Close Toolbar</emph> from the context menu. The toolbar will be shown automatically again when the context becomes active again.</paragraph>
+<paragraph role="heading" id="hd_id1905575" xml-lang="en-US" level="3" l10n="NEW">To Close a Toolbar Permanently</paragraph>
+<paragraph role="paragraph" id="par_id9776909" xml-lang="en-US" l10n="CHG">While the toolbar is visible, choose <emph>View - Toolbars</emph> and click the name of the toolbar to remove the check mark.</paragraph>
+<paragraph role="heading" id="par_idN1077E" xml-lang="en-US" level="2" l10n="NEW">To Show a Closed Toolbar</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10785" xml-lang="en-US" l10n="NEW">Choose <emph>View - Toolbars</emph> and click the name of the toolbar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id7296975" xml-lang="en-US" l10n="NEW">Choose <emph>View - Toolbars - Reset</emph> to reset the toolbars to their default context sensitive behavior. Now some toolbars will be shown automatically, dependent on the context.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="par_idN106E9" xml-lang="en-US" level="2" l10n="NEW">To Make a Toolbar a Floating Toolbar</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN106EF" xml-lang="en-US" l10n="CHG">Click the handle at the start of the toolbar, and drag the toolbar into the document.<comment>UFI: removed a para about floating windows</comment></paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="par_idN106F2" xml-lang="en-US" level="2" l10n="NEW">To Reattach a Floating Toolbar</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN106F7" xml-lang="en-US" l10n="CHG">Drag the title bar of the toolbar to an edge of the document window. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id6154362" xml-lang="en-US" l10n="NEW">To reattach a floating window, drag-and-drop the window's title bar to an edge of the document window. The mouse pointer should be very close to the document window's edge when you release the mouse button.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1510055" xml-lang="en-US" l10n="NEW">Depending on your system's window manager settings, you may also double-click an empty place on the toolbar or window, while holding down the <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>key. Or double-click the title bar of the floating toolbar or window.</paragraph>
+</listitem>
+</list>
+<section id="docking_win">
+<paragraph role="note" id="par_idN107AC" xml-lang="en-US" l10n="NEW">Docking toolbars and windows by drag-and-drop depends on your system's window manager settings. You must enable your system to show the full window contents when you move a window, instead of showing just the outer frame.</paragraph>
+</section>
+</section>
+<section id="relatedtopics">
+<embed href="text/shared/guide/autohide.xhp#autohide"/>
+</section>
+</body>
+</helpdocument>

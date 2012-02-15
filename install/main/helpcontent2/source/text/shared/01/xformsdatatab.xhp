@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared01xformsdatatabxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Data (for XML Form Documents)</title>
+         <filename>/text/shared/01/xformsdatatab.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="data">
+         <paragraph xml-lang="en-US" id="hd_id5766472" role="heading" level="1" l10n="NEW"><link href="text/shared/01/xformsdatatab.xhp">Data (for XML Form Documents)</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id1161534" role="paragraph" l10n="NEW">The Data tab page of the Properties dialog for an XML Form document offers some XML forms settings.</paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00040501.xhp#xformsdatatab"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3994567" role="paragraph" l10n="NEW">The possible settings of the <emph>Data</emph> tab page of a control depend on the respective control. You will only see the options that are available for the current control and context. The following fields are available:</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XML_DATA_MODEL" id="bm_id2136295" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id9461653" role="heading" level="2" l10n="NEW">XML data model</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9239173" role="paragraph" l10n="NEW"><ahelp hid=".">Select a model from the list of all models in the current document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BINDING_NAME" id="bm_id908841" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id2656941" role="heading" level="2" l10n="NEW">Binding</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1481063" role="paragraph" l10n="NEW"><ahelp hid=".">Select or enter the name of a binding. Selecting the name of an existing binding associates the binding with the form control. Entering a new name creates a new binding and associates it with the form control.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BIND_EXPRESSION" id="bm_id9841608" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id7921079" role="heading" level="2" l10n="NEW">Binding expression</paragraph>
+      <paragraph xml-lang="en-US" id="par_id636921" role="paragraph" l10n="NEW"><ahelp hid=".">Enter the DOM node <comment>what's a DOM node? spec doesn't tell</comment>to bind the control model to<comment>what's a control model? spec doesn't tell. may be a typo in spec: control's model?</comment>. Click the ... button for a dialog to enter the XPath expression.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_REQUIRED" id="bm_id4186223" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id2799157" role="heading" level="2" l10n="NEW">Required</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3004547" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies if the item must be included on the XForm.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_RELEVANT" id="bm_id1491134" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id6401867" role="heading" level="2" l10n="NEW">Relevant</paragraph>
+      <paragraph xml-lang="en-US" id="par_id18616" role="paragraph" l10n="NEW"><ahelp hid=".">Declares the item as relevant.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_READONLY" id="bm_id2873622" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id6138492" role="heading" level="2" l10n="NEW">Read-only</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4569231" role="paragraph" l10n="NEW"><ahelp hid=".">Declares the item as read-only.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_CONSTRAINT" id="bm_id2374034" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id291451" role="heading" level="2" l10n="NEW">Constraint</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3341776" role="paragraph" l10n="NEW"><ahelp hid=".">Declares the item as a constraint.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_CALCULATION" id="bm_id1687063" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id5947141" role="heading" level="2" l10n="NEW">Calculation</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1911679" role="paragraph" l10n="NEW"><ahelp hid=".">Declares that the item is calculated.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_DATA_TYPE" id="bm_id8982207" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id9364909" role="heading" level="2" l10n="NEW">Data type</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4473403" role="paragraph" l10n="NEW"><ahelp hid=".">Select a data type which the control should be validated against.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_UID_PROP_REMOVE_DATA_TYPE" id="bm_id3486434" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id2480849" role="heading" level="3" l10n="NEW">x</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4181951" role="paragraph" l10n="NEW"><ahelp hid=".">Select a user-defined data type and click the button to delete the user-defined data type.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_UID_PROP_ADD_DATA_TYPE" id="bm_id3068636" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id2927335" role="heading" level="3" l10n="NEW">+</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2107303" role="paragraph" l10n="NEW"><ahelp hid=".">Click the button to open a dialog where you can enter the name of a new user-defined data type. The new data type inherits all facets from the currently selected data type.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id4071779" role="note" l10n="NEW">The following lists all facets that are valid for data types. Some facets are only available for some data types.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_WHITESPACES" id="bm_id7074190" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id4313791" role="heading" level="3" l10n="NEW">Whitespaces</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4331797" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies how whitespaces are to be handled when a string of the current data type is being processed. Possible values are Preserve, Replace, and Collapse. The sematics follow the definition at http://www.w3.org/TR/xmlschema-2/#rf-whiteSpace.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_PATTERN" id="bm_id5452436" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id4191717" role="heading" level="3" l10n="NEW">Pattern</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2318796" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies a regular expression pattern. Strings validated against the data type must conform to this pattern to be valid. The XSD data type syntax for regular expressions is different from the regular expression syntax used elseswhere in %PRODUCTNAME, for example in the Find &amp; Replace dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_TOTAL_DIGITS" id="bm_id9527878" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id399182" role="heading" level="3" l10n="NEW">Digits (total)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5298318" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies the maximum total number of digits that values of the decimal data type can have.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_FRACTION_DIGITS" id="bm_id6342356" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id7588732" role="heading" level="3" l10n="NEW">Digits (fraction)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id95828" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies the maximum total number of fractional digits that values of the decimal data type can have.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_MAX_INCLUSIVE" id="bm_id166936" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3496200" role="heading" level="3" l10n="NEW">Max. (inclusive)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7599108" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies an inclusive upper bound for values.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_MAX_EXCLUSIVE" id="bm_id6826990" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id888698" role="heading" level="3" l10n="NEW">Max. (exclusive)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3394573" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies an exclusive upper bound for values.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_MIN_INCLUSIVE" id="bm_id6897183" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id7594225" role="heading" level="3" l10n="NEW">Min. (inclusive)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8147221" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies an inclusive lower bound for values.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_MIN_EXCLUSIVE" id="bm_id7003387" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id5081637" role="heading" level="3" l10n="NEW">Min. (exclusive)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9759514" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies an exclusive lower bound for values.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_LENGTH" id="bm_id4897915" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id1614429" role="heading" level="3" l10n="NEW">Length</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1589098" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies the number of characters for a string.</ahelp></paragraph>
+<!-- removed HID 38008 --><comment>UFI: found 37998 which is already in use</comment>
+<paragraph xml-lang="en-US" id="hd_id1278420" role="heading" level="3" l10n="NEW">Length (at least)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8746910" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies the minimum number of characters for a string.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_XSD_MAX_LENGTH" id="bm_id3908810" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id9636524" role="heading" level="3" l10n="NEW">Length (at most)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5675527" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies the maximum number of characters for a string.</ahelp></paragraph>
+   </body>
+</helpdocument>

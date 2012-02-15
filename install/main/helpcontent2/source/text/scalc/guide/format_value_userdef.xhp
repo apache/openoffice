@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguideformat_value_userdefxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">User-defined Number Formats</title>
+         <filename>/text/scalc/guide/format_value_userdef.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143268"><bookmark_value>numbers;user-defined formatting</bookmark_value>
+      <bookmark_value>formatting; user-defined numbers</bookmark_value>
+      <bookmark_value>number formats; millions</bookmark_value>
+      <bookmark_value>format codes; user-defined number formats</bookmark_value>
+</bookmark><comment>mw changed "numbers;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3143268" role="heading" level="1" l10n="U"
+                 oldref="26"><variable id="format_value_userdef"><link href="text/scalc/guide/format_value_userdef.xhp" name="User-defined Number Formats">User-defined Number Formats</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150400" role="paragraph" l10n="U" oldref="1">You can define your own number formats to display numbers in <item type="productname">%PRODUCTNAME</item> Calc.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150767" role="paragraph" l10n="U" oldref="2">As an example, to display the number 10,200,000 as 10.2 Million:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150868" role="listitem" l10n="U" oldref="3">Select the cells to which you want to apply a new, user-defined format.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149664" role="listitem" l10n="U" oldref="4">Choose <emph>Format - Cells - Numbers</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149260" role="listitem" l10n="U" oldref="5">In the <emph>Categories</emph> list box select "User-defined".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148646" role="listitem" l10n="U" oldref="6">In the <emph>Format code</emph> text box enter the following code:</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3152596" role="code" l10n="U" oldref="7">0.0,, "Million"</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3144764" role="listitem" l10n="U" oldref="8">Click OK.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3155417" role="paragraph" l10n="U" oldref="9">The following table shows the effects of rounding, thousands delimiters (,), decimal delimiters (.) and the placeholders # and 0.</paragraph>
+      <table id="tbl_id3153157">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146971" role="tablehead" l10n="U" oldref="10">Number</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154757" role="tablehead" l10n="U" oldref="11">.#,, "Million"</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147338" role="tablehead" l10n="U" oldref="12">0.0,, "Million"</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146920" role="tablehead" l10n="U" oldref="13">#,, "Million"</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147344" role="paragraph" l10n="U" oldref="14">10200000</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147003" role="paragraph" l10n="U" oldref="15">10.2 Million</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3166426" role="paragraph" l10n="U" oldref="16">10.2 Million</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155113" role="paragraph" l10n="U" oldref="17">10 Million</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150369" role="paragraph" l10n="U" oldref="18">500000</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145585" role="paragraph" l10n="U" oldref="19">.5 Million</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154486" role="paragraph" l10n="U" oldref="20">0.5 Million</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146114" role="paragraph" l10n="U" oldref="21">1 Million</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155810" role="paragraph" l10n="U" oldref="22">100000000</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153818" role="paragraph" l10n="U" oldref="23">100. Million</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151241" role="paragraph" l10n="U" oldref="24">100.0 Million</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3144771" role="paragraph" l10n="U" oldref="25">100 Million</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/format_value.xhp#format_value"/>
+         <embed href="text/scalc/guide/currency_format.xhp#currency_format"/>
+         <embed href="text/scalc/guide/text_numbers.xhp#text_numbers"/>
+         <embed href="text/shared/01/05020301.xhp#zahlenformatcodes"/>
+      </section>
+   </body>
+</helpdocument>

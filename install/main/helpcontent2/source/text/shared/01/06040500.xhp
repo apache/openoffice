@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0106040500xml" indexer="include">
+<title id="tit" xml-lang="en-US">AutoCorrect context menu</title>
+<filename>/text/shared/01/06040500.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152823"><bookmark_value>AutoCorrect function; context menu</bookmark_value>
+<bookmark_value>spellcheck; context menus</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3152823" xml-lang="en-US" level="1" l10n="U" oldref="1">AutoCorrect context menu</paragraph>
+<paragraph role="paragraph" id="par_id3146936" xml-lang="en-US" l10n="CHG" oldref="2">To access this menu, right-click a misspelled word in your document. To view the misspelled words in your document, enable <emph>AutoSpellcheck</emph> icon on the Standard toolbar.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_LINGU_REPLACE" id="bm_id3151097" localize="false"/>
+<paragraph role="heading" id="hd_id3153899" xml-lang="en-US" level="2" l10n="U" oldref="4">&lt;Replacement Suggestions&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3147000" xml-lang="en-US" l10n="CHG" oldref="5"><ahelp hid="HID_LINGU_REPLACE">Click the word to replace the highlighted word. Use the AutoCorrect submenu for permanent replacement.</ahelp><comment>UFI: see i60431</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EDITENG_HID_EDITENG_SPELLER_START" id="bm_id3155934" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_LINGU_SPELLING_DLG" id="bm_id3155351" localize="false"/>
+<paragraph role="heading" id="hd_id3153089" xml-lang="en-US" level="2" l10n="U" oldref="6">Spellcheck</paragraph>
+<paragraph role="paragraph" id="par_id3154497" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="HID_LINGU_SPELLING_DLG">Opens the <link href="text/shared/01/06010000.xhp" name="Spellcheck">Spellcheck</link> dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EDITENG_HID_EDITENG_SPELLER_ADDWORD" id="bm_id3154422" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_LINGU_ADD_WORD" id="bm_id3153551" localize="false"/>
+<paragraph role="heading" id="hd_id3149283" xml-lang="en-US" level="2" l10n="U" oldref="8">Add</paragraph>
+<paragraph role="paragraph" id="par_id3158405" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="HID_LINGU_ADD_WORD">Adds the highlighted word to a user-defined dictionary.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EDITENG_HID_EDITENG_SPELLER_IGNORE" id="bm_id3147571" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_LINGU_IGNORE_WORD" id="bm_id3150144" localize="false"/>
+<paragraph role="heading" id="hd_id3152924" xml-lang="en-US" level="2" l10n="U" oldref="10">Ignore all</paragraph>
+<paragraph role="paragraph" id="par_id3151226" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="HID_LINGU_IGNORE_WORD">Ignores all instances of the highlighted word in the current document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EDITENG_HID_EDITENG_SPELLER_AUTOCORRECT" id="bm_id3145345" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_LINGU_AUTOCORR" id="bm_id3145313" localize="false"/>
+<paragraph role="heading" id="hd_id3157958" xml-lang="en-US" level="2" l10n="U" oldref="12">AutoCorrect</paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="HID_LINGU_AUTOCORR">To always replace the highlighted word, click a word in the list. The word pair is stored in the replacement table under Tools - AutoCorrect Options - Replace.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_LINGU_WORD_LANGUAGE" id="bm_id3149398" localize="false"/>
+<paragraph role="heading" id="hd_id3146797" xml-lang="en-US" level="2" l10n="U" oldref="15">Word is &lt;name of language&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3150443" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_LINGU_WORD_LANGUAGE">Changes the language settings for the highlighted word, if the word is found in another dictionary.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_LINGU_PARA_LANGUAGE" id="bm_id3150503" localize="false"/>
+<paragraph role="heading" id="hd_id3166411" xml-lang="en-US" level="2" l10n="U" oldref="17">Paragraph is &lt;name of language&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3148925" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_LINGU_PARA_LANGUAGE">Changes the language setting for the paragraph that contains the highlighted word, if the word is found in another dictionary.</ahelp></paragraph>
+</body>
+</helpdocument>

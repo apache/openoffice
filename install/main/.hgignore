@@ -1,0 +1,73 @@
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+syntax: regexp
+
+# source additions:
+^external/unowinreg/unowinreg.dll$
+
+# configure output:
+^Makefile$
+^[0-9A-Za-z-]+Env\.Set(\.sh)?$
+^bootstrap$
+^config\.log$
+^config\.parms$
+^config\.status$
+^makefile\.mk$
+^set_soenv$
+^visibility\.cxx$
+^warn$
+
+# bootstrap output:
+^dmake/(.+/)?Makefile$
+^dmake/(.+/)?\.deps$
+^dmake/(.+/)?\.dirstamp$
+^dmake/.+\.o$
+^dmake/config\.h$
+^dmake/config\.log$
+^dmake/config\.status$
+^dmake/dmake$
+^dmake/dmake\.exe$
+^dmake/dmakeroot\.h$
+^dmake/stamp-h1$
+^dmake/startup/config\.mk$
+
+# build output:
+^[^/]+/common(\.pro)?$
+^[^/]+/unxfbsd(\.pro)?$
+^[^/]+/unxlngi\d+(\.pro)?$
+^[^/]+/unxlngx\d+(\.pro)?$
+^[^/]+/unxmacxi(\.pro)?$
+^[^/]+/unxsoli\d+(\.pro)?$
+^[^/]+/unxsols\d+(\.pro)?$
+^[^/]+/wntgcci(\.pro)?$
+^[^/]+/wntmsci\d+(\.pro)?$
+^solver$
+
+# Emacs backups (XXX~, #XXX#, .#XXX):
+^(.*/)?[^/]+~$
+^(.*/)?\#[^/]+\#$
+^(.*/)?\.\#[^/]+$
+
+# VIM swap files (.XXX.swp):
+^(.*/)?(\.[^/]+)?\.swp$
+
+^(.*/)?\.DS_Store$

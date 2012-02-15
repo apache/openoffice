@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0103151100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Master Layout</title>
+<filename>/text/simpress/01/03151100.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="master">
+<!-- removed HID SID_MASTER_LAYOUTS_SLIDE --><paragraph role="heading" id="par_idN10537" xml-lang="en-US" level="1" l10n="NEW"><link href="text/simpress/01/03151100.xhp">Master Layout</link></paragraph>
+<paragraph role="paragraph" id="par_idN1053B" xml-lang="en-US" l10n="CHG"><ahelp hid="SID_MASTER_LAYOUTS_SLIDE">Adds or removes header, footer, date, and slide number placeholders to the layout of the slide master.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000403.xhp#master"/>
+</section>
+<section id="placeholders">
+<paragraph role="heading" id="par_idN1054A" xml-lang="en-US" level="2" l10n="NEW">Placeholders</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_HEADER" id="bm_id8343455" localize="false"/><paragraph role="heading" id="par_idN10556" xml-lang="en-US" level="3" l10n="NEW">Header</paragraph>
+<paragraph role="paragraph" id="par_idN1055A" xml-lang="en-US" l10n="CHG"><ahelp hid="sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_HEADER">Adds a header placeholder to the slide master for notes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_DATE" id="bm_id2532731" localize="false"/><paragraph role="heading" id="par_idN10571" xml-lang="en-US" level="3" l10n="NEW">Date/time</paragraph>
+<paragraph role="paragraph" id="par_idN10575" xml-lang="en-US" l10n="CHG"><ahelp hid="sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_DATE">Adds a date/time placeholder to the slide master.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_FOOTER" id="bm_id3733634" localize="false"/><paragraph role="heading" id="par_idN1058C" xml-lang="en-US" level="3" l10n="NEW">Footer</paragraph>
+<paragraph role="paragraph" id="par_idN10590" xml-lang="en-US" l10n="CHG"><ahelp hid="sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_FOOTER">Adds a footer placeholder to the slide master.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_PAGE_NUMBER" id="bm_id2174443" localize="false"/><paragraph role="heading" id="par_idN105A7" xml-lang="en-US" level="3" l10n="NEW">Slide number</paragraph>
+<paragraph role="paragraph" id="par_idN105AB" xml-lang="en-US" l10n="CHG"><ahelp hid="sd:CheckBox:RID_SD_DLG_MASTER_LAYOUT:CB_PAGE_NUMBER">Adds a slide number placeholder to the slide master.</ahelp></paragraph>
+</section>
+</body>
+</helpdocument>

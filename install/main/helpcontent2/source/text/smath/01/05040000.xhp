@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0105040000xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Alignment</title>
+<filename>/text/smath/01/05040000.xhp</filename>
+</topic>
+</meta>
+<body>
+
+
+  <bookmark branch="index" xml-lang="en-US" id="bm_id3148730"><bookmark_value>aligning; multi-line formulas</bookmark_value><bookmark_value>multi-line formulas; aligning</bookmark_value></bookmark><bookmark branch="hid/.uno:ChangeAlignment" xml-lang="en-US" id="bm_id3145596"/><paragraph role="heading" level="1" id="hd_id3148730" l10n="U" xml-lang="en-US" oldref="1">Alignment</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3152999" xml-lang="en-US" oldref="2"><variable id="ausrichtungtext"><ahelp hid="SID_ALIGN" visibility="visible">You can define the alignment of multi-line formulas as well as formulas with several elements in one line.</ahelp> Create multi-line formulas by entering a <emph>NEWLINE</emph> command in the <emph>Commands</emph> window.</variable></paragraph>
+  <section id="howtoget">
+  <embed href="text/smath/00/00000004.xhp#fmtarg"/>
+</section>
+  <paragraph role="heading" level="2" id="hd_id3153737" l10n="U" xml-lang="en-US" oldref="3">Horizontal</paragraph>
+  <paragraph role="paragraph" id="par_id3148388" l10n="U" xml-lang="en-US" oldref="4">Specifies the type of horizontal alignment for multi-line formulas.</paragraph>
+  <bookmark branch="hid/starmath:RadioButton:RID_ALIGNDIALOG:1" xml-lang="en-US" id="bm_id3156063"/><paragraph role="heading" level="3" id="hd_id3148768" l10n="U" xml-lang="en-US" oldref="5">Left</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150566" xml-lang="en-US" oldref="6"><ahelp hid="STARMATH:RADIOBUTTON:RID_ALIGNDIALOG:1" visibility="visible">Aligns the selected elements of a formula to the left.</ahelp></paragraph>
+  <paragraph role="tip" id="par_id3149709" l10n="U" xml-lang="en-US" oldref="21">Text is always aligned left. </paragraph>
+  <bookmark branch="hid/starmath:RadioButton:RID_ALIGNDIALOG:2" xml-lang="en-US" id="bm_id3151189"/><paragraph role="heading" level="3" id="hd_id3154646" l10n="U" xml-lang="en-US" oldref="7">Centered</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150762" xml-lang="en-US" oldref="8"><ahelp hid="STARMATH:RADIOBUTTON:RID_ALIGNDIALOG:2" visibility="visible">Aligns the elements of a formula to the center.</ahelp></paragraph>
+  <bookmark branch="hid/starmath:RadioButton:RID_ALIGNDIALOG:3" xml-lang="en-US" id="bm_id3147565"/><paragraph role="heading" level="3" id="hd_id3145204" l10n="U" xml-lang="en-US" oldref="9">Right</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3151264" xml-lang="en-US" oldref="10"><ahelp hid="STARMATH:RADIOBUTTON:RID_ALIGNDIALOG:3" visibility="visible">Aligns the elements of a formula to the right.</ahelp></paragraph>
+  <bookmark branch="hid/starmath:PushButton:RID_ALIGNDIALOG:1" xml-lang="en-US" id="bm_id3153153"/><paragraph role="heading" level="2" id="hd_id3150261" l10n="U" xml-lang="en-US" oldref="19">Default</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3153622" xml-lang="en-US" oldref="20"><ahelp hid="STARMATH:PUSHBUTTON:RID_ALIGNDIALOG:1" visibility="visible">Click here to save your changes as the default settings for new formulas.</ahelp> A security response will appear before saving.</paragraph>
+
+ </body>
+</helpdocument>

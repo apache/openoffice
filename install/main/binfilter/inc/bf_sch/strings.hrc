@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include <bf_sfx2/sfx.hrc>
+
+//#define RID_APP_START 30000
+#define STR_LINES                           (RID_APP_START +  3)
+#define STR_COLUMNS 						(RID_APP_START +  4)
+#define STR_BARS                            (RID_APP_START +  5)
+#define STR_AREAS                           (RID_APP_START +  6)
+#define STR_CIRCLES 						(RID_APP_START +  7)
+
+#define STR_NORMAL                          (RID_APP_START + 10)
+#define STR_STACKED 						(RID_APP_START + 11)
+#define STR_PERCENT 						(RID_APP_START + 12)
+#define STR_DEEP                            (RID_APP_START + 13)
+
+#define STR_XY      						(RID_APP_START + 16)
+#define STR_XYZ     						(RID_APP_START + 17)
+
+#define STR_2D                              (RID_APP_START + 20)
+#define STR_3D                              (RID_APP_START + 21)
+
+#define STR_DIAGRAM                         (RID_APP_START + 31)
+#define STR_DIAGRAM_ROW						(RID_APP_START + 43)
+
+
+
+#define STR_DEFAULTVIEW 		 			(RID_APP_START + 90)
+
+
+#define STR_OPEN_DOCUMENT		   			(RID_APP_START + 105)
+#define STR_SAVE_DOCUMENT		   			(RID_APP_START + 106)
+#define STR_GRAPHIC 			   			(RID_APP_START + 108)
+#define STR_CHART_DOCUMENT                  (RID_APP_START + 109)
+#define STR_BAD_PASSWORD_OR_FILE_CORRUPTED  (RID_APP_START + 110)
+#define STR_CHART_DOCUMENT_FULLTYPE_40      (RID_APP_START + 114)
+
+#define STR_CHART_DOCUMENT_FULLTYPE_31      (RID_APP_START + 118)
+#define STR_CHART_DOCUMENT_FULLTYPE_50      (RID_APP_START + 119)
+
+// Folgende Strings muessen raus, wenn allg. Controls
+// vom Svx verwendet werden
+#define STR_AREA                            (RID_APP_START + 122)
+#define STR_LINE                            (RID_APP_START + 123)
+
+
+#define STR_REGRESSION_LINEAR               (RID_APP_START + 135)
+#define STR_REGRESSION_LOG                  (RID_APP_START + 136)
+#define STR_REGRESSION_EXP                  (RID_APP_START + 137)
+#define STR_REGRESSION_POWER                (RID_APP_START + 138)
+
+
+
+
+
+
+
+
+#define STR_STATISTICS_IN_LEGEND			(RID_APP_START + 180)
+
+#define STR_CHART_DOCUMENT_FULLTYPE_60		(RID_APP_START + 182)
+
+
+// ids must not exceed RID_APP_START + 499
+// ids >= RID_APP_START + 500 are defined in glob.hrc

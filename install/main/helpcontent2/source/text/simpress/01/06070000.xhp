@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0106070000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Interaction</title>
+<filename>/text/simpress/01/06070000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153246"><bookmark_value>interactions; objects in interactive presentations</bookmark_value>
+<bookmark_value>programs run by mouse click in presentations</bookmark_value>
+<bookmark_value>running macros/programs in presentations</bookmark_value>
+<bookmark_value>macros; running in presentations</bookmark_value>
+<bookmark_value>presentations;exiting by interaction</bookmark_value>
+<bookmark_value>exiting;by clicking objects</bookmark_value>
+</bookmark><comment>mw made "exiting..." a two level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:AnimationEffects" id="bm_id3555838" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AnimationEffects" id="bm_id3152874" localize="false"/><paragraph role="heading" id="hd_id3153246" xml-lang="en-US" level="1" l10n="U" oldref="1">Interaction</paragraph>
+<paragraph role="paragraph" id="par_id3154762" xml-lang="en-US" l10n="U" oldref="2"><variable id="interaktiontext"><ahelp hid=".uno:AnimationEffects">Defines how the selected object behaves when you click on it during a slide show.</ahelp>
+</variable><comment>UFI: Deleted many paras, see #60550</comment></paragraph>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000407.xhp#interaktion"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:TP_ANIMATION:LB_ACTION" id="bm_id3150432" localize="false"/><paragraph role="heading" id="hd_id3145116" xml-lang="en-US" level="2" l10n="U" oldref="3">Action at mouse click</paragraph>
+<paragraph role="paragraph" id="par_id3153955" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="SD:LISTBOX:TP_ANIMATION:LB_ACTION">Specifies the action that will run when you click the selected object during a slide show.</ahelp> You can also assign actions to grouped objects.</paragraph>
+<paragraph role="heading" id="hd_id3150397" xml-lang="en-US" level="2" l10n="U" oldref="4">No action</paragraph>
+<paragraph role="paragraph" id="par_id3147405" xml-lang="en-US" l10n="U" oldref="45">No action occurs.</paragraph>
+<paragraph role="heading" id="hd_id3145237" xml-lang="en-US" level="2" l10n="U" oldref="5">Go to previous slide</paragraph>
+<paragraph role="paragraph" id="par_id3157871" xml-lang="en-US" l10n="U" oldref="46">Moves back one slide in the slide show.</paragraph>
+<paragraph role="heading" id="hd_id3157900" xml-lang="en-US" level="2" l10n="U" oldref="6">Go to next slide</paragraph>
+<paragraph role="paragraph" id="par_id3150655" xml-lang="en-US" l10n="U" oldref="47">Moves forward one slide in the slide show.</paragraph>
+<paragraph role="heading" id="hd_id3146879" xml-lang="en-US" level="2" l10n="U" oldref="7">Go to first slide</paragraph>
+<paragraph role="paragraph" id="par_id3150479" xml-lang="en-US" l10n="U" oldref="48">Jumps to the first slide in the slide show.</paragraph>
+<paragraph role="heading" id="hd_id3148725" xml-lang="en-US" level="2" l10n="U" oldref="8">Go to last slide</paragraph>
+<paragraph role="paragraph" id="par_id3149891" xml-lang="en-US" l10n="U" oldref="49">Jumps to the last slide in the slide show.</paragraph>
+<paragraph role="heading" id="hd_id3155258" xml-lang="en-US" level="2" l10n="U" oldref="9">Go to page or object</paragraph>
+<paragraph role="paragraph" id="par_id3148585" xml-lang="en-US" l10n="U" oldref="50">Jumps to a slide or a named object in a slide.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_CTL_ACTION_DLG_1" id="bm_id3149511" localize="false"/><paragraph role="heading" id="hd_id3153082" xml-lang="en-US" level="2" l10n="CHG" oldref="10">Target</paragraph>
+<paragraph role="paragraph" id="par_id3153934" xml-lang="en-US" l10n="U" oldref="51"><ahelp hid="HID_CTL_ACTION_DLG_1">Lists the slides and the objects that you can target.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:TP_ANIMATION:EDT_BOOKMARK" id="bm_id3153000" localize="false"/><paragraph role="heading" id="hd_id3154561" xml-lang="en-US" level="3" l10n="U" oldref="11">Slide / Object</paragraph>
+<paragraph role="paragraph" id="par_id3153006" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="SD_EDIT_TP_ANIMATION_EDT_BOOKMARK">Enter the name of the slide or the object that you want to look for.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:PushButton:TP_ANIMATION:BTN_SEEK" id="bm_id3153566" localize="false"/><paragraph role="heading" id="hd_id3145162" xml-lang="en-US" level="3" l10n="U" oldref="12">Find</paragraph>
+<paragraph role="paragraph" id="par_id3154501" xml-lang="en-US" l10n="U" oldref="54"><ahelp hid="SD:PUSHBUTTON:TP_ANIMATION:BTN_SEEK">Searches for the specified slide or object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_CTL_ACTION_DLG_2" id="bm_id3149879" localize="false"/><paragraph role="heading" id="hd_id3150128" xml-lang="en-US" level="2" l10n="U" oldref="13">Go to document</paragraph>
+<paragraph role="paragraph" id="par_id3153730" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="HID_CTL_ACTION_DLG_2">Opens and displays a file during a slide show. If you select a $[officename] file as the target document, you can also specify the page that will open.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150018" xml-lang="en-US" level="2" l10n="U" oldref="14">Document</paragraph>
+<paragraph role="paragraph" id="par_id3155931" xml-lang="en-US" l10n="U" oldref="56">Define the location of the target document.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:TP_ANIMATION:EDT_DOCUMENT" id="bm_id3148391" localize="false"/><paragraph role="heading" id="hd_id3155437" xml-lang="en-US" level="3" l10n="U" oldref="15">Document</paragraph>
+<paragraph role="paragraph" id="par_id3150566" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="SD:EDIT:TP_ANIMATION:EDT_DOCUMENT">Enter a path to the file you want to open, or click <emph>Browse </emph>to locate the file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:PushButton:TP_ANIMATION:BTN_SEARCH" id="bm_id3151017" localize="false"/><paragraph role="heading" id="hd_id3150658" xml-lang="en-US" level="3" l10n="U" oldref="16">Browse</paragraph>
+<paragraph role="paragraph" id="par_id3156061" xml-lang="en-US" l10n="U" oldref="58"><ahelp hid="SD:PUSHBUTTON:TP_ANIMATION:BTN_SEARCH">Locate the file you want to open.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148776" xml-lang="en-US" level="2" l10n="U" oldref="18">Play sound</paragraph>
+<paragraph role="paragraph" id="par_id3155816" xml-lang="en-US" l10n="U" oldref="60">Plays a sound file.</paragraph>
+<paragraph role="heading" id="hd_id3147539" xml-lang="en-US" level="2" l10n="U" oldref="19">Sound</paragraph>
+<paragraph role="paragraph" id="par_id3150467" xml-lang="en-US" l10n="U" oldref="61">Define the location of the sound file.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:TP_ANIMATION:EDT_SOUND" id="bm_id3153925" localize="false"/><paragraph role="heading" id="hd_id3154869" xml-lang="en-US" level="3" l10n="U" oldref="20">Sound</paragraph>
+<paragraph role="paragraph" id="par_id3155986" xml-lang="en-US" l10n="U" oldref="62"><ahelp hid="SD:EDIT:TP_ANIMATION:EDT_SOUND">Enter a path to the sound file you want to open, or click <emph>Browse </emph>to locate the file.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155401" xml-lang="en-US" level="3" l10n="U" oldref="21">Browse</paragraph>
+<paragraph role="paragraph" id="par_id3147171" xml-lang="en-US" l10n="U" oldref="63">Locate the sound file you want to play.</paragraph>
+<paragraph role="note" id="par_id3156318" xml-lang="en-US" l10n="U" oldref="64">If you did not install sound files with $[officename], you can run the $[officename] Setup program again and select <emph>Modify</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3154646" xml-lang="en-US" level="3" l10n="U" oldref="22">Play</paragraph>
+<paragraph role="paragraph" id="par_id3145202" xml-lang="en-US" l10n="U" oldref="65">Plays the selected sound file.</paragraph>
+<paragraph role="heading" id="hd_id3154260" xml-lang="en-US" level="2" l10n="U" oldref="35">Run program</paragraph>
+<paragraph role="paragraph" id="par_id3155357" xml-lang="en-US" l10n="U" oldref="79">Starts a program during a slide show.</paragraph>
+<paragraph role="heading" id="hd_id3149157" xml-lang="en-US" level="2" l10n="U" oldref="36">Program</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:TP_ANIMATION:EDT_PROGRAM" id="bm_id3148911" localize="false"/><paragraph role="heading" id="hd_id3154277" xml-lang="en-US" level="3" l10n="U" oldref="37">Program</paragraph>
+<paragraph role="paragraph" id="par_id3148918" xml-lang="en-US" l10n="U" oldref="81"><ahelp hid="SD_EDIT_TP_ANIMATION_EDT_PROGRAM">Enter a path to the program you want to start, or click <emph>Browse </emph>to locate the program.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3159269" xml-lang="en-US" level="3" l10n="U" oldref="38">Browse</paragraph>
+<paragraph role="paragraph" id="par_id3154097" xml-lang="en-US" l10n="U" oldref="82">Locate the program you want to start.</paragraph>
+<paragraph role="heading" id="hd_id3152940" xml-lang="en-US" level="2" l10n="U" oldref="39">Run macro</paragraph>
+<paragraph role="paragraph" id="par_id3153681" xml-lang="en-US" l10n="U" oldref="83">Runs a macro during the slide show.</paragraph>
+<paragraph role="heading" id="hd_id3149916" xml-lang="en-US" level="2" l10n="U" oldref="40">Macro</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:TP_ANIMATION:EDT_MACRO" id="bm_id3148618" localize="false"/><paragraph role="heading" id="hd_id3149804" xml-lang="en-US" level="3" l10n="U" oldref="41">Macro</paragraph>
+<paragraph role="paragraph" id="par_id3148625" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid="SD_EDIT_TP_ANIMATION_EDT_MACRO">Enter a path to the macro you want to run, or click <emph>Browse </emph>to locate the macro.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150628" xml-lang="en-US" level="3" l10n="U" oldref="42">Browse</paragraph>
+<paragraph role="paragraph" id="par_id3148417" xml-lang="en-US" l10n="U" oldref="86">Locate the macro you want to run.</paragraph>
+<paragraph role="heading" id="hd_id3150424" xml-lang="en-US" level="2" l10n="U" oldref="43">Exit presentation</paragraph>
+<paragraph role="paragraph" id="par_id3154799" xml-lang="en-US" l10n="U" oldref="87">Ends the presentation.</paragraph>
+<paragraph role="heading" id="par_idN10AE2" xml-lang="en-US" level="2" l10n="NEW">Start object action</paragraph>
+<paragraph role="paragraph" id="par_idN10AE6" xml-lang="en-US" l10n="NEW">You can choose the "Start object action" entry for inserted OLE objects.</paragraph>
+<paragraph role="heading" id="par_idN10AE9" xml-lang="en-US" level="3" l10n="NEW">Edit</paragraph>
+<paragraph role="paragraph" id="par_idN10AED" xml-lang="en-US" l10n="NEW">Opens the object in edit mode.</paragraph>
+</body>
+</helpdocument>

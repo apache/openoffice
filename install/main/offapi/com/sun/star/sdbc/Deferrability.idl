@@ -1,0 +1,73 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sdbc_Deferrability_idl__ 
+#define __com_sun_star_sdbc_Deferrability_idl__ 
+ 
+ module com {  module sun {  module star {  module sdbc { 
+ 
+ 
+/** indicates the Deferrability of key constraints.
+ */
+published constants Deferrability
+{ 
+	 
+	/** A possible value for the column <code>DEFERRABILITY</code> 
+			 in the 
+			 <code>XResultSet</code> objects returned by the methods 
+			 <code>getImportedKeys</code>,  <code>getExportedKeys</code>, 
+			 and <code>getCrossReference</code>. 
+			 <P>Indicates deferrability.  See SQL-92 for a definition.
+	 
+<!-- JRH: This and next two comments are identical. Is something missing? 
+			INITIALLY_DEFERRED, INITIALLY_IMMEDIATE, and NONE?              -->
+*/
+	const long INITIALLY_DEFERRED  = 5; 
+	//------------------------------------------------------------------------- 
+     
+	/** A possible value for the column <code>DEFERRABILITY</code> 
+			 in the 
+			 <code>XResultSet</code> objects returned by the methods 
+			 <code>getImportedKeys</code>,  <code>getExportedKeys</code>, 
+			 and <code>getCrossReference</code>. 
+			 <P>Indicates deferrability.  See SQL-92 for a definition.
+	 */
+	const long INITIALLY_IMMEDIATE  = 6; 
+	//------------------------------------------------------------------------- 
+     
+	/** A possible value for the column <code>DEFERRABILITY</code> 
+			 in the 
+			 <code>XResultSet</code> objects returned by the methods 
+			 <code>getImportedKeys</code>,  <code>getExportedKeys</code>, 
+			 and <code>getCrossReference</code>. 
+			 <P>Indicates deferrability.  See SQL-92 for a definition.
+	 */
+	const long NONE  		= 7; 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*=========================================================================== 
+===========================================================================*/ 
+#endif 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0106060000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Custom Animation Pane</title>
+<filename>/text/simpress/01/06060000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-12-11T09:47:34">UFI: renewed according to spec "presentationengine.sxw"
+YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<section id="effekt">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148837"><bookmark_value>sounds; for effects</bookmark_value>
+<bookmark_value>effects; sounds</bookmark_value>
+<bookmark_value>sounds; formats</bookmark_value>
+<bookmark_value>presentations; ordering of effects</bookmark_value>
+<bookmark_value>lists;animations</bookmark_value>
+<bookmark_value>animations;list of</bookmark_value>
+</bookmark><comment>mw added "lists;" and "animations;"</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:EffectWindow" id="bm_id3151244" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:CustomAnimation" id="bm_id2649006" localize="false"/>
+<paragraph role="heading" id="hd_id3148837" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/simpress/01/06060000.xhp" name="Effects">Custom Animation Pane</link></paragraph>
+<paragraph role="paragraph" id="par_id3144773" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="effekttext"><ahelp hid=".uno:EffectWindow">Assigns effects to selected objects.</ahelp>
+</variable></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000407.xhp#effekt"/>
+</section>
+<paragraph role="heading" id="par_idN1078E" xml-lang="en-US" level="2" l10n="NEW">Animation List</paragraph>
+<paragraph role="paragraph" id="par_idN10792" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The animation list displays all animations for the current slide. </ahelp></paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10798" xml-lang="en-US" l10n="NEW">Each slide has one main animation that runs when the slide is shown.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1079C" xml-lang="en-US" l10n="NEW">More animations may be present, which run when a shape is shown. If any of these animated shapes are present, they are listed in the lower half of the animation list. Tabs display the name of each shape that runs an animation.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_idN1079F" xml-lang="en-US" l10n="NEW">Each list entry can consist of the following columns, from left to right:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN107A5" xml-lang="en-US" l10n="NEW">An optional + character signals that the text paragraphs are animated.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN107A9" xml-lang="en-US" l10n="NEW">The second column shows the execution number of the animation.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN107AD" xml-lang="en-US" l10n="NEW">Column three shows a mouse icon if the animation is started by a mouse click, and a clock if the animation starts after the previous animation ends.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN107B1" xml-lang="en-US" l10n="NEW">In column four, an icon shows the animation effect.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN107B5" xml-lang="en-US" l10n="NEW">The fifth column shows the name of the shape for this animation effect and optionally the first characters of animated text.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PB_ADD_EFFECT" id="bm_id5084688" localize="false"/>
+<paragraph role="heading" id="par_idN107B8" xml-lang="en-US" level="2" l10n="NEW">Add</paragraph>
+<paragraph role="paragraph" id="par_idN107BC" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/simpress/01/animationeffect.xhp">Custom Animation</link> dialog to add another animation effect for the selected object on the slide.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PB_CHANGE_EFFECT" id="bm_id5264137" localize="false"/>
+<paragraph role="heading" id="par_idN107CD" xml-lang="en-US" level="2" l10n="NEW">Change</paragraph>
+<paragraph role="paragraph" id="par_idN107D1" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/simpress/01/animationeffect.xhp">Custom Animation</link> dialog to change the animation effect for the selected entry on the animation list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PB_REMOVE_EFFECT" id="bm_id6661275" localize="false"/>
+<paragraph role="heading" id="par_idN107E2" xml-lang="en-US" level="2" l10n="NEW">Remove</paragraph>
+<paragraph role="paragraph" id="par_idN107E6" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Removes the selected animation effects from the animation list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_LB_START" id="bm_id2659993" localize="false"/>
+<paragraph role="heading" id="par_idN107E9" xml-lang="en-US" level="2" l10n="NEW">Start</paragraph>
+<paragraph role="paragraph" id="par_idN107ED" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Displays the start property of the selected animation effect.</ahelp> The following start properties are available:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN107F3" xml-lang="en-US" l10n="NEW">
+<emph>On click</emph> - the animation stops at this effect until the next mouse click.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN107FA" xml-lang="en-US" l10n="NEW">
+<emph>With previous</emph> - the animation runs immediately.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10801" xml-lang="en-US" l10n="NEW">
+<emph>After previous</emph> - the animation runs as soon as the previous animation ends.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_LB_PROPERTY" id="bm_id3262733" localize="false"/><comment>UFI: removed help id</comment>
+<paragraph role="heading" id="par_idN10807" xml-lang="en-US" level="2" l10n="NEW">Property</paragraph>
+<paragraph role="paragraph" id="par_idN1080B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Selects the additional properties of the animation. Click the <emph>...</emph> button to open the <link href="text/simpress/01/effectoptions.xhp">Effect Options</link> dialog, where you can select and apply properties.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_CB_SPEED" id="bm_id5313272" localize="false"/>
+<paragraph role="heading" id="par_idN10820" xml-lang="en-US" level="2" l10n="NEW">Speed</paragraph>
+<paragraph role="paragraph" id="par_idN10824" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the speed or duration of the selected animation effect.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PB_MOVE_UP" id="bm_id9049348" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PB_MOVE_DOWN" id="bm_id214545" localize="false"/>
+<paragraph role="heading" id="par_idN10827" xml-lang="en-US" level="2" l10n="NEW">Change order</paragraph>
+<paragraph role="paragraph" id="par_idN1082B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click one of the buttons to move the selected animation effect up or down in the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PB_PLAY" id="bm_id4920499" localize="false"/>
+<paragraph role="heading" id="par_idN1082E" xml-lang="en-US" level="2" l10n="NEW">Play</paragraph>
+<paragraph role="paragraph" id="par_idN10832" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Plays the selected animation effect in the preview.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PB_SLIDE_SHOW" id="bm_id1275978" localize="false"/>
+<paragraph role="heading" id="par_idN10835" xml-lang="en-US" level="2" l10n="NEW">Slide Show</paragraph>
+<paragraph role="paragraph" id="par_idN10839" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Starts the slide show from the current slide.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_CB_AUTOPREVIEW" id="bm_id5902890" localize="false"/>
+<paragraph role="heading" id="par_idN1083C" xml-lang="en-US" level="2" l10n="NEW">Automatic preview</paragraph>
+<paragraph role="paragraph" id="par_idN10840" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to preview new or edited effects on the slide while you assign them.</ahelp></paragraph>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/animated_objects.xhp#animated_objects"/>
+</section>
+</body>
+</helpdocument>

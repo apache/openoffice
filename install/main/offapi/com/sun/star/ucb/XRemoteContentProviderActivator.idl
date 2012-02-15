@@ -1,0 +1,70 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_ucb_XRemoteContentProviderActivator_idl__
+#define __com_sun_star_ucb_XRemoteContentProviderActivator_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+module com { module sun { module star { module ucb {
+
+ published interface XContentProviderManager;
+
+//============================================================================
+/** This interface should be implemented together with
+	<type>XRemoteContentProviderAcceptor</type>	and allows for a lazy
+    implementation of
+	<member>XRemoteContentProviderAcceptor::addRemoteContentProvider</member>.
+
+	The way this works might change, therefore this interface is marked as
+	deprectated.
+
+	@deprecated
+ */
+published interface XRemoteContentProviderActivator: com::sun::star::uno::XInterface
+{
+	//------------------------------------------------------------------------
+	/** Activate (i.e., register at the broker) the remote content providers
+		that until now have only been remembered by
+		<member>XRemoteContentProviderAcceptor::addRemoteContentProvider</member>,
+        but not registered.
+
+        <p>This allows for
+		<member>XRemoteContentProviderAcceptor::addRemoteContentProvider</member>
+		to be implemented in a layz fashion (remember the remote content
+		providers, but do not register them right away), which can increase
+		performance in certain situations.  But it is not required that an
+		implementation of <type>XRemoteContentProviderAcceptor</type> uses this
+        lazy strategy (and thus also implements this interface).
+
+		@return
+		the broker at which the remote content providers have been registered.
+	 */
+	XContentProviderManager activateRemoteContentProviders();
+};
+
+}; }; }; };
+
+#endif

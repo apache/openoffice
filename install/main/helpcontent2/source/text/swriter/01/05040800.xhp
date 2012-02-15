@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105040800xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text Grid</title>
+<filename>/text/swriter/01/05040800.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="textraster">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150760"><bookmark_value>text grid for Asian layout</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150760" xml-lang="en-US" level="1" l10n="U" oldref="18"><link href="text/swriter/01/05040800.xhp" name="Text Grid">Text Grid</link></paragraph>
+<paragraph role="paragraph" id="par_id3151171" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid=".">Adds a text grid to the current page style. This option is only available if Asian language support is enabled under <emph>Language Settings - Languages</emph> in the Options dialog box.</ahelp></paragraph>
+</section>
+<embed href="text/shared/00/00000007.xhp#asiahinweis"/>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#textraster"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TEXTGRID_PAGE:RB_NOGRID" id="bm_id3145579" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TEXTGRID_PAGE:RB_LINESGRID" id="bm_id3145584" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TEXTGRID_PAGE:RB_CHARSGRID" id="bm_id3145588" localize="false"/>
+<paragraph role="heading" id="hd_id3154101" xml-lang="en-US" level="2" l10n="U" oldref="16">Grid</paragraph>
+<paragraph role="paragraph" id="par_id3149805" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="SW_RADIOBUTTON_TP_TEXTGRID_PAGE_RB_CHARSGRID">Adds or removes a text grid for lines or characters to the current page style.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153537" xml-lang="en-US" level="2" l10n="U" oldref="14">Grid layout</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_TEXTGRID_PAGE:NF_LINESPERPAGE" id="bm_id3154570" localize="false"/>
+<paragraph role="heading" id="hd_id3154478" xml-lang="en-US" level="3" l10n="U" oldref="12">Lines per page</paragraph>
+<paragraph role="paragraph" id="par_id3151308" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SW_NUMERICFIELD_TP_TEXTGRID_PAGE_NF_LINESPERPAGE">Enter the maximum number of lines that you want on a page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_TEXTGRID_PAGE:NF_CHARSPERLINE" id="bm_id3153668" localize="false"/>
+<paragraph role="heading" id="hd_id3152957" xml-lang="en-US" level="3" l10n="U" oldref="10">Characters per line</paragraph>
+<paragraph role="paragraph" id="par_id3153674" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SW_NUMERICFIELD_TP_TEXTGRID_PAGE_NF_CHARSPERLINE">Enter the maximum number of characters that you want on a line.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_TEXTGRID_PAGE:MF_TEXTSIZE" id="bm_id3149696" localize="false"/>
+<paragraph role="heading" id="hd_id3149684" xml-lang="en-US" level="3" l10n="U" oldref="8">Max. base text size</paragraph>
+<paragraph role="paragraph" id="par_id3154193" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SW_METRICFIELD_TP_TEXTGRID_PAGE_MF_TEXTSIZE">Enter the maximum base text size. A large value results in less characters per line.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_TEXTGRID_PAGE:MF_RUBYSIZE" id="bm_id3143276" localize="false"/>
+<paragraph role="heading" id="hd_id3155182" xml-lang="en-US" level="3" l10n="U" oldref="6">Max. Ruby text size</paragraph>
+<paragraph role="paragraph" id="par_id3143283" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="SW_METRICFIELD_TP_TEXTGRID_PAGE_MF_RUBYSIZE">Enter the font size for the Ruby text.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TEXTGRID_PAGE:CB_RUBYBELOW" id="bm_id3151259" localize="false"/>
+<paragraph role="heading" id="hd_id3149496" xml-lang="en-US" level="3" l10n="U" oldref="4">Ruby text below/left from base text</paragraph>
+<paragraph role="paragraph" id="par_id3149816" xml-lang="en-US" l10n="U" oldref="3"><ahelp hid="SW_CHECKBOX_TP_TEXTGRID_PAGE_CB_RUBYBELOW">Displays Ruby text to the left of or below the base text.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TEXTGRID_PAGE:CB_DISPLAY" id="bm_id3154828" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TEXTGRID_PAGE:CB_PRINT" id="bm_id3154832" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TEXTGRID_PAGE:LB_COLOR" id="bm_id3154836" localize="false"/>
+<paragraph role="heading" id="hd_id3149100" xml-lang="en-US" level="2" l10n="U" oldref="2">Grid display</paragraph>
+<paragraph role="paragraph" id="par_id3147089" xml-lang="en-US" l10n="U" oldref="1"><ahelp hid="SW_LISTBOX_TP_TEXTGRID_PAGE_LB_COLOR">Specifies the printing and color options of the text grid.</ahelp></paragraph>
+</body>
+</helpdocument>

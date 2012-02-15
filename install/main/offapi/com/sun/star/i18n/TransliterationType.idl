@@ -1,0 +1,77 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_i18n_TransliterationType_idl__
+#define __com_sun_star_i18n_TransliterationType_idl__
+
+//=============================================================================
+
+module com {  module sun {  module star {  module i18n {
+
+//=============================================================================
+
+/**
+    Bitmask transliteration types used with
+    <member>XTransliteration::getType()</member> and
+    <member>XTransliteration::getAvailableModules()</member> methods.
+
+    <p> Non-IGNORE type modules provide
+    <member>XTransliteration::transliterate()</member>. <br/>
+    IGNORE type modules provide
+    <member>XTransliteration::equals()</member> and
+    <member>XTransliteration::transliterateRange()</member>. </p>
+ */
+
+published constants TransliterationType
+{
+    const short NONE               = 0;
+
+    /** A transliteration module is ONE_TO_ONE if and only if it's
+        mapping between characters is one to one like a-z to A-Z.
+        Transliteration modules of this type can be used as choice in
+        regular expressions based search/replace. */
+    const short ONE_TO_ONE         = 1;
+
+    /** A transliteration module can have attribute NUMERIC if it
+        tranliterates numbers in different languages like chinese
+        numbers to arabic numbers and vice versa. This mapping need not
+        be one to one, it should be primarily used by number formatting
+        and parsing methods. */
+    const short NUMERIC            = 2;
+
+    /** A transliteration module is ONE_TO_ONE_NUMERIC if it offers
+        both one to one mapping and handles number also. */
+    const short ONE_TO_ONE_NUMERIC = 3;
+
+    /** With a transliterator IGNORE case, the regular
+        expression A-Z can be transformed to a-z, for example. */
+    const short IGNORE             = 4;
+
+    /** If the transliteration is cascaded (uses more than one
+        algorithm). */
+    const short CASCADE            = 8;
+};
+
+//=============================================================================
+}; }; }; };
+
+#endif

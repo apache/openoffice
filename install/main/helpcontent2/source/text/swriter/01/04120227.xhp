@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104120227xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Entries (bibliography)</title>
+<filename>/text/swriter/01/04120227.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3151388" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/04120227.xhp" name="Entries (bibliography)">Entries (bibliography)</link></paragraph>
+<paragraph role="paragraph" id="par_id3083449" xml-lang="en-US" l10n="U" oldref="2"><variable id="eintraege">Specify the format for bibliography entries.
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000404.xhp#verz37"/>
+</section>
+<paragraph role="heading" id="hd_id31544970" xml-lang="en-US" level="2" l10n="NEW">Type</paragraph>
+<paragraph role="paragraph" id="par_id3150017" xml-lang="en-US" l10n="U" oldref="3">The types that are displayed depend on the different literature sources.</paragraph>
+<embed href="text/swriter/01/04120221.xhp#aufbau"/>
+<embed href="text/swriter/01/04120221.xhp#tabulator"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TOX_ENTRY:LB_AUTHFIELD" id="bm_id3147168" localize="false"/><paragraph role="heading" id="hd_id3150570" xml-lang="en-US" level="3" l10n="U" oldref="4">Type</paragraph>
+<paragraph role="paragraph" id="par_id3147175" xml-lang="en-US" l10n="CHG" oldref="5">Lists the available bibliography entries. <ahelp hid=".">To add an entry to the Structure line, click the entry, click in an empty box on the Structure line, and then click <emph>Insert</emph>.</ahelp> Use the <link href="text/swriter/01/04120229.xhp" name="Define Bibliography Entry">Define Bibliography Entry</link> dialog to add new entries.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_AUTHINSERT" id="bm_id3151171" localize="false"/><paragraph role="heading" id="hd_id3149287" xml-lang="en-US" level="3" l10n="U" oldref="6">Insert</paragraph>
+<paragraph role="paragraph" id="par_id3151178" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_AUTHINSERT">Adds the reference code for the selected bibliography entry to the Structure line. Select an entry in the list, click in an empty box, and then click this button.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_AUTHREMOVE" id="bm_id3149800" localize="false"/><paragraph role="heading" id="hd_id3154096" xml-lang="en-US" level="3" l10n="U" oldref="8">Remove</paragraph>
+<paragraph role="paragraph" id="par_id3149807" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_AUTHREMOVE">Removes the selected reference code from the Structure line.</ahelp></paragraph>
+<embed href="text/swriter/01/04120221.xhp#aufbau2"/>
+<paragraph role="heading" id="hd_id3154470" xml-lang="en-US" level="2" l10n="U" oldref="10">Sort by</paragraph>
+<paragraph role="paragraph" id="par_id3154482" xml-lang="en-US" l10n="U" oldref="11">Specify the sorting options for the bibliography entries.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TOX_ENTRY:RB_DOCPOS" id="bm_id3153677" localize="false"/><paragraph role="heading" id="hd_id3153665" xml-lang="en-US" level="3" l10n="U" oldref="12">Document position</paragraph>
+<paragraph role="paragraph" id="par_id3151314" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SW:RADIOBUTTON:TP_TOX_ENTRY:RB_DOCPOS">Sorts the bibliography entries according to the position of their references in the document.</ahelp> Select this option if you want to use automatically numbered references.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_TOX_ENTRY:RB_SORTCONTENT" id="bm_id3155902" localize="false"/><paragraph role="heading" id="hd_id3154576" xml-lang="en-US" level="3" l10n="U" oldref="14">Content</paragraph>
+<paragraph role="paragraph" id="par_id3149687" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="SW:RADIOBUTTON:TP_TOX_ENTRY:RB_SORTCONTENT">Sorts the bibliography entries by the Sort keys that you specify, for example, by author or by year of publication.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155175" xml-lang="en-US" level="2" l10n="U" oldref="16">Sort keys</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TOX_ENTRY:LB_FIRSTKEY" id="bm_id3143281" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TOX_ENTRY:LB_SECONDKEY" id="bm_id3149481" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TOX_ENTRY:LB_THIRDKEY" id="bm_id3149486" localize="false"/><paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="3" l10n="U" oldref="18">1, 2 or 3</paragraph>
+<paragraph role="paragraph" id="par_id3149491" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SW:LISTBOX:TP_TOX_ENTRY:LB_THIRDKEY">Select the entry by which to sort the bibliography entries. This option is only available if you select the <emph>Content</emph> radio button in the <emph>Sort by</emph> area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP1" id="bm_id3149104" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP2" id="bm_id3149108" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP3" id="bm_id3147091" localize="false"/><paragraph role="heading" id="hd_id3149826" xml-lang="en-US" level="3" l10n="U" oldref="20">AZ</paragraph>
+<paragraph role="paragraph" id="par_id3147098" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SW:IMAGERADIOBUTTON:TP_TOX_ENTRY:RB_SORTUP3">Sorts the bibliography entries in ascending alphanumerical order.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN1" id="bm_id3147221" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN2" id="bm_id3147225" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN3" id="bm_id3149035" localize="false"/><paragraph role="heading" id="hd_id3148981" xml-lang="en-US" level="3" l10n="U" oldref="22">ZA</paragraph>
+<paragraph role="paragraph" id="par_id3149041" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="SW:IMAGERADIOBUTTON:TP_TOX_ENTRY:RB_SORTDOWN3">Sorts the bibliography entries in a descending alphanumerical order.</ahelp></paragraph>
+</body>
+</helpdocument>

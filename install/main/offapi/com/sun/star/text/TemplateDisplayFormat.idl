@@ -1,0 +1,87 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_text_TemplateDisplayFormat_idl__ 
+#define __com_sun_star_text_TemplateDisplayFormat_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module text { 
+ 
+//============================================================================= 
+ 
+// DocMerge from idl: constants com::sun::star::text::TemplateDisplayFormat
+/** These constants are used to specify which information about a template is 
+		displayed in a field.
+ */
+published constants TemplateDisplayFormat
+{ 
+	//------------------------------------------------------------------------- 
+	// The complete path of the file will be displayed. 
+	
+	// DocMerge: empty anyway
+	const short FULL = 0; 
+ 
+	//------------------------------------------------------------------------- 
+	// Only the path of the template file will be displayed. 
+	
+	// DocMerge: empty anyway
+	const short PATH = 1; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::TemplateDisplayFormat::NAME
+	/** Only the file name, without file extension, of the template 
+				file will be displayed.
+	 */
+	const short NAME = 2; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::TemplateDisplayFormat::NAME_AND_EXT
+	/** The file name and the file extension of the template 
+				file will be displayed.
+	 */
+	const short NAME_AND_EXT = 3; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::TemplateDisplayFormat::AREA
+	/** The name of the template area is displayed.
+	 */
+	const short AREA = 4; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::TemplateDisplayFormat::TITLE
+	/** The title of the template file is displayed.
+	 */
+	const short TITLE = 5; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+#endif 

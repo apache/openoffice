@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01100200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Report Wizard - Grouping</title>
+<filename>/text/shared/autopi/01100200.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="grouping">
+<paragraph role="heading" id="hd_id3147000" xml-lang="en-US" level="1" l10n="U" oldref="7"><link href="text/shared/autopi/01100200.xhp" name="Report Wizard - Grouping">Report Wizard - Grouping</link></paragraph>
+<paragraph role="paragraph" id="par_id3163829" xml-lang="en-US" l10n="U" oldref="1">You can group records in a report based on the values in one or more fields. <ahelp hid=".">Select the fields by which the resulting report will be grouped. You can group up to four fields in a report.</ahelp> When you group more than one field, $[officename] nests the groups according to their group level.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#autopilotreport"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_2_GROUPING" id="bm_id3152924" localize="false"/><paragraph role="heading" id="hd_id3149760" xml-lang="en-US" level="2" l10n="U" oldref="2">Fields</paragraph>
+<paragraph role="paragraph" id="par_id3155805" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_DLGREPORT_2_GROUPING">Lists the fields from your selection on the previous page of the Wizard. To group the report by a field, select the field name, then click the <emph>&gt;</emph> button. You may select up to four levels of grouping.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_2_PREGROUPINGDEST" id="bm_id3149182" localize="false"/><paragraph role="heading" id="hd_id3155552" xml-lang="en-US" level="2" l10n="U" oldref="3">Groupings</paragraph>
+<paragraph role="paragraph" id="par_id3155892" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="HID_DLGREPORT_2_PREGROUPINGDEST">Lists the fields by which the report will be grouped. To remove one level of grouping, select the field name, then click the <emph>&lt;</emph> button. You may select up to four levels of grouping.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_2_CMDGROUP" id="bm_id3153748" localize="false"/><paragraph role="heading" id="hd_id3154289" xml-lang="en-US" level="2" l10n="CHG" oldref="4">&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3157958" xml-lang="en-US" l10n="CHG" oldref="10"><ahelp hid="HID_DLGREPORT_2_CMDGROUP">Click to move the selected field to the box that the arrow is pointing to.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_2_CMDUNGROUP" id="bm_id3166460" localize="false"/><paragraph role="heading" id="hd_id3154823" xml-lang="en-US" level="2" l10n="CHG" oldref="5">&lt;</paragraph>
+<paragraph role="paragraph" id="par_id3149811" xml-lang="en-US" l10n="CHG" oldref="11"><ahelp hid="HID_DLGREPORT_2_CMDUNGROUP">Click to move the selected field to the box that the arrow is pointing to.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150355" xml-lang="en-US" l10n="U" oldref="6"><link href="text/shared/autopi/01100300.xhp" name="More about Report Wizard - Sort Options">More about Report Wizard - Sort Options</link></paragraph>
+</body>
+</helpdocument>

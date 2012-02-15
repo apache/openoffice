@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidecalculate_intablexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Calculating Cell Totals in Tables</title>
+         <filename>/text/swriter/guide/calculate_intable.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147400"><bookmark_value>calculating;sums in text tables</bookmark_value>
+      <bookmark_value>totals in text tables</bookmark_value>
+      <bookmark_value>tables;calculating sums</bookmark_value>
+      <bookmark_value>cells;calculating sums</bookmark_value>
+      <bookmark_value>table cells;calculating sums</bookmark_value>
+      <bookmark_value>sums of table cell series</bookmark_value>
+</bookmark><comment>mw deleted "text tables;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3147400" role="heading" level="1" l10n="U" oldref="3"><variable id="calculate_intable"><link href="text/swriter/guide/calculate_intable.xhp" name="Calculating Cell Totals in Tables">Calculating the Sum of a Series of Table Cells</link>
+</variable></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154243" role="listitem" l10n="U" oldref="4">Choose <emph>Insert - Table</emph>, and insert a table with one column and more than one row into a text document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154203" role="listitem" l10n="U" oldref="5">Type a number in each cell of the column, but leave the last cell in the column empty.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154222" role="listitem" l10n="U" oldref="6">Place the cursor in the last cell of the column, and then click the <item type="menuitem">Sum</item> icon on the <item type="menuitem">Table Bar</item>.<br/>The<emph/>
+               <item type="menuitem">Formula Bar</item> appears with the entry "=sum".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147775" role="listitem" l10n="U" oldref="15">Click in the first cell of the series you want to sum up, drag to the final cell, and then release.<br/>$[officename] inserts a formula for calculating the sum of the values in the current column.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150507" role="listitem" l10n="U" oldref="8">Press Enter, or click <emph>Apply</emph> in the Formula bar. <br/>The sum of the values in the current column is entered in the cell.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3150533" role="paragraph" l10n="U" oldref="10">If you enter a different number anywhere in the column, the sum is updated as soon as you click in the last column cell.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155533" role="paragraph" l10n="U" oldref="11">Similarly, you can also quickly calculate the sum of a row of numbers.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/main0214.xhp#releistename"/>
+      <embed href="text/swriter/guide/calculate.xhp#calculate"/>
+      <embed href="text/swriter/guide/calculate_intext.xhp#calculate_intext"/>
+      <embed href="text/swriter/guide/calculate_clipboard.xhp#calculate_clipboard"/>
+      <embed href="text/swriter/guide/calculate_multitable.xhp#calculate_multitable"/>
+   </body>
+</helpdocument>

@@ -1,0 +1,68 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_report_XFormattedField_idl__
+#define __com_sun_star_report_XFormattedField_idl__
+
+#ifndef __com_sun_star_report_XReportControlModel_idl__
+#include <com/sun/star/report/XReportControlModel.idl>
+#endif
+#ifndef __com_sun_star_util_XNumberFormatsSupplier_idl__
+#include <com/sun/star/util/XNumberFormatsSupplier.idl>
+#endif
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module report {
+
+//=============================================================================
+/** describes a control which can be used for displaying values with a arbitrary formatting.
+
+    @see com::sun::star::report::XReportControlModel
+    @see com::sun::star::util::XNumberFormatsSupplier
+*/
+published interface XFormattedField
+{
+    interface XReportControlModel;
+
+    /** specifies the format to be used when formatting the field input
+        and output.
+
+        <p>This value is meaningful relative to the FormatsSupplier attribute
+        only.</p>
+     */
+    [attribute,bound] long FormatKey;
+
+    /** supplies the formats the field should work with.
+     */
+    [attribute,bound] com::sun::star::util::XNumberFormatsSupplier FormatsSupplier;
+};
+
+published service FormattedField : XFormattedField;
+//=============================================================================
+
+}; }; }; };
+
+/*=============================================================================
+
+=============================================================================*/
+#endif

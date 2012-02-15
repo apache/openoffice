@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionenmacrosecurity_tsxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Trusted Sources</title>
+<filename>/text/shared/optionen/macrosecurity_ts.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10549" xml-lang="en-US" level="1" l10n="NEW"><variable id="macrosecurity_ts"><link href="text/shared/optionen/macrosecurity_ts.xhp">Trusted Sources</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN10567" xml-lang="en-US" l10n="NEW">Specifies the <link href="text/shared/optionen/macrosecurity.xhp">macro security</link> settings for trusted certificates and trusted file locations.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/XMLSECURITY_HID_XMLSEC_CTRL_TRUSTSOURCES" id="bm_id3047883" localize="false"/><paragraph role="heading" id="par_idN10578" xml-lang="en-US" level="2" l10n="NEW">Trusted certificates</paragraph>
+<paragraph role="paragraph" id="par_idN1057C" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Lists the trusted certificates.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/xmlsecurity:PushButton:RID_XMLSECTP_TRUSTSOURCES:PB_VIEW_TRUSTCERT" id="bm_id146183" localize="false"/><paragraph role="heading" id="par_idN10591" xml-lang="en-US" level="3" l10n="NEW">View</paragraph>
+<paragraph role="paragraph" id="par_idN10595" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the View Certificate dialog for the selected certificate.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/xmlsecurity:PushButton:RID_XMLSECTP_TRUSTSOURCES:PB_REMOVE_TRUSTCERT" id="bm_id6915799" localize="false"/><paragraph role="heading" id="par_idN105A6" xml-lang="en-US" level="3" l10n="NEW">Remove</paragraph>
+<paragraph role="paragraph" id="par_idN105AA" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Removes the selected certificate from the list of trusted certificates.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/xmlsecurity:ListBox:RID_XMLSECTP_TRUSTSOURCES:LB_TRUSTFILELOC" id="bm_id1044038" localize="false"/><paragraph role="heading" id="par_idN105AD" xml-lang="en-US" level="2" l10n="NEW">Trusted file locations</paragraph>
+<paragraph role="paragraph" id="par_idN105B1" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Document macros are only executed if they have been opened from one of the following locations.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/xmlsecurity:PushButton:RID_XMLSECTP_TRUSTSOURCES:FL_ADD_TRUSTFILELOC" id="bm_id1952879" localize="false"/><paragraph role="heading" id="par_idN105B4" xml-lang="en-US" level="3" l10n="NEW">Add</paragraph>
+<paragraph role="paragraph" id="par_idN105B8" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens a folder selection dialog. Select a folder from which all macros are allowed to execute.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/xmlsecurity:PushButton:RID_XMLSECTP_TRUSTSOURCES:FL_REMOVE_TRUSTFILELOC" id="bm_id6851405" localize="false"/><paragraph role="heading" id="par_idN105BB" xml-lang="en-US" level="3" l10n="NEW">Remove</paragraph>
+<paragraph role="paragraph" id="par_idN105BF" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Removes the selected folder from the list of trusted file locations.</ahelp></paragraph>
+</body>
+</helpdocument>

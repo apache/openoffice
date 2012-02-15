@@ -1,0 +1,120 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_XSheetAuditing_idl__
+#define __com_sun_star_sheet_XSheetAuditing_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_table_CellAddress_idl__
+#include <com/sun/star/table/CellAddress.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** provides methods to access auditing (detective) features in a
+	spreadsheet.
+ */
+published interface XSheetAuditing: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+
+	/** removes arrows for one level of dependents of a formula cell.
+
+		<p>If the method is executed again for the same cell, the previous
+		level of dependent cells is removed.</p>
+
+		@param aPosition
+			the address of the formula cell.
+	 */
+	boolean hideDependents( [in] com::sun::star::table::CellAddress aPosition );
+
+	//-------------------------------------------------------------------------
+
+	/** removes arrows for one level of precedents of a formula cell.
+
+		<p>If the method is executed again for the same cell, the previous
+		level of dependent cells is removed.</p>
+
+		@param aPosition
+			the address of the formula cell.
+	 */
+	boolean hidePrecedents( [in] com::sun::star::table::CellAddress aPosition );
+
+	//-------------------------------------------------------------------------
+
+	/** draws arrows between a formula cell and its dependents.
+
+		<p>If the method is executed again for the same cell, the next
+		level of dependent cells is marked.</p>
+
+		@param aPosition
+			the address of the formula cell.
+	 */
+	boolean showDependents( [in] com::sun::star::table::CellAddress aPosition );
+
+	//-------------------------------------------------------------------------
+
+	/** draws arrows between a formula cell and its precedents.
+
+		<p>If the method is executed again for the same cell, the next
+		level of dependent cells is marked.</p>
+
+		@param aPosition
+			the address of the formula cell.
+	 */
+	boolean showPrecedents( [in] com::sun::star::table::CellAddress aPosition );
+
+	//-------------------------------------------------------------------------
+
+	/** draws arrows between a formula cell containing an error
+		and the cells causing the error.
+	 */
+	boolean showErrors( [in] com::sun::star::table::CellAddress aPosition );
+
+	//-------------------------------------------------------------------------
+
+	/** marks all cells containing invalid values.
+	 */
+	boolean showInvalid();
+
+	//-------------------------------------------------------------------------
+
+	/** removes all auditing arrows from the spreadsheet.
+	 */
+	void clearArrows();
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

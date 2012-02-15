@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<component loader="com.sun.star.loader.SharedLibrary"
+    xmlns="http://openoffice.org/2010/uno-components">
+  <implementation name="com.sun.star.comp.Writer.FilterOptionsDialog">
+    <service name="com.sun.star.ui.dialogs.FilterOptionsDialog"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.GlobalDocument">
+    <service name="com.sun.star.text.GlobalDocument"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.TextDocument">
+    <service name="com.sun.star.text.TextDocument"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.WebDocument">
+    <service name="com.sun.star.text.WebDocument"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLContentExporter">
+    <service name="com.sun.star.comp.Writer.XMLContentExporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLContentImporter">
+    <service name="com.sun.star.comp.Writer.XMLContentImporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLExporter">
+    <service name="com.sun.star.comp.Writer.XMLExporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLImporter">
+    <service name="com.sun.star.comp.Writer.XMLImporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLMetaExporter">
+    <service name="com.sun.star.comp.Writer.XMLMetaExporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLMetaImporter">
+    <service name="com.sun.star.comp.Writer.XMLMetaImporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLSettingsExporter">
+    <service name="com.sun.star.comp.Writer.XMLSettingsExporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLSettingsImporter">
+    <service name="com.sun.star.comp.Writer.XMLSettingsImporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLStylesExporter">
+    <service name="com.sun.star.comp.Writer.XMLStylesExporter"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.Writer.XMLStylesImporter">
+    <service name="com.sun.star.comp.Writer.XMLStylesImporter"/>
+  </implementation>
+</component>

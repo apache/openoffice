@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidewrapxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Wrapping Text Around Objects</title>
+         <filename>/text/swriter/guide/wrap.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154486"><bookmark_value>text wrap around objects</bookmark_value>
+      <bookmark_value>contour editor</bookmark_value>
+      <bookmark_value>contour wrap</bookmark_value>
+      <bookmark_value>text; formatting around objects</bookmark_value>
+      <bookmark_value>formatting; contour wrap</bookmark_value>
+      <bookmark_value>objects; contour wrap</bookmark_value>
+      <bookmark_value>wrapping text;editing contours</bookmark_value>
+      <bookmark_value>editors;contour editor</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3154486" role="heading" level="1" l10n="U" oldref="8"><variable id="wrap"><link href="text/swriter/guide/wrap.xhp" name="Wrapping Text Around Objects">Wrapping Text Around Objects</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id4792321" role="heading" level="2" l10n="NEW">To Wrap Text Around an Object</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149696" role="listitem" l10n="U" oldref="9">Select the object.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155907" role="listitem" l10n="U" oldref="10">Choose <emph>Format - Wrap</emph>, and then choose the wrapping style that you want to apply.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3155859" role="listitem" l10n="U" oldref="4">The current wrapping style is indicated by a bullet.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3149834" role="heading" level="2" l10n="U"
+                 oldref="14">To Specify the Wrapping Properties</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154079" role="listitem" l10n="U" oldref="15">Select the object.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153396" role="listitem" l10n="U" oldref="11">Choose <emph>Format - Graphics</emph>, and then click the <link href="text/swriter/01/05060200.xhp" name="Wrap"><emph>Wrap</emph></link> tab.</paragraph>
+         </listitem>
+      </list>
+      <list type="ordered" startwith="3">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153370" role="listitem" l10n="U" oldref="5">Set the options that you want.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153386" role="listitem" l10n="U" oldref="16">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3154247" role="heading" level="2" l10n="U"
+                 oldref="17">To Change the Wrapping Contour of a Graphic</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154262" role="paragraph" l10n="U" oldref="18">You can change the shape that the text wraps around.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154860" role="listitem" l10n="U" oldref="19">Select the graphic, right-click, and then choose <emph>Wrap - Edit Contour</emph>.</paragraph>
+         </listitem>
+      </list>
+      <list type="ordered" startwith="2">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150231" role="listitem" l10n="U" oldref="7">Use the tools to draw a new contour, and then click the <item type="menuitem">Apply</item>
+               <emph/>icon (green check mark).</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150947" role="listitem" l10n="U" oldref="21">Close the <item type="menuitem">Contour Editor</item>
+               <emph/>window.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/insert_graphic.xhp#insert_graphic"/>
+         <paragraph xml-lang="en-US" id="par_id3150520" role="paragraph" l10n="U" oldref="22"><link href="text/swriter/01/05060201.xhp" name="Contour Editor">Contour Editor</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

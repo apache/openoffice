@@ -1,0 +1,47 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "sc.hrc"	// -> SC_DLG_ATTR
+
+#define TP_NUMBER		1
+#define TP_FONT			2
+#define TP_ALIGNMENT	3
+#define TP_BORDER		4
+#define TP_BACKGROUND	5
+#define TP_PROTECTION	6
+#define TP_FONTEFF		7
+#define TP_ASIAN		8
+
+//================================================
+// Zellschutz-TabPage:
+
+#define BTN_PROTECTED			1
+#define BTN_HIDE_FORMULAR		2
+#define BTN_HIDE_ALL			3
+#define FT_HINT                 4
+#define FL_PROTECTION           5
+#define BTN_HIDE_PRINT          6
+#define FT_HINT2                7
+#define FL_PRINT                8
+
+

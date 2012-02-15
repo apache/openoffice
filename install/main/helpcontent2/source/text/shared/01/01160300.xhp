@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared0101160300xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Create Master Document</title>
+         <filename>/text/shared/01/01160300.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="hid/.uno:NewGlobalDoc" id="bm_id7444055" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:NewGlobalDoc" id="bm_id9144566" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152790" role="heading" level="1" l10n="CHG"
+                 oldref="1">Create Master Document</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148668" role="paragraph" l10n="U" oldref="2"><variable id="globtext"><ahelp hid="HID_SEND_MASTER_CTRL_PUSHBUTTON_CANCEL">Creates a master document from the current Writer document. A new sub-document is created at each occurrence of a chosen paragraph style or outline level in the source document.</ahelp>
+</variable></paragraph>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000401.xhp#glo"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3149999" role="paragraph" l10n="U" oldref="4">The <link href="text/shared/01/02110000.xhp" name="Navigator"><emph>Navigator</emph></link> appears after you create a master document. To edit a sub-document, double-click the name of a sub-document in the <emph>Navigator</emph>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_CONTROL_FILEVIEW" id="bm_id3154673" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152924" role="heading" level="2" l10n="U" oldref="9">Display area</paragraph>
+      <embed href="text/shared/01/01070000.xhp#fileview"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_EDIT_FILEURL" id="bm_id3154751" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152425" role="heading" level="2" l10n="U"
+                 oldref="10">File name</paragraph>
+      <embed href="text/shared/01/01070000.xhp#filename"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_LISTBOX_TEMPLATE" id="bm_id3155392" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVT_HID_FILESAVE_TEMPLATE" id="bm_id3145072" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147291" role="heading" level="2" l10n="CHG"
+                 oldref="8">separated by</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156426" role="paragraph" l10n="U" oldref="7"><ahelp hid="HID_FILESAVE_TEMPLATE">Select the paragraph style or outline level that you want to use to separate the source document into sub-documents.</ahelp> By default a new document is created for every outline level 1.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_LISTBOX_FILTER" id="bm_id3153527" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153311" role="heading" level="2" l10n="U"
+                 oldref="11">File type</paragraph>
+      <embed href="text/shared/01/01070000.xhp#filetype"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_PUSHBUTTON_OK" id="bm_id3150693" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145313" role="heading" level="2" l10n="U"
+                 oldref="12">Save</paragraph>
+      <embed href="text/shared/01/01070000.xhp#save"/><comment>removed autoextension</comment>
+<switch select="appl">
+<case select="WRITER">
+<section id="relatedtopics">
+         <embed href="text/swriter/guide/globaldoc.xhp#globaldoc"/>
+      </section>
+</case>
+</switch>
+</body>
+</helpdocument>

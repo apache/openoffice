@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswriter0105040600xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Footnote</title>
+         <filename>/text/swriter/01/05040600.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="fussnote">
+<bookmark xml-lang="en-US" branch="hid/SW_HID_FOOTNOTE_PAGE" id="bm_id3151390" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154767" role="heading" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05040600.xhp" name="Footnote">Footnote</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149351" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_FOOTNOTE_PAGE">Specifies the layout options for footnotes, including the line that separates the footnote from the main body of document.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/swriter/00/00000405.xhp#fussnoteform"/>
+      </section><comment>removed a note</comment>
+<paragraph xml-lang="en-US" id="hd_id3154646" role="heading" level="2" l10n="U" oldref="3">Footnote area</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151168" role="paragraph" l10n="U" oldref="4">Set the height of the footnote area.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FOOTNOTE_PAGE:RB_MAXHEIGHT_PAGE" id="bm_id3147509" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145412" role="heading" level="2" l10n="U" oldref="5">Not larger than page area</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147514" role="paragraph" l10n="U" oldref="6"><ahelp hid="SW:RADIOBUTTON:TP_FOOTNOTE_PAGE:RB_MAXHEIGHT_PAGE">Automatically adjusts the height of the footnote area depending on the number of footnotes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FOOTNOTE_PAGE:RB_MAXHEIGHT" id="bm_id3149801" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154099" role="heading" level="2" l10n="U" oldref="7">Maximum Footnote Height</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149807" role="paragraph" l10n="U" oldref="8"><ahelp hid=".">Sets a maximum height for the footnote area. Enable this option, then enter the height.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_MAXHEIGHT" id="bm_id3154482" localize="false"/>
+      <paragraph xml-lang="en-US" id="par_id3154568" role="paragraph" l10n="U" oldref="10"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_MAXHEIGHT">Enter the maximum height for the footnote area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_DIST" id="bm_id3152958" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151318" role="heading" level="2" l10n="U"
+                 oldref="11">Distance from text</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153665" role="paragraph" l10n="U" oldref="12"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_DIST">Enter the amount of space to leave between the bottom page margin and the first line of text in the footnote area.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155897" role="heading" level="2" l10n="U"
+                 oldref="13">Separator Line</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149689" role="paragraph" l10n="U" oldref="14">Specifies the position and length of the separator line.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FOOTNOTE_PAGE:DLB_LINEPOS" id="bm_id3155177" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154194" role="heading" level="2" l10n="U"
+                 oldref="15">Position</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155184" role="paragraph" l10n="U" oldref="16"><ahelp hid="SW:LISTBOX:TP_FOOTNOTE_PAGE:DLB_LINEPOS">Select the horizontal alignment for the line that separates the main text from the footnote area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_LINEWIDTH" id="bm_id3149492" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3143284" role="heading" level="2" l10n="U"
+                 oldref="17">Length</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154827" role="paragraph" l10n="U" oldref="18"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_LINEWIDTH">Enter the length of the separator line as a percentage of the page width area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FOOTNOTE_PAGE:DLB_LINETYPE" id="bm_id3149098" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151253" role="heading" level="2" l10n="U"
+                 oldref="19">Weight</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149105" role="paragraph" l10n="U" oldref="20"><ahelp hid="SW:LISTBOX:TP_FOOTNOTE_PAGE:DLB_LINETYPE">Select the formatting style for the separator line. If you do not want a separator line, choose "0.0 pt".</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FOOTNOTE_PAGE:ED_LINEDIST" id="bm_id3147098" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149828" role="heading" level="2" l10n="U"
+                 oldref="21">Spacing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148970" role="paragraph" l10n="U" oldref="22"><ahelp hid="SW:METRICFIELD:TP_FOOTNOTE_PAGE:ED_LINEDIST">Enter the amount of space to leave between the separator line and the first line of the footnote area.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155145" role="tip" l10n="CHG" oldref="24">To specify the spacing between two footnotes, choose <item type="menuitem">Format - Paragraph</item>, and then click the <emph>Indents &amp; Spacing</emph> tab.</paragraph>
+      <embed href="text/shared/00/00000001.xhp#vorschau"/>
+   </body>
+</helpdocument>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="frame_XDispatchProvider" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+'*************************************************************************
+' This Interface/Service test depends on the following GLOBAL variables,
+' which must be specified in the object creation:
+
+'     - Global dispatchUrl As String
+
+'*************************************************************************
+
+
+
+
+
+Sub RunTest()
+
+'*************************************************************************
+' INTERFACE: 
+' com.sun.star.frame.XDispatchProvider
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim bOK As Boolean
+    Dim url As new com.sun.star.util.URL
+    Dim dispatcher As Object
+    Dim descriptors(1) As new com.sun.star.frame.DispatchDescriptor
+    Dim dispatchers As Variant
+
+    Out.Log("Using Url for dispatch : " + dispatchUrl)
+
+    url.Complete = dispatchUrl
+
+    Dim oURLTransformer As Object
+    oURLTransformer = createUnoService("com.sun.star.util.URLTransformer")
+    Dim aUrl As Variant
+    aUrl = Array(url)
+    oURLTransformer.parseStrict(aUrl)
+
+    Test.StartMethod("queryDispatch()")
+    dispatcher = oObj.queryDispatch(aUrl(0), "frame", _
+        com.sun.star.frame.FrameSearchFlag.ALL)
+    bOK = NOT isNull(dispatcher)
+    Out.Log("Dispatch is null : " + isNull(dispatcher))
+    bOK = bOK AND hasUnoInterfaces(dispatcher, "com.sun.star.frame.XDispatch")
+    Test.MethodTested("queryDispatch()", bOK)
+
+    Test.StartMethod("queryDispatches()")
+    bOK = true
+    descriptors(0).FeatureURL = url
+    descriptors(0).FrameName = "Frame1"
+    descriptors(0).SearchFlags = com.sun.star.frame.FrameSearchFlag.ALL
+    descriptors(1).FeatureURL = url
+    descriptors(1).FrameName = "Frame2"
+    descriptors(1).SearchFlags = com.sun.star.frame.FrameSearchFlag.ALL
+    dispatchers = oObj.queryDispatches(descriptors())
+    if isArray(dispatchers) then
+       if ubound(descriptors()) &lt;&gt; ubound(dispatchers()) then
+          bOK = false
+          Out.Log("Number of returned dispatchers : " + _
+              ubound(dispatchers()) + " - FAILED")
+       endIf
+    else
+       bOK = false
+       Out.Log("Returned value is not Array")
+    EndIf
+
+    Test.MethodTested("queryDispatches()", bOK)
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+    bOK = false
+    resume next
+End Sub
+</script:module>

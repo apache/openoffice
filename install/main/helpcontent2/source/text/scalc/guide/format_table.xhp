@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalcguideformat_tablexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Formatting Spreadsheets</title>
+<filename>/text/scalc/guide/format_table.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154125"><bookmark_value>text in cells; formatting</bookmark_value>
+<bookmark_value>spreadsheets;formatting</bookmark_value>
+<bookmark_value>backgrounds;cells and pages</bookmark_value>
+<bookmark_value>borders;cells and pages</bookmark_value>
+<bookmark_value>formatting;spreadsheets</bookmark_value>
+<bookmark_value>numbers; formatting options for selected cells</bookmark_value>
+<bookmark_value>cells; number formats</bookmark_value>
+<bookmark_value>currencies;formats</bookmark_value>
+</bookmark><comment>mw transferred 2 entries from shared/01/05020300.xhp and added 2 new entries</comment><comment>mw deleted "defaults;"</comment>
+<paragraph role="heading" id="hd_id3154125" xml-lang="en-US" level="1" l10n="U" oldref="6"><variable id="format_table"><link href="text/scalc/guide/format_table.xhp" name="Designing Spreadsheets">Formatting Spreadsheets</link>
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3153912" xml-lang="en-US" level="2" l10n="U" oldref="13">Formatting Text in a Spreadsheet </paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3144772" xml-lang="en-US" l10n="U" oldref="14">Select the text you want to format.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155268" xml-lang="en-US" l10n="CHG" oldref="15">Choose the desired text attributes from the <emph>Formatting </emph>Bar. You can also choose <emph>Format - Cells</emph>. The <emph>Format Cells</emph> dialog will appear in which you can choose various text attributes on the <emph>Font</emph> tab page.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3149899" xml-lang="en-US" level="2" l10n="U" oldref="16">Formatting Numbers in a Spreadsheet</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3159226" xml-lang="en-US" l10n="U" oldref="17">Select the cells containing the numbers you want to format.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150046" xml-lang="en-US" l10n="CHG" oldref="18">To format numbers in the default currency format or as percentages, use the icons on the <emph>Formatting </emph>Bar. For other formats, choose <emph>Format - Cells</emph>. You can choose from the preset formats or define your own on the <emph>Numbers</emph> tab page.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3153483" xml-lang="en-US" level="2" l10n="U" oldref="19">Formatting Borders and Backgrounds for Cells and Pages</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154733" xml-lang="en-US" l10n="U" oldref="20">You can assign a format to any group of cells by first selecting the cells (for multiple selection, hold down the <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>key when clicking), and then activating the <emph>Format Cells</emph> dialog in <item type="menuitem">Format - Cell</item>. In this dialog, you can select attributes such as shadows and backgrounds.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145116" xml-lang="en-US" l10n="U" oldref="21">To apply formatting attributes to an entire sheet, choose <emph>Format - Page</emph>. You can define headers and footers, for example, to appear on each printed page.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3145389" xml-lang="en-US" l10n="CHG" oldref="22">An image that you have loaded with <item type="menuitem">Format - Page - Background</item> is only visible in print or in the page preview. To display a background image on screen as well, insert the graphic image by choosing <item type="menuitem">Insert - Picture - From File</item> and arrange the image behind the cells by choosing <item type="menuitem">Format - Arrange - To Background</item>. Use the <link href="text/scalc/01/02110000.xhp" name="Navigator">Navigator</link> to select the background image.</paragraph>
+<section id="relatedtopics">
+<embed href="text/scalc/guide/autoformat.xhp#autoformat"/>
+<paragraph role="paragraph" id="par_id2837916" xml-lang="en-US" l10n="NEW"><link href="text/shared/01/05020300.xhp">Number Formatting Options</link></paragraph>
+<paragraph role="paragraph" id="par_id2614215" xml-lang="en-US" l10n="NEW"><link href="text/scalc/guide/background.xhp">Backgrounds for Cells</link></paragraph>
+</section>
+</body>
+</helpdocument>

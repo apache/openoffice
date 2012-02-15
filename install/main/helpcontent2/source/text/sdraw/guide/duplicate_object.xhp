@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsdrawguideduplicate_objectxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Duplicating Objects</title>
+<filename>/text/sdraw/guide/duplicate_object.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-27T11:22:15">FPE: Reformatted. This should be rewritten to be more of an instruction. We should get rid of the screen shot
+YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145750"><bookmark_value>doubling draw objects</bookmark_value>
+<bookmark_value>draw objects; duplicating</bookmark_value>
+<bookmark_value>duplicating draw objects</bookmark_value>
+<bookmark_value>multiplying draw objects</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145750" xml-lang="en-US" level="1" l10n="U" oldref="3"><variable id="duplicate_object"><link href="text/sdraw/guide/duplicate_object.xhp" name="Duplicating Objects">Duplicating Objects</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149400" xml-lang="en-US" l10n="U" oldref="4">You can create duplicate or multiple copies of an object. The copies can be identical or can differ in size, color, orientation and location.</paragraph>
+<paragraph role="paragraph" id="par_id3153415" xml-lang="en-US" l10n="U" oldref="5">The following example creates a stack of coins by making multiple copies of a single ellipse.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3149129" xml-lang="en-US" l10n="U" oldref="6">Use the <emph>Ellipse</emph> tool to draw a solid yellow ellipse.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3149209" xml-lang="en-US" l10n="U" oldref="8">Select the ellipse and choose <emph>Edit - Duplicate</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3145585" xml-lang="en-US" l10n="U" oldref="9">Enter 12 as <emph>Number of copies.</emph>
+</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3151192" xml-lang="en-US" l10n="U" oldref="11">Enter a negative value for the <emph>Width</emph> and <emph>Height</emph> so that the coins decrease in size as you go up the stack.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3151387" xml-lang="en-US" l10n="CHG" oldref="39">To define a color transition for the coins, select different colors in the <emph>Start</emph> and <emph>End</emph> boxes. The <emph>Start</emph> color is applied to the object that you are duplicating.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3149947" xml-lang="en-US" l10n="U" oldref="12">Click <emph>OK</emph> to create the duplicates.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3153935" xml-lang="en-US" l10n="U" oldref="50"><link href="text/simpress/01/02120000.xhp" name="Edit - Duplicate">Edit - Duplicate</link></paragraph>
+<embed href="text/sdraw/guide/cross_fading.xhp#cross_fading"/>
+<embed href="text/sdraw/guide/rotate_object.xhp#rotate_object"/>
+<embed href="text/sdraw/guide/align_arrange.xhp#align_arrange"/>
+</section>
+</body>
+</helpdocument>

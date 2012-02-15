@@ -1,0 +1,101 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_text_XText_idl__ 
+#define __com_sun_star_text_XText_idl__ 
+ 
+#ifndef __com_sun_star_text_XSimpleText_idl__ 
+#include <com/sun/star/text/XSimpleText.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_text_XTextCursor_idl__ 
+#include <com/sun/star/text/XTextCursor.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__ 
+#include <com/sun/star/lang/IllegalArgumentException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_text_XTextContent_idl__ 
+#include <com/sun/star/text/XTextContent.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_container_NoSuchElementException_idl__ 
+#include <com/sun/star/container/NoSuchElementException.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module text {  
+ 
+//============================================================================= 
+ 
+/** extends a <type>XSimpleText</type> by the capability of inserting 
+		<type>XTextContent</type>s.
+ */
+published interface XText: com::sun::star::text::XSimpleText
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** inserts a content, such as a text table, text frame or text
+		field.
+		
+		<p>Which contents are accepted is implementation-specific. Some
+		implementations may only accept contents which were created by the
+		factory that supplied the same text or the document which contains
+		the text.
+		</p>
+
+        @param xRange
+            specifies the position of insertion.
+
+        @param xContent
+            the text content to be inserted.
+
+        @param bAbsorb
+            specifies whether the text spanned by <var>xRange</var> will be
+            replaced. If <TRUE/> then the content of <var>xRange</var> will
+            be replaced by <var>xContent</var>, otherwise <var>xContent</var>
+            will be inserted at the end of <var>xRange</var>.
+	 */
+	void insertTextContent( [in] com::sun::star::text::XTextRange xRange, 
+			 [in] com::sun::star::text::XTextContent xContent, 
+			 [in] boolean bAbsorb ) 
+			raises( com::sun::star::lang::IllegalArgumentException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** removes the specified content from the text object.
+		
+		@example xDoc.removeTextContent( xDoc.TextTables.MyOwnTableName )
+	 */
+	void removeTextContent( [in] com::sun::star::text::XTextContent xContent ) 
+			raises( com::sun::star::container::NoSuchElementException ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

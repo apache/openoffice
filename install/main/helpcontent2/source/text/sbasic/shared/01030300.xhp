@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared01030300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Debugging a Basic Program</title>
+<filename>/text/sbasic/shared/01030300.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="basicfehler">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153344"><bookmark_value>debugging Basic programs</bookmark_value>
+<bookmark_value>variables; observing values</bookmark_value>
+<bookmark_value>watching variables</bookmark_value>
+<bookmark_value>run-time errors in Basic</bookmark_value>
+<bookmark_value>error codes in Basic</bookmark_value>
+<bookmark_value>breakpoints</bookmark_value>
+<bookmark_value>Call Stack window</bookmark_value>
+</bookmark><comment>mw deleted "Basic;"</comment><paragraph role="heading" id="hd_id3153344" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/01030300.xhp">Debugging a Basic Program</link></paragraph>
+</section>
+<paragraph role="heading" id="hd_id3159224" xml-lang="en-US" level="2" l10n="U" oldref="4">Breakpoints and Single Step Execution</paragraph>
+<paragraph role="paragraph" id="par_id3150682" xml-lang="en-US" l10n="U" oldref="5">You can check each line in your Basic program for errors using single step execution. Errors are easily traced since you can immediately see the result of each step. A pointer in the breakpoint column of the Editor indicates the current line. You can also set a breakpoint if you want to force the program to be interrupted at a specific position.</paragraph>
+<paragraph role="paragraph" id="par_id3147303" xml-lang="en-US" l10n="U" oldref="7">Double-click in the <emph>breakpoint</emph> column at the left of the Editor window to toggle a breakpoint at the corresponding line. When the program reaches a breakpoint, the program execution is interrupted.</paragraph>
+<paragraph role="paragraph" id="par_id3155805" xml-lang="en-US" l10n="U" oldref="8">The <emph>single step </emph>execution using the <emph>Single Step</emph> icon causes the program to branch into procedures and functions.</paragraph>
+<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U" oldref="25">The procedure step execution using the <emph>Procedure Step</emph> icon causes the program to skip over procedures and functions as a single step.</paragraph>
+<paragraph role="heading" id="hd_id3153825" xml-lang="en-US" level="3" l10n="U" oldref="9">Properties of a Breakpoint</paragraph>
+<paragraph role="paragraph" id="par_id3147574" xml-lang="en-US" l10n="U" oldref="26">The properties of a breakpoint are available through its context menu by right-clicking the breakpoint in the breakpoint column.</paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="10">You can <emph>activate</emph> and <emph>deactivate</emph> a breakpoint by selecting <emph>Active</emph> from its context menu. When a breakpoint is deactivated, it does not interrupt the program execution. </paragraph>
+<paragraph role="paragraph" id="par_id3159413" xml-lang="en-US" l10n="U" oldref="27">Select <emph>Properties</emph> from the context menu of a breakpoint or select <emph>Breakpoints</emph> from the context menu of the breakpoint column to call the <emph>Breakpoints</emph> dialog where you can specify other breakpoint options.</paragraph>
+<paragraph role="paragraph" id="par_id3156280" xml-lang="en-US" l10n="U" oldref="11">The list displays all <emph>breakpoints</emph> with the corresponding line number in the source code. You can activate or deactivate a selected breakpoint by checking or clearing the <emph>Active</emph> box.</paragraph>
+<paragraph role="paragraph" id="par_id3158407" xml-lang="en-US" l10n="U" oldref="12">The <emph>Pass Count</emph> specifies the number of times the breakpoint can be passed over before the program is interrupted. If you enter 0 (default setting) the program is always interrupted as soon as a breakpoint is encountered.</paragraph>
+<paragraph role="paragraph" id="par_id3153968" xml-lang="en-US" l10n="U" oldref="13">Click <emph>Delete</emph> to remove the breakpoint from the program.</paragraph>
+<paragraph role="heading" id="hd_id3150439" xml-lang="en-US" level="2" l10n="U" oldref="14">Observing the Value of Variables</paragraph>
+<paragraph role="paragraph" id="par_id3153368" xml-lang="en-US" l10n="U" oldref="15">You can monitor the values of a variable by adding it to the <emph>Watch</emph> window. To add a variable to the list of watched variables, type the variable name in the <emph>Watch</emph> text box and press Enter.</paragraph>
+<paragraph role="paragraph" id="par_id3146986" xml-lang="en-US" l10n="U" oldref="16">The values of variables are only displayed if they are in scope. Variables that are not defined at the current source code location display ("Out of Scope") instead of a value.</paragraph>
+<paragraph role="paragraph" id="par_id3145272" xml-lang="en-US" l10n="U" oldref="17">You can also include arrays in the Watch window. If you enter the name of an array variable without an index value in the Watch text box, the content of the entire array is displayed.</paragraph>
+<paragraph role="tip" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="19">If you rest the mouse over a predefined variable in the Editor at run-time, the content of the variable is displayed in a pop-up box.</paragraph><comment>UFI: removed help id</comment><paragraph role="heading" id="hd_id3148618" xml-lang="en-US" level="2" l10n="U" oldref="20">The Call Stack Window</paragraph>
+<paragraph role="paragraph" id="par_id3154491" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="HID_BASICIDE_STACKWINDOW_LIST">Provides an overview of the call hierarchy of procedures and functions.</ahelp> You can determine which procedures and functions called which other procedures and functions at the current point in the source code.</paragraph>
+<paragraph role="heading" id="hd_id3150594" xml-lang="en-US" level="2" l10n="CHG" oldref="24">List of Run-Time Errors</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#allerrors"/>
+</body>
+</helpdocument>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0201170102xml" indexer="include">
+<title id="tit" xml-lang="en-US">Data</title>
+<filename>/text/shared/02/01170102.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="daten">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145641"><bookmark_value>controls; reference by SQL</bookmark_value>
+<bookmark_value>bound fields; controls</bookmark_value>
+<bookmark_value>controls; bound fields/list contents/linked cells</bookmark_value>
+<bookmark_value>lists;data assigned to controls</bookmark_value>
+<bookmark_value>cells;linked to controls</bookmark_value>
+<bookmark_value>links;between cells and controls</bookmark_value>
+<bookmark_value>controls;assigning data sources</bookmark_value>
+</bookmark><comment>MW made "cells..." a two level entry, changed "linked cells;" to "links;" and "list contents" to "lists;"</comment>
+<paragraph role="heading" id="hd_id3155413" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170102.xhp" name="Data">Data</link></paragraph>
+<paragraph role="paragraph" id="par_id3155306" xml-lang="en-US" l10n="U" oldref="2">The<emph> Data </emph>tab page allows you to assign a data source to the selected control.</paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040501.xhp#controleigenschaftendaten"/>
+</section>
+<paragraph role="note" id="par_id3148773" xml-lang="en-US" l10n="U" oldref="64">For forms with database links, the associated database is defined in the <link href="text/shared/02/01170200.xhp" name="Form Properties">Form Properties</link>. You will find the functions for this on the <link href="text/shared/02/01170203.xhp" name="Data"><emph>Data</emph></link> tab page.</paragraph>
+<paragraph role="paragraph" id="par_id3149377" xml-lang="en-US" l10n="U" oldref="65">The possible settings of the <emph>Data</emph> tab page of a control depend on the respective control. You will only see the options that are available for the current control and context. The following fields are available:</paragraph>
+<sort order="asc">
+<section id="Section10">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_UNCHECKEDREFVALUE" id="bm_id7939695" localize="false"/>
+<paragraph role="heading" id="par_idN108B4" xml-lang="en-US" level="2" l10n="NEW">Reference value (off)</paragraph>
+<paragraph role="paragraph" id="par_idN108B8" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Check boxes and radio buttons in spreadsheets can be bound to cells in the current document. If the control is enabled, the value you enter in Reference value (on) is copied to the cell. If the control is disabled, the value from Reference value (off) is copied to the cell.</ahelp></paragraph>
+</section>
+<section id="Section23">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_REFVALUE" id="bm_id3147327" localize="false"/>
+<paragraph role="heading" id="hd_id3159121" xml-lang="en-US" level="2" l10n="CHG" oldref="71">Reference value (on)<comment>UFI: moved section from 01170101, changed name</comment></paragraph>
+<paragraph role="paragraph" id="par_id3163812" xml-lang="en-US" l10n="U" oldref="141"><ahelp hid="HID_PROP_REFVALUE" visibility="hidden">You can enter a reference value for the web form, which will be remitted to a server when sending the form. With database forms, the value entered is written in the database field, assigned to the control field.</ahelp>You can assign a reference value to option buttons and check boxes. The reference value will be remitted to a server when sending the web form. With database forms the value entered here will be written in the database assigned to the control field.</paragraph>
+<paragraph role="paragraph" id="par_id3150225" xml-lang="en-US" l10n="U" oldref="204">
+<emph>Reference values for web forms</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3147611" xml-lang="en-US" l10n="U" oldref="205">Reference values are useful if you design a web form and the information on the status of the control is to be transmitted to a server. If the control is clicked by the user, the corresponding reference value is sent to the server.</paragraph>
+<paragraph role="paragraph" id="par_id3149570" xml-lang="en-US" l10n="U" oldref="194">For example, if you have two control fields for the options "feminine" and "masculine", and assign a reference value of 1 to the field "feminine" and the value 2 to the "masculine" field, the value 1 is transmitted to the server if a user clicks the "feminine" field and value 2 is sent if the "masculine" field is clicked.</paragraph>
+<paragraph role="paragraph" id="par_id3150260" xml-lang="en-US" l10n="U" oldref="206">
+<emph>Reference values for database forms</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3150654" xml-lang="en-US" l10n="U" oldref="207">For database forms, you can also characterize the status of an option or a check box by a reference value, storing it in the database. If you have a set of three options, for example "in progress", "completed", and "resubmission", with the respective reference values, "ToDo", "OK", and "RS", these reference values appear in the database if the respective option is clicked.</paragraph>
+</section>
+<section id="Section1">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CONTROLSOURCE" id="bm_id3157976" localize="false"/>
+<paragraph role="heading" id="hd_id3148455" xml-lang="en-US" level="2" l10n="U" oldref="5">Data field</paragraph>
+<paragraph role="paragraph" id="par_id3155852" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="HID_PROP_CONTROLSOURCE" visibility="hidden">Specifies the field of the data source table to which the control refers.</ahelp>With database forms, you can link controls with the data fields.</paragraph>
+<paragraph role="paragraph" id="par_id3153224" xml-lang="en-US" l10n="U" oldref="75">You have several possibilities:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3159110" xml-lang="en-US" l10n="U" oldref="66">First case: There is only one table in the form.</paragraph>
+<paragraph role="listitem" id="par_id3156356" xml-lang="en-US" l10n="U" oldref="67">Under <emph>Data field</emph>, specify the field of the data source table whose contents you want to be displayed.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146898" xml-lang="en-US" l10n="U" oldref="76">Second case: The control belongs to a subform that is created by an SQL query.</paragraph>
+<paragraph role="listitem" id="par_id3154273" xml-lang="en-US" l10n="U" oldref="77">Under <emph>Data field</emph>, specify the field of the SQL statement whose contents you want to be displayed.</paragraph>
+</listitem>
+</list>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153949" xml-lang="en-US" l10n="U" oldref="78">Third case: <link href="text/shared/02/01170900.xhp" name="Combo Boxes">Combo Boxes</link></paragraph>
+<paragraph role="listitem" id="par_id3147494" xml-lang="en-US" l10n="U" oldref="79">For combo boxes, the field of the data source table in which the values entered or selected by the user should be stored is specified under <emph>Data field</emph>. The values displayed in the list of the combo box are based on an SQL statement, which is entered under <emph>List content</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145167" xml-lang="en-US" l10n="U" oldref="68">Fourth case: <link href="text/shared/02/01170900.xhp" name="List Boxes">List Boxes</link></paragraph>
+<paragraph role="listitem" id="par_id3153764" xml-lang="en-US" l10n="U" oldref="91">The data source table does not contain the data to be displayed, but rather a table linked to the data source table through a common data field.</paragraph>
+<paragraph role="listitem" id="par_id3149021" xml-lang="en-US" l10n="U" oldref="69">If you want a list box to display data from a table that is linked to the current data source table, under <emph>Data field</emph> specify the field of the data source table to which the content of the list box refers. Or you can specify the database field that controls the display of the data in the form. This data field provides the link to the other table if both tables can be linked through a common data field. It is usually a data field in which unique identification numbers are stored. The data field whose contents are displayed in the form is specified by an SQL statement under <emph>List content</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3153924" xml-lang="en-US" l10n="U" oldref="80">List boxes work with references. They can either be implemented with linked tables by SQL statements (fourth case) or through value lists:</paragraph>
+<paragraph role="paragraph" id="par_id3145641" xml-lang="en-US" l10n="U" oldref="58">
+<emph>References through linked tables (SQL statements)</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3147341" xml-lang="en-US" l10n="U" oldref="59">If you want a list box to display data from a database table that is linked by a common data field to the table on which the form is based, the link field of the form table is specified under <emph>Data field</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3155174" xml-lang="en-US" l10n="U" oldref="60">The link is created with an SQL Select, which, if you selected "SQL" or "Native SQL", is specified under <emph>Type of list contents</emph> in the field <emph>List content</emph>. As an example, a table "Orders" is linked to the current form control, and in the database a table "Customers" is linked to the "Orders" table. You can use an SQL statement as follows:</paragraph>
+<paragraph role="paragraph" id="par_id3148537" xml-lang="en-US" l10n="U" oldref="70">SELECT CustomerName, CustomerNo FROM Customers,</paragraph>
+<paragraph role="paragraph" id="par_id3154967" xml-lang="en-US" l10n="U" oldref="71">where "CustomerName" is the data field from the linked table "Customers", and "CustomerNo" is the field of the table "Customers" that is linked to a field of the form table "Orders" specified under <emph>Data field</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3163808" xml-lang="en-US" l10n="U" oldref="55">
+<emph>References Using Value Lists</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3145295" xml-lang="en-US" l10n="U" oldref="56">For list boxes, you can use value lists. Value lists are lists that define reference values. In this way, the control in the form does not directly display the content of a database field, but rather values assigned in the value list.</paragraph>
+<paragraph role="paragraph" id="par_id3151186" xml-lang="en-US" l10n="U" oldref="57">If you work with reference values of a value list, the contents of the data field that you specified under <emph>Data Field</emph> in the form are not visible, but rather the assigned values. If you chose "Valuelist" on the <emph>Data</emph> tab under <emph>Type of list contents</emph> and assigned a reference value to the visible list entries in the form under <emph>List entries</emph> (entered in the <link href="text/shared/02/01170101.xhp" name="General"><emph>General</emph></link> tab), then the reference values are compared with the data content of the given data field. If a reference value corresponds to the content of a data field, the associated list entries are displayed in the form.</paragraph>
+</section>
+<section id="Section2">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BOUNDCOLUMN" id="bm_id3150297" localize="false"/>
+<paragraph role="heading" id="hd_id3154664" xml-lang="en-US" level="2" l10n="U" oldref="3">Bound field</paragraph>
+<paragraph role="paragraph" id="par_id3148475" xml-lang="en-US" l10n="CHG" oldref="4"><ahelp hid="HID_PROP_BOUNDCOLUMN" visibility="hidden">Use an index to specify the table field or table SQL query to link to the field that is provided under <emph>Data field</emph>. Valid values for this property are 1, 2, 3, and so on.</ahelp><comment>UFI: issue #i32749#</comment></paragraph>
+<paragraph role="note" id="par_idN10AD2" xml-lang="en-US" l10n="NEW">If you delete the contents of the <emph>Bound field</emph> cell in the property browser, the first field of the result set is used to display and to exchange data.<comment>UFI: issue #i32749#</comment></paragraph>
+<paragraph role="paragraph" id="par_id3154588" xml-lang="en-US" l10n="U" oldref="72">This property for list boxes defines which data field of a linked table is displayed in the form.</paragraph>
+<paragraph role="paragraph" id="par_id3151213" xml-lang="en-US" l10n="CHG" oldref="38">If a list box in the form is to display contents of a table linked to the form table, then define in the <emph>Type of list contents</emph> field if the display is determined by an SQL command or the (linked) table is accessed. With the <emph>Bound field</emph> property, you use an index to specify to which data field of the query or of the table the list field is linked. </paragraph>
+<paragraph role="note" id="par_id3148427" xml-lang="en-US" l10n="U" oldref="73">The property <emph>Bound field</emph> is only for forms that are used to access more than one table. If the form is based on only one table, the field to be displayed in the form is specified directly under <emph>Data field</emph>. However, if you want the list box to display data from a table that is linked to the current table over a common data field, the linked data field is defined by the property <emph>Bound field</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3150365" xml-lang="en-US" l10n="U" oldref="39">If you selected "SQL" under <emph>Type of list contents</emph>, the SQL command determines the index to be specified. Example: If you specify an SQL command such as "SELECT Field1, Field2 FROM tablename" under <emph>List content</emph>, refer to the following table:</paragraph>
+<table id="tbl_id3151070">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id3154716" xml-lang="en-US" l10n="U" oldref="40">Bound field</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3150666" xml-lang="en-US" l10n="U" oldref="41">Link</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3154206" xml-lang="en-US" l10n="CHG" oldref="42">{empty}<comment>FS told me this</comment></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145257" xml-lang="en-US" l10n="U" oldref="43">The database field "Field1" is linked to the field specified under <emph>Data field</emph>.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3150887" xml-lang="en-US" l10n="U" oldref="44">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156064" xml-lang="en-US" l10n="U" oldref="45">The database field "Field2" is linked to the field specified under <emph>Data field</emph>.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3154134" xml-lang="en-US" l10n="U" oldref="46">If you selected "Table" under <emph>Type of list contents</emph>, the table structure defines the index to be specified. Example: If a database table is selected under <emph>List content</emph>, refer to the following table:</paragraph>
+<table id="tbl_id3150426">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id3155379" xml-lang="en-US" l10n="U" oldref="47">Bound field</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3155529" xml-lang="en-US" l10n="U" oldref="48">Link</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3155373" xml-lang="en-US" l10n="CHG" oldref="49">{empty}<comment>FS told me this</comment></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154260" xml-lang="en-US" l10n="U" oldref="50">The 1st column of the table is linked to the field specified under <emph>Data field</emph>.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3156448" xml-lang="en-US" l10n="U" oldref="51">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154486" xml-lang="en-US" l10n="U" oldref="52">The 2nd column of the table is linked to the field specified under <emph>Data field</emph>.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3149949" xml-lang="en-US" l10n="U" oldref="53">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3146767" xml-lang="en-US" l10n="U" oldref="54">The 3rd column of the table is linked to the field specified under <emph>Data field</emph>.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<section id="Section3">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_LISTSOURCETYPE" id="bm_id3153316" localize="false"/>
+<paragraph role="heading" id="hd_id3149772" xml-lang="en-US" level="2" l10n="U" oldref="9">Type of list contents</paragraph>
+<paragraph role="paragraph" id="par_id3154419" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_PROP_LISTSOURCETYPE" visibility="hidden">Determines the data to fill the lists in list and combo boxes.</ahelp>Determines the data to fill the lists in list and combo boxes.</paragraph>
+<paragraph role="paragraph" id="par_id3153326" xml-lang="en-US" l10n="U" oldref="13">With the "Valuelist" option, all entries entered in the <emph>List entries</emph> field of the <link href="text/shared/02/01170101.xhp" name="General"><emph>General</emph></link> tab appear in the control. For database forms, you can use reference values (see the <link href="text/shared/02/01170102.xhp" name=" References Using Value Lists"><emph>References Using Value Lists</emph></link> section).</paragraph>
+<paragraph role="paragraph" id="par_id3153067" xml-lang="en-US" l10n="U" oldref="14">If the content of the control is read from a database, you can determine the type of the data source with the other options. For example, you can choose between tables and queries.</paragraph>
+</section>
+<section id="Section4">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_LISTSOURCE" id="bm_id3148839" localize="false"/>
+<paragraph role="heading" id="hd_id3153820" xml-lang="en-US" level="2" l10n="U" oldref="7">List content</paragraph>
+<paragraph role="paragraph" id="par_id3159171" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_PROP_LISTSOURCE">With database forms, specifies the data source for the list content of the form-element. This field can be used to define a value list for documents without a database connection.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3168456" xml-lang="en-US" l10n="U" oldref="15">In the case of database forms, the data source determines the entries of the list or combo box. Depending on the selected type, you have a choice between different data sources under <emph>List content</emph>, provided that these objects exist in your database. All available database objects of the type selected under <emph>Type of list contents</emph> are offered here. If you have selected the "Value List" option as the type, you can use references for database forms. If the display of the control is controlled by an SQL command, the SQL statement is entered here.</paragraph>
+<paragraph role="paragraph" id="par_id3155870" xml-lang="en-US" l10n="U" oldref="81">Examples of SQL statements:</paragraph>
+<paragraph role="paragraph" id="par_id3144504" xml-lang="en-US" l10n="U" oldref="82">For list boxes, an SQL statement may have the following form:</paragraph>
+<paragraph role="code" id="par_id3156188" xml-lang="en-US" l10n="U" oldref="83">SELECT field1, field2 FROM table,</paragraph>
+<paragraph role="paragraph" id="par_id3155266" xml-lang="en-US" l10n="U" oldref="84">Here "table" is the table whose data is displayed in the list of the control (list table). "field1" is the data field that defines the visible entries in the form; its content is displayed in the list box. "field2" is the field of the list table that is linked to the form table (value table) through the field specified under <emph>Data field</emph> if <emph>Bound field</emph> = 1 was selected.</paragraph>
+<paragraph role="paragraph" id="par_id3145074" xml-lang="en-US" l10n="U" oldref="85">For combo boxes, an SQL statement may take the following form:</paragraph>
+<paragraph role="code" id="par_id3150991" xml-lang="en-US" l10n="U" oldref="86">SELECT DISTINCT field FROM table,</paragraph>
+<paragraph role="paragraph" id="par_id3154344" xml-lang="en-US" l10n="U" oldref="87">Here "field" is a data field from the list table "table" whose content is displayed in the list of the combo box.</paragraph>
+<paragraph role="paragraph" id="par_id3149328" xml-lang="en-US" l10n="U" oldref="74">
+<emph>Value lists for HTML documents</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3156034" xml-lang="en-US" l10n="U" oldref="16">For HTML forms, you can enter a value list under <emph>List content</emph>. Select the option "Valuelist" under <emph>Type of list contents</emph>. The values entered here will not be visible in the form, and are used to assign values to the visible entries. The entries made under <emph>List content</emph> correspond to the HTML tag &lt;OPTION VALUE=...&gt;.</paragraph>
+<paragraph role="paragraph" id="par_id3154855" xml-lang="en-US" l10n="U" oldref="17">In the data transfer of a selected entry from a list box or a combo box, both the list of the values displayed in the form, which was entered on the <link href="text/shared/02/01170101.xhp" name="General"><emph>General</emph></link> tab under <emph>List entries</emph>, and the value list entered on the <emph>Data</emph> tab under <emph>List content</emph>, are taken into consideration: If a (non-empty) text is at the selected position in the value list (&lt;OPTION VALUE=...&gt;), it will be transmitted. Otherwise, the text displayed in the (&lt;OPTION&gt;) control is sent.</paragraph>
+<paragraph role="paragraph" id="par_id3163377" xml-lang="en-US" l10n="U" oldref="18">If the value list is to contain an empty string, enter the value "$$$empty$$$" under <emph>List content</emph> at the corresponding position (note uppercase/lowercase). $[officename] interprets this input as an empty string and assigns it to the respective list entry.</paragraph>
+<paragraph role="paragraph" id="par_id3156309" xml-lang="en-US" l10n="U" oldref="19">The following table shows the connections between HTML, JavaScript, and the $[officename] field <emph>List content</emph> using an example list box named "ListBox1". In this case, "Item" designates a list entry visible in the form:</paragraph>
+<table id="tbl_id3145656">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159204" xml-lang="en-US" l10n="U" oldref="20">
+<emph>HTML Tag</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152539" xml-lang="en-US" l10n="U" oldref="21">
+<emph>JavaScript</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158404" xml-lang="en-US" l10n="U" oldref="22">
+<emph>Entry in value list of the control (List content)</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151198" xml-lang="en-US" l10n="U" oldref="23">
+<emph>Transmitted data</emph>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3154668" xml-lang="en-US" l10n="U" oldref="24">&lt;OPTION&gt;Item</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154269" xml-lang="en-US" l10n="U" oldref="25">Not possible</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153109" xml-lang="en-US" l10n="U" oldref="26">""</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154596" xml-lang="en-US" l10n="U" oldref="27">the visible list entry ("ListBox1=Item")</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3146892" xml-lang="en-US" l10n="U" oldref="28">&lt;OPTION VALUE="Value"&gt;Item</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="code" id="par_id3154604" xml-lang="en-US" l10n="U" oldref="29">ListBox1.options[0].value="Value"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="code" id="par_id3153689" xml-lang="en-US" l10n="U" oldref="30">"Value"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159226" xml-lang="en-US" l10n="U" oldref="31">The value assigned to the list entry ("ListBox1=Value")</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3155944" xml-lang="en-US" l10n="U" oldref="32">&lt;OPTION VALUE=""&gt;Item</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="code" id="par_id3155147" xml-lang="en-US" l10n="U" oldref="33">ListBox1.options[0].value=""</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="code" id="par_id3154763" xml-lang="en-US" l10n="U" oldref="34">"$$$empty$$$"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151012" xml-lang="en-US" l10n="U" oldref="35">An empty string ("ListBox1=")</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<section id="Section5">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_EMPTY_IS_NULL" id="bm_id3150628" localize="false"/>
+<paragraph role="heading" id="hd_id3148901" xml-lang="en-US" level="2" l10n="U" oldref="11">Empty string is NULL</paragraph>
+<paragraph role="paragraph" id="par_id3145357" xml-lang="en-US" l10n="CHG" oldref="12"><ahelp hid="HID_PROP_EMPTY_IS_NULL">Defines how an empty string input should be handled. If set to Yes, an input string of length zero will be treated as a value NULL. If set to No, any input will be treated as-is without any conversion.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id0820200812403467" xml-lang="en-US" l10n="NEW">An empty string is a string of length zero (""). Normally, a value NULL is not the same as an empty string. In general, a term NULL is used to denote an undefined value, an unknown value, or "no value has been entered yet."</paragraph>
+<paragraph role="paragraph" id="par_id0820200812403455" xml-lang="en-US" l10n="NEW">Database systems vary and they might handle a value NULL differently. Refer to documentations of the database that you are using.</paragraph>
+</section>
+<section id="Section6">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_FILTERPROPOSAL" id="bm_id3149393" localize="false"/>
+<paragraph role="heading" id="hd_id3161653" xml-lang="en-US" level="2" l10n="U" oldref="88">Filter proposal</paragraph>
+<paragraph role="paragraph" id="par_id3151221" xml-lang="en-US" l10n="U" oldref="89"><variable id="filtervorschlag"><ahelp hid="HID_PROP_FILTERPROPOSAL">While designing your form, you can set the "Filter proposal" property for each text box in the <emph>Data</emph> tab of the corresponding <emph>Properties</emph> dialog. In subsequent searches in the filter mode, you can select from all information contained in these fields.</ahelp> The field content can then be selected using the AutoComplete function. Note, however, that this function requires a greater amount of memory space and time, especially when used in large databases and should therefore be used sparingly. 
+</variable></paragraph>
+</section>
+<section id="Section9">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BOUND_CELL" id="bm_id4214300" localize="false"/>
+<paragraph role="heading" id="par_idN10EE3" xml-lang="en-US" level="2" l10n="NEW">Linked cell</paragraph>
+<paragraph role="paragraph" id="par_idN10EE7" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_PROP_BOUND_CELL">Specifies the reference to a linked cell on a spreadsheet. The live state or contents of the control are linked to the cell contents.</ahelp> The following tables list the controls and their corresponding link type:</paragraph>
+<paragraph role="heading" id="par_idN10EF7" xml-lang="en-US" level="3" l10n="NEW">Check box with linked cell</paragraph>
+<table id="tbl_id4947965">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10F04" xml-lang="en-US" l10n="NEW">Action</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10F0A" xml-lang="en-US" l10n="NEW">Result</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F11" xml-lang="en-US" l10n="NEW">Select the check box</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F17" xml-lang="en-US" l10n="NEW">TRUE is entered into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F1E" xml-lang="en-US" l10n="NEW">Deselect the check box</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F24" xml-lang="en-US" l10n="NEW">FALSE is entered into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F2B" xml-lang="en-US" l10n="NEW">Tri-state check box is set to "undetermined" state</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F31" xml-lang="en-US" l10n="NEW">#NV is entered into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F38" xml-lang="en-US" l10n="NEW">Enter a number or a formula that returns a number in the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F3E" xml-lang="en-US" l10n="NEW">If entered value is TRUE or not 0: Check box is selected<br/>If entered value is FALSE or 0: Check box is deselected</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F47" xml-lang="en-US" l10n="NEW">Clear the linked cell, or enter text, or enter a formula that returns text or an error</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F4D" xml-lang="en-US" l10n="NEW">Check box is set to "undetermined" state if it is a tri-state check box, else check box is deselected.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11023" xml-lang="en-US" l10n="NEW">Select the box. The Reference value box contains text.<comment>UFI: sc.features "eforms2 option buttons check boxes now also exchanging text"</comment></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1103A" xml-lang="en-US" l10n="NEW">The text from the Reference value box is copied to the cell.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11040" xml-lang="en-US" l10n="NEW">Deselect the box. The Reference value box contains text.</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11008" xml-lang="en-US" l10n="NEW">An empty string is copied to the cell.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1104B" xml-lang="en-US" l10n="NEW">The Reference value box contains text. Enter the same text into the cell.</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11050" xml-lang="en-US" l10n="NEW">The check box is selected.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11056" xml-lang="en-US" l10n="NEW">The Reference value box contains text. Enter another text into the cell.</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1105B" xml-lang="en-US" l10n="NEW">The check box is deselected.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="par_idN10F58" xml-lang="en-US" level="3" l10n="NEW">Option button (radio button) with linked cell</paragraph>
+<table id="tbl_id9255348">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10F65" xml-lang="en-US" l10n="NEW">Action</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10F6B" xml-lang="en-US" l10n="NEW">Result</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F72" xml-lang="en-US" l10n="NEW">Select the option button</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F78" xml-lang="en-US" l10n="NEW">TRUE is entered into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F7F" xml-lang="en-US" l10n="NEW">Option button is deselected by selecting another option button</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F85" xml-lang="en-US" l10n="NEW">FALSE is entered into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F8C" xml-lang="en-US" l10n="NEW">Enter a number or a formula that returns a number in the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F92" xml-lang="en-US" l10n="NEW">If entered value is TRUE or not 0: Option button is selected<br/>If entered value is FALSE or 0: Option button is deselected</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10F9B" xml-lang="en-US" l10n="NEW">Clear the linked cell, or enter text, or enter a formula that returns text or an error</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FA1" xml-lang="en-US" l10n="NEW">Option button is deselected</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110EF" xml-lang="en-US" l10n="NEW">Click the option button. The Reference value box contains text.</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110F4" xml-lang="en-US" l10n="NEW">The text from the Reference value box is copied to the cell.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110FA" xml-lang="en-US" l10n="NEW">Click another option button of the same group. The Reference value box contains text.</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110EA" xml-lang="en-US" l10n="NEW">An empty string is copied to the cell.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11105" xml-lang="en-US" l10n="NEW">The Reference value box contains text. Enter the same text into the cell.</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1110A" xml-lang="en-US" l10n="NEW">The option button is selected.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11110" xml-lang="en-US" l10n="NEW">The Reference value box contains text. Enter another text into the cell.</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11115" xml-lang="en-US" l10n="NEW">The option button is cleared.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="par_idN10FAC" xml-lang="en-US" level="3" l10n="NEW">Text box with linked cell</paragraph>
+<table id="tbl_id6909695">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10FB9" xml-lang="en-US" l10n="NEW">Action</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10FBF" xml-lang="en-US" l10n="NEW">Result</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FC6" xml-lang="en-US" l10n="NEW">Enter text into the text box</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FCC" xml-lang="en-US" l10n="NEW">Text is copied into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FD3" xml-lang="en-US" l10n="NEW">Clear the text box</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FD9" xml-lang="en-US" l10n="NEW">Linked cell is cleared</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FE0" xml-lang="en-US" l10n="NEW">Enter text or a number in the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FE6" xml-lang="en-US" l10n="NEW">Text or number is copied into the text box</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FED" xml-lang="en-US" l10n="NEW">Enter a formula into the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FF3" xml-lang="en-US" l10n="NEW">Formula result is copied into the text box</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10FFA" xml-lang="en-US" l10n="NEW">Clear the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11000" xml-lang="en-US" l10n="NEW">Text box is cleared</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="par_idN1100B" xml-lang="en-US" level="3" l10n="NEW">Numerical field and formatted field with linked cell</paragraph>
+<table id="tbl_id2086550">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN11018" xml-lang="en-US" l10n="NEW">Action</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN1101E" xml-lang="en-US" l10n="NEW">Result</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11025" xml-lang="en-US" l10n="NEW">Enter a number into the field</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1102B" xml-lang="en-US" l10n="NEW">Number is copied into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11032" xml-lang="en-US" l10n="NEW">Clear the field</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11038" xml-lang="en-US" l10n="NEW">Value 0 is set in the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1103F" xml-lang="en-US" l10n="NEW">Enter a number or a formula that returns a number in the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11045" xml-lang="en-US" l10n="NEW">Number is copied into the field</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1104C" xml-lang="en-US" l10n="NEW">Clear the linked cell, or enter text, or enter a formula that returns text or an error</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11052" xml-lang="en-US" l10n="NEW">Value 0 is set in the field</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="par_idN1105D" xml-lang="en-US" level="3" l10n="NEW">List box with linked cell</paragraph>
+<paragraph role="paragraph" id="par_idN11060" xml-lang="en-US" l10n="NEW">List boxes support two different linking modes, see the property "Contents of the linked cell".</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN11066" xml-lang="en-US" l10n="NEW">Linked contents: Synchronize the text contents of the selected list box entry with the cell contents.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1106A" xml-lang="en-US" l10n="NEW">Linked selection position: The position of the single selected item in the list box is synchronized with the numerical value in the cell.</paragraph>
+</listitem>
+</list>
+<table id="tbl_id5350505">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN11077" xml-lang="en-US" l10n="NEW">Action</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN1107D" xml-lang="en-US" l10n="NEW">Result</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11084" xml-lang="en-US" l10n="NEW">Select a single list item</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1108A" xml-lang="en-US" l10n="NEW">Contents are linked: Text of the item is copied into the linked cell.</paragraph>
+<paragraph role="tablecontent" id="par_idN1108D" xml-lang="en-US" l10n="NEW">Selection is linked: Position of the selected item is copied into the linked cell. For example, if the third item is selected, the number 3 will be copied.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11094" xml-lang="en-US" l10n="NEW">Select several list items</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1109A" xml-lang="en-US" l10n="NEW">#NV is entered into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110A1" xml-lang="en-US" l10n="NEW">Deselect all list items</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110A7" xml-lang="en-US" l10n="NEW">Contents are linked: Linked cell is cleared</paragraph>
+<paragraph role="tablecontent" id="par_idN110AA" xml-lang="en-US" l10n="NEW">Selection is linked: Value 0 is entered in the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110B1" xml-lang="en-US" l10n="NEW">Enter text or a number into the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110B7" xml-lang="en-US" l10n="NEW">Contents are linked: Find and select an equal list item</paragraph>
+<paragraph role="tablecontent" id="par_idN110BA" xml-lang="en-US" l10n="NEW">Selection is linked: The list item at the specified position (starting with 1 for the first item) is selected. If not found, all items are deselected.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110C1" xml-lang="en-US" l10n="NEW">Enter a formula into the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110C7" xml-lang="en-US" l10n="NEW">Find and select a list item that matches the formula result and link mode</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110CE" xml-lang="en-US" l10n="NEW">Clear the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110D4" xml-lang="en-US" l10n="NEW">Deselect all items in the list box</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110DB" xml-lang="en-US" l10n="NEW">Change the contents of the list source range</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN110E1" xml-lang="en-US" l10n="NEW">List box items are updated according to the change. The selection is preserved. This may cause an update to the linked cell.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="par_idN110EC" xml-lang="en-US" level="3" l10n="NEW">Combo box with linked cell</paragraph>
+<table id="tbl_id3521225">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN110F9" xml-lang="en-US" l10n="NEW">Action</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN110FF" xml-lang="en-US" l10n="NEW">Result</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11106" xml-lang="en-US" l10n="NEW">Enter text into the edit field of the combo box, or select an entry from the drop-down list</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1110C" xml-lang="en-US" l10n="NEW">Text is copied into the linked cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11113" xml-lang="en-US" l10n="NEW">Clear the edit field of the combo box</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11119" xml-lang="en-US" l10n="NEW">Linked cell is cleared</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11120" xml-lang="en-US" l10n="NEW">Enter text or a number into the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11126" xml-lang="en-US" l10n="NEW">Text or number is copied into the edit field of the combo box</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1112D" xml-lang="en-US" l10n="NEW">Enter a formula into the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11133" xml-lang="en-US" l10n="NEW">Formula result is copied into the edit field of the combo box</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1113A" xml-lang="en-US" l10n="NEW">Clear the linked cell</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11140" xml-lang="en-US" l10n="NEW">Edit field of the combo box is cleared</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11147" xml-lang="en-US" l10n="NEW">Change the contents of the list source range</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN1114D" xml-lang="en-US" l10n="NEW">Drop-down list items are updated according to the change. The edit field of the combo box and the linked cell are not changed.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<section id="Section8">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CELL_EXCHANGE_TYPE" id="bm_id5563219" localize="false"/>
+<paragraph role="heading" id="par_idN11163" xml-lang="en-US" level="2" l10n="NEW">Contents of the linked cell</paragraph>
+<paragraph role="paragraph" id="par_idN11167" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_PROP_CELL_EXCHANGE_TYPE">Select the mode of linking a list box with a linked cell on a spreadsheet.</ahelp></paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN11179" xml-lang="en-US" l10n="NEW">Linked contents: Synchronize the text contents of the selected list box entry with the cell contents. Select "The selected entry"</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1117D" xml-lang="en-US" l10n="NEW">Linked selection position: The position of the single selected item in the list box is synchronized with the numerical value in the cell. Select "Position of the selected entry"</paragraph>
+</listitem>
+</list>
+</section>
+<section id="Section7">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_LIST_CELL_RANGE" id="bm_id9886165" localize="false"/>
+<paragraph role="heading" id="par_idN1118B" xml-lang="en-US" level="2" l10n="NEW">Source cell range<comment>UFI: in the spec, this is "Source range of the list". Named it as seen in 680m38</comment></paragraph>
+<paragraph role="paragraph" id="par_idN111A1" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_PROP_LIST_CELL_RANGE">Enter a cell range that contains the entries for a list box or combo box on a spreadsheet.</ahelp> If you enter a multi-column range, only the contents of the leftmost column are used to fill the control.</paragraph>
+</section>
+</sort>
+</body>
+</helpdocument>

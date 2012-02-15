@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03060400xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Not-Operator [Runtime]</title>
+<filename>/text/sbasic/shared/03060400.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-12-17T10:18:06">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="not">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156024"><bookmark_value>Not operator (logical)</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3156024" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03060400.xhp" name="Not-Operator [Runtime]">Not-Operator [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="2">Negates an expression by inverting the bit values.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3149457" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150360" xml-lang="en-US" l10n="U" oldref="4">Result = Not Expression</paragraph>
+<paragraph role="heading" id="hd_id3151211" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3147228" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Result:</emph> Any numeric variable that contains the result of the negation.</paragraph>
+<paragraph role="paragraph" id="par_id3154124" xml-lang="en-US" l10n="CHG" oldref="7">
+<emph>Expression:</emph> Any expression that you want to negate.</paragraph>
+<paragraph role="paragraph" id="par_id3150868" xml-lang="en-US" l10n="U" oldref="8">When a Boolean expression is negated, the value True changes to False, and the value False changes to True.</paragraph>
+<paragraph role="paragraph" id="par_id3145785" xml-lang="en-US" l10n="U" oldref="9">In a bitwise negation each individual bit is inverted.</paragraph>
+<paragraph role="heading" id="hd_id3153093" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153143" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleNot</paragraph>
+<paragraph role="paragraph" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="12">Dim vA as Variant, vB as Variant, vC as Variant, vD as Variant</paragraph>
+<paragraph role="paragraph" id="par_id3145274" xml-lang="en-US" l10n="U" oldref="13">Dim vOut as Variant</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="14">vA = 10: vB = 8: vC = 6: vD = Null</paragraph>
+<paragraph role="paragraph" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="15">vOut = Not vA REM Returns -11</paragraph>
+<paragraph role="paragraph" id="par_id3148645" xml-lang="en-US" l10n="CHG" oldref="16">vOut = Not(vC &gt; vD) REM Returns -1</paragraph>
+<paragraph role="paragraph" id="par_id3156441" xml-lang="en-US" l10n="U" oldref="17">vOut = Not(vB &gt; vA) REM Returns -1</paragraph>
+<paragraph role="paragraph" id="par_id3152596" xml-lang="en-US" l10n="U" oldref="18">vOut = Not(vA &gt; vB) REM Returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="19">end Sub</paragraph>
+</body>
+</helpdocument>

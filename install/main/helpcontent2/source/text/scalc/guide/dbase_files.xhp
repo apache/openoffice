@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguidedbase_filesxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Importing and Exporting dBASE Files </title>
+         <filename>/text/scalc/guide/dbase_files.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id1226844"><bookmark_value>exporting;spreadsheets to dBASE</bookmark_value>
+      <bookmark_value>importing;dBASE files</bookmark_value>
+      <bookmark_value>dBASE import/export</bookmark_value>
+      <bookmark_value>spreadsheets; importing from/exporting to dBASE files</bookmark_value>
+      <bookmark_value>tables in databases;importing dBASE files</bookmark_value>
+</bookmark><comment>mw changed "database tables;" to "tables in databases;" and reduced "spreadsheets;" from two to one entry</comment>
+<paragraph xml-lang="en-US" id="par_idN10738" role="heading" level="1" l10n="NEW"><variable id="dbase_files"><link href="text/scalc/guide/dbase_files.xhp">Importing and Exporting dBASE Files</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10756" role="paragraph" l10n="CHG">You can open and save data in the dBASE file format (*.dbf file extension) in $[officename] Base or a spreadsheet. In %PRODUCTNAME Base, a dBASE database is a folder that contains files with the .dbf file extension. Each file corresponds to a table in the database. Formulas and formatting are lost when you open and save a dBASE file from %PRODUCTNAME.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10759" role="heading" level="2" l10n="NEW">To Import a dBASE File Into a Spreadsheet</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10760" role="paragraph" l10n="NEW">Choose <emph>File - Open</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1071F" role="paragraph" l10n="NEW">Locate the *.dbf file that you want to import. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10768" role="paragraph" l10n="NEW">Click <emph>Open</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN10730" role="paragraph" l10n="NEW">The <emph>Import dBASE files</emph> dialog opens.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10774" role="paragraph" l10n="NEW">Click <emph>OK</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN10777" role="paragraph" l10n="NEW">The dBASE file opens as a new Calc spreadsheet.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN1074E" role="warning" l10n="NEW">If you want to save the spreadsheet as a dBASE file, do not alter or delete the first row in the imported file. This row contains information that is required by a dBASE database.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1077A" role="heading" level="2" l10n="NEW">To Import a dBASE File Into a Database Table</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1076C" role="paragraph" l10n="NEW">A %PRODUCTNAME Base database table is actually a link to an existing database.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10796" role="paragraph" l10n="NEW">Choose <item type="menuitem">File - New - Database</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10786" role="paragraph" l10n="NEW">In the <emph>File name</emph> box of the <emph>Save As</emph> dialog, enter a name for the database.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10792" role="paragraph" l10n="NEW">Click <emph>Save</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1079A" role="paragraph" l10n="NEW">In the <emph>Database type </emph>box of the <emph>Database Properties</emph> dialog, select "dBASE".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107A6" role="paragraph" l10n="NEW">Click <emph>Next</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107AE" role="paragraph" l10n="NEW">Click <emph>Browse</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107B6" role="paragraph" l10n="NEW">Locate the directory that contains the dBASE file, and click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107BE" role="paragraph" l10n="NEW">Click <emph>Create</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN107F1" role="heading" level="2" l10n="NEW">To Save a Spreadsheet as a dBASE File</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107F8" role="paragraph" l10n="NEW">Choose <emph>File - Save As</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10800" role="paragraph" l10n="NEW">In the <emph>File format</emph> box, select "dBASE file".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107F9" role="paragraph" l10n="NEW">In the <emph>File name</emph> box, type a name for the dBASE file.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10801" role="paragraph" l10n="NEW">Click <emph>Save</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN10808" role="note" l10n="NEW">Only the data on the current sheet is exported.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/data_im_export.xhp#data_im_export"/>
+         <embed href="text/shared/guide/data_dbase2office.xhp#data_dbase2office"/>
+      </section>
+   </body>
+</helpdocument>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabase05040100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">General</title>
+<filename>/text/shared/explorer/database/05040100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-28T10:41:20">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="allgemein">
+<paragraph role="heading" id="hd_id3153255" xml-lang="en-US" level="1" l10n="U" oldref="25"><link href="text/shared/explorer/database/05040100.xhp" name="General">General</link></paragraph>
+<paragraph role="paragraph" id="par_id3157898" xml-lang="en-US" l10n="U" oldref="11">When you create a database table as an administrator, you can use this tab to determine user access, and to edit the data or the table structure.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152594"><bookmark_value>access rights for database tables (Base)</bookmark_value>
+<bookmark_value>tables in databases; access rights to (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)" to all entries</comment>
+<paragraph role="paragraph" id="par_id3152594" xml-lang="en-US" l10n="U" oldref="12">If you are not the administrator, you can use the <emph>General</emph> tab to view your access rights for the selected table.</paragraph>
+<paragraph role="heading" id="hd_id3145669" xml-lang="en-US" level="2" l10n="U" oldref="3">Table name</paragraph>
+<paragraph role="paragraph" id="par_id3147834" xml-lang="en-US" l10n="U" oldref="13">Displays the name of the selected database table.</paragraph>
+<paragraph role="heading" id="hd_id3156426" xml-lang="en-US" level="2" l10n="U" oldref="14">Type</paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="15">Displays the type of database.</paragraph>
+<paragraph role="heading" id="hd_id3149095" xml-lang="en-US" level="2" l10n="U" oldref="16">Location</paragraph>
+<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U" oldref="17">Displays the complete path of the database table.</paragraph>
+<paragraph role="heading" id="hd_id3153528" xml-lang="en-US" level="2" l10n="U" oldref="4">Read data</paragraph>
+<paragraph role="paragraph" id="par_id3163802" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid=".">Allows a user to read the data.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150355" xml-lang="en-US" level="2" l10n="U" oldref="5">Insert data</paragraph>
+<paragraph role="paragraph" id="par_id3149398" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid=".">Allows a user to insert new data.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155420" xml-lang="en-US" level="2" l10n="U" oldref="6">Change data</paragraph>
+<paragraph role="paragraph" id="par_id3158430" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid=".">Allows a user to change data.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149516" xml-lang="en-US" level="2" l10n="U" oldref="7">Delete data</paragraph>
+<paragraph role="paragraph" id="par_id3155449" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid=".">Allows a user to delete data.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145674" xml-lang="en-US" level="2" l10n="U" oldref="8">Change table structure</paragraph>
+<paragraph role="paragraph" id="par_id3153146" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid=".">Allows a user to change the table structure.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="9">Definition</paragraph>
+<paragraph role="paragraph" id="par_id3154897" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid=".">Allows the user to delete the table structure.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153126" xml-lang="en-US" level="2" l10n="U" oldref="10">Modify references</paragraph>
+<paragraph role="paragraph" id="par_id3159399" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid=".">Allows the user to modify the defined references, for example, to enter new relations for the table or to delete existing relations.</ahelp></paragraph>
+</body>
+</helpdocument>

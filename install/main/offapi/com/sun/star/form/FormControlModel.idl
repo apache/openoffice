@@ -1,0 +1,106 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_form_FormControlModel_idl__ 
+#define __com_sun_star_form_FormControlModel_idl__ 
+ 
+#ifndef __com_sun_star_awt_UnoControlModel_idl__ 
+#include <com/sun/star/awt/UnoControlModel.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_form_FormComponent_idl__ 
+#include <com/sun/star/form/FormComponent.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_beans_XFastPropertySet_idl__ 
+#include <com/sun/star/beans/XFastPropertySet.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_beans_XPropertyState_idl__ 
+#include <com/sun/star/beans/XPropertyState.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module form {  
+ 
+//============================================================================= 
+ 
+/** specifies a control model within a form.
+
+	<p>Note that the model-view-paradigm is used for form controls, too.</p>
+ */
+published service FormControlModel
+{ 
+	service com::sun::star::awt::UnoControlModel; 
+	
+	service com::sun::star::form::FormComponent; 
+ 
+	/** This optional interface gives an efficient access to all 
+				properties at once or an ability to set more than one property at once.
+	 */
+	[optional] interface com::sun::star::beans::XFastPropertySet; 
+ 
+	 
+	/** This optional interface gives access to the state of the 
+				properties, e.g. whether a default value 
+				is to be used or not for a certain property.
+	 */
+	[optional] interface com::sun::star::beans::XPropertyState; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** specifies the ID for classification of the component.
+		@see FormComponentType
+	 */
+	[readonly, property] short ClassId; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** determines the relative taborder of the control associated with the model.
+		
+		<p>The default -1 is used to indicate that the tab-order of this control should be
+		determined automatically.</p>
+		
+		<p>Each component which supports a tabstop must provide a
+		<member>FormControlModel::TabIndex</member> property.</p>
+
+		<p>Normally, a <type>FormController</type> instance is evaluating this property.</p>
+	 */
+	[optional, property] short TabIndex; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** used for additional information.
+		<p>No semantics is given for this property, it will usually be used by the creator of a document
+		containing form controls.</p>
+	 */
+	[property] string Tag; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

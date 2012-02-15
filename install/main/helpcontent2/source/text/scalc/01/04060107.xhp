@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0104060107xml" indexer="include">
+<title id="tit" xml-lang="en-US">Array Functions</title>
+<filename>/text/scalc/01/04060107.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147273"><bookmark_value>matrices; functions</bookmark_value>
+<bookmark_value>Function Wizard; arrays</bookmark_value>
+<bookmark_value>array formulas</bookmark_value>
+<bookmark_value>inline array constants</bookmark_value>
+<bookmark_value>formulas;arrays</bookmark_value>
+<bookmark_value>functions;array functions</bookmark_value>
+<bookmark_value>editing; array formulas</bookmark_value>
+<bookmark_value>copying; array formulas</bookmark_value>
+<bookmark_value>adjusting array ranges</bookmark_value>
+<bookmark_value>calculating;conditional calculations</bookmark_value>
+<bookmark_value>matrices; calculations</bookmark_value>
+<bookmark_value>conditional calculations with arrays</bookmark_value>
+<bookmark_value>implicit array handling</bookmark_value>
+<bookmark_value>forced array handling</bookmark_value>
+</bookmark><comment>mw deleted "creating;"</comment>
+<paragraph role="heading" id="hd_id3147273" xml-lang="en-US" level="1" l10n="U" oldref="1">Array Functions</paragraph>
+<paragraph role="paragraph" id="par_id3154744" xml-lang="en-US" l10n="U" oldref="2"><variable id="matrixtext">This category contains the array functions. 
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3146084" xml-lang="en-US" level="2" l10n="U" oldref="257">What is an Array?</paragraph>
+<paragraph role="paragraph" id="par_id3154298" xml-lang="en-US" l10n="U" oldref="258"><variable id="wasmatrix">An array is a linked range of cells on a spreadsheet containing values. 
+</variable> A square range of 3 rows and 3 columns is a 3 x 3 array:</paragraph>
+<table id="tbl_id3151168">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154692" xml-lang="en-US" l10n="U" oldref="260">A</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150117" xml-lang="en-US" l10n="U" oldref="261">B</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155325" xml-lang="en-US" l10n="U" oldref="262">C</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153104" xml-lang="en-US" l10n="U" oldref="263">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3146996" xml-lang="en-US" l10n="U" oldref="264">
+<item type="input">7</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150529" xml-lang="en-US" l10n="U" oldref="265">
+<item type="input">31</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148831" xml-lang="en-US" l10n="U" oldref="266">
+<item type="input">33</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148943" xml-lang="en-US" l10n="U" oldref="267">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149771" xml-lang="en-US" l10n="U" oldref="268">
+<item type="input">95</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158407" xml-lang="en-US" l10n="U" oldref="269">
+<item type="input">17</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148806" xml-lang="en-US" l10n="U" oldref="270">
+<item type="input">2</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154904" xml-lang="en-US" l10n="U" oldref="271">3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150779" xml-lang="en-US" l10n="U" oldref="272">
+<item type="input">5</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148449" xml-lang="en-US" l10n="U" oldref="273">
+<item type="input">10</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147238" xml-lang="en-US" l10n="U" oldref="274">
+<item type="input">50</item>
+</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3153583" xml-lang="en-US" l10n="U" oldref="277">The smallest possible array is a 1 x 2 or 2 x 1 array with two adjacent cells.</paragraph>
+<paragraph role="heading" id="hd_id3148474" xml-lang="en-US" level="2" l10n="U" oldref="275">What is an array formula?</paragraph>
+<paragraph role="paragraph" id="par_id3155355" xml-lang="en-US" l10n="U" oldref="276">A formula in which the individual values in a cell range are evaluated is referred to as an array formula. The difference between an array formula and other formulas is that the array formula deals with several values simultaneously instead of just one.</paragraph>
+<paragraph role="paragraph" id="par_id3151052" xml-lang="en-US" l10n="U" oldref="278">Not only can an array formula process several values, but it can also return several values. The results of an array formula is also an array.</paragraph>
+<paragraph role="paragraph" id="par_id3158432" xml-lang="en-US" l10n="U" oldref="279">To multiply the values in the individual cells by 10 in the above array, you do not need to apply a formula to each individual cell or value. Instead you just need to use a single array formula. Select a range of 3 x 3 cells on another part of the spreadsheet, enter the formula <item type="input">=10*A1:C3</item> and confirm this entry using the key combination <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Enter. The result is a 3 x 3 array in which the individual values in the cell range (A1:C3) are multiplied by a factor of 10.</paragraph>
+<paragraph role="paragraph" id="par_id3149156" xml-lang="en-US" l10n="U" oldref="280">In addition to multiplication, you can also use other operators on the reference range (an array). With $[officename] Calc, you can add (+), subtract (-), multiply (*), divide (/), use exponents (^), concatenation (&amp;) and comparisons (=, &lt;&gt;, &lt;, &gt;, &lt;=, &gt;=). The operators can be used on each individual value in the cell range and return the result as an array if the array formula was entered.</paragraph>
+<paragraph role="paragraph" id="par_id3166456" xml-lang="en-US" l10n="CHG" oldref="326">Comparison operators in an array formula treat empty cells in the same way as in a normal formula, that is, either as zero or as an empty string. For example, if cells A1 and A2 are empty the array formulas <item type="input">{=A1:A2=""}</item> and <item type="input">{=A1:A2=0}</item> will both return a 1 column 2 row array of cells containing TRUE.</paragraph>
+<paragraph role="heading" id="hd_id3150713" xml-lang="en-US" level="3" l10n="U" oldref="281">When do you use array formulas?</paragraph>
+<paragraph role="paragraph" id="par_id3149787" xml-lang="en-US" l10n="U" oldref="282">Use array formulas if you have to repeat calculations using different values. If you decide to change the calculation method later, you only have to update the array formula. To add an array formula, select the entire array range and then <link href="text/scalc/01/04060107.xhp" name="make the required change to the array formula">make the required change to the array formula</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3149798" xml-lang="en-US" l10n="U" oldref="283">Array formulas are also a space saving option when several values must be calculated, since they are not very memory-intensive. In addition, arrays are an essential tool for carrying out complex calculations, because you can have several cell ranges included in your calculations. $[officename] has different math functions for arrays, such as the MMULT function for multiplying two arrays or the SUMPRODUCT function for calculating the scalar products of two arrays.</paragraph>
+<paragraph role="heading" id="hd_id3155588" xml-lang="en-US" level="2" l10n="U" oldref="284">Using Array Formulas in $[officename] Calc</paragraph>
+<paragraph role="paragraph" id="par_id3152876" xml-lang="en-US" l10n="U" oldref="285">You can also create a "normal" formula in which the reference range, such as parameters, indicate an array formula. The result is obtained from the intersection of the reference range and the rows or columns in which the formula is found. If there is no intersection or if the range at the intersection covers several rows or columns, a #VALUE! error message appears. The following example illustrates this concept:</paragraph>
+<paragraph role="heading" id="hd_id3151271" xml-lang="en-US" level="3" l10n="U" oldref="313">Creating Array Formulas</paragraph>
+<section id="somatrixformel">
+<paragraph role="paragraph" id="par_id3149102" xml-lang="en-US" l10n="U" oldref="314">If you create an array formula using the <emph>Function Wizard</emph>, you must mark the <emph>Array</emph> check box each time so that the results are returned in an array. Otherwise, only the value in the upper-left cell of the array being calculated is returned.</paragraph>
+<paragraph role="paragraph" id="par_id3153392" xml-lang="en-US" l10n="U" oldref="4">If you enter the array formula directly into the cell, you must use the key combination Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter instead of the Enter key. Only then does the formula become an array formula.</paragraph>
+<paragraph role="note" id="par_id3151120" xml-lang="en-US" l10n="U" oldref="315">Array formulas appear in braces in $[officename] Calc. You cannot create array formulas by manually entering the braces.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3154342" xml-lang="en-US" l10n="U" oldref="5">The cells in a results array are automatically protected against changes. However, you can edit or copy the array formula by selecting the entire array cell range.</paragraph>
+<paragraph role="heading" id="hd_id8834803" xml-lang="en-US" level="3" l10n="NEW">Using Inline Array Constants in Formulas</paragraph>
+<paragraph role="paragraph" id="par_id985747" xml-lang="en-US" l10n="NEW">Calc supports inline matrix/array constants in formulas. An inline array is surrounded by curly braces '{' and '}'. Elements can be each a number (including negatives), a logical constant (TRUE, FALSE), or a literal string. Non-constant expressions are not allowed. Arrays can be entered with one or more rows, and one or more columns. All rows must consist of the same number of elements, all columns must consist of the same number of elements. </paragraph>
+<paragraph role="paragraph" id="par_id936613" xml-lang="en-US" l10n="NEW">The column separator (separating elements in one row) is the ';' semicolon. The row separator is a '|' pipe symbol. The separators are not language and locale dependent. </paragraph>
+<paragraph role="paragraph" id="par_id1877498" xml-lang="en-US" l10n="NEW">Arrays can not be nested.</paragraph>
+<paragraph role="paragraph" id="par_id4262520" xml-lang="en-US" l10n="NEW">
+<emph>Examples:</emph>
+</paragraph>
+<paragraph role="code" id="par_id9387493" xml-lang="en-US" l10n="NEW">={1;2;3}</paragraph>
+<paragraph role="paragraph" id="par_id8207037" xml-lang="en-US" l10n="NEW">An array with one row consisting of the three numbers 1, 2, and 3.</paragraph>
+<paragraph role="paragraph" id="par_id6757103" xml-lang="en-US" l10n="NEW">To enter this array constant, you select three cells in a row, then you type the formula <item type="input">={1;2;3}</item> using the curly braces and the semicolons, then press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Enter.</paragraph>
+<paragraph role="code" id="par_id8868068" xml-lang="en-US" l10n="NEW">={1;2;3|4;5;6}</paragraph>
+<paragraph role="paragraph" id="par_id6626483" xml-lang="en-US" l10n="NEW">An array with two rows and three values in each row.</paragraph>
+<paragraph role="code" id="par_id5262916" xml-lang="en-US" l10n="NEW">={0;1;2|FALSE;TRUE;"two"}</paragraph>
+<paragraph role="paragraph" id="par_id1623889" xml-lang="en-US" l10n="NEW">A mixed data array.</paragraph>
+<paragraph role="code" id="par_id7781914" xml-lang="en-US" l10n="NEW">=SIN({1;2;3})</paragraph>
+<paragraph role="paragraph" id="par_id300912" xml-lang="en-US" l10n="NEW">Entered as a matrix formula, delivers the result of three SIN calculations with the arguments 1, 2, and 3.</paragraph>
+<paragraph role="heading" id="hd_id3148660" xml-lang="en-US" level="3" l10n="U" oldref="316">Editing Array Formulas</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149241" xml-lang="en-US" l10n="U" oldref="317">Select the cell range or array containing the array formula. To select the whole array, position the cell cursor inside the array range, then press <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>+ /, where / is the Division key on the numeric keypad.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3143274" xml-lang="en-US" l10n="U" oldref="318">Either press F2 or position the cursor in the input line. Both of these actions let you edit the formula.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154798" xml-lang="en-US" l10n="U" oldref="319">After you have made changes, press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Enter.</paragraph>
+</listitem>
+</list>
+<paragraph role="tip" id="par_id3150628" xml-lang="en-US" l10n="U" oldref="334">You can format the separate parts of an array. For example, you can change the font color. Select a cell range and then change the attribute you want.</paragraph>
+<paragraph role="heading" id="hd_id3145608" xml-lang="en-US" level="3" l10n="U" oldref="320">Copying Array Formulas</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149585" xml-lang="en-US" l10n="U" oldref="321">Select the cell range or array containing the array formula.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154619" xml-lang="en-US" l10n="U" oldref="322">Either press F2 or position the cursor in the input line.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150994" xml-lang="en-US" l10n="U" oldref="323">Copy the formula into the input line by pressing <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+C.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146787" xml-lang="en-US" l10n="U" oldref="324">Select a range of cells where you want to insert the array formula and either press F2 or position the cursor in the input line.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154419" xml-lang="en-US" l10n="U" oldref="325">Paste the formula by pressing <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+V in the selected space and confirm it by pressing <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Enter. The selected range now contains the array formula.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3154834" xml-lang="en-US" level="3" l10n="U" oldref="328">Adjusting an Array Range</paragraph>
+<paragraph role="paragraph" id="par_id3148679" xml-lang="en-US" l10n="U" oldref="329">If you want to edit the output array, do the following:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3151102" xml-lang="en-US" l10n="U" oldref="330">Select the cell range or array containing the array formula.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147096" xml-lang="en-US" l10n="U" oldref="331">Below the selection, to the right, you will see a small icon with which you can zoom in or out on the range using your mouse.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3150974" xml-lang="en-US" l10n="U" oldref="332">When you adjust the array range, the array formula will not automatically be adjusted. You are only changing the range in which the result will appear.</paragraph>
+<paragraph role="paragraph" id="par_id3146080" xml-lang="en-US" l10n="U" oldref="333">By holding down the <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>key, you can create a copy of the array formula in the given range.</paragraph>
+<paragraph role="heading" id="par_idN10D47" xml-lang="en-US" level="3" l10n="NEW">Conditional Array Calculations</paragraph>
+<paragraph role="paragraph" id="par_idN10D4B" xml-lang="en-US" l10n="NEW">A conditional array calculation is an array or matrix formula that includes an IF() or CHOOSE() function. The condition argument in the formula is an area reference or a matrix result.</paragraph>
+<paragraph role="paragraph" id="par_idN10D4E" xml-lang="en-US" l10n="NEW">In the following example, the &gt;0 test of the {=IF(A1:A3&gt;0;"yes";"no")} formula is applied to each cell in the range A1:A3 and the result is copied to the corresponding cell.</paragraph>
+<table id="tbl_id2511673">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10D65" xml-lang="en-US" l10n="NEW">A</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10D6B" xml-lang="en-US" l10n="NEW">B (formula)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10B75" xml-lang="en-US" l10n="NEW">B (result)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10D79" xml-lang="en-US" l10n="NEW">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_idN10D80" xml-lang="en-US" l10n="NEW">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_idN10D86" xml-lang="en-US" l10n="NEW">{=IF(A1:A3&gt;0;"yes";"no")}</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10D8C" xml-lang="en-US" l10n="NEW">yes</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10D94" xml-lang="en-US" l10n="NEW">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_idN10D9B" xml-lang="en-US" l10n="NEW">0</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_idN10DA1" xml-lang="en-US" l10n="NEW">{=IF(A1:A3&gt;0;"yes";"no")}</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10DA7" xml-lang="en-US" l10n="NEW">no</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10DAF" xml-lang="en-US" l10n="NEW">3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_idN10DB6" xml-lang="en-US" l10n="NEW">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_idN10DBC" xml-lang="en-US" l10n="NEW">{=IF(A1:A3&gt;0;"yes";"no")}</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10DC2" xml-lang="en-US" l10n="NEW">yes</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_idN10DD0" xml-lang="en-US" l10n="NEW">The following functions provide forced array handling: CORREL, COVAR, FORECAST, FTEST, INTERCEPT, MDETERM, MINVERSE, MMULT, MODE, PEARSON, PROB, RSQ, SLOPE, STEYX, SUMPRODUCT, SUMX2MY2, SUMX2PY2, SUMXMY2, TTEST. If you use area references as arguments when you call one of these functions, the functions behave as array functions. The following table provides an example of forced array handling:</paragraph>
+<table id="tbl_id7380291">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10DE2" xml-lang="en-US" l10n="NEW">A</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10DE8" xml-lang="en-US" l10n="NEW">B (formula)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10DEE" xml-lang="en-US" l10n="NEW">B (result)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10DF4" xml-lang="en-US" l10n="NEW">C (forced array formula)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10DFA" xml-lang="en-US" l10n="NEW">C (result)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10E02" xml-lang="en-US" l10n="NEW">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E09" xml-lang="en-US" l10n="NEW">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E0F" xml-lang="en-US" l10n="NEW">=A1:A2+1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E17" xml-lang="en-US" l10n="NEW">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E1D" xml-lang="en-US" l10n="NEW">=SUMPRODUCT(A1:A2+1)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E25" xml-lang="en-US" l10n="NEW">5</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10E2D" xml-lang="en-US" l10n="NEW">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E34" xml-lang="en-US" l10n="NEW">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E3A" xml-lang="en-US" l10n="NEW">=A1:A2+1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E42" xml-lang="en-US" l10n="NEW">3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E48" xml-lang="en-US" l10n="NEW">=SUMPRODUCT(A1:A2+1)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E50" xml-lang="en-US" l10n="NEW">5</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10E58" xml-lang="en-US" l10n="NEW">3</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E63" xml-lang="en-US" l10n="NEW">=A1:A2+1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E6A" xml-lang="en-US" l10n="NEW">#VALUE!</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E70" xml-lang="en-US" l10n="NEW">=SUMPRODUCT(A1:A2+1)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10E78" xml-lang="en-US" l10n="NEW">5</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<sort>
+<section id="Section14">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158446"><bookmark_value>MUNIT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_EINHEITSMATRIX" id="bm_id3151317" localize="false"/>
+<paragraph role="heading" id="hd_id3158446" xml-lang="en-US" level="2" l10n="U" oldref="12">MUNIT</paragraph>
+<paragraph role="paragraph" id="par_id3154121" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="HID_FUNC_EINHEITSMATRIX">Returns the unitary square array of a certain size.</ahelp> The unitary array is a square array where the main diagonal elements equal 1 and all other array elements are equal to 0.</paragraph>
+<paragraph role="heading" id="hd_id3155123" xml-lang="en-US" level="3" l10n="U" oldref="14">Syntax</paragraph>
+<paragraph role="code" id="par_id3156271" xml-lang="en-US" l10n="U" oldref="15">MUNIT(Dimensions)</paragraph>
+<paragraph role="paragraph" id="par_id3159390" xml-lang="en-US" l10n="U" oldref="16">
+<emph>Dimensions</emph> refers to the size of the array unit.</paragraph>
+<paragraph role="note" id="par_idN10C9B" xml-lang="en-US" l10n="NEW">You can find a general introduction to Array functions at the top of this page.</paragraph>
+<paragraph role="heading" id="hd_id3156162" xml-lang="en-US" level="3" l10n="U" oldref="17">Example</paragraph>
+<paragraph role="paragraph" id="par_id3150949" xml-lang="en-US" l10n="U" oldref="18">Select a square range within the spreadsheet, for example, from A1 to E5.</paragraph>
+<paragraph role="paragraph" id="par_id3151260" xml-lang="en-US" l10n="U" oldref="19">Without deselecting the range, select the MUNIT function. Mark the <emph>Array</emph> check box. Enter the desired dimensions for the array unit, in this case <item type="input">5</item>, and click <emph>OK</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3150403" xml-lang="en-US" l10n="U" oldref="20">You can also enter the <item type="input">=Munit(5)</item> formula in the last cell of the selected range (E5), and press <switchinline select="sys"><caseinline select="MAC">Shift+Command+Enter</caseinline><defaultinline>Shift+Ctrl+Enter</defaultinline></switchinline>.</paragraph>
+<paragraph role="paragraph" id="par_id3156143" xml-lang="en-US" l10n="U" oldref="21">You now see a unit array with a range of A1:E5.</paragraph>
+<paragraph role="paragraph" id="par_idN10FA7" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section13">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159084"><bookmark_value>FREQUENCY function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_HAEUFIGKEIT" id="bm_id3153883" localize="false"/>
+<paragraph role="heading" id="hd_id3159084" xml-lang="en-US" level="2" l10n="U" oldref="22">FREQUENCY</paragraph>
+<paragraph role="paragraph" id="par_id3145777" xml-lang="en-US" l10n="CHG" oldref="23"><ahelp hid="HID_FUNC_HAEUFIGKEIT">Indicates the frequency distribution in a one-column-array.</ahelp> The function counts the number of values in the Data array that are within the values given by the Classes array.</paragraph>
+<paragraph role="heading" id="hd_id3153347" xml-lang="en-US" level="3" l10n="U" oldref="24">Syntax</paragraph>
+<paragraph role="code" id="par_id3155498" xml-lang="en-US" l10n="U" oldref="25">FREQUENCY(Data; Classes)</paragraph>
+<paragraph role="paragraph" id="par_id3154352" xml-lang="en-US" l10n="CHG" oldref="26">
+<emph>Data</emph> represents the reference to the values to be counted.</paragraph>
+<paragraph role="paragraph" id="par_id3148402" xml-lang="en-US" l10n="CHG" oldref="27">
+<emph>Classes</emph> represents the array of the limit values.</paragraph>
+<paragraph role="note" id="par_idN10D71" xml-lang="en-US" l10n="NEW">You can find a general introduction to Array functions at the top of this page.</paragraph>
+<paragraph role="heading" id="hd_id3148981" xml-lang="en-US" level="3" l10n="U" oldref="28">Example</paragraph>
+<paragraph role="paragraph" id="par_id3155904" xml-lang="en-US" l10n="CHG" oldref="219">In the following table, column A lists unsorted measurement values. Column B contains the upper limit you entered for the classes into which you want to divide the data in column A. According to the limit entered in B1, the FREQUENCY function returns the number of measured values less than or equal to 5. As the limit in B2 is 10, the FREQUENCY function returns the second result as the number of measured values that are greater than 5 and less than or equal to 10. The text you entered in B6, "&gt;25", is only for reference purposes.<comment>i77461: replace old text: As the limit in B2 is 10, the FREQUENCY function returns the second result as the number of measured values that are greater than 5 or greater than or equal to 10.</comment></paragraph><comment>UFI: replace table by picture</comment>
+<table id="tbl_id3150680">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155869" xml-lang="en-US" l10n="U" oldref="220">
+<emph>A</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149328" xml-lang="en-US" l10n="U" oldref="221">
+<emph>B</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152467" xml-lang="en-US" l10n="U" oldref="222">
+<emph>C</emph>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154528" xml-lang="en-US" l10n="U" oldref="223">
+<emph>1</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149744" xml-lang="en-US" l10n="U" oldref="224">12</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147309" xml-lang="en-US" l10n="U" oldref="225">5</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154199" xml-lang="en-US" l10n="U" oldref="226">1</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159218" xml-lang="en-US" l10n="U" oldref="227">
+<emph>2</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153263" xml-lang="en-US" l10n="U" oldref="228">8</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3156201" xml-lang="en-US" l10n="U" oldref="229">10</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147552" xml-lang="en-US" l10n="U" oldref="230">3</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149174" xml-lang="en-US" l10n="U" oldref="231">
+<emph>3</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151201" xml-lang="en-US" l10n="U" oldref="232">24</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150245" xml-lang="en-US" l10n="U" oldref="233">15</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159194" xml-lang="en-US" l10n="U" oldref="234">2</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3146925" xml-lang="en-US" l10n="U" oldref="235">
+<emph>4</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154128" xml-lang="en-US" l10n="U" oldref="236">11</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151067" xml-lang="en-US" l10n="U" oldref="237">20</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3156033" xml-lang="en-US" l10n="U" oldref="238">3</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149298" xml-lang="en-US" l10n="U" oldref="239">
+<emph>5</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151382" xml-lang="en-US" l10n="U" oldref="240">5</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155141" xml-lang="en-US" l10n="U" oldref="241">25</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145213" xml-lang="en-US" l10n="U" oldref="242">1</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145268" xml-lang="en-US" l10n="U" oldref="243">
+<emph>6</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3163724" xml-lang="en-US" l10n="U" oldref="244">20</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147132" xml-lang="en-US" l10n="U" oldref="245">&gt;25</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148903" xml-lang="en-US" l10n="U" oldref="246">1</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151007" xml-lang="en-US" l10n="U" oldref="247">
+<emph>7</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153294" xml-lang="en-US" l10n="U" oldref="248">16</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147284" xml-lang="en-US" l10n="U" oldref="249">
+<emph>8</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154914" xml-lang="en-US" l10n="U" oldref="250">9</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154218" xml-lang="en-US" l10n="U" oldref="251">
+<emph>9</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U" oldref="252">7</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149045" xml-lang="en-US" l10n="U" oldref="253">
+<emph>10</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155799" xml-lang="en-US" l10n="U" oldref="254">16</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155076" xml-lang="en-US" l10n="U" oldref="255">
+<emph>11</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150217" xml-lang="en-US" l10n="U" oldref="256">33</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3150312" xml-lang="en-US" l10n="CHG" oldref="29">Select a single column range in which to enter the frequency according to the class limits. You must select one field more than the class ceiling. In this example, select the range C1:C6. Call up the FREQUENCY function in the <emph>Function Wizard</emph>. Select the <emph>Data</emph> range in (A1:A11), and then the <emph>Classes</emph> range in which you entered the class limits (B1:B6). Select the <emph>Array</emph> check box and click <emph>OK</emph>. You will see the frequency count in the range C1:C6.</paragraph>
+<paragraph role="paragraph" id="par_idN11269" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section12">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151030"><bookmark_value>MDETERM function</bookmark_value>
+<bookmark_value>determinants</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MDET" id="bm_id3154057" localize="false"/>
+<paragraph role="heading" id="hd_id3151030" xml-lang="en-US" level="2" l10n="U" oldref="31">MDETERM</paragraph>
+<paragraph role="paragraph" id="par_id3154073" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_FUNC_MDET">Returns the array determinant of an array.</ahelp> This function returns a value in the current cell; it is not necessary to define a range for the results.</paragraph>
+<paragraph role="heading" id="hd_id3156366" xml-lang="en-US" level="3" l10n="U" oldref="33">Syntax</paragraph>
+<paragraph role="code" id="par_id3156380" xml-lang="en-US" l10n="U" oldref="34">MDETERM(Array)</paragraph>
+<paragraph role="paragraph" id="par_id3150290" xml-lang="en-US" l10n="U" oldref="35">
+<emph>Array</emph> represents a square array in which the determinants are defined.</paragraph>
+<paragraph role="note" id="par_idN11035" xml-lang="en-US" l10n="NEW">You can find a general introduction to using Array functions on top of this page.</paragraph>
+<paragraph role="paragraph" id="par_idN11333" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section11">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151348"><bookmark_value>MINVERSE function</bookmark_value>
+<bookmark_value>inverse arrays</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MINV" id="bm_id3151360" localize="false"/>
+<paragraph role="heading" id="hd_id3151348" xml-lang="en-US" level="2" l10n="U" oldref="39">MINVERSE</paragraph>
+<paragraph role="paragraph" id="par_id3145569" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="HID_FUNC_MINV">Returns the inverse array.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3156072" xml-lang="en-US" level="3" l10n="U" oldref="41">Syntax</paragraph>
+<paragraph role="code" id="par_id3156085" xml-lang="en-US" l10n="U" oldref="42">MINVERSE(Array)</paragraph>
+<paragraph role="paragraph" id="par_id3157849" xml-lang="en-US" l10n="U" oldref="43">
+<emph>Array</emph> represents a square array that is to be inverted.</paragraph>
+<paragraph role="paragraph" id="par_idN113EE" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3157868" xml-lang="en-US" level="3" l10n="U" oldref="44">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149638" xml-lang="en-US" l10n="U" oldref="45">Select a square range and select MINVERSE. Select the output array, select the <emph>Array</emph> field and click <emph>OK</emph>.</paragraph>
+</section>
+<section id="Section10">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148546"><bookmark_value>MMULT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MMULT" id="bm_id3148501" localize="false"/>
+<paragraph role="heading" id="hd_id3148546" xml-lang="en-US" level="2" l10n="U" oldref="47">MMULT</paragraph>
+<paragraph role="paragraph" id="par_id3148518" xml-lang="en-US" l10n="U" oldref="48"><ahelp hid="HID_FUNC_MMULT">Calculates the array product of two arrays.</ahelp> The number of columns for array 1 must match the number of rows for array 2. The square array has an equal number of rows and columns.</paragraph>
+<paragraph role="heading" id="hd_id3146767" xml-lang="en-US" level="3" l10n="U" oldref="49">Syntax</paragraph>
+<paragraph role="code" id="par_id3150798" xml-lang="en-US" l10n="U" oldref="50">MMULT(Array; Array)</paragraph>
+<paragraph role="paragraph" id="par_id3150812" xml-lang="en-US" l10n="U" oldref="51">
+<emph>Array</emph> at first place represents the first array used in the array product.</paragraph>
+<paragraph role="paragraph" id="par_id3152553" xml-lang="en-US" l10n="U" oldref="52">
+<emph>Array</emph> at second place represents the second array with the same number of rows.</paragraph>
+<paragraph role="note" id="par_idN114C3" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3152574" xml-lang="en-US" level="3" l10n="U" oldref="53">Example</paragraph>
+<paragraph role="paragraph" id="par_id3146826" xml-lang="en-US" l10n="U" oldref="54">Select a square range. Choose the MMULT function. Select the first <emph>Array</emph>, then select the second <emph>Array</emph>. Using <emph>Function Wizard</emph>, mark the <emph>Array</emph> check box. Click <emph>OK</emph>. The output array will appear in the first selected range.</paragraph>
+</section>
+<section id="Section9">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154970"><bookmark_value>TRANSPOSE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MTRANS" id="bm_id3154982" localize="false"/>
+<paragraph role="heading" id="hd_id3154970" xml-lang="en-US" level="2" l10n="U" oldref="56">TRANSPOSE</paragraph>
+<paragraph role="paragraph" id="par_id3155276" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="HID_FUNC_MTRANS">Transposes the rows and columns of an array.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155294" xml-lang="en-US" level="3" l10n="U" oldref="58">Syntax</paragraph>
+<paragraph role="code" id="par_id3153843" xml-lang="en-US" l10n="U" oldref="59">TRANSPOSE(Array)</paragraph>
+<paragraph role="paragraph" id="par_id3153857" xml-lang="en-US" l10n="U" oldref="60">
+<emph>Array</emph> represents the array in the spreadsheet that is to be transposed.</paragraph>
+<paragraph role="paragraph" id="par_idN115A5" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3159352" xml-lang="en-US" level="3" l10n="U" oldref="61">Example</paragraph>
+<paragraph role="paragraph" id="par_id3159366" xml-lang="en-US" l10n="U" oldref="62">In the spreadsheet, select the range in which the transposed array can appear. If the original array has n rows and m columns, your selected range must have at least m rows and n columns. Then enter the formula directly, select the original array and press <switchinline select="sys"><caseinline select="MAC">Shift+Command+Enter</caseinline><defaultinline>Shift+Ctrl+Enter</defaultinline></switchinline>. Or, if you are using the <emph>Function Wizard</emph>, mark the <emph>Array</emph> check box. The transposed array appears in the selected target range and is protected automatically against changes.</paragraph>
+</section>
+<section id="Section8">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3109846"><bookmark_value>LINEST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RGP" id="bm_id3144716" localize="false"/>
+<paragraph role="heading" id="hd_id3109846" xml-lang="en-US" level="2" l10n="U" oldref="64">LINEST</paragraph>
+<paragraph role="paragraph" id="par_id3144733" xml-lang="en-US" l10n="CHG" oldref="65"><ahelp hid="HID_FUNC_RGP">Returns a table of statistics for a straight line that best fits a data set.</ahelp><comment>changed based on http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_LINEST_function (issue 76142)</comment></paragraph>
+<paragraph role="heading" id="hd_id3152825" xml-lang="en-US" level="3" l10n="U" oldref="66">Syntax</paragraph>
+<paragraph role="code" id="par_id3152839" xml-lang="en-US" l10n="U" oldref="67">LINEST(data_Y; data_X; linearType; stats)</paragraph>
+<paragraph role="paragraph" id="par_id3152853" xml-lang="en-US" l10n="U" oldref="68">
+<emph>data_Y</emph> is a single row or column range specifying the y coordinates in a set of data points.</paragraph>
+<paragraph role="paragraph" id="par_id3154428" xml-lang="en-US" l10n="U" oldref="69">
+<emph>data_X</emph> is a corresponding single row or column range specifying the x coordinates. If <emph>data_X</emph> is omitted it defaults to <item type="literal">1, 2, 3, ..., n</item>. If there is more than one set of variables <emph>data_X</emph> may be a range with corresponding multiple rows or columns.</paragraph>
+<paragraph role="paragraph" id="par_id0811200804502119" xml-lang="en-US" l10n="NEW">LINEST finds a straight line <item type="literal">y = a + bx</item> that best fits the data, using linear regression (the "least squares" method). With more than one set of variables the straight line is of the form <item type="literal">y = a + b1x1 + b2x2 ... + bnxn</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3154448" xml-lang="en-US" l10n="U" oldref="70"> if<emph>linearType</emph> is FALSE the straight line found is forced to pass through the origin (the constant a is zero; y = bx). If omitted, <emph>linearType</emph> defaults to TRUE (the line is not forced through the origin).</paragraph>
+<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U" oldref="71">if<emph>stats</emph> is omitted or FALSE only the top line of the statistics table is returned. If TRUE the entire table is returned.</paragraph>
+<paragraph role="paragraph" id="par_id0811200804502261" xml-lang="en-US" l10n="NEW">LINEST returns a table (array) of statistics as below and must be entered as an array formula (for example by using <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Return rather than just Return).</paragraph>
+<paragraph role="paragraph" id="par_idN11416" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN116C6" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3154162" xml-lang="en-US" level="3" l10n="U" oldref="72">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154176" xml-lang="en-US" l10n="U" oldref="73">This function returns an array and is handled in the same way as the other array functions. Select a range for the answers and then the function. Select <emph>data_Y</emph>. If you want, you can enter other parameters. Select <emph>Array</emph> and click <emph>OK</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3155468" xml-lang="en-US" l10n="U" oldref="74">The results returned by the system (if <emph>stats</emph> = 0), will at least show the slope of the regression line and its intersection with the Y axis. If <emph>stats</emph> does not equal 0, other results are to be displayed.</paragraph>
+<paragraph role="heading" id="hd_id3155491" xml-lang="en-US" level="3" l10n="U" oldref="75">Other LINEST Results:</paragraph>
+<paragraph role="paragraph" id="par_id3159291" xml-lang="en-US" l10n="U" oldref="76">Examine the following examples:</paragraph>
+<table id="tbl_id3159305">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3157922" xml-lang="en-US" l10n="U" oldref="77">A</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3157945" xml-lang="en-US" l10n="U" oldref="78">B</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152486" xml-lang="en-US" l10n="U" oldref="79">C</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152509" xml-lang="en-US" l10n="U" oldref="80">D</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152532" xml-lang="en-US" l10n="U" oldref="81">E</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153431" xml-lang="en-US" l10n="U" oldref="82">F</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153454" xml-lang="en-US" l10n="U" oldref="83">G</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154995" xml-lang="en-US" l10n="U" oldref="84">
+<emph>1</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155021" xml-lang="en-US" l10n="U" oldref="85">
+<item type="input">x1</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155044" xml-lang="en-US" l10n="U" oldref="86">
+<item type="input">x2</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3163734" xml-lang="en-US" l10n="U" oldref="87">
+<item type="input">y</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3163766" xml-lang="en-US" l10n="U" oldref="88">
+<item type="input">LIN</item>
+<item type="input">EST value</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145686" xml-lang="en-US" l10n="U" oldref="89">
+<emph>2</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145713" xml-lang="en-US" l10n="U" oldref="90">
+<item type="input">4</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145736" xml-lang="en-US" l10n="U" oldref="91">
+<item type="input">7</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159427" xml-lang="en-US" l10n="U" oldref="92">
+<item type="input">100</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159460" xml-lang="en-US" l10n="U" oldref="93">
+<item type="input">4,17</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159483" xml-lang="en-US" l10n="U" oldref="94">-<item type="input">3,48</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152381" xml-lang="en-US" l10n="U" oldref="95">
+<item type="input">82,33</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152408" xml-lang="en-US" l10n="U" oldref="96">
+<emph>3</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152435" xml-lang="en-US" l10n="U" oldref="97">
+<item type="input">5</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152458" xml-lang="en-US" l10n="U" oldref="98">
+<item type="input">9</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155652" xml-lang="en-US" l10n="U" oldref="99">
+<item type="input">105</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155684" xml-lang="en-US" l10n="U" oldref="100">
+<item type="input">5,46</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155707" xml-lang="en-US" l10n="U" oldref="101">
+<item type="input">10,96</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155730" xml-lang="en-US" l10n="U" oldref="102">
+<item type="input">9,35</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159506" xml-lang="en-US" l10n="U" oldref="103">
+<emph>4</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159533" xml-lang="en-US" l10n="U" oldref="104">
+<item type="input">6</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159556" xml-lang="en-US" l10n="U" oldref="105">
+<item type="input">11</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159579" xml-lang="en-US" l10n="U" oldref="106">
+<item type="input">104</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159611" xml-lang="en-US" l10n="U" oldref="107">
+<item type="input">0,87</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152606" xml-lang="en-US" l10n="U" oldref="108">
+<item type="input">5,06</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152629" xml-lang="en-US" l10n="U" oldref="109">
+<item type="input">#NA</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152655" xml-lang="en-US" l10n="U" oldref="110">
+<emph>5</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152682" xml-lang="en-US" l10n="U" oldref="111">
+<item type="input">7</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152705" xml-lang="en-US" l10n="U" oldref="112">
+<item type="input">12</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152728" xml-lang="en-US" l10n="U" oldref="113">
+<item type="input">108</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144352" xml-lang="en-US" l10n="U" oldref="114">
+<item type="input">13,21</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144375" xml-lang="en-US" l10n="U" oldref="115">
+<item type="input">4</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144398" xml-lang="en-US" l10n="U" oldref="116">
+<item type="input">#NA</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144425" xml-lang="en-US" l10n="U" oldref="117">
+<emph>6</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144452" xml-lang="en-US" l10n="U" oldref="118">
+<item type="input">8</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144475" xml-lang="en-US" l10n="U" oldref="119">
+<item type="input">15</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144498" xml-lang="en-US" l10n="U" oldref="120">
+<item type="input">111</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158233" xml-lang="en-US" l10n="U" oldref="121">
+<item type="input">675,45</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158256" xml-lang="en-US" l10n="U" oldref="122">
+<item type="input">102,26</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158279" xml-lang="en-US" l10n="U" oldref="123">
+<item type="input">#NA</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158306" xml-lang="en-US" l10n="U" oldref="124">
+<emph>7</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158333" xml-lang="en-US" l10n="U" oldref="125">
+<item type="input">9</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158356" xml-lang="en-US" l10n="U" oldref="126">
+<item type="input">17</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158379" xml-lang="en-US" l10n="U" oldref="127">
+<item type="input">120</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144560" xml-lang="en-US" l10n="U" oldref="128">
+<emph>8</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144586" xml-lang="en-US" l10n="U" oldref="129">
+<item type="input">10</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144609" xml-lang="en-US" l10n="U" oldref="130">
+<item type="input">19</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3144632" xml-lang="en-US" l10n="U" oldref="131">
+<item type="input">133</item>
+</paragraph>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+<tablecell>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3144687" xml-lang="en-US" l10n="U" oldref="132">Column A contains several X1 values, column B several X2 values and column C the Y values. You have already entered these values in your spreadsheet. You have now set up E2:G6 in the spreadsheet and activated the <emph>Function Wizard</emph>. For the LINEST function to work, you must have marked the <emph>Array</emph> check box in the <emph>Function Wizard</emph>. Next, select the following values in the spreadsheet (or enter them using the keyboard):</paragraph>
+<paragraph role="paragraph" id="par_id3158020" xml-lang="en-US" l10n="U" oldref="133">
+<emph>data_Y</emph> is C2:C8</paragraph>
+<paragraph role="paragraph" id="par_id3158039" xml-lang="en-US" l10n="U" oldref="134">
+<emph>data_X</emph> is A2:B8</paragraph>
+<paragraph role="paragraph" id="par_id3158058" xml-lang="en-US" l10n="U" oldref="135">
+<emph>linearType</emph> and <emph>stats</emph> are both set to 1.</paragraph>
+<paragraph role="paragraph" id="par_id3158084" xml-lang="en-US" l10n="U" oldref="136">As soon as you click <emph>OK</emph>, $[officename] Calc will fill the above example with the LINEST values as shown in the example.</paragraph>
+<paragraph role="paragraph" id="par_id3158106" xml-lang="en-US" l10n="U" oldref="137">The formula in the <emph>Formula</emph> Bar corresponds to each cell of the LINEST array <item type="input">{=LINEST(C2:C8;A2:B8;1;1)}</item>
+</paragraph>
+<paragraph role="paragraph" id="par_id3158128" xml-lang="en-US" l10n="U" oldref="138">
+<emph>This represents the calculated LINEST values:</emph>
+</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158146"><bookmark_value>slopes, see also regression lines</bookmark_value>
+<bookmark_value>regression lines;LINEST function</bookmark_value>
+</bookmark><comment>mw made "regression lines" a two level entry</comment>
+<paragraph role="paragraph" id="par_id3158146" xml-lang="en-US" l10n="U" oldref="139">E2 and F2: Slope m of the regression line y=b+m*x for the x1 and x2 values. The values are given in reverse order; that is, the slope for x2 in E2 and the slope for x1 in F2.</paragraph>
+<paragraph role="paragraph" id="par_id3158184" xml-lang="en-US" l10n="U" oldref="140">G2: Intersection b with the y axis.</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158204"><bookmark_value>standard errors;array functions</bookmark_value>
+</bookmark><comment>MW changed "standard errors"</comment>
+<paragraph role="paragraph" id="par_id3158204" xml-lang="en-US" l10n="U" oldref="141">E3 and F3: The standard error of the slope value.</paragraph>
+<paragraph role="paragraph" id="par_id3145845" xml-lang="en-US" l10n="U" oldref="142">G3: The standard error of the intercept</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145859"><bookmark_value>RSQ calculations</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3145859" xml-lang="en-US" l10n="U" oldref="143">E4: RSQ</paragraph>
+<paragraph role="paragraph" id="par_id3145880" xml-lang="en-US" l10n="U" oldref="144">F4: The standard error of the regression calculated for the Y value.</paragraph>
+<paragraph role="paragraph" id="par_id3145894" xml-lang="en-US" l10n="U" oldref="145">E5: The F value from the variance analysis.</paragraph>
+<paragraph role="paragraph" id="par_id3145915" xml-lang="en-US" l10n="U" oldref="146">F5: The degrees of freedom from the variance analysis.</paragraph>
+<paragraph role="paragraph" id="par_id3145937" xml-lang="en-US" l10n="U" oldref="147">E6: The sum of the squared deviation of the estimated Y values from their linear mean.</paragraph>
+<paragraph role="paragraph" id="par_id3145952" xml-lang="en-US" l10n="U" oldref="148">F6: The sum of the squared deviation of the estimated Y value from the given Y values.</paragraph>
+<paragraph role="paragraph" id="par_idN11B04" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section7">
+<bookmark xml-lang="en-US" branch="index" id="bm_id1596728"><bookmark_value>LOGEST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RKP" id="bm_id3146020" localize="false"/>
+<paragraph role="heading" id="hd_id3146009" xml-lang="en-US" level="2" l10n="U" oldref="150">LOGEST</paragraph>
+<paragraph role="paragraph" id="par_id3146037" xml-lang="en-US" l10n="U" oldref="151"><ahelp hid="HID_FUNC_RKP">This function calculates the adjustment of the entered data as an exponential regression curve (y=b*m^x).</ahelp><comment>UFI: see http://support.microsoft.com/default.aspx?kbid=828528&amp;product=xl2003
+for bug #i31051#</comment></paragraph>
+<paragraph role="heading" id="hd_id3146056" xml-lang="en-US" level="3" l10n="U" oldref="152">Syntax</paragraph>
+<paragraph role="code" id="par_id3163123" xml-lang="en-US" l10n="U" oldref="153">LOGEST(DataY; DataX; FunctionType; Stats)</paragraph>
+<paragraph role="paragraph" id="par_id3163137" xml-lang="en-US" l10n="U" oldref="154">
+<emph>DataY</emph> represents the Y Data array.</paragraph>
+<paragraph role="paragraph" id="par_id3163155" xml-lang="en-US" l10n="U" oldref="155">
+<emph>DataX</emph> (optional) represents the X Data array.</paragraph>
+<paragraph role="paragraph" id="par_id3163174" xml-lang="en-US" l10n="U" oldref="156">
+<emph>FunctionType</emph> (optional). If Function_Type = 0, functions in the form y = m^x will be calculated. Otherwise, y = b*m^x functions will be calculated.</paragraph>
+<paragraph role="paragraph" id="par_id3163196" xml-lang="en-US" l10n="U" oldref="157">
+<emph>Stats</emph> (optional). If Stats=0, only the regression coefficient is calculated.</paragraph>
+<paragraph role="paragraph" id="par_idN118F7" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN11BC3" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3163216" xml-lang="en-US" level="3" l10n="U" oldref="158">Example</paragraph>
+<paragraph role="paragraph" id="par_id3163230" xml-lang="en-US" l10n="CHG" oldref="159">See LINEST. However, no square sum will be returned.</paragraph>
+</section>
+<section id="Section6">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163286"><bookmark_value>SUMPRODUCT function</bookmark_value>
+<bookmark_value>scalar products</bookmark_value>
+<bookmark_value>dot products</bookmark_value>
+<bookmark_value>inner products</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMENPRODUKT" id="bm_id3163297" localize="false"/>
+<paragraph role="heading" id="hd_id3163286" xml-lang="en-US" level="2" l10n="U" oldref="161">SUMPRODUCT</paragraph>
+<paragraph role="paragraph" id="par_id3163314" xml-lang="en-US" l10n="U" oldref="162"><ahelp hid="HID_FUNC_SUMMENPRODUKT">Multiplies corresponding elements in the given arrays, and returns the sum of those products.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3163334" xml-lang="en-US" level="3" l10n="U" oldref="163">Syntax</paragraph>
+<paragraph role="code" id="par_id3163347" xml-lang="en-US" l10n="U" oldref="164">SUMPRODUCT(Array1; Array2...Array30)</paragraph>
+<paragraph role="paragraph" id="par_id3163362" xml-lang="en-US" l10n="CHG" oldref="165">
+<emph>Array1, Array2...Array30</emph> represent arrays whose corresponding elements are to be multiplied.</paragraph>
+<paragraph role="paragraph" id="par_idN11B19" xml-lang="en-US" l10n="NEW">At least one array must be part of the argument list. If only one array is given, all array elements are summed.</paragraph>
+<paragraph role="heading" id="par_idN11B1C" xml-lang="en-US" level="3" l10n="NEW">Example</paragraph>
+<table id="tbl_id6215704">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN11B2F" xml-lang="en-US" l10n="NEW">A</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN11B35" xml-lang="en-US" l10n="NEW">B</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN11B3B" xml-lang="en-US" l10n="NEW">C</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN11B41" xml-lang="en-US" l10n="NEW">D</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B48" xml-lang="en-US" l10n="NEW">1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B4E" xml-lang="en-US" l10n="NEW">
+<item type="input">2</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B54" xml-lang="en-US" l10n="NEW">
+<item type="input">3</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B5A" xml-lang="en-US" l10n="NEW">
+<item type="input">4</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B60" xml-lang="en-US" l10n="NEW">
+<item type="input">5</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B67" xml-lang="en-US" l10n="NEW">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B6D" xml-lang="en-US" l10n="NEW">
+<item type="input">6</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B73" xml-lang="en-US" l10n="NEW">
+<item type="input">7</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B79" xml-lang="en-US" l10n="NEW">
+<item type="input">8</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B7F" xml-lang="en-US" l10n="NEW">
+<item type="input">9</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B86" xml-lang="en-US" l10n="NEW">3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B8C" xml-lang="en-US" l10n="NEW">
+<item type="input">10</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B92" xml-lang="en-US" l10n="NEW">
+<item type="input">11</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B98" xml-lang="en-US" l10n="NEW">
+<item type="input">12</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN11B9E" xml-lang="en-US" l10n="NEW">
+<item type="input">13</item>
+</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_idN11BA1" xml-lang="en-US" l10n="NEW">
+<item type="input">=SUMPRODUCT(A1:B3;C1:D3)</item> returns 397.</paragraph>
+<paragraph role="paragraph" id="par_idN11BA4" xml-lang="en-US" l10n="NEW">Calculation: A1*C1 + B1*D1 + A2*C2 + B2*D2 + A3*C3 + B3*D3</paragraph>
+<paragraph role="paragraph" id="par_idN11BA7" xml-lang="en-US" l10n="NEW">You can use SUMPRODUCT to calculate the scalar product of two vectors.</paragraph>
+<paragraph role="note" id="par_idN11BBC" xml-lang="en-US" l10n="NEW">SUMPRODUCT returns a single number, it is not necessary to enter the function as an array function.</paragraph>
+<paragraph role="paragraph" id="par_idN11C91" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section5">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144842"><bookmark_value>SUMX2MY2 function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEX2MY2" id="bm_id3144854" localize="false"/>
+<paragraph role="heading" id="hd_id3144842" xml-lang="en-US" level="2" l10n="U" oldref="169">SUMX2MY2</paragraph>
+<paragraph role="paragraph" id="par_id3144871" xml-lang="en-US" l10n="U" oldref="170"><ahelp hid="HID_FUNC_SUMMEX2MY2">Returns the sum of the difference of squares of corresponding values in two arrays.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3144889" xml-lang="en-US" level="3" l10n="U" oldref="171">Syntax</paragraph>
+<paragraph role="code" id="par_id3144903" xml-lang="en-US" l10n="U" oldref="172">SUMX2MY2(ArrayX; ArrayY)</paragraph>
+<paragraph role="paragraph" id="par_id3144916" xml-lang="en-US" l10n="U" oldref="173">
+<emph>ArrayX</emph> represents the first array whose elements are to be squared and added.</paragraph>
+<paragraph role="paragraph" id="par_id3144936" xml-lang="en-US" l10n="U" oldref="174">
+<emph>ArrayY</emph> represents the second array whose elements are to be squared and subtracted.</paragraph>
+<paragraph role="paragraph" id="par_idN11D6B" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section4">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145026"><bookmark_value>SUMX2PY2 function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEX2PY2" id="bm_id3145038" localize="false"/>
+<paragraph role="heading" id="hd_id3145026" xml-lang="en-US" level="2" l10n="U" oldref="178">SUMX2PY2</paragraph>
+<paragraph role="paragraph" id="par_id3145055" xml-lang="en-US" l10n="U" oldref="179"><ahelp hid="HID_FUNC_SUMMEX2PY2">Returns the sum of the sum of squares of corresponding values in two arrays.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3163390" xml-lang="en-US" level="3" l10n="U" oldref="180">Syntax</paragraph>
+<paragraph role="code" id="par_id3163404" xml-lang="en-US" l10n="U" oldref="181">SUMX2PY2(ArrayX; ArrayY)</paragraph>
+<paragraph role="paragraph" id="par_id3163417" xml-lang="en-US" l10n="U" oldref="182">
+<emph>ArrayX</emph> represents the first array whose arguments are to be squared and added.</paragraph>
+<paragraph role="paragraph" id="par_id3163437" xml-lang="en-US" l10n="U" oldref="183">
+<emph>ArrayY</emph> represents the second array, whose elements are to be squared and added.</paragraph>
+<paragraph role="paragraph" id="par_idN11E45" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section3">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163527"><bookmark_value>SUMXMY2 function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEXMY2" id="bm_id3163539" localize="false"/>
+<paragraph role="heading" id="hd_id3163527" xml-lang="en-US" level="2" l10n="U" oldref="187">SUMXMY2</paragraph>
+<paragraph role="paragraph" id="par_id3163556" xml-lang="en-US" l10n="U" oldref="188"><ahelp hid="HID_FUNC_SUMMEXMY2">Adds the squares of the variance between corresponding values in two arrays.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3163574" xml-lang="en-US" level="3" l10n="U" oldref="189">Syntax</paragraph>
+<paragraph role="code" id="par_id3163588" xml-lang="en-US" l10n="U" oldref="190">SUMXMY2(ArrayX; ArrayY)</paragraph>
+<paragraph role="paragraph" id="par_id3163601" xml-lang="en-US" l10n="U" oldref="191">
+<emph>ArrayX</emph> represents the first array whose elements are to be subtracted and squared.</paragraph>
+<paragraph role="paragraph" id="par_id3163621" xml-lang="en-US" l10n="U" oldref="192">
+<emph>ArrayY</emph> represents the second array, whose elements are to be subtracted and squared.</paragraph>
+<paragraph role="paragraph" id="par_idN11F1F" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+</section>
+<section id="Section2">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166062"><bookmark_value>TREND function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TREND" id="bm_id3166074" localize="false"/>
+<paragraph role="heading" id="hd_id3166062" xml-lang="en-US" level="2" l10n="U" oldref="196">TREND</paragraph>
+<paragraph role="paragraph" id="par_id3166091" xml-lang="en-US" l10n="U" oldref="197"><ahelp hid="HID_FUNC_TREND">Returns values along a linear trend.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3166109" xml-lang="en-US" level="3" l10n="U" oldref="198">Syntax</paragraph>
+<paragraph role="code" id="par_id3166122" xml-lang="en-US" l10n="U" oldref="199">TREND(DataY; DataX; NewDataX; LinearType)</paragraph>
+<paragraph role="paragraph" id="par_id3166137" xml-lang="en-US" l10n="U" oldref="200">
+<emph>DataY</emph> represents the Y Data array.</paragraph>
+<paragraph role="paragraph" id="par_id3166156" xml-lang="en-US" l10n="U" oldref="201">
+<emph>DataX</emph> (optional) represents the X Data array.</paragraph>
+<paragraph role="paragraph" id="par_id3166176" xml-lang="en-US" l10n="U" oldref="202">
+<emph>NewDataX</emph> (optional) represents the array of the X data, which are used for recalculating values.</paragraph>
+<paragraph role="paragraph" id="par_id3166196" xml-lang="en-US" l10n="U" oldref="203">
+<emph>LinearType</emph>(Optional). If LinearType = 0, then lines will be calculated through the zero point. Otherwise, offset lines will also be calculated. The default is LinearType &lt;&gt; 0.</paragraph>
+<paragraph role="paragraph" id="par_idN11D2F" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN12019" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3166231" xml-lang="en-US" level="3" l10n="U" oldref="204">Example</paragraph>
+<paragraph role="paragraph" id="par_id3166245" xml-lang="en-US" l10n="U" oldref="205">Select a spreadsheet range in which the trend data will appear. Select the function. Enter the output data or select it with the mouse. Mark the <emph>Array</emph> field. click <emph>OK</emph>. The trend data calculated from the output data is displayed.</paragraph>
+</section>
+<section id="Section1">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166317"><bookmark_value>GROWTH function</bookmark_value>
+<bookmark_value>exponential trends in arrays</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIATION" id="bm_id3166329" localize="false"/>
+<paragraph role="heading" id="hd_id3166317" xml-lang="en-US" level="2" l10n="U" oldref="207">GROWTH</paragraph>
+<paragraph role="paragraph" id="par_id3166346" xml-lang="en-US" l10n="U" oldref="208"><ahelp hid="HID_FUNC_VARIATION">Calculates the points of an exponential trend in an array.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3166364" xml-lang="en-US" level="3" l10n="U" oldref="209">Syntax</paragraph>
+<paragraph role="code" id="par_id3166377" xml-lang="en-US" l10n="CHG" oldref="210">GROWTH(DataY; DataX; NewDataX; FunctionType)</paragraph>
+<paragraph role="paragraph" id="par_id3166392" xml-lang="en-US" l10n="U" oldref="211">
+<emph>DataY</emph> represents the Y Data array.</paragraph>
+<paragraph role="paragraph" id="par_id3166411" xml-lang="en-US" l10n="U" oldref="212">
+<emph>DataX</emph> (optional) represents the X Data array.</paragraph>
+<paragraph role="paragraph" id="par_id3173797" xml-lang="en-US" l10n="U" oldref="213">
+<emph>NewDataX</emph> (optional) represents the X data array, in which the values are recalculated.</paragraph>
+<paragraph role="paragraph" id="par_id3173817" xml-lang="en-US" l10n="U" oldref="214">
+<emph>FunctionType</emph>(optional). If FunctionType = 0, functions in the form y = m^x will be calculated. Otherwise, y = b*m^x functions will be calculated.</paragraph>
+<paragraph role="paragraph" id="par_idN11DFD" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#optional"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN12113" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3173839" xml-lang="en-US" level="3" l10n="U" oldref="215">Example</paragraph>
+<paragraph role="paragraph" id="par_id3173852" xml-lang="en-US" l10n="U" oldref="216">This function returns an array and is handled in the same way as the other array functions. Select a range where you want the answers to appear and select the function. Select DataY. Enter any other parameters, mark <emph>Array</emph> and click <emph>OK</emph>.</paragraph>
+</section>
+</sort>
+<section id="relatedtopics">
+<embed href="text/scalc/01/04060100.xhp#drking"/>
+</section>
+</body>
+</helpdocument>

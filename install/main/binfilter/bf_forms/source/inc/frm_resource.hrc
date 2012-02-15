@@ -1,0 +1,57 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _FRM_RESOURCE_HRC_
+#define _FRM_RESOURCE_HRC_
+
+#ifndef _SOLAR_HRC
+#include <bf_svtools/solar.hrc>
+#endif
+
+//------------------------------------------------------------------------------
+#define	RID_FRM_STRINGS_START		RID_FORMLAYER_START
+
+
+
+//------------------------------------------------------------------------------
+//- String-IDs
+#define RID_BASELISTBOX_ERROR_FILLLIST			( RID_FRM_STRINGS_START +  0 )
+#define RID_STR_IMPORT_GRAPHIC					( RID_FRM_STRINGS_START +  1 )
+#define RID_STR_CONTROL_SUBSTITUTED_NAME		( RID_FRM_STRINGS_START +  2 )
+#define RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN	( RID_FRM_STRINGS_START +  3 )
+#define RID_STR_READERROR						( RID_FRM_STRINGS_START +  4 )
+#define RID_STR_CONNECTERROR					( RID_FRM_STRINGS_START +  5 )
+#define RID_ERR_LOADING_FORM					( RID_FRM_STRINGS_START +  6 )
+#define RID_ERR_REFRESHING_FORM					( RID_FRM_STRINGS_START +  7 )
+#define RID_STR_ERR_INSERTRECORD				( RID_FRM_STRINGS_START +  8 )
+#define RID_STR_ERR_UPDATERECORD				( RID_FRM_STRINGS_START +  9 )
+#define RID_STR_ERR_DELETERECORD				( RID_FRM_STRINGS_START + 10 )
+#define RID_STR_ERR_DELETERECORDS				( RID_FRM_STRINGS_START + 11 )
+#define RID_STR_NEED_NON_NULL_OBJECT			( RID_FRM_STRINGS_START + 12 )
+#define RID_STR_OPEN_GRAPHICS					( RID_FRM_STRINGS_START + 13 )
+#define RID_STR_CLEAR_GRAPHICS					( RID_FRM_STRINGS_START + 14 )
+#define RID_STR_INVALIDSTREAM					( RID_FRM_STRINGS_START + 15 )
+#define RID_STR_SYNTAXERROR						( RID_FRM_STRINGS_START + 16 )
+
+#endif // _FRM_RESOURCE_HRC_
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01070400xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Print</title>
+<filename>/text/shared/optionen/01070400.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="drucken">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155450"><bookmark_value>printing; drawings defaults</bookmark_value>
+<bookmark_value>drawings; printing defaults</bookmark_value>
+<bookmark_value>pages;printing page names in presentations</bookmark_value>
+<bookmark_value>printing; dates in presentations</bookmark_value>
+<bookmark_value>dates; printing in presentations</bookmark_value>
+<bookmark_value>times; inserting when printing presentations</bookmark_value>
+<bookmark_value>printing; hidden pages of presentations</bookmark_value>
+<bookmark_value>hidden pages; printing in presentations</bookmark_value>
+<bookmark_value>printing; without scaling in presentations</bookmark_value>
+<bookmark_value>scaling; when printing presentations</bookmark_value>
+<bookmark_value>printing; fitting to pages in presentations</bookmark_value>
+<bookmark_value>fitting to pages; print settings in presentations</bookmark_value>
+<bookmark_value>printing; tiling pages in presentations</bookmark_value>
+</bookmark><comment>MW made "page name printing..." a two level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_PRINT_OPTIONS" id="bm_id3158430" localize="false"/><paragraph role="heading" id="hd_id3155419" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01070400.xhp" name="Print">Print</link></paragraph>
+<paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SD_PRINT_OPTIONS">Specifies print settings within a drawing or presentation document.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000406.xhp#etopdk"/>
+</section><comment>removed contents-to-print section for impress, i85723</comment><paragraph role="heading" id="hd_id3150486" xml-lang="en-US" level="2" l10n="U" oldref="13">Print</paragraph>
+<paragraph role="paragraph" id="par_id3153092" xml-lang="en-US" l10n="CHG" oldref="14">Defines additional elements to be printed on the page margin.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_PAGENAME" id="bm_id3148645" localize="false"/><paragraph role="heading" id="hd_id3150104" xml-lang="en-US" level="3" l10n="U" oldref="15">Page name</paragraph>
+<paragraph role="paragraph" id="par_id3154146" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_PAGENAME">Specifies whether to print the page name.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_DATE" id="bm_id3152598" localize="false"/><paragraph role="heading" id="hd_id3147214" xml-lang="en-US" level="3" l10n="U" oldref="17">Date</paragraph>
+<paragraph role="paragraph" id="par_id3152938" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_DATE">Specifies whether to print the current date.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_TIME" id="bm_id3159345" localize="false"/><paragraph role="heading" id="hd_id3149301" xml-lang="en-US" level="3" l10n="U" oldref="19">Time</paragraph>
+<paragraph role="paragraph" id="par_id3156285" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_TIME">Specifies whether to print the current time.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_HIDDEN_PAGES" id="bm_id3148457" localize="false"/><paragraph role="heading" id="hd_id3154097" xml-lang="en-US" level="3" l10n="U" oldref="23">Hidden pages</paragraph>
+<paragraph role="paragraph" id="par_id3154792" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_HIDDEN_PAGES">Specifies whether to print the pages that are currently hidden from the presentation.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154686" xml-lang="en-US" level="2" l10n="U" oldref="43">Quality</paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="54">See also <embedvar href="text/shared/guide/print_blackwhite.xhp#print_blackwhite"/>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:TP_PRINT_OPTIONS:RBT_COLOR" id="bm_id3145419" localize="false"/><paragraph role="heading" id="hd_id3159149" xml-lang="en-US" level="3" l10n="U" oldref="45">Default</paragraph>
+<paragraph role="paragraph" id="par_id3145608" xml-lang="en-US" l10n="U" oldref="46"><ahelp hid="SD:RADIOBUTTON:TP_PRINT_OPTIONS:RBT_COLOR">Specifies that you want to print in original colors.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:TP_PRINT_OPTIONS:RBT_GRAYSCALE" id="bm_id3147287" localize="false"/><paragraph role="heading" id="hd_id3155131" xml-lang="en-US" level="3" l10n="U" oldref="50">Grayscale</paragraph>
+<paragraph role="paragraph" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="51"><ahelp hid="SD_RADIOBUTTON_TP_PRINT_OPTIONS_RBT_GRAYSCALE">Specifies that you want to print colors as grayscale.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:TP_PRINT_OPTIONS:RBT_BLACKWHITE" id="bm_id3149484" localize="false"/><paragraph role="heading" id="hd_id3146975" xml-lang="en-US" level="3" l10n="U" oldref="52">Black &amp; white</paragraph>
+<paragraph role="paragraph" id="par_id3159154" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="SD_RADIOBUTTON_TP_PRINT_OPTIONS_RBT_BLACKWHITE">Specifies that you want to print the document in black and white.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154015" xml-lang="en-US" level="2" l10n="U" oldref="21">Page options</paragraph>
+<paragraph role="paragraph" id="par_id3154512" xml-lang="en-US" l10n="U" oldref="22">Define additional options for printing the pages.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:TP_PRINT_OPTIONS:RBT_DEFAULT" id="bm_id3146900" localize="false"/><paragraph role="heading" id="hd_id3151207" xml-lang="en-US" level="3" l10n="U" oldref="25">Default</paragraph>
+<paragraph role="paragraph" id="par_id3153836" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SD:RADIOBUTTON:TP_PRINT_OPTIONS:RBT_DEFAULT">Specifies that you do not want to further scale pages when printing.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:TP_PRINT_OPTIONS:RBT_PAGESIZE" id="bm_id3150752" localize="false"/><paragraph role="heading" id="hd_id3153710" xml-lang="en-US" level="3" l10n="U" oldref="27">Fit to page</paragraph>
+<section id="fittopage">
+<paragraph role="paragraph" id="par_id3148405" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SD:RADIOBUTTON:TP_PRINT_OPTIONS:RBT_PAGESIZE">Specifies whether to scale down objects that are beyond the margins of the current printer, so that they fit on the paper in the printer.</ahelp></paragraph>
+</section>
+
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:TP_PRINT_OPTIONS:RBT_PAGETILE" id="bm_id3154757" localize="false"/><paragraph role="heading" id="hd_id3155764" xml-lang="en-US" level="3" l10n="U" oldref="29">Tile pages</paragraph>
+<paragraph role="paragraph" id="par_id3154255" xml-lang="en-US" l10n="CHG" oldref="30"><ahelp hid="SD:RADIOBUTTON:TP_PRINT_OPTIONS:RBT_PAGETILE">Specifies that pages are to be printed in tiled format. If the pages or slides are smaller than the paper, several pages or slides will be printed on one page of paper.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:TP_PRINT_OPTIONS:RBT_BOOKLET" id="bm_id3149566" localize="false"/><paragraph role="heading" id="hd_id3150388" xml-lang="en-US" level="3" l10n="U" oldref="31">Brochure</paragraph>
+<paragraph role="paragraph" id="par_id3147322" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SD:RADIOBUTTON:TP_PRINT_OPTIONS:RBT_BOOKLET">Select the<emph> Brochure </emph>option to print the document in brochure format.</ahelp> You can also decide if you want to print the front, the back or both sides of the brochure.</paragraph>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/print_brochure.xhp#print_brochure"/>
+</case>
+</switch>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:TP_PRINT_OPTIONS:CBX_FRONT" id="bm_id3147004" localize="false"/><paragraph role="heading" id="hd_id3145790" xml-lang="en-US" level="3" l10n="U" oldref="35">Front</paragraph>
+<paragraph role="paragraph" id="par_id3145766" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_FRONT">Select<emph> Front </emph>to print the front of a brochure.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:TP_PRINT_OPTIONS:CBX_BACK" id="bm_id3145258" localize="false"/><paragraph role="heading" id="hd_id3145760" xml-lang="en-US" level="3" l10n="U" oldref="37">Back</paragraph>
+<paragraph role="paragraph" id="par_id3154118" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_BACK">Select <emph>Back</emph> to print the back of a brochure.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:TP_PRINT_OPTIONS:CBX_PAPERBIN" id="bm_id3146808" localize="false"/><paragraph role="heading" id="hd_id3153704" xml-lang="en-US" level="3" l10n="U" oldref="41">Paper tray from printer settings</paragraph>
+<paragraph role="paragraph" id="par_id3150380" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SD:CHECKBOX:TP_PRINT_OPTIONS:CBX_PAPERBIN">Determines that the paper tray to be used is the one defined in the printer setup.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsharedguidelabels_databasexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Printing Address Labels</title>
+         <filename>/text/shared/guide/labels_database.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147399"><bookmark_value>address labels from databases</bookmark_value>
+      <bookmark_value>labels; from databases</bookmark_value>
+      <bookmark_value>stickers</bookmark_value>
+      <bookmark_value>databases;creating labels</bookmark_value>
+</bookmark><comment>mw deleted "creating;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3147399" role="heading" level="1" l10n="U"
+                 oldref="34"><variable id="labels_database"><link href="text/shared/guide/labels_database.xhp" name="Printing Address Labels">Printing Address Labels</link>
+</variable></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153824" role="paragraph" l10n="U" oldref="36">Choose <emph>File - New - Labels</emph> to open the <emph>Labels</emph> dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150084" role="paragraph" l10n="CHG" oldref="37">On the <emph>Labels</emph> tab page, select the format of the label sheets you want to print on. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0130200903370863" role="paragraph" l10n="NEW">Choose the database and table from which to get the data.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id013020090337089" role="paragraph" l10n="NEW">Select a database field of which you want to print the contents. Click the button that shows a left arrow to insert the database field into the Label Text box.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id0130200903370930" role="paragraph" l10n="NEW">Continue to select and insert database fields if you want more fields on every label. You can press Enter to insert a new line, and you can type any character to insert fixed text.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0130200903370924" role="paragraph" l10n="NEW">Optionally, if you want to type more text, apply formatting, or insert images and line art, you should enable <emph>Synchronize contents</emph> on the <emph>Options</emph> tab. If you enable this, once you leave the Labels dialog box a small window opens with a Synchronize button. Now you only need to work on the first label on the labels document, then click the Synchronize button to copy your work to every label of the document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10687" role="paragraph" l10n="NEW">Click <emph>New Document</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148685" role="paragraph" l10n="CHG" oldref="38">When you see the label document, you might want to temporarily enable <item type="menuitem">View - Field Names</item>. This displays the fields in a more visible manner, so that you can arrange and edit label contents more easily.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148484" role="paragraph" l10n="CHG" oldref="25">You can save and/or print the label document.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id8476821" role="paragraph" l10n="NEW">When you choose to print the document, you will be asked if you want to print a form letter. Answer Yes to open the <link href="text/swriter/01/01150000.xhp">Mail Merge</link> dialog. In the Mail Merge dialog, you can select the records for which you want to print labels.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/labels.xhp#labels"/>
+      </section>
+   </body>
+</helpdocument>

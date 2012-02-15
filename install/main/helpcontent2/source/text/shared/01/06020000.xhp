@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106020000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Thesaurus</title>
+<filename>/text/shared/01/06020000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="thesaurus">
+<bookmark xml-lang="en-US" branch="hid/.uno:ThesaurusDialog" id="bm_id7966435" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ThesaurusDialog" id="bm_id3085157" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ThesaurusDialog" id="bm_id1644684" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Thesaurus" id="bm_id3152427" localize="false"/><paragraph role="heading" id="hd_id3146946" xml-lang="en-US" level="1" l10n="U" oldref="1">Thesaurus</paragraph>
+<paragraph role="paragraph" id="par_id3147366" xml-lang="en-US" l10n="U" oldref="2"><variable id="thesaurustxt"><ahelp hid=".uno:Thesaurus">Opens a dialog box to replace the current word with a synonym, or a related term.</ahelp></variable></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000406.xhp#thesaurus"/>
+</section>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/using_thesaurus.xhp#using_thesaurus"/>
+</case>
+</switch>
+<paragraph role="warning" id="par_id3154184" xml-lang="en-US" l10n="U" oldref="19">Thesaurus support is not available for all languages.</paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ComboBox:RID_SVXDLG_THESAURUS:CB_WORD" id="bm_id3155552" localize="false"/>
+<paragraph role="heading" id="hd_id3147571" xml-lang="en-US" level="3" l10n="U" oldref="5">Current word</paragraph>
+<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="CHG" oldref="6"><ahelp hid=".">Displays the current word, or the related term that you selected by double-clicking a line in the Alternatives list. You can also type text directly in this box to look up your text.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXDLG_THESAURUS:BTN_LEFT" id="bm_id315752" localize="false"/>
+<paragraph role="heading" id="hd_id3647571" xml-lang="en-US" level="3" l10n="U" oldref="5">Arrow left</paragraph>
+<paragraph role="paragraph" id="par_id369233" xml-lang="en-US" l10n="CHG" oldref="6"><ahelp hid=".">Recalls the previous contents of the "Current word" text box.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_CT_THES_ALTERNATIVES" id="bm_id3153346" localize="false"/>
+<paragraph role="heading" id="hd_id3154983" xml-lang="en-US" level="3" l10n="U" oldref="7">Alternatives</paragraph>
+<paragraph role="paragraph" id="par_id3149182" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid=".">Click an entry in the Alternatives list to copy the related term to the "Replace with" text box. Double-click an entry to copy the related term to the "Current word" text box and to look up that term.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svx:Edit:RID_SVXDLG_THESAURUS:ED_REPL" id="bm_id3153528" localize="false"/>
+<paragraph role="heading" id="hd_id3155892" xml-lang="en-US" level="3" l10n="U" oldref="9">Replace with</paragraph>
+<paragraph role="paragraph" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid=".">The word or words in the "Replace with" text box will replace the original word in the document when you click the Replace button. You can also type text directly in this box.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/svx:MenuButton:RID_SVXDLG_THESAURUS:MB_LANGUAGE" id="bm_id3149763" localize="false"/>
+<paragraph role="heading" id="hd_id3146775" xml-lang="en-US" level="2" l10n="U" oldref="15">Language</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid=".">Select a language for the thesaurus.</ahelp> You can install languages with a thesaurus library from the <link href="http://extensions.services.openoffice.org/">Extensions</link> web page.</paragraph>
+
+</body>
+</helpdocument>

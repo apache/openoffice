@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidelabelsxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating and Printing Labels and Business Cards</title>
+<filename>/text/shared/guide/labels.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-11-22T10:07:35">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150774"><bookmark_value>labels; creating and synchronizing</bookmark_value>
+<bookmark_value>business cards; creating and synchronizing</bookmark_value>
+<bookmark_value>synchronizing;labels and business cards</bookmark_value>
+</bookmark><comment>mw made "synchronizing..." a two level entry</comment>
+<paragraph role="heading" id="hd_id3150774" xml-lang="en-US" level="1" l10n="U" oldref="4"><variable id="labels"><link href="text/shared/guide/labels.xhp" name="Creating and Printing Labels and Business Cards">Creating and Printing Labels and Business Cards</link>
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="2" l10n="U" oldref="81">Designing Business Cards Through a Dialog</paragraph>
+<paragraph role="paragraph" id="par_id3146798" xml-lang="en-US" l10n="U" oldref="70">Choose <link href="text/shared/01/01010300.xhp" name="File - New - Business Cards"><emph>File - New - Business Cards</emph></link> to open the<emph> Business Cards </emph>dialog, which allows you to choose how your business cards will look.</paragraph>
+<paragraph role="heading" id="hd_id3147654" xml-lang="en-US" level="2" l10n="U" oldref="82">Designing Labels and Business Cards</paragraph>
+<paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="U" oldref="71">You can design both labels and business cards through the <emph>Labels</emph> dialog.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153880" xml-lang="en-US" l10n="U" oldref="5">Choose <link href="text/shared/01/01010200.xhp" name="File - New - Labels"><emph>File - New - Labels</emph></link> to open the <emph>Labels</emph> dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="32">On the <emph>Labels</emph> tab, under <emph>Format</emph>, define the label format.</paragraph>
+<paragraph role="listitem" id="par_id3145674" xml-lang="en-US" l10n="U" oldref="83">$[officename] Writer contains many formats of commercially available sheets for labels, badges, and business cards. You can also add other, user-defined formats.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3143271" xml-lang="en-US" l10n="U" oldref="28">On the <emph>Labels</emph> tab, under <emph>Inscription</emph>, you can choose what you want written on the labels.</paragraph>
+<paragraph role="listitem" id="par_id3145610" xml-lang="en-US" l10n="U" oldref="84">This often involves database fields, so that the labels can be printed with varying content, when sending "Form Letters" for example. It is also possible to have the same text printed on every label.</paragraph>
+<paragraph role="listitem" id="par_id3151385" xml-lang="en-US" l10n="U" oldref="85">Use the <emph>Database </emph>and <emph>Table </emph>list boxes to select the database and table from which the data fields are obtained. Click on the arrow button to transfer the selected data field into the inscription area. Press Enter to insert a line break. You can also enter spaces and any other fixed text.</paragraph>
+<paragraph role="listitem" id="par_id3147560" xml-lang="en-US" l10n="CHG" oldref="6">On the <emph>Format</emph> tab you can define your own label formats, not covered by the predefined formats. To do this, select "User" from the <emph>Type</emph> list box. On the <emph>Options</emph> tab, you can specify whether all labels or only certain ones are to be created.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="33">On the <emph>Options</emph> tab page, make sure that the <emph>Synchronize contents</emph> box is selected. If this is selected, a label only has to be entered (on the top left label) and edited once.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156424" xml-lang="en-US" l10n="U" oldref="86">As soon as you click on <emph>New Document</emph>, you will see a small window with the <emph>Synchronize Labels</emph> button. Enter the first label. When you click on the <emph>Synchronize Labels</emph> button, the current individual label is copied to all the other labels on the sheet.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149767" xml-lang="en-US" l10n="U" oldref="29">Click on <emph>New Document</emph> to create a new document with the settings you have entered.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/labels_database.xhp#labels_database"/>
+<embed href="text/shared/guide/data_new.xhp#data_new"/>
+<paragraph role="paragraph" id="par_id3150449" xml-lang="en-US" l10n="U" oldref="88"><link href="text/shared/01/01010300.xhp" name="Business Cards">Business Cards</link></paragraph>
+</body>
+</helpdocument>

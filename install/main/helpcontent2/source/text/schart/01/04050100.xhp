@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textschart0104050100xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Trend Lines </title>
+         <filename>/text/schart/01/04050100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id1744743"><bookmark_value>calculating;regression curves</bookmark_value>
+      <bookmark_value>regression curves in charts</bookmark_value>
+      <bookmark_value>trend lines in charts</bookmark_value>
+      <bookmark_value>mean value lines in charts</bookmark_value>
+</bookmark>
+<comment>only use trend line, not regression curve: i89823</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertMenuTrendlines" id="bm_id2001709" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id5409405" role="heading" level="1" l10n="CHG"><variable id="regression"><link href="text/schart/01/04050100.xhp">Trend Lines</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id7272255" role="paragraph" l10n="CHG"><variable id="trendlinestext"><ahelp hid=".">Trend lines can be added to all 2D chart types except for Pie and Stock charts.</ahelp>
+</variable></paragraph>
+      <embed href="text/schart/01/04030000.xhp#context"/>
+      <section id="howtoget">
+         <embed href="text/schart/00/00000004.xhp#trendlines"/>
+      </section><comment>None</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_RB_NONE" id="bm_id2659077" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id143436" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">No trend line is shown.</ahelp></paragraph><comment>Linear</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_RB_LINEAR" id="bm_id6944181" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id5716727" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">A linear trend line is shown.</ahelp></paragraph><comment>Logarithmic</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_RB_LOGARITHMIC" id="bm_id886257" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id5840021" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">A logarithmic trend line is shown.</ahelp></paragraph><comment>Exponential</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_RB_EXPONENTIAL" id="bm_id8892483" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id9417096" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">An exponential trend line is shown.</ahelp></paragraph><comment>Power</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_RB_POWER" id="bm_id7198400" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id8482924" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">A power trend line is shown.</ahelp></paragraph><comment>Show equation</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_SHOW_EQUATION" id="bm_id4724875" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id8962370" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Shows the trend line equation next to the trend line.</ahelp></paragraph><comment>Show correlation coefficient (R2)</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_SHOW_R_SQUARED" id="bm_id9068880" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id6889858" role="paragraph" l10n="CHG"><ahelp hid="." visibility="hidden">Shows the coefficient of determination next to the trend line.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id8398998" role="note" l10n="CHG">If you insert a trend line to a chart type that uses categories, like <emph>Line </emph>or <emph>Column, </emph>then the numbers 1, 2, 3, <emph>…</emph> are used as x-values to calculate the trend line.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5676747" role="paragraph" l10n="CHG">To insert trend lines for all data series, double-click the chart to enter edit mode. Choose <item type="menuitem">Insert - Trend Lines</item>, then select the type of trend line from None, Linear, Logarithmic, Exponential, or Power trend line.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id4349192" role="paragraph" l10n="CHG">To insert a trend line for a single data series, select the data series in the chart, right-click to open the context menu, and choose <item type="menuitem">Insert - Trend Line</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9337443" role="paragraph" l10n="NEW">To delete a single trend line or mean value line, click the line, then press the Del key.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id4529251" role="paragraph" l10n="NEW">To delete all trend lines, choose <item type="menuitem">Insert - Trend Lines</item>, then select <emph>None</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id296334" role="note" l10n="CHG">A trend line is shown in the legend automatically.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertMenuMeanValues" id="bm_id7854243" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id4072084" role="paragraph" l10n="NEW"><ahelp hid=".">Mean Value Lines are special trend lines that show the mean value. Use <item type="menuitem">Insert - Mean Value Lines</item> to insert mean value lines for data series.</ahelp></paragraph>
+<embed href="text/schart/01/04030000.xhp#context"/>
+      <paragraph xml-lang="en-US" id="par_id9569689" role="paragraph" l10n="NEW">The trend line has the same color as the corresponding data series. To change the line properties, select the trend line and choose <item type="menuitem">Format - Format Selection - Line</item>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertTrendlineEquation" id="bm_id2754600" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id846888" role="paragraph" l10n="NEW"><ahelp hid=".">To show the trend line equation, select the trend line in the chart, right-click to open the context menu, and choose <emph>Insert Trend Line Equation</emph>.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id8962065" role="paragraph" l10n="CHG">When the chart is in edit mode, %PRODUCTNAME gives you the equation of the trend line and the coefficient of determination R². Click on the trend line to see the information in the status bar.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1328470" role="note" l10n="CHG">For a category chart (for example a line chart), the trend line information is calculated using numbers 1, 2, 3, … as x-values. This is also true if your data series uses other numbers as names for the x-values. For such charts the XY chart type might be more suitable.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8092593" role="paragraph" l10n="CHG">To show the equation and the coefficient of determination, select the trend line and choose <item type="menuitem">Format - Format Selection - Equation</item>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id7971434" role="paragraph" l10n="CHG"><ahelp hid="." visibility="hidden">Enable Show equation to see the equation of the trend line.</ahelp></paragraph><comment>hid</comment>
+<paragraph xml-lang="en-US" id="par_id558793" role="paragraph" l10n="CHG"><ahelp hid="." visibility="hidden">Enable Show Coefficient of Determination to see the determination coefficient of the trend line.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id7735221" role="paragraph" l10n="NEW">You can also calculate the parameters using Calc functions as follows.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id5744193" role="heading" level="2" l10n="NEW">The linear regression equation</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9251991" role="paragraph" l10n="NEW">The <emph>linear regression</emph> follows the equation <item type="literal">y=m*x+b</item>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7951902" role="code" l10n="NEW">m = SLOPE(Data_Y;Data_X) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id6637165" role="code" l10n="NEW">b = INTERCEPT(Data_Y ;Data_X) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id7879268" role="paragraph" l10n="NEW">Calculate the coefficient of determination by</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9244361" role="code" l10n="NEW">r² = RSQ(Data_Y;Data_X) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id2083498" role="paragraph" l10n="NEW">Besides m, b and r² the array function <emph>LINEST</emph> provides additional statistics for a regression analysis.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id2538834" role="heading" level="2" l10n="NEW">The logarithm regression equation</paragraph>
+      <paragraph xml-lang="en-US" id="par_id394299" role="paragraph" l10n="NEW">The <emph>logarithm regression</emph> follows the equation <item type="literal">y=a*ln(x)+b</item>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2134159" role="code" l10n="NEW">a = SLOPE(Data_Y;LN(Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id5946531" role="code" l10n="NEW">b = INTERCEPT(Data_Y ;LN(Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id5649281" role="code" l10n="NEW">r² = RSQ(Data_Y;LN(Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="hd_id7874080" role="heading" level="2" l10n="NEW">The exponential regression equation</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4679097" role="paragraph" l10n="CHG"> For exponential trend lines a transformation to a linear model takes place. The optimal curve fitting is related to the linear model and the results are interpreted accordingly. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id9112216" role="paragraph" l10n="NEW">The exponential regression follows the equation <item type="literal">y=b*exp(a*x)</item> or <item type="literal">y=b*m^x</item>, which is transformed to <item type="literal">ln(y)=ln(b)+a*x</item> or <item type="literal">ln(y)=ln(b)+ln(m)*x</item> respectively.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4416638" role="code" l10n="NEW">a = SLOPE(LN(Data_Y);Data_X) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id1039155" role="paragraph" l10n="CHG">The variables for the second variation are calculated as follows:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7184057" role="code" l10n="NEW">m = EXP(SLOPE(LN(Data_Y);Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id786767" role="code" l10n="NEW">b = EXP(INTERCEPT(LN(Data_Y);Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id7127292" role="paragraph" l10n="NEW">Calculate the coefficient of determination by</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5437177" role="code" l10n="NEW">r² = RSQ(LN(Data_Y);Data_X) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id6946317" role="paragraph" l10n="NEW">Besides m, b and r² the array function LOGEST provides additional statistics for a regression analysis.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id6349375" role="heading" level="2" l10n="NEW">The power regression equation</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1857661" role="paragraph" l10n="NEW"> For <emph>power regression</emph> curves a transformation to a linear model takes place. The power regression follows the equation <item type="literal">y=b*x^a</item> , which is transformed to <item type="literal">ln(y)=ln(b)+a*ln(x)</item>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8517105" role="code" l10n="NEW">a = SLOPE(LN(Data_Y);LN(Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id9827265" role="code" l10n="NEW">b = EXP(INTERCEPT(LN(Data_Y);LN(Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="par_id2357249" role="code" l10n="NEW">r² = RSQ(LN(Data_Y);LN(Data_X)) </paragraph>
+      <paragraph xml-lang="en-US" id="hd_id9204077" role="heading" level="2" l10n="NEW">Constraints<comment>UFI: is this still so?</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id7393719" role="paragraph" l10n="CHG"> The calculation of the trend line considers only data pairs with the following values:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7212744" role="paragraph" l10n="NEW">logarithm regression: only positive x-values are considered,</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1664479" role="paragraph" l10n="NEW">exponential regression: only positive y-values are considered,</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id8734702" role="paragraph" l10n="NEW">power regression: only positive x-values and positive y-values are considered.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id181279" role="paragraph" l10n="NEW">You should transform your data accordingly; it is best to work on a copy of the original data and transform the copied data.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id7907040" role="heading" level="2" l10n="NEW">The polynomial regression equation</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8918729" role="paragraph" l10n="NEW">A <emph>polynomial regression</emph> curve cannot be added automatically. You must calculate this curve manually. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id33875" role="paragraph" l10n="NEW">Create a table with the columns x, x², x³, … , xⁿ, y up to the desired degree n. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id8720053" role="paragraph" l10n="NEW">Use the formula <item type="literal">=LINEST(Data_Y,Data_X)</item> with the complete range x to xⁿ (without headings) as Data_X. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id5068514" role="paragraph" l10n="NEW">The first row of the LINEST output contains the coefficients of the regression polynomial, with the coefficient of xⁿ at the leftmost position.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8202154" role="paragraph" l10n="NEW">The first element of the third row of the LINEST output is the value of r². See the <link href="text/scalc/01/04060107.xhp#Section8">LINEST</link> function for details on proper use and an explanation of the other output parameters.</paragraph>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id4562211" role="paragraph" l10n="CHG"><link href="text/schart/01/04050000.xhp">Y Error Bars tab page</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

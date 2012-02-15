@@ -1,0 +1,55 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_InteractiveLockingLockedException_idl__
+#define __com_sun_star_ucb_InteractiveLockingLockedException_idl__
+
+#ifndef __com_sun_star_ucb_InteractiveLockingException_idl__
+#include <com/sun/star/ucb/InteractiveLockingException.idl>
+#endif
+
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** An error indicating that the resource is locked.
+
+    @since OOo 3.3
+*/
+/*published*/ exception InteractiveLockingLockedException : com::sun::star::ucb::InteractiveLockingException
+{
+    //-------------------------------------------------------------------------
+    /** The owner of the lock.
+
+        <true/>, the lock has been obtained by this OOo session.
+        <false/> the lock has been obtained by another principal.
+    */
+    boolean SelfOwned;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

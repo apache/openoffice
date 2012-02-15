@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasetablewizard04xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Table Wizard - Create Table</title>
+<filename>/text/shared/explorer/database/tablewizard04.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-06T15:43:51">UFI: new Table Wizard page 4</created>
+<lastedited date="2007-01-26T10:29:59">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<section id="createtable">
+<paragraph role="heading" id="par_idN10543" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/tablewizard04.xhp">Table Wizard - Create Table</link></paragraph>
+<paragraph role="paragraph" id="par_idN10553" xml-lang="en-US" l10n="CHG">Enter a name for the table and specify whether you want to modify the table after the wizard is finished.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGTABLE_TXT_NAME" id="bm_id6823633" localize="false"/>
+<paragraph role="heading" id="par_idN10556" xml-lang="en-US" level="2" l10n="NEW">Table name</paragraph>
+<paragraph role="paragraph" id="par_idN1055A" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the table name.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGTABLE_LST_CATALOG" id="bm_id3157139" localize="false"/>
+<paragraph role="heading" id="par_idN105E4" xml-lang="en-US" level="2" l10n="NEW">Catalog of the table</paragraph>
+<paragraph role="paragraph" id="par_idN105EA" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the catalog for the table. (Available only if the database supports catalogs)</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGTABLE_LST_SCHEMA" id="bm_id2800683" localize="false"/>
+<paragraph role="heading" id="par_idN10605" xml-lang="en-US" level="2" l10n="NEW">Schema of the table</paragraph>
+<paragraph role="paragraph" id="par_idN1060B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the schema for the table. (Available only if the database supports schemas)</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGTABLE_OPT_WORKWITHTABLE" id="bm_id5238807" localize="false"/>
+<paragraph role="heading" id="par_idN1055D" xml-lang="en-US" level="2" l10n="NEW">Modify the table design</paragraph>
+<paragraph role="paragraph" id="par_idN10561" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to save and edit the table design.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGTABLE_OPT_MODIFYTABLE" id="bm_id2086855" localize="false"/>
+<paragraph role="heading" id="par_idN10564" xml-lang="en-US" level="2" l10n="NEW">Insert data immediately</paragraph>
+<paragraph role="paragraph" id="par_idN10568" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to save the table design and open the table to enter data.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGTABLE_OPT_STARTFORMWIZARD" id="bm_id3381145" localize="false"/>
+<paragraph role="heading" id="par_idN1056B" xml-lang="en-US" level="2" l10n="NEW">Create a form based on this table</paragraph>
+<paragraph role="paragraph" id="par_idN1056F" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to create a form based on this table. The form is created on a text document with the last used settings of the <link href="text/shared/autopi/01090000.xhp">Form Wizard</link>.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN10580" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/tablewizard00.xhp" name="Table Wizard">Table Wizard</link></paragraph>
+</body>
+</helpdocument>

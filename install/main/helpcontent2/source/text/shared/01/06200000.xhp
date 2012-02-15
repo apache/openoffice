@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106200000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Hangul/Hanja Conversion</title>
+<filename>/text/shared/01/06200000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-10-18T10:45:05">UFI: Added Options button; DEDR: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="hangul">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155757"><bookmark_value>converting;Hangul/Hanja</bookmark_value>
+<bookmark_value>Hangul/Hanja</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:HangulHanjaConversion" id="bm_id7305797" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:HangulHanjaConversion" id="bm_id3150702" localize="false"/>
+<paragraph role="heading" id="hd_id3155757" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/06200000.xhp" name="Hangul/Hanja Conversion">Hangul/Hanja Conversion</link></paragraph>
+<paragraph role="paragraph" id="par_id3146060" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:HangulHanjaConversion">Converts the selected Korean text from Hangul to Hanja or from Hanja to Hangul.</ahelp> The menu command can only be called if you enable Asian language support under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages</emph>, and if a text formatted in Korean language is selected.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#hangul"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SPELLDLG_SETWORD" id="bm_id3153089" localize="false"/>
+<paragraph role="heading" id="hd_id3150603" xml-lang="en-US" level="2" l10n="U" oldref="3">Original</paragraph>
+<paragraph role="paragraph" id="par_id3148520" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="HID_SPELLDLG_SETWORD">Displays the current selection.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_EDIT_NEWWORD" id="bm_id3166445" localize="false"/>
+<paragraph role="heading" id="hd_id3154230" xml-lang="en-US" level="2" l10n="U" oldref="5">Replace with<comment>name according to spec, current implementation displays "Word" here</comment></paragraph>
+<paragraph role="paragraph" id="par_id3149205" xml-lang="en-US" l10n="CHG" oldref="6"><ahelp hid="HID_HANGULDLG_EDIT_NEWWORD">Displays the first replacement suggestion from the dictionary.</ahelp> You can edit the suggested word or enter another word. Click the <emph>Find</emph> button to replace your original word with the corresponding replacement word.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVX_MDLG_HANGULHANJA:PB_FIND" id="bm_id3156136" localize="false"/>
+<paragraph role="heading" id="hd_id3154673" xml-lang="en-US" level="2" l10n="U" oldref="7">Find</paragraph>
+<paragraph role="paragraph" id="par_id3156560" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX_PUSHBUTTON_RID_SVX_MDLG_HANGULHANJA_PB_FIND">Finds your Hangul input in the dictionary and replaces it with the corresponding Hanja.</ahelp> Click <emph>Ignore</emph> to cancel the find function.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_SUGGESTIONS" id="bm_id3149182" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_SUGGESTIONS_GRID" id="bm_id8213751" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_SUGGESTIONS_LIST" id="bm_id6193731" localize="false"/>
+<paragraph role="heading" id="hd_id3147291" xml-lang="en-US" level="2" l10n="U" oldref="9">Suggestions</paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX_LISTBOX_RID_SVX_MDLG_HANGULHANJA_LB_SUGGESTIONS">Displays all available replacements in the dictionary.</ahelp> If the <emph>Replace by character</emph> box is enabled, you see a grid of characters. If the <emph>Replace by character</emph> box is not checked, you see a list of words.</paragraph>
+<paragraph role="heading" id="hd_id3157958" xml-lang="en-US" level="2" l10n="U" oldref="11">Format</paragraph>
+<paragraph role="paragraph" id="par_id3155941" xml-lang="en-US" l10n="U" oldref="12">Click the format to display the replacements.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVX_MDLG_HANGULHANJA:RB_SIMPLE_CONVERSION" id="bm_id3154317" localize="false"/>
+<paragraph role="heading" id="hd_id3153749" xml-lang="en-US" level="3" l10n="U" oldref="13">Hangul/Hanja</paragraph>
+<paragraph role="paragraph" id="par_id3150775" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX_RADIOBUTTON_RID_SVX_MDLG_HANGULHANJA_RB_SIMPLE_CONVERSION">The original characters are replaced by the suggested characters.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVX_MDLG_HANGULHANJA:RB_HANJA_HANGUL_BRACKETED" id="bm_id3153031" localize="false"/>
+<paragraph role="heading" id="hd_id3152780" xml-lang="en-US" level="3" l10n="U" oldref="15">Hanja (Hangul)</paragraph>
+<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX_RADIOBUTTON_RID_SVX_MDLG_HANGULHANJA_RB_HANJA_HANGUL_BRACKETED">The Hangul part will be displayed in brackets after the Hanja part.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVX_MDLG_HANGULHANJA:RB_HANGUL_HANJA_BRACKETED" id="bm_id3145227" localize="false"/>
+<paragraph role="heading" id="hd_id3150443" xml-lang="en-US" level="3" l10n="U" oldref="17">Hangul (Hanja)</paragraph>
+<paragraph role="paragraph" id="par_id3149192" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX_RADIOBUTTON_RID_SVX_MDLG_HANGULHANJA_RB_HANGUL_HANJA_BRACKETED">The Hanja part will be displayed in brackets after the Hangul part.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVX_MDLG_HANGULHANJA:RB_HANGUL_HANJA_ABOVE" id="bm_id3158432" localize="false"/>
+<paragraph role="heading" id="hd_id3150119" xml-lang="en-US" level="3" l10n="U" oldref="19">Hanja as ruby text above<comment>To translators: this describes the visible graphical control - it is not part of the sources</comment></paragraph>
+<paragraph role="paragraph" id="par_id3154173" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX_RADIOBUTTON_RID_SVX_MDLG_HANGULHANJA_RB_HANGUL_HANJA_ABOVE">The Hanja part will be displayed as ruby text above the Hangul part.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVX_MDLG_HANGULHANJA:RB_HANGUL_HANJA_BELOW" id="bm_id3149902" localize="false"/>
+<paragraph role="heading" id="hd_id3159400" xml-lang="en-US" level="3" l10n="U" oldref="21">Hanja as ruby text below<comment>To translators: this describes the visible graphical control - it is not part of the sources</comment></paragraph>
+<paragraph role="paragraph" id="par_id3156155" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SVX_RADIOBUTTON_RID_SVX_MDLG_HANGULHANJA_RB_HANGUL_HANJA_BELOW">The Hanja part will be displayed as ruby text below the Hangul part.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVX_MDLG_HANGULHANJA:RB_HANJA_HANGUL_ABOVE" id="bm_id3153698" localize="false"/>
+<paragraph role="heading" id="hd_id3150085" xml-lang="en-US" level="3" l10n="U" oldref="23">Hangul as ruby text above<comment>To translators: this describes the visible graphical control - it is not part of the sources</comment></paragraph>
+<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SVX_RADIOBUTTON_RID_SVX_MDLG_HANGULHANJA_RB_HANJA_HANGUL_ABOVE">The Hangul part will be displayed as ruby text above the Hanja part.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVX_MDLG_HANGULHANJA:RB_HANJA_HANGUL_BELOW" id="bm_id3153348" localize="false"/>
+<paragraph role="heading" id="hd_id3155831" xml-lang="en-US" level="3" l10n="U" oldref="25">Hangul as ruby text below<comment>To translators: this describes the visible graphical control - it is not part of the sources</comment></paragraph>
+<paragraph role="paragraph" id="par_id3157909" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SVX_RADIOBUTTON_RID_SVX_MDLG_HANGULHANJA_RB_HANJA_HANGUL_BELOW">The Hangul part will be displayed as ruby text below the Hanja part.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148826" xml-lang="en-US" level="2" l10n="U" oldref="27">Conversion</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="28">Normally in a mixed text selection made of Hangul and Hanja characters, all Hangul characters will be converted to Hanja and all Hanja characters will be converted to Hangul. If you want to convert a mixed text selection only in one direction, use the following conversion options.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVX_MDLG_HANGULHANJA:CB_HANGUL_ONLY" id="bm_id3154381" localize="false"/>
+<paragraph role="heading" id="hd_id3153585" xml-lang="en-US" level="3" l10n="U" oldref="29">Hangul only</paragraph>
+<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SVX_CHECKBOX_RID_SVX_MDLG_HANGULHANJA_CB_HANGUL_ONLY">Check to convert only Hangul. Do not convert Hanja.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVX_MDLG_HANGULHANJA:CB_HANJA_ONLY" id="bm_id3147530" localize="false"/>
+<paragraph role="heading" id="hd_id3150823" xml-lang="en-US" level="3" l10n="U" oldref="31">Hanja only</paragraph>
+<paragraph role="paragraph" id="par_id3156023" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SVX_CHECKBOX_RID_SVX_MDLG_HANGULHANJA_CB_HANJA_ONLY">Check to convert only Hanja. Do not convert Hangul.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_BUTTON_IGNORE" id="bm_id3149670" localize="false"/>
+<paragraph role="heading" id="hd_id3152360" xml-lang="en-US" level="2" l10n="U" oldref="33">Ignore</paragraph>
+<paragraph role="paragraph" id="par_id3153896" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_HANGULDLG_BUTTON_IGNORE">No changes will be made to the current selection. The next word or character will be selected for conversion.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_BUTTON_IGNOREALL" id="bm_id3147282" localize="false"/>
+<paragraph role="heading" id="hd_id3148550" xml-lang="en-US" level="2" l10n="U" oldref="35">Always Ignore</paragraph>
+<paragraph role="paragraph" id="par_id3154937" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="HID_HANGULDLG_BUTTON_IGNOREALL">No changes will be made to the current selection, and every time the same selection is detected it will be skipped automatically.</ahelp> The next word or character will be selected for conversion. The list of ignored text is valid for the current $[officename] session.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_BUTTON_CHANGE" id="bm_id3153779" localize="false"/>
+<paragraph role="heading" id="hd_id3151056" xml-lang="en-US" level="2" l10n="U" oldref="37">Replace</paragraph>
+<paragraph role="paragraph" id="par_id3148403" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="HID_HANGULDLG_BUTTON_CHANGE">Replaces the selection with the suggested characters or word according to the format options.</ahelp> The next word or character will be selected for conversion.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_BUTTON_CHANGEALL" id="bm_id3159084" localize="false"/>
+<paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="2" l10n="U" oldref="39">Always Replace</paragraph>
+<paragraph role="paragraph" id="par_id3153338" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="HID_HANGULDLG_BUTTON_CHANGEALL">Replaces the selection with the suggested characters or word according to the format options. Every time the same selection is detected it will be replaced automatically.</ahelp> The next word or character will be selected for conversion. The list of replacement text is valid for the current $[officename] session.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVX_MDLG_HANGULHANJA:CB_REPLACE_BY_CHARACTER" id="bm_id3145420" localize="false"/>
+<paragraph role="heading" id="hd_id3149290" xml-lang="en-US" level="3" l10n="U" oldref="41">Replace by character</paragraph>
+<paragraph role="paragraph" id="par_id3145154" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SVX_CHECKBOX_RID_SVX_MDLG_HANGULHANJA_CB_REPLACE_BY_CHARACTER">Check to move character-by-character through the selected text. If not checked, full words are replaced.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_BUTTON_OPTIONS" id="bm_id2443311" localize="false"/>
+<paragraph role="heading" id="par_idN10969" xml-lang="en-US" level="2" l10n="NEW">Options</paragraph>
+<paragraph role="paragraph" id="par_idN1096D" xml-lang="en-US" l10n="CHG"><ahelp hid="HID_HANGULHANJA_OPT_DLG">Opens the <link href="text/shared/01/06201000.xhp">Hangul/Hanja Options</link> dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HANGULDLG_BUTTON_CLOSE" id="bm_id3145746" localize="false"/>
+<paragraph role="heading" id="hd_id3149807" xml-lang="en-US" level="2" l10n="U" oldref="43">Close</paragraph>
+<paragraph role="paragraph" id="par_id3155743" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="HID_HANGULDLG_BUTTON_CLOSE">Closes the dialog.</ahelp></paragraph>
+</body>
+</helpdocument>

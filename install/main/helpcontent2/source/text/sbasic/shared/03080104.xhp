@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03080104xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Tan Function [Runtime]</title>
+<filename>/text/sbasic/shared/03080104.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-12-15T09:15:53">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="tan">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148550"><bookmark_value>Tan function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3148550" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080104.xhp" name="Tan Function [Runtime]">Tan Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148663" xml-lang="en-US" l10n="CHG" oldref="2">Determines the tangent of an angle. The angle is specified in radians.<comment>i71396</comment></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="3">Using the angle Alpha, the Tan Function calculates the ratio of the length of the side opposite the angle to the length of the side adjacent to the angle in a right-angled triangle.</paragraph>
+<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="4">Tan(Alpha) = side opposite the angle/side adjacent to angle</paragraph>
+<paragraph role="heading" id="hd_id3145174" xml-lang="en-US" level="2" l10n="U" oldref="5">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="6">Tan (Number)</paragraph>
+<paragraph role="heading" id="hd_id3156214" xml-lang="en-US" level="2" l10n="U" oldref="7">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="8">Double</paragraph>
+<paragraph role="heading" id="hd_id3155132" xml-lang="en-US" level="2" l10n="U" oldref="9">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3145786" xml-lang="en-US" l10n="U" oldref="10">
+<emph>Number:</emph> Any numeric expression that you want to calculate the tangent for (in radians).</paragraph>
+<paragraph role="paragraph" id="par_id3153728" xml-lang="en-US" l10n="U" oldref="11">To convert degrees to radians, multiply by Pi/180. To convert radians to degrees, multiply by 180/Pi.</paragraph>
+<paragraph role="paragraph" id="par_id3155414" xml-lang="en-US" l10n="CHG" oldref="12">degrees=(radiant*180)/Pi</paragraph>
+<paragraph role="paragraph" id="par_id3146975" xml-lang="en-US" l10n="CHG" oldref="13">radiant=(degrees*Pi)/180</paragraph>
+<paragraph role="paragraph" id="par_id3147434" xml-lang="en-US" l10n="U" oldref="14">Pi is approximately 3.141593.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3149483" xml-lang="en-US" level="2" l10n="U" oldref="15">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3148646" xml-lang="en-US" l10n="U" oldref="16">REM In this example, the following entry is possible for a right-angled triangle:</paragraph>
+<paragraph role="paragraph" id="par_id3150012" xml-lang="en-US" l10n="U" oldref="17">REM The side opposite the angle and the angle (in degrees) to calculate the length of the side adjacent to the angle:</paragraph>
+<paragraph role="paragraph" id="par_id3151115" xml-lang="en-US" l10n="U" oldref="18">Sub ExampleTangens</paragraph>
+<paragraph role="paragraph" id="par_id3153158" xml-lang="en-US" l10n="U" oldref="19">REM Pi = 3.1415926 is a pre-defined variable</paragraph>
+<paragraph role="paragraph" id="par_id3145800" xml-lang="en-US" l10n="U" oldref="20">Dim d1 as Double</paragraph>
+<paragraph role="paragraph" id="par_id3150417" xml-lang="en-US" l10n="U" oldref="21">Dim dAlpha as Double</paragraph>
+<paragraph role="paragraph" id="par_id3145252" xml-lang="en-US" l10n="U" oldref="22">d1 = InputBox$ ("Enter the length of the side opposite the angle: ","opposite")</paragraph>
+<paragraph role="paragraph" id="par_id3149582" xml-lang="en-US" l10n="U" oldref="23">dAlpha = InputBox$ ("Enter the Alpha angle (in degrees): ","Alpha")</paragraph>
+<paragraph role="paragraph" id="par_id3154016" xml-lang="en-US" l10n="U" oldref="24">Print "the length of the side adjacent the angle is"; (d1 / tan (dAlpha * Pi / 180))</paragraph>
+<paragraph role="paragraph" id="par_id3154731" xml-lang="en-US" l10n="U" oldref="25">End Sub</paragraph>
+</body>
+</helpdocument>

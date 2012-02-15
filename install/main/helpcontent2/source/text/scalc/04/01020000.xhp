@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0401020000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Shortcut Keys for Spreadsheets</title>
+<filename>/text/scalc/04/01020000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="starcalctasten">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145801"><bookmark_value>spreadsheets; shortcut keys in</bookmark_value>
+<bookmark_value>shortcut keys; spreadsheets</bookmark_value>
+<bookmark_value>sheet ranges; filling</bookmark_value>
+</bookmark><comment>mw deleted "matrices;..."</comment><paragraph role="heading" id="hd_id3145801" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="calc_keys"><link href="text/scalc/04/01020000.xhp" name="Shortcut Keys for Spreadsheets">Shortcut Keys for Spreadsheets</link>
+</variable></paragraph>
+<embed href="text/shared/00/00000099.xhp#keys"/>
+</section>
+<paragraph role="paragraph" id="par_id3155067" xml-lang="en-US" l10n="U" oldref="3">To fill a selected cell range with the formula that you entered on the <emph>Input line</emph>, press <switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline>+Enter. Hold down <switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline>+Enter+Shift to apply the cell format of the input cell to the entire cell range.</paragraph>
+<paragraph role="paragraph" id="par_id3153967" xml-lang="en-US" l10n="U" oldref="84">To create a matrix in which all the cells contain the same information as what you entered on the <emph>Input line</emph>, press Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter. You cannot edit the components of the matrix.</paragraph>
+<paragraph role="paragraph" id="par_id3166426" xml-lang="en-US" l10n="U" oldref="4">To select multiple cells in different areas of a sheet, hold down <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl </defaultinline></switchinline>and drag in the different areas.</paragraph>
+<paragraph role="paragraph" id="par_id3150207" xml-lang="en-US" l10n="U" oldref="127">To select multiple sheets in a spreadsheet, hold down <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>, and then click the name tabs at the lower edge of the workspace. To select only one sheet in a selection, hold down Shift, and then click the name tab of the sheet.</paragraph>
+<paragraph role="paragraph" id="par_id3166432" xml-lang="en-US" l10n="U" oldref="129">To insert a manual line break in a cell, click in the cell, and then press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter.</paragraph>
+<paragraph role="paragraph" id="par_id3146978" xml-lang="en-US" l10n="U" oldref="130">To delete the contents of selected cells, press Delete. This opens the <link href="text/scalc/01/02150000.xhp" name="Delete Contents">Delete Contents</link> dialog, where you choose which contents of the cell you want to delete. To delete the contents of selected cells without a dialog, press the Backspace key.</paragraph>
+<paragraph role="heading" id="hd_id3145386" xml-lang="en-US" level="2" l10n="U" oldref="85">Navigating in Spreadsheets</paragraph>
+<table id="tbl_id5963927">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="hd_id3149407" xml-lang="en-US" l10n="U" oldref="86">Shortcut Keys</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153815" xml-lang="en-US" l10n="U" oldref="87">
+<emph>Effect</emph>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3146871" xml-lang="en-US" l10n="U" oldref="88"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Home</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159093" xml-lang="en-US" l10n="U" oldref="89">Moves the cursor to the first cell in the sheet (A1).</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3145073" xml-lang="en-US" l10n="U" oldref="90"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+End</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153283" xml-lang="en-US" l10n="U" oldref="91">Moves the cursor to the last cell on the sheet that contains data.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149127" xml-lang="en-US" l10n="U" oldref="92">Home</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159205" xml-lang="en-US" l10n="U" oldref="93">Moves the cursor to the first cell of the current row.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149897" xml-lang="en-US" l10n="U" oldref="94">End</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155095" xml-lang="en-US" l10n="U" oldref="95">Moves the cursor to the last cell of the current row.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3143220" xml-lang="en-US" l10n="U" oldref="101"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Left Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154766" xml-lang="en-US" l10n="U" oldref="102">Moves the cursor to the left edge of the current data range. If the column to the left of the cell that contains the cursor is empty, the cursor moves to the next column to the left that contains data.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3153554" xml-lang="en-US" l10n="U" oldref="103"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Right Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155593" xml-lang="en-US" l10n="U" oldref="104">Moves the cursor to the right edge of the current data range. If the column to the right of the cell that contains the cursor is empty, the cursor moves to the next column to the right that contains data.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149317" xml-lang="en-US" l10n="U" oldref="105"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Up Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153076" xml-lang="en-US" l10n="U" oldref="106">Moves the cursor to the top edge of the current data range. If the row above the cell that contains the cursor is empty, the cursor moves up to the next row that contains data.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3147250" xml-lang="en-US" l10n="U" oldref="107"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Down Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149054" xml-lang="en-US" l10n="U" oldref="108">Moves the cursor to the bottom edge of the current data range. If the row below the cell that contains the cursor is empty, the cursor moves down to the next row that contains data.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148744" xml-lang="en-US" l10n="U" oldref="184"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159258" xml-lang="en-US" l10n="U" oldref="185">Selects all cells containing data from the current cell to the end of the continuous range of data cells, in the direction of the arrow pressed. If used to select rows and columns together, a rectangular cell range is selected.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3156399" xml-lang="en-US" l10n="U" oldref="109"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145236" xml-lang="en-US" l10n="U" oldref="110">Moves one sheet to the left.</paragraph>
+<paragraph role="tablecontent" id="par_id3149725" xml-lang="en-US" l10n="U" oldref="131">In the page preview: Moves to the previous print page.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3147411" xml-lang="en-US" l10n="U" oldref="111"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Down</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150372" xml-lang="en-US" l10n="U" oldref="112">Moves one sheet to the right.</paragraph>
+<paragraph role="tablecontent" id="par_id3159120" xml-lang="en-US" l10n="U" oldref="132">In the page preview: Moves to the next print page.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3146885" xml-lang="en-US" l10n="U" oldref="113"><switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline> + Page Up</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152976" xml-lang="en-US" l10n="U" oldref="114">Moves one screen to the left.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149013" xml-lang="en-US" l10n="U" oldref="115"><switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline> + Page Down</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150477" xml-lang="en-US" l10n="U" oldref="116">Moves one screen page to the right.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10AFC" xml-lang="en-US" l10n="NEW">Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10B00" xml-lang="en-US" l10n="NEW">Adds the previous sheet to the current selection of sheets. If all the sheets in a spreadsheet are selected, this shortcut key combination only selects the previous sheet. Makes the previous sheet the current sheet.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10B03" xml-lang="en-US" l10n="NEW">Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Down</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10B07" xml-lang="en-US" l10n="NEW">Adds the next sheet to the current selection of sheets. If all the sheets in a spreadsheet are selected, this shortcut key combination only selects the next sheet. Makes the next sheet the current sheet.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3145826" xml-lang="en-US" l10n="U" oldref="96"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> + *</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148882" xml-lang="en-US" l10n="U" oldref="97">where (*) is the multiplication sign on the numeric key pad</paragraph>
+<paragraph role="tablecontent" id="par_id3154847" xml-lang="en-US" l10n="U" oldref="98">Selects the data range that contains the cursor. A range is a contiguous cell range that contains data and is bounded by empty row and columns.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3151233" xml-lang="en-US" l10n="U" oldref="180"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> + /</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149949" xml-lang="en-US" l10n="U" oldref="181">where (/) is the division sign on the numeric key pad</paragraph>
+<paragraph role="tablecontent" id="par_id3150144" xml-lang="en-US" l10n="U" oldref="182">Selects the matrix formula range that contains the cursor.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id8163396" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Plus key</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id9901425" xml-lang="en-US" l10n="NEW">Insert cells (as in menu Insert - Cells)<comment>[sc-features] of 8.June07</comment></paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3389080" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Minus key</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id5104220" xml-lang="en-US" l10n="NEW">Delete cells (as in menu Edit - Delete Cells)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3155825" xml-lang="en-US" l10n="CHG" oldref="99">Enter (in a selected range)<comment>see i80051</comment></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153935" xml-lang="en-US" l10n="U" oldref="100">Moves the cursor down one cell in a selected range. To specify the direction that the cursor moves, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - General</emph>.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id5961180" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline> + ` (see note below this table)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id6407055" xml-lang="en-US" l10n="NEW">Displays or hides the formulas instead of the values in all cells.<comment>i56202</comment></paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="note" id="par_id8070314" xml-lang="en-US" l10n="NEW">The ` key is located next to the "1" key on most English keyboards. If your keyboard does not show this key, you can assign another key: Choose Tools - Customize, click the Keyboard tab. Select the "View" category and the "Toggle Formula" function.</paragraph>
+<paragraph role="heading" id="hd_id3148756" xml-lang="en-US" level="2" l10n="U" oldref="5">Function Keys Used in Spreadsheets</paragraph>
+<table id="tbl_id5384685">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="hd_id3148581" xml-lang="en-US" l10n="U" oldref="6">Shortcut Keys</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152790" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Effect</emph>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3154809" xml-lang="en-US" l10n="U" oldref="139"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F1</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145140" xml-lang="en-US" l10n="U" oldref="138">Displays the comment that is attached to the current cell</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3146142" xml-lang="en-US" l10n="U" oldref="9">F2</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148568" xml-lang="en-US" l10n="U" oldref="10">Switches to Edit mode and places the cursor at the end of the contents of the current cell. Press again to exit Edit mode.</paragraph>
+<paragraph role="tablecontent" id="par_id3153108" xml-lang="en-US" l10n="U" oldref="179">If the cursor is in an input box in a dialog that has a <emph>Minimize </emph>button, the dialog is hidden and the input box remains visible. Press F2 again to show the whole dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3146850" xml-lang="en-US" l10n="U" oldref="11"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F2</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145162" xml-lang="en-US" l10n="U" oldref="12">Opens the Function Wizard.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3147366" xml-lang="en-US" l10n="U" oldref="137">Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F2</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155929" xml-lang="en-US" l10n="U" oldref="136">Moves the cursor to the <emph>Input line</emph> where you can enter a formula for the current cell.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3153730" xml-lang="en-US" l10n="U" oldref="15"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145245" xml-lang="en-US" l10n="U" oldref="16">Opens the <emph>Define Names</emph> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148768" xml-lang="en-US" l10n="U" oldref="17">F4</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153047" xml-lang="en-US" l10n="U" oldref="18">Shows or Hides the Database explorer.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3145353" xml-lang="en-US" l10n="U" oldref="19">Shift+F4</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155620" xml-lang="en-US" l10n="U" oldref="20">Rearranges the relative or absolute references (for example, A1, $A$1, $A1, A$1) in the input field.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3156063" xml-lang="en-US" l10n="U" oldref="21">F5</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149540" xml-lang="en-US" l10n="U" oldref="22">Shows or hides the <emph>Navigator</emph>.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148392" xml-lang="en-US" l10n="U" oldref="23">Shift+F5</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150268" xml-lang="en-US" l10n="U" oldref="24">Traces dependents.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148430" xml-lang="en-US" l10n="U" oldref="27">Shift+F7</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153179" xml-lang="en-US" l10n="U" oldref="28">Traces precedents.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3150568" xml-lang="en-US" l10n="U" oldref="135">Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F5</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153551" xml-lang="en-US" l10n="U" oldref="134">Moves the cursor from the <emph>Input line </emph>to the <emph>Sheet area</emph> box.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3155368" xml-lang="en-US" l10n="U" oldref="29">F7</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154871" xml-lang="en-US" l10n="U" oldref="30">Checks spelling in the current sheet.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3150688" xml-lang="en-US" l10n="U" oldref="31"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F7</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149781" xml-lang="en-US" l10n="U" oldref="32">Opens the Thesaurus if the current cell contains text.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3156257" xml-lang="en-US" l10n="U" oldref="33">F8</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147482" xml-lang="en-US" l10n="U" oldref="34">Turns additional selection mode on or off. In this mode, you can use the arrow keys to extend the selection. You can also click in another cell to extend the selection.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3154313" xml-lang="en-US" l10n="U" oldref="37"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F8</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150385" xml-lang="en-US" l10n="U" oldref="38">Highlights cells containing values.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3152479" xml-lang="en-US" l10n="U" oldref="39">F9</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163827" xml-lang="en-US" l10n="CHG" oldref="40">Recalculates changed formulas in the current sheet.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id9027069" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+F9</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id1729178" xml-lang="en-US" l10n="NEW">Recalculates all formulas in all sheets.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3156300" xml-lang="en-US" l10n="U" oldref="41"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F9</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154817" xml-lang="en-US" l10n="U" oldref="42">Updates the selected chart.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149279" xml-lang="en-US" l10n="U" oldref="46"><switchinline select="sys"><caseinline select="MAC">Command+T</caseinline><defaultinline>F11</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150967" xml-lang="en-US" l10n="U" oldref="47">Opens the <emph>Styles and Formatting</emph> window where you can apply a formatting style to the contents of the cell or to the current sheet.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3156308" xml-lang="en-US" l10n="U" oldref="48">Shift+F11</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145209" xml-lang="en-US" l10n="U" oldref="49">Creates a document template.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3147622" xml-lang="en-US" l10n="U" oldref="50">Shift<switchinline select="sys"><caseinline select="MAC">+Command</caseinline><defaultinline>+Ctrl</defaultinline></switchinline>+F11</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153215" xml-lang="en-US" l10n="U" oldref="51">Updates the templates.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3150760" xml-lang="en-US" l10n="U" oldref="52">F12</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156321" xml-lang="en-US" l10n="U" oldref="53">Groups the selected data range.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3146859" xml-lang="en-US" l10n="U" oldref="54"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F12</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156128" xml-lang="en-US" l10n="U" oldref="55">Ungroups the selected data range.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3151264" xml-lang="en-US" l10n="U" oldref="117"><switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline> + Down Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153155" xml-lang="en-US" l10n="U" oldref="118">Increases the height of current row.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3151297" xml-lang="en-US" l10n="U" oldref="119"><switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline> + Up Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155849" xml-lang="en-US" l10n="U" oldref="120">Decreases the height of current row.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3155997" xml-lang="en-US" l10n="U" oldref="121"><switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline> + Right Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150256" xml-lang="en-US" l10n="U" oldref="122">Increases the width of the current column.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3154046" xml-lang="en-US" l10n="U" oldref="123"><switchinline select="sys"><caseinline select="MAC">Option
+</caseinline><defaultinline>Alt</defaultinline></switchinline> + Left Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150155" xml-lang="en-US" l10n="U" oldref="124">Decreases the width of the current column.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149293" xml-lang="en-US" l10n="U" oldref="125"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Shift+Arrow Key</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159180" xml-lang="en-US" l10n="U" oldref="126">Optimizes the column width or row height based on the current cell.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3156013" xml-lang="en-US" level="2" l10n="U" oldref="56">Formatting Cells Using Shortcut Keys</paragraph>
+<paragraph role="paragraph" id="par_id3153979" xml-lang="en-US" l10n="U" oldref="57">The following cell formats can be applied with the keyboard:</paragraph>
+<table id="tbl_id6533097">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="hd_id3147492" xml-lang="en-US" l10n="U" oldref="58">Shortcut Keys</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154305" xml-lang="en-US" l10n="U" oldref="60">
+<emph>Effect</emph>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3145669" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+1 (not on the number pad)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149197" xml-lang="en-US" l10n="NEW">Open Format Cells dialog</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3145668" xml-lang="en-US" l10n="U" oldref="61"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+1 (not on the number pad)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149196" xml-lang="en-US" l10n="U" oldref="63">Two decimal places, thousands separator</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3155331" xml-lang="en-US" l10n="U" oldref="64"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+2 (not on the number pad)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150120" xml-lang="en-US" l10n="U" oldref="66">Standard exponential format</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3154932" xml-lang="en-US" l10n="U" oldref="67"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+3 (not on the number pad)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148822" xml-lang="en-US" l10n="U" oldref="69">Standard date format</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148829" xml-lang="en-US" l10n="U" oldref="70"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+4 (not on the number pad)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159152" xml-lang="en-US" l10n="U" oldref="72">Standard currency format</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3150776" xml-lang="en-US" l10n="U" oldref="73"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+5 (not on the number pad)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148800" xml-lang="en-US" l10n="U" oldref="75">Standard percentage format (two decimal places)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3158407" xml-lang="en-US" l10n="U" oldref="76"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+6 (not on the number pad)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148444" xml-lang="en-US" l10n="U" oldref="78">Standard format</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<section id="datenpiloten">
+<paragraph role="heading" id="hd_id3154205" xml-lang="en-US" level="2" l10n="CHG" oldref="178">Using the pivot table</paragraph>
+<table id="tbl_id2419507">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_idN11326" xml-lang="en-US" l10n="NEW">Keys</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_idN1132C" xml-lang="en-US" l10n="NEW">Effect</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3153577" xml-lang="en-US" l10n="U" oldref="177">Tab</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147511" xml-lang="en-US" l10n="U" oldref="176">Changes the focus by moving forwards through the areas and buttons of the dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3154266" xml-lang="en-US" l10n="U" oldref="175">Shift+Tab</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155362" xml-lang="en-US" l10n="U" oldref="174">Changes the focus by moving backwards through the areas and buttons of the dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148484" xml-lang="en-US" l10n="U" oldref="173">up arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149152" xml-lang="en-US" l10n="U" oldref="172">Moves the focus up one item in the current dialog area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3154273" xml-lang="en-US" l10n="U" oldref="171">down arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158424" xml-lang="en-US" l10n="U" oldref="170">Moves the focus down one item in the current dialog area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148912" xml-lang="en-US" l10n="U" oldref="169">left arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153238" xml-lang="en-US" l10n="U" oldref="168">Moves the focus one item to the left in the current dialog area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3150712" xml-lang="en-US" l10n="U" oldref="167">right arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3166458" xml-lang="en-US" l10n="U" oldref="166">Moves the focus one item to the right in the current dialog area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3146947" xml-lang="en-US" l10n="U" oldref="165">Home</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153742" xml-lang="en-US" l10n="U" oldref="164">Selects the first item in the current dialog area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3153387" xml-lang="en-US" l10n="U" oldref="163">End</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153684" xml-lang="en-US" l10n="U" oldref="162">Selects the last item in the current dialog area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3155584" xml-lang="en-US" l10n="U" oldref="161"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> and the underlined character in the word "Row"</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152949" xml-lang="en-US" l10n="U" oldref="160">Copies or moves the current field into the "Row" area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3159269" xml-lang="en-US" l10n="U" oldref="159"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> and the underlined character in the word "Column"</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149968" xml-lang="en-US" l10n="U" oldref="158">Copies or moves the current field into the "Column" area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149923" xml-lang="en-US" l10n="U" oldref="157"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> and the underlined character in the word "Data"</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148649" xml-lang="en-US" l10n="U" oldref="156">Copies or moves the current field into the "Data" area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149418" xml-lang="en-US" l10n="U" oldref="155"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Up Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154335" xml-lang="en-US" l10n="U" oldref="154">Moves the current field up one place.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148462" xml-lang="en-US" l10n="U" oldref="153"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Down Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154603" xml-lang="en-US" l10n="U" oldref="152">Moves the current field down one place.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3145373" xml-lang="en-US" l10n="U" oldref="151"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Left Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151125" xml-lang="en-US" l10n="U" oldref="150">Moves the current field one place to the left.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3150423" xml-lang="en-US" l10n="U" oldref="149"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Right Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153316" xml-lang="en-US" l10n="U" oldref="148">Moves the current field one place to the right.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149519" xml-lang="en-US" l10n="U" oldref="147"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Home</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149237" xml-lang="en-US" l10n="U" oldref="146">Moves the current field to the first place.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3145310" xml-lang="en-US" l10n="U" oldref="145"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+End</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153942" xml-lang="en-US" l10n="U" oldref="144">Moves the current field to the last place.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3149933" xml-lang="en-US" l10n="U" oldref="143"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+O</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154798" xml-lang="en-US" l10n="U" oldref="142">Displays the options for the current field.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="hd_id3148418" xml-lang="en-US" l10n="U" oldref="141">Delete</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159251" xml-lang="en-US" l10n="U" oldref="140">Removes the current field from the area.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+<section id="relatedtopics">
+<embed href="text/scalc/guide/keyboard.xhp#keyboard"/>
+<embed href="text/shared/guide/keyboard.xhp#keyboard"/>
+<paragraph role="paragraph" id="par_id3150630" xml-lang="en-US" l10n="U" oldref="183"><link href="text/shared/04/01010000.xhp" name="shortcut keys in $[officename]">Shortcut keys in $[officename]</link></paragraph>
+</section>
+</body>
+</helpdocument>

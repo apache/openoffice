@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0103090100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Unary/Binary Operators</title>
+<filename>/text/smath/01/03090100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-10-26T16:49:09">converted from old format - fpe
+dedr: fixed #i30769#</lastedited>
+</history>
+</meta>
+<body>
+<section id="unaerbinaer">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150342"><bookmark_value>unary operators</bookmark_value>
+<bookmark_value>binary operators</bookmark_value>
+<bookmark_value>operators; unary and binary</bookmark_value>
+<bookmark_value>plus signs</bookmark_value>
+<bookmark_value>plus/minus signs</bookmark_value>
+<bookmark_value>minus/plus signs</bookmark_value>
+<bookmark_value>multiplication signs</bookmark_value>
+<bookmark_value>NOT operator</bookmark_value>
+<bookmark_value>AND operator</bookmark_value>
+<bookmark_value>logical operators</bookmark_value>
+<bookmark_value>Boolean operators</bookmark_value>
+<bookmark_value>OR operator</bookmark_value>
+<bookmark_value>concatenating math symbols</bookmark_value>
+<bookmark_value>addition signs</bookmark_value>
+<bookmark_value>subtraction signs</bookmark_value>
+<bookmark_value>minus signs</bookmark_value>
+<bookmark_value>slash division sign</bookmark_value>
+<bookmark_value>backslash division sign</bookmark_value>
+<bookmark_value>indexes; adding to formulas</bookmark_value>
+<bookmark_value>powers</bookmark_value>
+<bookmark_value>division signs</bookmark_value>
+<bookmark_value>user-defined operators;unary and binary</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_UNBINOPS_TBX" id="bm_id3150200" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_UNBINOPS_CAT" id="bm_id3149499" localize="false"/>
+<paragraph role="heading" id="hd_id3150342" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090100.xhp" name="Unary/Binary Operators">Unary/Binary Operators</link></paragraph>
+<paragraph role="paragraph" id="par_id3151241" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SMA_UNBINOPS_CAT">You can choose various unary and binary operators to build your $[officename] Math formula. Unary refers to operators that affect one placeholder. Binary refers to operators that connect two placeholders. The lower area of the Elements window displays the individual operators.</ahelp> The <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window also contains a list of these operators, as well as additional operators. If you need an operator that is not contained in the Elements window, use the context menu or type it directly in the <emph>Commands</emph> window.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/smath/00/00000004.xhp#astuop"/>
+</section>
+<paragraph role="paragraph" id="par_id3146963" xml-lang="en-US" l10n="U" oldref="3">The following is a complete list of the unary and binary operators. The symbol next to the operator indicates that it can be accessed through the Elements window (choose <emph>View - Elements</emph>) or through the context menu of the Commands window.</paragraph>
+<paragraph role="heading" id="hd_id3147405" xml-lang="en-US" level="3" l10n="U" oldref="4">Unary and Binary Operators</paragraph>
+<table id="tbl_id3150392" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10085" xml-lang="en-US" l10n="F">
+<image id="img_id3156399" src="starmath/res/un21201.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3156399" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_PLUSX" id="bm_id3157872" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154555" xml-lang="en-US" l10n="U" oldref="5">Plus</paragraph>
+<paragraph role="paragraph" id="par_id3153003" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="HID_SMA_PLUSX">Inserts a <emph>plus</emph> with one placeholder.</ahelp> You can also type <emph>+ &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3145244" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN100C1" xml-lang="en-US" l10n="F">
+<image id="img_id3148776" src="starmath/res/un21202.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3148776" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_MINUSX" id="bm_id3155374" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3155991" xml-lang="en-US" l10n="U" oldref="7">Minus</paragraph>
+<paragraph role="paragraph" id="par_id3153717" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="HID_SMA_MINUSX">Inserts a <emph>minus</emph> with one placeholder.</ahelp> You can also type <emph>-&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3151264" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN100FD" xml-lang="en-US" l10n="F">
+<image id="img_id3150757" src="starmath/res/un21203.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3150757" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_PLUSMINUSX" id="bm_id3153623" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153150" xml-lang="en-US" l10n="U" oldref="46">Plus/Minus</paragraph>
+<paragraph role="paragraph" id="par_id3150260" xml-lang="en-US" l10n="U" oldref="45"><ahelp hid="HID_SMA_PLUSMINUSX">Inserts a <emph>plus/minus</emph> with one placeholder.</ahelp> You can also type <emph>+-&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3151171" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10139" xml-lang="en-US" l10n="F">
+<image id="img_id3145410" src="starmath/res/un21204.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3145410" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_MINUSPLUSX" id="bm_id3153573" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153582" xml-lang="en-US" l10n="U" oldref="48">Minus/Plus</paragraph>
+<paragraph role="paragraph" id="par_id3154281" xml-lang="en-US" l10n="U" oldref="47"><ahelp hid="HID_SMA_MINUSPLUSX">Inserts a <emph>minus/plus</emph> with one placeholder.</ahelp> You can also type <emph>-+&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3154609" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10175" xml-lang="en-US" l10n="F">
+<image id="img_id3151098" src="starmath/res/un21205.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3151098" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XPLUSY" id="bm_id3154571" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153669" xml-lang="en-US" l10n="U" oldref="49">Addition (plus)</paragraph>
+<paragraph role="paragraph" id="par_id3150351" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_SMA_XPLUSY">Inserts a <emph>plus</emph> with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;+&lt;?&gt;</emph> in the Commands window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3151308" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN101B0" xml-lang="en-US" l10n="F">
+<image id="img_id3155898" src="starmath/res/un21206.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3155898" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XCDOTY" id="bm_id3149334" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149343" xml-lang="en-US" l10n="U" oldref="29">Multiplication (dot)</paragraph>
+<paragraph role="paragraph" id="par_id3154196" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="HID_SMA_XCDOTY">Inserts a dot operator with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;cdot&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3151332" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN101E9" xml-lang="en-US" l10n="F">
+<image id="img_id3149308" src="starmath/res/un21207.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3149308" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XTIMESY" id="bm_id3151248" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151257" xml-lang="en-US" l10n="U" oldref="19">Multiplication (x)</paragraph>
+<paragraph role="paragraph" id="par_id3149821" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="HID_SMA_XTIMESY">Inserts an 'x' <emph>multiplication</emph> with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;times&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3149797" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10226" xml-lang="en-US" l10n="F">
+<image id="img_id3148982" src="starmath/res/un21208.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3148982" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XSYMTIMESY" id="bm_id3159477" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3159486" xml-lang="en-US" l10n="U" oldref="11">Multiplication (*)</paragraph>
+<paragraph role="paragraph" id="par_id3149040" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_SMA_XSYMTIMESY">Inserts an asterisk multiplication sign with two placeholders. </ahelp> You can also type <emph>&lt;?&gt;*&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3152771" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1025F" xml-lang="en-US" l10n="F">
+<image id="img_id3155140" src="starmath/res/un21209.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3155140" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XMINUSY" id="bm_id3147078" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147124" xml-lang="en-US" l10n="U" oldref="9">Subtraction</paragraph>
+<paragraph role="paragraph" id="par_id3147136" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_SMA_XMINUSY">Inserts a subtraction sign with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;-&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150580" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10298" xml-lang="en-US" l10n="F">
+<image id="img_id3149168" src="starmath/res/un21210.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3149168" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XOVERY" id="bm_id3154916" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154926" xml-lang="en-US" l10n="U" oldref="17">Division (Fraction)</paragraph>
+<paragraph role="paragraph" id="par_id3155125" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_SMA_XOVERY">Inserts a fraction with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;over&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3147304" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN102D1" xml-lang="en-US" l10n="F">
+<image id="img_id3148765" src="starmath/res/un21211.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3148765" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XDIVY" id="bm_id3155910" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151377" xml-lang="en-US" l10n="U" oldref="13">Division</paragraph>
+<paragraph role="paragraph" id="par_id3149536" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="HID_SMA_XDIVY">Inserts a division sign with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;div&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150120" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1030A" xml-lang="en-US" l10n="F">
+<image id="img_id3147418" src="starmath/res/un21212.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3147418" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XSYMDIVIDEY" id="bm_id3147619" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147487" xml-lang="en-US" l10n="U" oldref="15">Division (Slash)</paragraph>
+<paragraph role="paragraph" id="par_id3147500" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_SMA_XSYMDIVIDEY">Inserts a slash '/' with two placeholders. </ahelp> You can also type <emph>&lt;?&gt;/&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3145257" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10343" xml-lang="en-US" l10n="F">
+<image id="img_id3149566" src="starmath/res/un21213.png" width="0.25inch" height="0.25inch"><alt id="alt_id3149566" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_NEGX" id="bm_id3150557" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153493" xml-lang="en-US" l10n="U" oldref="30">Boolean NOT</paragraph>
+<paragraph role="paragraph" id="par_id3153505" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="HID_SMA_NEGX">Inserts a <emph>Boolean NOT</emph> with one placeholder.</ahelp> You can also type <emph>neg&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3146327" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10383" xml-lang="en-US" l10n="F">
+<image id="img_id3147116" src="starmath/res/un21214.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3147116" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XANDY" id="bm_id3149837" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149847" xml-lang="en-US" l10n="U" oldref="21">Boolean AND</paragraph>
+<paragraph role="paragraph" id="par_id3147599" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_SMA_XANDY">Inserts a <emph>Boolean AND</emph> with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;and&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3155572" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN103C3" xml-lang="en-US" l10n="F">
+<image id="img_id3148440" src="starmath/res/un21215.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3148440" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XORY" id="bm_id3151077" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151086" xml-lang="en-US" l10n="U" oldref="23">Boolean OR</paragraph>
+<paragraph role="paragraph" id="par_id3154076" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="HID_SMA_XORY">Inserts a <emph>Boolean OR</emph> with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;or&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3154582" class="topalign">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10403" xml-lang="en-US" l10n="F">
+<image id="img_id3150173" src="starmath/res/un21221.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3150173" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XCIRCY" id="bm_id3151120" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151129" xml-lang="en-US" l10n="U" oldref="40">Concatenate</paragraph>
+<paragraph role="paragraph" id="par_id3156102" xml-lang="en-US" l10n="U" oldref="39"><ahelp hid="HID_SMA_XCIRCY">Inserts a <emph>concatenation sign</emph> with two placeholders. </ahelp> You can also type <emph>circ</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3150464" xml-lang="en-US" l10n="CHG" oldref="27">You can also insert user-defined unary operators by typing <emph>uoper</emph> in the <emph>Commands</emph> window, followed by the syntax for the character. This function is useful for incorporating special characters into a formula. For example, the command <emph>uoper %theta x</emph> produces a small Greek letter theta (a component of the <emph>$[officename] Math</emph> character set). You can also insert characters not in the $[officename] character set by choosing <emph>Tools - Catalog - Edit</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3154725" xml-lang="en-US" l10n="CHG" oldref="31"> You can also insert user-defined binary commands by typing <emph>boper</emph> into the <emph>Commands</emph> window. For example, the command <emph>y boper %theta x</emph> produces the small Greek letter theta preceded by a <emph>y</emph> and followed by an <emph>x</emph>. You can also insert characters not in the $[officename] character set by choosing <emph>Tools - Catalog - Edit</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3150906" xml-lang="en-US" l10n="U" oldref="32">By typing <emph>&lt;?&gt;oplus&lt;?&gt;</emph> in the <emph>Commands</emph> window, you insert a <emph>circled plus operator</emph> in your document.</paragraph>
+<paragraph role="paragraph" id="par_id3151197" xml-lang="en-US" l10n="U" oldref="33">Type <emph>&lt;?&gt;ominus&lt;?&gt;</emph> in the <emph>Commands</emph> window to insert a <emph>circled minus operator</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3155082" xml-lang="en-US" l10n="U" oldref="34">Type <emph>&lt;?&gt;odot&lt;?&gt;</emph> in the <emph>Commands</emph> window to insert a <emph>circled dot operator</emph> in the formula.</paragraph>
+<paragraph role="paragraph" id="par_id3154331" xml-lang="en-US" l10n="U" oldref="35">Type <emph>&lt;?&gt;odivide&lt;?&gt;</emph> in the <emph>Commands</emph> window to insert a <emph>circled division operator</emph> in the formula.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XWIDESLASHY" id="bm_id3150101" localize="false"/>
+<paragraph role="paragraph" id="par_id3150089" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="HID_SMA_XWIDESLASHY">Type <emph>a wideslash b</emph> in the <emph>Commands</emph> window to produce two characters with a slash (from lower left to upper right) between them.</ahelp> The characters are set such that everything to the left of the slash is up, and everything to the right is down. This command is also available in the context menu of the <emph>Commands</emph> window.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XWIDEBSLASHY" id="bm_id3150035" localize="false"/>
+<paragraph role="paragraph" id="par_id3150024" xml-lang="en-US" l10n="U" oldref="43"><ahelp hid="HID_SMA_XWIDEBSLASHY">Type <emph>a widebslash b</emph> in the <emph>Commands</emph> window to produce two characters with a slash (from upper left to lower right) between them.</ahelp> The characters are set such that everything to the left of the slash is down, and everything to the right is up. This command is also available in the context menu of the <emph>Commands</emph> window.</paragraph>
+<paragraph role="paragraph" id="par_id3149376" xml-lang="en-US" l10n="U" oldref="36">Type <emph>sub</emph> or <emph>sup</emph> in the Commands window to add indexes and powers to the characters in your formula; for example, a sub 2.</paragraph>
+<paragraph role="tip" id="par_id3155383" xml-lang="en-US" l10n="CHG" oldref="41">If you want to use a colon ':' as division sign, choose <emph>Tools - Catalog</emph> or click the <emph>Catalog</emph> icon on the Tools bar. Click the <emph>Edit</emph> button in the dialog that appears, then select the <emph>Special</emph> symbol set. Enter a meaningful name next to <emph>Symbol</emph>, for example, "divide" and then click the colon in the set of symbols. Click <emph>Add</emph> and then <emph>OK</emph>. Click <emph>OK</emph> to close the <emph>Symbols</emph> dialog,too. Now you can use the new symbol, in this case the colon, by entering its name in the Commands window, for example, <emph>a %divide b = c</emph>.</paragraph>
+<paragraph role="warning" id="par_id3147398" xml-lang="en-US" l10n="U" oldref="37">When entering information manually in the Commands window, please note that a number of operators require spaces between the elements for the correct structure. This is especially true if you are using values instead of placeholders in your operators, for example, to construct a division 4 div 3 or a div b.</paragraph>
+</body>
+</helpdocument>

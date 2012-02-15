@@ -1,0 +1,70 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_report_meta_XFunctionManager_idl__
+#define __com_sun_star_report_meta_XFunctionManager_idl__
+
+#include <com/sun/star/lang/XComponent.idl>
+#include <com/sun/star/container/XIndexAccess.idl>
+#include <com/sun/star/container/NoSuchElementException.idl>
+#include <com/sun/star/lang/DisposedException.idl>
+#include <com/sun/star/report/meta/XFunctionCategory.idl>
+#include <com/sun/star/report/meta/XFunctionDescription.idl>
+
+//=============================================================================
+module com {  module sun {  module star {  module report { module meta {
+/** identifies a <type>XFunctionManager</type> which allows to retrieve the meta data of all supported functions.
+
+*/
+published interface XFunctionManager
+{
+    /** allows life-time control of report engine.
+     */
+    interface com::sun::star::lang::XComponent;
+    /** gives access to all categories
+    */
+    interface com::sun::star::container::XIndexAccess;
+
+    /** same as getByIndex.
+        @param  position    The postion.
+        @see com.ssun.star.container.XIndexAccess
+    */
+    XFunctionCategory getCategory([in] long position)
+        raises( com::sun::star::lang::IndexOutOfBoundsException,
+                    com::sun::star::lang::WrappedTargetException );
+
+    /** get the function description by name
+        @param  name    the name of the function
+    */
+    XFunctionDescription getFunctionByName([in] string name)
+        raises( com::sun::star::container::NoSuchElementException);
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+/*=============================================================================
+
+=============================================================================*/
+
+#endif

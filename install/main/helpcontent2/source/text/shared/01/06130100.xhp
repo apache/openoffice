@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106130100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Change Password</title>
+<filename>/text/shared/01/06130100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-12-02T15:08:19">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_PASSWORD" id="bm_id3083278" localize="false"/>
+<paragraph role="heading" id="hd_id3153514" xml-lang="en-US" level="1" l10n="U" oldref="1">Change Password</paragraph>
+<paragraph role="paragraph" id="par_id3154545" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_PASSWORD">Protects the selected library with a password.</ahelp> You can enter a new password, or change the current password.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#passwort"/>
+</section>
+<paragraph role="heading" id="hd_id3145759" xml-lang="en-US" level="2" l10n="U" oldref="3">Old password</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:Edit:RID_SVXDLG_PASSWORD:ED_OLD_PASSWD" id="bm_id3152895" localize="false"/>
+<paragraph role="heading" id="hd_id3150603" xml-lang="en-US" level="3" l10n="U" oldref="4">Password</paragraph>
+<paragraph role="paragraph" id="par_id3144415" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="SVX:EDIT:RID_SVXDLG_PASSWORD:ED_OLD_PASSWD">Enter the current password for the selected library.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145160" xml-lang="en-US" level="2" l10n="U" oldref="6">New password</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:Edit:RID_SVXDLG_PASSWORD:ED_NEW_PASSWD" id="bm_id3144436" localize="false"/>
+<paragraph role="heading" id="hd_id3149525" xml-lang="en-US" level="3" l10n="U" oldref="7">Password</paragraph>
+<paragraph role="paragraph" id="par_id3159194" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX:EDIT:RID_SVXDLG_PASSWORD:ED_NEW_PASSWD">Enter a new password for the selected library.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:Edit:RID_SVXDLG_PASSWORD:ED_REPEAT_PASSWD" id="bm_id3156302" localize="false"/>
+<paragraph role="heading" id="hd_id3166445" xml-lang="en-US" level="3" l10n="U" oldref="9">Confirm</paragraph>
+<paragraph role="paragraph" id="par_id3153114" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX:EDIT:RID_SVXDLG_PASSWORD:ED_REPEAT_PASSWD">Reenter the new password for the selected library.</ahelp></paragraph>
+</body>
+</helpdocument>

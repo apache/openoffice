@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasedabawiz02ldapxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">LDAP Connection</title>
+<filename>/text/shared/explorer/database/dabawiz02ldap.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id22583"><bookmark_value>LDAP server; address books (Base)</bookmark_value>
+<bookmark_value>address books; LDAP server (Base)</bookmark_value>
+<bookmark_value>data sources; LDAP server (Base)</bookmark_value>
+</bookmark><comment>mw copied 3 entries from shared/explorer/database/11190000.xhp</comment>
+<paragraph role="heading" id="par_idN10554" xml-lang="en-US" level="1" l10n="NEW"><variable id="ldap"><link href="text/shared/explorer/database/dabawiz02ldap.xhp">LDAP Connection</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN10558" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the settings for importing a database using LDAP</ahelp> (<emph>Lightweight Directory Access Protocol)</emph>. This page is only available if you registered an LDAP server as an address database.<comment>UFI: copied text from shared\explorer\database\11190000</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_LDAP_HOSTNAME" id="bm_id3147275" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_LDAP_ET_HOSTSERVER" id="bm_id7872249" localize="false"/>
+<paragraph role="heading" id="par_idN10579" xml-lang="en-US" level="2" l10n="NEW">Server URL</paragraph>
+<paragraph role="paragraph" id="par_idN1057D" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_LDAP_HOSTNAME">Enter the name of the LDAP server using the format "ldap.server.com".</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_LDAP_BASEDN" id="bm_id3145315" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_LDAP_ET_BASEDN" id="bm_id7593920" localize="false"/>
+<paragraph role="heading" id="par_idN10594" xml-lang="en-US" level="2" l10n="NEW">Base DN</paragraph>
+<paragraph role="paragraph" id="par_idN10598" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_LDAP_BASEDN">Enter the starting point to search the LDAP database, for example, "dc=com".</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_LDAP_PORTNUMBER" id="bm_id3155341" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_LDAP_ET_PORTNUMBER" id="bm_id5359660" localize="false"/>
+<paragraph role="heading" id="par_idN105B7" xml-lang="en-US" level="2" l10n="NEW">Port number</paragraph>
+<paragraph role="paragraph" id="par_idN105BB" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_LDAP_PORTNUMBER">Enter the port of the LDAP server, normally 389.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_LDAP_CB_USESSL" id="bm_id9989623" localize="false"/>
+<paragraph role="heading" id="par_idN105CA" xml-lang="en-US" level="3" l10n="NEW">Use secure connection (SSL)</paragraph>
+<paragraph role="paragraph" id="par_idN105CE" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_USESSL_LDAP">Creates a secure connection to the LDAP server through the Secure Sockets Layer (SSL).</ahelp> By default, an SSL connection uses port 636. A regular connection uses port 389.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_idN105DE" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz03auth.xhp">Authentication</link></paragraph>
+<paragraph role="paragraph" id="par_idN105F5" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link></paragraph>
+</section>
+</body>
+</helpdocument>

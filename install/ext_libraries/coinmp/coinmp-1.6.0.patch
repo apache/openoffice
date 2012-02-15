@@ -1,0 +1,192 @@
+--- misc/CoinMP-1.6.0/Cbc/src/CbcEventHandler.hpp.orig	2007-08-10 12:18:20.000000000 -0400
++++ misc/build/CoinMP-1.6.0/Cbc/src/CbcEventHandler.hpp	2011-07-29 06:16:23.000000000 -0400
+@@ -43,6 +43,7 @@
+ */
+ 
+ #include <map>
++#include <cstddef>
+ 
+ /* May well already be declared, but can't hurt. */
+ 
+--- misc/CoinMP-1.6.0/Cbc/src/CbcSolver.cpp.orig	2011-12-23 10:36:33.000000000 -0500
++++ misc/build/CoinMP-1.6.0/Cbc/src/CbcSolver.cpp	2011-12-23 10:41:57.000000000 -0500
+@@ -1665,10 +1665,6 @@
+ 	    }
+ 	    sprintf(generalPrint + strlen(generalPrint),
+ 		    "Build Date: %s \n", __DATE__);
+-#ifdef CBC_SVN_REV
+-	    sprintf(generalPrint + strlen(generalPrint),
+-		    "Revision Number: %d \n", CBC_SVN_REV);
+-#endif
+             generalMessageHandler->message(CLP_GENERAL, generalMessages)
+             << generalPrint
+             << CoinMessageEol;
+
+--- misc/CoinMP-1.6.0/Cbc/ltmain.sh	2010-06-14 02:52:10.000000000 +0900
++++ misc/build/CoinMP-1.6.0/Cbc/ltmain.sh	2012-02-14 12:43:54.000000000 +0900
+@@ -3186,12 +3186,12 @@
+ 	  # which has an extra 1 added just for fun
+ 	  #
+ 	  case $version_type in
+-	  darwin|linux|osf|windows)
++	  darwin|linux|osf|windows|freebsd-elf)
+ 	    current=`expr $number_major + $number_minor`
+ 	    age="$number_minor"
+ 	    revision="$number_revision"
+ 	    ;;
+-	  freebsd-aout|freebsd-elf|sunos)
++	  freebsd-aout|sunos)
+ 	    current="$number_major"
+ 	    revision="$number_minor"
+ 	    age="0"
+@@ -3267,8 +3267,8 @@
+ 	  ;;
+ 
+ 	freebsd-elf)
+-	  major=".$current"
+-	  versuffix=".$current";
++	  major=.`expr $current - $age`
++	  versuffix="$major"
+ 	  ;;
+ 
+ 	irix | nonstopux)
+--- misc/CoinMP-1.6.0/Cgl/ltmain.sh	2010-06-14 02:52:57.000000000 +0900
++++ misc/build/CoinMP-1.6.0/Cgl/ltmain.sh	2012-02-14 12:47:44.000000000 +0900
+@@ -3186,12 +3186,12 @@
+ 	  # which has an extra 1 added just for fun
+ 	  #
+ 	  case $version_type in
+-	  darwin|linux|osf|windows)
++	  darwin|linux|osf|windows|freebsd-elf)
+ 	    current=`expr $number_major + $number_minor`
+ 	    age="$number_minor"
+ 	    revision="$number_revision"
+ 	    ;;
+-	  freebsd-aout|freebsd-elf|sunos)
++	  freebsd-aout|sunos)
+ 	    current="$number_major"
+ 	    revision="$number_minor"
+ 	    age="0"
+@@ -3267,8 +3267,8 @@
+ 	  ;;
+ 
+ 	freebsd-elf)
+-	  major=".$current"
+-	  versuffix=".$current";
++	  major=.`expr $current - $age`
++	  versuffix="$major"
+ 	  ;;
+ 
+ 	irix | nonstopux)
+--- misc/CoinMP-1.6.0/Clp/ltmain.sh	2010-06-14 02:53:25.000000000 +0900
++++ misc/build/CoinMP-1.6.0/Clp/ltmain.sh	2012-02-14 12:47:52.000000000 +0900
+@@ -3186,12 +3186,12 @@
+ 	  # which has an extra 1 added just for fun
+ 	  #
+ 	  case $version_type in
+-	  darwin|linux|osf|windows)
++	  darwin|linux|osf|windows|freebsd-elf)
+ 	    current=`expr $number_major + $number_minor`
+ 	    age="$number_minor"
+ 	    revision="$number_revision"
+ 	    ;;
+-	  freebsd-aout|freebsd-elf|sunos)
++	  freebsd-aout|sunos)
+ 	    current="$number_major"
+ 	    revision="$number_minor"
+ 	    age="0"
+@@ -3267,8 +3267,8 @@
+ 	  ;;
+ 
+ 	freebsd-elf)
+-	  major=".$current"
+-	  versuffix=".$current";
++	  major=.`expr $current - $age`
++	  versuffix="$major"
+ 	  ;;
+ 
+ 	irix | nonstopux)
+--- misc/CoinMP-1.6.0/CoinMP/ltmain.sh	2011-08-08 00:09:46.000000000 +0900
++++ misc/build/CoinMP-1.6.0/CoinMP/ltmain.sh	2012-02-14 12:48:03.000000000 +0900
+@@ -3186,12 +3186,12 @@
+ 	  # which has an extra 1 added just for fun
+ 	  #
+ 	  case $version_type in
+-	  darwin|linux|osf|windows)
++	  darwin|linux|osf|windows|freebsd-elf)
+ 	    current=`expr $number_major + $number_minor`
+ 	    age="$number_minor"
+ 	    revision="$number_revision"
+ 	    ;;
+-	  freebsd-aout|freebsd-elf|sunos)
++	  freebsd-aout|sunos)
+ 	    current="$number_major"
+ 	    revision="$number_minor"
+ 	    age="0"
+@@ -3267,8 +3267,8 @@
+ 	  ;;
+ 
+ 	freebsd-elf)
+-	  major=".$current"
+-	  versuffix=".$current";
++	  major=.`expr $current - $age`
++	  versuffix="$major"
+ 	  ;;
+ 
+ 	irix | nonstopux)
+--- misc/CoinMP-1.6.0/CoinUtils/ltmain.sh	2010-06-14 02:53:51.000000000 +0900
++++ misc/build/CoinMP-1.6.0/CoinUtils/ltmain.sh	2012-02-14 12:48:08.000000000 +0900
+@@ -3186,12 +3186,12 @@
+ 	  # which has an extra 1 added just for fun
+ 	  #
+ 	  case $version_type in
+-	  darwin|linux|osf|windows)
++	  darwin|linux|osf|windows|freebsd-elf)
+ 	    current=`expr $number_major + $number_minor`
+ 	    age="$number_minor"
+ 	    revision="$number_revision"
+ 	    ;;
+-	  freebsd-aout|freebsd-elf|sunos)
++	  freebsd-aout|sunos)
+ 	    current="$number_major"
+ 	    revision="$number_minor"
+ 	    age="0"
+@@ -3267,8 +3267,8 @@
+ 	  ;;
+ 
+ 	freebsd-elf)
+-	  major=".$current"
+-	  versuffix=".$current";
++	  major=.`expr $current - $age`
++	  versuffix="$major"
+ 	  ;;
+ 
+ 	irix | nonstopux)
+--- misc/CoinMP-1.6.0/Osi/ltmain.sh	2010-06-14 02:59:18.000000000 +0900
++++ misc/build/CoinMP-1.6.0/Osi/ltmain.sh	2012-02-14 12:48:24.000000000 +0900
+@@ -3186,12 +3186,12 @@
+ 	  # which has an extra 1 added just for fun
+ 	  #
+ 	  case $version_type in
+-	  darwin|linux|osf|windows)
++	  darwin|linux|osf|windows|freebsd-elf)
+ 	    current=`expr $number_major + $number_minor`
+ 	    age="$number_minor"
+ 	    revision="$number_revision"
+ 	    ;;
+-	  freebsd-aout|freebsd-elf|sunos)
++	  freebsd-aout|sunos)
+ 	    current="$number_major"
+ 	    revision="$number_minor"
+ 	    age="0"
+@@ -3267,8 +3267,8 @@
+ 	  ;;
+ 
+ 	freebsd-elf)
+-	  major=".$current"
+-	  versuffix=".$current";
++	  major=.`expr $current - $age`
++	  versuffix="$major"
+ 	  ;;
+ 
+ 	irix | nonstopux)

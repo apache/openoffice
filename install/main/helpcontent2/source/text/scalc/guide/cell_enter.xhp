@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguidecell_enterxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Entering Values</title>
+         <filename>/text/scalc/guide/cell_enter.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150868"><bookmark_value>values; inserting in multiple cells</bookmark_value>
+      <bookmark_value>inserting;values</bookmark_value>
+      <bookmark_value>cell ranges;selecting for data entries</bookmark_value>
+      <bookmark_value>areas, see also cell ranges</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3405255" role="heading" level="1" l10n="NEW"><variable id="cell_enter"><link href="text/scalc/guide/cell_enter.xhp">Entering Values</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id7147129" role="paragraph" l10n="NEW">Calc can simplify entering data and values into multiple cells. You can change some settings to conform to your preferences.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id5621509" role="heading" level="2" l10n="NEW">To Enter Values Into a Range of Cells Manually</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8200018" role="paragraph" l10n="NEW">There are two features that assist you when you enter a block of data manually.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id1867427" role="heading" level="3" l10n="NEW">Area Detection for New Rows</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7908871" role="paragraph" l10n="NEW">In the row below a heading row, you can advance from one cell to the next with the Tab key. After you enter the value into the last cell in the current row, press Enter. Calc positions the cursor below the first cell of the current block.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6196783" role="paragraph" l10n="NEW">
+<image id="img_id6473586" src="res/helpimg/area1.png" width="4.8335in" height="1.5937in"><alt xml-lang="en-US" id="alt_id6473586">area detection</alt>
+	</image></paragraph>
+      <paragraph xml-lang="en-US" id="par_id8118839" role="paragraph" l10n="NEW">In row 3, press Tab to advance from cell B3 to C3, D3, and E3. Then press Enter to advance to B4.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3583788" role="heading" level="3" l10n="NEW">Area Selection</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2011780" role="paragraph" l10n="NEW">Use drag-and-drop to select the area where you want to input values. But start dragging from the last cell of the area and release the mouse button when you have selected the first cell. Now you can start to input values. Always press the Tab key to advance to the next cell. You will not leave the selected area.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7044282" role="paragraph" l10n="NEW">
+<image id="img_id2811365" src="res/helpimg/area2.png" width="4.8335in" height="1.5937in"><alt xml-lang="en-US" id="alt_id2811365">area selection</alt>
+	</image></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3232520" role="paragraph" l10n="NEW">Select the area from E7 to B3. Now B3 is waiting for your input. Press Tab to advance to the next cell within the selected area.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id8950163" role="heading" level="2" l10n="NEW">To Enter Values to a Range of Cells Automatically</paragraph>
+      <paragraph xml-lang="en-US" id="par_id633869" role="paragraph" l10n="NEW">See <link href="text/scalc/guide/calc_series.xhp">Automatically Filling in Data Based on Adjacent Cells</link>.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/formula_enter.xhp#formula_enter"/>
+         <embed href="text/scalc/guide/multitables.xhp#multitables"/>
+         <embed href="text/scalc/guide/multi_tables.xhp#multi_tables"/>
+      </section>
+   </body>
+</helpdocument>

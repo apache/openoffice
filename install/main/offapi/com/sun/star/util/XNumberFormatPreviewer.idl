@@ -1,0 +1,133 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_util_XNumberFormatPreviewer_idl__ 
+#define __com_sun_star_util_XNumberFormatPreviewer_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_util_Color_idl__
+#include <com/sun/star/util/Color.idl>
+#endif
+
+#ifndef __com_sun_star_lang_Locale_idl__ 
+#include <com/sun/star/lang/Locale.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_util_MalformedNumberFormatException_idl__ 
+#include <com/sun/star/util/MalformedNumberFormatException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_util_Color_idl__ 
+#include <com/sun/star/util/Color.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module util {  
+ 
+//============================================================================= 
+ 
+/** represents a number formatter which can preview number 
+	formats without inserting them.
+
+	@see NumberFormatter
+ */
+published interface XNumberFormatPreviewer: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** formats a value using a format string, without inserting a
+		number format into the list.
+
+		@param aFormat
+			is the format string that is used for formatting.
+
+		@param fValue
+			is the value that is formatted.
+
+		@param nLocale
+			is the locale that is used to interpret the format string.
+
+		@param bAllowEnglish
+			specifies if English language number format strings are accepted
+			in addition to those from the selected locale.
+
+		@returns 
+			the formatted string.
+
+        @throws com::sun::star::util::MalformedNumberFormatException
+        	if the format string is invalid.
+
+	 */
+	string convertNumberToPreviewString( [in] string aFormat, 
+			 [in] double fValue, 
+			 [in] com::sun::star::lang::Locale nLocale, 
+			 [in] boolean bAllowEnglish ) 
+			raises( com::sun::star::util::MalformedNumberFormatException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the color which is to be used for a number.
+
+		@param aFormat
+			is the format string that is used for formatting.
+
+		@param fValue
+			is the value that is formatted.
+
+		@param nLocale
+			is the locale that is used to interpret the format string.
+
+		@param bAllowEnglish
+			specifies if English language number format strings are accepted
+			in addition to those from the selected locale.
+
+		@param aDefaultColor
+			is the color that should be returned if no color is set by
+			the number format.
+
+		@returns 
+			the color that should used to output the formatted string.
+
+        @throws com::sun::star::util::MalformedNumberFormatException
+        	if the format string is invalid.
+
+	 */
+	com::sun::star::util::Color queryPreviewColorForNumber( [in] string aFormat, 
+			 [in] double fValue, 
+			 [in] com::sun::star::lang::Locale nLocale, 
+			 [in] boolean bAllowEnglish, 
+			 [in] com::sun::star::util::Color aDefaultColor ) 
+			raises( com::sun::star::util::MalformedNumberFormatException ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif
+

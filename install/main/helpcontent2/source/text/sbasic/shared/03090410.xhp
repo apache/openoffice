@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090410xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Switch Function [Runtime]</title>
+<filename>/text/sbasic/shared/03090410.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T14:34:49">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="switch">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148554"><bookmark_value>Switch function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3148554" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090410.xhp" name="Switch Function [Runtime]">Switch Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148522" xml-lang="en-US" l10n="U" oldref="2">Evaluates a list of arguments, consisting of an expression followed by a value. The Switch function returns a value that is associated with the expression that is passed by this function.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3154863" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3155934" xml-lang="en-US" l10n="U" oldref="4">Switch (Expression1, Value1[, Expression2, Value2[..., Expression_n, Value_n]])</paragraph>
+<paragraph role="heading" id="hd_id3149119" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153894" xml-lang="en-US" l10n="U" oldref="6">The <emph>Switch</emph> function evaluates the expressions from left to right, and then returns the value that is assigned to the function expression. If expression and value are not given as a pair, a runtime error occurs.</paragraph>
+<paragraph role="paragraph" id="par_id3153990" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Expression:</emph> The expression that you want to evaluate.</paragraph>
+<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Value:</emph> The value that you want to return if the expression is True.</paragraph>
+<paragraph role="paragraph" id="par_id3153346" xml-lang="en-US" l10n="U" oldref="9">In the following example, the <emph>Switch</emph> function assigns the appropriate gender to the name that is passed to the function:</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3159157" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleSwitch</paragraph>
+<paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="U" oldref="12">Dim sGender As String</paragraph>
+<paragraph role="paragraph" id="par_id3149579" xml-lang="en-US" l10n="U" oldref="13">sGender = GetGenderIndex( "John" )</paragraph>
+<paragraph role="paragraph" id="par_id3153626" xml-lang="en-US" l10n="U" oldref="14">MsgBox sGender</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="15">End Sub</paragraph>
+<paragraph role="paragraph" id="par_id3154758" xml-lang="en-US" l10n="U" oldref="17">Function GetGenderIndex (sName As String) As String</paragraph>
+<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="U" oldref="18">GetGenderIndex = Switch(sName = "Jane", "female", sName = "John", "male")</paragraph>
+<paragraph role="paragraph" id="par_id3154939" xml-lang="en-US" l10n="U" oldref="19">End Function</paragraph>
+</body>
+</helpdocument>

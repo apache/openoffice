@@ -1,0 +1,67 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef com_sun_star_chart_ChartLegendExpansion_idl
+#define com_sun_star_chart_ChartLegendExpansion_idl
+
+module com
+{
+module sun
+{
+module star
+{
+module chart
+{
+
+/** Specifies sizing aspects of the legend
+ */
+enum ChartLegendExpansion
+{
+    /** The legend entries are arranged in a single row if possible. If not enough space is available further rows are added.
+
+        <p>This is usually used for legends that are displayed at the
+        top or bottom of the page.</p>
+     */
+    WIDE,
+
+    /** The legend entries are stacked in a single column if possible. If not enough space is available further columns are added.
+
+        <p>This is usually used for legends that are displayed on the
+        left or right hand side of the page.</p>
+     */
+    HIGH,
+
+    /** The legend entries are arranged in a way that the aspect ratio of the resulting legend is as near to 1 as possible.
+     */
+    BALANCED,
+
+    /** The size of the legend is given explicitly
+     */
+    CUSTOM
+};
+
+} ; // chart
+} ; // com
+} ; // sun
+} ; // star
+
+#endif

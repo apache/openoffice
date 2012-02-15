@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0103170000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Color Bar</title>
+<filename>/text/shared/01/03170000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-09-13T11:24:23">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="farbleiste">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147477"><bookmark_value>color bar</bookmark_value>
+<bookmark_value>paint box</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ColorControl" id="bm_id8369955" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ColorControl" id="bm_id3156045" localize="false"/>
+<paragraph role="heading" id="hd_id3147477" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/03170000.xhp" name="Color Bar">Color Bar</link></paragraph>
+<paragraph role="paragraph" id="par_id3153255" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:ColorControl">Show or hides the <emph>Color Bar</emph>. To modify or change the color table that is displayed, choose <emph>Format - Area</emph>, and then click on the <emph>Colors</emph> tab.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000403.xhp#farbleiste"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_COLOR_CTL_COLORS" id="bm_id3151234" localize="false"/>
+<paragraph role="paragraph" id="par_id3154186" xml-lang="en-US" l10n="U" oldref="3"><ahelp hid="HID_COLOR_CTL_COLORS">Click the color that you want to use. To change the fill color of an object in the current file, select the object and then click a color. To change the line color of the selected object, right-click a color. To change the color of text in a text object, double-click the text-object, select the text, and then click a color.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3147399" xml-lang="en-US" l10n="U" oldref="9">You can also drag a color from the <emph>Color Bar</emph> and drop it on a draw object on your slide.</paragraph>
+<paragraph role="tip" id="par_id3147009" xml-lang="en-US" l10n="U" oldref="7">To detach the <emph>Color Bar</emph>, click on a gray area of the toolbar and then drag. To reattach the <emph>Color Bar</emph>, drag the title bar of the toolbar to the edge of the window.</paragraph>
+</body>
+</helpdocument>

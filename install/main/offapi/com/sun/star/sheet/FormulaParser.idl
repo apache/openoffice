@@ -1,0 +1,114 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_FormulaParser_idl__
+#define __com_sun_star_sheet_FormulaParser_idl__
+
+#ifndef __com_sun_star_beans_PropertySet_idl__
+#include <com/sun/star/beans/PropertySet.idl>
+#endif
+#ifndef __com_sun_star_sheet_XFormulaParser_idl__
+#include <com/sun/star/sheet/XFormulaParser.idl>
+#endif
+#ifndef __com_sun_star_sheet_FormulaOpCodeMapEntry_idl__
+#include <com/sun/star/sheet/FormulaOpCodeMapEntry.idl>
+#endif
+#ifndef __com_sun_star_sheet_ExternalLinkInfo_idl__
+#include <com/sun/star/sheet/ExternalLinkInfo.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+service FormulaParser
+{
+    // ------------------------------------------------------------------------
+
+    service com::sun::star::beans::PropertySet;
+
+    // ------------------------------------------------------------------------
+
+    interface XFormulaParser;
+
+    // ------------------------------------------------------------------------
+
+    /** specifies whether to use English parser and formatter.
+
+        <p>Note: When changing this, an already existing <member>OpCodeMap
+        </member> needs to be recreated internally, so for performance reasons
+        set this <em>before</em> setting the <member>OpCodeMap</member>.
+     */
+    [property] boolean CompileEnglish;
+
+    // ------------------------------------------------------------------------
+
+    /** specifies which address reference style convention to use when
+        parsing a formula string.
+
+        @see AddressConvention
+      */
+    [property] short FormulaConvention;
+
+    // ------------------------------------------------------------------------
+
+    [property] boolean IgnoreLeadingSpaces;
+
+    // ------------------------------------------------------------------------
+
+    [property] string ParameterSeparator;
+
+    // ------------------------------------------------------------------------
+
+    /** contains the complete mapping of names to op-codes.
+
+        <p>Names and symbols not defined here lead to a parser/print error.</p>
+     */
+    [property] sequence< FormulaOpCodeMapEntry > OpCodeMap;
+
+    // ------------------------------------------------------------------------
+
+    /** contains a list of external links referenced in formulas.
+
+        <p>Use of this property depends on the <member>FormulaConvention
+        </member> in use. It is relevant only for <const>
+        AddressConvention::XL_OOX</const> to map indices to external
+        documents. The sequence must be in the order of indices used. Note
+        that indices are 1-based, the sequence must start with an empty
+        element.</p>
+
+        @since OOo 3.1
+     */
+    [property] sequence< ExternalLinkInfo > ExternalLinks;
+
+    // ------------------------------------------------------------------------
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

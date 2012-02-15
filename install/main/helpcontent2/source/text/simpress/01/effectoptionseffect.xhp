@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress01effectoptionseffectxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Effect</title>
+<filename>/text/simpress/01/effectoptionseffect.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10682" xml-lang="en-US" level="1" l10n="NEW"><variable id="effect"><link href="text/simpress/01/effectoptionseffect.xhp">Effect</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN106A0" xml-lang="en-US" l10n="NEW">Specifies the settings and enhancements for the current effect in the <link href="text/simpress/01/effectoptions.xhp">Effect Options</link> dialog.</paragraph>
+<paragraph role="heading" id="par_idN106B1" xml-lang="en-US" level="2" l10n="NEW">Settings</paragraph>
+<paragraph role="paragraph" id="par_idN106B5" xml-lang="en-US" l10n="NEW">For some effects, the settings can be specified on the <emph>Effect</emph> tab page.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_CUSTOMANIMATIONPANE_PRESETPROPERTYBOX" id="bm_id3438825" localize="false"/><paragraph role="heading" id="hd_id950041" xml-lang="en-US" level="3" l10n="NEW">Direction</paragraph>
+<paragraph role="paragraph" id="par_id2195196" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the direction for the effect.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_TP_CUSTOMANIMATION_EFFECT:CB_SMOOTH_START" id="bm_id9050263" localize="false"/><paragraph role="heading" id="hd_id8484756" xml-lang="en-US" level="4" l10n="NEW">Accelerated start</paragraph>
+<paragraph role="paragraph" id="par_id5049287" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enable this option to assign a gradually increasing speed to the start of the effect.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_TP_CUSTOMANIMATION_EFFECT:CB_SMOOTH_END" id="bm_id4501785" localize="false"/><paragraph role="heading" id="hd_id7056794" xml-lang="en-US" level="4" l10n="NEW">Decelerated end</paragraph>
+<paragraph role="paragraph" id="par_id1145359" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enable this option to assign a gradually decreasing speed to the end of the effect.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10707" xml-lang="en-US" level="2" l10n="NEW">Enhancements</paragraph>
+<paragraph role="paragraph" id="par_idN1070B" xml-lang="en-US" l10n="NEW">Specifies the enhancements for the current effect.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_TP_CUSTOMANIMATION_EFFECT:LB_SOUND" id="bm_id1584215" localize="false"/><paragraph role="heading" id="par_idN1070E" xml-lang="en-US" level="3" l10n="NEW">Sound</paragraph>
+<paragraph role="paragraph" id="par_idN10712" xml-lang="en-US" l10n="NEW"><ahelp hid="878824971">Select a sound from the Gallery or select one of the special entries.</ahelp></paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10718" xml-lang="en-US" l10n="NEW">
+<emph>No sound</emph> - no sound is played during animation of the effect.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1071F" xml-lang="en-US" l10n="NEW">
+<emph>Stop previous sound</emph> - the sound of the previous effect is stopped as soon as the current effect runs.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10726" xml-lang="en-US" l10n="NEW">
+<emph>Other sound</emph> - displays a file open dialog to select a sound file.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/sd:PushButton:RID_TP_CUSTOMANIMATION_EFFECT:PB_SOUND_PREVIEW" id="bm_id2927640" localize="false"/><paragraph role="heading" id="par_idN1072C" xml-lang="en-US" level="3" l10n="NEW">Sound button</paragraph>
+<paragraph role="paragraph" id="par_idN10730" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Plays the selected sound file.</ahelp></paragraph>
+<!-- removed HID 878824973 -->
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_TP_CUSTOMANIMATION_EFFECT:LB_AFTER_EFFECT" id="bm_id6066164" localize="false"/><paragraph role="heading" id="par_idN10733" xml-lang="en-US" level="3" l10n="NEW">After animation</paragraph>
+<paragraph role="paragraph" id="par_idN10737" xml-lang="en-US" l10n="NEW"><ahelp hid="878824973">Select a color to be shown after the animation ends, or select another after-effect from the list</ahelp>:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10752" xml-lang="en-US" l10n="CHG">
+<emph>Dim with color</emph> - after the animation a dim color fills the shape.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1073D" xml-lang="en-US" l10n="NEW">
+<emph>Don't dim</emph> - no after-effect runs.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10744" xml-lang="en-US" l10n="NEW">
+<emph>Hide after animation</emph> - hides the shape after the animation ends.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1074B" xml-lang="en-US" l10n="CHG">
+<emph>Hide on next animation</emph> - hides the shape on the next animation.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_TP_CUSTOMANIMATION_EFFECT:CLB_DIMCOLOR" id="bm_id5983153" localize="false"/><paragraph role="heading" id="par_idN10865" xml-lang="en-US" level="3" l10n="NEW">Dim color</paragraph>
+<paragraph role="paragraph" id="par_idN1087B" xml-lang="en-US" l10n="NEW"><ahelp hid="878824975">Select the dim color.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_TP_CUSTOMANIMATION_EFFECT:LB_TEXT_ANIM" id="bm_id2982879" localize="false"/><paragraph role="heading" id="par_idN10758" xml-lang="en-US" level="3" l10n="NEW">Text animation</paragraph>
+<paragraph role="paragraph" id="par_idN1075C" xml-lang="en-US" l10n="NEW"><ahelp hid="878824977">Select the animation mode for the text of the current shape</ahelp>:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10762" xml-lang="en-US" l10n="NEW">
+<emph>All at once</emph> - animates the text all at once.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10769" xml-lang="en-US" l10n="NEW">
+<emph>Word by word</emph> - animates the text word by word.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10770" xml-lang="en-US" l10n="NEW">
+<emph>Letter by letter</emph> - animates the text letter by letter.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:RID_TP_CUSTOMANIMATION_EFFECT:MF_TEXT_DELAY" id="bm_id2306588" localize="false"/><paragraph role="heading" id="par_idN10776" xml-lang="en-US" level="4" l10n="NEW">Delay between characters</paragraph>
+<paragraph role="paragraph" id="par_idN1077A" xml-lang="en-US" l10n="NEW"><ahelp hid="878828050">Specifies the percentage of delay between animations of words or letters.</ahelp></paragraph>
+</body>
+</helpdocument>

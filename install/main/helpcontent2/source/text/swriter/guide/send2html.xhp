@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidesend2htmlxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Saving Text Documents in HTML Format</title>
+         <filename>/text/swriter/guide/send2html.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145087"><bookmark_value>text documents; publishing in HTML</bookmark_value>
+      <bookmark_value>HTML documents; creating from text documents</bookmark_value>
+      <bookmark_value>homepage creation</bookmark_value>
+      <bookmark_value>saving;in HTML format</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3145087" role="heading" level="1" l10n="U" oldref="1"><variable id="send2html"><link href="text/swriter/guide/send2html.xhp" name="Saving Text Documents in HTML Format">Saving Text Documents in HTML Format</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149825" role="paragraph" l10n="U" oldref="2">You can save a $[officename] Writer document in HTML format, so that you can view it in a web browser. If you want, you can associate a page break with a specific heading paragraph style to generate a separate HTML page each time the style appears in the document. $[officename] Writer automatically creates a page containing hyperlinks to each of these pages.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155922" role="paragraph" l10n="U" oldref="3">When you save a text document in HTML format, any graphics in the document are saved in JPEG format. The name of the HTML document is added as a prefix to the name of the graphic file. The JPEG images are saved in the same folder as the HTML document and are referenced with &lt;IMG&gt; tags in the HTML code.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155868" role="listitem" l10n="U" oldref="5">Apply one of the default $[officename] heading paragraph styles, for example, "Heading 1", to the paragraphs where you want to generate a new HTML page.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156100" role="listitem" l10n="U" oldref="6">Choose <emph>File - Send - Create HTML Document</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149281" role="listitem" l10n="U" oldref="7">In the <item type="menuitem">Styles</item>
+               <emph/>box, select the paragraph style that you want to use to generate a new HTML page.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153407" role="listitem" l10n="U" oldref="9">Enter a path and a name for the HTML document, and then click <emph>Save</emph>.</paragraph>
+         </listitem>
+      </list>
+   </body>
+</helpdocument>

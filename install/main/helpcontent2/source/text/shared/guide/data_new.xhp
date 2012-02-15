@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedata_newxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating a New Database</title>
+<filename>/text/shared/guide/data_new.xhp</filename>
+</topic>
+<history>
+<created date="2004-08-19T12:52:56">create a new database</created>
+<lastedited date="2007-03-02T11:12:19">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id6911526"><bookmark_value>databases;creating</bookmark_value>
+<bookmark_value>new databases</bookmark_value>
+</bookmark><comment>mw deleted "creating;"</comment>
+<paragraph role="heading" id="par_idN105A3" xml-lang="en-US" level="1" l10n="NEW"><variable id="data_new"><link href="text/shared/guide/data_new.xhp">Creating a New Database</link>
+</variable></paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN105C4" xml-lang="en-US" l10n="NEW">Choose <emph>File - New - Database</emph>.</paragraph>
+<paragraph role="paragraph" id="par_idN105CB" xml-lang="en-US" l10n="NEW">This opens the <link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link>, where you create a new database file.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN105DD" xml-lang="en-US" l10n="NEW">In the Database Wizard, select the type of database, and select the option to open the Table Wizard as the next wizard.</paragraph>
+<paragraph role="paragraph" id="par_idN105E0" xml-lang="en-US" l10n="NEW">The <link href="text/shared/explorer/database/tablewizard00.xhp">Table Wizard</link> helps you to add a table to the new database file.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_idN105FC" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/explorer/database/main.xhp#base"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN10604" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/database_main.xhp#database_main"/>
+</paragraph>
+</section>
+</body>
+</helpdocument>

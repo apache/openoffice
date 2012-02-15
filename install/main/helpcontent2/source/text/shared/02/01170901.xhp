@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0201170901xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Combo Box / List Box Wizard: Table Selection</title>
+<filename>/text/shared/02/01170901.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-05-03T12:08:50">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="seite1">
+<paragraph role="heading" id="hd_id3154228" xml-lang="en-US" level="1" l10n="U" oldref="4"><link href="text/shared/02/01170901.xhp" name="Combo Box / List Box Wizard: Table Selection">Combo Box / List Box Wizard: Table Selection</link></paragraph>
+<paragraph role="paragraph" id="par_id3149716" xml-lang="en-US" l10n="U" oldref="5">Specifies a table from the available database tables that contains the data field whose content should be displayed as a list entry.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00040501.xhp#aupikomli1"/>
+</section>
+<paragraph role="paragraph" id="par_id3153114" xml-lang="en-US" l10n="U" oldref="8">For list boxes, a table that can be linked with the current form table is indicated. The link table must have at least one field in common with the table of the current form. This makes it possible to establish an unambiguous reference.</paragraph>
+<paragraph role="paragraph" id="par_id3155555" xml-lang="en-US" l10n="U" oldref="9">For combo boxes, there must be a relationship between the form table and the table containing the data to be displayed in the combo box.</paragraph>
+<!-- removed HID DBP_LISTBOX_RID_PAGE_LCW_CONTENTSELECTION_TABLE_LB_SELECTTABLE -->
+<paragraph role="heading" id="hd_id3147226" xml-lang="en-US" level="2" l10n="U" oldref="6">Table</paragraph>
+<paragraph role="paragraph" id="par_id3155338" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="DBP_LISTBOX_RID_PAGE_LCW_CONTENTSELECTION_TABLE_LB_SELECTTABLE">In the<emph> Table </emph>field, select the table containing the data field whose content should be displayed in the control field.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="10">The table given here appears in the <link href="text/shared/02/01170102.xhp" name="Control properties">Control properties</link> as an element of an SQL statement in the <emph>List Contents</emph> field.</paragraph>
+</body>
+</helpdocument>

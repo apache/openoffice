@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared0214020100xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Add Tables</title>
+         <filename>/text/shared/02/14020100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154788"><bookmark_value>tables in databases; adding to queries</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:AddTable" id="bm_id8385907" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AddTable" id="bm_id3143284" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_JOINSH_ADDTAB_TABLELIST" id="bm_id3159224" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154788" role="heading" level="1" l10n="U" oldref="1">Add Tables</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152821" role="paragraph" l10n="U" oldref="2"><variable id="tabellehinzufuegentext"><ahelp hid="HID_JOINSH_ADDTAB_TABLELIST" visibility="hidden">Specifies the tables to be inserted into the design window.</ahelp> In the<emph> Add Tables </emph>dialog, select the tables you need for your current task. 
+</variable> When creating a query or a new table presentation, select the corresponding table to which the query or table presentation should refer. When working with relational databases, select the tables between which you want to build relationships.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149760" role="paragraph" l10n="U" oldref="15">The inserted tables appear in a separate window in the query design or relational windows, along with a list of the fields contained in the table. You can determine the size and order of this window.</paragraph>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000450.xhp#tabellehinzu"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3154927" role="heading" level="2" l10n="U" oldref="5">Table</paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:RadioButton:DLG_JOIN_TABADD:RB_CASE_TABLES" id="bm_id0305200912070094" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id030520091208059" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Shows only tables.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:RadioButton:DLG_JOIN_TABADD:RB_CASE_QUERIES" id="bm_id0305200912074475" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0305200912080616" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Shows only queries.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150713" role="heading" level="3" l10n="U" oldref="9">Table name</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156042" role="paragraph" l10n="U" oldref="10"><ahelp hid="HID_JOINSH_ADDTAB_TABLELIST">Lists the available tables.</ahelp> To insert a table, select one from the list and click <emph>Add</emph>. You can also double-click the table name, and a window will be displayed containing the table fields at the top of the query design or the relational window.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:PushButton:DLG_JOIN_TABADD:PB_ADDTABLE" id="bm_id3155941" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151226" role="heading" level="2" l10n="U"
+                 oldref="11">Add</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153683" role="paragraph" l10n="U" oldref="12"><ahelp hid="DBACCESS_PUSHBUTTON_DLG_JOIN_TABADD_PB_ADDTABLE">Inserts the currently selected table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_JOINSH_ADDTAB_CLOSE" id="bm_id3153311" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153527" role="heading" level="2" l10n="U"
+                 oldref="13">Close</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156410" role="paragraph" l10n="U" oldref="14"><ahelp hid="HID_JOINSH_ADDTAB_CLOSE">Closes the <emph>Add Tables</emph> dialog.</ahelp></paragraph>
+   </body>
+</helpdocument>

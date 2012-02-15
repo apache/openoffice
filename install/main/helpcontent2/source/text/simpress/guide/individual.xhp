@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpressguideindividualxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating a Custom Slide Show</title>
+<filename>/text/simpress/guide/individual.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-09-26T14:26:54">FPE: Deleted screenshot. Cleaned.</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146119"><bookmark_value>slide shows; custom</bookmark_value>
+<bookmark_value>custom slide shows</bookmark_value>
+<bookmark_value>starting; always with the current slide</bookmark_value>
+<bookmark_value>starting;custom slide shows</bookmark_value>
+<bookmark_value>hiding;slides</bookmark_value>
+<bookmark_value>showing;hidden slides</bookmark_value>
+<bookmark_value>hidden pages;showing</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3146119" xml-lang="en-US" level="1" l10n="U" oldref="55"><variable id="individual"><link href="text/simpress/guide/individual.xhp" name="Creating a Custom Slide Show">Creating a Custom Slide Show</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150344" xml-lang="en-US" l10n="CHG" oldref="71">You can create custom slide shows to meet the needs of your audience using slides within the current presentation.</paragraph>
+<paragraph role="heading" id="hd_id3150715" xml-lang="en-US" level="3" l10n="U" oldref="72">To create a custom slide show:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153712" xml-lang="en-US" l10n="CHG" oldref="61">Choose <emph>Slide Show - Custom Slide Shows</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153966" xml-lang="en-US" l10n="U" oldref="62">Click <emph>New</emph> and enter a name for your slide show in the <emph>Name </emph>box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150249" xml-lang="en-US" l10n="U" oldref="73">Under <emph>Existing Slides</emph>, select the slides you want to add to your slide show, and click the <emph>&gt;&gt;</emph> button. Hold down Shift to select a range of slides, or Ctrl to select multiple slides.</paragraph>
+</listitem>
+</list>
+<paragraph role="listitem" id="par_id3153916" xml-lang="en-US" l10n="U" oldref="64">You can change the order of the slides in your custom slide show, by dragging and dropping the slides under <emph>Selected Slides</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3151387" xml-lang="en-US" level="3" l10n="U" oldref="74">To start a custom slide show:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147403" xml-lang="en-US" l10n="U" oldref="75">Choose <emph>Slide Show - Custom Slide Show</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150538" xml-lang="en-US" l10n="U" oldref="76">Select the show you want to start from the list.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149943" xml-lang="en-US" l10n="U" oldref="77">Click <emph>Start</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="tip" id="par_id3145593" xml-lang="en-US" l10n="CHG" oldref="56">If you want the selected custom slide show to start when you click the <emph>Slide Show</emph> icon on the<emph> Presentation</emph> toolbar, or when you press F5, select <emph>Use Custom Slide Show</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3145169" xml-lang="en-US" level="2" l10n="U" oldref="78">Options for Running a Slide Show</paragraph>
+<paragraph role="heading" id="hd_id3150335" xml-lang="en-US" level="3" l10n="U" oldref="65">To always start a slide show from the current slide:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150014" xml-lang="en-US" l10n="U" oldref="66">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Impress - General</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155932" xml-lang="en-US" l10n="U" oldref="67">In the <emph>Start presentation</emph> area, select the <emph>Always with current page</emph> check box.</paragraph>
+</listitem>
+</list>
+<paragraph role="warning" id="par_id3155372" xml-lang="en-US" l10n="U" oldref="68">Do not select this option if you want to run a custom slide show.</paragraph>
+<paragraph role="heading" id="hd_id3153922" xml-lang="en-US" level="3" l10n="U" oldref="69">To hide a slide:</paragraph>
+<paragraph role="paragraph" id="par_id883150344" xml-lang="en-US" l10n="NEW">To hide the current slide, click the Hide Slide action button.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156261" xml-lang="en-US" l10n="CHG" oldref="57">To hide several slides, choose <emph>View - Slide Sorter</emph>, and then select the slide(s) that you want to hide.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3083278" xml-lang="en-US" l10n="U" oldref="79">Choose <emph>Slide Show - Show/Hide Slide</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3151264" xml-lang="en-US" l10n="CHG" oldref="58">The slide is not removed from your document.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3147570" xml-lang="en-US" level="3" l10n="U" oldref="80">To show a hidden slide:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3145210" xml-lang="en-US" l10n="U" oldref="81">Choose <emph>View - Slide Sorter</emph>, and then select the hidden slide(s) that you want to show.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150260" xml-lang="en-US" l10n="U" oldref="59">Choose <emph>Slide Show - Show/Hide Slide</emph>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/rehearse_timings.xhp#rehearse_timings"/>
+<embed href="text/simpress/guide/show.xhp#show"/>
+</section>
+</body>
+</helpdocument>

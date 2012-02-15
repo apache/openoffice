@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="sc_ScDDELinksObj" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+Global oTestDoc As Object
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' sc.ScDDELinksObj
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim testDoc, oF As String
+    Dim oSheet As Object
+
+    oDoc = utils.createDocument("scalc", cObjectName)
+    oSheet = oDoc.Sheets.getByIndex(0)
+
+    oTestDoc = utils.loadTestDocument("ScDDELinksObj.sdc")
+    
+    ' This construction of 2-way convertion of testdocs location 
+    ' should take place here, because there is unnecessary slash at the end of 
+    ' cTestDocsDir.
+    testDoc = utils.URL2Path(utils.Path2URL(cTestDocsDir &amp; "ScDDELinksObj.sdc"))
+
+    oF = "=DDE(""soffice"";""" &amp; testDoc &amp; """;""Sheet1.A1"")"
+
+    oSheet.getCellByPosition(1, 2).Formula = oF
+    oSheet.getCellByPosition(3, 4).Formula = oF
+    oSheet.getCellByPosition(5, 6).Formula = oF
+
+    oObj = oDoc.getPropertyValue("DDELinks")
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+Sub DisposeObj()
+    oTestDoc.dispose()
+End Sub
+</script:module>

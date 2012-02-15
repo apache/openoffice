@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideauto_spellcheckxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Automatically Check Spelling</title>
+         <filename>/text/swriter/guide/auto_spellcheck.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154265"><bookmark_value>spellcheck;AutoSpellcheck on/off</bookmark_value>
+      <bookmark_value>automatic spellcheck</bookmark_value>
+      <bookmark_value>checking spelling;while typing</bookmark_value>
+      <bookmark_value>words;disabling spellcheck</bookmark_value>
+</bookmark><comment>MW deleted "text;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3154265" role="heading" level="1" l10n="U"
+                 oldref="31"><variable id="auto_spellcheck"><link href="text/swriter/guide/auto_spellcheck.xhp" name="Automatically Check Spelling">Automatically Check Spelling</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154664" role="paragraph" l10n="U" oldref="5">You can have $[officename] automatically check spelling while you type and underline possible misspelt words with a red wavy line.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154678" role="heading" level="2" l10n="U"
+                 oldref="41">To Check Spelling Automatically While You Type</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155531" role="listitem" l10n="CHG" oldref="42">Activate the <emph>AutoSpellcheck </emph>icon on the Standard bar.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155569" role="listitem" l10n="U" oldref="33">Right-click a word with a red wavy underline, and then choose a suggested replacement word from the list, or from the <emph>AutoCorrect </emph>submenu.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3147759" role="paragraph" l10n="U" oldref="6">If you choose a word from the <item type="menuitem">AutoCorrect</item> submenu, the underlined word and the replacement word are automatically added to the AutoCorrect list for the current language. To view the AutoCorrect list, choose <item type="menuitem">Tools – AutoCorrect Options</item>, and then click the <item type="menuitem">Replace</item> tab.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147819" role="paragraph" l10n="U" oldref="7">You can also add the underlined word to your custom dictionary by choosing <emph>Add</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3147220" role="heading" level="2" l10n="U"
+                 oldref="32">To Exclude Words From the Spellcheck</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147263" role="listitem" l10n="U" oldref="35">Select the words that you want to exclude.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147282" role="listitem" l10n="CHG" oldref="36">Click the Language control on the Status bar to open a menu.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145602" role="listitem" l10n="CHG" oldref="38">Choose “None (Do not check spelling)”.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <paragraph xml-lang="en-US" id="par_id3145648" role="paragraph" l10n="U" oldref="40"><link href="text/shared/optionen/01010401.xhp" name="Creating a new dictionary.">Creating a new dictionary.</link></paragraph>
+      <embed href="text/swriter/guide/autocorr_except.xhp#autocorr_except"/>
+      <embed href="text/swriter/guide/spellcheck_dialog.xhp#spellcheck_dialog"/>
+   </body>
+</helpdocument>

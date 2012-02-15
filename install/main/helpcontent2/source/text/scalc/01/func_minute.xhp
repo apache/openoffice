@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_minutexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">MINUTE </title>
+<filename>/text/scalc/01/func_minute.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149803"><bookmark_value>MINUTE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MINUTE" id="bm_id3148616" localize="false"/><paragraph role="heading" id="hd_id3149803" xml-lang="en-US" level="2" l10n="U" oldref="66"><variable id="minute"><link href="text/scalc/01/func_minute.xhp">MINUTE</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3148988" xml-lang="en-US" l10n="U" oldref="67"><ahelp hid="HID_FUNC_MINUTE">Calculates the minute for an internal time value.</ahelp> The minute is returned as a number between 0 and 59.</paragraph>
+<paragraph role="heading" id="hd_id3154343" xml-lang="en-US" level="3" l10n="U" oldref="68">Syntax</paragraph>
+<paragraph role="code" id="par_id3148660" xml-lang="en-US" l10n="U" oldref="69">MINUTE(Number)</paragraph>
+<paragraph role="paragraph" id="par_id3154611" xml-lang="en-US" l10n="U" oldref="70">
+<emph>Number</emph>, as a time value, is a decimal number where the number of the minute is to be returned.</paragraph>
+<paragraph role="heading" id="hd_id3145374" xml-lang="en-US" level="3" l10n="U" oldref="71">Examples</paragraph>
+<paragraph role="paragraph" id="par_id3148463" xml-lang="en-US" l10n="U" oldref="72">
+<item type="input">=MINUTE(8.999)</item> returns 58</paragraph>
+<paragraph role="paragraph" id="par_id3149419" xml-lang="en-US" l10n="U" oldref="73">
+<item type="input">=MINUTE(8.9999)</item> returns 59</paragraph>
+<paragraph role="paragraph" id="par_id3144755" xml-lang="en-US" l10n="U" oldref="74">
+<item type="input">=MINUTE(NOW())</item> returns the current minute value.</paragraph>
+</body>
+</helpdocument>

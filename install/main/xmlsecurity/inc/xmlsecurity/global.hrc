@@ -1,0 +1,45 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _XMLSEC_GLOBAL_HRC
+#define _XMLSEC_GLOBAL_HRC
+
+// global resource ids
+
+#define RID_XMLSECDLG_DIGSIG                1000
+#define RID_XMLSECDLG_CERTCHOOSER           1001
+#define RID_XMLSECDLG_CERTVIEWER            1002
+#define RID_XMLSECTP_GENERAL                1003
+#define RID_XMLSECTP_DETAILS                1004
+#define RID_XMLSECTP_CERTPATH               1005
+#define RID_XMLSECTP_MACROSEC               1006
+#define RID_XMLSECTP_SECLEVEL               1007
+#define RID_XMLSECTP_TRUSTSOURCES           1008
+#define RID_XMLSECTP_MACROWARN              1009
+#define RID_XMLSECTP_READONLY_CONFIG_TIP    1010
+#define RID_XMLSECTP_LOCK                   1011
+#define RID_XMLSECTP_LOCK_HC                1012
+#define RID_XMLSECWB_NO_MOZILLA_PROFILE     1013
+
+#endif
+

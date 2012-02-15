@@ -1,0 +1,84 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _WORKCTRL_HRC
+#define _WORKCTRL_HRC
+#include "ribbar.hrc"
+
+#define TBX_INSERT 			1
+#define TBX_OBJ_INSERT 		2
+#define TBX_FIELD_INSERT	3
+#define TBX_NAVIGATION      4
+#define IL_VALUES			5
+#define IMG_BTN             6
+#define ST_QUICK            7
+#define FI_INFO             8
+#define FL_SEP              9
+#define ILH_VALUES         10
+#define IMG_BTN_H            11
+
+
+#define ST_TBL          12
+#define ST_FRM          13
+#define ST_PGE          14
+#define ST_DRW          15
+#define ST_CTRL         16
+#define ST_REG          17
+#define ST_BKM          18
+#define ST_GRF          19
+#define ST_OLE          20
+#define ST_OUTL         21
+#define ST_SEL          22
+#define ST_FTN          23
+#define ST_MARK         24
+#define ST_POSTIT       25
+#define ST_SRCH_REP     26
+#define ST_INDEX_ENTRY  27
+#define ST_TABLE_FORMULA  28
+#define ST_TABLE_FORMULA_ERROR  29
+
+// doppelter Eintrag! hrc und hxx
+// diese Ids bestimmen, was die Buttons unter dem Scrollbar tun
+#define NID_START   20000
+#define NID_NEXT 	20000
+#define NID_PREV	20001
+#define NID_TBL     20002
+#define NID_FRM     20003
+#define NID_PGE     20004
+#define NID_DRW     20005
+#define NID_CTRL    20006
+#define NID_REG     20007
+#define NID_BKM     20008
+#define NID_GRF    	20009
+#define NID_OLE    	20010
+#define NID_OUTL   	20011
+#define NID_SEL    	20012
+#define NID_FTN   	20013
+#define NID_MARK	20014
+#define NID_POSTIT  20015
+#define NID_SRCH_REP 20016
+#define NID_INDEX_ENTRY  20017
+#define NID_TABLE_FORMULA	20018
+#define NID_TABLE_FORMULA_ERROR		20019
+#define NID_COUNT  20
+
+#endif

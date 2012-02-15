@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguiderounding_numbersxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Using Rounded Off Numbers</title>
+<filename>/text/scalc/guide/rounding_numbers.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-02-19T13:14:19">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153361"><bookmark_value>numbers; rounded off</bookmark_value>
+<bookmark_value>rounded off numbers</bookmark_value>
+<bookmark_value>exact numbers in $[officename] Calc</bookmark_value>
+<bookmark_value>decimal places; showing</bookmark_value>
+<bookmark_value>changing;number of decimal places</bookmark_value>
+<bookmark_value>values;rounded in calculations</bookmark_value>
+<bookmark_value>calculating;rounded off values</bookmark_value>
+<bookmark_value>numbers; decimal places</bookmark_value>
+<bookmark_value>precision as shown</bookmark_value>
+<bookmark_value>rounding precision</bookmark_value>
+<bookmark_value>spreadsheets; values as shown</bookmark_value>
+</bookmark><comment>mw reduced "tables in spreadsheets;" to "tables;"</comment>
+<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="E" oldref="1" localize="false"/>
+<paragraph role="heading" id="hd_id3156422" xml-lang="en-US" level="1" l10n="U" oldref="2"><variable id="rounding_numbers"><link href="text/scalc/guide/rounding_numbers.xhp" name="Using Rounded Off Numbers">Using Rounded Off Numbers</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153726" xml-lang="en-US" l10n="U" oldref="3">In $[officename] Calc, all decimal numbers are displayed rounded off to two decimal places.</paragraph>
+<paragraph role="heading" id="hd_id3152596" xml-lang="en-US" level="3" l10n="U" oldref="4">To change this for selected cells</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154321" xml-lang="en-US" l10n="U" oldref="5">Mark all the cells you want to modify.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147428" xml-lang="en-US" l10n="U" oldref="6">Choose <emph>Format - Cells</emph> and go to the <emph>Numbers</emph> tab page.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153876" xml-lang="en-US" l10n="U" oldref="7">In the <emph>Category</emph> field, select <emph>Number</emph>. Under <emph>Options</emph>, change the number of <emph>Decimal places</emph> and exit the dialog with OK.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3155415" xml-lang="en-US" level="3" l10n="U" oldref="8">To change this everywhere</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150715" xml-lang="en-US" l10n="CHG" oldref="9">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153707" xml-lang="en-US" l10n="U" oldref="10">Go to the <emph>Calculate</emph> page. Modify the number of <emph>Decimal places</emph> and exit the dialog with OK.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3154755" xml-lang="en-US" level="3" l10n="U" oldref="11">To calculate with the rounded off numbers instead of the internal exact values</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150045" xml-lang="en-US" l10n="CHG" oldref="12">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146920" xml-lang="en-US" l10n="U" oldref="13">Go to the <emph>Calculate</emph> page. Mark the <emph>Precision as shown</emph> field and exit the dialog with OK.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3145790" xml-lang="en-US" l10n="U" oldref="14"><link href="text/shared/01/05020300.xhp" name="Numbers">Numbers</link></paragraph>
+<paragraph role="paragraph" id="par_id3147005" xml-lang="en-US" l10n="U" oldref="15"><link href="text/shared/optionen/01060500.xhp" name="Calculate">Calculate</link></paragraph>
+</section>
+</body>
+</helpdocument>

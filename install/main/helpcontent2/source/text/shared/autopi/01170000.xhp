@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textsharedautopi01170000xml" indexer="include">
+<title id="tit" xml-lang="en-US">Address Data Source</title>
+<filename>/text/shared/autopi/01170000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="adressdatenquelle">
+<bookmark xml-lang="en-US" branch="hid/extensions:TabPage:RID_PAGE_SELECTABTYPE" id="bm_id2237617" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/slot:10934" id="bm_id3581347" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_ABSPILOT" id="bm_id3581348" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AutoPilotAddressDataSource" id="bm_id6961272" localize="false"/>
+<paragraph role="heading" id="hd_id3147285" xml-lang="en-US" level="1" l10n="U" oldref="2"><link href="text/shared/autopi/01170000.xhp" name="Address Data Source">Address Data Source</link></paragraph>
+<paragraph role="paragraph" id="par_id3153910" xml-lang="en-US" l10n="CHG" oldref="3"><ahelp hid=".">This wizard registers an existing address book as a data source in $[officename].</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000401.xhp#addressimport1"/>
+</section>
+<paragraph role="paragraph" id="par_id3151226" xml-lang="en-US" l10n="CHG" oldref="4">You can register address data and other data sources in $[officename] at any time:</paragraph>
+<embed href="text/shared/guide/data_addressbook.xhp#data_addressbook"/>
+<paragraph role="heading" id="hd_id3153527" xml-lang="en-US" level="2" l10n="U" oldref="9">Please select the type of your external address book</paragraph>
+<paragraph role="paragraph" id="par_id5782036" xml-lang="en-US" l10n="NEW">Not all types are available on all systems.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_MORK" id="bm_id3149096" localize="false"/>
+<paragraph role="heading" id="hd_id3154288" xml-lang="en-US" level="3" l10n="U" oldref="10">Seamonkey / Netscape</paragraph>
+<paragraph role="paragraph" id="par_id3145071" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_MORK">Select this option if you already use an address book in Seamonkey or Netscape.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_THUNDERBIRD" id="bm_id611896" localize="false"/>
+<paragraph role="heading" id="hd_id3895382" xml-lang="en-US" level="3" l10n="NEW">Thunderbird</paragraph>
+<paragraph role="paragraph" id="par_id6709494" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select this option if you already use an address book in Thunderbird.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_LDAP" id="bm_id3147654" localize="false"/>
+<paragraph role="heading" id="hd_id3149182" xml-lang="en-US" level="3" l10n="U" oldref="12">LDAP address data</paragraph>
+<paragraph role="paragraph" id="par_id3147209" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_LDAP">Select this option if you already have address data on an LDAP server.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_OUTLOOK" id="bm_id3155435" localize="false"/>
+<paragraph role="heading" id="hd_id3152780" xml-lang="en-US" level="3" l10n="CHG" oldref="14">Outlook address book</paragraph>
+<paragraph role="paragraph" id="par_id3159176" xml-lang="en-US" l10n="CHG" oldref="15"><ahelp hid="extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_OUTLOOK">Select this option if you already use an address book in Microsoft Outlook (not Outlook Express).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_OUTLOOKEXPRESS" id="bm_id926847" localize="false"/>
+<paragraph role="heading" id="hd_id3154860" xml-lang="en-US" level="3" l10n="CHG" oldref="16">Windows system address book</paragraph>
+<paragraph role="paragraph" id="par_id3150254" xml-lang="en-US" l10n="CHG" oldref="17"><ahelp hid="extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_OUTLOOKEXPRESS">Select this option if you already use an address book in Microsoft Outlook Express.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_KAB" id="bm_id926848" localize="false"/>
+<paragraph role="heading" id="hd_id9215979" xml-lang="en-US" level="3" l10n="NEW">KDE Address book</paragraph>
+<paragraph role="paragraph" id="par_id585650" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select this option if you already use an address book in KDE Address book.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_MACAB" id="bm_id926849" localize="false"/>
+<paragraph role="heading" id="hd_id4791405" xml-lang="en-US" level="3" l10n="NEW">OS X Address book</paragraph>
+<paragraph role="paragraph" id="par_id6873683" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select this option if you already use an address book in OS X Address book.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_EVOLUTION" id="bm_id827051" localize="false"/>
+<paragraph role="heading" id="hd_id4517654" xml-lang="en-US" level="3" l10n="NEW">Evolution</paragraph>
+<paragraph role="paragraph" id="par_id4368724" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select this option if you already use an address book in Evolution.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_EVOLUTION_LDAP" id="bm_id2706076" localize="false"/>
+<paragraph role="heading" id="hd_id4218268" xml-lang="en-US" level="3" l10n="NEW">Evolution LDAP</paragraph>
+<paragraph role="paragraph" id="par_id6269112" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select this option if you already use an address book in Evolution LDAP.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_EVOLUTION_GROUPWISE" id="bm_id7849360" localize="false"/>
+<paragraph role="heading" id="hd_id8174382" xml-lang="en-US" level="3" l10n="NEW">Groupwise</paragraph>
+<paragraph role="paragraph" id="par_id5294045" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select this option if you already use an address book in Groupwise.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_OTHER" id="bm_id9591051" localize="false"/>
+<paragraph role="heading" id="hd_id3150976" xml-lang="en-US" level="3" l10n="U" oldref="18">Other external data source</paragraph>
+<paragraph role="paragraph" id="par_id3156192" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_OTHER">Select this option if you want to register another data source as address book in $[officename].</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_ABSPILOT_CANCEL" id="bm_id3150771" localize="false"/>
+<paragraph role="heading" id="hd_id3145674" xml-lang="en-US" level="2" l10n="U" oldref="21">Cancel</paragraph>
+<paragraph role="paragraph" id="par_id3154306" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="HID_ABSPILOT_CANCEL">Exits the wizard without implementing any changes.</ahelp></paragraph>
+<embed href="text/shared/autopi/01010000.xhp#zurueck"/>
+<paragraph role="paragraph" id="par_id3148943" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_ABSPILOT_PREVIOUS" visibility="hidden">Go to previous step.</ahelp></paragraph>
+<embed href="text/shared/autopi/01010000.xhp#weiter"/>
+<paragraph role="paragraph" id="par_id3148946" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="HID_ABSPILOT_NEXT" visibility="hidden">Go to next step.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_ABSPILOT_FINISH" id="bm_id3152812" localize="false"/>
+<paragraph role="heading" id="hd_id3147303" xml-lang="en-US" level="2" l10n="U" oldref="5">Create</paragraph>
+<paragraph role="paragraph" id="par_id3149795" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="HID_ABSPILOT_FINISH">Establishes the connection to the data source and closes the dialog.</ahelp></paragraph>
+</body>
+</helpdocument>

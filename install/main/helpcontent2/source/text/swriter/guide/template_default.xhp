@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidetemplate_defaultxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Changing the Default Template</title>
+         <filename>/text/swriter/guide/template_default.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155913"><bookmark_value>default templates;defining/resetting</bookmark_value>
+      <bookmark_value>defaults; templates</bookmark_value>
+      <bookmark_value>templates; default templates</bookmark_value>
+      <bookmark_value>text documents;default templates</bookmark_value>
+</bookmark><comment>mw changed "text;" to "text documents;"</comment><comment>mw changed "default templates;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3155913" role="heading" level="1" l10n="U"
+                 oldref="28"><variable id="template_default"><link href="text/swriter/guide/template_default.xhp" name="Changing the Default Template">Changing the Default Template</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145569" role="paragraph" l10n="U" oldref="68">The default template contains the default formatting information for new text documents. If you want, you can create a new template and use it as the default template.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id6414990" role="heading" level="2" l10n="NEW">To Create a Default Template</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149838" role="listitem" l10n="U" oldref="102">Create a document and the content and formatting styles that you want.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156101" role="listitem" l10n="U" oldref="113">Choose <emph>File - Templates - Save</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149283" role="listitem" l10n="U" oldref="106">In the <emph>New Template</emph> box, type a name for the new template.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153409" role="listitem" l10n="CHG" oldref="114">In the <item type="menuitem">Categories</item> list, select "My Templates", and then click <item type="menuitem">OK</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153140" role="listitem" l10n="U" oldref="107">Choose <link href="text/shared/01/01110100.xhp" name="File - Templates - Organize"><emph>File - Templates - Organize</emph></link>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149952" role="listitem" l10n="CHG" oldref="108">In the <item type="menuitem">Templates</item> list, double-click the "My Templates" folder.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149970" role="listitem" l10n="U" oldref="105">Right-click the template that you created, and choose <emph>Set as Default Template</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149620" role="listitem" l10n="U" oldref="115">Click <emph>Close</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3149867" role="heading" level="2" l10n="U"
+                 oldref="109">To Reset the Default Template</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145102" role="listitem" l10n="U" oldref="110">Choose <link href="text/shared/01/01110100.xhp" name="File - Templates - Organize"><emph>File - Templates - Organize</emph></link>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149582" role="listitem" l10n="U" oldref="111">Right-click a text file in any of the two lists, choose <item type="menuitem">Reset Default Template - Text Document</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156245" role="listitem" l10n="U" oldref="112">Click <emph>Close</emph>.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/template_create.xhp#template_create"/>
+      <embed href="text/swriter/guide/templates_styles.xhp#templates_styles"/>
+      <embed href="text/shared/guide/standard_template.xhp#standard_template"/>
+   </body>
+</helpdocument>

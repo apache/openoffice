@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0105020300xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Numbers / Format</title>
+<filename>/text/shared/01/05020300.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152942"><bookmark_value>formats; number and currency formats</bookmark_value>
+<bookmark_value>number formats; formats</bookmark_value>
+<bookmark_value>currencies;format codes</bookmark_value>
+<bookmark_value>defaults; number formats</bookmark_value>
+</bookmark>
+  <comment>mw transferred "format codes;" to Calc guide Format_value_userdef.xhp and "numers;" and "cells;" to Calc guide Format_table.xhp. Changed "currencies;"</comment>
+  
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_NUMBERFORMAT" id="bm_id3150146" localize="false"/>
+  
+<bookmark xml-lang="en-US" branch="hid/.uno:TableNumberFormatDialog" id="bm_id2370759" localize="false"/>
+  
+<bookmark xml-lang="en-US" branch="hid/.uno:TableNumberFormatDialog" id="bm_id3148731" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3152942" role="heading" level="1" l10n="U" oldref="1">Numbers / Format</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3145071" role="paragraph" l10n="U" oldref="2"><variable id="zahlen"><ahelp hid=".uno:TableNumberFormatDialog">Specify the formatting options for the selected cell(s).</ahelp> 
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00040503.xhp#zahlen"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_NUMBERFORMAT:LB_CATEGORY" id="bm_id3153312" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3155392" role="heading" level="2" l10n="U" oldref="3">Category</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3150774" role="paragraph" l10n="U" oldref="4"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_NUMBERFORMAT:LB_CATEGORY">Select a category from the list, and then select a formatting style in the <emph>Format </emph>box.</ahelp></paragraph>
+  
+<switch select="appl">
+  
+<case select="CALC">
+  <paragraph xml-lang="en-US" id="par_id3145416" role="note" l10n="U" oldref="101">The default currency format for a cell is determined by the regional settings of your operating system.</paragraph>
+  
+</case>
+  
+</switch>
+  
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_NUMBERFORMAT_LB_FORMAT" id="bm_id3155449" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3155342" role="heading" level="2" l10n="U" oldref="5">Format</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3148491" role="paragraph" l10n="U" oldref="6"><ahelp hid="HID_NUMBERFORMAT_LB_FORMAT">Select how you want the contents of the selected cell(s) to be displayed.</ahelp> The code for the selected option is displayed in the <emph>Format Code</emph> box.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_NUMBERFORMAT:LB_CURRENCY" id="bm_id3154381" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3154811" role="heading" level="3" l10n="U" oldref="97">Currency category list boxes</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3148563" role="paragraph" l10n="U" oldref="98"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_NUMBERFORMAT:LB_CURRENCY">Select a currency, and then scroll to the top of the <emph>Format</emph> list to view the formatting options for the currency.</ahelp></paragraph>
+  <section id="waehrungtext">
+   
+   <paragraph xml-lang="en-US" id="par_id3150866" role="note" l10n="U" oldref="99">The format code for currencies uses the form [$xxx-nnn], where xxx is the currency symbol, and nnn the country code. Special banking symbols, such as EUR (for Euro), do not require the country code. The currency format is not dependent on the language that you select in the<emph> Language</emph> box. </paragraph>
+   
+  </section>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_NUMBERFORMAT:LB_LANGUAGE" id="bm_id3148797" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3154071" role="heading" level="2" l10n="U" oldref="23">Language</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3154138" role="paragraph" l10n="U" oldref="24"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_NUMBERFORMAT:LB_LANGUAGE">Specifies the language setting for the selected <switchinline select="appl"><caseinline select="CALC">cells 
+</caseinline><defaultinline>fields</defaultinline></switchinline>. With the language set to <emph>Automatic</emph>, $[officename] automatically applies the number formats associated with the system default language. Select any language to fix the settings for the selected <switchinline select="appl"><caseinline select="CALC">cells 
+</caseinline><defaultinline>fields</defaultinline></switchinline>.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3157320" role="paragraph" l10n="U" oldref="102">The language setting ensures that date and currency formats are preserved even when the document is opened in an operating system that uses a different default language setting.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_NUMBERFORMAT:CB_SOURCEFORMAT" id="bm_id3145747" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3155995" role="heading" level="2" l10n="U" oldref="104">Source format</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3144432" role="paragraph" l10n="U" oldref="105"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_NUMBERFORMAT_CB_SOURCEFORMAT">Uses the same number format as the cells containing the data for the chart.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="hd_id3148451" role="heading" level="2" l10n="U" oldref="7">Options</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3148922" role="paragraph" l10n="U" oldref="8">Specify the options for the selected format.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_NUMBERFORMAT:ED_DECIMALS" id="bm_id3151178" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3153970" role="heading" level="3" l10n="U" oldref="9">Decimal places</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3154684" role="paragraph" l10n="U" oldref="10"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_NUMBERFORMAT:ED_DECIMALS">Enter the number of decimal places that you want to display.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_NUMBERFORMAT:ED_LEADZEROES" id="bm_id3153106" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3154819" role="heading" level="3" l10n="U" oldref="11">Leading zeroes</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3147352" role="paragraph" l10n="CHG" oldref="12"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_NUMBERFORMAT:ED_LEADZEROES">Enter the maximum number of zeroes to display in front of the decimal point.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_NUMBERFORMAT:BTN_NEGRED" id="bm_id3157895" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3155131" role="heading" level="3" l10n="U" oldref="13">Negative numbers in red</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3159252" role="paragraph" l10n="U" oldref="14"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_NUMBERFORMAT:BTN_NEGRED">Changes the font color of negative numbers to red.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_NUMBERFORMAT:BTN_THOUSAND" id="bm_id3148645" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3147434" role="heading" level="3" l10n="U" oldref="15">Use thousands separator</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3146148" role="paragraph" l10n="U" oldref="16"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_NUMBERFORMAT:BTN_THOUSAND">Inserts a separator between thousands. The type of separator that is used depends on your language settings.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_NUMBERFORMAT:ED_FORMAT" id="bm_id3150961" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3150103" role="heading" level="2" l10n="U" oldref="17">Format code</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3159156" role="paragraph" l10n="U" oldref="18"><ahelp hid="SVX:EDIT:RID_SVXPAGE_NUMBERFORMAT:ED_FORMAT">Displays the number format code for the selected format. You can also enter a custom format.</ahelp> The following options are only available for user-defined number formats.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_NUMBERFORMAT_TBI_ADD" id="bm_id3163717" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3155311" role="heading" level="3" l10n="U" oldref="19">Add</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3147219" role="paragraph" l10n="U" oldref="20"><ahelp hid="HID_NUMBERFORMAT_TBI_ADD">Adds the number format code that you entered to the user-defined category.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_NUMBERFORMAT_TBI_REMOVE" id="bm_id3159181" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3149263" role="heading" level="3" l10n="U" oldref="21">Delete</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3154150" role="paragraph" l10n="U" oldref="22"><ahelp hid="HID_NUMBERFORMAT_TBI_REMOVE">Deletes the selected number format.</ahelp> The changes are effective after you restart $[officename].</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_NUMBERFORMAT_TBI_INFO" id="bm_id3151119" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3153573" role="heading" level="3" l10n="U" oldref="26">Edit Comment</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3083444" role="paragraph" l10n="U" oldref="27"><ahelp hid="HID_NUMBERFORMAT_TBI_INFO">Adds a comment to the selected number format.</ahelp>.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_NUMBERFORMAT:ED_COMMENT" id="bm_id3154470" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3150332" role="heading" level="3" l10n="U" oldref="95">Name line</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3156060" role="paragraph" l10n="U" oldref="96"><ahelp hid="SVX:EDIT:RID_SVXPAGE_NUMBERFORMAT:ED_COMMENT">Enter a comment for the selected number format, and then click outside this box.</ahelp></paragraph>
+  <embed href="text/shared/00/00000001.xhp#vorschau"/>
+  <section id="relatedtopics">
+   
+   <paragraph xml-lang="en-US" id="par_id3145364" role="paragraph" l10n="C"><link href="text/shared/01/05020301.xhp" name="Number format codes">Number format codes</link></paragraph>
+   <paragraph xml-lang="en-US" id="par_id3153095" role="paragraph" l10n="C"><link href="text/shared/01/05020301.xhp" name="Custom format codes">Custom format codes</link></paragraph>
+   
+  </section>
+ </body>
+</helpdocument>

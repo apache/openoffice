@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0210030000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Mode</title>
+<filename>/text/simpress/02/10030000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-03-21T13:45:27">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="effekte">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150199"><bookmark_value>flipping around a flip line</bookmark_value>
+<bookmark_value>mirroring objects</bookmark_value>
+<bookmark_value>3D rotation objects; converting to</bookmark_value>
+<bookmark_value>slanting objects</bookmark_value>
+<bookmark_value>objects; effects</bookmark_value>
+<bookmark_value>distorting objects</bookmark_value>
+<bookmark_value>shearing objects</bookmark_value>
+<bookmark_value>transparency; of objects</bookmark_value>
+<bookmark_value>gradients; transparent</bookmark_value>
+<bookmark_value>colors; defining gradients interactively</bookmark_value>
+<bookmark_value>gradients; defining colors</bookmark_value>
+<bookmark_value>circles; of objects</bookmark_value>
+</bookmark><comment>mw made "slanting;..." a one level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:AdvancedMode" id="bm_id7263969" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AdvancedMode" id="bm_id3150400" localize="false"/>
+<paragraph role="heading" id="hd_id3147264" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/simpress/02/10030000.xhp" name="Mode">Mode</link></paragraph>
+<paragraph role="paragraph" id="par_idN10764" xml-lang="en-US" l10n="NEW"><comment>UFI: was Effects toolbar</comment></paragraph>
+<paragraph role="paragraph" id="par_id3153965" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:AdvancedMode">Modifies the shape, orientation or fill of the selected object(s).</ahelp></paragraph>
+</section>
+<section id="syeffekte">
+<table id="tbl_id3146119">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149665" xml-lang="en-US" l10n="E">
+<image id="img_id3154490" src="res/commandimagelist/sc_toggleobjectrotatemode.png" width="5.64mm" height="5.64mm"><alt id="alt_id3154490" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154018" xml-lang="en-US" l10n="CHG" oldref="3">Effects (%PRODUCTNAME Draw only)</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<paragraph role="paragraph" id="par_id3149018" xml-lang="en-US" l10n="CHG" oldref="4">To open the<item type="productname">%PRODUCTNAME</item> Draw <emph>Mode </emph>toolbar, click the arrow next to the <emph>Effects </emph>icon on the <emph>Drawing</emph> bar. In %PRODUCTNAME Impress, choose <emph>View - Toolbars - Mode</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3150199" xml-lang="en-US" level="2" l10n="U" oldref="6">Rotate</paragraph>
+<paragraph role="paragraph" id="par_id3148489" xml-lang="en-US" l10n="U" oldref="40">Rotates or skews the selected 2D object(s) around a pivot point. Drag a corner handle of the object in the direction you want to rotate it. To skew an object, drag a center handle in the direction you want to skew it.</paragraph>
+<paragraph role="paragraph" id="par_id3154022" xml-lang="en-US" l10n="U" oldref="9">Each slide has only one pivot point. Double-click an object to move the pivot point to the center of the object. You can also drag the pivot point to a new location on the screen, and then rotate the object.</paragraph>
+<paragraph role="note" id="par_id3153914" xml-lang="en-US" l10n="U" oldref="10">If you select a group that includes a 3D object, only the 3D object is rotated. You cannot skew a 3D object, instead, you can rotate it about the X and Y axes by dragging the center handles.</paragraph>
+<section id="dreh">
+<table id="tbl_id3150213">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146962" xml-lang="en-US" l10n="E">
+<image id="img_id3153811" src="res/commandimagelist/sc_toggleobjectrotatemode.png" width="5.64mm" height="5.64mm"><alt id="alt_id3153811" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150435" xml-lang="en-US" l10n="U" oldref="7">Rotate</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<bookmark xml-lang="en-US" branch="hid/.uno:Mirror" id="bm_id4229933" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Mirror" id="bm_id3147403" localize="false"/>
+<paragraph role="heading" id="hd_id3151387" xml-lang="en-US" level="2" l10n="U" oldref="11">Flip</paragraph>
+<paragraph role="paragraph" id="par_id3157874" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid=".uno:Mirror">Flips the selected object(s) around a flip line, that you can drag to anywhere on the slide. Drag a handle of the object(s) across the flip line to flip the object(s). To change the orientation of the flip line, drag one of its end points to new location.</ahelp></paragraph>
+<table id="tbl_id3150654">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153035" xml-lang="en-US" l10n="E">
+<image id="img_id3153932" src="res/commandimagelist/sc_mirror.png" width="5.64mm" height="5.64mm"><alt id="alt_id3153932" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145590" xml-lang="en-US" l10n="U" oldref="12">Flip</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConvertInto3DLathe" id="bm_id1434354" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConvertInto3DLathe" id="bm_id3152999" localize="false"/>
+<paragraph role="heading" id="hd_id3155263" xml-lang="en-US" level="2" l10n="U" oldref="33">In 3D Rotation Object</paragraph>
+<paragraph role="paragraph" id="par_id3145169" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid=".uno:ConvertInto3DLathe">Converts the selected 2D object(s) to a 3D object, by rotating the object(s) around a symmetry line.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150332" xml-lang="en-US" l10n="U" oldref="36">Drag the symmetry line to a new location to change the shape of the converted object. To change the orientation of the symmetry line, drag one of its end points. Click the object to convert it to 3D. </paragraph>
+<table id="tbl_id3157976">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150928" xml-lang="en-US" l10n="E">
+<image id="img_id3145295" src="svx/res/rotate3d.png" width="5.64mm" height="5.64mm"><alt id="alt_id3145295" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149024" xml-lang="en-US" l10n="U" oldref="34">In 3D Rotation Object</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:CrookRotate" id="bm_id2642428" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:CrookRotate" id="bm_id3155371" localize="false"/>
+<paragraph role="heading" id="hd_id3147536" xml-lang="en-US" level="2" l10n="U" oldref="24">Set in circle (perspective)</paragraph>
+<paragraph role="paragraph" id="par_id3150468" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid=".uno:CrookRotate">Distorts the selected object by wrapping it around imaginary circles, and then adding perspective. Drag a handle of the selected object to distort it.</ahelp> If the selected object is not a polygon or Bézier curve, you are prompted to change the object to a curve before you can distort it.</paragraph>
+<table id="tbl_id3155409">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147167" xml-lang="en-US" l10n="E">
+<image id="img_id3083443" src="res/commandimagelist/sc_crookslant.png" width="5.64mm" height="5.64mm"><alt id="alt_id3083443" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149454" xml-lang="en-US" l10n="U" oldref="25">Set in circle (perspective)</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:CrookSlant" id="bm_id2653773" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:CrookSlant" id="bm_id3152931" localize="false"/>
+<paragraph role="heading" id="hd_id3151185" xml-lang="en-US" level="2" l10n="U" oldref="27">Set to circle (slant)</paragraph>
+<paragraph role="paragraph" id="par_id3150766" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid=".uno:CrookSlant">Distorts the selected object by wrapping it around imaginary circles. Drag a handle of the selected object to distort it.</ahelp> If the selected object is not a polygon or Bézier curve, you are prompted to change the object to a curve before you can distort it.</paragraph>
+<table id="tbl_id3147568">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150875" xml-lang="en-US" l10n="E">
+<image id="img_id3150882" src="res/commandimagelist/sc_crookrotate.png" width="5.64mm" height="5.64mm"><alt id="alt_id3150882" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153156" xml-lang="en-US" l10n="U" oldref="28">Set to circle (slant)</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:Shear" id="bm_id4633892" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Shear" id="bm_id3155847" localize="false"/>
+<paragraph role="heading" id="hd_id3154049" xml-lang="en-US" level="2" l10n="U" oldref="30">Distort</paragraph>
+<paragraph role="paragraph" id="par_id3149756" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid=".uno:Shear">Lets you drag the handles of the selected object to change its shape.</ahelp> If the selected object is not a polygon or Bézier curve, you are prompted to change the object to a curve before you can distort it.</paragraph>
+<table id="tbl_id3147260">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154693" xml-lang="en-US" l10n="E">
+<image id="img_id3154933" src="res/commandimagelist/sc_shear.png" width="5.64mm" height="5.64mm"><alt id="alt_id3154933" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154294" xml-lang="en-US" l10n="U" oldref="31">Distort</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:InteractiveTransparence" id="bm_id3523459" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InteractiveTransparence" id="bm_id3145410" localize="false"/>
+<paragraph role="heading" id="hd_id3154203" xml-lang="en-US" level="2" l10n="U" oldref="42">Transparency</paragraph>
+<paragraph role="paragraph" id="par_id3154258" xml-lang="en-US" l10n="U" oldref="43"><ahelp hid=".uno:InteractiveTransparence">Applies a transparency gradient to the selected object.</ahelp> The transparency line represents a a grayscale, with the black handle corresponding to 0% transparency and the white handle to 100% transparency.</paragraph>
+<paragraph role="paragraph" id="par_id3147516" xml-lang="en-US" l10n="U" oldref="44">Drag the white handle to change the direction of the transparency gradient. Drag the black handle to change the length of the gradient. You can also drag and drop colors onto the handles from the <emph>Color</emph> Bar to change their grayscale values.</paragraph>
+<paragraph role="note" id="par_id3154104" xml-lang="en-US" l10n="U" oldref="60">To display the <emph>Color Bar</emph>, choose <emph>View - Toolbars - Color Bar</emph>.</paragraph>
+<table id="tbl_id3148616">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154602" xml-lang="en-US" l10n="E">
+<image id="img_id3154790" src="res/commandimagelist/sc_interactivetransparence.png" width="5.64mm" height="5.64mm"><alt id="alt_id3154790" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150623" xml-lang="en-US" l10n="U" oldref="45">Transparency</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:InteractiveGradient" id="bm_id6090430" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InteractiveGradient" id="bm_id3148687" localize="false"/>
+<paragraph role="heading" id="hd_id3149932" xml-lang="en-US" level="2" l10n="U" oldref="46">Gradient</paragraph>
+<paragraph role="paragraph" id="par_id3149594" xml-lang="en-US" l10n="U" oldref="47"><ahelp hid=".uno:InteractiveGradient">Modifies the gradient fill of the selected object. This command is only available if you applied a gradient to the selected object in <emph>Format - Area</emph>.</ahelp> Drag the handles of the gradient line to change the direction of the gradient or the length of the gradient. You can also drag and drop colors onto the handles from the <emph>Color</emph> Bar to change the color of the gradient endpoints. </paragraph>
+<paragraph role="note" id="par_id3151311" xml-lang="en-US" l10n="U" oldref="48">To display the <emph>Color Bar</emph>, choose <emph>View - Toolbars - Color Bar</emph>.</paragraph>
+<table id="tbl_id3146128">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150990" xml-lang="en-US" l10n="E">
+<image id="img_id3151102" src="res/commandimagelist/sc_interactivegradient.png" width="5.64mm" height="5.64mm"><alt id="alt_id3151102" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148400" xml-lang="en-US" l10n="U" oldref="49">Gradient</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</body>
+</helpdocument>

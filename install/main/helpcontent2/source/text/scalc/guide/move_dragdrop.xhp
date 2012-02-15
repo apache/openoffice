@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalcguidemove_dragdropxml" indexer="include">
+<title id="tit" xml-lang="en-US">Moving Cells by Drag-and-Drop </title>
+<filename>/text/scalc/guide/move_dragdrop.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155686"><bookmark_value>drag and drop; moving cells</bookmark_value>
+<bookmark_value>cells; moving by drag and drop </bookmark_value>
+<bookmark_value>columns;moving by drag and drop</bookmark_value>
+<bookmark_value>moving;cells by drag and drop</bookmark_value>
+<bookmark_value>inserting;cells, by drag and drop</bookmark_value>
+</bookmark><comment>mw added "columns;"</comment>
+<paragraph role="heading" id="hd_id986358" xml-lang="en-US" level="1" l10n="NEW"><variable id="move_dragdrop"><link href="text/scalc/guide/move_dragdrop.xhp">Moving Cells by Drag-and-Drop</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id2760093" xml-lang="en-US" l10n="NEW">When you drag-and-drop a selection of cells on a Calc sheet, the cells normally overwrite the existing cells in the area where you drop. This is the normal <emph>overwrite mode</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id9527268" xml-lang="en-US" l10n="NEW">When you hold down the <switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> key while releasing the mouse button, you enter the <emph>insert mode</emph>.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id79653" xml-lang="en-US" l10n="NEW">In insert mode, the existing cells where you drop will be shifted to the right or to the bottom, and the dropped cells are inserted into the now empty positions without overwriting. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id8676717" xml-lang="en-US" l10n="NEW">The surrounding box of the moved cells looks different in insert mode. </paragraph>
+<paragraph role="paragraph" id="par_id3968932" xml-lang="en-US" l10n="NEW">In overwrite mode you see all four borders around the selected area. In insert mode you see only the left border when target cells will be shifted to the right. You see only the upper border when target cells will be shifted down. </paragraph>
+<paragraph role="paragraph" id="par_id7399517" xml-lang="en-US" l10n="NEW">Whether the target area will be shifted to the right or to the bottom depends on the distance between source and target cells, if you move within the same sheet. It depends on the number of horizontal or vertical cells in the moved area, if you move to a different sheet.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id8040406" xml-lang="en-US" l10n="NEW">If you move cells in insert mode within the same row (only horizontally), then after insertion of the cells, all cells will be shifted to the left to fill the source area.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id2586748" xml-lang="en-US" l10n="NEW">In both modes, you can hold down the <switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>key, or <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift keys while you release the mouse button to insert a copy or a link, respectively.</paragraph>
+<table id="tbl_id1674855">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id5814081" xml-lang="en-US" l10n="NEW">Keys pressed while releasing the mouse button</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id6581316" xml-lang="en-US" l10n="NEW">Result</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id9906613" xml-lang="en-US" l10n="NEW">No key</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id2815637" xml-lang="en-US" l10n="NEW">Cells are moved and overwrite the cells in the target area. Source cells are emptied.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id6161687" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline>key</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id4278389" xml-lang="en-US" l10n="NEW">Cells are copied and overwrite the cells in the target area. Source cells stay as they are.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id2805566" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift keys</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id5369121" xml-lang="en-US" l10n="NEW">Links to the source cells are inserted and overwrite the cells in the target area. Source cells stay as they are.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id9518723" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> key</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id2926419" xml-lang="en-US" l10n="NEW">Cells are moved and shift the cells in the target area to the right or to the bottom. Source cells are emptied, except if you move within the same rows on the same sheet. </paragraph>
+<paragraph role="tablecontent" id="par_id4021423" xml-lang="en-US" l10n="NEW">If you move within the same rows on the same sheet, the cells in the target area shift to the right, and then the whole row shifts to fill the source area.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id2783898" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Option+Command </caseinline><defaultinline>Alt+Ctrl </defaultinline></switchinline>keys</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id2785119" xml-lang="en-US" l10n="NEW">Cells are copied and shift the cells in the target area to the right or to the bottom. Source cells stay as they are.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id584124" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Option+Command</caseinline><defaultinline>Alt+Ctrl</defaultinline></switchinline>+Shift keys</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id5590990" xml-lang="en-US" l10n="NEW">Links to the source cells are inserted and shift the cells in the target area to the right or to the bottom. Source cells stay as they are.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<section id="relatedtopics">
+<embed href="text/scalc/guide/cellreferences.xhp#cellreferences"/>
+<embed href="text/shared/guide/dragdrop.xhp#dragdrop"/>
+</section>
+</body>
+</helpdocument>

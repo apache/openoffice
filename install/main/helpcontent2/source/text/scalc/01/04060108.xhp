@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0104060108xml" indexer="include">
+<title id="tit" xml-lang="en-US">Statistics Functions</title>
+<filename>/text/scalc/01/04060108.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153018"><bookmark_value>statistics functions</bookmark_value>
+<bookmark_value>Function Wizard; statistics</bookmark_value>
+<bookmark_value>functions; statistics functions</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153018" xml-lang="en-US" level="1" l10n="U" oldref="1">Statistics Functions</paragraph>
+<paragraph role="paragraph" id="par_id3157874" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="statistiktext">This category contains the <emph>Statistics</emph> functions. 
+</variable></paragraph>
+<section id="howtoget">
+<embed href="text/scalc/00/00000404.xhp#eikasta"/>
+</section>
+<paragraph role="paragraph" id="par_id3149001" xml-lang="en-US" l10n="U" oldref="9">Some of the examples use the following data table:</paragraph>
+<table id="tbl_id3156066">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3148775" xml-lang="en-US" l10n="U" oldref="10">C</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3145297" xml-lang="en-US" l10n="U" oldref="11">D</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150661" xml-lang="en-US" l10n="U" oldref="12">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153551" xml-lang="en-US" l10n="U" oldref="13">x value</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147536" xml-lang="en-US" l10n="U" oldref="14">y value</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153224" xml-lang="en-US" l10n="U" oldref="15">3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150475" xml-lang="en-US" l10n="U" oldref="16">-5</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155367" xml-lang="en-US" l10n="U" oldref="17">-3</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149783" xml-lang="en-US" l10n="U" oldref="18">4</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153181" xml-lang="en-US" l10n="U" oldref="19">-2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3148429" xml-lang="en-US" l10n="U" oldref="20">0</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3152588" xml-lang="en-US" l10n="U" oldref="21">5</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147483" xml-lang="en-US" l10n="U" oldref="22">-1</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3083443" xml-lang="en-US" l10n="U" oldref="23">1</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149826" xml-lang="en-US" l10n="U" oldref="24">6</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3163820" xml-lang="en-US" l10n="U" oldref="25">0</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154816" xml-lang="en-US" l10n="U" oldref="26">3</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149276" xml-lang="en-US" l10n="U" oldref="27">7</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149267" xml-lang="en-US" l10n="U" oldref="28">2</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156310" xml-lang="en-US" l10n="U" oldref="29">4</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154639" xml-lang="en-US" l10n="U" oldref="30">8</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145205" xml-lang="en-US" l10n="U" oldref="31">4</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153276" xml-lang="en-US" l10n="U" oldref="32">6</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150756" xml-lang="en-US" l10n="U" oldref="33">9</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156095" xml-lang="en-US" l10n="U" oldref="34">6</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3152929" xml-lang="en-US" l10n="U" oldref="35">8</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3156324" xml-lang="en-US" l10n="U" oldref="36">The statistical functions are described in the following subsections.</paragraph>
+<embed href="text/scalc/01/04060181.xhp#ae"/>
+<embed href="text/scalc/01/04060182.xhp#fh"/>
+<embed href="text/scalc/01/04060183.xhp#kl"/>
+<embed href="text/scalc/01/04060184.xhp#mq"/>
+<embed href="text/scalc/01/04060185.xhp#rz"/>
+<paragraph role="paragraph" id="par_id3150271" xml-lang="en-US" l10n="U" oldref="37"><link href="text/scalc/01/04060116.xhp" name="Statistical Functions in the Analysis-AddIn.">Statistical Functions in the Analysis-AddIn</link></paragraph>
+<embed href="text/scalc/01/04060100.xhp#drking"/>
+</body>
+</helpdocument>

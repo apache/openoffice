@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0201170103xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Events</title>
+         <filename>/text/shared/02/01170103.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="ereignisse">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148643"><bookmark_value>controls; events</bookmark_value>
+         <bookmark_value>events; controls</bookmark_value>
+         <bookmark_value>macros; assigning to events in forms</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3148643" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170103.xhp" name="Events">Events</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152350" role="paragraph" l10n="U" oldref="2">On the<emph> Events </emph>tab page you can link macros to events that occur in a form's control fields.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3155419" role="paragraph" l10n="U" oldref="40">When the event occurs, the linked macro will be called. To assign a macro to an event, press the <emph>...</emph> button. An <switchinline select="appl"><caseinline select="WRITER"><link href="text/swriter/01/05060700.xhp" name="Assign Macro">Assign Macro</link>
+</caseinline><defaultinline>dialog</defaultinline></switchinline> opens.</paragraph>
+      <section id="howtoget">
+         <embed href="text/shared/00/00040501.xhp#controleigenschaftenereignisse"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3149732" role="paragraph" l10n="U" oldref="3">Depending on the control, different events are available. Only the available events for the selected control and context are listed on the <emph>Events</emph> tab page. The following events are defined:</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_APPROVEACTIONPERFORMED" id="bm_id3153252" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149191" role="heading" level="2" l10n="CHG"
+                 oldref="12">Approve action<comment>renamed from Before commencing, issue 97356</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153717" role="paragraph" l10n="CHG" oldref="13"><ahelp hid="HID_EVT_APPROVEACTIONPERFORMED">This event takes place before an action is triggered by clicking the control.</ahelp> For example, clicking a "Submit" button initiates a send action; however, the actual "send" process is started only when the <emph>When initiating</emph> event occurs. The <emph>Approve action</emph> event allows you to kill the process. If the linked method sends back FALSE, <emph>When initiating</emph> will not be executed.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_ACTIONPERFORMED" id="bm_id3155923" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156024" role="heading" level="2" l10n="CHG"
+                 oldref="36">Execute action<comment>renamed from When initiated, issue 97356</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145609" role="paragraph" l10n="CHG" oldref="37"><ahelp hid="HID_EVT_ACTIONPERFORMED">The <emph>Execute action</emph> event occurs when an action is started.</ahelp> For example, if you have a "Submit" button in your form, the send process represents the action to be initiated.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_CHANGED" id="bm_id3154924" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156343" role="heading" level="2" l10n="U"
+                 oldref="41">Changed</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148755" role="paragraph" l10n="U" oldref="42"><ahelp hid="HID_EVT_CHANGED">The<emph> Changed </emph>event takes place when the control loses the focus and the content of the control has changed since it lost the focus.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_TEXTCHANGED" id="bm_id3147084" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153524" role="heading" level="2" l10n="U"
+                 oldref="10">Text modified</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150495" role="paragraph" l10n="U" oldref="11"><ahelp hid="HID_EVT_TEXTCHANGED">The<emph> Text modified </emph>event takes place if you enter or modify a text in an input field.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_ITEMSTATECHANGED" id="bm_id3154910" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154123" role="heading" level="2" l10n="U" oldref="8">Item status changed</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150870" role="paragraph" l10n="U" oldref="9"><ahelp hid="HID_EVT_ITEMSTATECHANGED" visibility="hidden">The<emph> Item status changed </emph>event takes place if the status of the control field has changed.</ahelp>The<emph> Item status changed</emph> event takes place if he status of the control field has changed.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_FOCUSGAINED" id="bm_id3158407" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151176" role="heading" level="2" l10n="U"
+                 oldref="16">When receiving focus</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154218" role="paragraph" l10n="U" oldref="17"><ahelp hid="HID_EVT_FOCUSGAINED">The<emph> When receiving focus </emph>event takes place if a control field receives the focus.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_FOCUSLOST" id="bm_id3154684" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150447" role="heading" level="2" l10n="U"
+                 oldref="18">When losing focus</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159252" role="paragraph" l10n="U" oldref="19"><ahelp hid="HID_EVT_FOCUSLOST">The<emph> When losing focus </emph>event takes place if a control field looses the focus.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_KEYTYPED" id="bm_id3145787" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147287" role="heading" level="2" l10n="U"
+                 oldref="20">Key pressed</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152940" role="paragraph" l10n="U" oldref="21"><ahelp hid="HID_EVT_KEYTYPED">The <emph>Key pressed </emph>event occurs when the user presses any key while the control has the focus.</ahelp> This event may be linked to a macro for checking entries.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_KEYUP" id="bm_id3145264" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154127" role="heading" level="2" l10n="U"
+                 oldref="43">Key released</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154150" role="paragraph" l10n="U" oldref="44"><ahelp hid="HID_EVT_KEYUP">The<emph> Key released </emph>event occurs when the user releases any key while the control has the focus.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_MOUSEENTERED" id="bm_id3155368" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154921" role="heading" level="2" l10n="U"
+                 oldref="26">Mouse inside</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148618" role="paragraph" l10n="U" oldref="27"><ahelp hid="HID_EVT_MOUSEENTERED">The<emph> Mouse inside </emph>event takes place if the mouse is inside the control field.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_MOUSEDRAGGED" id="bm_id3159180" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148576" role="heading" level="2" l10n="U"
+                 oldref="30">Mouse moved while key pressed</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155411" role="paragraph" l10n="U" oldref="31"><ahelp hid="HID_EVT_MOUSEDRAGGED">The<emph> Mouse moved while key pressed </emph>event takes place when the mouse is dragged while a key is pressed.</ahelp> An example is when, during drag-and-drop, an additional key determines the mode (move or copy).</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_MOUSEMOVED" id="bm_id3147443" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149262" role="heading" level="2" l10n="U"
+                 oldref="32">Mouse moved</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146975" role="paragraph" l10n="U" oldref="33"><ahelp hid="HID_EVT_MOUSEMOVED">The<emph> Mouse moved </emph>event occurs if the mouse moves over the control.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_MOUSEPRESSED" id="bm_id3145366" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3159197" role="heading" level="2" l10n="U"
+                 oldref="22">Mouse button pressed</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145271" role="paragraph" l10n="U" oldref="23"><ahelp hid="HID_EVT_MOUSEPRESSED">The<emph> Mouse button pressed </emph>event occurs if the mouse button is pressed while the mouse pointer is on the control.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN108BD" role="note" l10n="NEW">Note that this event is also used for notifying requests for a popup context menu on the control.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_MOUSERELEASED" id="bm_id3144766" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148880" role="heading" level="2" l10n="U"
+                 oldref="24">Mouse button released</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150659" role="paragraph" l10n="U" oldref="25"><ahelp hid="HID_EVT_MOUSERELEASED">The<emph> Mouse button released </emph>event occurs if the mouse button is released while the mouse pointer is on the control.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_MOUSEEXITED" id="bm_id3150094" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156286" role="heading" level="2" l10n="U"
+                 oldref="28">Mouse outside</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149582" role="paragraph" l10n="U" oldref="29"><ahelp hid="HID_EVT_MOUSEEXITED">The<emph> Mouse outside </emph>event takes place when the mouse is outside the control field.</ahelp></paragraph>
+      <embed href="text/shared/02/01170202.xhp#reset_update"/>
+   </body>
+</helpdocument>

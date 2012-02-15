@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguidecellstyle_by_formulaxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Assigning Formats by Formula</title>
+         <filename>/text/scalc/guide/cellstyle_by_formula.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145673"><bookmark_value>formats; assigning by formulas</bookmark_value>
+      <bookmark_value>cell formats; assigning by formulas</bookmark_value>
+      <bookmark_value>STYLE function example</bookmark_value>
+      <bookmark_value>cell styles;assigning by formulas</bookmark_value>
+      <bookmark_value>formulas;assigning cell formats</bookmark_value>
+</bookmark><comment>mw deleted "applying;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3145673" role="heading" level="1" l10n="U"
+                 oldref="13"><variable id="cellstyle_by_formula"><link href="text/scalc/guide/cellstyle_by_formula.xhp" name="Assigning Formats by Formula">Assigning Formats by Formula</link> 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150275" role="paragraph" l10n="CHG" oldref="14">The STYLE() function can be added to an existing formula in a cell. For example, together with the CURRENT function, you can color a cell depending on its value. The formula =...+STYLE(IF(CURRENT()&gt;3; "Red"; "Green")) applies the cell style "Red" to cells if the value is greater than 3, otherwise the cell style "Green" is applied.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151385" role="paragraph" l10n="U" oldref="15">If you would like to apply a formula to all cells in a selected area, you can use the<emph/>
+         <item type="menuitem">Find &amp; Replace</item> dialog.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149456" role="listitem" l10n="U" oldref="16">Select all the desired cells.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148797" role="listitem" l10n="U" oldref="17">Select the menu command <emph>Edit - Find &amp; Replace</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150767" role="listitem" l10n="U" oldref="18">For the <item type="menuitem">Search for</item> term, enter: .<item type="literal">*</item>
+            </paragraph>
+            <paragraph xml-lang="en-US" id="par_id3153770" role="listitem" l10n="U" oldref="19">".*" is a regular expression that designates the contents of the current cell.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153143" role="listitem" l10n="U" oldref="20">Enter the following formula in the <item type="menuitem">Replace with</item> field: <item type="literal">=&amp;+STYLE(IF(CURRENT()&gt;3;"Red";"Green"))</item>
+            </paragraph>
+            <paragraph xml-lang="en-US" id="par_id3146975" role="listitem" l10n="U" oldref="21">The "&amp;" symbol designates the current contents of the <emph>Search for</emph> field. The line must begin with an equal sign, since it is a formula. It is assumed that the cell styles "Red" and "Green" already exist.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149262" role="listitem" l10n="U" oldref="22">Mark the fields <link href="text/shared/01/02100000.xhp" name="Regular expressions"><emph>Regular expressions</emph></link> and <emph>Current selection only</emph>. Click <emph>Find All</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3144767" role="listitem" l10n="U" oldref="24">All cells with contents that were included in the selection are now highlighted.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147127" role="listitem" l10n="U" oldref="23">Click<emph/>
+               <item type="menuitem">Replace all</item>.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/cellstyle_conditional.xhp#cellstyle_conditional"/>
+         <embed href="text/scalc/guide/cellstyle_minusvalue.xhp#cellstyle_minusvalue"/>
+      </section>
+   </body>
+</helpdocument>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0105320000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text Animation</title>
+<filename>/text/shared/01/05320000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="lauftext">
+<bookmark xml-lang="en-US" branch="hid/cui:TabPage:RID_SVXPAGE_TEXTANIMATION" id="bm_id3147477" localize="false"/><paragraph role="heading" id="hd_id3150014" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05320000.xhp" name="Text Animation">Text Animation</link></paragraph>
+<paragraph role="paragraph" id="par_id3154788" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="SVX:TABPAGE:RID_SVXPAGE_TEXTANIMATION">Adds an animation effect to the text in the selected drawing object.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00040502.xhp#laufext"/>
+</section>
+<paragraph role="heading" id="hd_id3152821" xml-lang="en-US" level="2" l10n="U" oldref="4">Text animation effects</paragraph>
+<paragraph role="paragraph" id="par_id3144436" xml-lang="en-US" l10n="U" oldref="15">Select the effect that you want to apply, and then set the properties of the effect.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_TEXTANIMATION:LB_EFFECT" id="bm_id3149205" localize="false"/><paragraph role="heading" id="hd_id3158405" xml-lang="en-US" level="3" l10n="U" oldref="5">Effects</paragraph>
+<paragraph role="paragraph" id="par_id3149999" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_TEXTANIMATION:LB_EFFECT">Select the animation effect that you want to apply to the text in the selected drawing object. To remove an animation effect, select <emph>No Effect</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_LEFT" id="bm_id3152801" localize="false"/><paragraph role="heading" id="hd_id3153114" xml-lang="en-US" level="3" l10n="U" oldref="6">To the Left</paragraph>
+<paragraph role="paragraph" id="par_id3152867" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_TEXTANIMATION:BTN_LEFT">Scrolls text from right to left.</ahelp></paragraph>
+<table id="tbl_id3147291">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149750" xml-lang="en-US" l10n="E">
+<image id="img_id3150774" src="res/sc06301.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150774" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155941" xml-lang="en-US" l10n="U" oldref="19">Left arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_RIGHT" id="bm_id3145072" localize="false"/><paragraph role="heading" id="hd_id3147010" xml-lang="en-US" level="3" l10n="U" oldref="20">To the Right</paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_TEXTANIMATION:BTN_RIGHT">Scrolls text from left to right.</ahelp></paragraph>
+<table id="tbl_id3163802">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3109847" xml-lang="en-US" l10n="E">
+<image id="img_id3149235" src="res/sc06300.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149235" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149276" xml-lang="en-US" l10n="U" oldref="22">Right arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_UP" id="bm_id3146138" localize="false"/><paragraph role="heading" id="hd_id3155323" xml-lang="en-US" level="3" l10n="U" oldref="23">To the Top</paragraph>
+<paragraph role="paragraph" id="par_id3145416" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_TEXTANIMATION:BTN_UP">Scrolls text from bottom to top.</ahelp></paragraph>
+<table id="tbl_id3147573">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146773" xml-lang="en-US" l10n="E">
+<image id="img_id3149795" src="dbaccess/res/sortup.png" width="0.2083inch" height="0.222inch"><alt id="alt_id3149795" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155420" xml-lang="en-US" l10n="U" oldref="25">Up arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_DOWN" id="bm_id3150944" localize="false"/><paragraph role="heading" id="hd_id3153717" xml-lang="en-US" level="3" l10n="U" oldref="26">To the Bottom</paragraph>
+<paragraph role="paragraph" id="par_id3155388" xml-lang="en-US" l10n="U" oldref="27"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_TEXTANIMATION:BTN_DOWN">Scrolls text from top to bottom.</ahelp></paragraph>
+<table id="tbl_id3155583">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145085" xml-lang="en-US" l10n="E">
+<image id="img_id3152472" src="dbaccess/res/sortdown.png" width="0.1563inch" height="0.1665inch"><alt id="alt_id3152472" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U" oldref="28">Down arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3152361" xml-lang="en-US" level="2" l10n="U" oldref="45">Properties</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_START_INSIDE" id="bm_id3151056" localize="false"/><paragraph role="heading" id="hd_id3156434" xml-lang="en-US" level="3" l10n="U" oldref="7">Start Inside</paragraph>
+<paragraph role="paragraph" id="par_id3150866" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_TEXTANIMATION:TSB_START_INSIDE">Text is visible and inside the drawing object when the effect is applied.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_STOP_INSIDE" id="bm_id3151108" localize="false"/><paragraph role="heading" id="hd_id3150359" xml-lang="en-US" level="3" l10n="CHG" oldref="8">Text visible when exiting<comment>i60202</comment></paragraph>
+<paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_TEXTANIMATION:TSB_STOP_INSIDE">Text remains visible after the effect is applied.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155738" xml-lang="en-US" level="2" l10n="U" oldref="9">Animation effects</paragraph>
+<paragraph role="paragraph" id="par_id3149291" xml-lang="en-US" l10n="U" oldref="33">Set the looping options for the animation effect.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_ENDLESS" id="bm_id3144434" localize="false"/><paragraph role="heading" id="hd_id3145744" xml-lang="en-US" level="3" l10n="U" oldref="10">Continuous</paragraph>
+<paragraph role="paragraph" id="par_id3145318" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_TEXTANIMATION:TSB_ENDLESS">Plays the animation effect continuously. To specify the number of times to play the effect, clear this checkbox, and enter a number in the <emph>Continuous</emph> box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_TEXTANIMATION:NUM_FLD_COUNT" id="bm_id3154821" localize="false"/><paragraph role="heading" id="hd_id3153192" xml-lang="en-US" level="3" l10n="U" oldref="39">Continuous box</paragraph>
+<paragraph role="paragraph" id="par_id3154068" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_TEXTANIMATION:NUM_FLD_COUNT">Enter the number of times that you want the animation effect to repeat.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154908" xml-lang="en-US" level="2" l10n="U" oldref="13">Increment</paragraph>
+<paragraph role="paragraph" id="par_id3151177" xml-lang="en-US" l10n="U" oldref="37">Specify the increment value for scrolling the text.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_PIXEL" id="bm_id3152803" localize="false"/><paragraph role="heading" id="hd_id3150870" xml-lang="en-US" level="3" l10n="U" oldref="14">Pixels</paragraph>
+<paragraph role="paragraph" id="par_id3150447" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_TEXTANIMATION:TSB_PIXEL">Measures increment value in pixels.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_AMOUNT" id="bm_id3152936" localize="false"/><paragraph role="heading" id="hd_id3149766" xml-lang="en-US" level="3" l10n="U" oldref="43">Increment box</paragraph>
+<paragraph role="paragraph" id="par_id3150495" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_AMOUNT">Enter the number of increments by which to scroll the text.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3158409" xml-lang="en-US" level="2" l10n="U" oldref="11">Delay</paragraph>
+<paragraph role="paragraph" id="par_id3148560" xml-lang="en-US" l10n="U" oldref="35">Specify the amount time to wait before repeating the effect.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_AUTO" id="bm_id3147352" localize="false"/><paragraph role="heading" id="hd_id3153370" xml-lang="en-US" level="3" l10n="U" oldref="12">Automatic</paragraph>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_TEXTANIMATION:TSB_AUTO">$[officename] automatically determines the amount of time to wait before repeating the effect. To manually assign the delay period, clear this checkbox, and then enter a value in the<emph> Automatic</emph> box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_DELAY" id="bm_id3153952" localize="false"/><paragraph role="heading" id="hd_id3155131" xml-lang="en-US" level="3" l10n="U" oldref="41">Automatic box</paragraph>
+<paragraph role="paragraph" id="par_id3152791" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_DELAY">Enter the amount of time to wait before repeating the effect.</ahelp></paragraph>
+</body>
+</helpdocument>

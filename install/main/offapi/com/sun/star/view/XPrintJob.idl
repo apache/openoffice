@@ -1,0 +1,73 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_view_XPrintJob_idl__
+#define __com_sun_star_view_XPrintJob_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_view_XPrintable_idl__
+#include <com/sun/star/view/XPrintable.idl>
+#endif
+
+#ifndef __com_sun_star_beans_PropertyValue_idl__
+#include <com/sun/star/beans/PropertyValue.idl>
+#endif
+
+
+//=============================================================================
+
+module com {  module sun {  module star {  module view {
+
+//-----------------------------------------------------------------------------
+/** allows for getting information about a print job.
+
+	<p><type>XPrintJob</type> is implemented by print jobs that are created by
+	classes that implement <type>XPrintable</type>. It gives information about
+	the context of the print job.</p>
+
+	@see XPrintJobListener
+
+    @since OOo 1.1.2
+ */
+published interface XPrintJob : com::sun::star::uno::XInterface
+{
+	/** returns the PrintOptions used for the print job
+	 */
+	sequence<com::sun::star::beans::PropertyValue> getPrintOptions();
+
+	/** returns the Printer used for the print job
+	 */
+	sequence<com::sun::star::beans::PropertyValue> getPrinter();
+
+	/** returns the printed object used for the print job
+	 */
+	XPrintable getPrintable();
+
+	void cancelJob();
+};
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsdrawguidecolor_definexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Defining Custom Colors</title>
+         <filename>/text/sdraw/guide/color_define.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149263"><bookmark_value>colors; defining and saving</bookmark_value>
+      <bookmark_value>user-defined colors</bookmark_value>
+      <bookmark_value>custom colors</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3149263" role="heading" level="1" l10n="U" oldref="7"><variable id="color_define"><link href="text/sdraw/guide/color_define.xhp" name="Defining Custom Colors">Defining Custom Colors</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154511" role="paragraph" l10n="U" oldref="8">If you want, you can mix a custom color and add it to a color table.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155600" role="heading" level="2" l10n="U" oldref="9">To define a custom color</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150327" role="listitem" l10n="U" oldref="25">Choose <emph>Format - Area</emph> and click the <emph>Colors</emph> tab. A table of the predefined colors is displayed.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3154657" role="warning" l10n="U" oldref="13">Changes made to the standard color table are permanent and are saved automatically.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3166425" role="paragraph" l10n="U" oldref="14">Click a color in the table that is similar to the one you want to mix. The color appears in the upper preview box to the right of the table.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152992" role="paragraph" l10n="U" oldref="15">Select the RGB or CMYK color model in the box below the preview boxes.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id4979705" role="paragraph" l10n="NEW">%PRODUCTNAME uses only the RGB color model for printing in color. The CMYK controls are provided only to ease the input of color values using CMYK notation.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3152987" role="paragraph" l10n="U" oldref="16">The RGB color model mixes red, green and blue light to create colors on a computer screen. In the RGB model, the three color components are additive and can have values ranging from 0 (black) to 255 (white). The CMYK color model combines Cyan (C), Magenta (M), Yellow (Y), and blacK (K, also used for "Key") to create colors for printing. The four colors of the CMYK models are subtractive and are defined as percentages. Black corresponds to 100 % and white to 0 %.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145386" role="paragraph" l10n="U" oldref="17">Enter a numeric value in the boxes next to the color components. The new color appears in the preview box directly above the color model box.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3152871" role="note" l10n="CHG" oldref="18">You can also create a color using a color spectrum. Click the <emph>Edit</emph> button to open the <link href="text/shared/optionen/01010501.xhp" name="Color"><emph>Color</emph></link> dialog. Click a color. Use the Hue, Saturation, and Brightness boxes to adjust your color selection.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153011" role="paragraph" l10n="U" oldref="19">Do one of the following:</paragraph>
+         </listitem>
+      </list>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147244" role="listitem" l10n="U" oldref="26">If you want to replace the color in the standard color table that your custom color is based on, click <emph>Modify</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145116" role="listitem" l10n="U" oldref="20">If you want to add your custom color to the standard color table, enter a name in the <emph>Name</emph> text box and click <emph>Add</emph>.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <embed href="text/simpress/guide/palette_files.xhp#palette_files"/>
+         <embed href="text/sdraw/guide/eyedropper.xhp#eyedropper"/>
+         <paragraph xml-lang="en-US" id="par_id3145236" role="paragraph" l10n="U" oldref="23"><link href="text/shared/01/03170000.xhp" name="Color bar">Color bar</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

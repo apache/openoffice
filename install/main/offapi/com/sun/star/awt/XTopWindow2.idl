@@ -1,0 +1,74 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_awt_XTopWindow2_idl__
+#define __com_sun_star_awt_XTopWindow2_idl__
+
+#include <com/sun/star/awt/XTopWindow.idl>
+#include <com/sun/star/lang/IndexOutOfBoundsException.idl>
+
+//=============================================================================
+
+module com { module sun { module star { module awt { 
+
+//=============================================================================
+
+/** extends XTopWindow with additional functionality
+ */
+interface XTopWindow2 : XTopWindow
+{
+    /** controls whether the window is currently maximized
+    */
+    [attribute] boolean IsMaximized;
+
+    /** controls whether the window is currently minimized
+    */
+    [attribute] boolean IsMinimized;
+
+    /** controls on which display the window is shown.
+
+        <p>When retrieving this property, in case the window is positioned on multiple displays,
+        the number returned will be of the display containing the upper left pixel of the frame
+        area (that is of the client area on system decorated windows, or the frame area of
+        undecorated resp. owner decorated windows).</p>
+
+        @throws ::com::sun::star::lang::IndexOutOfBoundsException
+            if you attempt to set this property to a value which does not correspond to the number
+            of an existing screen.
+
+        @see com::sun::star::awt::DisplayAccess
+        @see com::sun::star::awt::DisplayInfo
+    */
+    [attribute] long Display
+    {
+        set raises (::com::sun::star::lang::IndexOutOfBoundsException);
+    };
+};
+
+//=============================================================================
+
+}; }; }; }; 
+
+//=============================================================================
+
+#endif

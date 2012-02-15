@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<meta>
+<topic id="textscalcguidecellreferences_urlxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">References to Other Sheets and Referencing URLs</title>
+<filename>/text/scalc/guide/cellreferences_url.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150441"><bookmark_value>HTML; in sheet cells</bookmark_value>
+<bookmark_value>references; URL in cells</bookmark_value>
+<bookmark_value>cells; Internet references</bookmark_value>
+<bookmark_value>URL; in Calc</bookmark_value>
+</bookmark><comment>mw deleted "sheet references;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3150441" role="heading" level="1" l10n="CHG"
+oldref="15"><variable id="cellreferences_url"><link href="text/scalc/guide/cellreferences_url.xhp" name="Referencing URLs">Referencing URLs</link>
+</variable></paragraph>
+<paragraph xml-lang="en-US" id="par_id1955626" role="paragraph" l10n="NEW">For example, if you found an Internet page containing current stock exchange information in spreadsheet cells, you can load this page in $[officename] Calc by using the following procedure:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3152993" role="listitem" l10n="U" oldref="39">In a $[officename] Calc document, position the cursor in the cell into which you want to insert the external data.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3145384" role="listitem" l10n="U" oldref="40">Choose <item type="menuitem">Insert - Link to External Data</item>. The <link href="text/scalc/01/04090000.xhp" name="External Data"><item type="menuitem">External Data</item></link> dialog appears.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3152892" role="listitem" l10n="U" oldref="41">Enter the URL of the document or Web page in the dialog. The URL must be in the format: http://www.my-bank.com/table.html. The URL for local or local area network files is the path seen in the <item type="menuitem">File - Open</item> dialog.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153068" role="listitem" l10n="U" oldref="42">$[officename] loads the Web page or file in the "background", that is, without displaying it. In the large list box of the <item type="menuitem">External Data</item> dialog, you can see the name of all the sheets or named ranges you can choose from.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3153914" role="listitem" l10n="CHG" oldref="43">Select one or more sheets or named ranges. You can also activate the automatic update function every "n" seconds and click <item type="menuitem">OK</item>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3157979" role="listitem" l10n="U" oldref="44">The contents will be inserted as a link in the $[officename] Calc document.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3144768" role="listitem" l10n="U" oldref="30">Save your spreadsheet. When you open it again later, $[officename] Calc will update the linked cells following an inquiry.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3159204" role="listitem" l10n="U" oldref="38">Under <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01040900.xhp" name="Spreadsheet - General"><item type="menuitem">%PRODUCTNAME Calc - General</item></link> you can choose to have the update, when opened, automatically carried out either always, upon request or never. The update can be started manually in the dialog under <item type="menuitem">Edit - Links</item>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/scalc/guide/webquery.xhp#webquery"/>
+<embed href="text/scalc/guide/cellreferences.xhp#cellreferences"/>
+</section>
+</body>
+</helpdocument>

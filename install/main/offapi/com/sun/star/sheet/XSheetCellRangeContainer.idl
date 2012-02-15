@@ -1,0 +1,123 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_XSheetCellRangeContainer_idl__
+#define __com_sun_star_sheet_XSheetCellRangeContainer_idl__
+
+#ifndef __com_sun_star_sheet_XSheetCellRanges_idl__
+#include <com/sun/star/sheet/XSheetCellRanges.idl>
+#endif
+
+#ifndef __com_sun_star_table_CellRangeAddress_idl__
+#include <com/sun/star/table/CellRangeAddress.idl>
+#endif
+
+#ifndef __com_sun_star_container_NoSuchElementException_idl__
+#include <com/sun/star/container/NoSuchElementException.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** provides methods to access cell ranges in a collection via index and
+	to add and remove cell ranges.
+
+	@see com::sun::star::sheet::SheetCellRanges
+ */
+published interface XSheetCellRangeContainer: com::sun::star::sheet::XSheetCellRanges
+{
+	//-------------------------------------------------------------------------
+
+	/** adds the given range to the collection of cell ranges.
+
+		@param aCellRangeAddress
+			contains the address of the new range.
+
+		@param bMergeRanges
+			defines how the range should be added. To merge the ranges
+			takes more time, but the memory usage is lower.
+	 */
+	void addRangeAddress(
+			[in] com::sun::star::table::CellRangeAddress aCellRangeAddress,
+			[in] boolean bMergeRanges );
+
+	//-------------------------------------------------------------------------
+
+	/** removes the given range from the collection of cell ranges.
+
+		@param aCellRangeAddress
+			contains the address of the range to be removed.
+
+			<p>The specified range must fit exactly to an element of the
+			collection. The method does not try to shorten a range.</p>
+
+		@throws <type scope="com::sun::star::container">NoSuchElementException</type>
+			if the collection does not contain the specified range.
+	 */
+	void removeRangeAddress(
+			[in] com::sun::star::table::CellRangeAddress aCellRangeAddress )
+		raises( com::sun::star::container::NoSuchElementException );
+
+	//-------------------------------------------------------------------------
+
+	/** adds the given ranges to the collection of cell ranges.
+
+		@param aCellRangeAddresses
+			contains a sequence of addresses of all new ranges.
+
+		@param bMergeRanges
+			defines how the ranges should be added. To merge the ranges
+			takes more time, but the memory usage is lower.
+	 */
+	void addRangeAddresses(
+			[in] sequence<com::sun::star::table::CellRangeAddress> aCellRangeAddresses,
+			[in] boolean bMergeRanges );
+
+	//-------------------------------------------------------------------------
+
+	/** removes the given ranges from the collection of cell ranges.
+
+		@param aCellRangeAddresses
+			contains a sequence of addresses of all ranges to be removed.
+
+			<p>All specified ranges must fit exactly to elements of the
+			collection. The method does not try to shorten ranges.</p>
+
+		@throws <type scope="com::sun::star::container">NoSuchElementException</type>
+			if the collection does not contain any of the specified ranges.
+	 */
+	void removeRangeAddresses(
+			[in] sequence<com::sun::star::table::CellRangeAddress> aCellRangeAddresses )
+		raises( com::sun::star::container::NoSuchElementException);
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

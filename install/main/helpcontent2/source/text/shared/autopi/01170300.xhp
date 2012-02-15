@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01170300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Select Table</title>
+<filename>/text/shared/autopi/01170300.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="tabauswahl">
+<paragraph role="heading" id="hd_id3149748" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/autopi/01170300.xhp" name="Select Table">Select Table</link></paragraph>
+<paragraph role="paragraph" id="par_id3156211" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".">Specifies a table from the Seamonkey / Netscape address book source that is used as the address book in $[officename].</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#addressimport3"/>
+</section>
+<paragraph role="paragraph" id="par_id3155150" xml-lang="en-US" l10n="U" oldref="3">All tables from the first user profile will be registered for this data source in $[officename]. You must specify one as the table that will be used in the $[officename] templates.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/extensions:ListBox:RID_PAGE_TABLESELECTION:LB_TABLELIST" id="bm_id3147399" localize="false"/>
+<paragraph role="heading" id="hd_id3154927" xml-lang="en-US" level="2" l10n="U" oldref="4">List box</paragraph>
+<paragraph role="paragraph" id="par_id3147043" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="extensions:ListBox:RID_PAGE_TABLESELECTION:LB_TABLELIST">Specifies the table that is to serve as the address book for the $[officename] templates.</ahelp></paragraph>
+<paragraph role="tip" id="par_id3152801" xml-lang="en-US" l10n="U" oldref="6">You can make changes to the templates and documents at a later time by choosing <emph>Edit - Exchange Database</emph>.</paragraph>
+</body>
+</helpdocument>

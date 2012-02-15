@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0104130000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Expand Slide</title>
+<filename>/text/simpress/01/04130000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-10T11:10:30">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="seitegliederung">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146119"><bookmark_value>expanding;slides</bookmark_value>
+<bookmark_value>slides;expanding</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExpandPage" id="bm_id7530302" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ExpandPage" id="bm_id3154014" localize="false"/>
+<paragraph role="heading" id="hd_id3146119" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/simpress/01/04130000.xhp" name="Expand Slide">Expand Slide</link></paragraph>
+<paragraph role="paragraph" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:ExpandPage">Creates a new slide from every top-level outline point (text one level below the title text in the outline hierarchy) in the selected slide. The outline text becomes the title of the new slide.</ahelp> Outline points<comment>points?</comment> below the top level on the original slide are moved up one level on the new slide.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000404.xhp#seitegliederung"/>
+</section>
+<paragraph role="paragraph" id="par_id3146972" xml-lang="en-US" l10n="U" oldref="3">You can only use the <emph>Expand Slide </emph>command if your slide layout contains a title object and an outline object.</paragraph>
+<paragraph role="paragraph" id="par_id3149019" xml-lang="en-US" l10n="CHG" oldref="4">If you want to keep the original slide, choose <emph>Edit - Undo</emph>.</paragraph>
+</body>
+</helpdocument>

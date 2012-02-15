@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress01effectoptionstimingxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Timing</title>
+<filename>/text/simpress/01/effectoptionstiming.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10544" xml-lang="en-US" level="1" l10n="NEW"><variable id="timing"><link href="text/simpress/01/effectoptionstiming.xhp">Timing</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN10562" xml-lang="en-US" l10n="NEW">Specifies the timing for the current effect in the <link href="text/simpress/01/effectoptions.xhp">Effect Options</link> dialog.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_TP_CUSTOMANIMATION_DURATION:LB_START" id="bm_id1604358" localize="false"/><paragraph role="heading" id="par_idN1057D" xml-lang="en-US" level="2" l10n="NEW">Start</paragraph>
+<paragraph role="paragraph" id="par_idN1066F" xml-lang="en-US" l10n="NEW"><ahelp hid="878841346">Displays the start property of the selected animation effect.</ahelp> The following start properties are available:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10675" xml-lang="en-US" l10n="NEW">
+<emph>On click</emph> - the animation stops at this effect until the next mouse click.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1067C" xml-lang="en-US" l10n="NEW">
+<emph>With previous</emph> - the animation runs immediately.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10683" xml-lang="en-US" l10n="NEW">
+<emph>After previous</emph> - the animation runs as soon as the previous animation ends.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:RID_TP_CUSTOMANIMATION_DURATION:MF_START_DELAY" id="bm_id3206274" localize="false"/><paragraph role="heading" id="par_idN10583" xml-lang="en-US" level="2" l10n="NEW">Delay</paragraph>
+<paragraph role="paragraph" id="par_idN10693" xml-lang="en-US" l10n="NEW"><ahelp hid="878844420">Specifies an additional delay of n seconds until the effect starts.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ComboBox:RID_TP_CUSTOMANIMATION_DURATION:CB_DURATION" id="bm_id5189977" localize="false"/><paragraph role="heading" id="par_idN10587" xml-lang="en-US" level="2" l10n="NEW">Speed</paragraph>
+<paragraph role="paragraph" id="par_idN106A0" xml-lang="en-US" l10n="NEW"><ahelp hid="878841862">Specifies the duration of the effect.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ComboBox:RID_TP_CUSTOMANIMATION_DURATION:CB_REPEAT" id="bm_id9711294" localize="false"/><paragraph role="heading" id="par_idN1058B" xml-lang="en-US" level="2" l10n="NEW">Repeat</paragraph>
+<paragraph role="paragraph" id="par_idN106AD" xml-lang="en-US" l10n="NEW"><ahelp hid="878841864">Specifies whether and how to repeat the current effect.</ahelp> Enter the number of repeats, or select from the list:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN106B3" xml-lang="en-US" l10n="NEW">
+<emph>(none)</emph> - the effect is not repeated.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106BA" xml-lang="en-US" l10n="NEW">
+<emph>Until next click</emph> - the animation is repeated until the next mouse click.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106C1" xml-lang="en-US" l10n="NEW">
+<emph>Until end of slide</emph> - the animation repeats as long as the slide is displayed.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_TP_CUSTOMANIMATION_DURATION:CBX_REWIND" id="bm_id8539689" localize="false"/><paragraph role="heading" id="par_idN1058F" xml-lang="en-US" level="2" l10n="NEW">Rewind when done playing</paragraph>
+<paragraph role="paragraph" id="par_idN106D1" xml-lang="en-US" l10n="NEW"><ahelp hid="878838793">Specifies whether to let the animated shape return to its starting state after the animation ends.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:RID_TP_CUSTOMANIMATION_DURATION:RB_CLICKSEQUENCE" id="bm_id2061525" localize="false"/><paragraph role="heading" id="par_idN10593" xml-lang="en-US" level="2" l10n="NEW">Animate as part of click sequence</paragraph>
+<paragraph role="paragraph" id="par_idN106DE" xml-lang="en-US" l10n="NEW"><ahelp hid="878838283">Specifies whether to let the animation start in the normal click sequence.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:RID_TP_CUSTOMANIMATION_DURATION:RB_INTERACTIVE" id="bm_id1462752" localize="false"/><paragraph role="heading" id="par_idN10597" xml-lang="en-US" level="2" l10n="NEW">Start effect on click of</paragraph>
+<paragraph role="paragraph" id="par_idN106EB" xml-lang="en-US" l10n="NEW"><ahelp hid="878838284">Specifies whether to let the animation start when a specified shape is clicked.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_TP_CUSTOMANIMATION_DURATION:LB_TRIGGER" id="bm_id2343821" localize="false"/><paragraph role="paragraph" id="par_idN107C5" xml-lang="en-US" l10n="NEW"><ahelp hid="878841357">Select the shape by its name from the list box.</ahelp></paragraph>
+</body>
+</helpdocument>

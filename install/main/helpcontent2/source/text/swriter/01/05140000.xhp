@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriter0105140000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Styles and Formatting</title>
+         <filename>/text/swriter/01/05140000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="gestalter">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3907589"><bookmark_value>Styles and Formatting window;applying styles</bookmark_value>
+</bookmark><comment>mw deleted "applying;."</comment>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLATE_FMT" id="bm_id7354350" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154505" role="heading" level="1" l10n="CHG"
+                    oldref="1"><link href="text/swriter/01/05140000.xhp" name="Styles and Formatting">Styles and Formatting</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148391" role="paragraph" l10n="CHG" oldref="2"><ahelp hid=".">Use the Styles and Formatting window to apply, create, edit, add, and remove formatting styles. Double-click an entry to apply the style.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:EditStyle" id="bm_id0122200903162640" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0122200903183687" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Choose Edit Paragraph Style in the context menu of a paragraph to edit the style of all paragraphs of the same style.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00040500.xhp#gestalter"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_idN106EF" role="paragraph" l10n="CHG">To <link href="text/shared/00/00000005.xhp#andocken" name="dock">dock</link> the Styles and Formatting window, drag its title bar to the left or to the right side of the workspace. To undock the window, double-click a free space on its toolbar.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3147167" role="heading" level="2" l10n="U"
+                 oldref="37">How to apply a style:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151264" role="listitem" l10n="U" oldref="38">Select the text. To apply a Character Style to one word, click the word. To apply a Paragraph Style, click the paragraph.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150756" role="listitem" l10n="CHG" oldref="39">Double-click the style in the Styles and Formatting window.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1071D" role="tip" l10n="NEW">You can assign shortcut keys to Styles on the <emph>Tools - Customize - Keyboard</emph> tab page.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154643" role="paragraph" l10n="CHG" oldref="4">The Styles and Formatting toolbar contains icons for formatting your documents:</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153146" role="heading" level="2" l10n="CHG"
+                 oldref="5">Style Category</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ParaStyle" id="bm_id5183654" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ParaStyle" id="bm_id3149811" localize="false"/>
+<table id="tbl_id3149753">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147506" role="paragraph" l10n="E">
+<image id="img_id3147512" src="sfx2/res/styfam2.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3147512">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154106" role="tablehead" l10n="U" oldref="6">Paragraph Styles</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3149800" role="paragraph" l10n="U" oldref="7"><ahelp hid=".uno:ParaStyle">Displays formatting styles for paragraphs.</ahelp> Use paragraph styles to apply the same <link href="text/shared/00/00000005.xhp#formatierung" name="formatting">formatting</link>, such as font, numbering, and layout to the paragraphs in your document.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:CharStyle" id="bm_id8801201" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:CharStyle" id="bm_id3155897" localize="false"/>
+<table id="tbl_id3153673">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151319" role="paragraph" l10n="E">
+<image id="img_id3152955" src="sfx2/res/styfam1.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3152955">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150351" role="tablehead" l10n="U" oldref="8">Character Styles</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3154570" role="paragraph" l10n="U" oldref="9"><ahelp hid=".uno:CharStyle">Displays formatting styles for characters.</ahelp> Use character styles to apply font styles to selected text in a paragraph.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:FrameStyle" id="bm_id9644609" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FrameStyle" id="bm_id3149490" localize="false"/>
+<table id="tbl_id3149688">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159194" role="paragraph" l10n="E">
+<image id="img_id3159200" src="sw/imglst/sf03.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3159200">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151332" role="tablehead" l10n="U" oldref="10">Frame Styles</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3143282" role="paragraph" l10n="U" oldref="11"><ahelp hid=".uno:FrameStyle">Displays formatting styles for frames.</ahelp> Use frame styles to format frame layouts and position.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:PageStyle" id="bm_id1836178" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:PageStyle" id="bm_id3153633" localize="false"/>
+<table id="tbl_id3154831">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149819" role="paragraph" l10n="E">
+<image id="img_id3149826" src="sw/imglst/sf04.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3149826">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148976" role="tablehead" l10n="U" oldref="12">Page Styles</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147220" role="paragraph" l10n="U" oldref="13"><ahelp hid=".uno:PageStyle">Displays formatting styles for pages.</ahelp> Use page styles to determine page layouts, including the presence of headers and footers.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ListStyle" id="bm_id8443551" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ListStyle" id="bm_id3146310" localize="false"/>
+<table id="tbl_id3149034">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152766" role="tablehead" l10n="E">
+<image id="img_id3152772" src="sw/imglst/sf05.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3152772">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154390" role="tablehead" l10n="CHG" oldref="28">List Styles</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3153361" role="paragraph" l10n="CHG" oldref="27"><ahelp hid=".uno:TemplateFamily5">Displays formatting styles for numbered and bulleted lists.</ahelp> Use list styles to format number and bullet characters and to specify indents.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_WATERCAN" id="bm_id3151377" localize="false"/>
+<table id="tbl_id3151030">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150576" role="paragraph" l10n="E">
+<image id="img_id3150590" src="res/commandimagelist/sc_fillstyle.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3150590">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145786" role="tablehead" l10n="U" oldref="14">Fill Format Mode</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3156379" role="paragraph" l10n="U" oldref="15"><ahelp hid="HID_TEMPLDLG_WATERCAN">Applies the selected style to the object or text that you select in the document. Click this icon, and then drag a selection in the document to apply the style.</ahelp> To exit this mode, click the icon again, or press Esc.</paragraph>
+               <embed href="text/swriter/guide/stylist_fillformat.xhp#stylist_fillformat"/>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <table id="tbl_id3155923">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150114" role="paragraph" l10n="E">
+<image id="img_id3150122" src="res/commandimagelist/sc_stylenewbyexample.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3150122">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147490" role="tablehead" l10n="U" oldref="18">New Style from Selection</paragraph>
+               <paragraph xml-lang="en-US" id="par_idN109BB" role="paragraph" l10n="NEW"><ahelp hid=".">Opens a submenu with more commands.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_NEWBYEXAMPLE" id="bm_id3149563" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN109DA" role="paragraph" l10n="NEW">New style from selection</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3149552" role="paragraph" l10n="U" oldref="19"><ahelp hid=".">Creates a new style based on the formatting of the current paragraph, page, or selection.</ahelp></paragraph>
+               <embed href="text/swriter/guide/stylist_fromselect.xhp#stylist_fromselect"/>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_UPDATEBYEXAMPLE" id="bm_id9001129" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10A04" role="paragraph" l10n="NEW">Update style</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3146333" role="paragraph" l10n="CHG" oldref="22"><ahelp hid="HID_TEMPLDLG_UPDATEBYEXAMPLE">The manually formatted attributes of the text at the cursor position in the document will be added to the style that is selected in the Styles and Formatting window.</ahelp></paragraph>
+               <embed href="text/swriter/guide/stylist_update.xhp#stylist_update"/><comment>UFI: removed help ids</comment>
+<paragraph xml-lang="en-US" id="par_idN10A31" role="paragraph" l10n="NEW">Load style</paragraph>
+               <paragraph xml-lang="en-US" id="par_idN10A36" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the Load Styles dialog to import styles from another document.</ahelp></paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3148860" role="tip" l10n="CHG" oldref="25">More information about <link href="text/swriter/01/05130000.xhp" name="styles">styles</link>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155576" role="heading" level="2" l10n="U"
+                 oldref="26">Applied Styles</paragraph>
+      <embed href="text/shared/02/02010000.xhp#benvortext"/>
+   </body>
+</helpdocument>

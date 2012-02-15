@@ -1,0 +1,57 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+#ifndef MACOSX
+Directory gid_Dir_Brand_Root
+    ParentID = PREDEFINED_PROGDIR;
+  #ifdef WNT
+    HostName = "${PRODUCTNAME} ${BRANDPACKAGEVERSION}";
+  #else
+    HostName = "${UNIXPRODUCTNAME}${BRANDPACKAGEVERSION}";
+  #endif
+    Styles = (OFFICEDIRECTORY,ISINSTALLLOCATION);
+End
+#endif
+
+File gid_Brand_File_ServicesRdb
+    TXT_FILE_BODY;
+    Dir = gid_Brand_Dir_Program;
+    Name = "/ooo/services.rdb";
+    Styles = (PACKED);
+End
+
+ProfileItem gid_Brand_Profileitem_Bootstrap_Errorreport_Server
+    ProfileID = gid_Brand_Profile_Bootstrap_Ini;
+    ModuleID = gid_Module_Root_Brand;
+    Section = "ErrorReport";
+    Order = 8;
+    Key = "ErrorReportServer";
+  #if defined(BUILD_SPECIAL)
+    Value = "report.services.openoffice.org";
+  #else
+    Value = "";
+  #endif
+End
+

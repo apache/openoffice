@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="svx_SvxShapeGroup" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+' Requiered for  com.sun.star.drawing.XShapes
+ Global oXShapeInstance As Object 'to add/remove
+
+' Requiered for  com.sun.star.lang.XComponent
+ Global oComponentInstance As Object ' it will be disposed
+
+' Requiered for  com.sun.star.drawing.XShapeDescriptor
+ Global cShapeType As String
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' svx.SvxShapeGroup
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim bOK As Boolean
+    Dim oInstance As Object, oDP As Object
+
+    bOK = true
+
+    oDoc = utils.createDocument("sdraw", cObjectName)
+
+    oDP = oDoc.DrawPages(0)
+    oInstance = CreateShape(1000, 2000, 4000, 3000, "LineShape")
+    oDP.add(oInstance)
+
+    oInstance = CreateShape(1000, 2000, 3000, 4000, "LineShape")
+    oDP.add(oInstance)
+
+    oObj = oDP.group(oDP)
+
+    oXShapeInstance = CreateShape(1000, 6000, 4000, 3000, "EllipseShape")
+    oDP.add(oXShapeInstance)
+
+    oComponentInstance = CreateShape(10000, 5000, 6000, 4000, "RectangleShape")
+    oDP.add(oComponentInstance)
+
+    cShapeType = "com.sun.star.drawing.GroupShape"
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+Function CreateShape(x As Integer, y As Integer, width As Integer, height As Integer, kind As String)
+    Dim oShape As Object
+    Dim pos As new com.sun.star.awt.Point
+    Dim size As new com.sun.star.awt.Size
+    
+    oShape = oDoc.createInstance("com.sun.star.drawing." + kind)
+    pos.X = x
+    pos.Y = y
+    oShape.setPosition(pos)
+    size.Width = width
+    size.Height = height
+    oShape.setSize(size)
+
+    CreateShape = oShape
+End Function
+</script:module>

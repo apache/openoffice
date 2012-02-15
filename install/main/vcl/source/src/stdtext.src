@@ -1,0 +1,126 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#define _SV_STDTEXT_SRC
+
+#include <svids.hrc>
+
+String SV_STDTEXT_SERVICENOTAVAILABLE
+{
+	Text [ en-US ] = "The component (%s) could not be loaded.\nPlease start setup with the repair option.";
+};
+
+String SV_STDTEXT_DONTHINTAGAIN
+{
+    Text [ en-US ] = "Do not show this information again.";
+};
+
+String SV_STDTEXT_DONTASKAGAIN
+{
+    Text [ en-US ] = "Do not show this question again.";
+};
+
+String SV_STDTEXT_DONTWARNAGAIN
+{
+	Text [ en-US ] = "Do not show warning again.";
+};
+
+String SV_ACCESSERROR_WRONG_VERSION
+{
+    Text [ en-US ] = "Wrong Version";
+};
+
+String SV_ACCESSERROR_BRIDGE_MSG
+{
+    Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility.";
+};
+
+String SV_ACCESSERROR_OK_CANCEL_MSG
+{
+    Text [ en-US ] = "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION.";
+};
+
+String SV_ACCESSERROR_MISSING_BRIDGE
+{
+	Text [ en-US ] = "No Java Access Bridge";
+};
+
+String SV_ACCESSERROR_FAULTY_JAVA
+{
+	Text [ en-US ] = "Faulty Java Installation";
+};
+
+String SV_ACCESSERROR_JAVA_MSG
+{
+    Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility.";
+};
+
+String SV_ACCESSERROR_MISSING_JAVA
+{
+	Text [ en-US ] = "No Java Installation";
+};
+
+String SV_ACCESSERROR_JAVA_NOT_CONFIGURED
+{
+    Text [ en-US ] = "Missing Java Configuration";
+};
+
+String SV_ACCESSERROR_JAVA_DISABLED
+{
+    Text [ en-US ] = "Java Disabled";
+};
+
+String SV_ACCESSERROR_TURNAROUND_MSG
+{
+    Text [ en-US ] = "The Java Access Bridge could not be started.";
+};
+
+String SV_ACCESSERROR_NO_FONTS
+{
+    Text [ en-US ] = "No fonts could be found on the system.";
+};
+
+String SV_STDTEXT_ABOUT
+{
+    Text [ en-US ] = "About %PRODUCTNAME";
+};
+
+String SV_STDTEXT_PREFERENCES
+{
+    Text [ en-US ] = "Preferences...";
+};
+
+WarningBox  SV_EDIT_WARNING_BOX
+{
+    Message [en-US] = "The inserted text exceeded the maximum length of this text field. The text was truncated.";
+};
+
+String SV_MAC_SCREENNNAME
+{
+    Text [en-US] = "Screen %d";
+};
+
+String SV_STDTEXT_ALLFILETYPES
+{
+    Text [en-US] = "Any type";
+};

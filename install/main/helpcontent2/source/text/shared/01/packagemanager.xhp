@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><helpdocument version="1.0">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<meta>
+<topic id="textshared01packagemanagerxml" indexer="include">
+<title xml-lang="en-US" id="tit">Extension Manager</title>
+<filename>shared/01/packagemanager.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="packagemanager">
+<bookmark xml-lang="en-US" branch="index" id="bm_id2883388">
+<bookmark_value>UNO components;Extension Manager</bookmark_value>
+<bookmark_value>extensions;Extension Manager</bookmark_value>
+<bookmark_value>packages, see extensions</bookmark_value>
+</bookmark><comment>MW corrected typos in "UNO components;...", made "Extension Manager" a two level entry and changed the "packages" reference</comment>
+<bookmark xml-lang="en-US" branch="hid/DESKTOP_HID_PACKAGE_MANAGER_MENU_ITEM" id="bm_id307931" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/service:com.sun.star.deployment.ui.PackageManagerDialog" id="bm_id2198553" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DESKTOP_HID_PACKAGE_MANAGER" id="bm_id828882" localize="false"/>
+<paragraph id="par_idN10543" role="heading" xml-lang="en-US" level="1"><link href="text/shared/01/packagemanager.xhp">Extension Manager</link></paragraph><comment>renamed in i69568</comment>
+<paragraph id="par_idN10553" role="paragraph" xml-lang="en-US"><ahelp hid="42772">The Extension Manager adds, removes, disables, enables, and updates %PRODUCTNAME extensions.</ahelp></paragraph>
+</section>
+<section id="howtoget"><embed href="text/shared/00/00000406.xhp#packagemanager"/>
+</section>
+<paragraph id="par_idN10615" role="paragraph" xml-lang="en-US">The following are examples of %PRODUCTNAME extensions:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph id="par_idN1061B" role="paragraph" xml-lang="en-US">UNO components (compiled software modules)</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN1061F" role="paragraph" xml-lang="en-US">Configuration data (for menu commands)</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN10623" role="paragraph" xml-lang="en-US">%PRODUCTNAME Basic libraries</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN106E8" role="paragraph" xml-lang="en-US">%PRODUCTNAME dialog libraries</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN106F5" role="paragraph" xml-lang="en-US">Extension files (*.oxt files containing one or more extensions of the above listed types)</paragraph>
+</listitem>
+</list>
+<paragraph id="hd_id8570513" role="heading" xml-lang="en-US" level="2">Extension Scope</paragraph>
+<paragraph id="par_idN1068A" role="paragraph" xml-lang="en-US">Users with administrator or root privileges will see a dialog where they can choose to install extensions "for all users" or "only for me". Normal users without those privileges can install, remove, or modify extensions only for their own use.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph id="par_idN10626" role="paragraph" xml-lang="en-US">A user with root or administrator privileges can install an extension as a shared extension that is available to all users. After selecting an extension, a dialog opens and asks whether to install for the current user or all users.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_idN1069C" role="paragraph" xml-lang="en-US">A user without root privileges can only install an extension for own usage. This is called a user extension.</paragraph>
+</listitem>
+</list><comment>UFI: Extension Guide needed. Until we have that guide, I'll add some more info in this file.</comment>
+<paragraph id="hd_id3895382" role="heading" xml-lang="en-US" level="2">To install an extension</paragraph>
+<paragraph id="par_id9143955" role="paragraph" xml-lang="en-US">An extension is available as a file with the file extension .oxt.</paragraph>
+<paragraph id="par_id7857905" role="paragraph" xml-lang="en-US">You can find a collection of extensions on the Web. Click the "Get more extensions here" link in the Extension Manager to open your Web browser and see the <link href="http://extensions.services.openoffice.org/">http://extensions.services.openoffice.org/</link> page.<comment># i78606</comment></paragraph>
+<paragraph id="hd_id5016937" role="heading" xml-lang="en-US" level="3">To install a user extension</paragraph>
+<paragraph id="par_id1856440" role="paragraph" xml-lang="en-US">Do any of the following:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph id="par_id7654347" role="paragraph" xml-lang="en-US">Double-click the <item type="literal">.oxt</item> file in your system's file browser.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id5269020" role="paragraph" xml-lang="en-US">On a web page, click a hyperlink to an <item type="literal">*.oxt</item> file (if your web browser can be configured to start the Extension Manager for this file type).</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id8714255" role="paragraph" xml-lang="en-US">Choose <item type="menuitem">Tools - Extension Manager</item> and click <item type="menuitem">Add</item>.</paragraph>
+</listitem>
+</list>
+<paragraph id="hd_id3734550" role="heading" xml-lang="en-US" level="4">To install a shared extension in text mode (for system administrators)</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph id="par_id4139225" role="paragraph" xml-lang="en-US">As an administrator, open a terminal or command shell.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id671712" role="paragraph" xml-lang="en-US">Change to the <switchinline select="sys"><caseinline select="WIN">\ 
+</caseinline><defaultinline>/</defaultinline></switchinline>program folder in your installation.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id4163945" role="paragraph" xml-lang="en-US">Enter the following command, using the path and file name of your extension:</paragraph>
+<paragraph id="par_id9581591" role="paragraph" xml-lang="en-US"><item type="literal">unopkg add --shared path_filename.oxt</item></paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/DESKTOP_HID_PACKAGE_MANAGER_TREELISTBOX" id="bm_id8800927" localize="false"/>
+<paragraph id="par_idN106AD" role="paragraph" xml-lang="en-US"><ahelp hid="42769">Select the extension that you want to remove, enable, or disable. For some extensions, you can also open an Options dialog.</ahelp></paragraph>
+<paragraph id="par_idN10639" role="heading" xml-lang="en-US" level="2">Add</paragraph>
+<paragraph id="par_idN106BA" role="paragraph" xml-lang="en-US"><ahelp hid="2180256276">Click Add to add an extension.</ahelp></paragraph>
+<paragraph id="par_idN106BD" role="paragraph" xml-lang="en-US">A file dialog opens where you can select the extension that you want to add. To copy and to register the selected extension, click Open.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/desktop:MultiLineEdit:RID_DLG_LICENSE:ML_LICENSE" id="bm_id2089297" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/desktop:PushButton:RID_DLG_LICENSE:PB_LICENSE_DOWN" id="bm_id3366801" localize="false"/>
+<paragraph id="par_id4856410" role="paragraph" xml-lang="en-US">An extension can show a license dialog. <ahelp hid=".">Read the license. Click the Scroll Down button to scroll down if necessary. Click Accept to continue the installation of the extension.</ahelp></paragraph><comment>insert hidden text for Show License</comment>
+<bookmark xml-lang="en-US" branch="hid/DESKTOP_HID_EXTENSION_MANAGER_LISTBOX_REMOVE" id="bm_id0523200810562584" localize="false"/>
+<paragraph id="par_idN10643" role="heading" xml-lang="en-US" level="2">Remove</paragraph>
+<paragraph id="par_idN106D1" role="paragraph" xml-lang="en-US"><ahelp hid="2180256277">Select the extension that you want to remove, and then click Remove.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DESKTOP_HID_EXTENSION_MANAGER_LISTBOX_DISABLE" id="bm_id0523200810570553" localize="false"/>
+<paragraph id="par_id0523200810573866" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">Enable or disable the extension.</ahelp></paragraph>
+<paragraph id="par_idN1064D" role="heading" xml-lang="en-US" level="2">Enable</paragraph>
+<paragraph id="par_idN106DE" role="paragraph" xml-lang="en-US"><ahelp hid="2180256278">Select the extension that you want to enable, and then click Enable.</ahelp></paragraph>
+<paragraph id="par_idN10657" role="heading" xml-lang="en-US" level="2">Disable</paragraph>
+<paragraph id="par_idN106EB" role="paragraph" xml-lang="en-US"><ahelp hid="2180256279">Select the extension that you want to disable, and then click Disable.</ahelp></paragraph>
+<paragraph id="hd_id4453566" role="heading" xml-lang="en-US" level="2">Update</paragraph>
+<paragraph id="par_id4129459" role="paragraph" xml-lang="en-US"><ahelp hid=".">Click to check for online updates of all installed extensions. To check for updates of the selected extension only, choose the Update command from the context menu. The check for availability of updates starts immediately.</ahelp> You will see the <link href="text/shared/01/extensionupdate.xhp">Extension Update</link> dialog.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DESKTOP_HID_EXTENSION_MANAGER_LISTBOX_OPTIONS" id="bm_id052320081054360" localize="false"/>
+<paragraph id="hd_id4921414" role="heading" xml-lang="en-US" level="2">Options</paragraph>
+<paragraph id="par_id1439558" role="paragraph" xml-lang="en-US"><ahelp hid=".">Select an installed extension, then click to open the Options dialog for the extension.</ahelp></paragraph>
+<paragraph id="par_id0103201110331832" role="paragraph" xml-lang="en-US">Some additional commands can appear in the context menu of an extension in the Extension Manager window, depending on the selected extension. You can choose to show the license text again. You can choose to exclude the extension from checking for updates or to include an excluded extension.</paragraph>
+</body>
+</helpdocument>

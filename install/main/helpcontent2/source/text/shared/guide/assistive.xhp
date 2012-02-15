@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguideassistivexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Assistive Tools in $[officename]</title>
+<filename>/text/shared/guide/assistive.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147399"><bookmark_value>accessibility; $[officename] assistive technology</bookmark_value>
+<bookmark_value>assistive technology in $[officename]</bookmark_value>
+<bookmark_value>screen readers</bookmark_value>
+<bookmark_value>screen magnifiers</bookmark_value>
+<bookmark_value>magnifiers</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147399" xml-lang="en-US" level="1" l10n="U" oldref="22"><variable id="assistive"><link href="text/shared/guide/assistive.xhp" name="Assistive Tools in $[officename]">Assistive Tools in $[officename]</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U" oldref="25">$[officename] supports some assistive technology tools like screen magnification software, screen readers, and on-screen keyboards. Most of these tools communicate with $[officename] by means of the Java(TM) Access Bridge software, that uses the Java Accessibility API, a part of the Java runtime environment.</paragraph>
+<paragraph role="tip" id="par_id8847010" xml-lang="en-US" l10n="NEW">A current list of supported assistive tools can be found on the OpenOffice.org Wiki at <link href="http://wiki.services.openoffice.org/wiki/Accessibility">http://wiki.services.openoffice.org/wiki/Accessibility</link>.</paragraph>
+<paragraph role="heading" id="hd_id3145345" xml-lang="en-US" level="2" l10n="U" oldref="12">Requirements to use assistive tools in $[officename]</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147209" xml-lang="en-US" l10n="U" oldref="13">Java Runtime Environment (JRE) version 1.4.1_01 and higher, or version 1.4.0_02 with the locale set to "en_us".</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146797" xml-lang="en-US" l10n="U" oldref="26">Most recent version of the software for your assistive tool</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149578" xml-lang="en-US" l10n="U" oldref="15">On Windows systems, <link href="http://www.sun.com/access/downloads/" name="Java Access Bridge">Java Access Bridge</link> software version 1.0.3 or higher </paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149762" xml-lang="en-US" l10n="U" oldref="16">On UNIX(R) systems, the GNOME 2 desktop environment with the Java Access Bridge software for GNOME</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3149795" xml-lang="en-US" level="2" l10n="U" oldref="23">Supported Assistive Tools</paragraph>
+<paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U" oldref="2">On Windows systems, $[officename] directly supports most on-screen keyboard software. Additional support for assistive tools is provided by the Java Access Bridge software. The following is a list of some assistive tools that use the Java Access Bridge software to exchange data with $[officename]:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156329" xml-lang="en-US" l10n="U" oldref="4">ZoomText Screen Magnifier (version 7.11 or higher)(Windows)</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155628" xml-lang="en-US" l10n="U" oldref="5">Gnopernicus Screen Reader and Magnifier, using GNOME Assistive Technology Service Provider Interface (at-spi) and Java Accessibility API software</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148474" xml-lang="en-US" l10n="U" oldref="6">GNOME On Screen Keyboard (GOK), using GNOME at-spi and Java Accessibility API software</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3153061" xml-lang="en-US" level="2" l10n="U" oldref="24">Supported Input Devices</paragraph>
+<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U" oldref="7">$[officename] provides the ability to use alternative input devices for access to all functions of $[officename].</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149045" xml-lang="en-US" l10n="U" oldref="8">Screen magnification software allow users with low vision to work in $[officename] with caret and focus tracking.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3152811" xml-lang="en-US" l10n="U" oldref="9">On-screen keyboards enable users to perform almost all data input and commands with a mouse.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="10">Screen readers allow visually impaired users to access $[officename] with text-to-speech and Braille displays.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3149808" xml-lang="en-US" l10n="U" oldref="11">When accessibility support in $[officename] is enabled, the Java Runtime Environment is loaded, and increases the startup time for $[officename].</paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/guide/accessibility.xhp#accessibility"/>
+<paragraph role="paragraph" id="par_id3152933" xml-lang="en-US" l10n="U" oldref="18"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010800.xhp" name="$[officename] - View">$[officename] - View</link></paragraph>
+<paragraph role="paragraph" id="par_id3155430" xml-lang="en-US" l10n="U" oldref="19"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01012000.xhp" name="$[officename] - Appearance">$[officename] - Appearance</link></paragraph>
+<paragraph role="paragraph" id="par_id3148617" xml-lang="en-US" l10n="U" oldref="20"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01013000.xhp" name="$[officename] - Accessibility">$[officename] - Accessibility</link></paragraph>
+<embed href="text/shared/guide/keyboard.xhp#keyboard"/>
+<embed href="text/shared/04/01010000.xhp#common_keys"/>
+</section>
+</body>
+</helpdocument>

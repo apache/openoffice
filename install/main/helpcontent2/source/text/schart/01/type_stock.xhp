@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textschart01type_stockxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Chart Type Stock</title>
+         <filename>/text/schart/01/type_stock.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id2959990"><bookmark_value>stock charts</bookmark_value>
+      <bookmark_value>chart types;stock</bookmark_value>
+      <bookmark_value>data sources;setting for stock charts</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<paragraph xml-lang="en-US" id="hd_id966216" role="heading" level="1" l10n="NEW"><variable id="type_stock"><link href="text/schart/01/type_stock.xhp">Chart Type Stock</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3516953" role="paragraph" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type. </paragraph>
+      <section id="howtoget">
+         <embed href="text/schart/00/00000004.xhp#wiz"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id5268410" role="heading" level="2" l10n="NEW">Stock</paragraph>
+      <paragraph xml-lang="en-US" id="par_id61342" role="paragraph" l10n="NEW">A Stock chart illustrates the market trend given by opening price, bottom price, top price and closing price. The transaction volume can also be shown.<comment>UFI: should we show example charts for every type?</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id2131412" role="paragraph" l10n="NEW">For a Stock chart the order of the data series is important. The data should be arranged as shown in the example table below.</paragraph>
+      <table id="tbl_id1370586">
+         <tablerow>
+            <tablecell>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1022064" role="tablehead" l10n="NEW">A</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1924192" role="tablehead" l10n="NEW">B</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3258156" role="tablehead" l10n="NEW">C</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3161412" role="tablehead" l10n="NEW">D</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id5619373" role="tablehead" l10n="NEW">E</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6474501" role="tablehead" l10n="NEW">F</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7411725" role="tablecontent" l10n="NEW">1</paragraph>
+            </tablecell>
+            <tablecell>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1933957" role="tablecontent" l10n="NEW">Transaction volume</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1274452" role="tablecontent" l10n="NEW">Opening price</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id5044404" role="tablecontent" l10n="NEW">Low (bottom price)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3892635" role="tablecontent" l10n="NEW">High (top price)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4641865" role="tablecontent" l10n="NEW">Closing price</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7684560" role="tablecontent" l10n="NEW">2</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3998840" role="tablecontent" l10n="NEW">Monday</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7675099" role="tablecontent" l10n="NEW">2500</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7806329" role="tablecontent" l10n="NEW">20</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id5589159" role="tablecontent" l10n="NEW">15</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id9936216" role="tablecontent" l10n="NEW">25</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7953123" role="tablecontent" l10n="NEW">17</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4013794" role="tablecontent" l10n="NEW">3</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1631824" role="tablecontent" l10n="NEW">Tuesday</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7271645" role="tablecontent" l10n="NEW">3500</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2136295" role="tablecontent" l10n="NEW">32</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4186223" role="tablecontent" l10n="NEW">22</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1491134" role="tablecontent" l10n="NEW">37</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2873622" role="tablecontent" l10n="NEW">30</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2374034" role="tablecontent" l10n="NEW">4</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1687063" role="tablecontent" l10n="NEW">Wednesday</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id8982207" role="tablecontent" l10n="NEW">1000</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7074190" role="tablecontent" l10n="NEW">15</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id5452436" role="tablecontent" l10n="NEW">15</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id9527878" role="tablecontent" l10n="NEW">17</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6342356" role="tablecontent" l10n="NEW">17</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id166936" role="tablecontent" l10n="NEW">5</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6826990" role="tablecontent" l10n="NEW">Thursday</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6897183" role="tablecontent" l10n="NEW">2200</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7003387" role="tablecontent" l10n="NEW">40</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4897915" role="tablecontent" l10n="NEW">30</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3105868" role="tablecontent" l10n="NEW">47</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3908810" role="tablecontent" l10n="NEW">35</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id9461653" role="tablecontent" l10n="NEW">6</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id9239173" role="tablecontent" l10n="NEW">Friday</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2656941" role="tablecontent" l10n="NEW">4600</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1481063" role="tablecontent" l10n="NEW">27</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7921079" role="tablecontent" l10n="NEW">20</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id636921" role="tablecontent" l10n="NEW">32</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2799157" role="tablecontent" l10n="NEW">31</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3004547" role="paragraph" l10n="NEW">The open, low, high, and closing values of a row build together one data unit in the chart. A stock price data series consists of several rows containing such data units. The column containing the transaction volume builds an optional second data series.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6401867" role="paragraph" l10n="NEW">Depending on the chosen variant, you do not need all columns.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id18616" role="heading" level="2" l10n="NEW">Stock Chart Variants</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6138492" role="paragraph" l10n="NEW">Choose the <emph>Stock</emph> chart type on the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart wizard</link>. Then select one of the four variants.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id4569231" role="heading" level="2" l10n="NEW">Type 1</paragraph>
+      <paragraph xml-lang="en-US" id="par_id291451" role="paragraph" l10n="NEW">Based on<emph> low</emph>
+         <emph>and high </emph>column the Type 1 shows the distance between bottom price (low) and top price (high) by a vertical line.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3341776" role="paragraph" l10n="NEW">Based on<emph> low, high,</emph> and <emph>close</emph> column Type 1 shows an additional horizontal mark <emph>for</emph> the closing price.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id5947141" role="heading" level="2" l10n="NEW">Type 2</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1911679" role="paragraph" l10n="CHG">Based on <emph>open, low, high</emph>, and <emph>close</emph> column Type 2 generates the traditional "candle stick" chart. Type 2 draws the vertical line between the bottom and top price and adds a rectangle in front, which visualizes the range between the opening and closing price. If you click on the rectangle you see more information in the status bar. %PRODUCTNAME uses different fill colors for rising values (the opening price is lower than the closing price) and falling values.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id9364909" role="heading" level="2" l10n="NEW">Type 3</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4473403" role="paragraph" l10n="CHG">Based on <emph>volume, low, high</emph>, and <emph>close</emph> column chart Type 3 draws a chart like Type 1, with additional columns for the transaction volume.<comment>i80596</comment></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id4313791" role="heading" level="2" l10n="NEW">Type 4</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4331797" role="paragraph" l10n="CHG">Based on all five data columns <emph>volume, open, low, high</emph>, and <emph>close</emph>, Type 4 combines a chart of Type 2 with a column chart for the transaction volume.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4191717" role="paragraph" l10n="NEW">Because measurement for transaction volume might be "units", a second y axis is introduced in chart Type 3 and Type 4. The price axis is shown on the right side and the volume axis on the left side.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id2318796" role="heading" level="2" l10n="NEW">Setting the Data Source</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id399182" role="heading" level="2" l10n="NEW">Charts based on its own data</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5298318" role="paragraph" l10n="NEW">To change the data series of a chart having its own data, choose <link href="text/schart/01/03010000.xhp">Chart Data Table</link> from the View menu or from the context menu of the chart in edit mode.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7588732" role="paragraph" l10n="NEW">In an embedded chart data table, the data series are always organized in columns.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id95828" role="paragraph" l10n="CHG">For a new stock chart first use a column chart. Add the columns you need and enter your data in the order which is shown in the example, omitting any columns not required for the desired variant. Use Move Series Right to change the column order. Close the chart data table. Now use the Chart Type dialog to change to the stock chart variant. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id6182744" role="paragraph" l10n="NEW">If you have already got a stock chart and you want to change the variant, then first change the chart type to a column chart, add or remove columns so that it fits to the variant, and then change the chart type back to a stock chart.<comment>Watch issue 72433 to see whether a change in the handling is done.</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3496200" role="paragraph" l10n="NEW">Do not write the name of a data series in a row. Write the name into the field above the role name.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7599108" role="paragraph" l10n="CHG">The order of the rows determines how the categories are arranged in the chart. Use Move Row Down to change the order.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id888698" role="heading" level="2" l10n="NEW">Charts based on Calc or Writer tables</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3394573" role="paragraph" l10n="NEW">You can choose or alter a data range on the second page of the Chart wizard or in the <link href="text/schart/01/wiz_data_range.xhp">Data Range</link> dialog. For fine tuning use the <link href="text/schart/01/wiz_data_series.xhp">Data Series</link> dialog.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7594225" role="paragraph" l10n="NEW">To specify a data range do one of the following:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5081637" role="paragraph" l10n="NEW">Enter the data range in the text box.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id9759514" role="paragraph" l10n="NEW">In Calc, an example data range would be "$Sheet1.$B$3:$B$14". Note that a data range may consist of more than one region in a spreadsheet, e.g. "$Sheet1.A1:A5;$Sheet1.D1:D5" is also a valid data range. In Writer, an example data range would be "Table1.A1:E4".</paragraph>
+            <paragraph xml-lang="en-US" id="par_id1614429" role="paragraph" l10n="NEW">As long as the syntax is not correct, %PRODUCTNAME shows the text in red.</paragraph>
+         </listitem>
+      </list>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1589098" role="paragraph" l10n="NEW">In Calc, click <emph>Select data range</emph> to minimize the dialog, then drag to select the data range. When you release the mouse, the data are entered. Click <emph>Select </emph>
+               <emph>data range</emph> again to add a data range. In the input field of the minimized dialog, click after the entry and type a semicolon. Then drag to select the next range.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id8746910" role="paragraph" l10n="NEW">Click one of the options for data series in rows or in columns. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id9636524" role="paragraph" l10n="NEW">Your stock chart data are "in columns", if the information in a row belongs to the same "candle stick".<comment>I don't know whether copying a table based chart to draw or impress needs chart data arranged in columns, and I cannot test it, because the clipboard is broken.</comment></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id5675527" role="heading" level="2" l10n="NEW">Fine Tuning the Data Ranges of Table Based Stock Charts</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3486434" role="paragraph" l10n="NEW">You can organize data series and edit the source for parts of single data series on the third page of the Chart wizard or on the page Data Series in the Data Range dialog.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3068636" role="heading" level="2" l10n="NEW">Organize Data Series</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2480849" role="paragraph" l10n="NEW">In the <emph>data series</emph> area on the left side of the dialog, you can organize the data series of the actual chart. A stock chart has at least one data series containing the prices. It might have a second data series for transaction volume.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4181951" role="paragraph" l10n="CHG">If you have got more than one price data series, use the Up and Down arrow buttons to order them. The order determines the arrangement in the chart. Do the same for volume data series. You cannot switch price and volume data series.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2927335" role="paragraph" l10n="NEW">To remove a data series, select the data series in the list and click <emph>Remove</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2107303" role="paragraph" l10n="NEW">To add a data series, select one of the existing data series and click <emph>Add</emph>. You get an empty entry below the selected one, which has the same type. If you have no price data series or no volume data series, you must first select a range for these series in the <emph>Data Range</emph> dialog.<comment>Regina: The behavior is odd, but I don't know a better solution. Therefore I have not written an issue.</comment></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id4071779" role="heading" level="2" l10n="NEW">Setting Data Ranges</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7844477" role="paragraph" l10n="NEW">In the <emph>Data Ranges</emph> dialog you can set or change the data range of each component of the selected data series.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6478469" role="paragraph" l10n="NEW">In the upper list you see the role name of the components and the current values. When you have selected a role, you can change the value in the text box below the list. The label shows the selected role.</paragraph><comment>deleted a para, see i80596</comment>
+<paragraph xml-lang="en-US" id="par_id9038972" role="paragraph" l10n="NEW">Enter the range into the text box or click on <emph>Select data range</emph> to minimize the dialog and select the range with the mouse.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7985168" role="paragraph" l10n="NEW">Select Open Values, Close Values, High Values, and Low Values in any order. Specify only the ranges for those roles which you need for the chosen variant of the stock chart. The ranges need not be next to each other in the table.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id876186" role="heading" level="2" l10n="NEW">Legend</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3939634" role="paragraph" l10n="NEW">The legend displays the labels from the first row or column or from the special range that you have set in the <emph>Data Series</emph> dialog. If your chart does not contain labels, the legend displays text like "Row 1, Row 2, ...", or "Column A, Column B, ..." according to the row number or column letter of the chart data.</paragraph><comment>deleted 3 paras</comment>
+<paragraph xml-lang="en-US" id="par_id2377697" role="paragraph" l10n="NEW">The legend shows the value from the range, which you entered in the <emph>Range for Name</emph> field in the <emph>Data Range</emph> dialog. The default entry is the column header of the closing price column.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2188787" role="paragraph" l10n="NEW">Select one of the position options. When the chart is finished, you can specify other positions using the Format menu.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+         <embed href="text/schart/01/wiz_chart_type.xhp#wiz_chart_type"/>
+         <embed href="text/schart/01/wiz_data_range.xhp#wiz_data_range"/>
+         <embed href="text/schart/01/wiz_data_series.xhp#wiz_data_series"/>
+         <embed href="text/schart/01/wiz_chart_elements.xhp#wiz_chart_elements"/>
+      </section>
+   </body>
+</helpdocument>

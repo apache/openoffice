@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03103800xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">FindObject Function [Runtime]</title>
+<filename>/text/sbasic/shared/03103800.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T12:04:39">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="findobject">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145136"><bookmark_value>FindObject function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145136" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103800.xhp" name="FindObject Function [Runtime]">FindObject Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U" oldref="2">Enables an object to be addressed at run-time as a string parameter through the object name.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="3">For example, the following command:</paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="4">MyObj.Prop1.Command = 5</paragraph>
+<paragraph role="paragraph" id="par_id3156023" xml-lang="en-US" l10n="U" oldref="5">corresponds to the command block:</paragraph>
+<paragraph role="paragraph" id="par_id3153896" xml-lang="en-US" l10n="U" oldref="6">Dim ObjVar as Object</paragraph>
+<paragraph role="paragraph" id="par_id3154760" xml-lang="en-US" l10n="U" oldref="7">Dim ObjProp as Object</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U" oldref="8">ObjName As String = "MyObj"</paragraph>
+<paragraph role="paragraph" id="par_id3154939" xml-lang="en-US" l10n="U" oldref="9">ObjVar = FindObject( ObjName As String )</paragraph>
+<paragraph role="paragraph" id="par_id3150793" xml-lang="en-US" l10n="U" oldref="10">PropName As String = "Prop1"</paragraph>
+<paragraph role="paragraph" id="par_id3154141" xml-lang="en-US" l10n="U" oldref="11">ObjProp = FindPropertyObject( ObjVar, PropName As String )</paragraph>
+<paragraph role="paragraph" id="par_id3156424" xml-lang="en-US" l10n="U" oldref="12">ObjProp.Command = 5</paragraph>
+<paragraph role="paragraph" id="par_id3145420" xml-lang="en-US" l10n="U" oldref="13">This allows names to be dynamically created at run-time. For example:</paragraph>
+<paragraph role="paragraph" id="par_id3153104" xml-lang="en-US" l10n="U" oldref="14">"TextEdit1" to TextEdit5" in a loop to create five control names.</paragraph>
+<paragraph role="paragraph" id="par_id3150767" xml-lang="en-US" l10n="U" oldref="15">See also: <link href="text/sbasic/shared/03103900.xhp" name="FindPropertyObject">FindPropertyObject</link></paragraph>
+<paragraph role="heading" id="hd_id3150868" xml-lang="en-US" level="2" l10n="U" oldref="16">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="17">FindObject( ObjName As String )</paragraph>
+<paragraph role="heading" id="hd_id3159254" xml-lang="en-US" level="2" l10n="U" oldref="18">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="19">
+<emph>ObjName: </emph>String that specifies the name of the object that you want to address at run-time.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<embed href="text/sbasic/shared/00000003.xhp#err12"/>
+</body>
+</helpdocument>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020404xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Dir Function [Runtime]</title>
+<filename>/text/sbasic/shared/03020404.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-09-27T17:09:01">converted from old format - fpe; bug fix: i29276</lastedited>
+</history>
+</meta>
+<body>
+<section id="dir">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154347"><bookmark_value>Dir function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154347" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020404.xhp" name="Dir Function [Runtime]">Dir Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153381" xml-lang="en-US" l10n="U" oldref="2">Returns the name of a file, a directory, or all of the files and the directories on a drive or in a directory that match the specified search path.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3156282" xml-lang="en-US" l10n="U" oldref="4">Dir [(Text As String) [, Attrib As Integer]]</paragraph>
+<paragraph role="heading" id="hd_id3156424" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
+<paragraph role="heading" id="hd_id3153770" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3161831" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Text:</emph> Any string expression that specifies the search path, directory or file. This argument can only be specified the first time that you call the Dir function. If you want, you can enter the path in <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="U" oldref="9">
+<emph>Attrib: </emph>Any integer expression that specifies bitwise file attributes. The Dir function only returns files or directories that match the specified attributes. You can combine several attributes by adding the attribute values:</paragraph>
+<paragraph role="paragraph" id="par_id3149666" xml-lang="en-US" l10n="U" oldref="11">0 : Normal files.</paragraph>
+<paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="15">16 : Returns the name of the directory only.</paragraph>
+<paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U" oldref="16">Use this attribute to check if a file or directory exists, or to determine all files and folders in a specific directory.</paragraph>
+<paragraph role="paragraph" id="par_id3159156" xml-lang="en-US" l10n="U" oldref="17">To check if a file exists, enter the complete path and name of the file. If the file or directory name does not exist, the Dir function returns a zero-length string ("").</paragraph>
+<paragraph role="paragraph" id="par_id3154012" xml-lang="en-US" l10n="U" oldref="18">To generate a list of all existing files in a specific directory, proceed as follows: The first time you call the Dir function, specify the complete search path for the files, for example, "D:\Files\*.sxw". If the path is correct and the search finds at least one file, the Dir function returns the name of the first file that matches the search path. To return additional file names that match the path, call Dir again, but with no arguments.</paragraph>
+<paragraph role="paragraph" id="par_id3147348" xml-lang="en-US" l10n="U" oldref="19">To return directories only, use the attribute parameter. The same applies if you want to determine the name of a volume (for example, a hard drive partition)</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<embed href="text/sbasic/shared/00000003.xhp#err53"/>
+<paragraph role="heading" id="hd_id3154942" xml-lang="en-US" level="2" l10n="U" oldref="20">Example:</paragraph>
+<paragraph role="code" id="par_id3147125" xml-lang="en-US" l10n="U" oldref="21">Sub ExampleDir</paragraph>
+<paragraph role="code" id="par_id3148455" xml-lang="en-US" l10n="U" oldref="22">REM Displays all files and directories</paragraph>
+<paragraph role="code" id="par_id3147396" xml-lang="en-US" l10n="U" oldref="23">Dim sPath As String</paragraph>
+<paragraph role="code" id="par_id3149378" xml-lang="en-US" l10n="U" oldref="24">Dim sDir as String, sValue as String</paragraph>
+<paragraph role="code" id="par_id3153416" xml-lang="en-US" l10n="U" oldref="27">sDir="Directories:"</paragraph>
+<paragraph role="code" id="par_id3153838" xml-lang="en-US" l10n="U" oldref="29">sPath = CurDir</paragraph>
+<paragraph role="code" id="par_id3150327" xml-lang="en-US" l10n="CHG" oldref="30">sValue = Dir$(sPath + getPathSeparator + "*",16)</paragraph>
+<paragraph role="code" id="par_id3155064" xml-lang="en-US" l10n="U" oldref="31">Do</paragraph>
+<paragraph role="code" id="par_id3153764" xml-lang="en-US" l10n="U" oldref="32">If sValue &lt;&gt; "." and sValue &lt;&gt; ".." Then</paragraph>
+<paragraph role="code" id="par_id3155766" xml-lang="en-US" l10n="U" oldref="33">if (GetAttr( sPath + getPathSeparator + sValue) AND 16) &gt;0 then</paragraph>
+<paragraph role="code" id="par_id3154253" xml-lang="en-US" l10n="U" oldref="34">REM get the directories</paragraph>
+<paragraph role="code" id="par_id3159264" xml-lang="en-US" l10n="U" oldref="35">sDir = sDir &amp; chr(13) &amp; sValue</paragraph>
+<paragraph role="code" id="par_id3145148" xml-lang="en-US" l10n="U" oldref="43">End If</paragraph>
+<paragraph role="code" id="par_idN10700" xml-lang="en-US" l10n="NEW">End If</paragraph>
+<paragraph role="code" id="par_id3147324" xml-lang="en-US" l10n="U" oldref="44">sValue = Dir$</paragraph>
+<paragraph role="code" id="par_id3155335" xml-lang="en-US" l10n="U" oldref="45">Loop Until sValue = ""</paragraph>
+<paragraph role="code" id="par_id3147345" xml-lang="en-US" l10n="U" oldref="46">MsgBox sDir,0,sPath</paragraph>
+<paragraph role="code" id="par_id3163808" xml-lang="en-US" l10n="U" oldref="48">End sub</paragraph>
+</body>
+</helpdocument>

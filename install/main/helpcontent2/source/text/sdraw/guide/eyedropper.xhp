@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsdrawguideeyedropperxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Replacing Colors</title>
+<filename>/text/sdraw/guide/eyedropper.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147436"><bookmark_value>eyedropper tool</bookmark_value>
+<bookmark_value>colors; replacing</bookmark_value>
+<bookmark_value>replacing;colors in bitmaps</bookmark_value>
+<bookmark_value>metafiles;replacing colors</bookmark_value>
+<bookmark_value>bitmaps;replacing colors</bookmark_value>
+<bookmark_value>GIF images;replacing colors</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147436" xml-lang="en-US" level="1" l10n="U" oldref="38"><variable id="eyedropper"><link href="text/sdraw/guide/eyedropper.xhp" name="Replacing Colors">Replacing Colors</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3156286" xml-lang="en-US" l10n="CHG" oldref="24">You can replace colors in bitmaps with the <emph>Color Replacer</emph> tool.</paragraph>
+<paragraph role="paragraph" id="par_id3154704" xml-lang="en-US" l10n="U" oldref="25">Up to four colors can be replaced at once.</paragraph>
+<paragraph role="paragraph" id="par_id3147344" xml-lang="en-US" l10n="U" oldref="26">You can also use the <emph>Transparency</emph> option to replace the transparent areas of an image with a color.</paragraph>
+<paragraph role="paragraph" id="par_id3148488" xml-lang="en-US" l10n="CHG" oldref="27">Similarly, you can use the <emph>Color Replacer</emph> to make a color on your image transparent.</paragraph>
+<paragraph role="heading" id="hd_id3150205" xml-lang="en-US" level="2" l10n="CHG" oldref="28">To replace colors with the Color Replacer tool</paragraph>
+<paragraph role="paragraph" id="par_id3154656" xml-lang="en-US" l10n="U" oldref="29">Ensure that the image you are using is a bitmap (for example, BMP, GIF, JPG, or PNG) or a metafile (for example, WMF).</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150202" xml-lang="en-US" l10n="CHG" oldref="30">Choose <emph>Tools - Color Replacer</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155531" xml-lang="en-US" l10n="CHG" oldref="31">Click the Color Replacer icon and position the mouse pointer over the color you want to replace in the image. The color appears in the box next to the icon.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3152985" xml-lang="en-US" l10n="U" oldref="32">Click the color in the image. The color appears in the first <emph>Source color</emph> box and the check box next to the color is selected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148866" xml-lang="en-US" l10n="U" oldref="33">In the <emph>Replace with</emph> box, select the new color.</paragraph>
+<paragraph role="note" id="par_id3145362" xml-lang="en-US" l10n="U" oldref="41">This replaces all occurrences of the <emph>Source color</emph> in the image.</paragraph>
+</listitem>
+</list>
+<list type="ordered" startwith="5">
+<listitem>
+<paragraph role="listitem" id="par_id3151191" xml-lang="en-US" l10n="U" oldref="34">If you want to replace another color while the dialog is open, select the check box in front of <emph>Source color</emph> in the next row and repeat steps 3 to 5.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149876" xml-lang="en-US" l10n="U" oldref="36">Click <emph>Replace</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="tip" id="par_id3157871" xml-lang="en-US" l10n="CHG" oldref="37">If you want to expand or contract the color selection area, increase or decrease the tolerance of the <emph>Color Replacer</emph> tool and repeat your selection.</paragraph>
+<section id="relatedtopics">
+<embed href="text/sdraw/guide/color_define.xhp#color_define"/>
+<paragraph role="paragraph" id="par_id3146878" xml-lang="en-US" l10n="CHG" oldref="39"><link href="text/shared/01/06030000.xhp" name="Color Replacer">Color Replacer</link></paragraph>
+</section>
+</body>
+</helpdocument>

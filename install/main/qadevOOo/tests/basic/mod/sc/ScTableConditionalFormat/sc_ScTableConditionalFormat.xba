@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="sc_ScTableConditionalFormat" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' sc.ScTableConditionalFormat
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim oSheet As Object
+
+    oDoc = utils.createDocument("scalc", cObjectName)
+
+    oSheet = oDoc.Sheets(0)
+    oSheet.getCellByPosition(5, 5).Value = 15
+    oSheet.getCellByPosition(1, 4).Value = 10
+    oSheet.getCellByPosition(2, 0).Value = -5.15
+
+    oObj = oSheet.getPropertyValue("ConditionalFormat")
+
+    Dim oCellAddress As New com.sun.star.table.CellAddress
+    oCellAddress.Sheet = 0
+    oCellAddress.Row = 1
+    oCellAddress.Column = 5
+
+    Dim oProps(4) As New com.sun.star.beans.PropertyValue
+    oProps(0).Name = "StyleName"
+    oProps(0).Value = "Result2"
+    oProps(1).Name = "Formula1"
+    oProps(1).Value = "$Sheet1.$B$5"
+    oProps(2).Name = "Formula2"
+    oProps(2).Value = ""
+    oProps(3).Name = "Operator"
+    oProps(3).Value = com.sun.star.sheet.ConditionOperator.EQUAL
+    oProps(4).Name = "SourcePosition"
+    oProps(4).Value = oCellAddress
+
+    oObj.AddNew(oProps())
+
+    oCellAddress.Sheet = 0
+    oCellAddress.Row = 1
+    oCellAddress.Column = 5
+
+    oProps(0).Name = "StyleName"
+    oProps(0).Value = "Result2"
+    oProps(1).Name = "Formula1"
+    oProps(1).Value = "$Sheet1.$B$3"
+    oProps(2).Name = "Formula2"
+    oProps(2).Value = ""
+    oProps(3).Name = "Operator"
+    oProps(3).Value = com.sun.star.sheet.ConditionOperator.EQUAL
+    oProps(4).Name = "SourcePosition"
+    oProps(4).Value = oCellAddress
+
+    oObj.AddNew(oProps())
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+Sub ReCreateObj()
+    if not isNULL(oDoc) then oDoc.dispose()
+    CreateObj()
+End Sub
+</script:module>

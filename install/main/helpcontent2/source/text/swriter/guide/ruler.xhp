@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguiderulerxhp" indexer="include">
+         <title xml-lang="en-US" id="tit">Using Rulers</title>
+         <filename>/text/swriter/guide/ruler.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id8186284"><bookmark_value>rulers;using rulers</bookmark_value>
+<bookmark_value>horizontal rulers</bookmark_value>
+<bookmark_value>vertical rulers</bookmark_value>
+<bookmark_value>indents; setting on rulers</bookmark_value>
+<bookmark_value>page margins on rulers</bookmark_value>
+<bookmark_value>table cells;adjusting the width on rulers</bookmark_value>
+<bookmark_value>showing;rulers</bookmark_value>
+<bookmark_value>hiding;rulers</bookmark_value>
+<bookmark_value>adjusting page margins and cell widths</bookmark_value>
+</bookmark><comment>mw made "indent settings..." a two level entry and cut "changing;indents"</comment>
+<paragraph xml-lang="en-US" id="par_idN1065F" role="heading" level="1" l10n="NEW"><variable id="ruler"><link href="text/swriter/guide/ruler.xhp">Using Rulers</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1067D" role="paragraph" l10n="NEW">To show or hide rulers, choose <emph>View - Ruler</emph>. To show the vertical ruler, choose <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01040200.xhp" name="Writer - View"><emph>%PRODUCTNAME Writer - View</emph></link>, and then select <emph>Vertical ruler</emph> in the <emph>Ruler</emph> area.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149686" role="heading" level="2" l10n="U" oldref="20">Adjusting Page Margins</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155175" role="paragraph" l10n="U" oldref="3">The margins of a page are indicated by the filled areas at the ends of the rulers.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149038" role="heading" level="2" l10n="U" oldref="22">Changing Indents</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153631" role="paragraph" l10n="U" oldref="23">Indents are adjusted with the three small triangles on the horizontal ruler.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152776" role="listitem" l10n="U" oldref="26">To change the left or the right paragraph indent, select the paragraph(s) that you want change the indent for, drag the bottom left or the bottom right triangle on the horizontal ruler to a new location. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145769" role="listitem" l10n="U" oldref="27">To change the first line indent of a selected paragraph, drag the top left triangle on the horizontal ruler to a new location.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3149164" role="paragraph" l10n="U" oldref="12">You can also double-click anywhere on the horizontal ruler, and adjust the indents in the <link href="text/shared/01/05030000.xhp" name="Paragraph"><emph>Paragraph</emph></link> dialog.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/table_sizing.xhp#table_sizing"/>
+         <embed href="text/shared/guide/tabs.xhp#tabs"/>
+         <embed href="text/shared/guide/measurement_units.xhp#measurement_units"/>
+      </section>
+   </body>
+</helpdocument>

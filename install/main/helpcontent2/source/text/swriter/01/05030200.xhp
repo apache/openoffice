@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textswriter0105030200xml" indexer="include">
+<title id="tit" xml-lang="en-US">Text Flow</title>
+<filename>/text/swriter/01/05030200.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="textfluss">
+<bookmark xml-lang="en-US" branch="index" id="bm_id2502212"><bookmark_value>text flow;at breaks</bookmark_value>
+<bookmark_value>paragraphs;keeping together at breaks</bookmark_value>
+<bookmark_value>protecting;text flow</bookmark_value>
+<bookmark_value>widows</bookmark_value>
+<bookmark_value>orphans</bookmark_value>
+<bookmark_value>block protect, see also widows or orphans</bookmark_value>
+</bookmark><comment>mw added two index entries</comment>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_FORMAT_PARAGRAPH_EXT" id="bm_id3147406" localize="false"/>
+<paragraph role="heading" id="hd_id3083447" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05030200.xhp" name="Text Flow">Text Flow</link></paragraph>
+<paragraph role="paragraph" id="par_id3145824" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_FORMAT_PARAGRAPH_EXT">Specify hyphenation and pagination options.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/swriter/00/00000405.xhp#textfss"/>
+</section>
+<paragraph role="heading" id="hd_id3149882" xml-lang="en-US" level="2" l10n="U" oldref="3">Hyphenation</paragraph>
+<paragraph role="paragraph" id="par_id3150564" xml-lang="en-US" l10n="U" oldref="4">Specify the <link href="text/swriter/guide/using_hyphen.xhp" name="hyphenation">hyphenation</link> options for text documents.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_HYPHEN" id="bm_id3147171" localize="false"/>
+<paragraph role="heading" id="hd_id3153920" xml-lang="en-US" level="3" l10n="U" oldref="5">Automatically</paragraph>
+<paragraph role="paragraph" id="par_id3154640" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_EXT_PARAGRAPH:BTN_HYPHEN">Automatically inserts hyphens where they are needed in a paragraph.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_HYPHENBEFORE" id="bm_id3149286" localize="false"/>
+<paragraph role="heading" id="hd_id3150766" xml-lang="en-US" level="3" l10n="U" oldref="7">Characters at line end</paragraph>
+<paragraph role="paragraph" id="par_id3149291" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_HYPHENBEFORE">Enter the minimum number of characters to leave at the end of the line before a hyphen is inserted.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_HYPHENAFTER" id="bm_id3147508" localize="false"/>
+<paragraph role="heading" id="hd_id3145413" xml-lang="en-US" level="3" l10n="U" oldref="9">Characters at line begin</paragraph>
+<paragraph role="paragraph" id="par_id3147515" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_HYPHENAFTER">Enter the minimum number of characters that must appear at the beginning of the line after the hyphen.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_MAXHYPH" id="bm_id3153530" localize="false"/>
+<paragraph role="heading" id="hd_id3149804" xml-lang="en-US" level="3" l10n="U" oldref="11">Maximum no. of consecutive hyphens</paragraph>
+<paragraph role="paragraph" id="par_id3153536" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_MAXHYPH">Enter the maximum number of consecutive lines that can be hyphenated.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153665" xml-lang="en-US" level="2" l10n="U" oldref="43">Breaks</paragraph>
+<paragraph role="paragraph" id="par_id3154470" xml-lang="en-US" l10n="U" oldref="44">Specify the page or column <link href="text/swriter/guide/page_break.xhp" name="break">break</link> options.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_PAGEBREAK" id="bm_id3154567" localize="false"/>
+<paragraph role="heading" id="hd_id3152957" xml-lang="en-US" level="3" l10n="CHG" oldref="15">Insert<comment>UFI: #i30777#</comment></paragraph>
+<paragraph role="paragraph" id="par_id3154574" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_EXT_PARAGRAPH:BTN_PAGEBREAK">Select this check box, and then select the break type that you want to use.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_EXT_PARAGRAPH:LB_BREAKTYPE" id="bm_id3154189" localize="false"/>
+<paragraph role="heading" id="hd_id3149687" xml-lang="en-US" level="3" l10n="U" oldref="39">Type</paragraph>
+<paragraph role="paragraph" id="par_id3154195" xml-lang="en-US" l10n="U" oldref="41"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_EXT_PARAGRAPH_LB_BREAKTYPE">Select the break type that you want to insert.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_EXT_PARAGRAPH:LB_BREAKPOSITION" id="bm_id3155180" localize="false"/>
+<paragraph role="heading" id="hd_id3145766" xml-lang="en-US" level="3" l10n="U" oldref="40">Position</paragraph>
+<paragraph role="paragraph" id="par_id3155187" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_EXT_PARAGRAPH_LB_BREAKPOSITION">Select where you want to insert the break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_PAGECOLL" id="bm_id3149494" localize="false"/>
+<paragraph role="heading" id="hd_id3149482" xml-lang="en-US" level="3" l10n="U" oldref="25">With Page Style</paragraph>
+<paragraph role="paragraph" id="par_id3143275" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_EXT_PARAGRAPH:BTN_PAGECOLL">Select this check box, and then select the page style that you want to use for the first page after the break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_EXT_PARAGRAPH:LB_PAGECOLL" id="bm_id3154831" localize="false"/>
+<paragraph role="heading" id="hd_id3149104" xml-lang="en-US" level="3" l10n="U" oldref="27">Page Style</paragraph>
+<paragraph role="paragraph" id="par_id3154837" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_EXT_PARAGRAPH:LB_PAGECOLL">Select the formatting style to use for the first page after the break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_PAGENUM" id="bm_id3151257" localize="false"/>
+<paragraph role="heading" id="hd_id3149827" xml-lang="en-US" level="3" l10n="U" oldref="37">Page number</paragraph>
+<paragraph role="paragraph" id="par_id3147089" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_PAGENUM">Enter the page number that you want to appear on the first page after the break. If you want to use the current page numbering, select "0".</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148978" xml-lang="en-US" level="2" l10n="U" oldref="13">Options</paragraph>
+<paragraph role="paragraph" id="par_id3147219" xml-lang="en-US" l10n="U" oldref="14">Specify the text flow options for paragraphs that appear before and after a page break.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_KEEPTOGETHER" id="bm_id3149033" localize="false"/>
+<paragraph role="heading" id="hd_id3153635" xml-lang="en-US" level="3" l10n="U" oldref="29">Do not split paragraph</paragraph>
+<paragraph role="paragraph" id="par_id3149040" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_EXT_PARAGRAPH:BTN_KEEPTOGETHER">Shifts the entire paragraph to the next page or column after a break is inserted.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:CB_KEEPTOGETHER" id="bm_id3152772" localize="false"/>
+<paragraph role="heading" id="hd_id3147585" xml-lang="en-US" level="3" l10n="U" oldref="31">Keep with next paragraph</paragraph>
+<paragraph role="paragraph" id="par_id3152779" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_EXT_PARAGRAPH:CB_KEEPTOGETHER">Keeps the current paragraph and the following paragraph together when a break or column break is inserted.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_ORPHANS" id="bm_id3153356" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_ORPHANS" id="bm_id3153361" localize="false"/>
+<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="3" l10n="U" oldref="33">Orphan control</paragraph>
+<paragraph role="paragraph" id="par_id3156279" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_ORPHANS">Specifies the minimum number of lines in a paragraph before a page break. Select this check box, and then enter a number in the <emph>Lines </emph>box.</ahelp> If the number of lines at the end of the page is less than the amount specified in the <emph>Lines </emph>box, the paragraph is shifted to the next page.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_WIDOWS" id="bm_id3145780" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_WIDOWS" id="bm_id3145784" localize="false"/>
+<paragraph role="heading" id="hd_id3149180" xml-lang="en-US" level="3" l10n="U" oldref="35">Widow control</paragraph>
+<paragraph role="paragraph" id="par_id3155918" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_WIDOWS">Specifies the minimum number of lines in a paragraph in the first page after the break. Select this check box, and then enter a number in the <emph>Lines </emph>box.</ahelp> If the number of lines at the top of the page is less than the amount specified in the <emph>Lines </emph>box, the position of the break is adjusted.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<paragraph role="paragraph" id="par_id3155860" xml-lang="en-US" l10n="U" oldref="45"><link href="text/shared/00/00000005.xhp#schuster" name="Orphans">Orphans</link>.</paragraph>
+</body>
+</helpdocument>

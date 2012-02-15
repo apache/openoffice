@@ -1,0 +1,90 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+
+Profile gid_Profile_Pythonloader_Uno_Ini
+    ModuleID = gid_Module_Optional_Pyuno;
+  #ifdef UNX
+    Name = "pythonloader.unorc";
+  #else
+    Name = "pythonloader.uno.ini";
+  #endif
+    Dir = gid_Dir_Program;
+    Styles = (NETWORK);
+End
+
+#ifndef SYSTEM_PYTHON
+ProfileItem gid_Profileitem_Pythonloader_Pythonhome
+    ProfileID = gid_Profile_Pythonloader_Uno_Ini;
+    ModuleID = gid_Module_Optional_Pyuno;
+    Section = "Bootstrap";
+    Order = 1;
+    Key = "PYUNO_LOADER_PYTHONHOME";
+  #ifdef MACOSX
+    Value = CONCAT2($ORIGIN,"OOoPython.framework");
+  #else
+    Value = CONCAT2($ORIGIN/python-core-,PYVERSION);
+  #endif
+End
+#endif
+
+ProfileItem gid_Profileitem_Pythonloader_Pythonpath
+    ProfileID = gid_Profile_Pythonloader_Uno_Ini;
+    ModuleID = gid_Module_Optional_Pyuno;
+    Section = "Bootstrap";
+    Order = 1;
+    Key = "PYUNO_LOADER_PYTHONPATH";
+#ifdef SYSTEM_PYTHON
+    Value = "$ORIGIN";
+#else
+  #ifdef UNX
+    #ifdef MACOSX
+    #define FRAMEWORKLIB CONCAT4($ORIGIN/OOoPython.framework/Versions/,PYMAJMIN,/lib/python,PYMAJMIN)
+    Value = CONCAT4(FRAMEWORKLIB FRAMEWORKLIB,
+		   /lib-dynload FRAMEWORKLIB,
+		   /lib-tk FRAMEWORKLIB,
+		   /site-packages $ORIGIN);
+    #else
+    Value = CONCAT9($ORIGIN/python-core-,PYVERSION,
+		   /lib $ORIGIN/python-core-,PYVERSION,
+		   /lib/lib-dynload $ORIGIN/python-core-,PYVERSION,
+		   /lib/lib-tk $ORIGIN/python-core-,PYVERSION,
+		   /lib/site-packages $ORIGIN);
+    #endif
+  #else
+   #ifdef _gcc3
+    Value = STRING(CONCAT9($ORIGIN/python-core-,PYVERSION,
+		   /lib $ORIGIN/python-core-,PYVERSION,
+		   /lib/lib-dynload $ORIGIN/python-core-,PYVERSION,
+		   /lib/lib-tk $ORIGIN/python-core-,PYVERSION,
+		   /lib/site-packages $ORIGIN));
+   #else
+    Value = STRING(CONCAT5($ORIGIN/python-core-,PYVERSION,
+                   /lib $ORIGIN/python-core-,PYVERSION,
+		   /lib/site-packages $ORIGIN));
+   #endif
+  #endif
+#endif
+End

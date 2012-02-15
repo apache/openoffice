@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidedatapilot_groupingxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Grouping Pivot Tables</title>
+<filename>/text/scalc/guide/datapilot_grouping.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id4195684"><bookmark_value>grouping; pivot tables</bookmark_value>
+<bookmark_value>pivot table function;grouping table entries</bookmark_value>
+<bookmark_value>ungrouping entries in pivot tables</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="par_idN10643" xml-lang="en-US" level="1" l10n="NEW"><variable id="datapilot_grouping"><link href="text/scalc/guide/datapilot_grouping.xhp">Grouping Pivot Tables</link>
+</variable></paragraph><comment>see http://specs.openoffice.org/calc/compatibility/grouping.sxw</comment><paragraph role="paragraph" id="par_idN10661" xml-lang="en-US" l10n="NEW">The resulting pivot table can contain many different entries. By grouping the entries, you can improve the visible result.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10667" xml-lang="en-US" l10n="NEW">Select a cell or range of cells in the pivot table.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1066B" xml-lang="en-US" l10n="CHG">Choose <emph>Data - Group and Outline - Group</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_idN1066E" xml-lang="en-US" l10n="NEW">Depending on the format of the selected cells, either a new group field is added to the pivot table, or you see one of the two <link href="text/scalc/01/12090400.xhp">Grouping</link> dialogs, either for numeric values, or for date values.</paragraph>
+<paragraph role="paragraph" id="par_id3328653" xml-lang="en-US" l10n="NEW">The pivot table must be organized in a way that grouping can be applied.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10682" xml-lang="en-US" l10n="CHG">To remove a grouping, click inside the group, then choose <emph>Data - Group and Outline - Ungroup</emph>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/scalc/guide/datapilot.xhp#datapilot"/>
+<embed href="text/scalc/guide/datapilot_createtable.xhp#datapilot_createtable"/>
+<embed href="text/scalc/guide/datapilot_filtertable.xhp#datapilot_filtertable"/>
+<embed href="text/scalc/guide/datapilot_updatetable.xhp#datapilot_updatetable"/>
+<embed href="text/scalc/guide/datapilot_tipps.xhp#datapilot_tipps"/>
+<embed href="text/scalc/guide/datapilot_deletetable.xhp#datapilot_deletetable"/>
+</section>
+</body>
+</helpdocument>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidekeyboardxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Shortcut Keys (%PRODUCTNAME Calc Accessibility)</title>
+<filename>/text/scalc/guide/keyboard.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-05T14:20:42">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145120"><bookmark_value>accessibility; %PRODUCTNAME Calc shortcuts</bookmark_value>
+<bookmark_value>shortcut keys;%PRODUCTNAME Calc accessibility</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145120" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="keyboard"><link href="text/scalc/guide/keyboard.xhp" name="Shortcut Keys (%PRODUCTNAME Calc Accessibility)">Shortcut Keys (<item type="productname">%PRODUCTNAME</item> Calc Accessibility)</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154760" xml-lang="en-US" l10n="U" oldref="13">Refer also to the lists of shortcut keys for <item type="productname">%PRODUCTNAME</item> Calc and <item type="productname">%PRODUCTNAME</item> in general.</paragraph>
+<embed href="text/shared/00/00000099.xhp#keys"/>
+<paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="2" l10n="U" oldref="12">Cell Selection Mode</paragraph>
+<table id="tbl_id3153968">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="E">
+<image id="img_id3150439" src="formula/res/refinp1.png" width="0.1327inch" height="0.1327inch"><alt id="alt_id3150439" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="11">In a text box that has a button to minimize the dialog, press <item type="keycode">F2</item> to enter the cell selection mode. Select any number of cells, then press <item type="keycode">F2</item> again to show the dialog.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3145272" xml-lang="en-US" l10n="U" oldref="10">In the cell selection mode, you can use the common navigation keys to select cells.</paragraph>
+<paragraph role="heading" id="hd_id3148646" xml-lang="en-US" level="2" l10n="U" oldref="14">Controlling the Outline</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="15">You can use the keyboard in <link href="text/scalc/01/12080000.xhp" name="Outline">Outline</link>:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147394" xml-lang="en-US" l10n="U" oldref="16">Press <item type="keycode">F6</item> or <item type="keycode">Shift+F6</item> until the vertical or horizontal outline window has the focus.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149379" xml-lang="en-US" l10n="U" oldref="17">
+<item type="keycode">Tab</item> - cycle through all visible buttons from top to bottom or from left to right.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156286" xml-lang="en-US" l10n="U" oldref="18">
+<item type="keycode">Shift+Tab</item> - cycle through all visible buttons in the opposite direction.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149403" xml-lang="en-US" l10n="U" oldref="19">
+<switchinline select="sys"><caseinline select="MAC">Command+1 to Command+8</caseinline><defaultinline>Ctrl+1 to Ctrl+8</defaultinline></switchinline> - show all levels up to the specified number; hide all higher levels.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150329" xml-lang="en-US" l10n="U" oldref="20">Use <item type="keycode">+</item> or <item type="keycode">-</item> to show or hide the focused outline group.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155446" xml-lang="en-US" l10n="U" oldref="21">Press <item type="keycode">Enter</item> to activate the focused button.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154253" xml-lang="en-US" l10n="U" oldref="22">Use <item type="keycode">Up</item>, <item type="keycode">Down</item>, <item type="keycode">Left</item>, or <item type="keycode">Right</item> arrow to cycle through all buttons in the current level.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3147343" xml-lang="en-US" level="2" l10n="U" oldref="8">Selecting a Drawing Object or a Graphic</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_idN107AA" xml-lang="en-US" l10n="NEW">Choose View - Toolbars - Drawing to open the Drawing toolbar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155333" xml-lang="en-US" l10n="CHG" oldref="7">Press <item type="keycode">F6</item> until the <emph>Drawing</emph> toolbar is selected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150345" xml-lang="en-US" l10n="U" oldref="4">If the selection tool is active, press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter. This selects the first drawing object or graphic in the sheet.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3159240" xml-lang="en-US" l10n="U" oldref="3">With <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6 you set the focus to the document.</paragraph>
+<paragraph role="listitem" id="par_id3155379" xml-lang="en-US" l10n="U" oldref="2">Now you can use <item type="keycode">Tab</item> to select the next drawing object or graphic and <item type="keycode">Shift+Tab</item> to select the previous one.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/scalc/04/01020000.xhp#calc_keys"/>
+<embed href="text/shared/04/01010000.xhp#common_keys"/>
+<embed href="text/shared/guide/keyboard.xhp#keyboard"/>
+</section>
+</body>
+</helpdocument>

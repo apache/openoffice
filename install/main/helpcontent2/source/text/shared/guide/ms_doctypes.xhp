@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textsharedguidems_doctypesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Changing the Association of Microsoft Office Document Types</title>
+<filename>/text/shared/guide/ms_doctypes.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143267"><bookmark_value>Microsoft Office;reassigning document types</bookmark_value>
+<bookmark_value>file associations for Microsoft Office</bookmark_value>
+<bookmark_value>changing;file associations in Setup program</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="1" l10n="U" oldref="8"><variable id="ms_doctypes"><link href="text/shared/guide/ms_doctypes.xhp" name="Changing the Association of Microsoft Office Document Types">Changing the Association of Microsoft Office Document Types</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3152780" xml-lang="en-US" l10n="U" oldref="1">To change the association of Microsoft Office file name extensions to open the files either in $[officename] or in Microsoft Office, using Microsoft Windows:</paragraph>
+<section id="ms_extensions">
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id0815200803314147" xml-lang="en-US" l10n="NEW">In Windows Explorer, right-click a file of the type that you want to assign to another application.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id0815200803314268" xml-lang="en-US" l10n="NEW">In the context menu, choose "Open with..."</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id0815200803314245" xml-lang="en-US" l10n="NEW">In the list of applications, select the program that should open the current type of files. Make sure that "Always use this program" is selected.</paragraph>
+<paragraph role="paragraph" id="par_id0815200803314243" xml-lang="en-US" l10n="NEW">If these steps do not apply to your brand of Microsoft Windows, search your Microsoft Windows Help for instructions how to change the file associations.</paragraph>
+</listitem>
+</list>
+</section>
+<section id="relatedtopics">
+<embed href="text/shared/guide/doc_open.xhp#doc_open"/>
+<embed href="text/shared/guide/import_ms.xhp#import_ms"/>
+<embed href="text/shared/guide/ms_user.xhp#ms_user"/>
+</section>
+</body>
+</helpdocument>

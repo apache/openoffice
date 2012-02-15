@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0106050000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Create Scenario</title>
+<filename>/text/scalc/01/06050000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-04T12:06:54">UFI: sc.features "Adding Scenario Protection to Calc"
+dedr: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:ScenarioManager" id="bm_id3154490" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ScenarioManager" id="bm_id3145068" localize="false"/>
+<paragraph role="heading" id="hd_id3156023" xml-lang="en-US" level="1" l10n="U" oldref="1">Create Scenario</paragraph>
+<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="2"><variable id="szenariotext"><ahelp hid=".uno:ScenarioManager">Defines a scenario for the selected sheet area.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000406.xhp#exsze"/>
+</section>
+<paragraph role="paragraph" id="par_idN10637" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/guide/scenario.xhp#scenario"/>
+</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_NEWSCENARIO:ED_NAME" id="bm_id3154123" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SC_SCENWIN_TOP" id="bm_id3153195" localize="false"/>
+<paragraph role="heading" id="hd_id3156280" xml-lang="en-US" level="2" l10n="U" oldref="3">Name of scenario</paragraph>
+<paragraph role="paragraph" id="par_id3151041" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="HID_SC_SCENWIN_TOP">Defines the name for the scenario. Use a clear and unique name so you can easily identify the scenario.</ahelp> You can also modify a scenario name in the Navigator through the <emph>Properties </emph>context menu command.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:MultiLineEdit:RID_SCDLG_NEWSCENARIO:ED_COMMENT" id="bm_id3152596" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SC_SCENWIN_BOTTOM" id="bm_id3156444" localize="false"/>
+<paragraph role="heading" id="hd_id3153954" xml-lang="en-US" level="2" l10n="U" oldref="14">Comment</paragraph>
+<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="HID_SC_SCENWIN_BOTTOM">Specifies additional information about the scenario. This information will be displayed in the <link href="text/scalc/01/02110000.xhp" name="Navigator">Navigator</link> when you click the <emph>Scenarios</emph> icon and select the desired scenario.</ahelp> You can also modify this information in the Navigator through the <emph>Properties </emph>context menu command.</paragraph>
+<paragraph role="heading" id="hd_id3145273" xml-lang="en-US" level="2" l10n="U" oldref="16">Settings</paragraph>
+<paragraph role="paragraph" id="par_id3153364" xml-lang="en-US" l10n="U" oldref="17">This section is used to define some of the settings used in the scenario display.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NEWSCENARIO:CB_SHOWFRAME" id="bm_id3151119" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_NEWSCENARIO:LB_COLOR" id="bm_id3151118" localize="false"/>
+<paragraph role="heading" id="hd_id3145367" xml-lang="en-US" level="3" l10n="CHG" oldref="18">Display border<comment>UFI: #i38688#</comment></paragraph>
+<paragraph role="paragraph" id="par_id3151073" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SC:LISTBOX:RID_SCDLG_NEWSCENARIO:LB_COLOR">Highlights the scenario in your table with a border. The color for the border is specified in the field to the right of this option.</ahelp> The border will have a title bar displaying the name of the last scenario. The button on the right of the scenario border offers you an overview of all the scenarios in this area, if several have been defined. You can choose any of the scenarios from this list without restrictions.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NEWSCENARIO:CB_TWOWAY" id="bm_id3147124" localize="false"/>
+<paragraph role="heading" id="hd_id3149582" xml-lang="en-US" level="3" l10n="U" oldref="20">Copy back</paragraph>
+<paragraph role="paragraph" id="par_id3154942" xml-lang="en-US" l10n="CHG" oldref="21"><ahelp hid="SC:CHECKBOX:RID_SCDLG_NEWSCENARIO:CB_TWOWAY">Copies the values of cells that you change into the active scenario. If you do not select this option, the scenario is not changed when you change cell values. The behavior of the <emph>Copy back</emph> setting depends on the cell protection, the sheet protection, and the <emph>Prevent changes</emph> settings.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NEWSCENARIO:CB_COPYALL" id="bm_id3153418" localize="false"/>
+<paragraph role="heading" id="hd_id3149402" xml-lang="en-US" level="3" l10n="U" oldref="22">Copy entire sheet</paragraph>
+<paragraph role="paragraph" id="par_id3146969" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="SC:CHECKBOX:RID_SCDLG_NEWSCENARIO:CB_COPYALL">Copies the entire sheet into an additional scenario sheet. </ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_NEWSCENARIO:CB_PROTECT" id="bm_id3014007" localize="false"/>
+<paragraph role="heading" id="par_idN1075A" xml-lang="en-US" level="3" l10n="NEW">Prevent changes</paragraph>
+<paragraph role="paragraph" id="par_idN1075E" xml-lang="en-US" l10n="NEW"><ahelp hid="sc:CheckBox:RID_SCDLG_NEWSCENARIO:CB_PROTECT">Prevents changes to the active scenario. The behavior of the <emph>Copy back</emph> setting depends on the cell protection, the sheet protection, and the <emph>Prevent changes</emph> settings.</ahelp></paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN10778" xml-lang="en-US" l10n="NEW">You can only change the scenario properties if the <emph>Prevent changes</emph> option is not selected and if the sheet is not protected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN10780" xml-lang="en-US" l10n="NEW">You can only edit cell values if the <emph>Prevent changes</emph> option is selected, if the <emph>Copy back</emph> is option is not selected, and if the cells are not protected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1078C" xml-lang="en-US" l10n="NEW">You can only change scenario cell values and write them back into the scenario if the <emph>Prevent changes</emph> option is not selected, if the <emph>Copy back</emph> option is selected, and if the cells are not protected.</paragraph>
+</listitem>
+</list>
+</body>
+</helpdocument>

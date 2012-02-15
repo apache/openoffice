@@ -1,0 +1,125 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_linguistic2_XProofreader_idl__
+#define __com_sun_star_linguistic2_XProofreader_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+#ifndef __com_sun_star_lang_Locale_idl__
+#include <com/sun/star/lang/Locale.idl>
+#endif
+
+#ifndef __com_sun_star_linguistic2_XSupportedLocales_idl__
+#include <com/sun/star/linguistic2/XSupportedLocales.idl>
+#endif
+
+#ifndef __com_sun_star_text_XFlatParagraph_idl__
+#include <com/sun/star/text/XFlatParagraph.idl>
+#endif
+
+#ifndef __com_sun_star_linguistic2_ProofreadingResult_idl__
+#include <com/sun/star/linguistic2/ProofreadingResult.idl>
+#endif
+
+#ifndef _COM_SUN_STAR_BEANS_PROPERTYVALUE_idl_
+#include <com/sun/star/beans/PropertyValue.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module linguistic2 {
+
+//=============================================================================
+/** API for proofreading a text
+
+	@since	OOo 3.0.1
+*/
+interface XProofreader: com::sun::star::linguistic2::XSupportedLocales
+{
+
+    //-------------------------------------------------------------------------
+    /** whether is the text checked by the spellchecker 
+
+        @returns true if it is also a spell checker
+    */
+    boolean isSpellChecker();
+    
+    //-------------------------------------------------------------------------
+    /** start checking
+
+        @param  nDocId
+                the Document ID.
+
+        @param  rFlatParaText
+                the flat text to be checked.
+
+        @param  xFlatPara
+                the flat paragraph to be checked.
+
+        @param  aLocale
+                Language used in the text.
+
+        @param  nStartOfSentencePos
+                Start Index of the text.
+
+        @param  nSuggestedSentenceEndPos
+                Probable end position of the text.
+
+        @throws IllegalArgumentException
+                when any argument is wrong.
+    */
+    ProofreadingResult doProofreading( [in] string aDocumentIdentifier,
+                            [in] string aText,
+                            [in] com::sun::star::lang::Locale aLocale,
+                            [in] long nStartOfSentencePosition,
+                            [in] long nSuggestedBehindEndOfSentencePosition,
+                            [in] sequence< com::sun::star::beans::PropertyValue > aProperties )
+            raises( com::sun::star::lang::IllegalArgumentException );
+
+    //-------------------------------------------------------------------------
+    /** disables a specific rule for a given locale.
+     
+        <p>If the locale is empty the rule should be ignored for all languages.</p>
+    */
+    void ignoreRule( [in] string aRuleIdentifier, 
+                     [in] com::sun::star::lang::Locale aLocale )
+            raises( com::sun::star::lang::IllegalArgumentException );
+    
+    //-------------------------------------------------------------------------
+    /** sets all rules back to their default settings.
+    */
+    void resetIgnoreRules();
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="sch_ChartLegend" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+Global oComponentInstance As Object ' it will be disposed
+
+Global oComponentDoc As Object
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' sch.ChartLegend
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim bOK As Boolean
+    Dim oCharts As Object, oChart As Object
+	Dim oCompChart as Object
+	
+    bOK = true
+    oDoc = utils.loadTestDocument("TransparencyCalcChart.sxc", cObjectName)
+    oComponentDoc = utils.createDocument("scalc", cObjectName &amp; "1")
+
+    oCharts = oDoc.Sheets(0).Charts
+
+    Dim aNames(), i as integer
+    aNames = oCharts.getElementNames()
+    Out.Log("Chart names :")
+    for  i = 0 to ubound(aNames()) 
+        Out.Log("'" + aNames(i) + "'")
+    next i
+        
+    oChart = oCharts.getByName("TestTransparentChart").embeddedObject
+
+    oObj = oChart.Legend
+	oCompChart = utils.createChartObject(oComponentDoc, cObjectName &amp; "1")
+    oComponentInstance = oCompChart.Legend
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+Sub DisposeObj()
+    if NOT isNULL(oComponentDoc) then oComponentDoc.dispose()
+End Sub
+</script:module>

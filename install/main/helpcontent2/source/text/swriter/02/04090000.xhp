@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0204090000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Insert Rows</title>
+<filename>/text/swriter/02/04090000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-01-24T10:53:11">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="zeileeinfuegen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154838"><bookmark_value>tables; inserting rows</bookmark_value>
+<bookmark_value>rows; inserting in tables, using icon</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertRows" id="bm_id8022206" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertRows" id="bm_id3148567" localize="false"/>
+<paragraph role="heading" id="hd_id3154838" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/02/04090000.xhp" name="Insert Rows">Insert Rows</link></paragraph>
+<paragraph role="paragraph" id="par_id3147407" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".uno:InsertRows">Inserts one or more rows in the table, below the selection. You can insert more than one row by opening the dialog (choose <emph>Table - Insert - Rows</emph>), or by selecting more than one row before clicking the icon.</ahelp> The second method inserts rows of the same height as the originally selected rows.</paragraph>
+</section>
+<section id="syzeileeinfuegen">
+<table id="tbl_id3154506">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151180" xml-lang="en-US" l10n="E">
+<image id="img_id3151189" src="res/commandimagelist/sc_insertrows.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151189" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="3">Insert Row</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+</body>
+</helpdocument>

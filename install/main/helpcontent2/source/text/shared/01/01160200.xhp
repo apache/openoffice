@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0101160200xml" indexer="include">
+<title id="tit" xml-lang="en-US">Document as E-mail</title>
+<filename>/text/shared/01/01160200.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="sendemail">
+<bookmark xml-lang="en-US" branch="hid/.uno:SendMail" id="bm_id1274021" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SendMail" id="bm_id3155619" localize="false"/>
+<paragraph role="heading" id="hd_id3150702" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/shared/01/01160200.xhp">Document as E-mail</link></paragraph>
+<paragraph role="paragraph" id="par_id3152823" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="versendentext"><ahelp hid=".uno:SendMail">Opens a new window in your default e-mail program with the current document as an attachment. The current file format is used.</ahelp></variable> If the document is new and unsaved, the format specified in <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - General is used.</paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000401.xhp#dokument"/>
+</section>
+<paragraph role="note" id="par_id0807200809553672" xml-lang="en-US" l10n="NEW">If the document is in HTML format, any embedded or linked images will not be sent with the e-mail.</paragraph>
+</body>
+</helpdocument>

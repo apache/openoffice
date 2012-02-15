@@ -1,0 +1,77 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sdb_XCommandPreparation_idl__ 
+#define __com_sun_star_sdb_XCommandPreparation_idl__ 
+ 
+#ifndef __com_sun_star_sdbc_SQLException_idl__ 
+#include <com/sun/star/sdbc/SQLException.idl> 
+#endif 
+ 
+ module com {  module sun {  module star {  module sdbc { 
+ published interface XPreparedStatement; 
+};};};}; 
+ 
+ module com {  module sun {  module star {  module sdb { 
+ 
+ 
+/** is used for preparation of commands.
+	
+	<p> 
+	A command could be a table, query, or any kind of SQL statement
+	prepared by the user.
+	</p>
+ */
+published interface XCommandPreparation: com::sun::star::uno::XInterface
+{ 
+	 
+	/** creates a 
+		<type scope="com::sun::star::sdbc">PreparedStatement</type>
+		object for sending parameterized SQL statements to the database.
+		
+		<p>
+		A SQL statement with or without IN parameters can be
+		pre-compiled and stored in a PreparedStatement object. This
+		object can then be used to efficiently execute this statement
+		multiple times.
+		</p>
+		@param command
+			the command to be prepared. Any SQL statement.
+		@param commandType
+			kind of the command
+			<type scope="com::sun::star::sdb">CommandType</type>
+		@returns
+			the PreparedStatement object
+		@throws com::sun::star::sdbc::SQLException 
+			if a database access error occurs.
+	 */
+	com::sun::star::sdbc::XPreparedStatement prepareCommand([in]string command, [in] long commandType) 
+	 	raises (com::sun::star::sdbc::SQLException); 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*=========================================================================== 
+===========================================================================*/ 
+#endif 

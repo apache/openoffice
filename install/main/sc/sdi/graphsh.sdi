@@ -1,0 +1,148 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+interface GraphSelection
+{
+	//	filters
+
+	SID_GRFFILTER
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_INVERT
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_SMOOTH
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_SHARPEN
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_REMOVENOISE
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_SOBEL
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_MOSAIC
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_EMBOSS
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_POSTER
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_POPART
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_SEPIA
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+	SID_GRFFILTER_SOLARIZE
+	[
+		ExecMethod = ExecuteFilter;
+		StateMethod = GetFilterState;
+	]
+
+	// other graphics functions
+
+	SID_ATTR_GRAF_MODE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_RED
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_GREEN
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_BLUE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_LUMINANCE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_CONTRAST
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_GAMMA
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_TRANSPARENCE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+	SID_ATTR_GRAF_CROP
+	[
+		ExecMethod = Execute;
+		StateMethod = GetAttrState;
+	]
+        SID_COLOR_SETTINGS
+        [
+                ExecMethod = Execute;
+                StateMethod = GetAttrState;
+        ]
+}
+
+ // ===========================================================================
+shell ScGraphicShell : ScDrawShell
+{
+	import GraphSelection;
+}
+

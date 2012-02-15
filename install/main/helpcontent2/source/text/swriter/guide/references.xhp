@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidereferencesxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Inserting Cross-References</title>
+         <filename>/text/swriter/guide/references.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145087"><bookmark_value>references; inserting cross-references</bookmark_value>
+      <bookmark_value>cross-references; inserting and updating</bookmark_value>
+      <bookmark_value>tables; cross-referencing</bookmark_value>
+      <bookmark_value>pictures; cross-referencing</bookmark_value>
+      <bookmark_value>objects; cross-referencing</bookmark_value>
+      <bookmark_value>OLE objects;cross-referencing</bookmark_value>
+      <bookmark_value>draw objects;cross-referencing</bookmark_value>
+      <bookmark_value>updating;cross-references</bookmark_value>
+      <bookmark_value>inserting;cross-references</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3145087" role="heading" level="1" l10n="U"
+                 oldref="28"><variable id="references"><link href="text/swriter/guide/references.xhp" name="Inserting Cross-References">Inserting Cross-References</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159263" role="paragraph" l10n="CHG" oldref="8">Cross-references allow you to jump to specific text passages and objects in a single document. A cross-reference consists of a target and a reference that are inserted as <link href="text/swriter/guide/fields.xhp" name="fields">fields</link> in the document.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155860" role="paragraph" l10n="U" oldref="21">Objects with captions and bookmarks can be used as targets.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149833" role="heading" level="2" l10n="U"
+                 oldref="38">Cross-Referencing Text</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149846" role="paragraph" l10n="U" oldref="39">Before you can insert a cross-reference, you must first specify the targets in your text.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3156105" role="heading" level="3" l10n="U"
+                 oldref="52">To Insert a Target</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153408" role="listitem" l10n="U" oldref="40">Select the text that you want to use as a target for the cross-reference.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153125" role="listitem" l10n="U" oldref="41">Choose <emph>Insert - Cross-reference</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149634" role="listitem" l10n="U" oldref="42">In the <item type="menuitem">Type</item> list, select “Set Reference”.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149614" role="listitem" l10n="U" oldref="43">Type a name for the target in the <emph>Name</emph> box. The selected text is displayed in the <emph>Value</emph> box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145110" role="listitem" l10n="U" oldref="44">Click <item type="menuitem">Insert</item>. The name of the target is added to the <item type="menuitem">Selection</item>
+               <emph/>list.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3156257" role="paragraph" l10n="U" oldref="45">Leave the dialog open and proceed to the next section.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153370" role="heading" level="3" l10n="U"
+                 oldref="53">To Create a Cross-Reference to a Target</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7032074" role="listitem" l10n="NEW">Position the cursor in the text where you want to insert a cross-reference.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7796868" role="listitem" l10n="NEW">Choose <emph>Insert - Cross-reference</emph> to open the dialog, if it is not open already.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153392" role="listitem" l10n="U" oldref="46">In the <emph>Type</emph> list, select "Insert Reference".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154256" role="listitem" l10n="U" oldref="47">In the <emph>Selection</emph> list, select the target that you want to cross-reference.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154856" role="listitem" l10n="CHG" oldref="48">In the <emph>Insert reference to</emph> list, select the format for the cross-reference. The <link href="text/swriter/01/04090002.xhp" name="format">format</link> specifies the type of information that is displayed as the cross-reference. For example, "Reference" inserts the target text, and "Page" inserts the page number where the target is located. For footnotes the footnote number is inserted.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155895" role="listitem" l10n="U" oldref="49">Click <emph>Insert</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148685" role="listitem" l10n="U" oldref="54">Click <emph>Close</emph> when finished.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3149980" role="heading" level="2" l10n="U"
+                 oldref="29">Cross-Referencing an Object</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149992" role="paragraph" l10n="U" oldref="30">You can cross-reference most objects in your document, such as graphics, drawing objects, OLE objects, and tables, so long as they have a caption. To add a caption to an object, select the object, and then choose <link href="text/swriter/guide/captions.xhp" name="Insert - Caption"><emph>Insert - Caption</emph></link>.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147123" role="listitem" l10n="U" oldref="14">Click in the document where you want to insert the cross-reference.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150212" role="listitem" l10n="U" oldref="11">Choose <emph>Insert - Cross-reference</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150236" role="listitem" l10n="U" oldref="32">In the <emph>Type</emph> list, select the caption category of the object.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150942" role="listitem" l10n="U" oldref="33">In the <emph>Selection</emph> list, select the caption number of the object that you want to cross-reference.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150968" role="listitem" l10n="CHG" oldref="34">In the <emph>Insert reference to</emph> list, select the format of the cross-reference. The <link href="text/swriter/01/04090002.xhp" name="format">format</link> specifies the type of information that is displayed as the cross-reference. For example, "Reference" inserts the caption category and caption text of the object.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150535" role="listitem" l10n="U" oldref="35">Click <emph>Insert</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151092" role="listitem" l10n="U" oldref="55">Click <emph>Close</emph> when finished.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3151115" role="heading" level="2" l10n="U"
+                 oldref="56">Updating Cross-References</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153594" role="paragraph" l10n="U" oldref="51">To manually update the cross-references in a document, press F9.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7321390" role="tip" l10n="NEW">Choose <emph>View - Fields</emph> to switch between viewing the reference names and the reference contents.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/references_modify.xhp#references_modify"/>
+      <embed href="text/swriter/guide/hyperlinks.xhp#hyperlinks"/>
+      <embed href="text/shared/guide/hyperlink_insert.xhp#hyperlink_insert"/>
+   </body>
+</helpdocument>

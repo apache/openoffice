@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112050100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">1st, 2nd, 3rd Group</title>
+<filename>/text/scalc/01/12050100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-07-20T10:50:21">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="gruppe">
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_SUBT_GROUP2" id="bm_id3147335" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_SUBT_GROUP3" id="bm_id3150085" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_SUBT_GROUP1" id="bm_id3153252" localize="false"/>
+<paragraph role="heading" id="hd_id3149784" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/12050100.xhp" name="1st, 2nd, 3rd Group">1st, 2nd, 3rd Group</link></paragraph>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SCPAGE_SUBT_GROUP1">Specify the settings for up to three subtotal groups. Each tab has the same layout.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#dntezd"/>
+</section>
+<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="U" oldref="3">To insert subtotal values into a table:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154908" xml-lang="en-US" l10n="U" oldref="13">Ensure that the columns of the table have labels.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153968" xml-lang="en-US" l10n="U" oldref="4">Select the table or the area in the table that you want to calculate subtotals for, and then choose <emph>Data – Subtotals</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3161831" xml-lang="en-US" l10n="U" oldref="5">In the <emph>Group By</emph> box, select the column that you want to add the subtotals to.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153188" xml-lang="en-US" l10n="U" oldref="6">In the <emph>Calculate subtotals for</emph> box, select the check boxes for the columns containing the values that you want to subtotal.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3152460" xml-lang="en-US" l10n="U" oldref="14">In the <emph>Use function</emph> box, select the function that you want to use to calculate the subtotals.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154321" xml-lang="en-US" l10n="U" oldref="15">Click <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SC_SUBT_GROUP" id="bm_id3163713" localize="false"/>
+<paragraph role="heading" id="hd_id3156441" xml-lang="en-US" level="2" l10n="U" oldref="7">Group by</paragraph>
+<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_SC_SUBT_GROUP">Select the column that you want to control the subtotal calculation process. If the contents of the selected column change, the subtotals are automatically recalculated.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_SUBT_GROUP" id="bm_id3154492" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SC_SUBT_COLS" id="bm_id3149379" localize="false"/>
+<paragraph role="heading" id="hd_id3154943" xml-lang="en-US" level="2" l10n="U" oldref="9">Calculate subtotals for</paragraph>
+<paragraph role="paragraph" id="par_id3147125" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_SC_SUBT_COLS">Select the column(s) containing the values that you want to subtotal.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SC_SUBT_FUNC" id="bm_id3149413" localize="false"/>
+<paragraph role="heading" id="hd_id3156283" xml-lang="en-US" level="2" l10n="U" oldref="11">Use function</paragraph>
+<paragraph role="paragraph" id="par_id3145647" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_SC_SUBT_FUNC">Select the mathematical function that you want to use to calculate the subtotals.</ahelp></paragraph>
+</body>
+</helpdocument>

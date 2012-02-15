@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03030110xhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">DateAdd Function [Runtime]</title>
+<filename>/text/sbasic/shared/03030110.xhp</filename>
+</topic>
+<history>
+<created date="2005-04-25T12:44:45">DateAdd</created>
+<lastedited date="2005-04-26T10:20:22">checked</lastedited>
+</history>
+</meta>
+<body>
+<section id="dateadd">
+<bookmark xml-lang="en-US" branch="index" id="bm_id6269417"><bookmark_value>DateAdd function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="par_idN10548" xml-lang="en-US" level="1" l10n="NEW"><link href="text/sbasic/shared/03030110.xhp">DateAdd Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_idN10558" xml-lang="en-US" l10n="NEW">Adds a date interval to a given date a number of times and returns the resulting date.</paragraph>
+</section>
+<paragraph role="heading" id="par_idN1055B" xml-lang="en-US" level="2" l10n="NEW">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_idN1055F" xml-lang="en-US" l10n="NEW">DateAdd (Add, Count, Date)</paragraph>
+<paragraph role="heading" id="par_idN1061E" xml-lang="en-US" level="2" l10n="NEW">Return value:</paragraph>
+<paragraph role="paragraph" id="par_idN10622" xml-lang="en-US" l10n="NEW">A Variant containing a date.</paragraph>
+<paragraph role="heading" id="par_idN10625" xml-lang="en-US" level="2" l10n="NEW">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_idN10629" xml-lang="en-US" l10n="NEW">Add - A string expression from the following table, specifying the date interval.</paragraph>
+<section id="datetable">
+<table id="tbl_id7568285">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_idN10636" xml-lang="en-US" l10n="NEW">Add (string value)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_idN1063C" xml-lang="en-US" l10n="NEW">Explanation</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10643" xml-lang="en-US" l10n="NEW">yyyy</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10649" xml-lang="en-US" l10n="NEW">Year</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10650" xml-lang="en-US" l10n="NEW">q</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10656" xml-lang="en-US" l10n="NEW">Quarter</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1065D" xml-lang="en-US" l10n="NEW">m</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10663" xml-lang="en-US" l10n="NEW">Month</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1066A" xml-lang="en-US" l10n="NEW">y</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10670" xml-lang="en-US" l10n="NEW">Day of year</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10677" xml-lang="en-US" l10n="NEW">w</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1067D" xml-lang="en-US" l10n="NEW">Weekday</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10684" xml-lang="en-US" l10n="NEW">ww</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1068A" xml-lang="en-US" l10n="NEW">Week of year</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10691" xml-lang="en-US" l10n="NEW">d</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN10697" xml-lang="en-US" l10n="NEW">Day</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1069E" xml-lang="en-US" l10n="NEW">h</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN106A4" xml-lang="en-US" l10n="NEW">Hour</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN106AB" xml-lang="en-US" l10n="NEW">n</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN106B1" xml-lang="en-US" l10n="NEW">Minute</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN106B8" xml-lang="en-US" l10n="NEW">s</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN106BE" xml-lang="en-US" l10n="NEW">Second</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<paragraph role="paragraph" id="par_idN106C1" xml-lang="en-US" l10n="NEW">Count - A numerical expression specifying how often the Add interval will be added (Count is positive) or subtracted (Count is negative).</paragraph>
+<paragraph role="paragraph" id="par_idN106C4" xml-lang="en-US" l10n="NEW">Date - A given date or the name of a Variant variable containing a date. The Add value will be added Count times to this value.</paragraph>
+<paragraph role="heading" id="par_idN106C7" xml-lang="en-US" level="2" l10n="NEW">Example:</paragraph>
+<paragraph role="code" id="par_idN106CB" xml-lang="en-US" l10n="NEW">Sub example_dateadd</paragraph>
+<paragraph role="code" id="par_idN106CE" xml-lang="en-US" l10n="NEW">msgbox DateAdd("m", 1, "1/31/2004") &amp;" - "&amp; DateAdd("m", 1, "1/31/2005")</paragraph>
+<paragraph role="code" id="par_idN106D1" xml-lang="en-US" l10n="NEW">End Sub</paragraph>
+</body>
+</helpdocument>

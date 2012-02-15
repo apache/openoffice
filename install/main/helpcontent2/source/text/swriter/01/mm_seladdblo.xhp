@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter01mm_seladdbloxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Select Address Block</title>
+<filename>/text/swriter/01/mm_seladdblo.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-08T11:20:08">UFI: Select Address Block dialog for mail merge</created>
+<lastedited date="2005-02-16T11:15:54">DEDR: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10539" xml-lang="en-US" level="1" l10n="NEW">Select Address Block</paragraph>
+<paragraph role="paragraph" id="par_idN1053D" xml-lang="en-US" l10n="NEW">Select, edit, or delete an address block layout for <link href="text/swriter/01/mailmerge03.xhp">mail merge</link>.</paragraph>
+<paragraph role="heading" id="par_idN1054E" xml-lang="en-US" level="2" l10n="NEW">Select the address block which you want to use</paragraph>
+<paragraph role="paragraph" id="par_idN10552" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the block in the list that you want to use for mail merge addresses, and click <emph>OK</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_MM_SELECTADDRESSBLOCK:RB_NEVER" id="bm_id6604815" localize="false"/>
+<paragraph role="heading" id="par_idN10555" xml-lang="en-US" level="2" l10n="NEW">Never include country/region</paragraph>
+<paragraph role="paragraph" id="par_idN10559" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Excludes country or regional information from the address block.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_MM_SELECTADDRESSBLOCK:RB_ALWAYS" id="bm_id2571184" localize="false"/>
+<paragraph role="heading" id="par_idN1055C" xml-lang="en-US" level="2" l10n="NEW">Always include country/region</paragraph>
+<paragraph role="paragraph" id="par_idN10560" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Includes country or regional information in the address block.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_MM_SELECTADDRESSBLOCK:RB_DEPENDENT" id="bm_id6947538" localize="false"/>
+<paragraph role="heading" id="par_idN10563" xml-lang="en-US" level="2" l10n="NEW">Only include country/region if it is not:</paragraph>
+<paragraph role="paragraph" id="par_idN10567" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Only includes country or regional information in the address block if the value differs from the value that you enter in the text box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_MM_SELECTADDRESSBLOCK:ED_COUNTRY" id="bm_id7257606" localize="false"/>
+<paragraph role="paragraph" id="par_idN10651" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter the country/region string that shall not be printed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_MM_SELECTADDRESSBLOCK:PB_NEW" id="bm_id1533249" localize="false"/>
+<paragraph role="heading" id="par_idN1056A" xml-lang="en-US" level="2" l10n="NEW">New</paragraph>
+<paragraph role="paragraph" id="par_idN1056E" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/swriter/01/mm_newaddblo.xhp">New Address Block</link> dialog where you can define a new address block layout.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_MM_SELECTADDRESSBLOCK:PB_CUSTOMIZE" id="bm_id1784112" localize="false"/>
+<paragraph role="heading" id="par_idN1057F" xml-lang="en-US" level="2" l10n="NEW">Edit</paragraph>
+<paragraph role="paragraph" id="par_idN10583" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/swriter/01/mm_newaddblo.xhp">New Address Block</link> dialog where you can edit the selected address block layout.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_MM_SELECTADDRESSBLOCK:PB_DELETE" id="bm_id2646565" localize="false"/>
+<paragraph role="heading" id="par_idN10594" xml-lang="en-US" level="2" l10n="NEW">Delete</paragraph>
+<paragraph role="paragraph" id="par_idN10598" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Deletes the selected address block layout.</ahelp></paragraph>
+</body>
+</helpdocument>

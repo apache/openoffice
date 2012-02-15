@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03131800xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">CreateUnoDialog Function [Runtime]</title>
+<filename>/text/sbasic/shared/03131800.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T11:10:37">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="createunodialog">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150040"><bookmark_value>CreateUnoDialog function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150040" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03131800.xhp" name="CreateUnoDialog Function [Runtime]">CreateUnoDialog Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3154186" xml-lang="en-US" l10n="U" oldref="2">Creates a Basic Uno object that represents a Uno dialog control during Basic runtime.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3153750" xml-lang="en-US" l10n="U" oldref="3">Dialogs are defined in the dialog libraries. To display a dialog, a "live" dialog must be created from the library.</paragraph>
+<paragraph role="paragraph" id="par_id3153681" xml-lang="en-US" l10n="U" oldref="4">See <link href="text/sbasic/guide/sample_code.xhp" name="Examples">Examples</link>.</paragraph>
+<paragraph role="heading" id="hd_id3154286" xml-lang="en-US" level="2" l10n="U" oldref="5">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3159176" xml-lang="en-US" l10n="U" oldref="6">CreateUnoDialog( oDlgDesc )</paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="8">' Get dialog description from the dialog library</paragraph>
+<paragraph role="paragraph" id="par_id3149234" xml-lang="en-US" l10n="U" oldref="9">oDlgDesc = DialogLibraries.Standard.Dialog1</paragraph>
+<paragraph role="paragraph" id="par_id3154923" xml-lang="en-US" l10n="U" oldref="10">' generate "live" dialog</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="11">oDlgControl = CreateUnoDialog( oDlgDesc )</paragraph>
+<paragraph role="paragraph" id="par_id3148550" xml-lang="en-US" l10n="U" oldref="12">' display "live" dialog</paragraph>
+<paragraph role="paragraph" id="par_id3154072" xml-lang="en-US" l10n="U" oldref="13">oDlgControl.execute</paragraph>
+</body>
+</helpdocument>
