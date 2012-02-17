@@ -6,8 +6,8 @@ Name: %pkgprefix-freedesktop-menus
 #BuildRequires: sed
 #BuildRequires: perl
 Group: Office
-License: LGPL
-Provides: openoffice.org3-desktop-integration
+License: ALv2
+Provides: apache.openoffice3-desktop-integration
 Conflicts: %pkgprefix-suse-menus
 Conflicts: %pkgprefix-debian-menus
 Conflicts: %pkgprefix-redhat-menus
@@ -187,7 +187,7 @@ if [ "$1" = 1 ]
 then
   # backing out existing entries to avoid duplicates
   sed '
-/^# OpenOffice.org/d
+/^# Apache OpenOffice/d
 /^application\/vnd\.oasis\.opendocument/d
 /^application\/vnd\.openofficeorg/d
 /^application\/vnd\.sun/d
@@ -203,7 +203,7 @@ then
 
   # now append our stuff to the temporary file
   cat >> /etc/mailcap.tmp$$ << END
-# OpenOffice.org
+# Apache OpenOffice
 application/vnd.oasis.opendocument.text; %unixfilename -view %s
 application/vnd.oasis.opendocument.text-template; %unixfilename -view %s
 application/vnd.oasis.opendocument.text-web; %unixfilename -view %s

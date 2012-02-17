@@ -4,7 +4,7 @@ Release: %release
 Summary: %productname desktop integration
 Name: %pkgprefix-mandriva-menus
 Group: Office
-License: LGPL
+License: ALv2
 AutoReqProv: no
 BuildArch: noarch
 #
@@ -13,7 +13,7 @@ BuildArch: noarch
 #        here and check for the 'mandriva-release' in the future (next year).
 #
 Requires: mandrake-release
-Provides: openoffice.org3-desktop-integration
+Provides: apache.openoffice3-desktop-integration
 
 %define _unpackaged_files_terminate_build 0
 %define _binary_filedigest_algorithm 1
@@ -107,7 +107,7 @@ if [ "$1" = 1 ]
 then
   # backing out existing entries to avoid duplicates
   sed '
-/^# OpenOffice.org/d
+/^# Apache OpenOffice/d
 /^application\/vnd\.oasis\.opendocument/d
 /^application\/vnd\.openofficeorg/d
 /^application\/vnd\.sun/d
@@ -123,7 +123,7 @@ then
 
   # now append our stuff to the temporary file
   cat >> /etc/mailcap.tmp$$ << END
-# OpenOffice.org
+# Apache OpenOffice
 application/vnd.oasis.opendocument.text; %unixfilename -view %s
 application/vnd.oasis.opendocument.text-template; %unixfilename -view %s
 application/vnd.oasis.opendocument.text-web; %unixfilename -view %s

@@ -39,11 +39,11 @@ RPMMACROS= \
 PKGDIR=$(BIN)
 .ENDIF
 
-PRODUCTLIST = openoffice.org
+PRODUCTLIST = $(UNIXBASISROOTNAME)
 
 # default values to minimize maintainance effort 
-PRODUCTVERSION = 3.4
-PRODUCTVERSIONSHORT = 3
+PRODUCTVERSION = $(OOOBASEVERSION)
+PRODUCTVERSIONSHORT = $(BRANDPACKAGEVERSION)
 PKGVERSION = $(PRODUCTVERSION)
 # gnome-vfs treats everything behind the last '.' as an icon extension, 
 # even though the "icon_filename" in '.keys' is specified as filename 
@@ -57,7 +57,7 @@ ICONVERSION = $(PRODUCTVERSIONSHORT:s/.//g)
 # which is need by other distributors, see http://www.openoffice.org/issues/show_bug.cgi?id=75366
 UNIXWRAPPERNAME *= '$${{UNIXPRODUCTNAME}}$${{BRANDPACKAGEVERSION}}'
 
-PRODUCTNAME.openoffice.org = OpenOffice.org
+PRODUCTNAME.openoffice.org = $(UNIXBASISROOTNAME)
 PRODUCTVERSION.openoffice.org = $(PRODUCTVERSION)
 PRODUCTVERSIONSHORT.openoffice.org = $(PRODUCTVERSIONSHORT)
 PKGVERSION.openoffice.org = $(PKGVERSION)
