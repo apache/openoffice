@@ -109,7 +109,9 @@ gb_CXXFLAGS := \
 #
 
 gb_STDLIBS = \
-	stdc444 \
+	icule \
+	z \
+	stdc++ \
 
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
 gb_CFLAGS_WERROR := -Werror
@@ -307,15 +309,6 @@ DLLBASE8 = $(call substr,$(notdir $(DLLTARGET:.dll=)),1,8)
 DLLTARGET8 = $(dir $(DLLTARGET))$(DLLBASE8)$(gb_Library_DLLEXT)
 DLLDEF8 = $(dir $(DLLTARGET))$(DLLBASE8).def
 
-	#EMXEXPRSP=$(call var2filecr,$(shell $(gb_MKTEMP)),1, \
-		$(call gb_Helper_convert_native,$(foreach object,$(CXXOBJECTS),$(call gb_CxxObject_get_target,$(object))) \
-		$(foreach object,$(GENCXXOBJECTS),$(call gb_GenCxxObject_get_target,$(object))) \
-		$(foreach object,$(COBJECTS),$(call gb_CObject_get_target,$(object)))) \
-		) && \
-	emxexp @$${EMXEXPRSP} >> $(DLLDEF8) && \
-	echo EXPORTS		>> $(DLLDEF8) && \
-
-
 define gb_LinkTarget__command_dynamiclinkexecutable
 $(call gb_Output_announce,$(2),$(true),LNK,4)
 $(call gb_Helper_abbreviate_dirs_native,\
@@ -373,11 +366,12 @@ gb_Library_DEFS := -D_DLL
 gb_Library_TARGETTYPEFLAGS := -Zdll
 gb_Library_get_rpath :=
 
-gb_Library_SYSPRE := i
+gb_Library_SYSPRE := 
 gb_Library_PLAINEXT := .lib
 
 gb_Library_PLAINLIBS_NONE += \
 	$(gb_STDLIBS) \
+	icule \
 	ft2lib \
 	dl \
 	freetype \
@@ -406,7 +400,7 @@ gb_Library_DLLEXT := .dll
 gb_Library_MAJORVER :=
 gb_Library_RTEXT := $(gb_Library_DLLEXT)
 ifeq ($(gb_PRODUCT),$(true))
-gb_Library_STLEXT := stlp45$(gb_Library_DLLEXT)
+gb_Library_STLEXT := stdc++$(gb_Library_DLLEXT)
 else
 gb_Library_STLEXT := stlp45_stldebug$(gb_Library_DLLEXT)
 endif
