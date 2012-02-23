@@ -27,10 +27,12 @@ TARGET=apr
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
+.INCLUDE :      apr_version.mk
 
 # --- Files --------------------------------------------------------
 
-APRVERSION=1.4.5
+# Assemble the full version number from the parts defined in apr_version.mk
+APRVERSION=$(APR_MAJOR).$(APR_MINOR).$(APR_MICRO)
 
 TARFILE_NAME=$(PRJNAME)-$(APRVERSION)
 TARFILE_MD5=97262fe54dddaf583eaaee3497a426e1

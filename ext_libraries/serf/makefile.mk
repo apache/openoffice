@@ -27,10 +27,12 @@ TARGET=so_serf
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
+.INCLUDE :	serf_version.mk
 
 # --- Files --------------------------------------------------------
 
-LIBSERFVERSION=1.0.0
+# Assemble the full version number from the parts defined in serf_version.mk
+LIBSERFVERSION=$(SERF_MAJOR).$(SERF_MINOR).$(SERF_MICRO)
 
 TARFILE_NAME=$(PRJNAME)-$(LIBSERFVERSION)
 TARFILE_MD5=3b179ed18f65c43141528aa6d2440db4
@@ -83,10 +85,8 @@ OUT2LIB=.libs/libserf-1.so*
 
 .ENDIF
 
-
 # --- Targets ------------------------------------------------------
 
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-
