@@ -9,7 +9,7 @@ Vendor: Apache Software Foundation
 AutoReqProv: no
 BuildArch: noarch
 Requires: redhat-release
-Provides: apache.openoffice3-desktop-integration
+Provides: openoffice.org3-desktop-integration
 %define _unpackaged_files_terminate_build 0
 %define _binary_filedigest_algorithm 1
 %define _binary_payload w9.gzdio
@@ -146,7 +146,7 @@ if [ "$1" = 1 ]
 then
   # backing out existing entries to avoid duplicates
   sed '
-/^# Apache OpenOffice/d
+/^# OpenOffice.org/d
 /^application\/vnd\.oasis\.opendocument/d
 /^application\/vnd\.openofficeorg/d
 /^application\/vnd\.sun/d

@@ -7,7 +7,7 @@ Name: %pkgprefix-freedesktop-menus
 #BuildRequires: perl
 Group: Office
 License: ALv2
-Provides: apache.openoffice3-desktop-integration
+Provides: openoffice.org3-desktop-integration
 Conflicts: %pkgprefix-suse-menus
 Conflicts: %pkgprefix-debian-menus
 Conflicts: %pkgprefix-redhat-menus
@@ -187,7 +187,7 @@ if [ "$1" = 1 ]
 then
   # backing out existing entries to avoid duplicates
   sed '
-/^# Apache OpenOffice/d
+/^# OpenOffice.org/d
 /^application\/vnd\.oasis\.opendocument/d
 /^application\/vnd\.openofficeorg/d
 /^application\/vnd\.sun/d

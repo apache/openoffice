@@ -80,7 +80,7 @@ if [ "$1" = "configure" ]
 then
   # backing out existing entries to avoid duplicates
   sed '
-/^# Apache OpenOffice/d
+/^# OpenOffice.org/d
 /^application\/vnd\.oasis\.opendocument/d
 /^application\/vnd\.openofficeorg/d
 /^application\/vnd\.sun/d
