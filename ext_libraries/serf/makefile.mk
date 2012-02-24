@@ -37,11 +37,14 @@ LIBSERFVERSION=$(SERF_MAJOR).$(SERF_MINOR).$(SERF_MICRO)
 TARFILE_NAME=$(PRJNAME)-$(LIBSERFVERSION)
 TARFILE_MD5=3b179ed18f65c43141528aa6d2440db4
 
+# disable default used Transfer-Encoding = chunked for sending requests.
+PATCH_FILES=$(TARFILE_NAME).nochunkedtransferencoding.patch
+
 .IF "$(OS)"=="WNT"
 
 ADDITIONAL_FILES=Makefile Module_serf.mk Library_serf.mk Package_inc.mk
 
-PATCH_FILES=$(TARFILE_NAME).makewin32.patch
+PATCH_FILES+=$(TARFILE_NAME).makewin32.patch
 
 CONFIGURE_DIR=
 CONFIGURE_ACTION=
@@ -56,10 +59,10 @@ BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 .IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD"
 # Do not link against expat.  It is not necessary (apr-util is already linked against it)
 # and does not work (we use a different expat library schema.)
-PATCH_FILES=$(TARFILE_NAME).mac.patch
+PATCH_FILES+=$(TARFILE_NAME).mac.patch
 .ELSE
 # Add -ldl as last library so that the linker has no trouble resolving dependencies.
-PATCH_FILES=$(TARFILE_NAME).ldl.patch
+PATCH_FILES+=$(TARFILE_NAME).ldl.patch
 .ENDIF
 
 CONFIGURE_DIR=
