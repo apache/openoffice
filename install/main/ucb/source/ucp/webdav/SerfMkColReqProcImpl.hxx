@@ -19,26 +19,32 @@
  * 
  *************************************************************/
 
+#ifndef INCLUDED_SERFMKCOLREQPROCIMPL_HXX
+#define INCLUDED_SERFMKCOLREQPROCIMPL_HXX
 
+#include <SerfRequestProcessorImpl.hxx>
 
-#ifndef _LOCKSEQUENCE_HXX_
-#define _LOCKSEQUENCE_HXX_
-
-#include <rtl/string.hxx>
-#include <com/sun/star/uno/Sequence.hxx>
-#include <com/sun/star/ucb/Lock.hpp>
-
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
-class LockSequence
+class SerfMkColReqProcImpl : public SerfRequestProcessorImpl
 {
 public:
-	static bool createFromXML( const rtl::OString & rInData,
-                               com::sun::star::uno::Sequence<
-							   	com::sun::star::ucb::Lock > & rOutData );
+    SerfMkColReqProcImpl( const char* inPath );
+
+    virtual ~SerfMkColReqProcImpl();
+
+    virtual
+    serf_bucket_t * createSerfRequestBucket( serf_request_t * inSerfRequest );
+
+    virtual
+    bool processSerfResponseBucket( serf_request_t * inSerfRequest,
+                                    serf_bucket_t * inSerfResponseBucket,
+                                    apr_pool_t * inAprPool,
+                                    apr_status_t & outStatus );
+
 };
 
-}
+} // namespace http_dav_ucp
 
-#endif /* _LOCKSEQUENCE_HXX_ */
+#endif // INCLUDED_SERFMKCOLREQPROCIMPL_HXX

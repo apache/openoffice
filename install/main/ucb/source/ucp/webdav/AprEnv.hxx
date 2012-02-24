@@ -20,30 +20,31 @@
  *************************************************************/
 
 
+#ifndef INCLUDED_APRENV_HXX
+#define INCLUDED_APRENV_HXX
 
-#ifndef _NEONHEADREQUEST_HXX_
-#define _NEONHEADREQUEST_HXX_
+#include <apr/apr_pools.h>
 
-#include <vector>
-#include "NeonTypes.hxx"
-#include "DAVResource.hxx"
-
-namespace webdav_ucp
+namespace apr_environment
 {
 
-class NeonHeadRequest
+// singleton class providing environment for APR libraries
+class AprEnv
 {
-public:
-        // named / allprop
-        NeonHeadRequest( HttpSession* inSession,
-                         const rtl::OUString & inPath,
-                         const std::vector< ::rtl::OUString > & inHeaderNames,
-                         DAVResource & ioResource,
-                         int & nError );
-        ~NeonHeadRequest();
+    public:
+        ~AprEnv();
+
+        static AprEnv* getAprEnv();
+
+        apr_pool_t* getAprPool();
+
+    private:
+        apr_pool_t* mpAprPool;
+
+        AprEnv();
+
 };
 
-} // namespace webdav_ucp
+} // namespace apr_environment
 
-#endif // _NEONHEADREQUEST_HXX_
-
+#endif // INCLUDED_APRENV_HXX

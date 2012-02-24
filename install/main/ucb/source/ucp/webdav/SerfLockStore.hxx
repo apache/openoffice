@@ -20,24 +20,23 @@
  *************************************************************/
 
 
-#ifndef INCLUDED_NEONLOCKSTORE_HXX
-#define INCLUDED_NEONLOCKSTORE_HXX
+#ifndef INCLUDED_SERFLOCKSTORE_HXX
+#define INCLUDED_SERFLOCKSTORE_HXX
 
 #include <map>
-#include "ne_locks.h"
 #include "osl/mutex.hxx"
 #include "rtl/ref.hxx"
-#include "NeonTypes.hxx"
+#include "SerfTypes.hxx"
 
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
 class TickerThread;
-class NeonSession;
+class SerfSession;
 
 struct ltptr
 {
-    bool operator()( const NeonLock * p1, const NeonLock * p2 ) const
+    bool operator()( const SerfLock * p1, const SerfLock * p2 ) const
     {
         return p1 < p2;
     }
@@ -45,46 +44,46 @@ struct ltptr
 
 typedef struct _LockInfo
 {
-    rtl::Reference< NeonSession > xSession;
+    rtl::Reference< SerfSession > xSession;
     sal_Int32 nLastChanceToSendRefreshRequest;
 
     _LockInfo()
         : nLastChanceToSendRefreshRequest( -1 ) {}
 
-    _LockInfo( rtl::Reference< NeonSession > const & _xSession,
+    _LockInfo( rtl::Reference< SerfSession > const & _xSession,
               sal_Int32 _nLastChanceToSendRefreshRequest )
     : xSession( _xSession ),
       nLastChanceToSendRefreshRequest( _nLastChanceToSendRefreshRequest ) {}
 
 } LockInfo;
 
-typedef std::map< NeonLock *, LockInfo, ltptr > LockInfoMap;
+typedef std::map< SerfLock *, LockInfo, ltptr > LockInfoMap;
 
-class NeonLockStore
+class SerfLockStore
 {
     osl::Mutex         m_aMutex;
-    ne_lock_store    * m_pNeonLockStore;
+//    ne_lock_store    * m_pSerfLockStore;
     TickerThread     * m_pTickerThread;
     LockInfoMap        m_aLockInfoMap;
 
 public:
-    NeonLockStore();
-    ~NeonLockStore();
+    SerfLockStore();
+    ~SerfLockStore();
 
     void registerSession( HttpSession * pHttpSession );
 
-    NeonLock * findByUri( rtl::OUString const & rUri );
+    SerfLock * findByUri( rtl::OUString const & rUri );
 
-    void addLock( NeonLock * pLock,
-                  rtl::Reference< NeonSession > const & xSession,
+    void addLock( SerfLock * pLock,
+                  rtl::Reference< SerfSession > const & xSession,
                   // time in seconds since Jan 1 1970
                   // -1: infinite lock, no refresh
                   sal_Int32 nLastChanceToSendRefreshRequest );
 
-    void updateLock( NeonLock * pLock,
+    void updateLock( SerfLock * pLock,
                      sal_Int32 nLastChanceToSendRefreshRequest );
 
-    void removeLock( NeonLock * pLock );
+    void removeLock( SerfLock * pLock );
 
     void refreshLocks();
 
@@ -93,6 +92,6 @@ private:
     void stopTicker();
 };
 
-} // namespace webdav_ucp
+} // namespace http_dav_ucp
 
-#endif // INCLUDED_NEONLOCKSTORE_HXX
+#endif // INCLUDED_SERFLOCKSTORE_HXX

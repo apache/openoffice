@@ -20,27 +20,27 @@
  *************************************************************/
 
 
-#ifndef _NEONURI_HXX_
-#define _NEONURI_HXX_
+#ifndef INCLUDED_SERFURI_HXX
+#define INCLUDED_SERFURI_HXX
 
-#include <ne_uri.h>
+#include <apr-util/apr_uri.h>
 #include <rtl/ustring.hxx>
 #include <DAVException.hxx>
 
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
 #define DEFAULT_HTTP_PORT       80
 #define DEFAULT_HTTPS_PORT      443
-#define DEFAULT_FTP_PORT        21
 
 // -------------------------------------------------------------------
-// NeonUri
+// SerfUri
 // A URI implementation for use with the neon/expat library
 // -------------------------------------------------------------------
-class NeonUri
+class SerfUri
 {
 	private:
+        apr_uri_t mAprUri;
 		::rtl::OUString	mURI;
 		::rtl::OUString	mScheme;
 		::rtl::OUString	mUserInfo;
@@ -48,18 +48,22 @@ class NeonUri
 		sal_Int32		mPort;
 		::rtl::OUString	mPath;
 
-        void init( const rtl::OString & rUri, const ne_uri * pUri );
+        void init( const apr_uri_t * pUri );
 		void calculateURI ();
 
 	public:
-        NeonUri( const ::rtl::OUString & inUri ) throw ( DAVException );
-        NeonUri( const ne_uri * inUri ) throw ( DAVException );
-		~NeonUri( );
+        SerfUri( const ::rtl::OUString & inUri ) throw ( DAVException );
+        SerfUri( const apr_uri_t * inUri ) throw ( DAVException );
+		~SerfUri( );
 
-        bool operator== ( const NeonUri & rOther ) const;
-        bool operator!= ( const NeonUri & rOther ) const
+        bool operator== ( const SerfUri & rOther ) const;
+        bool operator!= ( const SerfUri & rOther ) const
         { return !operator==( rOther ); }
 
+        apr_uri_t* getAprUri()
+        {
+            return &mAprUri;
+        }
 		const ::rtl::OUString & GetURI( void ) const
 											{ return mURI; };
 		const ::rtl::OUString & GetScheme( void ) const
@@ -93,6 +97,6 @@ class NeonUri
         { return makeConnectionEndPointString( GetHost(), GetPort() ); }
 };
 
-} // namespace webdav_ucp
+} // namespace http_dav_ucp
 
-#endif // _NEONURI_HXX_
+#endif // INCLUDED_SERFURI_HXX

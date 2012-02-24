@@ -19,26 +19,40 @@
  * 
  *************************************************************/
 
+// MARKER(update_precomp.py): autogen include statement, do not remove
+#include "precompiled_ucb.hxx"
 
+#include <AprEnv.hxx>
 
-#ifndef _LOCKENTRYSEQUENCE_HXX_
-#define _LOCKENTRYSEQUENCE_HXX_
-
-#include <rtl/string.hxx>
-#include <com/sun/star/uno/Sequence.hxx>
-#include <com/sun/star/ucb/LockEntry.hpp>
-
-namespace webdav_ucp
+namespace apr_environment
 {
 
-class LockEntrySequence
+AprEnv::AprEnv()
+    : mpAprPool( 0 )
 {
-public:
-	static bool createFromXML( const rtl::OString & rInData,
-                               com::sun::star::uno::Sequence<
-							   	com::sun::star::ucb::LockEntry > & rOutData );
-};
+    apr_initialize();
 
+    apr_pool_create(&mpAprPool, NULL);
 }
 
-#endif /* _LOCKENTRYSEQUENCE_HXX_ */
+AprEnv::~AprEnv()
+{
+    apr_pool_destroy(mpAprPool);
+
+    apr_terminate();
+}
+
+/* static */
+AprEnv* AprEnv::getAprEnv()
+{
+    static AprEnv rAprEnv;
+
+    return &rAprEnv;
+}
+
+apr_pool_t* AprEnv::getAprPool()
+{
+    return mpAprPool;
+}
+
+} // namespace apr_environment

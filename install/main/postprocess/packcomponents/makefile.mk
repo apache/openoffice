@@ -153,6 +153,7 @@ my_components = \
     tvhlp1 \
     ucb1 \
     ucpchelp1 \
+    ucpdav1 \
     ucpexpand1 \
     ucpext \
     ucpfile1 \
@@ -162,7 +163,6 @@ my_components = \
     ucptdoc1 \
     updatefeed \
     updchk \
-    updchk.uno \
     utl \
     uui \
     vbaevents \
@@ -185,6 +185,10 @@ my_components += component/vcl/vcl.windows
 my_components += component/vcl/vcl.unx
 .ENDIF
 .ENDIF
+
+.IF "$(ENABLE_ONLINE_UPDATE)"=="YES"
+my_components += updchk.uno
+.END
 
 .IF "$(BUILD_SPECIAL)" != ""
 my_components += oooimprovement
@@ -213,10 +217,6 @@ my_components +=     wpft
 
 .IF "$(DISABLE_ATL)" == ""
 my_components += emboleobj
-.END
-
-.IF "$(SYSTEM_NEON)" == "YES"
-my_components += ucpdav1
 .END
 
 .IF "$(ENABLE_CAIRO_CANVAS)" == "TRUE"

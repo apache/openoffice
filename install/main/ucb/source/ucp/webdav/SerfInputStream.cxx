@@ -23,20 +23,20 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_ucb.hxx"
-#include "NeonInputStream.hxx"
+#include "SerfInputStream.hxx"
 #include <rtl/memory.h>
 
 using namespace cppu;
 using namespace rtl;
 using namespace com::sun::star::io;
 using namespace com::sun::star::uno;
-using namespace webdav_ucp;
+using namespace http_dav_ucp;
 
 
 // -------------------------------------------------------------------
 // Constructor
 // -------------------------------------------------------------------
-NeonInputStream::NeonInputStream( void )
+SerfInputStream::SerfInputStream( void )
 : mLen( 0 ),
   mPos( 0 )
 {
@@ -45,7 +45,7 @@ NeonInputStream::NeonInputStream( void )
 // -------------------------------------------------------------------
 // Destructor
 // -------------------------------------------------------------------
-NeonInputStream::~NeonInputStream( void )
+SerfInputStream::~SerfInputStream( void )
 {
 }
 
@@ -53,7 +53,7 @@ NeonInputStream::~NeonInputStream( void )
 // AddToStream
 // Allows the caller to add some data to the "end" of the stream
 // -------------------------------------------------------------------
-void NeonInputStream::AddToStream( const char * inBuf, sal_Int32 inLen )
+void SerfInputStream::AddToStream( const char * inBuf, sal_Int32 inLen )
 {
     mInputBuffer.realloc( sal::static_int_cast<sal_Int32>(mLen) + inLen );
     rtl_copyMemory( mInputBuffer.getArray() + mLen, inBuf, inLen );
@@ -63,7 +63,7 @@ void NeonInputStream::AddToStream( const char * inBuf, sal_Int32 inLen )
 // -------------------------------------------------------------------
 // queryInterface
 // -------------------------------------------------------------------
-Any NeonInputStream::queryInterface( const Type &type )
+Any SerfInputStream::queryInterface( const Type &type )
 						throw( RuntimeException )
 {
 	Any aRet = ::cppu::queryInterface( type,
@@ -76,7 +76,7 @@ Any NeonInputStream::queryInterface( const Type &type )
 // readBytes
 // "Reads" the specified number of bytes from the stream
 // -------------------------------------------------------------------
-sal_Int32 SAL_CALL NeonInputStream::readBytes(
+sal_Int32 SAL_CALL SerfInputStream::readBytes(
   ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
 		throw( ::com::sun::star::io::NotConnectedException,
 			   ::com::sun::star::io::BufferSizeExceededException,
@@ -105,7 +105,7 @@ sal_Int32 SAL_CALL NeonInputStream::readBytes(
 // -------------------------------------------------------------------
 // readSomeBytes
 // -------------------------------------------------------------------
-sal_Int32 SAL_CALL NeonInputStream::readSomeBytes(
+sal_Int32 SAL_CALL SerfInputStream::readSomeBytes(
  ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
         throw( ::com::sun::star::io::NotConnectedException,
                ::com::sun::star::io::BufferSizeExceededException,
@@ -120,7 +120,7 @@ sal_Int32 SAL_CALL NeonInputStream::readSomeBytes(
 // skipBytes
 // Moves the current stream position forward
 // -------------------------------------------------------------------
-void SAL_CALL NeonInputStream::skipBytes( sal_Int32 nBytesToSkip )
+void SAL_CALL SerfInputStream::skipBytes( sal_Int32 nBytesToSkip )
         throw( ::com::sun::star::io::NotConnectedException,
                ::com::sun::star::io::BufferSizeExceededException,
                ::com::sun::star::io::IOException,
@@ -135,7 +135,7 @@ void SAL_CALL NeonInputStream::skipBytes( sal_Int32 nBytesToSkip )
 // available
 // Returns the number of unread bytes currently remaining on the stream
 // -------------------------------------------------------------------
-sal_Int32 SAL_CALL NeonInputStream::available(  )
+sal_Int32 SAL_CALL SerfInputStream::available(  )
         throw( ::com::sun::star::io::NotConnectedException,
                ::com::sun::star::io::IOException,
                ::com::sun::star::uno::RuntimeException )
@@ -146,7 +146,7 @@ sal_Int32 SAL_CALL NeonInputStream::available(  )
 // -------------------------------------------------------------------
 // closeInput
 // -------------------------------------------------------------------
-void SAL_CALL NeonInputStream::closeInput( void )
+void SAL_CALL SerfInputStream::closeInput( void )
  		throw( ::com::sun::star::io::NotConnectedException,
        		   ::com::sun::star::io::IOException,
        		   ::com::sun::star::uno::RuntimeException )
@@ -156,7 +156,7 @@ void SAL_CALL NeonInputStream::closeInput( void )
 // -------------------------------------------------------------------
 // seek
 // -------------------------------------------------------------------
-void SAL_CALL NeonInputStream::seek( sal_Int64 location )
+void SAL_CALL SerfInputStream::seek( sal_Int64 location )
 		throw( ::com::sun::star::lang::IllegalArgumentException,
 			   ::com::sun::star::io::IOException,
 			   ::com::sun::star::uno::RuntimeException )
@@ -173,7 +173,7 @@ void SAL_CALL NeonInputStream::seek( sal_Int64 location )
 // -------------------------------------------------------------------
 // getPosition
 // -------------------------------------------------------------------
-sal_Int64 SAL_CALL NeonInputStream::getPosition()
+sal_Int64 SAL_CALL SerfInputStream::getPosition()
 		throw( ::com::sun::star::io::IOException,
 			   ::com::sun::star::uno::RuntimeException )
 {
@@ -183,7 +183,7 @@ sal_Int64 SAL_CALL NeonInputStream::getPosition()
 // -------------------------------------------------------------------
 // getLength
 // -------------------------------------------------------------------
-sal_Int64 SAL_CALL NeonInputStream::getLength()
+sal_Int64 SAL_CALL SerfInputStream::getLength()
 		throw( ::com::sun::star::io::IOException,
 			   ::com::sun::star::uno::RuntimeException )
 {

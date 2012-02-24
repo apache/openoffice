@@ -29,21 +29,21 @@
 #include "rtl/ustring.hxx"
 #include "osl/time.h"
 #include "osl/thread.hxx"
-#include "NeonSession.hxx"
-#include "NeonLockStore.hxx"
+#include "SerfSession.hxx"
+#include "SerfLockStore.hxx"
 
-using namespace webdav_ucp;
+using namespace http_dav_ucp;
 
-namespace webdav_ucp {
+namespace http_dav_ucp {
 
 class TickerThread : public osl::Thread
 {
     bool m_bFinish;
-    NeonLockStore & m_rLockStore;
+    SerfLockStore & m_rLockStore;
 
 public:
 
-    TickerThread( NeonLockStore & rLockStore )
+    TickerThread( SerfLockStore & rLockStore )
     : osl::Thread(), m_bFinish( false ), m_rLockStore( rLockStore ) {}
 
     void finish() { m_bFinish = true; }
@@ -53,7 +53,7 @@ protected:
     virtual void SAL_CALL run();
 };
 
-} // namespace webdav_ucp
+} // namespace http_dav_ucp
 
 // -------------------------------------------------------------------
 void TickerThread::run()
@@ -82,40 +82,40 @@ void TickerThread::run()
 }
 
 // -------------------------------------------------------------------
-NeonLockStore::NeonLockStore()
-    : m_pNeonLockStore( ne_lockstore_create() ),
+SerfLockStore::SerfLockStore()
+    : m_pSerfLockStore( ne_lockstore_create() ),
       m_pTickerThread( 0 )
 {
-    OSL_ENSURE( m_pNeonLockStore, "Unable to create neon lock store!" );
+    OSL_ENSURE( m_pSerfLockStore, "Unable to create neon lock store!" );
 }
 
 // -------------------------------------------------------------------
-NeonLockStore::~NeonLockStore()
+SerfLockStore::~SerfLockStore()
 {
     stopTicker();
 
     // release active locks, if any.
     OSL_ENSURE( m_aLockInfoMap.size() == 0,
-                "NeonLockStore::~NeonLockStore - Releasing active locks!" );
+                "SerfLockStore::~SerfLockStore - Releasing active locks!" );
 
     LockInfoMap::const_iterator it( m_aLockInfoMap.begin() );
     const LockInfoMap::const_iterator end( m_aLockInfoMap.end() );
     while ( it != end )
     {
-        NeonLock * pLock = (*it).first;
+        SerfLock * pLock = (*it).first;
         (*it).second.xSession->UNLOCK( pLock );
 
-        ne_lockstore_remove( m_pNeonLockStore, pLock );
+        ne_lockstore_remove( m_pSerfLockStore, pLock );
         ne_lock_destroy( pLock );
 
         ++it;
     }
 
-    ne_lockstore_destroy( m_pNeonLockStore );
+    ne_lockstore_destroy( m_pSerfLockStore );
 }
 
 // -------------------------------------------------------------------
-void NeonLockStore::startTicker()
+void SerfLockStore::startTicker()
 {
     osl::MutexGuard aGuard( m_aMutex );
 
@@ -127,7 +127,7 @@ void NeonLockStore::startTicker()
 }
 
 // -------------------------------------------------------------------
-void NeonLockStore::stopTicker()
+void SerfLockStore::stopTicker()
 {
     osl::MutexGuard aGuard( m_aMutex );
 
@@ -141,32 +141,32 @@ void NeonLockStore::stopTicker()
 }
 
 // -------------------------------------------------------------------
-void NeonLockStore::registerSession( HttpSession * pHttpSession )
+void SerfLockStore::registerSession( HttpSession * pHttpSession )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
-    ne_lockstore_register( m_pNeonLockStore, pHttpSession );
+    ne_lockstore_register( m_pSerfLockStore, pHttpSession );
 }
 
 // -------------------------------------------------------------------
-NeonLock * NeonLockStore::findByUri( rtl::OUString const & rUri )
+SerfLock * SerfLockStore::findByUri( rtl::OUString const & rUri )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
     ne_uri aUri;
     ne_uri_parse( rtl::OUStringToOString(
         rUri, RTL_TEXTENCODING_UTF8 ).getStr(), &aUri );
-    return ne_lockstore_findbyuri( m_pNeonLockStore, &aUri );
+    return ne_lockstore_findbyuri( m_pSerfLockStore, &aUri );
 }
 
 // -------------------------------------------------------------------
-void NeonLockStore::addLock( NeonLock * pLock,
-                             rtl::Reference< NeonSession > const & xSession,
+void SerfLockStore::addLock( SerfLock * pLock,
+                             rtl::Reference< SerfSession > const & xSession,
                              sal_Int32 nLastChanceToSendRefreshRequest )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
-    ne_lockstore_add( m_pNeonLockStore, pLock );
+    ne_lockstore_add( m_pSerfLockStore, pLock );
     m_aLockInfoMap[ pLock ]
         = LockInfo( xSession, nLastChanceToSendRefreshRequest );
 
@@ -174,14 +174,14 @@ void NeonLockStore::addLock( NeonLock * pLock,
 }
 
 // -------------------------------------------------------------------
-void NeonLockStore::updateLock( NeonLock * pLock,
+void SerfLockStore::updateLock( SerfLock * pLock,
                                 sal_Int32 nLastChanceToSendRefreshRequest )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
     LockInfoMap::iterator it( m_aLockInfoMap.find( pLock ) );
     OSL_ENSURE( it != m_aLockInfoMap.end(),
-                "NeonLockStore::updateLock: lock not found!" );
+                "SerfLockStore::updateLock: lock not found!" );
 
     if ( it != m_aLockInfoMap.end() )
     {
@@ -191,19 +191,19 @@ void NeonLockStore::updateLock( NeonLock * pLock,
 }
 
 // -------------------------------------------------------------------
-void NeonLockStore::removeLock( NeonLock * pLock )
+void SerfLockStore::removeLock( SerfLock * pLock )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
     m_aLockInfoMap.erase( pLock );
-    ne_lockstore_remove( m_pNeonLockStore, pLock );
+    ne_lockstore_remove( m_pSerfLockStore, pLock );
 
     if ( m_aLockInfoMap.size() == 0 )
         stopTicker();
 }
 
 // -------------------------------------------------------------------
-void NeonLockStore::refreshLocks()
+void SerfLockStore::refreshLocks()
 {
     osl::MutexGuard aGuard( m_aMutex );
 

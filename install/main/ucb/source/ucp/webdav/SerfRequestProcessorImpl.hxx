@@ -19,24 +19,40 @@
  * 
  *************************************************************/
 
+#ifndef INCLUDED_SERFREQUESTPROCESSORIMPL_HXX
+#define INCLUDED_SERFREQUESTPROCESSORIMPL_HXX
 
+#include <serf.h>
 
-#ifndef _NEONTYPES_HXX_
-#define _NEONTYPES_HXX_
+#include <sal/types.h>
 
-#include <ne_session.h>
-#include <ne_utils.h>
-#include <ne_basic.h>
-#include <ne_props.h>
-#include <ne_locks.h>
+namespace http_dav_ucp
+{
 
-typedef ne_session                  HttpSession;
-typedef ne_status                   HttpStatus;
-typedef ne_server_capabilities      HttpServerCapabilities;
+class SerfRequestProcessorImpl
+{
+public:
+    SerfRequestProcessorImpl( const char* inPath );
+    
+    virtual ~SerfRequestProcessorImpl();
 
-typedef ne_propname                 NeonPropName;
-typedef ne_prop_result_set          NeonPropFindResultSet;
+    /*pure*/ virtual
+    serf_bucket_t * createSerfRequestBucket( serf_request_t * inSerfRequest ) = 0;
 
-typedef struct ne_lock              NeonLock;
+    /*pure*/ virtual
+    bool processSerfResponseBucket( serf_request_t * inSerfRequest,
+                                    serf_bucket_t * inSerfResponseBucket,
+                                    apr_pool_t * inAprPool,
+                                    apr_status_t & outStatus ) = 0;
 
-#endif // _NEONTYPES_HXX_
+protected:
+    const char* getPathStr() const;
+
+private:
+    const char* mPathStr;
+
+};
+
+} // namespace http_dav_ucp
+
+#endif // INCLUDED_SERFREQUESTPROCESSORIMPL_HXX

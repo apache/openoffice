@@ -20,8 +20,8 @@
  *************************************************************/
 
 
-#ifndef _NEONINPUTSTREAM_HXX_
-#define _NEONINPUTSTREAM_HXX_
+#ifndef INCLUDED_NEONINPUTSTREAM_HXX
+#define INCLUDED_NEONINPUTSTREAM_HXX
 
 #include <sal/types.h>
 #include <rtl/ustring.hxx>
@@ -30,15 +30,15 @@
 #include <com/sun/star/io/XSeekable.hpp>
 
 
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
 // -------------------------------------------------------------------
-// NeonInputStream
+// SerfInputStream
 // A simple XInputStream implementation provided specifically for use
 // by the DAVSession::GET method.
 // -------------------------------------------------------------------
-class NeonInputStream : public ::com::sun::star::io::XInputStream,
+class SerfInputStream : public ::com::sun::star::io::XInputStream,
 						public ::com::sun::star::io::XSeekable,
 						public ::cppu::OWeakObject
 {
@@ -48,8 +48,8 @@ class NeonInputStream : public ::com::sun::star::io::XInputStream,
 		sal_Int64 mPos;
 
 	public:
-				 NeonInputStream( void );
-		virtual ~NeonInputStream();
+				 SerfInputStream( void );
+		virtual ~SerfInputStream();
 
 		// Add some data to the end of the stream
 		void AddToStream( const char * inBuf, sal_Int32 inLen );
@@ -116,5 +116,6 @@ class NeonInputStream : public ::com::sun::star::io::XInputStream,
 			   ::com::sun::star::uno::RuntimeException );
 };
 
-} // namespace webdav_ucp
-#endif // _NEONINPUTSTREAM_HXX_
+} // namespace http_dav_ucp
+
+#endif // INCLUDED_NEONINPUTSTREAM_HXX

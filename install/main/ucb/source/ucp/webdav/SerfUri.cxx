@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_ucb.hxx"
 
@@ -28,54 +26,13 @@
 #include <rtl/uri.hxx>
 #include <rtl/ustring.hxx>
 #include <rtl/ustrbuf.hxx>
-#include "ne_alloc.h"
-#include "NeonUri.hxx"
+#include "SerfUri.hxx"
 #include "DAVException.hxx"
+#include <AprEnv.hxx>
 
 #include "../inc/urihelper.hxx"
 
-using namespace webdav_ucp;
-
-# if defined __SUNPRO_CC
-// FIXME: not sure whether initializing a ne_uri statically is supposed to work
-// the string fields of ne_uri are char*, not const char*
-# pragma disable_warn
-# endif
-
-#if defined __GNUC__
-#define GCC_VERSION (__GNUC__ * 10000 \
-                     + __GNUC_MINOR__ * 100 \
-                     + __GNUC_PATCHLEVEL__)
-/* Diagnostics pragma was introduced with gcc-4.2.1 */
-#if GCC_VERSION > 40201
-#pragma GCC diagnostic ignored "-Wwrite-strings"
-#endif
-#endif
-
-namespace {
-
-const ne_uri g_sUriDefaultsHTTP  = { "http",
-                                     NULL,
-                                     NULL,
-                                     DEFAULT_HTTP_PORT,
-                                     NULL,
-                                     NULL,
-                                     NULL };
-const ne_uri g_sUriDefaultsHTTPS = { "https",
-                                     NULL,
-                                     NULL,
-                                     DEFAULT_HTTPS_PORT,
-                                     NULL,
-                                     NULL,
-                                     NULL };
-const ne_uri g_sUriDefaultsFTP   = { "ftp",
-                                     NULL,
-                                     NULL,
-                                     DEFAULT_FTP_PORT,
-                                     NULL,
-                                     NULL,
-                                     NULL };
-} // namespace
+using namespace http_dav_ucp;
 
 # if defined __SUNPRO_CC
 # pragma enable_warn
@@ -87,7 +44,6 @@ const ne_uri g_sUriDefaultsFTP   = { "ftp",
 
 namespace {
 
-//TODO! rtl::OString::matchIgnoreAsciiCaseAsciiL() missing
 inline bool matchIgnoreAsciiCase(rtl::OString const & rStr1,
                                  sal_Char const * pStr2,
                                  sal_Int32 nStr2Len) SAL_THROW(())
@@ -100,25 +56,38 @@ inline bool matchIgnoreAsciiCase(rtl::OString const & rStr1,
 
 }
 
-NeonUri::NeonUri( const ne_uri * inUri )
+SerfUri::SerfUri( const apr_uri_t * inUri )
     throw ( DAVException )
+    : mAprUri( *inUri )
+    , mURI()
+    , mScheme()
+    , mUserInfo()
+    , mHostName()
+    , mPort()
+    , mPath()
 {
     if ( inUri == 0 )
         throw DAVException( DAVException::DAV_INVALID_ARG );
 
-    char * uri = ne_uri_unparse( inUri );
+    char * uri = apr_uri_unparse( apr_environment::AprEnv::getAprEnv()->getAprPool(), &mAprUri, 0 );
 
     if ( uri == 0 )
         throw DAVException( DAVException::DAV_INVALID_ARG );
 
-    init( rtl::OString( uri ), inUri );
-    ne_free( uri );
+    init( &mAprUri );
 
     calculateURI();
 }
 
-NeonUri::NeonUri( const rtl::OUString & inUri )
+SerfUri::SerfUri( const rtl::OUString & inUri )
     throw ( DAVException )
+    : mAprUri()
+    , mURI()
+    , mScheme()
+    , mUserInfo()
+    , mHostName()
+    , mPort()
+    , mPath()
 {
     if ( inUri.getLength() <= 0 )
         throw DAVException( DAVException::DAV_INVALID_ARG );
@@ -129,74 +98,56 @@ NeonUri::NeonUri( const rtl::OUString & inUri )
     rtl::OString theInputUri(
         aEscapedUri.getStr(), aEscapedUri.getLength(), RTL_TEXTENCODING_UTF8 );
 
-    ne_uri theUri;
-    if ( ne_uri_parse( theInputUri.getStr(), &theUri ) != 0 )
+    if ( apr_uri_parse( apr_environment::AprEnv::getAprEnv()->getAprPool(), 
+                        theInputUri.getStr(), &mAprUri ) != APR_SUCCESS )
     {
-        ne_uri_free( &theUri );
         throw DAVException( DAVException::DAV_INVALID_ARG );
     }
+    if ( !mAprUri.port ) 
+    {
+        mAprUri.port = apr_uri_port_of_scheme( mAprUri.scheme );
+    }
+    if ( !mAprUri.path ) 
+    {
+        mAprUri.path = "/";
+    }
 
-    init( theInputUri, &theUri );
-    ne_uri_free( &theUri );
+    init( &mAprUri );
 
     calculateURI();
 }
 
-void NeonUri::init( const rtl::OString & rUri, const ne_uri * pUri )
+void SerfUri::init( const apr_uri_t * pUri )
 {
-    // Complete URI.
-    const ne_uri * pUriDefs
-        = matchIgnoreAsciiCase( rUri,
-                                RTL_CONSTASCII_STRINGPARAM( "ftp:" ) ) ?
-              &g_sUriDefaultsFTP :
-          matchIgnoreAsciiCase( rUri,
-                                RTL_CONSTASCII_STRINGPARAM( "https:" ) ) ?
-              &g_sUriDefaultsHTTPS :
-              &g_sUriDefaultsHTTP;
-
-    mScheme   = rtl::OStringToOUString(
-                    pUri->scheme ? pUri->scheme : pUriDefs->scheme,
-                    RTL_TEXTENCODING_UTF8 );
-    mUserInfo = rtl::OStringToOUString(
-                    pUri->userinfo ? pUri->userinfo : pUriDefs->userinfo,
-                    RTL_TEXTENCODING_UTF8 );
-    mHostName = rtl::OStringToOUString(
-                    pUri->host ? pUri->host : pUriDefs->host,
-                    RTL_TEXTENCODING_UTF8 );
-    mPort     = pUri->port > 0 ? pUri->port : pUriDefs->port;
-    mPath     = rtl::OStringToOUString(
-                    pUri->path ? pUri->path : pUriDefs->path,
-                    RTL_TEXTENCODING_UTF8 );
+    mScheme   = rtl::OStringToOUString( pUri->scheme, RTL_TEXTENCODING_UTF8 );
+    mUserInfo = rtl::OStringToOUString( pUri->user, RTL_TEXTENCODING_UTF8 );
+    mHostName = rtl::OStringToOUString( pUri->hostname, RTL_TEXTENCODING_UTF8 );
+    mPort     = pUri->port;
+    mPath     = rtl::OStringToOUString( pUri->path, RTL_TEXTENCODING_UTF8 );
 
     if ( pUri->query )
     {
         mPath += rtl::OUString::createFromAscii( "?" );
-        mPath += rtl::OStringToOUString(
-            pUri->query,  RTL_TEXTENCODING_UTF8 );
+        mPath += rtl::OStringToOUString( pUri->query,  RTL_TEXTENCODING_UTF8 );
     }
 
     if ( pUri->fragment )
     {
         mPath += rtl::OUString::createFromAscii( "#" );
-        mPath += rtl::OStringToOUString(
-            pUri->fragment,  RTL_TEXTENCODING_UTF8 );
+        mPath += rtl::OStringToOUString( pUri->fragment,  RTL_TEXTENCODING_UTF8 );
     }
 }
 
-// -------------------------------------------------------------------
-// Destructor
-// -------------------------------------------------------------------
-NeonUri::~NeonUri( )
+SerfUri::~SerfUri( )
 {
 }
 
-void NeonUri::calculateURI ()
+void SerfUri::calculateURI ()
 {
     rtl::OUStringBuffer aBuf( mScheme );
     aBuf.appendAscii( "://" );
     if ( mUserInfo.getLength() > 0 )
     {
-        //TODO! differentiate between empty and missing userinfo
         aBuf.append( mUserInfo );
         aBuf.appendAscii( "@" );
     }
@@ -218,18 +169,11 @@ void NeonUri::calculateURI ()
     switch ( mPort )
     {
     case DEFAULT_HTTP_PORT:
-        bAppendPort
-            = !mScheme.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "http" ) );
+        bAppendPort = !mScheme.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "http" ) );
         break;
 
     case DEFAULT_HTTPS_PORT:
-        bAppendPort
-            = !mScheme.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "https" ) );
-        break;
-
-    case DEFAULT_FTP_PORT:
-        bAppendPort
-            = !mScheme.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "ftp" ) );
+        bAppendPort = !mScheme.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "https" ) );
         break;
     }
     if ( bAppendPort )
@@ -242,7 +186,7 @@ void NeonUri::calculateURI ()
     mURI = aBuf.makeStringAndClear();
 }
 
-::rtl::OUString NeonUri::GetPathBaseName () const
+::rtl::OUString SerfUri::GetPathBaseName () const
 {
     sal_Int32 nPos = mPath.lastIndexOf ('/');
     sal_Int32 nTrail = 0;
@@ -271,17 +215,17 @@ void NeonUri::calculateURI ()
         return rtl::OUString::createFromAscii ("/");
 }
 
-bool NeonUri::operator== ( const NeonUri & rOther ) const
+bool SerfUri::operator== ( const SerfUri & rOther ) const
 {
     return ( mURI == rOther.mURI );
 }
 
-::rtl::OUString NeonUri::GetPathBaseNameUnescaped () const
+::rtl::OUString SerfUri::GetPathBaseNameUnescaped () const
 {
     return unescape( GetPathBaseName() );
 }
 
-void NeonUri::AppendPath (const rtl::OUString& rPath)
+void SerfUri::AppendPath (const rtl::OUString& rPath)
 {
     if (mPath.lastIndexOf ('/') != mPath.getLength () - 1)
         mPath += rtl::OUString::createFromAscii ("/");
@@ -291,7 +235,7 @@ void NeonUri::AppendPath (const rtl::OUString& rPath)
 };
 
 // static
-rtl::OUString NeonUri::escapeSegment( const rtl::OUString& segment )
+rtl::OUString SerfUri::escapeSegment( const rtl::OUString& segment )
 {
     return rtl::Uri::encode( segment,
                              rtl_UriCharClassPchar,
@@ -300,7 +244,7 @@ rtl::OUString NeonUri::escapeSegment( const rtl::OUString& segment )
 }
 
 // static
-rtl::OUString NeonUri::unescape( const rtl::OUString& segment )
+rtl::OUString SerfUri::unescape( const rtl::OUString& segment )
 {
     return rtl::Uri::decode( segment,
                              rtl_UriDecodeWithCharset,
@@ -308,7 +252,7 @@ rtl::OUString NeonUri::unescape( const rtl::OUString& segment )
 }
 
 // static
-rtl::OUString NeonUri::makeConnectionEndPointString(
+rtl::OUString SerfUri::makeConnectionEndPointString(
                                 const rtl::OUString & rHostName, int nPort )
 {
     rtl::OUStringBuffer aBuf;

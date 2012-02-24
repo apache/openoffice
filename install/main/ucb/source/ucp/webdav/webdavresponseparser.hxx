@@ -19,29 +19,25 @@
  * 
  *************************************************************/
 
+#ifndef _WEBDAVRESPONSEPARSER_HXX_
+#define _WEBDAVRESPONSEPARSER_HXX_
 
+#include <com/sun/star/uno/Reference.hxx>
+#include <com/sun/star/io/XInputStream.hpp>
+#include <DAVResource.hxx>
+#include <vector>
 
-#ifndef _LINKSEQUENCE_HXX_
-#define _LINKKSEQUENCE_HXX_
+//////////////////////////////////////////////////////////////////////////////
 
-#include <rtl/string.hxx>
-#include <com/sun/star/uno/Sequence.hxx>
-#include <com/sun/star/ucb/Link.hpp>
-
-namespace webdav_ucp
+namespace http_dav_ucp
 {
+    std::vector< DAVResource > parseWebDAVPropFindResponse(const com::sun::star::uno::Reference< com::sun::star::io::XInputStream >& xInputStream);
+    std::vector< DAVResourceInfo > parseWebDAVPropNameResponse(const com::sun::star::uno::Reference< com::sun::star::io::XInputStream >& xInputStream);
+} // namespace http_dav_ucp
 
-class LinkSequence
-{
-public:
-	static bool createFromXML( const rtl::OString & rInData,
-                               com::sun::star::uno::Sequence<
-							   	com::sun::star::ucb::Link > & rOutData );
-	static bool toXML( const com::sun::star::uno::Sequence<
-								com::sun::star::ucb::Link > & rInData,
-					   rtl::OUString & rOutData );
-};
+//////////////////////////////////////////////////////////////////////////////
 
-}
+#endif // _WEBDAVRESPONSEPARSER_HXX_
 
-#endif /* _LINKSEQUENCE_HXX_ */
+//////////////////////////////////////////////////////////////////////////////
+// eof

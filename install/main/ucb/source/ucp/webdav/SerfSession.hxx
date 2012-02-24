@@ -21,58 +21,90 @@
 
 
 
-#ifndef _NEONSESSION_HXX_
-#define _NEONSESSION_HXX_
+#ifndef INCLUDED_SERFSESSION_HXX
+#define INCLUDED_SERFSESSION_HXX
 
 #include <vector>
 #include <osl/mutex.hxx>
 #include "DAVSession.hxx"
-#include "NeonTypes.hxx"
-#include "NeonLockStore.hxx"
+#include "SerfTypes.hxx"
+//#include "SerfLockStore.hxx"
+#include <SerfUri.hxx>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 
 namespace ucbhelper { class ProxyDecider; }
 
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
+class SerfRequestProcessor;
+
 // -------------------------------------------------------------------
-// NeonSession
+// SerfSession
 // A DAVSession implementation using the neon/expat library
 // -------------------------------------------------------------------
 
-class NeonSession : public DAVSession
+class SerfSession : public DAVSession
 {
 private:
-    osl::Mutex        m_aMutex;
-    rtl::OUString     m_aScheme;
-    rtl::OUString     m_aHostName;
-    rtl::OUString     m_aProxyName;
-    sal_Int32         m_nPort;
-    sal_Int32         m_nProxyPort;
-    HttpSession *     m_pHttpSession;
-    void *            m_pRequestData;
+    osl::Mutex              m_aMutex;
+
+    SerfUri                 m_aUri;
+    
+    rtl::OUString           m_aProxyName;
+    sal_Int32               m_nProxyPort;
+    
+    SerfConnection*         m_pSerfConnection;
+    serf_context_t*         m_pSerfContext;
+    serf_bucket_alloc_t*    m_pSerfBucket_Alloc;
+    bool                    m_bIsHeadRequestInProgress;
+
     const ucbhelper::InternetProxyDecider & m_rProxyDecider;
 
-    // @@@ This should really be per-request data. But Neon currently
-    // (0.23.5) has no interface for passing per-request user data.
-    // Theoretically, a NeonSession instance could handle multiple requests
-    // at a time --currently it doesn't. Thus this is not an issue at the
-    // moment.
     DAVRequestEnvironment m_aEnv;
 
     static bool          m_bGlobalsInited;
     static osl::Mutex m_aGlobalMutex;
-    static NeonLockStore m_aNeonLockStore;
+//    static SerfLockStore m_aSerfLockStore;
+
+    char* getHostinfo();
+    bool isSSLNeeded();
 
 protected:
-    virtual ~NeonSession();
+    virtual ~SerfSession();
 
 public:
-    NeonSession( const rtl::Reference< DAVSessionFactory > & rSessionFactory,
+    SerfSession( const rtl::Reference< DAVSessionFactory > & rSessionFactory,
                  const rtl::OUString& inUri,
                  const ucbhelper::InternetProxyDecider & rProxyDecider )
         throw ( DAVException );
+
+    // Serf library callbacks
+    apr_status_t setupSerfConnection( apr_socket_t * inAprSocket,
+                                      serf_bucket_t **outSerfInputBucket,
+                                      serf_bucket_t **outSerfOutputBucket,
+                                      apr_pool_t* inAprPool );
+
+    apr_status_t provideSerfCredentials( char ** outUsername, 
+                                         char ** outPassword,
+                                         serf_request_t * inRequest, 
+                                         int inCode, 
+                                         const char *inAuthProtocol,
+                                         const char *inRealm,
+                                         apr_pool_t *inAprPool );
+
+    apr_status_t verifySerfCertificate( int inFailures,
+                                        const serf_ssl_certificate_t * inCert );
+
+    serf_bucket_t* acceptSerfResponse( serf_request_t * inSerfRequest,
+                                       serf_bucket_t * inSerfStreamBucket,
+                                       apr_pool_t* inAprPool );
+
+    // Serf-related data structures
+    apr_pool_t* getAprPool();
+    serf_bucket_alloc_t* getSerfBktAlloc();
+    serf_context_t* getSerfContext();
+    SerfConnection* getSerfConnection();
 
     // DAVSession methods
     virtual sal_Bool CanUse( const ::rtl::OUString & inUri );
@@ -81,12 +113,6 @@ public:
 
     const DAVRequestEnvironment & getRequestEnvironment() const
     { return m_aEnv; }
-
-    virtual void
-    OPTIONS( const ::rtl::OUString &  inPath,
-             DAVCapabilities & outCapabilities,
-             const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
 
     // allprop & named
     virtual void
@@ -117,6 +143,8 @@ public:
           DAVResource & ioResource,
           const DAVRequestEnvironment & rEnv )
         throw ( DAVException );
+
+    bool isHeadRequestInProgress();
 
     virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream >
     GET( const ::rtl::OUString & inPath,
@@ -216,17 +244,16 @@ public:
     virtual void abort()
         throw ( DAVException );
 
-    const rtl::OUString & getHostName() const { return m_aHostName; }
+    const rtl::OUString & getHostName() const { return m_aUri.GetHost(); }
+    int getPort() const { return m_aUri.GetPort(); }
 
     const ::uno::Reference< ::lang::XMultiServiceFactory > getMSF()
     { return m_xFactory->getServiceFactory(); }
 
-    const void * getRequestData() const { return m_pRequestData; }
-
     sal_Bool isDomainMatch( rtl::OUString certHostName );
 
 private:
-    friend class NeonLockStore;
+    friend class SerfLockStore;
 
     void Init( void )
         throw ( DAVException );
@@ -234,8 +261,7 @@ private:
     void Init( const DAVRequestEnvironment & rEnv )
         throw ( DAVException );
 
-    // ret: true => retry request.
-    void HandleError( int nError,
+    void HandleError( SerfRequestProcessor& rReqProc,
                       const rtl::OUString & inPath,
                       const DAVRequestEnvironment & rEnv )
         throw ( DAVException );
@@ -245,36 +271,38 @@ private:
     bool removeExpiredLocktoken( const rtl::OUString & inURL,
                                  const DAVRequestEnvironment & rEnv );
 
-    // refresh lock, called by NeonLockStore::refreshLocks
-    bool LOCK( NeonLock * pLock,
+    // refresh lock, called by SerfLockStore::refreshLocks
+    bool LOCK( SerfLock * pLock,
                sal_Int32 & rlastChanceToSendRefreshRequest );
 
-    // unlock, called by NeonLockStore::~NeonLockStore
-    bool UNLOCK( NeonLock * pLock );
+    // unlock, called by SerfLockStore::~SerfLockStore
+    bool UNLOCK( SerfLock * pLock );
 
+    /*
     // low level GET implementation, used by public GET implementations
-    static int GET( ne_session * sess,
+    static int GET( SerfConnection * sess,
                     const char * uri,
-                    ne_block_reader reader,
+                    //ne_block_reader reader,
                     bool getheaders,
                     void * userdata );
 
-    // Buffer-based PUT implementation. Neon only has file descriptor-
+    // Buffer-based PUT implementation. Serf only has file descriptor-
     // based API.
-    static int PUT( ne_session * sess,
+    static int PUT( SerfConnection * sess,
                     const char * uri,
                     const char * buffer,
                     size_t size );
 
-    // Buffer-based POST implementation. Neon only has file descriptor-
+    // Buffer-based POST implementation. Serf only has file descriptor-
     // based API.
-    int POST( ne_session * sess,
+    int POST( SerfConnection * sess,
               const char * uri,
               const char * buffer,
-              ne_block_reader reader,
+              //ne_block_reader reader,
               void * userdata,
               const rtl::OUString & rContentType,
               const rtl::OUString & rReferer );
+    */
 
     // Helper: XInputStream -> Sequence< sal_Int8 >
     static bool getDataFromInputStream(
@@ -283,9 +311,11 @@ private:
         com::sun::star::uno::Sequence< sal_Int8 > & rData,
         bool bAppendTrailingZeroByte );
 
+    /*
     rtl::OUString makeAbsoluteURL( rtl::OUString const & rURL ) const;
+    */
 };
 
-} // namespace webdav_ucp
+} // namespace http_dav_ucp
 
-#endif // _NEONSESSION_HXX_
+#endif // INCLUDED_SERFSESSION_HXX

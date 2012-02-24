@@ -19,40 +19,24 @@
  * 
  *************************************************************/
 
+#include <SerfRequestProcessorImpl.hxx>
 
-
-#ifndef _NEONPROPFINDREQUEST_HXX_
-#define _NEONPROPFINDREQUEST_HXX_
-
-#include <vector>
-#include <rtl/ustring.hxx>
-#include "NeonTypes.hxx"
-#include "DAVTypes.hxx"
-#include "DAVResource.hxx"
-
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
-class NeonPropFindRequest
+SerfRequestProcessorImpl::SerfRequestProcessorImpl( const char* inPath )
+    : mPathStr( inPath )
 {
-public:
-	// named / allprop
-	NeonPropFindRequest( HttpSession* inSession,
-						 const char*  inPath,
-						 const Depth  inDepth,
-						 const std::vector< ::rtl::OUString > & inPropNames,
-						 std::vector< DAVResource > & ioResources,
-						 int & nError );
-	// propnames
-	NeonPropFindRequest( HttpSession* inSession,
-						 const char*  inPath,
-						 const Depth  inDepth,
-						 std::vector< DAVResourceInfo > & ioResInfo,
-						 int & nError );
+}
 
-	~NeonPropFindRequest();
-};
+SerfRequestProcessorImpl::~SerfRequestProcessorImpl()
+{
+}
 
-} // namespace webdav_ucp
+const char* SerfRequestProcessorImpl::getPathStr() const
+{
+    return mPathStr;
+}
 
-#endif // _NEONPROPFINDREQUEST_HXX_
+} // namespace http_dav_ucp
+
