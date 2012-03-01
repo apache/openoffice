@@ -37,8 +37,15 @@ LIBSERFVERSION=$(SERF_MAJOR).$(SERF_MINOR).$(SERF_MICRO)
 TARFILE_NAME=$(PRJNAME)-$(LIBSERFVERSION)
 TARFILE_MD5=3b179ed18f65c43141528aa6d2440db4
 
+# Apply patches that provide callbacks for ssl certificate verification with the
+# whole certificate chain (issue68.patch).  The patch is taken from serf's
+# issue 68 (http://code.google.com/p/serf/issues/detail?id=68).
+# This patch needs some minor fixes (issue68b.patch) for proper initialization of
+# some callbacks and export of new functions.
+PATCH_FILES=$(TARFILE_NAME).issue68.patch $(TARFILE_NAME).issue68b.patch
+
 # disable default used Transfer-Encoding = chunked for sending requests.
-PATCH_FILES=$(TARFILE_NAME).nochunkedtransferencoding.patch
+PATCH_FILES+=$(TARFILE_NAME).nochunkedtransferencoding.patch
 
 .IF "$(OS)"=="WNT"
 
