@@ -57,6 +57,12 @@ BUILD_DIR=$(CONFIGURE_DIR)
 BUILD_ACTION=$(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 
+.ELIF "$(GUI)" == "OS2"
+
+@all:
+	@echo "using system apr-util. nothing do do."
+
+
 .ELSE
 
 

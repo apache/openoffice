@@ -61,6 +61,11 @@ BUILD_DIR=$(CONFIGURE_DIR)
 BUILD_ACTION=$(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 
+.ELIF "$(GUI)" == "OS2"
+
+@all:
+	@echo "using system serf. nothing do do."
+
 .ELSE
 
 .IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD"

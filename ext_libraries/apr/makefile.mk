@@ -45,6 +45,11 @@ BUILD_ACTION=INCLUDE="$(INCLUDE);./include"  nmake -f Makefile.win buildall
 
 #INSTALL_ACTION=cp Release/libapr-1.lib $(OUTDIR)/lib/libapr-1.lib
 
+.ELIF "$(GUI)" == "OS2"
+
+@all:
+	@echo "using system apr. nothing do do."
+
 .ELSE
 
 CONFIGURE_DIR=
