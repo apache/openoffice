@@ -7,5 +7,6 @@ mkdir: %_DEST%\inc%_EXT%\serf
 
 # Linux, BSD, et al
 ..\%__SRC%\lib\libserf-1.so.*.* %_DEST%\lib%_EXT%
+..\%__SRC%\lib\libserf-1.so.* %_DEST%\lib%_EXT%
 linklib: libserf-1.so.*.*
-
+linklib: libserf-1.so.*

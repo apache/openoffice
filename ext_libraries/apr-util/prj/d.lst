@@ -8,7 +8,9 @@ mkdir: %_DEST%\inc%_EXT%\apr-util
 
 # Linux
 ..\%__SRC%\lib\libaprutil-1.so.*.* %_DEST%\lib%_EXT%
+..\%__SRC%\lib\libaprutil-1.so.* %_DEST%\lib%_EXT%
 linklib: libaprutil-1.so.*.*
+linklib: libaprutil-1.so.*
 
 # Mac
 ..\%__SRC%\lib\libaprutil-1.*dylib %_DEST%\lib%_EXT%

@@ -16,7 +16,9 @@ mkdir: %_DEST%\lib%_EXT%\apr
 
 # Linux
 ..\%__SRC%\lib\libapr-1.so.*.* %_DEST%\lib%_EXT%
+..\%__SRC%\lib\libapr-1.so.* %_DEST%\lib%_EXT%
 linklib: libapr-1.so.*.*
+linklib: libapr-1.so.*
 
 # Mac
 ..\%__SRC%\lib\libapr-1.*dylib %_DEST%\lib%_EXT%
