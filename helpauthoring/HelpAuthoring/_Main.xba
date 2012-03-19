@@ -184,6 +184,6 @@ Sub CheckOnLoad
 End Sub
 
 Sub DisplayVersion
-	msgbox &quot;OpenOffice.org Help Authoring Framework&quot;+chr(13)+&quot;Version &quot;+Version+chr(13)+chr(13)+&quot;(c) 2010 Oracle, Licensed under LGPL&quot;,256
+	msgbox &quot;OpenOffice.org Help Authoring Framework&quot;+chr(13)+&quot;Version &quot;+Version,256
 End Sub
 </script:module>
