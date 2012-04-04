@@ -134,18 +134,19 @@ EXTENSION_PACKDEPS=$(CONVERTER_FILE) $(COMPONENT_DIALOGS) $(COMPONENT_HELP) $(CO
 
 $(CONVERTER_FILE) : $(BIN)$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
+	$(COPY) $< $@
 
 $(COMPONENT_DIALOGS) : dialogs$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
+	$(COPY) $< $@
 
 $(COMPONENT_HELP) : help$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
+	$(COPY) $< $@
 
 $(COMPONENT_IMAGES) :  $(SOLARSRC)$/$(RSCDEFIMG)$/desktop$/res$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
+	$(COPY) $< $@
+
 .ENDIF # L10N_framework
 

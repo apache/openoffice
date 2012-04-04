@@ -55,13 +55,13 @@ COMPONENT_FILES_SRC*=./
 # here in case of "just copied" .xcu files
 $(COMPONENT_FILES) : $$(@:s|$(fixme2)|$(MISC)|:s|$(EXTENSIONDIR)/|$(COMPONENT_FILES_SRC)|)
 	@@-$(MKDIRHIER) $(@:s|$(fixme2)|$(MISC)|:d)
-    $(COMMAND_ECHO)$(COPY) $< $(@:s|$(fixme2)|$(MISC)|)
+	$(COMMAND_ECHO)$(COPY) $< $(@:s|$(fixme2)|$(MISC)|)
 .ENDIF			# "$(COMPONENT_FILES)"!=""
 
 .IF "$(COMPONENT_JARFILES)"!=""
 $(COMPONENT_JARFILES) : $(CLASSDIR)/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COMMAND_ECHO)$(COPY) $< $@
+	$(COMMAND_ECHO)$(COPY) $< $@
 .ENDIF			# "$(COMPONENT_JARFILES)"!=""
 
 .IF "$(COMPONENT_LIBRARIES)"!=""
@@ -69,7 +69,7 @@ PACK_RUNTIME!:=TRUE
 # TODO(Q3): strip the binary?
 $(COMPONENT_LIBRARIES) : $(DLLDEST)/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COMMAND_ECHO)$(COPY) $< $@
+	$(COMMAND_ECHO)$(COPY) $< $@
 .ENDIF			# "$(COMPONENT_LIBRARIES)"!=""
 
 .IF "$(PACK_RUNTIME)"!=""
@@ -154,14 +154,11 @@ $(DESCRIPTION) $(PHONYDESC) : $(DESCRIPTION_SRC)
 	@@-$(RM) $@.3.$(EXTNAME)
 
 .ENDIF			# "$(DESCRIPTION)"!=""
-# default OOo license text!!!
+
+# default license text for Apache OpenOffice extensions is the Apache Licence 2
 # may not fit...
 .IF "$(CUSTOM_LICENSE)"==""
-.IF "$(GUI)" == "WNT"
-PACKLICDEPS=$(SOLARBINDIR)/osl/license$$(@:b:s/_/./:e:s/./_/)$$(@:e)
-.ELSE			# "$(GUI)" == "WNT"
-PACKLICDEPS=$(SOLARBINDIR)/osl/LICENSE$$(@:b:s/_/./:e:s/./_/)$$(@:e)
-.ENDIF			# "$(GUI)" == "WNT"
+PACKLICDEPS=$(SOLARBINDIR)/osl/LICENSE_ALv2
 .ELSE			# "$(CUSTOM_LICENSE)" == ""
 PACKLICDEPS=$(CUSTOM_LICENSE)
 .ENDIF			# "$(CUSTOM_LICENSE)" == ""
