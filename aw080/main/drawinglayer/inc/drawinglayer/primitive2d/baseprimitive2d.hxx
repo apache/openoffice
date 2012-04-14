@@ -257,7 +257,11 @@ namespace drawinglayer
 {
 	namespace primitive2d
 	{
-		/// get B2DRange from a given Primitive2DReference
+        /// support to handle a sequence of primitives as stl vector and convert it during creation
+	    typedef ::std::vector< BasePrimitive2D* > Primitive2DVector;
+        Primitive2DSequence DRAWINGLAYER_DLLPUBLIC Primitive2DVectorToPrimitive2DSequence(const Primitive2DVector& rSource, bool bInvert = false);
+
+        /// get B2DRange from a given Primitive2DReference
 		basegfx::B2DRange DRAWINGLAYER_DLLPUBLIC getB2DRangeFromPrimitive2DReference(const Primitive2DReference& rCandidate, const geometry::ViewInformation2D& aViewInformation);
 
 		/// get B2DRange from a given Primitive2DSequence

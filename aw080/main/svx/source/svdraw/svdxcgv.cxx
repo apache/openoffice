@@ -586,25 +586,32 @@ void SdrExchangeView::ImpPasteObject(SdrObject* pObj, SdrObjList& rLst, const ba
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Bitmap SdrExchangeView::GetMarkedObjBitmap( bool bNoVDevIfOneBmpMarked ) const
+BitmapEx SdrExchangeView::GetMarkedObjBitmapEx(bool bNoVDevIfOneBmpMarked) const
 {
-	Bitmap aBmp;
+	BitmapEx aBmp;
 
 	if(areSdrObjectsSelected())
 	{
 		if( bNoVDevIfOneBmpMarked )
 		{
-			SdrGrafObj*	pGrafObj(dynamic_cast< SdrGrafObj* >(getSelectedIfSingle()));
+			SdrGrafObj*	pSdrGrafObj(dynamic_cast< SdrGrafObj* >(getSelectedIfSingle()));
 
-			if(pGrafObj && (GRAPHIC_BITMAP == pGrafObj->GetGraphicType()))
+			if(pSdrGrafObj && (GRAPHIC_BITMAP == pSdrGrafObj->GetGraphicType()))
 			{
-				aBmp = pGrafObj->GetTransformedGraphic().GetBitmap();
+                if(pSdrGrafObj->isEmbeddedSvg())
+                {
+                    aBmp = pSdrGrafObj->GetGraphic().getSvgData()->getReplacement();
+                }
+				else
+				{
+					aBmp = pSdrGrafObj->GetTransformedGraphic().GetBitmap();
+				}
 	    	}
     	}
 
 		if( !aBmp )
 		{
-			const Graphic aGraphic( GetMarkedObjMetaFile( bNoVDevIfOneBmpMarked ) );
+			const Graphic aGraphic(GetMarkedObjMetaFile(bNoVDevIfOneBmpMarked));
             
             // #i102089# support user's settings of AA and LineSnap when the MetaFile gets
             // rasterconverted to a bitmap
@@ -614,7 +621,7 @@ Bitmap SdrExchangeView::GetMarkedObjBitmap( bool bNoVDevIfOneBmpMarked ) const
                 getOptionsDrawinglayer().IsAntiAliasing(),
                 getOptionsDrawinglayer().IsSnapHorVerLinesToDiscrete());
 
-            aBmp = aGraphic.GetBitmap(aParameters);
+            aBmp = aGraphic.GetBitmapEx(aParameters);
 		}
 	}
 
@@ -635,11 +642,11 @@ GDIMetaFile SdrExchangeView::GetMarkedObjMetaFile(bool bNoVDevIfOneMtfMarked) co
 
 		if( bNoVDevIfOneMtfMarked )
 		{
-			SdrGrafObj* pGrafObj(dynamic_cast< SdrGrafObj* >(getSelectedIfSingle()));
+			SdrGrafObj* pSdrGrafObj(dynamic_cast< SdrGrafObj* >(getSelectedIfSingle()));
 
-			if( pGrafObj )
+			if( pSdrGrafObj )
             {
-                Graphic aGraphic( pGrafObj->GetTransformedGraphic() );
+                Graphic aGraphic( pSdrGrafObj->GetTransformedGraphic() );
 
                 if(GRAPHIC_BITMAP == aGraphic.GetType())
                 {
@@ -731,10 +738,18 @@ Graphic SdrExchangeView::GetObjGraphic(const MapMode& rMap, const SdrObject& rOb
         
 	if(pSdrGrafObj)
     {
-        // #110981# Make behaviour coherent with metafile
-        // recording below (which of course also takes
-        // view-transformed objects)
-        aRet = pSdrGrafObj->GetTransformedGraphic();
+        if(pSdrGrafObj->isEmbeddedSvg())
+        {
+            // get Metafile for Svg content
+            aRet = pSdrGrafObj->getMetafileFromEmbeddedSvg();
+        }
+        else
+        {
+            // #110981# Make behaviour coherent with metafile
+            // recording below (which of course also takes
+            // view-transformed objects)
+            aRet = pSdrGrafObj->GetTransformedGraphic();
+        }
     }
     else if(pSdrOle2Obj)
     {

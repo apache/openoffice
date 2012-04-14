@@ -1,32 +1,27 @@
 :
     eval 'exec perl -S $0 ${1+"$@"}'
         if 0;
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
 #
 # build - build entire project
 #
@@ -229,7 +224,24 @@
         $deliver_env{'L10N_framework'}++;
     };
     my $workspace_path = get_workspace_path();   # This also sets $initial_module
-    my $source_config = SourceConfig -> new($workspace_path);
+    my @additional_repositories = ();
+
+    # Collect additional repository directories from the ADDITIONAL_REPOSITORIES
+    # environment variable (typically set by configure).
+    foreach my $additional_repository (split(" ", $ENV{ADDITIONAL_REPOSITORIES}))
+    {
+        next if $additional_repository eq "";
+        # The repository path is expected to be relative to the workspace_path.
+        # For support of absolute paths we need functionality to distinguish between
+        # relative and absolute paths (provided by File::Spec).
+        my $path = Cwd::realpath(correct_path($workspace_path . "/" . $additional_repository));
+        if ( -d $path)
+        {
+            push @additional_repositories, $path;
+        }
+    }
+
+    my $source_config = SourceConfig -> new($workspace_path, @additional_repositories);
     check_partial_gnumake_build($initial_module);
     
     if ($html) {
@@ -2823,7 +2835,7 @@ sub generate_html_file {
         print HTML 'document.write("        <td>");' . "\n";
         print HTML 'document.write("            <table width=100% valign=top cellpadding=0 hspace=0 vspace=0 cellspacing=0 border=0>");' . "\n";
         print HTML 'document.write("                <tr>");' . "\n";
-        print HTML 'document.write("                    <td height=15* width=';
+        print HTML 'document.write("                    <td height=15 width=';
                 
         print HTML $successes_percent + $errors_percent;
         if ($errors_number) {
@@ -2967,6 +2979,7 @@ sub generate_html_file {
     print HTML '        top.innerFrame.frames[1].document.write("        <td width=* align=center><strong style=color:blue>Job</strong></td>");' . "\n";
     print HTML '        top.innerFrame.frames[1].document.write("        <td width=* align=center><strong style=color:blue>Start Time</strong></td>");' . "\n";
     print HTML '        top.innerFrame.frames[1].document.write("        <td width=* align=center><strong style=color:blue>Finish Time</strong></td>");' . "\n";
+    print HTML '        top.innerFrame.frames[1].document.write("        <td width=* align=center><strong style=color:blue>&nbsp</strong></td>");' . "\n";
     print HTML '        top.innerFrame.frames[1].document.write("        <td width=* align=center><strong style=color:blue>Client</strong></td>");' . "\n" if ($server_mode);
     print HTML '        top.innerFrame.frames[1].document.write("    </tr>");' . "\n";
     print HTML '        var dir_info_strings = Message2.split("<br><br>");' . "\n";
@@ -2983,6 +2996,11 @@ sub generate_html_file {
     print HTML '            };' . "\n";
     print HTML '            top.innerFrame.frames[1].document.write("        <td align=center>" + dir_info_array[2] + "</td>");' . "\n";
     print HTML '            top.innerFrame.frames[1].document.write("        <td align=center>" + dir_info_array[3] + "</td>");' . "\n";
+    print HTML '            if (dir_info_array[4] == "@") {' . "\n";
+    print HTML '                top.innerFrame.frames[1].document.write("        <td align=center>&nbsp</td>");' . "\n";
+    print HTML '            } else {' . "\n";
+    print HTML '                top.innerFrame.frames[1].document.write("        <td align=center><a target=\"_blank\" href=\"" + dir_info_array[4] + "\">link</a></td>");' . "\n";
+    print HTML '            };' . "\n";
     print HTML '            top.innerFrame.frames[1].document.write("        <td align=center>" + dir_info_array[5] + "</td>");' . "\n" if ($server_mode);
     print HTML '            top.innerFrame.frames[1].document.write("    </tr>");' . "\n";
     print HTML '        };' . "\n";
@@ -3055,7 +3073,7 @@ sub generate_html_file {
     print HTML '    var urlquery = location.href.split("?");' . "\n";
     print HTML '    if (urlquery.length == 1) {' . "\n";
     print HTML '        document.write("<html><head><TITLE id=MainTitle>' . $ENV{INPATH} .'</TITLE>");' . "\n";
-    print HTML '        document.write("    <frameset rows=\"12%,88%\">");' . "\n";
+    print HTML '        document.write("    <frameset rows=\"40,*\">");' . "\n";
     print HTML '        document.write("        <frame name=\"topFrame\" src=\"" + urlquery + "?initTop\"/>");' . "\n";
     print HTML '        document.write("        <frame name=\"innerFrame\" src=\"" + urlquery + "?initInnerPage\"/>");' . "\n";
     print HTML '        document.write("    </frameset>");' . "\n";
@@ -3071,26 +3089,23 @@ sub generate_html_file {
     print HTML '            };' . "\n";
     print HTML '        };' . "\n";
     print HTML '        document.write("<html><body>");' . "\n";
-    print HTML '        document.write("<h3 align=center>Build process progress status</h3>");' . "\n";
-    print HTML '        document.write("<div align=\"right\">");' . "\n";
-    print HTML '        document.write("    <table border=\"0\"> <tr>");' . "\n";
-    print HTML '        document.write("<td>Refresh rate(sec):</td>");' . "\n";
-    print HTML '        document.write("<th>");' . "\n";
+    print HTML '        document.write("<table border=\"0\" width=\"100%\"> <tr>");' . "\n";
+    print HTML '        document.write("<td align=\"left\"><h3>Build process progress status</h3></td>");' . "\n";
+    print HTML '        document.write("<td align=\"right\">");' . "\n";
     print HTML '        document.write("<FORM name=\"Formular\" onsubmit=\"setRefreshRate()\">");' . "\n";
     print HTML '        document.write("<input type=\"hidden\" name=\"initTop\" value=\"\"/>");' . "\n";
     print HTML '        document.write("<input type=\"text\" id=\"RateValue\" name=\"rate\" autocomplete=\"off\" value=\"" + UpdateRate + "\" size=\"1\"/>");' . "\n";
-    print HTML '        document.write("<input type=\"submit\" value=\"OK\">");' . "\n";
+    print HTML '        document.write("<input type=\"submit\" value=\"Update refresh rate (sec)\">");' . "\n";
     print HTML '        document.write("</FORM>");' . "\n";
-    print HTML '        document.write("</th></tr></table>");' . "\n";
-    print HTML '        document.write("</div>");' . "\n";
+    print HTML '        document.write("</td></tr></table>");' . "\n";
     print HTML '        document.write("    </frameset>");' . "\n";
     print HTML '        document.write("</body></html>");' . "\n";
     print HTML '        top.frames[0].clearInterval(IntervalID);' . "\n";
     print HTML '        IntervalID = top.frames[0].setInterval("updateInnerFrame()", UpdateRate * 1000);' . "\n";
     print HTML '    } else if (urlquery[1] == "initInnerPage") {' . "\n";
     print HTML '        document.write("<html><head>");' . "\n";
-    print HTML '        document.write(\'    <frameset rows="80%,20%\">\');' . "\n";
-    print HTML '        document.write(\'        <frameset cols="70%,30%">\');' . "\n";
+    print HTML '        document.write(\'    <frameset rows="50%,50%\">\');' . "\n";
+    print HTML '        document.write(\'        <frameset cols="50%,50%">\');' . "\n";
     print HTML '        document.write(\'            <frame src="\');' . "\n";
     print HTML '        document.write(urlquery[0]);' . "\n";
     print HTML '        document.write(\'?initFrame0"/>\');' . "\n";

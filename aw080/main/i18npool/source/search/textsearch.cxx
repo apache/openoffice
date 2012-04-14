@@ -63,8 +63,8 @@ static sal_Int32 COMPLEX_TRANS_MASK_TMP =
     TransliterationModules_ignoreIandEfollowedByYa_ja_JP |
     TransliterationModules_ignoreKiKuFollowedBySa_ja_JP |
     TransliterationModules_ignoreProlongedSoundMark_ja_JP;
-static const sal_Int32 SIMPLE_TRANS_MASK = ~(COMPLEX_TRANS_MASK_TMP | TransliterationModules_IGNORE_WIDTH) | TransliterationModules_FULLWIDTH_HALFWIDTH;
 static const sal_Int32 COMPLEX_TRANS_MASK = COMPLEX_TRANS_MASK_TMP | TransliterationModules_IGNORE_KANA | TransliterationModules_FULLWIDTH_HALFWIDTH;
+static const sal_Int32 SIMPLE_TRANS_MASK = ~COMPLEX_TRANS_MASK;
     // Above 2 transliteration is simple but need to take effect in
     // complex transliteration
 
@@ -176,27 +176,8 @@ void TextSearch::setOptions( const SearchOptions& rOptions ) throw( RuntimeExcep
 		case SearchAlgorithms_REGEXP:
 			fnForward = &TextSearch::RESrchFrwrd;
 			fnBackward = &TextSearch::RESrchBkwrd;
-
-			{
-			sal_uInt32 nIcuSearchFlags = 0;
-			// map com::sun::star::util::SearchFlags to ICU uregex.h flags
-			// TODO: REG_EXTENDED, REG_NOT_BEGINOFLINE, REG_NOT_ENDOFLINE
-			// REG_NEWLINE is neither defined properly nor used anywhere => not implemented
-			// REG_NOSUB is not used anywhere => not implemented
-			// NORM_WORD_ONLY is only used for SearchAlgorithm==Absolute
-			// LEV_RELAXED is only used for SearchAlgorithm==Approximate
-			// why is even ALL_IGNORE_CASE deprecated in UNO? because of transliteration taking care of it???
-			if( (aSrchPara.searchFlag & com::sun::star::util::SearchFlags::ALL_IGNORE_CASE) != 0)
-				nIcuSearchFlags |= UREGEX_CASE_INSENSITIVE;
-			UErrorCode nIcuErr = U_ZERO_ERROR;
-			// assumption: transliteration doesn't mangle regexp control chars
-			OUString& rPatternStr = (aSrchPara.transliterateFlags & SIMPLE_TRANS_MASK) ? sSrchStr
-					: ((aSrchPara.transliterateFlags & COMPLEX_TRANS_MASK) ? sSrchStr2 : aSrchPara.searchString);
-			const IcuUniString aIcuSearchPatStr( rPatternStr.getStr(), rPatternStr.getLength());
-			pRegexMatcher = new RegexMatcher( aIcuSearchPatStr, nIcuSearchFlags, nIcuErr);
-			if( nIcuErr)
-				{ delete pRegexMatcher; pRegexMatcher = NULL;}
-			} break;
+			RESrchPrepare( aSrchPara);
+			break;
 
 		case SearchAlgorithms_APPROXIMATE:
             fnForward = &TextSearch::ApproxSrchFrwrd;
@@ -720,6 +701,41 @@ SearchResult TextSearch::NSrchBkwrd( const OUString& searchStr, sal_Int32 startP
     return aRet;
 }
 
+void TextSearch::RESrchPrepare( const ::com::sun::star::util::SearchOptions& rOptions)
+{
+	// select the transliterated pattern string
+	const OUString& rPatternStr = 
+		(rOptions.transliterateFlags & SIMPLE_TRANS_MASK) ? sSrchStr
+		: ((rOptions.transliterateFlags & COMPLEX_TRANS_MASK) ? sSrchStr2 : rOptions.searchString);
+
+	sal_uInt32 nIcuSearchFlags = UREGEX_UWORD; // request UAX#29 unicode capability
+	// map com::sun::star::util::SearchFlags to ICU uregex.h flags
+	// TODO: REG_EXTENDED, REG_NOT_BEGINOFLINE, REG_NOT_ENDOFLINE
+	// REG_NEWLINE is neither properly defined nor used anywhere => not implemented
+	// REG_NOSUB is not used anywhere => not implemented
+	// NORM_WORD_ONLY is only used for SearchAlgorithm==Absolute
+	// LEV_RELAXED is only used for SearchAlgorithm==Approximate
+	// why is even ALL_IGNORE_CASE deprecated in UNO? because of transliteration taking care of it???
+	if( (rOptions.searchFlag & com::sun::star::util::SearchFlags::ALL_IGNORE_CASE) != 0)
+		nIcuSearchFlags |= UREGEX_CASE_INSENSITIVE;
+	UErrorCode nIcuErr = U_ZERO_ERROR;
+	// assumption: transliteration didn't mangle regexp control chars
+	IcuUniString aIcuSearchPatStr( (const UChar*)rPatternStr.getStr(), rPatternStr.getLength());
+#ifndef DISABLE_WORDBOUND_EMULATION
+	// for conveniance specific syntax elements of the old regex engine are emulated
+	// by using regular word boundary matching \b to replace \< and \>
+	static const IcuUniString aChevronPattern( "\\\\<|\\\\>", -1, IcuUniString::kInvariant);
+	static const IcuUniString aChevronReplace( "\\\\b", -1, IcuUniString::kInvariant);
+	static RegexMatcher aChevronMatcher( aChevronPattern, 0, nIcuErr);
+	aChevronMatcher.reset( aIcuSearchPatStr);
+	aIcuSearchPatStr = aChevronMatcher.replaceAll( aChevronReplace, nIcuErr);
+	aChevronMatcher.reset();
+#endif
+	pRegexMatcher = new RegexMatcher( aIcuSearchPatStr, nIcuSearchFlags, nIcuErr);
+	if( nIcuErr)
+		{ delete pRegexMatcher; pRegexMatcher = NULL;}
+}
+
 //---------------------------------------------------------------------------
 
 SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
@@ -736,16 +752,35 @@ SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
 
 	// use the ICU RegexMatcher to find the matches
 	UErrorCode nIcuErr = U_ZERO_ERROR;
-	const IcuUniString aSearchTargetStr( searchStr.getStr(), endPos);
+	const IcuUniString aSearchTargetStr( (const UChar*)searchStr.getStr(), endPos);
 	pRegexMatcher->reset( aSearchTargetStr);
-	if( !pRegexMatcher->find( startPos, nIcuErr))
-		return aRet;
+	// search until there is a valid match
+	for(;;)
+	{
+		if( !pRegexMatcher->find( startPos, nIcuErr))
+			return aRet;
 
-	aRet.subRegExpressions = 1;
+		// #i118887# ignore zero-length matches e.g. "a*" in "bc"
+		int nStartOfs = pRegexMatcher->start( nIcuErr);
+		int nEndOfs = pRegexMatcher->end( nIcuErr);
+		if( nStartOfs < nEndOfs)
+			break;
+		// try at next position if there was a zero-length match
+		if( ++startPos >= endPos)
+			return aRet;
+	}
+
+	// extract the result of the search
+	const int nGroupCount = pRegexMatcher->groupCount();
+	aRet.subRegExpressions = nGroupCount + 1;
 	aRet.startOffset.realloc( aRet.subRegExpressions);
 	aRet.endOffset.realloc( aRet.subRegExpressions);
 	aRet.startOffset[0] = pRegexMatcher->start( nIcuErr);
 	aRet.endOffset[0]   = pRegexMatcher->end( nIcuErr);
+	for( int i = 1; i <= nGroupCount; ++i) {
+		aRet.startOffset[i] = pRegexMatcher->start( i, nIcuErr);
+		aRet.endOffset[i]   = pRegexMatcher->end( i, nIcuErr);
+	}
 
 	return aRet;
 }
@@ -765,21 +800,34 @@ SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
 
 	// use the ICU RegexMatcher to find the matches
 	// TODO: use ICU's backward searching once it becomes available
+	//       as its replacement using forward search is not as good as the real thing
 	UErrorCode nIcuErr = U_ZERO_ERROR;
-	const IcuUniString aSearchTargetStr( searchStr.getStr(), startPos);
+	const IcuUniString aSearchTargetStr( (const UChar*)searchStr.getStr(), startPos);
 	pRegexMatcher->reset( aSearchTargetStr);
 	if( !pRegexMatcher->find( endPos, nIcuErr))
 		return aRet;
 
-	aRet.subRegExpressions = 1;
+	// find the last match
+	int nLastPos = 0;
+	do {
+		nLastPos = pRegexMatcher->start( nIcuErr);
+	} while( pRegexMatcher->find( nLastPos + 1, nIcuErr));
+
+	// find last match again to get its details
+	pRegexMatcher->find( nLastPos, nIcuErr);
+
+	// fill in the details of the last match
+	const int nGroupCount = pRegexMatcher->groupCount();
+	aRet.subRegExpressions = nGroupCount + 1;
 	aRet.startOffset.realloc( aRet.subRegExpressions);
 	aRet.endOffset.realloc( aRet.subRegExpressions);
-
-	do {
-		// NOTE: backward search seems to be expected to have startOfs/endOfs inverted!
-		aRet.startOffset[0] = pRegexMatcher->end( nIcuErr);
-		aRet.endOffset[0]   = pRegexMatcher->start( nIcuErr);
-	} while( pRegexMatcher->find( aRet.endOffset[0]+1, nIcuErr));
+	// NOTE: existing users of backward search seem to expect startOfs/endOfs being inverted!
+	aRet.startOffset[0] = pRegexMatcher->end( nIcuErr);
+	aRet.endOffset[0]   = pRegexMatcher->start( nIcuErr);
+	for( int i = 1; i <= nGroupCount; ++i) {
+		aRet.startOffset[i] = pRegexMatcher->end( i, nIcuErr);
+		aRet.endOffset[i]   = pRegexMatcher->start( i, nIcuErr);
+	}
 
 	return aRet;
 }

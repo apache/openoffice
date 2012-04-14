@@ -1,5 +1,26 @@
 #!@PERL@ -w
 #
+###############################################################
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+###############################################################
+#
 # Program:     set_soenv.in
 # Version:     $Revision: 1.201 $
 # Date:        $Date: 2008-09-05 14:14:29 $
@@ -90,7 +111,7 @@ my ( $oldPATH, $SRC_ROOT, $SO_HOME, $JAVA_HOME, $JDK, $JAVAFLAGS, $OOO_SHELL,
      $COMMON_BUILD_TOOLS, $WIN_GREP, $WIN_FIND, $WIN_LS,
      $WIN_GNUCOPY, $WIN_TOUCH, $STLPORT4, $MOZILLA_VERSION, $MOZILLA_TOOLKIT, $PREBUILD_MOZAB, $MOZILLABUILD,
 	 $PROEXT, $TARFILE_LOCATION,
-     $DISABLE_SAXON, $ENABLE_HUNSPELL, $ENABLE_HYPHEN,
+     $ENABLE_HUNSPELL, $ENABLE_HYPHEN,
      $SYSTEM_PYTHON, $SYSTEM_MOZILLA, $EPM_FLAGS);
 #
 #-------------------------------------------
@@ -146,6 +167,9 @@ $FLIPCMD        = "";               # Flip '/' to '\' wrapper (only for winnt)
 $GLIBC          = "";               # Whether the platform uses glibc
 $PROEXT         = "@PROEXT@";
 $EPM_FLAGS	= "";
+
+# Required for OS/2 macro expansion
+my @unixroot='@unixroot';
 
 #
 #--------------------------------------------------------------------
@@ -839,7 +863,14 @@ if ( $platform =~ m/cygwin|os2/ ) {
    $JAVA_HOME =~ s/[\s\/]+$//;	# remove trailing \n or \/ if there is any.
 }
 # 3. shell path.
+if ( $platform =~ m/os2/ )
+{
+$OOO_SHELL = 'sh';
+} 
+else
+{
 $OOO_SHELL = '@SHELLPATH@'."\/bash";
+}
 
 if ( '@STLPORT4@' eq $no_stl )
 {
@@ -1309,7 +1340,7 @@ elsif ($platform =~ m/os2/)
 
   if ( '@ANT_HOME@' ne '' )
   {
-     $PATH .= $ps.'@ANT_HOME@';
+     $PATH .= $ps.'@ANT_HOME@/bin';
   }
 
   # Append old PATH
@@ -1512,14 +1543,15 @@ else
 
 #
 print "done\n";
-$gb_REPOS = $SRC_ROOT;
-my $BUILD_TYPE = "@BUILD_TYPE@";
 
-if ('@WITH_LANG@' ne "")
+$gb_REPOS = $SRC_ROOT;
+for my $repo (split(/ /,"@ADDITIONAL_REPOSITORIES@"))
 {
-    $gb_REPOS .= " ".$SOURCE_ROOT_DIR."/extras";
-    $BUILD_TYPE = "@BUILD_TYPE@ L10N";
+    my $abs_repo = `cd $SRC_ROOT/$repo;pwd`;
+    chomp($abs_repo);
+    $gb_REPOS .= " " . $abs_repo;
 }
+
 
 #
 # F. Setting the different aliases.
@@ -1703,6 +1735,9 @@ ToFile( "MKDEPENDSOLVER",    "TRUE",             "e" );
 ToFile( "nodep",             "@nodep@",          "e" );
 ToFile( "TARFILE_LOCATION",  $TARFILE_LOCATION,  "e" );
 ToFile( "DO_FETCH_TARBALLS", "@DO_FETCH_TARBALLS@",  "e" );
+ToFile( "CUSTOM_PACK_LIST",  "@CUSTOM_PACK_LIST@",  "e" );
+ToFile( "USE_PACKAGER",      "@USE_PACKAGER@",      "e" );
+ToFile( "ENABLE_ONLINE_UPDATE", "@ENABLE_ONLINE_UPDATE@", "e" );
 #
 # Writing the platform dependent constant values to file.
 # (c = comment, e = environment variable, a = alias )
@@ -1768,7 +1803,6 @@ if ( $platform =~ m/cygwin/ )
    chomp($tmpdir);
    ToFile( "TMPDIR",     $tmpdir,            "e" );
 }
-ToFile( "DISABLE_SAXON",	"@DISABLE_SAXON@", "e" );
 ToFile( "ENABLE_HUNSPELL",	"@ENABLE_HUNSPELL@", "e" );
 ToFile( "ENABLE_HYPHEN",	"@ENABLE_HYPHEN@", "e" );
 
@@ -1849,7 +1883,10 @@ ToFile( "SYSTEM_GRAPHITE",   "@SYSTEM_GRAPHITE@",   "e");
 ToFile( "GRAPHITE_LIBS",     "@GRAPHITE_LIBS@",     "e");
 ToFile( "GRAPHITE_CFLAGS",   "@GRAPHITE_CFLAGS@",   "e");
 ToFile( "VC_STANDARD",       "@VC_STANDARD@",      "e" );
-ToFile( "WITH_MYSPELL_DICTS","@WITH_MYSPELL_DICTS@","e");
+ToFile( "ENABLE_CATEGORY_B", "@ENABLE_CATEGORY_B@", "e");
+ToFile( "BUNDLED_EXTENSION_BLOBS", "@BUNDLED_EXTENSION_BLOBS@", "e");
+ToFile( "BUNDLED_PREREG_EXTENSIONS", "@BUNDLED_PREREG_EXTENSIONS@", "e");
+ToFile( "ENABLE_BUNDLED_DICTIONARIES", "@ENABLE_BUNDLED_DICTIONARIES@", "e");
 ToFile( "SYSTEM_DICTS",      "@SYSTEM_DICTS@",     "e");
 ToFile( "DICT_SYSTEM_DIR",   "@DICT_SYSTEM_DIR@",  "e");
 ToFile( "HYPH_SYSTEM_DIR",   "@HYPH_SYSTEM_DIR@",  "e");
@@ -1868,11 +1905,14 @@ ToFile( "MOZ_LIB_XPCOM",     "@MOZ_LIB_XPCOM@",    "e" );
 ToFile( "MOZ_NSPR_CFLAGS",   "@MOZ_NSPR_CFLAGS@",  "e" );
 ToFile( "MOZ_NSS_CFLAGS",    "@MOZ_NSS_CFLAGS@",   "e" );
 ToFile( "MOZ_LDAP_CFLAGS",   "@MOZ_LDAP_CFLAGS@",  "e" );
+ToFile( "WITH_CATA_FONTS",   "@WITH_CATA_FONTS@",  "e" );
+ToFile( "WITH_CATB_FONTS",   "@WITH_CATB_FONTS@",  "e" );
 ToFile( "WITH_FONTS",        "@WITH_FONTS@",       "e" );
 ToFile( "WITHOUT_AFMS",      "@WITHOUT_AFMS@",     "e" );
 ToFile( "WITHOUT_PPDS",      "@WITHOUT_PPDS@",     "e" );
 ToFile( "WITH_BINFILTER",    "@WITH_BINFILTER@",   "e" );
-ToFile( "BUILD_TYPE",        "$BUILD_TYPE",       "e" );
+ToFile( "BUILD_TYPE",        "@BUILD_TYPE@",       "e" );
+ToFile( "ADDITIONAL_REPOSITORIES", "@ADDITIONAL_REPOSITORIES@", "e" );
 ToFile( "VERBOSE",           "@VERBOSE@",          "e" );
 ToFile( "ENABLE_EVOAB2",     "@ENABLE_EVOAB2@",    "e" );
 ToFile( "GOBJECT_CFLAGS",    "@GOBJECT_CFLAGS@",   "e" );
@@ -1881,6 +1921,7 @@ if ( '@ENABLE_RPATH@' eq "no" ) {
   ToFile( "LINKFLAGSRUNPATH",'',                   "e" );
 }
 ToFile( "EPM",               "@EPM@",              "e" );
+ToFile( "EPM_URL",           "@EPM_URL@",	   "e" );
 ToFile( "EPM_FLAGS",         $EPM_FLAGS,           "e" );
 ToFile( "BUILD_EPM",         "@BUILD_EPM@",        "e" );
 ToFile( "PKGFORMAT",         "@PKGFORMAT@",        "e" );
@@ -1923,14 +1964,12 @@ ToFile( "LIBWPD_LIBS",       "@LIBWPD_LIBS@",      "e" );
 ToFile( "SYSTEM_CPPUNIT",    "@SYSTEM_CPPUNIT@",   "e" );
 ToFile( "CPPUNIT_CFLAGS",    "@CPPUNIT_CFLAGS@",   "e" );
 ToFile( "CPPUNIT_LIBS",      "@CPPUNIT_LIBS@",     "e" );
+ToFile( "WITH_CPPUNIT",      "@WITH_CPPUNIT@",     "e" );
 ToFile( "SYSTEM_LIBXML",     "@SYSTEM_LIBXML@",    "e" );
 ToFile( "USE_FT_EMBOLDEN",   "@USE_FT_EMBOLDEN@",  "e" );
 ToFile( "LIBXML_CFLAGS",     "@LIBXML_CFLAGS@",    "e" );
 ToFile( "LIBXML_LIBS",       "@LIBXML_LIBS@",      "e" );
 ToFile( "SYSTEM_EXPAT",      "@SYSTEM_EXPAT@",     "e" );
-ToFile( "SYSTEM_DB",         "@SYSTEM_DB@",        "e" );
-ToFile( "DB_VERSION",        "@DB_VERSION@",       "e" );
-ToFile( "DB_INCLUDES",       "@DB_INCLUDES@",      "e" );
 ToFile( "ENABLE_MYSQLC",     "@ENABLE_MYSQLC@",    "e" );
 ToFile( "SYSTEM_MYSQL",      "@SYSTEM_MYSQL@",     "e" );
 ToFile( "SYSTEM_MYSQL_CPPCONN","@SYSTEM_MYSQL_CPPCONN@","e" );
@@ -1945,8 +1984,12 @@ ToFile( "LUCENE_CORE_JAR",   "@LUCENE_CORE_JAR@",  "e" );
 ToFile( "LUCENE_ANALYZERS_JAR",   "@LUCENE_ANALYZERS_JAR@",  "e" );
 ToFile( "SYSTEM_BSH",        "@SYSTEM_BSH@",       "e" );
 ToFile( "BSH_JAR",           "@BSH_JAR@",          "e" );
+ToFile( "ENABLE_BEANSHELL", "@ENABLE_BEANSHELL@",  "e" );
 ToFile( "SYSTEM_SAXON",      "@SYSTEM_SAXON@",     "e" );
 ToFile( "SAXON_JAR",         "@SAXON_JAR@",        "e" );
+ToFile( "DISABLE_SAXON",     "@DISABLE_SAXON@",    "e" );
+ToFile( "ENABLE_JAVASCRIPT", "@ENABLE_JAVASCRIPT@","e" );
+ToFile( "ENABLE_COINMP",     "@ENABLE_COINMP@",    "e" );
 ToFile( "SYSTEM_ODBC_HEADERS","@SYSTEM_ODBC_HEADERS@","e" );
 ToFile( "SYSTEM_LIBXSLT",    "@SYSTEM_LIBXSLT@",   "e" );
 ToFile( "LIBXSLT_CFLAGS",    "@LIBXSLT_CFLAGS@",   "e" );
@@ -1959,21 +2002,16 @@ ToFile( "CURL_LIBS",         "@CURL_LIBS@",        "e" );
 ToFile( "SYSTEM_BOOST",      "@SYSTEM_BOOST@",     "e" );
 ToFile( "SYSTEM_MDDS",       "@SYSTEM_MDDS@",      "e" );
 ToFile( "SYSTEM_VIGRA",      "@SYSTEM_VIGRA@",     "e" );
-ToFile( "SYSTEM_NEON",       "@SYSTEM_NEON@",      "e" );
 ToFile( "SYSTEM_GDKPIXBUF",  "@SYSTEM_GDKPIXBUF@",   "e" );
 ToFile( "SYSTEM_GLIB",       "@SYSTEM_GLIB@",   "e" );
 ToFile( "SYSTEM_GETTEXT",    "@SYSTEM_GETTEXT@",   "e" );
 ToFile( "SYSTEM_PANGO",      "@SYSTEM_PANGO@",   "e" );
 ToFile( "SYSTEM_LIBPNG",     "@SYSTEM_LIBPNG@",   "e" );
 ToFile( "SYSTEM_LIBJPEG",    "@SYSTEM_LIBJPEG@",   "e" );
-ToFile( "NEON_VERSION",      "@NEON_VERSION@",     "e" );
-ToFile( "NEON_LIBS",         "@NEON_LIBS@",        "e" );
-ToFile( "NEON_CFLAGS",       "@NEON_CFLAGS@",      "e" );
 ToFile( "DISABLE_XAW",       "@DISABLE_XAW@",      "e" );
-ToFile( "ENABLE_AGG",        "@ENABLE_AGG@",       "e" );
-ToFile( "SYSTEM_AGG",	     "@SYSTEM_AGG@",       "e" );
-ToFile( "AGG_VERSION",	     "@AGG_VERSION@",      "e" );
 ToFile( "DMAKE_URL",         "@DMAKE_URL@",        "e" );
+ToFile( "DMAKE_PATH",        "@DMAKE_PATH@",       "e" );
+ToFile( "IS_SYSTEM_DMAKE",   "@IS_SYSTEM_DMAKE@",  "e" );
 ToFile( "BUILD_STAX",        "@BUILD_STAX@",       "e" );
 ToFile( "BUILD_UNOWINREG",   "@BUILD_UNOWINREG@",  "e" );
 ToFile( "USE_XINERAMA",      "@USE_XINERAMA@",     "e" );
@@ -2002,7 +2040,7 @@ ToFile( "XAU_LIBS",          "@XAU_LIBS@",         "e" );
 ToFile( "GXX_INCLUDE_PATH",  PathFormat("@GXX_INCLUDE_PATH@"), "e" );
 ToFile( "COMMON_BUILD_TOOLS",$COMMON_BUILD_TOOLS,  "e" );
 if ($platform !~ m/cygwin|os2/) {
-   if ( $ENV{"TMPDIR"} eq "" ) {
+   if ( !defined $ENV{"TMPDIR"} || $ENV{"TMPDIR"} eq "" ) {
       ToFile( "TMPDIR",      "/tmp",               "e" );
    } else {
       ToFile( "TMPDIR",      "$ENV{'TMPDIR'}",     "e" );
@@ -2033,6 +2071,7 @@ if ( $platform =~ m/cygwin/ )
    ToFile( "LS",                $WIN_LS,            "e" );
    ToFile( "GNUCOPY",           $WIN_GNUCOPY,       "e" );
    ToFile( "TOUCH",             $WIN_TOUCH,         "e" );
+   ToFile( "WITH_VC_REDIST",    "@WITH_VC_REDIST@", "e" );
 }
 if ( $platform =~ m/os2/ )
 {
@@ -2089,13 +2128,13 @@ if ( $platform =~ m/cygwin/ ) {
     ToFile( "", $empty, "n");
 }
 
-# on Solaris, MacOSX and FreeBSD set GNUCOPY, GNUPATCH and GPERF
-if ($platform =~ m/solaris|darwin|freebsd/)
+# on Solaris, MacOSX and FreeBSD (and Windows) set GNUPATCH and GPERF
+if ($platform =~ m/solaris|darwin|freebsd|cygwin/)
 {
   ToFile( "GNUPATCH",   "@GNUPATCH@",	"e");
+  ToFile( "GPERF", "@GPERF@",	"e");
 }
 ToFile( "GNUCOPY",	"@GNUCP@",	"e");
-ToFile( "GPERF", "@GPERF@",	"e");
 # OS/2 define .pl as executable for 4os2
 # use - as switch char for dmake (os2/switchar.c)
 if ($platform =~ m/os2/)

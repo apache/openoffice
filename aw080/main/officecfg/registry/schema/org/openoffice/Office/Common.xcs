@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--***********************************************************************
- *
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+<!--***********************************************************
  * 
- * Copyright 2000, 2010 Oracle and/or its affiliates.
- *
- * OpenOffice.org - a multi-platform office productivity suite
- *
- * This file is part of OpenOffice.org.
- *
- * OpenOffice.org is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License version 3
- * only, as published by the Free Software Foundation.
- *
- * OpenOffice.org is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License version 3 for more details
- * (a copy is included in the LICENSE file that accompanied this code).
- *
- * You should have received a copy of the GNU Lesser General Public License
- * version 3 along with OpenOffice.org.  If not, see
- * <http://www.openoffice.org/license.html>
- * for a copy of the LGPLv3 License.
- *
- ************************************************************************ -->
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
 <!DOCTYPE oor:component-schema SYSTEM "../../../../component-schema.dtd">
 <oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="Common" oor:package="org.openoffice.Office" xml:lang="en-US">
     <info>
@@ -2400,14 +2396,14 @@
                         <author>MAV</author>
                         <desc>Specifies whether SHA1 algorithm instead of SHA256 should be used in ODF12 for StartKey and Checksum generation during encryption.</desc>
                     </info>
-                    <value>false</value>
+                    <value>true</value>
                 </prop>
                 <prop oor:name="UseBlowfishInODF12" oor:type="xs:boolean">
                     <info>
                         <author>MAV</author>
                         <desc>Specifies whether Blowfish algorithm instead of AES should be used in ODF12 for encryption.</desc>
                     </info>
-                    <value>false</value>
+                    <value>true</value>
                 </prop>
             </group>
 		</group>
@@ -3530,59 +3526,6 @@
 					<value>0</value>
 				</prop>
             </group>
-			<group oor:name="Registration">
-				<info>
-					<author>FS</author>
-					<desc>Contains various settings regarding the product registration feature.</desc>
-				</info>
-				<prop oor:name="TemplateURL" oor:type="xs:string">
-					<info>
-						<desc>Contains a string specifying the URL with placeholders to be used for online registration.</desc>
-					</info>
-					<value/>
-					<!-- JB: Empty default inserted into empty property node. Remove if NIL was intended -->
-				</prop>
-				<prop oor:name="URL" oor:type="xs:string">
-					<info>
-						<desc>Contains a string specifying the real URL to be used for online registration.</desc>
-					</info>
-					<value/>
-					<!-- JB: Empty default inserted into empty property node. Remove if NIL was intended -->
-				</prop>
-				<prop oor:name="ReminderDate" oor:type="xs:string">
-					<info>
-						<desc>Contains a string representation of the date on which the user receives a reminder (e.g. "13.02.2002").</desc>
-					</info>
-					<value/>
-					<!-- JB: Empty default inserted into empty property node. Remove if NIL was intended -->
-				</prop>
-				<prop oor:name="RequestDialog" oor:type="xs:int">
-					<info>
-						<desc>Contains the number used internally to determine when the dialog should be started.</desc>
-					</info>
-					<value>1</value>
-				</prop>
-				<prop oor:name="ShowMenuItem" oor:type="xs:boolean">
-					<info>
-						<desc>Contains a Boolean that specifies if the "Registration..." menu item is available.</desc>
-					</info>
-					<value>true</value>
-				</prop>
-				<prop oor:name="ProductVersionID" oor:type="xs:string">
-					<info>
-						<author>CD/OBR</author>
-						<desc>Current product ID.</desc>
-						<deprecated>This data is saved in a dedicated file since OOo 3.0 FCS</deprecated>
-					</info>
-				</prop>
-				<set oor:name="ProductVersions" oor:node-type="ProductVersionID">
-					<info>
-						<author>CD/OBR</author>
-						<desc>Specifies product specific IDs and associated instance UUIDs</desc>
-						<deprecated>This data is saved in a dedicated file since OOo 3.0 FCS</deprecated>
-					</info>
-				</set>
-			</group>
 		</group>
 		<group oor:name="Java">
 			<info>
@@ -5682,16 +5625,6 @@
 					<enumeration oor:value="industrial">
 						<info>
 							<desc>Industrial</desc>
-						</info>
-					</enumeration>
-					<enumeration oor:value="crystal">
-						<info>
-							<desc>Crystal - the KDE default theme</desc>
-						</info>
-					</enumeration>
-					<enumeration oor:value="tango">
-						<info>
-							<desc>Tango - the Gnome default theme</desc>
 						</info>
 					</enumeration>
 					<enumeration oor:value="classic">

@@ -85,6 +85,7 @@ protected:
 	String					aFileName;			// Wenn es sich um einen Link handelt, steht hier der Dateiname drin.
 	String					aFilterName;
 	GraphicObject*			pGraphic;			// Zur Beschleunigung von Bitmapausgaben, besonders von gedrehten.
+    GraphicObject*			mpReplacementGraphic;
 	SdrGraphicLink*			pGraphicLink;		// Und hier noch ein Pointer fuer gelinkte Grafiken
 	bool    				bMirrored;			// True bedeutet, die Grafik ist horizontal, d.h. ueber die Y-Achse gespiegelt auszugeben.
 
@@ -124,6 +125,7 @@ public:
 
 	void					SetGraphicObject( const GraphicObject& rGrfObj );
 	const GraphicObject&	GetGraphicObject( bool bForceSwapIn = false) const;
+    const GraphicObject*    GetReplacementGraphicObject() const;
 
 	//void					NbcSetGraphic(const Graphic& rGrf);
 	void					SetGraphic(const Graphic& rGrf);
@@ -138,8 +140,6 @@ public:
 	bool IsAnimated() const;
 	bool IsEPS() const;
 	bool IsSwappedOut() const;
-	bool IsRenderGraphic() const;
-	bool HasRenderGraphic() const;
 
 	const MapMode&			GetGrafPrefMapMode() const;
 	const Size&				GetGrafPrefSize() const;
@@ -179,6 +179,8 @@ public:
 	virtual SdrObject*		DoConvertToPolygonObject(bool bBezier, bool bAddText) const;
 
 	virtual void			AdjustToMaxRange( const basegfx::B2DRange& rMaxRange, bool bShrinkOnly = false );
+    bool isEmbeddedSvg() const;
+    GDIMetaFile getMetafileFromEmbeddedSvg() const;
 
 	virtual void			Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 

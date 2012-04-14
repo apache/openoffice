@@ -27,6 +27,7 @@
 #include <drawinglayer/drawinglayerdllapi.h>
 #include <drawinglayer/primitive2d/baseprimitive2d.hxx>
 #include <drawinglayer/geometry/viewinformation2d.hxx>
+#include <boost/utility.hpp>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -37,7 +38,8 @@ namespace drawinglayer
         /** BaseProcessor2D class
 
             Baseclass for all C++ implementations of instances which process
-            primitives.
+            primitives. Is is derived from boost::noncopyable to not copy it by
+            accident.
 
             Instances which process primitives can be renderers, but also stuff
             for HitTests, BoundRect calculations and/or animation processing. The
@@ -159,6 +161,7 @@ namespace drawinglayer
             to not force their decomposition to be created and/or parsed.
          */
 		class DRAWINGLAYER_DLLPUBLIC BaseProcessor2D
+		:	private boost::noncopyable
 		{
 		private:
             /// The ViewInformation2D itself. It's private to isolate accesses to it

@@ -1,0 +1,16 @@
+--- misc/serf-1.0.0/buckets/request_buckets.c	2011-06-24 04:03:57.000000000 +0200
++++ misc/build/serf-1.0.0/buckets/request_buckets.c	2012-02-24 08:56:44.086383000 +0100
+@@ -112,9 +112,10 @@
+     serf_bucket_aggregate_append(bucket, new_bucket);
+     serf_bucket_aggregate_append(bucket, ctx->headers);
+     if (ctx->body != NULL) {
+-        /* Morph the body bucket to a chunked encoding bucket for now. */
+-        serf_bucket_headers_set(ctx->headers, "Transfer-Encoding", "chunked");
+-        ctx->body = serf_bucket_chunk_create(ctx->body, bucket->allocator);
++        // no chunked transfer encoding for AOO - orw at apache dot org
++        ///* Morph the body bucket to a chunked encoding bucket for now. */
++        //serf_bucket_headers_set(ctx->headers, "Transfer-Encoding", "chunked");
++        //ctx->body = serf_bucket_chunk_create(ctx->body, bucket->allocator);
+         serf_bucket_aggregate_append(bucket, ctx->body);
+     }
+ 

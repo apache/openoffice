@@ -149,20 +149,30 @@ namespace sdr
 
 		drawinglayer::primitive3d::Primitive3DSequence ViewContactOfE3d::getVIP3DSWithoutObjectTransform() const
 		{
-			// local up-to-date checks. Create new list and compare.
-			drawinglayer::primitive3d::Primitive3DSequence xNew(createViewIndependentPrimitive3DSequence());
-
-			if(!drawinglayer::primitive3d::arePrimitive3DSequencesEqual(mxViewIndependentPrimitive3DSequence, xNew))
+			if(!mxViewIndependentPrimitive3DSequence.hasElements())
 			{
-				// has changed, copy content
-				const_cast< ViewContactOfE3d* >(this)->mxViewIndependentPrimitive3DSequence = xNew;
+				// create primitive list on demand
+				const_cast< ViewContactOfE3d* >(this)->mxViewIndependentPrimitive3DSequence = createViewIndependentPrimitive3DSequence();
 			}
 
 			// return current Primitive2DSequence
 			return mxViewIndependentPrimitive3DSequence;
 		}
 
-		drawinglayer::primitive3d::Primitive3DSequence ViewContactOfE3d::getViewIndependentPrimitive3DSequence() const
+		// React on changes of the object of this ViewContact
+		void ViewContactOfE3d::ActionChanged()
+		{
+            // call parent
+    		ViewContactOfSdrObj::ActionChanged();
+
+			// reset local buffered primitive sequence (always)
+			if(mxViewIndependentPrimitive3DSequence.hasElements())
+			{
+				mxViewIndependentPrimitive3DSequence.realloc(0);
+			}
+		}
+
+        drawinglayer::primitive3d::Primitive3DSequence ViewContactOfE3d::getViewIndependentPrimitive3DSequence() const
 		{
 			// get sequence without object transform
 			drawinglayer::primitive3d::Primitive3DSequence xRetval(getVIP3DSWithoutObjectTransform());

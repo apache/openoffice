@@ -190,7 +190,7 @@ Graphic ViewElementListProvider::GetSymbolGraphic( sal_Int32 nStandardSymbol, co
     if( pSymbolShapeProperties )
         pObj->SetMergedItemSet(*pSymbolShapeProperties);
 
-	GDIMetaFile aMeta(pView->GetAllMarkedMetaFile());
+	GDIMetaFile aMeta(pView->GetMarkedObjMetaFile());
 
 	Graphic aGraph(aMeta);
     const Size aSize(sdr::legacy::GetSnapRect(*pObj).GetSize());

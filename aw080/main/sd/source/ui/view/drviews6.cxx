@@ -450,7 +450,7 @@ void DrawViewShell::GetBmpMaskState( SfxItemSet& rSet )
 	// valid graphic object?
 	const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(mpDrawView->getSelectedIfSingle());
 	
-	if(pSdrGrafObj && !(pSdrGrafObj->IsEPS() || pSdrGrafObj->IsRenderGraphic()) && !mpDrawView->IsTextEdit())
+	if(pSdrGrafObj && !pSdrGrafObj->IsEPS() && !mpDrawView->IsTextEdit())
     {
 		bEnable = true;
     }

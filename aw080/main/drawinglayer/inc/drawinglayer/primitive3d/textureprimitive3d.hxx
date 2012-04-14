@@ -68,9 +68,6 @@ namespace drawinglayer
 			const basegfx::B2DVector& getTextureSize() const { return maTextureSize; }
 			bool getModulate() const { return mbModulate; }
 			bool getFilter() const { return mbFilter; }
-
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
 		};
 	} // end of namespace primitive3d
 } // end of namespace drawinglayer
@@ -101,9 +98,6 @@ namespace drawinglayer
 
 			/// data read access
 			double getTransparence() const { return mfTransparence; }
-
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
 
 			/// own getB3DRange implementation to include transparent geometries to BoundRect calculations
 			virtual basegfx::B3DRange getB3DRange(const geometry::ViewInformation3D& rViewInformation) const;
@@ -147,9 +141,6 @@ namespace drawinglayer
 			/// data read access
 			const attribute::FillGradientAttribute& getGradient() const { return maGradient; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
-
 			/// provide unique ID
 			DeclPrimitrive3DIDBlock()
 		};
@@ -186,9 +177,6 @@ namespace drawinglayer
 			/// data read access
 			const attribute::FillBitmapAttribute& getFillBitmapAttribute() const { return maFillBitmapAttribute; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
-
 			/// provide unique ID
 			DeclPrimitrive3DIDBlock()
 		};
@@ -216,9 +204,6 @@ namespace drawinglayer
 				const attribute::FillGradientAttribute& rGradient, 
 				const Primitive3DSequence& rChildren, 
 				const basegfx::B2DVector& rTextureSize);
-
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
 
 			/// provide unique ID
 			DeclPrimitrive3DIDBlock()

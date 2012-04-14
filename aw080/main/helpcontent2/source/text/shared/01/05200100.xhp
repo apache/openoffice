@@ -2,34 +2,28 @@
 
 
 
-<!--
- ***********************************************************************
- *
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+<!--***********************************************************
  * 
- * Copyright 2000, 2010 Oracle and/or its affiliates.
- *
- * OpenOffice.org - a multi-platform office productivity suite
- *
- * This file is part of OpenOffice.org.
- *
- * OpenOffice.org is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License version 3
- * only, as published by the Free Software Foundation.
- *
- * OpenOffice.org is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License version 3 for more details
- * (a copy is included in the LICENSE file that accompanied this code).
- *
- * You should have received a copy of the GNU Lesser General Public License
- * version 3 along with OpenOffice.org.  If not, see
- * <http://www.openoffice.org/license.html>
- * for a copy of the LGPLv3 License.
- *
- ************************************************************************
- -->
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
 
 
 		<helpdocument version="1.0">
@@ -95,6 +89,13 @@
 <paragraph role="paragraph" id="par_id3153526" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_LINE:TSB_CENTER_END">Places the center of the arrowhead(s) on the endpoint(s) of the selected line.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_LINE:CBX_SYNCHRONIZE" id="bm_id3154138" localize="false"/><paragraph role="heading" id="hd_id3154072" xml-lang="en-US" level="3" l10n="U" oldref="21">Synchronize ends</paragraph>
 <paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_LINE:CBX_SYNCHRONIZE">Automatically updates both arrowhead settings when you enter a different width, select a different arrowhead style,or center an arrowhead.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154580" xml-lang="en-US" level="2" l10n="">Corner and cap styles</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_LINE:LB_EDGE_STYLE" id="bm_id3154581" localize="false" />
+<paragraph role="heading" id="hd_id3154582" xml-lang="en-US" level="3" l10n="">Corner style</paragraph>
+<paragraph role="paragraph" id="par_id3154583" xml-lang="en-US" l10n=""><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_LINE:LB_EDGE_STYLE">Select the shape to be used at the corners of the line. In case of a small angle between lines, a mitered shape is replaced with a beveled shape.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_LINE:LB_CAP_STYLE" id="bm_id3154584" localize="false" />
+<paragraph role="heading" id="hd_id3154585" xml-lang="en-US" level="3" l10n="">Cap style</paragraph>
+<paragraph role="paragraph" nil="par_id3154586" xml-lang="en-US" l10n=""><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_LINE:LB_CAP_STYLE">Select the style of the line end caps. The caps are added to inner dashes as well.</ahelp></paragraph>
 <embed href="text/shared/00/00000001.xhp#vorschau"/>
 </body>
 </helpdocument>

@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 PRJ=..$/..
 PRJNAME=sdext
@@ -126,11 +122,7 @@ ZIP1LIST=		*
 
 DESCRIPTION:=$(ZIP1DIR)$/description.xml
 
-.IF "$(GUI)" == "WIN" || "$(GUI)" == "WNT"
-PACKLICS:=$(foreach,i,$(alllangiso) $(ZIP1DIR)$/registry$/license_$i)
-.ELSE
-PACKLICS:=$(foreach,i,$(alllangiso) $(ZIP1DIR)$/registry$/LICENSE_$i)
-.ENDIF
+PACKLICS:=$(ZIP1DIR)$/registry$/LICENSE
 
 .IF "$(WITH_LANG)"==""
 FIND_XCU=registry/data
@@ -296,11 +288,11 @@ $(INCCOM)$/PresenterExtensionIdentifier.hxx : PresenterExtensionIdentifier.txx
 
 $(COMPONENT_MANIFEST) : $$(@:f)
 	@-$(MKDIRHIER) $(@:d)
-    +$(TYPE) $< | $(SED) "s/SHARED_EXTENSION/$(DLLPOST)/" > $@
+	+$(TYPE) $< | $(SED) "s/SHARED_EXTENSION/$(DLLPOST)/" > $@
 
 $(ZIP1DIR)$/help$/component.txt : help$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
+	$(COPY) $< $@
 
 $(ZIP1DIR)/help/%/com.sun.PresenterScreen-$(PLATFORMID)/presenter.xhp : $(COMMONMISC)/%/com.sun.PresenterScreen/presenter.xhp
 	@echo creating $@
@@ -314,15 +306,15 @@ $(ZIP1TARGETN) : $(HELPLINKALLTARGETS)
 
 $(COMPONENT_BITMAPS) : bitmaps$/$$(@:f)
 	@-$(MKDIRHIER) $(@:d)
-    +$(COPY) $< $@
+	+$(COPY) $< $@
 
 $(COMPONENT_IMAGES) : $(SOLARSRC)$/$(RSCDEFIMG)$/desktop$/res$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
+	$(COPY) $< $@
 
 $(COMPONENT_LIBRARY) : $(DLLDEST)$/$$(@:f)
 	@-$(MKDIRHIER) $(@:d)
-    +$(COPY) $< $@
+	+$(COPY) $< $@
 .IF "$(OS)$(CPU)"=="WNTI"
  .IF "$(COM)"=="GCC"
     $(GNUCOPY) $(SOLARBINDIR)$/mingwm10.dll $(ZIP1DIR)
@@ -366,16 +358,13 @@ $(COMPONENT_LIBRARY) : $(DLLDEST)$/$$(@:f)
 .ENDIF
 
 
-.IF "$(GUI)" == "WIN" || "$(GUI)" == "WNT"
-$(PACKLICS) : $(SOLARBINDIR)$/osl$/license$$(@:b:s/_/./:e:s/./_/)$$(@:e).txt
+$(DESCRIPTION) : description.xml
 	@@-$(MKDIRHIER) $(@:d)
 	$(GNUCOPY) $< $@
-.ELSE
-$(PACKLICS) : $(SOLARBINDIR)$/osl$/LICENSE$$(@:b:s/_/./:e:s/./_/)$$(@:e)
-	@@-$(MKDIRHIER) $(@:d)
-	$(GNUCOPY) $< $@
-.ENDIF
 
+$(PACKLICS) : $(SOLARBINDIR)$/osl$/LICENSE_ALv2
+	@@-$(MKDIRHIER) $(@:d)
+	$(GNUCOPY) $< $@
 
 $(ZIP1DIR)/%.xcu : %.xcu
 	@@-$(MKDIRHIER) $(@:d)
@@ -384,21 +373,6 @@ $(ZIP1DIR)/%.xcu : %.xcu
 $(ZIP1DIR)$/%.xcs : %.xcs
 	@@-$(MKDIRHIER) $(@:d)
 	$(GNUCOPY) $< $@
-
-# Temporary file that is used to replace some placeholders in description.xml.
-DESCRIPTION_TMP:=$(ZIP1DIR)$/description.xml.tmp
-
-.INCLUDE .IGNORE : $(ZIP1DIR)_lang_track.mk
-.IF "$(LAST_WITH_LANG)"!="$(WITH_LANG)"
-PHONYDESC=.PHONY
-.ENDIF			# "$(LAST_WITH_LANG)"!="$(WITH_LANG)"
-$(DESCRIPTION) $(PHONYDESC) : $$(@:f)
-	@-$(MKDIRHIER) $(@:d)
-	$(PERL) $(SOLARENV)$/bin$/licinserter.pl description.xml registry/LICENSE_xxx $(DESCRIPTION_TMP)
-	@echo LAST_WITH_LANG=$(WITH_LANG) > $(ZIP1DIR)_lang_track.mk
-	$(TYPE) $(DESCRIPTION_TMP) | sed s/UPDATED_PLATFORM/$(PLATFORMID)/ > $@
-	@@-$(RM) $(DESCRIPTION_TMP)
-
 
 .ENDIF # "$(ENABLE_PRESENTER_SCREEN)" != "NO"
 .ELSE

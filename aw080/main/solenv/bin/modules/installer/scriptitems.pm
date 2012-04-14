@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 package installer::scriptitems;
 
@@ -36,6 +32,10 @@ use installer::logger;
 use installer::pathanalyzer;
 use installer::remover;
 use installer::systemactions;
+
+use File::Spec;
+use SvnRevision;
+use ExtensionsLst;
 
 ################################################################
 # Resolving the GID for the directories defined in setup script
@@ -491,6 +491,184 @@ sub remove_not_required_spellcheckerlanguage_files
 	return \@filesarray;
 }
 
+=head3 add_bundled_extension_blobs(@filelist)
+
+    Add entries for extension blobs to the global file list.
+    Extension blobs, unlike preregistered extensions, are not
+    extracted before included into a pack set.
+    
+    The set of extensions to include is taken from the BUNDLED_EXTENSION_BLOBS
+    environment variable (typically set in configure.)
+
+    If that variable is not defined then the content of main/extensions.lst defines
+    the default set.
+
+    Extension blobs are placed in gid_Brand_Dir_Share_Extensions_Install.
+
+=cut
+sub add_bundled_extension_blobs
+{
+	my @filelist = @{$_[0]};
+
+    my @bundle_files = ();
+    my $bundleenv = $ENV{'BUNDLED_EXTENSION_BLOBS'};
+    my $bundlehttpsrc = $ENV{'TARFILE_LOCATION'} . $installer::globals::separator;
+    my $bundlefilesrc = $ENV{SOLARVERSION}
+        . $installer::globals::separator . $ENV{INPATH}
+        . $installer::globals::separator . "bin"
+        . $installer::globals::separator;
+    
+    if ($installer::globals::product =~ /(SDK|URE)/i )
+    {
+        # No extensions for the SDK.
+    }
+    elsif (defined $bundleenv)
+    {
+        # Use the list of extensions that was explicitly given to configure.
+        for my $name (split(/\s+/, $bundleenv, -1))
+        {
+            push @bundle_files, $bundlehttpsrc . $name;
+        }
+    }
+    else
+    {
+        # Add the default extensions for the current language set.
+        # http:// extensions are taken from ext_sources/.
+        for my $name (ExtensionsLst::GetExtensionList("http|https", @installer::globals::languageproducts))
+        {
+            push @bundle_files, $bundlehttpsrc . $name;
+        }
+        # file:// extensions are taken from the solver bin/ directory.
+        for my $name (ExtensionsLst::GetExtensionList("file", @installer::globals::languageproducts))
+        {
+            push @bundle_files, $bundlefilesrc . $name;
+        }
+    }
+
+    installer::logger::print_message(
+        sprintf("preparing %d extension blob%s for language%s %s:\n",
+           $#bundle_files + 1,
+           $#bundle_files!=0 ? "s" : "",
+           $#installer::globals::languageproducts!=0 ? "s" : "",
+           join(" ", @installer::globals::languageproducts),
+           join("\n    ", @bundle_files)));
+
+    foreach my $filename ( @bundle_files)
+    {
+        my $basename = File::Basename::basename( $filename);
+        my $onefile = {
+            'Dir' => 'gid_Brand_Dir_Share_Extensions_Install',
+            'Name' => $basename,
+            'Styles' => '(PACKED)',
+            'UnixRights' => '444',
+            'sourcepath' => $filename,
+            'modules' => "gid_Module_Dictionaries",
+            'gid' => "gid_File_Extension_".$basename
+        };
+        push( @filelist, $onefile);
+        push( @installer::globals::logfileinfo, "\tbundling \"$filename\" extension\n");
+
+        installer::logger::print_message("    " . $basename . "\n");
+    }
+    
+	return \@filelist;
+}
+
+=head3 add_bundled_prereg_extensions(@filelist)
+
+    Add entries for preregistered extensions to the global file list.
+
+    The set of extensions to include is taken from the BUNDLED_PREREG_EXTENSIONS
+    environment variable (typically set in configure.)
+
+    If that variable is not defined then the content of main/extensions.lst defines
+    the default set.
+
+    Preregistered extensions are placed in subdirectories of gid_Brand_Dir_Share_Prereg_Bundled.
+
+=cut
+sub add_bundled_prereg_extensions
+{
+	my @filelist = @{$_[0]};
+    my $dirsref = $_[1];
+
+    my @bundle_files = ();
+    my $bundleenv = $ENV{'BUNDLED_PREREG_EXTENSIONS'};
+    
+    if ($installer::globals::product =~ /(SDK|URE)/i )
+    {
+        # No extensions for the SDK.
+    }
+    elsif (defined $bundleenv)
+    {
+        # Use the list of extensions that was explicitly given to configure.
+        @bundle_files = split(/\s+/, $bundleenv, -1);
+    }
+    else
+    {
+        # Add the default rextensions for the current language set.
+
+        # file:// URLs are currently handled by add_bundled_extension_blobs(@), therefore
+        # we may not their handling here anmore.
+        # @bundle_files = ExtensionsLst::GetExtensionList("file", @installer::globals::languageproducts);
+    }
+
+    installer::logger::print_message(
+        sprintf("preparing %d bundled extension%s for language%s %s:\n    %s\n",
+           $#bundle_files + 1,
+           $#bundle_files!=0 ? "s" : "",
+           $#installer::globals::languageproducts!=0 ? "s" : "",
+           join(" ", @installer::globals::languageproducts),
+           join("\n    ", @bundle_files)));
+    
+    # Find the prereg directory entry so that we can create a new sub-directory.
+    my $parentdir_gid = "gid_Brand_Dir_Share_Prereg_Bundled";
+    my $parentdir = undef;
+    foreach my $dir (@{$dirsref})
+    {
+        if ($dir->{'gid'} eq $parentdir_gid)
+        {
+            $parentdir = $dir;
+            last;
+        }
+    }
+
+    foreach my $filename ( @bundle_files)
+    {
+        my $basename = File::Basename::basename( $filename);
+
+        # Create a new directory into which the extension will be installed.
+        my $dirgid =  $parentdir_gid . "_" . $basename;
+        my $onedir = {
+            'modules' => 'gid_Module_Root_Brand',
+            'ismultilingual' => 0,
+            'Styles' => '(CREATE)',
+            'ParentID' => $parentdir_gid,
+            'specificlanguage' => "",
+            'haslanguagemodule' => 0,
+            'gid' => $dirgid,
+            'HostName' => $parentdir->{'HostName'} . $installer::globals::separator . $basename
+        };
+        push (@{$dirsref}, $onedir);
+
+        # Create a new file entry for the extension.
+        my $onefile = {
+            'Dir' => $dirgid,
+            'Name' => $basename,
+            'Styles' => '(PACKED,ARCHIVE)',
+            'UnixRights' => '444',
+            'sourcepath' => File::Spec->catfile($ENV{'OUTDIR'}, "bin", $filename),
+            'specificlanguage' => "",
+            'modules' => "gid_Module_Dictionaries",
+            'gid' => "gid_File_Extension_".$basename
+        };
+        push( @filelist, $onefile);
+        push( @installer::globals::logfileinfo, "\tbundling \"$filename\" extension\n");
+    }
+
+    return (\@filelist, $dirsref);
+}
+
 ################################################################################
 # Looking for directories without correct HostName
 ################################################################################
@@ -605,7 +783,7 @@ sub use_patch_hostname
 }
 
 ################################################################################
-# Using different HostName for language packs
+# Using langpack copy action for language packs
 ################################################################################
 
 sub use_langpack_copy_scpaction
@@ -620,7 +798,7 @@ sub use_langpack_copy_scpaction
 }
 
 ################################################################################
-# Using different HostName for language packs
+# Using copy patch action
 ################################################################################
 
 sub use_patch_copy_scpaction
@@ -631,6 +809,21 @@ sub use_patch_copy_scpaction
 	{
 		my $onescpaction = ${$scpactionsref}[$i];
 		if (( $onescpaction->{'PatchCopy'} ) && ( $onescpaction->{'PatchCopy'} ne "" )) { $onescpaction->{'Copy'} = $onescpaction->{'PatchCopy'}; }
+	}	
+}
+
+################################################################################
+# Using dev copy patch action for developer snapshot builds
+################################################################################
+
+sub use_dev_copy_scpaction
+{
+	my ($scpactionsref) = @_;
+
+	for ( my $i = 0; $i <= $#{$scpactionsref}; $i++ )
+	{
+		my $onescpaction = ${$scpactionsref}[$i];
+		if (( $onescpaction->{'DevCopy'} ) && ( $onescpaction->{'DevCopy'} ne "" )) { $onescpaction->{'Copy'} = $onescpaction->{'DevCopy'}; }
 	}	
 }
 
@@ -792,6 +985,8 @@ sub replace_setup_variables
 	if ( $hashref->{'USERDIRPRODUCTVERSION'} ) { $userdirproductversion = $hashref->{'USERDIRPRODUCTVERSION'}; }
 	my $productkey = $productname . " " . $productversion;
 
+	my $scsrevision = SvnRevision::DetectRevisionId(File::Spec->catfile($ENV{'SRC_ROOT'}, File::Spec->updir()));
+
 	# string $buildid, which is used to replace the setup variable <buildid>
 	
 	my $localminor = "flat";
@@ -819,6 +1014,7 @@ sub replace_setup_variables
 		my $value = $oneitem->{'Value'};
 		
 		$value =~ s/\<buildid\>/$buildidstring/;
+		$value =~ s/\<scsrevision\>/$scsrevision/;
 		$value =~ s/\<sequence_languages\>/$languagesstring/;
 		$value =~ s/\<productkey\>/$productkey/;
 		$value =~ s/\<productcode\>/$installer::globals::productcode/;
@@ -964,7 +1160,7 @@ sub get_Directoryname_From_Directorygid
 }
 
 ##################################################################
-# Getting destination direcotory for links, files and profiles
+# Getting destination directory for links, files and profiles
 ##################################################################
 
 sub get_Destination_Directory_For_Item_From_Directorylist		# this is used for Files, Profiles and Links
@@ -1356,7 +1552,7 @@ sub remove_Files_Without_Sourcedirectory
 
 			if ( ! $installer::globals::languagepack )
 			{
-				$infoline = "ERROR: Removing file $filename from file list.\n";
+				$infoline = "ERROR: No sourcepath -> Removing file $filename from file list.\n";
 				push( @installer::globals::logfileinfo, $infoline);
 
 				push(@missingfiles, "ERROR: File not found: $filename\n");	
@@ -2116,7 +2312,7 @@ sub collect_directories_from_filesarray
 				}
 				else
 				{
-					# Adding the modules to the module list!	
+					# Adding the modules to the module list!
 					$alldirectoryhash{$destinationpath}->{'modules'} = $alldirectoryhash{$destinationpath}->{'modules'} . "," . $onefile->{'modules'};
 				}
 			}

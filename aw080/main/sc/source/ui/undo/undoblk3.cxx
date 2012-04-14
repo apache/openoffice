@@ -1684,6 +1684,7 @@ void __EXPORT ScUndoRefreshLink::Undo()
 								   pDoc->GetLinkOpt(nTab),
 								   pDoc->GetLinkTab(nTab),
 								   pDoc->GetLinkRefreshDelay(nTab) );
+				pRedoDoc->SetTabBgColor( nTab, pDoc->GetTabBgColor(nTab) );
 			}
 
 			pDoc->DeleteAreaTab( aRange,IDF_ALL );
@@ -1693,9 +1694,11 @@ void __EXPORT ScUndoRefreshLink::Undo()
 								 pUndoDoc->GetLinkFlt(nTab),  pUndoDoc->GetLinkOpt(nTab),
 								 pUndoDoc->GetLinkTab(nTab),
 								 pUndoDoc->GetLinkRefreshDelay(nTab) );
+			pDoc->SetTabBgColor( nTab, pUndoDoc->GetTabBgColor(nTab) );
 		}
 
 	pDocShell->PostPaintGridAll();
+	pDocShell->PostPaintExtras();
 
 	EndUndo();
 }
@@ -1726,9 +1729,11 @@ void __EXPORT ScUndoRefreshLink::Redo()
 						   pRedoDoc->GetLinkOpt(nTab),
 						   pRedoDoc->GetLinkTab(nTab),
 						   pRedoDoc->GetLinkRefreshDelay(nTab) );
+			pDoc->SetTabBgColor( nTab, pRedoDoc->GetTabBgColor(nTab) );
 		}
 
 	pDocShell->PostPaintGridAll();
+	pDocShell->PostPaintExtras();
 
 	EndUndo();
 }

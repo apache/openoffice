@@ -32,14 +32,12 @@
 #include <drawinglayer/primitive2d/maskprimitive2d.hxx>
 #include <drawinglayer/primitive2d/transformprimitive2d.hxx>
 #include <drawinglayer/primitive2d/hiddengeometryprimitive2d.hxx>
-#include <drawinglayer/primitive2d/chartprimitive2d.hxx>
 #include <drawinglayer/primitive2d/controlprimitive2d.hxx>
 #include <drawinglayer/primitive2d/epsprimitive2d.hxx>
 #include <drawinglayer/primitive2d/graphicprimitive2d.hxx>
 #include <drawinglayer/primitive2d/mediaprimitive2d.hxx>
 #include <drawinglayer/primitive2d/metafileprimitive2d.hxx>
 #include <drawinglayer/primitive2d/pagepreviewprimitive2d.hxx>
-#include <drawinglayer/primitive2d/rendergraphicprimitive2d.hxx>
 #include <drawinglayer/primitive2d/sceneprimitive2d.hxx>
 #include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 
@@ -219,13 +217,6 @@ namespace drawinglayer
 					addB2DPolyPolygon(rPolygonCandidate.getB2DPolyPolygon());
 					break;
 				}
-				case PRIMITIVE2D_ID_CHARTPRIMITIVE2D :
-				{
-					// extract bound rectangle
-					const primitive2d::ChartPrimitive2D& rPolygonCandidate(static_cast< const primitive2d::ChartPrimitive2D& >(rCandidate));
-					addB2DTransform(rPolygonCandidate.getTransformation());
-					break;
-				}
 				case PRIMITIVE2D_ID_CONTROLPRIMITIVE2D :
 				{
 					// extract bound rectangle
@@ -265,13 +256,6 @@ namespace drawinglayer
 				{
 					// extract bound rectangle
 					const primitive2d::PagePreviewPrimitive2D& rPolygonCandidate(static_cast< const primitive2d::PagePreviewPrimitive2D& >(rCandidate));
-					addB2DTransform(rPolygonCandidate.getTransform());
-					break;
-				}
-				case PRIMITIVE2D_ID_RENDERGRAPHICPRIMITIVE2D :
-				{
-					// extract bound rectangle
-					const primitive2d::RenderGraphicPrimitive2D& rPolygonCandidate(static_cast< const primitive2d::RenderGraphicPrimitive2D& >(rCandidate));
 					addB2DTransform(rPolygonCandidate.getTransform());
 					break;
 				}

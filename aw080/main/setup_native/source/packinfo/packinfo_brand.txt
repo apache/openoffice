@@ -1,29 +1,23 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
 
 Start
 module = "gid_Module_Root_Brand"
@@ -32,9 +26,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION"
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION"
 requires = "%UREPACKAGEPREFIX-ure,%BASISPACKAGEPREFIX%OOOBASEVERSION-core01,%BASISPACKAGEPREFIX%OOOBASEVERSION-core02,%BASISPACKAGEPREFIX%OOOBASEVERSION-core03,%BASISPACKAGEPREFIX%OOOBASEVERSION-core04,%BASISPACKAGEPREFIX%OOOBASEVERSION-core05,%BASISPACKAGEPREFIX%OOOBASEVERSION-core06,%BASISPACKAGEPREFIX%OOOBASEVERSION-core07,%BASISPACKAGEPREFIX%OOOBASEVERSION-images"
 solarisrequires = "%SOLSUREPACKAGEPREFIX-ure (Name="UNO Runtime Environment"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-core01 (Name="Core module for %PRODUCTNAME %PRODUCTVERSION"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-core02 (Name="Core module for %PRODUCTNAME %PRODUCTVERSION"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-core03 (Name="Core module for %PRODUCTNAME %PRODUCTVERSION"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-core04 (Name="Core module for %PRODUCTNAME %PRODUCTVERSION"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-core05 (Name="Core module for %PRODUCTNAME %PRODUCTVERSION"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-core06 (Name="Core module for %PRODUCTNAME %PRODUCTVERSION"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-core07 (Name="Core module for %PRODUCTNAME %PRODUCTVERSION"), %BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-images (Name="Images module for %PRODUCTNAME %PRODUCTVERSION")"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Brand module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"
@@ -46,9 +40,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION-writer"
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION-writer"
 requires = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%OOOBASEVERSION-writer"
 solarisrequires = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-writer"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Writer brand module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"
@@ -60,9 +54,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION-calc"
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION-calc"
 requires = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%OOOBASEVERSION-calc"
 solarisrequires = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-calc"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Calc brand module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"
@@ -74,9 +68,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION-impress"
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION-impress"
 requires = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%OOOBASEVERSION-impress"
 solarisrequires = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-impress"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Impress brand module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"
@@ -88,9 +82,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION-draw"
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION-draw"
 requires = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%OOOBASEVERSION-draw"
 solarisrequires = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-draw"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Draw brand module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"
@@ -102,9 +96,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION-math"
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION-math"
 requires = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%OOOBASEVERSION-math"
 solarisrequires = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-math"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Math brand module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"
@@ -116,9 +110,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION-base"
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION-base"
 requires = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%OOOBASEVERSION-base"
 solarisrequires = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-base"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Base brand module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"
@@ -130,9 +124,9 @@ solarispackagename = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION-%LANGUAGEST
 packagename = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION-%LANGUAGESTRING"
 requires = "%UNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-base,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-calc,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-draw,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-help,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-impress,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-math,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-res,%BASISPACKAGEPREFIX%OOOBASEVERSION-%LANGUAGESTRING-writer"
 solarisrequires = "%WITHOUTDOTUNIXPACKAGENAME%BRANDPACKAGEVERSION,%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING (Name="Language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-base (Name="Base language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-calc (Name="Calc language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-draw (Name="Draw language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-help (Name="Help language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-impress (Name="Impress language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-math (Name="Math language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-res (Name="Resource language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING"),%BASISPACKAGEPREFIX%WITHOUTDOTOOOBASEVERSION-%LANGUAGESTRING-writer (Name="Writer language module for %PRODUCTNAME %PRODUCTVERSION\, language %LANGUAGESTRING")"
-copyright = "1999-2009 by %PRODUCTNAME"
+copyright = "2012 by The Apache Software Foundation"
 solariscopyright = "solariscopyrightfile"
-vendor = "%PRODUCTNAME"
+vendor = "Apache Software Foundation"
 description = "Brand language module for %PRODUCTNAME %PRODUCTVERSION"
 destpath = "/opt"
 packageversion = "%PACKAGEVERSION"

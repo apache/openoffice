@@ -71,9 +71,6 @@ namespace drawinglayer
 			double getShadowTransparence() const { return mfShadowTransparence; }
 			bool getShadow3D() const { return mbShadow3D; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
-
 			/// provide unique ID
 			DeclPrimitrive3DIDBlock()
 		};

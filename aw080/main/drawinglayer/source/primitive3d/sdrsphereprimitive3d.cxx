@@ -187,19 +187,6 @@ namespace drawinglayer
 		{
 		}
 
-		bool SdrSpherePrimitive3D::operator==(const BasePrimitive3D& rPrimitive) const
-		{
-			if(SdrPrimitive3D::operator==(rPrimitive))
-			{
-				const SdrSpherePrimitive3D& rCompare = static_cast< const SdrSpherePrimitive3D& >(rPrimitive);
-
-				return (getHorizontalSegments() == rCompare.getHorizontalSegments() 
-					&& getVerticalSegments() == rCompare.getVerticalSegments());
-			}
-
-			return false;
-		}
-
 		basegfx::B3DRange SdrSpherePrimitive3D::getB3DRange(const geometry::ViewInformation3D& /*rViewInformation*/) const
 		{
 			// use defaut from sdrPrimitive3D which uses transformation expanded by line width/2

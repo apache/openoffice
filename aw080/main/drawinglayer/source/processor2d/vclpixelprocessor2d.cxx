@@ -31,7 +31,6 @@
 #include <drawinglayer/primitive2d/polypolygonprimitive2d.hxx>
 #include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
 #include <drawinglayer/primitive2d/bitmapprimitive2d.hxx>
-#include <drawinglayer/primitive2d/rendergraphicprimitive2d.hxx>
 #include <drawinglayer/primitive2d/fillbitmapprimitive2d.hxx>
 #include <drawinglayer/primitive2d/metafileprimitive2d.hxx>
 #include <drawinglayer/primitive2d/maskprimitive2d.hxx>
@@ -45,8 +44,6 @@
 #include <com/sun/star/awt/XWindow2.hpp>
 #include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 #include <drawinglayer/primitive2d/pagepreviewprimitive2d.hxx>
-#include <drawinglayer/primitive2d/chartprimitive2d.hxx>
-#include <helperchartrenderer.hxx>
 #include <helperwrongspellrenderer.hxx>
 #include <drawinglayer/primitive2d/fillhatchprimitive2d.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
@@ -58,7 +55,7 @@
 #include <drawinglayer/primitive2d/backgroundcolorprimitive2d.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <drawinglayer/primitive2d/epsprimitive2d.hxx>
-
+#include <drawinglayer/primitive2d/svggradientprimitive2d.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 #include <vcl/window.hxx>
 
@@ -73,8 +70,7 @@ namespace drawinglayer
 	namespace processor2d
 	{
 		VclPixelProcessor2D::VclPixelProcessor2D(const geometry::ViewInformation2D& rViewInformation, OutputDevice& rOutDev)
-		:	VclProcessor2D(rViewInformation, rOutDev),
-			maOriginalMapMode(rOutDev.GetMapMode())
+		:	VclProcessor2D(rViewInformation, rOutDev)
 		{
 			// prepare maCurrentTransformation matrix with viewTransformation to target directly to pixels
 			maCurrentTransformation = rViewInformation.getObjectToViewTransformation();
@@ -190,12 +186,6 @@ namespace drawinglayer
 				{
 					// direct draw of transformed BitmapEx primitive
 					RenderBitmapPrimitive2D(static_cast< const primitive2d::BitmapPrimitive2D& >(rCandidate));
-					break;
-				}
-				case PRIMITIVE2D_ID_RENDERGRAPHICPRIMITIVE2D :
-				{
-					// direct draw of transformed BitmapEx primitive
-					RenderRenderGraphicPrimitive2D(static_cast< const primitive2d::RenderGraphicPrimitive2D& >(rCandidate));
 					break;
 				}
 				case PRIMITIVE2D_ID_FILLBITMAPPRIMITIVE2D :
@@ -456,26 +446,6 @@ namespace drawinglayer
 
 					break;
 				}
-				case PRIMITIVE2D_ID_CHARTPRIMITIVE2D :
-				{
-					// chart primitive in pixel renderer; restore original DrawMode during call
-					// since the evtl. used ChartPrettyPainter will use the MapMode
-					const primitive2d::ChartPrimitive2D& rChartPrimitive = static_cast< const primitive2d::ChartPrimitive2D& >(rCandidate);
-		   			mpOutputDevice->Push(PUSH_MAPMODE);
-					mpOutputDevice->SetMapMode(maOriginalMapMode);
-					
-					if(!renderChartPrimitive2D(
-						rChartPrimitive, 
-						*mpOutputDevice,
-						getViewInformation2D()))
-					{
-						// fallback to decomposition (MetaFile)
-						process(rChartPrimitive.get2DDecomposition(getViewInformation2D()));
-					}
-		   			
-					mpOutputDevice->Pop();
-					break;
-				}
 				case PRIMITIVE2D_ID_FILLHATCHPRIMITIVE2D :
 				{
 					static bool bForceIgnoreHatchSmoothing(false);
@@ -603,6 +573,16 @@ namespace drawinglayer
                 case PRIMITIVE2D_ID_EPSPRIMITIVE2D :
                 {
 					RenderEpsPrimitive2D(static_cast< const primitive2d::EpsPrimitive2D& >(rCandidate));
+                    break;
+                }
+                case PRIMITIVE2D_ID_SVGLINEARATOMPRIMITIVE2D:
+                {
+                    RenderSvgLinearAtomPrimitive2D(static_cast< const primitive2d::SvgLinearAtomPrimitive2D& >(rCandidate));
+                    break;
+                }
+                case PRIMITIVE2D_ID_SVGRADIALATOMPRIMITIVE2D:
+                {
+                    RenderSvgRadialAtomPrimitive2D(static_cast< const primitive2d::SvgRadialAtomPrimitive2D& >(rCandidate));
                     break;
                 }
 				default :

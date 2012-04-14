@@ -98,22 +98,6 @@ namespace drawinglayer
 			maSdr3DObjectAttribute(rSdr3DObjectAttribute)
 		{
 		}
-
-		bool SdrPrimitive3D::operator==(const BasePrimitive3D& rPrimitive) const
-		{
-			if(BufferedDecompositionPrimitive3D::operator==(rPrimitive))
-			{
-				const SdrPrimitive3D& rCompare = static_cast< const SdrPrimitive3D& >(rPrimitive);
-
-				return (getTransform() == rCompare.getTransform()
-					&& getTextureSize() == rCompare.getTextureSize()
-					&& getSdrLFSAttribute() == rCompare.getSdrLFSAttribute()
-					&& getSdr3DObjectAttribute() == rCompare.getSdr3DObjectAttribute());
-			}
-
-			return false;
-		}
-
 	} // end of namespace primitive3d
 } // end of namespace drawinglayer
 

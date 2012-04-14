@@ -18,9 +18,11 @@
 *~
 .\#*
 *.o
+*.DS_Store
 
 # configure autoconf related
 /Linux*Env.Set*
+/MacOS*Env.Set*
 /autom4te.cache
 /config.guess
 /config.log
@@ -54,7 +56,7 @@ TAGS
 
 # externals
 /external/unowinreg/unowinreg.dll
-external/msvcp90/*
+/external/msvcp90/*
 /moz/zipped/*.zip
 
 # $INPATH output directories

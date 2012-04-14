@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 #######################################################
 # targets for linking
@@ -270,14 +266,7 @@ $(MISC)/%linkinc.ls:
 .IF "$(GUI)" == "OS2"
 #21/02/2006 YD dll names must be 8.3, invoke fix script
 #check osl/os2/module.c/osl_loadModule()
-SHL$(TNR)TARGET8=$(shell @fix_shl $(SHL$(TNR)TARGET))
-.ENDIF
-
-.IF "$(GUI)" == "OS2"
-_SHL$(TNR)IMP_ORD = $(SHL$(TNR)STDLIBS:^"$(SOLARVERSION)/$(INPATH)/lib/") $(SHL$(TNR)STDLIBS:^"$(LB)/") 
-SHL$(TNR)IMP_ORD = $(foreach,i,$(_SHL$(TNR)IMP_ORD) $(shell @-ls $i))
-.ELSE
-SHL$(TNR)IMP_ORD = 
+SHL$(TNR)TARGET8=$(shell @fix_shl.cmd $(SHL$(TNR)TARGET))
 .ENDIF
 
 
@@ -289,7 +278,6 @@ $(SHL$(TNR)TARGETN) : \
 					$(USE_SHL$(TNR)VERSIONMAP)\
 					$(SHL$(TNR)RES)\
 					$(SHL$(TNR)DEPN) \
-					$(SHL$(TNR)IMP_ORD) \
 					$(SHL$(TNR)LINKLIST)
 	@echo "Making:   " $(@:f)
 .IF "$(GUI)" == "WNT"
@@ -512,7 +500,7 @@ $(SHL$(TNR)TARGETN) : \
 .IF "$(GUI)" == "OS2"
 
 .IF "$(SHL$(TNR)DEFAULTRES)"!=""
-	@+-$(RM) $(MISC)/$(SHL$(TNR)DEFAULTRES:b).rc >& $(NULLDEV)
+	@+-$(RM) $(MISC)/$(SHL$(TNR)DEFAULTRES:b).rc > $(NULLDEV)
 .IF "$(SHL$(TNR)ICON)" != ""
 	@-+echo 1 ICON $(SHL$(TNR)ICON) >> $(MISC)/$(SHL$(TNR)DEFAULTRES:b).rc
 .ENDIF
@@ -540,13 +528,13 @@ $(SHL$(TNR)TARGETN) : \
 		-L$(SOLARVERSION)/$(INPATH)/lib \
 		$(SHL$(TNR)OBJS) $(SHL$(TNR)VERSIONOBJ) \
 		$(SHL$(TNR)LIBS) \
-		$(SHL$(TNR)STDLIBS:^"-l") \
 		$(SHL$(TNR)LINKRES) \
-		$(SHL$(TNR)STDSHL:^"-l") $(STDSHL$(TNR):^"-l") 
+		$(SHL$(TNR)STDLIBS) \
+		$(SHL$(TNR)STDSHL) $(STDSHL$(TNR))
 
 .ELSE			# "$(USE_DEFFILE)"!=""
 
-	$(COMMAND_ECHO)$(SHL$(TNR)LINKER) -v 	$(SHL$(TNR)LINKFLAGS)			\
+	$(COMMAND_ECHO)$(SHL$(TNR)LINKER) $(SHL$(TNR)LINKFLAGS)			\
 		$(LINKFLAGSSHL) $(SHL$(TNR)BASEX)		\
 		$(SHL$(TNR)STACK) -o $(SHL$(TNR)TARGETN)	\
 		$(SHL$(TNR)DEF) \
@@ -555,12 +543,14 @@ $(SHL$(TNR)TARGETN) : \
 		-L$(SOLARVERSION)/$(INPATH)/lib \
 		$(SHL$(TNR)OBJS) $(SHL$(TNR)VERSIONOBJ) \
 		$(SHL$(TNR)LIBS) \
-		$(SHL$(TNR)STDLIBS:^"-l") \
 		$(SHL$(TNR)LINKRES) \
-		$(SHL$(TNR)STDSHL:^"-l") $(STDSHL$(TNR):^"-l")                           \
-	@$(LS) $@ >& $(NULLDEV)
+		$(SHL$(TNR)STDLIBS) \
+		$(SHL$(TNR)STDSHL) $(STDSHL$(TNR))
 
 .ENDIF			# "$(USE_DEFFILE)"!=""
+
+	$(COMMAND_ECHO)+$(IMPLIB) -p256 $(IMPLIBFLAGS) $(SHL$(TNR)IMPLIBN) $@
+	$(COMMAND_ECHO)+$(IMPLIB) -p256 $(IMPLIBFLAGS) $(LB)/$(SHL$(TNR)TARGET).lib $@
 
 .IF "$(SHL$(TNR)TARGET8)" != "$(SHL$(TNR)TARGET)"
 	$(COMMAND_ECHO)+$(COPY) $@ $(@:d)$(SHL$(TNR)TARGET8).dll

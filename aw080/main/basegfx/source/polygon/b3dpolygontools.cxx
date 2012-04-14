@@ -407,68 +407,71 @@ namespace basegfx
                 sal_uInt32 nDotDashIndex(0);
                 bool bIsLine(true);
                 double fDotDashMovingLength(rDotDashArray[0]);
-				B3DPolygon aSnippet;
+                B3DPolygon aSnippet;
 
-				// iterate over all edges
+                // iterate over all edges
                 for(sal_uInt32 a(0); a < nEdgeCount; a++)
                 {
                     // update current edge
-					double fLastDotDashMovingLength(0.0);
+                    double fLastDotDashMovingLength(0.0);
                     const sal_uInt32 nNextIndex((a + 1) % nPointCount);
-					const B3DPoint aNextPoint(rCandidate.getB3DPoint(nNextIndex));
-					const double fEdgeLength(B3DVector(aNextPoint - aCurrentPoint).getLength());
+                    const B3DPoint aNextPoint(rCandidate.getB3DPoint(nNextIndex));
+                    const double fEdgeLength(B3DVector(aNextPoint - aCurrentPoint).getLength());
 
-					while(fTools::less(fDotDashMovingLength, fEdgeLength))
-					{
-						// new split is inside edge, create and append snippet [fLastDotDashMovingLength, fDotDashMovingLength]
-						const bool bHandleLine(bIsLine && pLineTarget);
-						const bool bHandleGap(!bIsLine && pGapTarget);
+                    if(!fTools::equalZero(fEdgeLength))
+                    {
+                        while(fTools::less(fDotDashMovingLength, fEdgeLength))
+                        {
+                            // new split is inside edge, create and append snippet [fLastDotDashMovingLength, fDotDashMovingLength]
+                            const bool bHandleLine(bIsLine && pLineTarget);
+                            const bool bHandleGap(!bIsLine && pGapTarget);
+                            
+                            if(bHandleLine || bHandleGap)
+                            {
+                                if(!aSnippet.count())
+                                {
+                                    aSnippet.append(interpolate(aCurrentPoint, aNextPoint, fLastDotDashMovingLength / fEdgeLength));
+                                }
 
+                                aSnippet.append(interpolate(aCurrentPoint, aNextPoint, fDotDashMovingLength / fEdgeLength));
+
+                                if(bHandleLine)
+                                {
+                                    pLineTarget->append(aSnippet);
+                                }
+                                else
+                                {
+                                    pGapTarget->append(aSnippet);
+                                }
+
+                                aSnippet.clear();
+                            }
+
+                            // prepare next DotDashArray step and flip line/gap flag
+                            fLastDotDashMovingLength = fDotDashMovingLength;
+                            fDotDashMovingLength += rDotDashArray[(++nDotDashIndex) % nDotDashCount];
+                            bIsLine = !bIsLine;
+                        }
+
+                        // append snippet [fLastDotDashMovingLength, fEdgeLength]
+                        const bool bHandleLine(bIsLine && pLineTarget);
+                        const bool bHandleGap(!bIsLine && pGapTarget);
+                                       
                         if(bHandleLine || bHandleGap)
                         {
-							if(!aSnippet.count())
-							{
-								aSnippet.append(interpolate(aCurrentPoint, aNextPoint, fLastDotDashMovingLength / fEdgeLength));
-							}
+                            if(!aSnippet.count())
+                            {
+                                aSnippet.append(interpolate(aCurrentPoint, aNextPoint, fLastDotDashMovingLength / fEdgeLength));
+                            }
 
-							aSnippet.append(interpolate(aCurrentPoint, aNextPoint, fDotDashMovingLength / fEdgeLength));
+                            aSnippet.append(aNextPoint);
+                        }
 
-							if(bHandleLine)
-							{
-								pLineTarget->append(aSnippet);
-							}
-							else
-							{
-								pGapTarget->append(aSnippet);
-							}
+                        // prepare move to next edge
+                        fDotDashMovingLength -= fEdgeLength;
+                    }
 
-							aSnippet.clear();
-						}
-						
-						// prepare next DotDashArray step and flip line/gap flag
-						fLastDotDashMovingLength = fDotDashMovingLength;
-                        fDotDashMovingLength += rDotDashArray[(++nDotDashIndex) % nDotDashCount];
-                        bIsLine = !bIsLine;
-					}
-
-					// append snippet [fLastDotDashMovingLength, fEdgeLength]
-					const bool bHandleLine(bIsLine && pLineTarget);
-					const bool bHandleGap(!bIsLine && pGapTarget);
-                    
-					if(bHandleLine || bHandleGap)
-                    {
-						if(!aSnippet.count())
-						{
-							aSnippet.append(interpolate(aCurrentPoint, aNextPoint, fLastDotDashMovingLength / fEdgeLength));
-						}
-
-						aSnippet.append(aNextPoint);
-					}
-					
-					// prepare move to next edge
-					fDotDashMovingLength -= fEdgeLength;
-					
-					// prepare next edge step (end point gets new start point)
+                    // prepare next edge step (end point gets new start point)
                     aCurrentPoint = aNextPoint;
                 }
 

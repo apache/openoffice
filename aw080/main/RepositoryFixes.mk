@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 # fixes for all the libraries that are named with too much creativity and do
 # not follow any of the established nameschemes
@@ -171,23 +167,53 @@ endif
 endif
 
 ifeq ($(OS),OS2)
-gb_Library_FILENAMES := $(patsubst comphelper:icomphelper%,comphelper:icomphelp%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst comphelper:comphelper%,comphelper:comphelpgcc3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst cppu:cppu%,cppu:cppu3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst cppuhelper:cppuhelper%,cppuhelper:cppuh3%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cppunit:icppunit%,cppunit:cppunit%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst cui:icuc%,cui:iicuc%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst i18nisolang1:ii18nisolang1%,i18nisolang1:ii18nisolang%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst rdf:irdf%,rdf:librdf%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst tl:itl%,tl:itools%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst sb:isb%,sb:basic%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst cui:iicuc%,cui:icuc%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst i18nisolang1:i18nisolang1%,i18nisolang1:i18nisolang1gcc3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst i18nutil:i18nutil%,i18nutil:i18nutilgcc3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst jvmaccess:jvmaccess%,jvmaccess:jvmaccess3gcc3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst jvmfwk:jvmfwk%,jvmfwk:jvmfwk3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst rdf:rdf%,rdf:librdf%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst tl:itl%,tl:tl%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst sal:sal%,sal:sal3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst salhelper:salhelper%,salhelper:salhelp3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst sb:sb%,sb:basic%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst sfx:isfx%,sfx:sfx%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst svl:isvl%,svl:svl%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst svt:isvt%,svt:svtool%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst vbahelper:ivbahelper%,vbahelper:vbahelper%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst vos3:ivos3%,vos3:ivos%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst vcl:ivcl%,vcl:vcl%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst ucbhelper:ucbhelper%,ucbhelper:ucbh4%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst vos3:vos3%,vos3:vos3gcc3%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst xo:ixo%,xo:xo%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst xml2:ixml2%,xml2:xml2%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst xslt:ixslt%,xslt:libxslt%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst stl:istl%,stl:stlp45% stl:stdc444.lib,$(gb_Library_FILENAMES))
-#$(info libnames: $(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst stl:stl%,stl:stdc++%,$(gb_Library_FILENAMES))
 
+# translate to 8.3 naming
 gb_Library_DLLFILENAMES := $(patsubst comphelper:comphelper%,comphelper:comphelp%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst drawinglayer:drawinglayer%,drawinglayer:drawingl%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst fsstorage:fsstorage.uno%,fsstorage:fsstorag%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst hatchwindowfactory:hatchwindowfactory.uno%,hatchwindowfactory:hatchwin%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst msforms:msforms.uno%,msforms:msforms%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst passwordcontainer:passwordcontainer.uno%,passwordcontainer:password%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst productregistration:productregistration.uno%,productregistration:productr%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst textconversiondlgs:textconversiondlgs%,textconversiondlgs:txcnvdlg%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst vbahelper:vbahelper%,vbahelper:vbahelp%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst vbaswobj:vbaswobj.uno%,vbaswobj:vbaswobj%,$(gb_Library_DLLFILENAMES))
+gb_Library_DLLFILENAMES := $(patsubst sfx:test_sfx2_metadatable%,sfx:tstsfx2m%,$(gb_Library_DLLFILENAMES))
+
+gb_Library_NOILIBFILENAMES:=\
+	ft2lib \
+	icuuc \
+	icule
+
+gb_Library_ILIBFILENAMES:=\
+	ft2lib \
+	uuid \
 
 endif
 

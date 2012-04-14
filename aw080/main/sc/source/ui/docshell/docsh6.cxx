@@ -444,9 +444,11 @@ sal_Bool ScDocShell::ReloadTabLinks()
 		if (pTabLink)
 		{
 //			pTabLink->SetAddUndo(sal_False);		//! Undo's zusammenfassen
-			pTabLink->SetPaint(sal_False);			//	Paint nur einmal am Ende
+			// Painting only after Update() makes no sense:
+			// ScTableLink::Refresh() will post a Paint only is bDoPaint is true
+			//pTabLink->SetPaint(sal_False);			//	Paint nur einmal am Ende
 			pTabLink->Update();
-			pTabLink->SetPaint(sal_True);
+			//pTabLink->SetPaint(sal_True);
 //			pTabLink->SetAddUndo(sal_True);
 			bAny = sal_True;
 		}

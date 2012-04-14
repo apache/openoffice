@@ -1,0 +1,12 @@
+mkdir: %_DEST%\inc%_EXT%\serf
+..\%__SRC%\inc\serf\serf*.h %_DEST%\inc%_EXT%\serf
+..\serf_version.mk %_DEST%\inc%_EXT%
+
+# Mac
+..\%__SRC%\lib\libserf-1.*dylib %_DEST%\lib%_EXT%
+
+# Linux, BSD, et al
+..\%__SRC%\lib\libserf-1.so.*.* %_DEST%\lib%_EXT%
+..\%__SRC%\lib\libserf-1.so.* %_DEST%\lib%_EXT%
+linklib: libserf-1.so.*.*
+linklib: libserf-1.so.*

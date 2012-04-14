@@ -57,7 +57,7 @@
 #include <bf_svtools/options3d.hxx>
 #include <bf_svtools/pathoptions.hxx>
 #include <bf_svtools/printwarningoptions.hxx>
-#include <regoptions.hxx>
+//#include <regoptions.hxx>
 #include <bf_svtools/optionsdlg.hxx>
 #include <bf_svtools/saveopt.hxx>
 #include <searchopt.hxx>
@@ -255,10 +255,6 @@ void ItemHolder1::impl_newItem(TItemInfo& rItem)
 
         case E_PRINTWARNINGOPTIONS :
             rItem.pItem = new SvtPrintWarningOptions();
-            break;
-
-        case E_REGOPTIONS :
-// no ref count            rItem.pItem = new ::svt::RegOptions();
             break;
 
         case E_SAVEOPTIONS :

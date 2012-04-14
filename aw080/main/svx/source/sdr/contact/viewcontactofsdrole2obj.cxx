@@ -38,6 +38,8 @@
 #include <vcl/svapp.hxx>
 #include <svx/sdr/primitive2d/sdrolecontentprimitive2d.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include <drawinglayer/primitive2d/transformprimitive2d.hxx>
+#include <svx/charthelper.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -67,9 +69,7 @@ namespace sdr
         drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrOle2Obj::createPrimitive2DSequenceWithParameters(
             bool bHighContrast) const
         {
-			drawinglayer::primitive2d::Primitive2DSequence xRetval;
-
-			// get object transformation
+            // get object transformation
 			const basegfx::B2DHomMatrix& rObjectMatrix(GetOle2Obj().getSdrObjectTransformation());
 
 		    // Prepare attribute settings, will be used soon anyways
@@ -78,13 +78,44 @@ namespace sdr
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
                     rItemSet, 
                     GetOle2Obj().getText(0)));
+            drawinglayer::primitive2d::Primitive2DReference xContent;
 
-            // #i102063# embed OLE content in an own primitive; this will be able to decompose accessing
-            // the weak SdrOle2 reference and will also implement getB2DRange() for fast BoundRect
-            // calculations without OLE Graphic access (which may trigger e.g. chart recalculation).
-            // It will also take care of HighContrast and ScaleContent
-            const drawinglayer::primitive2d::Primitive2DReference xOleContent(
-                new drawinglayer::primitive2d::SdrOleContentPrimitive2D(
+            if(GetOle2Obj().IsChart())
+            {
+                // try to get chart primitives and chart range directly from xChartModel
+                basegfx::B2DRange aChartContentRange;
+                const drawinglayer::primitive2d::Primitive2DSequence aChartSequence(
+                    ChartHelper::tryToGetChartContentAsPrimitive2DSequence(
+                        GetOle2Obj().getXModel(),
+                        aChartContentRange));
+                const double fWidth(aChartContentRange.getWidth());
+                const double fHeight(aChartContentRange.getHeight());
+
+                if(aChartSequence.hasElements() 
+                    && basegfx::fTools::more(fWidth, 0.0)
+                    && basegfx::fTools::more(fHeight, 0.0))
+                {
+                    // create embedding transformation
+                    basegfx::B2DHomMatrix aEmbed(
+                        basegfx::tools::createTranslateB2DHomMatrix(
+                            -aChartContentRange.getMinX(), 
+                            -aChartContentRange.getMinY()));
+
+                    aEmbed.scale(1.0 / fWidth, 1.0 / fHeight);
+                    aEmbed = rObjectMatrix * aEmbed;
+                    xContent = new drawinglayer::primitive2d::TransformPrimitive2D(
+                        aEmbed,
+                        aChartSequence);
+                }
+            }
+
+            if(!xContent.is())
+            {
+                // #i102063# embed OLE content in an own primitive; this will be able to decompose accessing
+                // the weak SdrOle2 reference and will also implement getB2DRange() for fast BoundRect
+                // calculations without OLE Graphic access (which may trigger e.g. chart recalculation).
+                // It will also take care of HighContrast and ScaleContent
+                xContent = new drawinglayer::primitive2d::SdrOleContentPrimitive2D(
                     GetOle2Obj(),
                     rObjectMatrix,
 
@@ -92,21 +123,19 @@ namespace sdr
                     // content change in the primitive later
                     GetOle2Obj().getEmbeddedObjectRef().getGraphicVersion(),
 
-                    bHighContrast));
-            
+                    bHighContrast);
+            }
+
             // create primitive. Use Ole2 primitive here. Prepare attribute settings, will 
 			// be used soon anyways. Always create primitives to allow the decomposition of 
 			// SdrOle2Primitive2D to create needed invisible elements for HitTest and/or BoundRect
-            const drawinglayer::primitive2d::Primitive2DSequence xOLEContent(&xOleContent, 1);
             const drawinglayer::primitive2d::Primitive2DReference xReference(
                 new drawinglayer::primitive2d::SdrOle2Primitive2D(
-			        xOLEContent,
+			        drawinglayer::primitive2d::Primitive2DSequence(&xContent, 1),
 			        rObjectMatrix, 
 			        aAttribute));
 
-			xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
-
-			return xRetval;
+			return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
         }
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrOle2Obj::createViewIndependentPrimitive2DSequence() const

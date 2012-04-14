@@ -60,7 +60,7 @@ ChartTransferable::ChartTransferable( SdrModel* pDrawModel, SdrObject* pSelected
         pExchgView->MarkObj( *pSelectedObj );
     else
         pExchgView->MarkAllObj();
-    Graphic aGraphic( pExchgView->GetMarkedObjMetaFile( sal_True ));
+    Graphic aGraphic( pExchgView->GetMarkedObjMetaFile(true));
     m_xMetaFileGraphic.set( aGraphic.GetXGraphic());
     if ( m_bDrawing )
     {

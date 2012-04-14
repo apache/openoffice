@@ -213,6 +213,7 @@ namespace drawinglayer
 		{
 			// prepare the polygon. No double points, correct orientations and a correct
 			// outmost polygon are needed
+            // Also important: subdivide here to ensure equal point count for all slices (!)
 			maCorrectedPolyPolygon = basegfx::tools::adaptiveSubdivideByAngle(getPolyPolygon());
 			maCorrectedPolyPolygon.removeDoublePoints();
 			maCorrectedPolyPolygon = basegfx::tools::correctOrientations(maCorrectedPolyPolygon);
@@ -316,29 +317,6 @@ namespace drawinglayer
                 delete mpLastRLGViewInformation;
             }
         }
-
-		bool SdrLathePrimitive3D::operator==(const BasePrimitive3D& rPrimitive) const
-		{
-			if(SdrPrimitive3D::operator==(rPrimitive))
-			{
-				const SdrLathePrimitive3D& rCompare = static_cast< const SdrLathePrimitive3D& >(rPrimitive);
-
-				return (getPolyPolygon() == rCompare.getPolyPolygon()
-					&& getHorizontalSegments() == rCompare.getHorizontalSegments()
-					&& getVerticalSegments() == rCompare.getVerticalSegments()
-					&& getDiagonal() == rCompare.getDiagonal()
-					&& getBackScale() == rCompare.getBackScale()
-					&& getRotation() == rCompare.getRotation()
-					&& getSmoothNormals() == rCompare.getSmoothNormals()
-					&& getSmoothHorizontalNormals() == rCompare.getSmoothHorizontalNormals()
-					&& getSmoothLids() == rCompare.getSmoothLids()
-					&& getCharacterMode() == rCompare.getCharacterMode()
-					&& getCloseFront() == rCompare.getCloseFront()
-					&& getCloseBack() == rCompare.getCloseBack());
-			}
-
-			return false;
-		}
 
 		basegfx::B3DRange SdrLathePrimitive3D::getB3DRange(const geometry::ViewInformation3D& /*rViewInformation*/) const
 		{

@@ -38,7 +38,6 @@ namespace drawinglayer { namespace primitive2d {
 	class TextSimplePortionPrimitive2D;
 	class PolygonHairlinePrimitive2D;
 	class BitmapPrimitive2D;
-	class RenderGraphicPrimitive2D;
 	class FillBitmapPrimitive2D;
 	class PolyPolygonGradientPrimitive2D;
 	class PolyPolygonBitmapPrimitive2D;
@@ -55,6 +54,8 @@ namespace drawinglayer { namespace primitive2d {
 	class ControlPrimitive2D;
 	class PagePreviewPrimitive2D;
     class EpsPrimitive2D;
+    class SvgLinearAtomPrimitive2D;
+    class SvgRadialAtomPrimitive2D;
 }}
 
 //////////////////////////////////////////////////////////////////////////////
@@ -95,7 +96,6 @@ namespace drawinglayer
             void RenderTextSimpleOrDecoratedPortionPrimitive2D(const primitive2d::TextSimplePortionPrimitive2D& rTextCandidate);
 			void RenderPolygonHairlinePrimitive2D(const primitive2d::PolygonHairlinePrimitive2D& rPolygonCandidate, bool bPixelBased);
 			void RenderBitmapPrimitive2D(const primitive2d::BitmapPrimitive2D& rBitmapCandidate);
-			void RenderRenderGraphicPrimitive2D(const primitive2d::RenderGraphicPrimitive2D& rRenderGraphicCandidate);
 			void RenderFillBitmapPrimitive2D(const primitive2d::FillBitmapPrimitive2D& rFillBitmapCandidate);
 			void RenderPolyPolygonGradientPrimitive2D(const primitive2d::PolyPolygonGradientPrimitive2D& rPolygonCandidate);
 			void RenderPolyPolygonBitmapPrimitive2D(const primitive2d::PolyPolygonBitmapPrimitive2D& rPolygonCandidate);
@@ -111,6 +111,8 @@ namespace drawinglayer
 			void RenderPointArrayPrimitive2D(const primitive2d::PointArrayPrimitive2D& rPointArrayCandidate);
 			void RenderPolygonStrokePrimitive2D(const primitive2d::PolygonStrokePrimitive2D& rPolygonStrokeCandidate);
             void RenderEpsPrimitive2D(const primitive2d::EpsPrimitive2D& rEpsPrimitive2D);
+            void RenderSvgLinearAtomPrimitive2D(const primitive2d::SvgLinearAtomPrimitive2D& rCandidate);
+            void RenderSvgRadialAtomPrimitive2D(const primitive2d::SvgRadialAtomPrimitive2D& rCandidate);
 
 			/////////////////////////////////////////////////////////////////////////////
 			// DrawMode adaption support

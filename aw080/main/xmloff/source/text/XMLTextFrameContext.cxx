@@ -419,6 +419,7 @@ class XMLTextFrameContext_Impl : public SvXMLImportContext
 public:
 
 	sal_Bool CreateIfNotThere();
+	const OUString& GetHRef() const { return sHRef; }
 
 	XMLTextFrameContext_Impl( SvXMLImport& rImport,
 			sal_uInt16 nPrfx,
@@ -452,7 +453,7 @@ public:
 	::com::sun::star::text::TextContentAnchorType GetAnchorType() const { return eAnchorType; }
 
 	const ::com::sun::star::uno::Reference <
-		::com::sun::star::beans::XPropertySet >& GetPropSet() { return xPropSet; }
+		::com::sun::star::beans::XPropertySet >& GetPropSet() const { return xPropSet; }
 };
 
 void XMLTextFrameContext_Impl::Create( sal_Bool /*bHRefOrBase64*/ )
@@ -743,8 +744,6 @@ void XMLTextFrameContext_Impl::Create( sal_Bool /*bHRefOrBase64*/ )
 		xTextImportHelper->InsertTextContent( xTxtCntnt );
 	}
 
-	Reference < XShape > xShape( xPropSet, UNO_QUERY );
-
 	// #107848#
 	// Make adding the shepe to Z-Ordering dependent from if we are
 	// inside a inside_deleted_section (redlining). That is necessary
@@ -754,7 +753,9 @@ void XMLTextFrameContext_Impl::Create( sal_Bool /*bHRefOrBase64*/ )
 	if(!GetImport().HasTextImport()
 		|| !GetImport().GetTextImport()->IsInsideDeleteContext())
 	{
-		GetImport().GetShapeImport()->shapeWithZIndexAdded( xShape, nZIndex );
+    	Reference < XShape > xShape( xPropSet, UNO_QUERY );
+
+        GetImport().GetShapeImport()->shapeWithZIndexAdded( xShape, nZIndex );
 	}
 
 	if( XML_TEXT_FRAME_TEXTBOX == nType )
@@ -1290,6 +1291,42 @@ void XMLTextFrameContext_Impl::SetDesc( const OUString& rDesc )
 
 //-----------------------------------------------------------------------------------------------------
 
+void XMLTextFrameContext::removeGraphicFromImportContext(const SvXMLImportContext& rContext) const
+{
+    const XMLTextFrameContext_Impl* pXMLTextFrameContext_Impl = dynamic_cast< const XMLTextFrameContext_Impl* >(&rContext);
+
+    if(pXMLTextFrameContext_Impl)
+    {
+        try
+        {
+            // just dispose to delete
+            uno::Reference< lang::XComponent > xComp(pXMLTextFrameContext_Impl->GetPropSet(), UNO_QUERY);
+
+            if(xComp.is())
+            {
+                xComp->dispose();
+            }
+        }
+        catch( uno::Exception& )
+        {
+            DBG_ERROR( "Error in cleanup of multiple graphic object import (!)" );
+        }
+    }
+}
+
+rtl::OUString XMLTextFrameContext::getGraphicURLFromImportContext(const SvXMLImportContext& rContext) const
+{
+    rtl::OUString aRetval;
+    const XMLTextFrameContext_Impl* pXMLTextFrameContext_Impl = dynamic_cast< const XMLTextFrameContext_Impl* >(&rContext);
+
+    if(pXMLTextFrameContext_Impl)
+    {
+        return pXMLTextFrameContext_Impl->GetHRef();
+    }
+
+    return aRetval;
+}
+
 sal_Bool XMLTextFrameContext::CreateIfNotThere()
 {
 	sal_Bool bRet = sal_False;
@@ -1321,6 +1358,7 @@ XMLTextFrameContext::XMLTextFrameContext(
 		const Reference< XAttributeList > & xAttrList,
 		TextContentAnchorType eATyp )
 :	SvXMLImportContext( rImport, nPrfx, rLName )
+,   multiImageImportHelper()
 ,	m_xAttrList( new SvXMLAttributeList( xAttrList ) )
 ,	m_pHyperlink( 0 )
 // --> OD 2009-07-22 #i73249#
@@ -1378,11 +1416,14 @@ XMLTextFrameContext::XMLTextFrameContext(
 
 XMLTextFrameContext::~XMLTextFrameContext()
 {
-	delete m_pHyperlink;
+    delete m_pHyperlink;
 }
 
 void XMLTextFrameContext::EndElement()
 {
+    /// solve if multiple image child contexts were imported
+    solveMultipleImages();
+
 	SvXMLImportContext *pContext = &m_xImplContext;
 	XMLTextFrameContext_Impl *pImpl = dynamic_cast< XMLTextFrameContext_Impl* >( pContext );
 	if( pImpl )
@@ -1487,6 +1528,10 @@ SvXMLImportContext *XMLTextFrameContext::CreateChildContext(
 				{
 					m_bSupportsReplacement = sal_True;
 				}
+                else if(XML_TEXT_FRAME_GRAPHIC == nFrameType)
+                {
+                    setSupportsMultipleContents(IsXMLToken(rLocalName, XML_IMAGE));
+                }
 
 				if( !pContext )
 				{
@@ -1499,9 +1544,24 @@ SvXMLImportContext *XMLTextFrameContext::CreateChildContext(
 				}
 
 				m_xImplContext = pContext;
+
+                if(getSupportsMultipleContents() && XML_TEXT_FRAME_GRAPHIC == nFrameType)
+                {
+                    addContent(*m_xImplContext);
+                }
 			}
 		}
 	}
+    else if(getSupportsMultipleContents() && XML_NAMESPACE_DRAW == p_nPrefix && IsXMLToken(rLocalName, XML_IMAGE))
+    {
+        // read another image
+        pContext = new XMLTextFrameContext_Impl(
+            GetImport(), p_nPrefix, rLocalName, xAttrList,
+            m_eDefaultAnchorType, XML_TEXT_FRAME_GRAPHIC, m_xAttrList);
+        
+        m_xImplContext = pContext;
+        addContent(*m_xImplContext);
+    }
 	else if( m_bSupportsReplacement && !m_xReplImplContext &&
 			 XML_NAMESPACE_DRAW == p_nPrefix &&
 			 IsXMLToken( rLocalName, XML_IMAGE ) )

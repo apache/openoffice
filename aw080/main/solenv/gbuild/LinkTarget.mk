@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2011 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 
 # CObject class
@@ -252,7 +248,7 @@ $(call gb_Helper_abbreviate_dirs,\
 		$(foreach object,$(3),$(call gb_CObject_get_dep_target,$(object))) \
 		$(foreach object,$(4),$(call gb_CxxObject_get_dep_target,$(object))) \
 		$(foreach object,$(5),$(call gb_ObjCxxObject_get_dep_target,$(object)))\
- 		$(foreach object,$(6),$(call gb_GenCxxObject_get_dep_target,$(object)))\
+		$(foreach object,$(6),$(call gb_GenCxxObject_get_dep_target,$(object)))\
 		) && \
 	cat $${RESPONSEFILE} /dev/null | xargs -n 200 cat > $(1)) && \
 	rm -f $${RESPONSEFILE}
@@ -356,6 +352,7 @@ $(call gb_LinkTarget_get_target,$(1)) : INCLUDE_STL := $$(gb_LinkTarget_INCLUDE_
 $(call gb_LinkTarget_get_target,$(1)) : LDFLAGS := $$(gb_LinkTarget_LDFLAGS)
 $(call gb_LinkTarget_get_target,$(1)) : LINKED_LIBS := 
 $(call gb_LinkTarget_get_target,$(1)) : LINKED_STATIC_LIBS := 
+$(call gb_LinkTarget_get_target,$(1)) : EXTERNAL_LIBS := 
 $(call gb_LinkTarget_get_target,$(1)) : TARGETTYPE := 
 $(call gb_LinkTarget_get_headers_target,$(1)) \
 $(call gb_LinkTarget_get_target,$(1)) : PCH_NAME :=
@@ -478,6 +475,40 @@ $(call gb_LinkTarget_get_external_headers_target,$(1)) : \
 $$(foreach lib,$(2),$$(call gb_StaticLibrary_get_headers_target,$$(lib)))
 
 endef
+
+#
+# Add external libs for linking.  External libaries are not built by any module.
+#
+# The list of libraries is used as is, ie it is not filtered with gb_Library_KNOWNLIBS.
+#
+# An error is signaled, when any of the library names does not look like
+# a base name, ie is prefixed by -l or lib or is folled by .lib or .so.
+# 
+# @param target
+# @param libraries
+#     A list of (base names of) libraries that will be added to the target
+#     local EXTERNAL_LIBS variable and eventually linked in when the
+#     target is made.
+#
+define gb_LinkTarget_add_external_libs
+
+# Make sure that all libraries are given as base names.
+ifneq (,$$(filter -l% lib% %.so %.lib, $(2)))
+$$(eval $$(call gb_Output_announce,ERROR: Please give only libary basenames to gb_LinkTarget_add_external_libs))
+$$(eval $$(call gb_Output_announce,ERROR:    (no prefixes -l% or lib%, no suffixes %.so or %.lib)))
+$$(eval $$(call gb_Output_announce,ERROR:    libraries given: $(2)))
+$$(eval $$(call gb_Output_announce,ERROR:    offending: $$(filter -l% lib% %.so %.lib, $(2))))
+$$(eval $$(call gb_Output_error,  ))
+endif
+
+$(call gb_LinkTarget_get_target,$(1)) : EXTERNAL_LIBS += $(2)
+
+$(call gb_LinkTarget_get_target,$(1)) : $$(foreach lib,$(2),$$(call gb_Library_get_target,$$(lib)))
+$(call gb_LinkTarget_get_external_headers_target,$(1)) : \
+$$(foreach lib,$(2),$$(call gb_Library_get_headers_target,$$(lib)))
+
+endef
+
 
 define gb_LinkTarget_add_cobject
 $(call gb_LinkTarget_get_target,$(1)) : COBJECTS += $(2)

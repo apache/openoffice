@@ -1797,13 +1797,27 @@ bool SvxGraphicObject::getPropertyValueImpl( const ::rtl::OUString& rName, const
 		    break;
 	    }
 
-	    case OWN_ATTR_GRAFSTREAMURL:
-	    {
-		    const OUString	aStreamURL( ( (SdrGrafObj*) mpObj.get() )->GetGrafStreamURL() );
-		    if( aStreamURL.getLength() )
-			    rValue <<= aStreamURL;
-		    break;
-	    }
+		case OWN_ATTR_REPLACEMENTGRAFURL:
+		{
+			const GraphicObject* pGrafObj = static_cast< SdrGrafObj* >(mpObj.get())->GetReplacementGraphicObject();
+
+			if(pGrafObj)
+			{
+				OUString aURL(RTL_CONSTASCII_USTRINGPARAM(UNO_NAME_GRAPHOBJ_URLPREFIX));
+				aURL += OUString::createFromAscii(pGrafObj->GetUniqueID().GetBuffer());
+				rValue <<= aURL;
+			}
+
+			break;
+		}
+
+		case OWN_ATTR_GRAFSTREAMURL:
+		{
+			const OUString	aStreamURL( ( (SdrGrafObj*) mpObj.get() )->GetGrafStreamURL() );
+			if( aStreamURL.getLength() )
+				rValue <<= aStreamURL;
+			break;
+		}
 
 	    case OWN_ATTR_VALUE_GRAPHIC:
         {

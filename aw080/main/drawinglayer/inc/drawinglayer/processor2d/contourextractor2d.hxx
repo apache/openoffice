@@ -44,7 +44,10 @@ namespace drawinglayer
 		{
 		private:
             /// the extracted contour
-            std::vector< basegfx::B2DPolyPolygon >  maExtractedContour;
+            basegfx::B2DPolyPolygonVector       maExtractedContour;
+
+            /// bitfield
+            bool                                mbExtractFillOnly : 1;
 
 			/// tooling methods
 			void processBasePrimitive2D(
@@ -52,10 +55,12 @@ namespace drawinglayer
 				const primitive2d::Primitive2DReference& rUnoCandidate);
 
 		public:
-			ContourExtractor2D(const geometry::ViewInformation2D& rViewInformation);
+			ContourExtractor2D(
+                const geometry::ViewInformation2D& rViewInformation,
+                bool bExtractFillOnly);
 			virtual ~ContourExtractor2D();
 			
-			const std::vector< basegfx::B2DPolyPolygon >& getExtractedContour() const { return maExtractedContour; }
+			const basegfx::B2DPolyPolygonVector& getExtractedContour() const { return maExtractedContour; }
 		};
 	} // end of namespace processor2d
 } // end of namespace drawinglayer

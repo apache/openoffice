@@ -486,7 +486,10 @@ SdrObject* SdrRectObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) con
     aPolyPolygon.removeDoublePoints();
 	SdrObject* pRet = 0;
 	
-	if(!IsTextFrame() || HasFill() || HasLine()) 
+    // small correction: Do not create something when no fill and no line. To
+    // be sure to not damage something with non-text frames, do this only
+    // when used with bAddText==false from other converters
+	if((bAddText && !IsTextFrame()) || HasFill() || HasLine()) 
 	{
 		pRet = ImpConvertMakeObj(aPolyPolygon, true, bBezier);
 	}

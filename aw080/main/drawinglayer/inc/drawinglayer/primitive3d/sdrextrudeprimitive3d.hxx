@@ -110,9 +110,6 @@ namespace drawinglayer
 			bool getCloseFront() const { return mbCloseFront; }
 			bool getCloseBack() const { return mbCloseBack; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
-
 			/// get range
 			virtual basegfx::B3DRange getB3DRange(const geometry::ViewInformation3D& rViewInformation) const;
 

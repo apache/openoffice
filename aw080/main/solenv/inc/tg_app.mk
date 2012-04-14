@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 #######################################################
 # instructions for linking
@@ -103,16 +99,8 @@ $(APP$(TNR)TARGETN) : $(LINKINCTARGETS)
 # Allow for target specific LIBSALCPPRT override
 APP$(TNR)LIBSALCPPRT*=$(LIBSALCPPRT)
 
-.IF "$(GUI)" == "OS2"
-_APP$(TNR)IMP_ORD = $(APP$(TNR)STDLIBS:^"$(SOLARVERSION)/$(INPATH)/lib/") $(APP$(TNR)STDLIBS:^"$(LB)/") 
-APP$(TNR)IMP_ORD = $(foreach,i,$(_APP$(TNR)IMP_ORD) $(shell @-ls $i))
-.ELSE
-APP$(TNR)IMP_ORD = 
-.ENDIF
-
 $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 	$(APP$(TNR)RES) \
-	$(APP$(TNR)IMP_ORD) \
 	$(APP$(TNR)ICON) $(APP$(TNR)DEPN) $(USE_APP$(TNR)DEF)
 	@echo "Making:   " $(@:f)
 .IF "$(GUI)"=="UNX"
@@ -248,11 +236,11 @@ $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 .ENDIF			# "$(GUI)" == "WNT"
 
 .IF "$(GUI)" == "OS2"
-	@+-$(MKDIR) $(@:d:d) >& $(NULLDEV)
+	@+-$(MKDIR) $(@:d:d) > $(NULLDEV)
 .IF "$(APP$(TNR)LINKRES)" != ""
-	@+-$(RM) $(MISC)/$(APP$(TNR)LINKRES:b).rc >& $(NULLDEV)
+	@+-$(RM) $(MISC)/$(APP$(TNR)LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP$(TNR)ICON)" != ""
-	@-+$(WRAPCMD) echo 1 ICON $(EMQ)"$(APP$(TNR)ICON)$(EMQ)" | $(SED) 'sX\\X\\\\Xg' >> $(MISC)/$(APP$(TNR)LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP$(TNR)ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP$(TNR)LINKRES:b).rc
 .ENDIF		# "$(APP$(TNR)ICON)" != ""
 .IF "$(APP$(TNR)VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP$(TNR)LINKRES:b).rc
@@ -265,22 +253,6 @@ $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 	@echo NAME $(APP$(TNR)TARGET) WINDOWAPI > $(MISC)/$(APP$(TNR)TARGET).def
 .ENDIF
 
-  .IF "$(VERBOSE)" == "TRUE"
-	@+echo	$(APP$(TNR)LINKFLAGS) \
-		$(LINKFLAGSAPP) $(APP$(TNR)BASEX) \
-		$(APP$(TNR)STACKN) \
-		-o $@ \
-		-Zmap -L$(LB) \
-		-L$(SOLARVERSION)/$(INPATH)/lib \
-		$(STDOBJ) \
-		$(APP$(TNR)LINKRES) \
-		$(APP$(TNR)RES) \
-		$(APP$(TNR)DEF) \
-		$(APP$(TNR)OBJS) \
-		$(APP$(TNR)LIBS) \
-		$(APP$(TNR)STDLIBS:^"-l") \
-		$(APP$(TNR)STDLIB:^"-l") $(STDLIB$(TNR):^"-l") 
-  .ENDIF
 	$(COMMAND_ECHO)$(APP$(TNR)LINKER) -v \
 		$(APP$(TNR)LINKFLAGS) \
 		$(LINKFLAGSAPP) $(APP$(TNR)BASEX) \
@@ -294,8 +266,8 @@ $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 		$(APP$(TNR)DEF) \
 		$(APP$(TNR)OBJS) \
 		$(APP$(TNR)LIBS) \
-		$(APP$(TNR)STDLIBS:^"-l") \
-		$(APP$(TNR)STDLIB:^"-l") $(STDLIB$(TNR):^"-l") 
+		$(APP$(TNR)STDLIBS) \
+		$(APP$(TNR)STDLIB) $(STDLIB$(TNR)) 
 
 
 .IF "$(APP$(TNR)TARGET)" == "loader"

@@ -115,7 +115,6 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			SdrObjTransformInfoRec aInfoRec;
 			pSingleObject->TakeObjInfo( aInfoRec );
 
-
 			// #91929#; don't show original size entry if not possible
 			const SdrOle2Obj* pOleObj = dynamic_cast< const SdrOle2Obj* >(pSingleObject);
             
@@ -123,7 +122,9 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			{
                 if (pOleObj->GetObjRef().is() &&
                     ((pOleObj->GetObjRef()->getStatus( pOleObj->GetAspect() ) & embed::EmbedMisc::MS_EMBED_RECOMPOSEONRESIZE) ) )
+				{
 					rSet.DisableItem(SID_ORIGINAL_SIZE);
+				}
             }
 
 			const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(pSingleObject);
@@ -142,14 +143,22 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 
 			// Wenn es sich um kein Gruppenobjekt handelt
 			// wird "Gruppierung aufheben" disabled
-			if (!(dynamic_cast< const SdrObjGroup* >(pSingleObject) && nInv == SdrInventor))
+			const SdrObjGroup* pSdrObjGroup = dynamic_cast< const SdrObjGroup* >(pSingleObject);
+
+			if (!(pSdrObjGroup && nInv == SdrInventor))
 			{
 				rSet.DisableItem(SID_UNGROUP);
 			}
 
-			if (!pSdrGrafObj ||
+//			if (!pSdrObjGroup && !pSdrGrafObj && !pOleObj)
+//			{
+//				rSet.DisableItem( SID_NAME_GROUP );
+//			}
+
+			if(!pSdrGrafObj ||
 				pSdrGrafObj->GetGraphicType() != GRAPHIC_BITMAP ||
-				pSdrGrafObj->IsLinkedGraphic())
+				pSdrGrafObj->IsLinkedGraphic() ||
+                pSdrGrafObj->isEmbeddedSvg())
 			{
 				rSet.DisableItem(SID_CONVERT_TO_1BIT_THRESHOLD);
 				rSet.DisableItem(SID_CONVERT_TO_1BIT_MATRIX);
@@ -170,7 +179,7 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 				rSet.DisableItem( SID_ATTR_FILL_STYLE );
 			}
 			if( (!dynamic_cast< const SdrPathObj* >(pSingleObject) && !aInfoRec.mbCanConvToPath) 
-				|| dynamic_cast< const SdrObjGroup* >(pSingleObject) ) // Solange es JOE fehlerhaft behandelt!
+				|| pSdrObjGroup ) // Solange es JOE fehlerhaft behandelt!
 			{ 
 				// JOE: Ein Gruppenobjekt kann eben u.U. in ein PathObj gewandelt werden
 				rSet.DisableItem( SID_LINEEND_POLYGON );

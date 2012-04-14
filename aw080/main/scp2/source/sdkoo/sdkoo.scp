@@ -1,29 +1,25 @@
-/*************************************************************************
-*
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+/**************************************************************
  * 
- * Copyright 2000, 2010 Oracle and/or its affiliates.
- *
- * OpenOffice.org - a multi-platform office productivity suite
- *
- * This file is part of OpenOffice.org.
- *
- * OpenOffice.org is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License version 3
- * only, as published by the Free Software Foundation.
- *
- * OpenOffice.org is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License version 3 for more details
- * (a copy is included in the LICENSE file that accompanied this code).
- *
- * You should have received a copy of the GNU Lesser General Public License
- * version 3 along with OpenOffice.org.  If not, see
- * <http://www.openoffice.org/license.html>
- * for a copy of the LGPLv3 License.
- *
-************************************************************************/
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
 
 #include "macros.inc"
 
@@ -96,16 +92,15 @@ End
 
 
 #if defined MACOSX
-ScpAction scp_Copy_License_Html_Sdk
-    README_TXT_ALL_LANG(Copy, LICENSE, html);
-    README_TXT_ALL_LANG(Name, LICENSE, html);
-    Styles = (SCPZIP_REPLACE);
-    Subdir = "LICENSEs";
-End
-
 ScpAction scp_Copy_License_Txt_Sdk
     README_ALL_LANG(Copy, LICENSE);
     README_ALL_LANG(Name, LICENSE);
+    Styles = (SCPZIP_REPLACE);
+    Subdir = "LICENSEs";
+End
+ScpAction scp_Copy_Notice_Txt_Sdk
+    README_ALL_LANG(Copy, NOTICE);
+    README_ALL_LANG(Name, NOTICE);
     Styles = (SCPZIP_REPLACE);
     Subdir = "LICENSEs";
 End
@@ -129,28 +124,17 @@ Module gid_Module_Root
     PackageInfo = "packinfo_sdkoo.txt";
 End
 
-
-File gid_File_Txt_License
+File gid_File_Txt_Notice
     TXT_FILE_BODY;
-    Dir = gid_Dir_Share_Readme_Sdk;
-  #ifdef UNX
-    Name = "LICENSE_en-US";
-  #endif
-  #ifdef WNT
-    Name = "license_en-US.txt";
-  #endif
+    Dir = gid_Dir_Basis_Sdk;
+    Name = "NOTICE";
     Styles = (PACKED, SCPZIP_REPLACE);
 End
 
-File gid_File_Txt_License_Html
+File gid_File_Txt_License_Root
     TXT_FILE_BODY;
-    Dir = gid_Dir_Share_Readme_Sdk;
-  #ifdef UNX
-    Name = "LICENSE_en-US.html";
-  #endif
-  #ifdef WNT
-    Name = "license_en-US.html";
-  #endif
+    Dir = gid_Dir_Basis_Sdk;
+    Name = "LICENSE";
     Styles = (PACKED, SCPZIP_REPLACE);
 End
 
@@ -250,5 +234,23 @@ Unixlink gid_Unixlink_Purpenvhelper_Link_Sdk
     Name = SCP2_URE_DL_UNO_COMID_NORMAL("purpenvhelper");
     Dir = gid_Dir_Lib_Sdk;
     Target = "../../ure-link/lib/" SCP2_URE_DL_UNO_COMID_VER("purpenvhelper", "3");
+End
+#endif
+
+#ifdef MACOSX
+ScpAction scp_Copy_Dmg_Background_Image
+    Copy = "osxdndinstall.png";
+    Name = "background.png";
+    UnixRights = 444;
+    Styles = ();
+    Subdir = ".background";
+End
+
+ScpAction scp_Copy_Ds_Store
+    Copy = "DS_Store_SDK";
+#    PatchCopy = "DS_Store_Patch";
+    Name = ".DS_Store";
+    UnixRights = 444;
+    Styles = ();
 End
 #endif

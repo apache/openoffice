@@ -820,20 +820,19 @@ void SdrEditView::CheckPossibilities()
 
 				// ImportMtf checken
                 if(!mbImportMtfPossible) 
-				{
-                    const SdrGrafObj* pGrafPObj = dynamic_cast< const SdrGrafObj* >(pObj);
-                    const SdrOle2Obj* pOLEObj = dynamic_cast< const SdrOle2Obj* >(pObj);
+                {
+                    const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(pObj);
+                    const SdrOle2Obj* pSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(pObj);
 
-					if(pGrafPObj 
-						&& pGrafPObj->HasGDIMetaFile() 
-						&& !(pGrafPObj->IsEPS() || pGrafPObj->IsRenderGraphic()))
-					{
-						mbImportMtfPossible = true;
-					}
-					else if(pOLEObj)
-					{
-                        mbImportMtfPossible = pOLEObj->GetObjRef().is();
-					}
+                    if(pSdrGrafObj && ((pSdrGrafObj->HasGDIMetaFile() && !pSdrGrafObj->IsEPS()) || pSdrGrafObj->isEmbeddedSvg()))
+                    {
+                        mbImportMtfPossible = true;
+                    }
+
+                    if(pSdrOle2Obj)
+                    {
+                        mbImportMtfPossible = pSdrOle2Obj->GetObjRef().is();
+                    }
                 }
 			}
 

@@ -2384,14 +2384,29 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
 			SdrOle2Obj* pOle2 = dynamic_cast< SdrOle2Obj* >(pObj);
 			sal_uInt32 nInsAnz(0);
 		
-			if(pGraf && pGraf->HasGDIMetaFile())
-	    	{
-				ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrView());
+			if(pGraf && (pGraf->HasGDIMetaFile() || pGraf->isEmbeddedSvg()))
+			{
+				GDIMetaFile aMetaFile;
 
-				aFilter.SetScaleRect(sdr::legacy::GetSnapRect(*pGraf));
-			    aFilter.SetLayer(pObj->GetLayer());
-			    nInsAnz=aFilter.DoImport(pGraf->GetTransformedGraphic().GetGDIMetaFile(),*pOL,nInsPos,pProgrInfo);
-		    }
+				if(pGraf->HasGDIMetaFile())
+				{
+					aMetaFile = pGraf->GetTransformedGraphic(
+						SDRGRAFOBJ_TRANSFORMATTR_COLOR|SDRGRAFOBJ_TRANSFORMATTR_MIRROR).GetGDIMetaFile();
+				}
+				else if(pGraf->isEmbeddedSvg())
+				{
+					aMetaFile = pGraf->getMetafileFromEmbeddedSvg();
+				}
+
+				if(aMetaFile.GetActionCount())
+				{
+					ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrView());
+
+					aFilter.SetScaleRect(sdr::legacy::GetLogicRect(*pObj));
+					aFilter.SetLayer(pObj->GetLayer());
+					nInsAnz = aFilter.DoImport(aMetaFile, *pOL, nInsPos, pProgrInfo);
+				}
+			}
 
 			if(pOle2 && pOle2->GetGraphic())
     		{

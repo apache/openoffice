@@ -43,7 +43,6 @@
 #include <svtools/fltcall.hxx>
 #include <svtools/FilterConfigItem.hxx>
 #include <vcl/graphictools.hxx>
-#include <vcl/rendergraphicrasterizer.hxx>
 #include "strings.hrc"
 
 #include <math.h>
@@ -1336,7 +1335,6 @@ void PSWriter::ImplWriteActions( const GDIMetaFile& rMtf, VirtualDevice& rVDev )
 											case META_BMPSCALEPART_ACTION :
 											case META_BMPEXSCALE_ACTION :
 											case META_BMPEXSCALEPART_ACTION :
-											case META_RENDERGRAPHIC_ACTION :
 											{
 												nBitmapCount++;
 												nBitmapAction = nCurAction;
@@ -1396,22 +1394,6 @@ void PSWriter::ImplWriteActions( const GDIMetaFile& rMtf, VirtualDevice& rVDev )
 			}
 			break;
 
-            case( META_RENDERGRAPHIC_ACTION ):
-            {
-                const MetaRenderGraphicAction*	        pA = (const MetaRenderGraphicAction*) pMA;
-                const ::vcl::RenderGraphicRasterizer    aRasterizer( pA->GetRenderGraphic() );
-                const BitmapEx                          aBmpEx( aRasterizer.Rasterize( rVDev.LogicToPixel( pA->GetSize() ) ) );
-				Bitmap                                  aBmp( aBmpEx.GetBitmap() );
-
-				if ( mbGrayScale )
-					aBmp.Convert( BMP_CONVERSION_8BIT_GREYS );
-
-				Bitmap  aMask( aBmpEx.GetMask() );
-				Size    aSize( pA->GetSize() );
-
-				ImplBmp( &aBmp, &aMask, pA->GetPoint(), aSize.Width(), aSize.Height() );
-            }
-            break;
 		}
 	}
 }
@@ -2388,6 +2370,7 @@ void PSWriter::ImplWriteLineInfo( const LineInfo& rLineInfo )
 		l_aDashArray.push_back( 2 );
 	const double fLWidth(( ( rLineInfo.GetWidth() + 1 ) + ( rLineInfo.GetWidth() + 1 ) ) * 0.5);
     SvtGraphicStroke::JoinType aJoinType(SvtGraphicStroke::joinMiter);
+    SvtGraphicStroke::CapType aCapType(SvtGraphicStroke::capButt);
 
     switch(rLineInfo.GetLineJoin())
     {
@@ -2407,7 +2390,26 @@ void PSWriter::ImplWriteLineInfo( const LineInfo& rLineInfo )
             break;
     }
 
-	ImplWriteLineInfo( fLWidth, fMiterLimit, SvtGraphicStroke::capButt, aJoinType, l_aDashArray );
+    switch(rLineInfo.GetLineCap())
+    {
+        default: /* com::sun::star::drawing::LineCap_BUTT */
+        {
+            aCapType = SvtGraphicStroke::capButt;
+            break;
+        }
+        case com::sun::star::drawing::LineCap_ROUND:
+        {
+            aCapType = SvtGraphicStroke::capRound;
+            break;
+        }
+        case com::sun::star::drawing::LineCap_SQUARE:
+        {
+            aCapType = SvtGraphicStroke::capSquare;
+            break;
+        }
+    }
+
+	ImplWriteLineInfo( fLWidth, fMiterLimit, aCapType, aJoinType, l_aDashArray );
 }
 
 //---------------------------------------------------------------------------------

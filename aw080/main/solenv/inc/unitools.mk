@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 # Common tools - move this to the end / consolidate
 TRANSEX*=$(AUGMENT_LIBRARY_PATH) $(SOLARBINDIR)/transex3
@@ -58,7 +54,11 @@ EES:=
 EMQ:=\\
 USQ:="
 
+.IF "$(GUI)" == "OS2"
+NULLDEV:=NUL
+.ELSE
 NULLDEV:=/dev/null
+.ENDIF
 
 
 # iz29609 helpmacro to check if file exists
@@ -107,9 +107,9 @@ PERL*=perl
 TYPE=cat
 CDD=cd
 COPY=cp -f
-.IF "$(OS)"=="MACOSX"
+.IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD"
 COPYRECURSE=-R
-.ELSE #"$(OS)"=="MACOSX"
+.ELSE # Not BSD based
 COPYRECURSE=-r
 .ENDIF
 .IF "$(OS)"=="SOLARIS"
@@ -128,6 +128,7 @@ AWK*=awk
 # for fbsd for now, but for all other platforms it is set.
 GNUCOPY*=cp
 GNUPATCH*=patch
+GPERF*=gperf
 DEREFERENCE=-L
 .ENDIF			# "$(OS)"=="SOLARIS"
 .IF "$(OS)"=="LINUX" || "$(OS)"=="MACOSX"
@@ -143,31 +144,29 @@ LS=ls
 ECHON=echo -n
 ECHONL=echo
 .ELIF "$(GUI)"=="OS2"
+GPERF*=gperf
 SED*=sed
 SORT*=sort
 PERL*=perl
 TYPE=cat
 CDD=@cd
-COPY*=$(SHELL) /c copy /b
-COPYRECURSE=/s
-COPYUPDATE=/u
+COPY=cp -f
+COPYRECURSE=-r
+COPYUPDATE=-u
 DELAY=sleep
-ECHON*=echos
-ECHONL=+echo.
+ECHON*=echo -n
+ECHONL=echo
 AWK*=awk
 GNUCOPY*=cp
 GNUPATCH*=gnupatch
 GNUMAKE*=make
-TOUCH=touch /c
+TOUCH=touch
 #YD rename doesn't work across different drives!
 RENAME=mv
-MKDIR=+md
-MKDIRHIER=+md /s
 GREP=grep
 FIND=find
 LS=ls
 DUMPBIN=echo
-4nt_force_shell:=+
 
 .ENDIF			# "$(GUI)"=="UNX"
 

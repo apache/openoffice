@@ -1,31 +1,23 @@
 #*************************************************************************
 #
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2011 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
 #
 #*************************************************************************
-
-include $(GBUILDDIR)/gmsl
 
 GUI := OS2
 COM := GCC
@@ -110,12 +102,9 @@ gb_CXXFLAGS := \
 	-I$(JAVA_HOME)/include \
 	-I$(JAVA_HOME)/include/os2
 
-#	-fvisibility-inlines-hidden \
-#	-fvisibility=hidden \
-#
-
 gb_STDLIBS = \
-	stdc444 \
+	z \
+	stdc++ \
 
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
 gb_CFLAGS_WERROR := -Werror
@@ -309,26 +298,16 @@ gb_LinkTarget_INCLUDE_STL := $(filter %/stl, $(subst -I. , ,$(SOLARINC)))
 
 gb_LinkTarget_get_pdbfile = $(call gb_LinkTarget_get_target,)pdb/$(1).pdb
 
-DLLBASE8 = $(call substr,$(notdir $(DLLTARGET:.dll=)),1,8)
-DLLTARGET8 = $(dir $(DLLTARGET))$(DLLBASE8)$(gb_Library_DLLEXT)
-DLLDEF8 = $(dir $(DLLTARGET))$(DLLBASE8).def
-
-	#EMXEXPRSP=$(call var2filecr,$(shell $(gb_MKTEMP)),1, \
-		$(call gb_Helper_convert_native,$(foreach object,$(CXXOBJECTS),$(call gb_CxxObject_get_target,$(object))) \
-		$(foreach object,$(GENCXXOBJECTS),$(call gb_GenCxxObject_get_target,$(object))) \
-		$(foreach object,$(COBJECTS),$(call gb_CObject_get_target,$(object)))) \
-		) && \
-	emxexp @$${EMXEXPRSP} >> $(DLLDEF8) && \
-	echo EXPORTS		>> $(DLLDEF8) && \
-
+DLLBASE = $(notdir $(DLLTARGET:.dll=))
+DLLDEF = $(dir $(DLLTARGET))$(DLLBASE).def
 
 define gb_LinkTarget__command_dynamiclinkexecutable
 $(call gb_Output_announce,$(2),$(true),LNK,4)
 $(call gb_Helper_abbreviate_dirs_native,\
 	mkdir -p $(dir $(1)) && \
 	rm -f $(1) && \
-	$(if $(DLLTARGET), echo LIBRARY	  $(DLLBASE8) INITINSTANCE TERMINSTANCE	 > $(DLLDEF8) &&) \
-	$(if $(DLLTARGET), echo DATA MULTIPLE	>> $(DLLDEF8) &&) \
+	$(if $(DLLTARGET), echo LIBRARY	$(DLLBASE) INITINSTANCE TERMINSTANCE > $(DLLDEF) &&) \
+	$(if $(DLLTARGET), echo DATA MULTIPLE >> $(DLLDEF) &&) \
 	RESPONSEFILE=$(call var2filecr,$(shell $(gb_MKTEMP)),1, \
 	    $(call gb_Helper_convert_native,$(foreach object,$(CXXOBJECTS),$(call gb_CxxObject_get_target,$(object))) \
 		$(foreach object,$(GENCXXOBJECTS),$(call gb_GenCxxObject_get_target,$(object))) \
@@ -340,14 +319,14 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(if $(filter Executable,$(TARGETTYPE)),$(gb_Executable_TARGETTYPEFLAGS)) \
 		$(LDFLAGS) \
 		@$${RESPONSEFILE} \
-		$(if $(DLLTARGET), $(DLLDEF8)) \
+		$(if $(DLLTARGET), $(DLLDEF)) \
 		$(NATIVERES) \
 		$(patsubst %.lib,-l%,$(foreach lib,$(LINKED_LIBS),$(call gb_Library_get_filename,$(lib)))) \
+		$(patsubst %,-l%,$(EXTERNAL_LIBS)) \
 		$(foreach lib,$(LINKED_STATIC_LIBS),$(call gb_StaticLibrary_get_target,$(lib))) \
-		$(if $(DLLTARGET),-o $(DLLTARGET8), -o $(1) ); \
+		$(if $(DLLTARGET),-o $(DLLTARGET), -o $(1) ); \
 		RC=$$?; rm $${RESPONSEFILE} \
-	$(if $(DLLTARGET),; emximp -p2048 -o $(1) $(DLLTARGET8) ) \
-	$(if $(DLLTARGET),; cp -p $(DLLTARGET8) $(DLLTARGET)) \
+	$(if $(DLLTARGET),; emximp -p2048 -o $(1) $(DLLTARGET) ) \
 	$(if $(DLLTARGET),; if [ ! -f $(DLLTARGET) ]; then rm -f $(1) && false; fi) ; exit $$RC)
 endef
 
@@ -378,18 +357,19 @@ gb_Library_DEFS := -D_DLL
 gb_Library_TARGETTYPEFLAGS := -Zdll
 gb_Library_get_rpath :=
 
-gb_Library_SYSPRE := i
+gb_Library_SYSPRE := 
 gb_Library_PLAINEXT := .lib
 
 gb_Library_PLAINLIBS_NONE += \
-	$(gb_STDLIBS) \
+	stdc++ \
 	ft2lib \
 	dl \
 	freetype \
 	jpeg \
 	m \
 	z \
-	pthread
+	pthread \
+	cppunit
 
 gb_Library_LAYER := \
 	$(foreach lib,$(gb_Library_OOOLIBS),$(lib):OOO) \
@@ -404,13 +384,14 @@ gb_Library_LAYER := \
 	$(foreach lib,$(gb_Library_UNOVERLIBS),$(lib):OOO) \
 
 gb_Library_FILENAMES :=\
-	$(foreach lib,$(gb_Library_TARGETS),$(lib):$(gb_Library_SYSPRE)$(lib)$(gb_Library_PLAINEXT)) \
+	$(foreach lib,$(gb_Library_TARGETS),$(lib):$(gb_Library_SYSPRE)$(lib)$(gb_Library_PLAINEXT))
+
 
 gb_Library_DLLEXT := .dll
 gb_Library_MAJORVER :=
 gb_Library_RTEXT := $(gb_Library_DLLEXT)
 ifeq ($(gb_PRODUCT),$(true))
-gb_Library_STLEXT := stlp45$(gb_Library_DLLEXT)
+gb_Library_STLEXT := stdc++$(gb_Library_DLLEXT)
 else
 gb_Library_STLEXT := stlp45_stldebug$(gb_Library_DLLEXT)
 endif
@@ -477,10 +458,8 @@ $(call gb_Library_get_clean_target,$(1)) : $(call gb_WinResTarget_get_clean_targ
 endef
 
 define gb_Library_add_nativeres
-$(info info $(1)/$(2))
 $(call gb_LinkTarget_get_target,$(call gb_Library__get_linktargetname,$(1))) : $(call gb_WinResTarget_get_target,$(1)/$(2))
 $(call gb_LinkTarget_get_target,$(call gb_Library__get_linktargetname,$(1))) : NATIVERES += $(call gb_WinResTarget_get_target,$(1)/$(2))
-$(info NATIVERES $(NATIVERES))
 
 endef
 

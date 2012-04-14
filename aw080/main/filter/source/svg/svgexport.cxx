@@ -691,7 +691,7 @@ sal_Bool SVGFilter::implExportPages( const Reference< XDrawPages >& rxPages,
                     aId = ( B2UCONST( "Slide_" ) ) += ::rtl::OUString::valueOf( ++mnSlideId );
 
                 if( aSlideName.getLength() )
-                    ( ( aId += B2UCONST( "(" ) ) += aSlideName ) += B2UCONST( ")" );
+                    ( aId += B2UCONST( "_" ) ) += aSlideName;
                 
                 mpSVGExport->AddAttribute( XML_NAMESPACE_NONE, "id", aId );
 
@@ -827,7 +827,7 @@ sal_Bool SVGFilter::implExportShape( const Reference< XShape >& rxShape )
                     aId += ::rtl::OUString::valueOf( ++mnDrawingGroupId );
 
                     if( aObjName.getLength() )
-                        ( ( aId += B2UCONST( "(" ) ) += aObjName ) += B2UCONST( ")" );
+                        ( aId += B2UCONST( "_" ) ) += aObjName;
                 
                     mpSVGExport->AddAttribute( XML_NAMESPACE_NONE, "id", aId );
 				
@@ -857,7 +857,7 @@ sal_Bool SVGFilter::implExportShape( const Reference< XShape >& rxShape )
                     aId += ::rtl::OUString::valueOf( ++mnDrawingId );
 
                     if( aObjName.getLength() )
-                        ( ( aId += B2UCONST( "(" ) ) += aObjName ) += B2UCONST( ")" );
+                        ( aId += B2UCONST( "_" ) ) += aObjName;
                 
                     {
                         if( ( aShapeType.lastIndexOf( B2UCONST( "drawing.OLE2Shape" ) ) != -1 ) ||

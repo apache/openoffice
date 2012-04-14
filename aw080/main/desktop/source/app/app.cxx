@@ -155,9 +155,14 @@
 #include <svtools/apearcfg.hxx>
 #include <unotools/misccfg.hxx>
 #include <svtools/filter.hxx>
-#include <unotools/regoptions.hxx>
 
 #include "langselect.hxx"
+
+#include "com/sun/star/deployment/ExtensionManager.hpp"
+#include "com/sun/star/deployment/XExtensionManager.hpp"
+#include "com/sun/star/task/XInteractionApprove.hpp"
+#include "cppuhelper/compbase3.hxx"
+#include <hash_set>
 
 #if defined MACOSX
 #include <errno.h>
@@ -165,13 +170,11 @@
 #endif
 
 #define DEFINE_CONST_UNICODE(CONSTASCII)        UniString(RTL_CONSTASCII_USTRINGPARAM(CONSTASCII))
-#define U2S(STRING)                                ::rtl::OUStringToOString(STRING, RTL_TEXTENCODING_UTF8)
+#define OUSTR(x)                                ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(x))
+#define U2S(STRING)                             ::rtl::OUStringToOString(STRING, RTL_TEXTENCODING_UTF8)
 
 using namespace vos;
 using namespace rtl;
-
-//Gives an ICE with MSVC6
-//namespace css = ::com::sun::star;
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::util;
@@ -190,6 +193,47 @@ namespace css = ::com::sun::star;
 
 ResMgr*                 desktop::Desktop::pResMgr = 0;
 
+namespace {
+
+/** Write a marker file that is basically empty (just a single
+    character to prevent it from being deleted.)  Its time of last
+    modification is its only important feature.
+
+    This is a simplified version of the function in
+    dp_extensionmanager.cxx.  It uses direct file access instead of
+    the UCB.  May prove to be too simple, but then again, it may not.
+*/
+bool writeLastModified (::rtl::OUString& rsURL)
+{
+    try
+    {
+        // Remove the file if it already exists.
+        ::osl::File::remove(rsURL);
+
+        ::osl::File aFile (rsURL);
+        if (aFile.open(OpenFlag_Create | OpenFlag_Write) != ::osl::File::E_None)
+            return false;
+
+        const char aBuffer[] = "1";
+        sal_uInt64 nBytesWritten (0);
+        if (aFile.write(aBuffer, strlen(aBuffer), nBytesWritten) != ::osl::File::E_None)
+            return false;
+
+        if (aFile.close() != ::osl::File::E_None)
+            return false;
+
+        return true;
+    }
+    catch(...)
+    {
+    }
+    return false;
+}
+
+} // end of anonymous namespace
+
+
+
 namespace desktop
 {
 
@@ -197,9 +241,6 @@ static SalMainPipeExchangeSignalHandler* pSignalHandler = 0;
 static sal_Bool _bCrashReporterEnabled = sal_True;
 
 static const ::rtl::OUString CFG_PACKAGE_COMMON_HELP   ( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.Office.Common/Help"));
-static const ::rtl::OUString CFG_PATH_REG              ( RTL_CONSTASCII_USTRINGPARAM( "Registration"                     ));
-static const ::rtl::OUString CFG_ENTRY_REGURL          ( RTL_CONSTASCII_USTRINGPARAM( "URL"                              ));
-static const ::rtl::OUString CFG_ENTRY_TEMPLATEREGURL  ( RTL_CONSTASCII_USTRINGPARAM( "TemplateURL"                      ));
 
 static ::rtl::OUString getBrandSharePreregBundledPathURL();
 // ----------------------------------------------------------------------------
@@ -617,7 +658,7 @@ static bool isExcludedFileOrFolder( const rtl::OUString & name)
     return bExclude;
 }
 
-static osl::FileBase::RC copy_bundled_recursive( 
+static osl::FileBase::RC copy_prereg_bundled_recursive( 
     const rtl::OUString& srcUnqPath,
     const rtl::OUString& dstUnqPath,
     sal_Int32            TypeToCopy ) 
@@ -690,7 +731,7 @@ throw()
                 newDstUnqPath += tit;
 
                 if (( newSrcUnqPath != dstUnqPath ) && !bFilter )
-                    err = copy_bundled_recursive( newSrcUnqPath,newDstUnqPath, newTypeToCopy );
+                    err = copy_prereg_bundled_recursive( newSrcUnqPath,newDstUnqPath, newTypeToCopy );
             }
 
             if( err == osl::FileBase::E_None && next != osl::FileBase::E_NOENT )
@@ -701,6 +742,186 @@ throw()
 
     return err;
 }
+
+
+//====================================================================================
+
+// MinimalCommandEnv: a tribute owed to ExtensionManager being an UNO stronghold
+class MinimalCommandEnv
+    : public ::cppu::WeakImplHelper3< css::ucb::XCommandEnvironment,
+                                      css::task::XInteractionHandler,
+                                      css::ucb::XProgressHandler >
+{
+public:
+    // XCommandEnvironment
+    virtual css::uno::Reference< css::task::XInteractionHandler> SAL_CALL getInteractionHandler()
+        throw (css::uno::RuntimeException)
+	{ return this;}
+    virtual css::uno::Reference< css::ucb::XProgressHandler> SAL_CALL getProgressHandler()
+        throw (css::uno::RuntimeException)
+	{ return this;}
+
+    // XInteractionHandler
+    virtual void SAL_CALL handle( const css::uno::Reference< css::task::XInteractionRequest>&)
+        throw (css::uno::RuntimeException);
+
+    // XProgressHandler
+    virtual void SAL_CALL push( const css::uno::Any& /*Status*/)
+        throw (css::uno::RuntimeException)
+	{}
+    virtual void SAL_CALL update( const css::uno::Any& /*Status*/)
+        throw (css::uno::RuntimeException)
+	{}
+    virtual void SAL_CALL pop()
+        throw (css::uno::RuntimeException)
+	{}
+};
+
+// MinimalCommandEnv's XInteractionHandler simply approves
+void MinimalCommandEnv::handle(
+    css::uno::Reference< css::task::XInteractionRequest> const& xRequest)
+    throw ( css::uno::RuntimeException )
+{
+	const css::uno::Sequence< css::uno::Reference< css::task::XInteractionContinuation > > conts( xRequest->getContinuations());
+	const css::uno::Reference< css::task::XInteractionContinuation>* pConts = conts.getConstArray();
+	const sal_Int32 len = conts.getLength();
+	for( sal_Int32 pos = 0; pos < len; ++pos )
+	{
+		css::uno::Reference< css::task::XInteractionApprove> xInteractionApprove( pConts[ pos ], css::uno::UNO_QUERY);
+		if( xInteractionApprove.is()) {
+			xInteractionApprove->select();
+			// don't query again for ongoing continuations:
+			break;
+		}
+	}
+}
+
+
+/** Check if installBundledExtensionBlobs() has to be run.
+    It uses the time stamps of a marker file (rsMarkerURL) on the one
+    hand and of the files in the given directory on the other.
+    Returns </TRUE> when either the marker does not yet exist or any
+    file in the given directory is newer than the marker.
+*/
+static bool needsInstallBundledExtensionBlobs (
+    const ::rtl::OUString& rsMarkerURL,
+    ::osl::Directory& rDirectory)
+{
+    ::osl::DirectoryItem aMarkerItem;
+    if (::osl::DirectoryItem::get(rsMarkerURL, aMarkerItem) == ::osl::File::E_NOENT)
+    {
+        // Marker does not exist.  Extensions where never installed.
+        return true;
+    }
+
+    ::osl::FileStatus aMarkerStat (FileStatusMask_ModifyTime);
+    if (aMarkerItem.getFileStatus(aMarkerStat) != ::osl::File::E_None)
+    {
+        // Can not get marker state.  Reason?
+        return true;
+    }
+
+    const TimeValue aMarkerModifyTime (aMarkerStat.getModifyTime());
+
+    if (rDirectory.open() != osl::File::E_None)
+    {
+        // No extension directory.  Nothing to be done.
+        return false;
+    }
+
+    ::osl::DirectoryItem aDirectoryItem;
+    while (rDirectory.getNextItem(aDirectoryItem) == osl::File::E_None)
+    {
+        ::osl::FileStatus aFileStat (FileStatusMask_ModifyTime);
+        if (aDirectoryItem.getFileStatus(aFileStat) != ::osl::File::E_None)
+            continue;
+        if (aFileStat.getFileType() != ::osl::FileStatus::Regular)
+            continue;
+        const sal_uInt32 nT1 (aFileStat.getModifyTime().Seconds);
+        const sal_uInt32 nT2 (aMarkerModifyTime.Seconds);
+        if (aFileStat.getModifyTime().Seconds > aMarkerModifyTime.Seconds)
+        {
+            rDirectory.close();
+            return true;
+        }
+	}
+    rDirectory.close();
+
+    // No file in the directory is newer than the marker.
+    return false;
+}
+
+
+// install bundled but non-pre-registered extension blobs
+static void installBundledExtensionBlobs()
+{
+	rtl::OUString aDirUrl( OUSTR("$BRAND_BASE_DIR/share/extensions/install"));
+	::rtl::Bootstrap::expandMacros( aDirUrl);
+	::osl::Directory aDir( aDirUrl);
+
+    // Find out if we can exit early: only when there is an extension file newer
+    // than the marker we have to install any extension.
+    ::rtl::OUString sMarkerURL (RTL_CONSTASCII_USTRINGPARAM("$BUNDLED_EXTENSIONS_USER/lastsynchronized.bundled"));
+    ::rtl::Bootstrap::expandMacros(sMarkerURL);
+    if ( ! needsInstallBundledExtensionBlobs(sMarkerURL, aDir))
+        return;
+    writeLastModified(sMarkerURL);
+
+    // get the ExtensionManager
+	::css::uno::Reference< ::css::uno::XComponentContext> xContext = comphelper::getProcessComponentContext();
+	::css::uno::Reference< ::css::deployment::XExtensionManager> xEM = ::css::deployment::ExtensionManager::get( xContext);
+	// provide the minimal set of requirements to call ExtensionManager's methods
+	MinimalCommandEnv* pMiniCmdEnv = new MinimalCommandEnv;
+	::css::uno::Reference< css::ucb::XCommandEnvironment> xCmdEnv( static_cast< cppu::OWeakObject*>(pMiniCmdEnv), css::uno::UNO_QUERY);
+	const ::css::beans::NamedValue aNamedProps( OUSTR("SUPPRESS_LICENSE"), ::css::uno::makeAny( OUSTR("1")));
+	const ::css::uno::Sequence< ::css::beans::NamedValue> xProperties( &aNamedProps, 1);
+	::css::uno::Reference< ::css::task::XAbortChannel> xAbortChannel;
+
+	// get the list of deployed extensions
+	typedef std::hash_set< rtl::OUString, ::rtl::OUStringHash> StringSet;
+	StringSet aExtNameSet;
+	css::uno::Sequence< css::uno::Sequence<css::uno::Reference<css::deployment::XPackage> > > xListOfLists = xEM->getAllExtensions( xAbortChannel, xCmdEnv);
+	const sal_Int32 nLen1 = xListOfLists.getLength();
+	for( int i1 = 0; i1 < nLen1; ++i1) {
+		css::uno::Sequence<css::uno::Reference<css::deployment::XPackage> > xListOfPacks = xListOfLists[i1];
+		const sal_Int32 nLen2 = xListOfPacks.getLength();
+		for( int i2 = 0; i2 < nLen2; ++i2) {
+			css::uno::Reference<css::deployment::XPackage> xPackage = xListOfPacks[i2];
+			if( !xPackage.is())
+				continue;
+			aExtNameSet.insert( xPackage->getName());
+		}
+	}
+
+	// iterate over the bundled extension blobs
+	::osl::File::RC rc = aDir.open();
+	while( rc == osl::File::E_None) {
+		::osl::DirectoryItem aDI;
+		if( aDir.getNextItem( aDI) != osl::File::E_None)
+			break;
+		::osl::FileStatus aFileStat( FileStatusMask_Type | FileStatusMask_FileURL);
+		if( aDI.getFileStatus( aFileStat) != ::osl::File::E_None)
+			continue;
+		if( aFileStat.getFileType() != ::osl::FileStatus::Regular)
+			continue;
+		try {
+			// check if the extension is already installed
+			const rtl::OUString& rExtFileUrl = aFileStat.getFileURL();
+			const sal_Int32 nBaseIndex = rExtFileUrl.lastIndexOf('/');
+			const ::rtl::OUString aBaseName = (nBaseIndex < 0) ? rExtFileUrl : rExtFileUrl.copy( nBaseIndex+1);
+			const bool bFound = (aExtNameSet.find( aBaseName) != aExtNameSet.end());
+			if( bFound)
+				continue;
+			// request to install the extension blob
+			xEM->addExtension( rExtFileUrl, xProperties, OUSTR("user"), xAbortChannel, xCmdEnv);
+		// ExtensionManager problems are not worth to die for here
+		} catch( css::uno::RuntimeException&) {
+		} catch( css::deployment::DeploymentException&) {
+		}
+	}
+}
+
+//=============================================================================
 
 Desktop::Desktop()
 : m_bServicesRegistered( false )
@@ -719,7 +940,7 @@ void Desktop::Init()
     RTL_LOGFILE_CONTEXT( aLog, "desktop (cd100003) ::Desktop::Init" );
     SetBootstrapStatus(BS_OK);
 
-    // Check for lastsynchronized file for bundled extensions in the user directory
+    // Check for lastsynchronized file for pre-registered bundled extensions in the user directory
     // and test if synchronzation is necessary!
     {
         ::rtl::OUString aUserLastSyncFilePathURL = getLastSyncFileURLFromUserInstallation();
@@ -733,7 +954,7 @@ void Desktop::Init()
             // copy bundled folder to the user directory
             osl::FileBase::RC rc = osl::Directory::createPath(aUserPath);
             (void) rc;
-            copy_bundled_recursive( aPreregBundledPath, aUserPath, +1 );
+            copy_prereg_bundled_recursive( aPreregBundledPath, aUserPath, +1 );
         }
     }
     
@@ -1650,7 +1871,6 @@ void Desktop::Main()
         // terminate if requested...
         if( pCmdLineArgs->IsTerminateAfterInit() ) return;
 
-
         //  Read the common configuration items for optimization purpose
         if ( !InitializeConfiguration() ) return;
 
@@ -1747,30 +1967,20 @@ void Desktop::Main()
 
             if (IsFirstStartWizardNeeded())
             {
-                ::utl::RegOptions().removeReminder(); // remove patch registration reminder
                 Reference< XJob > xFirstStartJob( xSMgr->createInstance(
                     DEFINE_CONST_UNICODE( "com.sun.star.comp.desktop.FirstStart" ) ), UNO_QUERY );
                 if (xFirstStartJob.is())
                 {
-#if 0 // license acceptance is not needed for ASL
-                    sal_Bool bDone = sal_False;
-                    Sequence< NamedValue > lArgs(2);
-                    lArgs[0].Name    = ::rtl::OUString::createFromAscii("LicenseNeedsAcceptance");
-                    lArgs[0].Value <<= LicenseNeedsAcceptance();
-                    lArgs[1].Name    = ::rtl::OUString::createFromAscii("LicensePath");
-                    lArgs[1].Value <<= GetLicensePath();
-
-                    xFirstStartJob->execute(lArgs) >>= bDone;
-                    if ( !bDone )
-                    {
-                        return;
-                    }
-#endif // license acceptance is not needed for ASL
+                   // mark first start as done
+                   FinishFirstStart();
                 }
             }
 
             RTL_LOGFILE_CONTEXT_TRACE( aLog, "} FirstStartWizard" );
         }
+
+        // process non-pre-registered extensions
+        installBundledExtensionBlobs();
 
 		// keep a language options instance...
 		pExecGlobals->pLanguageOptions.reset( new SvtLanguageOptions(sal_True));

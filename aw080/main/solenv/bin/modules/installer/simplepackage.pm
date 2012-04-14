@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 package installer::simplepackage;
 
@@ -375,7 +371,15 @@ sub create_package
 		$from = cwd();
 		$return_to_start = 1;
 		chdir($tempdir);
-		$systemcall = "$installer::globals::zippath -qr $archive .";
+		if ( $^O =~ /os2/i )
+		{
+			my $zip = Cwd::realpath($archive);
+			$systemcall = "$installer::globals::zippath -qr $zip .";
+		}
+	 	else
+		{
+			$systemcall = "$installer::globals::zippath -qr $archive .";
+		}
 		
 		# Using Archive::Zip fails because of very long path names below "share/uno_packages/cache"
 		# my $packzip = Archive::Zip->new();
@@ -659,7 +663,7 @@ sub create_simple_package
 			
 			if ( ! -d $destdir )
 			{
-				if ( $^O =~ /cygwin/i ) # Cygwin performance check
+				if ( $^O =~ /cygwin/i || $^O =~ /os2/i ) # Cygwin performance check
 				{
 					$infoline = "Try to create directory $destdir\n";
 					push(@installer::globals::logfileinfo, $infoline);
@@ -675,7 +679,7 @@ sub create_simple_package
 	}
 
 	# stripping files ?!
-	if (( $installer::globals::strip ) && ( ! $installer::globals::iswindowsbuild )) { installer::strip::strip_libraries($filesref, $languagestringref); }
+	if (( $installer::globals::strip ) && ( ! $installer::globals::iswindowsbuild ) && ( ! $installer::globals::isos2 )) { installer::strip::strip_libraries($filesref, $languagestringref); }
 	
 	# copy Files
 	installer::logger::print_message( "... copying files ...\n" );
@@ -698,7 +702,7 @@ sub create_simple_package
 		$source =~ s/\$\$/\$/;
 		$destination =~ s/\$\$/\$/;
 
-		if ( $^O =~ /cygwin/i )	# Cygwin performance, do not use copy_one_file. "chmod -R" at the end
+		if ( $^O =~ /cygwin/i || $^O =~ /os2/i )	# Cygwin performance, do not use copy_one_file. "chmod -R" at the end
 		{
 			my $copyreturn = copy($source, $destination);
 		

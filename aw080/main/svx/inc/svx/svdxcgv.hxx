@@ -50,11 +50,11 @@ public:
 	// Z.B. fuer's Clipboard, Drag&Drop, ...
 	// Alle markierten Objekte in ein Metafile stecken. Z.Zt. noch etwas
 	// buggee (Offset..., Fremdgrafikobjekte (SdrGrafObj)
-	virtual GDIMetaFile GetMarkedObjMetaFile(bool bNoVDevIfOneMtfMarked=false) const;
+	GDIMetaFile GetMarkedObjMetaFile(bool bNoVDevIfOneMtfMarked = false) const;
 
 	// Alle markierten Objekte auf eine Bitmap malen. Diese hat die Farbtiefe
 	// und Aufloesung des Bildschirms.
-	virtual Bitmap      GetMarkedObjBitmap(bool bNoVDevIfOneBmpMarked=false) const;
+	BitmapEx GetMarkedObjBitmapEx(bool bNoVDevIfOneBmpMarked = false) const;
 
 	// Alle markierten Objekte in ein neues Model kopieren. Dieses neue Model
 	// hat dann genau eine Page. Das Flag PageNotValid an diesem Model ist
@@ -68,8 +68,6 @@ public:
 	// der Default-Layer zugewiesen (Layer 0, (dokumentglobaler Standardlayer).
 	virtual SdrModel*   GetMarkedObjModel() const;
 
-	GDIMetaFile     GetAllMarkedMetaFile(bool bNoVDevIfOneMtfMarked=false) const { return GetMarkedObjMetaFile(bNoVDevIfOneMtfMarked); }
-	Bitmap          GetAllMarkedBitmap(bool bNoVDevIfOneBmpMarked=false) const { return GetMarkedObjBitmap(bNoVDevIfOneBmpMarked); }
 	Graphic         GetAllMarkedGraphic() const;
 	SdrModel*       GetAllMarkedModel() const { return GetMarkedObjModel(); }
 

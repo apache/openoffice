@@ -432,8 +432,10 @@ IMPL_LINK( View, DropInsertFileHdl, Timer*, EMPTYARG )
 				const bool bLink = ( ( nTempAction & DND_ACTION_LINK ) != 0 );
 				SdrGrafObj* pGrafObj = InsertGraphic( aGraphic, nTempAction, maDropPos, NULL, NULL );
 
-				if( pGrafObj && bLink )
-					pGrafObj->SetGraphicLink( aCurrentDropFile, String() );
+				if(pGrafObj && bLink)
+                {
+    				pGrafObj->SetGraphicLink( aCurrentDropFile, String() );
+                }
 
 				// return action from first inserted graphic
 				if( aIter == maDropFileVector.begin() )

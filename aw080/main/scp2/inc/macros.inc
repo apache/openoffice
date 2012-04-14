@@ -1,3 +1,24 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
 #ifndef MACROS_INC
 #define MACROS_INC
 /* =====================================================
@@ -52,6 +73,9 @@
 #define ALL_LANG_KEY(vident) \
         ALL_LANG(Key,vident)
 
+#ifdef OS2
+    #define UNXSUFFIX .dll
+#endif
 
 #ifdef UNX
     #ifdef MACOSX
@@ -67,6 +91,11 @@
     #define EXENAME(name)                     STRING(name)
     #define PROFILENAME(name)                 STRING(CONCAT2(name,rc))
     #define SPECIAL_NAME(name)                STRING(CONCAT3(lib,name,UNXSUFFIX))
+    #ifdef MACOSX
+    	#define SPECIAL_NAME_VER(name,version)    STRING(CONCAT5(lib,name,.,version,UNXSUFFIX))
+    #else
+	#define SPECIAL_NAME_VER(name,version)    STRING(CONCAT5(lib,name,UNXSUFFIX,.,version))
+    #endif
     #define SPECIAL_COMPONENT_LIB_NAME(name)  STRING(CONCAT2(name,UNXSUFFIX))
 #else
     #define LIBNAME(name)                     STRING(CONCAT3(name,DLLPOSTFIX,.dll))
@@ -85,7 +114,7 @@
 #define EXTRAFILENAME(name,lang)              STRING(CONCAT3(name,lang,.zip))
 #define CONFIGLANGFILENAME(name,lang,ext)     STRING(CONCAT4(name,lang,.,ext))
 
-#if defined WNT
+#if defined(WNT) || defined(OS2)
 #define SCP2_OOO_BIN_DIR gid_Brand_Dir_Program
 #else
 #define SCP2_OOO_BIN_DIR gid_Dir_Program
@@ -502,7 +531,7 @@ End
 
 // ---------------------------------------
 
-#if defined WNT
+#if defined(WNT) || defined(OS2)
 #define SCP2_URE_DL_DIR gid_Dir_Ure_Bin
 #define SCP2_URE_DL_NORMAL(n) n ".dll"
 #define SCP2_URE_DL_BARE(n) n ".dll"

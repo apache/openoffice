@@ -27,7 +27,7 @@
 #include "DAVAuthListener.hxx"
 
 
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
 //=========================================================================
@@ -57,7 +57,8 @@ namespace webdav_ucp
                                   const ::rtl::OUString & inHostName,
                                   ::rtl::OUString & inoutUserName,
                                   ::rtl::OUString & outPassWord,
-                                  sal_Bool bCanUseSystemCredentials );
+                                  sal_Bool bCanUseSystemCredentials,
+                                  sal_Bool bUsePreviousCredentials = sal_True );
     private:
 
         const com::sun::star::uno::Reference<

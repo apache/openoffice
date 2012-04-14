@@ -37,6 +37,7 @@
 #include <editeng/crsditem.hxx>
 #include <editeng/shdditem.hxx>
 #include <svx/xlnclit.hxx>
+#include <svx/xlncapit.hxx>
 #include <svx/xlnwtit.hxx>
 #include <svx/xflclit.hxx>
 #include <svx/xgrad.hxx>
@@ -83,6 +84,7 @@ ImpSdrGDIMetaFileImport::ImpSdrGDIMetaFileImport(SdrModel& rModel):
 	nLayer(0),
 	nLineWidth(0),
 	maLineJoin(basegfx::B2DLINEJOIN_NONE),
+	maLineCap(com::sun::star::drawing::LineCap_BUTT),
 	maDash(XDASH_RECT, 0, 0, 0, 0, 0),
 	bFntDirty(sal_True),
 	bLastObjWasPolyWithoutLine(sal_False),bNoLine(sal_False),bNoFill(sal_False),bLastObjWasLine(sal_False)
@@ -196,7 +198,6 @@ sal_uInt32 ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 			case META_POP_ACTION            : DoAction((MetaPopAction            &)*pAct); break;
 			case META_HATCH_ACTION			: DoAction((MetaHatchAction          &)*pAct); break;
 			case META_COMMENT_ACTION		: DoAction((MetaCommentAction        &)*pAct, pMtf); break;
-            case META_RENDERGRAPHIC_ACTION  : DoAction((MetaRenderGraphicAction  &)*pAct); break;
 		}
 
 		if(pProgrInfo != NULL)
@@ -311,6 +312,9 @@ void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, bool bForceTextAttr
 				break;
 		}
 
+        // Add LineCap support
+        pLineAttr->Put(XLineCapItem(maLineCap));
+
 		if(((maDash.GetDots() && maDash.GetDotLen()) || (maDash.GetDashes() && maDash.GetDashLen())) && maDash.GetDistance())
 		{
 			pLineAttr->Put(XLineDashItem(String(), maDash));
@@ -362,7 +366,7 @@ void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, bool bForceTextAttr
 
         pTextAttr->Put(SvxWordLineModeItem(aFnt.IsWordLineMode(), EE_CHAR_WLM));
         pTextAttr->Put(SvxContourItem(aFnt.IsOutline(), EE_CHAR_OUTLINE));
-        pTextAttr->Put(SvxColorItem(aFnt.GetColor(), EE_CHAR_COLOR));
+        pTextAttr->Put(SvxColorItem(aVD.GetTextColor(), EE_CHAR_COLOR));
 		//... svxfont textitem svditext
 		bFntDirty=sal_False;
 	}
@@ -490,6 +494,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaLineAction& rAct)
 			SdrPathObj* pPath = new SdrPathObj(mrModel, OBJ_LINE, basegfx::B2DPolyPolygon(aLine));
 			nLineWidth = nNewLineWidth;
 			maLineJoin = rLineInfo.GetLineJoin();
+            maLineCap = rLineInfo.GetLineCap();
 			maDash = XDash(XDASH_RECT,
 				rLineInfo.GetDotCount(), rLineInfo.GetDotLen(),
 				rLineInfo.GetDashCount(), rLineInfo.GetDashLen(),
@@ -755,6 +760,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaPolyLineAction& rAct )
 
 		nLineWidth = nNewLineWidth;
 		maLineJoin = rLineInfo.GetLineJoin();
+        maLineCap = rLineInfo.GetLineCap();
 		maDash = XDash(XDASH_RECT,
 			rLineInfo.GetDotCount(), rLineInfo.GetDotLen(),
 			rLineInfo.GetDashCount(), rLineInfo.GetDashLen(),
@@ -1112,29 +1118,4 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaCommentAction& rAct, GDIMetaFile* pM
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-void ImpSdrGDIMetaFileImport::DoAction(MetaRenderGraphicAction& rAct)
-{
-	GDIMetaFile                 aMtf;
-	const ::vcl::RenderGraphic& rRenderGraphic = rAct.GetRenderGraphic();
-    const Point                 aPos;
-    const Size                  aPrefSize( rRenderGraphic.GetPrefSize() );
-
-    aMtf.SetPrefMapMode( rRenderGraphic.GetPrefMapMode() );
-    aMtf.SetPrefSize( aPrefSize );
-    aMtf.AddAction( new MetaRenderGraphicAction( aPos, aPrefSize, rRenderGraphic ) );
-    aMtf.WindStart();
-
-	const basegfx::B2DRange aObjectRange(
-		rAct.GetPoint().X(), rAct.GetPoint().Y(), 
-		rAct.GetPoint().X() + rAct.GetSize().Width(), rAct.GetPoint().Y() + rAct.GetSize().Height());
-
-	SdrGrafObj* pGraf=new SdrGrafObj( 
-		mrModel, 
-		Graphic(aMtf), 
-		basegfx::tools::createScaleTranslateB2DHomMatrix(aObjectRange.getRange(), aObjectRange.getMinimum()));
-
-	InsertObj( pGraf );
-}
-
 // eof

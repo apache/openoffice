@@ -35,6 +35,11 @@
 #include <com/sun/star/drawing/DoubleSequence.hpp> 
 
 //////////////////////////////////////////////////////////////////////////////
+// predefines
+#define nMinSegments sal_uInt32(1)
+#define nMaxSegments sal_uInt32(512)
+
+//////////////////////////////////////////////////////////////////////////////
 
 namespace basegfx
 {
@@ -269,20 +274,16 @@ namespace basegfx
 				nHorSeg = fround(fabs(fHorStop - fHorStart) / (F_2PI / 24.0));
 			}
 
-			if(!nHorSeg)
-			{
-				nHorSeg = 1L;
-			}
+            // min/max limitations
+            nHorSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nHorSeg));
 
 			if(!nVerSeg)
 			{
 				nVerSeg = fround(fabs(fVerStop - fVerStart) / (F_2PI / 24.0));
 			}
 
-			if(!nVerSeg)
-			{
-				nVerSeg = 1L;
-			}
+            // min/max limitations
+            nVerSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nVerSeg));
 
 			// create constants
 			const double fVerDiffPerStep((fVerStop - fVerStart) / (double)nVerSeg);
@@ -372,20 +373,16 @@ namespace basegfx
 				nHorSeg = fround(fabs(fHorStop - fHorStart) / (F_2PI / 24.0));
 			}
 
-			if(!nHorSeg)
-			{
-				nHorSeg = 1L;
-			}
+            // min/max limitations
+            nHorSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nHorSeg));
 
 			if(!nVerSeg)
 			{
 				nVerSeg = fround(fabs(fVerStop - fVerStart) / (F_2PI / 24.0));
 			}
 
-			if(!nVerSeg)
-			{
-				nVerSeg = 1L;
-			}
+            // min/max limitations
+            nVerSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nVerSeg));
 
 			// vertical loop
 			for(sal_uInt32 a(0L); a < nVerSeg; a++)

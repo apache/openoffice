@@ -978,6 +978,7 @@ void ScUndoImportTab::Undo()
 			pDoc->CopyToDocument(0,0,nTabPos, MAXCOL,MAXROW,nTabPos, IDF_ALL,sal_False, pRedoDoc );
 			pDoc->GetName( nTabPos, aOldName );
 			pRedoDoc->RenameTab( nTabPos, aOldName, sal_False );
+            pRedoDoc->SetTabBgColor( nTabPos, pDoc->GetTabBgColor(nTabPos) );
 
 			if ( pDoc->IsScenario(nTabPos) )
 			{
@@ -1032,6 +1033,7 @@ void ScUndoImportTab::Redo()
 	{
 		SCTAB nTabPos=nTab+i;
 		pRedoDoc->CopyToDocument(0,0,nTabPos, MAXCOL,MAXROW,nTabPos, IDF_ALL,sal_False, pDoc );
+        pDoc->SetTabBgColor( nTabPos, pRedoDoc->GetTabBgColor(nTabPos) );
 
 		if ( pRedoDoc->IsScenario(nTabPos) )
 		{

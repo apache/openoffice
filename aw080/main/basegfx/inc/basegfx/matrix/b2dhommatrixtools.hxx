@@ -187,7 +187,7 @@ namespace basegfx
 			double                 mfShearX;
 
 		public:
-			B2DHomMatrixBufferedDecompose(const B2DHomMatrix& rB2DHomMatrix)
+			B2DHomMatrixBufferedDecompose(const B2DHomMatrix& rB2DHomMatrix = B2DHomMatrix())
 			:   maScale(),
 				maTranslate(),
 				mfRotate(0.0),

@@ -57,12 +57,11 @@
 #include <com/sun/star/rendering/CompositeOperation.hpp>
 #include <com/sun/star/rendering/StrokeAttributes.hpp>
 #include <com/sun/star/rendering/PathJoinType.hpp>
+#include <com/sun/star/rendering/PathCapType.hpp>
 #include <drawinglayer/primitive2d/fillbitmapprimitive2d.hxx>
 #include <com/sun/star/rendering/TexturingMode.hpp>
 #include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 #include <vclhelperbufferdevice.hxx>
-#include <drawinglayer/primitive2d/chartprimitive2d.hxx>
-#include <helperchartrenderer.hxx>
 #include <drawinglayer/primitive2d/wrongspellprimitive2d.hxx>
 #include <helperwrongspellrenderer.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
@@ -1757,7 +1756,23 @@ namespace drawinglayer
                             aStrokeAttribute.JoinType = rendering::PathJoinType::ROUND;
                             break;
                     }
-            
+
+                    switch(rLineAttribute.getLineCap())
+                    {
+                        case com::sun::star::drawing::LineCap_ROUND:
+                            aStrokeAttribute.StartCapType = rendering::PathCapType::ROUND;
+                            aStrokeAttribute.EndCapType = rendering::PathCapType::ROUND;
+                            break;
+                        case com::sun::star::drawing::LineCap_SQUARE:
+                            aStrokeAttribute.StartCapType = rendering::PathCapType::SQUARE;
+                            aStrokeAttribute.EndCapType = rendering::PathCapType::SQUARE;
+                            break;
+                        default: // com::sun::star::drawing::LineCap_BUTT
+                            aStrokeAttribute.StartCapType = rendering::PathCapType::BUTT;
+                            aStrokeAttribute.EndCapType = rendering::PathCapType::BUTT;
+                            break;
+                    }
+
 			        const basegfx::BColor aHairlineColor(maBColorModifierStack.getModifiedColor(rLineAttribute.getColor()));
                     maRenderState.DeviceColor = aHairlineColor.colorToDoubleSequence(mxCanvas->getDevice());
 					canvas::tools::setRenderStateTransform(maRenderState, getViewInformation2D().getObjectTransformation());
@@ -2096,26 +2111,6 @@ namespace drawinglayer
 
 					break;
 				}
-				case PRIMITIVE2D_ID_CHARTPRIMITIVE2D :
-				{
-					// chart primitive in canvas renderer; restore original DrawMode during call
-					// since the evtl. used ChartPrettyPainter will use the MapMode
-					const primitive2d::ChartPrimitive2D& rChartPrimitive = static_cast< const primitive2d::ChartPrimitive2D& >(rCandidate);
-		   			mpOutputDevice->Push(PUSH_MAPMODE);
-					mpOutputDevice->SetMapMode(maOriginalMapMode);
-					
-					if(!renderChartPrimitive2D(
-						rChartPrimitive, 
-						*mpOutputDevice,
-						getViewInformation2D()))
-					{
-						// fallback to decomposition (MetaFile)
-						process(rChartPrimitive.get2DDecomposition(getViewInformation2D()));
-					}
-
-					mpOutputDevice->Pop();
-					break;
-				}
                 case PRIMITIVE2D_ID_WRONGSPELLPRIMITIVE2D :
                 {
 					// wrong spell primitive. Handled directly here using VCL since VCL has a nice and
@@ -2161,7 +2156,6 @@ namespace drawinglayer
 			const geometry::ViewInformation2D& rViewInformation, 
 			OutputDevice& rOutDev) 
 		:	BaseProcessor2D(rViewInformation),
-            maOriginalMapMode(rOutDev.GetMapMode()),
             mpOutputDevice(&rOutDev),
 			mxCanvas(rOutDev.GetCanvas()),
 			maViewState(),

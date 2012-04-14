@@ -32,6 +32,7 @@
 #include <com/sun/star/awt/Gradient.hpp>
 #include <com/sun/star/drawing/Hatch.hpp>
 #include <com/sun/star/drawing/FillStyle.hpp>
+#include <com/sun/star/drawing/LineCap.hpp>
 #include <com/sun/star/drawing/LineDash.hpp>
 #include <com/sun/star/drawing/LineJoint.hpp>
 #include <com/sun/star/drawing/LineStyle.hpp>
@@ -127,6 +128,9 @@
 #define OWN_ATTR_TRANSFORMATION					(OWN_ATTR_VALUE_START+46)
 #define OWN_ATTR_BASE_GEOMETRY					(OWN_ATTR_VALUE_START+47)
 
+/// reuse attr slots for GraphicObject which will never be used together with graphic object
+#define OWN_ATTR_REPLACEMENTGRAFURL				(OWN_ATTR_VALUE_START+14)
+
 #define OWN_ATTR_APPLET_DOCBASE                 (OWN_ATTR_VALUE_START+48)
 #define OWN_ATTR_APPLET_CODEBASE				(OWN_ATTR_VALUE_START+49)
 #define OWN_ATTR_APPLET_NAME					(OWN_ATTR_VALUE_START+50)
@@ -216,6 +220,7 @@
 	{ MAP_CHAR_LEN(UNO_NAME_SHADOWYDIST),		SDRATTR_SHADOWYDIST,		&::getCppuType((const sal_Int32*)0),	0,		SFX_METRIC_ITEM},
 
 #define LINE_PROPERTIES_DEFAULTS\
+    { MAP_CHAR_LEN(UNO_NAME_LINECAP),           XATTR_LINECAP,          &::getCppuType((const ::com::sun::star::drawing::LineCap*)0),     0,     0}, \
 	{ MAP_CHAR_LEN(UNO_NAME_LINECOLOR),			XATTR_LINECOLOR,		&::getCppuType((const sal_Int32*)0) , 			0,     0}, \
 	{ MAP_CHAR_LEN(UNO_NAME_LINEENDCENTER),		XATTR_LINEENDCENTER,	&::getBooleanCppuType() , 			0,     0}, \
 	{ MAP_CHAR_LEN(UNO_NAME_LINEENDWIDTH),		XATTR_LINEENDWIDTH,		&::getCppuType((const sal_Int32*)0) , 			0,     SFX_METRIC_ITEM}, \
@@ -423,11 +428,12 @@
 
 #define SPECIAL_GRAPHOBJ_PROPERTIES \
 	SPECIAL_GRAPHOBJ_PROPERTIES_DEFAULTS \
-	{ MAP_CHAR_LEN(UNO_NAME_GRAPHIC_GRAPHICCROP),	SDRATTR_GRAFCROP			, &::getCppuType((const ::com::sun::star::text::GraphicCrop*)0),		0,	0 }, \
-	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_GRAFURL),		OWN_ATTR_GRAFURL			, &::getCppuType((const ::rtl::OUString*)0), 0, 0 }, \
-	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_GRAFSTREAMURL),OWN_ATTR_GRAFSTREAMURL		, &::getCppuType((const ::rtl::OUString*)0), ::com::sun::star::beans::PropertyAttribute::MAYBEVOID, 0 }, \
-	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_FILLBITMAP),	OWN_ATTR_VALUE_FILLBITMAP	, &::getCppuType((const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XBitmap>*)0)  , 	0,     0},    \
-	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_GRAPHIC),	    OWN_ATTR_VALUE_GRAPHIC	    , &::getCppuType((const ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic>*)0)  , 	0,     0},
+	{ MAP_CHAR_LEN(UNO_NAME_GRAPHIC_GRAPHICCROP),	        SDRATTR_GRAFCROP			, &::getCppuType((const ::com::sun::star::text::GraphicCrop*)0),		0,	0 }, \
+	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_GRAFURL),		        OWN_ATTR_GRAFURL			, &::getCppuType((const ::rtl::OUString*)0), 0, 0 }, \
+	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_REPLACEMENTGRAFURL),   OWN_ATTR_REPLACEMENTGRAFURL , &::getCppuType((const ::rtl::OUString*)0), 0, 0 }, \
+	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_GRAFSTREAMURL),        OWN_ATTR_GRAFSTREAMURL		, &::getCppuType((const ::rtl::OUString*)0), ::com::sun::star::beans::PropertyAttribute::MAYBEVOID, 0 }, \
+	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_FILLBITMAP),	        OWN_ATTR_VALUE_FILLBITMAP	, &::getCppuType((const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XBitmap>*)0)  , 	0,     0},    \
+	{ MAP_CHAR_LEN(UNO_NAME_GRAPHOBJ_GRAPHIC),	            OWN_ATTR_VALUE_GRAPHIC	    , &::getCppuType((const ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic>*)0)  , 	0,     0},
 
 
 #define SPECIAL_3DSCENEOBJECT_PROPERTIES_DEFAULTS \

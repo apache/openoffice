@@ -92,6 +92,7 @@
 #define	UNO_NAME_LINESTARTCENTER				"LineStartCenter"
 #define	UNO_NAME_LINEENDCENTER					"LineEndCenter"
 #define	UNO_NAME_LINETRANSPARENCE				"LineTransparence"
+#define UNO_NAME_LINECAP                        "LineCap"
 
 #define	UNO_NAME_SHADOW							"Shadow"
 #define	UNO_NAME_SHADOWCOLOR					"ShadowColor"
@@ -176,6 +177,7 @@
 
 #define	UNO_NAME_GRAPHOBJ_FILLBITMAP			"GraphicObjectFillBitmap"
 #define UNO_NAME_GRAPHOBJ_GRAFURL				"GraphicURL"
+#define UNO_NAME_GRAPHOBJ_REPLACEMENTGRAFURL	"ReplacementGraphicURL"
 #define UNO_NAME_GRAPHOBJ_GRAFSTREAMURL			"GraphicStreamURL"
 #define UNO_NAME_GRAPHOBJ_URLPREFIX				"vnd.sun.star.GraphicObject:"
 #define UNO_NAME_GRAPHOBJ_URLPKGPREFIX			"vnd.sun.star.Package:"

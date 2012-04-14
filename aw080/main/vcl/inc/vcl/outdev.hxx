@@ -40,7 +40,8 @@
 #include <basegfx/vector/b2enums.hxx>
 #include <com/sun/star/uno/Reference.h>
 #include <unotools/fontdefs.hxx>
-
+#include <basegfx/polygon/b2dpolypolygon.hxx>
+#include <com/sun/star/drawing/LineCap.hpp>
 #include <vector>
 
 struct ImplOutDevData;
@@ -87,7 +88,6 @@ namespace basegfx {
 	class B2DHomMatrix;
 	class B2DPolygon;
     class B2DPolyPolygon;
-    typedef ::std::vector< B2DPolyPolygon > B2DPolyPolygonVector;
 }
 
 namespace com {
@@ -104,7 +104,6 @@ namespace vcl
     class PDFWriterImpl;
     class ExtOutDevData;
     class ITextLayout;
-    class RenderGraphic;
 }
 
 #define OUTDEV_BUFFER_SIZE  128
@@ -557,7 +556,11 @@ public:
 
 	// #i101491#
 	// Helper who tries to use SalGDI's DrawPolyLine direct and returns it's bool. Contains no AA check.
-	SAL_DLLPRIVATE bool ImpTryDrawPolyLineDirect(const basegfx::B2DPolygon& rB2DPolygon, double fLineWidth, basegfx::B2DLineJoin eLineJoin);
+	SAL_DLLPRIVATE bool ImpTryDrawPolyLineDirect(
+        const basegfx::B2DPolygon& rB2DPolygon, 
+        double fLineWidth = 0.0, 
+        basegfx::B2DLineJoin eLineJoin = basegfx::B2DLINEJOIN_NONE,
+        com::sun::star::drawing::LineCap eLineCap = com::sun::star::drawing::LineCap_BUTT);
 
 	// Helper for line geometry paint with support for graphic expansion (pattern and fat_to_area)
     void impPaintLineGeometryWithEvtlExpand(const LineInfo& rInfo, basegfx::B2DPolyPolygon aLinePolyPolygon);
@@ -688,7 +691,11 @@ public:
         @see DrawPolyPolygon
      */
     void                DrawPolyLine( const Polygon& rPoly );
-    void                DrawPolyLine( const basegfx::B2DPolygon&, double fLineWidth = 0.0, basegfx::B2DLineJoin = basegfx::B2DLINEJOIN_ROUND );
+    void DrawPolyLine( 
+        const basegfx::B2DPolygon&, 
+        double fLineWidth = 0.0, 
+        basegfx::B2DLineJoin = basegfx::B2DLINEJOIN_ROUND,
+        com::sun::star::drawing::LineCap = com::sun::star::drawing::LineCap_BUTT);
 
     /** Render the given polygon as a line stroke
 
@@ -812,9 +819,6 @@ public:
         that's too much for now, wrote #i107046# for this */
     bool                DrawEPS( const Point& rPt, const Size& rSz,
                                  const GfxLink& rGfxLink, GDIMetaFile* pSubst = NULL );
-
-    void                DrawRenderGraphic( const Point& rPt, const Size& rSz,
-                                           const ::vcl::RenderGraphic& rRenderGraphic );
 
     Color               GetPixel( const Point& rPt ) const;
     Color*              GetPixel( const Polygon& rPts ) const;

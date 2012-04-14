@@ -1,0 +1,108 @@
+--- misc/serf-1.0.0/buckets/ssl_buckets.c	2012-02-29 11:04:40.203782000 +0100
++++ misc/build/serf-1.0.0/buckets/ssl_buckets.c	2012-02-29 10:55:33.127491000 +0100
+@@ -481,37 +481,45 @@
+ 
+     /* This provides the entire chain so we only call it when the end 
+      * entity certificate is reached. */
+-    if (ctx->server_cert_chain_callback && depth == 0) {
+-        apr_status_t status;
+-        STACK_OF(X509) *chain;
+-        const char **ascii_certs;
+-        apr_pool_t *subpool;
++    if (ctx->server_cert_chain_callback != NULL)
++    {
++        if (depth == 0)
++        {
++            apr_status_t status;
++            STACK_OF(X509) *chain;
++            const char **ascii_certs;
++            apr_pool_t *subpool;
+ 
+-        apr_pool_create(&subpool, ctx->pool);
++            apr_pool_create(&subpool, ctx->pool);
+  
+-        chain = X509_STORE_CTX_get1_chain(store_ctx);
+-        /* Fallback to the current certificate if the chain cannot be 
+-         * retrieved. */
+-        if ( ! chain) {
+-            chain = sk_X509_new_null();
+-            sk_X509_push(chain, X509_dup(server_cert));
+-        }
+-        ascii_certs = export_certificates(chain, subpool); 
+-
+-        /* Callback for further verification. */
+-        status = 
+-            ctx->server_cert_chain_callback(ctx->server_cert_chain_userdata, 
+-                                            failures, ascii_certs);
+-        if (status == APR_SUCCESS)
+-            cert_valid = 1;
+-        else
+-            /* Pass the error back to the caller through the context-run. */
+-            ctx->pending_err = status;
++            chain = X509_STORE_CTX_get1_chain(store_ctx);
++            /* Fallback to the current certificate if the chain cannot be 
++             * retrieved. */
++            if ( ! chain) {
++                chain = sk_X509_new_null();
++                sk_X509_push(chain, X509_dup(server_cert));
++            }
++            ascii_certs = export_certificates(chain, subpool); 
++
++            /* Callback for further verification. */
++            status = 
++                ctx->server_cert_chain_callback(ctx->server_cert_chain_userdata, 
++                    failures, ascii_certs, sk_X509_num(chain));
++            if (status == APR_SUCCESS)
++                cert_valid = 1;
++            else
++                /* Pass the error back to the caller through the context-run. */
++                ctx->pending_err = status;
+         
+-        sk_X509_pop_free(chain, X509_free);
+-        apr_pool_destroy(subpool);
++            sk_X509_pop_free(chain, X509_free);
++            apr_pool_destroy(subpool);
++        }
++        else
++        {
++            // Keep the process going until depth==0 is reached.
++            cert_valid = 1;
++        }
+     }
+-
+     return cert_valid;
+ }
+ 
+@@ -1091,6 +1099,10 @@
+     ssl_ctx->pool = pool;
+     ssl_ctx->allocator = allocator;
+ 
++    ssl_ctx->cert_callback = NULL;
++    ssl_ctx->server_cert_callback = NULL;
++    ssl_ctx->server_cert_chain_callback = NULL;
++
+     ssl_ctx->ctx = SSL_CTX_new(SSLv23_client_method());
+ 
+     SSL_CTX_set_client_cert_cb(ssl_ctx->ctx, ssl_need_client_cert);
+--- misc/serf-1.0.0/build/serf.def	2011-07-15 23:47:01.000000000 +0200
++++ misc/build/serf-1.0.0/build/serf.def	2012-02-27 14:24:23.526967200 +0100
+@@ -83,6 +83,7 @@
+ serf_ssl_client_cert_provider_set
+ serf_ssl_client_cert_password_set
+ serf_ssl_server_cert_callback_set
++serf_ssl_server_cert_chain_callback_set
+ serf_ssl_use_default_certificates
+ serf_ssl_set_hostname
+ serf_ssl_cert_depth
+--- misc/serf-1.0.0/serf_bucket_types.h	2012-02-29 11:04:40.226783300 +0100
++++ misc/build/serf-1.0.0/serf_bucket_types.h	2012-02-27 14:24:23.510966300 +0100
+@@ -489,7 +489,8 @@
+ typedef apr_status_t (*serf_ssl_need_server_cert_chain_t)(
+     void *data,
+     int failures,
+-    const char **certs);
++    const char **certs,
++    int nCertificateChainLength);
+ 
+ void serf_ssl_client_cert_provider_set(
+     serf_ssl_context_t *context,

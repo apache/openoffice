@@ -79,7 +79,6 @@
 #include <lineaction.hxx>
 #include <pointaction.hxx>
 #include <polypolyaction.hxx>
-#include <rendergraphicaction.hxx>
 #include <textaction.hxx>
 #include <transparencygroupaction.hxx>
 #include <vector>
@@ -288,6 +287,28 @@ namespace
             case basegfx::B2DLINEJOIN_ROUND:
                 o_rStrokeAttributes.JoinType = rendering::PathJoinType::ROUND;
                 break;
+        }
+
+        switch(rLineInfo.GetLineCap())
+        {
+            default: /* com::sun::star::drawing::LineCap_BUTT */
+            {
+                o_rStrokeAttributes.StartCapType = rendering::PathCapType::BUTT;
+                o_rStrokeAttributes.EndCapType   = rendering::PathCapType::BUTT;
+                break;
+            }
+            case com::sun::star::drawing::LineCap_ROUND:
+            {
+                o_rStrokeAttributes.StartCapType = rendering::PathCapType::ROUND;
+                o_rStrokeAttributes.EndCapType   = rendering::PathCapType::ROUND;
+                break;
+            }
+            case com::sun::star::drawing::LineCap_SQUARE:
+            {
+                o_rStrokeAttributes.StartCapType = rendering::PathCapType::SQUARE;
+                o_rStrokeAttributes.EndCapType   = rendering::PathCapType::SQUARE;
+                break;
+            }
         }
 
         if( LINE_DASH == rLineInfo.GetStyle() )
@@ -2644,32 +2665,6 @@ namespace cppcanvas
                             pDXArray.get(),
                             rFactoryParms,
                             bSubsettableActions );
-                    }
-                    break;
-
-                    case META_RENDERGRAPHIC_ACTION:
-                    {
-                        MetaRenderGraphicAction* pAct = static_cast<MetaRenderGraphicAction*>(pCurrAct);
-
-                        ActionSharedPtr pRenderGraphicAction(
-                                internal::RenderGraphicActionFactory::createRenderGraphicAction(
-                                    pAct->GetRenderGraphic(),
-                                    getState( rStates ).mapModeTransform *
-                                    ::vcl::unotools::b2DPointFromPoint( pAct->GetPoint() ),
-                                    getState( rStates ).mapModeTransform *
-                                    ::vcl::unotools::b2DSizeFromSize( pAct->GetSize() ),
-                                    rCanvas,
-                                    getState( rStates ) ) );
-
-                        if( pRenderGraphicAction )
-                        {
-                            maActions.push_back(
-                                MtfAction(
-                                    pRenderGraphicAction,
-                                    io_rCurrActionIndex ) );
-
-                            io_rCurrActionIndex += pRenderGraphicAction->getActionCount()-1;
-                        }
                     }
                     break;
 

@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-#
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#***********************************************************************/
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 PRJ = ..
 PRJNAME = postprocess
@@ -55,17 +51,19 @@ my_components = \
     charttools \
     chartview \
     component/comphelper/util/comphelp \
+    component/cui/util/cui \
+    component/drawinglayer/drawinglayer \
     component/framework/util/fwk \
     component/framework/util/fwl \
     component/framework/util/fwm \
     component/vbahelper/util/msforms \
     component/sfx2/util/sfx \
     component/sot/util/sot \
+    component/svgio/svgio \
     component/svl/source/fsstor/fsstorage \
     component/svl/source/passwordcontainer/passwordcontainer \
     component/svl/util/svl \
     component/svtools/source/hatchwindow/hatchwindowfactory \
-    component/svtools/source/productregistration/productregistration.uno \
     component/svtools/util/svt \
     component/svx/util/svx \
     component/svx/util/svxcore \
@@ -155,6 +153,7 @@ my_components = \
     tvhlp1 \
     ucb1 \
     ucpchelp1 \
+    ucpdav1 \
     ucpexpand1 \
     ucpext \
     ucpfile1 \
@@ -164,7 +163,6 @@ my_components = \
     ucptdoc1 \
     updatefeed \
     updchk \
-    updchk.uno \
     utl \
     uui \
     vbaevents \
@@ -188,8 +186,16 @@ my_components += component/vcl/vcl.unx
 .ENDIF
 .ENDIF
 
+.IF "$(ENABLE_ONLINE_UPDATE)"=="YES"
+my_components += updchk.uno
+.END
+
 .IF "$(BUILD_SPECIAL)" != ""
 my_components += oooimprovement
+.END
+
+.IF "$(ENABLE_COINMP)"=="YES"
+my_components += solver
 .END
 
 .IF "$(DISABLE_SAXON)" == ""
@@ -211,10 +217,6 @@ my_components +=     wpft
 
 .IF "$(DISABLE_ATL)" == ""
 my_components += emboleobj
-.END
-
-.IF "$(SYSTEM_NEON)" == "YES"
-my_components += ucpdav1
 .END
 
 .IF "$(ENABLE_CAIRO_CANVAS)" == "TRUE"
@@ -249,17 +251,11 @@ my_components += kde4be1
 my_components += ogltrans
 .END
 
-.IF "$(ENABLE_SVCTAGS)" == "YES"
-my_components += productregistration.jar
-.END
-
 .IF "$(SOLAR_JAVA)" == "TRUE"
 my_components += \
     LuceneHelpWrapper \
     ScriptFramework \
-    ScriptProviderForBeanShell \
     ScriptProviderForJava \
-    ScriptProviderForJavaScript \
     XMergeBridge \
     XSLTValidate \
     agenda \
@@ -272,6 +268,12 @@ my_components += \
     report \
     table \
     web
+.IF "$(ENABLE_BEANSHELL)" == "YES"
+my_components += ScriptProviderForBeanShell
+.END
+.IF "$(ENABLE_JAVASCRIPT)" == "YES"
+my_components += ScriptProviderForJavaScript
+.END
 .END
 
 .IF "$(WITH_BINFILTER)" != "NO"
@@ -288,8 +290,7 @@ my_components += ldapbe2
 my_components += \
     xmlsecurity \
     xsec_fw \
-    xsec_xmlsec \
-    pl
+    xsec_xmlsec
 .END
 
 .IF "$(OS)" == "MACOSX"
@@ -297,13 +298,8 @@ my_components += \
     avmediaQuickTime \
     fps_aqua \
     macab1 \
-    macbe1
-
-.IF "$(DISABLE_HUNSPELL)" == ""
-my_components += \
+    macbe1 \
     MacOSXSpell
-.END
-
 .END
 
 .IF "$(OS)" == "WNT"
@@ -345,11 +341,12 @@ my_components += adabas
 .IF "$(OS)" != "MACOSX" && "$(SYSTEM_MOZILLA)" != "YES" && \
     "$(WITH_MOZILLA)" != "NO"
 my_components += mozab
+.ELIF "$(OS)" == "OS2"
 .ELSE
 my_components += mozbootstrap
 .END
 
-.IF "$(OS)" != "MACOSX" && "$(OS)" != "WNT"
+.IF "$(OS)" != "MACOSX" && "$(OS)" != "WNT" && "$(OS)" != "OS2"
 my_components += desktopbe1
 .END
 

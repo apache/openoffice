@@ -324,6 +324,7 @@ SdrGrafObj::SdrGrafObj(
 	bMirrored(false)
 {
 	pGraphic = new GraphicObject( rGrf );
+    mpReplacementGraphic = 0;
 	pGraphic->SetSwapStreamHdl( LINK( this, SdrGrafObj, ImpSwapHdl ), SWAPGRAPHIC_TIMEOUT );
 	
     // #i118485# Shear allowed and possible now
@@ -340,6 +341,7 @@ SdrGrafObj::SdrGrafObj(
 SdrGrafObj::~SdrGrafObj()
 {
 	delete pGraphic;
+    delete mpReplacementGraphic;
 	ImpLinkAbmeldung();
 }
 
@@ -404,6 +406,8 @@ void SdrGrafObj::SetGraphicObject( const GraphicObject& rGrfObj )
 {
     const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
 	*pGraphic = rGrfObj;
+    delete mpReplacementGraphic;
+    mpReplacementGraphic = 0;
 	pGraphic->SetSwapStreamHdl( LINK( this, SdrGrafObj, ImpSwapHdl ), SWAPGRAPHIC_TIMEOUT );
 	pGraphic->SetUserData();
 	mbIsPreview = false;
@@ -422,12 +426,29 @@ const GraphicObject& SdrGrafObj::GetGraphicObject(bool bForceSwapIn) const
 	return *pGraphic;
 }
 
+const GraphicObject* SdrGrafObj::GetReplacementGraphicObject() const
+{
+    if(!mpReplacementGraphic && pGraphic)
+    {
+        const SvgDataPtr& rSvgDataPtr = pGraphic->GetGraphic().getSvgData();
+
+        if(rSvgDataPtr.get())
+        {
+            const_cast< SdrGrafObj* >(this)->mpReplacementGraphic = new GraphicObject(rSvgDataPtr->getReplacement());
+        }
+    }
+
+    return mpReplacementGraphic;
+}
+
 // -----------------------------------------------------------------------------
 
 void SdrGrafObj::SetGraphic( const Graphic& rGrf )
 {
     const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
 	pGraphic->SetGraphic( rGrf );
+    delete mpReplacementGraphic;
+    mpReplacementGraphic = 0;
 	pGraphic->SetUserData();
 	mbIsPreview = false;
 	SetChanged();
@@ -498,16 +519,6 @@ bool SdrGrafObj::IsAnimated() const
 bool SdrGrafObj::IsEPS() const
 {
 	return pGraphic->IsEPS();
-}
-
-bool SdrGrafObj::IsRenderGraphic() const
-{
-	return pGraphic->IsRenderGraphic();
-}
-
-bool SdrGrafObj::HasRenderGraphic() const
-{
-	return pGraphic->HasRenderGraphic();
 }
 
 bool SdrGrafObj::IsSwappedOut() const
@@ -669,21 +680,17 @@ void SdrGrafObj::ReleaseGraphicLink()
 
 void SdrGrafObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	bool bAnim = pGraphic->IsAnimated();
-    bool bRenderGraphic = pGraphic->HasRenderGraphic();
-	bool bNoPresGrf = ( pGraphic->GetType() != GRAPHIC_NONE ) && !IsEmptyPresObj();
-
+	const bool bAnim(pGraphic->IsAnimated());
+	const bool bNoPresGrf((GRAPHIC_NONE != pGraphic->GetType()) && !IsEmptyPresObj());
 	const long nOldRotAngle(sdr::legacy::GetRotateAngle(*this));
-	rInfo.bResizeFreeAllowed = nOldRotAngle % 9000 == 0 ||
-							   nOldRotAngle % 18000 == 0 ||
-							   nOldRotAngle % 27000 == 0;
 
+	rInfo.bResizeFreeAllowed = nOldRotAngle % 9000 == 0 || nOldRotAngle % 18000 == 0 || nOldRotAngle % 27000 == 0;
 	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = bNoPresGrf && !bAnim && !bRenderGraphic;
-	rInfo.bRotate90Allowed = bNoPresGrf && !bAnim && !bRenderGraphic;
-	rInfo.bMirrorFreeAllowed = bNoPresGrf && !bAnim && !bRenderGraphic;
-	rInfo.bMirror45Allowed = bNoPresGrf && !bAnim && !bRenderGraphic;
-	rInfo.mbMirror90Allowed = !IsEmptyPresObj() && !bRenderGraphic;
+	rInfo.bRotateFreeAllowed = bNoPresGrf && !bAnim;
+	rInfo.bRotate90Allowed = bNoPresGrf && !bAnim;
+	rInfo.bMirrorFreeAllowed = bNoPresGrf && !bAnim;
+	rInfo.bMirror45Allowed = bNoPresGrf && !bAnim;
+	rInfo.mbMirror90Allowed = !IsEmptyPresObj();
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
     
@@ -694,7 +701,7 @@ void SdrGrafObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 	rInfo.mbCanConvToPath = false;
 	rInfo.mbCanConvToPathLineToArea = false;
 	rInfo.mbCanConvToPolyLineToArea = false;
-	rInfo.mbCanConvToPoly = !IsEPS() && !bRenderGraphic;
+	rInfo.mbCanConvToPoly = !IsEPS();
 	rInfo.mbCanConvToContour = (rInfo.mbCanConvToPoly || LineGeometryUsageIsNecessary());
 }
 
@@ -737,78 +744,102 @@ void SdrGrafObj::ImpSetLinkedGraphic( const Graphic& rGraphic )
 
 void SdrGrafObj::TakeObjNameSingul(XubString& rName) const
 {
-	switch( pGraphic->GetType() )
-	{
-		case GRAPHIC_BITMAP:
+    if(pGraphic)
+    {
+        const SvgDataPtr& rSvgDataPtr = pGraphic->GetGraphic().getSvgData();
+
+        if(rSvgDataPtr.get())
         {
-            const sal_uInt16 nId = ( ( pGraphic->IsTransparent() || ( (const SdrGrafTransparenceItem&) GetObjectItem( SDRATTR_GRAFTRANSPARENCE ) ).GetValue() ) ?
-                                 ( IsLinkedGraphic() ? STR_ObjNameSingulGRAFBMPTRANSLNK : STR_ObjNameSingulGRAFBMPTRANS ) :
-                                 ( IsLinkedGraphic() ? STR_ObjNameSingulGRAFBMPLNK : STR_ObjNameSingulGRAFBMP ) );
-
-            rName=ImpGetResStr( nId );
+            rName = ImpGetResStr(STR_ObjNameSingulGRAFSVG);
         }
-        break;
+        else
+        {
+	        switch( pGraphic->GetType() )
+	        {
+		        case GRAPHIC_BITMAP:
+                {
+                    const sal_uInt16 nId = ( ( pGraphic->IsTransparent() || ( (const SdrGrafTransparenceItem&) GetObjectItem( SDRATTR_GRAFTRANSPARENCE ) ).GetValue() ) ?
+                                         ( IsLinkedGraphic() ? STR_ObjNameSingulGRAFBMPTRANSLNK : STR_ObjNameSingulGRAFBMPTRANS ) :
+                                         ( IsLinkedGraphic() ? STR_ObjNameSingulGRAFBMPLNK : STR_ObjNameSingulGRAFBMP ) );
 
-		case GRAPHIC_GDIMETAFILE:
-            rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNameSingulGRAFMTFLNK : STR_ObjNameSingulGRAFMTF );
-        break;
+                    rName=ImpGetResStr( nId );
+                }
+                break;
 
-        case GRAPHIC_NONE:
-            rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNameSingulGRAFNONELNK : STR_ObjNameSingulGRAFNONE );
-        break;
+		        case GRAPHIC_GDIMETAFILE:
+                    rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNameSingulGRAFMTFLNK : STR_ObjNameSingulGRAFMTF );
+                break;
 
-        default:
-            rName=ImpGetResStr(  IsLinkedGraphic() ? STR_ObjNameSingulGRAFLNK : STR_ObjNameSingulGRAF );
-        break;
-	}
+                case GRAPHIC_NONE:
+                    rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNameSingulGRAFNONELNK : STR_ObjNameSingulGRAFNONE );
+                break;
 
-	const String aName(GetName());
+                default:
+                    rName=ImpGetResStr(  IsLinkedGraphic() ? STR_ObjNameSingulGRAFLNK : STR_ObjNameSingulGRAF );
+                break;
+	        }
+        }
 
-	if( aName.Len() )
-	{
-		rName.AppendAscii( " '" );
-		rName += aName;
-		rName += sal_Unicode( '\'' );
-	}
+	    const String aName(GetName());
+
+	    if( aName.Len() )
+	    {
+		    rName.AppendAscii( " '" );
+		    rName += aName;
+		    rName += sal_Unicode( '\'' );
+	    }
+    }
 }
 
 // -----------------------------------------------------------------------------
 
 void SdrGrafObj::TakeObjNamePlural( XubString& rName ) const
 {
-	switch( pGraphic->GetType() )
-	{
-		case GRAPHIC_BITMAP:
+    if(pGraphic)
+    {
+        const SvgDataPtr& rSvgDataPtr = pGraphic->GetGraphic().getSvgData();
+
+        if(rSvgDataPtr.get())
         {
-            const sal_uInt16 nId = ( ( pGraphic->IsTransparent() || ( (const SdrGrafTransparenceItem&) GetObjectItem( SDRATTR_GRAFTRANSPARENCE ) ).GetValue() ) ?
-                                 ( IsLinkedGraphic() ? STR_ObjNamePluralGRAFBMPTRANSLNK : STR_ObjNamePluralGRAFBMPTRANS ) :
-                                 ( IsLinkedGraphic() ? STR_ObjNamePluralGRAFBMPLNK : STR_ObjNamePluralGRAFBMP ) );
-
-            rName=ImpGetResStr( nId );
+            rName = ImpGetResStr(STR_ObjNamePluralGRAFSVG);
         }
-        break;
+        else
+        {
+	        switch( pGraphic->GetType() )
+	        {
+		        case GRAPHIC_BITMAP:
+                {
+                    const sal_uInt16 nId = ( ( pGraphic->IsTransparent() || ( (const SdrGrafTransparenceItem&) GetObjectItem( SDRATTR_GRAFTRANSPARENCE ) ).GetValue() ) ?
+                                         ( IsLinkedGraphic() ? STR_ObjNamePluralGRAFBMPTRANSLNK : STR_ObjNamePluralGRAFBMPTRANS ) :
+                                         ( IsLinkedGraphic() ? STR_ObjNamePluralGRAFBMPLNK : STR_ObjNamePluralGRAFBMP ) );
 
-		case GRAPHIC_GDIMETAFILE:
-            rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNamePluralGRAFMTFLNK : STR_ObjNamePluralGRAFMTF );
-        break;
+                    rName=ImpGetResStr( nId );
+                }
+                break;
 
-        case GRAPHIC_NONE:
-            rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNamePluralGRAFNONELNK : STR_ObjNamePluralGRAFNONE );
-        break;
+		        case GRAPHIC_GDIMETAFILE:
+                    rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNamePluralGRAFMTFLNK : STR_ObjNamePluralGRAFMTF );
+                break;
 
-        default:
-            rName=ImpGetResStr(  IsLinkedGraphic() ? STR_ObjNamePluralGRAFLNK : STR_ObjNamePluralGRAF );
-        break;
-	}
+                case GRAPHIC_NONE:
+                    rName=ImpGetResStr( IsLinkedGraphic() ? STR_ObjNamePluralGRAFNONELNK : STR_ObjNamePluralGRAFNONE );
+                break;
 
-	const String aName(GetName());
+                default:
+                    rName=ImpGetResStr(  IsLinkedGraphic() ? STR_ObjNamePluralGRAFLNK : STR_ObjNamePluralGRAF );
+                break;
+	        }
+        }
 
-	if( aName.Len() )
-	{
-		rName.AppendAscii( " '" );
-		rName += aName;
-		rName += sal_Unicode( '\'' );
-	}
+	    const String aName(GetName());
+
+	    if( aName.Len() )
+	    {
+		    rName.AppendAscii( " '" );
+		    rName += aName;
+		    rName += sal_Unicode( '\'' );
+	    }
+    }
 }
 
 // -----------------------------------------------------------------------------
@@ -958,11 +989,61 @@ const GDIMetaFile* SdrGrafObj::GetGDIMetaFile() const
 
 // -----------------------------------------------------------------------------
 
+bool SdrGrafObj::isEmbeddedSvg() const
+{
+    return GRAPHIC_BITMAP == GetGraphicType() && GetGraphic().getSvgData().get();
+}
+
+GDIMetaFile SdrGrafObj::getMetafileFromEmbeddedSvg() const
+{
+    GDIMetaFile aRetval;
+
+    if(isEmbeddedSvg())
+    {
+        VirtualDevice aOut;
+		const basegfx::B2DRange& rRange = getObjectRange(0);
+		const MapMode aMap(
+			getSdrModelFromSdrObject().GetExchangeObjectUnit(), 
+			Point(), 
+			getSdrModelFromSdrObject().GetExchangeObjectScale(), 
+			getSdrModelFromSdrObject().GetExchangeObjectScale());
+
+        aOut.EnableOutput(false);
+        aOut.SetMapMode(aMap);
+        aRetval.Record(&aOut);
+        SingleObjectPainter(aOut);
+        aRetval.Stop();
+        aRetval.WindStart();
+        aRetval.Move(basegfx::fround(-rRange.getMinX()), basegfx::fround(-rRange.getMinY()));
+        aRetval.SetPrefMapMode(aMap);
+        aRetval.SetPrefSize(Size(basegfx::fround(rRange.getWidth()), basegfx::fround(rRange.getHeight())));
+    }
+
+    return aRetval;
+}
+
 SdrObject* SdrGrafObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) const
 {
 	SdrObject* pRetval = NULL;
+    GraphicType aGraphicType(GetGraphicType());
+    GDIMetaFile aMtf;
 
-	switch( GetGraphicType() )
+    if(isEmbeddedSvg())
+    {
+        // Embedded Svg
+        // There is currently no helper to create SdrObjects from primitives (even if I'm thinking
+        // about writing one for some time). To get the roundtrip to SdrObjects it is necessary to
+        // use the old converter path over the MetaFile mechanism. Create Metafile from Svg 
+        // primitives here pretty directly
+        aMtf = getMetafileFromEmbeddedSvg();
+        aGraphicType = GRAPHIC_GDIMETAFILE;
+    }
+    else if(GRAPHIC_GDIMETAFILE == aGraphicType)
+    {
+        aMtf = GetTransformedGraphic(SDRGRAFOBJ_TRANSFORMATTR_COLOR|SDRGRAFOBJ_TRANSFORMATTR_MIRROR).GetGDIMetaFile();
+    }
+
+	switch(aGraphicType)
 	{
 		case GRAPHIC_GDIMETAFILE:
 		{
@@ -1193,7 +1274,7 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
             // ## test only if there are VOCs other than the preview renderer
 			if(!GetViewContact().HasViewObjectContacts(true))
 			{
-				const sal_uInt32 nSwapMode = getSdrModelFromSdrObject().GetSwapGraphicsMode();
+				const sal_uIntPtr	nSwapMode = getSdrModelFromSdrObject().GetSwapGraphicsMode();
 
 				if( ( pGraphic->HasUserData() || pGraphicLink ) &&
 					( nSwapMode & SDR_SWAPGRAPHICSMODE_PURGE ) )
@@ -1222,8 +1303,10 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
 		if( pGraphic->HasUserData() )
 		{
 			SdrDocumentStreamInfo aStreamInfo;
-			aStreamInfo.mbDeleteAfterUse = false;
+
+			aStreamInfo.mbDeleteAfterUse = sal_False;
 			aStreamInfo.maUserData = pGraphic->GetUserData();
+
 			SvStream* pStream = getSdrModelFromSdrObject().GetDocumentStream( aStreamInfo );
 
 			if( pStream != NULL )
@@ -1237,8 +1320,8 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
                     pFilterData = new com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >( 3 );
 
                     com::sun::star::awt::Size aPreviewSizeHint( 64, 64 );
-			    	bool bAllowPartialStreamRead = true;
-				    bool bCreateNativeLink = false;
+                    sal_Bool bAllowPartialStreamRead = sal_True;
+                    sal_Bool bCreateNativeLink = sal_False;
                     (*pFilterData)[ 0 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "PreviewSizeHint" ) );
                     (*pFilterData)[ 0 ].Value <<= aPreviewSizeHint;
                     (*pFilterData)[ 1 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "AllowPartialStreamRead" ) );
@@ -1246,11 +1329,12 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
                     (*pFilterData)[ 2 ].Name = String( RTL_CONSTASCII_USTRINGPARAM( "CreateNativeLink" ) );
                     (*pFilterData)[ 2 ].Value <<= bCreateNativeLink;
 
-    				mbIsPreview = true;
+                    mbIsPreview = sal_True;
                 }
 
-                if( !GraphicFilter::GetGraphicFilter()->ImportGraphic( aGraphic, String(), *pStream,
-                                                    GRFILTER_FORMAT_DONTKNOW, NULL, 0, pFilterData ) )
+                if(!GraphicFilter::GetGraphicFilter()->ImportGraphic(
+                    aGraphic, aStreamInfo.maUserData, *pStream,
+                    GRFILTER_FORMAT_DONTKNOW, NULL, 0, pFilterData))
                 {
                     const String aUserData( pGraphic->GetUserData() );
 
@@ -1276,7 +1360,7 @@ IMPL_LINK( SdrGrafObj, ImpSwapHdl, GraphicObject*, pO )
                 }
             }
 		}
-		else if( !ImpUpdateGraphicLink( false ) )
+		else if( !ImpUpdateGraphicLink( sal_False ) )
         {
 			pRet = GRFMGR_AUTOSWAPSTREAM_TEMP;
         }

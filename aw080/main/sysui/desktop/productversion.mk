@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 .IF "$(OS)"=="LINUX"
 PKGREV          = $(BUILD)
 .ELSE
@@ -43,11 +39,18 @@ RPMMACROS= \
 PKGDIR=$(BIN)
 .ENDIF
 
-PRODUCTLIST = openoffice.org broffice.org
+# CAUTION! here the parsing result from openoffice.lst is NOT available, so this is hardcoded
+# but should not be. When replacing with $(UNIXBASISROOTNAME) it will be empty (!)
+PRODUCTLIST = openoffice.org
 
-# default values to minimize maintainance effort 
+# default values to minimize maintainance effort
+
+# CAUTION! $(OOOBASEVERSION) from openoffice.lst NOT available (!)
 PRODUCTVERSION = 3.4
+
+# CAUTION! $(BRANDPACKAGEVERSION) from openoffice.lst NOT available (!)
 PRODUCTVERSIONSHORT = 3
+
 PKGVERSION = $(PRODUCTVERSION)
 # gnome-vfs treats everything behind the last '.' as an icon extension, 
 # even though the "icon_filename" in '.keys' is specified as filename 
@@ -61,18 +64,12 @@ ICONVERSION = $(PRODUCTVERSIONSHORT:s/.//g)
 # which is need by other distributors, see http://www.openoffice.org/issues/show_bug.cgi?id=75366
 UNIXWRAPPERNAME *= '$${{UNIXPRODUCTNAME}}$${{BRANDPACKAGEVERSION}}'
 
+# CAUTION! $(UNIXBASISROOTNAME) from openoffice.lst NOT available (!)
 PRODUCTNAME.openoffice.org = OpenOffice.org
+
 PRODUCTVERSION.openoffice.org = $(PRODUCTVERSION)
 PRODUCTVERSIONSHORT.openoffice.org = $(PRODUCTVERSIONSHORT)
 PKGVERSION.openoffice.org = $(PKGVERSION)
 UNIXFILENAME.openoffice.org = $(PRODUCTNAME.openoffice.org:l)$(PRODUCTVERSIONSHORT.openoffice.org)
 ICONPREFIX.openoffice.org = $(UNIXFILENAME.openoffice.org:s/.//g)
-
-PRODUCTNAME.broffice.org = BrOffice.org
-PRODUCTVERSION.broffice.org = $(PRODUCTVERSION)
-PRODUCTVERSIONSHORT.broffice.org = $(PRODUCTVERSIONSHORT)
-PKGVERSION.broffice.org = $(PKGVERSION)
-UNIXFILENAME.broffice.org = $(PRODUCTNAME.broffice.org:l)$(PRODUCTVERSIONSHORT.broffice.org)
-ICONPREFIX.broffice.org = $(UNIXFILENAME.broffice.org:s/.//g)
-
 

@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 PRJ=.
 
@@ -37,9 +33,11 @@ TARGET=nss
 # --- Files --------------------------------------------------------
 
 .IF "$(ENABLE_NSS_MODULE)"!="YES"
+
 all:
 	@echo "NSS will not be built. ENABLE_NSS_MODULE is '$(ENABLE_NSS_MODULE)'"
-.ENDIF	
+
+.ELSE
 
 TARFILE_NAME=nss-3.12.6-with-nspr-4.8.4
 TARFILE_MD5=b92261a5679276c400555004937af965
@@ -47,6 +45,8 @@ TARFILE_ROOTDIR=nss-3.12.6
 PATCH_FILES=nss.patch
 
 .IF "$(OS)"=="MACOSX"
+MACOS_SDK_DIR=/Developer/SDKs/MacOSX10.4u.sdk
+.EXPORT : MACOS_SDK_DIR
 PATCH_FILES+=nss_macosx.patch
 .ENDIF # "$(OS)"=="MACOSX"
 
@@ -78,8 +78,7 @@ USE_64:=1
 CPP:=gcc -E $(EXTRA_CFLAGS)
 CXX:=g++ $(EXTRA_CFLAGS)
 CC:=gcc $(EXTRA_CFLAGS)
-MACOS_SDK_DIR*=$(MACDEVSDK)
-.EXPORT : CPP MACOS_SDK_DIR
+.EXPORT : CPP
 .ENDIF # "$(EXTRA_CFLAGS)"!=""
 .ENDIF # "$(OS)"=="MACOSX"
 
@@ -90,6 +89,7 @@ BUILD_ACTION= $(GNUMAKE) nss_build_all
 #See #i105566# && moz#513024#
 .IF "$(OS)"=="LINUX"
 BUILD_ACTION+=FREEBL_NO_DEPEND=1
+PATCH_FILES+=nss_linux.patch
 .ENDIF
 
 .ENDIF			# "$(GUI)"=="UNX"
@@ -150,20 +150,20 @@ EXT_USE_STLPORT=TRUE
 #To build nss one has to call "make nss_build_all" in 
 #mozilla/security/nss
 NSS_BUILD_DIR= $(subst,\,/ $(PWD)/$(MISC)/build/$(TARFILE_ROOTDIR)/mozilla/security/nss)
-BUILD_ACTION= PATH="$(moz_build)/msys/bin:$(moz_build)/moztools/bin:$(PATH)" && $(subst,/,$/ $(MOZILLABUILD)/msys/bin/bash) -i \
+BUILD_ACTION= PATH="$(PATH):$(moz_build)/msys/bin:$(moz_build)/moztools/bin" && $(subst,/,$/ $(MOZILLABUILD)/msys/bin/bash) -i \
 	-c "cd $(NSS_BUILD_DIR) && make nss_build_all"
 
 OUT2LIB= \
- 	mozilla$/dist$/out$/lib$/nspr4.lib \
- 	mozilla$/dist$/out$/lib$/nss3.lib \
- 	mozilla$/dist$/out$/lib$/nssdbm3.lib \
- 	mozilla$/dist$/out$/lib$/nssutil3.lib \
- 	mozilla$/dist$/out$/lib$/plc4.lib \
- 	mozilla$/dist$/out$/lib$/plds4.lib \
- 	mozilla$/dist$/out$/lib$/smime3.lib \
- 	mozilla$/dist$/out$/lib$/softokn3.lib \
- 	mozilla$/dist$/out$/lib$/sqlite3.lib \
- 	mozilla$/dist$/out$/lib$/ssl3.lib
+	mozilla$/dist$/out$/lib$/nspr4.lib \
+	mozilla$/dist$/out$/lib$/nss3.lib \
+	mozilla$/dist$/out$/lib$/nssdbm3.lib \
+	mozilla$/dist$/out$/lib$/nssutil3.lib \
+	mozilla$/dist$/out$/lib$/plc4.lib \
+	mozilla$/dist$/out$/lib$/plds4.lib \
+	mozilla$/dist$/out$/lib$/smime3.lib \
+	mozilla$/dist$/out$/lib$/softokn3.lib \
+	mozilla$/dist$/out$/lib$/sqlite3.lib \
+	mozilla$/dist$/out$/lib$/ssl3.lib
 
 .ENDIF			# "$(COM)"=="GCC"
 
@@ -179,4 +179,4 @@ OUTDIR2INC=mozilla$/dist$/public$/nss mozilla$/dist$/out$/include
 .INCLUDE :	target.mk
 .INCLUDE :	tg_ext.mk
 
-
+.ENDIF

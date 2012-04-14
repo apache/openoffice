@@ -922,19 +922,41 @@ void DffPropertyReader::ApplyLineAttributes( SfxItemSet& rSet, const MSO_SPT eSh
 		// Linienattribute
 		sal_Int32 nLineWidth = (sal_Int32)GetPropertyValue( DFF_Prop_lineWidth, 9525 );
 
+        // support LineCap
+        const MSO_LineCap eLineCap((MSO_LineCap)GetPropertyValue(DFF_Prop_lineEndCapStyle, mso_lineEndCapSquare));
+
+        switch(eLineCap)
+        {
+            default: /* case mso_lineEndCapFlat */
+            {
+                // no need to set, it is the default. If this changes, this needs to be activated
+                // rSet.Put(XLineCapItem(com::sun::star::drawing::LineCap_BUTT));
+                break;
+            }
+            case mso_lineEndCapRound:
+            {
+                rSet.Put(XLineCapItem(com::sun::star::drawing::LineCap_ROUND));
+                break;
+            }
+            case mso_lineEndCapSquare:
+            {
+                rSet.Put(XLineCapItem(com::sun::star::drawing::LineCap_SQUARE));
+                break;
+            }
+        }
+
 		MSO_LineDashing eLineDashing = (MSO_LineDashing)GetPropertyValue( DFF_Prop_lineDashing, mso_lineSolid );
 		if ( eLineDashing == mso_lineSolid )
 			rSet.Put(XLineStyleItem( XLINE_SOLID ) );
 		else
 		{
-//			MSO_LineCap eLineCap = (MSO_LineCap)GetPropertyValue( DFF_Prop_lineEndCapStyle, mso_lineEndCapSquare );
 
 			XDashStyle  eDash = XDASH_RECT;
 			sal_uInt16	nDots = 1;
 			sal_uInt32	nDotLen	= nLineWidth / 360;
 			sal_uInt16	nDashes = 0;
 			sal_uInt32	nDashLen = ( 8 * nLineWidth ) / 360;
-			sal_uInt32	nDistance = ( 3 * nLineWidth ) / 360;;
+			sal_uInt32	nDistance = ( 3 * nLineWidth ) / 360;
 
 			switch ( eLineDashing )
 			{
@@ -1051,24 +1073,27 @@ void DffPropertyReader::ApplyLineAttributes( SfxItemSet& rSet, const MSO_SPT eSh
 				rSet.Put( XLineEndItem( aArrowName, basegfx::B2DPolyPolygon(aPoly) ) );
 				rSet.Put( XLineEndCenterItem( bArrowCenter ) );
 			}
-			if ( IsProperty( DFF_Prop_lineEndCapStyle ) )
-			{
-				MSO_LineCap eLineCap = (MSO_LineCap)GetPropertyValue( DFF_Prop_lineEndCapStyle );
-				const SfxPoolItem* pPoolItem = NULL;
-				if ( rSet.GetItemState( XATTR_LINEDASH, sal_False, &pPoolItem ) == SFX_ITEM_SET )
-				{
-					XDashStyle eNewStyle = XDASH_RECT;
-					if ( eLineCap == mso_lineEndCapRound )
-						eNewStyle = XDASH_ROUND;
-					const XDash& rOldDash = ( (const XLineDashItem*)pPoolItem )->GetDashValue();
-					if ( rOldDash.GetDashStyle() != eNewStyle )
-					{
-						XDash aNew( rOldDash );
-						aNew.SetDashStyle( eNewStyle );
-						rSet.Put( XLineDashItem( XubString(), aNew ) );
-					}
-				}
-			}
+
+            // this was used to at least adapt the lineDash to the lineCap before lineCap was
+            // supported, so with supporting lineCap this is no longer needed
+			//if ( IsProperty( DFF_Prop_lineEndCapStyle ) )
+			//{
+			//	MSO_LineCap eLineCap = (MSO_LineCap)GetPropertyValue( DFF_Prop_lineEndCapStyle );
+			//	const SfxPoolItem* pPoolItem = NULL;
+			//	if ( rSet.GetItemState( XATTR_LINEDASH, sal_False, &pPoolItem ) == SFX_ITEM_SET )
+			//	{
+			//		XDashStyle eNewStyle = XDASH_RECT;
+			//		if ( eLineCap == mso_lineEndCapRound )
+			//			eNewStyle = XDASH_ROUND;
+			//		const XDash& rOldDash = ( (const XLineDashItem*)pPoolItem )->GetDashValue();
+			//		if ( rOldDash.GetDashStyle() != eNewStyle )
+			//		{
+			//			XDash aNew( rOldDash );
+			//			aNew.SetDashStyle( eNewStyle );
+			//			rSet.Put( XLineDashItem( XubString(), aNew ) );
+			//		}
+			//	}
+			//}
 		}
 	}
 	else
@@ -3227,7 +3252,7 @@ sal_Bool SvxMSDffManager::SeekToShape( SvStream& rSt, void* /* pClientData */, s
 				rSt >> aEscherF002Hd;
 				sal_uLong nEscherF002End = aEscherF002Hd.GetRecEndFilePos();
 				DffRecordHeader aEscherObjListHd;
-				while ( rSt.Tell() < nEscherF002End )
+				while ( ( rSt.GetError() == 0 ) && ( rSt.Tell() < nEscherF002End ) )
 				{
 					rSt >> aEscherObjListHd;
 					if ( aEscherObjListHd.nRecVer != 0xf )
@@ -3259,11 +3284,20 @@ sal_Bool SvxMSDffManager::SeekToShape( SvStream& rSt, void* /* pClientData */, s
 bool SvxMSDffManager::SeekToRec( SvStream& rSt, sal_uInt16 nRecId, sal_uLong nMaxFilePos, DffRecordHeader* pRecHd, sal_uLong nSkipCount ) const
 {
 	bool bRet = false;
-	sal_uLong nFPosMerk = rSt.Tell(); // FilePos merken fuer ggf. spaetere Restauration
+	sal_uLong nFPosMerk = rSt.Tell(); // store FilePos to restore it later if necessary
 	DffRecordHeader aHd;
 	do
 	{
 		rSt >> aHd;
+
+        // check potential error reading and if seeking to the end of record is possible at all.
+        // It is probably cheaper instead of doing the file seek operation 
+        if ( rSt.GetError() || ( aHd.GetRecEndFilePos() >  nMaxFilePos ) )
+        {
+            bRet= sal_False;
+            break;
+        }
+        
 		if ( aHd.nRecType == nRecId )
 		{
 			if ( nSkipCount )
@@ -3282,7 +3316,7 @@ bool SvxMSDffManager::SeekToRec( SvStream& rSt, sal_uInt16 nRecId, sal_uLong nMa
 	}
 	while ( rSt.GetError() == 0 && rSt.Tell() < nMaxFilePos && !bRet );
 	if ( !bRet )
-		rSt.Seek( nFPosMerk );	// FilePos restaurieren
+		rSt.Seek( nFPosMerk );	// restore orginal FilePos
 	return bRet;
 }
 
@@ -5788,12 +5822,15 @@ void SvxMSDffManager::GetFidclData( long nOffsDggL )
 			{
 				if ( aDggAtomHd.nRecLen == ( mnIdClusters * sizeof( FIDCL ) + 16 ) )
 				{
-					mpFidcls = new FIDCL[ mnIdClusters ];
-					for ( sal_uInt32 i = 0; i < mnIdClusters; i++ )
-					{
-						rStCtrl >> mpFidcls[ i ].dgid
-								>> mpFidcls[ i ].cspidCur;
-					}
+					//mpFidcls = new FIDCL[ mnIdClusters ];
+                    mpFidcls = new (std::nothrow) FIDCL[ mnIdClusters ];
+                    if ( mpFidcls ) {
+                        for ( sal_uInt32 i = 0; i < mnIdClusters; i++ )
+                        {
+                            rStCtrl >> mpFidcls[ i ].dgid
+                                    >> mpFidcls[ i ].cspidCur;
+                        }
+                    }
 				}
 			}
 		}
@@ -5919,7 +5956,7 @@ void SvxMSDffManager::GetCtrlData( long nOffsDgg_ )
 
 			if( !bOk )
 			{
-				nPos++;
+				nPos++;				// ????????? TODO: trying to get an one-hit wonder, this code code should be rewritten...
 				rStCtrl.Seek( nPos );
 				bOk = ReadCommonRecordHeader( rStCtrl, nVer, nInst, nFbt, nLength )
 						&& ( DFF_msofbtDgContainer == nFbt );
@@ -5935,7 +5972,7 @@ void SvxMSDffManager::GetCtrlData( long nOffsDgg_ )
             ++nDrawingContainerId;
             // <--
 		}
-		while( nPos < nMaxStrPos && bOk );
+		while( ( rStCtrl.GetError() == 0 ) && ( nPos < nMaxStrPos ) && bOk );
 	}
 }
 
@@ -6663,6 +6700,8 @@ sal_Bool SvxMSDffManager::ReadCommonRecordHeader( SvStream& rSt,
 	rSt >> nTmp >> rFbt >> rLength;
 	rVer = sal::static_int_cast< sal_uInt8 >(nTmp & 15);
 	rInst = nTmp >> 4;
+	if ( rLength > ( SAL_MAX_UINT32 - rSt.Tell() ) )	// preserving overflow, optimal would be to check
+		rSt.SetError( SVSTREAM_FILEFORMAT_ERROR );		// the record size against the parent header
 	return rSt.GetError() == 0;
 }
 
@@ -6674,7 +6713,7 @@ sal_Bool SvxMSDffManager::ProcessClientAnchor(SvStream& rStData, sal_uLong nDatL
 {
 	if( nDatLen )
 	{
-		rpBuff = new char[ nDatLen ];
+		rpBuff = new (std::nothrow) char[ nDatLen ];
 		rBuffLen = nDatLen;
 		rStData.Read( rpBuff, nDatLen );
 	}
@@ -6686,9 +6725,12 @@ sal_Bool SvxMSDffManager::ProcessClientData(SvStream& rStData, sal_uLong nDatLen
 {
 	if( nDatLen )
 	{
-		rpBuff = new char[ nDatLen ];
-		rBuffLen = nDatLen;
-		rStData.Read( rpBuff, nDatLen );
+		rpBuff = new (std::nothrow) char[ nDatLen ];
+		if ( rpBuff )
+		{
+			rBuffLen = nDatLen;
+			rStData.Read( rpBuff, nDatLen );
+		}
 	}
 	return sal_True;
 }

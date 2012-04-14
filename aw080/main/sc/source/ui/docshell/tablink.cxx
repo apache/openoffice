@@ -264,6 +264,7 @@ sal_Bool ScTableLink::Refresh(const String& rNewFile, const String& rNewFilter,
 				pUndoDoc->TransferDrawPage( pDoc, nTab, nTab );
 				pUndoDoc->SetLink( nTab, nMode, aFileName, aFilterName,
 					aOptions, aTabName, GetRefreshDelay() );
+				pUndoDoc->SetTabBgColor( nTab, pDoc->GetTabBgColor(nTab) );
 			}
 
 			//	Tabellenname einer ExtDocRef anpassen
@@ -412,7 +413,7 @@ sal_Bool ScTableLink::Refresh(const String& rNewFile, const String& rNewFilter,
 	if (bDoPaint)
 	{
         pImpl->m_pDocSh->PostPaint( ScRange(0,0,0,MAXCOL,MAXROW,MAXTAB),
-								PAINT_GRID | PAINT_TOP | PAINT_LEFT );
+								PAINT_GRID | PAINT_TOP | PAINT_LEFT | PAINT_EXTRAS );
 		aModificator.SetDocumentModified();
 	}
 

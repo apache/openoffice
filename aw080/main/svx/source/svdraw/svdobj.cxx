@@ -2090,7 +2090,7 @@ SdrObject* SdrObject::ImpConvertToContourObj(SdrObject* pRet, bool bForceLineDas
 			aExtractor.process(xSequence);
 
 			// #i102241# check for line results
-			const std::vector< basegfx::B2DPolygon >& rHairlineVector = aExtractor.getExtractedHairlines();
+			const basegfx::B2DPolygonVector& rHairlineVector = aExtractor.getExtractedHairlines();
 
 			if(rHairlineVector.size())
 			{
@@ -2102,7 +2102,7 @@ SdrObject* SdrObject::ImpConvertToContourObj(SdrObject* pRet, bool bForceLineDas
 			}
 
 			// #i102241# check for fill rsults
-			const std::vector< basegfx::B2DPolyPolygon >& rLineFillVector(aExtractor.getExtractedLineFills());
+			const basegfx::B2DPolyPolygonVector& rLineFillVector(aExtractor.getExtractedLineFills());
 
 			if(rLineFillVector.size())
 			{

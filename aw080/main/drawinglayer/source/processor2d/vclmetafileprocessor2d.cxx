@@ -34,7 +34,6 @@
 #include <drawinglayer/primitive2d/polypolygonprimitive2d.hxx>
 #include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
 #include <drawinglayer/primitive2d/bitmapprimitive2d.hxx>
-#include <drawinglayer/primitive2d/rendergraphicprimitive2d.hxx>
 #include <drawinglayer/primitive2d/metafileprimitive2d.hxx>
 #include <drawinglayer/primitive2d/maskprimitive2d.hxx>
 #include <basegfx/polygon/b2dpolygonclipper.hxx>
@@ -60,7 +59,6 @@
 #include <drawinglayer/primitive2d/graphicprimitive2d.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
 #include <drawinglayer/primitive2d/pagepreviewprimitive2d.hxx>
-#include <helperchartrenderer.hxx>
 #include <drawinglayer/primitive2d/epsprimitive2d.hxx>
 #include <basegfx/polygon/b2dlinegeometry.hxx>
 
@@ -75,11 +73,6 @@
 // for Control printing
 
 #include <com/sun/star/beans/XPropertySet.hpp>
-
-//////////////////////////////////////////////////////////////////////////////
-// for current chart PrettyPrinting support
-
-#include <drawinglayer/primitive2d/chartprimitive2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // for StructureTagPrimitive support in sd's unomodel.cxx
@@ -422,7 +415,8 @@ namespace drawinglayer
 					}
 				}
 
-	            SvtGraphicStroke::JoinType eJoin(SvtGraphicStroke::joinNone);
+                SvtGraphicStroke::JoinType eJoin(SvtGraphicStroke::joinNone);
+                SvtGraphicStroke::CapType eCap(SvtGraphicStroke::capButt);
 				double fLineWidth(0.0);
 				double fMiterLength(0.0);
 				SvtGraphicStroke::DashArray aDashArray;
@@ -462,6 +456,26 @@ namespace drawinglayer
 							break;
 						}
 					}
+
+                    // get stroke
+                    switch(pLineAttribute->getLineCap())
+                    {
+                        default: /* com::sun::star::drawing::LineCap_BUTT */
+                        {
+                            eCap = SvtGraphicStroke::capButt;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineCap_ROUND:
+                        {
+                            eCap = SvtGraphicStroke::capRound;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineCap_SQUARE:
+                        {
+                            eCap = SvtGraphicStroke::capSquare;
+                            break;
+                        }
+                    }
                 }
 
 				if(pStrokeAttribute)
@@ -489,7 +503,7 @@ namespace drawinglayer
 					PolyPolygon(aEndArrow),
 					mfCurrentUnifiedTransparence,
 					fLineWidth,
-					SvtGraphicStroke::capButt,
+					eCap,
 					eJoin,
 					fMiterLength,
 					aDashArray);
@@ -1222,6 +1236,7 @@ namespace drawinglayer
 
 							LineInfo aLineInfo(LINE_SOLID, basegfx::fround(fDiscreteLineWidth));
 						    aLineInfo.SetLineJoin(rLine.getLineJoin());
+                            aLineInfo.SetLineCap(rLine.getLineCap());
 
 						    for(sal_uInt32 a(0); a < aHairLinePolyPolygon.count(); a++)
 						    {
@@ -1300,12 +1315,6 @@ namespace drawinglayer
 				{
                     // direct draw of transformed BitmapEx primitive; use default processing
 					RenderBitmapPrimitive2D(static_cast< const primitive2d::BitmapPrimitive2D& >(rCandidate));
-					break;
-				}
-				case PRIMITIVE2D_ID_RENDERGRAPHICPRIMITIVE2D :
-				{
-                    // direct draw of transformed RenderGraphic primitive; use default processing
-					RenderRenderGraphicPrimitive2D(static_cast< const primitive2d::RenderGraphicPrimitive2D& >(rCandidate));
 					break;
 				}
 				case PRIMITIVE2D_ID_POLYPOLYGONBITMAPPRIMITIVE2D :
@@ -1677,7 +1686,8 @@ namespace drawinglayer
                                 // the ClipRegion is built from the Polygon. A AdaptiveSubdivide on the source polygon was missing there
                                 mpOutputDevice->Push(PUSH_CLIPREGION);
 								//mpOutputDevice->SetClipRegion(Region(PolyPolygon(basegfx::tools::adaptiveSubdivideByAngle(maClipPolyPolygon))));
-								mpOutputDevice->SetClipRegion(Region(PolyPolygon(maClipPolyPolygon)));
+								//mpOutputDevice->SetClipRegion(Region(PolyPolygon(maClipPolyPolygon)));
+								mpOutputDevice->SetClipRegion(Region(maClipPolyPolygon));
                             }
 
 					        // recursively paint content
@@ -1914,9 +1924,20 @@ namespace drawinglayer
 			                    (sal_Int32)floor(aViewRange.getMinX()), (sal_Int32)floor(aViewRange.getMinY()), 
 			                    (sal_Int32)ceil(aViewRange.getMaxX()), (sal_Int32)ceil(aViewRange.getMaxY()));
 		                    const Rectangle aRectPixel(mpOutputDevice->LogicToPixel(aRectLogic));
-                            const Size aSizePixel(aRectPixel.GetSize());
+                            Size aSizePixel(aRectPixel.GetSize());
                     		const Point aEmptyPoint;
                             VirtualDevice aBufferDevice;
+                            const sal_uInt32 nMaxQuadratPixels(500000);
+                            const sal_uInt32 nViewVisibleArea(aSizePixel.getWidth() * aSizePixel.getHeight());
+                            double fReduceFactor(1.0);
+
+                            if(nViewVisibleArea > nMaxQuadratPixels)
+                            {
+                                // reduce render size
+                                fReduceFactor = sqrt((double)nMaxQuadratPixels / (double)nViewVisibleArea);
+                                aSizePixel = Size(basegfx::fround((double)aSizePixel.getWidth() * fReduceFactor),
+                                    basegfx::fround((double)aSizePixel.getHeight() * fReduceFactor));
+                            }
 
                             if(aBufferDevice.SetOutputSizePixel(aSizePixel))
                             {
@@ -1938,6 +1959,12 @@ namespace drawinglayer
                                 if(!basegfx::fTools::equal(fDPIXChange, 1.0) || !basegfx::fTools::equal(fDPIYChange, 1.0))
                                 {
                                     aViewTransform.scale(fDPIXChange, fDPIYChange);
+                                }
+
+                                // also take scaling from Size reduction into acount
+                                if(!basegfx::fTools::equal(fReduceFactor, 1.0))
+                                {
+                                    aViewTransform.scale(fReduceFactor, fReduceFactor);
                                 }
 
                                 // create view information and pixel renderer. Reuse known ViewInformation
@@ -2003,21 +2030,6 @@ namespace drawinglayer
 				{
 					// use default point array pocessing
 					RenderPointArrayPrimitive2D(static_cast< const primitive2d::PointArrayPrimitive2D& >(rCandidate));
-					break;
-				}
-				case PRIMITIVE2D_ID_CHARTPRIMITIVE2D :
-				{
-					// ChartPrimitive2D
-					const primitive2d::ChartPrimitive2D& rChartPrimitive = static_cast< const primitive2d::ChartPrimitive2D& >(rCandidate);
-
-					if(!renderChartPrimitive2D(
-						rChartPrimitive, 
-						*mpOutputDevice,
-						getViewInformation2D()))
-					{
-						// fallback to decomposition (MetaFile)
-						process(rChartPrimitive.get2DDecomposition(getViewInformation2D()));
-					}
 					break;
 				}
 				case PRIMITIVE2D_ID_STRUCTURETAGPRIMITIVE2D :

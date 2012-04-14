@@ -1,29 +1,25 @@
-/*************************************************************************
- *
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+/**************************************************************
  * 
- * Copyright 2000, 2010 Oracle and/or its affiliates.
- *
- * OpenOffice.org - a multi-platform office productivity suite
- *
- * This file is part of OpenOffice.org.
- *
- * OpenOffice.org is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License version 3
- * only, as published by the Free Software Foundation.
- *
- * OpenOffice.org is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License version 3 for more details
- * (a copy is included in the LICENSE file that accompanied this code).
- *
- * You should have received a copy of the GNU Lesser General Public License
- * version 3 along with OpenOffice.org.  If not, see
- * <http://www.openoffice.org/license.html>
- * for a copy of the LGPLv3 License.
- *
- ************************************************************************/
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
 #include "macros.inc"
 
 #ifdef WNT
@@ -34,7 +30,7 @@ File gid_File_Lib_Accessbridge
     Name = "java_uno_accessbridge.dll";
 End
 #endif
-#if ((defined(WNT)) || (defined(LINUX)) || ((defined(SOLARIS)) && (defined(SPARC)))|| defined(NETBSD) )
+#if ((defined(WNT)) || (defined(LINUX)) || ((defined(SOLARIS)) && (defined(SPARC)))|| defined(NETBSD) || defined(OS2) )
 STD_LIB_FILE( gid_File_Lib_Adabas, adabas)
 #endif
 
@@ -50,6 +46,8 @@ File gid_File_Lib_Basprov
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT4(basprov,DLLPOSTFIX,.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "basprov.dll";
   #else
     Name = STRING(CONCAT4(basprov,DLLPOSTFIX,.uno,.dll));
   #endif
@@ -61,6 +59,8 @@ File gid_File_Lib_Vbaevent
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT4(vbaevents,DLLPOSTFIX,.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "vbaevent.dll";
   #else
     Name = STRING(CONCAT4(vbaevents,DLLPOSTFIX,.uno,.dll));
   #endif
@@ -79,7 +79,11 @@ File gid_File_Lib_Cached1
   #endif
 End
 
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE(gid_File_Lib_Configmgr, configmg)
+#else
 SPECIAL_COMPONENT_LIB_FILE(gid_File_Lib_Configmgr, configmgr.uno)
+#endif
 
 #ifdef WITH_LDAP
 File gid_File_Lib_Ldapbe2
@@ -94,10 +98,17 @@ File gid_File_Lib_Ldapbe2
 End
 #endif
 
+#ifdef OS2
+STD_LIB_FILE(gid_File_Lib_Chartcontroller, chartcon)
+STD_LIB_FILE(gid_File_Lib_Chartmodel, chartmod)
+STD_LIB_FILE(gid_File_Lib_Charttools, charttoo)
+STD_LIB_FILE(gid_File_Lib_Chartview, chartvie)
+#else
 STD_LIB_FILE(gid_File_Lib_Chartcontroller, chartcontroller)
 STD_LIB_FILE(gid_File_Lib_Chartmodel, chartmodel)
 STD_LIB_FILE(gid_File_Lib_Charttools, charttools)
 STD_LIB_FILE(gid_File_Lib_Chartview, chartview)
+#endif
 
 
 #if defined WNT && defined _MSC
@@ -151,7 +162,11 @@ End
 
 
 #if ! defined WNT // no longer supported on Windows
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Cmdmail, cmdmail )
+#else
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Cmdmail, cmdmail.uno )
+#endif
 #endif
 
 
@@ -159,6 +174,8 @@ File gid_File_Lib_Comphelper2
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT3(libcomphelp,COMID,UNXSUFFIX));
+  #elif defined OS2
+    Name = STRING(CONCAT2(comphelp,.dll));
   #else
     Name = STRING(CONCAT3(comphelp,COMID,.dll));
   #endif
@@ -188,21 +205,6 @@ File gid_File_Lib_Curl
    #else
     Name = "libcurl.dll";
    #endif
-  #endif
-End
-
-#endif
-
-#ifndef SYSTEM_DB
-
-File gid_File_Lib_Db
-    TXT_FILE_BODY;
-    Styles = (PACKED);
-    Dir = SCP2_OOO_BIN_DIR;
-  #ifdef UNX
-    Name = STRING(CONCAT2(libdb-4.7,UNXSUFFIX));
-  #else
-    Name = "libdb47.dll";
   #endif
 End
 
@@ -274,6 +276,8 @@ File gid_File_Lib_Collator_Data
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(libcollator_data,UNXSUFFIX));
+  #elif defined OS2
+    Name = "collator.dll";
   #else
     Name = "collator_data.dll";
   #endif
@@ -285,6 +289,8 @@ File gid_File_Lib_Index_Data
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(libindex_data,UNXSUFFIX));
+  #elif defined OS2
+    Name = "index_da.dll";
   #else
     Name = "index_data.dll";
   #endif
@@ -296,6 +302,8 @@ File gid_File_Lib_Textconv_Dict
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(libtextconv_dict,UNXSUFFIX));
+  #elif defined OS2
+    Name = "textconv.dll";
   #else
     Name = "textconv_dict.dll";
   #endif
@@ -309,6 +317,8 @@ File gid_File_Lib_Dlgprov
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT4(dlgprov,DLLPOSTFIX,.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "dlgprov.dll";
   #else
     Name = STRING(CONCAT4(dlgprov,DLLPOSTFIX,.uno,.dll));
   #endif
@@ -320,6 +330,8 @@ File gid_File_Lib_Stringresource
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT4(stringresource,DLLPOSTFIX,.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "stringre.dll";
   #else
     Name = STRING(CONCAT4(stringresource,DLLPOSTFIX,.uno,.dll));
   #endif
@@ -331,6 +343,8 @@ File gid_File_Lib_Vbaobj
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT4(libvbaobj,DLLPOSTFIX,.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "vbaobj.dll";
   #else
     Name = STRING(CONCAT4(vbaobj,DLLPOSTFIX,.uno,.dll));
   #endif
@@ -342,6 +356,8 @@ File gid_File_Lib_Vbaswobj
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT3(vbaswobj,.uno,UNXSUFFIX));
+  #elif defined(OS2)
+    Name = "vbaswobj.dll";
   #else
     Name = STRING(CONCAT3(vbaswobj,.uno,.dll));
   #endif
@@ -353,6 +369,8 @@ File gid_File_Lib_Vbamsforms
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT3(msforms,.uno,UNXSUFFIX));
+  #elif defined(OS2)
+    Name = "msforms.dll";
   #else
     Name = STRING(CONCAT3(msforms,.uno,.dll));
   #endif
@@ -364,6 +382,8 @@ File gid_File_Lib_Vbahelper
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT3(libvbahelper,DLLPOSTFIX,UNXSUFFIX));
+  #elif defined OS2
+    Name = "vbahelp.dll";
   #else
     Name = STRING(CONCAT3(vbahelper,DLLPOSTFIX,.dll));
   #endif
@@ -381,7 +401,7 @@ End
 
 #endif
 
-#ifdef WNT
+#if defined WNT || defined OS2
 
 File gid_File_Lib_Dtrans
     TXT_FILE_BODY;
@@ -392,12 +412,22 @@ End
 
 #endif
 
+#ifdef OS2
+STD_LIB_FILE(gid_File_Lib_Drawinglayer,drawingl)
+#else
 STD_LIB_FILE(gid_File_Lib_Drawinglayer,drawinglayer)
+#endif
+
+STD_LIB_FILE(gid_File_Lib_SvgIo,svgio)
 
 SPECIAL_LIB_FILE(gid_File_Lib_Embobj,embobj)
 
 #ifndef DISABLE_ATL
+#ifdef OS2
+SPECIAL_LIB_FILE(gid_File_Lib_Emboleobj,emboleob)
+#else
 SPECIAL_LIB_FILE(gid_File_Lib_Emboleobj,emboleobj)
+#endif
 #endif
 
 #if defined(WNT) && !defined(DISABLE_ATL)
@@ -474,7 +504,11 @@ File gid_File_Lib_Filterconfig1
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
+#ifdef OS2
+    Name = "filterco.dll";
+#else
     Name = SPECIAL_NAME(filterconfig1);
+#endif
 End
 
 STD_LIB_FILE( gid_File_Lib_Flat, flat)
@@ -541,14 +575,12 @@ File gid_File_Lib_Fps_Aqua
     Name = SPECIAL_COMPONENT_LIB_NAME(fps_aqua.uno);
 End
 
-#ifndef DISABLE_HUNSPELL
 File gid_File_Lib_MacOSXSpell
 	TXT_FILE_BODY;
 	Styles = (PACKED);
 	Name = LIBNAME(MacOSXSpell);
 	Dir = SCP2_OOO_BIN_DIR;
 End
-#endif
 
 File gid_File_Lib_avmediaQuickTime
 	TXT_FILE_BODY;
@@ -559,9 +591,13 @@ End
 #endif
 #endif
 
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Fps_Office, fps_offi )
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Fpicker, fpicker )
+#else
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Fps_Office, fps_office.uno )
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Fpicker, fpicker.uno )
-
+#endif
 
 #if (defined(ENABLE_CAIRO) && ! defined (SYSTEM_CAIRO))
 
@@ -588,7 +624,11 @@ End
 
 STD_LIB_FILE( gid_File_Lib_Frm , frm)
 
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Fsstorage, fsstorag )
+#else
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Fsstorage, fsstorage.uno )
+#endif
 
 #ifdef WNT
 
@@ -625,9 +665,13 @@ File gid_File_Lib_Gdiplus
 End
 #endif
 
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Hatchwindowfactory, hatchwin )
+STD_LIB_FILE( gid_File_Lib_Helplinker, helplink)
+#else
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Hatchwindowfactory, hatchwindowfactory.uno )
-
 STD_LIB_FILE( gid_File_Lib_Helplinker, helplinker)
+#endif
 
 File gid_File_Lib_I18npool
     TXT_FILE_BODY;
@@ -635,6 +679,8 @@ File gid_File_Lib_I18npool
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT2(i18npool.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "i18npool.dll";
   #else
     Name = STRING(CONCAT2(i18npool.uno,.dll));
   #endif
@@ -646,6 +692,8 @@ File gid_File_Lib_I18nsearch
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT2(i18nsearch.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "i18nsear.dll";
   #else
     Name = "i18nsearch.uno.dll";
   #endif
@@ -654,6 +702,8 @@ End
 File gid_File_Lib_I18nisolang
   #ifdef UNX
     Name = STRING(CONCAT4(libi18nisolang,ISOLANG_MAJOR,COMID,UNXSUFFIX));
+  #elif defined OS2
+    Name = "i18nisol.dll";
   #else
     Name = STRING(CONCAT4(i18nisolang,ISOLANG_MAJOR,COMID,.dll));
   #endif
@@ -664,6 +714,8 @@ File gid_File_Lib_I18nutil
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT3(libi18nutil,COMID,UNXSUFFIX));
+  #elif defined OS2
+    Name = "i18nutil.dll";
   #else
     Name = STRING(CONCAT3(i18nutil,COMID,.dll));
   #endif
@@ -671,7 +723,11 @@ File gid_File_Lib_I18nutil
     Styles = (PACKED);
 End
 
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_I18npaper, i18npape)
+#else
 STD_LIB_FILE( gid_File_Lib_I18npaper, i18npaper)
+#endif
 
 #ifndef SYSTEM_ICU
 
@@ -802,6 +858,8 @@ File gid_File_Lib_Localedata_En
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(liblocaledata_en,UNXSUFFIX));
+  #elif defined OS2
+    Name = "ld_en.dll";
   #else
     Name = "localedata_en.dll";
   #endif
@@ -813,6 +871,8 @@ File gid_File_Lib_Localedata_Es
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(liblocaledata_es,UNXSUFFIX));
+  #elif defined OS2
+    Name = "ld_es.dll";
   #else
     Name = "localedata_es.dll";
   #endif
@@ -824,6 +884,8 @@ File gid_File_Lib_Localedata_Euro
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(liblocaledata_euro,UNXSUFFIX));
+  #elif defined OS2
+    Name = "ld_eur.dll";
   #else
     Name = "localedata_euro.dll";
   #endif
@@ -835,6 +897,8 @@ File gid_File_Lib_Localedata_Others
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(liblocaledata_others,UNXSUFFIX));
+  #elif defined OS2
+    Name = "ld_oth.dll";
   #else
     Name = "localedata_others.dll";
   #endif
@@ -860,6 +924,7 @@ STD_LIB_FILE(gid_File_Lib_Mozabdrv,mozabdrv)
 
 #else
 
+#ifndef OS2
 File gid_File_Lib_Mozbootstrap
     TXT_FILE_BODY;
     Styles = (PACKED);
@@ -870,6 +935,7 @@ File gid_File_Lib_Mozbootstrap
     Name = "mozbootstrap.dll";
   #endif
 End
+#endif
 
 #endif
 
@@ -877,9 +943,13 @@ End
 STD_LIB_FILE(gid_File_Lib_Wpft,wpft)
 #endif
 
+#ifdef OS2
+STD_LIB_FILE(gid_File_Lib_T602Filter,t602filt)
+STD_LIB_FILE(gid_File_Lib_Writerfilter,wfilt)
+#else
 STD_LIB_FILE(gid_File_Lib_T602Filter,t602filter)
-
 STD_LIB_FILE(gid_File_Lib_Writerfilter,writerfilter)
+#endif
 
 #ifdef WNT
 #if defined(_gcc3)
@@ -996,7 +1066,7 @@ STD_LIB_FILE(gid_File_Lib_Odbc,odbc)
 STD_LIB_FILE( gid_File_Lib_Offacc, offacc)
 
 #ifdef SOLAR_JAVA
-#ifndef MACOSX
+#if !defined(MACOSX) && !defined(OS2)
 
 File gid_File_Lib_Officebean
     TXT_FILE_BODY;
@@ -1025,17 +1095,27 @@ End
 
 SPECIAL_LIB_FILE(gid_File_Lib_Package2,package2)
 
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Passwordcontainer, password )
+#else
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Passwordcontainer, passwordcontainer.uno )
+#endif
 
 STD_LIB_FILE( gid_File_Lib_Pcr, pcr)
 
 STD_LIB_FILE( gid_File_Lib_Log, log)
 
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_Pdffilter, pdffilte)
+#else
 STD_LIB_FILE( gid_File_Lib_Pdffilter, pdffilter)
+#endif
 
 File gid_File_Lib_Deployment
 #if defined UNX
     Name = STRING(CONCAT4(deployment,DLLPOSTFIX,.uno,UNXSUFFIX));
+#elif defined OS2
+    Name = "deploy.dll";
 #else
     Name = STRING(CONCAT3(deployment,DLLPOSTFIX,.uno.dll));
 #endif
@@ -1045,21 +1125,25 @@ End
 File gid_File_Lib_DeploymentGui
 #if defined UNX
     Name = STRING(CONCAT4(deploymentgui,DLLPOSTFIX,.uno,UNXSUFFIX));
+#elif defined OS2
+    Name = "deplgui.dll";
 #else
     Name = STRING(CONCAT3(deploymentgui,DLLPOSTFIX,.uno.dll));
 #endif
     PACKED_LIB_FILE_BODY;
 End
 
+#ifdef OS2
+STD_LIB_FILE(gid_File_Lib_DeploymentMisc, deplmisc)
+#else
 STD_LIB_FILE(gid_File_Lib_DeploymentMisc, deploymentmisc)
-
-#ifndef WITHOUT_MOZILLA
-STD_LIB_FILE( gid_File_Lib_Pl , pl)
 #endif
 
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_Preload, preloadg)
+#else
 STD_LIB_FILE( gid_File_Lib_Preload, preload)
-
-SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Productregistration, productregistration.uno )
+#endif
 
 #if defined(UNX) && ! defined(QUARTZ)
 File gid_File_Lib_Desktop_Detector
@@ -1187,6 +1271,8 @@ File gid_File_Lib_Sax_Uno
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT2(sax.uno,UNXSUFFIX));
+  #elif defined(OS2)
+    Name = "sax_uno.dll";
   #else
     Name = "sax.uno.dll";
   #endif
@@ -1198,6 +1284,8 @@ File gid_File_Lib_Fastsax_Uno
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT2(fastsax.uno,UNXSUFFIX));
+  #elif defined(OS2)
+    Name = "fastsax.dll";
   #else
     Name = "fastsax.uno.dll";
   #endif
@@ -1219,6 +1307,8 @@ File gid_File_Lib_Scriptframe
     #else
        Name = "libscriptframe.so";
     #endif
+  #elif defined OS2
+    Name = "scriptfr.dll";
   #else
     Name = "scriptframe.dll";
   #endif
@@ -1235,6 +1325,8 @@ File gid_File_Lib_Slideshow
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT2(slideshow.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "slidesho.dll";
   #else
     Name = "slideshow.uno.dll";
   #endif
@@ -1253,7 +1345,11 @@ End
 
 STD_LIB_FILE( gid_File_Lib_Sdd , sdd)
 
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_Sf_Prothdlr, protocol )
+#else
 STD_LIB_FILE( gid_File_Lib_Sf_Prothdlr, protocolhandler )
+#endif
 
 File gid_File_Lib_Sfx
     Name = LIBNAME(sfx);
@@ -1317,7 +1413,11 @@ STD_LIB_FILE( gid_File_Lib_Svtools, svt )
 
 STD_LIB_FILE( gid_File_Lib_Svx_Core, svxcore)
 STD_LIB_FILE( gid_File_Lib_Svx, svx)
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_TextConversionDlgs, txcnvdlg)
+#else
 STD_LIB_FILE( gid_File_Lib_TextConversionDlgs, textconversiondlgs)
+#endif
 STD_LIB_FILE( gid_File_Lib_Editeng, editeng)
 
 STD_LIB_FILE( gid_File_Lib_Msfilter, msfilter)
@@ -1332,15 +1432,24 @@ File gid_File_Lib_Sysdtrans
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
+#ifdef OS2
+    Name = "sysdtran.dll";
+#else
     Name = "sysdtrans.dll";
+#endif
 End
 #endif
 
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Syssh, syssh )
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Localebe, localebe )
+#else
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Syssh, syssh.uno )
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Localebe, localebe1.uno )
 
 #ifdef WNT
 SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Wininetbe, wininetbe1.uno )
+#endif
 #endif
 
 #ifdef MACOSX
@@ -1380,6 +1489,8 @@ File gid_File_Lib_Ucbhelper
     Styles = (PACKED);
   #ifdef UNX
     Name = STRING(CONCAT3(libucbhelper4,COMID,UNXSUFFIX));
+  #elif defined OS2
+    Name = "ucbh4.dll";
   #else
     Name = STRING(CONCAT3(ucbhelper4,COMID,.dll));
   #endif
@@ -1389,6 +1500,8 @@ File gid_File_Lib_Ucpchelp1
     TXT_FILE_BODY;
   #ifdef UNX
     Name = STRING(CONCAT2(libucpchelp1,UNXSUFFIX));
+  #elif defined OS2
+    Name = "ucpchelp.dll";
   #else
     Name = "ucpchelp1.dll";
   #endif
@@ -1396,9 +1509,7 @@ File gid_File_Lib_Ucpchelp1
     Styles = (PACKED);
 End
 
-#ifdef SYSTEM_NEON
 SPECIAL_LIB_FILE(gid_File_Lib_Ucpdav1,ucpdav1)
-#endif
 
 SPECIAL_LIB_FILE(gid_File_Lib_Ucpfile1,ucpfile1)
 
@@ -1408,11 +1519,15 @@ SPECIAL_LIB_FILE(gid_File_Lib_Ucphier1,ucphier1)
 
 SPECIAL_LIB_FILE(gid_File_Lib_Ucppkg1,ucppkg1)
 
+#ifdef OS2
+SPECIAL_COMPONENT_LIB_FILE(gid_File_Ucptdoc1, ucptdoc1)
+SPECIAL_COMPONENT_LIB_FILE(gid_File_Ucpext, ucpext)
+SPECIAL_COMPONENT_LIB_FILE(gid_File_Ucpexpand1, ucpexpan)
+#else
 SPECIAL_COMPONENT_LIB_FILE(gid_File_Ucptdoc1, ucptdoc1.uno)
-
 SPECIAL_COMPONENT_LIB_FILE(gid_File_Ucpext, ucpext.uno)
-
 SPECIAL_COMPONENT_LIB_FILE(gid_File_Ucpexpand1, ucpexpand1.uno)
+#endif
 
 File gid_File_Lib_Lnth
     TXT_FILE_BODY;
@@ -1588,6 +1703,8 @@ File gid_File_Lib_Migrationoo2
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT2(migrationoo2.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "migroo2.dll";
   #else
     Name = "migrationoo2.uno.dll";
   #endif
@@ -1600,17 +1717,23 @@ File gid_File_Lib_Libtextcat
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
     Name = STRING(CONCAT2(libtextcat,UNXSUFFIX));
+  #elif defined OS2
+    Name = "libtextc.dll";
   #else
     Name = "libtextcat.dll";
   #endif
 End
 #endif
 
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_Guesslang, guesslan )
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Updatefeed , updatefe )
+#else
 STD_LIB_FILE( gid_File_Lib_Guesslang, guesslang )
+SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Updatefeed , updatefeed.uno )
+#endif
 
 STD_LIB_FILE( gid_File_Lib_Updchkui , updchk )
-
-SPECIAL_COMPONENT_LIB_FILE( gid_File_Lib_Updatefeed , updatefeed.uno )
 
 #ifdef WNT
 File gid_File_Lib_Onlinecheck
@@ -1647,18 +1770,30 @@ End
 File gid_File_Lib_Soffice
     TXT_FILE_BODY;
     Dir = SCP2_OOO_BIN_DIR;
+#ifdef OS2
+    Name = SCP2_URE_DL_NORMAL("sofficea");
+#else
     Name = SCP2_URE_DL_NORMAL("sofficeapp");
+#endif
     Styles = (PACKED);
 End
 
 File gid_File_Lib_Unopkgapp
     TXT_FILE_BODY;
     Dir = SCP2_OOO_BIN_DIR;
+#ifdef OS2
+    Name = "unopkgap.dll";
+#else
     Name = SCP2_URE_DL_NORMAL("unopkgapp");
+#endif
     Styles = (PACKED);
 End
 
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_Oooimprovecore , oooimpc)
+#else
 STD_LIB_FILE( gid_File_Lib_Oooimprovecore , oooimprovecore)
+#endif
 
 #if defined WNT && !defined _gcc3 && !defined SYSTEM_MOZILLA && !defined WITHOUT_MOZILLA && \
     !(defined M1400 && defined PROF_EDITION && !defined _STLP_DEBUG)
@@ -1689,6 +1824,8 @@ File gid_File_Lib_Raptor
     #else
        Name = STRING(CONCAT4(libraptor,UNXSUFFIX,.,RAPTOR_MAJOR));
     #endif
+  #elif defined(OS2)
+    Name = "raptor.dll";
   #else
    #ifdef _gcc3
     Name = "libraptor-1.dll";
@@ -1708,6 +1845,8 @@ File gid_File_Lib_Rasqal
     #else
        Name = STRING(CONCAT4(librasqal,UNXSUFFIX,.,RASQAL_MAJOR));
     #endif
+  #elif defined(OS2)
+    Name = "rasqal.dll";
   #else
    #ifdef _gcc3
        Name = STRING(CONCAT3(librasqal-,RASQAL_MAJOR,.dll));
@@ -1727,6 +1866,8 @@ File gid_File_Lib_Rdf
     #else
        Name = STRING(CONCAT4(librdf,UNXSUFFIX,.,REDLAND_MAJOR));
     #endif
+  #elif defined(OS2)
+    Name = "librdf.dll";
   #else
    #ifdef _gcc3
     Name = "librdf-0.dll";
@@ -1853,3 +1994,57 @@ End
 #endif
 #endif
 
+#if !defined(OS2) // using system libs
+
+File gid_File_Lib_Apr
+     #ifdef WNT
+        Name = SPECIAL_NAME(libapr-1);
+     #else
+	// Looks like the major version number is part of the name, not
+	// part of the suffix.  An error?
+	#ifdef MACOSX
+            Name = STRING(CONCAT6(libapr-1,.0.,APR_MINOR,.,APR_MICRO,UNXSUFFIX));
+	#elif FREEBSD
+            Name = STRING(CONCAT3(libapr-1,UNXSUFFIX,.4));
+        #else
+            Name = STRING(CONCAT6(libapr-1,UNXSUFFIX,.0.,APR_MINOR,.,APR_MICRO));
+        #endif
+     #endif
+     PACKED_LIB_FILE_BODY;
+End
+
+File gid_File_Lib_AprUtil
+    #ifdef WNT
+        Name = SPECIAL_NAME(apr-util);
+    #else
+	// Looks like the major version number is part of the name, not
+	// part of the suffix.  An error?
+	#ifdef MACOSX
+            Name = STRING(CONCAT6(libaprutil-1,.0.,APR_UTIL_MINOR,.,APR_UTIL_MICRO,UNXSUFFIX));
+	#elif FREEBSD
+            Name = STRING(CONCAT3(libaprutil-1,UNXSUFFIX,.4));
+	#else
+            Name = STRING(CONCAT6(libaprutil-1,UNXSUFFIX,.0.,APR_UTIL_MINOR,.,APR_UTIL_MICRO));
+	#endif
+    #endif
+    PACKED_LIB_FILE_BODY;
+End
+
+File gid_File_Lib_Serf
+    #ifdef WNT
+        Name = SPECIAL_NAME(serf);
+    #else
+	// Looks like the major version number is part of the name, not
+	// part of the suffix.  An error?
+	#ifdef MACOSX
+            Name = STRING(CONCAT6(libserf-1,.0.,SERF_MINOR,.,SERF_MICRO,UNXSUFFIX));
+	#elif FREEBSD
+            Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.0));
+	#else
+            Name = STRING(CONCAT6(libserf-1,UNXSUFFIX,.0.,SERF_MINOR,.,SERF_MICRO));
+	#endif
+    #endif
+    PACKED_LIB_FILE_BODY;
+End
+
+#endif // !defined(OS2)

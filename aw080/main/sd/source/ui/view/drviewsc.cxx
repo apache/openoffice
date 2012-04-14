@@ -361,10 +361,17 @@ void DrawViewShell::FuTemp03(SfxRequest& rReq)
 				    SdrGrafObj* pGraf = dynamic_cast< SdrGrafObj* >(pObj);
 					SdrOle2Obj* pOle2 = dynamic_cast< SdrOle2Obj* >(pObj);
 
-					if (pGraf && pGraf->HasGDIMetaFile())
-    				{
-						nCount += pGraf->GetGraphic().GetGDIMetaFile().GetActionCount();
-					}
+                    if(pGraf)
+                    {
+                        if(pGraf->HasGDIMetaFile())
+                        {
+                            nCount += pGraf->GetGraphic().GetGDIMetaFile().GetActionCount();
+                        }
+                        else if(pGraf->isEmbeddedSvg())
+                        {
+                            nCount += pGraf->getMetafileFromEmbeddedSvg().GetActionCount();
+                        }
+                    }
 
 					if(pOle2 && pOle2->GetGraphic())
 					{

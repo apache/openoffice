@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 package installer::globals;
 
@@ -128,7 +124,8 @@ BEGIN
 	$setupscript_defined_in_productlist = 0;
 	$islinux = 0;	
 	$issolaris = 0;
-    $ismacosx = 0;
+	$ismacosx = 0;
+	$isos2 = 0;
 	$iswindowsbuild = 0;
 	$islinuxbuild = 0;
 	$islinuxrpmbuild = 0;
@@ -346,6 +343,7 @@ BEGIN
 	$patch_user_dir = 0;
 	$addchildprojects = 0;
 	$languagepack = 0;
+	$devsnapshotbuild = 0;
 	$tab = 0;
 	$patch = 0;
 	$patchincludepath = "";
@@ -516,6 +514,20 @@ BEGIN
 		%savedrev83mapping = ();
 		%saved83dirmapping = ();
 	}
+	elsif ( $plat =~ /os2/i )
+	{ 
+		print "Setup OS/2 platform\n";
+		$zippath = "zip";					# Has to be in the path: /usr/bin/zip
+		$checksumfile = "so_checksum";
+		$unopkgfile = "unopkg.bin";
+		$separator = "/";
+		$pathseparator = "\:";
+		$libextension = "\.dll";
+		$isunix = 0;
+		$iswin = 0;
+		$isos2 = 1;
+                $archiveformat = ".zip";
+	}
 	else
 	{ 
 		$zippath = "zip";					# Has to be in the path: /usr/bin/zip
@@ -543,6 +555,7 @@ BEGIN
 	if ( $plat =~ /kfreebsd/i ) { $islinux = 1; } 
 	if ( $plat =~ /solaris/i ) { $issolaris = 1; } 
     if ( $plat =~ /darwin/i ) { $ismacosx = 1; }
+	if ( $plat =~ /os2/i ) { $isos2 = 1; } 
 
 	# ToDo: Needs to be expanded for additional platforms
 

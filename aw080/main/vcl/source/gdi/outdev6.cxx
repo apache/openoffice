@@ -33,7 +33,6 @@
 #include <vcl/svapp.hxx>
 #include <vcl/wrkwin.hxx>
 #include <vcl/graph.hxx>
-#include <vcl/rendergraphicrasterizer.hxx>
 
 #include <wall2.hxx>
 #include <salgdi.hxx>
@@ -201,7 +200,7 @@ void OutputDevice::DrawTransparent( const basegfx::B2DPolyPolygon& rB2DPolyPoly,
 			for( int nPolyIdx = 0; nPolyIdx < nPolyCount; ++nPolyIdx )
 			{
 				const ::basegfx::B2DPolygon aOnePoly = aB2DPolyPolygon.getB2DPolygon( nPolyIdx );
-				mpGraphics->DrawPolyLine( aOnePoly, fTransparency, aHairlineWidth, ::basegfx::B2DLINEJOIN_NONE, this );
+				mpGraphics->DrawPolyLine( aOnePoly, fTransparency, aHairlineWidth, ::basegfx::B2DLINEJOIN_NONE, com::sun::star::drawing::LineCap_BUTT, this );
 			}
 		}
 
@@ -318,7 +317,7 @@ void OutputDevice::DrawTransparent( const PolyPolygon& rPolyPoly,
 			for( int nPolyIdx = 0; nPolyIdx < nPolyCount; ++nPolyIdx )
 			{
 				const ::basegfx::B2DPolygon& rPolygon = aB2DPolyPolygon.getB2DPolygon( nPolyIdx );
-				bDrawn = mpGraphics->DrawPolyLine( rPolygon, fTransparency, aLineWidths, ::basegfx::B2DLINEJOIN_NONE, this );
+				bDrawn = mpGraphics->DrawPolyLine( rPolygon, fTransparency, aLineWidths, ::basegfx::B2DLINEJOIN_NONE, com::sun::star::drawing::LineCap_BUTT, this );
 			}
 			// prepare to restore the fill color
 			mbInitFillColor = mbFillColor;
@@ -1246,25 +1245,3 @@ bool OutputDevice::DrawEPS( const Point& rPoint, const Size& rSize,
     return bDrawn;
 }
 
-// ------------------------------------------------------------------
-
-void OutputDevice::DrawRenderGraphic( const Point& rPoint, const Size& rSize,
-                                      const ::vcl::RenderGraphic& rRenderGraphic )
-{
-	DBG_TRACE( "OutputDevice::DrawRenderGraphic()" );
-
-	if( mpMetaFile )
-		mpMetaFile->AddAction( new MetaRenderGraphicAction( rPoint, rSize, rRenderGraphic ) );
-
-    if( !rRenderGraphic.IsEmpty() )
-    {
-        ::vcl::RenderGraphicRasterizer  aRasterizer( rRenderGraphic );
-        BitmapEx                        aBmpEx;
-        const Size                      aSizePixel( LogicToPixel( rSize ) );
-        GDIMetaFile*                    pOldMetaFile = mpMetaFile;
-
-        mpMetaFile = NULL;
-        DrawBitmapEx( rPoint, rSize, aRasterizer.Rasterize( aSizePixel ) );
-        mpMetaFile = pOldMetaFile;
-    }
-}

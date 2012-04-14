@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 #################
 # use
@@ -258,7 +254,6 @@ if ( $installer::globals::globallogging ) { installer::files::save_hash($logging
 installer::ziplist::overwrite_ooovendor( $allvariableshashref );
 if ( $installer::globals::globallogging ) { installer::files::save_hash($loggingdir . "allvariables3c.log", $allvariableshashref); }
 
-
 ########################################################
 # Check if this is simple packaging mechanism
 ########################################################
@@ -340,6 +335,11 @@ if ($installer::globals::languages_defined_in_productlist) { installer::language
 #####################################
 
 if ( $installer::globals::iswindowsbuild ) { installer::control::read_encodinglist($includepatharrayref); }
+
+####################################################################
+# MacOS dmg build requires special DS_Store file to arrange icons
+####################################################################
+if (($installer::globals::ismacdmgbuild) && ($installer::globals::product eq "OpenOffice_Dev")) { $installer::globals::devsnapshotbuild = 1; }
 
 #####################################################################
 # Including additional inc files for variable settings, if defined
@@ -483,6 +483,7 @@ if (( ! $allvariableshashref->{'XPDINSTALLER'} ) || ( ! $installer::globals::isx
 
 if ( $installer::globals::languagepack ) { installer::scriptitems::use_langpack_copy_scpaction($scpactionsinproductarrayref); }
 if ( $installer::globals::patch ) { installer::scriptitems::use_patch_copy_scpaction($scpactionsinproductarrayref); }
+if (($installer::globals::devsnapshotbuild)) { installer::scriptitems::use_dev_copy_scpaction($scpactionsinproductarrayref); }
 if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productscpactions1b.log", $scpactionsinproductarrayref); }
 
 # $scpactionsinproductarrayref = installer::scriptitems::remove_scpactions_without_name($scpactionsinproductarrayref);
@@ -795,10 +796,16 @@ for ( my $n = 0; $n <= $#installer::globals::languageproducts; $n++ )
 	$filesinproductlanguageresolvedarrayref = installer::scriptitems::remove_non_existent_languages_in_productlists($filesinproductlanguageresolvedarrayref, $languagestringref, "Name", "file");
 	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles7.log", $filesinproductlanguageresolvedarrayref); }
 
-	installer::scriptitems::get_Destination_Directory_For_Item_From_Directorylist($filesinproductlanguageresolvedarrayref, $dirsinproductarrayref);
-	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles8.log", $filesinproductlanguageresolvedarrayref); }
-
 	installer::scriptitems::get_Source_Directory_For_Files_From_Includepathlist($filesinproductlanguageresolvedarrayref, $includepatharrayref_lang, $dirsinproductlanguageresolvedarrayref, "Files");
+	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles8a.log", $filesinproductlanguageresolvedarrayref); }
+
+	$filesinproductlanguageresolvedarrayref = installer::scriptitems::add_bundled_extension_blobs( $filesinproductlanguageresolvedarrayref);
+	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles8b.log", $filesinproductlanguageresolvedarrayref); }
+    ($filesinproductlanguageresolvedarrayref,$dirsinproductarrayref) = installer::scriptitems::add_bundled_prereg_extensions(
+        $filesinproductlanguageresolvedarrayref, $dirsinproductarrayref);
+	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles8c.log", $filesinproductlanguageresolvedarrayref); }
+
+	installer::scriptitems::get_Destination_Directory_For_Item_From_Directorylist($filesinproductlanguageresolvedarrayref, $dirsinproductarrayref);
 	if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles9.log", $filesinproductlanguageresolvedarrayref); }
 
 	$filesinproductlanguageresolvedarrayref = installer::scriptitems::remove_Files_Without_Sourcedirectory($filesinproductlanguageresolvedarrayref);
@@ -1077,21 +1084,11 @@ for ( my $n = 0; $n <= $#installer::globals::languageproducts; $n++ )
 		$modulesinproductlanguageresolvedarrayref = installer::scriptitems::remove_not_required_language_modules($modulesinproductlanguageresolvedarrayref, $languagesarrayref);
 		if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes_modules($loggingdir . "modules2a.log", $modulesinproductlanguageresolvedarrayref); }
 
-		if ( $installer::globals::analyze_spellcheckerlanguage )
-		{
-			$modulesinproductlanguageresolvedarrayref = installer::scriptitems::remove_not_required_spellcheckerlanguage_modules($modulesinproductlanguageresolvedarrayref);
-			if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes_modules($loggingdir . "modules3.log", $modulesinproductlanguageresolvedarrayref); }
-
-			$filesinproductlanguageresolvedarrayref = installer::scriptitems::remove_not_required_spellcheckerlanguage_files($filesinproductlanguageresolvedarrayref);
-			if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "productfiles15b.log", $filesinproductlanguageresolvedarrayref); }
-		}
-		
 		installer::scriptitems::changing_name_of_language_dependent_keys($modulesinproductlanguageresolvedarrayref);
 		if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes_modules($loggingdir . "modules3a.log", $modulesinproductlanguageresolvedarrayref); }
 
 		# installer::scriptitems::collect_language_specific_names($modulesinproductlanguageresolvedarrayref);	
 		installer::scriptitems::select_required_language_strings($modulesinproductlanguageresolvedarrayref);	# using english strings
-			
 	}
 		
 	# Copy-only projects can now start to copy all items File and ScpAction 

@@ -29,7 +29,7 @@
 #include <com/sun/star/uno/XReference.hpp>
 #include <com/sun/star/ucb/XCommandEnvironment.hpp>
 
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
 class DAVAuthListener : public salhelper::SimpleReferenceObject
@@ -40,9 +40,10 @@ class DAVAuthListener : public salhelper::SimpleReferenceObject
             const ::rtl::OUString & inHostName,
             ::rtl::OUString & inoutUserName,
             ::rtl::OUString & outPassWord,
-            sal_Bool bCanUseSystemCredentials ) = 0;
+            sal_Bool bCanUseSystemCredentials,
+            sal_Bool bUsePreviousCredentials = sal_True ) = 0;
 };
 
-} // namespace webdav_ucp
+} // namespace http_dav_ucp
 
 #endif // _DAVAUTHLISTENER_HXX_

@@ -83,6 +83,10 @@ static const char   aXMLAttrGradientUnits[] = "gradientUnits";
 static const char   aXMLAttrOffset[] = "offset";
 static const char   aXMLAttrStopColor[] = "stop-color";
 
+// added support for LineJoin and LineCap
+static const char   aXMLAttrStrokeLinejoin[] = "stroke-linejoin";
+static const char   aXMLAttrStrokeLinecap[] = "stroke-linecap";
+
 // -----------------------------------------------------------------------------
 
 static const sal_Unicode pBase64[] = 
@@ -489,8 +493,8 @@ PolyPolygon& SVGActionWriter::ImplMap( const PolyPolygon& rPolyPoly, PolyPolygon
 			aPathData += ::rtl::OUString::valueOf( ( aPolyPoint = rPoly[ 0 ] ).X() );
 			aPathData += aComma;
 			aPathData += ::rtl::OUString::valueOf( aPolyPoint.Y() );
-			
             sal_Char nCurrentMode = 0;
+            const bool bClose(!bLine || rPoly[0] == rPoly[nSize - 1]);
 
 			while( n < nSize )
 			{
@@ -525,7 +529,7 @@ PolyPolygon& SVGActionWriter::ImplMap( const PolyPolygon& rPolyPoly, PolyPolygon
 				}
 			}
 
-			if( !bLine )
+			if(bClose)
 				aPathData += B2UCONST( " Z" );
 
 			if( i < ( nCount - 1 ) )
@@ -673,7 +677,52 @@ void SVGActionWriter::ImplWriteShape( const SVGShapeDescriptor& rShape, sal_Bool
         sal_Int32 nStrokeWidth = ( bApplyMapping ? ImplMap( rShape.mnStrokeWidth ) : rShape.mnStrokeWidth );
         mrExport.AddAttribute( XML_NAMESPACE_NONE, aXMLAttrStrokeWidth, ::rtl::OUString::valueOf( nStrokeWidth ) );
     }
-        
+
+    // support for LineJoin
+    switch(rShape.maLineJoin)
+    {
+        default: // B2DLINEJOIN_NONE, B2DLINEJOIN_MIDDLE
+        case basegfx::B2DLINEJOIN_MITER:
+        {
+            // miter is Svg default, so no need to write until the exporter might write styles.
+            // If this happens, activate here
+            // mrExport.AddAttribute(XML_NAMESPACE_NONE, aXMLAttrStrokeLinejoin, ::rtl::OUString::createFromAscii("miter"));
+            break;
+        }
+        case basegfx::B2DLINEJOIN_BEVEL:
+        {
+            mrExport.AddAttribute(XML_NAMESPACE_NONE, aXMLAttrStrokeLinejoin, ::rtl::OUString::createFromAscii("bevel"));
+            break;
+        }
+        case basegfx::B2DLINEJOIN_ROUND:
+        {
+            mrExport.AddAttribute(XML_NAMESPACE_NONE, aXMLAttrStrokeLinejoin, ::rtl::OUString::createFromAscii("round"));
+            break;
+        }
+    }
+
+    // support for LineCap
+    switch(rShape.maLineCap)
+    {
+        default: /* com::sun::star::drawing::LineCap_BUTT */
+        {
+            // butt is Svg default, so no need to write until the exporter might write styles.
+            // If this happens, activate here
+            // mrExport.AddAttribute(XML_NAMESPACE_NONE, aXMLAttrStrokeLinecap, ::rtl::OUString::createFromAscii("butt"));
+            break;
+        }
+        case com::sun::star::drawing::LineCap_ROUND:
+        {
+            mrExport.AddAttribute(XML_NAMESPACE_NONE, aXMLAttrStrokeLinecap, ::rtl::OUString::createFromAscii("round"));
+            break;
+        }
+        case com::sun::star::drawing::LineCap_SQUARE:
+        {
+            mrExport.AddAttribute(XML_NAMESPACE_NONE, aXMLAttrStrokeLinecap, ::rtl::OUString::createFromAscii("square"));
+            break;
+        }
+    }
+
     if( rShape.maDashArray.size() )
     {
         const ::rtl::OUString   aComma( B2UCONST( "," ) );
@@ -845,7 +894,10 @@ void SVGActionWriter::ImplWriteText( const Point& rPos, const String& rText,
                     }
 
                     if( bCont )
-                        nX = aPos.X() + pDXArray[ nCurPos - 1 ];
+                    {
+                        // #118796# do NOT access pDXArray, it may be zero (!)
+                        nX = aPos.X() + pDX[ nCurPos - 1 ];
+                    }
                 }
             }
         }
@@ -1039,6 +1091,10 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                                         sal_uInt32 nWriteFlags,
                                         const ::rtl::OUString* pElementId )
 {
+    // need a counter fo rthe actions written per shape to avoid double ID
+    // generation
+    sal_Int32 nEntryCount(0);
+
     if( mnInnerMtfCount )
         nWriteFlags |= SVGWRITER_NO_SHAPE_COMMENTS;
 
@@ -1381,8 +1437,10 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                             mapCurShape.reset( new SVGShapeDescriptor );
                             
                             if( pElementId )
-                                mapCurShape->maId = *pElementId;
-                            
+                            {
+                                mapCurShape->maId = *pElementId + B2UCONST("_") + ::rtl::OUString::valueOf(nEntryCount++);
+                            }
+
                             mapCurShape->maShapePolyPoly = aShapePolyPoly;
                             mapCurShape->maShapeFillColor = aFill.getFillColor();
                             mapCurShape->maShapeFillColor.SetTransparency( (sal_uInt8) FRound( 255.0 * aFill.getTransparency() ) );
@@ -1447,16 +1505,32 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                     
                     if( bSkip )
                     {
+                        Polygon aPoly;
+
+                        aStroke.getPath(aPoly);
+
+                        if(mapCurShape.get())
+                        {
+                            if(1 != mapCurShape->maShapePolyPoly.Count()
+                                || !mapCurShape->maShapePolyPoly[0].IsEqual(aPoly))
+                            {
+                                // this path action is not covering the same path than the already existing
+                                // fill polypolygon, so write out the fill polygon
+                                ImplWriteShape( *mapCurShape );
+                                mapCurShape.reset();
+                            }
+                        }
+
                         if( !mapCurShape.get() )
                         {
-                            Polygon aPoly;
                             
                             mapCurShape.reset( new SVGShapeDescriptor );
                             
                             if( pElementId )
-                                mapCurShape->maId = *pElementId;
+                            {
+                                mapCurShape->maId = *pElementId + B2UCONST("_") + ::rtl::OUString::valueOf(nEntryCount++);
+                            }
                             
-                            aStroke.getPath( aPoly );
                             mapCurShape->maShapePolyPoly = aPoly;
                         }
                             
@@ -1464,6 +1538,46 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                         mapCurShape->maShapeLineColor.SetTransparency( (sal_uInt8) FRound( aStroke.getTransparency() * 255.0 ) );
                         mapCurShape->mnStrokeWidth = FRound( aStroke.getStrokeWidth() ); 
                         aStroke.getDashArray( mapCurShape->maDashArray );
+
+                        // added support for LineJoin
+                        switch(aStroke.getJoinType())
+                        {
+                            default: /* SvtGraphicStroke::joinMiter,  SvtGraphicStroke::joinNone */
+                            {
+                                mapCurShape->maLineJoin = basegfx::B2DLINEJOIN_MITER;
+                                break;
+                            }
+                            case SvtGraphicStroke::joinRound:
+                            {
+                                mapCurShape->maLineJoin = basegfx::B2DLINEJOIN_ROUND;
+                                break;
+                            }
+                            case SvtGraphicStroke::joinBevel:
+                            {
+                                mapCurShape->maLineJoin = basegfx::B2DLINEJOIN_BEVEL;
+                                break;
+                            }
+                        }
+
+                        // added support for LineCap
+                        switch(aStroke.getCapType())
+                        {
+                            default: /* SvtGraphicStroke::capButt */
+                            {
+                                mapCurShape->maLineCap = com::sun::star::drawing::LineCap_BUTT;
+                                break;
+                            }
+                            case SvtGraphicStroke::capRound:
+                            {
+                                mapCurShape->maLineCap = com::sun::star::drawing::LineCap_ROUND;
+                                break;
+                            }
+                            case SvtGraphicStroke::capSquare:
+                            {
+                                mapCurShape->maLineCap = com::sun::star::drawing::LineCap_SQUARE;
+                                break;
+                            }
+                        }
                     }
                     
                     // write open shape in every case
@@ -1654,24 +1768,6 @@ void SVGActionWriter::ImplWriteActions( const GDIMetaFile& rMtf,
                         mpContext->SetFontAttr( aFont );
                         ImplWriteText( pA->GetPoint(), aText, NULL, pA->GetWidth() );
                     }
-				}
-			}
-			break;
-
-            case( META_RENDERGRAPHIC_ACTION ):
-            {
-				if( nWriteFlags & SVGWRITER_WRITE_FILL )
-				{
-                    // TODO KA: try to embed the native data in case the RenderGraphic
-                    // contains valid SVG data (MimeType "image/svg+xml")
-                    // => incorporate 'use' or 'image' element (KA 01/2011)
-					const MetaRenderGraphicAction*          pA = (const MetaRenderGraphicAction*) pAction;
-                    const ::vcl::RenderGraphicRasterizer    aRasterizer( pA->GetRenderGraphic() );
-                    const Point                             aPointPixel;
-                    const Size                              aSizePixel( mpVDev->LogicToPixel( pA->GetSize() ) );
-                    const BitmapEx                          aBmpEx( aRasterizer.Rasterize( aSizePixel ) );
-				
-					ImplWriteBmp( aBmpEx, pA->GetPoint(), pA->GetSize(), aPointPixel, aBmpEx.GetSizePixel() );
 				}
 			}
 			break;

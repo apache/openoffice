@@ -1796,7 +1796,7 @@ const SwRect SwContourCache::ContourRect( const SwFmt* pFmt,
 				const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
 
 				// create extractor, process and get result
-				::drawinglayer::processor2d::ContourExtractor2D aExtractor(aViewInformation2D);
+				::drawinglayer::processor2d::ContourExtractor2D aExtractor(aViewInformation2D, false);
 				aExtractor.process(xSequence);
 				const std::vector< basegfx::B2DPolyPolygon >& rResult(aExtractor.getExtractedContour());
 				const sal_uInt32 nSize(rResult.size());

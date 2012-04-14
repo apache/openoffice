@@ -185,12 +185,12 @@ void PackageManagerImpl::initActivationLayer(
 
         OUString dbName;
         if (m_context.equals(OUSTR("user")))
-            dbName = m_activePackages_expanded + OUSTR(".db");
+            dbName = m_activePackages_expanded + OUSTR(".pmap");
         else
         {
             //Create the extension data base in the user installation
             create_folder( 0, m_registrationData_expanded, xCmdEnv, true);
-            dbName = m_registrationData_expanded + OUSTR("/extensions.db");
+            dbName = m_registrationData_expanded + OUSTR("/extensions.pmap");
         }
         //The data base can always be written because it it always in the user installation
         m_activePackagesDB.reset(
@@ -377,7 +377,7 @@ Reference<deployment::XPackageManager> PackageManagerImpl::create(
         //configmgr.ini also used $BUNDLED_EXTENSIONS_PREREG to refer to the xcu file
         //which contain the replacement for %origin%.
         that->m_activePackages = OUSTR(
-            "vnd.sun.star.expand:$BUNDLED_EXTENSIONS");
+            "vnd.sun.star.expand:$BUNDLED_EXTENSIONS_PREREG");
         that->m_registrationData = OUSTR(
             "vnd.sun.star.expand:$BUNDLED_EXTENSIONS_PREREG");
         that->m_registryCache = OUSTR(
@@ -1362,7 +1362,7 @@ bool PackageManagerImpl::synchronizeRemovedExtensions(
 bool PackageManagerImpl::synchronizeAddedExtensions(
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<css::ucb::XCommandEnvironment> const & xCmdEnv)
-{ 
+{
     bool bModified = false;
     OSL_ASSERT(!m_context.equals(OUSTR("user")));
 
@@ -1481,7 +1481,9 @@ bool PackageManagerImpl::synchronizeAddedExtensions(
         }
         catch (uno::Exception &)
         {
-            OSL_ASSERT(0);
+            // Looks like exceptions being caught here is not an
+            // uncommon case.
+			OSL_TRACE("caught exception in PackageManagerImpl::synchronizeAddedExtensions");
         }   
     }
     return bModified;

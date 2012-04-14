@@ -1,32 +1,27 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.  If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
 LIBSMKREV!:="$$Revision: 1.134.2.3 $$"
 
-.IF ("$(GUI)"=="UNX" || "$(COM)"=="GCC") && "$(GUI)"!="OS2"
+.IF ("$(GUI)"=="UNX" || "$(COM)"=="GCC")
 
 #
 #externe libs in plattform.mk
@@ -43,6 +38,11 @@ ICUINLIB=-licuin$(ICU_MAJOR)$(ICU_MINOR)
 ICULELIB=-licule$(ICU_MAJOR)$(ICU_MINOR)
 ICUUCLIB=-licuuc$(ICU_MAJOR)$(ICU_MINOR)
 ICUDATALIB=-licudt$(ICU_MAJOR)$(ICU_MINOR)
+.ELIF "$(GUI)"=="OS2"
+ICUINLIB=-licuin
+ICULELIB=-licule
+ICUUCLIB=-licuuc
+ICUDATALIB=-licudt
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
 ICUINLIB=-licui18n
 ICULELIB=-licule
@@ -55,6 +55,8 @@ I18NISOLANGLIB=-li18nisolang$(ISOLANG_MAJOR)$(COMID)
 I18NPAPERLIB=-li18npaper$(DLLPOSTFIX)
 .IF "$(GUI)$(COM)"=="WNTGCC"
 SALHELPERLIB=-lsalhelper$(UDK_MAJOR)$(COMID)
+.ELIF "$(GUI)"=="OS2"
+SALHELPERLIB=-lsalhelp$(UDK_MAJOR)
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
 SALHELPERLIB=-luno_salhelper$(COMID)
 .ENDIF			# "$(GUI)$(COM)"=="WNTGCC"
@@ -68,12 +70,19 @@ TOOLSLIB=-ltl$(DLLPOSTFIX)
 .IF "$(GUI)$(COM)"=="WNTGCC"
 CPPULIB=-lcppu$(UDK_MAJOR)
 CPPUHELPERLIB=-lcppuhelper$(UDK_MAJOR)$(COMID)
+.ELIF "$(GUI)"=="OS2"
+CPPULIB=-lcppu$(UDK_MAJOR)
+CPPUHELPERLIB=-lcppuh$(UDK_MAJOR)
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
 CPPULIB=-luno_cppu
 CPPUHELPERLIB=-luno_cppuhelper$(COMID)
 .ENDIF			# "$(GUI)$(COM)"=="WNTGCC"
 .INCLUDE .IGNORE : ucbhelper/version.mk
+.IF "$(GUI)"=="OS2"
+UCBHELPERLIB=-lucbh$(UCBHELPER_MAJOR)
+.ELSE
 UCBHELPERLIB=-lucbhelper$(UCBHELPER_MAJOR)$(COMID)
+.ENDIF
 .IF "$(SYSTEM_OPENSSL)" == "YES"
 OPENSSLLIB=$(OPENSSL_LIBS)
 OPENSSLLIBST=$(STATIC) $(OPENSSL_LIBS) $(DYNAMIC)
@@ -85,7 +94,7 @@ OPENSSLLIBST=-lssl_static -lcrypto_static
 OPENSSLLIBST=$(STATIC) -lssl -lcrypto $(DYNAMIC)
 .ENDIF          # "$(GUI)$(COM)"=="WNTGCC"
 .ENDIF          # "$(SYSTEM_OPENSSL)" == "YES"
-.IF "$(GUI)$(COM)"=="WNTGCC"
+.IF "$(GUI)$(COM)"=="WNTGCC" || "$(GUI)"=="OS2"
 REGLIB=-lreg$(UDK_MAJOR)
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
 REGLIB=-lreg
@@ -94,7 +103,7 @@ REGLIB=-lreg
 VOSLIB=-lvos$(VOS_MAJOR)$(COMID)
 XMLOFFLIB=-lxo$(DLLPOSTFIX)
 XMLOFFLLIB=-lxol
-.IF "$(GUI)$(COM)"=="WNTGCC"
+.IF "$(GUI)$(COM)"=="WNTGCC" || "$(GUI)"=="OS2"
 STORELIB=-lstore$(UDK_MAJOR)
 SALLIB=-lsal$(UDK_MAJOR)
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
@@ -105,7 +114,7 @@ SALLIB=-luno_sal
 ODBCLIB=-lodbc$(DLLPOSTFIX)
 ODBCBASELIB=-lodbcbase$(DLLPOSTFIX)
 DBFILELIB=-lfile$(DLLPOSTFIX)
-.IF "$(GUI)$(COM)"=="WNTGCC"
+.IF "$(GUI)$(COM)"=="WNTGCC" || "$(GUI)"=="OS2"
 RMCXTLIB=-lrmcxt$(UDK_MAJOR)
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
 RMCXTLIB=-lrmcxt
@@ -139,6 +148,7 @@ VCLLIB=-lvcl$(DLLPOSTFIX)
 OOXLIB=-loox$(DLLPOSTFIX)
 BASEGFXLIB=-lbasegfx$(DLLPOSTFIX)
 DRAWINGLAYERLIB=-ldrawinglayer$(DLLPOSTFIX)
+SVGIOLIB=-lsvgio$(DLLPOSTFIX)
 BASEBMPLIB=-lbasebmp$(DLLPOSTFIX)
 CANVASTOOLSLIB=-lcanvastools$(DLLPOSTFIX)
 CPPCANVASLIB=-lcppcanvas$(DLLPOSTFIX)
@@ -180,7 +190,11 @@ TKTLIB=-ltkt$(DLLPOSTFIX)
 SAXLIB=-lsax$(DLLPOSTFIX)
 MAILLIB=-lmail
 DOCMGRLIB=-ldmg$(DLLPOSTFIX)
+.IF "$(GUI)"=="OS2"
+BASICLIB=-lbasic
+.ELSE
 BASICLIB=-lsb$(DLLPOSTFIX)
+.ENDIF
 VBAHELPERLIB=-lvbahelper$(DLLPOSTFIX)
 DBTOOLSLIB=-ldbtools$(DLLPOSTFIX)
 HM2LIBSH=-lhmwrpdll
@@ -224,11 +238,6 @@ NEON3RDLIB=$(SOLARLIBDIR)/libneon.dylib
 .ELSE
 NEON3RDLIB=-lneon
 .ENDIF
-.IF "$(SYSTEM_DB)" == "YES"
-BERKELEYLIB=-ldb
-.ELSE
-BERKELEYLIB=-ldb-4.7
-.ENDIF
 CURLLIB=-lcurl
 SFX2LIB=-lsfx$(DLLPOSTFIX)
 SFXLIB=-lsfx$(DLLPOSTFIX)
@@ -260,7 +269,7 @@ ISCLIB=-lsc$(DLLPOSTFIX)
 ISDLIB=-lsd$(DLLPOSTFIX)
 PKGCHKLIB=-lpkgchk$(DLLPOSTFIX)
 HELPLINKERLIB=-lhelplinker$(DLLPOSTFIX)
-.IF "$(GUI)$(COM)"=="WNTGCC"
+.IF "$(GUI)$(COM)"=="WNTGCC" || "$(GUI)"=="OS2"
 JVMACCESSLIB = -ljvmaccess$(UDK_MAJOR)$(COMID)
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
 JVMACCESSLIB = -ljvmaccess$(COMID)
@@ -275,7 +284,7 @@ XSLTLIB=$(LIBXSLT_LIBS)
 .ELSE
 XSLTLIB=-lxslt $(LIBXML2LIB)
 .ENDIF
-.IF "$(GUI)$(COM)"=="WNTGCC"
+.IF "$(GUI)$(COM)"=="WNTGCC" || "$(GUI)"=="OS2"
 JVMFWKLIB = -ljvmfwk$(UDK_MAJOR)
 .ELSE			# "$(GUI)$(COM)"=="WNTGCC"
 JVMFWKLIB = -ljvmfwk
@@ -339,28 +348,27 @@ HUNSPELLLIB=-lhunspell-1.2
 .ENDIF
 .IF "$(SYSTEM_MYTHES)" == "YES"
 MYTHESLIB=$(MYTHES_LIBS)
+.ELIF "$(GUI)" == "OS2"
+MYTHESLIB=-lmythes
 .ELSE
 MYTHESLIB=-lmythes-1.2
 .ENDIF
 PYUNOLIB=-lpyuno
-LPSOLVELIB=-llpsolve55
+COINMPLIBS=-lCoinMP -lCoinUtils -lClp -lCbc -lOsi -lOsiClp -lCgl -lCbcSolver
+SERFLIBS=-lapr-1 -laprutil-1 -lserf-1
 SOFFICELIB=-lsofficeapp
 UNOPKGAPPLIB=-lunopkgapp
 TESTLIB=-ltest
 XMLREADERLIB=-lxmlreader
 
-.ELSE				# ("$(GUI)"=="UNX" || "$(COM)"=="GCC") && "$(GUI)"!="OS2"
+.ELSE				# ("$(GUI)"=="UNX" || "$(COM)"=="GCC")
 
 AWTLIB*=jawt.lib
 AVMEDIALIB=iavmedia.lib
 ICUINLIB=icuin.lib
 ICULELIB=icule.lib
 ICUUCLIB=icuuc.lib
-.IF "$(GUI)"=="OS2"
-ICUDATALIB=icudt.lib
-.ELSE
 ICUDATALIB=icudata.lib
-.ENDIF
 I18NUTILLIB=ii18nutil.lib
 I18NISOLANGLIB=ii18nisolang.lib
 I18NPAPERLIB=ii18npaper.lib
@@ -372,11 +380,7 @@ LDAPBERLIB=ldapber.lib
 CPPULIB=icppu.lib
 CPPUHELPERLIB=icppuhelper.lib
 UCBHELPERLIB=iucbhelper.lib
-.IF "$(GUI)"=="OS2"
-OPENSSLLIB=ssl.lib crypto.lib
-.ELSE
 OPENSSLLIB=ssleay32.lib libeay32.lib
-.ENDIF
 ODBCLIB=iodbc.lib
 ODBCBASELIB=iodbcbase.lib
 DBFILELIB=ifile.lib
@@ -449,7 +453,6 @@ EXPATASCII3RDLIB=expat_xmltok.lib ascii_expat_xmlparse.lib
 ZLIB3RDLIB=zlib.lib
 JPEG3RDLIB=jpeglib.lib
 NEON3RDLIB=ineon.lib
-BERKELEYLIB=libdb47.lib
 CURLLIB=libcurl.lib
 CHAOSLIB=ichaos.lib
 UUILIB=iuui.lib
@@ -469,6 +472,7 @@ VCLLIB=ivcl.lib
 OOXLIB=ioox.lib
 BASEGFXLIB=ibasegfx.lib
 DRAWINGLAYERLIB=idrawinglayer.lib
+SVGIOLIB=isvgio.lib
 BASEBMPLIB=ibasebmp.lib
 CANVASTOOLSLIB=icanvastools.lib
 CPPCANVASLIB=icppcanvas.lib
@@ -482,13 +486,9 @@ FREETYPELIB=freetype.lib
 PKGCHKLIB=ipkgchk.lib
 HELPLINKERLIB=ihelplinker.lib
 JVMACCESSLIB = ijvmaccess.lib
-CPPUNITLIB = icppunit_dll.lib
 XSLTLIB = libxslt.lib $(LIBXML2LIB)
-.IF "$(GUI)"=="OS2"
-REDLANDLIB = raptor.a rasqal.a rdf.a $(LIBXML2LIB) $(OPENSSLLIB) pthread.lib
-.ELSE
+CPPUNITLIB = icppunit_dll.lib
 REDLANDLIB = librdf.lib
-.ENDIF
 
 JVMFWKLIB = ijvmfwk.lib
 
@@ -525,10 +525,11 @@ HUNSPELLLIB=$(LIBPRE) libhunspell.lib
 .ENDIF
 MYTHESLIB=libmythes.lib
 PYUNOLIB=ipyuno.lib
-LPSOLVELIB=lpsolve55.lib
+COINMPLIBS=CoinMP.lib
+SERFLIBS=libapr-1.lib iapr-util.lib iserf.lib
 SOFFICELIB=isofficeapp.lib
 UNOPKGAPPLIB=iunopkgapp.lib
 TESTLIB=itest.lib
 XMLREADERLIB=ixmlreader.lib
 
-.ENDIF              # ("$(GUI)"=="UNX" || "$(COM)"=="GCC") && "$(GUI)"!="OS2"
+.ENDIF              # ("$(GUI)"=="UNX" || "$(COM)"=="GCC")

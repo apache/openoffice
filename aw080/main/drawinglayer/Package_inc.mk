@@ -1,29 +1,25 @@
-#*************************************************************************
-#
-# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
-# Copyright 2000, 2010 Oracle and/or its affiliates.
-#
-# OpenOffice.org - a multi-platform office productivity suite
-#
-# This file is part of OpenOffice.org.
-#
-# OpenOffice.org is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License version 3
-# only, as published by the Free Software Foundation.
-#
-# OpenOffice.org is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	See the
-# GNU Lesser General Public License version 3 for more details
-# (a copy is included in the LICENSE file that accompanied this code).
-#
-# You should have received a copy of the GNU Lesser General Public License
-# version 3 along with OpenOffice.org.	If not, see
-# <http://www.openoffice.org/license.html>
-# for a copy of the LGPLv3 License.
-#
-#*************************************************************************
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
 
 $(eval $(call gb_Package_Package,drawinglayer_inc,$(SRCDIR)/drawinglayer/inc))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/drawinglayerdllapi.h,drawinglayer/drawinglayerdllapi.h))
@@ -34,8 +30,8 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/baseprimitive2d.hxx,drawinglayer/primitive2d/baseprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/bitmapprimitive2d.hxx,drawinglayer/primitive2d/bitmapprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/borderlineprimitive2d.hxx,drawinglayer/primitive2d/borderlineprimitive2d.hxx))
-$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/chartprimitive2d.hxx,drawinglayer/primitive2d/chartprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/controlprimitive2d.hxx,drawinglayer/primitive2d/controlprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/cropprimitive2d.hxx,drawinglayer/primitive2d/cropprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/discretebitmapprimitive2d.hxx,drawinglayer/primitive2d/discretebitmapprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/discreteshadowprimitive2d.hxx,drawinglayer/primitive2d/discreteshadowprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/embedded3dprimitive2d.hxx,drawinglayer/primitive2d/embedded3dprimitive2d.hxx))
@@ -54,6 +50,7 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/metafileprimitive2d.hxx,drawinglayer/primitive2d/metafileprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx,drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/pagepreviewprimitive2d.hxx,drawinglayer/primitive2d/pagepreviewprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/patternfillprimitive2d.hxx,drawinglayer/primitive2d/patternfillprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/pointarrayprimitive2d.hxx,drawinglayer/primitive2d/pointarrayprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/polygonprimitive2d.hxx,drawinglayer/primitive2d/polygonprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/polypolygonprimitive2d.hxx,drawinglayer/primitive2d/polypolygonprimitive2d.hxx))
@@ -62,10 +59,14 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/sceneprimitive2d.hxx,drawinglayer/primitive2d/sceneprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/shadowprimitive2d.hxx,drawinglayer/primitive2d/shadowprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/structuretagprimitive2d.hxx,drawinglayer/primitive2d/structuretagprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/svggradientprimitive2d.hxx,drawinglayer/primitive2d/svggradientprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/textbreakuphelper.hxx,drawinglayer/primitive2d/textbreakuphelper.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/textenumsprimitive2d.hxx,drawinglayer/primitive2d/textenumsprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/texteffectprimitive2d.hxx,drawinglayer/primitive2d/texteffectprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/textlayoutdevice.hxx,drawinglayer/primitive2d/textlayoutdevice.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/textlineprimitive2d.hxx,drawinglayer/primitive2d/textlineprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/textprimitive2d.hxx,drawinglayer/primitive2d/textprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/textstrikeoutprimitive2d.hxx,drawinglayer/primitive2d/textstrikeoutprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/textdecoratedprimitive2d.hxx,drawinglayer/primitive2d/textdecoratedprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/texthierarchyprimitive2d.hxx,drawinglayer/primitive2d/texthierarchyprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/transformprimitive2d.hxx,drawinglayer/primitive2d/transformprimitive2d.hxx))
@@ -76,6 +77,7 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/baseprimitive3d.hxx,drawinglayer/primitive3d/baseprimitive3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/groupprimitive3d.hxx,drawinglayer/primitive3d/groupprimitive3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/hatchtextureprimitive3d.hxx,drawinglayer/primitive3d/hatchtextureprimitive3d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/hiddengeometryprimitive3d.hxx,drawinglayer/primitive3d/hiddengeometryprimitive3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/modifiedcolorprimitive3d.hxx,drawinglayer/primitive3d/modifiedcolorprimitive3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/polygonprimitive3d.hxx,drawinglayer/primitive3d/polygonprimitive3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive3d/polygontubeprimitive3d.hxx,drawinglayer/primitive3d/polygontubeprimitive3d.hxx))
@@ -111,6 +113,8 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/baseprocessor3d.hxx,drawinglayer/processor3d/baseprocessor3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/cutfindprocessor3d.hxx,drawinglayer/processor3d/cutfindprocessor3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/defaultprocessor3d.hxx,drawinglayer/processor3d/defaultprocessor3d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/geometry2dextractor.hxx,drawinglayer/processor3d/geometry2dextractor.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/shadow3dextractor.hxx,drawinglayer/processor3d/shadow3dextractor.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/zbufferprocessor3d.hxx,drawinglayer/processor3d/zbufferprocessor3d.hxx))
 
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/attribute/fillgradientattribute.hxx,drawinglayer/attribute/fillgradientattribute.hxx))
@@ -133,3 +137,5 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/attribute/li
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/attribute/linestartendattribute.hxx,drawinglayer/attribute/linestartendattribute.hxx))
 
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/texture/texture.hxx,drawinglayer/texture/texture.hxx))
+
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/tools/converters.hxx,drawinglayer/tools/converters.hxx))

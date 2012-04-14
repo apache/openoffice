@@ -1079,9 +1079,8 @@ bool View::IsMorphingAllowed() const
 bool View::IsVectorizeAllowed() const
 {
 	const SdrGrafObj* pObj = dynamic_cast< const SdrGrafObj* >(getSelectedIfSingle());
-	const bool bRet(pObj && GRAPHIC_BITMAP == pObj->GetGraphicType());
-
-	return bRet;
+	
+	return (pObj && GRAPHIC_BITMAP == pObj->GetGraphicType() && !pObj->isEmbeddedSvg());
 }
 
 void View::onAccessibilityOptionsChanged()

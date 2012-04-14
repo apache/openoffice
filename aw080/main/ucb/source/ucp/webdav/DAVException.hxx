@@ -26,7 +26,7 @@
 
 #include <rtl/ustring.hxx>
 
-namespace webdav_ucp
+namespace http_dav_ucp
 {
 
 /////////////////////////////////////////////////////////////////////////////
@@ -106,6 +106,8 @@ class DAVException
                                 // mStatusCode = HTTP status code
             DAV_HTTP_LOOKUP,    // Name lookup failed,
                                 // mData = server[:port]
+            DAV_HTTP_NOAUTH,    // No User authentication data provided - e.g., user aborts corresponding dialog
+                                // mData = server[:port]
             DAV_HTTP_AUTH,      // User authentication failed on server,
                                 // mData = server[:port]
             DAV_HTTP_AUTHPROXY, // User authentication failed on proxy,
@@ -139,17 +141,24 @@ class DAVException
         sal_uInt16      mStatusCode;
 
     public:
-         DAVException( ExceptionCode inExceptionCode ) :
-            mExceptionCode( inExceptionCode ), mStatusCode( SC_NONE ) {};
+         DAVException( ExceptionCode inExceptionCode ) 
+             : mExceptionCode( inExceptionCode )
+             , mData()
+             , mStatusCode( SC_NONE )
+         {};
          DAVException( ExceptionCode inExceptionCode,
-                       const rtl::OUString & rData ) :
-            mExceptionCode( inExceptionCode ), mData( rData ),
-            mStatusCode( SC_NONE ) {};
+                       const rtl::OUString & rData ) 
+             : mExceptionCode( inExceptionCode )
+             , mData( rData )
+             , mStatusCode( SC_NONE )
+         {};
          DAVException( ExceptionCode inExceptionCode,
                        const rtl::OUString & rData,
-                       sal_uInt16 nStatusCode ) :
-            mExceptionCode( inExceptionCode ), mData( rData ),
-            mStatusCode( nStatusCode ) {};
+                       sal_uInt16 nStatusCode )
+            : mExceptionCode( inExceptionCode )
+            , mData( rData )
+            , mStatusCode( nStatusCode )
+         {};
         ~DAVException( ) {};
 
     const ExceptionCode & getError() const { return mExceptionCode; }
@@ -157,6 +166,6 @@ class DAVException
     sal_uInt16 getStatus() const { return mStatusCode; }
 };
 
-} // namespace webdav_ucp
+} // namespace http_dav_ucp
 
 #endif // _DAVEXCEPTION_HXX_

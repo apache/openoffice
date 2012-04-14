@@ -1,3 +1,23 @@
+# *************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+# *************************************************************
 
 # executables are *.exe for WNT. This variable is necessary since Cygwin 1.5.x
 # Use spawn instead of fork when building dmake on cygwin. 
@@ -9,18 +29,6 @@ fi
 export EXEEXT
 
 mkdir -p "$SOLARENV/$OUTPATH/bin"
-
-if test "$GUI" = "WNT" -a ! -x "$SOLARENV/$OUTPATH/bin/guw$EXEEXT"; then
-  echo ""
-  echo "Calling $GNUMAKE in guw"
-  cd "$SRC_ROOT/guw" || exit
-  $GNUMAKE || exit
-  echo ""
-  echo "guw has been successfully made"
-  cp -f "$SRC_ROOT/guw/guw$EXEEXT" "$SOLARENV/$OUTPATH/bin/guw$EXEEXT" || exit
-  echo ""
-  echo "guw copied to $SOLARENV/$OUTPATH/bin/guw$EXEEXT"
-fi
 
 #make sure build.pl is executable 
 
@@ -50,7 +58,11 @@ if test -n "$DMAKE_URL" -a  ! -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
     mkdir -p "$tmp_build_dir"
     cd "$tmp_build_dir" || exit
 
-    dmake_full_package_name="$TARFILE_LOCATION/$dmake_package_name"
+    dmake_full_package_name=$(find $TARFILE_LOCATION -type f -name "*-$dmake_package_name")
+    if [ -z "$dmake_full_package_name" ]; then
+        echo "can not find the dmake package"
+        exit
+    fi
     if test "$GUI" = "WNT"; then
         dmake_full_package_name=`cygpath -u "$dmake_full_package_name"`
     fi
@@ -116,6 +128,20 @@ if test -n "$DMAKE_URL" -a  ! -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
     # Clean up.  Note that this is skipped when one of the exits is executed above.
     rm -rf "$tmp_build_dir"
 
+elif test "$IS_SYSTEM_DMAKE" = "YES"; then
+
+    echo ""
+    echo "dmake is located in search path"
+    echo ""
+
+elif test -n "$DMAKE_PATH" -a -x "$DMAKE_PATH" -a  ! -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
+
+    cp -f "$DMAKE_PATH" "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT" || exit
+
+    echo ""
+    echo "dmake copied to $SOLARENV/$OUTPATH/bin/dmake$EXEEXT"
+    echo ""
+
 else
 
     if test -x "$SOLARENV/$OUTPATH/bin/dmake$EXEEXT"; then
@@ -124,3 +150,6 @@ else
     fi
     
 fi
+
+# Download missing extensions.
+download_missing_extensions.pl

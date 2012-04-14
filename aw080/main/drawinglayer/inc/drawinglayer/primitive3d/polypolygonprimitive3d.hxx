@@ -67,9 +67,6 @@ namespace drawinglayer
 			const attribute::MaterialAttribute3D& getMaterial() const { return maMaterial; }
 			bool getDoubleSided() const { return mbDoubleSided; }
 
-			/// compare operator
-			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
-
 			/// get range
 			virtual basegfx::B3DRange getB3DRange(const geometry::ViewInformation3D& rViewInformation) const;
 

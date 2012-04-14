@@ -1,41 +1,31 @@
-/*************************************************************************
-*
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+/**************************************************************
  * 
- * Copyright 2000, 2010 Oracle and/or its affiliates.
- *
- * OpenOffice.org - a multi-platform office productivity suite
- *
- * This file is part of OpenOffice.org.
- *
- * OpenOffice.org is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License version 3
- * only, as published by the Free Software Foundation.
- *
- * OpenOffice.org is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License version 3 for more details
- * (a copy is included in the LICENSE file that accompanied this code).
- *
- * You should have received a copy of the GNU Lesser General Public License
- * version 3 along with OpenOffice.org.  If not, see
- * <http://www.openoffice.org/license.html>
- * for a copy of the LGPLv3 License.
- *
-************************************************************************/
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
 
 #include "macros.inc"
 
-ScpAction scp_Copy_License_Html
-  #ifdef UNX
-    README_TXT_ALL_LANG(Copy, LICENSE, html);
-    README_TXT_ALL_LANG(Name, LICENSE, html);
-  #else
-    README_TXT_ALL_LANG(Copy, license, html);
-    README_TXT_ALL_LANG(Name, license, html);
-  #endif
-    Styles = (SCPZIP_REPLACE);
+ScpAction scp_Copy_LICENSE_Txt
+    Copy = "LICENSE";
+    Name = "LICENSE";
   #ifndef MACOSX
     Subdir = "licenses";
   #else
@@ -43,29 +33,15 @@ ScpAction scp_Copy_License_Html
   #endif
 End
 
-ScpAction scp_Copy_License_Txt
-  #ifdef UNX
-    README_ALL_LANG(Copy, LICENSE);
-    README_ALL_LANG(Name, LICENSE);
-  #else
-    README_TXT_ALL_LANG(Copy, license, txt);
-    README_TXT_ALL_LANG(Name, license, txt);
-  #endif
-    Styles = (SCPZIP_REPLACE);
+ScpAction scp_Copy_NOTICE_Txt
+    Copy = "NOTICE";
+    Name = "NOTICE";
   #ifndef MACOSX
     Subdir = "licenses";
   #else
     Subdir = "LICENSEs";
   #endif
 End
-
-#ifdef MACOSX
-ScpAction scp_Copy_Thirdpartylicense_Readme_Html
-    Copy = "THIRDPARTYLICENSEREADME.html";
-    Name= "THIRDPARTYLICENSEREADME.html";
-    Subdir = "LICENSEs";
-End
-#endif
 
 ScpAction scp_Copy_Readme_Html
   #ifdef UNX
@@ -146,14 +122,6 @@ ScpAction scp_Copy_Xpd_Gif_Setup
     Name = "Setup.gif";
     Styles = (XPD_ONLY);
     Subdir = "installdata/images";
-End
-
-// Setup license file
-ScpAction scp_Copy_Xpd_Html_License
-    README_TXT_ALL_LANG(Copy, LICENSE, html);
-    README_TXT_ALL_LANG(Name, LICENSE, html);
-    Styles = (XPD_ONLY);
-    Subdir = "installdata/html";
 End
 
 ScpAction scp_Copy_Xpd_Html_License_En_Us
@@ -362,6 +330,7 @@ End
 
 ScpAction scp_Copy_Ds_Store
     Copy = "DS_Store";
+    DevCopy = "DS_Store_Dev";
     LangPackCopy = "DS_Store_Langpack";
     PatchCopy = "DS_Store_Patch";
     Name = ".DS_Store";

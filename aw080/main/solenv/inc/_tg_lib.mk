@@ -1,3 +1,23 @@
+# *************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+# *************************************************************
 # unroll begin
 
 .IF "$(LIB1TARGET)" != ""
@@ -25,7 +45,12 @@ $(LIB1ARCHIV) :	$(LIB1TARGET)
 	@cat $(MISC)/$(LIB1ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB1ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB1TARGET) $(LIB1ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB1ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB1FLAGS) $(LIBFLAGS) $(LIB1ARCHIV) `cat $(LIB1TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB1ARCHIV:b).cmd
@@ -127,7 +152,12 @@ $(LIB2ARCHIV) :	$(LIB2TARGET)
 	@cat $(MISC)/$(LIB2ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB2ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB2TARGET) $(LIB2ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB2ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB2FLAGS) $(LIBFLAGS) $(LIB2ARCHIV) `cat $(LIB2TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB2ARCHIV:b).cmd
@@ -229,7 +259,12 @@ $(LIB3ARCHIV) :	$(LIB3TARGET)
 	@cat $(MISC)/$(LIB3ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB3ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB3TARGET) $(LIB3ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB3ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB3FLAGS) $(LIBFLAGS) $(LIB3ARCHIV) `cat $(LIB3TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB3ARCHIV:b).cmd
@@ -331,7 +366,12 @@ $(LIB4ARCHIV) :	$(LIB4TARGET)
 	@cat $(MISC)/$(LIB4ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB4ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB4TARGET) $(LIB4ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB4ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB4FLAGS) $(LIBFLAGS) $(LIB4ARCHIV) `cat $(LIB4TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB4ARCHIV:b).cmd
@@ -433,7 +473,12 @@ $(LIB5ARCHIV) :	$(LIB5TARGET)
 	@cat $(MISC)/$(LIB5ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB5ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB5TARGET) $(LIB5ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB5ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB5FLAGS) $(LIBFLAGS) $(LIB5ARCHIV) `cat $(LIB5TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB5ARCHIV:b).cmd
@@ -535,7 +580,12 @@ $(LIB6ARCHIV) :	$(LIB6TARGET)
 	@cat $(MISC)/$(LIB6ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB6ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB6TARGET) $(LIB6ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB6ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB6FLAGS) $(LIBFLAGS) $(LIB6ARCHIV) `cat $(LIB6TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB6ARCHIV:b).cmd
@@ -637,7 +687,12 @@ $(LIB7ARCHIV) :	$(LIB7TARGET)
 	@cat $(MISC)/$(LIB7ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB7ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB7TARGET) $(LIB7ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB7ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB7FLAGS) $(LIBFLAGS) $(LIB7ARCHIV) `cat $(LIB7TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB7ARCHIV:b).cmd
@@ -739,7 +794,12 @@ $(LIB8ARCHIV) :	$(LIB8TARGET)
 	@cat $(MISC)/$(LIB8ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB8ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB8TARGET) $(LIB8ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB8ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB8FLAGS) $(LIBFLAGS) $(LIB8ARCHIV) `cat $(LIB8TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB8ARCHIV:b).cmd
@@ -841,7 +901,12 @@ $(LIB9ARCHIV) :	$(LIB9TARGET)
 	@cat $(MISC)/$(LIB9ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB9ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB9TARGET) $(LIB9ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB9ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB9FLAGS) $(LIBFLAGS) $(LIB9ARCHIV) `cat $(LIB9TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB9ARCHIV:b).cmd
@@ -943,7 +1008,12 @@ $(LIB10ARCHIV) :	$(LIB10TARGET)
 	@cat $(MISC)/$(LIB10ARCHIV:b).cmd
 .ENDIF
 	@+source $(MISC)/$(LIB10ARCHIV:b).cmd
-.ELSE			# "$(GUI)"=="UNX"
+
+.ELIF "$(GUI)"=="OS2"
+
+	@ln -s $(LIB10TARGET) $(LIB10ARCHIV)
+
+.ELSE			# "$(GUI)"=="OS2"
 .IF "$(GUI)$(COM)"=="WNTGCC"
 	@+-$(RM) $(MISC)/$(LIB10ARCHIV:b).cmd
 	@+echo $(LIBMGR) $(LIB10FLAGS) $(LIBFLAGS) $(LIB10ARCHIV) `cat $(LIB10TARGET) | sed s#'^'$(ROUT)#$(PRJ)/$(ROUT)#g` > $(MISC)/$(LIB10ARCHIV:b).cmd

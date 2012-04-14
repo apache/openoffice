@@ -1,78 +1,156 @@
-Apache OpenOffice.org
-Copyright 2011 The Apache Software Foundation
+Apache OpenOffice
+Copyright 2011, 2012 The Apache Software Foundation
 
 This product includes software developed at
 The Apache Software Foundation (http://www.apache.org/).
 
-This software contains code derived from the XFree86 Project
-Inc. including code written by Keith Packard from SuSE, Inc,
-and Jim Gettys from Hewlett Packard as headers for the
-x11_extensions module and an iconv header contributed  
-by the Free Software Foundation, Inc. in the hwpfilter
-module. The original software under an MIT-style license
-is available from:
-    http://cvsweb.xfree86.org/cvsweb/xc/include/extensions/
-    http://cvsweb.xfree86.org/cvsweb/xc/lib/X11/lcUniConv/
+____
 
-The install-sh and mkdepend tools are copyrighted MIT and
-the X Consortium respectively and are available in the
-XFree86 distribution among other places.
+[placeholder for Andrew Rist (arist) to include copyright notice from Oracle]
 
-The UnixODBC directory contains code by Ke Jin and OpenLink
-Software from the iODBC driver manager available at:
-    http://www.iodbc.org/
+____
 
-The apple_remote module includes code derived from the Apple
-Remote Control wrapper copyrighted by Martin Kahr and modified
-for OpenOffice.org by Eric Bachard under the same license. The
-original package is available here
-    https://github.com/martinkahr/apple_remote_control
+As part of the base system this product also includes code from the following
+Apache projects:
+- Apache Lucene
+- Apache Portable Runtime 
+- Apache Portable Runtime Utility Library
+- Apache Commons - used by MediaWiki Publisher extension
+- Apache Jakarta HttpClient - used by MediaWiki Publisher extension
+- Apache Tomcat - used by MediaWiki Piblisher extension
 
-The scanner support software uses a code header derived from
-the Scanner Access Now Easy project under Public Domain by
-David Mosberger-Tang and Andreas Beck. More information about
-the SANE Project is available here:
-    http://www.sane-project.org/
+The notices from these projects are following:
 
-Likewise, the "twain" module includes a standard header from
-the TWAIN Working Group. More information about TWAIN is
-available here:
-    http://www.twain.org/
+Apache Lucene
+Copyright 2006 The Apache Software Foundation
 
-The connectivity module uses code developed by the HSQL
-Development Group under a BSD-style license. More
-information about HSQL is available here:
-    http://hsqldb.org/
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
 
-The Font Manager support in the vcl module and the
-"psprint_config" module contain code copyrighted by
-Adobe Systems Incorporated.
+The snowball stemmers in
+  contrib/snowball/src/java/net/sf/snowball
+were developed by Martin Porter and Richard Boulton.
+The full snowball package is available from
+  http://snowball.tartarus.org/
 
-The ICC module includes code developed by the International
-Color Consortium. More information about the ICC is available
-here:
-    http://www.color.org/
 
-The MathMLDTD module uses the DTD for MathML from the World
-Wide Web Consortium under the W3C license. The official
-distribution is available here:
-    http://www.w3.org/Math/DTD/
+Apache Portable Runtime
+Copyright (c) 2011 The Apache Software Foundation.
 
-The libtextcat module contains fingerprints for the libtextcat
-Library copyrighted by WiseGuys Internet B.V under a BSD-style
-license. More information is available here:
-    http://software.wise-guys.nl/libtextcat/
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
 
-The optional "agg" module contains code by Maxim Shemanarev as
-part of the Anti-Grain Geometry Project. More information on
-AGG is available here:
-    http://www.antigrain.com/
+Portions of this software were developed at the National Center
+for Supercomputing Applications (NCSA) at the University of
+Illinois at Urbana-Champaign.
 
-We use the Tango base icon theme under Public Domain by the
-Tango Desktop Project. More information is available here:
-    http://tango.freedesktop.org/
+This software contains code derived from the RSA Data Security
+Inc. MD5 Message-Digest Algorithm.
 
-The graphite module is distributed under CPL 0.5 (Common Public License).
-Silgraphite as used by the program is available at
-    http://sourceforge.net/projects/silgraphite/files/silgraphite/2.3.1/silgraphite-2.3.1.tar.gz
+This software contains code derived from UNIX V7, Copyright(C)
+Caldera International Inc.
+
+
+Apache Portable Runtime Utility Library
+Copyright (c) 2011 The Apache Software Foundation.
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+Portions of this software were developed at the National Center
+for Supercomputing Applications (NCSA) at the University of
+Illinois at Urbana-Champaign.
+
+This software contains code derived from the RSA Data Security
+Inc. MD5 Message-Digest Algorithm, including various
+modifications by Spyglass Inc., Carnegie Mellon University, and
+Bell Communications Research, Inc (Bellcore).
+
+
+Apache Commons Codec
+Copyright 2002-2012 The Apache Software Foundation
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java contains
+test data from http://aspell.sourceforge.net/test/batch0.tab.
+
+Copyright (C) 2002 Kevin Atkinson (kevina@gnu.org). Verbatim copying
+and distribution of this entire article is permitted in any medium,
+provided this notice is preserved.
+
+Apache Jakarta HttpClient
+Copyright 1999-2007 The Apache Software Foundation
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+Apache Commons Lang
+Copyright 2001-2012 The Apache Software Foundation
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+This product includes software from the Spring Framework,
+under the Apache License 2.0 (see: StringUtils.containsWhitespace())
+
+
+Apache Commons Logging
+Copyright 2003-2007 The Apache Software Foundation
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+
+Apache Tomcat
+Copyright 1999-2012 The Apache Software Foundation
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+Java Management Extensions (JMX) support is provided by
+the MX4J package, which is open source software.  The
+original software and related information is available
+at http://mx4j.sourceforge.net/.
+
+The Windows Installer is built with the Nullsoft
+Scriptable Install System (NSIS), which is
+open source software.  The original software and
+related information is available at
+http://nsis.sourceforge.net/.
+
+Java compilation software for JSP pages is provided by Eclipse, 
+which is open source software.  The original software and 
+related information is available at
+http://www.eclipse.org/.
+
+____
+
+As part of the base system this product also includes code from the following
+projects which are licensed under the Apache license:
+- serf
+- redland
+- StAX
+
+The notices from these projects are following:
+
+serf
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+
+redland
+This product includes Redland software (http://librdf.org/)
+developed at the Institute for Learning and Research Technology,
+University of Bristol, UK (http://www.bristol.ac.uk/).
+
+
+StAX
+[no notices]
+
+____
+
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit. (http://www.openssl.org/)
 

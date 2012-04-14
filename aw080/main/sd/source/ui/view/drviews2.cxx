@@ -620,7 +620,9 @@ void DrawViewShell::FuTemporary(SfxRequest& rReq)
 				else
 				{
 					if( mpDrawView->IsVectorizeAllowed() )
+                    {
 						SetCurrentFunction( FuVectorize::Create( this, GetActiveWindow(), mpDrawView, GetDoc(), rReq ) );
+                    }
 					else
 					{
 						WaitObject aWait( (Window*)GetActiveWindow() );
@@ -696,14 +698,34 @@ void DrawViewShell::FuTemporary(SfxRequest& rReq)
 				{
 					case SID_CONVERT_TO_METAFILE:
 					{
-						GDIMetaFile aMetaFile(mpDrawView->GetAllMarkedMetaFile ());
+						GDIMetaFile aMetaFile(mpDrawView->GetMarkedObjMetaFile());
 						aGraphic = Graphic(aMetaFile);
 					}
 					break;
 					case SID_CONVERT_TO_BITMAP:
 					{
-						Bitmap aBitmap (mpDrawView->GetAllMarkedBitmap ());
-						aGraphic = Graphic(aBitmap);
+                        bool bDone(false);
+                        
+                        // aw080: Take a look at AAed graphic creation
+						// I have to get the image here directly since GetMarkedObjBitmapEx works
+                        // based on Bitmaps, but not on BitmapEx, thus throwing away the alpha
+                        // channel. Argh! GetMarkedObjBitmapEx itself is too widely used to safely
+                        // change that, e.g. in the exchange formats. For now I can only add this 
+                        // exception to get good results for Svgs. This is how the code gets more 
+                        // and more crowded, at last I made a remark for myself to change this
+                        // as one of the next tasks.
+                        const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(mpDrawView->getSelectedIfSingle());
+
+                        if(pSdrGrafObj && pSdrGrafObj->isEmbeddedSvg())
+                        {
+                            aGraphic = Graphic(pSdrGrafObj->GetGraphic().getSvgData()->getReplacement());
+                            bDone = true;
+                        }
+
+                        if(!bDone)
+                        {
+                            aGraphic = Graphic(mpDrawView->GetMarkedObjBitmapEx());
+                        }
 					}
 					break;
 				}

@@ -62,12 +62,6 @@ namespace drawinglayer
 			/// data read access
 			const BitmapEx& getBitmapEx() const { return maBitmapEx; }
 
-            /// compare operator
-			bool operator==(const DiscreteShadow& rCompare) const
-			{
-				return getBitmapEx() == rCompare.getBitmapEx();
-			}
-
 			/// helper accesses which create on-demand needed segments
 			const BitmapEx& getTopLeft() const;
 			const BitmapEx& getTop() const;

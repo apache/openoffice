@@ -35,7 +35,7 @@
 #include "DAVAuthListenerImpl.hxx"
 #include "DAVResourceAccess.hxx"
 
-using namespace webdav_ucp;
+using namespace http_dav_ucp;
 using namespace com::sun::star;
 
 //=========================================================================
@@ -53,7 +53,8 @@ int DAVAuthListener_Impl::authenticate(
     const ::rtl::OUString & inHostName,
     ::rtl::OUString & inoutUserName,
     ::rtl::OUString & outPassWord,
-    sal_Bool bCanUseSystemCredentials )
+    sal_Bool bCanUseSystemCredentials,
+    sal_Bool bUsePreviousCredentials )
 {
     if ( m_xEnv.is() )
     {
@@ -62,12 +63,14 @@ int DAVAuthListener_Impl::authenticate(
 
         if ( xIH.is() )
         {
+            // Providing previously retrieved credentials will cause the password
+            // container to reject these. Thus, the credential input dialog will be shown again.
             // #102871# - Supply username and password from previous try.
             // Password container service depends on this!
-            if ( inoutUserName.getLength() == 0 )
+            if ( inoutUserName.getLength() == 0 && bUsePreviousCredentials )
                 inoutUserName = m_aPrevUsername;
 
-            if ( outPassWord.getLength() == 0 )
+            if ( outPassWord.getLength() == 0 && bUsePreviousCredentials )
                 outPassWord = m_aPrevPassword;
 
             rtl::Reference< ucbhelper::SimpleAuthenticationRequest > xRequest
@@ -168,48 +171,6 @@ DAVResourceAccess & DAVResourceAccess::operator=(
 
     return *this;
 }
-
-#if 0 // currently not used, but please don't remove code
-//=========================================================================
-void DAVResourceAccess::OPTIONS(
-    DAVCapabilities & rCapabilities,
-    const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
-{
-    initialize();
-
-    bool bRetry;
-    int errorCount = 0;
-    do
-    {
-        bRetry = false;
-        try
-        {
-            DAVRequestHeaders aHeaders;
-            getUserRequestHeaders( xEnv,
-                                   getRequestURI(),
-                                   rtl::OUString::createFromAscii(
-                                       "OPTIONS" ),
-                                   aHeaders );
-
-            m_xSession->OPTIONS( getRequestURI(),
-                                 rCapabilities,
-                                 DAVRequestEnvironment(
-                                     getRequestURI(),
-                                     new DAVAuthListener_Impl( xEnv, m_aURL ),
-                                     aHeaders, xEnv) );
-        }
-        catch ( DAVException & e )
-        {
-            errorCount++;
-            bRetry = handleException( e, errorCount );
-            if ( !bRetry )
-                throw;
-        }
-    }
-    while ( bRetry );
-}
-#endif
 
 //=========================================================================
 void DAVResourceAccess::PROPFIND(
@@ -1056,7 +1017,7 @@ void DAVResourceAccess::initialize()
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
     if ( m_aPath.getLength() == 0 )
     {
-        NeonUri aURI( m_aURL );
+        SerfUri aURI( m_aURL );
         rtl::OUString aPath( aURI.GetPath() );
 
         /* #134089# - Check URI */
@@ -1147,10 +1108,10 @@ sal_Bool DAVResourceAccess::detectRedirectCycle(
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
-    NeonUri aUri( rRedirectURL );
+    SerfUri aUri( rRedirectURL );
 
-    std::vector< NeonUri >::const_iterator it  = m_aRedirectURIs.begin();
-    std::vector< NeonUri >::const_iterator end = m_aRedirectURIs.end();
+    std::vector< SerfUri >::const_iterator it  = m_aRedirectURIs.begin();
+    std::vector< SerfUri >::const_iterator end = m_aRedirectURIs.end();
 
     while ( it != end )
     {
@@ -1169,9 +1130,9 @@ void DAVResourceAccess::resetUri()
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
     if ( m_aRedirectURIs.size() > 0 )
     {
-        std::vector< NeonUri >::const_iterator it  = m_aRedirectURIs.begin();
+        std::vector< SerfUri >::const_iterator it  = m_aRedirectURIs.begin();
 
-        NeonUri aUri( (*it) );
+        SerfUri aUri( (*it) );
         m_aRedirectURIs.clear();
         setURL ( aUri.GetURI() );
         initialize();
@@ -1197,7 +1158,8 @@ sal_Bool DAVResourceAccess::handleException( DAVException & e, int errorCount )
     // if we have a bad connection try again. Up to three times.
     case DAVException::DAV_HTTP_ERROR:
         // retry up to three times, if not a client-side error.
-        if ( ( e.getStatus() < 400 || e.getStatus() >= 500 ) &&
+        if ( ( e.getStatus() < 400 || e.getStatus() >= 500 ||
+               e.getStatus() == 413 ) &&
              errorCount < 3 )
         {
             return sal_True;
