@@ -77,13 +77,13 @@ void lcl_CallModify( SwGrfNode& rGrfNd, SfxPoolItem& rItem )
 	SwClientIter aIter( rGrfNd );   // TODO
 	for( int n = 0; n < 2; ++n )
 	{
-		SwClient * pLast = aIter.GoStart();
+		SwClient * pLast = aIter.SwClientIter_First();
 		if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 		{
 			do {
 				if( (0 == n) ^ ( 0 != dynamic_cast< SwCntntFrm* >(pLast)) )
 					pLast->ModifyNotification( &rItem, &rItem );
-			} while( 0 != ( pLast = ++aIter ));
+			} while( 0 != ( pLast = aIter.SwClientIter_Next() ));
 		}
 	}
 	rGrfNd.UnlockModify();

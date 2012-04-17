@@ -1331,13 +1331,12 @@ sal_Bool SwFEShell::IsFrmVertical(const sal_Bool bEnvironment, sal_Bool& bRTL, s
     {
 	    SdrObject* pObj = Imp()->GetDrawView()->getSelectedIfSingle();
 
-        // --> OD 2006-01-06 #123831# - make code robust:
+        // only continue if a single and only a single object is selected
         if ( !pObj )
         {
-            ASSERT( false,
-                    "<SwFEShell::IsFrmVertical(..)> - missing SdrObject instance in marked object list -> This is a serious situation, please inform OD" );
             return bVert;
         }
+
         // <--
         // OD 2004-03-29 #i26791#
         SwContact* pContact = static_cast<SwContact*>(findConnectionToSdrObject( pObj ));

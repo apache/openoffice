@@ -119,7 +119,7 @@ void SwIntrnlRefLink::DataChanged( const String& rMimeType,
 		rFldType.LockModify();
 
 		SwClientIter aIter( rFldType );     // TODO
-		SwClient * pLast = aIter.GoStart();
+		SwClient * pLast = aIter.SwClientIter_First();
 		if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 			do {
 				// eine DDE-Tabelle oder ein DDE-FeldAttribut im Text
@@ -135,7 +135,7 @@ void SwIntrnlRefLink::DataChanged( const String& rMimeType,
 					pLast->ModifyNotification( 0, &aUpdateDDE );
 					bCallModify = sal_True;
 				}
-			} while( 0 != ( pLast = ++aIter ));
+			} while( 0 != ( pLast = aIter.SwClientIter_Next() ));
 
 		rFldType.UnlockModify();
 
@@ -180,7 +180,7 @@ const SwNode* SwIntrnlRefLink::GetAnchor() const
 	// hier sollte irgend ein Anchor aus dem normalen Nodes-Array reichen
 	const SwNode* pNd = 0;
 	SwClientIter aIter( rFldType );     // TODO
-	SwClient * pLast = aIter.GoStart();
+	SwClient * pLast = aIter.SwClientIter_First();
 	if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 		do {
 			// eine DDE-Tabelle oder ein DDE-FeldAttribut im Text
@@ -196,7 +196,7 @@ const SwNode* SwIntrnlRefLink::GetAnchor() const
 			if( pNd && &rFldType.GetDoc()->GetNodes() == &pNd->GetNodes() )
 				break;
 			pNd = 0;
-		} while( 0 != ( pLast = ++aIter ));
+		} while( 0 != ( pLast = aIter.SwClientIter_Next() ));
 
 	return pNd;
 }
@@ -207,7 +207,7 @@ sal_Bool SwIntrnlRefLink::IsInRange( sal_uLong nSttNd, sal_uLong nEndNd,
 	// hier sollte irgend ein Anchor aus dem normalen Nodes-Array reichen
 	SwNodes* pNds = &rFldType.GetDoc()->GetNodes();
 	SwClientIter aIter( rFldType );         // TODO
-	SwClient * pLast = aIter.GoStart();
+	SwClient * pLast = aIter.SwClientIter_First();
 	if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 		do {
 			// eine DDE-Tabelle oder ein DDE-FeldAttribut im Text
@@ -235,7 +235,7 @@ sal_Bool SwIntrnlRefLink::IsInRange( sal_uLong nSttNd, sal_uLong nEndNd,
 						return sal_True;
 				}
 			}
-		} while( 0 != ( pLast = ++aIter ));
+		} while( 0 != ( pLast = aIter.SwClientIter_Next() ));
 
 	return sal_False;
 }

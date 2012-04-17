@@ -192,6 +192,10 @@ void lcl_DescSetAttr( const SwFrmFmt &rSource, SwFrmFmt &rDest,
 	rDest.SetPoolHlpFileId( rSource.GetPoolHlpFileId() );
 }
 
+namespace
+{
+    bool ImpCheck(const SwClient& rClient) { return 0 != dynamic_cast< const SwFrm* >(&rClient); }
+}
 
 void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 {
@@ -411,11 +415,13 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 	{
 		pDesc->SetFtnInfo( rChged.GetFtnInfo() );
 		SwMsgPoolItem  aInfo( RES_PAGEDESC_FTNINFO );
-		{
-            pDesc->GetMaster().ModifyBroadcast( &aInfo, 0, &typeid(SwFrm) );
+
+        {
+            pDesc->GetMaster().ModifyBroadcast( &aInfo, 0, &ImpCheck );
 		}
-		{
-            pDesc->GetLeft().ModifyBroadcast( &aInfo, 0, &typeid(SwFrm) );
+		
+        {
+            pDesc->GetLeft().ModifyBroadcast( &aInfo, 0, &ImpCheck );
 		}
 	}
 	SetModified();

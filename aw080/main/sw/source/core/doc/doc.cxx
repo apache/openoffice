@@ -2362,11 +2362,21 @@ bool SwDoc::RemoveInvisibleContent()
   -----------------------------------------------------------------------*/
 bool SwDoc::HasInvisibleContent() const
 {
-    sal_Bool bRet = sal_False;
-
+    bool bRet(false);
     SwClientIter aIter( *GetSysFldType( RES_HIDDENPARAFLD ) );
-    if( aIter.First( typeid( SwFmtFld ) ) )
-        bRet = sal_True;
+    SwClient* t = aIter.SwClientIter_First();
+    SwFmtFld* pSwFmtFld = dynamic_cast< SwFmtFld* >(t);
+
+    while(!pSwFmtFld && t)
+    {
+        t = aIter.SwClientIter_Next();
+        pSwFmtFld = dynamic_cast< SwFmtFld* >(t);
+    }
+
+    if(pSwFmtFld)
+    {
+        bRet = true;
+    }
 
     //
     // Search for any hidden paragraph (hidden text attribute)
@@ -2381,7 +2391,7 @@ bool SwDoc::HasInvisibleContent() const
                 SwPaM aPam( *pTxtNd, 0, *pTxtNd, pTxtNd->GetTxt().Len() );
                 if( pTxtNd->HasHiddenCharAttribute( true ) ||  ( pTxtNd->HasHiddenCharAttribute( false ) ) )
                 {
-                    bRet = sal_True;
+                    bRet = true;
                 }
             }
         }
@@ -2400,9 +2410,10 @@ bool SwDoc::HasInvisibleContent() const
                 continue;
             SwSection* pSect = pSectFmt->GetSection();
             if( pSect->IsHidden() )
-                bRet = sal_True;
+                bRet = true;
         }
     }
+
     return bRet;
 }
 

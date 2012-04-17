@@ -381,29 +381,26 @@ void SdrCreateView::SetCurrentObj(sal_uInt16 nIdent, sal_uInt32 nInvent)
 
 		mnAktInvent = nInvent;
 		mnAktIdent = nIdent;
-		SdrObject* pObj = SdrObjFactory::MakeNewObject(getSdrModelFromSdrView(), nInvent, nIdent);
-		
-		if(pObj) 
-		{
-			// Auf pers. Wunsch von Marco:
-			// Mauszeiger bei Textwerkzeug immer I-Beam. Fadenkreuz
-			// mit kleinem I-Beam erst bai MouseButtonDown
-			if(IsTextTool()) 
-			{
-				// #81944# AW: Here the correct pointer needs to be used
-				// if the default is set to vertical writing
-				maCreatePointer = POINTER_TEXT;
-			}
-			else 
-			{
-				maCreatePointer = pObj->GetCreatePointer(static_cast< SdrView& >(*this));
-			}
+        maCreatePointer = Pointer(POINTER_CROSS);
 
-			deleteSdrObjectSafeAndClearPointer( pObj );
-		} 
-		else 
+        // Auf pers. Wunsch von Marco:
+		// Mauszeiger bei Textwerkzeug immer I-Beam. Fadenkreuz
+		// mit kleinem I-Beam erst bai MouseButtonDown
+		if(IsTextTool()) 
 		{
-			maCreatePointer = Pointer(POINTER_CROSS);
+			// #81944# AW: Here the correct pointer needs to be used
+			// if the default is set to vertical writing
+			maCreatePointer = POINTER_TEXT;
+		}
+		else if(nIdent != sal_uInt16(OBJ_NONE)) // not for OBJ_NONE
+		{
+		    SdrObject* pObj = SdrObjFactory::MakeNewObject(getSdrModelFromSdrView(), nInvent, nIdent);
+		
+		    if(pObj) 
+		    {
+				maCreatePointer = pObj->GetCreatePointer(static_cast< SdrView& >(*this));
+                deleteSdrObjectSafeAndClearPointer( pObj );
+		    } 
 		}
 	}
 

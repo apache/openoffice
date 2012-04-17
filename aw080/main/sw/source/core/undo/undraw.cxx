@@ -89,7 +89,9 @@ IMPL_LINK( SwDoc, AddDrawUndo, SdrUndoAction *, pUndo )
 }
 
 SwSdrUndo::SwSdrUndo( SdrUndoAction* pUndo, const SdrObjectVector& rSelectedSdrObjectVector )
-	: SwUndo( UNDO_DRAWUNDO ), maSelectedSdrObjectVector(rSelectedSdrObjectVector)
+:   SwUndo(UNDO_DRAWUNDO), 
+    pSdrUndo(pUndo),
+    maSelectedSdrObjectVector(rSelectedSdrObjectVector)
 {
 }
 

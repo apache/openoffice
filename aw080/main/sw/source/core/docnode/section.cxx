@@ -1028,7 +1028,7 @@ void SwSectionFmt::UpdateParent()		// Parent wurde veraendert
     bool bIsHidden = false;
 
 	SwClientIter aIter( *this );    // TODO
-	::SwClient * pLast = aIter.GoStart();
+	::SwClient * pLast = aIter.SwClientIter_First();
 	if( pLast ) 	// konnte zum Anfang gesprungen werden ??
 		do {
 			if( dynamic_cast< SwSectionFmt* >(pLast) )
@@ -1099,7 +1099,7 @@ void SwSectionFmt::UpdateParent()		// Parent wurde veraendert
                     bIsHidden = pSection->IsHidden();
 				}
 			}
-		} while( 0 != ( pLast = ++aIter ));
+		} while( 0 != ( pLast = aIter.SwClientIter_Next() ));
 }
 
 

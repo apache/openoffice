@@ -276,6 +276,10 @@ SwFmt::~SwFmt()
 |*    Letzte Aenderung  JP 05.08.94
 *************************************************************************/
 
+namespace
+{
+    bool ImpCheck(const SwClient& rClient) { return 0 != dynamic_cast< const SwFmt* >(&rClient); }
+}
 
 void SwFmt::Modify( const SfxPoolItem* pOldValue, const SfxPoolItem* pNewValue )
 {
@@ -350,7 +354,7 @@ void SwFmt::Modify( const SfxPoolItem* pOldValue, const SfxPoolItem* pNewValue )
             // mba: here we don't use the additional stuff from NotifyClients().
             // should we?!
             // mba: move the code that ignores this event to the clients
-            ModifyBroadcast( pOldValue, pNewValue, &typeid(SwFmt) );
+            ModifyBroadcast( pOldValue, pNewValue, &ImpCheck);
 			bWeiter = sal_False;
 		}
 		break;

@@ -144,7 +144,10 @@ public:
     // the same, but without setting bModifyLocked or checking for any of the flags
     // mba: it would be interesting to know why this is necessary
     // also allows to limit callback to certain type (HACK)
-	void ModifyBroadcast( const SfxPoolItem *pOldValue, const SfxPoolItem *pNewValue, const std::type_info* pType = &typeid(SwClient) );
+	void ModifyBroadcast( 
+        const SfxPoolItem *pOldValue, 
+        const SfxPoolItem *pNewValue, 
+        bool (*pIsValidSwClient)(const SwClient&) = 0);
 
     // a more universal broadcasting mechanism
 	void CallSwClientNotify( const SfxHint& rHint ) const;
@@ -202,6 +205,7 @@ protected:
 
 class SwClientIter
 {
+private:
 	friend SwClient* SwModify::Remove(SwClient *); // for pointer adjustments
 	friend void SwModify::Add(SwClient *pDepend);   // for pointer adjustments
 
@@ -220,36 +224,17 @@ class SwClientIter
     // from its SwModify
 	SwClientIter *pNxtIter;
 
-    SwClient* mpWatchClient;    // if set, SwModify::_Remove checks if this client is removed
-
-    // iterator can be limited to return only SwClient objects of a certain type
-	const std::type_info* mpSrchId;
-
 public:
     SW_DLLPUBLIC SwClientIter( const SwModify& );
 	SW_DLLPUBLIC ~SwClientIter();
-
-	const SwModify& GetModify() const { return rRoot; }
-
-	SwClient* operator++();
-	SwClient* GoStart();
-	SwClient* GoEnd();
-
-    // returns the current SwClient object; 
-    // in case this was already removed, the object marked down to become 
-    // the next current one is returned
-	SwClient* operator()() const
-		{ return pDelNext == pAct ? pAct : pDelNext; }
 
     // return "true" if an object was removed from a client chain in iteration
     // adding objects to a client chain in iteration is forbidden
     // SwModify::Add() asserts this
 	bool IsChanged() const { return pDelNext != pAct; }
 
-	SW_DLLPUBLIC SwClient* First( const std::type_info& rType );
-	SW_DLLPUBLIC SwClient* Next();
-	SW_DLLPUBLIC SwClient* Last( const std::type_info& rType );
-	SW_DLLPUBLIC SwClient* Previous();
+	SW_DLLPUBLIC SwClient* SwClientIter_First();
+	SW_DLLPUBLIC SwClient* SwClientIter_Next();
 };
 
 #endif

@@ -56,7 +56,7 @@ class SdrOutliner;
 class SdrDragStat;
 class SdrHdl;
 class SdrHdlList;
-class SdrItemPool;
+class SfxItemPool;
 class SdrModel;
 class SdrObjList;
 class SdrObject;
@@ -487,7 +487,7 @@ public:
     // DrawContact support: Methods for handling Object changes
 	void ActionChanged() const;
 
-	SdrItemPool& GetObjectItemPool() const;
+	SfxItemPool& GetObjectItemPool() const;
 
 	virtual sal_uInt32 GetObjInventor() const;
 	virtual sal_uInt16 GetObjIdentifier() const;

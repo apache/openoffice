@@ -653,9 +653,9 @@ void SdrObject::handlePageChange(SdrPage* /*pOldPage*/, SdrPage* /*pNewPage*/)
 	// nothing to do in the default
 }
 
-SdrItemPool& SdrObject::GetObjectItemPool() const
+SfxItemPool& SdrObject::GetObjectItemPool() const
 {
-	return dynamic_cast< SdrItemPool& >(getSdrModelFromSdrObject().GetItemPool());
+	return getSdrModelFromSdrObject().GetItemPool();
 }
 
 sal_uInt32 SdrObject::GetObjInventor()   const

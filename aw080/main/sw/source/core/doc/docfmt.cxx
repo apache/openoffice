@@ -2118,6 +2118,11 @@ void SwDoc::CopyPageDescHeaderFooterImpl( bool bCpyHeader,
 	delete pNewItem;
 }
 
+namespace
+{
+    bool ImpCheck(const SwClient& rClient) { return 0 != dynamic_cast< const SwFrm* >(&rClient); }
+}
+
 void SwDoc::CopyPageDesc( const SwPageDesc& rSrcDesc, SwPageDesc& rDstDesc,
 							sal_Bool bCopyPoolIds )
 {
@@ -2198,11 +2203,13 @@ void SwDoc::CopyPageDesc( const SwPageDesc& rSrcDesc, SwPageDesc& rDstDesc,
 	{
 		rDstDesc.SetFtnInfo( rSrcDesc.GetFtnInfo() );
 		SwMsgPoolItem  aInfo( RES_PAGEDESC_FTNINFO );
-		{
-            rDstDesc.GetMaster().ModifyBroadcast( &aInfo, 0, &typeid(SwFrm) );
+
+        {
+            rDstDesc.GetMaster().ModifyBroadcast( &aInfo, 0, &ImpCheck);
 		}
-		{
-            rDstDesc.GetLeft().ModifyBroadcast( &aInfo, 0, &typeid(SwFrm) );
+		
+        {
+            rDstDesc.GetLeft().ModifyBroadcast( &aInfo, 0, &ImpCheck);
 		}
 	}
 }

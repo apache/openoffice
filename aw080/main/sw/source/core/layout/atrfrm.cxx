@@ -175,12 +175,12 @@ void DelHFFormat( SwClient *pToRemove, SwFrmFmt *pFmt )
 		// Klammer, weil im DTOR SwClientIter das Flag bTreeChg zurueck
 		// gesetzt wird. Unguenstig, wenn das Format vorher zerstoert wird.
 		SwClientIter aIter( *pFmt );        // TODO
-		SwClient *pLast = aIter.GoStart();
+		SwClient *pLast = aIter.SwClientIter_First();
 		if( pLast )
 			do {
                 bDel = dynamic_cast< SwFrm* >(pLast)
                     || SwXHeadFootText::IsXHeadFootText(pLast);
-			} while( bDel && 0 != ( pLast = ++aIter ));
+			} while( bDel && 0 != ( pLast = aIter.SwClientIter_Next() ));
 	}
 
 	if ( bDel )
