@@ -516,16 +516,16 @@ Size DrawViewShell::GetOptimalSizePixel() const
 	{
 		SdPage& rPage = (SdPage&) pPV->getSdrPageFromSdrPageView();
 
-			if (!mbZoomOnPage)
-			{
-				// Gegenwaertigen MapMode beruecksichtigen
-			const basegfx::B2DVector aDiscreteScale(GetActiveWindow()->GetInverseViewTransformation() * rPage.GetPageScale());
+		if (!mbZoomOnPage)
+		{
+			// Gegenwaertigen MapMode beruecksichtigen
+    		const basegfx::B2DVector aDiscreteScale(GetActiveWindow()->GetInverseViewTransformation() * rPage.GetPageScale());
 				
-			aSize = Size(basegfx::fround(aDiscreteScale.getX()), basegfx::fround(aDiscreteScale.getY()));
-			}
-			else
-			{
-				// 1:1 Darstellung
+	    	aSize = Size(basegfx::fround(aDiscreteScale.getX()), basegfx::fround(aDiscreteScale.getY()));
+		}
+		else
+		{
+			// 1:1 Darstellung
 			const MapMode aMapMode(MAP_100TH_MM);
 			const basegfx::B2DVector aDiscreteScale(GetActiveWindow()->GetInverseViewTransformation(aMapMode) * rPage.GetPageScale());
 

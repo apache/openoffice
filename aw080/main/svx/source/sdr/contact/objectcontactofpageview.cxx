@@ -202,8 +202,7 @@ namespace sdr
             else
 			{
 				// use visible pixels, but transform to world coordinates
-				const Size aOutputSizePixel(rTargetOutDev.GetOutputSizePixel());
-				aViewRange = basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight());
+				aViewRange = rTargetOutDev.GetDiscreteRange();
 
 				// if a clip region is set, use it
 				if(!rDisplayInfo.GetRedrawArea().IsEmpty())
@@ -337,9 +336,7 @@ namespace sdr
 			else
 			{
 				const OutputDevice& rTargetOutDev = GetPageWindow().GetPaintWindow().GetTargetOutputDevice();
-				const Size aOutputSizePixel(rTargetOutDev.GetOutputSizePixel());
-				const basegfx::B2DRange aLogicViewRange(rTargetOutDev.GetInverseViewTransformation() *
-					basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight()));
+                const basegfx::B2DRange aLogicViewRange(rTargetOutDev.GetLogicRange());
 
 				if(!aLogicViewRange.isEmpty() && !aLogicViewRange.overlaps(rRange))
 				{

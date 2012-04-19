@@ -104,10 +104,8 @@ namespace sdr
 					// create ViewRange
 					if(!bOutputToRecordingMetaFile)
 					{
-						// use visible pixels, but transform to world coordinates
-						const Size aOutputSizePixel(pTargetDevice->GetOutputSizePixel());
-						aViewRange = pTargetDevice->GetInverseViewTransformation() *
-							::basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight());
+                        // use logic visible range
+                        aViewRange = pTargetDevice->GetLogicRange();
 					}
 
 					// upate local ViewInformation2D

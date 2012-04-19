@@ -156,9 +156,7 @@ namespace sdr
 
 				if(OUTDEV_WINDOW == getOutputDevice().GetOutDevType())
 				{
-					const Size aOutputSizePixel(getOutputDevice().GetOutputSizePixel());
-					aViewRange = getOutputDevice().GetInverseViewTransformation() *
-						basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight());
+                    aViewRange = getOutputDevice().GetLogicRange();
 				}
 
                 OverlayManager* pThis = const_cast< OverlayManager* >(this);

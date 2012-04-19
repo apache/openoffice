@@ -431,23 +431,25 @@ void ViewShell::SetZoom(long nZoom)
 
 void ViewShell::SetZoomRange(const basegfx::B2DRange& rZoomRange)
 {
-	long nZoom = GetActiveWindow()->SetZoomRange(rZoomRange);
-	Fraction aUIScale(nZoom, 100);
-	aUIScale *= GetDoc()->GetUIScale();
+	double fZoom(GetActiveWindow()->SetZoomRange(rZoomRange));
 
-    if (mpHorizontalRuler.get() != NULL)
-        mpHorizontalRuler->SetZoom(aUIScale);
-
-    if (mpVerticalRuler.get() != NULL)
-        mpVerticalRuler->SetZoom(aUIScale);
-
-    if (mpContentWindow.get() != NULL)
+    if(mpHorizontalRuler.get())
     {
-		// WinViewPos is rescued over the SetZoomIntegral call indirectly in the
-		// old code, doing the same here
-        const basegfx::B2DPoint aWinViewPos(mpContentWindow->GetWinViewPos());
-        mpContentWindow->SetZoomIntegral(nZoom);
-        mpContentWindow->SetWinViewPos(aWinViewPos);
+        mpHorizontalRuler->SetZoom(Fraction(fZoom * 0.01 * double(GetDoc()->GetUIScale())));
+    }
+
+    if(mpVerticalRuler.get())
+    {
+        mpVerticalRuler->SetZoom(Fraction(fZoom * 0.01 * double(GetDoc()->GetUIScale())));
+    }
+
+    if(mpContentWindow.get())
+    {
+//TTTT		// WinViewPos is rescued over the SetZoomIntegral call indirectly in the
+//		// old code, doing the same here
+//        const basegfx::B2DPoint aWinViewPos(mpContentWindow->GetWinViewPos());
+        mpContentWindow->SetZoomIntegral(fZoom);
+//        mpContentWindow->SetWinViewPos(aWinViewPos);
         mpContentWindow->UpdateMapOrigin();
 
 		// #i74769# see above

@@ -725,12 +725,12 @@ void Window::UpdateMapOrigin(bool bInvalidate)
 		}
     }
 
-    UpdateMapMode ();
+    UpdateMapMode();
 
-    if (bChanged && bInvalidate)
+    if(bChanged && bInvalidate)
 	{
         Invalidate();
-}
+    }
 }
 
 

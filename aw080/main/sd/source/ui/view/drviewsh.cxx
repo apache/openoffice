@@ -80,109 +80,104 @@ bool DrawViewShell::GotoBookmark(const String& rBookmark)
 |*
 \************************************************************************/
 
-void DrawViewShell::MakeVisibleAtView(const basegfx::B2DRange& rRange, ::Window& rWin)
+void DrawViewShell::MakeVisibleAtView(const basegfx::B2DRange& rToMakeVisibleRange, ::Window& rWin)
 {
-	// #98568# In older versions, if in X or Y the size of the object was
-	// smaller than the visible area, the user-defined zoom was
-	// changed. This was decided to be a bug for 6.x, thus I developed a
-	// version which instead handles X/Y bigger/smaller and visibility
-	// questions seperately. The new behaviour is triggered with the
-	// bZoomAllowed parameter which for old behaviour should be set to
-	// sal_True. I looked at all uses of MakeVisibleAtView() in the application
-	// and found no valid reason for really changing the zoom factor, thus I
-	// decided to NOT expand (incompatible) this virtual method to get one
-	// more parameter. If this is wanted in later versions, feel free to add
-	// that bool to the parameter list.
-	sal_Bool bZoomAllowed(sal_False);
-	const basegfx::B2DVector aLogicSize(rRange.getRange());
+    if(!rToMakeVisibleRange.isEmpty() && !SlideShow::IsRunning(GetViewShellBase()))
+    {
+    	const basegfx::B2DRange aVisibleLogic(rWin.GetLogicRange());
 
-	// Sichtbarer Bereich
-	const Size aVisSizePixel(rWin.GetOutputSizePixel());
-	basegfx::B2DRange aVisArea(rWin.GetInverseViewTransformation() *
-		basegfx::B2DRange(0.0, 0.0, aVisSizePixel.Width(), aVisSizePixel.Height()));
+        if(!aVisibleLogic.isInside(rToMakeVisibleRange))
+	    {
+            // object is not completely inside. Calc target area with border
+		    const double fPercentBorder(0.15); // 15%
 
-	if(!aVisArea.isInside(rRange) && !SlideShow::IsRunning( GetViewShellBase() ) )
-	{
-		// Objekt liegt nicht komplett im sichtbaren Bereich
-		basegfx::B2DVector aFreeSpace(aVisArea.getRange() - aLogicSize);
+            // default new top-left is current top-left
+		    basegfx::B2DPoint aNewPos(aVisibleLogic.getMinimum());
 
-		if(bZoomAllowed && (aFreeSpace.getX() < 0.0 || aFreeSpace.getY() < 0.0))
-		{
-			// Objekt passt nicht in sichtbaren Bereich -> auf Objektgroesse zoomen
-			SetZoomRange(rRange);
-		}
-		else
-		{
-			// #98568# allow a mode for move-only visibility without zooming.
-			const double fPercentBorder(30.0 / 200.0);
-			const basegfx::B2DRange aInnerRange(
-				aVisArea.getMinX() + (aVisArea.getWidth() * fPercentBorder),
-				aVisArea.getMinY() + (aVisArea.getHeight() * fPercentBorder),
-				aVisArea.getMaxX() - (aVisArea.getWidth() * fPercentBorder),
-				aVisArea.getMaxY() - (aVisArea.getHeight() * fPercentBorder));
-			basegfx::B2DPoint aNewPos(aVisArea.getMinimum());
+            if(rToMakeVisibleRange.getWidth() > aVisibleLogic.getWidth())
+            {
+                // object is wider than target range
+                if(rToMakeVisibleRange.getMaxX() < aVisibleLogic.getMinX())
+                {
+                    // object is outside left, move view to show right side of object
+                    aNewPos.setX(rToMakeVisibleRange.getMaxX() - (aVisibleLogic.getWidth() * (1.0 - fPercentBorder)));
+                }
+                else if(rToMakeVisibleRange.getMinX() > aVisibleLogic.getMaxX())
+                {
+                    // object is outside right
+                    aNewPos.setX(rToMakeVisibleRange.getMinX() - (aVisibleLogic.getWidth() * fPercentBorder));
+                }
+                else
+                {
+                    // object is partially in visible range, nothing to do
+                }
+            }
+            else
+            {
+                // object is equal or taller than target range
+                if(rToMakeVisibleRange.getMinX() < aVisibleLogic.getMinX())
+                {
+                    // left side of object not completely visible
+                    aNewPos.setX(rToMakeVisibleRange.getMinX() - (aVisibleLogic.getWidth() * fPercentBorder));
+                }
+                else if(rToMakeVisibleRange.getMaxX() > aVisibleLogic.getMaxX())
+                {
+                    // right side of object not completely visible
+                    aNewPos.setX(rToMakeVisibleRange.getMaxX() - (aVisibleLogic.getWidth() * (1.0 - fPercentBorder)));
+                }
+                else
+                {
+                    // both sides visible, should not happen since already checked by isInside
+                }
+            }
 
-			if(aFreeSpace.getX() < 0.0)
-			{
-				if(aInnerRange.getMinX() > rRange.getMaxX())
-				{
-					// object moves out to the left
-					aNewPos.setX(aNewPos.getX() - (aVisArea.getWidth() * 0.5));
-				}
+            if(rToMakeVisibleRange.getHeight() > aVisibleLogic.getHeight())
+            {
+                // object is higher than target range
+                if(rToMakeVisibleRange.getMaxY() < aVisibleLogic.getMinY())
+                {
+                    // object is above, move view to show lower side of object
+                    aNewPos.setY(rToMakeVisibleRange.getMaxY() - (aVisibleLogic.getHeight() * (1.0 - fPercentBorder)));
+                }
+                else if(rToMakeVisibleRange.getMinY() > aVisibleLogic.getMaxY())
+                {
+                    // object is below
+                    aNewPos.setY(rToMakeVisibleRange.getMinY() - (aVisibleLogic.getHeight() * fPercentBorder));
+                }
+                else
+                {
+                    // object is partially in visible range, nothing to do
+                }
+            }
+            else
+            {
+                // object is equal or taller than target range
+                if(rToMakeVisibleRange.getMinY() < aVisibleLogic.getMinY())
+                {
+                    // upper side of object not completely visible
+                    aNewPos.setY(rToMakeVisibleRange.getMinY() - (aVisibleLogic.getHeight() * fPercentBorder));
+                }
+                else if(rToMakeVisibleRange.getMaxY() > aVisibleLogic.getMaxY())
+                {
+                    // bottom of object not completely visible
+                    aNewPos.setY(rToMakeVisibleRange.getMaxY() - (aVisibleLogic.getHeight() * (1.0 - fPercentBorder)));
+                }
+                else
+                {
+                    // both sides visible, should not happen since already checked by isInside
+                }
+            }
 
-				if(aInnerRange.getMaxX() < rRange.getMinX())
-				{
-					// object moves out to the right
-					aNewPos.setX(aNewPos.getX() + (aVisArea.getWidth() * 0.5));
-				}
-			}
-			else
-			{
-				if(aFreeSpace.getX() > rRange.getWidth())
-					aFreeSpace.setX(rRange.getWidth());
-
-				while(rRange.getMaxX() > aNewPos.getX() + aVisArea.getWidth())
-					aNewPos.setX(aNewPos.getX() + aFreeSpace.getX());
-				
-				while(rRange.getMinX() < aNewPos.getX())
-					aNewPos.setX(aNewPos.getX() - aFreeSpace.getX());
-			}
-
-			if(aFreeSpace.getY() < 0.0)
-			{
-				if(aInnerRange.getMinY() > rRange.getMaxY())
-				{
-					// object moves out to the top
-					aNewPos.setY(aNewPos.getY() - (aVisArea.getHeight() * 0.5));
-				}
-
-				if(aInnerRange.getMaxY() < rRange.getMinY())
-				{
-					// object moves out to the right
-					aNewPos.setY(aNewPos.getY() + (aVisArea.getHeight() * 0.5));
-				}
-			}
-			else
-			{
-				if(aFreeSpace.getX() > rRange.getHeight())
-					aFreeSpace.setY(rRange.getHeight());
-
-				while(rRange.getMaxY() > aNewPos.getY() + aVisArea.getHeight())
-					aNewPos.setY(aNewPos.getY() + aFreeSpace.getY());
-				
-				while(rRange.getMinY() < aNewPos.getY())
-					aNewPos.setY(aNewPos.getY() - aFreeSpace.getY());
-			}
-
-			// did position change? Does it need to be set?
-			if(!aNewPos.equal(aVisArea.getMinimum()))
-			{
-				aVisArea = basegfx::B2DRange(aNewPos, aNewPos + aVisArea.getRange());
-
-				SetZoomRange(aVisArea);
-			}
-		}
-	}
+		    if(!aNewPos.equal(aVisibleLogic.getMinimum()))
+		    {
+                // set new zoom if top-left has to be changed
+			    SetZoomRange(
+                    basegfx::B2DRange(
+                        aNewPos, 
+                        aNewPos + aVisibleLogic.getRange()));
+		    }
+        }
+    }
 }
 
 }
