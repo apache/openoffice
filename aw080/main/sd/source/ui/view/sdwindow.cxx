@@ -161,8 +161,7 @@ void Window::CalcMinZoom()
             // and calculate the scaling factors that would lead to the view
             // area (also called application area) to completely fill the
             // window.
-			const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
-			const basegfx::B2DVector aWinSize(GetInverseViewTransformation() * aDiscretePixels);
+			const basegfx::B2DVector aWinSize(GetLogicVector());
 			const double fX(aWinSize.getX() / maViewSize.getX());
 			const double fY(aWinSize.getY() / maViewSize.getY());
 
@@ -496,8 +495,7 @@ void Window::SetZoomIntegral(double fZoom)
 	}
 
     // Calculate the window's new origin.
-	const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
-	const basegfx::B2DVector aWinSize(GetInverseViewTransformation() * aDiscretePixels);
+	const basegfx::B2DVector aWinSize(GetLogicVector());
 	const double fW(aWinSize.getX() * GetZoom() / fZoom);
 	const double fH(aWinSize.getY() * GetZoom() / fZoom);
 
@@ -532,8 +530,7 @@ double Window::GetZoomForRange(const basegfx::B2DRange& rZoomRange)
         // coordinate directions .
 		double fX(0.0);
 		double fY(0.0);
-		const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
-		const basegfx::B2DVector aWinSize(GetInverseViewTransformation() * aDiscretePixels);
+		const basegfx::B2DVector aWinSize(GetLogicVector());
 
 		if(!basegfx::fTools::equalZero(aZoomScale.getY()))
 		{
@@ -599,12 +596,7 @@ double Window::SetZoomRange(const basegfx::B2DRange& rZoomRange)
 		const basegfx::B2DPoint aPos(rZoomRange.getMinimum());
         // Transform the output area from pixel coordinates into logical
         // coordinates.
-		const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
-		const basegfx::B2DVector aWinSize(GetInverseViewTransformation() * aDiscretePixels);
-        // Paranoia!  The degenerate case of zero width or height has been
-        // taken care of above.
-		DBG_ASSERT(aZoomScale.getX(), "ZoomRect-Breite = 0!");
-		DBG_ASSERT(aZoomScale.getY(), "ZoomRect-Hoehe = 0!");
+		const basegfx::B2DVector aWinSize(GetLogicVector());
 
         // Calculate the scale factors which will lead to the given
         // rectangle being fully visible (when translated accordingly) as
@@ -613,14 +605,14 @@ double Window::SetZoomRange(const basegfx::B2DRange& rZoomRange)
 		double fX(0.0);
 		double fY(0.0);
 
-		if(!basegfx::fTools::equalZero(aZoomScale.getY()))
-		{
-			fX = aWinSize.getY() / aZoomScale.getY();
-		}
-
 		if(!basegfx::fTools::equalZero(aZoomScale.getX()))
 		{
-			fY = aWinSize.getX() / aZoomScale.getX();
+			fX = aWinSize.getX() / aZoomScale.getX();
+		}
+
+		if(!basegfx::fTools::equalZero(aZoomScale.getY()))
+		{
+			fY = aWinSize.getY() / aZoomScale.getY();
 		}
 
         // Use the smaller one of both so that the zoom rectangle will be
@@ -697,8 +689,7 @@ void Window::UpdateMapOrigin(bool bInvalidate)
 
 	if ( mbCenterAllowed )
 	{
-		const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
-		const basegfx::B2DVector aWinSize(GetInverseViewTransformation() * aDiscretePixels);
+		const basegfx::B2DVector aWinSize(GetLogicVector());
 
 		if(basegfx::fTools::more(maWinPos.getX(), maViewSize.getX() - aWinSize.getX()))
 		{
@@ -733,52 +724,20 @@ void Window::UpdateMapOrigin(bool bInvalidate)
     }
 }
 
-
-
-
-void Window::UpdateMapMode (void)
+void Window::UpdateMapMode(void)
 {
-    maWinPos -= maViewOrigin;
-    
-	basegfx::B2DPoint aDiscretePosition(GetViewTransformation() * maWinPos);
-    // Groesse muss vielfaches von BRUSH_SIZE sein, damit Muster
-    // richtig dargestellt werden
-    // #i2237#
-    // removed old stuff here which still forced zoom to be
-    // %BRUSH_SIZE which is outdated now
-
-    if (mpViewShell && dynamic_cast< DrawViewShell* >(mpViewShell))
-    {
-        // Seite soll nicht am Fensterrand "kleben"
-        if(basegfx::fTools::equalZero(aDiscretePosition.getX()))
-        {
-            // #i2237#
-            // Since BRUSH_SIZE alignment is outdated now, i use the
-            // former constant here directly
-            aDiscretePosition.setX(aDiscretePosition.getX() - 8.0);
-        }
-
-		if(basegfx::fTools::equalZero(aDiscretePosition.getY()))
-        {
-            // #i2237#
-            // Since BRUSH_SIZE alignment is outdated now, i use the
-            // former constant here directly
-            aDiscretePosition.setY(aDiscretePosition.getY() - 8.0);
-        }
-    }
-    
-    maWinPos = GetInverseViewTransformation() * aDiscretePosition;
-	const Point aNewOrigin(basegfx::fround(-maWinPos.getX()), basegfx::fround(-maWinPos.getY()));
-
-    maWinPos += maViewOrigin;
-    
+    const Point aNewOffset(
+        basegfx::fround(maViewOrigin.getX() - maWinPos.getX()), 
+        basegfx::fround(maViewOrigin.getY() - maWinPos.getY()));
 	MapMode aMap(GetMapMode());
-    aMap.SetOrigin(aNewOrigin);
-    SetMapMode(aMap);
+
+    if(aMap.GetOrigin() != aNewOffset)
+    {
+        aMap.SetOrigin(aNewOffset);
+
+        SetMapMode(aMap);
+    }
 }
-
-
-
 
 /*************************************************************************
 |*
@@ -841,10 +800,9 @@ void Window::SetVisibleXY(double fX, double fY)
 |*
 \************************************************************************/
 
-double Window::GetVisibleWidth()
+double Window::GetVisibleWidthRelativeToView()
 {
-	const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
-	basegfx::B2DVector aWinSize(GetInverseViewTransformation() * aDiscretePixels);
+	basegfx::B2DVector aWinSize(GetLogicVector());
 
 	if(basegfx::fTools::more(aWinSize.getX(), maViewSize.getX()))
 	{
@@ -861,10 +819,9 @@ double Window::GetVisibleWidth()
 |*
 \************************************************************************/
 
-double Window::GetVisibleHeight()
+double Window::GetVisibleHeightRelativeToView()
 {
-	const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
-	basegfx::B2DVector aWinSize(GetInverseViewTransformation() * aDiscretePixels);
+	basegfx::B2DVector aWinSize(GetLogicVector());
 
 	if(basegfx::fTools::more(aWinSize.getY(), maViewSize.getY()))
 	{
@@ -883,7 +840,7 @@ double Window::GetVisibleHeight()
 
 double Window::GetScrlLineWidth()
 {
-	return (GetVisibleWidth() * SCROLL_LINE_FACT);
+	return (GetVisibleWidthRelativeToView() * SCROLL_LINE_FACT);
 }
 
 /*************************************************************************
@@ -895,7 +852,7 @@ double Window::GetScrlLineWidth()
 
 double Window::GetScrlLineHeight()
 {
-	return (GetVisibleHeight() * SCROLL_LINE_FACT);
+	return (GetVisibleHeightRelativeToView() * SCROLL_LINE_FACT);
 }
 
 /*************************************************************************
@@ -907,7 +864,7 @@ double Window::GetScrlLineHeight()
 
 double Window::GetScrlPageWidth()
 {
-	return (GetVisibleWidth() * SCROLL_PAGE_FACT);
+	return (GetVisibleWidthRelativeToView() * SCROLL_PAGE_FACT);
 }
 
 /*************************************************************************
@@ -919,7 +876,7 @@ double Window::GetScrlPageWidth()
 
 double Window::GetScrlPageHeight()
 {
-	return (GetVisibleHeight() * SCROLL_PAGE_FACT);
+	return (GetVisibleHeightRelativeToView() * SCROLL_PAGE_FACT);
 }
 
 /*************************************************************************
@@ -1164,7 +1121,7 @@ void Window::SetUseDropScroll (bool bUseDropScroll)
 
 void Window::DropScroll(const basegfx::B2DPoint& rMousePos)
 {
-	const basegfx::B2DVector aDiscretePixels(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
+	const basegfx::B2DVector aDiscretePixels(GetDiscreteVector());
 	basegfx::B2DVector fDelta(0.0, 0.0);
 
 	if (aDiscretePixels.getX() > SCROLL_SENSITIVE * 3)
@@ -1202,8 +1159,8 @@ void Window::DropScroll(const basegfx::B2DPoint& rMousePos)
 		else 
 		{
             mnTicks ++;
-	}
-}
+	    }
+    }
 }
 
 

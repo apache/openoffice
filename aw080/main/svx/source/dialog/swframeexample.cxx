@@ -94,10 +94,7 @@ void SvxSwFrameExample::DataChanged( const DataChangedEvent& rDCEvt )
 
 void SvxSwFrameExample::InitAllRects_Impl()
 {
-//    const Size aSz(GetOutputSizePixel());
-
 	// Seite
-//    aPage.SetPageScale(basegfx::B2DVector(aSz.Width() - 3, aSz.Height() - 3));
     aPage.SetSize( Size( GetOutputSizePixel().Width() - 3, GetOutputSizePixel().Height() - 3 ) );
 
 	sal_uIntPtr nOutWPix = aPage.GetWidth();

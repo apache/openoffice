@@ -136,7 +136,7 @@ static const int DELTA_ZOOM = 10;
 bool ViewShell::IsPageFlipMode(void) const
 {
 	return dynamic_cast< const DrawViewShell* >(this) && mpContentWindow.get() != NULL &&
-		mpContentWindow->GetVisibleHeight() >= 1.0;
+		mpContentWindow->GetVisibleHeightRelativeToView() >= 1.0;
 }
 
 SfxViewFrame* ViewShell::GetViewFrame (void) const
@@ -809,26 +809,11 @@ void ViewShell::Resize (void)
 		return;
 
     // Remember the new position and size.
-	maViewPos = Point(0,0); //mpParentWindow->GetPosPixel();
+	maViewPos = Point(0,0);
 	maViewSize = aSize;
 
     // Rearrange the UI elements to take care of the new position and size.
     ArrangeGUIElements ();
-    // end of included AdjustPosSizePixel.
-
-    Size aS (GetParentWindow()->GetOutputSizePixel());
-	Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-	Rectangle aVisArea = GetParentWindow()->PixelToLogic(
-        Rectangle( Point(0,0), aVisSizePixel));
-    Rectangle aCurrentVisArea (GetDocSh()->GetVisArea(ASPECT_CONTENT));
-    Rectangle aWindowRect = GetActiveWindow()->LogicToPixel(aCurrentVisArea);
-	if (GetDocSh()->GetCreateMode() == SFX_CREATE_MODE_EMBEDDED
-        && IsMainViewShell())
-	{
-        //        GetDocSh()->SetVisArea(aVisArea);
-	}
-
-    //	VisAreaChanged(aVisArea);
 
 	::sd::View* pView = GetView();
 

@@ -828,11 +828,7 @@ void DrawViewShell::FuSupport(SfxRequest& rReq)
 	        if( nFormat && aDataHelper.GetTransferable().is() )
 	        {
 		        sal_Int8 nAction = DND_ACTION_COPY;
-			    const basegfx::B2DPoint aPos(
-					GetActiveWindow()->GetInverseViewTransformation() * 
-						basegfx::B2DPoint(
-							GetActiveWindow()->GetOutputSizePixel().Width() * 0.5, 
-							GetActiveWindow()->GetOutputSizePixel().Height() * 0.5));
+			    const basegfx::B2DPoint aPos(GetActiveWindow()->GetLogicRange().getCenter());
 
                 if( !mpDrawView->InsertData( aDataHelper,
 						                  aPos,
@@ -1498,36 +1494,25 @@ void DrawViewShell::InsertURLField(const String& rURL, const String& rText, cons
 		pOutl->QuickInsertField( aURLItem, ESelection() );
 		OutlinerParaObject* pOutlParaObject = pOutl->CreateParaObject();
 
-		SdrRectObj* pRectObj = new SdrRectObj(
-			*GetDoc(),
-			basegfx::B2DHomMatrix(),
-			OBJ_TEXT,
-			true);
-
 		pOutl->UpdateFields();
 		pOutl->SetUpdateMode( true );
 		const Size aOldSize(pOutl->CalcTextSize());
-		const basegfx::B2DVector aSize(aOldSize.Width(), aOldSize.Height());
 		pOutl->SetUpdateMode( false );
 
-		basegfx::B2DPoint aPos;
-
-		if (pPos)
-		{
-			aPos = *pPos;
-		}
-		else
-		{
-			const Size aPixelSize(GetActiveWindow()->GetOutputSizePixel());
-			const basegfx::B2DPoint aPixelCenter(aPixelSize.Width(), aPixelSize.Height());
-
-			aPos = GetActiveWindow()->GetInverseViewTransformation() * aPixelCenter;
-			aPos -= aSize * 0.5;
-		}
-
-		const basegfx::B2DRange aLogicRange(aPos, aPos + aSize);
+        // originally when pPos it was taken as TopLeft of new object, not
+        // as center; I guess this was an error, all other inserters use center
+		const basegfx::B2DPoint aPos(pPos ? *pPos : GetActiveWindow()->GetLogicRange().getCenter());
+		const basegfx::B2DVector aSize(aOldSize.Width(), aOldSize.Height());
+        const basegfx::B2DHomMatrix aObjTrans(
+            basegfx::tools::createScaleTranslateB2DHomMatrix(
+                aSize,
+                aPos - (aSize * 0.5)));
+		SdrRectObj* pRectObj = new SdrRectObj(
+			*GetDoc(),
+			aObjTrans,
+			OBJ_TEXT,
+			true);
 		
-		sdr::legacy::SetLogicRange(*pRectObj, aLogicRange);
 		pRectObj->SetOutlinerParaObject( pOutlParaObject );
 		mpDrawView->InsertObjectAtView(*pRectObj);
 		pOutl->Init( nOutlMode );
@@ -1606,33 +1591,28 @@ void DrawViewShell::InsertURLButton(const String& rURL, const String& rText, con
 		if ( ::avmedia::MediaWindow::isMediaURL( rURL ) )
 			xPropSet->setPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM( "DispatchURLInternal" )), Any( sal_True ) );
 
-        basegfx::B2DPoint aPos;
+        const basegfx::B2DPoint aPos(pPos ? *pPos : GetActiveWindow()->GetLogicRange().getCenter());
+		const basegfx::B2DVector aSize(4000.0, 1000.0);
+        const basegfx::B2DHomMatrix aObjTrans(
+            basegfx::tools::createScaleTranslateB2DHomMatrix(
+                aSize,
+                aPos - (aSize * 0.5)));
+        sal_uLong nOptions(SDRINSERT_SETDEFLAYER);
 
-        if (pPos)
+        pUnoCtrl->setSdrObjectTransformation(aObjTrans);
+
+        if(GetViewShell())
         {
-            aPos = *pPos;
+            SfxInPlaceClient* pIpClient = GetViewShell()->GetIPClient();
+            
+            if(pIpClient && pIpClient->IsObjectInPlaceActive())
+            {
+                nOptions |= SDRINSERT_DONTMARK;
+            }
         }
         else
         {
-			const Size aPixelSize(GetActiveWindow()->GetOutputSizePixel());
-			const basegfx::B2DPoint aPixelCenter(aPixelSize.Width(), aPixelSize.Height());
-
-			aPos = GetActiveWindow()->GetInverseViewTransformation() * aPixelCenter;
-        }
-
-		basegfx::B2DVector aSize(4000.0, 1000.0);
-        
-		aPos -= aSize * 0.5;
-
-		sdr::legacy::SetLogicRange(*pUnoCtrl, basegfx::B2DRange(aPos, aPos + aSize));
-
-        sal_uLong nOptions = SDRINSERT_SETDEFLAYER;
-
-        OSL_ASSERT (GetViewShell()!=NULL);
-        SfxInPlaceClient* pIpClient = GetViewShell()->GetIPClient();
-        if (pIpClient!=NULL && pIpClient->IsObjectInPlaceActive())
-        {
-            nOptions |= SDRINSERT_DONTMARK;
+            OSL_ENSURE(false, "No ViewShell ?");
         }
 
         mpDrawView->InsertObjectAtView(*pUnoCtrl, nOptions);

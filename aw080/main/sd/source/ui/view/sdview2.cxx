@@ -369,22 +369,19 @@ void View::DoPaste (::Window* pWindow)
 	}
 	else
 	{
-        basegfx::B2DPoint aPos;
-		sal_Int8    nDnDAction = DND_ACTION_COPY;
+        DrawViewShell* pDrViewSh = dynamic_cast< DrawViewShell* >(mpDocSh->GetViewShell());
 
-	    if( pWindow )
-		{
-			aPos = pWindow->GetInverseViewTransformation() * 
-				basegfx::B2DPoint(
-					pWindow->GetOutputSizePixel().Width() * 0.5, 
-					pWindow->GetOutputSizePixel().Height() * 0.5);
-		}
-
-        DrawViewShell* pDrViewSh = (DrawViewShell*) mpDocSh->GetViewShell();
-
-        if (pDrViewSh != NULL)
+        if(pDrViewSh)
         {
-            if( !InsertData( aDataHelper, aPos, nDnDAction, false ) )
+            basegfx::B2DPoint aPos(0.0, 0.0);
+    		sal_Int8 nDnDAction(DND_ACTION_COPY);
+
+	        if(pWindow)
+		    {
+                aPos = pWindow->GetLogicRange().getCenter();
+            }
+
+            if(!InsertData(aDataHelper, aPos, nDnDAction, false))
             {
 				INetBookmark	aINetBookmark( aEmptyStr, aEmptyStr );
 
@@ -1018,8 +1015,6 @@ bool View::GetExchangeList( List*& rpExchangeList, List* pBookmarkList, sal_uInt
 
 	return( bNameOK );
 }
-
-typedef std::vector< std::pair< sal_uInt32, sal_uInt32 > > PathSurrogateVector;
 
 void ImplProcessObjectList(SdrObject* pObj, SdrObjectVector& rVector )
 {

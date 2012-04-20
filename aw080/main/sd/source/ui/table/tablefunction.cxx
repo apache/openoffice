@@ -160,18 +160,12 @@ void DrawViewShell::FuTable(SfxRequest& rReq)
 		}
 		else
 		{
-			const Size aSize( 14100, 200 );
-			Point aPos;
-			const Rectangle aWinRect(aPos, GetActiveWindow()->GetOutputSizePixel());
+            const basegfx::B2DPoint aCenter(GetActiveWindow()->GetLogicRange().getCenter());
+            const basegfx::B2DVector aScale(14100.0, 200.0);
 
-			aPos = aWinRect.Center();
-			aPos = GetActiveWindow()->PixelToLogic(aPos);
-			aPos.X() -= aSize.Width() / 2;
-			aPos.Y() -= aSize.Height() / 2;
-
-			aObjTrans = basegfx::tools::createScaleTranslateB2DHomMatrix(
-				aSize.getWidth(), aSize.getHeight(),
-				aPos.X(), aPos.Y());
+            aObjTrans = basegfx::tools::createScaleTranslateB2DHomMatrix(
+                aScale,
+                aCenter - (aScale * 0.5));
 		}
 
 		::sdr::table::SdrTableObj* pObj = new ::sdr::table::SdrTableObj(

@@ -965,8 +965,7 @@ IMPL_LINK( OutlineView, StatusEventHdl, EditStatus *, EMPTYARG )
 
 	if (!aVis.IsEmpty())		// nicht beim Oeffnen
 	{
-		const Rectangle aWin(pWin->PixelToLogic(Rectangle(Point(0,0), pWin->GetOutputSizePixel())));
-		const Size aTextSize(OUTLINE_PAPERWIDTH, mpOutliner->GetTextHeight() + aWin.GetHeight());
+		const Size aTextSize(OUTLINE_PAPERWIDTH, mpOutliner->GetTextHeight() + pWin->GetLogicVector().getY());
 
 		mpOutlineViewShell->InitWindows(
 			basegfx::B2DPoint(0.0, 0.0), 

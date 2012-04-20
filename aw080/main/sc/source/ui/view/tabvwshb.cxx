@@ -373,14 +373,15 @@ void ScTabViewShell::ExecDrawIns(SfxRequest& rReq)
 
 						if(pNewDBField)
 						{
-							Rectangle aVisArea = pWin->PixelToLogic(Rectangle(Point(0,0), pWin->GetOutputSizePixel()));
-							Point aObjPos(aVisArea.Center());
-						    const Size aObjSize(sdr::legacy::GetLogicRect(*pNewDBField).GetSize());
-							aObjPos.X() -= aObjSize.Width() / 2;
-							aObjPos.Y() -= aObjSize.Height() / 2;
-							Rectangle aNewObjectRectangle(aObjPos, aObjSize);
+                            const basegfx::B2DPoint aOldCenter(pNewDBField->getSdrObjectTransformation() * basegfx::B2DPoint(0.5, 0.5));
+                            const basegfx::B2DPoint aNewCenter(pWin->GetLogicRange().getCenter());
 
-                            sdr::legacy::SetLogicRect(*pNewDBField, aNewObjectRectangle);
+                            if(!aOldCenter.equal(aNewCenter))
+                            {
+                                sdr::legacy::transformSdrObject(
+                                    *pNewDBField, 
+                                    basegfx::tools::createTranslateB2DHomMatrix(aNewCenter - aOldCenter));
+                            }
 
 							// controls must be on control layer, groups on front layer
 						    if ( dynamic_cast< SdrUnoObj* >(pNewDBField) )

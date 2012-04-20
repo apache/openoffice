@@ -142,8 +142,8 @@ public:
 	double	GetVisibleX();			// Interface fuer ScrollBars
 	double	GetVisibleY();
 	void	SetVisibleXY(double fX, double fY);
-	double	GetVisibleWidth();
-	double	GetVisibleHeight();
+	double	GetVisibleWidthRelativeToView();
+	double	GetVisibleHeightRelativeToView();
 	double	GetScrlLineWidth();
 	double	GetScrlLineHeight();
 	double	GetScrlPageWidth();

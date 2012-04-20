@@ -105,7 +105,7 @@ void ViewShell::UpdateScrollBars()
 {
 	if (mpHorizontalScrollBar.get() != NULL)
 	{
-		long nW = (long)(mpContentWindow->GetVisibleWidth() * 32000);
+		long nW = (long)(mpContentWindow->GetVisibleWidthRelativeToView() * 32000);
 		long nX = (long)(mpContentWindow->GetVisibleX() * 32000);
 		mpHorizontalScrollBar->SetVisibleSize(nW);
 		mpHorizontalScrollBar->SetThumbPos(nX);
@@ -118,7 +118,7 @@ void ViewShell::UpdateScrollBars()
 
 	if (mpVerticalScrollBar.get() != NULL)
 	{
-		long nH = (long)(mpContentWindow->GetVisibleHeight() * 32000);
+		long nH = (long)(mpContentWindow->GetVisibleHeightRelativeToView() * 32000);
 		long nY = (long)(mpContentWindow->GetVisibleY() * 32000);
 
 		if(IsPageFlipMode()) // ie in zoom mode where no panning
@@ -194,10 +194,7 @@ long ViewShell::VirtHScrollHdl(ScrollBar* pHScroll)
         Point aVisAreaPos = GetActiveWindow()->PixelToLogic( Point(0,0) );
         aVisArea.SetPos(aVisAreaPos);
         GetDocSh()->SetVisArea(aVisArea);
-
-        Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-        Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
-        VisAreaChanged(aVisAreaWin);
+        UpdateVisAreaChanged();
 
         if (pView)
         {
@@ -262,10 +259,7 @@ long ViewShell::VirtVScrollHdl(ScrollBar* pVScroll)
         Point aVisAreaPos = GetActiveWindow()->PixelToLogic( Point(0,0) );
         aVisArea.SetPos(aVisAreaPos);
         GetDocSh()->SetVisArea(aVisArea);
-
-        Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-        Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
-        VisAreaChanged(aVisAreaWin);
+        UpdateVisAreaChanged();
 
         if (pView)
         {
@@ -363,10 +357,7 @@ void ViewShell::Scroll(long nScrollX, long nScrollY)
 	Point aVisAreaPos = GetActiveWindow()->PixelToLogic( Point(0,0) );
 	aVisArea.SetPos(aVisAreaPos);
 	GetDocSh()->SetVisArea(aVisArea);
-
-	Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-	Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
-	VisAreaChanged(aVisAreaWin);
+    UpdateVisAreaChanged();
 
 	::sd::View* pView = GetView();
 	if (pView)
@@ -409,9 +400,7 @@ void ViewShell::SetZoom(long nZoom)
         mpContentWindow->Invalidate(INVALIDATE_CHILDREN);
     }
 
-	Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-	Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
-	VisAreaChanged(aVisAreaWin);
+    UpdateVisAreaChanged();
 
 	::sd::View* pView = GetView();
 	if (pView)
@@ -456,9 +445,7 @@ void ViewShell::SetZoomRange(const basegfx::B2DRange& rZoomRange)
         mpContentWindow->Invalidate(INVALIDATE_CHILDREN);
     }
 
-	Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-	Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
-	VisAreaChanged(aVisAreaWin);
+    UpdateVisAreaChanged();
 
 	::sd::View* pView = GetView();
 	if (pView)
@@ -490,9 +477,7 @@ void ViewShell::InitWindows(const basegfx::B2DPoint& rViewOrigin, const basegfx:
         }
     }
 
-	Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-	Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
-	VisAreaChanged(aVisAreaWin);
+    UpdateVisAreaChanged();
 
 	::sd::View* pView = GetView();
 	if (pView)
@@ -1181,10 +1166,7 @@ void ViewShell::SetWinViewPos(const basegfx::B2DPoint& rWinPos, bool bUpdate)
 	}
 
 	UpdateScrollBars();
-
-	Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
-	Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
-	VisAreaChanged(aVisAreaWin);
+    UpdateVisAreaChanged();
 
 	::sd::View* pView = GetView();
 	if (pView)
@@ -1230,6 +1212,13 @@ void ViewShell::AdaptDefaultsForChart(
             OSL_ENSURE( false, "Exception caught in AdaptDefaultsForChart" );
         }
     }
+}
+
+void ViewShell::UpdateVisAreaChanged()
+{
+	Size aVisSizePixel = GetActiveWindow()->GetOutputSizePixel();
+	Rectangle aVisAreaWin = GetActiveWindow()->PixelToLogic( Rectangle( Point(0,0), aVisSizePixel) );
+	VisAreaChanged(aVisAreaWin);
 }
 
 } // end of namespace sd

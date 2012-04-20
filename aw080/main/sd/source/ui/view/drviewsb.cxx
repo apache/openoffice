@@ -492,7 +492,7 @@ void DrawViewShell::FuTemp02(SfxRequest& rReq)
 		case SID_INSERT_FLD_PAGES:
 		case SID_INSERT_FLD_FILE:
 		{
-			sal_uInt16 nMul = 1;
+			double fMul(1.0);
 			SvxFieldItem* pFieldItem = 0;
 
 			switch( nSId )
@@ -527,14 +527,14 @@ void DrawViewShell::FuTemp02(SfxRequest& rReq)
 				case SID_INSERT_FLD_PAGE:
 				{
                     pFieldItem = new SvxFieldItem( SvxPageField(), EE_FEATURE_FIELD );
-					nMul = 3;
+					fMul = 3.0;
 				}
 				break;
 
                 case SID_INSERT_FLD_PAGES:
 				{
                     pFieldItem = new SvxFieldItem( SvxPagesField(), EE_FEATURE_FIELD );
-					nMul = 3;
+					fMul = 3.0;
 				}
 				break;
 
@@ -584,31 +584,28 @@ void DrawViewShell::FuTemp02(SfxRequest& rReq)
 				pOutl->QuickInsertField( *pFieldItem, ESelection() );
 				OutlinerParaObject* pOutlParaObject = pOutl->CreateParaObject();
 
-				SdrRectObj* pRectObj = new SdrRectObj(
-					*GetDoc(),
-					basegfx::B2DHomMatrix(),
-					OBJ_TEXT,
-					true);
-				pRectObj->SetMergedItem(SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, true));
 
 				pOutl->UpdateFields();
 				pOutl->SetUpdateMode( true );
-				Size aSize( pOutl->CalcTextSize() );
-				aSize.Width() *= nMul;
+                const Size aSize(pOutl->CalcTextSize());
 				pOutl->SetUpdateMode( false );
 
-				Point aPos;
-				Rectangle aRect( aPos, GetActiveWindow()->GetOutputSizePixel() );
-				aPos = aRect.Center();
-				aPos = GetActiveWindow()->PixelToLogic(aPos);
-				aPos.X() -= aSize.Width() / 2;
-				aPos.Y() -= aSize.Height() / 2;
+                const basegfx::B2DVector aScale(aSize.Width() * fMul, aSize.Height() * fMul);
+                const basegfx::B2DPoint aPos(GetActiveWindow()->GetLogicRange().getCenter());
+                const basegfx::B2DHomMatrix aObjTrans(
+                    basegfx::tools::createScaleTranslateB2DHomMatrix(
+                        aScale,
+                        aPos - (aScale * 0.5)));
+				SdrRectObj* pRectObj = new SdrRectObj(
+					*GetDoc(),
+					aObjTrans,
+					OBJ_TEXT,
+					true);
 
-				Rectangle aLogicRect(aPos, aSize);
-				sdr::legacy::SetLogicRect(*pRectObj, aLogicRect);
-				pRectObj->SetOutlinerParaObject( pOutlParaObject );
+                pRectObj->SetMergedItem(SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, true));
+				pRectObj->SetOutlinerParaObject(pOutlParaObject);
 				mpDrawView->InsertObjectAtView(*pRectObj);
-				pOutl->Init( nOutlMode );
+				pOutl->Init(nOutlMode);
 			}
 
 			delete pFieldItem;

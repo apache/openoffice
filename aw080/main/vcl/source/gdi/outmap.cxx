@@ -2461,9 +2461,23 @@ basegfx::B2DRange OutputDevice::GetLogicRange() const
 
 // -----------------------------------------------------------------------
 
+basegfx::B2DVector OutputDevice::GetLogicVector() const
+{
+    return GetInverseViewTransformation() * GetDiscreteVector();
+}
+
+// -----------------------------------------------------------------------
+
 basegfx::B2DRange OutputDevice::GetDiscreteRange() const
 {
 	return basegfx::B2DRange(0.0, 0.0, GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
+}
+
+// -----------------------------------------------------------------------
+
+basegfx::B2DVector OutputDevice::GetDiscreteVector() const
+{
+    return basegfx::B2DVector(GetOutputSizePixel().Width(), GetOutputSizePixel().Height());
 }
 
 // -----------------------------------------------------------------------

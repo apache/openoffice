@@ -76,8 +76,7 @@ basegfx::B2DPoint SdrExchangeView::GetViewCenter(const OutputDevice* pOut) const
 
 	if(pOut) 
     {
-		aCenter = basegfx::B2DPoint(pOut->GetOutputSizePixel().getWidth(), pOut->GetOutputSizePixel().getHeight()) * 0.5;
-		aCenter *= pOut->GetInverseViewTransformation();
+		aCenter = pOut->GetLogicRange().getCenter();
 	}
 	
 	return aCenter;

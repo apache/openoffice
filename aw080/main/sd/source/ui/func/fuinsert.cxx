@@ -117,9 +117,10 @@ FunctionReference FuInsertGraphic::Create( ViewShell* pViewSh, ::sd::Window* pWi
 	return xFunc;
 }
 
-#ifdef _MSC_VER
-#pragma optimize ( "", off )
-#endif
+// TTTT needed? Check!
+//#ifdef _MSC_VER
+//#pragma optimize ( "", off )
+//#endif
 
 void FuInsertGraphic::DoExecute( SfxRequest&  )
 {
@@ -127,27 +128,35 @@ void FuInsertGraphic::DoExecute( SfxRequest&  )
 
 	if( aDlg.Execute() == GRFILTER_OK )
 	{
-		Graphic		aGraphic;
-		int nError = aDlg.GetGraphic(aGraphic);
-		if( nError == GRFILTER_OK )
-		{
-			if( mpViewShell && dynamic_cast< DrawViewShell* >(mpViewShell))
-			{
-				sal_Int8	nAction = DND_ACTION_COPY;
-				SdrObject* pPickObj = mpView->GetEmptyPresentationObject( PRESOBJ_GRAPHIC );
-				if( pPickObj )
-					nAction = DND_ACTION_LINK;
+		Graphic aGraphic;
+		int nError(aDlg.GetGraphic(aGraphic));
 
-				const basegfx::B2DPoint aPos(mpWindow->GetInverseViewTransformation() * 
-					basegfx::B2DPoint(mpWindow->GetOutputSizePixel().Width() / 2, mpWindow->GetOutputSizePixel().Height() / 2));
-				SdrGrafObj* pGrafObj = mpView->InsertGraphic(aGraphic, nAction, aPos, pPickObj, NULL);
+        if(GRFILTER_OK == nError)
+		{
+			if(mpViewShell && dynamic_cast< DrawViewShell* >(mpViewShell))
+			{
+				sal_Int8 nAction(DND_ACTION_COPY);
+				SdrObject* pPickObj = mpView->GetEmptyPresentationObject(PRESOBJ_GRAPHIC);
+				
+                if(pPickObj)
+                {
+					nAction = DND_ACTION_LINK;
+                }
+
+				SdrGrafObj* pGrafObj = mpView->InsertGraphic(
+                    aGraphic, 
+                    nAction, 
+                    mpWindow->GetLogicRange().getCenter(), 
+                    pPickObj, 
+                    0);
 
 				if(pGrafObj && aDlg.IsAsLink())
 				{
 					// store link only?
 					String aFltName(aDlg.GetCurrentFilter());
 					String aPath(aDlg.GetPath());
-					pGrafObj->SetGraphicLink(aPath, aFltName);
+
+                    pGrafObj->SetGraphicLink(aPath, aFltName);
 				}
 			}
 		}
@@ -158,9 +167,10 @@ void FuInsertGraphic::DoExecute( SfxRequest&  )
 	}
 }
 
-#ifdef _MSC_VER
-#pragma optimize ( "", on )
-#endif
+// TTTT needed? Check!
+//#ifdef _MSC_VER
+//#pragma optimize ( "", on )
+//#endif
 
 /*************************************************************************
 |*
@@ -214,11 +224,9 @@ void FuInsertClipboard::DoExecute( SfxRequest&  )
         if( nFormatId && aDataHelper.GetTransferable().is() )
         {
             sal_Int8 nAction = DND_ACTION_COPY;
-		    const basegfx::B2DPoint aPos(mpWindow->GetInverseViewTransformation() * 
-				basegfx::B2DPoint(mpWindow->GetOutputSizePixel().Width() / 2, mpWindow->GetOutputSizePixel().Height() / 2));
 
             if( !mpView->InsertData( aDataHelper,
-                                    aPos,
+                                    mpWindow->GetLogicRange().getCenter(),
                                     nAction, false, nFormatId ) &&
                 ( mpViewShell && dynamic_cast< DrawViewShell* >(mpViewShell) ) )
             {
@@ -320,33 +328,26 @@ void FuInsertOLE::DoExecute( SfxRequest& rReq )
 					// the default size will be set later
 				}
 
-				Size aSize( aSz.Width, aSz.Height );
+                basegfx::B2DVector aScale(aSz.Width, aSz.Height);
 
-				if (aSize.Height() == 0 || aSize.Width() == 0)
+				if(basegfx::fTools::equalZero(aScale.getX()) || basegfx::fTools::equalZero(aScale.getY()))
 				{
 					// Rechteck mit ausgewogenem Kantenverhaeltnis
-					aSize.Width()  = 14100;
-					aSize.Height() = 10000;
-					Size aTmp = OutputDevice::LogicToLogic( aSize, MAP_100TH_MM, aUnit );
-					aSz.Width = aTmp.Width();
-					aSz.Height = aTmp.Height();
-					xObj->setVisualAreaSize( nAspect, aSz );
+                    const double fFactor(OutputDevice::GetFactorLogicToLogic(MAP_100TH_MM, aUnit));
+
+                    aScale = basegfx::B2DVector(14100.0, 10000.0);
+					aSz.Width = basegfx::fround(fabs(aScale.getX() * fFactor));
+					aSz.Height = basegfx::fround(fabs(aScale.getY() * fFactor));
+                    xObj->setVisualAreaSize(nAspect, aSz);
 				}
 				else
 				{
-					aSize = OutputDevice::LogicToLogic(aSize, aUnit, MAP_100TH_MM);
+                    aScale *= OutputDevice::GetFactorLogicToLogic(aUnit, MAP_100TH_MM);
 				}
 
-				Point aPos;
-				const Rectangle aWinRect(aPos, mpWindow->GetOutputSizePixel());
-				aPos = aWinRect.Center();
-				aPos = mpWindow->PixelToLogic(aPos);
-				aPos.X() -= aSize.Width() / 2;
-				aPos.Y() -= aSize.Height() / 2;
-			
 				aObjTrans = basegfx::tools::createScaleTranslateB2DHomMatrix(
-					aSize.getWidth(), aSize.getHeight(),
-					aPos.X(), aPos.Y());
+                    aScale,
+                    mpWindow->GetLogicRange().getCenter() - (aScale * 0.5));
 			}
 
             SdrOle2Obj* pOleObj = new SdrOle2Obj(
@@ -747,33 +748,35 @@ void FuInsertAVMedia::DoExecute( SfxRequest& rReq )
 		}
 		else
 		{
-			Point	    aPos;
-			Size	    aSize;
-			sal_Int8    nAction = DND_ACTION_COPY;
+            basegfx::B2DPoint aPosition(0.0, 0.0);
+            basegfx::B2DVector aScale(aPrefSize.Width(), aPrefSize.Height());
 
-			if( aPrefSize.Width() && aPrefSize.Height() )
+			if(basegfx::fTools::equalZero(aScale.getX()) || basegfx::fTools::equalZero(aScale.getY()))
+            {
+                aScale = basegfx::B2DVector(5000.0, 5000.0);
+            }
+            else
 			{
-				if( mpWindow )
-					aSize = mpWindow->PixelToLogic( aPrefSize, MAP_100TH_MM );
-				else
-					aSize = Application::GetDefaultDevice()->PixelToLogic( aPrefSize, MAP_100TH_MM );
-			}
-			else
-				aSize = Size( 5000, 5000 );
-
-			if( mpWindow )
-			{
-				aPos = mpWindow->PixelToLogic( Rectangle( aPos, mpWindow->GetOutputSizePixel() ).Center() );
-				aPos.X() -= aSize.Width() >> 1;
-				aPos.Y() -= aSize.Height() >> 1;
+                aScale *= Application::GetDefaultDevice()->GetFactorLogicToLogic(MAP_PIXEL, MAP_100TH_MM);
 			}
 
-		    mpView->InsertMediaURL( aURL, nAction, 
-				basegfx::B2DPoint(aPos.X(), aPos.Y()), 
-				basegfx::B2DVector(aSize.getWidth(), aSize.getHeight()) ) ;
+			if(mpWindow)
+			{
+                aPosition = mpWindow->GetLogicRange().getCenter() - (aScale * 0.5);
+			}
 
-			if( mpWindow )
+			sal_Int8 nAction(DND_ACTION_COPY);
+		    
+            mpView->InsertMediaURL( 
+                aURL, 
+                nAction, 
+                aPosition, 
+                aScale);
+
+			if(mpWindow)
+            {
 				mpWindow->LeaveWait();
+            }
 		}
 	}
 }

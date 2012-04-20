@@ -200,20 +200,16 @@ bool FuZoom::MouseButtonUp(const MouseEvent& rMEvt)
 		if ( aZoomSizePixel.getX() < fTol && aZoomSizePixel.getY() < fTol )
 		{
 			// Klick auf der Stelle: Zoomfaktor verdoppeln
-			basegfx::B2DPoint aPos(mpWindow->GetInverseViewTransformation() * aPosPix);
-			basegfx::B2DVector aSize(mpWindow->GetInverseViewTransformation() * 
-				basegfx::B2DVector(mpWindow->GetOutputSizePixel().Width(), mpWindow->GetOutputSizePixel().Height()));
+			const basegfx::B2DPoint aPos(mpWindow->GetInverseViewTransformation() * aPosPix);
+            const basegfx::B2DVector aScale(mpWindow->GetLogicVector() * 0.25);
 
-			aSize *= 0.5;
-			aPos -= aSize * 0.5;
-			maZoomRange = basegfx::B2DRange(aPos, aPos + aSize);
+            maZoomRange = basegfx::B2DRange(aPos - aScale, aScale * 2.0);
 		}
 
 		mpViewShell->SetZoomRange(maZoomRange);
 	}
 
-	const basegfx::B2DRange aVisAreaWin(mpWindow->GetLogicRange());
-	mpViewShell->GetZoomList()->InsertZoomRange(aVisAreaWin);
+	mpViewShell->GetZoomList()->InsertZoomRange(mpWindow->GetLogicRange());
 
 	mbStartDrag = false;
 	mpWindow->ReleaseMouse();

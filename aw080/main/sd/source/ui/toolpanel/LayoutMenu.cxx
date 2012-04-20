@@ -603,7 +603,6 @@ int LayoutMenu::CalculateRowCount (const Size&, int nColumnCount)
     if (GetItemCount() > 0 && nColumnCount > 0)
     {
         nRowCount = (GetItemCount() + nColumnCount - 1) / nColumnCount;
-        //        nRowCount = GetOutputSizePixel().Height() / rItemSize.Height();
         if (nRowCount < 1)
             nRowCount = 1;
     }

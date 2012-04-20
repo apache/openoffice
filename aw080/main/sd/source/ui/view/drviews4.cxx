@@ -443,7 +443,7 @@ void DrawViewShell::MouseButtonUp(const MouseEvent& rMEvt, ::sd::Window* pWin)
 				{
 					SdPage& rPage = (SdPage&) mpDrawView->GetSdrPageView()->getSdrPageFromSdrPageView();
 					const basegfx::B2DPoint aOrg(rPage.GetLeftPageBorder(), rPage.GetTopPageBorder());
-				mpDrawView->GetSdrPageView()->SetPageOrigin(aOrg);
+				    mpDrawView->GetSdrPageView()->SetPageOrigin(aOrg);
 				}
 
 				GetViewFrame()->GetBindings().Invalidate(SID_RULER_NULL_OFFSET);

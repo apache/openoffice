@@ -300,13 +300,9 @@ void OutlineViewShell::ArrangeGUIElements ()
     {
         pWindow->SetMinZoomAutoCalc(false);
 
-        // pWindow->SetPosSizePixel(rNewPos, Size(nSizeX, nSizeY));
-
         // OutputArea der OutlinerView aendern
         OutlinerView* pOutlinerView = pOlView->GetViewByWindow(pWindow);
-
         Rectangle aWin(Point(0,0), pWindow->GetOutputSizePixel());
-//		aWin.nLeft = pOlView->GetPageNumberWidthPixel();
 
         aWin = pWindow->PixelToLogic(aWin);
         pOutlinerView->SetOutputArea(aWin);

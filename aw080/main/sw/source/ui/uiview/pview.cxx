@@ -1977,30 +1977,6 @@ Size  SwPagePreView::GetOptimalSizePixel() const
 {
     ASSERT( false, "overloaded virtual method <SwPagePreView::GetOptimalSizePixel()> needed ??" )
     return Size( -1, -1 );
-/*
-    //JP 09.06.99: was wird hier errechnet ?????
-// ALT:
-//   SfxApplicationWindow* pWin = SFX_APPWINDOW ;
-//   Rectangle aRect = pWin->GetClientAreaPixel();
-
-	Window& rWin = GetViewFrame()->GetWindow();
-	Rectangle aRect( Point(0, 0), rWin.GetOutputSizePixel() );
-	Size aMaxSize( aRect.GetWidth(), aRect.GetHeight() );
-	Size aInSize = rWin.GetOutputSizePixel();
-	Size aOutSize = rWin.GetSizePixel();
-	sal_uInt16 nXBorder = sal_uInt16(aOutSize.Width() - aInSize.Width());
-	sal_uInt16 nYBorder = sal_uInt16(aOutSize.Height() - aInSize.Height());
-	aMaxSize.Width() -= nXBorder;
-	//'auf Verdacht' etwas vom Border abziehen (Menue)
-	nYBorder -= (nYBorder - nXBorder) / 2;
-	aMaxSize.Height() -= nYBorder;
-	//mit der max. moeglichen Outputsize guenstigstes Verhaeltnis ausrechnen
-	aViewWin.GetOptimalSize(aMaxSize);
-	// Border wieder dazuzaehlen
-	aMaxSize.Height() += nYBorder;
-	aMaxSize.Width() += nXBorder;
-	return aMaxSize;
-*/
 }
 
 /*--------------------------------------------------------------------

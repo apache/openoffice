@@ -557,6 +557,10 @@ private:
     /** Create the rulers.
     */
     void SetupRulers (void);
+
+    /** Update VisAreaChanged by using size ouf OutDev
+    */
+    void UpdateVisAreaChanged();
 };
 
 
