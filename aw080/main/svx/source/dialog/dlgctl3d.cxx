@@ -194,7 +194,7 @@ void Svx3DPreviewControl::SetObjectType(sal_uInt16 nType)
 {
 	if( mnObjectType != nType || !mp3DObj)
 	{
-		SfxItemSet aSet(mp3DObj->GetObjectItemPool(), SDRATTR_START, SDRATTR_END, 0, 0);
+		SfxItemSet aSet(mpModel->GetItemPool(), SDRATTR_START, SDRATTR_END, 0, 0);
 		mnObjectType = nType;
 
 		if( mp3DObj )

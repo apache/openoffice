@@ -356,9 +356,27 @@ namespace sdr
 			// call parent
 			ViewContactOfSdrObj::ActionChanged();
 
-			// TTTT: the original implementation of E3dScene::invalidateObjectRange()
-			// iterated over the children (only 1st level, though). Not sure
-			// if this is needed, leavong out for now
+            // Iterate over children and propagate ActionChanged there.
+            // This is needed for 3D objects. In comparison, changes on a 
+            // 2d group object are done by changing all sub-objects individually,
+            // so not necessary there
+			const sal_uInt32 nChildrenCount(GetObjectCount());
+
+            for(sal_uInt32 a(0); a < nChildrenCount; a++)
+		    {
+                ViewContactOfE3d* pViewContactOfE3d = dynamic_cast< ViewContactOfE3d* >(&GetViewContact(a));
+
+                if(pViewContactOfE3d)
+                {
+                    // only reset 2D buffered part (the bound range which is
+                    // global to the page)
+    			    pViewContactOfE3d->ViewContactOfSdrObj::ActionChanged();
+                }
+                else
+                {
+                    OSL_ENSURE(false, "3D scene with a non-3D child object (!)");
+                }
+		    }
 
 			// mark locally cached values as invalid
     		maViewInformation3D = drawinglayer::geometry::ViewInformation3D();

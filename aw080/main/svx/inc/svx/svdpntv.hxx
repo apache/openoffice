@@ -496,8 +496,7 @@ public:
 
 	// Muss von App beim Scrollen usw. gerufen werden, damit ein u.U.
 	// aktives FormularControl mitverschoben werden kann
-	void VisAreaChanged(const OutputDevice* pOut=NULL);
-	void VisAreaChanged(const SdrPageWindow& rWindow);
+	void VisAreaChanged(const OutputDevice* pOut = 0);
 
 	bool IsPrintPreview() const { return mbPrintPreview; }
 	void SetPrintPreview(bool bOn = true) { if(mbPrintPreview != bOn) { mbPrintPreview = bOn; }}

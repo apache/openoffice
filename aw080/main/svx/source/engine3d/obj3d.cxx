@@ -729,48 +729,48 @@ const basegfx::B2DHomMatrix& E3dCompoundObject::getSdrObjectTransformation() con
 	// TTTT: look for correct place to set to identity
 	// TTTT: Added InvalidateBoundVolume to E3dCompoundObject to do the job, check
 	if(maSdrObjectTransformation.getB2DHomMatrix().isIdentity())
-{
-	const uno::Sequence< beans::PropertyValue > aEmptyParameters;
-	drawinglayer::geometry::ViewInformation3D aViewInfo3D(aEmptyParameters);
-	E3dScene* pRootScene = fillViewInformation3DForCompoundObject(aViewInfo3D, *this);
+    {
+	    const uno::Sequence< beans::PropertyValue > aEmptyParameters;
+	    drawinglayer::geometry::ViewInformation3D aViewInfo3D(aEmptyParameters);
+	    E3dScene* pRootScene = fillViewInformation3DForCompoundObject(aViewInfo3D, *this);
 
-	if(pRootScene)
-	{
-        // get VC of 3D candidate
-		const sdr::contact::ViewContactOfE3d* pVCOfE3D = dynamic_cast< const sdr::contact::ViewContactOfE3d* >(&GetViewContact());
+	    if(pRootScene)
+	    {
+            // get VC of 3D candidate
+		    const sdr::contact::ViewContactOfE3d* pVCOfE3D = dynamic_cast< const sdr::contact::ViewContactOfE3d* >(&GetViewContact());
 
-		if(pVCOfE3D)
-		{
-            // get 3D primitive sequence
-			const drawinglayer::primitive3d::Primitive3DSequence xLocalSequence(pVCOfE3D->getViewIndependentPrimitive3DSequence());
+		    if(pVCOfE3D)
+		    {
+                // get 3D primitive sequence
+			    const drawinglayer::primitive3d::Primitive3DSequence xLocalSequence(pVCOfE3D->getViewIndependentPrimitive3DSequence());
 
-			if(xLocalSequence.hasElements())
-			{
-                // get BoundVolume
-                basegfx::B3DRange aBoundVolume(drawinglayer::primitive3d::getB3DRangeFromPrimitive3DSequence(
-					xLocalSequence, aViewInfo3D));
+			    if(xLocalSequence.hasElements())
+			    {
+                    // get BoundVolume
+                    basegfx::B3DRange aBoundVolume(drawinglayer::primitive3d::getB3DRangeFromPrimitive3DSequence(
+					    xLocalSequence, aViewInfo3D));
 
-                // transform bound volume to relative scene coordinates
-                aBoundVolume.transform(aViewInfo3D.getObjectToView());
+                    // transform bound volume to relative scene coordinates
+                    aBoundVolume.transform(aViewInfo3D.getObjectToView());
 
-					// build 2D relative scene range
-                basegfx::B2DRange aSnapRange(
-                    aBoundVolume.getMinX(), aBoundVolume.getMinY(),
-                    aBoundVolume.getMaxX(), aBoundVolume.getMaxY());
+					    // build 2D relative scene range
+                    basegfx::B2DRange aSnapRange(
+                        aBoundVolume.getMinX(), aBoundVolume.getMinY(),
+                        aBoundVolume.getMaxX(), aBoundVolume.getMaxY());
 
-                // transform to 2D world coordiantes
-                const sdr::contact::ViewContactOfE3dScene& rVCScene = static_cast< sdr::contact::ViewContactOfE3dScene& >(pRootScene->GetViewContact());
-                aSnapRange.transform(rVCScene.getObjectTransformation());
+                    // transform to 2D world coordiantes
+                    const sdr::contact::ViewContactOfE3dScene& rVCScene = static_cast< sdr::contact::ViewContactOfE3dScene& >(pRootScene->GetViewContact());
+                    aSnapRange.transform(rVCScene.getObjectTransformation());
 
-					// compose local transformation
-					const_cast< E3dCompoundObject* >(this)->maSdrObjectTransformation.setB2DHomMatrix(
-						basegfx::tools::createScaleTranslateB2DHomMatrix(
-							aSnapRange.getRange(),
-							aSnapRange.getMinimum()));
-			}
-		}
-	}
-}
+					    // compose local transformation
+					    const_cast< E3dCompoundObject* >(this)->maSdrObjectTransformation.setB2DHomMatrix(
+						    basegfx::tools::createScaleTranslateB2DHomMatrix(
+							    aSnapRange.getRange(),
+							    aSnapRange.getMinimum()));
+			    }
+		    }
+	    }
+    }
 
 	// call parent
 	return E3dObject::getSdrObjectTransformation();

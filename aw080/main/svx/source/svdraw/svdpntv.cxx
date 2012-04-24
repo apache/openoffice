@@ -1328,23 +1328,17 @@ void SdrPaintView::VisAreaChanged(const OutputDevice* pOut)
 
 			if(pWindow)
 			{
-				VisAreaChanged(*pWindow);
+                Broadcast(SvxViewHint(SvxViewHint::SVX_HINT_VIEWCHANGED));
 			}
 		}
 		else
 		{
-			for(sal_uInt32 a(0L); a < mpPageView->PageWindowCount(); a++)
+			if(mpPageView->PageWindowCount())
 			{
-				VisAreaChanged(*mpPageView->GetPageWindow(a));
+                Broadcast(SvxViewHint(SvxViewHint::SVX_HINT_VIEWCHANGED));
 			}
 		}
 	}
-}
-
-void SdrPaintView::VisAreaChanged(const SdrPageWindow& /*rWindow*/)
-{
-    // notify SfxListener
-    Broadcast(SvxViewHint(SvxViewHint::SVX_HINT_VIEWCHANGED));
 }
 
 const svtools::ColorConfig& SdrPaintView::getColorConfig() const

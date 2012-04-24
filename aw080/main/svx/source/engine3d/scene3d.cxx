@@ -327,15 +327,18 @@ void E3dScene::handleContentChange(const SfxHint& rHint)
 	// call parent
 	SdrObjList::handleContentChange(rHint);
 
-	// reset local transformation to allow on-demand recalculation
-	maSdrObjectTransformation.setB2DHomMatrix(basegfx::B2DHomMatrix());
-
 	// react self if outmost scene
 	E3dScene* pScene = GetScene();
 
-	if(pScene && pScene == this)
+	if(pScene == this)
     {
-		ImpCleanup3DDepthMapper();
+        // depth mapper needs to change
+        ImpCleanup3DDepthMapper();
+    }
+    else
+    {
+    	// reset local transformation to allow on-demand recalculation
+	    maSdrObjectTransformation.setB2DHomMatrix(basegfx::B2DHomMatrix());
 	}
 }
 
