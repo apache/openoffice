@@ -1016,14 +1016,11 @@ sal_Bool SVGFilter::implCreateObjectsFromShape( const Reference< XShape >& rxSha
 
 		if( pObj )
 		{
-			const MapMode aMap(pObj->getSdrModelFromSdrObject().GetExchangeObjectUnit(), Point(), 
-				pObj->getSdrModelFromSdrObject().GetExchangeObjectScale(), 
-				pObj->getSdrModelFromSdrObject().GetExchangeObjectScale());
-			Graphic aGraphic( SdrExchangeView::GetObjGraphic( aMap, *pObj ) );
+			const Graphic aGraphic(GetObjGraphic(*pObj));
 
-			if( aGraphic.GetType() != GRAPHIC_NONE )
+			if(GRAPHIC_NONE != aGraphic.GetType())
 			{
-				if( aGraphic.GetType() == GRAPHIC_BITMAP )
+				if(GRAPHIC_BITMAP == aGraphic.GetType())
 				{
 					GDIMetaFile	aMtf;
 					const basegfx::B2DRange& rRange = pObj->getObjectRange(0);
@@ -1037,7 +1034,9 @@ sal_Bool SVGFilter::implCreateObjectsFromShape( const Reference< XShape >& rxSha
 					(*mpObjects)[ rxShape ] = ObjectRepresentation( rxShape, aMtf );
 				}
 				else
+                {
 					(*mpObjects)[ rxShape ] = ObjectRepresentation( rxShape, aGraphic.GetGDIMetaFile() );
+                }
 
 				bRet = sal_True;
 			}

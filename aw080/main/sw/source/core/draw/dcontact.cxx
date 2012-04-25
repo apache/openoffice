@@ -2659,13 +2659,10 @@ bool SwDrawVirtObj::supportsFullDrag() const
 SdrObject* SwDrawVirtObj::getFullDragClone() const
 {
     SdrObject& rReferencedObject = const_cast< SdrObject& >(GetReferencedObj());
-	const MapMode aMap(getSdrModelFromSdrObject().GetExchangeObjectUnit(), Point(), 
-		getSdrModelFromSdrObject().GetExchangeObjectScale(), 
-		getSdrModelFromSdrObject().GetExchangeObjectScale());
 
-	return new SdrGrafObj(
+    return new SdrGrafObj(
 		getSdrModelFromSdrObject(),
-		SdrDragView::GetObjGraphic(aMap, rReferencedObject), 
+		GetObjGraphic(rReferencedObject), 
 		getSdrObjectTransformation());
 }
 

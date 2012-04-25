@@ -58,6 +58,75 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Graphic GetObjGraphic(const SdrObject& rObj)
+{
+    Graphic aRet;
+
+    // try to get a graphic from the object first
+	const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(&rObj);
+	const SdrOle2Obj* pSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(&rObj);
+        
+	if(pSdrGrafObj)
+    {
+        if(pSdrGrafObj->isEmbeddedSvg())
+        {
+            // get Metafile for Svg content
+            aRet = pSdrGrafObj->getMetafileFromEmbeddedSvg();
+        }
+        else
+        {
+            // #110981# Make behaviour coherent with metafile
+            // recording below (which of course also takes
+            // view-transformed objects)
+            aRet = pSdrGrafObj->GetTransformedGraphic();
+        }
+    }
+    else if(pSdrOle2Obj)
+    {
+        if ( pSdrOle2Obj->GetGraphic() )
+		{
+            aRet = *pSdrOle2Obj->GetGraphic();
+        }
+    }
+
+    if(GRAPHIC_NONE == aRet.GetType() || GRAPHIC_DEFAULT == aRet.GetType())
+    {
+        // if graphic could not be retrieved => go the hard way and create a MetaFile
+    	const SdrModel& rSdrModel = rObj.getSdrModelFromSdrObject();
+		const MapMode aMap(
+            rSdrModel.GetExchangeObjectUnit(), 
+            Point(), 
+            rSdrModel.GetExchangeObjectScale(), 
+            rSdrModel.GetExchangeObjectScale());
+        VirtualDevice aOut;
+        GDIMetaFile aMtf;
+    	const basegfx::B2DRange aBoundRange(rObj.getObjectRange(0));
+
+        aOut.EnableOutput(false);
+		aOut.SetMapMode(aMap);
+		aMtf.Record(&aOut);
+        rObj.SingleObjectPainter(aOut);
+        aMtf.Stop();
+		aMtf.WindStart();
+
+        if(aMtf.GetActionCount())
+		{
+		    // #i99268# replace the original offset from using XOutDev's SetOffset
+		    // NOT (as tried with #i92760#) with another MapMode which gets recorded
+		    // by the Metafile itself (what always leads to problems), but by
+		    // translating the result the hard way
+		    aMtf.Move(-basegfx::fround(aBoundRange.getMinX()), -basegfx::fround(aBoundRange.getMinY()));
+            aMtf.SetPrefMapMode(aMap);
+		    aMtf.SetPrefSize(Size(basegfx::fround(aBoundRange.getWidth()), basegfx::fround(aBoundRange.getHeight())));
+            aRet = aMtf;
+        }
+    }
+
+    return aRet;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 SdrExchangeView::SdrExchangeView(SdrModel& rModel1, OutputDevice* pOut)
 :	SdrObjEditView(rModel1, pOut)
 {
@@ -710,81 +779,12 @@ Graphic SdrExchangeView::GetAllMarkedGraphic() const
 
         if(pSingleSelected)
 		{
-			const MapMode aMap(getSdrModelFromSdrView().GetExchangeObjectUnit(), Point(), 
-				getSdrModelFromSdrView().GetExchangeObjectScale(), 
-				getSdrModelFromSdrView().GetExchangeObjectScale());
-            
-			aRet = SdrExchangeView::GetObjGraphic(aMap, *pSingleSelected);
+			aRet = GetObjGraphic(*pSingleSelected);
 		}
         else
 		{
             aRet = GetMarkedObjMetaFile(false);
 		}
-    }
-
-    return aRet;
-}
-
-// -----------------------------------------------------------------------------
-
-Graphic SdrExchangeView::GetObjGraphic(const MapMode& rMap, const SdrObject& rObj)
-{
-    Graphic aRet;
-
-        // try to get a graphic from the object first
-	const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(&rObj);
-	const SdrOle2Obj* pSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(&rObj);
-        
-	if(pSdrGrafObj)
-    {
-        if(pSdrGrafObj->isEmbeddedSvg())
-        {
-            // get Metafile for Svg content
-            aRet = pSdrGrafObj->getMetafileFromEmbeddedSvg();
-        }
-        else
-        {
-            // #110981# Make behaviour coherent with metafile
-            // recording below (which of course also takes
-            // view-transformed objects)
-            aRet = pSdrGrafObj->GetTransformedGraphic();
-        }
-    }
-    else if(pSdrOle2Obj)
-    {
-        if ( pSdrOle2Obj->GetGraphic() )
-		{
-            aRet = *pSdrOle2Obj->GetGraphic();
-        }
-    }
-
-    // if graphic could not be retrieved => go the hard way and create a MetaFile
-    if( ( GRAPHIC_NONE == aRet.GetType() ) || ( GRAPHIC_DEFAULT == aRet.GetType() ) )
-    {
-		VirtualDevice	aOut;
-        GDIMetaFile     aMtf;
-    	const Rectangle	aBoundRect(sdr::legacy::GetBoundRect(rObj));
-
-	    aOut.EnableOutput(false);
-		aOut.SetMapMode(rMap);
-		aMtf.Record( &aOut );
-        rObj.SingleObjectPainter(aOut); // #110094#-17
-        aMtf.Stop();
-		aMtf.WindStart();
-
-		// #i99268# replace the original offset from using XOutDev's SetOffset
-		// NOT (as tried with #i92760#) with another MapMode which gets recorded
-		// by the Metafile itself (what always leads to problems), but by hardly
-		// moving the result
-		aMtf.Move(-aBoundRect.Left(), -aBoundRect.Top());
-
-        aMtf.SetPrefMapMode(rMap);
-		aMtf.SetPrefSize( aBoundRect.GetSize() );
-
-        if( aMtf.GetActionCount() )
-		{
-            aRet = aMtf;
-        }
     }
 
     return aRet;
@@ -879,13 +879,9 @@ SdrModel* SdrExchangeView::GetMarkedObjModel() const
 				{
 					// convert SdrPageObj's to a graphic representation, because
 					// virtual connection to referenced page gets lost in new model
-					const MapMode aMap(getSdrModelFromSdrView().GetExchangeObjectUnit(), Point(), 
-						getSdrModelFromSdrView().GetExchangeObjectScale(), 
-						getSdrModelFromSdrView().GetExchangeObjectScale());
-					
 					pNeuObj = new SdrGrafObj(
 						*pNeuMod,
-						GetObjGraphic(aMap, *pObj), 
+						GetObjGraphic(*pObj), 
 						pObj->getSdrObjectTransformation());
 				}
 				else

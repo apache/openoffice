@@ -184,11 +184,7 @@ void ScHTMLExport::WriteGraphEntry( ScHTMLGraphEntry* pE )
 		break;
         default:
         {
-			SdrModel* pOwningModel = pDoc->GetDrawLayer();
-			const MapMode aMap(pOwningModel->GetExchangeObjectUnit(), Point(), 
-				pOwningModel->GetExchangeObjectScale(), 
-				pOwningModel->GetExchangeObjectScale());
-            const Graphic aGraph(SdrExchangeView::GetObjGraphic(aMap, *pObject));
+            const Graphic aGraph(GetObjGraphic(*pObject));
             String aLinkName;
             WriteImage( aLinkName, aGraph, aOpt );
             pE->bWritten = sal_True;

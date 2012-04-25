@@ -2490,7 +2490,9 @@ SdrTableObj* SdrTableObj::CloneRange( const CellPos& rStart, const CellPos& rEnd
 	}
 
 	pNewTableObj->ReformatText();
-	sdr::legacy::SetLogicRect(*pNewTableObj, sdr::legacy::GetBoundRect(*pNewTableObj) );
+    
+    // TTTT: Needed? Check...
+	sdr::legacy::SetLogicRange(*pNewTableObj, pNewTableObj->getObjectRange(0) );
 
 	return pNewTableObj;
 }

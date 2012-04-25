@@ -257,8 +257,6 @@ public:
 		return bDoubleSided;
 	}
 
-	void MergeScenes();
-
 	SfxItemSet Get3DAttributes(E3dScene* pInScene = NULL) const;
 	void Set3DAttributes(const SfxItemSet& rAttr, E3dScene* pInScene = NULL, bool bOnly3DAttr=false);
 };

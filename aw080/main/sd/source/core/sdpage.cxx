@@ -962,6 +962,13 @@ void SdPage::CreateTitleAndLayout(bool bInit, bool bCreate )
 					pUndoManager->AddUndoAction(rDrawDocument.GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
 
 				pMasterPage->RemoveObjectFromSdrObjList(pObj->GetNavigationPosition());
+
+                if(getSdrModelFromSdrPage().isLocked())
+                {
+                    // remove self when model is locked (during load), else the
+                    // broadcast of object removal will do that
+                    pMasterPage->RemovePresObj(pObj);
+                }
 			}
 
 			std::vector< basegfx::B2DRange > aAreas;

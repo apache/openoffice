@@ -30,6 +30,19 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/** Generate a Graphic for the given draw object in the given model
+
+    @param pObj
+    The object (can also be a group object) to retrieve a Graphic
+    for. Must not be NULL.
+
+    @return a graphical representation of the given object, as it
+    appears on screen (e.g. with rotation, if any, applied).
+    */
+Graphic SVX_DLLPUBLIC GetObjGraphic(const SdrObject& rObj);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 class SVX_DLLPUBLIC SdrExchangeView: public SdrObjEditView
 {
 protected:
@@ -70,21 +83,6 @@ public:
 
 	Graphic         GetAllMarkedGraphic() const;
 	SdrModel*       GetAllMarkedModel() const { return GetMarkedObjModel(); }
-
-    /** Generate a Graphic for the given draw object in the given model
-
-		@param pModel
-        Must not be NULL. Denotes the draw model the object is a part
-        of.
-
-        @param pObj
-        The object (can also be a group object) to retrieve a Graphic
-        for. Must not be NULL.
-
-        @return a graphical representation of the given object, as it
-        appears on screen (e.g. with rotation, if any, applied).
-     */
-    static Graphic GetObjGraphic( const MapMode& rMap, const SdrObject& rObj );
 
 	// Bestimmung des View-Mittelpunktes, z.B. zum Pasten
 	basegfx::B2DPoint GetViewCenter(const OutputDevice* pOut = 0) const;

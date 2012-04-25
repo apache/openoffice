@@ -268,22 +268,22 @@ public:
 //      drawing object to its referenced object.
 class SwDrawVirtObj : public SdrObject
 {
-    private:
-        // data for connection to writer layout
-        // OD 2004-03-25 #i26791# - anchored drawing object instance for the
-        // 'virtual' drawing object
-        SwAnchoredDrawObject maAnchoredDrawObj;
+private:
+    // data for connection to writer layout
+    // OD 2004-03-25 #i26791# - anchored drawing object instance for the
+    // 'virtual' drawing object
+    SwAnchoredDrawObject maAnchoredDrawObj;
 
-        // writer-drawing contact object the 'virtual' drawing object is controlled by.
-        // This object is also the <UserCall> of the drawing object, if it's
-        // inserted into the drawing layer.
-        SwDrawContact&  mrDrawContact;
+    // writer-drawing contact object the 'virtual' drawing object is controlled by.
+    // This object is also the <UserCall> of the drawing object, if it's
+    // inserted into the drawing layer.
+    SwDrawContact&  mrDrawContact;
 
-   protected:
-        // AW: Need own sdr::contact::ViewContact since AnchorPos from parent is
-        // not used but something own (top left of new SnapRect minus top left
-        // of original SnapRect)
-        virtual sdr::contact::ViewContact* CreateObjectSpecificViewContact();
+protected:
+    // AW: Need own sdr::contact::ViewContact since AnchorPos from parent is
+    // not used but something own (top left of new SnapRect minus top left
+    // of original SnapRect)
+    virtual sdr::contact::ViewContact* CreateObjectSpecificViewContact();
 
     // original Notify from SdrVirtObj
 	virtual void Notify(SfxBroadcaster& rBC, const SfxHint& rHint);
@@ -292,7 +292,7 @@ class SwDrawVirtObj : public SdrObject
     SdrObject&					rRefObj;
 	Rectangle					aSnapRect;
 
-        virtual ~SwDrawVirtObj();
+    virtual ~SwDrawVirtObj();
 
 	/// method to copy all data from given source
 	virtual void copyDataFromSdrObject(const SdrObject& rSource);
@@ -305,29 +305,29 @@ public:
 
 	virtual bool IsClosedObj() const;
 
-		// access to offset
-        // OD 30.06.2003 #108784# - virtual!!!
+	// access to offset
+    // OD 30.06.2003 #108784# - virtual!!!
     virtual const basegfx::B2DPoint GetOffset() const;
 
-        // connection to writer layout
-        // OD 2004-03-29 #i26791#
-        const SwAnchoredObject* GetAnchoredObj() const;
-        SwAnchoredObject* AnchoredObj();
-        const SwFrm* GetAnchorFrm() const;
-        SwFrm* AnchorFrm();
-        void RemoveFromWriterLayout();
+    // connection to writer layout
+    // OD 2004-03-29 #i26791#
+    const SwAnchoredObject* GetAnchoredObj() const;
+    SwAnchoredObject* AnchoredObj();
+    const SwFrm* GetAnchorFrm() const;
+    SwFrm* AnchorFrm();
+    void RemoveFromWriterLayout();
 
-        // connection to drawing layer
-        void AddToDrawingPage();
-        void RemoveFromDrawingPage();
+    // connection to drawing layer
+    void AddToDrawingPage();
+    void RemoveFromDrawingPage();
 
-        // is 'virtual' drawing object connected to writer layout and
-        // to drawing layer.
-        bool IsConnected() const;
+    // is 'virtual' drawing object connected to writer layout and
+    // to drawing layer.
+    bool IsConnected() const;
 
-        // #108784#
-		// All overloaded methods which need to use the offset
-		virtual ::basegfx::B2DPolyPolygon TakeXorPoly() const;
+    // #108784#
+	// All overloaded methods which need to use the offset
+	virtual ::basegfx::B2DPolyPolygon TakeXorPoly() const;
 	virtual void AddToHdlList(SdrHdlList& rHdlList) const;
 	virtual void GetPlusHdl(SdrHdlList& rHdlList, SdrObject& rSdrObject, const SdrHdl& rHdl, sal_uInt32 nPlNum) const;
 	virtual basegfx::B2DPoint GetSnapPoint(sal_uInt32 i) const;
@@ -337,14 +337,14 @@ public:
 		// #108784#
 	virtual bool HasTextEdit() const;
 
-        // OD 17.06.2003 #108784# - overload 'layer' methods
-        virtual SdrLayerID GetLayer() const;
+    // OD 17.06.2003 #108784# - overload 'layer' methods
+    virtual SdrLayerID GetLayer() const;
     //virtual void NbcSetLayer(SdrLayerID nLayer);
-        virtual void SetLayer(SdrLayerID nLayer);
+    virtual void SetLayer(SdrLayerID nLayer);
 
-        // FullDrag support
-	    virtual bool supportsFullDrag() const;
-	    virtual SdrObject* getFullDragClone() const;
+    // FullDrag support
+	virtual bool supportsFullDrag() const;
+	virtual SdrObject* getFullDragClone() const;
 
     //////////////////////////////////////////////////////////////////////////
     // methods which were missing from SdrVirtObj which do something

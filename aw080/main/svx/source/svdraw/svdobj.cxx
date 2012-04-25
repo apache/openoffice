@@ -499,9 +499,9 @@ void SdrObject::ActionChanged() const
 
 SdrPage* SdrObject::getSdrPageFromSdrObject() const
 {
-	if(mpParentOfSdrObject)
+	if(getParentOfSdrObject())
 	{
-		return mpParentOfSdrObject->getSdrPageFromSdrObjList();
+		return getParentOfSdrObject()->getSdrPageFromSdrObjList();
 	}
 
 	return 0;
@@ -528,7 +528,7 @@ void SdrObject::SetOrdNum(sal_uInt32 nNew)
 
 void SdrObject::setParentOfSdrObject(SdrObjList* pNew) 
 { 
-	if(mpParentOfSdrObject != pNew)
+	if(getParentOfSdrObject() != pNew)
 	{
 		// remember current page
 		SdrPage* pOldPage = getSdrPageFromSdrObject();

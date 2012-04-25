@@ -97,7 +97,6 @@ void SdrEditView::MovMarkedToTop()
 			}
 
 			const sal_uInt32 nNowPos(pObj->GetNavigationPosition());
-			const Rectangle aBR(sdr::legacy::GetBoundRect(*pObj));
 			sal_uInt32 nCmpPos(nNowPos + 1);
             SdrObject* pMaxObj=GetMaxToTopObj(pObj);
 
@@ -122,6 +121,7 @@ void SdrEditView::MovMarkedToTop()
             }
 
 			bool bEnd(false);
+			const basegfx::B2DRange aBoundRange(pObj->getObjectRange(getAsSdrView()));
 			
 			while (nCmpPos<nNewPos && !bEnd)
 			{
@@ -138,7 +138,7 @@ void SdrEditView::MovMarkedToTop()
                     nNewPos--;
                     bEnd = true;
 				}
-				else if(aBR.IsOver(sdr::legacy::GetBoundRect(*pCmpObj)))
+				else if(aBoundRange.overlaps(pCmpObj->getObjectRange(getAsSdrView())))
 				{
 					nNewPos=nCmpPos;
 					bEnd = true;
@@ -202,7 +202,6 @@ void SdrEditView::MovMarkedToBtm()
 			}
 
 			const sal_uInt32 nNowPos(pObj->GetNavigationPosition());
-			const Rectangle aBR(sdr::legacy::GetBoundRect(*pObj));
 			sal_uInt32 nCmpPos(nNowPos); 
 			
 			if(nCmpPos > 0) 
@@ -228,6 +227,7 @@ void SdrEditView::MovMarkedToBtm()
             }
 
 			bool bEnd(false);
+			const basegfx::B2DRange aBoundRange(pObj->getObjectRange(getAsSdrView()));
 			// nNewPos ist an dieser Stelle noch die maximale Position,
 			// an der das Obj hinruecken darf, ohne seinen Vorgaenger
 			// (Mehrfachselektion) zu ueberholen.
@@ -247,7 +247,7 @@ void SdrEditView::MovMarkedToBtm()
                     nNewPos++;
                     bEnd = true;
 				}
-				else if(aBR.IsOver(sdr::legacy::GetBoundRect(*pCmpObj)))
+				else if(aBoundRange.overlaps(pCmpObj->getObjectRange(getAsSdrView())))
 				{
 					nNewPos=nCmpPos;
 					bEnd = true;

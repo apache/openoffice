@@ -439,16 +439,12 @@ SdrObject* SdrUnoObj::getFullDragClone() const
 
     if(bHandleSpecial)
     {
-		const MapMode aMap(getSdrModelFromSdrObject().GetExchangeObjectUnit(), Point(), 
-			getSdrModelFromSdrObject().GetExchangeObjectScale(), 
-			getSdrModelFromSdrObject().GetExchangeObjectScale());
-
 	    // special handling for SdrUnoObj (FormControl). Create a SdrGrafObj 
 	    // for drag containing the graphical representation. This does not work too
         // well, so the default is to simply clone
 	    pRetval = new SdrGrafObj(
 			getSdrModelFromSdrObject(), 
-			SdrDragView::GetObjGraphic(aMap, *this), 
+			GetObjGraphic(*this), 
 			getSdrObjectTransformation());
     }
     else

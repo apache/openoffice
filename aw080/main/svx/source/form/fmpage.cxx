@@ -218,18 +218,21 @@ sal_Bool FmFormPage::RequestHelp( Window* pWindow, SdrView* pView,
 	if ( aHelpText.Len() != 0 )
 	{
 		// Hilfe anzeigen
-		Rectangle aItemRect = sdr::legacy::GetBoundRect(*pObj);
-		aItemRect = pWindow->LogicToPixel( aItemRect );
-		Point aPt = pWindow->OutputToScreenPixel( aItemRect.TopLeft() );
-		aItemRect.Left()   = aPt.X();
-		aItemRect.Top()    = aPt.Y();
-		aPt = pWindow->OutputToScreenPixel( aItemRect.BottomRight() );
-		aItemRect.Right()  = aPt.X();
-		aItemRect.Bottom() = aPt.Y();
-		if( rEvt.GetMode() == HELPMODE_BALLOON )
-			Help::ShowBalloon( pWindow, aItemRect.Center(), aItemRect, aHelpText);
+    	const basegfx::B2DRange aDiscreteRange(pWindow->GetInverseViewTransformation() * pObj->getObjectRange(pView));
+        const Point aTopLeft(basegfx::fround(aDiscreteRange.getMinX()), aDiscreteRange.getMinY());
+        const Point aBottomRight(basegfx::fround(aDiscreteRange.getMaxX()), aDiscreteRange.getMaxY());
+        const Rectangle aItemRectangle(
+            pWindow->OutputToScreenPixel(aTopLeft), 
+            pWindow->OutputToScreenPixel(aBottomRight));
+
+        if(HELPMODE_BALLOON == rEvt.GetMode())
+        {
+			Help::ShowBalloon(pWindow, aItemRectangle.Center(), aItemRectangle, aHelpText);
+        }
 		else
-			Help::ShowQuickHelp( pWindow, aItemRect, aHelpText );
+        {
+			Help::ShowQuickHelp(pWindow, aItemRectangle, aHelpText);
+        }
 	}
 #endif
 	return sal_True;

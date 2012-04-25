@@ -2666,18 +2666,7 @@ void SwEscherEx::WriteOCXControl( const SwFrmFmt& rFmt, sal_uInt32 nShapeId )
     if (const SdrObject* pSdrObj = rFmt.FindRealSdrObject())
     {
         OpenContainer( ESCHER_SpContainer );
-
-        SdrModel *pModel = rWrt.pDoc->GetDrawModel();
-        OutputDevice *pDevice = Application::GetDefaultDevice();
-        ASSERT(pModel && pDevice, "no model or device");
-
-		// #i71538# use complete SdrViews
-        // SdrExchangeView aExchange(pModel, pDevice);
-        SdrView aExchange(*pModel, pDevice);
-		const MapMode aMap(pModel->GetExchangeObjectUnit(), Point(), 
-			pModel->GetExchangeObjectScale(), 
-			pModel->GetExchangeObjectScale());
-		Graphic aGraphic(aExchange.GetObjGraphic(aMap, *pSdrObj));
+		Graphic aGraphic(GetObjGraphic(*pSdrObj));
 
         EscherPropertyContainer aPropOpt;
         WriteOLEPicture(aPropOpt, 0xa00 | SHAPEFLAG_OLESHAPE, aGraphic,

@@ -953,27 +953,20 @@ void AnimationWindow::AddObj (::sd::View& rView )
 				    {
 					    SdrObject* pSnapShot = (SdrObject*) pObjList->GetObj( nObject );
 						OSL_ENSURE(pSnapShot, "zero SdrObject* in SdrObjList (!)");
-						const MapMode aMap(pSnapShot->getSdrModelFromSdrObject().GetExchangeObjectUnit(), Point(), 
-							pSnapShot->getSdrModelFromSdrObject().GetExchangeObjectScale(), 
-							pSnapShot->getSdrModelFromSdrObject().GetExchangeObjectScale());
 
-						pBitmapEx = new BitmapEx( 
-							SdrExchangeView::GetObjGraphic( 
-								aMap, 
-								*pSnapShot 
-							).GetBitmapEx() );
-					aBmpExList.Insert( pBitmapEx, aBmpExList.GetCurPos() + 1 );
+						pBitmapEx = new BitmapEx(GetObjGraphic(*pSnapShot).GetBitmapEx());
+    					aBmpExList.Insert( pBitmapEx, aBmpExList.GetCurPos() + 1 );
 
-					// Time
-					Time* pTime = new Time( aTimeField.GetTime() );
-					aTimeList.Insert( pTime, aBmpExList.GetCurPos() + 1 );
+					    // Time
+					    Time* pTime = new Time( aTimeField.GetTime() );
+					    aTimeList.Insert( pTime, aBmpExList.GetCurPos() + 1 );
 
-					// Clone
+					    // Clone
 					    pPage->InsertObjectToSdrObjList( pSnapShot->CloneSdrObject(), aBmpExList.GetCurPos() + 1 );
 					
-                    // Weiterschalten der BitmapListe
-					aBmpExList.Next();
-				}
+                        // Weiterschalten der BitmapListe
+					    aBmpExList.Next();
+				    }
                 }
 				bAnimObj = true;
 			}
@@ -1005,15 +998,8 @@ void AnimationWindow::AddObj (::sd::View& rView )
 				{
 					// Clone
 					SdrObject* pObject = aSelection[nObject];
-					const MapMode aMap(pObject->getSdrModelFromSdrObject().GetExchangeObjectUnit(), Point(), 
-						pObject->getSdrModelFromSdrObject().GetExchangeObjectScale(), 
-						pObject->getSdrModelFromSdrObject().GetExchangeObjectScale());
 
-					pBitmapEx = new BitmapEx( 
-						SdrExchangeView::GetObjGraphic( 
-							aMap, 
-							*pObject 
-						).GetBitmapEx() );
+					pBitmapEx = new BitmapEx(GetObjGraphic(*pObject).GetBitmapEx());
 					aBmpExList.Insert( pBitmapEx, aBmpExList.GetCurPos() + 1 );
 
 					// Time
