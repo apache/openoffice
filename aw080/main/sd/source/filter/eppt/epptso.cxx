@@ -4324,10 +4324,15 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 						SdrObject* pObj = GetSdrObjectFromXShape( mXShape );
 						if ( pObj )
 						{
-							Rectangle aBound = sdr::legacy::GetBoundRect(*pObj);
-							maPosition = ImplMapPoint( ::com::sun::star::awt::Point( aBound.Left(), aBound.Top() ) );
-					        maSize = ImplMapSize( ::com::sun::star::awt::Size ( aBound.GetWidth(), aBound.GetHeight() ) );
-	                        maRange = basegfx::B2DRange(maPosition.X, maPosition.Y, maPosition.X + maSize.Width, maPosition.Y + maSize.Height);
+                            maRange = pObj->getObjectRange(0);
+                            maPosition = ImplMapPoint( 
+                                ::com::sun::star::awt::Point( 
+                                    basegfx::fround(maRange.getMinX()), 
+                                    basegfx::fround(maRange.getMinY())));
+					        maSize = ImplMapSize( 
+                                ::com::sun::star::awt::Size( 
+                                    basegfx::fround(maRange.getWidth()), 
+                                    basegfx::fround(maRange.getHeight())));
 							mnAngle = 0;
 						}
 					}

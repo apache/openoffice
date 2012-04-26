@@ -152,18 +152,24 @@ void SwView::ExecDraw(SfxRequest& rReq)
                 {
                     Size aDocSize(pWrtShell->GetDocSize());
                     const SwRect& rVisArea = pWrtShell->VisArea();
-                    Point aStartPos = rVisArea.Center();
+                    Point aStartPos(rVisArea.Center());
+
                     if(rVisArea.Width() > aDocSize.Width())
+                    {
                         aStartPos.X() = aDocSize.Width() / 2 + rVisArea.Left();
+                    }
+
                     if(rVisArea.Height() > aDocSize.Height())
+                    {
                         aStartPos.Y() = aDocSize.Height() / 2 + rVisArea.Top();
+                    }
 
                     //determine the size of the object
                     if(pObj->getChildrenOfSdrObject())
                     {
-                        const Rectangle& rBoundRect = sdr::legacy::GetBoundRect(*((SdrObjGroup*)pObj));
-                        aStartPos.X() -= rBoundRect.GetWidth()/2;
-                        aStartPos.Y() -= rBoundRect.GetHeight()/2;
+                        const basegfx::B2DRange aRange(pObj->getObjectRange(pSdrView));
+                        aStartPos.X() -= basegfx::fround(aRange.getWidth() * 0.5);
+                        aStartPos.Y() -= basegfx::fround(aRange.getHeight() * 0.5);
                     }
 
                     // TODO: unmark all other

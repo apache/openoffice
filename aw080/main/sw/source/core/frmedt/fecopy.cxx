@@ -1424,24 +1424,22 @@ void SwFEShell::Paste( SvStream& rStrm, sal_uInt16 nAction, const Point* pPt )
 				}
 
 				SdrObject* pNewObj = pClpObj->CloneSdrObject(&pView->getSdrModelFromSdrView());
-				Rectangle aOldObjRect( sdr::legacy::GetBoundRect(*pOldObj) );
-				Size aOldObjSize( aOldObjRect.GetSize() );
-				Rectangle aNewRect( sdr::legacy::GetBoundRect(*pNewObj) );
-				Size aNewSize( aNewRect.GetSize() );
 
-				Fraction aScaleWidth( aOldObjSize.Width(), aNewSize.Width() );
-				Fraction aScaleHeight( aOldObjSize.Height(), aNewSize.Height());
-				sdr::legacy::ResizeSdrObject(*pNewObj, aNewRect.TopLeft(), aScaleWidth, aScaleHeight);
-
-				Point aVec = aOldObjRect.TopLeft() - aNewRect.TopLeft();
-				sdr::legacy::transformSdrObject(*pNewObj, basegfx::tools::createTranslateB2DHomMatrix(aVec.X(), aVec.Y()));
+                // copy transformation
+                pNewObj->setSdrObjectTransformation(pOldObj->getSdrObjectTransformation());
 
                 if( dynamic_cast< SdrUnoObj* >(pNewObj) )
+                {
                     pNewObj->SetLayer( GetDoc()->GetControlsId() );
+                }
                 else if( dynamic_cast< SdrUnoObj* >(pOldObj) )
+                {
                     pNewObj->SetLayer( GetDoc()->GetHeavenId() );
+                }
                 else
+                {
                     pNewObj->SetLayer( pOldObj->GetLayer() );
+                }
 
 				if( dynamic_cast< SwVirtFlyDrawObj* >(pOldObj) )
 				{

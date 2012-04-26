@@ -838,12 +838,9 @@ uno::Any SvxShape::GetBitmap( sal_Bool bMetaFile /* = sal_False */ ) const throw
 	SdrObject *pTempObj = mpObj.get();
 	pView->MarkObj(*pTempObj);
 
-	Rectangle aRect(sdr::legacy::GetBoundRect(*pTempObj));
-	aRect.Justify();
-	Size aSize(aRect.GetSize());
-
 	GDIMetaFile aMtf( pView->GetMarkedObjMetaFile() );
-	if( bMetaFile )
+
+    if( bMetaFile )
 	{
 		SvMemoryStream aDestStrm( 65535, 65535 );
 		ConvertGDIMetaFileToWMF( aMtf, aDestStrm, NULL, sal_False );
@@ -854,8 +851,10 @@ uno::Any SvxShape::GetBitmap( sal_Bool bMetaFile /* = sal_False */ ) const throw
 	}
 	else
 	{
+    	const basegfx::B2DVector aObjectScale(basegfx::absolute(pTempObj->getSdrObjectScale()));
 		Graphic aGraph(aMtf);
-		aGraph.SetPrefSize(aSize);
+
+        aGraph.SetPrefSize(Size(basegfx::fround(aObjectScale.getX()), basegfx::fround(aObjectScale.getY())));
 		aGraph.SetPrefMapMode(MAP_100TH_MM);
 
 		Reference< awt::XBitmap > xBmp( aGraph.GetXGraphic(), UNO_QUERY );

@@ -778,10 +778,12 @@ SvxDrawOutlinerViewForwarder* SvxTextEditSourceImpl::CreateViewForwarder()
 		SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mpObject );
 		if( pTextObj )
         {
-            Rectangle aBoundRect( sdr::legacy::GetBoundRect(*pTextObj) );
+            const basegfx::B2DRange aRange(pTextObj->getObjectRange(mpView));
             OutlinerView& rOutlView = *mpView->GetTextEditOutlinerView();
 
-            return new SvxDrawOutlinerViewForwarder( rOutlView, aBoundRect.TopLeft() );
+            return new SvxDrawOutlinerViewForwarder(
+                rOutlView, 
+                Point(basegfx::fround(aRange.getMinX()), basegfx::fround(aRange.getMinY())));
         }
     }
 

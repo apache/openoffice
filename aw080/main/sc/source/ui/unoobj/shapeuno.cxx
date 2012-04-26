@@ -1019,26 +1019,26 @@ uno::Reference<text::XTextRange> SAL_CALL ScShapeObj::getAnchor() throw(uno::Run
 		ScDrawLayer& rModel = static_cast< ScDrawLayer& >(pObj->getSdrModelFromSdrObject());
 		SdrPage* pPage = pObj->getSdrPageFromSdrObject();
 		ScDocument* pDoc = rModel.GetDocument();
-			if ( pDoc )
-			{
-				SfxObjectShell* pObjSh = pDoc->GetDocumentShell();
+
+        if ( pDoc )
+		{
+			SfxObjectShell* pObjSh = pDoc->GetDocumentShell();
 		    ScDocShell* pDocSh = dynamic_cast< ScDocShell* >(pObjSh);
 
 			if ( pDocSh )
 			{
-					SCTAB nTab = 0;
+		    	SCTAB nTab = 0;
 				if ( lcl_GetPageNum( pPage, rModel, nTab ) )
-					{
+				{
 					Point aPos(sdr::legacy::GetBoundRect(*pObj).TopLeft());
-						ScRange aRange(pDoc->GetRange( nTab, Rectangle( aPos, aPos ) ));
+					ScRange aRange(pDoc->GetRange( nTab, Rectangle( aPos, aPos ) ));
 
-						//	anchor is always the cell
-
-						xRet.set(new ScCellObj( pDocSh, aRange.aStart ));
-					}
+					//	anchor is always the cell
+					xRet.set(new ScCellObj( pDocSh, aRange.aStart ));
 				}
 			}
 		}
+	}
 
 	return xRet;
 }

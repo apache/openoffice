@@ -356,7 +356,8 @@ const SwFrmFmt* SwFEShell::IsFlyInFly()
 		return ((SwFlyFrm*)pFly)->GetFmt();
 	}
 
-	Point aTmpPos = sdr::legacy::GetBoundRect(*pObj).TopLeft();
+    const basegfx::B2DPoint aTopLeft(pObj->getObjectRange(Imp()->GetDrawView()).getMinimum());
+    Point aTmpPos(basegfx::fround(aTopLeft.getX()), basegfx::fround(aTopLeft.getY()));
 
 	SwFrm *pTxtFrm;
 	{
@@ -1768,7 +1769,7 @@ const SwFrmFmt* SwFEShell::GetFmtFromObj( const Point& rPt, SwRect** pRectToFill
 		SdrObject* pObj;
 		SwDrawView *pDView = (SwDrawView*)Imp()->GetDrawView();
 
-		sal_uInt16 nOld = pDView->GetHitTolerancePixel();
+		const sal_uInt16 nOld(pDView->GetHitTolerancePixel());
 		// Tattergrenze fuer Drawing-SS
 		pDView->SetHitTolerancePixel( pDView->GetMarkHdlSizePixel()/2 );
 
@@ -1776,11 +1777,18 @@ const SwFrmFmt* SwFEShell::GetFmtFromObj( const Point& rPt, SwRect** pRectToFill
 		{
 			// dann teste mal was es ist:
 			if ( dynamic_cast< SwVirtFlyDrawObj* >(pObj) )
+            {
 				pRet = ((SwVirtFlyDrawObj*)pObj)->GetFmt();
+            }
 			else if ( findConnectionToSdrObjectDirect(pObj) ) //nicht fuer Gruppenobjekte
+            {
 				pRet = ((SwDrawContact*)findConnectionToSdrObjectDirect(pObj))->GetFmt();
-			if(pRet && pRectToFill)
+            }
+
+            if(pRet && pRectToFill)
+            {
 				**pRectToFill = sdr::legacy::GetBoundRect(*pObj);
+            }
 		}
 		pDView->SetHitTolerancePixel( nOld );
 	}

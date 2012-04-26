@@ -700,7 +700,7 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			{
 				if( bReturn )
 				{
-					if( pModel->GetSdPage( 0, PK_STANDARD )->GetObjCount() == 1 )
+					if(1 == pModel->GetSdPage( 0, PK_STANDARD )->GetObjCount())
 					{
 						// only one object
 						SdrObject*		pObj = pModel->GetSdPage( 0, PK_STANDARD )->GetObj( 0 );
@@ -711,26 +711,17 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 						{
 							// replace object
 							SdrPage& rWorkPage = GetSdrPageView()->getSdrPageFromSdrPageView();
-							SdrObject*	pNewObj = pObj->CloneSdrObject(&rWorkPage.getSdrModelFromSdrPage());
-							Rectangle	aPickObjRect( sdr::legacy::GetBoundRect(*pPickObj2) );
-							Size		aPickObjSize( aPickObjRect.GetSize() );
-							Point		aVec( aPickObjRect.TopLeft() );
-							Rectangle	aObjRect( sdr::legacy::GetBoundRect(*pNewObj) );
-							Size		aObjSize( aObjRect.GetSize() );
+							SdrObject* pNewObj = pObj->CloneSdrObject(&rWorkPage.getSdrModelFromSdrPage());
 
-							Fraction aScaleWidth( aPickObjSize.Width(), aObjSize.Width() );
-							Fraction aScaleHeight( aPickObjSize.Height(), aObjSize.Height() );
-							sdr::legacy::ResizeSdrObject(*pNewObj, aObjRect.TopLeft(), aScaleWidth, aScaleHeight );
-
-							aVec -= aObjRect.TopLeft();
-							sdr::legacy::MoveSdrObject(*pNewObj, Size( aVec.X(), aVec.Y() ) );
+                            // copy transformation and layer
+                            pNewObj->setSdrObjectTransformation(pPickObj2->getSdrObjectTransformation());
+                            pNewObj->SetLayer( pPickObj2->GetLayer() );
 
 							const bool bUndo = IsUndoEnabled();
 
 							if( bUndo )
 								BegUndo( String( SdResId(STR_UNDO_DRAGDROP ) ) );
 							
-                            pNewObj->SetLayer( pPickObj->GetLayer() );
 							rWorkPage.InsertObjectToSdrObjList( pNewObj );
 							
                             if( bUndo )
@@ -747,7 +738,7 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 							}
 							else
 							{
-								deleteSdrObjectSafeAndClearPointer(pPickObj2 );
+								deleteSdrObjectSafeAndClearPointer(pPickObj2);
 							}
 							
                             bChanged = true;

@@ -218,7 +218,7 @@ namespace svx
 
 	/** creates a bitmap that is optionaly transparent from a metafile
 	*/
-	BitmapEx GetBitmapFromMetaFile( const GDIMetaFile& rMtf, sal_Bool bTransparent, const Size* pSize )
+	BitmapEx GetBitmapFromMetaFile( const GDIMetaFile& rMtf, bool bTransparent, const Size aSize)
 	{
 		Graphic     aGraphic( rMtf );
 		BitmapEx	aBmpEx;
@@ -227,7 +227,7 @@ namespace svx
         // rasterconverted to a bitmap
         const SvtOptionsDrawinglayer aDrawinglayerOpt;
         const GraphicConversionParameters aParameters(
-            pSize ? *pSize : Size(0, 0), 
+            aSize,
             true, // allow unlimited size
             aDrawinglayerOpt.IsAntiAliasing(),
             aDrawinglayerOpt.IsSnapHorVerLinesToDiscrete());
@@ -251,11 +251,8 @@ namespace svx
 		return aBmpEx;
 	}
 
-	Size* CalcSize( sal_Int32 nWidth, sal_Int32 nHeight, const Size& aBoundSize, Size& aOutSize )
+	Size CalcSize( sal_Int32 nWidth, sal_Int32 nHeight, const Size& aBoundSize)
 	{
-		if( (nWidth == 0) && (nHeight == 0) )
-			return NULL;
-
 		if( (nWidth == 0) && (nHeight != 0) && (aBoundSize.Height() != 0) )
 		{
 			nWidth = ( nHeight * aBoundSize.Width() ) / aBoundSize.Height();
@@ -265,10 +262,7 @@ namespace svx
 			nHeight = ( nWidth * aBoundSize.Height() ) / aBoundSize.Width();
 		}
 
-		aOutSize.Width() = nWidth;
-		aOutSize.Height() = nHeight;
-
-		return &aOutSize;
+		return Size(nWidth, nHeight);
 	}
 }
 
@@ -791,8 +785,10 @@ bool GraphicExporter::GetGraphic( ExportSettings& rSettings, Graphic& aGraphic, 
 
                 if( rSettings.mbTranslucent )
 				{
-					Size aOutSize;
-					aGraphic = GetBitmapFromMetaFile( aGraphic.GetGDIMetaFile(), sal_True, CalcSize( rSettings.mnWidth, rSettings.mnHeight, aNewSize, aOutSize ) );
+                    aGraphic = GetBitmapFromMetaFile( 
+                        aGraphic.GetGDIMetaFile(), 
+                        true, 
+                        CalcSize(rSettings.mnWidth, rSettings.mnHeight, aNewSize));
 				}
 			}
 		}
@@ -922,40 +918,30 @@ bool GraphicExporter::GetGraphic( ExportSettings& rSettings, Graphic& aGraphic, 
         if( !bSingleGraphic )
 		{
 			// create a metafile for all shapes
-			VirtualDevice	aOut;
-
-			// calculate bound rect for all shapes
-			Rectangle aBound;
-
-            {
-			    SdrObjectVector::iterator aIter = aShapes.begin();
-			    const SdrObjectVector::const_iterator aEnd = aShapes.end();
-
-			    while( aIter != aEnd )
-			    {
-				    const SdrObject* pObj = (*aIter++);
-				    Rectangle aR1(sdr::legacy::GetBoundRect(*pObj));
-				    if (aBound.IsEmpty())
-					    aBound=aR1;
-				    else
-					    aBound.Union(aR1);
-			    }
-            }
+			VirtualDevice aOut;
+			GDIMetaFile aMtf;
+			MapMode aOutMap(aMap);
+            const basegfx::B2DRange aRange(sdr::legacy::GetAllObjBoundRange(aShapes));
+            const Size aBoundSize(basegfx::fround(aRange.getWidth()), basegfx::fround(aRange.getHeight()));
+			sdr::contact::DisplayInfo aDisplayInfo;
 
 			aOut.EnableOutput( sal_False );
 			aOut.SetMapMode( aMap );
-            if( rSettings.mbUseHighContrast )
-                aOut.SetDrawMode( aVDev.GetDrawMode() | DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT );
 
-			GDIMetaFile aMtf;
+            if(rSettings.mbUseHighContrast)
+            {
+                aOut.SetDrawMode( 
+                    aVDev.GetDrawMode() | 
+                    DRAWMODE_SETTINGSLINE | 
+                    DRAWMODE_SETTINGSFILL | 
+                    DRAWMODE_SETTINGSTEXT | 
+                    DRAWMODE_SETTINGSGRADIENT);
+            }
+
 			aMtf.Clear();
 			aMtf.Record( &aOut );
-
-			MapMode aOutMap( aMap );
-			aOutMap.SetOrigin( Point( -aBound.TopLeft().X(), -aBound.TopLeft().Y() ) );
+            aOutMap.SetOrigin(Point(-basegfx::fround(aRange.getMinX()), -basegfx::fround(aRange.getMinY())));
 			aOut.SetRelativeMapMode( aOutMap );
-
-			sdr::contact::DisplayInfo aDisplayInfo;
 
             if(mpCurrentPage)
             {
@@ -969,29 +955,25 @@ bool GraphicExporter::GetGraphic( ExportSettings& rSettings, Graphic& aGraphic, 
 
 			if(!aShapes.empty())
 			{
-				// more effective way to paint a vector of SdrObjects. Hand over the processed page
-                // to have it in the 
+				// more effective way to paint a vector of SdrObjects
 				sdr::contact::ObjectContactOfObjListPainter aMultiObjectPainter(aOut, aShapes, mpCurrentPage);
 				ImplExportCheckVisisbilityRedirector aCheckVisibilityRedirector(mpCurrentPage);
-				aMultiObjectPainter.SetViewObjectContactRedirector(&aCheckVisibilityRedirector);
 
+                aMultiObjectPainter.SetViewObjectContactRedirector(&aCheckVisibilityRedirector);
 				aMultiObjectPainter.ProcessDisplay(aDisplayInfo);
 			}
 
 			aMtf.Stop();
 			aMtf.WindStart();
-
-			const Size	aExtSize( aOut.PixelToLogic( Size( 0, 0  ) ) );
-			Size		aBoundSize( aBound.GetWidth() + ( aExtSize.Width() ),
-									aBound.GetHeight() + ( aExtSize.Height() ) );
-
-			aMtf.SetPrefMapMode( aMap );
-			aMtf.SetPrefSize( aBoundSize );
+			aMtf.SetPrefMapMode(aMap);
+			aMtf.SetPrefSize(aBoundSize);
 
 			if( !bVectorType )
 			{
-				Size aOutSize;
-				aGraphic = GetBitmapFromMetaFile( aMtf, rSettings.mbTranslucent, CalcSize( rSettings.mnWidth, rSettings.mnHeight, aBoundSize, aOutSize ) );
+                aGraphic = GetBitmapFromMetaFile( 
+                    aMtf, 
+                    rSettings.mbTranslucent, 
+                    CalcSize(rSettings.mnWidth, rSettings.mnHeight, aBoundSize));
 			}
 			else
 			{

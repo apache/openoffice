@@ -1113,8 +1113,8 @@ SwFrmFmt* SwWW8ImplReader::InsertTxbxText(SdrTextObj* pTextObj,
 
                                 GrafikCtor();
 
-                                //pNew->SetModel( pDrawModel );
-                                sdr::legacy::SetLogicRect(*pNew, sdr::legacy::GetBoundRect(*pTextObj) );
+                                // copy transformation and layer
+                                pNew->setSdrObjectTransformation(pTextObj->getSdrObjectTransformation());
                                 pNew->SetLayer( pTextObj->GetLayer() );
 
                                 pTextObj->GetParentSdrObject()->getChildrenOfSdrObject()->ReplaceObjectInSdrObjList(

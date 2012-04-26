@@ -243,31 +243,25 @@ SdrGrafObj* View::InsertGraphic( const Graphic& rGraphic, sal_Int8& rAction,
 			if (pImageMap)
 				pNewGrafObj->InsertUserData(new SdIMapInfo(*pImageMap));
 
-			Rectangle aPickObjRect(sdr::legacy::GetBoundRect(*pPickObj));
-			Size aPickObjSize(aPickObjRect.GetSize());
-			Rectangle aObjRect(sdr::legacy::GetBoundRect(*pNewGrafObj));
-			Size aObjSize(aObjRect.GetSize());
-
-			Fraction aScaleWidth(aPickObjSize.Width(), aObjSize.Width());
-			Fraction aScaleHeight(aPickObjSize.Height(), aObjSize.Height());
-			sdr::legacy::ResizeSdrObject(*pNewGrafObj, aObjRect.TopLeft(), aScaleWidth, aScaleHeight);
-
-			Point aVec = aPickObjRect.TopLeft() - aObjRect.TopLeft();
-			sdr::legacy::MoveSdrObject(*pNewGrafObj, Size(aVec.X(), aVec.Y()));
+            // copy transformation and layer
+            pNewGrafObj->setSdrObjectTransformation(pPickObj->getSdrObjectTransformation());
+            pNewGrafObj->SetLayer(pPickObj->GetLayer());
 
 			const bool bUndo = IsUndoEnabled();
 
 			if( bUndo )
 				BegUndo(String(SdResId(STR_UNDO_DRAGDROP)));
-			pNewGrafObj->SetLayer(pPickObj->GetLayer());
+
 			SdrPage& rP = pPV->getSdrPageFromSdrPageView();
 			rP.InsertObjectToSdrObjList(pNewGrafObj);
-			if( bUndo )
+			
+            if( bUndo )
 			{
 				AddUndo(mpDoc->GetSdrUndoFactory().CreateUndoNewObject(*pNewGrafObj));
 				AddUndo(mpDoc->GetSdrUndoFactory().CreateUndoDeleteObject(*pPickObj));
 			}
-			rP.RemoveObjectFromSdrObjList(pPickObj->GetNavigationPosition());
+			
+            rP.RemoveObjectFromSdrObjList(pPickObj->GetNavigationPosition());
 
 			if( bUndo )
 			{
@@ -277,7 +271,8 @@ SdrGrafObj* View::InsertGraphic( const Graphic& rGraphic, sal_Int8& rAction,
 			{
 				deleteSdrObjectSafeAndClearPointer(pPickObj);
 			}
-			mnAction = DND_ACTION_COPY;
+			
+            mnAction = DND_ACTION_COPY;
 		}
 		else
 		{

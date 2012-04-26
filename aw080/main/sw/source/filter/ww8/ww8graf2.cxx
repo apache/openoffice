@@ -365,7 +365,8 @@ void SwWW8ImplReader::ReplaceObj(const SdrObject &rReplaceObj,
     {
         SdrObjList* pObjectList = pGroupObject->getChildrenOfSdrObject();
 
-        sdr::legacy::SetLogicRect(rSubObj, sdr::legacy::GetBoundRect(rReplaceObj));
+        // copy transformation and layer
+        rSubObj->setSdrObjectTransformation(rReplaceObj->getSdrObjectTransformation());
         rSubObj.SetLayer(rReplaceObj.GetLayer());
 
         // altes Objekt raus aus Gruppen-Liste und neues rein

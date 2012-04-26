@@ -37,9 +37,16 @@ namespace sdr
 		{
 			const basegfx::B2DRange& rRange = rObject.getObjectRange(pSdrView);
 
-			return Rectangle(
+            if(rRange.isEmpty())
+            {
+                return Rectangle();
+            }
+            else
+            {
+			    return Rectangle(
 					(sal_Int32)floor(rRange.getMinX()), (sal_Int32)floor(rRange.getMinY()),
 					(sal_Int32)ceil(rRange.getMaxX()), (sal_Int32)ceil(rRange.getMaxY()));
+            }
 		}
 
 		basegfx::B2DRange GetAllObjBoundRange(const SdrObjectVector& rObjVec, const SdrView* pSdrView)
@@ -60,9 +67,16 @@ namespace sdr
 		{
 			const basegfx::B2DRange aBoundRange(GetAllObjBoundRange(rObjVec, pSdrView));
 
-			return Rectangle(
-					(sal_Int32)floor(aBoundRange.getMinX()), (sal_Int32)floor(aBoundRange.getMinY()),
+            if(aBoundRange.isEmpty())
+            {
+                return Rectangle();
+            }
+            else
+            {
+			    return Rectangle(
+                    (sal_Int32)floor(aBoundRange.getMinX()), (sal_Int32)floor(aBoundRange.getMinY()),
 					(sal_Int32)ceil(aBoundRange.getMaxX()), (sal_Int32)ceil(aBoundRange.getMaxY()));
+            }
 		}
 
 		basegfx::B2DRange GetSnapRange(const SdrObject& rObject)
@@ -75,9 +89,16 @@ namespace sdr
 		{
 			const basegfx::B2DRange aSnapRange(GetSnapRange(rObject));
 
-			return Rectangle(
-					(sal_Int32)floor(aSnapRange.getMinX()), (sal_Int32)floor(aSnapRange.getMinY()),
-					(sal_Int32)ceil(aSnapRange.getMaxX()), (sal_Int32)ceil(aSnapRange.getMaxY()));
+            if(aSnapRange.isEmpty())
+            {
+                return Rectangle();
+            }
+            else
+            {
+			    return Rectangle(
+                    (sal_Int32)floor(aSnapRange.getMinX()), (sal_Int32)floor(aSnapRange.getMinY()),
+                    (sal_Int32)ceil(aSnapRange.getMaxX()), (sal_Int32)ceil(aSnapRange.getMaxY()));
+            }
 		}
 
 		void SetSnapRange(SdrObject& rObject, const basegfx::B2DRange& rRange)
@@ -164,9 +185,16 @@ namespace sdr
 		{
 			const basegfx::B2DRange aSnapRange(GetAllObjSnapRange(rObjVec));
 
-			return Rectangle(
+            if(aSnapRange.isEmpty())
+            {
+                return Rectangle();
+            }
+            else
+            {
+			    return Rectangle(
 					(sal_Int32)floor(aSnapRange.getMinX()), (sal_Int32)floor(aSnapRange.getMinY()),
 					(sal_Int32)ceil(aSnapRange.getMaxX()), (sal_Int32)ceil(aSnapRange.getMaxY()));
+            }
 		}
 
 		basegfx::B2DRange GetLogicRange(const SdrObject& rObject)
@@ -189,20 +217,18 @@ namespace sdr
 
 		Rectangle GetLogicRect(const SdrObject& rObject)
 		{
-			const basegfx::B2DHomMatrix& rObjectMatrix(rObject.getSdrObjectTransformation());
+			const basegfx::B2DRange aLogicRange(GetLogicRange(rObject));
 
-			if(rObjectMatrix.isIdentity())
-			{
-				return Rectangle();
-			}
-			else
-			{
-				const basegfx::B2DRange aLogicRange(GetLogicRange(rObject));
-
-				return Rectangle(
-						(sal_Int32)floor(aLogicRange.getMinX()), (sal_Int32)floor(aLogicRange.getMinY()),
-						(sal_Int32)ceil(aLogicRange.getMaxX()), (sal_Int32)ceil(aLogicRange.getMaxY()));
-			}
+            if(aLogicRange.isEmpty())
+            {
+                return Rectangle();
+            }
+            else
+            {
+			    return Rectangle(
+				    (sal_Int32)floor(aLogicRange.getMinX()), (sal_Int32)floor(aLogicRange.getMinY()),
+				    (sal_Int32)ceil(aLogicRange.getMaxX()), (sal_Int32)ceil(aLogicRange.getMaxY()));
+            }
 		}
 
 		void SetLogicRange(SdrObject& rObject, const basegfx::B2DRange& rRange)
