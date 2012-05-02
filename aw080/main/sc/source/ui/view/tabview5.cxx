@@ -533,7 +533,6 @@ void ScTabView::DrawMarkRange( const basegfx::B2DRange& rRange )
 
 void ScTabView::DrawEnableAnim(sal_Bool bSet)
 {
-	sal_uInt16 i;
 	if ( pDrawView )
 	{
 		//	#71040# dont start animations if display of graphics is disabled
@@ -542,13 +541,18 @@ void ScTabView::DrawEnableAnim(sal_Bool bSet)
 		{
 			if ( !pDrawView->IsAnimationEnabled() )
 			{
-				pDrawView->SetAnimationEnabled(sal_True);
+				pDrawView->SetAnimationEnabled(true);
 
 				//	Animierte GIFs muessen wieder gestartet werden:
 				ScDocument* pDoc = aViewData.GetDocument();
-				for (i=0; i<4; i++)
-					if ( pGridWin[i] && pGridWin[i]->IsVisible() )
-						pDoc->StartAnimations( aViewData.GetTabNo(), pGridWin[i] );
+
+                for(sal_uInt16 i(0); i < 4; i++)
+                {
+					if(pGridWin[i] && pGridWin[i]->IsVisible())
+                    {
+						pDoc->StartAnimations(aViewData.GetTabNo(), pGridWin[i]);
+                    }
+                }
 			}
 		}
 		else

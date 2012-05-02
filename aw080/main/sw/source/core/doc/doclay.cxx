@@ -576,12 +576,12 @@ SdrObject* SwDoc::CloneSdrObj( const SdrObject& rObj, sal_Bool bMoveWithinDoc,
 		if( xSet.is() )
 			aVal = xSet->getPropertyValue( sName );
 		if( bInsInPage )
-			pPg->InsertObjectToSdrObjList( pObj );
+			pPg->InsertObjectToSdrObjList(*pObj);
 		if( xSet.is() )
 			xSet->setPropertyValue( sName, aVal );
 	}
 	else if( bInsInPage )
-		pPg->InsertObjectToSdrObjList( pObj );
+		pPg->InsertObjectToSdrObjList(*pObj);
 
     // OD 02.07.2003 #108784# - for drawing objects: set layer of cloned object
     // to invisible layer

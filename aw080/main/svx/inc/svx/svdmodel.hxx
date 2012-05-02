@@ -129,7 +129,6 @@ private:
 	SdrHintKind								meSdrHint;
 	const SdrPage*							mpSdrPage;
 	const SdrObject*						mpSdrObject;
-    const basegfx::B2DRange					maSdrLastBound;
 
 public:
     // constructor
@@ -140,14 +139,12 @@ public:
         SdrHintKind eSdrHintKind = HINT_PAGEORDERCHG);
     SdrBaseHint(
         const SdrObject& rSdrObject, 
-        SdrHintKind eSdrHintKind = HINT_OBJCHG_RESIZE,
-		const SdrView* pSdrView = 0); // TTTT: need to remove default and search
+        SdrHintKind eSdrHintKind = HINT_OBJCHG_RESIZE);
 
     // data read access
     const SdrHintKind GetSdrHintKind() const { return meSdrHint; }
     const SdrPage* GetSdrHintPage() const { return mpSdrPage; }
     const SdrObject* GetSdrHintObject() const { return mpSdrObject; }
-    const basegfx::B2DRange& GetSdrHintLastBound() const { return maSdrLastBound; }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

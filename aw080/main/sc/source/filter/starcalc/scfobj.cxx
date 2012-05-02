@@ -85,7 +85,7 @@ void Sc10InsertObject::InsertChart( ScDocument* pDoc, SCTAB nDestTab, const Rect
 
 		SdrPage* pPage = pModel->GetPage(static_cast<sal_uInt16>(nDestTab));
 		DBG_ASSERT(pPage,"Page ?");
-		pPage->InsertObjectToSdrObjList(pSdrOle2Obj);
+		pPage->InsertObjectToSdrObjList(*pSdrOle2Obj);
 
         awt::Size aSz;
         aSz.Width = rRect.GetSize().Width();

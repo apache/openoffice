@@ -145,12 +145,7 @@ class REPORTDESIGN_DLLPUBLIC OCustomShape: public SdrObjCustomShape , public OOb
     friend class DlgEdFactory;
 
 public:
-    static OCustomShape* Create( 
-		SdrModel& rSdrModel,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent>& _xComponent )
-    {
-        return new OCustomShape( rSdrModel, _xComponent );
-    }
+    static OCustomShape* Create(SdrModel& rSdrModel, const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent>& _xComponent);
 
 	/// create a copy, evtl. with a different target model (if given)
 	virtual SdrObject* CloneSdrObject(SdrModel* pTargetModel = 0) const;
@@ -217,14 +212,7 @@ protected:
 public:
 	/// create a copy, evtl. with a different target model (if given)
 	virtual SdrObject* CloneSdrObject(SdrModel* pTargetModel = 0) const;
-
-	static OOle2Obj* Create( 
-		SdrModel& rSdrModel,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent >& _xComponent, 
-		sal_uInt16 _nType)
-    {
-        return new OOle2Obj( rSdrModel, _xComponent, _nType );
-    }
+	static OOle2Obj* Create(SdrModel& rSdrModel, const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent >& _xComponent, sal_uInt16 _nType);
 	
 	virtual sal_Int32	GetStep() const;
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet> getAwtComponent();

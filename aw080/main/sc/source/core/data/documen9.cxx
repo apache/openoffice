@@ -114,7 +114,7 @@ void ScDocument::TransferDrawPage(ScDocument* pSrcDoc, SCTAB nSrcPos, SCTAB nDes
                     // #116235#
 					SdrObject* pNewObject = pOldObject->CloneSdrObject();
 
-					pNewPage->InsertObjectToSdrObjList( pNewObject );
+					pNewPage->InsertObjectToSdrObjList(*pNewObject);
                     if (pDrawLayer->IsRecording())
                         pDrawLayer->AddCalcUndo( new SdrUndoInsertObj( *pNewObject ) );
                 }
@@ -337,80 +337,28 @@ void ScDocument::StartAnimations( SCTAB nTab, Window* pWin )
 {
 	if (!pDrawLayer)
 		return;
-	SdrPage* pPage = pDrawLayer->GetPage(static_cast<sal_uInt16>(nTab));
+
+    SdrPage* pPage = pDrawLayer->GetPage(static_cast<sal_uInt16>(nTab));
 	DBG_ASSERT(pPage,"Page ?");
-	if (!pPage)
+	
+    if (!pPage)
 		return;
 
 	SdrObjListIter aIter( *pPage, IM_FLAT );
 	SdrObject* pObject = aIter.Next();
-	while (pObject)
+	
+    while (pObject)
 	{
 		SdrGrafObj* pGrafObj = dynamic_cast< SdrGrafObj* >(pObject);
 		
-		if (pGrafObj)
+		if(pGrafObj && pGrafObj->IsAnimated() )
 		{
-			if ( pGrafObj->IsAnimated() )
-			{
-				const Rectangle aRect = sdr::legacy::GetBoundRect(*pGrafObj);
-				pGrafObj->StartAnimation( pWin, aRect.TopLeft(), aRect.GetSize() );
-			}
+            pGrafObj->SetGrafAnimationAllowed(true);
 		}
-		pObject = aIter.Next();
+	
+        pObject = aIter.Next();
 	}
 }
-
-//UNUSED2008-05  void ScDocument::RefreshNoteFlags()
-//UNUSED2008-05  {
-//UNUSED2008-05      if (!pDrawLayer)
-//UNUSED2008-05          return;
-//UNUSED2008-05
-//UNUSED2008-05      sal_Bool bAnyIntObj = sal_False;
-//UNUSED2008-05      SCTAB nTab;
-//UNUSED2008-05      ScPostIt aNote(this);
-//UNUSED2008-05      for (nTab=0; nTab<=MAXTAB && pTab[nTab]; nTab++)
-//UNUSED2008-05      {
-//UNUSED2008-05          SdrPage* pPage = pDrawLayer->GetPage(static_cast<sal_uInt16>(nTab));
-//UNUSED2008-05          DBG_ASSERT(pPage,"Page ?");
-//UNUSED2008-05          if (pPage)
-//UNUSED2008-05          {
-//UNUSED2008-05              SdrObjListIter aIter( *pPage, IM_FLAT );
-//UNUSED2008-05              SdrObject* pObject = aIter.Next();
-//UNUSED2008-05              while (pObject)
-//UNUSED2008-05              {
-//UNUSED2008-05                  if ( pObject->GetLayer() == SC_LAYER_INTERN )
-//UNUSED2008-05                  {
-//UNUSED2008-05                      bAnyIntObj = sal_True;  // for all internal objects, including detective
-//UNUSED2008-05
-//UNUSED2008-05                      if ( dynamic_cast< SdrCaptionObj* >(pObject) )
-//UNUSED2008-05                      {
-//UNUSED2008-05                          ScDrawObjData* pData = ScDrawLayer::GetObjData( pObject );
-//UNUSED2008-05                          if ( pData )
-//UNUSED2008-05                          {
-//UNUSED2008-05                              if ( GetNote( pData->aStt.Col(), pData->aStt.Row(), nTab, aNote))
-//UNUSED2008-05                                  if ( !aNote.IsShown() )
-//UNUSED2008-05                                  {
-//UNUSED2008-05                                      aNote.SetShown(sal_True);
-//UNUSED2008-05                                      SetNote( pData->aStt.Col(), pData->aStt.Row(), nTab, aNote);
-//UNUSED2008-05                                  }
-//UNUSED2008-05                          }
-//UNUSED2008-05                      }
-//UNUSED2008-05                  }
-//UNUSED2008-05                  pObject = aIter.Next();
-//UNUSED2008-05              }
-//UNUSED2008-05          }
-//UNUSED2008-05      }
-//UNUSED2008-05
-//UNUSED2008-05      if (bAnyIntObj)
-//UNUSED2008-05      {
-//UNUSED2008-05          //  update attributes for all note objects and the colors of detective objects
-//UNUSED2008-05          //  (we don't know with which settings the file was created)
-//UNUSED2008-05
-//UNUSED2008-05          ScDetectiveFunc aFunc( this, 0 );
-//UNUSED2008-05          aFunc.UpdateAllComments();
-//UNUSED2008-05          aFunc.UpdateAllArrowColors();
-//UNUSED2008-05      }
-//UNUSED2008-05  }
 
 sal_Bool ScDocument::HasBackgroundDraw( SCTAB nTab, const Rectangle& rMMRect )
 {

@@ -173,10 +173,10 @@ struct SdNavigatorDropEvent : public ExecuteDropEvent
 	if( mpDocSh )
 		aObjDesc.maDisplayName = mpDocSh->GetMedium()->GetURLObject().GetURLNoPass();
 
-	const Rectangle aMarkRect( getMarkedObjectSnapRect() );
-	aObjDesc.maSize = aMarkRect.GetSize();
+    const basegfx::B2DRange aAllRange(getMarkedObjectSnapRange());
+	aObjDesc.maSize = Size(basegfx::fround(aAllRange.getWidth()), basegfx::fround(aAllRange.getHeight()));
 
-	pTransferable->SetStartPos( basegfx::B2DPoint(aMarkRect.Left(), aMarkRect.Top()) );
+	pTransferable->SetStartPos(aAllRange.getMinimum());
 	pTransferable->SetObjectDescriptor( aObjDesc );
 	pTransferable->CopyToClipboard( mpViewSh->GetActiveWindow() );
 
@@ -224,7 +224,8 @@ struct SdNavigatorDropEvent : public ExecuteDropEvent
 		mpDocSh->FillTransferableObjectDescriptor( aObjDesc );
 	}
 
-	aObjDesc.maSize = getMarkedObjectSnapRect().GetSize();
+    const basegfx::B2DRange aAllRange(getMarkedObjectSnapRange());
+	aObjDesc.maSize = Size(basegfx::fround(aAllRange.getWidth()), basegfx::fround(aAllRange.getHeight()));
 	aObjDesc.maDragStartPos = rDragPos;
 	aObjDesc.maDisplayName = aDisplayName;
 	aObjDesc.mbCanLink = false;
@@ -253,10 +254,10 @@ struct SdNavigatorDropEvent : public ExecuteDropEvent
 		mpDocSh->FillTransferableObjectDescriptor( aObjDesc );
     }
 
-	const Rectangle aMarkRect( getMarkedObjectSnapRect() );
-	aObjDesc.maSize = aMarkRect.GetSize();
+    const basegfx::B2DRange aAllRange(getMarkedObjectSnapRange());
+	aObjDesc.maSize = Size(basegfx::fround(aAllRange.getWidth()), basegfx::fround(aAllRange.getHeight()));
 
-	pTransferable->SetStartPos( basegfx::B2DPoint(aMarkRect.Left(), aMarkRect.Top()) );
+	pTransferable->SetStartPos(aAllRange.getMinimum());
 	pTransferable->SetObjectDescriptor( aObjDesc );
     pTransferable->CopyToSelection( &rWindow );
 

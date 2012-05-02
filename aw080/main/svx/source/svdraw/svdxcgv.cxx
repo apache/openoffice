@@ -551,7 +551,7 @@ bool SdrExchangeView::Paste(const SdrModel& rMod, const basegfx::B2DPoint& rPos,
 					pNeuObj->SetLayer(nLayer);
 				}
 
-				pDstLst->InsertObjectToSdrObjList(pNeuObj, CONTAINER_APPEND);
+				pDstLst->InsertObjectToSdrObjList(*pNeuObj);
 
 				if( bUndo )
 				{
@@ -637,7 +637,7 @@ void SdrExchangeView::ImpPasteObject(SdrObject* pObj, SdrObjList& rLst, const ba
 			aScale,
 			rCenter - (aScale * 0.5)));
 
-	rLst.InsertObjectToSdrObjList(pObj, CONTAINER_APPEND);
+	rLst.InsertObjectToSdrObjList(*pObj);
 
 	if(IsUndoEnabled())
 	{
@@ -892,7 +892,7 @@ SdrModel* SdrExchangeView::GetMarkedObjModel() const
 
 				if( pNeuObj )
 				{
-					pNeuPag->InsertObjectToSdrObjList(pNeuObj, CONTAINER_APPEND);
+					pNeuPag->InsertObjectToSdrObjList(*pNeuObj);
 
 					// #i13033#
 					aCloneList.AddPair(pObj, pNeuObj);

@@ -837,7 +837,7 @@ SdrObject* CreateSdrObjectFromParagraphOutlines( const FWData& rFWData, const Sd
 							pCustomShape->getSdrModelFromSdrObject(),
 							OBJ_POLY, 
 							aOutlineIter->getB2DPolyPolygon() );
-						pRet->InsertObjectToSdrObjList( pPathObj );
+						pRet->InsertObjectToSdrObjList(*pPathObj);
 						aOutlineIter++;
 					}
 					aCharacterIter++;

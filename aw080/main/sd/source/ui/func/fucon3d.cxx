@@ -509,7 +509,7 @@ SdrObject* FuConstruct3dObject::CreateDefaultObject(const sal_uInt16 nID, const 
 	aCam.SetDefaults(::basegfx::B3DPoint(0.0, 0.0, fDefaultCamPosZ), aLookAt, mpView->GetDefaultCamFocal());
 	pScene->SetCamera(aCam);
 	
-	pScene->Insert3DObj(p3DObj);
+	pScene->Insert3DObj(*p3DObj);
 	sdr::legacy::SetSnapRect(*pScene, a3DRect);
 	// pScene->SetModel(mpDoc);
 		

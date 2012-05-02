@@ -205,8 +205,8 @@ void lcl_AdjustPositioningAttr( SwDrawFrmFmt* _pFrmFmt,
         
 		if ( pAnchoredDrawObj )
         {
-            const SwRect aObjRect(sdr::legacy::GetSnapRect(_rSdrObj));
-            const_cast< SwAnchoredDrawObject* >(pAnchoredDrawObj)->SetLastObjRect( aObjRect.SVRect() );
+            const Rectangle aObjRect(sdr::legacy::GetSnapRect(_rSdrObj));
+            const_cast< SwAnchoredDrawObject* >(pAnchoredDrawObj)->SetLastObjRect(aObjRect);
         }
     }
     // <--
@@ -218,105 +218,105 @@ SwDrawContact* SwDoc::GroupSelection( SdrView& rDrawView )
 
 	if(rDrawView.areSdrObjectsSelected())
 	{
-    // OD 30.06.2003 #108784# - replace marked 'virtual' drawing objects by
-    // the corresponding 'master' drawing objects.
-    SwDrawView::ReplaceMarkedDrawVirtObjs( rDrawView );
+        // OD 30.06.2003 #108784# - replace marked 'virtual' drawing objects by
+        // the corresponding 'master' drawing objects.
+        SwDrawView::ReplaceMarkedDrawVirtObjs( rDrawView );
 
-		const SdrObjectVector aSelection(rDrawView.getSelectedSdrObjectVectorFromSdrMarkView());
-	SwDrawFrmFmt *pFmt = 0L;
-		SdrObject *pObj = aSelection[0];
-		sal_Bool bNoGroup = ( 0 == pObj->GetParentSdrObject() );
-	if( bNoGroup )
-	{
-		//Ankerattribut aufheben.
-			SwDrawContact *pMyContact = (SwDrawContact*)findConnectionToSdrObject(pObj);
-		const SwFmtAnchor aAnch( pMyContact->GetFmt()->GetAnchor() );
+	    const SdrObjectVector aSelection(rDrawView.getSelectedSdrObjectVectorFromSdrMarkView());
+	    SwDrawFrmFmt *pFmt = 0L;
+	    SdrObject *pObj = aSelection[0];
+	    sal_Bool bNoGroup = ( 0 == pObj->GetParentSdrObject() );
+	    if( bNoGroup )
+	    {
+		    //Ankerattribut aufheben.
+			    SwDrawContact *pMyContact = (SwDrawContact*)findConnectionToSdrObject(pObj);
+		    const SwFmtAnchor aAnch( pMyContact->GetFmt()->GetAnchor() );
 
-        SwUndoDrawGroup *const pUndo = (!GetIDocumentUndoRedo().DoesUndo())
-                                 ? 0
-									 : new SwUndoDrawGroup( (sal_uInt16)aSelection.size() );
+            SwUndoDrawGroup *const pUndo = (!GetIDocumentUndoRedo().DoesUndo())
+                                     ? 0
+									     : new SwUndoDrawGroup( (sal_uInt16)aSelection.size() );
 
-        // --> OD 2005-08-16 #i53320#
-        bool bGroupMembersNotPositioned( false );
-        {
-            SwAnchoredDrawObject* pAnchoredDrawObj =
-                static_cast<SwAnchoredDrawObject*>(pMyContact->GetAnchoredObj( pObj ));
-            bGroupMembersNotPositioned = pAnchoredDrawObj->NotYetPositioned();
-        }
-        // <--
-		//ContactObjekte und Formate vernichten.
+            // --> OD 2005-08-16 #i53320#
+            bool bGroupMembersNotPositioned( false );
+            {
+                SwAnchoredDrawObject* pAnchoredDrawObj =
+                    static_cast<SwAnchoredDrawObject*>(pMyContact->GetAnchoredObj( pObj ));
+                bGroupMembersNotPositioned = pAnchoredDrawObj->NotYetPositioned();
+            }
+            // <--
+		    //ContactObjekte und Formate vernichten.
 			for( sal_uInt32 i(0); i < aSelection.size(); ++i )
-		{
+    		{
 				pObj = aSelection[i];
 				SwDrawContact *pContact = (SwDrawContact*)findConnectionToSdrObject(pObj);
 
-            // --> OD 2005-08-16 #i53320#
+                // --> OD 2005-08-16 #i53320#
 #ifdef DBG_UTIL
-            SwAnchoredDrawObject* pAnchoredDrawObj =
-                static_cast<SwAnchoredDrawObject*>(pContact->GetAnchoredObj( pObj ));
-            ASSERT( bGroupMembersNotPositioned == pAnchoredDrawObj->NotYetPositioned(),
-                    "<SwDoc::GroupSelection(..)> - group members have different positioning status!" );
+                SwAnchoredDrawObject* pAnchoredDrawObj =
+                    static_cast<SwAnchoredDrawObject*>(pContact->GetAnchoredObj( pObj ));
+                ASSERT( bGroupMembersNotPositioned == pAnchoredDrawObj->NotYetPositioned(),
+                        "<SwDoc::GroupSelection(..)> - group members have different positioning status!" );
 #endif
-            // <--
+                // <--
 
-            pFmt = (SwDrawFrmFmt*)pContact->GetFmt();
-			//loescht sich selbst!
-				pContact->HandleChanged(*pObj, HINT_SDROBJECTDYING, pObj->getObjectRange(&rDrawView) );
+                pFmt = (SwDrawFrmFmt*)pContact->GetFmt();
+			    //loescht sich selbst!
+				pContact->HandleChanged(*pObj, HINT_SDROBJECTDYING);
 				resetConnectionToSdrObject(pObj);
 
-			if( pUndo )
-				pUndo->AddObj( i, pFmt, pObj );
-			else
-				DelFrmFmt( pFmt );
+			    if( pUndo )
+				    pUndo->AddObj( i, pFmt, pObj );
+			    else
+				    DelFrmFmt( pFmt );
 
-            // --> OD 2005-05-10 #i45952# - re-introduce position
-            // normalization of group member objects, because its anchor position
-            // is cleared, when they are grouped.
+                // --> OD 2005-05-10 #i45952# - re-introduce position
+                // normalization of group member objects, because its anchor position
+                // is cleared, when they are grouped.
 				// AW: NbcMove no longer needed, just reset anchor
 				pObj->SetAnchorPos( basegfx::B2DPoint() );
+            }
+
+		    pFmt = MakeDrawFrmFmt( String::CreateFromAscii(
+								    RTL_CONSTASCII_STRINGPARAM( "DrawObject" )),
+								    GetDfltFrmFmt() );
+            pFmt->SetFmtAttr( aAnch );
+            // --> OD 2004-10-25 #i36010# - set layout direction of the position
+            pFmt->SetPositionLayoutDir(
+                text::PositionLayoutDir::PositionInLayoutDirOfAnchor );
+            // <--
+
+            rDrawView.GroupMarked();
+			    SdrObject* pNewGroupObj = rDrawView.getSelectedIfSingle();
+			    ASSERT( pNewGroupObj, "GroupMarked more or none groups." );
+
+            pNewContact = new SwDrawContact( pFmt, pNewGroupObj );
+            // --> OD 2004-11-22 #i35635#
+            pNewContact->MoveObjToVisibleLayer( pNewGroupObj );
+            // <--
+            pNewContact->ConnectToLayout();
+            // --> OD 2005-08-16 #i53320# - No adjustment of the positioning and
+            // alignment attributes, if group members aren't positioned yet.
+            if ( !bGroupMembersNotPositioned )
+            {
+                // OD 2004-04-01 #i26791# - Adjust positioning and alignment attributes.
+                lcl_AdjustPositioningAttr( pFmt, *pNewGroupObj );
+            }
+            // <--
+
+            if( pUndo )
+		    {
+			    pUndo->SetGroupFmt( pFmt );
+                GetIDocumentUndoRedo().AppendUndo( pUndo );
+            }
         }
-
-		pFmt = MakeDrawFrmFmt( String::CreateFromAscii(
-								RTL_CONSTASCII_STRINGPARAM( "DrawObject" )),
-								GetDfltFrmFmt() );
-        pFmt->SetFmtAttr( aAnch );
-        // --> OD 2004-10-25 #i36010# - set layout direction of the position
-        pFmt->SetPositionLayoutDir(
-            text::PositionLayoutDir::PositionInLayoutDirOfAnchor );
-        // <--
-
-        rDrawView.GroupMarked();
-			SdrObject* pNewGroupObj = rDrawView.getSelectedIfSingle();
-			ASSERT( pNewGroupObj, "GroupMarked more or none groups." );
-
-        pNewContact = new SwDrawContact( pFmt, pNewGroupObj );
-        // --> OD 2004-11-22 #i35635#
-        pNewContact->MoveObjToVisibleLayer( pNewGroupObj );
-        // <--
-        pNewContact->ConnectToLayout();
-        // --> OD 2005-08-16 #i53320# - No adjustment of the positioning and
-        // alignment attributes, if group members aren't positioned yet.
-        if ( !bGroupMembersNotPositioned )
+        else
         {
-            // OD 2004-04-01 #i26791# - Adjust positioning and alignment attributes.
-            lcl_AdjustPositioningAttr( pFmt, *pNewGroupObj );
-        }
-        // <--
+            if (GetIDocumentUndoRedo().DoesUndo())
+            {
+                GetIDocumentUndoRedo().ClearRedo();
+            }
 
-        if( pUndo )
-		{
-			pUndo->SetGroupFmt( pFmt );
-            GetIDocumentUndoRedo().AppendUndo( pUndo );
-        }
-    }
-    else
-    {
-        if (GetIDocumentUndoRedo().DoesUndo())
-        {
-            GetIDocumentUndoRedo().ClearRedo();
-        }
-
-        rDrawView.GroupMarked();
+            rDrawView.GroupMarked();
 			ASSERT( rDrawView.getSelectedIfSingle(), "GroupMarked more or none groups." );
 		}
     }
@@ -515,7 +515,7 @@ sal_Bool SwDoc::DeleteSelection( SwDrawView& rDrawView )
 								ASSERT( false, "<SwDrawVirtObj> is still marked for delete. application will crash!" );
 				            }
 					        //loescht sich selbst!
-							pContact->HandleChanged(*pObj, HINT_SDROBJECTDYING, pObj->getObjectRange(&rDrawView) );
+							pContact->HandleChanged(*pObj, HINT_SDROBJECTDYING);
 							resetConnectionToSdrObject(pObj);
 
 							if( pUndo )

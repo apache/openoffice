@@ -426,7 +426,7 @@ void ScDrawLayer::ScCopyPage( sal_uInt16 nOldPos, sal_uInt16 nNewPos, sal_Bool b
                 // #116235#
 				SdrObject* pNewObject = pOldObject->CloneSdrObject();
 
-				pNewPage->InsertObjectToSdrObjList( pNewObject );
+				pNewPage->InsertObjectToSdrObjList(*pNewObject);
                 if (bRecording)
                     AddCalcUndo( new SdrUndoInsertObj( *pNewObject ) );
             }
@@ -1430,19 +1430,9 @@ void ScDrawLayer::CopyToClip( ScDocument* pClipDoc, SCTAB nTab, const Rectangle&
 				DBG_ASSERT( pDestPage, "no page" );
 				if (pDestPage)
 				{
-					// #116235#
 					SdrObject* pNewObject = pOldObject->CloneSdrObject();
-					//SdrObject* pNewObject = pOldObject->Clone( pDestPage, pDestModel );
-					//pNewObject->SetModel(pDestModel);
-					//pNewObject->SetPage(pDestPage);
-
                     uno::Reference< chart2::XChartDocument > xOldChart( ScChartHelper::GetChartFromSdrObject( pOldObject ) );
-					// taken out: move is relative, so this will do nothing. Maybe it was intended to
-					// move to (0,0), but that needs to be done differently
-                    //if(!xOldChart.is())//#i110034# do not move charts as they loose all their data references otherwise
-					//	sdr::legacy::MoveSdrObject(*pNewObject, Size(0,0));
-					pDestPage->InsertObjectToSdrObjList( pNewObject );
-
+					pDestPage->InsertObjectToSdrObjList(*pNewObject);
 					//	no undo needed in clipboard document
 					//	charts are not updated
 				}
@@ -1598,12 +1588,7 @@ void ScDrawLayer::CopyFromClip( ScDrawLayer* pClipModel, SCTAB nSourceTab, const
         // do not copy internal objects (detective) and note captions
         if ( rSourceRange.IsInside( aObjRect ) && (pOldObject->GetLayer() != SC_LAYER_INTERN) && !IsNoteCaption( *pOldObject ) )
 		{
-			// #116235#
 			SdrObject* pNewObject = pOldObject->CloneSdrObject();
-			//SdrObject* pNewObject = pOldObject->Clone( pDestPage, this );
-			//pNewObject->SetModel(this);
-			//pNewObject->SetPage(pDestPage);
-
 			if ( bMirrorObj )
 				MirrorRTL( pNewObject );		// first mirror, then move
 
@@ -1611,11 +1596,9 @@ void ScDrawLayer::CopyFromClip( ScDrawLayer* pClipModel, SCTAB nSourceTab, const
 			if ( bResize )
 				sdr::legacy::ResizeSdrObject(*pNewObject, aRefPos, aHorFract, aVerFract );
 
-			pDestPage->InsertObjectToSdrObjList( pNewObject );
+			pDestPage->InsertObjectToSdrObjList(*pNewObject);
 			if (bRecording)
 				AddCalcUndo( new SdrUndoInsertObj( *pNewObject ) );
-
-			//#i110034#	handle chart data references (after InsertObjectToSdrObjList)
 
 			if ( pNewObject->GetObjIdentifier() == OBJ_OLE2 )
 			{

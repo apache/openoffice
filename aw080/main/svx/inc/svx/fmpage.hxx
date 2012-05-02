@@ -58,7 +58,7 @@ public:
 	FmFormPage(FmFormModel& rModel, StarBASIC*, bool bMasterPage = false);
 	~FmFormPage();
 
-	virtual void InsertObjectToSdrObjList(SdrObject* pObj, sal_uInt32 nPos = CONTAINER_APPEND);
+	virtual void InsertObjectToSdrObjList(SdrObject& rObj, sal_uInt32 nPos = CONTAINER_APPEND);
 	virtual SdrObject* RemoveObjectFromSdrObjList(sal_uInt32 nObjNum);
 
 	// Zugriff auf alle Formulare

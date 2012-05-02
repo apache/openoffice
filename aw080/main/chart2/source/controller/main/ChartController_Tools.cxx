@@ -443,9 +443,6 @@ void ChartController::impl_PasteShapes( SdrModel* pModel )
                     SdrObject* pNewObj = ( pObj ? pObj->CloneSdrObject() : NULL );
                     if ( pNewObj )
                     {
-                        //pNewObj->SetModel( &pDrawModelWrapper->getSdrModel() );
-                        //pNewObj->SetPage( pDestPage );
-
                         // set position
                         Reference< drawing::XShape > xShape( pNewObj->getUnoShape(), uno::UNO_QUERY );
                         if ( xShape.is() )
@@ -453,7 +450,7 @@ void ChartController::impl_PasteShapes( SdrModel* pModel )
                             xShape->setPosition( awt::Point( 0, 0 ) );
                         }
 
-                        pDestPage->InsertObjectToSdrObjList( pNewObj );
+                        pDestPage->InsertObjectToSdrObjList(*pNewObj);
                         m_pDrawViewWrapper->AddUndo( new SdrUndoInsertObj( *pNewObj ) );
                         xSelShape = xShape;
                     }

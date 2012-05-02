@@ -2433,8 +2433,7 @@ SdrBaseHint::SdrBaseHint(
 :	SfxHint(),
     meSdrHint(eSdrHintKind),
     mpSdrPage(0),
-    mpSdrObject(0),
-    maSdrLastBound()
+    mpSdrObject(0)
 {
 }
 
@@ -2444,20 +2443,17 @@ SdrBaseHint::SdrBaseHint(
 :	SfxHint(),
     meSdrHint(eSdrHintKind),
     mpSdrPage(&rSdrPage),
-    mpSdrObject(0),
-    maSdrLastBound()
+    mpSdrObject(0)
 {
 }
 
 SdrBaseHint::SdrBaseHint(
     const SdrObject& rSdrObject, 
-    SdrHintKind eSdrHintKind,
-	const SdrView* pSdrView)
+    SdrHintKind eSdrHintKind)
 :	SfxHint(),
     meSdrHint(eSdrHintKind),
     mpSdrPage(rSdrObject.getSdrPageFromSdrObject()),
-    mpSdrObject(&rSdrObject),
-    maSdrLastBound(rSdrObject.getObjectRange(pSdrView))
+    mpSdrObject(&rSdrObject)
 {
 }
 

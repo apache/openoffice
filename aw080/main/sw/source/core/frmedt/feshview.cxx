@@ -131,7 +131,10 @@ extern sal_Bool bNoInterrupt;		// in swapp.cxx
         pSh->KillPams();
         pSh->ClearMark();
         // <--
-		pSh->SetCrsr( pSh->Imp()->GetDrawView()->getMarkedObjectSnapRect().TopLeft(), true);
+		
+        const basegfx::B2DRange aAllRange(pSh->Imp()->GetDrawView()->getMarkedObjectSnapRange());
+
+        pSh->SetCrsr(Point(basegfx::fround(aAllRange.getMinX()), basegfx::fround(aAllRange.getMinY())), true);
     }
 }
 
@@ -159,7 +162,8 @@ sal_Bool SwFEShell::SelectObj( const Point& rPt, sal_uInt8 nFlag, SdrObject *pOb
     const sal_Bool bAddSelect = 0 != (SW_ADD_SELECT & nFlag);
     const sal_Bool bEnterGroup = 0 != (SW_ENTER_GROUP & nFlag);
 	SwFlyFrm* pOldSelFly = 0;
-	const Point aOldPos( pDView->getMarkedObjectSnapRect().TopLeft() );
+    const basegfx::B2DRange aAllRange(pDView->getMarkedObjectSnapRange());
+	const Point aOldPos(Point(basegfx::fround(aAllRange.getMinX()), basegfx::fround(aAllRange.getMinY())));
 
 	if( bHadSelection )
 	{
@@ -1054,7 +1058,7 @@ void SwFEShell::EndTextEdit()
         SdrObject *pTmp = pSwDrawContact->GetMaster();
         if( !pTmp )
             pTmp = pObj;
-        pSwDrawContact->HandleChanged( *pTmp, HINT_OBJCHG_RESIZE, pTmp->getObjectRange(pView) );
+        pSwDrawContact->HandleChanged(*pTmp, HINT_OBJCHG_RESIZE);
 	}
 	if ( !pObj->GetParentSdrObject() )
 	{

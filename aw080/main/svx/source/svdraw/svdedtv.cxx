@@ -1096,7 +1096,7 @@ void SdrEditView::CopyMarkedObj()
 
 			if(pClone) 
 			{
-				GetSdrPageView()->GetCurrentObjectList()->InsertObjectToSdrObjList(pClone, CONTAINER_APPEND);
+				GetSdrPageView()->GetCurrentObjectList()->InsertObjectToSdrObjList(*pClone);
 
 				if(bUndo)
 				{
@@ -1184,7 +1184,7 @@ bool SdrEditView::InsertObjectAtView(SdrObject& rObj, sal_uInt32 nOptions)
 		}
 	}
 
-	if(0 != (nOptions & SDRINSERT_SETDEFLAYER)) 
+	if(nOptions & SDRINSERT_SETDEFLAYER) 
 	{
 		SdrLayerID nLayer(GetSdrPageView()->getSdrPageFromSdrPageView().GetPageLayerAdmin().GetLayerID(GetActiveLayer(), true));
 		
@@ -1202,7 +1202,7 @@ bool SdrEditView::InsertObjectAtView(SdrObject& rObj, sal_uInt32 nOptions)
 		rObj.SetLayer(nLayer);
 	}
 
-	if(0 != (nOptions & SDRINSERT_SETDEFATTR)) 
+	if(nOptions & SDRINSERT_SETDEFATTR)
 	{
 		if(GetDefaultStyleSheet()) 
 		{
@@ -1214,14 +1214,7 @@ bool SdrEditView::InsertObjectAtView(SdrObject& rObj, sal_uInt32 nOptions)
 
 	if(!rObj.IsObjectInserted()) 
 	{
-		if(0 != (nOptions & SDRINSERT_NOBROADCAST)) 
-		{
-			GetSdrPageView()->GetCurrentObjectList()->InsertObjectToSdrObjList(&rObj, CONTAINER_APPEND);
-		} 
-		else 
-		{
-			GetSdrPageView()->GetCurrentObjectList()->InsertObjectToSdrObjList(&rObj, CONTAINER_APPEND);
-		}
+		GetSdrPageView()->GetCurrentObjectList()->InsertObjectToSdrObjList(rObj);
 	}
 
 	if(IsUndoEnabled())

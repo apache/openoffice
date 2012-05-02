@@ -572,7 +572,7 @@ void ScEEImport::InsertGraphic( SCCOL nCol, SCROW nRow, SCTAB nTab,
 
             // #118522# calling SetGraphicLink here doesn't work
 			pObj->SetName( pI->aURL );
-			pPage->InsertObjectToSdrObjList( pObj );
+			pPage->InsertObjectToSdrObjList(*pObj);
 
             // #118522# SetGraphicLink has to be used after inserting the object,
             // otherwise an empty graphic is swapped in and the contact stuff crashes.

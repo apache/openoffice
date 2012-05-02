@@ -1313,8 +1313,8 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 					if ( pRet )
 					{
 						SdrObjGroup* pGroup = new SdrObjGroup(*pSdrModel);
-						pGroup->InsertObjectToSdrObjList( pRet );
-						pGroup->InsertObjectToSdrObjList( pTObj );
+						pGroup->InsertObjectToSdrObjList(*pRet);
+						pGroup->InsertObjectToSdrObjList(*pTObj);
 						pRet = pGroup;
 					}
 					else
@@ -3129,7 +3129,7 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 													if ( aProcessData.pTableRowProperties )
 														pObj = CreateTable( pObj, aProcessData.pTableRowProperties, aProcessData.rPersistEntry.pSolverContainer );
 
-													pRet->InsertObjectToSdrObjList( pObj );
+													pRet->InsertObjectToSdrObjList(*pObj);
 
 													if( nShapeId )
 														insertShapeId( nShapeId, pObj );

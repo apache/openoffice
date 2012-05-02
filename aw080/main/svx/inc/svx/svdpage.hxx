@@ -122,8 +122,8 @@ public:
 	// react on content change
 	virtual void handleContentChange(const SfxHint& rHint);
 
-	// insert SdrObject TTTT: should use SdrObject& ?
-	virtual void InsertObjectToSdrObjList(SdrObject* pObj, sal_uInt32 nPos = CONTAINER_APPEND);
+	// insert SdrObject
+	virtual void InsertObjectToSdrObjList(SdrObject& rObj, sal_uInt32 nPos = CONTAINER_APPEND);
 
 	// remove SdrObject (without delete)
 	virtual SdrObject* RemoveObjectFromSdrObjList(sal_uInt32 nObjNum);
@@ -422,15 +422,9 @@ public:
 
 	virtual SfxStyleSheet* GetTextStyleSheetForObject( SdrObject* pObj ) const;
 
-	bool HasTransparentObjects( bool bCheckForAlphaChannel = false ) const;
-
-	/** *deprecated* returns an averaged background color of this page */
-    // #i75566# GetBackgroundColor -> GetPageBackgroundColor
-	Color GetPageBackgroundColor() const;
-
 	/** *deprecated* returns an averaged background color of this page */
     // #i75566# GetBackgroundColor -> GetPageBackgroundColor and bScreenDisplay hint value
-	Color GetPageBackgroundColor( SdrPageView* pView, bool bScreenDisplay = true) const;
+	Color GetPageBackgroundColor(SdrPageView* pView = 0, bool bScreenDisplay = true) const;
 
 	/** this method returns true if the object from the ViewObjectContact should
 		be visible on this page while rendering.

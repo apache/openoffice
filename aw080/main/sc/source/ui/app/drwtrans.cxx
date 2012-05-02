@@ -214,12 +214,12 @@ ScDrawTransferObj::ScDrawTransferObj( SdrModel* pClipModel, ScDocShell* pContain
     //
 
 	// #i71538# use complete SdrViews
-    // SdrExchangeView aView(pModel);
 	OSL_ENSURE(pModel, "ScDrawTransferObj without SdrModel (!)");
     SdrView aView(*pModel);
     aView.ShowSdrPage(*aView.getSdrModelFromSdrView().GetPage(0));
     aView.MarkAllObj();
-    aSrcSize = aView.getMarkedObjectSnapRect().GetSize();
+    const basegfx::B2DRange aAllRange(aView.getMarkedObjectSnapRange());
+    aSrcSize = Size(basegfx::fround(aAllRange.getWidth()), basegfx::fround(aAllRange.getHeight()));
 
     if ( bOleObj )              // single OLE object
     {

@@ -1031,7 +1031,7 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 				if(pObj)
 				{
 					pObj = pObj->CloneSdrObject();
-					pPage->InsertObjectToSdrObjList(pObj);
+					pPage->InsertObjectToSdrObjList(*pObj);
 					pView->MarkObj(*pObj);
 					if(pSymbolAttr)
 					{
@@ -1746,11 +1746,9 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
             if(pObj==NULL)
                 break;
 			pObj = pObj->CloneSdrObject();
-			//const String* pGrfName = (const String*)aGrfNames.GetObject(i);
-			String *pStr=new String();//String(i));
+			String *pStr=new String();
 			aGrfNames.Insert(pStr,LIST_APPEND);
-			//Rectangle aRect(pObj->GetLogicRect());
-			pPage->InsertObjectToSdrObjList(pObj);
+			pPage->InsertObjectToSdrObjList(*pObj);
 			pView->MarkObj(*pObj);
 			if(pSymbolAttr)
 			{

@@ -283,10 +283,7 @@ void OReportSection::Paste(const uno::Sequence< beans::NamedValue >& _aAllreadyC
 						if ( pObject )
 						{   
                             SdrObject* pNeuObj = pObject->CloneSdrObject();
-
-                            //pNeuObj->SetPage( m_pPage );
-							//pNeuObj->SetModel( m_pModel.get() );
-			                m_pPage->InsertObjectToSdrObjList(pNeuObj,CONTAINER_APPEND);
+			                m_pPage->InsertObjectToSdrObjList(*pNeuObj);
 
 							const awt::Point aWorkPos((*pCopiesIter)->getPosition());
 							const awt::Size aWorkSize((*pCopiesIter)->getSize());

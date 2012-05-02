@@ -956,24 +956,6 @@ void SdrGrafObj::handlePageChange(SdrPage* pOldPage, SdrPage* pNewPage)
 
 // -----------------------------------------------------------------------------
 
-void SdrGrafObj::StartAnimation( OutputDevice* /*pOutDev*/, const Point& /*rPoint*/, const Size& /*rSize*/, long /*nExtraData*/)
-{
-	// #111096#
-	// use new graf animation
-	SetGrafAnimationAllowed(true);
-}
-
-// -----------------------------------------------------------------------------
-
-void SdrGrafObj::StopAnimation(OutputDevice* /*pOutDev*/, long /*nExtraData*/)
-{
-	// #111096#
-	// use new graf animation
-	SetGrafAnimationAllowed(false);
-}
-
-// -----------------------------------------------------------------------------
-
 bool SdrGrafObj::HasGDIMetaFile() const
 {
 	return( pGraphic->GetType() == GRAPHIC_GDIMETAFILE );
@@ -1114,10 +1096,10 @@ SdrObject* SdrGrafObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) con
                         pGrp = new SdrObjGroup(getSdrModelFromSdrObject());
 
                         pGrp->SetLayer(GetLayer());
-                        pGrp->getChildrenOfSdrObject()->InsertObjectToSdrObjList(pRetval);
+                        pGrp->getChildrenOfSdrObject()->InsertObjectToSdrObjList(*pRetval);
                     }
 
-                    pGrp->getChildrenOfSdrObject()->InsertObjectToSdrObjList(pLineFill, 0);
+                    pGrp->getChildrenOfSdrObject()->InsertObjectToSdrObjList(*pLineFill, 0);
                 }
                 else
                 {

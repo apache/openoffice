@@ -106,11 +106,8 @@ void ContourWindow::SetPolyPolygon( const PolyPolygon& rPolyPoly )
 			aSet.Put( XFillStyleItem( XFILL_SOLID ) );
 			aSet.Put( XFillColorItem( String(), TRANSCOL ) );
 			aSet.Put( XFillTransparenceItem( 50 ) );
-
-			//pPathObj->SetItemSetAndBroadcast(aSet);
 			pPathObj->SetMergedItemSetAndBroadcast(aSet);
-
-			pPage->InsertObjectToSdrObjList( pPathObj );
+			pPage->InsertObjectToSdrObjList(*pPathObj);
 		}
 	}
 

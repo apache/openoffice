@@ -221,12 +221,6 @@ public:
 	// react on content change
 	virtual void handleContentChange(const SfxHint& rHint);
 
-	// virtual void       InsertObjectToSdrObjList(SdrObject* pObj, sal_uInt32 nPos = CONTAINER_APPEND);
-	//virtual SdrObject* NbcRemoveObject(sal_uInt32 nObjNum);
-	/// virtual SdrObject* RemoveObject(sal_uInt32 nObjNum);
-	// #95876# Also overload ReplaceObject methods to realize when
-	// objects are removed with this mechanism instead of RemoveObject
-
 	virtual void SetLinkData(const String& rLinkName, const String& rLinkData);
 
 	void		SetObjText(SdrTextObj* pObj, SdrOutliner* pOutliner, PresObjKind eObjKind, const String& rStr );
@@ -283,7 +277,7 @@ public:
 	virtual void Notify(SfxBroadcaster& rBC, const SfxHint& rHint);
 
     // new central SdrObject change handler, called from Notify
-    void HandleChanged(const SdrObject& rObj, SdrHintKind eHint, const basegfx::B2DRange& rOldObjectRange);
+    void HandleChanged(const SdrObject& rObj, SdrHintKind eHint);
 
 	void			SetLayoutName(String aName);
 	virtual String	GetLayoutName() const		{ return maLayoutName; }

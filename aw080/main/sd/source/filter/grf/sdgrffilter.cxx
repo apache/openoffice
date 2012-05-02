@@ -254,13 +254,13 @@ sal_Bool SdGRFFilter::Import()
 			aPos.X() = ( ( aPagSize.Width() - aGrfSize.Width() ) >> 1 ) + pPage->GetLeftPageBorder();
 			aPos.Y() = ( ( aPagSize.Height() - aGrfSize.Height() ) >> 1 )  + pPage->GetTopPageBorder();
 
-			pPage->InsertObjectToSdrObjList(
-				new SdrGrafObj( 
+			SdrGrafObj* pNewSdrGraf = new SdrGrafObj( 
 					pPage->getSdrModelFromSdrPage(),
 					aGraphic, 
 					basegfx::tools::createScaleTranslateB2DHomMatrix(
 						aGrfSize.getWidth(), aGrfSize.getHeight(),
-						aPos.X(), aPos.Y())));
+						aPos.X(), aPos.Y()));
+			pPage->InsertObjectToSdrObjList(*pNewSdrGraf);
 			bRet = sal_True;
 		}
 	}

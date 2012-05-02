@@ -447,11 +447,11 @@ void E3dScene::SetCamera(const Camera3D& rNewCamera)
 |*
 \************************************************************************/
 
-void E3dScene::NewObjectInserted(const E3dObject* p3DObj)
+void E3dScene::NewObjectInserted(const E3dObject& r3DObj)
 {
-	E3dObject::NewObjectInserted(p3DObj);
+	E3dObject::NewObjectInserted(r3DObj);
 
-	if ( p3DObj == this )
+	if(&r3DObj == this)
 		return;
 
 	// #110988#
@@ -549,9 +549,9 @@ void E3dScene::RebuildLists()
 		E3dObject* pCandidate = dynamic_cast< E3dObject* >(GetObj(a));
 
 		if(pCandidate)
-	{
+	    {
 			pCandidate->SetLayer(nCurrLayerID);
-			NewObjectInserted(pCandidate);
+			NewObjectInserted(*pCandidate);
 		}
 		else
 		{
@@ -735,9 +735,9 @@ sal_Bool E3dScene::IsBreakObjPossible()
 		}
 		else
 		{
-			OSL_ENSURE(false, "E3dScene::RebuildLists error in 3D SdrObjList (!)");
-	}
-}
+			OSL_ENSURE(false, "E3dScene::IsBreakObjPossible error in 3D SdrObjList (!)");
+	    }
+    }
 
 	return true;
 }
@@ -946,23 +946,19 @@ void E3dScene::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransfor
 |*
 \************************************************************************/
 
-void E3dScene::Insert3DObj(E3dObject* p3DObj)
+void E3dScene::Insert3DObj(E3dObject& r3DObj)
 {
-	DBG_ASSERT(p3DObj, "Insert3DObj mit NULL-Zeiger!");
-	InsertObjectToSdrObjList(p3DObj);
+	InsertObjectToSdrObjList(r3DObj);
 	InvalidateBoundVolume();
-	NewObjectInserted(p3DObj);
+	NewObjectInserted(r3DObj);
 	StructureChanged();
 }
 
-void E3dScene::Remove3DObj(E3dObject* p3DObj)
+void E3dScene::Remove3DObj(E3dObject& r3DObj)
 {
-	DBG_ASSERT(p3DObj, "Remove3DObj mit NULL-Zeiger!");
-
-	if(p3DObj->GetParentObj() == this)
+	if(r3DObj.GetParentObj() == this)
 	{
-		RemoveObjectFromSdrObjList(p3DObj->GetNavigationPosition());
-
+		RemoveObjectFromSdrObjList(r3DObj.GetNavigationPosition());
 		InvalidateBoundVolume();
 		StructureChanged();
 	}

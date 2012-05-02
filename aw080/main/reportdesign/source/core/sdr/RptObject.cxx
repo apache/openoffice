@@ -127,8 +127,9 @@ SdrObject* OObjectBase::createObject(SdrModel* pTargetModel, const uno::Referenc
 			    OUnoObject* pUnoObj = new OUnoObject( 
 					*pTargetModel,
 					_xComponent 
-                                    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
-                                    ,OBJ_DLG_FIXEDTEXT);
+                    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
+                    ,OBJ_DLG_FIXEDTEXT);
+                SetUnoShapeAtSdrObjectFromSvxShape(*pUnoObj, _xComponent);
                 pNewObj = pUnoObj;
             
                 uno::Reference<beans::XPropertySet> xControlModel(pUnoObj->GetUnoControlModel(),uno::UNO_QUERY);
@@ -140,23 +141,26 @@ SdrObject* OObjectBase::createObject(SdrModel* pTargetModel, const uno::Referenc
 			pNewObj = new OUnoObject(
 				*pTargetModel,
 				_xComponent
-									,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
-								    ,OBJ_DLG_IMAGECONTROL);
+				,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
+				,OBJ_DLG_IMAGECONTROL);
+            SetUnoShapeAtSdrObjectFromSvxShape(*pNewObj, _xComponent);
 			break;
 		case OBJ_DLG_FORMATTEDFIELD:
 			pNewObj = new OUnoObject(
 				*pTargetModel,
 				_xComponent
-									,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
-									,OBJ_DLG_FORMATTEDFIELD);
+				,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
+				,OBJ_DLG_FORMATTEDFIELD);
+            SetUnoShapeAtSdrObjectFromSvxShape(*pNewObj, _xComponent);
 			break;
         case OBJ_DLG_HFIXEDLINE:
         case OBJ_DLG_VFIXEDLINE:
 			pNewObj = new OUnoObject(
 				*pTargetModel,
 				_xComponent
-									,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel")) 
-									,nType);
+				,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel")) 
+				,nType);
+            SetUnoShapeAtSdrObjectFromSvxShape(*pNewObj, _xComponent);
 			break;
         case OBJ_CUSTOMSHAPE:
             pNewObj = OCustomShape::Create(
@@ -494,19 +498,17 @@ uno::Reference< uno::XInterface > OObjectBase::getUnoShapeOf( SdrObject& _rSdrOb
 
 //----------------------------------------------------------------------------
 DBG_NAME( rpt_OCustomShape );
-OCustomShape::OCustomShape(SdrModel& rSdrModel, const uno::Reference< report::XReportComponent>& _xComponent
-                           )
-		  :SdrObjCustomShape(rSdrModel)
-		  ,OObjectBase(_xComponent)
+OCustomShape::OCustomShape(SdrModel& rSdrModel, const uno::Reference< report::XReportComponent>& _xComponent)
+    :SdrObjCustomShape(rSdrModel)
+    ,OObjectBase(_xComponent)
 {
 	DBG_CTOR( rpt_OCustomShape, NULL);
-    impl_setUnoShape( uno::Reference< uno::XInterface >(_xComponent,uno::UNO_QUERY) );
     m_bIsListening = sal_True;
 }
 //----------------------------------------------------------------------------
 OCustomShape::OCustomShape(SdrModel& rSdrModel, const ::rtl::OUString& _sComponentName)
-		  :SdrObjCustomShape(rSdrModel)
-		  ,OObjectBase(_sComponentName)
+    :SdrObjCustomShape(rSdrModel)
+    ,OObjectBase(_sComponentName)
 {
 	DBG_CTOR( rpt_OCustomShape, NULL);
     m_bIsListening = sal_True;
@@ -547,6 +549,15 @@ SdrObject* OCustomShape::CloneSdrObject(SdrModel* pTargetModel) const
 	pClone->copyDataFromSdrObject(*this);
 
 	return pClone;
+}
+
+OCustomShape* OCustomShape::Create(SdrModel& rSdrModel, const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent>& _xComponent)
+{
+    OCustomShape* pNew = new OCustomShape( rSdrModel, _xComponent );
+	OSL_ENSURE(pNew, "Create error (!)");
+    SetUnoShapeAtSdrObjectFromSvxShape(*pNew, _xComponent);
+
+    return pNew;
 }
 
 // -----------------------------------------------------------------------------
@@ -670,7 +681,6 @@ OUnoObject::OUnoObject(SdrModel& rSdrModel
           ,m_nObjectType(_nObjectType)
 {
 	DBG_CTOR( rpt_OUnoObject, NULL);
-    impl_setUnoShape( uno::Reference< uno::XInterface >( _xComponent, uno::UNO_QUERY ) );
 
     if ( rModelName.getLength() )
         impl_initializeModel_nothrow();
@@ -718,6 +728,7 @@ SdrObject* OUnoObject::CloneSdrObject(SdrModel* pTargetModel) const
 		getReportComponent(),
 		String(),
 		GetObjIdentifier());
+    SetUnoShapeAtSdrObjectFromSvxShape(*pClone, getReportComponent());
 	OSL_ENSURE(pClone, "CloneSdrObject error (!)");
 	pClone->copyDataFromSdrObject(*this);
 
@@ -989,8 +1000,6 @@ OOle2Obj::OOle2Obj(
           ,m_bOnlyOnce(true)
 {
 	DBG_CTOR( rpt_OOle2Obj, NULL);
-
-    impl_setUnoShape( uno::Reference< uno::XInterface >( _xComponent, uno::UNO_QUERY ) );
     m_bIsListening = sal_True;
 }
 //----------------------------------------------------------------------------
@@ -1161,9 +1170,9 @@ void OOle2Obj::copyDataFromSdrObject(const SdrObject& rSource)
 			uno::Reference< chart2::data::XDatabaseDataProvider > xSource( lcl_getDataProvider(pSource->GetObjRef()) );
 			uno::Reference< chart2::data::XDatabaseDataProvider > xDest( lcl_getDataProvider(GetObjRef()) );
     
-    if ( xSource.is() && xDest.is() )
+            if ( xSource.is() && xDest.is() )
 			{
-        comphelper::copyProperties(xSource.get(),xDest.get());
+                comphelper::copyProperties(xSource.get(),xDest.get());
 			}
 
 			initializeChart(rRptModel.getReportDefinition().get());
@@ -1179,12 +1188,25 @@ SdrObject* OOle2Obj::CloneSdrObject(SdrModel* pTargetModel) const
 {
 	OOle2Obj* pClone = new OOle2Obj(
 		pTargetModel ? *pTargetModel : getSdrModelFromSdrObject(),
-		getReportComponent(),
+        getReportComponent(),
 		GetObjIdentifier());
 	OSL_ENSURE(pClone, "CloneSdrObject error (!)");
+    SetUnoShapeAtSdrObjectFromSvxShape(*pClone, getReportComponent());
 	pClone->copyDataFromSdrObject(*this);
 
 	return pClone;
+}
+// -----------------------------------------------------------------------------
+OOle2Obj* OOle2Obj::Create( 
+	SdrModel& rSdrModel,
+	const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent >& _xComponent, 
+	sal_uInt16 _nType)
+{
+    OOle2Obj* pNew = new OOle2Obj( rSdrModel, _xComponent, _nType );
+	OSL_ENSURE(pNew, "Create error (!)");
+    SetUnoShapeAtSdrObjectFromSvxShape(*pNew, _xComponent);
+    
+    return pNew;
 }
 // -----------------------------------------------------------------------------
 void OOle2Obj::impl_createDataProvider_nothrow(const uno::Reference< frame::XModel>& _xModel)

@@ -1091,7 +1091,7 @@ void AppendObjs( const SwSpzFrmFmts *pTbl, sal_uLong nIndex,
 					if ( !pSdrObj->getSdrPageFromSdrObject() )
                     {
                         pFmt->getIDocumentDrawModelAccess()->GetDrawModel()->GetPage(0)->
-								InsertObjectToSdrObjList(pSdrObj, pSdrObj->GetNavigationPosition());
+                            InsertObjectToSdrObjList(*pSdrObj, pSdrObj->GetNavigationPosition());
                     }
 
                     SwDrawContact* pNew =

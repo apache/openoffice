@@ -745,12 +745,12 @@ SdrObject* SdrCaptionObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 
 		if(bInsRect) 
 	    {
-			pOL->InsertObjectToSdrObjList(pRect);
+			pOL->InsertObjectToSdrObjList(*pRect);
 		}
 		
 		if(bInsTail) 
 		{
-			pOL->InsertObjectToSdrObjList(pTail, 0);
+			pOL->InsertObjectToSdrObjList(*pTail, 0);
 		}
 	}
 

@@ -321,8 +321,7 @@ void SAL_CALL SvxDrawPage::add( const uno::Reference< drawing::XShape >& xShape 
 	}
 	else if ( !pObj->IsObjectInserted() )
 	{
-		//pObj->SetModel(mpModel);
-		mpPage->InsertObjectToSdrObjList( pObj );
+		mpPage->InsertObjectToSdrObjList(*pObj);
 	}
 
 	pShape->Create( pObj, this );
@@ -895,7 +894,7 @@ SdrObject *SvxDrawPage::CreateSdrObject( const Reference< drawing::XShape > & xS
 {
 	SdrObject* pObj = _CreateSdrObject( xShape );
 	if( pObj && !pObj->IsObjectInserted() )
-		mpPage->InsertObjectToSdrObjList( pObj );
+		mpPage->InsertObjectToSdrObjList(*pObj);
 
 	return pObj;
 }

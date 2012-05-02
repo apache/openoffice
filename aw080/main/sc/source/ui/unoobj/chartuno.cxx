@@ -299,7 +299,7 @@ void SAL_CALL ScChartsObj::addNewByName( const rtl::OUString& aName,
         if( xObj.is())
             xObj->setVisualAreaSize( nAspect, aSz );
 
-		pPage->InsertObjectToSdrObjList( pObj );
+		pPage->InsertObjectToSdrObjList(*pObj);
         pModel->AddUndo( new SdrUndoNewObj( *pObj ) );
 
 		// Dies veranlaesst Chart zum sofortigen Update

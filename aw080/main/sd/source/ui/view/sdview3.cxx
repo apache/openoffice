@@ -496,7 +496,7 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 										sdr::legacy::transformSdrObject(*pObj, aTransform);
 									}
 
-									pPage->InsertObjectToSdrObjList(pObj);
+									pPage->InsertObjectToSdrObjList(*pObj);
 
 									if( IsUndoEnabled() )
 									{
@@ -722,7 +722,7 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 							if( bUndo )
 								BegUndo( String( SdResId(STR_UNDO_DRAGDROP ) ) );
 							
-							rWorkPage.InsertObjectToSdrObjList( pNewObj );
+							rWorkPage.InsertObjectToSdrObjList(*pNewObj);
 							
                             if( bUndo )
 							{

@@ -185,7 +185,7 @@ SdrObjectChangeBroadcaster::~SdrObjectChangeBroadcaster()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-SdrObjUserData::SdrObjUserData(sal_uInt32 nInv, sal_uInt16 nId) //, sal_uInt16 nVer)
+SdrObjUserData::SdrObjUserData(sal_uInt32 nInv, sal_uInt16 nId)
 :	mnInventor(nInv),
 	mnIdentifier(nId)
 {
@@ -327,9 +327,8 @@ SdrObjUserData* SdrObjUserDataList::RemoveUserData(sal_uInt32 nNum)
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrObjGeoData::SdrObjGeoData()
-:	//maObjectRange(),
-	maSdrObjectTransformation(),
-    maObjectAnchor(),
+:	maSdrObjectTransformation(),
+    maObjectAnchor(0.0, 0.0),
     mpGPL(0),
 	mnLayerID(0),
 	mbMoveProtect(false),
@@ -353,7 +352,8 @@ SdrObjPlusData::SdrObjPlusData()
     maObjTitle(),
     maObjDescription(),
     maHTMLName(),
-    maBLIPSizeRange()
+    maBLIPSizeRange(),
+    maObjectAnchor(0.0, 0.0)
 {
 }
 
@@ -415,7 +415,10 @@ SdrObjPlusData* SdrObjPlusData::Clone(SdrObject* pObj1) const
         pNeuPlusData->maBLIPSizeRange = maBLIPSizeRange;
     }
 
-	return pNeuPlusData;
+    // copy object anchor (sw only)
+	pNeuPlusData->maObjectAnchor = maObjectAnchor;
+
+    return pNeuPlusData;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -442,6 +445,14 @@ SdrObjTransformInfoRec::SdrObjTransformInfoRec()
 	mbCanConvToPathLineToArea(true),
 	mbCanConvToPolyLineToArea(true)
 {
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// helper to allow setting the SvxShape (UnoShape) at SdrObject, but only from SvxShape itself
+
+void SVX_DLLPUBLIC SetUnoShapeAtSdrObjectFromSvxShape(SdrObject& rSdrObject, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape)
+{
+	rSdrObject.impl_setUnoShape(_rxUnoShape);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -518,11 +529,11 @@ SdrObjList* SdrObject::getChildrenOfSdrObject() const
 	return 0;
 }
 
-void SdrObject::SetOrdNum(sal_uInt32 nNew) 
+void SdrObject::SetOrdNum(sal_uInt32 nOrdNum) 
 { 
-	if(mnOrdNum != nNew) 
+	if(mnOrdNum != nOrdNum) 
 	{
-		mnOrdNum = nNew; 
+		mnOrdNum = nOrdNum; 
 	}
 }
 
@@ -558,7 +569,6 @@ SdrObject::SdrObject(SdrModel& rSdrModel, const basegfx::B2DHomMatrix& rTransfor
     mpSvxShape(0),
     maWeakUnoShape(),
 	maSdrObjectTransformation(rTransform),
-    maObjectAnchor(),
 	mpParentOfSdrObject(),
     mpPlusData(0),
     mnOrdNum(0),
@@ -907,9 +917,6 @@ const basegfx::B2DRange& SdrObject::getSnapRange() const
 
 void SdrObject::SetChanged()
 {
-	// #110094#-11
-	// For test purposes, use the new ViewContact for change
-	// notification now.
 	ActionChanged();
 
 	if(IsObjectInserted())
@@ -972,10 +979,8 @@ void SdrObject::copyDataFromSdrObject(const SdrObject& rSource)
             mpGluePointProvider = &rSource.GetGluePointProvider().Clone();
         }
 
-	    //maObjectRange = rSource.maObjectRange;
 		maSdrObjectTransformation = rSource.maSdrObjectTransformation.getB2DHomMatrix();
 	    mnLayerID = rSource.mnLayerID;
-	    maObjectAnchor =rSource.maObjectAnchor;
 	    mbMoveProtect = rSource.mbMoveProtect;
 	    mbSizeProtect = rSource.mbSizeProtect;
 	    mbNoPrint = rSource.mbNoPrint;
@@ -1357,10 +1362,25 @@ Pointer SdrObject::GetCreatePointer(const SdrView& /*rSdrView*/) const
 
 void SdrObject::SetAnchorPos(const basegfx::B2DPoint& rPnt) 
 { 
-    if(rPnt != maObjectAnchor) 
-    {
-        maObjectAnchor = rPnt; 
+	if(!rPnt.equalZero() && !mpPlusData)
+	{
+		ImpForcePlusData();
+	}
+
+	if(mpPlusData && mpPlusData->maObjectAnchor != rPnt)
+	{
+        mpPlusData->maObjectAnchor = rPnt; 
     }
+}
+
+basegfx::B2DPoint SdrObject::GetAnchorPos() const 
+{ 
+    if(mpPlusData)
+    {
+        return mpPlusData->maObjectAnchor;
+    }
+
+    return basegfx::B2DPoint(0.0, 0.0); 
 }
 
 void SdrObject::AdjustToMaxRange( const basegfx::B2DRange& rMaxRange, bool /* bShrinkOnly = false */ )
@@ -1545,9 +1565,18 @@ SdrObjGeoData* SdrObject::NewGeoData() const
 
 void SdrObject::SaveGeoData(SdrObjGeoData& rGeo) const
 {
-	rGeo.maSdrObjectTransformation = maSdrObjectTransformation.getB2DHomMatrix(),
-	rGeo.maObjectAnchor = maObjectAnchor;
-	rGeo.mbMoveProtect = mbMoveProtect;
+	rGeo.maSdrObjectTransformation = maSdrObjectTransformation.getB2DHomMatrix();
+
+    if(mpPlusData)
+    {
+        rGeo.maObjectAnchor = mpPlusData->maObjectAnchor;
+    }
+    else
+    {
+        rGeo.maObjectAnchor = basegfx::B2DPoint(0.0, 0.0);
+    }
+	
+    rGeo.mbMoveProtect = mbMoveProtect;
 	rGeo.mbSizeProtect = mbSizeProtect;
 	rGeo.mbNoPrint = mbNoPrint;
 	rGeo.mbVisible = mbVisible;
@@ -1580,8 +1609,18 @@ void SdrObject::RestGeoData(const SdrObjGeoData& rGeo)
 	ActionChanged();
 
 	maSdrObjectTransformation.setB2DHomMatrix(rGeo.maSdrObjectTransformation);
-	maObjectAnchor = rGeo.maObjectAnchor;
-	mbMoveProtect = rGeo.mbMoveProtect;
+	
+    if(!rGeo.maObjectAnchor.equalZero())
+    {
+		ImpForcePlusData();
+    }
+
+    if(mpPlusData)
+    {
+        mpPlusData->maObjectAnchor = rGeo.maObjectAnchor;
+    }
+	
+    mbMoveProtect = rGeo.mbMoveProtect;
 	mbSizeProtect = rGeo.mbSizeProtect;
 	mbNoPrint = rGeo.mbNoPrint;
 	mbVisible = rGeo.mbVisible;
@@ -2111,8 +2150,6 @@ SdrObject* SdrObject::ImpConvertToContourObj(SdrObject* pRet, bool bForceLineDas
 			}
 		}
 
-		//  || aMergedHairlinePolyPolygon.Count() removed; the conversion is ONLY
-		// useful when new closed filled polygons are created
 		if(aMergedLineFillPolyPolygon.count() || (bForceLineDash && aMergedHairlinePolyPolygon.count()))
 		{
 			SfxItemSet aSet(pRet->GetMergedItemSet());
@@ -2197,17 +2234,17 @@ SdrObject* SdrObject::ImpConvertToContourObj(SdrObject* pRet, bool bForceLineDas
 					SdrObject* pClone = pRet->CloneSdrObject();
 
 					pClone->SetMergedItemSet(aSet);
-					pGroup->InsertObjectToSdrObjList(pClone);
+					pGroup->InsertObjectToSdrObjList(*pClone);
 				}
 
 				if(aLinePolygonPart)
 				{
-					pGroup->InsertObjectToSdrObjList(aLinePolygonPart);
+					pGroup->InsertObjectToSdrObjList(*aLinePolygonPart);
 				}
 
 				if(aLineHairlinePart)
 				{
-					pGroup->InsertObjectToSdrObjList(aLineHairlinePart);
+					pGroup->InsertObjectToSdrObjList(*aLineHairlinePart);
 				}
 
 				pRet = pGroup;
@@ -2260,7 +2297,16 @@ SdrObject* SdrObject::ConvertToContourObj(SdrObject* pRet, bool bForceLineDash) 
 		for(sal_uInt32 a(0); a < pObjList2->GetObjCount(); a++)
 		{
 			SdrObject* pIterObj = pObjList2->GetObj(a);
-			pGroup->InsertObjectToSdrObjList(ConvertToContourObj(pIterObj, bForceLineDash));
+            SdrObject* pConverted = ConvertToContourObj(pIterObj, bForceLineDash);
+
+            if(pConverted)
+            {
+    			pGroup->InsertObjectToSdrObjList(*pConverted);
+            }
+            else
+            {
+                OSL_ENSURE(false, "OOps, ConvertToContourObj() returned NO shape (!)");
+            }
 		}
 
 		pRet = pGroup;
@@ -2436,75 +2482,6 @@ void SdrObject::DeleteUserData(sal_uInt32 nNum)
 	}
 }
 
-// ItemPool fuer dieses Objekt wechseln
-void SdrObject::MigrateItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel)
-{
-	if(pSrcPool && pDestPool && (pSrcPool != pDestPool))
-	{
-		GetProperties().MoveToItemPool(pSrcPool, pDestPool, pNewModel);
-	}
-}
-
-bool SdrObject::IsTransparent( bool /*bCheckForAlphaChannel*/) const // TTTT: bool needed?
-{
-	bool bRet = false;
-
-	if(getChildrenOfSdrObject())
-	{
-		SdrObjListIter aIter(*getChildrenOfSdrObject(), IM_DEEPNOGROUPS);
-
-		for(SdrObject* pO = aIter.Next(); pO && !bRet; pO = aIter.Next())
-		{
-			const SfxItemSet& rAttr = pO->GetMergedItemSet();
-
-			if( ( ( (const XFillTransparenceItem&) rAttr.Get( XATTR_FILLTRANSPARENCE ) ).GetValue() ||
-				  ( (const XLineTransparenceItem&) rAttr.Get( XATTR_LINETRANSPARENCE ) ).GetValue()	) ||
-				( ( rAttr.GetItemState( XATTR_FILLFLOATTRANSPARENCE ) == SFX_ITEM_SET ) &&
-				  ( (const XFillFloatTransparenceItem&) rAttr.Get( XATTR_FILLFLOATTRANSPARENCE ) ).IsEnabled() ) )
-			{
-				bRet = true;
-			}
-			else
-			{
-				SdrGrafObj* pGrafObj = dynamic_cast< SdrGrafObj* >(pO);
-
-				if(pGrafObj)
-				{
-					if( ( (const SdrGrafTransparenceItem&) rAttr.Get( SDRATTR_GRAFTRANSPARENCE ) ).GetValue() ||
-						( pGrafObj->GetGraphicType() == GRAPHIC_BITMAP && pGrafObj->GetGraphic().GetBitmapEx().IsAlpha() ) )
-					{
-						bRet = true;
-					}
-				}
-			}
-		}
-	}
-	else
-	{
-		const SfxItemSet& rAttr = GetMergedItemSet();
-
-		if( ( ( (const XFillTransparenceItem&) rAttr.Get( XATTR_FILLTRANSPARENCE ) ).GetValue() ||
-			  ( (const XLineTransparenceItem&) rAttr.Get( XATTR_LINETRANSPARENCE ) ).GetValue()	) ||
-			( ( rAttr.GetItemState( XATTR_FILLFLOATTRANSPARENCE ) == SFX_ITEM_SET ) &&
-			  ( (const XFillFloatTransparenceItem&) rAttr.Get( XATTR_FILLFLOATTRANSPARENCE ) ).IsEnabled() ) )
-		{
-			bRet = true;
-		}
-		else
-		{
-			const SdrGrafObj* pGrafObj = dynamic_cast< const SdrGrafObj* >(this);
-
-			if(pGrafObj)
-			{
-				// #i25616#
-				bRet = pGrafObj->IsObjectTransparent();
-			}
-		}
-	}
-
-	return bRet;
-}
-
 void SdrObject::impl_setUnoShape( const uno::Reference< uno::XInterface >& _rxUnoShape )
 {
 	maWeakUnoShape = _rxUnoShape;
@@ -2610,7 +2587,6 @@ void SdrObject::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransfo
 	}
 }
 
-// return if fill is != XFILL_NONE
 bool SdrObject::HasFillStyle() const
 {
 	return (((const XFillStyleItem&)GetObjectItem(XATTR_FILLSTYLE)).GetValue() != XFILL_NONE);
@@ -2620,7 +2596,6 @@ bool SdrObject::HasLineStyle() const
 {
 	return (((const XLineStyleItem&)GetObjectItem(XATTR_LINESTYLE)).GetValue() != XLINE_NONE);
 }
-
 
 // #i52224#
 // on import of OLE object from MS documents the BLIP size might be retrieved,

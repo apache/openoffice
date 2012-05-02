@@ -1054,7 +1054,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 		pPath = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPoly);
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
-		pGroup->InsertObjectToSdrObjList(pPath);
+		pGroup->InsertObjectToSdrObjList(*pPath);
 		aSet.Put(XLineStartWidthItem(0L));
 		aSet.Put(XLineEndWidthItem(0L));
 		nLoopStart = 1;
@@ -1072,7 +1072,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
-		pGroup->InsertObjectToSdrObjList(pPath);
+		pGroup->InsertObjectToSdrObjList(*pPath);
 
 		aSet.Put(XLineEndWidthItem(nEndWidth));
 		aSet.Put(XLineStartWidthItem(0L));
@@ -1083,7 +1083,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
-		pGroup->InsertObjectToSdrObjList(pPath);
+		pGroup->InsertObjectToSdrObjList(*pPath);
 
 		aSet.Put(XLineEndWidthItem(0L));
 		nLoopStart = 2;
@@ -1101,7 +1101,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
-		pGroup->InsertObjectToSdrObjList(pPath);
+		pGroup->InsertObjectToSdrObjList(*pPath);
 
 		aSet.Put(XLineEndWidthItem(nEndWidth));
 		aSet.Put(XLineStartWidthItem(0L));
@@ -1112,7 +1112,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
-		pGroup->InsertObjectToSdrObjList(pPath);
+		pGroup->InsertObjectToSdrObjList(*pPath);
 
 		aSet.Put(XLineEndWidthItem(0L));
 		nLoopStart = 2;
@@ -1126,7 +1126,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
-		pGroup->InsertObjectToSdrObjList(pPath);
+		pGroup->InsertObjectToSdrObjList(*pPath);
 	}
 
     if(bAddText)

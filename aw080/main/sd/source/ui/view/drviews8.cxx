@@ -296,7 +296,7 @@ void DrawViewShell::FuTemp01(SfxRequest& rReq)
 		case SID_CAPTUREPOINT:
 		{
 			// negative Werte um Aufruf aus Menue zu signalisieren
-			maMousePos = basegfx::B2DPoint(-1.0, -1.0); // TTTT: is this hack needed? Wouldn't a bool be better?
+			maMousePos = basegfx::B2DPoint(-1.0, -1.0);
 		}
 		case SID_SET_SNAPITEM:
 		{

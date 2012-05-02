@@ -905,7 +905,7 @@ SdrObject *SwXFrame::GetOrCreateSdrObject( SwFlyFrmFmt *pFmt )
 			  !pFmt->GetOpaque().GetValue() ) ? pDoc->GetHellId()
 											 : pDoc->GetHeavenId() );
 
-		pDrawModel->GetPage(0)->InsertObjectToSdrObjList( pObject );
+		pDrawModel->GetPage(0)->InsertObjectToSdrObjList(*pObject);
 	}
 
 	return pObject;

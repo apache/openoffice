@@ -221,8 +221,8 @@ void PageObjectPainter::PaintBackground (
     SdPage* pPage = rpDescriptor->GetPage();
     if (pPage != NULL)
     {
-        rDevice.SetFillColor(pPage->GetPageBackgroundColor(NULL));
-        rDevice.SetLineColor(pPage->GetPageBackgroundColor(NULL));
+        rDevice.SetFillColor(pPage->GetPageBackgroundColor());
+        rDevice.SetLineColor(pPage->GetPageBackgroundColor());
         const Rectangle aPreviewBox (mpPageObjectLayouter->GetBoundingBox(
             rpDescriptor,
             PageObjectLayouter::Preview,

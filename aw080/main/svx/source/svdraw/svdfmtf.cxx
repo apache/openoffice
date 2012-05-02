@@ -244,7 +244,7 @@ sal_uInt32 ImpSdrGDIMetaFileImport::DoImport(const GDIMetaFile& rMtf,
 	for (sal_uInt32 i=0; i<nAnz; i++)
 	{
 		 SdrObject* pObj=aTmpList.GetObj(i);
-		 rOL.InsertObjectToSdrObjList(pObj,nInsPos);
+		 rOL.InsertObjectToSdrObjList(*pObj, nInsPos);
 		 nInsPos++;
 
 		if(pProgrInfo != NULL)

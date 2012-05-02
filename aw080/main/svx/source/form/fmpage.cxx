@@ -139,14 +139,14 @@ SdrPage* FmFormPage::CloneSdrPage(SdrModel* pTargetModel) const
 }
 
 //------------------------------------------------------------------
-void FmFormPage::InsertObjectToSdrObjList(SdrObject* pObj, sal_uInt32 nPos)
+void FmFormPage::InsertObjectToSdrObjList(SdrObject& rObj, sal_uInt32 nPos)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmFormPage::InsertObjectToSdrObjList" );
-	SdrPage::InsertObjectToSdrObjList( pObj, nPos );
+	SdrPage::InsertObjectToSdrObjList( rObj, nPos );
 #ifndef SVX_LIGHT
 	FmFormModel* pFmFormModel = dynamic_cast< FmFormModel* >(&getSdrModelFromSdrPage());
 	if(pFmFormModel)
-		pFmFormModel->GetUndoEnv().Inserted(pObj);
+		pFmFormModel->GetUndoEnv().Inserted(&rObj);
 #endif
 }
 

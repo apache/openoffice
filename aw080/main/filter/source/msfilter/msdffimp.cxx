@@ -4189,7 +4189,7 @@ SdrObject* SvxMSDffManager::ImportGroup( const DffRecordHeader& rHd, SvStream& r
 					SdrObject* pTmp = ImportGroup( aRecHd2, rSt, pClientData, aGroupClientAnchor, aGroupChildAnchor, nCalledByGroup + 1, &nShapeId );
 					if ( pTmp && pRet->getChildrenOfSdrObject() )
 					{
-						pRet->getChildrenOfSdrObject()->InsertObjectToSdrObjList( pTmp );
+						pRet->getChildrenOfSdrObject()->InsertObjectToSdrObjList(*pTmp);
 						if( nShapeId )
 							insertShapeId( nShapeId, pTmp );
 					}
@@ -4201,7 +4201,7 @@ SdrObject* SvxMSDffManager::ImportGroup( const DffRecordHeader& rHd, SvStream& r
 					SdrObject* pTmp = ImportShape( aRecHd2, rSt, pClientData, aClientRect, aGlobalChildRect, nCalledByGroup + 1, &nShapeId );
 					if ( pTmp && pRet->getChildrenOfSdrObject() )
 					{
-						pRet->getChildrenOfSdrObject()->InsertObjectToSdrObjList( pTmp );
+						pRet->getChildrenOfSdrObject()->InsertObjectToSdrObjList(*pTmp);
 						if( nShapeId )
 							insertShapeId( nShapeId, pTmp );
 					}
@@ -5411,8 +5411,8 @@ SdrObject* SvxMSDffManager::ProcessObj(
 				if( pTextObj != pObj )
 				{
 					SdrObjGroup* pGroup = new SdrObjGroup(*GetModel());
-					pGroup->InsertObjectToSdrObjList( pObj );
-					pGroup->InsertObjectToSdrObjList( pTextObj );
+					pGroup->InsertObjectToSdrObjList(*pObj);
+					pGroup->InsertObjectToSdrObjList(*pTextObj);
                     if (pOrgObj == pObj)
                         pOrgObj = pGroup;
                     else

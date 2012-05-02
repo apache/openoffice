@@ -3642,7 +3642,7 @@ void XclImpDffConverter::InsertSdrObject( SdrObjList& rObjList, const XclImpDraw
     SdrObjectPtr xSdrObj( pSdrObj );
     if( xSdrObj.is() && rDrawObj.IsInsertSdrObj() )
     {
-        rObjList.InsertObjectToSdrObjList( xSdrObj.release() );
+        rObjList.InsertObjectToSdrObjList(*xSdrObj.release());
         // callback to drawing manager for e.g. tracking of used sheet area
         rConvData.mrDrawing.OnObjectInserted( rDrawObj );
         // callback to drawing object for post processing (use pSdrObj, xSdrObj already released)

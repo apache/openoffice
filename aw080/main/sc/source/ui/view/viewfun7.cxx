@@ -180,7 +180,7 @@ void ScViewFunc::PasteDraw( const basegfx::B2DPoint& rLogicPos, SdrModel* pModel
 
 					if ( !aDiff.equalZero())
 						sdr::legacy::transformSdrObject(*pNeuObj, basegfx::tools::createTranslateB2DHomMatrix(aDiff));
-					pDestPage->InsertObjectToSdrObjList( pNeuObj );
+					pDestPage->InsertObjectToSdrObjList(*pNeuObj);
 					pScDrawView->AddUndo(new SdrUndoInsertObj( *pNeuObj ));
 
 					//	Chart braucht nicht mehr getrennt behandelt zu werden,

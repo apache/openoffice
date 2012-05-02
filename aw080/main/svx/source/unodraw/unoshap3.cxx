@@ -162,7 +162,7 @@ void SAL_CALL Svx3DSceneObject::add( const Reference< drawing::XShape >& xShape 
 
 	if( pSdrShape && pSdrShape->getChildrenOfSdrObject() )
 	{
-		mpObj->getChildrenOfSdrObject()->InsertObjectToSdrObjList( pSdrShape );
+		mpObj->getChildrenOfSdrObject()->InsertObjectToSdrObjList(*pSdrShape);
 
 		if(pShape)
 			pShape->Create( pSdrShape, mxPage.get()  );

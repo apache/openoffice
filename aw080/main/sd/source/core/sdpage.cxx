@@ -527,8 +527,7 @@ SdrObject* SdPage::CreatePresObj(PresObjKind eObjKind, bool bVertical, const bas
 	{
 		pSdrObj->SetEmptyPresObj(bEmptyPresObj);
 		sdr::legacy::SetLogicRange(*pSdrObj, rRange);
-
-		InsertObjectToSdrObjList(pSdrObj);
+		InsertObjectToSdrObjList(*pSdrObj);
 		SdrTextObj* pSdrTextObj = dynamic_cast< SdrTextObj* >(pSdrObj);
 
 		if ( pSdrTextObj )
@@ -823,41 +822,14 @@ void SdPage::Notify(SfxBroadcaster& /*rBC*/, const SfxHint& rHint)
 
         if(pObj)
         {
-            const basegfx::B2DRange& rLast(pSdrBaseHint->GetSdrHintLastBound());
-            SdrHintKind eHint(pSdrBaseHint->GetSdrHintKind());
-
-            if((HINT_OBJCHG_RESIZE == eHint || HINT_OBJCHG_MOVE == eHint) && !rLast.isEmpty())
-            {
-                const basegfx::B2DRange& rCurrent = pObj->getObjectRange(0);
-
-                if(!rCurrent.isEmpty())
-                {
-                    if(HINT_OBJCHG_RESIZE == eHint
-                        && rLast.getWidth() == rCurrent.getWidth() 
-                        && rLast.getHeight() == rCurrent.getHeight())
-                    {
-                        // degrade eHint to HINT_OBJCHG_MOVE when not really resized
-                        eHint = HINT_OBJCHG_MOVE;
-                    }
-
-                    if(HINT_OBJCHG_MOVE == eHint
-                        && rLast.getMinimum() == rCurrent.getMinimum())
-                    {
-                        // degrade eHint to HINT_OBJCHG_ATTR when not really moved
-                        eHint = HINT_OBJCHG_ATTR;
-                    }
-                }
-            }
-
-            HandleChanged(*pObj, eHint, rLast);
+            HandleChanged(*pObj, pSdrBaseHint->GetSdrHintKind());
         }
     }
 }
 
 void SdPage::HandleChanged(
     const SdrObject& rObj,
-    SdrHintKind eHint,
-    const basegfx::B2DRange& /*rOldObjectRange*/)
+    SdrHintKind eHint)
 {
 	if (!maLockAutoLayoutArrangement.isLocked())
 	{

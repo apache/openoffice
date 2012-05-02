@@ -1421,12 +1421,18 @@ SwRect SwFEShell::GetFlyRect() const
 SwRect SwFEShell::GetObjRect() const
 {
 	if( Imp()->HasDrawView() )
-		return Imp()->GetDrawView()->getMarkedObjectSnapRect();
-	else
-	{
-		SwRect aRect;
-		return aRect;
-	}
+    {
+        const basegfx::B2DRange aAllRange(Imp()->GetDrawView()->getMarkedObjectSnapRange());
+
+        if(!aAllRange.isEmpty())
+        {
+			return Rectangle(
+				(sal_Int32)floor(aAllRange.getMinX()), (sal_Int32)floor(aAllRange.getMinY()),
+				(sal_Int32)ceil(aAllRange.getMaxX()), (sal_Int32)ceil(aAllRange.getMaxY()));
+        }
+    }
+
+    return SwRect();
 }
 
 void SwFEShell::SetObjRect( const SwRect& rRect )
@@ -1434,7 +1440,11 @@ void SwFEShell::SetObjRect( const SwRect& rRect )
 	if ( Imp()->HasDrawView() )
 	{
 		const Rectangle aRectangle(rRect.SVRect());
-		Imp()->GetDrawView()->SetMarkedObjSnapRange(basegfx::B2DRange(aRectangle.Left(), aRectangle.Top(), aRectangle.Right(), aRectangle.Bottom()));
+
+        Imp()->GetDrawView()->SetMarkedObjSnapRange(
+            basegfx::B2DRange(
+                aRectangle.Left(), aRectangle.Top(), 
+                aRectangle.Right(), aRectangle.Bottom()));
 		CallChgLnk();	// rufe das AttrChangeNotify auf der UI-Seite.
 	}
 }

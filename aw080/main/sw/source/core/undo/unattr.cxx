@@ -589,7 +589,7 @@ bool SwUndoFmtAttr::RestoreFlyAnchor(::sw::UndoRedoContext & rContext)
         if( pCont->GetAnchorFrm() && !pObj->IsObjectInserted() )
 		{
 			ASSERT( pDoc->GetDrawModel(), "RestoreFlyAnchor without DrawModel" );
-			pDoc->GetDrawModel()->GetPage( 0 )->InsertObjectToSdrObjList( pObj );
+			pDoc->GetDrawModel()->GetPage(0)->InsertObjectToSdrObjList(*pObj);
 		}
 
         // #i108739#

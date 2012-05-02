@@ -691,137 +691,134 @@ FuInsertChart::FuInsertChart(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* 
 
 		if(pPV)
 		{
-
-//        pView->InsertObjectAtView(pObj, *pPV);//this call leads to an immidiate redraw and asks the chart for a visual representation
-
-        // use the page instead of the view to insert, so no undo action is created yet
+            // use the page instead of the view to insert, so no undo action is created yet
 			SdrPage& rInsPage = pPV->getSdrPageFromSdrPageView();
-			rInsPage.InsertObjectToSdrObjList( pObj );
-        pView->UnmarkAllObj();
+			rInsPage.InsertObjectToSdrObjList(*pObj);
+            pView->UnmarkAllObj();
 			pView->MarkObj( *pObj );
-        bool bAddUndo = true;               // add undo action later, unless the dialog is canceled
+            bool bAddUndo = true;               // add undo action later, unless the dialog is canceled
 
-        if (rReq.IsAPI())
-        {
-            if( xChartModel.is() )
-                xChartModel->unlockControllers();
-        }
-        else
-        {
-            //the controller will be unlocked by the dialog when the dialog is told to do so
-
-            // only activate object if not called via API (e.g. macro)
-            pViewShell->ActivateObject( (SdrOle2Obj*) pObj, SVVERB_SHOW );
-
-            //open wizard
-            //@todo get context from calc if that has one
-            uno::Reference< uno::XComponentContext > xContext(
-                ::cppu::defaultBootstrap_InitialComponentContext() );
-            if(xContext.is())
+            if (rReq.IsAPI())
             {
-                uno::Reference< lang::XMultiComponentFactory > xMCF( xContext->getServiceManager() );
-                if(xMCF.is())
+                if( xChartModel.is() )
+                    xChartModel->unlockControllers();
+            }
+            else
+            {
+                //the controller will be unlocked by the dialog when the dialog is told to do so
+
+                // only activate object if not called via API (e.g. macro)
+                pViewShell->ActivateObject( (SdrOle2Obj*) pObj, SVVERB_SHOW );
+
+                //open wizard
+                //@todo get context from calc if that has one
+                uno::Reference< uno::XComponentContext > xContext(
+                    ::cppu::defaultBootstrap_InitialComponentContext() );
+                if(xContext.is())
                 {
-                    uno::Reference< ui::dialogs::XExecutableDialog > xDialog(
-                        xMCF->createInstanceWithContext(
-                            rtl::OUString::createFromAscii("com.sun.star.comp.chart2.WizardDialog")
-                            , xContext), uno::UNO_QUERY);
-                    uno::Reference< lang::XInitialization > xInit( xDialog, uno::UNO_QUERY );
-                    if( xChartModel.is() && xInit.is() )
+                    uno::Reference< lang::XMultiComponentFactory > xMCF( xContext->getServiceManager() );
+                    if(xMCF.is())
                     {
-                        uno::Reference< awt::XWindow > xDialogParentWindow(0);
-                        //	initialize dialog
-                        uno::Sequence<uno::Any> aSeq(2);
-                        uno::Any* pArray = aSeq.getArray();
-                        beans::PropertyValue aParam1;
-                        aParam1.Name = rtl::OUString::createFromAscii("ParentWindow");
-                        aParam1.Value <<= uno::makeAny(xDialogParentWindow);
-                        beans::PropertyValue aParam2;
-                        aParam2.Name = rtl::OUString::createFromAscii("ChartModel");
-                        aParam2.Value <<= uno::makeAny(xChartModel);
-                        pArray[0] <<= uno::makeAny(aParam1);
-                        pArray[1] <<= uno::makeAny(aParam2);
-                        xInit->initialize( aSeq );
-
-                        // try to set the dialog's position so it doesn't hide the chart
-                        uno::Reference < beans::XPropertySet > xDialogProps( xDialog, uno::UNO_QUERY );
-                        if ( xDialogProps.is() )
+                        uno::Reference< ui::dialogs::XExecutableDialog > xDialog(
+                            xMCF->createInstanceWithContext(
+                                rtl::OUString::createFromAscii("com.sun.star.comp.chart2.WizardDialog")
+                                , xContext), uno::UNO_QUERY);
+                        uno::Reference< lang::XInitialization > xInit( xDialog, uno::UNO_QUERY );
+                        if( xChartModel.is() && xInit.is() )
                         {
-                            try
+                            uno::Reference< awt::XWindow > xDialogParentWindow(0);
+                            //	initialize dialog
+                            uno::Sequence<uno::Any> aSeq(2);
+                            uno::Any* pArray = aSeq.getArray();
+                            beans::PropertyValue aParam1;
+                            aParam1.Name = rtl::OUString::createFromAscii("ParentWindow");
+                            aParam1.Value <<= uno::makeAny(xDialogParentWindow);
+                            beans::PropertyValue aParam2;
+                            aParam2.Name = rtl::OUString::createFromAscii("ChartModel");
+                            aParam2.Value <<= uno::makeAny(xChartModel);
+                            pArray[0] <<= uno::makeAny(aParam1);
+                            pArray[1] <<= uno::makeAny(aParam2);
+                            xInit->initialize( aSeq );
+
+                            // try to set the dialog's position so it doesn't hide the chart
+                            uno::Reference < beans::XPropertySet > xDialogProps( xDialog, uno::UNO_QUERY );
+                            if ( xDialogProps.is() )
                             {
-                                //get dialog size:
-                                awt::Size aDialogAWTSize;
-                                if( xDialogProps->getPropertyValue( ::rtl::OUString::createFromAscii("Size") )
-                                    >>= aDialogAWTSize )
+                                try
                                 {
-									const basegfx::B2DVector aDialogScale(aDialogAWTSize.Width, aDialogAWTSize.Height);
-
-									if( aDialogScale.getX() > 0 && aDialogScale.getY() > 0 )
+                                    //get dialog size:
+                                    awt::Size aDialogAWTSize;
+                                    if( xDialogProps->getPropertyValue( ::rtl::OUString::createFromAscii("Size") )
+                                        >>= aDialogAWTSize )
                                     {
-                                        //calculate and set new position
-										const basegfx::B2DRange aOldObjRange(sdr::legacy::GetLogicRange(*pObj));
-										const basegfx::B2DPoint aDialogPos(pViewShell->GetChartDialogPos(aDialogScale, aOldObjRange));
+									    const basegfx::B2DVector aDialogScale(aDialogAWTSize.Width, aDialogAWTSize.Height);
+
+									    if( aDialogScale.getX() > 0 && aDialogScale.getY() > 0 )
+                                        {
+                                            //calculate and set new position
+										    const basegfx::B2DRange aOldObjRange(sdr::legacy::GetLogicRange(*pObj));
+										    const basegfx::B2DPoint aDialogPos(pViewShell->GetChartDialogPos(aDialogScale, aOldObjRange));
                                         
-                                        xDialogProps->setPropertyValue( ::rtl::OUString::createFromAscii("Position"),
-												uno::makeAny( 
-													awt::Point(
-														basegfx::fround(aDialogPos.getX()), 
-														basegfx::fround(aDialogPos.getY())) ) );
+                                            xDialogProps->setPropertyValue( ::rtl::OUString::createFromAscii("Position"),
+												    uno::makeAny( 
+													    awt::Point(
+														    basegfx::fround(aDialogPos.getX()), 
+														    basegfx::fround(aDialogPos.getY())) ) );
+                                        }
                                     }
+                                    //tell the dialog to unlock controller
+                                    xDialogProps->setPropertyValue( ::rtl::OUString::createFromAscii("UnlockControllersOnExecute"),
+                                                uno::makeAny( sal_True ) );
+
                                 }
-                                //tell the dialog to unlock controller
-                                xDialogProps->setPropertyValue( ::rtl::OUString::createFromAscii("UnlockControllersOnExecute"),
-                                            uno::makeAny( sal_True ) );
-
+                                catch( uno::Exception& )
+		                        {
+			                        OSL_ASSERT( "Chart wizard couldn't be positioned automatically\n" );
+		                        }
                             }
-                            catch( uno::Exception& )
-		                    {
-			                    OSL_ASSERT( "Chart wizard couldn't be positioned automatically\n" );
-		                    }
+
+                            sal_Int16 nDialogRet = xDialog->execute();
+                            if( nDialogRet == ui::dialogs::ExecutableDialogResults::CANCEL )
+                            {
+                                // leave OLE inplace mode and unmark
+                                OSL_ASSERT( pViewShell );
+                                OSL_ASSERT( pView );
+                                pViewShell->DeactivateOle();
+                                pView->UnmarkAll();
+
+                                // old page view pointer is invalid after switching sheets
+                                pPV = pView->GetSdrPageView();
+
+                                // remove the chart
+                                OSL_ASSERT( pPV );
+								    SdrPage& rPage = pPV->getSdrPageFromSdrPageView();
+                                OSL_ASSERT( pObj );
+								    rPage.RemoveObjectFromSdrObjList(pObj->GetNavigationPosition());
+
+                                bAddUndo = false;       // don't create the undo action for inserting
+
+                                // leave the draw shell
+                                pViewShell->SetDrawShell( sal_False );
+                            }
+                            else
+                            {
+                                OSL_ASSERT( nDialogRet == ui::dialogs::ExecutableDialogResults::OK );
+                                //@todo maybe move chart to different table
+                            }
                         }
-
-                        sal_Int16 nDialogRet = xDialog->execute();
-                        if( nDialogRet == ui::dialogs::ExecutableDialogResults::CANCEL )
-                        {
-                            // leave OLE inplace mode and unmark
-                            OSL_ASSERT( pViewShell );
-                            OSL_ASSERT( pView );
-                            pViewShell->DeactivateOle();
-                            pView->UnmarkAll();
-
-                            // old page view pointer is invalid after switching sheets
-                            pPV = pView->GetSdrPageView();
-
-                            // remove the chart
-                            OSL_ASSERT( pPV );
-								SdrPage& rPage = pPV->getSdrPageFromSdrPageView();
-                            OSL_ASSERT( pObj );
-								rPage.RemoveObjectFromSdrObjList(pObj->GetNavigationPosition());
-
-                            bAddUndo = false;       // don't create the undo action for inserting
-
-                            // leave the draw shell
-                            pViewShell->SetDrawShell( sal_False );
-                        }
-                        else
-                        {
-                            OSL_ASSERT( nDialogRet == ui::dialogs::ExecutableDialogResults::OK );
-                            //@todo maybe move chart to different table
-                        }
+                        uno::Reference< lang::XComponent > xComponent( xDialog, uno::UNO_QUERY );
+                        if( xComponent.is())
+                            xComponent->dispose();
                     }
-                    uno::Reference< lang::XComponent > xComponent( xDialog, uno::UNO_QUERY );
-                    if( xComponent.is())
-                        xComponent->dispose();
                 }
             }
-        }
 
-        if ( bAddUndo )
-        {
-            // add undo action the same way as in SdrEditView::InsertObjectAtView
-            // (using UndoActionHdl etc.)
-            pView->AddUndo(pDoc->GetSdrUndoFactory().CreateUndoNewObject(*pObj));
-        }
+            if ( bAddUndo )
+            {
+                // add undo action the same way as in SdrEditView::InsertObjectAtView
+                // (using UndoActionHdl etc.)
+                pView->AddUndo(pDoc->GetSdrUndoFactory().CreateUndoNewObject(*pObj));
+            }
 		}
 
         // BM/IHA --

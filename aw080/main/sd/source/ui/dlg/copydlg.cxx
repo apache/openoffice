@@ -302,12 +302,10 @@ IMPL_LINK( CopyDlg, SelectColorHdl, void *, EMPTYARG )
 
 IMPL_LINK( CopyDlg, SetViewData, void*, EMPTYARG )
 {
-	const Rectangle aRect(mpView->getMarkedObjectSnapRect());
+    const basegfx::B2DRange aAllRange(mpView->getMarkedObjectSnapRange());
 
-	SetMetricValue( maMtrFldMoveX, Fraction( aRect.GetWidth() ) /
-									maUIScale, SFX_MAPUNIT_100TH_MM);
-	SetMetricValue( maMtrFldMoveY, Fraction( aRect.GetHeight() ) /
-									maUIScale, SFX_MAPUNIT_100TH_MM);
+    SetMetricValue(maMtrFldMoveX, Fraction(aAllRange.getWidth() / double(maUIScale)), SFX_MAPUNIT_100TH_MM);
+    SetMetricValue(maMtrFldMoveY, Fraction(aAllRange.getHeight() / double(maUIScale)), SFX_MAPUNIT_100TH_MM);
 
 	// Farb-Attribut setzen
 	const SfxPoolItem*	pPoolItem = NULL;

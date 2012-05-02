@@ -739,13 +739,8 @@ EnhancedCustomShape2d::EnhancedCustomShape2d( SdrObject* pAObj ) :
 	// 2D helper shape.
 	ClearItem(SDRATTR_SHADOW);
 
-	// TTTT: do not use GetSnapRect here as in the original since we are inside
+	// Do not use GetSnapRect here as in the original since we are inside
 	// the geometry creation (createViewIndependentPrimitive2DSequence)
-//	Point aP( sdr::legacy::GetSnapRect(*pCustomShapeObj).Center() );
-//	Size aS( sdr::legacy::GetLogicRect(*pCustomShapeObj).GetSize() );
-//	aP.X() -= aS.Width() / 2;
-//	aP.Y() -= aS.Height() / 2;
-//	aLogicRect = Rectangle( aP, aS );
 	maLogicScale = basegfx::absolute(pCustomShapeObj->getSdrObjectScale());
 
 	const rtl::OUString	sType( RTL_CONSTASCII_USTRINGPARAM ( "Type" ) );
@@ -1148,7 +1143,7 @@ basegfx::B2DRange EnhancedCustomShape2d::GetTextRange() const
 			basegfx::fTools::equalZero(maLogicScale.getY()) ? 1.0 : 1.0 / maLogicScale.getY());
 	}
 
-	// TTTT: to keep tight to the original, ignore rotate and shear. If this
+	// To keep tight to the original, ignore rotate and shear. If this
 	// is not wanted, just use getSdrObjectTransformation() instead
 	aTransform.scale(pCustomShapeObj->getSdrObjectScale());
 	aTransform.translate(pCustomShapeObj->getSdrObjectTranslate());
@@ -2159,19 +2154,13 @@ SdrObject* EnhancedCustomShape2d::CreatePathObj( sal_Bool bLineGeometryNeededOnl
 			for (i = 0L; i < vObjectList.size(); i++)
 			{
 				SdrObject* pObj(vObjectList[i]);
-				pNewGroup->InsertObjectToSdrObjList(pObj);
+				pNewGroup->InsertObjectToSdrObjList(*pObj);
 			}
 		}
 		else if(1L == vObjectList.size())
 		{
 			pRet = vObjectList[0L];
 		}
-
-//		if(pRet)
-//		{
-//			sdr::legacy::transformSdrObject(*pRet, 
-//				basegfx::tools::createTranslateB2DHomMatrix(maLogicRange.getMinimum()));
-//		}
 	}
 
 	return pRet;
@@ -2186,9 +2175,6 @@ SdrObject* EnhancedCustomShape2d::CreateObject( sal_Bool bLineGeometryNeededOnly
 		pRet = new SdrRectObj(
 			pCustomShapeObj->getSdrModelFromSdrObject(),
 			pCustomShapeObj->getSdrObjectTransformation());
-//			basegfx::tools::createScaleTranslateB2DHomMatrix(
-//				maLogicRange.getRange(),
-//				maLogicRange.getMinimum()));
 		pRet->SetMergedItemSet( *this );
 	}
 	if ( !pRet )

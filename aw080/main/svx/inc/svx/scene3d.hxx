@@ -81,7 +81,7 @@ protected:
 	// Flag to determine if only selected objects should be drawn
 	bool						bDrawOnlySelected : 1;
 
-	virtual void NewObjectInserted(const E3dObject* p3DObj);
+	virtual void NewObjectInserted(const E3dObject& r3DObj);
 
 	void RebuildLists();
 
@@ -123,8 +123,8 @@ public:
 	virtual void SetTransformChanged();
 
     // 3D-Objekt in die Gruppe einfuegen; Eigentumsuebergang!
-	virtual void Insert3DObj(E3dObject* p3DObj);
-	void Remove3DObj(E3dObject* p3DObj);
+	virtual void Insert3DObj(E3dObject& r3DObj);
+	void Remove3DObj(E3dObject& r3DObj);
 
 	virtual basegfx::B2DPolyPolygon TakeXorPoly() const;
 

@@ -185,7 +185,7 @@ Graphic ViewElementListProvider::GetSymbolGraphic( sal_Int32 nStandardSymbol, co
 	pView->ShowSdrPage(*pPage);
 
     pObj = pObj->CloneSdrObject();
-	pPage->InsertObjectToSdrObjList(pObj);
+	pPage->InsertObjectToSdrObjList(*pObj);
 	pView->MarkObj(*pObj);
     if( pSymbolShapeProperties )
         pObj->SetMergedItemSet(*pSymbolShapeProperties);

@@ -1994,23 +1994,6 @@ const basegfx::B2DRange& SdrMarkView::getMarkedObjectSnapRange() const
 	return maSelection.getSnapRange();
 }
 
-Rectangle SdrMarkView::getMarkedObjectSnapRect() const
-{
-	const basegfx::B2DRange aSnapRange(getMarkedObjectSnapRange());
-
-	if(aSnapRange.isEmpty())
-    {
-		// support empty rectangle
-		return Rectangle();
-	}
-	else
-	{
-		return Rectangle(
-			(sal_Int32)floor(aSnapRange.getMinX()), (sal_Int32)floor(aSnapRange.getMinY()),
-			(sal_Int32)ceil(aSnapRange.getMaxX()), (sal_Int32)ceil(aSnapRange.getMaxY()));
-	}
-}
-
 void SdrMarkView::TakeMarkedDescriptionString(sal_uInt16 nStrCacheID, XubString& rStr, sal_uInt16 nVal, sal_uInt16 nOpt) const
 {
 	if(areSdrObjectsSelected())

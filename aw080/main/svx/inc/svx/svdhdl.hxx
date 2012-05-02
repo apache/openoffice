@@ -295,7 +295,7 @@ protected:
 	bool					mbFineHandles : 1;
 
 public:
-	SdrHdlList(SdrMarkView& rV); // TTTT: use reference?
+	SdrHdlList(SdrMarkView& rV);
 	~SdrHdlList();
 	
 	void Clear();

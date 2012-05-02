@@ -253,7 +253,7 @@ SdrGrafObj* View::InsertGraphic( const Graphic& rGraphic, sal_Int8& rAction,
 				BegUndo(String(SdResId(STR_UNDO_DRAGDROP)));
 
 			SdrPage& rP = pPV->getSdrPageFromSdrPageView();
-			rP.InsertObjectToSdrObjList(pNewGrafObj);
+			rP.InsertObjectToSdrObjList(*pNewGrafObj);
 			
             if( bUndo )
 			{

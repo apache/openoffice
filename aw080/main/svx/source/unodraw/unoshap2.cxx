@@ -244,8 +244,7 @@ void SAL_CALL SvxShapeGroup::add( const uno::Reference< drawing::XShape >& xShap
 		if( pSdrShape->IsObjectInserted() )
 			pSdrShape->getParentOfSdrObject()->RemoveObjectFromSdrObjList( pSdrShape->GetNavigationPosition() );
 
-		mpObj->getChildrenOfSdrObject()->InsertObjectToSdrObjList( pSdrShape );
-		//pSdrShape->SetModel(mpObj->GetModel());
+		mpObj->getChildrenOfSdrObject()->InsertObjectToSdrObjList(*pSdrShape);
 
 		// #85922# It makes no sense to set the layer asked
 		// from the group object since these is an iteration

@@ -409,7 +409,7 @@ void SwHTMLParser::NewMarquee( HTMLTable *pCurTable )
 	if( !pMarquee )
 		return;
 
-	pPg->InsertObjectToSdrObjList( pMarquee );
+	pPg->InsertObjectToSdrObjList(*pMarquee);
 
 	if( aId.Len() )
 		InsertBookmark( aId );

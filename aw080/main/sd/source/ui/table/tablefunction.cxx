@@ -269,7 +269,7 @@ void CreateTableFromRTF( SvStream& rStream, SdDrawDocument& rModel )
 		OUString sTableStyle;
 		apply_table_style( pObj, &rModel, sTableStyle );
 
-		pPage->InsertObjectToSdrObjList( pObj );
+		pPage->InsertObjectToSdrObjList(*pObj);
 
 		sdr::table::SdrTableObj::ImportAsRTF( rStream, *pObj );
 	}

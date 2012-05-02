@@ -399,7 +399,7 @@ void DlgEditor::SetDialog( uno::Reference< container::XNameContainer > xUnoContr
 	pDlgEdForm->SetUnoControlModel(xDlgMod);
 	pDlgEdForm->SetDlgEditor( this );
 	((DlgEdPage*)GetModel()->GetPage(0))->SetDlgEdForm( pDlgEdForm );
-	GetModel()->GetPage(0)->InsertObjectToSdrObjList( pDlgEdForm );
+	GetModel()->GetPage(0)->InsertObjectToSdrObjList(*pDlgEdForm);
     AdjustPageSize();
 	pDlgEdForm->SetRectFromProps();
 	pDlgEdForm->UpdateTabIndices();		// for backward compatibility
@@ -443,7 +443,7 @@ void DlgEditor::SetDialog( uno::Reference< container::XNameContainer > xUnoContr
             pCtrlObj->SetUnoControlModel( xCtrlModel );
             pCtrlObj->SetDlgEdForm( pDlgEdForm );
             pDlgEdForm->AddChild( pCtrlObj );
-            GetModel()->GetPage(0)->InsertObjectToSdrObjList( pCtrlObj );
+            GetModel()->GetPage(0)->InsertObjectToSdrObjList(*pCtrlObj);
             pCtrlObj->SetRectFromProps();
             pCtrlObj->UpdateStep();
             pCtrlObj->StartListening();           
@@ -1081,7 +1081,7 @@ void DlgEditor::Paste()
 						m_xUnoControlDialogModel->insertByName( aOUniqueName , aCtrlModel );
 
 						// insert object into drawing page
-						GetModel()->GetPage(0)->InsertObjectToSdrObjList( pCtrlObj );
+						GetModel()->GetPage(0)->InsertObjectToSdrObjList(*pCtrlObj);
 						pCtrlObj->SetRectFromProps();
 						pCtrlObj->UpdateStep();
                         pDlgEdForm->UpdateTabOrderAndGroups();              // #110559#

@@ -830,7 +830,7 @@ ErrCode DrawViewShell::DoVerb(long nVerb)
 							aName, 
 							aRect );
 
-						pSdrPageView->GetCurrentObjectList()->InsertObjectToSdrObjList( pSdrOle2Obj );
+						pSdrPageView->GetCurrentObjectList()->InsertObjectToSdrObjList(*pSdrOle2Obj);
 						mpDrawView->ReplaceObjectAtView( *pSelected, *pTempSdrGrafObj );
 
 						pSdrOle2Obj->SetLogicRect(aRect);

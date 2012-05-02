@@ -30,6 +30,7 @@
 // global DRawItemPool vor various usages, mostly UNO API implementations
 // which need an ItemPool which lives independent from DrawModels and
 // DrawObjects
+// TTTT: Needed at all?
 
 SVX_DLLPUBLIC void FreeGlobalDrawObjectItemPool();
 SVX_DLLPUBLIC SdrItemPool& GetGlobalDrawObjectItemPool();

@@ -423,7 +423,9 @@ void SdrPolyEditView::RipUpAtMarkedPoints()
 					if(pNeuObj) 
 					{
 						bInsAny = true;
-						GetSdrPageView()->GetCurrentObjectList()->InsertObjectToSdrObjList(pNeuObj, pObj->GetNavigationPosition() + 1);
+						GetSdrPageView()->GetCurrentObjectList()->InsertObjectToSdrObjList(
+                            *pNeuObj, 
+                            pObj->GetNavigationPosition() + 1);
 
 						if( bUndo )
 						{

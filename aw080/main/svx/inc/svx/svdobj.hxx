@@ -85,36 +85,36 @@ class SdrEdgeObj;
 
 enum SdrObjKind 
 {
-	OBJ_NONE = 0   ,  // Abstraktes Objekt (SdrObject)
-	OBJ_GRUP       ,  // Objektgruppe
-	OBJ_LINE       ,  // Strecke
-	OBJ_RECT       ,  // Rechteck ww. mit runden Ecken
-	OBJ_CIRC       ,  // Kreis, Ellipse
-	OBJ_SECT       ,  // Kreissektor
-	OBJ_CARC       ,  // Kreisbogen
-	OBJ_CCUT       ,  // Kreisabschnitt
-	OBJ_POLY       ,  // Polygon, PolyPolygon
-	OBJ_PLIN       ,  // PolyLine
-	OBJ_PATHLINE   ,  // Offene Bezierkurve
-	OBJ_PATHFILL   ,  // Geschlossene Bezierkurve
-	OBJ_FREELINE   ,  // Offene Freihandlinie
-	OBJ_FREEFILL   ,  // Geschlossene Freihandlinie
-	OBJ_TEXT       ,  // Textobjekt
-	OBJ_TITLETEXT  ,  // Titeltext. Spezial-Textobjekt fuer StarDraw
-	OBJ_OUTLINETEXT,  // OutlineText. Spezial-Textobjekt fuer StarDraw
-	OBJ_GRAF       ,  // Fremdgrafik - (StarView Graphic)
-	OBJ_OLE2       ,  // OLE-Objekt
-	OBJ_EDGE       ,  // Verbindungsobjekt fuer Konnektoren
-	OBJ_CAPTION    ,  // Legendenobjekt
-	OBJ_PATHPOLY   ,  // Polygon/PolyPolygon dargestellt durch SdrPathObj
-	OBJ_PATHPLIN   ,  // Polyline dargestellt durch SdrPathObj
-	OBJ_PAGE       ,  // Objekt, das eine SdrPage darstellt
-	OBJ_MEASURE    ,  // Bemassungsobjekt
-	OBJ_FRAME      ,  // staendig aktives OLE (PlugIn-Frame oder sowas)
-	OBJ_UNO        ,  // Universal Network Object im SvDraw-Obj eingepackt
-	OBJ_CUSTOMSHAPE,  // CustomShape
-	OBJ_MEDIA	   ,  // Media shape
-	OBJ_TABLE	   ,  // Table
+	OBJ_NONE = 0   ,  //            Abstraktes Objekt (SdrObject)
+	OBJ_GRUP       ,  //            Objektgruppe
+	OBJ_LINE       ,  // OBJ_POLY   Strecke
+	OBJ_RECT       ,  //            Rechteck ww. mit runden Ecken
+	OBJ_CIRC       ,  //            Kreis, Ellipse
+	OBJ_SECT       ,  // OBJ_CIRC   Kreissektor
+	OBJ_CARC       ,  // OBJ_CIRC   Kreisbogen
+	OBJ_CCUT       ,  // OBJ_CIRC   Kreisabschnitt
+	OBJ_POLY       ,  //            Polygon, PolyPolygon
+	OBJ_PLIN       ,  // OBJ_POLY   PolyLine
+	OBJ_PATHLINE   ,  // OBJ_POLY   Offene Bezierkurve
+	OBJ_PATHFILL   ,  // OBJ_POLY   Geschlossene Bezierkurve
+	OBJ_FREELINE   ,  //            Offene Freihandlinie
+	OBJ_FREEFILL   ,  //            Geschlossene Freihandlinie
+	OBJ_TEXT       ,  //            Textobjekt
+	OBJ_TITLETEXT  ,  //            Titeltext. Spezial-Textobjekt fuer StarDraw
+	OBJ_OUTLINETEXT,  //            OutlineText. Spezial-Textobjekt fuer StarDraw
+	OBJ_GRAF       ,  //            Fremdgrafik - (StarView Graphic)
+	OBJ_OLE2       ,  //            OLE-Objekt
+	OBJ_EDGE       ,  //            Verbindungsobjekt fuer Konnektoren
+	OBJ_CAPTION    ,  //            Legendenobjekt
+	OBJ_PATHPOLY   ,  //            Polygon/PolyPolygon dargestellt durch SdrPathObj
+	OBJ_PATHPLIN   ,  //            Polyline dargestellt durch SdrPathObj
+	OBJ_PAGE       ,  //            Objekt, das eine SdrPage darstellt
+	OBJ_MEASURE    ,  //            Bemassungsobjekt
+	OBJ_FRAME      ,  //            staendig aktives OLE (PlugIn-Frame oder sowas)
+	OBJ_UNO        ,  //            Universal Network Object im SvDraw-Obj eingepackt
+	OBJ_CUSTOMSHAPE,  //            CustomShape
+	OBJ_MEDIA	   ,  //            Media shape
+	OBJ_TABLE	   ,  //            Table
 	OBJ_MAXI
 };
 
@@ -138,7 +138,6 @@ public:
 	basegfx::B2DPoint			maPos;
 	basegfx::B2DPoint			maDownPos;
 	OutputDevice*				mpOut;
-//	const SetOfByte*			mpVisiLayer;
 	const SdrView*				mpSdrView;
 	double						mfTol;
 
@@ -148,7 +147,6 @@ public:
 public:
 	SdrObjMacroHitRec()
 	:	mpOut(0),
-//		mpVisiLayer(0),
 		mpSdrView(0),
 		mfTol(0.0),
 		mbDown(false)
@@ -211,11 +209,10 @@ public:
 class SVX_DLLPUBLIC SdrObjGeoData
 {
 public:
-//	basegfx::B2DRange		maObjectRange;
 	basegfx::B2DHomMatrix	maSdrObjectTransformation;
 	basegfx::B2DPoint		maObjectAnchor;
 	SdrGluePointList*		mpGPL;
-	SdrLayerID					mnLayerID;
+	SdrLayerID				mnLayerID;
 
     /// bitfield
     bool					mbMoveProtect : 1;
@@ -247,6 +244,9 @@ public:
 	// on import of OLE object from MS documents the BLIP size might be retrieved,
 	// in this case the following member is initialized as nonempty rectangle
 	basegfx::B2DRange			maBLIPSizeRange;
+
+	// anchor (only used for SW as extra-translation)
+	basegfx::B2DPoint			maObjectAnchor;
 
 public:
 	SdrObjPlusData();
@@ -349,8 +349,8 @@ private:
 	SdrModel&											mrSdrModelFromSdrObject;
 
     // on-demand members
-	sdr::properties::BaseProperties*								mpProperties;
-	sdr::contact::ViewContact*										mpViewContact;
+	sdr::properties::BaseProperties*                    mpProperties;
+	sdr::contact::ViewContact*							mpViewContact;
     sdr::gluepoint::GluePointProvider*                  mpGluePointProvider;
 
 	virtual sdr::properties::BaseProperties* CreateObjectSpecificProperties();
@@ -361,26 +361,25 @@ private:
 	SvxShape* getSvxShape() const;
 
 	/** do not use directly, always use getSvxShape() if you have to! */
-	SvxShape*   mpSvxShape;
+	SvxShape*                                           mpSvxShape;
 	::com::sun::star::uno::WeakReference< ::com::sun::star::uno::XInterface > maWeakUnoShape;
 
 	// only allow SetOrdNumAtSdrObjectFromSdrObjList to call SetOrdNum
 	friend void SetOrdNumAtSdrObjectFromSdrObjList(SdrObject& rSdrObject, sal_uInt32 nOrdNum);
-	SVX_DLLPRIVATE void SetOrdNum(sal_uInt32 nNew);
+	SVX_DLLPRIVATE void SetOrdNum(sal_uInt32 nOrdNum);
 
 	// only allow SetParentAtSdrObjectFromSdrObjList to call setParentOfSdrObject
 	friend void SetParentAtSdrObjectFromSdrObjList(SdrObject& rSdrObject, SdrObjList* pNew);
 	SVX_DLLPRIVATE void setParentOfSdrObject(SdrObjList* pNew);
 
-protected:
-	// object graphic BoundRectangle in logical, view-independent coordinates
-//	basegfx::B2DRange									maObjectRange;
+    // only allow SetUnoShapeAtSdrObjectFromSvxShape to call impl_setUnoShape from outside SdrObject
+    // SVX_DLLPUBLIC needed for SetUnoShapeAtSdrObjectFromSvxShape since it's used in reportdesigner
+    friend void SVX_DLLPUBLIC SetUnoShapeAtSdrObjectFromSvxShape(SdrObject& rSdrObject, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape);
+    SVX_DLLPRIVATE void impl_setUnoShape(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape);
 
+protected:
 	// object transformation including scale, shearX, rotate and translate
 	basegfx::tools::B2DHomMatrixBufferedOnDemandDecompose	maSdrObjectTransformation;
-
-	// anchor (only used for SW as extra-translation)
-	basegfx::B2DPoint									maObjectAnchor;
 
 	// parent list this object is added to
 	SdrObjList*					mpParentOfSdrObject;
@@ -443,8 +442,6 @@ protected:
     // destructor is protected by purpose, use deleteSdrObjectSafeAndClearPointer(..) 
 	// or deleteSafe to delete SdrObjects
 	virtual ~SdrObject();
-
-    void impl_setUnoShape( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape );
 
 	/// method to copy all data from given source
 	virtual void copyDataFromSdrObject(const SdrObject& rSource);
@@ -527,9 +524,6 @@ public:
 	// access to minimal geometry bounding rectangle (Snap range). This includes all 
 	// geometry as hairlines. Invisible parts are included, text is ignored
 	const basegfx::B2DRange& getSnapRange() const;
-
-//	virtual void recalculateObjectRange();
-//	virtual void invalidateObjectRange();
 
 	// Modified-Flag am Model setzen
 	virtual void SetChanged();
@@ -635,7 +629,7 @@ public:
 
     // #i108739# Anchor read/write access
     virtual void SetAnchorPos(const basegfx::B2DPoint& rPnt);
-    const basegfx::B2DPoint& GetAnchorPos() const { return maObjectAnchor; }
+    basegfx::B2DPoint GetAnchorPos() const;
 
     // #i108739# extra bool flag for SC to get rid of the old Anchor-Hack
     bool getUniversalApplicationFlag01() const { return mbUniversalApplicationFlag01; }
@@ -664,7 +658,6 @@ public:
 	virtual sal_uInt32 GetObjectPointCount() const;
 	virtual basegfx::B2DPoint GetObjectPoint(sal_uInt32 i) const;
 	virtual void SetObjectPoint(const basegfx::B2DPoint& rPnt, sal_uInt32 i);
-	// virtual void NbcSetObjectPoint(const basegfx::B2DPoint& rPnt, sal_uInt32 i);
 
 	// Alle geometrischen Daten holen fuer's Undo/Redo
 	virtual SdrObjGeoData* GetGeoData() const;
@@ -830,32 +823,12 @@ public:
 	// ein delete (FreeMem+Dtor).
 	void DeleteUserData(sal_uInt32 nNum);
 
-	// ItemPool fuer dieses Objekt wechseln
-	void MigrateItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel = 0L);
-
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// access to the UNO representation of the shape
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > getUnoShape();
 	::com::sun::star::uno::WeakReference< ::com::sun::star::uno::XInterface > getWeakUnoShape() const { return maWeakUnoShape; }
 
 	static SdrObject* getSdrObjectFromXShape( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xInt );
-
-	// helper struct for granting access exclusive to SvxShape
-	struct GrantXShapeAccess
-	{
-		friend class SvxShape;
-	private:
-		GrantXShapeAccess() { }
-	};
-
-	// setting the UNO representation is allowed for the UNO representation itself only!
-	void setUnoShape(
-		    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape,
-		    GrantXShapeAccess /*aGrant*/
-	    )
-    {
-        impl_setUnoShape( _rxUnoShape );
-    }
 
     /** retrieves the instance responsible for notifying changes in the properties of the shape associated with
         the SdrObject
@@ -865,8 +838,7 @@ public:
         @throws ::com::sun::star::uno::RuntimeException
             if there does nt yet exists an SvxShape instance associated with the SdrObject.
     */
-    ::svx::PropertyChangeNotifier&
-        getShapePropertyChangeNotifier();
+    ::svx::PropertyChangeNotifier& getShapePropertyChangeNotifier();
 
     /** notifies a change in the given property, to all applicable listeners registered at the associated SvxShape
 
@@ -874,9 +846,7 @@ public:
         exception that it is allowed to be called when there does not yet exist an associated SvxShape - in which
         case the method will silently return without doing anything.
     */
-    void    notifyShapePropertyChange( const ::svx::ShapeProperty _eProperty ) const;
-
-	bool IsTransparent( bool bCheckForAlphaChannel = false ) const;
+    void notifyShapePropertyChange( const ::svx::ShapeProperty _eProperty ) const;
 
 	// return if fill is != XFILL_NONE
 	bool HasFillStyle() const;

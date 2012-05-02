@@ -767,7 +767,7 @@ void SdrUndoRemoveObj::Undo()
 		}
 
 			E3DModifySceneSnapRectUpdater aUpdater(pOwner);
-			mpObjList->InsertObjectToSdrObjList(&mrSdrObject, mnOrdNum);
+			mpObjList->InsertObjectToSdrObjList(mrSdrObject, mnOrdNum);
 		}
 
 		// #i11426#
@@ -830,7 +830,7 @@ void SdrUndoInsertObj::Redo()
 				aAnchorPos = mrSdrObject.GetAnchorPos();
             }
 
-			mpObjList->InsertObjectToSdrObjList(&mrSdrObject, mnOrdNum);
+			mpObjList->InsertObjectToSdrObjList(mrSdrObject, mnOrdNum);
 		}
 
         if ( !aAnchorPos.equalZero() )

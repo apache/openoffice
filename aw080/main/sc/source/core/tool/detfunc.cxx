@@ -503,7 +503,7 @@ sal_Bool ScDetectiveFunc::InsertArrow( SCCOL nCol, SCROW nRow,
 
 		ScDrawLayer::SetAnchor( pBox, SCA_CELL );
 		pBox->SetLayer( SC_LAYER_INTERN );
-		pPage->InsertObjectToSdrObjList( pBox );
+		pPage->InsertObjectToSdrObjList(*pBox);
 		pModel->AddCalcUndo( new SdrUndoInsertObj( *pBox ) );
 
 		ScDrawObjData* pData = ScDrawLayer::GetObjData( *pBox, sal_True );
@@ -547,7 +547,7 @@ sal_Bool ScDetectiveFunc::InsertArrow( SCCOL nCol, SCROW nRow,
 
 	ScDrawLayer::SetAnchor( pArrow, SCA_CELL );
 	pArrow->SetLayer( SC_LAYER_INTERN );
-	pPage->InsertObjectToSdrObjList( pArrow );
+	pPage->InsertObjectToSdrObjList(*pArrow);
 	pModel->AddCalcUndo( new SdrUndoInsertObj( *pArrow ) );
 
 	ScDrawObjData* pData = ScDrawLayer::GetObjData( *pArrow, sal_True );
@@ -583,7 +583,7 @@ sal_Bool ScDetectiveFunc::InsertToOtherTab( SCCOL nStartCol, SCROW nStartRow,
 
 		ScDrawLayer::SetAnchor( pBox, SCA_CELL );
 		pBox->SetLayer( SC_LAYER_INTERN );
-		pPage->InsertObjectToSdrObjList( pBox );
+		pPage->InsertObjectToSdrObjList(*pBox);
 		pModel->AddCalcUndo( new SdrUndoInsertObj( *pBox ) );
 
 		ScDrawObjData* pData = ScDrawLayer::GetObjData( *pBox, sal_True );
@@ -615,13 +615,11 @@ sal_Bool ScDetectiveFunc::InsertToOtherTab( SCCOL nStartCol, SCROW nStartRow,
 		*pModel,
 		OBJ_LINE, 
 		basegfx::B2DPolyPolygon(aTempPoly));
-	// pArrow->NbcSetLogicRect(Rectangle(aStartPos,aEndPos));	//! noetig ??? // TTT: ditto
 
 	pArrow->SetMergedItemSetAndBroadcast(rAttrSet);
-
 	ScDrawLayer::SetAnchor( pArrow, SCA_CELL );
 	pArrow->SetLayer( SC_LAYER_INTERN );
-	pPage->InsertObjectToSdrObjList( pArrow );
+	pPage->InsertObjectToSdrObjList(*pArrow);
 	pModel->AddCalcUndo( new SdrUndoInsertObj( *pArrow ) );
 
 	ScDrawObjData* pData = ScDrawLayer::GetObjData( *pArrow, sal_True );
@@ -692,10 +690,9 @@ void ScDetectiveFunc::DrawCircle( SCCOL nCol, SCROW nRow, ScDetectiveData& rData
 	SfxItemSet& rAttrSet = rData.GetCircleSet();
 
 	pCircle->SetMergedItemSetAndBroadcast(rAttrSet);
-
 	ScDrawLayer::SetAnchor( pCircle, SCA_CELL );
 	pCircle->SetLayer( SC_LAYER_INTERN );
-	pPage->InsertObjectToSdrObjList( pCircle );
+	pPage->InsertObjectToSdrObjList(*pCircle);
 	pModel->AddCalcUndo( new SdrUndoInsertObj( *pCircle ) );
 
 	ScDrawObjData* pData = ScDrawLayer::GetObjData( *pCircle, sal_True );

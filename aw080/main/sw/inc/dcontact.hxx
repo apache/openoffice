@@ -418,6 +418,7 @@ class SwDrawContact : public SwContact
         // Needed data for handling of nested <SfxBroadcaster/Listener/Notify> events in
         // method <_Changed(..)>
         bool mbNotifyActive : 1;
+        
         // event type, which is handled for <mpSdrObjHandledByCurrentUserCall>.
         // Note: value only valid, if <mbNotifyActive> is true.
         SdrHintKind meEventTypeOfCurrentUserCall;
@@ -532,7 +533,7 @@ class SwDrawContact : public SwContact
         SdrObject* GetDrawObjectByAnchorFrm( const SwFrm& _rAnchorFrm );
 
         // new central SdrObject change handler, called from Notify
-        void HandleChanged(const SdrObject& rObj, SdrHintKind eHint, const basegfx::B2DRange& rOldObjectRange);
+        void HandleChanged(const SdrObject& rObj, SdrHintKind eHint);
 
         // virtual method from SfxListener
 		virtual void Notify(SfxBroadcaster& rBC, const SfxHint& rHint);
@@ -542,7 +543,6 @@ class SwDrawContact : public SwContact
         void _Changed(
 			const SdrObject& rObj, 
 			SdrHintKind eHint,
-			const Rectangle* pOldBoundRect, 
 			bool bGroupHierarchy);
 
         //Moved alle SW-Verbindungen zu dem neuen Master.

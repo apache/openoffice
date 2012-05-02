@@ -242,7 +242,7 @@ bool wwZOrderer::InsertObject(SdrObject* pObject, sal_uLong nPos)
 {
     if (!pObject->IsObjectInserted())
     {
-        mpDrawPg->InsertObjectToSdrObjList(pObject, nPos);
+        mpDrawPg->InsertObjectToSdrObjList(*pObject, nPos);
         return true;
     }
     return false;
@@ -366,7 +366,7 @@ void SwWW8ImplReader::ReplaceObj(const SdrObject &rReplaceObj,
         SdrObjList* pObjectList = pGroupObject->getChildrenOfSdrObject();
 
         // copy transformation and layer
-        rSubObj->setSdrObjectTransformation(rReplaceObj->getSdrObjectTransformation());
+        rSubObj.setSdrObjectTransformation(rReplaceObj.getSdrObjectTransformation());
         rSubObj.SetLayer(rReplaceObj.GetLayer());
 
         // altes Objekt raus aus Gruppen-Liste und neues rein

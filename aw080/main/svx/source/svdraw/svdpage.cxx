@@ -144,7 +144,7 @@ void SdrObjList::copyDataFromSdrObjList(const SdrObjList& rSource)
 
 		if(pDO) 
 		{
-			InsertObjectToSdrObjList(pDO, CONTAINER_APPEND);
+			InsertObjectToSdrObjList(*pDO);
 		}
 		else 
 		{
@@ -274,47 +274,40 @@ void SdrObjList::handleContentChange(const SfxHint& /*rHint*/)
 	// default has nothing to do
 }
 
-void SdrObjList::InsertObjectToSdrObjList(SdrObject* pObj, sal_uInt32 nPos)
+void SdrObjList::InsertObjectToSdrObjList(SdrObject& rObj, sal_uInt32 nPos)
 {
-	if(pObj)
-    {
-		SdrObject* pOwningGroupObject = getSdrObjectFromSdrObjList();
+	SdrObject* pOwningGroupObject = getSdrObjectFromSdrObjList();
 
-		// if anchor is used, reset it before grouping (for SW)
-		if(pOwningGroupObject)
-		{
-			pObj->SetAnchorPos(basegfx::B2DPoint());
-		}
-
-		OSL_ENSURE(!pObj->IsObjectInserted(), "Object already has Inserted-State (!)");
-		InsertObjectIntoContainer(*pObj, nPos);
-		SetParentAtSdrObjectFromSdrObjList(*pObj, this);
-
-		{
-			// broadcast after insert
-			const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*pObj, HINT_OBJINSERTED);
-		}
-
-		// inform visible parents
-		sdr::contact::ViewContact* pParent = pObj->GetViewContact().GetParentContact();
-	
-		if(pParent)
-		{
-			pParent->ActionChildInserted(pObj->GetViewContact());
-		}
-    
-		if(pOwningGroupObject)
-		{
-			// repaint needed
-			pOwningGroupObject->ActionChanged();
-		}
-
-		getSdrModelFromSdrObjList().SetChanged();
-	}
-	else
+	// if anchor is used, reset it before grouping (for SW)
+	if(pOwningGroupObject)
 	{
-		OSL_ENSURE(false, "SdrObjList::InsertObjectToSdrObjList(0)");
+		rObj.SetAnchorPos(basegfx::B2DPoint());
 	}
+
+	OSL_ENSURE(!rObj.IsObjectInserted(), "Object already has Inserted-State (!)");
+	InsertObjectIntoContainer(rObj, nPos);
+	SetParentAtSdrObjectFromSdrObjList(rObj, this);
+
+	{
+		// broadcast after insert
+		const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(rObj, HINT_OBJINSERTED);
+	}
+
+	// inform visible parents
+	sdr::contact::ViewContact* pParent = rObj.GetViewContact().GetParentContact();
+	
+	if(pParent)
+	{
+		pParent->ActionChildInserted(rObj.GetViewContact());
+	}
+    
+	if(pOwningGroupObject)
+	{
+		// repaint needed
+		pOwningGroupObject->ActionChanged();
+	}
+
+	getSdrModelFromSdrObjList().SetChanged();
 }
 
 SdrObject* SdrObjList::RemoveObjectFromSdrObjList(sal_uInt32 nObjNum)
@@ -368,7 +361,7 @@ SdrObject* SdrObjList::ReplaceObjectInSdrObjList(SdrObject& rNewObj, sal_uInt32 
 {
 	OSL_ENSURE(nObjNum < maList.size(), "SdrObjList::ReplaceObjectInSdrObjList with invalid index (!)");
 	SdrObject* pRetval = RemoveObjectFromSdrObjList(nObjNum);
-	InsertObjectToSdrObjList(&rNewObj, nObjNum);
+	InsertObjectToSdrObjList(rNewObj, nObjNum);
 
 	return pRetval;
 }
@@ -471,7 +464,7 @@ void SdrObjList::UnGroupObj(sal_uInt32 nObjNum)
 		for(sal_uInt32 i(0); i < nAnz; i++)
 		{
 			SdrObject* pObj = pUngroupObj->RemoveObjectFromSdrObjList(0);
-			InsertObjectToSdrObjList(pObj, nInsertPos);
+			InsertObjectToSdrObjList(*pObj, nInsertPos);
 			nInsertPos++;
 		}
 
@@ -1298,21 +1291,6 @@ SfxStyleSheet* SdrPage::GetTextStyleSheetForObject( SdrObject* pObj ) const
 	return pObj->GetStyleSheet();
 }
 
-bool SdrPage::HasTransparentObjects( bool bCheckForAlphaChannel ) const
-{
-	SdrObjListIter aIter(*this, IM_DEEPNOGROUPS);
-
-	for(SdrObject* pO = aIter.Next(); pO; pO = aIter.Next())
-	{
-		if(pO->IsTransparent(bCheckForAlphaChannel))
-		{
-			return true;
-		}
-	}
-
-	return false;
-}
-
 /** returns an averaged background color of this page */
 // #i75566# GetBackgroundColor -> GetPageBackgroundColor and bScreenDisplay hint value
 Color SdrPage::GetPageBackgroundColor( SdrPageView* pView, bool bScreenDisplay ) const
@@ -1342,13 +1320,6 @@ Color SdrPage::GetPageBackgroundColor( SdrPageView* pView, bool bScreenDisplay )
 	GetDraftFillColor(*pBackgroundFill, aColor);
 
 	return aColor;
-}
-
-/** *deprecated, use GetBackgroundColor with SdrPageView */
-Color SdrPage::GetPageBackgroundColor() const
-// #i75566# GetBackgroundColor -> GetPageBackgroundColor
-{
-	return GetPageBackgroundColor( 0, true );
 }
 
 /** this method returns true if the object from the ViewObjectContact should

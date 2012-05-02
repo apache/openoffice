@@ -742,14 +742,9 @@ SwDrawContact::SwDrawContact( SwFrmFmt* pToRegisterIn, SdrObject* pObj ) :
     SwContact( pToRegisterIn ),
     maAnchoredDrawObj(),
     mbMasterObjCleared( false ),
-    // OD 10.10.2003 #112299#
     mbDisconnectInProgress( false ),
-    // --> OD 2006-01-18 #129959#
     mbNotifyActive( false ),
-    // Note: value of <meEventTypeOfCurrentUserCall> isn't of relevance, because
-    //       <mbUserCallActive> is sal_False.
     meEventTypeOfCurrentUserCall(HINT_OBJCHG_MOVE)
-    // <--
 {
     // clear list containing 'virtual' drawing objects.
     maDrawVirtObjs.clear();
@@ -759,7 +754,7 @@ SwDrawContact::SwDrawContact( SwFrmFmt* pToRegisterIn, SdrObject* pObj ) :
     if ( !pObj->IsObjectInserted() )
     {
         pToRegisterIn->getIDocumentDrawModelAccess()->GetDrawModel()->GetPage(0)->
-                                InsertObjectToSdrObjList( pObj, pObj->GetNavigationPosition() );
+            InsertObjectToSdrObjList(*pObj, pObj->GetNavigationPosition() );
     }
     // <--
 
@@ -1216,8 +1211,7 @@ void lcl_NotifyBackgroundOfObj( SwDrawContact& _rDrawContact,
 
 void SwDrawContact::HandleChanged(
     const SdrObject& rObj,
-    SdrHintKind eHint,
-    const basegfx::B2DRange& rOldObjectRange)
+    SdrHintKind eHint)
 {
     // OD 2004-06-01 #i26791# - no event handling, if existing <ViewShell>
     // is in contruction
@@ -1264,16 +1258,13 @@ void SwDrawContact::HandleChanged(
 		pGroup = dynamic_cast< const SdrObjGroup* >(rObj.getParentOfSdrObject()->getSdrObjectFromSdrObjList());
 	}
 
-	const Rectangle rOldObjectRect(
-			(sal_Int32)floor(rOldObjectRange.getMinX()), (sal_Int32)floor(rOldObjectRange.getMinY()),
-			(sal_Int32)ceil(rOldObjectRange.getMaxX()), (sal_Int32)ceil(rOldObjectRange.getMaxY()));
-	_Changed( rObj, eHint, &rOldObjectRect, false );    //Achtung, ggf. Suizid!
+	_Changed( rObj, eHint, false );    //Achtung, ggf. Suizid!
 
 	while(pGroup)
 	{
 		if(findConnectionToSdrObjectDirect(pGroup) && findConnectionToSdrObjectDirect(pGroup) == this)
 		{
-			_Changed( *pGroup, eHint, &rOldObjectRect, true );
+			_Changed( *pGroup, eHint, true );
 		}
 
 		SdrObjGroup* pUpGroup = 0;
@@ -1305,10 +1296,7 @@ void SwDrawContact::Notify(SfxBroadcaster& /*rBC*/, const SfxHint& rHint)
 
         if(pObj)
         {
-		    const SdrHintKind eHint(pSdrBaseHint->GetSdrHintKind());
-		    const basegfx::B2DRange& rOldBoundRect = pSdrBaseHint->GetSdrHintLastBound();
-
-            HandleChanged(*pObj, eHint, rOldBoundRect);
+            HandleChanged(*pObj, pSdrBaseHint->GetSdrHintKind());
         }
 	}
 }
@@ -1386,7 +1374,6 @@ class NestedUserCallHdl
 void SwDrawContact::_Changed(
 	const SdrObject& rObj,
 	SdrHintKind eHint,
-	const Rectangle* pOldBoundRect,
 	bool bGroupHierarchy)
 {
     // --> OD 2006-01-18 #129959#
@@ -1408,200 +1395,193 @@ void SwDrawContact::_Changed(
     const bool bNotify = !(GetFmt()->GetDoc()->IsInDtor()) &&
                          ( SURROUND_THROUGHT != GetFmt()->GetSurround().GetSurround() ) &&
                          !bAnchoredAsChar;
+    const SwAnchoredDrawObject* pAnchoredDrawObj =
+        static_cast<const SwAnchoredDrawObject*>( GetAnchoredObj( &rObj ) );
+    const Rectangle aOldObjRect = pAnchoredDrawObj ? pAnchoredDrawObj->GetLastObjRect() : Rectangle();
 
     if(bGroupHierarchy
         || HINT_OBJCHG_MOVE == eHint
         || HINT_OBJCHG_RESIZE == eHint)
+    {
+        // OD 2004-04-06 #i26791# - adjust positioning and alignment attributes,
+        // if positioning of drawing object isn't in progress.
+        // --> OD 2005-08-15 #i53320# - no adjust of positioning attributes,
+        // if drawing object isn't positioned.
+        if ( !pAnchoredDrawObj->IsPositioningInProgress() &&
+                !pAnchoredDrawObj->NotYetPositioned() )
+        // <--
         {
-            // --> OD 2004-08-04 #i31698# - improvement:
-            // get instance <SwAnchoredDrawObject> only once
-            const SwAnchoredDrawObject* pAnchoredDrawObj =
-                static_cast<const SwAnchoredDrawObject*>( GetAnchoredObj( &rObj ) );
+            // --> OD 2008-02-18 #i79400#
+            // always invalidate object rectangle inclusive spaces
+            pAnchoredDrawObj->InvalidateObjRectWithSpaces();
             // <--
-            // OD 2004-04-06 #i26791# - adjust positioning and alignment attributes,
-            // if positioning of drawing object isn't in progress.
-            // --> OD 2005-08-15 #i53320# - no adjust of positioning attributes,
-            // if drawing object isn't positioned.
-            if ( !pAnchoredDrawObj->IsPositioningInProgress() &&
-                 !pAnchoredDrawObj->NotYetPositioned() )
-            // <--
+            // --> OD 2005-01-28 #i41324# - notify background before
+            // adjusting position
+            if ( bNotify )
             {
-                // --> OD 2004-09-29 #i34748# - If no last object rectangle is
-                // provided by the anchored object, use parameter <pOldBoundRect>.
-                const Rectangle& aOldObjRect = pAnchoredDrawObj->GetLastObjRect()
-                                               ? *(pAnchoredDrawObj->GetLastObjRect())
-                                               : *(pOldBoundRect);
-                // <--
-                // --> OD 2008-02-18 #i79400#
-                // always invalidate object rectangle inclusive spaces
-                pAnchoredDrawObj->InvalidateObjRectWithSpaces();
-                // <--
-                // --> OD 2005-01-28 #i41324# - notify background before
-                // adjusting position
-                if ( bNotify )
-                {
-                    // --> OD 2004-07-20 #i31573# - correction: Only invalidate
-                    // background of given drawing object.
-                    lcl_NotifyBackgroundOfObj( *this, rObj, &aOldObjRect );
-                }
-                // <--
-                // --> OD 2004-08-04 #i31698# - determine layout direction
-                // via draw frame format.
-                SwFrmFmt::tLayoutDir eLayoutDir =
-                                pAnchoredDrawObj->GetFrmFmt().GetLayoutDir();
-                // <--
-                // use geometry of drawing object
-            SwRect aObjRect( sdr::legacy::GetSnapRect(rObj) );
-                // If drawing object is a member of a group, the adjustment
-                // of the positioning and the alignment attributes has to
-                // be done for the top group object.
+                // --> OD 2004-07-20 #i31573# - correction: Only invalidate
+                // background of given drawing object.
+                lcl_NotifyBackgroundOfObj( *this, rObj, &aOldObjRect );
+            }
+            // <--
+            // --> OD 2004-08-04 #i31698# - determine layout direction
+            // via draw frame format.
+            SwFrmFmt::tLayoutDir eLayoutDir =
+                            pAnchoredDrawObj->GetFrmFmt().GetLayoutDir();
+            // <--
+            // use geometry of drawing object
+            Rectangle aObjRect(sdr::legacy::GetSnapRect(rObj));
+            // If drawing object is a member of a group, the adjustment
+            // of the positioning and the alignment attributes has to
+            // be done for the top group object.
             if ( rObj.GetParentSdrObject() )
-                {
+            {
                 const SdrObject* pGroupObj = rObj.GetParentSdrObject();
                 while ( pGroupObj->GetParentSdrObject() )
-                    {
+                {
                     pGroupObj = pGroupObj->GetParentSdrObject();
-                    }
-                    // use geometry of drawing object
+                }
+                // use geometry of drawing object
                 aObjRect = sdr::legacy::GetSnapRect(*pGroupObj);
-                }
-                SwTwips nXPosDiff(0L);
-                SwTwips nYPosDiff(0L);
-                switch ( eLayoutDir )
+            }
+            SwTwips nXPosDiff(0L);
+            SwTwips nYPosDiff(0L);
+            switch ( eLayoutDir )
+            {
+                case SwFrmFmt::HORI_L2R:
                 {
-                    case SwFrmFmt::HORI_L2R:
-                    {
-                        nXPosDiff = aObjRect.Left() - aOldObjRect.Left();
-                        nYPosDiff = aObjRect.Top() - aOldObjRect.Top();
-                    }
-                    break;
-                    case SwFrmFmt::HORI_R2L:
-                    {
-                        nXPosDiff = aOldObjRect.Right() - aObjRect.Right();
-                        nYPosDiff = aObjRect.Top() - aOldObjRect.Top();
-                    }
-                    break;
-                    case SwFrmFmt::VERT_R2L:
-                    {
-                        nXPosDiff = aObjRect.Top() - aOldObjRect.Top();
-                        nYPosDiff = aOldObjRect.Right() - aObjRect.Right();
-                    }
-                    break;
-                    default:
-                    {
-                        ASSERT( false,
-                                "<SwDrawContact::_Changed(..)> - unsupported layout direction" );
-                    }
+                    nXPosDiff = aObjRect.Left() - aOldObjRect.Left();
+                    nYPosDiff = aObjRect.Top() - aOldObjRect.Top();
                 }
-                SfxItemSet aSet( GetFmt()->GetDoc()->GetAttrPool(),
-                                 RES_VERT_ORIENT, RES_HORI_ORIENT, 0 );
-                const SwFmtVertOrient& rVert = GetFmt()->GetVertOrient();
-                if ( nYPosDiff != 0 )
+                break;
+                case SwFrmFmt::HORI_R2L:
                 {
-
-                    if ( rVert.GetRelationOrient() == text::RelOrientation::CHAR ||
-                         rVert.GetRelationOrient() == text::RelOrientation::TEXT_LINE )
-                    {
-                        nYPosDiff = -nYPosDiff;
-                    }
-                    aSet.Put( SwFmtVertOrient( rVert.GetPos()+nYPosDiff,
-                                               text::VertOrientation::NONE,
-                                               rVert.GetRelationOrient() ) );
+                    nXPosDiff = aOldObjRect.Right() - aObjRect.Right();
+                    nYPosDiff = aObjRect.Top() - aOldObjRect.Top();
                 }
-
-                const SwFmtHoriOrient& rHori = GetFmt()->GetHoriOrient();
-                if ( !bAnchoredAsChar && nXPosDiff != 0 )
+                break;
+                case SwFrmFmt::VERT_R2L:
                 {
-                    aSet.Put( SwFmtHoriOrient( rHori.GetPos()+nXPosDiff,
-                                               text::HoriOrientation::NONE,
-                                               rHori.GetRelationOrient() ) );
+                    nXPosDiff = aObjRect.Top() - aOldObjRect.Top();
+                    nYPosDiff = aOldObjRect.Right() - aObjRect.Right();
                 }
-
-                if ( nYPosDiff ||
-                     ( !bAnchoredAsChar && nXPosDiff != 0 ) )
+                break;
+                default:
                 {
-                    GetFmt()->GetDoc()->SetFlyFrmAttr( *(GetFmt()), aSet );
-                    // keep new object rectangle, to avoid multiple
-                    // changes of the attributes by multiple event from
-                    // the drawing layer - e.g. group objects and its members
-                    // --> OD 2004-09-29 #i34748# - use new method
-                    // <SwAnchoredDrawObject::SetLastObjRect(..)>.
-                    const_cast<SwAnchoredDrawObject*>(pAnchoredDrawObj)
-                                    ->SetLastObjRect( aObjRect.SVRect() );
-                }
-                else if ( aObjRect.SSize() != aOldObjRect.GetSize() )
-                {
-                    _InvalidateObjs();
-                    // --> OD 2004-11-11 #i35007# - notify anchor frame
-                    // of as-character anchored object
-                    if ( bAnchoredAsChar )
-                    {
-                        const_cast<SwAnchoredDrawObject*>(pAnchoredDrawObj)
-                            ->AnchorFrm()->Prepare( PREP_FLY_ATTR_CHG, GetFmt() );
-                    }
-                    // <--
+                    ASSERT( false,
+                            "<SwDrawContact::_Changed(..)> - unsupported layout direction" );
                 }
             }
+            SfxItemSet aSet( GetFmt()->GetDoc()->GetAttrPool(),
+                                RES_VERT_ORIENT, RES_HORI_ORIENT, 0 );
+            const SwFmtVertOrient& rVert = GetFmt()->GetVertOrient();
+            if ( nYPosDiff != 0 )
+            {
+
+                if ( rVert.GetRelationOrient() == text::RelOrientation::CHAR ||
+                        rVert.GetRelationOrient() == text::RelOrientation::TEXT_LINE )
+                {
+                    nYPosDiff = -nYPosDiff;
+                }
+                aSet.Put( SwFmtVertOrient( rVert.GetPos()+nYPosDiff,
+                                            text::VertOrientation::NONE,
+                                            rVert.GetRelationOrient() ) );
+            }
+
+            const SwFmtHoriOrient& rHori = GetFmt()->GetHoriOrient();
+            if ( !bAnchoredAsChar && nXPosDiff != 0 )
+            {
+                aSet.Put( SwFmtHoriOrient( rHori.GetPos()+nXPosDiff,
+                                            text::HoriOrientation::NONE,
+                                            rHori.GetRelationOrient() ) );
+            }
+
+            if ( nYPosDiff ||
+                    ( !bAnchoredAsChar && nXPosDiff != 0 ) )
+            {
+                GetFmt()->GetDoc()->SetFlyFrmAttr( *(GetFmt()), aSet );
+                // keep new object rectangle, to avoid multiple
+                // changes of the attributes by multiple event from
+                // the drawing layer - e.g. group objects and its members
+                // --> OD 2004-09-29 #i34748# - use new method
+                // <SwAnchoredDrawObject::SetLastObjRect(..)>.
+                const_cast<SwAnchoredDrawObject*>(pAnchoredDrawObj)->SetLastObjRect(aObjRect);
+            }
+            else if(aObjRect.GetSize() != aOldObjRect.GetSize())
+            {
+                _InvalidateObjs();
+                // --> OD 2004-11-11 #i35007# - notify anchor frame
+                // of as-character anchored object
+                if ( bAnchoredAsChar )
+                {
+                    const_cast<SwAnchoredDrawObject*>(pAnchoredDrawObj)
+                        ->AnchorFrm()->Prepare( PREP_FLY_ATTR_CHG, GetFmt() );
+                }
+                // <--
+            }
+        }
     }
     else
     {
         switch(eHint)
         {
 		    case HINT_SDROBJECTDYING:
-			    {
-                    if ( bNotify )
-                    {
-                        lcl_NotifyBackgroundOfObj( *this, rObj, pOldBoundRect );
-                        // --> OD 2004-10-27 #i36181# - background of 'virtual'
-                        // drawing objects have also been notified.
-                        NotifyBackgrdOfAllVirtObjs( pOldBoundRect );
-            // <--
-                    }
-                    DisconnectFromLayout( false );
-				    SetMaster( NULL );
-				    delete this;
-                    // --> FME 2006-07-12 #i65784# Prevent memory corruption
-                    aNestedUserCallHdl.DrawContactDeleted();
+			{
+                if ( bNotify )
+                {
+                    lcl_NotifyBackgroundOfObj( *this, rObj, &aOldObjRect );
+                    // --> OD 2004-10-27 #i36181# - background of 'virtual'
+                    // drawing objects have also been notified.
+                    NotifyBackgrdOfAllVirtObjs( &aOldObjRect );
                     // <--
-        break;
-			    }
+                }
+                DisconnectFromLayout( false );
+				SetMaster( NULL );
+				delete this;
+                // --> FME 2006-07-12 #i65784# Prevent memory corruption
+                aNestedUserCallHdl.DrawContactDeleted();
+                // <--
+                break;
+	   	    }
 		    case HINT_OBJINSERTED:
-			    {
-                    // OD 10.10.2003 #112299#
-                    if ( mbDisconnectInProgress )
-                    {
-                        ASSERT( false,
-                                "<SwDrawContact::_Changed(..)> - Insert event during disconnection from layout is invalid." );
-                    }
-                    else
-                    {
-                        ConnectToLayout();
-                        if ( bNotify )
-                        {
-                            lcl_NotifyBackgroundOfObj( *this, rObj, pOldBoundRect );
-                        }
-                    }
-				    break;
-			    }
-		    case HINT_OBJREMOVED:
-			    {
+			{
+                // OD 10.10.2003 #112299#
+                if ( mbDisconnectInProgress )
+                {
+                    ASSERT( false,
+                            "<SwDrawContact::_Changed(..)> - Insert event during disconnection from layout is invalid." );
+                }
+                else
+                {
+                    ConnectToLayout();
                     if ( bNotify )
                     {
-                        lcl_NotifyBackgroundOfObj( *this, rObj, pOldBoundRect );
+                        lcl_NotifyBackgroundOfObj( *this, rObj, &aOldObjRect);
                     }
-                    DisconnectFromLayout( false );
-				    break;
-			    }
+                }
+				break;
+			}
+		    case HINT_OBJREMOVED:
+			{
+                if ( bNotify )
+                {
+                    lcl_NotifyBackgroundOfObj(*this, rObj, &aOldObjRect);
+                }
+                DisconnectFromLayout( false );
+				break;
+			}
 		    case HINT_OBJCHG_ATTR:
-            if ( bNotify )
             {
-                lcl_NotifyBackgroundOfObj( *this, rObj, pOldBoundRect );
+                if ( bNotify )
+                {
+                    lcl_NotifyBackgroundOfObj(*this, rObj, &aOldObjRect);
+                }
+			    break;
             }
-			break;
-        default:
-            break;
-	}
-}
+            default:
+                break;
+	    }
+    }
 }
 
 namespace
@@ -2133,7 +2113,7 @@ void SwDrawContact::InsertMasterIntoDrawPage()
     if ( !GetMaster()->IsObjectInserted() )
     {
         GetFmt()->getIDocumentDrawModelAccess()->GetDrawModel()->GetPage(0)
-                ->InsertObjectToSdrObjList( GetMaster(), GetMaster()->GetNavigationPosition() );
+            ->InsertObjectToSdrObjList(*GetMaster(), GetMaster()->GetNavigationPosition() );
     }
 
     establishConnectionToSdrObject(GetMaster(), this);
@@ -2532,7 +2512,7 @@ void SwDrawVirtObj::AddToDrawingPage()
     if ( 0 != ( pDrawPg = pOrgMasterSdrObj->getSdrPageFromSdrObject() ) )
     {
         // --> OD 2004-08-16 #i27030# - apply order number of referenced object
-        pDrawPg->InsertObjectToSdrObjList( this, GetReferencedObj().GetNavigationPosition() );
+        pDrawPg->InsertObjectToSdrObjList(*this, GetReferencedObj().GetNavigationPosition() );
     }
     else
     {

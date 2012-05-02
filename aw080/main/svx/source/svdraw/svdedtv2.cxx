@@ -1342,7 +1342,7 @@ void SdrEditView::MergeMarkedObjects(SdrMergeMode eMode)
 			SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), OBJ_PATHFILL, aMergePolyPolygonA);
 
 			ImpCopyAttributes(pAttrObj, pPath);
-			pInsOL->InsertObjectToSdrObjList(pPath, nInsPos);
+			pInsOL->InsertObjectToSdrObjList(*pPath, nInsPos);
 			
 			if(bUndo)
 			{
@@ -1544,7 +1544,7 @@ void SdrEditView::CombineMarkedObjects(bool bNoPolyPoly)
 			    pPath->SetMergedItem(XLineStyleItem(XLINE_SOLID));
 		    }
 
-			pInsOL->InsertObjectToSdrObjList(pPath,nInsPos);
+			pInsOL->InsertObjectToSdrObjList(*pPath,nInsPos);
 		
     		if( bUndo )
 			{
@@ -1710,7 +1710,7 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 				SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), (SdrObjKind)pSrcPath->GetObjIdentifier(), basegfx::B2DPolyPolygon(rCandidate));
 				ImpCopyAttributes(pSrcPath, pPath);
 				pLast = pPath;
-				rOL.InsertObjectToSdrObjList(pPath, rPos);
+				rOL.InsertObjectToSdrObjList(*pPath, rPos);
 				
 				if( bUndo )
 				{
@@ -1748,7 +1748,7 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 					SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), eKind, basegfx::B2DPolyPolygon(aNewPolygon));
 					ImpCopyAttributes(pSrcPath, pPath);
 					pLast = pPath;
-					rOL.InsertObjectToSdrObjList(pPath, rPos);
+					rOL.InsertObjectToSdrObjList(*pPath, rPos);
 					
 					if( bUndo )
 					{
@@ -1787,7 +1787,7 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 					}
 				}
 
-				rOL.InsertObjectToSdrObjList(pCandidate, rPos);
+				rOL.InsertObjectToSdrObjList(*pCandidate, rPos);
 				
 				if( bUndo )
 				{
@@ -1832,7 +1832,7 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 					pTextObj->SetMergedItemSet(aTargetItemSet);
 
 					// insert object
-					rOL.InsertObjectToSdrObjList(pTextObj, rPos + 1);
+					rOL.InsertObjectToSdrObjList(*pTextObj, rPos + 1);
 					
 					if( bUndo )
 					{
@@ -2009,7 +2009,7 @@ void SdrEditView::GroupMarked(const SdrObject* pUserGrp)
 					nInsPos--; // InsertPos korregieren
 				}
 
-				pDstLst->InsertObjectToSdrObjList(pObj, 0);
+				pDstLst->InsertObjectToSdrObjList(*pObj, 0);
 				removeSdrObjectFromSelection(*pObj);
 
 				if(!pRefObj1)
@@ -2036,7 +2036,7 @@ void SdrEditView::GroupMarked(const SdrObject* pUserGrp)
 			if(pGrp)
 			{
 				aNewMark.push_back(pGrp);
-				pAktLst->InsertObjectToSdrObjList(pGrp, nInsPos);
+				pAktLst->InsertObjectToSdrObjList(*pGrp, nInsPos);
 				
 				if( bUndo )
 				{
@@ -2145,7 +2145,7 @@ void SdrEditView::UnGroupMarked()
 			        for (no=0; no<nAnz; no++)
 			        {
 						SdrObject* pObj = pSrcLst->RemoveObjectFromSdrObjList(0);
-						pDstLst->InsertObjectToSdrObjList(pObj, nDstCnt);
+						pDstLst->InsertObjectToSdrObjList(*pObj, nDstCnt);
 				
         				if( bUndo )
 						{
@@ -2162,8 +2162,6 @@ void SdrEditView::UnGroupMarked()
 
 			        if( bUndo )
 			        {
-				        // Now it is safe to add the delete-UNDO which trigers the
-				        // MigrateItemPool now only for itself, not for the subobjects.
 				        // nDstCnt is right, because previous inserts move group
 				        // object deeper and increase nDstCnt.
 						AddUndo(getSdrModelFromSdrView().GetSdrUndoFactory().CreateUndoDeleteObject(*pGrp));

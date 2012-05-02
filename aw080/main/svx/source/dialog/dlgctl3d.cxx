@@ -128,7 +128,7 @@ void Svx3DPreviewControl::Construct()
 	rCamera.SetDefaults(basegfx::B3DPoint(0.0, 0.0, fDefaultCamPosZ), aLookAt, fDefaultCamFocal);
 
 	mpScene->SetCamera( rCamera );
-	mpFmPage->InsertObjectToSdrObjList( mpScene );
+	mpFmPage->InsertObjectToSdrObjList(*mpScene);
 
 	basegfx::B3DHomMatrix aRotation;
 	aRotation.rotate(DEG2RAD( 25 ), 0.0, 0.0);
@@ -150,9 +150,6 @@ void Svx3DPreviewControl::Construct()
 
 	// PageView
 	mp3DView->ShowSdrPage( *mpFmPage );
-
-	// mark scene
-	mp3DView->MarkObj( *mpScene );
 }
 
 void Svx3DPreviewControl::Resize()
@@ -200,7 +197,7 @@ void Svx3DPreviewControl::SetObjectType(sal_uInt16 nType)
 		if( mp3DObj )
 		{
 			aSet.Put(mp3DObj->GetMergedItemSet());
-			mpScene->Remove3DObj( mp3DObj );
+			mpScene->Remove3DObj(*mp3DObj);
 			deleteSdrObjectSafeAndClearPointer(mp3DObj);
 		}
 
@@ -227,7 +224,7 @@ void Svx3DPreviewControl::SetObjectType(sal_uInt16 nType)
 			break;
 		}
 
-		mpScene->Insert3DObj( mp3DObj );
+		mpScene->Insert3DObj(*mp3DObj);
 		mp3DObj->SetMergedItemSet(aSet);
 
         Resize();
@@ -327,7 +324,7 @@ void Svx3DLightControl::Construct2()
 			mp3DView->Get3DDefaultAttributes(),
 			basegfx::B3DPoint(-fMaxExpansion, -fMaxExpansion, -fMaxExpansion),
 			basegfx::B3DVector(2.0 * fMaxExpansion, 2.0 * fMaxExpansion, 2.0 * fMaxExpansion));
-		mpScene->Insert3DObj( mpExpansionObject );
+		mpScene->Insert3DObj(*mpExpansionObject);
 		SfxItemSet aSet(mpExpansionObject->GetObjectItemPool());
 		aSet.Put( XLineStyleItem( XLINE_NONE ) );
 		aSet.Put( XFillStyleItem( XFILL_NONE ) );
@@ -353,7 +350,7 @@ void Svx3DLightControl::Construct2()
 			0,
 			0,
 			true);
-		mpScene->Insert3DObj( mpLampBottomObject );
+		mpScene->Insert3DObj(*mpLampBottomObject);
 
 		// half circle with stand
 		basegfx::B2DPolygon a2DHalfCircle;
@@ -371,7 +368,7 @@ void Svx3DLightControl::Construct2()
 			0,
 			0,
 			true);
-		mpScene->Insert3DObj( mpLampShaftObject );
+		mpScene->Insert3DObj(*mpLampShaftObject);
 
 		// initially invisible
 		SfxItemSet aSet(mpLampBottomObject->GetObjectItemPool());
@@ -417,7 +414,7 @@ void Svx3DLightControl::ConstructLightObjects()
 		// get rid of evtl. existing light object
 		if(maLightObjects[a])
 		{
-			mpScene->Remove3DObj(maLightObjects[a]);
+			mpScene->Remove3DObj(*maLightObjects[a]);
 			deleteSdrObjectSafeAndClearPointer(maLightObjects[a]);
 			maLightObjects[a] = 0;
 		}
@@ -435,7 +432,7 @@ void Svx3DLightControl::ConstructLightObjects()
 				mp3DView->Get3DDefaultAttributes(),
 				basegfx::B3DPoint( 0, 0, 0 ),
 				basegfx::B3DVector( fLampSize, fLampSize, fLampSize));
-			mpScene->Insert3DObj(pNewLight);
+			mpScene->Insert3DObj(*pNewLight);
 
 			basegfx::B3DHomMatrix aTransform;
 			aTransform.translate(aDirection);

@@ -1335,8 +1335,8 @@ SdrObject* FmXFormView::implCreateFieldControl( const ::svx::ODataAccessDescript
             return pControl;
 
 		SdrObjGroup* pGroup  = new SdrObjGroup(getView()->getSdrModelFromSdrView());
-		pGroup->InsertObjectToSdrObjList( pLabel );
-		pGroup->InsertObjectToSdrObjList( pControl );
+		pGroup->InsertObjectToSdrObjList(*pLabel);
+		pGroup->InsertObjectToSdrObjList(*pControl);
 
 		if ( bDateNTimeField )
 		{	// so far we created a date field only, but we also need a time field
@@ -1346,8 +1346,8 @@ SdrObject* FmXFormView::implCreateFieldControl( const ::svx::ODataAccessDescript
                         xDataSource, sDataSource, sCommand, nCommandType )
                 )
 			{
-				pGroup->InsertObjectToSdrObjList( pLabel );
-				pGroup->InsertObjectToSdrObjList( pControl );
+				pGroup->InsertObjectToSdrObjList(*pLabel);
+				pGroup->InsertObjectToSdrObjList(*pControl);
 			}
 		}
 
@@ -1448,9 +1448,9 @@ SdrObject* FmXFormView::implCreateXFormsControl( const ::svx::OXFormsDescriptor 
 
 			//////////////////////////////////////////////////////////////////////
 			// group objects
-			SdrObjGroup* pGroup  = new SdrObjGroup(getView()->getSdrModelFromSdrView());
-			pGroup->InsertObjectToSdrObjList(pLabel);
-			pGroup->InsertObjectToSdrObjList(pControl);
+			SdrObjGroup* pGroup = new SdrObjGroup(getView()->getSdrModelFromSdrView());
+			pGroup->InsertObjectToSdrObjList(*pLabel);
+			pGroup->InsertObjectToSdrObjList(*pControl);
 
 			return pGroup;
 		}

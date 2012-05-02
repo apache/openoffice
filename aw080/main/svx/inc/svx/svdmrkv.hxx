@@ -64,23 +64,23 @@ class ImplMarkingOverlay;
 enum SdrHitKind // usage checked
 {
 	SDRHIT_NONE,			// Nicht getroffen, Schnaps gesoffen
-                 SDRHIT_OBJECT,    // Treffer versenkt
-                 SDRHIT_HANDLE,          // Markierungshandle
-                 SDRHIT_HELPLINE,        // Hilfslinie
-                 SDRHIT_GLUEPOINT,       // Klebepunkt
-                 SDRHIT_TEXTEDIT,        // Offene OutlinerView getroffen
-                 SDRHIT_TEXTEDITOBJ,     // Objekt fuer SdrBeginTextEdit (Textbereich)
-                 SDRHIT_URLFIELD,        // Feld im TextObj getroffen (wird gerade nicht editiert)
-                 SDRHIT_MACRO,           // Objekt fuer BegMacroObj
-                 SDRHIT_MARKEDOBJECT,    // Markiertes Objekt (z.B. zum Draggen)
-                 SDRHIT_UNMARKEDOBJECT, // nichtmarkiertes Objekt (z.B. zum markieren)
+    SDRHIT_OBJECT,          // Treffer versenkt
+    SDRHIT_HANDLE,          // Markierungshandle
+    SDRHIT_HELPLINE,        // Hilfslinie
+    SDRHIT_GLUEPOINT,       // Klebepunkt
+    SDRHIT_TEXTEDIT,        // Offene OutlinerView getroffen
+    SDRHIT_TEXTEDITOBJ,     // Objekt fuer SdrBeginTextEdit (Textbereich)
+    SDRHIT_URLFIELD,        // Feld im TextObj getroffen (wird gerade nicht editiert)
+    SDRHIT_MACRO,           // Objekt fuer BegMacroObj
+    SDRHIT_MARKEDOBJECT,    // Markiertes Objekt (z.B. zum Draggen)
+    SDRHIT_UNMARKEDOBJECT,  // nichtmarkiertes Objekt (z.B. zum markieren)
 	SDRHIT_CELL				// hit on a cell inside a table shape (outside of the cells text area)
 };
 
 enum SdrViewEditMode // usage checked
 {
 	SDREDITMODE_EDIT,           // Auch bekannt aus Pfeil- oder Zeigermodus
-                      SDREDITMODE_CREATE,         // Objekterzeugungswerkzeug
+    SDREDITMODE_CREATE,         // Objekterzeugungswerkzeug
     SDREDITMODE_GLUEPOINTEDIT	// Klebepunkteditiermodus
 };
 
@@ -409,7 +409,6 @@ public:
     bool IsMarkGluePoints() const { return (0L != mpMarkGluePointsOverlay); }
     
     const basegfx::B2DRange& getMarkedObjectSnapRange() const;
-    Rectangle getMarkedObjectSnapRect() const; // TTTT: candidate for replacement
     const basegfx::B2DRange& getMarkedPointRange() const;
     const basegfx::B2DRange& getMarkedGluePointRange() const;
 

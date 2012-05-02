@@ -1354,7 +1354,7 @@ SdrObject *SwWW8ImplReader::ReadGroup( WW8_DPHEAD* pHd, const WW8_DO* pDo,
         if (SdrObject *pObject = ReadGrafPrimitive(nLeft, pDo, aSet))
         {
 			// first add and then set ItemSet
-            pSdrObjGroup->InsertObjectToSdrObjList(pObject, 0);
+            pSdrObjGroup->InsertObjectToSdrObjList(*pObject, 0);
             pObject->SetMergedItemSetAndBroadcast(aSet);
         }
     }
@@ -2927,7 +2927,7 @@ SwFrmFmt* SwWW8ImplReader::MungeTextIntoDrawBox(SdrObject* pTrueObject,
         }
 
         pSdrTextObj->SetLayer(pThisGroup->GetLayer());
-        pThisGroup->InsertObjectToSdrObjList(pSdrTextObj);
+        pThisGroup->InsertObjectToSdrObjList(*pSdrTextObj);
     }
     else
         pSdrTextObj = dynamic_cast< SdrTextObj* >( pRecord->pObj);

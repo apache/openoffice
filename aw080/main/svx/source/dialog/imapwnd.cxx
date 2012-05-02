@@ -147,7 +147,7 @@ void IMapWindow::ReplaceImageMap( const ImageMap& rImageMap, sal_Bool /*bScaleTo
 
 		if ( pNewObj )
 		{
-			pPage->InsertObjectToSdrObjList( pNewObj );
+			pPage->InsertObjectToSdrObjList(*pNewObj);
 		}
 	}
 }

@@ -67,7 +67,7 @@ public:
                 ,const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >& _xSection
                 ,bool bMasterPage = false );
 
-    virtual void InsertObjectToSdrObjList(SdrObject* pObj, sal_uInt32 nPos = CONTAINER_APPEND);
+    virtual void InsertObjectToSdrObjList(SdrObject& rObj, sal_uInt32 nPos = CONTAINER_APPEND);
     virtual SdrObject* RemoveObjectFromSdrObjList(sal_uInt32 nObjNum);
 
 	/** returns the index inside the object list which belongs to the report component.

@@ -1302,7 +1302,7 @@ void SwRTFParser::ReadDrawingObject()
         aFlySet.Put( aVert );
 
         SdrPage* pDrawPg = pDrawModel->GetPage(0);
-        pDrawPg->InsertObjectToSdrObjList(pStroke, 0);
+        pDrawPg->InsertObjectToSdrObjList(*pStroke, 0);
 
         sdr::legacy::SetSnapRect(*pStroke, aRect);
 
@@ -1336,7 +1336,7 @@ void SwRTFParser::InsertShpObject(SdrObject* pStroke, int _nZOrder)
         pDoc->GetOrCreateDrawModel();
         SdrModel* pDrawModel  = pDoc->GetDrawModel();
         SdrPage* pDrawPg = pDrawModel->GetPage(0);
-        pDrawPg->InsertObjectToSdrObjList(pStroke);
+        pDrawPg->InsertObjectToSdrObjList(*pStroke);
         pDrawPg->SetNavigationPosition(pStroke->GetNavigationPosition(), _nZOrder);
         /* SwFrmFmt* pRetFrmFmt = */pDoc->Insert(*pPam, *pStroke, &aFlySet, NULL);
 }

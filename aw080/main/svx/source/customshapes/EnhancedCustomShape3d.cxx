@@ -463,7 +463,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 							p3DObj->SetMergedItem( XFillBitmapItem( String(), aFillBmp ) );
 						}
 					}
-					pScene->Insert3DObj( p3DObj );
+					pScene->Insert3DObj(*p3DObj);
 					p3DObj = new E3dExtrudeObj( pCustomShape->getSdrModelFromSdrObject(), a3DDefaultAttr, aPolyPoly, fDepth );
 					p3DObj->SetLayer( pShape2d->GetLayer() );
 					p3DObj->SetMergedItemSet( aSet );
@@ -472,7 +472,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 					p3DObj->SetMergedItem( XFillStyleItem( XFILL_SOLID ) );
 					p3DObj->SetMergedItem( Svx3DCloseFrontItem( sal_False ) );
 					p3DObj->SetMergedItem( Svx3DCloseBackItem( sal_False ) );
-					pScene->Insert3DObj( p3DObj );
+					pScene->Insert3DObj(*p3DObj);
 					p3DObj = new E3dExtrudeObj( pCustomShape->getSdrModelFromSdrObject(), a3DDefaultAttr, aPolyPoly, 10 );
 					p3DObj->SetLayer( pShape2d->GetLayer() );
 					p3DObj->SetMergedItemSet( aSet );
@@ -492,7 +492,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 					p3DObj->SetMergedItem( Svx3DCloseFrontItem( sal_False ) );
 					p3DObj->SetMergedItem( Svx3DCloseBackItem( sal_False ) );
 				}
-				pScene->Insert3DObj( p3DObj );
+				pScene->Insert3DObj(*p3DObj);
 				bSceneHasObjects = sal_True;
 			}
 		}
@@ -671,7 +671,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			std::vector< E3dCompoundObject* >::iterator aObjectListIter( aPlaceholderObjectList.begin() );
 			while ( aObjectListIter != aPlaceholderObjectList.end() )
 			{
-				pScene->Remove3DObj( *aObjectListIter );
+				pScene->Remove3DObj( **aObjectListIter );
 				deleteSdrObjectSafeAndClearPointer(*aObjectListIter++);
 			}
 		}

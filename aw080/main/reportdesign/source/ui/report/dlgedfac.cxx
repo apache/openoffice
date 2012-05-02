@@ -64,8 +64,8 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 				pObjFactory->mpNewObj = new OUnoObject( 
 					*pObjFactory->mpTargetModel,
 					SERVICE_FIXEDTEXT
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
-													    ,OBJ_DLG_FIXEDTEXT);
+					,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
+					,OBJ_DLG_FIXEDTEXT);
 				    break;
 			}
 		    case OBJ_DLG_IMAGECONTROL:
@@ -73,8 +73,8 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 				pObjFactory->mpNewObj = new OUnoObject( 
 					*pObjFactory->mpTargetModel,
 					SERVICE_IMAGECONTROL
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
-														,OBJ_DLG_IMAGECONTROL);
+					,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
+					,OBJ_DLG_IMAGECONTROL);
 				    break;
 			}
 		    case OBJ_DLG_FORMATTEDFIELD:
@@ -82,24 +82,24 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 				pObjFactory->mpNewObj = new OUnoObject( 
 					*pObjFactory->mpTargetModel,
 					SERVICE_FORMATTEDFIELD
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
-														,OBJ_DLG_FORMATTEDFIELD);
+					,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
+					,OBJ_DLG_FORMATTEDFIELD);
 				    break;
 			}
             case OBJ_DLG_VFIXEDLINE:
             case OBJ_DLG_HFIXEDLINE:
-                {
+            {
                 OUnoObject* pObj = new OUnoObject( 
 					*pObjFactory->mpTargetModel,
 					SERVICE_FIXEDLINE
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel")) 
+                    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel")) 
 					,pObjFactory->mnIdentifier);
                 pObjFactory->mpNewObj = pObj;
                 if ( pObjFactory->mnIdentifier == OBJ_DLG_HFIXEDLINE )
-                    {
-                        uno::Reference<beans::XPropertySet> xProp = pObj->getAwtComponent();
-                        xProp->setPropertyValue( PROPERTY_ORIENTATION, uno::makeAny(sal_Int32(0)) );
-                    }
+                {
+                    uno::Reference<beans::XPropertySet> xProp = pObj->getAwtComponent();
+                    xProp->setPropertyValue( PROPERTY_ORIENTATION, uno::makeAny(sal_Int32(0)) );
+                }
                 break;
             }
             case OBJ_CUSTOMSHAPE:
@@ -129,8 +129,8 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
             {
 			    OSL_ENSURE(0,"Unknown object id");
 			    break;
+	        }
 	    }
-	}
 	}
 
 	return 0;

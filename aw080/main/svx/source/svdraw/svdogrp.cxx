@@ -421,7 +421,7 @@ SdrObject* SdrObjGroup::DoConvertToPolygonObject(bool bBezier, bool bAddText) co
         // pResult can be NULL e.g. for empty objects
         if(pResult)
 		{
-            pGroup->InsertObjectToSdrObjList(pResult);
+            pGroup->InsertObjectToSdrObjList(*pResult);
 		}
 	}
 

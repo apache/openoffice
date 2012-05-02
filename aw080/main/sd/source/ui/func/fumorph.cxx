@@ -429,13 +429,13 @@ void FuMorph::ImpInsertPolygons(List& rPolyPolyList3D, bool bAttributeFade,
 
 		pNewObj->SetMergedItemSetAndBroadcast(aSet);
 
-    	pObjGroup->InsertObjectToSdrObjList( pNewObj, LIST_APPEND );
+    	pObjGroup->InsertObjectToSdrObjList(*pNewObj);
 	}
 
 	if ( nCount )
 	{
-	    pObjGroup->InsertObjectToSdrObjList( pObj1->CloneSdrObject(), 0 );
-		pObjGroup->InsertObjectToSdrObjList( pObj2->CloneSdrObject(), LIST_APPEND );
+	    pObjGroup->InsertObjectToSdrObjList(*pObj1->CloneSdrObject(), 0 );
+		pObjGroup->InsertObjectToSdrObjList(*pObj2->CloneSdrObject());
 		mpView->DeleteMarked();
 		mpView->InsertObjectAtView( *pObjGroup, SDRINSERT_SETDEFLAYER );
 	}

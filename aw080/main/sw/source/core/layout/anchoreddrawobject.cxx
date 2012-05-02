@@ -224,9 +224,7 @@ bool SwObjPosOscillationControl::OscillationDetected()
 SwAnchoredDrawObject::SwAnchoredDrawObject() :
     SwAnchoredObject(),
     mbValidPos( false ),
-    // --> OD 2004-09-29 #i34748#
-    mpLastObjRect( 0L ),
-    // <--
+    maLastObjRect(),
     mbNotYetAttachedToAnchorFrame( true ),
     // --> OD 2004-08-09 #i28749#
     mbNotYetPositioned( true ),
@@ -239,9 +237,6 @@ SwAnchoredDrawObject::SwAnchoredDrawObject() :
 
 SwAnchoredDrawObject::~SwAnchoredDrawObject()
 {
-    // --> OD 2004-11-03 - follow-up of #i34748#
-    delete mpLastObjRect;
-    // <--
 }
 
 // --> OD 2006-03-17 #i62875#
@@ -760,24 +755,22 @@ void SwAnchoredDrawObject::AdjustPositioningAttr( const SwFrm* _pNewAnchorFrm,
     GetFrmFmt().SetFmtAttr( SwFmtVertOrient( nVertRelPos, text::VertOrientation::NONE, text::RelOrientation::FRAME ) );
 }
 
-// --> OD 2004-09-29 #i34748# - change return type
-const Rectangle* SwAnchoredDrawObject::GetLastObjRect() const
+const Rectangle& SwAnchoredDrawObject::GetLastObjRect() const
 {
-    return mpLastObjRect;
+    return maLastObjRect;
 }
-// <--
 
-// --> OD 2004-09-29 #i34748# - change return type.
-// If member <mpLastObjRect> is NULL, create one.
-void SwAnchoredDrawObject::SetLastObjRect( const Rectangle& _rNewLastRect )
+void SwAnchoredDrawObject::SetLastObjRect(const Rectangle& _rNewLastRect)
 {
-    if ( !mpLastObjRect )
+    if(maLastObjRect.IsEmpty())
     {
-        mpLastObjRect = new Rectangle;
+        maLastObjRect = _rNewLastRect;
     }
-    *(mpLastObjRect) = _rNewLastRect;
+    else if(maLastObjRect != _rNewLastRect)
+    {
+        maLastObjRect = _rNewLastRect;
+    }
 }
-// <--
 
 void SwAnchoredDrawObject::ObjectAttachedToAnchorFrame()
 {

@@ -1311,7 +1311,7 @@ sal_Bool GalleryTheme::InsertTransferable( const uno::Reference< datatransfer::X
 							*pGraphic );
 
 					    pGrafObj->InsertUserData( new SgaIMapInfo( aImageMap ) );
-					    pPage->InsertObjectToSdrObjList( pGrafObj );
+					    pPage->InsertObjectToSdrObjList(*pGrafObj);
 					    bRet = InsertModel( *aModel.GetModel(), nInsertPos );
                     }
 				}

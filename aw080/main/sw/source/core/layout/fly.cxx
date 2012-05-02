@@ -439,7 +439,7 @@ SwVirtFlyDrawObj* SwFlyFrm::CreateNewRef( SwFlyDrawContact *pContact )
     else
     {
         pContact->GetFmt()->getIDocumentDrawModelAccess()->GetDrawModel()->GetPage( 0 )->
-			InsertObjectToSdrObjList( pDrawObj, _GetOrdNumForNewRef( pContact ) );
+			InsertObjectToSdrObjList(*pDrawObj, _GetOrdNumForNewRef( pContact ) );
     }
     // <--
     // --> OD 2004-12-13 #i38889# - assure, that new <SwVirtFlyDrawObj> instance

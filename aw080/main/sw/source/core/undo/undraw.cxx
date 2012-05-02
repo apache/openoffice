@@ -228,7 +228,7 @@ void SwUndoDrawGroup::UndoImpl(::sw::UndoRedoContext &)
 	pObjArr->pObj = pObj;
 
 	// object will destroy itself
-	pDrawContact->HandleChanged( *pObj, HINT_SDROBJECTDYING, pObj->getObjectRange(0) );
+	pDrawContact->HandleChanged(*pObj, HINT_SDROBJECTDYING);
     resetConnectionToSdrObject(pObj);
 
 	::lcl_SaveAnchor( pFmt, pObjArr->nNodeIdx );
@@ -282,7 +282,7 @@ void SwUndoDrawGroup::RedoImpl(::sw::UndoRedoContext &)
 		SwDrawContact *pContact = (SwDrawContact*)findConnectionToSdrObject(pObj);
 
 	    // object will destroy itself
-		pContact->HandleChanged( *pObj, HINT_SDROBJECTDYING, pObj->getObjectRange(0) );
+		pContact->HandleChanged(*pObj, HINT_SDROBJECTDYING);
         resetConnectionToSdrObject(pObj);
 
 		::lcl_SaveAnchor( rSave.pFmt, rSave.nNodeIdx );
@@ -348,7 +348,7 @@ SwUndoDrawUnGroup::SwUndoDrawUnGroup( SdrObjGroup* pObj )
 	pObjArr->pFmt = pFmt;
 
     // object will destroy itself
-	pContact->HandleChanged( *pObj, HINT_SDROBJECTDYING, pObj->getObjectRange(0) );
+	pContact->HandleChanged(*pObj, HINT_SDROBJECTDYING);
 	resetConnectionToSdrObject(pObj);
 
 	::lcl_SaveAnchor( pFmt, pObjArr->nNodeIdx );
@@ -421,7 +421,7 @@ void SwUndoDrawUnGroup::RedoImpl(::sw::UndoRedoContext &)
 	SwDrawContact* pContact = (SwDrawContact*)pFmt->FindContactObj();
 
 	    // object will destroy itself
-	pContact->HandleChanged( *pObjArr->pObj, HINT_SDROBJECTDYING, pObjArr->pObj->getObjectRange(0) );
+	pContact->HandleChanged(*pObjArr->pObj, HINT_SDROBJECTDYING);
     resetConnectionToSdrObject(pObjArr->pObj);
 
 	::lcl_SaveAnchor( pFmt, pObjArr->nNodeIdx );
@@ -480,7 +480,7 @@ SwUndoDrawUnGroupConnectToLayout::UndoImpl(::sw::UndoRedoContext &)
         {
             // deletion of instance <pDrawContact> and thus disconnection from
             // the Writer layout.
-            pDrawContact->HandleChanged( *pObj, HINT_SDROBJECTDYING, pObj->getObjectRange(0) );
+            pDrawContact->HandleChanged(*pObj, HINT_SDROBJECTDYING);
             resetConnectionToSdrObject(pObj);
         }
     }
@@ -542,7 +542,7 @@ void SwUndoDrawDelete::UndoImpl(::sw::UndoRedoContext & rContext)
 		rFlyFmts.Insert( rSave.pFmt, rFlyFmts.Count() );
 		SdrObject *pObj = rSave.pObj;
 		SwDrawContact *pContact = new SwDrawContact( rSave.pFmt, pObj );
-		pContact->_Changed( *pObj, HINT_OBJCHG_RESIZE, NULL, false );
+		pContact->_Changed( *pObj, HINT_OBJCHG_RESIZE, false );
         // #i45718# - follow-up of #i35635# move object to visible layer
         pContact->MoveObjToVisibleLayer( pObj );
         // #i45952# - notify that position attributes are already set
@@ -568,7 +568,7 @@ void SwUndoDrawDelete::RedoImpl(::sw::UndoRedoContext & rContext)
 		SwDrawContact *pContact = (SwDrawContact*)findConnectionToSdrObject(pObj);
 		SwDrawFrmFmt *pFmt = (SwDrawFrmFmt*)pContact->GetFmt();
 		// object will destroy itself
-		pContact->HandleChanged( *pObj, HINT_SDROBJECTDYING, pObj->getObjectRange(0) );
+		pContact->HandleChanged(*pObj, HINT_SDROBJECTDYING);
         resetConnectionToSdrObject(pObj);
 
        	// notify UNO objects to decouple

@@ -229,14 +229,14 @@ void OReportPage::resetSpecialMode()
     m_bSpecialInsertMode = false;
 }
 // -----------------------------------------------------------------------------
-void OReportPage::InsertObjectToSdrObjList(SdrObject* pObj, sal_uLong nPos)
+void OReportPage::InsertObjectToSdrObjList(SdrObject& rObj, sal_uLong nPos)
 {
-    SdrPage::InsertObjectToSdrObjList(pObj, nPos);
+    SdrPage::InsertObjectToSdrObjList(rObj, nPos);
 
-    OUnoObject* pUnoObj = dynamic_cast< OUnoObject* >( pObj );
+    OUnoObject* pUnoObj = dynamic_cast< OUnoObject* >( &rObj );
     if (getSpecialMode())
     {
-        m_aTemporaryObjectList.push_back(pObj);
+        m_aTemporaryObjectList.push_back(&rObj);
         return;
     }
     
@@ -250,7 +250,7 @@ void OReportPage::InsertObjectToSdrObjList(SdrObject* pObj, sal_uLong nPos)
 
     // this code is evil, but what else shall I do
     reportdesign::OSection* pSection = reportdesign::OSection::getImplementation(m_xSection);
-    uno::Reference< drawing::XShape> xShape(pObj->getUnoShape(),uno::UNO_QUERY);
+    uno::Reference< drawing::XShape> xShape(rObj.getUnoShape(),uno::UNO_QUERY);
     pSection->notifyElementAdded(xShape);
 
     //// check if we are a shape
@@ -263,7 +263,7 @@ void OReportPage::InsertObjectToSdrObjList(SdrObject* pObj, sal_uLong nPos)
 
     // now that the shape is inserted into its structures, we can allow the OObjectBase
     // to release the reference to it
-    OObjectBase* pObjectBase = dynamic_cast< OObjectBase* >( pObj );
+    OObjectBase* pObjectBase = dynamic_cast< OObjectBase* >( &rObj );
     OSL_ENSURE( pObjectBase, "OReportPage::InsertObjectToSdrObjList: what is being inserted here?" );
     if ( pObjectBase )
         pObjectBase->releaseUnoShape();

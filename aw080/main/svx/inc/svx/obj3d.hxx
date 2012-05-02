@@ -94,7 +94,7 @@ private:
 	bool						mbTfHasChanged : 1;
 	bool						mbIsSelected : 1;
 
-	virtual void NewObjectInserted(const E3dObject* p3DObj);
+	virtual void NewObjectInserted(const E3dObject& r3DObj);
     virtual basegfx::B3DRange RecalcBoundVolume() const;
 
 	// E3dObject is only a helper class (for E3DScene and E3DCompoundObject) 

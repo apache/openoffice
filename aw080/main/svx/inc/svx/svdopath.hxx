@@ -54,11 +54,11 @@ enum SdrPathObjType
 {
 	/// basic types the path may have, derived from it's defining
 	/// polygon
-	PathType_Line = 0,
-	PathType_OpenPolygon,
-	PathType_ClosedPolygon,
-	PathType_OpenBezier,
-	PathType_ClosedBezier,
+	PathType_Line = 0,          // old OBJ_LINE
+	PathType_OpenPolygon,       // old OBJ_PLIN
+	PathType_ClosedPolygon,     // old OBJ_POLY
+	PathType_OpenBezier,        // old OBJ_PATHLINE
+	PathType_ClosedBezier,      // old OBJ_PATHFILL
 };
 
 //////////////////////////////////////////////////////////////////////////////

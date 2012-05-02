@@ -962,7 +962,7 @@ void AnimationWindow::AddObj (::sd::View& rView )
 					    aTimeList.Insert( pTime, aBmpExList.GetCurPos() + 1 );
 
 					    // Clone
-					    pPage->InsertObjectToSdrObjList( pSnapShot->CloneSdrObject(), aBmpExList.GetCurPos() + 1 );
+					    pPage->InsertObjectToSdrObjList(*pSnapShot->CloneSdrObject(), aBmpExList.GetCurPos() + 1);
 					
                         // Weiterschalten der BitmapListe
 					    aBmpExList.Next();
@@ -986,7 +986,7 @@ void AnimationWindow::AddObj (::sd::View& rView )
 		// ein einzelnes Objekt
 		if( 1 == aSelection.size() && !bAnimObj )
 		{
-			pPage->InsertObjectToSdrObjList(aSelection[0]->CloneSdrObject(), aBmpExList.GetCurPos() + 1);
+			pPage->InsertObjectToSdrObjList(*aSelection[0]->CloneSdrObject(), aBmpExList.GetCurPos() + 1);
 		}
 		else if (aSelection.size() > 1)
 		{
@@ -1006,7 +1006,7 @@ void AnimationWindow::AddObj (::sd::View& rView )
 					Time* pTime = new Time( aTimeField.GetTime() );
 					aTimeList.Insert( pTime, aBmpExList.GetCurPos() + 1 );
 
-					pPage->InsertObjectToSdrObjList( pObject->CloneSdrObject(), aBmpExList.GetCurPos() + 1 );
+					pPage->InsertObjectToSdrObjList(*pObject->CloneSdrObject(), aBmpExList.GetCurPos() + 1 );
 
 					aBmpExList.Next();
 				}
@@ -1018,10 +1018,10 @@ void AnimationWindow::AddObj (::sd::View& rView )
 
 				for (sal_uInt32 nObject(0); nObject < aSelection.size(); nObject++)
 				{
-					pCloneGroup->InsertObjectToSdrObjList(aSelection[nObject]->CloneSdrObject(), LIST_APPEND);
+					pCloneGroup->InsertObjectToSdrObjList(*aSelection[nObject]->CloneSdrObject());
 				}
 
-				pPage->InsertObjectToSdrObjList(pCloneGroup, aBmpExList.GetCurPos() + 1);
+				pPage->InsertObjectToSdrObjList(*pCloneGroup, aBmpExList.GetCurPos() + 1);
 			}
 		}
 
@@ -1238,8 +1238,7 @@ void AnimationWindow::CreateAnimObj (::sd::View& rView )
 			// des Clones
 			pClone = pPage->GetObj(i);
 			SdrObject* pCloneOfClone = pClone->CloneSdrObject();
-			//SdrObject* pCloneOfClone = pPage->GetObj(i)->Clone();
-			pGroup->InsertObjectToSdrObjList(pCloneOfClone, LIST_APPEND);
+			pGroup->InsertObjectToSdrObjList(*pCloneOfClone);
 		}
 
 		// bis jetzt liegt die linke obere Ecke der Gruppe in der Fenstermitte;

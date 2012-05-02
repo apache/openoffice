@@ -760,7 +760,7 @@ sal_Bool ImplSdPPTImport::Import()
 				}
 				SdrObject* pObj = ImportPageBackgroundObject( *pMPage, pE->nBackgroundOffset, true );	// import background
 				if ( pObj )
-					pMPage->InsertObjectToSdrObjList( pObj );
+					pMPage->InsertObjectToSdrObjList(*pObj);
 
 				sal_Bool bNewAnimationsUsed = sal_False;
 				ProcessData aProcessData( *(*pList)[ nAktPageNum ], (SdPage*)pMPage );
@@ -806,7 +806,7 @@ sal_Bool ImplSdPPTImport::Import()
 														if ( pImpObj )
 														{
 															pImpObj->SetLayer( mnBackgroundObjectsLayerID );
-															pMPage->InsertObjectToSdrObjList( pImpObj );
+															pMPage->InsertObjectToSdrObjList(*pImpObj);
 														}
 													}
 												}
@@ -1448,7 +1448,7 @@ void ImplSdPPTImport::SetHeaderFooterPageSettings( SdPage* pPage, const PptSlide
 					ProcessData aProcessData( rSlidePersist, (SdPage*)pPage );
 					SdrObject* pObj = ImportObj( rStCtrl, (void*)&aProcessData, aEmpty, aEmpty );
 					if ( pObj )
-						pPage->InsertObjectToSdrObjList( pObj, 0 );
+						pPage->InsertObjectToSdrObjList(*pObj, 0);
 				}
 			}
 			String aPlaceHolderString;

@@ -592,7 +592,7 @@ void FuInsertFile::InsTextOrRTFinDrMode(SfxMedium* pMedium)
 					mpView->BegUndo(String(SdResId(STR_UNDO_INSERT_TEXTFRAME)));
 				}
 
-				pPage->InsertObjectToSdrObjList(pTO);
+				pPage->InsertObjectToSdrObjList(*pTO);
 
 				// limit object size
 				const Size aSize(pOutliner->CalcTextSize());

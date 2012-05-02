@@ -610,11 +610,9 @@ bool E3dView::ImpCloneAll3DObjectsToDestScene(E3dScene* pSrcScene, E3dScene* pDs
                     pNewCompoundObj->SetB3DTransform(aModifyingTransform * aNewObjectTrans);
 
 					// fill and insert new object
-					//pNewCompoundObj->SetModel(pDstScene->GetModel());
-					//pNewCompoundObj->SetPage(pDstScene->GetPage());
 					pNewCompoundObj->SetLayer(pCompoundObj->GetLayer());
 					pNewCompoundObj->SetStyleSheet(pCompoundObj->GetStyleSheet(), sal_True);
-					pDstScene->Insert3DObj(pNewCompoundObj);
+					pDstScene->Insert3DObj(*pNewCompoundObj);
 					bRetval = true;
 
 					// Undo anlegen
@@ -815,7 +813,7 @@ void E3dView::ImpCreateSingle3DObjectFlat(E3dScene* pScene, SdrObject* pObj, boo
 			p3DObj->SetStyleSheet(pObj->GetStyleSheet(), sal_True);
 
 			// Neues 3D-Objekt einfuegen
-			pScene->Insert3DObj(p3DObj);
+			pScene->Insert3DObj(*p3DObj);
 		}
 	}
 }
@@ -911,21 +909,25 @@ void E3dView::ConvertMarkedObjTo3D(bool bExtrude, basegfx::B2DPoint aPnt1, baseg
 			Get3DDefaultAttributes());
 
 		// Rechteck bestimmen und evtl. korrigieren
-		Rectangle aRect = getMarkedObjectSnapRect();
-		if(aRect.GetWidth() <= 1)
-			aRect.SetSize(Size(500, aRect.GetHeight()));
-		if(aRect.GetHeight() <= 1)
-			aRect.SetSize(Size(aRect.GetWidth(), 500));
+        basegfx::B2DRange aRange(getMarkedObjectSnapRange());
+
+        if(aRange.getWidth() < 500.0 || aRange.getHeight() < 500.0)
+        {
+            basegfx::B2DRange aCentered(aRange.getCenter());
+
+            aCentered.grow(500.0);
+            aRange.expand(aCentered);
+        }
 
 		// Tiefe relativ zur Groesse der Selektion bestimmen
-		double fDepth = 0.0;
-		double fRot3D = 0.0;
+		double fDepth(0.0);
+		double fRot3D(0.0);
 		basegfx::B2DHomMatrix aLatheMat;
 
 		if(bExtrude)
 		{
-			double fW = (double)aRect.GetWidth();
-			double fH = (double)aRect.GetHeight();
+			double fW = aRange.getWidth();
+			double fH = aRange.getHeight();
 			fDepth = sqrt(fW*fW + fH*fH) / 6.0;
 		}
 
@@ -942,12 +944,13 @@ void E3dView::ConvertMarkedObjTo3D(bool bExtrude, basegfx::B2DPoint aPnt1, baseg
 				fRot3D = atan2(aDiff.getY(), aDiff.getX()) - F_PI2;
 
                 if(basegfx::fTools::equalZero(fabs(fRot3D)))
+                {
 					fRot3D = 0.0;
+                }
 
 				if(fRot3D != 0.0)
 				{
-                    aLatheMat = basegfx::tools::createRotateAroundPoint(aPnt2, -fRot3D)
-                        * aLatheMat;
+                    aLatheMat = basegfx::tools::createRotateAroundPoint(aPnt2, -fRot3D) * aLatheMat;
 				}
 			}
 
@@ -958,7 +961,7 @@ void E3dView::ConvertMarkedObjTo3D(bool bExtrude, basegfx::B2DPoint aPnt1, baseg
 			}
 			else
 			{
-				aLatheMat.translate((double)-aRect.Left(), 0.0);
+				aLatheMat.translate(-aRange.getMinX(), 0.0);
 			}
 
 			// Inverse Matrix bilden, um die Zielausdehnung zu bestimmen
@@ -969,38 +972,34 @@ void E3dView::ConvertMarkedObjTo3D(bool bExtrude, basegfx::B2DPoint aPnt1, baseg
 			// erweitern
 			for(sal_uInt32 a(0); a < aSelection.size(); a++)
 			{
-				SdrObject* pObj = aSelection[a];
-				const Rectangle aTurnRect(sdr::legacy::GetSnapRect(*pObj));
+				const SdrObject* pObj = aSelection[a];
+        		const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(*pObj));
 				basegfx::B2DPoint aRot;
 				Point aRotPnt;
 
-				aRot = basegfx::B2DPoint(aTurnRect.Left(), -aTurnRect.Top());
+				aRot = basegfx::B2DPoint(aSnapRange.getMinX(), -aSnapRange.getMinY());
 				aRot *= aLatheMat;
 				aRot.setX(-aRot.getX());
 				aRot *= aInvLatheMat;
-				aRotPnt = Point((sal_Int32)(aRot.getX() + 0.5), (sal_Int32)(-aRot.getY() - 0.5));
-				aRect.Union(Rectangle(aRotPnt, aRotPnt));
+                aRange.expand(aRot);
 
-				aRot = basegfx::B2DPoint(aTurnRect.Left(), -aTurnRect.Bottom());
+				aRot = basegfx::B2DPoint(aSnapRange.getMinX(), -aSnapRange.getMaxY());
 				aRot *= aLatheMat;
 				aRot.setX(-aRot.getX());
 				aRot *= aInvLatheMat;
-				aRotPnt = Point((sal_Int32)(aRot.getX() + 0.5), (sal_Int32)(-aRot.getY() - 0.5));
-				aRect.Union(Rectangle(aRotPnt, aRotPnt));
+                aRange.expand(aRot);
 
-				aRot = basegfx::B2DPoint(aTurnRect.Right(), -aTurnRect.Top());
+				aRot = basegfx::B2DPoint(aSnapRange.getMaxX(), -aSnapRange.getMinY());
 				aRot *= aLatheMat;
 				aRot.setX(-aRot.getX());
 				aRot *= aInvLatheMat;
-				aRotPnt = Point((sal_Int32)(aRot.getX() + 0.5), (sal_Int32)(-aRot.getY() - 0.5));
-				aRect.Union(Rectangle(aRotPnt, aRotPnt));
+                aRange.expand(aRot);
 
-				aRot = basegfx::B2DPoint(aTurnRect.Right(), -aTurnRect.Bottom());
+				aRot = basegfx::B2DPoint(aSnapRange.getMaxX(), -aSnapRange.getMaxY());
 				aRot *= aLatheMat;
 				aRot.setX(-aRot.getX());
 				aRot *= aInvLatheMat;
-				aRotPnt = Point((sal_Int32)(aRot.getX() + 0.5), (sal_Int32)(-aRot.getY() - 0.5));
-				aRect.Union(Rectangle(aRotPnt, aRotPnt));
+                aRange.expand(aRot);
 			}
 		}
 
@@ -1025,9 +1024,9 @@ void E3dView::ConvertMarkedObjTo3D(bool bExtrude, basegfx::B2DPoint aPnt1, baseg
 			pScene->SetB3DTransform(aMatrix * pScene->GetB3DTransform()); // #112587#
 
 			// Szene initialisieren
-			sdr::legacy::SetSnapRect(*pScene, aRect);
-			basegfx::B3DRange aBoundVol = pScene->GetBoundVolume();
-			InitScene(pScene, (double)aRect.GetWidth(), (double)aRect.GetHeight(), aBoundVol.getDepth());
+			sdr::legacy::SetSnapRange(*pScene, aRange);
+			const basegfx::B3DRange aBoundVol(pScene->GetBoundVolume());
+			InitScene(pScene, aRange.getWidth(), aRange.getHeight(), aBoundVol.getDepth());
 
 			// Szene anstelle des ersten selektierten Objektes einfuegen
 			// und alle alten Objekte weghauen
@@ -1057,7 +1056,7 @@ void E3dView::ConvertMarkedObjTo3D(bool bExtrude, basegfx::B2DPoint aPnt1, baseg
 			}
 
 			// SnapRects der Objekte ungueltig
-			sdr::legacy::SetSnapRect(*pScene, aRect);
+			sdr::legacy::SetSnapRange(*pScene, aRange);
 		}
 		else
         {
@@ -1412,24 +1411,20 @@ E3dScene* E3dView::GetMarkedScene()
 E3dScene* E3dView::SetCurrent3DObj(E3dObject* p3DObj)
 {
 	DBG_ASSERT(p3DObj != NULL, "Nana, wer steckt denn hier 'nen NULL-Zeiger rein?");
-	E3dScene* pScene = NULL;
 
 	// get transformed BoundVolume of the object
 	basegfx::B3DRange aVolume(p3DObj->GetBoundVolume());
-	aVolume.transform(p3DObj->GetB3DTransform());
-	double fW(aVolume.getWidth());
+    aVolume.transform(p3DObj->GetB3DTransform());
+    double fW(aVolume.getWidth());
 	double fH(aVolume.getHeight());
-	
-	Rectangle aRect(0,0, (sal_Int32) fW, (sal_Int32) fH);
 
-	pScene = new E3dScene(
+	E3dScene* pScene = new E3dScene(
 		getSdrModelFromSdrView(),
 		Get3DDefaultAttributes());
 
 	InitScene(pScene, fW, fH, aVolume.getMaxZ() + ((fW + fH) / 4.0));
-
-	pScene->Insert3DObj(p3DObj);
-	sdr::legacy::SetSnapRect(*pScene, aRect);
+	pScene->Insert3DObj(*p3DObj);
+    sdr::legacy::SetSnapRange(*pScene, basegfx::B2DRange(0.0, 0.0, fW, fH));
 
 	return pScene;
 }
@@ -1613,14 +1608,18 @@ void E3dView::End3DCreation(bool bUseDefaultValuesForMirrorAxes)
 	{
 		if(bUseDefaultValuesForMirrorAxes)
 		{
-			Rectangle aRect = getMarkedObjectSnapRect();
-			if(aRect.GetWidth() <= 1)
-				aRect.SetSize(Size(500, aRect.GetHeight()));
-			if(aRect.GetHeight() <= 1)
-				aRect.SetSize(Size(aRect.GetWidth(), 500));
+            basegfx::B2DRange aRange(getMarkedObjectSnapRange());
 
-			basegfx::B2DPoint aPnt1(aRect.Left(), -aRect.Top());
-			basegfx::B2DPoint aPnt2(aRect.Left(), -aRect.Bottom());
+            if(aRange.getWidth() < 500.0 || aRange.getHeight() < 500.0)
+            {
+                basegfx::B2DRange aCentered(aRange.getCenter());
+
+                aCentered.grow(500.0);
+                aRange.expand(aCentered);
+            }
+
+			const basegfx::B2DPoint aPnt1(aRange.getMinX(), -aRange.getMinY());
+			const basegfx::B2DPoint aPnt2(aRange.getMinX(), -aRange.getMaxY());
 
 			ConvertMarkedObjTo3D(false, aPnt1, aPnt2);
 		}
@@ -1631,9 +1630,8 @@ void E3dView::End3DCreation(bool bUseDefaultValuesForMirrorAxes)
             const SdrHdlList &aHdlList = GetHdlList();
     		const basegfx::B2DPoint aMirrorRef1 = aHdlList.GetHdlByKind(HDL_REF1)->getPosition();
 	    	const basegfx::B2DPoint aMirrorRef2 = aHdlList.GetHdlByKind(HDL_REF2)->getPosition();
-
-			basegfx::B2DPoint aPnt1(aMirrorRef1.getX(), -aMirrorRef1.getY());
-			basegfx::B2DPoint aPnt2(aMirrorRef2.getX(), -aMirrorRef2.getY());
+			const basegfx::B2DPoint aPnt1(aMirrorRef1.getX(), -aMirrorRef1.getY());
+			const basegfx::B2DPoint aPnt2(aMirrorRef2.getX(), -aMirrorRef2.getY());
 
 			ConvertMarkedObjTo3D(false, aPnt1, aPnt2);
 		}

@@ -164,7 +164,7 @@ SdrObject* SdrTextObj::ImpConvertContainedTextToSdrPathObjs(bool bToPoly) const
 
 					// apply prepared ItemSet and add to target
 					pPathObj->SetMergedItemSet(aAttributeSet);
-					pObjectList->InsertObjectToSdrObjList(pPathObj);
+					pObjectList->InsertObjectToSdrObjList(*pPathObj);
 				}
 			}
 
@@ -266,7 +266,7 @@ SdrObject* SdrTextObj::ImpConvertAddText(SdrObject* pObj, bool bBezier) const
     {
         // is already group object, add partial shape in front
 		SdrObjList* pOL = pText->getChildrenOfSdrObject();
-		pOL->InsertObjectToSdrObjList(pObj, 0);
+		pOL->InsertObjectToSdrObjList(*pObj, 0);
 
         return pText;
 	} 
@@ -274,8 +274,8 @@ SdrObject* SdrTextObj::ImpConvertAddText(SdrObject* pObj, bool bBezier) const
     {
         // not yet a group, create one and add partial and new shapes
 		SdrObjGroup* pGrp = new SdrObjGroup(getSdrModelFromSdrObject());
-		pGrp->InsertObjectToSdrObjList(pObj);
-		pGrp->InsertObjectToSdrObjList(pText);
+		pGrp->InsertObjectToSdrObjList(*pObj);
+		pGrp->InsertObjectToSdrObjList(*pText);
 
         return pGrp;
 	}

@@ -1554,13 +1554,6 @@ private:
                     aInfo.mnDrawMode = DRAWMODE_DEFAULT;
             }
 
-            // check if selected range of pages contains transparent objects
-            /*
-            const bool bPrintPages (bPrintNotes || bPrintDraw || bPrintHandout);
-            const bool bContainsTransparency (bPrintPages && ContainsTransparency());
-            if (pPrinter->InitJob (mrBase.GetWindow(), !bIsAPI && bContainsTransparency))
-            */
-
             if (mpOptions->IsDraw())
                 PrepareStdOrNotes(PK_STANDARD, aInfo);
             if (mpOptions->IsNotes())
@@ -1632,11 +1625,10 @@ private:
         while( iter != aAreas.end() )
         {
             basegfx::B2DRange aRange(*iter++);
-
-			pHandout->InsertObjectToSdrObjList(
-				new SdrPageObj(
-					rModel,
-					basegfx::tools::createScaleTranslateB2DHomMatrix(aRange.getRange(), aRange.getMinimum())));
+            SdrPageObj* pNewSdrPageObj = new SdrPageObj(
+				rModel,
+				basegfx::tools::createScaleTranslateB2DHomMatrix(aRange.getRange(), aRange.getMinimum()));
+			pHandout->InsertObjectToSdrObjList(*pNewSdrPageObj);
             
             if( bDrawLines && (iter != aAreas.end())  )
             {
@@ -1661,38 +1653,9 @@ private:
 
 				pPathObj->SetMergedItem(XLineStyleItem(XLINE_SOLID));
                 pPathObj->SetMergedItem(XLineColorItem(String(), Color(COL_BLACK)));
-                pHandout->InsertObjectToSdrObjList( pPathObj );
+                pHandout->InsertObjectToSdrObjList(*pPathObj);
             }
         }
-    }
-
-
-
-
-    /** Detect whether any of the slides that are to be printed contains
-        partially transparent or translucent shapes.
-    */
-    bool ContainsTransparency (const PrintInfo& rInfo) const
-    {
-        // const bool bPrintExcluded (mpOptions->IsPrintExcluded());
-        bool bContainsTransparency = false;
-
-        for (sal_uInt16
-                 nIndex=0,
-                 nCount=mrBase.GetDocument()->GetSdPageCount(PK_STANDARD);
-             nIndex < nCount && !bContainsTransparency;
-             ++nIndex)
-        {
-            SdPage* pPage = GetFilteredPage(nIndex, PK_STANDARD, rInfo);
-            if (pPage == NULL)
-                continue;
-
-            bContainsTransparency = pPage->HasTransparentObjects();
-            if ( ! bContainsTransparency && pPage->TRG_HasMasterPage())
-                bContainsTransparency = pPage->TRG_GetMasterPage().HasTransparentObjects();
-        }
-
-        return bContainsTransparency;
     }
 
 

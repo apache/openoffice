@@ -782,7 +782,15 @@ void OViewsWindow::collectBoundResizeRect(const TRectangleMap& _rSortRectangles,
 				}
 			    else 
 				{
-                    _rBound.Union(aRectIter->second.second->getMarkedObjectSnapRect());
+                    const basegfx::B2DRange aSnapRange(aRectIter->second.second->getMarkedObjectSnapRange());
+
+                    if(!aSnapRange.isEmpty())
+                    {
+			            _rBound.Union(
+                            Rectangle(
+					            (sal_Int32)floor(aSnapRange.getMinX()), (sal_Int32)floor(aSnapRange.getMinY()),
+					            (sal_Int32)ceil(aSnapRange.getMaxX()), (sal_Int32)ceil(aSnapRange.getMaxY())));
+                    }
 				}
 		    }
 	    }
@@ -1073,8 +1081,6 @@ void OViewsWindow::BegDragObj_createInvisibleObjectAtPosition(const basegfx::B2D
         
         if ( &rView != &_rSection )
         {
-//            SdrRectObj *pNewObj = new SdrRectObj(OBJ_RECT, _aRange);
-// 			SdrObject *pNewObj = new SdrUnoObj(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Temp Label")));
 			SdrObject *pNewObj = new SdrUnoObj(
 				rView.getSdrModelFromSdrView(),
 				::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")));
@@ -1082,12 +1088,9 @@ void OViewsWindow::BegDragObj_createInvisibleObjectAtPosition(const basegfx::B2D
 			if (pNewObj)
 			{
                 sdr::legacy::SetLogicRange(*pNewObj, _aRange);
-                // pNewObj->SetSize(_aRange.GetSize());
-                // pNewObj->Move(Size(_aRange.Left(), _aRange.Top()));
-
 				sdr::legacy::MoveSdrObject(*pNewObj, Size(0, aNewPos.Y()));
                 sal_Bool bChanged = rView.getSdrModelFromSdrView().IsChanged();
-	            rReportSection.getPage()->InsertObjectToSdrObjList(pNewObj);
+	            rReportSection.getPage()->InsertObjectToSdrObjList(*pNewObj);
                 rView.getSdrModelFromSdrView().SetChanged(bChanged);
                 m_aBegDragTempList.push_back(pNewObj);
                 const Rectangle aRect(sdr::legacy::GetLogicRect(*pNewObj));

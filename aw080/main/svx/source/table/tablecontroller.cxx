@@ -2411,9 +2411,7 @@ bool SvxTableController::GetMarkedObjModel( SdrPage* pNewPage )
 
 		SdrTableObj* pNewTableObj = rTableObj.CloneRange( aStart, aEnd );
 
-		//pNewTableObj->SetPage( pNewPage );
-		//pNewTableObj->SetModel( pNewPage->GetModel() );
-		pNewPage->InsertObjectToSdrObjList(pNewTableObj,CONTAINER_APPEND);
+        pNewPage->InsertObjectToSdrObjList(*pNewTableObj);
 		
 		return true;
 	}

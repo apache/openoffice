@@ -348,25 +348,31 @@ void SdTransferable::CreateData()
 	{
 		SdPage*	pPage = mpSdDrawDocumentIntern->GetSdPage( 0, PK_STANDARD );
 
-		if( 1 == mpSdDrawDocumentIntern->GetPageCount() )
+		if(1 == mpSdDrawDocumentIntern->GetPageCount())
 		{
-			Point	aOrigin( ( maVisArea = mpSdViewIntern->getMarkedObjectSnapRect() ).TopLeft() );
-			Size	aVector( -aOrigin.X(), -aOrigin.Y() );
+            const basegfx::B2DRange aAllRange(mpSdViewIntern->getMarkedObjectSnapRange());
+            const basegfx::B2DHomMatrix aTranslate(
+                basegfx::tools::createTranslateB2DHomMatrix(
+                    -aAllRange.getMinimum()));
 
-			for( sal_uLong nObj = 0, nObjCount = pPage->GetObjCount(); nObj < nObjCount; nObj++ )
+			for(sal_uInt32 nObj(0), nObjCount = pPage->GetObjCount(); nObj < nObjCount; nObj++)
 			{
-				SdrObject* pObj = pPage->GetObj( nObj );
-				sdr::legacy::MoveSdrObject(*pObj, aVector );
+				SdrObject* pObj = pPage->GetObj(nObj);
+
+                sdr::legacy::transformSdrObject(*pObj, aTranslate);
 			}
+
+            maVisArea.SetSize(Size(basegfx::fround(aAllRange.getWidth()), basegfx::fround(aAllRange.getHeight())));
 		}
 		else
 		{
 			const basegfx::B2DVector& rPageScale = pPage->GetPageScale();
-			maVisArea.SetSize(Size(basegfx::fround(rPageScale.getX()), basegfx::fround(rPageScale.getY())));
+
+            maVisArea.SetSize(Size(basegfx::fround(rPageScale.getX()), basegfx::fround(rPageScale.getY())));
 		}
 
 		// Die Ausgabe soll am Nullpunkt erfolgen
-		maVisArea.SetPos( Point() );
+		maVisArea.SetPos(Point());
 	}
 }
 

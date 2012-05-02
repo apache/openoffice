@@ -645,7 +645,7 @@ void SwPageFrm::AppendFlyToPage( SwFlyFrm *pNew )
 {
 	if ( !pNew->GetVirtDrawObj()->IsObjectInserted() )
 		getRootFrm()->GetDrawPage()->InsertObjectToSdrObjList(
-				(SdrObject*)pNew->GetVirtDrawObj(),
+				*pNew->GetVirtDrawObj(),
 				pNew->GetVirtDrawObj()->GetReferencedObj().GetNavigationPosition() );
 
 	InvalidateSpelling();

@@ -176,7 +176,6 @@ public:
     /** Returns the rectangle for the passed cell address in 1/100 mm.
         @param bMergedCell  True = regards merged cells. False = use single column/row size. */
     static Rectangle GetCellRect( ScDocument& rDoc, const ScAddress& rPos, bool bMergedCell );
-	// TTTT: GetCellRectmay be no longer needed
     static basegfx::B2DRange GetCellRange(ScDocument& rDoc, const ScAddress& rPos, bool bMergedCell);
 
 					//	GetVisibleName: name for navigator etc: GetPersistName or GetName

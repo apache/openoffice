@@ -153,11 +153,11 @@ SdrObject* EnhancedCustomShapeEngine::ImplForceGroupWithText( const SdrObjCustom
 				if ( !pSdrObjGroup )
 				{
 					pSdrObjGroup = new SdrObjGroup(pCustoObj->getSdrModelFromSdrObject());
-					pSdrObjGroup->InsertObjectToSdrObjList( pRenderedShape );
+					pSdrObjGroup->InsertObjectToSdrObjList(*pRenderedShape);
 					pRenderedShape = pSdrObjGroup;
 				}
 
-				pSdrObjGroup->InsertObjectToSdrObjList( pShadowGeometry->CloneSdrObject(), 0 );
+				pSdrObjGroup->InsertObjectToSdrObjList(*pShadowGeometry->CloneSdrObject(), 0);
 			}
 			else
 			{
@@ -215,11 +215,11 @@ SdrObject* EnhancedCustomShapeEngine::ImplForceGroupWithText( const SdrObjCustom
 				if ( !pSdrObjGroup )
 				{
 					pSdrObjGroup = new SdrObjGroup(pCustoObj->getSdrModelFromSdrObject());
-					pSdrObjGroup->InsertObjectToSdrObjList( pRenderedShape );
+					pSdrObjGroup->InsertObjectToSdrObjList(*pRenderedShape);
 					pRenderedShape = pSdrObjGroup;
 				}
 
-				pSdrObjGroup->InsertObjectToSdrObjList( pTextObj, LIST_APPEND );
+				pSdrObjGroup->InsertObjectToSdrObjList(*pTextObj);
 			}
 			else
 			{
@@ -235,7 +235,7 @@ SdrObject* EnhancedCustomShapeEngine::ImplForceGroupWithText( const SdrObjCustom
 			if ( !pSdrObjGroup )
 			{
 				pSdrObjGroup = new SdrObjGroup(pCustoObj->getSdrModelFromSdrObject());
-				pSdrObjGroup->InsertObjectToSdrObjList( pRenderedShape );
+				pSdrObjGroup->InsertObjectToSdrObjList(*pRenderedShape);
 				pRenderedShape = pSdrObjGroup;
 			}
 

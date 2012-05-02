@@ -159,9 +159,6 @@ public:
 	void					SetFilterName(const String& rFilterName);
 	const String&			GetFilterName() const { return aFilterName; }
 
-	void					StartAnimation(OutputDevice* pOutDev, const Point& rPoint, const Size& rSize, long nExtraData=0L);
-	void					StopAnimation(OutputDevice* pOutDev=NULL, long nExtraData=0L);
-
 	virtual void			TakeObjInfo(SdrObjTransformInfoRec& rInfo) const;
 	virtual sal_uInt16			GetObjIdentifier() const;
 

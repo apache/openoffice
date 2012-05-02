@@ -268,10 +268,10 @@ void E3dObject::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 |*
 \************************************************************************/
 
-void E3dObject::NewObjectInserted(const E3dObject* p3DObj)
+void E3dObject::NewObjectInserted(const E3dObject& r3DObj)
 {
 	if(GetParentObj())
-		GetParentObj()->NewObjectInserted(p3DObj);
+		GetParentObj()->NewObjectInserted(r3DObj);
 }
 
 /*************************************************************************
