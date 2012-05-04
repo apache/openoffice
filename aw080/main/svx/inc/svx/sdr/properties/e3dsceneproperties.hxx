@@ -76,9 +76,6 @@ namespace sdr
 			// get the installed StyleSheet
 			virtual SfxStyleSheet* GetStyleSheet() const;
 
-			// Move properties to a new ItemPool. Default implementation does nothing.
-			virtual void MoveToItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel = 0L);
-
 			// Special for scene:
 			void SetSceneItemsFromCamera();
 		};

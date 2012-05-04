@@ -202,7 +202,7 @@ bool DrawView::SetAttributes(const SfxItemSet& rSet, bool bReplaceAll)
 					aTempSet.ClearInvalidItems();
 
 					// Undo-Action
-					StyleSheetUndoAction* pAction = new StyleSheetUndoAction(mpDoc, pSheet, &aTempSet);
+					StyleSheetUndoAction* pAction = new StyleSheetUndoAction(*mpDoc, *pSheet, aTempSet);
 					mpDocSh->GetUndoManager()->AddUndoAction(pAction);
 
 					pSheet->GetItemSet().Put(aTempSet);
@@ -249,7 +249,7 @@ bool DrawView::SetAttributes(const SfxItemSet& rSet, bool bReplaceAll)
 						}
 
 						// Undo-Action
-						StyleSheetUndoAction* pAction = new StyleSheetUndoAction(mpDoc, pSheet, &aTempSet);
+						StyleSheetUndoAction* pAction = new StyleSheetUndoAction(*mpDoc, *pSheet, aTempSet);
 						mpDocSh->GetUndoManager()->AddUndoAction(pAction);
 
 						pSheet->GetItemSet().Put(aTempSet);
@@ -317,7 +317,7 @@ bool DrawView::SetAttributes(const SfxItemSet& rSet, bool bReplaceAll)
 						aTempSet.ClearInvalidItems();
 
 						// Undo-Action
-						StyleSheetUndoAction* pAction = new StyleSheetUndoAction(mpDoc, pSheet, &aTempSet);
+						StyleSheetUndoAction* pAction = new StyleSheetUndoAction(*mpDoc, *pSheet, aTempSet);
 						mpDocSh->GetUndoManager()->AddUndoAction(pAction);
 
 						pSheet->GetItemSet().Put(aTempSet,false);
@@ -362,7 +362,7 @@ bool DrawView::SetAttributes(const SfxItemSet& rSet, bool bReplaceAll)
 							aTempSet.ClearInvalidItems();
 
 							// Undo-Action
-							StyleSheetUndoAction* pAction = new StyleSheetUndoAction(mpDoc, pSheet, &aTempSet);
+							StyleSheetUndoAction* pAction = new StyleSheetUndoAction(*mpDoc, *pSheet, aTempSet);
 							mpDocSh->GetUndoManager()->AddUndoAction(pAction);
 
 							pSheet->GetItemSet().Set(aTempSet,false);

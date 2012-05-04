@@ -250,33 +250,6 @@ namespace sdr
 			// nothing to do here, groups have no items and thus no default items, too.
 		}
 
-		void GroupProperties::MoveToItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel)
-		{
-			if(pSrcPool && pDestPool && (pSrcPool != pDestPool))
-			{
-				const SdrObjList* pSub = GetSdrObject().getChildrenOfSdrObject();
-                const sal_uInt32 nCount(pSub ? pSub->GetObjCount() : 0);
-
-				for(sal_uInt32 a(0L); a < nCount; a++)
-				{
-					pSub->GetObj(a)->GetProperties().MoveToItemPool(pSrcPool, pDestPool, pNewModel);
-				}
-
-				// also clear local ItemSet, it's only temporary for group objects anyways.
-				if(mpItemSet)
-				{
-					// #121905#
-					// copy/paste is still using clone operators and MoveToItemPool functionality.
-					// Since SfxItemSet contains a pool pointer, ClearItem is not enough here.
-					// The ItemSet for merge is constructed on demand, so it's enough here to
-					// just delete it and set to 0L.
-					// mpItemSet->ClearItem();
-					delete mpItemSet;
-					mpItemSet = 0L;
-				}
-			}
-		}
-
 		void GroupProperties::ForceStyleToHardAttributes()
 		{
 			const SdrObjList* pSub = GetSdrObject().getChildrenOfSdrObject();

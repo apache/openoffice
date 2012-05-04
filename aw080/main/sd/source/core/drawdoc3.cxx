@@ -1644,8 +1644,7 @@ void SdDrawDocument::SetMasterPage(sal_uInt32 nSdPageNum,
 						DBG_ASSERT(bTest, "StyleSheet-Umbenennung fehlgeschlagen");
 						pMySheet->GetItemSet().ClearItem(0);  // alle loeschen
 
-						StyleSheetUndoAction* pUndoChStyle = new StyleSheetUndoAction(this,
-																 pMySheet, &pHisSheet->GetItemSet());
+						StyleSheetUndoAction* pUndoChStyle = new StyleSheetUndoAction(*this, *pMySheet, pHisSheet->GetItemSet());
 						pUndoMgr->AddUndoAction(pUndoChStyle);
 						pMySheet->GetItemSet().Put(pHisSheet->GetItemSet());
 						pMySheet->Broadcast(SfxSimpleHint(SFX_HINT_DATACHANGED));

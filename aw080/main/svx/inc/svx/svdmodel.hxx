@@ -564,12 +564,6 @@ public:
 	/** returns the numbering type that is used to format page fields in drawing shapes */
 	virtual SvxNumType GetPageNumType() const;
 
-	/** copies the items from the source set to the destination set. Both sets must have
-		same ranges but can have different pools. If pNewModel is optional. If it is null,
-		this model is used. */
-
-	void MigrateItemSet( const SfxItemSet* pSourceSet, SfxItemSet* pDestSet, SdrModel* pNewModel );
-
 	bool IsInDestruction() const { return mbInDestruction; }
 
     static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelImplementationId();

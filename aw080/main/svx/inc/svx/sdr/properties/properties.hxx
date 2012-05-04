@@ -152,10 +152,6 @@ namespace sdr
 			// overloaded to do it for hierarchical objects like e.g. groups.
 			virtual void Scale(const Fraction& rScale);
 
-			// Move local items to a new ItemPool. This needs to be
-			// overloaded to do it for hierarchical objects like e.g. groups.
-			virtual void MoveToItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel = 0L);
-
 			// force all attributes which come from styles to hard attributes
 			// to be able to live without the style.
 			virtual void ForceStyleToHardAttributes();

@@ -281,31 +281,6 @@ namespace sdr
 			return pRetval;
 		}
 
-		void E3dSceneProperties::MoveToItemPool(SfxItemPool* pSrcPool, SfxItemPool* pDestPool, SdrModel* pNewModel)
-		{
-			if(pSrcPool && pDestPool && (pSrcPool != pDestPool))
-			{
-				// call parent
-				E3dProperties::MoveToItemPool(pSrcPool, pDestPool, pNewModel);
-
-				// own reaction, but only with outmost scene
-				E3dScene& rObj = (E3dScene&)GetSdrObject();
-				const SdrObjList* pSubList = rObj.getChildrenOfSdrObject();
-
-				if(pSubList && rObj.GetScene() == &rObj)
-				{
-					SdrObjListIter a3DIterator(*pSubList, IM_DEEPWITHGROUPS);
-					
-					while(a3DIterator.IsMore())
-					{
-						E3dObject* pObj = dynamic_cast< E3dObject* >(a3DIterator.Next());
-						DBG_ASSERT(pObj, "In scenes there are only 3D objects allowed (!)");
-						pObj->GetProperties().MoveToItemPool(pSrcPool, pDestPool, pNewModel);
-					}
-				}
-			}
-		}
-
 		void E3dSceneProperties::SetSceneItemsFromCamera()
 		{
 			// force ItemSet

@@ -143,26 +143,22 @@ void FuPresentationObjects::DoExecute( SfxRequest& )
 		}
 
 		SfxStyleSheetBasePool* pStyleSheetPool = mpDocSh->GetStyleSheetPool();
-		SfxStyleSheetBase* pStyleSheet = pStyleSheetPool->Find( aStyleName, SD_STYLE_FAMILY_MASTERPAGE );
-		DBG_ASSERT(pStyleSheet, "StyleSheet nicht gefunden");
+		SfxStyleSheet* pStyleSheet = dynamic_cast< SfxStyleSheet* >(pStyleSheetPool->Find(aStyleName, SD_STYLE_FAMILY_MASTERPAGE));
+		OSL_ENSURE(pStyleSheet, "StyleSheet not found or not based on SfxStyleSheet");
 
 		if( pStyleSheet )
 		{
-			SfxStyleSheetBase& rStyleSheet = *pStyleSheet;
-
 			SdAbstractDialogFactory* pFact = SdAbstractDialogFactory::Create();
-			SfxAbstractTabDialog* pDlg = pFact ? pFact->CreateSdPresLayoutTemplateDlg( mpDocSh, NULL, SdResId( nDlgId ), rStyleSheet, ePO, pStyleSheetPool ) : 0;
+			SfxAbstractTabDialog* pDlg = pFact ? pFact->CreateSdPresLayoutTemplateDlg( mpDocSh, NULL, SdResId( nDlgId ), *pStyleSheet, ePO, pStyleSheetPool ) : 0;
 			if( pDlg && (pDlg->Execute() == RET_OK) )
 			{
 				const SfxItemSet* pOutSet = pDlg->GetOutputItemSet();
 				// Undo-Action
-				StyleSheetUndoAction* pAction = new StyleSheetUndoAction
-												(mpDoc, (SfxStyleSheet*)pStyleSheet,
-													pOutSet);
-				mpDocSh->GetUndoManager()->AddUndoAction(pAction);
+				StyleSheetUndoAction* pAction = new StyleSheetUndoAction(*mpDoc, *pStyleSheet, *pOutSet);
 
+                mpDocSh->GetUndoManager()->AddUndoAction(pAction);
 				pStyleSheet->GetItemSet().Put( *pOutSet );
-				( (SfxStyleSheet*) pStyleSheet )->Broadcast( SfxSimpleHint( SFX_HINT_DATACHANGED ) );
+				pStyleSheet->Broadcast(SfxSimpleHint(SFX_HINT_DATACHANGED));
 			}
 			delete( pDlg );
 		}

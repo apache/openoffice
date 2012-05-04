@@ -308,10 +308,20 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
 
 				pTempSet->Put( XFillStyleItem( XFILL_BITMAP ) );
 				
-				// MigrateItemSet makes sure the XFillBitmapItem will have a unique name
-				SfxItemSet aMigrateSet( mpDoc->GetItemPool(), XATTR_FILLBITMAP, XATTR_FILLBITMAP );
-				aMigrateSet.Put( XFillBitmapItem( String(RTL_CONSTASCII_USTRINGPARAM("background")), XOBitmap(aGraphic) ) );
-				mpDoc->MigrateItemSet( &aMigrateSet, pTempSet.get(), NULL );
+				// Need to be sure that the name for the XFillBitmapItem is unique due to
+                // usage in the UNO API. Use checkForUniqueItem at the default item; it will
+                // always return something. If the name already was unique, it returns a pointer
+                // to the item it was triggered at, thus the new item needs to be deleted
+                // when it is not equal to the address of it.
+                const XFillBitmapItem aNewItem(String(RTL_CONSTASCII_USTRINGPARAM("background")), XOBitmap(aGraphic));
+            	const XFillBitmapItem* pSaveItem = aNewItem.checkForUniqueItem(mpDoc);
+
+                pTempSet->Put( *pSaveItem );
+
+                if(pSaveItem != &aNewItem)
+                {
+                    delete pSaveItem;
+                }
 
 				pTempSet->Put( XFillBmpStretchItem( sal_True ));
 				pTempSet->Put( XFillBmpTileItem( sal_False ));
@@ -329,168 +339,171 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
 
 	if( pTempSet.get() )
 	{
-		pStyleSheet->AdjustToFontHeight(*pTempSet);
+        if(pStyleSheet)
+        {
+		    pStyleSheet->AdjustToFontHeight(*pTempSet);
 
-		if( mbDisplayBackgroundTabPage )
-		{
-			// if some fillstyle-items are not set in the dialog, then
-			// try to use the items before
-			bool bChanges = false;
-			for( sal_uInt16 i=XATTR_FILL_FIRST; i<XATTR_FILL_LAST; i++ )
-			{
-				if( aMergedAttr.GetItemState( i ) != SFX_ITEM_DEFAULT )
-				{
-					if( pTempSet->GetItemState( i ) == SFX_ITEM_DEFAULT )
-						pTempSet->Put( aMergedAttr.Get( i ) );
-					else
-						if( aMergedAttr.GetItem( i ) != pTempSet->GetItem( i ) )
-							bChanges = true;
-				}
-			}
-
-			// if the background for this page was set to invisible, the background-object has to be deleted, too.
-			if( ( ( (XFillStyleItem*) pTempSet->GetItem( XATTR_FILLSTYLE ) )->GetValue() == XFILL_NONE ) ||
-				( ( pTempSet->GetItemState( XATTR_FILLSTYLE ) == SFX_ITEM_DEFAULT ) &&
-					( ( (XFillStyleItem*) aMergedAttr.GetItem( XATTR_FILLSTYLE ) )->GetValue() == XFILL_NONE ) ) )
-				mbPageBckgrdDeleted = true;
-
-			bool bSetToAllPages = false;
-
-			// Ask, wether the setting are for the background-page or for the current page
-			if( !mbMasterPage && bChanges )
-			{
-				// But don't ask in notice-view, because we can't change the background of
-				// notice-masterpage (at the moment)
-				if( ePageKind != PK_NOTES )
-				{
-					String aTit(SdResId( STR_PAGE_BACKGROUND_TITLE ));
-					String aTxt(SdResId( STR_PAGE_BACKGROUND_TXT ));
-					MessBox aQuestionBox (
-                        pParent,
-                        WB_YES_NO | WB_DEF_YES,
-                        aTit,
-                        aTxt );
-					aQuestionBox.SetImage( QueryBox::GetStandardImage() );
-					bSetToAllPages = ( RET_YES == aQuestionBox.Execute() );
-				}
-
-                if( mbPageBckgrdDeleted )
-				{
-                    mpBackgroundObjUndoAction = new SdBackgroundObjUndoAction(
-                        *mpDoc, *mpPage, mpPage->getSdrPageProperties().GetItemSet());
-
-                    if(!mpPage->IsMasterPage())
-                    {
-                        // on normal pages, switch off fill attribute usage
-						SdrPageProperties& rPageProperties = mpPage->getSdrPageProperties();
-						rPageProperties.ClearItem( XATTR_FILLBITMAP );
-						rPageProperties.ClearItem( XATTR_FILLGRADIENT );
-						rPageProperties.ClearItem( XATTR_FILLHATCH );
-                        rPageProperties.PutItem(XFillStyleItem(XFILL_NONE));
-                    }
-				}
-			}
-
-			// Sonderbehandlung: die INVALIDS auf NULL-Pointer
-			// zurueckgesetzen (sonst landen INVALIDs oder
-			// Pointer auf die DefaultItems in der Vorlage;
-			// beides wuerde die Attribut-Vererbung unterbinden)
-			pTempSet->ClearInvalidItems();
-
-			if( mbMasterPage )
-			{
-				StyleSheetUndoAction* pAction = new StyleSheetUndoAction(mpDoc, (SfxStyleSheet*)pStyleSheet, &(*pTempSet.get()));
-				mpDocSh->GetUndoManager()->AddUndoAction(pAction);
-				pStyleSheet->GetItemSet().Put( *(pTempSet.get()) );
-				sdr::properties::CleanupFillProperties( pStyleSheet->GetItemSet() );
-				pStyleSheet->Broadcast(SfxSimpleHint(SFX_HINT_DATACHANGED));
-			}
-			else if( bSetToAllPages )
-			{
-				String aComment(SdResId(STR_UNDO_CHANGE_PAGEFORMAT));
-				::svl::IUndoManager* pUndoMgr = mpDocSh->GetUndoManager();
-				pUndoMgr->EnterListAction(aComment, aComment);
-				SdUndoGroup* pUndoGroup = new SdUndoGroup(mpDoc);
-				pUndoGroup->SetComment(aComment);
-
-				//Set background on all master pages
-				sal_uInt32 nMasterPageCount = mpDoc->GetMasterSdPageCount(ePageKind);
-				for (sal_uInt32 i = 0; i < nMasterPageCount; ++i)
-				{
-					SdPage *pMasterPage = mpDoc->GetMasterSdPage(i, ePageKind);
-					SdStyleSheet *pStyle =
-						pMasterPage->getPresentationStyle(HID_PSEUDOSHEET_BACKGROUND);
-					StyleSheetUndoAction* pAction =
-						new StyleSheetUndoAction(mpDoc, (SfxStyleSheet*)pStyle, &(*pTempSet.get()));
-					pUndoGroup->AddAction(pAction);
-					pStyle->GetItemSet().Put( *(pTempSet.get()) );
-					sdr::properties::CleanupFillProperties( pStyleSheet->GetItemSet() );
-					pStyle->Broadcast(SfxSimpleHint(SFX_HINT_DATACHANGED));
-				}
-
-				//Remove background from all pages to reset to the master bg
-				sal_uInt32 nPageCount(mpDoc->GetSdPageCount(ePageKind));
-				for(sal_uInt32 i=0; i<nPageCount; ++i)
-				{
-					SdPage *pPage = mpDoc->GetSdPage(i, ePageKind);
-
-					const SfxItemSet& rFillAttributes = pPage->getSdrPageProperties().GetItemSet();
-   					if(XFILL_NONE != ((const XFillStyleItem&)rFillAttributes.Get(XATTR_FILLSTYLE)).GetValue())
+		    if( mbDisplayBackgroundTabPage )
+		    {
+			    // if some fillstyle-items are not set in the dialog, then
+			    // try to use the items before
+			    bool bChanges = false;
+			    for( sal_uInt16 i=XATTR_FILL_FIRST; i<XATTR_FILL_LAST; i++ )
+			    {
+				    if( aMergedAttr.GetItemState( i ) != SFX_ITEM_DEFAULT )
 				    {
-						SdBackgroundObjUndoAction *pBackgroundObjUndoAction = new SdBackgroundObjUndoAction(*mpDoc, *pPage, rFillAttributes);
-						pUndoGroup->AddAction(pBackgroundObjUndoAction);
+					    if( pTempSet->GetItemState( i ) == SFX_ITEM_DEFAULT )
+						    pTempSet->Put( aMergedAttr.Get( i ) );
+					    else
+						    if( aMergedAttr.GetItem( i ) != pTempSet->GetItem( i ) )
+							    bChanges = true;
+				    }
+			    }
 
-						SdrPageProperties& rPageProperties = pPage->getSdrPageProperties();
-						rPageProperties.ClearItem( XATTR_FILLBITMAP );
-						rPageProperties.ClearItem( XATTR_FILLGRADIENT );
-						rPageProperties.ClearItem( XATTR_FILLHATCH );
-                        rPageProperties.PutItem(XFillStyleItem(XFILL_NONE));
+			    // if the background for this page was set to invisible, the background-object has to be deleted, too.
+			    if( ( ( (XFillStyleItem*) pTempSet->GetItem( XATTR_FILLSTYLE ) )->GetValue() == XFILL_NONE ) ||
+				    ( ( pTempSet->GetItemState( XATTR_FILLSTYLE ) == SFX_ITEM_DEFAULT ) &&
+					    ( ( (XFillStyleItem*) aMergedAttr.GetItem( XATTR_FILLSTYLE ) )->GetValue() == XFILL_NONE ) ) )
+				    mbPageBckgrdDeleted = true;
 
-						pPage->ActionChanged();
-					}
-				}
+			    bool bSetToAllPages = false;
 
-				pUndoMgr->AddUndoAction(pUndoGroup);
-				pUndoMgr->LeaveListAction();
+			    // Ask, wether the setting are for the background-page or for the current page
+			    if( !mbMasterPage && bChanges )
+			    {
+				    // But don't ask in notice-view, because we can't change the background of
+				    // notice-masterpage (at the moment)
+				    if( ePageKind != PK_NOTES )
+				    {
+					    String aTit(SdResId( STR_PAGE_BACKGROUND_TITLE ));
+					    String aTxt(SdResId( STR_PAGE_BACKGROUND_TXT ));
+					    MessBox aQuestionBox (
+                            pParent,
+                            WB_YES_NO | WB_DEF_YES,
+                            aTit,
+                            aTxt );
+					    aQuestionBox.SetImage( QueryBox::GetStandardImage() );
+					    bSetToAllPages = ( RET_YES == aQuestionBox.Execute() );
+				    }
 
-			}
+                    if( mbPageBckgrdDeleted )
+				    {
+                        mpBackgroundObjUndoAction = new SdBackgroundObjUndoAction(
+                            *mpDoc, *mpPage, mpPage->getSdrPageProperties().GetItemSet());
 
-			// if background filling is set to master pages then clear from page set
-			if( mbMasterPage || bSetToAllPages )
-			{
-				for( sal_uInt16 nWhich = XATTR_FILL_FIRST; nWhich <= XATTR_FILL_LAST; nWhich++ )
-				{
-					pTempSet->ClearItem( nWhich );
-				}
-				pTempSet->Put(XFillStyleItem(XFILL_NONE));
-			}
+                        if(!mpPage->IsMasterPage())
+                        {
+                            // on normal pages, switch off fill attribute usage
+						    SdrPageProperties& rPageProperties = mpPage->getSdrPageProperties();
+						    rPageProperties.ClearItem( XATTR_FILLBITMAP );
+						    rPageProperties.ClearItem( XATTR_FILLGRADIENT );
+						    rPageProperties.ClearItem( XATTR_FILLHATCH );
+                            rPageProperties.PutItem(XFillStyleItem(XFILL_NONE));
+                        }
+				    }
+			    }
 
-			const SfxPoolItem *pItem;
-			if( SFX_ITEM_SET == pTempSet->GetItemState( EE_PARA_WRITINGDIR, sal_False, &pItem ) )
-			{
-				sal_uInt32 nVal = ((SvxFrameDirectionItem*)pItem)->GetValue();
-				mpDoc->SetDefaultWritingMode( nVal == FRMDIR_HORI_RIGHT_TOP ? ::com::sun::star::text::WritingMode_RL_TB : ::com::sun::star::text::WritingMode_LR_TB );
-			}
+			    // Sonderbehandlung: die INVALIDS auf NULL-Pointer
+			    // zurueckgesetzen (sonst landen INVALIDs oder
+			    // Pointer auf die DefaultItems in der Vorlage;
+			    // beides wuerde die Attribut-Vererbung unterbinden)
+			    pTempSet->ClearInvalidItems();
 
-			mpDoc->SetChanged(true);
+			    if( mbMasterPage )
+			    {
+				    StyleSheetUndoAction* pAction = new StyleSheetUndoAction(*mpDoc, *pStyleSheet, *pTempSet.get());
+				    mpDocSh->GetUndoManager()->AddUndoAction(pAction);
+				    pStyleSheet->GetItemSet().Put( *(pTempSet.get()) );
+				    sdr::properties::CleanupFillProperties( pStyleSheet->GetItemSet() );
+				    pStyleSheet->Broadcast(SfxSimpleHint(SFX_HINT_DATACHANGED));
+			    }
+			    else if( bSetToAllPages )
+			    {
+				    String aComment(SdResId(STR_UNDO_CHANGE_PAGEFORMAT));
+				    ::svl::IUndoManager* pUndoMgr = mpDocSh->GetUndoManager();
+				    pUndoMgr->EnterListAction(aComment, aComment);
+				    SdUndoGroup* pUndoGroup = new SdUndoGroup(mpDoc);
+				    pUndoGroup->SetComment(aComment);
 
-			// BackgroundFill of Masterpage: no hard attributes allowed
-            SdrPage& rUsedMasterPage = mpPage->IsMasterPage() ? *mpPage : mpPage->TRG_GetMasterPage();
-            OSL_ENSURE(rUsedMasterPage.IsMasterPage(), "No MasterPage (!)");
-            rUsedMasterPage.getSdrPageProperties().ClearItem();
-            OSL_ENSURE(0 != rUsedMasterPage.getSdrPageProperties().GetStyleSheet(), 
-                "MasterPage without StyleSheet detected (!)");
-		}
+				    //Set background on all master pages
+				    sal_uInt32 nMasterPageCount = mpDoc->GetMasterSdPageCount(ePageKind);
+				    for (sal_uInt32 i = 0; i < nMasterPageCount; ++i)
+				    {
+					    SdPage *pMasterPage = mpDoc->GetMasterSdPage(i, ePageKind);
+					    SdStyleSheet *pStyle = pMasterPage->getPresentationStyle(HID_PSEUDOSHEET_BACKGROUND);
+					    StyleSheetUndoAction* pAction = new StyleSheetUndoAction(*mpDoc, *pStyle, *pTempSet.get());
+					    pUndoGroup->AddAction(pAction);
+					    pStyle->GetItemSet().Put( *(pTempSet.get()) );
+					    sdr::properties::CleanupFillProperties( pStyleSheet->GetItemSet() );
+					    pStyle->Broadcast(SfxSimpleHint(SFX_HINT_DATACHANGED));
+				    }
 
-		aNewAttr.Put(*(pTempSet.get()));
-		mrReq.Done( aNewAttr );
+				    //Remove background from all pages to reset to the master bg
+				    sal_uInt32 nPageCount(mpDoc->GetSdPageCount(ePageKind));
+				    for(sal_uInt32 i=0; i<nPageCount; ++i)
+				    {
+					    SdPage *pPage = mpDoc->GetSdPage(i, ePageKind);
 
-		return mrReq.GetArgs();
+					    const SfxItemSet& rFillAttributes = pPage->getSdrPageProperties().GetItemSet();
+   					    if(XFILL_NONE != ((const XFillStyleItem&)rFillAttributes.Get(XATTR_FILLSTYLE)).GetValue())
+				        {
+						    SdBackgroundObjUndoAction *pBackgroundObjUndoAction = new SdBackgroundObjUndoAction(*mpDoc, *pPage, rFillAttributes);
+						    pUndoGroup->AddAction(pBackgroundObjUndoAction);
+
+						    SdrPageProperties& rPageProperties = pPage->getSdrPageProperties();
+						    rPageProperties.ClearItem( XATTR_FILLBITMAP );
+						    rPageProperties.ClearItem( XATTR_FILLGRADIENT );
+						    rPageProperties.ClearItem( XATTR_FILLHATCH );
+                            rPageProperties.PutItem(XFillStyleItem(XFILL_NONE));
+
+						    pPage->ActionChanged();
+					    }
+				    }
+
+				    pUndoMgr->AddUndoAction(pUndoGroup);
+				    pUndoMgr->LeaveListAction();
+
+			    }
+
+			    // if background filling is set to master pages then clear from page set
+			    if( mbMasterPage || bSetToAllPages )
+			    {
+				    for( sal_uInt16 nWhich = XATTR_FILL_FIRST; nWhich <= XATTR_FILL_LAST; nWhich++ )
+				    {
+					    pTempSet->ClearItem( nWhich );
+				    }
+				    pTempSet->Put(XFillStyleItem(XFILL_NONE));
+			    }
+
+			    const SfxPoolItem *pItem;
+			    if( SFX_ITEM_SET == pTempSet->GetItemState( EE_PARA_WRITINGDIR, sal_False, &pItem ) )
+			    {
+				    sal_uInt32 nVal = ((SvxFrameDirectionItem*)pItem)->GetValue();
+				    mpDoc->SetDefaultWritingMode( nVal == FRMDIR_HORI_RIGHT_TOP ? ::com::sun::star::text::WritingMode_RL_TB : ::com::sun::star::text::WritingMode_LR_TB );
+			    }
+
+			    mpDoc->SetChanged(true);
+
+			    // BackgroundFill of Masterpage: no hard attributes allowed
+                SdrPage& rUsedMasterPage = mpPage->IsMasterPage() ? *mpPage : mpPage->TRG_GetMasterPage();
+                OSL_ENSURE(rUsedMasterPage.IsMasterPage(), "No MasterPage (!)");
+                rUsedMasterPage.getSdrPageProperties().ClearItem();
+                OSL_ENSURE(0 != rUsedMasterPage.getSdrPageProperties().GetStyleSheet(), 
+                    "MasterPage without StyleSheet detected (!)");
+		    }
+
+		    aNewAttr.Put(*(pTempSet.get()));
+		    mrReq.Done( aNewAttr );
+
+    		return mrReq.GetArgs();
+        }
+        else
+        {
+            OSL_ENSURE(false, "pStyleSheet not set (!)");
+        }
 	}
-	else
-	{
-		return 0;
-	}
+
+    return 0;
 }
 
 void FuPage::ApplyItemSet( const SfxItemSet* pArgs )
