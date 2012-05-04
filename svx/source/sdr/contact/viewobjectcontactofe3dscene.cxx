@@ -96,7 +96,10 @@ namespace sdr
 
 			if(xRetval.hasElements())
 			{
-				// handle GluePoint
+                // allow evtl. embedding in object-specific infos, e.g. Name, Title, Description
+                xRetval = rViewContact.embedToObjectSpecificInformation(xRetval);
+
+                // handle GluePoint
 				if(!GetObjectContact().isOutputToPrinter() && GetObjectContact().AreGluePointsVisible())
 				{
 					const drawinglayer::primitive2d::Primitive2DSequence xGlue(GetViewContact().createGluePointPrimitive2DSequence());
