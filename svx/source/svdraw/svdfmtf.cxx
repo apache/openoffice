@@ -68,6 +68,8 @@
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <svx/xlinjoit.hxx>
 #include <svx/xlndsit.hxx>
+#include <basegfx/polygon/b2dpolygonclipper.hxx>
+#include <svx/xbtmpit.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -80,7 +82,11 @@ ImpSdrGDIMetaFileImport::ImpSdrGDIMetaFileImport(SdrModel& rModel):
 	maLineCap(com::sun::star::drawing::LineCap_BUTT),
 	maDash(XDASH_RECT, 0, 0, 0, 0, 0),
 	bFntDirty(sal_True),
-	bLastObjWasPolyWithoutLine(sal_False),bNoLine(sal_False),bNoFill(sal_False),bLastObjWasLine(sal_False)
+	bLastObjWasPolyWithoutLine(sal_False),
+    bNoLine(sal_False),
+    bNoFill(sal_False),
+    bLastObjWasLine(sal_False),
+    maClip()
 {
 	aVD.EnableOutput(sal_False);
 
@@ -93,6 +99,7 @@ ImpSdrGDIMetaFileImport::ImpSdrGDIMetaFileImport(SdrModel& rModel):
 	pFillAttr=new SfxItemSet(rModel.GetItemPool(),XATTR_FILL_FIRST,XATTR_FILL_LAST);
 	pTextAttr=new SfxItemSet(rModel.GetItemPool(),EE_ITEMS_START,EE_ITEMS_END);
 	pModel=&rModel;
+    checkClip();
 }
 
 ImpSdrGDIMetaFileImport::~ImpSdrGDIMetaFileImport()
@@ -378,9 +385,9 @@ void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, FASTBOOL bForceText
 	}
 }
 
-void ImpSdrGDIMetaFileImport::InsertObj( SdrObject* pObj, sal_Bool bScale )
+void ImpSdrGDIMetaFileImport::InsertObj(SdrObject* pObj, sal_Bool bScale)
 {
-	if ( bScale && !aScaleRect.IsEmpty() )
+    if ( bScale && !aScaleRect.IsEmpty() )
     {
 		if ( bSize )
 			pObj->NbcResize( Point(), aScaleX, aScaleY );
@@ -388,61 +395,124 @@ void ImpSdrGDIMetaFileImport::InsertObj( SdrObject* pObj, sal_Bool bScale )
 			pObj->NbcMove( Size( aOfs.X(), aOfs.Y() ) );
 	}
 
-    // #i111954# check object for visibility
-    // used are SdrPathObj, SdrRectObj, SdrCircObj, SdrGrafObj
-    bool bVisible(false);
-
-    if(pObj->HasLineStyle())
+    if(isClip())
     {
-        bVisible = true;
-    }
+        const basegfx::B2DPolyPolygon aPoly(pObj->TakeXorPoly());
+        const basegfx::B2DRange aOldRange(aPoly.getB2DRange());
+    	const SdrLayerID aOldLayer(pObj->GetLayer());
+    	const SfxItemSet aOldItemSet(pObj->GetMergedItemSet());
+        const SdrGrafObj* pSdrGrafObj = dynamic_cast< SdrGrafObj* >(pObj);
+        BitmapEx aBitmapEx;
 
-    if(!bVisible && pObj->HasFillStyle())
-    {
-        bVisible = true;
-    }
-
-    if(!bVisible)
-    {
-        SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >(pObj);
-
-        if(pTextObj && pTextObj->HasText())
+        if(pSdrGrafObj)
         {
-            bVisible = true;
+        	aBitmapEx = pSdrGrafObj->GetGraphic().GetBitmapEx();
         }
-    }
 
-    if(!bVisible)
-    {
-        SdrGrafObj* pGrafObj = dynamic_cast< SdrGrafObj* >(pObj);
-
-        if(pGrafObj)
-        {
-            // this may be refined to check if the graphic really is visible. It
-            // is here to ensure that graphic objects without fill, line and text
-            // get created
-            bVisible = true;
-        }
-    }
-
-    if(!bVisible)
-    {
         SdrObject::Free(pObj);
+
+        if(!aOldRange.isEmpty())
+        {
+            // clip against ClipRegion
+            const basegfx::B2DPolyPolygon aNewPoly(
+                basegfx::tools::clipPolyPolygonOnPolyPolygon(
+                    aPoly, 
+                    maClip, 
+                    true, 
+                    aPoly.isClosed() ? false : true));
+            const basegfx::B2DRange aNewRange(aNewPoly.getB2DRange());
+            
+            if(!aNewRange.isEmpty())
+            {
+                pObj = new SdrPathObj(
+                    aNewPoly.isClosed() ? OBJ_POLY : OBJ_PLIN, 
+                    aNewPoly);
+            
+		        pObj->SetLayer(aOldLayer);
+		        pObj->SetMergedItemSet(aOldItemSet);
+
+                if(!!aBitmapEx)
+                {
+                    // aNewRange is inside of aOldRange and defines which part of aBitmapEx is used
+                    const double fScaleX(aBitmapEx.GetSizePixel().Width() / (aOldRange.getWidth() ? aOldRange.getWidth() : 1.0));
+                    const double fScaleY(aBitmapEx.GetSizePixel().Height() / (aOldRange.getHeight() ? aOldRange.getHeight() : 1.0));
+                    basegfx::B2DRange aPixel(aNewRange);
+                    basegfx::B2DHomMatrix aTrans;
+
+                    aTrans.translate(-aOldRange.getMinX(), -aOldRange.getMinY());
+                    aTrans.scale(fScaleX, fScaleY);
+                    aPixel.transform(aTrans);
+
+                    const BitmapEx aClippedBitmap(
+                        aBitmapEx, 
+                        Point(floor(std::max(0.0, aPixel.getMinX())), floor(std::max(0.0, aPixel.getMinY()))), 
+                        Size(ceil(aPixel.getWidth()), ceil(aPixel.getHeight())));
+
+                    pObj->SetMergedItem(XFillStyleItem(XFILL_BITMAP));
+                    pObj->SetMergedItem(XFillBitmapItem(String(), aClippedBitmap.GetBitmap()));
+                }
+            }
+        }
     }
-    else
+
+    if(pObj)
     {
-	    aTmpList.InsertObject( pObj );
-	    if ( HAS_BASE( SdrPathObj, pObj ) )
-	    {
-		    FASTBOOL bClosed=pObj->IsClosedObj();
-		    bLastObjWasPolyWithoutLine=bNoLine && bClosed;
-		    bLastObjWasLine=!bClosed;
-	    }
-	    else
-	    {
-		    bLastObjWasPolyWithoutLine = sal_False;
-		    bLastObjWasLine = sal_False;
-	    }
+        // #i111954# check object for visibility
+        // used are SdrPathObj, SdrRectObj, SdrCircObj, SdrGrafObj
+        bool bVisible(false);
+
+        if(pObj->HasLineStyle())
+        {
+            bVisible = true;
+        }
+
+        if(!bVisible && pObj->HasFillStyle())
+        {
+            bVisible = true;
+        }
+
+        if(!bVisible)
+        {
+            SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >(pObj);
+
+            if(pTextObj && pTextObj->HasText())
+            {
+                bVisible = true;
+            }
+        }
+
+        if(!bVisible)
+        {
+            SdrGrafObj* pGrafObj = dynamic_cast< SdrGrafObj* >(pObj);
+
+            if(pGrafObj)
+            {
+                // this may be refined to check if the graphic really is visible. It
+                // is here to ensure that graphic objects without fill, line and text
+                // get created
+                bVisible = true;
+            }
+        }
+
+        if(!bVisible)
+        {
+            SdrObject::Free(pObj);
+        }
+        else
+        {
+	        aTmpList.InsertObject( pObj );
+	        if ( HAS_BASE( SdrPathObj, pObj ) )
+	        {
+		        FASTBOOL bClosed=pObj->IsClosedObj();
+		        bLastObjWasPolyWithoutLine=bNoLine && bClosed;
+		        bLastObjWasLine=!bClosed;
+	        }
+	        else
+	        {
+		        bLastObjWasPolyWithoutLine = sal_False;
+		        bLastObjWasLine = sal_False;
+	        }
+        }
     }
 }
 
@@ -501,14 +571,14 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaLineAction& rAct)
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaRectAction& rAct)
 {
-	SdrRectObj* pRect=new SdrRectObj(rAct.GetRect());
+    SdrRectObj* pRect=new SdrRectObj(rAct.GetRect());
 	SetAttributes(pRect);
 	InsertObj(pRect);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaRoundRectAction& rAct)
 {
-	SdrRectObj* pRect=new SdrRectObj(rAct.GetRect());
+    SdrRectObj* pRect=new SdrRectObj(rAct.GetRect());
 	SetAttributes(pRect);
 	long nRad=(rAct.GetHorzRound()+rAct.GetVertRound())/2;
 	if (nRad!=0) {
@@ -523,14 +593,14 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaRoundRectAction& rAct)
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaEllipseAction& rAct)
 {
-	SdrCircObj* pCirc=new SdrCircObj(OBJ_CIRC,rAct.GetRect());
+    SdrCircObj* pCirc=new SdrCircObj(OBJ_CIRC,rAct.GetRect());
 	SetAttributes(pCirc);
 	InsertObj(pCirc);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaArcAction& rAct)
 {
-	Point aCenter(rAct.GetRect().Center());
+    Point aCenter(rAct.GetRect().Center());
 	long nStart=GetAngle(rAct.GetStartPoint()-aCenter);
 	long nEnd=GetAngle(rAct.GetEndPoint()-aCenter);
 	SdrCircObj* pCirc=new SdrCircObj(OBJ_CARC,rAct.GetRect(),nStart,nEnd);
@@ -540,7 +610,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaArcAction& rAct)
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaPieAction& rAct)
 {
-	Point aCenter(rAct.GetRect().Center());
+    Point aCenter(rAct.GetRect().Center());
 	long nStart=GetAngle(rAct.GetStartPoint()-aCenter);
 	long nEnd=GetAngle(rAct.GetEndPoint()-aCenter);
 	SdrCircObj* pCirc=new SdrCircObj(OBJ_SECT,rAct.GetRect(),nStart,nEnd);
@@ -550,7 +620,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaPieAction& rAct)
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaChordAction& rAct)
 {
-	Point aCenter(rAct.GetRect().Center());
+    Point aCenter(rAct.GetRect().Center());
 	long nStart=GetAngle(rAct.GetStartPoint()-aCenter);
 	long nEnd=GetAngle(rAct.GetEndPoint()-aCenter);
 	SdrCircObj* pCirc=new SdrCircObj(OBJ_CCUT,rAct.GetRect(),nStart,nEnd);
@@ -659,6 +729,32 @@ bool ImpSdrGDIMetaFileImport::CheckLastPolyLineAndFillMerge(const basegfx::B2DPo
 	return false;
 }
 
+void ImpSdrGDIMetaFileImport::checkClip()
+{
+    if(aVD.IsClipRegion())
+    {
+        Region aRegion(aVD.GetClipRegion());
+
+        maClip = aRegion.ConvertToB2DPolyPolygon();
+
+        if(isClip())
+        {
+    		const basegfx::B2DHomMatrix aTransform(
+                basegfx::tools::createScaleTranslateB2DHomMatrix(
+                    fScaleX, 
+                    fScaleY, 
+                    aOfs.X(), 
+                    aOfs.Y()));
+	    	
+            maClip.transform(aTransform);
+        }
+    }
+}
+
+bool ImpSdrGDIMetaFileImport::isClip() const
+{
+    return !maClip.getB2DRange().isEmpty();
+}
 
 void ImpSdrGDIMetaFileImport::DoAction( MetaPolyLineAction& rAct )
 {
@@ -686,7 +782,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaPolyLineAction& rAct )
 
 	if(bCreateLineObject)
 	{
-		SdrPathObj* pPath = new SdrPathObj(
+        SdrPathObj* pPath = new SdrPathObj(
 			aSource.isClosed() ? OBJ_POLY : OBJ_PLIN,
 			basegfx::B2DPolyPolygon(aSource));
 		nLineWidth = nNewLineWidth;
@@ -718,8 +814,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaPolygonAction& rAct )
 		{
 			// #i73407# make sure polygon is closed, it's a filled primitive
 			aSource.setClosed(true);
-
-			SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, basegfx::B2DPolyPolygon(aSource));
+            SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, basegfx::B2DPolyPolygon(aSource));
 			SetAttributes(pPath);
 			InsertObj(pPath, false);
 		}
@@ -740,8 +835,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaPolyPolygonAction& rAct)
 		{
 			// #i73407# make sure polygon is closed, it's a filled primitive
 			aSource.setClosed(true);
-
-			SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
+            SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
 			SetAttributes(pPath);
 			InsertObj(pPath, false);
 		}
@@ -841,7 +935,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpAction& rAct)
 {
 	Rectangle aRect(rAct.GetPoint(),rAct.GetBitmap().GetSizePixel());
 	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
+    SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
 	InsertObj(pGraf);
 }
 
@@ -849,7 +943,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpScaleAction& rAct)
 {
 	Rectangle aRect(rAct.GetPoint(),rAct.GetSize());
 	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
+    SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
 	InsertObj(pGraf);
 }
 
@@ -857,7 +951,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExAction& rAct)
 {
 	Rectangle aRect(rAct.GetPoint(),rAct.GetBitmapEx().GetSizePixel());
 	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
+    SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
 	InsertObj(pGraf);
 }
 
@@ -865,7 +959,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExScaleAction& rAct)
 {
 	Rectangle aRect(rAct.GetPoint(),rAct.GetSize());
 	aRect.Right()++; aRect.Bottom()++;
-	SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
+    SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
 	InsertObj(pGraf);
 }
 
@@ -884,7 +978,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaHatchAction& rAct )
 		if(!bLastObjWasPolyWithoutLine || !CheckLastPolyLineAndFillMerge(aSource))
 		{
 			const Hatch& rHatch = rAct.GetHatch();
-			SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
+            SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
 			SfxItemSet aHatchAttr(pModel->GetItemPool(),
 				XATTR_FILLSTYLE, XATTR_FILLSTYLE,
 				XATTR_FILLHATCH, XATTR_FILLHATCH, 0, 0 );
@@ -974,7 +1068,7 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaCommentAction& rAct, GDIMetaFile* pM
 				if(!bLastObjWasPolyWithoutLine || !CheckLastPolyLineAndFillMerge(aSource))
 				{
 					const Gradient&	rGrad = pAct->GetGradient();
-					SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
+                    SdrPathObj* pPath = new SdrPathObj(OBJ_POLY, aSource);
 					SfxItemSet aGradAttr(pModel->GetItemPool(),
 					   XATTR_FILLSTYLE, XATTR_FILLSTYLE,
 					   XATTR_FILLGRADIENT, XATTR_FILLGRADIENT, 0, 0 );
