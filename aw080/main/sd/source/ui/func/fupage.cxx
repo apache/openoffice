@@ -313,7 +313,7 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
                 // always return something. If the name already was unique, it returns a pointer
                 // to the item it was triggered at, thus the new item needs to be deleted
                 // when it is not equal to the address of it.
-                const XFillBitmapItem aNewItem(String(RTL_CONSTASCII_USTRINGPARAM("background")), XOBitmap(aGraphic));
+                const XFillBitmapItem aNewItem(String(RTL_CONSTASCII_USTRINGPARAM("background")), aGraphic);
             	const XFillBitmapItem* pSaveItem = aNewItem.checkForUniqueItem(mpDoc);
 
                 pTempSet->Put( *pSaveItem );

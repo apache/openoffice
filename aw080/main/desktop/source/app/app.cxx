@@ -837,8 +837,6 @@ static bool needsInstallBundledExtensionBlobs (
             continue;
         if (aFileStat.getFileType() != ::osl::FileStatus::Regular)
             continue;
-        const sal_uInt32 nT1 (aFileStat.getModifyTime().Seconds);
-        const sal_uInt32 nT2 (aMarkerModifyTime.Seconds);
         if (aFileStat.getModifyTime().Seconds > aMarkerModifyTime.Seconds)
         {
             rDirectory.close();
@@ -2023,7 +2021,7 @@ void Desktop::Main()
 
         if ( !pExecGlobals->bRestartRequested )
         {
-            if ((!pCmdLineArgs->WantsToLoadDocument() && !pCmdLineArgs->IsInvisible() && !pCmdLineArgs->IsHeadless() ) &&
+            if ((!pCmdLineArgs->WantsToLoadDocument() && !pCmdLineArgs->IsInvisible() && !pCmdLineArgs->IsHeadless() && !pCmdLineArgs->IsQuickstart()) &&
                 (SvtModuleOptions().IsModuleInstalled(SvtModuleOptions::E_SSTARTMODULE)) &&
                 (!bExistsRecoveryData                                                  ) &&
                 (!bExistsSessionData                                                   ) &&

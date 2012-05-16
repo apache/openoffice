@@ -398,7 +398,7 @@ void SdrObjEditView::TextEditDrawing(SdrPaintWindow& rPaintWindow) const
 void SdrObjEditView::ImpPaintOutlinerView(OutlinerView& rOutlView, const basegfx::B2DRange& rRange, OutputDevice& rTargetDevice) const
 {
 	const SdrTextObj* pText = dynamic_cast< const SdrTextObj* >(GetTextEditObject());
-		bool bTextFrame(pText && pText->IsTextFrame());
+	bool bTextFrame(pText && pText->IsTextFrame());
 	bool bFitToSize(0 != (mpTextEditOutliner->GetControlWord() & EE_CNTRL_STRETCHING));
 	bool bModifyMerk(mpTextEditOutliner->IsModified()); // #43095#
 	basegfx::B2DRange aBlankRange(rOutlView.GetOutputAreaRange());
@@ -421,7 +421,8 @@ void SdrObjEditView::ImpPaintOutlinerView(OutlinerView& rOutlView, const basegfx
 	if(bTextFrame && !bFitToSize) 
 	{
 		aPixRange.grow(1.0);
-		const sal_uInt16 nPixSiz(rOutlView.GetInvalidateMore() - 1);
+
+        const sal_uInt16 nPixSiz(rOutlView.GetInvalidateMore() - 1);
 			
 		{ 
 			// xPixRect Begrenzen, wegen Treiberproblem bei zu weit hinausragenden Pixelkoordinaten
@@ -438,21 +439,22 @@ void SdrObjEditView::ImpPaintOutlinerView(OutlinerView& rOutlView, const basegfx
 		}
 
 		basegfx::B2DRange aOuterPix(aPixRange);
-		aOuterPix.grow(nPixSiz);
+
+        aOuterPix.grow(nPixSiz);
 
 		const bool bMerk(rTargetDevice.IsMapModeEnabled());
-		rTargetDevice.EnableMapMode(false);
+		
+        rTargetDevice.EnableMapMode(false);
 
 		svtools::ColorConfig aColorConfig;
 		Color aHatchCol( aColorConfig.GetColorValue( svtools::FONTCOLOR ).nColor );
 		const Hatch aHatch( HATCH_SINGLE, aHatchCol, 3, 450 );
-
 		basegfx::B2DPolyPolygon aPolyPoly;
 
 		aPolyPoly.append(basegfx::tools::createPolygonFromRect(aOuterPix));
 		aPolyPoly.append(basegfx::tools::createPolygonFromRect(aPixRange));
 
-		rTargetDevice.DrawHatch( PolyPolygon(aPolyPoly), aHatch );
+		rTargetDevice.DrawHatch(PolyPolygon(aPolyPoly), aHatch);
 		rTargetDevice.EnableMapMode(bMerk);
 	}
 		

@@ -27,6 +27,8 @@
 #include <svgio/svgreader/svgdocument.hxx>
 #include <svgio/svgreader/svgnode.hxx>
 #include <svgio/svgreader/svgstyleattributes.hxx>
+#include <drawinglayer/primitive2d/objectinfoprimitive2d.hxx>
+#include <tools/urlobj.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -187,6 +189,50 @@ namespace svgio
                     else
                     {
                         OSL_ENSURE(false, "Null-Pointer in child node list (!)");
+                    }
+                }
+
+                if(rTarget.hasElements())
+                {
+                    const SvgStyleAttributes* pStyles = getSvgStyleAttributes();
+
+                    if(pStyles)
+                    {
+                        // check if we have Title or Desc
+                        const rtl::OUString& rTitle = pStyles->getTitle();
+                        const rtl::OUString& rDesc = pStyles->getDesc();
+
+                        if(rTitle.getLength() || rDesc.getLength())
+                        {
+                            // default object name is empty
+                            rtl::OUString aObjectName;
+
+                            // use path as object name when outmost element
+                            if(SVGTokenSvg == getType())
+                            {
+                                aObjectName = getDocument().getAbsolutePath();
+
+                                if(aObjectName.getLength())
+                                {
+                            		INetURLObject aURL(aObjectName);
+
+                                    aObjectName = aURL.getName(
+                                        INetURLObject::LAST_SEGMENT,
+                                        true,
+                                        INetURLObject::DECODE_WITH_CHARSET);
+                                }
+                            }
+
+                            // pack in ObjectInfoPrimitive2D group
+                            const drawinglayer::primitive2d::Primitive2DReference xRef(
+                                new drawinglayer::primitive2d::ObjectInfoPrimitive2D(
+                                    rTarget,
+                                    aObjectName,
+                                    rTitle,
+                                    rDesc));
+
+                            rTarget = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                        }
                     }
                 }
             }

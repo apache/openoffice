@@ -256,7 +256,7 @@ public:
 
 	void        Scroll( long nHorzScroll, long nVertScroll );
 
-	void        Paint( const Rectangle& rRect, OutputDevice* pTargetDevice = 0 );
+	void Paint(const Rectangle& rRect, OutputDevice* pTargetDevice = 0);
 	void Paint(const basegfx::B2DRange& rRange, OutputDevice* pTargetDevice = 0)
 	{
 		Paint(

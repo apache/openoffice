@@ -2381,11 +2381,11 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
 			SdrGrafObj* pGraf = dynamic_cast< SdrGrafObj* >(pObj);
 			SdrOle2Obj* pOle2 = dynamic_cast< SdrOle2Obj* >(pObj);
 			sal_uInt32 nInsAnz(0);
+    		GDIMetaFile aMetaFile;
+            basegfx::B2DHomMatrix aObjectTransform;
 		
 			if(pGraf && (pGraf->HasGDIMetaFile() || pGraf->isEmbeddedSvg()))
 			{
-				GDIMetaFile aMetaFile;
-
 				if(pGraf->HasGDIMetaFile())
 				{
 					aMetaFile = pGraf->GetTransformedGraphic(
@@ -2398,76 +2398,71 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
 
 				if(aMetaFile.GetActionCount())
 				{
-					ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrView());
-
-					aFilter.SetScaleRect(sdr::legacy::GetLogicRect(*pObj));
-					aFilter.SetLayer(pObj->GetLayer());
-					nInsAnz = aFilter.DoImport(aMetaFile, *pOL, nInsPos, pProgrInfo);
+                    aObjectTransform = pObj->getSdrObjectTransformation();
 				}
 			}
 
 			if(pOle2 && pOle2->GetGraphic())
     		{
-				ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrView());
+                aMetaFile = pOle2->GetGraphic()->GetGDIMetaFile();
 
-				aFilter.SetScaleRect(sdr::legacy::GetLogicRect(*pOle2));
-			    aFilter.SetLayer(pObj->GetLayer());
-                nInsAnz=aFilter.DoImport(pOle2->GetGraphic()->GetGDIMetaFile(),*pOL,nInsPos,pProgrInfo);
+				if(aMetaFile.GetActionCount())
+				{
+                    aObjectTransform = pOle2->getSdrObjectTransformation();
+                }
 		    }
 
-			if(nInsAnz)
+			if(aMetaFile.GetActionCount())
+			{
+				ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrView(), pObj->GetLayer(), aObjectTransform);
+
+                nInsAnz = aFilter.DoImport(aMetaFile, *pOL, nInsPos, pProgrInfo);
+            }
+
+            if(nInsAnz)
     		{
-                // transformation
-            	const basegfx::B2DHomMatrix& rTrans = pGraf 
-                    ? pGraf->getSdrObjectTransformation() 
-                    : pOle2->getSdrObjectTransformation();
-				sal_uInt32 nObj(nInsPos);
-			
-				for(sal_uInt32 i(0); i < nInsAnz; i++)
+				for(sal_uInt32 i(0), nObj(nInsPos); i < nInsAnz; i++, nObj++)
 	    		{
                     SdrObject* pCandidate = pOL->GetObj(nObj);
 
-		    		if( bUndo )
+		    		if(bUndo)
 					{
 						AddUndo(getSdrModelFromSdrView().GetSdrUndoFactory().CreateUndoNewObject(*pCandidate));
 					}
 
-                    // apply original transformation
-                    pCandidate->setSdrObjectTransformation(rTrans);
-
-			    	// Neue MarkList pflegen
+			    	// add to new selection
 					aNewMarked.push_back(pCandidate);
-				    nObj++;
 			    }
 
 				aForTheDescription.push_back(pObj);
 
-    			if( bUndo )
+    			if(bUndo)
 				{
 					AddUndo(getSdrModelFromSdrView().GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
 				}
 
-    			// Objekt aus selektion loesen und loeschen
-				removeSdrObjectFromSelection(*pObj);
-				pOL->RemoveObjectFromSdrObjList(nInsPos-1);
+    			// remove object
+				pOL->RemoveObjectFromSdrObjList(nInsPos - 1);
 
-    			if( !bUndo )
+    			if(!bUndo)
 				{
+                    // if no undo, delete object
 					deleteSdrObjectSafeAndClearPointer(pObj);
 				}
 		    }
+            else
+            {
+                // keep unchanged object in new selection
+				aNewMarked.push_back(pObj);
+            }
 	    }
 
 		if(!aNewMarked.empty())
     	{
 			setSdrObjectSelection(aNewMarked); // TTTT check for equality
 		}
-		else
-		{
-			setSdrObjectSelection(aSelection);
-	    }
 
-	    if( bUndo )
+	    if(bUndo)
 	    {
 			SetUndoComment(
 				ImpGetResStr(STR_EditImportMtf),

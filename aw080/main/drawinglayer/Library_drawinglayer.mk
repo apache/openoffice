@@ -111,6 +111,7 @@ $(eval $(call gb_Library_add_exception_objects,drawinglayer,\
 	drawinglayer/source/primitive2d/mediaprimitive2d \
 	drawinglayer/source/primitive2d/metafileprimitive2d \
 	drawinglayer/source/primitive2d/modifiedcolorprimitive2d \
+	drawinglayer/source/primitive2d/objectinfoprimitive2d \
 	drawinglayer/source/primitive2d/pagepreviewprimitive2d \
 	drawinglayer/source/primitive2d/patternfillprimitive2d \
 	drawinglayer/source/primitive2d/polypolygonprimitive2d \
@@ -168,6 +169,7 @@ $(eval $(call gb_Library_add_exception_objects,drawinglayer,\
 	drawinglayer/source/processor2d/hittestprocessor2d \
 	drawinglayer/source/processor2d/textaspolygonextractor2d \
     drawinglayer/source/processor2d/hairlineextractor2d \
+    drawinglayer/source/processor2d/objectinfoextractor2d \
 	drawinglayer/source/processor3d/baseprocessor3d \
 	drawinglayer/source/processor3d/cutfindprocessor3d \
 	drawinglayer/source/processor3d/defaultprocessor3d \

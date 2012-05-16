@@ -5622,10 +5622,15 @@ void QuickHelpData::Stop( SwWrtShell& rSh )
     ClearCntnt();
 }
 
-
-
 void QuickHelpData::FillStrArr( SwWrtShell& rSh, const String& rWord )
 {
+    // #i22961# get the letter-case context
+    const CharClass& rCharClass = GetAppCharClass();
+    const String aLWord = rCharClass.toLower( rWord, 0, rWord.Len() );
+    const bool bIsUpper = (rWord == rCharClass.toUpper( rWord, 0, rWord.Len() ) );
+    const bool bIsLower = (rWord == aLWord);
+
+    // add all matching month/day names from the calendar
     salhelper::SingletonRef<SwCalendarWrapper>* pCalendar = s_getCalendarWrapper();
     (*pCalendar)->LoadDefaultCalendar( rSh.GetCurLang() );
 
@@ -5636,49 +5641,40 @@ void QuickHelpData::FillStrArr( SwWrtShell& rSh, const String& rWord )
         {
             for( long nPos = 0, nEnd = aNames.getLength(); nPos < nEnd; ++nPos )
             {
-                String sStr( aNames[ nPos ].FullName );
-                if( rWord.Len() + 1 < sStr.Len() &&
-
-//!!! UNICODE: fehlendes interface
-//                  pIntl->CompareEqual( rWord, sStr.Copy( 0, rWord.Len() ),
-//                              INTN_COMPARE_IGNORECASE ) )
-                    COMPARE_EQUAL == rWord.CompareIgnoreCaseToAscii(
-                                        sStr, rWord.Len() ))
-                {
-                    String* pNew = new String( sStr );
-                    if( !aArr.Insert( pNew ) )
-                        delete pNew;
-                }
+                const String& rS = aNames[ nPos ].FullName;
+                if( rS.Len() <= rWord.Len() + 1 )
+                    continue;
+                const String aLName = rCharClass.toLower( rS, 0, rWord.Len() );
+                if( aLName != aLWord )
+                    continue;
+                // #i22961# provide case-sensitive autocompletion suggestions
+                String* pNew = new String( (bIsUpper==bIsLower) ? rS : (bIsUpper ? rCharClass.toUpper(rS,0,rS.Len()) : rCharClass.toLower(rS,0,rS.Len())) );
+                if( !aArr.Insert( pNew ) )
+                    delete pNew;
             }
             if( !n )                    // get data for the second loop
                 aNames = (*pCalendar)->getDays();
         }
     }
 
-    // and than add all words from the AutoCompleteWord-List
+    // and then add all words from the AutoCompleteWord-List
     const SwAutoCompleteWord& rACLst = rSh.GetAutoCompleteWords();
     sal_uInt16 nStt, nEnd;
     if( rACLst.GetRange( rWord, nStt, nEnd ) )
     {
-        while( nStt < nEnd )
+        for(; nStt < nEnd; ++nStt )
         {
             const String& rS = rACLst[ nStt ];
-            //JP 16.06.99: Bug 66927 - only if the count of chars
-            //              from the suggest greater as the
-            //              actual word
-            if( rS.Len() > rWord.Len() )
-            {
-                String* pNew = new String( rS );
-                if( !aArr.Insert( pNew ) )
-                    delete pNew;
-            }
-            ++nStt;
+            if( rS.Len() <= rWord.Len() )
+                continue;
+            // #i22961# provide case-sensitive autocompletion suggestions
+            String* pNew = new String( (bIsUpper==bIsLower) ? rS : (bIsUpper ? rCharClass.toUpper(rS,0,rS.Len()) : rCharClass.toLower(rS,0,rS.Len())) );
+            if( !aArr.Insert( pNew ) )
+                delete pNew;
         }
     }
 }
-/* -----------------06.11.2002 12:01-----------------
- *
- * --------------------------------------------------*/
+
 void SwEditWin::ShowAutoTextCorrectQuickHelp(
         const String& rWord, SvxAutoCorrCfg* pACfg, SvxAutoCorrect* pACorr,
         sal_Bool bFromIME )

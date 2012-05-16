@@ -118,6 +118,7 @@
 #include <avmedia/mediaitem.hxx>
 #include <sfx2/frame.hxx>
 #include "attrib.hxx"
+#include <svx/sdooitm.hxx>
 
 #define SvxDrawToolItem             SfxAllEnumItem
 #define SvxDrawAlignItem            SfxAllEnumItem

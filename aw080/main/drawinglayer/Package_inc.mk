@@ -49,6 +49,7 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/mediaprimitive2d.hxx,drawinglayer/primitive2d/mediaprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/metafileprimitive2d.hxx,drawinglayer/primitive2d/metafileprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx,drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/objectinfoprimitive2d.hxx,drawinglayer/primitive2d/objectinfoprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/pagepreviewprimitive2d.hxx,drawinglayer/primitive2d/pagepreviewprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/patternfillprimitive2d.hxx,drawinglayer/primitive2d/patternfillprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/primitive2d/pointarrayprimitive2d.hxx,drawinglayer/primitive2d/pointarrayprimitive2d.hxx))
@@ -109,6 +110,7 @@ $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor2d/
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor2d/hittestprocessor2d.hxx,drawinglayer/processor2d/hittestprocessor2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor2d/textaspolygonextractor2d.hxx,drawinglayer/processor2d/textaspolygonextractor2d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor2d/hairlineextractor2d.hxx,drawinglayer/processor2d/hairlineextractor2d.hxx))
+$(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor2d/objectinfoextractor2d.hxx,drawinglayer/processor2d/objectinfoextractor2d.hxx))
 
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/baseprocessor3d.hxx,drawinglayer/processor3d/baseprocessor3d.hxx))
 $(eval $(call gb_Package_add_file,drawinglayer_inc,inc/drawinglayer/processor3d/cutfindprocessor3d.hxx,drawinglayer/processor3d/cutfindprocessor3d.hxx))

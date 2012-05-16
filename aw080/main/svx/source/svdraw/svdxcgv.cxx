@@ -26,11 +26,12 @@
 
 #include <vector>
 #include <editeng/editeng.hxx>
-#include "svx/xexch.hxx"
+#include <svx/xexch.hxx>
 #include <svx/xflclit.hxx>
 #include <svx/svdxcgv.hxx>
 #include <svx/svdoutl.hxx>
 #include <editeng/editdata.hxx>
+#include <svx/svditext.hxx>
 #include <svx/svditext.hxx>
 #include <svx/svdetc.hxx>
 #include <svx/svdundo.hxx>
@@ -55,75 +56,8 @@
 #include <svl/style.hxx>
 #include "fmobj.hxx"
 #include <svx/svdlegacy.hxx>
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-Graphic GetObjGraphic(const SdrObject& rObj)
-{
-    Graphic aRet;
-
-    // try to get a graphic from the object first
-	const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(&rObj);
-	const SdrOle2Obj* pSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(&rObj);
-        
-	if(pSdrGrafObj)
-    {
-        if(pSdrGrafObj->isEmbeddedSvg())
-        {
-            // get Metafile for Svg content
-            aRet = pSdrGrafObj->getMetafileFromEmbeddedSvg();
-        }
-        else
-        {
-            // #110981# Make behaviour coherent with metafile
-            // recording below (which of course also takes
-            // view-transformed objects)
-            aRet = pSdrGrafObj->GetTransformedGraphic();
-        }
-    }
-    else if(pSdrOle2Obj)
-    {
-        if ( pSdrOle2Obj->GetGraphic() )
-		{
-            aRet = *pSdrOle2Obj->GetGraphic();
-        }
-    }
-
-    if(GRAPHIC_NONE == aRet.GetType() || GRAPHIC_DEFAULT == aRet.GetType())
-    {
-        // if graphic could not be retrieved => go the hard way and create a MetaFile
-    	const SdrModel& rSdrModel = rObj.getSdrModelFromSdrObject();
-		const MapMode aMap(
-            rSdrModel.GetExchangeObjectUnit(), 
-            Point(), 
-            rSdrModel.GetExchangeObjectScale(), 
-            rSdrModel.GetExchangeObjectScale());
-        VirtualDevice aOut;
-        GDIMetaFile aMtf;
-    	const basegfx::B2DRange aBoundRange(rObj.getObjectRange(0));
-
-        aOut.EnableOutput(false);
-		aOut.SetMapMode(aMap);
-		aMtf.Record(&aOut);
-        rObj.SingleObjectPainter(aOut);
-        aMtf.Stop();
-		aMtf.WindStart();
-
-        if(aMtf.GetActionCount())
-		{
-		    // #i99268# replace the original offset from using XOutDev's SetOffset
-		    // NOT (as tried with #i92760#) with another MapMode which gets recorded
-		    // by the Metafile itself (what always leads to problems), but by
-		    // translating the result the hard way
-		    aMtf.Move(-basegfx::fround(aBoundRange.getMinX()), -basegfx::fround(aBoundRange.getMinY()));
-            aMtf.SetPrefMapMode(aMap);
-		    aMtf.SetPrefSize(Size(basegfx::fround(aBoundRange.getWidth()), basegfx::fround(aBoundRange.getHeight())));
-            aRet = aMtf;
-        }
-    }
-
-    return aRet;
-}
+#include <fmobj.hxx>
+#include <vcl/svgdata.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -652,8 +586,6 @@ void SdrExchangeView::ImpPasteObject(SdrObject* pObj, SdrObjList& rLst, const ba
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
 BitmapEx SdrExchangeView::GetMarkedObjBitmapEx(bool bNoVDevIfOneBmpMarked) const
 {
 	BitmapEx aBmp;
@@ -679,17 +611,12 @@ BitmapEx SdrExchangeView::GetMarkedObjBitmapEx(bool bNoVDevIfOneBmpMarked) const
 
 		if( !aBmp )
 		{
-			const Graphic aGraphic(GetMarkedObjMetaFile(bNoVDevIfOneBmpMarked));
-            
-            // #i102089# support user's settings of AA and LineSnap when the MetaFile gets
-            // rasterconverted to a bitmap
-            const GraphicConversionParameters aParameters(
-                Size(),
-                false,
-                getOptionsDrawinglayer().IsAntiAliasing(),
-                getOptionsDrawinglayer().IsSnapHorVerLinesToDiscrete());
-
-            aBmp = aGraphic.GetBitmapEx(aParameters);
+            const GDIMetaFile aGDIMetaFile(GetMarkedObjMetaFile(bNoVDevIfOneBmpMarked));
+            const basegfx::B2DRange aAllObjRange(sdr::legacy::GetAllObjBoundRange(getSelectedSdrObjectVectorFromSdrMarkView()));
+           
+            aBmp = convertMetafileToBitmapEx(
+                aGDIMetaFile,
+                aAllObjRange);
 		}
 	}
 
@@ -733,28 +660,28 @@ GDIMetaFile SdrExchangeView::GetMarkedObjMetaFile(bool bNoVDevIfOneMtfMarked) co
 
 		if( !aMtf.GetActionCount() )
 		{
-			VirtualDevice   aOut;
-            Size            aDummySize( 2, 2 );
+			VirtualDevice aOut;
+            const Size aDummySize(2, 2);
 
             aOut.SetOutputSizePixel( aDummySize );
 			aOut.EnableOutput(false);
 			aOut.SetMapMode( aMap );
-
             aMtf.Clear();
-			aMtf.Record( &aOut );
-
-			// Replace offset given formally to DrawMarkedObj and used at XOutDev with relative
-			// MapMode (which was also used in XOutDev in that case). Goal is to paint the object
-			// as if TopLeft point is (0,0)
-			const Fraction aNeutralFraction(1, 1);
-			const MapMode aRelativeMapMode(MAP_RELATIVE, Point(-aBound.Left(), -aBound.Top()), aNeutralFraction, aNeutralFraction);
-			aOut.SetMapMode(aRelativeMapMode);
+			aMtf.Record(&aOut);
 
             DrawMarkedObj(aOut);
 
             aMtf.Stop();
 			aMtf.WindStart();
-		    aMtf.SetPrefMapMode( aMap );
+			
+            // moving the result is more reliable then setting a relative MapMode at the VDev (used
+            // before), also see #i99268# in GetObjGraphic() below. Some draw actions at
+            // the OutDev are simply not handled correctly when a MapMode is set at the
+            // target devive, e.g. MetaFloatTransparentAction. Even the Move for this action
+            // was missing the manipulation of the embedded Metafile
+			aMtf.Move(-aBound.Left(), -aBound.Top());
+
+            aMtf.SetPrefMapMode( aMap );
 
 			// removed PrefSize extension. It is principially wrong to set a reduced size at
 			// the created MetaFile. The mentioned errors occurr at output time since the integer
@@ -785,6 +712,76 @@ Graphic SdrExchangeView::GetAllMarkedGraphic() const
 		{
             aRet = GetMarkedObjMetaFile(false);
 		}
+    }
+
+    return aRet;
+}
+
+// -----------------------------------------------------------------------------
+
+Graphic GetObjGraphic(const SdrObject& rObj)
+{
+    Graphic aRet;
+
+    // try to get a graphic from the object first
+	const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(&rObj);
+	const SdrOle2Obj* pSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(&rObj);
+        
+	if(pSdrGrafObj)
+    {
+        if(pSdrGrafObj->isEmbeddedSvg())
+        {
+            // get Metafile for Svg content
+            aRet = pSdrGrafObj->getMetafileFromEmbeddedSvg();
+        }
+        else
+        {
+            // #110981# Make behaviour coherent with metafile
+            // recording below (which of course also takes
+            // view-transformed objects)
+            aRet = pSdrGrafObj->GetTransformedGraphic();
+        }
+    }
+    else if(pSdrOle2Obj)
+    {
+        if ( pSdrOle2Obj->GetGraphic() )
+		{
+            aRet = *pSdrOle2Obj->GetGraphic();
+        }
+    }
+
+        // if graphic could not be retrieved => go the hard way and create a MetaFile
+    if(GRAPHIC_NONE == aRet.GetType() || GRAPHIC_DEFAULT == aRet.GetType())
+    {
+    	const SdrModel& rSdrModel = rObj.getSdrModelFromSdrObject();
+		const MapMode aMap(
+            rSdrModel.GetExchangeObjectUnit(), 
+            Point(), 
+            rSdrModel.GetExchangeObjectScale(), 
+            rSdrModel.GetExchangeObjectScale());
+        VirtualDevice aOut;
+        GDIMetaFile aMtf;
+
+        aOut.EnableOutput(false);
+		aOut.SetMapMode(aMap);
+		aMtf.Record(&aOut);
+        rObj.SingleObjectPainter(aOut);
+        aMtf.Stop();
+		aMtf.WindStart();
+
+        if(aMtf.GetActionCount())
+		{
+		    // #i99268# replace the original offset from using XOutDev's SetOffset
+		    // NOT (as tried with #i92760#) with another MapMode which gets recorded
+		    // by the Metafile itself (what always leads to problems), but by
+		    // translating the result the hard way
+        	const basegfx::B2DRange aBoundRange(rObj.getObjectRange(0));
+            aMtf.Move(-basegfx::fround(aBoundRange.getMinX()), -basegfx::fround(aBoundRange.getMinY()));
+            
+            aMtf.SetPrefMapMode(aMap);
+		    aMtf.SetPrefSize(Size(basegfx::fround(aBoundRange.getWidth()), basegfx::fround(aBoundRange.getHeight())));
+            aRet = aMtf;
+        }
     }
 
     return aRet;

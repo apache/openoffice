@@ -286,25 +286,29 @@ String NameOrIndex::CheckNamedItem( const NameOrIndex* pCheckItem, const sal_uIn
 
 					switch( nWhich )
 					{
-					    case XATTR_FILLBITMAP:
-						    bFound =  (((XFillBitmapItem*)pCheckItem)->GetBitmapValue().GetGraphicObject().GetUniqueID() ==
-							    ((XBitmapEntry*)pEntry)->GetXBitmap().GetGraphicObject().GetUniqueID());
-						    break;
-					    case XATTR_LINEDASH:
-						    bFound = (((XLineDashItem*)pCheckItem)->GetDashValue() == ((XDashEntry*)pEntry) ->GetDash());
-						    break;
-					    case XATTR_LINESTART:
-						    bFound = (((XLineStartItem*)pCheckItem)->GetLineStartValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
-						    break;
-					    case XATTR_LINEEND:
-						    bFound = (((XLineEndItem*)pCheckItem)->GetLineEndValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
-						    break;
-					    case XATTR_FILLGRADIENT:
-						    bFound = (((XFillGradientItem*)pCheckItem)->GetGradientValue() == ((XGradientEntry*)pEntry)->GetGradient());
-						    break;
-					    case XATTR_FILLHATCH:
-						    bFound = (((XFillHatchItem*)pCheckItem)->GetHatchValue() == ((XHatchEntry*)pEntry)->GetHatch());
-						    break;
+					case XATTR_FILLBITMAP:
+                    {
+                        const GraphicObject& rGraphicObjectA(((XFillBitmapItem*)pCheckItem)->GetGraphicObject());
+                        const GraphicObject& rGraphicObjectB(((XBitmapEntry*)pEntry)->GetGraphicObject());
+						
+                        bFound = (rGraphicObjectA == rGraphicObjectB);
+						break;
+                    }
+					case XATTR_LINEDASH:
+						bFound = (((XLineDashItem*)pCheckItem)->GetDashValue() == ((XDashEntry*)pEntry) ->GetDash());
+						break;
+					case XATTR_LINESTART:
+						bFound = (((XLineStartItem*)pCheckItem)->GetLineStartValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
+						break;
+					case XATTR_LINEEND:
+						bFound = (((XLineEndItem*)pCheckItem)->GetLineEndValue() == ((XLineEndEntry*)pEntry)->GetLineEnd());
+						break;
+					case XATTR_FILLGRADIENT:
+						bFound = (((XFillGradientItem*)pCheckItem)->GetGradientValue() == ((XGradientEntry*)pEntry)->GetGradient());
+						break;
+					case XATTR_FILLHATCH:
+						bFound = (((XFillHatchItem*)pCheckItem)->GetHatchValue() == ((XHatchEntry*)pEntry)->GetHatch());
+						break;
 					}
 
 					if( bFound )

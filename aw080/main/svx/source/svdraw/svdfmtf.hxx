@@ -40,68 +40,48 @@ class SdrObject;
 class SvdProgressInfo;
 
 //************************************************************
-//   Hilfsklasse SdrObjRefList
-//************************************************************
-
-class SdrObjRefList
-{
-	Container					aList;
-public:
-
-	SdrObjRefList()
-	:	aList(1024,64,64)
-	{}
-
-	void Clear() { aList.Clear(); }
-	sal_uInt32 GetObjCount() const { return aList.Count(); }
-	SdrObject* GetObj(sal_uInt32 nNum) const { return (SdrObject*)aList.GetObject(nNum); }
-	SdrObject* operator[](sal_uInt32 nNum) const { return (SdrObject*)aList.GetObject(nNum); }
-	void InsertObject(SdrObject* pObj, sal_uInt32 nPos=CONTAINER_APPEND) { aList.Insert(pObj,nPos); }
-	void RemoveObject(sal_uInt32 nPos) { aList.Remove(nPos); }
-};
-
-//************************************************************
 //   Hilfsklasse ImpSdrGDIMetaFileImport
 //************************************************************
 
 class ImpSdrGDIMetaFileImport
 {
 protected:
-	SdrObjRefList				aTmpList;
-	VirtualDevice				aVD;
-	Rectangle					aScaleRect;
-	sal_uInt32					nMapScalingOfs; // ab hier nocht nicht mit MapScaling bearbeitet
-	SfxItemSet*					pLineAttr;
-	SfxItemSet*					pFillAttr;
-	SfxItemSet*					pTextAttr;
-	SdrPage*					pPage;
+    ::std::vector< SdrObject* > maTmpList;
+	VirtualDevice				maVD;
+    const basegfx::B2DHomMatrix maObjectTransform;  // transform from the original object
+    basegfx::B2DHomMatrix       maMetaToUnit;       // transform from meta coordinates to unit coodinates
+    basegfx::B2DHomMatrix       maCurrent;          // current transform from meta to new object
+	SfxItemSet*					mpLineAttr;
+	SfxItemSet*					mpFillAttr;
+	SfxItemSet*					mpTextAttr;
 	SdrModel&					mrModel;
-	SdrLayerID					nLayer;
-	Color						aOldLineColor;
-	sal_Int32					nLineWidth;
+	SdrLayerID					mnLayer;
+	Color						maOldLineColor;
+	sal_Int32					mnLineWidth;
 	basegfx::B2DLineJoin		maLineJoin;
 	com::sun::star::drawing::LineCap    maLineCap;
 	XDash						maDash;
 
-	bool						bMov;
-	bool						bSize;
-	Point						aOfs;
-    double                      fScaleX;
-    double                      fScaleY;
-	Fraction					aScaleX;
-	Fraction					aScaleY;
+    // clipregion
+    basegfx::B2DPolyPolygon     maClip;
 
-	bool	                    bFntDirty;
+    /// bitfield
+	bool                        mbFntDirty : 1;
 
 	// fuer Optimierung von (PenNULL,Brush,DrawPoly),(Pen,BrushNULL,DrawPoly) -> aus 2 mach ein
-	bool			            bLastObjWasPolyWithoutLine;
-	bool		                bNoLine;
-	bool	                    bNoFill;
+	bool                        mbLastObjWasPolyWithoutLine : 1;
+	bool                        mbNoLine : 1;
+	bool                        mbNoFill : 1;
 
 	// fuer Optimierung mehrerer Linien zu einer Polyline
-	bool	                    bLastObjWasLine;
+	bool                        mbLastObjWasLine : 1;
 
 protected:
+    // ckeck for clip and evtl. fill maClip
+    void checkClip();
+    bool isClip() const;
+
+    // actions
 	void DoAction(MetaPixelAction			& rAct);
 	void DoAction(MetaPointAction			& rAct);
 	void DoAction(MetaLineAction			& rAct);
@@ -122,39 +102,64 @@ protected:
 	void DoAction(MetaBmpExAction			& rAct);
 	void DoAction(MetaBmpExScaleAction		& rAct);
 	void DoAction(MetaHatchAction			& rAct);
-	void DoAction(MetaLineColorAction		& rAct);
+	void DoAction(MetaLineColorAction		& rAct) { rAct.Execute(&maVD); }
 	void DoAction(MetaMapModeAction			& rAct);
-	void DoAction(MetaFillColorAction		& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaTextColorAction		& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaTextFillColorAction	& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaFontAction			& rAct) { rAct.Execute(&aVD); bFntDirty=sal_True; }
-	void DoAction(MetaTextAlignAction		& rAct) { rAct.Execute(&aVD); bFntDirty=sal_True; }
-	void DoAction(MetaClipRegionAction		& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaRasterOpAction		& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaPushAction			& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaPopAction				& rAct) { rAct.Execute(&aVD); bFntDirty=sal_True; }
-	void DoAction(MetaMoveClipRegionAction	& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaISectRectClipRegionAction& rAct) { rAct.Execute(&aVD); }
-	void DoAction(MetaISectRegionClipRegionAction& rAct) { rAct.Execute(&aVD); }
+	void DoAction(MetaFillColorAction		& rAct) { rAct.Execute(&maVD); }
+	void DoAction(MetaTextColorAction		& rAct) { rAct.Execute(&maVD); }
+	void DoAction(MetaTextFillColorAction	& rAct) { rAct.Execute(&maVD); }
+	void DoAction(MetaFontAction			& rAct) { rAct.Execute(&maVD); mbFntDirty = true; }
+	void DoAction(MetaTextAlignAction		& rAct) { rAct.Execute(&maVD); mbFntDirty = true; }
+	void DoAction(MetaClipRegionAction		& rAct) { rAct.Execute(&maVD); checkClip(); }
+	void DoAction(MetaRasterOpAction		& rAct) { rAct.Execute(&maVD); }
+	void DoAction(MetaPushAction			& rAct) { rAct.Execute(&maVD); checkClip(); }
+	void DoAction(MetaPopAction				& rAct) { rAct.Execute(&maVD); mbFntDirty = true; checkClip(); }
+	void DoAction(MetaMoveClipRegionAction	& rAct) { rAct.Execute(&maVD); checkClip(); }
+	void DoAction(MetaISectRectClipRegionAction& rAct) { rAct.Execute(&maVD); checkClip(); }
+	void DoAction(MetaISectRegionClipRegionAction& rAct) { rAct.Execute(&maVD); checkClip(); }
 	void DoAction(MetaCommentAction& rAct, GDIMetaFile* pMtf);
 
-	void ImportText( const Point& rPos, const XubString& rStr, const MetaAction& rAct );
+    // missing actions added
+    void DoAction(MetaTextRectAction& rAct);
+    void DoAction(MetaBmpScalePartAction& rAct);
+    void DoAction(MetaBmpExScalePartAction& rAct);
+    void DoAction(MetaMaskAction& rAct);
+    void DoAction(MetaMaskScaleAction& rAct);
+    void DoAction(MetaMaskScalePartAction& rAct);
+    void DoAction(MetaGradientAction& rAct);
+    void DoAction(MetaWallpaperAction& rAct);
+    void DoAction(MetaTransparentAction& rAct);
+    void DoAction(MetaEPSAction& rAct);
+    void DoAction(MetaRefPointAction& rAct)  { rAct.Execute(&maVD); }
+    void DoAction(MetaTextLineColorAction& rAct)  { rAct.Execute(&maVD); mbFntDirty = true; }
+    void DoAction(MetaTextLineAction& rAct);
+    void DoAction(MetaFloatTransparentAction& rAct);
+    void DoAction(MetaGradientExAction& rAct);
+    void DoAction(MetaLayoutModeAction& rAct)  { rAct.Execute(&maVD); mbFntDirty = true; }
+    void DoAction(MetaTextLanguageAction& rAct)  { rAct.Execute(&maVD); mbFntDirty = true; }
+    void DoAction(MetaOverlineColorAction& rAct)  { rAct.Execute(&maVD); mbFntDirty = true; }
+
+	void ImportText(const Point& rPos, const XubString& rStr, const MetaAction& rAct);
 	void SetAttributes(SdrObject* pObj, bool bForceTextAttr = false);
-	void InsertObj( SdrObject* pObj, bool bScale = true );
-	void MapScaling();
+	void InsertObj(SdrObject* pObj);
 
 	// #i73407# reformulation to use new B2DPolygon classes
 	bool CheckLastLineMerge(const basegfx::B2DPolygon& rSrcPoly);
 	bool CheckLastPolyLineAndFillMerge(const basegfx::B2DPolyPolygon& rPolyPolygon);
+    
+    void DoLoopActions(GDIMetaFile& rMtf, SvdProgressInfo* pProgrInfo, sal_uInt32* pActionsToReport);
 
 public:
-	ImpSdrGDIMetaFileImport(SdrModel& rModel);
+	ImpSdrGDIMetaFileImport(
+        SdrModel& rModel, 
+        SdrLayerID nLay, 
+        const basegfx::B2DHomMatrix& rObjectTransform);
 	~ImpSdrGDIMetaFileImport();
-	sal_uInt32 DoImport(const GDIMetaFile& rMtf, SdrObjList& rDestList, sal_uInt32 nInsPos = CONTAINER_APPEND, SvdProgressInfo *pProgrInfo = NULL);
-	void SetLayer(SdrLayerID nLay) { nLayer=nLay; }
-	SdrLayerID GetLayer() const { return nLayer; }
-	void SetScaleRect(const Rectangle& rRect) { aScaleRect=rRect; }
-	const Rectangle& GetScaleRect() const { return aScaleRect; }
+
+    sal_uInt32 DoImport(
+        const GDIMetaFile& rMtf, 
+        SdrObjList& rDestList, 
+        sal_uInt32 nInsPos = CONTAINER_APPEND, 
+        SvdProgressInfo* pProgrInfo = 0);
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

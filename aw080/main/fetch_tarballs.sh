@@ -51,7 +51,6 @@ if [ -x /usr/bin/fetch ]; then
     fetch_bin=/usr/bin/fetch
     fetch_args="-Fpr"
     echo found FreeBSD fetch: $fetch_bin
-    break 2
 else
   for wg in wget /usr/bin/wget /usr/local/bin/wget /usr/sfw/bin/wget /opt/sfw/bin/wget /opt/local/bin/wget; do
     eval "$wg --version" > /dev/null 2>&1
@@ -189,7 +188,7 @@ echo "downloading tar balls to $TARFILE_LOCATION"
 
 while read line ; do
     # Remove leading and trailing space and comments
-    line=`echo $line | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/[[:space:]]*#.*$//'`
+    line=`echo $line | sed 's/^\s*//;s/\s*$//;s/\s*#.*$//'`
     case $line in
         # Ignore empty lines.
         '')

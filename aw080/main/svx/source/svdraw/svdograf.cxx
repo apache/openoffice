@@ -53,7 +53,6 @@
 #include "svtools/filter.hxx"
 #include <svx/svdograf.hxx>
 #include <svx/svdogrp.hxx>
-#include <svx/xbitmap.hxx>
 #include <svx/xbtmpit.hxx>
 #include <svx/xflbmtit.hxx>
 #include <svx/svdundo.hxx>
@@ -68,6 +67,8 @@
 #include <svx/sdr/primitive2d/sdrattributecreator.hxx>
 #include <osl/thread.hxx>
 #include <vos/mutex.hxx>
+#include <drawinglayer/processor2d/objectinfoextractor2d.hxx>
+#include <drawinglayer/primitive2d/objectinfoprimitive2d.hxx>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::io;
@@ -312,6 +313,58 @@ sdr::contact::ViewContact* SdrGrafObj::CreateObjectSpecificViewContact()
 }
 
 //////////////////////////////////////////////////////////////////////////////
+// check if SVG and if try to get ObjectInfoPrimitive2D and extract info
+
+void SdrGrafObj::onGraphicChanged()
+{
+    String aName;
+    String aTitle;
+    String aDesc;
+
+    if(pGraphic)
+    {
+        const SvgDataPtr& rSvgDataPtr = pGraphic->GetGraphic().getSvgData();
+
+        if(rSvgDataPtr.get())
+        {
+            const drawinglayer::primitive2d::Primitive2DSequence aSequence(rSvgDataPtr->getPrimitive2DSequence());
+
+            if(aSequence.hasElements())
+            {
+                drawinglayer::geometry::ViewInformation2D aViewInformation2D;
+                drawinglayer::processor2d::ObjectInfoPrimitiveExtractor2D aProcessor(aViewInformation2D);
+
+                aProcessor.process(aSequence);
+
+                const drawinglayer::primitive2d::ObjectInfoPrimitive2D* pResult = aProcessor.getResult();
+
+                if(pResult)
+                {
+                    aName = pResult->getName();
+			        aTitle = pResult->getTitle();
+			        aDesc = pResult->getDesc();
+                }
+            }
+        }
+    }
+
+    if(aName.Len())
+    {
+        SetName(aName);
+    }
+
+    if(aTitle.Len())
+    {
+    	SetTitle(aTitle);
+    }
+
+    if(aDesc.Len())
+    {
+    	SetDescription(aDesc);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
 
 SdrGrafObj::SdrGrafObj(
 	SdrModel& rSdrModel, 
@@ -326,6 +379,7 @@ SdrGrafObj::SdrGrafObj(
 	pGraphic = new GraphicObject( rGrf );
     mpReplacementGraphic = 0;
 	pGraphic->SetSwapStreamHdl( LINK( this, SdrGrafObj, ImpSwapHdl ), SWAPGRAPHIC_TIMEOUT );
+    onGraphicChanged();
 	
     // #i118485# Shear allowed and possible now
     bNoShear = false;
@@ -369,6 +423,7 @@ void SdrGrafObj::copyDataFromSdrObject(const SdrObject& rSource)
 			}
 
 			ImpSetAttrToGrafInfo();
+            onGraphicChanged();
 		}
 		else
 		{
@@ -412,6 +467,7 @@ void SdrGrafObj::SetGraphicObject( const GraphicObject& rGrfObj )
 	pGraphic->SetUserData();
 	mbIsPreview = false;
 	SetChanged();
+    onGraphicChanged();
 }
 
 // -----------------------------------------------------------------------------
@@ -451,6 +507,7 @@ void SdrGrafObj::SetGraphic( const Graphic& rGrf )
     mpReplacementGraphic = 0;
 	pGraphic->SetUserData();
 	mbIsPreview = false;
+    onGraphicChanged();
 	SetChanged();
 }
 
@@ -1030,15 +1087,8 @@ SdrObject* SdrGrafObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) con
 		case GRAPHIC_GDIMETAFILE:
 		{
 			// NUR die aus dem MetaFile erzeugbaren Objekte in eine Gruppe packen und zurueckliefern
+			ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrObject(), GetLayer(), getSdrObjectTransformation());
 			SdrObjGroup* pGrp = new SdrObjGroup(getSdrModelFromSdrObject());
-			ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrObject());
-			const Rectangle aCurrRect(sdr::legacy::GetSnapRect(*this));
-			Point aOutPos( aCurrRect.TopLeft() );
-			const Size aOutSiz( aCurrRect.GetSize() );
-
-			aFilter.SetScaleRect(aCurrRect);
-			aFilter.SetLayer(GetLayer());
-
 			const sal_uInt32 nInsAnz(aFilter.DoImport(GetTransformedGraphic().GetGDIMetaFile(), *pGrp, 0));
 
 			if(nInsAnz)
@@ -1119,12 +1169,12 @@ SdrObject* SdrGrafObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) con
 			{
 				// Bitmap als Fuellung holen
 				SfxItemSet aSet(GetObjectItemSet());
+				const BitmapEx aBitmapEx(GetTransformedGraphic().GetBitmapEx());
 
 				aSet.Put(XFillStyleItem(XFILL_BITMAP));
-				Bitmap aBitmap( GetTransformedGraphic().GetBitmap() );
-				XOBitmap aXBmp(aBitmap, XBITMAP_STRETCH);
-				aSet.Put(XFillBitmapItem(String(), aXBmp));
+				aSet.Put(XFillBitmapItem(String(), Graphic(aBitmapEx)));
 				aSet.Put(XFillBmpTileItem(false));
+                aSet.Put(SfxBoolItem(XATTR_FILLBMP_STRETCH, true));
 
 				pRetval->SetMergedItemSet(aSet);
 			}

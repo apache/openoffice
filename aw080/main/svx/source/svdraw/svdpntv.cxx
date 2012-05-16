@@ -73,6 +73,8 @@
 #include <svx/sdr/contact/viewcontact.hxx>
 #include <svx/svdlegacy.hxx>
 #include <basegfx/numeric/ftools.hxx>
+#include <drawinglayer/primitive2d/metafileprimitive2d.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
 
 using namespace ::rtl;
 using namespace ::com::sun::star;
@@ -187,6 +189,32 @@ public:
     	}
     }
 };
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BitmapEx convertMetafileToBitmapEx(
+    const GDIMetaFile& rMtf, 
+    const basegfx::B2DRange& rTargetRange,
+    const sal_uInt32 nMaximumQuadraticPixels)
+{
+    BitmapEx aBitmapEx;
+
+    if(rMtf.GetActionCount())
+    {
+		const drawinglayer::primitive2d::Primitive2DReference aMtf(
+			new drawinglayer::primitive2d::MetafilePrimitive2D(
+				basegfx::tools::createScaleTranslateB2DHomMatrix(
+                    rTargetRange.getRange(),
+                    rTargetRange.getMinimum()),
+				rMtf));
+        aBitmapEx = convertPrimitive2DSequenceToBitmapEx(
+    		drawinglayer::primitive2d::Primitive2DSequence(&aMtf, 1),
+            rTargetRange,
+            nMaximumQuadraticPixels);
+    }
+
+    return aBitmapEx;
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -780,7 +808,7 @@ void SdrPaintView::EndCompleteRedraw(SdrPaintWindow& rPaintWindow, bool bPaintFo
 			static_cast< SdrView* >(this)->TextEditDrawing(rPaintWindow);
 		}
 
-			// draw Overlay, also to PreRender device if exists
+        // draw Overlay, also to PreRender device if exists
 		rPaintWindow.DrawOverlay(rPaintWindow.GetRedrawRegion());
 
 		// output PreRendering
@@ -866,6 +894,8 @@ void SdrPaintView::EndDrawLayers(SdrPaintWindow& rPaintWindow, bool bPaintFormLa
 		mpPageView->setPreparedPageWindow(0);
 	}
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrPaintView::ImpFormLayerDrawing(SdrPaintWindow& rPaintWindow) const
 {

@@ -102,8 +102,10 @@ void SdrPreRenderDevice::OutputPreRenderDevice(const Region& rExpandedRegion)
 	maPreRenderDevice.EnableMapMode(bMapModeWasEnabledSource);
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 void SdrPaintWindow::impCreateOverlayManager()
-    {
+{
 	// not yet one created?
 	if(!mpOverlayManager)
 	{
