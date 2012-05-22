@@ -105,9 +105,6 @@ protected:
 
 	sal_Bool		bModifyLocked	:1;
     sal_Bool        bNewModel       :1; // sal_False: old SubTableModel; sal_True: new RowSpanModel
-#ifdef DBG_UTIL
-    bool bDontChangeModel;  // This is set by functions (like Merge()) to forbid a laet model change
-#endif
 
 	sal_Bool IsModifyLocked(){ return bModifyLocked;}
 
@@ -203,18 +200,12 @@ public:
 	sal_Bool Merge( SwDoc* pDoc, const SwSelBoxes& rBoxes, const SwSelBoxes& rMerged,
 				SwTableBox* pMergeBox, SwUndoTblMerge* pUndo = 0 )
     {
-#ifdef DBG_UTIL
-        bDontChangeModel = true;
-#endif
         return bNewModel ? NewMerge( pDoc, rBoxes, rMerged, pMergeBox, pUndo ) :
                            OldMerge( pDoc, rBoxes, pMergeBox, pUndo );
     }
     sal_Bool SplitRow( SwDoc* pDoc, const SwSelBoxes& rBoxes, sal_uInt16 nCnt=1,
                    sal_Bool bSameHeight = sal_False )
     {
-#ifdef DBG_UTIL
-        bDontChangeModel = true;
-#endif
         return bNewModel ? NewSplitRow( pDoc, rBoxes, nCnt, bSameHeight ) :
                            OldSplitRow( pDoc, rBoxes, nCnt, bSameHeight );
     }

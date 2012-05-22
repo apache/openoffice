@@ -157,7 +157,7 @@ public:
 
     DECL_LINK( NotifyHdl, EENotify* );
 
-	void ChangeModel( SdrModel* pNewModel );
+//CMCX	void ChangeModel( SdrModel* pNewModel );
 };
 
 //------------------------------------------------------------------------
@@ -256,43 +256,43 @@ void SAL_CALL CellEditSourceImpl::release()
 		delete this;
 }	
 
-void CellEditSourceImpl::ChangeModel( SdrModel* pNewModel )
-{
-	if( mpModel != pNewModel )
-	{
-		if( mpOutliner )
-		{
-			if( mpModel )
-				mpModel->disposeOutliner( mpOutliner );
-			else
-				delete mpOutliner;
-			mpOutliner = 0;
-		}
-
-		if( mpView )
-		{
-			EndListening( *mpView );
-			mpView = 0;
-		}
-
-		mpWindow = 0;
-		mxLinguServiceManager.clear();
-
-		mpModel = pNewModel;
-
-		if( mpTextForwarder )
-		{
-	        delete mpTextForwarder;
-		    mpTextForwarder = 0;
-		}
-
-		if( mpViewForwarder )
-		{
-			delete mpViewForwarder;
-			mpViewForwarder = 0;
-		}
-	}
-}
+//CMCXvoid CellEditSourceImpl::ChangeModel( SdrModel* pNewModel )
+//CMCX{
+//CMCX	if( mpModel != pNewModel )
+//CMCX	{
+//CMCX		if( mpOutliner )
+//CMCX		{
+//CMCX			if( mpModel )
+//CMCX				mpModel->disposeOutliner( mpOutliner );
+//CMCX			else
+//CMCX				delete mpOutliner;
+//CMCX			mpOutliner = 0;
+//CMCX		}
+//CMCX
+//CMCX		if( mpView )
+//CMCX		{
+//CMCX			EndListening( *mpView );
+//CMCX			mpView = 0;
+//CMCX		}
+//CMCX
+//CMCX		mpWindow = 0;
+//CMCX		mxLinguServiceManager.clear();
+//CMCX
+//CMCX		mpModel = pNewModel;
+//CMCX
+//CMCX		if( mpTextForwarder )
+//CMCX		{
+//CMCX	        delete mpTextForwarder;
+//CMCX		    mpTextForwarder = 0;
+//CMCX		}
+//CMCX
+//CMCX		if( mpViewForwarder )
+//CMCX		{
+//CMCX			delete mpViewForwarder;
+//CMCX			mpViewForwarder = 0;
+//CMCX		}
+//CMCX	}
+//CMCX}
 
 //------------------------------------------------------------------------
 
@@ -1044,10 +1044,10 @@ const SvxUnoTextRangeBaseList& CellEditSource::getRanges() const
 
 //------------------------------------------------------------------------
 
-void CellEditSource::ChangeModel( SdrModel* pNewModel )
-{
-	mpImpl->ChangeModel( pNewModel );
-}
+//CMCXvoid CellEditSource::ChangeModel( SdrModel* pNewModel )
+//CMCX{
+//CMCX	mpImpl->ChangeModel( pNewModel );
+//CMCX}
 
 //------------------------------------------------------------------------
 

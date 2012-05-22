@@ -98,9 +98,10 @@ void FuConstructArc::DoExecute( SfxRequest& rReq )
 			basegfx::tools::createScaleTranslateB2DHomMatrix(
 				nWidth, nHeight,
 				pCenterX->GetValue() - (nWidth / 2), pCenterY->GetValue() - (nHeight / 2)));
-		// TTTT needs check
-		const double fStart((((1800 - pPhiStart->GetValue()) % 1800) * F_PI) / 1800.0);
-		const double fEnd((((1800 - pPhiEnd->GetValue()) % 1800) * F_PI) / 1800.0);
+
+        // could not check, found to case to trigger this
+        const double fStart((1800 - pPhiStart->GetValue()) * F_PI1800);
+        const double fEnd((1800 - pPhiEnd->GetValue()) * F_PI1800);
 
 		// sets aObjKind
 		Activate();
@@ -312,6 +313,13 @@ SdrObject* FuConstructArc::CreateDefaultObject(const sal_uInt16 nID, const baseg
 			}
 
 			sdr::legacy::SetLogicRange(*pSdrCircObj, aRange);
+
+            if(SID_DRAW_ARC != nID || SID_DRAW_CIRCLEARC != nID)
+            {
+                // no full circle, set angles to gat a 3/4 circle
+				pSdrCircObj->SetStartAngle(M_PI + M_PI_2); // was: 9000
+				pSdrCircObj->SetEndAngle(0.0); // was: 0
+            }
 
 			if(SID_DRAW_PIE_NOFILL == nID ||
 				SID_DRAW_CIRCLEPIE_NOFILL == nID ||

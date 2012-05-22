@@ -525,7 +525,7 @@ bool FuSelection::MouseButtonDown(const MouseEvent& rMEvt)
 						// pending change and a new one will be created. Need to force
 						// that change to get the new created pHdl to not continue
 						// processing on the dying one
-						if(mpView->isSelectionChangePending())
+						if(mpView->isSelectionChangePending()) // TTTT: Check again: Is this needed?
 						{
 							mpView->forceSelectionChange();
 							pHdl = mpView->PickHandle(aMDPos);

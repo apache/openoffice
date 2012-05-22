@@ -183,7 +183,7 @@ public:
     void TakeSdrObjectOwnership();
     bool HasSdrObjectOwnership() const;
 
-	void ChangeModel( SdrModel* pNewModel );
+//CMCX	void ChangeModel( SdrModel* pNewModel );
 
 	void InvalidateSdrObject() { mpObj.reset( NULL ); };
 	const SvxItemPropertySet& GetPropertySet() { return *mpPropSet; }

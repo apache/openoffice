@@ -228,6 +228,7 @@ protected:
 	// ist durch ein SdrRectObj mit bTextFrame=true realisiert.
 	bool						bTextFrame : 1;
 	bool						bPortionInfoChecked : 1; // Fuer Optimierung von Textobjekten
+    // TTTT: These maybe obsolete
 	bool						bNoShear : 1;            // Obj darf nicht gesheart werden   (->Graf+Ole+TextFrame)
 	bool						bNoRotate : 1;           // Obj darf nicht gedreht werden    (->Ole)
 	bool						bNoMirror : 1;           // Obj darf nicht gespiegelt werden (->Ole,TextFrame)

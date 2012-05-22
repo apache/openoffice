@@ -1163,39 +1163,13 @@ IMapObject* SdDrawDocument::GetHitIMapObject( SdrObject* pObj,
 		
 		if ( pGrafObj  ) // einfaches Grafik-Objekt
 		{
-			basegfx::B2DVector aScale;
-			basegfx::B2DPoint aTranslate;
-			double fRotate, fShearX;
-			pGrafObj->getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
+            // remove shear, mirror and rotation; so just absolute scale and translation get applied
+        	basegfx::B2DHomMatrix aJustAbsScaleTranslate(pGrafObj->getSdrObjectTransformation());
 
-			if(!basegfx::fTools::equalZero(fRotate))
-		{
-				basegfx::B2DHomMatrix aTrans;
-
-				aTrans.translate(-aLogicRange.getMinimum());
-				aTrans.rotate(-fRotate);
-				aTrans.translate(aLogicRange.getMinimum());
-
-				aRelPoint = aTrans * aRelPoint;
-			}
-
-			// Spiegelung rueckgaengig
-			if(basegfx::fTools::less(aScale.getX(), 0.0))
-			{
-				aRelPoint.setX(aLogicRange.getMaxX() + aLogicRange.getMinX() - aRelPoint.getX());
-			}
-
-			// ggf. Unshear:
-			if(!basegfx::fTools::equalZero(fShearX))
-			{
-				basegfx::B2DHomMatrix aTrans;
-
-				aTrans.translate(-aLogicRange.getMinimum());
-				aTrans.shearX(-fShearX);
-				aTrans.translate(aLogicRange.getMinimum());
-
-				aRelPoint = aTrans * aRelPoint;
-			}
+            aJustAbsScaleTranslate.invert();
+            aJustAbsScaleTranslate.scale(basegfx::absolute(pGrafObj->getSdrObjectScale()));
+            aJustAbsScaleTranslate.translate(pGrafObj->getSdrObjectTranslate());
+            aRelPoint = aJustAbsScaleTranslate * aRelPoint;
 
 			if ( pGrafObj->GetGrafPrefMapMode().GetMapUnit() == MAP_PIXEL )
 				aGraphSize = Application::GetDefaultDevice()->PixelToLogic( pGrafObj->GetGrafPrefSize(), aMap100 );

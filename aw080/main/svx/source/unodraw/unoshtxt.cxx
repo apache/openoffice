@@ -162,7 +162,7 @@ public:
 
     DECL_LINK( NotifyHdl, EENotify* );
 
-	void ChangeModel( SdrModel* pNewModel );
+//CMCX	void ChangeModel( SdrModel* pNewModel );
 
     void                    UpdateOutliner();
 };
@@ -310,50 +310,50 @@ void SAL_CALL SvxTextEditSourceImpl::release()
 		delete this;
 }	
 
-void SvxTextEditSourceImpl::ChangeModel( SdrModel* pNewModel )
-{
-	if( mpModel != pNewModel )
-	{
-		if( mpModel )
-			EndListening( *mpModel );
-
-		if( mpOutliner )
-		{
-			if( mpModel )
-				mpModel->disposeOutliner( mpOutliner );
-			else
-				delete mpOutliner;
-			mpOutliner = 0;
-		}
-
-		if( mpView )
-		{
-			EndListening( *mpView );
-			mpView = 0;
-		}
-
-		mpWindow = 0;
-		m_xLinguServiceManager.clear();
-		mpOwner = 0;
-
-		mpModel = pNewModel;
-
-		if( mpTextForwarder )
-		{
-	        delete mpTextForwarder;
-		    mpTextForwarder = 0;
-		}
-
-		if( mpViewForwarder )
-		{
-			delete mpViewForwarder;
-			mpViewForwarder = 0;
-		}
-
-		if( mpModel )
-			StartListening( *mpModel );
-	}
-}
+//CMCXvoid SvxTextEditSourceImpl::ChangeModel( SdrModel* pNewModel )
+//CMCX{
+//CMCX	if( mpModel != pNewModel )
+//CMCX	{
+//CMCX		if( mpModel )
+//CMCX			EndListening( *mpModel );
+//CMCX
+//CMCX		if( mpOutliner )
+//CMCX		{
+//CMCX			if( mpModel )
+//CMCX				mpModel->disposeOutliner( mpOutliner );
+//CMCX			else
+//CMCX				delete mpOutliner;
+//CMCX			mpOutliner = 0;
+//CMCX		}
+//CMCX
+//CMCX		if( mpView )
+//CMCX		{
+//CMCX			EndListening( *mpView );
+//CMCX			mpView = 0;
+//CMCX		}
+//CMCX
+//CMCX		mpWindow = 0;
+//CMCX		m_xLinguServiceManager.clear();
+//CMCX		mpOwner = 0;
+//CMCX
+//CMCX		mpModel = pNewModel;
+//CMCX
+//CMCX		if( mpTextForwarder )
+//CMCX		{
+//CMCX	        delete mpTextForwarder;
+//CMCX		    mpTextForwarder = 0;
+//CMCX		}
+//CMCX
+//CMCX		if( mpViewForwarder )
+//CMCX		{
+//CMCX			delete mpViewForwarder;
+//CMCX			mpViewForwarder = 0;
+//CMCX		}
+//CMCX
+//CMCX		if( mpModel )
+//CMCX			StartListening( *mpModel );
+//CMCX	}
+//CMCX}
 
 //------------------------------------------------------------------------
 
@@ -1163,10 +1163,10 @@ const SvxUnoTextRangeBaseList& SvxTextEditSource::getRanges() const
 	return mpImpl->getRanges();
 }
 
-void SvxTextEditSource::ChangeModel( SdrModel* pNewModel )
-{
-	mpImpl->ChangeModel( pNewModel );
-}
+//CMCXvoid SvxTextEditSource::ChangeModel( SdrModel* pNewModel )
+//CMCX{
+//CMCX	mpImpl->ChangeModel( pNewModel );
+//CMCX}
 
 void SvxTextEditSource::UpdateOutliner()
 {

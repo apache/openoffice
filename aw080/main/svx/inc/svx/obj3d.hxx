@@ -83,7 +83,7 @@ public:
 class SVX_DLLPUBLIC E3dObject : public SdrAttrObj
 {
 private:
- protected:
+protected:
 	virtual sdr::properties::BaseProperties* CreateObjectSpecificProperties();
 
 	basegfx::B3DRange			maLocalBoundVol;	// umschliessendes Volumen des Objekts (aus geometrieerzeugung)

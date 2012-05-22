@@ -521,7 +521,7 @@ const Graphic& SdrGrafObj::GetGraphic() const
 
 // -----------------------------------------------------------------------------
 
-Graphic SdrGrafObj::GetTransformedGraphic( sal_uIntPtr nTransformFlags ) const
+Graphic SdrGrafObj::GetTransformedGraphic( sal_uIntPtr nTransformFlags ) const // TTTT needed?
 {
     // #107947# Refactored most of the code to GraphicObject, where
     // everybody can use e.g. the cropping functionality

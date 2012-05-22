@@ -4637,6 +4637,14 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 ::com::sun::star::awt::Rectangle aNewRect;
                 aPropOpt.CreatePolygonProperties( mXPropSet, ESCHER_CREATEPOLYGON_LINE, sal_False, aNewRect, NULL );
+
+                // remember hor/ver mirror; it is part of aNewRect since it gets created
+                // from the two single points of the line. It's needed for thr flags below.
+                // If the flags are not set the line gets also exported correctly, but start
+                // and end point may be exchanged.
+                const bool bMirrorX(aNewRect.Width < 0);
+                const bool bMirrorY(aNewRect.Height < 0);
+
                 maRange = ImplMapRectangle( aNewRect );
                 maPosition = ::com::sun::star::awt::Point(basegfx::fround(maRange.getMinX()), basegfx::fround(maRange.getMinY()));
                 maSize = ::com::sun::star::awt::Size(basegfx::fround(maRange.getWidth()), basegfx::fround(maRange.getHeight()));
@@ -4648,14 +4656,17 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     mpPptEscherEx->EnterGroup( &maRange,0 );
                 }
                 mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
-				// TTTT: Here, mirroring will NO LONGER be part of maRange since Top() being
-				// more than Bottom() is not possible with basegfx::B2DRange (!!!)
-				// Seems to be still in aNewRect ?!?
                 sal_uInt32 nFlags = 0xa00;                                  // Flags: Connector | HasSpt
-                if ( maRange.getMinX() > maRange.getMaxX() )
+                
+                if(bMirrorX)
+                {
                     nFlags |= 0x80;                                         // Flags: VertMirror
-                if ( maRange.getMinX() > maRange.getMaxX() )
+                }
+
+                if(bMirrorY)
+                {
                     nFlags |= 0x40;                                         // Flags: HorzMirror
+                }
 
                 ImplCreateShape( ESCHER_ShpInst_Line, nFlags, aSolverContainer );
                 aPropOpt.AddOpt( ESCHER_Prop_shapePath, ESCHER_ShapeComplex );

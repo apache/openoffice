@@ -1990,43 +1990,17 @@ IMapObject*	ScDrawLayer::GetHitIMapObject(SdrObject& rObj,	const basegfx::B2DPoi
 
 		if ( pGrafObj  ) // einfaches Grafik-Objekt
 		{
-			const Graphic&		rGraphic = pGrafObj->GetGraphic();
-			basegfx::B2DVector aScale;
-			basegfx::B2DPoint aTranslate;
-			double fRotate, fShearX;
-			pGrafObj->getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
+            // remove shear, mirror and rotation; so just absolute scale and translation get applied
+        	basegfx::B2DHomMatrix aJustAbsScaleTranslate(pGrafObj->getSdrObjectTransformation());
 
-			// Drehung rueckgaengig
-			if(!basegfx::fTools::equalZero(fRotate))
-			{
-				basegfx::B2DHomMatrix aTrans;
+            aJustAbsScaleTranslate.invert();
+            aJustAbsScaleTranslate.scale(basegfx::absolute(pGrafObj->getSdrObjectScale()));
+            aJustAbsScaleTranslate.translate(pGrafObj->getSdrObjectTranslate());
+            aRelPoint = aJustAbsScaleTranslate * aRelPoint;
 
-				aTrans.translate(-aLogRange.getMinimum());
-				aTrans.rotate(-fRotate);
-				aTrans.translate(aLogRange.getMinimum());
+			const Graphic& rGraphic = pGrafObj->GetGraphic();
 
-				aRelPoint = aTrans * aRelPoint;
-			}
-
-			// Spiegelung rueckgaengig
-			if(basegfx::fTools::less(aScale.getX(), 0.0))
-			{
-				aRelPoint.setX(aLogRange.getMaxX() + aLogRange.getMinX() - aRelPoint.getX());
-			}
-
-			// ggf. Unshear:
-			if(!basegfx::fTools::equalZero(fShearX))
-			{
-				basegfx::B2DHomMatrix aTrans;
-
-				aTrans.translate(-aLogRange.getMinimum());
-				aTrans.shearX(-fShearX);
-				aTrans.translate(aLogRange.getMinimum());
-
-				aRelPoint = aTrans * aRelPoint;
-			}
-
-			if ( rGraphic.GetPrefMapMode().GetMapUnit() == MAP_PIXEL )
+            if ( rGraphic.GetPrefMapMode().GetMapUnit() == MAP_PIXEL )
 			{
 				aGraphSize = rCmpWnd.PixelToLogic( rGraphic.GetPrefSize(), MapMode( MAP_100TH_MM ) );
 			}

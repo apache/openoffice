@@ -1138,17 +1138,11 @@ bool SvxShapePolyPolygon::setPropertyValueImpl( const ::rtl::OUString& rName, co
 
                         // BaseGeometry means the polygon is just scaled, but has no position, shear
                         // or rotation. Apply these current values from the object
-			            basegfx::B2DTuple aScale;
-			            basegfx::B2DTuple aTranslate;
-			            double fRotate, fShearX;
-            			
-			            mpObj->getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
-				        
                         const basegfx::B2DHomMatrix aNoScaleTrans(
                             basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
-					            fShearX,
-					            fRotate,
-					            aTranslate));
+					            mpObj->getSdrObjectShearX(),
+					            mpObj->getSdrObjectRotate(),
+					            mpObj->getSdrObjectTranslate()));
 
                         aNewPolyPolygon.transform(aNoScaleTrans);
 
@@ -1417,17 +1411,11 @@ bool SvxShapePolyPolygonBezier::setPropertyValueImpl( const ::rtl::OUString& rNa
 
                         // BaseGeometry means the polygon is just scaled, but has no position, shear
                         // or rotation. Apply these current values from the object
-			            basegfx::B2DTuple aScale;
-			            basegfx::B2DTuple aTranslate;
-			            double fRotate, fShearX;
-
-			            mpObj->getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
-
                         const basegfx::B2DHomMatrix aNoScaleTrans(
                             basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
-					            fShearX,
-					            fRotate,
-					            aTranslate));
+					            mpObj->getSdrObjectShearX(),
+					            mpObj->getSdrObjectRotate(),
+					            mpObj->getSdrObjectTranslate()));
 
                         aNewPolyPolygon.transform(aNoScaleTrans);
 
@@ -1932,7 +1920,7 @@ OUString SAL_CALL SvxCustomShape::getShapeType()
 
 //------------------------------------------------------------------1----
 
-Polygon Rect2Poly(const Rectangle& rRect, long aOldRotation, long aOldShear)
+Polygon Rect2Poly(const Rectangle& rRect, long aOldRotation, long aOldShear) // TTTT needed?
 {
 	Polygon aPol(5);
 	aPol[0]=rRect.TopLeft();
@@ -1950,7 +1938,7 @@ Polygon Rect2Poly(const Rectangle& rRect, long aOldRotation, long aOldShear)
 	return aPol;
 }
 
-void Poly2Rect(const Polygon& rPol, Rectangle& rRect, long& rRotation, long& rShear)
+void Poly2Rect(const Polygon& rPol, Rectangle& rRect, long& rRotation, long& rShear) // TTTT needed?
 {
 	rRotation=GetAngle(rPol[1]-rPol[0]);
 	rShear=NormAngle360(rRotation);

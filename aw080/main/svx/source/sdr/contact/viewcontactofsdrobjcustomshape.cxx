@@ -139,14 +139,10 @@ namespace sdr
 				}
 			}
 
-			// get and decompose object matrix
-			basegfx::B2DVector aScale;
-			basegfx::B2DPoint aTranslate;
-			double fRotate, fShearX;
-			GetCustomShapeObj().getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
-
 			// build unrotated object range
-            const basegfx::B2DRange aObjectRange(aTranslate, aTranslate + aScale);
+            const basegfx::B2DRange aObjectRange(
+                GetCustomShapeObj().getSdrObjectTranslate(), 
+                GetCustomShapeObj().getSdrObjectTranslate() + GetCustomShapeObj().getSdrObjectScale());
 
 			if(bHasText || xGroup.hasElements())
 			{
@@ -157,7 +153,11 @@ namespace sdr
 				if(bHasText)
 				{
                     // #i101684# get the text range unrotated and absolute to the object range
-                    const basegfx::B2DRange aTextRange(getCorrectedTextBoundRect(aObjectRange, fRotate, fShearX));
+                    const basegfx::B2DRange aTextRange(
+                        getCorrectedTextBoundRect(
+                            aObjectRange, 
+                            GetCustomShapeObj().getSdrObjectRotate(), 
+                            GetCustomShapeObj().getSdrObjectShearX()));
 
 					// give text object a size
                     aTextBoxMatrix.scale(aTextRange.getWidth(), aTextRange.getHeight());
@@ -165,9 +165,9 @@ namespace sdr
                     // check if we have a rotation/shear at all to take care of
 					const double fExtraTextRotation(GetCustomShapeObj().GetExtraTextRotation());
 
-                    if(!basegfx::fTools::equalZero(fShearX)
-						|| !basegfx::fTools::equalZero(fRotate)
-						|| !basegfx::fTools::equalZero(fExtraTextRotation))
+                    if(GetCustomShapeObj().isSheared() 
+                        || GetCustomShapeObj().isRotated() 
+                        || !basegfx::fTools::equalZero(fExtraTextRotation))
 					{
                         if(aObjectRange != aTextRange)
                         {
@@ -185,14 +185,14 @@ namespace sdr
 							aTextBoxMatrix.translate( aTranslation );
 						}
 
-						if(!basegfx::fTools::equalZero(fShearX))
+						if(GetCustomShapeObj().isSheared())
 						{
-							aTextBoxMatrix.shearX(fShearX);
+							aTextBoxMatrix.shearX(GetCustomShapeObj().getSdrObjectShearX());
 						}
 
-						if(!basegfx::fTools::equalZero(fRotate))
+						if(GetCustomShapeObj().isRotated())
 						{
-							aTextBoxMatrix.rotate(fRotate);
+							aTextBoxMatrix.rotate(GetCustomShapeObj().getSdrObjectRotate());
 						}
 
 						// give text it's target position

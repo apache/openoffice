@@ -98,6 +98,7 @@ bool FuConstruct::MouseButtonDown(const MouseEvent& rMEvt)
 
 	const basegfx::B2DPoint aPixelPos(rMEvt.GetPosPixel().X(), rMEvt.GetPosPixel().Y());
 	aMDPos = mpWindow->GetInverseViewTransformation() * aPixelPos;
+    // TTTT: evtl. unify fHitLog/fDrgLog/fHitTol at SdrView?
 	const double fHitLog(basegfx::B2DVector(mpWindow->GetInverseViewTransformation() * basegfx::B2DVector(HITPIX, 0.0)).getLength());
 
 	if (rMEvt.IsLeft() && mpView->IsExtendedMouseEventDispatcherEnabled())

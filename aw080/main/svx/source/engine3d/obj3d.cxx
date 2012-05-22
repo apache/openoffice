@@ -217,7 +217,8 @@ sal_uInt32 E3dObject::GetObjInventor() const
 
 sal_uInt16 E3dObject::GetObjIdentifier() const
 {
-	return E3D_OBJECT_ID;
+    OSL_ENSURE(false, "E3dObject is a helper class, it should never be incarnated (!)");
+    return SdrAttrObj::GetObjIdentifier();
 }
 
 /*************************************************************************
@@ -712,7 +713,8 @@ void E3dCompoundObject::AddToHdlList(SdrHdlList& rHdlList) const
 
 sal_uInt16 E3dCompoundObject::GetObjIdentifier() const
 {
-	return E3D_COMPOUNDOBJ_ID;
+    OSL_ENSURE(false, "E3dCompoundObject is a helper class, it should never be incarnated (!)");
+    return SdrAttrObj::GetObjIdentifier();
 }
 
 /*************************************************************************

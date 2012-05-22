@@ -631,19 +631,13 @@ namespace sdr
 					xRetval = xCellSequence;
 					drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(xRetval, xBorderSequence);
 
-					// get and decompose object matrix
-					basegfx::B2DVector aScale;
-					basegfx::B2DPoint aTranslate;
-					double fRotate, fShearX;
-					rTableObj.getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
-
 					// embed whole visualisation into oebjct matrix, but without scale which is already
 					// included into the single cell and border objects
 					const basegfx::B2DHomMatrix aObjNoScale(
 						basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
-							fShearX,
-							fRotate,
-							aTranslate));
+							rTableObj.getSdrObjectShearX(),
+							rTableObj.getSdrObjectRotate(),
+							rTableObj.getSdrObjectTranslate()));
 					const drawinglayer::primitive2d::Primitive2DReference xTransRef(
 						new drawinglayer::primitive2d::TransformPrimitive2D(
 							aObjNoScale,

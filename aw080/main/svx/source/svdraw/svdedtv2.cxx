@@ -2349,15 +2349,17 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
 	if(areSdrObjectsSelected()) 
 	{
 		const bool bUndo(IsUndoEnabled());
-
-	    if( bUndo )
-	    {
-		    BegUndo(String(), String(), SDRREPFUNC_OBJ_IMPORTMTF);
-	    }
-
-		SdrObjectVector aForTheDescription;
 		const SdrObjectVector aSelection(getSelectedSdrObjectVectorFromSdrMarkView());
 		SdrObjectVector aNewMarked;
+
+	    if(bUndo)
+	    {
+		    BegUndo(
+                ImpGetResStr(STR_EditImportMtf), 
+                getSelectionDescription(aSelection), 
+                SDRREPFUNC_OBJ_IMPORTMTF);
+	    }
+
 		clearSdrObjectSelection();
 
 		for(sal_uInt32 nm(aSelection.size()); nm > 0;)
@@ -2434,8 +2436,6 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
 					aNewMarked.push_back(pCandidate);
 			    }
 
-				aForTheDescription.push_back(pObj);
-
     			if(bUndo)
 				{
 					AddUndo(getSdrModelFromSdrView().GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
@@ -2464,9 +2464,6 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
 
 	    if(bUndo)
 	    {
-			SetUndoComment(
-				ImpGetResStr(STR_EditImportMtf),
-				getSelectionDescription(aForTheDescription));
     		EndUndo();
 	    }
     }

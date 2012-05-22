@@ -675,7 +675,7 @@ sal_uInt32 SdrObject::GetObjInventor()   const
 
 sal_uInt16 SdrObject::GetObjIdentifier() const
 {
-	return sal_uInt16(OBJ_NONE);
+	return static_cast< sal_uInt16 >(OBJ_NONE);
 }
 
 void SdrObject::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
