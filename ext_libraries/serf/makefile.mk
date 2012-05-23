@@ -68,11 +68,13 @@ BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 
 .ELSE
 
-.IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD"
+.IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD" || "$(OS)"=="LINUX"
 # Do not link against expat.  It is not necessary (apr-util is already linked against it)
 # and does not work (we use a different expat library schema.)
 PATCH_FILES+=$(TARFILE_NAME).mac.patch
-.ELSE
+.ENDIF
+
+.IF "$(OS)"=="LINUX"
 # Add -ldl as last library so that the linker has no trouble resolving dependencies.
 PATCH_FILES+=$(TARFILE_NAME).ldl.patch
 .ENDIF
