@@ -79,8 +79,17 @@ PATCH_FILES+=$(TARFILE_NAME).ldl.patch
 
 CONFIGURE_DIR=
 CONFIGURE_ACTION=autoconf && .$/configure
-.IF "$(OS)"=="MACOSX"
-# On Mac we need the content of CDEFS in CFLAGS so that the ssl headers are searched for 
+
+.IF "$(OS)"=="MACOSX" || "$(OS)"=="LINUX"
+.IF "$(OS)"=="LINUX"
+.IF "$(SYSTEM_OPENSSL)"=="YES"
+CDEFS+=$(OPENSSL_CFLAGS)
+.ELSE
+OPENSSLINCDIR=external
+CDEFS+=-I$(SOLARINCDIR)$/$(OPENSSLINCDIR)
+.ENDIF
+.ENDIF
+# On Linux/Mac we need the content of CDEFS in CFLAGS so that the ssl headers are searched for
 # in a directory that corresponds to the directory that is searched for the ssl library.
 CONFIGURE_FLAGS='CFLAGS=$(CDEFS)'
 .ENDIF
