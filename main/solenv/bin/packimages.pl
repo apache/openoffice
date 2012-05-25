@@ -98,7 +98,7 @@ sub parse_options
                              '-h' => \$opt_help,
                              '-o=s' => \$out_file,
                              '-g=s' => \$global_path,
-			     '-s=s' => \$sort_file,
+                             '-s=s' => \$sort_file,
                              '-m=s' => \$module_path,
                              '-c=s' => \@custom_path_list,
                              '-e=s' => \$custom_path_extended,
@@ -113,6 +113,10 @@ sub parse_options
         usage();
         exit(1);
     }
+
+    # if extra-verbose, set also verbose
+    if ($extra_verbose) { $verbose = 1; }
+
     #define intermediate output file
     $tmp_out_file="$out_file"."$$".$ENV{INPATH};
     # Sanity checks.
@@ -218,22 +222,22 @@ sub find_custom
     my $custom_hash_ref = shift;
     my $keep_back;
     for my $path (@custom_path) {
-	find({ wanted => \&wanted, no_chdir => 0 }, $path);
-	foreach ( @custom_list ) {
-	    if ( /^\Q$path\E\/(.*)$/ ) {
-		$keep_back=$1;
-		if (!defined $custom_hash_ref->{$keep_back}) {
-		    $custom_hash_ref->{$keep_back} = $path;
-		}
-	    }
-	}
+        find({ wanted => \&wanted, no_chdir => 0 }, $path);
+        foreach ( @custom_list ) {
+            if ( /^\Q$path\E\/(.*)$/ ) {
+                $keep_back=$1;
+                if (!defined $custom_hash_ref->{$keep_back}) {
+                    $custom_hash_ref->{$keep_back} = $path;
+                }
+            }
+        }
     }
 }
 
 sub wanted
 {
     my $file = $_;
-    
+
     if ( $file =~ /.*\.png$/ && -f $file ) {
         push @custom_list, $File::Find::name;
     }
@@ -284,14 +288,14 @@ sub is_file_newer
 {
     my $test_hash_ref = shift;
     my $reference_stamp = 0;
-    
+
     print_message("checking timestamps ...") if $verbose;
     if ( -e $out_file ) {
         $reference_stamp = (stat($out_file))[9];
         print_message("found $out_file with $reference_stamp ...") if $verbose;
     }
     return 1 if $reference_stamp == 0;
-        
+
     foreach ( sort keys %{$test_hash_ref} ) {
         my $path = $test_hash_ref->{$_};
         $path .= "/" if "$path" ne "";
@@ -308,8 +312,8 @@ sub optimize_zip_layout($)
     my $zip_hash_ref = shift;
 
     if (!defined $sort_file) {
-	print_message("no sort file - sorting alphabetically ...") if $verbose;
-	return sort keys %{$zip_hash_ref};
+    print_message("no sort file - sorting alphabetically ...") if $verbose;
+    return sort keys %{$zip_hash_ref};
     }
     print_message("sorting from $sort_file ...") if $verbose;
 
@@ -318,21 +322,21 @@ sub optimize_zip_layout($)
     my @sorted;
     open ($orderh, $sort_file) || die "Can't open $sort_file: $!";
     while (<$orderh>) {
-	/^\#.*/ && next; # comments
-	s/[\r\n]*$//;
-	/^\s*$/ && next;
-	my $file = $_;
-	if (!defined $zip_hash_ref->{$file}) {
-	    print "unknown file '$file'\n" if ($extra_verbose);
-	} else {
-	    push @sorted, $file;
-	    $included{$file} = 1;
-	}
+        /^\#.*/ && next; # comments
+        s/[\r\n]*$//;
+        /^\s*$/ && next;
+        my $file = $_;
+        if (!defined $zip_hash_ref->{$file}) {
+            print "unknown file '$file'\n" if ($extra_verbose);
+        } else {
+            push @sorted, $file;
+            $included{$file} = 1;
+        }
     }
     close ($orderh);
 
     for my $img (sort keys %{$zip_hash_ref}) {
-	push @sorted, $img if (!$included{$img});
+        push @sorted, $img if (!$included{$img});
     }
 
     print_message("done sort ...") if $verbose;
