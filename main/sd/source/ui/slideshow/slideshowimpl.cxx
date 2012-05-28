@@ -3320,9 +3320,14 @@ void SAL_CALL SlideshowImpl::gotoNextSlide(  ) throw (RuntimeException)
 					{
 						if( mpShowWindow )
 						{
-							Graphic aGraphic( SfxApplication::GetApplicationLogo().GetBitmapEx() );
-							mpShowWindow->SetPauseMode( 0, maPresSettings.mnPauseTimeout, &aGraphic );
-						}
+                            if ( maPresSettings.mbShowPauseLogo )
+                            {
+                                Graphic aGraphic( SfxApplication::GetApplicationLogo().GetBitmapEx() );
+                                mpShowWindow->SetPauseMode( 0, maPresSettings.mnPauseTimeout, &aGraphic );
+                            }
+                            else
+                                mpShowWindow->SetPauseMode( 0, maPresSettings.mnPauseTimeout );
+                        }
 					}
 					else
 					{
