@@ -94,8 +94,7 @@ XclExpObjList::XclExpObjList( const XclExpRoot& rRoot, XclEscherEx& rEscherEx ) 
     pMsodrawingPerSheet = new XclExpMsoDrawing( rEscherEx );
     // open the DGCONTAINER and the patriarch group shape
     mrEscherEx.OpenContainer( ESCHER_DgContainer );
-    basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0));
-    mrEscherEx.EnterGroup( &aRange );
+    mrEscherEx.EnterGroup();
     mrEscherEx.UpdateDffFragmentEnd();
 }
 
@@ -174,11 +173,15 @@ XclObj::~XclObj()
 	delete pTxo;
 }
 
-void XclObj::ImplWriteAnchor( const XclExpRoot& /*rRoot*/, const SdrObject* pSdrObj, const basegfx::B2DRange* pChildAnchor )
+void XclObj::ImplWriteAnchor( 
+    const XclExpRoot& /*rRoot*/, 
+    const SdrObject* pSdrObj, 
+    const basegfx::B2DPoint* pObjectPosition,
+    const basegfx::B2DVector* pObjectScale)
 {
-    if( pChildAnchor )
+    if( pObjectPosition && pObjectScale )
     {
-        mrEscherEx.AddChildAnchor( *pChildAnchor );
+        mrEscherEx.AddChildAnchor( *pObjectPosition, *pObjectScale );
     }
     else if( pSdrObj )
     {
@@ -285,15 +288,15 @@ void XclObj::SaveTextRecs( XclExpStream& rStrm )
 
 // --- class XclObjComment -------------------------------------------
 
-XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const basegfx::B2DRange& rRange, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible ) :
+XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible ) :
     XclObj( rObjMgr, EXC_OBJTYPE_NOTE, true )
 {
-    ProcessEscherObj( rObjMgr.GetRoot(), rRange, pCaption, bVisible);
+    ProcessEscherObj( rObjMgr.GetRoot(), rObjectPosition, rObjectScale, pCaption, bVisible);
 	// TXO
     pTxo = new XclTxo( rObjMgr.GetRoot(), rEditObj, pCaption );
 }
 
-void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2DRange& rRange, SdrObject* pCaption, const bool bVisible )
+void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, SdrObject* pCaption, const bool bVisible )
 {
     Reference<XShape> aXShape;
     EscherPropertyContainer aPropOpt;
@@ -307,7 +310,7 @@ void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2
             aPropOpt.CreateFillProperties( aXPropSet,  sal_True);
 
             aPropOpt.AddOpt( ESCHER_Prop_lTxid, 0 );						// undocumented
-	    aPropOpt.AddOpt( 0x0158, 0x00000000 );							// undocumented
+    	    aPropOpt.AddOpt( 0x0158, 0x00000000 );							// undocumented
 
             sal_uInt32 nValue = 0;
             if(!aPropOpt.GetOpt( ESCHER_Prop_FitTextToShape, nValue ))
@@ -348,7 +351,7 @@ void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2
     aPropOpt.AddOpt( ESCHER_Prop_fPrint, nFlags );                  // bool field
     aPropOpt.Commit( mrEscherEx.GetStream() );
 
-    XclExpDffNoteAnchor( rRoot, rRange ).WriteDffData( mrEscherEx );
+    XclExpDffNoteAnchor( rRoot, rObjectPosition, rObjectScale ).WriteDffData( mrEscherEx );
 
     mrEscherEx.AddAtom( 0, ESCHER_ClientData );                        // OBJ record
     mrEscherEx.UpdateDffFragmentEnd();

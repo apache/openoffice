@@ -49,24 +49,66 @@
 
 void SdrTextObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
-	// call parent
+    const bool bTextAdaption(bTextFrame && !IsPasteResize());
+	basegfx::B2DVector aOldSize;
+
+    if(bTextAdaption)
+    {
+        aOldSize = basegfx::absolute(getSdrObjectScale());
+    }
+
+    // call parent
 	SdrAttrObj::setSdrObjectTransformation(rTransformation);
 
-	// TTTT: check if needed and how to emulate; maybe exclusive to resize...?
+	// TTTT: check if the rebuild works
+    //
 	//sal_Int32 nHDist=GetTextLeftDistance()+GetTextRightDistance();
 	//sal_Int32 nVDist=GetTextUpperDistance()+GetTextLowerDistance();
 	//sal_Int32 nTWdt0=aRect.GetWidth ()-1-nHDist; if (nTWdt0<0) nTWdt0=0;
 	//sal_Int32 nTHgt0=aRect.GetHeight()-1-nVDist; if (nTHgt0<0) nTHgt0=0;
-	//sal_Int32 nTWdt1=aRect.GetWidth ()-1-nHDist; if (nTWdt1<0) nTWdt1=0;
-	//sal_Int32 nTHgt1=aRect.GetHeight()-1-nVDist; if (nTHgt1<0) nTHgt1=0;
-	//if (bTextFram4e && !IsPasteResize()) { // #51139#
+	//sal_Int32 nTWdt1=rRect.GetWidth ()-1-nHDist; if (nTWdt1<0) nTWdt1=0;
+	//sal_Int32 nTHgt1=rRect.GetHeight()-1-nVDist; if (nTHgt1<0) nTHgt1=0;
 	//	if (nTWdt0!=nTWdt1 && IsAutoGrowWidth() ) SetMinTextFrameWidth(nTWdt1);
 	//	if (nTHgt0!=nTHgt1 && IsAutoGrowHeight()) SetMinTextFrameHeight(nTHgt1);
 	//	if (GetFitToSize()==SDRTEXTFIT_RESIZEATTR) {
 	//		ResizeTextAttributes(Fraction(nTWdt1,nTWdt0),Fraction(nTHgt1,nTHgt0));
 	//	}
 	//	AdjustTextFrameWidthAndHeight();
-	//}
+	
+    if(bTextAdaption) 
+    {
+    	basegfx::B2DVector aNewSize(basegfx::absolute(getSdrObjectScale()));
+
+        if(!aNewSize.equal(aOldSize))
+        {
+            const basegfx::B2DVector aBorders(
+                GetTextLeftDistance() + GetTextRightDistance(),
+                GetTextUpperDistance() + GetTextLowerDistance());
+
+            aNewSize -= aBorders;
+            aOldSize -= aBorders;
+
+            if(IsAutoGrowWidth() && !basegfx::fTools::equal(aOldSize.getX(), aNewSize.getX()))
+            {
+                SetMinTextFrameWidth(aNewSize.getX());
+            }
+
+            if(IsAutoGrowHeight() && !basegfx::fTools::equal(aOldSize.getY(), aNewSize.getY()))
+            {
+                SetMinTextFrameHeight(aNewSize.getY());
+            }
+
+            if(SDRTEXTFIT_RESIZEATTR == GetFitToSize()) 
+            {
+                const double fFactorX(aNewSize.getX() / (basegfx::fTools::equalZero(aOldSize.getX()) ? 1.0 : aOldSize.getX()));
+                const double fFactorY(aNewSize.getY() / (basegfx::fTools::equalZero(aOldSize.getY()) ? 1.0 : aOldSize.getY()));
+
+                ResizeTextAttributes(fFactorX, fFactorY);
+            }
+
+            AdjustTextFrameWidthAndHeight();
+        }
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////////

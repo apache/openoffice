@@ -40,8 +40,12 @@ class ImplEESdrObject
 	::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >			mXShape;
 //	XTextRef			mXText;	// TextRef des globalen Text
 	::com::sun::star::uno::Any				mAny;
-	basegfx::B2DRange	maRange;
-	String				mType;
+	
+    // the object range, split in pos and scale to keep the evtl. negative size (mirroring)
+    basegfx::B2DPoint   maObjectPosition;
+    basegfx::B2DVector  maObjectScale;
+
+    String				mType;
 	sal_uInt32				mnShapeId;
 	sal_uInt32				mnTextSize;
 	sal_Int32				mnAngle;
@@ -67,8 +71,9 @@ public:
 	const String&		GetType() const 		{ return mType; }
 	void				SetType( const String& rS ) { mType = rS; }
 
-	const basegfx::B2DRange& GetRange() const { return maRange; }
-	void SetRange(const basegfx::B2DRange& rRange ) { maRange = rRange; }
+    void setObjectPositionAndScale(const basegfx::B2DPoint& rNewPos, const basegfx::B2DVector& rNewSize) { maObjectPosition = rNewPos; maObjectScale = rNewSize; }
+    const basegfx::B2DPoint& getObjectPosition() const { return maObjectPosition; }
+    const basegfx::B2DVector& getObjectScale() const { return maObjectScale; }
 
 	sal_Int32				GetAngle() const 		{ return mnAngle; }
 	void				SetAngle( sal_Int32 nVal ) 	{ mnAngle = nVal; }
@@ -163,7 +168,8 @@ protected:
 												const Point& rTextRefPoint );
 			sal_uInt32				ImplEnterAdditionalTextGroup(
 										const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& rShape,
-										const basegfx::B2DRange* pBoundRange = 0 );
+										const basegfx::B2DPoint* pObjectPosition = 0,
+                                        const basegfx::B2DVector* pObjectScale = 0);
 
 
 public:

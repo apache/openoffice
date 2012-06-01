@@ -1121,9 +1121,9 @@ basegfx::B2DRange EnhancedCustomShape2d::GetTextRange() const
 
 	if ( nSize )
 	{
-	nIndex = 0;
-	if ( bTextFlow && ( nSize > 1 ) )
-		nIndex++;
+	    nIndex = 0;
+	    if ( bTextFlow && ( nSize > 1 ) )
+		    nIndex++;
 		basegfx::B2DPoint aTopLeft( GetPoint( seqTextFrames[ nIndex ].TopLeft, sal_True, sal_True ) );
 		basegfx::B2DPoint aBottomRight( GetPoint( seqTextFrames[ nIndex ].BottomRight, sal_True, sal_True ) );
 //		if ( bFlipH )

@@ -528,41 +528,6 @@ void SvxShape::Create( SdrObject* pNewObj, SvxDrawPage* /*pNewPage*/ )
 
 //----------------------------------------------------------------------
 
-//CMCXvoid SvxShape::ChangeModel( SdrModel* pNewModel ) // TTTT: Needed anymore?
-//CMCX{
-//CMCX    DBG_TESTSOLARMUTEX();
-//CMCX	if( mpObj.is() )
-//CMCX	{
-//CMCX		if( &mpObj->getSdrModelFromSdrObject() != pNewModel )
-//CMCX		{
-//CMCX			EndListening( mpObj->getSdrModelFromSdrObject() );
-//CMCX		}
-//CMCX	}
-//CMCX
-//CMCX    // --> CL, OD 2005-07-19 #i52126# - always listen to new model
-//CMCX    if( pNewModel )
-//CMCX    {
-//CMCX        StartListening( *pNewModel );
-//CMCX    }
-//CMCX    // <--
-//CMCX
-//CMCX	// HACK #i53696# ChangeModel should be virtual, but it isn't. can't change that for 2.0.1
-//CMCX	SvxShapeText* pShapeText = dynamic_cast< SvxShapeText* >( this );
-//CMCX	if( pShapeText )
-//CMCX	{
-//CMCX		SvxTextEditSource* pTextEditSource = dynamic_cast< SvxTextEditSource* >( pShapeText->GetEditSource() );
-//CMCX		if( pTextEditSource )
-//CMCX			pTextEditSource->ChangeModel( pNewModel );
-//CMCX	}
-//CMCX
-//CMCX	mpModel = pNewModel;
-//CMCX
-//CMCX	if( mpImpl->mpMaster )
-//CMCX		mpImpl->mpMaster->modelChanged( pNewModel );
-//CMCX}
-
-//----------------------------------------------------------------------
-
 void SvxShape::ForceMetricToItemPoolMetric(basegfx::B2DPoint& rPoint) const throw()
 {
     DBG_TESTSOLARMUTEX();

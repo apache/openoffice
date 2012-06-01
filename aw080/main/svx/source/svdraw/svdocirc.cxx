@@ -68,6 +68,15 @@ namespace
 			const double fSnapAngle(((rView.GetSnapAngle() % 36000) * F_PI) / 18000.0);
 			
 			fAngle = basegfx::snapToNearestMultiple(fAngle, fSnapAngle);
+
+            if(basegfx::fTools::equalZero(fAngle))
+            {
+                fAngle = 0.0;
+            }
+            else if(basegfx::fTools::equal(fAngle, F_2PI))
+            {
+                fAngle = F_2PI;
+            }
 		}
 
 		return fAngle;
@@ -473,7 +482,7 @@ bool SdrCircObj::applySpecialDrag(SdrDragStat& rDrag)
 		fNewAngle = impSnapAngle(fNewAngle, rDrag.GetSdrViewFromSdrDragStat());
 
 		if(1 == rDrag.GetActiveHdl()->GetPointNum())
-            {
+        {
 			SetStartAngle(fNewAngle);
 		}
 		else // (2 == rDrag.GetActiveHdl()->GetPointNum()) 

@@ -156,8 +156,6 @@ public:
     Point 					PixelToLogic( const Point&, const MapMode& rMapMode );
 
     DECL_LINK( NotifyHdl, EENotify* );
-
-//CMCX	void ChangeModel( SdrModel* pNewModel );
 };
 
 //------------------------------------------------------------------------
@@ -255,44 +253,6 @@ void SAL_CALL CellEditSourceImpl::release()
 	if( ! osl_decrementInterlockedCount( &maRefCount ) )
 		delete this;
 }	
-
-//CMCXvoid CellEditSourceImpl::ChangeModel( SdrModel* pNewModel )
-//CMCX{
-//CMCX	if( mpModel != pNewModel )
-//CMCX	{
-//CMCX		if( mpOutliner )
-//CMCX		{
-//CMCX			if( mpModel )
-//CMCX				mpModel->disposeOutliner( mpOutliner );
-//CMCX			else
-//CMCX				delete mpOutliner;
-//CMCX			mpOutliner = 0;
-//CMCX		}
-//CMCX
-//CMCX		if( mpView )
-//CMCX		{
-//CMCX			EndListening( *mpView );
-//CMCX			mpView = 0;
-//CMCX		}
-//CMCX
-//CMCX		mpWindow = 0;
-//CMCX		mxLinguServiceManager.clear();
-//CMCX
-//CMCX		mpModel = pNewModel;
-//CMCX
-//CMCX		if( mpTextForwarder )
-//CMCX		{
-//CMCX	        delete mpTextForwarder;
-//CMCX		    mpTextForwarder = 0;
-//CMCX		}
-//CMCX
-//CMCX		if( mpViewForwarder )
-//CMCX		{
-//CMCX			delete mpViewForwarder;
-//CMCX			mpViewForwarder = 0;
-//CMCX		}
-//CMCX	}
-//CMCX}
 
 //------------------------------------------------------------------------
 
@@ -1041,13 +1001,6 @@ const SvxUnoTextRangeBaseList& CellEditSource::getRanges() const
 {
 	return mpImpl->getRanges();
 }
-
-//------------------------------------------------------------------------
-
-//CMCXvoid CellEditSource::ChangeModel( SdrModel* pNewModel )
-//CMCX{
-//CMCX	mpImpl->ChangeModel( pNewModel );
-//CMCX}
 
 //------------------------------------------------------------------------
 

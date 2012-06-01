@@ -30,8 +30,8 @@
 #include <svx/svdmodel.hxx>
 #include <svx/svditext.hxx>
 #include <svx/svdoutl.hxx>
-#include <svx/svdorect.hxx> // fuer SetDirty bei AdjustTextFrameWidthAndHeight
-#include <svx/svdocapt.hxx> // fuer SetDirty bei AdjustTextFrameWidthAndHeight
+#include <svx/svdorect.hxx>
+#include <svx/svdocapt.hxx>
 #include <svx/svdetc.hxx>
 #include <editeng/writingmodeitem.hxx>
 #include <editeng/editeng.hxx>
@@ -59,221 +59,286 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bool SdrTextObj::AdjustTextFrameWidthAndHeight(Rectangle& rR, bool bHgt, bool bWdt) const
+bool SdrTextObj::AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt, bool bWdt) const
 {
-	if(bTextFrame)
-	{
-		if(!rR.IsEmpty())
-    	{
-	    	SdrFitToSizeType eFit=GetFitToSize();
-			bool bFitToSize=(eFit==SDRTEXTFIT_PROPORTIONAL || eFit==SDRTEXTFIT_ALLLINES);
-			bool bWdtGrow=bWdt && IsAutoGrowWidth();
-			bool bHgtGrow=bHgt && IsAutoGrowHeight();
-		    SdrTextAniKind eAniKind=GetTextAniKind();
-		    SdrTextAniDirection eAniDir=GetTextAniDirection();
-			bool bScroll=eAniKind==SDRTEXTANI_SCROLL || eAniKind==SDRTEXTANI_ALTERNATE || eAniKind==SDRTEXTANI_SLIDE;
-			bool bHScroll=bScroll && (eAniDir==SDRTEXTANI_LEFT || eAniDir==SDRTEXTANI_RIGHT);
-			bool bVScroll=bScroll && (eAniDir==SDRTEXTANI_UP || eAniDir==SDRTEXTANI_DOWN);
-		    
-            if (!bFitToSize && (bWdtGrow || bHgtGrow))
-		    {
-    			Rectangle aR0(rR);
-				sal_Int32 nHgt=0,nMinHgt=0,nMaxHgt=0;
-				sal_Int32 nWdt=0,nMinWdt=0,nMaxWdt=0;
-	    		Size aSiz(rR.GetSize()); aSiz.Width()--; aSiz.Height()--;
-		    	Size aMaxSiz(100000,100000);
-			
-				if(!basegfx::fTools::equalZero(getSdrModelFromSdrObject().GetMaxObjectScale().getX())) 
-				{
-					aMaxSiz.Width() = basegfx::fround(getSdrModelFromSdrObject().GetMaxObjectScale().getX());
-				}
+	if(IsTextFrame() && !o_rRange.isEmpty())
+    {
+	    const SdrFitToSizeType eFit(GetFitToSize());
+	    const bool bFitToSize(SDRTEXTFIT_PROPORTIONAL == eFit || SDRTEXTFIT_ALLLINES == eFit);
 
-				if(!basegfx::fTools::equalZero(getSdrModelFromSdrObject().GetMaxObjectScale().getY())) 
-				{
-					aMaxSiz.Height() = basegfx::fround(getSdrModelFromSdrObject().GetMaxObjectScale().getY());
-				}
-			
-			    if (bWdtGrow)
-			    {
-				    nMinWdt=GetMinTextFrameWidth();
-				    nMaxWdt=GetMaxTextFrameWidth();
-				    if (nMaxWdt==0 || nMaxWdt>aMaxSiz.Width()) nMaxWdt=aMaxSiz.Width();
-				    if (nMinWdt<=0) nMinWdt=1;
-				    aSiz.Width()=nMaxWdt;
-			    }
-			    if (bHgtGrow)
-			    {
-				    nMinHgt=GetMinTextFrameHeight();
-				    nMaxHgt=GetMaxTextFrameHeight();
-				    if (nMaxHgt==0 || nMaxHgt>aMaxSiz.Height()) nMaxHgt=aMaxSiz.Height();
-				    if (nMinHgt<=0) nMinHgt=1;
-				    aSiz.Height()=nMaxHgt;
-			    }
-
-                sal_Int32 nHDist=GetTextLeftDistance()+GetTextRightDistance();
-				sal_Int32 nVDist=GetTextUpperDistance()+GetTextLowerDistance();
-			    aSiz.Width()-=nHDist;
-			    aSiz.Height()-=nVDist;
-			    if (aSiz.Width()<2) aSiz.Width()=2;   // Mindestgroesse 2
-			    if (aSiz.Height()<2) aSiz.Height()=2; // Mindestgroesse 2
-
-			    // #101684#
-				bool bInEditMode = IsInEditMode();
-
-			    if(!bInEditMode)
-			    {
-				    if (bHScroll) aSiz.Width()=0x0FFFFFFF; // Laufschrift nicht umbrechen
-				    if (bVScroll) aSiz.Height()=0x0FFFFFFF;
-			    }
-
-			    if(pEdtOutl)
-			    {
-				    pEdtOutl->SetMaxAutoPaperSize(aSiz);
-				
-                    if (bWdtGrow) 
-                    {
-					    Size aSiz2(pEdtOutl->CalcTextSize());
-					    nWdt=aSiz2.Width()+1; // lieber etwas Tolleranz
-					    if (bHgtGrow) nHgt=aSiz2.Height()+1; // lieber etwas Tolleranz
-				    } 
-                    else 
-                    {
-					    nHgt=pEdtOutl->GetTextHeight()+1; // lieber etwas Tolleranz
-				    }
-			    } 
-                else 
-                {
-				    Outliner& rOutliner=ImpGetDrawOutliner();
-				    rOutliner.SetPaperSize(aSiz);
-					rOutliner.SetUpdateMode(true);
-				    // !!! hier sollte ich wohl auch noch mal die Optimierung mit
-				    // bPortionInfoChecked usw einbauen
-				    OutlinerParaObject* pOutlinerParaObject = GetOutlinerParaObject();
-					
-                    if ( pOutlinerParaObject != 0 )
-				    {
-					    rOutliner.SetText(*pOutlinerParaObject);
-					    rOutliner.SetFixedCellHeight(((const SdrTextFixedCellHeightItem&)GetMergedItem(SDRATTR_TEXT_USEFIXEDCELLHEIGHT)).GetValue());
-				    }
-				    if (bWdtGrow)
-				    {
-					    Size aSiz2(rOutliner.CalcTextSize());
-					    nWdt=aSiz2.Width()+1; // lieber etwas Tolleranz
-					    if (bHgtGrow) nHgt=aSiz2.Height()+1; // lieber etwas Tolleranz
-				    } 
-                    else 
-                    {
-					    nHgt=rOutliner.GetTextHeight()+1; // lieber etwas Tolleranz
-				    }
-				    
-                    rOutliner.Clear();
-			    }
-
-                if (nWdt<nMinWdt) 
-                    nWdt=nMinWdt;
-
-			    if (nWdt>nMaxWdt) 
-                    nWdt=nMaxWdt;
-
-			    nWdt+=nHDist;
-			    
-                // nHDist kann auch negativ sein
-                if (nWdt<1) 
-                    nWdt=1;
-
-                if (nHgt<nMinHgt) 
-                    nHgt=nMinHgt;
-
-			    if (nHgt>nMaxHgt) 
-                    nHgt=nMaxHgt;
-
-			    nHgt+=nVDist;
-			    
-                // nVDist kann auch negativ sein
-                if (nHgt<1) 
-                    nHgt=1;
-
-                sal_Int32 nWdtGrow=nWdt-(rR.Right()-rR.Left());
-				sal_Int32 nHgtGrow=nHgt-(rR.Bottom()-rR.Top());
-				
-                if (nWdtGrow==0) 
-                    bWdtGrow=false;
-
-				if (nHgtGrow==0) 
-                    bHgtGrow=false;
-    			
-                if (bWdtGrow || bHgtGrow) 
-                {
-				    if (bWdtGrow) 
-                    {
-					    SdrTextHorzAdjust eHAdj=GetTextHorizontalAdjust();
-					    if (eHAdj==SDRTEXTHORZADJUST_LEFT) 
-                            rR.Right()+=nWdtGrow;
-					    else if (eHAdj==SDRTEXTHORZADJUST_RIGHT) 
-                            rR.Left()-=nWdtGrow;
-					    else 
-                        {
-							    sal_Int32 nWdtGrow2=nWdtGrow/2;
-						    rR.Left()-=nWdtGrow2;
-						    rR.Right()=rR.Left()+nWdt;
-					    }
-				    }
-    				if (bHgtGrow) 
-                    {
-					    SdrTextVertAdjust eVAdj=GetTextVerticalAdjust();
-					    if (eVAdj==SDRTEXTVERTADJUST_TOP) 
-                            rR.Bottom()+=nHgtGrow;
-					    else if (eVAdj==SDRTEXTVERTADJUST_BOTTOM) 
-                            rR.Top()-=nHgtGrow;
-    					else 
-                        {
-							sal_Int32 nHgtGrow2=nHgtGrow/2;
-						    rR.Top()-=nHgtGrow2;
-						    rR.Bottom()=rR.Top()+nHgt;
-					    }
-    				}
-	
-                    const sal_Int32 aOldRotation(sdr::legacy::GetRotateAngle(*this));
-					
-                    if (aOldRotation) 
-                    {
-					    Point aD1(rR.TopLeft());
-					    aD1-=aR0.TopLeft();
-					    Point aD2(aD1);
-						RotatePoint(aD2,Point(),sin(aOldRotation*nPi180), cos(aOldRotation*nPi180));
-    					aD2-=aD1;
-	    				rR.Move(aD2.X(),aD2.Y());
-		    		}
-					
-                    return true;
-			    }
-		    }
-	    }
+        if(!bFitToSize)
+	    {
+            return ImpAdjustTextFrameWidthAndHeight(o_rRange, bHgt, bWdt, true);
+        }
     }
+
+    return false;
+}
+
+bool SdrTextObj::ImpAdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt, bool bWdt, bool bCheckAnimation) const
+{
+	bool bWdtGrow(bWdt && IsAutoGrowWidth());
+	bool bHgtGrow(bHgt && IsAutoGrowHeight());
+		    
+    if(bWdtGrow || bHgtGrow)
+	{
+        basegfx::B2DVector aSize(o_rRange.getRange());
+        basegfx::B2DVector aMaxSize(100000.0, 100000.0);
+        double fHeight(0.0), fMinHeight(0.0), fMaxHeight(0.0);
+        double fWidth(0.0), fMinWidth(0.0), fMaxWidth(0.0);
+        const basegfx::B2DPoint aOriginalMinimum(o_rRange.getMinimum());
+
+		if(!basegfx::fTools::equalZero(getSdrModelFromSdrObject().GetMaxObjectScale().getX())) 
+		{
+			aMaxSize.setX(fabs(getSdrModelFromSdrObject().GetMaxObjectScale().getX()));
+		}
+
+		if(!basegfx::fTools::equalZero(getSdrModelFromSdrObject().GetMaxObjectScale().getY())) 
+		{
+			aMaxSize.setY(fabs(getSdrModelFromSdrObject().GetMaxObjectScale().getY()));
+		}
+			
+		if(bWdtGrow)
+		{
+			fMinWidth = GetMinTextFrameWidth();
+			fMaxWidth = GetMaxTextFrameWidth();
+				
+            if(basegfx::fTools::equalZero(fMaxWidth) || basegfx::fTools::more(fMaxWidth, aMaxSize.getX()))
+            {
+                fMaxWidth = aMaxSize.getX();
+            }
+				
+            if(basegfx::fTools::less(fMinWidth, 1.0))
+            {
+                fMinWidth = 1.0;
+            }
+				
+            aSize.setX(fMaxWidth);
+		}
+
+		if(bHgtGrow)
+		{
+			fMinHeight = GetMinTextFrameHeight();
+			fMaxHeight = GetMaxTextFrameHeight();
+
+            if(basegfx::fTools::equalZero(fMaxHeight) || basegfx::fTools::more(fMaxHeight, aMaxSize.getY()))
+            {
+                fMaxHeight = aMaxSize.getY();
+            }
+
+			if(basegfx::fTools::less(fMinHeight, 1.0)) 
+            {
+                fMinHeight = 1.0;
+            }
+				
+            aSize.setY(fMaxHeight);
+		}
+
+        const basegfx::B2DVector aBorders(
+            GetTextLeftDistance() + GetTextRightDistance(),
+			GetTextUpperDistance() + GetTextLowerDistance());
+
+        // substract orders
+        aSize -= aBorders;
+
+        // minimum size is 2.0
+        aSize = basegfx::maximum(basegfx::B2DTuple(2.0, 2.0), aSize);
+
+		if(bCheckAnimation && !IsInEditMode())
+		{
+            // do not wrap animated text
+		    const SdrTextAniKind eAniKind(GetTextAniKind());
+		    const SdrTextAniDirection eAniDir(GetTextAniDirection());
+		    const bool bScroll(SDRTEXTANI_SCROLL == eAniKind || SDRTEXTANI_ALTERNATE == eAniKind || SDRTEXTANI_SLIDE == eAniKind);
+		    const bool bHScroll(bScroll && (SDRTEXTANI_LEFT == eAniDir || SDRTEXTANI_RIGHT == eAniDir));
+		    const bool bVScroll(bScroll && (SDRTEXTANI_UP == eAniDir || SDRTEXTANI_DOWN == eAniDir));
+				
+            if(bHScroll) 
+            {
+                aSize.setX(268435455.0);
+            }
+				
+            if(bVScroll) 
+            {
+                aSize.setY(268435455.0);
+            }
+		}
+
+		if(IsTextEditActive())
+		{
+			GetTextEditOutliner()->SetMaxAutoPaperSize(Size(basegfx::fround(aSize.getX()), basegfx::fround(aSize.getY())));
+				
+            if(bWdtGrow) 
+            {
+				const Size aSiz2(GetTextEditOutliner()->CalcTextSize());
+
+                fWidth = aSiz2.Width() + 1; // lieber etwas Tolleranz
+					
+                if(bHgtGrow) 
+                {
+                    fHeight = aSiz2.Height() + 1; // lieber etwas Tolleranz
+                }
+			} 
+            else 
+            {
+				fHeight = GetTextEditOutliner()->GetTextHeight() + 1; // lieber etwas Tolleranz
+			}
+		} 
+        else 
+        {
+			Outliner& rOutliner = ImpGetDrawOutliner();
+
+            rOutliner.SetPaperSize(Size(basegfx::fround(aSize.getX()), basegfx::fround(aSize.getY())));
+			rOutliner.SetUpdateMode(true);
+			OutlinerParaObject* pOutlinerParaObject = GetOutlinerParaObject();
+					
+            if(pOutlinerParaObject)
+			{
+				rOutliner.SetText(*pOutlinerParaObject);
+				rOutliner.SetFixedCellHeight(((const SdrTextFixedCellHeightItem&)GetMergedItem(SDRATTR_TEXT_USEFIXEDCELLHEIGHT)).GetValue());
+			}
+
+            if(bWdtGrow)
+			{
+				const Size aSiz2(rOutliner.CalcTextSize());
+
+                fWidth = aSiz2.Width() + 1; // lieber etwas Tolleranz
+
+				if(bHgtGrow) 
+                {
+                    fHeight = aSiz2.Height() + 1; // lieber etwas Tolleranz
+                }
+			} 
+            else 
+            {
+				fHeight = rOutliner.GetTextHeight() + 1; // lieber etwas Tolleranz
+			}
+				    
+            rOutliner.Clear();
+		}
+
+        // fMinWidth < fWidth < fMaxWidth
+        fWidth = std::min(fMaxWidth, std::max(fWidth, fMinWidth));
+		fWidth = std::min(1.0, fWidth += aBorders.getX()); // aBorders.getX() may be negative
+
+        // fMinHeight < fHeight < fMaxHeight
+        fHeight = std::min(fMaxHeight, std::max(fHeight, fMinHeight));
+		fHeight = std::min(1.0, fHeight += aBorders.getY()); // aBorders.getY() may be negative
+
+        // get grow sizes
+        const double fWidthGrow(fWidth - o_rRange.getWidth());
+        const double fHeightGrow(fHeight - o_rRange.getHeight());
+
+        if(basegfx::fTools::equalZero(fWidthGrow))
+        {
+            bWdtGrow = false;
+        }
+
+        if(basegfx::fTools::equalZero(fHeightGrow))
+        {
+            bHgtGrow = false;
+        }
+    			
+        if(bWdtGrow || bHgtGrow) 
+        {
+			if(bWdtGrow) 
+            {
+				const SdrTextHorzAdjust eHAdj(GetTextHorizontalAdjust());
+
+                if(SDRTEXTHORZADJUST_LEFT == eHAdj) 
+                {
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMaxX() + fWidthGrow, o_rRange.getMinY()));
+                }
+				else if(SDRTEXTHORZADJUST_RIGHT == eHAdj) 
+                {
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX() - fWidthGrow, o_rRange.getMinY()));
+                }
+				else 
+                {
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX() - (fWidthGrow * 0.5), o_rRange.getMinY()));
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMaxX() + (fWidthGrow * 0.5), o_rRange.getMinY()));
+				}
+			}
+
+    		if(bHgtGrow) 
+            {
+				const SdrTextVertAdjust eVAdj(GetTextVerticalAdjust());
+
+				if(SDRTEXTVERTADJUST_TOP == eVAdj) 
+                {
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMaxY() + fHeightGrow));
+                }
+				else if(SDRTEXTVERTADJUST_BOTTOM == eVAdj) 
+                {
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMinY() - fHeightGrow));
+                }
+    			else 
+                {
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMinY() - (fHeightGrow * 0.5)));
+                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMaxY() + (fHeightGrow * 0.5)));
+				}
+    		}
+
+            if(!aOriginalMinimum.equal(o_rRange.getMinimum()) && isRotatedOrSheared())
+            {
+                basegfx::B2DHomMatrix aCorrector(
+                    basegfx::tools::createScaleTranslateB2DHomMatrix(
+                        getSdrObjectScale(),
+                        getSdrObjectTranslate()));
+
+                aCorrector.invert();
+                aCorrector = getSdrObjectTransformation() * aCorrector;
+
+                const basegfx::B2DPoint aCorrectedTopLeft(aCorrector * o_rRange.getMinimum());
+
+                aCorrector.identity();
+                aCorrector.translate(aCorrectedTopLeft - o_rRange.getMinimum());
+
+                o_rRange.transform(aCorrector);
+
+                // TTTT: Check if the above solution works
+                //
+                //const sal_Int32 aOldRotation(sdr::legacy::GetRotateAngle(*this));
+				//
+                //if (aOldRotation) 
+                //{
+				//    Point aD1(rR.TopLeft());
+				//    aD1-=aOriginalMinimum;
+				//    Point aD2(aD1);
+				//    RotatePoint(aD2,Point(),sin(aOldRotation*nPi180), cos(aOldRotation*nPi180));
+    			//    aD2-=aD1;
+	    		//    rR.Move(aD2.X(),aD2.Y());
+                //}
+		    }
+					
+            return true;
+		}
+	}
 
 	return false;
 }
 
 bool SdrTextObj::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
 {
-	Rectangle aNeuRect(sdr::legacy::GetLogicRect(*this));
-	bool bRet=AdjustTextFrameWidthAndHeight(aNeuRect,bHgt,bWdt);
+    basegfx::B2DRange aNewRange(getSdrObjectTranslate(), getSdrObjectTranslate() + getSdrObjectScale());
 	
-	if (bRet) 
+	if(AdjustTextFrameWidthAndHeight(aNewRange, bHgt, bWdt)) 
     {
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-		sdr::legacy::SetLogicRect(*this, aNeuRect);
+		sdr::legacy::SetLogicRange(*this, aNewRange);
 		
-		if (dynamic_cast< SdrCaptionObj* >(this)) 
+		if(dynamic_cast< SdrCaptionObj* >(this)) 
 		{ 
 			// mal wieder 'nen Hack
 			((SdrCaptionObj*)this)->ImpRecalcTail();
 		}
 		
 		SetChanged();
+        
+        return true;
 	}
 
-	return bRet;
+	return false;
 }
 
 void SdrTextObj::ImpSetTextStyleSheetListeners()
@@ -490,8 +555,8 @@ void SdrTextObj::RemoveOutlinerCharacterAttribs( const std::vector<sal_uInt16>& 
 		{
 			Outliner* pOutliner = 0;
 			
-			if( pEdtOutl || (pText == getActiveText()) )
-				pOutliner = pEdtOutl;
+			if( IsTextEditActive() || (pText == getActiveText()) )
+				pOutliner = GetTextEditOutliner();
 
 			if(!pOutliner)
 			{
@@ -506,7 +571,7 @@ void SdrTextObj::RemoveOutlinerCharacterAttribs( const std::vector<sal_uInt16>& 
 				pOutliner->RemoveAttribs( aSelAll, false, (*aIter++) );
 			}
 
-			if(!pEdtOutl || (pText != getActiveText()) )
+			if(!IsTextEditActive() || (pText != getActiveText()) )
 			{
 				const sal_uInt32 nParaCount = pOutliner->GetParagraphCount();
 				OutlinerParaObject* pTemp = pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount);
@@ -519,7 +584,7 @@ void SdrTextObj::RemoveOutlinerCharacterAttribs( const std::vector<sal_uInt16>& 
 
 bool SdrTextObj::HasText() const
 {
-	if( pEdtOutl )
+	if( IsTextEditActive() )
 		return HasEditText();
 	
 	OutlinerParaObject* pOPO = GetOutlinerParaObject();

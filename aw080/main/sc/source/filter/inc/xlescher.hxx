@@ -320,11 +320,11 @@ struct XclObjAnchor : public XclRange
     /** Calculates a rectangle from the contained coordinates. */
     basegfx::B2DRange	GetRangeFromAnchor( const XclRoot& rRoot, SCTAB nScTab, MapUnit eMapUnit ) const;
     /** Initializes the anchor coordinates for a sheet. */
-    void                SetRangeAtAnchor( const XclRoot& rRoot, SCTAB nScTab, const basegfx::B2DRange& rRange, MapUnit eMapUnit );
+    void                SetRangeAtAnchor( const XclRoot& rRoot, SCTAB nScTab, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, MapUnit eMapUnit );
 
     /** Initializes the anchor coordinates for an embedded draw page. */
     void                SetRangeAtAnchor( const basegfx::B2DVector& rPageScale, double fScaleX, double fScaleY,
-                            const basegfx::B2DRange& rRange, MapUnit eMapUnit, bool bDffAnchor );
+                            const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, MapUnit eMapUnit, bool bDffAnchor );
 };
 
 template< typename StreamType >

@@ -853,24 +853,6 @@ void SdrCreateView::ShowCreateObj()
 			if(bUseSolidDragging)
 			{
 				basegfx::B2DPolyPolygon aDragPolyPolygon;
-				SdrRectObj* pRectObj = dynamic_cast< SdrRectObj* >(GetCreateObj());
-
-				if(pRectObj)
-				{
-					// ensure object has some size, necessary for SdrTextObj because
-					// there are still untested divisions by that sizes
-					const basegfx::B2DRange aCurrentSnapRange(sdr::legacy::GetSnapRange(*pRectObj));
-
-					if(!(aCurrentSnapRange.getWidth() > 1.0 && aCurrentSnapRange.getHeight() > 1.0))
-					{
-						const basegfx::B2DRange aNewRange(
-							GetDragStat().GetStart(), 
-							GetDragStat().GetStart() + basegfx::B2DPoint(2.0, 2.0));
-						
-						sdr::legacy::SetSnapRange(*pRectObj, aNewRange);
-					}
-				}
-
 				SdrPathObj* pPathObj = dynamic_cast< SdrPathObj* >(GetCreateObj());
 
 				if(pPathObj)

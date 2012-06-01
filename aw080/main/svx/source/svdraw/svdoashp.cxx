@@ -2169,184 +2169,41 @@ void SdrObjCustomShape::SetVerticalWriting( bool bVertical )
 		}
 	}
 }
-bool SdrObjCustomShape::AdjustTextFrameWidthAndHeight(Rectangle& rR, bool bHgt, bool bWdt) const
+bool SdrObjCustomShape::AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt, bool bWdt) const
 {
- 	if ( HasText() && !rR.IsEmpty() )
+ 	if(HasText() && !o_rRange.isEmpty())
 	{
-		bool bWdtGrow=bWdt && IsAutoGrowWidth();
-		bool bHgtGrow=bHgt && IsAutoGrowHeight();
-		if ( bWdtGrow || bHgtGrow )
-		{
-			Rectangle aR0(rR);
-			long nHgt=0,nMinHgt=0,nMaxHgt=0;
-			long nWdt=0,nMinWdt=0,nMaxWdt=0;
-			Size aSiz(rR.GetSize()); aSiz.Width()--; aSiz.Height()--;
-			Size aMaxSiz(100000,100000);
+        return ImpAdjustTextFrameWidthAndHeight(o_rRange, bHgt, bWdt, false);
+    }
 
-			if(!basegfx::fTools::equalZero(getSdrModelFromSdrObject().GetMaxObjectScale().getX())) 
-			{
-				aMaxSiz.Width() = basegfx::fround(getSdrModelFromSdrObject().GetMaxObjectScale().getX());
-			}
-
-			if(!basegfx::fTools::equalZero(getSdrModelFromSdrObject().GetMaxObjectScale().getY())) 
-			{
-				aMaxSiz.Height() = basegfx::fround(getSdrModelFromSdrObject().GetMaxObjectScale().getY());
-			}
-
-			if (bWdtGrow)
-			{
-				nMinWdt=GetMinTextFrameWidth();
-				nMaxWdt=GetMaxTextFrameWidth();
-				if (nMaxWdt==0 || nMaxWdt>aMaxSiz.Width()) nMaxWdt=aMaxSiz.Width();
-				if (nMinWdt<=0) nMinWdt=1;
-				aSiz.Width()=nMaxWdt;
-			}
-			if (bHgtGrow)
-			{
-				nMinHgt=GetMinTextFrameHeight();
-				nMaxHgt=GetMaxTextFrameHeight();
-				if (nMaxHgt==0 || nMaxHgt>aMaxSiz.Height()) nMaxHgt=aMaxSiz.Height();
-				if (nMinHgt<=0) nMinHgt=1;
-				aSiz.Height()=nMaxHgt;
-			}
-			long nHDist=GetTextLeftDistance()+GetTextRightDistance();
-			long nVDist=GetTextUpperDistance()+GetTextLowerDistance();
-			aSiz.Width()-=nHDist;
-			aSiz.Height()-=nVDist;
-			if ( aSiz.Width() < 2 )
-				aSiz.Width() = 2;   // Mindestgroesse 2
-			if ( aSiz.Height() < 2 )
-				aSiz.Height() = 2; // Mindestgroesse 2
-
-			if(pEdtOutl)
-			{
-				pEdtOutl->SetMaxAutoPaperSize( aSiz );
-				if (bWdtGrow)
-				{
-					Size aSiz2(pEdtOutl->CalcTextSize());
-					nWdt=aSiz2.Width()+1; // lieber etwas Tolleranz
-					if (bHgtGrow) nHgt=aSiz2.Height()+1; // lieber etwas Tolleranz
-				} else
-				{
-					nHgt=pEdtOutl->GetTextHeight()+1; // lieber etwas Tolleranz
-				}
-			}
-			else
-			{
-				Outliner& rOutliner=ImpGetDrawOutliner();
-				rOutliner.SetPaperSize(aSiz);
-				rOutliner.SetUpdateMode(true);
-				// !!! hier sollte ich wohl auch noch mal die Optimierung mit
-				// bPortionInfoChecked usw einbauen
-				OutlinerParaObject* pOutlinerParaObject = GetOutlinerParaObject();
-				if( pOutlinerParaObject != NULL )
-				{
-					rOutliner.SetText(*pOutlinerParaObject);
-					rOutliner.SetFixedCellHeight(((const SdrTextFixedCellHeightItem&)GetMergedItem(SDRATTR_TEXT_USEFIXEDCELLHEIGHT)).GetValue());
-				}
-				if ( bWdtGrow )
-				{
-					Size aSiz2(rOutliner.CalcTextSize());
-					nWdt=aSiz2.Width()+1; // lieber etwas Tolleranz
-					if ( bHgtGrow )
-						nHgt=aSiz2.Height()+1; // lieber etwas Tolleranz
-				}
-				else
-					nHgt = rOutliner.GetTextHeight()+1; // lieber etwas Tolleranz
-				rOutliner.Clear();
-			}
-			if ( nWdt < nMinWdt )
-				nWdt = nMinWdt;
-			if ( nWdt > nMaxWdt )
-				nWdt = nMaxWdt;
-			nWdt += nHDist;
-			if ( nWdt < 1 )
-				nWdt = 1; // nHDist kann auch negativ sein
-			if ( nHgt < nMinHgt )
-				nHgt = nMinHgt;
-			if ( nHgt > nMaxHgt )
-				nHgt = nMaxHgt;
-			nHgt+=nVDist;
-			if ( nHgt < 1 )
-				nHgt = 1; // nVDist kann auch negativ sein
-			long nWdtGrow = nWdt-(rR.Right()-rR.Left());
-			long nHgtGrow = nHgt-(rR.Bottom()-rR.Top());
-			if ( nWdtGrow == 0 )
-				bWdtGrow = false;
-			if ( nHgtGrow == 0 )
-				bHgtGrow=false;
-			if ( bWdtGrow || bHgtGrow )
-			{
-				if ( bWdtGrow )
-				{
-					SdrTextHorzAdjust eHAdj=GetTextHorizontalAdjust();
-					if ( eHAdj == SDRTEXTHORZADJUST_LEFT )
-						rR.Right()+=nWdtGrow;
-					else if ( eHAdj == SDRTEXTHORZADJUST_RIGHT )
-						rR.Left()-=nWdtGrow;
-					else
-					{
-						long nWdtGrow2=nWdtGrow/2;
-						rR.Left()-=nWdtGrow2;
-						rR.Right()=rR.Left()+nWdt;
-					}
-				}
-				if ( bHgtGrow )
-				{
-					SdrTextVertAdjust eVAdj=GetTextVerticalAdjust();
-					if ( eVAdj == SDRTEXTVERTADJUST_TOP )
-						rR.Bottom()+=nHgtGrow;
-					else if ( eVAdj == SDRTEXTVERTADJUST_BOTTOM )
-						rR.Top()-=nHgtGrow;
-					else
-					{
-						long nHgtGrow2=nHgtGrow/2;
-						rR.Top()-=nHgtGrow2;
-						rR.Bottom()=rR.Top()+nHgt;
-					}
-				}
-				const long aOldRotation(sdr::legacy::GetRotateAngle(*this));
-				if ( aOldRotation )
-				{
-					Point aD1(rR.TopLeft());
-					aD1-=aR0.TopLeft();
-					Point aD2(aD1);
-					RotatePoint(aD2,Point(),sin(aOldRotation*nPi180), cos(aOldRotation*nPi180));
-					aD2-=aD1;
-					rR.Move(aD2.X(),aD2.Y());
-				}
-				return true;
-			}
-		}
-	}
-	return false;
+    return false;
 }
 
 basegfx::B2DRange SdrObjCustomShape::ImpCalculateTextFrame(const bool bHgt, const bool bWdt)
 {
 	basegfx::B2DRange aReturnValue;
-	const basegfx::B2DRange aOldObjRange(sdr::legacy::GetLogicRange(*this));
+	const basegfx::B2DRange aOldObjRange(
+        getSdrObjectTranslate(), 
+        getSdrObjectTranslate() + getSdrObjectScale());
 
 	// initial text rectangle
 	const basegfx::B2DRange aOldTextRange(aOldObjRange);
 
-	// new text rectangle returned from the custom shape renderer,
-	// it depends to the current logical shape size
-	const basegfx::B2DRange aNewTextRange(getRawUnifiedTextRange()); 
+	// new text range returned from the custom shape renderer. It is
+    // in unit coordinates initially, so needs to be transformed by
+    // object scale and position
+	basegfx::B2DRange aNewTextRange(getRawUnifiedTextRange()); 
+    aNewTextRange.transform(
+        basegfx::tools::createScaleTranslateB2DHomMatrix(
+            getSdrObjectScale(),
+            getSdrObjectTranslate()));
 
 	// new text rectangle is being tested by AdjustTextFrameWidthAndHeight to ensure
 	// that the new text rectangle is matching the current text size from the outliner
 	basegfx::B2DRange aAdjustedTextRange(aNewTextRange);
 	
-	Rectangle aTemp( // TTTT: adapt AdjustTextFrameWidthAndHeight, remove here
-		(sal_Int32)floor(aAdjustedTextRange.getMinX()), (sal_Int32)floor(aAdjustedTextRange.getMinY()),
-		(sal_Int32)ceil(aAdjustedTextRange.getMaxX()), (sal_Int32)ceil(aAdjustedTextRange.getMaxY()));
-
-	if(AdjustTextFrameWidthAndHeight(aTemp, bHgt, bWdt))	
+	if(AdjustTextFrameWidthAndHeight(aAdjustedTextRange, bHgt, bWdt))	
 	{
-		// TTTT: adapt AdjustTextFrameWidthAndHeight, remove here
-		aAdjustedTextRange = basegfx::B2DRange(aTemp.Left(), aTemp.Top(), aTemp.Right(), aTemp.Bottom());
-
 		if((aAdjustedTextRange != aNewTextRange) && (aOldTextRange != aAdjustedTextRange))
 		{
 			const basegfx::B2DVector aScale(aOldTextRange.getRange() / aNewTextRange.getRange());
@@ -2365,25 +2222,26 @@ basegfx::B2DRange SdrObjCustomShape::ImpCalculateTextFrame(const bool bHgt, cons
 bool SdrObjCustomShape::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
 {
 	const basegfx::B2DRange aNewTextRange(ImpCalculateTextFrame(bHgt, bWdt));
-	const basegfx::B2DRange aOldObjRange(sdr::legacy::GetLogicRange(*this));
-	bool bRet(!aNewTextRange.isEmpty() && (aNewTextRange != aOldObjRange));
+	const basegfx::B2DRange aOldObjRange(getSdrObjectTranslate(), getSdrObjectTranslate() + getSdrObjectScale());
 	
-	if(bRet)
+	if(!aNewTextRange.isEmpty() && !aNewTextRange.equal(aOldObjRange))
 	{
 		// taking care of handles that should not been changed
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-		std::vector< SdrCustomShapeInteraction > aInteractionHandles( GetInteractionHandles( this ) );
+		std::vector< SdrCustomShapeInteraction > aInteractionHandles(GetInteractionHandles(this));
 		sdr::legacy::SetLogicRange(*this, aNewTextRange);
-		std::vector< SdrCustomShapeInteraction >::iterator aIter( aInteractionHandles.begin() );
+		std::vector< SdrCustomShapeInteraction >::iterator aIter(aInteractionHandles.begin());
 
-		while ( aIter != aInteractionHandles.end() )
+		while(aIter != aInteractionHandles.end())
 		{
 			try
 			{
-				if ( aIter->nMode & CUSTOMSHAPE_HANDLE_RESIZE_FIXED )
-					aIter->xInteraction->setControllerPosition( aIter->aPosition );
+				if(aIter->nMode & CUSTOMSHAPE_HANDLE_RESIZE_FIXED)
+                {
+					aIter->xInteraction->setControllerPosition(aIter->aPosition);
+                }
 			}
-			catch ( const uno::RuntimeException& )
+			catch(const uno::RuntimeException&)
 			{
 			}
 
@@ -2392,9 +2250,11 @@ bool SdrObjCustomShape::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
 
 		InvalidateRenderGeometry();
 		SetChanged();
+        
+        return true;
 	}
 
-	return bRet;
+	return false;
 }
 
 bool SdrObjCustomShape::BegTextEdit( SdrOutliner& rOutl )
@@ -2577,10 +2437,10 @@ basegfx::B2DRange SdrObjCustomShape::getRawUnifiedTextRange() const
 			// whereby scale is absolute (without mirrorings AFAIK). To get the unified range,
 			// multiply with the inverse of M = T(obj) * S(obj). This can be done directly
 			// here
-			const double fX(aR.X - getSdrObjectTranslate().getX());
-			const double fY(aR.Y - getSdrObjectTranslate().getY());
 			const double fAbsInvScaleX(basegfx::fTools::equalZero(getSdrObjectScale().getX()) ? 1.0 : 1.0 / fabs(getSdrObjectScale().getX()));
 			const double fAbsInvScaleY(basegfx::fTools::equalZero(getSdrObjectScale().getY()) ? 1.0 : 1.0 / fabs(getSdrObjectScale().getY()));
+			const double fX((aR.X - getSdrObjectTranslate().getX()) * fAbsInvScaleX);
+			const double fY((aR.Y - getSdrObjectTranslate().getY()) * fAbsInvScaleY);
 			const double fW(aR.Width * fAbsInvScaleX);
 			const double fH(aR.Height * fAbsInvScaleY);
 
@@ -2593,11 +2453,12 @@ basegfx::B2DRange SdrObjCustomShape::getRawUnifiedTextRange() const
 }
 basegfx::B2DRange SdrObjCustomShape::getUnifiedTextRange() const
 {
+    // get raw range (without text borders)
 	basegfx::B2DRange aRawRange(getRawUnifiedTextRange());
 	const double fAbsInvScaleX(basegfx::fTools::equalZero(getSdrObjectScale().getX()) ? 1.0 : 1.0 / fabs(getSdrObjectScale().getX()));
 	const double fAbsInvScaleY(basegfx::fTools::equalZero(getSdrObjectScale().getY()) ? 1.0 : 1.0 / fabs(getSdrObjectScale().getY()));
 
-	// add/remove the text distances
+	// add/remove the text borders
 	return basegfx::B2DRange(
 		aRawRange.getMinX() + (GetTextLeftDistance() * fAbsInvScaleX),
 		aRawRange.getMinY() + (GetTextUpperDistance() * fAbsInvScaleY),

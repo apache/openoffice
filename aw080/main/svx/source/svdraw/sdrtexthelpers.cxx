@@ -158,14 +158,18 @@ namespace drawinglayer
 
 basegfx::B2DRange getScaledCenteredTextRange(const SdrTextObj& rText)
 {
-	const basegfx::B2DRange aUnifiedTextRange(
-		rText.getUnifiedTextRange());
+    // get unified text range (no mirroring)
+	const basegfx::B2DRange aUnifiedTextRange(rText.getUnifiedTextRange());
+
+    // scale to object size
 	basegfx::B2DRange aRetval(
 		basegfx::tools::createScaleB2DHomMatrix(
-			basegfx::absolute(rText.getSdrObjectScale())) * 
+			rText.getSdrObjectScale()) * 
 		aUnifiedTextRange);
-	const basegfx::B2DPoint aCurrentCenter(
-		aRetval.getCenter());
+
+    // to align centered, just translate to the current object center. This
+    // will also correct evtl. mirrorings
+	const basegfx::B2DPoint aCurrentCenter(aRetval.getCenter());
 	const basegfx::B2DPoint aFullTransformedCenter(
 		rText.getSdrObjectTransformation() * aUnifiedTextRange.getCenter());
 

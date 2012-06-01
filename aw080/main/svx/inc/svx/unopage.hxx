@@ -94,7 +94,6 @@ class SVX_DLLPUBLIC SvxDrawPage : public ::cppu::WeakAggImplHelper5< ::com::sun:
 
 	// Internals
 	SdrPage* GetSdrPage() const { return mpPage; }
-//CMCX	void ChangeModel( SdrModel* pNewModel );
 
 	// Erzeugen eines SdrObjects und Einfugen in die SdrPage
 	SdrObject *CreateSdrObject( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& xShape ) throw();

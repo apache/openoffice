@@ -87,6 +87,8 @@
 #include <com/sun/star/awt/CharSet.hpp>
 #include <com/sun/star/text/WritingMode.hpp>
 #include <com/sun/star/lang/Locale.hpp>
+#include <basegfx/matrix/b2dhommatrix.hxx>
+#include <basegfx/matrix/b2dhommatrixtools.hxx>
 
 enum PageType { NORMAL = 0, MASTER = 1, NOTICE = 2, UNDEFINED = 3 };
 
@@ -489,6 +491,7 @@ class PropValue
 		::com::sun::star::uno::Reference
 			< ::com::sun::star::beans::XPropertySet	>			mXPropSet;
 
+        basegfx::B2DHomMatrix ImplGetObjectTransformation();
 		sal_Bool	ImplGetPropertyValue( const String& rString );
 		sal_Bool	ImplGetPropertyValue( const ::com::sun::star::uno::Reference
 						< ::com::sun::star::beans::XPropertySet > &, const String& );
@@ -583,9 +586,6 @@ class ParagraphObj : public List, public PropStateValue, public SOParagraph
 {
 	friend class TextObj;
 	friend struct PPTExParaSheet;
-
-		MapMode			maMapModeSrc;
-		MapMode			maMapModeDest;
 
 	protected :
 
@@ -685,11 +685,12 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 		std::vector< PPTExStyleSheet* >	maStyleSheetList;
 		PPTExStyleSheet*				mpStyleSheet;
 
-		Fraction						maFraction;
-		MapMode							maMapModeSrc;
-		MapMode							maMapModeDest;
-		::com::sun::star::awt::Size		maDestPageSize;
-		::com::sun::star::awt::Size		maNotesPageSize;
+        double                          mfMap100thMmToMs;
+        basegfx::B2DHomMatrix           maMap100thMmToMs;
+        basegfx::B2DHomMatrix           maInvMap100thMmToMs;
+
+		basegfx::B2DVector              maDestPageSize;
+		basegfx::B2DVector              maNotesPageSize;
 		PageType						meLatestPageType;
 		List							maSlideNameList;
 		rtl::OUString					maBaseURI;
@@ -709,14 +710,19 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 		::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange >				mXCursorText;		// TextRef des Teilstuecks des Cursors
 		::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet	>			mXCursorPropSet;	// die Properties des Teilstueckes
 		::com::sun::star::uno::Reference< ::com::sun::star::text::XTextField >				mXTextField;
-		::com::sun::star::awt::Size			maSize;
-		::com::sun::star::awt::Point		maPosition;
-		basegfx::B2DRange	maRange;
-		ByteString			mType;
+		
+        // the object range, split in pos and scale to keep the evtl. negative size (mirroring)
+        basegfx::B2DPoint   maObjectPosition;
+        basegfx::B2DVector  maObjectScale;
+//        basegfx::B2DRange               maObjectRange;
+//        bool                            mbMirroredX;
+//        bool                            mbMirroredY;
+        double                          mfObjectRotation;
+		
+        ByteString			mType;
 		sal_Bool			mbPresObj;
 		sal_Bool			mbEmptyPresObj;
 		sal_Bool			mbStatusIndicator;
-		sal_Int32			mnAngle;
 		sal_uInt32			mnTextStyle;
 
 		sal_Bool			mbFontIndependentLineSpacing;
@@ -793,7 +799,7 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 		sal_Bool			ImplGetPageByIndex( sal_uInt32 nIndex, PageType );
 		sal_Bool			ImplGetShapeByIndex( sal_uInt32 nIndex, sal_Bool bGroup = sal_False );
 		sal_uInt32			ImplGetMasterIndex( PageType ePageType );
-		void				ImplFlipBoundingBox( EscherPropertyContainer& rPropOpt );
+		void				ImplHandleRotation( EscherPropertyContainer& rPropOpt );
 		sal_Bool			ImplGetText();
 		sal_Bool			ImplCreatePresentationPlaceholder( const sal_Bool bMaster, const PageType PageType,
 								const sal_uInt32 StyleInstance, const sal_uInt8 PlaceHolderId );
@@ -823,11 +829,8 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 		void				ImplCreateCellBorder( const CellBorder* pCellBorder, sal_Int32 nX1, sal_Int32 nY1, sal_Int32 nX2, sal_Int32 nY2 );
 		void				ImplCreateTable( com::sun::star::uno::Reference< com::sun::star::drawing::XShape >& rXShape, EscherSolverContainer& aSolverContainer,
 								EscherPropertyContainer& aPropOpt );
-		::com::sun::star::awt::Point		ImplMapPoint( const ::com::sun::star::awt::Point& );
-		::com::sun::star::awt::Size			ImplMapSize( const ::com::sun::star::awt::Size& );
-		basegfx::B2DRange ImplMapRectangle( const ::com::sun::star::awt::Rectangle& );
 
-		sal_Bool							ImplCloseDocument();		// die font-, hyper-, Soundliste wird geschrieben ..
+        sal_Bool							ImplCloseDocument();		// die font-, hyper-, Soundliste wird geschrieben ..
 
 	public:
 								PPTWriter( const std::vector< com::sun::star::beans::PropertyValue >&, SvStorageRef& rSvStorage,

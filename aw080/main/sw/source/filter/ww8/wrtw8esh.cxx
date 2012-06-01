@@ -1258,7 +1258,10 @@ void WW8Export::WriteEscher()
     }
 }
 
-EscherExHostAppData* SwEscherEx::StartShape(const com::sun::star::uno::Reference< com::sun::star::drawing::XShape > &, const basegfx::B2DRange*) 
+EscherExHostAppData* SwEscherEx::StartShape(
+    const com::sun::star::uno::Reference< com::sun::star::drawing::XShape > &, 
+    const basegfx::B2DPoint* /*pObjectPosition*/,
+    const basegfx::B2DVector* /*pObjectScale*/) 
 {
 	return &aHostData;
 }
@@ -1405,10 +1408,16 @@ sal_Int32 SwBasicEscherEx::WriteGrfFlyFrame(const SwFrmFmt& rFmt, sal_uInt32 nSh
 				aScale *= OutputDevice::GetFactorLogicToLogic(aGraphic.GetPrefMapMode().GetMapUnit(), MAP_100TH_MM);
             }
 
-			const basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0), aScale);
+            const basegfx::B2DPoint aPoint(0.0, 0.0);
 
-            sal_uInt32 nBlibId = mxGlobal->GetBlibID( *QueryPictureStream(),
-                aUniqueId, aRange, NULL, 0 );
+            sal_uInt32 nBlibId = mxGlobal->GetBlibID( 
+                *QueryPictureStream(),
+                aUniqueId, 
+                aPoint, 
+                aScale, 
+                NULL, 
+                0 );
+            
             if (nBlibId)
                 aPropOpt.AddOpt(ESCHER_Prop_pib, nBlibId, sal_True);
         }
@@ -1611,10 +1620,16 @@ void SwBasicEscherEx::WriteBrushAttr(const SvxBrushItem &rBrush,
 				aScale *= OutputDevice::GetFactorLogicToLogic(rGraphic.GetPrefMapMode().GetMapUnit(), MAP_100TH_MM);
             }
 
-			const basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0), aScale);
+            const basegfx::B2DPoint aPoint(0.0, 0.0);
 
-            sal_uInt32 nBlibId = mxGlobal->GetBlibID( *QueryPictureStream(),
-                aUniqueId, aRange, NULL, 0);
+            sal_uInt32 nBlibId = mxGlobal->GetBlibID( 
+                *QueryPictureStream(),
+                aUniqueId, 
+                aPoint, 
+                aScale, 
+                NULL, 
+                0);
+
             if (nBlibId)
                 rPropOpt.AddOpt(ESCHER_Prop_fillBlip,nBlibId,sal_True);
         }
@@ -2648,11 +2663,16 @@ void SwBasicEscherEx::WriteOLEPicture(EscherPropertyContainer &rPropOpt,
     if (aId.Len())
     {
 		const basegfx::B2DRange aObjectRange(sdr::legacy::GetLogicRange(rObj));
-		const basegfx::B2DRange aRange(0.0, 0.0,
-			DrawModelToEmu(aObjectRange.getWidth()),
-			DrawModelToEmu(aObjectRange.getHeight()));
-        sal_uInt32 nBlibId = mxGlobal->GetBlibID( *QueryPictureStream(),
-            aId, aRange, pVisArea, 0);    // SJ: the fourth parameter (VisArea) should be set..
+        const basegfx::B2DPoint aPoint(0.0, 0.0);
+        const basegfx::B2DVector aScale(DrawModelToEmu(aObjectRange.getWidth()), DrawModelToEmu(aObjectRange.getHeight()));
+        sal_uInt32 nBlibId = mxGlobal->GetBlibID( 
+            *QueryPictureStream(),
+            aId, 
+            aPoint, 
+            aScale, 
+            pVisArea, 
+            0);    // SJ: the fifth parameter (VisArea) should be set..
+        
         if (nBlibId)
             rPropOpt.AddOpt(ESCHER_Prop_pib, nBlibId, sal_True);
     }

@@ -124,9 +124,9 @@ PPTWriter::PPTWriter( const std::vector< com::sun::star::beans::PropertyValue >&
     mbStatus                ( sal_False ),
 	mbUseNewAnimations		( sal_True ),
     mnLatestStatValue       ( 0 ),
-    maFraction              ( 1, 576 ),
-    maMapModeSrc            ( MAP_100TH_MM ),
-    maMapModeDest           ( MAP_INCH, Point(), maFraction, maFraction ),
+    mfMap100thMmToMs(1.0),
+    maMap100thMmToMs(),
+    maInvMap100thMmToMs(),
     meLatestPageType        ( NORMAL ),
     mXModel                 ( rXModel ),
 	mXStatusIndicator       ( rXStatInd ),
@@ -142,6 +142,10 @@ PPTWriter::PPTWriter( const std::vector< com::sun::star::beans::PropertyValue >&
     mnPagesWritten          ( 0 ),
 	mnTxId                  ( 0x7a2f64 )
 {
+    mfMap100thMmToMs = OutputDevice::GetFactorLogicToLogic(MAP_100TH_MM, MAP_INCH) * 576.0;
+    maMap100thMmToMs = basegfx::tools::createScaleB2DHomMatrix(mfMap100thMmToMs, mfMap100thMmToMs);
+    maInvMap100thMmToMs = basegfx::tools::createScaleB2DHomMatrix(1.0 / mfMap100thMmToMs, 1.0 / mfMap100thMmToMs);
+
     sal_uInt32 i;
     if ( !ImplInitSOIface() )
         return;
@@ -161,7 +165,7 @@ PPTWriter::PPTWriter( const std::vector< com::sun::star::beans::PropertyValue >&
     if ( ImplGetPropertyValue( mXPagePropSet, String( RTL_CONSTASCII_USTRINGPARAM( "Height" ) ) ) )
         mAny >>= nHeight;
 
-    maNotesPageSize = ImplMapSize( ::com::sun::star::awt::Size( nWidth, nHeight ) );
+    maNotesPageSize = maMap100thMmToMs * basegfx::B2DVector(nWidth, nHeight);
 
     if ( !ImplGetPageByIndex( 0, MASTER ) )
         return;
@@ -171,7 +175,7 @@ PPTWriter::PPTWriter( const std::vector< com::sun::star::beans::PropertyValue >&
     nHeight = 21000;
     if ( ImplGetPropertyValue( mXPagePropSet, String( RTL_CONSTASCII_USTRINGPARAM( "Height" ) ) ) )
         mAny >>= nHeight;
-    maDestPageSize = ImplMapSize( ::com::sun::star::awt::Size( nWidth, nHeight ) );
+    maDestPageSize = maMap100thMmToMs * basegfx::B2DVector(nWidth, nHeight);
 
     mrStg = rSvStorage;
     if ( !mrStg.Is() )
@@ -518,9 +522,8 @@ sal_Bool PPTWriter::ImplCreateDocument()
 {
     sal_uInt32 i;
     sal_uInt16 nSlideType = EPP_SLIDESIZE_TYPECUSTOM;
-
-    sal_uInt32 nWidth = maDestPageSize.Width;
-    sal_uInt32 nHeight = maDestPageSize.Height;
+    const sal_uInt32 nWidth(basegfx::fround(maDestPageSize.getX()));
+    const sal_uInt32 nHeight(basegfx::fround(maDestPageSize.getY()));
 
     if ( ( nWidth == 0x1680 ) && ( nHeight == 0x10e0 ) )
         nSlideType = EPP_SLIDESIZE_TYPEONSCREEN;
@@ -536,8 +539,8 @@ sal_Bool PPTWriter::ImplCreateDocument()
     mpPptEscherEx->AddAtom( 40, EPP_DocumentAtom, 1 );
     *mpStrm << nWidth                           // Slide Size in Master coordinates X
             << nHeight                          //   "     "   "    "        "      Y
-            << (sal_Int32)maNotesPageSize.Width     // Notes Page Size                  X
-            << (sal_Int32)maNotesPageSize.Height    //   "     "   "                    Y
+            << (sal_Int32)basegfx::fround(maNotesPageSize.getX())     // Notes Page Size                  X
+            << (sal_Int32)basegfx::fround(maNotesPageSize.getY())    //   "     "   "                    Y
             << (sal_Int32)1 << (sal_Int32)2;            // the scale used when the Powerpoint document is embedded. the default is 1:2
     mpPptEscherEx->InsertPersistOffset( EPP_MAINNOTESMASTER_PERSIST_KEY, mpStrm->Tell() );
     *mpStrm << (sal_uInt32)0                        // Reference to NotesMaster ( 0 if none );
@@ -1017,7 +1020,7 @@ sal_Bool PPTWriter::ImplCreateMaster( sal_uInt32 nPageNum )
     mpPptEscherEx->OpenContainer( EPP_PPDrawing );
     mpPptEscherEx->OpenContainer( ESCHER_DgContainer );
 
-	mpPptEscherEx->EnterGroup(0,0);
+	mpPptEscherEx->EnterGroup();
     ImplWritePage( pPHLayout[ 0 ], aSolverContainer, MASTER, true );    // Die Shapes der Seite werden im PPT Dok. erzeugt
     mpPptEscherEx->LeaveGroup();
 
@@ -1077,7 +1080,7 @@ sal_Bool PPTWriter::ImplCreateMainNotes()
             << (sal_uInt32)0;                                                       // follow nothing
     mpPptEscherEx->OpenContainer( EPP_PPDrawing );
     mpPptEscherEx->OpenContainer( ESCHER_DgContainer );
-    mpPptEscherEx->EnterGroup(0,0);
+    mpPptEscherEx->EnterGroup();
 
     ImplWritePage( pPHLayout[ 20 ], aSolverContainer, NOTICE, true );
 
@@ -1528,7 +1531,7 @@ sal_Bool PPTWriter::ImplCreateSlide( sal_uInt32 nPageNum )
     EscherSolverContainer aSolverContainer;
     mpPptEscherEx->OpenContainer( EPP_PPDrawing );
     mpPptEscherEx->OpenContainer( ESCHER_DgContainer );
-    mpPptEscherEx->EnterGroup(0,0);
+    mpPptEscherEx->EnterGroup();
     ImplWritePage( rLayout, aSolverContainer, NORMAL, false, nPageNum );    // Die Shapes der Seite werden im PPT Dok. erzeugt
     mpPptEscherEx->LeaveGroup();
 
@@ -1539,8 +1542,8 @@ sal_Bool PPTWriter::ImplCreateSlide( sal_uInt32 nPageNum )
         mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
         mpPptEscherEx->AddShape( ESCHER_ShpInst_Rectangle, 0xc00 );             // Flags: Connector | Background | HasSpt
         EscherPropertyContainer aPropOpt;
-		aPropOpt.AddOpt( ESCHER_Prop_fillRectRight, PPTtoEMU( maDestPageSize.Width ) );
-        aPropOpt.AddOpt( ESCHER_Prop_fillRectBottom, PPTtoEMU( maDestPageSize.Width ) );
+		aPropOpt.AddOpt( ESCHER_Prop_fillRectRight, PPTtoEMU( basegfx::fround(maDestPageSize.getX()) ) );
+        aPropOpt.AddOpt( ESCHER_Prop_fillRectBottom, PPTtoEMU( basegfx::fround(maDestPageSize.getY()) ) ); // here Height() was used in the original version, probably an error
         aPropOpt.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x120012 );
         aPropOpt.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x80000 );
         aPropOpt.AddOpt( ESCHER_Prop_bWMode, ESCHER_wDontShow );
@@ -1664,7 +1667,7 @@ sal_Bool PPTWriter::ImplCreateNotes( sal_uInt32 nPageNum )
 
     mpPptEscherEx->OpenContainer( EPP_PPDrawing );
     mpPptEscherEx->OpenContainer( ESCHER_DgContainer );
-    mpPptEscherEx->EnterGroup(0,0);
+    mpPptEscherEx->EnterGroup();
 
     ImplWritePage( pPHLayout[ 20 ], aSolverContainer, NOTICE, false );  // Die Shapes der Seite werden im PPT Dok. erzeugt
 
@@ -1704,8 +1707,9 @@ void PPTWriter::ImplWriteBackground( ::com::sun::star::uno::Reference< ::com::su
 
     mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
     mpPptEscherEx->AddShape( ESCHER_ShpInst_Rectangle, 0xc00 );                     // Flags: Connector | Background | HasSpt
-	basegfx::B2DRange aRange(0.0, 0.0, 28000.0, 21000.0);
-    EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aRange);
+    basegfx::B2DPoint aObjectPosition(0.0, 0.0);
+    basegfx::B2DVector aObjectScale(28000.0, 21000.0);
+    EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aObjectPosition, aObjectScale);
     aPropOpt.AddOpt( ESCHER_Prop_fillType, ESCHER_FillSolid );
     ::com::sun::star::drawing::FillStyle aFS( ::com::sun::star::drawing::FillStyle_NONE );
     if ( ImplGetPropertyValue( rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillStyle" ) ) ) )
@@ -1745,8 +1749,8 @@ void PPTWriter::ImplWriteBackground( ::com::sun::star::uno::Reference< ::com::su
     }
     aPropOpt.AddOpt( ESCHER_Prop_fillColor, nFillColor );
     aPropOpt.AddOpt( ESCHER_Prop_fillBackColor, nFillBackColor );
-    aPropOpt.AddOpt( ESCHER_Prop_fillRectRight, PPTtoEMU( maDestPageSize.Width ) );
-    aPropOpt.AddOpt( ESCHER_Prop_fillRectBottom, PPTtoEMU( maDestPageSize.Height ) );
+    aPropOpt.AddOpt( ESCHER_Prop_fillRectRight, PPTtoEMU( basegfx::fround(maDestPageSize.getX()) ) );
+    aPropOpt.AddOpt( ESCHER_Prop_fillRectBottom, PPTtoEMU( basegfx::fround(maDestPageSize.getY()) ) );
     aPropOpt.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x80000 );
     aPropOpt.AddOpt( ESCHER_Prop_bWMode, ESCHER_bwWhite );
     aPropOpt.AddOpt( ESCHER_Prop_fBackground, 0x10001 );

@@ -52,6 +52,8 @@
 #include <vcl/cvtgrf.hxx>
 #include <svx/svdlegacy.hxx>
 #include <vcl/svapp.hxx>
+#include <svx/svdocirc.hxx>
+#include <basegfx/polygon/b2dpolygon.hxx>
 
 using ::rtl::OUString;
 using namespace ::com::sun::star;
@@ -145,12 +147,13 @@ void ImplEESdrWriter::ImplFlipBoundingBox( ImplEESdrObject& rObj, EscherProperty
 	double	fCos = cos( fVal );
 	double	fSin = sin( fVal );
 
-	basegfx::B2DRange aRange( rObj.GetRange() );
-	const basegfx::B2DVector aHalfScale(aRange.getRange() * 0.5);
+    basegfx::B2DPoint aPoint(rObj.getObjectPosition());
+    basegfx::B2DVector aScale(rObj.getObjectScale());
+	const basegfx::B2DVector aHalfScale(aScale * 0.5);
 	const double nXDiff(fCos * aHalfScale.getX() + fSin * (-aHalfScale.getY()));
 	const double nYDiff(-( fSin * aHalfScale.getX() - fCos * ( -aHalfScale.getY())));
 
-	aRange.transform(basegfx::tools::createTranslateB2DHomMatrix(-(aHalfScale.getX() - nXDiff), -(aHalfScale.getY() + nYDiff)));
+    aPoint -= basegfx::B2DPoint(aHalfScale.getX() - nXDiff, aHalfScale.getY() + nYDiff);
 
 	nAngle *= 655;
 	nAngle += 0x8000;
@@ -158,7 +161,7 @@ void ImplEESdrWriter::ImplFlipBoundingBox( ImplEESdrObject& rObj, EscherProperty
 	rPropOpt.AddOpt( ESCHER_Prop_Rotation, nAngle );
 
 	rObj.SetAngle( nAngle );
-	rObj.SetRange( aRange );
+	rObj.setObjectPositionAndScale(aPoint, aScale);
 }
 
 //	-----------------------------------------------------------------------
@@ -202,7 +205,8 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 	sal_uInt32 nGrpShapeID = 0;
 
 	do {
-        mpHostAppData = mpEscherEx->StartShape( rObj.GetShapeRef(), (mpEscherEx->GetGroupLevel() > 1) ? &rObj.GetRange() : 0 );
+        const bool bHandOverPosAndSize(mpEscherEx->GetGroupLevel() > 1);
+        mpHostAppData = mpEscherEx->StartShape( rObj.GetShapeRef(), bHandOverPosAndSize ? &rObj.getObjectPosition() : 0, bHandOverPosAndSize ? &rObj.getObjectScale() : 0 );
 		if ( mpHostAppData && mpHostAppData->DontWriteShape() )
 			break;
 
@@ -220,7 +224,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 
 			if( xXIndexAccess.is() && 0 != xXIndexAccess->getCount() )
 			{
-                nShapeID = mpEscherEx->EnterGroup( aShapeName, &rObj.GetRange() );
+                nShapeID = mpEscherEx->EnterGroup( aShapeName, &rObj.getObjectPosition(), &rObj.getObjectScale() );
 				nShapeType = ESCHER_ShpInst_Min;
 
 				for( sal_uInt32 n = 0, nCnt = xXIndexAccess->getCount();
@@ -254,12 +258,23 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 								RTL_TEXTENCODING_MS_1252 ));
 		}
 
-		const ::com::sun::star::awt::Size	aSize100thmm( rObj.GetShapeRef()->getSize() );
-		const ::com::sun::star::awt::Point	aPoint100thmm( rObj.GetShapeRef()->getPosition() );
-		basegfx::B2DRange aRange100thmm(aPoint100thmm.X, aPoint100thmm.Y, aPoint100thmm.X + aSize100thmm.Width, aPoint100thmm.Y + aSize100thmm.Height);
-		if ( !mpPicStrm )
+        // TTTT: adapted to transformation
+        basegfx::B2DPoint maObjectPosition(0.0, 0.0);
+        basegfx::B2DVector maObjectScale(1.0, 1.0);
+
+		if(rObj.ImplGetPropertyValue(::rtl::OUString::createFromAscii("Transformation")))
+        {
+		    drawing::HomogenMatrix3 aMatrix;
+            rObj.GetUsrAny() >>= aMatrix;
+            const basegfx::tools::B2DHomMatrixBufferedDecompose aMat(basegfx::tools::UnoHomogenMatrix3ToB2DHomMatrix(aMatrix));
+            maObjectPosition = aMat.getTranslate();
+            maObjectScale = aMat.getScale();
+        }
+
+        if ( !mpPicStrm )
             mpPicStrm = mpEscherEx->QueryPictureStream();
-        EscherPropertyContainer aPropOpt( mpEscherEx->GetGraphicProvider(), mpPicStrm, aRange100thmm );
+        
+        EscherPropertyContainer aPropOpt( mpEscherEx->GetGraphicProvider(), mpPicStrm, maObjectPosition, maObjectScale );
 
         // #i51348# shape name
         if( aShapeName.Len() > 0 )
@@ -287,7 +302,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 						const basegfx::B2DPoint aPosition(ImplMapB2DPoint(aBound.getMinimum()));
 						const basegfx::B2DVector aScale(ImplMapB2DVector(aBound.getRange()));
 						
-						rObj.SetRange(basegfx::B2DRange(aPosition, aPosition + aScale));
+						rObj.setObjectPositionAndScale(aPosition, aScale);
 						rObj.SetAngle( 0 );
 						bDontWriteText = sal_True;
 					}
@@ -317,7 +332,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			{
 				nRadius = ImplMapB2DVector(basegfx::B2DVector(nRadius, 0.0)).getLength();
 				ADD_SHAPE( ESCHER_ShpInst_RoundRectangle, 0xa00 );	// Flags: Connector | HasSpt
-				const sal_Int32 nLenght(basegfx::fround((std::min(rObj.GetRange().getWidth(), rObj.GetRange().getHeight())) * 0.5));
+				const sal_Int32 nLenght(basegfx::fround((std::min(rObj.getObjectScale().getX(), rObj.getObjectScale().getY())) * 0.5));
 				if ( nRadius >= nLenght )
 					nRadius = 0x2a30;							// 0x2a30 ist PPTs maximum radius
 				else
@@ -336,99 +351,54 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 		}
 		else if ( rObj.GetType().EqualsAscii( "drawing.Ellipse" ))
 		{
-			CircleKind	eCircleKind = CircleKind_FULL;
-			PolyStyle	ePolyKind = PolyStyle();
-			if ( rObj.ImplGetPropertyValue( ::rtl::OUString::createFromAscii("CircleKind") ) )
-			{
-				eCircleKind = *( (CircleKind*)rObj.GetUsrAny().getValue() );
-				switch ( eCircleKind )
-				{
-					case CircleKind_SECTION :
-					{
-						ePolyKind = POLY_PIE;
-					}
-					break;
-					case CircleKind_ARC :
-					{
-						ePolyKind = POLY_ARC;
-					}
-					break;
+            // changed to directly use the SdrObject, using the handmade creatin of the polygon data
+            // seemed too dangerous for the moment. Can be changed back to own geometry creation, of 
+            // course (e.g. by getting primitives using UNO API and filtering for hairlines)
+            SdrCircObj* pCircObj = dynamic_cast< SdrCircObj* >(GetSdrObjectFromXShape(rObj.GetShapeRef()));
 
-					case CircleKind_CUT :
-					{
-						ePolyKind = POLY_CHORD;
-					}
-					break;
+            if(!pCircObj)
+                break;
 
-					default:
-						eCircleKind = CircleKind_FULL;
-				}
-			}
-			if ( eCircleKind == CircleKind_FULL )
-			{
+            if(OBJ_CIRC == pCircObj->GetCircleKind())
+            {
 				mpEscherEx->OpenContainer( ESCHER_SpContainer );
 				ADD_SHAPE( ESCHER_ShpInst_Ellipse, 0xa00 );			// Flags: Connector | HasSpt
 				aPropOpt.CreateFillProperties( rObj.mXPropSet, sal_True );;
-			}
+            }
 			else
 			{
-				sal_Int32 nStartAngle, nEndAngle;
-				if ( !rObj.ImplGetPropertyValue( ::rtl::OUString::createFromAscii("CircleStartAngle") ) )
-					break;
-				nStartAngle = *( (sal_Int32*)rObj.GetUsrAny().getValue() );
-				if( !rObj.ImplGetPropertyValue( ::rtl::OUString::createFromAscii("CircleEndAngle") ) )
-					break;
-				nEndAngle = *( (sal_Int32*)rObj.GetUsrAny().getValue() );
+                const basegfx::B2DPolyPolygon aOutline(pCircObj->TakeXorPoly());
 
-				Point aStart, aEnd, aCenter;
-				aStart.X() = (sal_Int32)( ( cos( (double)( nStartAngle *
-												F_PI18000 ) ) * 100.0 ) );
-				aStart.Y() = - (sal_Int32)( ( sin( (double)( nStartAngle *
-												F_PI18000 ) ) * 100.0 ) );
-				aEnd.X() = (sal_Int32)( ( cos( (double)( nEndAngle *
-												F_PI18000 ) ) * 100.0 ) );
-				aEnd.Y() = - (sal_Int32)( ( sin( (double)( nEndAngle *
-												F_PI18000 ) ) * 100.0 ) );
-				const Rectangle aOldRect(
-					basegfx::fround(aRange100thmm.getMinX()), basegfx::fround(aRange100thmm.getMinY()),
-					basegfx::fround(aRange100thmm.getMaxX()), basegfx::fround(aRange100thmm.getMaxY()));
-				aCenter.X() = aOldRect.Left() + ( aOldRect.GetWidth() / 2 );
-				aCenter.Y() = aOldRect.Top() + ( aOldRect.GetHeight() / 2 );
-				aStart.X() += aCenter.X();
-				aStart.Y() += aCenter.Y();
-				aEnd.X() += aCenter.X();
-				aEnd.Y() += aCenter.Y();
-				Polygon aPolygon( aOldRect, aStart, aEnd, ePolyKind );
+                if(!aOutline.count())
+                    break;
+
+                Polygon aPolygon(aOutline.getB2DPolygon(0));
+                
 				if( rObj.GetAngle() )
 				{
-					aPolygon.Rotate( aOldRect.TopLeft(), (sal_uInt16)( rObj.GetAngle() / 10 ) );
+                    // already applied to the polygon, nothing to do there
 					rObj.SetAngle( 0 );
 				}
-				mpEscherEx->OpenContainer( ESCHER_SpContainer );
+
+                mpEscherEx->OpenContainer( ESCHER_SpContainer );
 				ADD_SHAPE( ESCHER_ShpInst_NotPrimitive, 0xa00 );		// Flags: Connector | HasSpt
 				::com::sun::star::awt::Rectangle aNewRect;
-				switch ( ePolyKind )
-				{
-					case POLY_PIE :
-					case POLY_CHORD :
-					{
-						aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_False, aNewRect, &aPolygon );
-						aPropOpt.CreateFillProperties( rObj.mXPropSet, sal_True  );
-					}
-					break;
 
-					case POLY_ARC :
-					{
-						aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYLINE, sal_False, aNewRect, &aPolygon );
-						aPropOpt.CreateLineProperties( rObj.mXPropSet, sal_False );
-					}
-					break;
-				}
+                if(aOutline.isClosed())
+                {
+					aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_False, aNewRect, &aPolygon );
+					aPropOpt.CreateFillProperties( rObj.mXPropSet, sal_True  );
+                }
+                else
+                {
+					aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYLINE, sal_False, aNewRect, &aPolygon );
+					aPropOpt.CreateLineProperties( rObj.mXPropSet, sal_False );
+                }
 				
 				const basegfx::B2DPoint aPosition(ImplMapB2DPoint(basegfx::B2DPoint(aNewRect.X, aNewRect.Y)));
 				const basegfx::B2DVector aScale(ImplMapB2DVector(basegfx::B2DVector(aNewRect.Width, aNewRect.Height)));
 				
-				rObj.SetRange(basegfx::B2DRange(aPosition, aPosition + aScale));
+				rObj.setObjectPositionAndScale(aPosition, aScale);
 			}
 			if ( rObj.ImplGetText() )
 				aPropOpt.CreateTextProperties( rObj.mXPropSet,
@@ -451,7 +421,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			const basegfx::B2DPoint aPosition(ImplMapB2DPoint(basegfx::B2DPoint(aNewRect.X, aNewRect.Y)));
 			const basegfx::B2DVector aScale(ImplMapB2DVector(basegfx::B2DVector(aNewRect.Width, aNewRect.Height)));
 				
-			rObj.SetRange(basegfx::B2DRange(aPosition, aPosition + aScale));
+			rObj.setObjectPositionAndScale(aPosition, aScale);
             mpEscherEx->OpenContainer( ESCHER_SpContainer );
 			ADD_SHAPE( nSpType, nSpFlags );
 		}
@@ -562,7 +532,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 		{
 			if( rObj.ImplHasText() )
 			{
-				nGrpShapeID = ImplEnterAdditionalTextGroup(	rObj.GetShapeRef(), &rObj.GetRange() );
+				nGrpShapeID = ImplEnterAdditionalTextGroup(	rObj.GetShapeRef(), &rObj.getObjectPosition(), &rObj.getObjectScale() );
 				bAdditionalText = sal_True;
 			}
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
@@ -601,7 +571,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 		{
 			if ( rObj.ImplHasText() )
 			{
-				nGrpShapeID = ImplEnterAdditionalTextGroup(	rObj.GetShapeRef(), &rObj.GetRange() );
+				nGrpShapeID = ImplEnterAdditionalTextGroup(	rObj.GetShapeRef(), &rObj.getObjectPosition(), &rObj.getObjectScale() );
 				bAdditionalText = sal_True;
 			}
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
@@ -749,13 +719,13 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			ImplFlipBoundingBox( rObj, aPropOpt );
 
 		aPropOpt.CreateShapeProperties( rObj.GetShapeRef() );
-		mpEscherEx->Commit( aPropOpt, rObj.GetRange() );
+		mpEscherEx->Commit( aPropOpt, rObj.getObjectPosition(), rObj.getObjectScale() );
 		if( mpEscherEx->GetGroupLevel() > 1 )
-            mpEscherEx->AddChildAnchor( rObj.GetRange() );
+            mpEscherEx->AddChildAnchor( rObj.getObjectPosition(), rObj.getObjectScale() );
 
 		if ( mpHostAppData )
 		{	//! with AdditionalText the App has to control whether these are written or not
-			mpHostAppData->WriteClientAnchor( *mpEscherEx, rObj.GetRange() );
+			mpHostAppData->WriteClientAnchor( *mpEscherEx, rObj.getObjectPosition(), rObj.getObjectScale() );
 			mpHostAppData->WriteClientData( *mpEscherEx );
 			if ( !bDontWriteText )
 				mpHostAppData->WriteClientTextbox( *mpEscherEx );
@@ -784,23 +754,36 @@ void ImplEESdrWriter::ImplWriteAdditionalText( ImplEESdrObject& rObj,
 	sal_uInt16 nShapeType = 0;
 	do
 	{
-        mpHostAppData = mpEscherEx->StartShape( rObj.GetShapeRef(), (mpEscherEx->GetGroupLevel() > 1) ? &rObj.GetRange() : 0 );
+        const bool bHandOver(mpEscherEx->GetGroupLevel() > 1);
+        mpHostAppData = mpEscherEx->StartShape( rObj.GetShapeRef(), bHandOver ? &rObj.getObjectPosition() : 0, bHandOver ? &rObj.getObjectScale() : 0 );
 		if ( mpHostAppData && mpHostAppData->DontWriteShape() )
 			break;
 
-		const ::com::sun::star::awt::Size	aSize100thmm( rObj.GetShapeRef()->getSize() );
-		const ::com::sun::star::awt::Point	aPoint100thmm( rObj.GetShapeRef()->getPosition() );
-		basegfx::B2DRange aRange100thmm(aPoint100thmm.X, aPoint100thmm.Y, aPoint100thmm.X + aSize100thmm.Width, aPoint100thmm.Y + aSize100thmm.Height);
-		if ( !mpPicStrm )
+        // TTTT: adapted to transformation
+        basegfx::B2DPoint maObjectPosition(0.0, 0.0);
+        basegfx::B2DVector maObjectScale(1.0, 1.0);
+
+		if(rObj.ImplGetPropertyValue(::rtl::OUString::createFromAscii("Transformation")))
+        {
+		    drawing::HomogenMatrix3 aMatrix;
+            rObj.GetUsrAny() >>= aMatrix;
+            const basegfx::tools::B2DHomMatrixBufferedDecompose aMat(basegfx::tools::UnoHomogenMatrix3ToB2DHomMatrix(aMatrix));
+            maObjectPosition = aMat.getTranslate();
+            maObjectScale = aMat.getScale();
+        }
+		
+        if ( !mpPicStrm )
             mpPicStrm = mpEscherEx->QueryPictureStream();
-        EscherPropertyContainer aPropOpt( mpEscherEx->GetGraphicProvider(), mpPicStrm, aRange100thmm );
-		rObj.SetAngle( rObj.ImplGetInt32PropertyValue( ::rtl::OUString::createFromAscii("RotateAngle")));
+        
+        EscherPropertyContainer aPropOpt( mpEscherEx->GetGraphicProvider(), mpPicStrm, maObjectPosition, maObjectScale );
+
+        rObj.SetAngle( rObj.ImplGetInt32PropertyValue( ::rtl::OUString::createFromAscii("RotateAngle")));
 		sal_Int32 nAngle = rObj.GetAngle();
 		if( rObj.GetType().EqualsAscii( "drawing.Line" ))
 		{
 //2do: this does not work right
-			const double fDist(hypot(rObj.GetRange().getWidth(), rObj.GetRange().getHeight()));
-			rObj.SetRange(basegfx::B2DRange(rTextRefPoint.X(), rTextRefPoint.Y(), rTextRefPoint.X() + fDist, rTextRefPoint.Y() - 1));
+			const double fDist(hypot(rObj.getObjectScale().getX(), rObj.getObjectScale().getY()));
+            rObj.setObjectPositionAndScale(basegfx::B2DPoint(rTextRefPoint.X(), rTextRefPoint.Y()), basegfx::B2DVector(fDist, -1));
 
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
 			mpEscherEx->AddShape( ESCHER_ShpInst_TextBox, 0xa00 );
@@ -838,21 +821,19 @@ void ImplEESdrWriter::ImplWriteAdditionalText( ImplEESdrObject& rObj,
 			nAngle += 0x8000;
 			nAngle &=~0xffff;	// nAngle auf volle Gradzahl runden
 			aPropOpt.AddOpt( ESCHER_Prop_Rotation, nAngle );
-			mpEscherEx->SetGroupSnapRange( mpEscherEx->GetGroupLevel(),
-											rObj.GetRange() );
-			mpEscherEx->SetGroupLogicRange( mpEscherEx->GetGroupLevel(),
-											rObj.GetRange() );
+			mpEscherEx->SetGroupSnapPositionAndScale( mpEscherEx->GetGroupLevel(), rObj.getObjectPosition(), rObj.getObjectScale() );
+			mpEscherEx->SetGroupLogicPositionAndScale( mpEscherEx->GetGroupLevel(), rObj.getObjectPosition(), rObj.getObjectScale() );
 		}
 		rObj.SetAngle( nAngle );
 		aPropOpt.CreateShapeProperties( rObj.GetShapeRef() );
-		mpEscherEx->Commit( aPropOpt, rObj.GetRange() );
+		mpEscherEx->Commit( aPropOpt, rObj.getObjectPosition(), rObj.getObjectScale() );
 
 		// write the childanchor
-        mpEscherEx->AddChildAnchor( rObj.GetRange() );
+        mpEscherEx->AddChildAnchor( rObj.getObjectPosition(), rObj.getObjectScale() );
 
 #if defined EES_WRITE_EPP
 		// ClientAnchor
-		mpEscherEx->AddClientAnchor( maRange );
+		mpEscherEx->AddClientAnchor( rObj.getObjectPosition(), rObj.getObjectScale() );
 		// ClientTextbox
 		mpEscherEx->OpenContainer( ESCHER_ClientTextbox );
 		mpEscherEx->AddAtom( 4, EPP_TextHeaderAtom );
@@ -862,7 +843,7 @@ void ImplEESdrWriter::ImplWriteAdditionalText( ImplEESdrObject& rObj,
 #else // !EES_WRITE_EPP
 		if ( mpHostAppData )
 		{	//! the App has to control whether these are written or not
-			mpHostAppData->WriteClientAnchor( *mpEscherEx, rObj.GetRange() );
+			mpHostAppData->WriteClientAnchor( *mpEscherEx, rObj.getObjectPosition(), rObj.getObjectScale() );
 			mpHostAppData->WriteClientData( *mpEscherEx );
 			mpHostAppData->WriteClientTextbox( *mpEscherEx );
 		}
@@ -876,12 +857,14 @@ void ImplEESdrWriter::ImplWriteAdditionalText( ImplEESdrObject& rObj,
 
 // -------------------------------------------------------------------
 
-sal_uInt32 ImplEESdrWriter::ImplEnterAdditionalTextGroup( const Reference< XShape >& rShape,
-	const basegfx::B2DRange* pBoundRange )
+sal_uInt32 ImplEESdrWriter::ImplEnterAdditionalTextGroup( 
+    const Reference< XShape >& rShape,
+	const basegfx::B2DPoint* pObjectPosition,
+    const basegfx::B2DVector* pObjectScale)
 {
 	mpHostAppData = mpEscherEx->EnterAdditionalTextGroup();
-	sal_uInt32 nGrpId = mpEscherEx->EnterGroup( pBoundRange );
-    mpHostAppData = mpEscherEx->StartShape( rShape, pBoundRange );
+	sal_uInt32 nGrpId = mpEscherEx->EnterGroup( pObjectPosition, pObjectScale );
+    mpHostAppData = mpEscherEx->StartShape( rShape, pObjectPosition, pObjectScale );
 	return nGrpId;
 }
 
@@ -1087,7 +1070,10 @@ void EscherEx::EndSdrObjectPage()
 
 // -------------------------------------------------------------------
 
-EscherExHostAppData* EscherEx::StartShape( const Reference< XShape >& /* rShape */, const basegfx::B2DRange* /*pChildAnchor*/ )
+EscherExHostAppData* EscherEx::StartShape( 
+    const Reference< XShape >& /* rShape */, 
+    const basegfx::B2DPoint* /*pObjectPosition*/,
+    const basegfx::B2DVector* /*pObjectScale*/ )
 {
 	return NULL;
 }
@@ -1185,7 +1171,7 @@ void ImplEESdrObject::Init( ImplEESdrWriter& rEx )
 		const basegfx::B2DPoint aPosition(rEx.ImplMapB2DPoint(basegfx::B2DPoint(mXShape->getPosition().X, mXShape->getPosition().Y)));
 		const basegfx::B2DVector aScale(rEx.ImplMapB2DVector(basegfx::B2DVector(mXShape->getSize().Width, mXShape->getSize().Height)));
 
-		SetRange(basegfx::B2DRange(aPosition, aPosition + aScale));
+		setObjectPositionAndScale(aPosition, aScale);
 		mType = String( mXShape->getShapeType() );
 		mType.Erase( 0, nPrefix );	// strip "com.sun.star."
 		xub_StrLen nPos = mType.SearchAscii( "Shape" );

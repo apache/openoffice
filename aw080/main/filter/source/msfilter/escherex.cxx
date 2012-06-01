@@ -168,12 +168,14 @@ EscherPropertyContainer::EscherPropertyContainer() :
 
 EscherPropertyContainer::EscherPropertyContainer(
 	EscherGraphicProvider& rGraphProv,
-			SvStream* pPiOutStrm,
-	basegfx::B2DRange& rShapeBoundRange ) :
+    SvStream* pPiOutStrm,
+	basegfx::B2DPoint& rObjectPosition,         // FillBitmaps or GraphicObjects.
+    basegfx::B2DVector& rObjectScale) :
 
 	pGraphicProvider	( &rGraphProv ),
 	pPicOutStrm			( pPiOutStrm ),
-	pShapeBoundRange	( &rShapeBoundRange )
+    mpObjectPosition(&rObjectPosition),
+    mpObjectScale(&rObjectScale)
 {
 	ImplInit();
 }
@@ -1172,7 +1174,7 @@ sal_Bool EscherPropertyContainer::CreateOLEGraphicProperties(
 					AddOpt( ESCHER_Prop_fillType, ESCHER_FillPicture );
 					uno::Reference< beans::XPropertySet > aXPropSet( rXShape, uno::UNO_QUERY );
 
-					if ( pGraphicProvider && pPicOutStrm && pShapeBoundRange && aXPropSet.is() )
+					if ( pGraphicProvider && pPicOutStrm && mpObjectPosition && mpObjectScale && aXPropSet.is() )
 					{
 						::com::sun::star::uno::Any aAny;
 						::com::sun::star::awt::Rectangle* pVisArea = NULL;
@@ -1181,8 +1183,10 @@ sal_Bool EscherPropertyContainer::CreateOLEGraphicProperties(
 							pVisArea = new ::com::sun::star::awt::Rectangle;
 							aAny >>= (*pVisArea);
 						}
-						const basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0), pShapeBoundRange->getRange());
-						sal_uInt32 nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRange, pVisArea, NULL );
+
+                        const basegfx::B2DPoint aPoint(0.0, 0.0);
+                        const basegfx::B2DVector aVector(*mpObjectScale);
+						sal_uInt32 nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aPoint, aVector, pVisArea, NULL );
 						if ( nBlibId )
 						{
 							AddOpt( ESCHER_Prop_pib, nBlibId, sal_True );
@@ -1205,8 +1209,10 @@ sal_Bool EscherPropertyContainer::ImplCreateEmbeddedBmp( const ByteString& rUniq
     {
         EscherGraphicProvider aProvider;
         SvMemoryStream aMemStrm;
-        basegfx::B2DRange aRange;
-        if ( aProvider.GetBlibID( aMemStrm, rUniqueId, aRange ) )
+        const basegfx::B2DPoint aPoint(0.0, 0.0);
+        const basegfx::B2DVector aVector(1.0, 1.0);
+
+        if ( aProvider.GetBlibID( aMemStrm, rUniqueId, aPoint, aVector ) )
         {
             // grab BLIP from stream and insert directly as complex property
             // ownership of stream memory goes to complex property
@@ -1475,15 +1481,16 @@ sal_Bool EscherPropertyContainer::CreateGraphicProperties(
                 else
                 {
                     pGraphicAttr->SetRotation( nAngle );
-                    if ( nAngle && pShapeBoundRange )   // up to xp ppoint does not rotate bitmaps !
+                    if ( nAngle && mpObjectPosition && mpObjectScale )   // up to xp ppoint does not rotate bitmaps !
                     {
 						Rectangle aOldRect(
-							basegfx::fround(pShapeBoundRange->getMinX()), basegfx::fround(pShapeBoundRange->getMinY()), 
-							basegfx::fround(pShapeBoundRange->getMaxX()), basegfx::fround(pShapeBoundRange->getMaxY()));
+							Point(basegfx::fround(mpObjectPosition->getX()), basegfx::fround(mpObjectPosition->getY())), 
+							Size(basegfx::fround(mpObjectScale->getX()), basegfx::fround(mpObjectScale->getY())));
                         Polygon aPoly( aOldRect );
                         aPoly.Rotate( aOldRect.TopLeft(), nAngle );
                         aOldRect = aPoly.GetBoundRect();
-						*pShapeBoundRange = basegfx::B2DRange(aOldRect.Left(), aOldRect.Top(), aOldRect.Right(), aOldRect.Bottom());
+                        *mpObjectPosition = basegfx::B2DPoint(aOldRect.Left(), aOldRect.Top());
+                        *mpObjectScale = basegfx::B2DVector(aOldRect.GetWidth(), aOldRect.GetHeight());
                         bSuppressRotation = sal_True;
                     }
                 }
@@ -1497,12 +1504,13 @@ sal_Bool EscherPropertyContainer::CreateGraphicProperties(
             if ( aUniqueId.Len() )
             {
                 // write out embedded graphic
-                if ( pGraphicProvider && pPicOutStrm && pShapeBoundRange )
+                if ( pGraphicProvider && pPicOutStrm && mpObjectPosition && mpObjectScale )
                 {
-                    const basegfx::B2DRange aRange(basegfx::B2DPoint(0.0, 0.0), pShapeBoundRange->getRange());
+                    const basegfx::B2DPoint aPoint(0.0, 0.0);
+                    const basegfx::B2DVector aVector(*mpObjectScale);
 
                     sal_uInt32 nBlibId = 0;
-                    nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRange, NULL, pGraphicAttr );
+                    nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aPoint, aVector, NULL, pGraphicAttr );
                     if ( nBlibId )
                     {
                         if ( bCreateFillBitmap )
@@ -1519,9 +1527,10 @@ sal_Bool EscherPropertyContainer::CreateGraphicProperties(
                 {
                     EscherGraphicProvider aProvider;
                     SvMemoryStream aMemStrm;
-					const basegfx::B2DRange aRange;
+                    const basegfx::B2DPoint aPoint(0.0, 0.0);
+                    const basegfx::B2DVector aVector(1.0, 1.0);
 
-                    if ( aProvider.GetBlibID( aMemStrm, aUniqueId, aRange, NULL, pGraphicAttr ) )
+                    if ( aProvider.GetBlibID( aMemStrm, aUniqueId, aPoint, aVector, NULL, pGraphicAttr ) )
                     {
                         // grab BLIP from stream and insert directly as complex property
                         // ownership of stream memory goes to complex property
@@ -3785,8 +3794,13 @@ sal_Bool EscherGraphicProvider::GetPrefSize( const sal_uInt32 nBlibId, Size& rPr
 	return bInRange;
 }
 
-sal_uInt32 EscherGraphicProvider::GetBlibID( SvStream& rPicOutStrm, const ByteString& rId,
-	const basegfx::B2DRange& /* rBoundRange */, const com::sun::star::awt::Rectangle* pVisArea, const GraphicAttr* pGraphicAttr )
+sal_uInt32 EscherGraphicProvider::GetBlibID( 
+    SvStream& rPicOutStrm, 
+    const ByteString& rId,
+	const basegfx::B2DPoint& /*rObjectPosition*/, 
+    const basegfx::B2DVector& /*rObjectScale*/,
+    const com::sun::star::awt::Rectangle* pVisArea, 
+    const GraphicAttr* pGraphicAttr )
 {
 	sal_uInt32			nBlibId = 0;
 	GraphicObject		aGraphicObject( rId );
@@ -4809,26 +4823,30 @@ void EscherEx::AddAtom( sal_uInt32 nAtomSize, sal_uInt16 nRecType, int nRecVersi
 
 // ---------------------------------------------------------------------------------------------
 
-void EscherEx::AddChildAnchor( const basegfx::B2DRange& rRange )
+void EscherEx::AddChildAnchor(
+    const basegfx::B2DPoint& rObjectPosition,
+    const basegfx::B2DVector& rObjectScale)
 {
     AddAtom( 16, ESCHER_ChildAnchor );
-    *mpOutStrm  << (sal_Int32)basegfx::fround(rRange.getMinX())
-                << (sal_Int32)basegfx::fround(rRange.getMinY())
-                << (sal_Int32)basegfx::fround(rRange.getMaxX())
-                << (sal_Int32)basegfx::fround(rRange.getMaxY());
+    *mpOutStrm  << (sal_Int32)basegfx::fround(rObjectPosition.getX())
+                << (sal_Int32)basegfx::fround(rObjectPosition.getY())
+                << (sal_Int32)basegfx::fround(rObjectPosition.getX() + rObjectScale.getX())
+                << (sal_Int32)basegfx::fround(rObjectPosition.getY() + rObjectScale.getX());
 }
 
 // ---------------------------------------------------------------------------------------------
 
-void EscherEx::AddClientAnchor( const basegfx::B2DRange& rRange )
+void EscherEx::AddClientAnchor(
+    const basegfx::B2DPoint& rObjectPosition,
+    const basegfx::B2DVector& rObjectScale)
 {
 	AddAtom( 8, ESCHER_ClientAnchor );
 	// Askes SJ, here it is CORRECT to first write Y, then X (!)
 	// Do NOT change this, it's NOT a typo (!)
-    *mpOutStrm << (sal_Int16)basegfx::fround(rRange.getMinY())
-               << (sal_Int16)basegfx::fround(rRange.getMinX())
-               << (sal_Int16)basegfx::fround(rRange.getMaxX())
-               << (sal_Int16)basegfx::fround(rRange.getMaxY());
+    *mpOutStrm << (sal_Int16)basegfx::fround(rObjectPosition.getY())
+               << (sal_Int16)basegfx::fround(rObjectPosition.getX())
+               << (sal_Int16)basegfx::fround(rObjectPosition.getX() + rObjectScale.getX())
+               << (sal_Int16)basegfx::fround(rObjectPosition.getY() + rObjectScale.getY());
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -4840,21 +4858,33 @@ EscherExHostAppData* EscherEx::EnterAdditionalTextGroup()
 
 // ---------------------------------------------------------------------------------------------
 
-sal_uInt32 EscherEx::EnterGroup( const String& rShapeName, const basegfx::B2DRange* pBoundRange )
+sal_uInt32 EscherEx::EnterGroup( 
+    const String& rShapeName, 
+    const basegfx::B2DPoint* pObjectPosition,
+    const basegfx::B2DVector* pObjectScale )
 {
-	basegfx::B2DRange aRange;
-	if( pBoundRange )
-		aRange = *pBoundRange;
+    basegfx::B2DPoint aObjectPosition(0.0, 0.0);
+    basegfx::B2DVector aObjectScale(1.0, 1.0);
+
+    if(pObjectPosition)
+    {
+        aObjectPosition = *pObjectPosition;
+    }
+
+    if(pObjectScale)
+    {
+        aObjectScale = *pObjectScale;
+    }
 
 	OpenContainer( ESCHER_SpgrContainer );
 	OpenContainer( ESCHER_SpContainer );
 	AddAtom( 16, ESCHER_Spgr, 1 );
 	PtReplaceOrInsert( ESCHER_Persist_Grouping_Snap | mnGroupLevel,
 						mpOutStrm->Tell() );
-	*mpOutStrm	<< (sal_Int32)basegfx::fround(aRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
-				<< (sal_Int32)basegfx::fround(aRange.getMinY())
-				<< (sal_Int32)basegfx::fround(aRange.getMaxX())
-				<< (sal_Int32)basegfx::fround(aRange.getMaxY());
+	*mpOutStrm	<< (sal_Int32)basegfx::fround(aObjectPosition.getX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
+				<< (sal_Int32)basegfx::fround(aObjectPosition.getY())
+				<< (sal_Int32)basegfx::fround(aObjectPosition.getX() + aObjectScale.getX())
+				<< (sal_Int32)basegfx::fround(aObjectPosition.getY() + aObjectScale.getY());
 
     sal_uInt32 nShapeId = GenerateShapeId();
 	if ( !mnGroupLevel )
@@ -4871,15 +4901,15 @@ sal_uInt32 EscherEx::EnterGroup( const String& rShapeName, const basegfx::B2DRan
         if( rShapeName.Len() > 0 )
             aPropOpt.AddOpt( ESCHER_Prop_wzName, rShapeName );
 
-		Commit( aPropOpt, aRange );
+		Commit( aPropOpt, aObjectPosition, aObjectScale );
 		if ( mnGroupLevel > 1 )
-            AddChildAnchor( aRange );
+            AddChildAnchor( aObjectPosition, aObjectScale );
 
 		EscherExHostAppData* pAppData = mpImplEscherExSdr->ImplGetHostData();
 		if( pAppData )
 		{
 			if ( mnGroupLevel <= 1 )
-				pAppData->WriteClientAnchor( *this, aRange );
+				pAppData->WriteClientAnchor( *this, aObjectPosition, aObjectScale );
 			pAppData->WriteClientData( *this );
 		}
 	}
@@ -4888,14 +4918,19 @@ sal_uInt32 EscherEx::EnterGroup( const String& rShapeName, const basegfx::B2DRan
     return nShapeId;
 }
 
-sal_uInt32 EscherEx::EnterGroup( const basegfx::B2DRange* pBoundRange )
+sal_uInt32 EscherEx::EnterGroup(
+    const basegfx::B2DPoint* pObjectPosition,
+    const basegfx::B2DVector* pObjectScale)
 {
-    return EnterGroup( String::EmptyString(), pBoundRange );
+    return EnterGroup( String::EmptyString(), pObjectPosition, pObjectScale );
 }
 
 // ---------------------------------------------------------------------------------------------
 
-sal_Bool EscherEx::SetGroupSnapRange( sal_uInt32 nGroupLevel, const basegfx::B2DRange& rRange )
+sal_Bool EscherEx::SetGroupSnapPositionAndScale( 
+    sal_uInt32 nGroupLevel, 
+    const basegfx::B2DPoint& rObjectPosition,
+    const basegfx::B2DVector& rObjectScale)
 {
 	sal_Bool bRetValue = sal_False;
 	if ( nGroupLevel )
@@ -4903,10 +4938,10 @@ sal_Bool EscherEx::SetGroupSnapRange( sal_uInt32 nGroupLevel, const basegfx::B2D
 		sal_uInt32 nCurrentPos = mpOutStrm->Tell();
 		if ( DoSeek( ESCHER_Persist_Grouping_Snap | ( nGroupLevel - 1 ) ) )
 		{
-			*mpOutStrm	<< (sal_Int32)basegfx::fround(rRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
-						<< (sal_Int32)basegfx::fround(rRange.getMinY())
-						<< (sal_Int32)basegfx::fround(rRange.getMaxX())
-						<< (sal_Int32)basegfx::fround(rRange.getMaxY());
+			*mpOutStrm	<< (sal_Int32)basegfx::fround(rObjectPosition.getX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
+						<< (sal_Int32)basegfx::fround(rObjectPosition.getY())
+						<< (sal_Int32)basegfx::fround(rObjectPosition.getX() + rObjectScale.getX())
+						<< (sal_Int32)basegfx::fround(rObjectPosition.getY() + rObjectScale.getY());
 			mpOutStrm->Seek( nCurrentPos );
 		}
 	}
@@ -4915,7 +4950,10 @@ sal_Bool EscherEx::SetGroupSnapRange( sal_uInt32 nGroupLevel, const basegfx::B2D
 
 // ---------------------------------------------------------------------------------------------
 
-sal_Bool EscherEx::SetGroupLogicRange( sal_uInt32 nGroupLevel, const basegfx::B2DRange& rRange )
+sal_Bool EscherEx::SetGroupLogicPositionAndScale( 
+    sal_uInt32 nGroupLevel, 
+    const basegfx::B2DPoint& rObjectPosition,
+    const basegfx::B2DVector& rObjectScale)
 {
 	sal_Bool bRetValue = sal_False;
 	if ( nGroupLevel )
@@ -4923,10 +4961,10 @@ sal_Bool EscherEx::SetGroupLogicRange( sal_uInt32 nGroupLevel, const basegfx::B2
 		sal_uInt32 nCurrentPos = mpOutStrm->Tell();
 		if ( DoSeek( ESCHER_Persist_Grouping_Logic | ( nGroupLevel - 1 ) ) )
 		{
-			*mpOutStrm << (sal_Int16)basegfx::fround(rRange.getMinX()) 
-					   << (sal_Int16)basegfx::fround(rRange.getMinY()) 
-					   << (sal_Int16)basegfx::fround(rRange.getMaxX()) 
-					   << (sal_Int16)basegfx::fround(rRange.getMaxY());
+			*mpOutStrm << (sal_Int16)basegfx::fround(rObjectPosition.getX()) 
+					   << (sal_Int16)basegfx::fround(rObjectPosition.getY()) 
+					   << (sal_Int16)basegfx::fround(rObjectPosition.getX() + rObjectScale.getX()) 
+					   << (sal_Int16)basegfx::fround(rObjectPosition.getY() + rObjectScale.getY());
 			mpOutStrm->Seek( nCurrentPos );
 		}
 	}
@@ -4962,7 +5000,10 @@ void EscherEx::AddShape( sal_uInt32 nShpInstance, sal_uInt32 nFlags, sal_uInt32 
 
 // ---------------------------------------------------------------------------------------------
 
-void EscherEx::Commit( EscherPropertyContainer& rProps, const basegfx::B2DRange& )
+void EscherEx::Commit( 
+    EscherPropertyContainer& rProps, 
+    const basegfx::B2DPoint& /*rObjectPosition*/,
+    const basegfx::B2DVector& /*rObjectScale*/)
 {
 	rProps.Commit( GetStream() );
 }

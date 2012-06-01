@@ -1986,7 +1986,7 @@ namespace basegfx
 
 			// truncate fStart, fEnd to a range of [0.0 .. F_2PI[ where F_2PI
 			// falls back to 0.0 to ensure a unique definition
-			if(fTools::less(fStart, 0.0))
+			if(fTools::lessOrEqual(fStart, 0.0))
 			{
 				fStart = 0.0;
 			}
@@ -1996,7 +1996,7 @@ namespace basegfx
 				fStart = 0.0;
 			}
 
-			if(fTools::less(fEnd, 0.0))
+			if(fTools::lessOrEqual(fEnd, 0.0))
 			{
 				fEnd = 0.0;
 			}

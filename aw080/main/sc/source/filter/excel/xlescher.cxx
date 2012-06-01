@@ -203,9 +203,10 @@ basegfx::B2DRange XclObjAnchor::GetRangeFromAnchor( const XclRoot& rRoot, SCTAB 
 	return aRange;
 }
 
-void XclObjAnchor::SetRangeAtAnchor( const XclRoot& rRoot, SCTAB nScTab, const basegfx::B2DRange& rRange, MapUnit eMapUnit )
+void XclObjAnchor::SetRangeAtAnchor( const XclRoot& rRoot, SCTAB nScTab, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, MapUnit eMapUnit )
 {
-    basegfx::B2DRange aRange( rRange );
+    basegfx::B2DPoint aObjectPosition(rObjectPosition);
+    basegfx::B2DVector aObjectScale(rObjectScale);
     ScDocument& rDoc = rRoot.GetDoc();
     sal_uInt16 nXclMaxCol = rRoot.GetXclMaxPos().Col();
     sal_uInt16 nXclMaxRow = static_cast<sal_uInt16>( rRoot.GetXclMaxPos().Row());
@@ -213,21 +214,22 @@ void XclObjAnchor::SetRangeAtAnchor( const XclRoot& rRoot, SCTAB nScTab, const b
     // #106948# adjust coordinates in mirrored sheets
     if( rDoc.IsLayoutRTL( nScTab ) )
 	{
-        lclMirrorRange( aRange );
+        aObjectPosition.setX(-aObjectPosition.getX());
+        aObjectScale.setX(-aObjectScale.getX());
 	}
 
     const double fScale(lclGetTwipsScale( eMapUnit ));
     long nDummy = 0;
-    lclGetColFromX( rDoc, nScTab, maFirst.mnCol, mnLX, 0,             nXclMaxCol, nDummy, aRange.getMinX(), fScale );
-    lclGetColFromX( rDoc, nScTab, maLast.mnCol,  mnRX, maFirst.mnCol, nXclMaxCol, nDummy, aRange.getMaxX(), fScale );
+    lclGetColFromX( rDoc, nScTab, maFirst.mnCol, mnLX, 0,             nXclMaxCol, nDummy, aObjectPosition.getX(), fScale );
+    lclGetColFromX( rDoc, nScTab, maLast.mnCol,  mnRX, maFirst.mnCol, nXclMaxCol, nDummy, aObjectPosition.getX() + aObjectScale.getX(), fScale );
     nDummy = 0;
-    lclGetRowFromY( rDoc, nScTab, maFirst.mnRow, mnTY, 0,             nXclMaxRow, nDummy, aRange.getMinY(), fScale );
-    lclGetRowFromY( rDoc, nScTab, maLast.mnRow,  mnBY, maFirst.mnRow, nXclMaxRow, nDummy, aRange.getMaxY(), fScale );
+    lclGetRowFromY( rDoc, nScTab, maFirst.mnRow, mnTY, 0,             nXclMaxRow, nDummy, aObjectPosition.getY(), fScale );
+    lclGetRowFromY( rDoc, nScTab, maLast.mnRow,  mnBY, maFirst.mnRow, nXclMaxRow, nDummy, aObjectPosition.getY() + aObjectScale.getY(), fScale );
 }
 
 void XclObjAnchor::SetRangeAtAnchor(
 	const basegfx::B2DVector& rPageScale, double fScaleX, double fScaleY,
-    const basegfx::B2DRange& rRange, MapUnit eMapUnit, bool bDffAnchor )
+    const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, MapUnit eMapUnit, bool bDffAnchor )
 {
     double fScale = 1.0;
     switch( eMapUnit )
@@ -240,10 +242,10 @@ void XclObjAnchor::SetRangeAtAnchor(
     /*  In objects with DFF client anchor, the position of the shape is stored
         in the cell address components of the client anchor. In old BIFF3-BIFF5
         objects, the position is stored in the offset components of the anchor. */
-    (bDffAnchor ? maFirst.mnCol : mnLX) = lclGetEmbeddedScale( rPageScale.getX(), fScaleX, rRange.getMinX(), fScale );
-    (bDffAnchor ? maFirst.mnRow : mnTY) = lclGetEmbeddedScale( rPageScale.getY(), fScaleY, rRange.getMinY(), fScale );
-    (bDffAnchor ? maLast.mnCol  : mnRX) = lclGetEmbeddedScale( rPageScale.getX(), fScaleX, rRange.getMaxX(), fScale );
-    (bDffAnchor ? maLast.mnRow  : mnBY) = lclGetEmbeddedScale( rPageScale.getY(), fScaleY, rRange.getMaxY(), fScale );
+    (bDffAnchor ? maFirst.mnCol : mnLX) = lclGetEmbeddedScale( rPageScale.getX(), fScaleX, rObjectPosition.getX(), fScale );
+    (bDffAnchor ? maFirst.mnRow : mnTY) = lclGetEmbeddedScale( rPageScale.getY(), fScaleY, rObjectPosition.getY(), fScale );
+    (bDffAnchor ? maLast.mnCol  : mnRX) = lclGetEmbeddedScale( rPageScale.getX(), fScaleX, rObjectPosition.getX() + rObjectScale.getX(), fScale );
+    (bDffAnchor ? maLast.mnRow  : mnBY) = lclGetEmbeddedScale( rPageScale.getY(), fScaleY, rObjectPosition.getY() + rObjectScale.getY(), fScale );
 
     // for safety, clear the other members
     if( bDffAnchor )

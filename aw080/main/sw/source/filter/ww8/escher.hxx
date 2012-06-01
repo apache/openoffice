@@ -173,8 +173,10 @@ public:
 
     virtual void WriteFrmExtraData(const SwFrmFmt& rFmt);
 
-    virtual EscherExHostAppData* StartShape(const com::sun::star::uno::Reference<
-        com::sun::star::drawing::XShape > &, const basegfx::B2DRange*);
+    virtual EscherExHostAppData* StartShape(
+        const com::sun::star::uno::Reference< com::sun::star::drawing::XShape > &, 
+        const basegfx::B2DPoint* pObjectPosition,
+        const basegfx::B2DVector* pObjectScale);
 private:
     //No copying
     SwEscherEx(const SwEscherEx&);

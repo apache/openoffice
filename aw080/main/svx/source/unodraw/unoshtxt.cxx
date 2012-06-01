@@ -162,8 +162,6 @@ public:
 
     DECL_LINK( NotifyHdl, EENotify* );
 
-//CMCX	void ChangeModel( SdrModel* pNewModel );
-
     void                    UpdateOutliner();
 };
 
@@ -309,51 +307,6 @@ void SAL_CALL SvxTextEditSourceImpl::release()
 	if( ! osl_decrementInterlockedCount( &maRefCount ) )
 		delete this;
 }	
-
-//CMCXvoid SvxTextEditSourceImpl::ChangeModel( SdrModel* pNewModel )
-//CMCX{
-//CMCX	if( mpModel != pNewModel )
-//CMCX	{
-//CMCX		if( mpModel )
-//CMCX			EndListening( *mpModel );
-//CMCX
-//CMCX		if( mpOutliner )
-//CMCX		{
-//CMCX			if( mpModel )
-//CMCX				mpModel->disposeOutliner( mpOutliner );
-//CMCX			else
-//CMCX				delete mpOutliner;
-//CMCX			mpOutliner = 0;
-//CMCX		}
-//CMCX
-//CMCX		if( mpView )
-//CMCX		{
-//CMCX			EndListening( *mpView );
-//CMCX			mpView = 0;
-//CMCX		}
-//CMCX
-//CMCX		mpWindow = 0;
-//CMCX		m_xLinguServiceManager.clear();
-//CMCX		mpOwner = 0;
-//CMCX
-//CMCX		mpModel = pNewModel;
-//CMCX
-//CMCX		if( mpTextForwarder )
-//CMCX		{
-//CMCX	        delete mpTextForwarder;
-//CMCX		    mpTextForwarder = 0;
-//CMCX		}
-//CMCX
-//CMCX		if( mpViewForwarder )
-//CMCX		{
-//CMCX			delete mpViewForwarder;
-//CMCX			mpViewForwarder = 0;
-//CMCX		}
-//CMCX
-//CMCX		if( mpModel )
-//CMCX			StartListening( *mpModel );
-//CMCX	}
-//CMCX}
 
 //------------------------------------------------------------------------
 
@@ -1162,11 +1115,6 @@ const SvxUnoTextRangeBaseList& SvxTextEditSource::getRanges() const
 {
 	return mpImpl->getRanges();
 }
-
-//CMCXvoid SvxTextEditSource::ChangeModel( SdrModel* pNewModel )
-//CMCX{
-//CMCX	mpImpl->ChangeModel( pNewModel );
-//CMCX}
 
 void SvxTextEditSource::UpdateOutliner()
 {

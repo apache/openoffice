@@ -43,7 +43,14 @@ namespace basegfx
 			const double fHalfStep(fStep * 0.5);
 			const double fChange(fHalfStep - fmod(v + fHalfStep, fStep));
 
-			return v + fChange;
+            if(basegfx::fTools::equal(fabs(v), fabs(fChange)))
+            {
+                return 0.0;
+            }
+            else
+            {
+    			return v + fChange;
+            }
 		}
 	}
 

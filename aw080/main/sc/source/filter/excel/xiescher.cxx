@@ -1739,7 +1739,7 @@ void XclImpChartObj::FinalizeTabChart()
 
     // create the object anchor
     XclObjAnchor aAnchor;
-    aAnchor.SetRangeAtAnchor( GetRoot(), GetCurrScTab(), basegfx::B2DRange( 1000.0, 500.0, fWidth, fHeight ), MAP_100TH_MM );
+    aAnchor.SetRangeAtAnchor( GetRoot(), GetCurrScTab(), basegfx::B2DPoint(1000.0, 500.0), basegfx::B2DVector(fWidth, fHeight), MAP_100TH_MM );
     SetAnchor( aAnchor );
 }
 

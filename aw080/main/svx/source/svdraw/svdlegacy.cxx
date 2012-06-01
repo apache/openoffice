@@ -290,19 +290,9 @@ namespace sdr
 			if(rObject.isRotated())
 			{
 				const double fRotate(rObject.getSdrObjectRotate());
-				long nRetval(basegfx::fround(-fRotate / F_PI18000));
+                const double fSnapped(basegfx::snapToNearestMultiple(-fRotate / F_PI18000, 360000.0));
 
-				while(nRetval < 0)
-				{
-					nRetval += 36000;
-				}
-
-				while(nRetval >= 36000)
-				{
-					nRetval -= 36000;
-				}
-
-				return nRetval;
+                return basegfx::fround(fSnapped);
 			}
 			else
 			{

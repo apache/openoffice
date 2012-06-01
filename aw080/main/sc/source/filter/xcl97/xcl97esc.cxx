@@ -190,7 +190,10 @@ bool lcl_IsFontwork( const SdrObject* pObj )
 
 } // namespace
 
-EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape, const basegfx::B2DRange* pChildAnchor )
+EscherExHostAppData* XclEscherEx::StartShape( 
+    const Reference< XShape >& rxShape, 
+    const basegfx::B2DPoint* pObjectPosition,
+    const basegfx::B2DVector* pObjectScale)
 {
 	if ( nAdditionalText )
 		nAdditionalText++;
@@ -226,7 +229,7 @@ EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape
                     SvGlobalName aObjClsId( xObj->getClassID() );
                     if ( SotExchange::IsChart( aObjClsId ) )
                     {   // yes, it's a chart diagram
-                        mrObjMgr.AddObj( new XclExpChartObj( mrObjMgr, rxShape, pChildAnchor ) );
+                        mrObjMgr.AddObj( new XclExpChartObj( mrObjMgr, rxShape, pObjectPosition, pObjectScale) );
                         pCurrXclObj = NULL;     // no metafile or whatsoever
                     }
                     else    // metafile and OLE object
@@ -243,9 +246,9 @@ EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape
 #if EXC_EXP_OCX_CTRL
             // no ActiveX controls in embedded drawings (chart shapes)
             if( mbIsRootDff )
-                pCurrXclObj = CreateCtrlObj( rxShape, pChildAnchor );
+                pCurrXclObj = CreateCtrlObj( rxShape, pObjectPosition, pObjectScale );
 #else
-            pCurrXclObj = CreateCtrlObj( rxShape, pChildAnchor );
+            pCurrXclObj = CreateCtrlObj( rxShape, pObjectPosition, pObjectScale );
 #endif
             if( !pCurrXclObj )
                 pCurrXclObj = new XclObjAny( mrObjMgr );   // just a metafile
@@ -274,7 +277,7 @@ EscherExHostAppData* XclEscherEx::StartShape( const Reference< XShape >& rxShape
                     {
                         /*  Create a dummy anchor carrying the flags. Real
                             coordinates are calculated later in virtual call of
-                            WriteData(EscherEx&,const basegfx::B2DRange&). */
+                            WriteData(EscherEx&,const basegfx::B2DPoint&,const basegfx::B2DVector&). */
                         XclExpDffAnchorBase* pAnchor = mrObjMgr.CreateDffAnchor();
                         pAnchor->SetFlags( *pObj );
                         pCurrAppData->SetClientAnchor( pAnchor );
@@ -369,7 +372,10 @@ void XclEscherEx::EndDocument()
 
 #if EXC_EXP_OCX_CTRL
 
-XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, const basegfx::B2DRange* pChildAnchor )
+XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( 
+    Reference< XShape > xShape, 
+    const basegfx::B2DPoint* pObjectPosition,
+    const basegfx::B2DVector* pObjectScale)
 {
     ::std::auto_ptr< XclExpOcxControlObj > xOcxCtrl;
 
@@ -390,7 +396,7 @@ XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, con
                 sal_uInt32 nStrmSize = static_cast< sal_uInt32 >( mxCtlsStrm->Tell() - nStrmStart );
                 // adjust the class name to "Forms.***.1"
                 aClassName.InsertAscii( "Forms.", 0 ).AppendAscii( ".1" );
-                xOcxCtrl.reset( new XclExpOcxControlObj( mrObjMgr, xShape, pChildAnchor, aClassName, nStrmStart, nStrmSize ) );
+                xOcxCtrl.reset( new XclExpOcxControlObj( mrObjMgr, xShape, pObjectPosition, pObjectScale, aClassName, nStrmStart, nStrmSize ) );
             }
         }
     }
@@ -399,9 +405,12 @@ XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, con
 
 #else
 
-XclExpTbxControlObj* XclEscherEx::CreateCtrlObj( Reference< XShape > xShape, const basegfx::B2DRange* pChildAnchor )
+XclExpTbxControlObj* XclEscherEx::CreateCtrlObj( 
+    Reference< XShape > xShape, 
+    const basegfx::B2DPoint* pObjectPosition,
+    const basegfx::B2DVector* pObjectScale)
 {
-    ::std::auto_ptr< XclExpTbxControlObj > xTbxCtrl( new XclExpTbxControlObj( mrObjMgr, xShape, pChildAnchor ) );
+    ::std::auto_ptr< XclExpTbxControlObj > xTbxCtrl( new XclExpTbxControlObj( mrObjMgr, xShape, pObjectPosition, pObjectScale) );
     if( xTbxCtrl->GetObjType() == EXC_OBJTYPE_UNKNOWN )
         xTbxCtrl.reset();
 

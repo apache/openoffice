@@ -1817,16 +1817,31 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 					aTargetItemSet.Put(XLineStyleItem(XLINE_NONE));
 					aTargetItemSet.Put(XFillStyleItem(XFILL_NONE));
 
-					// get the text bounds and set at text object
-					sdr::legacy::SetSnapRange(*pTextObj, pCustomShape->getRawUnifiedTextRange());
+                    // create transformation for text object.
+                    // TTTT: Need to check text border distances handling
+                    const basegfx::B2DRange aRawUnitTextRange(pCustomShape->getRawUnifiedTextRange());
 
-					// if rotated, copy rotation, too.
-					const sal_Int32 aOldRotation(sdr::legacy::GetRotateAngle(*pCustomShape));
-					
-					if(aOldRotation)
-					{
-						sdr::legacy::RotateSdrObject(*pTextObj, sdr::legacy::GetSnapRect(*pCustomShape).Center(), aOldRotation);
-					}
+                    // get TopLeft and BottomRight when applying current objects scale and translate,
+                    // but leave out rot and shear
+                    const basegfx::B2DHomMatrix aJustScaleTranslate(
+                        basegfx::tools::createScaleTranslateB2DHomMatrix(
+                            pCustomShape->getSdrObjectScale(),
+                            pCustomShape->getSdrObjectTranslate()));
+                    const basegfx::B2DPoint aTopLeft(aJustScaleTranslate * aRawUnitTextRange.getMinimum());
+                    const basegfx::B2DPoint aBottomRight(aJustScaleTranslate * aRawUnitTextRange.getMaximum());
+
+                    // aBottomRight may now be top/left of aTopLeft containing the evtl. applied
+                    // mirroring. Use it to create scale for the traget transformation. Also use
+                    // already created TopLeft as translation
+                    const basegfx::B2DHomMatrix aTextTransform(
+                        basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
+                            aBottomRight - aTopLeft,
+                            pCustomShape->getSdrObjectShearX(),
+                            pCustomShape->getSdrObjectRotate(),
+                            aTopLeft));
+
+                    // set new transformation to text object
+                    pTextObj->setSdrObjectTransformation(aTextTransform);
 
 					// set modified ItemSet at text object
 					pTextObj->SetMergedItemSet(aTargetItemSet);
@@ -2414,6 +2429,8 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
                 }
 		    }
 
+            // TTTT: ObjectTransform probably needs to be adapted, e.g. when metafile
+            // already contains rotations, it should be removed
 			if(aMetaFile.GetActionCount())
 			{
 				ImpSdrGDIMetaFileImport aFilter(getSdrModelFromSdrView(), pObj->GetLayer(), aObjectTransform);

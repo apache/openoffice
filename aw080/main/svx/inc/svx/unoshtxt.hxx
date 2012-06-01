@@ -84,8 +84,6 @@ public:
     virtual Point		LogicToPixel( const Point&, const MapMode& ) const;
     virtual Point		PixelToLogic( const Point&, const MapMode& ) const;
 
-//CMCX	void ChangeModel( SdrModel* pNewModel );
-
     void UpdateOutliner();
 
 private:
