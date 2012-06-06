@@ -7,7 +7,7 @@
 =head1 SYNOPSIS
 
     For downloading external libraries (typically from the main/bootstrap script):
-    
+
     download_external_libraries(<data-file-name>);
 
 =head1 DESCRIPTION
@@ -74,7 +74,7 @@ my @Missing = ();
 
 
 =head3 ProcessDataFile
-    
+
     Read the data file, typically named main/external_libs.lst, find the external
     library tarballs that are not yet present in ext_sources/ and download them.
 
@@ -106,7 +106,7 @@ sub ProcessDataFile ($)
         if ($line =~ /^\s*if\s*\(\s*(.*?)\s*\)\s*$/)
         {
             ProcessLastBlock();
-            
+
             $LocalEnvironment = { 'selector' => $1 };
         }
 
@@ -129,7 +129,7 @@ sub ProcessDataFile ($)
     }
 
     ProcessLastBlock();
-    
+
     Download(\@download_requests, \@URLHeads);
 }
 
@@ -146,11 +146,11 @@ sub ProcessLastBlock ()
 {
     # Return if no block is defined.
     return if ! defined $LocalEnvironment;
-    
+
     # Ignore the block if the selector does not match.
     if ( ! EvaluateExpression(SubstituteVariables($LocalEnvironment->{'selector'})))
     {
-        printf("ignoring %s because its prerequisites are not fullfilled\n", GetValue('name'));
+        printf("ignoring %s because its prerequisites are not fulfilled\n", GetValue('name'));
     }
     else
     {
@@ -170,7 +170,7 @@ sub ProcessLastBlock ()
 
     Add a request for downloading the library $name to @Missing.
     Collect all available URL[1-9] variables as source URLs.
-    
+
 =cut
 sub AddDownloadRequest ($)
 {
@@ -216,7 +216,7 @@ sub GetValue ($)
 
     Replace all references to variables in $text with the respective variable values.
     This is done repeatedly until no variable reference remains.
-    
+
 =cut
 sub SubstituteVariables ($)
 {
@@ -243,17 +243,23 @@ sub SubstituteVariables ($)
 
     Evaluate the $expression of an "if" statement to either 0 or 1.  It can
     be a single term (see EvaluateTerm for a description), or several terms
-    separated by either all ||s or &&s.  Mixing || and && is not supported
-    and will result in an error.
-    
+    separated by either all ||s or &&s.  A term can also be an expression
+    enclosed in parantheses.
+
 =cut
 sub EvaluateExpression ($)
 {
     my $expression = shift;
 
+    # Evaluate sub expressions enclosed in parantheses.
+    while ($expression =~ /^(.*)\(([^\(\)]+)\)(.*)$/)
+    {
+        $expression = $1 . (EvaluateExpression($2) ? " true " : " false ") . $3;
+    }
+
     if ($expression =~ /&&/ && $expression =~ /\|\|/)
     {
-        die "selctor can contain either && or || but not both at the same time";
+        die "expression can contain either && or || but not both at the same time";
     }
     elsif ($expression =~ /&&/)
     {
@@ -275,8 +281,6 @@ sub EvaluateExpression ($)
     {
         return EvaluateTerm($expression);
     }
-    print $expression."\n";
-    return 1;
 }
 
 
@@ -288,18 +292,19 @@ sub EvaluateExpression ($)
     A term is either the literal "true", which evaluates to 1, or an expression
     of the form NAME=VALUE or NAME!=VALUE.  NAME is the name of an environment
     variable and VALUE any string.  VALUE may be empty.
-    
+
 =cut
 sub EvaluateTerm ($)
 {
     my $term = shift;
 
-    if ($term =~ /^\s*([a-zA-Z_0-9]+)\s*(=|!=)\s*(.*)\s*$/)
+    if ($term =~ /^\s*([a-zA-Z_0-9]+)\s*(==|!=)\s*(.*)\s*$/)
     {
         my ($variable_name, $operator, $given_value) = ($1,$2,$3);
         my $variable_value = $ENV{$variable_name};
+        $variable_value = "" if ! defined $variable_value;
 
-        if ($operator eq "=")
+        if ($operator eq "==")
         {
             return $variable_value eq $given_value;
         }
@@ -316,6 +321,10 @@ sub EvaluateTerm ($)
     {
         return 1;
     }
+    elsif ($term =~ /^\s*false\s*$/i)
+    {
+        return 0;
+    }
     else
     {
         die "term $term is not of the form <environment-variable> (=|==) <value>";
@@ -331,7 +340,7 @@ sub EvaluateTerm ($)
     exists in the target directory TARFILE_LOCATION.  The basename is
     prefixed with the given MD5 sum.
     If the file exists then its MD5 sum is compare with the given MD5 sum.
-    
+
 =cut
 sub IsPresent ($$)
 {
@@ -339,7 +348,7 @@ sub IsPresent ($$)
     my $given_md5 = shift;
 
     my $filename = File::Spec->catfile($ENV{'TARFILE_LOCATION'}, $given_md5."-".$name);
-    
+
     return 0 if ! -f $filename;
 
     # File exists.  Check if its md5 sum is correct.
@@ -371,12 +380,12 @@ sub IsPresent ($$)
     For http URLs there may be an optional MD5 checksum.  If it is present then downloaded
     files that do not match that checksum are an error and lead to abortion of the current process.
     Files that have already been downloaded are not downloaded again.
-    
+
 =cut
 sub Download ()
 {
     my $download_path = $ENV{'TARFILE_LOCATION'};
-    
+
     if (scalar @Missing > 0)
     {
         printf("downloading %d missing tar ball%s to %s\n",
@@ -388,12 +397,12 @@ sub Download ()
         print "all external libraries present\n";
         return;
     }
-    
+
     # Download the missing files.
     for my $item (@Missing)
     {
         my ($name, $given_md5, $urls) = @$item;
-        
+
         foreach my $url (@$urls)
         {
             last if DownloadFile($given_md5."-".$name, $url, $given_md5);
@@ -408,7 +417,7 @@ sub Download ()
 
     Download a single external library tarball.  It origin is given by $URL.
     Its destination is $(TARFILE_LOCATION)/$md5sum-$name.
-    
+
 =cut
 sub DownloadFile ($$$)
 {
@@ -426,7 +435,7 @@ sub DownloadFile ($$$)
 
     # Prepare md5
     my $md5 = Digest::MD5->new();
-        
+
     # Download the extension.
     my $agent = LWP::UserAgent->new();
     $agent->timeout(120);
@@ -479,7 +488,7 @@ sub DownloadFile ($$$)
             printf("md5 not given, md5 of file is %s\n", $file_md5);
             $filename = File::Spec->catfile($ENV{'TARFILE_LOCATION'}, $file_md5 . "-" . $name);
         }
-            
+
         rename($temporary_filename, $filename) || die "can not rename $temporary_filename to $filename";
         return 1;
     }
@@ -498,7 +507,7 @@ sub DownloadFile ($$$)
 
     Make sure that the download destination $TARFILE_LOCATION does exist.  If
     not, then the directory is created.
-    
+
 =cut
 sub CheckDownloadDestination ()
 {
@@ -518,7 +527,7 @@ sub CheckDownloadDestination ()
 =head3 ProvideSpecialTarball ($url,$name,$name_converter)
 
     A few tarballs need special handling.  That is done here.
-    
+
 =cut
 sub ProvideSpecialTarball ($$$)
 {
@@ -547,7 +556,7 @@ sub ProvideSpecialTarball ($$$)
     {
         $basename = &{$name_converter}($basename);
     }
-    
+
     # Has the source tar ball already been downloaded?
     my @candidates = glob(File::Spec->catfile($ENV{'TARFILE_LOCATION'}, "*-" . $basename));
     if (scalar @candidates > 0)
