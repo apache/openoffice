@@ -262,7 +262,6 @@ SdrAttrObj* E3dLatheObj::GetBreakObj()
 	basegfx::B2DPolyPolygon aTransPoly(TransformToScreenCoor(aLathePoly3D));
 	SdrPathObj* pPathObj = new SdrPathObj(
 		getSdrModelFromSdrObject(),
-		OBJ_PLIN, 
 		aTransPoly);
 
 	if(pPathObj)

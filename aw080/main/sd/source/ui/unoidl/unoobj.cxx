@@ -110,7 +110,7 @@ DECLARE_STL_STDKEY_MAP(sal_uIntPtr, SfxExtItemPropertySetInfo*, SdExtPropertySet
 static SdExtPropertySetInfoCache gImplImpressPropertySetInfoCache;
 static SdExtPropertySetInfoCache gImplDrawPropertySetInfoCache;
 
-DECLARE_STL_STDKEY_MAP(sal_uInt32, uno::Sequence< uno::Type >*, SdTypesCache);
+DECLARE_STL_STDKEY_MAP(SvxShapeKind, uno::Sequence< uno::Type >*, SdTypesCache);
 static SdTypesCache gImplTypesCache;
 
 ///////////////////////////////////////////////////////////////////////
@@ -311,10 +311,10 @@ extern "C" int __LOADONCALLAPI SortFunc( const void* p1, const void* p2 );
 SdXShape::SdXShape( SvxShape* pShape, SdXImpressDocument* pModel) throw()
 :	mpShape( pShape ),
 	mpPropSet( pModel?
-					lcl_ImplGetShapePropertySet(pModel->IsImpressDocument(), pShape->getShapeKind() == OBJ_GRAF )
+					lcl_ImplGetShapePropertySet(pModel->IsImpressDocument(), SvxShapeKind_Graphic == pShape->getSvxShapeKind() )
 				:	lcl_GetEmpty_SdXShapePropertySet_Impl() ),
 	mpMap( pModel?
-					lcl_ImplGetShapePropertyMap(pModel->IsImpressDocument(), pShape->getShapeKind() == OBJ_GRAF )
+					lcl_ImplGetShapePropertyMap(pModel->IsImpressDocument(), SvxShapeKind_Graphic == pShape->getSvxShapeKind() )
 				:	lcl_GetEmpty_SdXShapePropertyMap_Impl() ),
 	mpModel(pModel),
 	mpImplementationId( NULL )
@@ -380,9 +380,9 @@ uno::Sequence< uno::Type > SAL_CALL SdXShape::getTypes()
 	}
 	else
 	{
-		const sal_uInt32 nObjId = mpShape->getShapeKind();
+		const SvxShapeKind eSvxShapeKind(mpShape->getSvxShapeKind());
 		uno::Sequence< uno::Type >* pTypes;
-		SdTypesCache::iterator aIter( gImplTypesCache.find( nObjId ) );
+		SdTypesCache::iterator aIter( gImplTypesCache.find( eSvxShapeKind ) );
 		if( aIter == gImplTypesCache.end() )
 		{
 			pTypes = new uno::Sequence< uno::Type >( mpShape->_getTypes() );
@@ -390,7 +390,7 @@ uno::Sequence< uno::Type > SAL_CALL SdXShape::getTypes()
 			pTypes->realloc( nCount+1 );
 			(*pTypes)[nCount] = ::getCppuType((const uno::Reference< lang::XTypeProvider>*)0);
 
-			gImplTypesCache[ nObjId ] = pTypes;
+			gImplTypesCache[ eSvxShapeKind ] = pTypes;
 		}
 		else
 		{

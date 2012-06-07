@@ -1033,37 +1033,38 @@ bool View::IsMorphingAllowed() const
 	{
 		const SdrObject* pObj1 = aSelection[0];
 		const SdrObject* pObj2 = aSelection[1];
-		const sal_uInt16		nKind1 = pObj1->GetObjIdentifier();
-		const sal_uInt16		nKind2 = pObj2->GetObjIdentifier();
+        const SdrPathObj* pSdrPathObj = dynamic_cast< const SdrPathObj* >(pObj1);
 
-		if ( ( nKind1 != OBJ_TEXT && nKind2 != OBJ_TEXT ) &&
-			 ( nKind1 != OBJ_TITLETEXT && nKind2 != OBJ_TITLETEXT ) &&
-			 ( nKind1 != OBJ_OUTLINETEXT && nKind2 != OBJ_OUTLINETEXT ) &&
-			 ( nKind1 != OBJ_GRUP && nKind2 != OBJ_GRUP ) &&
-			 ( nKind1 != OBJ_LINE && nKind2 != OBJ_LINE ) &&
-			 ( nKind1 != OBJ_PLIN && nKind2 != OBJ_PLIN ) &&
-			 ( nKind1 != OBJ_PATHLINE && nKind2 != OBJ_PATHLINE ) &&
-			 ( nKind1 != OBJ_FREELINE && nKind2 != OBJ_FREELINE ) &&
-			 ( nKind1 != OBJ_PATHPLIN && nKind2 != OBJ_PATHPLIN ) &&
-			 ( nKind1 != OBJ_MEASURE && nKind2 != OBJ_MEASURE ) &&
-			 ( nKind1 != OBJ_EDGE && nKind2 != OBJ_EDGE ) &&
-			 ( nKind1 != OBJ_GRAF && nKind2 != OBJ_GRAF ) &&
-			 ( nKind1 != OBJ_OLE2 && nKind2 != OBJ_OLE2 ) &&
-			 ( nKind1 != OBJ_CAPTION && nKind2 !=  OBJ_CAPTION ) &&
-			 !dynamic_cast< const E3dObject* >(pObj1) && !dynamic_cast< const E3dObject* >(pObj2) )
-		{
-			SfxItemSet		aSet1( mpDoc->GetItemPool(), XATTR_FILLSTYLE, XATTR_FILLSTYLE );
-			SfxItemSet		aSet2( mpDoc->GetItemPool(), XATTR_FILLSTYLE, XATTR_FILLSTYLE );
+        if(!pSdrPathObj || pSdrPathObj->isClosed()) // not a path or closed (not OBJ_LINE, OBJ_PLIN, OBJ_PATHLINE, OBJ_FREELINE or OBJ_PATHPLIN)
+        {
+            pSdrPathObj = dynamic_cast< const SdrPathObj* >(pObj2);
 
-			aSet1.Put(pObj1->GetMergedItemSet());
-			aSet2.Put(pObj2->GetMergedItemSet());
+            if(!pSdrPathObj || pSdrPathObj->isClosed()) // not a path or closed (not OBJ_LINE, OBJ_PLIN, OBJ_PATHLINE, OBJ_FREELINE or OBJ_PATHPLIN)
+            {
+		        const sal_uInt16 nKind1 = pObj1->GetObjIdentifier();
+		        const sal_uInt16 nKind2 = pObj2->GetObjIdentifier();
 
-			const XFillStyle	eFillStyle1 = ( (const XFillStyleItem&) aSet1.Get( XATTR_FILLSTYLE ) ).GetValue();
-			const XFillStyle	eFillStyle2 = ( (const XFillStyleItem&) aSet2.Get( XATTR_FILLSTYLE ) ).GetValue();
+		        if ( ( nKind1 != OBJ_TEXT && nKind2 != OBJ_TEXT ) &&
+			         ( nKind1 != OBJ_TITLETEXT && nKind2 != OBJ_TITLETEXT ) &&
+			         ( nKind1 != OBJ_OUTLINETEXT && nKind2 != OBJ_OUTLINETEXT ) &&
+			         ( nKind1 != OBJ_GRUP && nKind2 != OBJ_GRUP ) &&
+			         ( nKind1 != OBJ_MEASURE && nKind2 != OBJ_MEASURE ) &&
+			         ( nKind1 != OBJ_EDGE && nKind2 != OBJ_EDGE ) &&
+			         ( nKind1 != OBJ_GRAF && nKind2 != OBJ_GRAF ) &&
+			         ( nKind1 != OBJ_OLE2 && nKind2 != OBJ_OLE2 ) &&
+			         ( nKind1 != OBJ_CAPTION && nKind2 !=  OBJ_CAPTION ) &&
+			         !dynamic_cast< const E3dObject* >(pObj1) && !dynamic_cast< const E3dObject* >(pObj2) )
+		        {
+			        const XFillStyle eFillStyle1(((const XFillStyleItem&)pObj1->GetMergedItem(XATTR_FILLSTYLE)).GetValue());
+			        const XFillStyle eFillStyle2(((const XFillStyleItem&)pObj2->GetMergedItem(XATTR_FILLSTYLE)).GetValue());
 
-			if( ( eFillStyle1 == XFILL_NONE || eFillStyle1 == XFILL_SOLID ) &&
-				( eFillStyle2 == XFILL_NONE || eFillStyle2 == XFILL_SOLID ) )
-				bRet = true;
+			        if( ( eFillStyle1 == XFILL_NONE || eFillStyle1 == XFILL_SOLID ) &&
+				        ( eFillStyle2 == XFILL_NONE || eFillStyle2 == XFILL_SOLID ) )
+                    {
+				        bRet = true;
+                    }
+                }
+            }
 		}
 	}
 

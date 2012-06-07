@@ -2348,18 +2348,9 @@ bool SdrObjEditView::SupportsFormatPaintbrush( sal_uInt32 nObjectInventor, sal_u
         case OBJ_NONE:
         case OBJ_GRUP:
             return false;
-        case OBJ_LINE:
         case OBJ_RECT:
         case OBJ_CIRC:
-        case OBJ_SECT:
-        case OBJ_CARC:
-        case OBJ_CCUT:
         case OBJ_POLY:
-        case OBJ_PLIN:
-        case OBJ_PATHLINE:
-        case OBJ_PATHFILL:
-        case OBJ_FREELINE:
-        case OBJ_FREEFILL:
         case OBJ_TEXT:
         case OBJ_TITLETEXT:
         case OBJ_OUTLINETEXT:
@@ -2370,9 +2361,6 @@ bool SdrObjEditView::SupportsFormatPaintbrush( sal_uInt32 nObjectInventor, sal_u
         case OBJ_EDGE:
         case OBJ_CAPTION:
             return false;
-        case OBJ_PATHPOLY:
-        case OBJ_PATHPLIN:
-            return true;
         case OBJ_PAGE:
         case OBJ_MEASURE:
         case OBJ_FRAME:

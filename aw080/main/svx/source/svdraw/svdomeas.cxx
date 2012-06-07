@@ -1051,7 +1051,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 		aPolyPoly.clear();
 		aPolyPoly.append(aTmpPolyPolygon[0].getB2DPolygon());
 
-		pPath = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPoly);
+		pPath = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPoly);
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 		pGroup->InsertObjectToSdrObjList(*pPath);
@@ -1068,7 +1068,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 
 		aPolyPoly.clear();
 		aPolyPoly.append(aTmpPolyPolygon[0].getB2DPolygon());
-		pPath = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPoly);
+		pPath = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPoly);
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
@@ -1079,7 +1079,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 
 		aPolyPoly.clear();
 		aPolyPoly.append(aTmpPolyPolygon[1].getB2DPolygon());
-		pPath = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPoly);
+		pPath = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPoly);
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
@@ -1097,7 +1097,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 
 		aPolyPoly.clear();
 		aPolyPoly.append(aTmpPolyPolygon[0].getB2DPolygon());
-		pPath = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPoly);
+		pPath = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPoly);
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
@@ -1108,7 +1108,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 
 		aPolyPoly.clear();
 		aPolyPoly.append(aTmpPolyPolygon[1].getB2DPolygon());
-		pPath = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPoly);
+		pPath = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPoly);
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 
@@ -1122,7 +1122,7 @@ SdrObject* SdrMeasureObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) 
 	{
 		aPolyPoly.clear();
 		aPolyPoly.append(aTmpPolyPolygon[nLoopStart].getB2DPolygon());
-		pPath = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPoly);
+		pPath = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPoly);
 		pPath->SetMergedItemSet(aSet);
         pPath->SetStyleSheet(pStyleSheet, true);
 

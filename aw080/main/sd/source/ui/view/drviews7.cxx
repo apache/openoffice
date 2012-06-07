@@ -1408,12 +1408,49 @@ void DrawViewShell::GetMenuState( SfxItemSet &rSet )
 				// 2D objects
 				switch( nId )
 				{
-					case OBJ_PATHLINE :
-					case OBJ_PLIN :
-					case OBJ_LINE:
-					case OBJ_FREELINE :
+                    case OBJ_POLY:
+                    {
+                        SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
+
+                        if(pSdrPathObj)
+                        {
+                            switch(pSdrPathObj->getSdrPathObjType())
+                            {
+                                case PathType_Line:
+                                case PathType_OpenPolygon:
+                                case PathType_OpenBezier:
+                                {
+						            bFoundObjNoArea = true;
+						            bFoundNoGraphicObj = true;
+                                    break;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            OSL_ENSURE(false, "OOps, SdrObjKind and dynamic_cast do not fit (!)");
+                        }
+                        break;
+                    }
+                    case OBJ_CIRC:
+                    {
+                        SdrCircObj* pSdrCircObj = dynamic_cast< SdrCircObj* >(pObj);
+
+                        if(pSdrCircObj)
+                        {
+                            if(CircleType_Arc == pSdrCircObj->GetSdrCircleObjType())
+                            {
+						        bFoundObjNoArea = true;
+						        bFoundNoGraphicObj = true;
+                            }
+                        }
+                        else
+                        {
+                            OSL_ENSURE(false, "OOps, SdrObjKind and dynamic_cast do not fit (!)");
+                        }
+                        break;
+                    }
 					case OBJ_EDGE:
-					case OBJ_CARC :
 						bFoundObjNoArea      = true;
 						bFoundNoGraphicObj = true;
 						break;

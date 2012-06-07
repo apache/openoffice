@@ -348,7 +348,6 @@ SdrObject* SwWW8ImplReader::ReadLine( WW8_DPHEAD* pHd, const WW8_DO* pDo,
 	aPolygon.append(::basegfx::B2DPoint(aP[1].X(), aP[1].Y()));
 	SdrObject* pObj = new SdrPathObj(
 		*pDrawModel,
-		OBJ_LINE, 
 		::basegfx::B2DPolyPolygon(aPolygon));
 
     SetStdAttr( rSet, aLine.aLnt, aLine.aShd );
@@ -399,7 +398,7 @@ SdrObject* SwWW8ImplReader::ReadElipse( WW8_DPHEAD* pHd, const WW8_DO* pDo,
 
     SdrObject* pObj = new SdrCircObj( 
 		*pDrawModel,
-		OBJ_CIRC, 
+		CircleType_Circle, 
 		basegfx::tools::createScaleTranslateB2DHomMatrix(
 			aP1.X() - aP0.X(), aP1.Y() - aP0.Y(), 
 			aP0.X(), aP0.Y()));
@@ -443,7 +442,7 @@ SdrObject* SwWW8ImplReader::ReadArc( WW8_DPHEAD* pHd, const WW8_DO* pDo,
     
 	SdrObject* pObj = new SdrCircObj( 
 		*pDrawModel,
-		OBJ_SECT, 
+		CircleType_Sector, 
 		basegfx::tools::createScaleTranslateB2DHomMatrix(
 			aP1.X() - aP0.X(), aP1.Y() - aP0.Y(), 
 			aP0.X(), aP0.Y()),
@@ -482,7 +481,6 @@ SdrObject* SwWW8ImplReader::ReadPolyLine( WW8_DPHEAD* pHd, const WW8_DO* pDo,
 
 	SdrObject* pObj = new SdrPathObj(
 		*pDrawModel,
-		( SVBT16ToShort( aPoly.aBits1 ) & 0x1 ) ? OBJ_POLY : OBJ_PLIN, 
 		::basegfx::B2DPolyPolygon(aP.getB2DPolygon()));
     SetStdAttr( rSet, aPoly.aLnt, aPoly.aShd );
     SetFill( rSet, aPoly.aFill );

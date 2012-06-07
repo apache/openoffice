@@ -1036,76 +1036,76 @@ uno::Reference< uno::XInterface > SAL_CALL SdXImpressDocument::createInstance( c
 	if( aType.EqualsAscii( "com.sun.star.presentation.", 0, 26 ) )
 	{
 		SvxShape* pShape = NULL;
+        SvxShapeKind aSvxShapeKind(SvxShapeKind_Text);
 
-		sal_uInt16 nType = OBJ_TEXT;
 		// create a shape wrapper
 		if( aType.EqualsAscii( "TitleTextShape", 26, 14 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "OutlinerShape", 26, 13 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "SubtitleShape", 26, 13 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "GraphicObjectShape", 26, 18 ) )
 		{
-			nType = OBJ_GRAF;
+			aSvxShapeKind = SvxShapeKind_Graphic;
 		}
 		else if( aType.EqualsAscii( "PageShape", 26, 9 ) )
 		{
-			nType = OBJ_PAGE;
+			aSvxShapeKind = SvxShapeKind_Page;
 		}
 		else if( aType.EqualsAscii( "OLE2Shape", 26, 9 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "ChartShape", 26, 10 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "CalcShape", 26, 9 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "TableShape", 26, 10 ) )
 		{
-			nType = OBJ_TABLE;
+			aSvxShapeKind = SvxShapeKind_Table;
 		}
 		else if( aType.EqualsAscii( "OrgChartShape", 26, 13 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "NotesShape", 26, 13 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "HandoutShape", 26, 13 ) )
 		{
-			nType = OBJ_PAGE;
+			aSvxShapeKind = SvxShapeKind_Page;
 		}
 		else if( aType.EqualsAscii( "FooterShape", 26, 12 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "HeaderShape", 26, 12 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "SlideNumberShape", 26, 17 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "DateTimeShape", 26, 17 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "MediaShape", 26, 10 ) )
 		{
-			nType = OBJ_MEDIA;
+			aSvxShapeKind = SvxShapeKind_Media;
 		}
 		else
 		{
@@ -1113,19 +1113,24 @@ uno::Reference< uno::XInterface > SAL_CALL SdXImpressDocument::createInstance( c
 		}
 
 		// create the API wrapper
-		pShape = CreateSvxShapeByTypeAndInventor( nType, SdrInventor );
+		pShape = SvxDrawPage::CreateShapeBySvxShapeKind(aSvxShapeKind);
 
 		// set shape type
 		if( pShape && !mbClipBoard )
+        {
 			pShape->SetShapeType(aServiceSpecifier);
+        }
 
 		xRet = (uno::XWeak*)pShape;
 	}
 	else if( aServiceSpecifier.equalsAsciiL(RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.TableShape") ) )
 	{
-		SvxShape* pShape = CreateSvxShapeByTypeAndInventor( OBJ_TABLE, SdrInventor );
-		if( pShape && !mbClipBoard )
+		SvxShape* pShape = SvxDrawPage::CreateShapeBySvxShapeKind(SvxShapeKind_Table);
+		
+        if( pShape && !mbClipBoard )
+        {
 			pShape->SetShapeType(aServiceSpecifier);
+        }
 
 		xRet = (uno::XWeak*)pShape;
 	}

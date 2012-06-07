@@ -169,27 +169,29 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 				rSet.DisableItem(SID_CONVERT_TO_24BIT);
 			}
 
-			if( nInv == SdrInventor &&
-			   (nId == OBJ_LINE ||
-				nId == OBJ_PLIN ||
-				nId == OBJ_PATHLINE ||
-				nId == OBJ_FREELINE ))
-			{
-				//rSet.DisableItem( SID_ATTRIBUTES_AREA ); // wieder raus!
-				rSet.DisableItem( SID_ATTR_FILL_STYLE );
-			}
-			if( (!dynamic_cast< const SdrPathObj* >(pSingleObject) && !aInfoRec.mbCanConvToPath) 
-				|| pSdrObjGroup ) // Solange es JOE fehlerhaft behandelt!
+            const SdrPathObj* pSdrPathObj = dynamic_cast< const SdrPathObj* >(pSingleObject);
+
+            if(pSdrPathObj)
+            {
+                if(!pSdrPathObj->isClosed())
+                {
+      				rSet.DisableItem( SID_ATTR_FILL_STYLE );
+                }
+            }
+			
+            if( (!pSdrPathObj && !aInfoRec.mbCanConvToPath) || pSdrObjGroup ) // Solange es JOE fehlerhaft behandelt!
 			{ 
 				// JOE: Ein Gruppenobjekt kann eben u.U. in ein PathObj gewandelt werden
 				rSet.DisableItem( SID_LINEEND_POLYGON );
 			}
-			if(nInv == SdrInventor &&
-			   (nId == OBJ_PATHFILL || nId == OBJ_PATHLINE || !aInfoRec.mbCanConvToPath))
+			
+            if((pSdrPathObj && pSdrPathObj->isBezier()) || !aInfoRec.mbCanConvToPath)
+            {
 				rSet.DisableItem( SID_CHANGEBEZIER );
+            }
 
 			if( nInv == SdrInventor &&
-				( nId == OBJ_POLY || nId == OBJ_PLIN || !aInfoRec.mbCanConvToPoly ) &&
+				((pSdrPathObj && !pSdrPathObj->isBezier()) || !aInfoRec.mbCanConvToPoly ) &&
 				!GetView()->IsVectorizeAllowed() )
 			{
 				rSet.DisableItem( SID_CHANGEPOLYGON );
@@ -338,19 +340,26 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 				{
 					switch (nId)
 					{
+                        case OBJ_POLY:
+                        {
+                            SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
+
+                            if(pSdrPathObj)
+                            {
+                                bDrawObj = true;
+                                bLine = pSdrPathObj->isLine();
+                            }
+                            else
+                            {
+                                OSL_ENSURE(false, "OOps, SdrObjKind and dynamic_cast do not fit (!)");
+                            }
+                            break;
+                        }
 						case OBJ_TEXT: bText = true; break;
-						case OBJ_LINE: bLine = true; break;
 						case OBJ_EDGE: bEdgeObj = true; break;
 						case OBJ_MEASURE: bMeasureObj = true; break;
 						case OBJ_RECT:
-						case OBJ_CIRC:
-						case OBJ_FREELINE:
-						case OBJ_FREEFILL:
-						case OBJ_PATHFILL:
-						case OBJ_PATHLINE:
-						case OBJ_SECT:
-						case OBJ_CARC:
-						case OBJ_CCUT: bDrawObj = true; break;
+						case OBJ_CIRC: bDrawObj = true; break;
 						case OBJ_GRUP: bGroup = true; break;
 						case OBJ_GRAF: bGraf = true; break;
 						case OBJ_TITLETEXT:
@@ -364,7 +373,7 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 						b3dObj = true;
 					else if(dynamic_cast< E3dCompoundObject* >(pObj))
 						bE3dCompoundObject = true;
-			}
+			    }
 			}
 			if( bLine && !bText && !bDrawObj &&!b3dObj)
 			{

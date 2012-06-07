@@ -556,23 +556,12 @@ void FuText::Activate()
 	rBindings.Invalidate( SID_OBJECT_ROTATE );
 	rBindings.Invalidate( SID_OBJECT_MIRROR );
 
-//	Sofort in den Edit Mode setzen
-//	SetInEditMode();
+	sal_uInt16 nObj = OBJ_TEXT;
 
-//	if (!pTextObj)
-	{
-		/**********************************************************************
-		* Kein Textobjekt im EditMode, daher CreateMode setzen
-		**********************************************************************/
-		sal_uInt16 nObj = OBJ_TEXT;
-
-		pView->SetCurrentObj(nObj);
-		pView->SetViewEditMode(SDREDITMODE_CREATE);
-	}
+	pView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
+	pView->SetViewEditMode(SDREDITMODE_CREATE);
 
 	aNewPointer = Pointer(POINTER_TEXT);
-//	aNewPointer = Pointer(POINTER_CROSS);				//! ???
-
 	aOldPointer = pWindow->GetPointer();
 	pViewShell->SetActivePointer( aNewPointer );
 
@@ -622,28 +611,7 @@ void FuText::SelectionHasChanged()
 
 	if (!pTextObj)
 	{
-		/**********************************************************************
-		* Kein Textobjekt im EditMode, daher CreateMode setzen
-		**********************************************************************/
-		sal_uInt16 nObj = OBJ_TEXT;
-
-//		  if (! pView->IsEditMode() )
-//		  {
-//			  if (nIdent == OBJ_TEXT)
-//			  {
-//				  nObj = OBJ_TEXT;
-//			  }
-//			  else if (nIdent == OBJ_OUTLINETEXT)
-//			  {
-//				  nObj = OBJ_OUTLINETEXT;
-//			  }
-//			  else if (nIdent == OBJ_TITLETEXT)
-//			  {
-//				  nObj = OBJ_TITLETEXT;
-//			  }
-//		  }
-
-		pView->SetCurrentObj(nObj);
+		pView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 
 		pView->SetViewEditMode(SDREDITMODE_CREATE);
 	}
@@ -746,8 +714,7 @@ SdrObject* FuText::CreateDefaultObject(const sal_uInt16 nID, const basegfx::B2DR
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		pView->getSdrModelFromSdrView(),
-		pView->GetCurrentObjInventor(), 
-		pView->GetCurrentObjIdentifier());
+		pView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

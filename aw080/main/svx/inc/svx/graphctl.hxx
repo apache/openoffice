@@ -59,7 +59,7 @@ class SVX_DLLPUBLIC GraphCtrl : public Control, public SfxListener
 	Size				aGraphSize;
 	Point				aMousePos;
 	WinBits				nWinStyle;
-	SdrObjKind			eObjKind;
+	SdrObjectCreationInfo   maSdrObjectCreationInfo;
 	sal_uInt16				nPolyEdit;
 	sal_Bool				bEditMode;
 	sal_Bool				bSdrMode;
@@ -115,8 +115,8 @@ public:
 	void				SetPolyEditMode( const sal_uInt16 nPolyEdit );
 	sal_uInt16				GetPolyEditMode() const { return nPolyEdit; }
 
-	void				SetObjKind( const SdrObjKind eObjKind );
-	SdrObjKind			GetObjKind() const { return eObjKind; }
+	void setSdrObjectCreationInfo( const SdrObjectCreationInfo& rSdrObjectCreationInfo );
+	const SdrObjectCreationInfo& getSdrObjectCreationInfo() const { return maSdrObjectCreationInfo; }
 
 	SdrModel*			GetSdrModel() const { return pModel; }
 	SdrView*			GetSdrView() const { return pView; }

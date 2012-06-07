@@ -369,7 +369,7 @@ void OViewsWindow::SetInsertObj( sal_uInt16 eObj,const ::rtl::OUString& _sShapeT
 	TSectionsMap::iterator aIter = m_aSections.begin();
 	TSectionsMap::iterator aEnd = m_aSections.end();
 	for (;aIter != aEnd ; ++aIter)
-		(*aIter)->getReportSection().getSectionView().SetCurrentObj( eObj, ReportInventor );
+		(*aIter)->getReportSection().getSectionView().setSdrObjectCreationInfo(SdrObjectCreationInfo(eObj, ReportInventor));
 
     m_sShapeType = _sShapeType;
 }

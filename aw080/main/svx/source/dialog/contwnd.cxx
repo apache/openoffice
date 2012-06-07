@@ -97,7 +97,7 @@ void ContourWindow::SetPolyPolygon( const PolyPolygon& rPolyPoly )
 	{
 		basegfx::B2DPolyPolygon aPolyPolygon;
 		aPolyPolygon.append(aPolyPoly[ i ].getB2DPolygon());
-		SdrPathObj* pPathObj = new SdrPathObj( *pModel, OBJ_PATHFILL, aPolyPolygon );
+		SdrPathObj* pPathObj = new SdrPathObj( *pModel, aPolyPolygon );
 
 		if ( pPathObj )
 		{

@@ -19,11 +19,8 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include "hintids.hxx"
 #include <vcl/svapp.hxx>
@@ -33,7 +30,6 @@
 #include <svx/svdobj.hxx>
 #include <svx/svdotext.hxx>
 #include <editeng/eeitem.hxx>
-
 #ifndef _OUTLINER_HXX //autogen
 #define _EEITEMID_HXX
 #include <editeng/outliner.hxx>
@@ -49,8 +45,6 @@
 #include <svtools/htmltokn.h>
 #include <svtools/htmlkywd.hxx>
 #include <svx/svdpool.hxx>
-
-
 #include "charatr.hxx"
 #include <frmfmt.hxx>
 #include <fmtanchr.hxx>
@@ -64,9 +58,9 @@
 #include "wrthtml.hxx"
 #include <svx/svdlegacy.hxx>
 #include <svx/fmmodel.hxx>
+#include <svx/sdrobjectfactory.hxx>
 
 using namespace ::com::sun::star;
-
 
 const sal_uInt32 HTML_FRMOPTS_MARQUEE 	=
 	HTML_FRMOPT_ALIGN |
@@ -405,7 +399,7 @@ void SwHTMLParser::NewMarquee( HTMLTable *pCurTable )
     SdrModel* pModel = pDoc->GetOrCreateDrawModel();
     // <--
 	SdrPage* pPg = pModel->GetPage( 0 );
-	pMarquee = SdrObjFactory::MakeNewObject( *pModel, SdrInventor, OBJ_TEXT);
+	pMarquee = SdrObjFactory::MakeNewObject( *pModel, SdrObjectCreationInfo(OBJ_TEXT, SdrInventor));
 	if( !pMarquee )
 		return;
 

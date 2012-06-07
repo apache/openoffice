@@ -129,7 +129,7 @@ bool FuConstructCustomShape::MouseButtonDown(const MouseEvent& rMEvt)
 		mpWindow->CaptureMouse();
 		sal_uInt16 nDrgLog = sal_uInt16 ( mpWindow->PixelToLogic(Size(DRGPIX,0)).Width() );
 
-		mpView->BegCreateObj(aLogicPos, (OutputDevice*) NULL, nDrgLog);
+		mpView->BegCreateObj(aLogicPos, nDrgLog);
 
 		SdrObject* pObj = mpView->GetCreateObj();
 		if ( pObj )
@@ -212,7 +212,7 @@ bool FuConstructCustomShape::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstructCustomShape::Activate()
 {
-	mpView->SetCurrentObj( OBJ_CUSTOMSHAPE );
+	mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_CUSTOMSHAPE)));
 	FuConstruct::Activate();
 }
 
@@ -307,8 +307,7 @@ SdrObject* FuConstructCustomShape::CreateDefaultObject(const sal_uInt16, const b
 {
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		mpView->getSdrModelFromSdrView(),
-		mpView->GetCurrentObjInventor(), 
-		mpView->GetCurrentObjIdentifier());
+		mpView->getSdrObjectCreationInfo());
 
 	if( pObj )
 	{

@@ -33,6 +33,8 @@
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/awt/ScrollBarOrientation.hpp>
 #include <svx/svdoole2.hxx>
+#include <svx/sdrobjectfactory.hxx>
+
 namespace rptui
 {
 using namespace ::com::sun::star;
@@ -55,47 +57,50 @@ DlgEdFactory::~DlgEdFactory()
 
 IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 {
-	if ( pObjFactory->mnInventor == ReportInventor )
+	if ( pObjFactory->getSdrObjectCreationInfo().getInvent() == ReportInventor )
 	{
-        switch( pObjFactory->mnIdentifier )
+        switch( pObjFactory->getSdrObjectCreationInfo().getIdent() )
 	    {
 		    case OBJ_DLG_FIXEDTEXT:
 			{
-				pObjFactory->mpNewObj = new OUnoObject( 
-					*pObjFactory->mpTargetModel,
-					SERVICE_FIXEDTEXT
-					,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
-					,OBJ_DLG_FIXEDTEXT);
+				pObjFactory->setNewSdrObject(
+                    new OUnoObject( 
+					    pObjFactory->getTargetModel(),
+					    SERVICE_FIXEDTEXT
+					    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
+					    ,OBJ_DLG_FIXEDTEXT));
 				    break;
 			}
 		    case OBJ_DLG_IMAGECONTROL:
 			{
-				pObjFactory->mpNewObj = new OUnoObject( 
-					*pObjFactory->mpTargetModel,
-					SERVICE_IMAGECONTROL
-					,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
-					,OBJ_DLG_IMAGECONTROL);
+				pObjFactory->setNewSdrObject(
+                    new OUnoObject( 
+					    pObjFactory->getTargetModel(),
+					    SERVICE_IMAGECONTROL
+					    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
+					    ,OBJ_DLG_IMAGECONTROL));
 				    break;
 			}
 		    case OBJ_DLG_FORMATTEDFIELD:
 			{
-				pObjFactory->mpNewObj = new OUnoObject( 
-					*pObjFactory->mpTargetModel,
-					SERVICE_FORMATTEDFIELD
-					,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
-					,OBJ_DLG_FORMATTEDFIELD);
+				pObjFactory->setNewSdrObject(
+                    new OUnoObject( 
+					    pObjFactory->getTargetModel(),
+					    SERVICE_FORMATTEDFIELD
+					    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
+					    ,OBJ_DLG_FORMATTEDFIELD));
 				    break;
 			}
             case OBJ_DLG_VFIXEDLINE:
             case OBJ_DLG_HFIXEDLINE:
             {
                 OUnoObject* pObj = new OUnoObject( 
-					*pObjFactory->mpTargetModel,
+					pObjFactory->getTargetModel(),
 					SERVICE_FIXEDLINE
                     ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel")) 
-					,pObjFactory->mnIdentifier);
-                pObjFactory->mpNewObj = pObj;
-                if ( pObjFactory->mnIdentifier == OBJ_DLG_HFIXEDLINE )
+					,pObjFactory->getSdrObjectCreationInfo().getIdent());
+                pObjFactory->setNewSdrObject(pObj);
+                if ( pObjFactory->getSdrObjectCreationInfo().getIdent() == OBJ_DLG_HFIXEDLINE )
                 {
                     uno::Reference<beans::XPropertySet> xProp = pObj->getAwtComponent();
                     xProp->setPropertyValue( PROPERTY_ORIENTATION, uno::makeAny(sal_Int32(0)) );
@@ -104,25 +109,28 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
             }
             case OBJ_CUSTOMSHAPE:
             {
-                pObjFactory->mpNewObj = new OCustomShape(
-					*pObjFactory->mpTargetModel,
-					SERVICE_SHAPE);
+                pObjFactory->setNewSdrObject(
+                    new OCustomShape(
+					    pObjFactory->getTargetModel(),
+					    SERVICE_SHAPE));
                 break;
 			}
             case OBJ_DLG_SUBREPORT:
             {
-                pObjFactory->mpNewObj = new OOle2Obj(
-					*pObjFactory->mpTargetModel,
-					SERVICE_REPORTDEFINITION,
-					OBJ_DLG_SUBREPORT);
+                pObjFactory->setNewSdrObject(
+                    new OOle2Obj(
+					    pObjFactory->getTargetModel(),
+					    SERVICE_REPORTDEFINITION,
+					    OBJ_DLG_SUBREPORT));
                 break;
 			}
             case OBJ_OLE2:
             {
-                pObjFactory->mpNewObj = new OOle2Obj(
-					*pObjFactory->mpTargetModel,
-					::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.chart2.ChartDocument")),
-					OBJ_OLE2);
+                pObjFactory->setNewSdrObject(
+                    new OOle2Obj(
+					    pObjFactory->getTargetModel(),
+					    ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.chart2.ChartDocument")),
+					    OBJ_OLE2));
                 break;
 			}
 		    default:

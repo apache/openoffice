@@ -26,16 +26,13 @@
 #include <com/sun/star/text/RelOrientation.hpp>
 #include <com/sun/star/embed/XClassifiedObject.hpp>
 #include <com/sun/star/embed/XEmbeddedObject.hpp>
-
 #include <svx/svdobj.hxx>
 #include "swdllapi.h"
 #include <editsh.hxx>
 #include <flyenum.hxx>
-
-// OD 25.06.2003 #108784#
 #include <svx/svdtypes.hxx>
-
 #include <svtools/embedhlp.hxx>
+#include <svx/sdrobjectfactory.hxx>
 
 #ifndef INCLUDED_VECTOR
 #include <vector>
@@ -493,13 +490,12 @@ public:
 	//selektiert.
 	//Mit BreakCreate wird der Vorgang abgebrochen, dann ist kein Objekt
 	//mehr selektiert.
-    bool BeginCreate( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, const basegfx::B2DPoint& rPos );
-	bool BeginCreate( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, sal_uInt32 eObjInventor, const basegfx::B2DPoint& rPos );
+    bool BeginCreate(const SdrObjectCreationInfo& rSdrObjectCreationInfo, const basegfx::B2DPoint& rPos );
 	void MoveCreate( const basegfx::B2DPoint &rPos );
 	bool EndCreate( sal_uInt16 eSdrCreateCmd );
 	void BreakCreate();
 	bool IsDrawCreate() const;
-    void CreateDefaultShape( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, const Rectangle& rRect, sal_uInt16 nSlotId);
+    void CreateDefaultShape(const SdrObjectCreationInfo& rSdrObjectCreationInfo, const Rectangle& rRect, sal_uInt16 nSlotId);
 
 	// Funktionen f�r Rubberbox, um Draw-Objekte zu selektieren
 	bool BeginMark( const basegfx::B2DPoint& rPos );

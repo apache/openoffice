@@ -135,32 +135,35 @@ sal_Bool __EXPORT FuConstArc::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstArc::Activate()
 {
-	SdrObjKind aObjKind;
+    SdrCircleObjType aSdrCircleObjType(CircleType_Circle);
 
 	switch (aSfxRequest.GetSlot() )
 	{
 		case SID_DRAW_ARC:
 			aNewPointer = Pointer( POINTER_DRAW_ARC );
-			aObjKind = OBJ_CARC;
+            aSdrCircleObjType = CircleType_Arc;
 			break;
 
 		case SID_DRAW_PIE:
 			aNewPointer = Pointer( POINTER_DRAW_PIE );
-			aObjKind = OBJ_SECT;
+            aSdrCircleObjType = CircleType_Sector;
 			break;
 
 		case SID_DRAW_CIRCLECUT:
 			aNewPointer = Pointer( POINTER_DRAW_CIRCLECUT );
-			aObjKind = OBJ_CCUT;
+            aSdrCircleObjType = CircleType_Segment;
 			break;
 
 		default:
 			aNewPointer = Pointer( POINTER_CROSS );
-			aObjKind = OBJ_CARC;
+            aSdrCircleObjType = CircleType_Arc;
 			break;
 	}
 
-    pView->SetCurrentObj( sal::static_int_cast<sal_uInt16>( aObjKind ) );
+    SdrObjectCreationInfo aSdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_CIRC));
+
+    aSdrObjectCreationInfo.setSdrCircleObjType(aSdrCircleObjType);
+    pView->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 
 	aOldPointer = pWindow->GetPointer();
 	pViewShell->SetActivePointer( aNewPointer );
@@ -189,8 +192,7 @@ SdrObject* FuConstArc::CreateDefaultObject(const sal_uInt16 nID, const basegfx::
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		pView->getSdrModelFromSdrView(),
-		pView->GetCurrentObjInventor(), 
-		pView->GetCurrentObjIdentifier());
+		pView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

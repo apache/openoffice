@@ -1243,7 +1243,6 @@ void SwRTFParser::ReadDrawingObject()
         SdrModel* pDrawModel  = pDoc->GetOrCreateDrawModel();
         SdrPathObj* pStroke = new SdrPathObj(
 			*pDrawModel,
-			OBJ_PLIN, 
 			::basegfx::B2DPolyPolygon(aPolygon));
         SfxItemSet aFlySet(pDoc->GetAttrPool(), RES_FRMATR_BEGIN, RES_FRMATR_END-1);
         SwFmtSurround aSur( SURROUND_PARALLEL );
@@ -1527,7 +1526,6 @@ void SwRTFParser::ReadShapeObject()
 
             SdrPathObj* pStroke = new SdrPathObj(
 				*pDoc->GetOrCreateDrawModel(),
-				OBJ_PLIN, 
 				::basegfx::B2DPolyPolygon(aLine));
             pSdrObject = pStroke;
 

@@ -453,7 +453,7 @@ bool FuConstruct3dObject::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstruct3dObject::Activate()
 {
-	mpView->SetCurrentObj(OBJ_NONE);
+	mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_NONE)));
 
 	FuConstruct::Activate();
 }

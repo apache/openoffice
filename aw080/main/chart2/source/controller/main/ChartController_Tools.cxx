@@ -610,7 +610,7 @@ bool ChartController::isShapeContext() const
 {
     if ( m_aSelection.isAdditionalShapeSelected() ||
          ( m_pDrawViewWrapper && m_pDrawViewWrapper->areSdrObjectsSelected() &&
-           ( m_pDrawViewWrapper->GetCurrentObjIdentifier() == OBJ_TEXT ) ) )
+           ( m_pDrawViewWrapper->getSdrObjectCreationInfo().getIdent() == OBJ_TEXT ) ) )
     {
         return true;
     }

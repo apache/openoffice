@@ -633,7 +633,7 @@ sal_Bool SwView::IsTextTool() const
 	if (pSdrView->IsCreateMode())
 		pSdrView->SetViewEditMode(SDREDITMODE_EDIT);
 
-	return (pSdrView->GetCurrentObjInventor() == SdrInventor);
+	return (SdrInventor == pSdrView->getSdrObjectCreationInfo().getInvent());
 }
 
 /*--------------------------------------------------------------------

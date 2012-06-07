@@ -218,7 +218,6 @@ void XDashList::impCreate()
 	    aPolygon.append(aEnd);
 	    SdrObject* pLineObject = new SdrPathObj(
 			*pSdrModel,
-			OBJ_LINE, 
 			basegfx::B2DPolyPolygon(aPolygon));
 		OSL_ENSURE(0 != pLineObject, "XDashList: no LineObject created!" );
     	//pLineObject->SetModel(pSdrModel);

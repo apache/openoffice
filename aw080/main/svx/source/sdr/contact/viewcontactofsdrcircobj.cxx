@@ -59,12 +59,12 @@ namespace sdr
 			const basegfx::B2DHomMatrix& rObjectMatrix(GetCircObj().getSdrObjectTransformation());
 
 			// create primitive data
-			const sal_uInt16 nIdentifier(GetCircObj().GetObjIdentifier());
+            const SdrCircleObjType aSdrCircleObjType(GetCircObj().GetSdrCircleObjType());
 
 			// always create primitives to allow the decomposition of SdrEllipsePrimitive2D
 			// or SdrEllipseSegmentPrimitive2D to create needed invisible elements for HitTest
 			// and/or BoundRect
-			if(OBJ_CIRC == nIdentifier)
+			if(CircleType_Circle == aSdrCircleObjType)
 			{
 				// full circle
 				const drawinglayer::primitive2d::Primitive2DReference xReference(
@@ -79,8 +79,8 @@ namespace sdr
 				// circle segment
 				const double fStart(GetCircObj().GetStartAngle());
 				const double fEnd(GetCircObj().GetEndAngle());
-				const bool bCloseSegment(OBJ_CARC != nIdentifier);
-				const bool bCloseUsingCenter(OBJ_SECT == nIdentifier);
+				const bool bCloseSegment(CircleType_Arc != aSdrCircleObjType);
+				const bool bCloseUsingCenter(CircleType_Sector == aSdrCircleObjType);
 
 				const drawinglayer::primitive2d::Primitive2DReference xReference(
 					new drawinglayer::primitive2d::SdrEllipseSegmentPrimitive2D(

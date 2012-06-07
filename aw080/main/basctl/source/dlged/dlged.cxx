@@ -695,8 +695,10 @@ void DlgEditor::SetInsertObj( sal_uInt16 eObj )
 {
 	eActObj = eObj;
 	
-	if( GetView() )
-		GetView()->SetCurrentObj( eActObj, DlgInventor );	
+	if(GetView())
+    {
+        GetView()->setSdrObjectCreationInfo(SdrObjectCreationInfo(eActObj, DlgInventor));
+    }
 }
 
 //----------------------------------------------------------------------------
@@ -713,8 +715,7 @@ void DlgEditor::CreateDefaultObject()
 	// create object by factory
 	SdrObject* pObj = SdrObjFactory::MakeNewObject( 
 		GetView()->getSdrModelFromSdrView(),
-		GetView()->GetCurrentObjInventor(), 
-		GetView()->GetCurrentObjIdentifier());
+		GetView()->getSdrObjectCreationInfo());
 	DlgEdObj* pDlgEdObj = dynamic_cast< DlgEdObj* >( pObj );
 
 	if ( pDlgEdObj )

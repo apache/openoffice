@@ -402,7 +402,6 @@ void FuMorph::ImpInsertPolygons(List& rPolyPolyList3D, bool bAttributeFade,
 		const ::basegfx::B2DPolyPolygon& rPolyPoly3D = *(::basegfx::B2DPolyPolygon*)rPolyPolyList3D.GetObject(i);
     	SdrPathObj* pNewObj = new SdrPathObj(
 			*GetDoc(),
-			OBJ_POLY, 
 			rPolyPoly3D);
 
 		// Linienfarbe

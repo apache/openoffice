@@ -120,7 +120,7 @@ void FuConstructRectangle::DoExecute( SfxRequest& rReq )
 						pCenterX->GetValue() - (nWidth / 2), pCenterY->GetValue() - (nHeight / 2)));
 				SdrCircObj* pNewCircle = new SdrCircObj(
 					*GetDoc(),
-					OBJ_CIRC, 
+					CircleType_Circle, 
 					aObjTrans);
 
 				mpView->InsertObjectAtView(*pNewCircle, SDRINSERT_SETDEFLAYER | SDRINSERT_SETDEFATTR);
@@ -208,14 +208,18 @@ bool FuConstructRectangle::MouseButtonDown(const MouseEvent& rMEvt)
 		mpWindow->CaptureMouse();
 		sal_uInt16 nDrgLog = sal_uInt16 ( mpWindow->PixelToLogic(Size(DRGPIX,0)).Width() );
 
-		if (mpView->GetCurrentObjIdentifier() == OBJ_CAPTION)
+		if(OBJ_CAPTION == mpView->getSdrObjectCreationInfo().getIdent())
 		{
-			bReturn = mpView->BegCreateCaptionObj(aLogicPos, basegfx::B2DVector(846.0, 846.0), // (4x2)cm
-												(OutputDevice*) NULL, nDrgLog);
+			bReturn = mpView->BegCreateCaptionObj(
+                aLogicPos, 
+                basegfx::B2DVector(846.0, 846.0), // (4x2)cm
+				nDrgLog);
 		}
 		else
 		{
-			mpView->BegCreateObj(aLogicPos, (OutputDevice*) NULL, nDrgLog);
+			mpView->BegCreateObj(
+                aLogicPos, 
+                nDrgLog);
 		}
 
 		SdrObject* pObj = mpView->GetCreateObj();
@@ -322,7 +326,8 @@ bool FuConstructRectangle::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstructRectangle::Activate()
 {
-	SdrObjKind aObjKind;
+	SdrObjKind aObjKind(OBJ_NONE);
+    SdrPathObjType aSdrPathObjType(PathType_Line);
 
 	switch (nSlotId)
 	{
@@ -337,7 +342,8 @@ void FuConstructRectangle::Activate()
 			// keine break !
 		case SID_DRAW_LINE :
 		case SID_DRAW_XLINE:
-			aObjKind = OBJ_LINE;
+			aObjKind = OBJ_POLY;
+            aSdrPathObjType = PathType_Line;
 			break;
 
 		case SID_DRAW_MEASURELINE:
@@ -416,7 +422,10 @@ void FuConstructRectangle::Activate()
 		break;
 	}
 
-	mpView->SetCurrentObj((sal_uInt16)aObjKind);
+    SdrObjectCreationInfo aSdrObjectCreationInfo(static_cast< sal_uInt16 >(aObjKind));
+
+    aSdrObjectCreationInfo.setSdrPathObjType(aSdrPathObjType);
+	mpView->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 
 	FuConstruct::Activate();
 }
@@ -806,8 +815,7 @@ SdrObject* FuConstructRectangle::CreateDefaultObject(const sal_uInt16 nID, const
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		mpView->getSdrModelFromSdrView(),
-		mpView->GetCurrentObjInventor(), 
-		mpView->GetCurrentObjIdentifier());
+		mpView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

@@ -184,7 +184,7 @@ SdrObject* SdrTextObj::ImpConvertContainedTextToSdrPathObjs(bool bToPoly) const
 						aAttributeSet.Put(XFillStyleItem(XFILL_SOLID));
 
 						// create filled SdrPathObj
-						pPathObj = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHFILL, aPolyPolygon);
+						pPathObj = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPolygon);
 					}
 					else
 					{
@@ -195,7 +195,7 @@ SdrObject* SdrTextObj::ImpConvertContainedTextToSdrPathObjs(bool bToPoly) const
 						aAttributeSet.Put(XFillStyleItem(XFILL_NONE));
 
 						// create line SdrPathObj
-						pPathObj = new SdrPathObj(getSdrModelFromSdrObject(), OBJ_PATHLINE, aPolyPolygon);
+						pPathObj = new SdrPathObj(getSdrModelFromSdrObject(), aPolyPolygon);
 					}
 
 					// copy basic information from original
@@ -249,17 +249,15 @@ bool SdrTextObj::ImpCanConvTextToCurve() const
 
 SdrObject* SdrTextObj::ImpConvertMakeObj(const basegfx::B2DPolyPolygon& rPolyPolygon, bool bClosed, bool bBezier, bool bNoSetAttr) const
 {
-	SdrObjKind ePathKind = bClosed ? OBJ_PATHFILL : OBJ_PATHLINE;
 	basegfx::B2DPolyPolygon aB2DPolyPolygon(rPolyPolygon);
 
 	// #i37011#
 	if(!bBezier) 
 	{
 		aB2DPolyPolygon = basegfx::tools::adaptiveSubdivideByAngle(aB2DPolyPolygon);
-		ePathKind = bClosed ? OBJ_POLY : OBJ_PLIN;
 	}
 
-	SdrPathObj* pPathObj = new SdrPathObj(getSdrModelFromSdrObject(), ePathKind, aB2DPolyPolygon);
+	SdrPathObj* pPathObj = new SdrPathObj(getSdrModelFromSdrObject(), aB2DPolyPolygon);
 
 	if(bBezier) 
 	{

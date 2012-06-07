@@ -108,7 +108,7 @@ void FuConstructArc::DoExecute( SfxRequest& rReq )
 
 		SdrCircObj* pNewCircle = new SdrCircObj(
 			*GetDoc(),
-			(SdrObjKind)mpView->GetCurrentObjIdentifier(),
+			mpView->getSdrObjectCreationInfo().getSdrCircleObjType(),
 			aObjTrans,
 			fStart,
 			fEnd);
@@ -134,7 +134,7 @@ bool FuConstructArc::MouseButtonDown( const MouseEvent& rMEvt )
 
 		mpWindow->CaptureMouse();
 		const double fTolerance(basegfx::B2DVector(mpWindow->GetInverseViewTransformation() * basegfx::B2DVector(DRGPIX, 0.0)).getLength());
-		mpView->BegCreateObj(aLogicPos, (OutputDevice*) NULL, fTolerance);
+		mpView->BegCreateObj(aLogicPos, fTolerance);
 
 		SdrObject* pObj = mpView->GetCreateObj();
 
@@ -220,14 +220,14 @@ bool FuConstructArc::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstructArc::Activate()
 {
-	SdrObjKind aObjKind;
+    SdrCircleObjType aSdrCircleObjType(CircleType_Circle);
 
 	switch( nSlotId )
 	{
 		case SID_DRAW_ARC	   :
 		case SID_DRAW_CIRCLEARC:
 		{
-			aObjKind = OBJ_CARC;
+            aSdrCircleObjType = CircleType_Arc;
 		}
 		break;
 
@@ -236,7 +236,7 @@ void FuConstructArc::Activate()
 		case SID_DRAW_CIRCLEPIE 	  :
 		case SID_DRAW_CIRCLEPIE_NOFILL:
 		{
-			aObjKind = OBJ_SECT;
+            aSdrCircleObjType = CircleType_Sector;
 		}
 		break;
 
@@ -245,21 +245,23 @@ void FuConstructArc::Activate()
 		case SID_DRAW_CIRCLECUT 	   :
 		case SID_DRAW_CIRCLECUT_NOFILL :
 		{
-			aObjKind = OBJ_CCUT;
+            aSdrCircleObjType = CircleType_Segment;
 		}
 		break;
 
 		default:
 		{
-			aObjKind = OBJ_CARC;
+            aSdrCircleObjType = CircleType_Arc;
 		}
 		break;
 	}
 
-	mpView->SetCurrentObj((sal_uInt16)aObjKind);
+    SdrObjectCreationInfo aSdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_CIRC));
+
+    aSdrObjectCreationInfo.setSdrCircleObjType(aSdrCircleObjType);
+	mpView->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 
 	FuConstruct::Activate();
-//	FuDraw::Activate();
 }
 
 /*************************************************************************
@@ -290,8 +292,7 @@ SdrObject* FuConstructArc::CreateDefaultObject(const sal_uInt16 nID, const baseg
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		mpView->getSdrModelFromSdrView(),
-		mpView->GetCurrentObjInventor(), 
-		mpView->GetCurrentObjIdentifier());
+		mpView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

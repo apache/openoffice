@@ -465,7 +465,6 @@ void ImpSdrGDIMetaFileImport::InsertObj(SdrObject* pObj)
             {
                 pObj = new SdrPathObj(
                     mrModel,
-                    aNewPoly.isClosed() ? OBJ_POLY : OBJ_PLIN, 
                     aNewPoly);
             
 		        pObj->SetLayer(aOldLayer);
@@ -602,7 +601,6 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaLineAction& rAct)
 		{
 			SdrPathObj* pPath = new SdrPathObj(
                 mrModel,
-                OBJ_LINE, 
                 basegfx::B2DPolyPolygon(aLine));
 
             mnLineWidth = nNewLineWidth;
@@ -669,7 +667,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaEllipseAction& rAct)
 	const Rectangle& rRect(rAct.GetRect());
 	SdrCircObj* pCirc = new SdrCircObj(
         mrModel, 
-        OBJ_CIRC, 
+        CircleType_Circle, 
         maCurrent * basegfx::tools::createScaleTranslateB2DHomMatrix(
             rRect.getWidth(), rRect.getHeight(), 
             rRect.Left(), rRect.Top()));
@@ -712,7 +710,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaArcAction& rAct)
 
 	SdrCircObj* pCirc = new SdrCircObj(
 		mrModel, 
-		OBJ_CIRC, 
+		CircleType_Circle, 
 		maCurrent * basegfx::tools::createScaleTranslateB2DHomMatrix(
             rRect.getWidth(), rRect.getHeight(), 
             rRect.Left(), rRect.Top()),
@@ -735,7 +733,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaPieAction& rAct)
 
 	SdrCircObj* pCirc = new SdrCircObj(
 		mrModel, 
-		OBJ_SECT, 
+		CircleType_Sector, 
 		maCurrent * basegfx::tools::createScaleTranslateB2DHomMatrix(
             rRect.getWidth(), rRect.getHeight(), 
             rRect.Left(), rRect.Top()),
@@ -758,7 +756,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaChordAction& rAct)
 
 	SdrCircObj* pCirc = new SdrCircObj(
 		mrModel,
-		OBJ_CCUT, 
+		CircleType_Segment, 
 		maCurrent * basegfx::tools::createScaleTranslateB2DHomMatrix(
             rRect.getWidth(), rRect.getHeight(), 
             rRect.Left(), rRect.Top()),
@@ -921,7 +919,6 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaPolyLineAction& rAct )
 	    {
             SdrPathObj* pPath = new SdrPathObj(
                 mrModel,
-			    aSource.isClosed() ? OBJ_POLY : OBJ_PLIN,
 			    basegfx::B2DPolyPolygon(aSource));
 		
             mnLineWidth = nNewLineWidth;
@@ -960,7 +957,6 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaPolygonAction& rAct)
 
             SdrPathObj* pPath = new SdrPathObj(
                 mrModel, 
-                OBJ_POLY, 
                 basegfx::B2DPolyPolygon(aSource));
 			
             SetAttributes(pPath);
@@ -986,7 +982,6 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaPolyPolygonAction& rAct)
 			
             SdrPathObj* pPath = new SdrPathObj(
                 mrModel, 
-                OBJ_POLY, 
                 aSource);
 			
             SetAttributes(pPath);
@@ -1185,7 +1180,6 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaHatchAction& rAct )
 			const Hatch& rHatch = rAct.GetHatch();
 			SdrPathObj* pPath = new SdrPathObj(
                 mrModel, 
-                OBJ_POLY, 
                 aSource);
 			SfxItemSet aHatchAttr(pPath->GetObjectItemPool(),
 				XATTR_FILLSTYLE, XATTR_FILLSTYLE,
@@ -1260,7 +1254,6 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaCommentAction& rAct, GDIMetaFile* pM
 					const Gradient&	rGrad = pAct->GetGradient();
 					SdrPathObj* pPath = new SdrPathObj(
                         mrModel, 
-                        OBJ_POLY, 
                         aSource);
 					SfxItemSet aGradAttr(pPath->GetObjectItemPool(),
 					   XATTR_FILLSTYLE, XATTR_FILLSTYLE,
@@ -1506,7 +1499,6 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaTransparentAction& rAct)
 
         SdrPathObj* pPath = new SdrPathObj(
             mrModel,
-            OBJ_POLY, 
             aSource);
 
         SetAttributes(pPath);
@@ -1544,7 +1536,6 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaGradientExAction& rAct)
         	const Gradient& rGradient = rAct.GetGradient();
             SdrPathObj* pPath = new SdrPathObj(
                 mrModel,
-                OBJ_POLY, 
                 aSource);
 			SfxItemSet aGradientAttr(mrModel.GetItemPool(), XATTR_FILLSTYLE, XATTR_FILLSTYLE, XATTR_FILLGRADIENT, XATTR_FILLGRADIENT, 0, 0);
             XGradientStyle aXGradientStyle(XGRAD_LINEAR);

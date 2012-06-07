@@ -273,42 +273,37 @@ void FuConstructBezierPolygon::Activate()
 	mpView->EnableExtendedMouseEventDispatcher(true);
 	bool bCreateFreehandMode(false);
 	SdrPathObjType aSdrPathObjType(PathType_OpenPolygon);
-	SdrObjKind eKind;
 
 	switch (nSlotId)
 	{
 		case SID_DRAW_POLYGON_NOFILL:
 		case SID_DRAW_XPOLYGON_NOFILL:
 		{
-			eKind = OBJ_PLIN;
+            aSdrPathObjType = PathType_OpenPolygon;
 		}
 		break;
 
 		case SID_DRAW_POLYGON:
 		case SID_DRAW_XPOLYGON:
 		{
-			eKind = OBJ_POLY;
 			aSdrPathObjType = PathType_ClosedPolygon;
 		}
 		break;
 
 		case SID_DRAW_BEZIER_NOFILL:
 		{
-			eKind = OBJ_PATHLINE;
 			aSdrPathObjType = PathType_OpenBezier;
 		}
 		break;
 
 		case SID_DRAW_BEZIER_FILL:
 		{
-			eKind = OBJ_PATHFILL;
 			aSdrPathObjType = PathType_ClosedBezier;
 		}
 		break;
 
 		case SID_DRAW_FREELINE_NOFILL:
 		{
-			eKind = OBJ_FREELINE;
 			aSdrPathObjType = PathType_OpenBezier;
 			bCreateFreehandMode = true;
 		}
@@ -316,7 +311,6 @@ void FuConstructBezierPolygon::Activate()
 
 		case SID_DRAW_FREELINE:
 		{
-			eKind = OBJ_FREEFILL;
 			aSdrPathObjType = PathType_ClosedBezier;
 			bCreateFreehandMode = true;
 		}
@@ -324,15 +318,16 @@ void FuConstructBezierPolygon::Activate()
 
 		default:
 		{
-			eKind = OBJ_PATHLINE;
 			aSdrPathObjType = PathType_OpenBezier;
 		}
 		break;
 	}
 
-	mpView->SetCurrentObj((sal_uInt16)eKind);
-	mpView->setCreateFreehandMode(bCreateFreehandMode);
-	mpView->setTargetSdrPathObjType(aSdrPathObjType);
+    SdrObjectCreationInfo aSdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_POLY));
+
+    aSdrObjectCreationInfo.setSdrPathObjType(aSdrPathObjType);
+    aSdrObjectCreationInfo.setFreehandMode(bCreateFreehandMode);
+	mpView->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 
 	FuConstruct::Activate();
 }
@@ -398,8 +393,7 @@ SdrObject* FuConstructBezierPolygon::CreateDefaultObject(const sal_uInt16 nID, c
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		mpView->getSdrModelFromSdrView(),
-		mpView->GetCurrentObjInventor(), 
-		mpView->GetCurrentObjIdentifier());
+		mpView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

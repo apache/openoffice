@@ -90,7 +90,7 @@ GraphCtrl::GraphCtrl( Window* pParent, const WinBits nWinBits ) :
 			Control			( pParent, nWinBits ),
             SfxListener     ( ),
 			aMap100			( MAP_100TH_MM ),
-            eObjKind        ( OBJ_NONE ),
+            maSdrObjectCreationInfo(OBJ_NONE),
 			nPolyEdit		( 0 ),
 			bEditMode		( sal_False ),
 			bSdrMode		( sal_False ),
@@ -119,7 +119,7 @@ GraphCtrl::GraphCtrl( Window* pParent, const ResId& rResId ) :
             SfxListener     ( ),
 			aMap100			( MAP_100TH_MM ),
             nWinStyle       ( 0 ),
-            eObjKind        ( OBJ_NONE ),
+            maSdrObjectCreationInfo(OBJ_NONE),
 			nPolyEdit		( 0 ),
             bEditMode       ( sal_False ),
             bSdrMode        ( sal_False ),
@@ -884,8 +884,8 @@ void GraphCtrl::SetEditMode( const sal_Bool _bEditMode )
 	{
         bEditMode = _bEditMode;
 		pView->SetViewEditMode(bEditMode ? SDREDITMODE_EDIT : SDREDITMODE_CREATE);
-        eObjKind = OBJ_NONE;
-		pView->SetCurrentObj( sal::static_int_cast< sal_uInt16 >( eObjKind ) );
+        maSdrObjectCreationInfo.setIdent(OBJ_NONE);
+		pView->setSdrObjectCreationInfo(maSdrObjectCreationInfo);
 	}
 	else
 		bEditMode = sal_False;
@@ -916,17 +916,19 @@ void GraphCtrl::SetPolyEditMode( const sal_uInt16 _nPolyEdit )
 |*
 \************************************************************************/
 
-void GraphCtrl::SetObjKind( const SdrObjKind _eObjKind )
+void GraphCtrl::setSdrObjectCreationInfo( const SdrObjectCreationInfo& rSdrObjectCreationInfo )
 {
 	if ( bSdrMode )
 	{
         bEditMode = false;
-		pView->SetViewEditMode(bEditMode ? SDREDITMODE_EDIT : SDREDITMODE_CREATE);
-        eObjKind = _eObjKind;
-		pView->SetCurrentObj( sal::static_int_cast< sal_uInt16 >( eObjKind ) );
+		pView->SetViewEditMode(SDREDITMODE_CREATE);
+        maSdrObjectCreationInfo = rSdrObjectCreationInfo;
+		pView->setSdrObjectCreationInfo(maSdrObjectCreationInfo);
 	}
 	else
-		eObjKind = OBJ_NONE;
+    {
+        maSdrObjectCreationInfo.setIdent(OBJ_NONE);
+    }
 }
 
 

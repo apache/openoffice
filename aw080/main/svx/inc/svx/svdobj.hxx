@@ -44,6 +44,7 @@
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <svx/svdpool.hxx>
 #include <boost/utility.hpp>
+#include <svx/unoprov.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -87,18 +88,18 @@ enum SdrObjKind
 {
 	OBJ_NONE = 0   ,  //            Abstraktes Objekt (SdrObject)
 	OBJ_GRUP       ,  //            Objektgruppe
-	OBJ_LINE       ,  // OBJ_POLY   Strecke
+//	OBJ_LINE       ,  // OBJ_POLY   Strecke
 	OBJ_RECT       ,  //            Rechteck ww. mit runden Ecken
 	OBJ_CIRC       ,  //            Kreis, Ellipse
-	OBJ_SECT       ,  // OBJ_CIRC   Kreissektor
-	OBJ_CARC       ,  // OBJ_CIRC   Kreisbogen
-	OBJ_CCUT       ,  // OBJ_CIRC   Kreisabschnitt
+//	OBJ_SECT       ,  // OBJ_CIRC   Kreissektor
+//	OBJ_CARC       ,  // OBJ_CIRC   Kreisbogen
+//	OBJ_CCUT       ,  // OBJ_CIRC   Kreisabschnitt
 	OBJ_POLY       ,  //            Polygon, PolyPolygon
-	OBJ_PLIN       ,  // OBJ_POLY   PolyLine
-	OBJ_PATHLINE   ,  // OBJ_POLY   Offene Bezierkurve
-	OBJ_PATHFILL   ,  // OBJ_POLY   Geschlossene Bezierkurve
-	OBJ_FREELINE   ,  //            Offene Freihandlinie
-	OBJ_FREEFILL   ,  //            Geschlossene Freihandlinie
+//	OBJ_PLIN       ,  // OBJ_POLY   PolyLine
+//	OBJ_PATHLINE   ,  // OBJ_POLY   Offene Bezierkurve
+//	OBJ_PATHFILL   ,  // OBJ_POLY   Geschlossene Bezierkurve
+//	OBJ_FREELINE   ,  // OBJ_POLY   Offene Freihandlinie
+//	OBJ_FREEFILL   ,  // OBJ_POLY   Geschlossene Freihandlinie
 	OBJ_TEXT       ,  //            Textobjekt
 	OBJ_TITLETEXT  ,  //            Titeltext. Spezial-Textobjekt fuer StarDraw
 	OBJ_OUTLINETEXT,  //            OutlineText. Spezial-Textobjekt fuer StarDraw
@@ -106,8 +107,8 @@ enum SdrObjKind
 	OBJ_OLE2       ,  //            OLE-Objekt
 	OBJ_EDGE       ,  //            Verbindungsobjekt fuer Konnektoren
 	OBJ_CAPTION    ,  //            Legendenobjekt
-	OBJ_PATHPOLY   ,  //            Polygon/PolyPolygon dargestellt durch SdrPathObj
-	OBJ_PATHPLIN   ,  //            Polyline dargestellt durch SdrPathObj
+//	OBJ_PATHPOLY   ,  // Needed?    Polygon/PolyPolygon dargestellt durch SdrPathObj
+//	OBJ_PATHPLIN   ,  // Needed?    Polyline dargestellt durch SdrPathObj
 	OBJ_PAGE       ,  //            Objekt, das eine SdrPage darstellt
 	OBJ_MEASURE    ,  //            Bemassungsobjekt
 	OBJ_FRAME      ,  //            staendig aktives OLE (PlugIn-Frame oder sowas)
@@ -866,36 +867,6 @@ public:
 typedef tools::WeakReference< SdrObject > SdrObjectWeakRef;
 #define deleteSdrObjectSafeAndClearPointer(Obj) { SdrObject::deleteSafe(Obj); Obj = 0; }
 #define deleteSdrObjectSafe(Obj) { SdrObject::deleteSafe(Obj); }
-
-//////////////////////////////////////////////////////////////////////////////
-
-class SVX_DLLPUBLIC SdrObjFactory
-{
-public:
-	SdrModel*						mpTargetModel;
-	sal_uInt32						mnInventor;
-	sal_uInt16						mnIdentifier;
-
-	// fuer MakeNewObj():
-	SdrObject*						mpNewObj;
-
-	// fuer MakeNewObjUserData():
-	SdrObject*						mpObj;
-	SdrObjUserData*					mpNewData;
-
-private:
-	SVX_DLLPRIVATE SdrObjFactory(SdrModel& rTargetModel, sal_uInt32 nInvent, sal_uInt16 nIdent);
-	SVX_DLLPRIVATE SdrObjFactory(sal_uInt32 nInvent, sal_uInt16 nIdent, SdrObject& rObj1);
-
-public:
-	static SdrObject* MakeNewObject(SdrModel& rTargetModel, sal_uInt32 nInvent, sal_uInt16 nIdent);
-	static void InsertMakeObjectHdl(const Link& rLink);
-	static void RemoveMakeObjectHdl(const Link& rLink);
-
-	static SdrObjUserData* MakeNewObjUserData(sal_uInt32 nInvent, sal_uInt16 nIdent, SdrObject& rObj);
-	static void InsertMakeUserDataHdl(const Link& rLink);
-	static void RemoveMakeUserDataHdl(const Link& rLink);
-};
 
 //////////////////////////////////////////////////////////////////////////////
 

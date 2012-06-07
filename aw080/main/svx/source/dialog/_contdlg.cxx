@@ -762,14 +762,14 @@ IMPL_LINK( SvxSuperContourDlg, Tbx1ClickHdl, ToolBox*, pTbx )
 		case( TBI_RECT ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			aContourWnd.SetObjKind( OBJ_RECT );
+			aContourWnd.setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_RECT));
 		}
 		break;
 
 		case( TBI_CIRCLE ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			aContourWnd.SetObjKind( OBJ_CIRC );
+			aContourWnd.setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_CIRC));
 
 		}
 		break;
@@ -777,14 +777,20 @@ IMPL_LINK( SvxSuperContourDlg, Tbx1ClickHdl, ToolBox*, pTbx )
 		case( TBI_POLY ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			aContourWnd.SetObjKind( OBJ_POLY );
+			aContourWnd.setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_POLY));
 		}
 		break;
 
 		case( TBI_FREEPOLY ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			aContourWnd.SetObjKind( OBJ_FREEFILL );
+            
+            SdrObjectCreationInfo aSdrObjectCreationInfo(OBJ_POLY);
+
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_ClosedBezier);
+            aSdrObjectCreationInfo.setFreehandMode(true);
+
+			aContourWnd.setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 		}
 		break;
 

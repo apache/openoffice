@@ -65,15 +65,17 @@ void SwBaseShell::InsertURLButton(const String& rURL, const String& rTarget, con
 	SdrView *pSdrView = rSh.GetDrawView();
 
 	// OBJ_FM_BUTTON
+    const SdrObjectCreationInfo aSdrObjectCreationInfo(OBJ_FM_BUTTON, FmFormInventor);
     pSdrView->SetDesignMode(true);
-	pSdrView->SetCurrentObj(OBJ_FM_BUTTON);
+	pSdrView->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 	pSdrView->SetViewEditMode(SDREDITMODE_CREATE);
 
 	const basegfx::B2DPoint aStartPos(rSh.GetCharRect().Pos().X(), rSh.GetCharRect().Pos().Y() + 1.0);
 
 	rSh.StartAction();
     rSh.StartUndo( UNDO_UI_INSERT_URLBTN );
-	if (rSh.BeginCreate(OBJ_FM_BUTTON, FmFormInventor, aStartPos))
+	
+    if (rSh.BeginCreate(aSdrObjectCreationInfo, aStartPos))
 	{
 		pSdrView->SetOrthogonal(false);
 		const basegfx::B2DVector aObjSize(

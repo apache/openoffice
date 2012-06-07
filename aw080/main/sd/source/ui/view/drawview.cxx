@@ -103,7 +103,7 @@ DrawView::DrawView( DrawDocShell* pDocSh, OutputDevice* pOutDev, DrawViewShell* 
 , mpVDev(NULL)
 , mnPOCHSmph(0)
 {
-	SetCurrentObj(OBJ_RECT, SdrInventor);
+	setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_RECT), SdrInventor));
 }
 
 /*************************************************************************

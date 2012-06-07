@@ -1758,7 +1758,7 @@ bool SvxTableController::StopTextEdit()
 	if(mpView->IsTextEdit())
 	{
 		mpView->SdrEndTextEdit();
-		mpView->SetCurrentObj(OBJ_TABLE);
+		mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TABLE)));
 		mpView->SetViewEditMode(SDREDITMODE_EDIT);
 		return true;
 	}

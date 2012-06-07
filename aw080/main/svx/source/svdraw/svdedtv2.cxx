@@ -732,13 +732,13 @@ void SdrEditView::ImpCopyAttributes(const SdrObject* pSource, SdrObject* pDest) 
 
 bool SdrEditView::ImpCanConvertForCombine1(const SdrObject* pObj) const
 {
-	// #69711 : new condition IsLine() to be able to combine simple Lines
+	// #69711 : new condition isLine() to be able to combine simple Lines
 	bool bIsLine(false);
 	const SdrPathObj* pPath = dynamic_cast< const SdrPathObj* >(pObj);
 
 	if(pPath)
 	{
-		bIsLine = pPath->IsLine();
+		bIsLine = pPath->isLine();
 	}
 
 	SdrObjTransformInfoRec aInfo;
@@ -1339,7 +1339,7 @@ void SdrEditView::MergeMarkedObjects(SdrMergeMode eMode)
 		// #i73441# check insert list before taking actions
 		if(pInsOL)
 		{
-			SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), OBJ_PATHFILL, aMergePolyPolygonA);
+			SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), aMergePolyPolygonA);
 
 			ImpCopyAttributes(pAttrObj, pPath);
 			pInsOL->InsertObjectToSdrObjList(*pPath, nInsPos);
@@ -1488,8 +1488,6 @@ void SdrEditView::CombineMarkedObjects(bool bNoPolyPoly)
 
 	    if(nPolyCount) 
 	    {
-		    SdrObjKind eKind = OBJ_PATHFILL;
-
 		    if(nPolyCount > 1L) 
 		    {
 			    aPolyPolygon.setClosed(true);
@@ -1500,11 +1498,7 @@ void SdrEditView::CombineMarkedObjects(bool bNoPolyPoly)
 			    const basegfx::B2DPolygon aPolygon(aPolyPolygon.getB2DPolygon(0L));
 			    const sal_uInt32 nPointCount(aPolygon.count());
 			
-				if(nPointCount <= 2) 
-			    {
-				    eKind = OBJ_PATHLINE;
-			    }
-			    else 
+				if(nPointCount > 2) 
 			    {
 				    if(!aPolygon.isClosed())
 				    {
@@ -1517,15 +1511,11 @@ void SdrEditView::CombineMarkedObjects(bool bNoPolyPoly)
 					    {
 						    aPolyPolygon.setClosed(true);
 					    }
-					    else
-					    {
-						    eKind = OBJ_PATHLINE;
-					    }
 				    }
 			    }
 		    }
 
-			SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), eKind,aPolyPolygon);
+			SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), aPolyPolygon);
 
     		// Attribute des untersten Objekts
 	    	ImpCopyAttributes(pAttrObj, pPath);
@@ -1537,7 +1527,7 @@ void SdrEditView::CombineMarkedObjects(bool bNoPolyPoly)
     		// #110635#
 	    	// Take fill style/closed state of pAttrObj in account when deciding to change the line style
 			const SdrPathObj* pSdrPathObj = dynamic_cast< const SdrPathObj* >(pAttrObj);
-			const bool bIsClosedPathObj(pSdrPathObj && pSdrPathObj->IsClosed());
+			const bool bIsClosedPathObj(pSdrPathObj && pSdrPathObj->isClosed());
 
 		    if(XLINE_NONE == eLineStyle && (XFILL_NONE == eFillStyle || !bIsClosedPathObj))
 		    {
@@ -1664,8 +1654,8 @@ bool SdrEditView::ImpCanDismantle(const SdrObject* pObj, bool bMakeLines) const
 			SdrObjTransformInfoRec aInfo;
 			pObj->TakeObjInfo(aInfo);
 
-			// #69711 : new condition IsLine() to be able to break simple Lines
-			if(!(aInfo.mbCanConvToPath || aInfo.mbCanConvToPoly) && !pPath->IsLine()) 
+			// #69711 : new condition isLine() to be able to break simple Lines
+            if(!(aInfo.mbCanConvToPath || aInfo.mbCanConvToPoly) && !pPath->isLine()) 
 			{
 				// Passiert z.B. im Falle Fontwork (Joe, 28-11-95)
 				bOtherObjs = true; 
@@ -1707,7 +1697,7 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 
 			if(!bMakeLines || nPointCount < 2)
 			{
-				SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), (SdrObjKind)pSrcPath->GetObjIdentifier(), basegfx::B2DPolyPolygon(rCandidate));
+				SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), basegfx::B2DPolyPolygon(rCandidate));
 				ImpCopyAttributes(pSrcPath, pPath);
 				pLast = pPath;
 				rOL.InsertObjectToSdrObjList(*pPath, rPos);
@@ -1726,7 +1716,6 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 
 				for(sal_uInt32 b(0); b < nLoopCount; b++)
 				{
-					SdrObjKind eKind(OBJ_PLIN);
 					basegfx::B2DPolygon aNewPolygon;
 					const sal_uInt32 nNextIndex((b + 1) % nPointCount);
 
@@ -1738,14 +1727,13 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 							rCandidate.getNextControlPoint(b),
 							rCandidate.getPrevControlPoint(nNextIndex),
 							rCandidate.getB2DPoint(nNextIndex));
-						eKind = OBJ_PATHLINE;
 					}
 					else
 					{
 						aNewPolygon.append(rCandidate.getB2DPoint(nNextIndex));
 					}
 
-					SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), eKind, basegfx::B2DPolyPolygon(aNewPolygon));
+					SdrPathObj* pPath = new SdrPathObj(getSdrModelFromSdrView(), basegfx::B2DPolyPolygon(aNewPolygon));
 					ImpCopyAttributes(pSrcPath, pPath);
 					pLast = pPath;
 					rOL.InsertObjectToSdrObjList(*pPath, rPos);
@@ -1800,7 +1788,8 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
 				{
 					// #i37011# also create a text object and add at rPos + 1
 					SdrTextObj* pTextObj = (SdrTextObj*)SdrObjFactory::MakeNewObject(
-						getSdrModelFromSdrView(), pCustomShape->GetObjInventor(), OBJ_TEXT);
+						getSdrModelFromSdrView(), 
+                        SdrObjectCreationInfo(OBJ_TEXT, pCustomShape->GetObjInventor()));
 
 					// Copy text content
 					OutlinerParaObject* pParaObj = pCustomShape->GetOutlinerParaObject();

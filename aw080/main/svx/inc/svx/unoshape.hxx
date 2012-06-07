@@ -51,15 +51,18 @@
 #include "svx/svxdllapi.h"
 #include <rtl/ref.hxx>
 #include <com/sun/star/uno/Any.hxx>
-
 #include <svx/svdouno.hxx>
-
 #include <comphelper/servicehelper.hxx>
-
 #include <cppuhelper/implbase1.hxx>
 #include <cppuhelper/implbase12.hxx>
-
 #include <svx/unoprov.hxx>
+#include <editeng/unotext.hxx>
+#include <com/sun/star/drawing/XShapes.hpp>
+#include <com/sun/star/drawing/XShapeGroup.hpp>
+#include <com/sun/star/container/XIndexAccess.hpp>
+#include <com/sun/star/drawing/XConnectorShape.hpp>
+#include <com/sun/star/drawing/XControlShape.hpp>
+#include <basegfx/polygon/b2dpolypolygon.hxx>
 
 class SfxItemSet;
 class SdrModel;
@@ -101,6 +104,44 @@ typedef ::cppu::WeakAggImplHelper12<
     ::com::sun::star::lang::XServiceInfo,
     ::com::sun::star::document::XActionLockable,
     ::com::sun::star::beans::XMultiPropertyStates> SvxShape_UnoImplHelper;
+
+enum SvxShapeKind
+{
+    // values with direct mapping to SdrObjKind
+    SvxShapeKind_None,              // OBJ_NONE
+    SvxShapeKind_Group,             // OBJ_GRUP
+    SvxShapeKind_Rectangle,         // OBJ_RECT
+    SvxShapeKind_Circle,            // OBJ_CIRC
+    SvxShapeKind_Path,              // OBJ_POLY and removed old ones (OBJ_LINE, OBJ_PLIN, OBJ_PATHLINE, OBJ_PATHFILL, OBJ_FREELINE, OBJ_FREEFILL, OBJ_PATHPOLY, OBJ_PATHPLIN)
+    SvxShapeKind_Text,              // OBJ_TEXT, OBJ_TITLETEXT, OBJ_OUTLINETEXT
+    SvxShapeKind_Graphic,           // OBJ_GRAF
+    SvxShapeKind_OLE2,              // OBJ_OLE2
+    SvxShapeKind_Connector,         // OBJ_EDGE
+    SvxShapeKind_Caption,           // OBJ_CAPTION
+    SvxShapeKind_Page,              // OBJ_PAGE
+    SvxShapeKind_Measure,           // OBJ_MEASURE
+    SvxShapeKind_Frame,             // OBJ_FRAME
+    SvxShapeKind_Control,           // OBJ_UNO
+    SvxShapeKind_Customshape,       // OBJ_CUSTOMSHAPE
+    SvxShapeKind_Media,             // OBJ_MEDIA
+    SvxShapeKind_Table,             // OBJ_TABLE
+
+    // values special handling
+    SvxShapeKind_Applet,            // OBJ_OLE2_APPLET but special SvxAppletShape
+    SvxShapeKind_Plugin,            // OBJ_OLE2_PLUGIN but special SvxPluginShape
+
+    // 3D shapes, mappings to E3D_*_ID
+    SvxShapeKind_3DScene,           // E3D_SCENE_ID
+    SvxShapeKind_3DCube,            // E3D_CUBEOBJ_ID
+    SvxShapeKind_3DSphere,          // E3D_SPHEREOBJ_ID
+    SvxShapeKind_3DExtrude,         // E3D_EXTRUDEOBJ_ID
+    SvxShapeKind_3DLathe,           // E3D_LATHEOBJ_ID
+    SvxShapeKind_3DPolygon,         // E3D_POLYGONOBJ_ID
+};
+
+// converter
+SvxShapeKind SVX_DLLPUBLIC SdrObjectCreatorInventorToSvxShapeKind(sal_uInt16 nIdent, sal_uInt32 nInvent);
+void SvxShapeKindToSdrObjectCreatorInventor(SvxShapeKind aSvxShapeKind, sal_uInt16& nIdent, sal_uInt32& nInvent);
 
 class SVX_DLLPUBLIC SvxShape : public SvxShape_UnoImplHelper,
                  public SfxListener,
@@ -155,9 +196,8 @@ protected:
 	/** used from the XActionLockable interface */
 	sal_uInt16 mnLockCount;
 
-    const SfxItemPropertyMapEntry* getPropertyMapEntries() const { return maPropMapEntries; }
+    virtual const SfxItemPropertyMapEntry* getPropertyMapEntries() const;
 
-	void updateShapeKind();
 	void endSetPropertyValues();
 
 	// overide these for special property handling in subcasses. Return true if property is handled
@@ -192,8 +232,8 @@ public:
 
     ::svx::PropertyChangeNotifier& getShapePropertyChangeNotifier();
 
-	void setShapeKind( sal_uInt32 nKind );
-	sal_uInt32 getShapeKind() const;
+	void setSvxShapeKind(SvxShapeKind eKind);
+	SvxShapeKind getSvxShapeKind() const;
 
 	// styles need this
 	static sal_Bool SAL_CALL SetFillAttribute( sal_Int32 nWID, const ::rtl::OUString& rName, SfxItemSet& rSet, SdrModel* pModel );
@@ -319,8 +359,6 @@ private:
     SVX_DLLPRIVATE void impl_construct();
 };
 
-#include <editeng/unotext.hxx>
-
 class SVX_DLLPUBLIC SvxShapeText : public SvxShape, public SvxUnoTextBase
 {
 protected:
@@ -388,9 +426,6 @@ public:
 	// XServiceInfo
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
 };
-#include <com/sun/star/drawing/XShapes.hpp>
-#include <com/sun/star/drawing/XShapeGroup.hpp>
-#include <com/sun/star/container/XIndexAccess.hpp>
 
 /***********************************************************************
 *                                                                      *
@@ -446,7 +481,6 @@ public:
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw(::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException);
 };
-#include <com/sun/star/drawing/XConnectorShape.hpp>
 
 /***********************************************************************
 *                                                                      *
@@ -486,7 +520,6 @@ public:
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw(::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException);
 };
-#include <com/sun/star/drawing/XControlShape.hpp>
 
 /***********************************************************************
 *                                                                      *
@@ -570,6 +603,7 @@ public:
 // #i118485# changed parent to SvxShapeText to allow Text handling over UNO API
 class SVX_DLLPUBLIC SvxOle2Shape : public SvxShapeText
 {
+private:
 protected:
     // overide these for special property handling in subcasses. Return true if property is handled
     virtual bool setPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, const ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
@@ -591,62 +625,33 @@ public:
 	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 };
 
-
-#include <basegfx/polygon/b2dpolypolygon.hxx>
-
 /***********************************************************************
 *                                                                      *
 ***********************************************************************/
 class SvxShapePolyPolygon : public SvxShapeText
 {
 private:
-	::com::sun::star::drawing::PolygonKind mePolygonKind;
+    // quick test if this is a bezier based polygon
+    bool isBezierBased() const;
 
 protected:
     using SvxUnoTextRangeBase::setPropertyValue;
     using SvxUnoTextRangeBase::getPropertyValue;
 
-	// overide these for special property handling in subcasses. Return true if property is handled
+    // depends on polygon type, need to solve this dynamically
+    virtual const SfxItemPropertyMapEntry* getPropertyMapEntries() const;
+
+    // overide these for special property handling in subcasses. Return true if property is handled
     virtual bool setPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, const ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
     virtual bool getPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
 
 public:
-	SvxShapePolyPolygon( SdrObject* pObj , ::com::sun::star::drawing::PolygonKind eNew = com::sun::star::drawing::PolygonKind_LINE ) throw(com::sun::star::lang::IllegalArgumentException, com::sun::star::beans::PropertyVetoException);
+	SvxShapePolyPolygon( SdrObject* pObj ) throw(com::sun::star::lang::IllegalArgumentException, com::sun::star::beans::PropertyVetoException);
 	virtual ~SvxShapePolyPolygon() throw();
 
 	// Local support functions
 	::com::sun::star::drawing::PolygonKind GetPolygonKind() const throw();
 	void SetPolygon(const basegfx::B2DPolyPolygon& rNew) throw();
-	basegfx::B2DPolyPolygon GetPolygon() const throw();
-
-	// XServiceInfo
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
-};
-
-/***********************************************************************
-*                                                                      *
-***********************************************************************/
-
-class SvxShapePolyPolygonBezier : public SvxShapeText
-{
-private:
-	::com::sun::star::drawing::PolygonKind mePolygonKind;
-
-protected:
-    using SvxUnoTextRangeBase::setPropertyValue;
-    using SvxUnoTextRangeBase::getPropertyValue;
-
-public:
-	// overide these for special property handling in subcasses. Return true if property is handled
-    virtual bool setPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, const ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual bool getPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-
-	SvxShapePolyPolygonBezier( SdrObject* pObj , ::com::sun::star::drawing::PolygonKind eNew = com::sun::star::drawing::PolygonKind_PATHLINE) throw();
-	virtual ~SvxShapePolyPolygonBezier() throw();
-
-	// Local support functions
-	::com::sun::star::drawing::PolygonKind GetPolygonKind() const throw();
-	void SetPolygon(const basegfx::B2DPolyPolygon & rNew) throw();
 	basegfx::B2DPolyPolygon GetPolygon() const throw();
 
 	// XServiceInfo

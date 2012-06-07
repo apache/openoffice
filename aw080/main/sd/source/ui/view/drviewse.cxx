@@ -1575,7 +1575,8 @@ void DrawViewShell::InsertURLButton(const String& rURL, const String& rText, con
     if (bNewObj) try
     {
         SdrUnoObj* pUnoCtrl = static_cast< SdrUnoObj* >(SdrObjFactory::MakeNewObject(
-			*GetDoc(), FmFormInventor, OBJ_FM_BUTTON)); 
+			*GetDoc(), 
+            SdrObjectCreationInfo(OBJ_FM_BUTTON, FmFormInventor))); 
 
         Reference< awt::XControlModel > xControlModel( pUnoCtrl->GetUnoControlModel(), uno::UNO_QUERY_THROW );
 		Reference< beans::XPropertySet > xPropSet( xControlModel, uno::UNO_QUERY_THROW );

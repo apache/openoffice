@@ -197,16 +197,6 @@ protected:
     bool						mbHideDraw : 1;             // hide draw objects other than form controls
     bool						mbHideFormControl : 1;      // hide form controls only
 
-	/// defines if SdrPathObj interactive creation is in freehand mode. Default
-	/// is false
-	bool						mbCreateFreehandMode : 1;
-
-	/// target SdrPathObjType for interactive path construction, default is PathType_Line
-	SdrPathObjType				maSdrPathObjType;
-
-	/// target SDrCircleObjType for interactive circle construction, default is CircleType_Circle
-	SdrCircleObjType			maSdrCircleObjType;
-
 	svtools::ColorConfig            maColorConfig;
 	Color							maGridColor;
 
@@ -245,15 +235,6 @@ protected:
 
 	SVX_DLLPRIVATE const OutputDevice* GetActualOutDev() const { return mpActualOutDev; }
 
-	/// reset mbCreateFreehandMode, maSdrPathObjType and maSdrCircleObjType
-	/// to defaults
-	void ResetCreationParameters()
-	{
-		mbCreateFreehandMode = false;
-		maSdrPathObjType = PathType_Line;
-		maSdrCircleObjType = CircleType_Circle;
-	}
-
 public:
 	void GlueInvalidate() const;
 
@@ -272,18 +253,6 @@ public:
 	// allow page painting at all?
 	bool IsPagePaintingAllowed() const;
 	void SetPagePaintingAllowed(bool bNew);
-
-	/// define or ask if freehand creation is active
-	bool getCreateFreehandMode() const { return mbCreateFreehandMode; }
-	void setCreateFreehandMode(bool bNew) { mbCreateFreehandMode = bNew; }
-
-	/// define or ask for target SdrPathObj type for interactive construction
-	SdrPathObjType getTargetSdrPathObjType() const { return maSdrPathObjType; }
-	void setTargetSdrPathObjType(SdrPathObjType eNew) { maSdrPathObjType = eNew; }
-
-	/// define or ask for target SdrCircObj type for interactive construction
-	SdrCircleObjType getTargetSdrCircleObjType() const { return maSdrCircleObjType; }
-	void setTargetSdrCircleObjType(SdrCircleObjType eNew) { maSdrCircleObjType = eNew; }
 
 	sal_uInt32 PaintWindowCount() const { return maPaintWindows.size(); }
 	SdrPaintWindow* FindPaintWindow(const OutputDevice& rOut) const;

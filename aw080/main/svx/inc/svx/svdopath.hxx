@@ -41,7 +41,6 @@ class SdrPathObjGeoData : public SdrObjGeoData
 {
 public:
 	basegfx::B2DPolyPolygon	maPathPolygon;
-	SdrObjKind					meKind;
 
 	SdrPathObjGeoData();
 	virtual ~SdrPathObjGeoData();
@@ -74,17 +73,13 @@ protected:
 	// the geometry data in object coordinates. This means that it is not
 	// in normalized form. To get it in normalized form You need to transform
 	// with the inverse of the object matrix
-    basegfx::B2DPolyPolygon	maPathPolygon;
-
-	// classic object kind (may change at this object)
-	SdrObjKind					meKind;
+    basegfx::B2DPolyPolygon     maPathPolygon;
 
 	// for isolation of old Drag/Create code
 	ImpPathForDragAndCreate*	mpDAC;
 
 	// helpers for GET/SET/INS/etc. PNT
-	void ImpSetClosed(sal_Bool bClose);
-	void ImpForceKind();
+	void ImpSetClosed(bool bClose);
 	void ImpForceLineWink();
 	ImpPathForDragAndCreate& impGetDAC(const SdrView& rView) const;
 	void impDeleteDAC() const;
@@ -98,6 +93,11 @@ protected:
 	/// method to copy all data from given source
 	virtual void copyDataFromSdrObject(const SdrObject& rSource);
 
+    /// GeoData support
+	virtual SdrObjGeoData* NewGeoData() const;
+	virtual void SaveGeoData(SdrObjGeoData& rGeo) const;
+	virtual void RestGeoData(const SdrObjGeoData& rGeo);
+
 public:
 	// possible path types, derived from set polygon, thus readonly and useful
 	// for various behaviours. Default is PathType_Line when not enough info in polygon
@@ -109,7 +109,6 @@ public:
 	static sal_Bool ImpFindPolyPnt(const basegfx::B2DPolyPolygon& rPoly, sal_uInt32 nAbsPnt, sal_uInt32& rPolyNum, sal_uInt32& rPointNum);
 	SdrPathObj(
 		SdrModel& rSdrModel, 
-		SdrObjKind eNewKind, 
 		const basegfx::B2DPolyPolygon& rPathPoly = basegfx::B2DPolyPolygon());
 	virtual bool IsClosedObj() const;
 
@@ -157,12 +156,6 @@ public:
 	// split at tis point
 	SdrObject* RipPoint(sal_uInt32 nHdlNum, sal_uInt32& rNewPt0Index);
 
-protected:
-	virtual SdrObjGeoData* NewGeoData() const;
-	virtual void SaveGeoData(SdrObjGeoData& rGeo) const;
-	virtual void RestGeoData(const SdrObjGeoData& rGeo);
-
-public:
 	virtual SdrObject* DoConvertToPolygonObject(bool bBezier, bool bAddText) const;
 	virtual void setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation);
 
@@ -175,10 +168,9 @@ public:
 	void setB2DPolyPolygonInNormalizedCoordinates(const basegfx::B2DPolyPolygon& rPathPoly);
 
 	// helpers for states
-	bool IsClosed() const { return meKind==OBJ_POLY || meKind==OBJ_PATHPOLY || meKind==OBJ_PATHFILL || meKind==OBJ_FREEFILL; }
-	bool IsLine() const { return meKind==OBJ_PLIN || meKind==OBJ_PATHPLIN || meKind==OBJ_PATHLINE || meKind==OBJ_FREELINE || meKind==OBJ_LINE; }
-	bool IsFreeHand() const { return meKind==OBJ_FREELINE || meKind==OBJ_FREEFILL; }
-	bool IsBezier() const { return meKind==OBJ_PATHLINE || meKind==OBJ_PATHFILL; }
+    bool isClosed() const;
+    bool isLine() const;
+    bool isBezier() const;
 
 	void ToggleClosed();
 };

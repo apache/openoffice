@@ -161,7 +161,7 @@ sal_Bool __EXPORT FuConstCustomShape::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstCustomShape::Activate()
 {
-	pView->SetCurrentObj( OBJ_CUSTOMSHAPE, SdrInventor );
+	pView->setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_CUSTOMSHAPE, SdrInventor));
 
 	aNewPointer = Pointer( POINTER_DRAW_RECT );
 	aOldPointer = pWindow->GetPointer();
@@ -196,8 +196,7 @@ SdrObject* FuConstCustomShape::CreateDefaultObject(const sal_uInt16 /* nID */, c
 {
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		pView->getSdrModelFromSdrView(),
-		pView->GetCurrentObjInventor(), 
-		pView->GetCurrentObjIdentifier());
+		pView->getSdrObjectCreationInfo());
 
 	if( pObj )
 	{

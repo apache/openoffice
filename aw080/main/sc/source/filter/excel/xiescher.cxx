@@ -1008,7 +1008,6 @@ SdrObject* XclImpLineObj::DoCreateSdrObj( XclImpDffConverter& rDffConv, const ba
     }
     SdrObjectPtr xSdrObj( new SdrPathObj(
 		rDffConv.GetTargetSdrModel(),
-		OBJ_LINE, 
 		::basegfx::B2DPolyPolygon( aB2DPolygon ) ) );
     ConvertLineStyle( *xSdrObj, maLineData );
 
@@ -1147,7 +1146,7 @@ SdrObject* XclImpOvalObj::DoCreateSdrObj( XclImpDffConverter& rDffConv, const ba
     SdrObjectPtr xSdrObj(
 		new SdrCircObj(
 			rDffConv.GetTargetSdrModel(),
-			OBJ_CIRC, 
+			CircleType_Circle, 
 			basegfx::tools::createScaleTranslateB2DHomMatrix(
 				rAnchorRange.getRange(), rAnchorRange.getMinimum())));
     ConvertRectStyle( *xSdrObj );
@@ -1225,11 +1224,10 @@ SdrObject* XclImpArcObj::DoCreateSdrObj( XclImpDffConverter& rDffConv, const bas
         break;
     }
     
-	const SdrObjKind eObjKind = maFillData.IsFilled() ? OBJ_SECT : OBJ_CARC;
     SdrObjectPtr xSdrObj( 
 		new SdrCircObj( 
 			rDffConv.GetTargetSdrModel(),
-			eObjKind, 
+			maFillData.IsFilled() ? CircleType_Sector : CircleType_Arc, 
 			basegfx::tools::createScaleTranslateB2DHomMatrix(
 				aNewRange.getRange(), aNewRange.getMinimum()),
 			fStartAngle, 
@@ -1312,10 +1310,8 @@ SdrObject* XclImpPolygonObj::DoCreateSdrObj( XclImpDffConverter& rDffConv, const
         if( ::get_flag( mnPolyFlags, EXC_OBJ_POLY_CLOSED ) && (maCoords.front() != maCoords.back()) )
             aB2DPolygon.append( lclGetPolyPoint( rAnchorRange, maCoords.front() ) );
         // create the SdrObject
-        SdrObjKind eObjKind = maFillData.IsFilled() ? OBJ_PATHPOLY : OBJ_PATHPLIN;
         xSdrObj.reset( new SdrPathObj( 
 			rDffConv.GetTargetSdrModel(),
-			eObjKind, 
 			::basegfx::B2DPolyPolygon( aB2DPolygon ) ) );
         ConvertRectStyle( *xSdrObj );
     }

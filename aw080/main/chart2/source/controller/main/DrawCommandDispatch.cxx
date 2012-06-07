@@ -139,7 +139,7 @@ void DrawCommandDispatch::setAttributes( SdrObject* pObj )
     {
         DrawModelWrapper* pDrawModelWrapper = m_pChartController->GetDrawModelWrapper();
         DrawViewWrapper* pDrawViewWrapper = m_pChartController->GetDrawViewWrapper();
-        if ( pDrawModelWrapper && pDrawViewWrapper && pDrawViewWrapper->GetCurrentObjIdentifier() == OBJ_CUSTOMSHAPE )
+        if ( pDrawModelWrapper && pDrawViewWrapper && pDrawViewWrapper->getSdrObjectCreationInfo().getIdent() == OBJ_CUSTOMSHAPE )
         {
             sal_Bool bAttributesAppliedFromGallery = sal_False;
             if ( GalleryExplorer::GetSdrObjCount( GALLERY_THEME_POWERPOINT ) )
@@ -300,7 +300,10 @@ void DrawCommandDispatch::execute( const ::rtl::OUString& rCommand, const Sequen
     (void)rArgs;
 
     ChartDrawMode eDrawMode = CHARTDRAW_SELECT;
-    SdrObjKind eKind = OBJ_NONE;
+    SdrObjKind eKind(OBJ_NONE);
+    bool bFreehandMode(false);
+    SdrPathObjType aSdrPathObjType(PathType_Line);
+    SdrCircleObjType aSdrCircleObjType(CircleType_Circle);
     bool bCreate = false;
 
     sal_uInt16 nFeatureId = 0;
@@ -323,7 +326,8 @@ void DrawCommandDispatch::execute( const ::rtl::OUString& rCommand, const Sequen
             case COMMAND_ID_LINE_ARROW_END:
                 {
                     eDrawMode = CHARTDRAW_INSERT;
-                    eKind = OBJ_LINE;
+                    eKind = OBJ_POLY;
+                    aSdrPathObjType = PathType_Line;
                 }
                 break;
             case COMMAND_ID_DRAW_RECT:
@@ -336,12 +340,15 @@ void DrawCommandDispatch::execute( const ::rtl::OUString& rCommand, const Sequen
                 {
                     eDrawMode = CHARTDRAW_INSERT;
                     eKind = OBJ_CIRC;
+                    aSdrCircleObjType = CircleType_Circle;
                 }
                 break;
             case COMMAND_ID_DRAW_FREELINE_NOFILL:
                 {
                     eDrawMode = CHARTDRAW_INSERT;
-                    eKind = OBJ_FREELINE;
+                    eKind = OBJ_POLY;
+                    aSdrPathObjType = PathType_OpenBezier;
+                    bFreehandMode = true;
                 }
                 break;
             case COMMAND_ID_DRAW_TEXT:
@@ -383,7 +390,8 @@ void DrawCommandDispatch::execute( const ::rtl::OUString& rCommand, const Sequen
             {
                 ::vos::OGuard aGuard( Application::GetSolarMutex() );
                 m_pChartController->setDrawMode( eDrawMode );
-                setInsertObj( sal::static_int_cast< sal_uInt16 >( eKind ) );
+                setInsertObj(SdrObjectCreationInfo(static_cast< sal_uInt16 >(eKind), SdrInventor, aSdrPathObjType, aSdrCircleObjType, bFreehandMode));
+
                 if ( bCreate )
                 {
                     pDrawViewWrapper->SetViewEditMode(SDREDITMODE_CREATE);
@@ -439,12 +447,12 @@ void DrawCommandDispatch::describeSupportedFeatures()
     implDescribeSupportedFeature( ".uno:StarShapes",        COMMAND_ID_DRAWTBX_CS_STAR,         CommandGroup::INSERT );
 }
 
-void DrawCommandDispatch::setInsertObj( sal_uInt16 eObj )
+void DrawCommandDispatch::setInsertObj(const SdrObjectCreationInfo& rSdrObjectCreationInfo)
 {
     DrawViewWrapper* pDrawViewWrapper = ( m_pChartController ? m_pChartController->GetDrawViewWrapper() : NULL );
     if ( pDrawViewWrapper )
     {
-        pDrawViewWrapper->SetCurrentObj( eObj /*, Inventor */);
+        pDrawViewWrapper->setSdrObjectCreationInfo(rSdrObjectCreationInfo);
     }
 }
 
@@ -463,8 +471,7 @@ SdrObject* DrawCommandDispatch::createDefaultObject( const sal_uInt16 nID )
             ::vos::OGuard aGuard( Application::GetSolarMutex() );
             pObj = SdrObjFactory::MakeNewObject( 
 				pDrawViewWrapper->getSdrModelFromSdrView(),
-				pDrawViewWrapper->GetCurrentObjInventor(),
-                pDrawViewWrapper->GetCurrentObjIdentifier());
+				pDrawViewWrapper->getSdrObjectCreationInfo());
             if ( pObj )
             {
                 const basegfx::B2DVector aObjectSize(4000.0, 2500.0);

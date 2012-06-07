@@ -186,11 +186,10 @@ SdrCreateView::SdrCreateView(SdrModel& rModel1, OutputDevice* pOut)
 	mpAktCreate(0),
 	mpCoMaOverlay(0),
 	mpCreateViewExtraData(new ImpSdrCreateViewExtraData()),
-	maCreatePointer(POINTER_CROSS),
+    maSdrObjectCreationInfo(),
+    maCreatePointer(POINTER_CROSS),
 	mnAutoCloseDistPix(5),
 	mnFreeHandMinDistPix(10),
-	mnAktInvent(SdrInventor),
-	mnAktIdent(OBJ_NONE),
 	mbAutoTextEdit(false),
 	mb1stPointAsCenter(false),
 	mbAutoClosePolys(true)
@@ -271,25 +270,18 @@ basegfx::B2DRange SdrCreateView::TakeActionRange() const
 
 bool SdrCreateView::CheckEdgeMode()
 {
-	sal_uInt32 nInv(GetCurrentObjInventor());
-	sal_uInt16 nIdn(GetCurrentObjIdentifier());
-	
-	if(GetCreateObj()) 
-	{
-		nInv = GetCreateObj()->GetObjInventor();
-		nIdn = GetCreateObj()->GetObjIdentifier();
+    const bool bCreatingEdge(SdrInventor == getSdrObjectCreationInfo().getInvent() && OBJ_EDGE == getSdrObjectCreationInfo().getIdent());
 
-		// wird vom EdgeObj gemanaged
-		if(SdrInventor == GetCurrentObjInventor() && OBJ_EDGE == GetCurrentObjIdentifier()) 
-		{
-			return false;
-		}
+	if(GetCreateObj() && bCreatingEdge) 
+	{
+		return false;
 	}
 	
-	if(!IsCreateMode() || SdrInventor != GetCurrentObjInventor() || OBJ_EDGE != GetCurrentObjIdentifier()) 
+	if(!IsCreateMode() || !bCreatingEdge) 
 	{
 		ImpClearConnectMarker();
-		return false;
+
+        return false;
 	} 
 	else 
 	{
@@ -352,64 +344,56 @@ bool SdrCreateView::MouseMove(const MouseEvent& rMEvt, Window* pWin)
 bool SdrCreateView::IsTextTool() const
 {
 	return (SDREDITMODE_CREATE == GetViewEditMode()
-		&& SdrInventor == GetCurrentObjInventor()
-		&& (OBJ_TEXT == GetCurrentObjIdentifier() 
-			|| OBJ_TITLETEXT == GetCurrentObjIdentifier() 
-			|| OBJ_OUTLINETEXT == GetCurrentObjIdentifier()));
+		&& SdrInventor == getSdrObjectCreationInfo().getInvent()
+		&& (OBJ_TEXT == getSdrObjectCreationInfo().getIdent() 
+			|| OBJ_TITLETEXT == getSdrObjectCreationInfo().getIdent() 
+			|| OBJ_OUTLINETEXT == getSdrObjectCreationInfo().getIdent()));
 }
 
 bool SdrCreateView::IsEdgeTool() const
 {
 	return (SDREDITMODE_CREATE == GetViewEditMode()
-		&& SdrInventor == GetCurrentObjInventor()
-		&& OBJ_EDGE == GetCurrentObjIdentifier());
+		&& SdrInventor == getSdrObjectCreationInfo().getInvent()
+		&& OBJ_EDGE == getSdrObjectCreationInfo().getIdent());
 }
 
 bool SdrCreateView::IsMeasureTool() const
 {
 	return (SDREDITMODE_CREATE == GetViewEditMode()
-		&& SdrInventor == GetCurrentObjInventor() 
-		&& OBJ_MEASURE == GetCurrentObjIdentifier());
+		&& SdrInventor == getSdrObjectCreationInfo().getInvent() 
+		&& OBJ_MEASURE == getSdrObjectCreationInfo().getIdent());
 }
 
-void SdrCreateView::SetCurrentObj(sal_uInt16 nIdent, sal_uInt32 nInvent)
+void SdrCreateView::setSdrObjectCreationInfo(const SdrObjectCreationInfo& rNew)
 {
-	if(GetCurrentObjInventor() != nInvent || GetCurrentObjIdentifier() != nIdent) 
+    // copy values
+    maSdrObjectCreationInfo = rNew;
+
+	// Always use I-Beam for text tool
+	if(IsTextTool()) 
 	{
-		// reset other values which need to be set after this call
-		ResetCreationParameters();
-
-		mnAktInvent = nInvent;
-		mnAktIdent = nIdent;
-        maCreatePointer = Pointer(POINTER_CROSS);
-
-        // Auf pers. Wunsch von Marco:
-		// Mauszeiger bei Textwerkzeug immer I-Beam. Fadenkreuz
-		// mit kleinem I-Beam erst bai MouseButtonDown
-		if(IsTextTool()) 
-		{
-			// #81944# AW: Here the correct pointer needs to be used
-			// if the default is set to vertical writing
-			maCreatePointer = POINTER_TEXT;
-		}
-		else if(nIdent != sal_uInt16(OBJ_NONE)) // not for OBJ_NONE
-		{
-		    SdrObject* pObj = SdrObjFactory::MakeNewObject(getSdrModelFromSdrView(), nInvent, nIdent);
-		
-		    if(pObj) 
-		    {
-				maCreatePointer = pObj->GetCreatePointer(static_cast< SdrView& >(*this));
-                deleteSdrObjectSafeAndClearPointer( pObj );
-		    } 
-		}
+        setCreatePointer(POINTER_TEXT);
 	}
-
-	CheckEdgeMode();
-	ImpSetGlueVisible3(IsEdgeTool());
+	else if(static_cast< sal_uInt16 >(OBJ_NONE) != maSdrObjectCreationInfo.getIdent())
+	{
+		SdrObject* pObj = SdrObjFactory::MakeNewObject(
+            getSdrModelFromSdrView(), 
+            getSdrObjectCreationInfo());
+		
+		if(pObj) 
+		{
+			setCreatePointer(pObj->GetCreatePointer(*getAsSdrView()));
+            deleteSdrObjectSafeAndClearPointer(pObj);
+		} 
+	}
 }
 
-bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, const basegfx::B2DPoint& rPnt, OutputDevice* /*pOut*/,
-	double fMinMovLogic, const basegfx::B2DRange& rLogRange, SdrObject* pPreparedFactoryObject)
+bool SdrCreateView::ImpBegCreateObj(
+    const SdrObjectCreationInfo& rSdrObjectCreationInfo, 
+    const basegfx::B2DPoint& rPnt, 
+    double fMinMovLogic, 
+    const basegfx::B2DRange& rLogRange, 
+    SdrObject* pPreparedFactoryObject)
 {
 	bool bRetval(false);
 
@@ -421,7 +405,9 @@ bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, const
 	{
 		String aLay(GetActiveLayer());
 		
-		if(SdrInventor == nInvent && OBJ_MEASURE == nIdent && GetMeasureLayer().Len()) 
+		if(SdrInventor == rSdrObjectCreationInfo.getInvent() 
+            && OBJ_MEASURE == rSdrObjectCreationInfo.getIdent() 
+            && GetMeasureLayer().Len()) 
 	    {
 			aLay = GetMeasureLayer();
     	}
@@ -441,14 +427,16 @@ bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, const
 			}
 			else
 			{
-				mpAktCreate = SdrObjFactory::MakeNewObject(getSdrModelFromSdrView(), nInvent, nIdent);
+				mpAktCreate = SdrObjFactory::MakeNewObject(getSdrModelFromSdrView(), rSdrObjectCreationInfo);
 			}
 
 			basegfx::B2DPoint aPnt(rPnt);
 
-			if(SdrInventor != GetCurrentObjInventor() || (GetCurrentObjIdentifier() != sal_uInt16(OBJ_EDGE) &&
-				GetCurrentObjIdentifier() != sal_uInt16(OBJ_FREELINE) &&
-				GetCurrentObjIdentifier() != sal_uInt16(OBJ_FREEFILL) )) 
+            // no snap for edge and freehand
+            const bool bNoSnap(SdrInventor == getSdrObjectCreationInfo().getInvent() && (
+                sal_uInt16(OBJ_EDGE) == getSdrObjectCreationInfo().getIdent() || getSdrObjectCreationInfo().getFreehandMode()));
+
+            if(!bNoSnap)
 			{ 
                 // Kein Fang fuer Edge und Freihand!
 				aPnt = GetSnapPos(aPnt);
@@ -467,7 +455,7 @@ bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, const
 				// object should not be created. Since it is possible to use it as a helper
 				// object (e.g. in letting the user define an area with the interactive
 				// construction) at least no items should be set at that object.
-				if(SdrInventor != nInvent || OBJ_NONE != nIdent)
+				if(SdrInventor != rSdrObjectCreationInfo.getInvent() || OBJ_NONE != rSdrObjectCreationInfo.getIdent())
 				{
 					GetCreateObj()->SetMergedItemSet(GetDefaultAttr());
 				}
@@ -482,7 +470,11 @@ bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, const
 					bStartEdit = true;
 				}
 				
-				if(GetCreateObj() && SdrInventor == nInvent && (OBJ_TEXT == nIdent || OBJ_TITLETEXT == nIdent || OBJ_OUTLINETEXT == nIdent)) 
+				if(GetCreateObj() 
+                    && SdrInventor == rSdrObjectCreationInfo.getInvent() 
+                    && (OBJ_TEXT == rSdrObjectCreationInfo.getIdent() 
+                        || OBJ_TITLETEXT == rSdrObjectCreationInfo.getIdent() 
+                        || OBJ_OUTLINETEXT == rSdrObjectCreationInfo.getIdent())) 
 				{
 					// Fuer alle Textrahmen default keinen Hintergrund und keine Umrandung
 					SfxItemSet aSet(GetCreateObj()->GetObjectItemPool());
@@ -530,31 +522,29 @@ bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, const
 	return bRetval;
 }
 
-bool SdrCreateView::BegCreateObj(const basegfx::B2DPoint& rPnt, OutputDevice* pOut, double fMinMovLogic)
+bool SdrCreateView::BegCreateObj(const basegfx::B2DPoint& rPnt, double fMinMovLogic)
 {
-	return ImpBegCreateObj(GetCurrentObjInventor(), GetCurrentObjIdentifier(), rPnt, pOut, fMinMovLogic, basegfx::B2DRange(), 0);
+	return ImpBegCreateObj(getSdrObjectCreationInfo(), rPnt, fMinMovLogic, basegfx::B2DRange(), 0);
 }
 
 bool SdrCreateView::BegCreatePreparedObject(const basegfx::B2DPoint& rPnt, double fMinMovLogic, SdrObject* pPreparedFactoryObject)
 {
-	sal_uInt32 nInvent(GetCurrentObjInventor());
-	sal_uInt16 nIdent(GetCurrentObjIdentifier());
+    SdrObjectCreationInfo aSdrObjectCreationInfo(getSdrObjectCreationInfo());
 
 	if(pPreparedFactoryObject)
 	{
-		nInvent = pPreparedFactoryObject->GetObjInventor();
-		nIdent = pPreparedFactoryObject->GetObjIdentifier();
+        aSdrObjectCreationInfo.setInvent(pPreparedFactoryObject->GetObjInventor());
+        aSdrObjectCreationInfo.setIdent(pPreparedFactoryObject->GetObjIdentifier());
 	}
 
-	return ImpBegCreateObj(nInvent, nIdent, rPnt, 0, fMinMovLogic, basegfx::B2DRange(), pPreparedFactoryObject);
+	return ImpBegCreateObj(aSdrObjectCreationInfo, rPnt, fMinMovLogic, basegfx::B2DRange(), pPreparedFactoryObject);
 }
 
-bool SdrCreateView::BegCreateCaptionObj(const basegfx::B2DPoint& rPnt, const basegfx::B2DVector& rObjSiz,
-	OutputDevice* pOut, double fMinMovLogic)
+bool SdrCreateView::BegCreateCaptionObj(const basegfx::B2DPoint& rPnt, const basegfx::B2DVector& rObjSiz, double fMinMovLogic)
 {
 	const basegfx::B2DRange aNewRange(rPnt, rPnt + rObjSiz);
 
-	return ImpBegCreateObj(SdrInventor, OBJ_CAPTION, rPnt, pOut, fMinMovLogic, aNewRange, 0);
+	return ImpBegCreateObj(SdrObjectCreationInfo(OBJ_CAPTION, SdrInventor), rPnt, fMinMovLogic, aNewRange, 0);
 }
 
 void SdrCreateView::MovCreateObj(const basegfx::B2DPoint& rPnt)

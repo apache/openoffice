@@ -146,14 +146,14 @@ namespace
 
 IMPL_LINK(FmFormObjFactory, MakeObject, SdrObjFactory*, pObjFactory)
 {
-	if (pObjFactory->mnInventor == FmFormInventor)
+	if(FmFormInventor == pObjFactory->getSdrObjectCreationInfo().getInvent())
 	{
         ::rtl::OUString sServiceSpecifier;
 
         typedef ::std::vector< ::std::pair< ::rtl::OUString, Any > > PropertyValueArray;
         PropertyValueArray aInitialProperties;
 
-        switch ( pObjFactory->mnIdentifier )
+        switch(pObjFactory->getSdrObjectCreationInfo().getIdent())
         {
 			case OBJ_FM_EDIT:
                 sServiceSpecifier = FM_COMPONENT_EDIT;
@@ -248,8 +248,12 @@ IMPL_LINK(FmFormObjFactory, MakeObject, SdrObjFactory*, pObjFactory)
 		}
 
         // create the actual object
-		OSL_ENSURE(pObjFactory->mpTargetModel, "SdrObjFactory MakeObject without SdrModel target (!)");
-		pObjFactory->mpNewObj = new FmFormObj( *pObjFactory->mpTargetModel, sServiceSpecifier, pObjFactory->mnIdentifier );
+        FmFormObj* pFmFormObj = new FmFormObj( 
+            pObjFactory->getTargetModel(), 
+            sServiceSpecifier, 
+            pObjFactory->getSdrObjectCreationInfo().getIdent());
+
+        pObjFactory->setNewSdrObject(pFmFormObj);
 
         // initialize some properties which we want to differ from the defaults
         for (   PropertyValueArray::const_iterator aInitProp = aInitialProperties.begin();
@@ -258,7 +262,7 @@ IMPL_LINK(FmFormObjFactory, MakeObject, SdrObjFactory*, pObjFactory)
             )
         {
             lcl_initProperty(
-                static_cast< FmFormObj* >( pObjFactory->mpNewObj ),
+                pFmFormObj,
                 aInitProp->first,
                 aInitProp->second
             );

@@ -183,7 +183,7 @@ void FuText::DoExecute( SfxRequest& )
         ToolBarManager::TBG_FUNCTION,
         RID_DRAW_TEXT_TOOLBOX);
 
-	mpView->SetCurrentObj(OBJ_TEXT);
+	mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 	mpView->SetViewEditMode(SDREDITMODE_EDIT);
 
 	MouseEvent aMEvt(mpWindow->GetPointerPosPixel());
@@ -284,7 +284,7 @@ bool FuText::MouseButtonDown(const MouseEvent& rMEvt)
 				eHit = mpView->PickAnything(rMEvt, SDRMOUSEBUTTONDOWN, aVEvt);
 			}
 
-			mpView->SetCurrentObj(OBJ_TEXT);
+			mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 			mpView->SetViewEditMode(SDREDITMODE_EDIT);
 		}
 
@@ -441,9 +441,9 @@ bool FuText::MouseButtonDown(const MouseEvent& rMEvt)
 						/**********************************************************
 						* Objekt erzeugen
 						**********************************************************/
-						mpView->SetCurrentObj(OBJ_TEXT);
+						mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 						mpView->SetViewEditMode(SDREDITMODE_CREATE);
-						mpView->BegCreateObj(aMDPos, 0, fTolerance);
+						mpView->BegCreateObj(aMDPos, fTolerance);
 					}
 					else
 					{
@@ -687,7 +687,7 @@ bool FuText::MouseButtonUp(const MouseEvent& rMEvt)
 
 		mpView->SetDragWithCopy(bDragWithCopy);
 		mpView->EndDragObj( mpView->IsDragWithCopy() );
-		mpView->SetCurrentObj(OBJ_TEXT);
+		mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 
         if ( mpView->IsRotateAllowed() && mpViewShell->GetFrameView()->IsClickChangeRotation() && (rMEvt.GetClicks() != 2) &&
 			!rMEvt.IsShift() && !rMEvt.IsMod1() && !rMEvt.IsMod2() && !rMEvt.IsRight() &&
@@ -802,9 +802,9 @@ bool FuText::MouseButtonUp(const MouseEvent& rMEvt)
 			/**********************************************************************
 			* Mengentext (linksbuendiges AutoGrow)
 			**********************************************************************/
-			mpView->SetCurrentObj(OBJ_TEXT);
+			mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 			mpView->SetViewEditMode(SDREDITMODE_CREATE);
-			mpView->BegCreateObj(aMDPos, 0, fTolerance);
+			mpView->BegCreateObj(aMDPos, fTolerance);
 
 			bool bSnapEnabled = mpView->IsSnapEnabled();
 
@@ -999,7 +999,7 @@ bool FuText::KeyInput(const KeyEvent& rKEvt)
 
 	if( bPermanent )
 	{
-		mpView->SetCurrentObj(OBJ_TEXT);
+		mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 		mpView->SetViewEditMode(SDREDITMODE_CREATE);
 	}
 
@@ -1069,7 +1069,7 @@ void FuText::SetInEditMode(const MouseEvent& rMEvt, bool bQuickDrag)
 	SdrPageView* pPV = mpView->GetSdrPageView();
 	if( pPV && mxTextObj.is() && (mxTextObj->getSdrPageFromSdrObject() == &pPV->getSdrPageFromSdrPageView()) )
 	{
-		mpView->SetCurrentObj(OBJ_TEXT);
+		mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 
 		if( bPermanent )
 			mpView->SetViewEditMode(SDREDITMODE_CREATE);
@@ -1433,8 +1433,7 @@ SdrObject* FuText::CreateDefaultObject(const sal_uInt16 nID, const basegfx::B2DR
 	SdrTextObj* pObj = dynamic_cast< SdrTextObj* >(
 		SdrObjFactory::MakeNewObject(
 			mpView->getSdrModelFromSdrView(),
-			mpView->GetCurrentObjInventor(), 
-			mpView->GetCurrentObjIdentifier()));
+			mpView->getSdrObjectCreationInfo()));
 
 	if(pObj)
 	{
@@ -1489,7 +1488,7 @@ bool FuText::cancel()
 		if(mpView->SdrEndTextEdit() == SDRENDTEXTEDIT_DELETED)
 			mxTextObj.reset(0);
 
-		mpView->SetCurrentObj(OBJ_TEXT);
+		mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(static_cast< sal_uInt16 >(OBJ_TEXT)));
 		mpView->SetViewEditMode(SDREDITMODE_EDIT);
 		return true;
 	}

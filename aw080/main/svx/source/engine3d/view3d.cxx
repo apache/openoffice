@@ -727,7 +727,7 @@ void E3dView::ImpChangeSomeAttributesFor3DConversion2(SdrObject* pObj)
 		XLineStyle eLineStyle = (XLineStyle)((const XLineStyleItem&)rSet.Get(XATTR_LINESTYLE)).GetValue();
 		XFillStyle eFillStyle = ITEMVALUE(rSet, XATTR_FILLSTYLE, XFillStyleItem);
 
-		if(pSdrPathObj->IsClosed() 
+		if(pSdrPathObj->isClosed() 
 			&& eLineStyle == XLINE_SOLID 
 			&& !nLineWidth 
 			&& eFillStyle != XFILL_NONE)
@@ -765,7 +765,7 @@ void E3dView::ImpCreateSingle3DObjectFlat(E3dScene* pScene, SdrObject* pObj, boo
 		aSet.Put(XLineStyleItem(XLINE_NONE));
 
 		// Feststellen, ob ein FILL_Attribut gesetzt ist.
-		if(!pPath->IsClosed() || eFillStyle == XFILL_NONE)
+		if(!pPath->isClosed() || eFillStyle == XFILL_NONE)
 		{
 			// Das SdrPathObj ist nicht gefuellt, lasse die
 			// vordere und hintere Flaeche weg. Ausserdem ist

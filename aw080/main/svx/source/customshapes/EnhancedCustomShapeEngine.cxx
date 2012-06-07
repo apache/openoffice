@@ -49,6 +49,7 @@
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
 #include <com/sun/star/document/XActionLockable.hpp>
 #include <svx/svdlegacy.hxx>
+#include <svx/sdrobjectfactory.hxx>
 
 // ---------------------------
 // - EnhancedCustomShapeEngine -
@@ -171,8 +172,7 @@ SdrObject* EnhancedCustomShapeEngine::ImplForceGroupWithText( const SdrObjCustom
 			// #i37011# also create a text object and add at rPos + 1
 			SdrTextObj* pTextObj = (SdrTextObj*)SdrObjFactory::MakeNewObject(	
 				pCustoObj->getSdrModelFromSdrObject(), 
-				pCustoObj->GetObjInventor(), 
-				OBJ_TEXT);
+                SdrObjectCreationInfo(OBJ_TEXT, pCustoObj->GetObjInventor()));
 
 			// Copy text content
 			OutlinerParaObject* pParaObj = pCustoObj->GetOutlinerParaObject();
@@ -359,8 +359,10 @@ REF( com::sun::star::drawing::XShape ) SAL_CALL EnhancedCustomShapeEngine::rende
 		if ( pRenderedShape )
 		{
 			aCustomShape2d.ApplyGluePoints( pRenderedShape );
-			xShape = SvxDrawPage::CreateShapeByTypeAndInventor( pRenderedShape->GetObjIdentifier(),
-				pRenderedShape->GetObjInventor(), pRenderedShape, NULL );
+			xShape = SvxDrawPage::CreateShapeBySvxShapeKind( 
+                SdrObjectCreatorInventorToSvxShapeKind(pRenderedShape->GetObjIdentifier(), pRenderedShape->GetObjInventor()),
+                pRenderedShape, 
+                0);
 		}
 		SetTemporary( xShape );
 	}

@@ -1075,7 +1075,7 @@ void SvxFontWorkDialog::CreateStdFormObj(SdrView& rView,
 			
 			pNewObj = new SdrCircObj(
 				rOldObj.getSdrModelFromSdrObject(),
-				OBJ_CARC, 
+				CircleType_Arc, 
 				basegfx::tools::createScaleTranslateB2DHomMatrix(
 					aRange.getRange(),
 					aRange.getMinimum()),
@@ -1119,7 +1119,7 @@ void SvxFontWorkDialog::CreateStdFormObj(SdrView& rView,
 			aPolyPolygon.append(aLine);
 			aPolyPolygon.append(aBottomArc);
 
-			pNewObj = new SdrPathObj(rOldObj.getSdrModelFromSdrObject(), OBJ_PATHFILL, aPolyPolygon);
+			pNewObj = new SdrPathObj(rOldObj.getSdrModelFromSdrObject(), aPolyPolygon);
 			eAdjust = XFT_CENTER;
 			break;
 		}
@@ -1207,7 +1207,7 @@ void SvxFontWorkDialog::CreateStdFormObj(SdrView& rView,
 				aPolyPolygon.append(aLine);
 			}
 
-			pNewObj = new SdrPathObj(rOldObj.getSdrModelFromSdrObject(), OBJ_PATHFILL, aPolyPolygon);
+			pNewObj = new SdrPathObj(rOldObj.getSdrModelFromSdrObject(), aPolyPolygon);
 			break;
         }
         default: ; //prevent warning

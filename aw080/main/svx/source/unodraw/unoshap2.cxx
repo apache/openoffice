@@ -571,7 +571,7 @@ uno::Sequence< OUString > SAL_CALL SvxShapeConnector::getSupportedServiceNames()
 SvxShapeControl::SvxShapeControl( SdrObject* pObj )  throw() :
 	SvxShapeText( pObj, aSvxMapProvider.GetMap(SVXMAP_CONTROL), aSvxMapProvider.GetPropertySet(SVXMAP_CONTROL, GetGlobalDrawObjectItemPool()) )
 {
-	setShapeKind( OBJ_UNO );
+	setSvxShapeKind(SvxShapeKind_Control);
 }
 
 //----------------------------------------------------------------------
@@ -1072,10 +1072,25 @@ uno::Sequence< OUString > SAL_CALL SvxShapeCircle::getSupportedServiceNames() th
 ***********************************************************************/
 
 //----------------------------------------------------------------------
-SvxShapePolyPolygon::SvxShapePolyPolygon( SdrObject* pObj , drawing::PolygonKind eNew )
+bool SvxShapePolyPolygon::isBezierBased() const
+{
+	if(mpObj.is())
+	{
+		const SdrPathObjType aSdrPathObjType(((SdrPathObj*)mpObj.get())->getSdrPathObjType());
+
+        if(PathType_OpenBezier == aSdrPathObjType || PathType_ClosedBezier == aSdrPathObjType)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+//----------------------------------------------------------------------
+SvxShapePolyPolygon::SvxShapePolyPolygon( SdrObject* pObj )
  throw( com::sun::star::beans::PropertyVetoException, com::sun::star::lang::IllegalArgumentException)
 : SvxShapeText( pObj, aSvxMapProvider.GetMap(SVXMAP_POLYPOLYGON), aSvxMapProvider.GetPropertySet(SVXMAP_POLYPOLYGON, GetGlobalDrawObjectItemPool()) )
-, mePolygonKind( eNew )
 {
 }
 
@@ -1085,11 +1100,69 @@ SvxShapePolyPolygon::~SvxShapePolyPolygon() throw()
 }
 
 //----------------------------------------------------------------------
+// depends on polygon type, need to solve this dynamically
+
+const SfxItemPropertyMapEntry* SvxShapePolyPolygon::getPropertyMapEntries() const
+{
+    // the PropertyMap of this object depends on it's content and thus can change during it's
+    // lifetime. It depends on if it's using beziers or not. Thus, return the corresponding type
+    // dynamically
+	if(isBezierBased())
+	{
+        // return bezier-based PropertyMap
+        return aSvxMapProvider.GetMap(SVXMAP_POLYPOLYGONBEZIER);
+    }
+    else
+    {
+        // call parent, use SVXMAP_POLYPOLYGON as used in the constructor
+        return SvxShapeText::getPropertyMapEntries();
+    }
+}
+
+//----------------------------------------------------------------------
 
 bool SvxShapePolyPolygon::setPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, const ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
+    // the type of xShape depends on the content of this object, thus allow all
+    // possible geometry set methods; e.g. someone may construct a bezier-based
+    // xShape, but as long as no data is set, the type would be non-bezier and the
+    // interface suppotred would be PolyPolygonDescriptor. To not conflict and to 
+    // allow setting bezier-based data at that newly created object, allow all
+    // data types from PolyPolygonDescriptor and PolyPolygonBezierDescriptor.
+    // Especially 'Geometry' is double in these definitions, thus decide based
+    // on the data type, but allow both possible ones
 	switch( pProperty->nWID )
 	{
+		case OWN_ATTR_VALUE_POLYPOLYGONBEZIER:
+		{
+			if( rValue.getValue() && (rValue.getValueType() == ::getCppuType(( const drawing::PolyPolygonBezierCoords*)0) ) )
+    		{
+				if( mpObj.is() )
+    			{
+                    // get polygpon data
+    				basegfx::B2DPolyPolygon aNewPolyPolygon(
+                        basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(
+                            *(const drawing::PolyPolygonBezierCoords*)rValue.getValue()));
+
+                    if(aNewPolyPolygon.count())
+        			{
+                        // migrate to pool metric
+                        ForceMetricToItemPoolMetric(aNewPolyPolygon);
+
+						// position relative to anchor
+			            if(isWriterAnchorUsed())
+            			{
+                            aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
+            			}
+			        }
+
+                    // set at object
+                    SetPolygon(aNewPolyPolygon);
+    			}
+				return true;
+			}
+			break;
+		}
 	    case OWN_ATTR_VALUE_POLYPOLYGON:
 	    {
 		    if( rValue.getValue() && (rValue.getValueType() == ::getCppuType(( const drawing::PointSequenceSequence*)0) ) )
@@ -1122,41 +1195,80 @@ bool SvxShapePolyPolygon::setPropertyValueImpl( const ::rtl::OUString& rName, co
 	    }
 	    case OWN_ATTR_BASE_GEOMETRY:
 	    {
-		    if( rValue.getValue() && (rValue.getValueType() == ::getCppuType(( const drawing::PointSequenceSequence*)0)))
+		    if( rValue.getValue() )
 		    {
-			    if( mpObj.is() )
-			    {
-                    // get polygpon data
-				    basegfx::B2DPolyPolygon aNewPolyPolygon(
-                        basegfx::tools::UnoPointSequenceSequenceToB2DPolyPolygon(
-                            *(const drawing::PointSequenceSequence*)rValue.getValue()));
+		        if( rValue.getValueType() == ::getCppuType(( const drawing::PointSequenceSequence*)0))
+		        {
+			        if( mpObj.is() )
+			        {
+                        // get polygpon data
+				        basegfx::B2DPolyPolygon aNewPolyPolygon(
+                            basegfx::tools::UnoPointSequenceSequenceToB2DPolyPolygon(
+                                *(const drawing::PointSequenceSequence*)rValue.getValue()));
 
-                    if(aNewPolyPolygon.count())
-                    {
-                        // migrate to pool metric
-                        ForceMetricToItemPoolMetric(aNewPolyPolygon);
+                        if(aNewPolyPolygon.count())
+                        {
+                            // migrate to pool metric
+                            ForceMetricToItemPoolMetric(aNewPolyPolygon);
 
-                        // BaseGeometry means the polygon is just scaled, but has no position, shear
-                        // or rotation. Apply these current values from the object
-                        const basegfx::B2DHomMatrix aNoScaleTrans(
-                            basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
-					            mpObj->getSdrObjectShearX(),
-					            mpObj->getSdrObjectRotate(),
-					            mpObj->getSdrObjectTranslate()));
+                            // BaseGeometry means the polygon is just scaled, but has no position, shear
+                            // or rotation. Apply these current values from the object
+                            const basegfx::B2DHomMatrix aNoScaleTrans(
+                                basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
+					                mpObj->getSdrObjectShearX(),
+					                mpObj->getSdrObjectRotate(),
+					                mpObj->getSdrObjectTranslate()));
 
-                        aNewPolyPolygon.transform(aNoScaleTrans);
+                            aNewPolyPolygon.transform(aNoScaleTrans);
 
-                        // position relative to anchor
-			            if(isWriterAnchorUsed())
-			            {
-                            aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
-			            }
-                    }
+                            // position relative to anchor
+			                if(isWriterAnchorUsed())
+			                {
+                                aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
+			                }
+                        }
 
-                    // set at object
-                    SetPolygon(aNewPolyPolygon);
-			    }
-			    return true;
+                        // set at object
+                        SetPolygon(aNewPolyPolygon);
+			        }
+			        return true;
+                }
+		        else if( rValue.getValueType() == ::getCppuType(( const drawing::PolyPolygonBezierCoords*)0))
+		        {
+				    if( mpObj.is() )
+				    {
+                        // get polygpon data
+					    basegfx::B2DPolyPolygon aNewPolyPolygon(
+                            basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(
+                                *(const drawing::PolyPolygonBezierCoords*)rValue.getValue()));
+
+                        if(aNewPolyPolygon.count())
+                        {
+                            // migrate to pool metric
+                            ForceMetricToItemPoolMetric(aNewPolyPolygon);
+
+                            // BaseGeometry means the polygon is just scaled, but has no position, shear
+                            // or rotation. Apply these current values from the object
+                            const basegfx::B2DHomMatrix aNoScaleTrans(
+                                basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
+					                mpObj->getSdrObjectShearX(),
+					                mpObj->getSdrObjectRotate(),
+					                mpObj->getSdrObjectTranslate()));
+
+                            aNewPolyPolygon.transform(aNoScaleTrans);
+
+                            // position relative to anchor
+			                if(isWriterAnchorUsed())
+                		    {
+                                aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
+		                    }
+                	    }
+
+                        // set at object
+                        SetPolygon(aNewPolyPolygon);
+			        }
+			        return true;
+                }
 		    }
 		    break;
 	    }
@@ -1203,34 +1315,74 @@ bool SvxShapePolyPolygon::setPropertyValueImpl( const ::rtl::OUString& rName, co
 
 bool SvxShapePolyPolygon::getPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
+    // the data reader should be based on getting the data type first, thus be more strict
+    // with what is allowed or not based on being a bezier type or not
 	switch( pProperty->nWID )
 	{
+	    case OWN_ATTR_VALUE_POLYPOLYGONBEZIER:
+	    {
+            if(isBezierBased())
+            {
+		        drawing::PolyPolygonBezierCoords aRetval;
+		        basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
+
+                if(aPolyPolygon.count())
+                {
+		            // make pos relative to anchor
+                    if(isWriterAnchorUsed())
+		            {
+                        aPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(-mpObj->GetAnchorPos()));
+		            }
+
+				    // migrtate to 1/100th mm
+                    ForceMetricTo100th_mm(aPolyPolygon);
+
+                    // convert Polygon to needed data representation
+                    basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(aPolyPolygon, aRetval);
+                }
+
+		        rValue <<= aRetval;
+            }
+            else
+            {
+                // not allowed to get a PolyPolygon with bezier when bezier is not used
+            	throw lang::IllegalArgumentException();
+            }
+		    break;
+	    }
 	    case OWN_ATTR_VALUE_POLYPOLYGON:
 	    {
-			drawing::PointSequenceSequence aRetval;
-			basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
-
-            if(aPolyPolygon.count())
+            if(isBezierBased())
             {
-		        // make pos relative to anchor
-	            if(isWriterAnchorUsed())
-		        {
-                    aPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(-mpObj->GetAnchorPos()));
-		        }
-
-				// migrtate to 1/100th mm
-                ForceMetricTo100th_mm(aPolyPolygon);
-
-                // convert Polygon to needed data representation
-                basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(aPolyPolygon, aRetval);
+                // not allowed to get a PolyPolygon when bezier is used
+            	throw lang::IllegalArgumentException();
             }
+            else
+            {
+			    drawing::PointSequenceSequence aRetval;
+			    basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
 
-		    rValue <<= aRetval;
+                if(aPolyPolygon.count())
+                {
+		            // make pos relative to anchor
+	                if(isWriterAnchorUsed())
+		            {
+                        aPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(-mpObj->GetAnchorPos()));
+		            }
+
+				    // migrtate to 1/100th mm
+                    ForceMetricTo100th_mm(aPolyPolygon);
+
+                    // convert Polygon to needed data representation
+                    basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(aPolyPolygon, aRetval);
+                }
+
+		        rValue <<= aRetval;
+            }
 		    break;
 	    }
 	    case OWN_ATTR_BASE_GEOMETRY:
 	    {
-			drawing::PointSequenceSequence aRetval;
 			basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
 
             if(aPolyPolygon.count())
@@ -1261,34 +1413,62 @@ bool SvxShapePolyPolygon::getPropertyValueImpl( const ::rtl::OUString& rName, co
                 // transform the polygon
                 aPolyPolygon.transform(aOnlyScaleTransform);
 
-                // convert Polygon to needed data representation
-                basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(aPolyPolygon, aRetval);
+                if(aPolyPolygon.areControlPointsUsed())
+                {
+                    // convert Polygon to needed data representation
+        		    drawing::PolyPolygonBezierCoords aRetval;
+
+                    basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(aPolyPolygon, aRetval);
+        		    rValue <<= aRetval;
+                }
+                else
+                {
+                    // convert Polygon to needed data representation
+                    drawing::PointSequenceSequence aRetval;
+
+                    basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(aPolyPolygon, aRetval);
+        		    rValue <<= aRetval;
+                }
+            }
+            else
+            {
+                // empty PolyPolygon
+                drawing::PolyPolygonBezierCoords aRetval;
+    		    
+                rValue <<= aRetval;
             }
 
-		    rValue <<= aRetval;
-		    break;
+            break;
 	    }
 	    case OWN_ATTR_VALUE_POLYGON:
 	    {
-			drawing::PointSequence aRetval;
-			basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
+            if(isBezierBased())
+            {
+                // not allowed to get a PolyPolygon when bezier is used
+            	throw lang::IllegalArgumentException();
+            }
+            else
+            {
+			    drawing::PointSequence aRetval;
+			    basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
 
-			if(aPolyPolygon.count())
-		    {
-		        // make pos relative to anchor
-	            if(isWriterAnchorUsed())
-			    {
-                    aPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(-mpObj->GetAnchorPos()));
-			    }
+			    if(aPolyPolygon.count())
+		        {
+		            // make pos relative to anchor
+	                if(isWriterAnchorUsed())
+			        {
+                        aPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(-mpObj->GetAnchorPos()));
+			        }
 
-				// migrtate to 1/100th mm
-                ForceMetricTo100th_mm(aPolyPolygon);
+				    // migrtate to 1/100th mm
+                    ForceMetricTo100th_mm(aPolyPolygon);
 
-                // convert Polygon to needed data representation
-				basegfx::tools::B2DPolygonToUnoPointSequence(aPolyPolygon.getB2DPolygon(0), aRetval);
-		    }
+                    // convert Polygon to needed data representation
+				    basegfx::tools::B2DPolygonToUnoPointSequence(aPolyPolygon.getB2DPolygon(0), aRetval);
+		        }
 
-		    rValue <<= aRetval;
+		        rValue <<= aRetval;
+            }
 		    break;
 	    }
 	    case OWN_ATTR_VALUE_POLYGONKIND:
@@ -1308,7 +1488,44 @@ bool SvxShapePolyPolygon::getPropertyValueImpl( const ::rtl::OUString& rName, co
 //----------------------------------------------------------------------
 drawing::PolygonKind SvxShapePolyPolygon::GetPolygonKind() const throw()
 {
-	return mePolygonKind;
+	OGuard aGuard( Application::GetSolarMutex() );
+    drawing::PolygonKind aRetval(drawing::PolygonKind_LINE);
+
+	if(mpObj.is())
+	{
+		const SdrPathObjType aSdrPathObjType(((SdrPathObj*)mpObj.get())->getSdrPathObjType());
+
+        switch(aSdrPathObjType)
+        {
+            case PathType_Line:
+            {
+                aRetval = drawing::PolygonKind_LINE;
+                break;
+            }
+            case PathType_OpenPolygon:
+            {
+                aRetval = drawing::PolygonKind_PLIN;
+                break;
+            }
+            case PathType_ClosedPolygon:
+            {
+                aRetval = drawing::PolygonKind_POLY;
+                break;
+            }
+            case PathType_OpenBezier:
+            {
+                aRetval = drawing::PolygonKind_PATHLINE;
+                break;
+            }
+            case PathType_ClosedBezier:
+            {
+                aRetval = drawing::PolygonKind_PATHFILL;
+                break;
+            }
+        }
+	}
+
+    return aRetval;
 }
 
 //----------------------------------------------------------------------
@@ -1337,226 +1554,6 @@ basegfx::B2DPolyPolygon SvxShapePolyPolygon::GetPolygon() const throw()
 
 // ::com::sun::star::lang::XServiceInfo
 uno::Sequence< OUString > SAL_CALL SvxShapePolyPolygon::getSupportedServiceNames() throw( uno::RuntimeException )
-{
-	return SvxShapeText::getSupportedServiceNames();
-}
-
-/***********************************************************************
-* class SvxShapePolyPolygonBezier                                      *
-***********************************************************************/
-
-//----------------------------------------------------------------------
-SvxShapePolyPolygonBezier::SvxShapePolyPolygonBezier( SdrObject* pObj , drawing::PolygonKind eNew ) throw()
-:	SvxShapeText( pObj, aSvxMapProvider.GetMap(SVXMAP_POLYPOLYGONBEZIER), aSvxMapProvider.GetPropertySet(SVXMAP_POLYPOLYGONBEZIER, GetGlobalDrawObjectItemPool()) )
-,	mePolygonKind( eNew )
-{
-}
-
-//----------------------------------------------------------------------
-SvxShapePolyPolygonBezier::~SvxShapePolyPolygonBezier() throw()
-{
-}
-
-//----------------------------------------------------------------------
-
-bool SvxShapePolyPolygonBezier::setPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, const ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
-{
-	switch( pProperty->nWID )
-	{
-		case OWN_ATTR_VALUE_POLYPOLYGONBEZIER:
-		{
-			if( rValue.getValue() && (rValue.getValueType() == ::getCppuType(( const drawing::PolyPolygonBezierCoords*)0) ) )
-    		{
-				if( mpObj.is() )
-    			{
-                    // get polygpon data
-    				basegfx::B2DPolyPolygon aNewPolyPolygon(
-                        basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(
-                            *(const drawing::PolyPolygonBezierCoords*)rValue.getValue()));
-
-                    if(aNewPolyPolygon.count())
-        			{
-                        // migrate to pool metric
-                        ForceMetricToItemPoolMetric(aNewPolyPolygon);
-
-						// position relative to anchor
-			            if(isWriterAnchorUsed())
-            			{
-                            aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
-            			}
-			        }
-
-                    // set at object
-                    SetPolygon(aNewPolyPolygon);
-    			}
-				return true;
-			}
-			break;
-		}
-		case OWN_ATTR_BASE_GEOMETRY:
-		{
-			if( rValue.getValue() && (rValue.getValueType() == ::getCppuType(( const drawing::PolyPolygonBezierCoords*)0)) )
-			{
-				if( mpObj.is() )
-				{
-                    // get polygpon data
-					basegfx::B2DPolyPolygon aNewPolyPolygon(
-                        basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(
-                            *(const drawing::PolyPolygonBezierCoords*)rValue.getValue()));
-
-                    if(aNewPolyPolygon.count())
-                    {
-                        // migrate to pool metric
-                        ForceMetricToItemPoolMetric(aNewPolyPolygon);
-
-                        // BaseGeometry means the polygon is just scaled, but has no position, shear
-                        // or rotation. Apply these current values from the object
-                        const basegfx::B2DHomMatrix aNoScaleTrans(
-                            basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
-					            mpObj->getSdrObjectShearX(),
-					            mpObj->getSdrObjectRotate(),
-					            mpObj->getSdrObjectTranslate()));
-
-                        aNewPolyPolygon.transform(aNoScaleTrans);
-
-                        // position relative to anchor
-			            if(isWriterAnchorUsed())
-                		{
-                            aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
-		                }
-                	}
-
-                    // set at object
-                    SetPolygon(aNewPolyPolygon);
-			    }
-			    return true;
-		    }
-		    break;
-	    }
-	    default:
-		{
-        return SvxShapeText::setPropertyValueImpl( rName, pProperty, rValue );
-    	}
-    }
-
-	throw IllegalArgumentException();
-}
-
-//----------------------------------------------------------------------
-
-bool SvxShapePolyPolygonBezier::getPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
-{
-	switch( pProperty->nWID )
-	{
-	    case OWN_ATTR_VALUE_POLYPOLYGONBEZIER:
-	    {
-		    drawing::PolyPolygonBezierCoords aRetval;
-		    basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
-
-            if(aPolyPolygon.count())
-            {
-		        // make pos relative to anchor
-                if(isWriterAnchorUsed())
-		        {
-                    aPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(-mpObj->GetAnchorPos()));
-		        }
-
-				// migrtate to 1/100th mm
-                ForceMetricTo100th_mm(aPolyPolygon);
-
-                // convert Polygon to needed data representation
-                basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(aPolyPolygon, aRetval);
-            }
-
-		    rValue <<= aRetval;
-		    break;
-	    }
-	    case OWN_ATTR_BASE_GEOMETRY:
-	    {
-		    drawing::PolyPolygonBezierCoords aRetval;
-		    basegfx::B2DPolyPolygon aPolyPolygon(GetPolygon());
-
-            if(aPolyPolygon.count())
-            {
-		        // make pos relative to anchor
-                if(isWriterAnchorUsed())
-		        {
-                    aPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(-mpObj->GetAnchorPos()));
-		        }
-
-                // migrtate to 1/100th mm
-                ForceMetricTo100th_mm(aPolyPolygon);
-
-                // BaseGeometry means to get only the scaled polygon, so transform
-                // the polygon to only contain object scale
-                // get object transform
-                basegfx::B2DHomMatrix aOnlyScaleTransform(mpObj->getSdrObjectTransformation());
-
-                // extract the scale
-				const basegfx::B2DVector& rScale = mpObj->getSdrObjectScale();
-
-                // get transformation to unit coordinates
-                aOnlyScaleTransform.invert();
-                
-                // add scale again
-                aOnlyScaleTransform.scale(rScale);
-
-                // transform the polygon
-                aPolyPolygon.transform(aOnlyScaleTransform);
-
-                // convert Polygon to needed data representation
-                basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(aPolyPolygon, aRetval);
-            }
-
-		    rValue <<= aRetval;
-		    break;
-	    }
-	    case OWN_ATTR_VALUE_POLYGONKIND:
-	    {
-		    rValue <<= mePolygonKind;
-		    break;
-	    }
-	    default:
-        {
-            return SvxShapeText::getPropertyValueImpl( rName, pProperty, rValue );
-	    }
-	}
-	return true;
-}
-
-//----------------------------------------------------------------------
-drawing::PolygonKind SvxShapePolyPolygonBezier::GetPolygonKind() const throw()
-{
-	return mePolygonKind;
-}
-
-//----------------------------------------------------------------------
-void SvxShapePolyPolygonBezier::SetPolygon(const basegfx::B2DPolyPolygon& rNew) throw()
-{
-	OGuard aGuard( Application::GetSolarMutex() );
-
-	if(mpObj.is())
-		static_cast<SdrPathObj*>(mpObj.get())->setB2DPolyPolygonInObjectCoordinates(rNew);
-}
-
-//----------------------------------------------------------------------
-basegfx::B2DPolyPolygon SvxShapePolyPolygonBezier::GetPolygon() const throw()
-{
-	OGuard aGuard( Application::GetSolarMutex() );
-
-	if(mpObj.is())
-	{
-		return static_cast<SdrPathObj*>(mpObj.get())->getB2DPolyPolygonInObjectCoordinates();
-	}
-	else
-	{
-		return basegfx::B2DPolyPolygon();
-	}
-}
-
-
-// ::com::sun::star::lang::XServiceInfo
-uno::Sequence< OUString > SAL_CALL SvxShapePolyPolygonBezier::getSupportedServiceNames() throw( uno::RuntimeException )
 {
 	return SvxShapeText::getSupportedServiceNames();
 }

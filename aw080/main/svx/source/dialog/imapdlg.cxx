@@ -514,7 +514,7 @@ IMPL_LINK( SvxIMapDlg, TbxClickHdl, ToolBox*, pTbx )
 		case( TBI_RECT ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			pIMapWnd->SetObjKind( OBJ_RECT );
+			pIMapWnd->setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_RECT));
 			if( pTbx->IsKeyEvent() && ((pTbx->GetKeyModifier() & KEY_MOD1) != 0) )
 			{
 				pIMapWnd->CreateDefaultObject();
@@ -526,7 +526,7 @@ IMPL_LINK( SvxIMapDlg, TbxClickHdl, ToolBox*, pTbx )
 		case( TBI_CIRCLE ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			pIMapWnd->SetObjKind( OBJ_CIRC );
+			pIMapWnd->setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_CIRC));
 			if( pTbx->IsKeyEvent() && ((pTbx->GetKeyModifier() & KEY_MOD1) != 0) )
 			{
 				pIMapWnd->CreateDefaultObject();
@@ -538,7 +538,7 @@ IMPL_LINK( SvxIMapDlg, TbxClickHdl, ToolBox*, pTbx )
 		case( TBI_POLY ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			pIMapWnd->SetObjKind( OBJ_POLY );
+			pIMapWnd->setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_POLY));
 			if( pTbx->IsKeyEvent() && ((pTbx->GetKeyModifier() & KEY_MOD1) != 0) )
 			{
 				pIMapWnd->CreateDefaultObject();
@@ -550,8 +550,15 @@ IMPL_LINK( SvxIMapDlg, TbxClickHdl, ToolBox*, pTbx )
 		case( TBI_FREEPOLY ):
 		{
 			pTbx->CheckItem( nNewItemId, sal_True );
-			pIMapWnd->SetObjKind( OBJ_FREEFILL );
-			if( pTbx->IsKeyEvent() && ((pTbx->GetKeyModifier() & KEY_MOD1) != 0) )
+            
+            SdrObjectCreationInfo aSdrObjectCreationInfo(OBJ_POLY);
+
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_ClosedBezier);
+            aSdrObjectCreationInfo.setFreehandMode(true);
+
+            pIMapWnd->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
+			
+            if( pTbx->IsKeyEvent() && ((pTbx->GetKeyModifier() & KEY_MOD1) != 0) )
 			{
 				pIMapWnd->CreateDefaultObject();
 				pIMapWnd->GrabFocus();

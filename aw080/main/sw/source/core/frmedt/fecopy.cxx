@@ -1516,7 +1516,8 @@ void SwFEShell::Paste( SvStream& rStrm, sal_uInt16 nAction, const Point* pPt )
 				pObj->SetAnchorPos( basegfx::B2DPoint() );
 			}
 
-			pView->SetCurrentObj( OBJ_GRUP, SdrInventor );
+			pView->setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_GRUP));
+
 			if ( aSelection.size() > 1 )
 				pView->GroupMarked();
 			SdrObject *pObj = aSelection[0];

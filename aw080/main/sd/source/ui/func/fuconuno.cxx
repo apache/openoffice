@@ -107,7 +107,7 @@ bool FuConstructUnoControl::MouseButtonDown(const MouseEvent& rMEvt)
 
 		mpWindow->CaptureMouse();
 		const double fTolerance(basegfx::B2DVector(mpWindow->GetInverseViewTransformation() * basegfx::B2DVector(DRGPIX, 0.0)).getLength());
-		mpView->BegCreateObj(aLogicPos, (OutputDevice*) NULL, fTolerance);
+		mpView->BegCreateObj(aLogicPos, fTolerance);
 		bReturn = true;
 	}
 	return bReturn;
@@ -168,7 +168,7 @@ bool FuConstructUnoControl::KeyInput(const KeyEvent& rKEvt)
 \************************************************************************/
 void FuConstructUnoControl::Activate()
 {
-	mpView->SetCurrentObj( nIdentifier, nInventor );
+	mpView->setSdrObjectCreationInfo(SdrObjectCreationInfo(nIdentifier, nInventor));
 
 	aNewPointer = Pointer(POINTER_DRAW_RECT);
 	aOldPointer = mpWindow->GetPointer();
@@ -200,8 +200,7 @@ SdrObject* FuConstructUnoControl::CreateDefaultObject(const sal_uInt16, const ba
 	
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		mpView->getSdrModelFromSdrView(),
-		mpView->GetCurrentObjInventor(), 
-		mpView->GetCurrentObjIdentifier());
+		mpView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

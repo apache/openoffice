@@ -1801,7 +1801,6 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 				aClosedPolyPolygon.setClosed(true);
 				SdrPathObj* pFill = new SdrPathObj(
 					pCustomShapeObj->getSdrModelFromSdrObject(),
-					OBJ_POLY, 
 					aClosedPolyPolygon);
 				SfxItemSet aTempSet(*this);
 				aTempSet.Put(SdrOnOffItem(SDRATTR_SHADOW, sal_False));
@@ -1818,7 +1817,6 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 				// Thus, use a type that fits the polygon
 				SdrPathObj* pStroke = new SdrPathObj(
 					pCustomShapeObj->getSdrModelFromSdrObject(),
-					aNewB2DPolyPolygon.isClosed() ? OBJ_POLY : OBJ_PLIN, 
 					aNewB2DPolyPolygon);
 				SfxItemSet aTempSet(*this);
 				aTempSet.Put(SdrOnOffItem(SDRATTR_SHADOW, sal_False));
@@ -1838,7 +1836,6 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 				// see comment above about OBJ_PLIN
 				pObj = new SdrPathObj(
 					pCustomShapeObj->getSdrModelFromSdrObject(),
-					aNewB2DPolyPolygon.isClosed() ? OBJ_POLY : OBJ_PLIN, 
 					aNewB2DPolyPolygon);
 				aTempSet.Put(XFillStyleItem(XFILL_NONE));
 			}
@@ -1847,7 +1844,6 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 				aNewB2DPolyPolygon.setClosed(true);
 				pObj = new SdrPathObj(
 					pCustomShapeObj->getSdrModelFromSdrObject(),
-					OBJ_POLY, 
 					aNewB2DPolyPolygon);
 			}
 
@@ -1886,7 +1882,7 @@ void CorrectCalloutArrows( MSO_SPT eSpType, sal_uInt32 nLineObjectCount, std::ve
 			for ( i = 0; i < vObjectList.size(); i++ )
 			{
 				SdrPathObj* pObj( vObjectList[ i ] );
-				if(pObj->IsLine())
+				if(pObj->isLine())
 				{
 					nLine++;
 					if ( nLine == nLineObjectCount )
@@ -1910,7 +1906,7 @@ void CorrectCalloutArrows( MSO_SPT eSpType, sal_uInt32 nLineObjectCount, std::ve
 			for ( i = 0; i < vObjectList.size(); i++ )
 			{
 				SdrPathObj* pObj( vObjectList[ i ] );
-				if(pObj->IsLine())
+				if(pObj->isLine())
 				{
 					nLine++;
 					if ( nLine == 1 )
@@ -1937,7 +1933,7 @@ void CorrectCalloutArrows( MSO_SPT eSpType, sal_uInt32 nLineObjectCount, std::ve
 			for ( i = 0; i < vObjectList.size(); i++ )
 			{
 				SdrPathObj* pObj( vObjectList[ i ] );
-				if(pObj->IsLine())
+				if(pObj->isLine())
 				{
 					if ( nLine )
 					{
@@ -1958,7 +1954,7 @@ void CorrectCalloutArrows( MSO_SPT eSpType, sal_uInt32 nLineObjectCount, std::ve
 void EnhancedCustomShape2d::AdaptObjColor(SdrPathObj& rObj, const SfxItemSet& rCustomShapeSet, 
                                           sal_uInt32& nColorIndex, sal_uInt32 nColorCount)
 {
-    if ( !rObj.IsLine() )
+    if ( !rObj.isLine() )
     {
         const XFillStyle eFillStyle = ((const XFillStyleItem&)rObj.GetMergedItem(XATTR_FILLSTYLE)).GetValue();
         switch( eFillStyle )
@@ -2097,7 +2093,7 @@ SdrObject* EnhancedCustomShape2d::CreatePathObj( sal_Bool bLineGeometryNeededOnl
 			{
 				SdrPathObj* pObj( vObjectList[ i ] );
 
-				if(pObj->IsLine())
+				if(pObj->isLine())
 				{
 					nLineObjectCount++;
 				}
@@ -2122,7 +2118,7 @@ SdrObject* EnhancedCustomShape2d::CreatePathObj( sal_Bool bLineGeometryNeededOnl
 				{
 					SdrPathObj* pObj( vObjectList[ i ] );
 
-					if ( !pObj->IsLine() )
+					if ( !pObj->isLine() )
 					{
 						vTempList.push_back(pObj);
 					}
@@ -2132,7 +2128,7 @@ SdrObject* EnhancedCustomShape2d::CreatePathObj( sal_Bool bLineGeometryNeededOnl
 				{
 					SdrPathObj* pObj( vObjectList[ i ] );
 
-					if ( pObj->IsLine() )
+					if ( pObj->isLine() )
 					{
 						vTempList.push_back(pObj);
 					}

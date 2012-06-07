@@ -275,7 +275,7 @@ SdrObject* IMapWindow::CreateObj( const IMapObject* pIMapObj )
 
 			pSdrObj = new SdrCircObj(
 				*GetSdrModel(),
-				OBJ_CIRC, 
+				CircleType_Circle, 
 				basegfx::tools::createScaleTranslateB2DHomMatrix(aCircle.getWidth(), aCircle.getHeight(), aCircle.Left(), aCircle.Top()));
 			pCloneIMapObj.reset((IMapObject*) new IMapCircleObject( *pIMapCircleObj ));
 		}
@@ -296,7 +296,7 @@ SdrObject* IMapWindow::CreateObj( const IMapObject* pIMapObj )
 
 				pSdrObj = new SdrCircObj(
 					*GetSdrModel(),
-					OBJ_CIRC, 
+					CircleType_Circle, 
 					basegfx::tools::createScaleTranslateB2DHomMatrix(aDrawRect.getWidth(), aDrawRect.getHeight(), aDrawRect.Left(), aDrawRect.Top()));
 			}
 			else
@@ -311,7 +311,6 @@ SdrObject* IMapWindow::CreateObj( const IMapObject* pIMapObj )
 				aPolygon.append(aDrawPoly.getB2DPolygon());
 				pSdrObj = new SdrPathObj(
 					*GetSdrModel(),
-					OBJ_POLY, 
 					basegfx::B2DPolyPolygon(aPolygon));
 			}
 
@@ -403,9 +402,6 @@ void IMapWindow::SdrObjCreated( const SdrObject& rObj )
 		break;
 
 		case( OBJ_POLY ):
-		case( OBJ_FREEFILL ):
-		case( OBJ_PATHPOLY ):
-		case( OBJ_PATHFILL ):
 		{
 			SdrPathObj* pPathObj = (SdrPathObj*) &rObj;
 			const basegfx::B2DPolyPolygon aXPolyPoly = pPathObj->getB2DPolyPolygonInObjectCoordinates();
@@ -477,9 +473,6 @@ void IMapWindow::SdrObjChanged( const SdrObject& rObj )
 			break;
 
 			case( OBJ_POLY ):
-			case( OBJ_FREEFILL ):
-			case( OBJ_PATHPOLY ):
-			case( OBJ_PATHFILL ):
 			{
 				const SdrPathObj& rPathObj = (const SdrPathObj&) rObj;
 				const basegfx::B2DPolyPolygon aXPolyPoly = rPathObj.getB2DPolyPolygonInObjectCoordinates();
@@ -974,43 +967,47 @@ void IMapWindow::CreateDefaultObject()
 		const basegfx::B2DRange aNewObjectRange(aPagePos, aPagePos + aDefaultObjectScale);
 		SdrObject* pObj = SdrObjFactory::MakeNewObject(	
 			pView->getSdrModelFromSdrView(),
-			pView->GetCurrentObjInventor(), 
-			pView->GetCurrentObjIdentifier());
+            pView->getSdrObjectCreationInfo());
 
 		sdr::legacy::SetLogicRange(*pObj, aNewObjectRange);
 
-		switch( pObj->GetObjIdentifier() )
-		{
-		case OBJ_POLY:
-		case OBJ_PATHPOLY:
-			{
-				basegfx::B2DPolygon aInnerPoly;
+        if(OBJ_POLY == pView->getSdrObjectCreationInfo().getIdent())
+        {
+            SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
 
-				aInnerPoly.append(basegfx::B2DPoint(aNewObjectRange.getMinX(), aNewObjectRange.getMaxY()));
-				aInnerPoly.append(aNewObjectRange.getMinimum());
-				aInnerPoly.append(basegfx::B2DPoint(aNewObjectRange.getCenterX(), aNewObjectRange.getMinY()));
-				aInnerPoly.append(aNewObjectRange.getCenter());
-				aInnerPoly.append(basegfx::B2DPoint(aNewObjectRange.getMaxX(), aNewObjectRange.getCenterY()));
-				aInnerPoly.append(aNewObjectRange.getMaximum());
-				aInnerPoly.setClosed(true);
+            if(pSdrPathObj)
+            {
+                switch(pSdrPathObj->getSdrPathObjType())
+                {
+                    case PathType_ClosedPolygon:
+                    {
+				        basegfx::B2DPolygon aInnerPoly;
 
-				static_cast< SdrPathObj* >(pObj)->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aInnerPoly));
-				break;
-			}
-		case OBJ_FREEFILL:
-		case OBJ_PATHFILL:
-			{
-				const basegfx::B2DPolygon aInnerPoly(
-					basegfx::tools::createPolygonFromEllipse(
-						aNewObjectRange.getCenter(),
-						aNewObjectRange.getWidth() * 0.5,
-						aNewObjectRange.getHeight() * 0.5));
+				        aInnerPoly.append(basegfx::B2DPoint(aNewObjectRange.getMinX(), aNewObjectRange.getMaxY()));
+				        aInnerPoly.append(aNewObjectRange.getMinimum());
+				        aInnerPoly.append(basegfx::B2DPoint(aNewObjectRange.getCenterX(), aNewObjectRange.getMinY()));
+				        aInnerPoly.append(aNewObjectRange.getCenter());
+				        aInnerPoly.append(basegfx::B2DPoint(aNewObjectRange.getMaxX(), aNewObjectRange.getCenterY()));
+				        aInnerPoly.append(aNewObjectRange.getMaximum());
+				        aInnerPoly.setClosed(true);
 
-				static_cast< SdrPathObj* >(pObj)->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aInnerPoly));
-				break;
-			}
+				        pSdrPathObj->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aInnerPoly));
+                        break;
+                    }
+                    case PathType_ClosedBezier:
+                    {
+				        const basegfx::B2DPolygon aInnerPoly(
+					        basegfx::tools::createPolygonFromEllipse(
+						        aNewObjectRange.getCenter(),
+						        aNewObjectRange.getWidth() * 0.5,
+						        aNewObjectRange.getHeight() * 0.5));
 
-		}
+				        pSdrPathObj->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aInnerPoly));
+                        break;
+                    }
+                }
+            }
+        }
 
 		pView->InsertObjectAtView(*pObj);
 		SdrObjCreated( *pObj );

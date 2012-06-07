@@ -1833,24 +1833,20 @@ bool HtmlExport::CreateHtmlForPresPages()
 					// jetzt die Areas
 					if( aHRef.Len() )
 					{
-						// ein Kreis?
-						if (pObject->GetObjInventor() == SdrInventor &&
-							pObject->GetObjIdentifier() == OBJ_CIRC  &&
-							bIsSquare )
+						// a circle?
+						if(bIsSquare && dynamic_cast< SdrCircObj* >(pObject))
 						{
 							aStr += CreateHTMLCircleArea(aRect.GetWidth() / 2,
 													aRect.Left() + nRadius,
 													aRect.Top() + nRadius,
 													aHRef);
 						}
-						// ein Polygon?
-						else if (pObject->GetObjInventor() == SdrInventor &&
-								 (pObject->GetObjIdentifier() == OBJ_PATHLINE ||
-								  pObject->GetObjIdentifier() == OBJ_PLIN ||
-								  pObject->GetObjIdentifier() == OBJ_POLY))
+						// a Polygon?
+						else if(dynamic_cast< SdrPathObj* >(pObject))
 						{
-							const basegfx::B2DPolyPolygon aPolyPolygon(((SdrPathObj*)pObject)->getB2DPolyPolygonInObjectCoordinates());
-							aStr += CreateHTMLPolygonArea(aPolyPolygon, Size(-pPage->GetLeftPageBorder(), -pPage->GetTopPageBorder()), fLogicToPixel, aHRef);
+							const basegfx::B2DPolyPolygon aPolyPolygon(static_cast< SdrPathObj* >(pObject)->getB2DPolyPolygonInObjectCoordinates());
+							
+                            aStr += CreateHTMLPolygonArea(aPolyPolygon, Size(-pPage->GetLeftPageBorder(), -pPage->GetTopPageBorder()), fLogicToPixel, aHRef);
 						}
 						// was anderes: das BoundRect nehmen
 						else

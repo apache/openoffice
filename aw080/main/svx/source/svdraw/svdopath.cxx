@@ -160,7 +160,7 @@ ImpSdrPathDragData::ImpSdrPathDragData(const SdrPathObj& rPO, const SdrHdl& rHdl
 	else
 	{
 		bValid = false;
-		bClosed=rPO.IsClosed();          // geschlossenes Objekt?
+		bClosed=rPO.isClosed();          // geschlossenes Objekt?
 		nPoly=(sal_uInt16)rHdl.GetPolyNum();            // Nummer des Polygons im PolyPolygon
 		nPnt=(sal_uInt16)rHdl.GetPointNum();            // Punktnummer innerhalb des obigen Polygons
 		const XPolygon aTmpXP(rPO.getB2DPolyPolygonInObjectCoordinates().getB2DPolygon(nPoly));
@@ -1626,83 +1626,93 @@ SdrPathObjGeoData::~SdrPathObjGeoData()
 //////////////////////////////////////////////////////////////////////////////
 // DrawContact section
 
-bool ImpIsLine(const basegfx::B2DPolyPolygon& rPolyPolygon)
-{
-	return (1L == rPolyPolygon.count() && 2L == rPolyPolygon.getB2DPolygon(0L).count());
-}
-
 void SdrPathObj::impAdaptTransformation()
 {
 	basegfx::B2DHomMatrix aHelpMatrix;
 
 	if(maPathPolygon.count())
 	{
-		// get range
-		basegfx::B2DRange aRange(maPathPolygon.getB2DRange());
+        if(isLine())
+        {
+            // create unit transformation so that (0,0) is 1st point and (1,0) is 2nd point
+            const basegfx::B2DPoint aPointA(maPathPolygon.getB2DPolygon(0).getB2DPoint(0));
+            const basegfx::B2DPoint aPointB(maPathPolygon.getB2DPolygon(0).getB2DPoint(1));
+            const basegfx::B2DVector aDelta(aPointB - aPointA);
 
-		if(!aRange.isEmpty())
-		{
-			// break up current transformation
-			basegfx::B2DTuple aScale;
-			basegfx::B2DTuple aTranslate;
-			double fRotate, fShearX;
-			getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
+            aHelpMatrix = basegfx::tools::createScaleRotateTranslateB2DHomMatrix(
+                basegfx::B2DTuple(aDelta.getLength(), 0.0),
+                atan2(aDelta.getY(), aDelta.getX()),
+                aPointA);
+        }
+        else
+        {
+		    // get range
+		    basegfx::B2DRange aRange(maPathPolygon.getB2DRange());
 
-			// to keep mirrorX, mirrorY, rotation and shear, create a transformation
-			// containing those values
-			if(basegfx::fTools::less(aScale.getX(), 0.0))
-			{
-				aHelpMatrix.scale(-1.0, 1.0);
-				aScale.setX(-1.0);
-			}
+		    if(!aRange.isEmpty())
+		    {
+			    // break up current transformation
+			    basegfx::B2DTuple aScale;
+			    basegfx::B2DTuple aTranslate;
+			    double fRotate, fShearX;
+			    getSdrObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
 
-			if(basegfx::fTools::less(aScale.getY(), 0.0))
-            {
-				aHelpMatrix.scale(1.0, -1.0);
-				aScale.setY(-1.0);
-            }
+			    // to keep mirrorX, mirrorY, rotation and shear, create a transformation
+			    // containing those values
+			    if(basegfx::fTools::less(aScale.getX(), 0.0))
+			    {
+				    aHelpMatrix.scale(-1.0, 1.0);
+				    aScale.setX(-1.0);
+			    }
 
-			if(!basegfx::fTools::equalZero(fShearX))
-			{
-				aHelpMatrix.shearX(fShearX);
-			}
+			    if(basegfx::fTools::less(aScale.getY(), 0.0))
+                {
+				    aHelpMatrix.scale(1.0, -1.0);
+				    aScale.setY(-1.0);
+                }
 
-			if(!basegfx::fTools::equalZero(fRotate))
-			{
-				aHelpMatrix.rotate(fRotate);
-			}
+			    if(!basegfx::fTools::equalZero(fShearX))
+			    {
+				    aHelpMatrix.shearX(fShearX);
+			    }
 
-			if(!aHelpMatrix.isIdentity())
-			{
-				// create inverse from it and back-transform polygon
-				basegfx::B2DPolyPolygon aBackTransformed(maPathPolygon);
-				basegfx::B2DHomMatrix aInverseHelpMatrix(aHelpMatrix);
-				aInverseHelpMatrix.invert();
-				aBackTransformed.transform(aInverseHelpMatrix);
+			    if(!basegfx::fTools::equalZero(fRotate))
+			    {
+				    aHelpMatrix.rotate(fRotate);
+			    }
 
-				// update range
-				aRange = aBackTransformed.getB2DRange();
+			    if(!aHelpMatrix.isIdentity())
+			    {
+				    // create inverse from it and back-transform polygon
+				    basegfx::B2DPolyPolygon aBackTransformed(maPathPolygon);
+				    basegfx::B2DHomMatrix aInverseHelpMatrix(aHelpMatrix);
+				    aInverseHelpMatrix.invert();
+				    aBackTransformed.transform(aInverseHelpMatrix);
 
-				// extract scale and translate. Transform topLeft from it back 
-				// to transformed state to get original topLeft (rotation center).
-				// Be careful not to delete mirrorings
-				aTranslate = aHelpMatrix * aRange.getMinimum();
-				aScale *= aRange.getRange();
-			}
-			else
-			{
-				// extract translate and scale straightforward
-				aTranslate = aRange.getMinimum();
-				aScale = aRange.getRange();
-			}
+				    // update range
+				    aRange = aBackTransformed.getB2DRange();
 
-			// create new transformation
-			aHelpMatrix = basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
-				aScale,
-				fShearX,
-				fRotate, 
-				aTranslate);
-		}
+				    // extract scale and translate. Transform topLeft from it back 
+				    // to transformed state to get original topLeft (rotation center).
+				    // Be careful not to delete mirrorings
+				    aTranslate = aHelpMatrix * aRange.getMinimum();
+				    aScale *= aRange.getRange();
+			    }
+			    else
+			    {
+				    // extract translate and scale straightforward
+				    aTranslate = aRange.getMinimum();
+				    aScale = aRange.getRange();
+			    }
+
+			    // create new transformation
+			    aHelpMatrix = basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
+				    aScale,
+				    fShearX,
+				    fRotate, 
+				    aTranslate);
+		    }
+        }
 	}
 
 	// set adapted transformation, but do not change the
@@ -1717,14 +1727,11 @@ sdr::contact::ViewContact* SdrPathObj::CreateObjectSpecificViewContact()
 
 SdrPathObj::SdrPathObj(
 	SdrModel& rSdrModel, 
-	SdrObjKind eNewKind, 
 	const basegfx::B2DPolyPolygon& rPathPoly)
 :	SdrTextObj(rSdrModel),
 	maPathPolygon(rPathPoly),
-	meKind(eNewKind),
 	mpDAC(0)
 {
-	ImpForceKind();
 	impAdaptTransformation();
 }
 
@@ -1757,8 +1764,7 @@ void SdrPathObj::copyDataFromSdrObject(const SdrObject& rSource)
 SdrObject* SdrPathObj::CloneSdrObject(SdrModel* pTargetModel) const
 {
 	SdrPathObj* pClone = new SdrPathObj(
-		pTargetModel ? *pTargetModel : getSdrModelFromSdrObject(),
-		meKind);
+		pTargetModel ? *pTargetModel : getSdrModelFromSdrObject());
 	OSL_ENSURE(pClone, "CloneSdrObject error (!)");
 	pClone->copyDataFromSdrObject(*this);
 
@@ -1767,48 +1773,18 @@ SdrObject* SdrPathObj::CloneSdrObject(SdrModel* pTargetModel) const
 
 bool SdrPathObj::IsClosedObj() const
 {
-	return IsClosed();
+	return isClosed();
 }
 
-void SdrPathObj::ImpForceKind()
+void SdrPathObj::ImpSetClosed(bool bClose)
 {
-	if (meKind==OBJ_PATHPLIN) meKind=OBJ_PLIN;
-	if (meKind==OBJ_PATHPOLY) meKind=OBJ_POLY;
-
-	if(getB2DPolyPolygonInObjectCoordinates().areControlPointsUsed()) 
+	for(sal_uInt32 a(0); a < maPathPolygon.count(); a++)
 	{
-		switch (meKind) 
-		{
-			case OBJ_LINE: meKind=OBJ_PATHLINE; break;
-			case OBJ_PLIN: meKind=OBJ_PATHLINE; break;
-			case OBJ_POLY: meKind=OBJ_PATHFILL; break;
-			default: break;
-		}
-	} 
-	else 
-	{
-		switch (meKind) 
-		{
-			case OBJ_PATHLINE: meKind=OBJ_PLIN; break;
-			case OBJ_FREELINE: meKind=OBJ_PLIN; break;
-			case OBJ_PATHFILL: meKind=OBJ_POLY; break;
-			case OBJ_FREEFILL: meKind=OBJ_POLY; break;
-			default: break;
-		}
-	}
+		basegfx::B2DPolygon aCandidate(maPathPolygon.getB2DPolygon(a));
 
-	if (meKind==OBJ_LINE && !ImpIsLine(getB2DPolyPolygonInObjectCoordinates())) meKind=OBJ_PLIN;
-	if (meKind==OBJ_PLIN && ImpIsLine(getB2DPolyPolygonInObjectCoordinates())) meKind=OBJ_LINE;
-
-	// #i75974# adapt polygon state to object type. This may include a reinterpretation
-	// of a closed geometry as open one, but with identical first and last point
-	for(sal_uInt32 a(0); a < getB2DPolyPolygonInObjectCoordinates().count(); a++)
-	{
-		basegfx::B2DPolygon aCandidate(getB2DPolyPolygonInObjectCoordinates().getB2DPolygon(a));
-
-		if((bool)IsClosed() != aCandidate.isClosed())
+		if(bClose != aCandidate.isClosed())
 		{
-            // #i80213# really change polygon geometry; else e.g. the last point which
+            // really change polygon geometry; else e.g. the last point which
             // needs to be identical with the first one will be missing when opening
             // due to OBJ_PATH type
             if(aCandidate.isClosed())
@@ -1827,39 +1803,12 @@ void SdrPathObj::ImpForceKind()
 	}
 }
 
-void SdrPathObj::ImpSetClosed(sal_Bool bClose)
-{
-	if(bClose) 
-	{
-		switch (meKind) 
-		{
-			case OBJ_LINE    : meKind=OBJ_POLY;     break;
-			case OBJ_PLIN    : meKind=OBJ_POLY;     break;
-			case OBJ_PATHLINE: meKind=OBJ_PATHFILL; break;
-			case OBJ_FREELINE: meKind=OBJ_FREEFILL; break;
-			default: break;
-		}
-	} 
-	else 
-	{
-		switch (meKind) 
-		{
-			case OBJ_POLY    : meKind=OBJ_PLIN;     break;
-			case OBJ_PATHFILL: meKind=OBJ_PATHLINE; break;
-			case OBJ_FREEFILL: meKind=OBJ_FREELINE; break;
-			default: break;
-		}
-	}
-
-	ImpForceKind();
-}
-
 void SdrPathObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
 	rInfo.bNoContortion=false;
 
-	bool bCanConv = !HasText() || ImpCanConvTextToCurve();
-	bool bIsPath = IsBezier();
+	const bool bCanConv(!HasText() || ImpCanConvTextToCurve());
+	const bool bIsPath(isBezier());
 
 	rInfo.mbEdgeRadiusAllowed	= false;
 	rInfo.mbCanConvToPath = bCanConv && !bIsPath;
@@ -1869,16 +1818,18 @@ void SdrPathObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 
 sal_uInt16 SdrPathObj::GetObjIdentifier() const
 {
-	return sal_uInt16(meKind);
+	return sal_uInt16(OBJ_POLY);
 }
 
 void SdrPathObj::TakeObjNameSingul(XubString& rName) const
 {
-	if(OBJ_LINE == meKind) 
+	const SdrPathObjType aSdrPathObjType(getSdrPathObjType());
+
+    if(PathType_Line == aSdrPathObjType) 
 	{
 		sal_uInt16 nId(STR_ObjNameSingulLINE);
 
-		if(ImpIsLine(getB2DPolyPolygonInObjectCoordinates()))
+		if(isLine())
 		{
 			const basegfx::B2DPolygon aPoly(getB2DPolyPolygonInObjectCoordinates().getB2DPolygon(0L));
 			const basegfx::B2DPoint aB2DPoint0(aPoly.getB2DPoint(0L));
@@ -1909,9 +1860,9 @@ void SdrPathObj::TakeObjNameSingul(XubString& rName) const
 
 		rName = ImpGetResStr(nId);
 	} 
-	else if(OBJ_PLIN == meKind || OBJ_POLY == meKind) 
+	else if(PathType_OpenPolygon == aSdrPathObjType || PathType_ClosedPolygon == aSdrPathObjType) 
 	{
-		const sal_Bool bClosed(OBJ_POLY == meKind);
+		const bool bClosed(PathType_ClosedPolygon == aSdrPathObjType);
 		sal_uInt16 nId(0);
 
 		if(mpDAC && mpDAC->IsCreating()) 
@@ -1959,12 +1910,19 @@ void SdrPathObj::TakeObjNameSingul(XubString& rName) const
 	} 
 	else 
 	{
-		switch (meKind) 
+		switch (aSdrPathObjType) 
 		{
-			case OBJ_PATHLINE: rName=ImpGetResStr(STR_ObjNameSingulPATHLINE); break;
-			case OBJ_FREELINE: rName=ImpGetResStr(STR_ObjNameSingulFREELINE); break;
-			case OBJ_PATHFILL: rName=ImpGetResStr(STR_ObjNameSingulPATHFILL); break;
-			case OBJ_FREEFILL: rName=ImpGetResStr(STR_ObjNameSingulFREEFILL); break;
+            case PathType_OpenBezier:
+            {
+                rName = ImpGetResStr(STR_ObjNameSingulPATHLINE);
+                break;
+            }
+            case PathType_ClosedBezier:
+            {
+                rName = ImpGetResStr(STR_ObjNameSingulPATHFILL);
+                break;
+            }
+
 			default: break;
 		}
 	}
@@ -1981,15 +1939,36 @@ void SdrPathObj::TakeObjNameSingul(XubString& rName) const
 
 void SdrPathObj::TakeObjNamePlural(XubString& rName) const
 {
-	switch(meKind) 
+	const SdrPathObjType aSdrPathObjType(getSdrPathObjType());
+
+    switch(aSdrPathObjType) 
 	{
-		case OBJ_LINE    : rName=ImpGetResStr(STR_ObjNamePluralLINE    ); break;
-		case OBJ_PLIN    : rName=ImpGetResStr(STR_ObjNamePluralPLIN    ); break;
-		case OBJ_POLY    : rName=ImpGetResStr(STR_ObjNamePluralPOLY    ); break;
-		case OBJ_PATHLINE: rName=ImpGetResStr(STR_ObjNamePluralPATHLINE); break;
-		case OBJ_FREELINE: rName=ImpGetResStr(STR_ObjNamePluralFREELINE); break;
-		case OBJ_PATHFILL: rName=ImpGetResStr(STR_ObjNamePluralPATHFILL); break;
-		case OBJ_FREEFILL: rName=ImpGetResStr(STR_ObjNamePluralFREEFILL); break;
+        case PathType_Line:              // old OBJ_LINE
+        {
+            rName = ImpGetResStr(STR_ObjNamePluralLINE);
+            break;
+        }
+        case PathType_OpenPolygon:       // old OBJ_PLIN
+        {
+            rName = ImpGetResStr(STR_ObjNamePluralPLIN);
+            break;
+        }
+        case PathType_ClosedPolygon:     // old OBJ_POLY
+        {
+            rName = ImpGetResStr(STR_ObjNamePluralPOLY);
+            break;
+        }
+        case PathType_OpenBezier:        // old OBJ_PATHLINE
+        {
+            rName = ImpGetResStr(STR_ObjNamePluralPATHLINE);
+            break;
+        }
+        case PathType_ClosedBezier:      // old OBJ_PATHFILL
+        {
+            rName = ImpGetResStr(STR_ObjNamePluralPATHFILL);
+            break;
+        }
+
 		default: break;
 	}
 }
@@ -2004,7 +1983,7 @@ void SdrPathObj::AddToHdlList(SdrHdlList& rHdlList) const
 	// keep old stuff to be able to keep old SdrHdl stuff, too
 	const XPolyPolygon aOldPathPolygon(getB2DPolyPolygonInObjectCoordinates());
 	sal_uInt16 nPolyCnt=aOldPathPolygon.Count();
-	bool bClosed=IsClosed();
+	bool bClosed(isClosed());
 	sal_uInt16 nIdx=0;
 
 	for (sal_uInt16 i=0; i<nPolyCnt; i++) 
@@ -2051,13 +2030,13 @@ sal_uInt32 SdrPathObj::GetPlusHdlCount(const SdrHdl& rHdl) const
 			{
 				if (rXPoly.GetFlags(nPnt)!=XPOLY_CONTROL) 
 				{
-					if (nPnt==0 && IsClosed()) 
+					if (nPnt==0 && isClosed()) 
                         nPnt=nPntMax;
 
 					if (nPnt>0 && rXPoly.GetFlags(nPnt-1)==XPOLY_CONTROL) 
                         nCnt++;
 
-					if (nPnt==nPntMax && IsClosed()) 
+					if (nPnt==nPntMax && isClosed()) 
                         nPnt=0;
 
 					if (nPnt<nPntMax && rXPoly.GetFlags(nPnt+1)==XPOLY_CONTROL) 
@@ -2091,7 +2070,7 @@ void SdrPathObj::GetPlusHdl(SdrHdlList& rHdlList, const SdrObject& rSdrObject, c
 				pHdl = new SdrHdlBezWgt(rHdlList, rSdrObject, rHdl);
 				pHdl->SetPolyNum(rHdl.GetPolyNum());
 
-				if (nPnt==0 && IsClosed()) 
+				if (nPnt==0 && isClosed()) 
 				{
 					nPnt=nPntMax;
 				}
@@ -2103,7 +2082,7 @@ void SdrPathObj::GetPlusHdl(SdrHdlList& rHdlList, const SdrObject& rSdrObject, c
 				} 
 				else 
 				{
-					if (nPnt==nPntMax && IsClosed()) 
+					if (nPnt==nPntMax && isClosed()) 
 					{
 						nPnt=0;
 					}
@@ -2125,7 +2104,7 @@ void SdrPathObj::GetPlusHdl(SdrHdlList& rHdlList, const SdrObject& rSdrObject, c
 
 SdrPathObjType SdrPathObj::getSdrPathObjType() const
 {
-	if(ImpIsLine(maPathPolygon))
+	if(isLine())
 	{
 		return PathType_Line;
 	}
@@ -2445,7 +2424,6 @@ sal_uInt32 SdrPathObj::InsPointOld(const Point& rPos, sal_Bool bNewObj)
 		nNewHdl = InsPoint(rPos, sal_False);
 	}
 	
-	ImpForceKind();
 	return nNewHdl;
 }
 
@@ -2458,7 +2436,7 @@ sal_uInt32 SdrPathObj::InsPoint(const Point& rPos, sal_Bool bNewObj)
 		basegfx::B2DPolygon aNewPoly;
 		const basegfx::B2DPoint aPoint(rPos.X(), rPos.Y());
 		aNewPoly.append(aPoint);
-		aNewPoly.setClosed(IsClosed());
+		aNewPoly.setClosed(isClosed());
 		maPathPolygon.append(aNewPoly);
 		impAdaptTransformation();
 		nNewHdl = getB2DPolyPolygonInObjectCoordinates().allPointCount();
@@ -2568,7 +2546,6 @@ sal_uInt32 SdrPathObj::InsPoint(const Point& rPos, sal_Bool bNewObj)
 		}
 	}
 
-	ImpForceKind();
 	return nNewHdl;
 }
 
@@ -2587,7 +2564,7 @@ SdrObject* SdrPathObj::RipPoint(sal_uInt32 nHdlNum, sal_uInt32& rNewPt0Index)
 
 			if(nPointCount)
 			{
-				if(IsClosed())
+				if(isClosed())
 				{
 					// when closed, RipPoint means to open the polygon at the selected point. To
 					// be able to do that, it is necessary to make the selected point the first one
@@ -2628,7 +2605,7 @@ SdrObject* SdrPathObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) con
 
     SdrObject* pRet = bHideContour ? 
         0 : 
-        ImpConvertMakeObj(getB2DPolyPolygonInObjectCoordinates(), IsClosed(), bBezier);
+        ImpConvertMakeObj(getB2DPolyPolygonInObjectCoordinates(), isClosed(), bBezier);
 
     SdrPathObj* pPath = dynamic_cast< SdrPathObj* >( pRet);
 
@@ -2670,7 +2647,6 @@ void SdrPathObj::SaveGeoData(SdrObjGeoData& rGeo) const
 	SdrTextObj::SaveGeoData(rGeo);
 	SdrPathObjGeoData& rPGeo = (SdrPathObjGeoData&) rGeo;
 	rPGeo.maPathPolygon = getB2DPolyPolygonInObjectCoordinates();
-	rPGeo.meKind=meKind;
 }
 
 void SdrPathObj::RestGeoData(const SdrObjGeoData& rGeo)
@@ -2678,8 +2654,6 @@ void SdrPathObj::RestGeoData(const SdrObjGeoData& rGeo)
 	SdrTextObj::RestGeoData(rGeo);
 	SdrPathObjGeoData& rPGeo=(SdrPathObjGeoData&)rGeo;
 	maPathPolygon=rPGeo.maPathPolygon;
-	meKind=rPGeo.meKind;
-	ImpForceKind(); // damit u.a. bClosed gesetzt wird
 }
 
 basegfx::B2DPolyPolygon SdrPathObj::getB2DPolyPolygonInObjectCoordinates() const 
@@ -2693,7 +2667,6 @@ void SdrPathObj::setB2DPolyPolygonInObjectCoordinates(const basegfx::B2DPolyPoly
 	{
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
 		maPathPolygon=rPathPoly;
-		ImpForceKind();
 		impAdaptTransformation(); 
 		SetChanged();
 	}
@@ -2721,8 +2694,7 @@ void SdrPathObj::setB2DPolyPolygonInNormalizedCoordinates(const basegfx::B2DPoly
 void SdrPathObj::ToggleClosed()
 {
     const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-	ImpSetClosed(!IsClosed()); // neuen ObjKind setzen
-	ImpForceKind(); // wg. Line->Poly->PolyLine statt Line->Poly->Line
+	ImpSetClosed(!isClosed()); // neuen ObjKind setzen
 	SetChanged();
 }
 
@@ -2732,8 +2704,8 @@ ImpPathForDragAndCreate& SdrPathObj::impGetDAC(const SdrView& rView) const
 	{
 		const_cast< SdrPathObj* >(this)->mpDAC = new ImpPathForDragAndCreate(
 			*this, 
-			rView.getTargetSdrPathObjType(),
-			rView.getCreateFreehandMode());
+			rView.getSdrObjectCreationInfo().getSdrPathObjType(),
+			rView.getSdrObjectCreationInfo().getFreehandMode());
 	}
 
 	return *mpDAC;
@@ -2750,21 +2722,51 @@ void SdrPathObj::impDeleteDAC() const
 
 void SdrPathObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
-	// remember current ObjectTransformation
-	basegfx::B2DHomMatrix aOldObjectTransformation(getSdrObjectTransformation());
-
-	// call parent
-	SdrTextObj::setSdrObjectTransformation(rTransformation);
-
-	// need to adapt the object-coordinate representation of maPathPolygon
-	const basegfx::B2DHomMatrix aNewObjectTransformation(getSdrObjectTransformation());
-
-	if(aOldObjectTransformation != aNewObjectTransformation)
+    if(isLine())
     {
-		aOldObjectTransformation.invert();
-		aOldObjectTransformation = aNewObjectTransformation * aOldObjectTransformation;
-		maPathPolygon.transform(aOldObjectTransformation);
-	}
+	    // call parent
+	    SdrTextObj::setSdrObjectTransformation(rTransformation);
+
+        // apply new transformation to (0,0) and (1,0) to create the polygon data
+        basegfx::B2DPolygon aLine;
+        
+        aLine.append(rTransformation * basegfx::B2DPoint(0.0, 0.0));
+        aLine.append(rTransformation * basegfx::B2DPoint(1.0, 0.0));
+        maPathPolygon = basegfx::B2DPolyPolygon(aLine);
+    }
+    else
+    {
+	    // remember current ObjectTransformation
+	    basegfx::B2DHomMatrix aOldObjectTransformation(getSdrObjectTransformation());
+
+	    // call parent
+	    SdrTextObj::setSdrObjectTransformation(rTransformation);
+
+	    // need to adapt the object-coordinate representation of maPathPolygon
+	    const basegfx::B2DHomMatrix aNewObjectTransformation(getSdrObjectTransformation());
+
+	    if(aOldObjectTransformation != aNewObjectTransformation)
+        {
+		    aOldObjectTransformation.invert();
+		    aOldObjectTransformation = aNewObjectTransformation * aOldObjectTransformation;
+		    maPathPolygon.transform(aOldObjectTransformation);
+	    }
+    }
+}
+
+bool SdrPathObj::isClosed() const
+{
+    return maPathPolygon.isClosed();
+}
+
+bool SdrPathObj::isLine() const
+{
+	return (1 == maPathPolygon.count() && 2 == maPathPolygon.getB2DPolygon(0).count());
+}
+
+bool SdrPathObj::isBezier() const
+{
+    return maPathPolygon.areControlPointsUsed();
 }
 
 //////////////////////////////////////////////////////////////////////////////

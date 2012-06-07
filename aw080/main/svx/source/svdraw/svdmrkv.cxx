@@ -567,8 +567,7 @@ bool SdrMarkView::ImpIsFrameHandles() const
 	    {
 			const sal_uInt16 nIdent(pObj->GetObjIdentifier());
 			
-			if(OBJ_LINE == nIdent 
-				|| OBJ_EDGE == nIdent 
+			if(OBJ_EDGE == nIdent 
 				|| OBJ_CAPTION == nIdent 
 				|| OBJ_MEASURE == nIdent 
 				|| OBJ_CUSTOMSHAPE == nIdent 
@@ -576,6 +575,16 @@ bool SdrMarkView::ImpIsFrameHandles() const
 			{
 				bFrmHdl = false;
 			}
+
+            if(bFrmHdl && OBJ_POLY == nIdent)
+            {
+                const SdrPathObj* pPath = dynamic_cast< const SdrPathObj* >(pObj);
+
+                if(pPath && pPath->isLine())
+                {
+    				bFrmHdl = false;
+                }
+            }
 		}
 	}
 

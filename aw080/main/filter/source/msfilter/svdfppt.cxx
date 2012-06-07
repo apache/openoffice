@@ -7336,8 +7336,8 @@ bool IsLine( const SdrObject* pObj )
 	const SdrPathObj* pSdrPathObj = dynamic_cast< const SdrPathObj* >(pObj);
 
 	if(pSdrPathObj)
-{
-		return pSdrPathObj->IsLine() && 2 == pSdrPathObj->GetObjectPointCount();
+    {
+		return pSdrPathObj->isLine();
 	}
 
 	return false;

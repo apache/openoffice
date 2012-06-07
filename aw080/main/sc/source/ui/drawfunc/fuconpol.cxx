@@ -168,71 +168,60 @@ sal_Bool __EXPORT FuConstPolygon::KeyInput(const KeyEvent& rKEvt)
 void FuConstPolygon::Activate()
 {
 	pView->EnableExtendedMouseEventDispatcher(sal_True);
-	SdrObjKind eKind;
-	bool bCreateFreehandMode(false);
-	SdrPathObjType aSdrPathObjType(PathType_OpenPolygon);
+    SdrObjectCreationInfo aSdrObjectCreationInfo;
 
 	switch (GetSlotID())
 	{
 		case SID_DRAW_POLYGON_NOFILL:
 		case SID_DRAW_XPOLYGON_NOFILL:
 		{
-			eKind = OBJ_PLIN;
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_OpenPolygon);
 		}
 		break;
 
 		case SID_DRAW_POLYGON:
 		case SID_DRAW_XPOLYGON:
 		{
-			eKind = OBJ_POLY;
-			aSdrPathObjType = PathType_ClosedPolygon;
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_ClosedPolygon);
 		}
 		break;
 
 		case SID_DRAW_BEZIER_NOFILL:
 		{
-			eKind = OBJ_PATHLINE;
-			aSdrPathObjType = PathType_OpenBezier;
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_OpenBezier);
 		}
 		break;
 
 		case SID_DRAW_BEZIER_FILL:
 		{
-			eKind = OBJ_PATHFILL;
-			aSdrPathObjType = PathType_ClosedBezier;
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_ClosedBezier);
 		}
 		break;
 
 		case SID_DRAW_FREELINE_NOFILL:
 		{
-			eKind = OBJ_FREELINE;
-			bCreateFreehandMode = true;
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_OpenBezier);
+            aSdrObjectCreationInfo.setFreehandMode(true);
 		}
 		break;
 
 		case SID_DRAW_FREELINE:
 		{
-			eKind = OBJ_FREEFILL;
-			bCreateFreehandMode = true;
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_ClosedBezier);
+            aSdrObjectCreationInfo.setFreehandMode(true);
 		}
 		break;
 
 		default:
 		{
-			eKind = OBJ_PATHLINE;
-			aSdrPathObjType = PathType_OpenBezier;
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_OpenBezier);
 		}
 		break;
 	}
 
-    pView->SetCurrentObj(sal::static_int_cast<sal_uInt16>(eKind));
-	pView->setCreateFreehandMode(bCreateFreehandMode);
-	pView->setTargetSdrPathObjType(aSdrPathObjType);
-
+    pView->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 	pView->SetViewEditMode(SDREDITMODE_CREATE);
-
 	FuConstruct::Activate();
-
 	aNewPointer = Pointer( POINTER_DRAW_POLYGON );
 	aOldPointer = pWindow->GetPointer();
 	pViewShell->SetActivePointer( aNewPointer );
@@ -265,8 +254,7 @@ SdrObject* FuConstPolygon::CreateDefaultObject(const sal_uInt16 nID, const baseg
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		pView->getSdrModelFromSdrView(),
-		pView->GetCurrentObjInventor(), 
-		pView->GetCurrentObjIdentifier());
+		pView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

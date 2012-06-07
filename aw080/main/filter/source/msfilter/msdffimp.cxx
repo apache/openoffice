@@ -521,14 +521,6 @@ void SvxMSDffManager::SolveSolver( const SvxMSDffSolverContainer& rSolver )
 							}
 							break;
 							case OBJ_POLY :
-							case OBJ_PLIN :
-							case OBJ_LINE :
-							case OBJ_PATHLINE :
-							case OBJ_PATHFILL :
-							case OBJ_FREELINE :
-							case OBJ_FREEFILL :
-							case OBJ_PATHPOLY :
-							case OBJ_PATHPLIN :
 							{
 								if ( pList && ( pList->GetCount() > nC ) )
 								{
@@ -4379,7 +4371,6 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 				aPoly.append(aObjData.aBoundRect.getMaximum());
 				pRet = new SdrPathObj(
 					*GetModel(),
-					OBJ_LINE, 
 					basegfx::B2DPolyPolygon(aPoly));
 				//pRet->SetModel( pSdrModel );
 				ApplyAttributes( rSt, aSet, aObjData );

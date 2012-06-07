@@ -102,7 +102,7 @@ void SdrPolyEditView::CheckPolyPossibilitiesHelper(
 		
 	if(nMarkedPntAnz) 
 	{
-		const bool bClosed(rMarkedSdrPathObj.IsClosed());
+		const bool bClosed(rMarkedSdrPathObj.isClosed());
 		mbSetMarkedPointsSmoothPossible = true;
 			
 		if(bClosed) 

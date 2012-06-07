@@ -30,6 +30,7 @@
 #include <tools/debug.hxx>
 #include "drwlayer.hxx"
 #include "rechead.hxx"
+#include <svx/sdrobjectfactory.hxx>
 
 // -----------------------------------------------------------------------
 
@@ -45,14 +46,20 @@ ScDrawObjFactory::~ScDrawObjFactory()
 
 IMPL_LINK_INLINE_START( ScDrawObjFactory, MakeUserData, SdrObjFactory *, pObjFactory )
 {
-	if ( pObjFactory->mnInventor == SC_DRAWLAYER )
+	if ( SC_DRAWLAYER == pObjFactory->getSdrObjectCreationInfo().getInvent() )
 	{
-		if ( pObjFactory->mnIdentifier == SC_UD_OBJDATA )
-			pObjFactory->mpNewData = new ScDrawObjData;
-		else if ( pObjFactory->mnIdentifier == SC_UD_IMAPDATA )
-			pObjFactory->mpNewData = new ScIMapInfo;
-		else if ( pObjFactory->mnIdentifier == SC_UD_MACRODATA )
-			pObjFactory->mpNewData = new ScMacroInfo;
+		if ( pObjFactory->getSdrObjectCreationInfo().getIdent() == SC_UD_OBJDATA )
+        {
+			pObjFactory->setNewSdrObjUserData(new ScDrawObjData);
+        }
+		else if ( pObjFactory->getSdrObjectCreationInfo().getIdent() == SC_UD_IMAPDATA )
+        {
+			pObjFactory->setNewSdrObjUserData(new ScIMapInfo);
+        }
+		else if ( pObjFactory->getSdrObjectCreationInfo().getIdent() == SC_UD_MACRODATA )
+        {
+			pObjFactory->setNewSdrObjUserData(new ScMacroInfo);
+        }
 		else
 		{
 			DBG_ERROR("MakeUserData: falsche ID");

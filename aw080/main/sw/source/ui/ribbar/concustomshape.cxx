@@ -148,7 +148,7 @@ sal_Bool ConstCustomShape::MouseButtonUp(const MouseEvent& rMEvt)
 
 void ConstCustomShape::Activate(const sal_uInt16 nSlotId)
 {
-    m_pWin->SetSdrDrawMode( OBJ_CUSTOMSHAPE );
+    m_pWin->setSdrObjectCreationInfo(SdrObjectCreationInfo(OBJ_CUSTOMSHAPE));
 
 	SwDrawBase::Activate(nSlotId);
 }

@@ -257,7 +257,6 @@ SdrAttrObj* E3dExtrudeObj::GetBreakObj()
 	    basegfx::B2DPolyPolygon aPoly = TransformToScreenCoor(aBackSide);
 		SdrPathObj* pPathObj = new SdrPathObj(
 			getSdrModelFromSdrObject(),
-			OBJ_PLIN, 
 			aPoly);
 
 		if(pPathObj)

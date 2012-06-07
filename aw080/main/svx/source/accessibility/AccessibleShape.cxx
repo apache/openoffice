@@ -1085,7 +1085,6 @@ void AccessibleShape::ViewForwarderChanged (ChangeType aChangeType,
 
         case DRAWING_CAPTION:
         case DRAWING_CLOSED_BEZIER:
-        case DRAWING_CLOSED_FREEHAND:
         case DRAWING_ELLIPSE:
         case DRAWING_POLY_POLYGON:
         case DRAWING_POLY_POLYGON_PATH:
@@ -1098,7 +1097,6 @@ void AccessibleShape::ViewForwarderChanged (ChangeType aChangeType,
         case DRAWING_LINE:
         case DRAWING_MEASURE:
         case DRAWING_OPEN_BEZIER:
-        case DRAWING_OPEN_FREEHAND:
         case DRAWING_POLY_LINE:
         case DRAWING_POLY_LINE_PATH:
             aDG.AddLineProperties ();

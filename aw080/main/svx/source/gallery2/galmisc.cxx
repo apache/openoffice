@@ -99,8 +99,11 @@ BitmapEx GalleryResGetBitmapEx( sal_uInt32 nId )
 
 IMPL_LINK( SgaUserDataFactory, MakeUserData, SdrObjFactory*, pObjFactory )
 {
-	if ( pObjFactory->mnInventor == IV_IMAPINFO && pObjFactory->mnIdentifier == ID_IMAPINFO )
-		pObjFactory->mpNewData = new SgaIMapInfo;
+	if ( IV_IMAPINFO == pObjFactory->getSdrObjectCreationInfo().getInvent() 
+        && ID_IMAPINFO == pObjFactory->getSdrObjectCreationInfo().getIdent() )
+    {
+		pObjFactory->setNewSdrObjUserData(new SgaIMapInfo);
+    }
 
 	return 0L;
 }

@@ -118,14 +118,14 @@ namespace
     }
 
 	basegfx::B2DPolygon ImpCalcXPolyCirc(
-		const SdrObjKind eCicrleKind, 
+		const SdrCircleObjType eSdrCircleObjType, 
 		const basegfx::B2DHomMatrix& rTransform, 
 		double fStart, 
 		double fEnd)
 	{
 		basegfx::B2DPolygon aCircPolygon;
 
-		if(OBJ_CIRC == eCicrleKind || basegfx::fTools::equal(fStart, fEnd))
+		if(CircleType_Circle == eSdrCircleObjType || basegfx::fTools::equal(fStart, fEnd))
         {
 			// create full circle. Do not use createPolygonFromEllipse; it's necessary 
 			// to get the start point to the bottom of the circle to keep compatible to 
@@ -141,8 +141,8 @@ namespace
 			aCircPolygon = basegfx::tools::createPolygonFromUnitEllipseSegment(fEnd, fStart);
 
 			// check closing states
-			const bool bCloseSegment(OBJ_CARC != eCicrleKind);
-			const bool bCloseUsingCenter(OBJ_SECT == eCicrleKind);
+			const bool bCloseSegment(CircleType_Arc != eSdrCircleObjType);
+			const bool bCloseUsingCenter(CircleType_Sector == eSdrCircleObjType);
 
 			if(bCloseSegment)
             {
@@ -179,7 +179,7 @@ namespace
 class SdrCircObjGeoData : public SdrObjGeoData
 {
 public:
-    SdrObjKind					meCircleKind;	// OBJ_CIRC || OBJ_CCUT || OBJ_CARC || OBJ_SECT
+    SdrCircleObjType			meSdrCircleObjType;
 	double						mfStartAngle;	// [-F_PI .. F_PI]
 	double						mfEndAngle;		// [-F_PI .. F_PI]
 };
@@ -194,14 +194,14 @@ sdr::contact::ViewContact* SdrCircObj::CreateObjectSpecificViewContact()
 
 SdrCircObj::SdrCircObj(
 	SdrModel& rSdrModel,
-	SdrObjKind eNewKind, 
+	SdrCircleObjType eSdrCircleObjType, 
 	const basegfx::B2DHomMatrix& rTransform, 
 	double fNewStartWink, 
 	double fNewEndWink)
 :	SdrRectObj(
 		rSdrModel, 
 		rTransform),
-	meCircleKind(eNewKind),
+	meSdrCircleObjType(eSdrCircleObjType),
 	mfStartAngle(fNewStartWink),
 	mfEndAngle(fNewEndWink)
 {
@@ -215,13 +215,6 @@ SdrCircObj::SdrCircObj(
     {
 		mfEndAngle = basegfx::snapToZeroRange(mfEndAngle, F_2PI);
     }
-
-	// ensure (and correct) circle kind
-	if(!(OBJ_CIRC == meCircleKind || OBJ_CCUT == meCircleKind || OBJ_CARC == meCircleKind || OBJ_SECT == meCircleKind))
-    {
-		OSL_ENSURE(false, "SdrCircObj::SdrCircObj with wrong SdrObjKind (!)");
-		meCircleKind = OBJ_CIRC;
-	}
 }
 
 SdrCircObj::~SdrCircObj()
@@ -240,7 +233,7 @@ void SdrCircObj::copyDataFromSdrObject(const SdrObject& rSource)
 			SdrRectObj::copyDataFromSdrObject(rSource);
 
 			// copy local data
-			meCircleKind = pSource->meCircleKind;
+			meSdrCircleObjType = pSource->meSdrCircleObjType;
 			mfStartAngle = pSource->mfStartAngle;
 			mfEndAngle = pSource->mfEndAngle;
 		}
@@ -263,7 +256,7 @@ SdrObject* SdrCircObj::CloneSdrObject(SdrModel* pTargetModel) const
 
 bool SdrCircObj::IsClosedObj() const
 {
-	return (OBJ_CARC != meCircleKind);
+	return (CircleType_Arc != meSdrCircleObjType);
 }
 
 double SdrCircObj::GetStartAngle() const 
@@ -276,9 +269,20 @@ double SdrCircObj::GetEndAngle() const
 	return mfEndAngle; 
 }
 
-SdrObjKind SdrCircObj::GetCircleKind() const 
+SdrCircleObjType SdrCircObj::GetSdrCircleObjType() const 
 { 
-	return meCircleKind; 
+	return meSdrCircleObjType; 
+}
+
+void SdrCircObj::SetSdrCircleObjType(SdrCircleObjType eNew)
+{
+	if(eNew != meSdrCircleObjType)
+	{
+        const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
+
+        meSdrCircleObjType = eNew;
+		SetChanged();
+	}
 }
 
 void SdrCircObj::SetStartAngle(double fNew)
@@ -288,7 +292,8 @@ void SdrCircObj::SetStartAngle(double fNew)
 	if(!basegfx::fTools::equal(fNew, mfStartAngle))
 	{
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-		mfStartAngle = fNew;
+		
+        mfStartAngle = fNew;
 		SetChanged();
 	}
 }
@@ -300,17 +305,8 @@ void SdrCircObj::SetEndAngle(double fNew)
 	if(!basegfx::fTools::equal(fNew, mfEndAngle))
 	{
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-		mfEndAngle = fNew;
-		SetChanged();
-	}
-}
-
-void SdrCircObj::SetCircleKind(SdrObjKind eNew)
-{
-	if(eNew != meCircleKind && (OBJ_CIRC == eNew || OBJ_CCUT == eNew || OBJ_CARC == eNew || OBJ_SECT == eNew))
-	{
-        const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-		meCircleKind = eNew;
+		
+        mfEndAngle = fNew;
 		SetChanged();
 	}
 }
@@ -327,7 +323,7 @@ void SdrCircObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 
 sal_uInt16 SdrCircObj::GetObjIdentifier() const
 {
-	return sal_uInt16(meCircleKind);
+	return sal_uInt16(OBJ_CIRC);
 }
 
 void SdrCircObj::TakeObjNameSingul(XubString& rName) const
@@ -338,31 +334,64 @@ void SdrCircObj::TakeObjNameSingul(XubString& rName) const
 
 	if(bOrthoScaled && !isSheared())
 	{		
-		switch (meCircleKind) 
+		switch (meSdrCircleObjType) 
 		{
-			case OBJ_CIRC: nID=STR_ObjNameSingulCIRC; break;
-			case OBJ_SECT: nID=STR_ObjNameSingulSECT; break;
-			case OBJ_CARC: nID=STR_ObjNameSingulCARC; break;
-			case OBJ_CCUT: nID=STR_ObjNameSingulCCUT; break;
+			case CircleType_Circle: 
+            {
+                nID = STR_ObjNameSingulCIRC; 
+                break;
+            }
+			case CircleType_Sector: 
+            {
+                nID = STR_ObjNameSingulSECT; 
+                break;
+            }
+			case CircleType_Arc: 
+            {
+                nID = STR_ObjNameSingulCARC; 
+                break;
+            }
+			case CircleType_Segment: 
+            {
+                nID = STR_ObjNameSingulCCUT; 
+                break;
+            }
 			default: break;
 		}
 	} 
 	else 
 	{
-		switch (meCircleKind) 
+		switch (meSdrCircleObjType) 
 		{
-			case OBJ_CIRC: nID=STR_ObjNameSingulCIRCE; break;
-			case OBJ_SECT: nID=STR_ObjNameSingulSECTE; break;
-			case OBJ_CARC: nID=STR_ObjNameSingulCARCE; break;
-			case OBJ_CCUT: nID=STR_ObjNameSingulCCUTE; break;
+			case CircleType_Circle: 
+            {
+                nID = STR_ObjNameSingulCIRCE; 
+                break;
+            }
+			case CircleType_Sector: 
+            {
+                nID = STR_ObjNameSingulSECTE; 
+                break;
+            }
+			case CircleType_Arc: 
+            {
+                nID = STR_ObjNameSingulCARCE; 
+                break;
+            }
+			case CircleType_Segment: 
+            {
+                nID = STR_ObjNameSingulCCUTE; 
+                break;
+            }
 			default: break;
 		}
 	}
 
-	rName=ImpGetResStr(nID);
+	rName = ImpGetResStr(nID);
 
 	String aName( GetName() );
-	if(aName.Len())
+
+    if(aName.Len())
 	{
 		rName += sal_Unicode(' ');
 		rName += sal_Unicode('\'');
@@ -379,35 +408,67 @@ void SdrCircObj::TakeObjNamePlural(XubString& rName) const
 
 	if(bOrthoScaled && !isSheared())
 	{
-		switch (meCircleKind) 
+		switch (meSdrCircleObjType) 
 		{
-			case OBJ_CIRC: nID=STR_ObjNamePluralCIRC; break;
-			case OBJ_SECT: nID=STR_ObjNamePluralSECT; break;
-			case OBJ_CARC: nID=STR_ObjNamePluralCARC; break;
-			case OBJ_CCUT: nID=STR_ObjNamePluralCCUT; break;
+			case CircleType_Circle: 
+            {
+                nID = STR_ObjNamePluralCIRC; 
+                break;
+            }
+			case CircleType_Sector: 
+            {
+                nID = STR_ObjNamePluralSECT; 
+                break;
+            }
+			case CircleType_Arc: 
+            {
+                nID = STR_ObjNamePluralCARC; 
+                break;
+            }
+			case CircleType_Segment: 
+            {
+                nID = STR_ObjNamePluralCCUT; 
+                break;
+            }
 			default: break;
 		}
 	} 
 	else 
 	{
-		switch (meCircleKind) 
+		switch (meSdrCircleObjType) 
 		{
-			case OBJ_CIRC: nID=STR_ObjNamePluralCIRCE; break;
-			case OBJ_SECT: nID=STR_ObjNamePluralSECTE; break;
-			case OBJ_CARC: nID=STR_ObjNamePluralCARCE; break;
-			case OBJ_CCUT: nID=STR_ObjNamePluralCCUTE; break;
+			case CircleType_Circle: 
+            {
+                nID = STR_ObjNamePluralCIRCE; 
+                break;
+            }
+			case CircleType_Sector: 
+            {
+                nID = STR_ObjNamePluralSECTE; 
+                break;
+            }
+			case CircleType_Arc: 
+            {
+                nID = STR_ObjNamePluralCARCE; 
+                break;
+            }
+			case CircleType_Segment: 
+            {
+                nID = STR_ObjNamePluralCCUTE; 
+                break;
+            }
 			default: break;
 		}
 	}
 
-	rName=ImpGetResStr(nID);
+	rName = ImpGetResStr(nID);
 }
 
 basegfx::B2DPolyPolygon SdrCircObj::TakeXorPoly() const
 {
 	const basegfx::B2DPolygon aCircPolygon(
 		ImpCalcXPolyCirc(
-			GetCircleKind(),
+			GetSdrCircleObjType(),
 			getSdrObjectTransformation(), 
 			GetStartAngle(), 
 			GetEndAngle()));
@@ -417,7 +478,7 @@ basegfx::B2DPolyPolygon SdrCircObj::TakeXorPoly() const
 
 void SdrCircObj::AddToHdlList(SdrHdlList& rHdlList) const
 {
-	if(OBJ_CIRC != meCircleKind) 
+	if(CircleType_Circle != meSdrCircleObjType) 
 	{
 		// start angle handle
 		basegfx::B2DPoint aStart(0.5 + (cos(GetStartAngle()) * 0.5), 0.5 + (sin(GetStartAngle()) * 0.5));
@@ -508,7 +569,7 @@ String SdrCircObj::getSpecialDragComment(const SdrDragStat& rDrag) const
 		TakeMarkedDescriptionString(STR_ViewCreateObj, aStr);
 		const sal_uInt32 nPntAnz(rDrag.GetPointAnz());
 
-		if(OBJ_CIRC != meCircleKind && nPntAnz > 2)
+		if(CircleType_Circle != meSdrCircleObjType && nPntAnz > 2)
 		{
 			double fWink(0.0);
 
@@ -582,10 +643,10 @@ bool SdrCircObj::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd)
 
 	if(SDRCREATE_FORCEEND == eCmd && nPntAnz < 4) 
     {
-		meCircleKind = OBJ_CIRC;
+		meSdrCircleObjType = CircleType_Circle;
     }
 
-	if(OBJ_CIRC == meCircleKind) 
+	if(CircleType_Circle == meSdrCircleObjType) 
     {
 		bRet = (nPntAnz >= 2);
 
@@ -621,7 +682,7 @@ bool SdrCircObj::BckCreate(SdrDragStat& rStat)
 	rStat.SetNoSnap(nPntAnz >= 3);
 	rStat.SetOrtho4Possible(nPntAnz < 3);
 
-	return (OBJ_CIRC != meCircleKind);
+	return (CircleType_Circle != meSdrCircleObjType);
 }
 
 basegfx::B2DPolyPolygon SdrCircObj::TakeCreatePoly(const SdrDragStat& rDrag) const
@@ -630,10 +691,10 @@ basegfx::B2DPolyPolygon SdrCircObj::TakeCreatePoly(const SdrDragStat& rDrag) con
 
 	if(nPntAnz < 4)
 	{
-		// force to OBJ_CIRC to get full visualisation
+		// force to CircleType_Circle to get full visualisation
 		basegfx::B2DPolyPolygon aRetval(
 			ImpCalcXPolyCirc(
-				OBJ_CIRC, 
+				CircleType_Circle, 
 				getSdrObjectTransformation(), 
 				0.0, 
 				0.0));
@@ -656,7 +717,7 @@ basegfx::B2DPolyPolygon SdrCircObj::TakeCreatePoly(const SdrDragStat& rDrag) con
 	{
 		return basegfx::B2DPolyPolygon(
 			ImpCalcXPolyCirc(
-				GetCircleKind(),
+				GetSdrCircleObjType(),
 				getSdrObjectTransformation(), 
 				GetStartAngle(), 
 				GetEndAngle()));
@@ -665,12 +726,12 @@ basegfx::B2DPolyPolygon SdrCircObj::TakeCreatePoly(const SdrDragStat& rDrag) con
 
 Pointer SdrCircObj::GetCreatePointer(const SdrView& /*rSdrView*/) const
 {
-	switch (meCircleKind) 
+	switch (meSdrCircleObjType) 
     {
-		case OBJ_CIRC: return Pointer(POINTER_DRAW_ELLIPSE);
-		case OBJ_SECT: return Pointer(POINTER_DRAW_PIE);
-		case OBJ_CARC: return Pointer(POINTER_DRAW_ARC);
-		case OBJ_CCUT: return Pointer(POINTER_DRAW_CIRCLECUT);
+		case CircleType_Circle: return Pointer(POINTER_DRAW_ELLIPSE);
+		case CircleType_Sector: return Pointer(POINTER_DRAW_PIE);
+		case CircleType_Arc: return Pointer(POINTER_DRAW_ARC);
+		case CircleType_Segment: return Pointer(POINTER_DRAW_CIRCLECUT);
 		default: break;
     }
 
@@ -689,7 +750,7 @@ void SdrCircObj::SaveGeoData(SdrObjGeoData& rGeo) const
 
 	if(pCGeo)
 	{
-		pCGeo->meCircleKind = GetCircleKind();
+		pCGeo->meSdrCircleObjType = GetSdrCircleObjType();
 		pCGeo->mfStartAngle = GetStartAngle();
 		pCGeo->mfEndAngle = GetEndAngle();
 	}
@@ -702,7 +763,7 @@ void SdrCircObj::RestGeoData(const SdrObjGeoData& rGeo)
 
 	if(pCGeo)
     {
-		SetCircleKind(pCGeo->meCircleKind);
+		SetSdrCircleObjType(pCGeo->meSdrCircleObjType);
 		SetStartAngle(pCGeo->mfStartAngle);
 		SetEndAngle(pCGeo->mfEndAngle);
 	}
@@ -710,7 +771,7 @@ void SdrCircObj::RestGeoData(const SdrObjGeoData& rGeo)
 
 sal_uInt32 SdrCircObj::GetSnapPointCount() const
 {
-	if(OBJ_CIRC == meCircleKind) 
+	if(CircleType_Circle == meSdrCircleObjType) 
     {
 		return 1;
     }
@@ -748,10 +809,10 @@ basegfx::B2DPoint SdrCircObj::GetSnapPoint(sal_uInt32 i) const
 
 SdrObject* SdrCircObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) const
 {
-	const bool bCanBeFilled(OBJ_CARC != meCircleKind);
+	const bool bCanBeFilled(CircleType_Arc != meSdrCircleObjType);
 	const basegfx::B2DPolygon aCircPolygon(
 		ImpCalcXPolyCirc(
-			GetCircleKind(),
+			GetSdrCircleObjType(),
 			getSdrObjectTransformation(), 
 			GetStartAngle(), 
 			GetEndAngle()));

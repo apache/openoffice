@@ -91,14 +91,14 @@ uno::Reference< drawing::XShape >  OReportDrawPage::_CreateShape( SdrObject *pOb
 
             SvxShapeControl* pShape = new SvxShapeControl( pObj );
             xShape.set(*pShape,uno::UNO_QUERY);
-            pShape->setShapeKind(pObj->GetObjIdentifier());
+            pShape->setSvxShapeKind(SdrObjectCreatorInventorToSvxShapeKind(pObj->GetObjIdentifier(), pObj->GetObjInventor()));
         }
 		else if ( dynamic_cast< OCustomShape* >(pObj) )
 		{
 			SvxCustomShape* pShape = new SvxCustomShape( pObj );
             uno::Reference < drawing::XEnhancedCustomShapeDefaulter > xShape2 = pShape;
             xShape.set(xShape2,uno::UNO_QUERY);
-			pShape->setShapeKind(pObj->GetObjIdentifier());
+			pShape->setSvxShapeKind(SdrObjectCreatorInventorToSvxShapeKind(pObj->GetObjIdentifier(), pObj->GetObjInventor()));
 		}
         else 
         {
@@ -133,7 +133,7 @@ uno::Reference< drawing::XShape >  OReportDrawPage::_CreateShape( SdrObject *pOb
             }
 			SvxOle2Shape* pShape = new SvxOle2Shape( pObj );
             xShape.set(*pShape,uno::UNO_QUERY);
-			pShape->setShapeKind(pObj->GetObjIdentifier());
+			pShape->setSvxShapeKind(SdrObjectCreatorInventorToSvxShapeKind(pObj->GetObjIdentifier(), pObj->GetObjInventor()));
 			//xShape = new SvxOle2Shape( pOle2Obj );
         }
 		}

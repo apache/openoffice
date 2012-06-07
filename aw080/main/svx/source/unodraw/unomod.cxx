@@ -58,8 +58,6 @@
 #include <svx/svdpage.hxx>
 #include <svx/unoshape.hxx>
 
-extern UHashMapEntry pSdrShapeIdentifierMap[];
-
 //-////////////////////////////////////////////////////////////////////
 
 using namespace ::rtl;
@@ -191,18 +189,17 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoDrawMSFactory::createInstance( 
 
 	if( ServiceSpecifier.compareTo( aDrawingPrefix, aDrawingPrefix.getLength() ) == 0 )
 	{
-		sal_uInt32 nType = aSdrShapeIdentifierMap.getId( ServiceSpecifier );
-		if( nType != UHASHMAP_NOTFOUND )
-		{
-			sal_uInt16 nT = (sal_uInt16)(nType & ~E3D_INVENTOR_FLAG);
-			sal_uInt32 nI = (nType & E3D_INVENTOR_FLAG)?E3dInventor:SdrInventor;
+        SvxShapeKind aSvxShapeKind(getSvxShapeKindFromTypeName(ServiceSpecifier));
 
-			return uno::Reference< uno::XInterface >( (drawing::XShape*) SvxDrawPage::CreateShapeByTypeAndInventor( nT, nI ) );
+        if(SvxShapeKind_None != aSvxShapeKind)
+		{
+			return uno::Reference< uno::XInterface >(static_cast< drawing::XShape* >(SvxDrawPage::CreateShapeBySvxShapeKind(aSvxShapeKind)));
 		}
 	}
 
 	uno::Reference< uno::XInterface > xRet( createTextField( ServiceSpecifier ) );
-	if( !xRet.is() )
+
+    if( !xRet.is() )
 		throw lang::ServiceNotRegisteredException();
 
 	return xRet;
@@ -222,28 +219,21 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoDrawMSFactory::createInstanceWi
 uno::Sequence< OUString > SAL_CALL SvxUnoDrawMSFactory::getAvailableServiceNames()
 	throw( uno::RuntimeException )
 {
-	UHashMapEntry* pMap = pSdrShapeIdentifierMap;
+    const std::vector< rtl::OUString > aAllNames(getAllSvxShapeTypeNames());
+    const sal_uInt32 nCount(aAllNames.size());
+   	uno::Sequence< OUString > aSeq(nCount);
 
-	sal_uInt32 nCount = 0;
-	while (pMap->aIdentifier.getLength())
-	{
-		pMap++;
-		nCount++;
-	}
+    if(nCount)
+    {
+    	OUString* pStrings = aSeq.getArray();
 
-	uno::Sequence< OUString > aSeq( nCount );
-	OUString* pStrings = aSeq.getArray();
+        for(sal_uInt32 a(0); a < nCount; a++)
+        {
+            pStrings[a] = aAllNames[a];
+        }
+    }
 
-	pMap = pSdrShapeIdentifierMap;
-	sal_uInt32 nIdx = 0;
-	while(pMap->aIdentifier.getLength())
-	{
-		pStrings[nIdx] = pMap->aIdentifier;
-		pMap++;
-		nIdx++;
-	}
-
-	return aSeq;
+    return aSeq;
 }
 
 uno::Sequence< OUString > SvxUnoDrawMSFactory::concatServiceNames( uno::Sequence< OUString >& rServices1, uno::Sequence< OUString >& rServices2 ) throw()
@@ -457,72 +447,72 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoDrawingModel::createInstance( c
 	if( aType.EqualsAscii( "com.sun.star.presentation.", 0, 26 ) )
 	{
 		SvxShape* pShape = NULL;
+        SvxShapeKind aSvxShapeKind(SvxShapeKind_Text);
 
-		sal_uInt16 nType = OBJ_TEXT;
 		// create a shape wrapper
 		if( aType.EqualsAscii( "TitleTextShape", 26, 14 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "OutlinerShape", 26, 13 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "SubtitleShape", 26, 13 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "GraphicObjectShape", 26, 18 ) )
 		{
-			nType = OBJ_GRAF;
+			aSvxShapeKind = SvxShapeKind_Graphic;
 		}
 		else if( aType.EqualsAscii( "PageShape", 26, 9 ) )
 		{
-			nType = OBJ_PAGE;
+			aSvxShapeKind = SvxShapeKind_Page;
 		}
 		else if( aType.EqualsAscii( "OLE2Shape", 26, 9 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "ChartShape", 26, 10 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "TableShape", 26, 10 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "OrgChartShape", 26, 13 ) )
 		{
-			nType = OBJ_OLE2;
+			aSvxShapeKind = SvxShapeKind_OLE2;
 		}
 		else if( aType.EqualsAscii( "NotesShape", 26, 10 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "HandoutShape", 26, 12 ) )
 		{
-			nType = OBJ_PAGE;
+			aSvxShapeKind = SvxShapeKind_Page;
 		}
 		else if( aType.EqualsAscii( "FooterShape", 26, 12 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "HeaderShape", 26, 12 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "SlideNumberShape", 26, 17 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "DateTimeShape", 26, 17 ) )
 		{
-			nType = OBJ_TEXT;
+			aSvxShapeKind = SvxShapeKind_Text;
 		}
 		else if( aType.EqualsAscii( "TableShape", 26, 10 ) )
 		{
-			nType = OBJ_TABLE;
+			aSvxShapeKind = SvxShapeKind_Table;
 		}
 		else
 		{
@@ -530,7 +520,7 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoDrawingModel::createInstance( c
 		}
 
 		// create the API wrapper
-		pShape = CreateSvxShapeByTypeAndInventor( nType, SdrInventor );
+		pShape = SvxDrawPage::CreateShapeBySvxShapeKind(aSvxShapeKind);
 
 		// set shape type
 		if( pShape )

@@ -682,21 +682,46 @@ void DrawViewShell::Command(const CommandEvent& rCEvt, ::sd::Window* pWin)
 																	RID_DRAW_TEXTOBJ_POPUP;
 										break;
 
-									case OBJ_PATHLINE:
-									case OBJ_PLIN:
-										nSdResId = bGraphicShell ? RID_GRAPHIC_POLYLINEOBJ_POPUP :
-																	RID_DRAW_POLYLINEOBJ_POPUP;
-										break;
+                                    case OBJ_POLY:
+                                    {
+                                        SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
 
-									case OBJ_FREELINE:
+                                        if(pSdrPathObj)
+                                        {
+                                            switch(pSdrPathObj->getSdrPathObjType())
+                                            {
+                                                case PathType_Line:
+                                                {
+										            nSdResId = bGraphicShell ? RID_GRAPHIC_LINEOBJ_POPUP :
+																	            RID_DRAW_LINEOBJ_POPUP;
+                                                    break;
+                                                }
+                                                case PathType_OpenPolygon:
+                                                case PathType_OpenBezier:
+                                                {
+										            nSdResId = bGraphicShell ? RID_GRAPHIC_POLYLINEOBJ_POPUP :
+																	            RID_DRAW_POLYLINEOBJ_POPUP;
+                                                    break;
+                                                }
+                                                case PathType_ClosedPolygon:
+                                                case PathType_ClosedBezier:
+                                                {
+										            nSdResId = bGraphicShell ? RID_GRAPHIC_GEOMOBJ_POPUP :
+																	            RID_DRAW_GEOMOBJ_POPUP;
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                            OSL_ENSURE(false, "OOps, SdrObjKind and dynamic_cast do not fit (!)");
+                                        }
+                                        break;
+                                    }
+
 									case OBJ_EDGE:		// Connector
 										nSdResId = bGraphicShell ? RID_GRAPHIC_EDGEOBJ_POPUP :
 																	RID_DRAW_EDGEOBJ_POPUP;
-										break;
-
-									case OBJ_LINE:
-										nSdResId = bGraphicShell ? RID_GRAPHIC_LINEOBJ_POPUP :
-																	RID_DRAW_LINEOBJ_POPUP;
 										break;
 
 									case OBJ_MEASURE:
@@ -706,12 +731,6 @@ void DrawViewShell::Command(const CommandEvent& rCEvt, ::sd::Window* pWin)
 
 									case OBJ_RECT:
 									case OBJ_CIRC:
-									case OBJ_FREEFILL:
-									case OBJ_PATHFILL:
-									case OBJ_POLY:
-									case OBJ_SECT:
-									case OBJ_CARC:
-									case OBJ_CCUT:
 										nSdResId = bGraphicShell ? RID_GRAPHIC_GEOMOBJ_POPUP :
 																	RID_DRAW_GEOMOBJ_POPUP;
 										break;

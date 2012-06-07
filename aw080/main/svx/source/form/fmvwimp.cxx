@@ -1462,7 +1462,8 @@ SdrObject* FmXFormView::implCreateXFormsControl( const ::svx::OXFormsDescriptor 
 			const sal_uInt16 nObjID = OBJ_FM_BUTTON;
 			::Size controlSize(4000, 500);
 			FmFormObj* pControl = static_cast< FmFormObj* >(SdrObjFactory::MakeNewObject( 
-				getView()->getSdrModelFromSdrView(), FmFormInventor, nObjID ));
+				getView()->getSdrModelFromSdrView(), 
+                SdrObjectCreationInfo(nObjID, FmFormInventor)));
 			controlSize.Width() = Fraction(controlSize.Width(), 1) * eTargetMode.GetScaleX();
 			controlSize.Height() = Fraction(controlSize.Height(), 1) * eTargetMode.GetScaleY();
 			::Point controlPos( pOutDev->LogicToLogic( ::Point( controlSize.Width(), 0 ), eSourceMode, eTargetMode ) );
@@ -1566,7 +1567,8 @@ bool FmXFormView::createControlLabelPair( const ::comphelper::ComponentContext& 
     if ( bNeedLabel )
     {
         pLabel = dynamic_cast< SdrUnoObj* >(SdrObjFactory::MakeNewObject( 
-			*_pModel, _nInventor, _nLabelObjectID ));
+			*_pModel, 
+            SdrObjectCreationInfo(_nLabelObjectID, _nInventor)));
         OSL_ENSURE( pLabel, "FmXFormView::createControlLabelPair: could not create the label!" );
         if ( !pLabel )
             return false;
@@ -1594,7 +1596,8 @@ bool FmXFormView::createControlLabelPair( const ::comphelper::ComponentContext& 
 
 	// the control
     SdrUnoObj* pControl = dynamic_cast< SdrUnoObj* >(SdrObjFactory::MakeNewObject( 
-		*_pModel, _nInventor, _nControlObjectID ));
+		*_pModel, 
+        SdrObjectCreationInfo(_nControlObjectID, _nInventor)));
     OSL_ENSURE( pControl, "FmXFormView::createControlLabelPair: could not create the control!" );
     if ( !pControl )
         return false;

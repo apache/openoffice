@@ -1514,7 +1514,7 @@ sal_Bool SwFEShell::GotoObj( sal_Bool bNext, sal_uInt16 /*GOTOOBJ_...*/ eType )
 |*
 *************************************************************************/
 
-bool SwFEShell::BeginCreate( sal_uInt16 /*SdrObjKind ?*/  eSdrObjectKind, const basegfx::B2DPoint& rPos )
+bool SwFEShell::BeginCreate(const SdrObjectCreationInfo& rSdrObjectCreationInfo, const basegfx::B2DPoint& rPos )
 {
 	bool bRet(false);
 
@@ -1523,37 +1523,24 @@ bool SwFEShell::BeginCreate( sal_uInt16 /*SdrObjKind ?*/  eSdrObjectKind, const 
 
 	if ( GetPageNumber( rPos ) )
 	{
-		Imp()->GetDrawView()->SetCurrentObj( eSdrObjectKind );
-		if ( eSdrObjectKind == OBJ_CAPTION )
+		Imp()->GetDrawView()->setSdrObjectCreationInfo(rSdrObjectCreationInfo);
+
+        if(OBJ_CAPTION == rSdrObjectCreationInfo.getIdent())
+        {
 			bRet = Imp()->GetDrawView()->BegCreateCaptionObj(
 						rPos, 
-						basegfx::B2DVector(lMinBorder - MINFLY, lMinBorder - MINFLY),
-						GetOut() );
+						basegfx::B2DVector(lMinBorder - MINFLY, lMinBorder - MINFLY));
+        }
 		else
-			bRet = Imp()->GetDrawView()->BegCreateObj( rPos, GetOut() );
+        {
+			bRet = Imp()->GetDrawView()->BegCreateObj( rPos );
+        }
 	}
 	if ( bRet )
     {
         ::FrameNotify( this, FLY_DRAG_START );
     }
 
-	return bRet;
-}
-
-bool SwFEShell::BeginCreate( sal_uInt16 /*SdrObjKind ?*/  eSdrObjectKind, sal_uInt32 eObjInventor, const basegfx::B2DPoint& rPos )
-{
-	bool bRet(false);
-
-	if ( !Imp()->HasDrawView() )
-		Imp()->MakeDrawView();
-
-	if ( GetPageNumber( rPos ) )
-	{
-		Imp()->GetDrawView()->SetCurrentObj( eSdrObjectKind, eObjInventor );
-		bRet = Imp()->GetDrawView()->BegCreateObj( rPos, GetOut() );
-	}
-	if ( bRet )
-		::FrameNotify( this, FLY_DRAG_START );
 	return bRet;
 }
 
@@ -2870,21 +2857,23 @@ long SwFEShell::GetSectionWidth( SwFmt& rFmt ) const
 	return 0;
 }
 
-void SwFEShell::CreateDefaultShape( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, const Rectangle& rRect,
-                sal_uInt16 nSlotId)
+void SwFEShell::CreateDefaultShape(const SdrObjectCreationInfo& rSdrObjectCreationInfo, const Rectangle& rRect, sal_uInt16 nSlotId)
 {
     SdrView* pDrawView = GetDrawView();
     SdrObject* pObj = 0;
 	
 	if(pDrawView)
 	{
-		pObj = SdrObjFactory::MakeNewObject(pDrawView->getSdrModelFromSdrView(), SdrInventor, eSdrObjectKind);
+		pObj = SdrObjFactory::MakeNewObject(pDrawView->getSdrModelFromSdrView(), rSdrObjectCreationInfo);
 	}
 
 	if(pObj)
 	{
         Rectangle aRect(rRect);
-        if(OBJ_CARC == eSdrObjectKind || OBJ_CCUT == eSdrObjectKind)
+
+        if(OBJ_CIRC == rSdrObjectCreationInfo.getIdent()
+            && (CircleType_Arc == rSdrObjectCreationInfo.getSdrCircleObjType() 
+                || CircleType_Segment == rSdrObjectCreationInfo.getSdrCircleObjType()))
         {
             // force quadratic
             if(aRect.GetWidth() > aRect.GetHeight())
@@ -2903,63 +2892,69 @@ void SwFEShell::CreateDefaultShape( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, 
         sdr::legacy::SetLogicRect(*pObj, aRect);
 
 		SdrCircObj* pSdrCircObj = dynamic_cast< SdrCircObj* >(pObj);
+        SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
+        SdrCaptionObj* pSdrCaptionObj = dynamic_cast< SdrCaptionObj* >(pObj);
+        SdrTextObj* pSdrTextObj = dynamic_cast< SdrTextObj* >(pObj);
 
 		if(pSdrCircObj)
 		{
 			pSdrCircObj->SetStartAngle(F_PI2); // TTTT formally 9000, needs check (mirror?)
 			pSdrCircObj->SetEndAngle(0.0);
         }
-        else if(dynamic_cast< SdrPathObj* >(pObj))
+        else if(pSdrPathObj)
 		{
 			basegfx::B2DPolyPolygon aPoly;
 
-            switch(eSdrObjectKind)
+            switch(pSdrPathObj->getSdrPathObjType())
 			{
-                case OBJ_PATHLINE:
+                case PathType_OpenBezier:
+                case PathType_ClosedBezier:
 				{
-					basegfx::B2DPolygon aInnerPoly;
+                    if(rSdrObjectCreationInfo.getFreehandMode())
+                    {
+					    basegfx::B2DPolygon aInnerPoly;
 
-					aInnerPoly.append(basegfx::B2DPoint(aRect.Left(), aRect.Bottom()));
+					    aInnerPoly.append(basegfx::B2DPoint(aRect.Left(), aRect.Bottom()));
 
-					const basegfx::B2DPoint aCenterBottom(aRect.Center().X(), aRect.Bottom());
-					aInnerPoly.appendBezierSegment(
-						aCenterBottom,
-						aCenterBottom,
-						basegfx::B2DPoint(aRect.Center().X(), aRect.Center().Y()));
+					    aInnerPoly.appendBezierSegment(
+						    basegfx::B2DPoint(aRect.Left(), aRect.Top()),
+						    basegfx::B2DPoint(aRect.Center().X(), aRect.Top()),
+						    basegfx::B2DPoint(aRect.Center().X(), aRect.Center().Y()));
 
-					const basegfx::B2DPoint aCenterTop(aRect.Center().X(), aRect.Top());
-					aInnerPoly.appendBezierSegment(
-						aCenterTop,
-						aCenterTop,
-						basegfx::B2DPoint(aRect.Right(), aRect.Top()));
+					    aInnerPoly.appendBezierSegment(
+						    basegfx::B2DPoint(aRect.Center().X(), aRect.Bottom()),
+						    basegfx::B2DPoint(aRect.Right(), aRect.Bottom()),
+						    basegfx::B2DPoint(aRect.Right(), aRect.Top()));
 
-					aInnerPoly.setClosed(true);
-					aPoly.append(aInnerPoly);
+					    aInnerPoly.append(basegfx::B2DPoint(aRect.Right(), aRect.Bottom()));
+					    aInnerPoly.setClosed(true);
+					    aPoly.append(aInnerPoly);
+                    }
+                    else
+                    {
+					    basegfx::B2DPolygon aInnerPoly;
+
+					    aInnerPoly.append(basegfx::B2DPoint(aRect.Left(), aRect.Bottom()));
+
+					    const basegfx::B2DPoint aCenterBottom(aRect.Center().X(), aRect.Bottom());
+					    aInnerPoly.appendBezierSegment(
+						    aCenterBottom,
+						    aCenterBottom,
+						    basegfx::B2DPoint(aRect.Center().X(), aRect.Center().Y()));
+
+					    const basegfx::B2DPoint aCenterTop(aRect.Center().X(), aRect.Top());
+					    aInnerPoly.appendBezierSegment(
+						    aCenterTop,
+						    aCenterTop,
+						    basegfx::B2DPoint(aRect.Right(), aRect.Top()));
+
+					    aInnerPoly.setClosed(true);
+					    aPoly.append(aInnerPoly);
+                    }
                 }
                 break;
-                case OBJ_FREELINE:
-				{
-					basegfx::B2DPolygon aInnerPoly;
-
-					aInnerPoly.append(basegfx::B2DPoint(aRect.Left(), aRect.Bottom()));
-
-					aInnerPoly.appendBezierSegment(
-						basegfx::B2DPoint(aRect.Left(), aRect.Top()),
-						basegfx::B2DPoint(aRect.Center().X(), aRect.Top()),
-						basegfx::B2DPoint(aRect.Center().X(), aRect.Center().Y()));
-
-					aInnerPoly.appendBezierSegment(
-						basegfx::B2DPoint(aRect.Center().X(), aRect.Bottom()),
-						basegfx::B2DPoint(aRect.Right(), aRect.Bottom()),
-						basegfx::B2DPoint(aRect.Right(), aRect.Top()));
-
-					aInnerPoly.append(basegfx::B2DPoint(aRect.Right(), aRect.Bottom()));
-					aInnerPoly.setClosed(true);
-					aPoly.append(aInnerPoly);
-                }
-                break;
-                case OBJ_POLY:
-                case OBJ_PLIN:
+                case PathType_ClosedPolygon:
+                case PathType_OpenPolygon:
 				{
 					basegfx::B2DPolygon aInnerPoly;
                     sal_Int32 nWdt(aRect.GetWidth());
@@ -2974,7 +2969,7 @@ void SwFEShell::CreateDefaultShape( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, 
 					aInnerPoly.append(basegfx::B2DPoint(aRect.Left() + (nWdt * 80) / 100, aRect.Top() + (nHgt * 75) / 100));
 					aInnerPoly.append(basegfx::B2DPoint(aRect.Bottom(), aRect.Right()));
 
-                    if(OBJ_PLIN == eSdrObjectKind)
+                    if(PathType_OpenPolygon == pSdrPathObj->getSdrPathObjType())
 					{
 						aInnerPoly.append(basegfx::B2DPoint(aRect.Center().X(), aRect.Bottom()));
 					}
@@ -2986,7 +2981,7 @@ void SwFEShell::CreateDefaultShape( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, 
 					aPoly.append(aInnerPoly);
                 }
                 break;
-                case OBJ_LINE :
+                case PathType_Line:
                 {
 					sal_Int32 nYMiddle((aRect.Top() + aRect.Bottom()) / 2);
 					basegfx::B2DPolygon aTempPoly;
@@ -2997,44 +2992,43 @@ void SwFEShell::CreateDefaultShape( sal_uInt16 /*SdrObjKind ?*/ eSdrObjectKind, 
                 break;
 			}
 
-			((SdrPathObj*)pObj)->setB2DPolyPolygonInObjectCoordinates(aPoly);
+			pSdrPathObj->setB2DPolyPolygonInObjectCoordinates(aPoly);
 		}
-        else if(dynamic_cast< SdrCaptionObj* >(pObj))
+        else if(pSdrCaptionObj)
         {
-            sal_Bool bVerticalText = ( SID_DRAW_TEXT_VERTICAL == nSlotId ||
-                                            SID_DRAW_CAPTION_VERTICAL == nSlotId );
-            ((SdrTextObj*)pObj)->SetVerticalWriting(bVerticalText);
+            sal_Bool bVerticalText = ( SID_DRAW_TEXT_VERTICAL == nSlotId || SID_DRAW_CAPTION_VERTICAL == nSlotId );
+            pSdrCaptionObj->SetVerticalWriting(bVerticalText);
+
             if(bVerticalText)
             {
-                SfxItemSet aSet(pObj->GetMergedItemSet());
+                SfxItemSet aSet(pSdrCaptionObj->GetMergedItemSet());
                 aSet.Put(SdrTextVertAdjustItem(SDRTEXTVERTADJUST_CENTER));
                 aSet.Put(SdrTextHorzAdjustItem(SDRTEXTHORZADJUST_RIGHT));
-                pObj->SetMergedItemSet(aSet);
+                pSdrCaptionObj->SetMergedItemSet(aSet);
             }
 
-            sdr::legacy::SetLogicRect(*pObj, aRect);
+            sdr::legacy::SetLogicRect(*pSdrCaptionObj, aRect);
 
 			const Point aTailPos(aRect.TopLeft() - Point(aRect.GetWidth() / 2, aRect.GetHeight() / 2));
-            ((SdrCaptionObj*)pObj)->SetTailPos(basegfx::B2DPoint(aTailPos.X(), aTailPos.Y()));
+            pSdrCaptionObj->SetTailPos(basegfx::B2DPoint(aTailPos.X(), aTailPos.Y()));
         }
-        else if(dynamic_cast< SdrTextObj* >(pObj))
+        else if(pSdrTextObj)
         {
-            SdrTextObj* pText = (SdrTextObj*)pObj;
-            sdr::legacy::SetLogicRect(*pText, aRect);
+            sdr::legacy::SetLogicRect(*pSdrTextObj, aRect);
 
             sal_Bool bVertical = (SID_DRAW_TEXT_VERTICAL == nSlotId);
             sal_Bool bMarquee = (SID_DRAW_TEXT_MARQUEE == nSlotId);
 
-			pText->SetVerticalWriting(bVertical);
+			pSdrTextObj->SetVerticalWriting(bVertical);
 
 			if(bVertical)
 			{
-                SfxItemSet aSet(pText->GetObjectItemPool());
+                SfxItemSet aSet(pSdrTextObj->GetObjectItemPool());
 				aSet.Put(SdrOnOffItem(SDRATTR_TEXT_AUTOGROWWIDTH, true));
 				aSet.Put(SdrOnOffItem(SDRATTR_TEXT_AUTOGROWHEIGHT, false));
 				aSet.Put(SdrTextVertAdjustItem(SDRTEXTVERTADJUST_TOP));
 				aSet.Put(SdrTextHorzAdjustItem(SDRTEXTHORZADJUST_RIGHT));
-				pText->SetMergedItemSet(aSet);
+				pSdrTextObj->SetMergedItemSet(aSet);
 			}
 
 			if(bMarquee)

@@ -26,6 +26,7 @@
 
 #include <svx/svddrgv.hxx>
 #include "svx/svxdllapi.h"
+#include <svx/sdrobjectfactory.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -47,13 +48,12 @@ protected:
 	// compile the apps all the time
 	ImpSdrCreateViewExtraData*	mpCreateViewExtraData;
 
-	Pointer						maCreatePointer;
+    // necessary data for new object creation
+    SdrObjectCreationInfo       maSdrObjectCreationInfo;
+	Pointer			            maCreatePointer;
 
 	sal_uInt16					mnAutoCloseDistPix;
 	sal_uInt16					mnFreeHandMinDistPix;
-
-	sal_uInt32					mnAktInvent;     // Aktuell eingestelltes
-	sal_uInt16					mnAktIdent;      // Obj fuer Neuerzeugung
 
 	/// bitfield
 	bool						mbAutoTextEdit : 1; // Textedit nach dem erzeugen eines Textrahmens starten
@@ -62,8 +62,12 @@ protected:
 
 	void ImpClearConnectMarker();
 
-	bool ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, const basegfx::B2DPoint& rPnt, OutputDevice* pOut,
-		double fMinMovLogic, const basegfx::B2DRange& rLogRange, SdrObject* pPreparedFactoryObject);
+	bool ImpBegCreateObj(
+        const SdrObjectCreationInfo& rSdrObjectCreationInfo, 
+        const basegfx::B2DPoint& rPnt, 
+		double fMinMovLogic, 
+        const basegfx::B2DRange& rLogRange, 
+        SdrObject* pPreparedFactoryObject);
 
 	void ShowCreateObj();
 	void HideCreateObj();
@@ -74,7 +78,13 @@ protected:
 	virtual ~SdrCreateView();
 
 public:
-	virtual bool IsAction() const;
+    const SdrObjectCreationInfo& getSdrObjectCreationInfo() const { return maSdrObjectCreationInfo; }
+    void setSdrObjectCreationInfo(const SdrObjectCreationInfo& rSdrObjectCreationInfo);
+
+    const Pointer& getCreatePointer() const { return maCreatePointer; }
+    void setCreatePointer(const Pointer& rNew) { maCreatePointer = rNew; }
+
+    virtual bool IsAction() const;
 	virtual void MovAction(const basegfx::B2DPoint& rPnt);
 	virtual void EndAction();
 	virtual void BckAction();
@@ -98,12 +108,8 @@ public:
 	// Feststellen, ob Bemassungswerkzeug aktiviert
 	bool IsMeasureTool() const;
 
-	void SetCurrentObj(sal_uInt16 nIdent, sal_uInt32 nInvent=SdrInventor);
-	sal_uInt32 GetCurrentObjInventor() const { return mnAktInvent; }
-	sal_uInt16 GetCurrentObjIdentifier() const { return mnAktIdent; }
-
 	// Starten des normalen Create
-	bool BegCreateObj(const basegfx::B2DPoint& rPnt, OutputDevice* pOut = 0, double fMinMovLogic = 3.0);
+	bool BegCreateObj(const basegfx::B2DPoint& rPnt, double fMinMovLogic = 3.0);
 	bool BegCreatePreparedObject(const basegfx::B2DPoint& rPnt, double fMinMovLogic, SdrObject* pPreparedFactoryObject);
 	void MovCreateObj(const basegfx::B2DPoint& rPnt);
 	bool EndCreateObj(SdrCreateCmd eCmd);
@@ -114,8 +120,7 @@ public:
 	// BegCreateCaptionObj() erzeugt ein SdrCaptionObj (Legendenobjekt).
 	// rObjSiz ist die anfaengliche Groesse des Legenden-Textrahmens.
 	// gedraggd wird lediglich die Laenge des Zipfel.
-	bool BegCreateCaptionObj(const basegfx::B2DPoint& rPnt, const basegfx::B2DVector& rObjSiz, OutputDevice* pOut = 0, 
-		double fMinMovLogic = 3.0);
+	bool BegCreateCaptionObj(const basegfx::B2DPoint& rPnt, const basegfx::B2DVector& rObjSiz, double fMinMovLogic = 3.0);
 
 	// Wenn TextEditAfterCreate auf sal_True steht (das ist der Default),
 	// dann wird nach dem erzeugen eines Textrahmenobjekts (OBJ_TEXT,

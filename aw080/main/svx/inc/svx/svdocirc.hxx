@@ -47,8 +47,8 @@ class SVX_DLLPUBLIC SdrCircObj : public SdrRectObj
 protected:
 	virtual sdr::contact::ViewContact* CreateObjectSpecificViewContact();
 
-	// OBJ_CIRC || OBJ_CCUT || OBJ_CARC || OBJ_SECT, default is OBJ_CIRC
-    SdrObjKind					meCircleKind;
+    // type of object
+    SdrCircleObjType            meSdrCircleObjType;
 
 	// [0.0 .. F_2PI], default is 0.0 for start and F_2PI for end
 	double						mfStartAngle;
@@ -65,7 +65,7 @@ public:
 
 	SdrCircObj(
 		SdrModel& rSdrModel,
-		SdrObjKind eNewKind = OBJ_CIRC, // OBJ_CIRC || OBJ_CCUT || OBJ_CARC || OBJ_SECT
+		SdrCircleObjType eSdrCircleObjType = CircleType_Circle,
 		const basegfx::B2DHomMatrix& rTransform = basegfx::B2DHomMatrix(), 
 		double fNewStartWink = 0.0, 
 		double fNewEndWink = F_2PI);
@@ -73,11 +73,12 @@ public:
 	virtual bool IsClosedObj() const;
 	double GetStartAngle() const;
 	double GetEndAngle() const;
-	SdrObjKind GetCircleKind() const;
+	
+    SdrCircleObjType GetSdrCircleObjType() const;
+	void SetSdrCircleObjType(SdrCircleObjType eNew);
 
 	void SetStartAngle(double fNew);
 	void SetEndAngle(double fNew);
-	void SetCircleKind(SdrObjKind eNew); // only OBJ_CIRC, OBJ_CCUT, OBJ_CARC and OBJ_SECT allowed
 
 	virtual void TakeObjInfo(SdrObjTransformInfoRec& rInfo) const;
 	virtual sal_uInt16 GetObjIdentifier() const;

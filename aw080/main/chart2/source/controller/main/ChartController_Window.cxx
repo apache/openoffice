@@ -670,7 +670,7 @@ void ChartController::execute_MouseButtonDown( const MouseEvent& rMEvt )
             }
             if ( !pDrawViewWrapper->IsAction() )
             {
-                if ( pDrawViewWrapper->GetCurrentObjIdentifier() == OBJ_CAPTION )
+                if ( pDrawViewWrapper->getSdrObjectCreationInfo().getIdent() == OBJ_CAPTION )
                 {
                     pDrawViewWrapper->BegCreateCaptionObj( aLogicPos, basegfx::B2DVector(2268.0, 1134.0) );
                 }
@@ -806,7 +806,7 @@ void ChartController::execute_MouseButtonUp( const MouseEvent& rMEvt )
             }
             if ( pDrawViewWrapper->areSdrObjectsSelected() )
             {
-                if ( pDrawViewWrapper->GetCurrentObjIdentifier() == OBJ_TEXT )
+                if ( pDrawViewWrapper->getSdrObjectCreationInfo().getIdent() == OBJ_TEXT )
                 {
                     executeDispatch_EditText();
                 }
@@ -1976,12 +1976,16 @@ void ChartController::impl_SetMousePointer( const MouseEvent & rEvent )
                  ( !m_pDrawViewWrapper->IsMarkedObjHit( aMousePos ) || !m_aSelection.isDragableObjectSelected() ) )
             {
                 PointerStyle ePointerStyle = POINTER_DRAW_RECT;  
-                SdrObjKind eKind = static_cast< SdrObjKind >( m_pDrawViewWrapper->GetCurrentObjIdentifier() );
+                SdrObjKind eKind = static_cast< SdrObjKind >( m_pDrawViewWrapper->getSdrObjectCreationInfo().getIdent() );
                 switch ( eKind )
                 {
-                    case OBJ_LINE:
+                    case OBJ_POLY:
                         {
-                            ePointerStyle = POINTER_DRAW_LINE;
+                            switch(m_pDrawViewWrapper->getSdrObjectCreationInfo().getSdrPathObjType())
+                            {
+                                case PathType_Line: ePointerStyle = POINTER_DRAW_LINE; break;
+                                default: ePointerStyle = POINTER_DRAW_POLYGON; break;
+                            }
                         }
                         break;
                     case OBJ_RECT:
@@ -1993,11 +1997,6 @@ void ChartController::impl_SetMousePointer( const MouseEvent & rEvent )
                     case OBJ_CIRC:
                         {
                             ePointerStyle = POINTER_DRAW_ELLIPSE;
-                        }
-                        break;
-                    case OBJ_FREELINE:
-                        {
-                            ePointerStyle = POINTER_DRAW_POLYGON;
                         }
                         break;
                     case OBJ_TEXT:

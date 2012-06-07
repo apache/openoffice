@@ -42,7 +42,7 @@ const sal_uInt16 E3D_CUBEOBJ_ID 	= 3;
 const sal_uInt16 E3D_SPHEREOBJ_ID	= 4;
 const sal_uInt16 E3D_EXTRUDEOBJ_ID	= 5;
 const sal_uInt16 E3D_LATHEOBJ_ID	= 6;
-const sal_uInt16 E3D_COMPOUNDOBJ_ID = 7;
+const sal_uInt16 E3D_COMPOUNDOBJ_ID = 7; // TTTT should not be used, is a base class only
 const sal_uInt16 E3D_POLYGONOBJ_ID 	= 8;
 
 #endif		// _E3D_GLOBL3D_HXX

@@ -28,14 +28,13 @@
 #include "tabvwsh.hxx"
 #include "sc.hrc"
 #include "drawview.hxx"
-
 #include <editeng/outlobj.hxx>
-// #98185# Create default drawing objects via keyboard
 #include <svx/svdopath.hxx>
 #include <svx/svdocapt.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/point/b2dpoint.hxx>
 #include <svx/svdlegacy.hxx>
+#include <svx/sdrobjectfactory.hxx>
 
 #include "scresid.hxx"
 
@@ -84,14 +83,16 @@ sal_Bool __EXPORT FuConstRectangle::MouseButtonDown(const MouseEvent& rMEvt)
 
 		pWindow->CaptureMouse();
 
-		if ( pView->GetCurrentObjIdentifier() == OBJ_CAPTION )
+		if ( OBJ_CAPTION == pView->getSdrObjectCreationInfo().getIdent() )
 		{
 			bReturn = pView->BegCreateCaptionObj( aLogicPos, basegfx::B2DVector(2268.0, 1134.0)); // 4x2cm
 
 			// wie stellt man den Font ein, mit dem geschrieben wird
 		}
 		else
+        {
 			bReturn = pView->BegCreateObj(aLogicPos);
+        }
 	}
 	return bReturn;
 }
@@ -173,41 +174,39 @@ sal_Bool __EXPORT FuConstRectangle::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstRectangle::Activate()
 {
-	SdrObjKind aObjKind;
+    SdrObjectCreationInfo aSdrObjectCreationInfo(OBJ_RECT);
 
 	switch (aSfxRequest.GetSlot() )
 	{
 		case SID_DRAW_LINE:
 			aNewPointer = Pointer( POINTER_DRAW_LINE );
-			aObjKind = OBJ_LINE;
+            aSdrObjectCreationInfo.setIdent(OBJ_POLY);
+            aSdrObjectCreationInfo.setSdrPathObjType(PathType_Line);
 			break;
 
 		case SID_DRAW_RECT:
 			aNewPointer = Pointer( POINTER_DRAW_RECT );
-			aObjKind = OBJ_RECT;
 			break;
 
 		case SID_DRAW_ELLIPSE:
+            aSdrObjectCreationInfo.setIdent(OBJ_CIRC);
 			aNewPointer = Pointer( POINTER_DRAW_ELLIPSE );
-			aObjKind = OBJ_CIRC;
 			break;
 
 		case SID_DRAW_CAPTION:
 		case SID_DRAW_CAPTION_VERTICAL:
+            aSdrObjectCreationInfo.setIdent(OBJ_CAPTION);
 			aNewPointer = Pointer( POINTER_DRAW_CAPTION );
-			aObjKind = OBJ_CAPTION;
 			break;
 
 		default:
 			aNewPointer = Pointer( POINTER_CROSS );
-			aObjKind = OBJ_RECT;
 			break;
 	}
 
-    pView->SetCurrentObj(sal::static_int_cast<sal_uInt16>(aObjKind));
-
+    pView->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 	aOldPointer = pWindow->GetPointer();
-	pViewShell->SetActivePointer( aNewPointer );
+	pViewShell->SetActivePointer(aNewPointer);
 
 	FuConstruct::Activate();
 }
@@ -235,8 +234,7 @@ SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const bas
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		pView->getSdrModelFromSdrView(),
-		pView->GetCurrentObjInventor(), 
-		pView->GetCurrentObjIdentifier());
+		pView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

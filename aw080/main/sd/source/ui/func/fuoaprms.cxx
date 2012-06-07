@@ -302,29 +302,29 @@ void FuObjectAnimationParameters::DoExecute( SfxRequest& rReq )
 	{
 		SdrObject* pObject1 = aSelection[0];
 		SdrObject* pObject2 = aSelection[1];
-		SdrObjKind eKind1   = (SdrObjKind)pObject1->GetObjIdentifier();
-		SdrObjKind eKind2   = (SdrObjKind)pObject2->GetObjIdentifier();
 		SdAnimationInfo* pInfo1 = mpDoc->GetAnimationInfo(pObject1);
 		SdAnimationInfo* pInfo2 = mpDoc->GetAnimationInfo(pObject2);
 		pInfo  = NULL;
 
-		if (pObject1->GetObjInventor() == SdrInventor &&
-			((eKind1 == OBJ_LINE) ||                        // 2-Punkt-Linie
-			 (eKind1 == OBJ_PLIN) ||                        // Polygon
-			 (eKind1 == OBJ_PATHLINE))                &&    // Bezier-Kurve
-			 (pInfo2 && pInfo2->meEffect == presentation::AnimationEffect_PATH))
-		{
-			pInfo = pInfo2;
-		}
+        if(pObject1 && pInfo2 && pInfo2->meEffect == presentation::AnimationEffect_PATH)
+        {
+            SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObject1);
 
-		if (pObject2->GetObjInventor() == SdrInventor &&
-			((eKind2 == OBJ_LINE) ||                        // 2-Punkt-Linie
-			 (eKind2 == OBJ_PLIN) ||                        // Polygon
-			 (eKind2 == OBJ_PATHLINE))                &&    // Bezier-Kurve
-			(pInfo1 && pInfo1->meEffect == presentation::AnimationEffect_PATH))
-		{
-			pInfo = pInfo1;
-		}
+            if(pSdrPathObj && !pSdrPathObj->isClosed())
+            {
+    			pInfo = pInfo2;
+            }
+        }
+
+        if(pObject2 && pInfo1 && pInfo1->meEffect == presentation::AnimationEffect_PATH)
+        {
+            SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObject2);
+
+            if(pSdrPathObj && !pSdrPathObj->isClosed())
+            {
+    			pInfo = pInfo1;
+            }
+        }
 
 		if (pInfo)
 		{
@@ -653,26 +653,29 @@ void FuObjectAnimationParameters::DoExecute( SfxRequest& rReq )
 			SdrObjKind eKind1   = (SdrObjKind)pObject1->GetObjIdentifier();
 			SdrObjKind eKind2   = (SdrObjKind)pObject2->GetObjIdentifier();
 
-			if (pObject1->GetObjInventor() == SdrInventor &&
-				((eKind1 == OBJ_LINE) ||        // 2-Punkt-Linie
-				 (eKind1 == OBJ_PLIN) ||        // Polygon
-				 (eKind1 == OBJ_PATHLINE)))     // Bezier-Kurve
-			{
-				pPath = (SdrPathObj*)pObject1;
-				pRunningObj = pObject2;
-			}
+            if(pObject1)
+            {
+                SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObject1);
 
-			if (pObject2->GetObjInventor() == SdrInventor &&
-				((eKind2 == OBJ_LINE) ||        // 2-Punkt-Linie
-				 (eKind2 == OBJ_PLIN) ||        // Polygon
-				 (eKind2 == OBJ_PATHLINE)))     // Bezier-Kurve
-			{
-				pPath = (SdrPathObj*)pObject2;
-				pRunningObj = pObject1;
-			}
+                if(pSdrPathObj && !pSdrPathObj->isClosed())
+                {
+				    pPath = pSdrPathObj;
+				    pRunningObj = pObject2;
+                }
+            }
+
+            if(pObject2)
+            {
+                SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObject2);
+
+                if(pSdrPathObj && !pSdrPathObj->isClosed())
+                {
+				    pPath = pSdrPathObj;
+				    pRunningObj = pObject1;
+                }
+            }
 
 			DBG_ASSERT(pPath, "keine Kurve gefunden");
-
 
 			// das laufende Objekt auf das Kurvenende schieben
 			const basegfx::B2DRange aCurRange(sdr::legacy::GetLogicRange(*pRunningObj));

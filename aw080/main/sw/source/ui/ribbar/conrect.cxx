@@ -68,8 +68,7 @@ sal_Bool ConstRectangle::MouseButtonDown(const MouseEvent& rMEvt)
 {
 	sal_Bool bReturn;
 
-	if ((bReturn = SwDrawBase::MouseButtonDown(rMEvt)) == sal_True
-                                    && m_pWin->GetSdrDrawMode() == OBJ_CAPTION)
+	if ((bReturn = SwDrawBase::MouseButtonDown(rMEvt)) == sal_True && OBJ_CAPTION == m_pWin->getSdrObjectCreationInfo().getIdent())
 	{
         m_pView->NoRotate();
         if (m_pView->IsDrawSelMode())
@@ -97,7 +96,7 @@ sal_Bool ConstRectangle::MouseButtonUp(const MouseEvent& rMEvt)
         SdrView *pSdrView = m_pSh->GetDrawView();
 		SdrObject* pObj = pSdrView->getSelectedIfSingle();
 
-        switch( m_pWin->GetSdrDrawMode() )
+        switch( m_pWin->getSdrObjectCreationInfo().getIdent() )
 		{
 		case OBJ_TEXT:
 			if( bMarquee )
@@ -177,48 +176,50 @@ void ConstRectangle::Activate(const sal_uInt16 nSlotId)
 {
 	bMarquee = bCapVertical = sal_False;
 	mbVertical = sal_False;
+    SdrObjectCreationInfo aSdrObjectCreationInfo;
 
 	switch (nSlotId)
 	{
 	case SID_DRAW_LINE:
-        m_pWin->SetSdrDrawMode(OBJ_LINE);
+        aSdrObjectCreationInfo.setIdent(OBJ_POLY);
+        aSdrObjectCreationInfo.setSdrPathObjType(PathType_Line);
 		break;
 
 	case SID_DRAW_RECT:
-        m_pWin->SetSdrDrawMode(OBJ_RECT);
+        aSdrObjectCreationInfo.setIdent(OBJ_RECT);
 		break;
 
 	case SID_DRAW_ELLIPSE:
-        m_pWin->SetSdrDrawMode(OBJ_CIRC);
+        aSdrObjectCreationInfo.setIdent(OBJ_CIRC);
 		break;
 
 	case SID_DRAW_TEXT_MARQUEE:
 		bMarquee = sal_True;
-        m_pWin->SetSdrDrawMode(OBJ_TEXT);
+        aSdrObjectCreationInfo.setIdent(OBJ_TEXT);
 		break;
 
 	case SID_DRAW_TEXT_VERTICAL:
 		// #93382#
 		mbVertical = sal_True;
-        m_pWin->SetSdrDrawMode(OBJ_TEXT);
+        aSdrObjectCreationInfo.setIdent(OBJ_TEXT);
 		break;
 
 	case SID_DRAW_TEXT:
-        m_pWin->SetSdrDrawMode(OBJ_TEXT);
+        aSdrObjectCreationInfo.setIdent(OBJ_TEXT);
 		break;
 
 	case SID_DRAW_CAPTION_VERTICAL:
 		bCapVertical = sal_True;
 		// no break
 	case SID_DRAW_CAPTION:
-        m_pWin->SetSdrDrawMode(OBJ_CAPTION);
+        aSdrObjectCreationInfo.setIdent(OBJ_CAPTION);
 		break;
 
 	default:
-        m_pWin->SetSdrDrawMode(OBJ_NONE);
 		break;
 	}
 
+    m_pWin->setSdrObjectCreationInfo(aSdrObjectCreationInfo);
 	SwDrawBase::Activate(nSlotId);
 }
 

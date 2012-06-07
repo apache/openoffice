@@ -139,7 +139,7 @@ sal_Bool __EXPORT FuConstUnoControl::KeyInput(const KeyEvent& rKEvt)
 
 void FuConstUnoControl::Activate()
 {
-	pView->SetCurrentObj( nIdentifier, nInventor );
+	pView->setSdrObjectCreationInfo(SdrObjectCreationInfo(nIdentifier, nInventor));
 
 	aNewPointer = Pointer( POINTER_DRAW_RECT );
 	aOldPointer = pWindow->GetPointer();
@@ -176,8 +176,7 @@ SdrObject* FuConstUnoControl::CreateDefaultObject(const sal_uInt16 /* nID */, co
 	
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
 		pView->getSdrModelFromSdrView(),
-		pView->GetCurrentObjInventor(), 
-		pView->GetCurrentObjIdentifier());
+		pView->getSdrObjectCreationInfo());
 
 	if(pObj)
 	{

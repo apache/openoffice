@@ -4443,7 +4443,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 if(!pCircObj)
                     continue;
 
-                if(OBJ_CIRC == pCircObj->GetCircleKind())
+                if(CircleType_Circle == pCircObj->GetSdrCircleObjType())
                 {
                     mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                     ImplCreateShape( ESCHER_ShpInst_Ellipse, 0xa00, aSolverContainer );            // Flags: Connector | HasSpt

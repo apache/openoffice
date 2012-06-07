@@ -75,7 +75,8 @@ void ScTabViewShell::InsertURLButton( const String& rName, const String& rURL,
 //	SdrModel*	pModel	= pDrView->getSdrModelFromSdrView();
 
 	SdrObject* pObj = SdrObjFactory::MakeNewObject(
-		pViewData->GetView()->GetSdrView()->getSdrModelFromSdrView(), FmFormInventor, OBJ_FM_BUTTON);
+		pViewData->GetView()->GetSdrView()->getSdrModelFromSdrView(), 
+        SdrObjectCreationInfo(OBJ_FM_BUTTON, FmFormInventor));
 	SdrUnoObj* pUnoCtrl = dynamic_cast< SdrUnoObj* >( pObj);
 
 	uno::Reference<awt::XControlModel> xControlModel = pUnoCtrl->GetUnoControlModel();

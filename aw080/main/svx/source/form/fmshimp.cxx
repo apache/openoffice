@@ -574,31 +574,20 @@ sal_Bool isControlList(const SdrObjectVector& _rSelection)
 	for (sal_uInt32 i = 0; i < _rSelection.size() && bControlList; i++)
 	{
 		SdrObject *pObj = _rSelection[i];
-		E3dObject* pAs3DObject = dynamic_cast< E3dObject* >( pObj);
-		// E3dObject's do not contain any 2D-objects (by definition)
-		// we need this extra check here : an E3dObject->getChildrenOfSdrObject says "YES", but an SdrObjListIter working
-		// with an E3dObject doesn't give me any Nodes (E3dObject has a sub list, but no members in that list,
-		// cause there implementation differs from the one of "normal" SdrObject's. Unfortunally SdrObject::getChildrenOfSdrObject
-		// doesn't check the element count of the sub list, which is simply a bug in IsGroupObject we can't fix at the moment).
-		// So at the end of this function bControlList would have the same value it was initialized with above : sal_True
-		// And this would be wrong :)
-		// 03.02.00 - 72529 - FS
-		if (!pAs3DObject)
+
+		if (pObj->getChildrenOfSdrObject())
 		{
-			if (pObj->getChildrenOfSdrObject())
+			SdrObjListIter aIter(*pObj->getChildrenOfSdrObject());
+			while (aIter.IsMore() && bControlList)
 			{
-				SdrObjListIter aIter(*pObj->getChildrenOfSdrObject());
-				while (aIter.IsMore() && bControlList)
-				{
-					bControlList = FmFormInventor == aIter.Next()->GetObjInventor();
-					bHadAnyLeafs = sal_True;
-				}
-			}
-			else
-			{
+				bControlList = FmFormInventor == aIter.Next()->GetObjInventor();
 				bHadAnyLeafs = sal_True;
-				bControlList = FmFormInventor == pObj->GetObjInventor();
 			}
+		}
+		else
+		{
+			bHadAnyLeafs = sal_True;
+			bControlList = FmFormInventor == pObj->GetObjInventor();
 		}
 	}
 

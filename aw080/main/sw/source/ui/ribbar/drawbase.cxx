@@ -124,7 +124,7 @@ sal_Bool SwDrawBase::MouseButtonDown(const MouseEvent& rMEvt)
 			const basegfx::B2DPoint aPixelPos(rMEvt.GetPosPixel().X(), rMEvt.GetPosPixel().Y());
             m_aStartPos = m_pWin->GetInverseViewTransformation() * aPixelPos;
 
-            bReturn = m_pSh->BeginCreate( static_cast< sal_uInt16 >(m_pWin->GetSdrDrawMode()), m_aStartPos);
+            bReturn = m_pSh->BeginCreate(m_pWin->getSdrObjectCreationInfo(), m_aStartPos);
 
 			SetDrawPointer();
 
@@ -311,11 +311,11 @@ sal_Bool SwDrawBase::MouseButtonUp(const MouseEvent& rMEvt)
 
     if (IsCreateObj() && m_pSh->IsDrawCreate() && !m_pWin->IsDrawSelMode())
 	{
-        const SdrObjKind nDrawMode = m_pWin->GetSdrDrawMode();
-		//objects with multiple point may end at the start position
-		sal_Bool bMultiPoint = OBJ_PLIN == nDrawMode ||
-                                OBJ_PATHLINE == nDrawMode ||
-								OBJ_FREELINE == nDrawMode;
+        const SdrObjectCreationInfo& rSdrObjectCreationInfo = m_pWin->getSdrObjectCreationInfo();
+		
+        //objects with multiple point may end at the start position
+        const bool bMultiPoint(OBJ_POLY == rSdrObjectCreationInfo.getIdent() && PathType_Line != rSdrObjectCreationInfo.getSdrPathObjType());
+
         if(rMEvt.IsRight() || (aPnt.equal(m_aStartPos) && !bMultiPoint))
 		{
             m_pSh->BreakCreate();
@@ -323,7 +323,7 @@ sal_Bool SwDrawBase::MouseButtonUp(const MouseEvent& rMEvt)
 		}
 		else
 		{
-            if (OBJ_NONE == nDrawMode)
+            if(OBJ_NONE == rSdrObjectCreationInfo.getIdent())
             {
                 SwRewriter aRewriter;
 
@@ -332,7 +332,8 @@ sal_Bool SwDrawBase::MouseButtonUp(const MouseEvent& rMEvt)
             }
 
             m_pSh->EndCreate(SDRCREATE_FORCEEND);
-            if (OBJ_NONE == nDrawMode)   // Textrahmen eingefuegt
+            
+            if(OBJ_NONE == rSdrObjectCreationInfo.getIdent())   // Textrahmen eingefuegt
 			{
                uno::Reference< frame::XDispatchRecorder > xRecorder =
                     m_pSh->GetView().GetViewFrame()->GetBindings().GetRecorder();
@@ -360,7 +361,8 @@ sal_Bool SwDrawBase::MouseButtonUp(const MouseEvent& rMEvt)
                         m_pSh->SetFlyFrmAttr( aSet );
 				}
 			}
-            if (m_pWin->GetSdrDrawMode() == OBJ_NONE)
+            
+            if(OBJ_NONE == m_pWin->getSdrObjectCreationInfo().getIdent())
             {
                 m_pSh->EndUndo();
             }
@@ -502,7 +504,7 @@ void SwDrawBase::Activate(const sal_uInt16 nSlot)
     SetSlotId(nSlot);
     SdrView *pSdrView = m_pSh->GetDrawView();
 
-    pSdrView->SetCurrentObj( static_cast< sal_uInt16 >(m_pWin->GetSdrDrawMode()) );
+    pSdrView->setSdrObjectCreationInfo(m_pWin->getSdrObjectCreationInfo());
 	pSdrView->SetViewEditMode(SDREDITMODE_CREATE);
 
 	SetDrawPointer();
@@ -701,7 +703,7 @@ void SwDrawBase::CreateDefaultObject()
     aEndPos.X() += 8 * MM50;
     aEndPos.Y() += 4 * MM50;
     Rectangle aRect(aStartPos, aEndPos);
-    m_pSh->CreateDefaultShape( static_cast< sal_uInt16 >(m_pWin->GetSdrDrawMode()), aRect, m_nSlotId);
+    m_pSh->CreateDefaultShape(m_pWin->getSdrObjectCreationInfo(), aRect, m_nSlotId);
 }
 /* -----------------25.10.2002 14:14-----------------
  *

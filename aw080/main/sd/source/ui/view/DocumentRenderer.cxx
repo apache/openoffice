@@ -1648,7 +1648,6 @@ private:
 
                 SdrPathObj* pPathObj = new SdrPathObj(
 					rModel,
-					OBJ_PATHLINE, 
 					aPathPoly );
 
 				pPathObj->SetMergedItem(XLineStyleItem(XLINE_SOLID));

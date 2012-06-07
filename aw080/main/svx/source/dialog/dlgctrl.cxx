@@ -2077,8 +2077,7 @@ SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
 	basegfx::B2DPolygon aPolygonA;
 	aPolygonA.append(aPointA1);
 	aPolygonA.append(aPointA2);
-	mpLineObjA = new SdrPathObj(getModel(), OBJ_LINE, basegfx::B2DPolyPolygon(aPolygonA));
-	//mpLineObjA->SetModel(&getModel());
+	mpLineObjA = new SdrPathObj(getModel(), basegfx::B2DPolyPolygon(aPolygonA));
 
 	// create DrawObectB
 	const sal_Int32 aYPosB1((aOutputSize.Height() * 3) / 4);
@@ -2090,8 +2089,7 @@ SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
 	aPolygonB.append(aPointB1);
 	aPolygonB.append(aPointB2);
 	aPolygonB.append(aPointB3);
-	mpLineObjB = new SdrPathObj(getModel(), OBJ_PLIN, basegfx::B2DPolyPolygon(aPolygonB));
-	//mpLineObjB->SetModel(&getModel());
+	mpLineObjB = new SdrPathObj(getModel(), basegfx::B2DPolyPolygon(aPolygonB));
 	
 	// create DrawObectC
 	const basegfx::B2DPoint aPointC1( aPointB3.getX() + nDistance,  aYPosB1);
@@ -2101,8 +2099,7 @@ SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
 	aPolygonC.append(aPointC1);
 	aPolygonC.append(aPointC2);
 	aPolygonC.append(aPointC3);
-	mpLineObjC = new SdrPathObj(getModel(), OBJ_PLIN, basegfx::B2DPolyPolygon(aPolygonC));
-	//mpLineObjC->SetModel(&getModel());
+	mpLineObjC = new SdrPathObj(getModel(), basegfx::B2DPolyPolygon(aPolygonC));
 }
 
 SvxXLinePreview::~SvxXLinePreview()

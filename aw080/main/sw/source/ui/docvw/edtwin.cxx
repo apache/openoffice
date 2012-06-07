@@ -661,7 +661,7 @@ void SwEditWin::InsFrm(sal_uInt16 nCols)
 
 void SwEditWin::StdDrawMode( SdrObjKind eSdrObjectKind, sal_Bool bObjSelect )
 {
-    SetSdrDrawMode( eSdrObjectKind );
+    setSdrObjectCreationInfo(SdrObjectCreationInfo(eSdrObjectKind));
 
 /*  if (GetDrawFuncPtr())
         GetDrawFuncPtr()->Deactivate();*/
@@ -672,7 +672,7 @@ void SwEditWin::StdDrawMode( SdrObjKind eSdrObjectKind, sal_Bool bObjSelect )
         rView.SetDrawFuncPtr(new SwDrawBase( &rView.GetWrtShell(), this, &rView ));
 
     rView.SetSelDrawSlot();
-    SetSdrDrawMode( eSdrObjectKind );
+    setSdrObjectCreationInfo(SdrObjectCreationInfo(eSdrObjectKind));
     if (bObjSelect)
         rView.GetDrawFuncPtr()->Activate( SID_OBJECT_SELECT );
     else
@@ -4580,7 +4580,7 @@ SwEditWin::SwEditWin(Window *pParent, SwView &rMyView):
     m_nDropDestination( 0 ),
 
     nInsFrmColCount( 1 ),
-    eDrawMode(OBJ_NONE),
+    meSdrObjectCreationInfo(),
 
     bLockInput(sal_False),
     bObjectSelect( sal_False ),
@@ -4719,7 +4719,6 @@ sal_Bool SwEditWin::EnterDrawMode(const MouseEvent& rMEvt, const Point& aDocPos)
 
 sal_Bool SwEditWin::IsDrawSelMode()
 {
-//  return (IsFrmAction() == sal_False && GetSdrDrawMode() == OBJ_NONE);
     return IsObjectSelect();
 }
 

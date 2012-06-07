@@ -359,7 +359,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
             if(!pCircObj)
                 break;
 
-            if(OBJ_CIRC == pCircObj->GetCircleKind())
+            if(CircleType_Circle == pCircObj->GetSdrCircleObjType())
             {
 				mpEscherEx->OpenContainer( ESCHER_SpContainer );
 				ADD_SHAPE( ESCHER_ShpInst_Ellipse, 0xa00 );			// Flags: Connector | HasSpt

@@ -541,7 +541,6 @@ sal_Bool ScDetectiveFunc::InsertArrow( SCCOL nCol, SCROW nRow,
 	aTempPoly.append(basegfx::B2DPoint(aEndPos.X(), aEndPos.Y()));
 	SdrPathObj* pArrow = new SdrPathObj(
 		*pModel,
-		OBJ_LINE, 
 		basegfx::B2DPolyPolygon(aTempPoly));
 	pArrow->SetMergedItemSetAndBroadcast(rAttrSet);
 
@@ -613,7 +612,6 @@ sal_Bool ScDetectiveFunc::InsertToOtherTab( SCCOL nStartCol, SCROW nStartRow,
 	aTempPoly.append(basegfx::B2DPoint(aEndPos.X(), aEndPos.Y()));
 	SdrPathObj* pArrow = new SdrPathObj(
 		*pModel,
-		OBJ_LINE, 
 		basegfx::B2DPolyPolygon(aTempPoly));
 
 	pArrow->SetMergedItemSetAndBroadcast(rAttrSet);
@@ -683,7 +681,7 @@ void ScDetectiveFunc::DrawCircle( SCCOL nCol, SCROW nRow, ScDetectiveData& rData
 
 	SdrCircObj* pCircle = new SdrCircObj( 
 		*pModel,
-		OBJ_CIRC, 
+		CircleType_Circle, 
 		basegfx::tools::createScaleTranslateB2DHomMatrix(
 			aRect.getWidth(), aRect.getHeight(),
 			aRect.Left(), aRect.Top()));

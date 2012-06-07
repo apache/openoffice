@@ -1207,7 +1207,7 @@ bool SdrView::DoMouseEvent(const SdrViewEvent& rVEvt)
 
 		case SDREVENT_BEGCREATEOBJ: 
 		{
-			if(SdrInventor == GetCurrentObjInventor() && OBJ_CAPTION == GetCurrentObjIdentifier()) 
+			if(SdrInventor == getSdrObjectCreationInfo().getInvent() && OBJ_CAPTION == getSdrObjectCreationInfo().getIdent()) 
 			{
 				const sal_Int32 nHgt(SdrEngineDefaults::GetFontHeight());
 				
@@ -1367,7 +1367,7 @@ Pointer SdrView::GetPreferedPointer(const basegfx::B2DPoint& rMousePos, const Ou
 	switch (eEvent)
 	{
 		case SDREVENT_BEGCREATEOBJ:
-			return maCreatePointer;
+			return getCreatePointer();
 		case SDREVENT_MARKOBJ: 
 		case SDREVENT_BEGMARK:
 			return Pointer(POINTER_ARROW);
@@ -1642,7 +1642,7 @@ Pointer SdrView::GetPreferedPointer(const basegfx::B2DPoint& rMousePos, const Ou
 
 	if(SDREDITMODE_CREATE == GetViewEditMode()) 
 	{
-		return maCreatePointer;
+		return getCreatePointer();
 	}
 
 	return Pointer(POINTER_ARROW);

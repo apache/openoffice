@@ -35,6 +35,7 @@
 #include "svx/svxdllapi.h"
 #include <tools/date.hxx>
 #include <tools/time.hxx>
+#include <svx/sdrobjectfactory.hxx>
 
 // ------------
 // - Forwards -

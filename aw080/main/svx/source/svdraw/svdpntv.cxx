@@ -319,9 +319,6 @@ SdrPaintView::SdrPaintView(SdrModel& rModel1, OutputDevice* pOut)
     mbHideChart(false),
     mbHideDraw(false),
     mbHideFormControl(false),
-	mbCreateFreehandMode(false),
-	maSdrPathObjType(PathType_Line),
-	maSdrCircleObjType(CircleType_Circle),
 	maColorConfig(),
 	maGridColor(COL_BLACK)
 {
