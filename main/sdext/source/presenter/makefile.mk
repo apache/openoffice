@@ -38,13 +38,20 @@ MAXLINELENGTH:=80000
 
 PACKAGE=com.sun.PresenterScreen-$(PLATFORMID)
 
-.IF "$(L10N_framework)"==""
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
-
 .IF "$(ENABLE_PRESENTER_SCREEN)" == "NO"
 @all:
 	@echo "Presenter Screen build disabled."
 .ELSE
+
+.IF "$(L10N_framework)" != ""
+
+@all:
+	@echo "L10N framework disabled => Presenter Screen can not be built."
+
+.ELSE
+
+.INCLUDE :  $(PRJ)$/util$/makefile.pmk
+
 
 DLLPRE=
 common_build_zip=
@@ -120,9 +127,9 @@ ZIP1EXT=		.oxt
 ZIP1FLAGS=-r
 ZIP1LIST=		*
 
-DESCRIPTION:=$(ZIP1DIR)$/description.xml
+EXTENSIONDIR=$(ZIP1DIR)
 
-PACKLICS:=$(ZIP1DIR)$/registry$/LICENSE
+.INCLUDE : extension_pre.mk
 
 .IF "$(WITH_LANG)"==""
 FIND_XCU=registry/data
@@ -135,9 +142,6 @@ COMPONENT_FILES=																			\
     $(ZIP1DIR)$/registry$/data$/org$/openoffice$/Office$/ProtocolHandler.xcu				\
     $(ZIP1DIR)$/registry$/schema/org$/openoffice$/Office$/extension$/PresenterScreen.xcs   	\
 	$(ZIP1DIR)$/registry$/data/$/org$/openoffice$/Office$/extension$/PresenterScreen.xcu 
-
-#COMPONENT_MERGED_XCU= \
-#	$(FIND_XCU)$/org$/openoffice$/Office$/extension$/PresenterScreen.xcu 
 
 COMPONENT_BITMAPS=												\
 	$(ZIP1DIR)$/bitmaps$/BorderTop.png							\
@@ -240,9 +244,6 @@ COMPONENT_IMAGES=\
 	$(ZIP1DIR)$/bitmaps$/extension_32.png \
 	$(ZIP1DIR)$/bitmaps$/extension_32_h.png
 
-COMPONENT_MANIFEST= 							\
-	$(ZIP1DIR)$/META-INF$/manifest.xml
-
 COMPONENT_LIBRARY= 								\
 	$(ZIP1DIR)$/$(TARGET).uno$(DLLPOST)
 
@@ -275,20 +276,14 @@ LINKLINKFILES= \
     $(PACKAGE)/{$(my_XHPFILES)}
 
 # --- Targets ----------------------------------
-.ENDIF # L10N_framework
 
 .INCLUDE : target.mk
 .INCLUDE : extension_helplink.mk
 
-.IF "$(L10N_framework)"==""
 $(SLO)$/PresenterComponent.obj : $(INCCOM)$/PresenterExtensionIdentifier.hxx
 
 $(INCCOM)$/PresenterExtensionIdentifier.hxx : PresenterExtensionIdentifier.txx
 	$(TYPE) $< | sed s/UPDATED_PLATFORM/$(PLATFORMID)/ > $@
-
-$(COMPONENT_MANIFEST) : $$(@:f)
-	@-$(MKDIRHIER) $(@:d)
-	+$(TYPE) $< | $(SED) "s/SHARED_EXTENSION/$(DLLPOST)/" > $@
 
 $(ZIP1DIR)$/help$/component.txt : help$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
@@ -357,26 +352,7 @@ $(COMPONENT_LIBRARY) : $(DLLDEST)$/$$(@:f)
  .ENDIF	#"$(COM)"=="GCC"
 .ENDIF
 
+.INCLUDE : extension_post.mk
 
-$(DESCRIPTION) : description.xml
-	@@-$(MKDIRHIER) $(@:d)
-	$(GNUCOPY) $< $@
-
-$(PACKLICS) : $(SOLARBINDIR)$/osl$/LICENSE_ALv2
-	@@-$(MKDIRHIER) $(@:d)
-	$(GNUCOPY) $< $@
-
-$(ZIP1DIR)/%.xcu : %.xcu
-	@@-$(MKDIRHIER) $(@:d)
-	$(GNUCOPY) $< $@
-
-$(ZIP1DIR)$/%.xcs : %.xcs
-	@@-$(MKDIRHIER) $(@:d)
-	$(GNUCOPY) $< $@
-
-.ENDIF # "$(ENABLE_PRESENTER_SCREEN)" != "NO"
-.ELSE
-ivo:
-	$(ECHO)
 .ENDIF # L10N_framework
-
+.ENDIF # "$(ENABLE_PRESENTER_SCREEN)" != "NO"
