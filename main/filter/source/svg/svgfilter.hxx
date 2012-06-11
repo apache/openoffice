@@ -132,7 +132,9 @@ public:
     void  popClip();
     sal_Bool  hasClip() const;
     const ::basegfx::B2DPolyPolygon* getCurClip() const;
-    
+
+	void writeMtf( const GDIMetaFile& rMtf );
+
 protected:
 
 virtual void			_ExportStyles( sal_Bool /* bUsed */ ) {}
