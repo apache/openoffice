@@ -65,7 +65,7 @@ OpenOffice
 			ABOUTBOXPRODUCTVERSION 3.4.0
 			BASEPRODUCTVERSION 3.4
             PCPFILENAME openoffice.pcp
-			UPDATEURL http://update38.services.openoffice.org/ProductUpdateService/check.Update
+			UPDATEURL http://www.openoffice.org/projects/update/aoo341/check.Update
             ODFNOTIFYURL http://odfnotify.services.openoffice.org/OOo3.0/notification.jsp?version=ODF
 			ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,userland.txt,version.lst
 			REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
@@ -128,7 +128,7 @@ OpenOffice_wJRE
 			USERDIRPRODUCTVERSION 3
 			ABOUTBOXPRODUCTVERSION 3.4.0
 			BASEPRODUCTVERSION 3.4
-			UPDATEURL http://update38.services.openoffice.org/ProductUpdateService/check.Update
+			UPDATEURL http://www.openoffice.org/projects/update/aoo341/check.Update
 			ODFNOTIFYURL http://odfnotify.services.openoffice.org/OOo3.0/notification.jsp?version=ODF
 			ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,javaversion2.dat,userland.txt,version.lst
 			REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
@@ -200,7 +200,7 @@ OpenOffice_Dev
 			SOLSUREPACKAGEPREFIX ooodev
 			REGISTRYLAYERNAME LayerDev
 			SERVICETAG_URN urn:uuid:1680b00d-e45c-11de-82d6-080020a9ed93
-			UPDATEURL http://update38.services.openoffice.org/ProductUpdateService/check.Update
+			UPDATEURL http://www.openoffice.org/projects/update/aoo341/check.Update
 			ODFNOTIFYURL http://odfnotify.services.openoffice.org/OOo3.0/notification.jsp?version=ODF
 			ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,javaversion2.dat,userland.txt,version.lst
 			EVAL
