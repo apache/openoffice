@@ -193,8 +193,7 @@ void SwView::ExecDraw(SfxRequest& rReq)
 		if ( pSdrView )
 		{
 			SdrObject* pObj = NULL;
-			svx::FontWorkGalleryDialog aDlg( *pSdrView, pWin, nSlotId );
-			aDlg.SetSdrObjectRef( &pObj, &pSdrView->getSdrModelFromSdrView() );
+			svx::FontWorkGalleryDialog aDlg( *pSdrView, pWin, &pObj );
 			aDlg.Execute();
 			if ( pObj )
 			{

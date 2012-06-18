@@ -64,6 +64,9 @@ public:
 	/** returns the current OutlinerParaObject and removes it from this instance */
 	OutlinerParaObject* RemoveOutlinerParaObject();
 
+    // support model change, e.g. when text object is cloned to a new SdrModel
+    void ImpModelChange(SdrModel& rSourceModel, SdrModel& rTargetModel);
+
 protected:
 	virtual const SfxItemSet& GetObjectItemSet();
 	virtual void SetObjectItem(const SfxPoolItem& rItem);

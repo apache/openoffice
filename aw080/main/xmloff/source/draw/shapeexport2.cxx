@@ -1014,9 +1014,7 @@ void XMLShapeExport::ImpExportPolygonShape(
 					drawing::PointSequence* pSequence = pSourcePolyPolygon->getArray();
 					if(pSequence)
 					{
-						SdXMLImExPointsElement aPoints(pSequence, aViewBox, aPoint, aSize,
-							// #96328#
-							bClosed);
+						SdXMLImExPointsElement aPoints(pSequence, aViewBox, aPoint, aSize, bClosed);
 
 						// write point array
 						mrExport.AddAttribute(XML_NAMESPACE_DRAW, XML_POINTS, aPoints.GetExportString());

@@ -485,7 +485,7 @@ void FontworkBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rBi
 		{
 			if(pSdrView)
 			{
-				FontWorkGalleryDialog aDlg( *pSdrView, ImpGetViewWin(pSdrView), nSID );
+				FontWorkGalleryDialog aDlg( *pSdrView, ImpGetViewWin(pSdrView) );
 			    aDlg.Execute();
 		    }
 			else

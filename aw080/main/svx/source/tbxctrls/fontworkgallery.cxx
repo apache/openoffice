@@ -68,19 +68,21 @@ const int nLineCount = 4;
 /*************************************************************************
 |*	Svx3DWin - FloatingWindow
 \************************************************************************/
-FontWorkGalleryDialog::FontWorkGalleryDialog( SdrView& rSdrView, Window* pParent, sal_uInt16 /*nSID*/ ) :
-		ModalDialog( pParent, SVX_RES( RID_SVX_MDLG_FONTWORK_GALLERY ) ),
-		maFLFavorites		( this, SVX_RES( FL_FAVORITES ) ),
-		maCtlFavorites		( this, SVX_RES( CTL_FAVORITES ) ),
-		maOKButton			( this, SVX_RES( BTN_OK ) ),
-		maCancelButton		( this, SVX_RES( BTN_CANCEL ) ),
-        maHelpButton        ( this, SVX_RES( BTN_HELP ) ),
-		mnThemeId			( 0xffff ),
-		mrSdrView			( rSdrView ),
-		mrModel				( dynamic_cast< FmFormModel& >(rSdrView.getSdrModelFromSdrView()) ),
-		maStrClickToAddText ( SVX_RES( STR_CLICK_TO_ADD_TEXT ) ),
-		mppSdrObject		( NULL ),
-		mpDestModel			( NULL )
+FontWorkGalleryDialog::FontWorkGalleryDialog( 
+    SdrView& rSdrView, 
+    Window* pParent, 
+    SdrObject** ppSdrObject) 
+:   ModalDialog( pParent, SVX_RES( RID_SVX_MDLG_FONTWORK_GALLERY ) ),
+	maFLFavorites		( this, SVX_RES( FL_FAVORITES ) ),
+	maCtlFavorites		( this, SVX_RES( CTL_FAVORITES ) ),
+	maOKButton			( this, SVX_RES( BTN_OK ) ),
+	maCancelButton		( this, SVX_RES( BTN_CANCEL ) ),
+    maHelpButton        ( this, SVX_RES( BTN_HELP ) ),
+	mnThemeId			( 0xffff ),
+	mrSdrView			( rSdrView ),
+	mrModel				( dynamic_cast< FmFormModel& >(rSdrView.getSdrModelFromSdrView()) ),
+	maStrClickToAddText ( SVX_RES( STR_CLICK_TO_ADD_TEXT ) ),
+	mppSdrObject		( ppSdrObject )
 {
 	FreeResource();
 
@@ -211,12 +213,6 @@ void FontWorkGalleryDialog::changeText( SdrTextObj* pObj )
 	}
 }
 
-void FontWorkGalleryDialog::SetSdrObjectRef( SdrObject** ppSdrObject, SdrModel* pModel )
-{
-	mppSdrObject = ppSdrObject;
-	mpDestModel = pModel;
-}
-
 void FontWorkGalleryDialog::insertSelectedFontwork()
 {
 	sal_uInt16 nItemId = maCtlFavorites.GetSelectItemId();
@@ -232,7 +228,7 @@ void FontWorkGalleryDialog::insertSelectedFontwork()
 
 			if( pPage && pPage->GetObjCount() )
 			{
-				SdrObject* pNewObject = pPage->GetObj(0)->CloneSdrObject(mpDestModel);
+				SdrObject* pNewObject = pPage->GetObj(0)->CloneSdrObject(&mrModel);
 
 				// center shape on current view
 				OutputDevice* pOutDev = mrSdrView.GetFirstOutputDevice();
@@ -249,14 +245,20 @@ void FontWorkGalleryDialog::insertSelectedFontwork()
 
 					if ( mppSdrObject )
 					{
+                        // if handle is given register SdrObject there. Ownership change!
 						*mppSdrObject = pNewObject;
-//						(*mppSdrObject)->SetModel( mpDestModel );
 					}
 					else if( mrSdrView.GetSdrPageView() )
 					{
+                        // if a SdrPage is given instert SdrObject there. Ownership change!
 						mrSdrView.InsertObjectAtView( *pNewObject );
-//						changeText( dynamic_cast< SdrTextObj* >( pNewObject ) );
 					}
+                    else
+                    {
+                        // no target for created SdrObject (!)
+                        OSL_ENSURE(false, "FontWorkGalleryDialog: No target for created SDrObject (!)");
+                		deleteSdrObjectSafeAndClearPointer(pNewObject);
+                    }
 				}
 			}
 		}

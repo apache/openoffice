@@ -270,7 +270,7 @@ bool SdrExchangeView::Paste(const XubString& rStr, const basegfx::B2DPoint& rPos
 
 	if(GetDefaultStyleSheet()) 
 	{
-		pObj->SetStyleSheet(GetDefaultStyleSheet(), sal_False);
+		pObj->SetStyleSheet(GetDefaultStyleSheet(), false);
 	}
 
 	pObj->SetMergedItemSet(GetDefaultAttr());
@@ -283,12 +283,12 @@ bool SdrExchangeView::Paste(const XubString& rStr, const basegfx::B2DPoint& rPos
 
 	pObj->FitFrameToTextSize();
 
-	const basegfx::B2DVector& rObjectSize(pObj->getSdrObjectScale());
+	const basegfx::B2DVector aObjectSize(basegfx::absolute(pObj->getSdrObjectScale()));
 	const MapUnit eMap(getSdrModelFromSdrView().GetExchangeObjectUnit());
 	const Fraction aMap(getSdrModelFromSdrView().GetExchangeObjectScale());
 	const basegfx::B2DPoint aPos(ImpLimitToWorkArea(rPos));
 
-	ImpPasteObject(pObj, *pLst, aPos, rObjectSize, MapMode(eMap, Point(0,0), aMap, aMap), nOptions);
+	ImpPasteObject(pObj, *pLst, aPos, aObjectSize, MapMode(eMap, Point(0,0), aMap, aMap), nOptions);
 
 	return true;
 }
@@ -334,7 +334,7 @@ bool SdrExchangeView::Paste(SvStream& rInput, const String& rBaseURL, sal_uInt16
 
 	if(GetDefaultStyleSheet()) 
 	{
-		pObj->SetStyleSheet(GetDefaultStyleSheet(), sal_False);
+		pObj->SetStyleSheet(GetDefaultStyleSheet(), false);
 	}
 
 	pObj->SetMergedItemSet(GetDefaultAttr());
@@ -348,12 +348,12 @@ bool SdrExchangeView::Paste(SvStream& rInput, const String& rBaseURL, sal_uInt16
     pObj->SetText(rInput, rBaseURL, eFormat);
 	pObj->FitFrameToTextSize();
 
-	const basegfx::B2DVector& rObjectSize(pObj->getSdrObjectScale());
+	const basegfx::B2DVector aObjectSize(basegfx::absolute(pObj->getSdrObjectScale()));
 	const MapUnit eMap(getSdrModelFromSdrView().GetExchangeObjectUnit());
 	const Fraction aMap(getSdrModelFromSdrView().GetExchangeObjectScale());
 	const basegfx::B2DPoint aPos(ImpLimitToWorkArea(rPos));
 	
-	ImpPasteObject(pObj, *pLst, aPos, rObjectSize, MapMode(eMap, Point(0, 0), aMap, aMap), nOptions);
+	ImpPasteObject(pObj, *pLst, aPos, aObjectSize, MapMode(eMap, Point(0, 0), aMap, aMap), nOptions);
 
 	// TTTT: Shold already be done in ImpPasteObject/onModelChange ?!?
 	if(pObj && GetDefaultStyleSheet())

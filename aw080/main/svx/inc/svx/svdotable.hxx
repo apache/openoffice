@@ -225,7 +225,7 @@ public:
 	virtual sal_uInt16 GetObjIdentifier() const;
 	virtual void SetChanged();
 
-	virtual bool AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt = true, bool bWdt = true) const;
+	virtual basegfx::B2DRange AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHgt = true, bool bWdt = true) const;
 	virtual bool AdjustTextFrameWidthAndHeight(bool bHgt = true, bool bWdt = true);
 	virtual void TakeObjNameSingul(String& rName) const;
 	virtual void TakeObjNamePlural(String& rName) const;

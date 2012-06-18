@@ -146,7 +146,7 @@ namespace sdr
 
 			rObj.InvalidateRenderGeometry();
 		}
-		void CustomShapeProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
+		void CustomShapeProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
 		{
 			TextProperties::SetStyleSheet( pNewStyleSheet, bDontRemoveHardAttr );
 			UpdateTextFrameStatus();

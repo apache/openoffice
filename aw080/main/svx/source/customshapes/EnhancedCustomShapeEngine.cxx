@@ -275,8 +275,9 @@ REF( com::sun::star::drawing::XShape ) SAL_CALL EnhancedCustomShapeEngine::rende
 	throw ( NMSP_UNO::RuntimeException )
 {
 	REF( com::sun::star::drawing::XShape ) xShape;
-	SdrObject* pSdrObjCustomShape( GetSdrObjectFromXShape( mxShape ) );
-	if ( pSdrObjCustomShape )
+	SdrObjCustomShape* pSdrObjCustomShape(dynamic_cast< SdrObjCustomShape* >(GetSdrObjectFromXShape(mxShape)));
+	
+    if ( pSdrObjCustomShape )
 	{
 		// retrieving the TextPath property to check if feature is enabled
 		SdrCustomShapeGeometryItem& rGeometryItem = (SdrCustomShapeGeometryItem&)
@@ -306,7 +307,7 @@ REF( com::sun::star::drawing::XShape ) SAL_CALL EnhancedCustomShapeEngine::rende
                     pRenderedShape = pRenderedFontWork;
                 }
 			}
-			SdrObject* pRenderedShape3d = EnhancedCustomShape3d::Create3DObject( pRenderedShape, pSdrObjCustomShape );
+			SdrObject* pRenderedShape3d = EnhancedCustomShape3d::Create3DObject(*pRenderedShape, *pSdrObjCustomShape);
 			if ( pRenderedShape3d )
 			{
 //				bFlipV = bFlipH = sal_False;
@@ -350,7 +351,7 @@ REF( com::sun::star::drawing::XShape ) SAL_CALL EnhancedCustomShapeEngine::rende
 //				sdr::legacy::MirrorSdrObject(*pRenderedShape, aTop, aBottom );
 //			}
 
-			pRenderedShape->SetStyleSheet( pSdrObjCustomShape->GetStyleSheet(), sal_True );
+			pRenderedShape->SetStyleSheet(pSdrObjCustomShape->GetStyleSheet(), true);
 		}
 
 		if ( mbForceGroupWithText )

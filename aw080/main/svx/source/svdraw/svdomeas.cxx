@@ -635,11 +635,13 @@ bool SdrMeasureObj::CalcFieldValue(const SvxFieldItem& rField, sal_uInt16 nPara,
 
 void SdrMeasureObj::UndirtyText() const
 {
-	if (bTextDirty)
+	if(bTextDirty)
 	{
-		SdrOutliner& rOutliner=ImpGetDrawOutliner();
+		SdrOutliner& rOutliner = ImpGetDrawOutliner();
 		OutlinerParaObject* pOutlinerParaObject = SdrTextObj::GetOutlinerParaObject();
-		if(pOutlinerParaObject==NULL)
+        SdrMeasureObj* pThat = const_cast<SdrMeasureObj*>(this);
+
+		if(!pOutlinerParaObject)
 		{
             rOutliner.QuickInsertField(SvxFieldItem(SdrMeasureField(SDRMEASUREFIELD_ROTA90BLANCS), EE_FEATURE_FIELD), ESelection(0,0));
             rOutliner.QuickInsertField(SvxFieldItem(SdrMeasureField(SDRMEASUREFIELD_VALUE), EE_FEATURE_FIELD),ESelection(0,1));
@@ -647,12 +649,15 @@ void SdrMeasureObj::UndirtyText() const
             rOutliner.QuickInsertField(SvxFieldItem(SdrMeasureField(SDRMEASUREFIELD_ROTA90BLANCS), EE_FEATURE_FIELD),ESelection(0,3));
 
 			if(GetStyleSheet())
+            {
 				rOutliner.SetStyleSheet(0, GetStyleSheet());
+            }
 
 			rOutliner.SetParaAttribs(0, GetObjectItemSet());
 
-			// casting auf nonconst
-			const_cast<SdrMeasureObj*>(this)->SetOutlinerParaObject( rOutliner.CreateParaObject() );
+            // need to reset bTextDirty first, else loop is triggered
+    		pThat->bTextDirty = false;
+			pThat->SetOutlinerParaObject( rOutliner.CreateParaObject() );
 		}
 		else
 		{
@@ -661,14 +666,11 @@ void SdrMeasureObj::UndirtyText() const
 
 		rOutliner.SetUpdateMode(sal_True);
 		rOutliner.UpdateFields();
-		Size aSiz(rOutliner.CalcTextSize());
-		rOutliner.Clear();
-		// 3x casting auf nonconst
-		((SdrMeasureObj*)this)->aTextSize=aSiz;
-		((SdrMeasureObj*)this)->bTextSizeDirty=sal_False;
-		((SdrMeasureObj*)this)->bTextDirty = false;
-		}
+		pThat->aTextSize = rOutliner.CalcTextSize();
+		pThat->bTextSizeDirty=sal_False;
+        rOutliner.Clear();
 	}
+}
 
 void SdrMeasureObj::TakeObjNameSingul(XubString& rName) const
 {

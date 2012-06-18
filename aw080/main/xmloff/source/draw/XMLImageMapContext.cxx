@@ -504,8 +504,7 @@ void XMLImageMapPolygonContext::Prepare(
 	// get polygon sequence
 	awt::Point aPoint(aViewBox.GetX(), aViewBox.GetY());
 	awt::Size aSize(aViewBox.GetWidth(), aViewBox.GetHeight());
-	SdXMLImExPointsElement aPoints( sPointsString, aViewBox, aPoint, aSize,
-									GetImport().GetMM100UnitConverter() );
+	SdXMLImExPointsElement aPoints( sPointsString, aViewBox, aPoint, aSize, GetImport().GetMM100UnitConverter(), true );
 	PointSequenceSequence aPointSeqSeq = aPoints.GetPointSequenceSequence();
 
 	// only use first element of sequence-sequence

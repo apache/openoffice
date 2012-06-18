@@ -830,7 +830,7 @@ void SdrCreateView::ShowCreateObj()
             {
                 SdrCircObj* pCircObj = dynamic_cast< SdrCircObj* >(GetCreateObj());
 
-                if(pCircObj && OBJ_CIRC != pCircObj->GetObjIdentifier())
+                if(pCircObj && CircleType_Circle != pCircObj->GetSdrCircleObjType())
                 {
                     // #i103058# Allow SolidDragging with four points
                     if(GetDragStat().GetPointAnz() < 4)

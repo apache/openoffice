@@ -35,6 +35,7 @@ namespace sdr
 	{
 		class SVX_DLLPUBLIC DefaultProperties : public BaseProperties
 		{
+        private:
 		protected:
 			// the to be used ItemSet
 			SfxItemSet*										mpItemSet;
@@ -87,7 +88,7 @@ namespace sdr
 			virtual void SetObjectItemSet(const SfxItemSet& rSet);
 
 			// set a new StyleSheet and broadcast
-			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr);
+			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr);
 
 			// get the installed StyleSheet
 			virtual SfxStyleSheet* GetStyleSheet() const;

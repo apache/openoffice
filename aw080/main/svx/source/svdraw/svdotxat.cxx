@@ -59,34 +59,35 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bool SdrTextObj::AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt, bool bWdt) const
+basegfx::B2DRange SdrTextObj::AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHgt, bool bWdt) const
 {
-	if(IsTextFrame() && !o_rRange.isEmpty())
+	if(IsTextFrame() && !rRange.isEmpty())
     {
 	    const SdrFitToSizeType eFit(GetFitToSize());
 	    const bool bFitToSize(SDRTEXTFIT_PROPORTIONAL == eFit || SDRTEXTFIT_ALLLINES == eFit);
 
         if(!bFitToSize)
 	    {
-            return ImpAdjustTextFrameWidthAndHeight(o_rRange, bHgt, bWdt, true);
+            return ImpAdjustTextFrameWidthAndHeight(rRange, bHgt, bWdt, true);
         }
     }
 
-    return false;
+    return rRange;
 }
 
-bool SdrTextObj::ImpAdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt, bool bWdt, bool bCheckAnimation) const
+basegfx::B2DRange SdrTextObj::ImpAdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHgt, bool bWdt, bool bCheckAnimation) const
 {
 	bool bWdtGrow(bWdt && IsAutoGrowWidth());
 	bool bHgtGrow(bHgt && IsAutoGrowHeight());
+    basegfx::B2DRange aRetval(rRange);
 		    
     if(bWdtGrow || bHgtGrow)
 	{
-        basegfx::B2DVector aSize(o_rRange.getRange());
+        basegfx::B2DVector aSize(aRetval.getRange());
         basegfx::B2DVector aMaxSize(100000.0, 100000.0);
         double fHeight(0.0), fMinHeight(0.0), fMaxHeight(0.0);
         double fWidth(0.0), fMinWidth(0.0), fMaxWidth(0.0);
-        const basegfx::B2DPoint aOriginalMinimum(o_rRange.getMinimum());
+        const basegfx::B2DPoint aOriginalMinimum(aRetval.getMinimum());
 
 		if(!basegfx::fTools::equalZero(getSdrModelFromSdrObject().GetMaxObjectScale().getX())) 
 		{
@@ -219,15 +220,15 @@ bool SdrTextObj::ImpAdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, b
 
         // fMinWidth < fWidth < fMaxWidth
         fWidth = std::min(fMaxWidth, std::max(fWidth, fMinWidth));
-		fWidth = std::min(1.0, fWidth += aBorders.getX()); // aBorders.getX() may be negative
+		fWidth = std::max(1.0, fWidth += aBorders.getX()); // aBorders.getX() may be negative
 
         // fMinHeight < fHeight < fMaxHeight
         fHeight = std::min(fMaxHeight, std::max(fHeight, fMinHeight));
-		fHeight = std::min(1.0, fHeight += aBorders.getY()); // aBorders.getY() may be negative
+		fHeight = std::max(1.0, fHeight += aBorders.getY()); // aBorders.getY() may be negative
 
         // get grow sizes
-        const double fWidthGrow(fWidth - o_rRange.getWidth());
-        const double fHeightGrow(fHeight - o_rRange.getHeight());
+        const double fWidthGrow(fWidth - aRetval.getWidth());
+        const double fHeightGrow(fHeight - aRetval.getHeight());
 
         if(basegfx::fTools::equalZero(fWidthGrow))
         {
@@ -247,16 +248,15 @@ bool SdrTextObj::ImpAdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, b
 
                 if(SDRTEXTHORZADJUST_LEFT == eHAdj) 
                 {
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMaxX() + fWidthGrow, o_rRange.getMinY()));
+                    aRetval = basegfx::B2DRange(aRetval.getMinX(), aRetval.getMinY(), aRetval.getMaxX() + fWidthGrow, aRetval.getMaxY());
                 }
 				else if(SDRTEXTHORZADJUST_RIGHT == eHAdj) 
                 {
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX() - fWidthGrow, o_rRange.getMinY()));
+                    aRetval = basegfx::B2DRange(aRetval.getMinX() - fWidthGrow, aRetval.getMinY(), aRetval.getMaxX(), aRetval.getMaxY());
                 }
 				else 
                 {
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX() - (fWidthGrow * 0.5), o_rRange.getMinY()));
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMaxX() + (fWidthGrow * 0.5), o_rRange.getMinY()));
+                    aRetval = basegfx::B2DRange(aRetval.getMinX() - (fWidthGrow * 0.5), aRetval.getMinY(), aRetval.getMaxX() + (fWidthGrow * 0.5), aRetval.getMaxY());
 				}
 			}
 
@@ -266,35 +266,34 @@ bool SdrTextObj::ImpAdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, b
 
 				if(SDRTEXTVERTADJUST_TOP == eVAdj) 
                 {
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMaxY() + fHeightGrow));
+                    aRetval = basegfx::B2DRange(aRetval.getMinX(), aRetval.getMinY(), aRetval.getMaxX(), aRetval.getMaxY() + fHeightGrow);
                 }
 				else if(SDRTEXTVERTADJUST_BOTTOM == eVAdj) 
                 {
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMinY() - fHeightGrow));
+                    aRetval = basegfx::B2DRange(aRetval.getMinX(), aRetval.getMinY() - fHeightGrow, aRetval.getMaxX(), aRetval.getMaxY());
                 }
     			else 
                 {
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMinY() - (fHeightGrow * 0.5)));
-                    o_rRange.expand(basegfx::B2DTuple(o_rRange.getMinX(), o_rRange.getMaxY() + (fHeightGrow * 0.5)));
+                    aRetval = basegfx::B2DRange(aRetval.getMinX(), aRetval.getMinY() - (fHeightGrow * 0.5), aRetval.getMaxX(), aRetval.getMaxY() + (fHeightGrow * 0.5));
 				}
     		}
 
-            if(!aOriginalMinimum.equal(o_rRange.getMinimum()) && isRotatedOrSheared())
+            if(!aOriginalMinimum.equal(aRetval.getMinimum()) && isRotatedOrSheared())
             {
                 basegfx::B2DHomMatrix aCorrector(
                     basegfx::tools::createScaleTranslateB2DHomMatrix(
                         getSdrObjectScale(),
-                        getSdrObjectTranslate()));
+                        basegfx::absolute(getSdrObjectTranslate())));
 
                 aCorrector.invert();
                 aCorrector = getSdrObjectTransformation() * aCorrector;
 
-                const basegfx::B2DPoint aCorrectedTopLeft(aCorrector * o_rRange.getMinimum());
+                const basegfx::B2DPoint aCorrectedTopLeft(aCorrector * aRetval.getMinimum());
 
                 aCorrector.identity();
-                aCorrector.translate(aCorrectedTopLeft - o_rRange.getMinimum());
+                aCorrector.translate(aCorrectedTopLeft - aRetval.getMinimum());
 
-                o_rRange.transform(aCorrector);
+                aRetval.transform(aCorrector);
 
                 // TTTT: Check if the above solution works
                 //
@@ -310,19 +309,18 @@ bool SdrTextObj::ImpAdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, b
 	    		//    rR.Move(aD2.X(),aD2.Y());
                 //}
 		    }
-					
-            return true;
 		}
 	}
 
-	return false;
+	return aRetval;
 }
 
 bool SdrTextObj::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
 {
-    basegfx::B2DRange aNewRange(getSdrObjectTranslate(), getSdrObjectTranslate() + getSdrObjectScale());
+    const basegfx::B2DRange aOldRange(getSdrObjectTranslate(), getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
+    const basegfx::B2DRange aNewRange(AdjustTextFrameWidthAndHeight(aOldRange, bHgt, bWdt));
 	
-	if(AdjustTextFrameWidthAndHeight(aNewRange, bHgt, bWdt)) 
+	if(!aNewRange.equal(aOldRange)) 
     {
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
 		sdr::legacy::SetLogicRange(*this, aNewRange);

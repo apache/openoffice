@@ -3209,7 +3209,7 @@ bool SvxShape::getPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
 		{
 			SdrCircObj* pSdrCircObj = dynamic_cast< SdrCircObj* >(mpObj.get());
 
-			if(pSdrCircObj && OBJ_CIRC != mpObj->GetObjIdentifier())
+			if(pSdrCircObj && CircleType_Circle != pSdrCircObj->GetSdrCircleObjType())
 			{
 				const double fAngle(OWN_ATTR_CIRCSTARTANGLE == pProperty->nWID ? pSdrCircObj->GetStartAngle() : pSdrCircObj->GetEndAngle());
 				const sal_Int32 nOldAngle(basegfx::fround(((F_2PI - fAngle) * 18000.0) / F_PI) % 36000);

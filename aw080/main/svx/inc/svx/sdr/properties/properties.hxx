@@ -143,7 +143,7 @@ namespace sdr
 
 			// Set a new StyleSheet. Registers as listener at the StyleSheet to get knowledge
 			// of StyleSheet changes.
-			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr) = 0;
+			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr) = 0;
 
 			// Get the installed StyleSheet.
 			virtual SfxStyleSheet* GetStyleSheet() const = 0;

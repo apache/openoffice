@@ -36,16 +36,20 @@ namespace sdr
 	{
 		class SVX_DLLPUBLIC AttributeProperties : public DefaultProperties, public SfxListener
 		{
+        private:
 			// add style sheet, do all the necessary handling
-			void ImpAddStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr);
+			void ImpAddStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr);
 
 			// remove StyleSheet, do all the necessary handling
 			void ImpRemoveStyleSheet();
 
-		protected:
+            // do needed changes when cloning to a new model
+    		void ImpModelChange(SdrModel& rSourceModel, SdrModel& rTargetModel);
+
 			// the SytleSheet of this object
 			SfxStyleSheet*									mpStyleSheet;
 
+		protected:
 			// create a new itemset
 			virtual SfxItemSet& CreateObjectSpecificItemSet(SfxItemPool& pPool);
 
@@ -69,7 +73,7 @@ namespace sdr
 			virtual ~AttributeProperties();
 			
 			// set a new StyleSheet and broadcast
-			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr);
+			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr);
 
 			// get the installed StyleSheet
 			virtual SfxStyleSheet* GetStyleSheet() const;

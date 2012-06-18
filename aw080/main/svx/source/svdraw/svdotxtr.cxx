@@ -49,7 +49,10 @@
 
 void SdrTextObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
-    const bool bTextAdaption(bTextFrame && !IsPasteResize());
+    // Adapt Width and Height only when text frame (not object with text).
+    // Also do not do it in edit mode, let the object get as small as the
+    // minimum frame width/height without changing these.
+    const bool bTextAdaption(bTextFrame && !IsPasteResize() && !IsInEditMode());
 	basegfx::B2DVector aOldSize;
 
     if(bTextAdaption)
@@ -276,7 +279,7 @@ SdrObject* SdrTextObj::ImpConvertMakeObj(const basegfx::B2DPolyPolygon& rPolyPol
 			
 			pPathObj->ClearMergedItem();
 			pPathObj->SetMergedItemSet(GetObjectItemSet());
-			pPathObj->SetStyleSheet(GetStyleSheet(), sal_True);
+			pPathObj->SetStyleSheet(GetStyleSheet(), true);
 		}
 	}
 

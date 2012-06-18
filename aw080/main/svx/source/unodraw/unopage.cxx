@@ -566,7 +566,7 @@ SdrObject *SvxDrawPage::_CreateSdrObject( const Reference< drawing::XShape > & x
 				basegfx::B2DPolygon aPoly;
 					
                 aPoly.append(basegfx::B2DPoint(aPos.X, aPos.Y));
-				aPoly.append(basegfx::B2DPoint(aPos.X + aSize.Width, aPos.Y + aSize.Height));
+				aPoly.append(basegfx::B2DPoint(aPos.X + 100.0, aPos.Y));
 				pNewObj = new SdrPathObj(*mpModel, basegfx::B2DPolyPolygon(aPoly));
                 bSetTransform = false;
             }

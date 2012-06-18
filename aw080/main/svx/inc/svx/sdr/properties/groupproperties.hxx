@@ -99,7 +99,7 @@ namespace sdr
 			virtual void SetObjectItemSet(const SfxItemSet& rSet);
 
 			// set a new StyleSheet
-			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr);
+			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr);
 
 			// get the local StyleSheet
 			virtual SfxStyleSheet* GetStyleSheet() const;

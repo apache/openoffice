@@ -133,7 +133,7 @@ namespace sdr
 			DBG_ASSERT(sal_False, "EmptyProperties::PostItemChange() should never be called (!)");
 		}
 
-		void EmptyProperties::SetStyleSheet(SfxStyleSheet* /*pNewStyleSheet*/, sal_Bool /*bDontRemoveHardAttr*/)
+		void EmptyProperties::SetStyleSheet(SfxStyleSheet* /*pNewStyleSheet*/, bool /*bDontRemoveHardAttr*/)
 		{
 			DBG_ASSERT(sal_False, "EmptyProperties::SetStyleSheet() should never be called (!)");
 		}

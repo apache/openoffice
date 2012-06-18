@@ -817,11 +817,6 @@ bool FuText::MouseButtonUp(const MouseEvent& rMEvt)
 
 			mxTextObj.reset( dynamic_cast< SdrTextObj* >( mpView->GetCreateObj() ) );
 
-			if(mxTextObj.is())
-			{
-				GetTextObj()->SetDisableAutoWidthOnDragging(true);
-			}
-
 			if(!mpView->EndCreateObj(SDRCREATE_FORCEEND))
 			{
 				mxTextObj.reset(0);

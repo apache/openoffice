@@ -163,8 +163,15 @@ void SdrTextObj::copyDataFromSdrObject(const SdrObject& rSource)
                 }
             }
 
-			mpText->SetOutlinerParaObject(pNewOutlinerParaObject);
-			ImpSetTextStyleSheetListeners();
+            mpText->SetOutlinerParaObject(pNewOutlinerParaObject);
+
+			if(pNewOutlinerParaObject && &rSource.getSdrModelFromSdrObject() != &getSdrModelFromSdrObject())
+            {
+                // It is a clone to another model
+            	mpText->ImpModelChange(rSource.getSdrModelFromSdrObject(), getSdrModelFromSdrObject());
+            }
+			
+            ImpSetTextStyleSheetListeners();
 		}
 		else
     	{

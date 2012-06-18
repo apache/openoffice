@@ -1811,7 +1811,7 @@ void SdrEditView::ImpDismantleOneObject(const SdrObject* pObj, SdrObjList& rOL, 
                     const basegfx::B2DRange aRawUnitTextRange(pCustomShape->getRawUnifiedTextRange());
 
                     // get TopLeft and BottomRight when applying current objects scale and translate,
-                    // but leave out rot and shear
+                    // but leave out rot and shear TTTT need to check mirroring
                     const basegfx::B2DHomMatrix aJustScaleTranslate(
                         basegfx::tools::createScaleTranslateB2DHomMatrix(
                             pCustomShape->getSdrObjectScale(),

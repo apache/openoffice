@@ -175,7 +175,7 @@ bool FuFormatPaintBrush::MouseMove(const MouseEvent& rMEvt)
 		    const basegfx::B2DPoint aPnt(mpWindow->GetInverseViewTransformation() * basegfx::B2DPoint(rMEvt.GetPosPixel().X(), rMEvt.GetPosPixel().Y()));
 			bool bOverMarkableObject = mpView->PickObj( aPnt, fHitLog, pObj, SDRSEARCH_PICKMARKABLE);
 
-			if(bOverMarkableObject && HasContentForThisType(pObj->GetObjInventor(),pObj->GetObjIdentifier()) )
+			if(bOverMarkableObject && pObj && HasContentForThisType(*pObj) )
 				mpWindow->SetPointer(Pointer(POINTER_FILL));
 			else
 				mpWindow->SetPointer(Pointer(POINTER_ARROW));
@@ -242,11 +242,11 @@ void FuFormatPaintBrush::Deactivate()
 	}
 }
 
-bool FuFormatPaintBrush::HasContentForThisType( sal_uInt32 nObjectInventor, sal_uInt16 nObjectIdentifier ) const
+bool FuFormatPaintBrush::HasContentForThisType( const SdrObject& rSdrObject ) const
 {
     if( mpItemSet.get() == 0 )
         return false;
-    if( !mpView || (!mpView->SupportsFormatPaintbrush( nObjectInventor, nObjectIdentifier) ) )
+    if( !mpView || (!mpView->SupportsFormatPaintbrush( rSdrObject ) ) )
         return false;
     return true;
 }
@@ -282,7 +282,7 @@ void FuFormatPaintBrush::Paste( bool bNoCharacterFormats, bool bNoParagraphForma
     
     if( pSelected )
     {
-        if( rDrawViewShell.GetDrawView()->SupportsFormatPaintbrush(pSelected->GetObjInventor(), pSelected->GetObjIdentifier()) )
+        if( rDrawViewShell.GetDrawView()->SupportsFormatPaintbrush(*pSelected) )
             return;
     }
 

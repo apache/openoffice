@@ -923,7 +923,7 @@ SdrObject* SdrGrafObj::getFullDragClone() const
 
 basegfx::B2DPolyPolygon SdrGrafObj::TakeXorPoly() const
 {
-	if(mbInsidePaint)
+	if(mbInsidePaint) // TTTT exception needed here?
 	{
 		// take grown rectangle
 		const double fHalfLineWidth(ImpGetLineWdt() * 0.5);

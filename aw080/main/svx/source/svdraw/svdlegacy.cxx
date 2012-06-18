@@ -207,11 +207,10 @@ namespace sdr
 			}
 			else
 			{
-				// build range without rotation and shear
-				const basegfx::B2DVector& rScale(rObject.getSdrObjectScale());
-				const basegfx::B2DPoint& rTranslate(rObject.getSdrObjectTranslate());
-
-				return basegfx::B2DRange(rTranslate, rTranslate + rScale);
+				// build range without rotation, mirror and shear
+				return basegfx::B2DRange(
+                    rObject.getSdrObjectTranslate(), 
+                    rObject.getSdrObjectTranslate() + basegfx::absolute(rObject.getSdrObjectScale()));
 			}
 		}
 
@@ -239,6 +238,7 @@ namespace sdr
 			}
 			else
 			{
+                // keep mirroring, rotation and shear, replace absolute size and translation
 				const basegfx::B2DVector aScale(
 					rObject.isMirroredX() ? -rRange.getWidth() : rRange.getWidth(),
 					rObject.isMirroredY() ? -rRange.getHeight() : rRange.getHeight());

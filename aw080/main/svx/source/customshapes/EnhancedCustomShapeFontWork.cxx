@@ -846,12 +846,6 @@ SdrObject* CreateSdrObjectFromParagraphOutlines( const FWData& rFWData, const Sd
 			aTextAreaIter++;
 		}
 
-		Point aP( sdr::legacy::GetSnapRect(*pCustomShape).Center() );
-		Size aS( sdr::legacy::GetLogicRect(*pCustomShape).GetSize() );
-		aP.X() -= aS.Width() / 2;
-		aP.Y() -= aS.Height() / 2;
-		Rectangle aLogicRect( aP, aS );
-
 		SfxItemSet aSet( pCustomShape->GetMergedItemSet() );
 		aSet.ClearItem( SDRATTR_TEXTDIRECTION );	//SJ: vertical writing is not required, by removing this item no outliner is created
 		aSet.Put(SdrOnOffItem(SDRATTR_SHADOW, sal_False)); // #i37011# NO shadow for FontWork geometry

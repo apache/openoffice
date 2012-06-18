@@ -1319,7 +1319,6 @@ SdXMLImExPointsElement::SdXMLImExPointsElement(drawing::PointSequence* pPoints,
 	const SdXMLImExViewBox& rViewBox,
 	const awt::Point& rObjectPos,
 	const awt::Size& rObjectSize,
-	// #96328#
 	const bool bClosed)
 :	maPoly( 0L )
 {
@@ -1385,7 +1384,8 @@ SdXMLImExPointsElement::SdXMLImExPointsElement(const OUString& rNew,
 	const SdXMLImExViewBox& rViewBox,
 	const awt::Point& rObjectPos,
 	const awt::Size& rObjectSize,
-	const SvXMLUnitConverter& rConv)
+	const SvXMLUnitConverter& rConv,
+    const bool bClosed)
 :	msString( rNew ),
 	maPoly( 0L )
 {
@@ -1423,7 +1423,7 @@ SdXMLImExPointsElement::SdXMLImExPointsElement(const OUString& rNew,
         nPos = 0;
         maPoly.realloc(1);
 		drawing::PointSequence* pOuterSequence = maPoly.getArray();
-		pOuterSequence->realloc(nNumPoints);
+		pOuterSequence->realloc(nNumPoints + (bClosed ? 1 : 0));
 		awt::Point* pInnerSequence = pOuterSequence->getArray();
 
 		// object size and ViewBox size different?
@@ -1472,6 +1472,11 @@ SdXMLImExPointsElement::SdXMLImExPointsElement(const OUString& rNew,
 			*pInnerSequence = awt::Point( nX, nY );
 			pInnerSequence++;
 		}
+
+        if(bClosed)
+        {
+            *pInnerSequence = *pOuterSequence->getArray();
+        }
 	}
 }
 

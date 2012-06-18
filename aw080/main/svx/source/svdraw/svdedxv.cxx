@@ -90,6 +90,8 @@ SdrObjEditView::SdrObjEditView(SdrModel& rModel1, OutputDevice* pOut)
 	maOldCalcFieldValueLink(),
 	maMacroDownPos(0.0, 0.0),
     mnMacroTol(0),
+    mpUndoGeoObject(0),
+    mpUndoAttrObject(0),
     mbTextEditDontDelete(false),
     mbTextEditOnlyOneView(false),
     mbTextEditNewObj(false),
@@ -110,6 +112,16 @@ SdrObjEditView::~SdrObjEditView()
     if(GetTextEditOutliner()) 
 	{
         delete mpTextEditOutliner;
+    }
+
+    if(mpUndoGeoObject)
+    {
+        delete mpUndoGeoObject;
+    }
+
+    if(mpUndoAttrObject)
+    {
+        delete mpUndoAttrObject;
     }
 }
 
@@ -872,6 +884,15 @@ bool SdrObjEditView::SdrBeginTextEdit(
 				mxSelectionController->onSelectionHasChanged();
 			}
 
+            if(IsUndoEnabled() && pTextObj && pTextObj->IsTextFrame() && OBJ_TEXT == pTextObj->GetObjIdentifier())
+            {
+                // prepare some undos for things TextFrames might change
+                // text frames might adapt geometry when AutoGrow is active
+                // text frames might changes various items (Min/MaxTextWidth/Height, ...)
+				mpUndoGeoObject = getSdrModelFromSdrView().GetSdrUndoFactory().CreateUndoGeoObject(*pTextObj);
+				mpUndoAttrObject = getSdrModelFromSdrView().GetSdrUndoFactory().CreateUndoAttrObject(*pTextObj, false, false);
+            }
+
             return true; // Gut gelaufen, TextEdit laeuft nun
         } 
 		else 
@@ -991,14 +1012,15 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(bool bDontDeleteReally)
 
             pTEObj->EndTextEdit(*pTEOutliner);
 
-			if(pTEObj && pTEObj->IsFontwork())
-			{
-				pTEObj->ActionChanged();
-			}
-			else if(!basegfx::fTools::equalZero(pTEObj->getSdrObjectRotate()))
-			{
-				pTEObj->ActionChanged();
-			}
+            // TTTT should not be needed
+			// if(pTEObj && pTEObj->IsFontwork())
+			// {
+			// 	pTEObj->ActionChanged();
+			// }
+			// else if(!basegfx::fTools::equalZero(pTEObj->getSdrObjectRotate()))
+			// {
+			// 	pTEObj->ActionChanged();
+			// }
 
             if(pTxtUndo)
 			{
@@ -1041,10 +1063,34 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(bool bDontDeleteReally)
 					AddUndo(pTxtUndo);
 				}
 
-				eRet=SDRENDTEXTEDIT_CHANGED;
+                if(mpUndoGeoObject)
+                {
+					AddUndo(mpUndoGeoObject);
+                    mpUndoGeoObject = 0;
+                }
+
+                if(mpUndoAttrObject)
+                {
+                    AddUndo(mpUndoAttrObject);
+                    mpUndoAttrObject = 0;
+                }
+
+                eRet=SDRENDTEXTEDIT_CHANGED;
 			}
 
-			if(pDelUndo)
+            if(mpUndoGeoObject)
+            {
+                delete mpUndoGeoObject;
+                mpUndoGeoObject = 0;
+            }
+
+            if(mpUndoAttrObject)
+            {
+                delete mpUndoAttrObject;
+                mpUndoAttrObject = 0;
+            }
+
+            if(pDelUndo)
 			{
 				if( bUndo )
 				{
@@ -1078,7 +1124,7 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(bool bDontDeleteReally)
 			// Switch on evtl. TextAnimation again after TextEdit
 			pTEObj->SetTextAnimationAllowed(true);
 			SetMarkHandles();
-			}
+		}
 
         // alle OutlinerViews loeschen
         for(sal_uInt32 i(pTEOutliner->GetViewCount()); i > 0;)
@@ -2339,38 +2385,30 @@ void SdrObjEditView::OnEndPasteOrDrop( PasteOrDropInfos* )
     // applications can derive from these virtual methods to do something before a drop or paste operation
 }
 
-bool SdrObjEditView::SupportsFormatPaintbrush( sal_uInt32 nObjectInventor, sal_uInt16 nObjectIdentifier ) const
+bool SdrObjEditView::SupportsFormatPaintbrush(const SdrObject& rSdrObject) const
 {
-    if( nObjectInventor != SdrInventor && nObjectInventor != E3dInventor )
-        return false;
-    switch(nObjectIdentifier)
+    if(SdrInventor == rSdrObject.GetObjInventor())
     {
-        case OBJ_NONE:
-        case OBJ_GRUP:
-            return false;
-        case OBJ_RECT:
-        case OBJ_CIRC:
-        case OBJ_POLY:
-        case OBJ_TEXT:
-        case OBJ_TITLETEXT:
-        case OBJ_OUTLINETEXT:
-        case OBJ_GRAF:
-        case OBJ_OLE2:
-		case OBJ_TABLE:
-            return true;
-        case OBJ_EDGE:
-        case OBJ_CAPTION:
-            return false;
-        case OBJ_PAGE:
-        case OBJ_MEASURE:
-        case OBJ_FRAME:
-        case OBJ_UNO:
-            return false;
-        case OBJ_CUSTOMSHAPE:
-            return true;
-        default:
-            return false;
+        switch(rSdrObject.GetObjIdentifier())
+        {
+            case OBJ_RECT:
+            case OBJ_CIRC:
+            case OBJ_POLY:
+            case OBJ_TEXT:
+            case OBJ_TITLETEXT:
+            case OBJ_OUTLINETEXT:
+            case OBJ_GRAF:
+            case OBJ_OLE2:
+		    case OBJ_TABLE:
+            case OBJ_CUSTOMSHAPE:
+                return true;
+                break;
+            default:
+                break;
+        }
     }
+
+    return false;
 }
 
 static const sal_uInt16* GetFormatRangeImpl( bool bTextOnly )

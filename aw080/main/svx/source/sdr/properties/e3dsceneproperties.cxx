@@ -242,7 +242,7 @@ namespace sdr
 			}
 		}
 
-		void E3dSceneProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
+		void E3dSceneProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
 		{
 			const SdrObjList* pSub = GetSdrObject().getChildrenOfSdrObject();
             const sal_uInt32 nCount(pSub ? pSub->GetObjCount() : 0);

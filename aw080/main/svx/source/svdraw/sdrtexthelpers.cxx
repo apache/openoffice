@@ -161,11 +161,8 @@ basegfx::B2DRange getScaledCenteredTextRange(const SdrTextObj& rText)
     // get unified text range (no mirroring)
 	const basegfx::B2DRange aUnifiedTextRange(rText.getUnifiedTextRange());
 
-    // scale to object size
-	basegfx::B2DRange aRetval(
-		basegfx::tools::createScaleB2DHomMatrix(
-			rText.getSdrObjectScale()) * 
-		aUnifiedTextRange);
+    // scale to object size. absolute is not needed, will be centered anyways
+	basegfx::B2DRange aRetval(basegfx::tools::createScaleB2DHomMatrix(rText.getSdrObjectScale()) * aUnifiedTextRange);
 
     // to align centered, just translate to the current object center. This
     // will also correct evtl. mirrorings

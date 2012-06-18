@@ -234,7 +234,7 @@ namespace sdr
 			return pRetval;
 		}
 
-		void GroupProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
+		void GroupProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
 		{
 			const SdrObjList* pSub = GetSdrObject().getChildrenOfSdrObject();
             const sal_uInt32 nCount(pSub ? pSub->GetObjCount() : 0);

@@ -1211,10 +1211,11 @@ bool SvxShapePolyPolygon::setPropertyValueImpl( const ::rtl::OUString& rName, co
                             // migrate to pool metric
                             ForceMetricToItemPoolMetric(aNewPolyPolygon);
 
-                            // BaseGeometry means the polygon is just scaled, but has no position, shear
+                            // BaseGeometry means the polygon is just scaled, but has no position, mirroring, shear
                             // or rotation. Apply these current values from the object
                             const basegfx::B2DHomMatrix aNoScaleTrans(
-                                basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
+                                basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
+                                    basegfx::B2DVector(mpObj->isMirroredX() ? -1.0 : 1.0, mpObj->isMirroredY() ? -1.0 : 1.0),
 					                mpObj->getSdrObjectShearX(),
 					                mpObj->getSdrObjectRotate(),
 					                mpObj->getSdrObjectTranslate()));
@@ -1396,19 +1397,19 @@ bool SvxShapePolyPolygon::getPropertyValueImpl( const ::rtl::OUString& rName, co
                 // migrtate to 1/100th mm
                 ForceMetricTo100th_mm(aPolyPolygon);
 
-                // BaseGeometry means to get only the scaled polygon, so transform
+                // BaseGeometry means to get only the scaled and unmirrored polygon, so transform
                 // the polygon to only contain object scale
                 // get object transform
                 basegfx::B2DHomMatrix aOnlyScaleTransform(mpObj->getSdrObjectTransformation());
 
                 // extract the scale
-				const basegfx::B2DVector& rScale = mpObj->getSdrObjectScale();
+				const basegfx::B2DVector aScale(basegfx::absolute(mpObj->getSdrObjectScale()));
 
                 // get transformation to unit coordinates
                 aOnlyScaleTransform.invert();
                 
                 // add scale again
-                aOnlyScaleTransform.scale(rScale);
+                aOnlyScaleTransform.scale(aScale);
 
                 // transform the polygon
                 aPolyPolygon.transform(aOnlyScaleTransform);

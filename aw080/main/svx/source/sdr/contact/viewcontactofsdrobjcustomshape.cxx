@@ -142,7 +142,7 @@ namespace sdr
 			// build unrotated object range
             const basegfx::B2DRange aObjectRange(
                 GetCustomShapeObj().getSdrObjectTranslate(), 
-                GetCustomShapeObj().getSdrObjectTranslate() + GetCustomShapeObj().getSdrObjectScale());
+                GetCustomShapeObj().getSdrObjectTranslate() + basegfx::absolute(GetCustomShapeObj().getSdrObjectScale()));
 
 			if(bHasText || xGroup.hasElements())
 			{

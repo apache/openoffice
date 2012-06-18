@@ -228,7 +228,7 @@ namespace sdr
 			}
 		}
 
-		void TextProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
+		void TextProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
 		{
 			SdrTextObj& rObj = (SdrTextObj&)GetSdrObject();
 

@@ -2169,14 +2169,15 @@ void SdrObjCustomShape::SetVerticalWriting( bool bVertical )
 		}
 	}
 }
-bool SdrObjCustomShape::AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt, bool bWdt) const
+
+basegfx::B2DRange SdrObjCustomShape::AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHgt, bool bWdt) const
 {
- 	if(HasText() && !o_rRange.isEmpty())
+ 	if(HasText() && !rRange.isEmpty())
 	{
-        return ImpAdjustTextFrameWidthAndHeight(o_rRange, bHgt, bWdt, false);
+        return ImpAdjustTextFrameWidthAndHeight(rRange, bHgt, bWdt, false);
     }
 
-    return false;
+    return rRange;
 }
 
 basegfx::B2DRange SdrObjCustomShape::ImpCalculateTextFrame(const bool bHgt, const bool bWdt)
@@ -2184,7 +2185,7 @@ basegfx::B2DRange SdrObjCustomShape::ImpCalculateTextFrame(const bool bHgt, cons
 	basegfx::B2DRange aReturnValue;
 	const basegfx::B2DRange aOldObjRange(
         getSdrObjectTranslate(), 
-        getSdrObjectTranslate() + getSdrObjectScale());
+        getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
 
 	// initial text rectangle
 	const basegfx::B2DRange aOldTextRange(aOldObjRange);
@@ -2195,25 +2196,22 @@ basegfx::B2DRange SdrObjCustomShape::ImpCalculateTextFrame(const bool bHgt, cons
 	basegfx::B2DRange aNewTextRange(getRawUnifiedTextRange()); 
     aNewTextRange.transform(
         basegfx::tools::createScaleTranslateB2DHomMatrix(
-            getSdrObjectScale(),
+            basegfx::absolute(getSdrObjectScale()),
             getSdrObjectTranslate()));
 
 	// new text rectangle is being tested by AdjustTextFrameWidthAndHeight to ensure
 	// that the new text rectangle is matching the current text size from the outliner
-	basegfx::B2DRange aAdjustedTextRange(aNewTextRange);
+	const basegfx::B2DRange aAdjustedTextRange(AdjustTextFrameWidthAndHeight(aNewTextRange, bHgt, bWdt));
 	
-	if(AdjustTextFrameWidthAndHeight(aAdjustedTextRange, bHgt, bWdt))	
+	if((aAdjustedTextRange != aNewTextRange) && (aOldTextRange != aAdjustedTextRange))
 	{
-		if((aAdjustedTextRange != aNewTextRange) && (aOldTextRange != aAdjustedTextRange))
-		{
-			const basegfx::B2DVector aScale(aOldTextRange.getRange() / aNewTextRange.getRange());
-			const basegfx::B2DVector aTopLeftDiff((aAdjustedTextRange.getMinimum() - aNewTextRange.getMinimum()) * aScale);
-			const basegfx::B2DVector aBottomRightDiff((aAdjustedTextRange.getMaximum() - aNewTextRange.getMaximum()) * aScale);
+		const basegfx::B2DVector aScale(aOldTextRange.getRange() / aNewTextRange.getRange());
+		const basegfx::B2DVector aTopLeftDiff((aAdjustedTextRange.getMinimum() - aNewTextRange.getMinimum()) * aScale);
+		const basegfx::B2DVector aBottomRightDiff((aAdjustedTextRange.getMaximum() - aNewTextRange.getMaximum()) * aScale);
 
-			aReturnValue = basegfx::B2DRange(
-				aReturnValue.getMinimum() + aTopLeftDiff,
-				aReturnValue.getMaximum() + aBottomRightDiff);
-		}
+		aReturnValue = basegfx::B2DRange(
+			aReturnValue.getMinimum() + aTopLeftDiff,
+			aReturnValue.getMaximum() + aBottomRightDiff);
 	}
 
 	return aReturnValue;
@@ -2222,7 +2220,7 @@ basegfx::B2DRange SdrObjCustomShape::ImpCalculateTextFrame(const bool bHgt, cons
 bool SdrObjCustomShape::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
 {
 	const basegfx::B2DRange aNewTextRange(ImpCalculateTextFrame(bHgt, bWdt));
-	const basegfx::B2DRange aOldObjRange(getSdrObjectTranslate(), getSdrObjectTranslate() + getSdrObjectScale());
+	const basegfx::B2DRange aOldObjRange(getSdrObjectTranslate(), getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
 	
 	if(!aNewTextRange.isEmpty() && !aNewTextRange.equal(aOldObjRange))
 	{

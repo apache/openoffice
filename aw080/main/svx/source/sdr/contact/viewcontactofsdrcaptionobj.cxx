@@ -76,7 +76,7 @@ namespace sdr
 			if(rCaptionObj.GetEdgeRadius())
 			{
 				// get absolute object size
-				const basegfx::B2DVector aObjectScale(absolute(rCaptionObj.getSdrObjectScale()));
+				const basegfx::B2DVector aObjectScale(basegfx::absolute(rCaptionObj.getSdrObjectScale()));
 
 			drawinglayer::primitive2d::calculateRelativeCornerRadius(
 					rCaptionObj.GetEdgeRadius(), 

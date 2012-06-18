@@ -276,7 +276,7 @@ void SdrObjList::handleContentChange(const SfxHint& /*rHint*/)
 
 void SdrObjList::InsertObjectToSdrObjList(SdrObject& rObj, sal_uInt32 nPos)
 {
-	SdrObject* pOwningGroupObject = getSdrObjectFromSdrObjList();
+    SdrObject* pOwningGroupObject = getSdrObjectFromSdrObjList();
 
 	// if anchor is used, reset it before grouping (for SW)
 	if(pOwningGroupObject)
@@ -589,6 +589,13 @@ void SdrObjList::SetUserNavigationOrder(const uno::Reference<container::XIndexAc
 
 void SdrObjList::InsertObjectIntoContainer(SdrObject& rObject, const sal_uInt32 nInsertPosition)
 {
+    if(&rObject.getSdrModelFromSdrObject() != &getSdrModelFromSdrObjList())
+    {
+		OSL_ENSURE(false, "InsertObjectToSdrObjList with SdrModel of SdrObject != SdrModel from SdrObjList (!)");
+		deleteSdrObjectSafe(&rObject);
+		return;
+    }
+
     // Update the navigation positions.
     if(!maUserNavigationOrder.empty())
     {

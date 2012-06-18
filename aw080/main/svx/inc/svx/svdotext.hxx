@@ -294,7 +294,7 @@ protected:
 	virtual void copyDataFromSdrObject(const SdrObject& rSource);
 
     // helper for AdjustTextFrameWidthAndHeight which contains the common parts to avoid useless code copying
-    bool ImpAdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt, bool bWdt, bool bCheckAnimation) const;
+    basegfx::B2DRange ImpAdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHgt, bool bWdt, bool bCheckAnimation) const;
 
 public:
 	/// create a copy, evtl. with a different target model (if given)
@@ -322,7 +322,7 @@ public:
     bool ReloadLinkedText(bool bForceLoad=false);
     bool LoadText(const String& rFileName, const String& rFilterName, rtl_TextEncoding eCharSet);
 
-	virtual bool AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt = true, bool bWdt = true) const;
+	virtual basegfx::B2DRange AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHgt = true, bool bWdt = true) const;
 	virtual bool AdjustTextFrameWidthAndHeight(bool bHgt = true, bool bWdt = true);
 	void ResizeTextAttributes(const Fraction& xFact, const Fraction& yFact);
 	bool IsTextFrame() const { return bTextFrame; }

@@ -1286,7 +1286,7 @@ void SdXMLPolygonShapeContext::StartElement(const uno::Reference< xml::sax::XAtt
 				}
 				awt::Point aPosition(aViewBox.GetX(), aViewBox.GetY());
 				SdXMLImExPointsElement aPoints(maPoints, aViewBox,
-					aPosition, aSize, GetImport().GetMM100UnitConverter());
+					aPosition, aSize, GetImport().GetMM100UnitConverter(), mbClosed);
 
 				uno::Any aAny;
 				aAny <<= aPoints.GetPointSequenceSequence();

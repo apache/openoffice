@@ -71,7 +71,7 @@ namespace sdr
 			virtual void ClearMergedItem(const sal_uInt16 nWhich = 0);
 
 			// set a new StyleSheet and broadcast
-			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr);
+			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr);
 
 			// get the installed StyleSheet
 			virtual SfxStyleSheet* GetStyleSheet() const;

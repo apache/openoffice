@@ -182,7 +182,7 @@ public:
 	virtual bool MovCreate(SdrDragStat& rStat);	// #i37448#
 	virtual bool EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd);
 
-	virtual bool AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHgt = true, bool bWdt = true) const;
+	virtual basegfx::B2DRange AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHgt = true, bool bWdt = true) const;
 	virtual bool AdjustTextFrameWidthAndHeight(bool bHgt = true, bool bWdt = true);
 	virtual bool IsAutoGrowHeight() const;
 	virtual bool IsAutoGrowWidth() const;

@@ -1144,7 +1144,7 @@ basegfx::B2DRange EnhancedCustomShape2d::GetTextRange() const
 
 	// To keep tight to the original, ignore rotate and shear. If this
 	// is not wanted, just use getSdrObjectTransformation() instead
-	aTransform.scale(pCustomShapeObj->getSdrObjectScale());
+	aTransform.scale(basegfx::absolute(pCustomShapeObj->getSdrObjectScale()));
 	aTransform.translate(pCustomShapeObj->getSdrObjectTranslate());
 
 	aRetval *= aTransform;
@@ -2072,7 +2072,7 @@ SdrObject* EnhancedCustomShape2d::CreatePathObj( sal_Bool bLineGeometryNeededOnl
 				else
 				{
 					vTempList.push_back(pObj);
-			}
+    			}
 			}
 
 			vObjectList = vTempList;

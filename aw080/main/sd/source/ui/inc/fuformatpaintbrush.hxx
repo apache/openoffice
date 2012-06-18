@@ -55,7 +55,7 @@ private:
 
     void DoExecute( SfxRequest& rReq );
     
-    bool HasContentForThisType( sal_uInt32 nObjectInventor, sal_uInt16 nObjectIdentifier ) const;
+    bool HasContentForThisType(const SdrObject& rSdrObject) const;
     void Paste( bool, bool );
 	
 	void implcancel();

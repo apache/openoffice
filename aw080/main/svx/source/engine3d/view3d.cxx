@@ -611,7 +611,7 @@ bool E3dView::ImpCloneAll3DObjectsToDestScene(E3dScene* pSrcScene, E3dScene* pDs
 
 					// fill and insert new object
 					pNewCompoundObj->SetLayer(pCompoundObj->GetLayer());
-					pNewCompoundObj->SetStyleSheet(pCompoundObj->GetStyleSheet(), sal_True);
+					pNewCompoundObj->SetStyleSheet(pCompoundObj->GetStyleSheet(), true);
 					pDstScene->Insert3DObj(*pNewCompoundObj);
 					bRetval = true;
 
@@ -810,7 +810,7 @@ void E3dView::ImpCreateSingle3DObjectFlat(E3dScene* pScene, SdrObject* pObj, boo
 		{
 			p3DObj->SetLayer(pObj->GetLayer());
 			p3DObj->SetMergedItemSet(aSet);
-			p3DObj->SetStyleSheet(pObj->GetStyleSheet(), sal_True);
+			p3DObj->SetStyleSheet(pObj->GetStyleSheet(), true);
 
 			// Neues 3D-Objekt einfuegen
 			pScene->Insert3DObj(*p3DObj);

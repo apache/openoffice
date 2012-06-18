@@ -58,9 +58,10 @@ namespace sdr
 		{
 			if(rProps.mpItemSet)
 			{
-				mpItemSet = rProps.mpItemSet->Clone(sal_True);
+                // Clone may be to another model and thus another ItemPool
+				mpItemSet = rProps.mpItemSet->Clone(true, &rObj.getSdrModelFromSdrObject().GetItemPool());
 
-				// do not keep parent info, this may be changed by later construrtors.
+				// do not keep parent info, this may be changed by later constructors.
 				// This class just copies the ItemSet, ignore parent.
 				if(mpItemSet && mpItemSet->GetParent())
 				{
@@ -207,7 +208,7 @@ namespace sdr
 				CleanupFillProperties(*mpItemSet);
 		}
 
-		void DefaultProperties::SetStyleSheet(SfxStyleSheet* /*pNewStyleSheet*/, sal_Bool /*bDontRemoveHardAttr*/)
+		void DefaultProperties::SetStyleSheet(SfxStyleSheet* /*pNewStyleSheet*/, bool /*bDontRemoveHardAttr*/)
 		{
 			// no StyleSheet in DefaultProperties
 		}

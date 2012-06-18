@@ -76,6 +76,10 @@ protected:
 	basegfx::B2DPoint			maMacroDownPos;
 	sal_uInt16					mnMacroTol;
 
+    /// prepared undos for text edit
+    SdrUndoAction*              mpUndoGeoObject;
+    SdrUndoAction*              mpUndoAttrObject;
+
 	/// bitfield
 	bool						mbTextEditDontDelete : 1;   // Outliner und View bei SdrEndTextEdit nicht deleten (f. Rechtschreibpruefung)
 	bool						mbTextEditOnlyOneView : 1;  // Nur eine OutlinerView (f. Rechtschreibpruefung)
@@ -247,8 +251,8 @@ public:
 
 	rtl::Reference< sdr::SelectionController > getSelectionController() const { return mxSelectionController; }
 
-    /** returns true if the shape identified by its inventor and identifier supports format paint brush operation */
-    virtual bool SupportsFormatPaintbrush( sal_uInt32 nObjectInventor, sal_uInt16 nObjectIdentifier ) const;
+    /** returns true if the shape supports format paint brush operation */
+    virtual bool SupportsFormatPaintbrush(const SdrObject& rSdrObject) const;
     
 	/** returns a format paint brush set from the current selection */
 	virtual bool TakeFormatPaintBrush( boost::shared_ptr< SfxItemSet >& rFormatSet  );

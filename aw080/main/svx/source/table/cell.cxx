@@ -376,7 +376,7 @@ void Cell::mergeContent( const CellRef& xSourceCell )
 		rOutliner.Clear();
 		xSourceCell->SetOutlinerParaObject(rOutliner.CreateParaObject());
 		rOutliner.Clear();
-		SetStyleSheet( GetStyleSheet(), sal_True );
+		SetStyleSheet( GetStyleSheet(), true);
 	}
 }
 
@@ -414,7 +414,7 @@ void Cell::replaceContentAndFormating( const CellRef& xSourceCell )
 
 		if(&rSourceTableObj.getSdrModelFromSdrObject() != &rTableObj.getSdrModelFromSdrObject())
 		{
-			SetStyleSheet( 0, sal_True );
+			SetStyleSheet( 0, true);
 		}
 	}
 }
@@ -976,7 +976,7 @@ void SAL_CALL Cell::setPropertyValue( const OUString& rPropertyName, const Any& 
 				    throw IllegalArgumentException();
 
 			    SfxUnoStyleSheet* pStyle = SfxUnoStyleSheet::getUnoStyleSheet(xStyle);
-			    SetStyleSheet( pStyle, sal_True );
+			    SetStyleSheet( pStyle, true);
 			    return;
 		    }
 		    case OWN_ATTR_TABLEBORDER:

@@ -280,7 +280,7 @@ void SdrTableObjImpl::init( SdrTableObj* pTable, sal_Int32 nColumns, sal_Int32 n
     
     basegfx::B2DRange aObjectRange(
         mpTableObj->getSdrObjectTranslate(), 
-        mpTableObj->getSdrObjectTranslate() + mpTableObj->getSdrObjectScale());
+        mpTableObj->getSdrObjectTranslate() + basegfx::absolute(mpTableObj->getSdrObjectScale()));
 
     LayoutTable( aObjectRange, true, true );
 }
@@ -315,7 +315,7 @@ void SdrTableObjImpl::operator=( const SdrTableObjImpl& rSource )
 	
     basegfx::B2DRange aObjectRange(
         mpTableObj->getSdrObjectTranslate(), 
-        mpTableObj->getSdrObjectTranslate() + mpTableObj->getSdrObjectScale());
+        mpTableObj->getSdrObjectTranslate() + basegfx::absolute(mpTableObj->getSdrObjectScale()));
 	
     LayoutTable( aObjectRange, false, false );
 }
@@ -408,7 +408,7 @@ bool SdrTableObjImpl::ApplyCellStyles()
 					if( xCell.is() && ( xCell->GetStyleSheet() != pStyle ) )
 					{
 						bChanges = true;
-						xCell->SetStyleSheet( pStyle, sal_True );
+						xCell->SetStyleSheet( pStyle, true);
 					}
 				}
 			}
@@ -515,7 +515,7 @@ void SdrTableObjImpl::update()
 		
         basegfx::B2DRange aObjectRange(
             mpTableObj->getSdrObjectTranslate(), 
-            mpTableObj->getSdrObjectTranslate() + mpTableObj->getSdrObjectScale());
+            mpTableObj->getSdrObjectTranslate() + basegfx::absolute(mpTableObj->getSdrObjectScale()));
 
         LayoutTable( aObjectRange, false, false );
 	}
@@ -1383,7 +1383,7 @@ void SdrTableObj::onEditOutlinerStatusEvent( EditStatus* pEditStatus )
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
         basegfx::B2DRange aObjectRange(
             getSdrObjectTranslate(), 
-            getSdrObjectTranslate() + getSdrObjectScale());
+            getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
 		
         mpImpl->LayoutTable( aObjectRange, false, false );
 	}
@@ -2093,7 +2093,7 @@ void SdrTableObj::SetOutlinerParaObject( OutlinerParaObject* pTextObject)
 
 void SdrTableObj::AdjustToMaxRange( const basegfx::B2DRange& rMaxRange, bool /* bShrinkOnly = false */ )
 {
-	const double fMyHeight(getSdrObjectScale().getY());
+	const double fMyHeight(fabs(getSdrObjectScale().getY()));
 	const basegfx::B2DRange aAdjustRange(
 		rMaxRange.getMinX(),
 		rMaxRange.getMinY(),
@@ -2108,17 +2108,20 @@ void SdrTableObj::AdjustToMaxRange( const basegfx::B2DRange& rMaxRange, bool /* 
 void SdrTableObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
 	// remember original scaling
-	const basegfx::B2DVector aScaleBefore(getSdrObjectScale());
+	const basegfx::B2DVector aScaleBefore(basegfx::absolute(getSdrObjectScale()));
 
 	// call parent
 	SdrTextObj::setSdrObjectTransformation(rTransformation);
 
-	if(!aScaleBefore.equal(getSdrObjectScale()))
+    // get new scaling
+    const basegfx::B2DVector aNewSize(basegfx::absolute(getSdrObjectScale()));
+
+	if(!aScaleBefore.equal(aNewSize))
 	{
 		// react on scale change
 		AdjustTextFrameWidthAndHeight(
-			basegfx::fTools::equal(aScaleBefore.getY(), getSdrObjectScale().getY()),
-			basegfx::fTools::equal(aScaleBefore.getX(), getSdrObjectScale().getX()));
+			basegfx::fTools::equal(aScaleBefore.getY(), aNewSize.getY()),
+			basegfx::fTools::equal(aScaleBefore.getX(), aNewSize.getX()));
 	}
 
 	if( mpImpl )
@@ -2132,9 +2135,10 @@ void SdrTableObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTrans
 
 bool SdrTableObj::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
 {
-    basegfx::B2DRange aNewRange(getSdrObjectTranslate(), getSdrObjectTranslate() + getSdrObjectScale());
+    const basegfx::B2DRange aOldRange(getSdrObjectTranslate(), getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
+    const basegfx::B2DRange aNewRange(AdjustTextFrameWidthAndHeight(aOldRange, bHgt, bWdt));
 
-	if(AdjustTextFrameWidthAndHeight(aNewRange, bHgt, bWdt))
+	if(!aOldRange.equal(aNewRange))
 	{
 		sdr::legacy::SetLogicRange(*this, aNewRange);
 
@@ -2146,27 +2150,20 @@ bool SdrTableObj::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
 
 // --------------------------------------------------------------------
 
-bool SdrTableObj::AdjustTextFrameWidthAndHeight(basegfx::B2DRange& o_rRange, bool bHeight, bool bWidth) const
+basegfx::B2DRange SdrTableObj::AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHeight, bool bWidth) const
 {
-	if(o_rRange.isEmpty() || !mpImpl || !mpImpl->mxTable.is())
+	if(rRange.isEmpty() || !mpImpl || !mpImpl->mxTable.is())
     {
-		return false;
+        // no change
+		return rRange;
     }
+    else
+    {
+        basegfx::B2DRange aNewRange(rRange);
 
-    basegfx::B2DRange aNewRange(o_rRange);
-
-    mpImpl->LayoutTable(o_rRange, !bWidth, !bHeight);
-
-	if(!o_rRange.equal(aNewRange))
-	{
-		o_rRange = aNewRange;
-
-        return true;
-	}
-	else
-	{
-		return false;
-	}
+        mpImpl->LayoutTable(aNewRange, !bWidth, !bHeight);
+        return aNewRange;
+    }
 }
 
 // --------------------------------------------------------------------
@@ -2533,7 +2530,7 @@ void SdrTableObj::DistributeColumns( sal_Int32 nFirstColumn, sal_Int32 nLastColu
 		TableModelNotifyGuard aGuard( mpImpl->mxTable.get() );
         basegfx::B2DRange aObjectRange(
             getSdrObjectTranslate(), 
-            getSdrObjectTranslate() + getSdrObjectScale());
+            getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
 		
         mpImpl->mpLayouter->DistributeColumns( aObjectRange, nFirstColumn, nLastColumn );
 	}
@@ -2548,7 +2545,7 @@ void SdrTableObj::DistributeRows( sal_Int32 nFirstRow, sal_Int32 nLastRow )
 		TableModelNotifyGuard aGuard( mpImpl->mxTable.get() );
         basegfx::B2DRange aObjectRange(
             getSdrObjectTranslate(), 
-            getSdrObjectTranslate() + getSdrObjectScale());
+            getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
 
         mpImpl->mpLayouter->DistributeRows( aObjectRange, nFirstRow, nLastRow );
 	}
@@ -2564,7 +2561,7 @@ void SdrTableObj::SetChanged()
 		{
             basegfx::B2DRange aObjectRange(
                 getSdrObjectTranslate(), 
-                getSdrObjectTranslate() + getSdrObjectScale());
+                getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
 			
             mpImpl->LayoutTable( aObjectRange, false, false );
 		}

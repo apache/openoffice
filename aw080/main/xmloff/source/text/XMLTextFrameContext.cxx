@@ -307,7 +307,7 @@ XMLTextFrameContourContext_Impl::XMLTextFrameContourContext_Impl(
 		else
 		{
 			SdXMLImExPointsElement aPoints( sPoints, aViewBox, aPoint, aSize,
-										GetImport().GetMM100UnitConverter() );
+										GetImport().GetMM100UnitConverter(), true );
 			aAny <<= aPoints.GetPointSequenceSequence();
 		}
 
