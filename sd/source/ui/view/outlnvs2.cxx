@@ -251,7 +251,8 @@ void OutlineViewShell::FuTemporary(SfxRequest &rReq)
 				else
 					xPresentation->rehearseTimings();
             }
-            rReq.Done();
+			Cancel();
+			rReq.Done();
         }
         break;
 
