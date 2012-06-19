@@ -52,7 +52,7 @@
          </listitem>
       </list>
       <section id="how">
-         <paragraph xml-lang="en-US" id="hd_id1116200901133957" role="heading" level="2" l10n="NEW">How does $PRODUCTNAME count words?</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id1116200901133957" role="heading" level="2" l10n="NEW">How does %PRODUCTNAME count words?</paragraph>
          <paragraph xml-lang="en-US" id="par_id1116200901133998" role="paragraph" l10n="NEW">In general, every string of characters between two spaces is a word. Tabs, line breaks, and paragraph breaks are word limits, too.</paragraph>
          <paragraph xml-lang="en-US" id="par_id1116200901133985" role="paragraph" l10n="NEW">Words with dashes or always visible hyphens, as in plug-in, add-on, user/config, are counted as one word each.</paragraph>
          <paragraph xml-lang="en-US" id="par_id111620090113399" role="paragraph" l10n="NEW">The words can be a mix of letters, numbers, and special characters. So the following text counts as four words: abc123 1.23 "$" http://www.example.com.</paragraph>
