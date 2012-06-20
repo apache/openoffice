@@ -35,31 +35,21 @@ TARGET=so_serf
 LIBSERFVERSION=$(SERF_MAJOR).$(SERF_MINOR).$(SERF_MICRO)
 
 TARFILE_NAME=$(PRJNAME)-$(LIBSERFVERSION)
-TARFILE_MD5=3b179ed18f65c43141528aa6d2440db4
+# This is the SHA1 checksum, not MD5 but tg_ext.mk does not now about this and,
+# thankfully, does not care.
+TARFILE_MD5=231af70b7567a753b49df4216743010c193884b7
 
-# Apply patches that provide callbacks for ssl certificate verification with the
-# whole certificate chain (issue68.patch).  The patch is taken from serf's
-# issue 68 (http://code.google.com/p/serf/issues/detail?id=68).
-# This patch needs some minor fixes (issue68b.patch) for proper initialization of
-# some callbacks and export of new functions.
-PATCH_FILES=$(TARFILE_NAME).issue68.patch $(TARFILE_NAME).issue68b.patch
-
-# disable default used Transfer-Encoding = chunked for sending requests.
-PATCH_FILES+=$(TARFILE_NAME).nochunkedtransferencoding.patch
+PATCH_FILES=
 
 .IF "$(OS)"=="WNT"
-
-ADDITIONAL_FILES=Makefile Module_serf.mk Library_serf.mk Package_inc.mk
-
-PATCH_FILES+=$(TARFILE_NAME).makewin32.patch
 
 CONFIGURE_DIR=
 CONFIGURE_ACTION=
 CONFIGURE_FLAGS=
 
-BUILD_DIR=$(CONFIGURE_DIR)
+BUILD_DIR=
 BUILD_ACTION=$(GNUMAKE)
-BUILD_FLAGS+= -j$(EXTMAXPROCESS)
+BUILD_FLAGS+= -f ../../../../win/Makefile -j$(EXTMAXPROCESS)
 
 .ELIF "$(GUI)" == "OS2"
 
@@ -71,18 +61,17 @@ BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 .IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD" || "$(OS)"=="LINUX"
 # Do not link against expat.  It is not necessary (apr-util is already linked against it)
 # and does not work (we use a different expat library schema.)
-PATCH_FILES+=$(TARFILE_NAME).mac.patch
+#PATCH_FILES+=$(TARFILE_NAME).mac.patch
 .ENDIF
 
 .IF "$(OS)"=="LINUX"
 # Add -ldl as last library so that the linker has no trouble resolving dependencies.
-PATCH_FILES+=$(TARFILE_NAME).ldl.patch
+#PATCH_FILES+=$(TARFILE_NAME).ldl.patch
 .ENDIF
 
 CONFIGURE_DIR=
 CONFIGURE_ACTION=autoconf && .$/configure
 
-.IF "$(OS)"=="MACOSX" || "$(OS)"=="LINUX"
 .IF "$(OS)"=="LINUX"
 .IF "$(SYSTEM_OPENSSL)"=="YES"
 CDEFS+=$(OPENSSL_CFLAGS)
@@ -91,7 +80,9 @@ OPENSSLINCDIR=external
 CDEFS+=-I$(SOLARINCDIR)$/$(OPENSSLINCDIR)
 .ENDIF
 .ENDIF
+
 # On Linux/Mac we need the content of CDEFS in CFLAGS so that the ssl headers are searched for
+.IF "$(OS)"=="MACOSX" || "$(OS)"=="LINUX"
 # in a directory that corresponds to the directory that is searched for the ssl library.
 CONFIGURE_FLAGS='CFLAGS=$(CDEFS)'
 .ENDIF
@@ -100,11 +91,20 @@ BUILD_DIR=$(CONFIGURE_DIR)
 BUILD_ACTION=$(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 
+.IF "$(OS)"=="MACOSX"
+# Serf names its library only with the major number.
+# We are using minor and micro as well.  Fix that here
+# by creating a copy with the right name.
+SERF_ORIGINAL_LIB=.libs/libserf-$(SERF_MAJOR).0.0.0.dylib
+SERF_FIXED_LIB=.libs/libserf-$(LIBSERFVERSION).0.dylib
+INSTALL_ACTION=if [ -f "$(SERF_ORIGINAL_LIB)" -a ! -f "$(SERF_FIXED_LIB)" ]; then cp $(SERF_ORGINAL_LIB) $(SERF_FIXED_LIB); fi	 
+.ENDIF
+
 OUT2INC+=serf*.h
 OUT2INC_SUBDIR=serf
 
 .IF "$(OS)"=="MACOSX"
-OUT2LIB+=.libs/libserf-1.*dylib
+OUT2LIB+=$(SERF_FIXED_LIB)
 .ELSE
 OUT2LIB=.libs/libserf-1.so*
 .ENDIF
