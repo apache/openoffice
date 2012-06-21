@@ -23,7 +23,7 @@
 
   <property name="out.dir" value="."/>
   <property name="aoo.name" value="aoo"/>
-  <property name="aoo.ver" value="3.4.0"/>
+  <property name="aoo.ver" value="3.4.1"/>
   <property name="release.dir.name" value="${aoo.name}-${aoo.ver}"/>
   <property name="release.file.name" value="${release.dir.name}-incubating-src"/>
   <property name="release.zip" value="${out.dir}/${release.file.name}.zip"/>
@@ -51,7 +51,6 @@
     <echo level="verbose" message="### source.root=${source.root}"/>
     <echo level="verbose" message="### out.dir =${out.dir}"/>
     <zip destfile="${release.zip}">
-
       <zipfileset file="main/NOTICE" fullpath="${release.dir.name}/NOTICE"/>
       <zipfileset file="main/LICENSE" fullpath="${release.dir.name}/LICENSE"/>
       <zipfileset file="main/README" fullpath="${release.dir.name}/README"/>
