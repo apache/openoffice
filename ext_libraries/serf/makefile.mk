@@ -105,6 +105,7 @@ OUT2INC_SUBDIR=serf
 
 .IF "$(OS)"=="MACOSX"
 OUT2LIB+=$(SERF_FIXED_LIB)
+OUT2LIB+=.libs/libserf-1.*dylib
 .ELSE
 OUT2LIB=.libs/libserf-1.so*
 .ENDIF
