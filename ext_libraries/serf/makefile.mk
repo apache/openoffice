@@ -97,7 +97,7 @@ BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 # by creating a copy with the right name.
 SERF_ORIGINAL_LIB=.libs/libserf-$(SERF_MAJOR).0.0.0.dylib
 SERF_FIXED_LIB=.libs/libserf-$(LIBSERFVERSION).0.dylib
-INSTALL_ACTION=if [ -f "$(SERF_ORIGINAL_LIB)" -a ! -f "$(SERF_FIXED_LIB)" ]; then cp $(SERF_ORGINAL_LIB) $(SERF_FIXED_LIB); fi	 
+INSTALL_ACTION=if [ -f "$(SERF_ORIGINAL_LIB)" -a ! -f "$(SERF_FIXED_LIB)" ]; then cp $(SERF_ORIGINAL_LIB) $(SERF_FIXED_LIB); fi	 
 .ENDIF
 
 OUT2INC+=serf*.h
