@@ -42,8 +42,7 @@ class ImplEESdrObject
 	::com::sun::star::uno::Any				mAny;
 	
     // the object range, split in pos and scale to keep the evtl. negative size (mirroring)
-    basegfx::B2DPoint   maObjectPosition;
-    basegfx::B2DVector  maObjectScale;
+    basegfx::B2DRange   maObjectRange;
 
     String				mType;
 	sal_uInt32				mnShapeId;
@@ -71,9 +70,8 @@ public:
 	const String&		GetType() const 		{ return mType; }
 	void				SetType( const String& rS ) { mType = rS; }
 
-    void setObjectPositionAndScale(const basegfx::B2DPoint& rNewPos, const basegfx::B2DVector& rNewSize) { maObjectPosition = rNewPos; maObjectScale = rNewSize; }
-    const basegfx::B2DPoint& getObjectPosition() const { return maObjectPosition; }
-    const basegfx::B2DVector& getObjectScale() const { return maObjectScale; }
+    void setObjectRange(const basegfx::B2DRange& rObjectRange) { maObjectRange = rObjectRange; }
+    const basegfx::B2DRange& getObjectRange() const { return maObjectRange; }
 
 	sal_Int32				GetAngle() const 		{ return mnAngle; }
 	void				SetAngle( sal_Int32 nVal ) 	{ mnAngle = nVal; }
@@ -168,13 +166,13 @@ protected:
 												const Point& rTextRefPoint );
 			sal_uInt32				ImplEnterAdditionalTextGroup(
 										const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& rShape,
-										const basegfx::B2DPoint* pObjectPosition = 0,
-                                        const basegfx::B2DVector* pObjectScale = 0);
+                                        const basegfx::B2DRange* pObjectRange = 0);
 
 
 public:
-			basegfx::B2DPoint ImplMapB2DPoint( const basegfx::B2DPoint& rPoint );
+//			basegfx::B2DPoint ImplMapB2DPoint( const basegfx::B2DPoint& rPoint );
 			basegfx::B2DVector ImplMapB2DVector( const basegfx::B2DVector& rScale );
+			basegfx::B2DRange ImplMapB2DRange(const basegfx::B2DRange& rRange);
 
 			EscherExHostAppData* ImplGetHostData() { return mpHostAppData; }
             void MapRect(ImplEESdrObject& rObj);

@@ -62,8 +62,7 @@ class PptEscherEx : public EscherEx
 		void	CloseContainer();
 
 		sal_uInt32 EnterGroup( 
-            const basegfx::B2DPoint* pObjectPosition,
-            const basegfx::B2DVector* pObjectScale, 
+            const basegfx::B2DRange* pObjectRange, 
             SvMemoryStream* pClientData );
 
 		sal_uInt32	DrawingGroupContainerSize();

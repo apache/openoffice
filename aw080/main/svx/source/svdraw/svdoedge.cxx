@@ -2292,19 +2292,62 @@ void SdrEdgeObj::FindConnector(const Point aPt, const SdrView& rSdrView, SdrObjC
 
 void SdrEdgeObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
+    // #54102# handle start and end point if not connected
+	const bool bCon1(aCon1.pObj && aCon1.pObj->getSdrPageFromSdrObject() == getSdrPageFromSdrObject());
+	const bool bCon2(aCon2.pObj && aCon2.pObj->getSdrPageFromSdrObject() == getSdrPageFromSdrObject());
+    const bool bApplyTransform(pEdgeTrack && (!bCon1 || !bCon2));
+    basegfx::B2DHomMatrix aCompleteTransform;
+
+    if(bApplyTransform)
+    {
+        // get old transform and invert
+        aCompleteTransform = getSdrObjectTransformation();
+        aCompleteTransform.invert();
+    }
+
+    // call parent
 	SdrTextObj::setSdrObjectTransformation(rTransformation);
 
-	// TTTT:
-	// #75371# if resize is not from paste, forget user distances
-//	if(!IsPasteResize())
-//	{
-//		// #75735#
-//		aEdgeInfo.aObj1Line2 = Point();
-//		aEdgeInfo.aObj1Line3 = Point();
-//		aEdgeInfo.aObj2Line2 = Point();
-//		aEdgeInfo.aObj2Line3 = Point();
-//		aEdgeInfo.aMiddleLine = Point();
-//	}
+    if(bApplyTransform)
+    {
+        // multiply current transform (after change) to get full change
+        aCompleteTransform = getSdrObjectTransformation() * aCompleteTransform;
+
+        if(!bCon1 && pEdgeTrack)
+        {
+            // transform first point
+            const Point aPoint((*pEdgeTrack)[0]);
+            const basegfx::B2DPoint aTrPoint(aCompleteTransform * basegfx::B2DPoint(aPoint.X(), aPoint.Y()));
+
+            (*pEdgeTrack)[0] = Point(basegfx::fround(aTrPoint.getX()), basegfx::fround(aTrPoint.getY()));
+            ImpDirtyEdgeTrack();
+        }
+
+        if(!bCon2 && pEdgeTrack)
+        {
+            // transform last point
+            const sal_uInt16 nPntAnz(pEdgeTrack->GetPointCount());
+
+            if(nPntAnz)
+            {
+                const Point aPoint((*pEdgeTrack)[nPntAnz - 1]);
+                const basegfx::B2DPoint aTrPoint(aCompleteTransform * basegfx::B2DPoint(aPoint.X(), aPoint.Y()));
+
+                (*pEdgeTrack)[nPntAnz - 1] = Point(basegfx::fround(aTrPoint.getX()), basegfx::fround(aTrPoint.getY()));
+                ImpDirtyEdgeTrack();
+            }
+        }
+    }
+
+	// if resize is not from paste, forget user distances
+	if(!IsPasteResize())
+	{
+		aEdgeInfo.aObj1Line2 = Point();
+		aEdgeInfo.aObj1Line3 = Point();
+		aEdgeInfo.aObj2Line2 = Point();
+		aEdgeInfo.aObj2Line3 = Point();
+		aEdgeInfo.aMiddleLine = Point();
+	}
 }
 
 SdrObject* SdrEdgeObj::DoConvertToPolygonObject(bool bBezier, bool bAddText) const

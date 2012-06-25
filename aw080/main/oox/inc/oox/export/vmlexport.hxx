@@ -85,8 +85,7 @@ protected:
 
     virtual void        Commit( 
         EscherPropertyContainer& rProps, 
-        const basegfx::B2DPoint& rObjectPosition,
-        const basegfx::B2DVector& rObjectScale);
+        const basegfx::B2DRange& rObjectRange);
 
 private:
 

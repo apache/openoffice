@@ -175,8 +175,7 @@ public:
 
     virtual EscherExHostAppData* StartShape(
         const com::sun::star::uno::Reference< com::sun::star::drawing::XShape > &, 
-        const basegfx::B2DPoint* pObjectPosition,
-        const basegfx::B2DVector* pObjectScale);
+        const basegfx::B2DRange* pObjectRange);
 private:
     //No copying
     SwEscherEx(const SwEscherEx&);

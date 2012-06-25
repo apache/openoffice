@@ -712,9 +712,8 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 		::com::sun::star::uno::Reference< ::com::sun::star::text::XTextField >				mXTextField;
 		
         // the object range, split in pos and scale to keep the evtl. negative size (mirroring)
-        basegfx::B2DPoint   maObjectPosition;
-        basegfx::B2DVector  maObjectScale;
-//        basegfx::B2DRange               maObjectRange;
+        basegfx::B2DRange   maObjectRange;
+//        basegfx::B2DRange               maObjectRange; // TTTT mirrored needed here ?!?
 //        bool                            mbMirroredX;
 //        bool                            mbMirroredY;
         double                          mfObjectRotation;

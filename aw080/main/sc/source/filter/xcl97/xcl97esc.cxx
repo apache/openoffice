@@ -192,8 +192,7 @@ bool lcl_IsFontwork( const SdrObject* pObj )
 
 EscherExHostAppData* XclEscherEx::StartShape( 
     const Reference< XShape >& rxShape, 
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale)
+    const basegfx::B2DRange* pObjectRange)
 {
 	if ( nAdditionalText )
 		nAdditionalText++;
@@ -229,7 +228,7 @@ EscherExHostAppData* XclEscherEx::StartShape(
                     SvGlobalName aObjClsId( xObj->getClassID() );
                     if ( SotExchange::IsChart( aObjClsId ) )
                     {   // yes, it's a chart diagram
-                        mrObjMgr.AddObj( new XclExpChartObj( mrObjMgr, rxShape, pObjectPosition, pObjectScale) );
+                        mrObjMgr.AddObj( new XclExpChartObj( mrObjMgr, rxShape, pObjectRange) );
                         pCurrXclObj = NULL;     // no metafile or whatsoever
                     }
                     else    // metafile and OLE object
@@ -246,9 +245,9 @@ EscherExHostAppData* XclEscherEx::StartShape(
 #if EXC_EXP_OCX_CTRL
             // no ActiveX controls in embedded drawings (chart shapes)
             if( mbIsRootDff )
-                pCurrXclObj = CreateCtrlObj( rxShape, pObjectPosition, pObjectScale );
+                pCurrXclObj = CreateCtrlObj( rxShape, pObjectRange );
 #else
-            pCurrXclObj = CreateCtrlObj( rxShape, pObjectPosition, pObjectScale );
+            pCurrXclObj = CreateCtrlObj( rxShape, pObjectRange );
 #endif
             if( !pCurrXclObj )
                 pCurrXclObj = new XclObjAny( mrObjMgr );   // just a metafile
@@ -373,9 +372,8 @@ void XclEscherEx::EndDocument()
 #if EXC_EXP_OCX_CTRL
 
 XclExpOcxControlObj* XclEscherEx::CreateCtrlObj( 
-    Reference< XShape > xShape, 
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale)
+    Reference< XShape > xShape,
+    const basegfx::B2DRange* pObjectRange)
 {
     ::std::auto_ptr< XclExpOcxControlObj > xOcxCtrl;
 
@@ -396,7 +394,7 @@ XclExpOcxControlObj* XclEscherEx::CreateCtrlObj(
                 sal_uInt32 nStrmSize = static_cast< sal_uInt32 >( mxCtlsStrm->Tell() - nStrmStart );
                 // adjust the class name to "Forms.***.1"
                 aClassName.InsertAscii( "Forms.", 0 ).AppendAscii( ".1" );
-                xOcxCtrl.reset( new XclExpOcxControlObj( mrObjMgr, xShape, pObjectPosition, pObjectScale, aClassName, nStrmStart, nStrmSize ) );
+                xOcxCtrl.reset( new XclExpOcxControlObj( mrObjMgr, xShape, pObjectRange, aClassName, nStrmStart, nStrmSize ) );
             }
         }
     }
@@ -407,10 +405,9 @@ XclExpOcxControlObj* XclEscherEx::CreateCtrlObj(
 
 XclExpTbxControlObj* XclEscherEx::CreateCtrlObj( 
     Reference< XShape > xShape, 
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale)
+    const basegfx::B2DRange* pObjectRange)
 {
-    ::std::auto_ptr< XclExpTbxControlObj > xTbxCtrl( new XclExpTbxControlObj( mrObjMgr, xShape, pObjectPosition, pObjectScale) );
+    ::std::auto_ptr< XclExpTbxControlObj > xTbxCtrl( new XclExpTbxControlObj( mrObjMgr, xShape, pObjectRange) );
     if( xTbxCtrl->GetObjType() == EXC_OBJTYPE_UNKNOWN )
         xTbxCtrl.reset();
 

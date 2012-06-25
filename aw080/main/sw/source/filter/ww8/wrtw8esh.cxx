@@ -1260,8 +1260,7 @@ void WW8Export::WriteEscher()
 
 EscherExHostAppData* SwEscherEx::StartShape(
     const com::sun::star::uno::Reference< com::sun::star::drawing::XShape > &, 
-    const basegfx::B2DPoint* /*pObjectPosition*/,
-    const basegfx::B2DVector* /*pObjectScale*/) 
+    const basegfx::B2DRange* /*pObjectRange*/) 
 {
 	return &aHostData;
 }
@@ -1408,13 +1407,12 @@ sal_Int32 SwBasicEscherEx::WriteGrfFlyFrame(const SwFrmFmt& rFmt, sal_uInt32 nSh
 				aScale *= OutputDevice::GetFactorLogicToLogic(aGraphic.GetPrefMapMode().GetMapUnit(), MAP_100TH_MM);
             }
 
-            const basegfx::B2DPoint aPoint(0.0, 0.0);
+            const basegfx::B2DRange aRange(0.0, 0.0, aScale.getX(), aScale.getY());
 
             sal_uInt32 nBlibId = mxGlobal->GetBlibID( 
                 *QueryPictureStream(),
                 aUniqueId, 
-                aPoint, 
-                aScale, 
+                aRange, 
                 NULL, 
                 0 );
             
@@ -1620,13 +1618,12 @@ void SwBasicEscherEx::WriteBrushAttr(const SvxBrushItem &rBrush,
 				aScale *= OutputDevice::GetFactorLogicToLogic(rGraphic.GetPrefMapMode().GetMapUnit(), MAP_100TH_MM);
             }
 
-            const basegfx::B2DPoint aPoint(0.0, 0.0);
+            const basegfx::B2DRange aRange(0.0, 0.0, aScale.getX(), aScale.getY());
 
             sal_uInt32 nBlibId = mxGlobal->GetBlibID( 
                 *QueryPictureStream(),
                 aUniqueId, 
-                aPoint, 
-                aScale, 
+                aRange, 
                 NULL, 
                 0);
 
@@ -2662,14 +2659,15 @@ void SwBasicEscherEx::WriteOLEPicture(EscherPropertyContainer &rPropOpt,
     ByteString aId = aGraphicObject.GetUniqueID();
     if (aId.Len())
     {
-		const basegfx::B2DRange aObjectRange(sdr::legacy::GetLogicRange(rObj));
-        const basegfx::B2DPoint aPoint(0.0, 0.0);
-        const basegfx::B2DVector aScale(DrawModelToEmu(aObjectRange.getWidth()), DrawModelToEmu(aObjectRange.getHeight()));
+        const basegfx::B2DRange aRange(
+            0.0, 0.0, 
+            DrawModelToEmu(basegfx::fround(fabs(rObj.getSdrObjectScale().getX()))), 
+            DrawModelToEmu(basegfx::fround(fabs(rObj.getSdrObjectScale().getY()))));
+        
         sal_uInt32 nBlibId = mxGlobal->GetBlibID( 
             *QueryPictureStream(),
             aId, 
-            aPoint, 
-            aScale, 
+            aRange, 
             pVisArea, 
             0);    // SJ: the fifth parameter (VisArea) should be set..
         

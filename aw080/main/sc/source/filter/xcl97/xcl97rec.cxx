@@ -176,12 +176,11 @@ XclObj::~XclObj()
 void XclObj::ImplWriteAnchor( 
     const XclExpRoot& /*rRoot*/, 
     const SdrObject* pSdrObj, 
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale)
+    const basegfx::B2DRange* pObjectRange)
 {
-    if( pObjectPosition && pObjectScale )
+    if( pObjectRange )
     {
-        mrEscherEx.AddChildAnchor( *pObjectPosition, *pObjectScale );
+        mrEscherEx.AddChildAnchor( *pObjectRange );
     }
     else if( pSdrObj )
     {
@@ -288,15 +287,15 @@ void XclObj::SaveTextRecs( XclExpStream& rStrm )
 
 // --- class XclObjComment -------------------------------------------
 
-XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible ) :
+XclObjComment::XclObjComment( XclExpObjectManager& rObjMgr, const basegfx::B2DRange& rObjectRange, const EditTextObject& rEditObj, SdrObject* pCaption, bool bVisible ) :
     XclObj( rObjMgr, EXC_OBJTYPE_NOTE, true )
 {
-    ProcessEscherObj( rObjMgr.GetRoot(), rObjectPosition, rObjectScale, pCaption, bVisible);
+    ProcessEscherObj( rObjMgr.GetRoot(), rObjectRange, pCaption, bVisible);
 	// TXO
     pTxo = new XclTxo( rObjMgr.GetRoot(), rEditObj, pCaption );
 }
 
-void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, SdrObject* pCaption, const bool bVisible )
+void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2DRange& rObjectRange, SdrObject* pCaption, const bool bVisible )
 {
     Reference<XShape> aXShape;
     EscherPropertyContainer aPropOpt;
@@ -351,7 +350,7 @@ void XclObjComment::ProcessEscherObj( const XclExpRoot& rRoot, const basegfx::B2
     aPropOpt.AddOpt( ESCHER_Prop_fPrint, nFlags );                  // bool field
     aPropOpt.Commit( mrEscherEx.GetStream() );
 
-    XclExpDffNoteAnchor( rRoot, rObjectPosition, rObjectScale ).WriteDffData( mrEscherEx );
+    XclExpDffNoteAnchor( rRoot, rObjectRange ).WriteDffData( mrEscherEx );
 
     mrEscherEx.AddAtom( 0, ESCHER_ClientData );                        // OBJ record
     mrEscherEx.UpdateDffFragmentEnd();

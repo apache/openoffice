@@ -101,7 +101,7 @@ void XclExpDffAnchorBase::SetSdrObject( const SdrObject& rSdrObj )
 {
     const basegfx::B2DRange aRange(rSdrObj.getObjectRange(0));
     ImplSetFlags( rSdrObj );
-    ImplCalcAnchorRange( aRange.getMinimum(), aRange.getRange(), MAP_100TH_MM );
+    ImplCalcAnchorRange( aRange, MAP_100TH_MM );
 }
 
 void XclExpDffAnchorBase::WriteDffData( EscherEx& rEscherEx ) const
@@ -111,11 +111,10 @@ void XclExpDffAnchorBase::WriteDffData( EscherEx& rEscherEx ) const
 }
 
 void XclExpDffAnchorBase::WriteData( EscherEx& rEscherEx, 
-    const basegfx::B2DPoint& rObjectPosition, 
-    const basegfx::B2DVector& rObjectScale)
+    const basegfx::B2DRange& rObjectRange)
 {
     // the passed rectangle is in twips
-    ImplCalcAnchorRange( rObjectPosition, rObjectScale, MAP_TWIP );
+    ImplCalcAnchorRange( rObjectRange, MAP_TWIP );
     WriteDffData( rEscherEx );
 }
 
@@ -124,7 +123,7 @@ void XclExpDffAnchorBase::ImplSetFlags( const SdrObject& )
     OSL_ENSURE( false, "XclExpDffAnchorBase::ImplSetFlags - not implemented" );
 }
 
-void XclExpDffAnchorBase::ImplCalcAnchorRange( const basegfx::B2DPoint& /*rObjectPosition*/, const basegfx::B2DVector& /*rObjectScale*/, MapUnit )
+void XclExpDffAnchorBase::ImplCalcAnchorRange( const basegfx::B2DRange& /*rObjectRange*/, MapUnit )
 {
     OSL_ENSURE( false, "XclExpDffAnchorBase::ImplCalcAnchorRect - not implemented" );
 }
@@ -143,9 +142,9 @@ void XclExpDffSheetAnchor::ImplSetFlags( const SdrObject& rSdrObj )
     mnFlags = rSdrObj.getUniversalApplicationFlag01() ? EXC_ESC_ANCHOR_LOCKED : 0;
 }
 
-void XclExpDffSheetAnchor::ImplCalcAnchorRange( const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, MapUnit eMapUnit )
+void XclExpDffSheetAnchor::ImplCalcAnchorRange( const basegfx::B2DRange& rObjectRange, MapUnit eMapUnit )
 {
-    maAnchor.SetRangeAtAnchor( GetRoot(), mnScTab, rObjectPosition, rObjectScale, eMapUnit );
+    maAnchor.SetRangeAtAnchor( GetRoot(), mnScTab, rObjectRange, eMapUnit );
 }
 
 // ----------------------------------------------------------------------------
@@ -164,17 +163,17 @@ void XclExpDffEmbeddedAnchor::ImplSetFlags( const SdrObject& /*rSdrObj*/ )
     // TODO (unsupported feature): fixed size
 }
 
-void XclExpDffEmbeddedAnchor::ImplCalcAnchorRange( const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale, MapUnit eMapUnit )
+void XclExpDffEmbeddedAnchor::ImplCalcAnchorRange( const basegfx::B2DRange& rObjectRange, MapUnit eMapUnit )
 {
-    maAnchor.SetRangeAtAnchor( maPageScale, mfScaleX, mfScaleY, rObjectPosition, rObjectScale, eMapUnit, true );
+    maAnchor.SetRangeAtAnchor( maPageScale, mfScaleX, mfScaleY, rObjectRange, eMapUnit, true );
 }
 
 // ----------------------------------------------------------------------------
 
-XclExpDffNoteAnchor::XclExpDffNoteAnchor( const XclExpRoot& rRoot, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale ) :
+XclExpDffNoteAnchor::XclExpDffNoteAnchor( const XclExpRoot& rRoot, const basegfx::B2DRange& rObjectRange ) :
     XclExpDffAnchorBase( rRoot, EXC_ESC_ANCHOR_SIZELOCKED )
 {
-    maAnchor.SetRangeAtAnchor( rRoot, rRoot.GetCurrScTab(), rObjectPosition, rObjectScale, MAP_100TH_MM );
+    maAnchor.SetRangeAtAnchor( rRoot, rRoot.GetCurrScTab(), rObjectRange, MAP_100TH_MM );
 }
 
 // ----------------------------------------------------------------------------
@@ -381,8 +380,7 @@ void XclExpControlHelper::WriteFormulaSubRec( XclExpStream& rStrm, sal_uInt16 nS
 XclExpOcxControlObj::XclExpOcxControlObj( 
     XclExpObjectManager& rObjMgr, 
     Reference< XShape > xShape,
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale,
+    const basegfx::B2DRange* pObjectRange,
     const String& rClassName, 
     sal_uInt32 nStrmStart, 
     sal_uInt32 nStrmSize ) 
@@ -428,7 +426,7 @@ XclExpOcxControlObj::XclExpOcxControlObj(
     aPropOpt.Commit( mrEscherEx.GetStream() );
 
     // anchor
-    ImplWriteAnchor( GetRoot(), SdrObject::getSdrObjectFromXShape( xShape ), pObjectPosition, pObjectScale);
+    ImplWriteAnchor( GetRoot(), SdrObject::getSdrObjectFromXShape( xShape ), pObjectRange );
 
     mrEscherEx.AddAtom( 0, ESCHER_ClientData );                       // OBJ record
     mrEscherEx.CloseContainer();  // ESCHER_SpContainer
@@ -492,8 +490,7 @@ void XclExpOcxControlObj::WriteSubRecs( XclExpStream& rStrm )
 XclExpTbxControlObj::XclExpTbxControlObj( 
     XclExpObjectManager& rObjMgr, 
     Reference< XShape > xShape, 
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale) 
+    const basegfx::B2DRange* pObjectRange) 
 :   XclObj( rObjMgr, EXC_OBJTYPE_UNKNOWN, true ),
     XclExpControlHelper( rObjMgr.GetRoot() ),
     mnHeight( 0 ),
@@ -571,7 +568,7 @@ XclExpTbxControlObj::XclExpTbxControlObj(
     aPropOpt.Commit( mrEscherEx.GetStream() );
 
     // anchor
-    ImplWriteAnchor( GetRoot(), SdrObject::getSdrObjectFromXShape( xShape ), pObjectPosition, pObjectScale);
+    ImplWriteAnchor( GetRoot(), SdrObject::getSdrObjectFromXShape( xShape ), pObjectRange );
 
     mrEscherEx.AddAtom( 0, ESCHER_ClientData );                       // OBJ record
     mrEscherEx.UpdateDffFragmentEnd();
@@ -930,8 +927,7 @@ void XclExpTbxControlObj::WriteSbs( XclExpStream& rStrm )
 XclExpChartObj::XclExpChartObj( 
     XclExpObjectManager& rObjMgr, 
     Reference< XShape > xShape, 
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale) 
+    const basegfx::B2DRange* pObjectRange) 
 :   XclObj( rObjMgr, EXC_OBJTYPE_CHART ),
     XclExpRoot( rObjMgr.GetRoot() )
 {
@@ -952,7 +948,7 @@ XclExpChartObj::XclExpChartObj(
 
     // anchor
     SdrObject* pSdrObj = SdrObject::getSdrObjectFromXShape( xShape );
-    ImplWriteAnchor( GetRoot(), pSdrObj, pObjectPosition, pObjectScale );
+    ImplWriteAnchor( GetRoot(), pSdrObj, pObjectRange );
 
     // client data (the following OBJ record)
     mrEscherEx.AddAtom( 0, ESCHER_ClientData );
@@ -1016,9 +1012,10 @@ XclExpNote::XclExpNote( const XclExpRoot& rRoot, const ScAddress& rScPos,
                 if( SdrCaptionObj* pCaption = pScNote->GetOrCreateCaption( maScPos ) )
                     if( const OutlinerParaObject* pOPO = pCaption->GetOutlinerParaObject() )
                     {
+                        const basegfx::B2DRange aRange(pCaption->getSdrObjectTranslate(), pCaption->getSdrObjectScale());
                         mnObjId = rRoot.GetObjectManager().AddObj( 
                             new XclObjComment( 
-                                rRoot.GetObjectManager(), pCaption->getSdrObjectTranslate(), pCaption->getSdrObjectScale(), pOPO->GetTextObject(), pCaption, mbVisible ) );
+                                rRoot.GetObjectManager(), aRange, pOPO->GetTextObject(), pCaption, mbVisible ) );
                     }
 
             SetRecSize( 9 + maAuthor.GetSize() );

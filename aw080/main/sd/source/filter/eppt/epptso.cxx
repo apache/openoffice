@@ -186,9 +186,7 @@ sal_uInt16 PPTExBulletProvider::GetId( const ByteString& rUniqueId, Size& rGraph
 			}
 		}
 
-        const basegfx::B2DPoint aObjectPosition(0.0, 0.0);
-        const basegfx::B2DVector aObjectScale(1.0, 1.0);
-		nId = pGraphicProv->GetBlibID( aBuExPictureStream, aGraphicObject.GetUniqueID(), aObjectPosition, aObjectScale, NULL, NULL );
+		nId = pGraphicProv->GetBlibID( aBuExPictureStream, aGraphicObject.GetUniqueID(), basegfx::B2DRange(0.0, 0.0, 1.0, 1.0), NULL, NULL );
 
         if ( nId && ( nId < 0x10000 ) )
             nRetValue = (sal_uInt16)nId - 1;
@@ -1150,12 +1148,8 @@ sal_Bool PPTWriter::ImplGetShapeByIndex( sal_uInt32 nIndex, sal_Bool bGroup )
                 aObjTrans.getRotate(),
                 maMap100thMmToMs * aObjTrans.getTranslate()));
 
-//        // use translation and scale to create range
-//        maObjectRange = basegfx::B2DRange(aObjTrans.getTranslate(), aObjTrans.getTranslate() + aObjTrans.getScale());
-
-        // get object position and scale. cale can now be negative in X and/or Y representing mirroring
-        maObjectPosition = aObjTrans.getTranslate();
-        maObjectScale = aObjTrans.getScale();
+        // use translation and scale to create range
+        maObjectRange = basegfx::B2DRange(aObjTrans.getTranslate(), aObjTrans.getTranslate() + basegfx::absolute(aObjTrans.getScale()));
 
         // use scale to detect mirrorings
 //        mbMirroredX = aObjTrans.getScale().getX() < 0.0;
@@ -1548,10 +1542,9 @@ void PPTWriter::ImplWritePortions( SvStream& rOut, TextObj& rTextObj )
 				{
 					case ::com::sun::star::drawing::FillStyle_GRADIENT :
 					{
-                        basegfx::B2DPoint aObjectPosition(0.0, 0.0);
-                        basegfx::B2DVector aObjectScale(28000.0, 21000.0);
-                        EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aObjectPosition, aObjectScale);
-						aPropOpt.CreateGradientProperties( mXPropSet );
+                        EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, basegfx::B2DRange(0.0, 0.0, 28000.0, 21000.0));
+						
+                        aPropOpt.CreateGradientProperties( mXPropSet );
 						aPropOpt.GetOpt( ESCHER_Prop_fillColor, nBackgroundColor );
 					}
 					break;
@@ -1571,10 +1564,9 @@ void PPTWriter::ImplWritePortions( SvStream& rOut, TextObj& rTextObj )
 						{
 							case ::com::sun::star::drawing::FillStyle_GRADIENT :
 							{
-                                basegfx::B2DPoint aObjectPosition(0.0, 0.0);
-                                basegfx::B2DVector aObjectScale(28000.0, 21000.0);
-                                EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aObjectPosition, aObjectScale);
-								aPropOpt.CreateGradientProperties( mXBackgroundPropSet );
+                                EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, basegfx::B2DRange(0.0, 0.0, 28000.0, 21000.0));
+								
+                                aPropOpt.CreateGradientProperties( mXBackgroundPropSet );
 								aPropOpt.GetOpt( ESCHER_Prop_fillColor, nBackgroundColor );
 							}
 							break;
@@ -1722,13 +1714,16 @@ void PPTWriter::ImplHandleRotation( EscherPropertyContainer& rPropOpt )
         double  fCos = cos( (double)nAngle * F_PI18000 );
         double  fSin = sin( (double)nAngle * F_PI18000 );
 
-        const double fWidthHalf(maObjectScale.getX() * 0.5);
-        const double fHeightHalf(maObjectScale.getY() * 0.5);
+        const double fWidthHalf(maObjectRange.getWidth() * 0.5);
+        const double fHeightHalf(maObjectRange.getHeight() * 0.5);
 
         double  fXDiff = fCos * fWidthHalf + fSin * (-fHeightHalf);
         double  fYDiff = - ( fSin * fWidthHalf - fCos * ( -fHeightHalf ) );
 
-        maObjectPosition -= basegfx::B2DPoint(fWidthHalf - fXDiff, fHeightHalf + fYDiff);
+        maObjectRange.transform(
+            basegfx::tools::createTranslateB2DHomMatrix(
+                -(fWidthHalf - fXDiff),
+                -(fHeightHalf + fYDiff)));
 
         nAngle *= 655;
         nAngle += 0x8000;
@@ -1741,8 +1736,10 @@ void PPTWriter::ImplHandleRotation( EscherPropertyContainer& rPropOpt )
             // In diesen beiden Bereichen steht in PPT gemeinerweise die
             // BoundingBox bereits senkrecht. Daher muss diese VOR
             // DER ROTATION flachgelegt werden.
-            maObjectPosition = basegfx::B2DPoint(maObjectPosition.getX() + fWidthHalf - fHeightHalf, maObjectPosition.getY() + fHeightHalf - fWidthHalf);
-            maObjectScale = basegfx::B2DVector(maObjectScale.getY(), maObjectScale.getX());
+            const basegfx::B2DPoint aPoint(maObjectRange.getMinX() + fWidthHalf - fHeightHalf, maObjectRange.getMinY() + fHeightHalf - fWidthHalf);
+            const basegfx::B2DVector aScale(maObjectRange.getHeight(), maObjectRange.getWidth());
+
+            maObjectRange = basegfx::B2DRange(aPoint, aPoint + aScale);
         }
     }
 }
@@ -3326,7 +3323,7 @@ void PPTWriter::ImplWriteTextStyleAtom( SvStream& rOut, int nTextInstance, sal_u
             nParaFlags >>= 16;
 
             sal_uInt32  nDefaultTabSize = mfMap100thMmToMs * 2011.0;
-            sal_uInt32  nDefaultTabs = basegfx::fround(fabs(maObjectScale.getX())) / nDefaultTabSize;
+            sal_uInt32  nDefaultTabs = basegfx::fround(fabs(maObjectRange.getWidth())) / nDefaultTabSize;
             if ( nTabs )
                 nDefaultTabs -= (sal_Int32)( ( ( pTabStop[ nTabs - 1 ].Position / 4.40972 ) + nTextOfs ) / nDefaultTabSize );
             if ( (sal_Int32)nDefaultTabs < 0 )
@@ -4188,10 +4185,10 @@ sal_Bool PPTWriter::ImplCreatePresentationPlaceholder( const sal_Bool bMasterPag
 		aPropOpt.CreateShapeProperties( mXShape );
 		aPropOpt.Commit( *mpStrm );
 		mpPptEscherEx->AddAtom( 8, ESCHER_ClientAnchor );
-		*mpStrm << (sal_Int16)basegfx::fround(maObjectPosition.getY()) // CAUTION! Here, X,Y is exchanged
-			    << (sal_Int16)basegfx::fround(maObjectPosition.getX()) // by PURPOSE, it's not an error (!)
-				<< (sal_Int16)basegfx::fround(maObjectPosition.getX() + maObjectScale.getX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
-				<< (sal_Int16)basegfx::fround(maObjectPosition.getY() + maObjectScale.getY());
+		*mpStrm << (sal_Int16)basegfx::fround(maObjectRange.getMinY()) // CAUTION! Here, X,Y is exchanged
+			    << (sal_Int16)basegfx::fround(maObjectRange.getMinX()) // by PURPOSE, it's not an error (!)
+				<< (sal_Int16)basegfx::fround(maObjectRange.getMaxX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
+				<< (sal_Int16)basegfx::fround(maObjectRange.getMaxY());
 		mpPptEscherEx->OpenContainer( ESCHER_ClientData );
 		mpPptEscherEx->AddAtom( 8, EPP_OEPlaceholderAtom );
 		*mpStrm << (sal_uInt32)0                // PlacementID
@@ -4308,9 +4305,11 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 			List        aAdjustmentList;
             Rectangle   aPolyBoundRect;
 
-            basegfx::B2DPoint maObjectPosition100thmm(maInvMap100thMmToMs * maObjectPosition);
-            basegfx::B2DVector maObjectScale100thmm(maInvMap100thMmToMs * maObjectScale);
-            EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, maObjectPosition100thmm, maObjectScale100thmm);
+            basegfx::B2DRange aObjectRange100thmm(maObjectRange);
+            
+            aObjectRange100thmm.transform(maInvMap100thMmToMs);
+            
+            EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aObjectRange100thmm);
 
             if ( bGroup )
             {
@@ -4330,7 +4329,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 							pTmp = new SvMemoryStream( 0x200, 0x200 );
 						ImplWriteClickAction( *pTmp, eCa, bMediaClickAction );
 					}
-                    sal_uInt32 nShapeId = mpPptEscherEx->EnterGroup( &maObjectPosition, &maObjectScale, pTmp );
+                    sal_uInt32 nShapeId = mpPptEscherEx->EnterGroup( &maObjectRange, pTmp );
 					aSolverContainer.AddShape( mXShape, nShapeId );
                     delete pTmp;
                 }
@@ -4353,9 +4352,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     if ( ImplGetPropertyValue( String( RTL_CONSTASCII_USTRINGPARAM( "BoundRect" ) ) ) )
                     {
                         const ::com::sun::star::awt::Rectangle aAwtRect(*(::com::sun::star::awt::Rectangle*)mAny.getValue());
-                        
-                        maObjectPosition = maMap100thMmToMs * basegfx::B2DPoint(aAwtRect.X, aAwtRect.Y);
-                        maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aAwtRect.Width, aAwtRect.Height);
+
+                        maObjectRange = basegfx::B2DRange(aAwtRect.X, aAwtRect.Y, aAwtRect.X + aAwtRect.Width, aAwtRect.Y + aAwtRect.Height);
+                        maObjectRange.transform(maMap100thMmToMs);
                     }
 					mType = "drawing.dontknow";
                 }
@@ -4380,10 +4379,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 						SdrObject* pObj = GetSdrObjectFromXShape( mXShape );
 						if ( pObj )
 						{
-                            const basegfx::B2DRange aObjRange(pObj->getObjectRange(0));
-
-                            maObjectPosition = maMap100thMmToMs * aObjRange.getMinimum();
-                            maObjectScale = maMap100thMmToMs * aObjRange.getRange();
+                            maObjectRange = pObj->getObjectRange(0);
+                            maObjectRange.transform(maMap100thMmToMs);
 							mfObjectRotation = 0.0;
 						}
 					}
@@ -4412,7 +4409,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 if ( nRadius )
                 {
                     ImplCreateShape( ESCHER_ShpInst_RoundRectangle, 0xa00, aSolverContainer ); // Flags: Connector | HasSpt
-                    double fLength(fabs(std::min(maObjectScale.getX(), maObjectScale.getY()) * 0.5));
+                    double fLength(fabs(std::min(maObjectRange.getWidth(), maObjectRange.getHeight()) * 0.5));
 
 					if ( nRadius >= fLength )
 					{
@@ -4491,8 +4488,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                             aPropOpt.CreateLineProperties( mXPropSet, sal_False );
                     }
 
-                    maObjectPosition = maMap100thMmToMs * basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
-                    maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
+                    maObjectRange = basegfx::B2DRange(aNewRect.X, aNewRect.Y, aNewRect.X + aNewRect.Width, aNewRect.Y + aNewRect.Height);
+                    maObjectRange.transform(maMap100thMmToMs);
 
                     if ( bNeedText && ImplGetText() )
 						aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_False );
@@ -4635,8 +4632,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 if ( aPropOpt.CreateConnectorProperties( mXShape, aSolverContainer, aNewRect, nSpType, nSpFlags ) == sal_False )
                     continue;
 
-                maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
-                maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
+                maObjectRange = basegfx::B2DRange(aNewRect.X, aNewRect.Y, aNewRect.X + aNewRect.Width, aNewRect.Y + aNewRect.Height);
+                maObjectRange.transform(maMap100thMmToMs);
 
                 mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                 ImplCreateShape( nSpType, nSpFlags, aSolverContainer );
@@ -4655,18 +4652,24 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 // If the flags are not set the line gets also exported correctly, but start
                 // and end point may be exchanged.
                 const bool bMirrorX(aNewRect.Width < 0);
-                const bool bMirrorY(aNewRect.Height < 0);
+                const bool bMirrorY(aNewRect.Height < 0); 
+                
+                // TTTT this implies that CreatePolygonProperties returns negative values in 
+                // ::com::sun::star::awt::Rectangle's Width and Height. SOlve this and the
+                // mirror flags, too
 
-                maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
-                maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
+                maObjectRange = basegfx::B2DRange(
+                    aNewRect.X, aNewRect.Y, 
+                    aNewRect.X + fabs((double)aNewRect.Width), aNewRect.Y + fabs((double)aNewRect.Height));
+                maObjectRange.transform(maMap100thMmToMs);
 
                 if ( ImplGetText() )
                 {
-                    aTextRefPoint = ::com::sun::star::awt::Point(basegfx::fround(maObjectPosition.getX()), basegfx::fround(maObjectPosition.getY()));
+                    aTextRefPoint = ::com::sun::star::awt::Point(basegfx::fround(maObjectRange.getMinX()), basegfx::fround(maObjectRange.getMinY()));
                     mnTextSize = 0;
                     bAdditionalText = true;
                     fTextRotation = mfObjectRotation;
-                    mpPptEscherEx->EnterGroup( &maObjectPosition, &maObjectScale, 0 );
+                    mpPptEscherEx->EnterGroup( &maObjectRange, 0 );
                 }
                 mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                 sal_uInt32 nFlags = 0xa00;                                  // Flags: Connector | HasSpt
@@ -4701,8 +4704,13 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 ::com::sun::star::awt::Rectangle aNewRect;
                 aPropOpt.CreatePolygonProperties( mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_False, aNewRect, NULL );
 
-                maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
-                maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
+                maObjectRange = basegfx::B2DRange(aNewRect.X, aNewRect.Y, aNewRect.X + aNewRect.Width, aNewRect.Y + aNewRect.Height);
+                maObjectRange.transform(maMap100thMmToMs);
+                
+                // TTTT: check if it was by purpose to apply transform only to scale, not to pos
+                // compare with original (!)
+                //maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
+                //maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
 
                 aPropOpt.CreateFillProperties( mXPropSet, sal_True );
                 mfObjectRotation = 0.0;
@@ -4722,8 +4730,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 ::com::sun::star::awt::Rectangle aNewRect;
                 aPropOpt.CreatePolygonProperties( mXPropSet, ESCHER_CREATEPOLYGON_POLYLINE, sal_False, aNewRect, NULL );
                 
-                maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
-                maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
+                maObjectRange = basegfx::B2DRange(aNewRect.X, aNewRect.Y, aNewRect.X + aNewRect.Width, aNewRect.Y + aNewRect.Height);
+                maObjectRange.transform(maMap100thMmToMs);
                 
                 aPropOpt.CreateLineProperties( mXPropSet, sal_False );
                 mfObjectRotation = 0.0;
@@ -4743,8 +4751,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 ::com::sun::star::awt::Rectangle aNewRect;
                 aPropOpt.CreatePolygonProperties( mXPropSet, ESCHER_CREATEPOLYGON_POLYLINE, sal_True, aNewRect, NULL );
                 
-                maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
-                maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
+                maObjectRange = basegfx::B2DRange(aNewRect.X, aNewRect.Y, aNewRect.X + aNewRect.Width, aNewRect.Y + aNewRect.Height);
+                maObjectRange.transform(maMap100thMmToMs);
                 
                 aPropOpt.CreateLineProperties( mXPropSet, sal_False );
                 mfObjectRotation = 0.0;
@@ -4764,8 +4772,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 ::com::sun::star::awt::Rectangle aNewRect;
                 aPropOpt.CreatePolygonProperties( mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_True, aNewRect, NULL );
                 
-                maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
-                maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
+                maObjectRange = basegfx::B2DRange(aNewRect.X, aNewRect.Y, aNewRect.X + aNewRect.Width, aNewRect.Y + aNewRect.Height);
+                maObjectRange.transform(maMap100thMmToMs);
 
                 aPropOpt.CreateFillProperties( mXPropSet, sal_True );
                 mfObjectRotation = 0.0;
@@ -4875,10 +4883,10 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 								ImplAdjustFirstLineLineSpacing( aTextObj, aPropOpt );
 								aPropertyOptions.Commit( *mpStrm );
 								mpPptEscherEx->AddAtom( 8, ESCHER_ClientAnchor );
-								*mpStrm << (sal_Int16)basegfx::fround(maObjectPosition.getY()) // CAUTION! Here, X,Y is exchanged
-									    << (sal_Int16)basegfx::fround(maObjectPosition.getX()) // by PURPOSE, it's not an error (!)
-										<< (sal_Int16)basegfx::fround(maObjectPosition.getX() + maObjectScale.getX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
-										<< (sal_Int16)basegfx::fround(maObjectPosition.getY() + maObjectScale.getY());      // oben, links, rechts, unten ????
+								*mpStrm << (sal_Int16)basegfx::fround(maObjectRange.getMinY()) // CAUTION! Here, X,Y is exchanged
+									    << (sal_Int16)basegfx::fround(maObjectRange.getMinX()) // by PURPOSE, it's not an error (!)
+										<< (sal_Int16)basegfx::fround(maObjectRange.getMaxX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
+										<< (sal_Int16)basegfx::fround(maObjectRange.getMaxY());      // oben, links, rechts, unten ????
 								mpPptEscherEx->OpenContainer( ESCHER_ClientData );
 								mpPptEscherEx->AddAtom( 8, EPP_OEPlaceholderAtom );
 								*mpStrm << (sal_uInt32)0                                                        // PlacementID
@@ -4972,10 +4980,10 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 								ImplAdjustFirstLineLineSpacing( aTextObj, aPropOpt2 );
 								aPropOpt2.Commit( *mpStrm );
 								mpPptEscherEx->AddAtom( 8, ESCHER_ClientAnchor );
-								*mpStrm << (sal_Int16)basegfx::fround(maObjectPosition.getY()) // CAUTION! Here, X,Y is exchanged 
-									    << (sal_Int16)basegfx::fround(maObjectPosition.getX()) // by PURPOSE, it's not an error (!)
-										<< (sal_Int16)basegfx::fround(maObjectPosition.getX() + maObjectScale.getX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
-										<< (sal_Int16)basegfx::fround(maObjectPosition.getY() + maObjectScale.getY());  // oben, links, rechts, unten ????
+								*mpStrm << (sal_Int16)basegfx::fround(maObjectRange.getMinY()) // CAUTION! Here, X,Y is exchanged 
+									    << (sal_Int16)basegfx::fround(maObjectRange.getMinX()) // by PURPOSE, it's not an error (!)
+										<< (sal_Int16)basegfx::fround(maObjectRange.getMaxX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
+										<< (sal_Int16)basegfx::fround(maObjectRange.getMaxY());  // oben, links, rechts, unten ????
 								mpPptEscherEx->OpenContainer( ESCHER_ClientData );
 								mpPptEscherEx->AddAtom( 8, EPP_OEPlaceholderAtom );
 								*mpStrm << (sal_uInt32)1                                                        // PlacementID
@@ -5436,9 +5444,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             aPropOpt.CreateShapeProperties( mXShape );
 			aPropOpt.Commit( *mpStrm );
 			if ( GetCurrentGroupLevel() > 0 )		
-		        mpPptEscherEx->AddChildAnchor( maObjectPosition, maObjectScale );
+		        mpPptEscherEx->AddChildAnchor( maObjectRange );
 			else
-				mpPptEscherEx->AddClientAnchor( maObjectPosition, maObjectScale );
+				mpPptEscherEx->AddClientAnchor( maObjectRange );
 
 			if ( pClientData )
             {
@@ -5470,10 +5478,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             aPropOpt.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x100000 );
             if ( mType == "drawing.Line" )
             {
-                const double fDist(hypot(maObjectScale.getX(), maObjectScale.getY()));
+                const double fDist(hypot(maObjectRange.getWidth(), maObjectRange.getHeight()));
 
-                maObjectPosition = basegfx::B2DPoint(aTextRefPoint.X, aTextRefPoint.Y);
-                maObjectScale = basegfx::B2DVector(fDist, -1.0);
+                maObjectRange = basegfx::B2DRange(aTextRefPoint.X, aTextRefPoint.Y, aTextRefPoint.X + fDist, aTextRefPoint.Y);
                 ImplCreateTextShape( aPropOpt, aSolverContainer, false );
                 aPropOpt.AddOpt( ESCHER_Prop_FitTextToShape, 0x60006 );        // Size Shape To Fit Text
 
@@ -5492,8 +5499,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 nAngle += 0x8000;
                 nAngle &=~0xffff;  // nAngle auf volle Gradzahl runden
                 aPropOpt.AddOpt( ESCHER_Prop_Rotation, nAngle );
-                mpPptEscherEx->SetGroupSnapPositionAndScale( nGroupLevel, maObjectPosition, maObjectScale );
-                mpPptEscherEx->SetGroupLogicPositionAndScale( nGroupLevel, maObjectPosition, maObjectScale );
+                mpPptEscherEx->SetGroupSnapPositionAndScale( nGroupLevel, maObjectRange );
+                mpPptEscherEx->SetGroupLogicPositionAndScale( nGroupLevel, maObjectRange );
             }
             if ( !pClientTextBox )
                 pClientTextBox = new SvMemoryStream( 0x200, 0x200 );
@@ -5504,9 +5511,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             aPropOpt.CreateShapeProperties( mXShape );
             aPropOpt.Commit( *mpStrm );
 			if ( GetCurrentGroupLevel() > 0 )		
-		        mpPptEscherEx->AddChildAnchor( maObjectPosition, maObjectScale );
+		        mpPptEscherEx->AddChildAnchor( maObjectRange );
 			else
-				mpPptEscherEx->AddClientAnchor( maObjectPosition, maObjectScale );
+				mpPptEscherEx->AddClientAnchor( maObjectRange );
 
             *mpStrm << (sal_uInt32)( ( ESCHER_ClientTextbox << 16 ) | 0xf )
                     << (sal_uInt32)pClientTextBox->Tell();
@@ -5585,10 +5592,10 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 	mpPptEscherEx->OpenContainer( ESCHER_SpgrContainer );
 	mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
 	mpPptEscherEx->AddAtom( 16, ESCHER_Spgr, 1 );
-	*mpStrm		<< (sal_Int32)basegfx::fround(maObjectPosition.getX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
-				<< (sal_Int32)basegfx::fround(maObjectPosition.getY())    // TTTT: Check for mirrored if Min/Max needs to be exchanged
-				<< (sal_Int32)basegfx::fround(maObjectPosition.getX() + maObjectScale.getX())
-				<< (sal_Int32)basegfx::fround(maObjectPosition.getY() + maObjectScale.getX());
+	*mpStrm		<< (sal_Int32)basegfx::fround(maObjectRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
+				<< (sal_Int32)basegfx::fround(maObjectRange.getMinY())    // TTTT: Check for mirrored if Min/Max needs to be exchanged
+				<< (sal_Int32)basegfx::fround(maObjectRange.getMaxX())
+				<< (sal_Int32)basegfx::fround(maObjectRange.getMaxY());
 
     sal_uInt32 nShapeId = mpPptEscherEx->GenerateShapeId();
 	mpPptEscherEx->AddShape( ESCHER_ShpInst_Min, 0x201, nShapeId );		// Flags: Group | Patriarch
@@ -5612,7 +5619,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 			std::vector< std::pair< sal_Int32, sal_Int32 > > aColumns;
 			std::vector< std::pair< sal_Int32, sal_Int32 > > aRows;
 
-			sal_uInt32 nPosition = basegfx::fround(maObjectPosition.getX());
+			sal_uInt32 nPosition = basegfx::fround(maObjectRange.getMinX());
 			for ( sal_Int32 x = 0; x < nColumnCount; x++ )
 			{
 				uno::Reference< beans::XPropertySet > xPropSet( xColumns->getByIndex( x ), uno::UNO_QUERY_THROW );
@@ -5623,7 +5630,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				nPosition += aWidth;
 			}
 
-			nPosition = basegfx::fround(maObjectPosition.getY());
+			nPosition = basegfx::fround(maObjectRange.getMinY());
 			for ( sal_Int32 y = 0; y < nRowCount; y++ )
 			{
 				uno::Reference< beans::XPropertySet > xPropSet( xRows->getByIndex( y ), uno::UNO_QUERY_THROW );
@@ -5653,9 +5660,9 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				aPropOpt.Commit( *mpStrm );
 				aPropOpt2.Commit( *mpStrm, 3, ESCHER_UDefProp );
 				if ( GetCurrentGroupLevel() > 0 )		
-					mpPptEscherEx->AddChildAnchor( maObjectPosition, maObjectScale );
+					mpPptEscherEx->AddChildAnchor( maObjectRange );
 				else
-					mpPptEscherEx->AddClientAnchor( maObjectPosition, maObjectScale );
+					mpPptEscherEx->AddClientAnchor( maObjectRange );
 				mpPptEscherEx->CloseContainer();
 
 
@@ -5678,7 +5685,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 								if ( nC < aColumns.size() )
 									nRight += aColumns[ nC ].second;
 								else
-									nRight = basegfx::fround(maObjectPosition.getX() + maObjectScale.getX());
+									nRight = basegfx::fround(maObjectRange.getMaxX());
 							}
 							for ( sal_Int32 nRowSpan = 1; nRowSpan < xCell->getRowSpan(); nRowSpan++ )
 							{
@@ -5686,7 +5693,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 								if ( nR < aColumns.size() )
 									nBottom += aRows[ nR ].second;
 								else
-									nBottom = basegfx::fround(maObjectPosition.getY() + maObjectScale.getY());
+									nBottom = basegfx::fround(maObjectRange.getMaxY());
 							}
 
 							mbFontIndependentLineSpacing = sal_False;
@@ -5735,10 +5742,10 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				static const rtl::OUString	sDiagonalBLTR( RTL_CONSTASCII_USTRINGPARAM ( "DiagonalBLTR" ) );
 
 				// creating horz lines
-				sal_Int32 nYPos = basegfx::fround(maObjectPosition.getY());
+				sal_Int32 nYPos = basegfx::fround(maObjectRange.getMinY());
 				for( sal_Int32 nLine = 0; nLine < ( xRows->getCount() + 1 ); nLine++ )
 				{
-					sal_Int32 nXPos = basegfx::fround(maObjectPosition.getX());
+					sal_Int32 nXPos = basegfx::fround(maObjectRange.getMinX());
 					std::vector< CellBorder > vCellBorders;
 					for( sal_Int32 nColumn = 0; nColumn < xColumns->getCount(); nColumn++ )
 					{
@@ -5787,10 +5794,10 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				}
 
 				// creating vertical lines
-				sal_Int32 nXPos = basegfx::fround(maObjectPosition.getX());
+				sal_Int32 nXPos = basegfx::fround(maObjectRange.getMinX());
 				for( sal_Int32 nLine = 0; nLine < ( xColumns->getCount() + 1 ); nLine++ )
 				{
-					nYPos = basegfx::fround(maObjectPosition.getY());
+					nYPos = basegfx::fround(maObjectRange.getMinY());
 					std::vector< CellBorder > vCellBorders;
 					for( sal_Int32 nRow = 0; nRow < xRows->getCount(); nRow++ )
 					{

@@ -1094,8 +1094,7 @@ class MSFILTER_DLLPUBLIC EscherGraphicProvider
 		sal_uInt32	GetBlibID( 
             SvStream& rPicOutStream, 
             const ByteString& rGraphicId, 
-            const basegfx::B2DPoint& rObjectPosition, 
-            const basegfx::B2DVector& rObjectScale,
+            const basegfx::B2DRange& rObjectRange,
 			const com::sun::star::awt::Rectangle* pVisArea = NULL, 
             const GraphicAttr* pGrafikAttr = NULL );
 		sal_Bool	HasGraphics() const { return mnBlibEntrys != 0; };
@@ -1157,9 +1156,7 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 {
 		EscherGraphicProvider*	pGraphicProvider;
 		SvStream*				pPicOutStrm;
-        basegfx::B2DPoint*      mpObjectPosition;
-        basegfx::B2DVector*     mpObjectScale;
-
+        basegfx::B2DRange*      mpObjectRange;
 		EscherPropSortStruct*	pSortStruct;
 
 		sal_uInt32				nSortCount;
@@ -1183,8 +1180,8 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 		EscherPropertyContainer(
 			EscherGraphicProvider& rGraphicProvider,	// the PropertyContainer needs to know
 			SvStream* pPicOutStrm,				        // the GraphicProvider to be able to write
-            basegfx::B2DPoint& rObjectPosition,         // FillBitmaps or GraphicObjects.
-            basegfx::B2DVector& rObjectScale);          // under some cirumstances the ShapeBoundRect is adjusted
+            basegfx::B2DRange& rObjectRange);           // FillBitmaps or GraphicObjects.
+                                                        // under some cirumstances the ShapeBoundRect is adjusted
 														// this will happen when rotated GraphicObjects
 														// are saved to PowerPoint
 		~EscherPropertyContainer();
@@ -1311,8 +1308,7 @@ public:
 								/// record data written to rEx.GetStream()
 	virtual	void				WriteData( 
                                     EscherEx& rEx,
-									const basegfx::B2DPoint& rObjectPosition, 
-                                    const basegfx::B2DVector& rObjectScale) = 0;
+                                    const basegfx::B2DRange& rObjectRange) = 0;
 };
 
 
@@ -1345,8 +1341,8 @@ public:
 		EscherExClientRecord_Base* GetClientTextbox() const
 			{ return pClientTextbox; }
 
-		void WriteClientAnchor( EscherEx& rEx, const basegfx::B2DPoint& rObjectPosition, const basegfx::B2DVector& rObjectScale )
-			{ if( pClientAnchor ) 	pClientAnchor->WriteData( rEx, rObjectPosition, rObjectScale ); }
+		void WriteClientAnchor( EscherEx& rEx, const basegfx::B2DRange& rObjectRange )
+			{ if( pClientAnchor ) 	pClientAnchor->WriteData( rEx, rObjectRange ); }
 		void WriteClientData( EscherEx& rEx )
 			{ if( pClientData ) 	pClientData->WriteData( rEx ); }
 		void WriteClientTextbox( EscherEx& rEx )
@@ -1541,28 +1537,22 @@ public:
 		virtual void EndAtom( sal_uInt16 nRecType, int nRecVersion = 0, int nRecInstance = 0 );
 		virtual void AddAtom( sal_uInt32 nAtomSitze, sal_uInt16 nRecType, int nRecVersion = 0, int nRecInstance = 0 );
 		virtual void AddChildAnchor(
-            const basegfx::B2DPoint& rObjectPosition,
-            const basegfx::B2DVector& rObjectScale);
+            const basegfx::B2DRange& rObjectRange);
 		virtual void AddClientAnchor(
-            const basegfx::B2DPoint& rObjectPosition,
-            const basegfx::B2DVector& rObjectScale);
+            const basegfx::B2DRange& rObjectRange);
 
 		virtual sal_uInt32 EnterGroup( 
             const String& rShapeName, 
-            const basegfx::B2DPoint* pObjectPosition = 0,
-            const basegfx::B2DVector* pObjectScale = 0 );
+            const basegfx::B2DRange* pObjectRange = 0);
 		sal_uInt32	EnterGroup( 
-            const basegfx::B2DPoint* pObjectPosition = 0,
-            const basegfx::B2DVector* pObjectScale = 0 );
+            const basegfx::B2DRange* pObjectRange = 0);
 		sal_uInt32	GetGroupLevel() const { return mnGroupLevel; };
 		virtual sal_Bool SetGroupSnapPositionAndScale( 
             sal_uInt32 nGroupLevel, 
-            const basegfx::B2DPoint& rObjectPosition,
-            const basegfx::B2DVector& rObjectScale);
+            const basegfx::B2DRange& rObjectRange);
 		virtual sal_Bool SetGroupLogicPositionAndScale( 
             sal_uInt32 nGroupLevel, 
-            const basegfx::B2DPoint& rObjectPosition,
-            const basegfx::B2DVector& rObjectScale);
+            const basegfx::B2DRange& rObjectRange);
 		virtual void LeaveGroup();
 
 				// ein ESCHER_Sp wird geschrieben ( Ein ESCHER_DgContainer muss dazu geoeffnet sein !!)
@@ -1570,8 +1560,7 @@ public:
 
 		virtual void Commit( 
             EscherPropertyContainer& rProps, 
-            const basegfx::B2DPoint& rObjectPosition,
-            const basegfx::B2DVector& rObjectScale);
+            const basegfx::B2DRange& rObjectRange);
 
 		sal_uInt32	GetColor( const sal_uInt32 nColor, sal_Bool bSwap = sal_True );
 		sal_uInt32	GetColor( const Color& rColor, sal_Bool bSwap = sal_True );
@@ -1594,8 +1583,7 @@ public:
 				/// shape is ignored.
     virtual EscherExHostAppData* StartShape(
                             const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& rShape,
-                            const basegfx::B2DPoint* pObjectPosition,
-                            const basegfx::B2DVector* pObjectScale);
+                            const basegfx::B2DRange* pObjectRange);
 
 				/// Called after a shape is written to inform the application
 				/// of the resulted shape type and ID.

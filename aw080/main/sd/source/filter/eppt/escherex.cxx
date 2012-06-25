@@ -240,8 +240,7 @@ void PptEscherEx::CloseContainer()
 // ---------------------------------------------------------------------------------------------
 
 sal_uInt32 PptEscherEx::EnterGroup( 
-    const basegfx::B2DPoint* pObjectPosition,
-    const basegfx::B2DVector* pObjectScale,
+    const basegfx::B2DRange* pObjectRange,
     SvMemoryStream* pClientData )
 {
 	sal_uInt32 nShapeId = 0;
@@ -251,27 +250,21 @@ sal_uInt32 PptEscherEx::EnterGroup(
 	*/
 	if ( mnGroupLevel < 12 )
 	{
-        basegfx::B2DPoint aObjectPosition(0.0, 0.0);
-        basegfx::B2DVector aObjectScale(1.0, 1.0);
+        basegfx::B2DRange aObjectRange(0.0, 0.0, 1.0, 1.0);
 
-        if(pObjectPosition)
+        if(pObjectRange)
         {
-            aObjectPosition = *pObjectPosition;
-        }
-
-        if(pObjectScale)
-        {
-            aObjectScale = *pObjectScale;
+            aObjectRange = *pObjectRange;
         }
 
 		OpenContainer( ESCHER_SpgrContainer );
 		OpenContainer( ESCHER_SpContainer );
 		AddAtom( 16, ESCHER_Spgr, 1 );
 		PtReplaceOrInsert( ESCHER_Persist_Grouping_Snap | mnGroupLevel, mpOutStrm->Tell() );
-		*mpOutStrm	<< (sal_Int32)basegfx::fround(aObjectPosition.getX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
-					<< (sal_Int32)basegfx::fround(aObjectPosition.getY()) // here minx,y, maxx,y is correct
-					<< (sal_Int32)basegfx::fround(aObjectPosition.getX() + aObjectScale.getX())
-					<< (sal_Int32)basegfx::fround(aObjectPosition.getY() + aObjectScale.getY());
+		*mpOutStrm	<< (sal_Int32)basegfx::fround(aObjectRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
+					<< (sal_Int32)basegfx::fround(aObjectRange.getMinY()) // here minx,y, maxx,y is correct
+					<< (sal_Int32)basegfx::fround(aObjectRange.getMaxX())
+					<< (sal_Int32)basegfx::fround(aObjectRange.getMaxY());
 
         nShapeId = GenerateShapeId();
 		if ( !mnGroupLevel )
@@ -283,19 +276,19 @@ sal_uInt32 PptEscherEx::EnterGroup(
 			{
 				AddAtom( 8, ESCHER_ClientAnchor );
 				PtReplaceOrInsert( ESCHER_Persist_Grouping_Logic | mnGroupLevel, mpOutStrm->Tell() );
-				*mpOutStrm << (sal_Int16)basegfx::fround(aObjectPosition.getY()) // CAUTION! Here, X,Y is exchanged
-						   << (sal_Int16)basegfx::fround(aObjectPosition.getX()) // by PURPOSE, it's not an error (!)
-						   << (sal_Int16)basegfx::fround(aObjectPosition.getX() + aObjectScale.getX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
-						   << (sal_Int16)basegfx::fround(aObjectPosition.getY() + aObjectScale.getY());
+				*mpOutStrm << (sal_Int16)basegfx::fround(aObjectRange.getMinY()) // CAUTION! Here, X,Y is exchanged
+						   << (sal_Int16)basegfx::fround(aObjectRange.getMinX()) // by PURPOSE, it's not an error (!)
+						   << (sal_Int16)basegfx::fround(aObjectRange.getMaxX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
+						   << (sal_Int16)basegfx::fround(aObjectRange.getMaxY());
 			}
 			else
 			{
 				AddAtom( 16, ESCHER_ChildAnchor );
 				PtReplaceOrInsert( ESCHER_Persist_Grouping_Snap | mnGroupLevel, mpOutStrm->Tell() );
-				*mpOutStrm << (sal_Int32)basegfx::fround(aObjectPosition.getX()) // here minx,y, maxx,y is correct
-						   << (sal_Int32)basegfx::fround(aObjectPosition.getY())
-						   << (sal_Int32)basegfx::fround(aObjectPosition.getX() + aObjectScale.getX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
-						   << (sal_Int32)basegfx::fround(aObjectPosition.getY() + aObjectScale.getY());
+				*mpOutStrm << (sal_Int32)basegfx::fround(aObjectRange.getMinX()) // here minx,y, maxx,y is correct
+						   << (sal_Int32)basegfx::fround(aObjectRange.getMinY())
+						   << (sal_Int32)basegfx::fround(aObjectRange.getMaxX()) // TTTT: Check for mirrored if Min/Max needs to be exchanged
+						   << (sal_Int32)basegfx::fround(aObjectRange.getMaxY());
 			}
 		}
 		if ( pClientData )
