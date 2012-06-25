@@ -2762,30 +2762,52 @@ bool SwWW8ImplReader::ReadChar(long nPosCp, long nCpOfs)
             graphic preview of an associated ole2 object (or a simple
             graphic of course)
             */
-            if (!IsInlineEscherHack())
-            {
-                SwFrmFmt *pResult = 0;
-                if (bObj)
-                    pResult = ImportOle();
-                else if (bSpec)
-                    pResult = ImportGraf();
+			//normally in the canvas field, the code is 0x8 0x1.
+			//in a special case, the code is 0x1 0x1, which yields a simple picture
+			{
+				bool bReadObj = IsInlineEscherHack();
+				if( bReadObj )
+				{
+					long nCurPos = pStrm->Tell();
+					sal_uInt8   nByteCode;
+					sal_uInt16 nWordCode;
 
-                //#102160# If we have a bad 0x1 insert a space instead.
-                if (!pResult)
-                {
-                    cInsert = ' ';
-                    ASSERT(!bObj && !bEmbeddObj && !nObjLocFc,
-                        "WW8: Please report this document, it may have a "
-                        "missing graphic");
-                }
-                else
-                {
-                    // reset the flags.
-                    bObj = bEmbeddObj = false;
-                    nObjLocFc = 0;
-                }
-            }
-            break;
+					if( bIsUnicode )
+						*pStrm >> nWordCode;
+					else
+					{
+						*pStrm >> nByteCode;
+						nWordCode = nByteCode;
+					}
+					if( nWordCode == 0x1 )
+						bReadObj = false;
+					pStrm->Seek( nCurPos );	
+				}
+				if( !bReadObj )
+				{
+					SwFrmFmt *pResult = 0;
+					if (bObj)
+						pResult = ImportOle();
+					else if (bSpec)
+						pResult = ImportGraf();
+
+					//#102160# If we have a bad 0x1 insert a space instead.
+					if (!pResult)
+					{
+						cInsert = ' ';
+						ASSERT(!bObj && !bEmbeddObj && !nObjLocFc,
+							"WW8: Please report this document, it may have a "
+							"missing graphic");
+					}
+					else
+					{
+						// reset the flags.
+						bObj = bEmbeddObj = false;
+						nObjLocFc = 0;
+					}
+				}
+			}
+			break;
         case 0x8:
             if( !bObj )
                 Read_GrafLayer( nPosCp );
