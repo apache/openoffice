@@ -1205,8 +1205,7 @@ void SdDrawDocument::RenameLayoutTemplate(const String& rOldLayoutName, const St
 	// erase everything after '~LT~'
 	aOldName.Erase(nPos + sizeof(SD_LT_SEPARATOR) - 1 );
 	sal_uInt16 nLen = aOldName.Len();
-
-	List aReplList;
+    std::vector< StyleReplaceData* > aRememberedStyleReplaceData; // #120074#
 	SfxStyleSheetIterator aIter(mxStyleSheetPool.get(), SD_STYLE_FAMILY_MASTERPAGE);
 	SfxStyleSheetBase* pSheet = aIter.First();
 
@@ -1225,7 +1224,7 @@ void SdDrawDocument::RenameLayoutTemplate(const String& rOldLayoutName, const St
 			pReplData->nNewFamily = pSheet->GetFamily();
 			pReplData->aName	  = pSheet->GetName();
 			pReplData->aNewName   = aSheetName;
-			aReplList.Insert(pReplData, LIST_APPEND);
+			aRememberedStyleReplaceData.push_back(pReplData);
 
 			pSheet->SetName(aSheetName);
 		}
@@ -1267,13 +1266,11 @@ void SdDrawDocument::RenameLayoutTemplate(const String& rOldLayoutName, const St
 
 							if (pOPO)
 							{
-								StyleReplaceData* pReplData = (StyleReplaceData*) aReplList.First();
-
-								while( pReplData )
-								{
-									pOPO->ChangeStyleSheets( pReplData->aName, pReplData->nFamily, pReplData->aNewName, pReplData->nNewFamily );
-									pReplData = (StyleReplaceData*) aReplList.Next();
-								}
+                                for(std::vector< StyleReplaceData* >::const_iterator aData(aRememberedStyleReplaceData.begin());
+                                    aData != aRememberedStyleReplaceData.end(); aData++)
+                                {
+									pOPO->ChangeStyleSheets((*aData)->aName, (*aData)->nFamily, (*aData)->aNewName, (*aData)->nNewFamily);
+                                }
 							}
 						}
 						break;
@@ -1315,13 +1312,11 @@ void SdDrawDocument::RenameLayoutTemplate(const String& rOldLayoutName, const St
 
 							if (pOPO)
 							{
-								StyleReplaceData* pReplData = (StyleReplaceData*) aReplList.First();
-
-								while( pReplData )
-								{
-									pOPO->ChangeStyleSheets( pReplData->aName, pReplData->nFamily, pReplData->aNewName, pReplData->nNewFamily );
-									pReplData = (StyleReplaceData*) aReplList.Next();
-								}
+                                for(std::vector< StyleReplaceData* >::const_iterator aData(aRememberedStyleReplaceData.begin());
+                                    aData != aRememberedStyleReplaceData.end(); aData++)
+                                {
+									pOPO->ChangeStyleSheets((*aData)->aName, (*aData)->nFamily, (*aData)->aNewName, (*aData)->nNewFamily);
+                                }
 							}
 						}
 						break;
@@ -1333,6 +1328,13 @@ void SdDrawDocument::RenameLayoutTemplate(const String& rOldLayoutName, const St
 			}
 		}
 	}
+
+    // #120074# was not freed in older versoins, memory leak
+    while(!aRememberedStyleReplaceData.empty())
+    {
+        delete aRememberedStyleReplaceData[aRememberedStyleReplaceData.size() - 1];
+        aRememberedStyleReplaceData.pop_back();
+    }
 }
 
 /*************************************************************************
