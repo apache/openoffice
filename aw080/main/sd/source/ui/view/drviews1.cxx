@@ -262,11 +262,7 @@ void DrawViewShell::SelectionHasChanged (void)
 				RTL_TEXTENCODING_UTF8 )).getStr() );
 	}
 
-	if( HasCurrentFunction() )
-	{
-		GetCurrentFunction()->SelectionHasChanged();
-	}
-	else
+	if( !HasCurrentFunction() )
 	{
         GetViewShellBase().GetToolBarManager()->SelectionHasChanged(*this,*mpDrawView);
 	}

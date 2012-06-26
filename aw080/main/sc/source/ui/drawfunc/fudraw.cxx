@@ -730,11 +730,11 @@ sal_Bool __EXPORT FuDraw::KeyInput(const KeyEvent& rKEvt)
 	return (bReturn);
 }
 
-// #97016# II
 void FuDraw::SelectionHasChanged()
 {
-	const SdrHdlList& rHdlList = pView->GetHdlList();
-	((SdrHdlList&)rHdlList).ResetFocusHdl();
+    // Not needed TTTT
+	//const SdrHdlList& rHdlList = pView->GetHdlList();
+	//((SdrHdlList&)rHdlList).ResetFocusHdl();
 }
 
 /*************************************************************************

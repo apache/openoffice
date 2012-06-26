@@ -968,11 +968,11 @@ bool FuPoor::MouseMove(const MouseEvent& )
 	return false;
 }
 
-// #97016# II
 void FuPoor::SelectionHasChanged()
 {
-	const SdrHdlList& rHdlList = mpView->GetHdlList();
-	((SdrHdlList&)rHdlList).ResetFocusHdl();
+    // Not needed TTTT
+	// const SdrHdlList& rHdlList = mpView->GetHdlList();
+	// ((SdrHdlList&)rHdlList).ResetFocusHdl();
 }
 
 /*************************************************************************

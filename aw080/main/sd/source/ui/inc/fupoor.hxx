@@ -93,8 +93,6 @@ public:
 	virtual void ScrollEnd() {} 	// ForceScroll aufgerufen
 
 	void SetWindow(::sd::Window* pWin) { mpWindow = pWin; }
-
-	// #97016# II
 	virtual void SelectionHasChanged();
 
 	sal_uInt16	GetSlotID() const { return( nSlotId ); }
