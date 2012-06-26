@@ -31,6 +31,13 @@ TARGET=so_serf
 
 # --- Files --------------------------------------------------------
 
+.IF "$(SYSTEM_SERF)"=="YES"
+
+all:
+	@echo "Using system serf.  Does not have to be built."
+
+.ELSE
+
 # Assemble the full version number from the parts defined in serf_version.mk
 LIBSERFVERSION=$(SERF_MAJOR).$(SERF_MINOR).$(SERF_MICRO)
 
@@ -117,3 +124,5 @@ OUT2LIB=.libs/libserf-1.so*
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
+
+.ENDIF
