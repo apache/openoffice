@@ -27,7 +27,7 @@ TARGET=aprutil
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
-.INCLUDE :      aprutil_version.mk
+.INCLUDE :	aprutil_version.mk
 
 # --- Files --------------------------------------------------------
 
