@@ -131,44 +131,53 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 		run_mozilla "$MAILER" "$COMMAND"
 		;;
 		
-	kmail)
-	
-		while [ "$1" != "" ]; do
-			case $1 in
-				--to)
-					TO="${TO:-}${TO:+,}$2"
-					shift
-					;;
-				--cc)
-					CC="${CC:-}${CC:+,}$2"
-					shift
-					;;
-				--bcc)
-					BCC="${BCC:-}${BCC:+,}$2"
-					shift
-					;;
-				--subject)
-					SUBJECT="$2"
-					shift
-					;;
-				--body)
-					BODY="$2"
-					shift
-					;;
-				--attach)
-					ATTACH="$2"
-					shift
-					;;
-				*)
-					;;
-			esac
-			shift;
-		done
-		
-		${MAILER} --composer ${CC:+--cc} ${CC:+"${CC}"} ${BCC:+--bcc} ${BCC:+"${BCC}"} \
-			${SUBJECT:+--subject} ${SUBJECT:+"${SUBJECT}"} ${BODY:+--body} ${BODY:+"${BODY}"} \
-			${ATTACH:+--attach} ${ATTACH:+"${ATTACH}"} ${TO:+"${TO}"}
-		;;
+    kmail)
+
+        while [ "$1" != "" ]; do
+            case $1 in
+                --to)
+                    TO="${TO:-}${TO:+,}$2"
+                    shift
+                    ;;
+                --cc)
+                    CC="${CC:-}${CC:+,}$2"
+                    shift
+                    ;;
+                --bcc)
+                    BCC="${BCC:-}${BCC:+,}$2"
+                    shift
+                    ;;
+                --subject)
+                    SUBJECT="$2"
+                    shift
+                    ;;
+                --body)
+                    BODY="$2"
+                    shift
+                    ;;
+                --from)
+                    FROM="$2"
+                    shift
+                    ;;
+                --attach)
+                    ATTACH="${ATTACH:-}${ATTACH:+ }--attach "`echo "file://$2" | ${URI_ENCODE}`
+                    shift
+                    ;;
+                *)
+                    ;;
+            esac
+            shift;
+        done
+
+        ${MAILER} --composer \
+            ${CC:+--cc} ${CC:+"${CC}"}  \
+            ${BCC:+--bcc} ${BCC:+"${BCC}"} \
+            ${SUBJECT:+--subject} ${SUBJECT:+"${SUBJECT}"}  \
+            ${BODY:+--body} ${BODY:+"${BODY}"} \
+            ${FROM:+--header} ${FROM:+"From: ${FROM}"} \
+            ${ATTACH:+${ATTACH}}  \
+            ${TO:+"${TO}"}
+        ;;
 		
 	mutt)
 	
