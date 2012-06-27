@@ -236,7 +236,7 @@ XubString SdrUndoGroup::GetSdrRepeatComment(SdrView& /*rView*/) const
 {
 	XubString aRet(maComment);
 	const sal_Char aSearchText[] = "%1";
-	const String aSearchString(aSearchText, sizeof(aSearchText-1));
+	const String aSearchString(aSearchText, sizeof(aSearchText - 1));
 
 	aRet.SearchAndReplace(aSearchString, ImpGetResStr(STR_ObjNameSingulPlural));
 
@@ -255,7 +255,7 @@ void SdrUndoObj::GetDescriptionStringForObject(const SdrObject& _rForObject, sal
 {
 	rStr = ImpGetResStr(nStrCacheID);
 	const sal_Char aSearchText[] = "%1";
-	const String aSearchString(aSearchText, sizeof(aSearchText-1));
+	const String aSearchString(aSearchText, sizeof(aSearchText - 1));
 	const xub_StrLen nPos(rStr.Search(aSearchString));
 
 	if(STRING_NOTFOUND != nPos)
@@ -293,13 +293,31 @@ void SdrUndoObj::ImpShowPageOfThisObject()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+void SdrUndoAttrObj::ensureStyleSheetInStyleSheetPool(SfxStyleSheetBasePool& rStyleSheetPool, SfxStyleSheet& rSheet)
+{
+    SfxStyleSheetBase* pThere = rStyleSheetPool.Find(rSheet.GetName(), rSheet.GetFamily());
+
+    if(!pThere)
+    {
+        // re-insert remembered style which was removed in the meantime. To do this
+        // without assertion, do it without parent and set parent after insertion
+        const UniString aParent(rSheet.GetParent());
+        
+        rSheet.SetParent(UniString());
+        rStyleSheetPool.Insert(&rSheet);
+        rSheet.SetParent(aParent);
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 SdrUndoAttrObj::SdrUndoAttrObj(SdrObject& rNewObj, bool bStyleSheet1, bool bSaveText)
 :	SdrUndoObj(rNewObj),
 	mpUndoItemSet(0),
 	mpRedoItemSet(0),
 	mpRepeatItemSet(0),
-	mpUndoStyleSheet(0),
-	mpRedoStyleSheet(0),
+    mxUndoStyleSheet(),
+    mxRedoStyleSheet(),
 	mpTextUndoOPO(0),
 	mpTextRedoOPO(0),
 	mpUndoGroup(0),
@@ -332,7 +350,7 @@ SdrUndoAttrObj::SdrUndoAttrObj(SdrObject& rNewObj, bool bStyleSheet1, bool bSave
 
 		if(mbStyleSheet)
 		{
-			mpUndoStyleSheet = mrSdrObject.GetStyleSheet();
+			mxUndoStyleSheet = mrSdrObject.GetStyleSheet();
 		}
 
 		if(bSaveText)
@@ -413,7 +431,7 @@ void SdrUndoAttrObj::Undo()
 
 			if(mbStyleSheet)
 			{
-				mpRedoStyleSheet=mrSdrObject.GetStyleSheet();
+				mxRedoStyleSheet = mrSdrObject.GetStyleSheet();
 			}
 
 			if(mpTextUndoOPO)
@@ -430,8 +448,18 @@ void SdrUndoAttrObj::Undo()
 
 		if(mbStyleSheet)
 		{
-			mpRedoStyleSheet = mrSdrObject.GetStyleSheet();
-			mrSdrObject.SetStyleSheet(mpUndoStyleSheet, true);
+			mxRedoStyleSheet = mrSdrObject.GetStyleSheet();
+            SfxStyleSheet* pSheet = dynamic_cast< SfxStyleSheet* >(mxUndoStyleSheet.get());
+
+            if(pSheet && mrSdrObject.getSdrModelFromSdrObject().GetStyleSheetPool())
+            {
+                ensureStyleSheetInStyleSheetPool(*mrSdrObject.getSdrModelFromSdrObject().GetStyleSheetPool(), *pSheet);
+    			mrSdrObject.SetStyleSheet(pSheet, true);
+            }
+            else
+            {
+                OSL_ENSURE(false, "OOps, something went wrong in SdrUndoAttrObj (!)");
+            }
 		}
 
 		sdr::properties::ItemChangeBroadcaster aItemChange(mrSdrObject);
@@ -502,8 +530,18 @@ void SdrUndoAttrObj::Redo()
 	{
 		if(mbStyleSheet)
 		{
-			mpUndoStyleSheet = mrSdrObject.GetStyleSheet();
-			mrSdrObject.SetStyleSheet(mpRedoStyleSheet, true);
+			mxUndoStyleSheet = mrSdrObject.GetStyleSheet();
+            SfxStyleSheet* pSheet = dynamic_cast< SfxStyleSheet* >(mxRedoStyleSheet.get());
+
+            if(pSheet && mrSdrObject.getSdrModelFromSdrObject().GetStyleSheetPool())
+            {
+                ensureStyleSheetInStyleSheetPool(*mrSdrObject.getSdrModelFromSdrObject().GetStyleSheetPool(), *pSheet);
+			    mrSdrObject.SetStyleSheet(pSheet, true);
+            }
+            else
+            {
+                OSL_ENSURE(false, "OOps, something went wrong in SdrUndoAttrObj (!)");
+            }
 		}
 
 		sdr::properties::ItemChangeBroadcaster aItemChange(mrSdrObject);

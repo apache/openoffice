@@ -260,21 +260,21 @@ public:
 class SVX_DLLPUBLIC SdrObjTransformInfoRec
 {
 public:
-	bool        bSelectAllowed : 1;     // false=Obj kann nicht selektiert werden
-	bool        bMoveAllowed : 1;       // false=Obj kann nicht verschoben werden
-	bool        bResizeFreeAllowed : 1; // false=Obj kann nicht frei resized werden
-	bool        bResizePropAllowed : 1; // false=Obj kann nichtmal proportional resized werden
-	bool        bRotateFreeAllowed : 1; // false=Obj kann nicht frei gedreht werden
-	bool        bRotate90Allowed : 1;   // false=Obj kann nichtmal im 90deg Raster gedreht werden
-	bool        bMirrorFreeAllowed : 1; // false=Obj kann nicht frei gespiegelt werden
-	bool        bMirror45Allowed : 1;   // false=Obj kann nichtmal ueber Achse im 45deg Raster gespiegelt werden
+	bool        mbSelectAllowed : 1;     // false=Obj kann nicht selektiert werden
+	bool        mbMoveAllowed : 1;       // false=Obj kann nicht verschoben werden
+	bool        mbResizeFreeAllowed : 1; // false=Obj kann nicht frei resized werden
+	bool        mbResizePropAllowed : 1; // false=Obj kann nichtmal proportional resized werden
+	bool        mbRotateFreeAllowed : 1; // false=Obj kann nicht frei gedreht werden
+	bool        mbRotate90Allowed : 1;   // false=Obj kann nichtmal im 90deg Raster gedreht werden
+	bool        mbMirrorFreeAllowed : 1; // false=Obj kann nicht frei gespiegelt werden
+	bool        mbMirror45Allowed : 1;   // false=Obj kann nichtmal ueber Achse im 45deg Raster gespiegelt werden
 	bool        mbMirror90Allowed : 1;   // false=Obj kann ebenfalls nicht ueber Achse im 90deg Raster gespiegelt werden
 	bool        mbTransparenceAllowed : 1; // false=Obj does not have an interactive transparence control
 	bool        mbGradientAllowed : 1; // false=Obj dooes not have an interactive gradient control
 	bool        mbShearAllowed : 1;      // false=Obj kann nicht verzerrt werden
 	bool        mbEdgeRadiusAllowed : 1;
-	bool        bNoOrthoDesired : 1;    // true bei Rect; ... false bei BMP,MTF;
-	bool        bNoContortion : 1;      // false=Kein verzerren (bei Crook) moeglich (nur true bei PathObj und Gruppierten PathObjs)
+	bool        mbNoOrthoDesired : 1;    // true bei Rect; ... false bei BMP,MTF;
+	bool        mbNoContortion : 1;      // false=Kein verzerren (bei Crook) moeglich (nur true bei PathObj und Gruppierten PathObjs)
 	bool        mbCanConvToPath : 1;     // false=Keine Konvertierung in PathObj moeglich
 	bool        mbCanConvToPoly : 1;     // false=Keine Konvertierung in PolyObj moeglich
 	bool        mbCanConvToContour : 1;     // false=no conversion down to whole contour possible

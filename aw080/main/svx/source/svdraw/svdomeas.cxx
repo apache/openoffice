@@ -260,21 +260,21 @@ bool SdrMeasureObj::DoesSupportTextIndentingOnLineWidthChange() const
 
 void SdrMeasureObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bSelectAllowed = true;
-	rInfo.bMoveAllowed = true;
-	rInfo.bResizeFreeAllowed = true;
-	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = true;
-	rInfo.bRotate90Allowed = true;
-	rInfo.bMirrorFreeAllowed = true;
-	rInfo.bMirror45Allowed = true;
+	rInfo.mbSelectAllowed = true;
+	rInfo.mbMoveAllowed = true;
+	rInfo.mbResizeFreeAllowed = true;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = true;
+	rInfo.mbRotate90Allowed = true;
+	rInfo.mbMirrorFreeAllowed = true;
+	rInfo.mbMirror45Allowed = true;
 	rInfo.mbMirror90Allowed = true;
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
 	rInfo.mbShearAllowed = true;
 	rInfo.mbEdgeRadiusAllowed = false;
-	rInfo.bNoOrthoDesired = true;
-	rInfo.bNoContortion = false;
+	rInfo.mbNoOrthoDesired = true;
+	rInfo.mbNoContortion = false;
 	rInfo.mbCanConvToPath = false;
 	rInfo.mbCanConvToPoly = true;
 	rInfo.mbCanConvToPathLineToArea = false;

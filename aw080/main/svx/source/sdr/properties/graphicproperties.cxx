@@ -92,7 +92,7 @@ namespace sdr
 			RectangleProperties::ItemSetChanged(rSet);
 		}
 
-		void GraphicProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
+        void GraphicProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
 		{
 			SdrGrafObj& rObj = (SdrGrafObj&)GetSdrObject();
 
@@ -121,10 +121,6 @@ namespace sdr
 			mpItemSet->Put( SdrGrafInvertItem( sal_False ) );
 			mpItemSet->Put( SdrGrafModeItem( GRAPHICDRAWMODE_STANDARD ) );
 			mpItemSet->Put( SdrGrafCropItem( 0, 0, 0, 0 ) );
-
-			// #i25616#
-			mpItemSet->Put( XFillStyleItem(XFILL_NONE) );
-			mpItemSet->Put( XLineStyleItem(XLINE_NONE) );
 		}
 	} // end of namespace properties
 } // end of namespace sdr

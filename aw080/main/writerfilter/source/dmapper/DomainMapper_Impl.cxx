@@ -2014,7 +2014,7 @@ bool lcl_FindInCommand(
 //                    {
                             //todo: entries can only be included completely
 //                    }
-//                  \n Builds a table of contents or a range of entries, sucah as “1-9”, in a table of contents without page numbers
+//                  \n Builds a table of contents or a range of entries, sucah as ?-9? in a table of contents without page numbers
 //                    if( lcl_FindInCommand( rCommand, 'n', sValue ))
 //                    {
                         //todo: what does the description mean?
@@ -2721,7 +2721,7 @@ void DomainMapper_Impl::handleToc
 //                    {
                             //todo: entries can only be included completely
 //                    }
-//                  \n Builds a table of contents or a range of entries, sucah as “1-9”, in a table of contents without page numbers
+//                  \n Builds a table of contents or a range of entries, sucah as ?-9? in a table of contents without page numbers
 //                    if( lcl_FindInCommand( pContext->GetCommand(), 'n', sValue ))
 //                    {
                         //todo: what does the description mean?
@@ -2731,9 +2731,14 @@ void DomainMapper_Impl::handleToc
     {
         bFromOutline = true;
         UniString sParam( sValue );
-        xub_StrLen nIndex = 0;
-        sParam.GetToken( 0, '-', nIndex );
-        nMaxLevel = sal_Int16( sParam.Copy( nIndex ).ToInt32( ) );
+        if (!sParam.Len())
+            nMaxLevel = WW_OUTLINE_MAX;
+        else
+        {
+            xub_StrLen nIndex = 0;
+            sParam.GetToken( 0, '-', nIndex );
+            nMaxLevel = sal_Int16( sParam.Copy( nIndex ).ToInt32( ) );
+        }
     }
 //                  \p Defines the separator between the table entry and its page number
     if( lcl_FindInCommand( pContext->GetCommand(), 'p', sValue ))
@@ -3179,7 +3184,33 @@ void DomainMapper_Impl::CloseFieldCommand()
                     break;
                     case FIELD_SECTION      : break;
                     case FIELD_SECTIONPAGES : break;
-                    case FIELD_SEQ          : break;
+                    case FIELD_SEQ          : 
+					{
+                        // command looks like: " SEQ Table \* ARABIC "
+                        ::rtl::OUString sCmd(pContext->GetCommand());
+                        // find the sequence name, e.g. "SEQ"
+                        ::rtl::OUString sSeqName = lcl_FindQuotedText(sCmd, "SEQ ", '\\');
+                        sSeqName = sSeqName.trim();
+
+                        // create a sequence field master using the sequence name
+                        uno::Reference< beans::XPropertySet > xMaster = FindOrCreateFieldMaster(
+                                    "com.sun.star.text.FieldMaster.SetExpression",
+                                    sSeqName);
+
+                        xMaster->setPropertyValue( 
+                            rPropNameSupplier.GetName(PROP_SUB_TYPE),
+                            uno::makeAny(text::SetVariableType::SEQUENCE));
+
+                        // apply the numbering type
+                        xFieldProperties->setPropertyValue(
+                            rPropNameSupplier.GetName(PROP_NUMBERING_TYPE),
+                            uno::makeAny( lcl_ParseNumberingType(pContext->GetCommand()) ));
+                        
+                        // attach the master to the field
+                        uno::Reference< text::XDependentTextField > xDependentField( xFieldInterface, uno::UNO_QUERY_THROW );
+                        xDependentField->attachTextFieldMaster( xMaster );
+                    }
+                    break;
                     case FIELD_SET          : break;
                     case FIELD_SKIPIF       : break;
                     case FIELD_STYLEREF     : break;

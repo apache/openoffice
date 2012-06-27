@@ -1134,6 +1134,18 @@ LanguageType SvNumberformat::ImpGetLanguageType( const String& rString,
         LANGUAGE_DONTKNOW;
 }
 
+sal_Bool IsSingleSymbol(String& rString, xub_StrLen nPos){
+	sal_Bool ret = sal_False;
+	while(nPos > 0){
+		if(rString.GetChar(nPos) == '*' || rString.GetChar(nPos) == '\\' || rString.GetChar(nPos) == '_'){
+			ret = !ret;
+			nPos--;
+		}
+		else
+			return ret;
+	}
+	return ret;
+}
 
 short SvNumberformat::ImpNextSymbol(String& rString,
                                  xub_StrLen& nPos,
@@ -1285,8 +1297,10 @@ short SvNumberformat::ImpNextSymbol(String& rString,
             break;
             case SsGetString:
             {
-                if (cToken == ';')
+                if (cToken == ';' && (nPos>=2) &&!IsSingleSymbol(rString, nPos-2))
+				{
                     eState = SsStop;
+				}
                 else
                     sSymbol += cToken;
             }
@@ -2129,9 +2143,12 @@ sal_Bool SvNumberformat::GetOutputString(double fNumber,
             else
                 nIx = 2;
         }
-        if (nIx == 1 && fNumber < 0.0 &&        // negatives Format
-                IsNegativeRealNegative() )      // ohne Vorzeichen
+        if (nIx == 1 &&          // negatives Format
+                IsNegativeRealNegative() && fNumber < 0.0)      // ohne Vorzeichen
             fNumber = -fNumber;                 // Vorzeichen eliminieren
+		if(nIx == 0 && 
+				IsNegativeRealNegative2() && fNumber < 0.0)
+			fNumber = -fNumber;
         *ppColor = NumFor[nIx].GetColor();
         const ImpSvNumberformatInfo& rInfo = NumFor[nIx].Info();
         const sal_uInt16 nAnz = NumFor[nIx].GetnAnz();

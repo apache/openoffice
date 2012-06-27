@@ -79,6 +79,17 @@ void ScDocument::BeginDrawUndo()
 		pDrawLayer->BeginCalcUndo();
 }
 
+sal_Bool ScDocument::IsDrawRecording() const
+{
+	return pDrawLayer ? pDrawLayer->IsRecording() : sal_False;
+}
+
+void ScDocument::EndDrawUndo()
+{
+	if( pDrawLayer )
+		delete pDrawLayer->GetCalcUndo();
+}
+
 XColorTable* ScDocument::GetColorTable()
 {
 	if (pDrawLayer)

@@ -674,7 +674,7 @@ void SdrEditView::CheckPossibilities()
 				const bool bMovPrt(pObj->IsMoveProtect());
 				const bool bSizPrt(pObj->IsResizeProtect());
 				
-				if(!bMovPrt && aInfo.bMoveAllowed) 
+				if(!bMovPrt && aInfo.mbMoveAllowed) 
 				{
 					nMovableCount++; // Menge der MovableObjs zaehlen
 				}
@@ -696,37 +696,37 @@ void SdrEditView::CheckPossibilities()
 				}
 
 				// Wenn einer was nicht kann, duerfen's alle nicht
-				if(!aInfo.bMoveAllowed) 
+				if(!aInfo.mbMoveAllowed) 
 				{
 					mbMoveAllowedOnSelection = false;
 				}
 
-				if(!aInfo.bResizeFreeAllowed) 
+				if(!aInfo.mbResizeFreeAllowed) 
 				{
 					mbResizeFreeAllowed = false;
 				}
 
-				if(!aInfo.bResizePropAllowed) 
+				if(!aInfo.mbResizePropAllowed) 
 				{
 					mbResizePropAllowed = false;
 				}
 
-				if(!aInfo.bRotateFreeAllowed) 
+				if(!aInfo.mbRotateFreeAllowed) 
 				{
 					mbRotateFreeAllowed = false;
 				}
 
-				if(!aInfo.bRotate90Allowed) 
+				if(!aInfo.mbRotate90Allowed) 
 				{
 					mbRotate90Allowed = false;
 				}
 
-				if(!aInfo.bMirrorFreeAllowed) 
+				if(!aInfo.mbMirrorFreeAllowed) 
 				{
 					mbMirrorFreeAllowed = false;
 				}
 
-				if(!aInfo.bMirror45Allowed) 
+				if(!aInfo.mbMirror45Allowed) 
 				{
 					mbMirror45Allowed = false;
 				}
@@ -746,7 +746,7 @@ void SdrEditView::CheckPossibilities()
 					mbEdgeRadiusAllowed = true;
 				}
 				
-				if(aInfo.bNoContortion) 
+				if(aInfo.mbNoContortion) 
 				{
 					mbContortionPossible = false;
 				}
@@ -755,7 +755,7 @@ void SdrEditView::CheckPossibilities()
 				// Movable und Rotatable sein, ausser maximal 1
 				if(!mbMoreThanOneNoMovRot) 
 				{
-					if(!aInfo.bMoveAllowed || !aInfo.bResizeFreeAllowed) 
+					if(!aInfo.mbMoveAllowed || !aInfo.mbResizeFreeAllowed) 
 					{
 						mbMoreThanOneNoMovRot = bNoMovRotFound;
 						bNoMovRotFound = true;
@@ -813,7 +813,7 @@ void SdrEditView::CheckPossibilities()
 				}
 
 				// OrthoDesiredOnMarked checken
-				if(!mbOrthoDesiredOnMarked && !aInfo.bNoOrthoDesired) 
+				if(!mbOrthoDesiredOnMarked && !aInfo.mbNoOrthoDesired) 
 				{
 					mbOrthoDesiredOnMarked = true;
 				}

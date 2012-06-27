@@ -250,18 +250,8 @@ bool SvxOle2Shape::getPropertyValueImpl( const ::rtl::OUString& rName, const Sfx
 				    }
 				    if ( !bIsWMF )
 				    {
-					    GDIMetaFile aMtf;
-					    if ( pGraphic->GetType() != GRAPHIC_BITMAP )
-						    aMtf = pObj->GetGraphic()->GetGDIMetaFile();
-					    else
-					    {
-						    VirtualDevice aVirDev;
-						    aMtf.Record( &aVirDev );
-						    pGraphic->Draw( &aVirDev, Point(),  pGraphic->GetPrefSize() );
-						    aMtf.Stop();
-						    aMtf.SetPrefSize( pGraphic->GetPrefSize() );
-						    aMtf.SetPrefMapMode( pGraphic->GetPrefMapMode() );
-					    }
+                        // #119735# just use GetGDIMetaFile, it will create a bufferd version of contained bitmap now automatically
+					    GDIMetaFile aMtf(pObj->GetGraphic()->GetGDIMetaFile());
 					    SvMemoryStream aDestStrm( 65535, 65535 );
 					    ConvertGDIMetaFileToWMF( aMtf, aDestStrm, NULL, sal_False );
                         const uno::Sequence<sal_Int8> aSeq(
@@ -420,7 +410,7 @@ sal_Bool SvxOle2Shape::createObject( const SvGlobalName &aClassName )
     ::comphelper::IEmbeddedHelper*     pPersist = mpModel->GetPersist();
     ::rtl::OUString              aPersistName;
     OUString            aTmpStr;
-	if( getPropertyValue( OUString::createFromAscii( UNO_NAME_OLE2_PERSISTNAME ) ) >>= aTmpStr )
+	if( SvxShape::getPropertyValue( OUString::createFromAscii( UNO_NAME_OLE2_PERSISTNAME ) ) >>= aTmpStr )
         aPersistName = aTmpStr;
 
     //TODO/LATER: how to cope with creation failure?!
@@ -451,7 +441,7 @@ sal_Bool SvxOle2Shape::createObject( const SvGlobalName &aClassName )
         }
 
 		// connect the object after the visual area is set
-        setPropertyValue( OUString::createFromAscii( UNO_NAME_OLE2_PERSISTNAME ), Any( aTmpStr = aPersistName ) );
+        SvxShape::setPropertyValue( OUString::createFromAscii( UNO_NAME_OLE2_PERSISTNAME ), Any( aTmpStr = aPersistName ) );
 
 		// the object is inserted during setting of PersistName property usually
 		if( pOle2Obj->IsEmpty() )
@@ -514,7 +504,7 @@ sal_Bool SvxOle2Shape::createLink( const ::rtl::OUString& aLinkURL )
         }
 
 		// connect the object after the visual area is set
-        setPropertyValue( OUString::createFromAscii( UNO_NAME_OLE2_PERSISTNAME ), uno::makeAny( aPersistName ) );
+        SvxShape::setPropertyValue( OUString::createFromAscii( UNO_NAME_OLE2_PERSISTNAME ), uno::makeAny( aPersistName ) );
 
 		// the object is inserted during setting of PersistName property usually
 		if ( pOle2Obj->IsEmpty() )

@@ -263,7 +263,8 @@ public:
 	virtual bool MovCreate(SdrDragStat& rStat);
 	virtual bool EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd);
 	virtual bool BckCreate(SdrDragStat& rStat);
-	virtual void BrkCreate(SdrDragStat& rStat);
+
+    virtual void BrkCreate(SdrDragStat& rStat);
 	virtual basegfx::B2DPolyPolygon TakeCreatePoly(const SdrDragStat& rDrag) const;
 	virtual Pointer GetCreatePointer(const SdrView& rSdrView) const;
 	virtual SdrObject* DoConvertToPolygonObject(bool bBezier, bool bAddText) const;

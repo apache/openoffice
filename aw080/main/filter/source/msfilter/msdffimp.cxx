@@ -1975,8 +1975,8 @@ void DffPropertyReader::ApplyCustomShapeGeometryAttributes( SvStream& rIn, SfxIt
 		// "ViewPoint" in 1/100mm
 		if ( IsProperty( DFF_Prop_c3DXViewpoint ) || IsProperty( DFF_Prop_c3DYViewpoint ) || IsProperty( DFF_Prop_c3DZViewpoint ) )
 		{
-			double fViewX = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DXViewpoint, 1249920 )) / 360.0;
-			double fViewY = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DYViewpoint, (sal_uInt32)-1249920 ))/ 360.0;
+			double fViewX = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DXViewpoint, 1250000 )) / 360.0;
+			double fViewY = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DYViewpoint, (sal_uInt32)-1250000 ))/ 360.0;
 			double fViewZ = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DZViewpoint, 9000000 )) / 360.0;
 			::com::sun::star::drawing::Position3D aExtrusionViewPoint( fViewX, fViewY, fViewZ );
 			const rtl::OUString	sExtrusionViewPoint( RTL_CONSTASCII_USTRINGPARAM ( "ViewPoint" ) );
@@ -1988,8 +1988,8 @@ void DffPropertyReader::ApplyCustomShapeGeometryAttributes( SvStream& rIn, SfxIt
 		if ( IsProperty( DFF_Prop_c3DOriginX ) || IsProperty( DFF_Prop_c3DOriginY ) )
 		{
 			const rtl::OUString	sExtrusionOrigin( RTL_CONSTASCII_USTRINGPARAM ( "Origin" ) );
-			double fOriginX = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DOriginX, 0 ));
-			double fOriginY = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DOriginY, 0 ));
+			double fOriginX = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DOriginX, 32768 ));
+			double fOriginY = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DOriginY, (sal_uInt32)-32768 ));
 			fOriginX /= 65536;
 			fOriginY /= 65536;
 			EnhancedCustomShapeParameterPair aOriginPair;
@@ -4896,6 +4896,14 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 		mpTracer->RemoveAttribute( aObjData.nSpFlags & SP_FGROUP
 									? rtl::OUString::createFromAscii( "GroupShape" )
 									: rtl::OUString::createFromAscii( "Shape" ) );
+    //Import alt text as description
+	if ( pRet && SeekToContent( DFF_Prop_wzDescription, rSt ) )
+	{
+		String aAltText;
+		MSDFFReadZString( rSt, aAltText, GetPropertyValue( DFF_Prop_wzDescription ), sal_True );
+		pRet->SetDescription( aAltText );
+	}
+    
 	return pRet;
 }
 
@@ -6527,6 +6535,7 @@ sal_Bool SvxMSDffManager::GetBLIPDirect( SvStream& rBLIPStream, Graphic& rData, 
 			break;
 			case 0x46A :			// One byte tag then JPEG (= JFIF) data
 			case 0x6E0 :			// One byte tag then PNG data
+			case 0x6E2 :			// One byte tag then JPEG in CMYK color space
 			case 0x7A8 :
 				nSkip += 1;			// One byte tag then DIB data
 			break;
@@ -6562,6 +6571,7 @@ sal_Bool SvxMSDffManager::GetBLIPDirect( SvStream& rBLIPStream, Graphic& rData, 
 			case 0x542 : aFileName.Append( String( RTL_CONSTASCII_STRINGPARAM( ".pct" ) ) ); break;
 			case 0x46a : aFileName.Append( String( RTL_CONSTASCII_STRINGPARAM( ".jpg" ) ) ); break;
 			case 0x6e0 : aFileName.Append( String( RTL_CONSTASCII_STRINGPARAM( ".png" ) ) ); break;
+			case 0x6e2 : aFileName.Append( String( RTL_CONSTASCII_STRINGPARAM( ".jpg" ) ) ); break;
 			case 0x7a8 : aFileName.Append( String( RTL_CONSTASCII_STRINGPARAM( ".bmp" ) ) ); break;
 		}
 
@@ -6759,33 +6769,6 @@ SdrObject* SvxMSDffManager::ImportOLE( long nOLEId,
 			nSvxMSDffOLEConvFlags, 
 			nAspect );
 	return pRet;
-}
-
-const GDIMetaFile* SvxMSDffManager::lcl_GetMetaFileFromGrf_Impl( const Graphic& rGrf,
-														GDIMetaFile& rMtf )
-{
-	const GDIMetaFile* pMtf;
-	if( GRAPHIC_BITMAP == rGrf.GetType() )
-	{
-		Point aPt;
-        const Size aSz(lcl_GetPrefSize(rGrf, MAP_100TH_MM));
-
-		VirtualDevice aVirtDev;
-		aVirtDev.EnableOutput( sal_False );
-		MapMode aMM(MAP_100TH_MM);
-		aVirtDev.SetMapMode( aMM );
-
-		rMtf.Record( &aVirtDev );
-		rGrf.Draw( &aVirtDev, aPt, aSz );
-		rMtf.Stop();
-		rMtf.SetPrefMapMode(aMM);
-		rMtf.SetPrefSize( aSz );
-
-		pMtf = &rMtf;
-	}
-	else
-		pMtf = &rGrf.GetGDIMetaFile();
-	return pMtf;
 }
 
 sal_Bool SvxMSDffManager::MakeContentStream( SotStorage * pStor, const GDIMetaFile & rMtf )

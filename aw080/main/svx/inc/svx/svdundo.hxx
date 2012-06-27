@@ -35,6 +35,7 @@
 #include "svx/svxdllapi.h"
 #include <basegfx/point/b2dpoint.hxx>
 #include <vector>
+#include <svl/style.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -137,8 +138,8 @@ protected:
 	SfxItemSet*					mpRedoItemSet;
 	SfxItemSet*					mpRepeatItemSet;
 
-	SfxStyleSheet*				mpUndoStyleSheet;
-	SfxStyleSheet*				mpRedoStyleSheet;
+    rtl::Reference< SfxStyleSheetBase > mxUndoStyleSheet;
+    rtl::Reference< SfxStyleSheetBase > mxRedoStyleSheet;
 
 	// Bei Zuweisung von TextItems auf ein Zeichenobjekt mit Text:
 	OutlinerParaObject*			mpTextUndoOPO;
@@ -152,6 +153,9 @@ protected:
 	/// bitfield
 	bool						mbStyleSheet : 1;
 	bool						mbHaveToTakeRedoSet : 1;
+
+    // helper to ensure StyleSheet is in pool (provided by SdrModel from SdrObject)
+    void ensureStyleSheetInStyleSheetPool(SfxStyleSheetBasePool& rStyleSheetPool, SfxStyleSheet& rSheet);
 
 public:
 	SdrUndoAttrObj(SdrObject& rNewObj, bool bStyleSheet1 = false, bool bSaveText = false);

@@ -412,18 +412,19 @@ void SdrEdgeObj::ImpSetEdgeInfoToAttr()
 
 void SdrEdgeObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bRotateFreeAllowed=false;
-	rInfo.bRotate90Allowed  =false;
-	rInfo.bMirrorFreeAllowed=false;
-	rInfo.bMirror45Allowed  =false;
-	rInfo.mbMirror90Allowed  =false;
+    // #54102# allow rotation, mirror and shear
+	rInfo.mbRotateFreeAllowed = true;
+	rInfo.mbRotate90Allowed = true;
+	rInfo.mbMirrorFreeAllowed = true;
+	rInfo.mbMirror45Allowed = true;
+	rInfo.mbMirror90Allowed = true;
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
-	rInfo.mbShearAllowed     =false;
-	rInfo.mbEdgeRadiusAllowed=false;
-	bool bCanConv=!HasText() || ImpCanConvTextToCurve();
-	rInfo.mbCanConvToPath=bCanConv;
-	rInfo.mbCanConvToPoly=bCanConv;
+	rInfo.mbShearAllowed = true;
+	rInfo.mbEdgeRadiusAllowed = false;
+	const bool bCanConv(!HasText() || ImpCanConvTextToCurve());
+	rInfo.mbCanConvToPath = bCanConv;
+	rInfo.mbCanConvToPoly = bCanConv;
 	rInfo.mbCanConvToContour = (rInfo.mbCanConvToPoly || LineGeometryUsageIsNecessary());
 }
 
@@ -778,9 +779,10 @@ XPolygon SdrEdgeObj::ImpCalcEdgeTrack(const XPolygon& rTrack0, SdrObjConnection&
 		}
 	}
 	
+    // #54102# To allow interactive preview, do also if not inserted
 	SdrPage* pOwningPage = getSdrPageFromSdrObject();
-	bool bCon1=rCon1.pObj && rCon1.pObj->getSdrPageFromSdrObject() == pOwningPage && rCon1.pObj->IsObjectInserted();
-	bool bCon2=rCon2.pObj && rCon2.pObj->getSdrPageFromSdrObject() == pOwningPage && rCon2.pObj->IsObjectInserted();
+	bool bCon1=rCon1.pObj && rCon1.pObj->getSdrPageFromSdrObject() == pOwningPage; // && rCon1.pObj->IsObjectInserted();
+	bool bCon2=rCon2.pObj && rCon2.pObj->getSdrPageFromSdrObject() == pOwningPage; // && rCon2.pObj->IsObjectInserted();
 	const SfxItemSet& rSet = GetObjectItemSet();
 
 	if (bCon1) 
@@ -1651,7 +1653,8 @@ void __EXPORT SdrEdgeObj::Notify(SfxBroadcaster& rBC, const SfxHint& rHint)
 		{
 			// Broadcasting nur, wenn auf der selben Page
             const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-			ImpDirtyEdgeTrack();
+
+            ImpDirtyEdgeTrack();
 			ActionChanged();
 		}
 		((SdrEdgeObj*)this)->nNotifyingCount--;

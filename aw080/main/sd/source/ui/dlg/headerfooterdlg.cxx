@@ -729,7 +729,8 @@ void HeaderFooterTabPage::GetOrSetDateTimeLanguage( LanguageType &rLanguage, boo
 		}
 
 		// and set it, or just get it from the handout master page
-		GetOrSetDateTimeLanguage( rLanguage, bSet, mpDoc->GetMasterSdPage( 0, PK_HANDOUT ) );
+// bug119985 2012.06.14
+		GetOrSetDateTimeLanguage( rLanguage, bSet, mpDoc->GetMasterSdPage( 0, PK_NOTES ) );
 	}
 	else
 	{
@@ -777,9 +778,13 @@ void HeaderFooterTabPage::GetOrSetDateTimeLanguage( LanguageType &rLanguage, boo
 					aFieldInfo = pEdit->GetFieldInfo( nPara, nField );
 					if( aFieldInfo.pFieldItem )
 					{
-						const SvxDateTimeField* pSvxDateTimeField = dynamic_cast< const SvxDateTimeField* >(aFieldInfo.pFieldItem->GetField());
+						const SvxFieldData* pFieldData = aFieldInfo.pFieldItem->GetField();
 
-						if( pSvxDateTimeField )
+                        // bug119985 2012.06.14
+                        if(pFieldData && (dynamic_cast< const SvxDateTimeField* >(pFieldData) || dynamic_cast< const SvxDateField* >(pFieldData)))
+                        {
+							break;
+                        }
 						{
 							break;
 						}

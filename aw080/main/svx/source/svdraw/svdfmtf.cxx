@@ -1424,6 +1424,31 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaMaskScalePartAction& rAct)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+XGradientStyle getXGradientStyleFromGradientStyle(const GradientStyle& rGradientStyle)
+{
+    XGradientStyle aXGradientStyle(XGRAD_LINEAR);
+
+    switch(rGradientStyle)
+    {
+        case GRADIENT_LINEAR: aXGradientStyle = XGRAD_LINEAR; break;
+        case GRADIENT_AXIAL: aXGradientStyle = XGRAD_AXIAL; break;
+        case GRADIENT_RADIAL: aXGradientStyle = XGRAD_RADIAL; break;
+        case GRADIENT_ELLIPTICAL: aXGradientStyle = XGRAD_ELLIPTICAL; break;
+        case GRADIENT_SQUARE: aXGradientStyle = XGRAD_SQUARE; break;
+        case GRADIENT_RECT: aXGradientStyle = XGRAD_RECT; break;
+        
+        // Needed due to GRADIENT_FORCE_EQUAL_SIZE; this again is needed
+        // to force the enum defines in VCL to a defined size for the compilers,
+        // so despite it is never used it cannot be removed (would break the
+        // API implementation probably).
+        default: break; 
+    }
+
+    return aXGradientStyle;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 void ImpSdrGDIMetaFileImport::DoAction(MetaGradientAction& rAct)
 {
     basegfx::B2DRange aRange(
@@ -1443,19 +1468,8 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaGradientAction& rAct)
             maCurrent * aObjectTransform);
 
         SfxItemSet aGradientAttr(mrModel.GetItemPool(), XATTR_FILLSTYLE, XATTR_FILLSTYLE, XATTR_FILLGRADIENT, XATTR_FILLGRADIENT, 0, 0);
-        XGradientStyle aXGradientStyle(XGRAD_LINEAR);
-        const Gradient& rGradient = rAct.GetGradient();
-
-        switch(rGradient.GetStyle())
-        {
-            case GRADIENT_LINEAR: aXGradientStyle = XGRAD_LINEAR; break;
-            case GRADIENT_AXIAL: aXGradientStyle = XGRAD_AXIAL; break;
-            case GRADIENT_RADIAL: aXGradientStyle = XGRAD_RADIAL; break;
-            case GRADIENT_ELLIPTICAL: aXGradientStyle = XGRAD_ELLIPTICAL; break;
-            case GRADIENT_SQUARE: aXGradientStyle = XGRAD_SQUARE; break;
-            case GRADIENT_RECT: aXGradientStyle = XGRAD_RECT; break;
-        }
-            
+      	const Gradient& rGradient = rAct.GetGradient();
+        const XGradientStyle aXGradientStyle(getXGradientStyleFromGradientStyle(rGradient.GetStyle()));
         const XFillGradientItem aXFillGradientItem(
             &mrModel.GetItemPool(), 
             XGradient(
@@ -1481,7 +1495,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaGradientAction& rAct)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void ImpSdrGDIMetaFileImport::DoAction(MetaWallpaperAction& rAct)
+void ImpSdrGDIMetaFileImport::DoAction(MetaWallpaperAction& /*rAct*/)
 {
     OSL_ENSURE(false, "Tried to construct SdrObject from MetaWallpaperAction: not supported (!)");
 }
@@ -1509,14 +1523,14 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaTransparentAction& rAct)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void ImpSdrGDIMetaFileImport::DoAction(MetaEPSAction& rAct)
+void ImpSdrGDIMetaFileImport::DoAction(MetaEPSAction& /*rAct*/)
 {
     OSL_ENSURE(false, "Tried to construct SdrObject from MetaEPSAction: not supported (!)");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void ImpSdrGDIMetaFileImport::DoAction(MetaTextLineAction& rAct)
+void ImpSdrGDIMetaFileImport::DoAction(MetaTextLineAction& /*rAct*/)
 {
     OSL_ENSURE(false, "Tried to construct SdrObject from MetaTextLineAction: not supported (!)");
 }
@@ -1533,23 +1547,12 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaGradientExAction& rAct)
 
 		if(!mbLastObjWasPolyWithoutLine || !CheckLastPolyLineAndFillMerge(aSource))
 		{
-        	const Gradient& rGradient = rAct.GetGradient();
             SdrPathObj* pPath = new SdrPathObj(
                 mrModel,
                 aSource);
 			SfxItemSet aGradientAttr(mrModel.GetItemPool(), XATTR_FILLSTYLE, XATTR_FILLSTYLE, XATTR_FILLGRADIENT, XATTR_FILLGRADIENT, 0, 0);
-            XGradientStyle aXGradientStyle(XGRAD_LINEAR);
-
-            switch(rGradient.GetStyle())
-            {
-                case GRADIENT_LINEAR: aXGradientStyle = XGRAD_LINEAR; break;
-                case GRADIENT_AXIAL: aXGradientStyle = XGRAD_AXIAL; break;
-                case GRADIENT_RADIAL: aXGradientStyle = XGRAD_RADIAL; break;
-                case GRADIENT_ELLIPTICAL: aXGradientStyle = XGRAD_ELLIPTICAL; break;
-                case GRADIENT_SQUARE: aXGradientStyle = XGRAD_SQUARE; break;
-                case GRADIENT_RECT: aXGradientStyle = XGRAD_RECT; break;
-            }
-            
+        	const Gradient& rGradient = rAct.GetGradient();
+            const XGradientStyle aXGradientStyle(getXGradientStyleFromGradientStyle(rGradient.GetStyle()));
             const XFillGradientItem aXFillGradientItem(
                 &mrModel.GetItemPool(), 
                 XGradient(
@@ -1693,9 +1696,9 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
                         {
                             const double fOpNew(1.0 - fTransparence);
                             
-                            for(sal_uInt32 y(0); y < pOld->Height(); y++)
+                            for(sal_uInt32 y(0); y < static_cast< sal_uInt32 >(pOld->Height()); y++)
                             {
-                                for(sal_uInt32 x(0); x < pOld->Width(); x++)
+                                for(sal_uInt32 x(0); x < static_cast< sal_uInt32 >(pOld->Width()); x++)
                                 {
                                     const double fOpOld(1.0 - (pOld->GetPixel(y, x).GetIndex() * fFactor));
                                     const sal_uInt8 aCol(basegfx::fround((1.0 - (fOpOld * fOpNew)) * 255.0));
@@ -1712,9 +1715,9 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
                             {
                                 if(pOld->Width() == pNew->Width() && pOld->Height() == pNew->Height())
                                 {
-                                    for(sal_uInt32 y(0); y < pOld->Height(); y++)
+                                    for(sal_uInt32 y(0); y < static_cast< sal_uInt32 >(pOld->Height()); y++)
                                     {
-                                        for(sal_uInt32 x(0); x < pOld->Width(); x++)
+                                        for(sal_uInt32 x(0); x < static_cast< sal_uInt32 >(pOld->Width()); x++)
                                         {
                                             const double fOpOld(1.0 - (pOld->GetPixel(y, x).GetIndex() * fFactor));
                                             const double fOpNew(1.0 - (pNew->GetPixel(y, x).GetIndex() * fFactor));

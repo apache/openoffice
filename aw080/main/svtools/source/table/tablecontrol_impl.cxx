@@ -606,8 +606,16 @@ namespace svt { namespace table
             if ( m_nRowCount > 0 )
                 goTo( m_nCurColumn, m_nRowCount - 1 );
             else
+            {
                 m_nCurRow = ROW_INVALID;
+                m_nTopRow = 0;
+            }
         }
+        else if ( m_nRowCount == 0 )
+        {
+            m_nTopRow = 0;
+        }
+        
 
         // relayout, since the scrollbar need might have changed
         impl_ni_relayout();
@@ -2170,7 +2178,8 @@ namespace svt { namespace table
         if ( i_lastRow == ROW_INVALID )
             aInvalidateRect.Bottom() = m_pDataWindow->GetOutputSizePixel().Height();
 
-        m_pDataWindow->Invalidate( aInvalidateRect );
+        m_pDataWindow->Invalidate( aInvalidateRect, 
+            m_pDataWindow->GetControlBackground().GetTransparency() ? INVALIDATE_TRANSPARENT : 0 );
     }
 
     //------------------------------------------------------------------------------

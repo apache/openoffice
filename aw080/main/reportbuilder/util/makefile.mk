@@ -76,8 +76,7 @@ COMPONENT_IMAGES= \
 	$(EXTENSIONDIR)$/images$/extension_32.png \
 	$(EXTENSIONDIR)$/images$/extension_32_h.png
 
-COMPONENT_HTMLFILES = $(EXTENSIONDIR)$/THIRDPARTYREADMELICENSE.html \
-			$(EXTENSIONDIR)$/readme_en-US.html \
+COMPONENT_HTMLFILES = $(EXTENSIONDIR)$/readme_en-US.html \
 			$(EXTENSIONDIR)$/readme_en-US.txt
 
 COMPONENT_JARFILES = \
@@ -133,10 +132,6 @@ $(EXTENSIONDIR)$/readme_en-US.% : $(PRJ)$/license$/readme_en-US.%
 
 $(COMPONENT_IMAGES) : $(SOLARSRC)$/$(RSCDEFIMG)$/desktop$/res$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
-
-$(EXTENSIONDIR)$/THIRDPARTYREADMELICENSE.html : $(PRJ)$/license$/THIRDPARTYREADMELICENSE.html
-    @@-$(MKDIRHIER) $(@:d)
     $(COPY) $< $@
     
 $(COMPONENT_HELP) : $$(@:f)

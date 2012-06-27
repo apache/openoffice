@@ -1155,8 +1155,7 @@ if ($platform =~ m/cygwin|os2/)
 # The general environment path.
 if ($platform =~ m/linux|netbsd|odf1|freebsd|aix|solaris/)
 {  $PATH              = $cur_dir.
-#                        $ps.'$SOLARVER'.$ds.'$INPATH'.$BIN.
-                        $ps.'$SOLARENV'.$ds.'$OUTPATH'.$BIN.
+                        $ps.'$SOLARENV'.$ds.'$INPATH'.$BIN.
                         $ps.'$SOLARENV'.$BIN;
 
    if ($platform =~ m/solaris/) {
@@ -1185,9 +1184,8 @@ elsif ($platform =~ m/cygwin/)
    my ( $tmppath );
 
    $PATH              = $cur_dir.
-#                        $ps.CygFormat($SOLARVER).$ds.$INPATH.$BIN.
                         $ps.CygFormat($SOLARENV).$ds."bin".
-                        $ps.CygFormat($SOLARENV).$ds.$OUTPATH.$BIN;
+                        $ps.CygFormat($SOLARENV).$ds.$INPATH.$BIN;
 
    if ( $JAVA_HOME ne "" )
    {
@@ -1318,9 +1316,8 @@ elsif ($platform =~ m/os2/)
    # needed is appended to the end.
 
    $PATH              = $cur_dir.
-#                        $ps.'$SOLARVER'.$ds.'$INPATH'.$BIN.
                         $ps.'$SOLARENV'.$ds."bin".
-                        $ps.'$SOLARENV'.$ds.'$OUTPATH'.$BIN;
+                        $ps.'$SOLARENV'.$ds.'$INPATH'.$BIN;
 
    if ( $JAVA_HOME ne "" )
    {
@@ -1351,8 +1348,7 @@ elsif ($platform =~ m/os2/)
 
 elsif ($platform =~ m/darwin/)
 {  $PATH              = $cur_dir.
-#                        $ps.'$SOLARVER'.$ds.'$INPATH'.$BIN.
-                        $ps.'$SOLARENV'.$ds.'$OUTPATH'.$BIN.
+                        $ps.'$SOLARENV'.$ds.'$INPATH'.$BIN.
                         $ps.'$SOLARENV'.$BIN;
 
   # Append old PATH
@@ -1989,7 +1985,19 @@ ToFile( "SYSTEM_SAXON",      "@SYSTEM_SAXON@",     "e" );
 ToFile( "SAXON_JAR",         "@SAXON_JAR@",        "e" );
 ToFile( "DISABLE_SAXON",     "@DISABLE_SAXON@",    "e" );
 ToFile( "ENABLE_JAVASCRIPT", "@ENABLE_JAVASCRIPT@","e" );
+ToFile( "SYSTEM_APR",        "@SYSTEM_APR@",       "e" );
+ToFile( "APR_CFLAGS",        "@APR_CFLAGS@",       "e" );
+ToFile( "APR_LIBS",          "@APR_LIBS@",         "e" );
+ToFile( "SYSTEM_APRUTIL",    "@SYSTEM_APRUTIL@",   "e" );
+ToFile( "APRUTIL_CFLAGS",    "@APRUTIL_CFLAGS@",   "e" );
+ToFile( "APRUTIL_LIBS",      "@APRUTIL_LIBS@",     "e" );
+ToFile( "SYSTEM_SERF",       "@SYSTEM_SERF@",      "e" );
+ToFile( "SERF_CFLAGS",       "@SERF_CFLAGS@",      "e" );
+ToFile( "SERF_LIBS",         "@SERF_LIBS@",        "e" );
+ToFile( "SYSTEM_COINMP",     "@SYSTEM_COINMP@",    "e" );
 ToFile( "ENABLE_COINMP",     "@ENABLE_COINMP@",    "e" );
+ToFile( "COINMP_CFLAGS",     "@COINMP_CFLAGS@",    "e" );
+ToFile( "COINMP_LIBS",       "@COINMP_LIBS@",      "e" );
 ToFile( "SYSTEM_ODBC_HEADERS","@SYSTEM_ODBC_HEADERS@","e" );
 ToFile( "SYSTEM_LIBXSLT",    "@SYSTEM_LIBXSLT@",   "e" );
 ToFile( "LIBXSLT_CFLAGS",    "@LIBXSLT_CFLAGS@",   "e" );

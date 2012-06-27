@@ -643,18 +643,8 @@ GDIMetaFile SdrExchangeView::GetMarkedObjMetaFile(bool bNoVDevIfOneMtfMarked) co
             {
                 Graphic aGraphic( pSdrGrafObj->GetTransformedGraphic() );
 
-                if(GRAPHIC_BITMAP == aGraphic.GetType())
-                {
-                    const Point aPos;
-
-                    aMtf.AddAction( new MetaBmpExScaleAction( aPos, aBoundSize, aGraphic.GetBitmapEx() ) );
-        		    aMtf.SetPrefMapMode( aMap );
-                	aMtf.SetPrefSize( aBoundSize );
-                }
-                else if(GRAPHIC_GDIMETAFILE == aGraphic.GetType())
-				{
-                    aMtf = aGraphic.GetGDIMetaFile();
-                }
+                // #119735# just use GetGDIMetaFile, it will create a bufferd version of contained bitmap now automatically
+                aMtf = aGraphic.GetGDIMetaFile();
 	    	}
 		}
 

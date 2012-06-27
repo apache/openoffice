@@ -41,7 +41,7 @@ namespace sdr
 			// react on ItemSet changes
 			virtual void ItemSetChanged(const SfxItemSet& rSet);
 
-		public:
+        public:
 			// basic constructor
 			GraphicProperties(SdrObject& rObj);
 

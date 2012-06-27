@@ -2731,9 +2731,10 @@ void WW8Export::WriteFkpPlcUsw()
             #10570# Similiarly having msvbasic storage seems to also trigger
             creating this stream
             */
-            GetWriter().GetStorage().OpenSotStorage(CREATE_CONST_ASC(SL::aObjectPool),
+                // memory leak #i120098#, the unnamed obj will be released in destructor.
+                xEscherStg = GetWriter().GetStorage().OpenSotStorage(CREATE_CONST_ASC(SL::aObjectPool),
                 STREAM_READWRITE | STREAM_SHARE_DENYALL);
-        }
+		}
 
         // dggInfo - escher stream
         WriteEscher();

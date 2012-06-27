@@ -292,8 +292,8 @@ namespace sdr
 		:	DefaultProperties(rObj),
 			mpStyleSheet(0)
 		{
-            // use default stylesheet
-            SfxStyleSheet* pTargetStyleSheet = GetSdrObject().getSdrModelFromSdrObject().GetDefaultStyleSheet();
+            // use default stylesheet #119287# 
+            SfxStyleSheet* pTargetStyleSheet = GetSdrObject().getDefaultStyleSheet();
 
             if(pTargetStyleSheet)
             {

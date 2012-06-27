@@ -28,6 +28,7 @@
 #include <svl/itemset.hxx>
 #include <svx/xfillit0.hxx>
 #include <svx/xlineit0.hxx>
+#include <svx/svdobj.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -35,7 +36,7 @@ namespace sdr
 {
 	namespace properties
 	{
-		OleProperties::OleProperties(SdrObject& rObj)
+        OleProperties::OleProperties(SdrObject& rObj)
 		:	RectangleProperties(rObj)
 		{
 		}
@@ -61,10 +62,6 @@ namespace sdr
 
 			// force ItemSet
 			GetObjectItemSet();
-
-			// #i108221#
-			mpItemSet->Put( XFillStyleItem(XFILL_NONE) );
-			mpItemSet->Put( XLineStyleItem(XLINE_NONE) );
 		}
 	} // end of namespace properties
 } // end of namespace sdr

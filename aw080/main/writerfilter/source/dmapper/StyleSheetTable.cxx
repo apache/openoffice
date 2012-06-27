@@ -37,6 +37,7 @@
 #include <com/sun/star/text/XTextDocument.hpp>
 #include <com/sun/star/style/XStyleFamiliesSupplier.hpp>
 #include <com/sun/star/style/XStyle.hpp>
+#include <com/sun/star/style/ParagraphAdjust.hpp>
 #include <com/sun/star/text/WritingMode.hpp>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <map>
@@ -88,6 +89,8 @@ TableStyleSheetEntry::TableStyleSheetEntry( StyleSheetEntry& rEntry, StyleSheetT
     sNextStyleIdentifier = rEntry.sNextStyleIdentifier;
     sStyleName = rEntry.sStyleName;
     sStyleName1 = rEntry.sStyleName1;
+	sStyleIdentifierI = rEntry.sStyleIdentifierI;
+	sStyleIdentifierD = rEntry.sStyleIdentifierD;
 
     m_nColBandSize = 1;
     m_nRowBandSize = 1;
@@ -891,7 +894,23 @@ void StyleSheetTable::ApplyStyleSheets( FontTablePtr rFontTable )
                             xState->setPropertyToDefault(rPropNameSupplier.GetName( PROP_CHAR_PROP_HEIGHT_ASIAN  ));
                             xState->setPropertyToDefault(rPropNameSupplier.GetName( PROP_CHAR_PROP_HEIGHT_COMPLEX));
 
-                        }
+                        } else if(sConvertedStyleName.equalsAscii( "Title" ) ||
+								sConvertedStyleName.equalsAscii( "Subtitle" ))	{
+							//set the default adjust for ParaStyle Title and Subtitle to left
+							try
+							{
+								uno::Reference< beans::XPropertySet > xProp( xStyle, uno::UNO_QUERY );
+								if( xProp.is() )
+								{
+									uno::Any aMSDefaultVal = uno::makeAny( (sal_Int16)style::ParagraphAdjust_LEFT );
+									xProp->setPropertyValue( rPropNameSupplier.GetName( PROP_PARA_ADJUST), aMSDefaultVal );
+								}
+							}
+							catch(...)
+							{
+								OSL_ENSURE( false, "Default ParaAdjust style property could not be set");
+							}
+						}
                     }
 
                     if(bAddFollowStyle || aPropValues.getLength())

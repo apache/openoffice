@@ -67,6 +67,7 @@
 
 #include <sfx2/ipclient.hxx>
 #include <svx/svdlegacy.hxx>
+#include "glob.hrc"
 
 using namespace com::sun::star;
 

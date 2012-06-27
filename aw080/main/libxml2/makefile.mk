@@ -49,6 +49,8 @@ PATCH_FILES=libxml2-configure.patch \
             libxml2-gnome599717.patch \
             libxml2-xpath.patch \
             libxml2-global-symbols.patch \
+            libxml2-testapi.patch \
+            libxml2-runtest.patch
 
 .IF "$(OS)" == "WNT"
 PATCH_FILES+= libxml2-long-path.patch

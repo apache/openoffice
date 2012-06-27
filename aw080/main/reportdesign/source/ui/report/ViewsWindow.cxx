@@ -751,7 +751,7 @@ void OViewsWindow::collectBoundResizeRect(const TRectangleMap& _rSortRectangles,
         SdrObjTransformInfoRec aInfo;
         const SdrObject* pObj =  aRectIter->second.first;
 		pObj->TakeObjInfo(aInfo);
-        sal_Bool bHasFixed = !aInfo.bMoveAllowed || pObj->IsMoveProtect();
+        sal_Bool bHasFixed = !aInfo.mbMoveAllowed || pObj->IsMoveProtect();
 		if ( bHasFixed ) 
 			_rBound.Union(aObjRect);
         else
@@ -845,7 +845,7 @@ void OViewsWindow::alignMarkedObjects(sal_Int32 _nControlModification,bool _bAli
         Point aCenter(aBound.Center());
 		SdrObjTransformInfoRec aInfo;
 		pObj->TakeObjInfo(aInfo);
-		if (aInfo.bMoveAllowed && !pObj->IsMoveProtect()) 
+		if (aInfo.mbMoveAllowed && !pObj->IsMoveProtect()) 
         {
             long nXMov = 0;
             long nYMov = 0;

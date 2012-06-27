@@ -2809,9 +2809,10 @@ void MA_FASTCALL lcl_Regist( SwPageFrm *pPage, const SwFrm *pAnch )
              pObj->GetDrawObj()->GetNavigationPosition() < pFly->GetVirtDrawObj()->GetNavigationPosition() &&
              pObj->GetDrawObj()->getSdrPageFromSdrObject() )
         {
+            //#i119945# set pFly's OrdNum to pObj's. So when pFly is removed by Undo, the original OrdNum will not be changed.
             pObj->DrawObj()->getSdrPageFromSdrObject()->SetNavigationPosition(
-                                pObj->GetDrawObj()->GetNavigationPosition(),
-                                pFly->GetVirtDrawObj()->GetNavigationPosition() + 1 );
+                                pFly->GetVirtDrawObj()->GetNavigationPosition(),
+                                pObj->GetDrawObj()->GetNavigationPosition() );
         }
 	}
 }

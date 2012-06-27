@@ -662,12 +662,15 @@ void SwPageFrm::AppendFlyToPage( SwFlyFrm *pNew )
     SdrObject* pObj = pNew->GetVirtDrawObj();
     ASSERT( pNew->GetAnchorFrm(), "Fly without Anchor" );
     const SwFlyFrm* pFly = pNew->GetAnchorFrm()->FindFlyFrm();
-	if ( pFly && pObj->GetNavigationPosition() < pFly->GetVirtDrawObj()->GetNavigationPosition() )
+
+    if ( pFly && pObj->GetNavigationPosition() < pFly->GetVirtDrawObj()->GetNavigationPosition() )
 	{
+        //#i119945# set pFly's OrdNum to _rNewObj's. So when pFly is removed by Undo, the original OrdNum will not be changed.
         sal_uInt32 nNewNum = pFly->GetVirtDrawObj()->GetNavigationPosition();
-		if ( pObj->getParentOfSdrObject() )
-	{
-			pObj->getParentOfSdrObject()->SetNavigationPosition( pObj->GetNavigationPosition(), nNewNum);
+
+        if ( pObj->getParentOfSdrObject() )
+    	{
+			pObj->getParentOfSdrObject()->SetNavigationPosition( pFly->GetVirtDrawObj()->GetNavigationPosition(), nNewNum);
 		}
 		else
 		{
@@ -676,7 +679,7 @@ void SwPageFrm::AppendFlyToPage( SwFlyFrm *pNew )
 			// which is not member of an SdrObjLsit by definition has an OrdNum of 0 since it
 			// is not member of a Z-Order (see SdrObject::GetNavigationPosition())
 			OSL_ENSURE(false, "SwPageFrm::AppendFlyToPage tried to set OrdNum for non-inserted SdrObject (!)");
-			// former code: pObj->SetOrdNum( nNewNum );
+			// former code: pFly->GetVirtDrawObj()->SetOrdNum( nNewNum );
 		}
 	}
 
@@ -947,16 +950,16 @@ void SwPageFrm::AppendDrawObjToPage( SwAnchoredObject& _rNewObj )
     }
 
     ASSERT( _rNewObj.GetAnchorFrm(), "anchored draw object without anchor" );
-    const SwFlyFrm* pFlyFrm = _rNewObj.GetAnchorFrm()->FindFlyFrm();
+    SwFlyFrm* pFlyFrm = (SwFlyFrm*)_rNewObj.GetAnchorFrm()->FindFlyFrm();
     if ( pFlyFrm &&
          _rNewObj.GetDrawObj()->GetNavigationPosition() < pFlyFrm->GetVirtDrawObj()->GetNavigationPosition() )
     {
+        //#i119945# set pFly's OrdNum to _rNewObj's. So when pFly is removed by Undo, the original OrdNum will not be changed.
         sal_uInt32 nNewNum = pFlyFrm->GetVirtDrawObj()->GetNavigationPosition();
 
 		if ( _rNewObj.GetDrawObj()->getParentOfSdrObject() )
-    {
-            _rNewObj.DrawObj()->getParentOfSdrObject()->SetNavigationPosition(
-				_rNewObj.GetDrawObj()->GetNavigationPosition(), nNewNum);
+        {
+            _rNewObj.DrawObj()->getParentOfSdrObject()->SetNavigationPosition(pFlyFrm->GetVirtDrawObj()->GetNavigationPosition(), nNewNum);
 		}
         else
 		{
@@ -965,7 +968,7 @@ void SwPageFrm::AppendDrawObjToPage( SwAnchoredObject& _rNewObj )
 			// which is not member of an SdrObjLsit by definition has an OrdNum of 0 since it
 			// is not member of a Z-Order (see SdrObject::GetNavigationPosition())
 			OSL_ENSURE(false, "SwPageFrm::AppendDrawObjToPage try to set OrdNum for non-inserted SdrObject (!)");
-            // former code: _rNewObj.DrawObj()->SetOrdNum( nNewNum );
+            // former code: pFlyFrm->GetVirtDrawObj()->SetOrdNum( nNewNum );
 		}
     }
 

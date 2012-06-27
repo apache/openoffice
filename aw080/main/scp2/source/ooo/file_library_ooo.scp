@@ -1422,7 +1422,11 @@ STD_LIB_FILE( gid_File_Lib_Editeng, editeng)
 
 STD_LIB_FILE( gid_File_Lib_Msfilter, msfilter)
 
+#ifdef OS2
+STD_LIB_FILE( gid_File_Lib_Sw , swoo)
+#else
 STD_LIB_FILE( gid_File_Lib_Sw , sw)
+#endif
 STD_LIB_FILE( gid_File_Lib_Swui, swui)
 
 STD_LIB_FILE( gid_File_Lib_Msword, msword )
@@ -1532,7 +1536,11 @@ SPECIAL_COMPONENT_LIB_FILE(gid_File_Ucpexpand1, ucpexpand1.uno)
 File gid_File_Lib_Lnth
     TXT_FILE_BODY;
     Styles = (PACKED);
+#ifdef OS2
+    Name = LIBNAME(lnth);
+#else
     Name = LIBNAME(lnth.uno);
+#endif
     Dir = SCP2_OOO_BIN_DIR;
 End
 
@@ -1994,8 +2002,10 @@ End
 #endif
 #endif
 
+// AF: is this still needed with explicit support for system apr,apr-util,serf ?
 #if !defined(OS2) // using system libs
 
+#ifdef APR_MAJOR 
 File gid_File_Lib_Apr
      #ifdef WNT
         Name = SPECIAL_NAME(libapr-1);
@@ -2012,7 +2022,9 @@ File gid_File_Lib_Apr
      #endif
      PACKED_LIB_FILE_BODY;
 End
+#endif
 
+#ifdef APR_UTIL_MAJOR
 File gid_File_Lib_AprUtil
     #ifdef WNT
         Name = SPECIAL_NAME(apr-util);
@@ -2029,7 +2041,9 @@ File gid_File_Lib_AprUtil
     #endif
     PACKED_LIB_FILE_BODY;
 End
+#endif
 
+#ifdef SERF_MAJOR
 File gid_File_Lib_Serf
     #ifdef WNT
         Name = SPECIAL_NAME(serf);
@@ -2037,14 +2051,15 @@ File gid_File_Lib_Serf
 	// Looks like the major version number is part of the name, not
 	// part of the suffix.  An error?
 	#ifdef MACOSX
-            Name = STRING(CONCAT6(libserf-1,.0.,SERF_MINOR,.,SERF_MICRO,UNXSUFFIX));
+            Name = STRING(CONCAT4(libserf-,SERF_MAJOR,.0.0.0,UNXSUFFIX));
 	#elif FREEBSD
             Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.0));
 	#else
-            Name = STRING(CONCAT6(libserf-1,UNXSUFFIX,.0.,SERF_MINOR,.,SERF_MICRO));
+            Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.0.0.0));
 	#endif
     #endif
     PACKED_LIB_FILE_BODY;
 End
+#endif
 
 #endif // !defined(OS2)

@@ -2143,7 +2143,7 @@ void SdrEditView::AlignMarkedObjects(SdrHorAlign eHor, SdrVertAlign eVert, bool 
 			SdrObjTransformInfoRec aInfo;
 			pObj->TakeObjInfo(aInfo);
 		
-			if(!aInfo.bMoveAllowed || pObj->IsMoveProtect())
+			if(!aInfo.mbMoveAllowed || pObj->IsMoveProtect())
 			{
 				const basegfx::B2DRange aObjRange(bBoundRects
 					? pObj->getObjectRange(getAsSdrView())
@@ -2202,7 +2202,7 @@ void SdrEditView::AlignMarkedObjects(SdrHorAlign eHor, SdrVertAlign eVert, bool 
 			SdrObjTransformInfoRec aInfo;
 			pObj->TakeObjInfo(aInfo);
 		
-			if(aInfo.bMoveAllowed && !pObj->IsMoveProtect())
+			if(aInfo.mbMoveAllowed && !pObj->IsMoveProtect())
 			{
 				basegfx::B2DVector aMove(0.0, 0.0);
 				const basegfx::B2DRange aObjRange(bBoundRects

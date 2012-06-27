@@ -1393,12 +1393,12 @@ void SdrTableObj::onEditOutlinerStatusEvent( EditStatus* pEditStatus )
 
 void SdrTableObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bResizeFreeAllowed = true;
-	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = false;
-	rInfo.bRotate90Allowed = false;
-	rInfo.bMirrorFreeAllowed = false;
-	rInfo.bMirror45Allowed = false;
+	rInfo.mbResizeFreeAllowed = true;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = false;
+	rInfo.mbRotate90Allowed = false;
+	rInfo.mbMirrorFreeAllowed = false;
+	rInfo.mbMirror45Allowed = false;
 	rInfo.mbMirror90Allowed = false;
 
 	// allow transparence

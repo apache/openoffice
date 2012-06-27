@@ -2431,7 +2431,29 @@ sal_Bool SfxObjectShell::ImportFrom( SfxMedium& rMedium )
             aArgs[nEnd-1].Value <<= rMedium.GetBaseURL();
         }
 
-        return xLoader->filter( aArgs );
+//-> #i119492
+//        return xLoader->filter( aArgs );
+// During loading, some OLE objects like chart will be set modified flag, so needs to reset the flag to false after loading
+        sal_Bool bRtn = xLoader->filter( aArgs );
+        uno::Sequence < ::rtl::OUString > aNames = GetEmbeddedObjectContainer().GetObjectNames();
+        for ( sal_Int32 n = 0; n < aNames.getLength(); n++ )
+        {
+            ::rtl::OUString	aName = aNames[n];
+            uno::Reference < embed::XEmbeddedObject > xObj = GetEmbeddedObjectContainer().GetEmbeddedObject( aName );
+            OSL_ENSURE( xObj.is(), "An empty entry in the embedded objects list!\n" );
+            if ( xObj.is() )
+            {
+                sal_Int32 nState = xObj->getCurrentState();
+                if ( nState == embed::EmbedStates::LOADED || nState == embed::EmbedStates::RUNNING )	// means that the object is not active
+                {
+                    uno::Reference< util::XModifiable > xModifiable( xObj->getComponent(), uno::UNO_QUERY );
+                    if ( xModifiable.is() )
+                        xModifiable->setModified(sal_False);
+                }
+            }
+        }
+        return bRtn;
+//<- #i119492
         }catch(const uno::Exception&)
         {}
     }
@@ -2886,6 +2908,9 @@ sal_Bool SfxObjectShell::PreDoSaveAs_Impl
 
     // in "SaveAs" title and password will be cleared ( maybe the new itemset contains new values, otherwise they will be empty )
     pMergedParams->ClearItem( SID_PASSWORD );
+    // 119366 - As the SID_ENCRYPTIONDATA and SID_PASSWORD are using for setting passward together, we need to clear them both.
+    // Also, ( maybe the new itemset contains new values, otherwise they will be empty )
+    pMergedParams->ClearItem( SID_ENCRYPTIONDATA );
     pMergedParams->ClearItem( SID_DOCINFO_TITLE );
 
     pMergedParams->ClearItem( SID_INPUTSTREAM );
@@ -3659,6 +3684,8 @@ sal_Bool SfxObjectShell::GenerateAndStoreThumbnail( sal_Bool bEncrypted,
                                                     const uno::Reference< embed::XStorage >& xStor )
 {
     RTL_LOGFILE_CONTEXT( aLog, "sfx2 (mv76033) SfxObjectShell::GenerateAndStoreThumbnail" );
+	
+    bIsInGenerateThumbnail = sal_True;//optimize thumbnail generate and store procedure to improve odt saving performance, i120030
 
     sal_Bool bResult = sal_False;
 
@@ -3683,6 +3710,8 @@ sal_Bool SfxObjectShell::GenerateAndStoreThumbnail( sal_Bool bEncrypted,
     catch( uno::Exception& )
     {
     }
+	
+    bIsInGenerateThumbnail = sal_False;//optimize thumbnail generate and store procedure to improve odt saving performance, i120030
 
     return bResult;
 }

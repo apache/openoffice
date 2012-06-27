@@ -102,21 +102,21 @@ sdr::contact::ViewContact* SdrMediaObj::CreateObjectSpecificViewContact()
 
 void SdrMediaObj::TakeObjInfo( SdrObjTransformInfoRec& rInfo ) const
 {
-	rInfo.bSelectAllowed = true;
-	rInfo.bMoveAllowed = true;
-	rInfo.bResizeFreeAllowed = true;
-	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = false;
-	rInfo.bRotate90Allowed = false;
-	rInfo.bMirrorFreeAllowed = false;
-	rInfo.bMirror45Allowed = false;
+	rInfo.mbSelectAllowed = true;
+	rInfo.mbMoveAllowed = true;
+	rInfo.mbResizeFreeAllowed = true;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = false;
+	rInfo.mbRotate90Allowed = false;
+	rInfo.mbMirrorFreeAllowed = false;
+	rInfo.mbMirror45Allowed = false;
 	rInfo.mbMirror90Allowed = false;
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
 	rInfo.mbShearAllowed = false;
 	rInfo.mbEdgeRadiusAllowed = false;
-	rInfo.bNoOrthoDesired = false;
-	rInfo.bNoContortion = false;
+	rInfo.mbNoOrthoDesired = false;
+	rInfo.mbNoContortion = false;
 	rInfo.mbCanConvToPath = false;
 	rInfo.mbCanConvToPoly = false;
 	rInfo.mbCanConvToContour = false;

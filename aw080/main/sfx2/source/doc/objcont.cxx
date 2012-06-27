@@ -166,10 +166,12 @@ SfxObjectShell::CreatePreviewMetaFile_Impl( sal_Bool bFullContent, sal_Bool bHig
     pFile->Record( &aDevice );
 
     LanguageType eLang;
-    SvtCTLOptions*  pCTLOptions = new SvtCTLOptions;
-    if ( SvtCTLOptions::NUMERALS_HINDI == pCTLOptions->GetCTLTextNumerals() )
+    // #120038# use local incarnation, so deletion cannot be forgotten
+    const SvtCTLOptions aCTLOptions;
+
+    if ( SvtCTLOptions::NUMERALS_HINDI == aCTLOptions.GetCTLTextNumerals() )
         eLang = LANGUAGE_ARABIC_SAUDI_ARABIA;
-    else if ( SvtCTLOptions::NUMERALS_ARABIC == pCTLOptions->GetCTLTextNumerals() )
+    else if ( SvtCTLOptions::NUMERALS_ARABIC == aCTLOptions.GetCTLTextNumerals() )
         eLang = LANGUAGE_ENGLISH;
     else
         eLang = (LanguageType) Application::GetSettings().GetLanguage();
@@ -757,12 +759,16 @@ sal_Bool SfxObjectShell::Print
 		{
 			SfxStyleSheetBasePool *pStylePool = GetStyleSheetPool();
 			SetOrganizerSearchMask(pStylePool);
-			SfxStyleSheetIterator* pIter = pStylePool->CreateIterator(
-				pStylePool->GetSearchFamily(), pStylePool->GetSearchMask() );
-			sal_uInt16 nStyles = pIter->Count();
-			SfxStyleSheetBase *pStyle = pIter->First();
-			if ( !pStyle )
-				return sal_True;
+
+            // memory leak #i120077#
+            SfxStyleSheetIterator aIter(pStylePool, pStylePool->GetSearchFamily(), pStylePool->GetSearchMask());
+			sal_uInt16 nStyles = aIter.Count();
+			SfxStyleSheetBase *pStyle = aIter.First();
+			
+            if ( !pStyle )
+            {
+                return sal_True;
+            }
 
             // pepare adaptor for old style StartPage/EndPage printing
             boost::shared_ptr< Printer > pPrinter( new Printer( rPrt.GetJobSetup() ) );
@@ -861,13 +867,12 @@ sal_Bool SfxObjectShell::Print
 					pPrinter->DrawText(aOutPos, aTmp);
 					aOutPos.Y() += pPrinter->GetTextHeight();
 				}
-				pStyle = pIter->Next();
+				pStyle = aIter.Next();
 			}
 			pAdaptor->EndPage();
             
             Printer::PrintJob( pController, rPrt.GetJobSetup() );
 
-			delete pIter;
 			break;
 		}
 	  default:

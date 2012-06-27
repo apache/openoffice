@@ -125,12 +125,12 @@ void SdrRectObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
 	bool bNoTextFrame = !IsTextFrame();
 	const long aOldRotation(sdr::legacy::GetRotateAngle(*this));
-	rInfo.bResizeFreeAllowed = bNoTextFrame || aOldRotation%9000==0;
-	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = true;
-	rInfo.bRotate90Allowed = true;
-	rInfo.bMirrorFreeAllowed=bNoTextFrame;
-	rInfo.bMirror45Allowed  =bNoTextFrame;
+	rInfo.mbResizeFreeAllowed = bNoTextFrame || aOldRotation%9000==0;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = true;
+	rInfo.mbRotate90Allowed = true;
+	rInfo.mbMirrorFreeAllowed=bNoTextFrame;
+	rInfo.mbMirror45Allowed  =bNoTextFrame;
 	rInfo.mbMirror90Allowed = bNoTextFrame;
 
 	// allow transparence

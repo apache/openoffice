@@ -1912,10 +1912,20 @@ IMPL_LINK( SlideshowImpl, PostYieldListener, void*, EMPTYARG )
 {
     Application::EnableNoYieldMode(false);
     Application::RemovePostYieldListener(LINK(this, SlideshowImpl, PostYieldListener));
+
     if (mbDisposed)
         return 0;
+
+    // Call Reschedule() but make sure that we are not destroyed during its
+    // execution (we still can be disposed, though.)
+    const rtl::Reference<SlideshowImpl> pSelf (this);
     Application::Reschedule(true);
-    return updateSlideShow();
+
+    // Update the slide show if we are still alive.
+    if ( ! mbDisposed)
+        return updateSlideShow();
+    else
+        return 0;
 }
 
 
@@ -3322,9 +3332,14 @@ void SAL_CALL SlideshowImpl::gotoNextSlide(  ) throw (RuntimeException)
 					{
 						if( mpShowWindow )
 						{
-							Graphic aGraphic( SfxApplication::GetApplicationLogo().GetBitmapEx() );
-							mpShowWindow->SetPauseMode( 0, maPresSettings.mnPauseTimeout, &aGraphic );
-						}
+                            if ( maPresSettings.mbShowPauseLogo )
+                            {
+                                Graphic aGraphic( SfxApplication::GetApplicationLogo().GetBitmapEx() );
+                                mpShowWindow->SetPauseMode( 0, maPresSettings.mnPauseTimeout, &aGraphic );
+                            }
+                            else
+                                mpShowWindow->SetPauseMode( 0, maPresSettings.mnPauseTimeout );
+                        }
 					}
 					else
 					{

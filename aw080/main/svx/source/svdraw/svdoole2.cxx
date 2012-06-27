@@ -87,6 +87,8 @@
 #include <basegfx/polygon/b2dpolypolygon.hxx>
 #include <editeng/outlobj.hxx>
 
+#include <svx/svdpage.hxx>
+
 using namespace ::rtl;
 using namespace ::com::sun::star;
 
@@ -1549,16 +1551,16 @@ String SdrOle2Obj::GetPersistName() const
 void SdrOle2Obj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
     // #i118485# Allowing much more attributes for OLEs
-	rInfo.bRotateFreeAllowed = true;
-	rInfo.bRotate90Allowed = true;
-	rInfo.bMirrorFreeAllowed = true;
-	rInfo.bMirror45Allowed = true;
+	rInfo.mbRotateFreeAllowed = true;
+	rInfo.mbRotate90Allowed = true;
+	rInfo.mbMirrorFreeAllowed = true;
+	rInfo.mbMirror45Allowed = true;
 	rInfo.mbMirror90Allowed = true;
 	rInfo.mbTransparenceAllowed = true;
 	rInfo.mbGradientAllowed = true;
 	rInfo.mbShearAllowed = true;
 	rInfo.mbEdgeRadiusAllowed = false;
-	rInfo.bNoOrthoDesired = false;
+	rInfo.mbNoOrthoDesired = false;
 	rInfo.mbCanConvToPath = true;
 	rInfo.mbCanConvToPoly = true;
 	rInfo.mbCanConvToPathLineToArea = false;
@@ -2133,6 +2135,14 @@ void SdrOle2Obj::SetWindow(const com::sun::star::uno::Reference < com::sun::star
     {
         mpImpl->pLightClient->setWindow(_xWindow);
     }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+SfxStyleSheet* SdrOle2Obj::getDefaultStyleSheet()
+{
+    // use stylesheet without fill and without line
+    return getSdrModelFromSdrObject.GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj();
 }
 
 //////////////////////////////////////////////////////////////////////////////

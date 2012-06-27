@@ -36,7 +36,7 @@ sub DetectRevisionIdFromGit ($)
             # Not in a GIT repository.
             last;
         }
-        elsif (/^\s*git-svn-id:.*?trunk@([0-9]+)\s+/)
+        elsif (/^\s*git-svn-id:.*?@([0-9]+)\s+/)
         {
             $id = $1;
             last;
@@ -59,7 +59,7 @@ sub DetectRevisionId ($)
     open my $proc, "cd $path && svn info 2>\&1 |";
     while (<$proc>)
     {
-        if (/svn: E155007:/)
+        if (/svn: E155007:/ || /svn: '.' is not a working copy/)
         {
             # Not in an SVN repository.
             $id = DetectRevisionIdFromGit($path);

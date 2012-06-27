@@ -53,7 +53,8 @@ namespace sdr
 			const drawinglayer::attribute::SdrLineFillShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
                     rItemSet, 
-                    GetCircObj().getText(0)));
+                    GetCircObj().getText(0),
+                    false));
 
 			// get object transformation
 			const basegfx::B2DHomMatrix& rObjectMatrix(GetCircObj().getSdrObjectTransformation());

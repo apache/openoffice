@@ -162,7 +162,7 @@ void SerfSession::Init()
         if ( m_aProxyName.getLength() )
         {
             apr_sockaddr_t *proxy_address = NULL;
-            const apr_status_t status = apr_sockaddr_info_get( &proxy_address, 
+            status = apr_sockaddr_info_get( &proxy_address, 
                                                                rtl::OUStringToOString( m_aProxyName, RTL_TEXTENCODING_UTF8 ), 
                                                                APR_UNSPEC,
                                                                static_cast<apr_port_t>(m_nProxyPort), 
@@ -269,6 +269,7 @@ apr_status_t SerfSession::setupSerfConnection( apr_socket_t * inAprSocket,
         */
         serf_ssl_server_cert_chain_callback_set(
             serf_bucket_ssl_decrypt_context_get(tmpInputBkt),
+            NULL,
             Serf_CertificateChainValidation,
             this);
         serf_ssl_set_hostname( serf_bucket_ssl_decrypt_context_get( tmpInputBkt ), 
@@ -367,7 +368,7 @@ namespace {
 
 apr_status_t SerfSession::verifySerfCertificateChain (
     int,
-    const char** pCertificateChainBase64Encoded,
+    const serf_ssl_certificate_t * const * pCertificateChainBase64Encoded,
     int nCertificateChainLength)
 {
     // Check arguments.
@@ -414,9 +415,13 @@ apr_status_t SerfSession::verifySerfCertificateChain (
     }
 
     // Decode the server certificate.
+    const char* sBase64EncodedServerCertificate (
+        serf_ssl_cert_export(
+            pCertificateChainBase64Encoded[0],
+            getAprPool()));
     uno::Reference< security::XCertificate > xServerCertificate(
         xSecurityEnv->createCertificateFromAscii(
-            rtl::OUString::createFromAscii(pCertificateChainBase64Encoded[0])));
+            rtl::OUString::createFromAscii(sBase64EncodedServerCertificate)));
     if ( ! xServerCertificate.is())
         return SERF_SSL_CERT_UNKNOWN_FAILURE;
 
@@ -455,11 +460,15 @@ apr_status_t SerfSession::verifySerfCertificateChain (
     // done outside the isDomainMatch() block because the result is
     // used by the interaction handler.
     std::vector< uno::Reference< security::XCertificate > > aChain;
-    for (int nIndex=1; nIndex<nCertificateChainLength; ++nIndex)
+    for (nIndex=1; nIndex<nCertificateChainLength; ++nIndex)
     {
+        const char* sBase64EncodedCertificate (
+            serf_ssl_cert_export(
+                pCertificateChainBase64Encoded[nIndex],
+                getAprPool()));
         uno::Reference< security::XCertificate > xCertificate(
             xSecurityEnv->createCertificateFromAscii(
-                rtl::OUString::createFromAscii(pCertificateChainBase64Encoded[nIndex])));
+                rtl::OUString::createFromAscii(sBase64EncodedCertificate)));
         if ( ! xCertificate.is())
             return SERF_SSL_CERT_UNKNOWN_FAILURE;
         aChain.push_back(xCertificate);

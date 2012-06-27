@@ -404,19 +404,19 @@ SdrTextVertAdjust SdrTextObj::GetTextVerticalAdjust(const SfxItemSet& rSet) cons
 void SdrTextObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
 	bool bNoTextFrame = !IsTextFrame();
-	rInfo.bResizeFreeAllowed = bNoTextFrame;
+	rInfo.mbResizeFreeAllowed = bNoTextFrame;
 
-	if(!rInfo.bResizeFreeAllowed)
+	if(!rInfo.mbResizeFreeAllowed)
     {
 		sal_Int32 nAngle(sdr::legacy::GetRotateAngle(*this));
-		rInfo.bResizeFreeAllowed = (0 == nAngle % 9000);
+		rInfo.mbResizeFreeAllowed = (0 == nAngle % 9000);
     }
 
-	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = true;
-	rInfo.bRotate90Allowed = true;
-	rInfo.bMirrorFreeAllowed=bNoTextFrame;
-	rInfo.bMirror45Allowed  =bNoTextFrame;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = true;
+	rInfo.mbRotate90Allowed = true;
+	rInfo.mbMirrorFreeAllowed = bNoTextFrame;
+	rInfo.mbMirror45Allowed = bNoTextFrame;
 	rInfo.mbMirror90Allowed = bNoTextFrame;
 
 	// allow transparence

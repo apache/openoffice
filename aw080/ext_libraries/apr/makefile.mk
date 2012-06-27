@@ -31,11 +31,20 @@ TARGET=apr
 
 # --- Files --------------------------------------------------------
 
+.IF "$(SYSTEM_APR)"=="YES"
+
+all:
+	@echo "Using system apr.  Does not have to be built."
+
+.ELSE
+
 # Assemble the full version number from the parts defined in apr_version.mk
 APRVERSION=$(APR_MAJOR).$(APR_MINOR).$(APR_MICRO)
 
 TARFILE_NAME=$(PRJNAME)-$(APRVERSION)
 TARFILE_MD5=97262fe54dddaf583eaaee3497a426e1
+
+PATCH_FILES=apr-1.4.5.patch
 
 .IF "$(OS)"=="WNT"
 
@@ -98,3 +107,5 @@ OUT2BIN+=apr-1-config
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
+
+.ENDIF

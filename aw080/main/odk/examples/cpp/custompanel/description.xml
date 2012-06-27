@@ -1,4 +1,5 @@
-/**************************************************************
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -17,20 +18,19 @@
  * specific language governing permissions and limitations
  * under the License.
  * 
- *************************************************************/
+ ***********************************************************-->
+<description
+    xmlns="http://openoffice.org/extensions/description/2006"
+    xmlns:d="http://openoffice.org/extensions/description/2006"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
 
-﻿
-
-#include <svtools/svtools.hrc>
-#include "about_ooo.hrc"
-
-String ABOUT_STR_COPYRIGHT
-{
-	Text[ en-US ] = "Copyright © 2012 Apache Software Foundation. All rights reserved.\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at\n http://www.openoffice.org/welcome/credits.html.";	
-};
-
-StringArray ABOUT_STR_DEVELOPER_ARY
-{
-	OOO_CONTRIBUTOR_LIST
-};
-
+  <identifier value="org.apache.openoffice.custom-tool-panel"/>
+  <version value="0.1" />
+  <platform value="UPDATED_SUPPORTED_PLATFORM" />
+  <display-name>
+    <name>Custom Tool Panel Example</name>
+  </display-name>
+  <dependencies>
+    <OpenOffice.org-minimal-version value="3.4" d:name="OpenOffice.org 3.4"/>
+  </dependencies>
+</description>

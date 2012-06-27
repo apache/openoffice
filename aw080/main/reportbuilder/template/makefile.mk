@@ -59,9 +59,8 @@ ODR_FILES := \
 	$(ZIP1DIR)$/template$/wizard$/report$/finance_2.odr \
 	$(ZIP1DIR)$/template$/wizard$/report$/yellow.odr
 
-HTMLFILES := $(ZIP1DIR)$/THIRDPARTYREADMELICENSE.html \
-			$(ZIP1DIR)$/readme_en-US.html \
-			$(ZIP1DIR)$/readme_en-US.txt
+HTMLFILES := $(ZIP1DIR)$/readme_en-US.html \
+		$(ZIP1DIR)$/readme_en-US.txt
 
 .IF "$(GUI)"!="WNT"
 TXTFILES:=$(foreach,i,$(alllangiso) $(ZIP1DIR)$/registration$/LICENSE_$i)
@@ -106,10 +105,6 @@ $(ZIP1DIR)$/META-INF$/manifest.xml : manifest.xml $(MISC)$/template_update_repor
 
 $(ZIP1DIR)$/readme_en-US.% : $(PRJ)$/license$/readme_en-US.%
 	@@-$(MKDIRHIER) $(@:d)
-    $(COPY) $< $@
-
-$(ZIP1DIR)$/THIRDPARTYREADMELICENSE.html : $(PRJ)$/license$/THIRDPARTYREADMELICENSE.html
-    @@-$(MKDIRHIER) $(@:d)
     $(COPY) $< $@
 
 .ELSE			# "$(SOLAR_JAVA)"!=""

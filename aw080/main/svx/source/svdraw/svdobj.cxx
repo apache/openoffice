@@ -424,21 +424,21 @@ SdrObjPlusData* SdrObjPlusData::Clone(SdrObject* pObj1) const
 //////////////////////////////////////////////////////////////////////////////
 
 SdrObjTransformInfoRec::SdrObjTransformInfoRec()
-:	bSelectAllowed(true),
-	bMoveAllowed(true),
-	bResizeFreeAllowed(true),
-	bResizePropAllowed(true),
-	bRotateFreeAllowed(true),
-	bRotate90Allowed(true),
-	bMirrorFreeAllowed(true),
-	bMirror45Allowed(true),
+:	mbSelectAllowed(true),
+	mbMoveAllowed(true),
+	mbResizeFreeAllowed(true),
+	mbResizePropAllowed(true),
+	mbRotateFreeAllowed(true),
+	mbRotate90Allowed(true),
+	mbMirrorFreeAllowed(true),
+	mbMirror45Allowed(true),
 	mbMirror90Allowed(true),
 	mbTransparenceAllowed(true),
 	mbGradientAllowed(true),
 	mbShearAllowed(true),
 	mbEdgeRadiusAllowed(true),
-	bNoOrthoDesired(true),
-	bNoContortion(true),
+	mbNoOrthoDesired(true),
+	mbNoContortion(true),
 	mbCanConvToPath(true),
 	mbCanConvToPoly(true),
 	mbCanConvToContour(false),
@@ -680,8 +680,8 @@ sal_uInt16 SdrObject::GetObjIdentifier() const
 
 void SdrObject::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bRotateFreeAllowed = false;
-	rInfo.bMirrorFreeAllowed = false;
+	rInfo.mbRotateFreeAllowed = false;
+	rInfo.mbMirrorFreeAllowed = false;
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
 	rInfo.mbShearAllowed = false;
@@ -2493,11 +2493,16 @@ SvxShape* SdrObject::getSvxShape() const
     // retrieving the impl pointer and subsequently using it is not thread-safe, of course, so it needs to be
     // guarded by the SolarMutex
 
-#if OSL_DEBUG_LEVE > 0
     uno::Reference< uno::XInterface > xShape( maWeakUnoShape );
-    OSL_ENSURE( !( !xShapeGuard.is() && mpSvxShape ),
+#if OSL_DEBUG_LEVE > 0
+    OSL_ENSURE( !( !xShape.is() && mpSvxShape ),
         "SdrObject::getSvxShape: still having IMPL-Pointer to dead object!" );
 #endif
+    //#113608#, make sure mpSvxShape is always synchronized with maWeakUnoShape
+    if ( mpSvxShape && !xShape.is() )
+    {
+        const_cast< SvxShape* >(mpSvxShape) = NULL;
+    }
 
 	return mpSvxShape;
 }

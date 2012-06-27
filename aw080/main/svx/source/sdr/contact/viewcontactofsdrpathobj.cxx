@@ -53,7 +53,8 @@ namespace sdr
 			const drawinglayer::attribute::SdrLineFillShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
 					rItemSet, 
-					GetPathObj().getText(0)));
+					GetPathObj().getText(0),
+                    false));
             basegfx::B2DPolyPolygon aUnitPolyPolygon(GetPathObj().getB2DPolyPolygonInObjectCoordinates());
 			sal_uInt32 nPolyCount(aUnitPolyPolygon.count());
 			sal_uInt32 nPointCount(0);

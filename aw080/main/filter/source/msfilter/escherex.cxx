@@ -30,6 +30,7 @@
 #include <svx/svdoashp.hxx>
 #include <svx/svdoole2.hxx>
 #include <svx/svdmodel.hxx>
+#include <editeng/outlobj.hxx>
 #include <vcl/gradient.hxx>
 #include <vcl/graph.hxx>
 #include <vcl/cvtgrf.hxx>
@@ -995,6 +996,15 @@ void EscherPropertyContainer::CreateLineProperties(
 		}
 	}
 	AddOpt( ESCHER_Prop_lineJoinStyle, eLineJoin );
+	
+	if ( EscherPropertyValueHelper::GetPropertyValue(
+		aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "LineTransparence" ) ), sal_True ) )
+	{	
+		sal_Int16 nTransparency = 0;
+		if ( aAny >>= nTransparency )
+			AddOpt( ESCHER_Prop_lineOpacity, ( ( 100 - nTransparency ) << 16 ) / 100 );		
+	}
+
 
     if ( bEdge == sal_False )
     {
@@ -2035,8 +2045,12 @@ sal_Int32 GetValueForEnhancedCustomShapeParameter( const com::sun::star::drawing
 	{
 		case com::sun::star::drawing::EnhancedCustomShapeParameterType::EQUATION :
 		{
-			nValue = (sal_uInt16)rEquationOrder[ nValue ];
-			nValue |= (sal_uInt32)0x80000000;
+			OSL_ASSERT(nValue < rEquationOrder.size());
+			if ( nValue < rEquationOrder.size() )
+			{
+				nValue = (sal_uInt16)rEquationOrder[ nValue ];
+				nValue |= (sal_uInt32)0x80000000;
+			}
 		}
 		break;
 		case com::sun::star::drawing::EnhancedCustomShapeParameterType::NORMAL :
@@ -3066,6 +3080,15 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 									}
 								}
 							}
+							if ( EscherPropertyValueHelper::GetPropertyValue( aAny, aXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "CharHeight" ) ), sal_True ) )
+							{
+								float fCharHeight = 0.0;
+								if ( aAny >>= fCharHeight )
+								{
+									sal_Int32 nTextSize = static_cast< sal_Int32 > ( fCharHeight * 65536 );
+									AddOpt(ESCHER_Prop_gtextSize, nTextSize);
+								}
+							}
 							if ( EscherPropertyValueHelper::GetPropertyValue( aAny, aXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "CharKerning" ) ), sal_True ) )
 							{
 								sal_Int16 nCharKerning = sal_Int16();
@@ -3102,6 +3125,12 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 										nTextPathFlags &=~0x20;
 								}
 							}
+						}
+						if((nTextPathFlags & 0x4000) != 0)  //Is Font work
+						{
+							OutlinerParaObject* pOutlinerParaObject = pCustoShape->GetOutlinerParaObject();
+							if ( pOutlinerParaObject && pOutlinerParaObject->IsVertical() )
+								nTextPathFlags |= 0x2000;
 						}
 						if ( nTextPathFlags != nTextPathFlagsOrg )
 							AddOpt( DFF_Prop_gtextFStrikethrough, nTextPathFlags );

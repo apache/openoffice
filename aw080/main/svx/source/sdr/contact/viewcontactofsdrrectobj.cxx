@@ -57,7 +57,8 @@ namespace sdr
 			const drawinglayer::attribute::SdrLineFillShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
                     rItemSet, 
-                    GetRectObj().getText(0)));
+                    GetRectObj().getText(0),
+                    false));
 
 			// calculate corner radius
 			const sal_uInt32 nCornerRadius(((SdrMetricItem&)(rItemSet.Get(SDRATTR_ECKENRADIUS))).GetValue());

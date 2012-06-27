@@ -47,10 +47,11 @@ PATCH_FILES=\
 	Python-$(PYVERSION).patch \
 	Python-parallel-make.patch \
 	Python-ssl.patch \
-    Python-2.6.1-sysbase.patch\
+	Python-2.6.1-sysbase.patch\
 	Python-2.6.1-nohardlink.patch \
 	Python-disable-dbm.patch \
-	Python-linux3.patch
+	Python-linux3.patch \
+	Python-subversion-1-7.patch
 
 CONFIGURE_DIR=
 

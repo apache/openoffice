@@ -1650,18 +1650,18 @@ bool SdrObjCustomShape::IsDefaultGeometry( const DefaultType eDefaultType ) cons
 
 void SdrObjCustomShape::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bResizeFreeAllowed=fObjectRotation == 0.0;
-	rInfo.bResizePropAllowed=true;
-	rInfo.bRotateFreeAllowed=true;
-	rInfo.bRotate90Allowed  =true;
-	rInfo.bMirrorFreeAllowed=true;
-	rInfo.bMirror45Allowed  =true;
-	rInfo.mbMirror90Allowed  =true;
+	rInfo.mbResizeFreeAllowed = 0.0 == fObjectRotation;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = true;
+	rInfo.mbRotate90Allowed = true;
+	rInfo.mbMirrorFreeAllowed = true;
+	rInfo.mbMirror45Allowed = true;
+	rInfo.mbMirror90Allowed = true;
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
-	rInfo.mbShearAllowed     =true;
-	rInfo.mbEdgeRadiusAllowed=false;
-	rInfo.bNoContortion     =true;
+	rInfo.mbShearAllowed = true;
+	rInfo.mbEdgeRadiusAllowed = false;
+	rInfo.mbNoContortion = true;
 
 	// #i37011#
 	if ( mXRenderedCustomShape.is() )

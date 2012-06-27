@@ -160,16 +160,16 @@ sal_uInt16 SdrPageObj::GetObjIdentifier() const
 
 void SdrPageObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bRotateFreeAllowed = false;
-	rInfo.bRotate90Allowed = false;
-	rInfo.bMirrorFreeAllowed = false;
-	rInfo.bMirror45Allowed = false;
+	rInfo.mbRotateFreeAllowed = false;
+	rInfo.mbRotate90Allowed = false;
+	rInfo.mbMirrorFreeAllowed = false;
+	rInfo.mbMirror45Allowed = false;
 	rInfo.mbMirror90Allowed = false;
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
 	rInfo.mbShearAllowed = false;
 	rInfo.mbEdgeRadiusAllowed = false;
-	rInfo.bNoOrthoDesired = false;
+	rInfo.mbNoOrthoDesired = false;
 	rInfo.mbCanConvToPath = false;
 	rInfo.mbCanConvToPoly = false;
 	rInfo.mbCanConvToPathLineToArea = false;

@@ -741,12 +741,12 @@ void SdrGrafObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 	const bool bNoPresGrf((GRAPHIC_NONE != pGraphic->GetType()) && !IsEmptyPresObj());
 	const long nOldRotAngle(sdr::legacy::GetRotateAngle(*this));
 
-	rInfo.bResizeFreeAllowed = nOldRotAngle % 9000 == 0 || nOldRotAngle % 18000 == 0 || nOldRotAngle % 27000 == 0;
-	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = bNoPresGrf && !bAnim;
-	rInfo.bRotate90Allowed = bNoPresGrf && !bAnim;
-	rInfo.bMirrorFreeAllowed = bNoPresGrf && !bAnim;
-	rInfo.bMirror45Allowed = bNoPresGrf && !bAnim;
+	rInfo.mbResizeFreeAllowed = nOldRotAngle % 9000 == 0 || nOldRotAngle % 18000 == 0 || nOldRotAngle % 27000 == 0;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = bNoPresGrf && !bAnim;
+	rInfo.mbRotate90Allowed = bNoPresGrf && !bAnim;
+	rInfo.mbMirrorFreeAllowed = bNoPresGrf && !bAnim;
+	rInfo.mbMirror45Allowed = bNoPresGrf && !bAnim;
 	rInfo.mbMirror90Allowed = !IsEmptyPresObj();
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;
@@ -1480,6 +1480,12 @@ Reference< XInputStream > SdrGrafObj::getInputStream()
 	}
 
 	return xStream;
+}
+
+SfxStyleSheet* SdrGrafObj::getDefaultStyleSheet()
+{
+    // use stylesheet without fill and without line
+    return getSdrModelFromSdrObject.GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj();
 }
 
 // eof

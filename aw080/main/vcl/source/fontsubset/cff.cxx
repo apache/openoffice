@@ -1889,20 +1889,20 @@ public:
 	void		emitAllRaw( void);
 	void		emitAllHex( void);
 	void		emitAllCrypted( void);
-	int			tellPos( void) const;
+	int		tellPos( void) const;
 	void		updateLen( int nTellPos, int nLength);
 	void		emitValVector( const char* pLineHead, const char* pLineTail, const ValVector&);
 private:
 	FILE*		mpFileOut;
 	bool		mbCloseOutfile;
 	char		maBuffer[MAX_T1OPS_SIZE];	// TODO: dynamic allocation
-	int			mnEECryptR;
+	int		mnEECryptR;
 public:
 	char*		mpPtr;
 
 	char		maSubsetName[256];
 	bool		mbPfbSubset;
-	int			mnHexLineCol;
+	int		mnHexLineCol;
 };
 
 // --------------------------------------------------------------------
@@ -1971,10 +1971,11 @@ void Type1Emitter::updateLen( int nTellPos, int nLength)
 	cData[1] = static_cast<U8>(nLength >>  8);
 	cData[2] = static_cast<U8>(nLength >> 16);
 	cData[3] = static_cast<U8>(nLength >> 24);
-	const int nCurrPos = ftell( mpFileOut);
+	const long nCurrPos = ftell( mpFileOut);
 	fseek( mpFileOut, nTellPos, SEEK_SET);
 	fwrite( cData, 1, sizeof(cData), mpFileOut);
-	fseek( mpFileOut, nCurrPos, SEEK_SET);
+	if( nCurrPos >= 0)
+		fseek( mpFileOut, nCurrPos, SEEK_SET);
 }
 
 // --------------------------------------------------------------------
@@ -2317,6 +2318,8 @@ bool CffSubsetterContext::emitAsType1( Type1Emitter& rEmitter,
 		assert( (nGlyphId >= 0) && (nGlyphId < mnCharStrCount));
 		// get privdict context matching to the glyph
 		const int nFDSelect = getFDSelect( nGlyphId);
+		if( nFDSelect < 0)
+			continue;
 		mpCffLocal = &maCffLocal[ nFDSelect];
 		// convert the Type2op charstring to its Type1op counterpart
 		const int nT2Len = seekIndexData( mnCharStrBase, nGlyphId);

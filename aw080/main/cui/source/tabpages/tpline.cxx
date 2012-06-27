@@ -26,17 +26,12 @@
 
 // include ---------------------------------------------------------------
 
-#ifndef _SVX_SIZEITEM_HXX //autogen
-
 #include <editeng/sizeitem.hxx>
-#endif
 #include <tools/shl.hxx>
 #include <tools/urlobj.hxx>
 #include <sfx2/app.hxx>
 #include <sfx2/module.hxx>
-
 #define _SVX_TPLINE_CXX
-
 #include <cuires.hrc>
 #include "tabline.hrc"
 #include "svx/xattr.hxx"
@@ -49,7 +44,6 @@
 #include "svx/dlgutil.hxx"
 #include <svx/svdmodel.hxx>
 #include "svx/svxgrahicitem.hxx"
-//#include "linectrl.hrc"
 #include <sfx2/request.hxx>
 #include "svx/ofaitem.hxx" 
 #include <svx/svdobj.hxx>
@@ -1030,9 +1024,8 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 				if(pObj)
 				{
 					pObj = pObj->CloneSdrObject();
-					pPage->InsertObjectToSdrObjList(*pObj);
-					pView->MarkObj(*pObj);
-					if(pSymbolAttr)
+
+                    if(pSymbolAttr)
 					{
 						pObj->SetMergedItemSet(*pSymbolAttr);
 					}
@@ -1040,19 +1033,35 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 					{
 						pObj->SetMergedItemSet(rOutAttrs);
 					}
+
+					pPage->InsertObjectToSdrObjList(*pObj);
+
+                    // Generate invisible square to give all symbol types a
+                    // bitmap size, which is indepedent from specific glyph
+                    SdrObject *pInvisibleSquare = pSymbolList->GetObj(0);
+					pInvisibleSquare = pInvisibleSquare->CloneSdrObject();
+					pPage->InsertObjectToSdrObjList(*pInvisibleSquare);
+                    pInvisibleSquare->SetMergedItem(XFillTransparenceItem(100));
+                    pInvisibleSquare->SetMergedItem(XLineTransparenceItem(100));
+
+                    pView->MarkAll();
 					GDIMetaFile aMeta(pView->GetMarkedObjMetaFile());
 
 					aSymbolGraphic=Graphic(aMeta);
 					aSymbolSize=sdr::legacy::GetSnapRect(*pObj).GetSize();
-					aSymbolGraphic.SetPrefSize(aSymbolSize);
+                    aSymbolGraphic.SetPrefSize(sdr::legacy::GetSnapRect(*pInvisibleSquare).GetSize());
 					aSymbolGraphic.SetPrefMapMode(MAP_100TH_MM);
 					bPrevSym=sal_True;
 					bEnable=sal_True;
 					bIgnoreGraphic=sal_True;
 
 					pView->UnmarkAll();
-					pObj=pPage->RemoveObjectFromSdrObjList(0);
-                    deleteSdrObjectSafeAndClearPointer( pObj );
+					
+                    pInvisibleSquare = pPage->RemoveObjectFromSdrObjList(pInvisibleSquare->GetNavigationPosition());
+                    deleteSdrObjectSafeAndClearPointer(pInvisibleSquare);
+					
+                    pObj = pPage->RemoveObjectFromSdrObjList(pObj->GetNavigationPosition());
+                    deleteSdrObjectSafeAndClearPointer(pObj);
 				}
 			}
 		}
@@ -1077,11 +1086,11 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 		    bPrevSym=sal_True;
         }
 	}
+
 	if(rAttrs.GetItemState(rAttrs.GetPool()->GetWhich(SID_ATTR_SYMBOLSIZE),sal_True,&pPoolItem) == SFX_ITEM_SET)
 	{
 		aSymbolSize = ((const SvxSizeItem *)pPoolItem)->GetSize();
 	}
-
 
 	aSymbolRatioCB.Enable(bEnable);
 	aSymbolHeightFT.Enable(bEnable);
@@ -1733,23 +1742,37 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
 		SdrPage* pPage = new SdrPage( *pModel, sal_False );
 		pPage->SetPageScale(basegfx::B2DVector(1000.0, 1000.0));
 		pModel->InsertPage( pPage, 0 );
-		// 3D View
+		
+        // 3D View
 		SdrView* pView = new SdrView( *pModel, &aVDev );
 		pView->ShowSdrPage(*pPage);
 
 		PopupMenu* pPopup = new PopupMenu;
 		String aEmptyStr;
+
+        // Generate invisible square to give all symbols a
+        // bitmap size, which is indepedent from specific glyph
+        SdrObject *pInvisibleSquare = pSymbolList->GetObj(0);
+        pInvisibleSquare=pInvisibleSquare->CloneSdrObject();
+    	pPage->InsertObjectToSdrObjList(*pInvisibleSquare);
+        pInvisibleSquare->SetMergedItem(XFillTransparenceItem(100));
+        pInvisibleSquare->SetMergedItem(XLineTransparenceItem(100));
+
 		for(long i=0;; ++i)
 		{
             SdrObject *pObj=pSymbolList->GetObj(i);
-            if(pObj==NULL)
+            
+            if(!pObj)
+            {
                 break;
-			pObj = pObj->CloneSdrObject();
-			String *pStr=new String();
+            }
+
+            pObj = pObj->CloneSdrObject();
+			String *pStr = new String();
 			aGrfNames.Insert(pStr,LIST_APPEND);
 			pPage->InsertObjectToSdrObjList(*pObj);
-			pView->MarkObj(*pObj);
-			if(pSymbolAttr)
+
+            if(pSymbolAttr)
 			{
 				pObj->SetMergedItemSet(*pSymbolAttr);
 			}
@@ -1757,11 +1780,13 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
 			{
 				pObj->SetMergedItemSet(rOutAttrs);
 			}
-
+            
+            pView->MarkAll();
 			BitmapEx aBitmapEx(pView->GetMarkedObjBitmapEx());
 			GDIMetaFile aMeta(pView->GetMarkedObjMetaFile());
 			pView->UnmarkAll();
-			pObj=pPage->RemoveObjectFromSdrObjList(0);
+
+			pObj = pPage->RemoveObjectFromSdrObjList(pObj->GetNavigationPosition());
             deleteSdrObjectSafeAndClearPointer(pObj);
 
             SvxBrushItem* pBrushItem = new SvxBrushItem(Graphic(aMeta), GPOS_AREA, SID_ATTR_BRUSH);
@@ -1784,6 +1809,10 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
 			Image aImage(aBitmapEx);
 			pPopup->InsertItem(pInfo->nItemId,*pStr,aImage);
 		}
+
+    	pInvisibleSquare = pPage->RemoveObjectFromSdrObjList(pInvisibleSquare->GetNavigationPosition());
+        deleteSdrObjectSafeAndClearPointer(pInvisibleSquare);
+
 		aSymbolMB.GetPopupMenu()->SetPopupMenu( MN_SYMBOLS, pPopup );
 		if(!aGrfNames.Count())
 			aSymbolMB.GetPopupMenu()->EnableItem(MN_SYMBOLS, sal_False);

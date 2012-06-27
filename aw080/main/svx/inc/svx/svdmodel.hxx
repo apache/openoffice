@@ -220,6 +220,7 @@ protected:
 	// diverse data and helpers
 	rtl::Reference< SfxStyleSheetBasePool >	mxStyleSheetPool;
 	SfxStyleSheet*					mpDefaultStyleSheet;
+    SfxStyleSheet*                  mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj; // #119287#
 	comphelper::IEmbeddedHelper*	m_pEmbeddedHelper; // helper for embedded objects to get rid of the SfxObjectShell
 	OutputDevice*					mpReferenceOutputDevice;     // ReferenzDevice fuer die EditEngine
 	sfx2::LinkManager*				mpLinkManager;   // LinkManager
@@ -532,6 +533,10 @@ public:
 	// Model eingefuegt wird und kein StyleSheet gesetzt hat.
 	SfxStyleSheet* GetDefaultStyleSheet() const { return mpDefaultStyleSheet; }
 	void SetDefaultStyleSheet(SfxStyleSheet* pDefSS) { if(mpDefaultStyleSheet != pDefSS) mpDefaultStyleSheet = pDefSS; }
+
+    // #119287# default StyleSheet for SdrGrafObj and SdrOle2Obj
+    SfxStyleSheet* GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj() const { return mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj; }
+	void SetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj(SfxStyleSheet* pDefSS) { mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj = pDefSS; }
 
 	void SetStarDrawPreviewMode(bool bPreview);
 	bool IsStarDrawPreviewMode() { return mbStarDrawPreviewMode; }

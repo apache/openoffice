@@ -1805,7 +1805,7 @@ void SdrPathObj::ImpSetClosed(bool bClose)
 
 void SdrPathObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bNoContortion=false;
+	rInfo.mbNoContortion=false;
 
 	const bool bCanConv(!HasText() || ImpCanConvTextToCurve());
 	const bool bIsPath(isBezier());

@@ -89,6 +89,7 @@
 #include "sdgrffilter.hxx"
 #include "sdxfer.hxx"
 #include "undo/undoobjects.hxx"
+#include "glob.hrc"
 
 using namespace com::sun::star;
 

@@ -2518,6 +2518,11 @@ SetRedlineMode( eOld );
 			rPam.GetMark()->nContent.Assign( aPtNd.GetNode().GetCntntNode(),
 												nPtCnt );
 
+            if ( bJoinTxt && !bJoinPrev )
+            {
+                rPam.Move( fnMoveBackward );
+            }
+
 			if( pUndoRpl )
             {
                 pUndoRpl->SetEnd(rPam);

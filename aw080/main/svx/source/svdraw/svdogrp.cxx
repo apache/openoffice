@@ -150,7 +150,7 @@ SdrObjList* SdrObjGroup::getChildrenOfSdrObject() const
 
 void SdrObjGroup::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bNoContortion = false;
+	rInfo.mbNoContortion = false;
 	const sal_uInt32 nObjAnz(GetObjCount());
 
 	for(sal_uInt32 i(0); i < nObjAnz; i++) 
@@ -159,38 +159,104 @@ void SdrObjGroup::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 		SdrObjTransformInfoRec aInfo;
 		pObj->TakeObjInfo(aInfo);
 		
-		if (!aInfo.bMoveAllowed       ) rInfo.bMoveAllowed        = false;
-		if (!aInfo.bResizeFreeAllowed ) rInfo.bResizeFreeAllowed  = false;
-		if (!aInfo.bResizePropAllowed ) rInfo.bResizePropAllowed  = false;
-		if (!aInfo.bRotateFreeAllowed ) rInfo.bRotateFreeAllowed  = false;
-		if (!aInfo.bRotate90Allowed   ) rInfo.bRotate90Allowed    = false;
-		if (!aInfo.bMirrorFreeAllowed ) rInfo.bMirrorFreeAllowed  = false;
-		if (!aInfo.bMirror45Allowed   ) rInfo.bMirror45Allowed    = false;
-		if (!aInfo.mbMirror90Allowed  ) rInfo.mbMirror90Allowed   = false;
-		if (!aInfo.mbShearAllowed     ) rInfo.mbShearAllowed      = false;
-		if (!aInfo.mbEdgeRadiusAllowed) rInfo.mbEdgeRadiusAllowed = false;
-		if (!aInfo.bNoOrthoDesired    ) rInfo.bNoOrthoDesired     = false;
-		if (aInfo.bNoContortion       ) rInfo.bNoContortion       = true;
-		if (!aInfo.mbCanConvToPath    ) rInfo.mbCanConvToPath     = false;
-		if (!aInfo.mbCanConvToContour ) rInfo.mbCanConvToContour  = false;
-		
-		if (!aInfo.mbCanConvToPoly          ) rInfo.mbCanConvToPoly           = false;
-		if (!aInfo.mbCanConvToPathLineToArea) rInfo.mbCanConvToPathLineToArea = false;
-		if (!aInfo.mbCanConvToPolyLineToArea) rInfo.mbCanConvToPolyLineToArea = false;
+		if(!aInfo.mbMoveAllowed) 
+        {
+            rInfo.mbMoveAllowed = false;
+        }
+
+		if(!aInfo.mbResizeFreeAllowed) 
+        {
+            rInfo.mbResizeFreeAllowed = false;
+        }
+
+		if(!aInfo.mbResizePropAllowed) 
+        {
+            rInfo.mbResizePropAllowed = false;
+        }
+
+		if(!aInfo.mbRotateFreeAllowed) 
+        {
+            rInfo.mbRotateFreeAllowed = false;
+        }
+
+		if(!aInfo.mbRotate90Allowed) 
+        {
+            rInfo.mbRotate90Allowed = false;
+        }
+
+		if(!aInfo.mbMirrorFreeAllowed) 
+        {
+            rInfo.mbMirrorFreeAllowed = false;
+        }
+
+		if(!aInfo.mbMirror45Allowed) 
+        {
+            rInfo.mbMirror45Allowed = false;
+        }
+
+		if(!aInfo.mbMirror90Allowed) 
+        {
+            rInfo.mbMirror90Allowed = false;
+        }
+
+		if(!aInfo.mbShearAllowed) 
+        {
+            rInfo.mbShearAllowed = false;
+        }
+
+		if(!aInfo.mbEdgeRadiusAllowed) 
+        {
+            rInfo.mbEdgeRadiusAllowed = false;
+        }
+
+		if(!aInfo.mbNoOrthoDesired) 
+        {
+            rInfo.mbNoOrthoDesired = false;
+        }
+
+		if(aInfo.mbNoContortion) 
+        {
+            rInfo.mbNoContortion = true;
+        }
+
+		if(!aInfo.mbCanConvToPath) 
+        {
+            rInfo.mbCanConvToPath = false;
+        }
+
+		if(!aInfo.mbCanConvToContour) 
+        {
+            rInfo.mbCanConvToContour = false;
+        }
+
+		if(!aInfo.mbCanConvToPoly) 
+        {
+            rInfo.mbCanConvToPoly = false;
+        }
+
+		if(!aInfo.mbCanConvToPathLineToArea) 
+        {
+            rInfo.mbCanConvToPathLineToArea = false;
+        }
+
+		if(!aInfo.mbCanConvToPolyLineToArea) 
+        {
+            rInfo.mbCanConvToPolyLineToArea = false;
+        }
 	}
 
 	if(!nObjAnz) 
 	{
-		rInfo.bRotateFreeAllowed    = false;
-		rInfo.bRotate90Allowed      = false;
-		rInfo.bMirrorFreeAllowed    = false;
-		rInfo.bMirror45Allowed      = false;
-		rInfo.mbMirror90Allowed     = false;
+		rInfo.mbRotateFreeAllowed = false;
+		rInfo.mbRotate90Allowed = false;
+		rInfo.mbMirrorFreeAllowed = false;
+		rInfo.mbMirror45Allowed = false;
+		rInfo.mbMirror90Allowed = false;
 		rInfo.mbTransparenceAllowed = false;
-		rInfo.mbGradientAllowed     = false;
-		rInfo.mbShearAllowed        = false;
-		rInfo.mbEdgeRadiusAllowed   = false;
-		rInfo.bNoContortion         = true;
+		rInfo.mbGradientAllowed = false;
+		rInfo.mbShearAllowed = false;
+		rInfo.mbEdgeRadiusAllowed = false;
+		rInfo.mbNoContortion = true;
 	}
 
 	if(1 != nObjAnz)

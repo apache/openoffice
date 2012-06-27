@@ -35,6 +35,11 @@ TARGET=coinmp
 all:
 	@echo "CoinMP is disabled and will not be built."
 
+.ELIF "$(SYSTEM_COINMP)"=="YES"
+
+all:
+	@echo "Using system CoinMP.  Does not have to be built."
+
 .ELSE
 
 TARFILE_NAME=CoinMP-1.6.0

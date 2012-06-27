@@ -132,6 +132,7 @@ SdrModel::SdrModel(const String& rPath, SfxItemPool* pPool, ::comphelper::IEmbed
 	mpOutlinerCache(0),
 	mxStyleSheetPool(),
 	mpDefaultStyleSheet(0),
+    mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj(0),
 	m_pEmbeddedHelper(pPers),
 	mpReferenceOutputDevice(0),
 	mpLinkManager(0),

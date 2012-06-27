@@ -587,7 +587,8 @@ PptSlidePersistEntry::PptSlidePersistEntry() :
 
 PptSlidePersistEntry::~PptSlidePersistEntry()
 {
-    delete pStyleSheet;
+	delete pStyleSheet;
+	delete pHeaderFooterEntry;
 	delete pSolverContainer;
 	delete[] pPresentationObjects;
 };
@@ -4692,11 +4693,17 @@ PPTCharPropSet::PPTCharPropSet( sal_uInt32 nParagraph ) :
 	mpFieldItem		( NULL ),
 	pCharSet		( new ImplPPTCharPropSet )
 {
+	mnHylinkOrigColor = 0;
+	mbIsHyperlink = sal_False;
+	mbHardHylinkOrigColor = sal_False;
 	mnLanguage[ 0 ] = mnLanguage[ 1 ] = mnLanguage[ 2 ] = 0;
 }
 
 PPTCharPropSet::PPTCharPropSet( PPTCharPropSet& rCharPropSet )
 {
+	mnHylinkOrigColor = rCharPropSet.mnHylinkOrigColor;
+	mbIsHyperlink = rCharPropSet.mbIsHyperlink;
+	mbHardHylinkOrigColor = rCharPropSet.mbHardHylinkOrigColor;
 	pCharSet = rCharPropSet.pCharSet;
 	pCharSet->mnRefCount++;
 
@@ -4713,6 +4720,10 @@ PPTCharPropSet::PPTCharPropSet( PPTCharPropSet& rCharPropSet, sal_uInt32 nParagr
 {
 	pCharSet = rCharPropSet.pCharSet;
 	pCharSet->mnRefCount++;
+
+	mnHylinkOrigColor = rCharPropSet.mnHylinkOrigColor;
+	mbIsHyperlink = rCharPropSet.mbIsHyperlink;
+	mbHardHylinkOrigColor = rCharPropSet.mbHardHylinkOrigColor;
 
 	mnParagraph = nParagraph;
 	mnOriginalTextPos = rCharPropSet.mnOriginalTextPos;
@@ -5066,13 +5077,11 @@ sal_Bool PPTTextSpecInfoAtomInterpreter::Read( SvStream& rIn, const DffRecordHea
 			}
 			if ( nLang )
 			{
-				sal_uInt16 nScriptType = GetI18NScriptTypeOfLanguage( nLang );
-				if ( nScriptType & SCRIPTTYPE_LATIN )
-					pEntry->nLanguage[ 0 ] = nLang;
-				if ( nScriptType & SCRIPTTYPE_ASIAN )
-					pEntry->nLanguage[ 1 ] = nLang;
-				if ( nScriptType & SCRIPTTYPE_COMPLEX )
-					pEntry->nLanguage[ 2 ] = nLang;
+// bug119985 2012.06.14
+				if (i == 2)
+				{
+					pEntry->nLanguage[ 0 ] = pEntry->nLanguage[ 1 ] = pEntry->nLanguage[ 2 ] = nLang;
+				}
 			}
 			nFlags &= ~i;
 		}
@@ -5804,7 +5813,16 @@ void PPTPortionObj::ApplyTo(  SfxItemSet& rSet, SdrPowerPointImport& rManager, s
 	{
 		PptFontEntityAtom* pFontEnityAtom = rManager.GetFontEnityAtom( nVal );
 		if ( pFontEnityAtom )
-            rSet.Put( SvxFontItem( pFontEnityAtom->eFamily, pFontEnityAtom->aName, String(), pFontEnityAtom->ePitch, pFontEnityAtom->eCharSet, EE_CHAR_FONTINFO ) );
+		{
+			rSet.Put( SvxFontItem( pFontEnityAtom->eFamily, pFontEnityAtom->aName, String(), pFontEnityAtom->ePitch, pFontEnityAtom->eCharSet, EE_CHAR_FONTINFO ) );
+
+            // #119475# bullet font info for CJK and CTL
+            if ( RTL_TEXTENCODING_SYMBOL ==  pFontEnityAtom->eCharSet )
+			{
+				rSet.Put( SvxFontItem( pFontEnityAtom->eFamily, pFontEnityAtom->aName, String(), pFontEnityAtom->ePitch, pFontEnityAtom->eCharSet, EE_CHAR_FONTINFO_CJK ) );
+				rSet.Put( SvxFontItem( pFontEnityAtom->eFamily, pFontEnityAtom->aName, String(), pFontEnityAtom->ePitch, pFontEnityAtom->eCharSet, EE_CHAR_FONTINFO_CTL ) );
+			}		
+		}
 	}
 	if ( GetAttrib( PPT_CharAttr_FontHeight, nVal, nDestinationInstance ) )	// Schriftgrad in Point
 	{
@@ -6236,7 +6254,20 @@ sal_Bool PPTParagraphObj::GetAttrib( sal_uInt32 nAttr, sal_uInt32& nRetValue, sa
 					{
 						PPTPortionObj* pPortion = mpPortionList[ 0 ];
 						if ( pPortion )
-							bIsHardAttribute = pPortion->GetAttrib( PPT_CharAttr_FontColor, nRetValue, nDestinationInstance );
+						{
+							if (pPortion->mbIsHyperlink )
+							{
+								if( pPortion->mbHardHylinkOrigColor )
+									nRetValue = pPortion->mnHylinkOrigColor;
+								else
+									nRetValue = mrStyleSheet.mpCharSheet[ mnInstance ]->maCharLevel[ pParaSet->mnDepth ].mnFontColor;
+								bIsHardAttribute = sal_True;
+							}
+							else
+							{
+								bIsHardAttribute = pPortion->GetAttrib( PPT_CharAttr_FontColor, nRetValue, nDestinationInstance );
+							}
+						}
 					}
 					else
 					{
@@ -7182,6 +7213,10 @@ PPTTextObj::PPTTextObj( SvStream& rIn, SdrPowerPointImport& rSdrPowerPointImport
 
 															const SvxURLField* pField = (const SvxURLField*)pFE->pField1->GetField();
 
+															pCurrent->mbIsHyperlink=sal_True;
+                                                            pCurrent->mnHylinkOrigColor=pCurrent->pCharSet->mnColor;
+															pCurrent->mbHardHylinkOrigColor= ( ( pCurrent->pCharSet->mnAttrSet >>PPT_CharAttr_FontColor ) & 1)>0;
+
 															if ( pCurrent->mpFieldItem )
 															{
 																pCurrent->SetColor( PPT_COLSCHEME_A_UND_HYPERLINK );
@@ -7655,12 +7690,8 @@ void ApplyCellAttributes( const SdrObject* pObj, Reference< XCell >& xCell )
 		if ( eFillStyle != XFILL_NONE )
 		{
 			sal_Int16 nFillTransparence( ( (const XFillTransparenceItem&)pObj->GetMergedItem( XATTR_FILLTRANSPARENCE ) ).GetValue() );
-			if ( nFillTransparence != 100 )
-			{
-				nFillTransparence *= 100;
-				static const rtl::OUString sFillTransparence( String( RTL_CONSTASCII_USTRINGPARAM( "FillTransparence" ) ) );
-				xPropSet->setPropertyValue( sFillTransparence, Any( nFillTransparence ) );
-			}
+			static const rtl::OUString sFillTransparence( String( RTL_CONSTASCII_USTRINGPARAM( "FillTransparence" ) ) );
+			xPropSet->setPropertyValue( sFillTransparence, Any( nFillTransparence ) );
 		}
 	}
 	catch( Exception& )
@@ -7682,8 +7713,9 @@ void ApplyCellLineAttributes( const SdrObject* pLine, Reference< XTable >& xTabl
 				{
 					Color aLineColor( ((XLineColorItem&)pLine->GetMergedItem( XATTR_LINECOLOR )).GetColorValue() );
 					aBorderLine.Color = aLineColor.GetColor();
-					aBorderLine.OuterLineWidth = static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4 );
-					aBorderLine.InnerLineWidth = static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4 );
+					// Avoid width = 0, the min value should be 1.
+					aBorderLine.OuterLineWidth = std::max( static_cast< sal_Int16 >( 1 ), static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4) );		
+					aBorderLine.InnerLineWidth = std::max( static_cast< sal_Int16 >( 1 ), static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4) );							     
 					aBorderLine.LineDistance = 0;
 				}
 				break;

@@ -1655,6 +1655,7 @@ sal_Bool SwChartDataProvider::DeleteBox( const SwTable *pTable, const SwTableBox
         {
 			SwChartDataSequence *pDataSeq = 0;
             sal_Bool bNowEmpty = sal_False;
+            sal_Bool bSeqDisposed = sal_False;
 
             // check if weak reference is still valid...
 //            uno::Reference< chart2::data::XDataSequence > xRef( uno::Reference< chart2::data::XDataSequence>(*aIt), uno::UNO_QUERY );
@@ -1666,10 +1667,19 @@ sal_Bool SwChartDataProvider::DeleteBox( const SwTable *pTable, const SwTableBox
                 pDataSeq = static_cast< SwChartDataSequence * >( xRef.get() );
                 if (pDataSeq)
                 {
+                    try
+                    {
 #if OSL_DEBUG_LEVEL > 1
                     OUString aRangeStr( pDataSeq->getSourceRangeRepresentation() );
 #endif
                     bNowEmpty = pDataSeq->DeleteBox( rBox );
+                    }
+                    catch (lang::DisposedException&)
+                    {
+                        bNowEmpty = sal_True;
+                        bSeqDisposed = sal_True;
+                    }
+					
                     if (bNowEmpty)
                         aDelIt = aIt;
                 }
@@ -1679,8 +1689,8 @@ sal_Bool SwChartDataProvider::DeleteBox( const SwTable *pTable, const SwTableBox
             if (bNowEmpty)
 			{
                 rSet.erase( aDelIt );
-				if (pDataSeq)
-					pDataSeq->dispose();    // the current way to tell chart that sth. got removed
+                if (pDataSeq && !bSeqDisposed)
+                    pDataSeq->dispose();    // the current way to tell chart that sth. got removed
 			}
         }
     }
@@ -2590,6 +2600,20 @@ void SAL_CALL SwChartDataSequence::dispose(  )
             else {
                 DBG_ERROR( "table missing" );
             }
+		
+		//Comment: The bug is crashed for an exception threw out in SwCharDataSequence::setModified(), just because
+		//the SwCharDataSequence object has been disposed. Actually, the former design of SwClient will disband 
+		//itself from the notification list in its destruction. But the SwCharDataSeqence wont be destructed but disposed
+		//in code (the data member SwChartDataSequence::bDisposed will be set to TRUE), the relationship between client
+		//and modification are not released. So any notification from modify object will lead said exception threw out.
+		//Recorrect the logic of code in SwChartDataSequence::Dispose(), release the relationship inside...
+		SwModify* pRegisteredIn = GetRegisteredInNonConst();
+		if (pRegisteredIn && pRegisteredIn->GetDepends())
+		{
+			pRegisteredIn->Remove(this);
+			pTblCrsr = NULL;
+		}
+		
         }
 
         // require listeners to release references to this object
@@ -2622,6 +2646,9 @@ void SAL_CALL SwChartDataSequence::removeEventListener(
 
 sal_Bool SwChartDataSequence::DeleteBox( const SwTableBox &rBox )
 {
+	if (bDisposed)
+		throw lang::DisposedException();
+
 #if OSL_DEBUG_LEVEL > 1
 	String aBoxName( rBox.GetName() );
 #endif

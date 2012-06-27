@@ -258,10 +258,10 @@ SdrObject* SdrCaptionObj::CloneSdrObject(SdrModel* pTargetModel) const
 
 void SdrCaptionObj::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bRotateFreeAllowed = false;
-	rInfo.bRotate90Allowed = false;
-	rInfo.bMirrorFreeAllowed = false;
-	rInfo.bMirror45Allowed = false;
+	rInfo.mbRotateFreeAllowed = false;
+	rInfo.mbRotate90Allowed = false;
+	rInfo.mbMirrorFreeAllowed = false;
+	rInfo.mbMirror45Allowed = false;
 	rInfo.mbMirror90Allowed = false;
 	rInfo.mbTransparenceAllowed = false;
 	rInfo.mbGradientAllowed = false;

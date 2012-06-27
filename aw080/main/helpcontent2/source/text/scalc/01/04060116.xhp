@@ -46,8 +46,6 @@
       </section>
 <sort>
 <section id="imabs">
-         <paragraph xml-lang="en-US" id="par_id3145074" role="paragraph" l10n="E" oldref="166"
-                    localize="false"/>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154959"><bookmark_value>IMABS function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMABS" id="bm_id3154541" localize="false"/>
@@ -123,7 +121,67 @@
          <paragraph xml-lang="en-US" id="hd_id3152980" role="heading" level="3" l10n="U"
                     oldref="78">Example</paragraph>
          <paragraph xml-lang="en-US" id="par_id3157901" role="paragraph" l10n="U" oldref="79">
-            <item type="input">=IMCOS("3+4j") </item>returns -27.03-3.85i (rounded).</paragraph>
+            <item type="input">=IMCOS("3+4j") </item>returns -27.03-3.85j (rounded).</paragraph>
+      </section>
+      <section id="imcosh">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149148"><bookmark_value>IMCOSH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCOS" id="bm_id3150380" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149148" role="heading" level="2" oldref="">IMCOSH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149727" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCOSH">The result is the hyberbolic cosine of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159118" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147417" role="code" l10n="New" oldref="">IMCOSH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152982" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157903" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCOSH("3+4j") </item>returns -6.58066304-7.58155274j (rounded).</paragraph>
+      </section>
+      <section id="imcot">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149149"><bookmark_value>IMCOT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCOT" id="bm_id3150381" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149149" role="heading" level="2" oldref="">IMCOT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149728" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCOT">The result is the cotangent of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159119" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147418" role="code" l10n="New" oldref="">IMCOT("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152983" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157904" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCOT("3+4j") </item>returns -0.00018759-1.00064439j (rounded).</paragraph>
+      </section>
+      <section id="imcsc">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149147"><bookmark_value>IMCSC function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCSC" id="bm_id3150379" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149147" role="heading" level="2" oldref="">IMCSC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149726" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCSC">The result is the cosecant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159117" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147416" role="code" l10n="New" oldref="">IMCSC("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152981" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157902" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCSC("3+4j") </item>returns 0.00517447+0.03627589j (rounded).</paragraph>
+      </section>
+      <section id="imcsch">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149150"><bookmark_value>IMCSCH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCSCH" id="bm_id3150382" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149150" role="heading" level="2" oldref="">IMCSCH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149729" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCSCH">The result is the hyperbolic cosecant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159120" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147419" role="code" l10n="New" oldref="">IMCSCH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152984" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157905" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCSCH("3+4j") </item>returns -1.30632891+1.51251400j (rounded). </paragraph>
       </section>
       <section id="imdiv">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150024"><bookmark_value>IMDIV function</bookmark_value>
@@ -246,6 +304,36 @@
          <paragraph xml-lang="en-US" id="par_id3155986" role="paragraph" l10n="U" oldref="135">
             <item type="input">=IMREAL("1+3j")</item> returns 1.</paragraph>
       </section>
+      <section id="imsec">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148430"><bookmark_value>IMSEC function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSEC" id="bm_id3153715" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148430" role="heading" level="2" oldref="">IMSEC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152590" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMSEC">The result is the secant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149821" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150386" role="code" l10n="New" oldref="">IMSEC("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3150612" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154309" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMSEC("3+4j")</item> returns -0.03625350+0.00516434j (rounded).</paragraph>
+      </section>
+      <section id="imsech">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148432"><bookmark_value>IMSECH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSECH" id="bm_id3153717" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148432" role="heading" level="2" oldref="">IMSECH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152592" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMSECH">The result is the hyperbolic secant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149823" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150388" role="code" l10n="New" oldref="">IMSECH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3150614" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154311" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMSECH("3+4j")</item> returns -1.30823089+1.51467895j (rounded).</paragraph>
+      </section>
       <section id="imsin">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3148431"><bookmark_value>IMSIN function</bookmark_value>
 </bookmark>
@@ -260,6 +348,21 @@
                     oldref="141">Example</paragraph>
          <paragraph xml-lang="en-US" id="par_id3154310" role="paragraph" l10n="U" oldref="142">
             <item type="input">=IMSIN("3+4j")</item> returns 3.85+27.02j (rounded).</paragraph>
+      </section>
+      <section id="imsinh">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148433"><bookmark_value>IMSINH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSINH" id="bm_id3153718" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148433" role="heading" level="2" oldref="">IMSINH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152593" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMSINH">The result is the hyperbolic sine of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149824" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150389" role="code" l10n="New" oldref="">IMSINH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3150615" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154312" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMSINH("3+4j")</item> returns -6.54812004-7.61923172j (rounded).</paragraph>
       </section>
       <section id="imsub">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3163826"><bookmark_value>IMSUB function</bookmark_value>
@@ -305,6 +408,21 @@
                     oldref="172">Example</paragraph>
          <paragraph xml-lang="en-US" id="par_id3152807" role="paragraph" l10n="U" oldref="173">
             <item type="input">=IMSQRT("3+4i")</item> returns 2+1i.</paragraph>
+      </section>
+      <section id="imtan">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149151"><bookmark_value>IMTAN function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMTAN" id="bm_id3150383" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149151" role="heading" level="2" oldref="">IMTAN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149730" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMTAN">The result is the tangent of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159121" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147420" role="code" l10n="New" oldref="">IMTAN("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152985" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157906" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMTAN("3+4j") </item>returns -0.00018734+0.99935599j (rounded).</paragraph>
       </section>
       <section id="complexfunc">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154054"><bookmark_value>COMPLEX function</bookmark_value>

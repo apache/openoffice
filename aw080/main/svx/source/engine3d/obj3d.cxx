@@ -229,12 +229,12 @@ sal_uInt16 E3dObject::GetObjIdentifier() const
 
 void E3dObject::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.bResizeFreeAllowed = true;
-	rInfo.bResizePropAllowed = true;
-	rInfo.bRotateFreeAllowed = true;
-	rInfo.bRotate90Allowed = true;
-	rInfo.bMirrorFreeAllowed = false;
-	rInfo.bMirror45Allowed = false;
+	rInfo.mbResizeFreeAllowed = true;
+	rInfo.mbResizePropAllowed = true;
+	rInfo.mbRotateFreeAllowed = true;
+	rInfo.mbRotate90Allowed = true;
+	rInfo.mbMirrorFreeAllowed = false;
+	rInfo.mbMirror45Allowed = false;
 	rInfo.mbMirror90Allowed = false;
 	rInfo.mbShearAllowed = false;
 	rInfo.mbEdgeRadiusAllowed = false;

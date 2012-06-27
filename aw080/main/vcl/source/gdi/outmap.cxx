@@ -2212,10 +2212,17 @@ long* OutputDevice::LogicToLogic( long* pX, sal_uInt16 nCount,
 
 // -----------------------------------------------------------------------
 
+#define CHEKCMAPUNITSFORSTATIC( aMapA, aMapB ) \
+    OSL_ENSURE((MAP_PIXEL == aMapA && MAP_PIXEL != aMapB) && (MAP_PIXEL != aMapA && MAP_PIXEL == aMapB), \
+    "Caution: When using the static LogicToLogic methods to convert between pixels and logic sizes,/n\
+    not the correct system DPI is used, but a DPI of 75 is guessed. To use the correct DPI, use e.g./n\
+    the OutputDevice from Application::GetDefaultDevice() (!)");
+
 Point OutputDevice::LogicToLogic( const Point& rPtSource,
 								  const MapMode& rMapModeSource,
 								  const MapMode& rMapModeDest )
 {
+    CHEKCMAPUNITSFORSTATIC(rMapModeSource.GetMapUnit(), rMapModeDest.GetMapUnit())
 	if ( rMapModeSource == rMapModeDest )
 		return rPtSource;
 
@@ -2252,6 +2259,7 @@ Size OutputDevice::LogicToLogic( const Size& rSzSource,
 								 const MapMode& rMapModeSource,
 								 const MapMode& rMapModeDest )
 {
+    CHEKCMAPUNITSFORSTATIC(rMapModeSource.GetMapUnit(), rMapModeDest.GetMapUnit())
 	if ( rMapModeSource == rMapModeDest )
 		return rSzSource;
 
@@ -2286,6 +2294,7 @@ basegfx::B2DPolygon OutputDevice::LogicToLogic( const basegfx::B2DPolygon& rPoly
                                                 const MapMode& rMapModeSource,
                                                 const MapMode& rMapModeDest )
 {
+    CHEKCMAPUNITSFORSTATIC(rMapModeSource.GetMapUnit(), rMapModeDest.GetMapUnit())
 	if ( rMapModeSource == rMapModeDest )
 		return rPolySource;
 
@@ -2331,6 +2340,7 @@ basegfx::B2DPolyPolygon OutputDevice::LogicToLogic( const basegfx::B2DPolyPolygo
                                                     const MapMode& rMapModeSource,
                                                     const MapMode& rMapModeDest )
 {
+    CHEKCMAPUNITSFORSTATIC(rMapModeSource.GetMapUnit(), rMapModeDest.GetMapUnit())
 	if ( rMapModeSource == rMapModeDest )
 		return rPolySource;
 
@@ -2376,6 +2386,7 @@ Rectangle OutputDevice::LogicToLogic( const Rectangle& rRectSource,
 									  const MapMode& rMapModeSource,
 									  const MapMode& rMapModeDest )
 {
+    CHEKCMAPUNITSFORSTATIC(rMapModeSource.GetMapUnit(), rMapModeDest.GetMapUnit())
 	if ( rMapModeSource == rMapModeDest )
 		return rRectSource;
 
@@ -2424,6 +2435,7 @@ long OutputDevice::LogicToLogic( long nLongSource,
 	if ( eUnitSource == eUnitDest )
 		return nLongSource;
 
+    CHEKCMAPUNITSFORSTATIC(eUnitSource, eUnitDest)
 	ENTER2( eUnitSource, eUnitDest );
 	ENTER3( eUnitSource, eUnitDest );
 
@@ -2450,6 +2462,7 @@ basegfx::B2DHomMatrix OutputDevice::GetTransformLogicToLogic(const MapMode& rMap
 
 double OutputDevice::GetFactorLogicToLogic(MapUnit eUnitSource, MapUnit eUnitDest)
 {
+    CHEKCMAPUNITSFORSTATIC(eUnitSource, eUnitDest)
 	if ( eUnitSource == eUnitDest )
 		return 1.0;
 
