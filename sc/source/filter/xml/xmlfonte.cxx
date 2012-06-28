@@ -45,14 +45,11 @@
 
 class ScXMLFontAutoStylePool_Impl: public XMLFontAutoStylePool
 {
-private:
-    // #i120077# remember owned pool
-	SfxItemPool*    mpEditEnginePool;
+	void AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 nIdCount, const SfxItemPool* pItemPool, const sal_Bool bExportDefaults);
+	public:
 
-    void AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 nIdCount, const SfxItemPool* pItemPool, const sal_Bool bExportDefaults);
-public:
 	ScXMLFontAutoStylePool_Impl( ScXMLExport& rExport );
-	virtual ~ScXMLFontAutoStylePool_Impl();
+
 };
 
 void ScXMLFontAutoStylePool_Impl::AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 nIdCount, const SfxItemPool* pItemPool, const sal_Bool bExportDefaults)
@@ -86,8 +83,7 @@ void ScXMLFontAutoStylePool_Impl::AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 
 
 ScXMLFontAutoStylePool_Impl::ScXMLFontAutoStylePool_Impl(
 	ScXMLExport& rExportP ) :
-	XMLFontAutoStylePool( rExportP ),
-    mpEditEnginePool(0)
+	XMLFontAutoStylePool( rExportP )
 {
 	sal_uInt16 aWhichIds[3] = { ATTR_FONT, ATTR_CJK_FONT,
 								ATTR_CTL_FONT };
@@ -100,19 +96,20 @@ ScXMLFontAutoStylePool_Impl::ScXMLFontAutoStylePool_Impl(
 	AddFontItems(aWhichIds, 3, pItemPool, sal_True);
 	const SfxItemPool* pEditPool(rExportP.GetDocument()->GetEditPool());
 	AddFontItems(aEditWhichIds, 3, pEditPool, sal_False);
-    
-    if(rExportP.GetDocument() && rExportP.GetDocument()->GetStyleSheetPool())
+
+	SfxStyleSheetIteratorPtr pItr;
+
+    if(rExportP.GetDocument())
     {
-        // memory leak #i120077#
-        SfxStyleSheetIterator aIter(rExportP.GetDocument()->GetStyleSheetPool(), SFX_STYLE_FAMILY_PAGE, 0xFFFF);
-		SfxStyleSheetBase* pStyle(aIter.First());
-		
-        // #i120077# init pool and use it
-		mpEditEnginePool = EditEngine::CreatePool();  // memory leak #i120077#, to save the SfxItemPool obj into member data for releasing
-		SfxItemPool* pPageEditPool( mpEditEnginePool );
+    	pItr = rExportP.GetDocument()->GetStyleSheetPool()->CreateIterator(SFX_STYLE_FAMILY_PAGE, 0xFFFF);
+    }
+
+	if(pItr)
+	{
+		SfxStyleSheetBase* pStyle(pItr->First());
+		SfxItemPool* pPageEditPool(EditEngine::CreatePool());
 		EditEngine aEditEngine(pPageEditPool);
-		
-        while (pStyle)
+		while (pStyle)
 		{
 			const SfxItemPool& rPagePool(pStyle->GetPool().GetPool());
 			for (sal_uInt8 j = 0; j < 4; ++j)
@@ -145,19 +142,11 @@ ScXMLFontAutoStylePool_Impl::ScXMLFontAutoStylePool_Impl(
 					}
 				}
 			}
-			pStyle = aIter.Next();
+			pStyle = pItr->Next();
 		}
 	}
 }
 
-ScXMLFontAutoStylePool_Impl::~ScXMLFontAutoStylePool_Impl()
-{
-	if(mpEditEnginePool)
-	{
-        // memory leak #i120077#
-		SfxItemPool::Free(mpEditEnginePool);  
-	}
-}
 
 XMLFontAutoStylePool* ScXMLExport::CreateFontAutoStylePool()
 {
