@@ -19,20 +19,45 @@
  * 
  *************************************************************/
 
+package org.openoffice.test.common;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
-package testsuite;
+/**
+ * Pump data from input stream into a StringBuffer
+ *
+ */
+public class StreamPump extends Thread {
+	StringBuffer stringBuffer = null;
+	InputStream inputStream = null;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
+	public StreamPump(StringBuffer stringBuffer, InputStream inputStream) {
+		this.stringBuffer = stringBuffer;
+		this.inputStream = inputStream;
+	}
 
-import testcase.BVTFileType;
-import testcase.BVTFunction;
-import testcase.SmokeTest;
-
-@RunWith(Suite.class)
-@SuiteClasses({SmokeTest.class, BVTFileType.class, BVTFunction.class})
-public class BVT {
-
+	public void run() {
+		InputStreamReader reader = null;
+		try {
+			reader = new InputStreamReader(inputStream);
+			char[] buf = new char[1024];
+			int count = 0;
+			while ((count = reader.read(buf)) != -1) {
+				// If we need collect the output
+				if (stringBuffer != null)
+					stringBuffer.append(buf, 0, count);
+			}
+		} catch (IOException e) {
+			// ignore.
+		} finally {
+			if (reader != null)
+				try {
+					reader.close();
+				} catch (IOException e) {
+					// ignore
+				}
+		}
+	}
 }
