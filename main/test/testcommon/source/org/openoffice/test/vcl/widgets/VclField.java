@@ -24,25 +24,23 @@
 package org.openoffice.test.vcl.widgets;
 
 import org.openoffice.test.vcl.client.Constant;
-import org.openoffice.test.vcl.client.SmartId;
 
 /**
  * Proxy used to access all VCL field controls
  *
  */
 public class VclField extends VclEditBox{
-	
-	public VclField(SmartId smartId) {
-		super(smartId);
+
+
+	public VclField(String id) {
+		super(id);
 	}
 
-	/**
-	 * Construct the field control with its string ID
-	 * @param uid
-	 */
-	public VclField(String uid) {
-		super(uid);
+	
+	public VclField(VclApp app, String id) {
+		super(app, id);
 	}
+
 
 	/**
 	 * Move one entry higher of Field

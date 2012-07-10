@@ -18,58 +18,13 @@
  * under the License.
  * 
  *************************************************************/
+package org.openoffice.test.vcl.client;
 
+public interface WinInfoReceiver {
+	void onStartReceiving();
 
+	void addWinInfo(SmartId id, long type, String t1);
 
-package org.openoffice.test.vcl.widgets;
+	void onFinishReceiving();
 
-import org.openoffice.test.vcl.client.Constant;
-
-
-
-/**
- * Proxy used to access VCL Docking window
- *
- */
-public class VclDockingWin extends VclWindow {
-	/**
-	 * Define VCL Docking window
-	 * @param uid the string id
-	 */
-	public VclDockingWin(String uid) {
-		super(uid);
-	}
-
-
-
-	public VclDockingWin(VclApp app, String id) {
-		super(app, id);
-	}
-
-
-
-	/**
-	 * Docks a window on one edge of the desktop.
-	 */
-	public void dock() {
-		if (!isDocked())
-			invoke(Constant.M_Dock);
-	}
-
-	/**
-	 * Undocks a docking window.
-	 */
-	public void undock() {
-		if (isDocked())
-			invoke(Constant.M_Undock);
-	}
-
-	/**
-	 * Returns the docking state.
-	 * @return Returns TRUE if the window is docking, otherwise FALSE is
-	 *         returned.
-	 */
-	public boolean isDocked() {
-		return (Boolean) invoke(Constant.M_IsDocked);
-	}
 }
