@@ -30,7 +30,7 @@ import static testlib.UIMap.*;
 
 import java.io.File;
 
-import org.junit.AfterClass;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -43,13 +43,19 @@ public class SmokeTest {
 	public Log LOG = new Log();
 
 	File smoketestOutput;
+	
 	@Before
 	public void setUp() throws Exception {
-		initApp(true);
-		smoketestOutput = new File(app.getUserInstallation(), "user/temp");
-		deleteFile(smoketestOutput);
+		app.getOpenOffice().cleanUserInstallation();
+		app.start();
+		smoketestOutput = new File(oo.getUserInstallation(), "user/temp");
 	}
 
+	@After
+	public void tearDown() throws Exception {
+		app.close();
+	}
+	
 	@Test
 	public void testMacro() {
 		testFile("TestExtension.oxt");
@@ -65,10 +71,5 @@ public class SmokeTest {
 		LOG.info(smoketestlog + "\n" + testclosurelog);
 		assertTrue("No Error", !smoketestlog.contains("error") && !testclosurelog.contains("error"));
 
-	}
-	
-	@AfterClass
-	public static void afterClass() {
-		app.kill();
 	}
 }
