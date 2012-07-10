@@ -39,15 +39,12 @@ all:
 
 .ELSE
 
-TARFILE_NAME=hunspell-1.2.9
-TARFILE_MD5=68dd2e8253d9a7930e9fd50e2d7220d0
-ADDITIONAL_FILES+=config.h
+TARFILE_NAME=hunspell-1.3.2
+TARFILE_MD5=3121aaf3e13e5d88dfff13fb4a5f1ab8
 
-PATCH_FILES=\
-    hunspell-wntconfig.patch \
-    hunspell-solaris.patch \
-    hunspell-stacksmash.patch \
-    hunspell.patch
+PATCH_FILES=					\
+    hunspell-solaris.patch		\
+    hunspell-bash.patch
 
 .IF "$(GUI)"=="UNX"
 
@@ -70,7 +67,7 @@ CONFIGURE_FLAGS+=CPPFLAGS="-I$(LIBINTL_PREFIX)/include" --with-libintl-prefix="$
 
 BUILD_ACTION=$(GNUMAKE) -j$(EXTMAXPROCESS)
 
-OUT2LIB=$(BUILD_DIR)$/src$/hunspell$/.libs$/libhunspell-1.2.a
+OUT2LIB=$(BUILD_DIR)$/src$/hunspell$/.libs$/libhunspell-1.3.a
 
 .ENDIF # "$(GUI)"=="UNX"
 
@@ -81,20 +78,22 @@ PATCH_FILES=\
     hunspell-mingw.patch
 
 CONFIGURE_ACTION=configure
-CONFIGURE_FLAGS= --disable-shared --with-pic LDFLAGS=-Wl,--enable-runtime-pseudo-reloc-v2
-BUILD_ACTION=make
-OUT2LIB=$(BUILD_DIR)$/src$/hunspell$/.libs$/libhunspell-1.2.a
-.ELSE
-BUILD_ACTION=cd src/hunspell && dmake
-.ENDIF
+CONFIGURE_FLAGS= --disable-shared --with-pic
+# LDFLAGS=-Wl,--enable-runtime-pseudo-reloc-v2
+BUILD_ACTION=$(GNUMAKE) -j$(EXTMAXPROCESS)
+OUT2LIB=$(BUILD_DIR)$/src$/hunspell$/.libs$/libhunspell-1.3.a
+.ELSE # GCC
+BUILD_ACTION= cd src/hunspell && cp ../win_api/config.h . && CDEFS_PRESET=-DBUILDING_LIBHUNSPELL dmake
+.ENDIF # GCC
 .ENDIF # "$(GUI)"=="WNT"
 
 .IF "$(GUI)"=="OS2"
 BUILD_ACTION=cd src/hunspell && dmake
 .ENDIF # "$(GUI)"=="OS2"
 
-OUT2INC= \
-	$(BUILD_DIR)$/src$/hunspell$/*.hxx
+OUT2INC=									\
+	$(BUILD_DIR)$/src$/hunspell$/*.hxx		\
+	$(BUILD_DIR)$/src$/hunspell$/hunvisapi.h
 
 # --- Targets ------------------------------------------------------
 
