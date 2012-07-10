@@ -3390,6 +3390,10 @@ void wwSectionManager::SetSegmentToPageDesc(const wwSection &rSection,
     SetNumberingType(rSection, rPage);
 
     SwFrmFmt &rFmt = rPage.GetMaster();
+	
+    if(mrReader.pWDop->fUseBackGroundInAllmodes)  // #i56806# Make sure mrReader is initialized
+		mrReader.GrafikCtor(); 
+	
 
     if (mrReader.pWDop->fUseBackGroundInAllmodes && mrReader.pMSDffManager)
     {
