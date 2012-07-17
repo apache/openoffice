@@ -181,7 +181,6 @@ $(MISC)$/$(SHL2TARGET).def:  makefile.mk
     @echo ------------------------------
     @echo Making: $@
     @echo LIBRARY     $(SHL2TARGET8) INITINSTANCE TERMINSTANCE      >$@
-    @echo DESCRIPTION 'SWriter4 DLL'                                >>$@
     @echo DATA        MULTIPLE                                      >>$@
     @echo EXPORTS                                                   >>$@
     @echo   _CreateSwDocShellDll                                    >>$@
