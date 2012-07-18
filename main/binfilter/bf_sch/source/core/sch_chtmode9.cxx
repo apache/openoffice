@@ -86,6 +86,7 @@
 #include <float.h>
 #include "glob.hrc"
 
+#include "arrayhelper.hxx"
 #include "chaxis.hxx"
 #include "chdescr.hxx"
 #include "calculat.hxx"
@@ -407,6 +408,16 @@ namespace binfilter {
 /*N*/ 	SdrPage *pPage = GetPage(0);
 /*N*/ 	Size aPageSize = pPage->GetSize();
 /*N*/ 
+        double fFactorX = 1.0;
+        double fFactorY = 1.0;
+        double fX_Denominator = aInitialSize.Width();
+        double fY_Denominator = aInitialSize.Height();
+        if( fX_Denominator != 0.0 && fY_Denominator != 0.0 )
+        {
+            fFactorX = aPageSize.Width() / fX_Denominator;
+            fFactorY = aPageSize.Height() / fY_Denominator;
+        }
+
 /*N*/ 	if(bShowXAxisTitle)
 /*N*/ 	{
 /*N*/ 		SdrObject *pXAxisTitleObj = GetObjWithId(CHOBJID_DIAGRAM_TITLE_X_AXIS,*pPage);
@@ -422,10 +433,8 @@ namespace binfilter {
 /*N*/ 			{
 /*N*/ 				// FG: Das ist eine Variable die in BuildChart gesetzt wird, kurz bevor
 /*N*/ 				//     das Objekt zerstoert wird.
-/*N*/ 				double fRelativeXPosition = ((double) aTitleXAxisPosition.X()) / aInitialSize.Width();
-/*N*/ 				double fRelativeYPosition = ((double) aTitleXAxisPosition.Y()) / aInitialSize.Height();
-/*N*/ 				aXAxesTitlePosition.X() = (int) (aPageSize.Width() * fRelativeXPosition + 0.5);
-/*N*/ 				aXAxesTitlePosition.Y() = (int) (aPageSize.Height() * fRelativeYPosition + 0.5);
+/*N*/ 				aXAxesTitlePosition.X() = static_cast<int>( aTitleXAxisPosition.X() * fFactorX + 0.5 );
+/*N*/ 				aXAxesTitlePosition.Y() = static_cast<int>( aTitleXAxisPosition.Y() * fFactorY + 0.5 );
 /*N*/ 			}
 /*N*/ 			else
 /*N*/ 			{
@@ -453,10 +462,8 @@ namespace binfilter {
 /*N*/ 			{
 /*N*/ 				// FG: Das ist eine Variable die in BuildChart gesetzt wird, kurz bevor
 /*N*/ 				//     das Objekt zerstoert wird.
-/*N*/ 				double fRelativeXPosition = ((double) aTitleYAxisPosition.X()) / aInitialSize.Width();
-/*N*/ 				double fRelativeYPosition = ((double) aTitleYAxisPosition.Y()) / aInitialSize.Height();
-/*N*/ 				aYAxesTitlePosition.X() = (int) (aPageSize.Width() * fRelativeXPosition + 0.5);
-/*N*/ 				aYAxesTitlePosition.Y() = (int) (aPageSize.Height() * fRelativeYPosition + 0.5);
+/*N*/ 				aYAxesTitlePosition.X() = static_cast<int>( aTitleYAxisPosition.X() * fFactorX + 0.5);
+/*N*/ 				aYAxesTitlePosition.Y() = static_cast<int>( aTitleYAxisPosition.Y() * fFactorY + 0.5);
 /*N*/ 			}
 /*N*/ 			else
 /*N*/ 			{
@@ -543,19 +550,32 @@ namespace binfilter {
 /*N*/ 	aBarY2.Create(aRect,nColCnt,nR2);
 /*N*/ 	ChartBarDescriptor* pBar=&aBarY1;
 /*N*/ 
-/*N*/ 	SdrObjList      **pRowLists   = new SdrObjList*[nRowCnt];
-/*N*/ 	SdrObjList      **pStatLists  = new SdrObjList*[nRowCnt];
+/*N*/ 	SdrObjList      **pRowLists   = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+/*N*/ 	SdrObjList      **pStatLists  = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+        if( !pRowLists || !pStatLists )
+        {
+            delete[] pRowLists;
+            delete[] pStatLists;
+            return pGroup;
+        }
 /*N*/ 
 /*N*/ 	ChartDataDescription aDescr(nColCnt,nRowCnt,pList,this,bShowDataDescr);
 /*N*/ 
 /*N*/ 	Point *pTracePoint=0;
 /*N*/ 	if(m_nDefaultColorSet&CHSPECIAL_TRACELINES)
 /*N*/ 	{
-/*?*/ 		pTracePoint = new Point[nRowCnt];//#50149#
+/*?*/ 		pTracePoint = ArrayHelper<Point>::create_long_size(nRowCnt);//#50149#
 /*N*/ 	}
 /*N*/ 
 /*N*/ 
-/*N*/ 	XPolygon *pLine = new XPolygon[nLines]; //#50149#
+/*N*/ 	XPolygon *pLine = ArrayHelper<XPolygon>::create_long_size(nLines); //#50149#
+        if( !pLine )
+        {
+            delete[] pRowLists;
+            delete[] pStatLists;
+            delete[] pTracePoint;
+            return pGroup;
+        }
 /*N*/ 	BOOL	bStartPointIsValid;	//	Indicates wether the first point of a line
 /*N*/ 								//	segment is valid.
 /*N*/ 
@@ -1247,8 +1267,14 @@ namespace binfilter {
 /*N*/ 	long   nPartWidth = aRect.GetWidth() / nBackColCnt;
 /*N*/ 	double fPartWidth = ((double) aRect.GetWidth() / (double) nBackColCnt);
 /*N*/ 
-/*N*/ 	SdrObjList** pRowLists   = new SdrObjList*[nRowCnt];
-/*N*/ 	SdrObjList** pStatLists  = new SdrObjList*[nRowCnt];
+/*N*/ 	SdrObjList** pRowLists   = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+/*N*/ 	SdrObjList** pStatLists  = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+        if( !pRowLists || !pStatLists )
+        {
+            delete[] pRowLists;
+            delete[] pStatLists;
+            return pGroup;
+        }
 /*N*/ 
 /*N*/ 	ChartDataDescription aDescr(nColCnt,nRowCnt,pList,this,bShowDataDescr);
 /*N*/ 
@@ -1266,9 +1292,6 @@ namespace binfilter {
 /*N*/ 	long nLegendHeight = aLegendSize.Height () * 9 / 10;
 /*N*/ 
 /*N*/ 	Polygon   aPolygon( nColCnt + 16 );		// +4 -> +16: let some more points be possible. Is set to exact size later
-/*N*/ 
-/*N*/ 	//Ab hier speziell fuer (Sp)Line-Charts:
-/*N*/ 	XPolygon   *pSpline = new XPolygon(nColCnt * nGranularity);
 /*N*/ 
 /*N*/ 	long nStartX=aRect.Left();
 /*N*/ 	if(bPartDescr)
@@ -1399,32 +1422,6 @@ namespace binfilter {
 /*?*/ 				{
 /*?*/ 					if( nPoints > 1 )
 /*?*/ 					{
-/*?*/ 						if( IsSplineChart() )
-/*?*/ 						{
-/*?*/ 							Polygon aNewPoly( nPoints );
-/*?*/ 							for( USHORT i = 0; i < nPoints; i++ )
-/*?*/ 								aNewPoly[ i ] = aPolygon[ i ];
-/*?*/ 
-/*?*/ 							XPolygon aXPoly( aNewPoly );
-/*?*/ 							if ((eChartStyle == CHSTYLE_2D_CUBIC_SPLINE) ||
-/*?*/ 								(eChartStyle == CHSTYLE_2D_CUBIC_SPLINE_SYMBOL))
-/*?*/ 							{
-/*?*/ 								CubicSpline( aXPoly, nPoints - 1, nGranularity, *pSpline );
-/*?*/ 							}
-/*?*/ 							else
-/*?*/ 							{
-/*?*/ 								approxMesh( nGranularity, *pSpline, aXPoly, nPoints - 1, nSplineDepth );
-/*?*/ 							}
-/*?*/ 
-/*?*/ 							XPolygon aSplinePoly( *pSpline );
-/*?*/ 							aSplinePoly.SetSize( (nPoints - 1) * nGranularity );
-/*?*/ 
-/*?*/ 							// #67488# crop polygon
-/*?*/ 							XPolyPolygon aResult;
-/*?*/ 							SchCalculationHelper::IntersectPolygonWithRectangle( aSplinePoly, aClipRect, aResult );
-/*?*/ 							pObj = new SdrPathObj( OBJ_PLIN, aResult );
-/*?*/ 						}
-/*?*/ 						else
 /*?*/ 						{
 /*?*/ 							Polygon aNewPoly( nPoints );
 /*?*/ 							for( USHORT i = 0; i < nPoints; i++ )
@@ -1458,37 +1455,8 @@ namespace binfilter {
 /*N*/ 		{
 /*N*/ 			pObj = NULL;
 /*N*/ 
-/*N*/ 			if( IsSplineChart() )
 /*N*/ 			{
-/*N*/ 				if( nPoints > 1 )
-/*N*/ 				{
-/*N*/ 					Polygon aNewPoly( nPoints );
-/*N*/ 					for( USHORT i = 0; i < nPoints; i++ )
-/*N*/ 						aNewPoly[ i ] = aPolygon[ i ];
-/*N*/ 
-/*N*/ 					XPolygon aXPoly( aNewPoly );
-/*N*/ 					if ((eChartStyle == CHSTYLE_2D_CUBIC_SPLINE) ||
-/*N*/ 						(eChartStyle == CHSTYLE_2D_CUBIC_SPLINE_SYMBOL))
-/*N*/ 					{
-/*N*/ 						CubicSpline( aXPoly, nPoints - 1,nGranularity, *pSpline );
-/*N*/ 					}
-/*N*/ 					else
-/*N*/ 					{
-/*N*/ 						approxMesh( nGranularity, *pSpline, aXPoly, nPoints - 1, nSplineDepth );
-/*N*/ 					}
-/*N*/ 
-/*N*/ 					XPolygon aSplinePoly( *pSpline );
-/*N*/ 					aSplinePoly.SetSize( (nPoints - 1) * nGranularity );
-/*N*/ 
-/*N*/ 					// #67488# crop polygon
-/*N*/ 					XPolyPolygon aResult;
-/*N*/ 					SchCalculationHelper::IntersectPolygonWithRectangle( aSplinePoly, aClipRect, aResult );
-/*N*/ 					pObj = new SdrPathObj( OBJ_PLIN, aResult );
-/*N*/ 				}
-/*N*/ 			}
-/*N*/ 			else
-/*N*/ 			{
-/*N*/ 				if( bArea )
+/*N*/ 				if( bArea && !IsSplineChart() )
 /*N*/ 				{
 /*N*/ 					Polygon aNewPoly( nPoints + 3 );
 /*N*/ 					for( USHORT i = 0; i < nPoints + 3; i++ )
@@ -1508,7 +1476,7 @@ namespace binfilter {
 /*N*/ 					pObj->SetModel( this );
 /*N*/ 					SetObjectAttr( pObj,CHOBJID_DIAGRAM_ROWS, TRUE, TRUE, (SfxItemSet *)&rDataRowAttr );
 /*N*/ 				}
-/*N*/ 				else if( nPoints > 1 )			// line
+/*N*/ 				else if( nPoints > 1 )			// line (or stripped spline)
 /*N*/ 				{
 /*N*/ 					// #67488# crop polygon
 /*N*/ 					Polygon aNewPoly( nPoints );
@@ -1539,8 +1507,6 @@ namespace binfilter {
 /*N*/ 			}
 /*N*/ 		} // if( nPoints )
 /*N*/ 	} //for nRow
-/*N*/ 
-/*N*/ 	delete pSpline;
 /*N*/ 
 /*N*/ 	//Ab hier wieder wie in Create2DRow(Area)Chart:
 /*N*/ 
@@ -1840,6 +1806,9 @@ namespace binfilter {
 /*N*/             break;
 /*N*/ 	}
 /*N*/ 
+          if( nLastSeries<0 )
+              return;
+
 /*N*/     // #101164# map fill-/line colors
 /*N*/     if( nNumLinesInColChart > nOldNumLines )
 /*N*/     {
@@ -1849,7 +1818,8 @@ namespace binfilter {
 /*N*/         {
 /*N*/             SfxItemSet * pSet = aDataRowAttrList.GetObject( nLastSeries - i );
 /*N*/             OSL_ASSERT( pSet );
-/*N*/             pSet->Put( XLineColorItem(
+/*N*/             if( pSet )
+/*N*/               pSet->Put( XLineColorItem(
 /*N*/                            String(),
 /*N*/                            static_cast< const XFillColorItem & >(
 /*N*/                                pSet->Get( XATTR_FILLCOLOR )).GetValue() ));
@@ -1863,11 +1833,14 @@ namespace binfilter {
 /*N*/         {
 /*?*/             SfxItemSet * pSet = aDataRowAttrList.GetObject( nLastSeries - i );
 /*?*/             OSL_ASSERT( pSet );
-/*?*/             pSet->Put( XFillColorItem(
+/*?*/             if( pSet )
+/*?*/             {
+/*?*/               pSet->Put( XFillColorItem(
 /*?*/                            String(),
 /*?*/                            static_cast< const XLineColorItem & >(
 /*?*/                                pSet->Get( XATTR_LINECOLOR )).GetValue() ));
-/*?*/             pSet->Put( XLineColorItem( String(), RGBColor( COL_BLACK ) ));
+/*?*/               pSet->Put( XLineColorItem( String(), RGBColor( COL_BLACK ) ));
+/*?*/             }
 /*N*/         }
 /*N*/     }
 /*N*/ }

@@ -120,7 +120,7 @@ namespace binfilter {
 /*N*/     DBG_ASSERT( nCol < nPieSegCount, "pie segment requested is out of bounds" );
 /*N*/ 
 /*N*/     if( IsPieChart() &&
-/*N*/         nCol < nPieSegCount )
+/*N*/         nCol >= 0 && nCol < nPieSegCount )
 /*N*/     {
 /*N*/         return pPieSegOfs[ nCol ];
 /*N*/     }
@@ -554,7 +554,7 @@ UINT32& ChartModel::Percent DescrF ormat ()
 /*N*/     DBG_ASSERT( pPieSegOfs, "Invalid Array" );
 /*N*/     DBG_ASSERT( nCol < nPieSegCount, "trying to set pie offset out of bounds" );
 /*N*/ 
-/*N*/     if( nCol < nPieSegCount )
+/*N*/     if( nCol >= 0 && nCol < nPieSegCount )
 /*N*/         pPieSegOfs[ nCol ] = nOfs;
 /*N*/ }
 

@@ -115,6 +115,9 @@
 
 #include "chaxis.hxx"
 
+#include <limits>
+#include <algorithm>
+
 namespace binfilter {
 
 /*************************************************************************
@@ -365,20 +368,17 @@ namespace binfilter {
 
 /*N*/ const SfxItemSet& ChartModel::GetDataRowAttr( long nRow ) const
 /*N*/ {
-/*N*/ 	if( nRow < (long)aDataRowAttrList.Count() )
+/*N*/ 	if( nRow>=0 && nRow < aDataRowAttrList.Count() )
 /*N*/ 	{
 /*N*/ 		SfxItemSet* pSet = aDataRowAttrList.GetObject( nRow );
 /*N*/ 		DBG_ASSERT( pSet, "Invalid ItemSet" );
-/*N*/ 		return *pSet;
+            if( pSet )
+/*N*/           return *pSet;
 /*N*/ 	}
-/*N*/ 	else
-/*N*/ 	{
-/*N*/ 		DBG_ERROR( "Requested data row attribute is unavailable" );
-/*N*/ 
-/*N*/ 		// return something
-/*?*/ 		DBG_ASSERT( pChartAttr, "Invalid Chart-ItemSet" );
-/*?*/ 		return *pChartAttr;
-/*N*/ 	}
+/*N*/	DBG_ERROR( "Requested data row attribute is unavailable" );
+/*N*/	// return something
+/*?*/	DBG_ASSERT( pChartAttr, "Invalid Chart-ItemSet" );
+/*?*/	return *pChartAttr;
 /*N*/ }
 
 /*************************************************************************
@@ -789,11 +789,25 @@ namespace binfilter {
 /*N*/ 						   ? &aSwitchDataPointAttrList
 /*N*/ 						   : &aDataPointAttrList;
 /*N*/ 
-/*N*/ 	SfxItemSet* pItemSet = pAttrList->GetObject(nCol * GetRowCount() + nRow);
+        if( nCol < 0 || nRow < 0 )
+            return;
+        const long nRowCount = GetRowCount();
+        const long nColCount = GetColCount();
+        if( nColCount <= 0 || nRowCount <= 0 )
+            return;
+        if( nCol >= nColCount || nRow >= nRowCount )
+            return;
+        if( nCol > ::std::numeric_limits<sal_uIntPtr>::max()/nRowCount ) //sal_uIntPtr is the type of the index parameter for method pAttrList->GetObject
+            return;
+        if( nRowCount*nCol > ::std::numeric_limits<sal_uIntPtr>::max() - nRow )
+            return;
+        sal_uIntPtr nIndex = static_cast<sal_uIntPtr>(nCol) * nRowCount + nRow;
+
+/*N*/ 	SfxItemSet* pItemSet = pAttrList->GetObject(nIndex);
 /*N*/ 	if (pItemSet == NULL)
 /*N*/ 	{
 /*N*/ 		pItemSet = new SfxItemSet(*pItemPool, nRowWhichPairs);
-/*N*/ 		pAttrList->Replace (pItemSet, nCol * GetRowCount() + nRow);
+/*N*/ 		pAttrList->Replace (pItemSet, nIndex);
 /*N*/ 	}
 /*N*/ 	if(!bMerge)
 /*?*/ 		pItemSet->ClearItem();
@@ -888,10 +902,11 @@ namespace binfilter {
 /*N*/ 	SfxItemSet aAttr( GetDataRowAttr( nCol % nPieCount ));
 /*N*/ 
 /*N*/     if( ( nCol >= nPieCount ) &&
-/*N*/         pDefaultColors )
+/*N*/         pDefaultColors && pDefaultColors->Count()>0 )
 /*N*/     {
 /*?*/         XColorEntry* pColEntry = SAL_STATIC_CAST( XColorEntry*, pDefaultColors->GetObject( nCol % pDefaultColors->Count()));
-/*?*/         aAttr.Put( XFillColorItem( pColEntry->GetName(), pColEntry->GetColor()));
+              if( pColEntry )
+/*?*/             aAttr.Put( XFillColorItem( pColEntry->GetName(), pColEntry->GetColor()));
 /*N*/     }
 /*N*/ 
 /*N*/     // add description attributes of series

@@ -49,6 +49,9 @@
 #ifndef _COM_SUN_STAR_CHART_CHARTSERIESADDRESS_HPP_
 #include <com/sun/star/chart/ChartSeriesAddress.hpp>
 #endif
+
+#include "arrayhelper.hxx"
+
 class SvStream;
 
 namespace binfilter {
@@ -295,10 +298,10 @@ public:
 	void SetNumberFormatter(SvNumberFormatter* pNumFormatter) { mpNumFormatter = pNumFormatter; }
 	SvNumberFormatter*  GetNumberFormatter() const { return mpNumFormatter;	}
 
-	void SetNumFormatIdRow( const long nRow, const long nFmtId )	{ if( pRowNumFmtId && nRow < nRowCnt ) pRowNumFmtId[ nRow ] = nFmtId; }
-	void SetNumFormatIdCol( const long nCol, const long nFmtId )	{ if( pColNumFmtId && nCol < nColCnt ) pColNumFmtId[ nCol ] = nFmtId; }
-	long GetNumFormatIdRow( const long nRow ) const					{ return ( pRowNumFmtId && nRow < nRowCnt )? pRowNumFmtId[ nRow ]: -1; }
-	long GetNumFormatIdCol( const long nCol ) const					{ return ( pColNumFmtId && nCol < nColCnt )? pColNumFmtId[ nCol ]: -1; }
+	void SetNumFormatIdRow( const long nRow, const long nFmtId )	{ if ( pRowNumFmtId && IsValidRow( nRow ) ) pRowNumFmtId[ nRow ] = nFmtId; }
+	void SetNumFormatIdCol( const long nCol, const long nFmtId )	{ if ( pColNumFmtId && IsValidColumn( nCol ) ) pColNumFmtId[ nCol ] = nFmtId; }
+	long GetNumFormatIdRow( const long nRow ) const					{ return ( pRowNumFmtId && IsValidRow( nRow ) ) ? pRowNumFmtId[ nRow ] : -1; }
+	long GetNumFormatIdCol( const long nCol ) const					{ return ( pColNumFmtId && IsValidColumn( nCol ) ) ? pColNumFmtId[ nCol ] : -1; }
 	long GetTransNumFormatIdRow( const long nRow ) const;
 	long GetTransNumFormatIdCol( const long nCol ) const;
 
@@ -329,11 +332,11 @@ public:
 	friend SvStream& operator << (SvStream& rOut, const SchMemChart& rMemChart);
 	friend SvStream& operator >> (SvStream& rIn, SchMemChart& rMemChart);
 
-	const String& GetColText(short nCol) const { return pColText[nCol]; }
-	const String& GetRowText(short nRow) const { return pRowText[nRow]; }
+    const String& GetColText(short nCol) const { return ( pColText && IsValidColumn( nCol ) ) ? pColText[ nCol ] : String::EmptyString(); }
+    const String& GetRowText(short nRow) const { return ( pRowText && IsValidRow( nRow ) ) ? pRowText[ nRow ] : String::EmptyString(); }
 
 	ChartDataId GetId() const { return myID; }
-	double GetData(short nCol, short nRow) const { return pData[nCol * nRowCnt + nRow]; }
+    double GetData(short nCol, short nRow) const { return ( pData && IsValidColumn( nCol ) && IsValidRow( nRow ) ) ? pData[nCol * nRowCnt + nRow] : DBL_MIN; }
 	double GetDataInPercent(const short nCol , const short nRow, const BOOL bRowData) const;
 
 	inline void InsertCols(short nAtCol, short nCount);
@@ -344,7 +347,7 @@ public:
 	inline void SwapRows(int nAtRow1, int nAtRow2);
 
 	void SetData(short nCol, short nRow, const double& rVal)
-	{ pData[nCol * nRowCnt + nRow] = rVal; }
+	{ if ( pData && IsValidColumn( nCol ) && IsValidRow( nRow ) ) pData[nCol * nRowCnt + nRow] = rVal; }
 
 	String& SomeData1() { return aSomeData1; }
 	String& SomeData2() { return aSomeData2; }
@@ -356,8 +359,8 @@ public:
 	const String& SomeData3() const { return aSomeData3; }
 	const String& SomeData4() const { return aSomeData4; }
 
-	void SetColText(short nCol, const String& rText) { pColText[nCol] = rText; }
-	void SetRowText(short nRow, const String& rText) { pRowText[nRow] = rText; }
+	void SetColText(short nCol, const String& rText) { if ( pColText && IsValidColumn( nCol ) ) pColText[nCol] = rText; }
+	void SetRowText(short nRow, const String& rText) { if ( pRowText && IsValidRow( nRow ) ) pRowText[nRow] = rText; }
 
 
 
@@ -428,6 +431,9 @@ public:
         for all table numbers to fit in
     */
     void parseTableNumberList( const ::rtl::OUString& rList );
+
+    bool IsValidColumn( const long nCol ) const { return nCol >= 0 && nCol < nColCnt; }
+    bool IsValidRow( const long nRow ) const { return nRow >= 0 && nRow < nRowCnt; }
 };
 
 // ==================== Inline Implementations ====================
@@ -504,11 +510,37 @@ inline void SchMemChart::UpdateTranslation(sal_Int32 *pTable,long nCnt)
 
 inline void SchMemChart::InsertCols(short nAtCol, short nCount)
 {
-	double* pOldData = pData;
-
+    if ( nAtCol < 0 || nAtCol > nColCnt )
+    {
+        return;
+    }
+    if ( nColCnt <= 0 || nCount < 0 ||
+         nCount > ( ::std::numeric_limits< short >::max() - nColCnt ) )
+    {
+        return;
+    }
 	short nNewColCnt = nColCnt + nCount;
 
-	pData			= new double[nNewColCnt * nRowCnt];
+    double* pOldData = pData;
+    String* pOldColText = pColText;
+    sal_Int32* pOldColNumFmtId = pColNumFmtId;
+    sal_Int32* pOldColTable = pColTable;
+    pData = ArrayHelper< double >::create_short_size( nNewColCnt, nRowCnt );
+    pColText = ArrayHelper< String >::create_short_size( nNewColCnt );
+    pColNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nNewColCnt );
+    pColTable = ArrayHelper< sal_Int32 >::create_short_size( nNewColCnt );
+    if ( !pData || !pColText || !pColNumFmtId || !pColTable )
+    {
+        delete[] pData;
+        pData = pOldData;
+        delete[] pColText;
+        pColText = pOldColText;
+        delete[] pColNumFmtId;
+        pColNumFmtId = pOldColNumFmtId;
+        delete[] pColTable;
+        pColTable = pOldColTable;
+        return;
+    }
 
 	short i, j, nOld, nMax;
 
@@ -538,14 +570,6 @@ inline void SchMemChart::InsertCols(short nAtCol, short nCount)
 		}
 	}
 	delete[] pOldData;
-
-	String *pOldColText     = pColText;
-	sal_Int32 *pOldColNumFmtId = pColNumFmtId;
-	sal_Int32 *pOldColTable    = pColTable;
-
-	pColNumFmtId	= new sal_Int32 [nNewColCnt];
-	pColTable		= new sal_Int32 [nNewColCnt];
-	pColText		= new String[nNewColCnt];
 
 	long nC=nNewColCnt;
 	while(nC--)
@@ -579,21 +603,40 @@ inline void SchMemChart::RemoveCols(short nAtCol, short nCount)
 {
 	DBG_ASSERT( nAtCol < nColCnt, "column index overflow");
 
+    if ( nAtCol < 0 || nAtCol >= nColCnt )
+    {
+        return;
+    }
+    if ( nColCnt <= 0 || nCount < 0 ||
+         nCount > ( ::std::numeric_limits< short >::max() - nAtCol ) )
+    {
+        return;
+    }
 	if (nAtCol + nCount > nColCnt)
 		nCount = nColCnt - nAtCol;
 
 	short nNewColCnt = nColCnt - nCount;
 
-	double* pOldData = pData;
-	pData = new double[nNewColCnt * nRowCnt];
-
-	String* pOldColText		= pColText;
-	sal_Int32* pOldColNumFmtId	= pColNumFmtId;
-	sal_Int32* pOldColTable	= pColTable;
-
-	pColText		= new String[nNewColCnt];
-	pColNumFmtId	= new sal_Int32 [nNewColCnt];
-	pColTable		= new sal_Int32 [nNewColCnt];
+    double* pOldData = pData;
+    String* pOldColText = pColText;
+    sal_Int32* pOldColNumFmtId = pColNumFmtId;
+    sal_Int32* pOldColTable = pColTable;
+    pData = ArrayHelper< double >::create_short_size( nNewColCnt, nRowCnt );
+    pColText = ArrayHelper< String >::create_short_size( nNewColCnt );
+    pColNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nNewColCnt );
+    pColTable = ArrayHelper< sal_Int32 >::create_short_size( nNewColCnt );
+    if ( !pData || !pColText || !pColNumFmtId || !pColTable )
+    {
+        delete[] pData;
+        pData = pOldData;
+        delete[] pColText;
+        pColText = pOldColText;
+        delete[] pColNumFmtId;
+        pColNumFmtId = pOldColNumFmtId;
+        delete[] pColTable;
+        pColTable = pOldColTable;
+        return;
+    }
 
 	short i, j, nOld;
 
@@ -624,11 +667,37 @@ inline void SchMemChart::RemoveCols(short nAtCol, short nCount)
 
 inline void SchMemChart::InsertRows(short nAtRow, short nCount)
 {
-	double* pOldData = pData;
-
+    if ( nAtRow < 0 || nAtRow > nRowCnt )
+    {
+        return;
+    }
+    if ( nRowCnt <= 0 || nCount < 0 ||
+         nCount > ( ::std::numeric_limits< short >::max() - nRowCnt ) )
+    {
+        return;
+    }
 	short nNewRowCnt = nRowCnt + nCount;
 
-	pData = new double[nColCnt * nNewRowCnt];
+    double* pOldData = pData;
+    String* pOldRowText = pRowText;
+    sal_Int32* pOldRowNumFmtId = pRowNumFmtId;
+    sal_Int32* pOldRowTable = pRowTable;
+    pData = ArrayHelper< double >::create_short_size( nColCnt, nNewRowCnt );
+    pRowText = ArrayHelper< String >::create_short_size( nNewRowCnt );
+    pRowNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nNewRowCnt );
+    pRowTable = ArrayHelper< sal_Int32 >::create_short_size( nNewRowCnt );
+    if ( !pData || !pRowText || !pRowNumFmtId || !pRowTable )
+    {
+        delete[] pData;
+        pData = pOldData;
+        delete[] pRowText;
+        pRowText = pOldRowText;
+        delete[] pRowNumFmtId;
+        pRowNumFmtId = pOldRowNumFmtId;
+        delete[] pRowTable;
+        pRowTable = pOldRowTable;
+        return;
+    }
 
 	short i, j, nOld, nMax, nGapEnd;
 
@@ -660,14 +729,6 @@ inline void SchMemChart::InsertRows(short nAtRow, short nCount)
 		}
 	}
 	delete[] pOldData;
-
-	String *pOldRowText     =pRowText;
-	sal_Int32 *pOldRowNumFmtId =pRowNumFmtId;
-	sal_Int32 *pOldRowTable    =pRowTable;
-
-	pRowNumFmtId	= new sal_Int32 [nNewRowCnt];
-	pRowTable		= new sal_Int32 [nNewRowCnt];
-	pRowText        = new String[nNewRowCnt];
 
 	long nC=nNewRowCnt;
 	while(nC--) //init
@@ -701,13 +762,40 @@ inline void SchMemChart::RemoveRows(short nAtRow, short nCount)
 {
 	DBG_ASSERT( nAtRow < nRowCnt, "row  index overflow" );
 
+    if ( nAtRow < 0 || nAtRow >= nRowCnt )
+    {
+        return;
+    }
+    if ( nRowCnt <= 0 || nCount < 0 ||
+         nCount > ( ::std::numeric_limits< short >::max() - nAtRow ) )
+    {
+        return;
+    }
 	if (nAtRow + nCount > nRowCnt)
 		nCount = nRowCnt - nAtRow;
 
 	short nNewRowCnt = nRowCnt - nCount;
 
 	double* pOldData = pData;
-	pData = new double[nColCnt * nNewRowCnt];
+    String* pOldRowText = pRowText;
+    sal_Int32* pOldRowNumFmtId = pRowNumFmtId;
+    sal_Int32* pOldRowTable = pRowTable;
+    pData = ArrayHelper< double >::create_short_size( nColCnt, nNewRowCnt );
+    pRowText = ArrayHelper< String >::create_short_size( nNewRowCnt );
+    pRowNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nNewRowCnt );
+    pRowTable = ArrayHelper< sal_Int32 >::create_short_size( nNewRowCnt );
+    if ( !pData || !pRowText || !pRowNumFmtId || !pRowTable )
+    {
+        delete[] pData;
+        pData = pOldData;
+        delete[] pRowText;
+        pRowText = pOldRowText;
+        delete[] pRowNumFmtId;
+        pRowNumFmtId = pOldRowNumFmtId;
+        delete[] pRowTable;
+        pRowTable = pOldRowTable;
+        return;
+    }
 
 	short i, j, nOld;
 
@@ -723,14 +811,6 @@ inline void SchMemChart::RemoveRows(short nAtRow, short nCount)
 		}
 
 	delete[] pOldData;
-
-	String* pOldRowText		= pRowText;
-	sal_Int32*   pOldRowNumFmtId	= pRowNumFmtId;
-	sal_Int32*   pOldRowTable	= pRowTable;
-
-	pRowText		= new String[nNewRowCnt];
-	pRowNumFmtId	= new sal_Int32 [nNewRowCnt];
-	pRowTable		= new sal_Int32 [nNewRowCnt];
 
 	for (i = 0, nOld = 0;; i++, nOld++)
 	{
