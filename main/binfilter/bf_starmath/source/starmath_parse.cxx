@@ -1636,7 +1636,7 @@ const sal_Int32 coNumContFlags =
 /*N*/ 	BOOL		 bIsPostfix = eType == TFACT;
 /*N*/ 
 /*N*/ 	SmStructureNode *pSNode;
-/*N*/ 	SmNode *pOper,
+/*N*/ 	SmNode *pOper = 0,
 /*N*/ 		   *pExtra = 0,
 /*N*/ 		   *pArg;
 /*N*/ 

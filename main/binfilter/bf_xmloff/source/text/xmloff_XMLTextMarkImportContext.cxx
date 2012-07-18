@@ -226,7 +226,7 @@ sal_Bool XMLTextMarkImportContext::FindName(
 	const Reference<XAttributeList> & xAttrList,
 	OUString& sName)
 {
-	sal_Bool bNameOK;
+	sal_Bool bNameOK(sal_False);
 
 	// find name attribute first
 	sal_Int16 nLength = xAttrList->getLength();

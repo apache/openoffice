@@ -158,7 +158,7 @@ const sal_uInt16 aSBorderWidths[] =
         SBORDER_ENTRY( 3 ), SBORDER_ENTRY( 4 )
 };
 
-const sal_uInt16 aDBorderWidths[5*11] =
+const sal_uInt16 aDBorderWidths[4*11] =
 {
         DBORDER_ENTRY( 0 ),
         DBORDER_ENTRY( 7 ),

@@ -21,6 +21,8 @@
 
 
 
+#include <memory>
+
 #ifndef _COM_SUN_STAR_XML_ATTRIBUTEDATA_HPP_
 #include <com/sun/star/xml/AttributeData.hpp>
 #endif
@@ -108,7 +110,7 @@ using namespace ::com::sun::star::xml;
 /*NBFF*/ 	}
 /*NBFF*/ 	else
 /*NBFF*/ 	{
-/*NBFF*/ 		SvXMLAttrContainerData* pNewImpl = new SvXMLAttrContainerData;
+/*NBFF*/ 		::std::auto_ptr<SvXMLAttrContainerData> pNewImpl(new SvXMLAttrContainerData);
 /*NBFF*/ 
 /*NBFF*/ 		try
 /*NBFF*/ 		{
@@ -158,17 +160,15 @@ using namespace ::com::sun::star::xml;
 /*NBFF*/ 			if( nAttr == nCount )
 /*NBFF*/ 			{
 /*NBFF*/ 				delete pImpl;
-/*NBFF*/ 				pImpl = pNewImpl;
-/*NBFF*/ 				return FALSE;
+/*NBFF*/ 				pImpl = pNewImpl.release();
 /*NBFF*/ 			}
 /*NBFF*/ 			else
 /*NBFF*/ 			{
-/*NBFF*/ 				delete pNewImpl;
+/*NBFF*/ 				return FALSE;
 /*NBFF*/ 			}
 /*NBFF*/ 		}
 /*NBFF*/ 		catch(...)
 /*NBFF*/ 		{
-/*NBFF*/ 			delete pNewImpl;
 /*NBFF*/ 			return FALSE;
 /*NBFF*/ 		}
 /*NBFF*/ 	}
