@@ -158,13 +158,16 @@ SwNumRule* SwSwgReader::InNumRule()
         SwNumFmt aFmt;
         if( r.cur() != SWG_NUMFMT )
         {
-            Error(); delete pRule; return NULL;
+            Error();
+            delete pRule;
+            return NULL;
         }
         aFmt.SetBulletFont( NULL );
         InNumFmt( aFmt );
         if( !r )
         {
-            delete pRule; return NULL;
+            delete pRule;
+            return NULL;
         }
         pRule->Set( (USHORT) cFmt[ i ], aFmt );
     }
@@ -181,8 +184,8 @@ SwNumRule* SwSwgReader::InNumRule()
                 {
                     SwNumFmt aFmt( pRule->Get( i ) );
                     aFmt.SetIncludeUpperLevels( MAXLEVEL );
-                    aFmt.SetAbsLSpace( aOldLft[ i ] );
-                    aFmt.SetFirstLineOffset( aOldFI[ i ] );
+                    aFmt.SetAbsLSpace( aOldLft[ (i < 5) ? i : 4 ] );
+                    aFmt.SetFirstLineOffset( aOldFI[ (i < 5) ? i : 4 ] );
                     aFmt.SetNumberingType(SVX_NUM_ARABIC);
                     if( i )
                         aFmt.SetSuffix( aEmptyStr );

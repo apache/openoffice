@@ -1650,7 +1650,7 @@ void MakeFrms( SwDoc *pDoc, const SwNodeIndex &rSttIdx,
 			}
 			else
 			{
-				BOOL bSplit;
+				BOOL bSplit(false);
 				SwFrm* pPrv = bApres ? pFrm : pFrm->GetPrev();
 				// Wenn in einen SectionFrm ein anderer eingefuegt wird,
 				// muss dieser aufgebrochen werden

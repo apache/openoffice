@@ -462,7 +462,7 @@ void SwXDocumentIndex::setPropertyValue(const OUString& rPropertyName,
     if ( pMap->nFlags & PropertyAttribute::READONLY)
         throw PropertyVetoException ( OUString ( RTL_CONSTASCII_USTRINGPARAM ( "Property is read-only: " ) ) + rPropertyName, static_cast < cppu::OWeakObject * > ( this ) );
 
-	SwTOXBase* pTOXBase;
+	SwTOXBase* pTOXBase(0);
 	if(GetFmt())
 		pTOXBase = (SwTOXBaseSection*)GetFmt()->GetSection();
 	else if(bIsDescriptor)
@@ -749,7 +749,7 @@ uno::Any SwXDocumentIndex::getPropertyValue(const OUString& rPropertyName)
 													_pMap, rPropertyName);
     if (!pMap)
         throw UnknownPropertyException(OUString ( RTL_CONSTASCII_USTRINGPARAM ( "Unknown property: " ) ) + rPropertyName, static_cast < cppu::OWeakObject * > ( this ) );
-	SwTOXBase* pTOXBase;
+	SwTOXBase* pTOXBase(0);
 	if(GetFmt())
 		pTOXBase = (SwTOXBaseSection*)GetFmt()->GetSection();
 	else if(bIsDescriptor)
