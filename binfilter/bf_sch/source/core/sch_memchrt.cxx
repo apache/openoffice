@@ -49,6 +49,7 @@
 
 #include <functional>
 #include <algorithm>
+
 namespace binfilter {
 
 // ========================================
@@ -162,14 +163,14 @@ namespace binfilter {
 /*N*/ {
 /*N*/ 	nRowCnt = nRows;
 /*N*/ 	nColCnt = nCols;
-/*N*/ 	pData   = new double[nColCnt * nRowCnt];
-/*N*/ 
-/*N*/ 	pRowNumFmtId= new sal_Int32 [nRowCnt];
-/*N*/ 	pColNumFmtId= new sal_Int32 [nColCnt];
+        pData = ArrayHelper< double >::create_short_size( nColCnt, nRowCnt );
+
+        pRowNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nRowCnt );
+        pColNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nColCnt );
 /*N*/ 	InitNumFmt();
-/*N*/ 
-/*N*/ 	pRowTable	= new sal_Int32 [nRowCnt];
-/*N*/ 	pColTable	= new sal_Int32 [nColCnt];
+
+        pRowTable = ArrayHelper< sal_Int32 >::create_short_size( nRowCnt );
+        pColTable = ArrayHelper< sal_Int32 >::create_short_size( nColCnt );
 /*N*/ 	ResetTranslation(pRowTable,nRowCnt);
 /*N*/ 	ResetTranslation(pColTable,nColCnt);
 /*N*/ 
@@ -182,8 +183,29 @@ namespace binfilter {
 /*N*/ 				*(pFill ++) = 0.0;
 /*N*/ 	}
 /*N*/ 
-/*N*/ 	pColText = new String[nColCnt];
-/*N*/ 	pRowText = new String[nRowCnt];
+        pColText = ArrayHelper< String >::create_short_size( nColCnt );
+        pRowText = ArrayHelper< String >::create_short_size( nRowCnt );
+
+        if ( !pData || !pRowNumFmtId || !pColNumFmtId || !pRowTable || !pColTable || !pColText || !pRowText )
+        {
+            delete[] pData;
+            pData = 0;
+            delete[] pRowNumFmtId;
+            pRowNumFmtId = 0;
+            delete[] pColNumFmtId;
+            pColNumFmtId = 0;
+            delete[] pRowTable;
+            pRowTable = 0;
+            delete[] pColTable;
+            pColTable = 0;
+            delete[] pColText;
+            pColText = 0;
+            delete[] pRowText;
+            pRowText = 0;
+
+            nRowCnt = 0;
+            nColCnt = 0;
+        }
 /*N*/ }
 /*************************************************************************
 |*
@@ -207,10 +229,20 @@ namespace binfilter {
 /*N*/ 	long nRows=MIN(nRowCnt,rMemChart.nRowCnt);
 /*N*/ 
 /*N*/ 	short i;
-/*N*/ 	for (i = 0; i < nCols; i++)
-/*N*/ 		pColText[i] = rMemChart.pColText[i];
-/*N*/ 	for (i = 0; i < nRows; i++)
-/*N*/ 		pRowText[i] = rMemChart.pRowText[i];
+        if ( pColText )
+        {
+            for ( i = 0; i < nCols; i++ )
+            {
+                pColText[i] = rMemChart.pColText[i];
+            }
+        }
+        if ( pRowText )
+        {
+            for ( i = 0; i < nRows; i++ )
+            {
+                pRowText[i] = rMemChart.pRowText[i];
+            }
+        }
 /*N*/ 
 /*N*/     // copy chart range
 /*N*/     SetChartRange( rMemChart.GetChartRange());
@@ -245,28 +277,34 @@ namespace binfilter {
 /*N*/ 	aSomeData2  = ((SchMemChart&) rMemChart).SomeData2 ();
 /*N*/ 	aSomeData3  = ((SchMemChart&) rMemChart).SomeData3 ();
 /*N*/ 	aSomeData4  = ((SchMemChart&) rMemChart).SomeData4 ();
-/*N*/ 	pData       = new double[nColCnt * nRowCnt];
-/*N*/ 
-/*N*/ 	pRowNumFmtId= new sal_Int32 [nRowCnt];
-/*N*/ 	pColNumFmtId= new sal_Int32 [nColCnt];
-/*N*/ 	pRowTable	= new sal_Int32 [nRowCnt];
-/*N*/ 	pColTable	= new sal_Int32 [nColCnt];
+        pData = ArrayHelper< double >::create_short_size( nColCnt, nRowCnt );
+
+        pRowNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nRowCnt );
+        pColNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( nColCnt );
+        pRowTable = ArrayHelper< sal_Int32 >::create_short_size( nRowCnt );
+        pColTable = ArrayHelper< sal_Int32 >::create_short_size( nColCnt );
 /*N*/ 
 /*N*/     aAppLink = rMemChart.aAppLink;
 /*N*/ 	nLastSelInfoReturn = rMemChart.nLastSelInfoReturn;
 /*N*/ 
 /*N*/ 	nTranslated = rMemChart.nTranslated;
 /*N*/ 	long i;
-/*N*/ 	for(i=0;i<nColCnt;i++)
-/*N*/ 	{
-/*N*/ 		pColTable[i]	= rMemChart.pColTable[i];
-/*N*/ 		pColNumFmtId[i]	= rMemChart.pColNumFmtId[i];
-/*N*/ 	}
-/*N*/ 	for(i=0;i<nRowCnt;i++)
-/*N*/ 	{
-/*N*/ 		pRowTable[i]	= rMemChart.pRowTable[i];
-/*N*/ 		pRowNumFmtId[i]	= rMemChart.pRowNumFmtId[i];
-/*N*/ 	}
+        if ( pColTable && pColNumFmtId )
+        {
+            for ( i = 0; i < nColCnt; i++ )
+            {
+                pColTable[i]	= rMemChart.pColTable[i];
+                pColNumFmtId[i]	= rMemChart.pColNumFmtId[i];
+            }
+        }
+        if ( pRowTable && pRowNumFmtId )
+        {
+            for ( i = 0; i < nRowCnt; i++ )
+            {
+                pRowTable[i]	= rMemChart.pRowTable[i];
+                pRowNumFmtId[i]	= rMemChart.pRowNumFmtId[i];
+            }
+        }
 /*N*/ 	mpNumFormatter=rMemChart.mpNumFormatter;
 /*N*/ 
 /*N*/ 	if (pData)
@@ -279,15 +317,23 @@ namespace binfilter {
 /*N*/ 				*(pDest ++) = *(pSource ++);
 /*N*/ 	}
 /*N*/ 
-/*N*/ 	pColText = new String[nColCnt];
-/*N*/ 
-/*N*/ 	for (i = 0; i < nColCnt; i++)
-/*N*/ 		pColText[i] = rMemChart.pColText[i];
-/*N*/ 
-/*N*/ 	pRowText = new String[nRowCnt];
-/*N*/ 
-/*N*/ 	for (i = 0; i < nRowCnt; i++)
-/*N*/ 		pRowText[i] = rMemChart.pRowText[i];
+        pColText = ArrayHelper< String >::create_short_size( nColCnt );
+        if ( pColText )
+        {
+            for ( i = 0; i < nColCnt; i++ )
+            {
+                pColText[i] = rMemChart.pColText[i];
+            }
+        }
+
+        pRowText = ArrayHelper< String >::create_short_size( nRowCnt );
+        if ( pRowText )
+        {
+            for ( i = 0; i < nRowCnt; i++ )
+            {
+                pRowText[i] = rMemChart.pRowText[i];
+            }
+        }
 /*N*/ 
 /*N*/ 	bReadOnly = rMemChart.bReadOnly;			// bm #69410#
 /*N*/ 
@@ -297,6 +343,27 @@ namespace binfilter {
 /*N*/ 
 /*N*/     // copy chart range
 /*N*/     SetChartRange( rMemChart.GetChartRange());
+
+        if ( !pData || !pRowNumFmtId || !pColNumFmtId || !pRowTable || !pColTable || !pColText || !pRowText )
+        {
+            delete[] pData;
+            pData = 0;
+            delete[] pRowNumFmtId;
+            pRowNumFmtId = 0;
+            delete[] pColNumFmtId;
+            pColNumFmtId = 0;
+            delete[] pRowTable;
+            pRowTable = 0;
+            delete[] pColTable;
+            pColTable = 0;
+            delete[] pColText;
+            pColText = 0;
+            delete[] pRowText;
+            pRowText = 0;
+
+            nRowCnt = 0;
+            nColCnt = 0;
+        }
 /*N*/ }
 
 //Überprüft, ob die Umordnung/Translation OK ist, Fehlerfall, wenn :
@@ -311,7 +378,7 @@ namespace binfilter {
 /*N*/ BOOL SchMemChart::VerifyTranslation()
 /*N*/ {
 /*N*/ 	//Fehler ?
-/*N*/ 	if(nTranslated!=TRANS_COL)
+/*N*/ 	if(nTranslated!=TRANS_COL && pColTable)
 /*N*/ 	{
 /*N*/ 		for(long nCol=0;nCol<nColCnt;nCol++)
 /*N*/ 		{
@@ -331,7 +398,7 @@ namespace binfilter {
 /*N*/ 			}
 /*N*/ 		}
 /*N*/ 	}
-/*N*/ 	if(nTranslated!=TRANS_ROW)
+/*N*/ 	if(nTranslated!=TRANS_ROW && pRowTable)
 /*N*/ 	{
 /*N*/ 		for(long nRow=0;nRow<nRowCnt;nRow++)
 /*N*/ 		{
@@ -353,7 +420,7 @@ namespace binfilter {
 /*N*/ 	}
 /*N*/ 
 /*N*/ 	// Sortierung besteht noch ?
-/*N*/ 	if(nTranslated==TRANS_ROW)
+/*N*/ 	if(nTranslated==TRANS_ROW && pRowTable)
 /*N*/ 	{
 /*?*/ 		for(long nRow=0;nRow<nRowCnt;nRow++)
 /*?*/ 		{
@@ -361,7 +428,7 @@ namespace binfilter {
 /*?*/ 				return TRUE;
 /*?*/ 		}
 /*N*/ 	}
-/*N*/ 	if(nTranslated==TRANS_COL)
+/*N*/ 	if(nTranslated==TRANS_COL && pColTable)
 /*N*/ 	{
 /*?*/ 		for(long nCol=0;nCol<nColCnt;nCol++)
 /*?*/ 		{
@@ -383,32 +450,84 @@ namespace binfilter {
 /*N*/ double SchMemChart::GetTransData(long nCol,long nRow)
 /*N*/ {
 /*N*/ 	DBG_ASSERT(VerifyTranslation(), "Translation table corrupted in MemChart");
+        if ( !pColTable || !pRowTable || !IsValidColumn( nCol ) || !IsValidRow( nRow ) )
+        {
+            return DBL_MIN;
+        }
 /*N*/ 	return GetData( (short)pColTable[nCol], (short)pRowTable[nRow]);
 /*N*/ }
 /*N*/ double SchMemChart::GetTransDataInPercent(long nCol, long nRow, BOOL bRowData) const
 /*N*/ {
 /*N*/ 	DBG_ASSERT(((SchMemChart*)this)->VerifyTranslation(), "Translation table corrupted in MemChart");
+        if ( !pColTable || !pRowTable || !IsValidColumn( nCol ) || !IsValidRow( nRow ) )
+        {
+            return DBL_MIN;
+        }
 /*N*/ 	return GetDataInPercent( (short)pColTable[nCol], (short)pRowTable[nRow], bRowData);
 /*N*/ }
 /*N*/ const String& SchMemChart::GetTransColText(long nCol) const
 /*N*/ {
 /*N*/ 	DBG_ASSERT(((SchMemChart*)this)->VerifyTranslation(), "Translation table corrupted in MemChart");
+        if ( !pColTable || !IsValidColumn( nCol ) )
+        {
+            return String::EmptyString();
+        }
 /*N*/ 	return GetColText( (short)pColTable[nCol] );
 /*N*/ }
 /*N*/ const String& SchMemChart::GetTransRowText(long nRow) const
 /*N*/ {
 /*N*/ 	DBG_ASSERT(((SchMemChart*)this)->VerifyTranslation(), "Translation table corrupted in MemChart");
+        if ( !pRowTable || !IsValidRow( nRow ) )
+        {
+            return String::EmptyString();
+        }
 /*N*/ 	return GetRowText( (short)pRowTable[nRow] );
 /*N*/ }
 /*N*/ long SchMemChart::GetTransNumFormatIdRow(const long nRow) const
 /*N*/ {
 /*N*/ 	DBG_ASSERT(((SchMemChart*)this)->VerifyTranslation(), "Translation table corrupted in MemChart");
-/*N*/ 	return ( nTranslated == TRANS_ROW )? pRowNumFmtId[ pRowTable[ nRow ]]: pRowNumFmtId[ nRow ];
+        if ( pRowNumFmtId && IsValidRow( nRow ) )
+        {
+            if ( nTranslated == TRANS_ROW )
+            {
+                if ( pRowTable )
+                {
+                    long nTransRow = pRowTable[ nRow ];
+                    if ( IsValidRow( nTransRow ) )
+                    {
+                        return pRowNumFmtId[ nTransRow ];
+                    }
+                }
+            }
+            else
+            {
+                return pRowNumFmtId[ nRow ];
+            }
+        }
+        return NUMBERFORMAT_UNDEFINED;
 /*N*/ }
 /*N*/ long SchMemChart::GetTransNumFormatIdCol(const long nCol) const
 /*N*/ {
 /*N*/ 	DBG_ASSERT(((SchMemChart*)this)->VerifyTranslation(), "Translation table corrupted in MemChart");
-/*N*/ 	return ( nTranslated == TRANS_COL ) ? pColNumFmtId[ pColTable[ nCol ]]: pColNumFmtId[ nCol ];
+        if ( pColNumFmtId && IsValidColumn( nCol ) )
+        {
+            if ( nTranslated == TRANS_COL )
+            {
+                if ( pColTable )
+                {
+                    long nTransCol = pColTable[ nCol ];
+                    if ( IsValidColumn( nTransCol ) )
+                    {
+                        return pColNumFmtId[ nTransCol ];
+                    }
+                }
+            }
+            else
+            {
+                return pColNumFmtId[ nCol ];
+            }
+        }
+        return NUMBERFORMAT_UNDEFINED;
 /*N*/ }
 
 
@@ -470,9 +589,16 @@ namespace binfilter {
 /*N*/ 	double *pOut = rMemChart.pData;
 /*N*/ 
 /*N*/ 	short i;
-/*N*/ 	for (i = 0; i < rMemChart.nColCnt; i++)
-/*N*/ 		for (short j = 0; j < rMemChart.nRowCnt; j++)
-/*N*/ 			rOut << *(pOut ++);
+        if ( pOut )
+        {
+            for ( i = 0; i < rMemChart.nColCnt; i++ )
+            {
+                for ( short j = 0; j < rMemChart.nRowCnt; j++ )
+                {
+                    rOut << *(pOut ++);
+                }
+            }
+        }
 /*N*/ 
 /*N*/ 	rOut << (INT16)aSysCharSet;
 /*N*/ 	rOut.WriteByteString( rMemChart.aMainTitle );
@@ -481,21 +607,41 @@ namespace binfilter {
 /*N*/ 	rOut.WriteByteString( rMemChart.aYAxisTitle );
 /*N*/ 	rOut.WriteByteString( rMemChart.aZAxisTitle );
 /*N*/ 
-/*N*/ 	for (i = 0; i < rMemChart.nColCnt; i++)
-/*N*/ 		rOut.WriteByteString( rMemChart.pColText[ i ] );
-/*N*/ 
-/*N*/ 	for (i = 0; i < rMemChart.nRowCnt; i++)
-/*N*/ 		rOut.WriteByteString( rMemChart.pRowText[ i ] );
+        if ( rMemChart.pColText )
+        {
+            for ( i = 0; i < rMemChart.nColCnt; i++ )
+            {
+                rOut.WriteByteString( rMemChart.pColText[ i ] );
+            }
+        }
+
+        if ( rMemChart.pRowText )
+        {
+            for ( i = 0; i < rMemChart.nRowCnt; i++ )
+            {
+                rOut.WriteByteString( rMemChart.pRowText[ i ] );
+            }
+        }
 /*N*/ 
 /*N*/ 	rOut << (INT16)rMemChart.eDataType;
 /*N*/ 
 /*N*/ 	//IOVersion = 1
 /*N*/ 	long nIndex;
-/*N*/ 	for (nIndex = 0; nIndex < rMemChart.nColCnt; nIndex++)
-/*N*/ 		rOut << rMemChart.pColTable[nIndex];
-/*N*/ 
-/*N*/ 	for (nIndex = 0; nIndex < rMemChart.nRowCnt; nIndex++)
-/*N*/ 		rOut << rMemChart.pRowTable[nIndex];
+        if ( rMemChart.pColTable )
+        {
+            for ( nIndex = 0; nIndex < rMemChart.nColCnt; nIndex++ )
+            {
+                rOut << rMemChart.pColTable[nIndex];
+            }
+        }
+
+        if ( rMemChart.pRowTable )
+        {
+            for ( nIndex = 0; nIndex < rMemChart.nRowCnt; nIndex++ )
+            {
+                rOut << rMemChart.pRowTable[nIndex];
+            }
+        }
 /*N*/ 
 /*N*/ 	//IOVersion = 2
 /*N*/ 	rOut << rMemChart.nTranslated;
@@ -516,17 +662,36 @@ namespace binfilter {
 /*N*/ 
 /*N*/ 	SchIOCompat aIO(rIn, STREAM_READ);
 /*N*/ 
-/*N*/ 	rIn >> nInt16; rMemChart.nColCnt = (short)nInt16;
-/*N*/ 	rIn >> nInt16; rMemChart.nRowCnt = (short)nInt16;
+        short nCols=0;
+        short nRows=0;
+/*N*/ 	rIn >> nInt16; nCols = static_cast<short>(nInt16);
+/*N*/ 	rIn >> nInt16; nRows = static_cast<short>(nInt16);
 /*N*/ 
-/*N*/ 	rMemChart.pData = new double[rMemChart.nColCnt * rMemChart.nRowCnt];
-/*N*/ 
-/*N*/ 	double *pIn = rMemChart.pData;
-/*N*/ 
-/*N*/ 	short i;
-/*N*/ 	for (i = 0; i < rMemChart.nColCnt; i++)
-/*N*/ 		for (short j = 0; j < rMemChart.nRowCnt; j++)
-/*N*/ 			rIn >> *(pIn ++);
+        double* pTmpData = ArrayHelper< double >::create_short_size( nCols, nRows );
+        if ( !pTmpData )
+        {
+            rIn.SetError( ERRCODE_IO_GENERAL );
+            return rIn;
+        }
+
+        rMemChart.nColCnt = nCols;
+        rMemChart.nRowCnt = nRows;
+
+        delete[] rMemChart.pData;
+        rMemChart.pData = pTmpData;
+
+        short i;
+        double *pIn = rMemChart.pData;
+        if ( pIn )
+        {
+            for ( i = 0; i < rMemChart.nColCnt; i++ )
+            {
+                for ( short j = 0; j < rMemChart.nRowCnt; j++ )
+                {
+                    rIn >> *(pIn ++);
+                }
+            }
+        }
 /*N*/ 
 /*N*/ 	INT16 nCharSet;
 /*N*/ 	rIn >> nCharSet;
@@ -541,35 +706,75 @@ namespace binfilter {
 /*N*/ 	rIn.ReadByteString( rMemChart.aYAxisTitle );
 /*N*/ 	rIn.ReadByteString( rMemChart.aZAxisTitle );
 /*N*/ 
-/*N*/ 	rMemChart.pColText = new String[rMemChart.nColCnt];
-/*N*/ 
-/*N*/ 	for (i = 0; i < rMemChart.nColCnt; i++)
-/*N*/ 	{
-/*N*/ 		rIn.ReadByteString( rMemChart.pColText[ i ] );
-/*N*/ 	}
-/*N*/ 
-/*N*/ 	rMemChart.pRowText = new String[rMemChart.nRowCnt];
-/*N*/ 
-/*N*/ 	for (i = 0; i < rMemChart.nRowCnt; i++)
-/*N*/ 	{
-/*N*/ 		rIn.ReadByteString( rMemChart.pRowText[ i ] );
-/*N*/ 	}
+        delete[] rMemChart.pColText;
+        rMemChart.pColText = ArrayHelper< String >::create_short_size( rMemChart.nColCnt );
+        if ( !rMemChart.pColText )
+        {
+            rIn.SetError( ERRCODE_IO_GENERAL );
+            return rIn;
+        }
+        for ( i = 0; i < rMemChart.nColCnt; i++ )
+        {
+            rIn.ReadByteString( rMemChart.pColText[ i ] );
+        }
+
+        delete[] rMemChart.pRowText;
+        rMemChart.pRowText = ArrayHelper< String >::create_short_size( rMemChart.nRowCnt );
+        if ( !rMemChart.pRowText )
+        {
+            rIn.SetError( ERRCODE_IO_GENERAL );
+            return rIn;
+        }
+        for ( i = 0; i < rMemChart.nRowCnt; i++ )
+        {
+            rIn.ReadByteString( rMemChart.pRowText[ i ] );
+        }
 /*N*/ 
 /*N*/ 	rIn >> nInt16; rMemChart.eDataType = (short)nInt16;
 /*N*/ 
-/*N*/ 	rMemChart.pRowNumFmtId	= new sal_Int32 [rMemChart.nRowCnt];
-/*N*/ 	rMemChart.pColNumFmtId	= new sal_Int32 [rMemChart.nColCnt];
-/*N*/ 	rMemChart.pRowTable		= new sal_Int32 [rMemChart.nRowCnt];
-/*N*/ 	rMemChart.pColTable		= new sal_Int32 [rMemChart.nColCnt];
+        delete[] rMemChart.pRowNumFmtId;
+        rMemChart.pRowNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( rMemChart.nRowCnt );
+        if ( !rMemChart.pRowNumFmtId )
+        {
+            rIn.SetError( ERRCODE_IO_GENERAL );
+            return rIn;
+        }
+
+        delete[] rMemChart.pColNumFmtId;
+        rMemChart.pColNumFmtId = ArrayHelper< sal_Int32 >::create_short_size( rMemChart.nColCnt );
+        if ( !rMemChart.pColNumFmtId )
+        {
+            rIn.SetError( ERRCODE_IO_GENERAL );
+            return rIn;
+        }
+
+        delete[] rMemChart.pRowTable;
+        rMemChart.pRowTable = ArrayHelper< sal_Int32 >::create_short_size( rMemChart.nRowCnt );
+        if ( !rMemChart.pRowTable )
+        {
+            rIn.SetError( ERRCODE_IO_GENERAL );
+            return rIn;
+        }
+
+        delete[] rMemChart.pColTable;
+        rMemChart.pColTable = ArrayHelper< sal_Int32 >::create_short_size( rMemChart.nColCnt );
+        if ( !rMemChart.pColTable )
+        {
+            rIn.SetError( ERRCODE_IO_GENERAL );
+            return rIn;
+        }
 /*N*/ 
 /*N*/ 	if(aIO.GetVersion()>=1)
 /*N*/ 	{
 /*N*/ 		long i;
-/*N*/ 		for (i = 0; i < rMemChart.nColCnt; i++)
-/*N*/ 			rIn >> rMemChart.pColTable[i];
-/*N*/ 
-/*N*/ 		for (i = 0; i < rMemChart.nRowCnt; i++)
-/*N*/ 			rIn >> rMemChart.pRowTable[i];
+            for ( i = 0; i < rMemChart.nColCnt; i++ )
+            {
+                rIn >> rMemChart.pColTable[i];
+            }
+	        for ( i = 0; i < rMemChart.nRowCnt; i++ )
+            {
+		        rIn >> rMemChart.pRowTable[i];
+            }
 /*N*/ 
 /*N*/ 		if(aIO.GetVersion()>=2)
 /*N*/ 			rIn >> rMemChart.nTranslated;
@@ -603,11 +808,21 @@ namespace binfilter {
 /*N*/ void SchMemChart::InitNumFmt()
 /*N*/ {
 /*N*/ 	long i;
-/*N*/ 	for(i=0;i<nColCnt;i++)
-/*N*/ 		pColNumFmtId[i]=-1; //uninitialised!
-/*N*/ 
-/*N*/ 	for(i=0;i<nRowCnt;i++)
-/*N*/ 		pRowNumFmtId[i]=-1;
+        if ( pColNumFmtId )
+        {
+            for ( i = 0; i < nColCnt; i++ )
+            {
+                pColNumFmtId[i] = -1; //uninitialised!
+            }
+        }
+
+        if ( pRowNumFmtId )
+        {
+            for ( i = 0; i < nRowCnt; i++ )
+            {
+                pRowNumFmtId[i] = -1;
+            }
+        }
 /*N*/ }
 
 /*************************************************************************
