@@ -42,9 +42,10 @@ all:
 TARFILE_NAME=hunspell-1.3.2
 TARFILE_MD5=3121aaf3e13e5d88dfff13fb4a5f1ab8
 
-PATCH_FILES=					\
-    hunspell-solaris.patch		\
-    hunspell-bash.patch
+PATCH_FILES=					    \
+    hunspell-solaris.patch		    \
+    hunspell-bash.patch             \
+    hunspell-1.3.2-overflow.patch
 
 .IF "$(GUI)"=="UNX"
 
