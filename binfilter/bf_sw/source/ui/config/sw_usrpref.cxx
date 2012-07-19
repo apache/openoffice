@@ -99,7 +99,7 @@ using namespace ::com::sun::star::uno;
 /*N*/ 		"Display/DrawingControl",  					//  2
 /*N*/ 		"Display/FieldCode",	   					//  3
 /*N*/ 		"Display/Note",								//  4
-/*N*/         "Display/PreventTips",                      //  5
+/*N*/         "Display/ShowContentTips",                      //  5
 /*N*/         "NonprintingCharacter/MetaCharacters",     //   6
 /*N*/         "NonprintingCharacter/ParagraphEnd",        //  7
 /*N*/         "NonprintingCharacter/OptionalHyphen",      //  8
@@ -166,7 +166,7 @@ using namespace ::com::sun::star::uno;
 /*N*/ 					case  2: rParent.SetDraw(bSet);    	break;// "Display/DrawingControl",
 /*N*/ 					case  3: rParent.SetFldName(bSet); 	break;// "Display/FieldCode",
 /*N*/ 					case  4: rParent.SetPostIts(bSet); 	break;// "Display/Note",
-/*N*/                     case  5: rParent.SetPreventTips(bSet);  break;// "Display/PreventTips",
+/*N*/                     case  5: rParent.SetShowContentTips(bSet);  break;// "Display/ShowContentTips",
 /*N*/                     case  6: rParent.SetViewMetaChars(bSet); break; //"NonprintingCharacter/MetaCharacters"
 /*N*/                     case  7: rParent.SetParagraph(bSet); break;// "NonprintingCharacter/ParagraphEnd",
 /*N*/                     case  8: rParent.SetSoftHyph(bSet); break;// "NonprintingCharacter/OptionalHyphen",
