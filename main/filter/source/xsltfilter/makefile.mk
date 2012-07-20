@@ -33,7 +33,7 @@ CLASSDIR!:=$(CLASSDIR)$/$(TARGET)
 
 .IF "$(DISABLE_SAXON)" == ""
 
-SLOFILES=$(SLO)$/XSLTFilter.obj $(SLO)$/fla.obj
+SLOFILES=$(SLO)$/XSLTFilter.obj
 LIBNAME=xsltfilter
 SHL1TARGETDEPN=makefile.mk
 SHL1OBJS=$(SLOFILES)
