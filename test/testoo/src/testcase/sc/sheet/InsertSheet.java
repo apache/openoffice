@@ -21,14 +21,11 @@
 package testcase.sc.sheet;
 
 import static org.junit.Assert.*;
-import static org.openoffice.test.vcl.Tester.*;
 import static testlib.UIMap.*;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-
 import testlib.Log;
 
 /**
@@ -41,7 +38,7 @@ public class InsertSheet {
 
 	@Rule
 	public Log LOG = new Log();
-	
+
 	@Before
 	public void setUp() throws Exception {
 		app.start();
@@ -53,7 +50,7 @@ public class InsertSheet {
 	public void tearDown() throws Exception {
 		app.close();
 	}
-	
+
 	/**
 	 * Insert one sheet in different place
 	 * @throws Exception
@@ -71,7 +68,7 @@ public class InsertSheet {
 		assertArrayEquals(new String[] { "Sheet4", "Sheet5", "Sheet6", "Sheet1", "Sheet2", "Sheet3" }, SCSheetsList.getItemsText());
 		SCSelectSheetsDlg.ok();
 	}
-	
+
 	/**
 	 * Insert one sheet in different place
 	 * @throws Exception
