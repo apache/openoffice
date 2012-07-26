@@ -2450,9 +2450,11 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 							SdrObject* pPresObj = pPage->CreatePresObj( ePresObjKind, bVertical, pText->GetLogicRect(), sal_True );
 							pPresObj->SetUserCall( pPage );
 
-							SfxItemSet aSet( pSdrModel->GetItemPool() );
-							ApplyAttributes( rStCtrl, aSet );
-							pPresObj->SetMergedItemSet(aSet);
+                            SfxItemSet aSet( pSdrModel->GetItemPool() );
+                            ApplyAttributes( rStCtrl, aSet );
+                            pPresObj->SetLogicRect(pText->GetLogicRect());
+                            ApplyTextAnchorAttributes( *pTextObj, aSet );
+                            pPresObj->SetMergedItemSet(aSet);
 
 							if ( ( eAktPageKind != PPT_NOTEPAGE ) && ( pSlideLayout->aPlacementId[ i ] != (sal_uLong)-1 ) )
 							{
