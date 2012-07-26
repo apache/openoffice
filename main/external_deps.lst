@@ -20,7 +20,8 @@
 #    downloaded file.
 
 # The fallback site for category-A libraries.
-SVN_TRUNK=http://svn.apache.org/repos/asf/!svn/bc/1336449/incubator/ooo/trunk/ext_sources/
+# NOTE the fallback should be the TAG, not trunk?
+SVN_TRUNK=http://svn.apache.org/repos/asf/incubator/ooo/tags/AOO340/ext_sources/
 
 # The fallback site for category-B libraries.
 OOO_EXTRAS=http://ooo-extras.apache-extras.org.codespot.com/files/
@@ -59,11 +60,12 @@ if ( true )
     URL1 = $(SVN_TRUNK)$(MD5)-$(name)
 
 if (SOLAR_JAVA == TRUE)
-    MD5 = 17960f35b2239654ba608cf1f3e256b3
-    name = lucene-2.9.4-src.tar.gz
-    URL1 = http://www.us.apache.org/dist/lucene/java/2.9.4/lucene-2.9.4-src.tar.gz
-    # Fall back to a version in SVN from a previous revsion.
-    URL2 = http://svn.apache.org/repos/asf/!svn/bc/1337615/incubator/ooo/trunk/ext_sources/$(MD5)-$(name)
+    MD5 = 48d8169acc35f97e05d8dcdfd45be7f2
+    name = lucene-2.3.2.tar.gz
+    # MD5 mismatch: ec66449aa93999648af5820c9b2cc0f0
+    # URL1 = http://archive.apache.org/dist/lucene/java/lucene-2.3.2.tar.gz
+    # Fall back to a version in SVN from a previous revsion. Rev. 1337602 updated to 2.9.4
+    URL2 = http://svn.apache.org/repos/asf/!svn/bc/1337601/incubator/ooo/trunk/ext_sources/$(MD5)-$(name)
     URL3 = $(SVN_TRUNK)$(MD5)-$(name)
  
 if (WITH_MOZILLA != NO)
@@ -97,9 +99,9 @@ if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
     URL2 = $(SVN_TRUNK)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
-    MD5 = 2e482c7567908d334785ce7d69ddfff7
-    name = commons-codec-1.6-src.tar.gz
-    URL1 = http://apache.spinellicreations.com//commons/codec/source/commons-codec-1.6-src.tar.gz
+    MD5 = af3c3acf618de6108d65fcdc92b492e1
+    name = commons-codec-1.3-src.tar.gz
+    URL1 = http://archive.apache.org/dist/commons/codec/source/commons-codec-1.3-src.tar.gz
     URL2 = $(SVN_TRUNK)$(MD5)-$(name)
 
 if ( true )
@@ -121,9 +123,9 @@ if (SOLAR_JAVA==TRUE && (ENABLE_MEDIAWIKI==YES || ENABLE_REPORTBUILDER==YES))
     URL2 = $(SVN_TRUNK)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
-    MD5 = 625ff5f2f968dd908bca43c9469d6e6b
-    name = commons-lang-2.4-src.tar.gz
-    URL1 = http://archive.apache.org/dist/commons/lang/source/commons-lang-2.4-src.tar.gz
+    MD5 = 2ae988b339daec234019a7066f96733e
+    name = commons-lang-2.3-src.tar.gz
+    URL1 = http://archive.apache.org/dist/commons/lang/source/commons-lang-2.3-src.tar.gz
     URL2 = $(SVN_TRUNK)$(MD5)-$(name)
 
 if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
