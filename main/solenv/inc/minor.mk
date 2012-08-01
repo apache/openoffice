@@ -19,7 +19,7 @@
 #  
 # *************************************************************
 RSCVERSION=341
-RSCREVISION=341m1(Build:9592)
-BUILD=9592
+RSCREVISION=341m1(Build:9593)
+BUILD=9593
 LAST_MINOR=m1
 SOURCEVERSION=AOO341
