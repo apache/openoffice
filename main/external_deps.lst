@@ -241,7 +241,8 @@ if (SYSTEM_PYTHON != YES)
 if (SYSTEM_PYTHON != YES)
     MD5 = e81c2f0953aa60f8062c05a4673f2be0
     name = Python-2.6.1.tar.bz2
-    URL1 = $(SVN_TRUNK)$(MD5)-$(name)
+    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL2 = $(SVN_TRUNK)$(MD5)-$(name)
 
 if (GUI!=UNX || SYSTEM_ZLIB!=YES)
     MD5 = c735eab2d659a96e5a594c9e8541ad63
