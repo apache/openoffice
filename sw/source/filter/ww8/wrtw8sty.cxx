@@ -1994,6 +1994,8 @@ bool WW8_WrPlcSubDoc::WriteGenericTxt( WW8Export& rWrt, sal_uInt8 nTTyp,
                 aCps.Insert( nCP, i );
                 pTxtPos->Append( nCP );
 
+                if( aCntnt[ i ] != NULL )
+                {
                 // is it an writer or sdr - textbox?
                 const SdrObject& rObj = *(SdrObject*)aCntnt[ i ];
                 if (rObj.GetObjInventor() == FmFormInventor)
@@ -2042,7 +2044,17 @@ bool WW8_WrPlcSubDoc::WriteGenericTxt( WW8Export& rWrt, sal_uInt8 nTTyp,
                     }
                     // <--
                 }
-
+                }
+				else if( i < aSpareFmts.Count() )
+				{
+					if( const SwFrmFmt* pFmt = (const SwFrmFmt*)aSpareFmts[ i ] )
+					{
+						const SwNodeIndex* pNdIdx = pFmt->GetCntnt().GetCntntIdx();
+						rWrt.WriteSpecialText( pNdIdx->GetIndex() + 1,
+								   pNdIdx->GetNode().EndOfSectionIndex(), nTTyp );
+					}
+				}
+                
                 // CR at end of one textbox text ( otherwise WW gpft :-( )
                 rWrt.WriteStringAsPara( aEmptyStr );
             }
@@ -2177,7 +2189,7 @@ void WW8_WrPlcSubDoc::WriteGenericPlc( WW8Export& rWrt, sal_uInt8 nTTyp,
                     // is it an writer or sdr - textbox?
                     const SdrObject* pObj = (SdrObject*)aCntnt[ i ];
                     sal_Int32 nCnt = 1;
-                    if ( !pObj->ISA( SdrTextObj ) )
+                    if (pObj && !pObj->ISA( SdrTextObj ) )
                     {
                         // find the "highest" SdrObject of this
                         const SwFrmFmt& rFmt = *::FindFrmFmt( pObj );
@@ -2191,6 +2203,22 @@ void WW8_WrPlcSubDoc::WriteGenericPlc( WW8Export& rWrt, sal_uInt8 nTTyp,
                             pChn = &pChn->GetNext()->GetChain();
                         }
                     }
+					if( NULL == pObj )
+					{
+						if( i < aSpareFmts.Count() && aSpareFmts[ i ] )
+						{
+							const SwFrmFmt& rFmt = *(const SwFrmFmt*)aSpareFmts[ i ];
+
+							const SwFmtChain* pChn = &rFmt.GetChain();
+							while( pChn->GetNext() )
+							{
+								// has a chain?
+								// then calc the cur pos in the chain
+								++nCnt;
+								pChn = &pChn->GetNext()->GetChain();
+							}
+						}
+					}                    
                     // long cTxbx / iNextReuse
                     SwWW8Writer::WriteLong( *rWrt.pTableStrm, nCnt );
                     // long cReusable
