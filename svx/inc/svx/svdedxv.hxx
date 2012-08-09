@@ -42,6 +42,7 @@ class EditStatus;
 class EditFieldInfo;
 class ImpSdrEditPara;
 struct PasteOrDropInfos;
+class SdrUndoManager;
 
 namespace com { namespace sun { namespace star { namespace uno {
 	class Any;
@@ -101,7 +102,7 @@ protected:
 	Link						aOldCalcFieldValueLink; // Zum rufen des alten Handlers
 	Point						aMacroDownPos;
 
-	sal_uInt16						nMacroTol;
+	sal_uInt16					nMacroTol;
 
 	unsigned					bTextEditDontDelete : 1;   // Outliner und View bei SdrEndTextEdit nicht deleten (f. Rechtschreibpruefung)
 	unsigned					bTextEditOnlyOneView : 1;  // Nur eine OutlinerView (f. Rechtschreibpruefung)
@@ -114,6 +115,8 @@ protected:
 	rtl::Reference< sdr::SelectionController > mxLastSelectionController;
 
 private:
+    ::svl::IUndoManager* mpOldTextEditUndoManager;
+
 	SVX_DLLPRIVATE void ImpClearVars();
 
 protected:
@@ -134,7 +137,10 @@ protected:
 	DECL_LINK(ImpOutlinerStatusEventHdl,EditStatus*);
 	DECL_LINK(ImpOutlinerCalcFieldValueHdl,EditFieldInfo*);
 
-	void ImpMacroUp(const Point& rUpPos);
+    // link for EndTextEditHdl
+	DECL_LINK(EndTextEditHdl, SdrUndoManager*);
+
+    void ImpMacroUp(const Point& rUpPos);
 	void ImpMacroDown(const Point& rDownPos);
 
    	DECL_LINK( BeginPasteOrDropHdl, PasteOrDropInfos* );
