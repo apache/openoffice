@@ -2178,33 +2178,10 @@ void OfaTreeOptionsDialog::Initialize( const Reference< XFrame >& _xFrame )
             if ( nPageId == RID_SVXPAGE_INET_MAIL )
                 continue;
 #endif
-#if defined MACOSX
-            // Disable Mozilla Plug-in tab-page on Mac
+            // Disable Mozilla Plug-in tab-page on every platform until completely removed
             if ( nPageId == RID_SVXPAGE_INET_MOZPLUGIN )
                 continue;
-#endif
-#ifdef LINUX                                                                  
-            // Disable Mozilla Plug-in tab-page on Linux if we find a         
-            // globally installed plugin                                      
-            if ( nPageId == RID_SVXPAGE_INET_MOZPLUGIN ) {                     
-                struct stat sb;                                               
-                char *p;                                                       
-                bool bHaveSystemWidePlugin = false;                           
-                char mozpaths[]="/usr/lib/mozilla/plugins/libnpsoplugin.so:/usr/lib/firefox/plugins/libnpsoplugin.so:/usr/lib/mozilla-firefox/plugins/libnpsoplugin.so:/usr/lib/iceweasel/plugins/libnpsoplugin.so:/usr/lib/iceape/plugins/libnpsoplugin.so:/usr/lib/browser-plugins/libnpsoplugin.so:/usr/lib64/browser-plugins/libnpsoplugin.so";  
-                                                                               
-                p = strtok(mozpaths, ":");                                     
-                while (p != NULL) {                                            
-                    if (stat(p, &sb) != -1) {                                  
-                         bHaveSystemWidePlugin = true;                         
-                         break;                                                
-                    }                                                          
-                    p = strtok(NULL, ":");                                     
-                }                                                             
-                                                                               
-                if (bHaveSystemWidePlugin == true)                            
-                    continue;                                                  
-            }                                                                   
-#endif
+
             AddTabPage( nPageId, rInetArray.GetString(i), nGroup );
         }
     }
