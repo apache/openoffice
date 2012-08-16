@@ -5733,25 +5733,37 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 							ImplCreateShape( ESCHER_ShpInst_Rectangle, 0xa02, aSolverContainer );          // Flags: Connector | HasSpt | Child
 							aPropOptSp.CreateFillProperties( mXPropSet, sal_True );
 							aPropOptSp.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x90000 );
-                            aPropOptSp.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
+							aPropOptSp.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 							aPropOptSp.AddOpt( ESCHER_Prop_WrapText, ESCHER_WrapSquare );
 
-                            SvMemoryStream aClientTextBox( 0x200, 0x200 );
-                            SvMemoryStream  aExtBu( 0x200, 0x200 );
+							SvMemoryStream aClientTextBox( 0x200, 0x200 );
+							SvMemoryStream  aExtBu( 0x200, 0x200 );
 
-                            ImplWriteTextStyleAtom( aClientTextBox, EPP_TEXTTYPE_Other, 0, NULL, aExtBu, &aPropOptSp );
+							ImplWriteTextStyleAtom( aClientTextBox, EPP_TEXTTYPE_Other, 0, NULL, aExtBu, &aPropOptSp );
 
-                            aPropOptSp.Commit( *mpStrm );
-                            mpPptEscherEx->AddAtom( 16, ESCHER_ChildAnchor );
-                            *mpStrm 	<< nLeft
-                                        << nTop
-                                        << nRight
-                                        << nBottom;
+							// need write client data for extend bullet
+							if ( aExtBu.Tell() )
+							{
+								SvMemoryStream* pClientData = new SvMemoryStream( 0x200, 0x200 );
+								ImplProgTagContainer( pClientData, &aExtBu );
+								*mpStrm << (sal_uInt32)( ( ESCHER_ClientData << 16 ) | 0xf )
+									<< (sal_uInt32)pClientData->Tell();
 
-                            *mpStrm << (sal_uInt32)( ( ESCHER_ClientTextbox << 16 ) | 0xf )
-                                    << (sal_uInt32)aClientTextBox.Tell();
+								mpStrm->Write( pClientData->GetData(), pClientData->Tell() );
+								delete pClientData, pClientData = NULL;
+							}
 
-                            mpStrm->Write( aClientTextBox.GetData(), aClientTextBox.Tell() );
+							aPropOptSp.Commit( *mpStrm );
+							mpPptEscherEx->AddAtom( 16, ESCHER_ChildAnchor );
+							*mpStrm 	<< nLeft
+								<< nTop
+								<< nRight
+								<< nBottom;
+
+							*mpStrm << (sal_uInt32)( ( ESCHER_ClientTextbox << 16 ) | 0xf )
+								<< (sal_uInt32)aClientTextBox.Tell();
+
+							mpStrm->Write( aClientTextBox.GetData(), aClientTextBox.Tell() );
 							mpPptEscherEx->CloseContainer();
 						}
 					}
