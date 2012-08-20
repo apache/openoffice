@@ -346,14 +346,25 @@ void WMFReader::ReadRecordParams( USHORT nFunc )
 				*pWMF >> pnPoints[i];
 				nPoints = nPoints + pnPoints[i];
 			}
-			// Polygonpunkte holen:
-			pPtAry  = (Point*) new char[ nPoints * sizeof(Point) ];
-			for ( i = 0; i < nPoints; i++ )
-				pPtAry[ i ] = ReadPoint();
+
+			PolyPolygon aPolyPoly(nPoly, nPoly);
+
+            for( i = 0; i < nPoly; i++ )
+			{
+                const sal_uInt16 nPointCount(pnPoints[i]);
+			    pPtAry = new Point[nPointCount];
+
+                for(sal_uInt16 j(0); j < nPointCount; j++)
+                {
+    				pPtAry[j] = ReadPoint();
+                }
+                
+                aPolyPoly.Insert(Polygon(nPointCount, pPtAry));
+                delete[] pPtAry;
+            }
+
 			// PolyPolygon Actions erzeugen
-			PolyPolygon aPolyPoly( nPoly, pnPoints, pPtAry );
 			pOut->DrawPolyPolygon( aPolyPoly );
-			delete[] (char*) pPtAry;
 			delete[] pnPoints;
 		}
 		break;

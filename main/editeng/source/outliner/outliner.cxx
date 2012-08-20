@@ -256,9 +256,10 @@ void Outliner::Init( sal_uInt16 nMode )
 
 	pEditEngine->SetControlWord( nCtrl );
 
+    EnableUndo(false);
 	ImplInitDepth( 0, GetMinDepth(), sal_False );
-
 	GetUndoManager().Clear();
+    EnableUndo(true);
 }
 
 void Outliner::SetMaxDepth( sal_Int16 nDepth, sal_Bool bCheckParagraphs )
@@ -1227,6 +1228,12 @@ void Outliner::ImpFilterIndents( sal_uLong nFirstPara, sal_uLong nLastPara )
 {
 	DBG_CHKTHIS(Outliner,0);
 	return pEditEngine->GetUndoManager();
+}
+
+::svl::IUndoManager* Outliner::SetUndoManager(::svl::IUndoManager* pNew)
+{
+	DBG_CHKTHIS(Outliner,0);
+	return pEditEngine->SetUndoManager(pNew);
 }
 
 void Outliner::ImpTextPasted( sal_uLong nStartPara, sal_uInt16 nCount )

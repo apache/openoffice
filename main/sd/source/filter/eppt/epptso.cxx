@@ -1406,6 +1406,13 @@ void PPTWriter::ImplWriteParagraphs( SvStream& rOut, TextObj& rTextObj )
             nPropertyFlags |= 1;            // turn off bullet explicit
             nBulletFlags = 0;
         }
+
+        // Write nTextOfs and nBullets 
+        if ( mpStyleSheet->IsHardAttribute( nInstance, nDepth, ParaAttr_TextOfs, pPara->nTextOfs ) )
+            nPropertyFlags |= 0x100;
+        if ( mpStyleSheet->IsHardAttribute( nInstance, nDepth, ParaAttr_BulletOfs, pPara->nBulletOfs ))
+            nPropertyFlags |= 0x400;
+
         FontCollectionEntry aFontDescEntry( pPara->aFontDesc.Name, pPara->aFontDesc.Family, pPara->aFontDesc.Pitch, pPara->aFontDesc.CharSet );
         sal_uInt16  nFontId = (sal_uInt16)maFontCollection.GetId( aFontDescEntry );
 
@@ -1444,6 +1451,10 @@ void PPTWriter::ImplWriteParagraphs( SvStream& rOut, TextObj& rTextObj )
             rOut << (sal_uInt16)( pPara->mnLineSpacingTop );
         if ( nPropertyFlags & 0x00004000 )
             rOut << (sal_uInt16)( pPara->mnLineSpacingBottom );
+        if ( nPropertyFlags & 0x100 )
+            rOut << (sal_uInt16)(pPara->nTextOfs);
+        if (  nPropertyFlags & 0x400 )
+            rOut << (sal_uInt16)(pPara->nBulletOfs);
         if ( nPropertyFlags & 0x000e0000 )
         {
             sal_uInt16 nAsianSettings = 0;
@@ -4132,7 +4143,7 @@ sal_Bool PPTWriter::ImplCreatePresentationPlaceholder( const sal_Bool bMasterPag
 		aPropOpt.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x110001 );
 		aPropOpt.AddOpt( ESCHER_Prop_lineColor, 0x8000001 );
 		aPropOpt.AddOpt( ESCHER_Prop_shadowColor, 0x8000002 );
-		aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+		aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 		sal_uInt32 nLineFlags = 0x90001;
 		if ( aPropOpt.GetOpt( ESCHER_Prop_fNoLineDrawDash, nLineFlags ) )
 			nLineFlags |= 0x10001;  // draw dashed line if no line
@@ -4191,14 +4202,17 @@ void PPTWriter::ImplCreateTextShape( EscherPropertyContainer& rPropOpt, EscherSo
     mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
     ImplCreateShape( ESCHER_ShpInst_TextBox, 0xa00, rSolver );
     if ( bFill )
-        rPropOpt.CreateFillProperties( mXPropSet, sal_True );
+        rPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 	if ( ImplGetText() )
 		rPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 }
 
 void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& aSolverContainer, PageType ePageType, sal_Bool bMasterPage, int nPageNumber )
 {
-    sal_uInt32  nInstance, nGroups, nShapes, nShapeCount, nPer, nLastPer, nIndices, nGroupLevel = 0, nOlePictureId;
+    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+    // sal_uInt32  nGroupLevel = 0;
+
+    sal_uInt32  nInstance, nGroups, nShapes, nShapeCount, nPer, nLastPer, nIndices, nOlePictureId;
     sal_uInt16  nEffectCount;
     ::com::sun::star::awt::Point   aTextRefPoint;
 
@@ -4350,7 +4364,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 				{
 	                ImplCreateShape( eShapeType, nMirrorFlags | 0xa00, aSolverContainer );
 					aPropOpt.CreateCustomShapeProperties( eShapeType, mXShape );
-					aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+					aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape);
 					if ( ImplGetText() )
 					{
 						if ( !aPropOpt.IsFontWork() )
@@ -4384,7 +4398,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 {
                     ImplCreateShape( ESCHER_ShpInst_Rectangle, 0xa00, aSolverContainer );          // Flags: Connector | HasSpt
                 }
-                aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 				if ( ImplGetText() )
 					aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_False );
             }
@@ -4422,7 +4436,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 {
                     mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                     ImplCreateShape( ESCHER_ShpInst_Ellipse, 0xa00, aSolverContainer );            // Flags: Connector | HasSpt
-                    aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                    aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 					if ( ImplGetText() )
 						aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_False );
 				}
@@ -4456,8 +4470,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 						aPolygon.Rotate( aRect.TopLeft(), (sal_uInt16)( mnAngle / 10 ) );
 						if ( ImplGetText() )
 						{
-							mpPptEscherEx->EnterGroup( 0,0 );
-							nGroupLevel = mpPptEscherEx->GetGroupLevel();
+							// #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                            // mpPptEscherEx->EnterGroup( 0,0 );
+							// nGroupLevel = mpPptEscherEx->GetGroupLevel();
 							bNeedText = sal_False;
 							bAdditionalText = sal_True;
 							mnTextSize = 0;
@@ -4473,7 +4488,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                         case POLY_CHORD :
                         {
                             if ( aPropOpt.CreatePolygonProperties( mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_False, aNewRect, &aPolygon ) )
-                                aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                                aPropOpt.CreateFillProperties( mXPropSet, sal_True , mXShape );
                         }
                         break;
 
@@ -4654,7 +4669,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     aTextRefPoint = ::com::sun::star::awt::Point( maRect.Left(), maRect.Top() );
                     mnTextSize = 0;
                     bAdditionalText = sal_True;
-                    mpPptEscherEx->EnterGroup( &maRect,0 );
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup( &maRect,0 );
                 }
                 mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                 sal_uInt32 nFlags = 0xa00;                                  // Flags: Connector | HasSpt
@@ -4672,8 +4688,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup( 0,0 );
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup( 0,0 );
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
                     mnTextSize = 0;
                 }
@@ -4684,15 +4701,16 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 maRect = ImplMapRectangle( aNewRect );
                 maPosition = ::com::sun::star::awt::Point( maRect.Left(), maRect.Top() );
                 maSize = ::com::sun::star::awt::Size( maRect.GetWidth(), maRect.GetHeight() );
-                aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                aPropOpt.CreateFillProperties( mXPropSet, sal_True , mXShape );
                 mnAngle = 0;
             }
             else if ( bPolyLine )
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup( 0,0 );
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup( 0,0 );
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
                     mnTextSize = 0;
                 }
@@ -4710,8 +4728,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup( 0,0 );
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup( 0,0 );
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
                     mnTextSize = 0;
                 }
@@ -4729,8 +4748,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup( 0,0 );
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup( 0,0 );
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
                     mnTextSize = 0;
                 }
@@ -4741,7 +4761,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 maRect = ImplMapRectangle( aNewRect );
                 maPosition = ::com::sun::star::awt::Point( maRect.Left(), maRect.Top() );
                 maSize = ::com::sun::star::awt::Size( maRect.GetWidth(), maRect.GetHeight() );
-                aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                aPropOpt.CreateFillProperties( mXPropSet, sal_True , mXShape );
                 mnAngle = 0;
             }
             else if ( ( mType == "drawing.GraphicObject" ) || ( mType == "presentation.GraphicObject" ) )
@@ -4787,8 +4807,22 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     else
                     {
                         ImplCreateShape( ESCHER_ShpInst_PictureFrame, 0xa00, aSolverContainer );
+                        const Rectangle aOldRect100thmm(aRect100thmm);
+
                         if ( aPropOpt.CreateGraphicProperties( mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "GraphicURL" ) ), sal_False, sal_True ) )
+                        {
                             aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
+							
+                            if(aOldRect100thmm != aRect100thmm)
+                            {
+                                // #119536# graphic has been adapted (rotated) so that it can be saved without angle,
+                                // adapt local values as needed
+                                maPosition = ImplMapPoint( ::com::sun::star::awt::Point( aRect100thmm.Left(), aRect100thmm.Top() ) );
+					            maSize = ImplMapSize( ::com::sun::star::awt::Size ( aRect100thmm.GetWidth(), aRect100thmm.GetHeight() ) );
+							    maRect = Rectangle( Point( maPosition.X, maPosition.Y ), Size( maSize.Width, maSize.Height ) );
+							    mnAngle = 0;
+                            }
+                        }
                     }
                 }
             }
@@ -4840,7 +4874,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 								aPropertyOptions.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x110001 );
 								aPropertyOptions.AddOpt( ESCHER_Prop_lineColor, 0x8000001 );
 								aPropertyOptions.AddOpt( ESCHER_Prop_shadowColor, 0x8000002 );
-								aPropertyOptions.CreateFillProperties( mXPropSet, sal_True );
+								aPropertyOptions.CreateFillProperties( mXPropSet, sal_True, mXShape );
 								sal_uInt32 nLineFlags = 0x90001;
 								if ( aPropertyOptions.GetOpt( ESCHER_Prop_fNoLineDrawDash, nLineFlags ) )
 									nLineFlags |= 0x10001;  // draw dashed line if no line
@@ -4885,7 +4919,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 							nPlaceHolderAtom = rLayout.nTypeOfTitle;
 							ImplCreateShape( ESCHER_ShpInst_Rectangle, 0x220, aSolverContainer );          // Flags: HaveAnchor | HaveMaster
 							aPropOpt.AddOpt( ESCHER_Prop_hspMaster, mnShapeMasterTitle );
-							aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+							aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 							aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 							ImplAdjustFirstLineLineSpacing( aTextObj, aPropOpt );
 							if ( mbEmptyPresObj )
@@ -4934,7 +4968,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 								aPropOpt2.AddOpt( ESCHER_Prop_lineColor, 0x8000001 );
 								aPropOpt2.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x90001 );
 								aPropOpt2.AddOpt( ESCHER_Prop_shadowColor, 0x8000002 );
-								aPropOpt2.CreateFillProperties( mXPropSet, sal_True );
+								aPropOpt2.CreateFillProperties( mXPropSet, sal_True, mXShape  );
 								sal_uInt32 nLineFlags = 0x90001;
 								if ( aPropOpt2.GetOpt( ESCHER_Prop_fNoLineDrawDash, nLineFlags ) )
 									nLineFlags |= 0x10001;  // draw dashed line if no line
@@ -4946,14 +4980,18 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 								*mpStrm << (sal_Int16)maRect.Top() << (sal_Int16)maRect.Left() << (sal_Int16)maRect.Right() << (sal_Int16)maRect.Bottom();  // oben, links, rechts, unten ????
 								mpPptEscherEx->OpenContainer( ESCHER_ClientData );
 								mpPptEscherEx->AddAtom( 8, EPP_OEPlaceholderAtom );
+								sal_uInt8 PlaceHolderID = ( mType == "presentation.Subtitle") ? EPP_PLACEHOLDER_MASTERSUBTITLE:EPP_PLACEHOLDER_MASTERBODY;
 								*mpStrm << (sal_uInt32)1                                                        // PlacementID
-										<< (sal_uInt8)EPP_PLACEHOLDER_MASTERBODY                                    // PlaceHolderID
+										<< PlaceHolderID/*(sal_uInt8)EPP_PLACEHOLDER_MASTERBODY */                                   // PlaceHolderID
 										<< (sal_uInt8)0                                                         // Size of PlaceHolder ( 0 = FULL, 1 = HALF, 2 = QUARTER )
 										<< (sal_uInt16)0;                                                       // padword
 								mpPptEscherEx->CloseContainer();    // ESCHER_ClientData
 								mpPptEscherEx->OpenContainer( ESCHER_ClientTextbox );       // printf
 								mpPptEscherEx->AddAtom( 4, EPP_TextHeaderAtom );
-								*mpStrm << (sal_uInt32)EPP_TEXTTYPE_Body;
+								if ( mType == "presentation.Subtitle")
+									*mpStrm << (sal_uInt32)EPP_TEXTTYPE_CenterBody;
+								else
+									*mpStrm << (sal_uInt32)EPP_TEXTTYPE_Body;
 								mnTextSize = aTextObj.Count();
 								aTextObj.Write( mpStrm );
 								mpPptEscherEx->BeginAtom();
@@ -4983,7 +5021,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 							mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
 							ImplCreateShape( ESCHER_ShpInst_Rectangle, 0x220, aSolverContainer );          // Flags: HaveAnchor | HaveMaster
 							aPropOpt.AddOpt( ESCHER_Prop_hspMaster, mnShapeMasterBody );
-							aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+							aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 							aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 							ImplAdjustFirstLineLineSpacing( aTextObj, aPropOpt );
 							if ( mbEmptyPresObj )
@@ -5462,8 +5500,10 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 mnAngle += 0x8000;
                 mnAngle &=~0xffff;  // nAngle auf volle Gradzahl runden
                 aPropOpt.AddOpt( ESCHER_Prop_Rotation, mnAngle );
-                mpPptEscherEx->SetGroupSnapRect( nGroupLevel, maRect );
-                mpPptEscherEx->SetGroupLogicRect( nGroupLevel, maRect );
+
+                // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                // mpPptEscherEx->SetGroupSnapRect( nGroupLevel, maRect );
+                // mpPptEscherEx->SetGroupLogicRect( nGroupLevel, maRect );
             }
             if ( !pClientTextBox )
                 pClientTextBox = new SvMemoryStream( 0x200, 0x200 );
@@ -5485,7 +5525,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             delete pClientTextBox, pClientTextBox = NULL;
 
             mpPptEscherEx->CloseContainer();  // ESCHER_SpContainer
-            mpPptEscherEx->LeaveGroup();
+            
+            // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+            // mpPptEscherEx->LeaveGroup();
         }
     }
     ClearGroupTable();                              // gruppierungen wegschreiben, sofern noch irgendwelche offen sind, was eigendlich nicht sein sollte
@@ -5706,25 +5748,37 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 							ImplCreateShape( ESCHER_ShpInst_Rectangle, 0xa02, aSolverContainer );          // Flags: Connector | HasSpt | Child
 							aPropOptSp.CreateFillProperties( mXPropSet, sal_True );
 							aPropOptSp.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x90000 );
-                            aPropOptSp.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
+							aPropOptSp.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 							aPropOptSp.AddOpt( ESCHER_Prop_WrapText, ESCHER_WrapSquare );
 
-                            SvMemoryStream aClientTextBox( 0x200, 0x200 );
-                            SvMemoryStream  aExtBu( 0x200, 0x200 );
+							SvMemoryStream aClientTextBox( 0x200, 0x200 );
+							SvMemoryStream  aExtBu( 0x200, 0x200 );
 
-                            ImplWriteTextStyleAtom( aClientTextBox, EPP_TEXTTYPE_Other, 0, NULL, aExtBu, &aPropOptSp );
+							ImplWriteTextStyleAtom( aClientTextBox, EPP_TEXTTYPE_Other, 0, NULL, aExtBu, &aPropOptSp );
 
-                            aPropOptSp.Commit( *mpStrm );
-                            mpPptEscherEx->AddAtom( 16, ESCHER_ChildAnchor );
-                            *mpStrm 	<< nLeft
-                                        << nTop
-                                        << nRight
-                                        << nBottom;
+							// need write client data for extend bullet
+							if ( aExtBu.Tell() )
+							{
+								SvMemoryStream* pClientData = new SvMemoryStream( 0x200, 0x200 );
+								ImplProgTagContainer( pClientData, &aExtBu );
+								*mpStrm << (sal_uInt32)( ( ESCHER_ClientData << 16 ) | 0xf )
+									<< (sal_uInt32)pClientData->Tell();
 
-                            *mpStrm << (sal_uInt32)( ( ESCHER_ClientTextbox << 16 ) | 0xf )
-                                    << (sal_uInt32)aClientTextBox.Tell();
+								mpStrm->Write( pClientData->GetData(), pClientData->Tell() );
+								delete pClientData, pClientData = NULL;
+							}
 
-                            mpStrm->Write( aClientTextBox.GetData(), aClientTextBox.Tell() );
+							aPropOptSp.Commit( *mpStrm );
+							mpPptEscherEx->AddAtom( 16, ESCHER_ChildAnchor );
+							*mpStrm 	<< nLeft
+								<< nTop
+								<< nRight
+								<< nBottom;
+
+							*mpStrm << (sal_uInt32)( ( ESCHER_ClientTextbox << 16 ) | 0xf )
+								<< (sal_uInt32)aClientTextBox.Tell();
+
+							mpStrm->Write( aClientTextBox.GetData(), aClientTextBox.Tell() );
 							mpPptEscherEx->CloseContainer();
 						}
 					}

@@ -943,9 +943,15 @@ long SwWW8ImplReader::Read_Field(WW8PLCFManResult* pRes)
     if (bNested)
         return 0;
 
-    sal_uInt16 n = ( aF.nId <= eMax ) ? aF.nId : static_cast< sal_uInt16 >(eMax); // alle > 91 werden 92
+    sal_uInt16 n = (aF.nId <= eMax) ? aF.nId : static_cast<sal_uInt16>(eMax);
     sal_uInt16 nI = n / 32;                     // # des sal_uInt32
     sal_uLong nMask = 1 << ( n % 32 );          // Maske fuer Bits
+
+    if ((sizeof(nFieldTagAlways)/sizeof(nFieldTagAlways[0])) <= nI)
+    {   // if indexes larger than 95 are needed, then a new configuration
+        // item has to be added, and nFieldTagAlways/nFieldTagBad expanded!
+        return aF.nLen;
+    }
 
     if( nFieldTagAlways[nI] & nMask )       // Flag: Tag it
         return Read_F_Tag( &aF );           // Resultat nicht als Text
@@ -1447,7 +1453,7 @@ eF_ResT SwWW8ImplReader::Read_F_Seq( WW8FieldDesc*, String& rStr )
             bFormat = true;                 // Format-Flag aktivieren
             bHidden = false;                // Hidden-Flag deaktivieren
             nRet = aReadParam.SkipToNextToken();
-            if( -2 == nRet )
+            if( -2 == nRet && !( aReadParam.GetResult().EqualsAscii("MERGEFORMAT") || aReadParam.GetResult().EqualsAscii("CHARFORMAT") ))
                 eNumFormat = GetNumTypeFromName( aReadParam.GetResult() );
             break;
 
@@ -2147,6 +2153,32 @@ eF_ResT SwWW8ImplReader::Read_F_PgRef( WW8FieldDesc*, String& rStr )
     rDoc.InsertPoolItem( *pPaM, SwFmtFld( aFld ), 0 );
     return FLD_OK;
 }
+//helper function
+//For MS MacroButton field, the symbol in plain text is always "(" (0x28),
+//which should be mapped according to the macro type
+bool ConvertMacroSymbol( const String& rName, String& rReference )
+{
+	bool bConverted = false;
+	if( rReference.EqualsAscii( "(" ) )
+	{
+		bConverted = true;
+		sal_Unicode cSymbol;
+		if( rName.EqualsAscii( "CheckIt" ) )
+			cSymbol = 0xF06F;
+		else if( rName.EqualsAscii( "UncheckIt" ) )
+			cSymbol = 0xF0FE;
+		else if( rName.EqualsAscii( "ShowExample" ) )
+			cSymbol = 0xF02A;
+		//else if... : todo
+		else
+			bConverted = false;
+
+		if( bConverted )
+			rReference = cSymbol;
+	}
+	return bConverted;
+}
+//end
 
 // "MACROSCHALTFL"ACHE"
 eF_ResT SwWW8ImplReader::Read_F_Macro( WW8FieldDesc*, String& rStr)
@@ -2189,22 +2221,53 @@ eF_ResT SwWW8ImplReader::Read_F_Macro( WW8FieldDesc*, String& rStr)
     if( !aName.Len() )
         return FLD_TAGIGN;  // makes no sense without Makro-Name
 
+	//try converting macro symbol according to macro name
+	bool bApplyWingdings = ConvertMacroSymbol( aName, aVText );
     aName.InsertAscii( "StarOffice.Standard.Modul1.", 0 );
 
     SwMacroField aFld( (SwMacroFieldType*)
                     rDoc.GetSysFldType( RES_MACROFLD ), aName, aVText );
-    rDoc.InsertPoolItem( *pPaM, SwFmtFld( aFld ), 0 );
 
+	if( !bApplyWingdings )
+	{
 
-    WW8_CP nOldCp = pPlcxMan->Where();
-    WW8_CP nCp = nOldCp + nOffset;
+		rDoc.InsertPoolItem( *pPaM, SwFmtFld( aFld ), 0 );
+		WW8_CP nOldCp = pPlcxMan->Where();
+		WW8_CP nCp = nOldCp + nOffset;
 
-    SwPaM aPaM(*pPaM);
-    aPaM.SetMark();
-    aPaM.Move(fnMoveBackward);
-    aPaM.Exchange();
+		SwPaM aPaM(*pPaM);
+		aPaM.SetMark();
+		aPaM.Move(fnMoveBackward);
+		aPaM.Exchange();
 
-    mpPostProcessAttrsInfo = new WW8PostProcessAttrsInfo(nCp, nCp, aPaM);
+		mpPostProcessAttrsInfo = new WW8PostProcessAttrsInfo(nCp, nCp, aPaM);
+	}
+	else
+	{
+		//set Wingdings font
+		sal_uInt16 i = 0;
+		for ( ; i < pFonts->GetMax(); i++ )
+		{
+			FontFamily eFamily;
+			String aFontName;
+			FontPitch ePitch;
+			CharSet eSrcCharSet;
+			if( GetFontParams( i, eFamily, aFontName, ePitch, eSrcCharSet ) 
+				&& aFontName.EqualsAscii("Wingdings") )
+			{
+				break;
+			}
+		}
+
+		if ( i < pFonts->GetMax() )
+		{
+
+			SetNewFontAttr( i, true, RES_CHRATR_FONT );
+			rDoc.InsertPoolItem( *pPaM, SwFmtFld( aFld ), 0 );
+			pCtrlStck->SetAttr( *pPaM->GetPoint(), RES_CHRATR_FONT );
+			ResetCharSetVars();
+		}
+	}
 
     return FLD_OK;
 }
@@ -2443,7 +2506,7 @@ eF_ResT SwWW8ImplReader::Read_F_Equation( WW8FieldDesc*, String& rStr )
 {
     _ReadFieldParams aReadParam( rStr );
     long cChar = aReadParam.SkipToNextToken();
-    if ('o' == cChar)
+    if ('o' == cChar || 'O' == cChar)
         Read_SubF_Combined(aReadParam);
     else if ('*' == cChar)
         Read_SubF_Ruby(aReadParam);
@@ -2453,45 +2516,95 @@ eF_ResT SwWW8ImplReader::Read_F_Equation( WW8FieldDesc*, String& rStr )
 void SwWW8ImplReader::Read_SubF_Combined( _ReadFieldParams& rReadParam)
 {
     String sCombinedCharacters;
-    if ((-2 == rReadParam.SkipToNextToken()) &&
-            rReadParam.GetResult().EqualsIgnoreCaseAscii('(', 1, 0))
+    _ReadFieldParams aOriFldParam = rReadParam;
+    long cGetChar = rReadParam.SkipToNextToken();
+    switch( cGetChar )
     {
-        for (int i=0;i<2;i++)
+    case 'a':
+    case 'A':
         {
-            if ('s' == rReadParam.SkipToNextToken())
+            String sTemp = rReadParam.GetResult();
+            if ( !sTemp.EqualsIgnoreCaseAscii("d", 1, 0) )
             {
-                long cChar = rReadParam.SkipToNextToken();
-                if (-2 != rReadParam.SkipToNextToken())
-                    break;
-                String sF = rReadParam.GetResult();
-                if ((('u' == cChar) && sF.EqualsIgnoreCaseAscii('p', 1, 0))
-                || (('d' == cChar) && sF.EqualsIgnoreCaseAscii('o', 1, 0)))
+                break;
+            }
+            rReadParam.SkipToNextToken();
+        }
+    case -2:
+        {
+            if ( rReadParam.GetResult().EqualsIgnoreCaseAscii('(', 1, 0) )
+            {
+                for (int i=0;i<2;i++)
                 {
-                    if (-2 == rReadParam.SkipToNextToken())
+                    if ('s' == rReadParam.SkipToNextToken())
                     {
-                        String sPart = rReadParam.GetResult();
-                        xub_StrLen nBegin = sPart.Search('(');
-
-                        //Word disallows brackets in this field, which
-                        //aids figuring out the case of an end of )) vs )
-                        xub_StrLen nEnd = sPart.Search(')');
-
-                        if ((nBegin != STRING_NOTFOUND) &&
-                            (nEnd != STRING_NOTFOUND))
+                        long cChar = rReadParam.SkipToNextToken();
+                        if (-2 != rReadParam.SkipToNextToken())
+                            break;
+                        String sF = rReadParam.GetResult();
+                        if ((('u' == cChar) && sF.EqualsIgnoreCaseAscii('p', 1, 0))
+                            || (('d' == cChar) && sF.EqualsIgnoreCaseAscii('o', 1, 0)))
                         {
-                            sCombinedCharacters +=
-                                sPart.Copy(nBegin+1,nEnd-nBegin-1);
+                            if (-2 == rReadParam.SkipToNextToken())
+                            {
+                                String sPart = rReadParam.GetResult();
+                                xub_StrLen nBegin = sPart.Search('(');
+
+                                //Word disallows brackets in this field, which
+                                //aids figuring out the case of an end of )) vs )
+                                xub_StrLen nEnd = sPart.Search(')');
+
+                                if ((nBegin != STRING_NOTFOUND) &&
+                                    (nEnd != STRING_NOTFOUND))
+                                {
+                                    sCombinedCharacters +=
+                                        sPart.Copy(nBegin+1,nEnd-nBegin-1);
+                                }
+                            }
+                        }
+                    }
+                }
+                if (sCombinedCharacters.Len())
+                {
+                    SwCombinedCharField aFld((SwCombinedCharFieldType*)
+                        rDoc.GetSysFldType(RES_COMBINED_CHARS),sCombinedCharacters);
+                    rDoc.InsertPoolItem(*pPaM, SwFmtFld(aFld), 0);
+                }
+                else
+                {
+                    const String sPart = aOriFldParam.GetResult();
+                    xub_StrLen nBegin = sPart.Search('(');
+                    xub_StrLen nEnd = sPart.Search(',');
+                    if ( nEnd == STRING_NOTFOUND )
+                    {
+                        nEnd = sPart.Search(')');
+                    }
+                    if ( (nBegin != STRING_NOTFOUND) && (nEnd != STRING_NOTFOUND) )
+                    {
+                        // skip certain leading characters
+                        for (int i = nBegin;i < nEnd-1;i++)
+                        {
+                            const sal_Unicode cC = sPart.GetChar(nBegin+1);
+                            if ( cC < 32 )
+                            {
+                                nBegin++;
+                            }
+                            else
+                                break;
+                        }
+                        sCombinedCharacters = sPart.Copy( nBegin+1, nEnd-nBegin-1 );
+                        if ( sCombinedCharacters.Len() )
+                        {
+                            SwInputField aFld( (SwInputFieldType*)rDoc.GetSysFldType( RES_INPUTFLD ),
+                                sCombinedCharacters, sCombinedCharacters, INP_TXT, 0 );
+                            rDoc.InsertPoolItem( *pPaM, SwFmtFld( aFld ), 0 ); // insert input field
                         }
                     }
                 }
             }
         }
-    }
-    if (sCombinedCharacters.Len())
-    {
-        SwCombinedCharField aFld((SwCombinedCharFieldType*)
-            rDoc.GetSysFldType(RES_COMBINED_CHARS),sCombinedCharacters);
-        rDoc.InsertPoolItem(*pPaM, SwFmtFld(aFld), 0);
+    default:
+        break;
     }
 }
 

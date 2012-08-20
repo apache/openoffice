@@ -860,7 +860,7 @@ uno::Sequence< OUString > SwXStyleFamily::getElementNames(void) throw( uno::Runt
     uno::Sequence< OUString > aRet;
     if(pBasePool)
     {
-        SfxStyleSheetIterator* pIterator = pBasePool->CreateIterator(eFamily, 0xffff);
+        SfxStyleSheetIteratorPtr pIterator = pBasePool->CreateIterator(eFamily, 0xffff);
         sal_uInt16 nCount = pIterator->Count();
         aRet.realloc(nCount);
         OUString* pArray = aRet.getArray();
@@ -870,7 +870,6 @@ uno::Sequence< OUString > SwXStyleFamily::getElementNames(void) throw( uno::Runt
 			SwStyleNameMapper::FillProgName((*pIterator)[i]->GetName(), aString, lcl_GetSwEnumFromSfxEnum ( eFamily ), sal_True );
             pArray[i] = OUString ( aString );
 		}
-        delete pIterator;
     }
     else
         throw uno::RuntimeException();

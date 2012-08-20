@@ -420,6 +420,16 @@ Directory gid_Dir_Share_Xslt_Import_uof
     ParentID = gid_Dir_Share_Xslt_Import;
     DosName = "uof";
 End
+/// Begin for uof2-filter
+Directory gid_Dir_Share_Xslt_Export_uof2
+    ParentID = gid_Dir_Share_Xslt_Export;
+    DosName = "uof2";
+End
+Directory gid_Dir_Share_Xslt_Import_uof2
+    ParentID = gid_Dir_Share_Xslt_Import;
+    DosName = "uof2";
+End
+/// End
 Directory gid_Dir_Share_Xslt_Export_Wordml
     ParentID = gid_Dir_Share_Xslt_Export;
     DosName = "wordml";

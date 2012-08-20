@@ -31,6 +31,13 @@ TARGET=apr
 
 # --- Files --------------------------------------------------------
 
+.IF "$(SYSTEM_APR)"=="YES"
+
+all:
+	@echo "Using system apr.  Does not have to be built."
+
+.ELSE
+
 # Assemble the full version number from the parts defined in apr_version.mk
 APRVERSION=$(APR_MAJOR).$(APR_MINOR).$(APR_MICRO)
 
@@ -100,3 +107,5 @@ OUT2BIN+=apr-1-config
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
+
+.ENDIF

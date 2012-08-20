@@ -21,7 +21,7 @@
 
 import sys
 
-class ParseError (Exception): 
+class ParseError (Exception):
     pass
 
 def error (msg, exit=0):
@@ -101,7 +101,7 @@ class Element(Node):
             chars += '>'
             for child in self.getChildren():
                 chars += child.dump(level+1)
-    
+
             chars += "\n"+Element.INDENT*level
             chars += "</%s>"%self.name
 
@@ -128,8 +128,7 @@ class Element(Node):
 
     def __dumpAttrs (self):
         text = ''
-        keys = self.attrs.keys()
-        keys.sort()
+        keys = sorted(self.attrs.keys())
         for key in keys:
             value = self.attrs[key]
             text += ' %s="%s"'%(key, value)

@@ -26,7 +26,7 @@ import sys
 import os
 import imp
 import time
-import compiler
+import ast
 
 class LogLevel:
     NONE = 0
@@ -72,18 +72,18 @@ def getLogTarget():
         except Exception,e:
             print "Exception during creation of pythonscript logfile: "+ lastException2String() + "\n, delagating log to stdout\n"
     return ret
-  
+
 class Logger(LogLevel):
     def __init__(self , target ):
         self.target = target
 
     def isDebugLevel( self ):
         return self.use >= self.DEBUG
-    
+
     def debug( self, msg ):
         if self.isDebugLevel():
             self.log( self.DEBUG, msg )
-    
+
     def isErrorLevel( self ):
         return self.use >= self.ERROR
 
@@ -145,9 +145,9 @@ def readTextFromStream( inputStream ):
         read,out = inputStream.readBytes( None , BLOCK_SIZE )
         code = code + out
         if read < BLOCK_SIZE:
-           break
+            break
     return code.value
-    
+
 def toIniName( str ):
     # TODO: what is the official way to get to know whether i am on the windows platform ?
     if( hasattr(sys , "dllhandle") ):
@@ -165,7 +165,7 @@ class MyUriHelper:
         { "share" : "vnd.sun.star.expand:${$BRAND_BASE_DIR/program/" +  toIniName( "bootstrap") + "::BaseInstallation}/share/Scripts/python" , \
           "share:uno_packages" : "vnd.sun.star.expand:$UNO_SHARED_PACKAGES_CACHE/uno_packages", \
           "user" : "vnd.sun.star.expand:${$BRAND_BASE_DIR/program/" + toIniName( "bootstrap") + "::UserInstallation}/user/Scripts/python" , \
-          "user:uno_packages" : "vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages" } 
+          "user:uno_packages" : "vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages" }
         self.m_uriRefFac = ctx.ServiceManager.createInstanceWithContext("com.sun.star.uri.UriReferenceFactory",ctx)
         if location.startswith( "vnd.sun.star.tdoc" ):
             self.m_baseUri = location + "/Scripts/python"
@@ -173,11 +173,11 @@ class MyUriHelper:
         else:
             self.m_baseUri = expandUri( self.s_UriMap[location] )
             self.m_scriptUriLocation = location
-        log.isDebugLevel() and log.debug( "initialized urihelper with baseUri="+self.m_baseUri + ",m_scriptUriLocation="+self.m_scriptUriLocation )
-        
+        log.debug( "initialized urihelper with baseUri="+self.m_baseUri + ",m_scriptUriLocation="+self.m_scriptUriLocation )
+
     def getRootStorageURI( self ):
         return self.m_baseUri
-    
+
     def getStorageURI( self, scriptURI ):
         return self.scriptURI2StorageUri(scriptURI)
 
@@ -187,20 +187,20 @@ class MyUriHelper:
     def storageURI2ScriptUri( self, storageURI ):
         if not storageURI.startswith( self.m_baseUri ):
             message = "pythonscript: storage uri '" + storageURI + "' not in base uri '" + self.m_baseUri + "'"
-            log.isDebugLevel() and log.debug( message )
+            log.debug( message )
             raise RuntimeException( message )
 
         ret = "vnd.sun.star.script:" + \
               storageURI[len(self.m_baseUri)+1:].replace("/","|") + \
               "?language=" + LANGUAGENAME + "&location=" + self.m_scriptUriLocation
-        log.isDebugLevel() and log.debug( "converting storageURI="+storageURI + " to scriptURI=" + ret )
+        log.debug( "converting storageURI="+storageURI + " to scriptURI=" + ret )
         return ret
-    
+
     def scriptURI2StorageUri( self, scriptURI ):
         try:
             myUri = self.m_uriRefFac.parse(scriptURI)
             ret = self.m_baseUri + "/" + myUri.getName().replace( "|", "/" )
-            log.isDebugLevel() and log.debug( "converting scriptURI="+scriptURI + " to storageURI=" + ret )
+            log.debug( "converting scriptURI="+scriptURI + " to storageURI=" + ret )
             return ret
         except UnoException, e:
             log.error( "error during converting scriptURI="+scriptURI + ": " + e.Message)
@@ -208,7 +208,7 @@ class MyUriHelper:
         except Exception, e:
             log.error( "error during converting scriptURI="+scriptURI + ": " + str(e))
             raise RuntimeException( "pythonscript:scriptURI2StorageUri: " + str(e), None )
-        
+
 
 class ModuleEntry:
     def __init__( self, lastRead, module ):
@@ -244,14 +244,14 @@ def checkForPythonPathBesideScript( url ):
         if 1 == os.access( encfile(path), os.F_OK) and not path in sys.path:
             log.log( LogLevel.DEBUG, "adding " + path + " to sys.path" )
             sys.path.append( path )
-        
-    
+
+
 class ScriptContext(unohelper.Base):
     def __init__( self, ctx, doc, inv ):
         self.ctx = ctx
         self.doc = doc
         self.inv = inv
-       
+
    # XScriptContext
     def getDocument(self):
         if self.doc:
@@ -281,22 +281,22 @@ class ScriptContext(unohelper.Base):
 #    lastRead = sfa.getDateTimeModified( url )
 #    if entry:
 #        if hasChanged( entry.lastRead, lastRead ):
-#            log.isDebugLevel() and log.debug("file " + url + " has changed, reloading")
+#            log.debug("file " + url + " has changed, reloading")
 #        else:
 #            load = False
-#            
+#
 #    if load:
-#        log.isDebugLevel() and log.debug( "opening >" + url + "<" )
+#        log.debug( "opening >" + url + "<" )
 #
 #        code = readTextFromStream( sfa.openFileRead( url ) )
-            
+
         # execute the module
 #        entry = ModuleEntry( lastRead, imp.new_module("ooo_script_framework") )
 #        entry.module.__dict__[GLOBAL_SCRIPTCONTEXT_NAME] = g_scriptContext
 #        entry.module.__file__ = url
 #        exec code in entry.module.__dict__
 #        g_modules[ url ] = entry
-#        log.isDebugLevel() and log.debug( "mapped " + url + " to " + str( entry.module ) )
+#        log.debug( "mapped " + url + " to " + str( entry.module ) )
 #    return entry.module
 
 class ProviderContext:
@@ -312,13 +312,13 @@ class ProviderContext:
     def getTransientPartFromUrl( self, url ):
         rest = url.replace( self.rootUrl , "",1 ).replace( "/","",1)
         return rest[0:rest.find("/")]
-    
+
     def getPackageNameFromUrl( self, url ):
         rest = url.replace( self.rootUrl , "",1 ).replace( "/","",1)
         start = rest.find("/") +1
         return rest[start:rest.find("/",start)]
-        
-        
+
+
     def removePackageByUrl( self, url ):
         items = self.mapPackageName2Path.items()
         for i in items:
@@ -329,34 +329,34 @@ class ProviderContext:
     def addPackageByUrl( self, url ):
         packageName = self.getPackageNameFromUrl( url )
         transientPart = self.getTransientPartFromUrl( url )
-        log.isDebugLevel() and log.debug( "addPackageByUrl : " + packageName + ", " + transientPart + "("+url+")" + ", rootUrl="+self.rootUrl )
+        log.debug( "addPackageByUrl : " + packageName + ", " + transientPart + "("+url+")" + ", rootUrl="+self.rootUrl )
         if self.mapPackageName2Path.has_key( packageName ):
             package = self.mapPackageName2Path[ packageName ]
             package.pathes = package.pathes + (url, )
         else:
             package = Package( (url,), transientPart)
             self.mapPackageName2Path[ packageName ] = package
-    
+
     def isUrlInPackage( self, url ):
         values = self.mapPackageName2Path.values()
         for i in values:
-#	    print "checking " + url + " in " + str(i.pathes)
+#           print "checking " + url + " in " + str(i.pathes)
             if url in i.pathes:
-               return True
+                return True
 #        print "false"
         return False
-            
+
     def setPackageAttributes( self, mapPackageName2Path, rootUrl ):
         self.mapPackageName2Path = mapPackageName2Path
         self.rootUrl = rootUrl
-        
+
     def getPersistentUrlFromStorageUrl( self, url ):
         # package name is the second directory
         ret = url
         if self.rootUrl:
             pos = len( self.rootUrl) +1
             ret = url[0:pos]+url[url.find("/",pos)+1:len(url)]
-        log.isDebugLevel() and log.debug( "getPersistentUrlFromStorageUrl " + url +  " -> "+ ret)
+        log.debug( "getPersistentUrlFromStorageUrl " + url +  " -> "+ ret)
         return ret
 
     def getStorageUrlFromPersistentUrl( self, url):
@@ -366,7 +366,7 @@ class ProviderContext:
             packageName = url[pos:url.find("/",pos+1)]
             package = self.mapPackageName2Path[ packageName ]
             ret = url[0:pos]+ package.transientPathElement + "/" + url[pos:len(url)]
-        log.isDebugLevel() and log.debug( "getStorageUrlFromPersistentUrl " + url + " -> "+ ret)
+        log.debug( "getStorageUrlFromPersistentUrl " + url + " -> "+ ret)
         return ret
 
     def getFuncsByUrl( self, url ):
@@ -374,44 +374,55 @@ class ProviderContext:
         checkForPythonPathBesideScript( url[0:url.rfind('/')] )
         src = ensureSourceState( src )
 
-        code = compiler.parse( src )
-
         allFuncs = []
-
-        if code == None:
-            return allFuncs
-        
         g_exportedScripts = []
-        for node in code.node.nodes:
-            if node.__class__.__name__ == 'Function':
-                allFuncs.append(node.name)
-            elif node.__class__.__name__ == 'Assign':
-                for assignee in node.nodes:
-                    if assignee.name == 'g_exportedScripts':
-                        for item in node.expr:
-                            if item.__class__.__name__ == 'Name':
-                                g_exportedScripts.append(item.name)
-                        return g_exportedScripts
 
+        a = ast.parse(src, url)
+
+        if isinstance(a, ast.Module):
+            for node in a.body:
+                if isinstance(node, ast.FunctionDef):
+                    allFuncs.append(node.name)
+                elif isinstance(node, ast.Assign):
+                    is_exported = False
+                    for subnode in node.targets:
+                        if isinstance(subnode, ast.Name) and \
+                            subnode.id == "g_exportedScripts":
+                            is_exported = True
+                            break
+                    if is_exported:
+                        value_node = node.value
+                        if isinstance(value_node, ast.List) or \
+                            isinstance(value_node, ast.Tuple):
+                            for elt in value_node.elts:
+                                if isinstance(elt, ast.Str):
+                                    g_exportedScripts.append(elt.s)
+                                elif isinstance(elt, ast.Name):
+                                    g_exportedScripts.append(elt.id)
+                        elif isinstance(value_node, ast.Str):
+                            g_exportedScripts.append(value_node.s)
+                        elif isinstance(value_node, ast.Name):
+                            g_exportedScripts.append(value_node.id)
+                        return g_exportedScripts
         return allFuncs
-    
+
     def getModuleByUrl( self, url ):
         entry =  self.modules.get(url)
         load = True
         lastRead = self.sfa.getDateTimeModified( url )
         if entry:
             if hasChanged( entry.lastRead, lastRead ):
-                log.isDebugLevel() and log.debug( "file " + url + " has changed, reloading" )
+                log.debug( "file " + url + " has changed, reloading" )
             else:
                 load = False
-                
+
         if load:
-            log.isDebugLevel() and log.debug( "opening >" + url + "<" )
-            
+            log.debug( "opening >" + url + "<" )
+
             src = readTextFromStream( self.sfa.openFileRead( url ) )
             checkForPythonPathBesideScript( url[0:url.rfind('/')] )
-            src = ensureSourceState( src )            
-            
+            src = ensureSourceState( src )
+
             # execute the module
             entry = ModuleEntry( lastRead, imp.new_module("ooo_script_framework") )
             entry.module.__dict__[GLOBAL_SCRIPTCONTEXT_NAME] = self.scriptContext
@@ -424,16 +435,16 @@ class ProviderContext:
             exec code in entry.module.__dict__
             entry.module.__file__ = url
             self.modules[ url ] = entry
-            log.isDebugLevel() and log.debug( "mapped " + url + " to " + str( entry.module ) )
+            log.debug( "mapped " + url + " to " + str( entry.module ) )
         return  entry.module
-        
+
 #--------------------------------------------------
 def isScript( candidate ):
     ret = False
     if isinstance( candidate, type(isScript) ):
         ret = True
     return ret
-    
+
 #-------------------------------------------------------
 class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation, XActionListener ):
     def __init__( self, provCtx, uri, fileName, funcName ):
@@ -441,7 +452,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
         self.funcName = funcName
         self.provCtx = provCtx
         self.uri = uri
-        
+
     def getName( self ):
         return self.funcName
 
@@ -450,7 +461,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
 
     def hasChildNodes(self):
         return False
-    
+
     def getType( self):
         return SCRIPT
 
@@ -462,19 +473,19 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
                     self.provCtx.getPersistentUrlFromStorageUrl( self.uri + "$" + self.funcName ) )
             elif name == "Editable" and ENABLE_EDIT_DIALOG:
                 ret = not self.provCtx.sfa.isReadOnly( self.uri )
-        
-            log.isDebugLevel() and log.debug( "ScriptBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
+
+            log.debug( "ScriptBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
         except Exception,e:
             log.error( "ScriptBrowseNode.getPropertyValue error " + lastException2String())
             raise
-                                              
+
         return ret
     def setPropertyValue( self, name, value ):
-        log.isDebugLevel() and log.debug( "ScriptBrowseNode.setPropertyValue called " + name + "=" +str(value ) )
+        log.debug( "ScriptBrowseNode.setPropertyValue called " + name + "=" +str(value ) )
     def getPropertySetInfo( self ):
-        log.isDebugLevel() and log.debug( "ScriptBrowseNode.getPropertySetInfo called "  )
+        log.debug( "ScriptBrowseNode.getPropertySetInfo called "  )
         return None
-               
+
     def getIntrospection( self ):
         return None
 
@@ -513,12 +524,12 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
                 values = mod.__dict__.get( CALLABLE_CONTAINER_NAME , None )
                 if not values:
                     values = mod.__dict__.values()
-                    
+
                 for i in values:
                     if isScript( i ):
                         i()
                         break
-                    
+
             elif event.ActionCommand == "Save":
                 toWrite = uno.ByteSequence(
                     str(
@@ -530,13 +541,13 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
                 out.writeBytes( toWrite )
                 out.close()
                 self.provCtx.sfa.kill( copyUrl )
-#                log.isDebugLevel() and log.debug("Save is not implemented yet")
+#                log.debug("Save is not implemented yet")
 #                text = self.editor.getControl("EditorTextField").getText()
-#                log.isDebugLevel() and log.debug("Would save: " + text)
+#                log.debug("Would save: " + text)
         except Exception,e:
             # TODO: add an error box here !
             log.error( lastException2String() )
-            
+
 
     def setValue( self, name, value ):
         return None
@@ -550,7 +561,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
     def hasProperty( self, name ):
         return False
 
-    
+
 #-------------------------------------------------------
 class FileBrowseNode( unohelper.Base, XBrowseNode ):
     def __init__( self, provCtx, uri , name ):
@@ -558,22 +569,22 @@ class FileBrowseNode( unohelper.Base, XBrowseNode ):
         self.uri = uri
         self.name = name
         self.funcnames = None
-        
+
     def getName( self ):
         return self.name
- 
+
     def getChildNodes(self):
         ret = ()
         try:
             self.funcnames = self.provCtx.getFuncsByUrl( self.uri )
-            
+
             scriptNodeList = []
             for i in self.funcnames:
                 scriptNodeList.append(
                     ScriptBrowseNode(
                     self.provCtx, self.uri, self.name, i ))
             ret = tuple( scriptNodeList )
-            log.isDebugLevel() and log.debug( "returning " +str(len(ret)) + " ScriptChildNodes on " + self.uri )
+            log.debug( "returning " +str(len(ret)) + " ScriptChildNodes on " + self.uri )
         except Exception, e:
             text = lastException2String()
             log.error( "Error while evaluating " + self.uri + ":" + text )
@@ -585,11 +596,11 @@ class FileBrowseNode( unohelper.Base, XBrowseNode ):
             return len(self.getChildNodes()) > 0
         except Exception, e:
             return False
-    
+
     def getType( self):
         return CONTAINER
 
-        
+
 
 class DirBrowseNode( unohelper.Base, XBrowseNode ):
     def __init__( self, provCtx, name, rootUrl ):
@@ -602,16 +613,16 @@ class DirBrowseNode( unohelper.Base, XBrowseNode ):
 
     def getChildNodes( self ):
         try:
-            log.isDebugLevel() and log.debug( "DirBrowseNode.getChildNodes called for " + self.rootUrl )
+            log.debug( "DirBrowseNode.getChildNodes called for " + self.rootUrl )
             contents = self.provCtx.sfa.getFolderContents( self.rootUrl, True )
             browseNodeList = []
             for i in contents:
                 if i.endswith( ".py" ):
-                    log.isDebugLevel() and log.debug( "adding filenode " + i )
+                    log.debug( "adding filenode " + i )
                     browseNodeList.append(
                         FileBrowseNode( self.provCtx, i, i[i.rfind("/")+1:len(i)-3] ) )
                 elif self.provCtx.sfa.isFolder( i ) and not i.endswith("/pythonpath"):
-                    log.isDebugLevel() and log.debug( "adding DirBrowseNode " + i )
+                    log.debug( "adding DirBrowseNode " + i )
                     browseNodeList.append( DirBrowseNode( self.provCtx, i[i.rfind("/")+1:len(i)],i))
             return tuple( browseNodeList )
         except Exception, e:
@@ -634,13 +645,13 @@ class DirBrowseNode( unohelper.Base, XBrowseNode ):
 class ManifestHandler( XDocumentHandler, unohelper.Base ):
     def __init__( self, rootUrl ):
         self.rootUrl = rootUrl
-        
+
     def startDocument( self ):
         self.urlList = []
-        
+
     def endDocument( self ):
         pass
-        
+
     def startElement( self , name, attlist):
         if name == "manifest:file-entry":
             if attlist.getValueByName( "manifest:media-type" ) == "application/vnd.sun.star.framework-script":
@@ -672,11 +683,11 @@ def isPyFileInPath( sfa, path ):
             break
     return ret
 
-# extracts META-INF directory from 
+# extracts META-INF directory from
 def getPathesFromPackage( rootUrl, sfa ):
     ret = ()
     try:
-        fileUrl = rootUrl + "/META-INF/manifest.xml" 
+        fileUrl = rootUrl + "/META-INF/manifest.xml"
         inputStream = sfa.openFileRead( fileUrl )
         parser = uno.getComponentContext().ServiceManager.createInstance( "com.sun.star.xml.sax.Parser" )
         handler = ManifestHandler( rootUrl )
@@ -691,7 +702,7 @@ def getPathesFromPackage( rootUrl, sfa ):
         log.debug( "getPathesFromPackage " + fileUrl + " Exception: " +text )
         pass
     return ret
-    
+
 
 class Package:
     def __init__( self, pathes, transientPathElement ):
@@ -702,18 +713,18 @@ class DummyInteractionHandler( unohelper.Base, XInteractionHandler ):
     def __init__( self ):
         pass
     def handle( self, event):
-        log.isDebugLevel() and log.debug( "pythonscript: DummyInteractionHandler.handle " + str( event ) )
+        log.debug( "pythonscript: DummyInteractionHandler.handle " + str( event ) )
 
 class DummyProgressHandler( unohelper.Base, XProgressHandler ):
     def __init__( self ):
         pass
-    
-    def push( self,status ): 
-        log.isDebugLevel() and log.debug( "pythonscript: DummyProgressHandler.push " + str( status ) )
-    def update( self,status ): 
-        log.isDebugLevel() and log.debug( "pythonscript: DummyProgressHandler.update " + str( status ) )
-    def pop( self ): 
-        log.isDebugLevel() and log.debug( "pythonscript: DummyProgressHandler.push " + str( event ) )
+
+    def push( self,status ):
+        log.debug( "pythonscript: DummyProgressHandler.push " + str( status ) )
+    def update( self,status ):
+        log.debug( "pythonscript: DummyProgressHandler.update " + str( status ) )
+    def pop( self ):
+        log.debug( "pythonscript: DummyProgressHandler.push " + str( event ) )
 
 class CommandEnvironment(unohelper.Base, XCommandEnvironment):
     def __init__( self ):
@@ -729,9 +740,9 @@ class CommandEnvironment(unohelper.Base, XCommandEnvironment):
 #    def __init__( self ):
 #        pass
 #    def modified( self, event ):
-#        log.isDebugLevel() and log.debug( "pythonscript: ModifyListener.modified " + str( event ) )
+#        log.debug( "pythonscript: ModifyListener.modified " + str( event ) )
 #    def disposing( self, event ):
-#        log.isDebugLevel() and log.debug( "pythonscript: ModifyListener.disposing " + str( event ) )
+#        log.debug( "pythonscript: ModifyListener.disposing " + str( event ) )
 
 def getModelFromDocUrl(ctx, url):
     """Get document model from document url."""
@@ -744,12 +755,12 @@ def getModelFromDocUrl(ctx, url):
     p = Property()
     p.Name = "DocumentModel"
     p.Handle = -1
-    
+
     c = Command()
     c.Handle = -1
     c.Name = "getPropertyValues"
     c.Argument = uno.Any("[]com.sun.star.beans.Property", (p,))
-    
+
     env = CommandEnvironment()
     try:
         ret = content.execute(c, 0, env)
@@ -773,13 +784,13 @@ def getPackageName2PathMap( sfa, storageType ):
     packageManager = packageManagerFactory.getPackageManager(
         mapStorageType2PackageContext(storageType))
 #    packageManager.addModifyListener( ModifyListener() )
-    log.isDebugLevel() and log.debug( "pythonscript: getPackageName2PathMap start getDeployedPackages" )
+    log.debug( "pythonscript: getPackageName2PathMap start getDeployedPackages" )
     packages = packageManager.getDeployedPackages(
         packageManager.createAbortChannel(), CommandEnvironment( ) )
-    log.isDebugLevel() and log.debug( "pythonscript: getPackageName2PathMap end getDeployedPackages (" + str(len(packages))+")" )
+    log.debug( "pythonscript: getPackageName2PathMap end getDeployedPackages (" + str(len(packages))+")" )
 
     for i in packages:
-        log.isDebugLevel() and log.debug( "inspecting package " + i.Name + "("+i.Identifier.Value+")" )
+        log.debug( "inspecting package " + i.Name + "("+i.Identifier.Value+")" )
         transientPathElement = penultimateElement( i.URL )
         j = expandUri( i.URL )
         pathes = getPathesFromPackage( j, sfa )
@@ -837,7 +848,7 @@ class PythonScript( unohelper.Base, XScript ):
         self.func = func
         self.mod = mod
     def invoke(self, args, out, outindex ):
-        log.isDebugLevel() and log.debug( "PythonScript.invoke " + str( args ) )
+        log.debug( "PythonScript.invoke " + str( args ) )
         try:
             ret = self.func( *args )
         except UnoException,e:
@@ -846,11 +857,11 @@ class PythonScript( unohelper.Base, XScript ):
             complete = "Error during invoking function " + \
                 str(self.func.__name__) + " in module " + \
                 self.mod.__file__ + " (" + text + ")"
-            log.isDebugLevel() and log.debug( complete )
+            log.debug( complete )
             # some people may beat me up for modifying the exception text,
             # but otherwise office just shows
             # the type name and message text with no more information,
-            # this is really bad for most users. 
+            # this is really bad for most users.
             e.Message = e.Message + " (" + complete + ")"
             raise
         except Exception,e:
@@ -859,9 +870,9 @@ class PythonScript( unohelper.Base, XScript ):
             complete = "Error during invoking function " + \
                 str(self.func.__name__) + " in module " + \
                 self.mod.__file__ + " (" + text + ")"
-            log.isDebugLevel() and log.debug( complete )
+            log.debug( complete )
             raise RuntimeException( complete , self )
-        log.isDebugLevel() and log.debug( "PythonScript.invoke ret = " + str( ret ) )
+        log.debug( "PythonScript.invoke ret = " + str( ret ) )
         return ret, (), ()
 
 def expandUri(  uri ):
@@ -872,7 +883,7 @@ def expandUri(  uri ):
     if uri.startswith( "file:" ):
         uri = uno.absolutize("",uri)   # necessary to get rid of .. in uri
     return uri
-    
+
 #--------------------------------------------------------------
 class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameContainer):
     def __init__( self, ctx, *args ):
@@ -897,7 +908,7 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
             try:
                 doc = inv.ScriptContainer
                 content = ctx.getServiceManager().createInstanceWithContext(
-                    "com.sun.star.frame.TransientDocumentsDocumentContentFactory", 
+                    "com.sun.star.frame.TransientDocumentsDocumentContentFactory",
                     ctx).createDocumentContent(doc)
                 storageType = content.getIdentifier().getContentIdentifier()
             except Exception, e:
@@ -910,10 +921,10 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
 #            urlHelper = ctx.ServiceManager.createInstanceWithArgumentsAndContext(
 #                "com.sun.star.script.provider.ScriptURIHelper", (LANGUAGENAME, storageType), ctx)
             urlHelper = MyUriHelper( ctx, storageType )
-            log.isDebugLevel() and log.debug( "got urlHelper " + str( urlHelper ) )
-        
+            log.debug( "got urlHelper " + str( urlHelper ) )
+
             rootUrl = expandUri( urlHelper.getRootStorageURI() )
-            log.isDebugLevel() and log.debug( storageType + " transformed to " + rootUrl )
+            log.debug( storageType + " transformed to " + rootUrl )
 
             ucbService = "com.sun.star.ucb.SimpleFileAccess"
             sfa = ctx.ServiceManager.createInstanceWithContext( ucbService, ctx )
@@ -929,7 +940,7 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
                 self.dirBrowseNode = PackageBrowseNode( self.provCtx, LANGUAGENAME, rootUrl )
             else:
                 self.dirBrowseNode = DirBrowseNode( self.provCtx, LANGUAGENAME, rootUrl )
-            
+
         except Exception, e:
             text = lastException2String()
             log.debug( "PythonScriptProvider could not be instantiated because of : " + text )
@@ -939,7 +950,7 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
         return self.dirBrowseNode.getName()
 
     def getChildNodes( self ):
-        return self.dirBrowseNode.getChildNodes()    
+        return self.dirBrowseNode.getChildNodes()
 
     def hasChildNodes( self ):
         return self.dirBrowseNode.hasChildNodes()
@@ -949,31 +960,31 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
 
     def getScript( self, uri ):
         log.debug( "DirBrowseNode getScript " + uri + " invoked" )
-        
+
         raise IllegalArgumentException( "DirBrowseNode couldn't instantiate script " + uri , self , 0 )
 
     def getScript( self, scriptUri ):
         try:
-            log.isDebugLevel() and log.debug( "getScript " + scriptUri + " invoked")
-            
+            log.debug( "getScript " + scriptUri + " invoked")
+
             storageUri = self.provCtx.getStorageUrlFromPersistentUrl(
                 self.provCtx.uriHelper.getStorageURI(scriptUri) );
-            log.isDebugLevel() and log.debug( "getScript: storageUri = " + storageUri)
+            log.debug( "getScript: storageUri = " + storageUri)
             fileUri = storageUri[0:storageUri.find( "$" )]
-            funcName = storageUri[storageUri.find( "$" )+1:len(storageUri)]        
-            
+            funcName = storageUri[storageUri.find( "$" )+1:len(storageUri)]
+
             mod = self.provCtx.getModuleByUrl( fileUri )
-            log.isDebugLevel() and log.debug( " got mod " + str(mod) )
-            
+            log.debug( " got mod " + str(mod) )
+
             func = mod.__dict__[ funcName ]
 
-            log.isDebugLevel() and log.debug( "got func " + str( func ) )
+            log.debug( "got func " + str( func ) )
             return PythonScript( func, mod )
         except Exception, e:
             text = lastException2String()
             log.error( text )
             raise ScriptFrameworkErrorException( text, self, scriptUri, LANGUAGENAME, 0 )
-        
+
 
     # XServiceInfo
     def getSupportedServices( self ):
@@ -989,11 +1000,11 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
         log.debug( "getByName called" + str( name ))
         return None
 
-        
+
     def getElementNames( self ):
         log.debug( "getElementNames called")
         return ()
-    
+
     def hasByName( self, name ):
         try:
             log.debug( "hasByName called " + str( name ))
@@ -1015,7 +1026,7 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
             log.debug( "removeByName unknown uri " + str( name ) + ", ignoring" )
             raise NoSuchElementException( uri + "is not in package" , self )
         log.debug( "removeByName called" + str( uri ) + " successful" )
-        
+
     def insertByName( self, name, value ):
         log.debug( "insertByName called " + str( name ) + " " + str( value ))
         uri = expandUri( name )
@@ -1036,16 +1047,15 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
     def getElementType( self ):
         log.debug( "getElementType called" )
         return uno.getTypeByName( "void" )
-    
+
     def hasElements( self ):
         log.debug( "hasElements got called")
         return False
-    
+
 g_ImplementationHelper.addImplementation( \
-	PythonScriptProvider,g_implName, \
+        PythonScriptProvider,g_implName, \
     ("com.sun.star.script.provider.LanguageScriptProvider",
      "com.sun.star.script.provider.ScriptProviderFor"+ LANGUAGENAME,),)
 
 
 log.debug( "pythonscript finished intializing" )
-

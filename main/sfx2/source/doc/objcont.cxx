@@ -759,8 +759,7 @@ sal_Bool SfxObjectShell::Print
 		{
 			SfxStyleSheetBasePool *pStylePool = GetStyleSheetPool();
 			SetOrganizerSearchMask(pStylePool);
-			SfxStyleSheetIterator* pIter = pStylePool->CreateIterator(
-				pStylePool->GetSearchFamily(), pStylePool->GetSearchMask() );
+			SfxStyleSheetIteratorPtr pIter = pStylePool->CreateIterator( pStylePool->GetSearchFamily(), pStylePool->GetSearchMask() );
 			sal_uInt16 nStyles = pIter->Count();
 			SfxStyleSheetBase *pStyle = pIter->First();
 			if ( !pStyle )
@@ -869,7 +868,6 @@ sal_Bool SfxObjectShell::Print
             
             Printer::PrintJob( pController, rPrt.GetJobSetup() );
 
-			delete pIter;
 			break;
 		}
 	  default:

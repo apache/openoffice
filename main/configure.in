@@ -308,7 +308,7 @@ AC_ARG_ENABLE(kde4,
 ],,)
 AC_ARG_ENABLE(binfilter,
 [  --enable-binfilter      Enable legacy binary file formats filters
-],,)
+],,enable_binfilter=yes)
 AC_ARG_ENABLE(rpath,
 [  --disable-rpath         Disable the use of relative paths in shared libraries
 ],,)
@@ -461,10 +461,6 @@ AC_ARG_WITH(beanshell-jar,
 [  --with-beanshell-jar=JARFILE   Specify path to jarfile manually ],
 [ BSH_JAR="$withval"
 ])
-AC_ARG_ENABLE(presenter-extra-ui,
-[  --enable-presenter-extra-ui   enables extra functionality during slideshow,
-                                 e.g. selecting pen color, erasing drawings etc.
-],,enable_presenter_extra_ui=no)
 AC_ARG_ENABLE(minimizer,
 [  --enable-minimizer          enables the build of the Presentation Minimizer extension
 ],,)
@@ -771,6 +767,18 @@ AC_ARG_WITH(local-solver,
 AC_ARG_ENABLE(javascript,
 [  --disable-javascript    Disables support for JavaScript macros.
 ],,)
+AC_ARG_WITH(system-apr,
+[  --with-system-apr       Use apr library already installed on the system
+],,)
+AC_ARG_WITH(system-apr-util,
+[  --with-system-apr-util  Use apr-util library already installed on the system
+],,)
+AC_ARG_WITH(system-serf,
+[  --with-system-serf      Use serf library already installed on the system
+],,)
+AC_ARG_WITH(system-coinmp,
+[  --with-system-coinmp    Use CoinMP library already installed on the system
+],,)
 AC_ARG_ENABLE(coinmp,
 [  --disable-coinmp        Do not use CoinMP as the Calc solver.
 ],,)
@@ -916,6 +924,16 @@ ADDITIONAL_REPOSITORIES="../ext_libraries"
 SCPDEFS=""
 
 dnl ===================================================================
+dnl Check configure script vs. configure.in
+dnl ===================================================================
+AC_MSG_CHECKING([whether configure is up-to-date])
+if test "configure" -ot "configure.in"; then
+   AC_MSG_RESULT([no])
+   AC_MSG_ERROR([configure is not up-to-date, run autoconf first!])
+else
+   AC_MSG_RESULT([yes])
+fi
+dnl ===================================================================
 dnl Message.
 dnl ===================================================================
 echo "********************************************************************"
@@ -944,14 +962,6 @@ dnl ===================================================================
 dnl Configure pre-requisites.
 dnl ===================================================================
 cat /dev/null > warn
-
-AC_MSG_CHECKING([whether configure is up-to-date])
-if test "configure" -ot "configure.in"; then
-   AC_MSG_RESULT([no])
-   AC_MSG_ERROR([configure is not up-to-date, run autoconf first!])
-else
-   AC_MSG_RESULT([yes])
-fi
 
 AC_PROG_EGREP
 AC_PROG_AWK
@@ -1948,12 +1958,27 @@ AC_SUBST(PERL)
 
 dnl ===================================================================
 dnl Testing for required Perl modules
+dnl The list of required Perl modules is documented here:
+dnl     http://wiki.openoffice.org/wiki/Documentation/Building_Guide_AOO#General_Build_Requirements
 dnl ===================================================================
 AC_MSG_CHECKING([for required Perl modules])
-if `$PERL -e 'use Archive::Zip; use LWP::UserAgent;'`; then
+if `$PERL -e 'use Archive::Zip; use LWP::UserAgent; use XML::Parser;'>/dev/null 2>&1`; then
 	AC_MSG_RESULT([all modules found])
 else
-	AC_MSG_ERROR([Failed to find some modules])
+    # Find out which modules are missing.
+    missing_perl_modules=
+    if ! `$PERL -e 'use Archive::Zip;'>/dev/null 2>&1`; then
+       missing_perl_modules=Archive::Zip
+    fi
+    if ! `$PERL -e 'use LWP::UserAgent;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules LWP::UserAgent"
+    fi
+    if ! `$PERL -e 'use XML::Parser;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules XML::Parser"
+    fi
+	AC_MSG_ERROR([
+    The missing Perl modules are: $missing_perl_modules
+    Install them as superuser/administrator with "cpan -i $missing_perl_modules"])
 fi
 
 dnl ===================================================================
@@ -3585,7 +3610,7 @@ msi - Windows .msi
          AC_MSG_ERROR([dpkg needed for deb creation. Install dpkg.])
       fi
    fi
-   if echo "PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
+   if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
       if test "$_os" = "Darwin"; then
          AC_MSG_CHECKING([for PackageMaker availability])
          if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
@@ -4442,19 +4467,103 @@ AC_SUBST(ENABLE_JAVASCRIPT)
 
 
 dnl ===================================================================
+dnl Check for system apr
+dnl ===================================================================
+SYSTEM_APR=NO
+APR_CFLAGS=
+APR_LIBS=
+AC_MSG_CHECKING([which libapr to use])
+if test "x$with_system_apr" = "xyes" -o -n "$with_system_libs"; then
+    AC_MSG_RESULT([system])
+    PKG_CHECK_MODULES([APR], [apr-1 >= 1.0])
+    SYSTEM_APR=YES
+else
+    AC_MSG_RESULT([internal])
+    SYSTEM_APR=NO
+    BUILD_TYPE="$BUILD_TYPE APR"
+fi
+AC_SUBST(SYSTEM_APR)
+AC_SUBST(APR_CFLAGS)
+AC_SUBST(APR_LIBS)
+
+
+dnl ===================================================================
+dnl Check for system apr-util
+dnl ===================================================================
+SYSTEM_APR_UTIL=NO
+APR_UTIL_CFLAGS=
+APR_UTIL_LIBS=
+AC_MSG_CHECKING([which libapr-util to use])
+if test "x$with_system_apr_util" = "xyes" -o -n "$with_system_libs"; then
+    AC_MSG_RESULT([system])
+    PKG_CHECK_MODULES([APR_UTIL], [apr-util-1 >= 1.0])
+    SYSTEM_APR_UTIL=YES
+else
+    AC_MSG_RESULT([internal])
+    SYSTEM_APR_UTIL=NO
+    BUILD_TYPE="$BUILD_TYPE APR_UTIL"
+fi
+AC_SUBST(SYSTEM_APR_UTIL)
+AC_SUBST(APR_UTIL_CFLAGS)
+AC_SUBST(APR_UTIL_LIBS)
+
+
+dnl ===================================================================
+dnl Check for system serf
+dnl ===================================================================
+SYSTEM_SERF=NO
+SERF_CFLAGS=
+SERF_LIBS=
+AC_MSG_CHECKING([which libserf to use])
+if test "x$with_system_serf" = "xyes" -o -n "$with_system_libs"; then
+    AC_MSG_RESULT([system])
+    PKG_CHECK_MODULES([SERF], [serf-1 >= 1.1])
+    SYSTEM_SERF=YES
+else
+    AC_MSG_RESULT([internal])
+    SYSTEM_SERF=NO
+    BUILD_TYPE="$BUILD_TYPE SERF"
+fi
+AC_SUBST(SYSTEM_SERF)
+AC_SUBST(SERF_CFLAGS)
+AC_SUBST(SERF_LIBS)
+
+
+dnl ===================================================================
 dnl Check for CoinMP
 dnl ===================================================================
 ENABLE_COINMP=
+SYSTEM_COINMP=NO
+COINMP_CFLAGS=
+COINMP_LIBS=
 AC_MSG_CHECKING([whether to enable support for CoinMP])
 if test "x$enable_coinmp" = "xyes"; then
-   BUILD_TYPE="$BUILD_TYPE COINMP"
-   AC_MSG_RESULT([yes])
-   ENABLE_COINMP=YES
+    BUILD_TYPE="$BUILD_TYPE COINMP"
+    AC_MSG_RESULT([yes])
+    ENABLE_COINMP=YES
+
+    dnl Check wether to use system or internal CoinMP
+    AC_MSG_CHECKING([which coinmp to use])
+    if test "x$with_system_coinmp" = "xyes" -o -n "$with_system_libs"; then
+        AC_MSG_RESULT([system])
+	PKG_CHECK_MODULES([COINMP], [coinmp])
+        SYSTEM_COINMP=YES
+        # some systems need this. Like Ubuntu....
+        AC_CHECK_LIB(m, floor)
+        AC_CHECK_LIB(dl, dlopen)
+    else
+        AC_MSG_RESULT([internal])
+        SYSTEM_COINMP=NO
+        BUILD_TYPE="$BUILD_TYPE COINMP"
+    fi
 else
-   AC_MSG_RESULT([no])
-   ENABLE_COINMP=NO
+    AC_MSG_RESULT([no])
+    ENABLE_COINMP=NO
 fi
 AC_SUBST(ENABLE_COINMP)
+AC_SUBST(SYSTEM_COINMP)
+AC_SUBST(COINMP_CFLAGS)
+AC_SUBST(COINMP_LIBS)
 
 
 dnl ===================================================================
@@ -6094,16 +6203,6 @@ fi
 
 AC_SUBST(ENABLE_OPENGL)
 
-AC_MSG_CHECKING([whether to build extra presenter ui])
-if test -n "$enable_presenter_extra_ui" -a "$enable_presenter_extra_ui" != "no"; then
-   AC_MSG_RESULT([yes])
-   ENABLE_PRESENTER_EXTRA_UI=YES
-else
-   AC_MSG_RESULT([no])
-   ENABLE_PRESENTER_EXTRA_UI=NO
-fi
-AC_SUBST(ENABLE_PRESENTER_EXTRA_UI)
-
 AC_MSG_CHECKING([whether to build the Presentation Minimizer extension])
 if test -n "$enable_minimizer" -a "$enable_minimizer" != "no"; then
    AC_MSG_RESULT([yes])
@@ -6774,7 +6873,7 @@ dnl Test whether to include category-B fonts
 dnl ===================================================================
 WITH_CATB_FONTS=
 AC_MSG_CHECKING([whether to include category B fonts])
-if test "x$enable_category_b_fonts" = "xyes"; then
+if test "x$enable_category_b_fonts" = "xyes" && test "x$with_fonts" != "xno"; then
    AC_MSG_RESULT([yes])
    BUILD_TYPE="$BUILD_TYPE CATB_FONTS"
    WITH_CATB_FONTS=YES

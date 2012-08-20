@@ -218,7 +218,8 @@ void Impl_OlePres::Write( SvStream & rStm )
 
 DffPropertyReader::DffPropertyReader( const SvxMSDffManager& rMan ) :
 	rManager( rMan ),
-	pDefaultPropSet( NULL )
+	pDefaultPropSet( NULL ),
+	mbRotateGranientFillWithAngle ( 0 )
 {
 	InitializePropSet( DFF_msofbtOPT );
 }
@@ -1350,6 +1351,9 @@ void DffPropertyReader::ApplyFillAttributes( SvStream& rIn, SfxItemSet& rSet, co
 			break;
 			case mso_fillShadeCenter :		// Shade from bounding rectangle to end point
 			{
+				//If it is imported as a bitmap, it will not work well with transparecy especially 100
+				//But the gradient look well comparing with imported as gradient. And rotate with shape
+				//also works better. So here just keep it.
 				if ( rObjData.aBoundRect.IsEmpty() )// size of object needed to be able
 					eXFill = XFILL_GRADIENT;		// to create a bitmap substitution
 				else
@@ -1367,13 +1371,21 @@ void DffPropertyReader::ApplyFillAttributes( SvStream& rIn, SfxItemSet& rSet, co
 		}
 		rSet.Put( XFillStyleItem( eXFill ) );
 
-        if (IsProperty(DFF_Prop_fillOpacity))
-        {
-			double nTrans = GetPropertyValue(DFF_Prop_fillOpacity);
-            nTrans = (nTrans * 100) / 65536;
-			rSet.Put(XFillTransparenceItem(
-                sal_uInt16(100 - ::rtl::math::round(nTrans))));
-        }
+		double dTrans  = 1.0;
+		double dBackTrans = 1.0;
+		if (IsProperty(DFF_Prop_fillOpacity))
+		{
+			dTrans = GetPropertyValue(DFF_Prop_fillOpacity) / 65536.0;			
+			if ( eXFill != XFILL_GRADIENT )
+			{
+				dTrans = dTrans * 100;
+				rSet.Put(XFillTransparenceItem(
+					sal_uInt16(100 - ::rtl::math::round(dTrans))));
+			}
+		}
+
+		if ( IsProperty(DFF_Prop_fillBackOpacity) )
+			dBackTrans = GetPropertyValue(DFF_Prop_fillBackOpacity) / 65536.0;
 
 		if ( ( eMSO_FillType == mso_fillShadeCenter ) && ( eXFill == XFILL_BITMAP ) )
 		{
@@ -1381,63 +1393,7 @@ void DffPropertyReader::ApplyFillAttributes( SvStream& rIn, SfxItemSet& rSet, co
 		}
 		else if ( eXFill == XFILL_GRADIENT )
 		{
-			sal_Int32 nAngle = 3600 - ( ( Fix16ToAngle( GetPropertyValue( DFF_Prop_fillAngle, 0 ) ) + 5 ) / 10 );
-
-			// Rotationswinkel in Bereich zwingen
-			while ( nAngle >= 3600 )
-				nAngle -= 3600;
-			while ( nAngle < 0 )
-				nAngle += 3600;
-
-			sal_Int32 nFocus = GetPropertyValue( DFF_Prop_fillFocus, 0 );
-			XGradientStyle eGrad = XGRAD_LINEAR;
-			sal_Int32 nChgColors = 0;
-
-			if ( nFocus < 0 )		// Bei negativem Focus sind die Farben zu tauschen
-			{
-				nFocus =- nFocus;
-				nChgColors ^= 1;
-			}
-			if( nFocus > 40 && nFocus < 60 )
-			{
-				eGrad = XGRAD_AXIAL;	// Besser gehts leider nicht
-			}
-
-			sal_uInt16 nFocusX = (sal_uInt16)nFocus;
-			sal_uInt16 nFocusY = (sal_uInt16)nFocus;
-
-			switch( eMSO_FillType )
-			{
-				case mso_fillShadeShape :
-				{
-					eGrad = XGRAD_RECT;
-					nFocusY = nFocusX = 50;
-					nChgColors ^= 1;
-				}
-				break;
-				case mso_fillShadeCenter :
-				{
-					eGrad = XGRAD_RECT;
-					nFocusX = ( IsProperty( DFF_Prop_fillToRight ) ) ? 100 : 0;
-					nFocusY = ( IsProperty( DFF_Prop_fillToBottom ) ) ? 100 : 0;
-					nChgColors ^= 1;
-				}
-				break;
-				default: break;
-			}
-			Color aCol1( rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillColor, COL_WHITE ), DFF_Prop_fillColor ) );
-			Color aCol2( rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillBackColor, COL_WHITE ), DFF_Prop_fillBackColor ) );
-
-			if ( nChgColors )
-			{
-				Color aZwi( aCol1 );
-				aCol1 = aCol2;
-				aCol2 = aZwi;
-			}
-			XGradient aGrad( aCol2, aCol1, eGrad, nAngle, nFocusX, nFocusY );
-			aGrad.SetStartIntens( 100 );
-			aGrad.SetEndIntens( 100 );
-			rSet.Put( XFillGradientItem( String(), aGrad ) );
+			ImportGradientColor ( rSet, eMSO_FillType, dTrans , dBackTrans );
 		}
 		else if ( eXFill == XFILL_BITMAP )
 		{
@@ -2362,23 +2318,24 @@ void DffPropertyReader::ApplyCustomShapeGeometryAttributes( SvStream& rIn, SfxIt
 				{
 					rIn >> nTmp;
 					nCommand = EnhancedCustomShapeSegmentCommand::UNKNOWN;
-					nCnt = (sal_Int16)( nTmp & 0xfff );
-					switch( nTmp >> 12 )
+					nCnt = (sal_Int16)( nTmp & 0x1fff );//Last 13 bits for segment points number
+					switch( nTmp >> 13 )//First 3 bits for command type
 					{
 						case 0x0: nCommand = EnhancedCustomShapeSegmentCommand::LINETO; if ( !nCnt ) nCnt = 1; break;
-						case 0x1: nCommand = EnhancedCustomShapeSegmentCommand::LINETO; if ( !nCnt ) nCnt = 1; break;	// seems to the relative lineto
-						case 0x4: nCommand = EnhancedCustomShapeSegmentCommand::MOVETO; if ( !nCnt ) nCnt = 1; break;
-						case 0x2: nCommand = EnhancedCustomShapeSegmentCommand::CURVETO; if ( !nCnt ) nCnt = 1; break;
-						case 0x3: nCommand = EnhancedCustomShapeSegmentCommand::CURVETO; if ( !nCnt ) nCnt = 1; break;	// seems to be the relative curveto
-						case 0x8: nCommand = EnhancedCustomShapeSegmentCommand::ENDSUBPATH; nCnt = 0; break;
-						case 0x6: nCommand = EnhancedCustomShapeSegmentCommand::CLOSESUBPATH; nCnt = 0; break;
-						case 0xa:
-						case 0xb:
+						case 0x1: nCommand = EnhancedCustomShapeSegmentCommand::CURVETO; if ( !nCnt ) nCnt = 1; break;
+						case 0x2: nCommand = EnhancedCustomShapeSegmentCommand::MOVETO; if ( !nCnt ) nCnt = 1; break;
+						case 0x3: nCommand = EnhancedCustomShapeSegmentCommand::CLOSESUBPATH; nCnt = 0; break;
+						case 0x4: nCommand = EnhancedCustomShapeSegmentCommand::ENDSUBPATH; nCnt = 0; break;
+						case 0x5:
+						case 0x6:
 						{
-							switch ( ( nTmp >> 8 ) & 0xf )
+							switch ( ( nTmp >> 8 ) & 0x1f )//5 bits next to command type is for path escape type
 							{
 								case 0x0:
 								{
+									//It is msopathEscapeExtension which is transformed into LINETO.
+									//If issue happens, I think this part can be comment so that it will be taken as unknow command.
+									//When export, origin data will be export without any change.
 									nCommand = EnhancedCustomShapeSegmentCommand::LINETO;
 									if ( !nCnt )
 										nCnt = 1;
@@ -2699,7 +2656,7 @@ void DffPropertyReader::ApplyAttributes( SvStream& rIn, SfxItemSet& rSet, DffObj
 	if ( nFontAttributes & 0x08 )
         rSet.Put( SvxUnderlineItem( nFontAttributes & 0x08 ? UNDERLINE_SINGLE : UNDERLINE_NONE, EE_CHAR_UNDERLINE ) );
 	if ( nFontAttributes & 0x40 )
-        rSet.Put( SvxShadowedItem( nFontAttributes & 0x40 != 0, EE_CHAR_SHADOW ) );
+        rSet.Put( SvxShadowedItem( (nFontAttributes & 0x40) != 0, EE_CHAR_SHADOW ) );
 //	if ( nFontAttributes & 0x02 )
 //		rSet.Put( SvxCaseMapItem( nFontAttributes & 0x02 ? SVX_CASEMAP_KAPITAELCHEN : SVX_CASEMAP_NOT_MAPPED ) );
 	if ( nFontAttributes & 0x01 )
@@ -2723,15 +2680,13 @@ void DffPropertyReader::ApplyAttributes( SvStream& rIn, SfxItemSet& rSet, DffObj
 	{
 		sal_Int32 nVal = static_cast< sal_Int32 >( GetPropertyValue( DFF_Prop_shadowOffsetX ) );
 		rManager.ScaleEmu( nVal );
-		if ( nVal )
-			rSet.Put( SdrShadowXDistItem( nVal ) );
+		rSet.Put( SdrShadowXDistItem( nVal ) );
 	}
 	if ( IsProperty( DFF_Prop_shadowOffsetY ) )
 	{
 		sal_Int32 nVal = static_cast< sal_Int32 >( GetPropertyValue( DFF_Prop_shadowOffsetY ) );
 		rManager.ScaleEmu( nVal );
-		if ( nVal )
-			rSet.Put( SdrShadowYDistItem( nVal ) );
+		rSet.Put( SdrShadowYDistItem( nVal ) );
 	}
 	if ( IsProperty( DFF_Prop_fshadowObscured ) )
 	{
@@ -2776,7 +2731,7 @@ void DffPropertyReader::ApplyAttributes( SvStream& rIn, SfxItemSet& rSet, DffObj
 				break;
 			}
 		}
-		if ( ( ( nLineFlags & 0x08 ) == 0 ) && ( ( nFillFlags & 0x10 ) == 0 ) )	// if there is no fillstyle and linestyle
+		if ( ( ( nLineFlags & 0x08 ) == 0 ) && ( ( nFillFlags & 0x10 ) == 0 ) && ( rObjData.eShapeType != mso_sptPictureFrame ))	// if there is no fillstyle and linestyle
 			bHasShadow = sal_False;												// we are turning shadow off.
 
 		if ( bHasShadow )
@@ -2784,7 +2739,7 @@ void DffPropertyReader::ApplyAttributes( SvStream& rIn, SfxItemSet& rSet, DffObj
 	}
 	ApplyLineAttributes( rSet, rObjData.eShapeType ); // #i28269#
 	ApplyFillAttributes( rIn, rSet, rObjData );
-	if ( rObjData.eShapeType != mso_sptNil )
+	if ( rObjData.eShapeType != mso_sptNil || IsProperty( DFF_Prop_pVertices ) )
 	{
 		ApplyCustomShapeGeometryAttributes( rIn, rSet, rObjData );
 		ApplyCustomShapeTextAttributes( rSet );
@@ -2887,6 +2842,114 @@ void DffPropertyReader::CheckAndCorrectExcelTextRotation( SvStream& rIn, SfxItem
 		aTextRotateAngle.Value <<= fExtraTextRotateAngle;
 		aGeometryItem.SetPropertyValue( aTextRotateAngle );
 		rSet.Put( aGeometryItem );
+	}
+}
+
+
+void DffPropertyReader::ImportGradientColor( SfxItemSet& aSet,MSO_FillType eMSO_FillType, double dTrans , double dBackTrans) const
+{
+	//MS Focus prop will impact the start and end color position. And AOO does not
+	//support this prop. So need some swap for the two color to keep fidelity with AOO and MS shape.
+	//So below var is defined.
+	sal_Int32 nChgColors = 0;
+	sal_Int32 nAngle = GetPropertyValue( DFF_Prop_fillAngle, 0 );
+	sal_Int32 nRotateAngle = 0;
+	if(nAngle >= 0)
+		nChgColors ^= 1;
+
+	//Translate a MS clockwise(+) or count clockwise angle(-) into a AOO count clock wise angle
+	nAngle=3600 - ( ( Fix16ToAngle(nAngle) + 5 ) / 10 );
+	//Make sure this angle belongs to 0~3600
+	while ( nAngle >= 3600 ) nAngle -= 3600;
+	while ( nAngle < 0 ) nAngle += 3600;
+
+	//Rotate angle
+	if ( mbRotateGranientFillWithAngle )
+	{
+		nRotateAngle = GetPropertyValue( DFF_Prop_Rotation, 0 );
+		if(nRotateAngle)//fixed point number
+			nRotateAngle = ( (sal_Int16)( nRotateAngle >> 16) * 100L ) + ( ( ( nRotateAngle & 0x0000ffff) * 100L ) >> 16 );
+		nRotateAngle = ( nRotateAngle + 5 ) / 10 ;//round up
+		//nAngle is a clockwise angle. If nRotateAngle is a clockwise angle, then gradient need be rotated a little less
+		//Or it need be rotated a little more
+		nAngle -=  nRotateAngle;
+	}
+	while ( nAngle >= 3600 ) nAngle -= 3600;
+	while ( nAngle < 0 ) nAngle += 3600;
+
+	XGradientStyle eGrad = XGRAD_LINEAR;
+	
+	sal_Int32 nFocus = GetPropertyValue( DFF_Prop_fillFocus, 0 );	
+	if ( !nFocus )
+		nChgColors ^= 1;
+	else if ( nFocus < 0 )//If it is a negative focus, the color will be swapped
+	{
+		nFocus =- nFocus;
+		nChgColors ^= 1;
+	}
+	
+	if( nFocus > 40 && nFocus < 60 )
+	{
+		eGrad = XGRAD_AXIAL;//A axial gradient other than linear
+		nChgColors ^= 1;
+	}
+	//if the type is linear or axial, just save focus to nFocusX and nFocusY for export
+	//Core function does no need them. They serves for rect gradient(CenterXY).
+	sal_uInt16 nFocusX = (sal_uInt16)nFocus;
+	sal_uInt16 nFocusY = (sal_uInt16)nFocus;
+	
+	switch( eMSO_FillType )
+	{
+	case mso_fillShadeShape :
+		{
+			eGrad = XGRAD_RECT;
+			nFocusY = nFocusX = 50;
+			nChgColors ^= 1;
+		}
+		break;
+	case mso_fillShadeCenter :
+		{
+			eGrad = XGRAD_RECT;
+			//A MS fillTo prop specifies the relative position of the left boundary 
+			//of the center rectangle in a concentric shaded fill. Use 100 or 0 to keep fidelity
+			nFocusX=(GetPropertyValue( DFF_Prop_fillToRight, 0 )==0x10000) ? 100 : 0;
+			nFocusY=(GetPropertyValue( DFF_Prop_fillToBottom,0 )==0x10000) ? 100 : 0;			
+			nChgColors ^= 1;
+		}
+		break;
+		default: break;
+	}
+
+	Color aCol1( rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillColor, COL_WHITE ), DFF_Prop_fillColor ) );
+	Color aCol2( rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillBackColor, COL_WHITE ), DFF_Prop_fillBackColor ) );	
+	if ( nChgColors )
+	{
+		//Swap start and end color
+		Color aZwi( aCol1 );
+		aCol1 = aCol2;
+		aCol2 = aZwi;
+		//Swap two colors' transparency
+		double dTemp = dTrans;
+		dTrans = dBackTrans;
+		dBackTrans = dTemp;
+	}
+	
+	//Construct gradient item
+	XGradient aGrad( aCol2, aCol1, eGrad, nAngle, nFocusX, nFocusY );
+	//Intensity has been merged into color. So here just set is as 100
+	aGrad.SetStartIntens( 100 );
+	aGrad.SetEndIntens( 100 );
+	aSet.Put( XFillGradientItem( String(), aGrad ) );
+	//Construct tranparency item. This item can coodinate with both solid and gradient.
+	if ( dTrans < 1.0 || dBackTrans < 1.0 )
+	{
+		sal_uInt8 nStartCol = (sal_uInt8)( (1 - dTrans )* 255 );
+		sal_uInt8 nEndCol = (sal_uInt8)( ( 1- dBackTrans ) * 255 );
+		aCol1 = Color(nStartCol, nStartCol, nStartCol);
+		aCol2 = Color(nEndCol, nEndCol, nEndCol);
+		
+		XGradient aGrad2( aCol2 ,  aCol1 , eGrad, nAngle, nFocusX, nFocusY );
+		aSet.Put( XFillFloatTransparenceItem( String(), aGrad2 ) );
 	}
 }
 
@@ -4214,6 +4277,29 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 	DffObjData aObjData( rHd, rClientRect, nCalledByGroup );
 	aObjData.bRotateTextWithShape = ( GetSvxMSDffSettings() & SVXMSDFF_SETTINGS_IMPORT_EXCEL ) == 0;
 	maShapeRecords.Consume( rSt, sal_False );
+	if( maShapeRecords.SeekToContent( rSt,
+		DFF_msofbtUDefProp,
+		SEEK_FROM_BEGINNING ) )
+	{
+		sal_uInt32  nBytesLeft = maShapeRecords.Current()->nRecLen;
+		sal_uInt32	nUDData;
+		sal_uInt16  nPID;
+		while( 5 < nBytesLeft )
+		{
+			rSt >> nPID;
+			if ( rSt.GetError() != 0 )
+				break;
+			rSt >> nUDData;						
+			if ( rSt.GetError() != 0 )
+				break;
+			if ( nPID == 447 ) // 
+			{
+				mbRotateGranientFillWithAngle = nUDData & 0x20;
+				break;
+			}
+			nBytesLeft  -= 6;
+		}
+	}
 	aObjData.bShapeType = maShapeRecords.SeekToContent( rSt, DFF_msofbtSp, SEEK_FROM_BEGINNING );
 	if ( aObjData.bShapeType )
 	{
@@ -4343,7 +4429,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 				ApplyAttributes( rSt, aSet, aObjData );
 				pRet->SetMergedItemSet(aSet);
 			}
-			else if ( aObjData.eShapeType == mso_sptLine )
+			else if ( aObjData.eShapeType == mso_sptLine && !( GetPropertyValue( DFF_Prop_fc3DLightFace ) & 8 ) )
 			{
 				basegfx::B2DPolygon aPoly;
 				aPoly.append(basegfx::B2DPoint(aObjData.aBoundRect.Left(), aObjData.aBoundRect.Top()));
@@ -4396,7 +4482,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
                             aSet.Put( SvxWeightItem( ( GetPropertyValue( DFF_Prop_gtextFStrikethrough, 0 ) & 0x0020 ) != 0 ? WEIGHT_BOLD : WEIGHT_NORMAL, EE_CHAR_WEIGHT ) );
 
 						// SJ TODO: Vertical Writing is not correct, instead this should be
-						// replaced through "CharacterRotation" by 90°, therefore a new Item has to be
+						// replaced through "CharacterRotation" by 90? therefore a new Item has to be
 						// supported by svx core, api and xml file format
 						((SdrObjCustomShape*)pRet)->SetVerticalWriting( ( GetPropertyValue( DFF_Prop_gtextFStrikethrough, 0 ) & 0x2000 ) != 0 );
 
@@ -4435,6 +4521,10 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 						}
 						if ( GetPropertyValue( DFF_Prop_gtextFStrikethrough, 0 ) & 0x1000 )	// SJ: Font Kerning On ?
 							aSet.Put( SvxKerningItem( 1, EE_CHAR_KERNING ) );
+						
+                        // #119496# the resize autoshape to fit text attr of word art in MS PPT is always false
+						aSet.Put( SdrTextAutoGrowHeightItem( sal_False ) );
+						aSet.Put( SdrTextAutoGrowWidthItem( sal_False ) );
 					}
                     pRet->SetMergedItemSet( aSet );
 
@@ -4502,6 +4592,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 						// before clearing the GeometryItem we have to store the current Coordinates
 						const uno::Any* pAny = ((SdrCustomShapeGeometryItem&)aGeometryItem).GetPropertyValueByName( sPath, sCoordinates );
 						Rectangle aPolyBoundRect;
+						Point aStartPt( 0,0 );
 						if ( pAny && ( *pAny >>= seqCoordinates ) && ( seqCoordinates.getLength() >= 4 ) )
 						{
 							sal_Int32 nPtNum, nNumElemVert = seqCoordinates.getLength();
@@ -4518,6 +4609,11 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 								aXP[ (sal_uInt16)nPtNum ] = aP;
 							}
 							aPolyBoundRect = Rectangle( aXP.GetBoundRect() );
+							if ( nNumElemVert >= 3 )
+							{ // arc first command is always wr -- clockwise arc
+								// the parameters are : (left,top),(right,bottom),start(x,y),end(x,y) 
+								aStartPt = aXP[2];
+							}
 						}
 						else
 							aPolyBoundRect = Rectangle( -21600, 0, 21600, 43200 );	// defaulting
@@ -4542,6 +4638,18 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 							else
 							{
 								fNumber = 270.0;
+								//normal situation:if endAngle != 90,there will be a direct_value,but for damaged curve,the endAngle need to recalculate.
+								Point cent = aPolyBoundRect.Center();
+								if ( aStartPt.Y() == cent.Y() )
+									fNumber = ( aStartPt.X() >= cent.X() ) ? 0:180.0;
+								else if ( aStartPt.X() == cent.X() )
+									fNumber = ( aStartPt.Y() >= cent.Y() ) ? 90.0: 270.0;
+								else
+								{
+									fNumber = atan2( double( aStartPt.X() - cent.X() ),double( aStartPt.Y() - cent.Y() ) )+ F_PI; // 0..2PI
+									fNumber /= F_PI180; // 0..360.0
+								}
+								nEndAngle = NormAngle360( - (sal_Int32)fNumber * 100 );
 								seqAdjustmentValues[ 0 ].Value <<= fNumber;
 								seqAdjustmentValues[ 0 ].State = com::sun::star::beans::PropertyState_DIRECT_VALUE;		// so this value will properly be stored
 							}
@@ -4713,6 +4821,9 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 
 							RotatePoint(aPoint1, aCenter, ss, cc);
 							RotatePoint(aPoint2, aCenter, ss, cc);
+
+                            // #120437# reset rotation, it is part of the path and shall not be applied again
+                            nObjectRotation = 0;
 						}
 
 						// Linie innerhalb des Bereiches zurechtdrehen/spiegeln
@@ -4721,14 +4832,19 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 							sal_Int32 n = aPoint1.X();
 							aPoint1.X() = aPoint2.X();
 							aPoint2.X() = n;
+
+                            // #120437# reset hor filp
+                            nSpFlags &= ~SP_FFLIPH;
 						}
 						if ( nSpFlags & SP_FFLIPV )
 						{
 							sal_Int32 n = aPoint1.Y();
 							aPoint1.Y() = aPoint2.Y();
 							aPoint2.Y() = n;
+
+                            // #120437# reset ver filp
+                            nSpFlags &= ~SP_FFLIPV;
 						}
-						nSpFlags &= ~( SP_FFLIPV | SP_FFLIPH );
 
 						pRet->NbcSetPoint(aPoint1, 0L);	// Startpunkt
 						pRet->NbcSetPoint(aPoint2, 1L);	// Endpunkt
@@ -4757,6 +4873,11 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 
 						((SdrEdgeObj*)pRet)->SetEdgeTrackPath( aPoly );
 						pRet->SetMergedItemSet( aSet );
+					}
+					if ( aObjData.eShapeType == mso_sptLine )
+					{
+						pRet->SetMergedItemSet(aSet);
+						((SdrObjCustomShape*)pRet)->MergeDefaultAttributes();
 					}
 				}
 			}
@@ -4825,6 +4946,7 @@ Rectangle SvxMSDffManager::GetGlobalChildAnchor( const DffRecordHeader& rHd, SvS
 {
 	Rectangle aChildAnchor;
 	rHd.SeekToContent( rSt );
+	sal_Bool bIsClientRectRead = sal_False;
 	while ( ( rSt.GetError() == 0 ) && ( rSt.Tell() < rHd.GetRecEndFilePos() ) )
 	{
 		DffRecordHeader aShapeHd;
@@ -4859,7 +4981,16 @@ Rectangle SvxMSDffManager::GetGlobalChildAnchor( const DffRecordHeader& rHd, SvS
 						Scale( t );
 						Scale( r );
 						Scale( b );
-						aClientRect = Rectangle( l, t, r, b );
+						if ( bIsClientRectRead ) 
+						{
+							Rectangle aChild( l, t, r, b );
+							aChildAnchor.Union( aChild );
+						}
+						else
+						{
+							aClientRect = Rectangle( l, t, r, b );
+							bIsClientRectRead = sal_True;
+						}
 					}
 					break;
 				}

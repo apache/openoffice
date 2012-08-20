@@ -1558,7 +1558,7 @@ sub get_options {
     if (!$html) {
         print_error("\"--html_path\" switch is used only with \"--html\"") if ($html_path);
         print_error("\"--dontgraboutput\" switch is used only with \"--html\"") if ($dont_grab_output);
-    };
+    }
     if ((scalar keys %exclude_branches) && !$build_all_parents) {
         print_error("\"--exclude_branch_from\" is not applicable for one module builds!!");
     };
@@ -2017,10 +2017,7 @@ sub run_job {
         if (!-d $log_dir) {
              system("$perl $mkout");
         };
-        $error_code = system ("$job_to_do > $log_file 2>&1");
-        if (!$grab_output && -f $log_file) {
-            system("cat $log_file");
-        };
+        $error_code = system ("$job_to_do 2>&1 | tee $log_file");
     } else {
         $error_code = system ("$job_to_do");
     };

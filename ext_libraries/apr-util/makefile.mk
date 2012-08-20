@@ -27,15 +27,22 @@ TARGET=aprutil
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
-.INCLUDE :      aprutil_version.mk
+.INCLUDE :	aprutil_version.mk
 
 # --- Files --------------------------------------------------------
 
+.IF "$(SYSTEM_APR_UTIL)"=="YES"
+
+all:
+	@echo "Using system apr-util.  Does not have to be built."
+
+.ELSE
+
 # Assemble the full version number from the parts defined in aprutil_version.mk
-APRUTIL_VERSION=$(APR_UTIL_MAJOR).$(APR_UTIL_MINOR).$(APR_UTIL_MICRO)
+APR_UTIL_VERSION=$(APR_UTIL_MAJOR).$(APR_UTIL_MINOR).$(APR_UTIL_MICRO)
 
 
-TARFILE_NAME=$(PRJNAME)-$(APRUTIL_VERSION)
+TARFILE_NAME=$(PRJNAME)-$(APR_UTIL_VERSION)
 TARFILE_MD5=666a5d56098a9debf998510e304c8095
 
 .IF "$(OS)"=="WNT"
@@ -117,3 +124,4 @@ OUT2BIN=apu-1-config
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
 
+.ENDIF

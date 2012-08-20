@@ -319,53 +319,61 @@ XclImpDrawObjBase::~XclImpDrawObjBase()
     {
         sal_uInt16 nSubRecId, nSubRecSize, nObjType;
         rStrm >> nSubRecId >> nSubRecSize >> nObjType;
-        DBG_ASSERT( nSubRecId == EXC_ID_OBJCMO, "XclImpDrawObjBase::ReadObj8 - OBJCMO subrecord expected" );
-        if( (nSubRecId == EXC_ID_OBJCMO) && (nSubRecSize >= 6) )
+        
+        if(EXC_ID_OBJCMO == nSubRecId)
         {
-            switch( nObjType )
+            if( (nSubRecSize >= 6) )
             {
-                // in BIFF8, all simple objects support text
-                case EXC_OBJTYPE_LINE:
-                case EXC_OBJTYPE_ARC:
-                    xDrawObj.reset( new XclImpTextObj( rRoot ) );
-                    // lines and arcs may be 2-dimensional
-                    xDrawObj->SetAreaObj( false );
-                break;
+                switch( nObjType )
+                {
+                    // in BIFF8, all simple objects support text
+                    case EXC_OBJTYPE_LINE:
+                    case EXC_OBJTYPE_ARC:
+                        xDrawObj.reset( new XclImpTextObj( rRoot ) );
+                        // lines and arcs may be 2-dimensional
+                        xDrawObj->SetAreaObj( false );
+                    break;
 
-                // in BIFF8, all simple objects support text
-                case EXC_OBJTYPE_RECTANGLE:
-                case EXC_OBJTYPE_OVAL:
-                case EXC_OBJTYPE_POLYGON:
-                case EXC_OBJTYPE_DRAWING:
-                case EXC_OBJTYPE_TEXT:
-                    xDrawObj.reset( new XclImpTextObj( rRoot ) );
-                break;
+                    // in BIFF8, all simple objects support text
+                    case EXC_OBJTYPE_RECTANGLE:
+                    case EXC_OBJTYPE_OVAL:
+                    case EXC_OBJTYPE_POLYGON:
+                    case EXC_OBJTYPE_DRAWING:
+                    case EXC_OBJTYPE_TEXT:
+                        xDrawObj.reset( new XclImpTextObj( rRoot ) );
+                    break;
 
-                case EXC_OBJTYPE_GROUP:         xDrawObj.reset( new XclImpGroupObj( rRoot ) );          break;
-                case EXC_OBJTYPE_CHART:         xDrawObj.reset( new XclImpChartObj( rRoot ) );          break;
-                case EXC_OBJTYPE_BUTTON:        xDrawObj.reset( new XclImpButtonObj( rRoot ) );         break;
-                case EXC_OBJTYPE_PICTURE:       xDrawObj.reset( new XclImpPictureObj( rRoot ) );        break;
-                case EXC_OBJTYPE_CHECKBOX:      xDrawObj.reset( new XclImpCheckBoxObj( rRoot ) );       break;
-                case EXC_OBJTYPE_OPTIONBUTTON:  xDrawObj.reset( new XclImpOptionButtonObj( rRoot ) );   break;
-                case EXC_OBJTYPE_EDIT:          xDrawObj.reset( new XclImpEditObj( rRoot ) );           break;
-                case EXC_OBJTYPE_LABEL:         xDrawObj.reset( new XclImpLabelObj( rRoot ) );          break;
-                case EXC_OBJTYPE_DIALOG:        xDrawObj.reset( new XclImpDialogObj( rRoot ) );         break;
-                case EXC_OBJTYPE_SPIN:          xDrawObj.reset( new XclImpSpinButtonObj( rRoot ) );     break;
-                case EXC_OBJTYPE_SCROLLBAR:     xDrawObj.reset( new XclImpScrollBarObj( rRoot ) );      break;
-                case EXC_OBJTYPE_LISTBOX:       xDrawObj.reset( new XclImpListBoxObj( rRoot ) );        break;
-                case EXC_OBJTYPE_GROUPBOX:      xDrawObj.reset( new XclImpGroupBoxObj( rRoot ) );       break;
-                case EXC_OBJTYPE_DROPDOWN:      xDrawObj.reset( new XclImpDropDownObj( rRoot ) );       break;
-                case EXC_OBJTYPE_NOTE:          xDrawObj.reset( new XclImpNoteObj( rRoot ) );           break;
+                    case EXC_OBJTYPE_GROUP:         xDrawObj.reset( new XclImpGroupObj( rRoot ) );          break;
+                    case EXC_OBJTYPE_CHART:         xDrawObj.reset( new XclImpChartObj( rRoot ) );          break;
+                    case EXC_OBJTYPE_BUTTON:        xDrawObj.reset( new XclImpButtonObj( rRoot ) );         break;
+                    case EXC_OBJTYPE_PICTURE:       xDrawObj.reset( new XclImpPictureObj( rRoot ) );        break;
+                    case EXC_OBJTYPE_CHECKBOX:      xDrawObj.reset( new XclImpCheckBoxObj( rRoot ) );       break;
+                    case EXC_OBJTYPE_OPTIONBUTTON:  xDrawObj.reset( new XclImpOptionButtonObj( rRoot ) );   break;
+                    case EXC_OBJTYPE_EDIT:          xDrawObj.reset( new XclImpEditObj( rRoot ) );           break;
+                    case EXC_OBJTYPE_LABEL:         xDrawObj.reset( new XclImpLabelObj( rRoot ) );          break;
+                    case EXC_OBJTYPE_DIALOG:        xDrawObj.reset( new XclImpDialogObj( rRoot ) );         break;
+                    case EXC_OBJTYPE_SPIN:          xDrawObj.reset( new XclImpSpinButtonObj( rRoot ) );     break;
+                    case EXC_OBJTYPE_SCROLLBAR:     xDrawObj.reset( new XclImpScrollBarObj( rRoot ) );      break;
+                    case EXC_OBJTYPE_LISTBOX:       xDrawObj.reset( new XclImpListBoxObj( rRoot ) );        break;
+                    case EXC_OBJTYPE_GROUPBOX:      xDrawObj.reset( new XclImpGroupBoxObj( rRoot ) );       break;
+                    case EXC_OBJTYPE_DROPDOWN:      xDrawObj.reset( new XclImpDropDownObj( rRoot ) );       break;
+                    case EXC_OBJTYPE_NOTE:          xDrawObj.reset( new XclImpNoteObj( rRoot ) );           break;
 
-                default:
-                    DBG_ERROR1( "XclImpDrawObjBase::ReadObj8 - unknown object type 0x%04hX", nObjType );
-                    rRoot.GetTracer().TraceUnsupportedObjects();
-                    xDrawObj.reset( new XclImpPhObj( rRoot ) );
+                    default:
+                        DBG_ERROR1( "XclImpDrawObjBase::ReadObj8 - unknown object type 0x%04hX", nObjType );
+                        rRoot.GetTracer().TraceUnsupportedObjects();
+                        xDrawObj.reset( new XclImpPhObj( rRoot ) );
+                }
             }
+
+            xDrawObj->ImplReadObj8( rStrm );
+        }
+        else
+        {
+            DBG_ASSERT(false, "XclImpDrawObjBase::ReadObj8 - OBJCMO subrecord expected" );
         }
     }
 
-    xDrawObj->ImplReadObj8( rStrm );
     return xDrawObj;
 }
 
@@ -447,10 +455,11 @@ void XclImpDrawObjBase::PreProcessSdrObject( XclImpDffConverter& rDffConv, SdrOb
 {
     // default: front layer, derived classes may have to set other layer in DoPreProcessSdrObj()
     rSdrObj.NbcSetLayer( SC_LAYER_FRONT );
-
+    const bool bEnableUndo = rSdrObj.GetModel()->IsUndoEnabled();
+    rSdrObj.GetModel()->EnableUndo(false);
     // set object name (GetObjName() will always return a non-empty name)
     rSdrObj.SetName( GetObjName() );
-
+    rSdrObj.GetModel()->EnableUndo(bEnableUndo);
     // #i39167# full width for all objects regardless of horizontal alignment
     rSdrObj.SetMergedItem( SdrTextHorzAdjustItem( SDRTEXTHORZADJUST_BLOCK ) );
 
@@ -3865,9 +3874,17 @@ void XclImpDrawing::ReadDffRecord( XclImpStream& rStrm )
 void XclImpDrawing::ReadObj8( XclImpStream& rStrm )
 {
     XclImpDrawObjRef xDrawObj = XclImpDrawObjBase::ReadObj8( GetRoot(), rStrm );
-    // store the new object in the internal containers
-    maObjMap[ maDffStrm.Tell() ] = xDrawObj;
-    maObjMapId[ xDrawObj->GetObjId() ] = xDrawObj;
+    
+    if(xDrawObj.is())
+    {
+        // store the new object in the internal containers
+        maObjMap[ maDffStrm.Tell() ] = xDrawObj;
+        maObjMapId[ xDrawObj->GetObjId() ] = xDrawObj;
+    }
+    else
+    {
+        OSL_ENSURE(false, "DrawObj could not be loaded (!)");
+    }
 }
 
 void XclImpDrawing::ReadTxo( XclImpStream& rStrm )

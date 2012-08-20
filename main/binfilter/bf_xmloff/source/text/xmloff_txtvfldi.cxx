@@ -808,6 +808,8 @@ SvXMLImportContext* XMLVariableDeclsImportContext::CreateChildContext(
                 break;
             default:
                 DBG_ERROR("unknown field type!");
+                eElementName = XML_SEQUENCE_DECL;
+                break;
         }
 
 		if( IsXMLToken( rLocalName, eElementName ) )

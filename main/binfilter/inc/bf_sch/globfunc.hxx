@@ -85,44 +85,6 @@ SchObjGroup *CreateSimpleGroup (UINT16 nID,
 								BOOL   bProtect,
 								BOOL   bResize);
 
-
-void CubicSpline (XPolygon &pKnownPoints,
-				  int      n,
-				  int      splineSize,
-				  XPolygon &pSplines);
-
-void TVector (int    n,
-			  int    k,
-			  double *t);
-
-double TLeft (double x,
-			  int    i,
-			  int    k,
-			  double *t);
-
-double TRight (double x,
-			   int    i,
-			   int    k,
-			   double *t);
-
-void BVector (double x,
-			  int    n,
-			  int    k,
-			  double *b,
-			  double *t);
-
-void BSPoint (int      n,
-			  Point    &p1,
-			  Point    &p2,
-			  XPolygon &pKnownPoints,
-			  double   *b);
-
-void approxMesh (int      splineSize,
-				 XPolygon &pSplines,
-				 XPolygon &pKnownPoints,
-				 int      n,
-				 int      k);
-
 double SizeBounds (double,
 				   double,
 				   BOOL);

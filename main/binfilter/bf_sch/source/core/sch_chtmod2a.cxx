@@ -62,6 +62,7 @@
 
 #include "pairs.hxx"
 #include "globfunc.hxx"
+#include "arrayhelper.hxx"
 
 
 #ifndef _SVX_XLINIIT_HXX //autogen
@@ -320,9 +321,9 @@ namespace binfilter {
 /*N*/ 	long              nColCnt       = GetColCount() ;
 /*N*/ 	long              nRowCnt       = GetRowCount() ;
 /*N*/ 
-/*N*/ 	double	          *pTotal       = new double [nColCnt];
-/*N*/ 	SdrObjList        **pRowLists   = new SdrObjList* [nRowCnt];
-/*N*/ 	SdrObjList        **pDescrLists = new SdrObjList* [nRowCnt];
+/*N*/ 	double	          *pTotal       = ArrayHelper<double>::create_long_size(nColCnt);
+/*N*/ 	SdrObjList        **pRowLists   = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+/*N*/ 	SdrObjList        **pDescrLists = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
 /*N*/ 	DataDescription*  pDescription = NULL;
 /*N*/ 	Size              aDescrOfs;
 /*N*/ 
@@ -331,7 +332,15 @@ namespace binfilter {
 /*N*/ 	bShowYAxisTitle = FALSE;
 /*N*/ 	bShowZAxisTitle = FALSE;
 /*N*/ 
-/*N*/ 	SchObjGroup**    pDescrGroups=new SchObjGroup*[nRowCnt];
+/*N*/ 	SchObjGroup**    pDescrGroups = ArrayHelper<SchObjGroup*>::create_long_size(nRowCnt);
+        if( !pTotal || !pRowLists || !pDescrLists || !pDescrGroups )
+        {
+            delete[] pTotal;
+            delete[] pRowLists;
+            delete[] pDescrLists;
+            delete[] pDescrGroups;
+            return pGroup;
+        }
 /*N*/ 	for(nRow=0;nRow<nRowCnt;nRow++)
 /*N*/ 		pDescrGroups[nRow]=NULL;
 /*N*/ 
@@ -597,8 +606,14 @@ namespace binfilter {
 /*N*/ 
 /*N*/ 	Create2DBackplane(aRect, *pList, TRUE,CHSTACK_NONE);
 /*N*/ 
-/*N*/ 	SdrObjList      ** pRowLists   = new SdrObjList*[nRowCnt];
-/*N*/ 	SdrObjList      ** pStatLists  = new SdrObjList*[nRowCnt];
+/*N*/ 	SdrObjList      ** pRowLists   = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+/*N*/ 	SdrObjList      ** pStatLists  = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+        if( !pRowLists || !pStatLists )
+        {
+            delete[] pRowLists;
+            delete[] pStatLists;
+            return pGroup;
+        }
 /*N*/ 	Size            aLegendSize (((SvxFontWidthItem &) pLegendAttr->Get (EE_CHAR_FONTWIDTH)).GetWidth (),
 /*N*/ 								 ((SvxFontHeightItem &) pLegendAttr->Get (EE_CHAR_FONTHEIGHT)).GetHeight ());
 /*N*/ 
@@ -618,8 +633,6 @@ namespace binfilter {
 /*N*/ 	pStatLists [0] = 0;
 /*N*/ 
 /*N*/ 	XPolygon aPolygon ((unsigned short)nColCnt);
-/*N*/     ::std::vector< ::std::pair< double, double > > aSplinePoints;
-/*N*/     bool bIsSplineChart = ( IsSplineChart() != FALSE );
 /*N*/ 
 /*N*/ 	SfxItemSet aLineAttr(*pItemPool, XATTR_LINE_FIRST, XATTR_LINE_LAST, 0);
 /*N*/ 
@@ -660,7 +673,6 @@ namespace binfilter {
 // 			pStatLists[ nRow ]->NbcInsertObject( AverageValueY( nRow, FALSE, aRect,
            {DBG_BF_ASSERT(0, "STRIP"); }//STRIP001  pList->NbcInsertObject( AverageValueY( nRow, FALSE, aRect,
 
-/*N*/         aSplinePoints.clear();
 /*N*/ 
 /*N*/         for (nCol = 0; nCol < nColCnt; nCol++)
 /*N*/ 		{
@@ -688,13 +700,6 @@ namespace binfilter {
 /*N*/                 }
 /*N*/ 				aPolygon [(USHORT) nPoints].X () = nXPos;
 /*N*/ 				aPolygon [(USHORT) nPoints].Y () = nYPos;
-/*N*/                 if( bIsSplineChart )
-/*N*/                 {
-/*N*/                     aSplinePoints.push_back(
-/*N*/                         ::std::pair< double, double >(
-/*N*/                             static_cast< double >( nXPos ),
-/*N*/                             static_cast< double >( nYPos )));
-/*N*/                 }
 /*N*/ 				nPoints ++;
 /*N*/ 
 /*N*/ 				aPoint.X () = nXPos;
@@ -740,28 +745,7 @@ namespace binfilter {
 /*N*/ 			{
 /*N*/ 				XPolyPolygon aSeriesPoly;
 /*N*/ 
-/*N*/ 				if( bIsSplineChart )
-/*N*/ 				{
-/*?*/ 					if ((eChartStyle == CHSTYLE_2D_CUBIC_SPLINE_XY) || (eChartStyle == CHSTYLE_2D_CUBIC_SPLINE_SYMBOL_XY))
-/*?*/                     {DBG_BF_ASSERT(0, "STRIP");
-/*?*/                     }
-/*?*/                     else
-/*?*/                     {
-/*?*/                         XPolygon aMeshPoly;
-/*?*/                         approxMesh( nGranularity, aMeshPoly, aPolygon, nPoints - 1, nSplineDepth );
-/*?*/                         SchCalculationHelper::IntersectPolygonWithRectangle(
-/*?*/                             aMeshPoly, aClipRect, aSeriesPoly );
-/*?*/                     }
-/*?*/ 
-/*?*/                     if( pLineObject )
-/*?*/                         pLineObject->NbcSetPathPoly( aSeriesPoly );
-/*?*/                     else
-/*?*/                     {
-/*?*/                         pLineObject = new SdrPathObj( OBJ_PLIN, aSeriesPoly );
-/*?*/                         pRowLists[ nRow ]->NbcInsertObject( pLineObject);
-/*?*/                     }
-/*?*/ 				}
-/*N*/ 				else		// series consits of lines
+                    // line (or stripped spline)
 /*N*/ 				{
 /*N*/ 					SchCalculationHelper::IntersectPolygonWithRectangle( aPolygon, aClipRect, aSeriesPoly );
 /*N*/ 
@@ -834,8 +818,14 @@ namespace binfilter {
 /*N*/ 	USHORT  eStackMode =  bStacked ? CHSTACK_MINMAX : CHSTACK_NONE;
 /*N*/ 
 /*N*/ 	Size            aYDescrSize;
-/*N*/ 	SdrObjList      ** pRowLists    = new SdrObjList*[nRowCnt];
-/*N*/ 	SdrObjList      ** pDescrLists  = new SdrObjList*[nRowCnt];
+/*N*/ 	SdrObjList      ** pRowLists   = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+/*N*/ 	SdrObjList      ** pDescrLists  = ArrayHelper<SdrObjList*>::create_long_size(nRowCnt);
+        if( !pRowLists || !pDescrLists )
+        {
+            delete[] pRowLists;
+            delete[] pDescrLists;
+            return pGroup;
+        }
 /*N*/ 	DataDescription* pDescription   = NULL;
 /*N*/ 	SdrObjList      *pYAxisList     = pChartYAxis->IsVisible()
 /*N*/ 										  ? CreateGroup (*pList, CHOBJID_DIAGRAM_Y_AXIS, 0)
@@ -888,7 +878,7 @@ namespace binfilter {
 /*N*/ 
 /*N*/ 	XPolygon aLine (2);
 /*N*/ 	double fSteps = pChartYAxis->GetMax();
-/*N*/ 	double* fOldData = new double[nColCnt];
+/*N*/ 	double* fOldData = ArrayHelper<double>::create_long_size(nColCnt);
 /*N*/ 	double fAngle = F_PI / 2;
 /*N*/ 
 /*N*/ 	Size aLegendSize (((SvxFontWidthItem &) pLegendAttr->Get (EE_CHAR_FONTWIDTH)).GetWidth (),
@@ -1120,11 +1110,13 @@ namespace binfilter {
 /*?*/ 				}
 /*N*/ 			}
 /*N*/ 
-/*N*/ 			if (bStacked && !nRow) fOldData[nCol] = pChartYAxis->GetOrigin();
+/*N*/ 			if (bStacked && !nRow && fOldData)
+                    fOldData[nCol] = pChartYAxis->GetOrigin();
 /*N*/ 
 /*N*/ 			if (fData != DBL_MIN)
 /*N*/ 			{
-/*N*/ 				if (bStacked && nRow) fData += fOldData[nCol];
+/*N*/ 				if (bStacked && nRow && fOldData)
+                        fData += fOldData[nCol];
 /*N*/ 
 /*N*/ 				double fLength = nLength * pChartYAxis->CalcFact(fData);
 /*N*/ 
@@ -1150,7 +1142,8 @@ namespace binfilter {
 /*N*/ 					}
 /*N*/ 				}
 /*N*/ 
-/*N*/ 				fOldData [nCol] = fData;
+                    if( fOldData )
+/*N*/ 				    fOldData [nCol] = fData;
 /*N*/ 
 /*N*/ 				ChartAdjust eAdjust;
 /*N*/ 

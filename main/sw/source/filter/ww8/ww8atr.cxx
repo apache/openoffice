@@ -1310,6 +1310,16 @@ void WW8AttributeOutput::CharUnderline( const SvxUnderlineItem& rUnderline )
     }
 
     m_rWW8Export.pO->Insert( b, m_rWW8Export.pO->Count() );
+	Color aColor = rUnderline.GetColor();
+	if( aColor != COL_TRANSPARENT )
+	{
+		if( m_rWW8Export.bWrtWW8 )
+		{
+			m_rWW8Export.InsUInt16( 0x6877 );
+			
+			m_rWW8Export.InsUInt32( wwUtility::RGBToBGR( aColor.GetColor() ) );
+		}
+	}
 }
 
 void WW8AttributeOutput::CharLanguage( const SvxLanguageItem& rLanguage )
@@ -3036,6 +3046,14 @@ void AttributeOutputBase::TextField( const SwFmtFld& rField )
             }
         }
         break;
+        case RES_MACROFLD:
+            sStr.ASSIGN_CONST_ASC(" MACROBUTTON");
+            sStr += pFld->GetPar1();
+            sStr.SearchAndReplaceAscii("StarOffice.Standard.Modul1.", String(' '));
+            sStr += String(' ');
+            sStr += lcl_GetExpandedField(*pFld);
+            GetExport().OutputField( pFld, ww::eMACROBUTTON, sStr );
+            break; 
     default:
         bWriteExpand = true;
         break;
@@ -3566,7 +3584,8 @@ sal_uLong WW8Export::ReplaceCr( sal_uInt8 nChar )
                 nUCode = 0x0;
             }
             //And the para is not of len 0, then replace this cr with the mark
-            if( nChar == 0x0e || nUCode == 0x0d )
+			//#120140# If there is a cr before a column break, need replace the cr. So remove the "nChar==0x0e" check.
+            if( nUCode == 0x0d )
                 bReplaced = false;
             else
             {

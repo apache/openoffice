@@ -214,7 +214,7 @@ ZLIB3RDLIB=-lz
 ZLIB3RDLIB=-lzlib
 .ENDIF
 .IF "$(SYSTEM_JPEG)"=="YES"
-.IF "$(SOLAR_JAVA)" != "" && "$(JDK)" != "gcj" && "$(OS)" != "MACOSX"
+.IF "$(SOLAR_JAVA)" != "" && "$(JDK)" != "gcj" && "$(OS)" != "MACOSX" && "$(OS)" != "OS2"
 #i34482# Blackdown/Sun jdk is in the libsearch patch and has a libjpeg :-(
 .IF "$(OS)" == "FREEBSD"
 JPEG3RDLIB=/usr/local/lib/libjpeg.so
@@ -344,7 +344,7 @@ ULINGULIB=-lulingu
 .IF "$(SYSTEM_HUNSPELL)" == "YES"
 HUNSPELLLIB=$(HUNSPELL_LIBS)
 .ELSE
-HUNSPELLLIB=-lhunspell-1.2
+HUNSPELLLIB=-lhunspell-1.3
 .ENDIF
 .IF "$(SYSTEM_MYTHES)" == "YES"
 MYTHESLIB=$(MYTHES_LIBS)
@@ -355,7 +355,9 @@ MYTHESLIB=-lmythes-1.2
 .ENDIF
 PYUNOLIB=-lpyuno
 COINMPLIBS=-lCoinMP -lCoinUtils -lClp -lCbc -lOsi -lOsiClp -lCgl -lCbcSolver
-SERFLIBS=-lapr-1 -laprutil-1 -lserf-1
+INTERNAL_APR_LIBS=-lapr-1
+INTERNAL_APR_UTIL_LIBS=-laprutil-1
+INTERNAL_SERF_LIBS=-lserf-1
 SOFFICELIB=-lsofficeapp
 UNOPKGAPPLIB=-lunopkgapp
 TESTLIB=-ltest
@@ -526,7 +528,9 @@ HUNSPELLLIB=$(LIBPRE) libhunspell.lib
 MYTHESLIB=libmythes.lib
 PYUNOLIB=ipyuno.lib
 COINMPLIBS=CoinMP.lib
-SERFLIBS=libapr-1.lib iapr-util.lib iserf.lib
+INTERNAL_APR_LIBS=libapr-1.lib
+INTERNAL_APR_UTIL_LIBS=iapr-util.lib
+INTERNAL_SERF_LIBS=iserf.lib
 SOFFICELIB=isofficeapp.lib
 UNOPKGAPPLIB=iunopkgapp.lib
 TESTLIB=itest.lib

@@ -121,11 +121,9 @@ SfxStyleSheetHint::SfxStyleSheetHint
 
 class SfxStyleSheetBasePool_Impl
 {
-  public:
+public:
 	SfxStyles aStyles;
-	SfxStyleSheetIterator *pIter;
-	SfxStyleSheetBasePool_Impl() : pIter(0){}
-	~SfxStyleSheetBasePool_Impl(){delete pIter;}
+	SfxStyleSheetIteratorPtr pIter;
 };
 
 
@@ -583,13 +581,12 @@ void SfxStyleSheetBasePool::Replace(
 
 SfxStyleSheetIterator& SfxStyleSheetBasePool::GetIterator_Impl()
 {
-	SfxStyleSheetIterator*& rpIter = pImp->pIter;
-	if( !rpIter || (rpIter->GetSearchMask() != nMask) || (rpIter->GetSearchFamily() != nSearchFamily) )
+	if( !pImp->pIter || (pImp->pIter->GetSearchMask() != nMask) || (pImp->pIter->GetSearchFamily() != nSearchFamily) )
 	{
-		delete rpIter;
-		rpIter = CreateIterator( nSearchFamily, nMask );
+		pImp->pIter = CreateIterator( nSearchFamily, nMask );
 	}
-	return *rpIter;
+
+    return *pImp->pIter;
 }
 
 
@@ -668,13 +665,13 @@ String SfxStyleSheetBasePool::GetStreamName()
 
 
 
-SfxStyleSheetIterator* SfxStyleSheetBasePool::CreateIterator
+SfxStyleSheetIteratorPtr SfxStyleSheetBasePool::CreateIterator
 (
  SfxStyleFamily eFam,
  sal_uInt16 mask
 )
 {
-	return new SfxStyleSheetIterator(this,eFam,mask);
+	return SfxStyleSheetIteratorPtr(new SfxStyleSheetIterator(this,eFam,mask));
 }
 
 

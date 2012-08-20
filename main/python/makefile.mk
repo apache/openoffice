@@ -42,16 +42,15 @@ all:
 
 
 TARFILE_NAME=Python-$(PYVERSION)
-TARFILE_MD5=e81c2f0953aa60f8062c05a4673f2be0
+TARFILE_MD5=c57477edd6d18bd9eeca2f21add73919
 PATCH_FILES=\
-	Python-$(PYVERSION).patch \
-	Python-parallel-make.patch \
-	Python-ssl.patch \
-	Python-2.6.1-sysbase.patch\
-	Python-2.6.1-nohardlink.patch \
-	Python-disable-dbm.patch \
-	Python-linux3.patch \
-	Python-subversion-1-7.patch
+	python-solaris.patch \
+	python-freebsd.patch \
+	python-md5.patch \
+	python-ssl.patch \
+	python-$(PYVERSION)-sysbase.patch \
+	python-$(PYVERSION)-nohardlink.patch \
+	python-$(PYVERSION)-pcbuild.patch
 
 CONFIGURE_DIR=
 
@@ -83,7 +82,7 @@ BUILD_ACTION=$(ENV_BUILD) $(GNUMAKE) -j$(EXTMAXPROCESS) && $(GNUMAKE) install &&
 # WINDOWS
 # ----------------------------------
 .IF "$(COM)"=="GCC"
-PATCH_FILES=Python-$(PYVERSION)-mingw.patch
+PATCH_FILES=python-$(PYVERSION)-mingw.patch
 BUILD_DIR=
 MYCWD=$(shell cygpath -m $(shell @pwd))/$(INPATH)/misc/build
 python_CFLAGS=-mno-cygwin -mthreads

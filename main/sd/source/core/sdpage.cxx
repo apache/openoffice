@@ -793,13 +793,19 @@ void SdPage::CreateTitleAndLayout(sal_Bool bInit, sal_Bool bCreate )
 			// handout template
 
 			// delete all available handout presentation objects
-			SdrObject* pObj;
+			SdrObject *pObj=NULL;
 			while( (pObj = pMasterPage->GetPresObj(PRESOBJ_HANDOUT)) != 0 )
 			{
-				if( bUndo )
-					pUndoManager->AddUndoAction(pModel->GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
-
 				pMasterPage->RemoveObject(pObj->GetOrdNum());
+
+				if( bUndo )
+				{
+					pUndoManager->AddUndoAction(pModel->GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
+				}
+                else
+				{
+					SdrObject::Free( pObj );  // memory leak i120050
+				}
 			}
 
 			std::vector< Rectangle > aAreas;
@@ -1395,7 +1401,7 @@ void findAutoLayoutShapesImpl( SdPage& rPage, const LayoutDescriptor& rDescripto
 	bool bMissing = false;
 
 	// for each entry in the layoutdescriptor, arrange a presentation shape
-	for( i = 0; (i < PRESOBJ_MAX) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++ )
+    for (i = 0; (i < MAX_PRESOBJS) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++)
 	{
 		PresObjKind eKind = rDescriptor.meKind[i];
 		SdrObject* pObj = 0;
@@ -1417,7 +1423,7 @@ void findAutoLayoutShapesImpl( SdPage& rPage, const LayoutDescriptor& rDescripto
 	if( bMissing && bInit )
 	{
 		// for each entry in the layoutdescriptor, look for an alternative shape
-		for( i = 0; (i < PRESOBJ_MAX) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++ )
+        for (i = 0; (i < MAX_PRESOBJS) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++)
 		{
 			if( rShapes[i] )
 				continue;
@@ -1577,7 +1583,7 @@ void SdPage::SetAutoLayout(AutoLayout eLayout, sal_Bool bInit, sal_Bool bCreate 
 	int i;
 
 	// for each entry in the layoutdescriptor, arrange a presentation shape
-	for( i = 0; (i < PRESOBJ_MAX) && (aDescriptor.meKind[i] != PRESOBJ_NONE); i++ )
+    for (i = 0; (i < MAX_PRESOBJS) && (aDescriptor.meKind[i] != PRESOBJ_NONE); i++)
 	{
 		PresObjKind eKind = aDescriptor.meKind[i];
 		SdrObject* pObj = InsertAutoLayoutShape( aLayoutShapes[i], eKind, aDescriptor.mbVertical[i], aRectangle[i], bInit );

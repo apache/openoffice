@@ -24,6 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 #include "eschesdo.hxx"
+#include <svx/xflftrit.hxx>
 #include <filter/msfilter/escherex.hxx>
 #include <svx/unoapi.hxx>
 #include <svx/svdobj.hxx>
@@ -77,6 +78,7 @@
 #include <com/sun/star/drawing/ProjectionMode.hpp>
 #include <com/sun/star/text/XSimpleText.hpp>
 #include <com/sun/star/drawing/ShadeMode.hpp>
+#include <com/sun/star/drawing/TextFitToSizeType.hpp>
 #include <vcl/hatch.hxx>
 #include <com/sun/star/awt/XGraphics.hpp>
 #include <com/sun/star/awt/FontSlant.hpp>
@@ -437,21 +439,159 @@ void EscherPropertyContainer::CreateGradientProperties(
 }
 
 void EscherPropertyContainer::CreateGradientProperties(
-    const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet )
+	const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet , sal_Bool bTransparentGradient)
 {
-    ::com::sun::star::uno::Any aAny;
-    ::com::sun::star::awt::Gradient aGradient;
-    if ( EscherPropertyValueHelper::GetPropertyValue(
-            aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillGradient" ) ), sal_False ) )
-    {
-        aGradient = *static_cast< const ::com::sun::star::awt::Gradient* >( aAny.getValue() );
-    }
-    CreateGradientProperties( aGradient );
-};
+	::com::sun::star::uno::Any			aAny;
+	::com::sun::star::awt::Gradient*	pGradient = NULL;
+
+	sal_uInt32  nFillType = ESCHER_FillShadeScale;
+	sal_Int32  nAngle = 0;
+	sal_uInt32  nFillFocus = 0;
+	sal_uInt32  nFillLR = 0;
+	sal_uInt32  nFillTB = 0;
+	sal_uInt32	nFirstColor = 0;//like the control var nChgColors in import logic
+	bool        bWriteFillTo = false;
+
+	//Transparency gradient: Means the third setting in transparency page is set
+	if (bTransparentGradient &&  EscherPropertyValueHelper::GetPropertyValue(
+		aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillTransparenceGradient" ) ), sal_False ) )
+	{
+		pGradient = (::com::sun::star::awt::Gradient*)aAny.getValue();
+				
+		::com::sun::star::uno::Any			aAnyTemp;
+		const rtl::OUString aPropName( String( RTL_CONSTASCII_USTRINGPARAM( "FillStyle" ) ) );
+		if ( EscherPropertyValueHelper::GetPropertyValue(
+			aAnyTemp, rXPropSet, aPropName, sal_False ) )
+		{
+			::com::sun::star::drawing::FillStyle eFS;
+			if ( ! ( aAnyTemp >>= eFS ) )
+				eFS = ::com::sun::star::drawing::FillStyle_SOLID;
+			//solid and transparency
+			if ( eFS == ::com::sun::star::drawing::FillStyle_SOLID)
+			{
+				if ( EscherPropertyValueHelper::GetPropertyValue(
+					aAnyTemp, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillColor" ) ), sal_False ) )
+				{
+					pGradient->StartColor = ImplGetColor( *((sal_uInt32*)aAnyTemp.getValue()), sal_False );
+					pGradient->EndColor = ImplGetColor( *((sal_uInt32*)aAnyTemp.getValue()), sal_False );
+				}
+			}
+			//gradient and transparency.
+			else if( eFS == ::com::sun::star::drawing::FillStyle_GRADIENT )
+			{
+				if ( EscherPropertyValueHelper::GetPropertyValue(
+					aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillGradient" ) ), sal_False ) )
+					pGradient = (::com::sun::star::awt::Gradient*)aAny.getValue();
+			}
+		}
+		
+	}
+	//Not transparency gradient
+	else if ( EscherPropertyValueHelper::GetPropertyValue(
+		aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillGradient" ) ), sal_False ) )
+	{
+		pGradient = (::com::sun::star::awt::Gradient*)aAny.getValue();
+	}
+	
+	if ( pGradient )
+	{
+		switch ( pGradient->Style )
+		{
+		case ::com::sun::star::awt::GradientStyle_LINEAR :
+		case ::com::sun::star::awt::GradientStyle_AXIAL :
+			{
+				nFillType = ESCHER_FillShadeScale;
+				nAngle = pGradient->Angle;
+				while ( nAngle > 0 ) nAngle -= 3600;
+				while ( nAngle <= -3600 ) nAngle += 3600;
+				//Value of the real number = Integral + (Fractional / 65536.0)
+				nAngle = ( nAngle * 0x10000) / 10;
+
+				nFillFocus = (pGradient->Style == ::com::sun::star::awt::GradientStyle_LINEAR) ? 
+							( pGradient->XOffset + pGradient->YOffset )/2 : -50;
+				if( !nFillFocus )
+					nFirstColor=nFirstColor ^ 1;
+				if ( !nAngle )
+					nFirstColor=nFirstColor ^ 1;
+			}
+			break;
+		case ::com::sun::star::awt::GradientStyle_RADIAL :
+		case ::com::sun::star::awt::GradientStyle_ELLIPTICAL :
+		case ::com::sun::star::awt::GradientStyle_SQUARE :
+		case ::com::sun::star::awt::GradientStyle_RECT :
+			{
+				//according to the import logic and rect type fill** value
+				nFillLR = (pGradient->XOffset * 0x10000) / 100;
+				nFillTB = (pGradient->YOffset * 0x10000) / 100;
+				if ( ((nFillLR > 0) && (nFillLR < 0x10000)) || ((nFillTB > 0) && (nFillTB < 0x10000)) )
+					nFillType = ESCHER_FillShadeShape;
+				else
+					nFillType = ESCHER_FillShadeCenter;
+				nFirstColor = 1;
+				bWriteFillTo = true;
+			}
+			break;
+		default: break;
+		}
+	}
+	
+	AddOpt( ESCHER_Prop_fillType, nFillType );
+	AddOpt( ESCHER_Prop_fillAngle, nAngle );
+	AddOpt( ESCHER_Prop_fillColor, GetGradientColor( pGradient, nFirstColor ) );
+	AddOpt( ESCHER_Prop_fillBackColor, GetGradientColor( pGradient, nFirstColor ^ 1 ) );
+	AddOpt( ESCHER_Prop_fillFocus, nFillFocus );
+	if ( bWriteFillTo )
+	{
+		//according to rect type fillTo** value
+		if(nFillLR)
+		{
+			AddOpt( ESCHER_Prop_fillToLeft, nFillLR );
+			AddOpt( ESCHER_Prop_fillToRight, nFillLR );
+		}
+		if(nFillTB)
+		{
+			AddOpt( ESCHER_Prop_fillToTop, nFillTB );
+			AddOpt( ESCHER_Prop_fillToBottom, nFillTB );
+		}
+	}
+
+	//Transparency gradient
+	if (bTransparentGradient &&  EscherPropertyValueHelper::GetPropertyValue(
+		aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillTransparenceGradient" ) ), sal_False ) )
+	{
+		pGradient = (::com::sun::star::awt::Gradient*)aAny.getValue();
+		if ( pGradient )
+		{
+			sal_uInt32	nBlue =	 GetGradientColor( pGradient, nFirstColor ) >> 16;
+			AddOpt( ESCHER_Prop_fillOpacity,( ( 100 - ( nBlue * 100 / 255 ) ) << 16 ) / 100 );
+			nBlue =	 GetGradientColor( pGradient, nFirstColor ^ 1 ) >>16 ;
+			AddOpt( ESCHER_Prop_fillBackOpacity,( ( 100 - ( nBlue * 100 / 255 ) ) << 16 )/ 100 );
+		}
+	}
+}
+
+void	EscherPropertyContainer::CreateFillProperties( 
+	const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet,
+	sal_Bool bEdge ,  const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape )
+{
+	if ( rXShape.is() )
+	{
+		SdrObject* pObj = GetSdrObjectFromXShape( rXShape );
+		if ( pObj )
+		{
+			SfxItemSet aAttr( pObj->GetMergedItemSet() );
+			//tranparency with gradient. Means the third setting in transparency page is set
+			sal_Bool bTransparentGradient =  ( aAttr.GetItemState( XATTR_FILLFLOATTRANSPARENCE ) == SFX_ITEM_SET ) &&
+				( (const XFillFloatTransparenceItem&) aAttr.Get( XATTR_FILLFLOATTRANSPARENCE ) ).IsEnabled();
+			CreateFillProperties(  rXPropSet, bEdge, bTransparentGradient );
+		}
+	}
+}
 
 void EscherPropertyContainer::CreateFillProperties(
-	const uno::Reference< beans::XPropertySet > & rXPropSet,
-		sal_Bool bEdge )
+	const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet,
+	sal_Bool bEdge , sal_Bool bTransparentGradient)
+
 {
 	::com::sun::star::uno::Any aAny;
     AddOpt( ESCHER_Prop_WrapText, ESCHER_WrapNone );
@@ -470,7 +610,7 @@ void EscherPropertyContainer::CreateFillProperties(
         {
             case ::com::sun::star::drawing::FillStyle_GRADIENT :
             {
-				CreateGradientProperties( rXPropSet );
+				CreateGradientProperties( rXPropSet , bTransparentGradient );
                 AddOpt( ESCHER_Prop_fNoFillHitTest, 0x140014 );
             }
             break;
@@ -490,20 +630,25 @@ void EscherPropertyContainer::CreateFillProperties(
             case ::com::sun::star::drawing::FillStyle_SOLID :
             default:
             {
-				::com::sun::star::beans::PropertyState ePropState = EscherPropertyValueHelper::GetPropertyState(
-					rXPropSet, aPropName );
-				if ( ePropState == ::com::sun::star::beans::PropertyState_DIRECT_VALUE )
-	                AddOpt( ESCHER_Prop_fillType, ESCHER_FillSolid );
-
-				if ( EscherPropertyValueHelper::GetPropertyValue(
-						aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillColor" ) ), sal_False ) )
+				if ( bTransparentGradient )
+					CreateGradientProperties( rXPropSet , bTransparentGradient );
+				else
 				{
-                    sal_uInt32 nFillColor = ImplGetColor( *((sal_uInt32*)aAny.getValue()) );
-                    nFillBackColor = nFillColor ^ 0xffffff;
-                    AddOpt( ESCHER_Prop_fillColor, nFillColor );
+					::com::sun::star::beans::PropertyState ePropState = EscherPropertyValueHelper::GetPropertyState(
+						rXPropSet, aPropName );
+					if ( ePropState == ::com::sun::star::beans::PropertyState_DIRECT_VALUE )
+						AddOpt( ESCHER_Prop_fillType, ESCHER_FillSolid );
+
+					if ( EscherPropertyValueHelper::GetPropertyValue(
+							aAny, rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillColor" ) ), sal_False ) )
+					{
+						sal_uInt32 nFillColor = ImplGetColor( *((sal_uInt32*)aAny.getValue()) );
+						nFillBackColor = nFillColor ^ 0xffffff;
+						AddOpt( ESCHER_Prop_fillColor, nFillColor );
+					}
+					AddOpt( ESCHER_Prop_fNoFillHitTest, 0x100010 );
+					AddOpt( ESCHER_Prop_fillBackColor, nFillBackColor );
 				}
-                AddOpt( ESCHER_Prop_fNoFillHitTest, 0x100010 );
-                AddOpt( ESCHER_Prop_fillBackColor, nFillBackColor );
                 break;
             }
             case ::com::sun::star::drawing::FillStyle_NONE :
@@ -753,6 +898,7 @@ sal_Bool EscherPropertyContainer::GetLineArrow( const sal_Bool bLineStart,
 				sal_Int16		nWhich = bLineStart ? XATTR_LINESTART : XATTR_LINEEND;
 
 				SvxUnogetApiNameForItem( nWhich, aArrowStartName, aApiName );
+				sal_Bool bIsMapped = sal_True;
 				if ( aApiName.getLength() )
 				{
 
@@ -787,8 +933,11 @@ sal_Bool EscherPropertyContainer::GetLineArrow( const sal_Bool bLineStart,
 						reLineEnd = ESCHER_LineArrowDiamondEnd;
 					else if ( aApiName.equalsAscii( "Arrow" ) )
 						reLineEnd = ESCHER_LineArrowEnd;
+					else
+						bIsMapped = sal_False;
+
 				}
-				else if ( aArrowStartName.GetTokenCount( ' ' ) == 2 )
+				if ( !bIsMapped && aArrowStartName.GetTokenCount( ' ' ) == 2 )
 				{
 					sal_Bool b = sal_True;
 					String aArrowName( aArrowStartName.GetToken( 0, ' ' ) );
@@ -1481,21 +1630,46 @@ sal_Bool EscherPropertyContainer::CreateGraphicProperties(
                     pGraphicAttr->SetMirrorFlags( BMP_MIRROR_HORZ );
                 if ( bIsGraphicMtf )
                     AddOpt( ESCHER_Prop_Rotation, ( ( ((sal_Int32)nAngle << 16 ) / 10 ) + 0x8000 ) &~ 0xffff );
-                else
-                {
-                    pGraphicAttr->SetRotation( nAngle );
-                    if ( nAngle && pShapeBoundRect )   // up to xp ppoint does not rotate bitmaps !
-                    {
-                        Polygon aPoly( *pShapeBoundRect );
-                        aPoly.Rotate( pShapeBoundRect->TopLeft(), nAngle );
-                        *pShapeBoundRect = aPoly.GetBoundRect();
-                        bSuppressRotation = sal_True;
-                    }
-                }
             }
 
             if ( eBitmapMode == ::com::sun::star::drawing::BitmapMode_REPEAT )
-                AddOpt( ESCHER_Prop_fillType, ESCHER_FillTexture );
+			{
+				sal_Int32 nSizeX = 0,nSizeY = 0,nOffsetX = 0,nOffsetY = 0,nPosOffsetX = 0,nPosOffsetY = 0;
+                if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+                        String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapSizeX" ) ), sal_True ) )
+                {
+                    aAny >>= nSizeX;
+                }
+                if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+                        String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapSizeY" ) ), sal_True ) )
+                {
+                    aAny >>= nSizeY;
+                }
+	            if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+                        String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapOffsetX" ) ), sal_True ) )
+                {
+                    aAny >>= nOffsetX;
+                }
+                if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+                        String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapOffsetY" ) ), sal_True ) )
+                {
+                    aAny >>= nOffsetY;
+                }
+                if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+                        String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapPositionOffsetX" ) ), sal_True ) )
+                {
+                    aAny >>= nPosOffsetX;
+                }
+                if ( EscherPropertyValueHelper::GetPropertyValue( aAny, rXPropSet,
+                        String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapPositionOffsetY" ) ), sal_True ) )
+                {
+                    aAny >>= nPosOffsetY;
+                }
+				if(nSizeX == -100 && nSizeY == -100 && nOffsetX == 0 && nOffsetY == 0 && nPosOffsetX == 0 && nPosOffsetY == 0)
+					AddOpt( ESCHER_Prop_fillType, ESCHER_FillPicture );	
+				else
+					AddOpt( ESCHER_Prop_fillType, ESCHER_FillTexture );
+			}
             else
                 AddOpt( ESCHER_Prop_fillType, ESCHER_FillPicture );
 
@@ -3112,6 +3286,42 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 									else
 										nTextPathFlags &=~0x20;
 								}
+							}
+							//export gTextAlign attr
+							if ( EscherPropertyValueHelper::GetPropertyValue( aAny, aXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "TextHorizontalAdjust" ) ), sal_True ) )
+							{
+								MSO_GeoTextAlign  gTextAlign = mso_alignTextCenter;
+								// SdrFitToSizeType  eFTS( ((SdrTextFitToSizeTypeItem&)pCustoShape->GetMergedItem( SDRATTR_TEXT_FITTOSIZE )).GetValue() );
+								drawing::TextHorizontalAdjust	eHA( drawing::TextHorizontalAdjust_LEFT );
+								aAny >>= eHA;
+								switch( eHA )
+								{
+								case drawing::TextHorizontalAdjust_LEFT :
+									gTextAlign = mso_alignTextLeft;
+									break;
+								case drawing::TextHorizontalAdjust_CENTER:
+									gTextAlign = mso_alignTextCenter;
+									break;
+								case drawing::TextHorizontalAdjust_RIGHT:
+									gTextAlign = mso_alignTextRight;
+									break;
+								case drawing::TextHorizontalAdjust_BLOCK:
+									{
+										SdrFitToSizeType  eFTS( ((SdrTextFitToSizeTypeItem&)pCustoShape->GetMergedItem( SDRATTR_TEXT_FITTOSIZE )).GetValue() );
+										if ( eFTS == SDRTEXTFIT_ALLLINES)
+										{
+											gTextAlign = mso_alignTextStretch;
+										}
+										else
+										{
+											gTextAlign = mso_alignTextWordJust;
+										}
+										break;
+									}
+								default:
+									break;
+								}
+								AddOpt(DFF_Prop_gtextAlign,gTextAlign);
 							}
 						}
 						if((nTextPathFlags & 0x4000) != 0)  //Is Font work

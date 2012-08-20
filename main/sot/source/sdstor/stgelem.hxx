@@ -42,47 +42,50 @@ SvStream& operator<<( SvStream&, const ClsId& );
 
 class StgHeader
 {
-	sal_uInt8 	cSignature[ 8 ];			// 00 signature (see below)
-	ClsId	aClsId;						// 08 Class ID
-	sal_Int32	nVersion;					// 18 version number
-	sal_uInt16	nByteOrder;					// 1C Unicode byte order indicator
-	sal_Int16	nPageSize;					// 1E 1 << nPageSize = block size
-	sal_Int16	nDataPageSize;				// 20 1 << this size == data block size
-	sal_uInt8	bDirty;						// 22 internal dirty flag
-	sal_uInt8	cReserved[ 9 ];				// 23
-	sal_Int32	nFATSize; 					// 2C total number of FAT pages
-	sal_Int32	nTOCstrm;					// 30 starting page for the TOC stream
-	sal_Int32	nReserved;					// 34
-	sal_Int32	nThreshold;					// 38 minimum file size for big data
-	sal_Int32	nDataFAT;					// 3C page # of 1st data FAT block
-	sal_Int32	nDataFATSize;				// 40 # of data fat blocks
-	sal_Int32	nMasterChain;				// 44 chain to the next master block
-	sal_Int32	nMaster;					// 48 # of additional master blocks
-	sal_Int32	nMasterFAT[ 109 ];			// 4C first 109 master FAT pages
+    static const sal_uInt8 cFATPagesInHeader = 109;
+
+    sal_uInt8	cSignature[ 8 ];			// 00 signature (see below)
+    ClsId		aClsId;						// 08 Class ID
+    sal_Int32	nVersion;					// 18 version number
+    sal_uInt16	nByteOrder;					// 1C Unicode byte order indicator
+    sal_Int16	nPageSize;					// 1E 1 << nPageSize = block size
+    sal_Int16	nDataPageSize;				// 20 1 << this size == data block size
+    sal_uInt8	bDirty;						// 22 internal dirty flag
+    sal_uInt8	cReserved[ 9 ];				// 23
+    sal_Int32	nFATSize; 					// 2C total number of FAT pages
+    sal_Int32	nTOCstrm;					// 30 starting page for the TOC stream
+    sal_Int32	nReserved;					// 34
+    sal_Int32	nThreshold;					// 38 minimum file size for big data
+    sal_Int32	nDataFAT;					// 3C page # of 1st data FAT block
+    sal_Int32	nDataFATSize;				// 40 # of data fat blocks
+    sal_Int32	nMasterChain;				// 44 chain to the next master block
+    sal_Int32	nMaster;					// 48 # of additional master blocks
+    sal_Int32	nMasterFAT[ cFATPagesInHeader ];			// 4C first [cFATPagesInHeader] master FAT pages
 public:
 	StgHeader();
+
 	void  Init();						// initialize the header
 	sal_Bool  Load( StgIo& );
     sal_Bool  Load( SvStream& );
 	sal_Bool  Store( StgIo& );
 	sal_Bool  Check();						// check the signature and version
-	short GetByteOrder() const			{ return nByteOrder;	}
-	sal_Int32 GetTOCStart() const			{ return nTOCstrm;		}
+	short GetByteOrder() const			{ return nByteOrder; }
+	sal_Int32 GetTOCStart() const			{ return nTOCstrm; }
 	void  SetTOCStart( sal_Int32 n );
-	sal_Int32 GetDataFATStart() const		{ return nDataFAT;		}
+	sal_Int32 GetDataFATStart() const		{ return nDataFAT; }
 	void  SetDataFATStart( sal_Int32 n );
-	sal_Int32 GetDataFATSize() const		{ return nDataFATSize; 	}
+	sal_Int32 GetDataFATSize() const		{ return nDataFATSize; }
 	void  SetDataFATSize( sal_Int32 n );
-	sal_Int32 GetThreshold() const			{ return nThreshold;	}
-	short GetPageSize() const			{ return nPageSize;		}
-	short GetDataPageSize() const		{ return nDataPageSize;	}
-	sal_Int32 GetFATSize() const			{ return nFATSize;		}
+	sal_Int32 GetThreshold() const			{ return nThreshold; }
+	short GetPageSize() const			{ return nPageSize; }
+	short GetDataPageSize() const		{ return nDataPageSize; }
+	sal_Int32 GetFATSize() const			{ return nFATSize; }
 	void  SetFATSize( sal_Int32 n );
-	sal_Int32 GetFATChain() const			{ return nMasterChain;	}
+	sal_Int32 GetFATChain() const			{ return nMasterChain; }
 	void  SetFATChain( sal_Int32 n );
-	sal_Int32 GetMasters() const			{ return nMaster;		}
+	sal_Int32 GetMasters() const			{ return nMaster; }
 	void  SetMasters( sal_Int32 n );
-	short GetFAT1Size() const			{ return 109;			}
+	short GetFAT1Size() const			{ return cFATPagesInHeader; }
 	const ClsId& GetClassId() const		{ return aClsId;		}
 	void  SetClassId( const ClsId& );
 	sal_Int32 GetFATPage( short ) const;
@@ -136,7 +139,7 @@ public:
 	void	GetName( String& rName ) const;
 	                                    // fill in the name
 	short	Compare( const StgEntry& ) const;	// compare two entries
-	sal_Bool	Load( const void* );
+	sal_Bool	Load( const void* pBuffer, sal_uInt32 nBufSize );
 	void    Store( void* );
 	StgEntryType GetType() const		{ return (StgEntryType) cType;	}
 	sal_Int32   GetStartPage() const        { return nPage1; }

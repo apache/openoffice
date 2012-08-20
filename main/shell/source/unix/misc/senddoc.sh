@@ -110,65 +110,74 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 		done
 
 		if [ "$TO" != "" ]; then
-			COMMAND=${COMMAND:-}${COMMAND:+,}to=${TO}
+			COMMAND=${COMMAND:-}${COMMAND:+,}to=\'${TO}\'
 		fi
 		if [ "$CC" != "" ]; then
-			COMMAND=${COMMAND:-}${COMMAND:+,}cc=${CC}
+			COMMAND=${COMMAND:-}${COMMAND:+,}cc=\'${CC}\'
 		fi
 		if [ "$BCC" != "" ]; then
-			COMMAND=${COMMAND:-}${COMMAND:+,}bcc=${BCC}
+			COMMAND=${COMMAND:-}${COMMAND:+,}bcc=\'${BCC}\'
 		fi
 		if [ "$SUBJECT" != "" ]; then
-			COMMAND=${COMMAND:-}${COMMAND:+,}subject=${SUBJECT}
+			COMMAND=${COMMAND:-}${COMMAND:+,}subject=\'${SUBJECT}\'
 		fi
 		if [ "$BODY" != "" ]; then
-			COMMAND=${COMMAND:-}${COMMAND:+,}body=${BODY}
+			COMMAND=${COMMAND:-}${COMMAND:+,}body=\'${BODY}\'
 		fi
 		if [ "$ATTACH" != "" ]; then
-			COMMAND=${COMMAND:-}${COMMAND:+,}attachment=${ATTACH}
+			COMMAND=${COMMAND:-}${COMMAND:+,}attachment=\'${ATTACH}\'
 		fi
 		
 		run_mozilla "$MAILER" "$COMMAND"
 		;;
 		
-	kmail)
-	
-		while [ "$1" != "" ]; do
-			case $1 in
-				--to)
-					TO="${TO:-}${TO:+,}$2"
-					shift
-					;;
-				--cc)
-					CC="${CC:-}${CC:+,}$2"
-					shift
-					;;
-				--bcc)
-					BCC="${BCC:-}${BCC:+,}$2"
-					shift
-					;;
-				--subject)
-					SUBJECT="$2"
-					shift
-					;;
-				--body)
-					BODY="$2"
-					shift
-					;;
-				--attach)
-					ATTACH="$2"
-					shift
-					;;
-				*)
-					;;
-			esac
-			shift;
-		done
-		
-		${MAILER} --composer ${CC:+--cc} ${CC:+"${CC}"} ${BCC:+--bcc} ${BCC:+"${BCC}"} \
-			${SUBJECT:+--subject} ${SUBJECT:+"${SUBJECT}"} ${BODY:+--body} ${BODY:+"${BODY}"} \
-			${ATTACH:+--attach} ${ATTACH:+"${ATTACH}"} ${TO:+"${TO}"}
-		;;
+    kmail)
+
+        while [ "$1" != "" ]; do
+            case $1 in
+                --to)
+                    TO="${TO:-}${TO:+,}$2"
+                    shift
+                    ;;
+                --cc)
+                    CC="${CC:-}${CC:+,}$2"
+                    shift
+                    ;;
+                --bcc)
+                    BCC="${BCC:-}${BCC:+,}$2"
+                    shift
+                    ;;
+                --subject)
+                    SUBJECT="$2"
+                    shift
+                    ;;
+                --body)
+                    BODY="$2"
+                    shift
+                    ;;
+                --from)
+                    FROM="$2"
+                    shift
+                    ;;
+                --attach)
+                    ATTACH="${ATTACH:-}${ATTACH:+ }--attach "`echo "file://$2" | ${URI_ENCODE}`
+                    shift
+                    ;;
+                *)
+                    ;;
+            esac
+            shift;
+        done
+
+        ${MAILER} --composer \
+            ${CC:+--cc} ${CC:+"${CC}"}  \
+            ${BCC:+--bcc} ${BCC:+"${BCC}"} \
+            ${SUBJECT:+--subject} ${SUBJECT:+"${SUBJECT}"}  \
+            ${BODY:+--body} ${BODY:+"${BODY}"} \
+            ${FROM:+--header} ${FROM:+"From: ${FROM}"} \
+            ${ATTACH:+${ATTACH}}  \
+            ${TO:+"${TO}"}
+        ;;
 		
 	mutt)
 	

@@ -623,7 +623,14 @@ void DrawView::DeleteMarked()
 					Rectangle aRect( pObj->GetLogicRect() );
 					SdrObject* pNewObj = pPage->InsertAutoLayoutShape( 0, ePresObjKind, bVertical, aRect, true );
 
-					pPage->SetObjectOrdNum( pNewObj->GetOrdNum(), pObj->GetOrdNum() );
+                    // Move the new PresObj to the position before the
+                    // object it will replace.
+                    pUndoManager->AddUndoAction(
+                        mpDoc->GetSdrUndoFactory().CreateUndoObjectOrdNum(
+                            *pNewObj,
+                            pNewObj->GetOrdNum(),
+                            pObj->GetOrdNum()));
+                    pPage->SetObjectOrdNum( pNewObj->GetOrdNum(), pObj->GetOrdNum() );
 
 					bResetLayout = true;
 

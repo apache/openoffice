@@ -1,5 +1,5 @@
 # adding dependence on sal due to used $gb_STDLIBS which contain uwinapi for Windows
 # here a corresponding cleanup is needed as apr-util should not have a dependence on uwinapi
-apru     apr-util :  sal apr EXPAT:expat NULL	
+apru     apr-util :  sal APR:apr EXPAT:expat NULL
 apru     apr-util usr1    -	all	apru_mkout NULL
 apru     apr-util nmake	-	all	apru_apr-util NULL
