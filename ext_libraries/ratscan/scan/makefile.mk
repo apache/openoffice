@@ -23,6 +23,8 @@ PRJ=..
 
 .INCLUDE :	settings.mk
 
+version=3.5
+
 .IF "$(RAT_JAR_HOME)"=="BUILD"
 rat_jar_home=$(CLASSDIR)
 .ELSE
@@ -37,11 +39,11 @@ rat_scan_output:=$(MISC)/rat-output.xml
 rat_scan_output!:=$(shell cygpath -m $(rat_scan_output))
 .ENDIF
 
-all : $(MISC)/aoo-3.4.1_rat-scan-output.html
+all : $(MISC)/aoo-$(version)_rat-scan-output.html
 
 show-excludes .PHONY : $(MISC)/excluded-files.txt
 
-$(MISC)/aoo-3.4.1_rat-scan-output.html : $(MISC)/rat-scan-output.xml
+$(MISC)/aoo-$(version)_rat-scan-output.html : $(MISC)/rat-scan-output.xml
 	java -jar $(OUTDIR)/bin/saxon9.jar -t -s:$< -xsl:rat-output-to-html.xsl -o:$@ -l:on -warnings:fatal
 	@echo
 	@echo Find rat scan report in $@
