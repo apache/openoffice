@@ -3245,31 +3245,34 @@ bool SwWW8ImplReader::ReadText(long nStartCp, long nTextLen, ManTypes nType)
 
 SwWW8ImplReader::SwWW8ImplReader(sal_uInt8 nVersionPara, SvStorage* pStorage,
     SvStream* pSt, SwDoc& rD, const String& rBaseURL, bool bNewDoc) 
-    : mpDocShell(rD.GetDocShell()),
-      maTracer(*(mpDocShell->GetMedium())),
-      pStg(pStorage),
-      pStrm(pSt),
-      pTableStream(0),
-      pDataStream(0),
-      rDoc(rD),
-      maSectionManager(*this),
-      maInsertedTables(rD),
-      maSectionNameGenerator(rD,CREATE_CONST_ASC("WW")),
-      maGrfNameGenerator(bNewDoc,String('G')),
-      maParaStyleMapper(rD),
-      maCharStyleMapper(rD),
-      maTxtNodesHavingFirstLineOfstSet(),
-      maTxtNodesHavingLeftIndentSet(),
-      pMSDffManager(0),
-      mpAtnNames(0),
-      pAuthorInfos(0),
-      sBaseURL(rBaseURL),
-      m_bRegardHindiDigits( false ),
-      mbNewDoc(bNewDoc),
-      nDropCap(0),
-      nIdctHint(0),
-      bBidi(false),
-      bReadTable(false)
+    : mpDocShell(rD.GetDocShell())
+    , maTracer(*(mpDocShell->GetMedium()))
+    , pStg(pStorage)
+    , pStrm(pSt)
+    , pTableStream(0)
+    , pDataStream(0)
+    , rDoc(rD)
+    , maSectionManager(*this)
+    , maInsertedTables(rD)
+    , maSectionNameGenerator(rD,CREATE_CONST_ASC("WW"))
+    , maGrfNameGenerator(bNewDoc,String('G'))
+    , maParaStyleMapper(rD)
+    , maCharStyleMapper(rD)
+    , maTxtNodesHavingFirstLineOfstSet()
+    , maTxtNodesHavingLeftIndentSet()
+    , pMSDffManager(0)
+    , mpAtnNames(0)
+    , pAuthorInfos(0)
+    , sBaseURL(rBaseURL)
+    , m_bRegardHindiDigits( false )
+    , mbNewDoc(bNewDoc)
+    , nDropCap(0)
+    , nIdctHint(0)
+    , bBidi(false)
+    , bReadTable(false)
+    , mbLoadingTOCCache(false)
+    , mbLoadingTOCHyperlink(false)
+    , mpPosAfterTOC(0)
 {
     pStrm->SetNumberFormatInt( NUMBERFORMAT_INT_LITTLEENDIAN );
     nWantedVersion = nVersionPara;
