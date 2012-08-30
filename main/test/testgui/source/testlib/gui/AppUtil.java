@@ -19,9 +19,8 @@
  * 
  *************************************************************/
 
-
-
 package testlib.gui;
+
 import static testlib.gui.UIMap.*;
 
 import org.openoffice.test.common.Condition;
@@ -53,10 +52,10 @@ public class AppUtil extends Tester {
 			setCustomizedShortcut("undo", "command", "z");
 			setCustomizedShortcut("redo", "command", "shift", "z");
 		} else if (SystemUtil.isLinux()) {
-			
-		} 
+
+		}
 	}
-	
+
 	public static void typeKeys(String keys) {
 		Tester.typeKeys(keys);
 	}
@@ -64,27 +63,25 @@ public class AppUtil extends Tester {
 	public static void openStartcenter() {
 		if (startcenter.exists())
 			return;
-		
+
 		if (SystemUtil.isMac()) {
 			SystemUtil.execScript("osascript -e 'tell app \"OpenOffice.org\" to activate'");
 			typeKeys("<command n>");
 		}
-		
+
 	}
-	
 
 	public static void submitOpenDlg(String path) {
 		FilePicker_Path.setText(path);
 		FilePicker_Open.click();
 		sleep(1);
 	}
-	
 
 	public static void submitSaveDlg(String path) {
 		FileSave_Path.setText(path);
-		
+
 		String extName = FileUtil.getFileExtName(path).toLowerCase();
-		
+
 		String[] filters = FileSave_FileType.getItemsText();
 		int i = 0;
 		for (; i < filters.length; i++) {
@@ -97,12 +94,12 @@ public class AppUtil extends Tester {
 		}
 		if (i == filters.length)
 			throw new RuntimeException("Can't find the supported doc format!");
-		
+
 		FileSave_FileType.select(i);
 		FileSave_Save.click();
 		sleep(1);
 	}
-	
+
 	public static void submitSaveDlg(String path, String ext) {
 		FileSave_Path.setText(path);
 		if (ext != null) {
@@ -120,10 +117,10 @@ public class AppUtil extends Tester {
 			if (i == filters.length)
 				throw new RuntimeException("Can't find the supported doc format!");
 		}
-		FileSave_FileType.click();	
+		FileSave_FileType.click();
 		sleep(1);
 	}
-	
+
 	public static void handleBlocker(final VclWindow... windows) {
 		new Condition() {
 			@Override
@@ -138,19 +135,19 @@ public class AppUtil extends Tester {
 						}
 					}
 				}
-				
+
 				boolean shown = false;
-		
-				for(VclWindow w : windows) {
+
+				for (VclWindow w : windows) {
 					if (w.exists()) {
 						shown = true;
 						break;
 					}
 				}
-				
+
 				if (!shown)
 					return false;
-				
+
 				if (ActiveMsgBox.exists(2)) {
 					try {
 						ActiveMsgBox.ok();
@@ -161,10 +158,10 @@ public class AppUtil extends Tester {
 						}
 					}
 				}
-				
+
 				return true;
 			}
-			
-		}.waitForTrue("Time out wait window to be active.",  120, 2);
+
+		}.waitForTrue("Time out wait window to be active.", 120, 2);
 	}
 }

@@ -19,9 +19,8 @@
  * 
  *************************************************************/
 
-
-
 package testlib.gui;
+
 import java.io.File;
 
 import org.openoffice.test.OpenOffice;
@@ -42,40 +41,40 @@ import org.openoffice.test.vcl.widgets.VclStatusBar;
 import org.openoffice.test.vcl.widgets.VclTabControl;
 import org.openoffice.test.vcl.widgets.VclTabPage;
 import org.openoffice.test.vcl.widgets.VclToolBox;
-import org.openoffice.test.vcl.widgets.VclWindow;
 import org.openoffice.test.vcl.widgets.VclTreeListBox;
+import org.openoffice.test.vcl.widgets.VclWindow;
 
 /**
- * Define all UI controls in the class.
- * One control should be defined once and only once.
- *
+ * Define all UI controls in the class. One control should be defined once and
+ * only once.
+ * 
  */
 public class UIMap {
 	private static IDList idList = new IDList(new File("./hid"));
 	public static final VclMessageBox ActiveMsgBox = new VclMessageBox(Constant.UID_ACTIVE);
 	public static final VclMessageBox MsgBox_AdditionalRowsNotSaved = new VclMessageBox(Constant.UID_ACTIVE, "Additional rows were not saved.");
 	public static final VclTabControl ActiveTabControl = new VclTabControl(Constant.UID_ACTIVE);
-	
+
 	public static VclEditBox editbox(String id) {
 		return new VclEditBox(idList.getId(id));
 	}
-	
+
 	public static VclControl control(String id) {
 		return new VclControl(idList.getId(id));
 	}
-	
+
 	public static VclWindow window(String id) {
 		return new VclWindow(idList.getId(id));
 	}
-	
+
 	public static VclDialog dialog(String id) {
 		return new VclDialog(idList.getId(id));
 	}
-	
+
 	public static VclTabPage tabpage(String id) {
 		return new VclTabPage(idList.getId(id));
 	}
-	
+
 	public static VclListBox listbox(String id) {
 		return new VclListBox(idList.getId(id));
 	}
@@ -83,11 +82,11 @@ public class UIMap {
 	public static VclComboBox combobox(String id) {
 		return new VclComboBox(idList.getId(id));
 	}
-	
+
 	public static VclToolBox toolbox(String id) {
 		return new VclToolBox(idList.getId(id));
 	}
-	
+
 	public static VclButton button(String id) {
 		return new VclButton(idList.getId(id));
 	}
@@ -95,27 +94,27 @@ public class UIMap {
 	public static VclMessageBox msgbox(String text) {
 		return new VclMessageBox(idList.getId("UID_ACTIVE"), text);
 	}
-	
+
 	public static VclMenuItem menuItem(String text) {
 		return new VclMenuItem(text);
 	}
-		
+
 	public static VclStatusBar statusbar(String id) {
 		return new VclStatusBar(idList.getId(id));
 	}
-	
-	public static VclField field(String id){
+
+	public static VclField field(String id) {
 		return new VclField(idList.getId(id));
 	}
-	
-	public static VclDockingWin dockingwin(String id){
+
+	public static VclDockingWin dockingwin(String id) {
 		return new VclDockingWin(idList.getId(id));
 	}
-	
+
 	public static VclTreeListBox tree(String id) {
 		return new VclTreeListBox(idList.getId(id));
 	}
-	
+
 	public static final OpenOffice oo = new OpenOffice(null);
 	public static final VclApp app = VclApp.getDefault();
 	public static final VclWindow writer = window("SW_HID_EDIT_WIN");
@@ -214,7 +213,8 @@ public class UIMap {
 	public static final VclButton math_ElementsUnaryBinaryPlus = button("STARMATH_HID_SMA_PLUSX");
 	public static final VclControl MacroWarningOK = control("Ok");
 	public static final VclTreeListBox OptionsDlgList = tree("CUI_HID_OFADLG_TREELISTBOX");
-//	public static final VclListBox OptionsDlgList = listbox("CUI_HID_OFADLG_TREELISTBOX");
+	// public static final VclListBox OptionsDlgList =
+	// listbox("CUI_HID_OFADLG_TREELISTBOX");
 	public static final VclDialog OptionsDlg = dialog("CUI_HID_OFADLG_OPTIONS_TREE");
 	public static final VclButton OptionsDlg_MacroSecurityButton = button("cui:PushButton:RID_SVXPAGE_INET_SECURITY:PB_SEC_MACROSEC");
 	public static final VclControl MacroSecurityDlg = control("XMLSECURITY_HID_XMLSEC_TP_SECLEVEL");
@@ -223,7 +223,8 @@ public class UIMap {
 	public static final VclDialog writer_ConvertTableToTextDlg = dialog(".uno:ConvertTableText");
 	public static final VclWindow writer_Navigator = window("SW_HID_NAVIGATION_PI");
 	public static final VclListBox writer_NavigatorList = listbox("SW_HID_NAVIGATOR_TREELIST");
-//	public static final VclControl writer_FrameDlg = control("SW_HID_FRM_STD");
+	// public static final VclControl writer_FrameDlg =
+	// control("SW_HID_FRM_STD");
 	public static final VclDialog writer_FrameDlg = dialog("SW_HID_FRM_STD");
 	public static final VclField SC_NumberOfColumnsRowsToInsert = field("1502452023");
 	public static final VclDialog SC_InsertColumnsRowsdialog = dialog("26166");
@@ -370,7 +371,7 @@ public class UIMap {
 	public static final VclButton ChangeAll = button("CUI_HID_SPLDLG_BUTTON_CHANGEALL");
 	public static final VclButton AutoCorrect = button("cui:PushButton:RID_SVXDLG_SPELLCHECK:PB_AUTOCORR");
 	public static final VclButton Close = button("CUI_HID_SPLDLG_BUTTON_CLOSE");
-	
+
 	// Presentation:"Table Property" dialog
 	public static final VclButton impress_WizardDlg_Next = button("sd:PushButton:DLG_ASS:BUT_NEXT");
 	public static final VclListBox Area_Fill_Color = listbox("cui:ListBox:RID_SVXPAGE_AREA:LB_COLOR");
@@ -412,26 +413,26 @@ public class UIMap {
 	public static final VclToolBox Textbox_Toolbar = toolbox(".HelpId:textbar");
 	public static final VclButton SD_InsertTextboxButtonOnToolbar = button(".uno:Text");
 	public static final VclButton SD_FormatArea = button(".uno:FormatArea");
-	
-	//Writer:Style and Formatting List
+
+	// Writer:Style and Formatting List
 	public static final VclControl StyleAndFormattingList = control("SFX2_HID_TEMPLATE_FMT");
 	public static final VclListBox StyleFilterList = listbox("SFX2_HID_TEMPLATE_FILTER");
 	public static final VclDockingWin StyleAndFormattingDlg = dockingwin(".uno:DesignerDialog");
-	
-	//Writer:Insert Index and Table Dialog
+
+	// Writer:Insert Index and Table Dialog
 	public static final VclDialog InsertIndexDlg = dialog("SW_HID_TP_TOX_SELECT");
-	
-	//Writer:Split Cell Dialog
+
+	// Writer:Split Cell Dialog
 	public static final VclDialog Writer_SplitCellDlg = dialog("cui:ModalDialog:RID_SVX_SPLITCELLDLG");
-	
-	//Writer:Insert Rows/Columns Dialog
+
+	// Writer:Insert Rows/Columns Dialog
 	public static final VclDialog Writer_InsertRowsDlg = dialog(".uno:InsertRowDialog");
 	public static final VclField Writer_InsertNum = field("cui:NumericField:DLG_INS_ROW_COL:ED_COUNT");
 	public static final VclButton Writer_InsertBefore = button("cui:RadioButton:DLG_INS_ROW_COL:CB_POS_BEFORE");
 	public static final VclButton Writer_InsertAfter = button("cui:RadioButton:DLG_INS_ROW_COL:CB_POS_AFTER");
 	public static final VclDialog Writer_InsertColumnsDlg = dialog(".uno:InsertColumnDialog");
-	
-	//Writer:Alignment TabPage of Paragraph format
+
+	// Writer:Alignment TabPage of Paragraph format
 	public static final VclTabPage AlignmentTabPage = tabpage("CUI_HID_FORMAT_PARAGRAPH_ALIGN");
 	public static final VclButton Left = button("cui:RadioButton:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_LEFTALIGN");
 	public static final VclButton Right = button("cui:RadioButton:RID_SVXPAGE_ALIGN_PARAGRAPH:BTN_RIGHTALIGN");
@@ -441,8 +442,8 @@ public class UIMap {
 	public static final VclButton ExpandSingleWord = button("cui:CheckBox:RID_SVXPAGE_ALIGN_PARAGRAPH:CB_EXPAND");
 	public static final VclButton SnapToTextGrid = button("cui:CheckBox:RID_SVXPAGE_ALIGN_PARAGRAPH:CB_SNAP");
 	public static final VclListBox VerticalAlignment = listbox("cui:ListBox:RID_SVXPAGE_ALIGN_PARAGRAPH:LB_VERTALIGN");
-	
-	//Writer: Insert Object Dialog
+
+	// Writer: Insert Object Dialog
 	public static final VclDialog InsertObject = dialog(".uno:InsertObject");
 	public static final VclButton NewObject = button("cui:RadioButton:MD_INSERT_OLEOBJECT:RB_NEW_OBJECT");
 	public static final VclButton ObjectFromFile = button("cui:RadioButton:MD_INSERT_OLEOBJECT:RB_OBJECT_FROMFILE");
@@ -451,25 +452,22 @@ public class UIMap {
 	public static final VclButton ObjectFileSearch = button("cui:PushButton:MD_INSERT_OLEOBJECT:BTN_FILEPATH");
 	public static final VclButton ObjectFileLink = button("cui:CheckBox:MD_INSERT_OLEOBJECT:CB_FILELINK");
 	public static final VclField NumberofCol = field("cui:NumericField:RID_SVX_NEWTABLE_DLG:NF_COLUMNS");
-	
-	//Presentation: Insert Table
+
+	// Presentation: Insert Table
 	public static final VclField NumberofRow = field("cui:NumericField:RID_SVX_NEWTABLE_DLG:NF_ROWS");
 	public static final VclDialog InsertSlideObjects = dialog("SD_HID_DLG_INSERT_PAGES_OBJS");
-	
-	//Presentation: Slide Transition Settings
+
+	// Presentation: Slide Transition Settings
 	public static final VclListBox ImpressSlideTransitions = listbox("SD_HID_SD_SLIDETRANSITIONPANE_LB_SLIDE_TRANSITIONS");
 	public static final VclListBox SlideShowSpeed = listbox("SD_HID_SD_SLIDETRANSITIONPANE_LB_SPEED");
 	public static final VclButton SlideAutoAfter = button("SD_HID_SD_SLIDETRANSITIONPANE_RB_ADVANCE_AUTO");
 	public static final VclButton ApplyToAllSlides = button("SD_HID_SD_SLIDETRANSITIONPANE_PB_APPLY_TO_ALL");
-	
-    //Spreadsheet: Standard Filter Dialog
+
+	// Spreadsheet: Standard Filter Dialog
 	public static final VclComboBox FilterValue1 = combobox("sc:ComboBox:RID_SCDLG_FILTER:ED_VAL1");
 	public static final VclDialog StandardFilterDlg = dialog(".uno:DataFilterStandardFilter");
-	
-	//Fontwork
+
+	// Fontwork
 	public static final VclDialog FontworkGalleryDlg = dialog("svx:ModalDialog:RID_SVX_MDLG_FONTWORK_GALLERY");
-	
-	
-	
 
 }
