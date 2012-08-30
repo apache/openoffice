@@ -23,17 +23,11 @@
  * 
  */
 
-
 package testcase.gui.svt.sc;
 
-import static org.openoffice.test.vcl.Tester.sleep;
-import static testlib.gui.AppUtil.typeKeys;
-import static testlib.gui.UIMap.SortOptionsPage;
-import static testlib.gui.UIMap.SortOptionsPage_RangeContainsColumnLabels;
-import static testlib.gui.UIMap.SortPage;
-import static testlib.gui.UIMap.SortPage_Ascending1;
-import static testlib.gui.UIMap.SortPage_By1;
-import static testlib.gui.UIMap.app;
+import static org.openoffice.test.common.Testspace.*;
+import static org.openoffice.test.vcl.Tester.*;
+import static testlib.gui.AppUtil.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -45,22 +39,21 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.OpenOffice;
+import org.openoffice.test.common.FileUtil;
+import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
-import static org.openoffice.test.common.Testspace.prepareData;
-import org.openoffice.test.common.*;
+import org.openoffice.test.common.Testspace;
 
 import testlib.gui.CalcUtil;
-import testlib.gui.Log;
-import static testlib.gui.AppUtil.submitSaveDlg;
 
 public class OperationOnNewSC {
 	@Rule
-	public Log LOG = new Log();
-	
+	public Logger log = Logger.getLogger(this);
+
 	private PrintStream result = null;
-	
+
 	private String pid = null;
-	
+
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -70,9 +63,9 @@ public class OperationOnNewSC {
 		app.start();
 		result = new PrintStream(new FileOutputStream(Testspace.getFile("output/svt_sc_new.csv")));
 		HashMap<String, Object> proccessInfo = SystemUtil.findProcess(".*(soffice\\.bin|soffice.*-env).*");
-		pid = (String)proccessInfo.get("pid");
+		pid = (String) proccessInfo.get("pid");
 		result.println("Iterator,Time,Memory(KB),CPU(%)");
-		LOG.info("Result will be saved to " + Testspace.getPath("output/svt_sc_new.csv"));
+		log.info("Result will be saved to " + Testspace.getPath("output/svt_sc_new.csv"));
 	}
 
 	@After
@@ -80,16 +73,14 @@ public class OperationOnNewSC {
 		app.close();
 		result.close();
 	}
-	
+
 	@Test
 	public void operationOnNewSC() throws Exception {
-		String[][] inputStr = {{"3"},{"2"}, {"5"}, {"1"}, {"6"},{"4"}, {"10"}, {"8"}, {"9"}, {"7"}};
-		String[][] inputStr_InstantFilter = {{ "A" }, { "1" }, { "2" }, { "3" }, { "1" },
-				{ "2" }, { "3" }, { "1" }, { "2" }, { "3" } };
+		String[][] inputStr = { { "3" }, { "2" }, { "5" }, { "1" }, { "6" }, { "4" }, { "10" }, { "8" }, { "9" }, { "7" } };
+		String[][] inputStr_InstantFilter = { { "A" }, { "1" }, { "2" }, { "3" }, { "1" }, { "2" }, { "3" }, { "1" }, { "2" }, { "3" } };
 		String pic = prepareData("svt/Sunset.jpg");
 
-		for(int i = 0; i < 1000; i++)
-		{
+		for (int i = 0; i < 1000; i++) {
 			// Data Sort
 			app.dispatch("private:factory/scalc");
 			CalcUtil.selectRange("A1");
@@ -99,19 +90,19 @@ public class OperationOnNewSC {
 			SortOptionsPage.select();
 			SortOptionsPage_RangeContainsColumnLabels.uncheck();
 			SortPage.select();
-			SortPage_By1.select(1);	// "Column A"
+			SortPage_By1.select(1); // "Column A"
 			SortPage_Ascending1.check();
-			SortPage.ok();		
+			SortPage.ok();
 			sleep(5);
-			
-			//Insert Sheet
+
+			// Insert Sheet
 			app.dispatch(".uno:Insert");
 			SCAfterCurrentSheet.check();
 			SCNewSheetName.setText("Instant Filter");
 			SCInsertSheetDlg.ok();
 			sleep(5);
-			
-			//Standard Filter
+
+			// Standard Filter
 			CalcUtil.selectRange("A1");
 			typeKeys("A<down>1<down>2<down>3<down>1<down>2<down>3<down>1<down>2<down>3");
 			sleep(1);
@@ -121,8 +112,8 @@ public class OperationOnNewSC {
 			FilterValue1.setText("1");
 			StandardFilterDlg.ok();
 			sleep(5);
-			
-			//Data Validate
+
+			// Data Validate
 			app.dispatch(".uno:Insert");
 			SCAfterCurrentSheet.check();
 			SCNewSheetName.setText("Data Validate");
@@ -130,7 +121,7 @@ public class OperationOnNewSC {
 			sleep(5);
 			CalcUtil.selectRange("B2:E5");
 			sleep(2);
-			
+
 			app.dispatch(".uno:Validation");
 			SC_ValidityCriteriaTabpage.select();
 			SC_ValidityCriteriaAllowList.select("Whole Numbers");
@@ -141,22 +132,22 @@ public class OperationOnNewSC {
 			SC_ValidityErrorMessageTitle.setText("Error");
 			SC_ValidityErrorMessage.setText("Must greater than 1");
 			SC_ValidityErrorAlertTabPage.ok();
-			
+
 			CalcUtil.selectRange("B2");
 			typeKeys("0<enter>");
 			ActiveMsgBox.ok();
 			sleep(1);
-			
+
 			CalcUtil.selectRange("E5");
 			typeKeys("1<enter>");
 			ActiveMsgBox.ok();
 			sleep(1);
-			
+
 			CalcUtil.selectRange("E2");
 			typeKeys("2<enter>");
 			sleep(5);
-			
-			//Input cells, insert pics and chart
+
+			// Input cells, insert pics and chart
 			app.dispatch(".uno:Insert");
 			SCBeforeCurrentSheet.check();
 			SCNewSheetName.setText("InsertObjects");
@@ -170,25 +161,24 @@ public class OperationOnNewSC {
 			sleep(5);
 			typeKeys("<esc>");
 			sleep(5);
-			
-			//Save file and close
+
+			// Save file and close
 			String saveTo = "tempSC_New" + i + ".ods";
 			calc.menuItem("File->Save As...").select();
 			FileUtil.deleteFile(saveTo);
 			submitSaveDlg(saveTo);
-			if(ActiveMsgBox.exists())
-			{
+			if (ActiveMsgBox.exists()) {
 				ActiveMsgBox.yes();
 				sleep(2);
 			}
 			calc.menuItem("File->Close").select();
-			
+
 			HashMap<String, Object> perfData = SystemUtil.getProcessPerfData(pid);
 			String record = i + "," + System.currentTimeMillis() + "," + perfData.get("rss") + "," + perfData.get("pcpu");
-			LOG.info("Record: " + record);
+			log.info("Record: " + record);
 			result.println(record);
 			result.flush();
-			
+
 			sleep(3);
 		}
 	}

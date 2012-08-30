@@ -19,24 +19,24 @@
  * 
  *************************************************************/
 
-
-
 /**
  * 
  */
 package testcase.gui.formula.importexport;
 
-import static testlib.gui.AppUtil.*;
-import static testlib.gui.UIMap.*;
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
+import static org.openoffice.test.vcl.Tester.*;
+import static testlib.gui.AppUtil.*;
+import static testlib.gui.UIMap.*;
+
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.Ignore;
 import org.openoffice.test.common.FileUtil;
-import testlib.gui.Log;
+import org.openoffice.test.common.Logger;
 
 /**
  *
@@ -44,93 +44,100 @@ import testlib.gui.Log;
 public class CreateFormulaInDifferentWays {
 
 	@Rule
-	public Log LOG = new Log();
-	
+	public Logger log = Logger.getLogger(this);
+
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-		
+
 		// New a formula document
 		app.dispatch("private:factory/smath");
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		
+
 	}
-	
+
 	/**
 	 * Test elements window active and inactive
+	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public void testElementsWindowActive() throws Exception{
+	public void testElementsWindowActive() throws Exception {
 
 		// Check if the "View->Elements" menu is selected
 		boolean viewElements = math_ElementsWindow.exists();
 
 		// Active or inactive the Elements window
 		app.dispatch(".uno:ToolBox");
-		
+
 		assertNotSame("Elements window active/inactive failed", viewElements, math_ElementsWindow.exists());
 	}
-	
+
 	/**
 	 * Test create a formula from Elements window
+	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public void testCreateFormulaFromElementsWindow() throws Exception{
+	public void testCreateFormulaFromElementsWindow() throws Exception {
 		String saveTo = getPath("temp/" + "FormulaFromElements.odf");
 
 		// Make Elements window pop up
 		if (!math_ElementsWindow.exists()) {
 			app.dispatch(".uno:ToolBox");
 		}
-		
-		// Click a formula in Elements window and edit the formula in the commands window
+
+		// Click a formula in Elements window and edit the formula in the
+		// commands window
 		math_ElementsRelations.click();
 		math_ElementsRelationsNotEqual.click();
 		typeKeys("a");
 		app.dispatch(".uno:NextMark");
 		typeKeys("b");
 		String insertedFormula = "a <> b";
-		
+
 		// Verify if the formula is correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());	// add " "
-		
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
+																											// " "
+
 		// Save the formula
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
-		
+
 		// Close and reopen it
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 		app.dispatch(".uno:Open");
 		submitOpenDlg(saveTo);
-		math_EditWindow.waitForExistence(10, 2);	
-		
+		math_EditWindow.waitForExistence(10, 2);
+
 		// Verify if the formula still exists in the file, and correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());	// add " "
-		
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
+																											// " "
+
 		// Close all dialogs
 		app.dispatch(".uno:CloseDoc");
 	}
-	
+
 	/**
 	 * Test create a formula from right click menu in equation editor
+	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public void testCreateFormulaFromRightClickMenu() throws Exception{
+	public void testCreateFormulaFromRightClickMenu() throws Exception {
 		String saveTo = getPath("temp/" + "FormulaFromRightClickMenu.odf");
-		
-		// Right click in equation editor, choose "Functions->More->arcsin(x)", input a
+
+		// Right click in equation editor, choose "Functions->More->arcsin(x)",
+		// input a
 		math_EditWindow.rightClick(5, 5);
 		typeKeys("<down>");
 		typeKeys("<down>");
@@ -141,63 +148,69 @@ public class CreateFormulaInDifferentWays {
 		typeKeys("<enter>");
 		typeKeys("<enter>");
 		typeKeys("a");
-		sleep(2);	// If no sleep, error occur on mac
+		sleep(2); // If no sleep, error occur on mac
 		String insertedFormula = "arcsin(a)";
-		
+
 		// Verify if the formula is correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
 
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());	// add " "
-		
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
+																											// " "
+
 		// Save the formula
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
-		
+
 		// Close and reopen it
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 		app.dispatch(".uno:Open");
 		submitOpenDlg(saveTo);
-		math_EditWindow.waitForExistence(10, 2);	
-		
+		math_EditWindow.waitForExistence(10, 2);
+
 		// Verify if the formula still exists in the file, and correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());	// add " "
-				
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
+																											// " "
+
 		// Close all dialogs
 		app.dispatch(".uno:CloseDoc");
 	}
-	
+
 	/**
 	 * Test undo/redo in math
+	 * 
 	 * @throws Exception
 	 */
 	@Ignore("Bug 119077 - defect in windows only")
-	public void testUndoRedoInMath() throws Exception{
+	public void testUndoRedoInMath() throws Exception {
 
 		// Make Elements window pop up
 		if (!math_ElementsWindow.exists()) {
 			app.dispatch(".uno:ToolBox");
 		}
-		
-		// Click a formula in Elements window and edit the formula in the commands window
+
+		// Click a formula in Elements window and edit the formula in the
+		// commands window
 		math_ElementsUnaryBinary.click();
 		math_ElementsUnaryBinaryPlus.click();
-		typeKeys("a");	// "+a";
-		
+		typeKeys("a"); // "+a";
+
 		// Undo and verify if it works fine
 		app.dispatch(".uno:Undo");
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", "+<?> ", app.getClipboard());	// add " "	
-		
+		assertEquals("The inserted formula into math", "+<?> ", app.getClipboard()); // add
+																						// " "
+
 		// Redo and verify if it works fine
 		app.dispatch(".uno:Redo");
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", "+a ", app.getClipboard());	// add " "		
+		assertEquals("The inserted formula into math", "+a ", app.getClipboard()); // add
+																					// " "
 	}
 }

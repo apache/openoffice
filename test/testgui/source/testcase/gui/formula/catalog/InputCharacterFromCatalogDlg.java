@@ -19,22 +19,19 @@
  * 
  *************************************************************/
 
-
-
 /**
  * 
  */
 package testcase.gui.formula.catalog;
 
-import static testlib.gui.AppUtil.*;
-import static testlib.gui.UIMap.*;
 import static org.junit.Assert.*;
+import static testlib.gui.UIMap.*;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-
-import testlib.gui.Log;
+import org.openoffice.test.common.Logger;
 
 /**
  *
@@ -42,102 +39,132 @@ import testlib.gui.Log;
 public class InputCharacterFromCatalogDlg {
 
 	@Rule
-	public Log LOG = new Log();
-	
+	public Logger log = Logger.getLogger(this);
+
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-		
+
 		// New a formula document
-		app.dispatch("private:factory/smath");	
+		app.dispatch("private:factory/smath");
 		math_EditWindow.waitForExistence(10, 2);
-		
+
 		// Click catalog button
 		math_CatalogButton.click();
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		
+
 	}
-	
+
 	/**
 	 * Test input Greek character from Catalog->Symbols
+	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public void testInputGreekFromCatalog() throws Exception{
-		
+	public void testInputGreekFromCatalog() throws Exception {
+
 		// Select "Greek", click "Edit" button to get the selected Symbol
 		math_SymbolsDlgListbox.select(0);
 		math_SymbolsDlgEditButton.click();
 		String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
 		math_EditSymbolsDlg.ok();
-		
+
 		// Insert the selected symbol
 		math_SymbolsDlgInsertButton.click();
 		math_SymbolsDlgCloseButton.click();
-		
+
 		// Verify if the symbol is inserted successfully
 		math_EditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard());	// add "%" in the front, add " " in the end
-		
+		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard()); // add
+																															// "%"
+																															// in
+																															// the
+																															// front,
+																															// add
+																															// " "
+																															// in
+																															// the
+																															// end
+
 		// Close all dialogs
 		app.dispatch(".uno:CloseDoc");
 	}
-	
+
 	/**
 	 * Test input iGreek character from Catalog->Symbols
+	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public void testInputIGreekFromCatalog() throws Exception{
-		
+	public void testInputIGreekFromCatalog() throws Exception {
+
 		// Select "iGreek", click "Edit" button to get the selected Symbol
 		math_SymbolsDlgListbox.select(1);
 		math_SymbolsDlgEditButton.click();
 		String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
 		math_EditSymbolsDlg.ok();
-		
+
 		// Insert the selected symbol
 		math_SymbolsDlgInsertButton.click();
 		math_SymbolsDlgCloseButton.click();
-		
+
 		// Verify if the symbol is inserted successfully
 		math_EditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard());	// add "%" in the front, add " " in the end
-		
+		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard()); // add
+																															// "%"
+																															// in
+																															// the
+																															// front,
+																															// add
+																															// " "
+																															// in
+																															// the
+																															// end
+
 		// Close all dialogs
 		app.dispatch(".uno:CloseDoc");
 	}
-	
+
 	/**
 	 * Test input Special character from Catalog->Symbols
+	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public void testInputSpecialFromCatalog() throws Exception{
-		
+	public void testInputSpecialFromCatalog() throws Exception {
+
 		// Select "Special", "Insert" the default first symbol
 		math_SymbolsDlgListbox.select(2);
-		math_SymbolsDlgInsertButton.click();	
-		
+		math_SymbolsDlgInsertButton.click();
+
 		// Click "Edit" button to get the selected Symbol
 		math_SymbolsDlgEditButton.click();
 		String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
 		math_EditSymbolsDlg.ok();
 		math_SymbolsDlgCloseButton.click();
-		
+
 		// Verify if the symbol is inserted successfully
 		math_EditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard());	// add "%" in the front, add " " in the end
-		
+		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard()); // add
+																															// "%"
+																															// in
+																															// the
+																															// front,
+																															// add
+																															// " "
+																															// in
+																															// the
+																															// end
+
 		// Close all dialogs
 		app.dispatch(".uno:CloseDoc");
 	}

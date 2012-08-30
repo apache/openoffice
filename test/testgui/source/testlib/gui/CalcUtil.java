@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 package testlib.gui;
 
 import static org.openoffice.test.vcl.Tester.*;
@@ -30,13 +28,10 @@ import java.lang.reflect.Array;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-
-
-
 public class CalcUtil {
-	
+
 	private static Logger LOG = Logger.getLogger(CalcUtil.class.getName());
-	
+
 	/**
 	 * Select a range.
 	 * 
@@ -61,9 +56,10 @@ public class CalcUtil {
 		if (cell != null)
 			selectRange(cell);
 		String caption = SC_InputBar_Input.getCaption();
-		//Fix: When formulaEdit's caption is blank, the hook will return the document window's caption
+		// Fix: When formulaEdit's caption is blank, the hook will return the
+		// document window's caption
 		// So if it's document window caption, return ""
-		return caption.contains("[12479]") ? "": caption;
+		return caption.contains("[12479]") ? "" : caption;
 	}
 
 	/**
@@ -81,52 +77,52 @@ public class CalcUtil {
 		if (content.endsWith("\r\n"))
 			content = content.substring(0, content.length() - 2);
 		else if (content.endsWith("\n"))
-				content = content.substring(0, content.length() - 1);
-		
+			content = content.substring(0, content.length() - 1);
+
 		return content;
 	}
 
-
 	/**
-	 * convert the format of column number to integer 
-	 * e.g.
-	 * A -> 1
-	 * AA -> 27
-	 * AMJ -> 1024
+	 * convert the format of column number to integer e.g. A -> 1 AA -> 27 AMJ
+	 * -> 1024
+	 * 
 	 * @param no
 	 * @return
 	 */
 	public static int toIntColumnNo(String no) {
 		int len = no.length();
 		int ret = 0;
-		for(int i = 0; i < len; i++) {
+		for (int i = 0; i < len; i++) {
 			char c = no.charAt(len - i - 1);
 			ret += Math.pow(26, i) * (c - 'A' + 1);
 		}
-		
+
 		return ret;
 	}
-	
+
 	/**
-	 * Convert the format of column number to char 
+	 * Convert the format of column number to char
+	 * 
 	 * @param no
 	 * @return
 	 */
-	public static String toCharColumnNo(int no){
+	public static String toCharColumnNo(int no) {
 		String ret = "";
 		int f = 0;
 		do {
 			f = (no - 1) / 26;
 			int s = (no - 1) % 26;
-			ret = (char)('A' + s) + ret;
+			ret = (char) ('A' + s) + ret;
 			no = f;
 		} while (f != 0);
 		return ret;
 	}
-	
+
 	/**
 	 * Parse location string into integer values
-	 * @param loc e.g. A1
+	 * 
+	 * @param loc
+	 *            e.g. A1
 	 * @return
 	 */
 	public static int[] parseLocation(String loc) {
@@ -136,17 +132,19 @@ public class CalcUtil {
 			if (c >= '0' && c <= '9')
 				break;
 		}
-	
+
 		String col = loc.substring(0, i);
 		String row = loc.substring(i);
 		int sC = toIntColumnNo(col);
 		int sR = Integer.parseInt(row);
-		return new int[]{sC, sR};
+		return new int[] { sC, sR };
 	}
-	
+
 	/**
 	 * Parse range string into integer values
-	 * @param range e.g. A3:F9
+	 * 
+	 * @param range
+	 *            e.g. A3:F9
 	 * @return
 	 */
 	public static int[] parseRange(String range) {
@@ -154,7 +152,7 @@ public class CalcUtil {
 		if (dotIndex != -1) {
 			range = range.substring(dotIndex + 1);
 		}
-		
+
 		String[] locs = range.split(":");
 		int[] ret = new int[4];
 		int[] start = parseLocation(locs[0]);
@@ -168,25 +166,25 @@ public class CalcUtil {
 			ret[2] = end[0];
 			ret[3] = end[1];
 		}
-		
+
 		return ret;
 	}
 
 	/**
 	 * Get the text at the given cells. If the cell is a formula, return the
-	 * result rather than the formula.
-	 * Note:
+	 * result rather than the formula. Note:
 	 * 
-	 * @param range e.g. A3:D9
+	 * @param range
+	 *            e.g. A3:D9
 	 * @return
 	 */
 	public static String[][] getCellTexts(String range) {
 		selectRange(range);
 		int[] intRange = parseRange(range);
-		int rowCount = intRange[3]-intRange[1]+1;
-		int colCount = intRange[2]-intRange[0]+1;
+		int rowCount = intRange[3] - intRange[1] + 1;
+		int colCount = intRange[2] - intRange[0] + 1;
 		String[][] texts = new String[rowCount][colCount];
-		
+
 		app.setClipboard("$$$$");
 		typeKeys("<$copy>");
 		sleep(1);
@@ -194,7 +192,7 @@ public class CalcUtil {
 		StringTokenizer tokenizer = new StringTokenizer(text, "\"\t\n", true);
 		int state = 0;
 		String cellContent = "";
-		int r=0, c = 0;
+		int r = 0, c = 0;
 		while (tokenizer.hasMoreTokens()) {
 			String token = tokenizer.nextToken();
 			switch (state) {
@@ -212,7 +210,7 @@ public class CalcUtil {
 					cellContent = "";
 					c = 0;
 					r++;
-				} else{
+				} else {
 					cellContent += token;
 				}
 				break;
@@ -225,7 +223,7 @@ public class CalcUtil {
 				break;
 			}
 		}
-		
+
 		LOG.info("Text of range [" + range + "]:\n" + arrayToString(texts));
 		return texts;
 	}
@@ -233,12 +231,12 @@ public class CalcUtil {
 	private static String arrayToString(Object array) {
 		if (array == null)
 			return "null";
-		if (!array.getClass().isArray()) 
+		if (!array.getClass().isArray())
 			return array.toString();
-			
+
 		int len = Array.getLength(array);
 		String ret = "{";
-		for (int i= 0; i < len; i++) {
+		for (int i = 0; i < len; i++) {
 			Object el = Array.get(array, i);
 			if (el == null) {
 				ret += "null";
@@ -247,10 +245,10 @@ public class CalcUtil {
 			} else {
 				ret += "\"" + el + "\"";
 			}
-			
+
 			if (i + 1 != len)
 				ret += ",";
-			
+
 		}
 		ret += "}";
 		return ret;

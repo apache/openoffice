@@ -23,20 +23,11 @@
  * 
  */
 
-
-
 package testcase.gui.svt.sc;
 
-import static org.openoffice.test.common.Testspace.prepareData;
-import static testlib.gui.AppUtil.typeKeys;
-import static org.openoffice.test.vcl.Tester.sleep;
-import static org.openoffice.test.vcl.Tester.typeKeys;
-import static testlib.gui.AppUtil.submitOpenDlg;
-import static testlib.gui.UIMap.SCAfterCurrentSheet;
-import static testlib.gui.UIMap.SCInsertSheetDlg;
-import static testlib.gui.UIMap.SCNewSheetName;
-import static testlib.gui.UIMap.app;
-import static testlib.gui.UIMap.writer;
+import static org.openoffice.test.common.Testspace.*;
+import static org.openoffice.test.vcl.Tester.*;
+import static testlib.gui.AppUtil.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -48,20 +39,20 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.OpenOffice;
+import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 import org.openoffice.test.common.Testspace;
 
 import testlib.gui.CalcUtil;
-import testlib.gui.Log;
 
 public class OperationOnSampleFile {
 	@Rule
-	public Log LOG = new Log();
-	
+	public Logger log = Logger.getLogger(this);
+
 	private PrintStream result = null;
-	
+
 	private String pid = null;
-	
+
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -71,9 +62,9 @@ public class OperationOnSampleFile {
 		app.start();
 		result = new PrintStream(new FileOutputStream(Testspace.getFile("output/svt_sc_sample1.csv")));
 		HashMap<String, Object> proccessInfo = SystemUtil.findProcess(".*(soffice\\.bin|soffice.*-env).*");
-		pid = (String)proccessInfo.get("pid");
+		pid = (String) proccessInfo.get("pid");
 		result.println("Iterator,Time,Memory(KB),CPU(%)");
-		LOG.info("Result will be saved to " + Testspace.getPath("output/svt_sc_sample1.csv"));
+		log.info("Result will be saved to " + Testspace.getPath("output/svt_sc_sample1.csv"));
 	}
 
 	@After
@@ -81,21 +72,19 @@ public class OperationOnSampleFile {
 		app.close();
 		result.close();
 	}
-	
+
 	@Test
 	public void operationOnSampleFile() throws Exception {
 		String file = prepareData("svt/complex.ods");
 		String pic = prepareData("svt/Sunset.jpg");
-		String [][] inputStr = { { "Area", "Item", "Count" }, { "1", "2", "3" },
-				{ "4", "5", "6" }, { "7", "8", "9" }, { "10", "11", "12" }};	
-		for(int i = 0; i < 1000; i++)
-		{
+		String[][] inputStr = { { "Area", "Item", "Count" }, { "1", "2", "3" }, { "4", "5", "6" }, { "7", "8", "9" }, { "10", "11", "12" } };
+		for (int i = 0; i < 1000; i++) {
 			app.dispatch(".uno:Open");
 			submitOpenDlg(file);
 			calc.waitForExistence(20, 2);
 			sleep(2);
-			
-			//Insert Chart
+
+			// Insert Chart
 			app.dispatch(".uno:Insert");
 			SCAfterCurrentSheet.check();
 			SCNewSheetName.setText("Instant Chart");
@@ -114,8 +103,8 @@ public class OperationOnSampleFile {
 			sleep(5);
 			calc.typeKeys("<esc>");
 			sleep(5);
-			
-			//Insert Graphic and Fontwork
+
+			// Insert Graphic and Fontwork
 			app.dispatch(".uno:Insert");
 			SCAfterCurrentSheet.check();
 			SCNewSheetName.setText("Instant Graphic and fontwork");
@@ -138,26 +127,25 @@ public class OperationOnSampleFile {
 			sleep(2);
 			calc.typeKeys("<esc>");
 			sleep(2);
-			
+
 			// Close file
 			calc.menuItem("File->Close").select();
 			ActiveMsgBox.no();
 			sleep(2);
-			
+
 			HashMap<String, Object> perfData = SystemUtil.getProcessPerfData(pid);
 			String record = i + "," + System.currentTimeMillis() + "," + perfData.get("rss") + "," + perfData.get("pcpu");
-			LOG.info("Record: " + record);
+			log.info("Record: " + record);
 			result.println(record);
 			result.flush();
-			
+
 			sleep(3);
-			
+
 		}
-		
-		
+
 	}
-	public static void inputCells(String [][]inputs)
-	{
+
+	public static void inputCells(String[][] inputs) {
 		String back = "";
 		for (int i = 0; i < inputs.length; i++) {
 			calc.typeKeys(back);
