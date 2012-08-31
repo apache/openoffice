@@ -96,6 +96,10 @@ published interface XNamedRange: com::sun::star::container::XNamed
 			as defined in <type>NamedRangeFlag</type>.
 	 */
 	void setType( [in] long nType );
+	
+	string getScopeName();
+	
+	void setScopeAndRangeName( [in] string aScopeName, [in] string aRangeName );
 
 };
 
