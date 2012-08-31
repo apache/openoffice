@@ -469,5 +469,52 @@ public class UIMap {
 
 	// Fontwork
 	public static final VclDialog FontworkGalleryDlg = dialog("svx:ModalDialog:RID_SVX_MDLG_FONTWORK_GALLERY");
+	
+	public static final VclEditBox SWTableSizeColBox=editbox("sw:NumericField:DLG_INSERT_TABLE:ED_COL");
+	public static final VclEditBox SWTableSizeRowBox=editbox("sw:NumericField:DLG_INSERT_TABLE:ED_ROW");
+	public static final VclControl SWTableBackgroundColor=control("CUI_HID_BACKGROUND_CTL_BGDCOLORSET");
+	public static final VclTabPage SWTableBackground = tabpage("CUI_HID_BACKGROUND");
+	public static final VclTabPage SWTableBorder = tabpage("CUI_HID_BORDER");
+	public static final VclControl SWTableBorderLineArrange = control("CUI_HID_BORDER_CTL_PRESETS");
+	public static final VclControl SWTableProperties = control("SW_HID_FORMAT_TABLE");
+	public static final VclListBox SWTableBorderLineStyle = listbox("cui:ListBox:RID_SVXPAGE_BORDER:LB_LINESTYLE");
+	public static final VclListBox SWTableBorderLineColor = listbox("cui:ListBox:RID_SVXPAGE_BORDER:LB_LINECOLOR");
+	public static final VclEditBox SWTableSTCLeft = editbox("cui:MetricField:RID_SVXPAGE_BORDER:MF_LEFT");
+	public static final VclEditBox SWTableSTCRight = editbox("cui:MetricField:RID_SVXPAGE_BORDER:MF_RIGHT");
+	public static final VclEditBox SWTableSTCTop = editbox("cui:MetricField:RID_SVXPAGE_BORDER:MF_TOP");
+	public static final VclEditBox SWTableSTCBottom = editbox("cui:MetricField:RID_SVXPAGE_BORDER:MF_BOTTOM");
+	public static final VclButton SWTableSTC_SYNC = button("cui:CheckBox:RID_SVXPAGE_BORDER:CB_SYNC");
+	public static final VclControl SWTableShadow = control("CUI_HID_BORDER_CTL_SHADOWS");
+	public static final VclEditBox SWTableShadowSize = editbox("cui:MetricField:RID_SVXPAGE_BORDER:ED_SHADOWSIZE");
+	public static final VclListBox SWTableShadowColor = listbox("cui:ListBox:RID_SVXPAGE_BORDER:LB_SHADOWCOLOR");
+	public static final VclButton SWInsertTable_AutoFormat = button("sw:PushButton:DLG_INSERT_TABLE:BT_AUTOFORMAT");
+	public static final VclListBox SWTableAutoFormat_Listbox = listbox("sw:ListBox:DLG_AUTOFMT_TABLE:LB_FORMAT");
+	public static final VclDialog SWTableAutoFMT = dialog("SW_HID_AUTOFMT_TABLE");
+	public static final VclDialog SWTable_SetRowHeight_Dialog = dialog(".uno:SetRowHeight");
+	public static final VclField SWTable_SetRowHeight = field("sw:MetricField:DLG_ROW_HEIGHT:ED_HEIGHT");
+	public static final VclDialog SWTable_InsertRow = dialog(".uno:InsertRowDialog");
+	public static final VclEditBox SWTable_InsertRow_Column_SetNumber = editbox("cui:NumericField:DLG_INS_ROW_COL:ED_COUNT");
+	public static final VclField SWTable_SetColumnNumber = field("sw:NumericField:DLG_COL_WIDTH:ED_COL");
+	public static final VclField SWTable_SetColumnWidth = field("sw:MetricField:DLG_COL_WIDTH:ED_WIDTH");
+	public static final VclDialog SWTable_InsertColumn = dialog(".uno:InsertColumnDialog");
+	public static final VclDialog SWTable_SetColumnDialog = dialog(".uno:SetColumnWidth");
+	public static final VclDialog SWTable_CellSplitDialog = dialog("cui:ModalDialog:RID_SVX_SPLITCELLDLG");
+	public static final VclField SWTable_CellSplitNumber = field("cui:NumericField:RID_SVX_SPLITCELLDLG:ED_COUNT");
+	public static final VclButton SWTable_CellSplitHORZ_Button = button("cui:ImageRadioButton:RID_SVX_SPLITCELLDLG:RB_HORZ");
+	public static final VclButton SWTable_CellSplitVERT_Button = button("cui:ImageRadioButton:RID_SVX_SPLITCELLDLG:RB_VERT");
+	public static final VclMenuItem SWTable_SelectRowMenu=new VclMenuItem("Row->Select");
+	public static final VclMenuItem SWTable_InsertRowMenu=new VclMenuItem("Row->Insert...");
+	public static final VclMenuItem SWTable_RowHeightMenu=new VclMenuItem("Row->Height...");
+	public static final VclMenuItem SWTable_RowDleteMenu=new VclMenuItem("Row->Delete");
+	public static final VclMenuItem SWTable_ColumnWidthMenu=new VclMenuItem("Column->Width...");
+	public static final VclMenuItem SWTable_ColumnSelectMenu=new VclMenuItem("Column->Select");
+	public static final VclMenuItem SWTable_ColumnDeleteMenu=new VclMenuItem("Column->Delete");
+	public static final VclMenuItem SWTable_ColumnInsertMenu=new VclMenuItem("Column->Insert...");
+	public static final VclMenuItem SWTable_CellSplitMenu=new VclMenuItem("Cell->Split...");
+	public static final VclListBox SDTable_BACGColorListbox = listbox("cui:ListBox:RID_SVXPAGE_AREA:LB_COLOR");
+	public static final VclTabPage SDTable_BACGColorArea = tabpage("CUI_HID_AREA_AREA");
+	public static final VclTabPage SDTable_BACGColorsOption = tabpage("CUI_HID_OPTIONS_COLOR");
+	public static final VclEditBox SDTable_BACGColorsOption_Name = editbox("cui:Edit:RID_SVXPAGE_COLOR:EDT_NAME");
+	
 
 }
