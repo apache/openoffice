@@ -516,5 +516,10 @@ public class UIMap {
 	public static final VclTabPage SDTable_BACGColorsOption = tabpage("CUI_HID_OPTIONS_COLOR");
 	public static final VclEditBox SDTable_BACGColorsOption_Name = editbox("cui:Edit:RID_SVXPAGE_COLOR:EDT_NAME");
 	
-
+	public static final VclTreeListBox SD_Navigator = tree("SD_HID_SD_NAVIGATOR_TLB");
+	public static final VclButton SD_Navigator_Shape_Filter = button("SD_HID_SD_NAVIGATOR_TBI_SHAPE_FILTER");
+	public static final VclButton SD_CalloutShapes = button(".uno:CalloutShapes");
+	public static final VclButton SD_StarShapes = button(".uno:StarShapes");
+	public static final VclToolBox SD_Drawing_Toolbar = toolbox(".HelpId:toolbar");
+	
 }
