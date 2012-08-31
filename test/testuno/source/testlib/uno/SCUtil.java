@@ -526,6 +526,17 @@ public class SCUtil {
 	}
 	
 	/**
+	 * open file in Spreadsheet.
+	 * @param unoApp
+	 * @param filtpath   File path with the extension name. (e.g. "testcase/uno/sc/data/sample.xls")
+	 * @return
+	 * @throws Exception
+	 */
+	public static XSpreadsheetDocument openFile(String filePath, UnoApp app) throws Exception {
+		return (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, app.loadDocument(filePath));
+	}
+	
+	/**
 	 * Initial the filter name list
 	 * @throws Exception
 	 */
