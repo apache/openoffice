@@ -144,33 +144,24 @@
 	</target>
 
 	<target name="check.build" description="Check the build context">
-		<condition property="openoffice.archive.dir" value="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/OpenOffice/archive/install/en-US">
+		<condition property="openoffice.pack.dir" value="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/OpenOffice/archive/install/en-US">
 			<isset property="env.SRC_ROOT" />
-		</condition>
-		<condition property="openoffice.build" value="localbuild">
-			<isset property="openoffice.archive.dir" />
 		</condition>
 		<condition property="find.build.skip">
 			<or>
-				<isset property="openoffice.build" />
-				<isset property="openoffice.archive.url" />
-				<isset property="openoffice.archive.dir" />
+				<isset property="openoffice.pack.url" />
+				<isset property="openoffice.pack.dir" />
 				<isset property="openoffice.home" />
 			</or>
 		</condition>
 		<condition property="download.build.skip">
 			<or>
-				<isset property="openoffice.archive.dir" />
+				<isset property="openoffice.pack.dir" />
 				<isset property="openoffice.home" />
 			</or>
 		</condition>
 		<condition property="install.build.skip">
-			<or>
-				<isset property="openoffice.home" />
-                       	 	<not>
-					<isset property="openoffice.archive.dir" />
-				</not>
-			</or>
+            <isset property="openoffice.home" />
 		</condition>
 	</target>
 
@@ -181,60 +172,81 @@
 				<deletecharacters chars=" \t\r\n" />
 			</filterchain>
 		</loadresource>
-		<echo>Latest build: ${openoffice.build}</echo>
+        
+        <echo message="openoffice.pack.url=${openoffice.archive.url}" file="${testspace}/.temp.properties" />
+        <property file="${testspace}/.temp.properties"/>
+        <property name="openoffice.build.name" value="${openoffice.build}" />
+        <echo>#OpenOffice Build Name: ${openoffice.build.name}</echo>
+        <echo>#OpenOffice Package URL: ${openoffice.pack.url}</echo>
 	</target>
 
+    <target name="download" unless="${skip}">
+        <delete dir="${dest}" />
+        <mkdir dir="${dest}" />
+        <get src="${src}" dest="${dest}" verbose="false" usetimestamp="true" skipexisting="true" />
+    </target>
+
 	<target name="download.build" unless="download.build.skip" description="Download the specified build from the remote server">
-        <echo message="openoffice.archive.url.resolved=${openoffice.archive.url}" file="${testspace}/.temp.properties" />
-        <property file="${testspace}/.temp.properties"/>
-        <echo>Archive address: ${openoffice.archive.url.resolved}</echo>
-		<property name="openoffice.archive.dir" value="${testspace}/download/${openoffice.build}" />
-		<mkdir dir="${openoffice.archive.dir}" />
-		<get src="${openoffice.archive.url.resolved}" dest="${openoffice.archive.dir}" verbose="false" usetimestamp="true" skipexisting="true" />
+		<property name="openoffice.pack.dir" value="${testspace}/download" />
+        <property name="openoffice.pack.download.mark" value="${testspace}/download/url.txt"/>
+        <loadfile property="openoffice.pack.download.url" srcFile="${openoffice.pack.download.mark}" quiet="true" failonerror="false"/>
+        <condition property="download.build.skip" value="true" else="false">
+            <equals arg1="${openoffice.pack.download.url}" arg2="${openoffice.pack.url}"/>
+		</condition>
+        
+        <echo>#Build is Downloaded: ${download.build.skip}</echo>
+        <antcall target="download" inheritAll="false">
+            <param name="skip" value="${download.build.skip}"/>
+            <param name="src" value="${openoffice.pack.url}"/>
+            <param name="dest" value="${openoffice.pack.dir}"/>
+        </antcall>
+        <!--
+		<get src="${openoffice.pack.url}" dest="${openoffice.pack.dir}" verbose="false" usetimestamp="true" skipexisting="true" />
+        -->
+        <echo message="${openoffice.pack.url}" file="${openoffice.pack.download.mark}" />
+        <echo>#OpenOffice Package Dir: ${openoffice.pack.dir}</echo>
 	</target>
 
 	<target name="install.build" unless="install.build.skip" description="Install the build to the local">
-		<property name="openoffice.installation.dir" value="${testspace}/install/${openoffice.build}" />
-        <property name="openoffice.installation.dest" value="${testspace}/install/dest" />
-        <delete dir="${openoffice.installation.dest}"/>
-		<mkdir dir="${openoffice.installation.dest}" />
-		<unzip dest="${openoffice.installation.dest}">
-			<fileset dir="${openoffice.archive.dir}">
+		<property name="openoffice.install.dir" value="${testspace}/install/aoo" />
+        <property name="openoffice.install.temp" value="${testspace}/install/temp" />
+        <delete dir="${openoffice.install.temp}"/>
+		<mkdir dir="${openoffice.install.temp}" />
+		<unzip dest="${openoffice.install.temp}">
+			<fileset dir="${openoffice.pack.dir}">
 				<include name="**/Apache_OpenOffice*.zip" />
 			</fileset>
 		</unzip>
 		<pathconvert property="gz.files" pathsep=" " setonempty="false">
 			<path>
-				<fileset dir="${openoffice.archive.dir}" includes="Apache_OpenOffice*.gz" />
+				<fileset dir="${openoffice.pack.dir}" includes="Apache_OpenOffice*.gz" />
 			</path>
 		</pathconvert>
-		<exec dir="${openoffice.installation.dest}" executable="tar" failifexecutionfails="false">
+		<exec dir="${openoffice.install.temp}" executable="tar" failifexecutionfails="false">
 			<arg line="-zxpf ${gz.files}" />
 		</exec>
-        
-        <pathconvert property="openoffice.12.dir" pathsep=" " setonempty="false">
+        <pathconvert property="openoffice.root.dir" pathsep=" " setonempty="false">
 			<path>
-				<dirset dir="${openoffice.installation.dest}">
+				<dirset dir="${openoffice.install.temp}">
                     <include name="*"/>
                 </dirset>
 			</path>
 		</pathconvert>
-
-        <move file="${openoffice.12.dir}" tofile="${openoffice.installation.dir}"/>
-        <delete dir="${openoffice.installation.dest}"/>
-         
+        <delete dir="${openoffice.install.dir}"/>
+        <move file="${openoffice.root.dir}" tofile="${openoffice.install.dir}"/>
+        <delete dir="${openoffice.install.temp}"/>
 		<pathconvert property="openoffice.bin" pathsep=" " setonempty="false">
 			<path>
-				<fileset dir="${openoffice.installation.dir}" includes="**/*/soffice.bin" followsymlinks="false" />
+				<fileset dir="${openoffice.install.dir}" includes="**/*/soffice.bin" followsymlinks="false" />
 			</path>
 		</pathconvert>
 		<dirname property="openoffice.bin.parent" file="${openoffice.bin}" />
 		<property name="openoffice.home" location="${openoffice.bin.parent}/../" />
 		<fail unless="openoffice.home" />
-		<echo>Openoffice is installed to ${openoffice.home}</echo>
+		<echo>#Openoffice Home: ${openoffice.home}</echo>
 	</target>
 
-	<target name="run.test" depends="compile" description="Run junit">
+	<target name="run.test" depends="compile, detect.testenv" description="Run junit">
 		<tstamp>
 			<format property="output.stamp" pattern="yyMMdd.hhmm" />
 		</tstamp>
@@ -262,14 +274,13 @@
 				<path refid="uno.classpath"/>
 			</classpath>
 		</junit>
-        <property file="${openoffice.home}/program/versionrc" prefix="openoffice"/>
-        <property file="${openoffice.home}/program/version.ini" prefix="openoffice"/>
+        
 		<junitreport todir="${test.report}">
 			<fileset dir="${test.result}">
 				<include name="TEST-*.xml" />
 			</fileset>
 			<report format="frames" styledir="${junit.style.dir}" todir="${test.report}">
-				<param name="TITLE" expression="Test Build: AOO${openoffice.buildid}.r${openoffice.Revision}, OS: ${os.name}-${os.version}-${os.arch}"/>
+				<param name="TITLE" expression="${test.name}: ${openoffice.build.name}, ${test.os.name}-${test.os.version}-${test.os.arch}"/>
 			</report>
 		</junitreport>
 		<property name="test.report.index" location="${test.report}/index.html" />
@@ -279,8 +290,8 @@
 	<target name="test" depends="check.build,find.build,download.build,install.build,run.test" description="Run testing on the specified build. The build is automatically downloaded and installed according to the context.">
 		<fail message="Test Failed" if="test.failed" />
 	</target>
-	
-	<target name="detect.testenv" unless="report.test.skip">
+    
+	<target name="detect.testenv">
 		<exec outputproperty="test.os.name" executable="lsb_release" failifexecutionfails="false" os="Linux">
 			<arg line="-is" />
 		</exec>
@@ -291,11 +302,14 @@
 		<property name="test.os.version" value="${os.version}" />
 		<property name="test.os.arch" value="${os.arch}" />
 		<echo>${test.os.name}-${test.os.version}-${test.os.arch}</echo>
+        <property file="${openoffice.home}/program/versionrc" prefix="openoffice"/>
+        <property file="${openoffice.home}/program/version.ini" prefix="openoffice"/>
+        <property name="openoffice.build.name" value=""/>
 	</target>
 
 
 	<target name="report.test" unless="report.test.skip" description="Upload the testing result to report repository." depends="detect.testenv">
-		<property name="report.to" value="r${openoffice.Revision}/${test.name}/${test.os.name}-${test.os.version}-${test.os.arch}" />
+		<property name="report.to" value="${openoffice.build.name}/${test.name}/${test.os.name}-${test.os.version}-${test.os.arch}" />
 		<echo>Uploading report to ${report.repos}/${report.to}</echo>
 		<property name="report.to.temp" location="${testspace}/.temp.ouput"/>
         <delete dir="${report.to.temp}" deleteonexit="true"/>
