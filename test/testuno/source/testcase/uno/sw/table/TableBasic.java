@@ -19,7 +19,7 @@ import com.sun.star.table.*;
 import com.sun.star.frame.XStorable;
 
 
-public class testTable {
+public class TableBasic {
 
 	private static final UnoApp app = new UnoApp();
 	private XTextDocument xTextDocument=null;
