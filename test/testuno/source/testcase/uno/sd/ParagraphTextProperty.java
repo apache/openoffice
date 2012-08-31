@@ -83,7 +83,7 @@ public class ParagraphTextProperty {
 		 XPropertySet xTextPropSet = addPortion(xRectangle, "using TextFitToSize", false);
 		 xTextPropSet = addPortion(xRectangle, "and a Border distance of 2,5 cm", true);
 		 
-		 xRectangle = saveAndLoadShape(po, "com.sun.star.drawing.EllipseShape");
+		 xRectangle = saveAndLoadShape(1,0);
 		 
 		 Assert.assertEquals("TextLeftDistance is 2500", 2500, xShapePropSet.getPropertyValue("TextLeftDistance"));
 		 Assert.assertEquals("TextRightDistance is 2500", 2500, xShapePropSet.getPropertyValue("TextRightDistance"));
@@ -131,17 +131,11 @@ public class ParagraphTextProperty {
 	 * @return
 	 * @throws Exception
 	 */
-	public XShape saveAndLoadShape(Point po, String shapeType) throws Exception {
+	public XShape saveAndLoadShape(int pageIndex, int shapeIndex) throws Exception {
 		reLoadFile = saveAndReloadDoc(impressDocument,
-				"StarOffice XML (Impress)", "odp");
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
-				XDrawPagesSupplier.class, reLoadFile);
-		drawpages = drawsupplier.getDrawPages();
-		xpage = PageUtil.getDrawPageByIndex(impressDocument, 1);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
-		XShape shap = ShapeUtil.getShape(impressDocument, po,
-				"com.sun.star.drawing.EllipseShape");
-		return shap;
+				"impress8", "odp");
+		xShapes=ShapeUtil.getShapes(reLoadFile, pageIndex);
+		return  (XShape) UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
 	}
 
 	/**

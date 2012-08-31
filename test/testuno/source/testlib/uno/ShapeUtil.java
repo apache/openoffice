@@ -37,7 +37,9 @@ import com.sun.star.beans.XPropertySet;
 import com.sun.star.container.NoSuchElementException;
 import com.sun.star.container.XEnumeration;
 import com.sun.star.container.XEnumerationAccess;
-
+import com.sun.star.drawing.XDrawPage;
+import com.sun.star.drawing.XDrawPages;
+import com.sun.star.drawing.XDrawPagesSupplier;
 import com.sun.star.drawing.XShape;
 import com.sun.star.drawing.XShapes;
 
@@ -75,26 +77,6 @@ public class ShapeUtil {
 		return xShape;
 	}
 
-	/**
-	 * try to get shape according position
-	 * 
-	 * @param aPos
-	 * @return
-	 */
-	public static XShape getShape(XComponent xDrawDoc, Point aPos,
-			String sShapeType) {
-		XShape xShape = null;
-		try {
-			XMultiServiceFactory xFactory = (XMultiServiceFactory) UnoRuntime
-					.queryInterface(XMultiServiceFactory.class, xDrawDoc);
-			Object xObj = xFactory.createInstance(sShapeType);
-			xShape = (XShape) UnoRuntime.queryInterface(XShape.class, xObj);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return xShape;
-	}
 
 	/**
 	 * add text to a shape. the return value is the PropertySet of the text
@@ -186,5 +168,40 @@ public class ShapeUtil {
 				}
 			}
 		}
+	}
+	/**
+	 * Get shapes in specific page
+	 * @param impressDocument
+	 * @param pageIndex
+	 * @return
+	 * @throws Exception
+	 */
+	public static XShapes getShapes(XComponent impressDocument, int pageIndex) throws Exception{
+
+		XDrawPagesSupplier drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+				XDrawPagesSupplier.class, impressDocument);
+		XDrawPages drawpages = drawsupplier.getDrawPages();
+		XDrawPage xpage=(XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawpages.getByIndex(pageIndex));
+		XShapes xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		return xShapes;
+
+	}
+	
+	/**
+	 * Remove the specific shape in specific page
+	 * @param impressDocument
+	 * @param pageIndex
+	 * @param shapeIndex
+	 * @throws Exception
+	 */
+	public static void removeOneShape(XComponent impressDocument, int pageIndex, int shapeIndex) throws Exception{
+		XDrawPagesSupplier drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+				XDrawPagesSupplier.class, impressDocument);
+		XDrawPages drawpages = drawsupplier.getDrawPages();
+		XDrawPage xpage=(XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawpages.getByIndex(pageIndex));
+		XShapes xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		XShape xShape = (XShape) UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
+		xShapes.remove(xShape);
+
 	}
 }

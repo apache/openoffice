@@ -93,7 +93,7 @@ public class ParagraphStyle {
 		 XPropertySet xTextPropSet2 = addPortion(xRectangle, "And another text paragraph", true);
 		 xTextPropSet2.setPropertyValue("CharColor", new Integer(0xff0000));
 		 
-		 xRectangle = saveAndLoadShape(po, "com.sun.star.drawing.EllipseShape");
+		 xRectangle = saveAndLoadShape(1, 0);
 		
 
 		 Assert.assertEquals("Paragraph Left Margin is 1000",1000, xTextPropSet1.getPropertyValue("ParaLeftMargin"));
@@ -164,17 +164,11 @@ public class ParagraphStyle {
 	 * @return
 	 * @throws Exception
 	 */
-	public XShape saveAndLoadShape(Point po, String shapeType) throws Exception {
+	public XShape saveAndLoadShape(int pageIndex, int shapeIndex) throws Exception {
 		reLoadFile = saveAndReloadDoc(impressDocument,
-				"StarOffice XML (Impress)", "odp");
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
-				XDrawPagesSupplier.class, reLoadFile);
-		drawpages = drawsupplier.getDrawPages();
-		xpage = PageUtil.getDrawPageByIndex(impressDocument, 1);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
-		XShape shap = ShapeUtil.getShape(impressDocument, po,
-				"com.sun.star.drawing.EllipseShape");
-		return shap;
+				"impress8", "odp");
+		xShapes=ShapeUtil.getShapes(reLoadFile, pageIndex);
+		return  (XShape) UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
 	}
 
 	/**
