@@ -522,4 +522,6 @@ public class UIMap {
 	public static final VclButton SD_StarShapes = button(".uno:StarShapes");
 	public static final VclToolBox SD_Drawing_Toolbar = toolbox(".HelpId:toolbar");
 	
+	public static final VclWindow ImpressHandoutView = window(".uno:NotesMode");
+	
 }
