@@ -330,7 +330,7 @@ public class SheetBasicTest {
 		SCUtil.closeFile(scDocument);
 
 		// get source document URL
-		String SourcestoreUrl = Testspace.getUrl("output/" + "source" + "."
+		String SourcestoreUrl = Testspace.getUrl("output/sc/" + "source" + "."
 				+ "xls");
 
 		// New a document
