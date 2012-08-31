@@ -281,10 +281,10 @@
 	</target>
 	
 	<target name="detect.testenv" unless="report.test.skip">
-		<exec outputproperty="test.os.name" executable="lsb_release" failifexecutionfails="false" os="linux">
+		<exec outputproperty="test.os.name" executable="lsb_release" failifexecutionfails="false" os="Linux">
 			<arg line="-is" />
 		</exec>
-		<exec outputproperty="test.os.version" executable="lsb_release" failifexecutionfails="false" os="linux">
+		<exec outputproperty="test.os.version" executable="lsb_release" failifexecutionfails="false" os="Linux">
 			<arg line="-rs" />
 		</exec>
 		<property name="test.os.name" value="${os.name}" />
