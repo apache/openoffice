@@ -33,6 +33,7 @@
 	<property name="testspace" value="${env.TESTSPACE}" />
     <property name="classes" value="${testspace}/class" />
 	<property name="dist" value="." />
+	<property name="test.name" value="BVT" />
 	<property name="test.classes" value="testcase/gui/bvt/*.class" />
 	<property name="test.output" value="${testspace}/output" />
 	<property name="test.result" value="${test.output}/result" />
@@ -208,7 +209,7 @@
 			</path>
 		</pathconvert>
 		<exec dir="${openoffice.installation.dest}" executable="tar" failifexecutionfails="false">
-			<arg line="-zxf ${gz.files}" />
+			<arg line="-zxpf ${gz.files}" />
 		</exec>
         
         <pathconvert property="openoffice.12.dir" pathsep=" " setonempty="false">
@@ -278,9 +279,23 @@
 	<target name="test" depends="check.build,find.build,download.build,install.build,run.test" description="Run testing on the specified build. The build is automatically downloaded and installed according to the context.">
 		<fail message="Test Failed" if="test.failed" />
 	</target>
+	
+	<target name="detect.testenv" unless="report.test.skip">
+		<exec outputproperty="test.os.name" executable="lsb_release" failifexecutionfails="false" os="linux">
+			<arg line="-is" />
+		</exec>
+		<exec outputproperty="test.os.version" executable="lsb_release" failifexecutionfails="false" os="linux">
+			<arg line="-rs" />
+		</exec>
+		<property name="test.os.name" value="${os.name}" />
+		<property name="test.os.version" value="${os.version}" />
+		<property name="test.os.arch" value="${os.arch}" />
+		<echo>${test.os.name}-${test.os.version}-${test.os.arch}</echo>
+	</target>
 
-	<target name="report.test" unless="report.test.skip" description="Upload the testing result to report repository.">
-		<property name="report.to" value="r${openoffice.Revision}/${os.name}-${os.version}-${os.arch}" />
+
+	<target name="report.test" unless="report.test.skip" description="Upload the testing result to report repository." depends="detect.testenv">
+		<property name="report.to" value="r${openoffice.Revision}/${test.name}/${test.os.name}-${test.os.version}-${test.os.arch}" />
 		<echo>Uploading report to ${report.repos}/${report.to}</echo>
 		<property name="report.to.temp" location="${testspace}/.temp.ouput"/>
         <delete dir="${report.to.temp}" deleteonexit="true"/>
@@ -294,14 +309,15 @@
 	</target>
 
 	<target name="detect.build" depends="find.build" description="Check if new build is available. If no new build is available, the target will be failed.">
-		<loadfile property="local.build" srcFile="${testspace}/build.txt" quiet="true" failonerror="false" />
+		<property name="test.mark.file" location="${testspace}/${test.name}.build"/>
+		<loadfile property="local.build" srcFile="${test.mark.file}" quiet="true" failonerror="false" />
 		<fail message="The build has been tested! We don't want to test it twice.">
 			<condition>
 				<equals arg1="${openoffice.build}" arg2="${local.build}" trim="true" />
 			</condition>
 		</fail>
 		<mkdir dir="${testspace}" />
-		<echo file="${testspace}/build.txt">${openoffice.build}</echo>
+		<echo file="${test.mark.file}">${openoffice.build}</echo>
 	</target>
 
 	<target name="routine.test" depends="detect.build,download.build,install.build,run.test,report.test" description="Periodically run testing.">
