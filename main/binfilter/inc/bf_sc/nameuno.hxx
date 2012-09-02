@@ -106,6 +106,11 @@ public:
 	virtual sal_Int32		SAL_CALL getType() throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL	setType( sal_Int32 nType ) throw(::com::sun::star::uno::RuntimeException);
 
+    virtual ::rtl::OUString SAL_CALL getScopeName(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setScopeAndRangeName( const ::rtl::OUString& aScopeName,
+                                                const ::rtl::OUString& aRangeName )
+                                throw (::com::sun::star::uno::RuntimeException);
+
 							// XNamed
 	virtual ::rtl::OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL	setName( const ::rtl::OUString& aName )
@@ -196,6 +201,25 @@ public:
 								throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL	outputList( const ::com::sun::star::table::CellAddress& aOutputPosition )
 								throw(::com::sun::star::uno::RuntimeException);
+
+    virtual void SAL_CALL addNewByScopeName( const ::rtl::OUString& aScopeName,
+                                             const ::rtl::OUString& aRangeName,
+                                             const ::rtl::OUString& aContent,
+                                             const ::com::sun::star::table::CellAddress& aPosition, ::sal_Int32 nType )
+                                throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL removeByScopeName( const ::rtl::OUString& aScopeName,
+                                             const ::rtl::OUString& aRangeName )
+                                throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL hasByScopeName( const ::rtl::OUString& aScopeName,
+                                                const ::rtl::OUString& aRangeName )
+                                throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getByScopeName( const ::rtl::OUString& aScopeName,
+                                                                const ::rtl::OUString& aRangeName )
+                                throw (::com::sun::star::container::NoSuchElementException,
+                                       ::com::sun::star::lang::WrappedTargetException,
+                                       ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::RangeScopeName > SAL_CALL getElementScopeNames(  )
+                                throw (::com::sun::star::uno::RuntimeException);
 
 							// XNameAccess
 	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
