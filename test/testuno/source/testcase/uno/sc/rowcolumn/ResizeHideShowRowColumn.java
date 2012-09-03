@@ -20,7 +20,6 @@ import com.sun.star.beans.XPropertySet;
 import com.sun.star.table.XCellRange;
 import com.sun.star.frame.XModel;
 import com.sun.star.frame.XController;
-import com.sun.star.frame.XStorable;
 import com.sun.star.sheet.XSpreadsheetView;
 
 
@@ -74,9 +73,6 @@ public void testResizeColumn() throws Exception {
     PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aColumnObj);
     
     //Verify the default values of specified column A1
-    int expectedDefaultWidth = 2267;
-    
-    assertEquals("Verify default width value is 2267.", expectedDefaultWidth, PropSet.getPropertyValue("Width"));
     assertTrue("Verify column is visible as default.",  (Boolean) PropSet.getPropertyValue("IsVisible"));
     
     //Resize width of column A1 to "6001"
@@ -169,9 +165,6 @@ public void testResizeRow() throws Exception {
     PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj );
     
     //Verify the default values of specified Row 1
-    int expectedDefaultHeight = 453;
-    
-    assertEquals("Verify default width value is 453.", expectedDefaultHeight, PropSet.getPropertyValue("Height"));
     assertTrue("Verify column is visible as default.",  (Boolean) PropSet.getPropertyValue("IsVisible"));
 
     //Resize Height of Row 1 to "5001"
@@ -227,22 +220,8 @@ public void testResizeRow() throws Exception {
     PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 
     //Verify the values of specified Row 1 after resize
-    assertEquals("Verify current width value is 5001 after hide it.", expectedHeight, PropSet.getPropertyValue("Height"));
+    assertEquals("Verify current height value is 5001 after hide it.", expectedHeight, PropSet.getPropertyValue("Height"));
     assertFalse("Verify column is invisible.",  (Boolean) PropSet.getPropertyValue("IsVisible"));
-
-    }
-
-/* Save file after open file.
-* 
-* @param xSpreadsheetDocument
-* @throws Exception
-*/
-public static void save(XSpreadsheetDocument xSpreadsheetDocument)
-		throws Exception {
-
-	XStorable scStorable = (XStorable) UnoRuntime.queryInterface(
-			XStorable.class, xSpreadsheetDocument);
-	scStorable.store();
 
     }
 
