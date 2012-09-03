@@ -56,7 +56,7 @@
 	</target>
 
 	<target name="testcommon.compile" depends="testcommon.init, prepare.junit">
-		<javac destdir="${classes}" debug="on" source="1.6" includeantruntime="false">
+		<javac destdir="${classes}" debug="on" source="1.6" encoding="utf-8" includeantruntime="false">
 			<src path="testcommon/source"/>
 			<classpath>
 				<path refid="junit.classpath"/>
@@ -71,17 +71,11 @@
 				<exclude name="**/*.java" />
 			</fileset>
 		</copy>
-		<copy includeemptydirs="false" todir="${classes}">
-			<fileset dir="testgui/data">
-				<exclude name="**/*.java" />
-			</fileset>
-		</copy>
 	</target>
 
 	<target name="testgui.compile" depends="testgui.init, prepare.junit">
-		<javac destdir="${classes}" debug="on" source="1.6" includeantruntime="false">
+		<javac destdir="${classes}" debug="on" source="1.6" encoding="utf-8" includeantruntime="false">
 			<src path="testgui/source"/>
-			<src path="testgui/data"/>
 			<classpath>
 				<pathelement location="${classes}" />
 				<path refid="junit.classpath"/>
@@ -107,7 +101,7 @@
 				<include name="**/jurt.jar" />
 			</fileset>
 		</path>
-		<javac destdir="${classes}" debug="on" source="1.6" includeantruntime="false">
+		<javac destdir="${classes}" debug="on" source="1.6" encoding="utf-8" includeantruntime="false">
 			<src path="testuno/source"/>
 			<classpath>
 				<pathelement location="${classes}" />
@@ -270,6 +264,8 @@
 			<formatter type="xml" />
 			<classpath>
 				<pathelement location="${classes}" />
+                <pathelement location="testgui/data" />
+                <pathelement location="testuno/data" />
 				<path refid="junit.classpath"/>
 				<path refid="uno.classpath"/>
 			</classpath>

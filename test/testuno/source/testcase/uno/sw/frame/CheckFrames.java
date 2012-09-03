@@ -49,7 +49,7 @@ public class CheckFrames {
 
 	@Test(expected = NoSuchElementException.class)
 	public void testLoadTextFrame() throws Exception {
-		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.prepareData("testcase/uno/sw/CheckFlies.odt")));
+		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.prepareData("uno/sw/CheckFlies.odt")));
 		XTextFramesSupplier xTFS = UnoRuntime.queryInterface(XTextFramesSupplier.class, document);
 		String[] expectedNames = { "Frame1", "Frame2" };
 		String[] expectedContents = { "PageBoundFrame", "ParaBoundFrame" };

@@ -43,8 +43,8 @@ public class DocumentTest {
 		temp.mkdirs();
 		
 		//copy sample file to temp folder
-		String originalFilePath = prepareData("testcase/uno/sw/DocumentTest.odt");	
-		String originalTemplatePath = prepareData("testcase/uno/sw/DocumentTest.ott");	
+		String originalFilePath = prepareData("uno/sw/DocumentTest.odt");	
+		String originalTemplatePath = prepareData("uno/sw/DocumentTest.ott");	
 		workingFilePath = temp + "/DocumentTest.odt";
 		workingTemplatePath = temp + "/DocumentTest.ott";
 		FileUtil.copyFile(new File(originalFilePath), new File(workingFilePath));	

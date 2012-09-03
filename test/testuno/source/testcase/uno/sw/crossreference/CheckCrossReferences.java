@@ -61,7 +61,7 @@ public class CheckCrossReferences {
 	@Before
 	public void setUpDocument() throws Exception {
 		app.start();
-		document = UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.prepareData("testcase/uno/sw/CheckCrossReferences.odt")));
+		document = UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.prepareData("uno/sw/CheckCrossReferences.odt")));
 	}
 
 	@After

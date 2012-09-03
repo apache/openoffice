@@ -40,7 +40,7 @@ public class CharacterHyperlink {
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		xTextCursor.gotoStart(false);
 		xTextCursor.goRight((short) 102, true);
-		xCursorProps.setPropertyValue("HyperLinkURL", FileUtil.getUrl(Testspace.prepareData("testcase/uno/sw/puretext/Desert.jpg")));
+		xCursorProps.setPropertyValue("HyperLinkURL", FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("HyperLinkTarget","picture");
 		xCursorProps.setPropertyValue("HyperLinkName","testCharacterHyperlink");
 		
@@ -70,7 +70,7 @@ public class CharacterHyperlink {
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify set property
-		assertEquals("assert character hyperlink URL",FileUtil.getUrl(Testspace.prepareData("testcase/uno/sw/puretext/Desert.jpg")),xCursorProps_assert_odt.getPropertyValue("HyperLinkURL"));
+		assertEquals("assert character hyperlink URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_assert_odt.getPropertyValue("HyperLinkURL"));
 		assertEquals("assert character hyperlink target name","picture",xCursorProps_assert_odt.getPropertyValue("HyperLinkTarget"));
 		assertEquals("assert character hyperlink name","testCharacterHyperlink",xCursorProps_assert_odt.getPropertyValue("HyperLinkName"));
 		
@@ -78,7 +78,7 @@ public class CharacterHyperlink {
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify set property
-		assertEquals("assert character hyperlink URL",FileUtil.getUrl(Testspace.prepareData("testcase/uno/sw/puretext/Desert.jpg")),xCursorProps_assert_doc.getPropertyValue("HyperLinkURL"));
+		assertEquals("assert character hyperlink URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_assert_doc.getPropertyValue("HyperLinkURL"));
 		assertEquals("assert character hyperlink target name","picture",xCursorProps_assert_doc.getPropertyValue("HyperLinkTarget"));
 		assertEquals("assert character hyperlink name","testCharacterHyperlink",xCursorProps_assert_doc.getPropertyValue("HyperLinkName"));
 	}

@@ -255,7 +255,7 @@ public class LongRun {
 	 */
 	public void saveNewDrawing(String filename) {
 		String saveTo = getPath("temp/" + filename);
-		String bmp_green = prepareData("pure_green_64x64.bmp");
+		String bmp_green = prepareData("image/green_64x64.bmp");
 
 		// Create a new drawing document
 		writer.menuItem("File->New->Drawing").select();

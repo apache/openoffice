@@ -151,8 +151,8 @@ public class BasicFunctionTest {
 
 	@Test
 	public void testInsertPictureInDocument() throws Exception {
-		String bmp_green = prepareData("pure_green_64x64.bmp");
-		String bmp_red = prepareData("pure_red_64x64.bmp");
+		String bmp_green = prepareData("image/green_256x256.bmp");
+		String bmp_red = prepareData("image/red_256x256.bmp");
 
 		// Create a new text document
 		app.dispatch("private:factory/swriter");
@@ -162,8 +162,8 @@ public class BasicFunctionTest {
 		writer.click(400, 400);
 		app.dispatch(".uno:InsertGraphic");
 		submitOpenDlg(bmp_green);
-		sleep(3);
-		writer.click(0.5, 0.5);
+		sleep(2);
+		writer.click(10,200);
 		sleep(1);
 
 		// Verify if the picture is inserted successfully
@@ -174,8 +174,8 @@ public class BasicFunctionTest {
 		// insert another picture
 		app.dispatch(".uno:InsertGraphic");
 		submitOpenDlg(bmp_red);
-		sleep(3);
-		writer.click(0.5, 0.5);
+		sleep(2);
+		writer.click(10, 200);
 		sleep(1);
 		// Verify if the picture is inserted successfully
 		rectangle = GraphicsUtil.findRectangle(writer.getScreenRectangle(), 0xFFFF0000);
@@ -184,8 +184,8 @@ public class BasicFunctionTest {
 
 	@Test
 	public void testInsertPictureInSpreadsheet() throws Exception {
-		String bmp_green = prepareData("pure_green_64x64.bmp");
-		String bmp_red = prepareData("pure_red_64x64.bmp");
+		String bmp_green = prepareData("image/green_256x256.bmp");
+		String bmp_red = prepareData("image/red_256x256.bmp");
 
 		// Create a new text document
 		app.dispatch("private:factory/scalc");
@@ -217,8 +217,8 @@ public class BasicFunctionTest {
 
 	@Test
 	public void testInsertPictureInPresentation() throws Exception {
-		String bmp_green = prepareData("pure_green_64x64.bmp");
-		String bmp_red = prepareData("pure_red_64x64.bmp");
+		String bmp_green = prepareData("image/green_256x256.bmp");
+		String bmp_red = prepareData("image/red_256x256.bmp");
 
 		// Create a new text document
 		app.dispatch("private:factory/simpress?slot=6686");
