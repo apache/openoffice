@@ -54,7 +54,7 @@ public class CheckDateTimeField {
 	
 
 	
-	private String tempPath = "testcase/uno/sw/temp/" ;
+	private String tempPath = "uno/sw/temp/" ;
 	private String tempFileName =  String.valueOf(System.currentTimeMillis());
 	private static final UnoApp app = new UnoApp();
 	

@@ -32,6 +32,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
+import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
 import testlib.gui.CalcUtil;
@@ -62,6 +63,7 @@ public class Fitler {
 	 * Verify 2+ won't be treated as 2
 	 */
 	@Ignore("Bug 120076")
+	@Test
 	public void testAutoFilterWithPlusSign() {
 		String expect = "2+";
 		CalcUtil.selectRange("A1");

@@ -34,6 +34,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
+import org.junit.Test;
 import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 
@@ -65,6 +66,7 @@ public class DataPivotTable {
 	 * Verify copy and paste Data Pilot Table
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testCopyPasteDataPilotTable() {
 		// Open the sample file
 		String file = prepareData("source_data01.ods");
@@ -148,6 +150,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testDataPilotAddFieldsAutoUpdate() {
 		// open the sample file Create DataPilotTable and verify the content
 		String file = prepareData("source_data01.ods");
@@ -219,6 +222,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testDataPilotAddFieldsManualUpdate() {
 		// open the sample file Create DataPilotTable and verify the content
 		String file = prepareData("source_data01.ods");
@@ -313,6 +317,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testDataPilotChangeDataFieldOptionAutoUpdate() {
 		// open the sample file Create DataPilotTable and verify the content
 		String file = prepareData("source_data01.ods");
@@ -438,6 +443,7 @@ public class DataPivotTable {
 	 * Verify that Verify the Drag/Move function of Grouped field
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testDragMoveFunctionOfGroupedField() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -519,6 +525,7 @@ public class DataPivotTable {
 	 * source range.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testHideShowPanel() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -613,6 +620,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testMoveFieldInSameAreaManualUpdate() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -716,6 +724,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testMoveFieldToOtherAreaAutoUpdate() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -796,6 +805,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testMoveFieldToOtherAreaDiscardChange() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -885,6 +895,7 @@ public class DataPivotTable {
 	 * DataPilot table exist in the larger range, there will pop a warning.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testMoveTableNarrowSpaceToShowTheTable() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -954,6 +965,7 @@ public class DataPivotTable {
 	 * Verify the data pilot result table refresh after source data changed
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testOneMRowDataPilotRefresh() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -1014,6 +1026,7 @@ public class DataPivotTable {
 	 * on panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testRemoveFieldsDiscardChange() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -1101,6 +1114,7 @@ public class DataPivotTable {
 	 * Verify the Remove function of Grouped field
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testRemoveFunctionOfGroupedField() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -1170,6 +1184,7 @@ public class DataPivotTable {
 	 * on panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testRenameFieldAutoUpdate() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -1285,6 +1300,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testSortFunctionInGroupedField() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -1374,6 +1390,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testSubtotalsFunctionInGroupedField() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();
@@ -1518,6 +1535,7 @@ public class DataPivotTable {
 	 * panel.
 	 */
 	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Test
 	public void testTopNFunctionInGroupedField() {
 		String file = prepareData("source_data01.ods");
 		startcenter.menuItem("File->Open...").select();

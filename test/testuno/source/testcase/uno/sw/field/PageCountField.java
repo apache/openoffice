@@ -48,11 +48,11 @@ public class PageCountField {
 	private static final UnoApp app = new UnoApp();
 	private static XTextDocument odtDocument = null;
 	private static XTextDocument docDocument = null;
-	private  static String odtSample = "testcase/uno/sw/field/PageCountField.odt";
-	private static String docSample = "testcase/uno/sw/field/PageCountField.doc";
+	private  static String odtSample = "uno/sw/field/PageCountField.odt";
+	private static String docSample = "uno/sw/field/PageCountField.doc";
 	
-	private  static String odtSaveAsDocSample = "testcase/uno/sw/field/PageCountFieldNewSave.doc";
-	private static String docSaveAsODTSample = "testcase/uno/sw/field/PageCountFieldNewSave.odt";
+	private  static String odtSaveAsDocSample = "uno/sw/field/PageCountFieldNewSave.doc";
+	private static String docSaveAsODTSample = "uno/sw/field/PageCountFieldNewSave.odt";
 
 	@Before
 	public void setUpDocument() throws Exception {
