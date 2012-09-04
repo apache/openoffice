@@ -2723,7 +2723,13 @@ bool SwWW8ImplReader::ReadChar(long nPosCp, long nCpOfs)
             break;
         case 0x15:
             if( !bSpec )        // Juristenparagraph
-                cInsert = '\xa7';
+            {
+                cp_set::iterator aItr = maTOXEndCps.find((WW8_CP)nPosCp);
+	         if (aItr == maTOXEndCps.end())
+                    cInsert = '\xa7';
+	         else
+		      maTOXEndCps.erase(aItr);
+            }
             break;
         case 0x9:
             cInsert = '\x9';    // Tab
@@ -3108,7 +3114,23 @@ bool SwWW8ImplReader::ReadText(long nStartCp, long nTextLen, ManTypes nType)
         // create a new txtnode and join the two paragraphs together
 
         if (bStartLine && !pPreviousNode) // Zeilenende
-            AppendTxtNode(*pPaM->GetPoint());
+        {
+            bool bSplit = true;
+            if (mbCareFirstParaEndInToc)
+            {
+                mbCareFirstParaEndInToc = false;
+                if (pPaM->End() && pPaM->End()->nNode.GetNode().GetTxtNode() &&  pPaM->End()->nNode.GetNode().GetTxtNode()->Len() == 0)
+                    bSplit = false;
+            }
+            if (mbCareLastParaEndInToc)
+            {
+                mbCareLastParaEndInToc = false;
+                if (pPaM->End() && pPaM->End()->nNode.GetNode().GetTxtNode() &&  pPaM->End()->nNode.GetNode().GetTxtNode()->Len() == 0)
+                    bSplit = false;
+            }
+            if (bSplit)
+                AppendTxtNode(*pPaM->GetPoint());
+        }
 
         if (pPreviousNode && bStartLine)
         {
@@ -3273,6 +3295,9 @@ SwWW8ImplReader::SwWW8ImplReader(sal_uInt8 nVersionPara, SvStorage* pStorage,
     , mbLoadingTOCCache(false)
     , mbLoadingTOCHyperlink(false)
     , mpPosAfterTOC(0)
+    , mbCareFirstParaEndInToc(false)
+    , mbCareLastParaEndInToc(false)
+    , maTOXEndCps()
 {
     pStrm->SetNumberFormatInt( NUMBERFORMAT_INT_LITTLEENDIAN );
     nWantedVersion = nVersionPara;
@@ -3594,11 +3619,11 @@ void wwSectionManager::InsertSegments()
         bool bInsertSection = (aIter != aStart) ? (aIter->IsContinous() &&  bThisAndPreviousAreCompatible): false;
         bool bInsertPageDesc = !bInsertSection;
         bool bProtected = SectionIsProtected(*aIter); // do we really  need this ?? I guess I have a different logic in editshell which disales this...
-	if (bUseEnhFields && mrReader.pWDop->fProtEnabled && aIter->IsNotProtected()) {
-	    // here we have the special case that the whole document is protected, with the execption of this section.
-	    // I want to address this when I do the section rework, so for the moment we disable the overall protection then...
-	    mrReader.rDoc.set(IDocumentSettingAccess::PROTECT_FORM, false );
-	}
+        if (bUseEnhFields && mrReader.pWDop->fProtEnabled && aIter->IsNotProtected()) {
+            // here we have the special case that the whole document is protected, with the execption of this section.
+            // I want to address this when I do the section rework, so for the moment we disable the overall protection then...
+            mrReader.rDoc.set(IDocumentSettingAccess::PROTECT_FORM, false );
+        }
 
 
         if (bInsertPageDesc)

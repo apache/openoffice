@@ -789,6 +789,9 @@ struct WW8PostProcessAttrsInfo
 //-----------------------------------------
 //            Storage-Reader
 //-----------------------------------------
+typedef std::set<WW8_CP> cp_set;
+
+
 class SwWW8ImplReader
 {
 private:
@@ -1097,6 +1100,9 @@ private:
     // a document position recorded the after-position of TOC section, managed by Read_F_TOX() and End_Field()
     SwPaM* mpPosAfterTOC;
 
+    bool mbCareFirstParaEndInToc;
+    bool mbCareLastParaEndInToc;
+    cp_set maTOXEndCps;
 //---------------------------------------------
 
     const SprmReadInfo& GetSprmReadInfo(sal_uInt16 nId) const;
