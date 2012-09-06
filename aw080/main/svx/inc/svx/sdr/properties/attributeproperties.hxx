@@ -37,6 +37,9 @@ namespace sdr
 		class SVX_DLLPUBLIC AttributeProperties : public DefaultProperties, public SfxListener
 		{
         private:
+            // core to set parent at SfxItemSet and to execute the hard attribute computations
+            void ImpSetParentAtSfxItemSet(bool bDontRemoveHardAttr);
+
 			// add style sheet, do all the necessary handling
 			void ImpAddStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr);
 
@@ -66,13 +69,17 @@ namespace sdr
 			// constructor for copying, but using new object
 			AttributeProperties(const AttributeProperties& rProps, SdrObject& rObj);
 
-			// Clone() operator, normally just calls the local copy constructor
-			virtual BaseProperties& Clone(SdrObject& rObj) const;
-
 			// destructor
 			virtual ~AttributeProperties();
 			
-			// set a new StyleSheet and broadcast
+			// Clone() operator, normally just calls the local copy constructor
+			virtual BaseProperties& Clone(SdrObject& rObj) const;
+
+			// Get the local ItemSet. This directly returns the local ItemSet of the object. No
+			// merging of ItemSets is done for e.g. Group objects.
+			virtual const SfxItemSet& GetObjectItemSet() const;
+
+            // set a new StyleSheet and broadcast
 			virtual void SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr);
 
 			// get the installed StyleSheet

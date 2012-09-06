@@ -2009,11 +2009,11 @@ bool ImpEdgeHdl::IsHorzDrag() const
 	    }
 
 		SdrEdgeKind eEdgeKind = ((SdrEdgeKindItem&)(pEdge->GetObjectItem(SDRATTR_EDGEKIND))).GetValue();
-		const SdrEdgeInfoRec& rInfo = pEdge->aEdgeInfo;
+		const SdrEdgeInfoRec& rInfo = pEdge->maEdgeInfo;
 
 		if(SDREDGE_ORTHOLINES == eEdgeKind || SDREDGE_BEZIER == eEdgeKind) 
 		{
-			return !rInfo.ImpIsHorzLine(eLineCode, *pEdge->pEdgeTrack);
+			return !rInfo.ImpIsHorzLine(eLineCode, pEdge->maEdgeTrack.count());
 		}
 		else if(SDREDGE_THREELINES == eEdgeKind) 
 		{

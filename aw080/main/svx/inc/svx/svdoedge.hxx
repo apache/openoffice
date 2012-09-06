@@ -26,7 +26,8 @@
 
 #include <svx/svdotext.hxx>
 #include <svx/svdglue.hxx>
-#include "svx/svxdllapi.h"
+#include <svx/svxdllapi.h>
+#include <basegfx/polygon/b2dpolygon.hxx>
 
 //************************************************************
 //   Vorausdeklarationen
@@ -34,10 +35,7 @@
 
 class SdrDragMethod;
 class SdrView;
-
-namespace sdr {	namespace properties {
-	class ConnectorProperties;
-}}
+namespace sdr {	namespace properties { class ConnectorProperties; }}
 
 //************************************************************
 //   Hilfsklasse SdrObjConnection
@@ -51,18 +49,14 @@ private:
 	friend class				SdrCreateView;
 
 protected:
-	Point						aObjOfs;       // Wird beim Draggen eines Knotens gesetzt
-	SdrObject*					pObj;          // Referenziertes Objekt
-	long						nXDist;        // Hor. Objektabstand wenn bXDistOvr=true
-	long						nYDist;        // Vert. Objektabstand wenn bYDistOvr=true
-	sal_uInt16						nConId;        // Konnektornummer
+	basegfx::B2DPoint			maObjOfs;       // Wird beim Draggen eines Knotens gesetzt
+	SdrObject*					mpConnectedSdrObject;          // Referenziertes Objekt
+	sal_uInt16				    mnConnectorId;        // Konnektornummer
 
 	// bitfield
-	bool						bBestConn : 1;   // true= es wird der guenstigste Konnektor gesucht
-	bool						bBestVertex : 1; // true= es wird der guenstigste Scheitelpunkt zum konnekten gesucht
-	bool						bXDistOvr : 1;   // true= Hor. Objektabstand wurde gedragt (Overwrite)
-	bool						bYDistOvr : 1;   // true= Vert. Objektabstand wurde gedragt (Overwrite)
-	bool						bAutoVertex : 1; // AutoConnector am Scheitelpunkt nCon
+	bool						mbBestConnection : 1;   // true= es wird der guenstigste Konnektor gesucht
+	bool						mbBestVertex : 1; // true= es wird der guenstigste Scheitelpunkt zum konnekten gesucht
+	bool						mbAutoVertex : 1; // AutoConnector am Scheitelpunkt nCon
 
 public:
 	SVX_DLLPUBLIC ~SdrObjConnection();
@@ -71,16 +65,16 @@ public:
 	void ResetVars();
 	bool TakeGluePoint(SdrGluePoint& rGP, bool bSetAbsolutePos) const;
 
-	inline void SetBestConnection( bool rB ) { bBestConn = rB; };
-	inline void SetBestVertex( bool rB ) { bBestVertex = rB; };
-	inline void SetAutoVertex( bool rB ) { bAutoVertex = rB; };
-	inline void SetConnectorId( sal_uInt16 nId ) { nConId = nId; };
+	inline void SetBestConnection( bool rB ) { mbBestConnection = rB; };
+	inline void SetBestVertex( bool rB ) { mbBestVertex = rB; };
+	inline void SetAutoVertex( bool rB ) { mbAutoVertex = rB; };
+	inline void SetConnectorId( sal_uInt16 nId ) { mnConnectorId = nId; };
 
-	inline bool IsBestConnection() const { return bBestConn; };
-	inline bool IsBestVertex() const { return bBestVertex; };
-	inline bool IsAutoVertex() const { return bAutoVertex; };
-	inline sal_uInt16 GetConnectorId() const { return nConId; };
-	inline SdrObject* GetObject() const { return pObj; }
+	inline bool IsBestConnection() const { return mbBestConnection; };
+	inline bool IsBestVertex() const { return mbBestVertex; };
+	inline bool IsAutoVertex() const { return mbAutoVertex; };
+	inline sal_uInt16 GetConnectorId() const { return mnConnectorId; };
+	inline SdrObject* GetObject() const { return mpConnectedSdrObject; }
 };
 
 //************************************************************
@@ -95,18 +89,18 @@ public:
 	// Die 5 Distanzen werden beim draggen bzw. per SetAttr gesetzt und von
 	// ImpCalcEdgeTrack ausgewertet. Per Get/SetAttr/Get/SetStyleSh werden
 	// jedoch nur 0-3 longs transportiert.
-	Point						aObj1Line2;
-	Point						aObj1Line3;
-	Point						aObj2Line2;
-	Point						aObj2Line3;
-	Point						aMiddleLine;
+	basegfx::B2DPoint			aObj1Line2;
+	basegfx::B2DPoint			aObj1Line3;
+	basegfx::B2DPoint			aObj2Line2;
+	basegfx::B2DPoint			aObj2Line3;
+	basegfx::B2DPoint			aMiddleLine;
 
 	// Nachfolgende Werte werden von ImpCalcEdgeTrack gesetzt
 	long						nAngle1;           // Austrittswinkel am Obj1
 	long						nAngle2;           // Austrittswinkel am Obj2
-	sal_uInt16						nObj1Lines;        // 1..3
-	sal_uInt16						nObj2Lines;        // 1..3
-	sal_uInt16						nMiddleLine;       // 0xFFFF=keine, sonst Punktnummer des Linienbeginns
+	sal_uInt16					nObj1Lines;        // 1..3
+	sal_uInt16					nObj2Lines;        // 1..3
+	sal_uInt16					nMiddleLine;       // 0xFFFF=keine, sonst Punktnummer des Linienbeginns
 	char						cOrthoForm;        // Form des Ortho-Verbindes, z.B. 'Z','U',I','L','S',...
 
 	SdrEdgeInfoRec()
@@ -118,12 +112,12 @@ public:
 		cOrthoForm(0)
 	{}
 
-	Point& ImpGetLineVersatzPoint(SdrEdgeLineCode eLineCode);
-	const Point& ImpGetLineVersatzPoint(SdrEdgeLineCode eLineCode) const { return ((SdrEdgeInfoRec*)this)->ImpGetLineVersatzPoint(eLineCode); }
-	sal_uInt16 ImpGetPolyIdx(SdrEdgeLineCode eLineCode, const XPolygon& rXP) const;
-	bool ImpIsHorzLine(SdrEdgeLineCode eLineCode, const XPolygon& rXP) const;
-	void ImpSetLineVersatz(SdrEdgeLineCode eLineCode, const XPolygon& rXP, long nVal);
-	long ImpGetLineVersatz(SdrEdgeLineCode eLineCode, const XPolygon& rXP) const;
+	basegfx::B2DPoint& ImpGetLineVersatzPoint(SdrEdgeLineCode eLineCode);
+	const basegfx::B2DPoint& ImpGetLineVersatzPoint(SdrEdgeLineCode eLineCode) const { return const_cast< SdrEdgeInfoRec* >(this)->ImpGetLineVersatzPoint(eLineCode); }
+	sal_uInt16 ImpGetPolyIdx(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount) const;
+	bool ImpIsHorzLine(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount) const;
+	void ImpSetLineVersatz(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount, long nVal);
+	long ImpGetLineVersatz(SdrEdgeLineCode eLineCode, sal_uInt32 nPointCount) const;
 };
 
 //************************************************************
@@ -133,12 +127,12 @@ public:
 class SdrEdgeObjGeoData : public SdrObjGeoData
 {
 public:
-	SdrObjConnection			aCon1;  // Verbindungszustand des Linienanfangs
-	SdrObjConnection			aCon2;  // Verbindungszustand des Linienendes
-	XPolygon*					pEdgeTrack;
-	sal_Bool					bEdgeTrackDirty;// true=Verbindungsverlauf muss neu berechnet werden.
-	sal_Bool					bEdgeTrackUserDefined;
-	SdrEdgeInfoRec				aEdgeInfo;
+	SdrObjConnection			maCon1;  // Verbindungszustand des Linienanfangs
+	SdrObjConnection			maCon2;  // Verbindungszustand des Linienendes
+	basegfx::B2DPolygon         maEdgeTrack;
+	bool	    				mbEdgeTrackDirty;// true=Verbindungsverlauf muss neu berechnet werden.
+	bool    					mbEdgeTrackUserDefined;
+	SdrEdgeInfoRec				maEdgeInfo;
 
 	SdrEdgeObjGeoData();
 	virtual ~SdrEdgeObjGeoData();
@@ -161,41 +155,36 @@ protected:
 	virtual sdr::contact::ViewContact* CreateObjectSpecificViewContact();
 	virtual sdr::properties::BaseProperties* CreateObjectSpecificProperties();
 
-    SdrObjConnection			aCon1;  // Verbindungszustand des Linienanfangs
-	SdrObjConnection			aCon2;  // Verbindungszustand des Linienendes
+    SdrObjConnection			maCon1;  // Verbindungszustand des Linienanfangs
+	SdrObjConnection			maCon2;  // Verbindungszustand des Linienendes
 
-	XPolygon*					pEdgeTrack;
-	sal_uInt16					nNotifyingCount; // Verrieglung
-	SdrEdgeInfoRec				aEdgeInfo;
+	basegfx::B2DPolygon         maEdgeTrack;
+	SdrEdgeInfoRec				maEdgeInfo;
 
 	// bitfield
-	bool						bEdgeTrackDirty : 1; // true=Verbindungsverlauf muss neu berechnet werden.
-	bool						bEdgeTrackUserDefined : 1;
+	bool						mbEdgeTrackDirty : 1; // true=Verbindungsverlauf muss neu berechnet werden.
+	bool						mbEdgeTrackUserDefined : 1;
 
 	// #109007#
 	// Bool to allow supporession of default connects at object
 	// inside test (HitTest) and object center test (see FindConnector())
 	bool						mbSuppressDefaultConnect : 1;
 
-	// #110649#
-	// Flag value for avoiding death loops when calculating BoundRects
-	// from circularly connected connectors. A coloring algorythm is used
-	// here. When the GetCurrentBoundRect() calculation of a SdrEdgeObj
-	// is running, the flag is set, else it is always sal_False.
-	bool						mbBoundRectCalculationRunning : 1;
-
 	virtual void Notify(SfxBroadcaster& rBC, const SfxHint& rHint);
 
-	XPolygon ImpCalcObjToCenter(const Point& rStPt, long nEscAngle, const Rectangle& rRect, const Point& rCenter) const;
 	void ImpRecalcEdgeTrack();  // Neuberechnung des Verbindungsverlaufs
-	XPolygon ImpCalcEdgeTrack(const XPolygon& rTrack0, SdrObjConnection& rCon1, SdrObjConnection& rCon2, SdrEdgeInfoRec* pInfo) const;
-	XPolygon ImpCalcEdgeTrack(const Point& rPt1, long nAngle1, const Rectangle& rBoundRect1, const Rectangle& rBewareRect1,
-		const Point& rPt2, long nAngle2, const Rectangle& rBoundRect2, const Rectangle& rBewareRect2,
-		sal_uInt32* pnQuality, SdrEdgeInfoRec* pInfo) const;
-	static void FindConnector(const Point aPt, const SdrView& rSdrView, SdrObjConnection& rCon, const SdrEdgeObj* pThis, OutputDevice* pOut = 0);
-	sal_uInt16 ImpCalcEscAngle(SdrObject* pObj, const Point& aPt2) const;
-	bool ImpStripPolyPoints(XPolygon& rXP) const; // entfernen ueberfluessiger Punkte
-	void ImpSetTailPoint(bool bTail1, const Point& rPt);
+	basegfx::B2DPolygon ImpCalcEdgeTrack(
+        SdrObjConnection& rCon1, 
+        SdrObjConnection& rCon2, 
+        SdrEdgeInfoRec* pInfo) const;
+	static void FindConnector(
+        const basegfx::B2DPoint& rPt, 
+        const SdrView& rSdrView, 
+        SdrObjConnection& rCon, 
+        const SdrEdgeObj* pThis, 
+        OutputDevice* pOut = 0);
+	sal_uInt16 ImpCalcEscAngle(SdrObject* pObj, const basegfx::B2DPoint& aPt2) const;
+	void ImpSetTailPoint(bool bTail1, const basegfx::B2DPoint& rPt);
 	void ImpUndirtyEdgeTrack();  // eventuelle Neuberechnung des Verbindungsverlaufs
 	void ImpDirtyEdgeTrack();	// invalidate connector path, so it will be recalculated next time
 	void ImpSetAttrToEdgeInfo(); // Werte vom Pool nach aEdgeInfo kopieren
@@ -212,18 +201,15 @@ public:
 
 	// #109007#
 	// Interface to default connect suppression
-	void SetSuppressDefaultConnect(sal_Bool bNew) { mbSuppressDefaultConnect = bNew; }
-	sal_Bool GetSuppressDefaultConnect() const { return mbSuppressDefaultConnect; }
-
-	// #110649#
-	sal_Bool IsBoundRectCalculationRunning() const { return mbBoundRectCalculationRunning; }
+	void SetSuppressDefaultConnect(bool bNew) { mbSuppressDefaultConnect = bNew; }
+	bool GetSuppressDefaultConnect() const { return mbSuppressDefaultConnect; }
 
 	virtual bool IsSdrEdgeObj() const;
 	virtual bool IsClosedObj() const;
 
 	SdrEdgeObj(SdrModel& rSdrModel);
 
-	SdrObjConnection& GetConnection(bool bTail1) { return *(bTail1 ? &aCon1 : &aCon2); }
+	SdrObjConnection& GetConnection(bool bTail1) { return *(bTail1 ? &maCon1 : &maCon2); }
 	virtual void TakeObjInfo(SdrObjTransformInfoRec& rInfo) const;
 	virtual sal_uInt16 GetObjIdentifier() const;
 	virtual SdrGluePoint GetVertexGluePoint(sal_uInt32 nNum) const;
@@ -232,18 +218,18 @@ public:
 
 	// bTail1=true: Linienanfang, sonst LinienEnde
 	// pObj=NULL: Disconnect
-	void SetEdgeTrackDirty() { bEdgeTrackDirty=true; }
+	void SetEdgeTrackDirty() { mbEdgeTrackDirty = true; }
 	void ConnectToNode(bool bTail1, SdrObject* pObj);
 	void DisconnectFromNode(bool bTail1);
 	SdrObject* GetConnectedNode(bool bTail1) const;
-	const SdrObjConnection& GetConnection(bool bTail1) const { return *(bTail1 ? &aCon1 : &aCon2); }
+	const SdrObjConnection& GetConnection(bool bTail1) const { return *(bTail1 ? &maCon1 : &maCon2); }
 	bool CheckNodeConnection(bool bTail1) const;
 
 	virtual void TakeObjNameSingul(String& rName) const;
 	virtual void TakeObjNamePlural(String& rName) const;
 
-	void	SetEdgeTrackPath( const basegfx::B2DPolyPolygon& rPoly );
-	basegfx::B2DPolyPolygon GetEdgeTrackPath() const;
+	void SetEdgeTrackPath( const basegfx::B2DPolygon& rPoly );
+	basegfx::B2DPolygon GetEdgeTrackPath() const;
 
 	virtual basegfx::B2DPolyPolygon TakeXorPoly() const;
 	sal_uInt32 impOldGetHdlCount() const;
@@ -289,16 +275,18 @@ public:
 	// helper methods for the StarOffice api
 	basegfx::B2DPoint GetTailPoint( bool bTail ) const;
 	void SetTailPoint( bool bTail, const basegfx::B2DPoint& rPt );
-	void setGluePointIndex( sal_Bool bTail, sal_Int32 nId = -1 );
-	sal_Int32 getGluePointIndex( sal_Bool bTail );
+	void setGluePointIndex( bool bTail, sal_Int32 nId = -1 );
+	sal_Int32 getGluePointIndex( bool bTail );
 
 	// for geometry access
-	::basegfx::B2DPolygon getEdgeTrack() const;
+//	::basegfx::B2DPolygon getEdgeTrack() const;
 
 	// helper method for SdrDragMethod::AddConnectorOverlays. Adds a overlay polygon for
 	// this connector to rResult.
 	basegfx::B2DPolygon ImplAddConnectorOverlay(SdrDragMethod& rDragMethod, bool bTail1, bool bTail2, bool bDetail) const;
 
+	// get/setSdrObjectTransformation
+	virtual const basegfx::B2DHomMatrix& getSdrObjectTransformation() const;
 	virtual void setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation);
 };
 

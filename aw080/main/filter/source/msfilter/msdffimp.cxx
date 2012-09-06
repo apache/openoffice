@@ -4735,8 +4735,12 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 							aTransform.translate(aObjData.aBoundRect.getCenter());
 
 							sdr::legacy::transformSdrObject(*pRet, aTransform);
+                            
+                            // #120437# reset rotation, it is part of the path and shall not be applied again
+                            nObjectRotation = 0;
 						}
-						// Horizontal gespiegelt?
+
+                        // Horizontal gespiegelt?
 						if ( nSpFlags & SP_FFLIPH )
 						{
 							const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(*pRet));
@@ -4747,8 +4751,12 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 							aTransform.translate(aSnapRange.getCenterX(), 0.0);
 
 							sdr::legacy::transformSdrObject(*pRet, aTransform);
+                            
+                            // #120437# reset hor filp
+                            nSpFlags &= ~SP_FFLIPH;
 						}
-						// Vertikal gespiegelt?
+
+                        // Vertikal gespiegelt?
 						if ( nSpFlags & SP_FFLIPV )
 						{
 							const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(*pRet));
@@ -4759,20 +4767,25 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 							aTransform.translate(0.0, aSnapRange.getCenterY());
 
 							sdr::legacy::transformSdrObject(*pRet, aTransform);
+                            
+                            // #120437# reset ver filp
+                            nSpFlags &= ~SP_FFLIPV;
 						}
-						basegfx::B2DPolyPolygon aPoly( SdrObjCustomShape::GetLineGeometry( (SdrObjCustomShape*)pRet, sal_True ) );
+
+                        const basegfx::B2DPolyPolygon aPoly( SdrObjCustomShape::GetLineGeometry( (SdrObjCustomShape*)pRet, sal_True ) );
                         deleteSdrObjectSafeAndClearPointer( pRet );
 
-						pRet = new SdrEdgeObj(*GetModel());
+						SdrEdgeObj* pSdrEdgeObj = new SdrEdgeObj(*GetModel());
+                        pRet = pSdrEdgeObj;
 						ApplyAttributes( rSt, aSet, aObjData );
-						sdr::legacy::SetLogicRange(*pRet, aObjData.aBoundRect );
-						pRet->SetMergedItemSet(aSet);
+						sdr::legacy::SetLogicRange(*pSdrEdgeObj, aObjData.aBoundRect );
+						pSdrEdgeObj->SetMergedItemSet(aSet);
 
 						// Konnektoren
 						MSO_ConnectorStyle eConnectorStyle = (MSO_ConnectorStyle)GetPropertyValue( DFF_Prop_cxstyle, mso_cxstyleStraight );
 
-						((SdrEdgeObj*)pRet)->ConnectToNode(sal_True, NULL);
-						((SdrEdgeObj*)pRet)->ConnectToNode(sal_False, NULL);
+						pSdrEdgeObj->ConnectToNode(sal_True, NULL);
+						pSdrEdgeObj->ConnectToNode(sal_False, NULL);
 
 						Point aPoint1( basegfx::fround(aObjData.aBoundRect.getMinX()), basegfx::fround(aObjData.aBoundRect.getMinY()) );
 						Point aPoint2( basegfx::fround(aObjData.aBoundRect.getMaxX()), basegfx::fround(aObjData.aBoundRect.getMaxY()) );
@@ -4804,8 +4817,8 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 						}
 						nSpFlags &= ~( SP_FFLIPV | SP_FFLIPH );
 
-						pRet->SetObjectPoint(basegfx::B2DPoint(aPoint1.X(), aPoint1.Y()), 0L);	// Startpunkt
-						pRet->SetObjectPoint(basegfx::B2DPoint(aPoint2.X(), aPoint2.Y()), 1L);	// Endpunkt
+						pSdrEdgeObj->SetObjectPoint(basegfx::B2DPoint(aPoint1.X(), aPoint1.Y()), 0L);	// Startpunkt
+						pSdrEdgeObj->SetObjectPoint(basegfx::B2DPoint(aPoint2.X(), aPoint2.Y()), 1L);	// Endpunkt
 
 						sal_Int32 n1HorzDist, n1VertDist, n2HorzDist, n2VertDist;
 						n1HorzDist = n1VertDist = n2HorzDist = n2VertDist = 0;
@@ -4829,8 +4842,13 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 						aSet.Put( SdrEdgeNode2HorzDistItem( n2HorzDist ) );
 						aSet.Put( SdrEdgeNode2VertDistItem( n2VertDist ) );
 
-						((SdrEdgeObj*)pRet)->SetEdgeTrackPath( aPoly );
-						pRet->SetMergedItemSet( aSet );
+                        if(aPoly.count())
+                        {
+                            OSL_ENSURE(1 == aPoly.count(), "Connectors support only single polygon, taking first one (!)");
+    						pSdrEdgeObj->SetEdgeTrackPath( aPoly.getB2DPolygon(0) );
+                        }
+
+						pSdrEdgeObj->SetMergedItemSet( aSet );
 					}
 				}
 			}

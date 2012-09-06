@@ -117,7 +117,7 @@ namespace sdr
 			return E3dProperties::GetMergedItemSet();
 		}
 
-		void E3dSceneProperties::SetMergedItemSet(const SfxItemSet& rSet, sal_Bool bClearAllItems)
+		void E3dSceneProperties::SetMergedItemSet(const SfxItemSet& rSet, bool bClearAllItems)
 		{
 			// Set SDRATTR_3DOBJ_ range at contained objects.
 			const SdrObjList* pSub = GetSdrObject().getChildrenOfSdrObject();

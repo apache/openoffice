@@ -62,7 +62,7 @@ namespace sdr
 			virtual const SfxItemSet& GetMergedItemSet() const;
 
 			// Set merged ItemSet. Normally, this maps to SetObjectItemSet().
-			virtual void SetMergedItemSet(const SfxItemSet& rSet, sal_Bool bClearAllItems = sal_False);
+			virtual void SetMergedItemSet(const SfxItemSet& rSet, bool bClearAllItems = false);
 
 			// Set a single item, iterate over hierarchies if necessary.
 			virtual void SetMergedItem(const SfxPoolItem& rItem);

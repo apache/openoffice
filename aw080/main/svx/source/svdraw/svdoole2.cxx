@@ -2138,12 +2138,4 @@ void SdrOle2Obj::SetWindow(const com::sun::star::uno::Reference < com::sun::star
 }
 
 //////////////////////////////////////////////////////////////////////////////
-
-SfxStyleSheet* SdrOle2Obj::getDefaultStyleSheet()
-{
-    // use stylesheet without fill and without line
-    return getSdrModelFromSdrObject.GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj();
-}
-
-//////////////////////////////////////////////////////////////////////////////
 // eof

@@ -85,7 +85,7 @@ using namespace ::com::sun::star::container;
 
 SdStyleSheetPool::SdStyleSheetPool(SfxItemPool const& _rPool, SdDrawDocument* pDocument)
 :	SdStyleSheetPoolBase( _rPool )
-,	mpActualStyleSheet(NULL)
+,	mxActualStyleSheet()
 ,	mpDoc(pDocument)
 {
 	if( mpDoc )

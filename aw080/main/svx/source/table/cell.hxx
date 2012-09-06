@@ -85,7 +85,7 @@ public:
     SVX_DLLPRIVATE void TakeCellsTextAnchorRect(Rectangle& rAnchorRect) const;
 
     SVX_DLLPRIVATE virtual const SfxItemSet& GetItemSet() const;
-    SVX_DLLPRIVATE void SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, sal_Bool bClearAllItems);
+    SVX_DLLPRIVATE void SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, bool bClearAllItems);
     void SetMergedItem(const SfxPoolItem& rItem);
 
     SVX_DLLPRIVATE sal_Int32 getMinimumWidth();

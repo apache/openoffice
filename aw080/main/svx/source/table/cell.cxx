@@ -587,7 +587,7 @@ const SfxItemSet& Cell::GetItemSet() const
 
 // -----------------------------------------------------------------------------
 
-void Cell::SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, sal_Bool bClearAllItems)
+void Cell::SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, bool bClearAllItems)
 {
 	if( mpProperties )
 	{

@@ -116,7 +116,7 @@ namespace sdr
 			return *mpItemSet;
 		}
 
-		void GroupProperties::SetMergedItemSet(const SfxItemSet& rSet, sal_Bool bClearAllItems)
+		void GroupProperties::SetMergedItemSet(const SfxItemSet& rSet, bool bClearAllItems)
 		{
 			// iterate over contained SdrObjects
 			const SdrObjList* pSub = GetSdrObject().getChildrenOfSdrObject();
@@ -190,7 +190,7 @@ namespace sdr
 			DBG_ASSERT(sal_False, "GroupProperties::ItemSetChanged() should never be called (!)");
 		}
 
-		sal_Bool GroupProperties::AllowItemChange(const sal_uInt16 /*nWhich*/, const SfxPoolItem* /*pNewItem*/) const
+		bool GroupProperties::AllowItemChange(const sal_uInt16 /*nWhich*/, const SfxPoolItem* /*pNewItem*/) const
 		{
 			DBG_ASSERT(sal_False, "GroupProperties::AllowItemChange() should never be called (!)");
 			return sal_False;

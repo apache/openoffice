@@ -2456,15 +2456,20 @@ bool SvxShape::setPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
 					    drawing::PolyPolygonBezierCoords aPolyPoly;
 					    if ( rValue >>= aPolyPoly )
 					    {
-						        basegfx::B2DPolyPolygon aNewPolyPolygon(basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(aPolyPoly));
+					        basegfx::B2DPolyPolygon aNewPolyPolygon(basegfx::tools::UnoPolyPolygonBezierCoordsToB2DPolyPolygon(aPolyPoly));
                             ForceMetricToItemPoolMetric( aNewPolyPolygon );
     			            
-                                if(isWriterAnchorUsed())
+                            if(isWriterAnchorUsed())
                             {
-							        aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
+						        aNewPolyPolygon.transform(basegfx::tools::createTranslateB2DHomMatrix(mpObj->GetAnchorPos()));
                             }
-						    
-                            pEdgeObj->SetEdgeTrackPath( aNewPolyPolygon );
+
+                            if(aNewPolyPolygon.count())
+                            {
+                                OSL_ENSURE(1 == aNewPolyPolygon.count(), "Connectors support only single polygon, taking first one (!)");
+                                pEdgeObj->SetEdgeTrackPath( aNewPolyPolygon.getB2DPolygon(0) );
+                            }
+
                             return true;
 					    }
 				    }

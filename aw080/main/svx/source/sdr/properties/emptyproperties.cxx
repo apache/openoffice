@@ -117,7 +117,7 @@ namespace sdr
 			DBG_ASSERT(sal_False, "EmptyProperties::ItemSetChanged() should never be called (!)");
 		}
 
-		sal_Bool EmptyProperties::AllowItemChange(const sal_uInt16 /*nWhich*/, const SfxPoolItem* /*pNewItem*/) const
+		bool EmptyProperties::AllowItemChange(const sal_uInt16 /*nWhich*/, const SfxPoolItem* /*pNewItem*/) const
 		{
 			DBG_ASSERT(sal_False, "EmptyProperties::AllowItemChange() should never be called (!)");
 			return sal_True;

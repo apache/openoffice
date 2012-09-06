@@ -668,11 +668,11 @@ public:
 	const SfxItemSet& GetMergedItemSet() const;
 	void SetMergedItem(const SfxPoolItem& rItem);
 	void ClearMergedItem(const sal_uInt16 nWhich = 0);
-	void SetMergedItemSet(const SfxItemSet& rSet, bool bClearAllItems = sal_False);
+	void SetMergedItemSet(const SfxItemSet& rSet, bool bClearAllItems = false);
 	const SfxPoolItem& GetMergedItem(const sal_uInt16 nWhich) const;
 
 	// syntactical sugar for ItemSet accesses
-	void SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, bool bClearAllItems = sal_False);
+	void SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, bool bClearAllItems = false);
 
 	// NotPersistAttr fuer Layer, ObjName, geometrische Transformationen, ...
 	void TakeNotPersistAttr(SfxItemSet& rAttr, bool bMerge) const;

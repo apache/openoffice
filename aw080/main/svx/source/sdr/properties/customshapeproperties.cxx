@@ -73,7 +73,8 @@ namespace sdr
 				// end
 				0, 0));
 		}
-		sal_Bool CustomShapeProperties::AllowItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem ) const
+		
+        bool CustomShapeProperties::AllowItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem ) const
 		{
 			sal_Bool bAllowItemChange = sal_True;
 			if ( !pNewItem )
@@ -85,7 +86,8 @@ namespace sdr
 				bAllowItemChange = TextProperties::AllowItemChange( nWhich, pNewItem );
 			return bAllowItemChange;
 		}
-		void CustomShapeProperties::ClearObjectItem(const sal_uInt16 nWhich)
+
+        void CustomShapeProperties::ClearObjectItem(const sal_uInt16 nWhich)
 		{
 			if ( !nWhich )
 			{
@@ -102,7 +104,8 @@ namespace sdr
 			else
 				TextProperties::ClearObjectItem( nWhich );
 		}
-		void CustomShapeProperties::ClearObjectItemDirect(const sal_uInt16 nWhich)
+		
+        void CustomShapeProperties::ClearObjectItemDirect(const sal_uInt16 nWhich)
 		{
 			if ( !nWhich )
 			{
@@ -117,7 +120,8 @@ namespace sdr
 			else
 				TextProperties::ClearObjectItemDirect( nWhich );
 		}
-		void CustomShapeProperties::ItemSetChanged(const SfxItemSet& rSet)
+		
+        void CustomShapeProperties::ItemSetChanged(const SfxItemSet& rSet)
 		{
 			SdrObjCustomShape& rObj = (SdrObjCustomShape&)GetSdrObject();
 
@@ -132,7 +136,8 @@ namespace sdr
 			// local changes, removing cached objects
 			rObj.InvalidateRenderGeometry();
 		}
-		void CustomShapeProperties::ItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem)
+		
+        void CustomShapeProperties::ItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem)
 		{
 			SdrObjCustomShape& rObj = (SdrObjCustomShape&)GetSdrObject();
 			//OutlinerParaObject* pParaObj = rObj.GetOutlinerParaObject();
@@ -146,12 +151,14 @@ namespace sdr
 
 			rObj.InvalidateRenderGeometry();
 		}
-		void CustomShapeProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
+		
+        void CustomShapeProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, bool bDontRemoveHardAttr)
 		{
 			TextProperties::SetStyleSheet( pNewStyleSheet, bDontRemoveHardAttr );
 			UpdateTextFrameStatus();
 		}
-		void CustomShapeProperties::ForceDefaultAttributes()
+		
+        void CustomShapeProperties::ForceDefaultAttributes()
 		{
 			UpdateTextFrameStatus();
 
@@ -177,7 +184,8 @@ namespace sdr
 			}
 */
 		}
-		CustomShapeProperties::CustomShapeProperties(SdrObject& rObj)
+		
+        CustomShapeProperties::CustomShapeProperties(SdrObject& rObj)
 		:	TextProperties(rObj)
 		{
 		}

@@ -292,7 +292,7 @@ bool SdrCreateView::CheckEdgeMode()
 
 void SdrCreateView::SetConnectMarker(const SdrObjConnection& rCon)
 {
-	SdrObject* pTargetObject = rCon.pObj;
+	SdrObject* pTargetObject = rCon.GetObject();
 
 	if(pTargetObject) 
 	{
@@ -330,8 +330,7 @@ bool SdrCreateView::MouseMove(const MouseEvent& rMEvt, Window* pWin)
 			
 			if(!bMarkHit) 
 			{
-				const Point aOldPoint(basegfx::fround(aLogic.getX()), basegfx::fround(aLogic.getY()));
-				SdrEdgeObj::FindConnector(aOldPoint, *getAsSdrView(), aCon, 0, pWin);
+				SdrEdgeObj::FindConnector(aLogic, *getAsSdrView(), aCon, 0, pWin);
 			}
 
 			SetConnectMarker(aCon);

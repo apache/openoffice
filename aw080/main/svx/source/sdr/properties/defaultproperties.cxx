@@ -48,13 +48,13 @@ namespace sdr
 
 		DefaultProperties::DefaultProperties(SdrObject& rObj)
 		:	BaseProperties(rObj),
-			mpItemSet(0L)
+			mpItemSet(0)
 		{
 		}
 
 		DefaultProperties::DefaultProperties(const DefaultProperties& rProps, SdrObject& rObj)
 		:	BaseProperties(rObj),
-			mpItemSet(0L)
+			mpItemSet(0)
 		{
 			if(rProps.mpItemSet)
 			{
@@ -65,7 +65,7 @@ namespace sdr
 				// This class just copies the ItemSet, ignore parent.
 				if(mpItemSet && mpItemSet->GetParent())
 				{
-					mpItemSet->SetParent(0L);
+					mpItemSet->SetParent(0);
 				}
 			}
 		}
@@ -80,7 +80,7 @@ namespace sdr
 			if(mpItemSet)
 			{
 				delete mpItemSet;
-				mpItemSet = 0L;
+				mpItemSet = 0;
 			}
 		}
 		
@@ -193,7 +193,7 @@ namespace sdr
 		{
 		}
 
-		sal_Bool DefaultProperties::AllowItemChange(const sal_uInt16 /*nWhich*/, const SfxPoolItem* /*pNewItem*/) const
+		bool DefaultProperties::AllowItemChange(const sal_uInt16 /*nWhich*/, const SfxPoolItem* /*pNewItem*/) const
 		{
 			return sal_True;
 		}

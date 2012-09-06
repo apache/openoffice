@@ -37,12 +37,14 @@ namespace sdr
 	namespace properties
 	{
 		BaseProperties::BaseProperties(SdrObject& rObj)
-		:	mrObject(rObj)
+		:	boost::noncopyable(),
+            mrObject(rObj)
 		{
 		}
 
 		BaseProperties::BaseProperties(const BaseProperties& /*rProps*/, SdrObject& rObj)
-		:	mrObject(rObj)
+		:	boost::noncopyable(),
+            mrObject(rObj)
 		{
 		}
 
@@ -56,7 +58,7 @@ namespace sdr
 			return GetObjectItemSet();
 		}
 
-		void BaseProperties::SetMergedItemSet(const SfxItemSet& rSet, sal_Bool bClearAllItems)
+		void BaseProperties::SetMergedItemSet(const SfxItemSet& rSet, bool bClearAllItems)
 		{
 			// clear items if requested
 			if(bClearAllItems)
@@ -93,7 +95,7 @@ namespace sdr
 			// Overload where an ItemSet is implemented.
 		}
 
-		void BaseProperties::SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, sal_Bool bClearAllItems)
+		void BaseProperties::SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, bool bClearAllItems)
 		{
 			ItemChangeBroadcaster aC(GetSdrObject());
 		
