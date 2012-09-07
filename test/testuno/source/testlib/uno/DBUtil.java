@@ -103,10 +103,10 @@ public class DBUtil {
 	public static void getDocument(final String _docURL) throws Exception {
 		m_databaseDocumentFile = _docURL;
 
-		final XNameAccess dbContext = UnoRuntime.queryInterface(
+		final XNameAccess dbContext = (XNameAccess) UnoRuntime.queryInterface(
 				XNameAccess.class,
 				m_orb.createInstance("com.sun.star.sdb.DatabaseContext"));
-		final XDocumentDataSource dataSource = UnoRuntime.queryInterface(
+		final XDocumentDataSource dataSource = (XDocumentDataSource) UnoRuntime.queryInterface(
 				XDocumentDataSource.class, dbContext.getByName(_docURL));
 
 		m_databaseDocument = dataSource.getDatabaseDocument();
@@ -259,7 +259,7 @@ public class DBUtil {
 	 */
 	static public void close() {
 		// close connection
-		final XCloseable closeConn = UnoRuntime.queryInterface(
+		final XCloseable closeConn = (XCloseable) UnoRuntime.queryInterface(
 				XCloseable.class, m_connection != null ? m_connection : null);
 		if (closeConn != null) {
 			try {
@@ -270,7 +270,7 @@ public class DBUtil {
 		m_connection = null;
 
 		// close document
-		final com.sun.star.util.XCloseable closeDoc = UnoRuntime
+		final com.sun.star.util.XCloseable closeDoc = (com.sun.star.util.XCloseable) UnoRuntime
 				.queryInterface(com.sun.star.util.XCloseable.class,
 						m_databaseDocument);
 		if (closeDoc != null) {

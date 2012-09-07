@@ -61,7 +61,7 @@ public class CheckCrossReferences {
 	@Before
 	public void setUpDocument() throws Exception {
 		app.start();
-		document = UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.prepareData("uno/sw/CheckCrossReferences.odt")));
+		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.prepareData("uno/sw/CheckCrossReferences.odt")));
 	}
 
 	@After
@@ -77,21 +77,21 @@ public class CheckCrossReferences {
 	public XTextField getNextField() throws Exception {
 		if (xPortionEnum != null) {
 			while (xPortionEnum.hasMoreElements()) {
-				XPropertySet xPortionProps = UnoRuntime.queryInterface(XPropertySet.class, xPortionEnum.nextElement());
+				XPropertySet xPortionProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xPortionEnum.nextElement());
 				final String sPortionType = xPortionProps.getPropertyValue("TextPortionType").toString();
 				if (sPortionType.equals("TextField"))
-					return UnoRuntime.queryInterface(XTextField.class, xPortionProps.getPropertyValue("TextField"));
+					return (XTextField) UnoRuntime.queryInterface(XTextField.class, xPortionProps.getPropertyValue("TextField"));
 			}
 		}
 
 		while (xParaEnum.hasMoreElements()) {
-			XEnumerationAccess aPara = UnoRuntime.queryInterface(XEnumerationAccess.class, xParaEnum.nextElement());
+			XEnumerationAccess aPara = (XEnumerationAccess) UnoRuntime.queryInterface(XEnumerationAccess.class, xParaEnum.nextElement());
 			xPortionEnum = aPara.createEnumeration();
 			while (xPortionEnum.hasMoreElements()) {
-				XPropertySet xPortionProps = UnoRuntime.queryInterface(XPropertySet.class, xPortionEnum.nextElement());
+				XPropertySet xPortionProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xPortionEnum.nextElement());
 				final String sPortionType = xPortionProps.getPropertyValue("TextPortionType").toString();
 				if (sPortionType.equals("TextField"))
-					return UnoRuntime.queryInterface(XTextField.class, xPortionProps.getPropertyValue("TextField"));
+					return (XTextField) UnoRuntime.queryInterface(XTextField.class, xPortionProps.getPropertyValue("TextField"));
 			}
 		}
 
@@ -115,11 +115,11 @@ public class CheckCrossReferences {
 	@Test
 	public void checkCrossReferences() throws Exception {
 		// setup paragraph enumeration
-		xParaEnum = UnoRuntime.queryInterface(XEnumerationAccess.class, document.getText()).createEnumeration();
+		xParaEnum = ((XEnumerationAccess)UnoRuntime.queryInterface(XEnumerationAccess.class, document.getText())).createEnumeration();
 
 		// get field refresher
-		XTextFieldsSupplier xFieldSupp = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
-		xFldsRefresh = UnoRuntime.queryInterface(XRefreshable.class, xFieldSupp.getTextFields());
+		XTextFieldsSupplier xFieldSupp = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		xFldsRefresh = (XRefreshable) UnoRuntime.queryInterface(XRefreshable.class, xFieldSupp.getTextFields());
 
 		// strings for checking
 		final String FldResult1 = "*i*";
@@ -172,7 +172,7 @@ public class CheckCrossReferences {
 		// insert a certain cross-reference bookmark and a reference field to this bookmark
 
 		// restart paragraph enumeration
-		xParaEnum = UnoRuntime.queryInterface(XEnumerationAccess.class, document.getText()).createEnumeration();
+		xParaEnum = ((XEnumerationAccess)UnoRuntime.queryInterface(XEnumerationAccess.class, document.getText())).createEnumeration();
 
 		// iterate on the paragraphs to find certain paragraph to insert the bookmark
 		XTextRange xParaTextRange = null;
@@ -207,7 +207,7 @@ public class CheckCrossReferences {
 		xFldsRefresh.refresh();
 
 		// check inserted reference field
-		xField = UnoRuntime.queryInterface(XTextField.class, xNewField);
+		xField = (XTextField) UnoRuntime.queryInterface(XTextField.class, xNewField);
 		assertEquals("inserted reference field doesn't has correct field result", "J", xField.getPresentation(false));
 		xParaTextRange.getStart().setString("Hallo new bookmark: ");
 		xFldsRefresh.refresh();

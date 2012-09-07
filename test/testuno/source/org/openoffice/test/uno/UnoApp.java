@@ -95,10 +95,10 @@ public class UnoApp {
 		for (int i = 0; i < reconnectCount; i++) {
 			try {
 				XUnoUrlResolver resolver = UnoUrlResolver.create(Bootstrap.createInitialComponentContext(null));
-				componentContext = UnoRuntime.queryInterface(XComponentContext.class, resolver.resolve("uno:" + unoUrl + ";StarOffice.ComponentContext"));
+				componentContext = (XComponentContext) UnoRuntime.queryInterface(XComponentContext.class, resolver.resolve("uno:" + unoUrl + ";StarOffice.ComponentContext"));
 				componentFactory = componentContext.getServiceManager();
-				serviceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, componentFactory);
-				desktop = UnoRuntime.queryInterface(XDesktop.class, serviceFactory.createInstance("com.sun.star.comp.framework.Desktop"));
+				serviceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, componentFactory);
+				desktop = (XDesktop) UnoRuntime.queryInterface(XDesktop.class, serviceFactory.createInstance("com.sun.star.comp.framework.Desktop"));
 				return;
 			} catch (Exception e) {
 				// e.printStackTrace(); // for debugging

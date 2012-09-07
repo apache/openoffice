@@ -50,7 +50,7 @@ public class CheckFrames {
 	@Test(expected = NoSuchElementException.class)
 	public void testLoadTextFrame() throws Exception {
 		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.prepareData("uno/sw/CheckFlies.odt")));
-		XTextFramesSupplier xTFS = UnoRuntime.queryInterface(XTextFramesSupplier.class, document);
+		XTextFramesSupplier xTFS = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, document);
 		String[] expectedNames = { "Frame1", "Frame2" };
 		String[] expectedContents = { "PageBoundFrame", "ParaBoundFrame" };
 		XNameAccess xTextFrames = xTFS.getTextFrames();
@@ -58,12 +58,12 @@ public class CheckFrames {
 		assertTrue("Has text frame named Frame1", xTextFrames.hasByName(expectedNames[0]));
 		assertFalse("Has nonexisting text frame.", xTextFrames.hasByName("Nonexisting text frame"));
 
-		XIndexAccess xTextFramesIdx = UnoRuntime.queryInterface(XIndexAccess.class, xTextFrames);
+		XIndexAccess xTextFramesIdx = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTextFrames);
 		assertEquals("Text frame count", expectedNames.length, xTextFramesIdx.getCount());
 		String[] contents = new String[expectedNames.length];
 		for (int i = 0; i < xTextFramesIdx.getCount(); i++) {
 			Object obj = xTextFramesIdx.getByIndex(i);
-			XTextFrame frame = UnoRuntime.queryInterface(XTextFrame.class, obj);
+			XTextFrame frame = (XTextFrame) UnoRuntime.queryInterface(XTextFrame.class, obj);
 			contents[i] = frame.getText().getString();
 		}
 		assertArrayEquals("Text frame contents", expectedContents, contents);

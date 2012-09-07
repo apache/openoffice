@@ -102,9 +102,9 @@ public class DBAccess {
 	public void testSaveAs() throws Exception, IOException, java.lang.Exception {
 
 		m_databaseDocument = saveAndReloadDoc(m_databaseDocument, "", "odb");
-		XModel docModel = UnoRuntime.queryInterface(XModel.class,
+		XModel docModel = (XModel) UnoRuntime.queryInterface(XModel.class,
 				m_databaseDocument);
-		m_documentUI = UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
+		m_documentUI = (XDatabaseDocumentUI) UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
 				docModel.getCurrentController());
 		m_documentUI.connect();
 		assertTrue("could not connect to " + DBUtil.getDocumentURL(),
@@ -123,12 +123,12 @@ public class DBAccess {
 		// ---save and reload database document
 		m_databaseDocument = saveAndReloadDoc(m_databaseDocument, "", "odb");
 
-		XModel docModel = UnoRuntime.queryInterface(XModel.class,
+		XModel docModel = (XModel) UnoRuntime.queryInterface(XModel.class,
 				m_databaseDocument);
-		m_documentUI = UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
+		m_documentUI = (XDatabaseDocumentUI) UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
 				docModel.getCurrentController());
 		m_documentUI.connect();
-		XTablesSupplier suppTables = UnoRuntime.queryInterface(
+		XTablesSupplier suppTables = (XTablesSupplier) UnoRuntime.queryInterface(
 				XTablesSupplier.class, m_documentUI.getActiveConnection());
 		XNameAccess tables = suppTables.getTables();
 		assertTrue("the newly created table has not been written",
@@ -136,7 +136,7 @@ public class DBAccess {
 	}
 
 	protected XMultiServiceFactory getMSF() {
-		final XMultiServiceFactory xMSF1 = UnoRuntime.queryInterface(
+		final XMultiServiceFactory xMSF1 = (XMultiServiceFactory) UnoRuntime.queryInterface(
 				XMultiServiceFactory.class, app.getComponentContext()
 						.getServiceManager());
 		return xMSF1;
@@ -156,7 +156,7 @@ public class DBAccess {
 				XStorable.class, m_databaseDocument2);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return UnoRuntime.queryInterface(XOfficeDatabaseDocument.class,
+		return (XOfficeDatabaseDocument) UnoRuntime.queryInterface(XOfficeDatabaseDocument.class,
 				app.loadDocument(filePath));
 	}
 }

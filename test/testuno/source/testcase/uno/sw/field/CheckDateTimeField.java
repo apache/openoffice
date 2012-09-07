@@ -137,11 +137,11 @@ public class CheckDateTimeField {
 		assertTrue("Verify time field is creatd, by verify it's minutes",  dateString.indexOf(String.valueOf(dateField.Minutes).trim()) != -1);
 		int expectHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
 		assertEquals("Verify time field is creatd, value is right, by compare Hour", expectHour, dateField.Hours);
-		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
 		store.storeAsURL(url, propsValue);
 		app.closeDocument(document);
 		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
-		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
@@ -205,11 +205,11 @@ public class CheckDateTimeField {
 		assertTrue("Verify date field is creatd, by verify it's Day",  dateString.indexOf(String.valueOf(dateField.Day).trim()) != -1);
 		int expectDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		assertEquals("Verify date field is creatd, value is right, by compare Day", expectDay, dateField.Day);
-		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
 		store.storeAsURL(url, propsValue);
 		app.closeDocument(document);
 		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
-		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {

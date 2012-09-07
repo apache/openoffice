@@ -520,7 +520,7 @@ public class SCUtil {
 		closeFile(xSpreadsheetDocument);
 		
 		String filePath = Testspace.getPath(scTempDir + fullFileName);
-		XSpreadsheetDocument xScDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, unoApp.loadDocument(filePath));
+		XSpreadsheetDocument xScDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, unoApp.loadDocument(filePath));
 		
 		return xScDocument;
 	}

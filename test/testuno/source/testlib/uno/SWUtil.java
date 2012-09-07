@@ -59,7 +59,7 @@ public class SWUtil {
  	}
 
 	public static void saveAs(XTextDocument document, String filterValue, String url) throws IOException {
-		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
  		PropertyValue[] propsValue = new PropertyValue[1];
  		propsValue[0] = new PropertyValue();
  		propsValue[0].Name = "FilterName";
@@ -69,12 +69,12 @@ public class SWUtil {
  	}
 	
 	public static void save(XTextDocument document) throws IOException {
- 		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
+ 		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
 		store.store();
 	}
 	
 	public static XTextDocument saveAndReload(XTextDocument document, UnoApp app) throws Exception {
- 		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
+ 		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
 		store.store();
 		String url = document.getURL();
 		app.closeDocument(document);
@@ -117,7 +117,7 @@ public class SWUtil {
 	 * @throws Exception
 	 */
 	public static void setDocumentProperty(XTextDocument document, String prop, String propValue) throws Exception {
-		XDocumentInfoSupplier docInfoSupplier = UnoRuntime.queryInterface(XDocumentInfoSupplier.class, document);
+		XDocumentInfoSupplier docInfoSupplier = (XDocumentInfoSupplier) UnoRuntime.queryInterface(XDocumentInfoSupplier.class, document);
 		XDocumentInfo docInfo = docInfoSupplier.getDocumentInfo();
 		XPropertySet propsDocInfo = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, docInfo);
 		propsDocInfo.setPropertyValue(prop, propValue);
@@ -132,10 +132,10 @@ public class SWUtil {
 	 * @throws Exception
 	 */
 	public static void insertBookmark(XTextDocument document, XTextCursor textCursor, String bookmarkName) throws Exception {
-		XMultiServiceFactory xDocFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XMultiServiceFactory xDocFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
 		Object xBookmark = xDocFactory.createInstance("com.sun.star.text.Bookmark");
-		XTextContent xBookmarkAsTextContent = UnoRuntime.queryInterface(XTextContent.class, xBookmark);
-		XNamed xBookmarkAsNamed = UnoRuntime.queryInterface(XNamed.class, xBookmark);
+		XTextContent xBookmarkAsTextContent = (XTextContent) UnoRuntime.queryInterface(XTextContent.class, xBookmark);
+		XNamed xBookmarkAsNamed = (XNamed) UnoRuntime.queryInterface(XNamed.class, xBookmark);
 		xBookmarkAsNamed.setName(bookmarkName);
 		document.getText().insertTextContent(textCursor, xBookmarkAsTextContent, true);
 	}

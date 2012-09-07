@@ -54,7 +54,7 @@ public class Conversion {
 	@Rule
 	public Logger log = Logger.getLogger(this);
 	
-	public static String repos = System.getProperty("user.home") + "/pvt_conversion_data";
+	public static String repos = Testspace.getPath("pvt_conversion_data");
 
 	public static String[] params = {
 		".*\\.((doc)|(dot)|(odt)|(ott))$", "writer_pdf_Export", "pdf", 

@@ -398,7 +398,7 @@ public class ShapeProperties {
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return UnoRuntime.queryInterface(XComponent.class,
+		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 

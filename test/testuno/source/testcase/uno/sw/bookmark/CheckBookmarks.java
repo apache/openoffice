@@ -53,14 +53,14 @@ public class CheckBookmarks {
 	@Before
 	public void setUp() throws Exception {
 		app.start();
-		document = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		XText xText = document.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.setString("Contents");
 		
 		for (int i = 0; i < initBookmarkNames.length; i++) {
 			xTextCursor.gotoEnd(false);
-			XTextRange xTextRange = UnoRuntime.queryInterface(XTextRange.class, xTextCursor);
+			XTextRange xTextRange = (XTextRange) UnoRuntime.queryInterface(XTextRange.class, xTextCursor);
 			xText.insertControlCharacter(xTextRange, ControlCharacter.PARAGRAPH_BREAK, false);
 			xTextCursor.gotoEnd(false);
 			xTextCursor.setString(initBookmarkContents[i]);
@@ -92,7 +92,7 @@ public class CheckBookmarks {
 
 	@Test
 	public void createBookmark() throws Exception {
-		XNameAccess xBookmarks = UnoRuntime.queryInterface(XBookmarksSupplier.class, document).getBookmarks();
+		XNameAccess xBookmarks = ((XBookmarksSupplier)UnoRuntime.queryInterface(XBookmarksSupplier.class, document)).getBookmarks();
 		assertArrayEquals("Bookmark name list:", initBookmarkNames, xBookmarks.getElementNames());
 		assertArrayEquals("Bookmark content list:", initBookmarkContents, getBookmarkContents(xBookmarks));
 	}
@@ -109,7 +109,7 @@ public class CheckBookmarks {
 		xTextCursor.setString("new");
 		
 		// Let's see the bookmarks
-		XNameAccess xBookmarks = UnoRuntime.queryInterface(XBookmarksSupplier.class, document).getBookmarks();
+		XNameAccess xBookmarks = ((XBookmarksSupplier)UnoRuntime.queryInterface(XBookmarksSupplier.class, document)).getBookmarks();
 		assertArrayEquals("Bookmark name list after updating some content:", expectedBookmarkNames, xBookmarks.getElementNames());
 		assertArrayEquals("Bookmark content list after updating some content:", expectedBookmarkContents, getBookmarkContents(xBookmarks));
 	}
@@ -125,7 +125,7 @@ public class CheckBookmarks {
 		xTextCursor.setString("");
 		
 		// Let's see the bookmarks
-		XNameAccess xBookmarks = UnoRuntime.queryInterface(XBookmarksSupplier.class, document).getBookmarks();
+		XNameAccess xBookmarks = ((XBookmarksSupplier)UnoRuntime.queryInterface(XBookmarksSupplier.class, document)).getBookmarks();
 		assertArrayEquals("Bookmark name list after deleting some content:", expectedBookmarkNames, xBookmarks.getElementNames());
 		assertArrayEquals("Bookmark content list after deleting some content:", expectedBookmarkContents, getBookmarkContents(xBookmarks));
 	}

@@ -173,7 +173,7 @@ public class PageCountField {
 	 * @throws Exception
 	 */
 	private boolean isContainPageCountField(XTextDocument document) throws Exception {
-		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
