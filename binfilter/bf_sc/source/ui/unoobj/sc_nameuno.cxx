@@ -270,21 +270,6 @@ void SAL_CALL ScNamedRangeObj::setType( sal_Int32 nUnoType ) throw(uno::RuntimeE
 	Modify_Impl( NULL, NULL, NULL, &nNewType );
 }
 
-
-::rtl::OUString SAL_CALL ScNamedRangeObj::getScopeName( )
-    throw (::com::sun::star::uno::RuntimeException)
-{
-    return rtl::OUString();
-}
-
-void SAL_CALL ScNamedRangeObj::setScopeAndRangeName(
-    const ::rtl::OUString& /*aScopeName*/,
-    const ::rtl::OUString& /*aRangeName*/ )
-        throw (::com::sun::star::uno::RuntimeException)
-{
-}
-
-
 // XCellRangeSource
 
 uno::Reference<table::XCellRange> SAL_CALL ScNamedRangeObj::getReferredCells()
@@ -533,48 +518,6 @@ void SAL_CALL ScNamedRangesObj::outputList( const table::CellAddress& aOutputPos
 		ScDocFunc aFunc(*pDocShell);
 		aFunc.InsertNameList( aPos, sal_True );
 	}
-}
-
-
-void SAL_CALL ScNamedRangesObj::addNewByScopeName(
-    const ::rtl::OUString& /*aScopeName*/,
-    const ::rtl::OUString& /*aRangeName*/,
-    const ::rtl::OUString& /*aContent*/,
-    const ::com::sun::star::table::CellAddress& aPosition, ::sal_Int32 /*nType*/ )
-        throw (::com::sun::star::uno::RuntimeException)
-{
-}
-
-void SAL_CALL ScNamedRangesObj::removeByScopeName(
-    const ::rtl::OUString& /*aScopeName*/,
-    const ::rtl::OUString& /*aRangeName*/ )
-        throw (::com::sun::star::uno::RuntimeException)
-{
-
-}
-
-::sal_Bool SAL_CALL ScNamedRangesObj::hasByScopeName(
-    const ::rtl::OUString& /*aScopeName*/,
-    const ::rtl::OUString& /*aRangeName*/ )
-        throw (::com::sun::star::uno::RuntimeException)
-{
-    return sal_False;
-}
-
-::com::sun::star::uno::Any SAL_CALL ScNamedRangesObj::getByScopeName(
-    const ::rtl::OUString& /*aScopeName*/,
-    const ::rtl::OUString& /*aRangeName*/ )
-        throw (::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException)
-{
-    return ::com::sun::star::uno::Any();
-}
-
-::com::sun::star::uno::Sequence< ::com::sun::star::sheet::RangeScopeName > SAL_CALL ScNamedRangesObj::getElementScopeNames(  )
-    throw (::com::sun::star::uno::RuntimeException)
-{
-    return ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::RangeScopeName >();
 }
 
 // container::XEnumerationAccess
