@@ -248,23 +248,28 @@ public class OpenOffice {
 		SystemUtil.sleep(1);
 	}
 	
-	
+	public boolean isRunning() {
+		if (process == null)
+			return false;
+		
+		try {
+			process.exitValue();
+		} catch (Exception e1) {
+			return true;
+		}
+		
+		return false;
+	}
 																																																														
 	/**
 	 * Start OpenOffice
 	 * 
-	 * @return
+	 * @return return true when the process is created.
 	 */
 	@SuppressWarnings("all")
-	public void start() {
-		try {
-			if (process != null) {
-				process.exitValue();
-				process = null;
-			}
-		} catch (Exception e1) {
-			return;
-		}
+	public boolean start() {
+		if (isRunning())
+			return false;
 		
 		ArrayList<String> cmds = new ArrayList<String>();
 		cmds.add(bin.getAbsolutePath());
@@ -312,5 +317,6 @@ public class OpenOffice {
 		LOG.info(cmdLine);
 		if (process == null)
 			throw new RuntimeException("OpenOffice can't be started!");
+		return true;
 	}
 }

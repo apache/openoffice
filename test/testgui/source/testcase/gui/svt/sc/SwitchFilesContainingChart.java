@@ -27,7 +27,7 @@ package testcase.gui.svt.sc;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;

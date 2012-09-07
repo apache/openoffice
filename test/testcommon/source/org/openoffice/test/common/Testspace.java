@@ -96,4 +96,8 @@ public class Testspace {
 		
 		return workingFile.getAbsolutePath();
 	}
+	
+	public static boolean deleteFile(String path) {
+		return FileUtil.deleteFile(getPath(path));
+	}
 }

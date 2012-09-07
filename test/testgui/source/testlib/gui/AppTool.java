@@ -21,6 +21,9 @@
 
 package testlib.gui;
 
+import static org.openoffice.test.common.Testspace.*;
+import static org.openoffice.test.vcl.Tester.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.openoffice.test.common.Condition;
@@ -30,7 +33,7 @@ import org.openoffice.test.common.Testspace;
 import org.openoffice.test.vcl.Tester;
 import org.openoffice.test.vcl.widgets.VclWindow;
 
-public class AppUtil extends Tester {
+public class AppTool extends Tester {
 	static {
 		Testspace.getFile("temp").mkdirs();
 		// TODO move these shortcut into a file
@@ -56,6 +59,59 @@ public class AppUtil extends Tester {
 		}
 	}
 
+	public static void newTextDocument() {
+		app.dispatch("private:factory/swriter");
+		writer.waitForExistence(10, 2);
+		sleep(1);
+	}
+	
+	public static void newSpreadsheet() {
+		app.dispatch("private:factory/scalc");
+		calc.waitForExistence(10, 2);
+		sleep(1);
+	}
+	
+	public static void newPresentation() {
+		app.dispatch("private:factory/simpress");
+		impress.waitForExistence(10, 2);
+		sleep(1);
+	}
+	
+	public static void newDrawing() {
+		app.dispatch("private:factory/sdraw");
+		draw.waitForExistence(10, 2);
+		sleep(1);
+	}
+	
+	public static void newFormula() {
+		app.dispatch("private:factory/smath");
+		mathEditWindow.waitForExistence(10, 2);
+		sleep(1);
+	}
+	
+	public static void open(String path) {
+		app.dispatch(".uno:Open");
+		submitOpenDlg(getPath(path));
+	}
+	
+	public static void saveAs(String path) {
+		app.dispatch(".uno:SaveAs");
+		submitSaveDlg(getPath(path));
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok();
+		app.waitSlot(5 * 60); // 10 minutes
+	}
+	
+	public static void close() {
+		app.dispatch(".uno:CloseDoc");
+	}
+	
+	public static void discard() {
+		app.dispatch(".uno:CloseDoc");
+		if (activeMsgBox.exists(2))
+			activeMsgBox.no();
+	}
+	
 	public static void typeKeys(String keys) {
 		Tester.typeKeys(keys);
 	}
@@ -71,18 +127,29 @@ public class AppUtil extends Tester {
 
 	}
 
+	public static String copyAll() {
+		app.setClipboard(".d.i.r.t.y.");
+		try {
+			app.dispatch(".uno:SelectAll");
+		} catch (Exception e) {
+			app.dispatch(".uno:Select");
+		}
+		app.dispatch(".uno:Copy");
+		return app.getClipboard();
+	}
+	
 	public static void submitOpenDlg(String path) {
-		FilePicker_Path.setText(path);
-		FilePicker_Open.click();
+		filePickerPath.setText(path);
+		filePickerOpen.click();
 		sleep(1);
 	}
 
 	public static void submitSaveDlg(String path) {
-		FileSave_Path.setText(path);
+		fileSavePath.setText(path);
 
 		String extName = FileUtil.getFileExtName(path).toLowerCase();
 
-		String[] filters = FileSave_FileType.getItemsText();
+		String[] filters = fileSaveFileType.getItemsText();
 		int i = 0;
 		for (; i < filters.length; i++) {
 			String f = filters[i];
@@ -95,16 +162,16 @@ public class AppUtil extends Tester {
 		if (i == filters.length)
 			throw new RuntimeException("Can't find the supported doc format!");
 
-		FileSave_FileType.select(i);
-		FileSave_Save.click();
+		fileSaveFileType.select(i);
+		fileSaveSave.click();
 		sleep(1);
 	}
 
 	public static void submitSaveDlg(String path, String ext) {
-		FileSave_Path.setText(path);
+		fileSavePath.setText(path);
 		if (ext != null) {
 			// change filter
-			String[] filters = FileSave_FileType.getItemsText();
+			String[] filters = fileSaveFileType.getItemsText();
 			int i = 0;
 			for (; i < filters.length; i++) {
 				String f = filters[i];
@@ -117,7 +184,7 @@ public class AppUtil extends Tester {
 			if (i == filters.length)
 				throw new RuntimeException("Can't find the supported doc format!");
 		}
-		FileSave_FileType.click();
+		fileSaveFileType.click();
 		sleep(1);
 	}
 
@@ -125,12 +192,12 @@ public class AppUtil extends Tester {
 		new Condition() {
 			@Override
 			public boolean value() {
-				if (ActiveMsgBox.exists()) {
+				if (activeMsgBox.exists()) {
 					try {
-						ActiveMsgBox.ok();
+						activeMsgBox.ok();
 					} catch (Exception e) {
 						try {
-							ActiveMsgBox.yes();
+							activeMsgBox.yes();
 						} catch (Exception e1) {
 						}
 					}
@@ -148,12 +215,12 @@ public class AppUtil extends Tester {
 				if (!shown)
 					return false;
 
-				if (ActiveMsgBox.exists(2)) {
+				if (activeMsgBox.exists(2)) {
 					try {
-						ActiveMsgBox.ok();
+						activeMsgBox.ok();
 					} catch (Exception e) {
 						try {
-							ActiveMsgBox.yes();
+							activeMsgBox.yes();
 						} catch (Exception e1) {
 						}
 					}

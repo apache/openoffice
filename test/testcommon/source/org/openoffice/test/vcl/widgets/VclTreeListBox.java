@@ -149,6 +149,18 @@ public class VclTreeListBox extends VclControl {
 		invoke(Constant.M_Collapse, new Object[]{index + 1, false});
 	}
 	
+	public void collapse() {
+		collapse(getSelIndex());
+	}
+	
+	public void collapse(String text) {
+		String[] items = getAllItemsText();
+		for (int i = 0; i < items.length; i++) {
+			if (text.equals(items[i]))
+				collapse(i);
+		}
+	}
+	
 	/**
 	 * Expand the specified entry
 	 * Notice: index starting from 0
@@ -158,6 +170,18 @@ public class VclTreeListBox extends VclControl {
 //		select(index);
 //		Tester.typeKeys("<right>");
 		invoke(Constant.M_Expand, new Object[]{index + 1, false});
+	}
+	
+	public void expand() {
+		expand(getSelIndex());
+	}
+	
+	public void expand(String text) {
+		String[] items = getAllItemsText();
+		for (int i = 0; i < items.length; i++) {
+			if (text.equals(items[i]))
+				expand(i);
+		}
 	}
 	
     /** 

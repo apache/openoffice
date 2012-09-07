@@ -27,7 +27,7 @@ package testcase.gui.svt.sd;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -104,7 +104,7 @@ public class DragOLEObject {
 			sleep(5);
 			
 			impress.menuItem("File->Close").select();
-			ActiveMsgBox.no();
+			activeMsgBox.no();
 			sleep(2);
 			
 			HashMap<String, Object> perfData = SystemUtil.getProcessPerfData(pid);

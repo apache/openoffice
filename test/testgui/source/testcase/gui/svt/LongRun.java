@@ -24,7 +24,7 @@ package testcase.gui.svt;
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.awt.Rectangle;
@@ -45,7 +45,7 @@ import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 import org.openoffice.test.common.Testspace;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 public class LongRun {
 
@@ -156,17 +156,17 @@ public class LongRun {
 		// Set the text style
 		writer.openContextMenu();
 		menuItem("Character...").select();
-		EffectsPage.select();
-		EffectsPage_Color.select("Magenta");
-		EffectsPage.ok();
+		effectsPage.select();
+		effectsPageColor.select("Magenta");
+		effectsPage.ok();
 		sleep(2);
 
 		// Save the text document
 		writer.menuItem("File->Save As...").select();
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok();
 
 		// Close it by clicking main menu
 		writer.menuItem("File->Close").select();
@@ -190,13 +190,13 @@ public class LongRun {
 		String text = "Hello Openoffice";
 		writer.menuItem("File->New->Spreadsheet").select();
 		calc.waitForExistence(10, 2);
-		CalcUtil.selectRange("A65536");
+		SCTool.selectRange("A65536");
 		typeKeys(text);
 		calc.menuItem("File->Save As...").select();
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok();
 		// Close it by clicking main menu
 		calc.menuItem("File->Close").select();
 		// openStartcenter();
@@ -204,7 +204,7 @@ public class LongRun {
 		writer.menuItem("File->Open...").select();
 		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
-		Assert.assertEquals("The typed text is saved!", text, CalcUtil.getCellText("A65536"));
+		Assert.assertEquals("The typed text is saved!", text, SCTool.getCellText("A65536"));
 		calc.menuItem("File->Close").select();
 	}
 
@@ -212,7 +212,7 @@ public class LongRun {
 		String saveTo = getPath("temp/" + file);
 		String text = "Hello Openoffice";
 		writer.menuItem("File->New->Presentation").select();
-		PresentationWizard.ok();
+		presentationWizard.ok();
 		impress.waitForExistence(10, 2);
 		sleep(2);
 		impress.click(0.01, 0.01);
@@ -223,8 +223,8 @@ public class LongRun {
 		impress.menuItem("File->Save As...").select();
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok();
 		// Close it by clicking main menu
 		impress.menuItem("File->Close").select();
 		// openStartcenter();
@@ -279,8 +279,8 @@ public class LongRun {
 		submitSaveDlg(saveTo);
 		// If the format is supported by OO1.0, ask whether to change to the
 		// latest format
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok(); // Keep the current format
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok(); // Keep the current format
 
 		// Close it by clicking main menu
 		draw.menuItem("File->Close").select();
@@ -314,12 +314,12 @@ public class LongRun {
 		sleep(3);
 
 		// Verify if the Elements window is active
-		assertTrue(math_ElementsWindow.exists(3));
+		assertTrue(mathElementsWindow.exists(3));
 
 		// Insert a formula
 		String text = "5 times 3 = 15";
 		typeText(text);
-		math_EditWindow.menuItem("Edit->Select All").select();
+		mathEditWindow.menuItem("Edit->Select All").select();
 		typeKeys("<$copy>");
 		sleep(1);
 
@@ -327,32 +327,32 @@ public class LongRun {
 		assertEquals("The typed formula into math", text, app.getClipboard());
 
 		// Save the formula
-		math_EditWindow.menuItem("File->Save As...").select();
+		mathEditWindow.menuItem("File->Save As...").select();
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
 		// If the format is supported by OO1.0, ask whether to change to the
 		// latest format
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok(); // Keep the current format
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok(); // Keep the current format
 
 		// Close it by clicking main menu
-		math_EditWindow.menuItem("File->Close").select();
+		mathEditWindow.menuItem("File->Close").select();
 		// openStartcenter();
 
 		// Reopen the saved file
 		writer.menuItem("File->Open...").select();
 		submitOpenDlg(saveTo);
-		math_EditWindow.waitForExistence(10, 2);
+		mathEditWindow.waitForExistence(10, 2);
 
 		// Verify if the formula still exists in the file
-		math_EditWindow.menuItem("Edit->Select All").select();
+		mathEditWindow.menuItem("Edit->Select All").select();
 		typeKeys("<$copy>");
 		sleep(1);
 		assertEquals("The typed formula into math is saved", text, app.getClipboard());
 
 		// Close the file to avoid the app closing the Elements window
 		// automatically
-		math_EditWindow.menuItem("File->Close").select();
+		mathEditWindow.menuItem("File->Close").select();
 	}
 
 }

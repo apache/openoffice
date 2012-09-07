@@ -22,7 +22,7 @@
 package testcase.gui.sc.validity;
 
 import static org.junit.Assert.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.File;
@@ -36,7 +36,7 @@ import org.openoffice.test.common.Logger;
 import org.openoffice.test.vcl.IDList;
 import org.openoffice.test.vcl.widgets.VclMessageBox;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 public class ValidityDialogSetting {
 	private static IDList idList = new IDList(new File("./ids"));
@@ -52,7 +52,7 @@ public class ValidityDialogSetting {
 		// New a spreadsheet, select cell range, open Validity dialog
 		app.dispatch("private:factory/scalc");
 		calc.waitForExistence(10, 2);
-		CalcUtil.selectRange("A1:C5");
+		SCTool.selectRange("A1:C5");
 		app.dispatch(".uno:Validation");
 	}
 
@@ -66,76 +66,76 @@ public class ValidityDialogSetting {
 	 */
 	@Test
 	public void testAllowDateNotBetween() {
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(3); // "Date"
-		SC_ValidityDecimalCompareOperator.select(7); // "not between"
-		SC_ValiditySourceInput.setText("01/01/08");
-		SC_ValidityMaxValueInput.setText("03/01/08");
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(3); // "Date"
+		scValidityDecimalCompareOperator.select(7); // "not between"
+		scValiditySourceInput.setText("01/01/08");
+		scValidityMaxValueInput.setText("03/01/08");
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("12/31/07");
 		typeKeys("<enter>");
-		assertEquals("12/31/07", CalcUtil.getCellText("A1"));
+		assertEquals("12/31/07", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("03/02/08");
 		typeKeys("<enter>");
-		assertEquals("03/02/08", CalcUtil.getCellText("A2"));
+		assertEquals("03/02/08", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("A3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A3");
+		scInputBarInput.activate();
 		typeKeys("01/01/08");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A3"));
+		assertEquals("", SCTool.getCellText("A3"));
 
-		CalcUtil.selectRange("A4");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A4");
+		scInputBarInput.activate();
 		typeKeys("03/01/08");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A4"));
+		assertEquals("", SCTool.getCellText("A4"));
 
-		CalcUtil.selectRange("A5");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A5");
+		scInputBarInput.activate();
 		typeKeys("01/02/08");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A5"));
+		assertEquals("", SCTool.getCellText("A5"));
 
-		CalcUtil.selectRange("B1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B1");
+		scInputBarInput.activate();
 		typeKeys("02/29/08");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B1"));
+		assertEquals("", SCTool.getCellText("B1"));
 
-		CalcUtil.selectRange("B2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B2");
+		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B2"));
+		assertEquals("", SCTool.getCellText("B2"));
 
-		CalcUtil.selectRange("B3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B3");
+		scInputBarInput.activate();
 		typeKeys("39448");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B3"));
+		assertEquals("", SCTool.getCellText("B3"));
 	}
 
 	/**
@@ -144,53 +144,53 @@ public class ValidityDialogSetting {
 	@Test
 	public void testAllowDecimalEqual() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(2); // "Decimal"
-		SC_ValidityDecimalCompareOperator.select(0); // "equal"
-		SC_ValiditySourceInput.setText("0.33333333");
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(2); // "Decimal"
+		scValidityDecimalCompareOperator.select(0); // "equal"
+		scValiditySourceInput.setText("0.33333333");
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("0.33333333");
 		typeKeys("<enter>");
-		assertEquals("0.33333333", CalcUtil.getCellText("A1"));
+		assertEquals("0.33333333", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("=1/3");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A2"));
+		assertEquals("", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("A3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A3");
+		scInputBarInput.activate();
 		typeKeys("0.3");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A3"));
+		assertEquals("", SCTool.getCellText("A3"));
 
-		CalcUtil.selectRange("A4");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A4");
+		scInputBarInput.activate();
 		typeKeys("0.333333333");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A4"));
+		assertEquals("", SCTool.getCellText("A4"));
 
-		CalcUtil.selectRange("B2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B2");
+		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B2"));
+		assertEquals("", SCTool.getCellText("B2"));
 	}
 
 	/**
@@ -199,43 +199,43 @@ public class ValidityDialogSetting {
 	@Test
 	public void testAllowGreaterTextLength() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(7); // "Text length"
-		SC_ValidityDecimalCompareOperator.select(4); // "greater than or equal to"
-		SC_ValiditySourceInput.setText("10");
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(7); // "Text length"
+		scValidityDecimalCompareOperator.select(4); // "greater than or equal to"
+		scValiditySourceInput.setText("10");
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("testtesttesttest");
 		typeKeys("<enter>");
-		assertEquals("testtesttesttest", CalcUtil.getCellText("A1"));
+		assertEquals("testtesttesttest", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("test test ");
 		typeKeys("<enter>");
-		assertEquals("test test ", CalcUtil.getCellText("A2"));
+		assertEquals("test test ", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("A4");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A4");
+		scInputBarInput.activate();
 		typeKeys(" ");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A4"));
+		assertEquals("", SCTool.getCellText("A4"));
 
-		CalcUtil.selectRange("A3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A3");
+		scInputBarInput.activate();
 		typeKeys("Testatest");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A3"));
+		assertEquals("", SCTool.getCellText("A3"));
 	}
 
 	/**
@@ -246,44 +246,44 @@ public class ValidityDialogSetting {
 
 		app.dispatch(".uno:Validation");
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(7); // "Text length"
-		SC_ValidityDecimalCompareOperator.select(1); // "less than"
-		SC_ValiditySourceInput.setText("10");
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(7); // "Text length"
+		scValidityDecimalCompareOperator.select(1); // "less than"
+		scValiditySourceInput.setText("10");
 
-		SC_ValidityInputHelpTabPage.select();
-		SC_ValidityInputHelpCheckbox.check();
-		SC_ValidityInputHelpTitle.setText("Help Info Title");
-		SC_ValidityHelpMessage.setText("help info");
+		scValidityInputHelpTabPage.select();
+		scValidityInputHelpCheckbox.check();
+		scValidityInputHelpTitle.setText("Help Info Title");
+		scValidityHelpMessage.setText("help info");
 
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorAlertActionList.select("Information");
-		SC_ValidityErrorMessageTitle.setText("Notes to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorAlertActionList.select("Information");
+		scValidityErrorMessageTitle.setText("Notes to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("testtesttesttest<enter>");
 		ActiveMsgBox.ok();
-		assertEquals("testtesttesttest", CalcUtil.getCellText("A1"));
+		assertEquals("testtesttesttest", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("sfsafsddddddd<enter>");
 		ActiveMsgBox.cancel();
-		assertEquals("", CalcUtil.getCellText("A2"));
+		assertEquals("", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("10<enter>");
-		assertEquals("10", CalcUtil.getCellText("A2"));
+		assertEquals("10", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("A3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A3");
+		scInputBarInput.activate();
 		typeKeys("ok<enter>");
-		assertEquals("ok", CalcUtil.getCellText("A3"));
+		assertEquals("ok", SCTool.getCellText("A3"));
 	}
 
 	/**
@@ -292,18 +292,18 @@ public class ValidityDialogSetting {
 	@Test
 	public void testAllowListSpecialChar() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(6); // "List"
-		SC_ValidityEntries.focus();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(6); // "List"
+		scValidityEntries.focus();
 		typeKeys("a");
 		typeKeys("<enter>");
 		typeKeys("b");
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaTabpage.ok();
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaTabpage.ok();
 
 		// These codes are not stable: start
 		// calc.rightClick(1, 1);
@@ -311,18 +311,18 @@ public class ValidityDialogSetting {
 		// typeKeys("<down><enter>"); // Choose a
 		// sleep(2); // if no sleep, error occur
 		// These codes are not stable: end
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("a<enter>");
-		assertEquals("a", CalcUtil.getCellText("A1"));
+		assertEquals("a", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("B2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B2");
+		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B2"));
+		assertEquals("", SCTool.getCellText("B2"));
 	}
 
 	/**
@@ -331,94 +331,94 @@ public class ValidityDialogSetting {
 	@Test
 	public void testAllowTimeBetween() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(4); // "Time"
-		SC_ValidityDecimalCompareOperator.select(6); // "between"
-		SC_ValiditySourceInput.setText("27:00");
-		SC_ValidityMaxValueInput.setText("21:00");
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(4); // "Time"
+		scValidityDecimalCompareOperator.select(6); // "between"
+		scValiditySourceInput.setText("27:00");
+		scValidityMaxValueInput.setText("21:00");
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("21:00");
 		typeKeys("<enter>");
-		assertEquals("09:00:00 PM", CalcUtil.getCellText("A1"));
+		assertEquals("09:00:00 PM", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("27:00");
 		typeKeys("<enter>");
-		assertEquals("27:00:00", CalcUtil.getCellText("A2"));
+		assertEquals("27:00:00", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("A3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A3");
+		scInputBarInput.activate();
 		typeKeys("1.125");
 		typeKeys("<enter>");
-		assertEquals("1.125", CalcUtil.getCellText("A3"));
+		assertEquals("1.125", SCTool.getCellText("A3"));
 
-		CalcUtil.selectRange("A4");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A4");
+		scInputBarInput.activate();
 		typeKeys("0.875");
 		typeKeys("<enter>");
-		assertEquals("0.875", CalcUtil.getCellText("A4"));
+		assertEquals("0.875", SCTool.getCellText("A4"));
 
-		CalcUtil.selectRange("B1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B1");
+		scInputBarInput.activate();
 		typeKeys("03:00:01");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B1"));
+		assertEquals("", SCTool.getCellText("B1"));
 
-		CalcUtil.selectRange("B2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B2");
+		scInputBarInput.activate();
 		typeKeys("20:59:59");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B2"));
+		assertEquals("", SCTool.getCellText("B2"));
 
-		CalcUtil.selectRange("B3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B3");
+		scInputBarInput.activate();
 		typeKeys("1.126");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B3"));
+		assertEquals("", SCTool.getCellText("B3"));
 
-		CalcUtil.selectRange("B4");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B4");
+		scInputBarInput.activate();
 		typeKeys("0.874");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B4"));
+		assertEquals("", SCTool.getCellText("B4"));
 
-		CalcUtil.selectRange("C1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("C1");
+		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("C1"));
+		assertEquals("", SCTool.getCellText("C1"));
 
-		CalcUtil.selectRange("C2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("C2");
+		scInputBarInput.activate();
 		typeKeys("24:00");
 		typeKeys("<enter>");
-		assertEquals("24:00:00", CalcUtil.getCellText("C2"));
+		assertEquals("24:00:00", SCTool.getCellText("C2"));
 
-		CalcUtil.selectRange("C3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("C3");
+		scInputBarInput.activate();
 		typeKeys("12:00");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("C3"));
+		assertEquals("", SCTool.getCellText("C3"));
 	}
 
 	/**
@@ -427,40 +427,40 @@ public class ValidityDialogSetting {
 	@Test
 	public void testAllowTimeGreaterThan() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(4); // "Time"
-		SC_ValidityDecimalCompareOperator.select(4); // "greater than or equal to"
-		SC_ValiditySourceInput.setText("8:00");
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(4); // "Time"
+		scValidityDecimalCompareOperator.select(4); // "greater than or equal to"
+		scValiditySourceInput.setText("8:00");
 
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorAlertActionList.select(1); // "Warning"
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorAlertActionList.select(1); // "Warning"
 
-		SC_ValidityErrorMessageTitle.setText("warning to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityErrorMessageTitle.setText("warning to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("7:30");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("07:30:00 AM", CalcUtil.getCellText("A1"));
+		assertEquals("07:30:00 AM", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("6:00");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.cancel();
-		assertEquals("", CalcUtil.getCellText("A2"));
+		assertEquals("", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("A3");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A3");
+		scInputBarInput.activate();
 		typeKeys("8:00");
 		typeKeys("<enter>");
-		assertEquals("08:00:00 AM", CalcUtil.getCellText("A3"));
+		assertEquals("08:00:00 AM", SCTool.getCellText("A3"));
 	}
 
 	/**
@@ -469,51 +469,51 @@ public class ValidityDialogSetting {
 	@Test
 	public void testAllowWholeNumLessThan() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(1); // "Whole Numbers"
-		SC_ValidityDecimalCompareOperator.select(3); // "less than or equal"
-		SC_ValiditySourceInput.setText("100");
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(1); // "Whole Numbers"
+		scValidityDecimalCompareOperator.select(3); // "less than or equal"
+		scValiditySourceInput.setText("100");
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("99");
 		typeKeys("<enter>");
-		assertEquals("99", CalcUtil.getCellText("A1"));
+		assertEquals("99", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("A2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A2");
+		scInputBarInput.activate();
 		typeKeys("100");
 		typeKeys("<enter>");
-		assertEquals("100", CalcUtil.getCellText("A2"));
+		assertEquals("100", SCTool.getCellText("A2"));
 
-		CalcUtil.selectRange("B1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B1");
+		scInputBarInput.activate();
 		typeKeys("101");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B1"));
+		assertEquals("", SCTool.getCellText("B1"));
 
-		CalcUtil.selectRange("B2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B2");
+		scInputBarInput.activate();
 		typeKeys("45.5");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("B2"));
+		assertEquals("", SCTool.getCellText("B2"));
 
-		CalcUtil.selectRange("C1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("C1");
+		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("C1"));
+		assertEquals("", SCTool.getCellText("C1"));
 	}
 
 	/**
@@ -522,25 +522,25 @@ public class ValidityDialogSetting {
 	@Test
 	public void testDefaultErrorAlertMessage() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(2); // "Decimal"
-		SC_ValidityDecimalCompareOperator.select(0); // "equal"
-		SC_ValiditySourceInput.setText("1");
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(2); // "Decimal"
+		scValidityDecimalCompareOperator.select(0); // "equal"
+		scValiditySourceInput.setText("1");
 
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorAlertActionList.select(0); // "Stop"
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorAlertActionList.select(0); // "Stop"
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("13");
 		typeKeys("<enter>");
 		assertEquals("OpenOffice.org Calc", ActiveMsgBox.getCaption());
 		// assertEquals("Invalid value.",ActiveMsgBox.getMessage()); // Can not
 		// verify in multi-language
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A1"));
+		assertEquals("", SCTool.getCellText("A1"));
 	}
 
 	/**
@@ -549,20 +549,20 @@ public class ValidityDialogSetting {
 	@Test
 	public void testUncheckErrorAlert() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(2); // "Decimal"
-		SC_ValidityDecimalCompareOperator.select(0); // "equal"
-		SC_ValiditySourceInput.setText("1");
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(2); // "Decimal"
+		scValidityDecimalCompareOperator.select(0); // "equal"
+		scValiditySourceInput.setText("1");
 
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.uncheck();
-		SC_ValidityErrorAlertActionList.select(0); // "Stop"
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.uncheck();
+		scValidityErrorAlertActionList.select(0); // "Stop"
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("A1");
+		SCTool.selectRange("A1");
 		typeKeys("13");
 		typeKeys("<enter>");
-		assertEquals("13", CalcUtil.getCellText("A1"));
+		assertEquals("13", SCTool.getCellText("A1"));
 	}
 
 	/**
@@ -571,40 +571,40 @@ public class ValidityDialogSetting {
 	@Test
 	public void testValidityCellRangeSourcePicker() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(5); // "Cell range"
-		SC_ValiditySourcePicker.click();
-		assertEquals(false, SC_ValidityCriteriaAllowList.exists());
-		SC_ValiditySourceInput.setText("$E$2:$G$5");
-		SC_ValiditySourcePicker.click();
-		assertEquals(true, SC_ValidityCriteriaAllowList.exists());
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(5); // "Cell range"
+		scValiditySourcePicker.click();
+		assertEquals(false, scValidityCriteriaAllowList.exists());
+		scValiditySourceInput.setText("$E$2:$G$5");
+		scValiditySourcePicker.click();
+		assertEquals(true, scValidityCriteriaAllowList.exists());
 
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorAlertActionList.select(0); // "Stop"
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value.");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorAlertActionList.select(0); // "Stop"
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value.");
+		scValidityErrorAlertTabPage.ok();
 
 		// calc.focus();
-		CalcUtil.selectRange("E2");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("E2");
+		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
 
-		CalcUtil.selectRange("A1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("A1");
+		scInputBarInput.activate();
 		typeKeys("test32");
 		typeKeys("<enter>");
 		assertEquals("Invalid value.", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("A1"));
+		assertEquals("", SCTool.getCellText("A1"));
 
-		CalcUtil.selectRange("B1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B1");
+		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
-		assertEquals("test", CalcUtil.getCellText("B1"));
+		assertEquals("test", SCTool.getCellText("B1"));
 	}
 
 	/**
@@ -612,30 +612,30 @@ public class ValidityDialogSetting {
 	 */
 	@Test
 	public void testAllowBlankCells() {
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(5); // "Cell range"
-		SC_ValiditySourceInput.setText("$E$1:$E$5");
-		SC_ValidityAllowBlankCells.check();
-		SC_ValidityCriteriaTabpage.ok();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(5); // "Cell range"
+		scValiditySourceInput.setText("$E$1:$E$5");
+		scValidityAllowBlankCells.check();
+		scValidityCriteriaTabpage.ok();
 
-		CalcUtil.selectRange("E1");
+		SCTool.selectRange("E1");
 		typeKeys("A<enter>A<enter>A<enter>A<enter>A<enter>");
 
-		CalcUtil.selectRange("A1");
+		SCTool.selectRange("A1");
 		typeKeys("A<enter>");
-		CalcUtil.selectRange("D1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("D1");
+		scInputBarInput.activate();
 		typeKeys("<backspace><enter>");
-		assertEquals("", CalcUtil.getCellText("D1"));
+		assertEquals("", SCTool.getCellText("D1"));
 
-		CalcUtil.selectRange("B1");
+		SCTool.selectRange("B1");
 		app.dispatch(".uno:Validation");
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityAllowBlankCells.uncheck();
+		scValidityCriteriaTabpage.select();
+		scValidityAllowBlankCells.uncheck();
 		typeKeys("<enter>");
 
-		CalcUtil.selectRange("B1");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("B1");
+		scInputBarInput.activate();
 		typeKeys("<backspace><enter>");
 		typeKeys("<enter>");
 	}

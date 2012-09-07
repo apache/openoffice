@@ -27,7 +27,7 @@ package testcase.gui.svt.sc;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -43,7 +43,7 @@ import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 import org.openoffice.test.common.Testspace;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 public class OperationOnSampleFile {
 	@Rule
@@ -86,16 +86,16 @@ public class OperationOnSampleFile {
 
 			// Insert Chart
 			app.dispatch(".uno:Insert");
-			SCAfterCurrentSheet.check();
-			SCNewSheetName.setText("Instant Chart");
-			SCInsertSheetDlg.ok();
+			scAfterCurrentSheet.check();
+			scNewSheetName.setText("Instant Chart");
+			scInsertSheetDlg.ok();
 			sleep(5);
 			inputCells(inputStr);
 			sleep(2);
-			CalcUtil.selectRange("A1:C5");
+			SCTool.selectRange("A1:C5");
 			calc.menuItem("Insert->Chart...").select();
 			sleep(1);
-			Chart_Wizard.ok();
+			chartWizard.ok();
 			sleep(5);
 			calc.typeKeys("<esc>");
 			sleep(5);
@@ -106,15 +106,15 @@ public class OperationOnSampleFile {
 
 			// Insert Graphic and Fontwork
 			app.dispatch(".uno:Insert");
-			SCAfterCurrentSheet.check();
-			SCNewSheetName.setText("Instant Graphic and fontwork");
-			SCInsertSheetDlg.ok();
+			scAfterCurrentSheet.check();
+			scNewSheetName.setText("Instant Graphic and fontwork");
+			scInsertSheetDlg.ok();
 			sleep(5);
 			calc.menuItem("Insert->Picture->From File...").select();
 			sleep(2);
-			FilePicker_Path.setText(pic);
+			filePickerPath.setText(pic);
 			sleep(1);
-			FilePicker_Open.click();
+			filePickerOpen.click();
 			sleep(5);
 			calc.typeKeys("<esc>");
 			sleep(2);
@@ -123,14 +123,14 @@ public class OperationOnSampleFile {
 			app.dispatch(".uno:FontworkGalleryFloater");
 			sleep(2);
 			typeKeys("<right>");
-			FontworkGalleryDlg.ok();
+			fontworkGalleryDlg.ok();
 			sleep(2);
 			calc.typeKeys("<esc>");
 			sleep(2);
 
 			// Close file
 			calc.menuItem("File->Close").select();
-			ActiveMsgBox.no();
+			activeMsgBox.no();
 			sleep(2);
 
 			HashMap<String, Object> perfData = SystemUtil.getProcessPerfData(pid);

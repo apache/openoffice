@@ -19,11 +19,11 @@
  * 
  *************************************************************/
 
-package testcase.gui;
+package testcase.gui.svt;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.File;
@@ -43,7 +43,7 @@ import org.openoffice.test.common.Condition;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
 
-import testlib.gui.ImpressUtil;
+import testlib.gui.SDTool;
 
 @RunWith(Parameterized.class)
 public class TestSample {
@@ -192,8 +192,8 @@ public class TestSample {
 
 		writer.menuItem("File->Save As...").select();
 		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok();
 		sleep(2);
 		writer.waitForEnabled(120, 2);
 
@@ -223,15 +223,15 @@ public class TestSample {
 
 		calc.menuItem("File->Save As...").select();
 		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok();
 		sleep(2);
 
 		new Condition() {
 			@Override
 			public boolean value() {
-				if (MsgBox_AdditionalRowsNotSaved.exists()) {
-					MsgBox_AdditionalRowsNotSaved.ok();
+				if (msgBox_AdditionalRowsNotSaved.exists()) {
+					msgBox_AdditionalRowsNotSaved.ok();
 				}
 				return calc.isEnabled();
 			}
@@ -255,17 +255,17 @@ public class TestSample {
 	public void testImpress() {
 		startcenter.menuItem("File->Open...").select();
 		submitOpenDlg(file.getAbsolutePath());
-		handleBlocker(impress, ImpressSlideSorter, ImpressOutline, ImpressHandout);
+		handleBlocker(impress, impressSlideSorter, impressOutline, impressHandout);
 		sleep(10); // Wait. Crash maybe occurs when the file is shown!
-		ImpressUtil.getCurView().menuItem("View->Normal").select();
+		SDTool.getActiveView().menuItem("View->Normal").select();
 
 		// Assert.assertTrue("File Passed:" + file,
 		// impress.getCaption().contains(file.getName()));
 
 		impress.menuItem("File->Save As...").select();
 		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
+		if (alienFormatDlg.exists(3))
+			alienFormatDlg.ok();
 		sleep(2);
 		impress.waitForEnabled(120, 2);
 		impress.menuItem("File->Close").select();

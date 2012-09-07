@@ -24,7 +24,7 @@
 
 package testcase.gui.sd.shape;
 import static org.junit.Assert.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
@@ -45,13 +45,13 @@ public class ShapeTypes {
 
 		// New a impress, insert some slides
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 		// Pop up navigator panel
-		if (!SD_NavigatorDlg.exists()) {
+		if (!sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}
 			
-		if(!SD_Drawing_Toolbar.exists()){
+		if(!sdDrawingToolbar.exists()){
 			app.dispatch(".uno:AvailableToolbars?Toolbar:string=toolbar");
 		}
 	}
@@ -70,27 +70,27 @@ public class ShapeTypes {
 
 		impress.focus();
 		//---before insert CallOut Shape
-		SD_Navigator.focus();
-		SD_Navigator_Shape_Filter.click();
+		sdNavigator.focus();
+		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
-		SD_Navigator.select(0);
+		sdNavigator.select(0);
 		typeKeys("<enter>");
-		String[] allShapes=SD_Navigator.getAllItemsText();
+		String[] allShapes=sdNavigator.getAllItemsText();
 		assertEquals(3, allShapes.length);
 		
 		//--- After insert CallOut shape
-		SD_CalloutShapes.click();
+		sdCalloutShapes.click();
 		impress.focus();
 		impress.drag(100, 100, 200, 200);
-		SD_NavigatorDlg.focus();
-		SD_Navigator_Shape_Filter.click();
+		sdNavigatorDlg.focus();
+		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
-		SD_Navigator.focus();
-		SD_Navigator.select(0);
+		sdNavigator.focus();
+		sdNavigator.select(0);
 		typeKeys("<enter>");
-		allShapes=SD_Navigator.getAllItemsText();
+		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
 
 	}
@@ -103,27 +103,27 @@ public class ShapeTypes {
 
 		impress.focus();
 		//---before insert CallOut Shape
-		SD_Navigator.focus();
-		SD_Navigator_Shape_Filter.click();
+		sdNavigator.focus();
+		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
-		SD_Navigator.select(0);
+		sdNavigator.select(0);
 		typeKeys("<enter>");
-		String[] allShapes=SD_Navigator.getAllItemsText();
+		String[] allShapes=sdNavigator.getAllItemsText();
 		assertEquals(3, allShapes.length);
 		
 		//--- After insert CallOut shape
-		SD_StarShapes.click();
+		sdStarShapes.click();
 		impress.focus();
 		impress.drag(100, 100, 200, 200);
-		SD_NavigatorDlg.focus();
-		SD_Navigator_Shape_Filter.click();
+		sdNavigatorDlg.focus();
+		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
 		typeKeys("<enter>");
-		SD_Navigator.focus();
-		SD_Navigator.select(0);
+		sdNavigator.focus();
+		sdNavigator.select(0);
 		typeKeys("<enter>");
-		allShapes=SD_Navigator.getAllItemsText();
+		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
 
 	}

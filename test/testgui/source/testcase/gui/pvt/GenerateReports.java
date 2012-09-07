@@ -23,10 +23,10 @@
  * 
  */
 
-package testcase.gui.performance.benchmark;
+package testcase.gui.pvt;
 
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.BufferedReader;
@@ -41,7 +41,7 @@ import java.util.Map;
 
 import org.openoffice.test.common.FileUtil;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 public class GenerateReports {
 	static public void computeResults(String resultDir) {
@@ -158,7 +158,7 @@ public class GenerateReports {
 		submitOpenDlg(report_dir);
 		sleep(10);
 
-		CalcUtil.selectRange("Spread.F1");
+		SCTool.selectRange("Spread.F1");
 		calc.menuItem("Insert->Columns").select();
 		// SC_InsertColumnsRowsdialog.ok();
 		sleep(1);
@@ -237,7 +237,7 @@ public class GenerateReports {
 			// result = raw_data.get(raw_data.size() - 2) + "/ " +
 			// raw_data.get(raw_data.size() - 1);
 		}
-		CalcUtil.selectRange(cell);
+		SCTool.selectRange(cell);
 		typeKeys(result + "<enter>");
 	}
 

@@ -22,7 +22,7 @@
 package testcase.gui.sc.validity;
 
 import static org.junit.Assert.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.File;
@@ -35,7 +35,7 @@ import org.openoffice.test.common.Logger;
 import org.openoffice.test.vcl.IDList;
 import org.openoffice.test.vcl.widgets.VclMessageBox;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 public class ValidityDateSupport1024Columns {
 	private static IDList idList = new IDList(new File("./ids"));
@@ -61,41 +61,41 @@ public class ValidityDateSupport1024Columns {
 	@Test
 	public void testValidityDateSupport1024Columns() {
 		app.dispatch("private:factory/scalc");
-		CalcUtil.selectRange("ALM1000:ALO1005");
+		SCTool.selectRange("ALM1000:ALO1005");
 		app.dispatch(".uno:Validation");
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(3); // "Date"
-		SC_ValidityDecimalCompareOperator.select(2); // "greater than"
-		SC_ValiditySourceInput.setText("01/01/08");
-		SC_ValidityErrorAlertTabPage.select();
-		SC_ValidityShowErrorMessage.check();
-		SC_ValidityErrorMessageTitle.setText("Stop to enter");
-		SC_ValidityErrorMessage.setText("Invalid value");
-		SC_ValidityErrorAlertTabPage.ok();
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(3); // "Date"
+		scValidityDecimalCompareOperator.select(2); // "greater than"
+		scValiditySourceInput.setText("01/01/08");
+		scValidityErrorAlertTabPage.select();
+		scValidityShowErrorMessage.check();
+		scValidityErrorMessageTitle.setText("Stop to enter");
+		scValidityErrorMessage.setText("Invalid value");
+		scValidityErrorAlertTabPage.ok();
 
-		CalcUtil.selectRange("ALM1001");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("ALM1001");
+		scInputBarInput.activate();
 		typeKeys("02/01/08<enter>");
-		assertEquals("02/01/08", CalcUtil.getCellText("ALM1001"));
+		assertEquals("02/01/08", SCTool.getCellText("ALM1001"));
 
-		CalcUtil.selectRange("ALM1002");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("ALM1002");
+		scInputBarInput.activate();
 		typeKeys("01/02/08<enter>");
-		assertEquals("01/02/08", CalcUtil.getCellText("ALM1002"));
+		assertEquals("01/02/08", SCTool.getCellText("ALM1002"));
 
-		CalcUtil.selectRange("ALM1003");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("ALM1003");
+		scInputBarInput.activate();
 		typeKeys("01/01/08<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("ALM1003"));
+		assertEquals("", SCTool.getCellText("ALM1003"));
 
-		CalcUtil.selectRange("AML1003");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("AML1003");
+		scInputBarInput.activate();
 		typeKeys("12/31/07<enter>");
 		assertEquals("Invalid value", ActiveMsgBox.getMessage());
 		ActiveMsgBox.ok();
-		assertEquals("", CalcUtil.getCellText("AML1003"));
+		assertEquals("", SCTool.getCellText("AML1003"));
 	}
 }

@@ -55,16 +55,16 @@ public class ValidityDialogDefaultValue {
 	@Test
 	public void testValidityUICellRange() {
 
-		SC_ValidityCriteriaTabpage.select();
-		SC_ValidityCriteriaAllowList.select(5); // "Cell range"
+		scValidityCriteriaTabpage.select();
+		scValidityCriteriaAllowList.select(5); // "Cell range"
 
-		assertEquals(true, SC_ValidityAllowBlankCells.isChecked());
-		assertEquals(true, SC_ValidityShowSelectionList.isChecked());
-		assertEquals(false, SC_ValiditySortEntriesAscending.isChecked());
-		assertEquals(true, SC_ValidityAllowBlankCells.isEnabled());
-		assertEquals(true, SC_ValiditySortEntriesAscending.isEnabled());
-		assertEquals(true, SC_ValiditySortEntriesAscending.isEnabled());
-		assertEquals(true, SC_ValiditySourcePicker.isEnabled());
+		assertEquals(true, scValidityAllowBlankCells.isChecked());
+		assertEquals(true, scValidityShowSelectionList.isChecked());
+		assertEquals(false, scValiditySortEntriesAscending.isChecked());
+		assertEquals(true, scValidityAllowBlankCells.isEnabled());
+		assertEquals(true, scValiditySortEntriesAscending.isEnabled());
+		assertEquals(true, scValiditySortEntriesAscending.isEnabled());
+		assertEquals(true, scValiditySourcePicker.isEnabled());
 	}
 
 	/**
@@ -73,16 +73,16 @@ public class ValidityDialogDefaultValue {
 	@Test
 	public void testValidityUIErrorAlert() {
 
-		SC_ValidityErrorAlertTabPage.select();
-		assertEquals(true, SC_ValidityErrorAlertActionList.isEnabled());
+		scValidityErrorAlertTabPage.select();
+		assertEquals(true, scValidityErrorAlertActionList.isEnabled());
 		// assertEquals("Stop",SC_ValidityErrorAlertActionList.getSelText()); //
 		// Do not test this. Do it in GVT.
-		assertEquals(true, SC_ValidityErrorMessageTitle.isEnabled());
-		assertEquals("", SC_ValidityErrorMessageTitle.getText());
-		assertEquals(true, SC_ValidityErrorMessage.isEnabled());
-		assertEquals("", SC_ValidityErrorMessage.getText());
-		SC_ValidityErrorAlertActionList.select(3); // "Macro"
-		assertEquals(true, SC_ValidityErrorBrowseButton.isEnabled());
+		assertEquals(true, scValidityErrorMessageTitle.isEnabled());
+		assertEquals("", scValidityErrorMessageTitle.getText());
+		assertEquals(true, scValidityErrorMessage.isEnabled());
+		assertEquals("", scValidityErrorMessage.getText());
+		scValidityErrorAlertActionList.select(3); // "Macro"
+		assertEquals(true, scValidityErrorBrowseButton.isEnabled());
 	}
 
 }

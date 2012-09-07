@@ -23,7 +23,7 @@ package testcase.gui.sc.validity;
 
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
@@ -32,7 +32,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 public class ValiditySampleFile {
 
@@ -62,13 +62,13 @@ public class ValiditySampleFile {
 		submitOpenDlg(file);
 		calc.waitForExistence(10, 2);
 
-		CalcUtil.selectRange("D5");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("D5");
+		scInputBarInput.activate();
 		for (int i = 1; i <= 10; i++)
 			typeKeys("<backspace>");
 		typeKeys("<enter>");
 
-		assertEquals("", CalcUtil.getCellText("D5"));
+		assertEquals("", SCTool.getCellText("D5"));
 	}
 
 	/**
@@ -84,12 +84,12 @@ public class ValiditySampleFile {
 		submitOpenDlg(file);
 		calc.waitForExistence(10, 2);
 
-		CalcUtil.selectRange("F5");
-		SC_InputBar_Input.activate();
+		SCTool.selectRange("F5");
+		scInputBarInput.activate();
 		typeKeys("<backspace><enter>");
 
-		ActiveMsgBox.ok();
-		assertEquals("8", CalcUtil.getCellText("F5"));
+		activeMsgBox.ok();
+		assertEquals("8", SCTool.getCellText("F5"));
 	}
 
 	/**
@@ -103,11 +103,11 @@ public class ValiditySampleFile {
 		submitOpenDlg(file);
 		calc.waitForExistence(10, 2);
 
-		CalcUtil.selectRange("F19");
+		SCTool.selectRange("F19");
 		typeKeys("d<enter>");
-		CalcUtil.selectRange("F17");
+		SCTool.selectRange("F17");
 		typeKeys("Test<enter>");
 
-		assertEquals("Test", CalcUtil.getCellText("F17"));
+		assertEquals("Test", SCTool.getCellText("F17"));
 	}
 }

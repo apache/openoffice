@@ -22,7 +22,7 @@
 package testcase.gui;
 
 import static org.junit.Assert.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
@@ -31,7 +31,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 /**
  * If AOO is not installed in the default directory, please specify the system
@@ -78,7 +78,7 @@ public class AOOTest {
 		startcenter.menuItem("File->New->Spreadsheet").select();
 		calc.waitForExistence(10, 3);
 		typeKeys("Hello");
-		assertEquals("Assert", "Hello", CalcUtil.getCellInput("A1"));
+		assertEquals("Assert", "Hello", SCTool.getCellInput("A1"));
 	}
 
 }

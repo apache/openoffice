@@ -26,7 +26,7 @@ package testcase.gui.svt.sw;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -91,7 +91,7 @@ public class OperationOnSample1 {
 
 			writer.menuItem("Table->Split Cells").select();
 			sleep(2);
-			Writer_SplitCellDlg.ok();
+			writerSplitCellDlg.ok();
 			sleep(2);
 
 			writer.typeKeys("<shift down>");
@@ -106,21 +106,21 @@ public class OperationOnSample1 {
 			writer.typeKeys("<enter>");
 			// writer.menuItem("Table->Insert->Rows...").select();
 			app.dispatch(".uno:InsertRowDialog");
-			Writer_InsertRowsDlg.ok();
+			writerInsertRowsDlg.ok();
 			sleep(2);
 
 			writer.menuItem("Table->Delete->Rows").select();
 			sleep(2);
 
 			app.dispatch(".uno:InsertColumnDialog");
-			Writer_InsertColumnsDlg.ok();
+			writerInsertColumnsDlg.ok();
 			sleep(2);
 
 			writer.menuItem("Table->Delete->Columns").select();
 			sleep(2);
 
 			writer.menuItem("File->Close").select();
-			ActiveMsgBox.no();
+			activeMsgBox.no();
 			sleep(2);
 
 			HashMap<String, Object> perfData = SystemUtil.getProcessPerfData(pid);

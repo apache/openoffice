@@ -27,7 +27,7 @@ package testcase.gui.formula.importexport;
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
@@ -68,12 +68,12 @@ public class CreateFormulaInDifferentWays {
 	public void testElementsWindowActive() throws Exception {
 
 		// Check if the "View->Elements" menu is selected
-		boolean viewElements = math_ElementsWindow.exists();
+		boolean viewElements = mathElementsWindow.exists();
 
 		// Active or inactive the Elements window
 		app.dispatch(".uno:ToolBox");
 
-		assertNotSame("Elements window active/inactive failed", viewElements, math_ElementsWindow.exists());
+		assertNotSame("Elements window active/inactive failed", viewElements, mathElementsWindow.exists());
 	}
 
 	/**
@@ -86,14 +86,14 @@ public class CreateFormulaInDifferentWays {
 		String saveTo = getPath("temp/" + "FormulaFromElements.odf");
 
 		// Make Elements window pop up
-		if (!math_ElementsWindow.exists()) {
+		if (!mathElementsWindow.exists()) {
 			app.dispatch(".uno:ToolBox");
 		}
 
 		// Click a formula in Elements window and edit the formula in the
 		// commands window
-		math_ElementsRelations.click();
-		math_ElementsRelationsNotEqual.click();
+		mathElementsRelations.click();
+		mathElementsRelationsNotEqual.click();
 		typeKeys("a");
 		app.dispatch(".uno:NextMark");
 		typeKeys("b");
@@ -115,7 +115,7 @@ public class CreateFormulaInDifferentWays {
 		openStartcenter();
 		app.dispatch(".uno:Open");
 		submitOpenDlg(saveTo);
-		math_EditWindow.waitForExistence(10, 2);
+		mathEditWindow.waitForExistence(10, 2);
 
 		// Verify if the formula still exists in the file, and correct
 		app.dispatch(".uno:Select");
@@ -138,7 +138,7 @@ public class CreateFormulaInDifferentWays {
 
 		// Right click in equation editor, choose "Functions->More->arcsin(x)",
 		// input a
-		math_EditWindow.rightClick(5, 5);
+		mathEditWindow.rightClick(5, 5);
 		typeKeys("<down>");
 		typeKeys("<down>");
 		typeKeys("<down>");
@@ -168,7 +168,7 @@ public class CreateFormulaInDifferentWays {
 		openStartcenter();
 		app.dispatch(".uno:Open");
 		submitOpenDlg(saveTo);
-		math_EditWindow.waitForExistence(10, 2);
+		mathEditWindow.waitForExistence(10, 2);
 
 		// Verify if the formula still exists in the file, and correct
 		app.dispatch(".uno:Select");
@@ -189,14 +189,14 @@ public class CreateFormulaInDifferentWays {
 	public void testUndoRedoInMath() throws Exception {
 
 		// Make Elements window pop up
-		if (!math_ElementsWindow.exists()) {
+		if (!mathElementsWindow.exists()) {
 			app.dispatch(".uno:ToolBox");
 		}
 
 		// Click a formula in Elements window and edit the formula in the
 		// commands window
-		math_ElementsUnaryBinary.click();
-		math_ElementsUnaryBinaryPlus.click();
+		mathElementsUnaryBinary.click();
+		mathElementsUnaryBinaryPlus.click();
 		typeKeys("a"); // "+a";
 
 		// Undo and verify if it works fine

@@ -30,7 +30,7 @@ import org.junit.runners.Parameterized.Parameters;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import testcase.gui.TestSample;
+import testcase.gui.svt.TestSample;
 import testsuite.gui.TestSampleAsOriginal.SetParams;
 
 @RunWith(Suite.class)

@@ -55,55 +55,55 @@ public class ChangeTableBackgroundProperty {
 
 		// Create a new presentation document
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 
 		// Insert a table
 		app.dispatch(".uno:InsertTable", 3);
-		InsertTable.ok();
+		insertTable.ok();
 
 		// Verify if the table toolbar is active
-		assertTrue(Table_Toolbar.exists(3));
+		assertTrue(tableToolbar.exists(3));
 
 		// open Table Properties Dialog
 		app.dispatch(".uno:TableDialog", 3);
-		Area_Area_page.select();
+		areaAreapage.select();
 		// select Color
-		Area_Fill_Type.select(1);
-		assertEquals("Area_Fill_Type is Color", Area_Fill_Type.getSelText(), Area_Fill_Type.getItemText(1));
-		Area_Fill_Color.select(2);
+		areaFillType.select(1);
+		assertEquals("Area_Fill_Type is Color", areaFillType.getSelText(), areaFillType.getItemText(1));
+		areaFillColor.select(2);
 		// Area_Fill_Color.getItemCount();
-		assertEquals("Area_Fill_Color is second item", Area_Fill_Color.getSelText(), Area_Fill_Color.getItemText(2));
-		Area_Area_page.ok();
+		assertEquals("Area_Fill_Color is second item", areaFillColor.getSelText(), areaFillColor.getItemText(2));
+		areaAreapage.ok();
 
 		// open Table Properties Dialog
 		app.dispatch(".uno:TableDialog", 3);
-		Area_Area_page.select();
+		areaAreapage.select();
 		// select Gradient
-		Area_Fill_Type.select(2);
-		assertEquals("Area_Fill_Type is Gradient", Area_Fill_Type.getSelText(), Area_Fill_Type.getItemText(2));
-		Area_Fill_Gradient.select(2);
-		assertEquals("Area_Fill_Gradient is second item", Area_Fill_Gradient.getSelText(), Area_Fill_Gradient.getItemText(2));
-		Area_Area_page.ok();
+		areaFillType.select(2);
+		assertEquals("Area_Fill_Type is Gradient", areaFillType.getSelText(), areaFillType.getItemText(2));
+		areaFillGradient.select(2);
+		assertEquals("Area_Fill_Gradient is second item", areaFillGradient.getSelText(), areaFillGradient.getItemText(2));
+		areaAreapage.ok();
 
 		// open Table Properties Dialog
 		app.dispatch(".uno:TableDialog", 3);
-		Area_Area_page.select();
+		areaAreapage.select();
 		// select Hatching
-		Area_Fill_Type.select(3);
-		assertEquals("Area_Fill_Type is Hatching", Area_Fill_Type.getSelText(), Area_Fill_Type.getItemText(3));
-		Area_Fill_Hatching.select(2);
-		assertEquals("Area_Fill_Hatching is second item", Area_Fill_Hatching.getSelText(), Area_Fill_Hatching.getItemText(2));
-		Area_Area_page.ok();
+		areaFillType.select(3);
+		assertEquals("Area_Fill_Type is Hatching", areaFillType.getSelText(), areaFillType.getItemText(3));
+		areaFillHatching.select(2);
+		assertEquals("Area_Fill_Hatching is second item", areaFillHatching.getSelText(), areaFillHatching.getItemText(2));
+		areaAreapage.ok();
 
 		// open Table Properties Dialog
 		app.dispatch(".uno:TableDialog", 3);
-		Area_Area_page.select();
+		areaAreapage.select();
 		// select Bitmap
-		Area_Fill_Type.select(4);
-		assertEquals("Area_Fill_Type is Bitmap", Area_Fill_Type.getSelText(), Area_Fill_Type.getItemText(4));
-		Area_Fill_Bitmap.select(2);
-		assertEquals("Area_Fill_Bitmap is second item", Area_Fill_Bitmap.getSelText(), Area_Fill_Bitmap.getItemText(2));
-		Area_Area_page.ok();
+		areaFillType.select(4);
+		assertEquals("Area_Fill_Type is Bitmap", areaFillType.getSelText(), areaFillType.getItemText(4));
+		areaFillBitmap.select(2);
+		assertEquals("Area_Fill_Bitmap is second item", areaFillBitmap.getSelText(), areaFillBitmap.getItemText(2));
+		areaAreapage.ok();
 
 	}
 

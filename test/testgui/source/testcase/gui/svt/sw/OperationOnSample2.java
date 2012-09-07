@@ -26,7 +26,7 @@ package testcase.gui.svt.sw;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -92,12 +92,12 @@ public class OperationOnSample2 {
 			app.dispatch(".uno:SelectAll");
 			sleep(2);
 			writer.menuItem("Format->Paragraph...").select();
-			AlignmentTabPage.select();
-			Right.check();
+			alignPage.select();
+			alignPageRight.check();
 			sleep(2);
-			VerticalAlignment.select("Bottom");
+			alignPageVerticalAlign.select("Bottom");
 			sleep(2);
-			AlignmentTabPage.ok();
+			alignPage.ok();
 			sleep(2);
 			writer.typeKeys("<ctrl end>");
 			sleep(5);
@@ -105,9 +105,9 @@ public class OperationOnSample2 {
 			// Insert Picture from file
 			writer.menuItem("Insert->Picture->From File...").select();
 			sleep(2);
-			FilePicker_Path.setText(pic);
+			filePickerPath.setText(pic);
 			sleep(1);
-			FilePicker_Open.click();
+			filePickerOpen.click();
 			sleep(5);
 			writer.typeKeys("<esc>");
 			sleep(2);
@@ -117,7 +117,7 @@ public class OperationOnSample2 {
 			// sleep(2);
 			app.dispatch(".uno:InsertObject");
 			sleep(2);
-			InsertObject.ok();
+			insertObject.ok();
 			sleep(10);
 			typeKeys("<esc>");
 			sleep(5);
@@ -136,7 +136,7 @@ public class OperationOnSample2 {
 
 			// Close file
 			writer.menuItem("File->Close").select();
-			ActiveMsgBox.no();
+			activeMsgBox.no();
 			sleep(2);
 
 			HashMap<String, Object> perfData = SystemUtil.getProcessPerfData(pid);

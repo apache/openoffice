@@ -25,7 +25,7 @@
 package testcase.gui.sc.filter;
 
 import static org.junit.Assert.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
@@ -35,7 +35,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 /**
  * Test cases about Data->Filter in spreadsheet
@@ -66,8 +66,8 @@ public class Fitler {
 	@Test
 	public void testAutoFilterWithPlusSign() {
 		String expect = "2+";
-		CalcUtil.selectRange("A1");
+		SCTool.selectRange("A1");
 		typeKeys(expect + "<enter>");
-		assertEquals(expect, CalcUtil.getCellText("A1"));
+		assertEquals(expect, SCTool.getCellText("A1"));
 	}
 }

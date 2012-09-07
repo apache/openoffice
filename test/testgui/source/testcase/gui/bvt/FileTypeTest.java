@@ -27,7 +27,7 @@ package testcase.gui.bvt;
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.awt.Rectangle;
@@ -35,13 +35,13 @@ import java.awt.Rectangle;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
-import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.GraphicsUtil;
 import org.openoffice.test.common.Logger;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 /**
  * 
@@ -51,16 +51,18 @@ public class FileTypeTest {
 	@Rule
 	public Logger log = Logger.getLogger(this);
 
+	@BeforeClass
+	public static void beforeClass() throws Exception {
+		app.clean();
+	}
+
 	@Before
-	public void setUp() throws Exception {
-		app.start(true);
-	}
-
-	@AfterClass
-	public static void afterClass() throws Exception {
+	public void before() {
 		app.close();
+		app.start();
 	}
-
+	
+	
 	/**
 	 * Test New/Save a text document
 	 * 
@@ -97,55 +99,30 @@ public class FileTypeTest {
 	}
 
 	private void saveNewDocument(String file) {
-		String saveTo = getPath("temp/" + file);
-		// Create a new text document
-		app.dispatch("private:factory/swriter");
-		writer.waitForExistence(10, 2);
-
-		// Input some text by keyboard
-		writer.focus();
-
-		String text = "~!@#$%^&*()_+QWERTYUIOP{}|:LKJHGFDSAZXCVBNM<>? ";
-		typeText(text);
-		app.dispatch(".uno:SelectAll");
-		app.setClipboard(".wrong");
-		sleep(1);
-		typeKeys("<$copy>");
-		sleep(1);
-
+		String saveTo = "temp/" + file;
+		String text = "@AOO";
+		newTextDocument();
+		writer.typeKeys(text);
 		// Verify the text via system clip board
-		Assert.assertEquals("The typed text into writer", text, app.getClipboard());
+		Assert.assertEquals("The typed text into writer", text, copyAll());
 
-		// Set the text style
-		writer.openContextMenu();
 		// menuItem("Text Properties...").select();
 		app.dispatch(".uno:FontDialog");
-		EffectsPage.select();
-		EffectsPage_Color.select(6);
-		EffectsPage.ok();
-		sleep(2);
+		effectsPage.select();
+		effectsPageColor.select(6);
+		effectsPage.ok();
+		sleep(1);
 
 		// Save the text document
-		app.dispatch(".uno:SaveAs");
-		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
-
-		// Close it by clicking main menu
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
+		deleteFile(saveTo);
+		saveAs(saveTo);
+		close();
+		open(saveTo);
 		// Reopen the saved file
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		writer.waitForExistence(10, 2);
-
-		app.dispatch(".uno:SelectAll");
-		app.setClipboard(".wrong");
-		typeKeys("<$copy>");
 		sleep(1);
 		// Verify if the text still exists in the file
-		Assert.assertEquals("The typed text into writer is saved!", text, app.getClipboard());
+		Assert.assertEquals("The typed text into writer is saved!", text, copyAll());
 	}
 
 	@Test
@@ -179,25 +156,18 @@ public class FileTypeTest {
 	}
 
 	private void saveNewSpreadsheet(String file) {
-		String saveTo = getPath("temp/" + file);
-		String text = "Hello Openoffice";
-		app.dispatch("private:factory/scalc");
+		String saveTo = "temp/" + file;
+		String text = "@AOO";
+		newSpreadsheet();
+		SCTool.selectRange("A65536");
+		calc.typeKeys(text);
+		deleteFile(saveTo);
+		saveAs(saveTo);
+		close();
+		open(saveTo);
 		calc.waitForExistence(10, 2);
-		CalcUtil.selectRange("A65536");
-		typeKeys(text);
-		app.dispatch(".uno:SaveAs");
-		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
-		// Close it by clicking main menu
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-		// Reopen the saved file
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
-		calc.waitForExistence(10, 2);
-		Assert.assertEquals("The typed text is saved!", text, CalcUtil.getCellText("A65536"));
+		sleep(1);
+		Assert.assertEquals("The typed text is saved!", text, SCTool.getCellText("A65536"));
 	}
 
 	@Test
@@ -231,34 +201,19 @@ public class FileTypeTest {
 	}
 
 	private void saveNewPresentation(String file) {
-		String saveTo = getPath("temp/" + file);
-		String text = "Hello Openoffice";
-		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
-		impress.waitForExistence(10, 2);
-		sleep(2);
-		impress.click(0.01, 0.01);
-		typeKeys(text);
+		String saveTo = "temp/" + file;
+		String text = "@AOO";
+		newPresentation();
+		impress.typeKeys(text);
 		impress.doubleClick(0.1, 0.5);
-		app.dispatch(".uno:SaveAs");
-		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok();
-		// Close it by clicking main menu
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-		// Reopen the saved file
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		deleteFile(saveTo);
+		saveAs(saveTo);
+		close();
+		open(saveTo);
 		impress.waitForExistence(10, 2);
-		impress.click(3, 3);
-		typeKeys("<tab><enter>");
-		app.dispatch(".uno:SelectAll");
-		// app.setClipboard(".wrong");
-		typeKeys("<$copy>");
 		sleep(1);
-		Assert.assertEquals("The typed text is saved!", text, app.getClipboard().trim());
+		impress.typeKeys("<tab><enter>");
+		Assert.assertEquals("The typed text is saved!", text, copyAll().trim());
 	}
 
 	// drawing
@@ -305,43 +260,25 @@ public class FileTypeTest {
 	 * @throws Exception
 	 */
 	public void saveNewDrawing(String filename) {
-		String saveTo = getPath("temp/" + filename);
+		String saveTo = "temp/" + filename;
 		String bmp_green = prepareData("image/green_256x256.bmp");
-
 		// Create a new drawing document
-		app.dispatch("private:factory/sdraw");
-		draw.waitForExistence(10, 2);
-
+		newDrawing();
 		// Insert a picture fully filled with green
 		app.dispatch(".uno:InsertGraphic");
 		submitOpenDlg(bmp_green);
-		sleep(3);
 		// Focus on edit pane
 		draw.click(5, 5);
 		sleep(1);
-
 		// Verify if the picture is inserted successfully
 		Rectangle rectangle = GraphicsUtil.findRectangle(draw.getScreenRectangle(), 0xFF00FF00);
 		assertNotNull("Green rectangle: " + rectangle, rectangle);
-
-		// Save the drawing
-		app.dispatch(".uno:SaveAs");
-		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		// If the format is supported by OO1.0, ask whether to change to the
-		// latest format
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok(); // Keep the current format
-
-		// Close it by clicking main menu
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
-		// Reopen the saved file
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		deleteFile(saveTo);
+		saveAs(saveTo);
+		close();
+		open(saveTo);
 		draw.waitForExistence(10, 2);
-
+		sleep(1);
 		// Verify if the picture still exists in the file
 		Rectangle rectangle1 = GraphicsUtil.findRectangle(draw.getScreenRectangle(), 0xFF00FF00);
 		assertNotNull("Green rectangle: " + rectangle1, rectangle1);
@@ -381,47 +318,23 @@ public class FileTypeTest {
 	 * @throws Exception
 	 */
 	public void saveNewMath(String filename) {
-		String saveTo = getPath("temp/" + filename);
-		// Create a new math
-		app.dispatch("private:factory/smath");
-		math_EditWindow.waitForExistence(10, 2);
-		sleep(2);
-		// Insert a formula
+		String saveTo = "temp/" + filename;
 		String text = "5 times 3 = 15";
-		typeText(text);
-		app.dispatch(".uno:Select");
-		typeKeys("<$copy>");
-		sleep(1);
-
+		// Create a new math
+		newFormula();
+		// Insert a formula
+		mathEditWindow.typeKeys(text);
 		// Verify the text via system clip board
-		assertEquals("The typed formula into math", text, app.getClipboard());
+		assertEquals("The typed formula into math", text, copyAll());
 
 		// Save the formula
-		app.dispatch(".uno:SaveAs");
-		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		// If the format is supported by OO1.0, ask whether to change to the
-		// latest format
-		if (AlienFormatDlg.exists(3))
-			AlienFormatDlg.ok(); // Keep the current format
-
-		// Close it by clicking main menu
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
-		// Reopen the saved file
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
-		math_EditWindow.waitForExistence(10, 2);
-
-		// Verify if the formula still exists in the file
-		app.dispatch(".uno:Select");
-		typeKeys("<$copy>");
+		deleteFile(saveTo);
+		saveAs(saveTo);
+		close();
+		open(saveTo);
+		mathEditWindow.waitForExistence(10, 2);
 		sleep(1);
-		assertEquals("The typed formula into math is saved", text, app.getClipboard());
-
-		// Close the file to avoid the app closing the Elements window
-		// automatically
-		app.dispatch(".uno:CloseDoc");
+		mathEditWindow.focus();
+		assertEquals("The typed formula into math is saved", text, copyAll());
 	}
 }

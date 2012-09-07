@@ -21,10 +21,12 @@
 
 package org.openoffice.test.vcl.widgets;
 
+import static org.openoffice.test.common.SystemUtil.*;
+
 import java.io.IOException;
 
 import org.openoffice.test.OpenOffice;
-import org.openoffice.test.common.SystemUtil;
+import org.openoffice.test.common.Condition;
 import org.openoffice.test.vcl.Tester;
 import org.openoffice.test.vcl.client.CommandCaller;
 import org.openoffice.test.vcl.client.CommunicationManager;
@@ -74,27 +76,27 @@ public class VclApp {
 		caller.setWinInfoReceiver(receiver);
 	}
 	
+	public void clean() {
+		OpenOffice.killAll();
+		if (openOffice != null) 
+			openOffice.cleanUserInstallation();
+	}
+	
 	public void start() {
 		if (openOffice != null) {
-			openOffice.start();
+			// workaround for crash when connect to automation server too early
+			double sleep = openOffice.getUserInstallation().exists() ? 3 : 6;
+			if (openOffice.start()) 
+				sleep(sleep);
 		}
 		
 		communicationManager.start();
 	}
 	
-	public void start(boolean isCleanUserInstallation) {	// Default to clean user installation
-		if (openOffice != null) {
-			if (isCleanUserInstallation) {
-				OpenOffice.killAll();
-				openOffice.cleanUserInstallation();
-				openOffice.start();
-				SystemUtil.sleep(10);
-			} else {
-				openOffice.start();
-			}
-		}
-		
-		communicationManager.start();
+	public void start(boolean isCleanUserInstallation) { 
+		if (isCleanUserInstallation) 
+			clean();
+		start();
 	}
 	
 	public void loadDocument(String file) {
@@ -116,17 +118,30 @@ public class VclApp {
 	}
 	
 	public void close() {
+		if (openOffice != null) {
+			if (!openOffice.isRunning()) 
+				return;
+		}
+		
 		try {
 			dispatch(".uno:Quit");
-			SystemUtil.sleep(3);
 		} catch(Exception e) {
 			
-		} finally {
-			communicationManager.stop();
-			if (openOffice != null) {
+		}
+
+		if (openOffice != null) {
+			if (!new Condition() {
+				@Override
+				public boolean value() {
+					return !openOffice.isRunning();
+				}
+
+			}.test(5, 1)) {
 				openOffice.kill();
 			}
 		}
+		
+		communicationManager.stop();
 	}
 	
 	
@@ -261,6 +276,10 @@ public class VclApp {
 	 */
 	public void dispatch(String url, double time) {
 		caller.callUNOSlot(url);
+		waitSlot(time);
+	}
+	
+	public void waitSlot(double time) {
 		int result = (Integer) caller.callCommand(Constant.RC_WaitSlot, (int) time * 1000);
 		if (result == CONST_WSTimeout)
 			throw new RuntimeException("Timeout to execute the dispatch!");

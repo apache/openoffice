@@ -63,11 +63,11 @@ public class ChartDialogSetting {
 	 */
 	@Test
 	public void testChartDialogCancelBack() {
-		WizardNextButton.click();
-		assertTrue(ChartRangeChooseTabPage.isEnabled());
-		WizardBackButton.click();
-		assertTrue(ChartTypeChooseTabPage.isEnabled());
-		Chart_Wizard.cancel();
-		assertFalse(Chart_Wizard.exists());
+		wizardNextButton.click();
+		assertTrue(chartRangeChooseTabPage.isEnabled());
+		wizardBackButton.click();
+		assertTrue(chartTypeChooseTabPage.isEnabled());
+		chartWizard.cancel();
+		assertFalse(chartWizard.exists());
 	}
 }

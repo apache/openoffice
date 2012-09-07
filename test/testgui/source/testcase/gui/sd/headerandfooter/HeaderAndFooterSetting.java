@@ -27,7 +27,7 @@ package testcase.gui.sd.headerandfooter;
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
@@ -37,7 +37,7 @@ import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
 
-import testlib.gui.ImpressUtil;
+import testlib.gui.SDTool;
 
 public class HeaderAndFooterSetting {
 
@@ -50,14 +50,14 @@ public class HeaderAndFooterSetting {
 
 		// New a impress, insert some slides
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 		impress.waitForExistence(10, 2);
 
 		for (int i = 0; i < 5; i++) {
-			SD_InsertPageButtonOnToolbar.click();
+			sdInsertPageButtonOnToolbar.click();
 		}
 		// Pop up navigator panel
-		if (!SD_NavigatorDlg.exists()) {
+		if (!sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}
 	}
@@ -78,46 +78,46 @@ public class HeaderAndFooterSetting {
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
 
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
 		// Click slide 3
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up><up><up>");
 		sleep(1);
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_SlideNumAsFooterOnSlide.uncheck();
-		SD_ApplyButtonOnSlideFooter.click();
+		sdSlideNumAsFooterOnSlide.uncheck();
+		sdApplyButtonOnSlideFooter.click();
 
 		// paste to the same file
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		app.dispatch(".uno:Copy");
 		app.dispatch(".uno:Paste");
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(false, SD_SlideNumAsFooterOnSlide.isChecked());
-		SD_HeaderAndFooterDlgSlideTab.cancel();
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 
 		// paste to different file
 		impress.focus();
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 		app.dispatch(".uno:Paste");
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<down>");
 		sleep(1);
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(false, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -131,47 +131,47 @@ public class HeaderAndFooterSetting {
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
 
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		for (int j = 0; j <= 2; j++) {
 			typeKeys("<up>");
 		}
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_SlideNumAsFooterOnSlide.uncheck();
-		SD_ApplyButtonOnSlideFooter.click();
+		sdSlideNumAsFooterOnSlide.uncheck();
+		sdApplyButtonOnSlideFooter.click();
 
 		// paste to the same file
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up>");
 		app.dispatch(".uno:Copy");
 		typeKeys("<down>");
 		app.dispatch(".uno:Paste");
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
-		SD_HeaderAndFooterDlgSlideTab.cancel();
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 
 		// paste to different file
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 		app.dispatch(".uno:Paste");
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<down>");
 		sleep(1); // If no sleep, error occur
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -184,46 +184,46 @@ public class HeaderAndFooterSetting {
 
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		SD_HeaderTextOnNotes.check();
-		SD_HeaderTextOnNotesInput.setText("Header Test");
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120329");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdHeaderAndFooterOnNotesTabPage.select();
+		sdHeaderTextOnNotes.check();
+		sdHeaderTextOnNotesInput.setText("Header Test");
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120329");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
 		// paste to the same file
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up>");
 		app.dispatch(".uno:Copy");
 		typeKeys("<down>");
 		app.dispatch(".uno:Paste");
 
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		assertEquals("Header Test", SD_HeaderTextOnNotesInput.getText());
-		assertEquals("Fix Date: 20120329", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
-		SD_HeaderAndFooterOnNotesTabPage.cancel();
+		sdHeaderAndFooterOnNotesTabPage.select();
+		assertEquals("Header Test", sdHeaderTextOnNotesInput.getText());
+		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.cancel();
 
 		// paste to different file
 		impress.focus();
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 		app.dispatch(".uno:Paste");
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<down>");
-		ImpressUtil.getCurView().activate();
+		SDTool.getActiveView().activate();
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		assertEquals("Header Test", SD_HeaderTextOnNotesInput.getText());
-		assertEquals("Fix Date: 20120329", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.select();
+		assertEquals("Header Test", sdHeaderTextOnNotesInput.getText());
+		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -237,23 +237,23 @@ public class HeaderAndFooterSetting {
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
 
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		for (int j = 0; j <= 2; j++) {
 			typeKeys("<up>");
 		}
 		app.dispatch(".uno:DuplicatePage");
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -266,13 +266,13 @@ public class HeaderAndFooterSetting {
 
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_FooterNotShowOn1stSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdFooterNotShowOn1stSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
 		// Check slide 1
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		// typeKeys("<up><up><up><up><up>"); // Not stable on ubuntu10.04
 		// sleep(1); // If no sleep, error occur
 		for (int i = 0; i < 5; i++) {
@@ -281,8 +281,8 @@ public class HeaderAndFooterSetting {
 		}
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals(true, SD_FooterNotShowOn1stSlide.isChecked());
-		assertEquals(false, SD_FooterTextOnSlide.isChecked());
+		assertEquals(true, sdFooterNotShowOn1stSlide.isChecked());
+		assertEquals(false, sdFooterTextOnSlide.isChecked());
 	}
 
 	/**
@@ -296,46 +296,46 @@ public class HeaderAndFooterSetting {
 		// add header and footer to focus slide.
 		app.dispatch(".uno:HeaderAndFooter");
 
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyButtonOnSlideFooter.click();
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyButtonOnSlideFooter.click();
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals(true, SD_DateAndTimeFooterOnSlide.isChecked());
-		assertEquals(true, SD_FixedDateAndTimeFooterOnSlide.isChecked());
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals(true, SD_FooterTextOnSlide.isChecked());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals(true, sdDateAndTimeFooterOnSlide.isChecked());
+		assertEquals(true, sdFixedDateAndTimeFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals(true, sdFooterTextOnSlide.isChecked());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 		// close header and footer dialog.
-		SD_ApplyButtonOnSlideFooter.focus();
+		sdApplyButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
 		// end close
 
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up>");
 		sleep(1); // If no sleep, error occur
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("", SD_FooterTextOnSlideInput.getText());
-		assertEquals(false, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals("", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("", sdFooterTextOnSlideInput.getText());
+		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
 		// close header and footer dialog.
-		SD_ApplyButtonOnSlideFooter.focus();
+		sdApplyButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
 		// end close
 
-		SD_InsertPageButtonOnToolbar.click();
+		sdInsertPageButtonOnToolbar.click();
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("", SD_FooterTextOnSlideInput.getText());
-		assertEquals(false, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals("", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("", sdFooterTextOnSlideInput.getText());
+		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -348,63 +348,63 @@ public class HeaderAndFooterSetting {
 
 		// add header and footer to focus slide.
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		SD_HeaderTextOnNotes.check();
-		SD_HeaderTextOnNotesInput.setText("Header Test");
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdHeaderAndFooterOnNotesTabPage.select();
+		sdHeaderTextOnNotes.check();
+		sdHeaderTextOnNotesInput.setText("Header Test");
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		assertEquals(true, SD_HeaderTextOnNotes.isChecked());
-		assertEquals("Header Test", SD_HeaderTextOnNotesInput.getText());
-		assertEquals(true, SD_DateAndTimeFooterOnSlide.isChecked());
-		assertEquals(true, SD_FixedDateAndTimeFooterOnSlide.isChecked());
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals(true, SD_FooterTextOnSlide.isChecked());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.select();
+		assertEquals(true, sdHeaderTextOnNotes.isChecked());
+		assertEquals("Header Test", sdHeaderTextOnNotesInput.getText());
+		assertEquals(true, sdDateAndTimeFooterOnSlide.isChecked());
+		assertEquals(true, sdFixedDateAndTimeFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals(true, sdFooterTextOnSlide.isChecked());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 		// close header and footer dialog.
-		SD_ApplyToAllButtonOnSlideFooter.focus();
+		sdApplyToAllButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
 		// end close
 
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up>");
 
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		assertEquals(true, SD_HeaderTextOnNotes.isChecked());
-		assertEquals("Header Test", SD_HeaderTextOnNotesInput.getText());
-		assertEquals(true, SD_DateAndTimeFooterOnSlide.isChecked());
-		assertEquals(true, SD_FixedDateAndTimeFooterOnSlide.isChecked());
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals(true, SD_FooterTextOnSlide.isChecked());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.select();
+		assertEquals(true, sdHeaderTextOnNotes.isChecked());
+		assertEquals("Header Test", sdHeaderTextOnNotesInput.getText());
+		assertEquals(true, sdDateAndTimeFooterOnSlide.isChecked());
+		assertEquals(true, sdFixedDateAndTimeFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals(true, sdFooterTextOnSlide.isChecked());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 		// close header and footer dialog.
-		SD_ApplyToAllButtonOnSlideFooter.focus();
+		sdApplyToAllButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
 		// end close
 
-		SD_InsertPageButtonOnToolbar.click();
+		sdInsertPageButtonOnToolbar.click();
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		assertEquals(true, SD_HeaderTextOnNotes.isChecked());
-		assertEquals("Header Test", SD_HeaderTextOnNotesInput.getText());
-		assertEquals(true, SD_DateAndTimeFooterOnSlide.isChecked());
-		assertEquals(true, SD_FixedDateAndTimeFooterOnSlide.isChecked());
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals(true, SD_FooterTextOnSlide.isChecked());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.select();
+		assertEquals(true, sdHeaderTextOnNotes.isChecked());
+		assertEquals("Header Test", sdHeaderTextOnNotesInput.getText());
+		assertEquals(true, sdDateAndTimeFooterOnSlide.isChecked());
+		assertEquals(true, sdFixedDateAndTimeFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals(true, sdFooterTextOnSlide.isChecked());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -418,51 +418,51 @@ public class HeaderAndFooterSetting {
 		// add header and footer to focus slide.
 		app.dispatch(".uno:HeaderAndFooter");
 
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120323");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals(true, SD_DateAndTimeFooterOnSlide.isChecked());
-		assertEquals(true, SD_FixedDateAndTimeFooterOnSlide.isChecked());
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals(true, SD_FooterTextOnSlide.isChecked());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals(true, sdDateAndTimeFooterOnSlide.isChecked());
+		assertEquals(true, sdFixedDateAndTimeFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals(true, sdFooterTextOnSlide.isChecked());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 		// close header and footer dialog.
-		SD_ApplyButtonOnSlideFooter.focus();
+		sdApplyButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
 		// end close
 
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up>");
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals(true, SD_DateAndTimeFooterOnSlide.isChecked());
-		assertEquals(true, SD_FixedDateAndTimeFooterOnSlide.isChecked());
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals(true, SD_FooterTextOnSlide.isChecked());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals(true, sdDateAndTimeFooterOnSlide.isChecked());
+		assertEquals(true, sdFixedDateAndTimeFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals(true, sdFooterTextOnSlide.isChecked());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 		// close header and footer dialog.
-		SD_ApplyButtonOnSlideFooter.focus();
+		sdApplyButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
 		// end close
 
-		SD_InsertPageButtonOnToolbar.click();
+		sdInsertPageButtonOnToolbar.click();
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals(true, SD_DateAndTimeFooterOnSlide.isChecked());
-		assertEquals(true, SD_FixedDateAndTimeFooterOnSlide.isChecked());
-		assertEquals("Fix Date: 20120323", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals(true, SD_FooterTextOnSlide.isChecked());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals(true, sdDateAndTimeFooterOnSlide.isChecked());
+		assertEquals(true, sdFixedDateAndTimeFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals(true, sdFooterTextOnSlide.isChecked());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -475,14 +475,14 @@ public class HeaderAndFooterSetting {
 
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_AutoUpdateTimeFooter.check();
-		SD_AutoUpdateTimeFooterType.select(7);
-		String currentTime = SD_AutoUpdateTimeFooterType.getItemText(7);
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdAutoUpdateTimeFooter.check();
+		sdAutoUpdateTimeFooterType.select(7);
+		String currentTime = sdAutoUpdateTimeFooterType.getItemText(7);
+		sdApplyToAllButtonOnSlideFooter.click();
 		sleep(1); // Wait some time to check the time update
 
 		app.dispatch(".uno:HeaderAndFooter");
-		String updatedTime = SD_AutoUpdateTimeFooterType.getItemText(7);
+		String updatedTime = sdAutoUpdateTimeFooterType.getItemText(7);
 		assertNotSame("Time can not update", currentTime, updatedTime);
 	}
 
@@ -496,15 +496,15 @@ public class HeaderAndFooterSetting {
 
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		SD_AutoUpdateTimeFooter.check();
-		String currentTime = SD_AutoUpdateTimeFooterType.getItemText(7);
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdHeaderAndFooterOnNotesTabPage.select();
+		sdAutoUpdateTimeFooter.check();
+		String currentTime = sdAutoUpdateTimeFooterType.getItemText(7);
+		sdApplyToAllButtonOnSlideFooter.click();
 		sleep(1); // Wait some time to check the time update
 
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		String updatedTime = SD_AutoUpdateTimeFooterType.getItemText(7);
+		sdHeaderAndFooterOnNotesTabPage.select();
+		String updatedTime = sdAutoUpdateTimeFooterType.getItemText(7);
 
 		assertNotSame("Time can not update", currentTime, updatedTime);
 	}
@@ -519,27 +519,27 @@ public class HeaderAndFooterSetting {
 
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		SD_HeaderTextOnNotes.check();
-		SD_HeaderTextOnNotesInput.setText("Header Test");
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120329");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdHeaderAndFooterOnNotesTabPage.select();
+		sdHeaderTextOnNotes.check();
+		sdHeaderTextOnNotesInput.setText("Header Test");
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120329");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up>");
 
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		assertEquals("Header Test", SD_HeaderTextOnNotesInput.getText());
-		assertEquals("Fix Date: 20120329", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
-		SD_HeaderAndFooterOnNotesTabPage.cancel();
+		sdHeaderAndFooterOnNotesTabPage.select();
+		assertEquals("Header Test", sdHeaderTextOnNotesInput.getText());
+		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.cancel();
 
 		// save this file
 		app.dispatch(".uno:SaveAs");
@@ -556,11 +556,11 @@ public class HeaderAndFooterSetting {
 
 		// check after reopen
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_HeaderAndFooterOnNotesTabPage.select();
-		assertEquals("Header Test", SD_HeaderTextOnNotesInput.getText());
-		assertEquals("Fix Date: 20120329", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.select();
+		assertEquals("Header Test", sdHeaderTextOnNotesInput.getText());
+		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 
 	/**
@@ -573,24 +573,24 @@ public class HeaderAndFooterSetting {
 
 		// add header and footer
 		app.dispatch(".uno:HeaderAndFooter");
-		SD_DateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeFooterOnSlide.check();
-		SD_FixedDateAndTimeOnSlideInput.setText("Fix Date: 20120329");
-		SD_FooterTextOnSlide.check();
-		SD_FooterTextOnSlideInput.setText("Footer Test");
-		SD_SlideNumAsFooterOnSlide.check();
-		SD_ApplyToAllButtonOnSlideFooter.click();
+		sdDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeFooterOnSlide.check();
+		sdFixedDateAndTimeOnSlideInput.setText("Fix Date: 20120329");
+		sdFooterTextOnSlide.check();
+		sdFooterTextOnSlideInput.setText("Footer Test");
+		sdSlideNumAsFooterOnSlide.check();
+		sdApplyToAllButtonOnSlideFooter.click();
 
-		ImpressSlideSorter.focus();
+		impressSlideSorter.focus();
 		typeKeys("<up>");
 
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("Fix Date: 20120329", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 
 		// close header and footer dialog.
-		SD_ApplyButtonOnSlideFooter.focus();
+		sdApplyButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
 
@@ -609,8 +609,8 @@ public class HeaderAndFooterSetting {
 
 		// check after reopen
 		app.dispatch(".uno:HeaderAndFooter");
-		assertEquals("Fix Date: 20120329", SD_FixedDateAndTimeOnSlideInput.getText());
-		assertEquals("Footer Test", SD_FooterTextOnSlideInput.getText());
-		assertEquals(true, SD_SlideNumAsFooterOnSlide.isChecked());
+		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
+		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
+		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 	}
 }

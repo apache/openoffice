@@ -24,7 +24,7 @@ package testcase.gui.bvt;
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.FileUtil.*;
 import static org.openoffice.test.common.Testspace.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.File;
@@ -44,10 +44,8 @@ public class SmokeTest {
 
 	@Before
 	public void setUp() throws Exception {
-		// app.getOpenOffice().cleanUserInstallation();
-		// app.start();
 		app.start(true); // Default to clean user installation
-		smoketestOutput = new File(oo.getUserInstallation(), "user/temp");
+		smoketestOutput = new File(aoo.getUserInstallation(), "user/temp");
 	}
 
 	@AfterClass
@@ -60,8 +58,7 @@ public class SmokeTest {
 		prepareData("TestExtension.oxt");
 		String file = prepareData("smoketestdoc.sxw");
 		// Open sample file smoketestdoc.sxw
-		app.dispatch(".uno:Open", 3);
-		submitOpenDlg(file);
+		open(file);
 		writer.waitForEnabled(10, 2);
 		// Run test cases
 		app.dispatch("vnd.sun.star.script:Standard.Global.StartTestWithDefaultOptions?language=Basic&location=document", 120);

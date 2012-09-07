@@ -27,7 +27,7 @@ package testcase.gui.svt.sc;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -44,7 +44,7 @@ import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 import org.openoffice.test.common.Testspace;
 
-import testlib.gui.CalcUtil;
+import testlib.gui.SCTool;
 
 public class OperationOnNewSC {
 	@Rule
@@ -83,81 +83,81 @@ public class OperationOnNewSC {
 		for (int i = 0; i < 1000; i++) {
 			// Data Sort
 			app.dispatch("private:factory/scalc");
-			CalcUtil.selectRange("A1");
+			SCTool.selectRange("A1");
 			typeKeys("3<down>2<down>5<down>1<down>6<down>4<down>10<down>8<down>9<down>7");
 			sleep(1);
 			app.dispatch(".uno:DataSort");
-			SortOptionsPage.select();
-			SortOptionsPage_RangeContainsColumnLabels.uncheck();
-			SortPage.select();
-			SortPage_By1.select(1); // "Column A"
-			SortPage_Ascending1.check();
-			SortPage.ok();
+			sortOptionsPage.select();
+			sortOptionsPageRangeContainsColumnLabels.uncheck();
+			sortPage.select();
+			sortPageBy1.select(1); // "Column A"
+			sortPageAscending1.check();
+			sortPage.ok();
 			sleep(5);
 
 			// Insert Sheet
 			app.dispatch(".uno:Insert");
-			SCAfterCurrentSheet.check();
-			SCNewSheetName.setText("Instant Filter");
-			SCInsertSheetDlg.ok();
+			scAfterCurrentSheet.check();
+			scNewSheetName.setText("Instant Filter");
+			scInsertSheetDlg.ok();
 			sleep(5);
 
 			// Standard Filter
-			CalcUtil.selectRange("A1");
+			SCTool.selectRange("A1");
 			typeKeys("A<down>1<down>2<down>3<down>1<down>2<down>3<down>1<down>2<down>3");
 			sleep(1);
-			CalcUtil.selectRange("A1");
+			SCTool.selectRange("A1");
 			app.dispatch(".uno:DataFilterStandardFilter");
 			sleep(2);
-			FilterValue1.setText("1");
-			StandardFilterDlg.ok();
+			filterValue1.setText("1");
+			standardFilterDlg.ok();
 			sleep(5);
 
 			// Data Validate
 			app.dispatch(".uno:Insert");
-			SCAfterCurrentSheet.check();
-			SCNewSheetName.setText("Data Validate");
-			SCInsertSheetDlg.ok();
+			scAfterCurrentSheet.check();
+			scNewSheetName.setText("Data Validate");
+			scInsertSheetDlg.ok();
 			sleep(5);
-			CalcUtil.selectRange("B2:E5");
+			SCTool.selectRange("B2:E5");
 			sleep(2);
 
 			app.dispatch(".uno:Validation");
-			SC_ValidityCriteriaTabpage.select();
-			SC_ValidityCriteriaAllowList.select("Whole Numbers");
-			SC_ValidityDecimalCompareOperator.select("greater than");
-			SC_ValiditySourceInput.setText("1");
-			SC_ValidityErrorAlertTabPage.select();
-			SC_ValidityShowErrorMessage.check();
-			SC_ValidityErrorMessageTitle.setText("Error");
-			SC_ValidityErrorMessage.setText("Must greater than 1");
-			SC_ValidityErrorAlertTabPage.ok();
+			scValidityCriteriaTabpage.select();
+			scValidityCriteriaAllowList.select("Whole Numbers");
+			scValidityDecimalCompareOperator.select("greater than");
+			scValiditySourceInput.setText("1");
+			scValidityErrorAlertTabPage.select();
+			scValidityShowErrorMessage.check();
+			scValidityErrorMessageTitle.setText("Error");
+			scValidityErrorMessage.setText("Must greater than 1");
+			scValidityErrorAlertTabPage.ok();
 
-			CalcUtil.selectRange("B2");
+			SCTool.selectRange("B2");
 			typeKeys("0<enter>");
-			ActiveMsgBox.ok();
+			activeMsgBox.ok();
 			sleep(1);
 
-			CalcUtil.selectRange("E5");
+			SCTool.selectRange("E5");
 			typeKeys("1<enter>");
-			ActiveMsgBox.ok();
+			activeMsgBox.ok();
 			sleep(1);
 
-			CalcUtil.selectRange("E2");
+			SCTool.selectRange("E2");
 			typeKeys("2<enter>");
 			sleep(5);
 
 			// Input cells, insert pics and chart
 			app.dispatch(".uno:Insert");
-			SCBeforeCurrentSheet.check();
-			SCNewSheetName.setText("InsertObjects");
-			SCInsertSheetDlg.ok();
+			scBeforeCurrentSheet.check();
+			scNewSheetName.setText("InsertObjects");
+			scInsertSheetDlg.ok();
 			sleep(5);
 			calc.menuItem("Insert->Picture->From File...").select();
 			sleep(2);
-			FilePicker_Path.setText(pic);
+			filePickerPath.setText(pic);
 			sleep(1);
-			FilePicker_Open.click();
+			filePickerOpen.click();
 			sleep(5);
 			typeKeys("<esc>");
 			sleep(5);
@@ -167,8 +167,8 @@ public class OperationOnNewSC {
 			calc.menuItem("File->Save As...").select();
 			FileUtil.deleteFile(saveTo);
 			submitSaveDlg(saveTo);
-			if (ActiveMsgBox.exists()) {
-				ActiveMsgBox.yes();
+			if (activeMsgBox.exists()) {
+				activeMsgBox.yes();
 				sleep(2);
 			}
 			calc.menuItem("File->Close").select();

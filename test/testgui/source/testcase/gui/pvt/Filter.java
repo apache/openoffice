@@ -23,10 +23,10 @@
  * 
  */
 
-package testcase.gui.performance.benchmark;
+package testcase.gui.pvt;
 
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileNotFoundException;
@@ -275,8 +275,8 @@ public class Filter {
 		long tr = 0;
 		String file = Testspace.prepareData(fileName);
 		startcenter.menuItem("File->Open...").select();
-		FilePicker_Path.setText(file);
-		FilePicker_Open.click();
+		filePickerPath.setText(file);
+		filePickerOpen.click();
 		// submitOpenDlg(file);
 		tr = System.currentTimeMillis();
 		while (true) {
@@ -325,8 +325,8 @@ public class Filter {
 		String file = Testspace.prepareData(fileName);
 		startcenter.menuItem("File->Open...").select();
 		// submitOpenDlg(file);
-		FilePicker_Path.setText(file);
-		FilePicker_Open.click();
+		filePickerPath.setText(file);
+		filePickerOpen.click();
 		tr = System.currentTimeMillis();
 		while (true) {
 			while (!statusbar("FWK_HID_STATUSBAR").exists()) {

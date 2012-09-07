@@ -27,7 +27,7 @@ package testcase.gui.svt.sd;
 
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -79,7 +79,7 @@ public class OperationOnNewSD {
 		for (int i = 0; i < 1000; i++) {
 			// Create a new SD
 			app.dispatch("private:factory/simpress?slot=6686");
-			PresentationWizard.ok();
+			presentationWizard.ok();
 			sleep(2);
 
 			// Create a new slide
@@ -89,10 +89,10 @@ public class OperationOnNewSD {
 			// Insert a table
 			app.dispatch(".uno:InsertTable", 3);
 			sleep(2);
-			NumberofCol.setText("5");
-			NumberofRow.setText("4");
+			numberofCol.setText("5");
+			numberofRow.setText("4");
 			sleep(2);
-			InsertTable.ok();
+			insertTable.ok();
 			impress.typeKeys("<enter>");
 			impress.typeKeys("2");
 			impress.typeKeys("<right>");
@@ -107,9 +107,9 @@ public class OperationOnNewSD {
 			sleep(2);
 			impress.menuItem("Insert->Picture->From File...").select();
 			sleep(2);
-			FilePicker_Path.setText(pic);
+			filePickerPath.setText(pic);
 			sleep(1);
-			FilePicker_Open.click();
+			filePickerOpen.click();
 			sleep(5);
 			impress.typeKeys("<esc>");
 			sleep(2);
@@ -117,24 +117,24 @@ public class OperationOnNewSD {
 			// Insert Slides from External Sample files
 			impress.menuItem("Insert->File...").select();
 			sleep(2);
-			FilePicker_Path.setText(externalFile);
-			FilePicker_Open.click();
+			filePickerPath.setText(externalFile);
+			filePickerOpen.click();
 			sleep(2);
-			InsertSlideObjects.ok();
+			insertSlideObjects.ok();
 			sleep(2);
-			ActiveMsgBox.yes();
+			activeMsgBox.yes();
 			sleep(20);
 
 			// Slide Screen Show Settings
 			impress.menuItem("Slide Show->Slide Transition...").select();
 			sleep(2);
-			ImpressSlideTransitions.select("Uncover Up");
+			impressSlideTransitions.select("Uncover Up");
 			sleep(2);
-			SlideShowSpeed.select("Slow");
+			slideShowSpeed.select("Slow");
 			sleep(5);
-			SlideAutoAfter.check();
+			slideAutoAfter.check();
 			sleep(2);
-			ApplyToAllSlides.click();
+			applyToAllSlides.click();
 			sleep(2);
 			impress.menuItem("Slide Show->Slide Show").select();
 			sleep(70);
@@ -146,8 +146,8 @@ public class OperationOnNewSD {
 			impress.menuItem("File->Save As...").select();
 			FileUtil.deleteFile(saveTo);
 			submitSaveDlg(saveTo);
-			if (ActiveMsgBox.exists()) {
-				ActiveMsgBox.yes();
+			if (activeMsgBox.exists()) {
+				activeMsgBox.yes();
 				sleep(2);
 			}
 			impress.menuItem("File->Close").select();

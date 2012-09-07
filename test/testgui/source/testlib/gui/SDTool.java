@@ -25,10 +25,10 @@ import static testlib.gui.UIMap.*;
 
 import org.openoffice.test.vcl.widgets.VclWindow;
 
-public class ImpressUtil {
+public class SDTool {
 
-	public static VclWindow getCurView() {
-		VclWindow[] views = new VclWindow[] { impress, ImpressOutline, ImpressSlideSorter, ImpressHandout };
+	public static VclWindow getActiveView() {
+		VclWindow[] views = new VclWindow[] { impress, impressOutline, impressSlideSorter, impressHandout };
 		for (VclWindow w : views) {
 			if (w.exists()) {
 				return w;

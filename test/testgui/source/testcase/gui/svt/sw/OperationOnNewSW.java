@@ -25,7 +25,7 @@
 package testcase.gui.svt.sw;
 
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.io.FileOutputStream;
@@ -81,7 +81,7 @@ public class OperationOnNewSW {
 			app.dispatch(".uno:SelectAll");
 			writer.menuItem("Format->Bullets and Numbering...").select();
 			sleep(3);
-			Bullet.ok();
+			bulletPage.ok();
 			writer.typeKeys("<ctrl z");
 			sleep(1);
 			writer.typeKeys("<ctrl y>");
@@ -95,10 +95,10 @@ public class OperationOnNewSW {
 			sleep(2);
 			writer.menuItem("Tools->Spelling and Grammar...").select();
 			sleep(2);
-			SuggestionList.select(0);
-			Change.click();
+			spellcheckDlgSuggestionList.select(0);
+			spellcheckDlgChange.click();
 			sleep(2);
-			ActiveMsgBox.no();
+			activeMsgBox.no();
 			sleep(2);
 
 			// Create Header and Footer
@@ -118,7 +118,7 @@ public class OperationOnNewSW {
 			// Insert Frame and change anchor
 			writer.menuItem("Insert->Frame...").select();
 			sleep(2);
-			writer_FrameDlg.ok();
+			writerFrameDlg.ok();
 			writer.menuItem("Format->Anchor->To Page").select();
 			sleep(2);
 			writer.menuItem("Format->Anchor->To Paragraph").select();
@@ -141,12 +141,12 @@ public class OperationOnNewSW {
 			for (int k = 0; k < 2; k++) {
 				writer.typeKeys("<shift down>");
 			}
-			if (!StyleAndFormattingDlg.exists()) {
+			if (!styleAndFormattingDlg.exists()) {
 				app.dispatch(".uno:DesignerDialog");
 				sleep(2);
 			}
 
-			StyleAndFormattingList.doubleClick(0.5, 0.25);
+			styleAndFormattingList.doubleClick(0.5, 0.25);
 			sleep(2);
 			writer.typeKeys("<down>");
 			writer.typeKeys("<right>");
@@ -154,13 +154,13 @@ public class OperationOnNewSW {
 			for (int k = 0; k < 2; k++) {
 				writer.typeKeys("<shift down>");
 			}
-			StyleAndFormattingList.doubleClick(0.5, 0.3);
+			styleAndFormattingList.doubleClick(0.5, 0.3);
 			sleep(2);
 			writer.typeKeys("<ctrl home>");
 			sleep(2);
 			writer.menuItem("Insert->Indexes and Tables->Indexes and Tables...").select();
 			sleep(2);
-			InsertIndexDlg.ok();
+			insertIndexDlg.ok();
 			sleep(2);
 			writer.typeKeys("<ctrl end>");
 
@@ -169,8 +169,8 @@ public class OperationOnNewSW {
 			writer.menuItem("File->Save As...").select();
 			FileUtil.deleteFile(saveTo);
 			submitSaveDlg(saveTo);
-			if (ActiveMsgBox.exists()) {
-				ActiveMsgBox.yes();
+			if (activeMsgBox.exists()) {
+				activeMsgBox.yes();
 				sleep(2);
 			}
 

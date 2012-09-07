@@ -2,7 +2,7 @@ package testcase.gui.sw.table;
 
 import static org.junit.Assert.*;
 import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppUtil.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
@@ -29,7 +29,7 @@ public class TableGeneral {
 
 		// Insert a table
 		app.dispatch(".uno:InsertTable");
-		assertTrue("Insert Table dialog pop up", writer_InsertTable.exists());
+		assertTrue("Insert Table dialog pop up", writerInsertTable.exists());
 	}
 
 	@After
@@ -41,23 +41,23 @@ public class TableGeneral {
 	// Test setting table size in text document
 	public void testTableSize() throws Exception {
 
-		SWTableSizeColBox.focus();
+		swTableSizeColBox.focus();
 		typeKeys("<delete>");
 		typeKeys("3");
-		SWTableSizeRowBox.focus();
+		swTableSizeRowBox.focus();
 		typeKeys("<delete>");
 		typeKeys("4");
-		writer_InsertTable.ok();
+		writerInsertTable.ok();
 
 		writer.focus(); // verify how many rows in the table
-		assertNotNull(StatusBar.getItemTextById(8));
+		assertNotNull(statusBar.getItemTextById(8));
 		for (int i = 0; i < 3; i++) {
 			typeKeys("<down>");
-			assertNotNull(StatusBar.getItemTextById(8));
+			assertNotNull(statusBar.getItemTextById(8));
 		}
 		typeKeys("<down>");
 		sleep(1);
-		assertFalse(Table_Toolbar.exists());
+		assertFalse(tableToolbar.exists());
 	}
 
 	// Test setting table cell background in text document
@@ -66,18 +66,18 @@ public class TableGeneral {
 	@Ignore
 	// bug120378
 	public void testTableBackground() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		writer.focus();
 		// set table cell background
 		app.dispatch(".uno:TableDialog");
-		SWTableBackground.select();
+		swTableBackground.select();
 		assertTrue("Table background property dialog pop up",
-				SWTableBackground.exists());
+				swTableBackground.exists());
 		;
-		SWTableBackgroundColor.focus();
-		SWTableBackgroundColor.click(50, 50);
-		SWTableBackground.ok();
+		swTableBackgroundColor.focus();
+		swTableBackgroundColor.click(50, 50);
+		swTableBackground.ok();
 		// verify table cell background color
 		writer.focus();
 		// select the cell which is filled with color
@@ -85,31 +85,31 @@ public class TableGeneral {
 
 		typeKeys("<ctrl c>");
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 		typeKeys("<ctrl v>");
 		// enable table cell area format dialog
 		app.dispatch(".uno:FormatArea");
 		sleep(1);
-		assertEquals("Light red", SDTable_BACGColorListbox.getSelText());
+		assertEquals("Light red", sdTableBACGColorListbox.getSelText());
 		// close table cell area format dialog
-		SDTable_BACGColorArea.cancel();
+		sdTableBACGColorArea.cancel();
 	}
 
 	// Test setting table border in text document
 
 	@Test
 	public void testTableBorder() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		// set table border as none
 		writer.focus();
 		app.dispatch(".uno:TableDialog");
-		SWTableBorder.select();
+		swTableBorder.select();
 		assertTrue("Table border property dialog pop up",
-				SWTableBorder.exists());
+				swTableBorder.exists());
 		;
-		SWTableBorderLineArrange.click(10, 10);
-		SWTableBorder.ok();
+		swTableBorderLineArrange.click(10, 10);
+		swTableBorder.ok();
 	}
 
 	// Test setting table border line style,line color,spacing to content in
@@ -117,77 +117,77 @@ public class TableGeneral {
 
 	@Test
 	public void testTableBorderLineStyle() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		writer.focus();
 		app.dispatch(".uno:TableDialog");
-		SWTableBorder.select();
+		swTableBorder.select();
 		assertTrue("Table border property dialog pop up",
-				SWTableBorder.exists());
+				swTableBorder.exists());
 		;
-		SWTableBorderLineStyle.select(8); // set line style
-		SWTableBorderLineColor.select(5); // set line color
-		SWTableSTCLeft.focus(); // set spacing to content
+		swTableBorderLineStyle.select(8); // set line style
+		swTableBorderLineColor.select(5); // set line color
+		swTableSTCLeft.focus(); // set spacing to content
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("0.5"); // set spacing to content
-		SWTableShadow.click(40, 10); // set table shadow
-		SWTableShadowSize.focus();
+		swTableShadow.click(40, 10); // set table shadow
+		swTableShadowSize.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("2");
-		SWTableShadowColor.select(5);
-		SWTableBorder.ok();
+		swTableShadowColor.select(5);
+		swTableBorder.ok();
 
 		writer.focus(); // verify the setting property of table
 		app.dispatch(".uno:TableDialog");
-		SWTableBorder.select();
-		assertEquals("2.60 pt", SWTableBorderLineStyle.getItemText(8));
-		assertEquals("Magenta", SWTableBorderLineColor.getItemText(5));
-		assertEquals("0.50\"", SWTableSTCLeft.getText());
-		assertEquals("0.50\"", SWTableSTCRight.getText());
-		assertEquals("0.50\"", SWTableSTCTop.getText());
-		assertEquals("0.50\"", SWTableSTCBottom.getText());
-		assertEquals("1.97\"", SWTableShadowSize.getText());
-		assertEquals("Magenta", SWTableShadowColor.getItemText(5));
-		assertTrue("SWTableSTC_SYNC", SWTableSTC_SYNC.isChecked());
-		SWTableBorder.close();
+		swTableBorder.select();
+		assertEquals("2.60 pt", swTableBorderLineStyle.getItemText(8));
+		assertEquals("Magenta", swTableBorderLineColor.getItemText(5));
+		assertEquals("0.50\"", swTableSTCLeft.getText());
+		assertEquals("0.50\"", swTableSTCRight.getText());
+		assertEquals("0.50\"", swTableSTCTop.getText());
+		assertEquals("0.50\"", swTableSTCBottom.getText());
+		assertEquals("1.97\"", swTableShadowSize.getText());
+		assertEquals("Magenta", swTableShadowColor.getItemText(5));
+		assertTrue("SWTableSTC_SYNC", swTableSTCSYNC.isChecked());
+		swTableBorder.close();
 
 		// uncheck Synchronize box and set spacing to content
 
 		writer.focus();
 		app.dispatch(".uno:TableDialog");
-		SWTableBorder.select();
-		SWTableSTC_SYNC.uncheck();
-		SWTableSTCLeft.focus();// set left spacing to content
+		swTableBorder.select();
+		swTableSTCSYNC.uncheck();
+		swTableSTCLeft.focus();// set left spacing to content
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("0.5");
-		SWTableSTCRight.focus();// set right spacing to content
+		swTableSTCRight.focus();// set right spacing to content
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("0.8");
-		SWTableSTCTop.focus();// set top spacing to content
+		swTableSTCTop.focus();// set top spacing to content
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("1.0");
-		SWTableSTCBottom.focus();// set bottom spacing to content
+		swTableSTCBottom.focus();// set bottom spacing to content
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("2");
-		SWTableBorder.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		swTableBorder.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 
 		writer.focus(); // verify the setting value of spacing to content for
 						// tabel
 		app.dispatch(".uno:TableDialog");
-		SWTableBorder.select();
-		assertEquals("0.50\"", SWTableSTCLeft.getText());
-		assertEquals("0.80\"", SWTableSTCRight.getText());
-		assertEquals("1.00\"", SWTableSTCTop.getText());
-		assertEquals("1.97\"", SWTableSTCBottom.getText());
-		assertFalse("SWTableSTC_SYNC", SWTableSTC_SYNC.isChecked());
-		SWTableBorder.close();
+		swTableBorder.select();
+		assertEquals("0.50\"", swTableSTCLeft.getText());
+		assertEquals("0.80\"", swTableSTCRight.getText());
+		assertEquals("1.00\"", swTableSTCTop.getText());
+		assertEquals("1.97\"", swTableSTCBottom.getText());
+		assertFalse("SWTableSTC_SYNC", swTableSTCSYNC.isChecked());
+		swTableBorder.close();
 	}
 
 	// create table with auto format
@@ -196,15 +196,15 @@ public class TableGeneral {
 	public void testTableAutoFormat() throws Exception {
 		// create table with auto format
 		button("sw:PushButton:DLG_INSERT_TABLE:BT_AUTOFORMAT").click();
-		assertTrue("Table auto format dialog pop up", SWTableAutoFMT.exists());
-		SWTableAutoFormat_Listbox.select(3);
-		SWTableAutoFMT.ok();
+		assertTrue("Table auto format dialog pop up", swTableAutoFMT.exists());
+		swTableAutoFormatListbox.select(3);
+		swTableAutoFMT.ok();
 		// verify the auto format is that just selected
 		button("sw:PushButton:DLG_INSERT_TABLE:BT_AUTOFORMAT").click();
-		assertEquals("Blue", SWTableAutoFormat_Listbox.getSelText());
-		SWTableAutoFMT.close();
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		assertEquals("Blue", swTableAutoFormatListbox.getSelText());
+		swTableAutoFMT.close();
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 
 	}
 
@@ -212,38 +212,38 @@ public class TableGeneral {
 
 	@Test
 	public void testTableRowHeight() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 
 		// set row height
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_RowHeightMenu.select();
-		assertTrue(SWTable_SetRowHeight_Dialog.exists());
-		SWTable_SetRowHeight.focus();
+		swTableRowHeightMenu.select();
+		assertTrue(swTableSetRowHeightDialog.exists());
+		swTableSetRowHeight.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("0.5");
-		SWTable_SetRowHeight_Dialog.ok();
+		swTableSetRowHeightDialog.ok();
 
 		// verify row height
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_RowHeightMenu.select();
-		assertTrue(SWTable_SetRowHeight_Dialog.exists());
-		assertEquals("0.50\"", SWTable_SetRowHeight.getText());
-		SWTable_SetRowHeight_Dialog.close();
+		swTableRowHeightMenu.select();
+		assertTrue(swTableSetRowHeightDialog.exists());
+		assertEquals("0.50\"", swTableSetRowHeight.getText());
+		swTableSetRowHeightDialog.close();
 	}
 
 	// select row
 	@Test
 	public void testTableSelectRow() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		// select row
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_SelectRowMenu.select();
+		swTableSelectRowMenu.select();
 
 		// verify select one row successfully
 		typeKeys("<ctrl c>");
@@ -252,85 +252,85 @@ public class TableGeneral {
 		typeKeys("<enter>");
 		typeKeys("<ctrl v>");
 		typeKeys("<up>");
-		assertTrue(Table_Toolbar.exists());
+		assertTrue(tableToolbar.exists());
 
 	}
 
 	// insert row and verify how many row inserted
 	@Test
 	public void testTableInsertRow() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_InsertRowMenu.select();
+		swTableInsertRowMenu.select();
 		assertTrue("SWTable_InsertRow Dialog pop up",
-				SWTable_InsertRow.exists());
-		SWTable_InsertRow_Column_SetNumber.focus();
+				swTableInsertRow.exists());
+		swTableInsertRowColumnSetNumber.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("3");
-		SWTable_InsertRow.ok();
+		swTableInsertRow.ok();
 
 		writer.focus(); // verify how many rows in the table
-		assertNotNull(StatusBar.getItemTextById(8));
+		assertNotNull(statusBar.getItemTextById(8));
 		for (int i = 0; i < 4; i++) {
 			typeKeys("<down>");
-			assertNotNull(StatusBar.getItemTextById(8));
+			assertNotNull(statusBar.getItemTextById(8));
 		}
 		typeKeys("<down>");
 		sleep(1);
-		assertFalse(Table_Toolbar.exists());
+		assertFalse(tableToolbar.exists());
 	}
 
 	// delete row and verify row
 	@Test
 	public void testTableRowDelete() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		// delete row
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_RowDleteMenu.select();
+		swTableRowDleteMenu.select();
 		// verify whether delete row
 		writer.focus();
-		assertNotNull(StatusBar.getItemTextById(8));
+		assertNotNull(statusBar.getItemTextById(8));
 		typeKeys("<down>");
 		sleep(1);
-		assertFalse(Table_Toolbar.exists());
+		assertFalse(tableToolbar.exists());
 
 	}
 
 	// set column width and verify
 	@Test
 	public void testTableColumnWidth() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		// set column width
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_ColumnWidthMenu.select();
-		SWTable_SetColumnWidth.focus();
+		swTableColumnWidthMenu.select();
+		swTableSetColumnWidth.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("2");
-		SWTable_SetColumnDialog.ok();
+		swTableSetColumnDialog.ok();
 		// verify column width
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_ColumnWidthMenu.select();
-		assertEquals("2.00\"", SWTable_SetColumnWidth.getText());
+		swTableColumnWidthMenu.select();
+		assertEquals("2.00\"", swTableSetColumnWidth.getText());
 
 	}
 
 	// select column and verify
 	@Test
 	public void testTableColumnSelect() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_ColumnSelectMenu.select();
+		swTableColumnSelectMenu.select();
 
 		// verify select one column
 		typeKeys("<ctrl c>");
@@ -339,86 +339,86 @@ public class TableGeneral {
 		typeKeys("<enter>");
 		typeKeys("<ctrl v>");
 		typeKeys("<up>");
-		assertTrue(Table_Toolbar.exists());
+		assertTrue(tableToolbar.exists());
 
 	}
 
 	// insert column and verify
 	@Test
 	public void testTableColumnInsert() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		// insert column
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_ColumnInsertMenu.select();
-		SWTable_InsertRow_Column_SetNumber.focus();
+		swTableColumnInsertMenu.select();
+		swTableInsertRowColumnSetNumber.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("3");
-		SWTable_InsertColumn.ok();
+		swTableInsertColumn.ok();
 		// verify insert column successfully
 		writer.focus();
-		assertTrue(Table_Toolbar.exists());
+		assertTrue(tableToolbar.exists());
 		for (int i = 0; i < 9; i++) {
 			typeKeys("<right>");
 			sleep(1);
-			assertTrue(Table_Toolbar.exists());
+			assertTrue(tableToolbar.exists());
 		}
 		typeKeys("<right>");
 		sleep(1);
-		assertFalse(Table_Toolbar.exists());
+		assertFalse(tableToolbar.exists());
 	}
 
 	// delete column and verify whether delete or not
 	public void testTableColumnDelete() throws Exception {
-		writer_InsertTable.ok();
-		assertNotNull(StatusBar.getItemTextById(8));
+		writerInsertTable.ok();
+		assertNotNull(statusBar.getItemTextById(8));
 		// delete column
 		writer.focus();
 		writer.openContextMenu();
-		SWTable_ColumnDeleteMenu.select();
+		swTableColumnDeleteMenu.select();
 		// verify delete column
 		writer.focus();
-		assertTrue(Table_Toolbar.exists());
+		assertTrue(tableToolbar.exists());
 		for (int i = 0; i < 7; i++) {
 			typeKeys("<right>");
-			assertTrue(Table_Toolbar.exists());
+			assertTrue(tableToolbar.exists());
 		}
 		sleep(1);
-		assertFalse(Table_Toolbar.exists());
+		assertFalse(tableToolbar.exists());
 	}
 
 	// split cell
 	@Test
 	public void testTableCellSplit() throws Exception {
-		writer_InsertTable.ok();
-		assertTrue(Table_Toolbar.exists());
+		writerInsertTable.ok();
+		assertTrue(tableToolbar.exists());
 		for (int k = 0; k < 2; k++) {
 			writer.focus();
 			writer.openContextMenu();
-			SWTable_CellSplitMenu.select();
-			SWTable_CellSplitNumber.focus();
+			swTableCellSplitMenu.select();
+			swTableCellSplitNumber.focus();
 			typeKeys("<ctrl a>");
 			typeKeys("<delete>");
 			typeKeys("2");
 			if (k == 0) {
-				SWTable_CellSplitDialog.ok(); // split table cell horizontally
+				swTableCellSplitDialog.ok(); // split table cell horizontally
 			} else {
-				SWTable_CellSplitVERT_Button.check(); // split table cell
+				swTableCellSplitVERTButton.check(); // split table cell
 				// vertically
-				SWTable_CellSplitDialog.ok();
+				swTableCellSplitDialog.ok();
 			}
 		}
 		// verify cell split successfully
 		writer.focus();
-		assertTrue(Table_Toolbar.exists());
+		assertTrue(tableToolbar.exists());
 		for (int i = 0; i < 7; i++) {
 			typeKeys("<right>");
-			assertTrue(Table_Toolbar.exists());
+			assertTrue(tableToolbar.exists());
 		}
 		sleep(1);
-		assertFalse(Table_Toolbar.exists());
+		assertFalse(tableToolbar.exists());
 	}
 	
 	/**
@@ -428,16 +428,16 @@ public class TableGeneral {
 	 */
 	@Test
 	public void testConvertTableToText() throws Exception {
-		writer_InsertTable.ok();
+		writerInsertTable.ok();
 		writer.focus();
 		typeKeys("1<right>2<right>3<right>4");
 		sleep(1);
 
 		// Convert table to text
 		app.dispatch(".uno:ConvertTableToText");
-		assertTrue("Convert Table to Text dialog pop up", writer_ConvertTableToTextDlg.exists());
+		assertTrue("Convert Table to Text dialog pop up", writerConvertTableToTextDlg.exists());
 		// typeKeys("<enter>");
-		writer_ConvertTableToTextDlg.ok(); // "Enter" does not work on linux
+		writerConvertTableToTextDlg.ok(); // "Enter" does not work on linux
 
 		// Verify if text is converted successfully
 		app.dispatch(".uno:SelectAll");

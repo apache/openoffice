@@ -47,14 +47,14 @@ public class AddDeleteSymbolsFromCatalog {
 
 		// New a formula document
 		app.dispatch("private:factory/smath");
-		math_EditWindow.waitForExistence(10, 2);
+		mathEditWindow.waitForExistence(10, 2);
 
 		// Click catalog button
-		math_CatalogButton.click();
+		mathCatalogButton.click();
 
 		// Select "Special", click "Edit" button
-		math_SymbolsDlgListbox.select(2);
-		math_SymbolsDlgEditButton.click();
+		mathSymbolsDlgListbox.select(2);
+		mathSymbolsDlgEditButton.click();
 	}
 
 	@After
@@ -76,7 +76,7 @@ public class AddDeleteSymbolsFromCatalog {
 		int nListCount;
 		int nIndex = 1;
 		do {
-			math_EditSymbolsDlgViewControl.click(100 * nIndex, 10); // risk:
+			mathEditSymbolsDlgViewControl.click(100 * nIndex, 10); // risk:
 																	// after 6
 																	// or 7
 																	// circles,
@@ -84,27 +84,27 @@ public class AddDeleteSymbolsFromCatalog {
 																	// click out
 																	// of
 																	// ViewControl
-			selectedSymbol = math_EditSymbolsDlgSymbol.getText();
+			selectedSymbol = mathEditSymbolsDlgSymbol.getText();
 			nIndex++;
 			// Find if the selected symbol is already in the list
 			bSelectSymbolNotInList = false;
-			nListCount = math_EditSymbolsDlgSymbol.getItemCount();
+			nListCount = mathEditSymbolsDlgSymbol.getItemCount();
 			for (int i = 0; i < nListCount; i++) {
-				if (selectedSymbol.equals(math_EditSymbolsDlgSymbol.getItemText(i))) {
+				if (selectedSymbol.equals(mathEditSymbolsDlgSymbol.getItemText(i))) {
 					bSelectSymbolNotInList = true;
 					break;
 				}
 			}
 		} while (bSelectSymbolNotInList);
-		math_EditSymbolsDlgAdd.click();
-		math_EditSymbolsDlg.ok();
+		mathEditSymbolsDlgAdd.click();
+		mathEditSymbolsDlg.ok();
 
 		// Verify if the symbol is added to Symbol set
-		math_SymbolsDlgEditButton.click();
+		mathSymbolsDlgEditButton.click();
 		bSelectSymbolNotInList = false;
-		nListCount = math_EditSymbolsDlgSymbol.getItemCount();
+		nListCount = mathEditSymbolsDlgSymbol.getItemCount();
 		for (int i = 0; i < nListCount; i++) {
-			if (selectedSymbol.equals(math_EditSymbolsDlgSymbol.getItemText(i))) {
+			if (selectedSymbol.equals(mathEditSymbolsDlgSymbol.getItemText(i))) {
 				bSelectSymbolNotInList = true;
 				break;
 			}
@@ -112,8 +112,8 @@ public class AddDeleteSymbolsFromCatalog {
 		assertTrue("Symbol is not added to Symbol set", bSelectSymbolNotInList);
 
 		// Close all dialogs
-		math_EditSymbolsDlg.cancel();
-		math_SymbolsDlg.close();
+		mathEditSymbolsDlg.cancel();
+		mathSymbolsDlg.close();
 		app.dispatch(".uno:CloseDoc");
 	}
 
@@ -127,25 +127,25 @@ public class AddDeleteSymbolsFromCatalog {
 
 		// Modify the font of selected symbol
 		// String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
-		int oldSymbolFontIndex = math_EditSymbolsDlgFont.getSelIndex();
-		int modifiedSymbolFondIndex = (oldSymbolFontIndex + 1 == math_EditSymbolsDlgFont.getItemCount()) ? 0 : (oldSymbolFontIndex + 1);
-		math_EditSymbolsDlgFont.select(modifiedSymbolFondIndex); // select the
+		int oldSymbolFontIndex = mathEditSymbolsDlgFont.getSelIndex();
+		int modifiedSymbolFondIndex = (oldSymbolFontIndex + 1 == mathEditSymbolsDlgFont.getItemCount()) ? 0 : (oldSymbolFontIndex + 1);
+		mathEditSymbolsDlgFont.select(modifiedSymbolFondIndex); // select the
 																	// next font
 																	// of old
 																	// font
-		String modifiedSymbolFont = math_EditSymbolsDlgFont.getSelText();
-		String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
-		math_EditSymbolsDlgModify.click();
-		math_EditSymbolsDlg.ok();
+		String modifiedSymbolFont = mathEditSymbolsDlgFont.getSelText();
+		String selectedSymbol = mathEditSymbolsDlgSymbol.getText();
+		mathEditSymbolsDlgModify.click();
+		mathEditSymbolsDlg.ok();
 
 		// Verify if the font of symbol is modified successfully
-		math_SymbolsDlgEditButton.click();
-		math_EditSymbolsDlgSymbol.select(selectedSymbol);
-		assertEquals("Font of symbol is not modified successfully", modifiedSymbolFont, math_EditSymbolsDlgFont.getSelText());
+		mathSymbolsDlgEditButton.click();
+		mathEditSymbolsDlgSymbol.select(selectedSymbol);
+		assertEquals("Font of symbol is not modified successfully", modifiedSymbolFont, mathEditSymbolsDlgFont.getSelText());
 
 		// Close all dialogs
-		math_EditSymbolsDlg.cancel();
-		math_SymbolsDlg.close();
+		mathEditSymbolsDlg.cancel();
+		mathSymbolsDlg.close();
 		app.dispatch(".uno:CloseDoc");
 	}
 
@@ -159,28 +159,28 @@ public class AddDeleteSymbolsFromCatalog {
 
 		// Modify the typeface of selected symbol
 		// String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
-		int oldSymbolTypefaceIndex = math_EditSymbolsDlgTypeface.getSelIndex();
-		int modifiedSymbolTypefaceIndex = (oldSymbolTypefaceIndex + 1 == math_EditSymbolsDlgTypeface.getItemCount()) ? 0 : (oldSymbolTypefaceIndex + 1);
-		math_EditSymbolsDlgTypeface.select(modifiedSymbolTypefaceIndex); // select
+		int oldSymbolTypefaceIndex = mathEditSymbolsDlgTypeface.getSelIndex();
+		int modifiedSymbolTypefaceIndex = (oldSymbolTypefaceIndex + 1 == mathEditSymbolsDlgTypeface.getItemCount()) ? 0 : (oldSymbolTypefaceIndex + 1);
+		mathEditSymbolsDlgTypeface.select(modifiedSymbolTypefaceIndex); // select
 																			// the
 																			// next
 																			// typeface
 																			// of
 																			// old
 																			// typeface
-		String modifiedSymbolTypeface = math_EditSymbolsDlgTypeface.getSelText();
-		String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
-		math_EditSymbolsDlgModify.click();
-		math_EditSymbolsDlg.ok();
+		String modifiedSymbolTypeface = mathEditSymbolsDlgTypeface.getSelText();
+		String selectedSymbol = mathEditSymbolsDlgSymbol.getText();
+		mathEditSymbolsDlgModify.click();
+		mathEditSymbolsDlg.ok();
 
 		// Verify if the typeface of symbol is modified successfully
-		math_SymbolsDlgEditButton.click();
-		math_EditSymbolsDlgSymbol.select(selectedSymbol);
-		assertEquals("Typeface of symbol is not modified successfully", modifiedSymbolTypeface, math_EditSymbolsDlgTypeface.getSelText());
+		mathSymbolsDlgEditButton.click();
+		mathEditSymbolsDlgSymbol.select(selectedSymbol);
+		assertEquals("Typeface of symbol is not modified successfully", modifiedSymbolTypeface, mathEditSymbolsDlgTypeface.getSelText());
 
 		// Close all dialogs
-		math_EditSymbolsDlg.cancel();
-		math_SymbolsDlg.close();
+		mathEditSymbolsDlg.cancel();
+		mathSymbolsDlg.close();
 		app.dispatch(".uno:CloseDoc");
 	}
 
@@ -193,15 +193,15 @@ public class AddDeleteSymbolsFromCatalog {
 	public void testDeleteSymbolFromCatalog() throws Exception {
 
 		// Delete the selected symbol
-		String selectedSymbol = math_EditSymbolsDlgSymbol.getText();
-		math_EditSymbolsDlgDelete.click();
-		math_EditSymbolsDlg.ok();
+		String selectedSymbol = mathEditSymbolsDlgSymbol.getText();
+		mathEditSymbolsDlgDelete.click();
+		mathEditSymbolsDlg.ok();
 
 		// Verify if the selected symbol is deleted successfully
-		math_SymbolsDlgEditButton.click();
+		mathSymbolsDlgEditButton.click();
 		boolean isDeleted = true;
-		for (int i = 0; i < math_EditSymbolsDlgSymbol.getItemCount(); i++) {
-			if (selectedSymbol.equals(math_EditSymbolsDlgSymbol.getItemText(i))) {
+		for (int i = 0; i < mathEditSymbolsDlgSymbol.getItemCount(); i++) {
+			if (selectedSymbol.equals(mathEditSymbolsDlgSymbol.getItemText(i))) {
 				isDeleted = false;
 				break;
 			}
@@ -209,8 +209,8 @@ public class AddDeleteSymbolsFromCatalog {
 		assertTrue("Symbol is not deleted successfully", isDeleted);
 
 		// Close all dialogs
-		math_EditSymbolsDlg.cancel();
-		math_SymbolsDlg.close();
+		mathEditSymbolsDlg.cancel();
+		mathSymbolsDlg.close();
 		app.dispatch(".uno:CloseDoc");
 	}
 }

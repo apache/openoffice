@@ -26,13 +26,12 @@
     <property environment="env" />
     <property file="build.properties" />
     <property name="env.DISPLAY" value=":0.0"/>
-	<property name="env.INPATH" value="testspace"/>
-	<property name="env.TESTSPACE" value="${env.INPATH}" />
+	<property name="env.TESTSPACE" value="testspace" />
 	<property name="env.JUNIT_HOME" value="external/junit" />
 	<property name="junit.home" value="${env.JUNIT_HOME}" />
 	<property name="testspace" value="${env.TESTSPACE}" />
     <property name="classes" value="${testspace}/class" />
-	<property name="dist" value="." />
+	<property name="dist" value="${testspace}" />
 	<property name="test.name" value="BVT" />
 	<property name="test.classes" value="testcase/gui/bvt/*.class" />
 	<property name="test.output" value="${testspace}/output" />
@@ -45,8 +44,33 @@
 			<include name="*.jar" />
 		</fileset>
 	</path>
+    
+    <target name="upgrade">
+		<property name="upgrade.script" location="${java.io.tmpdir}/aoo_test_upgrade.xml"/>
+		<property name="upgrade.to" location="."/>
+		<copy file="build.xml" tofile="${upgrade.script}"/>
+        <condition property="ant.executable" value="ant.bat">
+			<os family="windows" />
+		</condition>
+        <property name="ant.executable" value="ant"/>
+        <exec executable="${ant.executable}" spawn="true">
+			<arg value="-Dupgrade.to=${upgrade.to}"/>
+			<arg value="-f"/>
+			<arg value="${upgrade.script}"/>
+			<arg value="upgrade.run"/>
+		</exec>
+	</target>
 
-	<target name="testcommon.init">
+	<target name="upgrade.run">
+		<property name="testpack.url" value="http://9.123.117.85/testpack/trunk/aoo_test.zip"/>
+		<property name="testack.temp" location="${java.io.tmpdir}/aoo_test.zip"/>
+ 		<get src="${testpack.url}" dest="${testack.temp}"/>
+		<delete dir="${upgrade.to}" failonerror="false"/>
+		<mkdir dir="${upgrade.to}"/>
+		<unzip src="${testack.temp}" dest="${upgrade.to}"/>
+	</target>
+    
+    <target name="testcommon.init">
 		<mkdir dir="${classes}" />
 		<copy includeemptydirs="false" todir="${classes}">
 			<fileset dir="testcommon/source">
@@ -132,9 +156,14 @@
 
 	<target name="dist">
 		<tstamp />
-		<property name="dist.archive" value="aoo_test_${DSTAMP}.zip" />
-        <zip destfile="${dist}/${dist.archive}" basedir="." update="true" includes="testcommon/**,testgui/**,testuno/**,build.xml,build.example.properties,external/**,reportstyle/**" excludes="**/bin/**">
+        <tstamp>
+            <format property="testpack.version" pattern="yyyyMMddhhmmss"/>
+        </tstamp>
+        <property name="dist.archive" value="aoo_test_${DSTAMP}.zip" />
+        <echo file="${testpack.version}">${testpack.version}</echo>
+        <zip destfile="${dist}/${dist.archive}" basedir="." update="false" excludes="testspace/**,testassistant/**,testassistant.feature/**,**/bin/**">
         </zip>
+        <delete file="${testpack.version}"/>
 	</target>
 
 	<target name="check.build" description="Check the build context">
@@ -305,7 +334,7 @@
 
 
 	<target name="report.test" unless="report.test.skip" description="Upload the testing result to report repository." depends="detect.testenv">
-		<property name="report.to" value="${openoffice.build.name}/${test.name}/${test.os.name}-${test.os.version}-${test.os.arch}" />
+		<property name="report.to" value="${openoffice.build.name}-${test.name}/${test.os.name}-${test.os.version}-${test.os.arch}" />
 		<echo>Uploading report to ${report.repos}/${report.to}</echo>
 		<property name="report.to.temp" location="${testspace}/.temp.ouput"/>
         <delete dir="${report.to.temp}" deleteonexit="true"/>

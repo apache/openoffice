@@ -28,9 +28,9 @@ import java.lang.reflect.Array;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-public class CalcUtil {
+public class SCTool {
 
-	private static Logger LOG = Logger.getLogger(CalcUtil.class.getName());
+	private static Logger LOG = Logger.getLogger(SCTool.class.getName());
 
 	/**
 	 * Select a range.
@@ -39,8 +39,8 @@ public class CalcUtil {
 	 *            e.g. Sheet1.A10, Sheet1.A11:B30, A11, A30:B45
 	 */
 	public static void selectRange(String range) {
-		SC_InputBar_Position.click(0.5, 0.5);
-		SC_InputBar_Position.setText(range);
+		scInputBarPosition.click(0.5, 0.5);
+		scInputBarPosition.setText(range);
 		typeKeys("<enter>");
 		sleep(1);
 	}
@@ -55,7 +55,7 @@ public class CalcUtil {
 	public static String getCellInput(String cell) {
 		if (cell != null)
 			selectRange(cell);
-		String caption = SC_InputBar_Input.getCaption();
+		String caption = scInputBarInput.getCaption();
 		// Fix: When formulaEdit's caption is blank, the hook will return the
 		// document window's caption
 		// So if it's document window caption, return ""

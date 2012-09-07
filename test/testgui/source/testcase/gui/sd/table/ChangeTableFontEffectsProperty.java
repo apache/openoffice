@@ -55,56 +55,56 @@ public class ChangeTableFontEffectsProperty {
 
 		// Create a new presentation document
 		app.dispatch("private:factory/simpress?slot=6686");
-		PresentationWizard.ok();
+		presentationWizard.ok();
 
 		// Insert a table
 		app.dispatch(".uno:InsertTable", 3);
-		InsertTable.ok();
+		insertTable.ok();
 
 		// Verify if the table toolbar is active
-		assertTrue("Table Toolbar exist", Table_Toolbar.exists(3));
+		assertTrue("Table Toolbar exist", tableToolbar.exists(3));
 
 		// open Table Properties Dialog
 		app.dispatch(".uno:TableDialog", 3);
-		EffectsPage.select();
+		effectsPage.select();
 		// select Font color
-		EffectsPage_Color.select(1);
-		assertEquals("EffectsPage_Color is black", EffectsPage_Color.getSelText(), "Black");
+		effectsPageColor.select(1);
+		assertEquals("EffectsPage_Color is black", effectsPageColor.getSelText(), "Black");
 
 		// select Relief
-		EffectsPage_Relief.select(0);
-		assertEquals("EffectsPage_Relief is no", EffectsPage_Relief.getSelText(), "(Without)");
-		EffectsPage_Outline.check();
-		assertTrue("EffectsPage_Outline is checked", EffectsPage_Outline.isChecked());
-		EffectsPage_Shadow.check();
-		assertTrue("EffectsPage_Shadow is checked", EffectsPage_Shadow.isChecked());
+		effectsPageRelief.select(0);
+		assertEquals("EffectsPage_Relief is no", effectsPageRelief.getSelText(), "(Without)");
+		effectsPageOutline.check();
+		assertTrue("EffectsPage_Outline is checked", effectsPageOutline.isChecked());
+		effectsPageShadow.check();
+		assertTrue("EffectsPage_Shadow is checked", effectsPageShadow.isChecked());
 
 		// select Overlining
-		EffectsPage_Overline.select(1);
-		assertEquals("EffectsPage_Overline is first item", EffectsPage_Overline.getSelText(), EffectsPage_Overline.getItemText(1));
-		EffectsPage_Overline_Color.select(1);
-		assertEquals("EffectsPage_Overline_Color is first item", EffectsPage_Overline_Color.getSelText(), EffectsPage_Overline_Color.getItemText(1));
+		effectsPageOverline.select(1);
+		assertEquals("EffectsPage_Overline is first item", effectsPageOverline.getSelText(), effectsPageOverline.getItemText(1));
+		effectsPageOverlineColor.select(1);
+		assertEquals("EffectsPage_Overline_Color is first item", effectsPageOverlineColor.getSelText(), effectsPageOverlineColor.getItemText(1));
 
 		// select Strikethrough
-		EffectsPage_Strikeout.select(1);
-		assertEquals("EffectsPage_Strikeout is first item", EffectsPage_Strikeout.getSelText(), EffectsPage_Strikeout.getItemText(1));
+		effectsPageStrikeout.select(1);
+		assertEquals("EffectsPage_Strikeout is first item", effectsPageStrikeout.getSelText(), effectsPageStrikeout.getItemText(1));
 
 		// select Underlining
-		EffectsPage_Underline.select(1);
-		assertEquals("EffectsPage_Underline is first item", EffectsPage_Underline.getSelText(), EffectsPage_Underline.getItemText(1));
-		EffectsPage_Underline_Color.select(1);
-		assertEquals("EffectsPage_Underline_Color is first item", EffectsPage_Underline_Color.getSelText(), EffectsPage_Underline_Color.getItemText(1));
+		effectsPageUnderline.select(1);
+		assertEquals("EffectsPage_Underline is first item", effectsPageUnderline.getSelText(), effectsPageUnderline.getItemText(1));
+		effectsPageUnderlineColor.select(1);
+		assertEquals("EffectsPage_Underline_Color is first item", effectsPageUnderlineColor.getSelText(), effectsPageUnderlineColor.getItemText(1));
 
 		// select individual workds
-		EffectsPage_InvidiualWords.check();
-		assertTrue("EffectsPage_InvidiualWords is checked", EffectsPage_InvidiualWords.isChecked());
+		effectsPageInvidiualWords.check();
+		assertTrue("EffectsPage_InvidiualWords is checked", effectsPageInvidiualWords.isChecked());
 
 		// select Emphasis Mark
 		// EffectsPage_Emphasis.select(1);
 		// assertEquals(EffectsPage_Emphasis.getSelText(), "Dot");
 		// EffectsPage_Position.select(1);
 		// assertEquals(EffectsPage_Position.getSelText(), "Below text");
-		EffectsPage.ok();
+		effectsPage.ok();
 
 	}
 }

@@ -63,19 +63,19 @@ public class InsertSheet {
 		// Open Insert Sheet dialog via main menu Insert-> Sheet
 		app.dispatch(".uno:Insert");
 		// Change new sheet number into 3 to insert 3 new sheet one time
-		SCSheetNumber.setText("3");
+		scSheetNumber.setText("3");
 		// Click OK button to create sheet with default setting
-		SCInsertSheetDlg.ok();
+		scInsertSheetDlg.ok();
 		// Verify new sheets have been inserted before Sheet1
 		app.dispatch(".uno:SelectTables");
 		// To support multi-language, just verify the number in the sheet name
-		assertTrue(SCSheetsList.getItemsText()[0].contains("4"));
-		assertTrue(SCSheetsList.getItemsText()[1].contains("5"));
-		assertTrue(SCSheetsList.getItemsText()[2].contains("6"));
-		assertTrue(SCSheetsList.getItemsText()[3].contains("1"));
-		assertTrue(SCSheetsList.getItemsText()[4].contains("2"));
-		assertTrue(SCSheetsList.getItemsText()[5].contains("3"));
-		SCSelectSheetsDlg.ok();
+		assertTrue(scSheetsList.getItemsText()[0].contains("4"));
+		assertTrue(scSheetsList.getItemsText()[1].contains("5"));
+		assertTrue(scSheetsList.getItemsText()[2].contains("6"));
+		assertTrue(scSheetsList.getItemsText()[3].contains("1"));
+		assertTrue(scSheetsList.getItemsText()[4].contains("2"));
+		assertTrue(scSheetsList.getItemsText()[5].contains("3"));
+		scSelectSheetsDlg.ok();
 	}
 
 	/**
@@ -88,14 +88,14 @@ public class InsertSheet {
 		// Open Insert Sheet dialog via main menu Insert-> Sheet
 		app.dispatch(".uno:Insert");
 		// Click OK button to create sheet with default setting
-		SCInsertSheetDlg.ok();
+		scInsertSheetDlg.ok();
 		// Verify new sheet has been inserted before Sheet1
 		app.dispatch(".uno:SelectTables");
 		// To support multi-language, just verify the number in the sheet name
-		assertTrue(SCSheetsList.getItemsText()[0].contains("4"));
-		assertTrue(SCSheetsList.getItemsText()[1].contains("1"));
-		assertTrue(SCSheetsList.getItemsText()[2].contains("2"));
-		assertTrue(SCSheetsList.getItemsText()[3].contains("3"));
-		SCSelectSheetsDlg.ok();
+		assertTrue(scSheetsList.getItemsText()[0].contains("4"));
+		assertTrue(scSheetsList.getItemsText()[1].contains("1"));
+		assertTrue(scSheetsList.getItemsText()[2].contains("2"));
+		assertTrue(scSheetsList.getItemsText()[3].contains("3"));
+		scSelectSheetsDlg.ok();
 	}
 }
