@@ -107,8 +107,10 @@ public:
 
 protected:
 private:
+public:
 	void		AddLabel( ScDPItemData* pData);
-	sal_Bool	AddData( long nDim, ScDPItemData* itemData );
+    template< bool bCheckDate >
+    sal_Bool	AddData( long nDim, ScDPItemData* itemData );
 };
 
 #endif //DPTABLECACHE_HXX
