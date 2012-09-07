@@ -78,6 +78,15 @@ public class UnoApp {
 	 * Start OpenOffice and connect to it
 	 */
 	public void start() {
+		if (componentContext != null) {
+			try {
+				componentContext.getServiceManager();
+				return;
+			} catch (Exception e) {
+				
+			}
+		}
+		
 		if (openOffice != null) {
 			openOffice.start();
 			unoUrl = openOffice.getUnoUrl();
@@ -154,15 +163,24 @@ public class UnoApp {
 		return desktop;
 	}
 
-	public XComponent loadDocument(String file) throws Exception {
+//	public XComponent loadDocument(String file) throws Exception {
+//		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
+//		return componentLoader.loadComponentFromURL(FileUtil.getUrl(file), "_blank", 0, new PropertyValue[0]);
+//	}
+	
+	public XComponent loadDocument(String file, PropertyValue... propertyValue) throws Exception {
 		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
-		return componentLoader.loadComponentFromURL(FileUtil.getUrl(file), "_blank", 0, new PropertyValue[0]);
+		return componentLoader.loadComponentFromURL(FileUtil.getUrl(file), "_blank", 0, propertyValue);
 	}
 	
+//	public XComponent loadDocumentFromURL(String url) throws Exception {
+//		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
+//		return componentLoader.loadComponentFromURL(url, "_blank", 0, new PropertyValue[0]);
+//	}
 	
-	public XComponent loadDocumentFromURL(String url) throws Exception {
+	public XComponent loadDocumentFromURL(String url, PropertyValue... propertyValue) throws Exception {
 		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
-		return componentLoader.loadComponentFromURL(url, "_blank", 0, new PropertyValue[0]);
+		return componentLoader.loadComponentFromURL(url, "_blank", 0, propertyValue);
 	}
 	
 	public XComponent newDocument(String type) throws Exception {
@@ -170,10 +188,21 @@ public class UnoApp {
 		return componentLoader.loadComponentFromURL("private:factory/" + type, "_blank", 0, new PropertyValue[0]);
 	}
 	
-	public void saveDocument(XComponent doc, String toPath) throws Exception {
+//	public void saveDocument(XComponent doc, String toPath) throws Exception {
+//		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);	
+//		String fileUrl = FileUtil.getUrl(new File(toPath));	
+//		m_xstorable.storeAsURL(fileUrl, new PropertyValue[0]);
+//	}
+	
+	public void saveDocument(XComponent doc, String toPath, PropertyValue... propertyValue) throws Exception {
 		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);	
 		String fileUrl = FileUtil.getUrl(new File(toPath));	
-		m_xstorable.storeAsURL(fileUrl, new PropertyValue[0]);
+		m_xstorable.storeToURL(fileUrl, propertyValue);
+	}
+	
+	public void saveDocumentToURL(XComponent doc, String toURL, PropertyValue... propertyValue) throws Exception {
+		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);	
+		m_xstorable.storeToURL(toURL, propertyValue);
 	}
 	
 	public void closeDocument(XComponent doc) {
