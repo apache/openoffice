@@ -25,6 +25,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 import org.junit.After;
@@ -33,6 +34,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestRule;
+import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
@@ -52,17 +55,20 @@ import com.sun.star.util.XCloseable;
 @RunWith(Parameterized.class)
 public class Conversion {
 	@Rule
-	public Logger log = Logger.getLogger(this);
+    public TestRule timeout = new Timeout(10 * 60000); 
 	
-	public static String repos = Testspace.getPath("pvt_conversion_data");
+	@Rule
+	public Logger log = Logger.getLogger(this);
+
+	public static File repos = Testspace.getFile("pvt_conversion_data");
 
 	public static String[] params = {
 		".*\\.((doc)|(dot)|(odt)|(ott))$", "writer_pdf_Export", "pdf", 
 		".*\\.((xls)|(xlt)|(ods)|(ots))$", "calc_pdf_Export", "pdf", 
 		".*\\.((ppt)|(ppt)|(odp)|(otp))$", "impress_pdf_Export", "pdf", 
-		".*\\.((doc)|(dot))$", "writer8", "odt", 
-		".*\\.((xls)|(xlt))$", "calc8", "ods", 
-		".*\\.((ppt)|(ppt))$", "impress8", "odp", 
+		".*\\.((doc)|(dot)|(docx)|(docm)|(dotx)|(dotm))$", "writer8", "odt", 
+		".*\\.((xls)|(xlt)|(xlsx)|(xltx)|(xlsm)|(xltm))$", "calc8", "ods", 
+		".*\\.((ppt)|(pot)|(pptx)|(pptm)|(potm)|(potx))$", "impress8", "odp", 
 		".*\\.((odt)|(ott))$", "MS Word 97", "doc", 
 		".*\\.((ods)|(ots))$", "MS Excel 97", "xls", 
 		".*\\.((odp)|(otp))$", "MS PowerPoint 97", "ppt", 
@@ -72,9 +78,8 @@ public class Conversion {
 	private static PrintStream result;
 	@Parameters
 	public static Collection<Object[]> data() {
-		File dir = new File(repos);
 		ArrayList<Object[]> list = new ArrayList<Object[]>();
-		collect(dir, list);
+		collect(repos, list);
 		return list;
 	}
 
@@ -86,7 +91,7 @@ public class Conversion {
 		File[] files = dir.listFiles();
 		if (files == null)
 			return;
-
+		Arrays.sort(files);
 		for (File file : files) {
 			if (file.isDirectory()) {
 				collect(file, list);
@@ -120,21 +125,7 @@ public class Conversion {
 	@AfterClass
 	public static void afterClass() throws Exception {
 		result.close();
-	}
-	
-	@Before
-	public void before() throws Exception {
-		app.start();
-	}
-	
-	@After
-	public void after() throws Exception{
-		String scenario = FileUtil.getFileExtName(sourceFile.getName()).toLowerCase() + " to " + FileUtil.getFileExtName(targetFile.getName()).toLowerCase();
-		result.println(sourceFile.getName() + "," + scenario + "," + closeTime + "," + saveTime + "," + loadTime);
-		if (closeTime < 0) {
-			log.warning("Exception occurs during " + sourceFile.getName() + "->" + targetFile.getName());
-			app.close();
-		}
+		app.close();
 	}
 	
 	private File sourceFile = null;
@@ -142,6 +133,8 @@ public class Conversion {
 	private String sourceFileUrl = null;
 	private String targetFileUrl = null;
 	private String targetFilterName = null;
+	private String scenario = null;
+	private String sourceFileId = null;
 	private long loadTime = -1;
 	private long saveTime = -1;
 	private long closeTime = -1;
@@ -153,6 +146,23 @@ public class Conversion {
 		this.targetFilterName = targetFilterName;
 		sourceFileUrl = FileUtil.getUrl(this.sourceFile);
 		targetFileUrl = FileUtil.getUrl(this.targetFile);
+		scenario = FileUtil.getFileExtName(sourceFile.getName()).toLowerCase() + " to " + FileUtil.getFileExtName(targetFile.getName()).toLowerCase();
+		sourceFileId = sourceFile.getAbsolutePath().replace(repos.getAbsolutePath(), "").replace("\\", "/");
+	}
+	
+	@Before
+	public void before() throws Exception {
+		log.info("Start [File: " + sourceFileId + "] [Size: " + (sourceFile.length() / 1024) + "KB] [Scenario: " + scenario + "]");
+		app.start();
+	}
+	
+	@After
+	public void after() throws Exception{
+		result.println(sourceFileId + "," + scenario + "," + closeTime + "," + saveTime + "," + loadTime);
+		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
+		if (closeTime < 0) {
+			app.close();
+		}
 	}
 	
 	private PropertyValue propertyValue(String name, Object value) {
