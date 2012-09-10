@@ -232,8 +232,8 @@
 
 	<target name="install.build" unless="install.build.skip" description="Install the build to the local">
 		<property name="openoffice.install.dir" value="${testspace}/install/aoo" />
-        <property name="openoffice.install.temp" value="${testspace}/install/temp" />
-        <delete dir="${openoffice.install.temp}"/>
+		<property name="openoffice.install.temp" value="${testspace}/install/temp" />
+		<delete dir="${openoffice.install.temp}" failonerror="false"/>
 		<mkdir dir="${openoffice.install.temp}" />
 		<unzip dest="${openoffice.install.temp}">
 			<fileset dir="${openoffice.pack.dir}">
@@ -248,16 +248,16 @@
 		<exec dir="${openoffice.install.temp}" executable="tar" failifexecutionfails="false">
 			<arg line="-zxpf ${gz.files}" />
 		</exec>
-        <pathconvert property="openoffice.root.dir" pathsep=" " setonempty="false">
+       		<pathconvert property="openoffice.root.dir" pathsep=" " setonempty="false">
 			<path>
 				<dirset dir="${openoffice.install.temp}">
                     <include name="*"/>
                 </dirset>
 			</path>
 		</pathconvert>
-        <delete dir="${openoffice.install.dir}"/>
-        <move file="${openoffice.root.dir}" tofile="${openoffice.install.dir}"/>
-        <delete dir="${openoffice.install.temp}"/>
+       		<delete dir="${openoffice.install.dir}" failonerror="false"/>
+		<move file="${openoffice.root.dir}" tofile="${openoffice.install.dir}" failonerror="false"/>
+		<delete dir="${openoffice.install.temp}"  failonerror="false"/>
 		<pathconvert property="openoffice.bin" pathsep=" " setonempty="false">
 			<path>
 				<fileset dir="${openoffice.install.dir}" includes="**/*/soffice.bin" followsymlinks="false" />

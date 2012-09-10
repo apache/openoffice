@@ -182,33 +182,26 @@ public class TestSample {
 	}
 
 	public void testWriter() {
-		startcenter.menuItem("File->Open...").select();
-		submitOpenDlg(file.getAbsolutePath());
+		open(file.getAbsolutePath());
 		handleBlocker(writer);
 		sleep(10);
 
 		// Assert.assertTrue("File Passed:" + file,
 		// writer.getCaption().contains(file.getName()));
-
-		writer.menuItem("File->Save As...").select();
-		submitSaveDlg(saveTo);
+		saveAs(saveTo);
 		if (alienFormatDlg.exists(3))
 			alienFormatDlg.ok();
 		sleep(2);
 		writer.waitForEnabled(120, 2);
-
-		writer.menuItem("File->Close").select();
-
-		openStartcenter();
-		// Reopen the saved file
-		startcenter.menuItem("File->Open...").select();
-		submitOpenDlg(saveTo);
+		close();
+		
+		open(saveTo);
 		handleBlocker(writer);
 		sleep(10);
 
 		// Assert.assertTrue("File Passed:" + file,
 		// writer.getCaption().contains(file.getName()));
-		writer.menuItem("File->Close").select();
+		close();
 		passed = true;
 	}
 
