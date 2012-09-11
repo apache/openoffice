@@ -73,7 +73,7 @@ public class FileProvider extends Suite {
 
 		@Override
 		protected String testName(FrameworkMethod method) {
-			return method.getName() + Arrays.toString(parameters);
+			return method.getName() + "[" + index + "]" + Arrays.toString(parameters);
 		}
 
 		@Override
