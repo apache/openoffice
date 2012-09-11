@@ -33,12 +33,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import java.util.logging.Level;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -59,6 +61,8 @@ import org.w3c.dom.Document;
 public class FileUtil {
 	 
 	private final static DateFormat FILENAME_FORMAT = new SimpleDateFormat("yyMMddHHmm");
+	
+	private final static Logger log = Logger.getLogger(FileUtil.class);
 	
 	private FileUtil(){
 		
@@ -644,11 +648,6 @@ public class FileUtil {
 		return totalSize/1000;
 	}
 	
-	/**
-     * unzip file to the unzipToLoc
-     * @param folder's path
-     * @return Kb
-     */
 	public static void unzipFile(String unzipfile, String unzipDest){
 		    try {
 		      File dest = new File(unzipDest); 
@@ -704,7 +703,6 @@ public class FileUtil {
 	public static File download(String urlString, File output) {
 		InputStream in = null;
 		OutputStream out = null;
-		System.out.println("[Vclauto] Download '" + urlString + "'");
 		try {
 			URL url = new URL(urlString);
 			URLConnection urlConnection = url.openConnection();
@@ -728,16 +726,14 @@ public class FileUtil {
 					int nowProgress = totalCount * 10 / totalSize;
 					if (nowProgress > progress) {
 						progress = nowProgress;
-						System.out.print(".");
 					}
 				}
 				
 			}
-			System.out.println("Done!");
+			log.info("Download [" + urlString + "] -> [" + output + "] OK!");
 			return output;
 		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("Error!");
+			log.log(Level.SEVERE, "Download [" + urlString + "] -> [" + output + "] Fail!", e);
 			return null;
 		} finally {
 			if (in != null)
@@ -755,6 +751,7 @@ public class FileUtil {
 	}
 
 	
+	@SuppressWarnings("deprecation")
 	public static String getUrl(File file) {
 		try {
 			String url = file.getCanonicalFile().toURL().toString();
@@ -770,5 +767,15 @@ public class FileUtil {
 	
 	public static String getUrl(String path) {
 		return getUrl(new File(path));
+	}
+	
+	public static boolean isUrl(String address) {
+		try {
+			new URL(address);
+			return true;
+		} catch (MalformedURLException e) {
+			return false;
+		}
+		
 	}
 }

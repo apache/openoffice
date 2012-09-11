@@ -74,12 +74,33 @@ public class Testspace {
 	}
 	
 	public static String prepareData(String dataFilePath) {
-		return prepareData(dataFilePath, "temp/" + dataFilePath);
+		File dataFile = prepareDataFile(dataFilePath);
+		return dataFile.getAbsolutePath();
 	}
 	
 	public static String prepareData(String dataFilePath, String to) {
-		File dataFile = new File(dataFilePath);
+		File dataFile = prepareDataFile(dataFilePath,to);
+		return dataFile.getAbsolutePath();
+	}
+	
+	public static File prepareDataFile(String dataFilePath) {
+		String name = new File(dataFilePath).getName();
+		return prepareDataFile(dataFilePath, "temp/" + name);
+	}
+	
+	public static File prepareDataFile(String dataFilePath, String to) {
 		File workingFile = getFile(to);
+		
+		if (FileUtil.isUrl(dataFilePath)) {
+			if (FileUtil.download(dataFilePath, workingFile) == null) {
+				throw new RuntimeException("Can not prepare data: " + dataFilePath);
+			}
+			return workingFile;
+		}
+		
+		
+		File dataFile = new File(dataFilePath);
+		
 		
 		if (!dataFile.isAbsolute()) 
 			dataFile = new File(testdata, dataFilePath);
@@ -94,7 +115,7 @@ public class Testspace {
 				throw new RuntimeException("Can not prepare data: " + dataFilePath);
 		}
 		
-		return workingFile.getAbsolutePath();
+		return workingFile;
 	}
 	
 	public static boolean deleteFile(String path) {
