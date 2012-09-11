@@ -68,6 +68,11 @@ public class FileUtil {
 		
 	}
 	
+	/**
+	 * Parse XML file to Document model
+	 * @param path
+	 * @return
+	 */
 	public static Document parseXML(String path) {
 		try {
 			DocumentBuilderFactory dbfac = DocumentBuilderFactory.newInstance();
@@ -79,6 +84,12 @@ public class FileUtil {
 		}
 	}
 	
+	/**
+	 * Get a string by XPATH from a xml file
+	 * @param xml
+	 * @param xpathStr
+	 * @return
+	 */
 	public static String getStringByXPath(String xml, String xpathStr) {
 		Document doc = parseXML(xml);
 		if (doc == null)
@@ -340,6 +351,11 @@ public class FileUtil {
 	}
 	
 
+	/**
+	 * Write string into a file
+	 * @param filePath
+	 * @param contents
+	 */
 	public static void writeStringToFile(String filePath, String contents) {
 		FileWriter writer = null;
 		try {
@@ -473,6 +489,12 @@ public class FileUtil {
     }
     
 
+    /**
+     * Pump data from an inputstream into a file
+     * @param from
+     * @param toFile
+     * @return
+     */
 	public static boolean writeToFile(InputStream from, File toFile) {
 		FileOutputStream to = null;
 		try {
@@ -504,6 +526,12 @@ public class FileUtil {
 		}
 	}
     
+	/**
+	 * Pump data from an inputstream into an output stream
+	 * @param from
+	 * @param to
+	 * @return
+	 */
 	public static boolean pump(InputStream from, OutputStream to) {
 		try {
 			byte[] buffer = new byte[4096];
@@ -564,7 +592,7 @@ public class FileUtil {
     }
     
     /**
-     * Delete a file
+     * Delete a file or directory
      * @param file
      * @return
      */
@@ -586,10 +614,20 @@ public class FileUtil {
 		return path.delete();
 	}
     
+    /**
+     * Delete a file or directory.
+     * @param path
+     * @return
+     */
     public static boolean deleteFile(String path) {
 		return deleteFile(new File(path));
 	}
     
+    /**
+     * Check if a file exists
+     * @param file
+     * @return
+     */
     public static boolean fileExists(String file) {
     	return new File(file).exists();
     }
@@ -607,82 +645,87 @@ public class FileUtil {
 			return null;
 		return file.substring(i+1);
 	}
-	 /**
-     * Get the file's size
-     * @param file
-     * @return KB
-     */
+
+	
+	/**
+	 * Get file size. If it's a directory, it calculates the total size of files
+	 * @param filePath
+	 * @return
+	 */
 	public static long getFileSize(String filePath){
-		long totalSize = 0;
-		FileInputStream f = null;
-		File file = new File(filePath);
-		
-		try {
-			f = new FileInputStream(file);
-			totalSize = f.available();
-			f.close();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return totalSize/1000;
+		return getFileSize(new File(filePath));
 	}
 
 	/**
-     * Get the folder's size
-     * @param folder's path
-     * @return Kb
-     */
-	public static long getFolderSize(String dir){
-		long totalSize = 0;
-		File[] files = new File(dir).listFiles();
+	 * Get file size. If it's a directory, it calculates the total size of files
+	 * @param file
+	 * @return
+	 */
+	public static long getFileSize(File file){
+		if (file.isFile())
+			return file.length();
 		
-		for(int i=0; i<files.length; i++){
-			if(files[i].isDirectory())
-				totalSize = totalSize + getFolderSize(files[i].getAbsolutePath())*1000;
-			else
-				totalSize = totalSize + files[i].length();
+		long size = 0;
+		File[] files = file.listFiles();
+		if (files == null)
+			return size;
+		
+		for (File f : files) {
+			size += getFileSize(f);
 		}
-		
-		return totalSize/1000;
+		return size;
 	}
 	
-	public static void unzipFile(String unzipfile, String unzipDest){
-		    try {
-		      File dest = new File(unzipDest); 
-		      ZipInputStream zin = new ZipInputStream(new FileInputStream(unzipfile));
-		      ZipEntry entry;
-		      //Create folder
-		      while ( (entry = zin.getNextEntry()) != null){
-		        if (entry.isDirectory()) {
-		          File directory = new File(dest, entry.getName());
-		          if (!directory.exists())
-		            if (!directory.mkdirs())
-		              System.exit(0);
-		          zin.closeEntry();
-		        }
-		        if (!entry.isDirectory()) {
-		          File myFile = new File(entry.getName());
-		          FileOutputStream fout = new FileOutputStream(unzipDest + "/" + myFile.getPath());
-		          DataOutputStream dout = new DataOutputStream(fout);
-		          byte[] b = new byte[1024];
-		          int len = 0;
-		          while ( (len = zin.read(b)) != -1) {
-		            dout.write(b, 0, len);
-		          }
-		          dout.close();
-		          fout.close();
-		          zin.closeEntry();
-		        }
-		      }
-		    }
-		    catch (IOException e) {
-		      e.printStackTrace();
-		      System.out.println(e);
-		    }
+	/**
+	 * Unzip a zip file into the destination directory
+	 * @param zipFile
+	 * @param dest
+	 */
+	public static void unzip(String zipFile, String dest) {
+		ZipInputStream zin = null;
+		FileOutputStream fos = null;
+		try {
+			File destFile = new File(dest);
+			zin = new ZipInputStream(new FileInputStream(zipFile));
+			ZipEntry entry;
+			while ((entry = zin.getNextEntry()) != null) {
+				File entryFile = new File(destFile, entry.getName());
+				if (entry.isDirectory()) {
+					entryFile.mkdirs();
+				} else {
+					fos = new FileOutputStream(entryFile);
+					byte[] b = new byte[1024];
+					int len = 0;
+					while ((len = zin.read(b)) != -1) {
+						fos.write(b, 0, len);
+					}
+					fos.close();
+					zin.closeEntry();
+				}
+			}
+		} catch (IOException e) {
+			log.log(Level.SEVERE, "unzip [" + zipFile + "] -> [" + dest + "] Fail!", e);
+		} finally {
+			if (zin != null)
+				try {
+					zin.close();
+				} catch (IOException e) {
+				}
+			if (fos != null)
+				try {
+					fos.close();
+				} catch (IOException e) {
+				}
+		}
 	}
 	
+	/**
+	 * Get an unique name under the specified directory
+	 * @param dir
+	 * @param prefix
+	 * @param suffix
+	 * @return
+	 */
 	public static File getUniqueFile(File dir, String prefix, String suffix) {
 		String name = prefix + "." + FILENAME_FORMAT.format(new Date()) + ".";
 		for (int i = 0; i < Integer.MAX_VALUE; i++) {
@@ -695,11 +738,24 @@ public class FileUtil {
 		return null;
 	}
 	
+	/**
+	 * Get an unique name under the specified directory
+	 * @param dir
+	 * @param prefix
+	 * @param suffix
+	 * @return
+	 */
 	public static File getUniqueFile(String dir, String prefix, String suffix) {
 		return getUniqueFile(new File(dir), prefix, suffix);
 	}
 	
 	
+	/**
+	 * Download a file from a url to the local file system
+	 * @param urlString
+	 * @param output
+	 * @return
+	 */
 	public static File download(String urlString, File output) {
 		InputStream in = null;
 		OutputStream out = null;
@@ -708,12 +764,10 @@ public class FileUtil {
 			URLConnection urlConnection = url.openConnection();
 			int totalSize = urlConnection.getContentLength();
 			in = urlConnection.getInputStream();
-			if (output.isDirectory()) {
+			if (output.isDirectory()) 
 				output = new File(output, url.getPath());
-				output.getParentFile().mkdirs();
-			}
+			output.getParentFile().mkdirs();
 			out = new FileOutputStream(output);
-
 			byte[] buffer = new byte[1024 * 100]; // 100k
 			int count = 0;
 			int totalCount = 0;
@@ -750,7 +804,12 @@ public class FileUtil {
 		}
 	}
 
-	
+
+	/**
+	 * Convert a file path to URL like "file:///dir/some.file"
+	 * @param file
+	 * @return
+	 */
 	@SuppressWarnings("deprecation")
 	public static String getUrl(File file) {
 		try {
@@ -764,11 +823,20 @@ public class FileUtil {
 	}
 	
 	
-	
+	/**
+	 * Convert a file path to URL like "file:///dir/some.file"
+	 * @param file
+	 * @return
+	 */
 	public static String getUrl(String path) {
 		return getUrl(new File(path));
 	}
 	
+	/**
+	 * Check if the given address is valid URL
+	 * @param address
+	 * @return
+	 */
 	public static boolean isUrl(String address) {
 		try {
 			new URL(address);

@@ -25,6 +25,7 @@ package org.openoffice.test.common;
 
 import java.io.File;
 import java.io.InputStream;
+import java.net.URL;
 
 /**
  * A testspace is a directory on your hard drive where stores the files generated during testing, e.g. test result, logs, temp files.
@@ -117,6 +118,21 @@ public class Testspace {
 		
 		return workingFile;
 	}
+	
+	public static File getDataFile(String dataFilePath) {
+		File dataFile = new File(dataFilePath);
+		if (!dataFile.isAbsolute())
+			dataFile = new File(testdata, dataFilePath);
+		if (!dataFile.exists()) {
+			URL url = Testspace.class.getClassLoader().getResource(dataFilePath);
+			if (url == null)
+				return null;
+			return new File(url.getFile());
+		} else {
+			return dataFile;
+		}
+	}
+	
 	
 	public static boolean deleteFile(String path) {
 		return FileUtil.deleteFile(getPath(path));

@@ -1,3 +1,24 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
 package org.openoffice.test.common;
 
 import java.io.BufferedReader;
@@ -32,9 +53,12 @@ public class FileProvider extends Suite {
 
 		private final Object[] parameters;
 
-		TestClassRunnerForParameters(Class<?> type, Object[] parameters) throws InitializationError {
+		private int index;
+		
+		TestClassRunnerForParameters(Class<?> type, Object[] parameters, int index) throws InitializationError {
 			super(type);
 			this.parameters = parameters;
+			this.index = index;
 		}
 
 		@Override
@@ -44,7 +68,7 @@ public class FileProvider extends Suite {
 
 		@Override
 		protected String getName() {
-			return getTestClass().getJavaClass().getSimpleName() +  Arrays.toString(parameters);
+			return getTestClass().getJavaClass().getSimpleName() + "[" + index + "]" +  Arrays.toString(parameters);
 		}
 
 		@Override
@@ -77,11 +101,7 @@ public class FileProvider extends Suite {
 	@Target(ElementType.FIELD)
 	public static @interface FileFilter {
 	}
-
-	/**
-	 * 
-	 * Only called reflectively. Do not use programmatically.
-	 */
+	
 	public FileProvider(Class<?> klass) throws Throwable {
 		super(klass, NO_RUNNERS);
 
@@ -132,27 +152,39 @@ public class FileProvider extends Suite {
 		
 		
 		ArrayList<Object[]> list = new ArrayList<Object[]>();
-		if (reposFile.isDirectory()) {
-			collectFromDir(reposFile, list, filterItems);
-		} else {
-			collectFromFile(reposFile, list, filterItems);
-		}
+		if (!collectFromFile(reposFile, list, filterItems))
+			if (!collectFromFiles(reposFile, list, filterItems))
+				collectFromDir(reposFile, list, filterItems);
 		
-		for (Object[] t : list) {
-			TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t);
+		for (int i = 0; i < list.size(); i++) {
+			Object[] t = list.get(i);
+			TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t, i);
 			runners.add(runner);
 		}
 
 	}
-
-	/**
-	 * @param dir
-	 * @param list
-	 */
-	public static void collectFromDir(File dir, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
+	
+	private static boolean collectFromFiles(File dir, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
+		if (!dir.isDirectory())
+			return false;
+		
+		boolean hasListFile = false;
 		File[] files = dir.listFiles();
-		if (files == null)
-			return;
+		for (File f : files) {
+			if (f.isFile() && f.getName().endsWith(".files")) {
+				hasListFile = true;
+				collectFromFile(f, list, filterItems);
+			}
+		}
+		
+		return hasListFile;
+	}
+	
+	private static boolean collectFromDir(File dir, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
+		if (!dir.isDirectory())
+			return false;
+		
+		File[] files = dir.listFiles();
 		Arrays.sort(files);
 		for (File file : files) {
 			if (file.isDirectory()) {
@@ -162,9 +194,14 @@ public class FileProvider extends Suite {
 
 			filter(file.getAbsolutePath(), list, filterItems);
 		}
+		
+		return true;
 	}
 
-	public static void collectFromFile(File file, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
+	private static boolean collectFromFile(File file, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
+		if (!file.isFile())
+			return false;
+		
 		BufferedReader reader = null;
 		try{	
 			reader = new BufferedReader(new FileReader(file));
@@ -185,6 +222,8 @@ public class FileProvider extends Suite {
 				//ignore;
 			}
 		}
+		
+		return true;
 	}
 	
 	private static void filter(String filePath, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
