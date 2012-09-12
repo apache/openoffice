@@ -263,7 +263,11 @@ void Desktop::RegisterServices( Reference< XMultiServiceFactory >& xSMgr )
 	    if ( bHeadlessMode )
 		    Application::EnableHeadlessMode();
 
-	    if ( conDcp.getLength() > 0 )
+	    // ConversionMode
+	    if ( pCmdLine->IsConversionMode() )
+		    Application::EnableConversionMode();
+
+        if ( conDcp.getLength() > 0 )
 	    {
 		    // accept incoming connections (scripting and one rvp)
 		    RTL_LOGFILE_CONTEXT( aLog, "desktop (lo119109) desktop::Desktop::createAcceptor()" );
