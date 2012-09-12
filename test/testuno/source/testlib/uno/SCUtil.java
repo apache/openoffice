@@ -28,21 +28,32 @@ import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
 
+import com.sun.star.awt.Rectangle;
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.beans.XPropertySet;
+import com.sun.star.chart.XChartDocument;
+import com.sun.star.chart.XDiagram;
 import com.sun.star.container.XIndexAccess;
+import com.sun.star.container.XNameAccess;
 import com.sun.star.container.XNamed;
+import com.sun.star.document.XEmbeddedObjectSupplier;
 import com.sun.star.frame.XController;
 import com.sun.star.frame.XModel;
 import com.sun.star.frame.XStorable;
 import com.sun.star.lang.XComponent;
+import com.sun.star.lang.XMultiServiceFactory;
+import com.sun.star.sheet.XCellRangeAddressable;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
 import com.sun.star.sheet.XSpreadsheetView;
 import com.sun.star.sheet.XSpreadsheets;
+import com.sun.star.table.CellRangeAddress;
 import com.sun.star.table.XCell;
 import com.sun.star.table.XCellRange;
 import com.sun.star.table.XColumnRowRange;
+import com.sun.star.table.XTableChart;
+import com.sun.star.table.XTableCharts;
+import com.sun.star.table.XTableChartsSupplier;
 import com.sun.star.table.XTableColumns;
 import com.sun.star.table.XTableRows;
 import com.sun.star.text.XText;
@@ -288,11 +299,23 @@ public class SCUtil {
 	 * @param values
 	 * @throws Exception
 	 */
+	@Deprecated
 	public static void setValueToCellRange(XSpreadsheet xSpreadsheet, int start_col, int start_row, int end_col, int end_row,  double[][] values) throws Exception {
 		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, end_col, end_row);
 		XCell xCell = null;
 		for (int i = 0; i <= (end_row - start_row); i++ ) {
 			for(int j = 0; j <= (end_col - start_col); j++) {
+				xCell = xCellRange.getCellByPosition(j, i);
+				xCell.setValue(values[i][j]);
+			}
+		}
+	}
+	
+	public static void setValueToCellRange(XSpreadsheet xSpreadsheet, int start_col, int start_row, double[][] values) throws Exception {
+		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, start_col + values[0].length - 1, start_row + values.length - 1);
+		XCell xCell = null;
+		for (int i = 0; i < values.length; i++ ) {
+			for(int j = 0; j < values[0].length; j++) {
 				xCell = xCellRange.getCellByPosition(j, i);
 				xCell.setValue(values[i][j]);
 			}
@@ -309,12 +332,26 @@ public class SCUtil {
 	 * @param texts
 	 * @throws Exception
 	 */
+	@Deprecated  
 	public static void setTextToCellRange(XSpreadsheet xSpreadsheet, int start_col, int start_row, int end_col, int end_row,  String[][] texts) throws Exception {
 		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, end_col, end_row);
 		XCell xCell = null;
 		XText xText = null;
 		for (int i = 0; i <= (end_row - start_row); i++ ) {
 			for(int j = 0; j <= (end_col - start_col); j++) {
+				xCell = xCellRange.getCellByPosition(j, i);
+				xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
+				xText.setString(texts[i][j]);
+			}
+		}
+	}
+	
+	public static void setTextToCellRange(XSpreadsheet xSpreadsheet, int start_col, int start_row, String[][] texts) throws Exception {
+		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, start_col + texts[0].length - 1, start_row + texts.length - 1);
+		XCell xCell = null;
+		XText xText = null;
+		for (int i = 0; i < texts.length; i++ ) {
+			for(int j = 0; j < texts[0].length; j++) {
 				xCell = xCellRange.getCellByPosition(j, i);
 				xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
 				xText.setString(texts[i][j]);
@@ -423,6 +460,34 @@ public class SCUtil {
 	}
 	
 	/**
+	 * Set specific property's value for an object
+	 * @param obj
+	 * @param propName
+	 * @param value
+	 * @throws Exception
+	 */
+	public static void setProperties(Object obj, String propName, Object value) throws Exception {
+		XPropertySet xPropertySet = 
+				(XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
+		xPropertySet.setPropertyValue(propName, value);
+	}
+	
+	/**
+	 * Get specific property's value of an object
+	 * @param obj
+	 * @param propName
+	 * @return
+	 * @throws Exception
+	 */
+	public static Object getProperties(Object obj, String propName) throws Exception {
+		XPropertySet xPropertySet = 
+				(XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
+		Object value = xPropertySet.getPropertyValue(propName);
+		
+		return value;
+	}	
+	
+	/**
 	 * Set value of specific property from a cell
 	 * @param xCell
 	 * @param propName
@@ -431,8 +496,7 @@ public class SCUtil {
 	 */
 	public static void setCellProperties(XCell xCell, String propName, Object value) throws Exception {
 		
-		XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xCell);
-		xPropertySet.setPropertyValue(propName, value);
+		setProperties(xCell, propName, value);
 	}
 
 	/**
@@ -443,10 +507,7 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static Object getCellProperties(XCell xCell, String propName) throws Exception {
-		XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xCell);
-		Object value = xPropertySet.getPropertyValue(propName);
-		
-		return value;
+			return getProperties(xCell, propName);
 	}
 	
 	/**
@@ -483,18 +544,15 @@ public class SCUtil {
 	}
 	
 	/**
-	 * Save file after open file.
-	 * 
+	 * Save file after open file. 
 	 * @param xSpreadsheetDocument
 	 * @throws Exception
 	 */
 	public static void save(XSpreadsheetDocument xSpreadsheetDocument)
 			throws Exception {
-
 		XStorable scStorable = (XStorable) UnoRuntime.queryInterface(
 				XStorable.class, xSpreadsheetDocument);
 		scStorable.store();
-
 	}
 
 	
@@ -527,8 +585,8 @@ public class SCUtil {
 	
 	/**
 	 * open file in Spreadsheet.
-	 * @param unoApp
-	 * @param filtpath   File path with the extension name. (e.g. "testcase/uno/sc/data/sample.xls")
+	 * @param app  
+	 * @param filePath   File path with the extension name. (e.g. "testcase/uno/sc/data/sample.xls")
 	 * @return
 	 * @throws Exception
 	 */
@@ -551,5 +609,123 @@ public class SCUtil {
 		filterName.put("xlt", "MS Excel 97 Vorlage/Template");
 		filterName.put("csv", "Text - txt - csv (StarCalc)");
 	}
+	
+	
+	/***************************************************************
+	 *      Chart Utility method - using chart interface           *
+	****************************************************************/
+
+	/**
+	 * Get a CellRangeAddress by cell range reference name
+	 * @param xSpreadsheet
+	 * @param rangeName    a cell range reference name(e.g. "A1:B2")
+	 * @return
+	 */
+	public static CellRangeAddress getChartDataRangeByName(XSpreadsheet xSpreadsheet, String rangeName) {
+		XCellRange cellRange = xSpreadsheet.getCellRangeByName(rangeName);
+		XCellRangeAddressable xCellRangeAddressable = 
+			(XCellRangeAddressable) UnoRuntime.queryInterface(XCellRangeAddressable.class, cellRange);
+	
+		CellRangeAddress cellRangeAddress = xCellRangeAddressable.getRangeAddress();
+		return cellRangeAddress;
+	}
+	
+	/**
+	 * Create a spreadsheet chart with data in a specific cell range.
+	 * @param xSpreadsheet
+	 * @param rec   a rectangle shape object
+	 * @param dataRangeAddress   the CellRangeAddress array of chart data source
+	 * @param chartName
+	 * @return
+	 * @throws Exception
+	 */
+	public static XChartDocument createChart(XSpreadsheet xSpreadsheet, Rectangle rec, CellRangeAddress[] dataRangeAddress, String chartName) throws Exception {
+		XChartDocument xChartDocument = null;
+		XTableChartsSupplier xTChartSupplier = 
+				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
+		XTableCharts xTableCharts = xTChartSupplier.getCharts();
+		XNameAccess xNameAccess = 
+				(XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
+		if (xNameAccess != null && !xNameAccess.hasByName(chartName)) {
+			
+			xTableCharts.addNewByName(chartName, rec, dataRangeAddress, true, false);
+			XTableChart xTableChart = (XTableChart) UnoRuntime.queryInterface(
+					XTableChart.class, xNameAccess.getByName(chartName));
+			XEmbeddedObjectSupplier xEmbeddedObjectSupplier = (XEmbeddedObjectSupplier) UnoRuntime.queryInterface(
+					XEmbeddedObjectSupplier.class, xTableChart);
+			xChartDocument = (XChartDocument) UnoRuntime.queryInterface(
+					XChartDocument.class, xEmbeddedObjectSupplier.getEmbeddedObject());
+		}
+		
+		return xChartDocument;
+	}
+	
+	/**
+	 * Get XChartDocument object via the chart name.
+	 * @param xSpreadsheet
+	 * @param chartName
+	 * @return
+	 * @throws Exception
+	 */
+	public static XChartDocument getChartByName(XSpreadsheet xSpreadsheet, String chartName) throws Exception {
+		XChartDocument xChartDocument = null;
+		XTableChartsSupplier xTChartSupplier = 
+				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
+		XTableCharts xTableCharts = xTChartSupplier.getCharts();
+		XNameAccess xNameAccess = 
+				(XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
+		
+		if (xNameAccess != null && xNameAccess.hasByName(chartName)) {
+			XTableChart xTableChart = (XTableChart) UnoRuntime.queryInterface(
+					XTableChart.class, xNameAccess.getByName(chartName));
+			XEmbeddedObjectSupplier xEmbeddedObjectSupplier = (XEmbeddedObjectSupplier) UnoRuntime.queryInterface(
+					XEmbeddedObjectSupplier.class, xTableChart);
+			xChartDocument = (XChartDocument) UnoRuntime.queryInterface(
+					XChartDocument.class, xEmbeddedObjectSupplier.getEmbeddedObject());
+		}
+		
+		return xChartDocument;
+	}
+	
+	/**
+	 * Set specific basic type to chart
+	 * @param xChartDocument
+	 * @param chartType
+	 * @throws Exception
+	 */
+	public static void setChartType(XChartDocument xChartDocument, String chartType) throws Exception {
+		XMultiServiceFactory xMultiServiceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(
+			XMultiServiceFactory.class, xChartDocument);
+		XDiagram xDiagram = (XDiagram) UnoRuntime.queryInterface(
+			XDiagram.class, xMultiServiceFactory.createInstance(chartType));
+		xChartDocument.setDiagram(xDiagram);
+	}
+	
+	/**
+	 * Get the type string of a chart
+	 * @param xChartDocument
+	 * @return
+	 * @throws Exception
+	 */
+	public static String getChartType(XChartDocument xChartDocument) throws Exception {
+		return xChartDocument.getDiagram().getDiagramType();
+	}
+	
+	/**
+	 * Get the names of charts in specific sheet
+	 * @param xSpreadsheet
+	 * @return
+	 * @throws Exception
+	 */
+	public static String[] getChartNameList(XSpreadsheet xSpreadsheet) throws Exception {
+		XChartDocument xChartDocument = null;
+		XTableChartsSupplier xTChartSupplier = 
+				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
+		XTableCharts xTableCharts = xTChartSupplier.getCharts();
+		String[] chartNames = xTableCharts.getElementNames();
+		return chartNames;
+	}
+	
+
 
 }
