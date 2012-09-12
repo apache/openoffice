@@ -86,8 +86,6 @@
 
 #include <algorithm> // #i24377#
 
-//#define WW_NATIVE_TOC 0
-
 #define MAX_FIELDLEN 64000
 
 #define WW8_TOX_LEVEL_DELIM     ':'
@@ -319,7 +317,6 @@ long SwWW8ImplReader::Read_Book(WW8PLCFManResult*)
 
     // "_Hlt*" are unnecessary
     const String* pName = pB->GetName();
-#if !defined(WW_NATIVE_TOC)
     // Now, as we read the TOC field completely, we also need the hyperlinks inside keep available.
     // So the hidden bookmarks inside for hyperlink jumping also should be kept.
     if ( !pName || 
@@ -327,7 +324,6 @@ long SwWW8ImplReader::Read_Book(WW8PLCFManResult*)
     {
         return 0;
     }
-#endif 
 
     //JP 16.11.98: ToUpper darf auf keinen Fall gemacht werden, weil der
     //Bookmark- name ein Hyperlink-Ziel sein kann!
@@ -698,24 +694,6 @@ sal_uInt16 SwWW8ImplReader::End_Field()
             }
         }
         break;
-#if defined(WW_NATIVE_TOC)
-        case 8: // TOX_INDEX
-        case 13: // TOX_CONTENT
-        case 88: // HYPERLINK
-        case 37: // REF
-        if (pPaM!=NULL && pPaM->GetPoint()!=NULL) {
-
-            SwPosition aEndPos = *pPaM->GetPoint();
-            SwPaM aFldPam( maFieldStack.back().GetPtNode(), maFieldStack.back().GetPtCntnt(), aEndPos.nNode, aEndPos.nContent.GetIndex());
-            SwFieldBookmark *pFieldmark=(SwFieldBookmark*)rDoc.makeFieldBookmark(aFldPam, maFieldStack.back().GetBookmarkName(), maFieldStack.back().GetBookmarkType());
-            ASSERT(pFieldmark!=NULL, "hmmm; why was the bookmark not created?");
-            if (pFieldmark!=NULL) {
-                const IFieldmark::parameter_map_t& pParametersToAdd = maFieldStack.back().getParameters();
-                pFieldmark->GetParameters()->insert(pParameters.begin(), pParameters.end());
-            }
-        }
-        break;
-#else
             // Doing corresponding status management for TOC field, index field, hyperlink field and page reference field
             case 13://TOX
             case 8://index
@@ -753,7 +731,6 @@ sal_uInt16 SwWW8ImplReader::End_Field()
                     mbLoadingTOCHyperlink = false;
                 pCtrlStck->SetAttr(*pPaM->GetPoint(),RES_TXTATR_INETFMT);
                 break;
-#endif
             case 36:
             case 68:
                 //Move outside the section associated with this type of field
@@ -2168,15 +2145,6 @@ eF_ResT SwWW8ImplReader::Read_F_PgRef( WW8FieldDesc*, String& rStr )
 
     String sName(GetMappedBookmark(sOrigName));
 
-#if defined(WW_NATIVE_TOC)
-    if (1) {
-    ::rtl::OUString aBookmarkName=::rtl::OUString::createFromAscii("_REF");
-    maFieldStack.back().SetBookmarkName(aBookmarkName);
-    maFieldStack.back().SetBookmarkType(::rtl::OUString::createFromAscii(ODF_PAGEREF));
-    maFieldStack.back().AddParam(rtl::OUString(), sName);
-    return FLD_TEXT;
-    }
-#endif
     //loading page reference field in TOC
     if (mbLoadingTOCCache )
     {
@@ -3009,15 +2977,6 @@ eF_ResT SwWW8ImplReader::Read_F_Tox( WW8FieldDesc* pF, String& rStr )
 {
     mbLoadingTOCCache = true;
 
-#if defined(WW_NATIVE_TOC)
-    if (1) {
-    ::rtl::OUString aBookmarkName=::rtl::OUString::createFromAscii("_TOC");
-    maFieldStack.back().SetBookmarkName(aBookmarkName);
-    maFieldStack.back().SetBookmarkType(::rtl::OUString::createFromAscii(ODF_TOC));
-    return FLD_TEXT;
-    }
-#endif
-
     if (pF->nLRes < 3)
         return FLD_TEXT;      // ignore (#i25440#)
 
@@ -3570,15 +3529,6 @@ eF_ResT SwWW8ImplReader::Read_F_Shape(WW8FieldDesc* /*pF*/, String& /*rStr*/)
 
 eF_ResT SwWW8ImplReader::Read_F_Hyperlink( WW8FieldDesc* /*pF*/, String& rStr )
 {
-#if defined(WW_NATIVE_TOC)
-    if (1) {
-    ::rtl::OUString aBookmarkName=::rtl::OUString::createFromAscii("_HYPERLINK");
-    maFieldStack.back().SetBookmarkName(aBookmarkName);
-    maFieldStack.back().SetBookmarkType(::rtl::OUString::createFromAscii(ODF_HYPERLINK));
-    return FLD_TEXT;
-    }
-#endif
-
     String sURL, sTarget, sMark;
     bool bDataImport = false;
     //HYPERLINk "filename" [switches]
