@@ -85,7 +85,7 @@ public class VclApp {
 	public void start() {
 		if (openOffice != null) {
 			// workaround for crash when connect to automation server too early
-			double sleep = openOffice.getUserInstallation().exists() ? 3 : 6;
+			double sleep = openOffice.getUserInstallation().exists() ? 3 : 10;
 			if (openOffice.start()) 
 				sleep(sleep);
 		}
@@ -97,20 +97,6 @@ public class VclApp {
 		if (isCleanUserInstallation) 
 			clean();
 		start();
-	}
-	
-	public void loadDocument(String file) {
-		dispatch(".uno:Open");
-		VclComboBox FilePicker_Path = new VclComboBox("SVT_HID_FILEDLG_AUTOCOMPLETEBOX");
-		FilePicker_Path.setText(file);
-		VclButton FilePicker_Open = new VclButton("fpicker:PushButton:DLG_SVT_EXPLORERFILE:BTN_EXPLORERFILE_OPEN");
-		FilePicker_Open.click();
-		VclWindow writer = new VclWindow("SW_HID_EDIT_WIN");
-		writer.waitForExistence(10, 2);
-	}
-	
-	public void newDocument(String type) {
-		dispatch(type);
 	}
 	
 	public OpenOffice getOpenOffice() {

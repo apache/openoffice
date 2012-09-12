@@ -49,7 +49,7 @@ public class OpenOffice {
 	};
 	
 	private static final String USERHOME = System.getProperty("user.home");
-	private static final String BIN = SystemUtil.isWindows() ? "program/soffice.exe" : SystemUtil.isMac() ? "MacOS/soffice.bin": "program/soffice.bin"; 
+	private static final String BIN = SystemUtil.isWindows() ? "program/soffice.exe" : SystemUtil.isMac() ? "MacOS/soffice": "program/soffice"; 
 	private static final String SYSUSERCONFIG = SystemUtil.isWindows()? System.getenv("APPDATA") : SystemUtil.isMac() ?  USERHOME + "/Library/Application Support" : USERHOME;
 
 	private static OpenOffice defaultInstance = null;
@@ -236,8 +236,8 @@ public class OpenOffice {
 	 */
 	public void kill() {
 		SystemUtil.killProcess(".*soffice.*" + id + ".*");
-		process = null;
 		SystemUtil.sleep(1);
+		process = null;
 	}
 
 	/**
