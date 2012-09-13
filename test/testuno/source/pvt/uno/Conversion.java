@@ -37,6 +37,7 @@ import org.junit.runner.RunWith;
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.FileProvider;
 import org.openoffice.test.common.FileProvider.FileFilter;
+import org.openoffice.test.common.FileProvider.FileRepeat;
 import org.openoffice.test.common.FileProvider.FileRepos;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
@@ -60,7 +61,7 @@ public class Conversion {
 	public static String repos = getDataFile("pvt_conversion").getAbsolutePath();
 
 	@FileFilter
-	public static String filter = "-f .*\\.((doc)|(dot)|(odt)|(ott))$ writer_pdf_Export pdf " 
+	public static String filter = System.getProperty("conversion.filter", "-f .*\\.((doc)|(dot)|(odt)|(ott))$ writer_pdf_Export pdf " 
 			+ "-f .*\\.((xls)|(xlt)|(ods)|(ots))$ calc_pdf_Export pdf "
 			+ "-f .*\\.((ppt)|(ppt)|(odp)|(otp))$ impress_pdf_Export pdf " 
 			+ "-f .*\\.((doc)|(dot)|(docx)|(docm)|(dotx)|(dotm))$ writer8 odt "
@@ -68,11 +69,16 @@ public class Conversion {
 			+ "-f .*\\.((ppt)|(pot)|(pptx)|(pptm)|(potm)|(potx))$ impress8 odp "
 			+ "-f .*\\.((odt)|(ott))$ 'MS Word 97' doc " 
 			+ "-f .*\\.((ods)|(ots))$ 'MS Excel 97' xls " 
-			+ "-f .*\\.((odp)|(otp))$ 'MS PowerPoint 97' ppt";
+			+ "-f .*\\.((odp)|(otp))$ 'MS PowerPoint 97' ppt");
 
+	@FileRepeat
+	public static int repeat = 8;
+	
 	private static UnoApp app = new UnoApp();
 	
 	private static PrintStream result;
+	
+	private static int counter = 0;
 	
 	@BeforeClass
 	public static void beforeClass() throws Exception {
@@ -112,6 +118,7 @@ public class Conversion {
 		this.sourcePath = sourcePath;
 		this.targetFilterName = targetFilterName;
 		this.targetExtName = targetExtName;
+		counter++;
 	}
 	
 	@Before
@@ -132,7 +139,7 @@ public class Conversion {
 	public void after() throws Exception{
 		result.println(sourceFileId + "," + scenario + "," + closeTime + "," + saveTime + "," + loadTime);
 		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
-		if (closeTime < 0) {
+		if (counter % 8 == 0) {
 			app.close();
 		}
 	}
@@ -163,4 +170,5 @@ public class Conversion {
 		xCloseable.close(true);
 		closeTime = System.currentTimeMillis() - start;
 	}
+
 }

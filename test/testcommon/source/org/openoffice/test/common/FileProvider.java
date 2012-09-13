@@ -100,6 +100,13 @@ public class FileProvider extends Suite {
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target(ElementType.FIELD)
 	public static @interface FileFilter {
+		
+	}
+	
+	@Retention(RetentionPolicy.RUNTIME)
+	@Target(ElementType.FIELD)
+	public static @interface FileRepeat {
+		
 	}
 	
 	public FileProvider(Class<?> klass) throws Throwable {
@@ -107,6 +114,7 @@ public class FileProvider extends Suite {
 
 		String repos = null;
 		String filter = null;
+		int repeat = 1;
 		Field fs[] = klass.getFields();
 		for (Field f : fs) {
 			Annotation a = f.getAnnotation(FileRepos.class);
@@ -125,6 +133,15 @@ public class FileProvider extends Suite {
 					throw new InitializationError(String.format("Field annotated FileFilter '%s' must be String.", f.getName()));
 				filter = (String) v;
 			}
+			
+			a = f.getAnnotation(FileRepeat.class);
+			if (a != null) {
+				Object v = f.get(null);
+				if (v != null && !(v instanceof Integer))
+					throw new InitializationError(String.format("Field annotated FileFilter '%s' must be String.", f.getName()));
+				repeat = (Integer) v;
+			}
+			
 		}
 
 		File reposFile = new File(repos);
@@ -158,8 +175,10 @@ public class FileProvider extends Suite {
 		
 		for (int i = 0; i < list.size(); i++) {
 			Object[] t = list.get(i);
-			TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t, i);
-			runners.add(runner);
+			for  (int j = 0; j < repeat; j++) {
+				TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t, i);
+				runners.add(runner);
+			}
 		}
 
 	}
