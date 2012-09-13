@@ -19,7 +19,7 @@
  * 
  *************************************************************/
 
-package testcase.uno.pvt;
+package pvt.uno;
 
 import static org.openoffice.test.common.Testspace.*;
 
