@@ -24,7 +24,6 @@
 package org.openoffice.test.common;
 
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -46,6 +45,14 @@ import java.util.zip.ZipInputStream;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
@@ -82,6 +89,34 @@ public class FileUtil {
 		} catch (Exception e) {
 			return null;
 		}
+	}
+	
+	/**
+	 * Create a new xml document
+	 * @return
+	 */
+	public static Document newXML() {
+		try {
+			DocumentBuilderFactory dbfac = DocumentBuilderFactory.newInstance();
+			dbfac.setNamespaceAware(true);
+			DocumentBuilder docBuilder = dbfac.newDocumentBuilder();
+			return docBuilder.newDocument();
+		} catch (Exception e) {
+			return null;
+		}
+	}
+	
+	public static boolean storeXML(Document doc, File file) {
+	    try {
+	        Source source = new DOMSource(doc);
+	        file.getParentFile().mkdirs();
+	        Result result = new StreamResult(file);
+	        Transformer xformer = TransformerFactory.newInstance().newTransformer();
+	        xformer.transform(source, result);
+	        return true;
+	    } catch (Exception e) {
+	    	return false;
+	    } 
 	}
 	
 	/**

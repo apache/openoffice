@@ -48,9 +48,26 @@ public class SystemUtil {
 
 	private static Clipboard sysClipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 
-	private static final String OSNAME = System.getProperty("os.name");
+	private static final File SCRIPT_TEMP_DIR = Testspace.getFile("bin");
 
-	public static final File SCRIPT_TEMP_DIR = Testspace.getFile("bin");
+	private static String platform = System.getProperty("os.name");
+	
+	private static String osName = System.getProperty("os.name");
+	
+	private static String osVersion  = System.getProperty("os.version");
+	
+	private static String osArch = System.getProperty("os.arch");
+	
+	static {
+		if (isLinux()) {
+			StringBuffer output = new StringBuffer();
+			if (exec(new String[]{"lsb_release", "-is"}, output) == 0)
+				osName = output.toString().trim();
+			output.setLength(0);
+			if (exec(new String[]{"lsb_release", "-rs"}, output) == 0)
+				osVersion = output.toString().trim();	
+		}
+	}
 
 	/**
 	 * Play beep sound! The method doesn't work, if the code is executed on
@@ -63,17 +80,29 @@ public class SystemUtil {
 	}
 
 	public static boolean isWindows() {
-		return OSNAME.startsWith("Windows");
+		return platform.startsWith("Windows");
 	}
 
 	public static boolean isLinux() {
-		return OSNAME.startsWith("Linux");
+		return platform.startsWith("Linux");
 	}
 
 	public static boolean isMac() {
-		return OSNAME.startsWith("Mac");
+		return platform.startsWith("Mac");
 	}
 
+	public static String getOSName() {
+		return osName;
+	}
+	
+	public static String getOSVersion() {
+		return osVersion;
+	}
+	
+	public static String getOSArch() {
+		return osArch;
+	}
+	
 	/**
 	 * Set the contents of the clipboard to the provided text
 	 */
@@ -227,6 +256,10 @@ public class SystemUtil {
 		}
 	}
 
+	public static int exec(String[] cmd, StringBuffer output) {
+		return exec(cmd, null, null, output, output);
+	}
+	
 	/**
 	 * Make the current thread sleep some seconds.
 	 * 
