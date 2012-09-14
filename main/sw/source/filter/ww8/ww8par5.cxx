@@ -3474,9 +3474,6 @@ eF_ResT SwWW8ImplReader::Read_F_Tox( WW8FieldDesc* pF, String& rStr )
 
     rDoc.InsertTableOf(*pPaM->GetPoint(), *aFltTOX.GetBase());
 
-
-    //inserting a toc inserts a section before this point, so adjust pos
-    //for future page/section segment insertion
     //The TOC field representation contents should be inserted into TOC section, but not after TOC section.
     //So we need update the document position when loading TOC representation and after loading TOC;
     if (mpPosAfterTOC)
@@ -3491,7 +3488,8 @@ eF_ResT SwWW8ImplReader::Read_F_Tox( WW8FieldDesc* pF, String& rStr )
     if (SwTOXBase* pBase2 = (SwTOXBase*)rDoc.GetCurTOX(*aRegion.GetPoint()))
     {
         pBase2->SetMSTOCExpression(rStr);
-        if(nIndexCols>1)
+
+        if ( nIndexCols > 1 )
         {
             // Set the column number for index
             SfxItemSet aSet( rDoc.GetAttrPool(), RES_COL, RES_COL );
@@ -3501,8 +3499,9 @@ eF_ResT SwWW8ImplReader::Read_F_Tox( WW8FieldDesc* pF, String& rStr )
             pBase2->SetAttrSet( aSet );
         }
 
-        maSectionManager.PrependedInlineNode(*pPaM->GetPoint(),
-            *aRegion.GetNode());
+        // inserting a toc inserts a section before this point, so adjust pos
+        // for future page/section segment insertion
+        maSectionManager.PrependedInlineNode( *mpPosAfterTOC->GetPoint(), *aRegion.GetNode() );
     }
 
     // Setze Ende in Stack
