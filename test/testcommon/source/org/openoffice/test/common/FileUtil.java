@@ -48,11 +48,10 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
@@ -107,18 +106,35 @@ public class FileUtil {
 	}
 	
 	public static boolean storeXML(Document doc, File file) {
-	    try {
-	        Source source = new DOMSource(doc);
-	        file.getParentFile().mkdirs();
-	        Result result = new StreamResult(file);
-	        Transformer xformer = TransformerFactory.newInstance().newTransformer();
-	        xformer.transform(source, result);
-	        return true;
-	    } catch (Exception e) {
-	    	return false;
-	    } 
+		try {
+			file.getParentFile().mkdirs();
+			TransformerFactory.newInstance().newTransformer().transform(new DOMSource(doc), new StreamResult(file));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 	
+	public static boolean storeXML(Document doc, File file, File xls) {
+		try {
+			file.getParentFile().mkdirs();
+			TransformerFactory.newInstance().newTransformer(new StreamSource(xls)).transform(new DOMSource(doc), new StreamResult(file));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public static boolean storeXML(Document doc, File file, InputStream xls) {
+		try {
+			file.getParentFile().mkdirs();
+			TransformerFactory.newInstance().newTransformer(new StreamSource(xls)).transform(new DOMSource(doc), new StreamResult(file));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	  
 	/**
 	 * Get a string by XPATH from a xml file
 	 * @param xml

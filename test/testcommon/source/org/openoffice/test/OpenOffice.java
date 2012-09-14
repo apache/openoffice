@@ -25,7 +25,9 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.Set;
 import java.util.UUID;
 import java.util.logging.Logger;
 
@@ -127,6 +129,10 @@ public class OpenOffice {
 		if (!versionFile.exists())
 			versionFile = new File(binParent, "version.ini");
 		versionProps = FileUtil.loadProperties(versionFile);
+		Set<Entry<Object, Object>> entries = versionProps.entrySet();
+		for (Entry<Object, Object> e : entries) {
+			System.setProperty("info.app." + e.getKey(), (String)e.getValue());
+		}
 		addArgs(id);
 	}
 

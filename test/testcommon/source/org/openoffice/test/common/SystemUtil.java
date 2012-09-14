@@ -66,6 +66,13 @@ public class SystemUtil {
 			output.setLength(0);
 			if (exec(new String[]{"lsb_release", "-rs"}, output) == 0)
 				osVersion = output.toString().trim();	
+			
+			System.setProperty("info.os.name", SystemUtil.getOSName());
+			System.setProperty("info.os.version", SystemUtil.getOSVersion());
+			System.setProperty("info.os.arch", SystemUtil.getOSArch());
+			System.setProperty("info.os.arch", SystemUtil.getOSArch());
+			System.setProperty("info.ip", SystemUtil.getIPAddress());
+			System.setProperty("info.hostname", SystemUtil.getHostName());
 		}
 	}
 
@@ -473,16 +480,27 @@ public class SystemUtil {
 	}
 
 	/**
-	 * Get local machine ip address
-	 * */
-
+	 * Get local host's IP
+	 * @return
+	 */
 	public static String getIPAddress() {
-		InetAddress addr = null;
 		try {
-			addr = InetAddress.getLocalHost();
+			return InetAddress.getLocalHost().getHostAddress().toString();
 		} catch (UnknownHostException e) {
-			e.printStackTrace();
+			return null;
 		}
-		return addr.getHostAddress().toString();
+	}
+	
+	/**
+	 * Get local host name
+	 * @return
+	 */
+	public static String getHostName() {
+		try {
+			return InetAddress.getLocalHost().getHostName();
+		} catch (UnknownHostException e) {
+			return null;
+		}
+		
 	}
 }
