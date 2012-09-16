@@ -31,12 +31,18 @@ import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
 import java.net.InetAddress;
+import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
+import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 /**
  * Utilities related to system
@@ -243,8 +249,10 @@ public class SystemUtil {
 	public static int exec(String[] cmd, String[] env, File dir, StringBuffer output, StringBuffer error) {
 		Process process = null;
 		try {
+			LOG.log(Level.FINE,  "exec: " + Arrays.toString(cmd));
 			process = Runtime.getRuntime().exec(cmd, env, dir);
 		} catch (Exception e) {
+			e.printStackTrace();
 			return -1;
 		}
 		
@@ -366,6 +374,19 @@ public class SystemUtil {
 		}
 		
 		return null;
+	}
+	
+	public static List<HashMap<String, Object>> findProcesses(String pattern) {
+		List<HashMap<String, Object>> result = new ArrayList<HashMap<String, Object>>();
+		List<HashMap<String, Object>> processes = SystemUtil.getProcesses();
+		for (HashMap<String, Object> p : processes) {
+			String command = (String) p.get("command");
+			if (command != null && command.matches(pattern)) {
+				result.add(p);
+			}
+		}
+		
+		return result;
 	}
 	
 	/**
@@ -502,5 +523,71 @@ public class SystemUtil {
 			return null;
 		}
 		
+	}
+	
+	public static List<String> getClassesInPackage(String packageName) {
+		ArrayList<String> classes = new ArrayList<String>();
+		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+		String path = packageName.replace('.', '/');
+		try {
+			Enumeration<URL> urls = classLoader.getResources(path);
+			while (urls.hasMoreElements()) {
+				URL url = urls.nextElement();
+				if ("file".equals(url.getProtocol())) {
+					findClasses(packageName, new File(url.getFile()), classes);
+				} else if ("jar".equals(url.getProtocol())) {
+					String urlStr = url.toString();
+					int i = urlStr.indexOf('!');
+					if (i > 0)
+						findClasses(packageName, new URL(urlStr.substring(4, i)), classes);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+//		TreeSet classes = new TreeSet();
+//		for (String directory : dirs) {
+//			classes.addAll(findClasses(directory, packageName));
+//		}
+//		ArrayList classList = new ArrayList();
+//		for (String clazz : classes) {
+//			classList.add(Class.forName(clazz));
+//		}
+//		return classList;
+		return classes;
+	}
+	private static void findClasses(String packageName, File dir, List<String> classes) {
+		if (!dir.isDirectory())
+			return;
+		File[] files = dir.listFiles();
+		for (File file : files) {
+			String name = file.getName();
+			if (file.isDirectory()) {
+				findClasses(packageName + '.'+ name, file, classes);
+			}  else if (name.endsWith(".class")) {
+				String className = packageName + '.' + name.substring(0, name.length() - 6);
+				classes.add(className);
+			}
+		}
+	}
+	
+	
+	private static void findClasses(String packageName, URL jar, List<String> classes) {
+		try {
+			ZipInputStream zip = new ZipInputStream(jar.openStream());
+			ZipEntry entry;
+			while ((entry = zip.getNextEntry()) != null) {
+				String name = entry.getName();
+				if (name.endsWith(".class")) {
+					name = name.replace('/', '.').substring(0, name.length() - 6);
+					if (name.startsWith(packageName)) {
+						classes.add(name);
+					}
+				}
+			}
+
+		} catch (Exception e) {
+
+		}
 	}
 }

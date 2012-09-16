@@ -23,31 +23,33 @@
 
 package org.openoffice.test.common;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.DateFormat;
+import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+import java.util.zip.ZipOutputStream;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -270,16 +272,25 @@ public class FileUtil {
 	 * @return 
 	 */
 	public static String readFileAsString(File file) {
+		try {
+			return readStreamAsString(new FileInputStream(file), null);
+		} catch (FileNotFoundException e) {
+			return "";
+		}
+	}
+	
+	public static String readStreamAsString(InputStream inputStream, String charsetName) {
 		StringBuffer strBuffer = new StringBuffer(10240);
 		BufferedReader reader = null;
 		try {
-			reader = new BufferedReader(new FileReader(file));
+			reader = new BufferedReader(charsetName == null ? new InputStreamReader(inputStream) : new InputStreamReader(inputStream, charsetName));
 			char[] buf = new char[1024];
 			int count = 0;
 			while ((count = reader.read(buf)) != -1) {
 				strBuffer.append(buf, 0, count);
 			}
 		} catch (IOException e) {
+			
 		} finally {
 			if (reader != null)
 				try {
@@ -291,6 +302,8 @@ public class FileUtil {
 
 		return strBuffer.toString();
 	}
+	
+	
 	
 	/**
 	 * Find the first file matching the given name.
@@ -404,13 +417,21 @@ public class FileUtil {
 
 	/**
 	 * Write string into a file
-	 * @param filePath
+	 * @param path
 	 * @param contents
 	 */
-	public static void writeStringToFile(String filePath, String contents) {
+	public static void writeStringToFile(String path, String contents) {
+		writeStringToFile(new File(path), contents);
+	}
+	
+	/**
+	 * Write string into a file
+	 * @param file
+	 * @param contents
+	 */
+	public static void writeStringToFile(File file, String contents) {
 		FileWriter writer = null;
 		try {
-			File file = new File(filePath);
 			file.getParentFile().mkdirs();
 			writer = new FileWriter(file);
 			if (contents != null)
@@ -425,7 +446,6 @@ public class FileUtil {
 				}
 		}
 	}
-	
 	
 	/**
 	 * Appeand a string to the tail of a file
@@ -729,14 +749,24 @@ public class FileUtil {
 	
 	/**
 	 * Unzip a zip file into the destination directory
-	 * @param zipFile
+	 * @param zip
 	 * @param dest
+	 * @return
 	 */
-	public static void unzip(String zipFile, String dest) {
+	public static boolean unzip(String zip, String dest) {
+		return unzip(new File(zip), new File(dest));
+	}
+	
+	/**
+	 * Unzip a zip file into the destination directory
+	 * @param zipFile
+	 * @param destFile
+	 * @return
+	 */
+	public static boolean unzip(File zipFile, File destFile) {
 		ZipInputStream zin = null;
 		FileOutputStream fos = null;
 		try {
-			File destFile = new File(dest);
 			zin = new ZipInputStream(new FileInputStream(zipFile));
 			ZipEntry entry;
 			while ((entry = zin.getNextEntry()) != null) {
@@ -754,8 +784,10 @@ public class FileUtil {
 					zin.closeEntry();
 				}
 			}
+			return true;
 		} catch (IOException e) {
-			log.log(Level.SEVERE, "unzip [" + zipFile + "] -> [" + dest + "] Fail!", e);
+			log.log(Level.SEVERE, MessageFormat.format(" Fail! Unzip [{0}] -> [{1}]", zipFile, destFile), e);
+			return false;
 		} finally {
 			if (zin != null)
 				try {
@@ -770,6 +802,58 @@ public class FileUtil {
 		}
 	}
 	
+	private static void zip(File dir, ZipOutputStream out, String prefix) throws Exception {
+		File[] files = dir.listFiles();
+		for (File f : files) {
+			if (f.isFile()) {
+				BufferedInputStream bis = null;
+				try {
+					bis = new BufferedInputStream(new FileInputStream(f));
+					ZipEntry entry = new ZipEntry(prefix + f.getName());
+					out.putNextEntry(entry);
+					int count;
+					byte data[] = new byte[8192];
+					while ((count = bis.read(data)) != -1) {
+						out.write(data, 0, count);
+					}
+					bis.close();
+				} finally {
+					if (bis != null)
+						bis.close();
+				}
+				
+			} else {
+				zip(f, out, prefix + f.getName() + "/");
+			}
+		}
+	}
+	
+	public static void zip(File workingDir, File zipFile) {
+		zip(workingDir, zipFile, null);
+	}
+	
+	public static void zip(File workingDir, File zipFile, String prefix) {
+		if (!workingDir.isDirectory())
+			return;
+		
+		if (prefix == null)
+			prefix = "";
+		
+		ZipOutputStream out = null;
+		try {
+			out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)));
+			zip(workingDir, out, prefix);
+		} catch (Exception e) {
+
+		} finally {
+			if (out != null)
+				try {
+					out.close();
+				} catch (IOException e) {
+				}
+		}
+	       
+	 }
 	/**
 	 * Get an unique name under the specified directory
 	 * @param dir
@@ -800,7 +884,6 @@ public class FileUtil {
 		return getUniqueFile(new File(dir), prefix, suffix);
 	}
 	
-	
 	/**
 	 * Download a file from a url to the local file system
 	 * @param urlString
@@ -808,6 +891,17 @@ public class FileUtil {
 	 * @return
 	 */
 	public static File download(String urlString, File output) {
+		return download(urlString, output, false);
+	}
+	
+	/**
+	 * Download a file from a url to the local file system
+	 * @param urlString
+	 * @param output
+	 * @param usetimestamp
+	 * @return
+	 */
+	public static File download(String urlString, File output, boolean usetimestamp) {
 		InputStream in = null;
 		OutputStream out = null;
 		try {
@@ -816,8 +910,15 @@ public class FileUtil {
 			int totalSize = urlConnection.getContentLength();
 			in = urlConnection.getInputStream();
 			if (output.isDirectory()) 
-				output = new File(output, url.getPath());
+				output = new File(output, new File(url.getPath()).getName());
 			output.getParentFile().mkdirs();
+			if (usetimestamp && output.exists()) {
+				if (output.lastModified() == urlConnection.getLastModified()) {
+					log.info(MessageFormat.format(" Skip! Download {0} -> {1}", urlString, output));
+					return output;
+				}
+			}
+			
 			out = new FileOutputStream(output);
 			byte[] buffer = new byte[1024 * 100]; // 100k
 			int count = 0;
@@ -835,10 +936,12 @@ public class FileUtil {
 				}
 				
 			}
-			log.info("Download [" + urlString + "] -> [" + output + "] OK!");
+			if (urlConnection.getLastModified() >= 0)
+				output.setLastModified(urlConnection.getLastModified());
+			log.info(MessageFormat.format("OK! Download {0} -> {1}", urlString, output));
 			return output;
 		} catch (Exception e) {
-			log.log(Level.SEVERE, "Download [" + urlString + "] -> [" + output + "] Fail!", e);
+			log.log(Level.SEVERE, MessageFormat.format("Fail! Download {0} -> {1}", urlString, output), e);
 			return null;
 		} finally {
 			if (in != null)
@@ -889,6 +992,8 @@ public class FileUtil {
 	 * @return
 	 */
 	public static boolean isUrl(String address) {
+		if (address == null)
+			return false;
 		try {
 			new URL(address);
 			return true;

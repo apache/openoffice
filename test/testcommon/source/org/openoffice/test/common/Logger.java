@@ -24,6 +24,7 @@ package org.openoffice.test.common;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.InputStream;
+import java.text.MessageFormat;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 
@@ -114,12 +115,13 @@ public class Logger extends java.util.logging.Logger implements TestRule {
 	}
 
 	protected void fail(Throwable e, Description description) {
-		String screenshotType = e instanceof AssertionError ? "failure" : "error";
-		File screenshotOutput = Testspace.getFile(SCREENSHOT_DIR);
-		screenshotOutput.mkdirs();
-		File file = new File(screenshotOutput, description.getClassName() + "." + description.getMethodName() + "." + screenshotType + ".png");
-		GraphicsUtil.screenShot(file.getAbsolutePath());
-		log(Level.SEVERE, "[" + description.getMethodName() + "] is failed. Screenshot [" + file.getAbsolutePath() + "]. Cause: ", e);
+		String screenshotPath = "";
+		if (screenshotEnabled) {
+			screenshotPath = Testspace.getPath(SCREENSHOT_DIR + "/" + description.getDisplayName() + ".png");
+			GraphicsUtil.screenShot(screenshotPath);
+		}
+		
+		log(Level.SEVERE, MessageFormat.format("[{0}] is failed. Screenshot: {1}", description.getMethodName(), screenshotPath), e);
 		// Check if crash occurs!
 		// if (e instanceof CommunicationException) {
 		// logger.severe("Pay attention! OpenOffice maybe crashed or freezed. ");

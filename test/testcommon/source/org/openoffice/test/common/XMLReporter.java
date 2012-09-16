@@ -12,11 +12,12 @@ import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.ProcessingInstruction;
 
 public class XMLReporter extends RunListener {
 
-	private File reportDir = Testspace.getFile("output/result");
+	private File outputDir = Testspace.getFile("output");
+	
+	private File reportDir = new File(outputDir, "result");
 	
 	private File file = null;
 	
@@ -26,7 +27,7 @@ public class XMLReporter extends RunListener {
 	
 	private Element testcaseEl = null;
 	
-	private String testClassName = null;
+	private String suiteName = null;
 	
 	private long suiteStart = 0;
 	
@@ -42,11 +43,11 @@ public class XMLReporter extends RunListener {
 	
 	@Override
 	public void testStarted(Description description) throws Exception {
-		System.out.println("testStarted");
-		if (!description.getClassName().equals(testClassName)) {
-			finishSuite();
-			startSuite(description);
-		}
+//		if (!description.getClassName().equals(testClassName)) {
+//			finishSuite();
+//			startSuite(description);
+//			testClassName = description.getClassName();
+//		}
 		testcaseEl = doc.createElement("testcase");
 		testcaseEl.setAttribute("name", description.getDisplayName());
 		testcaseEl.setAttribute("classname", description.getClassName());
@@ -62,7 +63,6 @@ public class XMLReporter extends RunListener {
 
 	@Override
 	public void testFailure(Failure failure) throws Exception {
-		System.out.println("testFailure");
 		if (failure.getException() instanceof AssertionError) {
 			failures++;
 			Element failureEl = doc.createElement("failure");
@@ -82,7 +82,6 @@ public class XMLReporter extends RunListener {
 
 	@Override
 	public void testFinished(Description description) throws Exception {
-		System.out.println("testFinished");
 		tests++;
 		testcaseEl.setAttribute("time", Double.toString((System.currentTimeMillis() - testStart) / 1000.0));
 		store();
@@ -91,48 +90,49 @@ public class XMLReporter extends RunListener {
 	@Override
 	public void testIgnored(Description description) throws Exception {
 		testStarted(description);
-		System.out.println("testIgnored");
 		ignored++;
 		Ignore ignore = description.getAnnotation(Ignore.class);
 		Element ignoredEl = doc.createElement("ignored");
 		ignoredEl.setAttribute("message", ignore.value());
 		testcaseEl.appendChild(ignoredEl);
-		
 		testFinished(description);
 	}
 
 	@Override
 	public void testRunFinished(Result result) throws Exception {
-		System.out.println("testRunFinished");
 		finishSuite();
+		File outputBackupDir = new File(outputDir.getAbsolutePath() + "." + suiteName);
+		if (outputBackupDir.exists()) {
+			FileUtil.deleteFile(outputBackupDir);
+		}
+		
+		outputDir.renameTo(outputBackupDir);
 	}
 
 	@Override
 	public void testRunStarted(Description description) throws Exception {
-		System.out.println("testRunStarted");
+		suiteName = description.getDisplayName();
+		FileUtil.deleteFile(outputDir);//clear all old output
+		startSuite();
 	}
 
-	private void startSuite(Description description) {
-		testClassName = description.getClassName();
+	private void startSuite() {
 		suiteStart = System.currentTimeMillis();
 		failures = 0;
 		errors = 0;
 		tests = 0;
 		ignored = 0;
 		
-		file = new File(reportDir, testClassName + ".xml");
+		file = new File(reportDir, suiteName + ".xml");
 		doc = FileUtil.newXML();
 	
 		testsuiteEl = doc.createElement("testsuite");
-		testsuiteEl.setAttribute("name", testClassName);
+		testsuiteEl.setAttribute("name", suiteName);
 		testsuiteEl.setAttribute("start", Long.toString(suiteStart));
 		doc.appendChild(testsuiteEl);
 	}
 	
 	private void finishSuite() {
-		if (testClassName == null)
-			return;
-		
 		testsuiteEl.setAttribute("time", Double.toString((System.currentTimeMillis() - testStart) / 1000.0));
 		testsuiteEl.setAttribute("failures", Long.toString(failures));
 		testsuiteEl.setAttribute("errors", Long.toString(errors));
@@ -154,7 +154,7 @@ public class XMLReporter extends RunListener {
 	private void store() {
 		if (doc != null) {
 			FileUtil.storeXML(doc, file);
-			File htmlFile = new File(reportDir, testClassName + ".html");
+			File htmlFile = new File(reportDir, file.getName() + ".html");
 			InputStream is = getClass().getResourceAsStream("XMLReporter.xsl");
 			if (is != null) {
 				FileUtil.storeXML(doc, htmlFile, is);
