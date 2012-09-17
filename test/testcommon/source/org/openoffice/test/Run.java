@@ -62,7 +62,13 @@ public class Run {
 	public static void main(String... args) {
 		ArrayList<String> runnableClasses = new ArrayList<String>();
 		ArrayList<String> listenerClasses = new ArrayList<String>();
+		
+		ArrayList<String> tcs = new ArrayList<String>();
+		ArrayList<String> tps = new ArrayList<String>();
+		ArrayList<String> tms = new ArrayList<String>();
+		
 		List<NamedRequest> requests = new ArrayList<NamedRequest>();
+		
 		for (int i = 0; i < args.length; i++) {
 			String arg = args[i];
 			if ("-help".equals(arg)) {
@@ -88,18 +94,15 @@ public class Run {
 			} else if (arg.equals("-tc")) {
 				if (++i >= args.length)
 					printUsage("Invalid arguments", 1);
-				NamedRequest request = NamedRequest.tc(args[i]);
-				addRequest(requests, request);
+				tcs.add(args[i]);
 			} else if (arg.equals("-tp")) {
 				if (++i >= args.length)
 					printUsage("Invalid arguments", 1);
-				NamedRequest request = NamedRequest.tp(args[i]);
-				addRequest(requests, request);
+				tps.add(args[i]);
 			} else if (arg.equals("-tm")) {
 				if (++i >= args.length)
 					printUsage("Invalid arguments", 1);
-				NamedRequest request = NamedRequest.tm(args[i]);
-				addRequest(requests, request);
+				tms.add(args[i]);
 			}
 		}
 		
@@ -114,8 +117,6 @@ public class Run {
 		}
 		
 		JUnitCore core = new JUnitCore();
-//		core.addListener(new XMLReporter());
-//		core.addListener(new CSVReporter());
 		for (String l : listenerClasses)  {
 			try {
 				core.addListener((RunListener) Class.forName(l).newInstance());
@@ -123,6 +124,21 @@ public class Run {
 				// Ignore
 				log.log(Level.WARNING, "Listener is not added!", e);
 			}
+		}
+		
+		for (String s : tcs) {
+			NamedRequest request = NamedRequest.tc(s);
+			addRequest(requests, request);
+		}
+		
+		for (String s : tps) {
+			NamedRequest request = NamedRequest.tp(s);
+			addRequest(requests, request);
+		}
+		
+		for (String s : tms) {
+			NamedRequest request = NamedRequest.tm(s);
+			addRequest(requests, request);
 		}
 		
 		int code = 0;

@@ -22,6 +22,9 @@ package org.openoffice.test.common;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.text.MessageFormat;
 import java.util.logging.Level;
 
@@ -103,8 +106,37 @@ public class Installer implements Runnable {
 				FileUtil.deleteFile(installTempDir);
 			}
 		}
+		
+		 prop = System.getProperty("openoffice.home");
+		 if (!FileUtil.fileExists(prop)) {
+			 throw new RuntimeException("No OpenOffice is found!");
+		 }
+		 
+		 String[] jars = {"juh.jar", "unoil.jar", "ridl.jar", "jurt.jar"};
+		 for (String jar : jars) {
+			 File file = FileUtil.findFile(prop, jar);
+			 if (file != null)
+				 addToClassPath(file);
+		 }
+		
 	}
 
+	public static boolean addToClassPath(File file) {
+		try {
+			URL url = file.toURI().toURL();
+			System.out.println(url);
+			URLClassLoader classLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
+			Method method = URLClassLoader.class.getDeclaredMethod("addURL", new Class[] { URL.class });
+			method.setAccessible(true);
+			method.invoke(classLoader, new Object[] { url });
+			return true;
+		} catch (Throwable t) {
+			t.printStackTrace();
+		}
+
+		return false;
+	}
+	
 	public static void main(String... args) {
 		new Installer().run();
 	}

@@ -700,6 +700,8 @@ public class FileUtil {
      * @return
      */
     public static boolean fileExists(String file) {
+    	if (file == null)
+    		return false;
     	return new File(file).exists();
     }
    
