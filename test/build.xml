@@ -69,7 +69,7 @@
 	</target>
 
 	<target name="testcommon.compile" depends="testcommon.init, prepare.junit">
-		<javac destdir="testcommon/bin" debug="on" source="1.6" encoding="utf-8" includeantruntime="false">
+		<javac destdir="testcommon/bin" debug="on" source="1.6" target="1.6" encoding="utf-8" includeantruntime="false">
 			<src path="testcommon/source"/>
 			<classpath>
 				<fileset dir="lib">
@@ -89,7 +89,7 @@
 	</target>
 
 	<target name="testgui.compile" depends="testcommon.compile, testgui.init">
-		<javac destdir="testgui/bin" debug="on" source="1.6" encoding="utf-8" includeantruntime="false">
+		<javac destdir="testgui/bin" debug="on" source="1.6" target="1.6" encoding="utf-8" includeantruntime="false">
 			<src path="testgui/source"/>
 			<classpath>
 				<fileset dir="lib">
@@ -110,7 +110,7 @@
 	</target>
 
 	<target name="testuno.compile" depends="testcommon.compile, testuno.init">
-		<javac destdir="testuno/bin" debug="on" source="1.6" encoding="utf-8" includeantruntime="false">
+		<javac destdir="testuno/bin" debug="on" source="1.6" target="1.6" encoding="utf-8" includeantruntime="false">
 			<src path="testuno/source"/>
 			<classpath>
 				<fileset dir="lib">
