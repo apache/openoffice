@@ -133,14 +133,13 @@
 	
 	<target name="dist" depends="clean,compile">
 		<tstamp/>
-        <zip destfile="${dist.dir}/${dist.name}_${DSTAMP}.zip" update="false">
-			<zipfileset dir="." includes="lib/**, testcommon/**,testgui/**,testuno/**,build.xml" prefix="aoo_test/"/>
-			<zipfileset dir="." includes="test,test.bat" filemode="751" prefix="aoo_test/"/>
-        </zip>
+        	<zip destfile="${dist.dir}/${dist.name}_${DSTAMP}.zip" update="false">
+			<zipfileset dir="." includes="lib/**, testcommon/**,testgui/**,testuno/**,build.xml,run,run.bat" filemode="751" prefix="aoo_test/"/>
+		</zip>
 	</target>
 	
 	<target name="test" depends="compile" description="start test">
-        <condition property="test.arg0" value="-Dopenoffice.home=${openoffice.home}">
+		<condition property="test.arg0" value="-Dopenoffice.home=${openoffice.home}">
 			<isset property="openoffice.home" />
 		</condition>
 		<pathconvert property="openoffice.pack" setonempty="false">
@@ -152,40 +151,14 @@
 			<isset property="openoffice.pack" />
 		</condition>
 		<fail message="No OpenOffice available!" unless="test.arg0"/>
-	    <condition property="test.executable" value="./run.bat">
+		<condition property="test.executable" value="./run.bat">
 			<os family="windows" />
 		</condition>
-		<echo>${test.arg0}</echo>
-        <property name="test.executable" value="./run"/>
-        <exec executable="${test.executable}">
+		<property name="test.executable" value="./run"/>
+		<exec executable="${test.executable}">
 			<arg value="${test.arg0}"/>
 			<arg value="-tp"/>
 			<arg value="bvt"/>
 		</exec>
-	</target>
-	
-    <target name="upgrade">
-		<property name="upgrade.script" location="${java.io.tmpdir}/aoo_test_upgrade.xml"/>
-		<property name="upgrade.to" location="."/>
-		<copy file="build.xml" tofile="${upgrade.script}"/>
-        <condition property="ant.executable" value="ant.bat">
-			<os family="windows" />
-		</condition>
-        <property name="ant.executable" value="ant"/>
-        <exec executable="${ant.executable}" spawn="true">
-			<arg value="-Dupgrade.to=${upgrade.to}"/>
-			<arg value="-f"/>
-			<arg value="${upgrade.script}"/>
-			<arg value="upgrade.run"/>
-		</exec>
-	</target>
-
-	<target name="upgrade.run">
-		<property name="testpack.url" value="http://9.123.117.85/testpack/trunk/aoo_test.zip"/>
-		<property name="testack.temp" location="${java.io.tmpdir}/aoo_test.zip"/>
- 		<get src="${testpack.url}" dest="${testack.temp}"/>
-		<delete dir="${upgrade.to}" failonerror="false"/>
-		<mkdir dir="${upgrade.to}"/>
-		<unzip src="${testack.temp}" dest="${upgrade.to}"/>
 	</target>
 </project>
