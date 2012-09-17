@@ -785,6 +785,9 @@ public class FileUtil {
 					fos.close();
 					zin.closeEntry();
 				}
+				
+				if (entry.getTime() >= 0)
+					entryFile.setLastModified(entry.getTime());
 			}
 			return true;
 		} catch (IOException e) {
@@ -974,10 +977,9 @@ public class FileUtil {
 	 * @param file
 	 * @return
 	 */
-	@SuppressWarnings("deprecation")
 	public static String getUrl(File file) {
 		try {
-			String url = file.getCanonicalFile().toURL().toString();
+			String url = file.getCanonicalFile().toURI().toASCIIString();
 			return url.replace("file:/", "file:///");
 		} catch(Exception e) {
 			
