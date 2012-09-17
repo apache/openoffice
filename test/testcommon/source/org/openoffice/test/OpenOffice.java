@@ -24,7 +24,9 @@ package org.openoffice.test;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.Set;
@@ -133,6 +135,9 @@ public class OpenOffice {
 		for (Entry<Object, Object> e : entries) {
 			System.setProperty("info.app." + e.getKey(), (String)e.getValue());
 		}
+		//
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		System.setProperty("info.app.date", dateFormat.format(new Date(versionFile.lastModified())));
 		addArgs(id);
 	}
 
