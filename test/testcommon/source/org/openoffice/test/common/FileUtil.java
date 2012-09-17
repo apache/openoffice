@@ -947,6 +947,7 @@ public class FileUtil {
 				}
 				
 			}
+			out.close();
 			if (urlConnection.getLastModified() >= 0)
 				output.setLastModified(urlConnection.getLastModified());
 			log.info(MessageFormat.format("OK! Download {0} -> {1}", urlString, output));
