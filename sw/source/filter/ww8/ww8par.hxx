@@ -798,9 +798,9 @@ struct WW8PostProcessAttrsInfo
 //-----------------------------------------
 //            Storage-Reader
 //-----------------------------------------
-//Modify here for #119405, by easyfan, 2012-05-24
+typedef std::set<WW8_CP> cp_set;
+
 typedef std::vector<WW8_CP> cp_vector;
-//End of modification, by easyfan
 
 class SwWW8ImplReader
 {
@@ -1092,7 +1092,7 @@ private:
                             //     the very 1st Line Numbering and ignore the rest)
 
     bool bFirstPara;        // first paragraph?
-	bool bFirstParaOfPage;//cs2c--xushanchuan add for bug11210
+    bool bFirstParaOfPage;//cs2c--xushanchuan add for bug11210
     bool bParaAutoBefore;
     bool bParaAutoAfter;
 
@@ -1100,15 +1100,23 @@ private:
     int nDropCap;
 
     int nIdctHint;
-	bool bBidi;
+    bool bBidi;
     bool bReadTable;
     boost::shared_ptr<SwPaM> mpTableEndPaM;
+    // Indicate that currently on loading a TOC, managed by Read_F_TOX() and End_Field()
+    bool mbLoadingTOCCache;
+    // Indicate that current on loading a hyperlink, which is inside a TOC; Managed by Read_F_Hyperlink() and End_Field()
+    bool mbLoadingTOCHyperlink;
+    // a document position recorded the after-position of TOC section, managed by Read_F_TOX() and End_Field()
+    SwPaM* mpPosAfterTOC;
 
-	//Modify here for #119405, by easyfan, 2012-05-24
-	cp_vector maEndParaPos;
-	WW8_CP maCurrAttrCP;
-	bool mbOnLoadingMain:1;
-	//End of modification, by easyfan
+    bool mbCareFirstParaEndInToc;
+    bool mbCareLastParaEndInToc;
+    cp_set maTOXEndCps;
+
+    cp_vector maEndParaPos;
+    WW8_CP maCurrAttrCP;
+    bool mbOnLoadingMain:1;
 //---------------------------------------------
 
     const SprmReadInfo& GetSprmReadInfo(sal_uInt16 nId) const;
