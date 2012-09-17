@@ -256,11 +256,11 @@ function refresh() {
 		if (c = $$(e, 'failure')) {
 			status = 'Failure';
 			message = text(c.getAttribute("message"));
-			screenshot = '<a href="../screenshot/' + e.getAttribute("name") + '.png">Screenshot</a>';
+			screenshot = '<a href="screenshot/' + e.getAttribute("name") + '.png">Screenshot</a>';
 		} else if (c = $$(e, 'error')) {
 			status = 'Error';
 			message = text(c.getAttribute("message"));
-			screenshot = '<a href="../screenshot/' + e.getAttribute("name") + '.png">Screenshot</a>';
+			screenshot = '<a href="screenshot/' + e.getAttribute("name") + '.png">Screenshot</a>';
 		} else if (c = $$(e, 'ignored')) {
 			status = 'Ignored';
 			message = text(c.getAttribute("message"));

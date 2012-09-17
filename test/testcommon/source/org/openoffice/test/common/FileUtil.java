@@ -894,6 +894,10 @@ public class FileUtil {
 		return download(urlString, output, false);
 	}
 	
+	public static File download(String urlString, File output, boolean usetimestamp) {
+		return download(urlString, output, false, null);
+	}
+	
 	/**
 	 * Download a file from a url to the local file system
 	 * @param urlString
@@ -901,7 +905,7 @@ public class FileUtil {
 	 * @param usetimestamp
 	 * @return
 	 */
-	public static File download(String urlString, File output, boolean usetimestamp) {
+	public static File download(String urlString, File output, boolean usetimestamp, boolean[] skip) {
 		InputStream in = null;
 		OutputStream out = null;
 		try {
@@ -915,6 +919,8 @@ public class FileUtil {
 			if (usetimestamp && output.exists()) {
 				if (output.lastModified() == urlConnection.getLastModified()) {
 					log.info(MessageFormat.format(" Skip! Download {0} -> {1}", urlString, output));
+					if (skip != null && skip.length > 0)
+						skip[0] = true;
 					return output;
 				}
 			}
@@ -939,6 +945,8 @@ public class FileUtil {
 			if (urlConnection.getLastModified() >= 0)
 				output.setLastModified(urlConnection.getLastModified());
 			log.info(MessageFormat.format("OK! Download {0} -> {1}", urlString, output));
+			if (skip != null && skip.length > 0)
+				skip[0] = false;
 			return output;
 		} catch (Exception e) {
 			log.log(Level.SEVERE, MessageFormat.format("Fail! Download {0} -> {1}", urlString, output), e);

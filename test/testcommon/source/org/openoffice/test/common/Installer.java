@@ -1,3 +1,23 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
 package org.openoffice.test.common;
 
 import java.io.File;
@@ -5,6 +25,10 @@ import java.io.IOException;
 import java.text.MessageFormat;
 import java.util.logging.Level;
 
+/**
+ * Install openoffice from installation package before running test
+ *
+ */
 public class Installer implements Runnable {
 	private static Logger log = Logger.getLogger(Installer.class);
 	File downloadDir = Testspace.getFile("download");
@@ -21,8 +45,10 @@ public class Installer implements Runnable {
 			}
 		}
 		if ((prop = System.getProperty("openoffice.pack")) != null) {
+			String onlyNewProp = System.getProperty("only.new");
 			File packFile = null;
 			if (FileUtil.isUrl(prop)) {
+				log.log(Level.INFO, MessageFormat.format("Try to download {0}...", prop));
 				String url = FileUtil.readFileAsString(downloadUrl);
 				if (!prop.equals(url)) {
 					FileUtil.deleteFile(downloadDir);
@@ -32,9 +58,12 @@ public class Installer implements Runnable {
 						throw new RuntimeException(MessageFormat.format("{0} can not be downloaded!", prop));
 					FileUtil.writeStringToFile(downloadUrl, prop);
 				} else {
-					packFile = FileUtil.download(prop, downloadDir, true);
+					boolean[] skipped = {false};
+					packFile = FileUtil.download(prop, downloadDir, true, skipped);
 					if (packFile == null)
 						throw new RuntimeException(MessageFormat.format("{0} can not be downloaded!", prop));
+					if (("true".equalsIgnoreCase(onlyNewProp) || "yes".equalsIgnoreCase(onlyNewProp)) && skipped[0]) 
+						throw new RuntimeException(MessageFormat.format("{0} is old. Test is allowed only on new build.", prop));
 				}
 			} else {
 				packFile = new File(prop);
