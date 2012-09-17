@@ -3446,6 +3446,7 @@ StackVar ScInterpreter::Interpret()
                 case ocGreaterEqual     : ScGreaterEqual();             break;
                 case ocAnd              : ScAnd();                      break;
                 case ocOr               : ScOr();                       break;
+                case ocXor              : ScXor();                      break;
                 case ocIntersect        : ScIntersect();                break;
                 case ocRange            : ScRangeFunc();                break;
                 case ocUnion            : ScUnionFunc();                break;
@@ -3621,6 +3622,10 @@ StackVar ScInterpreter::Interpret()
                 case ocCountEmptyCells  : ScCountEmptyCells();          break;
                 case ocCountIf          : ScCountIf();                  break;
                 case ocSumIf            : ScSumIf();                    break;
+                case ocAverageIf        : ScAverageIf();                break;
+                case ocSumIfs           : ScSumIfs();                   break;
+                case ocAverageIfs       : ScAverageIfs();               break;
+                case ocCountIfs         : ScCountIfs();                 break;
                 case ocLookup           : ScLookup();                   break;
                 case ocVLookup          : ScVLookup();                  break;
                 case ocHLookup          : ScHLookup();                  break;

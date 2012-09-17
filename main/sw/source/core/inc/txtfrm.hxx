@@ -239,6 +239,10 @@ public:
     SwRect SmartTagScan( SwCntntNode* , sal_uInt16 );
     // Wird vom CollectAutoCmplWords gerufen
     void CollectAutoCmplWrds( SwCntntNode* , sal_uInt16 );
+	
+	//Bug 120881:Modify here for Directly Page Numbering
+	sal_Bool HasPageNumberField();
+	//Bug 120881(End)
 
     // Returns the screen position of rPos. The values are relative to the upper
     // left position of the page frame.

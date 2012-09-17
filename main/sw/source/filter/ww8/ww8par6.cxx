@@ -1338,7 +1338,7 @@ void GetLineIndex(SvxBoxItem &rBox, short nLineThickness, short nSpace, sal_uInt
                 eCodeIdx = WW8_BordersSO::single0;//   1 Twip for us
             else if( nLineThickness < 20)
                 eCodeIdx = WW8_BordersSO::single5;//   10 Twips for us
-            else if (nLineThickness < 50)
+            else if (nLineThickness < 45) //Modified for i120716
                 eCodeIdx = WW8_BordersSO::single1;//  20 Twips
             else if (nLineThickness < 80)
                 eCodeIdx = WW8_BordersSO::single2;//  50
@@ -1577,7 +1577,9 @@ bool SwWW8ImplReader::SetShadow(SvxShadowItem& rShadow, const short *pSizeArray,
     if (bRet)
     {
         rShadow.SetColor(Color(COL_BLACK));
-        short nVal = pSizeArray[WW8_RIGHT];
+	//i120718
+        short nVal = pbrc[WW8_RIGHT].DetermineBorderProperties(bVer67);
+	//End
         if (nVal < 0x10)
             nVal = 0x10;
         rShadow.SetWidth(nVal);
@@ -2989,12 +2991,19 @@ void SwWW8ImplReader::Read_BoldUsw( sal_uInt16 nId, const sal_uInt8* pData, shor
     SetToggleAttr( nI, bOn );
 }
 
-void SwWW8ImplReader::Read_Bidi(sal_uInt16, const sal_uInt8*, short nLen)
+void SwWW8ImplReader::Read_Bidi(sal_uInt16, const sal_uInt8* pData, short nLen)
 {
-	if (nLen > 0)
-		bBidi = true;
-	else
-		bBidi = false;
+	if( nLen < 0 )	//Property end
+	{
+		bBidi = sal_False;
+		pCtrlStck->SetAttr(*pPaM->GetPoint(),RES_CHRATR_BIDIRTL);
+	}
+	else	//Property start
+	{
+		bBidi = sal_True;
+		sal_uInt8 nBidi = SVBT8ToByte( pData );
+		NewAttr( SfxInt16Item( RES_CHRATR_BIDIRTL, (nBidi!=0)? 1 : 0 ) );	
+	}
 }
 
 // Read_BoldUsw for BiDi Italic, Bold
@@ -4004,6 +4013,18 @@ void SwWW8ImplReader::Read_NoLineNumb(sal_uInt16 , const sal_uInt8* pData, short
     NewAttr( aLN );
 }
 
+bool lcl_HasExplicitLeft(const WW8PLCFMan *pPlcxMan, bool bVer67)
+{
+	WW8PLCFx_Cp_FKP *pPap = pPlcxMan ? pPlcxMan->GetPapPLCF() : 0;
+	if (pPap)
+	{
+		if (bVer67)
+			return pPap->HasSprm(17);
+		else
+			return (pPap->HasSprm(0x840F) || pPap->HasSprm(0x845E));
+	}
+	return false;
+}
 // Sprm 16, 17
 void SwWW8ImplReader::Read_LR( sal_uInt16 nId, const sal_uInt8* pData, short nLen )
 {
@@ -4097,6 +4118,27 @@ void SwWW8ImplReader::Read_LR( sal_uInt16 nId, const sal_uInt8* pData, short nLe
             }
 
             aLR.SetTxtFirstLineOfst(nPara);
+
+            if (!pAktColl)
+            {
+				if (const SwTxtNode* pNode = pPaM->GetNode()->GetTxtNode())
+				{
+					if ( const SwNumFmt *pNumFmt = GetNumFmtFromTxtNode(*pNode) )
+					{
+						if (!lcl_HasExplicitLeft(pPlcxMan, bVer67))
+						{
+							aLR.SetTxtLeft(pNumFmt->GetIndentAt());
+
+							// If have not explicit left, set number format list tab position is doc default tab
+							const SvxTabStopItem *pDefaultStopItem = (const SvxTabStopItem *)rDoc.GetAttrPool().GetPoolDefaultItem(RES_PARATR_TABSTOP);
+							if ( pDefaultStopItem &&  pDefaultStopItem->Count() > 0 )
+								((SwNumFmt*)(pNumFmt))->SetListtabPos( ((SvxTabStop&)(*pDefaultStopItem)[0]).GetTabPos() );
+						}
+					}
+				}
+		}
+            
+
             if (pAktColl)
             {        
                 pCollA[nAktColl].bListReleventIndentSet = true;
@@ -4327,10 +4369,20 @@ void SwWW8ImplReader::Read_UL( sal_uInt16 nId, const sal_uInt8* pData, short nLe
 
 void SwWW8ImplReader::Read_IdctHint( sal_uInt16, const sal_uInt8* pData, short nLen )
 {
-    if (nLen < 0)
-        nIdctHint = 0;
-    else
-        nIdctHint = *pData;
+    // sprmcidcthint (opcode 0x286f) specifies a script bias for the text in the run. 
+    // for unicode characters that are shared between far east and non-far east scripts, 
+    // this property determines what font and language the character will use. 
+    // when this value is 0, text properties bias towards non-far east properties. 
+    // when this value is 1, text properties bias towards far east properties. 
+	if( nLen < 0 )	//Property end 
+	{
+		pCtrlStck->SetAttr(*pPaM->GetPoint(),RES_CHRATR_IDCTHINT);
+	}
+	else	//Property start
+	{
+		sal_uInt8 nVal = SVBT8ToByte( pData );
+		NewAttr( SfxInt16Item( RES_CHRATR_IDCTHINT, (nVal!=0)? 1 : 0 ) );	
+	}
 }
 
 void SwWW8ImplReader::Read_Justify( sal_uInt16, const sal_uInt8* pData, short nLen )

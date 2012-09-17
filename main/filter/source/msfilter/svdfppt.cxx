@@ -3851,6 +3851,63 @@ sal_Bool PPTNumberFormatCreator::ImplGetExtNumberFormat( SdrPowerPointImport& rM
 				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( ")" ) ) );
 			}
 			break;
+			case 16: // Simplified Chinese.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH );
+			}
+			break;			
+			case 17: // Simplified Chinese with single-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH );
+				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( "." ) ) );
+			}
+			break;
+			case 18: // Double byte circle numbers.
+			case 19: // Wingdings white circle numbers.
+			case 20: // Wingdings black circle numbers.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_CIRCLE_NUMBER );
+			}
+			break;
+			case 21: // Traditional Chinese.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH_TW );
+			}
+			break;
+			case 22: // Traditional Chinese with single-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH_TW );
+				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( "." ) ) );
+			}
+			break;
+			case 26: // Japanese/Korean.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_LOWER_ZH );
+			}
+			break;
+			case 27: // Japanese/Korean with single-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_LOWER_ZH );
+				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( "." ) ) );
+			}
+			break;
+			case 28: // Double-byte Arabic numbers.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_FULL_WIDTH_ARABIC );
+			}
+			break;
+			case 29: // Double-byte Arabic numbers with double-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_FULL_WIDTH_ARABIC );
+				rNumberFormat.SetSuffix( String( sal_Unicode(0xff0e) ) );
+			}
+			break;
+			case 38: // Japanese with double-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_LOWER_ZH ); // No such type. Instead with Lower Chinese Number
+				rNumberFormat.SetSuffix( String( sal_Unicode(0xff0e) ) );
+			}
+			break;
 		}
 		rStartNumbering = boost::optional< sal_Int16 >( nAnmScheme >> 16 );
 	}
@@ -6443,7 +6500,10 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
 		rSet.Put( SdrTextFixedCellHeightItem( sal_True ), SDRATTR_TEXT_USEFIXEDCELLHEIGHT );
 		SvxLineSpacingItem aItem( 200, EE_PARA_SBL );
 		if ( nVal2 <= 0 )
+		{
 			aItem.SetLineHeight( (sal_uInt16)( rManager.ScalePoint( -nVal2 ) / 8 ) );
+			aItem.GetLineSpaceRule() = SVX_LINE_SPACE_FIX;  
+		}
 		else
 		{
             sal_uInt8 nPropLineSpace = (sal_uInt8)nVal2;
@@ -6502,6 +6562,8 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
         SvxTabStopItem aTabItem( 0, 0, SVX_TAB_ADJUST_DEFAULT, EE_PARA_TABS );
 		if ( GetTabCount() )
 		{
+			//paragraph offset = MIN(first_line_offset, hanging_offset)
+			sal_uInt32 nParaOffset = Min( nTextOfs2, nTab );
 			for ( i = 0; i < GetTabCount(); i++ )
 			{
 				SvxTabAdjust eTabAdjust;
@@ -6513,8 +6575,8 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
 					case 3 :	eTabAdjust = SVX_TAB_ADJUST_DECIMAL; break;
 					default :	eTabAdjust = SVX_TAB_ADJUST_LEFT;
 				}
-				if ( nTab > nTextOfs2 )
-					aTabItem.Insert( SvxTabStop( (sal_uInt16)( ( ( nTab - nTextOfs2 ) * 2540 ) / 576 ), eTabAdjust ) );
+				if ( nTab > nParaOffset )//If tab stop greater than paragraph offset
+					aTabItem.Insert( SvxTabStop( ( ( (long( nTab - nTextOfs2 )) * 2540 ) / 576 ), eTabAdjust ) );
 			}
 			nLatestManTab = nTab;
 		}

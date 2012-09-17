@@ -257,6 +257,13 @@ void MSWordExportBase::ExportPoolItemsToCHP( sw::PoolItems &rItems, sal_uInt16 n
         sal_uInt16 nWhich = pItem->Which();
         if ( ( isCHRATR( nWhich ) || isTXTATR( nWhich ) ) && CollapseScriptsforWordOk( nScript, nWhich ) )
         {
+			 //In the id definition, RES_TXTATR_INETFMT must precede RES_TXTATR_CHARFMT, so that link style can overwrite char style.
+			 //and in #i24291# it describes "All we want to do is ensure for now is that if a charfmt exist in the character 
+			 //properties that it rises to the top and is exported first."
+		     //In bug 119649, it is in such situation, so we need to ignore the link style when doing ms word filter exports and
+			 //add the second judgement for #i24291# definition. 
+			 if ( nWhich == RES_TXTATR_INETFMT && ( rItems.begin()->second->Which() == RES_TXTATR_CHARFMT ) )
+				 continue;
             AttrOutput().OutputItem( *pItem );
         }
     }
@@ -942,8 +949,11 @@ void WW8AttributeOutput::RTLAndCJKState( bool bIsRTL, sal_uInt16 nScript )
 {
     if ( m_rWW8Export.bWrtWW8 && bIsRTL )
     {
-        m_rWW8Export.InsUInt16( NS_sprm::LN_CFBiDi );
-        m_rWW8Export.pO->Insert( (sal_uInt8)1, m_rWW8Export.pO->Count() );
+        if( m_rWW8Export.pDoc->GetDocumentType() != SwDoc::DOCTYPE_MSWORD )
+        {
+        	m_rWW8Export.InsUInt16( NS_sprm::LN_CFBiDi );
+        	m_rWW8Export.pO->Insert( (sal_uInt8)1, m_rWW8Export.pO->Count() );
+        }
     }
 
     // #i46087# patch from james_clark; complex texts needs the undocumented SPRM CComplexScript with param 0x81.
@@ -974,6 +984,9 @@ void WW8AttributeOutput::EndParagraph( ww8::WW8TableNodeInfoInner::Pointer_t pTe
             m_rWW8Export.pPapPlc->AppendFkpEntry( m_rWW8Export.Strm().Tell(), m_rWW8Export.pO->Count(),
                     m_rWW8Export.pO->GetData() );
             m_rWW8Export.pO->Remove( 0, m_rWW8Export.pO->Count() ); // delete
+	    //For Bug 119650, should break the properties of CHP PLC after a paragraph end.
+	    m_rWW8Export.pChpPlc->AppendFkpEntry( m_rWW8Export.Strm().Tell(), m_rWW8Export.pO->Count(),
+		    m_rWW8Export.pO->GetData() );
         }
     }
 }
@@ -1490,6 +1503,23 @@ void WW8AttributeOutput::CharRelief( const SvxCharReliefItem& rRelief )
             m_rWW8Export.pO->Insert( (sal_uInt8)0x0, m_rWW8Export.pO->Count() );
         }
     }
+}
+
+void WW8AttributeOutput::CharBidiRTL( const SfxPoolItem& rHt )
+{
+	const SfxInt16Item& rAttr = (const SfxInt16Item&)rHt;
+	if( rAttr.GetValue() == 1 )
+	{
+		m_rWW8Export.InsUInt16(0x85a);
+		m_rWW8Export.pO->Insert((sal_uInt8)1, m_rWW8Export.pO->Count());			
+	}
+}
+
+void WW8AttributeOutput::CharIdctHint( const SfxPoolItem& rHt )
+{
+	const SfxInt16Item& rAttr = (const SfxInt16Item&)rHt;
+	m_rWW8Export.InsUInt16(0x286F);
+	m_rWW8Export.pO->Insert((sal_uInt8)(rAttr.GetValue()), m_rWW8Export.pO->Count());			
 }
 
 void WW8AttributeOutput::CharRotate( const SvxCharRotateItem& rRotate )
@@ -4444,6 +4474,9 @@ void AttributeOutputBase::FormatColumns( const SwFmtCol& rCol )
 			const SvxLRSpaceItem &rLR = pFmt->GetLRSpace();
 			nPageSize = pFmt->GetFrmSize().GetWidth();
 			nPageSize -= rLR.GetLeft() + rLR.GetRight();
+			//i120133: The Section width should consider page indent value.
+			nPageSize -= rCol.GetAdjustValue();
+			
 		}
 
         // Nachsehen, ob alle Spalten gleich sind
@@ -5123,7 +5156,12 @@ void AttributeOutputBase::OutputItem( const SfxPoolItem& rHt )
         case RES_CHRATR_HIDDEN:
             CharHidden( static_cast< const SvxCharHiddenItem& >( rHt ) );
             break;
-
+        case RES_CHRATR_BIDIRTL:
+			CharBidiRTL( static_cast< const SfxPoolItem& >( rHt ) );
+			break;
+        case RES_CHRATR_IDCTHINT:
+			CharIdctHint( static_cast< const SfxPoolItem& >( rHt ) );
+			break;
         case RES_TXTATR_INETFMT:
             TextINetFormat( static_cast< const SwFmtINetFmt& >( rHt ) );
             break;

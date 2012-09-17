@@ -24,6 +24,8 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 #include "eschesdo.hxx"
+#include <svx/svdxcgv.hxx>
+#include <svx/svdomedia.hxx>
 #include <svx/xflftrit.hxx>
 #include <filter/msfilter/escherex.hxx>
 #include <svx/unoapi.hxx>
@@ -67,7 +69,6 @@
 #include <com/sun/star/text/WritingMode.hpp>
 #include <com/sun/star/drawing/TextVerticalAdjust.hpp>
 #include <com/sun/star/drawing/TextHorizontalAdjust.hpp>
-#include <com/sun/star/drawing/EnhancedCustomShapeParameterPair.hpp>
 #include <com/sun/star/drawing/EnhancedCustomShapeSegment.hpp>
 #include <com/sun/star/drawing/EnhancedCustomShapeParameterType.hpp>
 #include <com/sun/star/drawing/EnhancedCustomShapeGluePointType.hpp>
@@ -1324,38 +1325,61 @@ sal_Bool EscherPropertyContainer::CreateOLEGraphicProperties(
 			if ( pGraphic )
 			{
 				GraphicObject aGraphicObject( *pGraphic );
-                ByteString aUniqueId( aGraphicObject.GetUniqueID() );
-				if ( aUniqueId.Len() )
-				{
-					AddOpt( ESCHER_Prop_fillType, ESCHER_FillPicture );
-					uno::Reference< beans::XPropertySet > aXPropSet( rXShape, uno::UNO_QUERY );
-
-					if ( pGraphicProvider && pPicOutStrm && pShapeBoundRect && aXPropSet.is() )
-					{
-						::com::sun::star::uno::Any aAny;
-						::com::sun::star::awt::Rectangle* pVisArea = NULL;
-						if ( EscherPropertyValueHelper::GetPropertyValue( aAny, aXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "VisibleArea" ) ) ) )
-						{
-							pVisArea = new ::com::sun::star::awt::Rectangle;
-							aAny >>= (*pVisArea);
-						}
-						Rectangle aRect( Point( 0, 0 ), pShapeBoundRect->GetSize() );
-						sal_uInt32 nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRect, pVisArea, NULL );
-						if ( nBlibId )
-						{
-							AddOpt( ESCHER_Prop_pib, nBlibId, sal_True );
-							ImplCreateGraphicAttributes( aXPropSet, nBlibId, sal_False );
-							bRetValue = sal_True;
-						}
-						delete pVisArea;
-					}
-				}
+                bRetValue = CreateGraphicProperties( rXShape,aGraphicObject );
+				// End
 			}
 		}
 	}
 	return bRetValue;
 }
 
+sal_Bool EscherPropertyContainer::CreateGraphicProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape ,const GraphicObject& rGraphicObj )
+{
+	sal_Bool	bRetValue = sal_False;
+	ByteString aUniqueId( rGraphicObj.GetUniqueID() );
+	if ( aUniqueId.Len() )
+	{
+		AddOpt( ESCHER_Prop_fillType, ESCHER_FillPicture );
+		uno::Reference< beans::XPropertySet > aXPropSet( rXShape, uno::UNO_QUERY );
+
+		if ( pGraphicProvider && pPicOutStrm && pShapeBoundRect && aXPropSet.is() )
+		{
+			::com::sun::star::uno::Any aAny;
+			::com::sun::star::awt::Rectangle* pVisArea = NULL;
+			if ( EscherPropertyValueHelper::GetPropertyValue( aAny, aXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "VisibleArea" ) ) ) )
+			{
+				pVisArea = new ::com::sun::star::awt::Rectangle;
+				aAny >>= (*pVisArea);
+			}
+			Rectangle aRect( Point( 0, 0 ), pShapeBoundRect->GetSize() );
+			sal_uInt32 nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRect, pVisArea, NULL );
+			if ( nBlibId )
+			{
+				AddOpt( ESCHER_Prop_pib, nBlibId, sal_True );
+				ImplCreateGraphicAttributes( aXPropSet, nBlibId, sal_False );
+				bRetValue = sal_True;
+			}
+			delete pVisArea;
+		}
+	}
+	return bRetValue;
+}
+
+sal_Bool EscherPropertyContainer::CreateMediaGraphicProperties(
+	const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape )
+{
+	sal_Bool	bRetValue = sal_False;
+	if ( rXShape.is() )
+	{
+		SdrObject* pSdrMedia( GetSdrObjectFromXShape( rXShape ) );	// SJ: leaving unoapi, because currently there is
+		if ( pSdrMedia && pSdrMedia->ISA( SdrMediaObj ) )				// no access to the native graphic object
+		{			
+			GraphicObject aGraphicObject( ((SdrMediaObj*)pSdrMedia)->getGraphic() );
+			bRetValue = CreateGraphicProperties( rXShape, aGraphicObject );
+		}
+	}
+	return bRetValue;
+}
 
 sal_Bool EscherPropertyContainer::ImplCreateEmbeddedBmp( const ByteString& rUniqueId )
 {
@@ -2191,7 +2215,8 @@ sal_Bool EscherPropertyContainer::CreateShadowProperties(
 
 // ---------------------------------------------------------------------------------------------
 
-sal_Int32 GetValueForEnhancedCustomShapeParameter( const com::sun::star::drawing::EnhancedCustomShapeParameter& rParameter, const std::vector< sal_Int32 >& rEquationOrder )
+sal_Int32 EscherPropertyContainer::GetValueForEnhancedCustomShapeParameter( const ::com::sun::star::drawing::EnhancedCustomShapeParameter& rParameter, 
+								const std::vector< sal_Int32 >& rEquationOrder, sal_Bool bAdjustTrans )
 {
 	sal_Int32 nValue = 0;
 	if ( rParameter.Value.getValueTypeClass() == uno::TypeClass_DOUBLE )
@@ -2207,22 +2232,29 @@ sal_Int32 GetValueForEnhancedCustomShapeParameter( const com::sun::star::drawing
 	{
 		case com::sun::star::drawing::EnhancedCustomShapeParameterType::EQUATION :
 		{
-			OSL_ASSERT(nValue < rEquationOrder.size());
-			if ( nValue < rEquationOrder.size() )
+			OSL_ASSERT((sal_uInt32)nValue < rEquationOrder.size());
+			if ( (sal_uInt32)nValue < rEquationOrder.size() )
 			{
 				nValue = (sal_uInt16)rEquationOrder[ nValue ];
 				nValue |= (sal_uInt32)0x80000000;
 			}
 		}
 		break;
-		case com::sun::star::drawing::EnhancedCustomShapeParameterType::NORMAL :
+		case com::sun::star::drawing::EnhancedCustomShapeParameterType::ADJUSTMENT:
 		{
-
+			if(bAdjustTrans)
+			{
+				sal_uInt32 nAdjustValue = 0;
+				sal_Bool bGot = GetOpt((sal_uInt16)( DFF_Prop_adjustValue + nValue ), nAdjustValue);
+				if(bGot) nValue = (sal_Int32)nAdjustValue;
+			}
 		}
+		break;
+		case com::sun::star::drawing::EnhancedCustomShapeParameterType::NORMAL :
+		default: 
 		break;
 /* not sure if it is allowed to set following values
 (but they are not yet used)
-		case com::sun::star::drawing::EnhancedCustomShapeParameterType::ADJUSTMENT :
 		case com::sun::star::drawing::EnhancedCustomShapeParameterType::BOTTOM :
 		case com::sun::star::drawing::EnhancedCustomShapeParameterType::RIGHT :
 		case com::sun::star::drawing::EnhancedCustomShapeParameterType::TOP :
@@ -2351,9 +2383,19 @@ void ConvertEnhancedCustomShapeEquation( SdrObjCustomShape* pCustoShape,
 	}
 }
 
-sal_Bool EscherPropertyContainer::IsDefaultObject( SdrObjCustomShape* pCustoShape )
+sal_Bool EscherPropertyContainer::IsDefaultObject( SdrObjCustomShape* pCustoShape , const MSO_SPT eShapeType )
 {
     sal_Bool bIsDefaultObject = sal_False;
+	switch(eShapeType)
+	{
+		//if the custom shape is not default shape of ppt, return sal_Fasle;
+		case mso_sptTearDrop:
+			return bIsDefaultObject;
+			
+		default:
+			break;
+	}
+	
     if ( pCustoShape )
     {
 	if (   pCustoShape->IsDefaultGeometry( SdrObjCustomShape::DEFAULT_EQUATIONS )
@@ -2419,6 +2461,7 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
     if ( aXPropSet.is() )
     {
 		SdrObjCustomShape* pCustoShape = (SdrObjCustomShape*)GetSdrObjectFromXShape( rXShape );
+		if ( !pCustoShape ) return;
 		const rtl::OUString	sCustomShapeGeometry( RTL_CONSTASCII_USTRINGPARAM( "CustomShapeGeometry" ) );
 		uno::Any aGeoPropSet = aXPropSet->getPropertyValue( sCustomShapeGeometry );
 		uno::Sequence< beans::PropertyValue > aGeoPropSeq;
@@ -2434,10 +2477,11 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 			const rtl::OUString sAdjustmentValues	( RTL_CONSTASCII_USTRINGPARAM( "AdjustmentValues" ) );
 
 			const beans::PropertyValue* pAdjustmentValuesProp = NULL;
+			const beans::PropertyValue* pPathCoordinatesProp = NULL;
 			sal_Int32 nAdjustmentsWhichNeedsToBeConverted = 0;
 			uno::Sequence< beans::PropertyValues > aHandlesPropSeq;
 			sal_Bool bPredefinedHandlesUsed = sal_True;
-			sal_Bool bIsDefaultObject = IsDefaultObject( pCustoShape );
+			sal_Bool bIsDefaultObject = IsDefaultObject( pCustoShape , eShapeType);
 
 			// convert property "Equations" into std::vector< EnhancedCustomShapeEquationEquation >
 			std::vector< EnhancedCustomShapeEquation >	aEquations;
@@ -2882,38 +2926,7 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 							else if ( rrProp.Name.equals( sPathCoordinates ) )
 							{
 								if ( !bIsDefaultObject )
-								{
-									com::sun::star::uno::Sequence< com::sun::star::drawing::EnhancedCustomShapeParameterPair > aCoordinates;
-									if ( rrProp.Value >>= aCoordinates )
-									{
-										// creating the vertices
-										if ( (sal_uInt16)aCoordinates.getLength() )
-										{
-											sal_uInt16 j, nElements = (sal_uInt16)aCoordinates.getLength();
-											sal_uInt16 nElementSize = 8;
-											sal_uInt32 nStreamSize = nElementSize * nElements + 6;
-											SvMemoryStream aOut( nStreamSize );
-											aOut << nElements
-												<< nElements
-												<< nElementSize;
-											for( j = 0; j < nElements; j++ )
-											{
-												sal_Int32 X = GetValueForEnhancedCustomShapeParameter( aCoordinates[ j ].First, aEquationOrder );
-												sal_Int32 Y = GetValueForEnhancedCustomShapeParameter( aCoordinates[ j ].Second, aEquationOrder );
-												aOut << X
-													<< Y;
-											}
-											sal_uInt8* pBuf = new sal_uInt8[ nStreamSize ];
-											memcpy( pBuf, aOut.GetData(), nStreamSize );
-											AddOpt( DFF_Prop_pVertices, sal_True, nStreamSize - 6, pBuf, nStreamSize );	// -6
-										}
-										else
-										{
-											sal_uInt8* pBuf = new sal_uInt8[ 1 ];
-											AddOpt( DFF_Prop_pVertices, sal_True, 0, pBuf, 0 );
-										}
-									}
-								}
+									pPathCoordinatesProp = &rrProp;
 							}
 							else if ( rrProp.Name.equals( sPathGluePoints ) )
 							{
@@ -3558,6 +3571,39 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 							AddOpt( (sal_uInt16)( DFF_Prop_adjustValue + k ), (sal_uInt32)nValue );
 				}
 			}
+			if( pPathCoordinatesProp )
+			{
+				com::sun::star::uno::Sequence< com::sun::star::drawing::EnhancedCustomShapeParameterPair > aCoordinates;
+				if ( pPathCoordinatesProp->Value >>= aCoordinates )
+				{
+					// creating the vertices
+					if ( (sal_uInt16)aCoordinates.getLength() )
+					{
+						sal_uInt16 j, nElements = (sal_uInt16)aCoordinates.getLength();
+						sal_uInt16 nElementSize = 8;
+						sal_uInt32 nStreamSize = nElementSize * nElements + 6;
+						SvMemoryStream aOut( nStreamSize );
+						aOut << nElements
+							<< nElements
+							<< nElementSize;
+						for( j = 0; j < nElements; j++ )
+						{
+							sal_Int32 X = GetValueForEnhancedCustomShapeParameter( aCoordinates[ j ].First, aEquationOrder, sal_True );
+							sal_Int32 Y = GetValueForEnhancedCustomShapeParameter( aCoordinates[ j ].Second, aEquationOrder, sal_True );
+							aOut << X
+								<< Y;
+						}
+						sal_uInt8* pBuf = new sal_uInt8[ nStreamSize ];
+						memcpy( pBuf, aOut.GetData(), nStreamSize );
+						AddOpt( DFF_Prop_pVertices, sal_True, nStreamSize - 6, pBuf, nStreamSize );	// -6
+					}
+					else
+					{
+						sal_uInt8* pBuf = new sal_uInt8[ 1 ];
+						AddOpt( DFF_Prop_pVertices, sal_True, 0, pBuf, 0 );
+					}
+				}
+			}
 		}
 	}
 }
@@ -3616,6 +3662,37 @@ MSO_SPT EscherPropertyContainer::GetCustomShapeType( const uno::Reference< drawi
 }
 
 // ---------------------------------------------------------------------------------------------
+//Implement for form control export
+sal_Bool   EscherPropertyContainer::CreateBlipPropertiesforOLEControl(const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet, const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape)
+{
+	SdrObject* pShape = GetSdrObjectFromXShape( rXShape );
+	if ( pShape )
+	{
+		SdrModel* pMod = pShape->GetModel();
+		Graphic aGraphic(SdrExchangeView::GetObjGraphic( pMod, pShape));
+		
+        GraphicObject   aGraphicObject = aGraphic;
+        ByteString  aUniqueId = aGraphicObject.GetUniqueID();
+		if ( aUniqueId.Len() )
+		{
+			if ( pGraphicProvider && pPicOutStrm && pShapeBoundRect )
+			{
+				Rectangle aRect( Point( 0, 0 ), pShapeBoundRect->GetSize() );
+				
+				sal_uInt32 nBlibId = pGraphicProvider->GetBlibID( *pPicOutStrm, aUniqueId, aRect, NULL );
+				if ( nBlibId )
+				{					
+					AddOpt( ESCHER_Prop_pib, nBlibId, sal_True );
+					ImplCreateGraphicAttributes( rXPropSet, nBlibId, sal_False );
+					return sal_True;
+				}
+			}
+		}
+	}
+
+	return sal_False;
+
+}
 
 EscherPersistTable::EscherPersistTable()
 {

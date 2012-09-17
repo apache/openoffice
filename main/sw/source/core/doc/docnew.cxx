@@ -299,7 +299,8 @@ SwDoc::SwDoc()
     n32DummyCompatabilityOptions1(0),
     n32DummyCompatabilityOptions2(0),
     mbStartIdleTimer(sal_False),
-	mbSetDrawDefaults(false)
+    mbSetDrawDefaults(false),
+    meDocType( DOCTYPE_NATIVE )
 {
 	RTL_LOGFILE_CONTEXT_AUTHOR( aLog, "SW", "JP93722",  "SwDoc::SwDoc" );
 
@@ -681,6 +682,8 @@ SwDoc::~SwDoc()
     }
     maListStyleLists.clear();
     // <--
+
+	disposeXForms(); // #i113606#, dispose the XForms objects
 
 	delete pPrtData;
 	delete pNumberFormatter;

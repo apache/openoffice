@@ -566,7 +566,7 @@ uno::Reference< text::XTextColumns > SectionPropertyMap::ApplyColumnProperties(
         uno::Reference< beans::XPropertySet > xColumnPropSet( xColumns, uno::UNO_QUERY_THROW );
         if( !m_bEvenlySpaced &&
                 (sal_Int32(m_aColWidth.size()) == (m_nColumnCount + 1 )) &&
-                (sal_Int32(m_aColDistance.size()) == m_nColumnCount))
+                ((sal_Int32(m_aColDistance.size()) == m_nColumnCount) || (sal_Int32(m_aColDistance.size()) == m_nColumnCount + 1)) )
         {
             //the column width in word is an absolute value, in OOo it's relative
             //the distances are both absolute
@@ -945,22 +945,22 @@ void SectionPropertyMap::CloseSectionGroup( DomainMapper_Impl& rDM_Impl )
         if(nRubyHeight < 0 )
             nRubyHeight = 0;
         operator[]( PropertyDefinition( PROP_GRID_RUBY_HEIGHT, false )) = uno::makeAny( nRubyHeight );
-
-        sal_Int16 nGridMode = text::TextGridMode::NONE;
         
-        switch (m_nGridType)
+        // #i119558#, force to set document as standard page mode,
+        // refer to ww8 import process function "SwWW8ImplReader::SetDocumentGrid"
+        try
         {
-            case NS_ooxml::LN_Value_wordprocessingml_ST_DocGrid_lines:
-                nGridMode = text::TextGridMode::LINES;
-                break;
-            case NS_ooxml::LN_Value_wordprocessingml_ST_DocGrid_linesAndChars:
-                nGridMode = text::TextGridMode::LINES_AND_CHARS;
-                break;
-            default:
-                break;
+            uno::Reference< beans::XPropertySet > xDocProperties;
+            xDocProperties = uno::Reference< beans::XPropertySet >( rDM_Impl.GetTextDocument(), uno::UNO_QUERY_THROW );
+            sal_Bool bSquaredPageMode = sal_False;
+            operator[]( PropertyDefinition( PROP_GRID_STANDARD_MODE, false )) = uno::makeAny( !bSquaredPageMode );
+            xDocProperties->setPropertyValue( rtl::OUString::createFromAscii("DefaultPageMode"), uno::makeAny( bSquaredPageMode ));
         }
-        
-        operator[](PropertyDefinition(PROP_GRID_MODE, false)) = uno::makeAny(nGridMode);
+        catch (const uno::Exception& rEx)
+        {
+            OSL_ENSURE( false, "Exception in SectionPropertyMap::CloseSectionGroup");
+            (void)rEx;
+        }
         
         _ApplyProperties( xFollowPageStyle );
 

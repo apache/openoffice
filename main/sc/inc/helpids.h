@@ -486,6 +486,7 @@
 #define HID_FUNC_WENN                                           "SC_HID_FUNC_WENN"
 #define HID_FUNC_ODER                                           "SC_HID_FUNC_ODER"
 #define HID_FUNC_UND                                            "SC_HID_FUNC_UND"
+#define HID_FUNC_XOR                                            "SC_HID_FUNC_XOR"
 
 #define HID_FUNC_ABS                                            "SC_HID_FUNC_ABS"
 #define HID_FUNC_POTENZ                                         "SC_HID_FUNC_POTENZ"
@@ -495,6 +496,10 @@
 #define HID_FUNC_QUADRATESUMME                                  "SC_HID_FUNC_QUADRATESUMME"
 #define HID_FUNC_PRODUKT                                        "SC_HID_FUNC_PRODUKT"
 #define HID_FUNC_SUMMEWENN                                      "SC_HID_FUNC_SUMMEWENN"
+#define HID_FUNC_AVERAGEIF                                      "SC_HID_FUNC_AVERAGEIF"
+#define HID_FUNC_SUMIFS                                         "SC_HID_FUNC_SUMIFS"
+#define HID_FUNC_AVERAGEIFS                                     "SC_HID_FUNC_AVERAGEIFS"
+#define HID_FUNC_COUNTIFS                                       "SC_HID_FUNC_COUNTIFS"
 #define HID_FUNC_ZAEHLENWENN                                    "SC_HID_FUNC_ZAEHLENWENN"
 #define HID_FUNC_WURZEL                                         "SC_HID_FUNC_WURZEL"
 #define HID_FUNC_ZUFALLSZAHL                                    "SC_HID_FUNC_ZUFALLSZAHL"

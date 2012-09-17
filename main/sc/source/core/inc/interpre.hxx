@@ -86,15 +86,29 @@ public:
     formula::FormulaToken* pPointer[ MAXSTACK ];
 };
 
-enum ScIterFunc {
-    ifSUM,                              // Aufsummieren
-    ifSUMSQ,                            // Quadratsummen
-    ifPRODUCT,                          // Multiplizieren
-    ifAVERAGE,                          // Durchschnitt
-    ifCOUNT,                            // Anzahl Werte
-    ifCOUNT2,                           // Anzahl Werte (nichtleer)
-    ifMIN,                              // Minimum
-    ifMAX                               // Maximum
+enum ScIterFunc
+{
+    ifSUM,     // Sum
+    ifSUMSQ,   // Sum squares
+    ifPRODUCT, // Product
+    ifAVERAGE, // Average
+    ifCOUNT,   // Count
+    ifCOUNT2,  // Count non-empty
+    ifMIN,     // Minimum
+    ifMAX      // Maximum
+};
+
+enum ScIterFuncIf
+{
+    ifSUMIF,    // Conditional sum
+    ifAVERAGEIF // Conditional average
+};
+
+enum ScIterFuncIfs
+{
+    ifSUMIFS,     // Multi-Conditional sum
+    ifAVERAGEIFS, // Multi-Conditional average
+    ifCOUNTIFS    // Multi-Conditional count
 };
 
 struct FormulaTokenRef_less
@@ -379,6 +393,7 @@ void ScLessEqual();
 void ScGreaterEqual();
 void ScAnd();
 void ScOr();
+void ScXor();
 void ScNot();
 void ScNeg();
 void ScPercentSign();
@@ -470,8 +485,14 @@ void ScColumn();
 void ScRow();
 void ScTable();
 void ScMatch();
+double IterateParametersIf( ScIterFuncIf );
 void ScCountIf();
 void ScSumIf();
+void ScAverageIf();
+double IterateParametersIfs( ScIterFuncIfs );
+void ScSumIfs();
+void ScAverageIfs();
+void ScCountIfs();
 void ScCountEmptyCells();
 void ScLookup();
 void ScHLookup();

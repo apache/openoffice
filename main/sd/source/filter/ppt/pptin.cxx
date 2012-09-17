@@ -578,6 +578,10 @@ sal_Bool ImplSdPPTImport::Import()
 				sal_Bool bStarDrawFiller = (*GetPageList( eAktPageKind ) )[ nAktPageNum ]->bStarDrawFiller;
 
 				PageKind ePgKind = ( bNotesMaster ) ? PK_NOTES : PK_STANDARD;
+				sal_Bool bHandout = (*GetPageList( eAktPageKind ) )[ nAktPageNum ]->bHandoutMaster;
+				if ( bHandout )
+					ePgKind = PK_HANDOUT;
+
 				pPage->SetPageKind( ePgKind );
 				pSdrModel->InsertMasterPage( (SdrPage*)pPage );
 				if ( bNotesMaster && bStarDrawFiller )
@@ -724,7 +728,7 @@ sal_Bool ImplSdPPTImport::Import()
 	}
 	SdPage* pMPage;
 	sal_uInt16 i;
-	for ( i = 1; i < mpDoc->GetMasterPageCount() && ( (pMPage = (SdPage*)mpDoc->GetMasterPage( i )) != 0 ); i++ )
+	for ( i = 0; i < mpDoc->GetMasterPageCount() && ( (pMPage = (SdPage*)mpDoc->GetMasterPage( i )) != 0 ); i++ )
 	{
 		SetPageNum( i, PPT_MASTERPAGE );
 		/////////////////////////////////////////////
@@ -2051,6 +2055,8 @@ String ImplSdPPTImport::ReadMedia( sal_uInt32 nMediaRef ) const
 												if( ::utl::LocalFileHelper::ConvertPhysicalNameToURL( aStr, aRetVal ) )
 												{
 													aRetVal = INetURLObject( aRetVal ).GetMainURL( INetURLObject::DECODE_UNAMBIGUOUS );
+												}else{ 
+													aRetVal = aStr;
 												}
 											}
 										}
@@ -2337,7 +2343,7 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 				if ( aPresentationText.Len() )
 					pPage->SetObjText( (SdrTextObj*)pText, pOutl, ePresKind, aPresentationText );
 
-				if ( pPage->GetPageKind() != PK_NOTES )
+				if ( pPage->GetPageKind() != PK_NOTES && pPage->GetPageKind() != PK_HANDOUT)
 				{
 					SfxStyleSheet* pSheet2( pPage->GetStyleSheetForPresObj( ePresKind ) );
 					if ( pSheet2 )
@@ -2385,7 +2391,11 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 							break;
 					}
 				}
-				if ( i < 8 )
+// [Bug 119962] Placeholder in ppt file created by MS 2007 is lost if load in Impress 
+				unsigned int nParaCount = pTextObj->Count();
+				PPTParagraphObj *pFirstPara = nParaCount == 0 ? NULL : pTextObj->First();
+				unsigned int nFirstParaTextcount = pFirstPara == NULL ? 0 : pFirstPara->GetTextSize();
+				if ( i < 8 || (nParaCount == 1 && nFirstParaTextcount == 0 || nParaCount == 0))
 				{
 					PresObjKind ePresObjKind = PRESOBJ_NONE;
 					sal_Bool    bEmptyPresObj = sal_True;

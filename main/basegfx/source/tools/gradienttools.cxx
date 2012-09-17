@@ -200,11 +200,10 @@ namespace basegfx
         // add object expansion
         if(bSquare)
         {
-            const double fOriginalDiag(sqrt((fTargetSizeX * fTargetSizeX) + (fTargetSizeY * fTargetSizeY)));
-            fTargetOffsetX -= (fOriginalDiag - fTargetSizeX) / 2.0;
-            fTargetOffsetY -= (fOriginalDiag - fTargetSizeY) / 2.0;
-            fTargetSizeX = fOriginalDiag;
-            fTargetSizeY = fOriginalDiag;
+            const double fSquareWidth(std::max(fTargetSizeX, fTargetSizeY));
+            fTargetOffsetX -= (fSquareWidth - fTargetSizeX) / 2.0;
+            fTargetOffsetY -= (fSquareWidth - fTargetSizeY) / 2.0;
+            fTargetSizeX = fTargetSizeY = fSquareWidth;
         }    
 
         // add object expansion

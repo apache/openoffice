@@ -274,6 +274,10 @@ enum OpCodeEnum
 		ocCountEmptyCells	= SC_OPCODE_COUNT_EMPTY_CELLS,
 		ocCountIf			= SC_OPCODE_COUNT_IF,
 		ocSumIf				= SC_OPCODE_SUM_IF,
+		ocAverageIf			= SC_OPCODE_AVERAGE_IF,
+		ocSumIfs			= SC_OPCODE_SUM_IFS,
+		ocAverageIfs		= SC_OPCODE_AVERAGE_IFS,
+		ocCountIfs			= SC_OPCODE_COUNT_IFS,
 		ocLookup			= SC_OPCODE_LOOKUP,
 		ocVLookup			= SC_OPCODE_V_LOOKUP,
 		ocHLookup			= SC_OPCODE_H_LOOKUP,
@@ -384,6 +388,7 @@ enum OpCodeEnum
         ocGetPivotData      = SC_OPCODE_GET_PIVOT_DATA,
         ocEuroConvert       = SC_OPCODE_EUROCONVERT,
 		ocNumberValue		= SC_OPCODE_NUMBERVALUE,
+		ocXor               = SC_OPCODE_XOR,
 	// internal stuff
 		ocInternalBegin		= SC_OPCODE_INTERNAL_BEGIN,
 		ocTTT				= SC_OPCODE_TTT,

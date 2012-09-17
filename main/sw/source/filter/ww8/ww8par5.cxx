@@ -999,9 +999,16 @@ long SwWW8ImplReader::Read_Field(WW8PLCFManResult* pRes)
         pStrm->Seek( nOldPos );
 
         //#124725# field codes which contain '/' or '.' are not displayed in WinWord
-        if (!aStr.EqualsAscii(" ADDIN", 0, 6) &&
-            (aStr.Search('.') != STRING_NOTFOUND ||
-             aStr.Search('/') != STRING_NOTFOUND))
+        // skip if it is formula field or found space before. see #i119446, #i119585.
+        const xub_StrLen nDotPos = aStr.Search('.');
+        const xub_StrLen nSlashPos = aStr.Search('/');
+        xub_StrLen nSpacePos = aStr.Search( ' ', 1 );
+        if ( nSpacePos == STRING_NOTFOUND )
+            nSpacePos = aStr.Len();
+
+        if ( !( aStr.EqualsAscii( "=", 1, 1 ) ) && 
+            ((( nDotPos != STRING_NOTFOUND ) && ( nDotPos < nSpacePos )) ||
+            (( nSlashPos != STRING_NOTFOUND ) && ( nSlashPos < nSpacePos ))))
             return aF.nLen;
         else
             return aF.nLen - aF.nLRes - 1;  // so viele ueberlesen, das Resultfeld
@@ -1498,6 +1505,12 @@ eF_ResT SwWW8ImplReader::Read_F_Seq( WW8FieldDesc*, String& rStr )
     SwSetExpFieldType* pFT = (SwSetExpFieldType*)rDoc.InsertFldType(
                         SwSetExpFieldType( &rDoc, aSequenceName, nsSwGetSetExpType::GSE_SEQ ) );
     SwSetExpField aFld( pFT, aEmptyStr, eNumFormat );
+
+	//Bug 120654: Add for /h flag(/h: Hiden the field result.)
+	if (bHidden)
+	aFld.SetSubType(aFld.GetSubType() | nsSwExtendedSubType::SUB_INVISIBLE);
+	//Bug 120654(End)
+
 
     if (sStart.Len())
         aFld.SetFormula( ( aSequenceName += '=' ) += sStart );

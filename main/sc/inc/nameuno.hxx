@@ -30,10 +30,11 @@
 #include <com/sun/star/sheet/XLabelRange.hpp>
 #include <com/sun/star/sheet/XLabelRanges.hpp>
 #include <com/sun/star/sheet/XCellRangeReferrer.hpp>
-#include <com/sun/star/sheet/XNamedRange.hpp>
+#include <com/sun/star/sheet/XNamedRange2.hpp>
 #include <com/sun/star/sheet/XFormulaTokens.hpp>
-#include <com/sun/star/sheet/XNamedRanges.hpp>
+#include <com/sun/star/sheet/XNamedRanges2.hpp>
 #include <com/sun/star/container/XEnumerationAccess.hpp>
+#include <com/sun/star/sheet/RangeScopeName.hpp>
 #include <com/sun/star/lang/XServiceName.hpp>
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/lang/XUnoTunnel.hpp>
@@ -44,13 +45,15 @@
 #include <cppuhelper/implbase5.hxx>
 #include <cppuhelper/implbase6.hxx>
 
+#include <global.hxx> //for EMPTY_STRING
+
 class ScDocShell;
 class ScRangeData;
 class ScTokenArray;
 
 
 class ScNamedRangeObj : public ::cppu::WeakImplHelper6<
-							::com::sun::star::sheet::XNamedRange,
+							::com::sun::star::sheet::XNamedRange2,
                             ::com::sun::star::sheet::XFormulaTokens,
 							::com::sun::star::sheet::XCellRangeReferrer,
 							::com::sun::star::beans::XPropertySet,
@@ -61,16 +64,17 @@ class ScNamedRangeObj : public ::cppu::WeakImplHelper6<
 private:
 	ScDocShell*				pDocShell;
 	String					aName;
+	String					aScopeName;
 
 private:
 	ScRangeData*			GetRangeData_Impl();
 	void					Modify_Impl( const String* pNewName,
                                         const ScTokenArray* pNewTokens, const String* pNewContent,
 										const ScAddress* pNewPos, const sal_uInt16* pNewType,
-                                        const formula::FormulaGrammar::Grammar eGrammar );
+                                        const formula::FormulaGrammar::Grammar eGrammar, const String* pNewScopeName = NULL );
 
 public:
-							ScNamedRangeObj(ScDocShell* pDocSh, const String& rNm);
+							ScNamedRangeObj(ScDocShell* pDocSh, const String& rNm, const String& rScopeName = EMPTY_STRING);
 	virtual					~ScNamedRangeObj();
 
 	virtual void			Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
@@ -86,6 +90,8 @@ public:
 									throw(::com::sun::star::uno::RuntimeException);
 	virtual sal_Int32		SAL_CALL getType() throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL	setType( sal_Int32 nType ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getScopeName() throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	setScopeAndRangeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName ) throw(::com::sun::star::uno::RuntimeException);
 
                             // XFormulaTokens
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::FormulaToken > SAL_CALL getTokens()
@@ -169,7 +175,7 @@ public:
 
 
 class ScNamedRangesObj : public ::cppu::WeakImplHelper5<
-							::com::sun::star::sheet::XNamedRanges,
+							::com::sun::star::sheet::XNamedRanges2,
 							::com::sun::star::container::XEnumerationAccess,
 							::com::sun::star::container::XIndexAccess,
                             ::com::sun::star::document::XActionLockable,
@@ -181,6 +187,14 @@ private:
 
 	ScNamedRangeObj*		GetObjectByIndex_Impl(sal_uInt16 nIndex);
 	ScNamedRangeObj*		GetObjectByName_Impl(const ::rtl::OUString& aName);
+	ScNamedRangeObj*		GetObjectByScopeName_Impl(const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName);
+
+	void ImplAddNewByScopeAndName(SCTAB aScope,const ::rtl::OUString& aRangeName, const ::rtl::OUString& aContent,
+								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType)
+								throw(::com::sun::star::uno::RuntimeException);
+
+	void ImplRemoveByScopeAndName(SCTAB aScope,const ::rtl::OUString& aRangeName)
+								throw(::com::sun::star::uno::RuntimeException);
 
 protected:
     /** called from the XActionLockable interface methods on initial locking */
@@ -199,13 +213,27 @@ public:
 	virtual void SAL_CALL	addNewByName( const ::rtl::OUString& aName, const ::rtl::OUString& aContent,
 								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType )
 									throw(::com::sun::star::uno::RuntimeException);
+
+	virtual void SAL_CALL	addNewByScopeName( const ::rtl::OUString& aScopeName,const ::rtl::OUString& aRangeName, const ::rtl::OUString& aContent,
+								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType )
+									throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL	addNewFromTitles( const ::com::sun::star::table::CellRangeAddress& aSource,
 								::com::sun::star::sheet::Border aBorder )
 									throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL	removeByName( const ::rtl::OUString& aName )
 								throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	removeByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName )
+								throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL	outputList( const ::com::sun::star::table::CellAddress& aOutputPosition )
 								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName )
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::RangeScopeName > SAL_CALL getElementScopeNames()
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName )
+								throw(::com::sun::star::container::NoSuchElementException,
+									::com::sun::star::lang::WrappedTargetException,
+									::com::sun::star::uno::RuntimeException);
 
 							// XNameAccess
 	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )

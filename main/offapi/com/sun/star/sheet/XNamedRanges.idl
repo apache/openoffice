@@ -44,6 +44,7 @@
 
 module com {  module sun {  module star {  module sheet {
 
+
 //=============================================================================
 
 /** provides access to the members in a collection of named ranges and to
@@ -127,6 +128,7 @@ published interface XNamedRanges: com::sun::star::container::XNameAccess
 			specifies the top left cell of the output range.
 	 */
 	void outputList( [in] com::sun::star::table::CellAddress aOutputPosition );
+	
 
 };
 
