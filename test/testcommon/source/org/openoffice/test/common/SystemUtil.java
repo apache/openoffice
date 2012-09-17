@@ -72,13 +72,6 @@ public class SystemUtil {
 			output.setLength(0);
 			if (exec(new String[]{"lsb_release", "-rs"}, output) == 0)
 				osVersion = output.toString().trim();	
-			
-			System.setProperty("info.os.name", SystemUtil.getOSName());
-			System.setProperty("info.os.version", SystemUtil.getOSVersion());
-			System.setProperty("info.os.arch", SystemUtil.getOSArch());
-			System.setProperty("info.os.arch", SystemUtil.getOSArch());
-			System.setProperty("info.ip", SystemUtil.getIPAddress());
-			System.setProperty("info.hostname", SystemUtil.getHostName());
 		}
 	}
 
