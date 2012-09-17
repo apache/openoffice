@@ -124,7 +124,6 @@ public class Installer implements Runnable {
 	public static boolean addToClassPath(File file) {
 		try {
 			URL url = file.toURI().toURL();
-			System.out.println(url);
 			URLClassLoader classLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
 			Method method = URLClassLoader.class.getDeclaredMethod("addURL", new Class[] { URL.class });
 			method.setAccessible(true);
