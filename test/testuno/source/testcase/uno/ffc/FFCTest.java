@@ -19,12 +19,8 @@
  */
 package testcase.uno.ffc;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FilenameFilter;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,13 +33,12 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.FileProvider;
 import org.openoffice.test.common.FileProvider.FileRepos;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
+import org.openoffice.test.common.SystemUtil;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
 
@@ -82,11 +77,12 @@ public class FFCTest {
 	public static String suiteDir = "../suite/";
 	private String fileURL = "";
 	private String operateFilePath = "";
-	private static boolean isSuiteFileExist = false;
 	private static Map<String, String> formatMap = new HashMap<String, String>();
 	private static File testSpaceFile = Testspace.getFile();
 	private boolean isSucceed = false;
 	private static String  tempFolder = testSpaceFile.getAbsolutePath() + File.separator + "temp";
+
+	private static String failedFilesDir  = "output/failedSampleFiles/";;
 //	@Parameters
 //	public static Collection<String[]>  data() throws Exception{
 //		initMap();
@@ -190,27 +186,32 @@ public class FFCTest {
 		//Disable automation
 		OpenOffice.getDefault().setAutomationPort(-1);
 		OpenOffice.getDefault().addArgs("-invisible", "-conversionmode", "-headless", "-hidemenu");
+		
+		File failedDirec = Testspace.getFile(failedFilesDir);
+		failedDirec.mkdirs();
 	}
 	
 	@Before
 	public void setUp() throws Exception {	
-//		if (isSuiteFileExist) {
-//			operateFilePath = downloadFile(fileURL);
-//		} else {
-//			operateFilePath = Testspace.prepareData(fileURL);
-//		}
-//		
-		operateFilePath = Testspace.prepareData(fileURL);
+		operateFilePath =  Testspace.prepareData(fileURL);
+		
 		app.start();	
 	}
 	@After
 	public void tearDown() throws Exception {			
 		if (!isSucceed) {
-			FileUtil.copyFile(operateFilePath, Testspace.getFile("output").getAbsolutePath());
+			FileUtil.copyFile(operateFilePath, Testspace.getFile(failedFilesDir).getAbsolutePath());
+			FileUtil.appendStringToFile( Testspace.getFile(failedFilesDir + File.separator + "failedFiles.files").getAbsolutePath(), fileURL +"\r\n");
 			app.close();
+			SystemUtil.killProcess("WerFault.*");
+			SystemUtil.sleep(2);
+			SystemUtil.killProcess("EQNEDT32.*");
+			//WerFault.exe
+			//EQNEDT32.EXE
 		}
 	}
-
+	
+	
 	
 	@Test(timeout=1000*60*5)
 	public void exportTest() throws Exception {
@@ -221,7 +222,6 @@ public class FFCTest {
 		System.out.println("MS ->ODF finished");
 		//ODF->MS
 		String savedMSFilePath = exportAsODF(saveAsODF); 
-		System.out.println("ODF->MS Finished");
 		File savedMSFile = new File(savedMSFilePath);
 		Assert.assertTrue("FFC Test for file : "+ savedMSFilePath, savedMSFile.exists());
 		System.out.println("ODF->MS Finished");
@@ -260,7 +260,7 @@ public class FFCTest {
 		lProperties[2].Name = "AsyncMode";
 		lProperties[2].Value = new Boolean(false);
 		
-		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
 		File file = new File(testFile);
 		String fileName = file.getName();
 		String saveAsFilePath = file.getParentFile().getAbsolutePath() + File.separator + fileName + "." + formatMap.get(suffix);//TODO
@@ -351,7 +351,7 @@ public class FFCTest {
 				loadProps[2].Name = "AsyncMode";
 				loadProps[2].Value = new Boolean(false);
 			}
-			
+			 
 			String urlPath = Testspace.getUrl(filePath);
 			XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, app.getDesktop());
 			return componentLoader.loadComponentFromURL(urlPath, "_blank", 0, loadProps);
@@ -375,4 +375,7 @@ public class FFCTest {
 		FileUtil.download(url, new File(testFile));
 		return testFile;
 	}
+	
+	
+	
 }
