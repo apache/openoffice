@@ -80,28 +80,27 @@ public class Testspace {
 	}
 	
 	public static String prepareData(String dataFilePath, String to) {
-		File dataFile = prepareDataFile(dataFilePath,to);
+		File dataFile = prepareDataFile(dataFilePath, to);
 		return dataFile.getAbsolutePath();
 	}
 	
 	public static File prepareDataFile(String dataFilePath) {
-		String name = new File(dataFilePath).getName();
-		return prepareDataFile(dataFilePath, "temp/" + name);
+		getFile("temp").mkdir();
+		return prepareDataFile(dataFilePath, "temp");
 	}
 	
 	public static File prepareDataFile(String dataFilePath, String to) {
 		File workingFile = getFile(to);
-		
 		if (FileUtil.isUrl(dataFilePath)) {
-			if (FileUtil.download(dataFilePath, workingFile) == null) {
+			if ((workingFile = FileUtil.download(dataFilePath, workingFile)) == null) {
 				throw new RuntimeException("Can not prepare data: " + dataFilePath);
 			}
 			return workingFile;
 		}
 		
-		
 		File dataFile = new File(dataFilePath);
-		
+		if (workingFile.isDirectory()) 
+			workingFile = new File(workingFile, workingFile.getName());
 		
 		if (!dataFile.isAbsolute()) 
 			dataFile = new File(testdata, dataFilePath);
