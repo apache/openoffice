@@ -22,11 +22,13 @@ package org.openoffice.test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.logging.Level;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.RunListener;
+import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.NamedRequest;
 
@@ -48,6 +50,7 @@ public class Run {
 			System.out.println(msg);
 		System.out.println("Usage: [options]");
 		System.out.println("	-D<property>=<value>	Set system property");
+		System.out.println("	-propertyfile file  	Set system property from property file");
 		System.out.println("	-r	Set a runnable which will be executed before all tests start.");
 		System.out.println("	-l	Set a test listeners.");
 		System.out.println("	-tp	Define a test suite with test packages separated by comma. Format: [name]:org.package1,org.package2...");
@@ -83,6 +86,11 @@ public class Run {
 					value = propEntry.substring(++in);
 				}
 				System.setProperty(key, value);
+			} else if (arg.equals("-propertyfile")) {
+				if (++i >= args.length)
+					printUsage("Invalid arguments", 1);
+				Properties props = FileUtil.loadProperties(args[i]);
+				System.setProperties(props);
 			} else if (arg.equals("-r")) {
 				if (++i >= args.length)
 					printUsage("Invalid arguments", 1);
