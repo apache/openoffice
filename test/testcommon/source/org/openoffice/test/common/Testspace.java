@@ -100,7 +100,7 @@ public class Testspace {
 		
 		File dataFile = new File(dataFilePath);
 		if (workingFile.isDirectory()) 
-			workingFile = new File(workingFile, workingFile.getName());
+			workingFile = new File(workingFile, dataFile.getName());
 		
 		if (!dataFile.isAbsolute()) 
 			dataFile = new File(testdata, dataFilePath);
