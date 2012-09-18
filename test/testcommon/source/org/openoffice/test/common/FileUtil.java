@@ -36,6 +36,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.DateFormat;
@@ -914,8 +915,8 @@ public class FileUtil {
 		InputStream in = null;
 		OutputStream out = null;
 		try {
-			URL url = new URL(urlString);
-			URLConnection urlConnection = url.openConnection();
+			URI url = new URI(urlString);
+			URLConnection urlConnection = url.toURL().openConnection();
 			int totalSize = urlConnection.getContentLength();
 			in = urlConnection.getInputStream();
 			if (output.isDirectory()) 
