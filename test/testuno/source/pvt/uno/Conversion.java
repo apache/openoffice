@@ -72,7 +72,7 @@ public class Conversion {
 			+ "-f .*\\.((odp)|(otp))$ 'MS PowerPoint 97' ppt");
 
 	@FileRepeat
-	public static int repeat = 8;
+	public static int repeat = Integer.parseInt(System.getProperty("conversion.repeat", "8"));
 	
 	private static UnoApp app = new UnoApp();
 	
@@ -139,7 +139,7 @@ public class Conversion {
 	public void after() throws Exception{
 		result.println(sourceFileId + "," + scenario + "," + closeTime + "," + saveTime + "," + loadTime);
 		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
-		if (counter % 8 == 0) {
+		if (counter % repeat == 0) {
 			app.close();
 		}
 	}

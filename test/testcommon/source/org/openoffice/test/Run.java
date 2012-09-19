@@ -90,7 +90,7 @@ public class Run {
 				if (++i >= args.length)
 					printUsage("Invalid arguments", 1);
 				Properties props = FileUtil.loadProperties(args[i]);
-				System.setProperties(props);
+				System.getProperties().putAll(props);
 			} else if (arg.equals("-r")) {
 				if (++i >= args.length)
 					printUsage("Invalid arguments", 1);
