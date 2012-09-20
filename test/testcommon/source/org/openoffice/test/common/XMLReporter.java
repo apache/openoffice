@@ -121,6 +121,7 @@ public class XMLReporter extends RunListener {
 		finishSuite();
 		File outputBackupDir = new File(outputDir.getAbsolutePath() + "." + suiteName);
 		if (outputBackupDir.exists()) {
+			outputBackupDir.renameTo(new File(outputBackupDir.getAbsolutePath() + "." + System.currentTimeMillis()));
 			FileUtil.deleteFile(outputBackupDir);
 		}
 		
