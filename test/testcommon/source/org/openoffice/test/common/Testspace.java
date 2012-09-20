@@ -24,6 +24,7 @@
 package org.openoffice.test.common;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
@@ -132,6 +133,16 @@ public class Testspace {
 		}
 	}
 	
+	public static String getDataPath(String dataFilePath) {
+		File file = getDataFile(dataFilePath);
+		if (file == null)
+			return null;
+		try {
+			return file.getCanonicalPath();
+		} catch (IOException e) {
+			return null;
+		}
+	}
 	
 	public static boolean deleteFile(String path) {
 		return FileUtil.deleteFile(getPath(path));

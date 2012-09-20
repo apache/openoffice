@@ -74,7 +74,7 @@ public class OpenOffice {
 
 	private Process process = null;
 	
-	private String unoUrl = "socket,host=localhost,port=2002;urp";
+	private String unoUrl = "socket,host=127.0.0.1,port=2002;urp";
 	
 	private Properties versionProps = null;
 	

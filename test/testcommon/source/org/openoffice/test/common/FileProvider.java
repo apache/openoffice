@@ -176,7 +176,7 @@ public class FileProvider extends Suite {
 		for (int i = 0; i < list.size(); i++) {
 			Object[] t = list.get(i);
 			for  (int j = 0; j < repeat; j++) {
-				TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t, i);
+				TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t, i * repeat + j);
 				runners.add(runner);
 			}
 		}

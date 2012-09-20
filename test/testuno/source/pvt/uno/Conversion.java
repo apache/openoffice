@@ -58,8 +58,7 @@ public class Conversion {
 	public Logger log = Logger.getLogger(this);
 
 	@FileRepos
-	public static String repos = getDataFile("pvt_conversion").getAbsolutePath();
-
+	public static String repos = System.getProperty("conversion.repos", getDataPath("conversion_pvt"));
 	@FileFilter
 	public static String filter = System.getProperty("conversion.filter", "-f .*\\.((doc)|(dot)|(odt)|(ott))$ writer_pdf_Export pdf " 
 			+ "-f .*\\.((xls)|(xlt)|(ods)|(ots))$ calc_pdf_Export pdf "
@@ -74,6 +73,8 @@ public class Conversion {
 	@FileRepeat
 	public static int repeat = Integer.parseInt(System.getProperty("conversion.repeat", "8"));
 	
+	public static String clean = System.getProperty("conversion.clean", "file");
+
 	private static UnoApp app = new UnoApp();
 	
 	private static PrintStream result;
@@ -89,7 +90,7 @@ public class Conversion {
 		File resultFile = Testspace.getFile("output/conversion.csv");
 		resultFile.getParentFile().mkdirs();
 		result = new PrintStream(new FileOutputStream(resultFile));
-		result.println("File,Scenario,After Close,After Save,After Load");
+		result.println("File,Scenario,File Size,Time Consumed After Closing,Time Consumed After Saving,Time Consumed After Loading");
 	}
 	
 	@AfterClass
@@ -123,27 +124,30 @@ public class Conversion {
 	
 	@Before
 	public void before() throws Exception {
-		sourceFile = prepareDataFile(sourcePath);
+		sourceFile = new File(sourcePath);
 		sourceFileUrl = FileUtil.getUrl(this.sourceFile);
 		targetFile = getFile("classtemp/" + sourceFile.getName()+ "." + targetExtName);
 		targetFileUrl = FileUtil.getUrl(this.targetFile);
 		
 		scenario = FileUtil.getFileExtName(sourceFile.getName()).toLowerCase() + " to " + FileUtil.getFileExtName(targetFile.getName()).toLowerCase();
-		sourceFileId = sourceFile.getAbsolutePath().replace(new File(repos).getAbsolutePath(), "").replace("\\", "/");
-		
+		String pathSource = sourceFile.getCanonicalPath().replace("\\", "/");
+		String pathRepos = new File(repos).getCanonicalPath().replace("\\", "/") + "/";
+		sourceFileId = pathSource.replace(pathRepos, "");
 		log.info("Start [File: " + sourceFileId + "] [Size: " + (sourceFile.length() / 1024) + "KB] [Scenario: " + scenario + "]");
 		app.start();
 	}
 	
 	@After
 	public void after() throws Exception{
-		result.println(sourceFileId + "," + scenario + "," + closeTime + "," + saveTime + "," + loadTime);
+		result.println(sourceFileId + "," + scenario + "," + sourceFile.length() + "," + closeTime + "," + saveTime + "," + loadTime);
 		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
-		if (counter % repeat == 0) {
+		if (closeTime < 0) {
+			app.close();
+		} else if ("file".equalsIgnoreCase(clean) && counter % repeat == 0) {
 			app.close();
 		}
 	}
-	
+
 	private PropertyValue propertyValue(String name, Object value) {
 		PropertyValue p = new PropertyValue();
 		p.Name = name;
