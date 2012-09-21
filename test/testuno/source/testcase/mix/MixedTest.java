@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openoffice.test.OpenOffice;
 import org.openoffice.test.uno.UnoApp;
 import org.openoffice.test.vcl.widgets.VclApp;
 import org.openoffice.test.vcl.widgets.VclListBox;
@@ -22,17 +23,26 @@ import com.sun.star.uno.UnoRuntime;
  *
  */
 public class MixedTest {
-	UnoApp unoApp = new UnoApp();
-	VclApp vclApp = new VclApp();
-	VclWindow writer = new VclWindow("SW_HID_EDIT_WIN");
-	VclTabPage effectsPage = new VclTabPage("CUI_HID_SVXPAGE_CHAR_EFFECTS");
-	VclListBox colorList = new VclListBox("cui:ListBox:RID_SVXPAGE_CHAR_EFFECTS:LB_FONTCOLOR");
-	XTextDocument textDocument = null;
+	OpenOffice aoo;
+	UnoApp unoApp;
+	VclApp vclApp;
+	VclWindow writer;
+	VclTabPage effectsPage;
+	VclListBox colorList;
+	XTextDocument textDocument;
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@Before
 	public void setUp() throws Exception {
+		OpenOffice aoo = new OpenOffice();
+		aoo.setAutomationPort(OpenOffice.DEFAULT_AUTOMATION_PORT);
+		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
+		unoApp = new UnoApp(aoo);
+		vclApp = new VclApp(aoo);
+		writer = new VclWindow(vclApp, "SW_HID_EDIT_WIN");
+		effectsPage = new VclTabPage(vclApp, "CUI_HID_SVXPAGE_CHAR_EFFECTS");
+		colorList = new VclListBox(vclApp, "cui:ListBox:RID_SVXPAGE_CHAR_EFFECTS:LB_FONTCOLOR");
 		unoApp.start();
 	}
 

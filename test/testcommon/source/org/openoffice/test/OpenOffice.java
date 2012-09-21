@@ -22,6 +22,7 @@
 package org.openoffice.test;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -55,7 +56,9 @@ public class OpenOffice {
 	private static final String USERHOME = System.getProperty("user.home");
 	private static final String BIN = SystemUtil.isWindows() ? "program/soffice.exe" : SystemUtil.isMac() ? "MacOS/soffice": "program/soffice"; 
 	private static final String SYSUSERCONFIG = SystemUtil.isWindows()? System.getenv("APPDATA") : SystemUtil.isMac() ?  USERHOME + "/Library/Application Support" : USERHOME;
-
+	public static final String DEFAULT_UNO_URL = "socket,host=127.0.0.1,port=2002;urp";
+	public static final int DEFAULT_AUTOMATION_PORT = 12479;
+	
 	private static OpenOffice defaultInstance = null;
 
 	private File userInstallation = null;
@@ -66,15 +69,17 @@ public class OpenOffice {
 
 	private File bin = null;
 	
+	private String binPath = null;
+	
 	private ArrayList<String> args = new ArrayList<String>();
 
 	private ArrayList<String> registryModifications = new ArrayList<String>();
 	
-	private int automationPort = 12479;
+	private int automationPort = 0;
 
 	private Process process = null;
 	
-	private String unoUrl = "socket,host=127.0.0.1,port=2002;urp";
+	private String unoUrl = null;
 	
 	private Properties versionProps = null;
 	
@@ -115,6 +120,10 @@ public class OpenOffice {
 
 		home = new File(appHome);
 		bin = new File(appHome, BIN);
+		try {
+			binPath = bin.getCanonicalPath();
+		} catch (IOException e1) {
+		}
 		File binParent = bin.getParentFile();
 		File bootstrapFile = new File(binParent, "bootstraprc");
 		if (!bootstrapFile.exists())
@@ -144,6 +153,8 @@ public class OpenOffice {
 	public static OpenOffice getDefault() {
 		if (defaultInstance == null) {
 			defaultInstance = new OpenOffice();
+			defaultInstance.setAutomationPort(DEFAULT_AUTOMATION_PORT);
+			defaultInstance.setUnoUrl(DEFAULT_UNO_URL);
 			defaultInstance.addArgs("-nofirststartwizard", "-norestore", "-quickstart=no");
 			defaultInstance.addRegistryModifications("<item oor:path=\"/org.openoffice.Office.Common/Misc\"><prop oor:name=\"UseSystemFileDialog\" oor:op=\"fuse\"><value>false</value></prop></item>",
 					"<item oor:path=\"/org.openoffice.Office.Common/Security/Scripting\"><prop oor:name=\"MacroSecurityLevel\" oor:op=\"fuse\"><value>0</value></prop></item>");
@@ -152,7 +163,12 @@ public class OpenOffice {
 		return defaultInstance;
 	}
 
-
+	public static void restoreDefault() {
+		if (defaultInstance != null) {
+			
+		}
+	}
+	
 	public Properties getVersionProps() {
 		return versionProps;
 	}
@@ -283,7 +299,7 @@ public class OpenOffice {
 			return false;
 		
 		ArrayList<String> cmds = new ArrayList<String>();
-		cmds.add(bin.getAbsolutePath());
+		cmds.add(binPath);
 		if (automationPort > 0) {
 			cmds.add("-automationport=" + automationPort);
 			cmds.add("-enableautomation");
@@ -305,19 +321,21 @@ public class OpenOffice {
 		if (args != null)
 			cmds.addAll(args);
 
-		File registry = new File(getUserInstallation(), "user/registrymodifications.xcu");
-		String content = FileUtil.readFileAsString(registry);
-		String newContent = "";
-		for (String item : registryModifications) {
-			if (!content.contains(item)) {
-				newContent += item;
+		if (registryModifications.size() > 0) {
+			File registry = new File(getUserInstallation(), "user/registrymodifications.xcu");
+			String content = FileUtil.readFileAsString(registry);
+			String newContent = "";
+			for (String item : registryModifications) {
+				if (!content.contains(item)) {
+					newContent += item;
+				}
 			}
+			content.replace("</oor:items>", "");
+			if (content.length() == 0)
+				content += "<?xml version=\"1.0\" encoding=\"UTF-8\"?><oor:items xmlns:oor=\"http://openoffice.org/2001/registry\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">";
+			content += newContent + "</oor:items>";
+			FileUtil.writeStringToFile(registry.getAbsolutePath(), content);
 		}
-		content.replace("</oor:items>", "");
-		if (content.length() == 0)
-			content += "<?xml version=\"1.0\" encoding=\"UTF-8\"?><oor:items xmlns:oor=\"http://openoffice.org/2001/registry\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">";
-		content += newContent + "</oor:items>";
-		FileUtil.writeStringToFile(registry.getAbsolutePath(), content);
 		
 		process = SystemUtil.backgroundExec(cmds.toArray(new String[]{}), null, null, null, null);
 		
@@ -330,4 +348,6 @@ public class OpenOffice {
 			throw new RuntimeException("OpenOffice can't be started!");
 		return true;
 	}
+	
+	
 }

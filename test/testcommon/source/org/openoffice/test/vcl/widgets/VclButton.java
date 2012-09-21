@@ -33,10 +33,6 @@ import org.openoffice.test.vcl.client.Constant;
  */
 public class VclButton extends VclControl {
 	
-	public VclButton(String id) {
-		super(id);
-	}
-
 	public VclButton(VclApp app, String id) {
 		super(app, id);
 	}

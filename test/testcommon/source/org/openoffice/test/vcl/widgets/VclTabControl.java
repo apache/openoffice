@@ -31,12 +31,8 @@ import org.openoffice.test.vcl.client.Constant;
  */
 public class VclTabControl extends VclControl {
 	
-	public VclTabControl() {
-		super(Constant.UID_ACTIVE);
-	}
-	
-	public VclTabControl(String id) {
-		super(id);
+	public VclTabControl(VclApp app) {
+		super(app, Constant.UID_ACTIVE);
 	}
 
 	public VclTabControl(VclApp app, String id) {

@@ -48,10 +48,6 @@ public class VclApp {
 	
 	protected OpenOffice openOffice = null;
 	
-	public VclApp() {
-		this(OpenOffice.getDefault());
-	}
-	
 	public VclApp(OpenOffice openOffice) {
 //		this("localhost", openOffice.getAutomationPort());
 		this("127.0.0.1", openOffice.getAutomationPort());	// In case "localhost" is modified incorrectly
@@ -62,14 +58,6 @@ public class VclApp {
 		communicationManager = new CommunicationManager(host, port);
 		caller = new CommandCaller(communicationManager);
 		new Handshaker(communicationManager);
-	}
-	
-	public static VclApp getDefault() {
-		if (defaultInstance == null) {
-			defaultInstance = new VclApp();
-		}
-			
-		return defaultInstance;
 	}
 
 	public void setWinInfoReceiver(WinInfoReceiver receiver) {

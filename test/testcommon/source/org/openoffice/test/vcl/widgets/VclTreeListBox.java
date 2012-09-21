@@ -26,15 +26,6 @@ import org.openoffice.test.vcl.client.Constant;
 
 
 public class VclTreeListBox extends VclControl {
-
-	/**
-	 * Construct the tree with its String ID
-	 * @param id
-	 */
-	public VclTreeListBox(String id) {
-		super(id);
-	}
-	
 	
 	public VclTreeListBox(VclApp app, String id) {
 		super(app, id);

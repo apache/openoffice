@@ -43,8 +43,8 @@ public class VclMenuItem extends VclWidget {
 	 * 
 	 * @param id
 	 */
-	public VclMenuItem(int id) {
-		super();
+	public VclMenuItem(VclApp app, int id) {
+		super(app);
 		this.id = id;
 	}
 
@@ -54,8 +54,8 @@ public class VclMenuItem extends VclWidget {
 	 * 
 	 * @param path
 	 */
-	public VclMenuItem(String path) {
-		super();
+	public VclMenuItem(VclApp app, String path) {
+		super(app);
 		this.path = path.split("->");
 	}
 
@@ -66,7 +66,7 @@ public class VclMenuItem extends VclWidget {
 	 * @param id
 	 */
 	public VclMenuItem(VclMenu menu, int id) {
-		super();
+		super(menu.app);
 		this.id = id;
 		this.menu = menu;
 		this.app = menu.app;
@@ -79,7 +79,7 @@ public class VclMenuItem extends VclWidget {
 	 * @param path
 	 */
 	public VclMenuItem(VclMenu menu, String path) {
-		super();
+		super(menu.app);
 		this.path = path.split("->");
 		this.menu = menu;
 		this.app = menu.app;
@@ -97,7 +97,7 @@ public class VclMenuItem extends VclWidget {
 	 * @return
 	 */
 	public int getId() {
-		VclMenu menu = new VclMenu();
+		VclMenu menu = new VclMenu(app);
 		if (path != null) {
 			int count = menu.getItemCount();
 			for (int i = 0; i < count; i++) {
@@ -126,7 +126,7 @@ public class VclMenuItem extends VclWidget {
 		if (menu != null)
 			menu.use();
 		for (int i = 0; i < path.length; i++) {
-			new VclMenuItem(path[i]).pick();
+			new VclMenuItem(app, path[i]).pick();
 			Tester.sleep(0.5);
 		}
 	}
@@ -143,7 +143,7 @@ public class VclMenuItem extends VclWidget {
 		if (menu != null)
 			menu.use();
 		for (int i = 0; i < path.length - 1; i++)
-			new VclMenuItem(path[i]).pick();
+			new VclMenuItem(app, path[i]).pick();
 	}
 
 	/**

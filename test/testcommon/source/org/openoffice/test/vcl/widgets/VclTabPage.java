@@ -27,12 +27,7 @@ import org.openoffice.test.vcl.client.Constant;
 
 
 public class VclTabPage extends VclDialog {
-	
-	public VclTabPage(String id) {
-		super(id);
-	}
 
-	
 	public VclTabPage(VclApp app, String id) {
 		super(app, id);
 	}

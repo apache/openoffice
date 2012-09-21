@@ -62,8 +62,15 @@ public class UnoApp {
 	
 	private int reconnectCount = 10;
 	
+	private static OpenOffice defaultOpenOffice = null;
+	
+	static {
+		defaultOpenOffice = new OpenOffice();
+		defaultOpenOffice.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
+	}
+	
 	public UnoApp() {
-		this.openOffice = OpenOffice.getDefault();
+		this.openOffice = defaultOpenOffice;
 	}
 	
 	public UnoApp(OpenOffice openOffice) {

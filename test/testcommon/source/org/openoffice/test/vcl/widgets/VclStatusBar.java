@@ -31,10 +31,6 @@ import org.openoffice.test.vcl.client.Constant;
  */
 public class VclStatusBar extends VclControl {
 
-	public VclStatusBar(String id) {
-		super(id);
-	}
-
 	public VclStatusBar(VclApp app, String id) {
 		super(app, id);
 	}

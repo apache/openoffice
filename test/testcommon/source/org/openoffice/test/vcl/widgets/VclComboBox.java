@@ -31,10 +31,6 @@ import org.openoffice.test.vcl.client.Constant;
  */
 public class VclComboBox extends VclControl {
 
-	public VclComboBox(String id) {
-		super(id);
-	}
-
 	public VclComboBox(VclApp app, String id) {
 		super(app, id);
 	}

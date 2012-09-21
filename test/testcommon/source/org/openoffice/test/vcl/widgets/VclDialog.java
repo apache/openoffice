@@ -31,13 +31,6 @@ import org.openoffice.test.vcl.client.Constant;
  * Proxy to access the VCL dialog
  */
 public class VclDialog extends VclWindow {
-	
-
-	public VclDialog(String id) {
-		super(id);
-	}
-
-
 
 	public VclDialog(VclApp app, String id) {
 		super(app, id);

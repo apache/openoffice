@@ -37,15 +37,6 @@ public class VclControl extends VclWidget {
 	protected String id = null;
 	
 	protected int type = -1;
-	
-	/**
-	 * Construct an instance with id in the default VclApp
-	 * @param id
-	 */
-	public VclControl(String id) {
-		super();
-		this.id = id;
-	}
 
 	/**
 	 * Construct an instance with the given VclApp and ID

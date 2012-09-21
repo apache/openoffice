@@ -33,12 +33,6 @@ import org.openoffice.test.vcl.client.Constant;
  *
  */
 public class VclToolBox extends VclDockingWin {
-
-	
-	public VclToolBox(String uid) {
-		super(uid);
-	}
-
 	
 	public VclToolBox(VclApp app, String id) {
 		super(app, id);

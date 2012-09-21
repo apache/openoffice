@@ -32,15 +32,6 @@ import org.openoffice.test.vcl.client.Constant;
  *
  */
 public class VclDockingWin extends VclWindow {
-	/**
-	 * Define VCL Docking window
-	 * @param uid the string id
-	 */
-	public VclDockingWin(String uid) {
-		super(uid);
-	}
-
-
 
 	public VclDockingWin(VclApp app, String id) {
 		super(app, id);

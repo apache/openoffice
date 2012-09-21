@@ -26,7 +26,6 @@ package org.openoffice.test.vcl.widgets;
 import java.awt.Point;
 
 import org.openoffice.test.vcl.client.Constant;
-import org.openoffice.test.vcl.client.SmartId;
 
 /**
  * Proxy to access a VCL window.
@@ -34,12 +33,6 @@ import org.openoffice.test.vcl.client.SmartId;
  */
 public class VclWindow extends VclControl {
 	
-	
-	public VclWindow(String uid) {
-		super(uid);
-	}
-
-
 	public VclWindow(VclApp app, String id) {
 		super(app, id);
 	}

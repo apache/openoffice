@@ -25,22 +25,16 @@ import static org.junit.Assert.*;
 import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
-import java.io.File;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
-import org.openoffice.test.vcl.IDList;
-import org.openoffice.test.vcl.widgets.VclMessageBox;
 
 import testlib.gui.SCTool;
 
 public class ValidityDialogSetting {
-	private static IDList idList = new IDList(new File("./ids"));
-	public static final VclMessageBox ActiveMsgBox = new VclMessageBox(idList.getId("UID_ACTIVE"), "Message on message box.");
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
@@ -93,48 +87,48 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("01/01/08");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A3"));
 
 		SCTool.selectRange("A4");
 		scInputBarInput.activate();
 		typeKeys("03/01/08");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A4"));
 
 		SCTool.selectRange("A5");
 		scInputBarInput.activate();
 		typeKeys("01/02/08");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A5"));
 
 		SCTool.selectRange("B1");
 		scInputBarInput.activate();
 		typeKeys("02/29/08");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B1"));
 
 		SCTool.selectRange("B2");
 		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B2"));
 
 		SCTool.selectRange("B3");
 		scInputBarInput.activate();
 		typeKeys("39448");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B3"));
 	}
 
@@ -164,32 +158,32 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("=1/3");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A2"));
 
 		SCTool.selectRange("A3");
 		scInputBarInput.activate();
 		typeKeys("0.3");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A3"));
 
 		SCTool.selectRange("A4");
 		scInputBarInput.activate();
 		typeKeys("0.333333333");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A4"));
 
 		SCTool.selectRange("B2");
 		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B2"));
 	}
 
@@ -225,16 +219,16 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys(" ");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A4"));
 
 		SCTool.selectRange("A3");
 		scInputBarInput.activate();
 		typeKeys("Testatest");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A3"));
 	}
 
@@ -266,13 +260,13 @@ public class ValidityDialogSetting {
 		SCTool.selectRange("A1");
 		scInputBarInput.activate();
 		typeKeys("testtesttesttest<enter>");
-		ActiveMsgBox.ok();
+		activeMsgBox.ok();
 		assertEquals("testtesttesttest", SCTool.getCellText("A1"));
 
 		SCTool.selectRange("A2");
 		scInputBarInput.activate();
 		typeKeys("sfsafsddddddd<enter>");
-		ActiveMsgBox.cancel();
+		activeMsgBox.cancel();
 		assertEquals("", SCTool.getCellText("A2"));
 
 		SCTool.selectRange("A2");
@@ -320,8 +314,8 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B2"));
 	}
 
@@ -370,40 +364,40 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("03:00:01");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B1"));
 
 		SCTool.selectRange("B2");
 		scInputBarInput.activate();
 		typeKeys("20:59:59");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B2"));
 
 		SCTool.selectRange("B3");
 		scInputBarInput.activate();
 		typeKeys("1.126");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B3"));
 
 		SCTool.selectRange("B4");
 		scInputBarInput.activate();
 		typeKeys("0.874");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B4"));
 
 		SCTool.selectRange("C1");
 		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("C1"));
 
 		SCTool.selectRange("C2");
@@ -416,8 +410,8 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("12:00");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("C3"));
 	}
 
@@ -444,16 +438,16 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("7:30");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("07:30:00 AM", SCTool.getCellText("A1"));
 
 		SCTool.selectRange("A2");
 		scInputBarInput.activate();
 		typeKeys("6:00");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.cancel();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.cancel();
 		assertEquals("", SCTool.getCellText("A2"));
 
 		SCTool.selectRange("A3");
@@ -495,24 +489,24 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("101");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B1"));
 
 		SCTool.selectRange("B2");
 		scInputBarInput.activate();
 		typeKeys("45.5");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("B2"));
 
 		SCTool.selectRange("C1");
 		scInputBarInput.activate();
 		typeKeys("test");
 		typeKeys("<enter>");
-		assertEquals("Invalid value", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("C1"));
 	}
 
@@ -536,10 +530,10 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("13");
 		typeKeys("<enter>");
-		assertEquals("OpenOffice.org Calc", ActiveMsgBox.getCaption());
+		assertEquals("OpenOffice.org Calc", activeMsgBox.getCaption());
 		// assertEquals("Invalid value.",ActiveMsgBox.getMessage()); // Can not
 		// verify in multi-language
-		ActiveMsgBox.ok();
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A1"));
 	}
 
@@ -596,8 +590,8 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("test32");
 		typeKeys("<enter>");
-		assertEquals("Invalid value.", ActiveMsgBox.getMessage());
-		ActiveMsgBox.ok();
+		assertEquals("Invalid value.", activeMsgBox.getMessage());
+		activeMsgBox.ok();
 		assertEquals("", SCTool.getCellText("A1"));
 
 		SCTool.selectRange("B1");

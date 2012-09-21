@@ -33,18 +33,9 @@ import org.openoffice.test.vcl.client.VclHookException;
 public class VclMessageBox extends VclControl {
 
 	private String message = null;
-	
-	public VclMessageBox() {
-		super(Constant.UID_ACTIVE);
-	}
-	
-	public VclMessageBox(String id) {
-		super(id);
-	}
 
-	public VclMessageBox(String id, String msg) {
-		super(id);
-		this.message = msg;
+	public VclMessageBox(VclApp app) {
+		super(app, Constant.UID_ACTIVE);
 	}
 	
 	public VclMessageBox(VclApp app, String id) {

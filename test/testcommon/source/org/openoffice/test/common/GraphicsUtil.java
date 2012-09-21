@@ -52,6 +52,7 @@ public class GraphicsUtil {
 	 */
 	static final double ERR_RANGLE_ELLIPSE = 1;
 	
+	static Robot robot = null;
 	
 	/**
 	 * Load a image file as buffered image
@@ -138,8 +139,11 @@ public class GraphicsUtil {
 	 */
 	public static BufferedImage screenshot(String filename, Rectangle area) {
 		// screen capture
+
 		try {
-			Robot robot = new Robot();
+			if (robot == null)
+				robot = new Robot();
+			
 			if (area == null)
 				area = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
 

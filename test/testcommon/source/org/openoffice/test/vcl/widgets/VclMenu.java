@@ -32,20 +32,10 @@ import org.openoffice.test.vcl.client.Constant;
 public class VclMenu extends VclWidget {
 
 	private VclControl window = null;
-
-	/**
-	 * Construct the popup menu
-	 * 
-	 */
-	public VclMenu() {
-		super();
-	}
-
 	
 	public VclMenu(VclApp app) {
 		super(app);
 	}
-
 
 	/**
 	 * Construct the menu on the given window
@@ -53,8 +43,8 @@ public class VclMenu extends VclWidget {
 	 * @param window
 	 */
 	public VclMenu(VclControl window) {
+		super(window.app);
 		this.window = window;
-		this.app = window.app;
 	}
 
 	/**

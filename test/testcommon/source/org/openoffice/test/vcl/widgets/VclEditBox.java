@@ -30,12 +30,6 @@ import org.openoffice.test.vcl.client.Constant;
  *
  */
 public class VclEditBox extends VclControl {
-
-	
-	public VclEditBox(String id) {
-		super(id);
-	}
-
 	
 	public VclEditBox(VclApp app, String id) {
 		super(app, id);

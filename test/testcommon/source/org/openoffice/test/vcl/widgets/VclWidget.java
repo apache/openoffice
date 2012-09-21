@@ -25,11 +25,6 @@ public class VclWidget {
 
 	protected VclApp app = null;
 
-	public VclWidget() {
-		super();
-		this.app = VclApp.getDefault();
-	}
-	
 	public VclWidget(VclApp app) {
 		super();
 		this.app = app;

@@ -51,72 +51,81 @@ import org.openoffice.test.vcl.widgets.VclWindow;
  */
 public class UIMap {
 	private static IDList idList = new IDList(new File("./hid"));
-
+	
+	public static final OpenOffice aoo = new OpenOffice();
+	
+	static {
+		aoo.setAutomationPort(OpenOffice.DEFAULT_AUTOMATION_PORT);
+		aoo.addArgs("-norestore", "-quickstart=no");
+		aoo.addRegistryModifications("<item oor:path=\"/org.openoffice.Office.Common/Misc\"><prop oor:name=\"UseSystemFileDialog\" oor:op=\"fuse\"><value>false</value></prop></item>",
+				"<item oor:path=\"/org.openoffice.Office.Common/Security/Scripting\"><prop oor:name=\"MacroSecurityLevel\" oor:op=\"fuse\"><value>0</value></prop></item>");
+	}
+	
+	public static final VclApp app = new VclApp(aoo);
+	
 	public static VclEditBox editbox(String id) {
-		return new VclEditBox(idList.getId(id));
+		return new VclEditBox(app, idList.getId(id));
 	}
 
 	public static VclControl control(String id) {
-		return new VclControl(idList.getId(id));
+		return new VclControl(app, idList.getId(id));
 	}
 
 	public static VclWindow window(String id) {
-		return new VclWindow(idList.getId(id));
+		return new VclWindow(app, idList.getId(id));
 	}
 
 	public static VclDialog dialog(String id) {
-		return new VclDialog(idList.getId(id));
+		return new VclDialog(app, idList.getId(id));
 	}
 
 	public static VclTabPage tabpage(String id) {
-		return new VclTabPage(idList.getId(id));
+		return new VclTabPage(app, idList.getId(id));
 	}
 
 	public static VclListBox listbox(String id) {
-		return new VclListBox(idList.getId(id));
+		return new VclListBox(app, idList.getId(id));
 	}
 
 	public static VclComboBox combobox(String id) {
-		return new VclComboBox(idList.getId(id));
+		return new VclComboBox(app, idList.getId(id));
 	}
 
 	public static VclToolBox toolbox(String id) {
-		return new VclToolBox(idList.getId(id));
+		return new VclToolBox(app, idList.getId(id));
 	}
 
 	public static VclButton button(String id) {
-		return new VclButton(idList.getId(id));
+		return new VclButton(app, idList.getId(id));
 	}
 
 	public static VclMessageBox msgbox(String text) {
-		return new VclMessageBox(idList.getId("UID_ACTIVE"), text);
+		return new VclMessageBox(app, idList.getId("UID_ACTIVE"), text);
 	}
 
 	public static VclMenuItem menuItem(String text) {
-		return new VclMenuItem(text);
+		return new VclMenuItem(app, text);
 	}
 
 	public static VclStatusBar statusbar(String id) {
-		return new VclStatusBar(idList.getId(id));
+		return new VclStatusBar(app, idList.getId(id));
 	}
 
 	public static VclField field(String id) {
-		return new VclField(idList.getId(id));
+		return new VclField(app, idList.getId(id));
 	}
 
 	public static VclDockingWin dockingwin(String id) {
-		return new VclDockingWin(idList.getId(id));
+		return new VclDockingWin(app, idList.getId(id));
 	}
 
 	public static VclTreeListBox tree(String id) {
-		return new VclTreeListBox(idList.getId(id));
+		return new VclTreeListBox(app, idList.getId(id));
 	}
 
-	public static final OpenOffice aoo = new OpenOffice(null);
-	public static final VclMessageBox activeMsgBox = new VclMessageBox(Constant.UID_ACTIVE);
-	public static final VclMessageBox msgBox_AdditionalRowsNotSaved = new VclMessageBox(Constant.UID_ACTIVE, "Additional rows were not saved.");
-	public static final VclTabControl activeTabControl = new VclTabControl(Constant.UID_ACTIVE);
-	public static final VclApp app = VclApp.getDefault();
+	public static final VclMessageBox activeMsgBox = new VclMessageBox(app, Constant.UID_ACTIVE);
+	public static final VclMessageBox msgBox_AdditionalRowsNotSaved = new VclMessageBox(app, Constant.UID_ACTIVE, "Additional rows were not saved.");
+	public static final VclTabControl activeTabControl = new VclTabControl(app, Constant.UID_ACTIVE);
 	public static final VclWindow writer = window("SW_HID_EDIT_WIN");
 	public static final VclWindow startcenter = window("FWK_HID_BACKINGWINDOW");
 	public static final VclWindow calc = window("SC_HID_SC_WIN_GRIDWIN");
@@ -502,15 +511,15 @@ public class UIMap {
 	public static final VclField swTableCellSplitNumber = field("cui:NumericField:RID_SVX_SPLITCELLDLG:ED_COUNT");
 	public static final VclButton swTableCellSplitHORZButton = button("cui:ImageRadioButton:RID_SVX_SPLITCELLDLG:RB_HORZ");
 	public static final VclButton swTableCellSplitVERTButton = button("cui:ImageRadioButton:RID_SVX_SPLITCELLDLG:RB_VERT");
-	public static final VclMenuItem swTableSelectRowMenu=new VclMenuItem("Row->Select");
-	public static final VclMenuItem swTableInsertRowMenu=new VclMenuItem("Row->Insert...");
-	public static final VclMenuItem swTableRowHeightMenu=new VclMenuItem("Row->Height...");
-	public static final VclMenuItem swTableRowDleteMenu=new VclMenuItem("Row->Delete");
-	public static final VclMenuItem swTableColumnWidthMenu=new VclMenuItem("Column->Width...");
-	public static final VclMenuItem swTableColumnSelectMenu=new VclMenuItem("Column->Select");
-	public static final VclMenuItem swTableColumnDeleteMenu=new VclMenuItem("Column->Delete");
-	public static final VclMenuItem swTableColumnInsertMenu=new VclMenuItem("Column->Insert...");
-	public static final VclMenuItem swTableCellSplitMenu=new VclMenuItem("Cell->Split...");
+	public static final VclMenuItem swTableSelectRowMenu=menuItem("Row->Select");
+	public static final VclMenuItem swTableInsertRowMenu=menuItem("Row->Insert...");
+	public static final VclMenuItem swTableRowHeightMenu=menuItem("Row->Height...");
+	public static final VclMenuItem swTableRowDleteMenu=menuItem("Row->Delete");
+	public static final VclMenuItem swTableColumnWidthMenu=menuItem("Column->Width...");
+	public static final VclMenuItem swTableColumnSelectMenu=menuItem("Column->Select");
+	public static final VclMenuItem swTableColumnDeleteMenu=menuItem("Column->Delete");
+	public static final VclMenuItem swTableColumnInsertMenu=menuItem("Column->Insert...");
+	public static final VclMenuItem swTableCellSplitMenu=menuItem("Cell->Split...");
 	public static final VclListBox sdTableBACGColorListbox = listbox("cui:ListBox:RID_SVXPAGE_AREA:LB_COLOR");
 	public static final VclTabPage sdTableBACGColorArea = tabpage("CUI_HID_AREA_AREA");
 	public static final VclTabPage sdTableBACGColorsOption = tabpage("CUI_HID_OPTIONS_COLOR");

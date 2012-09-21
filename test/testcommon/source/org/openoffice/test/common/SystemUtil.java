@@ -393,9 +393,9 @@ public class SystemUtil {
 				File file = new File(SCRIPT_TEMP_DIR, "pps.vbs");
 				String contents = "Set wmi=GetObject(\"Winmgmts:\")\n\r"
 						+ "Set pps = wmi.ExecQuery(\"Select * from Win32_PerfFormattedData_PerfProc_Process Where IDProcess='" + processId+"'\")\n\r"
-						+ "WScript.Echo \"pcpu rss\" \n\r"
+						+ "WScript.Echo \"pcpu PrivateBytes WorkingSet HandleCount\" \n\r"
 						+ "For Each pp in pps \n\r"
-						+ "WScript.Echo pp.PercentProcessorTime & \" \" & Round(pp.WorkingSet/1024) \n\r"
+						+ "WScript.Echo pp.PercentProcessorTime & \" \" & Round(pp.PrivateBytes/1024) & \" \" & Round(pp.WorkingSet/1024) & \" \" & pp.HandleCount \n\r"
 						+ "Next";
 //				String contents = "var wmi = GetObject(\"Winmgmts:\");\n"
 //						+ "var pps = new Enumerator(wmi.ExecQuery(\"Select * from Win32_PerfFormattedData_PerfProc_Process Where IDProcess='" + processId+"'\"));\n"
@@ -407,7 +407,7 @@ public class SystemUtil {
 				FileUtil.writeStringToFile(file.getAbsolutePath(), contents);
 				exec(new String[] { "cscript", "//Nologo", file.getAbsolutePath()}, null, null, output, output);
 			} else {
-				exec(new String[] {"ps", "-p", processId ,"-o", "pcpu,rss"}, null, null, output, output);
+				exec(new String[] {"ps", "-p", processId ,"-o", "pcpu,vsz,rss,tty"}, null, null, output, output);
 			}
 			BufferedReader reader = new BufferedReader(new StringReader(output.toString()));
 			String line = null;
@@ -429,7 +429,26 @@ public class SystemUtil {
 					case 1:
 						if (!" ".equals(token)) {
 							// 
+							p.put("vsz", Long.parseLong(token));
+							col++;
+						}
+						break;
+					case 2:
+						if (!" ".equals(token)) {
+							// 
 							p.put("rss", Long.parseLong(token));
+							col++;
+						}
+						break;
+					case 3:
+						if (!" ".equals(token)) {
+							//
+							try {
+								p.put("handles", Long.parseLong(token));
+							} catch (Exception e) {
+								p.put("handles", 0l);
+							}
+							
 							col++;
 						}
 						break;

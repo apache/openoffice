@@ -28,12 +28,6 @@ import org.openoffice.test.vcl.client.Constant;
 
 public class VclListBox extends VclControl  {
 
-	
-	public VclListBox(String id) {
-		super(id);
-	}
-
-	
 	public VclListBox(VclApp app, String id) {
 		super(app, id);
 	}
