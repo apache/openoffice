@@ -25,15 +25,18 @@ import org.openoffice.test.uno.UnoApp;
 
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.beans.XPropertySet;
-import com.sun.star.container.XEnumeration;
-import com.sun.star.container.XEnumerationAccess;
+import com.sun.star.container.XNameAccess;
+import com.sun.star.container.XNameContainer;
 import com.sun.star.container.XNamed;
 import com.sun.star.document.XDocumentInfo;
 import com.sun.star.document.XDocumentInfoSupplier;
 import com.sun.star.frame.XStorable;
 import com.sun.star.io.IOException;
+import com.sun.star.lang.XComponent;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.style.BreakType;
+import com.sun.star.style.XStyle;
+import com.sun.star.style.XStyleFamiliesSupplier;
 import com.sun.star.text.ControlCharacter;
 import com.sun.star.text.XText;
 import com.sun.star.text.XTextContent;
@@ -53,6 +56,10 @@ public class SWUtil {
  		
  	}
  
+	public static void saveAsDoc(XComponent component, String url) throws IOException{
+		XTextDocument document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
+		saveAs(document, "MS Word 97", url);		
+	}
 
 	public static void saveAsODT(XTextDocument document, String url) throws IOException {
  		saveAs(document, "writer8", url);
@@ -183,6 +190,43 @@ public class SWUtil {
 		XPropertySet xps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xcont);
 		Integer pageCount = (Integer) xps.getPropertyValue("PageCount"); 
 		return pageCount.intValue();
+	}	
+	
+	
+	/**
+	 * get specific property value of the default page style
+	 * @param xComponent
+	 * @param propertyName
+	 * @return
+	 * @throws Exception
+	 */
+	public static Object getDefaultPageStyleProperty(XComponent xComponent, String propertyName) throws Exception
+	{
+		XTextDocument textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, xComponent);
+		XStyleFamiliesSupplier xSupplier = (XStyleFamiliesSupplier)UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, textDocument);	     
+        XNameAccess xFamilies = (XNameAccess) UnoRuntime.queryInterface (XNameAccess.class, xSupplier.getStyleFamilies());        
+        XNameContainer xFamily = (XNameContainer) UnoRuntime.queryInterface(XNameContainer.class, xFamilies.getByName("PageStyles"));        
+        XStyle xStyle = (XStyle)UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));     
+        XPropertySet xStyleProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xStyle);  
+        Object propertyValue = xStyleProps.getPropertyValue(propertyName.toString());
+        return propertyValue;       
 	}
 	
+	/**
+	 * set value for specific property of default page style.
+	 * @param xComponent
+	 * @param propertyName
+	 * @param propertyValue
+	 * @throws Exception
+	 */
+	public static void setDefaultPageStyleProperty(XComponent xComponent, String propertyName, Object propertyValue) throws Exception
+	{
+		XTextDocument textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, xComponent);		
+        XStyleFamiliesSupplier xSupplier = (XStyleFamiliesSupplier)UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, textDocument);     
+        XNameAccess xFamilies = (XNameAccess) UnoRuntime.queryInterface (XNameAccess.class, xSupplier.getStyleFamilies());        
+        XNameContainer xFamily = (XNameContainer) UnoRuntime.queryInterface(XNameContainer.class, xFamilies.getByName("PageStyles"));        
+        XStyle xStyle = (XStyle)UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));     
+        XPropertySet xStyleProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xStyle);        
+        xStyleProps.setPropertyValue (propertyName.toString(), propertyValue);
+	}
 }
