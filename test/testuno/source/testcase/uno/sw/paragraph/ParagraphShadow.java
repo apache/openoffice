@@ -39,7 +39,7 @@ public class ParagraphShadow {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph shadow
 	 */	
-	@Test@Ignore //bug120697_paragraph shadow effect lost when save to doc.
+	@Test@Ignore("Bug #120697 - [testUNO patch]paragraph shadow effect lost when save to doc.")
 	public void testParagraphShadow_BottomRight() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -95,7 +95,7 @@ public class ParagraphShadow {
 		assertEquals("assert shadow width",100,shadowFormat_Assert2.ShadowWidth);
 		assertEquals("assert shadow color",0x00FF00FF,shadowFormat_Assert2.Color);
 	}
-	@Test@Ignore //bug120697_paragraph shadow effect lost when save to doc.
+	@Test@Ignore("Bug #120697 - [testUNO patch]paragraph shadow effect lost when save to doc.")
 	public void testParagraphShadow_BottomLeft() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -151,7 +151,7 @@ public class ParagraphShadow {
 		assertEquals("assert shadow width",100,shadowFormat_Assert2.ShadowWidth);
 		assertEquals("assert shadow color",0x00FF00FF,shadowFormat_Assert2.Color);
 	}
-	@Test@Ignore //bug120697_paragraph shadow effect lost when save to doc.
+	@Test@Ignore("Bug #120697 - [testUNO patch]paragraph shadow effect lost when save to doc.")
 	public void testParagraphShadow_TopLeft() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -207,7 +207,7 @@ public class ParagraphShadow {
 		assertEquals("assert shadow width",100,shadowFormat_Assert2.ShadowWidth);
 		assertEquals("assert shadow color",0x00FF00FF,shadowFormat_Assert2.Color);
 	}
-	@Test@Ignore //bug120697_paragraph shadow effect lost when save to doc.
+	@Test@Ignore("Bug #120697 - [testUNO patch]paragraph shadow effect lost when save to doc.")
 	public void testParagraphShadow_TopRight() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

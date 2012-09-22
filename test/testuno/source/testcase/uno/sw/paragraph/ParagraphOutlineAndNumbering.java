@@ -36,7 +36,7 @@ public class ParagraphOutlineAndNumbering {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph outline and numbering
 	 */	
-	@Test@Ignore//Bug 120753 - paragraph outline level and numbering style change when save to doc
+	@Test@Ignore("Bug #120753 - [testUNO patch]paragraph outline level and numbering style change when save to doc")
 	public void testOutlineAndNumbering_NumberStyle() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -96,7 +96,7 @@ public class ParagraphOutlineAndNumbering {
 		assertEquals("assert paragraph outline and numbering",(long)4,xCursorProps_Assert_doc.getPropertyValue("ParaLineNumberStartValue"));
 		
 	}
-	@Test@Ignore//Bug 120753 - paragraph outline level and numbering style change when save to doc
+	@Test@Ignore("Bug #120753 - [testUNO patch]paragraph outline level and numbering style change when save to doc")
 	public void testOutlineAndNumbering_ListStyle() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

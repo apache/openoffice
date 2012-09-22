@@ -38,7 +38,7 @@ public class ParagraphBorder {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph border
 	 */	
-	@Test@Ignore //bug120694_the paragraph border line style change when save to doc.
+	@Test@Ignore("Bug #120694 - [testUNO patch]the paragraph border line style change when save to doc.")
 	public void testParagraphBorderSetting() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

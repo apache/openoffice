@@ -41,7 +41,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph graphic bullet align
 	 */	
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_BottomofBaseline() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -116,7 +116,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.BOTTOM,propsRule_assert_doc[15].Value);
 	}
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_CenterofBaseline() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -191,7 +191,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.CENTER,propsRule_assert_doc[15].Value);
 	}
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_TopofBaseline() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -266,7 +266,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.TOP,propsRule_assert_doc[15].Value);
 	}
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_BottomofCharacter() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -341,7 +341,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.CHAR_BOTTOM,propsRule_assert_doc[15].Value);
 	}
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_CenterofCharacter() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -416,7 +416,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.CHAR_CENTER,propsRule_assert_doc[15].Value);
 	}
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_TopofCharacter() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -491,7 +491,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.CHAR_TOP,propsRule_assert_doc[15].Value);
 	}	
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_BottomofLine() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -566,7 +566,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.LINE_BOTTOM,propsRule_assert_doc[15].Value);
 	}
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_CenterofLine() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -641,7 +641,7 @@ public class ParagraphNumberingAndBullet_Graphic_Alignment {
 		assertEquals("assert numbering and bullet","VertOrient",propsRule_assert_doc[15].Name);
 		assertEquals("assert numbering and bullet",VertOrientation.LINE_CENTER,propsRule_assert_doc[15].Value);
 	}
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic_Align_TopofLine() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

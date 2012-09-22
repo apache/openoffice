@@ -31,7 +31,7 @@ public class ParagraphNumberingAndBullet_Numbering {
 
 	@After
 	public void tearDown() throws Exception {
-		//app.close();
+		app.close();
 	}
 	/*
 	 * test paragraph background color
@@ -374,7 +374,7 @@ public class ParagraphNumberingAndBullet_Numbering {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_doc[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ROMAN_UPPER,propsRule_assert_doc[11].Value);
 	}
-	@Test@Ignore("#Bug 120826 - A,B,C numbering bullet will change to A,AA,AAA when save to doc.")
+	@Test@Ignore("Bug #120826 - [testUNO patch]A,B,C numbering bullet will change to A,AA,AAA when save to doc.")
 	public void testNumberingBullet_CHARS_UPPER_LETTER() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -443,7 +443,7 @@ public class ParagraphNumberingAndBullet_Numbering {
 		assertEquals("assert numbering and bullet","Suffix",propsRule_assert_doc[3].Name);
 		assertEquals("assert numbering and bullet",")",propsRule_assert_doc[3].Value);
 	}
-	@Test@Ignore("#Bug 120826 - A,B,C numbering bullet will change to A,AA,AAA when save to doc.")
+	@Test@Ignore("Bug #120826 - [testUNO patch]A,B,C numbering bullet will change to A,AA,AAA when save to doc.")
 	public void testNumberingBullet_CHARS_LOWER_LETTER_Suffix() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -512,7 +512,7 @@ public class ParagraphNumberingAndBullet_Numbering {
 		assertEquals("assert numbering and bullet","Suffix",propsRule_assert_doc[3].Name);
 		assertEquals("assert numbering and bullet",")",propsRule_assert_doc[3].Value);
 	}
-	@Test@Ignore("#Bug 120826 - A,B,C numbering bullet will change to A,AA,AAA when save to doc.")
+	@Test@Ignore("Bug #120826 - [testUNO patch]A,B,C numbering bullet will change to A,AA,AAA when save to doc.")
 	public void testNumberingBullet_CHARS_LOWER_LETTER_Suffix_Prefix() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

@@ -97,7 +97,7 @@ public class ParagraphLineSpacing {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph line spacing
 	 */
-	@Test@Ignore //bug 120647_line spacing leading setting change to at least when save to doc
+	@Test@Ignore("Bug #120647 - [testUNO patch]line spacing leading setting change to at least when save to doc")
 	public void testParagraphLineSpacingLeading() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -280,7 +280,7 @@ public class ParagraphLineSpacing {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph line spacing
 	 */
-	@Test@Ignore //bug 120649_single line spacing change to "at least" of "0.07" when save to doc
+	@Test@Ignore("Bug #120649 - [testUNO patch]single line spacing change to at least of 0.07 when save to doc")
 	public void testParagraphLineSpacingSingle() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

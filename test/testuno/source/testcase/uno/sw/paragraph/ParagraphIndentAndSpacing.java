@@ -97,7 +97,7 @@ public class ParagraphIndentAndSpacing {
 		assertEquals("assert first line indent",4001,xCursorProps_Assert_doc.getPropertyValue("ParaFirstLineIndent"));
 		assertEquals("assert paragraph first line is no autoindent",false,xCursorProps_Assert_doc.getPropertyValue("ParaIsAutoFirstLineIndent"));
 	}
-	@Test@Ignore //bug 120646_the auto indent effect of first line lost when save to doc
+	@Test@Ignore("Bug #120646 - [testUNO patch]the auto indent effect of first line lost when save to doc")
 	public void testParagraphIndent() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

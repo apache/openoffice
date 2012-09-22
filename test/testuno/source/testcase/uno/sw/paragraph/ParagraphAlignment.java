@@ -36,7 +36,7 @@ public class ParagraphAlignment {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph alignment
 	 */
-	@Test@Ignore //bug120636_the expand single word option disable when save to doc
+	@Test@Ignore("Bug #120636 - [testUNO patch]the expand single word option disable when save to doc")
 	public void testParagraphAlignmentJustified() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

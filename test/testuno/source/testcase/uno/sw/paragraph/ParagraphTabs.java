@@ -266,7 +266,7 @@ public class ParagraphTabs {
 		assertEquals("assert paragraph tab setting",5001,paraTabs_assert_doc[0].Position);
 		assertEquals("assert paragraph tab setting",'.',paraTabs_assert_doc[0].DecimalChar);
 	}
-	@Test@Ignore //bug120748_the tabstops character of paragraph change to default when save to doc.
+	@Test@Ignore("Bug #120748 - [testUNO patch]the tabstops character of paragraph change to default when save to doc.")
 	public void ParagraphTabs_Decimal_UserDefineCharacter() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

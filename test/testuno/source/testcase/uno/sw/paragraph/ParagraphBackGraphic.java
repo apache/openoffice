@@ -36,7 +36,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_LeftBottom() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -96,7 +96,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_LeftMiddle() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -156,7 +156,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_LeftTop() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -216,7 +216,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_MiddleBottom() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -276,7 +276,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_MiddleMiddle() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -336,7 +336,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_MiddleTop() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -397,7 +397,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_RightBottom() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -457,7 +457,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_RightMiddle() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -517,7 +517,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_RightTop() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -577,7 +577,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_Area() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
@@ -637,7 +637,7 @@ public class ParagraphBackGraphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph background graphic
 	 */
-	@Test@Ignore //bug120638_graphic background lost when save to doc
+	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_Titled() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document

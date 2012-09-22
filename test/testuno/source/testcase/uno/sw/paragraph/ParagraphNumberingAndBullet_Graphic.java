@@ -41,7 +41,7 @@ public class ParagraphNumberingAndBullet_Graphic {
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph graphic bullet
 	 */	
-	@Test@Ignore("#Bug 120833 - graphic bullet will change to character bullet when save to doc.")
+	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
