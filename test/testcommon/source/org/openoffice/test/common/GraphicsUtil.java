@@ -23,8 +23,10 @@
 
 package org.openoffice.test.common;
 
+import java.awt.AWTException;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -53,6 +55,14 @@ public class GraphicsUtil {
 	static final double ERR_RANGLE_ELLIPSE = 1;
 	
 	static Robot robot = null;
+
+	static {
+		try {
+			robot = new Robot();
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	/**
 	 * Load a image file as buffered image
@@ -106,6 +116,10 @@ public class GraphicsUtil {
 
 	}
 	
+	public static Rectangle getScreenRectangle() {
+		return new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+	}
+	
 	/**
 	 * Get a BufferedImage including the full current screen shot
 	 * @return
@@ -138,23 +152,12 @@ public class GraphicsUtil {
 	 * @param area
 	 */
 	public static BufferedImage screenshot(String filename, Rectangle area) {
-		// screen capture
-
-		try {
-			if (robot == null)
-				robot = new Robot();
-			
-			if (area == null)
-				area = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
-
-			BufferedImage capture = robot.createScreenCapture(area);
-			if (filename != null)
-				storeImage(capture, filename);
-			return capture;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
+		if (area == null)
+			area = getScreenRectangle();
+		BufferedImage capture = robot.createScreenCapture(area);
+		if (filename != null)
+			storeImage(capture, filename);
+		return capture;
 	}
 	
 	
@@ -246,4 +249,139 @@ public class GraphicsUtil {
 		return false;
 	}
 	
+	
+	public static Rectangle getBoundingBox(BufferedImage image, int color) {
+		return getBoundingBox(image, color, true);
+	}
+	
+	public static Rectangle getBoundingBox(BufferedImage image, int color, boolean include) {
+		int w = image.getWidth();
+		int h = image.getHeight();
+		int left=w, top=h, right = -1, bottom = -1;
+		for (int i = 0; i < w; i++) {
+			for (int j = 0; j < h; j++) {
+				if ((color == image.getRGB(i, j)) == include) {
+					if (j < top)
+						top = j;
+					if (j > bottom)
+						bottom = j;
+					if (i < left)
+						left = i;
+					if (i > right)
+						right = i;
+				}
+			}
+			
+			
+		}
+		if (right == -1)
+			return null;
+		return new Rectangle(left, top, right - left + 1, bottom - top + 1);
+	}
+	
+	/**
+	 * Check if the rectangle in screen is filled with the given color
+	 * 
+	 * @param color
+	 * @param rect
+	 * @return
+	 */
+	public static boolean isFilledWith(int color, Rectangle rect) {
+		BufferedImage capture = screenshot(rect);
+		int w = capture.getWidth();
+		int h = capture.getHeight();
+		for (int i = 0; i < w; i++) {
+			for (int j = 0; j < h; j++) {
+				if (color != capture.getRGB(i, j))
+					return false;
+			}
+		}
+
+		return true;
+	}
+	
+	/**
+	 * Find a image on the current screen
+	 * @param image
+	 * @param rect
+	 * @return
+	 */
+	public static Point findImage(BufferedImage image, Rectangle rect) {
+		BufferedImage capture = screenshot(rect);
+		int w = capture.getWidth();
+		int h = capture.getHeight();
+		int iw = image.getWidth();
+		int ih = image.getHeight();
+
+		for (int i = 0; i < w; i++) {
+			out: for (int j = 0; j < h; j++) {
+				for (int m = 0; m < iw; m++) {
+					for (int n = 0; n < ih; n++) {
+						if (image.getRGB(m, n) != capture.getRGB(i + m, j + n))
+							continue out;
+					}
+				}
+				return new Point(i, j);
+			}
+		}
+
+		return null;
+	}
+	
+	/**
+	 * Find a color on the current screen
+	 * @param color
+	 * @param rect
+	 * @return
+	 */
+	public static Point findColor(int color, Rectangle rect) {
+		BufferedImage capture = screenshot(rect);
+		int w = capture.getWidth();
+		int h = capture.getHeight();
+		for (int i = 0; i < w; i++) {
+			for (int j = 0; j < h; j++) {
+				if (color == capture.getRGB(i, j))
+					return new Point(i, j);
+			}
+		}
+		return null;
+	}
+	
+	
+	/**
+	 * Check if two BufferedImages equal
+	 * 
+	 * @param expected
+	 * @param actual
+	 * @return
+	 */
+	public static boolean imageEquals(BufferedImage expected, BufferedImage actual) {
+		if (expected == null || actual == null)
+			return false;
+
+		if (expected.getHeight() != actual.getHeight() || expected.getWidth() != actual.getWidth())
+			return false;
+
+		for (int y = 0; y < expected.getHeight(); ++y) {
+			for (int x = 0; x < expected.getWidth(); ++x) {
+				if (expected.getRGB(x, y) != actual.getRGB(x, y))
+					return false;
+			}
+		}
+
+		return true;
+	}
+
+	/**
+	 * Check if two image files equal
+	 * 
+	 * @param expectedImage
+	 * @param actualImage
+	 * @return
+	 */
+	public static boolean imageEquals(String expectedImage, String actualImage) {
+		BufferedImage expected = loadImage(expectedImage), actual = loadImage(actualImage);
+		return imageEquals(expected, actual);
+	}
+
 }

@@ -25,10 +25,13 @@
 
 package pvt.gui;
 
+import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
 import static org.openoffice.test.vcl.Tester.*;
+import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
+import java.awt.Rectangle;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -36,11 +39,13 @@ import java.util.HashMap;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.Condition;
+import org.openoffice.test.common.GraphicsUtil;
 import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 import org.openoffice.test.common.Testspace;
@@ -63,12 +68,12 @@ public class Benchmark {
 	
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-		File resultFile = Testspace.getFile("output/gui_benchmark.csv");
+		File resultFile = Testspace.getFile("output/pvt_gui_benchmark.csv");
 		resultFile.getParentFile().mkdirs();
 		result = new PrintStream(new FileOutputStream(resultFile));
 		OpenOffice.killAll();
 		
-		result.println("Scenario,Consumed Time,Memory(VSZ),Memory(RSS),Handles(Windows Only)");
+		result.println("Scenario,No,Consumed Time,Memory(VSZ),Memory(RSS),Handles(Windows Only)");
 	}
 	
 	@AfterClass
@@ -85,7 +90,7 @@ public class Benchmark {
 	
 	private void addRecord(int i, long start, long end) {
 		HashMap<String, Object>  perf = getPerfData();
-		result.println(testname.getMethodName() + i + "," + (end - start) + "," + perf.get("vsz") + "," + perf.get("rss") + "," + perf.get("handles"));
+		result.println(testname.getMethodName() + "," + i + "," + (end - start) + "," + perf.get("vsz") + "," + perf.get("rss") + "," + perf.get("handles"));
 	}
 	
 	@Test
@@ -169,125 +174,263 @@ public class Benchmark {
 	}
 	
 	@Test
-	public void loadFinishPlainDoc() {
-		loadFinishTextDocument("pvt_benchmark/sw_plain_120p.doc", "Page 1 / ");
+	public void loadFinishPlainODT() {
+		loadFinish("pvt/plain_200p.odt", "Page 1 / 23[0-9]{1}");
 	}
 	
 	@Test
-	public void loadFinishPlainOdt() {
-		loadFinishTextDocument("pvt_benchmark/sw_plain_120p_odf1.2.odt", "Page 1 / ");
+	public void loadFinishPlainDOC() {
+		loadFinish("pvt/plain_200p.doc", "Page 1 / 23[0-9]{1}");
 	}
 	
 	@Test
-	public void loadFinishComplexDoc() {
-		loadFinishTextDocument("pvt_benchmark/sw_complex_100p.doc", "Page 1 / ");
+	public void loadFinishPlainDOCX() {
+		loadFinish("pvt/plain_200p.docx", "Page 1 / 19[0-9]{1}");
 	}
 	
 	@Test
-	public void loadFinishComplexOdt() {
-		loadFinishTextDocument("pvt_benchmark/sw_complex_100p_odf1.2.odt", "Page 1 / ");
+	public void loadFinishPlainODS() {
+		loadFinish("pvt/plain_11s.ods", "Sheet 1 / 11");
 	}
 	
-	public void loadFinishTextDocument(String file, final String indicator) {
+	@Test
+	public void loadFinishPlainXLS() {
+		loadFinish("pvt/plain_11s.xls", "Sheet 1 / 11");
+	}
+	
+	@Test
+	public void loadFinishPlainXLSX() {
+		loadFinish("pvt/plain_11s.xlsx", "Sheet 1 / 11");
+	}
+	
+	@Test
+	public void loadFinishPlainODP() {
+		loadFinish("pvt/plain_200p.odp", "Slide 1 / 200");
+	}
+	
+	@Test
+	public void loadFinishPlainPPT() {
+		loadFinish("pvt/plain_200p.ppt", "Slide 1 / 200");
+	}
+	
+	@Test
+	public void loadFinishPlainPPTX() {
+		loadFinish("pvt/plain_200p.pptx", "Slide 1 / 200");
+	}
+	
+	@Test
+	@Ignore
+	public void loadFinishComplexDOC() {
+		loadFinish("pvt/sw_complex_100p.doc", "Page 1 / ");
+	}
+	
+	@Test
+	@Ignore
+	public void loadFinishComplexODT() {
+		loadFinish("pvt/sw_complex_100p_odf1.2.odt", "Page 1 / ");
+	}
+	
+	@Test
+	public void loadFinishComplexXLS() {
+		loadFinish("pvt/sc_complex_13sh_4kcell.xls", "Sheet 2 / 13");
+	}
+	
+	@Test
+	public void loadFinishComplexODS() {
+		loadFinish("pvt/sc_complex_13sh_4kcell_new_odf1.2.ods", "Sheet 6 / 13");
+	}
+
+	
+	@Test
+	public void loadFinishComplexODP() {
+		loadFinish("pvt/sd_complex_51p_odf1.2.odp", "Slide 1 / 51");
+	}
+	
+	@Test
+	public void loadFinishComplexPPT() {
+		loadFinish("pvt/sd_complex_51p.ppt", "Slide 1 / 51");
+	}
+	
+	public void loadFinish(String file, final String indicator) {
+		final int openIndicatorIndex = file.matches(".*\\.(odp|ppt|pptx)$") ? 4 : 0;
 		String path = prepareData(file);
 		aoo.kill();
-		aoo.start();
-		startcenter.waitForExistence(120, 1);
+		app.start();
+		startcenter.waitForExistence(10, 1);
+		sleep(2); // Give some seconds to AOO relax. We want data more stable.
 		for (int i = 0; i < 8; i++) {
 			app.dispatch(".uno:Open");
 			filePickerPath.setText(path);
-			filePickerOpen.click();
+			sleep(2);
+			filePickerOpen.click(0.5, 0.5);
 			long start = System.currentTimeMillis();
 			new Condition() {
-	
 				@Override
 				public boolean value() {
-					String text = statusBar.getItemText(0);
-					if (text == null)
+					try {
+						String text = statusBar.getItemText(openIndicatorIndex);
+						return text.matches(indicator);
+					} catch (Exception e) {
 						return false;
-					return text.startsWith(indicator);
+					}
 				}
 				
 			}.waitForTrue("", 120, INTERVAL);
 			long end = System.currentTimeMillis();
 			sleep(2);
 			addRecord(i, start, end);
-			app.dispatch(".uno:CloseDoc");
+			discard();
 		}
 	
 		app.close();
 	}
 	
 	@Test
-	public void loadFinishPlainXLS() {
-		loadFinishTextDocument("pvt_benchmark/sc_plain_4sh_5kcell.xls", "Sheet 2 / 4");
+	public void savePlainDOC() {
+		save("pvt/sw_plain_120p.doc", "Page 1 / ");
 	}
 	
 	@Test
-	public void loadFinishPlainODS() {
-		loadFinishTextDocument("pvt_benchmark/sc_plain_4sh_5kcell_new_odf1.2.ods", "Sheet 1 / 4");
+	public void savePlainODT() {
+		save("pvt/plain_200p.odt", "Page 1 / 23[0-9]{1}");
 	}
 	
 	@Test
-	public void loadFinishComplexXLS() {
-		loadFinishTextDocument("pvt_benchmark/sc_complex_13sh_4kcell.xls", "Sheet 2 / 13");
+	public void saveComplexDOC() {
+		save("pvt/plain_200p.doc", "Page 1 / 23[0-9]{1}");
 	}
 	
 	@Test
-	public void loadFinishComplexODS() {
-		loadFinishTextDocument("pvt_benchmark/sc_complex_13sh_4kcell_new_odf1.2.ods", "Sheet 6 / 13");
-	}
-	
-	
-	@Test
-	public void loadFinishPlainODP() {
-		loadFinishTextDocument("pvt_benchmark/sc_complex_13sh_4kcell_new_odf1.2.ods", "Sheet 6 / 13");
+	public void saveComplexODT() {
+		save("pvt/sw_complex_100p_odf1.2.odt", "Page 1 / ");
 	}
 	
 	@Test
-	public void loadFinishPlainPPT() {
-		loadFinishTextDocument("pvt_benchmark/sc_complex_13sh_4kcell_new_odf1.2.ods", "Sheet 6 / 13");
+	public void savePlainXLS() {
+		save("pvt/plain_11s.xls", "Sheet 1 / 11");
 	}
 	
 	@Test
-	public void loadFinishComplexODP() {
-		loadFinishTextDocument("pvt_benchmark/sc_complex_13sh_4kcell_new_odf1.2.ods", "Sheet 6 / 13");
+	public void savePlainODS() {
+		save("pvt/plain_11s.ods", "Sheet 1 / 11");
 	}
 	
 	@Test
-	public void loadFinishComplexPPT() {
-		loadFinishTextDocument("pvt_benchmark/sc_complex_13sh_4kcell_new_odf1.2.ods", "Sheet 6 / 13");
+	public void saveComplexXLS() {
+		save("pvt/sc_complex_13sh_4kcell.xls", "Sheet 2 / 13");
 	}
 	
-	public void loadFinish(String file, final String indicator) {
-		String path = prepareData(file);
+	@Test
+	public void saveComplexODS() {
+		save("pvt/sc_complex_13sh_4kcell_new_odf1.2.ods", "Sheet 6 / 13");
+	}
+	
+	@Test
+	public void savePlainODP() {
+		save("pvt/plain_200p.odp", "Slide 1 / 200");
+	}
+	
+	@Test
+	public void savePlainPPT() {
+		save("pvt/plain_200p.ppt", "Slide 1 / 200");
+	}
+	
+	@Test
+	public void saveComplexODP() {
+		save("pvt/sd_complex_51p_odf1.2.odp", "Slide 1 / 51");
+	}
+	
+	@Test
+	public void saveComplexPPT() {
+		save("pvt/sd_complex_51p.ppt", "Slide 1 / 51");
+	}
+	
+	public void save(String file, final String openIndicator) {
+		boolean alienFormat = file.matches(".*\\.(doc|xls|ppt|docx|xlsx|pptx)$");
+		final int openIndicatorIndex = file.matches(".*\\.(odp|ppt|pptx)$") ? 4 : 0;
+		final int saveIndicatorIndex = file.matches(".*\\.(odt|doc|docx)$") ? 5 : file.matches(".*\\.(ods|xls|xlsx)$") ? 4 : 2;
 		aoo.kill();
-		aoo.start();
-		startcenter.waitForExistence(120, 1);
+		app.start();
+		String picture = prepareData("image/red_64x64.bmp");
 		for (int i = 0; i < 8; i++) {
-			app.dispatch(".uno:Open");
-			filePickerPath.setText(path);
-			filePickerOpen.click();
-			long start = System.currentTimeMillis();
+			String dir = "temp/file" + i;
+			getFile(dir).mkdirs();
+			open(prepareData(file, dir));
 			new Condition() {
-	
 				@Override
 				public boolean value() {
-					String text = statusBar.getItemText(0);
-					if (text == null)
+					try {
+						String text = statusBar.getItemText(openIndicatorIndex);
+						return text.matches(openIndicator);
+					} catch (Exception e) {
 						return false;
-					return text.startsWith(indicator);
+					}
+				}
+				
+			}.waitForTrue("", 120, 1);
+			sleep(2);
+			insertPicture(picture);
+			sleep(3);
+			assertEquals("File is modified", "*", statusBar.getItemText(saveIndicatorIndex));
+			app.dispatch(".uno:Save");
+			if (alienFormat) {
+				alienFormatDlg.waitForExistence(3, 1);
+				sleep(1);
+				typeKeys("<enter>");
+			}
+			
+			long start = System.currentTimeMillis();
+			new Condition() {
+				@Override
+				public boolean value() {
+					try {
+						String text = statusBar.getItemText(saveIndicatorIndex);
+						return " ".equals(text);
+					} catch (Exception e) {
+						return false;
+					}
 				}
 				
 			}.waitForTrue("", 120, INTERVAL);
 			long end = System.currentTimeMillis();
 			sleep(2);
 			addRecord(i, start, end);
-			app.dispatch(".uno:CloseDoc");
+			close();
 		}
 	
 		app.close();
 	}
 
-	
+	@Test
+	public void slideShow() {
+		aoo.kill();
+		app.start();
+		String path = prepareData("pvt/sd_slideshow.odp");
+		final Rectangle rect = GraphicsUtil.getScreenRectangle();
+		// when slide show is running, top-center area will be filled with green
+		rect.setRect(rect.getCenterX(), 2, 2, 2);
+		for (int i = 0; i < 8; i++) {
+			open(path);
+			impress.waitForExistence(60, 1);
+			sleep(2);
+			assertFalse("Slideshow control exists", slideShow.exists());
+			assertFalse("Slideshow is not started", GraphicsUtil.isFilledWith(0xFF00FF00, rect));
+			typeKeys("<F5>");
+			long start = System.currentTimeMillis();
+			new Condition() {
+				@Override
+				public boolean value() {
+					return GraphicsUtil.isFilledWith(0xFF00FF00, rect);
+				}
+				
+			}.waitForTrue("", 120, INTERVAL);
+			long end = System.currentTimeMillis();
+			sleep(2);
+			addRecord(i, start, end);
+			slideShow.typeKeys("<esc>");
+			sleep(2);
+			close();
+		}
+		app.close();
+	}
 }

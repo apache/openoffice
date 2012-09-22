@@ -22,8 +22,6 @@
 package testlib.gui;
 
 import static org.openoffice.test.common.Testspace.*;
-import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.openoffice.test.common.Condition;
@@ -119,12 +117,12 @@ public class AppTool extends Tester {
 	public static void openStartcenter() {
 		if (startcenter.exists())
 			return;
-
+	
 		if (SystemUtil.isMac()) {
 			SystemUtil.execScript("osascript -e 'tell app \"OpenOffice.org\" to activate'");
 			typeKeys("<command n>");
 		}
-
+	
 	}
 
 	public static String copyAll() {
@@ -141,14 +139,11 @@ public class AppTool extends Tester {
 	public static void submitOpenDlg(String path) {
 		filePickerPath.setText(path);
 		filePickerOpen.click();
-		sleep(1);
 	}
 
 	public static void submitSaveDlg(String path) {
 		fileSavePath.setText(path);
-
 		String extName = FileUtil.getFileExtName(path).toLowerCase();
-
 		String[] filters = fileSaveFileType.getItemsText();
 		int i = 0;
 		for (; i < filters.length; i++) {
@@ -164,7 +159,6 @@ public class AppTool extends Tester {
 
 		fileSaveFileType.select(i);
 		fileSaveSave.click();
-		sleep(1);
 	}
 
 	public static void submitSaveDlg(String path, String ext) {
@@ -185,7 +179,6 @@ public class AppTool extends Tester {
 				throw new RuntimeException("Can't find the supported doc format!");
 		}
 		fileSaveFileType.click();
-		sleep(1);
 	}
 
 	public static void handleBlocker(final VclWindow... windows) {
@@ -230,5 +223,10 @@ public class AppTool extends Tester {
 			}
 
 		}.waitForTrue("Time out wait window to be active.", 120, 2);
+	}
+	
+	public static void insertPicture(String path) {
+		app.dispatch(".uno:InsertGraphic");
+		submitOpenDlg(getPath(path));
 	}
 }

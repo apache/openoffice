@@ -539,4 +539,5 @@ public class UIMap {
 	public static final VclTreeListBox runMacroDlgCategories = tree("CUI_HID_SELECTOR_CATEGORIES");
 	public static final VclTreeListBox runMacroDlgCommands = tree("CUI_HID_SELECTOR_COMMANDS");
 	
+	public static final VclButton standardBarSave = button(".uno:Save");
 }

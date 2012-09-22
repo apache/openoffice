@@ -271,8 +271,11 @@ public class VclControl extends VclWidget {
 	public boolean exists() {
 		if (!app.exists())
 			return false;
-		
-		return (Boolean) invoke(Constant.M_Exists);
+		try {
+			return (Boolean) invoke(Constant.M_Exists);
+		} catch (Exception e) {
+			return false;
+		}
 	}
 
 	public void focus() {
