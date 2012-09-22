@@ -640,6 +640,22 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static XChartDocument createChart(XSpreadsheet xSpreadsheet, Rectangle rec, CellRangeAddress[] dataRangeAddress, String chartName) throws Exception {
+		
+		return createChart(xSpreadsheet, rec, dataRangeAddress, chartName, true, false);
+	}
+	
+	/**
+	 * Create a spreadsheet chart with data in a specific cell range with column/row label enable/not.
+	 * @param xSpreadsheet
+	 * @param rec    a rectangle shape object
+	 * @param dataRangeAddress    the CellRangeAddress array of chart data source
+	 * @param chartName
+	 * @param hasColumnLabel  
+	 * @param hasRowLabel
+	 * @return
+	 * @throws Exception
+	 */
+	public static XChartDocument createChart(XSpreadsheet xSpreadsheet, Rectangle rec, CellRangeAddress[] dataRangeAddress, String chartName, Boolean hasColumnLabel, Boolean hasRowLabel) throws Exception {
 		XChartDocument xChartDocument = null;
 		XTableChartsSupplier xTChartSupplier = 
 				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
@@ -648,7 +664,7 @@ public class SCUtil {
 				(XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
 		if (xNameAccess != null && !xNameAccess.hasByName(chartName)) {
 			
-			xTableCharts.addNewByName(chartName, rec, dataRangeAddress, true, false);
+			xTableCharts.addNewByName(chartName, rec, dataRangeAddress, hasColumnLabel, hasRowLabel);
 			XTableChart xTableChart = (XTableChart) UnoRuntime.queryInterface(
 					XTableChart.class, xNameAccess.getByName(chartName));
 			XEmbeddedObjectSupplier xEmbeddedObjectSupplier = (XEmbeddedObjectSupplier) UnoRuntime.queryInterface(
@@ -718,7 +734,6 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static String[] getChartNameList(XSpreadsheet xSpreadsheet) throws Exception {
-		XChartDocument xChartDocument = null;
 		XTableChartsSupplier xTChartSupplier = 
 				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
 		XTableCharts xTableCharts = xTChartSupplier.getCharts();
