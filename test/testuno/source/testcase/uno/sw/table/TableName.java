@@ -41,7 +41,7 @@ public class TableName {
 	 * 3.save to odt/doc,close it and reopen new saved document
 	 * 4.check the table name
 	 */
-	@Test@Ignore //bug120739_the table name change to default name when save to doc.
+	@Test@Ignore("Bug #120739 - [testUNO patch]the table name change to default name when save to doc.")
 	public void testtableName() throws Exception {
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();

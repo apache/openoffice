@@ -30,7 +30,7 @@ public class CharacterStrikeThrough {
 		app.close();
 	}
 
-	@Test@Ignore //bug 120656_bold,"/","X" strike through change to single when save to doc
+	@Test@Ignore("Bug #120656 - [testUNO patch]bold,/,X strike through change to single when save to doc")
 	public void testCharacterStrikeThroughSetting() throws Exception {
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();

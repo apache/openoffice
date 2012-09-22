@@ -29,7 +29,7 @@ public class CharacterUnderline {
 	public void tearDown() throws Exception {
 		app.close();
 	}
-	@Test@Ignore //bug120657_underline color lost and individual words option disable when save to doc
+	@Test@Ignore("Bug #120657 - [testUNO patch]underline color lost and individual words option disable when save to doc")
 	public void testCharacterUnderlineSetting() throws Exception {
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();

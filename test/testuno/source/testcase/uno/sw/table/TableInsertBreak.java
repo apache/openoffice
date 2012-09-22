@@ -32,7 +32,7 @@ public class TableInsertBreak {
 	public void tearDown() throws Exception {
 		app.close();
 	}
-	@Test@Ignore //bug120719
+	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertPage_BeforeBreak_Split_KeepTogether() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -96,7 +96,7 @@ public class TableInsertBreak {
 		assertEquals("assert table split",false,xCursorProps_Assert_doc.getPropertyValue("Split"));
 		assertEquals("assert table keep_together",true,xCursorProps_Assert_doc.getPropertyValue("KeepTogether"));
 	}
-	@Test@Ignore //bug 120719
+	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertPage_AfterBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -152,7 +152,7 @@ public class TableInsertBreak {
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_AFTER,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 	}
-	@Test@Ignore //bug 120719
+	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertColumn_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -207,7 +207,7 @@ public class TableInsertBreak {
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.COLUMN_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 	}
-	@Test@Ignore //bug 120719
+	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertColumn_AfterBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -262,7 +262,7 @@ public class TableInsertBreak {
 		//verify table break
 		assertEquals("assert table break",com.sun.star.style.BreakType.COLUMN_AFTER,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 	}
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertPage_Endnote_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -323,7 +323,7 @@ public class TableInsertBreak {
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_doc.getPropertyValue("PageNumberOffset"));
 	}
 
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Envelop_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -444,7 +444,7 @@ public class TableInsertBreak {
 		assertEquals("assert paragraph break","First Page",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_doc.getPropertyValue("PageNumberOffset"));
 	}
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Footnote_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -504,7 +504,7 @@ public class TableInsertBreak {
 		assertEquals("assert paragraph break","Footnote",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_doc.getPropertyValue("PageNumberOffset"));
 	}
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_HTML_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -564,7 +564,7 @@ public class TableInsertBreak {
 		assertEquals("assert paragraph break","HTML",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_doc.getPropertyValue("PageNumberOffset"));
 	}
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Index_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -624,7 +624,7 @@ public class TableInsertBreak {
 		assertEquals("assert paragraph break","Index",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_doc.getPropertyValue("PageNumberOffset"));
 	}
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Landscape_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -684,7 +684,7 @@ public class TableInsertBreak {
 		assertEquals("assert paragraph break","Landscape",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_doc.getPropertyValue("PageNumberOffset"));
 	}
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_LeftPage_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -744,7 +744,7 @@ public class TableInsertBreak {
 		assertEquals("assert paragraph break","Left Page",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_doc.getPropertyValue("PageNumberOffset"));
 	}
-	@Test@Ignore //bug120721
+	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_RightPage_BeforeBreak() throws Exception {
 
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));

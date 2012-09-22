@@ -29,7 +29,7 @@ public class CharacterEmphasis {
 	public void tearDown() throws Exception {
 		app.close();
 	}
-	@Test@Ignore //bug120657_charmode change to disable from enable when save to doc.
+	@Test@Ignore("Bug #120657 - [testUNO patch]charmode change to disable from enable when save to doc.")
 	public void testCharacterEmphasisSetting() throws Exception {
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();

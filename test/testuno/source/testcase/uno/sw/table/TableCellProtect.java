@@ -41,7 +41,7 @@ public class TableCellProtect {
 	 * 3.save to odt/doc,close it and reopen new saved document
 	 * 4.check the table cell protect setting
 	 */
-	@Test@Ignore //bug120745_table cell protect effect lost when save to doc.
+	@Test@Ignore("Bug #120745 - [testUNO patch]table cell protect effect lost when save to doc.")
 	public void testtableBorderSpacingtoContent() throws Exception {
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();

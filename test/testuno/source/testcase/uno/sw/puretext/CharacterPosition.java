@@ -78,7 +78,7 @@ public class CharacterPosition {
 		assertEquals("assert character position",(short)29,xCursorProps_assert_doc.getPropertyValue("CharEscapement"));
 		assertEquals("assert character position",(byte)50,xCursorProps_assert_odt.getPropertyValue("CharEscapementHeight"));
 	}
-	@Test@Ignore //bug120674_the lower and relative font size value of subscript change when save to doc.
+	@Test@Ignore("Bug #120674 - [testUNO patch]the lower and relative font size value of subscript change when save to doc.")
 	public void testCharacterSubscriptSetting() throws Exception {
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
