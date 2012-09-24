@@ -32,23 +32,19 @@ import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.awt.Rectangle;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.util.HashMap;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.Condition;
+import org.openoffice.test.common.DataSheet;
 import org.openoffice.test.common.GraphicsUtil;
 import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
-import org.openoffice.test.common.Testspace;
 
 
 public class Benchmark {
@@ -58,9 +54,9 @@ public class Benchmark {
 	@Rule
 	public TestName testname = new TestName();
 	
-	private static PrintStream result;
+	private static DataSheet result;
 	
-	private static final double INTERVAL = 0.01;
+	private static final double INTERVAL = 0.1;
 	
 	public Benchmark() {
 
@@ -68,17 +64,13 @@ public class Benchmark {
 	
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-		File resultFile = Testspace.getFile("output/pvt_gui_benchmark.csv");
-		resultFile.getParentFile().mkdirs();
-		result = new PrintStream(new FileOutputStream(resultFile));
+		result = new DataSheet(getFile("output/pvt_gui_benchmark.xml"), "benckmark");
 		OpenOffice.killAll();
-		
-		result.println("Scenario,No,Consumed Time,Memory(VSZ),Memory(RSS),Handles(Windows Only)");
+		result.addRow("Scenario", "No", "Consumed Time", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 	
 	@AfterClass
 	public static void afterClass() throws Exception {
-		result.close();
 		app.close();
 	}
 	
@@ -90,7 +82,7 @@ public class Benchmark {
 	
 	private void addRecord(int i, long start, long end) {
 		HashMap<String, Object>  perf = getPerfData();
-		result.println(testname.getMethodName() + "," + i + "," + (end - start) + "," + perf.get("vsz") + "," + perf.get("rss") + "," + perf.get("handles"));
+		result.addRow(testname.getMethodName(), i, (end - start), perf.get("vsz"), perf.get("rss"), perf.get("handles"));
 	}
 	
 	@Test
@@ -180,7 +172,7 @@ public class Benchmark {
 	
 	@Test
 	public void loadFinishPlainDOC() {
-		loadFinish("pvt/plain_200p.doc", "Page 1 / 23[0-9]{1}");
+		loadFinish("pvt/plain_50p.doc", "Page i / 5[0-9]{1}");
 	}
 	
 	@Test
@@ -219,15 +211,13 @@ public class Benchmark {
 	}
 	
 	@Test
-	@Ignore
 	public void loadFinishComplexDOC() {
-		loadFinish("pvt/sw_complex_100p.doc", "Page 1 / ");
+		loadFinish("pvt/complex_300p.doc", "Page 1 / 3[0-9]{2}");
 	}
 	
 	@Test
-	@Ignore
 	public void loadFinishComplexODT() {
-		loadFinish("pvt/sw_complex_100p_odf1.2.odt", "Page 1 / ");
+		loadFinish("pvt/complex_800p.odt", "Page 1 / 8[0-9]{2}");
 	}
 	
 	@Test
@@ -287,7 +277,7 @@ public class Benchmark {
 	
 	@Test
 	public void savePlainDOC() {
-		save("pvt/sw_plain_120p.doc", "Page 1 / ");
+		save("pvt/plain_50p.doc", "Page i / 5[0-9]{1}");
 	}
 	
 	@Test
@@ -297,12 +287,12 @@ public class Benchmark {
 	
 	@Test
 	public void saveComplexDOC() {
-		save("pvt/plain_200p.doc", "Page 1 / 23[0-9]{1}");
+		save("pvt/complex_300p.doc", "Page 1 / 3[0-9]{2}");
 	}
 	
 	@Test
 	public void saveComplexODT() {
-		save("pvt/sw_complex_100p_odf1.2.odt", "Page 1 / ");
+		save("pvt/complex_800p.odt", "Page 1 / 8[0-9]{2}");
 	}
 	
 	@Test
