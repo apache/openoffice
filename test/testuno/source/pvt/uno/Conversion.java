@@ -24,8 +24,6 @@ package pvt.uno;
 import static org.openoffice.test.common.Testspace.*;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -35,13 +33,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openoffice.test.OpenOffice;
+import org.openoffice.test.common.DataSheet;
 import org.openoffice.test.common.FileProvider;
 import org.openoffice.test.common.FileProvider.FileFilter;
 import org.openoffice.test.common.FileProvider.FileRepeat;
 import org.openoffice.test.common.FileProvider.FileRepos;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
-import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
 
 import com.sun.star.beans.PropertyValue;
@@ -60,42 +58,41 @@ public class Conversion {
 	@FileRepos
 	public static String repos = System.getProperty("conversion.repos", getDataPath("conversion_pvt"));
 	@FileFilter
-	public static String filter = System.getProperty("conversion.filter", "-f .*\\.((doc)|(dot)|(odt)|(ott))$ writer_pdf_Export pdf " 
-			+ "-f .*\\.((xls)|(xlt)|(ods)|(ots))$ calc_pdf_Export pdf "
-			+ "-f .*\\.((ppt)|(ppt)|(odp)|(otp))$ impress_pdf_Export pdf " 
-			+ "-f .*\\.((doc)|(dot)|(docx)|(docm)|(dotx)|(dotm))$ writer8 odt "
-			+ "-f .*\\.((xls)|(xlt)|(xlsx)|(xltx)|(xlsm)|(xltm))$ calc8 ods " 
-			+ "-f .*\\.((ppt)|(pot)|(pptx)|(pptm)|(potm)|(potx))$ impress8 odp "
-			+ "-f .*\\.((odt)|(ott))$ 'MS Word 97' doc " 
-			+ "-f .*\\.((ods)|(ots))$ 'MS Excel 97' xls " 
-			+ "-f .*\\.((odp)|(otp))$ 'MS PowerPoint 97' ppt");
+	public static String filter = System.getProperty("conversion.filter", 
+			  "-f .*(doc|dot|odt|ott)$ writer_pdf_Export pdf " 
+			+ "-f .*(xls|xlt|ods|ots)$ calc_pdf_Export pdf "
+			+ "-f .*(ppt|ppt|odp|otp)$ impress_pdf_Export pdf " 
+			+ "-f .*(doc|dot|docx|docm|dotx|dotm)$ writer8 odt "
+			+ "-f .*(xls|xlt|xlsx|xltx|xlsm|xltm)$ calc8 ods " 
+			+ "-f .*(ppt|pot|pptx|pptm|potm|potx)$ impress8 odp "
+			+ "-f .*(odt|ott)$ 'MS Word 97' doc " 
+			+ "-f .*(ods|ots)$ 'MS Excel 97' xls " 
+			+ "-f .*(odp|otp)$ 'MS PowerPoint 97' ppt");
 
 	@FileRepeat
 	public static int repeat = Integer.parseInt(System.getProperty("conversion.repeat", "8"));
 	
 	public static String clean = System.getProperty("conversion.clean", "file");
 
-	private static UnoApp app = new UnoApp();
+	private static OpenOffice aoo = new OpenOffice();
 	
-	private static PrintStream result;
+	private static UnoApp app = null;
+	
+	private static DataSheet result;
 	
 	private static int counter = 0;
 	
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-		//Disable automation
-		OpenOffice.getDefault().setAutomationPort(-1);
-		OpenOffice.getDefault().addArgs("-invisible", "-conversionmode", "-headless", "-hidemenu");
-
-		File resultFile = Testspace.getFile("output/conversion.csv");
-		resultFile.getParentFile().mkdirs();
-		result = new PrintStream(new FileOutputStream(resultFile));
-		result.println("File,Scenario,File Size,Time Consumed After Closing,Time Consumed After Saving,Time Consumed After Loading");
+		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
+		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu");
+	    app = new UnoApp(aoo);
+		result = new DataSheet(getFile("output/pvt_uno_conversion.xml"), "conversion");
+		result.addRow("File","Scenario","File Size","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
 	}
 	
 	@AfterClass
 	public static void afterClass() throws Exception {
-		result.close();
 		app.close();
 	}
 	
@@ -139,7 +136,7 @@ public class Conversion {
 	
 	@After
 	public void after() throws Exception{
-		result.println(sourceFileId + "," + scenario + "," + sourceFile.length() + "," + closeTime + "," + saveTime + "," + loadTime);
+		result.addRow(sourceFileId, scenario, sourceFile.length(), closeTime, saveTime, loadTime);
 		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
 		if (closeTime < 0) {
 			app.close();
