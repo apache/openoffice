@@ -31,7 +31,9 @@ import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import java.awt.Rectangle;
+import java.io.File;
 
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -55,12 +57,33 @@ public class BasicFunctionTest {
 		app.clean();
 	}
 
+	@AfterClass
+	public static void afterClass() throws Exception {
+		app.close();
+	}
+	
 	@Before
 	public void before() {
 		app.close();
 		app.start();
 	}
 
+	@Test
+	public void smokeTest() {
+		File smoketestOutput = new File(aoo.getUserInstallation(), "user/temp");
+		prepareData("TestExtension.oxt");
+		// Open sample file smoketestdoc.sxw
+		open(prepareData("smoketestdoc.sxw"));
+		writer.waitForEnabled(10, 2);
+		// Run test cases
+		app.dispatch("vnd.sun.star.script:Standard.Global.StartTestWithDefaultOptions?language=Basic&location=document", 120);
+		String smoketestlog = FileUtil.readFileAsString(new File(smoketestOutput, "smoketest.log"));
+		String testclosurelog = FileUtil.readFileAsString(new File(smoketestOutput, "testclosure.log"));
+		log.info(smoketestlog + "\n" + testclosurelog);
+		assertTrue("No Error", !smoketestlog.contains("error") && !testclosurelog.contains("error"));
+
+	}
+	
 	@Test
 	public void testExportAsPDF() throws Exception {
 		String file = prepareData("bvt/pdf.odt");

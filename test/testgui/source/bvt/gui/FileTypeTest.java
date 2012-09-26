@@ -55,7 +55,12 @@ public class FileTypeTest {
 	public static void beforeClass() throws Exception {
 		app.clean();
 	}
-
+	
+	@AfterClass
+	public static void afterClass() throws Exception {
+		app.close();
+	}
+	
 	@Before
 	public void before() {
 		app.close();
