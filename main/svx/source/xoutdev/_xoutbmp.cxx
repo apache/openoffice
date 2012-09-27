@@ -343,43 +343,74 @@ sal_uInt16 XOutBitmap::WriteGraphic( const Graphic& rGraphic, String& rFileName,
             aURL.setBase( aName );
 		}
 
-		if( ( nFlags & XOUTBMP_USE_NATIVE_IF_POSSIBLE ) &&
-			!( nFlags & XOUTBMP_MIRROR_HORZ ) &&
-			!( nFlags & XOUTBMP_MIRROR_VERT ) &&
-			( rGraphic.GetType() != GRAPHIC_GDIMETAFILE ) && rGraphic.IsLink() )
+        // #121128# use shortcut to write SVG data in original form (if possible)
+        const SvgDataPtr aSvgDataPtr(rGraphic.getSvgData());
+
+        if(aSvgDataPtr.get() 
+            && aSvgDataPtr->getSvgDataArrayLength()
+            && rFilterName.EqualsIgnoreCaseAscii("svg"))
+        {
+            if(!(nFlags & XOUTBMP_DONT_ADD_EXTENSION))
+            {
+                aURL.setExtension(rFilterName);
+            }
+
+            rFileName = aURL.GetMainURL(INetURLObject::NO_DECODE);
+            SfxMedium aMedium(aURL.GetMainURL(INetURLObject::NO_DECODE), STREAM_WRITE|STREAM_SHARE_DENYNONE|STREAM_TRUNC, true);
+            SvStream* pOStm = aMedium.GetOutStream();
+
+            if(pOStm)
+            {
+                pOStm->Write(aSvgDataPtr->getSvgDataArray().get(), aSvgDataPtr->getSvgDataArrayLength());
+                aMedium.Commit();
+
+                if(!aMedium.GetError())
+                {
+                    nErr = GRFILTER_OK;
+                }
+            }
+        }
+
+		if( GRFILTER_OK != nErr )
 		{
-			// try to write native link
-			const GfxLink aGfxLink( ( (Graphic&) rGraphic ).GetLink() );
+		    if( ( nFlags & XOUTBMP_USE_NATIVE_IF_POSSIBLE ) &&
+			    !( nFlags & XOUTBMP_MIRROR_HORZ ) &&
+			    !( nFlags & XOUTBMP_MIRROR_VERT ) &&
+			    ( rGraphic.GetType() != GRAPHIC_GDIMETAFILE ) && rGraphic.IsLink() )
+		    {
+			    // try to write native link
+			    const GfxLink aGfxLink( ( (Graphic&) rGraphic ).GetLink() );
 
-			switch( aGfxLink.GetType() )
-			{
-				case( GFX_LINK_TYPE_NATIVE_GIF ): aExt = FORMAT_GIF; break;
-				case( GFX_LINK_TYPE_NATIVE_JPG ): aExt = FORMAT_JPG; break;
-				case( GFX_LINK_TYPE_NATIVE_PNG ): aExt = FORMAT_PNG; break;
+			    switch( aGfxLink.GetType() )
+			    {
+				    case( GFX_LINK_TYPE_NATIVE_GIF ): aExt = FORMAT_GIF; break;
+				    case( GFX_LINK_TYPE_NATIVE_JPG ): aExt = FORMAT_JPG; break;
+				    case( GFX_LINK_TYPE_NATIVE_PNG ): aExt = FORMAT_PNG; break;
 
-				default:
-				break;
-			}
+				    default:
+				    break;
+			    }
 
-			if( aExt.Len() )
-			{
-                if( 0 == (nFlags & XOUTBMP_DONT_ADD_EXTENSION))
-                    aURL.setExtension( aExt );
-				rFileName = aURL.GetMainURL( INetURLObject::NO_DECODE );
+			    if( aExt.Len() )
+			    {
+                    if( 0 == (nFlags & XOUTBMP_DONT_ADD_EXTENSION))
+                        aURL.setExtension( aExt );
+				    rFileName = aURL.GetMainURL( INetURLObject::NO_DECODE );
 
-				SfxMedium	aMedium( aURL.GetMainURL( INetURLObject::NO_DECODE ), STREAM_WRITE | STREAM_SHARE_DENYNONE | STREAM_TRUNC, sal_True );
-				SvStream*	pOStm = aMedium.GetOutStream();
+				    SfxMedium	aMedium( aURL.GetMainURL( INetURLObject::NO_DECODE ), STREAM_WRITE | STREAM_SHARE_DENYNONE | STREAM_TRUNC, sal_True );
+				    SvStream*	pOStm = aMedium.GetOutStream();
 
-				if( pOStm && aGfxLink.GetDataSize() && aGfxLink.GetData() )
-				{
-					pOStm->Write( aGfxLink.GetData(), aGfxLink.GetDataSize() );
-					aMedium.Commit();
+				    if( pOStm && aGfxLink.GetDataSize() && aGfxLink.GetData() )
+				    {
+					    pOStm->Write( aGfxLink.GetData(), aGfxLink.GetDataSize() );
+					    aMedium.Commit();
 
-					if( !aMedium.GetError() )
-						nErr = GRFILTER_OK;
-				}
-			}
-		}
+					    if( !aMedium.GetError() )
+						    nErr = GRFILTER_OK;
+				    }
+			    }
+		    }
+        }
 
 		if( GRFILTER_OK != nErr )
 		{
