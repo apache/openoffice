@@ -26,6 +26,7 @@ import java.util.Date;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
 /**
  * The class can be used to output data into an Microsoft Excel 2003 XML file.
@@ -35,14 +36,29 @@ import org.w3c.dom.Element;
 public class DataSheet {
 	private File file = null;
 	private Document doc = null;
-	private Element tableEl = null;
+	private Element workBookEl = null;
 	private static final SimpleDateFormat DATEFORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
-	public DataSheet(File file, String sheetName) {
+	
+	public DataSheet(File file) {
+		this(file, false);
+	}
+	
+	public DataSheet(File file, boolean append) {
 		this.file = file;
-		if (sheetName == null)
-			sheetName = "data";
+		
+		if (append && file.exists()) {
+			doc = FileUtil.parseXML(file.getAbsolutePath());
+			if (doc != null) {
+				NodeList nodes = doc.getElementsByTagName("Workbook");
+				if (nodes.getLength() > 0) {
+					workBookEl = (Element) nodes.item(0);
+					return;
+				}
+			}
+		} 
+		
 		doc = FileUtil.newXML();
-		Element workBookEl = doc.createElement("Workbook");
+		workBookEl = doc.createElement("Workbook");
 		workBookEl.setAttribute("xmlns", "urn:schemas-microsoft-com:office:spreadsheet");
 		workBookEl.setAttribute("xmlns:ss", "urn:schemas-microsoft-com:office:spreadsheet");
 		doc.appendChild(workBookEl);
@@ -54,14 +70,29 @@ public class DataSheet {
 //		Element numberFormatEl = doc.createElement("NumberFormat");
 //		styleEl.appendChild(numberFormatEl);
 //		numberFormatEl.setAttribute("ss:Format", "General Date");
+		
+	}
+	
+	
+	private Element getTableElement(String sheetName) {
+		NodeList nodes = workBookEl.getElementsByTagName("Worksheet");
+		for (int i = 0; i < nodes.getLength(); i++) {
+			Element e = (Element) nodes.item(0);
+			if (sheetName.equals(e.getAttribute("ss:Name"))){
+				return (Element) e.getElementsByTagName("Table").item(0);
+			}
+		}
+		
 		Element worksheetEl = doc.createElement("Worksheet");
 		worksheetEl.setAttribute("ss:Name", sheetName);
 		workBookEl.appendChild(worksheetEl);
-		tableEl = doc.createElement("Table");
+		Element tableEl = doc.createElement("Table");
 		worksheetEl.appendChild(tableEl);
+		return tableEl;
 	}
 	
-	public void addRow(Object... datas) {
+	public void addRow(String sheetName, Object... datas) {
+		Element tableEl = getTableElement(sheetName);
 		Element rowEl = doc.createElement("Row");
 		for (Object o : datas) {
 			Element cellEl = doc.createElement("Cell");
@@ -85,10 +116,5 @@ public class DataSheet {
 		
 		tableEl.appendChild(rowEl);
 		FileUtil.storeXML(doc, file);
-	}
-	
-	public static void main(String... args) {
-		File file = new File("/home/lz/test.xml");
-		new DataSheet(file, "Benchmark").addRow(1,2,"String String", new Date());
 	}
 }

@@ -53,20 +53,21 @@ public class BasicFunctionTest {
 	public Logger log = Logger.getLogger(this);
 
 	@BeforeClass
-	public static void beforeClass() throws Exception {
+	public static void beforeClass() {
 		app.clean();
 	}
 
 	@AfterClass
-	public static void afterClass() throws Exception {
-		app.close();
+	public static void afterClass() {
+		app.stop();
 	}
 	
 	@Before
 	public void before() {
-		app.close();
+		app.stop();
 		app.start();
 	}
+	
 
 	@Test
 	public void smokeTest() {

@@ -28,6 +28,7 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.Set;
@@ -83,8 +84,9 @@ public class OpenOffice {
 	
 	private Properties versionProps = null;
 	
-	private String id = "-"+UUID.randomUUID().toString().replace("-", "");
+	private String id = UUID.randomUUID().toString().replace("-", "");
 	
+	private String processPattern = ".*soffice\\.bin.*" + id + ".*|.*soffice\\.exe.*" + id + ".*-env.*";
 	
 	public OpenOffice() {
 		this(null);
@@ -147,7 +149,7 @@ public class OpenOffice {
 		//
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		System.setProperty("info.app.date", dateFormat.format(new Date(versionFile.lastModified())));
-		addArgs(id);
+		addArgs("-" + id);
 	}
 
 	public static OpenOffice getDefault() {
@@ -349,5 +351,11 @@ public class OpenOffice {
 		return true;
 	}
 	
-	
+	public HashMap<String, Object> getPerfData() {
+		HashMap<String, Object> proccessInfo = SystemUtil.findProcess(processPattern);
+		String pid = (String) proccessInfo.get("pid");
+		if (pid == null)
+			throw new RuntimeException("Can not find performance data");
+		return SystemUtil.getProcessPerfData(pid);
+	}
 }

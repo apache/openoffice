@@ -87,8 +87,8 @@ public class Conversion {
 		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
 		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu");
 	    app = new UnoApp(aoo);
-		result = new DataSheet(getFile("output/pvt_uno_conversion.xml"), "conversion");
-		result.addRow("File","Scenario","File Size","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
+		result = new DataSheet(getFile("output/pvt_uno_conversion.xml"));
+		result.addRow("data", "File","Scenario","File Size","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
 	}
 	
 	@AfterClass
@@ -136,7 +136,7 @@ public class Conversion {
 	
 	@After
 	public void after() throws Exception{
-		result.addRow(sourceFileId, scenario, sourceFile.length(), closeTime, saveTime, loadTime);
+		result.addRow("data", sourceFileId, scenario, sourceFile.length(), closeTime, saveTime, loadTime);
 		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
 		if (closeTime < 0) {
 			app.close();

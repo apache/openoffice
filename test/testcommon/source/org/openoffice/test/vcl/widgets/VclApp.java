@@ -21,8 +21,6 @@
 
 package org.openoffice.test.vcl.widgets;
 
-import static org.openoffice.test.common.SystemUtil.*;
-
 import java.io.IOException;
 
 import org.openoffice.test.OpenOffice;
@@ -40,23 +38,20 @@ import org.openoffice.test.vcl.client.WinInfoReceiver;
  */
 public class VclApp {
 	
-	private static VclApp defaultInstance = null;
-
 	protected CommunicationManager communicationManager = null;
 
 	protected CommandCaller caller = null;
 	
 	protected OpenOffice openOffice = null;
 	
+	/**
+	 * 
+	 * @param openOffice
+	 */
 	public VclApp(OpenOffice openOffice) {
-//		this("localhost", openOffice.getAutomationPort());
-		this("127.0.0.1", openOffice.getAutomationPort());	// In case "localhost" is modified incorrectly
 		this.openOffice = openOffice;
-	}
-	
-	public VclApp(String host, int port) {
-		communicationManager = new CommunicationManager(host, port);
-		caller = new CommandCaller(communicationManager);
+		this.communicationManager = new CommunicationManager("127.0.0.1", openOffice.getAutomationPort());
+		this.caller = new CommandCaller(communicationManager);
 		new Handshaker(communicationManager);
 	}
 
@@ -65,57 +60,71 @@ public class VclApp {
 	}
 	
 	public void clean() {
-		OpenOffice.killAll();
-		if (openOffice != null) 
-			openOffice.cleanUserInstallation();
+		openOffice.kill();
+		openOffice.cleanUserInstallation();
 	}
 	
 	public void start() {
-		if (openOffice != null) {
-			// workaround for crash when connect to automation server too early
-			double sleep = openOffice.getUserInstallation().exists() ? 3 : 10;
-			if (openOffice.start()) 
-				sleep(sleep);
-		}
-		
-		communicationManager.start();
+		openOffice.start();
+		//wait for UI to be ready
+		new Condition() {
+
+			@Override
+			public boolean value() {
+				try {
+					String tree = (String) caller.callCommand(Constant.RC_WinTree);
+					return tree.length() > 0;
+				} catch (Exception e) {
+					return false;
+				}
+				
+			}
+			
+		}.waitForTrue("Can't connect to automation server!", 20, 1);
 	}
 	
-	public void start(boolean isCleanUserInstallation) { 
-		if (isCleanUserInstallation) 
+	public void start(boolean clean) { 
+		if (clean) 
 			clean();
 		start();
 	}
 	
-	public OpenOffice getOpenOffice() {
-		return this.openOffice;
+	/**
+	 * Quit the application, if failed, one exception will be thrown
+	 */
+	public void quit() {
+		dispatch(".uno:Quit");
+		if (openOffice != null) {
+			new Condition() {
+				@Override
+				public boolean value() {
+					return !openOffice.isRunning();
+				}
+
+			}.waitForTrue("OpenOffice can't quit!", 5, 1);
+		}
 	}
 	
-	public void close() {
+	public void stop() {
 		if (openOffice != null) {
 			if (!openOffice.isRunning()) 
 				return;
 		}
 		
 		try {
-			dispatch(".uno:Quit");
+			quit();
 		} catch(Exception e) {
-			
-		}
-
-		if (openOffice != null) {
-			if (!new Condition() {
-				@Override
-				public boolean value() {
-					return !openOffice.isRunning();
-				}
-
-			}.test(5, 1)) {
-				openOffice.kill();
-			}
+			openOffice.kill();
 		}
 		
 		communicationManager.stop();
+	}
+	
+	/**
+	 * @deprecated use stop
+	 */
+	public void close() {
+		stop();
 	}
 	
 	
