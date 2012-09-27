@@ -1170,51 +1170,76 @@ void OutputDevice::AddHatchActions( const PolyPolygon& rPolyPoly, const Hatch& r
 
 void OutputDevice::ImplDrawHatch( const PolyPolygon& rPolyPoly, const Hatch& rHatch, sal_Bool bMtf )
 {
-	Rectangle	aRect( rPolyPoly.GetBoundRect() );
-	const long	nLogPixelWidth = ImplDevicePixelToLogicWidth( 1 );
-	const long	nWidth = ImplDevicePixelToLogicWidth( Max( ImplLogicWidthToDevicePixel( rHatch.GetDistance() ), 3L ) );
-	Point*		pPtBuffer = new Point[ HATCH_MAXPOINTS ];
-	Point		aPt1, aPt2, aEndPt1;
-	Size		aInc;
+    if(rPolyPoly.Count())
+    {
+        // #115630# ImplDrawHatch does not work with beziers included in the polypolygon, take care of that
+        bool bIsCurve(false);
 
-	// Single hatch
-	aRect.Left() -= nLogPixelWidth; aRect.Top() -= nLogPixelWidth; aRect.Right() += nLogPixelWidth; aRect.Bottom() += nLogPixelWidth;
-	ImplCalcHatchValues( aRect, nWidth, rHatch.GetAngle(), aPt1, aPt2, aInc, aEndPt1 );
-	do
-	{
-		ImplDrawHatchLine( Line( aPt1, aPt2 ), rPolyPoly, pPtBuffer, bMtf );
-		aPt1.X() += aInc.Width(); aPt1.Y() += aInc.Height();
-		aPt2.X() += aInc.Width(); aPt2.Y() += aInc.Height();
-	}
-	while( ( aPt1.X() <= aEndPt1.X() ) && ( aPt1.Y() <= aEndPt1.Y() ) );
+        for(sal_uInt16 a(0); !bIsCurve && a < rPolyPoly.Count(); a++)
+        {
+            if(rPolyPoly[a].HasFlags())
+            {
+                bIsCurve = true;
+            }
+        }
 
-	if( ( rHatch.GetStyle() == HATCH_DOUBLE ) || ( rHatch.GetStyle() == HATCH_TRIPLE ) )
-	{
-		// Double hatch
-		ImplCalcHatchValues( aRect, nWidth, rHatch.GetAngle() + 900, aPt1, aPt2, aInc, aEndPt1 );
-		do
-		{
-			ImplDrawHatchLine( Line( aPt1, aPt2 ), rPolyPoly, pPtBuffer, bMtf );
-			aPt1.X() += aInc.Width(); aPt1.Y() += aInc.Height();
-			aPt2.X() += aInc.Width(); aPt2.Y() += aInc.Height();
-		}
-		while( ( aPt1.X() <= aEndPt1.X() ) && ( aPt1.Y() <= aEndPt1.Y() ) );
+        if(bIsCurve)
+        {
+            OSL_ENSURE(false, "ImplDrawHatch does *not* support curves, falling back to AdaptiveSubdivide()...");
+            PolyPolygon aPolyPoly;
 
-		if( rHatch.GetStyle() == HATCH_TRIPLE )
-		{
-			// Triple hatch
-			ImplCalcHatchValues( aRect, nWidth, rHatch.GetAngle() + 450, aPt1, aPt2, aInc, aEndPt1 );
-			do
-			{
-				ImplDrawHatchLine( Line( aPt1, aPt2 ), rPolyPoly, pPtBuffer, bMtf );
-				aPt1.X() += aInc.Width(); aPt1.Y() += aInc.Height();
-				aPt2.X() += aInc.Width(); aPt2.Y() += aInc.Height();
-			}
-			while( ( aPt1.X() <= aEndPt1.X() ) && ( aPt1.Y() <= aEndPt1.Y() ) );
-		}
-	}
+            rPolyPoly.AdaptiveSubdivide(aPolyPoly);
+            ImplDrawHatch(aPolyPoly, rHatch, bMtf);
+        }
+        else
+        {
+	        Rectangle	aRect( rPolyPoly.GetBoundRect() );
+	        const long	nLogPixelWidth = ImplDevicePixelToLogicWidth( 1 );
+	        const long	nWidth = ImplDevicePixelToLogicWidth( Max( ImplLogicWidthToDevicePixel( rHatch.GetDistance() ), 3L ) );
+	        Point*		pPtBuffer = new Point[ HATCH_MAXPOINTS ];
+	        Point		aPt1, aPt2, aEndPt1;
+	        Size		aInc;
 
-	delete[] pPtBuffer;
+	        // Single hatch
+	        aRect.Left() -= nLogPixelWidth; aRect.Top() -= nLogPixelWidth; aRect.Right() += nLogPixelWidth; aRect.Bottom() += nLogPixelWidth;
+	        ImplCalcHatchValues( aRect, nWidth, rHatch.GetAngle(), aPt1, aPt2, aInc, aEndPt1 );
+	        do
+	        {
+		        ImplDrawHatchLine( Line( aPt1, aPt2 ), rPolyPoly, pPtBuffer, bMtf );
+		        aPt1.X() += aInc.Width(); aPt1.Y() += aInc.Height();
+		        aPt2.X() += aInc.Width(); aPt2.Y() += aInc.Height();
+	        }
+	        while( ( aPt1.X() <= aEndPt1.X() ) && ( aPt1.Y() <= aEndPt1.Y() ) );
+
+	        if( ( rHatch.GetStyle() == HATCH_DOUBLE ) || ( rHatch.GetStyle() == HATCH_TRIPLE ) )
+	        {
+		        // Double hatch
+		        ImplCalcHatchValues( aRect, nWidth, rHatch.GetAngle() + 900, aPt1, aPt2, aInc, aEndPt1 );
+		        do
+		        {
+			        ImplDrawHatchLine( Line( aPt1, aPt2 ), rPolyPoly, pPtBuffer, bMtf );
+			        aPt1.X() += aInc.Width(); aPt1.Y() += aInc.Height();
+			        aPt2.X() += aInc.Width(); aPt2.Y() += aInc.Height();
+		        }
+		        while( ( aPt1.X() <= aEndPt1.X() ) && ( aPt1.Y() <= aEndPt1.Y() ) );
+
+		        if( rHatch.GetStyle() == HATCH_TRIPLE )
+		        {
+			        // Triple hatch
+			        ImplCalcHatchValues( aRect, nWidth, rHatch.GetAngle() + 450, aPt1, aPt2, aInc, aEndPt1 );
+			        do
+			        {
+				        ImplDrawHatchLine( Line( aPt1, aPt2 ), rPolyPoly, pPtBuffer, bMtf );
+				        aPt1.X() += aInc.Width(); aPt1.Y() += aInc.Height();
+				        aPt2.X() += aInc.Width(); aPt2.Y() += aInc.Height();
+			        }
+			        while( ( aPt1.X() <= aEndPt1.X() ) && ( aPt1.Y() <= aEndPt1.Y() ) );
+		        }
+	        }
+
+	        delete[] pPtBuffer;
+        }
+    }
 }
 
 // -----------------------------------------------------------------------
