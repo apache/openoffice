@@ -45,7 +45,6 @@ import com.sun.star.beans.PropertyValue;
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.chart.ChartDataCaption;
 import com.sun.star.chart.ChartLegendPosition;
-import com.sun.star.chart.XAxis;
 import com.sun.star.chart.XAxisYSupplier;
 import com.sun.star.chart.XChartData;
 import com.sun.star.chart.XChartDataArray;
@@ -246,7 +245,7 @@ public class ChartData {
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return UnoRuntime.queryInterface(XComponent.class,
+		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 
