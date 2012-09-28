@@ -35,6 +35,7 @@ import org.junit.runner.RunWith;
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.DataSheet;
 import org.openoffice.test.common.FileProvider;
+import org.openoffice.test.common.Testspace;
 import org.openoffice.test.common.FileProvider.FileFilter;
 import org.openoffice.test.common.FileProvider.FileRepeat;
 import org.openoffice.test.common.FileProvider.FileRepos;
@@ -73,6 +74,8 @@ public class Conversion {
 	public static int repeat = Integer.parseInt(System.getProperty("conversion.repeat", "8"));
 	
 	public static String clean = System.getProperty("conversion.clean", "file");
+	
+	public static int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
 
 	private static OpenOffice aoo = new OpenOffice();
 	
@@ -87,6 +90,7 @@ public class Conversion {
 		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
 		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu");
 	    app = new UnoApp(aoo);
+	    Testspace.prepareDataFile("limit_cfg.ini", aoo.getHome().toString()+"/program");	// Move limitation check file to installation dir
 		result = new DataSheet(getFile("output/pvt_uno_conversion.xml"));
 		result.addRow("data", "File","Scenario","File Size","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
 	}
@@ -154,9 +158,6 @@ public class Conversion {
 	
 	@Test(timeout=10 * 60000)
 	public void testConversion() throws Exception {
-
-		int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
-		
 		// convert
 		long start = System.currentTimeMillis();
 		XComponent doc = app.loadDocumentFromURL(sourceFileUrl, 
