@@ -154,13 +154,17 @@ public class Conversion {
 	
 	@Test(timeout=10 * 60000)
 	public void testConversion() throws Exception {
+
+		int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
+		
 		// convert
 		long start = System.currentTimeMillis();
 		XComponent doc = app.loadDocumentFromURL(sourceFileUrl, 
 				propertyValue("Hidden", true),
 				propertyValue("ReadOnly", true),
 				propertyValue("AsyncMode", false),
-				propertyValue("MacroExecutionMode", MacroExecMode.NEVER_EXECUTE));
+				propertyValue("MacroExecutionMode", MacroExecMode.NEVER_EXECUTE),
+				propertyValue("LimitationCheckLevel", nLevelInfo));
 
 		loadTime = System.currentTimeMillis() - start;
 		app.saveDocumentToURL(doc, targetFileUrl, 
