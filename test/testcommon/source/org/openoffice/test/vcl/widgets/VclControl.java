@@ -303,6 +303,7 @@ public class VclControl extends VclWidget {
 		Rectangle rect = getScreenRectangle();
 		if (rect == null)
 			throw new RuntimeException(this + " - screen rectangle could not be computed! Maybe it is not showing!");
+		Tester.sleep(0.1);
 		return rect;
 	}
 

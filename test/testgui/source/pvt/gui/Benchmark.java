@@ -58,7 +58,7 @@ public class Benchmark {
 	
 	private static final double INTERVAL = 0.1; 
 	
-	private static int repeat = 2;
+	private static int repeat = 8;
 	
 	private int i  = 0;
 	
@@ -69,7 +69,7 @@ public class Benchmark {
 	@BeforeClass
 	public static void beforeClass() throws Exception {
 		OpenOffice.killAll();
-		result = new DataSheet(getFile("output/" + Benchmark.class.getName() + ".xml"), true);
+		result = new DataSheet(getFile("output/" + Benchmark.class.getName() + ".xml"));
 		result.addRow("data", "Scenario", "No", "Consumed Time", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 	
@@ -260,7 +260,7 @@ public class Benchmark {
 	
 	@Test
 	public void loadFinishComplexDOCX() {
-		loadFinish("pvt/complex_400p.docx", "Page 1 / 4[0-9]{2}");
+		loadFinish("pvt/complex_400p.docx", "Page 1 / 3[2-9]{2}");
 	}
 	
 	@Test
@@ -270,7 +270,7 @@ public class Benchmark {
 	
 	@Test
 	public void loadFinishComplexODS() {
-		loadFinish("pvt/complex_19s.odt", "Sheet 8 / 19");
+		loadFinish("pvt/complex_19s.ods", "Sheet 8 / 19");
 	}
 	
 	@Test
@@ -414,7 +414,7 @@ public class Benchmark {
 			}.waitForTrue("", 120, 1);
 			sleep(2);
 			insertPicture(picture);
-			sleep(3);
+			sleep(5);
 			assertEquals("File is modified", "*", statusBar.getItemText(saveIndicatorIndex));
 			app.dispatch(".uno:Save");
 			if (alienFormat) {
