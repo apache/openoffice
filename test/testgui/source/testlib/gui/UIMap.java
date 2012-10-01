@@ -56,7 +56,7 @@ public class UIMap {
 	
 	static {
 		aoo.setAutomationPort(OpenOffice.DEFAULT_AUTOMATION_PORT);
-		aoo.addArgs("-norestore", "-quickstart=no");
+		aoo.addArgs("-nofirststartwizard", "-norestore", "-quickstart=no");
 		aoo.addRegistryModifications("<item oor:path=\"/org.openoffice.Office.Common/Misc\"><prop oor:name=\"UseSystemFileDialog\" oor:op=\"fuse\"><value>false</value></prop></item>",
 				"<item oor:path=\"/org.openoffice.Office.Common/Security/Scripting\"><prop oor:name=\"MacroSecurityLevel\" oor:op=\"fuse\"><value>0</value></prop></item>");
 	}

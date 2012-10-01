@@ -66,6 +66,7 @@ public class UnoApp {
 	
 	static {
 		defaultOpenOffice = new OpenOffice();
+		defaultOpenOffice.addArgs("-nofirststartwizard", "-norestore", "-quickstart=no");
 		defaultOpenOffice.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
 	}
 	

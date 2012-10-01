@@ -27,143 +27,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <style>
-body {
-	font: 90% Arial, sans-serif;
-}
-
-tr.Success {
-	color:#118811;
-}
-
-tr.Failure {
-	color:#F27D15;
-}
-
-tr.Ignored {
-	color:#F4C700;
-}
-
-tr.Error {
-	color:#FC130F;
-}
-
-th.Success {
-	background:#118811;
-}
-
-th.Failure {
-	background: #F27D15;
-}
-
-th.Ignored {
-	background:#F4C700;
-}
-
-th.Error {
-	background:#FC130F;
-}
-
-a.unchecked {
-	text-decoration: none;
-	padding: 0px 4px;
-	color: #000000;
-	font-weight: bold;
-	border-bottom: 2px solid #AAAAAA;
-}
-
-a.checked {
-	text-decoration: none;
-	border-bottom: 2px solid #E6820E;
-	padding: 0px 4px;
-	color: #000000;
-	font-weight: bold;
-}
-
-.container {
-	width: 100%;
-	float: left;
-	margin-right: -300px;
-}
-
-.content {
-	margin-right: 300px;
-}
-
-.sidebar {
-	width: 300px;
-	float: right;
-}
-
-table {
-	font-size: 90%;
-	border-collapse:collapse;
-    width:100%;
-    background: white;
-	border: 1px solid #666;
-}
-
-td {
-	border: 1px solid #BBB;
-	padding: 4px;
-	text-align: left;
-	vertical-align: top;
-}
-
-th {
-	background: #DDD;
-	border: 1px solid #BBB;
-	padding: 4px;
-	width: 80px;
-	font-weight: bold;
-	text-align: left;
-}
-
-.pieContainer {
-     height: 100px;
-}
-.pieBackground {
-     background-color: grey;
-     position: absolute;
-     width: 100px;
-     height: 100px;
-     -moz-border-radius: 50px;
-     -webkit-border-radius: 50px;
-     -o-border-radius: 50px;
-     border-radius: 50px;
-     -moz-box-shadow: -1px 1px 3px #000;
-     -webkit-box-shadow: -1px 1px 3px #000;
-     -o-box-shadow: -1px 1px 3px #000;
-     box-shadow: -1px 1px 3px #000;
-} 
-
-.pie {
-         position: absolute;
-         width: 100px;
-         height: 100px;
-         -moz-border-radius: 50px;
-         -webkit-border-radius: 50px;
-         -o-border-radius: 50px;
-         border-radius: 50px;
-         clip: rect(0px, 50px, 100px, 0px);
-    }
-.hold {
-     position: absolute;
-     width: 100px;
-     height: 100px;
-     -moz-border-radius: 50px;
-     -webkit-border-radius: 50px;
-     -o-border-radius: 50px;
-     border-radius: 50px;
-     clip: rect(0px, 100px, 100px, 50px);
-}
-#pieSlice1 .pie {
-     background-color: #1b458b;
-     -webkit-transform:rotate(50deg);
-     -moz-transform:rotate(50deg);
-     -o-transform:rotate(50deg);
-     transform:rotate(50deg);
-}
-
+body,td,div { -webkit-text-size-adjust:none; font-size: 11px; font-family: verdana, arial, sans-serif; padding: 0; margin: 0}
+a.unchecked {text-decoration: none;padding: 0px 4px;color: #000000;font-weight: bold;border-bottom: 2px solid #AAAAAA;}
+a.checked {text-decoration: none;border-bottom: 2px solid #E6820E;padding: 0px 4px;color: #000000;font-weight: bold;}
+.container {width: 100%;float: left;margin-right: -300px;}
+.content {margin-right: 300px;}
+.sidebar {width: 300px;float: right;}
+.header {font-weight: bold; margin: 4px; border-radius: 3px;-moz-border-radius: 4px;-webkit-border-radius: 4px;background: #61B7CF;padding: 4px;}
+table {border-collapse:collapse; border: 1px solid #eeeeee;}
+td {border: 1px solid #eeeeee;padding:4px}
+th {border: 1px solid #eeeeee;background:#f5f5f5; padding:4px;text-align:left}
+tr.Success {color:#118811;}
+tr.Failure {color:#F27D15;}
+tr.Ignored {color:#F4C700;}
+tr.Error {color:#FC130F;}
+th.Success {background:#118811;}
+th.Failure {background: #F27D15;}
+th.Ignored {background:#F4C700;}
+th.Error {background:#FC130F;}
 	</style>
 	<title>JUnit Report</title>
 </head>
@@ -171,9 +52,9 @@ th {
 
 <div class="container">
 	<div class="content">
-		<div style="font-weight: bold;padding: 6px">Information</div>
+		<div class="header">Information</div>
 		<div style="padding: 6px">
-		<table class="infoTable">
+		<table class="infoTable"  width="100%">
 		<tr><th>Build ID</th><td><span id="info.app.buildid">Unknown</span> (<span id="info.app.AllLanguages"></span>)</td></tr>
 		<tr><th>Revision</th><td id="info.app.Revision">Unknown</td></tr>
 		<tr><th>OS</th><td><span id="info.os.name">Unknown</span>-<span id="info.os.version">Unknown</span>-<span id="info.os.arch">Unknown</span></td></tr>
@@ -185,9 +66,9 @@ th {
 </div>
 
 <div class="sidebar">
-	<div style="font-weight: bold;padding: 6px">Summary</div>
+	<div class="header">Summary</div>
 	<div style="padding: 6px">
-	<table class="summaryTable">
+	<table class="summaryTable" width="100%">
 		<tr><th>All</th><td><a href="#" onclick="showAllRecord()" id="AllNo" class="checked" >0</a></td></tr>
 		<tr><th class="Success">Success</th><td><a href="#" onclick="toggleRecord('Success')" class="checked" id="SuccessNo">0</a></td></tr>
 		<tr><th class="Failure">Failure</th><td><a href="#" onclick="toggleRecord('Failure')" class="checked" id="FailureNo">0</a></td></tr>
@@ -196,21 +77,15 @@ th {
 	</table>
 	</div>
 </div>
-<div style="clear:both; padding: 6px;font-weight: bold">
-	<div style="float:left">Record</div>
+<div style="clear:both;" class="header">
+	<div style="float:left" >Record</div>
 	<div style="float:right;">
-	View:
 	</div>
+	<div style="clear:both;"></div>
 </div>
-<div style="clear:both;padding: 6px">
-	<table class="recordTable">
-		<thead>
-			<tr><th>Class</th><th>Method</th><th>Status</th><th width="80%">Message</th><th>Time</th><th>Screenshot</th></tr>
-		</thead>
-		<tbody id="recordTable">
-		</tbody>
-	</table>
+<div style="padding: 6px" id="recordTableContainer">
 </div>
+
 
 <script>
 <xsl:text disable-output-escaping='yes'>
@@ -271,7 +146,8 @@ function refresh() {
 	$('java.runtime.version').innerHTML = props['java.runtime.version'] || 'Unknown';
 	
 	var testcaseEls = $$s(data, 'testcase');
-	var html = '';
+	var html = '<table class="recordTable"><thead><tr><th>Class</th><th>Method</th><th>Status</th><th width="80%">Message</th><th>Time</th><th>Screenshot</th></tr></thead><tbody id="recordTable">';
+
 	for (var i = 0; i < testcaseEls.length; i++){
 		var e = testcaseEls[i], c = null;
 		var status = 'Success', message = '', screenshot= '';
@@ -298,9 +174,10 @@ function refresh() {
 			+ message + '</td><td>' 
 			+ e.getAttribute("time") + '</td><td>' 
 			+ screenshot + '</td></tr>';
+			
 	}
 	
-	$('recordTable').innerHTML = html;
+	$('recordTableContainer').innerHTML = html + '</tbody></table>';
 }
 
 function showAllRecord() {
@@ -342,9 +219,9 @@ function onload() {
 ]]>
 </xsl:text>
 </script>
-<xml id="data" style="display:none">
+<div id="data" style="display:none">
 	<xsl:copy-of select="*" />
-</xml>
+</div>
 </body>
 </html>
 </xsl:template>
