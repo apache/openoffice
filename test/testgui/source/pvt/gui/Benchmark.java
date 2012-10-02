@@ -36,6 +36,7 @@ import java.util.HashMap;
 
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
@@ -78,6 +79,12 @@ public class Benchmark {
 		app.stop();
 	}
 	
+	@Before
+	public void before() {
+		app.start(true);
+		app.quit();
+	}
+	
 	@After
 	public void after() {
 		if (i < repeat)
@@ -92,7 +99,6 @@ public class Benchmark {
 	
 	@Test
 	public void coolStartup() throws Exception {
-		app.stop();
 		for (i = 0; i < repeat; i++) {
 			aoo.cleanUserInstallation();
 			assertFalse("User profile exists", aoo.getUserInstallation().exists());
@@ -108,10 +114,6 @@ public class Benchmark {
 	
 	@Test
 	public void warmStartup() throws Exception {
-		// Make sure we has generated user profile
-		app.start(true);
-		app.quit();
-		
 		for (i = 0; i < repeat; i++) {
 			assertTrue("User profile exists", aoo.getUserInstallation().exists());
 			aoo.start();
@@ -126,9 +128,6 @@ public class Benchmark {
 
 	@Test
 	public void newTextDocument() {
-		app.start(true);
-		app.quit();
-		
 		for (i = 0; i < repeat; i++) {
 			app.start();
 			startCenterWriterButton.click(0.5, 0.5);
@@ -143,8 +142,6 @@ public class Benchmark {
 
 	@Test
 	public void newSpreadsheet() {
-		app.start(true);
-		app.quit();
 		for (i = 0; i < repeat; i++) {
 			app.start();
 			startCenterCalcButton.click(0.5, 0.5);
@@ -159,8 +156,6 @@ public class Benchmark {
 	
 	@Test
 	public void newPresentation() {
-		app.start(true);
-		app.quit();
 		for (i = 0; i < repeat; i++) {
 			app.start();
 			startCenterImpressButton.click(0.5, 0.5);
@@ -176,9 +171,6 @@ public class Benchmark {
 	
 	@Test
 	public void slideShow() {
-		app.start(true);
-		app.quit();
-		
 		String path = prepareData("pvt/slideshow.odp");
 		final Rectangle rect = GraphicsUtil.getScreenRectangle();
 		// when slide show is running, top-center area will be filled with green
@@ -301,7 +293,6 @@ public class Benchmark {
 	public void loadFinish(String file, final String indicator) {
 		final int openIndicatorIndex = file.matches(".*\\.(odp|ppt|pptx)$") ? 4 : 0;
 		String path = prepareData(file);
-		app.stop();
 		for (i = 0; i < repeat; i++) {
 			app.start();
 			app.dispatch(".uno:Open");
@@ -393,7 +384,6 @@ public class Benchmark {
 		boolean alienFormat = file.matches(".*\\.(doc|xls|ppt|docx|xlsx|pptx)$");
 		final int openIndicatorIndex = file.matches(".*\\.(odp|ppt|pptx)$") ? 4 : 0;
 		final int saveIndicatorIndex = file.matches(".*\\.(odt|doc|docx)$") ? 5 : file.matches(".*\\.(ods|xls|xlsx)$") ? 4 : 2;
-		app.stop();
 		String picture = prepareData("image/red_64x64.bmp");
 		for (i = 0; i < repeat; i++) {
 			String dir = "temp/file" + i;
