@@ -43,7 +43,6 @@ import org.openoffice.test.common.FileProvider.FileRepos;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
 import org.openoffice.test.uno.UnoApp;
-
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.document.MacroExecMode;
 import com.sun.star.lang.XComponent;
@@ -78,7 +77,7 @@ public class Conversion {
 	
 	public static int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
 
-	public static int nSleep = Integer.parseInt(System.getProperty("conversion.sleep", "3000"));	// Sleep before loadComponentFromURL and storeToURL
+	public static int nSleep = Integer.parseInt(System.getProperty("conversion.sleep", "3"));	// Sleep before loadComponentFromURL and storeToURL
 	
 	private static OpenOffice aoo = new OpenOffice();
 	
@@ -94,7 +93,7 @@ public class Conversion {
 		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu", "-nofirststartwizard");
 	    app = new UnoApp(aoo);
 	    Testspace.prepareDataFile("limit_cfg.ini", aoo.getHome().toString()+"/program");	// Move limitation check file to installation dir
-		result = new DataSheet(getFile("output/pvt_uno_conversion.xml"));
+		result = new DataSheet(getFile("output/" + Conversion.class.getName()+ ".xml"));
 		result.addRow("data", "File","Scenario","File Size","No","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
 	}
 	
