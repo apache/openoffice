@@ -35,6 +35,7 @@ import org.junit.runner.RunWith;
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.DataSheet;
 import org.openoffice.test.common.FileProvider;
+import org.openoffice.test.common.SystemUtil;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.common.FileProvider.FileFilter;
 import org.openoffice.test.common.FileProvider.FileRepeat;
@@ -77,6 +78,8 @@ public class Conversion {
 	
 	public static int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
 
+	public static int nSleep = Integer.parseInt(System.getProperty("conversion.sleep", "3000"));	// Sleep before loadComponentFromURL and storeToURL
+	
 	private static OpenOffice aoo = new OpenOffice();
 	
 	private static UnoApp app = null;
@@ -88,11 +91,11 @@ public class Conversion {
 	@BeforeClass
 	public static void beforeClass() throws Exception {
 		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
-		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu");
+		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu", "-nofirststartwizard");
 	    app = new UnoApp(aoo);
 	    Testspace.prepareDataFile("limit_cfg.ini", aoo.getHome().toString()+"/program");	// Move limitation check file to installation dir
 		result = new DataSheet(getFile("output/pvt_uno_conversion.xml"));
-		result.addRow("data", "File","Scenario","File Size","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
+		result.addRow("data", "File","Scenario","File Size","No","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
 	}
 	
 	@AfterClass
@@ -140,7 +143,7 @@ public class Conversion {
 	
 	@After
 	public void after() throws Exception{
-		result.addRow("data", sourceFileId, scenario, sourceFile.length(), closeTime, saveTime, loadTime);
+		result.addRow("data", sourceFileId, scenario, sourceFile.length(), counter % repeat , closeTime, saveTime, loadTime);
 		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
 		if (closeTime < 0) {
 			app.close();
@@ -158,23 +161,36 @@ public class Conversion {
 	
 	@Test(timeout=10 * 60000)
 	public void testConversion() throws Exception {
-		// convert
-		long start = System.currentTimeMillis();
-		XComponent doc = app.loadDocumentFromURL(sourceFileUrl, 
-				propertyValue("Hidden", true),
-				propertyValue("ReadOnly", true),
-				propertyValue("AsyncMode", false),
-				propertyValue("MacroExecutionMode", MacroExecMode.NEVER_EXECUTE),
-				propertyValue("LimitationCheckLevel", nLevelInfo));
-
-		loadTime = System.currentTimeMillis() - start;
-		app.saveDocumentToURL(doc, targetFileUrl, 
-				propertyValue( "FilterName", targetFilterName),
-				propertyValue( "Overwrite", true));
-		saveTime = System.currentTimeMillis() - start;
-		XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, doc);
-		xCloseable.close(true);
-		closeTime = System.currentTimeMillis() - start;
+		try {
+			// convert
+			SystemUtil.sleep(nSleep);	// Sleep before loadComponentFromURL
+			long start = System.currentTimeMillis();
+			XComponent doc = app.loadDocumentFromURL(sourceFileUrl, 
+					propertyValue("Hidden", true),
+					propertyValue("ReadOnly", true),
+					propertyValue("AsyncMode", false),
+					propertyValue("MacroExecutionMode", MacroExecMode.NEVER_EXECUTE),
+					propertyValue("LimitationCheckLevel", nLevelInfo));
+	
+			loadTime = System.currentTimeMillis() - start;
+			
+			SystemUtil.sleep(nSleep);	// Sleep before storeToURL
+			app.saveDocumentToURL(doc, targetFileUrl, 
+					propertyValue( "FilterName", targetFilterName),
+					propertyValue( "Overwrite", true));
+			saveTime = System.currentTimeMillis() - start - nSleep;
+			XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, doc);
+			xCloseable.close(true);
+			closeTime = System.currentTimeMillis() - start - nSleep;
+		} catch (com.sun.star.task.ErrorCodeIOException e){
+			int errCode = e.ErrCode;
+			if( 296 == errCode ) {
+				loadTime = -2;
+				saveTime = -2;
+				closeTime = -2;
+			}
+			
+			throw e;
+		}
 	}
-
 }
