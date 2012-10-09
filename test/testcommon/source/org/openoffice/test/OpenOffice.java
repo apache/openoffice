@@ -86,7 +86,7 @@ public class OpenOffice {
 	
 	private String id = UUID.randomUUID().toString().replace("-", "");
 	
-	private String processPattern = ".*soffice .*" + id + ".*|.*soffice\\.bin.*" + id + ".*|.*soffice\\.exe.*" + id + ".*-env.*";
+	private String processPattern = SystemUtil.isMac() ? ".*soffice .*" + id + ".*" : ".*soffice\\.bin.*" + id + ".*|.*soffice\\.exe.*" + id + ".*-env.*";
 	
 	public OpenOffice() {
 		this(null);
