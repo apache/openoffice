@@ -55,7 +55,7 @@ public class Run {
 		System.out.println("	-l	Set a test listeners.");
 		System.out.println("	-tp	Define a test suite with test packages separated by comma. Format: [name]:org.package1,org.package2...");
 		System.out.println("	-tc	Define a test suite with test classes separated by comma. Format: [name]:org.package.Class1,org.package.Class2...");
-		System.out.println("	-tc	Define a test suite with test methods separated by comma. Format: [name]:org.package.Class1.method1,org.package.Class2.method1...");
+		System.out.println("	-tm	Define a test suite with test methods separated by comma. Format: [name]:org.package.Class1.method1,org.package.Class2.method1...");
 		System.out.println("Example:");
 		System.out.println("-tp mytest:com.test");
 		System.out.println("-tc mytest:com.test.TestName1,com.test.TestName2");
