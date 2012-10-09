@@ -35,14 +35,14 @@ import org.junit.runner.RunWith;
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.DataSheet;
 import org.openoffice.test.common.FileProvider;
-import org.openoffice.test.common.SystemUtil;
-import org.openoffice.test.common.Testspace;
 import org.openoffice.test.common.FileProvider.FileFilter;
 import org.openoffice.test.common.FileProvider.FileRepeat;
 import org.openoffice.test.common.FileProvider.FileRepos;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
+import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
+
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.document.MacroExecMode;
 import com.sun.star.lang.XComponent;
@@ -57,7 +57,7 @@ public class Conversion {
 	public Logger log = Logger.getLogger(this);
 
 	@FileRepos
-	public static String repos = System.getProperty("conversion.repos", getDataPath("conversion_pvt"));
+	public static String repos = System.getProperty("conversion.repos", getDataPath("uno"));
 	@FileFilter
 	public static String filter = System.getProperty("conversion.filter", 
 			  "-f .*(doc|dot|odt|ott)$ writer_pdf_Export pdf " 
@@ -77,7 +77,7 @@ public class Conversion {
 	
 	public static int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
 
-	public static int nSleep = Integer.parseInt(System.getProperty("conversion.sleep", "3"));	// Sleep before loadComponentFromURL and storeToURL
+	public static long nSleep = Long.parseLong(System.getProperty("conversion.sleep", "0"));	// Sleep before loadComponentFromURL and storeToURL
 	
 	private static OpenOffice aoo = new OpenOffice();
 	
@@ -94,7 +94,7 @@ public class Conversion {
 	    app = new UnoApp(aoo);
 	    Testspace.prepareDataFile("limit_cfg.ini", aoo.getHome().toString()+"/program");	// Move limitation check file to installation dir
 		result = new DataSheet(getFile("output/" + Conversion.class.getName()+ ".xml"));
-		result.addRow("data", "File","Scenario","File Size","No","Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading");
+		result.addRow("data", "File","Scenario", "No", "Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading", "File Size", "Exported File Size");
 	}
 	
 	@AfterClass
@@ -142,7 +142,7 @@ public class Conversion {
 	
 	@After
 	public void after() throws Exception{
-		result.addRow("data", sourceFileId, scenario, sourceFile.length(), counter % repeat , closeTime, saveTime, loadTime);
+		result.addRow("data", sourceFileId, scenario, counter % repeat , closeTime, saveTime, loadTime, sourceFile.length(), targetFile.length());
 		log.info("Result [After Closing: " + closeTime + "] [After Saving: " + saveTime + "] [After Loading: " + loadTime + "]");
 		if (closeTime < 0) {
 			app.close();
@@ -157,12 +157,13 @@ public class Conversion {
 		p.Value= value;
 		return p;
 	}
+
 	
 	@Test(timeout=10 * 60000)
 	public void testConversion() throws Exception {
 		try {
-			// convert
-			SystemUtil.sleep(nSleep);	// Sleep before loadComponentFromURL
+			if (nSleep > 0)
+				Thread.sleep(nSleep);
 			long start = System.currentTimeMillis();
 			XComponent doc = app.loadDocumentFromURL(sourceFileUrl, 
 					propertyValue("Hidden", true),
@@ -173,7 +174,8 @@ public class Conversion {
 	
 			loadTime = System.currentTimeMillis() - start;
 			
-			SystemUtil.sleep(nSleep);	// Sleep before storeToURL
+			if (nSleep > 0)
+				Thread.sleep(nSleep);
 			app.saveDocumentToURL(doc, targetFileUrl, 
 					propertyValue( "FilterName", targetFilterName),
 					propertyValue( "Overwrite", true));

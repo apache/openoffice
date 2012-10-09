@@ -42,9 +42,9 @@ tr.Failure {color:#F27D15;}
 tr.Ignored {color:#F4C700;}
 tr.Error {color:#FC130F;}
 th.Success {background:#118811;}
-th.Failure {background: #F27D15;}
+th.Failure {background: #FF8888;}
 th.Ignored {background:#F4C700;}
-th.Error {background:#FC130F;}
+th.Error {background:#FF0000;}
 	</style>
 	<title>JUnit Report</title>
 </head>
@@ -153,11 +153,13 @@ function refresh() {
 		var status = 'Success', message = '', screenshot= '';
 		if (c = $$(e, 'failure')) {
 			status = 'Failure';
-			message = text(c.getAttribute("message"));
+			message = '<div>' + text(c.getAttribute("message")) + '</div>';
+			message += '<pre>' + text(c.innerHTML) + '</pre>';
 			screenshot = '<a href="screenshot/' + e.getAttribute("name") + '.png">Screenshot</a>';
 		} else if (c = $$(e, 'error')) {
 			status = 'Error';
-			message = text(c.getAttribute("message"));
+			message = '<div>' + text(c.getAttribute("message")) + '</div>';
+			message += '<pre>' + text(c.innerHTML) + '</pre>';
 			screenshot = '<a href="screenshot/' + e.getAttribute("name") + '.png">Screenshot</a>';
 		} else if (c = $$(e, 'ignored')) {
 			status = 'Ignored';

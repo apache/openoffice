@@ -275,7 +275,8 @@ public class SystemUtil {
 	 */
 	public static void sleep(double second) {
 		try {
-			Thread.sleep((long) (second * 1000));
+			if (second > 0)
+				Thread.sleep((long) (second * 1000));
 		} catch (InterruptedException e) {
 		}
 	}
