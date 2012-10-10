@@ -85,7 +85,7 @@ public class Conversion {
 	
 	private static DataSheet result;
 	
-	private static int counter = 0;
+	private static int counter = -1;
 	
 	@BeforeClass
 	public static void beforeClass() throws Exception {
@@ -159,7 +159,7 @@ public class Conversion {
 	}
 
 	
-	@Test(timeout=10 * 60000)
+	@Test(timeout=5 * 60000)
 	public void testConversion() throws Exception {
 		try {
 			if (nSleep > 0)
