@@ -91,7 +91,7 @@ public class Installer implements Runnable {
 				if (files != null && files.length == 1 && files[0].isDirectory()) {
 					files[0].renameTo(installDir);
 				}
-				File sofficeBin = FileUtil.findFile(installDir, "soffice.bin");
+				File sofficeBin = FileUtil.findFile(installDir, "soffice.bin", false);
 				if (sofficeBin == null) 
 					throw new RuntimeException(MessageFormat.format("{0} is not a valid openoffice installation package!" , packFile));
 				try {

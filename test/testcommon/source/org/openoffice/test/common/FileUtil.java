@@ -304,8 +304,18 @@ public class FileUtil {
 		return strBuffer.toString();
 	}
 	
-	
-	
+
+	public static boolean isSymbolicLink(File file) {
+		try {
+			File parent = file.getParentFile();
+			String name = file.getName() ;
+			File toTest = parent != null ? new File(parent.getCanonicalPath(), name) : new File(name);
+			return !toTest.getAbsolutePath().equals(toTest.getCanonicalPath());
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
 	/**
 	 * Find the first file matching the given name.
 	 * @param dir The directory to search in
@@ -318,6 +328,23 @@ public class FileUtil {
 		File[] files = dir.listFiles();
 		for (int i = 0; i < files.length; i++) {
 			if (files[i].isDirectory()) {
+				File ret = findFile(files[i], name);
+				if (ret != null)
+					return ret;
+			} else if (files[i].getName().matches(name)) {
+				return files[i];
+			}
+		}
+		
+		return null;
+	}
+	
+	public static File findFile(File dir, String name, boolean followSymbolicLink) {
+		if (!dir.isDirectory())
+			return null;
+		File[] files = dir.listFiles();
+		for (int i = 0; i < files.length; i++) {
+			if (files[i].isDirectory() && (followSymbolicLink || !isSymbolicLink(files[i]))) {
 				File ret = findFile(files[i], name);
 				if (ret != null)
 					return ret;
