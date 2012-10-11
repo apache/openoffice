@@ -235,7 +235,7 @@ public class ValidityDialogSetting {
 	/**
 	 * test Allow Text length, less than in Validity.
 	 */
-	@Ignore("Bug 93128")
+	@Test
 	public void testAllowLessThanTextLength() {
 
 		app.dispatch(".uno:Validation");
