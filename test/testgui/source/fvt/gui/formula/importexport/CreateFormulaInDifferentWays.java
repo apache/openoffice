@@ -185,7 +185,8 @@ public class CreateFormulaInDifferentWays {
 	 * 
 	 * @throws Exception
 	 */
-	@Ignore("Bug 119077 - defect in windows only")
+	@Test
+	@Ignore("Bug #119077 - defect in windows only")
 	public void testUndoRedoInMath() throws Exception {
 
 		// Make Elements window pop up

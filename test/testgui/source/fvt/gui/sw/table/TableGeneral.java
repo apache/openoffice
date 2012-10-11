@@ -63,8 +63,7 @@ public class TableGeneral {
 	// Test setting table cell background in text document
 
 	@Test
-	@Ignore
-	// bug120378
+	@Ignore("Bug #120378")
 	public void testTableBackground() throws Exception {
 		writerInsertTable.ok();
 		assertNotNull(statusBar.getItemTextById(8));

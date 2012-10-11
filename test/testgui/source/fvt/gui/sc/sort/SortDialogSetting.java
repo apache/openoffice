@@ -114,7 +114,7 @@ public class SortDialogSetting {
 	 * 
 	 * @throws Exception
 	 */
-	@Ignore("Bug 119035")
+	@Ignore("Bug #119035")
 	public void testSortOptionsCopyResultTo() throws Exception {
 
 		// Input some data

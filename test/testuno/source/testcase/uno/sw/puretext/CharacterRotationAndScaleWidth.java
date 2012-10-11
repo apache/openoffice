@@ -132,7 +132,8 @@ public class CharacterRotationAndScaleWidth {
 		assertEquals("assert character rotation ",true,xCursorProps_assert_odt.getPropertyValue("CharRotationIsFitToLine"));
 	}
 	//test character rotation 270 degree
-	@Test@Ignore //bug 120673_character rotation degree change to 90 from 270 when save to doc
+	@Test
+	@Ignore("Bug #120673 - character rotation changes to 90 from 270 degrees when saving to doc")
 	public void testCharacterRotationDefineSetting() throws Exception {
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();

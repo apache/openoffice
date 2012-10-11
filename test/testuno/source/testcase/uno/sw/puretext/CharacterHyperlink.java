@@ -29,7 +29,8 @@ public class CharacterHyperlink {
 		//app.close();
 	}
 
-	@Test@Ignore //bug120676_the hyperlink name lost and hyperlinktarget change to "_blank" when save to doc
+	@Test
+	@Ignore("Bug #120676 - hyperlink name and target lost when saving to doc")
 	public void testCharacterBackHyperlinkSetting() throws Exception {
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
