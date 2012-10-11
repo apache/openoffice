@@ -538,6 +538,27 @@ public class UIMap {
 	public static final VclDialog runMacroDlg = dialog("CUI_HID_SELECTOR_DIALOG");
 	public static final VclTreeListBox runMacroDlgCategories = tree("CUI_HID_SELECTOR_CATEGORIES");
 	public static final VclTreeListBox runMacroDlgCommands = tree("CUI_HID_SELECTOR_COMMANDS");
+	public static final VclButton optionUseOOdialog = button("cui:CheckBox:OFA_TP_MISC:CB_FILEDLG");
 	
 	public static final VclButton standardBarSave = button(".uno:Save");
+
+	public static final VclControl swFormatParagragh = control("CUI_HID_FORMAT_PARAGRAPH_STD");
+
+	public static final VclButton sdAddAnimation = button("SD_HID_SD_CUSTOMANIMATIONPANE_PB_ADD_EFFECT");
+
+	public static final VclListBox sdEntranceAnimationTab = listbox("sd:ListBox:RID_TP_CUSTOMANIMATION_ENTRANCE:LB_EFFECTS");
+
+	public static final VclControl sdAnimationList = control("SD_HID_SD_CUSTOMANIMATIONPANE_CT_CUSTOM_ANIMATION_LIST");
+
+	public static final VclWindow sdCurrentMastersList = window("SD_HID_SD_CURRENT_MASTERS");
+
+	public static final VclButton swInsertLineButtonOnToolbar = button(".uno:Line");
+
+	public static final VclToolBox swDrawingToolbar = toolbox(".HelpId:drawbar");
+
+	public static final VclListBox scPrintAreaType = listbox("sc:ListBox:RID_SCDLG_AREAS:LB_PRINTAREA");
+
+	public static final VclEditBox scPrintArea = editbox("sc:Edit:RID_SCDLG_AREAS:ED_PRINTAREA");
+
+	public static final VclEditBox scFormatCode = editbox("cui:Edit:RID_SVXPAGE_NUMBERFORMAT:ED_FORMAT");
 }
