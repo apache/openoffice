@@ -164,9 +164,10 @@ function refresh() {
 		} else if (c = $$(e, 'ignored')) {
 			status = 'Ignored';
 			message = text(c.getAttribute("message"));
-		    var bugPattern = /(.*)#(\d+)(.*)/;
-		    bugPattern.test(message);
-		    message = '<a href="https://issues.apache.org/ooo/show_bug.cgi?id=' + RegExp.$2 + '">' + RegExp.$1 + RegExp.$2 + '</a>' + RegExp.$3;
+			var bugPattern = /(.*)#(\d+)(.*)/;
+			if( bugPattern.test(message) ) {
+				message = '<a href="https://issues.apache.org/ooo/show_bug.cgi?id=' + RegExp.$2 + '">' + RegExp.$1 + RegExp.$2 + '</a>' + RegExp.$3;
+			}
 		}
 		
 		html += '<tr class="' + status + '"><td>' 
