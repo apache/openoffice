@@ -25,29 +25,55 @@
 
 package svt.gui.sc;
 
-import static org.openoffice.test.common.Testspace.*;
-import static org.openoffice.test.vcl.Tester.*;
-import static testlib.gui.AppTool.*;
-import static testlib.gui.UIMap.*;
+import static org.openoffice.test.common.Testspace.getFile;
+import static org.openoffice.test.common.Testspace.getPath;
+import static org.openoffice.test.common.Testspace.prepareData;
+import static org.openoffice.test.vcl.Tester.sleep;
+import static testlib.gui.AppTool.submitOpenDlg;
+import static testlib.gui.AppTool.submitSaveDlg;
+import static testlib.gui.AppTool.typeKeys;
+import static testlib.gui.UIMap.activeMsgBox;
+import static testlib.gui.UIMap.aoo;
+import static testlib.gui.UIMap.app;
+import static testlib.gui.UIMap.calc;
+import static testlib.gui.UIMap.chartWizard;
+import static testlib.gui.UIMap.filePickerOpen;
+import static testlib.gui.UIMap.filePickerPath;
+import static testlib.gui.UIMap.filterValue1;
+import static testlib.gui.UIMap.fontworkGalleryDlg;
+import static testlib.gui.UIMap.scAfterCurrentSheet;
+import static testlib.gui.UIMap.scFormatCode;
+import static testlib.gui.UIMap.scInsertSheetDlg;
+import static testlib.gui.UIMap.scNewSheetName;
+import static testlib.gui.UIMap.scPrintArea;
+import static testlib.gui.UIMap.scPrintAreaType;
+import static testlib.gui.UIMap.scValidityCriteriaAllowList;
+import static testlib.gui.UIMap.scValidityCriteriaTabpage;
+import static testlib.gui.UIMap.scValidityDecimalCompareOperator;
+import static testlib.gui.UIMap.scValidityErrorAlertTabPage;
+import static testlib.gui.UIMap.scValidityErrorMessage;
+import static testlib.gui.UIMap.scValidityErrorMessageTitle;
+import static testlib.gui.UIMap.scValidityShowErrorMessage;
+import static testlib.gui.UIMap.scValiditySourceInput;
+import static testlib.gui.UIMap.sortOptionsPage;
+import static testlib.gui.UIMap.sortOptionsPageRangeContainsColumnLabels;
+import static testlib.gui.UIMap.sortPage;
+import static testlib.gui.UIMap.sortPageAscending1;
+import static testlib.gui.UIMap.sortPageBy1;
+import static testlib.gui.UIMap.standardFilterDlg;
+import static testlib.gui.UIMap.startCenterOpenButton;
 
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.util.HashMap;
 
-import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
-import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.DataSheet;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
-import org.openoffice.test.common.SystemUtil;
-import org.openoffice.test.common.Testspace;
 
 import testlib.gui.SCTool;
 
@@ -60,8 +86,6 @@ public class BasicFuncOnCalc {
 
 	private static DataSheet xmlResult;
 
-	private String pid = null;
-
 	private static int iterator = 100;
 
 	private int i = 0;
@@ -71,10 +95,8 @@ public class BasicFuncOnCalc {
 	 */
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-
-		xmlResult = new DataSheet(getFile("output/svt_gui_sc.xml"));
-		xmlResult.addRow("BasicFuncOnCalc", "Method", "Iterator",
-				"Consumed Time(MS)", "Memory(KB)", "CPU(%)");
+		xmlResult = new DataSheet(getFile("output/svt.xml"), true);
+		xmlResult.addRow("BasicFuncOnCalc", "Method", "Iterator", "Consumed Time(MS)", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 
 	@AfterClass
@@ -470,16 +492,9 @@ public class BasicFuncOnCalc {
 		sleep(2);
 	}
 
-	private HashMap<String, Object> getPerfData() {
-		HashMap<String, Object> proccessInfo = SystemUtil
-				.findProcess(".*(soffice\\.bin|soffice\\.exe|soffice).*");
-		String pid = (String) proccessInfo.get("pid");
-		return SystemUtil.getProcessPerfData(pid);
-	}
-
 	private void addRecord(int i, long start, long end) {
-		HashMap<String, Object> perf = getPerfData();
+		HashMap<String, Object>  perf = aoo.getPerfData();
 		xmlResult.addRow("BasicFuncOnCalc",testname.getMethodName(), i, (end - start),
-				perf.get("rss"), perf.get("pcpu"));
+				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
 	}
 }
