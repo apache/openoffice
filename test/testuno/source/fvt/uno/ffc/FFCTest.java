@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package fvt.uno.ffc;
+package testcase.uno.ffc;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -192,8 +192,9 @@ public class FFCTest {
 	}
 	
 	@Before
-	public void setUp() throws Exception {	
+	public void setUp() throws Exception {
 		operateFilePath =  Testspace.prepareData(fileURL);
+				
 		
 		app.start();	
 	}
@@ -213,7 +214,7 @@ public class FFCTest {
 	
 	
 	
-	@Test(timeout=1000*60*5)
+	@Test(timeout=1000*60*10)
 	public void exportTest() throws Exception {
 		//MS Office Format ->ODF
 		boolean flag = false;
@@ -240,12 +241,17 @@ public class FFCTest {
 		return suffix;
 	}
 	/**
-	 * return the Export ODF　file path
+	 * return the Export ODF file path
 	 * @throws IOException
 	 * @throws IllegalArgumentException
 	 */
 	private String exportAsODF(String testFile) throws IOException, IllegalArgumentException {
 		XComponent document = loadSampleFile(testFile);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		String suffix = getSuffix(testFile);
 		String filterName = filterMap.get(suffix);
 		PropertyValue[] lProperties = null;
@@ -265,7 +271,17 @@ public class FFCTest {
 		String fileName = file.getName();
 		String saveAsFilePath = file.getParentFile().getAbsolutePath() + File.separator + fileName + "." + formatMap.get(suffix);//TODO
 		store.storeAsURL(Testspace.getUrl(saveAsFilePath), lProperties);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		app.closeDocument(document);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return saveAsFilePath;
 	}
 	
@@ -283,7 +299,11 @@ public class FFCTest {
 		String saveAsFilePath =  file.getParentFile().getAbsolutePath() + File.separator + fileName + ".pdf" ;
 		// export to pdf
 		xStorable.storeToURL(Testspace.getUrl(saveAsFilePath), aMediaDescriptor);
-
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		// close this document
 		app.closeDocument(xComponent);
 		File pdfFile = new File(saveAsFilePath);
