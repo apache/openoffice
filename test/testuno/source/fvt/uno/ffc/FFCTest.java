@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package testcase.uno.ffc;
+package fvt.uno.ffc;
 
 import java.io.File;
 import java.io.FilenameFilter;
