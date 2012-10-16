@@ -21,22 +21,24 @@
 
 
 
-#ifndef INCLUDED_DRAWINGLAYER_ATTRIBUTE_FILLBITMAPATTRIBUTE_HXX
-#define INCLUDED_DRAWINGLAYER_ATTRIBUTE_FILLBITMAPATTRIBUTE_HXX
+#ifndef INCLUDED_DRAWINGLAYER_ATTRIBUTE_SDRFILLGRAPHICATTRIBUTE_HXX
+#define INCLUDED_DRAWINGLAYER_ATTRIBUTE_SDRFILLGRAPHICATTRIBUTE_HXX
 
 #include <drawinglayer/drawinglayerdllapi.h>
+
 //////////////////////////////////////////////////////////////////////////////
 // predefines
 
-class BitmapEx;
+class Graphic;
 
 namespace basegfx {
-    class B2DPoint;
+	class B2DRange;
     class B2DVector;
 }
 
 namespace drawinglayer { namespace attribute {
-	class ImpFillBitmapAttribute;
+	class FillGraphicAttribute;
+    class ImpSdrFillGraphicAttribute;
 }}
 
 //////////////////////////////////////////////////////////////////////////////
@@ -45,40 +47,51 @@ namespace drawinglayer
 {
 	namespace attribute
 	{
-		class DRAWINGLAYER_DLLPUBLIC FillBitmapAttribute
+		class DRAWINGLAYER_DLLPUBLIC SdrFillGraphicAttribute
 		{
         private:
-            ImpFillBitmapAttribute*             mpFillBitmapAttribute;
+            ImpSdrFillGraphicAttribute*     mpSdrFillGraphicAttribute;
 
 		public:
             /// constructors/assignmentoperator/destructor
-			FillBitmapAttribute(
-                const BitmapEx& rBitmapEx, 
-                const basegfx::B2DPoint& rTopLeft, 
+			SdrFillGraphicAttribute(
+				const Graphic& rFillGraphic, 
                 const basegfx::B2DVector& rSize, 
-                bool bTiling);
-			FillBitmapAttribute();
-			FillBitmapAttribute(const FillBitmapAttribute& rCandidate);
-			FillBitmapAttribute& operator=(const FillBitmapAttribute& rCandidate);
-			~FillBitmapAttribute();
+                const basegfx::B2DVector& rOffset,
+				const basegfx::B2DVector& rOffsetPosition, 
+                const basegfx::B2DVector& rRectPoint,
+				bool bTiling, 
+                bool bStretch, 
+                bool bLogSize);
+			SdrFillGraphicAttribute();
+			SdrFillGraphicAttribute(const SdrFillGraphicAttribute& rCandidate);
+			SdrFillGraphicAttribute& operator=(const SdrFillGraphicAttribute& rCandidate);
+			~SdrFillGraphicAttribute();
 
             // checks if the incarnation is default constructed
             bool isDefault() const;
 
             // compare operator
-			bool operator==(const FillBitmapAttribute& rCandidate) const;
+			bool operator==(const SdrFillGraphicAttribute& rCandidate) const;
 
-            // data read access
-			const BitmapEx& getBitmapEx() const;
-			const basegfx::B2DPoint& getTopLeft() const;
-			const basegfx::B2DVector& getSize() const;
-			bool getTiling() const;
+			// data read access
+            const Graphic& getFillGraphic() const;
+            const basegfx::B2DVector& getSize() const;
+            const basegfx::B2DVector& getOffset() const;
+            const basegfx::B2DVector& getOffsetPosition() const;
+            const basegfx::B2DVector& getRectPoint() const;
+            bool getTiling() const;
+            bool getStretch() const;
+            bool getLogSize() const;
+
+            // FillGraphicAttribute generator
+			FillGraphicAttribute createFillGraphicAttribute(const basegfx::B2DRange& rRange) const;
 		};
 	} // end of namespace attribute
 } // end of namespace drawinglayer
 
 //////////////////////////////////////////////////////////////////////////////
 
-#endif //INCLUDED_DRAWINGLAYER_ATTRIBUTE_FILLBITMAPATTRIBUTE_HXX
+#endif //INCLUDED_DRAWINGLAYER_ATTRIBUTE_SDRFILLGRAPHICATTRIBUTE_HXX
 
 // eof
