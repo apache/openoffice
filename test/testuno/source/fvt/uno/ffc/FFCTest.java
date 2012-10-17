@@ -70,8 +70,9 @@ import com.sun.star.uno.UnoRuntime;
 public class FFCTest {
 	@Rule
 	public Logger log = Logger.getLogger(this, false);
-
-	private static final UnoApp app = new UnoApp();
+	
+	
+	private static  UnoApp app = null;
 	private static Map<String, String> filterMap = new HashMap<String, String>();
 	@FileRepos
 	public static String suiteDir = "../suite/";
@@ -183,9 +184,14 @@ public class FFCTest {
 	@BeforeClass
 	public static void init() {
 		initMap();
+		
 		//Disable automation
-		OpenOffice.getDefault().setAutomationPort(-1);
-		OpenOffice.getDefault().addArgs("-invisible", "-conversionmode", "-headless", "-hidemenu");
+		
+		OpenOffice defaultOpenOffice = new OpenOffice();
+		defaultOpenOffice.addArgs("-nofirststartwizard", "-norestore", "-quickstart=no");
+		defaultOpenOffice.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
+		defaultOpenOffice.addArgs("-invisible", "-conversionmode", "-headless", "-hidemenu");
+		app = new UnoApp(defaultOpenOffice);
 		
 		File failedDirec = Testspace.getFile(failedFilesDir);
 		failedDirec.mkdirs();
@@ -195,7 +201,7 @@ public class FFCTest {
 	public void setUp() throws Exception {
 		operateFilePath =  Testspace.prepareData(fileURL);
 				
-		
+	
 		app.start();	
 	}
 	@After
