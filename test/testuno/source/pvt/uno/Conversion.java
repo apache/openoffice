@@ -90,7 +90,7 @@ public class Conversion {
 	@BeforeClass
 	public static void beforeClass() throws Exception {
 		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
-		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu", "-nofirststartwizard");
+		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu", "-nofirststartwizard", "-headless");
 	    app = new UnoApp(aoo);
 	    Testspace.prepareDataFile("limit_cfg.ini", aoo.getHome().toString()+"/program");	// Move limitation check file to installation dir
 		result = new DataSheet(getFile("output/" + Conversion.class.getName()+ ".xml"));
