@@ -219,11 +219,17 @@ namespace sdr
 				xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 			}
 
-			// always append an invisible outline for the cases where no visible content exists
-			drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, 
-				drawinglayer::primitive2d::createHiddenGeometryPrimitives2D(
-					false, 
-					aObjectRange));
+			// #119863# always append an invisible outline for the cases where no visible content exists
+            if(true)
+            {
+				// get object transformation
+				const basegfx::B2DHomMatrix& rObjectMatrix(GetCustomShapeObj().getSdrObjectTransformation());
+
+                drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, 
+				    drawinglayer::primitive2d::createHiddenGeometryPrimitives2D(
+					    false, 
+					    rObjectMatrix));
+            }
 
 			return xRetval;
 		}
