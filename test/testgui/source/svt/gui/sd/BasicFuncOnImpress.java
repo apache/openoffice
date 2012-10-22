@@ -63,7 +63,7 @@ public class BasicFuncOnImpress {
 
 	private String pid = null;
 
-	private static int iterator = 100;
+	private static int iterator = 2;
 
 	private int i = 0;
 
@@ -72,10 +72,8 @@ public class BasicFuncOnImpress {
 	 */
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-
-		xmlResult = new DataSheet(getFile("output/svt_gui_sd.xml"));
-		xmlResult.addRow("BasicFunOnImpress","Method", "Iterator", "Consumed Time(MS)",
-				"Memory(KB)", "CPU(%)");
+		xmlResult = new DataSheet(getFile("output/svt.xml"));
+		xmlResult.addRow("Data", "Method", "No", "Consumed Time(MS)", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 
 	@AfterClass
@@ -132,7 +130,8 @@ public class BasicFuncOnImpress {
 		for (i = 1; i <= iterator; i++) {
 			long start = System.currentTimeMillis();
 			createNewSD();
-			impress.menuItem("Insert->Picture->From File...").select();
+			app.dispatch(".uno:InsertGraphic");
+//			impress.menuItem("Insert->Picture->From File...").select();
 			sleep(2);
 			filePickerPath.setText(pic);
 			sleep(1);
@@ -263,6 +262,7 @@ public class BasicFuncOnImpress {
 	}
 	
 	@Test
+	@Ignore
 	public void opChartOnOpenedSD() throws Exception {
 		String file = prepareData("svt/OLEinODP.odp");
 		for (i = 1; i <= iterator; i++) {
@@ -370,16 +370,9 @@ public class BasicFuncOnImpress {
 		}
 	}
 
-	private HashMap<String, Object> getPerfData() {
-		HashMap<String, Object> proccessInfo = SystemUtil
-				.findProcess(".*(soffice\\.bin|soffice\\.exe|soffice).*");
-		String pid = (String) proccessInfo.get("pid");
-		return SystemUtil.getProcessPerfData(pid);
-	}
-
 	private void addRecord(int i, long start, long end) {
-		HashMap<String, Object> perf = getPerfData();
-		xmlResult.addRow("BasicFuncOnImpress",testname.getMethodName(), i, (end - start),
-				perf.get("rss"), perf.get("pcpu"));
+		HashMap<String, Object>  perf = aoo.getPerfData();
+		xmlResult.addRow("Data",testname.getMethodName(), i, (end - start),
+				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
 	}
 }

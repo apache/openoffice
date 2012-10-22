@@ -60,7 +60,7 @@ public class BasicFuncOnWriter {
 
 	private String pid = null;
 
-	private static int iterator = 100;
+	private static int iterator = 2;
 
 	private int i = 0;
 
@@ -69,10 +69,8 @@ public class BasicFuncOnWriter {
 	 */
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-
-		xmlResult = new DataSheet(getFile("output/svt_gui_sw.xml"));
-		xmlResult.addRow("BasicFuncOnWriter","Method", "Iterator", "Consumed Time(MS)",
-				"Memory(KB)", "CPU(%)");
+		xmlResult = new DataSheet(getFile("output/svt.xml"));
+		xmlResult.addRow("Data", "Method", "No", "Consumed Time(MS)", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 
 	@AfterClass
@@ -440,7 +438,8 @@ public class BasicFuncOnWriter {
 			submitOpenDlg(file);
 			writer.waitForExistence(10, 2);
 			writer.focus();
-			writer.menuItem("Insert->Object->Chart...").select();
+			app.dispatch(".uno:InsertObjectChart");
+//			writer.menuItem("Insert->Object->Chart...").select();
 			sleep(5);
 			typeKeys("<esc>");
 			sleep(5);
@@ -514,17 +513,10 @@ public class BasicFuncOnWriter {
 		}
 	}
 
-	private HashMap<String, Object> getPerfData() {
-		HashMap<String, Object> proccessInfo = SystemUtil
-				.findProcess(".*(soffice\\.bin|soffice\\.exe|soffice).*");
-		String pid = (String) proccessInfo.get("pid");
-		return SystemUtil.getProcessPerfData(pid);
-	}
-
 	private void addRecord(int i, long start, long end) {
-		HashMap<String, Object> perf = getPerfData();
-		xmlResult.addRow("BasicFuncOnWriter",testname.getMethodName(), i, (end - start),
-				perf.get("rss"), perf.get("pcpu"));
+		HashMap<String, Object>  perf = aoo.getPerfData();
+		xmlResult.addRow("Data",testname.getMethodName(), i, (end - start),
+				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
 	}
 	
 }

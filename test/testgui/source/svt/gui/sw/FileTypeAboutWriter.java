@@ -60,7 +60,7 @@ public class FileTypeAboutWriter {
 
 	private String pid = null;
 
-	private static int iterator = 100;
+	private static int iterator = 2;
 
 	private int i = 0;
 
@@ -70,10 +70,8 @@ public class FileTypeAboutWriter {
 	 */
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-
-		xmlResult = new DataSheet(getFile("output/svt_gui_type_sw.xml"));
-		xmlResult.addRow("FileTypeAboutWriter","Method", "Iterator", "Consumed Time(MS)",
-				"Memory(KB)", "CPU(%)");
+		xmlResult = new DataSheet(getFile("output/svt.xml"));
+		xmlResult.addRow("Data", "Method", "No", "Consumed Time(MS)", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 
 	@AfterClass
@@ -179,21 +177,14 @@ public class FileTypeAboutWriter {
 		submitOpenDlg(saveTo);
 		sleep(2);		
 		app.dispatch(".uno:CloseDoc");
+		
 	}
 	
-
-
-	private HashMap<String, Object> getPerfData() {
-		HashMap<String, Object> proccessInfo = SystemUtil
-				.findProcess(".*(soffice\\.bin|soffice\\.exe|soffice).*");
-		String pid = (String) proccessInfo.get("pid");
-		return SystemUtil.getProcessPerfData(pid);
-	}
-
 	private void addRecord(int i, long start, long end) {
-		HashMap<String, Object> perf = getPerfData();
-		xmlResult.addRow("FileTypeAboutWriter",testname.getMethodName(), i, (end - start),
-				perf.get("rss"), perf.get("pcpu"));
+		HashMap<String, Object>  perf = aoo.getPerfData();
+		xmlResult.addRow("Data",testname.getMethodName(), i, (end - start),
+				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
 	}
+
 	
 }
