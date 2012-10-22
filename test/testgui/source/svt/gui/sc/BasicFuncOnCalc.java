@@ -86,7 +86,7 @@ public class BasicFuncOnCalc {
 
 	private static DataSheet xmlResult;
 
-	private static int iterator = 2;
+	private static int iterator = 100;
 
 	private int i = 0;
 

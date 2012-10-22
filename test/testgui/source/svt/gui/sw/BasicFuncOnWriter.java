@@ -60,7 +60,7 @@ public class BasicFuncOnWriter {
 
 	private String pid = null;
 
-	private static int iterator = 2;
+	private static int iterator = 100;
 
 	private int i = 0;
 
