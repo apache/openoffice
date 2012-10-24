@@ -3,7 +3,7 @@
  * insert text into a SD
  * apply the 8 bullets one by one, and check
  */
-package fvt.uno.sd;
+package fvt.uno.sd.bullet;
 
 import static org.junit.Assert.assertEquals;
 import static testlib.uno.PageUtil.getDrawPageByIndex;
@@ -60,7 +60,7 @@ public class CheckBuildInBullet {
     }
 	@Parameters
     public static Collection<String[]> data() {
-        String[][] bulletChar = new String[][] {{"●","●"}, {"•","•"}, {"",""},{"",""},{"➔","➔"}, {"➢","➢"}, {"✗","✗"},{"✔","✔"}};
+        String[][] bulletChar = new String[][] {{"\u25cf","\u25cf"}, {"\u2022","\u2022"}, {"\ue00c","\ue00c"},{"\ue00a","\ue00a"},{"\u2794","\u2794"}, {"\u27a2","\u27a2"}, {"\u2717","\u2717"},{"\u2714","\u2714"}};
         return Arrays.asList(bulletChar);
     }
 	

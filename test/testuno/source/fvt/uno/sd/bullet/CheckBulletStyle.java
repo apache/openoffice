@@ -21,7 +21,7 @@
 /**
  * 
  */
-package fvt.uno.sd;
+package fvt.uno.sd.bullet;
 import static org.junit.Assert.*;
 import static testlib.uno.PageUtil.getDrawPageByIndex;
 import static testlib.uno.ShapeUtil.*;

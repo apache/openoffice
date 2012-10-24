@@ -11,7 +11,7 @@
  * 9. set font style to Bold, Italic
  * 10. save, close, reopen, then check the font style 
  */
-package fvt.uno.sd;
+package fvt.uno.sd.character;
 
 import static org.junit.Assert.*;
 
