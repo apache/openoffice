@@ -20,10 +20,16 @@
  *************************************************************/
 package testlib.uno;
 
+import java.util.HashMap;
+
+import org.openoffice.test.common.Testspace;
+
+import com.sun.star.beans.PropertyValue;
 import com.sun.star.container.XIndexAccess;
 import com.sun.star.drawing.XDrawPage;
 import com.sun.star.drawing.XDrawPagesSupplier;
 import com.sun.star.drawing.XShapes;
+import com.sun.star.frame.XStorable;
 import com.sun.star.lang.XComponent;
 import com.sun.star.uno.UnoRuntime;
 
@@ -33,6 +39,8 @@ import com.sun.star.uno.UnoRuntime;
  */
 public class SDUtil {
 
+	private static HashMap filterName = new HashMap(); 
+	
 	private SDUtil() {
 
 	}
@@ -48,6 +56,34 @@ public class SDUtil {
 		XDrawPage xDrawPage = (XDrawPage) UnoRuntime.queryInterface(XDrawPage.class, page);
 		XShapes m_xdrawShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 		return m_xdrawShapes.getByIndex(index);
+	}
+	
+	public static void saveFileAs(XComponent sdComponent, String fileName, String extName) throws Exception {
+		
+		initFilterName();
+
+		String storeUrl = Testspace.getUrl("temp/" + fileName + "." + extName);
+		
+		PropertyValue[] storeProps = new PropertyValue[2];
+		storeProps[0] = new PropertyValue();
+		storeProps[0].Name = "FilterName";
+		storeProps[0].Value = filterName.get(extName);
+		storeProps[1] = new PropertyValue();
+		storeProps[1].Name = "Overwrite";
+		storeProps[1].Value = new Boolean(true);
+		
+		XStorable sdStorable = 
+				(XStorable) UnoRuntime.queryInterface(XStorable.class, sdComponent);
+		sdStorable.storeAsURL(storeUrl, storeProps);
+	}
+	
+	private static void initFilterName() throws Exception {
+		if (filterName.size() > 0) {
+			return;
+		}
+		
+		filterName.put("odp", "impress8");
+		filterName.put("ppt", "MS PowerPoint 97");
 	}
 
 }
