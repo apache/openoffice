@@ -18,6 +18,7 @@
  * under the License.
  * 
  *************************************************************/
+
 /**
  * check character style
  * 1. new a impress
@@ -31,7 +32,7 @@
  * 9. set font style to Bold, Italic
  * 10. save, close, reopen, then check the font style 
  */
-package fvt.uno.sd.character;
+package fvt.uno.sd;
 
 import static org.junit.Assert.*;
 
