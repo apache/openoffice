@@ -32,7 +32,12 @@ import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
+/**
+ * Generate XML test report
+ *
+ */
 public class XMLReporter extends RunListener {
 
 	private File outputDir = Testspace.getFile("output");
@@ -152,33 +157,37 @@ public class XMLReporter extends RunListener {
 	}
 	
 	private void finishSuite() {
-		testsuiteEl.setAttribute("time", Double.toString((System.currentTimeMillis() - testStart) / 1000.0));
-		testsuiteEl.setAttribute("failures", Long.toString(failures));
-		testsuiteEl.setAttribute("errors", Long.toString(errors));
-		testsuiteEl.setAttribute("tests", Long.toString(tests));
-		testsuiteEl.setAttribute("ignored", Long.toString(ignored));
-		Element props = doc.createElement("properties");
-		testsuiteEl.appendChild(props);
-		// Add some extra information
-		System.setProperty("info.os.name", SystemUtil.getOSName());
-		System.setProperty("info.os.version", SystemUtil.getOSVersion());
-		System.setProperty("info.os.arch", SystemUtil.getOSArch());
-		System.setProperty("info.os.arch", SystemUtil.getOSArch());
-		System.setProperty("info.ip", SystemUtil.getIPAddress());
-		System.setProperty("info.hostname", SystemUtil.getHostName());
-		Set<Entry<Object, Object>> entries = System.getProperties().entrySet();
-		for (Entry<Object, Object> e : entries) {
-			Element prop = doc.createElement("property");
-			prop.setAttribute("name", "" + e.getKey());
-			prop.setAttribute("value", "" + e.getValue());
-			props.appendChild(prop);
-		}
-		
 		store();
 	}
 
 	private void store() {
 		if (doc != null) {
+			testsuiteEl.setAttribute("time", Double.toString((System.currentTimeMillis() - testStart) / 1000.0));
+			testsuiteEl.setAttribute("failures", Long.toString(failures));
+			testsuiteEl.setAttribute("errors", Long.toString(errors));
+			testsuiteEl.setAttribute("tests", Long.toString(tests));
+			testsuiteEl.setAttribute("ignored", Long.toString(ignored));
+			NodeList els = testsuiteEl.getElementsByTagName("properties");
+			if (els.getLength() > 0) 
+				testsuiteEl.removeChild(els.item(0));
+			
+			Element props = doc.createElement("properties");
+			testsuiteEl.appendChild(props);
+			// Add some extra information
+			System.setProperty("info.os.name", SystemUtil.getOSName());
+			System.setProperty("info.os.version", SystemUtil.getOSVersion());
+			System.setProperty("info.os.arch", SystemUtil.getOSArch());
+			System.setProperty("info.os.arch", SystemUtil.getOSArch());
+			System.setProperty("info.ip", SystemUtil.getIPAddress());
+			System.setProperty("info.hostname", SystemUtil.getHostName());
+			Set<Entry<Object, Object>> entries = System.getProperties().entrySet();
+			for (Entry<Object, Object> e : entries) {
+				Element prop = doc.createElement("property");
+				prop.setAttribute("name", "" + e.getKey());
+				prop.setAttribute("value", "" + e.getValue());
+				props.appendChild(prop);
+			}
+			
 			FileUtil.storeXML(doc, file);
 			File htmlFile = new File(outputDir, "result.html");
 			InputStream is = getClass().getResourceAsStream("XMLReporter.xsl");
