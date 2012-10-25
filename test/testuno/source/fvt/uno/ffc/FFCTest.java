@@ -220,27 +220,27 @@ public class FFCTest {
 	
 	
 	
-	@Test(timeout=1000*60*10)
-	public void exportTest() throws Exception {
-		//MS Office Format ->ODF
-		boolean flag = false;
-		
-		String saveAsODF = exportAsODF(operateFilePath);
-		System.out.println("MS ->ODF finished");
-		//ODF->MS
-		String savedMSFilePath = exportAsODF(saveAsODF); 
-		File savedMSFile = new File(savedMSFilePath);
-		Assert.assertTrue("FFC Test for file : "+ savedMSFilePath, savedMSFile.exists());
-		System.out.println("ODF->MS Finished");
-		
-
-		//Export ODF->PDF
-		exportAsPDF(saveAsODF);
-		System.out.println("ODF->PDF Finished");
-		flag = true;
-		Assert.assertTrue("FFC Test for file : "+ operateFilePath, flag);
-		isSucceed = true;
-	}
+//	@Test(timeout=1000*60*10)
+//	public void exportTest() throws Exception {
+//		//MS Office Format ->ODF
+//		boolean flag = false;
+//		
+//		String saveAsODF = exportAsODF(operateFilePath);
+//		System.out.println("MS ->ODF finished");
+//		//ODF->MS
+//		String savedMSFilePath = exportAsODF(saveAsODF); 
+//		File savedMSFile = new File(savedMSFilePath);
+//		Assert.assertTrue("FFC Test for file : "+ savedMSFilePath, savedMSFile.exists());
+//		System.out.println("ODF->MS Finished");
+//		
+//
+//		//Export ODF->PDF
+//		exportAsPDF(saveAsODF);
+//		System.out.println("ODF->PDF Finished");
+//		flag = true;
+//		Assert.assertTrue("FFC Test for file : "+ operateFilePath, flag);
+//		isSucceed = true;
+//	}
 	private String getSuffix(String file) {
 		String lowerCaseName = file.toLowerCase();
 		String suffix = lowerCaseName.substring(lowerCaseName.lastIndexOf("."));

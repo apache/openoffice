@@ -121,30 +121,30 @@ public class SubjectField {
 	 * 3.Save as odt format and reload
 	 * @throws Throwable
 	 */
-	@Test
-	public void testPageCountFieldDOC() throws Throwable {
-		docDocument = SWUtil.openDocument(Testspace.prepareData(docSample), app);
-		String subjectStr = "Test Subject Field";
-		SWUtil.setDocumentProperty(docDocument, "Subject", subjectStr);
-		createSubjectFiled(docDocument);
-		
-		assertTrue("Verify Subject field is created.", isContainSubjectField(docDocument, subjectStr));
-		assertTrue("Verify Subject field is created, can get text from document", 
-				isContainSubjectText(docDocument, subjectStr));
-		
-		docDocument = SWUtil.saveAndReload(docDocument, app);
-		//verify after save and reload
-		assertTrue("Verify Subject field is created, after save, still exist.", isContainSubjectField(docDocument, subjectStr));
-		assertTrue("Verify Subject field is created, can get text from document after saved.", 
-				isContainSubjectText(docDocument, subjectStr));
-		SWUtil.saveAsODT(docDocument, Testspace.getUrl(docSaveAsODTSample));
-		app.closeDocument(docDocument);
-		odtDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(docSaveAsODTSample), app);
-		assertTrue("Verify Subject field is created, after saved to doc format, field still exist.", isContainSubjectField(odtDocument, subjectStr));
-		assertTrue("Verify Subject field is created, after saved to doc format, can get text from document", 
-				isContainSubjectText(odtDocument, subjectStr));
-		app.closeDocument(odtDocument);
-	}
+//	@Test
+//	public void testPageCountFieldDOC() throws Throwable {
+//		docDocument = SWUtil.openDocument(Testspace.prepareData(docSample), app);
+//		String subjectStr = "Test Subject Field";
+//		SWUtil.setDocumentProperty(docDocument, "Subject", subjectStr);
+//		createSubjectFiled(docDocument);
+//		
+//		assertTrue("Verify Subject field is created.", isContainSubjectField(docDocument, subjectStr));
+//		assertTrue("Verify Subject field is created, can get text from document", 
+//				isContainSubjectText(docDocument, subjectStr));
+//		
+//		docDocument = SWUtil.saveAndReload(docDocument, app);
+//		//verify after save and reload
+//		assertTrue("Verify Subject field is created, after save, still exist.", isContainSubjectField(docDocument, subjectStr));
+//		assertTrue("Verify Subject field is created, can get text from document after saved.", 
+//				isContainSubjectText(docDocument, subjectStr));
+//		SWUtil.saveAsODT(docDocument, Testspace.getUrl(docSaveAsODTSample));
+//		app.closeDocument(docDocument);
+//		odtDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(docSaveAsODTSample), app);
+//		assertTrue("Verify Subject field is created, after saved to doc format, field still exist.", isContainSubjectField(odtDocument, subjectStr));
+//		assertTrue("Verify Subject field is created, after saved to doc format, can get text from document", 
+//				isContainSubjectText(odtDocument, subjectStr));
+//		app.closeDocument(odtDocument);
+//	}
 	
 
 	

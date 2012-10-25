@@ -122,30 +122,30 @@ public class TitleField {
 	 * 3.Save as odt format and reload
 	 * @throws Throwable
 	 */
-	@Test
-	public void testPageCountFieldDOC() throws Throwable {
-		docDocument = SWUtil.openDocument(Testspace.prepareData(docSample), app);
-		String TitleStr = "Title Test";
-		SWUtil.setDocumentProperty(docDocument, "Title", TitleStr);
-		createTitleFiled(docDocument);
-		
-		assertTrue("Verify Title field is created.", isContainTitleField(docDocument, TitleStr));
-		assertTrue("Verify Title field is created, can get text from document", 
-				isContainTitleText(docDocument, TitleStr));
-		
-		docDocument = SWUtil.saveAndReload(docDocument, app);
-		//verify after save and reload
-		assertTrue("Verify Title field is created, after save, still exist.", isContainTitleField(docDocument, TitleStr));
-		assertTrue("Verify Title field is created, can get text from document after saved.", 
-				isContainTitleText(docDocument, TitleStr));
-		SWUtil.saveAsODT(docDocument, Testspace.getUrl(docSaveAsODTSample));
-		app.closeDocument(docDocument);
-		odtDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(docSaveAsODTSample), app);
-		assertTrue("Verify Title field is created, after saved to doc format, field still exist.", isContainTitleField(odtDocument, TitleStr));
-		assertTrue("Verify Title field is created, after saved to doc format, can get text from document", 
-				isContainTitleText(odtDocument, TitleStr));
-		app.closeDocument(odtDocument);
-	}
+//	@Test
+//	public void testPageCountFieldDOC() throws Throwable {
+//		docDocument = SWUtil.openDocument(Testspace.prepareData(docSample), app);
+//		String TitleStr = "Title Test";
+//		SWUtil.setDocumentProperty(docDocument, "Title", TitleStr);
+//		createTitleFiled(docDocument);
+//		
+//		assertTrue("Verify Title field is created.", isContainTitleField(docDocument, TitleStr));
+//		assertTrue("Verify Title field is created, can get text from document", 
+//				isContainTitleText(docDocument, TitleStr));
+//		
+//		docDocument = SWUtil.saveAndReload(docDocument, app);
+//		//verify after save and reload
+//		assertTrue("Verify Title field is created, after save, still exist.", isContainTitleField(docDocument, TitleStr));
+//		assertTrue("Verify Title field is created, can get text from document after saved.", 
+//				isContainTitleText(docDocument, TitleStr));
+//		SWUtil.saveAsODT(docDocument, Testspace.getUrl(docSaveAsODTSample));
+//		app.closeDocument(docDocument);
+//		odtDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(docSaveAsODTSample), app);
+//		assertTrue("Verify Title field is created, after saved to doc format, field still exist.", isContainTitleField(odtDocument, TitleStr));
+//		assertTrue("Verify Title field is created, after saved to doc format, can get text from document", 
+//				isContainTitleText(odtDocument, TitleStr));
+//		app.closeDocument(odtDocument);
+//	}
 	
 
 	

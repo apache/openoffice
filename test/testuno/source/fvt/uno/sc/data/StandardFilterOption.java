@@ -26,6 +26,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
@@ -275,6 +276,7 @@ public class StandardFilterOption {
 	}
 
 	@Test
+	@Ignore("Bug #121017")
 	public void testStandardFilterOptionCopyOutput() throws Exception {
 		// Prepare test data
 		String sample = Testspace.prepareData(filename);

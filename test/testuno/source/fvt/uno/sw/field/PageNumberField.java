@@ -161,7 +161,7 @@ public class PageNumberField {
 	 */
 	private int getPageNumber(XTextDocument document) {
 		try {
-			Thread.sleep(1000); //sleep before get page number field, there is a bug:120625
+			Thread.sleep(5*1000); //sleep before get page number field, there is a bug:120625
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
