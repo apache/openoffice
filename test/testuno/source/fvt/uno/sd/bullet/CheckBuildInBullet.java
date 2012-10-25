@@ -97,8 +97,6 @@ public class CheckBuildInBullet {
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 		app.close();
-		//remove the temp file
-		FileUtil.deleteFile(Testspace.getPath("temp"));
 	}
 
 	/**
@@ -106,7 +104,7 @@ public class CheckBuildInBullet {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		m_filePath = Testspace.getPath("temp/CheckBuildInBullet.odt");
+		m_filePath = Testspace.getPath("temp/CheckBuildInBullet.odp");
 //		m_filePath = "F:/aa.odp";
 		if(FileUtil.fileExists(m_filePath))
 		{	//load
@@ -128,6 +126,7 @@ public class CheckBuildInBullet {
 	@After
 	public void tearDown() throws Exception {	
 		app.closeDocument(m_xSDComponent);		
+		FileUtil.deleteFile(Testspace.getPath("temp"));
 	}
 	private XPropertySet load() throws Exception{
 		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, 

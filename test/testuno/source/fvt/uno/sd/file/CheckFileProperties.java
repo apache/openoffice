@@ -110,6 +110,8 @@ public class CheckFileProperties {
 	@After
 	public void tearDownDocument() {
 		app.closeDocument(m_xSDComponent);
+		m_filePath = Testspace.getPath("temp/CheckFileProperties.odp");	
+		FileUtil.deleteFile(m_filePath);
 
 	}
 
@@ -124,8 +126,6 @@ public class CheckFileProperties {
 	public static void tearDownConnection() throws InterruptedException,
 			Exception {
 		app.close();
-		//remove the temp file
-		FileUtil.deleteFile(Testspace.getPath("temp"));
 	}
 
 	/*
@@ -317,7 +317,7 @@ public class CheckFileProperties {
 		app.closeDocument(m_xSDComponent);
 		m_xSDComponent = app.loadDocument(m_filePath);
 		XDocumentProperties xDocPro2 = getDocumentProperties();
-		assertEquals("Revision number should be "+ revisionNumber, revisionNumber, xDocPro2.getEditingCycles());		
+		assertEquals("Revision number should be "+ revisionNumber+1, revisionNumber+1, xDocPro2.getEditingCycles());		
 	}
 	
 	/*
@@ -562,18 +562,14 @@ public class CheckFileProperties {
 		}
 		
 		@Test
-		public void testCustomRemovePro() throws Exception{					
+		public void testCustomRemovePro() throws Exception{		
+			addCustomPro("testPro", "value");
 			XDocumentProperties xDocPro = getDocumentProperties();
 			XPropertyContainer proContainer = xDocPro.getUserDefinedProperties();
 			XPropertySet xProSet = (XPropertySet)UnoRuntime.queryInterface(
 					XPropertySet.class, proContainer);
 			XPropertySetInfo xproSetInfo = xProSet.getPropertySetInfo();
 			Property[] pros = xproSetInfo.getProperties();
-			
-			if(pros.length == 0) //if there is no custom property, add one
-			{
-				addCustomPro("testPro", "value");
-			}
 			
 			for(int i=0; i< pros.length;i++)
 			{
