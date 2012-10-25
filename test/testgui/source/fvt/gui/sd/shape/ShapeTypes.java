@@ -58,7 +58,7 @@ public class ShapeTypes {
 
 	@After
 	public void tearDown() throws Exception {
-		app.close();
+		app.stop();
 	}
 
 	/**

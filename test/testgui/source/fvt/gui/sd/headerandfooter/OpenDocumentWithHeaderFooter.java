@@ -26,6 +26,7 @@ package fvt.gui.sd.headerandfooter;
 
 import static org.junit.Assert.*;
 import static org.openoffice.test.common.Testspace.*;
+import static org.openoffice.test.vcl.Tester.sleep;
 import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
@@ -48,6 +49,7 @@ public class OpenDocumentWithHeaderFooter {
 
 	@After
 	public void tearDown() throws Exception {
+		app.stop();
 
 	}
 
@@ -81,13 +83,17 @@ public class OpenDocumentWithHeaderFooter {
 		String saveTo2 = getPath("temp/" + "AOO3.4HeaderFooter.odp");
 		FileUtil.deleteFile(saveTo2);
 		submitSaveDlg(saveTo2);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
 		app.dispatch(".uno:CloseDoc");
 
 		openStartcenter();
 		app.dispatch(".uno:Open");
 		String openFrom2 = getPath("temp/" + "AOO3.4HeaderFooter.odp");
 		submitOpenDlg(openFrom2);
-
+		sleep(3);
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
 		// end-save to odp and reopen
@@ -122,7 +128,12 @@ public class OpenDocumentWithHeaderFooter {
 		String saveTo = getPath("temp/" + "gfdd.ppt");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
-		if (alienFormatDlg.exists(3))
+		sleep(5);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		if (alienFormatDlg.exists())
 			alienFormatDlg.ok();
 		app.dispatch(".uno:CloseDoc");
 
@@ -130,7 +141,7 @@ public class OpenDocumentWithHeaderFooter {
 		app.dispatch(".uno:Open");
 		String openFrom = getPath("temp/" + "gfdd.ppt");
 		submitOpenDlg(openFrom);
-
+		sleep(5);
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
 		// end-save to ppt and reopen
@@ -146,13 +157,17 @@ public class OpenDocumentWithHeaderFooter {
 		String saveTo2 = getPath("temp/" + "gfdd.odp");
 		FileUtil.deleteFile(saveTo2);
 		submitSaveDlg(saveTo2);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
 		app.dispatch(".uno:CloseDoc");
 
 		openStartcenter();
 		app.dispatch(".uno:Open");
 		String openFrom2 = getPath("temp/" + "gfdd.odp");
 		submitOpenDlg(openFrom2);
-
+		sleep(3);
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
 		// end-save to odp and reopen

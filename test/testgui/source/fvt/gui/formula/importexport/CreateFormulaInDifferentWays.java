@@ -56,7 +56,7 @@ public class CreateFormulaInDifferentWays {
 
 	@After
 	public void tearDown() throws Exception {
-
+		app.stop();
 	}
 
 	/**
@@ -111,6 +111,11 @@ public class CreateFormulaInDifferentWays {
 		submitSaveDlg(saveTo);
 
 		// Close and reopen it
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 		app.dispatch(".uno:Open");
@@ -164,6 +169,11 @@ public class CreateFormulaInDifferentWays {
 		submitSaveDlg(saveTo);
 
 		// Close and reopen it
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 		app.dispatch(".uno:Open");

@@ -52,7 +52,7 @@ public class ValidityDialogSetting {
 
 	@After
 	public void tearDown() throws Exception {
-
+		app.stop();
 	}
 
 	/**
@@ -238,7 +238,7 @@ public class ValidityDialogSetting {
 	@Test
 	public void testAllowLessThanTextLength() {
 
-		app.dispatch(".uno:Validation");
+//		app.dispatch(".uno:Validation");
 
 		scValidityCriteriaTabpage.select();
 		scValidityCriteriaAllowList.select(7); // "Text length"

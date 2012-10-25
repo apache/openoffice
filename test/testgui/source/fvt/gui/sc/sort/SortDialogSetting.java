@@ -59,7 +59,7 @@ public class SortDialogSetting {
 
 	@After
 	public void tearDown() throws Exception {
-
+		app.stop();
 	}
 
 	/**
@@ -99,6 +99,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -226,6 +231,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -280,6 +290,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -344,6 +359,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -387,6 +407,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -505,6 +530,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -623,6 +653,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -680,6 +715,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -765,6 +805,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -837,6 +882,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 
@@ -928,6 +978,11 @@ public class SortDialogSetting {
 		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 		openStartcenter();
 

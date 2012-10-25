@@ -63,6 +63,7 @@ public class Fitler {
 	 * Verify 2+ won't be treated as 2
 	 */
 	@Ignore("Bug #120076")
+	@Test
 	public void testAutoFilterWithPlusSign() {
 		String expect = "2+";
 		SCTool.selectRange("A1");

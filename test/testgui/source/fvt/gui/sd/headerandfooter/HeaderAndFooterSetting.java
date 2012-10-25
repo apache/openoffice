@@ -64,7 +64,7 @@ public class HeaderAndFooterSetting {
 
 	@After
 	public void tearDown() throws Exception {
-
+		app.stop();
 	}
 
 	/**
@@ -546,6 +546,11 @@ public class HeaderAndFooterSetting {
 		String saveTo = getPath("temp/" + "hello.odp");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 
 		// Reopen this file
@@ -553,7 +558,7 @@ public class HeaderAndFooterSetting {
 		app.dispatch(".uno:Open");
 		String openFrom = getPath("temp/" + "hello.odp");
 		submitOpenDlg(openFrom);
-
+		sleep(5);
 		// check after reopen
 		app.dispatch(".uno:HeaderAndFooter");
 		sdHeaderAndFooterOnNotesTabPage.select();
@@ -599,6 +604,11 @@ public class HeaderAndFooterSetting {
 		String saveTo = getPath("temp/" + "hello.odp");
 		FileUtil.deleteFile(saveTo);
 		submitSaveDlg(saveTo);
+		if (activeMsgBox.exists()) {
+			activeMsgBox.yes();
+			sleep(2);
+		}
+		sleep(5);
 		app.dispatch(".uno:CloseDoc");
 
 		// Reopen this file
@@ -606,7 +616,7 @@ public class HeaderAndFooterSetting {
 		app.dispatch(".uno:Open");
 		String openFrom = getPath("temp/" + "hello.odp");
 		submitOpenDlg(openFrom);
-
+		sleep(5);
 		// check after reopen
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
