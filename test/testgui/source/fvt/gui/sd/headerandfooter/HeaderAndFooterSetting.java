@@ -122,6 +122,8 @@ public class HeaderAndFooterSetting {
 		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
+		
 	}
 
 	/**
@@ -176,6 +178,7 @@ public class HeaderAndFooterSetting {
 		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 	}
 
 	/**
@@ -228,6 +231,7 @@ public class HeaderAndFooterSetting {
 		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.cancel();
 	}
 
 	/**
@@ -258,6 +262,7 @@ public class HeaderAndFooterSetting {
 		assertEquals("Fix Date: 20120323", sdFixedDateAndTimeOnSlideInput.getText());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 	}
 
 	/**
@@ -287,6 +292,7 @@ public class HeaderAndFooterSetting {
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals(true, sdFooterNotShowOn1stSlide.isChecked());
 		assertEquals(false, sdFooterTextOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 	}
 
 	/**
@@ -340,6 +346,7 @@ public class HeaderAndFooterSetting {
 		assertEquals("", sdFixedDateAndTimeOnSlideInput.getText());
 		assertEquals("", sdFooterTextOnSlideInput.getText());
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 	}
 
 	/**
@@ -409,6 +416,7 @@ public class HeaderAndFooterSetting {
 		assertEquals(true, sdFooterTextOnSlide.isChecked());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.cancel();
 	}
 
 	/**
@@ -467,6 +475,7 @@ public class HeaderAndFooterSetting {
 		assertEquals(true, sdFooterTextOnSlide.isChecked());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 	}
 
 	/**
@@ -488,6 +497,7 @@ public class HeaderAndFooterSetting {
 		app.dispatch(".uno:HeaderAndFooter");
 		String updatedTime = sdAutoUpdateTimeFooterType.getItemText(7);
 		assertNotSame("Time can not update", currentTime, updatedTime);
+		sdHeaderAndFooterDlgSlideTab.cancel();
 	}
 
 	/**
@@ -511,6 +521,7 @@ public class HeaderAndFooterSetting {
 		String updatedTime = sdAutoUpdateTimeFooterType.getItemText(7);
 
 		assertNotSame("Time can not update", currentTime, updatedTime);
+		sdHeaderAndFooterOnNotesTabPage.cancel();
 	}
 
 	/**
@@ -570,6 +581,7 @@ public class HeaderAndFooterSetting {
 		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterOnNotesTabPage.cancel();
 	}
 
 	/**
@@ -626,5 +638,6 @@ public class HeaderAndFooterSetting {
 		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
+		sdHeaderAndFooterDlgSlideTab.cancel();
 	}
 }
