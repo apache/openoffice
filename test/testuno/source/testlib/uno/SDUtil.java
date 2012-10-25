@@ -28,9 +28,11 @@ import com.sun.star.beans.PropertyValue;
 import com.sun.star.container.XIndexAccess;
 import com.sun.star.drawing.XDrawPage;
 import com.sun.star.drawing.XDrawPagesSupplier;
+import com.sun.star.drawing.XShape;
 import com.sun.star.drawing.XShapes;
 import com.sun.star.frame.XStorable;
 import com.sun.star.lang.XComponent;
+import com.sun.star.uno.Exception;
 import com.sun.star.uno.UnoRuntime;
 
 /**
@@ -57,6 +59,28 @@ public class SDUtil {
 		XShapes m_xdrawShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 		return m_xdrawShapes.getByIndex(index);
 	}
+	
+	public static Object[] getShapesOfPageByType(XDrawPage xDrawPage, String shapeType) throws Exception {
+		XShapes m_xdrawShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+		int count = m_xdrawShapes.getCount();
+		Object[] temp = new Object[count];
+		int shapeNum=0;
+		for(int i=0;i<count; i++)
+		{
+			Object shape = m_xdrawShapes.getByIndex(i);
+			XShape xshape = (XShape)UnoRuntime.queryInterface(XShape.class, shape);		
+			String type = xshape.getShapeType();
+			if(type.equals(shapeType))
+			{
+				temp[shapeNum] = shape;
+				shapeNum++;				
+			}
+		}
+		
+		Object[] shapes = new Object[shapeNum];
+		System.arraycopy(temp, 0, shapes, 0, shapeNum);
+		return shapes;
+	} 
 	
 	public static void saveFileAs(XComponent sdComponent, String fileName, String extName) throws Exception {
 		

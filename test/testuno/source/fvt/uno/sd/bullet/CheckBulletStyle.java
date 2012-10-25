@@ -67,7 +67,7 @@ public class CheckBulletStyle {
 
 	@Before
 	public void setUpDocument() throws Exception {
-		m_filePath = Testspace.getPath("temp/CheckBulletStyle.odt");
+		m_filePath = Testspace.getPath("temp/CheckBulletStyle.odp");
 		if(FileUtil.fileExists(m_filePath))
 		{	//load			
 			m_xReplace = load();
@@ -116,6 +116,9 @@ public class CheckBulletStyle {
 	@After
 	public void tearDownDocument() {
 		app.closeDocument(m_xSDComponent);
+		
+		//remove the temp file
+		FileUtil.deleteFile(Testspace.getPath("temp"));
 	}
 
 	@BeforeClass
@@ -127,8 +130,7 @@ public class CheckBulletStyle {
 	public static void tearDownConnection() throws InterruptedException,
 			Exception {
 		app.close();
-		//remove the temp file
-		FileUtil.deleteFile(Testspace.getPath("temp"));
+		
 	}
 
 	@Test

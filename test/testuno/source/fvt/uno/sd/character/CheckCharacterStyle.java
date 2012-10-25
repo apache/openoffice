@@ -34,6 +34,7 @@
 package fvt.uno.sd.character;
 
 import static org.junit.Assert.*;
+import static testlib.uno.SDUtil.saveFileAs;
 
 import java.io.File;
 import org.junit.After;
@@ -85,8 +86,7 @@ public class CheckCharacterStyle {
 	@AfterClass
 	public static void tearDownConnection() throws Exception {
 		app.close();
-		//remove the temp file
-		FileUtil.deleteFile(Testspace.getPath("temp"));
+		
 	}
 
 	/**
@@ -94,7 +94,7 @@ public class CheckCharacterStyle {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		filePath = Testspace.getPath("temp/CheckCharacterStyle.odt");
+		filePath = Testspace.getPath("temp/CheckCharacterStyle.odp");
 		if(FileUtil.fileExists(filePath))
 		{	//load
 			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, 
@@ -124,12 +124,16 @@ public class CheckCharacterStyle {
 	public void tearDown() throws Exception {
 		//close odp after each test
 		m_xSDComponent.dispose();
+		
+		//remove the temp file
+		FileUtil.deleteFile(Testspace.getPath("temp"));
 	}
 
 	@Test
 	public void testFontColor() throws Exception{
 		//set font color to red
 		xtextProps.setPropertyValue("CharColor", 0xFF0000);
+//		saveFileAs(m_xSDComponent, filePath, ".odp");
 		app.saveDocument(m_xSDComponent, filePath);
 		m_xSDComponent.dispose();
 		//reopen
