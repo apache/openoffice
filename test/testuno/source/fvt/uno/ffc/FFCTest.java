@@ -66,7 +66,7 @@ import com.sun.star.uno.UnoRuntime;
  *New Saved ODF Format file -> PDF
  *
  */
-@RunWith(FileProvider.class)
+//@RunWith(FileProvider.class)
 public class FFCTest {
 	@Rule
 	public Logger log = Logger.getLogger(this, false);
@@ -75,7 +75,7 @@ public class FFCTest {
 	private static  UnoApp app = null;
 	private static Map<String, String> filterMap = new HashMap<String, String>();
 	@FileRepos
-	public static String suiteDir = "../suite/";
+//	public static String suiteDir = "../suite/";
 	private String fileURL = "";
 	private String operateFilePath = "";
 	private static Map<String, String> formatMap = new HashMap<String, String>();
