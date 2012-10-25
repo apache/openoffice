@@ -24,6 +24,7 @@
 
 package fvt.gui.sd.shape;
 import static org.junit.Assert.*;
+import static org.openoffice.test.vcl.Tester.sleep;
 import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
@@ -58,6 +59,7 @@ public class ShapeTypes {
 
 	@After
 	public void tearDown() throws Exception {
+		sleep(3);
 		if (sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}

@@ -64,6 +64,7 @@ public class HeaderAndFooterSetting {
 
 	@After
 	public void tearDown() throws Exception {
+		sleep(3);
 		if (sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}
