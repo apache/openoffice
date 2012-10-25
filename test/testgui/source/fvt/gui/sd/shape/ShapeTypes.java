@@ -58,6 +58,9 @@ public class ShapeTypes {
 
 	@After
 	public void tearDown() throws Exception {
+		if (sdNavigatorDlg.exists()) {
+			sdNavigatorDlg.close();
+		}
 		app.stop();
 	}
 

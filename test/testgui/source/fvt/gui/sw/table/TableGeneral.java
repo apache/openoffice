@@ -55,7 +55,7 @@ public class TableGeneral {
 
 	@After
 	public void tearDown() throws Exception {
-		app.close();
+		app.stop();
 	}
 
 	@Test
