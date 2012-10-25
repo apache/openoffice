@@ -30,7 +30,7 @@ import java.util.logging.Level;
 
 /**
  * Install openoffice from installation package before running test
- *
+ * 
  */
 public class Installer implements Runnable {
 	private static Logger log = Logger.getLogger(Installer.class);
@@ -38,7 +38,7 @@ public class Installer implements Runnable {
 	File downloadUrl = Testspace.getFile("download/url");
 	File installDir = Testspace.getFile("install");
 	File installTempDir = Testspace.getFile("install_temp");
-	
+
 	@Override
 	public void run() {
 		String prop = System.getProperty("singleton");
@@ -61,11 +61,11 @@ public class Installer implements Runnable {
 						throw new RuntimeException(MessageFormat.format("{0} can not be downloaded!", prop));
 					FileUtil.writeStringToFile(downloadUrl, prop);
 				} else {
-					boolean[] skipped = {false};
+					boolean[] skipped = { false };
 					packFile = FileUtil.download(prop, downloadDir, true, skipped);
 					if (packFile == null)
 						throw new RuntimeException(MessageFormat.format("{0} can not be downloaded!", prop));
-					if (("true".equalsIgnoreCase(onlyNewProp) || "yes".equalsIgnoreCase(onlyNewProp)) && skipped[0]) 
+					if (("true".equalsIgnoreCase(onlyNewProp) || "yes".equalsIgnoreCase(onlyNewProp)) && skipped[0])
 						throw new RuntimeException(MessageFormat.format("{0} is old. Test is allowed only on new build.", prop));
 				}
 			} else {
@@ -73,52 +73,52 @@ public class Installer implements Runnable {
 				if (!packFile.isFile())
 					throw new RuntimeException(MessageFormat.format("{0} does not exists or is not a file!", prop));
 			}
-			
+
 			try {
 				FileUtil.deleteFile(installDir);
 				FileUtil.deleteFile(installTempDir);
 				installTempDir.mkdirs();
 				if (packFile.getName().endsWith(".gz")) {
 					StringBuffer output = new StringBuffer();
-					if (SystemUtil.exec(new String[]{"tar", "-zxpf", packFile.getAbsolutePath(), "-C", installTempDir.getAbsolutePath()}, output) != 0)
-						throw new RuntimeException(MessageFormat.format("{0} can not be installed! Cause: {1}" , packFile, output));
+					if (SystemUtil.exec(new String[] { "tar", "-zxpf", packFile.getAbsolutePath(), "-C", installTempDir.getAbsolutePath() }, output) != 0)
+						throw new RuntimeException(MessageFormat.format("{0} can not be installed! Cause: {1}", packFile, output));
 				} else {
 					if (!FileUtil.unzip(packFile, installTempDir))
 						throw new RuntimeException(MessageFormat.format("{0} can not be installed!", packFile));
 				}
-				// On windows, if path is too long, openoffice can not be started.
+				// On windows, if path is too long, openoffice can not be
+				// started.
 				File[] files = installTempDir.listFiles();
 				if (files != null && files.length == 1 && files[0].isDirectory()) {
 					files[0].renameTo(installDir);
 				}
-				File sofficeBin = FileUtil.findFile(installDir, "soffice.bin", false);
-				if (sofficeBin == null) 
-					throw new RuntimeException(MessageFormat.format("{0} is not a valid openoffice installation package!" , packFile));
-				try {
-					String openofficeHome = sofficeBin.getParentFile().getParentFile().getCanonicalPath();
-					log.log(Level.INFO, MessageFormat.format("{0} is installed to {1}", prop, openofficeHome));
-					System.setProperty("openoffice.home", openofficeHome);
-				} catch (IOException e) {
-					//ignore, never occurs
-				}
-		
+				System.setProperty("openoffice.home", installDir.getAbsolutePath());
 			} finally {
 				FileUtil.deleteFile(installTempDir);
 			}
 		}
-		
-		 prop = System.getProperty("openoffice.home");
-		 if (!FileUtil.fileExists(prop)) {
-			 throw new RuntimeException("No OpenOffice is found!");
-		 }
-		 
-		 String[] jars = {"juh.jar", "unoil.jar", "ridl.jar", "jurt.jar"};
-		 for (String jar : jars) {
-			 File file = FileUtil.findFile(prop, jar);
-			 if (file != null)
-				 addToClassPath(file);
-		 }
-		
+
+		prop = System.getProperty("openoffice.home", installDir.getAbsolutePath());
+		File sofficeBin = FileUtil.findFile(new File(prop), "soffice.bin", false);
+		if (sofficeBin == null)
+			throw new RuntimeException(MessageFormat.format(
+					"No valid OpenOffice is found in {0}! Use system property openoffice.home to specify a valid OpenOffice installation directory.", prop));
+		try {
+			prop = sofficeBin.getParentFile().getParentFile().getCanonicalPath();
+			System.setProperty("openoffice.home", prop);
+			log.log(Level.INFO, MessageFormat.format("OpenOffice in {0} will be tested.", prop));
+		} catch (IOException e) {
+			// ignore, never occurs
+		}
+
+		String[] jars = { "juh.jar", "unoil.jar", "ridl.jar", "jurt.jar" };
+		for (String jar : jars) {
+			File file = FileUtil.findFile(prop, jar);
+
+			if (file != null)
+				addToClassPath(file);
+		}
+
 	}
 
 	public static boolean addToClassPath(File file) {
@@ -135,7 +135,7 @@ public class Installer implements Runnable {
 
 		return false;
 	}
-	
+
 	public static void main(String... args) {
 		new Installer().run();
 	}
