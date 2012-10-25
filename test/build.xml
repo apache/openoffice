@@ -155,10 +155,10 @@
 			<os family="windows" />
 		</condition>
 		<property name="test.executable" value="./run"/>
+		<property name="test.args" value="-tp bvt"/>
 		<exec executable="${test.executable}">
 			<arg value="${test.arg0}"/>
-			<arg value="-tp"/>
-			<arg value="bvt"/>
+			<arg line="${test.args}"/>
 		</exec>
 	</target>
 </project>
