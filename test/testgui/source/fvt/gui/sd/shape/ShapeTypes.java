@@ -59,7 +59,7 @@ public class ShapeTypes {
 	@After
 	public void tearDown() throws Exception {
 		if (sdNavigatorDlg.exists()) {
-			sdNavigatorDlg.close();
+			app.dispatch(".uno:Navigator");
 		}
 		app.stop();
 	}
@@ -95,6 +95,7 @@ public class ShapeTypes {
 		typeKeys("<enter>");
 		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
+
 
 	}
 	/**
