@@ -59,7 +59,7 @@ public class Benchmark {
 	
 	private static final double INTERVAL = 0.1; 
 	
-	private static int repeat = 8;
+	private static int repeat = 2;
 	
 	private int i  = 0;
 	
@@ -76,7 +76,7 @@ public class Benchmark {
 	
 	@AfterClass
 	public static void afterClass() throws Exception {
-		app.stop();
+		//app.stop();
 	}
 	
 	@Before
