@@ -136,6 +136,7 @@ public class FFCTest {
 	
 	
 	@Test(timeout=1000*60*10)
+	@Ignore
 	public void exportTest() throws Exception {
 		//MS Office Format ->ODF
 		boolean flag = false;
