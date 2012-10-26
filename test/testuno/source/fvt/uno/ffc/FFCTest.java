@@ -30,6 +30,7 @@ import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -66,7 +67,7 @@ import com.sun.star.uno.UnoRuntime;
  *New Saved ODF Format file -> PDF
  *
  */
-//@RunWith(FileProvider.class)
+@RunWith(FileProvider.class)
 public class FFCTest {
 	@Rule
 	public Logger log = Logger.getLogger(this, false);
@@ -75,7 +76,7 @@ public class FFCTest {
 	private static  UnoApp app = null;
 	private static Map<String, String> filterMap = new HashMap<String, String>();
 	@FileRepos
-//	public static String suiteDir = "../suite/";
+	public static String suiteDir = "../suite/";
 	private String fileURL = "";
 	private String operateFilePath = "";
 	private static Map<String, String> formatMap = new HashMap<String, String>();
@@ -83,7 +84,7 @@ public class FFCTest {
 	private boolean isSucceed = false;
 	private static String  tempFolder = testSpaceFile.getAbsolutePath() + File.separator + "temp";
 
-	private static String failedFilesDir  = "output/failedSampleFiles/";;
+	private static String failedFilesDir  = "output/failedSampleFiles/";
 //	@Parameters
 //	public static Collection<String[]>  data() throws Exception{
 //		initMap();
@@ -220,27 +221,28 @@ public class FFCTest {
 	
 	
 	
-//	@Test(timeout=1000*60*10)
-//	public void exportTest() throws Exception {
-//		//MS Office Format ->ODF
-//		boolean flag = false;
-//		
-//		String saveAsODF = exportAsODF(operateFilePath);
-//		System.out.println("MS ->ODF finished");
-//		//ODF->MS
-//		String savedMSFilePath = exportAsODF(saveAsODF); 
-//		File savedMSFile = new File(savedMSFilePath);
-//		Assert.assertTrue("FFC Test for file : "+ savedMSFilePath, savedMSFile.exists());
-//		System.out.println("ODF->MS Finished");
-//		
-//
-//		//Export ODF->PDF
-//		exportAsPDF(saveAsODF);
-//		System.out.println("ODF->PDF Finished");
-//		flag = true;
-//		Assert.assertTrue("FFC Test for file : "+ operateFilePath, flag);
-//		isSucceed = true;
-//	}
+	@Test(timeout=1000*60*10)
+	@Ignore
+	public void exportTest() throws Exception {
+		//MS Office Format ->ODF
+		boolean flag = false;
+		
+		String saveAsODF = exportAsODF(operateFilePath);
+		System.out.println("MS ->ODF finished");
+		//ODF->MS
+		String savedMSFilePath = exportAsODF(saveAsODF); 
+		File savedMSFile = new File(savedMSFilePath);
+		Assert.assertTrue("FFC Test for file : "+ savedMSFilePath, savedMSFile.exists());
+		System.out.println("ODF->MS Finished");
+		
+
+		//Export ODF->PDF
+		exportAsPDF(saveAsODF);
+		System.out.println("ODF->PDF Finished");
+		flag = true;
+		Assert.assertTrue("FFC Test for file : "+ operateFilePath, flag);
+		isSucceed = true;
+	}
 	private String getSuffix(String file) {
 		String lowerCaseName = file.toLowerCase();
 		String suffix = lowerCaseName.substring(lowerCaseName.lastIndexOf("."));
