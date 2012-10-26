@@ -65,7 +65,7 @@ public class DataPivotTable {
 	 * 
 	 * Verify copy and paste Data Pilot Table
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testCopyPasteDataPilotTable() {
 		// Open the sample file
@@ -149,7 +149,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while add fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testDataPilotAddFieldsAutoUpdate() {
 		// open the sample file Create DataPilotTable and verify the content
@@ -221,7 +221,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while add fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testDataPilotAddFieldsManualUpdate() {
 		// open the sample file Create DataPilotTable and verify the content
@@ -316,7 +316,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while add fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testDataPilotChangeDataFieldOptionAutoUpdate() {
 		// open the sample file Create DataPilotTable and verify the content
@@ -442,7 +442,7 @@ public class DataPivotTable {
 	 * 
 	 * Verify that Verify the Drag/Move function of Grouped field
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testDragMoveFunctionOfGroupedField() {
 		String file = prepareData("source_data01.ods");
@@ -524,7 +524,7 @@ public class DataPivotTable {
 	 * Verify that DP panel while switch focus among tables with same/different
 	 * source range.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testHideShowPanel() {
 		String file = prepareData("source_data01.ods");
@@ -619,7 +619,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while add fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testMoveFieldInSameAreaManualUpdate() {
 		String file = prepareData("source_data01.ods");
@@ -723,7 +723,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while move fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testMoveFieldToOtherAreaAutoUpdate() {
 		String file = prepareData("source_data01.ods");
@@ -804,7 +804,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while move fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testMoveFieldToOtherAreaDiscardChange() {
 		String file = prepareData("source_data01.ods");
@@ -894,7 +894,7 @@ public class DataPivotTable {
 	 * the empty table, the table size will get larger if there is another
 	 * DataPilot table exist in the larger range, there will pop a warning.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testMoveTableNarrowSpaceToShowTheTable() {
 		String file = prepareData("source_data01.ods");
@@ -964,7 +964,7 @@ public class DataPivotTable {
 	 * 
 	 * Verify the data pilot result table refresh after source data changed
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testOneMRowDataPilotRefresh() {
 		String file = prepareData("source_data01.ods");
@@ -1025,7 +1025,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while remove fields
 	 * on panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testRemoveFieldsDiscardChange() {
 		String file = prepareData("source_data01.ods");
@@ -1113,7 +1113,7 @@ public class DataPivotTable {
 	 * 
 	 * Verify the Remove function of Grouped field
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testRemoveFunctionOfGroupedField() {
 		String file = prepareData("source_data01.ods");
@@ -1183,7 +1183,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while rename fields
 	 * on panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testRenameFieldAutoUpdate() {
 		String file = prepareData("source_data01.ods");
@@ -1299,7 +1299,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while add fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testSortFunctionInGroupedField() {
 		String file = prepareData("source_data01.ods");
@@ -1389,7 +1389,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while add fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testSubtotalsFunctionInGroupedField() {
 		String file = prepareData("source_data01.ods");
@@ -1534,7 +1534,7 @@ public class DataPivotTable {
 	 * Verify that DP panel will be synchronized with table while add fields on
 	 * panel.
 	 */
-	@Ignore("DataPilot in symphony is totally not the same in AOO")
+	@Ignore("Case Obsolete in AOO")
 	@Test
 	public void testTopNFunctionInGroupedField() {
 		String file = prepareData("source_data01.ods");
