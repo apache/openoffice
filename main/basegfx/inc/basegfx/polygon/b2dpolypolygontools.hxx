@@ -98,7 +98,13 @@ namespace basegfx
 		*/
 		B2DRange getRange(const B2DPolyPolygon& rCandidate);
 			
-		/** Apply given LineDashing to given polyPolygon
+		// get signed area of polygon
+		double getSignedArea(const B2DPolyPolygon& rCandidate);
+
+		// get area of polygon
+		double getArea(const B2DPolyPolygon& rCandidate);
+
+        /** Apply given LineDashing to given polyPolygon
 
 			For a description see applyLineDashing in b2dpolygontoos.hxx
 		*/
