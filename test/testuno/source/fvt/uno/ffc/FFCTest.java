@@ -24,6 +24,7 @@ import java.io.FilenameFilter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
 
 import junit.framework.Assert;
 
@@ -85,98 +86,7 @@ public class FFCTest {
 	private static String  tempFolder = testSpaceFile.getAbsolutePath() + File.separator + "temp";
 
 	private static String failedFilesDir  = "output/failedSampleFiles/";
-//	@Parameters
-//	public static Collection<String[]>  data() throws Exception{
-//		initMap();
-//		ArrayList<String[]> list = new ArrayList<String[]>();
-//		List<String> suitePathList = new ArrayList<String>();
-//		FileReader fileReader = null;
-//		BufferedReader reader = null;
-//		File suites = new File(suiteDir);
-//		if (suites.exists() && suites.list().length > 0) {
-//			isSuiteFileExist = true;
-//			for(File file: suites.listFiles()){
-//				if(FileUtil.getFileExtName(file.getName()).toLowerCase().equals("suite")){
-//					suitePathList.add(file.getAbsolutePath());
-//				}
-//			}
-//			try{
-//				for (String suitePath : suitePathList) {
-//					fileReader = new FileReader(suitePath);			
-//					reader = new BufferedReader(fileReader);
-//					String line = null;
-//					while((line = reader.readLine()) != null){
-//						if (!"".equals(line)) {
-//							list.add(new String[]{line});
-//						}
-//					} 
-//					if(reader != null){
-//						reader.close();
-//						reader = null;
-//					}
-//					if(fileReader != null){
-//						fileReader.close();
-//						fileReader = null;					
-//					}
-//				}
-//			
-//			}catch(Exception e){
-//				throw new Exception("throw exception when read suite file. " + e.getMessage());			
-//			}finally{
-//				try{
-//					if(reader != null){
-//						reader.close();
-//						reader = null;
-//					}
-//					if(fileReader != null){
-//						fileReader.close();
-//						fileReader = null;					
-//					}
-//				}catch(Exception io){
-//				}
-//			}
-//		} else {// run files from ffc data directory
-//			File ffcDataHome = new File("data\\ffc");
-//			getFileList(ffcDataHome, list);
-//		}
-//	
-//		return list;
-//	}
-//	
-	public static void getFileList(File dir, List<String[]> list) {
-		File[] files = dir.listFiles(new FilenameFilter() {
-			@Override
-			public boolean accept(File dir, String name) {
-				File file =  new File(dir.getAbsolutePath() + File.separator + name);
-				String filename = new File(name).getName().toLowerCase(); 
-				boolean accept;
-				if (file.isDirectory()) {
-					accept = true;
-				} else {
-					accept =  filename.endsWith(".docx")
-					|| filename.endsWith(".pptx")
-					|| filename.endsWith(".xlsx")
-					|| filename.endsWith(".ppt")
-					|| filename.endsWith(".xls")
-					|| 	filename.endsWith(".doc") ;
-				}
-				
-				return accept;
-			}
-			
-		});
-		if (files == null)
-			return;
-
-		for (File file : files) {
-			if (file.isDirectory()) {
-				getFileList(file, list);
-			} else {
-				list.add(new String[] {file.getAbsolutePath().replace(dir.getParentFile().getAbsolutePath(), "").replace("\\", "/")});
-			
-			}
-		}
-	}
+	private String runedScenarios = "";
 	
 	public FFCTest(String url) {
 		this.fileURL = url;
@@ -185,7 +95,8 @@ public class FFCTest {
 	@BeforeClass
 	public static void init() {
 		initMap();
-		
+		File failedDirec = Testspace.getFile(failedFilesDir);
+		FileUtil.deleteFile(failedDirec);
 		//Disable automation
 		
 		OpenOffice defaultOpenOffice = new OpenOffice();
@@ -194,15 +105,16 @@ public class FFCTest {
 		defaultOpenOffice.addArgs("-invisible", "-conversionmode", "-headless", "-hidemenu");
 		app = new UnoApp(defaultOpenOffice);
 		
-		File failedDirec = Testspace.getFile(failedFilesDir);
+		
 		failedDirec.mkdirs();
+		
 	}
 	
 	@Before
 	public void setUp() throws Exception {
 		operateFilePath =  Testspace.prepareData(fileURL);
 				
-	
+		runedScenarios = "";
 		app.start();	
 	}
 	@After
@@ -210,6 +122,8 @@ public class FFCTest {
 		if (!isSucceed) {
 			FileUtil.copyFile(operateFilePath, Testspace.getFile(failedFilesDir).getAbsolutePath());
 			FileUtil.appendStringToFile( Testspace.getFile(failedFilesDir + File.separator + "failedFiles.files").getAbsolutePath(), fileURL +"\r\n");
+			String failedMessage = fileURL +"\r\n" + runedScenarios;
+			FileUtil.appendStringToFile( Testspace.getFile(failedFilesDir + File.separator + "failedFiles_scenarios.files").getAbsolutePath(), failedMessage);
 			app.close();
 			SystemUtil.killProcess("WerFault.*");
 			SystemUtil.sleep(2);
@@ -222,23 +136,25 @@ public class FFCTest {
 	
 	
 	@Test(timeout=1000*60*10)
-	@Ignore
 	public void exportTest() throws Exception {
 		//MS Office Format ->ODF
 		boolean flag = false;
 		
 		String saveAsODF = exportAsODF(operateFilePath);
 		System.out.println("MS ->ODF finished");
+		runedScenarios = "MS ->ODF finished" + "\r\n";
 		//ODF->MS
 		String savedMSFilePath = exportAsODF(saveAsODF); 
 		File savedMSFile = new File(savedMSFilePath);
 		Assert.assertTrue("FFC Test for file : "+ savedMSFilePath, savedMSFile.exists());
+		
 		System.out.println("ODF->MS Finished");
 		
-
+		runedScenarios = runedScenarios + "ODF->MS Finished" + "\r\n";
 		//Export ODF->PDF
 		exportAsPDF(saveAsODF);
 		System.out.println("ODF->PDF Finished");
+		runedScenarios = runedScenarios + "ODF->PDF Finished" + "\r\n";
 		flag = true;
 		Assert.assertTrue("FFC Test for file : "+ operateFilePath, flag);
 		isSucceed = true;
