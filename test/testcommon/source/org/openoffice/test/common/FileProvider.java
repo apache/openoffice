@@ -145,39 +145,42 @@ public class FileProvider extends Suite {
 		}
 
 		File reposFile = new File(repos);
-		if (!reposFile.exists())
-			throw new InitializationError(String.format("repos '%s' does not exists ", repos));
-
-		ArrayList<ArrayList<String>> filterItems = new ArrayList<ArrayList<String>>();
-		if (filter != null) {
-			String[] args = SystemUtil.parseCommandLine(filter);
-			ArrayList<String> filterItem = new ArrayList<String>();
-			for (int i = 0; i < args.length; i++) {
-				String a = args[i];
-				if (a.equals("-f")) {
-					if (filterItem.size() > 0) 
-						filterItems.add(filterItem);
-					filterItem = new ArrayList<String>();
-				} else {
-					filterItem.add(a);
+//		if (!reposFile.exists())
+//			
+//			throw new InitializationError(String.format("repos '%s' does not exists ", repos));
+		
+		if(reposFile.exists()){
+			ArrayList<ArrayList<String>> filterItems = new ArrayList<ArrayList<String>>();
+			if (filter != null) {
+				String[] args = SystemUtil.parseCommandLine(filter);
+				ArrayList<String> filterItem = new ArrayList<String>();
+				for (int i = 0; i < args.length; i++) {
+					String a = args[i];
+					if (a.equals("-f")) {
+						if (filterItem.size() > 0) 
+							filterItems.add(filterItem);
+						filterItem = new ArrayList<String>();
+					} else {
+						filterItem.add(a);
+					}
 				}
+				
+				if (filterItem.size() > 0) 
+					filterItems.add(filterItem);
 			}
 			
-			if (filterItem.size() > 0) 
-				filterItems.add(filterItem);
-		}
-		
-		
-		ArrayList<Object[]> list = new ArrayList<Object[]>();
-		if (!collectFromFile(reposFile, list, filterItems))
-			if (!collectFromFiles(reposFile, list, filterItems))
-				collectFromDir(reposFile, list, filterItems);
-		
-		for (int i = 0; i < list.size(); i++) {
-			Object[] t = list.get(i);
-			for  (int j = 0; j < repeat; j++) {
-				TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t, i * repeat + j);
-				runners.add(runner);
+			
+			ArrayList<Object[]> list = new ArrayList<Object[]>();
+			if (!collectFromFile(reposFile, list, filterItems))
+				if (!collectFromFiles(reposFile, list, filterItems))
+					collectFromDir(reposFile, list, filterItems);
+			
+			for (int i = 0; i < list.size(); i++) {
+				Object[] t = list.get(i);
+				for  (int j = 0; j < repeat; j++) {
+					TestClassRunnerForParameters runner = new TestClassRunnerForParameters(getTestClass().getJavaClass(), t, i * repeat + j);
+					runners.add(runner);
+				}
 			}
 		}
 
