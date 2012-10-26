@@ -48,17 +48,7 @@ public class Run {
 	private static void printUsage(String msg, int code) {
 		if (msg != null)
 			System.out.println(msg);
-		System.out.println("Usage: [options]");
-		System.out.println("	-D<property>=<value>	Set system property");
-		System.out.println("	-propertyfile file  	Set system property from property file");
-		System.out.println("	-r	Set a runnable which will be executed before all tests start.");
-		System.out.println("	-l	Set a test listeners.");
-		System.out.println("	-tp	Define a test suite with test packages separated by comma. Format: [name]:org.package1,org.package2...");
-		System.out.println("	-tc	Define a test suite with test classes separated by comma. Format: [name]:org.package.Class1,org.package.Class2...");
-		System.out.println("	-tm	Define a test suite with test methods separated by comma. Format: [name]:org.package.Class1.method1,org.package.Class2.method1...");
-		System.out.println("Example:");
-		System.out.println("-tp mytest:com.test");
-		System.out.println("-tc mytest:com.test.TestName1,com.test.TestName2");
+		System.out.print(FileUtil.readStreamAsString(Run.class.getResourceAsStream("Run.help"), "utf-8"));
 		System.exit(code);
 	}
 	
