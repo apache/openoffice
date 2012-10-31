@@ -547,7 +547,7 @@ public class SystemUtil {
 			while (urls.hasMoreElements()) {
 				URL url = urls.nextElement();
 				if ("file".equals(url.getProtocol())) {
-					findClasses(packageName, new File(url.getFile()), classes);
+					findClasses(packageName, new File(url.toURI()), classes);
 				} else if ("jar".equals(url.getProtocol())) {
 					String urlStr = url.toString();
 					int i = urlStr.indexOf('!');
