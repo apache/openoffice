@@ -1179,6 +1179,10 @@ void SmDocShell::Execute(SfxRequest& rReq)
                     DBG_UNHANDLED_EXCEPTION();
                 }
 			}
+
+            SmModule  *pModule = SM_MOD();
+            if ( pModule && pModule->GetConfig()->IsAutoRedraw() )
+                UpdateText();
             Repaint();
 			SfxViewFrame* pFrm = SfxViewFrame::GetFirst( this );
 			while( pFrm )

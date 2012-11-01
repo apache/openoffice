@@ -98,7 +98,7 @@ class SwDocShell;
 #define VIEWOPT_2_KEEPASPECTRATIO   0x00020000L
 #define VIEWOPT_2_GRFKEEPZOOM	    0x00040000L
 #define VIEWOPT_2_EXECHYPERLINKS    0x00080000L
-#define VIEWOPT_2_PREVENT_TIPS      0x00100000L
+#define VIEWOPT_2_CONTENT_TIPS      0x00100000L
 #define VIEWOPT_2_RESERVED3         0x00200000L
 #define VIEWOPT_2_RESERVED4         0x00400000L
 #define VIEWOPT_2_PRTFORMAT         0x00800000L
@@ -446,8 +446,8 @@ public:
 		{ return nUIOptions & VIEWOPT_2_GRFKEEPZOOM ? TRUE : FALSE;	  }
 	BOOL 	IsExecHyperlinks() const
 		{ return nUIOptions & VIEWOPT_2_EXECHYPERLINKS ? TRUE : FALSE; }
-    BOOL    IsPreventTips() const
-        { return nUIOptions & VIEWOPT_2_PREVENT_TIPS ? TRUE : FALSE; }
+    BOOL    IsShowContentTips() const
+        { return nUIOptions & VIEWOPT_2_CONTENT_TIPS ? TRUE : FALSE; }
 	BOOL 	IsPrtFormat() const
 		{ return nUIOptions & VIEWOPT_2_PRTFORMAT ? TRUE : FALSE; }
 
@@ -465,8 +465,8 @@ public:
 		{ b ? (nUIOptions |= VIEWOPT_2_GRFKEEPZOOM ) : ( nUIOptions &= ~VIEWOPT_2_GRFKEEPZOOM); }
 	void SetExecHyperlinks( BOOL b)
 		{ b ? (nUIOptions |= VIEWOPT_2_EXECHYPERLINKS) : (nUIOptions &= ~VIEWOPT_2_EXECHYPERLINKS); }
-    void SetPreventTips( BOOL b)
-        { b ? (nUIOptions |= VIEWOPT_2_PREVENT_TIPS) : (nUIOptions &= ~VIEWOPT_2_PREVENT_TIPS); }
+    void SetShowContentTips( BOOL b)
+        { b ? (nUIOptions |= VIEWOPT_2_CONTENT_TIPS) : (nUIOptions &= ~VIEWOPT_2_CONTENT_TIPS); }
     void SetPrtFormat( BOOL b)
 		{ b ? (nUIOptions |= VIEWOPT_2_PRTFORMAT) : (nUIOptions &= ~VIEWOPT_2_PRTFORMAT); }
 

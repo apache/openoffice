@@ -212,56 +212,14 @@ namespace svgio
             }
         }
 
-        void SvgStyleAttributes::checkForCssStyle(const rtl::OUString& rClassStr) const
-        {
-            if(!mpCssStyleParent)
-            {
-                const SvgDocument& rDocument = mrOwner.getDocument();
-                const SvgStyleAttributes* pNew = 0;
-
-                if(rDocument.hasSvgStyleAttributesById())
-                {
-                    if(mrOwner.getClass())
-                    {
-                        rtl::OUString aId(rtl::OUString::createFromAscii("."));
-                        aId = aId + *mrOwner.getClass();
-                        pNew = rDocument.findSvgStyleAttributesById(aId);
-
-                        if(!pNew && rClassStr.getLength())
-                        {
-                            aId = rClassStr + aId;
-                    
-                            pNew = rDocument.findSvgStyleAttributesById(aId);
-                        }
-                    }
-
-                    if(!pNew && mrOwner.getId())
-                    {
-                        pNew = rDocument.findSvgStyleAttributesById(*mrOwner.getId());
-                    }
-
-                    if(!pNew && rClassStr.getLength())
-                    {
-                        pNew = rDocument.findSvgStyleAttributesById(rClassStr);
-                    }
-                    
-                    if(pNew)
-                    {
-                        // found css style, set as parent
-                        const_cast< SvgStyleAttributes* >(this)->mpCssStyleParent = pNew;
-                    }
-                }
-            }
-        }
-
         const SvgStyleAttributes* SvgStyleAttributes::getParentStyle() const 
         { 
-            if(mpCssStyleParent)
+            if(getCssStyleParent())
             {
-                return mpCssStyleParent;
+                return getCssStyleParent();
             }
 
-            if(mrOwner.getParent()) 
+            if(mrOwner.getParent())
             {
                 return mrOwner.getParent()->getSvgStyleAttributes(); 
             }
@@ -412,6 +370,7 @@ namespace svgio
                             aSvgGradientEntryVector,
                             aStart,
                             aEnd,
+                            userSpaceOnUse != rFillGradient.getGradientUnits(),
                             rFillGradient.getSpreadMethod()));
                 }
                 else
@@ -472,6 +431,7 @@ namespace svgio
                             aSvgGradientEntryVector,
                             aStart,
                             fRadius,
+                            userSpaceOnUse != rFillGradient.getGradientUnits(),
                             rFillGradient.getSpreadMethod(),
                             bFocal ? &aFocal : 0));
                 }
@@ -1068,8 +1028,8 @@ namespace svgio
             {
                 basegfx::B2DPolyPolygon aPath(rPath);
                 const bool bNeedToCheckClipRule(SVGTokenPath == mrOwner.getType() || SVGTokenPolygon == mrOwner.getType());
-                const bool bClipPathIsNonzero(!bIsLine && bNeedToCheckClipRule && mbIsClipPathContent && mbClipRule);
-                const bool bFillRuleIsNonzero(!bIsLine && bNeedToCheckClipRule && !mbIsClipPathContent && getFillRule());
+                const bool bClipPathIsNonzero(!bIsLine && bNeedToCheckClipRule && mbIsClipPathContent && FillRule_nonzero == maClipRule);
+                const bool bFillRuleIsNonzero(!bIsLine && bNeedToCheckClipRule && !mbIsClipPathContent && FillRule_nonzero == getFillRule());
 
                 if(bClipPathIsNonzero || bFillRuleIsNonzero)
                 {
@@ -1203,10 +1163,10 @@ namespace svgio
             mpMarkerMidXLink(0),
             maMarkerEndXLink(),
             mpMarkerEndXLink(0),
-            maFillRule(true),
-            maFillRuleSet(false),
+            maFillRule(FillRule_notset),
+            maClipRule(FillRule_nonzero),
             mbIsClipPathContent(SVGTokenClipPathNode == mrOwner.getType()),
-            mbClipRule(true)
+            mbStrokeDasharraySet(false)
         {
             if(!mbIsClipPathContent)
             {
@@ -1273,13 +1233,11 @@ namespace svgio
                     {
                         if(aContent.match(commonStrings::aStrNonzero))
                         {
-                            maFillRule = true;
-                            maFillRuleSet = true;
+                            maFillRule = FillRule_nonzero;
                         }
                         else if(aContent.match(commonStrings::aStrEvenOdd))
                         {
-                            maFillRule = false;
-                            maFillRuleSet = true;
+                            maFillRule = FillRule_evenodd;
                         }
                     }
                     break;
@@ -1315,9 +1273,18 @@ namespace svgio
                 {
                     if(aContent.getLength())
                     {
+                        static rtl::OUString aStrNone(rtl::OUString::createFromAscii("none"));
                         SvgNumberVector aVector;
 
-                        if(readSvgNumberVector(aContent, aVector))
+                        if(aContent.match(aStrNone))
+                        {
+                            // #121221# The special value 'none' needs to be handled
+                            // in the sense that *when* it is set, the parent shall not
+                            // be used. Before this was only dependent on the array being
+                            // empty
+                            setStrokeDasharraySet(true);
+                        }
+                        else if(readSvgNumberVector(aContent, aVector))
                         {
                             setStrokeDasharray(aVector);
                         }
@@ -1790,11 +1757,11 @@ namespace svgio
                     {
                         if(aContent.match(commonStrings::aStrNonzero))
                         {
-                            mbClipRule = true;
+                            maClipRule = FillRule_nonzero;
                         }
                         else if(aContent.match(commonStrings::aStrEvenOdd))
                         {
-                            mbClipRule = false;
+                            maClipRule = FillRule_evenodd;
                         }
                     }
                     break;
@@ -2048,9 +2015,9 @@ namespace svgio
             return SvgNumber(1.0); 
         }
 
-        bool SvgStyleAttributes::getFillRule() const
+        const FillRule SvgStyleAttributes::getFillRule() const
         {
-            if(maFillRuleSet)
+            if(FillRule_notset != maFillRule)
             {
                 return maFillRule;
             }
@@ -2063,20 +2030,7 @@ namespace svgio
             }
 
             // default is NonZero
-            return true; 
-        }
-
-        void SvgStyleAttributes::setFillRule(const bool* pFillRule)
-        {
-            if(pFillRule)
-            {
-                maFillRuleSet = true;
-                maFillRule = *pFillRule;
-            }
-            else
-            {
-                maFillRuleSet = false;
-            }
+            return FillRule_nonzero; 
         }
 
         const SvgNumberVector& SvgStyleAttributes::getStrokeDasharray() const
@@ -2085,7 +2039,12 @@ namespace svgio
             {
                 return maStrokeDasharray;
             }
-            
+            else if(getStrokeDasharraySet())
+            {
+                // #121221# is set to empty *by purpose*, do not visit parent styles
+                return maStrokeDasharray;
+            }
+
             const SvgStyleAttributes* pSvgStyleAttributes = getParentStyle();
 
             if(pSvgStyleAttributes)

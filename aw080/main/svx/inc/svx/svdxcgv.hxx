@@ -39,6 +39,7 @@
     @return a graphical representation of the given object, as it
     appears on screen (e.g. with rotation, if any, applied).
     */
+// TTTT: Candidate for tooling and replacement ?!?
 Graphic SVX_DLLPUBLIC GetObjGraphic(const SdrObject& rObj);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

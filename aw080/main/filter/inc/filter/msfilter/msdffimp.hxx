@@ -76,6 +76,7 @@ class MSFILTER_DLLPUBLIC DffPropertyReader : public DffPropSet
 public:
 
 	sal_Int32					mnFix16Angle;
+	sal_Bool					mbRotateGranientFillWithAngle;
 
 	DffPropertyReader( const SvxMSDffManager& rManager );
 	~DffPropertyReader();
@@ -90,6 +91,7 @@ public:
 	void		SetDefaultPropSet( SvStream& rIn, sal_uInt32 nOffDgg ) const;
 	void		ApplyAttributes( SvStream& rIn, SfxItemSet& rSet ) const;
 	void		ApplyAttributes( SvStream& rIn, SfxItemSet& rSet, DffObjData& rObjData ) const;
+	void		ImportGradientColor( SfxItemSet& aSet, MSO_FillType eMSO_FillType, double dTrans = 1.0 , double dBackTrans = 1.0 ) const;
 };
 
 
@@ -645,18 +647,18 @@ public:
 //									sal_Bool bLookForEnd );
 //
 	SdrObject* ImportObj(SvStream& rSt, void* pData,
-        basegfx::B2DRange& rClientRect, const basegfx::B2DRange& rGlobalChildRect, int nCalledByGroup = 0, sal_Int32* pShapeId = NULL);
+        basegfx::B2DRange& rClientRange, const basegfx::B2DRange& rGlobalChildRange, int nCalledByGroup = 0, sal_Int32* pShapeId = NULL);
 
 	SdrObject* ImportGroup( const DffRecordHeader& rHd, SvStream& rSt, void* pData,
-        basegfx::B2DRange& rClientRect, const basegfx::B2DRange& rGlobalChildRect, int nCalledByGroup = 0, sal_Int32* pShapeId = NULL );
+        basegfx::B2DRange& rClientRange, const basegfx::B2DRange& rGlobalChildRange, int nCalledByGroup = 0, sal_Int32* pShapeId = NULL );
 
 	SdrObject* ImportShape( const DffRecordHeader& rHd, SvStream& rSt, void* pData,
-        basegfx::B2DRange& rClientRect, const basegfx::B2DRange& rGlobalChildRect, int nCalledByGroup = 0, sal_Int32* pShapeId = NULL);
+        basegfx::B2DRange& rClientRange, const basegfx::B2DRange& rGlobalChildRange, int nCalledByGroup = 0, sal_Int32* pShapeId = NULL);
 
-	basegfx::B2DRange GetGlobalChildAnchor( const DffRecordHeader& rHd, SvStream& rSt, basegfx::B2DRange& aClientRect );
+	basegfx::B2DRange GetGlobalChildAnchor( const DffRecordHeader& rHd, SvStream& rSt, basegfx::B2DRange& aClientRange );
 	void GetGroupAnchors( const DffRecordHeader& rHd, SvStream& rSt,
 		basegfx::B2DRange& rGroupClientAnchor, basegfx::B2DRange& rGroupChildAnchor,
-		const basegfx::B2DRange& rClientRect, const basegfx::B2DRange& rGlobalChildRect );
+		const basegfx::B2DRange& rClientRange, const basegfx::B2DRange& rGlobalChildRange );
 
 	inline const SvxMSDffShapeInfos* GetShapeInfos( void ) const
 		{

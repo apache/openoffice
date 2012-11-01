@@ -91,9 +91,19 @@ void XclPCItem::SetInteger( sal_Int16 nValue )
 void XclPCItem::SetError( sal_uInt16 nError )
 {
     meType = EXC_PCITEM_ERROR;
-    //! TODO convert error to string
     maText.Erase();
     mnError = nError;
+    switch( nError )
+    {
+    case 0x00: maText = String::CreateFromAscii("#NULL!"); break;
+    case 0x07: maText = String::CreateFromAscii("#DIV/0!"); break;
+    case 0x0F: maText = String::CreateFromAscii("#VALUE!" ); break;
+    case 0x17: maText = String::CreateFromAscii("#REF!"); break;
+    case 0x1D: maText = String::CreateFromAscii("#NAME?"); break;
+    case 0x24: maText = String::CreateFromAscii("#NUM!" ); break;
+    case 0x2A: maText = String::CreateFromAscii("#N/A"); break;
+    default: break;
+    }
 }
 
 void XclPCItem::SetBool( bool bValue )
@@ -130,7 +140,7 @@ bool XclPCItem::IsEmpty() const
 
 const String* XclPCItem::GetText() const
 {
-    return (meType == EXC_PCITEM_TEXT) ? &maText : 0;
+    return (meType == EXC_PCITEM_TEXT || meType == EXC_PCITEM_ERROR) ? &maText : NULL;
 }
 
 const double* XclPCItem::GetDouble() const
@@ -157,6 +167,37 @@ const bool* XclPCItem::GetBool() const
 {
     return (meType == EXC_PCITEM_BOOL) ? &mbValue : 0;
 }
+
+const String* XclPCItem::GetItemName() const
+{
+    //! TODO: use XclImpPCItem::ConvertToText(), if all conversions are available
+    if( EXC_PCITEM_BOOL == this->GetType() )
+    {
+        static String szBool[] = { String::CreateFromAscii("FALSE"), String::CreateFromAscii("TRUE") };
+
+        if( const bool* pBool = this->GetBool() )
+        {
+            return &(!!*pBool)[szBool];
+        }
+        else
+        {
+            return &0[szBool];
+        }
+    }
+    else
+    {
+        if( this->IsEmpty())
+        {
+            static String aEmptyString( String::EmptyString() );
+            return &aEmptyString;
+        }
+        else
+            return this->GetText();
+    }
+
+    return NULL;
+}
+
 
 // Field settings =============================================================
 

@@ -25,6 +25,7 @@
 #define INCLUDED_SDR_PRIMITIVE2D_SDRATTRIBUTECREATOR_HXX
 
 #include <sal/types.h>
+#include <svx/svxdllapi.h>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -38,7 +39,7 @@ namespace drawinglayer { namespace attribute {
 	class SdrFillAttribute;
 	class SdrTextAttribute;
 	class FillGradientAttribute;
-	class SdrFillBitmapAttribute;
+	class SdrFillGraphicAttribute;
 	class SdrShadowTextAttribute;
 	class SdrLineShadowTextAttribute;
 	class SdrLineFillShadowTextAttribute;
@@ -59,10 +60,10 @@ namespace drawinglayer
 	namespace primitive2d
 	{
 		// SdrAttribute creators
-		attribute::SdrLineAttribute createNewSdrLineAttribute(
+		attribute::SdrLineAttribute SVX_DLLPUBLIC createNewSdrLineAttribute(
 			const SfxItemSet& rSet);
 
-		attribute::SdrLineStartEndAttribute createNewSdrLineStartEndAttribute(
+		attribute::SdrLineStartEndAttribute SVX_DLLPUBLIC createNewSdrLineStartEndAttribute(
 			const SfxItemSet& rSet, 
 			double fWidth);
 
@@ -84,7 +85,7 @@ namespace drawinglayer
 		attribute::FillGradientAttribute createNewTransparenceGradientAttribute(
 			const SfxItemSet& rSet);
 
-		attribute::SdrFillBitmapAttribute createNewSdrFillBitmapAttribute(
+		attribute::SdrFillGraphicAttribute createNewSdrFillGraphicAttribute(
 			const SfxItemSet& rSet);
 
 		attribute::SdrShadowTextAttribute createNewSdrShadowTextAttribute(

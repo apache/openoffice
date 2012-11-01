@@ -1590,7 +1590,8 @@ void SwLinguStatistik::Flush()
 
 #endif
 
-
+namespace sw // #i120045# namespace to avoid XCode template-misoptimization
+{
 struct TransliterationChgData
 {
     xub_StrLen              nStart;
@@ -1598,6 +1599,8 @@ struct TransliterationChgData
     String                  sChanged;
     Sequence< sal_Int32 >   aOffsets;
 };
+}
+using sw::TransliterationChgData;
 
 // change text to Upper/Lower/Hiragana/Katagana/...
 void SwTxtNode::TransliterateText( 
@@ -2208,3 +2211,11 @@ bool SwTxtNode::IsAutoCompleteWordDirty() const
 //
 // Paragraph statistics end
 //
+
+//Bug 120881:Modify here for Directly Page Numbering
+sal_Bool SwTxtFrm::HasPageNumberField() 
+{
+	return GetRegisteredIn()?((SwTxtNode*)GetRegisteredIn())->HasPageNumberField():false;
+}
+//Bug 120881(End)
+

@@ -235,6 +235,7 @@ const sal_uInt8 SC_DDE_IGNOREMODE    = 255;       /// For usage in FindDdeLink()
 
 
 // -----------------------------------------------------------------------
+enum { E_MEDIUM_FLAG_NONE = 0, E_MEDIUM_FLAG_EXCEL = 1, E_MEDIUM_FLAG_MSXML = 2 };
 
 class ScDocument
 {
@@ -393,6 +394,7 @@ private:
 	sal_Bool				bInsertingFromOtherDoc;
     bool                bLoadingMedium;
     bool                bImportingXML;      // special handling of formula text
+    bool                mbImportingMSXML;
     sal_Bool                bXMLFromWrapper;    // distinguish ScXMLImportWrapper from external component
 	sal_Bool				bCalcingAfterLoad;				// in CalcAfterLoad TRUE
 	// wenn temporaer keine Listener auf/abgebaut werden sollen
@@ -508,6 +510,7 @@ public:
 //UNUSED2008-05  ScRangeData*	GetRangeAtCursor(SCCOL nCol, SCROW nRow, SCTAB nTab,
 //UNUSED2008-05                                      sal_Bool bStartOnly = sal_False) const;
 	SC_DLLPUBLIC ScRangeData*	GetRangeAtBlock( const ScRange& rBlock, String* pName=NULL ) const;
+    ScDBData*       GetDBAtTable(SCTAB nTab, ScGetDBMode eMode) const;
 
 	SC_DLLPUBLIC ScDPCollection*		GetDPCollection();
 	ScDPObject*			GetDPAtCursor(SCCOL nCol, SCROW nRow, SCTAB nTab) const;
@@ -613,8 +616,8 @@ public:
     void            SetStreamValid( SCTAB nTab, sal_Bool bSet, sal_Bool bIgnoreLock = sal_False );
     void            LockStreamValid( bool bLock );
     bool            IsStreamValidLocked() const                         { return mbStreamValidLocked; }
-    sal_Bool            IsPendingRowHeights( SCTAB nTab ) const;
-    void            SetPendingRowHeights( SCTAB nTab, sal_Bool bSet );
+    SC_DLLPUBLIC sal_Bool        IsPendingRowHeights( SCTAB nTab ) const;
+    SC_DLLPUBLIC void            SetPendingRowHeights( SCTAB nTab, sal_Bool bSet );
 	SC_DLLPUBLIC void			SetLayoutRTL( SCTAB nTab, sal_Bool bRTL );
 	SC_DLLPUBLIC sal_Bool			IsLayoutRTL( SCTAB nTab ) const;
 	sal_Bool			IsNegativePage( SCTAB nTab ) const;
@@ -958,6 +961,10 @@ public:
 										SCROW& rEndRow, sal_Bool bNotes = sal_True ) const;
 	void			InvalidateTableArea();
 
+	/*
+	Get the last cell's row number , which have visual atribute or visual data in specific table
+	*/
+	SC_DLLPUBLIC void			GetLastAttrCell( SCTAB nTab, SCCOL& rEndCol, SCROW& rEndRow ) const;
 
     SC_DLLPUBLIC sal_Bool			GetDataStart( SCTAB nTab, SCCOL& rStartCol, SCROW& rStartRow ) const;
 
@@ -1230,6 +1237,9 @@ public:
 	SC_DLLPUBLIC void			ApplyPatternAreaTab( SCCOL nStartCol, SCROW nStartRow,
 											SCCOL nEndCol, SCROW nEndRow, SCTAB nTab,
 											const ScPatternAttr& rAttr );
+	SC_DLLPUBLIC void			ApplyPooledPatternAreaTab( SCCOL nStartCol, SCROW nStartRow,
+											SCCOL nEndCol, SCROW nEndRow, SCTAB nTab,
+											const ScPatternAttr& rPooledAttr, const ScPatternAttr& rAttr );
 	SC_DLLPUBLIC void			ApplyPatternIfNumberformatIncompatible(
 							const ScRange& rRange, const ScMarkData& rMark,
 							const ScPatternAttr& rPattern, short nNewType );
@@ -1293,6 +1303,7 @@ public:
 	void			DeleteSelectionTab( SCTAB nTab, sal_uInt16 nDelFlag, const ScMarkData& rMark );
 
     SC_DLLPUBLIC void           SetColWidth( SCCOL nCol, SCTAB nTab, sal_uInt16 nNewWidth );
+	SC_DLLPUBLIC void			SetColWidthOnly( SCCOL nCol, SCTAB nTab, sal_uInt16 nNewWidth );
     SC_DLLPUBLIC void           SetRowHeight( SCROW nRow, SCTAB nTab, sal_uInt16 nNewHeight );
     SC_DLLPUBLIC void           SetRowHeightRange( SCROW nStartRow, SCROW nEndRow, SCTAB nTab,
                                             sal_uInt16 nNewHeight );
@@ -1564,6 +1575,8 @@ public:
     void            SetLoadingMedium( bool bVal );
     void            SetImportingXML( bool bVal );
     bool            IsImportingXML() const { return bImportingXML; }
+	void			SetImportingMSXML( bool bVal );
+	bool			IsImportingMSXML() const { return mbImportingMSXML; }
 	void			SetXMLFromWrapper( sal_Bool bVal );
 	sal_Bool			IsXMLFromWrapper() const { return bXMLFromWrapper; }
 	void			SetCalcingAfterLoad( sal_Bool bVal ) { bCalcingAfterLoad = bVal; }
@@ -1878,6 +1891,8 @@ private: // CLOOK-Impl-Methoden
 
 	std::map< SCTAB, ScSortParam > mSheetSortParams;
 
+public:
+    void    FillDPCache( ScDPTableDataCache * pCache, SCTAB nDocTab, SCCOL nStartCol, SCCOL nEndCol, SCROW nStartRow, SCROW nEndRow );
 };
 inline void ScDocument::GetSortParam( ScSortParam& rParam, SCTAB nTab )
 {

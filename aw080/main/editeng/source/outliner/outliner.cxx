@@ -256,9 +256,11 @@ void Outliner::Init( sal_uInt16 nMode )
 
 	pEditEngine->SetControlWord( nCtrl );
 
+    const bool bWasUndoEnabled(IsUndoEnabled());
+    EnableUndo(false);
 	ImplInitDepth( 0, GetMinDepth(), sal_False );
-
 	GetUndoManager().Clear();
+    EnableUndo(bWasUndoEnabled);
 }
 
 void Outliner::SetMaxDepth( sal_Int16 nDepth, sal_Bool bCheckParagraphs )
@@ -1229,6 +1231,12 @@ void Outliner::ImpFilterIndents( sal_uLong nFirstPara, sal_uLong nLastPara )
 	return pEditEngine->GetUndoManager();
 }
 
+::svl::IUndoManager* Outliner::SetUndoManager(::svl::IUndoManager* pNew)
+{
+	DBG_CHKTHIS(Outliner,0);
+	return pEditEngine->SetUndoManager(pNew);
+}
+
 void Outliner::ImpTextPasted( sal_uLong nStartPara, sal_uInt16 nCount )
 {
 	DBG_CHKTHIS(Outliner,0);
@@ -1905,9 +1913,15 @@ sal_uInt16 Outliner::ImplGetNumbering( sal_uInt16 nPara, const SvxNumberFormat* 
         if( pFmt == 0 )
             continue; // ignore paragraphs without bullets
             
-        // check if numbering is the same
-        if( !isSameNumbering( *pFmt, *pParaFmt ) )
+        // check if numbering less than or equal to pParaFmt
+        if( !isSameNumbering( *pFmt, *pParaFmt ) || ( pFmt->GetStart() < pParaFmt->GetStart() ) )
             break;
+
+        if (  pFmt->GetStart() > pParaFmt->GetStart() ) 
+        { 
+           nNumber += pFmt->GetStart() - pParaFmt->GetStart();
+           pParaFmt = pFmt;
+        }
 
         const SfxBoolItem& rBulletState = (const SfxBoolItem&) pEditEngine->GetParaAttrib( nPara, EE_PARA_BULLETSTATE );
 

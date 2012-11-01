@@ -1208,7 +1208,7 @@ BYTE SwW4WParser::GetDeciByte( BYTE& rByteVal )
 	register BOOL Ok = FALSE;
 	BYTE nCode;
 
-	while( this )
+	while (true)
 	{
 		n =  ReadChar();
 		if ( '0' > n || '9' < n )   // eof durch 0 abgedeckt
@@ -1260,6 +1260,7 @@ BYTE SwW4WParser::GetHexByte( BYTE& rHexVal )
 	if( c1 >= '0' && c1 <= '9' )        nRet = (c1 - '0');
 	else if( c1 >= 'A' && c1 <= 'F' )   nRet = (c1 - 'A' + 10);
 	else if( c1 >= 'a' && c1 <= 'f' )   nRet = (c1 - 'a' + 10);
+    else { return 0; }
 
 	if( W4WR_RED == c2 || W4WR_TXTERM == c2 ){
 		rHexVal = (BYTE)nRet;
@@ -2483,7 +2484,8 @@ void SwW4WParser::Read_NewTabTable()		// (NTB)
 				BYTE nType = aTabTypesArr[ nTabPos / 2 ];
 
 				nTmp = nTabPos & 1 ? nType & 0x0f : (nType & 0xf0) >> 4;
-				if (nTmp <= 4){ 		// no virtual Tab
+                if (nTmp < (sizeof(aAdjustArr)/sizeof(aAdjustArr[0])))
+                {       // no virtual Tab
 					aTabStop.GetAdjustment() = aAdjustArr[nTmp];
 
 					if( bTabLeadings && aTabLeadingArr[ nTabPos ] )

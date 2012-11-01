@@ -2118,12 +2118,13 @@ void SdrModel::setLock( bool bLock )
 {
 	if(mbModelLocked != bLock)
 	{
+        // #120437# need to set first, else ImpReformatAllEdgeObjects will do nothing
+		mbModelLocked = bLock;
+
 		if(!bLock)
 		{
 			ImpReformatAllEdgeObjects();
 		}
-
-		mbModelLocked = bLock;
 	}
 }
 
@@ -2331,6 +2332,16 @@ bool SdrModel::IsWriter() const
 {
 	return false;
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// i120668, move from the header files, add delete action
+
+void SdrModel::SetColorTable(XColorTable* pTable) { delete mpColorTable; mpColorTable = pTable; }
+void SdrModel::SetDashList(XDashList* pList) { delete mpDashList; mpDashList = pList; }
+void SdrModel::SetLineEndList(XLineEndList* pList) { delete mpLineEndList; mpLineEndList = pList; }
+void SdrModel::SetHatchList(XHatchList* pList) { delete mpHatchList; mpHatchList = pList; }
+void SdrModel::SetGradientList(XGradientList* pList) { delete mpGradientList; mpGradientList = pList; }
+void SdrModel::SetBitmapList(XBitmapList* pList) { delete mpBitmapList; mpBitmapList = pList; }
 
 ::std::set< SdrView* > SdrModel::getSdrViews() const
 {

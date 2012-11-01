@@ -383,7 +383,7 @@ namespace sw
     {
 
         bool IsPlausableSingleWordSection(const SwFrmFmt &rTitleFmt,
-            const SwFrmFmt &rFollowFmt)
+            const SwFrmFmt &rFollowFmt, sal_Int8 nDocType )
         {
             bool bPlausableTitlePage = true;
 
@@ -405,8 +405,10 @@ namespace sw
             {
                 HdFtDistanceGlue aOne(rTitleFmt.GetAttrSet());
                 HdFtDistanceGlue aTwo(rFollowFmt.GetAttrSet());
+                //if one doesn't own a footer, then assume it equals with the other one.
+                const sal_Bool bCheckFooter = ( aOne.HasFooter() && aTwo.HasFooter() ) ? sal_True : sal_False;
                 //e.g. #i14509#
-                if (!aOne.EqualTopBottom(aTwo))
+                if (!aOne.EqualTopBottom(aTwo) && nDocType != 1 && bCheckFooter )
                     bPlausableTitlePage = false;
             }
             return bPlausableTitlePage;
@@ -522,6 +524,10 @@ namespace sw
                 return true;
             if (nB == RES_TXTATR_CHARFMT)
                 return false;
+            if (nA == RES_TXTATR_INETFMT)
+                return true;
+            if (nB == RES_TXTATR_INETFMT)
+               return false;
             return nA < nB;
         }
 
@@ -875,8 +881,9 @@ namespace sw
                     }
                     else if (nChar == '/')
                     {
-                        // MM We have to escape '/' in case it's used as a char
-                        rParams.Replace(nI, 1, CREATE_CONST_ASC("\\/"));
+						if(!(IsPreviousAM(rParams, nI) && IsNextPM(rParams, nI)))
+                            // MM We have to escape '/' in case it's used as a char
+                            rParams.Replace(nI, 1, CREATE_CONST_ASC("\\/"));
                         // rParams.Insert( nI, '\\' );
                         nI++;
                         nLen++;
@@ -1015,6 +1022,34 @@ namespace sw
             return nKey;
         }
 
+		sal_Bool IsPreviousAM(String& rParams, xub_StrLen nPos){
+			xub_StrLen nPos1 = nPos - 1;
+			xub_StrLen nPos2 = nPos - 2;
+
+			if(nPos1 > nPos || nPos2 > nPos){
+				return sal_False;
+			}else{
+				return (
+					(rParams.GetChar(nPos1) == 'M'||rParams.GetChar(nPos1) == 'm')&&
+					(rParams.GetChar(nPos2) == 'A'||rParams.GetChar(nPos2) == 'a')
+					);
+			}
+		}
+		sal_Bool IsNextPM(String& rParams, xub_StrLen nPos){
+			xub_StrLen nPos1 = nPos + 1;
+			xub_StrLen nPos2 = nPos + 2;
+
+
+			if(nPos1 >= rParams.Len() - 1 || nPos2 > rParams.Len() - 1){
+				return sal_False;
+			}else{
+				return (
+					(rParams.GetChar(nPos1) == 'P'||rParams.GetChar(nPos1) == 'p')&&
+					(rParams.GetChar(nPos2) == 'M'||rParams.GetChar(nPos2) == 'm')
+					);
+			}
+
+		}
         bool IsNotAM(String& rParams, xub_StrLen nPos)
         {
             return (

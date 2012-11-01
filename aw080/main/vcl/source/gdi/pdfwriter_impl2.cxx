@@ -132,10 +132,16 @@ void PDFWriterImpl::implWriteBitmapEx( const Point& i_rPoint, const Size& i_rSiz
 					aNewBmpSize.Width() = FRound( fMaxPixelX );
 					aNewBmpSize.Height() = FRound( fMaxPixelX / fBmpWH);
 				}
-				if( aNewBmpSize.Width() && aNewBmpSize.Height() )
-					aBitmapEx.Scale( aNewBmpSize );
+				
+                if( aNewBmpSize.Width() && aNewBmpSize.Height() )
+                {
+                    // #121233# Use best quality for PDF exports
+					aBitmapEx.Scale( aNewBmpSize, BMP_SCALE_BESTQUALITY );
+                }
 				else
+                {
 					aBitmapEx.SetEmpty();
+                }
 			}
 		}
 
@@ -886,7 +892,7 @@ void PDFWriterImpl::playMetafile( const GDIMetaFile& i_rMtf, vcl::PDFExtOutDevDa
 					    else
 					    {
 					        Region aReg( pA->GetRegion() );
-					        m_rOuterFace.SetClipRegion( aReg.ConvertToB2DPolyPolygon() );
+					        m_rOuterFace.SetClipRegion( aReg.GetAsB2DPolyPolygon() );
 					    }
 					}
 					else
@@ -905,7 +911,7 @@ void PDFWriterImpl::playMetafile( const GDIMetaFile& i_rMtf, vcl::PDFExtOutDevDa
 				{
 				    const MetaISectRegionClipRegionAction* pA = (const MetaISectRegionClipRegionAction*) pAction;
 				    Region aReg( pA->GetRegion() );
-				    m_rOuterFace.IntersectClipRegion( aReg.ConvertToB2DPolyPolygon() );
+				    m_rOuterFace.IntersectClipRegion( aReg.GetAsB2DPolyPolygon() );
 				}
 				break;
 

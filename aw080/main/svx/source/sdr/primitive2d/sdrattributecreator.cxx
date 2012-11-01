@@ -47,10 +47,10 @@
 #include <svx/xgrscit.hxx>
 #include <svx/xflhtit.hxx>
 #include <svx/xflbckit.hxx>
-#include <drawinglayer/attribute/sdrfillbitmapattribute.hxx>
+#include <drawinglayer/attribute/sdrfillgraphicattribute.hxx>
 #include <basegfx/polygon/b2dlinegeometry.hxx>
 #include <svx/svdotext.hxx>
-#include <drawinglayer/attribute/fillbitmapattribute.hxx>
+#include <drawinglayer/attribute/fillgraphicattribute.hxx>
 #include <svx/sdr/attribute/sdrtextattribute.hxx>
 #include <svx/xbtmpit.hxx>
 #include <svl/itempool.hxx>
@@ -398,7 +398,7 @@ namespace drawinglayer
 					const Color aColor(((const XFillColorItem&)(rSet.Get(XATTR_FILLCOLOR))).GetColorValue());
 					attribute::FillGradientAttribute aGradient;
 					attribute::FillHatchAttribute aHatch;
-					attribute::SdrFillBitmapAttribute aBitmap;
+					attribute::SdrFillGraphicAttribute aFillGraphic;
 
 					switch(eStyle)
 					{
@@ -454,13 +454,14 @@ namespace drawinglayer
 								(double)rHatch.GetDistance(),
 								(double)rHatch.GetAngle() * F_PI1800,
 								aColorB.getBColor(),
+                                3, // same default as VCL, a minimum of three discrete units (pixels) offset
 								((const XFillBackgroundItem&)(rSet.Get(XATTR_FILLBACKGROUND))).GetValue());
 							
 							break;
 						}
 						case XFILL_BITMAP :
 						{
-							aBitmap = createNewSdrFillBitmapAttribute(rSet);
+							aFillGraphic = createNewSdrFillGraphicAttribute(rSet);
 							break;
 						}
 					}
@@ -470,7 +471,7 @@ namespace drawinglayer
 						aColor.getBColor(),
 						aGradient, 
 						aHatch, 
-						aBitmap);
+						aFillGraphic);
 				}
 			}
 
@@ -585,46 +586,59 @@ namespace drawinglayer
 			return attribute::FillGradientAttribute();
 		}
 
-		attribute::SdrFillBitmapAttribute createNewSdrFillBitmapAttribute(const SfxItemSet& rSet)
+		attribute::SdrFillGraphicAttribute createNewSdrFillGraphicAttribute(const SfxItemSet& rSet)
 		{
-			BitmapEx aBitmapEx(((const XFillBitmapItem&)(rSet.Get(XATTR_FILLBITMAP))).GetGraphicObject().GetGraphic().GetBitmapEx());
-			
-			// make sure it's not empty, use default instead
-			if(aBitmapEx.IsEmpty())
-			{
-                // #i118485# Add PrefMapMode and PrefSize to avoid mini-tiling and
-                // expensive primitive processing in this case. Use 10x10 cm
-				aBitmapEx = Bitmap(Size(4,4), 8);
-                aBitmapEx.SetPrefMapMode(MapMode(MAP_100TH_MM));
-                aBitmapEx.SetPrefSize(Size(10000.0, 10000.0));
-			}
+            Graphic aGraphic(((const XFillBitmapItem&)(rSet.Get(XATTR_FILLBITMAP))).GetGraphicObject().GetGraphic());
 
-			// if there is no logical size, create a size from pixel size and set MapMode accordingly
-			if(0L == aBitmapEx.GetPrefSize().Width() || 0L == aBitmapEx.GetPrefSize().Height())
-			{
-				aBitmapEx.SetPrefSize(aBitmapEx.GetSizePixel());
-				aBitmapEx.SetPrefMapMode(MAP_PIXEL);
-			}
-			
-			// convert size and MapMode to destination logical size and MapMode. The created
-			// bitmap must have a valid logical size (PrefSize)
-			const MapUnit aDestinationMapUnit((MapUnit)rSet.GetPool()->GetMetric(0));
+            if(!(GRAPHIC_BITMAP == aGraphic.GetType() || GRAPHIC_GDIMETAFILE == aGraphic.GetType()))
+            {
+                // no content if not bitmap or metafile
+                OSL_ENSURE(false, "No fill graphic in SfxItemSet (!)");
+                return attribute::SdrFillGraphicAttribute();
+            }
 
-			if(aBitmapEx.GetPrefMapMode() != aDestinationMapUnit)
-			{
-				// #i100360# for MAP_PIXEL, LogicToLogic will not work properly,
-                // so fallback to Application::GetDefaultDevice()
-    			if(MAP_PIXEL == aBitmapEx.GetPrefMapMode().GetMapUnit())
+            Size aPrefSize(aGraphic.GetPrefSize());
+
+            if(!aPrefSize.Width() || !aPrefSize.Height())
+            {
+                // if there is no logical size, create a size from pixel size and set MapMode accordingly
+                if(GRAPHIC_BITMAP == aGraphic.GetType())
                 {
-    				aBitmapEx.SetPrefSize(Application::GetDefaultDevice()->PixelToLogic(
-	    				aBitmapEx.GetPrefSize(), aDestinationMapUnit));
+                    aGraphic.SetPrefSize(aGraphic.GetBitmapEx().GetSizePixel());
+                    aGraphic.SetPrefMapMode(MAP_PIXEL);
+                }
+            }
+
+            if(!aPrefSize.Width() || !aPrefSize.Height())
+            {
+                // no content if no size
+                OSL_ENSURE(false, "Graphic has no size in SfxItemSet (!)");
+                return attribute::SdrFillGraphicAttribute();
+            }
+
+            // convert size and MapMode to destination logical size and MapMode
+            const MapUnit aDestinationMapUnit((MapUnit)rSet.GetPool()->GetMetric(0));
+
+            if(aGraphic.GetPrefMapMode() != aDestinationMapUnit)
+            {
+                // #i100360# for MAP_PIXEL, LogicToLogic will not work properly,
+                // so fallback to Application::GetDefaultDevice()
+                if(MAP_PIXEL == aGraphic.GetPrefMapMode().GetMapUnit())
+                {
+                    aGraphic.SetPrefSize(
+                        Application::GetDefaultDevice()->PixelToLogic(
+                            aGraphic.GetPrefSize(), 
+                            aDestinationMapUnit));
                 }
                 else
                 {
-                    aBitmapEx.SetPrefSize(OutputDevice::LogicToLogic(
-	    				aBitmapEx.GetPrefSize(), aBitmapEx.GetPrefMapMode(), aDestinationMapUnit));
+                    aGraphic.SetPrefSize(
+                        OutputDevice::LogicToLogic(
+                            aGraphic.GetPrefSize(), 
+                            aGraphic.GetPrefMapMode(), 
+                            aDestinationMapUnit));
                 }
-			}
+            }
 
 			// get size
 			const basegfx::B2DVector aSize(
@@ -637,8 +651,8 @@ namespace drawinglayer
 				(double)((const SfxUInt16Item&) (rSet.Get(XATTR_FILLBMP_POSOFFSETX))).GetValue(),
 				(double)((const SfxUInt16Item&) (rSet.Get(XATTR_FILLBMP_POSOFFSETY))).GetValue());
 
-			return attribute::SdrFillBitmapAttribute(
-				aBitmapEx,
+			return attribute::SdrFillGraphicAttribute(
+				aGraphic,
 				aSize,
 				aOffset,
 				aOffsetPosition,

@@ -313,6 +313,7 @@ public:
 	void 		SetError( SCCOL nCol, SCROW nRow, sal_uInt16 nError);
 
 	void		GetString( SCCOL nCol, SCROW nRow, String& rString );
+    void    FillDPCache( ScDPTableDataCache * pCache, SCCOL nStartCol, SCCOL nEndCol, SCROW nStartRow, SCROW nEndRow );
 	void		GetInputString( SCCOL nCol, SCROW nRow, String& rString );
 	double		GetValue( const ScAddress& rPos ) const
 					{
@@ -417,6 +418,10 @@ public:
 	sal_Bool		GetPrintAreaVer( SCCOL nStartCol, SCCOL nEndCol,
 								SCROW& rEndRow, sal_Bool bNotes ) const;
 
+	/*
+	Get the last cell's postion, which has visual attribute or data and has max row number among all columns.
+	*/
+	void		GetLastAttrCell( SCCOL& rEndCol, SCROW& rEndRow ) const;
 	sal_Bool		GetDataStart( SCCOL& rStartCol, SCROW& rStartRow ) const;
 
 	void		ExtendPrintArea( OutputDevice* pDev,
@@ -546,6 +551,8 @@ public:
 	void		ApplyAttr( SCCOL nCol, SCROW nRow, const SfxPoolItem& rAttr );
 	void		ApplyPattern( SCCOL nCol, SCROW nRow, const ScPatternAttr& rAttr );
 	void		ApplyPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow, const ScPatternAttr& rAttr );
+	void		ApplyPooledPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow, const ScPatternAttr& rPooledAttr, const ScPatternAttr& rAttr ); 
+
 	void		SetPattern( const ScAddress& rPos, const ScPatternAttr& rAttr, sal_Bool bPutToPool = sal_False )
 					{
                         if (ValidColRow(rPos.Col(),rPos.Row()))
@@ -621,6 +628,7 @@ public:
 									const Fraction& rZoomX, const Fraction& rZoomY,
 									sal_Bool bWidth, sal_Bool bTotalSize );
 	void		SetColWidth( SCCOL nCol, sal_uInt16 nNewWidth );
+	void		SetColWidthOnly( SCCOL nCol, sal_uInt16 nNewWidth );
 	void		SetRowHeight( SCROW nRow, sal_uInt16 nNewHeight );
 	sal_Bool		SetRowHeightRange( SCROW nStartRow, SCROW nEndRow, sal_uInt16 nNewHeight,
 									double nPPTX, double nPPTY );

@@ -48,6 +48,14 @@ using namespace ::com::sun::star;
 
 #define JPEGMINREAD 512
 
+namespace {
+    // Arbitrary maximal size (256M) of bitmaps after they have been decoded.
+    // It is used to prevent excessive swapping due to large buffers in
+    // virtual memory.
+    // May have to be tuned if it turns out to be too large or too small.
+    static const sal_uInt64 MAX_BITMAP_BYTE_SIZE = sal_uInt64(256 * 1024 * 1024);
+}
+
 // -------------
 // - (C-Calls) -
 // -------------
@@ -335,11 +343,25 @@ void* JPEGReader::CreateBitmap( void* pParam )
                         ((JPEGCreateBitmapParam*)pParam)->nHeight );
     sal_Bool    bGray = ((JPEGCreateBitmapParam*)pParam)->bGray != 0;
 
-	void* pBmpBuf = NULL;
+    void* pBmpBuf = NULL;
 
-	if( pAcc )
-		aBmp.ReleaseAccess( pAcc );
+    if( pAcc )
+    {
+        aBmp.ReleaseAccess( pAcc );
+        aBmp = Bitmap();
+        pAcc = NULL;
+    }
 
+    // Check if the bitmap is untypically large.
+    if (aSize.Width()<=0
+        || aSize.Height()<=0
+        || sal_uInt64(aSize.Width())*sal_uInt64(aSize.Height())*(bGray?1:3) > MAX_BITMAP_BYTE_SIZE)
+    {
+        // Do not try to acquire resources for the large bitmap or to
+        // read the bitmap into memory.
+        return NULL;
+    }
+    
 	if( bGray )
 	{
 		BitmapPalette aGrayPal( 256 );
@@ -354,7 +376,7 @@ void* JPEGReader::CreateBitmap( void* pParam )
 	}
 	else
 		aBmp = Bitmap( aSize, 24 );
-   
+
     if ( bSetLogSize )
     {
         unsigned long nUnit = ((JPEGCreateBitmapParam*)pParam)->density_unit;
@@ -376,8 +398,8 @@ void* JPEGReader::CreateBitmap( void* pParam )
 	
     pAcc = aBmp.AcquireWriteAccess();
 
-	if( pAcc )
-	{
+    if( pAcc )
+    {
         long nAlignedWidth;
 
 		const sal_uLong nFormat = pAcc->GetScanlineFormat();
@@ -402,13 +424,14 @@ void* JPEGReader::CreateBitmap( void* pParam )
         if ( pBmpBuf == 0 )
         {
             aBmp.ReleaseAccess( pAcc );
+            aBmp = Bitmap();
             pAcc = NULL;
         }
 
         ((JPEGCreateBitmapParam*)pParam)->nAlignedWidth = nAlignedWidth;
-	}
+    }
 
-	return pBmpBuf;
+    return pBmpBuf;
 }
 
 // ------------------------------------------------------------------------
@@ -637,7 +660,7 @@ void* JPEGWriter::GetScanline( long nY )
 			{
 				for( long nX = 0L; nX < nWidth; nX++ )
 				{
-					aColor = pAcc->GetPaletteColor( (sal_uInt8) pAcc->GetPixel( nY, nX ) );
+					aColor = pAcc->GetPaletteColor( pAcc->GetPixelIndex( nY, nX ) );
 					*pTmp++ = aColor.GetRed();
 					if ( bGreys )
 						continue;
@@ -698,7 +721,7 @@ sal_Bool JPEGWriter::Write( const Graphic& rGraphic )
 			BitmapColor aColor;
 			for( long nX = 0L; bIsGrey && ( nX < nWidth ); nX++ )
 			{
-				aColor = pAcc->HasPalette() ? pAcc->GetPaletteColor( (sal_uInt8) pAcc->GetPixel( nY, nX ) )
+				aColor = pAcc->HasPalette() ? pAcc->GetPaletteColor( pAcc->GetPixelIndex( nY, nX ) )
 											: pAcc->GetPixel( nY, nX );
 				bIsGrey = ( aColor.GetRed() == aColor.GetGreen() ) && ( aColor.GetRed() == aColor.GetBlue() );
 			}

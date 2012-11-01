@@ -37,6 +37,7 @@
 #include <com/sun/star/text/XText.hpp>
 #include <com/sun/star/geometry/RealPoint2D.hpp>
 #include <com/sun/star/util/DateTime.hpp>
+#include <com/sun/star/drawing/BitmapMode.hpp>
 #include <unotools/streamwrap.hxx>
 #include <filter/msfilter/svdfppt.hxx>
 #include <svx/xpoly.hxx>
@@ -1072,6 +1073,12 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 						break;
 
 						default :
+						{
+							if ( nTextFlags == PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT )
+								eTHA = SDRTEXTHORZADJUST_LEFT;
+							else if ( nTextFlags == PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT )
+								eTHA = SDRTEXTHORZADJUST_RIGHT;
+						}
 						break;
 					}
 					nMinFrameHeight = basegfx::fround(rTextRect.getHeight()) - ( nTextTop + nTextBottom );
@@ -1177,13 +1184,17 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 					}
 					if ( bVerticalText )
 					{
-						bAutoGrowWidth = bFitShapeToText;	// bFitShapeToText; can't be used, because we cut the text if it is too height,
+						bAutoGrowWidth = bFitShapeToText;
 						bAutoGrowHeight = sal_False;
 					}
 					else
 					{
 						bAutoGrowWidth = sal_False;
-						bAutoGrowHeight = sal_True;			// bFitShapeToText;	can't be used, because we cut the text if it is too height,
+
+                        // #119885# re-activationg bFitShapeToText here, could not find deeper explanations
+                        // for it (it was from 2005). Keeping the old commeht here for reference
+                        // old comment: // bFitShapeToText;	can't be used, because we cut the text if it is too height,
+						bAutoGrowHeight = bFitShapeToText;
 					}
 				}
 				pTObj->SetMergedItem( SvxFrameDirectionItem( bVerticalText ? FRMDIR_VERT_TOP_RIGHT : FRMDIR_HORI_LEFT_TOP, EE_PARA_WRITINGDIR ) );
@@ -2456,7 +2467,6 @@ SdrObject* SdrPowerPointImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* 
 				rOutliner.SetStyleSheet( 0, pSheet );
 		}
 		rOutliner.SetVertical( pTextObj->GetVertical() );
-		sal_Int16 nLastStartNumbering = -1;
 		const PPTParagraphObj* pPreviousParagraph = NULL;
 		for ( PPTParagraphObj* pPara = pTextObj->First(); pPara; pPara = pTextObj->Next() )
 		{
@@ -2553,19 +2563,6 @@ SdrObject* SdrPowerPointImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* 
 				if ( !nIsBullet2 )
 					aParagraphAttribs.Put( SfxBoolItem( EE_PARA_BULLETSTATE, sal_False ) );
 
-				if ( oStartNumbering )
-				{
-					if ( *oStartNumbering != nLastStartNumbering )
-						rOutliner.SetNumberingStartValue( nParaIndex, *oStartNumbering );
-					else
-						rOutliner.SetNumberingStartValue( nParaIndex, -1 );		
-					nLastStartNumbering = *oStartNumbering;
-				}
-				else
-				{
-					nLastStartNumbering = -1;
-					rOutliner.SetNumberingStartValue( nParaIndex, nLastStartNumbering );
-				}
 
 				pPreviousParagraph = pPara;
 				if ( !aSelection.nStartPos )	// in PPT empty paragraphs never gets a bullet
@@ -3898,8 +3895,72 @@ sal_Bool PPTNumberFormatCreator::ImplGetExtNumberFormat( SdrPowerPointImport& rM
 				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( ")" ) ) );
 			}
 			break;
+			case 16: // Simplified Chinese.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH );
+			}
+			break;			
+			case 17: // Simplified Chinese with single-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH );
+				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( "." ) ) );
+			}
+			break;
+			case 18: // Double byte circle numbers.
+			case 19: // Wingdings white circle numbers.
+			case 20: // Wingdings black circle numbers.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_CIRCLE_NUMBER );
+			}
+			break;
+			case 21: // Traditional Chinese.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH_TW );
+			}
+			break;
+			case 22: // Traditional Chinese with single-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH_TW );
+				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( "." ) ) );
+			}
+			break;
+			case 26: // Japanese/Korean.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_LOWER_ZH );
+			}
+			break;
+			case 27: // Japanese/Korean with single-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_LOWER_ZH );
+				rNumberFormat.SetSuffix( String( RTL_CONSTASCII_USTRINGPARAM( "." ) ) );
+			}
+			break;
+			case 28: // Double-byte Arabic numbers.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_FULL_WIDTH_ARABIC );
+			}
+			break;
+			case 29: // Double-byte Arabic numbers with double-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_FULL_WIDTH_ARABIC );
+				rNumberFormat.SetSuffix( String( sal_Unicode(0xff0e) ) );
+			}
+			break;
+			case 38: // Japanese with double-byte period.
+			{
+				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_LOWER_ZH ); // No such type. Instead with Lower Chinese Number
+				rNumberFormat.SetSuffix( String( sal_Unicode(0xff0e) ) );
+			}
+			break;
 		}
 		rStartNumbering = boost::optional< sal_Int16 >( nAnmScheme >> 16 );
+		sal_Int16 nBuStart = *rStartNumbering;
+		//The Seventh bit of nBuFlags that specifies whether fBulletHasAutoNumber exists,
+		//and fBulletHasAutoNumber that specifies whether this paragraph has an automatic numbering scheme.  
+		if ( ( nBuFlags & 0x02000000 ) && ( nBuStart != 1 ))
+		{
+			rNumberFormat.SetStart( static_cast<sal_uInt16>(nBuStart) );
+		}
 	}
 	return bHardAttribute;
 }
@@ -4321,6 +4382,18 @@ void PPTParaSheet::Read( SdrPowerPointImport&
 	}
 }
 
+void PPTParaSheet::UpdateBulletRelSize(  sal_uInt32 nLevel, sal_uInt16 nFontHeight )
+{
+	if ( maParaLevel[ nLevel ].mnBulletHeight > 0x7fff ) // a negative value is the absolute bullet height
+	{
+		sal_Int16  nBulletRelSize = ( sal_Int16 )maParaLevel[ nLevel ].mnBulletHeight;
+		nBulletRelSize = nFontHeight ? ((-nBulletRelSize) * 100 ) / nFontHeight : 100;
+		if ( nBulletRelSize < 0 ) //bullet size over flow
+			nBulletRelSize = 100; 
+		maParaLevel[ nLevel ].mnBulletHeight = nBulletRelSize;
+	}
+}
+
 PPTStyleSheet::PPTStyleSheet( const DffRecordHeader& rSlideHd, SvStream& rIn, SdrPowerPointImport& rManager,
                                 const PPTTextCharacterStyleAtomInterpreter& /*rTxCFStyle*/, const PPTTextParagraphStyleAtomInterpreter& rTxPFStyle,
 									const PPTTextSpecInfo& rTextSpecInfo ) :
@@ -4391,6 +4464,7 @@ PPTStyleSheet::PPTStyleSheet( const DffRecordHeader& rSlideHd, SvStream& rIn, Sd
                         }
                     }
 					mpCharSheet[ TSS_TYPE_TEXT_IN_SHAPE ]->Read( rIn, sal_True, nLev, bFirst );
+					mpParaSheet[ TSS_TYPE_TEXT_IN_SHAPE ]->UpdateBulletRelSize(  nLev, mpCharSheet[ TSS_TYPE_TEXT_IN_SHAPE ]->maCharLevel[ nLev ].mnFontHeight );
 					bFirst = sal_False;
 					nLev++;
 				}
@@ -4479,6 +4553,7 @@ PPTStyleSheet::PPTStyleSheet( const DffRecordHeader& rSlideHd, SvStream& rIn, Sd
 				}
 				mpParaSheet[ nInstance ]->Read( rManager, rIn, sal_True, nLev, bFirst );
 				mpCharSheet[ nInstance ]->Read( rIn, sal_True, nLev, bFirst );
+				mpParaSheet[ nInstance ]->UpdateBulletRelSize(  nLev, mpCharSheet[ nInstance ]->maCharLevel[ nLev ].mnFontHeight );
 				bFirst = sal_False;
 				nLev++;
 			}
@@ -4576,6 +4651,7 @@ PPTStyleSheet::PPTStyleSheet( const DffRecordHeader& rSlideHd, SvStream& rIn, Sd
                             }
                         }
 						mpCharSheet[ TSS_TYPE_TEXT_IN_SHAPE ]->Read( rIn, sal_True, nLev, bFirst );
+						mpParaSheet[ TSS_TYPE_TEXT_IN_SHAPE ]->UpdateBulletRelSize(  nLev, mpCharSheet[ TSS_TYPE_TEXT_IN_SHAPE ]->maCharLevel[ nLev ].mnFontHeight );
 						bFirst = sal_False;
 						nLev++;
 					}
@@ -5173,7 +5249,7 @@ void PPTStyleTextPropReader::ReadParaProps( SvStream& rIn, SdrPowerPointImport& 
             {
                 rIn >> aSet.mpArry[ PPT_ParaAttr_BulletHeight ];
                 if ( ! ( ( nMask & ( 1 << PPT_ParaAttr_BuHardHeight ) )
-                         && ( nBulFlg && ( 1 << PPT_ParaAttr_BuHardHeight ) ) ) )
+                         && ( nBulFlg & ( 1 << PPT_ParaAttr_BuHardHeight ) ) ) )
                     aSet.mnAttrSet ^= 0x40;
             }
             if ( nMask & 0x0020 )	// buColor
@@ -5197,9 +5273,15 @@ void PPTStyleTextPropReader::ReadParaProps( SvStream& rIn, SdrPowerPointImport& 
             if ( nMask & 0x4000 )	// pfSpaceAfter
                 rIn >> aSet.mpArry[ PPT_ParaAttr_LowerDist ];
             if ( nMask & 0x100 )	// pfLeftMargin
-                rIn >> nDummy16;
+            {
+                rIn >> aSet.mpArry[ PPT_ParaAttr_TextOfs ];
+                aSet.mnAttrSet |= 1 << PPT_ParaAttr_TextOfs;
+            }
             if ( nMask & 0x400 )	// pfIndent
-                rIn >> nDummy16;
+            {
+                rIn >> aSet.mpArry[ PPT_ParaAttr_BulletOfs ];
+                aSet.mnAttrSet |= 1 << PPT_ParaAttr_BulletOfs;
+            }
             if ( nMask & 0x8000 )	// pfDefaultTabSize
                 rIn >> nDummy16;
             if ( nMask & 0x100000 )	// pfTabStops
@@ -5231,9 +5313,10 @@ void PPTStyleTextPropReader::ReadParaProps( SvStream& rIn, SdrPowerPointImport& 
         else
             nCharCount = nStringLen;
 
-        if ( rRuler.GetTextOfs( aParaPropSet.pParaSet->mnDepth, aSet.mpArry[ PPT_ParaAttr_TextOfs ] ) )
+        //if the textofs attr has been read at above, need not to reset.
+        if ( ( !( aSet.mnAttrSet & 1 << PPT_ParaAttr_TextOfs ) ) && rRuler.GetTextOfs( aParaPropSet.pParaSet->mnDepth, aSet.mpArry[ PPT_ParaAttr_TextOfs ] ) )
             aSet.mnAttrSet |= 1 << PPT_ParaAttr_TextOfs;
-        if ( rRuler.GetBulletOfs( aParaPropSet.pParaSet->mnDepth, aSet.mpArry[ PPT_ParaAttr_BulletOfs ] ) )
+        if ( ( !( aSet.mnAttrSet & 1 << PPT_ParaAttr_BulletOfs ) ) && rRuler.GetBulletOfs( aParaPropSet.pParaSet->mnDepth, aSet.mpArry[ PPT_ParaAttr_BulletOfs ] ) )
             aSet.mnAttrSet |= 1 << PPT_ParaAttr_BulletOfs;
         if ( rRuler.GetDefaultTab( aParaPropSet.pParaSet->mnDepth, aSet.mpArry[ PPT_ParaAttr_DefaultTab ] ) )
             aSet.mnAttrSet |= 1 << PPT_ParaAttr_DefaultTab;
@@ -5883,7 +5966,7 @@ void PPTPortionObj::ApplyTo(  SfxItemSet& rSet, SdrPowerPointImport& rManager, s
 								{
 									for( long nX = 0L; nX < nWidth; nX++ )
 									{
-										const BitmapColor& rCol = pAcc->GetPaletteColor( (sal_uInt8) pAcc->GetPixel( nY, nX ) );
+										const BitmapColor& rCol = pAcc->GetPaletteColor( pAcc->GetPixelIndex( nY, nX ) );
 										nRt+=rCol.GetRed(); nGn+=rCol.GetGreen(); nBl+=rCol.GetBlue();
 									}
 								}
@@ -6468,7 +6551,10 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
 		rSet.Put( SdrTextFixedCellHeightItem( sal_True ), SDRATTR_TEXT_USEFIXEDCELLHEIGHT );
 		SvxLineSpacingItem aItem( 200, EE_PARA_SBL );
 		if ( nVal2 <= 0 )
+		{
 			aItem.SetLineHeight( (sal_uInt16)( rManager.ScalePoint( -nVal2 ) / 8 ) );
+			aItem.GetLineSpaceRule() = SVX_LINE_SPACE_FIX;  
+		}
 		else
 		{
             sal_uInt8 nPropLineSpace = (sal_uInt8)nVal2;
@@ -6527,6 +6613,8 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
         SvxTabStopItem aTabItem( 0, 0, SVX_TAB_ADJUST_DEFAULT, EE_PARA_TABS );
 		if ( GetTabCount() )
 		{
+			//paragraph offset = MIN(first_line_offset, hanging_offset)
+			sal_uInt32 nParaOffset = Min( nTextOfs2, nTab );
 			for ( i = 0; i < GetTabCount(); i++ )
 			{
 				SvxTabAdjust eTabAdjust;
@@ -6538,8 +6626,8 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
 					case 3 :	eTabAdjust = SVX_TAB_ADJUST_DECIMAL; break;
 					default :	eTabAdjust = SVX_TAB_ADJUST_LEFT;
 				}
-				if ( nTab > nTextOfs2 )
-					aTabItem.Insert( SvxTabStop( (sal_uInt16)( ( ( nTab - nTextOfs2 ) * 2540 ) / 576 ), eTabAdjust ) );
+				if ( nTab > nParaOffset )//If tab stop greater than paragraph offset
+					aTabItem.Insert( SvxTabStop( ( ( (long( nTab - nTextOfs2 )) * 2540 ) / 576 ), eTabAdjust ) );
 			}
 			nLatestManTab = nTab;
 		}
@@ -7630,6 +7718,16 @@ void ApplyCellAttributes( const SdrObject* pObj, Reference< XCell >& xCell )
 			eVA = drawing::TextVerticalAdjust_BOTTOM;
 		xPropSet->setPropertyValue( sTextVerticalAdjust, Any( eVA ) );
 
+		//set textHorizontalAdjust and TextWritingMode attr
+		const sal_Int32 eHA(((const SdrMetricItem&)pObj->GetMergedItem(SDRATTR_TEXT_HORZADJUST)).GetValue());
+		const SvxFrameDirection eDirection = (const SvxFrameDirection)((( const SvxFrameDirectionItem&)pObj->GetMergedItem(EE_PARA_WRITINGDIR)).GetValue());
+		static const rtl::OUString	sHorizontalAdjust( RTL_CONSTASCII_USTRINGPARAM( "TextHorizontalAdjust" ) );
+		static const rtl::OUString	sWritingMode( RTL_CONSTASCII_USTRINGPARAM("TextWritingMode") );
+		xPropSet->setPropertyValue(  sHorizontalAdjust , Any( eHA ) );
+		if ( eDirection == FRMDIR_VERT_TOP_RIGHT )
+		{//vertical writing
+			xPropSet->setPropertyValue(  sWritingMode , Any( ::com::sun::star::text::WritingMode_TB_RL ) );
+		}
 		SfxItemSet aSet( pObj->GetMergedItemSet() );
 		XFillStyle eFillStyle(((XFillStyleItem&)pObj->GetMergedItem( XATTR_FILLSTYLE )).GetValue());
 		::com::sun::star::drawing::FillStyle eFS( com::sun::star::drawing::FillStyle_NONE );
@@ -7678,6 +7776,16 @@ void ApplyCellAttributes( const SdrObject* pObj, Reference< XCell >& xCell )
 
 					static const rtl::OUString sFillBitmapURL( String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapURL" ) ) );
 					xPropSet->setPropertyValue( sFillBitmapURL, Any( aURL ) );
+
+					static const rtl::OUString sFillBitmapMode( String( RTL_CONSTASCII_USTRINGPARAM( "FillBitmapMode" ) ) );
+					const XFillBmpStretchItem aStretchItem(( const XFillBmpStretchItem&)pObj->GetMergedItem( XATTR_FILLBMP_STRETCH ));
+					const XFillBmpTileItem aTileItem(( const XFillBmpTileItem&)pObj->GetMergedItem( XATTR_FILLBMP_TILE ));
+					if( aTileItem.GetValue() )
+						xPropSet->setPropertyValue( sFillBitmapMode, Any( com::sun::star::drawing::BitmapMode_REPEAT ) );
+					else if( aStretchItem.GetValue() )
+						xPropSet->setPropertyValue( sFillBitmapMode, Any( com::sun::star::drawing::BitmapMode_STRETCH ) );
+					else
+						xPropSet->setPropertyValue( sFillBitmapMode, Any( com::sun::star::drawing::BitmapMode_NO_REPEAT ) );
 				}
 			break;
 			case XFILL_NONE :
@@ -7883,6 +7991,13 @@ SdrObject* SdrPowerPointImport::CreateTable( SdrObject* pGroup, sal_uInt32* pTab
 							if ( pPtr->pBObj == pPartObj )
 								pPtr->pBObj = NULL;
 						}
+						//In MS, the one_row_one_col table is made up of five shape,the connector is connected to some part of a table. 
+						//but in AOO, the connector is connected to the whole group table,so the connector obj is a group table when export by AOO.
+						//should process this situation when import.
+						if ( pPtr->pAObj == pGroup )
+							pPtr->pAObj = pTable;
+						if ( pPtr->pBObj == pGroup )
+							pPtr->pBObj = pTable;
 					}
 				}
 				pTable->uno_unlock();
@@ -7912,4 +8027,140 @@ SdrObject* SdrPowerPointImport::CreateTable( SdrObject* pGroup, sal_uInt32* pTab
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+sal_Bool SdrPowerPointImport::IsVerticalText() const
+{
+	sal_Bool bVerticalText = sal_False;
+	if ( IsProperty( DFF_Prop_txflTextFlow ) )
+	{
+		MSO_TextFlow eTextFlow = (MSO_TextFlow)( GetPropertyValue( DFF_Prop_txflTextFlow ) & 0xFFFF );
+		switch( eTextFlow )
+		{
+		case mso_txflTtoBA :		            // Top to Bottom @-font, above -> below
+		case mso_txflTtoBN :					// Top to Bottom non-@, above -> below
+		case mso_txflVertN :					// Vertical, non-@, above -> below
+			bVerticalText = !bVerticalText;
+			break;
+		default: break;
+		}
+	}
+	
+	return bVerticalText;
+}
 
+void	SdrPowerPointImport::ApplyTextAnchorAttributes( PPTTextObj& rTextObj, SfxItemSet& rSet ) const
+{
+	SdrTextVertAdjust eTVA;
+	SdrTextHorzAdjust eTHA;
+	
+	sal_uInt32 nTextFlags = rTextObj.GetTextFlags();
+
+	nTextFlags &= PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT   | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT
+		| PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_CENTER | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_BLOCK;
+	
+	if ( IsVerticalText() )
+	{
+		eTVA = SDRTEXTVERTADJUST_BLOCK;
+		eTHA = SDRTEXTHORZADJUST_CENTER;
+
+		// Textverankerung lesen
+		MSO_Anchor eTextAnchor = (MSO_Anchor)GetPropertyValue( DFF_Prop_anchorText, mso_anchorTop );
+
+		switch( eTextAnchor )
+		{
+		case mso_anchorTop:
+		case mso_anchorTopCentered:
+			eTHA = SDRTEXTHORZADJUST_RIGHT;
+			break;
+
+		case mso_anchorMiddle :
+		case mso_anchorMiddleCentered:
+			eTHA = SDRTEXTHORZADJUST_CENTER;
+			break;
+
+		case mso_anchorBottom:
+		case mso_anchorBottomCentered:
+			eTHA = SDRTEXTHORZADJUST_LEFT;
+			break;
+
+        default:
+            break;
+		}
+		// if there is a 100% use of following attributes, the textbox can been aligned also in vertical direction
+		switch ( eTextAnchor )
+		{
+		case mso_anchorTopCentered :
+		case mso_anchorMiddleCentered :
+		case mso_anchorBottomCentered :
+			{
+				// check if it is sensible to use the centered alignment
+				sal_uInt32 nMask = PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT;
+				if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left or also right aligned pararagraphs
+					eTVA = SDRTEXTVERTADJUST_CENTER;    // the text has to be displayed using the full width;
+			}
+			break;
+
+		default :
+			{
+				if ( nTextFlags == PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT )
+					eTVA = SDRTEXTVERTADJUST_TOP;
+				else if ( nTextFlags == PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT )
+					eTVA = SDRTEXTVERTADJUST_BOTTOM;
+			}
+			break;
+		}
+	}
+	else
+	{
+		eTVA = SDRTEXTVERTADJUST_CENTER;
+		eTHA = SDRTEXTHORZADJUST_BLOCK;
+
+		// Textverankerung lesen
+		MSO_Anchor eTextAnchor = (MSO_Anchor)GetPropertyValue( DFF_Prop_anchorText, mso_anchorTop );
+
+		switch( eTextAnchor )
+		{
+		case mso_anchorTop:
+		case mso_anchorTopCentered:
+			eTVA = SDRTEXTVERTADJUST_TOP;
+			break;
+
+		case mso_anchorMiddle :
+		case mso_anchorMiddleCentered:
+			eTVA = SDRTEXTVERTADJUST_CENTER;
+			break;
+
+		case mso_anchorBottom:
+		case mso_anchorBottomCentered:
+			eTVA = SDRTEXTVERTADJUST_BOTTOM;
+			break;
+
+        default:
+            break;
+		}
+		// if there is a 100% usage of following attributes, the textbox can be aligned also in horizontal direction
+		switch ( eTextAnchor )
+		{
+		case mso_anchorTopCentered :
+		case mso_anchorMiddleCentered :
+		case mso_anchorBottomCentered :
+			{
+				// check if it is sensible to use the centered alignment
+				sal_uInt32 nMask = PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT;
+				if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left or also right aligned pararagraphs
+					eTHA = SDRTEXTHORZADJUST_CENTER;    // the text has to be displayed using the full width;
+			}
+			break;
+
+		default :
+			{
+				if ( nTextFlags == PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT )
+					eTHA = SDRTEXTHORZADJUST_LEFT;
+				else if ( nTextFlags == PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT )
+					eTHA = SDRTEXTHORZADJUST_RIGHT;
+			}
+			break;
+		}
+	}
+	rSet.Put( SdrTextVertAdjustItem( eTVA ) );
+	rSet.Put( SdrTextHorzAdjustItem( eTHA ) );
+}

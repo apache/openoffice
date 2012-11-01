@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -644,6 +642,7 @@ ScFormulaCell::ScFormulaCell() :
 	bInChangeTrack( sal_False ),
 	bTableOpDirty( sal_False ),
 	bNeedListening( sal_False ),
+	pValidRefToken( NULL ),
 	aPos(0,0,0)
 {
 }
@@ -673,6 +672,7 @@ ScFormulaCell::ScFormulaCell( ScDocument* pDoc, const ScAddress& rPos,
 	bInChangeTrack( sal_False ),
 	bTableOpDirty( sal_False ),
 	bNeedListening( sal_False ),
+	pValidRefToken( NULL ),
 	aPos( rPos )
 {
     Compile( rFormula, sal_True, eGrammar );    // bNoListening, Insert does that
@@ -704,6 +704,7 @@ ScFormulaCell::ScFormulaCell( ScDocument* pDoc, const ScAddress& rPos,
 	bInChangeTrack( sal_False ),
 	bTableOpDirty( sal_False ),
 	bNeedListening( sal_False ),
+	pValidRefToken( NULL ),
 	aPos( rPos )
 {
 	// UPN-Array erzeugen
@@ -745,6 +746,7 @@ ScFormulaCell::ScFormulaCell( const ScFormulaCell& rCell, ScDocument& rDoc, cons
 	bInChangeTrack( sal_False ),
 	bTableOpDirty( sal_False ),
 	bNeedListening( sal_False ),
+	pValidRefToken( rCell.pValidRefToken ),
 	aPos( rPos )
 {
 	pCode = (rCell.pCode) ? rCell.pCode->Clone() : NULL;
@@ -823,6 +825,7 @@ ScFormulaCell::~ScFormulaCell()
 #ifdef DBG_UTIL
 	eCellType = CELLTYPE_DESTROYED;
 #endif
+    DELETEZ(pValidRefToken);
 }
 
 void ScFormulaCell::GetFormula( rtl::OUStringBuffer& rBuffer,
@@ -1556,6 +1559,12 @@ void ScFormulaCell::InterpretTail( ScInterpretTailParameter eTailParam )
             return;
         }
         bRunning = bOldRunning;
+//-> i120962: If the cell was applied reference formula, get the valid token
+        if (pValidRefToken)
+            DELETEZ(pValidRefToken);
+        if (p->IsReferenceFunc() && p->GetLastStackRefToken())
+            pValidRefToken = static_cast<ScToken*>(p->GetLastStackRefToken()->Clone());
+//<- i120962
 
         // #i102616# For single-sheet saving consider only content changes, not format type,
         // because format type isn't set on loading (might be changed later)

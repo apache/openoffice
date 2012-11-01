@@ -1377,8 +1377,7 @@ void AnimationExporter::exportAnimEvent( SvStream& rStrm, const Reference< XAnim
 				else if ( aAny >>= fTiming )
 				{
 					bCreateEvent = sal_True;
-					if ( eTiming == Timing_INDEFINITE )
-						nBegin = (sal_Int32)( fTiming * 1000.0 );
+					nBegin = (sal_Int32)( fTiming * 1000.0 );
 				}
 			}
 			break;
@@ -2073,7 +2072,7 @@ sal_Bool AnimationExporter::getColorAny( const Any& rAny, const sal_Int16 nColor
 	Sequence< double > aHSL( 3 );
 	if ( rAny >>= nColor )		// RGB color
 	{
-		rA = (sal_uInt8)( nColor >> 24 );
+		rA = (sal_uInt8)( nColor >> 16 );
 		rB = (sal_uInt8)( nColor >> 8 );
 		rC = (sal_uInt8)( nColor );
 	}

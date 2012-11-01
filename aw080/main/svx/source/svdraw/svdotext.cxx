@@ -609,23 +609,25 @@ void SdrTextObj::TakeTextRange(SdrOutliner& rOutliner, basegfx::B2DRange& rTextR
     			// #101684#
 				bool bInEditMode = IsInEditMode();
 
-				if(!bInEditMode 
-					&& (eAniKind==SDRTEXTANI_SCROLL || eAniKind==SDRTEXTANI_ALTERNATE || eAniKind==SDRTEXTANI_SLIDE))
-	    		{
-    				// Grenzenlose Papiergroesse fuer Laufschrift
-					if(SDRTEXTANI_LEFT == eAniDirection || SDRTEXTANI_RIGHT == eAniDirection) 
-					{
-						nWdt = 1000000;
-	        		}
+			    if (!bInEditMode && (eAniKind==SDRTEXTANI_SCROLL || eAniKind==SDRTEXTANI_ALTERNATE || eAniKind==SDRTEXTANI_SLIDE))
+			    {
+				    // Grenzenlose Papiergroesse fuer Laufschrift
+				    if (eAniDirection==SDRTEXTANI_LEFT || eAniDirection==SDRTEXTANI_RIGHT) nWdt=1000000;
+				    if (eAniDirection==SDRTEXTANI_UP || eAniDirection==SDRTEXTANI_DOWN) nHgt=1000000;
+			    }
 
-					if(SDRTEXTANI_UP == eAniDirection || SDRTEXTANI_DOWN == eAniDirection) 
-					{
-						nHgt = 1000000;
-					}
-				}
+                // #119885# Do not limit/force height to geometrical frame (vice versa for vertical writing)
+                if(IsVerticalWriting())
+                {
+                    nWdt = 1000000;
+                }
+                else
+                {
+                    nHgt = 1000000;
+                }
 
-    			rOutliner.SetMaxAutoPaperSize(Size(nWdt,nHgt));
-	        }
+			    rOutliner.SetMaxAutoPaperSize(Size(nWdt,nHgt));
+    		}
 
 		    // #103516# New try with _BLOCK for hor and ver after completely
 		    // supporting full width for vertical text.

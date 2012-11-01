@@ -49,6 +49,7 @@ using ::com::sun::star::uno::Exception;
 using ::com::sun::star::uno::Reference;
 using ::com::sun::star::uno::UNO_QUERY;
 using ::com::sun::star::uno::UNO_QUERY_THROW;
+
 // -----------------------------------------------------------------------
 namespace 
 {
@@ -548,17 +549,7 @@ bool ScDPTableDataCache::InitFromDoc(  ScDocument* pDoc, const ScRange& rRange )
 	mpSourceData	  = new std::vector<SCROW>[ mnColumnCount ];
 	mpGlobalOrder	  = new	std::vector<SCROW>[ mnColumnCount ];
 	mpIndexOrder	  = new std::vector<SCROW>[ mnColumnCount ];
-	//check valid
-	for ( SCROW nRow = nStartRow; nRow <= nEndRow; nRow ++ )
-	{
-		for ( sal_uInt16 nCol = nStartCol; nCol <= nEndCol; nCol++ )
-		{
-			if ( nRow == nStartRow )
-				AddLabel( new ScDPItemData( pDoc, nRow, nCol, nDocTab  ) );
-			else
-				AddData( nCol - nStartCol, new ScDPItemData( pDoc, nRow, nCol, nDocTab  ) );
-		}
-	}
+    pDoc->FillDPCache( this, nDocTab, nStartCol, nEndCol, nStartRow, nEndRow );
 	return sal_True;
 }
 
@@ -872,16 +863,15 @@ bool ScDPTableDataCache::IsEmptyMember( SCROW nRow, sal_uInt16 nColumn ) const
 	return !GetItemDataById( nColumn, GetItemDataId( nColumn, nRow, sal_False ) )->IsHasData();
 }
 
-sal_Bool ScDPTableDataCache::AddData(long nDim, ScDPItemData* pitemData)
+sal_Bool ScDPTableDataCache::AddData(long nDim, ScDPItemData* pitemData, bool bCheckDate )
 {
 	DBG_ASSERT( IsValid(), "  IsValid() == false " );
 	DBG_ASSERT( nDim < mnColumnCount && nDim >=0 , "dimension out of bound" );
 	SCROW nIndex = 0; 
 
 	sal_Bool	bInserted = sal_False;
-	
+	if( true == bCheckDate)	
 	pitemData->SetDate( lcl_isDate( GetNumType( pitemData->nNumFormat ) ) );
-
 	if ( !lcl_Search( mpTableDataValues[nDim], mpGlobalOrder[nDim], *pitemData, nIndex ) )
 	{
 		mpTableDataValues[nDim].push_back( pitemData );
@@ -907,7 +897,6 @@ sal_Bool ScDPTableDataCache::AddData(long nDim, ScDPItemData* pitemData)
 	return sal_True;
 }
 
-
 String ScDPTableDataCache::GetDimensionName( sal_uInt16 nColumn ) const
 {
     DBG_ASSERT( /* nColumn>=0 && */ nColumn < mrLabelNames.size()-1 , "ScDPTableDataCache::GetDimensionName");
@@ -919,6 +908,7 @@ String ScDPTableDataCache::GetDimensionName( sal_uInt16 nColumn ) const
 	else
 		return String();
 }
+
 
 void ScDPTableDataCache::AddLabel(ScDPItemData *pData)
 {  
@@ -1135,4 +1125,3 @@ long	ScDPTableDataCache::GetId() const
 {
 	return mnID; 
 }
- 

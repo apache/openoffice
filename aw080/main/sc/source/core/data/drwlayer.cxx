@@ -211,7 +211,8 @@ ScDrawLayer::ScDrawLayer( ScDocument* pDocument, const String& rName ) :
 	pUndoGroup( NULL ),
 	bRecording( sal_False ),
 	bAdjustEnabled( sal_True ),
-	bHyphenatorSet( sal_False )
+	bHyphenatorSet( sal_False ),
+        mbUndoAllowed( sal_True )
 {
 	pGlobalDrawPersist = NULL;			// nur einmal benutzen
 
@@ -369,7 +370,7 @@ sal_Bool ScDrawLayer::ScAddPage( SCTAB nTab )
 	ScDrawPage* pPage = (ScDrawPage*)AllocPage( sal_False );
 	InsertPage(pPage, static_cast<sal_uInt16>(nTab));
 	if (bRecording)
-		AddCalcUndo(new SdrUndoNewPage(*pPage));
+	        AddCalcUndo< SdrUndoNewPage >(*pPage);
 
     return sal_True;        // inserted
 }
@@ -383,7 +384,7 @@ void ScDrawLayer::ScRemovePage( SCTAB nTab )
 	if (bRecording)
 	{
 		SdrPage* pPage = GetPage(static_cast<sal_uInt16>(nTab));
-		AddCalcUndo(new SdrUndoDelPage(*pPage));		// Undo-Action wird Owner der Page
+        AddCalcUndo< SdrUndoDelPage >(*pPage);		// Undo-Action wird Owner der Page
 		RemovePage( static_cast<sal_uInt16>(nTab) );							// nur austragen, nicht loeschen
 	}
 	else
@@ -428,7 +429,7 @@ void ScDrawLayer::ScCopyPage( sal_uInt16 nOldPos, sal_uInt16 nNewPos, sal_Bool b
 
 				pNewPage->InsertObjectToSdrObjList(*pNewObject);
                 if (bRecording)
-                    AddCalcUndo( new SdrUndoInsertObj( *pNewObject ) );
+	                AddCalcUndo< SdrUndoInsertObj >( *pNewObject );
             }
 
 			pOldObject = aIter.Next();
@@ -481,7 +482,7 @@ void ScDrawLayer::MoveCells( SCTAB nTab, SCCOL nCol1,SCROW nRow1, SCCOL nCol2,SC
 			{
 				if ( dynamic_cast< SdrRectObj* >(pObj) && pData->maStart.IsValid() && pData->maEnd.IsValid() )
                     pData->maStart.PutInOrder( pData->maEnd );
-				AddCalcUndo( new ScUndoObjData( pObj, aOldStt, aOldEnd, pData->maStart, pData->maEnd ) );
+                AddCalcUndo< ScUndoObjData >( pObj, aOldStt, aOldEnd, pData->maStart, pData->maEnd );				
                 RecalcPos( pObj, *pData, bNegativePage, bUpdateNoteCaptionPos );
 			}
 		}
@@ -568,7 +569,7 @@ void ScDrawLayer::RecalcPos( SdrObject* pObj, const ScDrawObjData& rData, bool b
 		if(!sdr::legacy::GetLogicRange(*pObj).equal(aRange))
 		{
 			if (bRecording)
-				AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+		                AddCalcUndo<SdrUndoGeoObj>( *pObj );
 			sdr::legacy::SetLogicRange(*pObj, aRange);
 		}
 	}
@@ -604,7 +605,7 @@ void ScDrawLayer::RecalcPos( SdrObject* pObj, const ScDrawObjData& rData, bool b
 			if(!pObj->GetObjectPoint(0).equal(aStartPos))
 			{
 				if (bRecording)
-					AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+		                    AddCalcUndo< SdrUndoGeoObj> ( *pObj );
 				
 				pObj->SetObjectPoint( aStartPos, 0 );
 			}
@@ -626,7 +627,7 @@ void ScDrawLayer::RecalcPos( SdrObject* pObj, const ScDrawObjData& rData, bool b
 				if(!pObj->GetObjectPoint(1).equal(aEndPos))
 				{
 					if (bRecording)
-						AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+		                        AddCalcUndo< SdrUndoGeoObj >( *pObj );
 					
 					pObj->SetObjectPoint( aEndPos, 1 );
 				}
@@ -658,7 +659,7 @@ void ScDrawLayer::RecalcPos( SdrObject* pObj, const ScDrawObjData& rData, bool b
 			if(!pObj->GetObjectPoint(1).equal(aEndPos))
 			{
 				if (bRecording)
-					AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+		                    AddCalcUndo< SdrUndoGeoObj> ( *pObj  );
 
 				pObj->SetObjectPoint( aEndPos, 1 );
 			}
@@ -685,7 +686,7 @@ void ScDrawLayer::RecalcPos( SdrObject* pObj, const ScDrawObjData& rData, bool b
 				if(!pObj->GetObjectPoint(0).equal(aStartPos))
 				{
 					if (bRecording)
-						AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+			                        AddCalcUndo< SdrUndoGeoObj >( *pObj );
 					
 					pObj->SetObjectPoint( aStartPos, 0 );
 				}
@@ -710,7 +711,7 @@ void ScDrawLayer::RecalcPos( SdrObject* pObj, const ScDrawObjData& rData, bool b
 			if(!sdr::legacy::GetLogicRange(*pObj).equal(aNew))
 			{
 				if (bRecording)
-					AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+		                    AddCalcUndo< SdrUndoGeoObj >( *pObj );
 
 				sdr::legacy::SetLogicRange(*pObj, aNew);
 			}
@@ -728,7 +729,7 @@ void ScDrawLayer::RecalcPos( SdrObject* pObj, const ScDrawObjData& rData, bool b
 			if(!aRelativePos.equal(aPos))
 			{
 				if (bRecording)
-					AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+		                    AddCalcUndo< SdrUndoGeoObj >( *pObj );
 
 				sdr::legacy::transformSdrObject(*pObj, basegfx::tools::createTranslateB2DHomMatrix(aPos - aRelativePos));
 			}
@@ -979,7 +980,7 @@ void ScDrawLayer::MoveAreaTwips( SCTAB nTab, const Rectangle& rArea,
 					}
 					if( bMoved )
 					{
-						AddCalcUndo( new SdrUndoGeoObj( *pObject ) );
+			                        AddCalcUndo< SdrUndoGeoObj >( *pObject );						
 						lcl_TwipsToMM( aPoint );
 						pObject->SetObjectPoint( basegfx::B2DPoint(aPoint.X(), aPoint.Y()), i );
 					}
@@ -1041,7 +1042,7 @@ void ScDrawLayer::MoveAreaTwips( SCTAB nTab, const Rectangle& rArea,
 				{
 					//	geschuetzte Groessen werden nicht veraendert
 					//	(Positionen schon, weil sie ja an der Zelle "verankert" sind)
-					AddCalcUndo( new SdrUndoGeoObj( *pObject ) );
+		                    AddCalcUndo< SdrUndoGeoObj >( *pObject );
 					long nOldSizeX = aObjRect.Right() - aObjRect.Left() + 1;
 					long nOldSizeY = aObjRect.Bottom() - aObjRect.Top() + 1;
 					long nLogMoveX = rMove.X() * ( bNegativePage ? -1 : 1 );	// logical direction
@@ -1267,7 +1268,7 @@ void ScDrawLayer::DeleteObjects( SCTAB nTab )
 		long i;
 		if (bRecording)
 			for (i=1; i<=nDelCount; i++)
-				AddCalcUndo( new SdrUndoRemoveObj( *ppObj[nDelCount-i] ) );
+		                AddCalcUndo< SdrUndoRemoveObj >( *ppObj[nDelCount-i] );
 
 		for (i=1; i<=nDelCount; i++)
 			pPage->RemoveObjectFromSdrObjList( ppObj[nDelCount-i]->GetNavigationPosition() );
@@ -1316,7 +1317,7 @@ void ScDrawLayer::DeleteObjectsInArea( SCTAB nTab, SCCOL nCol1,SCROW nRow1,
 		long i;
 		if (bRecording)
 			for (i=1; i<=nDelCount; i++)
-				AddCalcUndo( new SdrUndoRemoveObj( *ppObj[nDelCount-i] ) );
+		                AddCalcUndo< SdrUndoRemoveObj >( *ppObj[nDelCount-i] );
 
 		for (i=1; i<=nDelCount; i++)
 			pPage->RemoveObjectFromSdrObjList( ppObj[nDelCount-i]->GetNavigationPosition() );
@@ -1380,7 +1381,7 @@ void ScDrawLayer::DeleteObjectsInSelection( const ScMarkData& rMark )
 					long i;
 					if (bRecording)
 						for (i=1; i<=nDelCount; i++)
-							AddCalcUndo( new SdrUndoRemoveObj( *ppObj[nDelCount-i] ) );
+			                            AddCalcUndo< SdrUndoRemoveObj >( *ppObj[nDelCount-i] );
 
 					for (i=1; i<=nDelCount; i++)
 						pPage->RemoveObjectFromSdrObjList( ppObj[nDelCount-i]->GetNavigationPosition() );
@@ -1598,7 +1599,7 @@ void ScDrawLayer::CopyFromClip( ScDrawLayer* pClipModel, SCTAB nSourceTab, const
 
 			pDestPage->InsertObjectToSdrObjList(*pNewObject);
 			if (bRecording)
-				AddCalcUndo( new SdrUndoInsertObj( *pNewObject ) );
+		                AddCalcUndo< SdrUndoInsertObj >( *pNewObject );
 
 			if ( pNewObject->GetObjIdentifier() == OBJ_OLE2 )
 			{
@@ -1706,7 +1707,7 @@ void ScDrawLayer::MirrorRTL( SdrObject* pObj )
 		Point aRef1( 0, 0 );
 		Point aRef2( 0, 1 );
 		if (bRecording)
-			AddCalcUndo( new SdrUndoGeoObj( *pObj ) );
+		            AddCalcUndo< SdrUndoGeoObj >( *pObj );
 		sdr::legacy::MirrorSdrObject(*pObj, aRef1, aRef2 );
 	}
 	else

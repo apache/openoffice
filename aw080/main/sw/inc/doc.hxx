@@ -90,6 +90,7 @@ class SwList;
 #include <boost/scoped_ptr.hpp>
 #include <svx/svdobj.hxx>
 #include <boost/shared_ptr.hpp>
+#include <flypos.hxx>
 
 class SvxForbiddenCharactersTable;
 class SwExtTextInput;
@@ -154,7 +155,6 @@ class SwNodes;
 class SwNumRule;
 class SwNumRuleTbl;
 class SwPageDesc;
-class SwPosFlyFrms;
 class SwPagePreViewPrtData;
 class SwRedline;
 class SwRedlineTbl;
@@ -712,6 +712,13 @@ private:
      bool ReplaceRangeImpl(SwPaM&, String const&, const bool);
 
 public:
+	enum DocumentType {
+		DOCTYPE_NATIVE,
+		DOCTYPE_MSWORD				//This doc medul is come from Ms Word
+		};
+	DocumentType	meDocType;
+	DocumentType	GetDocumentType(){ return meDocType; }
+	void			SetDocumentType( DocumentType eDocType ) { meDocType = eDocType; }
 
     /** Life cycle
     */
@@ -881,8 +888,11 @@ public:
     virtual SwDrawFrmFmt* Insert(const SwPaM &rRg, SdrObject& rDrawObj, const SfxItemSet* pFlyAttrSet, SwFrmFmt*);
     virtual SwFlyFrmFmt* Insert(const SwPaM &rRg, const svt::EmbeddedObjectRef& xObj, const SfxItemSet* pFlyAttrSet,
 						const SfxItemSet* pGrfAttrSet, SwFrmFmt*);
+	//Modify here for #119405, by chengjh, 2012-08-16
+	//Add a para for the char attribute exp...
     virtual bool InsertPoolItem(const SwPaM &rRg, const SfxPoolItem&,
-                                const SetAttrMode nFlags);
+                                const SetAttrMode nFlags,bool bExpandCharToPara=false);
+	//End
     virtual bool InsertItemSet (const SwPaM &rRg, const SfxItemSet&,
                                 const SetAttrMode nFlags);
 	virtual void ReRead(SwPaM&, const String& rGrfName, const String& rFltName, const Graphic* pGraphic, const GraphicObject* pGrfObj);
@@ -1056,8 +1066,7 @@ public:
 	// FlyFrames von der ::com::sun::star::awt::Selection vollstaendig umschlossen sein
 	// ( Start < Pos < End ) !!!
 	// (wird fuer die Writer benoetigt)
-	void GetAllFlyFmts( SwPosFlyFrms& rPosFlyFmts, const SwPaM* = 0,
-						sal_Bool bDrawAlso = sal_False ) const;
+	SwPosFlyFrms GetAllFlyFmts( const SwPaM* = 0, sal_Bool bDrawAlso = sal_False ) const;
 
     // wegen swrtf.cxx und define private public, jetzt hier
 	SwFlyFrmFmt  *MakeFlyFrmFmt (const String &rFmtName, SwFrmFmt *pDerivedFrom);
@@ -2072,6 +2081,8 @@ public:
     /// initialize XForms models; turn this into an XForms document
     void initXForms( bool bCreateDefaultModel );
     // <-- #i31958# access methods for XForms model(s)
+
+    void disposeXForms( );  // #i113606#, for disposing XForms
 
     // --> OD 2006-03-21 #b6375613#
     inline bool ApplyWorkaroundForB6375613() const

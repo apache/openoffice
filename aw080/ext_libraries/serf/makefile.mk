@@ -68,12 +68,12 @@ BUILD_FLAGS+= -f ../../../../win/Makefile -j$(EXTMAXPROCESS)
 .IF "$(OS)"=="MACOSX" || "$(OS)"=="FREEBSD" || "$(OS)"=="LINUX"
 # Do not link against expat.  It is not necessary (apr-util is already linked against it)
 # and does not work (we use a different expat library schema.)
-#PATCH_FILES+=$(TARFILE_NAME).mac.patch
+PATCH_FILES+=$(TARFILE_NAME).libs.patch
 .ENDIF
 
 .IF "$(OS)"=="LINUX"
 # Add -ldl as last library so that the linker has no trouble resolving dependencies.
-#PATCH_FILES+=$(TARFILE_NAME).ldl.patch
+PATCH_FILES+=$(TARFILE_NAME).ldl.patch
 .ENDIF
 
 CONFIGURE_DIR=

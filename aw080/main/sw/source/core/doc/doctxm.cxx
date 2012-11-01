@@ -753,6 +753,7 @@ SwTOXBaseSection::SwTOXBaseSection(SwTOXBase const& rBase, SwSectionFmt & rFmt)
 
 SwTOXBaseSection::~SwTOXBaseSection()
 {
+    aSortArr.DeleteAndDestroy( 0, aSortArr.Count() );  // i120680
 }
 
 
@@ -788,19 +789,26 @@ sal_Bool SwTOXBaseSection::SetPosAtStartEnd( SwPosition& rPos, sal_Bool bAtStart
 void SwTOXBaseSection::Update(const SfxItemSet* pAttr,
                               const bool        _bNewTOX )//swmodtest 080307
 {
-	const SwSectionNode* pSectNd;
-	if( !SwTOXBase::GetRegisteredIn()->GetDepends() ||
-		!GetFmt() || 0 == (pSectNd = GetFmt()->GetSectionNode() ) ||
-		!pSectNd->GetNodes().IsDocNodes() ||
-		IsHiddenFlag() )
-		return;
+    const SwSectionNode* pSectNd;
+    if( !SwTOXBase::GetRegisteredIn()->GetDepends() ||
+        !GetFmt() || 0 == (pSectNd = GetFmt()->GetSectionNode() ) ||
+        !pSectNd->GetNodes().IsDocNodes() ||
+        IsHiddenFlag() )
+    {
+        return;
+    }
 
-	SwDoc* pDoc = (SwDoc*)pSectNd->GetDoc();
+    if ( !mbKeepExpression )
+    {
+        maMSTOCExpression = String();
+    }
+
+    SwDoc* pDoc = (SwDoc*)pSectNd->GetDoc();
 
     DBG_ASSERT(pDoc != NULL, "Where is the document?");
 
-	if(pAttr && pDoc && GetFmt())
-		pDoc->ChgFmt(*GetFmt(), *pAttr);
+    if(pAttr && pDoc && GetFmt())
+        pDoc->ChgFmt(*GetFmt(), *pAttr);
 
     // OD 18.03.2003 #106329# - determine default page description, which
     // will be used by the content nodes, if no approriate one is found.

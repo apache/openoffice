@@ -39,6 +39,7 @@ class EditStatus;
 class EditFieldInfo;
 class ImpSdrEditPara;
 struct PasteOrDropInfos;
+class SdrUndoManager;
 
 namespace com { namespace sun { namespace star { namespace uno { class Any; } } } }
 namespace sdr {	class SelectionController; }
@@ -55,9 +56,6 @@ enum SdrEndTextEditKind {SDRENDTEXTEDIT_UNCHANGED, // Textobjekt unveraendert
 
 class SVX_DLLPUBLIC SdrObjEditView: public SdrGlueEditView
 {
-private:
-	SVX_DLLPRIVATE void ImpClearVars();
-
 protected:
 	// TextEdit
 	SdrObjectWeakRef			mxTextEditObj;          // Aktuell im TextEdit befindliches Obj
@@ -76,9 +74,7 @@ protected:
 	basegfx::B2DPoint			maMacroDownPos;
 	sal_uInt16					mnMacroTol;
 
-    /// prepared undos for text edit
-    SdrUndoAction*              mpUndoGeoObject;
-    SdrUndoAction*              mpUndoAttrObject;
+	sal_uInt16					nMacroTol;
 
 	/// bitfield
 	bool						mbTextEditDontDelete : 1;   // Outliner und View bei SdrEndTextEdit nicht deleten (f. Rechtschreibpruefung)
@@ -89,6 +85,18 @@ protected:
 
 	rtl::Reference< sdr::SelectionController > mxSelectionController;
 	rtl::Reference< sdr::SelectionController > mxLastSelectionController;
+
+private:
+    ::svl::IUndoManager* mpOldTextEditUndoManager;
+
+	SVX_DLLPRIVATE void ImpClearVars();
+
+protected:
+    // central method to get an SdrUndoManager for enhanced TextEdit. Default will
+    // try to return a dynamic_casted GetModel()->GetSdrUndoManager(). Applications
+    // which want to use this feature will need to overload this virtual method,
+    // provide their document UndoManager and derive it from SdrUndoManager.
+    virtual SdrUndoManager* getSdrUndoManagerForEnhancedTextEdit() const;
 
 	OutlinerView* ImpFindOutlinerView(Window* pWin) const;
 
@@ -110,6 +118,8 @@ protected:
 	void ImpMacroUp(const basegfx::B2DPoint& rUpPos);
 	void ImpMacroDown(const basegfx::B2DPoint& rDownPos);
 
+    // link for EndTextEditHdl
+	DECL_LINK(EndTextEditHdl, SdrUndoManager*);
    	DECL_LINK( BeginPasteOrDropHdl, PasteOrDropInfos* );
 	DECL_LINK( EndPasteOrDropHdl, PasteOrDropInfos* );
 

@@ -264,7 +264,7 @@ static const SvxMSDffTextRectangles mso_sptRightTriangleTextRect[] =
 };
 static const SvxMSDffVertPair mso_sptRightTriangleGluePoints[] =
 {
-	{ 10800, 0 }, { 5400, 10800 }, { 0, 21600 }, { 10800, 21600 }, { 21600, 21600 }, { 16200, 10800 }
+	{ 0, 0 }, { 0, 10800 }, { 0, 21600 }, { 10800, 21600 }, { 21600, 21600 }, { 10800, 10800 }
 };
 static const mso_CustomShape msoRightTriangle =
 {
@@ -497,7 +497,7 @@ static const SvxMSDffTextRectangles mso_sptIsocelesTriangleTextRect[] =
 };
 static const SvxMSDffVertPair mso_sptIsocelesTriangleGluePoints[] =
 {
-	{ 10800, 0 }, { 1 MSO_I, 10800 }, { 0, 21600 }, { 10800, 21600 }, { 21600, 21600 }, { 7 MSO_I, 10800 }
+	{ 0 MSO_I, 0 }, { 1 MSO_I, 10800 }, { 0, 21600 }, { 10800, 21600 }, { 21600, 21600 }, { 7 MSO_I, 10800 }
 };
 static const SvxMSDffHandle mso_sptIsocelesTriangleHandle[] =
 {
@@ -1560,11 +1560,12 @@ static const SvxMSDffCalculationData mso_sptNotchedRightArrowCalc[] =
 	{ 0x8000, { 21600, 0, DFF_Prop_adjust2Value } },
 	{ 0x8000, { 21600, 0, DFF_Prop_adjustValue } },
 	{ 0x8000, { 10800, 0, DFF_Prop_adjust2Value } },
-	{ 0x6001, { 0x403, 0x404, 10800 } }
+	{ 0x6001, { 0x403, 0x404, 10800 } },
+    { 0x8000, { 21600, 0, 0x405 }}
 };
 static const SvxMSDffTextRectangles mso_sptNotchedRightArrowTextRect[] =	// todo
 {
-	{ { 0, 0 }, { 21600, 21600 } }
+	{ { 5 MSO_I, 1 MSO_I }, { 6 MSO_I, 2 MSO_I } }
 };
 static const SvxMSDffHandle mso_sptNotchedRightArrowHandle[] =
 {
@@ -4507,7 +4508,292 @@ static const mso_CustomShape msoRibbon =
 	(SvxMSDffVertPair*)mso_sptRibbonGluePoints, sizeof( mso_sptRibbonGluePoints ) / sizeof( SvxMSDffVertPair ),
 	(SvxMSDffHandle*)mso_sptRibbonHandle, sizeof( mso_sptRibbonHandle ) / sizeof( SvxMSDffHandle )
 };
+//msosptEllipseRibbon
+//svg path = ar@9@38@8@37,0@27@0@26@9@13@8@4@0@25@22@25@9@38@8@37@22@26@3@27l@7@40@3,wa@9@35@8@10@3,0@21@33@9@36@8@1@21@31@20@31@9@35@8@10@20@33,,l@5@40xewr@9@36@8@1@20@31@0@32nfl@20@33ear@9@36@8@1@21@31@22@32nfl@21@33em@0@26nfl@0@32em@22@26nfl@22@32e
+//odp path = A ?f9 ?f38 ?f8 ?f37 0 ?f27 ?f0 ?f26 ?f9 ?f13 ?f8 ?f4 ?f0 ?f25 ?f22 ?f25 ?f9 ?f38 ?f8 ?f37 ?f22 ?f26 ?f3 ?f27 L ?f7 ?f40 ?f3 0 W ?f9 ?f35 ?f8 ?f10 ?f3 0 ?f21 ?f33 ?f9 ?f36 ?f8 ?f1 ?f21 ?f31 ?f20 ?f31 ?f9 ?f35 ?f8 ?f10 ?f20 ?f33 0 0 L ?f5 ?f40 Z N W ?f9 ?f36 ?f8 ?f1 ?f20 ?f31 ?f0 ?f32 F L ?f20 ?f33 N A ?f9 ?f36 ?f8 ?f1 ?f21 ?f31 ?f22 ?f32 F L ?f21 ?f33 N M ?f0 ?f26 F L ?f0 ?f32 N M ?f22 ?f26 F L ?f22 ?f32 N
+static const SvxMSDffVertPair mso_sptEllipseRibbonVert[] =		
+{	
+	{ 9 MSO_I , 38 MSO_I },
+	{ 8 MSO_I , 37 MSO_I },
+	{ 0 , 27 MSO_I },
+	{ 0 MSO_I , 26 MSO_I },
+	{ 9 MSO_I , 13 MSO_I },
+	{ 8 MSO_I , 4 MSO_I },
+	{ 0 MSO_I , 25 MSO_I },
+	{ 22 MSO_I , 25 MSO_I },
+	{ 9 MSO_I , 38 MSO_I },
+	{ 8 MSO_I , 37 MSO_I },
+	{ 22 MSO_I , 26 MSO_I },
+	{ 3 MSO_I , 27 MSO_I },
+	{ 7 MSO_I , 40 MSO_I },
+	{ 3 MSO_I , 0 },
+	{ 9 MSO_I , 35 MSO_I },
+	{ 8 MSO_I , 10 MSO_I },
+	{ 3 MSO_I , 0 },
+	{ 21 MSO_I , 33 MSO_I },
+	{ 9 MSO_I , 36 MSO_I },
+	{ 8 MSO_I , 1 MSO_I },
+	{ 21 MSO_I , 31 MSO_I },
+	{ 20 MSO_I , 31 MSO_I },
+	{ 9 MSO_I , 35 MSO_I },
+	{ 8 MSO_I , 10 MSO_I },
+	{ 20 MSO_I , 33 MSO_I },
+	{ 0 , 0 },
+	{ 5 MSO_I , 40 MSO_I },
+	{ 9 MSO_I , 36 MSO_I },
+	{ 8 MSO_I , 1 MSO_I },
+	{ 20 MSO_I , 31 MSO_I },
+	{ 0 MSO_I , 32 MSO_I },
+	{ 20 MSO_I , 33 MSO_I },
+	{ 9 MSO_I , 36 MSO_I },
+	{ 8 MSO_I , 1 MSO_I },
+	{ 21 MSO_I , 31 MSO_I },
+	{ 22 MSO_I , 32 MSO_I },
+	{ 21 MSO_I , 33 MSO_I },
+	{ 0 MSO_I , 26 MSO_I },
+	{ 0 MSO_I , 32 MSO_I },
+	{ 22 MSO_I , 26 MSO_I },
+	{ 22 MSO_I , 32 MSO_I }
+};
 
+static const sal_uInt16 mso_sptEllipseRibbonSegm[] =
+{
+	0xa30c /*ar*/,0x0002/*l*/,0xa50c/*wa*/,0x0001/*l*/,
+	0x6001/*x*/, 0x8000/*e*/,0xa504/*wr*/,0xaa00/*nf*/, 
+	0x0001/*l*/, 0x8000/*e*/,0xa304/*ar*/,0xaa00/*nf*/,
+	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
+	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
+	0x0001/*l*/, 0x8000/*e*/
+};
+
+static const SvxMSDffCalculationData mso_sptEllipseRibbonCalc[] =
+{
+	{ 0x2000 , { DFF_Prop_adjustValue , 0 , 0 } }, //val #0
+	{ 0x2000 , { DFF_Prop_adjust2Value , 0 , 0 } }, //val #1
+	{ 0x2000 , { DFF_Prop_adjust3Value , 0 , 0 } }, //val #2
+	{ 0x2000 , { DFF_Prop_geoRight , 0 , 0 } }, //val width
+	{ 0x2000 , { DFF_Prop_geoBottom , 0 , 0 } }, //val height
+	{ 0x2001 , { DFF_Prop_geoRight , 1 , 8 } }, //prod width 1 8
+	{ 0x2001 , { DFF_Prop_geoRight , 1 , 2 } }, //prod width 1 2
+	{ 0x2001 , { DFF_Prop_geoRight , 7 , 8 } }, //prod width 7 8
+	{ 0x2001 , { DFF_Prop_geoRight , 3 , 2 } }, //prod width 3 2
+	{ 0x8000 , { 0 , 0 , 0x406 } }, //sum 0 0 @6
+	{ 0xa000 , { DFF_Prop_geoBottom , 0 , DFF_Prop_adjust3Value } }, //sum height 0 #2
+	{ 0x2001 , { 0x40a , 30573 , 4096 } }, //prod @10 30573 4096
+	{ 0x2001 , { 0x40b , 2 , 1 } }, //prod @11 2 1
+	{ 0xa000 , { DFF_Prop_geoBottom , 0 , 0x40c } }, //sum height 0 @12
+	{ 0x6000 , { 0x40b , DFF_Prop_adjust3Value , 0 } }, //sum @11 #2 0
+	{ 0xe000 , { 0x40b , DFF_Prop_geoBottom , DFF_Prop_adjust2Value } }, //sum @11 height #1
+	{ 0xa000 , { DFF_Prop_geoBottom , 0 , DFF_Prop_adjust2Value } }, //sum height 0 #1
+	{ 0x2001 , { 0x410 , 1 , 2 } }, //prod @16 1 2
+	{ 0x6000 , { 0x40b , 0x411 , 0 } }, //sum @11 @17 0
+	{ 0xe000 , { 0x40e , DFF_Prop_adjust2Value , DFF_Prop_geoBottom } }, //sum @14 #1 height
+	{ 0x6000 , { DFF_Prop_adjustValue , 0x405 , 0 } }, //sum #0 @5 0
+	{ 0xa000 , { DFF_Prop_geoRight , 0 , 0x414 } }, //sum width 0 @20
+	{ 0xa000 , { DFF_Prop_geoRight , 0 , DFF_Prop_adjustValue } }, //sum width 0 #0
+	{ 0xa000 , { 0x406 , 0 , DFF_Prop_adjustValue } }, //sum @6 0 #0
+	{ 0xe00f , { 0x417 , DFF_Prop_geoRight , 0x40b } }, //ellipse @23 width @11
+	{ 0xe000 , { 0x418 , DFF_Prop_geoBottom , 0x40b } }, //sum @24 height @11
+	{ 0xe000 , { 0x419 , 0x40b , 0x413 } }, //sum @25 @11 @19
+	{ 0xe000 , { DFF_Prop_adjust3Value , 0x40b , 0x413 } }, //sum #2 @11 @19
+	{ 0x2001 , { 0x40b , 2391 , 32768 } }, //prod @11 2391 32768
+	{ 0xa000 , { 0x406 , 0 , 0x414 } }, //sum @6 0 @20
+	{ 0xe00f , { 0x41d , DFF_Prop_geoRight , 0x40b } }, //ellipse @29 width @11
+	{ 0xe000 , { DFF_Prop_adjust2Value , 0x41e , 0x40b } }, //sum #1 @30 @11
+	{ 0xe000 , { 0x419 , DFF_Prop_adjust2Value , DFF_Prop_geoBottom } }, //sum @25 #1 height
+	{ 0xe000 , { DFF_Prop_geoBottom , 0x41e , 0x40e } }, //sum height @30 @14
+	{ 0x6000 , { 0x40b , 0x40e , 0 } }, //sum @11 @14 0
+	{ 0xa000 , { DFF_Prop_geoBottom , 0 , 0x422 } }, //sum height 0 @34
+	{ 0xe000 , { 0x423 , 0x413 , 0x40b } }, //sum @35 @19 @11
+	{ 0xe000 , { 0x40a , 0x40f , 0x40b } }, //sum @10 @15 @11
+	{ 0xe000 , { 0x423 , 0x40f , 0x40b } }, //sum @35 @15 @11
+	{ 0xe000 , { 0x41c , 0x40e , 0x412 } }, //sum @28 @14 @18
+	{ 0xa000 , { DFF_Prop_geoBottom , 0 , 0x427 } }, //sum height 0 @39
+	{ 0xa000 , { 0x413 , 0 , 0x412 } }, //sum @19 0 @18
+	{ 0x2001 , { 0x429 , 2 , 3 } }, //prod @41 2 3
+	{ 0xa000 , { DFF_Prop_adjust2Value , 0 , 0x42a } }, //sum #1 0 @42
+	{ 0xa000 , { DFF_Prop_adjust3Value , 0 , 0x42a } }, //sum #2 0 @42
+	{ 0x2004 , { 0x42c , 20925 , 0 } }, //min @44 20925
+	{ 0x2001 , { DFF_Prop_geoRight , 3 , 8 } }, //prod width 3 8
+	{ 0x2000 , { 0x42e , 0 , 4 } }, //sum @46 0 4
+};
+
+static const SvxMSDffTextRectangles mso_sptEllipseRibbonTextRect[] =
+{//@0,@1,@22,@25
+	{ { 0 MSO_I, 1 MSO_I }, { 22 MSO_I, 25 MSO_I } }
+};
+
+static const sal_Int32 mso_sptEllipseRibbonDefault[] =
+{ 
+	3,5400,5400,18900 
+};
+
+static const SvxMSDffHandle mso_sptEllipseRibbonHandle[] =
+{
+//position="#0,bottomRight" xrange="@5,@47
+//position="center,#1" yrange="@10,@43
+//position="topLeft,#2" yrange="@27,@45
+	{   MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_X_MAX_IS_SPECIAL| MSDFF_HANDLE_FLAGS_RANGE_X_MIN_IS_SPECIAL,
+		0x100, 21600, 0, 0, 0x8/*5+3*/, 0x32/*47+3*/, 0x80000000, 0x7fffffff },
+	{	MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_Y_MAX_IS_SPECIAL | MSDFF_HANDLE_FLAGS_RANGE_Y_MIN_IS_SPECIAL,
+		10800, 0x101, 0, 0, 0x80000000, 0x7fffffff,0xd/*10+3*/, 0x2e /*43+3*/ },
+	{	MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_Y_MAX_IS_SPECIAL | MSDFF_HANDLE_FLAGS_RANGE_Y_MIN_IS_SPECIAL,
+		0, 0x102, 0, 0, 0x80000000, 0x7fffffff,0x1e/*27+3*/, 0x30 /*45+3*/ }
+};
+
+static const mso_CustomShape msosptEllipseRibbon =
+{
+	(SvxMSDffVertPair*)mso_sptEllipseRibbonVert, sizeof( mso_sptEllipseRibbonVert ) / sizeof( SvxMSDffVertPair ),
+	(sal_uInt16*)mso_sptEllipseRibbonSegm, sizeof( mso_sptEllipseRibbonSegm ) >> 1,
+	(SvxMSDffCalculationData*)mso_sptEllipseRibbonCalc, sizeof( mso_sptEllipseRibbonCalc ) / sizeof( SvxMSDffCalculationData ),
+	(sal_Int32*)mso_sptEllipseRibbonDefault,
+	(SvxMSDffTextRectangles*)mso_sptEllipseRibbonTextRect, sizeof( mso_sptEllipseRibbonTextRect ) / sizeof( SvxMSDffTextRectangles ),
+	21600, 21600,
+	0x80000000, 0x80000000,
+	NULL, 0,
+	(SvxMSDffHandle*)mso_sptEllipseRibbonHandle, sizeof( mso_sptEllipseRibbonHandle ) / sizeof( SvxMSDffHandle )
+};
+
+//msosptEllipseRibbon2
+//svg path = wr@9@34@8@35,0@24@0@23@9,0@8@11@0@22@19@22@9@34@8@35@19@23@3@24l@7@36@3@4at@9@31@8@32@3@4@18@30@9@1@8@33@18@28@17@28@9@31@8@32@17@30,0@4l@5@36xear@9@1@8@33@17@28@0@29nfl@17@30ewr@9@1@8@33@18@28@19@29nfl@18@30em@0@23nfl@0@29em@19@23nfl@19@29e
+static const SvxMSDffVertPair mso_sptEllipseRibbon2Vert[] =		
+{
+	{ 9 MSO_I , 34 MSO_I },
+	{ 8 MSO_I , 35 MSO_I },
+	{ 0 , 24 MSO_I },
+	{ 0 MSO_I , 23 MSO_I },
+	{ 9 MSO_I , 0 },
+	{ 8 MSO_I , 11 MSO_I },
+	{ 0 MSO_I , 22 MSO_I },
+	{ 19 MSO_I , 22 MSO_I },
+	{ 9 MSO_I , 34 MSO_I },
+	{ 8 MSO_I , 35 MSO_I },
+	{ 19 MSO_I , 23 MSO_I },
+	{ 3 MSO_I , 24 MSO_I },
+	{ 7 MSO_I , 36 MSO_I },
+	{ 3 MSO_I , 4 MSO_I },
+	{ 9 MSO_I , 31 MSO_I },
+	{ 8 MSO_I , 32 MSO_I },
+	{ 3 MSO_I , 4 MSO_I },
+	{ 18 MSO_I , 30 MSO_I },
+	{ 9 MSO_I , 1 MSO_I },
+	{ 8 MSO_I , 33 MSO_I },
+	{ 18 MSO_I , 28 MSO_I },
+	{ 17 MSO_I , 28 MSO_I },
+	{ 9 MSO_I , 31 MSO_I },
+	{ 8 MSO_I , 32 MSO_I },
+	{ 17 MSO_I , 30 MSO_I },
+	{ 0 , 4l MSO_I },
+	{ 5 MSO_I , 36 MSO_I },
+	{ 9 MSO_I , 1 MSO_I },
+	{ 8 MSO_I , 33 MSO_I },
+	{ 17 MSO_I , 28 MSO_I },
+	{ 0 MSO_I , 29 MSO_I },
+	{ 17 MSO_I , 30 MSO_I },
+	{ 9 MSO_I , 1 MSO_I },
+	{ 8 MSO_I , 33 MSO_I },
+	{ 18 MSO_I , 28 MSO_I },
+	{ 19 MSO_I , 29 MSO_I },
+	{ 18 MSO_I , 30 MSO_I },
+	{ 0 MSO_I , 23 MSO_I },
+	{ 0 MSO_I , 29 MSO_I },
+	{ 19 MSO_I , 23 MSO_I },
+	{ 19 MSO_I , 29 MSO_I }
+};
+static const sal_uInt16 mso_sptEllipseRibbon2Segm[] =
+{
+	0xa50c/*wr*/,0x0002/*l*/,0xa30c/*at*/,0x0001/*l*/,
+	0x6001/*x*/, 0x8000/*e*/,0xa304/*ar*/,0xaa00/*nf*/, 
+	0x0001/*l*/, 0x8000/*e*/,0xa504/*wr*/,0xaa00/*nf*/,
+	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
+	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
+	0x0001/*l*/, 0x8000/*e*/
+};
+
+static const SvxMSDffCalculationData mso_sptEllipseRibbon2Calc[] =
+{
+	{ 0x2000 , { DFF_Prop_adjustValue , 0 , 0 } }, //val #0
+	{ 0x2000 , { DFF_Prop_adjust2Value , 0 , 0 } }, //val #1
+	{ 0x2000 , { DFF_Prop_adjust3Value , 0 , 0 } }, //val #2
+	{ 0x2000 , { DFF_Prop_geoRight , 0 , 0 } }, //val width
+	{ 0x2000 , { DFF_Prop_geoBottom , 0 , 0 } }, //val height
+	{ 0x2001 , { DFF_Prop_geoRight , 1 , 8 } }, //prod width 1 8
+	{ 0x2001 , { DFF_Prop_geoRight , 1 , 2 } }, //prod width 1 2
+	{ 0x2001 , { DFF_Prop_geoRight , 7 , 8 } }, //prod width 7 8
+	{ 0x2001 , { DFF_Prop_geoRight , 3 , 2 } }, //prod width 3 2
+	{ 0x8000 , { 0 , 0 , 0x406 } }, //sum 0 0 @6
+	{ 0x2001 , { DFF_Prop_adjust3Value , 30573 , 4096 } }, //prod #2 30573 4096
+	{ 0x2001 , { 0x40a , 2 , 1 } }, //prod @10 2 1
+	{ 0xe000 , { 0x40a , DFF_Prop_geoBottom , DFF_Prop_adjust3Value } }, //sum @10 height #2
+	{ 0x6000 , { 0x40a , DFF_Prop_adjust2Value , 0 } }, //sum @10 #1 0
+	{ 0x2001 , { DFF_Prop_adjust2Value , 1 , 2 } }, //prod #1 1 2
+	{ 0x6000 , { 0x40a , 0x40e , 0 } }, //sum @10 @14 0
+	{ 0xa000 , { 0x40c , 0 , DFF_Prop_adjust2Value } }, //sum @12 0 #1
+	{ 0x6000 , { DFF_Prop_adjustValue , 0x405 , 0 } }, //sum #0 @5 0
+	{ 0xa000 , { DFF_Prop_geoRight , 0 , 0x411 } }, //sum width 0 @17
+	{ 0xa000 , { DFF_Prop_geoRight , 0 , DFF_Prop_adjustValue } }, //sum width 0 #0
+	{ 0xa000 , { 0x406 , 0 , DFF_Prop_adjustValue } }, //sum @6 0 #0
+	{ 0xe00f , { 0x414 , DFF_Prop_geoRight , 0x40a } }, //ellipse @20 width @10
+	{ 0xa000 , { 0x40a , 0 , 0x415 } }, //sum @10 0 @21
+	{ 0xe000 , { 0x416 , 0x410 , 0x40a } }, //sum @22 @16 @10
+	{ 0xe000 , { DFF_Prop_adjust3Value , 0x410 , 0x40a } }, //sum #2 @16 @10
+	{ 0x2001 , { 0x40a , 2391 , 32768 } }, //prod @10 2391 32768
+	{ 0xa000 , { 0x406 , 0 , 0x411 } }, //sum @6 0 @17
+	{ 0xe00f , { 0x41a , DFF_Prop_geoRight , 0x40a } }, //ellipse @26 width @10
+	{ 0xe000 , { 0x40a , DFF_Prop_adjust2Value , 0x41b } }, //sum @10 #1 @27
+	{ 0x6000 , { 0x416 , DFF_Prop_adjust2Value , 0 } }, //sum @22 #1 0
+	{ 0xa000 , { 0x40c , 0 , 0x41b } }, //sum @12 0 @27
+	{ 0xa000 , { DFF_Prop_geoBottom , 0 , DFF_Prop_adjust3Value } }, //sum height 0 #2
+	{ 0x6000 , { 0x40a , 0x40c , 0 } }, //sum @10 @12 0
+	{ 0xe000 , { 0x420 , 0x40a , 0x410 } }, //sum @32 @10 @16
+	{ 0xe000 , { 0x41f , 0x40a , 0x40d } }, //sum @31 @10 @13
+	{ 0xe000 , { 0x420 , 0x40a , 0x40d } }, //sum @32 @10 @13
+	{ 0xe000 , { 0x419 , 0x40c , 0x40f } }, //sum @25 @12 @15
+	{ 0xa000 , { 0x410 , 0 , 0x40f } }, //sum @16 0 @15
+	{ 0x2001 , { 0x425 , 2 , 3 } }, //prod @37 2 3
+	{ 0x6000 , { 0x401 , 0x426 , 0 } }, //sum @1 @38 0
+	{ 0x6000 , { DFF_Prop_adjust3Value , 0x426 , 0 } }, //sum #2 @38 0
+	{ 0x2005 , { 0x428 , 675 , 0 } }, //max @40 675
+	{ 0x2001 , { DFF_Prop_geoRight , 3 , 8 } }, //prod width 3 8
+	{ 0x2000 , { 0x42a , 0 , 4 } } //sum @42 0 4
+};
+
+static const SvxMSDffTextRectangles mso_sptEllipseRibbon2TextRect[] =
+{//@0,@22,@19,@1
+	{ { 0 MSO_I, 22 MSO_I }, { 19 MSO_I, 1 MSO_I } }
+};
+
+static const sal_Int32 mso_sptEllipseRibbon2Default[] =
+{ 
+	3,5400,16200,2700
+};
+
+static const SvxMSDffHandle mso_sptEllipseRibbon2Handle[] =
+{
+//position="#0,topLeft" xrange="@5,@43
+//position="center,#1" yrange="@39,@31
+//position="topLeft,#2" yrange="@41,@24
+	{   MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_X_MAX_IS_SPECIAL| MSDFF_HANDLE_FLAGS_RANGE_X_MIN_IS_SPECIAL,
+		0x100, 0, 0, 0, 0x8/*5+3*/, 0x2e/*43+3*/, 0x80000000, 0x7fffffff },
+	{	MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_Y_MAX_IS_SPECIAL | MSDFF_HANDLE_FLAGS_RANGE_Y_MIN_IS_SPECIAL,
+		10800, 0x101, 0, 0, 0x80000000, 0x7fffffff,0x2a/*39+3*/, 0x22 /*31+3*/ },
+	{	MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_Y_MAX_IS_SPECIAL | MSDFF_HANDLE_FLAGS_RANGE_Y_MIN_IS_SPECIAL,
+		0, 0x102, 0, 0, 0x80000000, 0x7fffffff,0x2c/*41+3*/, 0x1b /*24+3*/ }
+};
+
+static const mso_CustomShape msosptEllipseRibbon2 =
+{
+	(SvxMSDffVertPair*)mso_sptEllipseRibbon2Vert, sizeof( mso_sptEllipseRibbon2Vert ) / sizeof( SvxMSDffVertPair ),
+	(sal_uInt16*)mso_sptEllipseRibbon2Segm, sizeof( mso_sptEllipseRibbon2Segm ) >> 1,
+	(SvxMSDffCalculationData*)mso_sptEllipseRibbon2Calc, sizeof( mso_sptEllipseRibbon2Calc ) / sizeof( SvxMSDffCalculationData ),
+	(sal_Int32*)mso_sptEllipseRibbon2Default,
+	(SvxMSDffTextRectangles*)mso_sptEllipseRibbon2TextRect, sizeof( mso_sptEllipseRibbon2TextRect ) / sizeof( SvxMSDffTextRectangles ),
+	21600, 21600,
+	0x80000000, 0x80000000,
+	NULL, 0,
+	(SvxMSDffHandle*)mso_sptEllipseRibbon2Handle, sizeof( mso_sptEllipseRibbon2Handle ) / sizeof( SvxMSDffHandle )
+};
+// End
 static const SvxMSDffVertPair mso_sptVerticalScrollVert[] =	// adjustment1 : 0 - 5400
 {
 	{ 1 MSO_I, 21600 }, { 0, 11 MSO_I }, { 1 MSO_I, 12 MSO_I }, { 0 MSO_I, 12 MSO_I },
@@ -6177,16 +6463,62 @@ static const mso_CustomShape msoTextChevronInverted =
 	NULL, 0,
 	(SvxMSDffHandle*)mso_sptTextChevronInvertedHandle, sizeof( mso_sptTextChevronInvertedHandle ) / sizeof( SvxMSDffHandle )
 };
-
+//V 0 0 21600 ?f2 0 ?f0 21600 ?f0 
+//W 0 0 21600 ?f2 21600 ?f0 0 ?f0 N 
+//V 0 ?f3 21600 21600 0 ?f1 21600 ?f1 
+//W 0 ?f3 21600 21600 21600 ?f1 0 ?f1 N
+//mso_sptTextRingInside
+static const SvxMSDffVertPair mso_sptTextRingInsideVert[] =
+{
+	{ 0, 0 }, { 21600, 2 MSO_I }, { 0, 0 MSO_I },{ 21600, 0 MSO_I },//V
+	{ 0, 0 }, { 21600, 2 MSO_I }, { 21600, 0 MSO_I },{ 0, 0 MSO_I },//W
+	{ 0, 3 MSO_I }, { 21600, 21600 }, { 0, 1 MSO_I },{ 21600, 1 MSO_I },//V
+	{ 0, 3 MSO_I }, { 21600, 21600 }, { 21600, 1 MSO_I },{ 0, 1 MSO_I }//W
+};
+static const SvxMSDffCalculationData mso_sptTextRingInsideCalc[] =	// adjustment1 : 6629 - 14971
+{
+	{ 0x2001, { DFF_Prop_adjustValue, 1, 2 } },
+	{ 0x8000, { 21600, 0, 0x400 } },
+	{ 0x2000, { DFF_Prop_adjustValue, 0, 0 } }, //$0
+	{ 0x8000, { 21600, 0, DFF_Prop_adjustValue } }//21600-$0
+};
+static const sal_uInt16 mso_sptTextRingInsideSegm[] =
+{
+	0xa604, 0xa504,0x8000,
+	0xa604, 0xa504,0x8000
+};
+static const SvxMSDffHandle mso_sptTextRingInsideHandle[] =
+{
+	{	MSDFF_HANDLE_FLAGS_RANGE| MSDFF_HANDLE_FLAGS_RANGE_Y_MAX_IS_SPECIAL | MSDFF_HANDLE_FLAGS_RANGE_Y_MIN_IS_SPECIAL,
+		10800, 0x100, 10800, 10800, 0x80000000, 0x7fffffff, 10800, 21600 }
+};
+static const mso_CustomShape msoTextRingInside =
+{
+	(SvxMSDffVertPair*)mso_sptTextRingInsideVert, sizeof( mso_sptTextRingInsideVert ) / sizeof( SvxMSDffVertPair ),
+	(sal_uInt16*)mso_sptTextRingInsideSegm, sizeof( mso_sptTextRingInsideSegm ) >> 1,
+	(SvxMSDffCalculationData*)mso_sptTextRingInsideCalc, sizeof( mso_sptTextRingInsideCalc ) / sizeof( SvxMSDffCalculationData ),
+	(sal_Int32*)mso_sptDefault13500,
+	(SvxMSDffTextRectangles*)mso_sptFontWorkTextRect, sizeof( mso_sptFontWorkTextRect ) / sizeof( SvxMSDffTextRectangles ),
+	21600, 21600,
+	0x80000000, 0x80000000,
+	NULL, 0,
+	(SvxMSDffHandle*)mso_sptTextRingInsideHandle, sizeof( mso_sptTextRingInsideHandle ) / sizeof( SvxMSDffHandle )
+};
+//mso_sptTextRingOutside
+//path = U 10800 ?f0 21600 ?f2 180 539 N U 10800 ?f1 21600 ?f2 180 539 N
 static const SvxMSDffVertPair mso_sptTextRingOutsideVert[] =
 {
-	{ 10800, 0 MSO_I }, { 10800, 0 MSO_I }, { 180, 359 },
-	{ 10800, 1 MSO_I }, { 10800, 0 MSO_I }, { 180, 359 }
+	{ 10800, 0 MSO_I }, { 21600, 2 MSO_I }, { 180, 539},//U
+	{ 10800, 1 MSO_I }, { 21600, 2 MSO_I }, { 180, 539 }//U
+	//{ 10800, 0 MSO_I }, { 10800, 0 MSO_I }, { 180, 359 },
+	//{ 10800, 1 MSO_I }, { 10800, 0 MSO_I }, { 180, 359 }
 };
 static const SvxMSDffCalculationData mso_sptTextRingOutsideCalc[] =	// adjustment1 : 6629 - 14971
 {
 	{ 0x2001, { DFF_Prop_adjustValue, 1, 2 } },
-	{ 0x8000, { 21600, 0, 0x400 } }
+	{ 0x8000, { 21600, 0, 0x400 } },
+	{ 0x2000, { DFF_Prop_adjustValue, 0, 0 } }, //$0
+	{ 0x8000, { 21600, 0, DFF_Prop_adjustValue } }//21600-$0
 };
 static const sal_uInt16 mso_sptTextRingOutsideSegm[] =
 {
@@ -6195,7 +6527,7 @@ static const sal_uInt16 mso_sptTextRingOutsideSegm[] =
 };
 static const SvxMSDffHandle mso_sptTextRingOutsideHandle[] =
 {
-	{	MSDFF_HANDLE_FLAGS_RANGE,
+	{	MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_Y_MAX_IS_SPECIAL | MSDFF_HANDLE_FLAGS_RANGE_Y_MIN_IS_SPECIAL,
 		10800, 0x100, 10800, 10800, 0x80000000, 0x7fffffff, 10800, 21600 }
 };
 static const mso_CustomShape msoTextRingOutside =
@@ -6203,7 +6535,7 @@ static const mso_CustomShape msoTextRingOutside =
 	(SvxMSDffVertPair*)mso_sptTextRingOutsideVert, sizeof( mso_sptTextRingOutsideVert ) / sizeof( SvxMSDffVertPair ),
 	(sal_uInt16*)mso_sptTextRingOutsideSegm, sizeof( mso_sptTextRingOutsideSegm ) >> 1,
 	(SvxMSDffCalculationData*)mso_sptTextRingOutsideCalc, sizeof( mso_sptTextRingOutsideCalc ) / sizeof( SvxMSDffCalculationData ),
-	(sal_Int32*)mso_sptDefault16200,
+	(sal_Int32*)mso_sptDefault13500,
 	(SvxMSDffTextRectangles*)mso_sptFontWorkTextRect, sizeof( mso_sptFontWorkTextRect ) / sizeof( SvxMSDffTextRectangles ),
 	21600, 21600,
 	0x80000000, 0x80000000,
@@ -7958,12 +8290,75 @@ static const mso_CustomShape msoCurvedConnector5 =
 	(SvxMSDffHandle*)mso_sptCurvedConnector5Handle, sizeof( mso_sptCurvedConnector5Handle ) / sizeof( SvxMSDffHandle )
 };
 
+/////////////////////////////teardrop////////////////////////////////////////////
+static const SvxMSDffVertPair mso_sptTearDropVert[] =
+{
+	{ 10800, 0 }, 
+	{ 0, 10800 },												    // X
+	{ 10800, 21600 },                                               // Y
+	{ 21600, 10800 },                                               // X
+	{ 21600, 10800 }, { 21600, 3 MSO_I }, { 0 MSO_I, 1 MSO_I },  			// C
+	{ 0 MSO_I, 1 MSO_I }, { 4 MSO_I, 0 }, { 10800, 0 }
+};
+
+//	the last number (0x***n)  :  0 = sum, 1 = prod, 2 = mid, 3 = abs, 4 = min, 5 = max, 6 = if, 13 = sqrt, 15 = eclipse ...
+//    the first number(0xn***)  :  2/4/8 the first/second/third value is not directly value
+static const SvxMSDffCalculationData mso_sptTearDropCalc[] =
+{
+	{ 0x2000 , { DFF_Prop_adjustValue , 0 , 0 } },  // 0  adjust value #0 
+	{ 0x8000 , { 21600 , 0 , 0x0400 } }, 			// 1  21600 - @0                     y0       
+	{ 0x8000 , { 32400 , 0 , 0x0400 } },            // 2   (32400 - @0)    
+	{ 0x2001 , { 0x0402 , 1 , 2 } },                // 3   (32400 - @0)/2               y1
+	{ 0x2002 , { 0x0400 , 10800 , 0 } }, 			// 4  (@0+10800)/2                  x2    
+}; 
+
+//m, qx, qy, qx,C,C
+//the last number(0x***n) : repeat number of this current Segm
+static const sal_uInt16 mso_sptTearDropSegm[] =
+{
+	0x4000, 0xa701, 0xa801, 0xa701, 0x2002, 0x6000, 0x8000
+};
+
+static const SvxMSDffTextRectangles mso_sptTearDropTextRect[] =
+{
+	{ { 2863, 2863 }, { 18737, 18737 } }
+};
+
+//the range of adjust values
+static const SvxMSDffHandle mso_sptTearDropHandle[] =
+{
+	//position="$0,0" xrange="10800,32400"
+	{   MSDFF_HANDLE_FLAGS_RANGE | MSDFF_HANDLE_FLAGS_RANGE_X_MAX_IS_SPECIAL| MSDFF_HANDLE_FLAGS_RANGE_X_MIN_IS_SPECIAL,
+		0x100, 0, 10800, 10800, 10800, 32400, 0x80000000, 0x7fffffff }
+};
+
+//the number of adjust values, the default values
+static const sal_Int32 mso_sptTearDropDefault[] =
+{
+	1, 21600
+};
+
+static const mso_CustomShape msoTearDrop =
+{
+	(SvxMSDffVertPair*)mso_sptTearDropVert, sizeof( mso_sptTearDropVert ) / sizeof( SvxMSDffVertPair ),
+	(sal_uInt16*)mso_sptTearDropSegm, sizeof( mso_sptTearDropSegm ) >> 1,
+	(SvxMSDffCalculationData*)mso_sptTearDropCalc, sizeof(mso_sptTearDropCalc)/sizeof(SvxMSDffCalculationData),
+	(sal_Int32*)mso_sptTearDropDefault,
+	(SvxMSDffTextRectangles*)mso_sptTearDropTextRect, sizeof( mso_sptTearDropTextRect ) / sizeof( SvxMSDffTextRectangles ),
+	21600, 21600,
+	0x80000000, 0x80000000,
+	NULL, 0,
+	(SvxMSDffHandle*)mso_sptTearDropHandle, sizeof(mso_sptTearDropHandle)/sizeof(SvxMSDffHandle)		// handles
+};
+
+
 const mso_CustomShape* GetCustomShapeContent( MSO_SPT eSpType )
 {
 	const mso_CustomShape* pCustomShape = NULL;
 	switch( eSpType )
 	{
 		case mso_sptArc :						pCustomShape = &msoArc; break;
+		case mso_sptLine:						pCustomShape = &msoStraightConnector1; break;
 		case mso_sptRectangle :					pCustomShape = &msoRectangle; break;
 		case mso_sptParallelogram :				pCustomShape = &msoParallelogram; break;
 		case mso_sptTrapezoid :					pCustomShape = &msoTrapezoid; break;
@@ -8047,8 +8442,8 @@ const mso_CustomShape* GetCustomShapeContent( MSO_SPT eSpType )
 		case mso_sptSeal32 :					pCustomShape = &msoSeal32; break;
 		case mso_sptRibbon2 :					pCustomShape = &msoRibbon2; break;
 		case mso_sptRibbon :					pCustomShape = &msoRibbon; break;
-		case mso_sptEllipseRibbon2 :			pCustomShape = &msoRibbon2; break;	// SJ: TODO
-		case mso_sptEllipseRibbon :				pCustomShape = &msoRibbon; break;	// SJ: TODO
+		case mso_sptEllipseRibbon2 :			pCustomShape = &msosptEllipseRibbon2; break;	// SJ: TODO
+		case mso_sptEllipseRibbon :				pCustomShape = &msosptEllipseRibbon; break;	// SJ: TODO
 		case mso_sptVerticalScroll :			pCustomShape = &msoVerticalScroll;	break;
 		case mso_sptHorizontalScroll :			pCustomShape = &msoHorizontalScroll; break;
 		case mso_sptFlowChartProcess :			pCustomShape = &msoFlowChartProcess; break;
@@ -8133,7 +8528,7 @@ const mso_CustomShape* GetCustomShapeContent( MSO_SPT eSpType )
 		case mso_sptTextTriangleInverted :		pCustomShape = &msoTextTriangleInverted; break;
 		case mso_sptTextChevron :				pCustomShape = &msoTextChevron; break;
 		case mso_sptTextChevronInverted :		pCustomShape = &msoTextChevronInverted; break;
-		case mso_sptTextRingInside :			pCustomShape = &msoTextRingOutside; break;	// SJ: TODO->the orientation of the ellipse needs to be changed
+		case mso_sptTextRingInside :			pCustomShape = &msoTextRingInside; break;	// SJ: TODO->the orientation of the ellipse needs to be changed
 		case mso_sptTextRingOutside :			pCustomShape = &msoTextRingOutside; break;
 		case mso_sptTextFadeRight :				pCustomShape = &msoTextFadeRight; break;
 		case mso_sptTextFadeLeft :				pCustomShape = &msoTextFadeLeft; break;
@@ -8167,6 +8562,7 @@ const mso_CustomShape* GetCustomShapeContent( MSO_SPT eSpType )
 		case mso_sptTextWave2 :					pCustomShape = &msoTextWave2; break;
 		case mso_sptTextWave3 :					pCustomShape = &msoTextWave3; break;
 		case mso_sptTextWave4 :					pCustomShape = &msoTextWave4; break;
+		case mso_sptTearDrop :                  pCustomShape = &msoTearDrop; break;    
 		default :
 		break;
 	}

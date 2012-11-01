@@ -211,6 +211,7 @@ namespace drawinglayer
 					getDiscreteHatchDistance() * getDiscreteUnit(),
 					getHatchRotation() - fRotate,
 					getHatchColor(),
+                    3, // same default as VCL, a minimum of three discrete units (pixels) offset
 					false);
 
 				// create primitive

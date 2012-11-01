@@ -630,9 +630,9 @@ void SdrEdgeObj::ImpRecalcEdgeTrack()
 		return;
     }
 
-    static bool bBoundRectCalculationRunning = false;
+    static bool mbBoundRectCalculationRunning = false;
 
-    if(bBoundRectCalculationRunning)
+    if(mbBoundRectCalculationRunning)
 	{
 		// this object is involved into another ImpRecalcEdgeTrack() call
 		// from another SdrEdgeObj. Do not calculate again to avoid loop.
@@ -643,17 +643,17 @@ void SdrEdgeObj::ImpRecalcEdgeTrack()
 	{
 		// avoid re-layout during imports/API call sequences
 		// #i45294# but calc EdgeTrack and secure properties there
-		bBoundRectCalculationRunning = true;
+		mbBoundRectCalculationRunning = true;
 		maEdgeTrack = ImpCalcEdgeTrack(maCon1, maCon2, &maEdgeInfo);
 		ImpSetAttrToEdgeInfo();
 		mbEdgeTrackDirty = false;
-		bBoundRectCalculationRunning = false;
+		mbBoundRectCalculationRunning = false;
 	}
 	else
 	{
 		// To not run in a depth loop, use a coloring algorythm on
 		// SdrEdgeObj BoundRect calculations
-		bBoundRectCalculationRunning = true;
+		mbBoundRectCalculationRunning = true;
 
         {   // use local scope to trigger locally
             const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
@@ -667,7 +667,7 @@ void SdrEdgeObj::ImpRecalcEdgeTrack()
         }
 
 		// #110649#
-		bBoundRectCalculationRunning = false;
+		mbBoundRectCalculationRunning = false;
 	}
 }
 
@@ -2464,7 +2464,6 @@ void SdrEdgeObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransf
         }
         else
         {
-
             if(!bCon1)
             {
                 // transform first point

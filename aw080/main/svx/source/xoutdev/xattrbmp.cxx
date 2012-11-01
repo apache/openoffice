@@ -94,11 +94,11 @@ Bitmap createHistorical8x8FromArray(const sal_uInt16* pArray, Color aColorPix, C
             {
                 if(pArray[(a * 8) + b])
                 {
-                    pContent->SetPixel(b, a, sal_uInt8(1));
+                    pContent->SetPixelIndex(b, a, 1);
                 }
                 else
                 {
-                    pContent->SetPixel(b, a, sal_uInt8(0));
+                    pContent->SetPixelIndex(b, a, 0);
                 }
             }
         }
@@ -414,6 +414,12 @@ sal_Bool XFillBitmapItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_
     if( bSetURL )
     {
         maGraphicObject  = GraphicObject::CreateGraphicObjectFromURL(aURL);
+
+        // #121194# Prefer GraphicObject over bitmap object if both are provided
+        if(bSetBitmap && GRAPHIC_NONE != maGraphicObject.GetType())
+        {
+            bSetBitmap = false;
+        }
     }
     if( bSetBitmap )
     {

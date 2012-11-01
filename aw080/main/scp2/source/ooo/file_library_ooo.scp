@@ -1058,8 +1058,8 @@ End
 #endif
 #endif
 
-STD_LIB_FILE(gid_File_Lib_Mysql,mysql)
-STD_LIB_FILE(gid_File_Lib_Odbc,odbc)
+STD_LIB_FILE(gid_File_Lib_Mysql,mysql.uno)
+STD_LIB_FILE(gid_File_Lib_Odbc,odbc.uno)
 
 // STD_LIB_FILE( gid_File_Lib_Ofa , ofa)
 
@@ -1817,6 +1817,15 @@ File gid_File_Moz_Msvcr80
     TXT_FILE_BODY;
     Dir = SCP2_OOO_BIN_DIR;
     Name = SCP2_URE_DL_NORMAL("msvcr80");
+    Styles = (PACKED, VERSION_INDEPENDENT_COMP_ID);
+End
+#endif
+
+#if defined(WNT)
+File gid_File_Lib_Msvcr100
+    TXT_FILE_BODY;
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = SCP2_URE_DL_NORMAL("msvcr100");
     Styles = (PACKED, VERSION_INDEPENDENT_COMP_ID);
 End
 #endif

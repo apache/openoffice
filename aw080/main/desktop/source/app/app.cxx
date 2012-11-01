@@ -243,6 +243,8 @@ static sal_Bool _bCrashReporterEnabled = sal_True;
 static const ::rtl::OUString CFG_PACKAGE_COMMON_HELP   ( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.Office.Common/Help"));
 
 static ::rtl::OUString getBrandSharePreregBundledPathURL();
+// #i119950# Add a option that not to display the "Fatal Error" on dialog title
+void FatalError(const ::rtl::OUString& sMessage, const sal_Bool isDisplayErrorString = sal_True);
 // ----------------------------------------------------------------------------
 
 ResMgr* Desktop::GetDesktopResManager()
@@ -354,7 +356,7 @@ OUString MakeStartupConfigAccessErrorMessage( OUString const & aInternalErrMsg )
 //
 // Thats why we have to use a special native message box here which does not use yield :-)
 //=============================================================================
-void FatalError(const ::rtl::OUString& sMessage)
+void FatalError(const ::rtl::OUString& sMessage, const sal_Bool isDisplayErrorString)
 {
     ::rtl::OUString sProductKey = ::utl::Bootstrap::getProductKey();
     if ( ! sProductKey.getLength())
@@ -369,8 +371,9 @@ void FatalError(const ::rtl::OUString& sMessage)
 
     ::rtl::OUStringBuffer sTitle (128);
     sTitle.append      (sProductKey     );
-    sTitle.appendAscii (" - Fatal Error");
-
+	if (isDisplayErrorString) {
+		sTitle.appendAscii (" - Fatal Error");
+	}
     Application::ShowNativeErrorBox (sTitle.makeStringAndClear (), sMessage);
     _exit(ExitHelper::E_FATAL_ERROR);
 }
@@ -805,7 +808,7 @@ void MinimalCommandEnv::handle(
 */
 static bool needsInstallBundledExtensionBlobs (
     const ::rtl::OUString& rsMarkerURL,
-    ::osl::Directory& rDirectory)
+    const ::rtl::OUString& rsDirectoryURL)
 {
     ::osl::DirectoryItem aMarkerItem;
     if (::osl::DirectoryItem::get(rsMarkerURL, aMarkerItem) == ::osl::File::E_NOENT)
@@ -823,14 +826,18 @@ static bool needsInstallBundledExtensionBlobs (
 
     const TimeValue aMarkerModifyTime (aMarkerStat.getModifyTime());
 
-    if (rDirectory.open() != osl::File::E_None)
+    ::osl::Directory aDirectory (rsDirectoryURL);
+    if (aDirectory.open() != osl::File::E_None)
     {
         // No extension directory.  Nothing to be done.
         return false;
     }
 
+    // Check the date of each extension in the given directory.  If
+    // any of them is newer than the marker file then an installation
+    // is necessary.
     ::osl::DirectoryItem aDirectoryItem;
-    while (rDirectory.getNextItem(aDirectoryItem) == osl::File::E_None)
+    while (aDirectory.getNextItem(aDirectoryItem) == osl::File::E_None)
     {
         ::osl::FileStatus aFileStat (FileStatusMask_ModifyTime);
         if (aDirectoryItem.getFileStatus(aFileStat) != ::osl::File::E_None)
@@ -839,11 +846,26 @@ static bool needsInstallBundledExtensionBlobs (
             continue;
         if (aFileStat.getModifyTime().Seconds > aMarkerModifyTime.Seconds)
         {
-            rDirectory.close();
+            aDirectory.close();
             return true;
         }
 	}
-    rDirectory.close();
+    aDirectory.close();
+
+    // Also check the last modification time of the containing
+    // directory.  This ensures installation after an update of
+    // OpenOffice.  Without it the extensions have the date on which
+    // they where built, not the date on which they where installed.
+    if (::osl::DirectoryItem::get(rsDirectoryURL, aDirectoryItem) == osl::File::E_None)
+    {    
+        ::osl::FileStatus aDirectoryStat (FileStatusMask_ModifyTime);
+        const ::osl::FileBase::RC eResult (aDirectoryItem.getFileStatus(aDirectoryStat));
+        if (eResult == ::osl::File::E_None)
+        {
+            if (aDirectoryStat.getModifyTime().Seconds > aMarkerModifyTime.Seconds)
+                return true;
+        }
+    }
 
     // No file in the directory is newer than the marker.
     return false;
@@ -861,7 +883,7 @@ static void installBundledExtensionBlobs()
     // than the marker we have to install any extension.
     ::rtl::OUString sMarkerURL (RTL_CONSTASCII_USTRINGPARAM("$BUNDLED_EXTENSIONS_USER/lastsynchronized.bundled"));
     ::rtl::Bootstrap::expandMacros(sMarkerURL);
-    if ( ! needsInstallBundledExtensionBlobs(sMarkerURL, aDir))
+    if ( ! needsInstallBundledExtensionBlobs(sMarkerURL, aDirUrl))
         return;
     writeLastModified(sMarkerURL);
 
@@ -995,6 +1017,11 @@ void Desktop::Init()
         if ( aStatus == OfficeIPCThread::IPC_STATUS_BOOTSTRAP_ERROR )
         {
             SetBootstrapError( BE_PATHINFO_MISSING );
+			
+        }
+        else if ( aStatus == OfficeIPCThread::IPC_STATUS_MULTI_TS_ERROR )
+        {
+            SetBootstrapError( BE_MUTLISESSION_NOT_SUPPROTED );
         }
         else if ( aStatus == OfficeIPCThread::IPC_STATUS_2ND_OFFICE )
         {
@@ -1241,7 +1268,13 @@ void Desktop::HandleBootstrapPathErrors( ::utl::Bootstrap::Status aBootstrapStat
 
 void Desktop::HandleBootstrapErrors( BootstrapError aBootstrapError )
 {
-    if ( aBootstrapError == BE_PATHINFO_MISSING )
+	if ( aBootstrapError == BE_MUTLISESSION_NOT_SUPPROTED ) {
+		OUString        aMessage;
+		aMessage = GetMsgString( STR_BOOTSTRAP_ERR_MULTISESSION,
+                        OUString( RTL_CONSTASCII_USTRINGPARAM( "You have another instance running in a different terminal session. Close that instance and then try again." )) );
+        FatalError(aMessage,sal_False);
+
+	} else if ( aBootstrapError == BE_PATHINFO_MISSING )
     {
         OUString                    aErrorMsg;
         OUString                    aBuffer;
@@ -2021,7 +2054,11 @@ void Desktop::Main()
 
         if ( !pExecGlobals->bRestartRequested )
         {
-            if ((!pCmdLineArgs->WantsToLoadDocument() && !pCmdLineArgs->IsInvisible() && !pCmdLineArgs->IsHeadless() && !pCmdLineArgs->IsQuickstart()) &&
+            if ((!pCmdLineArgs->IsNoDefault() &&
+                 !pCmdLineArgs->WantsToLoadDocument() &&
+                 !pCmdLineArgs->IsInvisible() &&
+                 !pCmdLineArgs->IsHeadless() &&
+                 !pCmdLineArgs->IsQuickstart()) &&
                 (SvtModuleOptions().IsModuleInstalled(SvtModuleOptions::E_SSTARTMODULE)) &&
                 (!bExistsRecoveryData                                                  ) &&
                 (!bExistsSessionData                                                   ) &&

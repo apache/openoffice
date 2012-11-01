@@ -54,6 +54,9 @@
 #include <vcl/svapp.hxx>
 #include <svx/svdocirc.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
+#include <com/sun/star/drawing/HomogenMatrix3.hpp>
+#include <basegfx/matrix/b2dhommatrix.hxx>
+#include <basegfx/polygon/b2dpolygontools.hxx>
 
 using ::rtl::OUString;
 using namespace ::com::sun::star;
@@ -1172,6 +1175,109 @@ ImplEESdrObject::~ImplEESdrObject()
 {
 }
 
+basegfx::B2DRange getUnrotatedGroupBoundRange(const Reference< XShape >& rxShape)
+{
+    basegfx::B2DRange aRetval;
+
+    try
+    {
+        if(rxShape.is())
+        {
+            if(rxShape->getShapeType().equalsAsciiL(RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.GroupShape")))
+            {
+                // it's a group shape, iterate over children
+                const Reference< XIndexAccess > xXIndexAccess(rxShape, UNO_QUERY);
+
+                if(xXIndexAccess.is())
+                {
+                    for(sal_uInt32 n(0), nCnt = xXIndexAccess->getCount(); n < nCnt; ++n)
+                    {
+                        const Reference< XShape > axShape(xXIndexAccess->getByIndex(n), UNO_QUERY);
+
+                        if(axShape.is())
+                        {
+                            // we are calculating the bound for a group, correct rotation for sub-objects
+                            // to get the unrotated bounds for the group
+                            const basegfx::B2DRange aExtend(getUnrotatedGroupBoundRange(axShape));
+
+                            aRetval.expand(aExtend);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                // iT#s a xShape, get it's transformation
+                const Reference< XPropertySet > mXPropSet(rxShape, UNO_QUERY);
+
+                if(mXPropSet.is())
+                {
+                    const Any aAny = mXPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("Transformation")));
+                    
+                    if(aAny.hasValue())
+                    {
+                        HomogenMatrix3 aMatrix;
+
+                        if(aAny >>= aMatrix)
+                        {
+                            basegfx::B2DHomMatrix aHomogenMatrix;
+
+                            aHomogenMatrix.set(0, 0, aMatrix.Line1.Column1);
+                            aHomogenMatrix.set(0, 1, aMatrix.Line1.Column2);
+                            aHomogenMatrix.set(0, 2, aMatrix.Line1.Column3);
+                            aHomogenMatrix.set(1, 0, aMatrix.Line2.Column1);
+                            aHomogenMatrix.set(1, 1, aMatrix.Line2.Column2);
+                            aHomogenMatrix.set(1, 2, aMatrix.Line2.Column3);
+                            aHomogenMatrix.set(2, 0, aMatrix.Line3.Column1);
+                            aHomogenMatrix.set(2, 1, aMatrix.Line3.Column2);
+                            aHomogenMatrix.set(2, 2, aMatrix.Line3.Column3);
+
+                            basegfx::B2DVector aScale, aTranslate;
+                            double fRotate, fShearX;
+
+                            // decopose transformation
+                            aHomogenMatrix.decompose(aScale, aTranslate, fRotate, fShearX);
+
+                            // check if rotation needs to be corrected
+                            if(!basegfx::fTools::equalZero(fRotate))
+                            {
+                                // to correct, keep in mind that ppt graphics are rotated around their center
+                                const basegfx::B2DPoint aCenter(aHomogenMatrix * basegfx::B2DPoint(0.5, 0.5));
+
+                                aHomogenMatrix.translate(-aCenter.getX(), -aCenter.getY());
+                                aHomogenMatrix.rotate(-fRotate);
+                                aHomogenMatrix.translate(aCenter.getX(), aCenter.getY());
+                            }
+
+
+                            // check if shear needs to be corrected (always correct shear,
+                            // ppt does not know about it)
+                            if(!basegfx::fTools::equalZero(fShearX))
+                            {
+                                const basegfx::B2DPoint aMinimum(aHomogenMatrix * basegfx::B2DPoint(0.0, 0.0));
+
+                                aHomogenMatrix.translate(-aMinimum.getX(), -aMinimum.getY());
+                                aHomogenMatrix.shearX(-fShearX);
+                                aHomogenMatrix.translate(aMinimum.getX(), aMinimum.getY());
+                            }
+
+                            // create range. It's no longer rotated (or sheared), so use
+                            // minimum and maximum values
+                            aRetval.expand(aHomogenMatrix * basegfx::B2DPoint(0.0, 0.0));
+                            aRetval.expand(aHomogenMatrix * basegfx::B2DPoint(1.0, 1.0));
+                        }
+                    }
+                }
+            }
+        }
+    }
+    catch(::com::sun::star::uno::Exception&)
+    {
+    }
+
+    return aRetval;
+}
+
 void ImplEESdrObject::Init( ImplEESdrWriter& rEx )
 {
 	mXPropSet = Reference< XPropertySet >::query( mXShape );
@@ -1179,15 +1285,32 @@ void ImplEESdrObject::Init( ImplEESdrWriter& rEx )
 	{
 		static const sal_Char aPrefix[] = "com.sun.star.";
 		static const xub_StrLen nPrefix = sizeof(aPrefix)-1;
-        const ::com::sun::star::awt::Point aPoint(mXShape->getPosition());
-        const ::com::sun::star::awt::Size aSize(mXShape->getSize());
-        const basegfx::B2DRange aRange(rEx.ImplMapB2DRange(basegfx::B2DRange(aPoint.X, aPoint.Y, aPoint.X + aSize.Width, aPoint.Y + aSize.Height)));
 
-		setObjectRange(aRange);
-		mType = String( mXShape->getShapeType() );
-		mType.Erase( 0, nPrefix );	// strip "com.sun.star."
-		xub_StrLen nPos = mType.SearchAscii( "Shape" );
-		mType.Erase( nPos, 5 );
+        // detect name first to make below test (is group) work
+        mType = String( mXShape->getShapeType() );
+        mType.Erase( 0, nPrefix );	// strip "com.sun.star."
+        xub_StrLen nPos = mType.SearchAscii( "Shape" );
+        mType.Erase( nPos, 5 );
+
+        if(GetType().EqualsAscii("drawing.Group"))
+        {
+            // if it's a group, the unrotated range is needed for that group
+            const basegfx::B2DRange aUnroatedRange(getUnrotatedGroupBoundRange(mXShape));
+
+            setObjectRange(rEx.ImplMapB2DRange(aUnroatedRange));
+        }
+        else
+        {
+            // if it's no group, use position and size directly, roated/sheared or not
+            const ::com::sun::star::awt::Point aPoint(mXShape->getPosition());
+            const ::com::sun::star::awt::Size aSize(mXShape->getSize());
+            const basegfx::B2DRange aRange(
+                basegfx::B2DRange(
+                    aPoint.X, aPoint.Y, 
+                    aPoint.X + aSize.Width, aPoint.Y + aSize.Height));
+
+            setObjectRange(rEx.ImplMapB2DRange(aRange));
+        }
 
 		static const OUString sPresStr(rtl::OUString::createFromAscii("IsPresentationObject"));
 		static const OUString sEmptyPresStr(rtl::OUString::createFromAscii("IsEmptyPresentationObject"));

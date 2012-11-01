@@ -50,7 +50,7 @@
 #include <basegfx/polygon/b2dpolygonclipper.hxx>
 #include <drawinglayer/primitive2d/invertprimitive2d.hxx>
 #include <drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx>
-#include <drawinglayer/primitive2d/fillbitmapprimitive2d.hxx>
+#include <drawinglayer/primitive2d/fillgraphicprimitive2d.hxx>
 #include <drawinglayer/primitive2d/wallpaperprimitive2d.hxx>
 #include <drawinglayer/primitive2d/textprimitive2d.hxx>
 #include <drawinglayer/primitive2d/textlayoutdevice.hxx>
@@ -387,26 +387,8 @@ namespace
         if(!rRegion.IsEmpty())
         {
             Region aRegion(rRegion);
-            aRetval = aRegion.GetB2DPolyPolygon();
 
-            if(!aRetval.count())
-            {
-		        RegionHandle aRegionHandle(aRegion.BeginEnumRects());
-		        Rectangle aRegionRectangle;
-
-                while(aRegion.GetEnumRects(aRegionHandle, aRegionRectangle))
-		        {
-                    if(!aRegionRectangle.IsEmpty())
-                    {
-					    const basegfx::B2DRange aRegionRange(
-                            aRegionRectangle.Left(), aRegionRectangle.Top(),
-                            aRegionRectangle.Right(), aRegionRectangle.Bottom());
-                        aRetval.append(basegfx::tools::createPolygonFromRect(aRegionRange));
-                    }
-                }
-
-                aRegion.EndEnumRects(aRegionHandle);
-            }
+            aRetval = aRegion.GetAsB2DPolyPolygon();
         }
 
         return aRetval;
@@ -964,6 +946,7 @@ namespace
             (double)rHatch.GetDistance(),
             (double)rHatch.GetAngle() * F_PI1800,
             rHatch.GetColor().getBColor(),
+            3, // same default as VCL, a minimum of three discrete units (pixels) offset
             false);
 	}
 

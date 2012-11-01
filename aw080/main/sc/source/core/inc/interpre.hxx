@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SC_INTERPRE_HXX
 #define SC_INTERPRE_HXX
 
@@ -86,15 +84,29 @@ public:
     formula::FormulaToken* pPointer[ MAXSTACK ];
 };
 
-enum ScIterFunc {
-    ifSUM,                              // Aufsummieren
-    ifSUMSQ,                            // Quadratsummen
-    ifPRODUCT,                          // Multiplizieren
-    ifAVERAGE,                          // Durchschnitt
-    ifCOUNT,                            // Anzahl Werte
-    ifCOUNT2,                           // Anzahl Werte (nichtleer)
-    ifMIN,                              // Minimum
-    ifMAX                               // Maximum
+enum ScIterFunc
+{
+    ifSUM,     // Sum
+    ifSUMSQ,   // Sum squares
+    ifPRODUCT, // Product
+    ifAVERAGE, // Average
+    ifCOUNT,   // Count
+    ifCOUNT2,  // Count non-empty
+    ifMIN,     // Minimum
+    ifMAX      // Maximum
+};
+
+enum ScIterFuncIf
+{
+    ifSUMIF,    // Conditional sum
+    ifAVERAGEIF // Conditional average
+};
+
+enum ScIterFuncIfs
+{
+    ifSUMIFS,     // Multi-Conditional sum
+    ifAVERAGEIFS, // Multi-Conditional average
+    ifCOUNTIFS    // Multi-Conditional count
 };
 
 struct FormulaTokenRef_less
@@ -132,7 +144,7 @@ public:
     ScMatrixRef GetNewMat(SCSIZE nC, SCSIZE nR);
 private:
     static ScTokenStack*    pGlobalStack;
-    static sal_Bool             bGlobalStackInUse;
+    static sal_Bool         bGlobalStackInUse;
 
     formula::FormulaTokenIterator aCode;
     ScAddress   aPos;
@@ -146,6 +158,8 @@ private:
 
     const formula::FormulaToken* 
                 pCur;                // current token
+    ScToken*    pLastStackRefToken;     // i120962: current valid reference token
+    bool        bRefFunc;               // i120962: is a reference function
     String      aTempStr;               // for GetString()
     ScTokenStack* pStackObj;            // contains the stacks
     formula::FormulaToken**   pStack;                 // the current stack
@@ -379,6 +393,7 @@ void ScLessEqual();
 void ScGreaterEqual();
 void ScAnd();
 void ScOr();
+void ScXor();
 void ScNot();
 void ScNeg();
 void ScPercentSign();
@@ -470,8 +485,14 @@ void ScColumn();
 void ScRow();
 void ScTable();
 void ScMatch();
+double IterateParametersIf( ScIterFuncIf );
 void ScCountIf();
 void ScSumIf();
+void ScAverageIf();
+double IterateParametersIfs( ScIterFuncIfs );
+void ScSumIfs();
+void ScAverageIfs();
+void ScCountIfs();
 void ScCountEmptyCells();
 void ScLookup();
 void ScHLookup();
@@ -766,6 +787,10 @@ void ScSTEXY();
 void ScSlope();
 void ScTrend();
 void ScInfo();
+void ScLenB();
+void ScRightB();
+void ScLeftB();
+void ScMidB();
 
 //------------------------ Functions in interpr6.cxx -------------------------
 
@@ -791,14 +816,16 @@ public:
     void SetError(sal_uInt16 nError)
             { if (nError && !nGlobalError) nGlobalError = nError; }
 
-    sal_uInt16 GetError()                               const   { return nGlobalError; }
+    sal_uInt16 GetError()                           const   { return nGlobalError; }
     formula::StackVar  GetResultType()              const   { return xResult->GetType(); }
     const String&   GetStringResult()               const   { return xResult->GetString(); }
     double          GetNumResult()                  const   { return xResult->GetDouble(); }
     formula::FormulaTokenRef 
                     GetResultToken()                const   { return xResult; }
     short           GetRetFormatType()              const   { return nRetFmtType; }
-    sal_uLong           GetRetFormatIndex()             const   { return nRetFmtIndex; }
+    sal_uLong       GetRetFormatIndex()             const   { return nRetFmtIndex; }
+    ScToken*        GetLastStackRefToken() { return pLastStackRefToken; }
+    bool            IsReferenceFunc() { return bRefFunc; }
 };
 
 

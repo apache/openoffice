@@ -653,27 +653,32 @@ sal_Bool 	SwGraphicProperties_Impl::AnyToItemSet(
     GetProperty(RES_GRFATR_MIRRORGRF, MID_MIRROR_HORZ_ODD_PAGES, pHOddMirror);
     GetProperty(RES_GRFATR_MIRRORGRF, MID_MIRROR_VERT, pVMirror);
 
-	if ( pStyle )
-	{
-		rtl::Reference< SwDocStyleSheet > xStyle( new SwDocStyleSheet(*pStyle) );
+    if ( pStyle )
+    {
+        rtl::Reference< SwDocStyleSheet > xStyle( new SwDocStyleSheet(*pStyle) );
         const :: SfxItemSet *pItemSet = &xStyle->GetItemSet();
-		//Begin Bug 119922
-    		sal_Bool bOasis = sal_False;
-		SfxMedium* pMedium = NULL;
-		const SfxFilter * pFilter = NULL;		
-		if ( ( pMedium = pDoc->GetDocShell()->GetMedium() ) &&
-				( pFilter = pMedium->GetFilter() ) )
-			bOasis = pFilter->GetVersion() > SOFFICE_FILEFORMAT_60;	
-		bRet = FillBaseProperties( rFrmSet, *pItemSet, rSizeFound, bOasis );
-		//End Bug 119922
-		lcl_FillMirror ( rGrSet, *pItemSet, pHEvenMirror, pHOddMirror, pVMirror, bRet );
-	}
-	else
-	{
+        //Begin Bug 119922
+        sal_Bool bOasis = sal_False;
+        {
+            const SfxMedium* pMedium = pDoc->GetDocShell()->GetMedium();
+            const SfxFilter * pFilter = pMedium
+                ? pMedium->GetFilter()
+                : NULL;
+            if ( pMedium && pFilter )
+            {
+                bOasis = pFilter->GetVersion() > SOFFICE_FILEFORMAT_60;
+            }
+        }
+        bRet = FillBaseProperties( rFrmSet, *pItemSet, rSizeFound, bOasis );
+        //End Bug 119922
+        lcl_FillMirror ( rGrSet, *pItemSet, pHEvenMirror, pHOddMirror, pVMirror, bRet );
+    }
+    else
+    {
         const :: SfxItemSet *pItemSet = &pDoc->GetFrmFmtFromPool( RES_POOLFRM_GRAPHIC )->GetAttrSet();
-    	bRet = FillBaseProperties(rFrmSet, *pItemSet, rSizeFound);
-		lcl_FillMirror ( rGrSet, *pItemSet, pHEvenMirror, pHOddMirror, pVMirror, bRet );
-	}
+        bRet = FillBaseProperties(rFrmSet, *pItemSet, rSizeFound);
+        lcl_FillMirror ( rGrSet, *pItemSet, pHEvenMirror, pHOddMirror, pVMirror, bRet );
+    }
 
 
     static const :: sal_uInt16 nIDs[] =

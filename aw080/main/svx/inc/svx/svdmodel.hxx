@@ -506,23 +506,18 @@ public:
 	SdrUndoFactory& GetSdrUndoFactory() const;
 
 	// Zugriffsmethoden fuer Paletten, Listen und Tabellen
-	void SetColorTable(XColorTable* pTable) { if(mpColorTable != pTable) mpColorTable = pTable; }
-	XColorTable* GetColorTable() const { return mpColorTable; }
-
-	void SetDashList(XDashList* pList) { if(mpDashList != pList) mpDashList = pList; }
-	XDashList* GetDashList() const { return mpDashList; }
-
-	void SetLineEndList(XLineEndList* pList) { if(mpLineEndList != pList) mpLineEndList = pList; }
-	XLineEndList* GetLineEndList() const { return mpLineEndList; }
-
-	void SetHatchList(XHatchList* pList) { if(mpHatchList != pList) mpHatchList = pList; }
-	XHatchList* GetHatchList() const { return mpHatchList; }
-
-	void SetGradientList(XGradientList* pList) { if(mpGradientList != pList) mpGradientList = pList; }
-	XGradientList* GetGradientList() const { return mpGradientList; }
-
-	void SetBitmapList(XBitmapList* pList) { if(mpBitmapList != pList) mpBitmapList = pList; }
-	XBitmapList* GetBitmapList() const { return mpBitmapList; }
+	void            SetColorTable(XColorTable* pTable)       ;
+	XColorTable*    GetColorTable() const                    { return mpColorTable; }
+	void            SetDashList(XDashList* pList)            ;
+	XDashList*      GetDashList() const                      { return mpDashList; }
+	void            SetLineEndList(XLineEndList* pList)      ;
+	XLineEndList*   GetLineEndList() const                   { return mpLineEndList; }
+	void            SetHatchList(XHatchList* pList)          ;
+	XHatchList*     GetHatchList() const                     { return mpHatchList; }
+	void            SetGradientList(XGradientList* pList)    ;
+	XGradientList*  GetGradientList() const                  { return mpGradientList; }
+	void            SetBitmapList(XBitmapList* pList)        ;
+	XBitmapList*    GetBitmapList() const                    { return mpBitmapList; }
 
 	// Der StyleSheetPool wird der DrawingEngine nur bekanntgemacht.
 	// Zu loeschen hat ihn schliesslich der, der ihn auch konstruiert hat.

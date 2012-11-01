@@ -271,6 +271,11 @@ namespace binfilter {
 /*N*/ 
 /*N*/ 		rDoc.LoadAttributes(rIn);
 /*N*/ 	}
+        if( rIn.GetError() != 0 ) //read error
+        {
+            return rIn;//handle error occured maybe in rDoc.LoadAttributes e.g. if memchart could not be read correctly
+        }
+
 /*N*/ 	// <- Basisaufruf
 /*N*/ 
 /*N*/ 	rDoc.GetItemPool().LoadCompleted();

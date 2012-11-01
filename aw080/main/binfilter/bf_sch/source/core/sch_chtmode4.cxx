@@ -208,11 +208,19 @@ namespace binfilter {
 
 /*N*/ void ChartModel::ResizeText (SfxItemSet *pTextAttr, Size aPageSize, BOOL bResizePage )
 /*N*/ {
-/*N*/ 	double fRatio;
+/*N*/ 	double fRatio = 1.0;
 /*N*/ 	if( bResizePage )
-/*N*/ 		fRatio = (double)aPageSize.Height() / (double)aInitialSize.Height();
+        {
+            double fDenominator = aInitialSize.Height();
+            if( fDenominator != 0 )
+/*N*/           fRatio = (double)aPageSize.Height() / fDenominator;
+        }
 /*N*/ 	else
-/*?*/ 		fRatio = (double)aDiagramRectangle.GetHeight() / (double)aLastDiagramRectangle.GetHeight();
+        {
+            double fDenominator = aLastDiagramRectangle.GetHeight();
+            if( fDenominator != 0 )
+/*?*/           fRatio = (double)aDiagramRectangle.GetHeight() / fDenominator;
+        }
 /*N*/ 
 /*N*/ 	// resize all three fonts
 /*N*/ 	static const USHORT nWhichIds[ 3 ] = {
@@ -721,6 +729,21 @@ namespace binfilter {
 /*N*/ 	}
 /*N*/ }
 
+Point ChartModel::calcRelativePosition( const Point& rStartPoint, const Size& rInitialSize, const Size& rNewSize )
+{
+    Point aRet( rStartPoint );
+    double fX_Denominator = rInitialSize.Width();
+    double fY_Denominator = rInitialSize.Height();
+    if( fX_Denominator != 0.0 && fY_Denominator != 0.0 )
+    {
+        double fRelativXPosition = rStartPoint.X() / fX_Denominator;
+        double fRelativYPosition = rStartPoint.Y() / fY_Denominator;
+        aRet.X() = static_cast<long>( rNewSize.Width()  * fRelativXPosition );
+        aRet.Y() = static_cast<long>( rNewSize.Height() * fRelativYPosition );
+    }
+    return aRet;
+}
+
 /*************************************************************************
 |*
 |* Sub-Methode von BuildChart(), Anzeige des Haupttitels
@@ -735,10 +758,7 @@ namespace binfilter {
 /*N*/ 	if (bUseRelativePositionsForChartGroups && (aTitleTopCenter.X() >= 0) &&
 /*N*/ 	   (aTitleTopCenter.Y() >= 0) && GetMainTitleHasBeenMoved())
 /*N*/ 	{
-/*N*/ 		double fRelativXPosition = ((double) aTitleTopCenter.X()) / aInitialSize.Width();
-/*N*/ 		double fRelativYPosition = ((double) aTitleTopCenter.Y()) / aInitialSize.Height();
-/*N*/ 		aTitlePosition.X() = (long)((double)rPageSize.Width()  * fRelativXPosition );
-/*N*/ 		aTitlePosition.Y() = (long)((double)rPageSize.Height() * fRelativYPosition );
+/*N*/ 	    aTitlePosition = calcRelativePosition( aTitleTopCenter, aInitialSize, rPageSize );
 /*N*/ 	}
 /*N*/ 	else
 /*N*/ 	{
@@ -754,7 +774,6 @@ namespace binfilter {
 /*N*/ 	pObj->SetResizeProtect(TRUE);
 /*N*/ 	pPage->NbcInsertObject(pObj, rIndex++);
 /*N*/ }
-
 /*************************************************************************
 |*
 |* Sub-Methode von BuildChart(), man koennte vermutlich DoShowMainTitle und
@@ -770,10 +789,7 @@ namespace binfilter {
 /*N*/ 	if (bUseRelativePositionsForChartGroups && (aSubTitleTopCenter.X() >= 0) &&
 /*N*/ 	  (aSubTitleTopCenter.Y() >= 0) && GetSubTitleHasBeenMoved())
 /*N*/ 	{
-/*N*/ 	   double fRelativeXPosition = ((double) aSubTitleTopCenter.X()) / aInitialSize.Width();
-/*N*/ 	   double fRelativeYPosition = ((double) aSubTitleTopCenter.Y()) / aInitialSize.Height();
-/*N*/ 	   aSubTitlePosition.X() = (long)((double)rPageSize.Width() *  fRelativeXPosition );
-/*N*/ 	   aSubTitlePosition.Y() = (long)((double)rPageSize.Height() * fRelativeYPosition );
+/*N*/ 	    aSubTitlePosition = calcRelativePosition( aSubTitleTopCenter, aInitialSize, rPageSize );
 /*N*/ 	}
 /*N*/ 	else
 /*N*/ 	{
@@ -816,17 +832,7 @@ namespace binfilter {
 /*N*/ 			if (bUseRelativePositionsForChartGroups && (aLegendTopLeft.X() >= 0) &&
 /*N*/ 			   (aLegendTopLeft.Y() >= 0) && GetLegendHasBeenMoved())
 /*N*/ 			{
-/*N*/                 double fRatioX =
-/*N*/                     static_cast< double >( rPageSize.Width() ) /
-/*N*/                     static_cast< double >( aInitialSize.Width() );
-/*N*/                 double fRatioY =
-/*N*/                     static_cast< double >( rPageSize.Height() ) /
-/*N*/                     static_cast< double >( aInitialSize.Height() );
-/*N*/ 
-/*N*/ 				aLegendPosition.X() = static_cast< long >(
-/*N*/                     static_cast< double >( aLegendTopLeft.X() ) * fRatioX );
-/*N*/ 				aLegendPosition.Y() = static_cast< long >(
-/*N*/                     static_cast< double >( aLegendTopLeft.Y() ) * fRatioY );
+/*N*/ 				aLegendPosition = calcRelativePosition( aLegendTopLeft, aInitialSize, rPageSize );
 /*N*/ 
 /*N*/ 				if( bAdjustMarginsForLegend )
 /*N*/ 				{
@@ -959,7 +965,9 @@ namespace binfilter {
 /*N*/ 				aSet.Put(pObj->GetItemSet());
 /*N*/ 
 /*N*/ 				aSet.ClearInvalidItems();
-/*N*/ 				aDataRowAttrList.GetObject( nRow )->Put( aSet );
+                    SfxItemSet* pItemSet = aDataRowAttrList.GetObject( nRow );
+                    if(pItemSet)
+/*N*/ 				    pItemSet->Put( aSet );
 /*N*/ 				aSet.ClearItem();
 /*N*/ 			}
 /*N*/ 			else if( pDataPoint )
@@ -1172,25 +1180,23 @@ namespace binfilter {
 			//	All four border lines had to lie inside the chart rectangle.
 			//	If the new solution, that solves error #88404# proves to work, then remove this
 			//	paragraph and the commented code below.
+                double fFactorX = 1.0;
+                double fFactorY = 1.0;
+                double fX_Denominator = aInitialSize.Width();
+                double fY_Denominator = aInitialSize.Height();
+                if( fX_Denominator != 0.0 && fY_Denominator != 0.0 )
+                {
+                    fFactorX = rPageSize.Width() / fX_Denominator;
+                    fFactorY = rPageSize.Height() / fY_Denominator;
+                }
+
 /*N*/ 			if (	(aDiagramRectangle.nLeft < aDiagramRectangle.nRight)
 /*N*/ 				&&	(aDiagramRectangle.nTop < aDiagramRectangle.nBottom) )
-//              if ((aDiagramRectangle.nLeft >= 0) && (aDiagramRectangle.nTop >= 0) &&
-//                  (aDiagramRectangle.nRight >= 0) && (aDiagramRectangle.nBottom >= 0))
 /*N*/ 			{
-/*?*/ 				double fRelativeXPosition = ((double) aDiagramRectangle.Left()) / aInitialSize.Width();
-/*?*/ 				double fRelativeYPosition = ((double) aDiagramRectangle.Top()) / aInitialSize.Height();
-//				if ((fRelativeXPosition <= 1.0) && (fRelativeYPosition <= 1.0))
-//				{
-/*?*/ 					aChartRect.nLeft = (long)((double)rPageSize.Width() *  fRelativeXPosition );
-/*?*/ 					aChartRect.nTop =  (long)((double)rPageSize.Height() * fRelativeYPosition );
-//				}
-/*?*/ 				fRelativeXPosition = ((double) aDiagramRectangle.Right()) / aInitialSize.Width();
-/*?*/ 				fRelativeYPosition = ((double) aDiagramRectangle.Bottom()) / aInitialSize.Height();
-//				if ((fRelativeXPosition <= 1.0) && (fRelativeYPosition <= 1.0))
-//				{
-/*?*/ 					aChartRect.nRight =  (long)((double)rPageSize.Width() *  fRelativeXPosition );
-/*?*/ 					aChartRect.nBottom = (long)((double)rPageSize.Height() * fRelativeYPosition );
-//				}
+/*?*/ 					aChartRect.nLeft = static_cast<long>( aDiagramRectangle.Left() * fFactorX );
+/*?*/ 					aChartRect.nTop =  static_cast<long>( aDiagramRectangle.Top()  * fFactorY );
+/*?*/ 					aChartRect.nRight = static_cast<long>( aDiagramRectangle.Right() *  fFactorX );
+/*?*/ 					aChartRect.nBottom = static_cast<long>( aDiagramRectangle.Bottom() * fFactorY );
 /*?*/ 			}
 /*N*/ 		}
 /*N*/ 	}

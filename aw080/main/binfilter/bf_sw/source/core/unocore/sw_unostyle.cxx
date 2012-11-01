@@ -1377,7 +1377,7 @@ SwXStyle::SwXStyle( SwDoc *pDoc, SfxStyleFamily eFam, BOOL bConditional) :
 	Reference < XNameAccess > xFamilies = xFamilySupplier->getStyleFamilies();
 
 	Any aAny;
-    sal_uInt16 nMapId;
+    sal_uInt16 nMapId(PROPERTY_MAP_CHAR_STYLE);
     switch( eFamily )
     {
         case SFX_STYLE_FAMILY_CHAR:
@@ -1415,6 +1415,11 @@ SwXStyle::SwXStyle( SwDoc *pDoc, SfxStyleFamily eFam, BOOL bConditional) :
 			nMapId = PROPERTY_MAP_NUM_STYLE;
 		}
 		break;
+        default:
+        {
+            OSL_ASSERT(false);
+        }
+        break;
     }
     pPropImpl = new SwStyleProperties_Impl(aSwMapProvider.GetPropertyMap(nMapId));
 }

@@ -45,6 +45,7 @@
 #include <unotools/charclass.hxx>
 #include <unotools/transliterationwrapper.hxx>
 #include <tools/tenccvt.hxx>
+#include <svx/sdrundomanager.hxx>
 
 #include <com/sun/star/text/WritingMode2.hpp>
 #include <com/sun/star/script/vba/XVBACompatibility.hpp>
@@ -2682,6 +2683,11 @@ void ScDocument::GetString( SCCOL nCol, SCROW nRow, SCTAB nTab, String& rString 
 		rString.Erase();
 }
 
+void ScDocument::FillDPCache( ScDPTableDataCache * pCache, SCTAB nTab, SCCOL nStartCol, SCCOL nEndCol, SCROW nStartRow, SCROW nEndRow )
+{
+    if ( VALIDTAB(nTab) && pTab[nTab] )
+        pTab[nTab]->FillDPCache( pCache, nStartCol, nEndCol, nStartRow, nEndRow );
+}
 
 void ScDocument::GetInputString( SCCOL nCol, SCROW nRow, SCTAB nTab, String& rString )
 {
@@ -3159,6 +3165,11 @@ void ScDocument::SetColWidth( SCCOL nCol, SCTAB nTab, sal_uInt16 nNewWidth )
 		pTab[nTab]->SetColWidth( nCol, nNewWidth );
 }
 
+void ScDocument::SetColWidthOnly( SCCOL nCol, SCTAB nTab, sal_uInt16 nNewWidth )
+{
+	if ( ValidTab(nTab) && pTab[nTab] )
+		pTab[nTab]->SetColWidthOnly( nCol, nNewWidth );
+}
 
 void ScDocument::SetRowHeight( SCROW nRow, SCTAB nTab, sal_uInt16 nNewHeight )
 {
@@ -3933,6 +3944,14 @@ void ScDocument::ApplyPatternAreaTab( SCCOL nStartCol, SCROW nStartRow,
 	if (VALIDTAB(nTab))
 		if (pTab[nTab])
 			pTab[nTab]->ApplyPatternArea( nStartCol, nStartRow, nEndCol, nEndRow, rAttr );
+}
+
+void ScDocument::ApplyPooledPatternAreaTab( SCCOL nStartCol, SCROW nStartRow,
+						SCCOL nEndCol, SCROW nEndRow, SCTAB nTab, const ScPatternAttr& rPooledAttr, const ScPatternAttr& rAttr )
+{
+	if (VALIDTAB(nTab))
+		if (pTab[nTab])
+			pTab[nTab]->ApplyPooledPatternArea( nStartCol, nStartRow, nEndCol, nEndRow, rPooledAttr, rAttr );
 }
 
 void ScDocument::ApplyPatternIfNumberformatIncompatible( const ScRange& rRange,
@@ -5290,7 +5309,11 @@ sal_Bool ScDocument::NeedPageResetAfterTab( SCTAB nTab ) const
 SfxUndoManager* ScDocument::GetUndoManager()
 {
 	if (!mpUndoManager)
-		mpUndoManager = new SfxUndoManager;
+    {
+        // to support enhanced text edit for draw objects, use an SdrUndoManager
+		mpUndoManager = new SdrUndoManager;
+    }
+
 	return mpUndoManager;
 }
 

@@ -140,7 +140,6 @@ $(MISC)$/$(SHL1TARGET).def:
     @echo ------------------------------
     @echo Making: $@
     @echo LIBRARY     $(SHL1TARGET8)  INITINSTANCE TERMINSTANCE    >$@
-    @echo DESCRIPTION 'SDRAW3 DLL'                                 >>$@
     @echo DATA        MULTIPLE                                     >>$@
     @echo EXPORTS                                                   >>$@
     @echo   _CreateSdDrawDocShellDll                                >>$@

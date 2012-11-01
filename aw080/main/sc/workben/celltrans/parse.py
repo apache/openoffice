@@ -62,8 +62,7 @@ class LocaleData(object):
         chars += "\"), OUString(), OUString());\n\n"
 
         # pre instantiations of localized function names.
-        funcs = self.funcList.keys()
-        funcs.sort()
+        funcs = sorted(self.funcList.keys())
         chars += "// pre instantiations of localized function names\n"
         for func in funcs:
             for item in self.funcList[func]:
@@ -191,7 +190,7 @@ class Parser(object):
         chars = "// This file has been automatically generated.  Do not hand-edit this!\n"
         for obj in localeList:
             chars += "\n" + obj.dumpCode()
-    
+
         # Write to output file.
         file = open(self.outfile, 'w')
         file.write(chars)
@@ -200,4 +199,3 @@ class Parser(object):
 if __name__=='__main__':
     parser = Parser(sys.argv)
     parser.parse()
-

@@ -1118,7 +1118,6 @@ LINKLINKFILES= \
    text$/shared$/optionen$/01020100.xhp \
    text$/shared$/optionen$/01020200.xhp \
    text$/shared$/optionen$/01020300.xhp \
-   text$/shared$/optionen$/01020400.xhp \
    text$/shared$/optionen$/01030000.xhp \
    text$/shared$/optionen$/01030300.xhp \
    text$/shared$/optionen$/01030500.xhp \

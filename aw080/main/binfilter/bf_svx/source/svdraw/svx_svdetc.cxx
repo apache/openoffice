@@ -502,9 +502,7 @@ namespace binfilter {
 /*?*/ 				{
 /*?*/ 					for(sal_uInt32 nX(0L); nX < nWidth; nX += nXStep)
 /*?*/ 					{
-/*?*/ 						const BitmapColor& rCol = (pAccess->HasPalette())
-/*?*/ 							? pAccess->GetPaletteColor((BYTE)pAccess->GetPixel(nY, nX))
-/*?*/ 							: pAccess->GetPixel(nY, nX);
+/*?*/ 						const BitmapColor& rCol = pAccess->GetColor(nY, nX);
 /*?*/ 
 /*?*/ 						nRt += rCol.GetRed(); 
 /*?*/ 						nGn += rCol.GetGreen(); 

@@ -82,18 +82,19 @@ sal_uInt16 SwLineInfo::NumberOfTabStops() const
  *************************************************************************/
 SwTabPortion *SwTxtFormatter::NewTabPortion( SwTxtFormatInfo &rInf, bool bAuto ) const
 {
-	SwTabPortion *pTabPor = 0;
-	SwTabPortion  *pLastTab = rInf.GetLastTab();
-    if( pLastTab && ( pLastTab->IsTabCntPortion() || pLastTab->IsTabDecimalPortion() ) )
-		if( pLastTab->PostFormat( rInf ) )
-			return 0;
+    {
+        SwTabPortion  *pLastTab = rInf.GetLastTab();
+        if( pLastTab && ( pLastTab->IsTabCntPortion() || pLastTab->IsTabDecimalPortion() ) )
+            if( pLastTab->PostFormat( rInf ) )
+                return 0;
+    }
 
     xub_Unicode cFill = 0;
     xub_Unicode cDec = 0;
-	SvxTabAdjust eAdj;
+    SvxTabAdjust eAdj;
 
-	KSHORT nNewTabPos;
-	{
+    KSHORT nNewTabPos;
+    {
         const bool bRTL = pFrm->IsRightToLeft();
         // #i24363# tab stops relative to indent
         // nTabLeft: The absolute value, the tab stops are relative to: Tabs origin.
@@ -149,7 +150,7 @@ SwTabPortion *SwTxtFormatter::NewTabPortion( SwTxtFormatInfo &rInf, bool bAuto )
             nMyRight = aRightTop.Y();
         }
 
-		SwTwips nNextPos;
+        SwTwips nNextPos = 0;
 
         // #i24363# tab stops relative to indent
         // nSearchPos: The current position relative to the tabs origin.
@@ -164,53 +165,54 @@ SwTabPortion *SwTxtFormatter::NewTabPortion( SwTxtFormatInfo &rInf, bool bAuto )
         // Note: If there are no user defined tab stops, there is always a
         // default tab stop.
         //
-		const SvxTabStop* pTabStop =
-            aLineInf.GetTabStop( nSearchPos, nMyRight );
-		if( pTabStop )
-		{
-			cFill = ' ' != pTabStop->GetFill() ? pTabStop->GetFill() : 0;
-			cDec = pTabStop->GetDecimal();
-			eAdj = pTabStop->GetAdjustment();
+        const SvxTabStop* pTabStop = aLineInf.GetTabStop( nSearchPos, nMyRight );
+        if ( pTabStop )
+        {
+            cFill = ' ' != pTabStop->GetFill() ? pTabStop->GetFill() : 0;
+            cDec = pTabStop->GetDecimal();
+            eAdj = pTabStop->GetAdjustment();
             nNextPos = pTabStop->GetTabPos();
             if(!bTabsRelativeToIndent && eAdj == SVX_TAB_ADJUST_DEFAULT && nSearchPos < 0)
             {
                 //calculate default tab position of default tabs in negative indent
                 nNextPos = ( nSearchPos / nNextPos ) * nNextPos;
             }
-		}
-		else
-		{
-			KSHORT nDefTabDist = aLineInf.GetDefTabStop();
-			if( KSHRT_MAX == nDefTabDist )
-			{
-				const SvxTabStopItem& rTab =
-					(const SvxTabStopItem &)pFrm->GetAttrSet()->
-					GetPool()->GetDefaultItem( RES_PARATR_TABSTOP );
-				if( rTab.Count() )
-					nDefTabDist = (KSHORT)rTab.GetStart()->GetTabPos();
-				else
-					nDefTabDist = SVX_TAB_DEFDIST;
-				aLineInf.SetDefTabStop( nDefTabDist );
-			}
+        }
+        else
+        {
+            KSHORT nDefTabDist = aLineInf.GetDefTabStop();
+            if( KSHRT_MAX == nDefTabDist )
+            {
+                const SvxTabStopItem& rTab =
+                    (const SvxTabStopItem &)pFrm->GetAttrSet()->
+                    GetPool()->GetDefaultItem( RES_PARATR_TABSTOP );
+                if( rTab.Count() )
+                    nDefTabDist = (KSHORT)rTab.GetStart()->GetTabPos();
+                else
+                    nDefTabDist = SVX_TAB_DEFDIST;
+                aLineInf.SetDefTabStop( nDefTabDist );
+            }
             SwTwips nCount = nSearchPos;
 
-			//Minimum tab stop width is 1
-			if (nDefTabDist <= 0)
-			    nDefTabDist = 1;
+            // Minimum tab stop width is 1
+            if (nDefTabDist <= 0)
+                nDefTabDist = 1;
 
-			nCount /= nDefTabDist;
-            nNextPos = nCount < 0 || (!nCount && nSearchPos <= 0)? nCount * nDefTabDist :( nCount + 1 ) * nDefTabDist ;
+            nCount /= nDefTabDist;
+            nNextPos = ( nCount < 0 || ( !nCount && nSearchPos <= 0 ) )
+                       ? ( nCount * nDefTabDist )
+                       : ( ( nCount + 1 ) * nDefTabDist );
             // --> FME 2004-09-21 #117919 Minimum tab stop width is 1 or 51 twips:
             const SwTwips nMinimumTabWidth = pFrm->GetTxtNode()->getIDocumentSettingAccess()->get(IDocumentSettingAccess::TAB_COMPAT) ? 0 : 50;
             // <--
-            if( (  bRTL && nTabLeft - nNextPos >= nCurrentAbsPos - nMinimumTabWidth ) ||
+            if ( (  bRTL && nTabLeft - nNextPos >= nCurrentAbsPos - nMinimumTabWidth ) ||
                  ( !bRTL && nNextPos + nTabLeft <= nCurrentAbsPos + nMinimumTabWidth  ) )
             {
                 nNextPos += nDefTabDist;
             }
-			cFill = 0;
-			eAdj = SVX_TAB_ADJUST_LEFT;
-		}
+            cFill = 0;
+            eAdj = SVX_TAB_ADJUST_LEFT;
+        }
         
         // --> OD #i115705# - correction and refactoring:
         // overrule determined next tab stop position in order to apply 
@@ -280,10 +282,11 @@ SwTabPortion *SwTxtFormatter::NewTabPortion( SwTxtFormatInfo &rInf, bool bAuto )
         // <--        
         
         nNextPos += bRTL ? nLinePos - nTabLeft : nTabLeft - nLinePos;
-		ASSERT( nNextPos >= 0, "GetTabStop: Don't go back!" );
-		nNewTabPos = KSHORT(nNextPos);
-	}
+        ASSERT( nNextPos >= 0, "GetTabStop: Don't go back!" );
+        nNewTabPos = KSHORT(nNextPos);
+    }
 
+    SwTabPortion *pTabPor = 0;
     if ( bAuto )
     {
         if ( SVX_TAB_ADJUST_DECIMAL == eAdj &&
@@ -296,37 +299,32 @@ SwTabPortion *SwTxtFormatter::NewTabPortion( SwTxtFormatInfo &rInf, bool bAuto )
     {
         switch( eAdj )
         {
-	        case SVX_TAB_ADJUST_RIGHT :
-   		    {
-    		    pTabPor = new SwTabRightPortion( nNewTabPos, cFill );
-		        break;
-	        }
-	        case SVX_TAB_ADJUST_CENTER :
-	        {
-       			pTabPor = new SwTabCenterPortion( nNewTabPos, cFill );
-		        break;
-	        }
-	        case SVX_TAB_ADJUST_DECIMAL :
-	        {
-       			pTabPor = new SwTabDecimalPortion( nNewTabPos, cDec, cFill );
-		        break;
-	        }
-	        default:
-	        {
-       			ASSERT( SVX_TAB_ADJUST_LEFT == eAdj || SVX_TAB_ADJUST_DEFAULT == eAdj,
-				        "+SwTxtFormatter::NewTabPortion: unknown adjustment" );
-		        pTabPor = new SwTabLeftPortion( nNewTabPos, cFill );
-		        break;
-	        }
+        case SVX_TAB_ADJUST_RIGHT :
+            {
+                pTabPor = new SwTabRightPortion( nNewTabPos, cFill );
+                break;
+            }
+        case SVX_TAB_ADJUST_CENTER :
+            {
+                pTabPor = new SwTabCenterPortion( nNewTabPos, cFill );
+                break;
+            }
+        case SVX_TAB_ADJUST_DECIMAL :
+            {
+                pTabPor = new SwTabDecimalPortion( nNewTabPos, cDec, cFill );
+                break;
+            }
+        default:
+            {
+                ASSERT( SVX_TAB_ADJUST_LEFT == eAdj || SVX_TAB_ADJUST_DEFAULT == eAdj,
+                    "+SwTxtFormatter::NewTabPortion: unknown adjustment" );
+                pTabPor = new SwTabLeftPortion( nNewTabPos, cFill );
+                break;
+            }
         }
     }
 
-	// Vorhandensein von Tabulatoren anzeigen ... ist nicht mehr noetig
-	// pCurr->SetTabulation();
-	// Aus Sicherheitsgruenden lassen wir uns die Daten errechnen
-	// pTabPor->Height( pLast->Height() );
-	// pTabPor->SetAscent( pLast->GetAscent() );
-	return pTabPor;
+    return pTabPor;
 }
 
 /*************************************************************************

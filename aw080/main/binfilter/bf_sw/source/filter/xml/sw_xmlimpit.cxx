@@ -576,7 +576,8 @@ sal_Bool SvXMLImportItemMapper::PutXMLValue(
                                                         DEF_LINE_WIDTH_4 ) )
                         return sal_False;
 
-                    sal_uInt16 nSize = sizeof( aDBorderWidths );
+                    sal_uInt16 const nSize =
+                        sizeof(aDBorderWidths)/sizeof(aDBorderWidths[0]);
 					sal_uInt16 i=0;
                     for( i=0; i < nSize; i += 4 )
                     {

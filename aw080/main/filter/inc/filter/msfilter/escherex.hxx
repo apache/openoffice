@@ -40,6 +40,7 @@
 #include <com/sun/star/beans/PropertyState.hpp>
 #include <com/sun/star/beans/PropertyValue.hpp>
 #include <com/sun/star/drawing/BitmapMode.hpp>
+#include <com/sun/star/drawing/EnhancedCustomShapeParameterPair.hpp>
 #include <com/sun/star/drawing/Hatch.hpp>
 #include <svx/msdffdef.hxx>
 #include "filter/msfilter/msfilterdllapi.h"
@@ -1165,8 +1166,6 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 		sal_uInt32				nCountSize;
 
 		sal_Bool				bHasComplexData;
-		sal_Bool				bSuppressRotation;
-
 
 		sal_uInt32	ImplGetColor( const sal_uInt32 rColor, sal_Bool bSwap = sal_True );
 		void		ImplCreateGraphicAttributes( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet,
@@ -1205,6 +1204,9 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 		sal_Bool	CreateShapeProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape );
         sal_Bool    CreateOLEGraphicProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXOleObject );
 
+		sal_Bool	CreateGraphicProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape,
+			const GraphicObject& rGraphicObj );
+		sal_Bool	CreateMediaGraphicProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXMediaObject );
         /** Creates a complex ESCHER_Prop_fillBlip containing the BLIP directly (for Excel charts). */
         sal_Bool    CreateEmbeddedBitmapProperties( const ::rtl::OUString& rBitmapUrl,
                         ::com::sun::star::drawing::BitmapMode eBitmapMode );
@@ -1218,16 +1220,17 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 		sal_Bool	CreateGraphicProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet,
 						const String& rSource, const sal_Bool bCreateFillBitmap, const sal_Bool bCreateCroppingAttributes = sal_False,
 							const sal_Bool bFillBitmapModeAllowed = sal_True );
-
+		sal_Bool   CreateBlipPropertiesforOLEControl( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet, const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape);
 		sal_Bool	CreatePolygonProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet,
 						sal_uInt32 nFlags, sal_Bool bBezier, ::com::sun::star::awt::Rectangle& rGeoRect, Polygon* pPolygon = NULL );
 
 		static sal_uInt32 GetGradientColor( const ::com::sun::star::awt::Gradient* pGradient, sal_uInt32 nStartColor );
 
         void        CreateGradientProperties( const ::com::sun::star::awt::Gradient & rGradient );
-		void		CreateGradientProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & );
+		void		CreateGradientProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & , sal_Bool bTransparentGradient = sal_False );
 		void		CreateLineProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge );
-		void		CreateFillProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge );
+		void		CreateFillProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge , sal_Bool bTransparentGradient = sal_False );
+		void		CreateFillProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_Bool bEdge ,  const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape );
 		void		CreateTextProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &, sal_uInt32 nText,
 						const sal_Bool bIsCustomShape = sal_False, const sal_Bool bIsTextFrame = sal_True );
 
@@ -1239,6 +1242,8 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 					// It activ only when at least a FillStyle or LineStyle is set.
 		sal_Bool	CreateShadowProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & );
 
+		sal_Int32	GetValueForEnhancedCustomShapeParameter( const ::com::sun::star::drawing::EnhancedCustomShapeParameter& rParameter, 
+							const std::vector< sal_Int32 >& rEquationOrder, sal_Bool bAdjustTrans = sal_False );
 		// creates all necessary CustomShape properties, this includes also Text-, Shadow-, Fill-, and LineProperties
 		void		CreateCustomShapeProperties( const MSO_SPT eShapeType, const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & );
 		sal_Bool	IsFontWork() const;
@@ -1253,7 +1258,7 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 	static sal_Bool GetLineArrow( const sal_Bool bLineStart,
 				      const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rXPropSet,
 				      ESCHER_LineEnd& reLineEnd, sal_Int32& rnArrowLength, sal_Int32& rnArrowWidth );
-	static sal_Bool IsDefaultObject( SdrObjCustomShape* pCustoShape );
+	static sal_Bool IsDefaultObject( SdrObjCustomShape* pCustoShape, const MSO_SPT eShapeType );
 	static void LookForPolarHandles( const MSO_SPT eShapeType, sal_Int32& nAdjustmentsWhichNeedsToBeConverted );
 	static sal_Bool GetAdjustmentValue( const com::sun::star::drawing::EnhancedCustomShapeAdjustmentValue & rkProp, sal_Int32 nIndex, sal_Int32 nAdjustmentsWhichNeedsToBeConverted, sal_Int32& nValue );
 };

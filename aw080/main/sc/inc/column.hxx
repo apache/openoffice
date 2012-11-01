@@ -60,6 +60,7 @@ class ScPostIt;
 struct ScFunctionData;
 struct ScLineFlags;
 struct ScMergePatternState;
+class ScDPTableDataCache;
 class ScFlatBoolRowSegments;
 
 #define COLUMN_DELTA	4
@@ -170,6 +171,10 @@ public:
 
     sal_Bool        GetFirstVisibleAttr( SCROW& rFirstRow ) const;
     sal_Bool        GetLastVisibleAttr( SCROW& rLastRow ) const;
+	/*
+	Get the last cell's row number , which have visual atribute or visual data in a column
+	*/
+	sal_Bool		GetLastAttr( SCROW& rLastRow ) const;
 	sal_Bool		HasVisibleAttrIn( SCROW nStartRow, SCROW nEndRow ) const;
 	sal_Bool		IsVisibleAttrEqual( const ScColumn& rCol, SCROW nStartRow = 0,
 									SCROW nEndRow = MAXROW ) const;
@@ -294,6 +299,7 @@ public:
 
 	const SfxPoolItem*		GetAttr( SCROW nRow, sal_uInt16 nWhich ) const;
 	const ScPatternAttr*	GetPattern( SCROW nRow ) const;
+	const ScPatternAttr* GetPatternRange( SCROW& rStartRow, SCROW& rEndRow, SCROW nRow ) const;
     const ScPatternAttr*    GetMostUsedPattern( SCROW nStartRow, SCROW nEndRow ) const;
 
 	sal_uLong		GetNumberFormat( SCROW nRow ) const;
@@ -360,6 +366,9 @@ public:
 									double nPPTX, double nPPTY,
 									const Fraction& rZoomX, const Fraction& rZoomY,
 									sal_Bool bShrink, sal_uInt16 nMinHeight, SCROW nMinStart );
+    template< typename TAddLebal, typename TAddData >
+    void        FillDPCacheT( long nDim, SCROW nStartRow, SCROW nEndRow, const TAddLebal & , const TAddData & );
+    void        FillDPCache( ScDPTableDataCache * pCache, long nDim, SCROW nStartRow, SCROW nEndRow );
 private:
 	long		GetSimpleTextNeededSize( SCSIZE nIndex, OutputDevice* pDev,
 									sal_Bool bWidth );

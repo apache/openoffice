@@ -165,6 +165,8 @@ SlideSorterViewShell::~SlideSorterViewShell (void)
 		(void)e;
 		DBG_ERROR("sd::SlideSorterViewShell::~SlideSorterViewShell(), exception caught!" );
 	}
+
+	GetFrameView()->Disconnect(); // i120663, release the FrameView object 
 }
 
 

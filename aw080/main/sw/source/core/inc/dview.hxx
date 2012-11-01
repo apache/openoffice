@@ -31,6 +31,7 @@ class SwViewImp;
 class SwFrm;
 class SwFlyFrm;
 class SwAnchoredObject;
+class SdrUndoManager;
 
 class SwDrawView : public FmFormView
 {
@@ -86,6 +87,9 @@ protected:
     // overloaded to allow extra handling when picking SwVirtFlyDrawObj's
     using FmFormView::CheckSingleSdrObjectHit;
     virtual SdrObject* CheckSingleSdrObjectHit(const basegfx::B2DPoint& rPnt, double fTol, SdrObject* pObj, sal_uInt32 nOptions, const SetOfByte* pMVisLay) const;
+
+    // support enhanced text edit for draw objects
+    virtual SdrUndoManager* getSdrUndoManagerForEnhancedTextEdit() const;
 
 public:
 	SwDrawView( SwViewImp &rI, FmFormModel& rModel, OutputDevice* pOutDev = NULL );

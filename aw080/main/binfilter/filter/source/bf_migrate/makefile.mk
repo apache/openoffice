@@ -51,7 +51,11 @@ SLOFILES=	$(SLO)$/bf_migrateexports.obj \
 
 # --- Library -----------------------------------
 
+.IF "$(OS)" == "OS2"
+SHL1TARGET=bf_migra$(DLLPOSTFIX)
+.ELSE
 SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
+.ENDIF
 SHL1STDLIBS=$(CPPULIB)			\
 			$(CPPUHELPERLIB)	\
 			$(SALLIB)			\

@@ -94,7 +94,7 @@ void lcl_frmitems_MergeXMLVertPos( SvxGraphicPosition& ePos,
 							  	   SvxGraphicPosition eVert );
 
 extern const sal_uInt16 aSBorderWidths[];
-extern const sal_uInt16 aDBorderWidths[5*11];
+extern const sal_uInt16 aDBorderWidths[4*11];
 
 extern const struct SvXMLEnumMapEntry psXML_BorderStyles[];
 extern const struct SvXMLEnumMapEntry psXML_NamedBorderWidths[];

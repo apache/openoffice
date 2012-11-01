@@ -170,7 +170,7 @@ namespace basegfx
 #endif
 	}
 
-	class fTools
+    class fTools
 	{
         /// Threshold value for equalZero()
 		static double									mfSmallValue;

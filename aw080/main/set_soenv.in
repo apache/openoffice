@@ -107,7 +107,7 @@ my ( $oldPATH, $SRC_ROOT, $SO_HOME, $JAVA_HOME, $JDK, $JAVAFLAGS, $OOO_SHELL,
      $PATH, $SOLAREXTRAINC, $SOLAREXTRALIB, $SOLARLIB, 
      $SOLARINC, $LOCALINI, $FRAMEWORKSHOME, $COMEX, $PERL, 
      $COMP_ENV, $ILIB, $JAVAHOME, $PSDK_HOME, $DIRECTXSDK_LIB, $USE_NEW_SDK, $FRAME_HOME, 
-     $USE_DIRECTX5, $ATL_LIB, $ATL_INCLUDE, $MFC_LIB, $MFC_INCLUDE, $TMPDIR,
+     $USE_DIRECTX5, $ATL_LIB, $HAVE_ATLTHUNK, $ATL_INCLUDE, $MFC_LIB, $MFC_INCLUDE, $TMPDIR,
      $COMMON_BUILD_TOOLS, $WIN_GREP, $WIN_FIND, $WIN_LS,
      $WIN_GNUCOPY, $WIN_TOUCH, $STLPORT4, $MOZILLA_VERSION, $MOZILLA_TOOLKIT, $PREBUILD_MOZAB, $MOZILLABUILD,
 	 $PROEXT, $TARFILE_LOCATION,
@@ -180,7 +180,7 @@ my @unixroot='@unixroot';
 # , $Warning.
 AddWarning( "configure", "" );
 #
-print ("Setting up the environment for building OpenOffice.org $newline");
+print ("Setting up the environment for building Apache OpenOffice $newline");
 #
 #--------------------------------------------------
 # V. Setting the environment variables/values.
@@ -701,10 +701,6 @@ elsif ( $platform =~ m/cygwin/ )
       $COMEX          = '@COMEX@';
       if ( "@COMEX@" eq "10" ) { # .NET 2003 needs M1310
           $CVER        = "M1310";
-          $ATL_LIB     = $COMPATH.$ds."atlmfc".$ds."lib";
-          $ATL_INCLUDE = $COMPATH.$ds."atlmfc".$ds."include";
-          $MFC_LIB     = "";
-          $MFC_INCLUDE = "";
       } elsif ( "@COMEX@" ge "11" ) { # .NET 2005 needs M1400
 	  if ( "@COMEX@" eq "11" ) {
 	      $CVER        = "M1400";
@@ -713,17 +709,6 @@ elsif ( $platform =~ m/cygwin/ )
 	  } else {                   # Unsupported
 	      die "Unsupported value for COMEX variable.\n";
 	  }
-          if ( "@DISABLE_ACTIVEX@" ) {
-              $ATL_LIB     = $PSDK_HOME.$ds."lib"; # Doesn't exist for VSE
-              $ATL_INCLUDE = $PSDK_HOME.$ds."include".$ds."atl";
-              $MFC_LIB     = $PSDK_HOME.$ds."lib"; # Doesn't exist for VSE
-              $MFC_INCLUDE = $PSDK_HOME.$ds."include".$ds."mfc";
-          } else {
-              $ATL_LIB     = $COMPATH.$ds."atlmfc".$ds."lib";
-              $ATL_INCLUDE = $COMPATH.$ds."atlmfc".$ds."include";
-              $MFC_LIB     = $COMPATH.$ds."atlmfc".$ds."lib";
-              $MFC_INCLUDE = $PSDK_HOME.$ds."include".$ds."mfc";
-          }
       }
 	  print "Setting W32 build with bash shell specific values... ";
 	  # No speacial treatment for CC an CXX anymore.
@@ -838,7 +823,7 @@ print "done\n";
 # D. Gathering directory information from the user.
 #
 # If the directory does not exist something is strange.
-# 1. OpenOffice.org build home directory.
+# 1. Apache OpenOffice build home directory.
 chomp($SRC_ROOT  = `pwd`);
 $SRC_ROOT =~ s/\/config_office//;
 $SRC_ROOT = PathFormat($SRC_ROOT);
@@ -1554,11 +1539,11 @@ for my $repo (split(/ /,"@ADDITIONAL_REPOSITORIES@"))
 #
 print "Setting the aliases... ";
 # 1. alias for a full product make. 
-	$mkout           = '"perl $SOLARENV/bin/mkout.pl"';
-	$deliver         = '"perl $SOLARENV/bin/deliver.pl"';
-	$build           = '"perl $SOLARENV/bin/build.pl"';
-	$build_client    = '"perl $SOLARENV/bin/build_client.pl"';
-	$zipdep          = '"perl $SOLARENV/bin/zipdep.pl"';
+	$mkout           = '"$PERL $SOLARENV/bin/mkout.pl"';
+	$deliver         = '"$PERL $SOLARENV/bin/deliver.pl"';
+	$build           = '"$PERL $SOLARENV/bin/build.pl"';
+	$build_client    = '"$PERL $SOLARENV/bin/build_client.pl"';
+	$zipdep          = '"$PERL $SOLARENV/bin/zipdep.pl"';
 # 3. alias for a full product make
 $nmake           = '"dmake"';
 print "done\n";
@@ -1688,7 +1673,6 @@ ToFile( "ENABLE_CAIRO",      "@ENABLE_CAIRO@",     "e" );
 ToFile( "ENABLE_CAIRO_CANVAS", "@ENABLE_CAIRO_CANVAS@",     "e" );
 ToFile( "ENABLE_OPENGL",     "@ENABLE_OPENGL@",    "e" );
 ToFile( "ENABLE_PDFIMPORT",  "@ENABLE_PDFIMPORT@", "e" );
-ToFile( "ENABLE_PRESENTER_EXTRA_UI","@ENABLE_PRESENTER_EXTRA_UI@","e" );
 ToFile( "ENABLE_MINIMIZER",   "@ENABLE_MINIMIZER@","e" );
 ToFile( "ENABLE_PRESENTER_SCREEN","@ENABLE_PRESENTER_SCREEN@","e" );
 ToFile( "ENABLE_REPORTBUILDER","@ENABLE_REPORTBUILDER@","e" );
@@ -1783,15 +1767,14 @@ if ( $platform =~ m/cygwin/ )
    ToFile( "WINDOWS_VISTA_PSDK","@WINDOWS_VISTA_PSDK@","e" );
    ToFile( "DIRECTXSDK_LIB",    $DIRECTXSDK_LIB,    "e" );
    ToFile( "USE_DIRECTX5",      $USE_DIRECTX5,      "e" );
-   ToFile( "ATL_LIB",           $ATL_LIB,         "e" );
-   if ( $MINGW ne "yes" )
-   {  ToFile( "ATL_INCLUDE",       $ATL_INCLUDE,       "e" );
-   }
-   ToFile( "MFC_LIB",           $MFC_LIB,         "e" );
-   ToFile( "MFC_INCLUDE",       $MFC_INCLUDE,       "e" );
+   ToFile( "ATL_LIB",           "@ATL_LIB@",        "e" );
+   ToFile( "ATL_INCLUDE",       "@ATL_INCLUDE@",    "e" );
+   ToFile( "HAVE_ATLTHUNK",     "@HAVE_ATLTHUNK@",  "e" );
+   ToFile( "MFC_LIB",           "@MFC_LIB@",        "e" );
+   ToFile( "MFC_INCLUDE",       "@MFC_INCLUDE@",    "e" );
    ToFile( "NSIS_PATH",         $NSIS_PATH,         "e" );
    ToFile( "DISABLE_ACTIVEX",   "@DISABLE_ACTIVEX@","e" );
-   ToFile( "DISABLE_ATL",   "@DISABLE_ATL@","e" );
+   ToFile( "DISABLE_ATL",       "@DISABLE_ATL@",    "e" );
    ToFile( "USE_NEW_SDK",       $USE_NEW_SDK,       "e" );
 
    # Hack around dmake's mktmp not generating DOS paths.
@@ -1988,9 +1971,9 @@ ToFile( "ENABLE_JAVASCRIPT", "@ENABLE_JAVASCRIPT@","e" );
 ToFile( "SYSTEM_APR",        "@SYSTEM_APR@",       "e" );
 ToFile( "APR_CFLAGS",        "@APR_CFLAGS@",       "e" );
 ToFile( "APR_LIBS",          "@APR_LIBS@",         "e" );
-ToFile( "SYSTEM_APRUTIL",    "@SYSTEM_APRUTIL@",   "e" );
-ToFile( "APRUTIL_CFLAGS",    "@APRUTIL_CFLAGS@",   "e" );
-ToFile( "APRUTIL_LIBS",      "@APRUTIL_LIBS@",     "e" );
+ToFile( "SYSTEM_APR_UTIL",   "@SYSTEM_APR_UTIL@",  "e" );
+ToFile( "APR_UTIL_CFLAGS",   "@APR_UTIL_CFLAGS@",  "e" );
+ToFile( "APR_UTIL_LIBS",     "@APR_UTIL_LIBS@",    "e" );
 ToFile( "SYSTEM_SERF",       "@SYSTEM_SERF@",      "e" );
 ToFile( "SERF_CFLAGS",       "@SERF_CFLAGS@",      "e" );
 ToFile( "SERF_LIBS",         "@SERF_LIBS@",        "e" );
@@ -2016,6 +1999,7 @@ ToFile( "SYSTEM_GETTEXT",    "@SYSTEM_GETTEXT@",   "e" );
 ToFile( "SYSTEM_PANGO",      "@SYSTEM_PANGO@",   "e" );
 ToFile( "SYSTEM_LIBPNG",     "@SYSTEM_LIBPNG@",   "e" );
 ToFile( "SYSTEM_LIBJPEG",    "@SYSTEM_LIBJPEG@",   "e" );
+ToFile( "RAT_JAR_HOME",      "@RAT_JAR_HOME@",     "e" );
 ToFile( "DISABLE_XAW",       "@DISABLE_XAW@",      "e" );
 ToFile( "DMAKE_URL",         "@DMAKE_URL@",        "e" );
 ToFile( "DMAKE_PATH",        "@DMAKE_PATH@",       "e" );
@@ -2215,13 +2199,13 @@ if(defined($outfile_bat))
 #
 print "*********************************************************".
       "******************* $newline"."*"."$newline";
-print "* OpenOffice.org $UPD configuration. $newline";
+print "* Apache OpenOffice $UPD configuration. $newline";
 for ( $tmp = 0; $tmp < 2; $tmp++ ) 
 {  print "* $newline";
 }
-print "* Configuration part of OpenOffice.org $UPD build is finished. $newline* $newline";
-print "* NB! Be aware that you might not be able to build OpenOffice.org if you $newline".
-      "* ignore any warning message that were generated during this configuration $newline".
+print "* Configuration part of Apache OpenOffice $UPD build is finished. $newline* $newline";
+print "* Note: Be aware that you might not be able to build Apache OpenOffice if $newline".
+      "* you ignore any warnings that were generated during this configuration $newline".
       "* process. $newline* $newline";
 
 if ( $Warning ne "" ) 
@@ -2330,7 +2314,7 @@ sub CreateFileHeader
    my $comment = $_[4];
    print { $filehandle } "$comment #################################################################"; 
    print { $filehandle } $newline;
-   print { $filehandle } "$comment OpenOffice.org $_[ 1 ] build environment file for: $_[ 2 ]. $newline"; 
+   print { $filehandle } "$comment Apache OpenOffice $_[ 1 ] build environment file for: $_[ 2 ]. $newline"; 
    print { $filehandle } "$comment Generated on: $timestamp $newline"; 
    print { $filehandle } "$comment Source this file to set up the build environment. $newline"; 
    print { $filehandle } "$comment 1. exec $_[3] $newline"; 

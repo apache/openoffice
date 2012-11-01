@@ -1637,32 +1637,59 @@ void PSWriter::ImplSetClipRegion( Region& rClipRegion )
 {
 	if ( !rClipRegion.IsEmpty() )
 	{
-		Rectangle		aRect;
-		RegionHandle	hRegionHandle = rClipRegion.BeginEnumRects();
+        RectangleVector aRectangles;
+        rClipRegion.GetRegionRectangles(aRectangles);
 
-		while ( rClipRegion.GetNextEnumRect( hRegionHandle, aRect ) )
-		{
-			double nX1 = aRect.Left();
-			double nY1 = aRect.Top();
-			double nX2 = aRect.Right();
-			double nY2 = aRect.Bottom();
-			ImplWriteDouble( nX1 );
-			ImplWriteDouble( nY1 );
-			ImplWriteByte( 'm' );
-			ImplWriteDouble( nX2 );
-			ImplWriteDouble( nY1 );
-			ImplWriteByte( 'l' );
-			ImplWriteDouble( nX2 );
-			ImplWriteDouble( nY2 );
-			ImplWriteByte( 'l' );
-			ImplWriteDouble( nX1 );
-			ImplWriteDouble( nY2 );
-			ImplWriteByte( 'l' );
-			ImplWriteDouble( nX1 );
-			ImplWriteDouble( nY1 );
-			ImplWriteByte( 'l', PS_SPACE | PS_WRAP );
-		};
-		rClipRegion.EndEnumRects( hRegionHandle );
+        for(RectangleVector::const_iterator aRectIter(aRectangles.begin()); aRectIter != aRectangles.end(); aRectIter++)
+        {
+            double nX1(aRectIter->Left());
+            double nY1(aRectIter->Top());
+            double nX2(aRectIter->Right());
+            double nY2(aRectIter->Bottom());
+
+            ImplWriteDouble( nX1 );
+            ImplWriteDouble( nY1 );
+            ImplWriteByte( 'm' );
+            ImplWriteDouble( nX2 );
+            ImplWriteDouble( nY1 );
+            ImplWriteByte( 'l' );
+            ImplWriteDouble( nX2 );
+            ImplWriteDouble( nY2 );
+            ImplWriteByte( 'l' );
+            ImplWriteDouble( nX1 );
+            ImplWriteDouble( nY2 );
+            ImplWriteByte( 'l' );
+            ImplWriteDouble( nX1 );
+            ImplWriteDouble( nY1 );
+            ImplWriteByte( 'l', PS_SPACE | PS_WRAP );
+        }
+
+		//Rectangle		aRect;
+		//RegionHandle	hRegionHandle = rClipRegion.BeginEnumRects();
+        //
+		//while ( rClipRegion.GetEnumRects( hRegionHandle, aRect ) )
+		//{
+		//	double nX1 = aRect.Left();
+		//	double nY1 = aRect.Top();
+		//	double nX2 = aRect.Right();
+		//	double nY2 = aRect.Bottom();
+		//	ImplWriteDouble( nX1 );
+		//	ImplWriteDouble( nY1 );
+		//	ImplWriteByte( 'm' );
+		//	ImplWriteDouble( nX2 );
+		//	ImplWriteDouble( nY1 );
+		//	ImplWriteByte( 'l' );
+		//	ImplWriteDouble( nX2 );
+		//	ImplWriteDouble( nY2 );
+		//	ImplWriteByte( 'l' );
+		//	ImplWriteDouble( nX1 );
+		//	ImplWriteDouble( nY2 );
+		//	ImplWriteByte( 'l' );
+		//	ImplWriteDouble( nX1 );
+		//	ImplWriteDouble( nY1 );
+		//	ImplWriteByte( 'l', PS_SPACE | PS_WRAP );
+		//};
+		//rClipRegion.EndEnumRects( hRegionHandle );
 		ImplWriteLine( "eoclip newpath" );
 	}
 }
@@ -1711,12 +1738,18 @@ void PSWriter::ImplBmp( Bitmap* pBitmap, Bitmap* pMaskBitmap, const Point & rPoi
 				aRect = Rectangle( Point( 0, nHeightOrg - nHeightLeft ), Size( (long)nWidth, (long)nHeight ) );
 				aRegion = Region( pMaskBitmap->CreateRegion( COL_BLACK, aRect ) );
 
-				if ( ( mnLevel == 1 ) && ( aRegion.GetRectCount() * 5 > 1000 ) )
+				if( mnLevel == 1 )
 				{
-					nHeight >>= 1;
-					if ( nHeight < 2 )
-						return;
-					continue;
+                    RectangleVector aRectangleVector;
+                    aRegion.GetRegionRectangles(aRectangleVector);
+
+                    if ( aRectangleVector.size() * 5 > 1000 )
+				    {
+					    nHeight >>= 1;
+					    if ( nHeight < 2 )
+						    return;
+                        continue;
+                    }
 				}
 				break;
 			}
@@ -1731,26 +1764,50 @@ void PSWriter::ImplBmp( Bitmap* pBitmap, Bitmap* pMaskBitmap, const Point & rPoi
 			ImplWriteLine( "gs\npum" );
 			ImplTranslate( aSourcePos.X(), aSourcePos.Y() );
 			ImplScale( nXWidth / nWidth,  nYHeight / nHeight );
-			RegionHandle	hRegionHandle = aRegion.BeginEnumRects();
 
-			while ( aRegion.GetNextEnumRect( hRegionHandle, aRect ) )
-			{
-				aRect.Move( 0, - ( nHeightOrg - nHeightLeft ) );
-				ImplWriteLong( aRect.Left() );
-				ImplWriteLong( aRect.Top() );
-				ImplWriteByte( 'm' );
-				ImplWriteLong( aRect.Right() + 1 );
-				ImplWriteLong( aRect.Top() );
-				ImplWriteByte( 'l' );
-				ImplWriteLong( aRect.Right() + 1 );
-				ImplWriteLong( aRect.Bottom() + 1 );
-				ImplWriteByte( 'l' );
-				ImplWriteLong( aRect.Left() );
-				ImplWriteLong( aRect.Bottom() + 1 );
-				ImplWriteByte( 'l' );
-				ImplWriteByte( 'p', PS_SPACE | PS_WRAP );
-			};
-			aRegion.EndEnumRects( hRegionHandle );
+            RectangleVector aRectangles;
+            aRegion.GetRegionRectangles(aRectangles);
+            const long nMoveVertical(nHeightLeft - nHeightOrg);
+
+            for(RectangleVector::iterator aRectIter(aRectangles.begin()); aRectIter != aRectangles.end(); aRectIter++)
+            {
+                aRectIter->Move(0, nMoveVertical);
+                
+                ImplWriteLong( aRectIter->Left() );
+                ImplWriteLong( aRectIter->Top() );
+                ImplWriteByte( 'm' );
+                ImplWriteLong( aRectIter->Right() + 1 );
+                ImplWriteLong( aRectIter->Top() );
+                ImplWriteByte( 'l' );
+                ImplWriteLong( aRectIter->Right() + 1 );
+                ImplWriteLong( aRectIter->Bottom() + 1 );
+                ImplWriteByte( 'l' );
+                ImplWriteLong( aRectIter->Left() );
+                ImplWriteLong( aRectIter->Bottom() + 1 );
+                ImplWriteByte( 'l' );
+                ImplWriteByte( 'p', PS_SPACE | PS_WRAP );
+            }
+
+            //RegionHandle	hRegionHandle = aRegion.BeginEnumRects();
+            //
+			//while ( aRegion.GetEnumRects( hRegionHandle, aRect ) )
+			//{
+			//	aRect.Move( 0, - ( nHeightOrg - nHeightLeft ) );
+			//	ImplWriteLong( aRect.Left() );
+			//	ImplWriteLong( aRect.Top() );
+			//	ImplWriteByte( 'm' );
+			//	ImplWriteLong( aRect.Right() + 1 );
+			//	ImplWriteLong( aRect.Top() );
+			//	ImplWriteByte( 'l' );
+			//	ImplWriteLong( aRect.Right() + 1 );
+			//	ImplWriteLong( aRect.Bottom() + 1 );
+			//	ImplWriteByte( 'l' );
+			//	ImplWriteLong( aRect.Left() );
+			//	ImplWriteLong( aRect.Bottom() + 1 );
+			//	ImplWriteByte( 'l' );
+			//	ImplWriteByte( 'p', PS_SPACE | PS_WRAP );
+			//};
+			//aRegion.EndEnumRects( hRegionHandle );
 			ImplWriteLine( "eoclip newpath" );
 			ImplWriteLine( "pom" );
 		}
@@ -1780,7 +1837,7 @@ void PSWriter::ImplBmp( Bitmap* pBitmap, Bitmap* pMaskBitmap, const Point & rPoi
 			{
 				for ( long x = 0; x < nWidth; x++ )
 				{
-					ImplWriteHexByte( (sal_uInt8)pAcc->GetPixel( y, x ) );
+					ImplWriteHexByte( pAcc->GetPixelIndex( y, x ) );
 				}
 			}
 			*mpPS << (sal_uInt8)10;
@@ -1818,7 +1875,7 @@ void PSWriter::ImplBmp( Bitmap* pBitmap, Bitmap* pMaskBitmap, const Point & rPoi
 					{
 						for ( long x = 0; x < nWidth; x++ )
 						{
-							Compress( (sal_uInt8)pAcc->GetPixel( y, x ) );
+							Compress( pAcc->GetPixelIndex( y, x ) );
 						}
 					}
 					EndCompression();
@@ -1829,7 +1886,7 @@ void PSWriter::ImplBmp( Bitmap* pBitmap, Bitmap* pMaskBitmap, const Point & rPoi
 					{
 						for ( long x = 0; x < nWidth; x++ )
 						{
-							ImplWriteHexByte( (sal_uInt8)pAcc->GetPixel( y, x ) );
+							ImplWriteHexByte( pAcc->GetPixelIndex( y, x ) );
 						}
 					}
 				}
@@ -1881,7 +1938,7 @@ void PSWriter::ImplBmp( Bitmap* pBitmap, Bitmap* pMaskBitmap, const Point & rPoi
 						{
 							for ( long x = 0; x < nWidth; x++ )
 							{
-								Compress( (sal_uInt8)pAcc->GetPixel( y, x ) );
+								Compress( pAcc->GetPixelIndex( y, x ) );
 							}
 						}
 						EndCompression();
@@ -1892,7 +1949,7 @@ void PSWriter::ImplBmp( Bitmap* pBitmap, Bitmap* pMaskBitmap, const Point & rPoi
 						{
 							for ( long x = 0; x < nWidth; x++ )
 							{
-								ImplWriteHexByte( (sal_uInt8)pAcc->GetPixel( y, x ) );
+								ImplWriteHexByte( pAcc->GetPixelIndex( y, x ) );
 							}
 						}
 					}

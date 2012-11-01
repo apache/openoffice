@@ -629,7 +629,15 @@ void DrawView::DeleteMarked()
 				    const basegfx::B2DRange aRange(sdr::legacy::GetLogicRange(*pObj));
 				    SdrObject* pNewObj = pPage->InsertAutoLayoutShape( 0, ePresObjKind, bVertical, aRange, true );
 
+                    // Move the new PresObj to the position before the
+                    // object it will replace.
+                    pUndoManager->AddUndoAction(
+                        mpDoc->GetSdrUndoFactory().CreateUndoObjectOrdNum(
+                            *pNewObj,
+                            pNewObj->GetNavigationPosition(),
+                            pObj->GetNavigationPosition()));
 				    pPage->SetNavigationPosition( pNewObj->GetNavigationPosition(), pObj->GetNavigationPosition() );
+
 					bResetLayout = true;
 
 					OSL_TRACE( "DrawView::InsertAutoLayoutShape() - InsertAutoLayoutShape" );

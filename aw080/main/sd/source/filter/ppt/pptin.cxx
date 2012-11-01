@@ -579,6 +579,10 @@ sal_Bool ImplSdPPTImport::Import()
 				bool bStarDrawFiller = (*GetPageList( eAktPageKind ) )[ nAktPageNum ]->bStarDrawFiller;
 
 				PageKind ePgKind = ( bNotesMaster ) ? PK_NOTES : PK_STANDARD;
+				sal_Bool bHandout = (*GetPageList( eAktPageKind ) )[ nAktPageNum ]->bHandoutMaster;
+				if ( bHandout )
+					ePgKind = PK_HANDOUT;
+
 				pPage->SetPageKind( ePgKind );
 				pSdrModel->InsertMasterPage( (SdrPage*)pPage );
 				if ( bNotesMaster && bStarDrawFiller )
@@ -644,13 +648,16 @@ sal_Bool ImplSdPPTImport::Import()
 					{
 						sal_uInt32 nTitleInstance = TSS_TYPE_PAGETITLE;
 						sal_uInt32 nOutlinerInstance = TSS_TYPE_BODY;
-//						bool bSwapStyleSheet = pSlideLayout->eLayout == PPT_LAYOUT_TITLEMASTERSLIDE;
-//						if ( bSwapStyleSheet )
-//						{
-//							nTitleInstance = TSS_TYPE_TITLE;
-//							nOutlinerInstance = TSS_TYPE_SUBTITLE;
-//						}
-						/////////////////////
+                        const PptSlideLayoutAtom* pSlideLayout = GetSlideLayoutAtom();
+						const bool bSwapStyleSheet(PPT_LAYOUT_TITLEMASTERSLIDE == pSlideLayout->eLayout);
+
+                        if ( bSwapStyleSheet )
+						{
+							nTitleInstance = TSS_TYPE_TITLE;
+							nOutlinerInstance = TSS_TYPE_SUBTITLE;
+						}
+
+                        /////////////////////
 						// titelstylesheet //
 						/////////////////////
 						pSheet = pPage->GetStyleSheetForPresObj( PRESOBJ_TITLE );
@@ -724,7 +731,7 @@ sal_Bool ImplSdPPTImport::Import()
 	}
 	SdPage* pMPage;
 	sal_uInt32 i;
-	for ( i = 1; i < mpDoc->GetMasterPageCount() && ( (pMPage = (SdPage*)mpDoc->GetMasterPage( i )) != 0 ); i++ )
+	for ( i = 0; i < mpDoc->GetMasterPageCount() && ( (pMPage = (SdPage*)mpDoc->GetMasterPage( i )) != 0 ); i++ )
 	{
 		SetPageNum( i, PPT_MASTERPAGE );
 		/////////////////////////////////////////////
@@ -2053,6 +2060,8 @@ String ImplSdPPTImport::ReadMedia( sal_uInt32 nMediaRef ) const
 												if( ::utl::LocalFileHelper::ConvertPhysicalNameToURL( aStr, aRetVal ) )
 												{
 													aRetVal = INetURLObject( aRetVal ).GetMainURL( INetURLObject::DECODE_UNAMBIGUOUS );
+												}else{ 
+													aRetVal = aStr;
 												}
 											}
 										}
@@ -2319,7 +2328,7 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 	{
 		if ( eAktPageKind == PPT_MASTERPAGE )
 		{
-			sal_Bool bCreatePlaceHolder = ( pTextObj->GetInstance() != TSS_TYPE_SUBTITLE ) && ( pTextObj->GetInstance() != TSS_TYPE_UNUSED );
+			sal_Bool bCreatePlaceHolder = ( pTextObj->GetInstance() != TSS_TYPE_UNUSED );
 			sal_Bool bIsHeaderFooter = ( ePresKind == PRESOBJ_HEADER) || (ePresKind == PRESOBJ_FOOTER)
 										|| (ePresKind == PRESOBJ_DATETIME) || (ePresKind == PRESOBJ_SLIDENUMBER);
 			if ( bCreatePlaceHolder && ( pTextObj->GetInstance() == TSS_TYPE_TEXT_IN_SHAPE ) )
@@ -2339,7 +2348,7 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 				if ( aPresentationText.Len() )
 					pPage->SetObjText( (SdrTextObj*)pText, pOutl, ePresKind, aPresentationText );
 
-				if ( pPage->GetPageKind() != PK_NOTES )
+				if ( pPage->GetPageKind() != PK_NOTES && pPage->GetPageKind() != PK_HANDOUT)
 				{
 					SfxStyleSheet* pSheet2( pPage->GetStyleSheetForPresObj( ePresKind ) );
 					if ( pSheet2 )
@@ -2351,6 +2360,11 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 						rItemSet.Put( pText->GetMergedItem( SDRATTR_TEXT_LOWERDIST ) );
 						rItemSet.Put( (SdrTextVertAdjustItem&)pText->GetMergedItem( SDRATTR_TEXT_VERTADJUST ) );
 						rItemSet.Put( (SdrTextHorzAdjustItem&)pText->GetMergedItem( SDRATTR_TEXT_HORZADJUST ) );
+						if (  pTextObj->GetInstance() ==  TSS_TYPE_TITLE 
+							|| pTextObj->GetInstance() == TSS_TYPE_SUBTITLE)
+						{
+							rItemSet.Put( pText->GetMergedItemSet() );
+						}					
 					}
 					pText->SetStyleSheet( pSheet2, false );
 				}
@@ -2382,14 +2396,21 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 							break;
 					}
 				}
-				if ( i < 8 )
+// [Bug 119962] Placeholder in ppt file created by MS 2007 is lost if load in Impress 
+				unsigned int nParaCount = pTextObj->Count();
+				PPTParagraphObj *pFirstPara = nParaCount == 0 ? NULL : pTextObj->First();
+				unsigned int nFirstParaTextcount = pFirstPara == NULL ? 0 : pFirstPara->GetTextSize();
+				if ( i < 8 || (nParaCount == 1 && nFirstParaTextcount == 0 || nParaCount == 0))
 				{
 					PresObjKind ePresObjKind = PRESOBJ_NONE;
 					sal_Bool    bEmptyPresObj = sal_True;
                     sal_Bool    bVertical = sal_False;
 					if ( ( pTextObj->GetShapeType() == mso_sptRectangle ) || ( pTextObj->GetShapeType() == mso_sptTextBox ) )
 					{
-						if ( pTextObj->Count() )
+						//if a placeholder with some custom attribute,the pTextObj will keep those attr,whose text size is zero,
+						//so sdPage should renew a PresObj to process placeholder.
+						if ( pTextObj->Count() > 1 || 
+							( pTextObj->Count() == 1 &&(pTextObj->First()) && pTextObj->First()->GetTextSize()>0 ))
 							bEmptyPresObj = sal_False;
 						switch ( nPlaceholderId )
 						{
@@ -2447,9 +2468,22 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 							SdrObject* pPresObj = pPage->CreatePresObj( ePresObjKind, bVertical, sdr::legacy::GetLogicRange(*pText), true );
 							establishConnectionToSdrObject(pPresObj, pPage);
 
-							SfxItemSet aSet(pPresObj->GetObjectItemPool());
-							ApplyAttributes( rStCtrl, aSet );
-							pPresObj->SetMergedItemSet(aSet);
+                            SfxItemSet aSet( pSdrModel->GetItemPool() );
+                            ApplyAttributes( rStCtrl, aSet );
+                            pPresObj->setSdrObjectTransformation(pText->getSdrObjectTransformation());
+                            ApplyTextAnchorAttributes( *pTextObj, aSet );
+							//set custom font attribute of the placeholder 
+							if ( pTextObj->Count() == 1 )
+							{
+								PPTParagraphObj* pPara = pTextObj->First();
+								PPTPortionObj* pPor = NULL;
+								if ( pPara && pPara->GetTextSize() == 0 && (pPor = pPara->First()))
+								{
+									pPor->ApplyTo(aSet, (SdrPowerPointImport&)*this, pTextObj->GetDestinationInstance());
+								}
+							}
+
+                            pPresObj->SetMergedItemSet(aSet);
 
 							if ( ( eAktPageKind != PPT_NOTEPAGE ) && ( pSlideLayout->aPlacementId[ i ] != (sal_uLong)-1 ) )
 							{

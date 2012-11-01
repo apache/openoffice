@@ -195,14 +195,24 @@ void SdrTextObj::TakeTextEditArea(basegfx::B2DVector* pPaperMin, basegfx::B2DVec
 				if(SDRTEXTANI_LEFT == eAniDirection || SDRTEXTANI_RIGHT == eAniDirection) 
 				{
 					fMaxWdt = 1000000.0;
-			}
+    			}
 				else if(SDRTEXTANI_UP == eAniDirection || SDRTEXTANI_DOWN == eAniDirection) 
 				{
 					fMaxHgt = 1000000.0;
 				}
 			}
 
-			aPaperMax.setX(fMaxWdt);
+            // #119885# Do not limit/force height to geometrical frame (vice versa for vertical writing)
+            if(IsVerticalWriting())
+            {
+                fMaxWdt = 1000000.0;
+            }
+            else
+            {
+                fMaxHgt = 1000000.0;
+            }
+
+            aPaperMax.setX(fMaxWdt);
 			aPaperMax.setY(fMaxHgt);
 		} 
 		else 

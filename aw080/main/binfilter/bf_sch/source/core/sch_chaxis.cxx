@@ -72,6 +72,7 @@
 #include <bf_svx/svxids.hrc>
 #endif
 
+#include "arrayhelper.hxx"
 #include "float.h"
 #include "chaxis.hxx"
 #include "pairs.hxx"
@@ -147,17 +148,12 @@ namespace binfilter {
 /*N*/ };
 /*N*/ ChartAxis::~ChartAxis()
 /*N*/ {
-/*N*/ 	if(mpTotal)
-/*N*/ 		delete [] mpTotal;
-/*N*/
-/*N*/ 	if(mpColStack)
-/*N*/ 		delete [] mpColStack;
-/*N*/
+/*N*/ 	delete [] mpTotal;
+/*N*/ 	delete [] mpColStack;
 /*N*/ 	delete mpAxisAttr;
 /*N*/ 	mpAxisAttr=NULL;
 /*N*/ 	mpModel=NULL;
-/*N*/ 	if(mpTextAttr)
-/*N*/ 		delete mpTextAttr;
+/*N*/ 	delete mpTextAttr;
 /*N*/ }
 
 /*N*/ ChartAxis::ChartAxis(ChartModel* pModel,long nId,long nUId) :
@@ -293,14 +289,18 @@ namespace binfilter {
 /*N*/ 	{
 /*N*/ 		if(nSize!=mnTotalSize)
 /*N*/ 		{
-/*N*/ 			if(mpTotal)
-/*N*/ 				delete [] mpTotal;
+/*N*/ 			delete [] mpTotal;
 /*N*/ 			mnTotalSize = nSize;
-/*N*/ 			mpTotal = new double[mnTotalSize];
+/*N*/ 			mpTotal = ArrayHelper<double>::create_long_size(mnTotalSize);
+                if(!mpTotal)
+                    mnTotalSize=0;
 /*N*/ 		}
 /*N*/
-/*N*/ 		while(nSize--)
-/*N*/ 			mpTotal[nSize]=0.0;
+            if(mpTotal)
+            {
+/*N*/ 		    while(nSize--)
+/*N*/ 			    mpTotal[nSize]=0.0;
+            }
 /*N*/ 	}
 /*N*/ 	mbTotalAlloc=TRUE;
 /*N*/ };
@@ -315,7 +315,9 @@ namespace binfilter {
 /*N*/ 	if(!mbTotalActual)
 /*N*/ 		CreateTotal();
 /*N*/
-/*N*/ 	return mpTotal[n];
+        if( mpTotal && n>=0 && n<mnTotalSize )
+/*N*/ 	    return mpTotal[n];
+        return 10.0;
 /*N*/ }
 /*N*/ void ChartAxis::CreateTotal()
 /*N*/ {
@@ -342,7 +344,7 @@ namespace binfilter {
 /*N*/ 	for(long nRow=0;nRow<nRowCnt;nRow++)
 /*N*/ 	{
 /*N*/ 		nId=((const SfxInt32Item &)(mpModel->GetDataRowAttr(nRow).Get(SCHATTR_AXIS))).GetValue();
-/*N*/ 		if(nId==mnUId)
+/*N*/ 		if(nId==mnUId && mpTotal)
 /*N*/ 		{
 /*N*/ 			for(nCol=0;nCol<nColCnt;nCol++)
 /*N*/ 			{
@@ -362,13 +364,13 @@ namespace binfilter {
 // Stapeln der Werte je Col (für Liniencharts)
 /*N*/ void ChartAxis::InitColStacking(long nColCnt)
 /*N*/ {
-/*N*/
-/*N*/
-/*N*/ 	if(mpColStack)
-/*N*/ 		delete [] mpColStack;
-/*N*/ 	mpColStack=new double[nColCnt];
-/*N*/ 	while(nColCnt--)
-/*N*/ 		mpColStack[nColCnt]=0.0;//mfOrigin ????;
+/*N*/ 	delete [] mpColStack;
+/*N*/ 	mpColStack = ArrayHelper<double>::create_long_size(nColCnt);
+        if(mpColStack)
+        {
+/*N*/ 	    while(nColCnt--)
+/*N*/ 		    mpColStack[nColCnt]=0.0;//mfOrigin ????;
+        }
 /*N*/ }
 //Stapeln der Werte je Column (Stapeln bei LinienCharts)
 /*N*/ double ChartAxis::StackColData(double fData,long nCol,long nColCnt)
@@ -377,8 +379,12 @@ namespace binfilter {
 /*N*/ 		InitColStacking(nColCnt);//falls noch nicht geschehen
 /*N*/ 	mbColStackOK=TRUE;//wird bei Initialise auf FALSE gesetzt
 /*N*/
-/*N*/ 	mpColStack[nCol]+=fData;
-/*N*/ 	return mpColStack[nCol];
+        if(mpColStack)
+        {
+/*N*/ 	    mpColStack[nCol]+=fData;
+/*N*/ 	    return mpColStack[nCol];
+        }
+        return fData;
 /*N*/ }
 //Dies Funktion wird u.A. von Initialise gerufen (sehr früh im Buildvorgang)
 //Attribute innerer Schleifen (CretaeMarks, etc.) können hier in Variablen

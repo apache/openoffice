@@ -343,43 +343,74 @@ sal_uInt16 XOutBitmap::WriteGraphic( const Graphic& rGraphic, String& rFileName,
             aURL.setBase( aName );
 		}
 
-		if( ( nFlags & XOUTBMP_USE_NATIVE_IF_POSSIBLE ) &&
-			!( nFlags & XOUTBMP_MIRROR_HORZ ) &&
-			!( nFlags & XOUTBMP_MIRROR_VERT ) &&
-			( rGraphic.GetType() != GRAPHIC_GDIMETAFILE ) && rGraphic.IsLink() )
+        // #121128# use shortcut to write SVG data in original form (if possible)
+        const SvgDataPtr aSvgDataPtr(rGraphic.getSvgData());
+
+        if(aSvgDataPtr.get() 
+            && aSvgDataPtr->getSvgDataArrayLength()
+            && rFilterName.EqualsIgnoreCaseAscii("svg"))
+        {
+            if(!(nFlags & XOUTBMP_DONT_ADD_EXTENSION))
+            {
+                aURL.setExtension(rFilterName);
+            }
+
+            rFileName = aURL.GetMainURL(INetURLObject::NO_DECODE);
+            SfxMedium aMedium(aURL.GetMainURL(INetURLObject::NO_DECODE), STREAM_WRITE|STREAM_SHARE_DENYNONE|STREAM_TRUNC, true);
+            SvStream* pOStm = aMedium.GetOutStream();
+
+            if(pOStm)
+            {
+                pOStm->Write(aSvgDataPtr->getSvgDataArray().get(), aSvgDataPtr->getSvgDataArrayLength());
+                aMedium.Commit();
+
+                if(!aMedium.GetError())
+                {
+                    nErr = GRFILTER_OK;
+                }
+            }
+        }
+
+		if( GRFILTER_OK != nErr )
 		{
-			// try to write native link
-			const GfxLink aGfxLink( ( (Graphic&) rGraphic ).GetLink() );
+		    if( ( nFlags & XOUTBMP_USE_NATIVE_IF_POSSIBLE ) &&
+			    !( nFlags & XOUTBMP_MIRROR_HORZ ) &&
+			    !( nFlags & XOUTBMP_MIRROR_VERT ) &&
+			    ( rGraphic.GetType() != GRAPHIC_GDIMETAFILE ) && rGraphic.IsLink() )
+		    {
+			    // try to write native link
+			    const GfxLink aGfxLink( ( (Graphic&) rGraphic ).GetLink() );
 
-			switch( aGfxLink.GetType() )
-			{
-				case( GFX_LINK_TYPE_NATIVE_GIF ): aExt = FORMAT_GIF; break;
-				case( GFX_LINK_TYPE_NATIVE_JPG ): aExt = FORMAT_JPG; break;
-				case( GFX_LINK_TYPE_NATIVE_PNG ): aExt = FORMAT_PNG; break;
+			    switch( aGfxLink.GetType() )
+			    {
+				    case( GFX_LINK_TYPE_NATIVE_GIF ): aExt = FORMAT_GIF; break;
+				    case( GFX_LINK_TYPE_NATIVE_JPG ): aExt = FORMAT_JPG; break;
+				    case( GFX_LINK_TYPE_NATIVE_PNG ): aExt = FORMAT_PNG; break;
 
-				default:
-				break;
-			}
+				    default:
+				    break;
+			    }
 
-			if( aExt.Len() )
-			{
-                if( 0 == (nFlags & XOUTBMP_DONT_ADD_EXTENSION))
-                    aURL.setExtension( aExt );
-				rFileName = aURL.GetMainURL( INetURLObject::NO_DECODE );
+			    if( aExt.Len() )
+			    {
+                    if( 0 == (nFlags & XOUTBMP_DONT_ADD_EXTENSION))
+                        aURL.setExtension( aExt );
+				    rFileName = aURL.GetMainURL( INetURLObject::NO_DECODE );
 
-				SfxMedium	aMedium( aURL.GetMainURL( INetURLObject::NO_DECODE ), STREAM_WRITE | STREAM_SHARE_DENYNONE | STREAM_TRUNC, sal_True );
-				SvStream*	pOStm = aMedium.GetOutStream();
+				    SfxMedium	aMedium( aURL.GetMainURL( INetURLObject::NO_DECODE ), STREAM_WRITE | STREAM_SHARE_DENYNONE | STREAM_TRUNC, sal_True );
+				    SvStream*	pOStm = aMedium.GetOutStream();
 
-				if( pOStm && aGfxLink.GetDataSize() && aGfxLink.GetData() )
-				{
-					pOStm->Write( aGfxLink.GetData(), aGfxLink.GetDataSize() );
-					aMedium.Commit();
+				    if( pOStm && aGfxLink.GetDataSize() && aGfxLink.GetData() )
+				    {
+					    pOStm->Write( aGfxLink.GetData(), aGfxLink.GetDataSize() );
+					    aMedium.Commit();
 
-					if( !aMedium.GetError() )
-						nErr = GRFILTER_OK;
-				}
-			}
-		}
+					    if( !aMedium.GetError() )
+						    nErr = GRFILTER_OK;
+				    }
+			    }
+		    }
+        }
 
 		if( GRFILTER_OK != nErr )
 		{
@@ -546,13 +577,13 @@ Bitmap XOutBitmap::DetectEdges( const Bitmap& rBmp, const sal_uInt8 cThreshold )
 				const long			nHeight = aSize.Height();
 				const long			nHeight2 = nHeight - 2L;
 				const long			lThres2 = (long) cThreshold * cThreshold;
-				const BitmapColor	aWhite = (sal_uInt8) pWriteAcc->GetBestMatchingColor( Color( COL_WHITE ) );
-				const BitmapColor	aBlack = (sal_uInt8) pWriteAcc->GetBestMatchingColor( Color( COL_BLACK ) );
+				const sal_uInt8 nWhitePalIdx = static_cast< sal_uInt8 >(pWriteAcc->GetBestPaletteIndex( Color( COL_WHITE ) ));
+				const sal_uInt8 nBlackPalIdx = static_cast< sal_uInt8 >(pWriteAcc->GetBestPaletteIndex( Color( COL_BLACK ) ));
 				long				nSum1;
 				long				nSum2;
 				long				lGray;
 
-				// Rand mit Weiss init.
+				// initialize border with white pixels
 				pWriteAcc->SetLineColor( Color( COL_WHITE) );
 				pWriteAcc->DrawLine( Point(), Point( nWidth - 1L, 0L ) );
 				pWriteAcc->DrawLine( Point( nWidth - 1L, 0L ), Point( nWidth - 1L, nHeight - 1L ) );
@@ -565,24 +596,24 @@ Bitmap XOutBitmap::DetectEdges( const Bitmap& rBmp, const sal_uInt8 cThreshold )
 					{
 						nXTmp = nX;
 
-						nSum1 = -( nSum2 = lGray = (sal_uInt8) pReadAcc->GetPixel( nY, nXTmp++ ) );
-						nSum2 += ( (long) (sal_uInt8) pReadAcc->GetPixel( nY, nXTmp++ ) ) << 1;
-						nSum1 += ( lGray = pReadAcc->GetPixel( nY, nXTmp ) );
+						nSum1 = -( nSum2 = lGray = pReadAcc->GetPixelIndex( nY, nXTmp++ ) );
+						nSum2 += ( (long) pReadAcc->GetPixelIndex( nY, nXTmp++ ) ) << 1;
+						nSum1 += ( lGray = pReadAcc->GetPixelIndex( nY, nXTmp ) );
 						nSum2 += lGray;
 
-						nSum1 += ( (long) (sal_uInt8) pReadAcc->GetPixel( nY1, nXTmp ) ) << 1;
-						nSum1 -= ( (long) (sal_uInt8) pReadAcc->GetPixel( nY1, nXTmp -= 2 ) ) << 1;
+						nSum1 += ( (long) pReadAcc->GetPixelIndex( nY1, nXTmp ) ) << 1;
+						nSum1 -= ( (long) pReadAcc->GetPixelIndex( nY1, nXTmp -= 2 ) ) << 1;
 
-						nSum1 += ( lGray = -(long) (sal_uInt8) pReadAcc->GetPixel( nY2, nXTmp++ ) );
+						nSum1 += ( lGray = -(long) pReadAcc->GetPixelIndex( nY2, nXTmp++ ) );
 						nSum2 += lGray;
-						nSum2 -= ( (long) (sal_uInt8) pReadAcc->GetPixel( nY2, nXTmp++ ) ) << 1;
-						nSum1 += ( lGray = (long) (sal_uInt8) pReadAcc->GetPixel( nY2, nXTmp ) );
+						nSum2 -= ( (long) pReadAcc->GetPixelIndex( nY2, nXTmp++ ) ) << 1;
+						nSum1 += ( lGray = (long) pReadAcc->GetPixelIndex( nY2, nXTmp ) );
 						nSum2 -= lGray;
 
 						if( ( nSum1 * nSum1 + nSum2 * nSum2 ) < lThres2 )
-							pWriteAcc->SetPixel( nY1, nXDst, aWhite );
+							pWriteAcc->SetPixelIndex( nY1, nXDst, nWhitePalIdx );
 						else
-							pWriteAcc->SetPixel( nY1, nXDst, aBlack );
+							pWriteAcc->SetPixelIndex( nY1, nXDst, nBlackPalIdx );
 					}
 				}
 

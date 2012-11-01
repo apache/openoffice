@@ -104,6 +104,7 @@
 #include "WW8FFData.hxx"
 #include <svx/svdlegacy.hxx>
 #include <svx/fmmodel.hxx>
+#include <editeng/shaditem.hxx>
 
 using namespace com::sun::star;
 using namespace sw::util;
@@ -736,6 +737,16 @@ void WW8_WrPlcTxtBoxes::Append( const SdrObject& rObj, sal_uInt32 nShapeId )
     void* p = (void*)&rObj;
     aCntnt.Insert( p, aCntnt.Count() );
     aShapeIds.Insert( nShapeId, aShapeIds.Count() );
+	//save NULL, if we have an actual SdrObject
+	aSpareFmts.Insert( (void*)NULL, aSpareFmts.Count() );
+}
+
+void WW8_WrPlcTxtBoxes::Append( const SwFrmFmt* pFmt, sal_uInt32 nShapeId )
+{
+	//no sdr object, we insert a NULL in the aCntnt and save the real fmt in aSpareFmts.
+	aCntnt.Insert( (void*)NULL, aCntnt.Count() );
+	aShapeIds.Insert( nShapeId, aShapeIds.Count() );
+	aSpareFmts.Insert( (void*)pFmt, aSpareFmts.Count() );
 }
 
 const SvULongs* WW8_WrPlcTxtBoxes::GetShapeIdArr() const
@@ -1728,7 +1739,61 @@ sal_Int32 SwBasicEscherEx::WriteFlyFrameAttr(const SwFrmFmt& rFmt,
         rPropOpt.AddOpt( ESCHER_Prop_dxTextLeft, 0 );
         rPropOpt.AddOpt( ESCHER_Prop_dxTextRight, 0 );
     }
+    const SwAttrSet& rAttrSet = rFmt.GetAttrSet();
+    if (SFX_ITEM_ON == rAttrSet.GetItemState(RES_BOX, false, &pItem))
+    {
+        const SvxBoxItem* pBox = (const SvxBoxItem*)pItem;
+        if( pBox )
+        {
+            const SfxPoolItem* pShadItem;
+            if (SFX_ITEM_ON
+                == rAttrSet.GetItemState(RES_SHADOW, true, &pShadItem))
+            {
+                const SvxShadowItem* pSI = (const SvxShadowItem*)pShadItem;
 
+                const sal_uInt16 nCstScale = 635;        // unit scale between SODC and MS Word
+                const sal_uInt32 nShadowType = 131074;    // shadow type of ms word. need to set the default value.
+
+                sal_uInt32  nColor = (sal_uInt32)(pSI->GetColor().GetColor()) ;
+                sal_uInt32  nOffX = pSI->GetWidth() * nCstScale;
+                sal_uInt32  nOffY = pSI->GetWidth() * nCstScale;
+                sal_uInt32  nShadow = nShadowType;
+
+                SvxShadowLocation eLocation = pSI->GetLocation();
+                if( (eLocation!=SVX_SHADOW_NONE) && (pSI->GetWidth()!=0) )
+                {
+                    switch( eLocation )
+                    {
+                    case SVX_SHADOW_TOPLEFT:
+                        {
+                            nOffX = -nOffX;
+                            nOffY = -nOffY;
+                        }
+                        break;
+                    case SVX_SHADOW_TOPRIGHT:
+                        {
+                            nOffY = -nOffY;
+                        }
+                        break;
+                    case SVX_SHADOW_BOTTOMLEFT:
+                        {
+                            nOffX = -nOffX;
+                        }
+                        break;
+                    case SVX_SHADOW_BOTTOMRIGHT:
+                        break;
+                    default:
+                        break;
+                    }
+
+                    rPropOpt.AddOpt( DFF_Prop_shadowColor,    wwUtility::RGBToBGR((nColor)));
+                    rPropOpt.AddOpt( DFF_Prop_shadowOffsetX,    nOffX );
+                    rPropOpt.AddOpt( DFF_Prop_shadowOffsetY,    nOffY );
+                    rPropOpt.AddOpt( DFF_Prop_fshadowObscured,  nShadow );
+                }
+            }
+    	}
+    }
     SvxBrushItem aBrush(rWrt.TrueFrameBgBrush(rFmt));
     WriteBrushAttr(aBrush, rPropOpt);
 
@@ -2007,7 +2072,16 @@ SwEscherEx::SwEscherEx(SvStream* pStrm, WW8Export& rWW8Wrt)
             {
                 const SvxBrushItem* pBrush = (const SvxBrushItem*)pItem;
                 WriteBrushAttr(*pBrush, aPropOpt);
-            }
+
+                SvxGraphicPosition ePos = pBrush->GetGraphicPos();
+				if( ePos != GPOS_NONE && ePos != GPOS_AREA )
+				{
+					/* #i56806# 0x033F parameter specifies a 32-bit field of shape boolean properties.
+					0x10001 means fBackground and fUsefBackground flag are true thus background
+					picture will be shown as "tiled" fill.*/
+					aPropOpt.AddOpt( ESCHER_Prop_fBackground, 0x10001 );
+				}
+			}
             aPropOpt.AddOpt( ESCHER_Prop_lineColor, 0x8000001 );
             aPropOpt.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x00080008 );
             aPropOpt.AddOpt( ESCHER_Prop_shadowColor, 0x8000002 );
@@ -2159,6 +2233,12 @@ bool WinwordAnchoring::ConvertPosition( SwFmtHoriOrient& _iorHoriOri,
         {
             eHoriConv = CONV2PG;
         }
+		else if ( _iorHoriOri.IsPosToggle() 
+				&& _iorHoriOri.GetHoriOrient() == text::HoriOrientation::RIGHT )
+		{
+			eHoriConv = NO_CONV;
+			_iorHoriOri.SetHoriOrient( text::HoriOrientation::OUTSIDE );
+		}        
         else
         {
             switch ( _iorHoriOri.GetRelationOrient() )
@@ -2572,6 +2652,24 @@ sal_Int32 SwEscherEx::WriteFlyFrm(const DrawObj &rObj, sal_uInt32 &rShapeId,
 
                 nBorderThick = WriteTxtFlyFrame(rObj, rShapeId, nTxtId, rPVec);
             }
+
+			//In browse mode the sdr object doesn't always exist. For example, the
+			//object is in the hidden header/footer. We save the fmt directly 
+			//in such cases; we copy most of the logic from the block above
+			const bool bBrowseMode = (rFmt.getIDocumentSettingAccess())->get(IDocumentSettingAccess::BROWSE_MODE);
+			if( bBrowseMode && rFmt.GetDoc())
+			{
+				if( !rFmt.GetChain().GetPrev() )//obj in header/footer?
+				{
+					rShapeId = GetFlyShapeId(rFmt, rObj.mnHdFtIndex, rPVec);
+					pTxtBxs->Append( &rFmt, rShapeId );
+					sal_uInt32 nTxtId = pTxtBxs->Count();
+					
+					nTxtId *= 0x10000;
+					nBorderThick = WriteTxtFlyFrame(rObj, rShapeId, nTxtId, rPVec);
+				}
+			}
+            
         }
     }
     return nBorderThick;

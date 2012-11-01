@@ -38,14 +38,11 @@ all:
 
 # --- Files --------------------------------------------------------
 
-#TARFILE_NAME=jpeg-6b
-TARFILE_NAME=jpeg-8c
+TARFILE_NAME=jpeg-8d
 
-#TARFILE_MD5=dbd5f3b47ed13132f04c685d608a7547
-TARFILE_MD5=a2c10c04f396a9ce72894beb18b4e1f9
+TARFILE_MD5=52654eb3b2e60c35731ea8fc87f1bd29
 
-#PATCH_FILES=jpeg-6b.patch
-PATCH_FILES=jpeg-8c.patch
+PATCH_FILES=jpeg-8d.patch
 
 ADDITIONAL_FILES=makefile.mk jconfig.h	
 

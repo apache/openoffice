@@ -26,17 +26,14 @@
 
 #include <cppuhelper/compbase1.hxx>
 #include <com/sun/star/lang/XServiceInfo.hpp>
-
-#ifndef _COM_SUN_STAR_SYS_SHELL_XSYSTEMSHELLEXECUTE_HPP_
 #include <com/sun/star/system/XSimpleMailClient.hpp>
-#endif
 
 namespace css = ::com::sun::star;
 
 class CSmplMailClient : public cppu::WeakImplHelper1<css::system::XSimpleMailClient>
 {
 public:    
-    virtual css::uno::Reference<css::system::XSimpleMailMessage> SAL_CALL createSimpleMailMessage() 
+    virtual css::uno::Reference<css::system::XSimpleMailMessage> SAL_CALL createSimpleMailMessage()
         throw (css::uno::RuntimeException);
 
     virtual void SAL_CALL sendSimpleMailMessage(const css::uno::Reference<css::system::XSimpleMailMessage>& xSimpleMailMessage, sal_Int32 aFlag) 

@@ -45,9 +45,9 @@
 #include <svx/svdmodel.hxx>
 #include <svx/svdtrans.hxx>
 #include <svx/svdpage.hxx>
-
-// #114265#
 #include <svl/smplhint.hxx>
+#include <svx/svdograf.hxx>
+#include <svx/svdoole2.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -307,8 +307,10 @@ namespace sdr
 		{
             // use correct default stylesheet #119287#
             SfxStyleSheet* pTargetStyleSheet = 0;
+            const SdrGrafObj* pIsSdrGrafObj = dynamic_cast< const SdrGrafObj* >(&GetSdrObject());
+            const SdrOle2Obj* pIsSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(&GetSdrObject());
 
-            if(SdrInventor == GetSdrObject().GetObjInventor() && (OBJ_GRAF == GetSdrObject().GetObjIdentifier() || OBJ_OLE2 == GetSdrObject().GetObjIdentifier()))
+            if(pIsSdrGrafObj || pIsSdrOle2Obj)
             {
                 pTargetStyleSheet = GetSdrObject().getSdrModelFromSdrObject().GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj();
             }
@@ -344,8 +346,10 @@ namespace sdr
                 // this should not happen, all SDrObjects should have a default StyleSheet, so cloning
                 // one without is an error. Still add one, but assert user
                 OSL_ENSURE(false, "Cloning SdrObject without SfxStyleSheet, all should have a default StyleSheet (!)");
+                const SdrGrafObj* pIsSdrGrafObj = dynamic_cast< const SdrGrafObj* >(&GetSdrObject());
+                const SdrOle2Obj* pIsSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(&GetSdrObject());
 
-                if(SdrInventor == GetSdrObject().GetObjInventor() && (OBJ_GRAF == GetSdrObject().GetObjIdentifier() || OBJ_OLE2 == GetSdrObject().GetObjIdentifier()))
+                if(pIsSdrGrafObj || pIsSdrOle2Obj)
                 {
                     pTargetStyleSheet = GetSdrObject().getSdrModelFromSdrObject().GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj();
                 }

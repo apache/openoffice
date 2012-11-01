@@ -449,11 +449,15 @@ struct WW8LFOInfo   // unsortiert, d.h. Reihenfolge genau wie im WW8 Stream
 };
 
 WW8LFOInfo::WW8LFOInfo(const WW8LFO& rLFO)
-    : maParaSprms(WW8ListManager::nMaxLevel),
-    maOverrides(WW8ListManager::nMaxLevel), pNumRule(rLFO.pNumRule),
-    nIdLst(rLFO.nIdLst), nLfoLvl(rLFO.nLfoLvl),
-    bOverride(rLFO.nLfoLvl ? true : false), bSimpleList(rLFO.bSimpleList),
-    bUsedInDoc(0), bLSTbUIDSet(0)
+    : maParaSprms(WW8ListManager::nMaxLevel)
+    , maOverrides(WW8ListManager::nMaxLevel)
+    , pNumRule(rLFO.pNumRule)
+    , nIdLst(rLFO.nIdLst)
+    , nLfoLvl(rLFO.nLfoLvl)
+    , bOverride(rLFO.nLfoLvl ? true : false)
+    , bSimpleList(rLFO.bSimpleList)
+    , bUsedInDoc(0)
+    , bLSTbUIDSet(0)
 {
 }
 
@@ -1018,7 +1022,24 @@ void WW8ListManager::AdjustLVL( sal_uInt8 nLevel, SwNumRule& rNumRule,
         // Style an das NumFormat haengen
         //
         aNumFmt.SetCharFmt( pFmt );
-    }
+    }	
+	//Modify for #119405 by chengjh, 2012-08-16
+	//Ensure the default char fmt is initialized for any level of num ruler if no customized attr
+	else
+	{
+		SwCharFmt* pFmt = aNumFmt.GetCharFmt();
+		if ( !pFmt)
+		{
+			String aName( sPrefix.Len() ? sPrefix : rNumRule.GetName() );
+	            	(aName += 'z') += String::CreateFromInt32( nLevel );
+	            	
+	            	pFmt = rDoc.MakeCharFmt(aName, (SwCharFmt*)rDoc.GetDfltCharFmt());
+	            	bNewCharFmtCreated = true;
+			rCharFmt[ nLevel ] = pFmt;
+			aNumFmt.SetCharFmt( pFmt );
+		}
+	}
+	//End
     //
     // ggfs. Bullet Font an das NumFormat haengen
     //

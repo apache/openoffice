@@ -52,6 +52,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_GREATER_EQUAL { Text = ">=" ; };
 	String SC_OPCODE_AND { Text = "AND" ; };
 	String SC_OPCODE_OR { Text = "OR" ; };
+	String SC_OPCODE_XOR { Text = "XOR" ; };
 	String SC_OPCODE_INTERSECT { Text = "!" ; };
 	String SC_OPCODE_UNION { Text = "~" ; };
 	String SC_OPCODE_RANGE { Text = ":" ; };
@@ -240,6 +241,10 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_COUNT_EMPTY_CELLS { Text = "COUNTBLANK" ; };
 	String SC_OPCODE_COUNT_IF { Text = "COUNTIF" ; };
 	String SC_OPCODE_SUM_IF { Text = "SUMIF" ; };
+	String SC_OPCODE_AVERAGE_IF { Text = "AVERAGEIF" ; };
+	String SC_OPCODE_SUM_IFS { Text = "SUMIFS" ; };
+	String SC_OPCODE_AVERAGE_IFS { Text = "AVERAGEIFS" ; };
+	String SC_OPCODE_COUNT_IFS { Text = "COUNTIFS" ; };
 	String SC_OPCODE_LOOKUP { Text = "LOOKUP" ; };
 	String SC_OPCODE_V_LOOKUP { Text = "VLOOKUP" ; };
 	String SC_OPCODE_H_LOOKUP { Text = "HLOOKUP" ; };
@@ -256,6 +261,10 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_RIGHT { Text = "RIGHT" ; };
 	String SC_OPCODE_SEARCH { Text = "SEARCH" ; };
 	String SC_OPCODE_MID { Text = "MID" ; };
+	String SC_OPCODE_LENB          { Text = "LENB" ; };
+    String SC_OPCODE_RIGHTB        { Text = "RIGHTB" ; };
+    String SC_OPCODE_LEFTB         { Text = "LEFTB" ; };
+    String SC_OPCODE_MIDB          { Text = "MIDB" ; };
 	String SC_OPCODE_TEXT { Text = "TEXT" ; };
 	String SC_OPCODE_SUBSTITUTE { Text = "SUBSTITUTE" ; };
 	String SC_OPCODE_REPT { Text = "REPT" ; };
@@ -380,6 +389,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_GREATER_EQUAL { Text = ">=" ; };
 	String SC_OPCODE_AND { Text = "AND" ; };
 	String SC_OPCODE_OR { Text = "OR" ; };
+	String SC_OPCODE_XOR { Text = "XOR" ; };
 	String SC_OPCODE_INTERSECT { Text = "!" ; };
 	String SC_OPCODE_UNION { Text = "~" ; };
 	String SC_OPCODE_RANGE { Text = ":" ; };
@@ -568,6 +578,10 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_COUNT_EMPTY_CELLS { Text = "COUNTBLANK" ; };
 	String SC_OPCODE_COUNT_IF { Text = "COUNTIF" ; };
 	String SC_OPCODE_SUM_IF { Text = "SUMIF" ; };
+	String SC_OPCODE_AVERAGE_IF { Text = "AVERAGEIF" ; };
+	String SC_OPCODE_SUM_IFS { Text = "SUMIFS" ; };
+	String SC_OPCODE_AVERAGE_IFS { Text = "AVERAGEIFS" ; };
+	String SC_OPCODE_COUNT_IFS { Text = "COUNTIFS" ; };
 	String SC_OPCODE_LOOKUP { Text = "LOOKUP" ; };
 	String SC_OPCODE_V_LOOKUP { Text = "VLOOKUP" ; };
 	String SC_OPCODE_H_LOOKUP { Text = "HLOOKUP" ; };
@@ -584,6 +598,10 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_RIGHT { Text = "RIGHT" ; };
 	String SC_OPCODE_SEARCH { Text = "SEARCH" ; };
 	String SC_OPCODE_MID { Text = "MID" ; };
+	String SC_OPCODE_LENB { Text = "LENB" ; };
+    String SC_OPCODE_RIGHTB { Text = "RIGHTB" ; };
+    String SC_OPCODE_LEFTB { Text = "LEFTB" ; };
+    String SC_OPCODE_MIDB { Text = "MIDB" ; };
 	String SC_OPCODE_TEXT { Text = "TEXT" ; };
 	String SC_OPCODE_SUBSTITUTE { Text = "SUBSTITUTE" ; };
 	String SC_OPCODE_REPT { Text = "REPT" ; };
@@ -716,6 +734,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	String SC_OPCODE_OR
 	{
 		Text [ en-US ] = "OR" ;
+	};
+	String SC_OPCODE_XOR
+	{
+		Text [ en-US ] = "XOR" ;
 	};
 	String SC_OPCODE_INTERSECT { Text = "!" ; };
 	String SC_OPCODE_UNION { Text = "~" ; };
@@ -1459,6 +1481,22 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	{
 		Text [ en-US ] = "SUMIF" ;
 	};
+	String SC_OPCODE_AVERAGE_IF
+	{
+		Text [ en-US ] = "AVERAGEIF" ;
+	};
+	String SC_OPCODE_SUM_IFS
+	{
+		Text [ en-US ] = "SUMIFS" ;
+	};
+	String SC_OPCODE_AVERAGE_IFS
+	{
+		Text [ en-US ] = "AVERAGEIFS" ;
+	};
+	String SC_OPCODE_COUNT_IFS
+	{
+		Text [ en-US ] = "COUNTIFS" ;
+	};
 	String SC_OPCODE_LOOKUP
 	{
 		Text [ en-US ] = "LOOKUP" ;
@@ -1524,6 +1562,22 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	{
 		Text [ en-US ] = "MID" ;
 	};
+	String SC_OPCODE_LENB
+    {
+        Text [ en-US ] = "LENB" ;
+    };
+    String SC_OPCODE_RIGHTB
+    {
+        Text [ en-US ] = "RIGHTB" ;
+    };
+    String SC_OPCODE_LEFTB
+    {
+        Text [ en-US ] = "LEFTB" ;
+    };
+    String SC_OPCODE_MIDB
+    {
+        Text [ en-US ] = "MIDB" ;
+    };
 	String SC_OPCODE_TEXT
 	{
 		Text [ en-US ] = "TEXT" ;

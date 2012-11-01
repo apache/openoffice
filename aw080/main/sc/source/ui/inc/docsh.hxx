@@ -158,6 +158,7 @@ class SC_DLLPUBLIC ScDocShell: public SfxObjectShell, public SfxListener
 
     SC_DLLPRIVATE void          EnableSharedSettings( bool bEnable );
     SC_DLLPRIVATE ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > LoadSharedDocument();
+	ScDBData*		GetDBDataAdd( const ScRange& rMarked, ScGetDBMode eMode, ScGetDBSelection eSel );
 
     SC_DLLPRIVATE void          UseSheetSaveEntries();
 
@@ -304,6 +305,7 @@ public:
 	ScDBData*		GetDBData( const ScRange& rMarked, ScGetDBMode eMode, ScGetDBSelection eSel );
     ScDBData*       GetOldAutoDBRange();    // has to be deleted by caller!
     void            CancelAutoDBRange();    // called when dialog is cancelled
+	ScDBCollection* GetDBCollection(){ return aDocument.GetDBCollection();}
 
 	void			UpdateLinks();			// Link-Eintraege aktuallisieren
 	sal_Bool			ReloadTabLinks();		// Links ausfuehren (Inhalt aktualisieren)
@@ -416,6 +418,8 @@ public:
     virtual void    SetChangeRecording( bool bActivate );
     virtual bool    SetProtectionPassword( const String &rPassword );
     virtual bool    GetProtectionHash( /*out*/ ::com::sun::star::uno::Sequence< sal_Int8 > &rPasswordHash );
+    void BeforeLoading( SfxMedium&, const ::rtl::OUString &, const ::rtl::OUString & );
+    void AfterLoading( SfxMedium&, const ::rtl::OUString &, const ::rtl::OUString & );
 };
 
 

@@ -164,7 +164,6 @@ $(MISC)$/$(SHL1TARGET).def:  makefile.mk
     @echo ------------------------------
     @echo Making: $@
     @echo LIBRARY     $(SHL1TARGET8) INITINSTANCE TERMINSTANCE     >$@
-    @echo DESCRIPTION 'SCALC3 DLL'                                 >>$@
     @echo DATA        MULTIPLE                                     >>$@
     @echo EXPORTS                                                   >>$@
     @echo   _CreateScDocShellDll                                >>$@

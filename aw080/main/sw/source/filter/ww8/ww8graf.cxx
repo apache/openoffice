@@ -265,7 +265,7 @@ static void SetFill( SfxItemSet& rSet, WW8_DP_FILL& rFill )
     else
     {
         rSet.Put(XFillStyleItem(XFILL_SOLID));  // necessary for textbox
-        if (nPat <= 1 || nPat > sizeof(nPatA))
+        if (nPat <= 1 || ((sizeof(nPatA)/sizeof(nPatA[0])) <= nPat))
         {
             // Solid Background or unknown
             rSet.Put(XFillColorItem(aEmptyStr, WW8TransCol(rFill.dlpcBg)));
@@ -2270,6 +2270,7 @@ RndStdIds SwWW8ImplReader::ProcessEscherAlign(SvxMSDffImportRec* pRecord,
     ASSERT(pRecord || pFSPA, "give me something! to work with for anchoring");
     if (!pRecord && !pFSPA)
         return FLY_AT_PAGE;
+	sal_Bool bCurSectionVertical = maSectionManager.CurrentSectionIsVertical();
 
     SvxMSDffImportRec aRecordFromFSPA;
     if (!pRecord)
@@ -2305,7 +2306,7 @@ RndStdIds SwWW8ImplReader::ProcessEscherAlign(SvxMSDffImportRec* pRecord,
         // is a hint that these values aren't set by the escher import - see
         // method <SwMSDffManager::ProcessObj(..)>. Then, check if for each
         // values, if it differs from the one in the FSPA.
-        if ( pRecord->nXRelTo == 2 && pRecord->nYRelTo == 2 )
+        if ( pRecord->nXRelTo == 2 && pRecord->nYRelTo == 2 && !bCurSectionVertical)
         {
             // if <nYRelTo> differs from <FSPA.nby> overwrite <nYRelTo>
             if ( pFSPA->nby != pRecord->nYRelTo )
@@ -2444,11 +2445,6 @@ RndStdIds SwWW8ImplReader::ProcessEscherAlign(SvxMSDffImportRec* pRecord,
         }
         // <--
 
-        SwFmtHoriOrient aHoriOri(MakeSafePositioningValue(pFSPA->nXaLeft),
-            eHoriOri, eHoriRel);
-        if( 4 <= nXAlign )
-            aHoriOri.SetPosToggle(true);
-        rFlySet.Put( aHoriOri );
 
         //Writer honours this wrap distance when aligned as "left" or "right",
         //Word doesn't. Writer doesn't honour it when its "from left".
@@ -2460,6 +2456,8 @@ RndStdIds SwWW8ImplReader::ProcessEscherAlign(SvxMSDffImportRec* pRecord,
         sal_Int16 eVertRel;
         // OD 14.10.2003 #i18732#
         eVertRel = aVertRelOriTab[  nYRelTo ];
+		if ( bCurSectionVertical && nYRelTo == 2 )
+			eVertRel = text::RelOrientation::PAGE_PRINT_AREA;
         // CMC, OD 24.11.2003 #i22673# - fill <eVertOri> in dependence of <eVertRel>
         sal_Int16 eVertOri;
         if ( eVertRel == text::RelOrientation::TEXT_LINE )
@@ -2478,8 +2476,16 @@ RndStdIds SwWW8ImplReader::ProcessEscherAlign(SvxMSDffImportRec* pRecord,
         if ((eVertRel == text::RelOrientation::TEXT_LINE) && (eVertOri == text::VertOrientation::NONE))
             nYPos = -nYPos;
 
-        rFlySet.Put(SwFmtVertOrient(MakeSafePositioningValue(nYPos),
-            eVertOri, eVertRel));
+		SwFmtHoriOrient aHoriOri(MakeSafePositioningValue(	bCurSectionVertical ? nYPos : pFSPA->nXaLeft ),
+															bCurSectionVertical ? eVertOri : eHoriOri, 
+															bCurSectionVertical ? eVertRel : eHoriRel);
+		if( 4 <= nXAlign )
+		    aHoriOri.SetPosToggle(true);
+		rFlySet.Put( aHoriOri );
+
+        rFlySet.Put(SwFmtVertOrient(MakeSafePositioningValue( !bCurSectionVertical ? nYPos : -pFSPA->nXaRight ),
+																!bCurSectionVertical ? eVertOri : eHoriOri, 
+																!bCurSectionVertical ? eVertRel : eHoriRel ));
 
         if (
             (pFSPA->nYaTop < 0) && (eVertOri == text::VertOrientation::NONE) &&

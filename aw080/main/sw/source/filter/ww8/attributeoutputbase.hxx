@@ -187,7 +187,9 @@ public:
 
     void StartTOX( const SwSection& rSect );
 
-    void EndTOX( const SwSection& rSect );
+    void EndTOX( const SwSection& rSect,bool bCareEnd=true );
+
+    virtual void OnTOXEnding() {}
 
     virtual void TOXMark( const SwTxtNode& rNode, const SwTOXMark& rAttr );
 
@@ -405,6 +407,11 @@ protected:
     /// Sfx item RES_CHRATR_CTL_WEIGHT
     virtual void CharWeightCTL( const SvxWeightItem& ) = 0;
 
+	/// Sfx item RES_CHRATR_BidiRTL
+    virtual void CharBidiRTL( const SfxPoolItem& ) = 0;
+
+    /// Sfx item RES_CHRATR_IdctHint
+    virtual void CharIdctHint( const SfxPoolItem& ) = 0;
     /// Sfx item RES_CHRATR_ROTATE
     virtual void CharRotate( const SvxCharRotateItem& ) = 0;
 

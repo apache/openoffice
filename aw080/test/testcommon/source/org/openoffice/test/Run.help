@@ -1,0 +1,23 @@
+Usage:
+run [options] <test definition> [test definition] ...
+Options
+	-D<property>=<value>	Set system property.
+	-propertyfile <file>	Set system property from property file.
+	-r	Set a runnable which will be executed before all tests start.
+	-l	Set a test listeners.
+	-help	Print usage.
+Test Definition
+	-tp	[suite name:]<package name>[,package_name]...	Define a test suite with test packages separated by comma.
+	-tc	[suite name:]<class name>[,class_name]...	Define a test suite with test classes separated by comma.
+	-tm	[suite name:]<method name>[,method_name]...	Define a test suite with test methods separated by comma.
+System Property
+	openoffice.home	Specify the directory in which OpenOffice is installed.
+	openoffice.pack	Specify a URL to OpenOffice installation package. The package will be automatically installed.
+	singleton	True to allow only one test process to run at a time.
+	only.new	True to allow test to run only when openoffice.pack is newer than the local cached package.
+	report.to	Specify a URL to upload test result.
+Example
+	run -Dopenoffice.home=/Applications/OpenOffice.org.app/Contents -tp bvt
+	run -Dopenoffice.home=/Applications/OpenOffice.org.app/Contents -tc bvt:bvt.gui.BasicFunctionTest,bvt.gui.FileTypeTest
+	run -Dopenoffice.pack=http://ci.apache.org/projects/openoffice/install/linux64/Apache_OpenOffice_3.5.0_Linux_x86-64_install-arc_en-US.tar.gz -tp bvt
+	

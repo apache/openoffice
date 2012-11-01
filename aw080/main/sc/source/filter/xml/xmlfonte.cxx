@@ -47,12 +47,13 @@ class ScXMLFontAutoStylePool_Impl: public XMLFontAutoStylePool
 {
 private:
     // #i120077# remember owned pool
-	SfxItemPool*    mpEditEnginePool;
+    SfxItemPool*    mpEditEnginePool;
 
-    void AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 nIdCount, const SfxItemPool* pItemPool, const sal_Bool bExportDefaults);
+	void AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 nIdCount, const SfxItemPool* pItemPool, const sal_Bool bExportDefaults);
+
 public:
 	ScXMLFontAutoStylePool_Impl( ScXMLExport& rExport );
-	virtual ~ScXMLFontAutoStylePool_Impl();
+    virtual ~ScXMLFontAutoStylePool_Impl();
 };
 
 void ScXMLFontAutoStylePool_Impl::AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 nIdCount, const SfxItemPool* pItemPool, const sal_Bool bExportDefaults)
@@ -84,10 +85,9 @@ void ScXMLFontAutoStylePool_Impl::AddFontItems(sal_uInt16* pWhichIds, sal_uInt8 
 	}
 }
 
-ScXMLFontAutoStylePool_Impl::ScXMLFontAutoStylePool_Impl(
-	ScXMLExport& rExportP ) :
-	XMLFontAutoStylePool( rExportP ),
-    mpEditEnginePool(0)
+ScXMLFontAutoStylePool_Impl::ScXMLFontAutoStylePool_Impl(ScXMLExport& rExportP ) 
+:   XMLFontAutoStylePool(rExportP),
+    mpEditEnginePool(NULL)
 {
 	sal_uInt16 aWhichIds[3] = { ATTR_FONT, ATTR_CJK_FONT,
 								ATTR_CTL_FONT };
@@ -100,66 +100,78 @@ ScXMLFontAutoStylePool_Impl::ScXMLFontAutoStylePool_Impl(
 	AddFontItems(aWhichIds, 3, pItemPool, sal_True);
 	const SfxItemPool* pEditPool(rExportP.GetDocument()->GetEditPool());
 	AddFontItems(aEditWhichIds, 3, pEditPool, sal_False);
-    
-    if(rExportP.GetDocument() && rExportP.GetDocument()->GetStyleSheetPool())
+
+	SfxStyleSheetIteratorPtr pItr;
+
+    if(rExportP.GetDocument())
     {
-        // memory leak #i120077#
-        SfxStyleSheetIterator aIter(rExportP.GetDocument()->GetStyleSheetPool(), SFX_STYLE_FAMILY_PAGE, 0xFFFF);
-		SfxStyleSheetBase* pStyle(aIter.First());
-		
-        // #i120077# init pool and use it
-		mpEditEnginePool = EditEngine::CreatePool();  // memory leak #i120077#, to save the SfxItemPool obj into member data for releasing
-		SfxItemPool* pPageEditPool( mpEditEnginePool );
-		EditEngine aEditEngine(pPageEditPool);
-		
-        while (pStyle)
-		{
-			const SfxItemPool& rPagePool(pStyle->GetPool().GetPool());
-			for (sal_uInt8 j = 0; j < 4; ++j)
-			{
-				sal_uInt16 nPageWhichId(aPageWhichIds[j]);
-				sal_uInt32 nPageHFItems(rPagePool.GetItemCount2(nPageWhichId));
-				const ScPageHFItem* pPageItem;
-				for (sal_uInt32 k = 0; k < nPageHFItems; ++k)
-				{
-					if (0 != (pPageItem = static_cast<const ScPageHFItem*>(rPagePool.GetItem2(nPageWhichId, k))))
-					{
-						const EditTextObject* pLeftArea(pPageItem->GetLeftArea());
-						if (pLeftArea)
-						{
-							aEditEngine.SetText(*pLeftArea);
-							AddFontItems(aEditWhichIds, 3, pPageEditPool, sal_False);
-						}
-						const EditTextObject* pCenterArea(pPageItem->GetCenterArea());
-						if (pCenterArea)
-						{
-							aEditEngine.SetText(*pCenterArea);
-							AddFontItems(aEditWhichIds, 3, pPageEditPool, sal_False);
-						}
-						const EditTextObject* pRightArea(pPageItem->GetRightArea());
-						if (pRightArea)
-						{
-							aEditEngine.SetText(*pRightArea);
-							AddFontItems(aEditWhichIds, 3, pPageEditPool, sal_False);
-						}
+    	pItr = rExportP.GetDocument()->GetStyleSheetPool()->CreateIterator(SFX_STYLE_FAMILY_PAGE, 0xFFFF);
+    }
+
+	if(pItr)
+	{
+		SfxStyleSheetBase* pStyle(pItr->First());
+        
+        if(pStyle)
+        {
+            // #i120077# remember the SfxItemPool in member variable before usage. The
+            // local EditEngine will not take over ownership of the pool.
+            mpEditEnginePool = EditEngine::CreatePool();
+		    EditEngine aEditEngine(mpEditEnginePool);
+
+		    while (pStyle)
+		    {
+			    const SfxItemPool& rPagePool(pStyle->GetPool().GetPool());
+			    
+                for (sal_uInt8 j = 0; j < 4; ++j)
+			    {
+				    sal_uInt16 nPageWhichId(aPageWhichIds[j]);
+				    sal_uInt32 nPageHFItems(rPagePool.GetItemCount2(nPageWhichId));
+				    const ScPageHFItem* pPageItem;
+				    for (sal_uInt32 k = 0; k < nPageHFItems; ++k)
+				    {
+					    if (0 != (pPageItem = static_cast<const ScPageHFItem*>(rPagePool.GetItem2(nPageWhichId, k))))
+					    {
+						    const EditTextObject* pLeftArea(pPageItem->GetLeftArea());
+						    if (pLeftArea)
+						    {
+							    aEditEngine.SetText(*pLeftArea);
+							    AddFontItems(aEditWhichIds, 3, mpEditEnginePool, sal_False);
+						    }
+						    const EditTextObject* pCenterArea(pPageItem->GetCenterArea());
+						    if (pCenterArea)
+						    {
+							    aEditEngine.SetText(*pCenterArea);
+							    AddFontItems(aEditWhichIds, 3, mpEditEnginePool, sal_False);
+						    }
+						    const EditTextObject* pRightArea(pPageItem->GetRightArea());
+						    if (pRightArea)
+						    {
+							    aEditEngine.SetText(*pRightArea);
+							    AddFontItems(aEditWhichIds, 3, mpEditEnginePool, sal_False);
+						    }
+                        }
 					}
 				}
+    
+                pStyle = pItr->Next();
 			}
-			pStyle = aIter.Next();
 		}
 	}
 }
 
 ScXMLFontAutoStylePool_Impl::~ScXMLFontAutoStylePool_Impl()
 {
-	if(mpEditEnginePool)
-	{
+    if(mpEditEnginePool)
+    {
         // memory leak #i120077#
-		SfxItemPool::Free(mpEditEnginePool);  
-	}
+        SfxItemPool::Free(mpEditEnginePool);
+    }
 }
 
 XMLFontAutoStylePool* ScXMLExport::CreateFontAutoStylePool()
 {
 	return new ScXMLFontAutoStylePool_Impl( *this );
 }
+
+// eof

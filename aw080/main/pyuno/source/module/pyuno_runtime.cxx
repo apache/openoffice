@@ -65,8 +65,7 @@ namespace pyuno
 
 static PyTypeObject RuntimeImpl_Type =
 {
-    PyObject_HEAD_INIT (&PyType_Type)
-    0,
+    PyVarObject_HEAD_INIT(&PyType_Type, 0)
     const_cast< char * >("pyuno_runtime"),
     sizeof (RuntimeImpl),
     0,
@@ -155,8 +154,8 @@ static PyRef importUnoModule( ) throw ( RuntimeException )
         OUStringBuffer buf;
         buf.appendAscii( "python object raised an unknown exception (" );
         PyRef valueRep( PyObject_Repr( excValue.get() ), SAL_NO_ACQUIRE );
-        buf.appendAscii( PyString_AsString( valueRep.get())).appendAscii( ", traceback follows\n" );
-        buf.appendAscii( PyString_AsString( str.get() ) );
+        buf.appendAscii( PyBytes_AsString( valueRep.get())).appendAscii( ", traceback follows\n" );
+        buf.appendAscii( PyBytes_AsString( str.get() ) );
         throw RuntimeException( buf.makeStringAndClear(), Reference< XInterface > () );
     }
     PyRef dict( PyModule_GetDict( module.get() ) );
@@ -438,7 +437,11 @@ PyRef Runtime::any2PyObject (const Any &a ) const
 	{
         sal_Int32 l = 0;
         a >>= l;
+#if PY_MAJOR_VERSION >= 3
+        return PyRef( PyLong_FromLong (l), SAL_NO_ACQUIRE );
+#else
         return PyRef( PyInt_FromLong (l), SAL_NO_ACQUIRE );
+#endif
 	}
     case typelib_TypeClass_UNSIGNED_LONG:
 	{
@@ -659,6 +662,7 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
     {
 
     }
+#if PY_MAJOR_VERSION < 3	// Python 3 has no PyInt
     else if (PyInt_Check (o))
     {
         if( o == Py_True )
@@ -690,6 +694,7 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
             }
         }
     }
+#endif				// Python 3 has no PyInt
     else if (PyLong_Check (o))
     {
         sal_Int64 l = (sal_Int64)PyLong_AsLong (o);
@@ -719,7 +724,7 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
         double d = PyFloat_AsDouble (o);
         a <<= d;
     }
-    else if (PyString_Check (o))
+    else if (PyBytes_Check (o))
 	a <<= pyString2ustring(o);
     else if( PyUnicode_Check( o ) )
 	a <<= pyString2ustring(o);
@@ -740,10 +745,10 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
         {
             PyRef str(PyObject_GetAttrString( o , const_cast< char * >("value") ),SAL_NO_ACQUIRE);
             Sequence< sal_Int8 > seq;
-            if( PyString_Check( str.get() ) )
+            if( PyBytes_Check( str.get() ) )
             {
                 seq = Sequence<sal_Int8 > (
-                    (sal_Int8*) PyString_AsString(str.get()), PyString_Size(str.get()));
+                    (sal_Int8*) PyBytes_AsString(str.get()), PyBytes_Size(str.get()));
             }
             a <<= seq;                                                          
         }
@@ -876,7 +881,7 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
                 OUStringBuffer buf;
                 buf.appendAscii( "Couldn't convert " );
                 PyRef reprString( PyObject_Str( o ) , SAL_NO_ACQUIRE );
-                buf.appendAscii( PyString_AsString( reprString.get() ) );
+                buf.appendAscii( PyBytes_AsString( reprString.get() ) );
                 buf.appendAscii( " to a UNO type" );
                 throw RuntimeException( buf.makeStringAndClear(), Reference< XInterface > () );
             }
@@ -906,14 +911,14 @@ Any Runtime::extractUnoException( const PyRef & excType, const PyRef &excValue, 
             else
             {
                 str = PyRef(
-                    PyString_FromString( "Couldn't find uno._uno_extract_printable_stacktrace" ),
+                    PyBytes_FromString( "Couldn't find uno._uno_extract_printable_stacktrace" ),
                     SAL_NO_ACQUIRE );
             }
         }
         else
         {
             str = PyRef(
-                PyString_FromString( "Couldn't find uno.py, no stacktrace available" ),
+                PyBytes_FromString( "Couldn't find uno.py, no stacktrace available" ),
                 SAL_NO_ACQUIRE );
         }
 
@@ -921,7 +926,7 @@ Any Runtime::extractUnoException( const PyRef & excType, const PyRef &excValue, 
     else
     {
         // it may occur, that no traceback is given (e.g. only native code below)
-        str = PyRef( PyString_FromString( "no traceback available" ), SAL_NO_ACQUIRE);
+        str = PyRef( PyBytes_FromString( "no traceback available" ), SAL_NO_ACQUIRE);
     }
     
     if( isInstanceOfStructOrException( excValue.get() ) )
@@ -934,7 +939,7 @@ Any Runtime::extractUnoException( const PyRef & excType, const PyRef &excValue, 
         PyRef typeName( PyObject_Str( excType.get() ), SAL_NO_ACQUIRE );
         if( typeName.is() )
         {
-            buf.appendAscii( PyString_AsString( typeName.get() ) );
+            buf.appendAscii( PyBytes_AsString( typeName.get() ) );
         }
         else
         {
@@ -944,7 +949,7 @@ Any Runtime::extractUnoException( const PyRef & excType, const PyRef &excValue, 
         PyRef valueRep( PyObject_Str( excValue.get() ), SAL_NO_ACQUIRE );
         if( valueRep.is() )
         {
-            buf.appendAscii( PyString_AsString( valueRep.get()));
+            buf.appendAscii( PyBytes_AsString( valueRep.get()));
         }
         else
         {
@@ -953,7 +958,7 @@ Any Runtime::extractUnoException( const PyRef & excType, const PyRef &excValue, 
         buf.appendAscii( ", traceback follows\n" );
         if( str.is() )
         {
-            buf.appendAscii( PyString_AsString( str.get() ) );
+            buf.appendAscii( PyBytes_AsString( str.get() ) );
         }
         else
         {

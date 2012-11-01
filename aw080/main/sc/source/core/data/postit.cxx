@@ -344,8 +344,11 @@ void ScCaptionCreator::UpdateCaptionPos( const basegfx::B2DRange* pVisRange )
     if(!rOldTailPos.equal(aTailPos))
     {
         // create drawing undo action
-        if( pDrawLayer && pDrawLayer->IsRecording() )
-            pDrawLayer->AddCalcUndo( pDrawLayer->GetSdrUndoFactory().CreateUndoGeoObject( *mpCaption ) );
+        if( pDrawLayer )
+            if( pDrawLayer->IsUndoAllowed() )
+                if( pDrawLayer->IsRecording() )
+                    pDrawLayer->AddCalcUndo( pDrawLayer->GetSdrUndoFactory().CreateUndoGeoObject( *mpCaption ) );
+
         // calculate new caption rectangle (#i98141# handle LTR<->RTL switch correctly)
         basegfx::B2DRange aCaptRange(sdr::legacy::GetLogicRange(*mpCaption));
         double fDiffX((rOldTailPos.getX() >= 0.0) ? (aCaptRange.getMinX() - rOldTailPos.getX()) : (rOldTailPos.getX() - aCaptRange.getMaxX()));
@@ -365,7 +368,7 @@ void ScCaptionCreator::UpdateCaptionPos( const basegfx::B2DRange* pVisRange )
     {
         // create drawing undo action
         if( pDrawLayer && pDrawLayer->IsRecording() )
-            pDrawLayer->AddCalcUndo( new ScUndoObjData( mpCaption, pCaptData->maStart, pCaptData->maEnd, maPos, pCaptData->maEnd ) );
+            pDrawLayer->AddCalcUndo< ScUndoObjData >(mpCaption, pCaptData->maStart, pCaptData->maEnd, maPos, pCaptData->maEnd );
         // set new position
         pCaptData->maStart = maPos;
     }
@@ -740,8 +743,9 @@ void ScPostIt::CreateCaption( const ScAddress& rPos, const SdrCaptionObj* pCapti
 
         // create undo action
         if( ScDrawLayer* pDrawLayer = mrDoc.GetDrawLayer() )
-            if( pDrawLayer->IsRecording() )
-                pDrawLayer->AddCalcUndo( pDrawLayer->GetSdrUndoFactory().CreateUndoNewObject( *maNoteData.mpCaption ) );
+                if( pDrawLayer->IsUndoAllowed() )
+                    if( pDrawLayer->IsRecording() )
+                        pDrawLayer->AddCalcUndo( pDrawLayer->GetSdrUndoFactory().CreateUndoNewObject( *maNoteData.mpCaption ) );
     }
 }
 
@@ -761,7 +765,7 @@ void ScPostIt::RemoveCaption()
         if( pDrawPage )
         {
             // create drawing undo action (before removing the object to have valid draw page in undo action)
-            bool bRecording = ( pDrawLayer && pDrawLayer->IsRecording() );
+            bool bRecording = ( pDrawLayer && pDrawLayer->IsUndoAllowed() && pDrawLayer->IsRecording() );
             if( bRecording )
                 pDrawLayer->AddCalcUndo( pDrawLayer->GetSdrUndoFactory().CreateUndoDeleteObject( *maNoteData.mpCaption ) );
             // remove the object from the drawing page, delete if undo is disabled

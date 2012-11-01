@@ -193,7 +193,7 @@ namespace binfilter {
 /*N*/ 		Matrix4D aRotMat;
 /*N*/ 
 /*N*/ 		// Skalierung vorbereiten
-/*N*/ 		double fScalePerStep;
+/*N*/ 		double fScalePerStep(0.0);
 /*N*/ 		if(GetBackScale() != 100)
 /*N*/ 			fScalePerStep = (((double)GetBackScale() - 100.0) / 100.0) / (double)GetHorizontalSegments();
 /*N*/ 

@@ -1684,8 +1684,8 @@ bool MSWordExportBase::GetBookmarks( const SwTxtNode& rNd, xub_StrLen nStt,
             xub_StrLen nBEnd = pMark->GetMarkEnd().nContent.GetIndex();
 
             // Keep only the bookmars starting or ending in the snippet
-            bool bIsStartOk = ( nBStart >= nStt ) && ( nBStart <= nEnd );
-            bool bIsEndOk = ( nBEnd >= nStt ) && ( nBEnd <= nEnd );
+            bool bIsStartOk = ( pMark->GetMarkStart().nNode == nNd ) && ( nBStart >= nStt ) && ( nBStart <= nEnd );
+            bool bIsEndOk = ( pMark->GetMarkEnd().nNode == nNd ) && ( nBEnd >= nStt ) && ( nBEnd <= nEnd );
 
             if ( bIsStartOk || bIsEndOk )
                 rArr.push_back( pMark );
@@ -1955,7 +1955,7 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
                     if ( pTOXSect )
                     {
                         m_aCurrentCharPropStarts.pop();
-                        AttrOutput().EndTOX( *pTOXSect );
+                        AttrOutput().EndTOX( *pTOXSect ,false);
                     }
                     WriteCR( pTextNodeInfoInner );
                 }
@@ -1993,14 +1993,13 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
                 aAttrIter.OutFlys( nEnd );
                 // insert final bookmarks if any before CR and after flys
                 AppendBookmarks( rNode, nEnd, 1 );
+                WriteCR( pTextNodeInfoInner );
 
                 if ( pTOXSect )
                 {
                     m_aCurrentCharPropStarts.pop();
                     AttrOutput().EndTOX( *pTOXSect );
                 }
-
-                WriteCR( pTextNodeInfoInner );
 
                 if ( bRedlineAtEnd )
                 {
@@ -2523,7 +2522,8 @@ void MSWordExportBase::OutputSectionNode( const SwSectionNode& rSectionNode )
 
     SwNodeIndex aIdx( rSectionNode, 1 );
     const SwNode& rNd = aIdx.GetNode();
-    if ( !rNd.IsSectionNode() && !IsInTable() ) //No sections in table
+    if ( !rNd.IsSectionNode() && !IsInTable() 
+		&& rSection.GetType() != TOX_CONTENT_SECTION && rSection.GetType() != TOX_HEADER_SECTION) //No sections in table
     {
         // Bug 74245 - if the first Node inside the section has an own
         //              PageDesc or PageBreak attribut, then dont write

@@ -381,18 +381,26 @@ BOOL EnhWMFReader::ReadEnhWMF()
 						*pWMF >> nPoints;
 						pnPoints[ i ] = (UINT16)nPoints;
 					}
-					// Polygonpunkte holen:
-					pPtAry  = (Point*) new char[ nGesPoints * sizeof(Point) ];
-	
-					for ( i = 0; i < nGesPoints; i++ )
+
+					PolyPolygon aPolyPoly((UINT16)nPoly, (UINT16)nPoly);
+                    
+                    for ( i = 0; i < nPoly; i++ )
 					{
-						*pWMF >> nX32 >> nY32;
-						pPtAry[ i ] = Point( nX32, nY32 );
-					}
-					// PolyPolygon Actions erzeugen
-					PolyPolygon aPolyPoly( (UINT16)nPoly, pnPoints, pPtAry );
+                        const sal_uInt16 nPointCount(pnPoints[i]);
+    					pPtAry = new Point[nPointCount];
+
+                        for(sal_uInt16 j(0); j < nPointCount; j++)
+                        {
+						    *pWMF >> nX32 >> nY32;
+						    pPtAry[j] = Point( nX32, nY32 );
+                        }
+
+                        aPolyPoly.Insert(Polygon(nPointCount, pPtAry));
+                        delete[] pPtAry;
+                    }
+
+                    // PolyPolygon Actions erzeugen
 					pOut->DrawPolyPolygon( aPolyPoly, bRecordPath );
-					delete[] (char*) pPtAry;
 					delete[] pnPoints;
 				}
 			}
@@ -1116,18 +1124,26 @@ BOOL EnhWMFReader::ReadEnhWMF()
 						*pWMF >> nPoints;
 						pnPoints[ i ] = (UINT16)nPoints;
 					}
-					// Polygonpunkte holen:
-					pPtAry  = (Point*) new char[ nGesPoints * sizeof(Point) ];
-					for ( i = 0; i < nGesPoints; i++ )
+					
+					PolyPolygon aPolyPoly((UINT16)nPoly, (UINT16)nPoly);
+
+                    for ( i = 0; i < nPoly; i++ )
 					{
-						*pWMF >> nX16 >> nY16;
-						pPtAry[ i ] = Point( nX16, nY16 );
-					}
+                        const sal_uInt16 nPointCount(pnPoints[i]);
+			            pPtAry = new Point[nPointCount];
+
+                        for(sal_uInt16 j(0); j < nPointCount; j++)
+                        {
+						    *pWMF >> nX16 >> nY16;
+						    pPtAry[j] = Point( nX16, nY16 );
+                        }
+                
+                        aPolyPoly.Insert(Polygon(nPointCount, pPtAry));
+                        delete[] pPtAry;
+                    }
 	
 					// PolyPolygon Actions erzeugen
-					PolyPolygon aPolyPoly( (UINT16)nPoly, pnPoints, pPtAry );
 					pOut->DrawPolyPolygon( aPolyPoly, bRecordPath );
-					delete[] (char*) pPtAry;
 					delete[] pnPoints;
 				}
 			}

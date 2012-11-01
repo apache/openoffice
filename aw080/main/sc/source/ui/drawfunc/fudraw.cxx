@@ -535,6 +535,10 @@ sal_Bool __EXPORT FuDraw::KeyInput(const KeyEvent& rKEvt)
 
 						aMove *= aLogicOnePix;
 					}
+					else if(rKEvt.GetKeyCode().IsShift()) // #121236# Support for shift key in calc
+					{
+						aMove *= 1000.0;
+					}
 					else
 					{
 						// old, fixed move distance

@@ -113,8 +113,8 @@
 #include <com/sun/star/text/XText.hpp>
 #include <com/sun/star/sheet/XLabelRanges.hpp>
 #include <com/sun/star/sheet/XLabelRange.hpp>
-#include <com/sun/star/sheet/XNamedRanges.hpp>
-#include <com/sun/star/sheet/XNamedRange.hpp>
+#include <com/sun/star/sheet/XNamedRanges2.hpp>
+#include <com/sun/star/sheet/XNamedRange2.hpp>
 #include <com/sun/star/sheet/XCellRangeReferrer.hpp>
 #include <com/sun/star/sheet/NamedRangeFlag.hpp>
 #include <com/sun/star/container/XNamed.hpp>
@@ -1833,16 +1833,19 @@ void ScXMLExport::_ExportContent()
                         }
                         else
                             ExportFormatRanges(0, 0, pSharedData->GetLastColumn(nTable), pSharedData->GetLastRow(nTable), nTable);
-                        CloseRow(pSharedData->GetLastRow(nTable));
-                        nEqualCells = 0;
-                    }
-                }
-            }
-            IncrementProgressBar(sal_False);
+
+						CloseRow(pSharedData->GetLastRow(nTable));
+						WriteNamedExpressions(xSpreadDoc, nTable);
+						nEqualCells = 0;
+					}
+				}
+			}
+			
+			IncrementProgressBar(sal_False);
         }
     }
     WriteExternalRefCaches();
-    WriteNamedExpressions(xSpreadDoc);
+    WriteNamedExpressions(xSpreadDoc, MAXTABCOUNT);
     aExportDatabaseRanges.WriteDatabaseRanges(xSpreadDoc);
     ScXMLExportDataPilot aExportDataPilot(*this);
     aExportDataPilot.WriteDataPilots(xSpreadDoc);
@@ -2955,7 +2958,7 @@ void ScXMLExport::WriteCell(ScMyCell& aCell, sal_Int32 nEqualCellCount)
 				{
                     const formula::FormulaGrammar::Grammar eGrammar = pDoc->GetStorageGrammar();
                     sal_uInt16 nNamespacePrefix = (eGrammar == formula::FormulaGrammar::GRAM_ODFF ? XML_NAMESPACE_OF : XML_NAMESPACE_OOOC);
-					pFormulaCell->GetFormula(sFormula, eGrammar);
+					pFormulaCell->GetFormula(sFormula, eGrammar);//ange scope name support
 					rtl::OUString sOUFormula(sFormula.makeStringAndClear());
 					if (!bIsMatrix)
                     {
@@ -3886,16 +3889,16 @@ void ScXMLExport::WriteLabelRanges( const uno::Reference< container::XIndexAcces
 	}
 }
 
-void ScXMLExport::WriteNamedExpressions(const com::sun::star::uno::Reference <com::sun::star::sheet::XSpreadsheetDocument>& xSpreadDoc)
+void ScXMLExport::WriteNamedExpressions(const com::sun::star::uno::Reference <com::sun::star::sheet::XSpreadsheetDocument>& xSpreadDoc, sal_Int16 nWhichTable)
 {
 	uno::Reference <beans::XPropertySet> xPropertySet (xSpreadDoc, uno::UNO_QUERY);
 	if (xPropertySet.is())
 	{
-        uno::Reference <sheet::XNamedRanges> xNamedRanges(xPropertySet->getPropertyValue(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(SC_UNO_NAMEDRANGES))), uno::UNO_QUERY);
+        uno::Reference <sheet::XNamedRanges2> xNamedRanges(xPropertySet->getPropertyValue(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(SC_UNO_NAMEDRANGES))), uno::UNO_QUERY);
 		CheckAttrList();
 		if (xNamedRanges.is())
 		{
-			uno::Sequence <rtl::OUString> aRangesNames(xNamedRanges->getElementNames());
+			uno::Sequence <sheet::RangeScopeName> aRangesNames(xNamedRanges->getElementScopeNames());//modified 20091211, range scope name support
 			sal_Int32 nNamedRangesCount(aRangesNames.getLength());
 			if (nNamedRangesCount > 0)
 			{
@@ -3906,8 +3909,21 @@ void ScXMLExport::WriteNamedExpressions(const com::sun::star::uno::Reference <co
 					for (sal_Int32 i = 0; i < nNamedRangesCount; ++i)
 					{
 						CheckAttrList();
-						rtl::OUString sNamedRange(aRangesNames[i]);
-                        uno::Reference <sheet::XNamedRange> xNamedRange(xNamedRanges->getByName(sNamedRange), uno::UNO_QUERY);
+						//range scope name support -start
+						rtl::OUString sNamedRange(aRangesNames[i].RangeName);
+						rtl::OUString sRangeScope(aRangesNames[i].ScopeName);
+						SCTAB nScopeNumber = MAXTABCOUNT;
+						String sScopeStr(sRangeScope);
+						if(sScopeStr !=EMPTY_STRING)
+						{
+							pDoc->GetTable(sScopeStr,nScopeNumber);
+							if( nWhichTable != nScopeNumber || nScopeNumber ==MAXTABCOUNT)
+								continue;
+						}
+						else if( nWhichTable !=MAXTABCOUNT)
+							continue;
+                        uno::Reference <sheet::XNamedRange2> xNamedRange(xNamedRanges->getByScopeName(sRangeScope,sNamedRange), uno::UNO_QUERY);
+						//range scope name support 
 						if (xNamedRange.is())
 						{
 							uno::Reference <container::XNamed> xNamed (xNamedRange, uno::UNO_QUERY);
@@ -3915,8 +3931,9 @@ void ScXMLExport::WriteNamedExpressions(const com::sun::star::uno::Reference <co
 							if (xNamed.is() && xCellRangeReferrer.is())
 							{
 								rtl::OUString sOUName(xNamed->getName());
+							
 								AddAttribute(sAttrName, sOUName);
-
+								
 								OUString sOUBaseCellAddress;
 								ScRangeStringConverter::GetStringFromAddress( sOUBaseCellAddress,
 									xNamedRange->getReferencePosition(), pDoc, FormulaGrammar::CONV_OOO, ' ', sal_False, SCA_ABS_3D );
@@ -3924,7 +3941,15 @@ void ScXMLExport::WriteNamedExpressions(const com::sun::star::uno::Reference <co
 
 								sal_uInt16 nRangeIndex;
 								String sName(sOUName);
-								pNamedRanges->SearchName(sName, nRangeIndex);
+								//range scope name support -start
+								SCTAB nScopeName = MAXTABCOUNT;
+								String sScopeName(sRangeScope);
+								if(sScopeName !=EMPTY_STRING)
+								{
+									pDoc->GetTable(sScopeName,nScopeName);
+								}
+								pNamedRanges->SearchName(sName, nRangeIndex,nScopeName);
+								//range scope name support - end
 								ScRangeData* pNamedRange((*pNamedRanges)[nRangeIndex]); //should get directly and not with ScDocument
 								String sContent;
 								pNamedRange->GetSymbol(sContent, pDoc->GetStorageGrammar());

@@ -282,7 +282,8 @@ void SwRTFParser::SetFlysInDoc()
 
 		// liegt Ende und Start vom Naechsten im gleichen Node, dann muss
 		// gesplittet werden
-		if( n + 1 < aFlyArr.Count() && pFlySave->nEndCnt &&
+        if (((static_cast<size_t>(n) + 1) < aFlyArr.Count()) &&
+            pFlySave->nEndCnt &&
 			pFlySave->nEndNd == aFlyArr[ n + 1 ]->nSttNd )
 		{
             SwCntntNode *const pCNd = pFlySave->nEndNd.GetNode().GetCntntNode();
@@ -1256,28 +1257,33 @@ void SwRTFParser::InsPicture( const String& rGrfNm, const Graphic* pGrf,
     if ( bReadSwFly && !mbReadCellWhileReadSwFly )
     // <--
 	{
-		// erzeuge nur einen normalen GrafikNode und ersetze diesen gegen
-		// den vorhandenen Textnode
-		SwNodeIndex& rIdx = pPam->GetPoint()->nNode;
-		pGrfNd = pDoc->GetNodes().MakeGrfNode( rIdx,
-					rGrfNm, aEmptyStr,    // Name der Graphic !!
-					pGrf,
-					(SwGrfFmtColl*)pDoc->GetDfltGrfFmtColl() );
+        OSL_ENSURE(aFlyArr.Count(),
+            "SwRTFParser::InsPicture: fly array empty.");
+        if (aFlyArr.Count())
+        {
+		    // erzeuge nur einen normalen GrafikNode und ersetze diesen gegen
+		    // den vorhandenen Textnode
+		    SwNodeIndex& rIdx = pPam->GetPoint()->nNode;
+		    pGrfNd = pDoc->GetNodes().MakeGrfNode( rIdx,
+					    rGrfNm, aEmptyStr,    // Name der Graphic !!
+					    pGrf,
+					    (SwGrfFmtColl*)pDoc->GetDfltGrfFmtColl() );
 
-		if( pGrfAttrSet )
-			pGrfNd->SetAttr( *pGrfAttrSet );
+		    if( pGrfAttrSet )
+			    pGrfNd->SetAttr( *pGrfAttrSet );
 
-		SwFlySave* pFlySave = aFlyArr[ aFlyArr.Count()-1 ];
-		pFlySave->nSttNd = rIdx.GetIndex() - 1;
+		    SwFlySave* pFlySave = aFlyArr[ aFlyArr.Count()-1 ];
+		    pFlySave->nSttNd = rIdx.GetIndex() - 1;
 
-		if( 1 < aFlyArr.Count() )
-		{
-			pFlySave = aFlyArr[ aFlyArr.Count() - 2 ];
-			if( pFlySave->nEndNd == rIdx )
-				pFlySave->nEndNd = rIdx.GetIndex() - 1;
-		}
+		    if( 1 < aFlyArr.Count() )
+		    {
+			    pFlySave = aFlyArr[ aFlyArr.Count() - 2 ];
+			    if( pFlySave->nEndNd == rIdx )
+				    pFlySave->nEndNd = rIdx.GetIndex() - 1;
+		    }
 
-        pGrfNd->onGraphicChanged();
+            pGrfNd->onGraphicChanged();
+        }
 	}
 	else
 	{

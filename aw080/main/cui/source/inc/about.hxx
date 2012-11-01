@@ -38,15 +38,17 @@ class AboutDialog : public SfxModalDialog
 {
 private:
     OKButton            maOKButton;
+    PushButton          maReadmeButton;
     FixedInfo           maVersionText;
     MultiLineEdit       maBuildInfoEdit;
     MultiLineEdit       maCopyrightEdit;
     svt::FixedHyperlink maCreditsLink;
 
-    Image               maAppLogo;
-
     String              maCopyrightTextStr;
     rtl::OUString       maVersionData;
+
+    Image               maMainLogo;
+    Image               maAppLogo;
 
     void                InitControls();
     void                ApplyStyleSettings();
@@ -54,8 +56,11 @@ private:
 
     const rtl::OUString GetBuildId() const;
     const rtl::OUString GetBuildVersionString() const;
+    Point               maAppLogoPos;
+    Point               maMainLogoPos;
 
     DECL_DLLPRIVATE_LINK(OpenLinkHdl_Impl, svt::FixedHyperlink* );
+    DECL_DLLPRIVATE_LINK(ShowReadme_Impl, PushButton* );
 
 protected:
     virtual sal_Bool    Close();

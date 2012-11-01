@@ -388,9 +388,18 @@
 #define SC_OPCODE_NUMBERVALUE       392
 #define SC_OPCODE_CHISQ_DIST        393
 #define SC_OPCODE_CHISQ_INV         394
-#define SC_OPCODE_STOP_2_PAR        395
+#define SC_OPCODE_AVERAGE_IF        395
+#define SC_OPCODE_XOR               396
+#define SC_OPCODE_SUM_IFS           397
+#define SC_OPCODE_AVERAGE_IFS       398
+#define SC_OPCODE_COUNT_IFS         399
+#define SC_OPCODE_LENB              400
+#define SC_OPCODE_RIGHTB            401
+#define SC_OPCODE_LEFTB             402
+#define SC_OPCODE_MIDB              403
+#define SC_OPCODE_STOP_2_PAR        404
 
-#define SC_OPCODE_LAST_OPCODE_ID    394      /* last OpCode */
+#define SC_OPCODE_LAST_OPCODE_ID    403      /* last OpCode */
 
 /*** Interna ***/
 #define SC_OPCODE_INTERNAL_BEGIN   9999

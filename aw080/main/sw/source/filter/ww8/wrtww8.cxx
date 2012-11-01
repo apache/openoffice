@@ -33,6 +33,9 @@
 
 #include <algorithm>
 
+#include <map>
+#include <set>
+
 #include <hintids.hxx>
 #include <string.h>             // memcpy()
 #include <osl/endian.h>
@@ -117,6 +120,7 @@
 #include <osl/time.h>
 #include <rtl/random.h>
 #include "WW8Sttbf.hxx"
+#include <editeng/charrotateitem.hxx>
 #include "WW8FibData.hxx"
 
 using namespace sw::util;
@@ -186,29 +190,142 @@ public:
     WW8_FC GetStartFc() const       { return nStartFc; }
 };
 
+typedef std::map<String,long> BKMKNames;
+typedef BKMKNames::iterator BKMKNmItr;
+typedef std::pair<bool,String> BKMK;
+typedef std::pair<long,BKMK> BKMKCP;
+typedef std::multimap<long,BKMKCP*> BKMKCPs;
+typedef BKMKCPs::iterator CPItr;
+
 class WW8_WrtBookmarks
 {
 private:
-    SvULongs aSttCps, aEndCps;      // Array of Start- and End CPs
-    SvBools aFieldMarks;       // If the bookmark is in a field result
-    std::vector<String> maSwBkmkNms;    // Array of Sw - Bookmarknames
-    typedef std::vector<String>::iterator myIter;
-
-    sal_uInt16 GetPos( const String& rNm );
-
-    //No copying
+    BKMKCPs aSttCps,aEndCps;
+    BKMKNames maSwBkmkNms;
     WW8_WrtBookmarks(const WW8_WrtBookmarks&);
     WW8_WrtBookmarks& operator=(const WW8_WrtBookmarks&);
+
 public:
     WW8_WrtBookmarks();
     ~WW8_WrtBookmarks();
-
     void Append( WW8_CP nStartCp, const String& rNm, const ::sw::mark::IMark* pBkmk=NULL );
     void Write( WW8Export& rWrt );
     void MoveFieldMarks(sal_uLong nFrom,sal_uLong nTo);
-
-//  String GetWWBkmkName( const String& rName ) const;
 };
+
+WW8_WrtBookmarks::WW8_WrtBookmarks()
+{}
+
+WW8_WrtBookmarks::~WW8_WrtBookmarks()
+{
+    CPItr aEnd = aSttCps.end();
+    for (CPItr aItr = aSttCps.begin();aItr!=aEnd;aItr++) 
+    {
+        if (aItr->second)
+        {
+            delete aItr->second;
+            aItr->second = NULL;
+        }
+    }
+}
+
+void WW8_WrtBookmarks::Append( WW8_CP nStartCp, const String& rNm, const ::sw::mark::IMark*)
+{
+    std::pair<BKMKNmItr,bool> aResult = maSwBkmkNms.insert(std::pair<String,long>(rNm,0L));
+    if (aResult.second)
+    {
+        BKMK aBK(false,rNm);
+        BKMKCP* pBKCP = new BKMKCP((long)nStartCp,aBK);
+        aSttCps.insert(std::pair<long,BKMKCP*>(nStartCp,pBKCP));
+        aResult.first->second = (long)nStartCp;
+    }
+    else
+    {
+        std::pair<CPItr,CPItr> aRange = aSttCps.equal_range(aResult.first->second);
+        for (CPItr aItr = aRange.first;aItr != aRange.second;aItr++)
+        {
+            if (aItr->second && aItr->second->second.second == rNm)
+            {
+                if (aItr->second->second.first)
+                    nStartCp--;
+                aItr->second->first = (long)nStartCp;
+                break;
+            }
+        }
+    }
+}
+
+void WW8_WrtBookmarks::Write( WW8Export& rWrt)
+{
+    if (!aSttCps.size())
+        return;
+    CPItr aItr;
+    long n;
+    std::vector<String> aNames;
+    SvMemoryStream aTempStrm1(65535,65535);
+    SvMemoryStream aTempStrm2(65535,65535);
+    for (aItr = aSttCps.begin();aItr!=aSttCps.end();aItr++)
+    {
+        if (aItr->second)
+        {
+            aEndCps.insert(std::pair<long,BKMKCP*>(aItr->second->first,aItr->second));
+            aNames.push_back(aItr->second->second.second);
+            SwWW8Writer::WriteLong( aTempStrm1, aItr->first);
+        }
+    }
+
+    aTempStrm1.Seek(0L);
+    for (aItr = aEndCps.begin(), n = 0;aItr != aEndCps.end();aItr++,n++)
+    {
+        if (aItr->second)
+        {
+            aItr->second->first = n;
+            SwWW8Writer::WriteLong( aTempStrm2, aItr->first);
+        }
+    }
+
+    aTempStrm2.Seek(0L);
+    rWrt.WriteAsStringTable(aNames, rWrt.pFib->fcSttbfbkmk,rWrt.pFib->lcbSttbfbkmk);
+    SvStream& rStrm = rWrt.bWrtWW8 ? *rWrt.pTableStrm : rWrt.Strm();
+    rWrt.pFib->fcPlcfbkf = rStrm.Tell();
+    rStrm<<aTempStrm1;
+    SwWW8Writer::WriteLong(rStrm, rWrt.pFib->ccpText + rWrt.pFib->ccpTxbx);
+    for (aItr = aSttCps.begin();aItr!=aSttCps.end();aItr++)
+    {
+        if (aItr->second)
+        {
+            SwWW8Writer::WriteLong(rStrm, aItr->second->first);
+        }
+    }
+    rWrt.pFib->lcbPlcfbkf = rStrm.Tell() - rWrt.pFib->fcPlcfbkf;
+    rWrt.pFib->fcPlcfbkl = rStrm.Tell();
+    rStrm<<aTempStrm2;
+    SwWW8Writer::WriteLong(rStrm, rWrt.pFib->ccpText + rWrt.pFib->ccpTxbx);
+    rWrt.pFib->lcbPlcfbkl = rStrm.Tell() - rWrt.pFib->fcPlcfbkl;
+}
+
+void WW8_WrtBookmarks::MoveFieldMarks(sal_uLong nFrom,sal_uLong nTo)
+{
+    std::pair<CPItr,CPItr> aRange = aSttCps.equal_range(nFrom);
+    CPItr aItr = aRange.first;
+    while (aItr != aRange.second)
+    {
+        if (aItr->second)
+        {
+            if (aItr->second->first == nFrom)
+            {
+                aItr->second->second.first = true;
+                aItr->second->first = nTo;
+            }
+            aSttCps.insert(std::pair<long,BKMKCP*>(nTo,aItr->second));
+            aItr->second = NULL;
+            aRange = aSttCps.equal_range(nFrom);
+            aItr = aRange.first;
+            continue;
+        }
+        aItr++;
+    }
+}
 
 #define ANZ_DEFAULT_STYLES 16
 
@@ -1252,136 +1369,6 @@ WW8_CP WW8_WrPct::Fc2Cp( sal_uLong nFc ) const
     return nFc + pPcts->GetObject( pPcts->Count() - 1 )->GetStartCp();
 }
 
-//--------------------------------------------------------------------------
-/*  */
-
-WW8_WrtBookmarks::WW8_WrtBookmarks()
-    : aSttCps( 0, 16 ), aEndCps( 0, 16 )
-{
-}
-
-WW8_WrtBookmarks::~WW8_WrtBookmarks()
-{
-}
-
-void WW8_WrtBookmarks::Append( WW8_CP nStartCp, const String& rNm,  const ::sw::mark::IMark* )
-{
-    sal_uInt16 nPos = GetPos( rNm );
-    if( USHRT_MAX == nPos )
-    {
-        // new -> insert as start position
-        nPos = aSttCps.Count();
-        myIter aIter = maSwBkmkNms.end();
-        // sort by startposition
-        //      theory: write continuous -> then the new position is at end
-        while( nPos && aSttCps[ nPos - 1 ] > sal_uLong( nStartCp ))
-        {
-            --nPos;
-            --aIter;
-        }
-
-        aSttCps.Insert(nStartCp, nPos);
-        aEndCps.Insert(nStartCp, nPos);
-        aFieldMarks.insert(aFieldMarks.begin() + nPos, sal_Bool(false));
-        maSwBkmkNms.insert(aIter, rNm);
-    }
-    else
-    {
-        // old -> its the end position
-        ASSERT( aEndCps[ nPos ] == aSttCps[ nPos ], "end position is valid" );
-
-        //If this bookmark was around a field in writer, then we want to move
-        //it to the field result in word. The end is therefore one cp
-        //backwards from the 0x15 end mark that was inserted.
-        if (aFieldMarks[nPos])
-            --nStartCp;
-
-        aEndCps.Replace( nStartCp, nPos );
-    }
-}
-
-
-void WW8_WrtBookmarks::Write( WW8Export& rWrt )
-{
-    sal_uInt16 nCount = aSttCps.Count(), i;
-    if( nCount )
-    {
-        SvULongs aEndSortTab( 255 < nCount ? 255 : nCount, 4 );
-        // sort then endpositions
-        for( i = 0; i < nCount; ++i )
-        {
-            sal_uLong nCP = aEndCps[ i ];
-            sal_uInt16 nPos = i;
-            while( nPos && aEndSortTab[ nPos - 1 ] > nCP )
-                --nPos;
-            aEndSortTab.Insert( nCP, nPos );
-        }
-
-        // we have some bookmarks found in the document -> write them
-        // first the Bookmark Name Stringtable
-        rWrt.WriteAsStringTable(maSwBkmkNms, rWrt.pFib->fcSttbfbkmk,
-            rWrt.pFib->lcbSttbfbkmk);
-
-        // second the Bookmark start positions as pcf of longs
-        SvStream& rStrm = rWrt.bWrtWW8 ? *rWrt.pTableStrm : rWrt.Strm();
-        rWrt.pFib->fcPlcfbkf = rStrm.Tell();
-        for( i = 0; i < nCount; ++i )
-            SwWW8Writer::WriteLong( rStrm, aSttCps[ i ] );
-        SwWW8Writer::WriteLong(rStrm, rWrt.pFib->ccpText + rWrt.pFib->ccpTxbx);
-        for( i = 0; i < nCount; ++i )
-        {
-            sal_uLong nEndCP = aEndCps[ i ];
-            sal_uInt16 nPos = i;
-            if( aEndSortTab[ nPos ] > nEndCP )
-            {
-                while( aEndSortTab[ --nPos ] != nEndCP )
-                    ;
-            }
-            else if( aEndSortTab[ nPos ] < nEndCP )
-                while( aEndSortTab[ ++nPos ] != nEndCP )
-                    ;
-
-            SwWW8Writer::WriteLong( rStrm, nPos );
-        }
-        rWrt.pFib->lcbPlcfbkf = rStrm.Tell() - rWrt.pFib->fcPlcfbkf;
-
-        // third the Bookmark end positions
-        rWrt.pFib->fcPlcfbkl = rStrm.Tell();
-        for( i = 0; i < nCount; ++i )
-            SwWW8Writer::WriteLong( rStrm, aEndSortTab[ i ] );
-        SwWW8Writer::WriteLong(rStrm, rWrt.pFib->ccpText + rWrt.pFib->ccpTxbx);
-        rWrt.pFib->lcbPlcfbkl = rStrm.Tell() - rWrt.pFib->fcPlcfbkl;
-    }
-}
-
-sal_uInt16 WW8_WrtBookmarks::GetPos( const String& rNm )
-{
-    sal_uInt16 nRet = USHRT_MAX, n;
-    for (n = 0; n < aSttCps.Count(); ++n)
-        if (rNm == maSwBkmkNms[n])
-        {
-            nRet = n;
-            break;
-        }
-    return nRet;
-}
-
-void WW8_WrtBookmarks::MoveFieldMarks(sal_uLong nFrom, sal_uLong nTo)
-{
-    for (sal_uInt16 nI=0;nI<aSttCps.Count();++nI)
-    {
-        if (aSttCps[nI] == nFrom)
-        {
-            aSttCps[nI] = nTo;
-            if (aEndCps[nI] == nFrom)
-            {
-                aFieldMarks[nI] = true;
-                aEndCps[nI] = nTo;
-            }
-        }
-    }
-}
-
 void WW8Export::AppendBookmarks( const SwTxtNode& rNd,
     xub_StrLen nAktPos, xub_StrLen nLen )
 {
@@ -1930,7 +1917,7 @@ void WW8AttributeOutput::TableInfoRow( ww8::WW8TableNodeInfoInner::Pointer_t pTa
     }
 }
 
-static sal_uInt16 lcl_TCFlags(const SwTableBox * pBox, long nRowSpan)
+static sal_uInt16 lcl_TCFlags(SwDoc &rDoc, const SwTableBox * pBox, long nRowSpan)
 {
     sal_uInt16 nFlags = 0;
 
@@ -1952,6 +1939,31 @@ static sal_uInt16 lcl_TCFlags(const SwTableBox * pBox, long nRowSpan)
                 break;
             default:
                 break;
+        }
+		const SwStartNode * pSttNd = pBox->GetSttNd();
+		if(pSttNd)
+		{
+			SwNodeIndex aIdx( *pSttNd );
+			const SwCntntNode * pCNd = pSttNd->GetNodes().GoNext( &aIdx );
+			if( pCNd && pCNd->IsTxtNode())
+			{
+				SfxItemSet aCoreSet(rDoc.GetAttrPool(), RES_CHRATR_ROTATE, RES_CHRATR_ROTATE);
+				((SwTxtNode*)pCNd)->GetAttr( aCoreSet, 0, ((SwTxtNode*)pCNd)->GetTxt().Len());
+				const SvxCharRotateItem * pRotate = NULL;
+				const SfxPoolItem * pRotItem;
+				if ( SFX_ITEM_SET == aCoreSet.GetItemState(RES_CHRATR_ROTATE, sal_True, &pRotItem))
+				{
+					pRotate = (SvxCharRotateItem*)pRotItem;
+					if(pRotate && pRotate->GetValue() == 900)
+					{
+						nFlags = nFlags | 0x0004 | 0x0008;
+					}
+					else if(pRotate && pRotate->GetValue() == 2700 )
+					{
+						nFlags = nFlags | 0x0004 | 0x0010;
+					}
+				}
+			}
         }
     }
 
@@ -2248,7 +2260,7 @@ void WW8AttributeOutput::TableDefinition( ww8::WW8TableNodeInfoInner::Pointer_t 
         if ( m_rWW8Export.bWrtWW8 )
         {
             sal_uInt16 nFlags = 
-                lcl_TCFlags(pTabBox1, *aItRowSpans);
+                lcl_TCFlags(*m_rWW8Export.pDoc, pTabBox1, *aItRowSpans);
              m_rWW8Export.InsUInt16( nFlags );
         }
         
@@ -2535,22 +2547,42 @@ void MSWordExportBase::WriteText()
                 ;
             else if ( aIdx.GetNode().IsSectionNode() )
                 ;
-            else if ( !IsInTable() ) //No sections in table
+            else if ( !IsInTable() 
+				&& (rSect.GetType() != TOX_CONTENT_SECTION && rSect.GetType() != TOX_HEADER_SECTION )) //No sections in table
             {
-                ReplaceCr( (char)0xc ); // Indikator fuer Page/Section-Break
+       			//#120140# Do not need to insert a page/section break after a section end. Check this case first
+				sal_Bool bNeedExportBreakHere = sal_True;
+				if ( aIdx.GetNode().IsTxtNode() ) 
+				{
+					SwTxtNode *pTempNext = aIdx.GetNode().GetTxtNode();
+					if ( pTempNext ) 
+					{
+						const SfxPoolItem * pTempItem = NULL;
+						if (pTempNext->GetpSwAttrSet() && SFX_ITEM_SET == pTempNext->GetpSwAttrSet()->GetItemState(RES_PAGEDESC, false, &pTempItem) 
+							&& pTempItem && ((SwFmtPageDesc*)pTempItem)->GetRegisteredIn())
+						{
+							//Next node has a new page style which means this node is a section end. Do not insert another page/section break here
+							bNeedExportBreakHere = sal_False;
+						}
+					}
+				}
+				if (bNeedExportBreakHere)  //#120140# End of check
+				{
+					ReplaceCr( (char)0xc ); // Indikator fuer Page/Section-Break
 
-                const SwSectionFmt* pParentFmt = rSect.GetFmt()->GetParent();
-                if ( !pParentFmt )
-                    pParentFmt = (SwSectionFmt*)0xFFFFFFFF;
+					const SwSectionFmt* pParentFmt = rSect.GetFmt()->GetParent();
+					if ( !pParentFmt )
+						pParentFmt = (SwSectionFmt*)0xFFFFFFFF;
 
-                sal_uLong nRstLnNum;
-                if ( aIdx.GetNode().IsCntntNode() )
-                    nRstLnNum = ((SwCntntNode&)aIdx.GetNode()).GetSwAttrSet().
-                                            GetLineNumber().GetStartValue();
-                else
-                    nRstLnNum = 0;
+					sal_uLong nRstLnNum;
+					if ( aIdx.GetNode().IsCntntNode() )
+						nRstLnNum = ((SwCntntNode&)aIdx.GetNode()).GetSwAttrSet().
+												GetLineNumber().GetStartValue();
+					else
+						nRstLnNum = 0;
 
-                AppendSection( pAktPageDesc, pParentFmt, nRstLnNum );
+					AppendSection( pAktPageDesc, pParentFmt, nRstLnNum );
+				}
             }
         }
         else if ( pNd->IsStartNode() )
@@ -2731,10 +2763,9 @@ void WW8Export::WriteFkpPlcUsw()
             #10570# Similiarly having msvbasic storage seems to also trigger
             creating this stream
             */
-                // memory leak #i120098#, the unnamed obj will be released in destructor.
-                xEscherStg = GetWriter().GetStorage().OpenSotStorage(CREATE_CONST_ASC(SL::aObjectPool),
+            GetWriter().GetStorage().OpenSotStorage(CREATE_CONST_ASC(SL::aObjectPool),
                 STREAM_READWRITE | STREAM_SHARE_DENYALL);
-		}
+        }
 
         // dggInfo - escher stream
         WriteEscher();

@@ -1796,6 +1796,8 @@ SwPostItField::~SwPostItField()
 		m_pTextObject->DisposeEditSource();
 		m_pTextObject->release();
 	}
+
+	delete mpText;
 }
 
 /* ---------------------------------------------------------------------------

@@ -1876,6 +1876,22 @@ SwFrm* lcl_FormatNextCntntForKeep( SwTabFrm* pTabFrm )
     return pNxt;
 }
 
+namespace {
+    bool AreAllRowsKeepWithNext( const SwRowFrm* pFirstRowFrm )
+    {
+        bool bRet = pFirstRowFrm != 0 &&
+                    pFirstRowFrm->ShouldRowKeepWithNext();
+
+        while ( bRet && pFirstRowFrm->GetNext() != 0 )
+        {
+            pFirstRowFrm = dynamic_cast<const SwRowFrm*>(pFirstRowFrm->GetNext());
+            bRet = pFirstRowFrm != 0 &&
+                   pFirstRowFrm->ShouldRowKeepWithNext();
+        }
+
+        return bRet;
+    }
+}
 void SwTabFrm::MakeAll()
 {
 	if ( IsJoinLocked() || StackHack::IsLocked() || StackHack::Count() > 50 )
@@ -2420,11 +2436,17 @@ void SwTabFrm::MakeAll()
         // 2. If this row wants to keep, we need an additional row
         // 3. The table is allowed to split or we do not have an pIndPrev:
         //
-		SwFrm* pIndPrev = GetIndPrev();
+        SwFrm* pIndPrev = GetIndPrev();
         const SwRowFrm* pFirstNonHeadlineRow = GetFirstNonHeadlineRow();
+        // #120016# if this row wants to keep, allow split in case that all rows want to keep with next, 
+        // the table can not move forward as it is the first one and a split is in general allowed.
+        const bool bAllowSplitOfRow = ( bTableRowKeep && 
+                                        AreAllRowsKeepWithNext( pFirstNonHeadlineRow ) ) &&
+                                      !pIndPrev && 
+                                      !bDontSplit;
 
         if ( pFirstNonHeadlineRow && nUnSplitted > 0 &&
-             ( !bTableRowKeep || pFirstNonHeadlineRow->GetNext() || !pFirstNonHeadlineRow->ShouldRowKeepWithNext() ) &&
+             ( !bTableRowKeep || pFirstNonHeadlineRow->GetNext() || !pFirstNonHeadlineRow->ShouldRowKeepWithNext() || bAllowSplitOfRow ) &&
              ( !bDontSplit || !pIndPrev ) )
         {
             // --> FME 2004-06-03 #i29438#
@@ -2443,7 +2465,7 @@ void SwTabFrm::MakeAll()
 
             // 1. Try: bTryToSplit = true  => Try to split the row.
             // 2. Try: bTryToSplit = false => Split the table between the rows.
-			if ( pFirstNonHeadlineRow->GetNext() || bTryToSplit )
+            if ( pFirstNonHeadlineRow->GetNext() || bTryToSplit )
             {
                 SwTwips nDeadLine = (GetUpper()->*fnRect->fnGetPrtBottom)();
                 if( IsInSct() || GetUpper()->IsInTab() ) // TABLE IN TABLE)
@@ -2516,11 +2538,15 @@ void SwTabFrm::MakeAll()
                     // An existing follow flow line has to be removed.
                     //
                     if ( HasFollowFlowLine() )
-						RemoveFollowFlowLine();
+                    {
+                        RemoveFollowFlowLine();
+                    }
 
-                    const bool bSplitError = !Split( nDeadLine, bTryToSplit, bTableRowKeep );
-					if( !bTryToSplit && !bSplitError && nUnSplitted > 0 )
-						--nUnSplitted;
+                    const bool bSplitError = !Split( nDeadLine, bTryToSplit, ( bTableRowKeep && !bAllowSplitOfRow ) );
+                    if( !bTryToSplit && !bSplitError && nUnSplitted > 0 )
+                    {
+                        --nUnSplitted;
+                    }
 
                     // --> FME 2004-06-09 #i29771# Two tries to split the table:
                     // If an error occured during splitting. We start a second
@@ -2547,12 +2573,12 @@ void SwTabFrm::MakeAll()
                     {
                         lcl_RecalcRow( static_cast<SwRowFrm&>(*Lower()), LONG_MAX );
                         bValidPos = sal_False;
-    					bTryToSplit = false;
+                        bTryToSplit = false;
                         continue;
                     }
                     // <--
 
-  					bTryToSplit = !bSplitError;
+                    bTryToSplit = !bSplitError;
 
                     //Damit es nicht zu Oszillationen kommt, muss der
                     //Follow gleich gueltig gemacht werden.
@@ -2637,11 +2663,13 @@ void SwTabFrm::MakeAll()
         // Set to false again as early as possible.
         bLastRowHasToMoveToFollow = false;
 
-		if( IsInSct() && bMovedFwd && bMakePage && GetUpper()->IsColBodyFrm() &&
-			GetUpper()->GetUpper()->GetUpper()->IsSctFrm() &&
-			( GetUpper()->GetUpper()->GetPrev() || GetIndPrev() ) &&
-			((SwSectionFrm*)GetUpper()->GetUpper()->GetUpper())->MoveAllowed(this) )
-			bMovedFwd = sal_False;
+        if( IsInSct() && bMovedFwd && bMakePage && GetUpper()->IsColBodyFrm() &&
+            GetUpper()->GetUpper()->GetUpper()->IsSctFrm() &&
+            ( GetUpper()->GetUpper()->GetPrev() || GetIndPrev() ) &&
+            ((SwSectionFrm*)GetUpper()->GetUpper()->GetUpper())->MoveAllowed(this) )
+        {
+            bMovedFwd = sal_False;
+        }
 
         // --> FME 2004-06-09 #i29771# Reset bTryToSplit flag on change of upper
         const SwFrm* pOldUpper = GetUpper();

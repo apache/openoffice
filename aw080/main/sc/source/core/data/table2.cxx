@@ -1054,6 +1054,13 @@ void ScTable::GetString( SCCOL nCol, SCROW nRow, String& rString )
 		rString.Erase();
 }
 
+void  ScTable::FillDPCache( ScDPTableDataCache * pCache, SCCOL nStartCol, SCCOL nEndCol, SCROW nStartRow, SCROW nEndRow )
+{
+    for ( sal_uInt16 nCol = nStartCol; nCol <= nEndCol; nCol++ )
+        if( ValidCol( nCol ) )
+            aCol[nCol].FillDPCache( pCache, nCol - nStartCol, nStartRow, nEndRow );
+}
+
 
 void ScTable::GetInputString( SCCOL nCol, SCROW nRow, String& rString )
 {
@@ -1899,6 +1906,29 @@ void ScTable::ApplyPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol,
 	}
 }
 
+void ScTable::ApplyPooledPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow,
+									 const ScPatternAttr& rPooledAttr, const ScPatternAttr& rAttr )
+{
+	if (ValidColRow(nStartCol, nStartRow) && ValidColRow(nEndCol, nEndRow))
+	{
+		PutInOrder(nStartCol, nEndCol);
+		PutInOrder(nStartRow, nEndRow);
+		for (SCCOL i = nStartCol; i <= nEndCol; i++)
+		{
+			sal_Bool bSet = sal_True;
+			SCROW nStar, nEnd;
+			const ScPatternAttr* pAttr = aCol[i].GetPatternRange(nStar, nEnd, nStartRow);
+			if (nStar >nStartRow || nEnd < nEndRow || pAttr!=pDocument->GetDefPattern())
+				bSet = sal_False; 
+
+			if (bSet) 
+				aCol[i].SetPatternArea(nStartRow, nEndRow, rPooledAttr);				
+			else		
+				aCol[i].ApplyPatternArea(nStartRow, nEndRow, rAttr);
+		}
+	}
+}
+
 void ScTable::ApplyPatternIfNumberformatIncompatible( const ScRange& rRange,
 		const ScPatternAttr& rPattern, short nNewType )
 {
@@ -2310,6 +2340,16 @@ void ScTable::SetRowHeightOnly( SCROW nStartRow, SCROW nEndRow, sal_uInt16 nNewH
     mpRowHeights->setValue(nStartRow, nEndRow, nNewHeight);
 }
 
+void ScTable::SetColWidthOnly( SCCOL nCol, sal_uInt16 nNewWidth )
+{
+	if (!VALIDCOL(nCol) || !pColWidth)
+        return;
+
+    if (!nNewWidth)
+        nNewWidth = STD_COL_WIDTH;
+
+    pColWidth[nCol] = nNewWidth;
+}
 void ScTable::SetManualHeight( SCROW nStartRow, SCROW nEndRow, sal_Bool bManual )
 {
 	if (VALIDROW(nStartRow) && VALIDROW(nEndRow) && pRowFlags)

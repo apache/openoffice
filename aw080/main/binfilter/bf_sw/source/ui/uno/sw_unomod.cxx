@@ -144,7 +144,7 @@ enum SwViewSettingsPropertyHandles
 	HANDLE_VIEWSET_SOLID_MARK_HANDLES,
 	HANDLE_VIEWSET_ZOOM_TYPE,
 	HANDLE_VIEWSET_ZOOM,
-    HANDLE_VIEWSET_PREVENT_TIPS,
+    HANDLE_VIEWSET_SHOW_CONTENT_TIPS,
     HANDLE_VIEWSET_HELP_URL,
     HANDLE_VIEWSET_VRULER_RIGHT,
     HANDLE_VIEWSET_SHOW_RULER
@@ -173,7 +173,7 @@ static ChainablePropertySetInfo * lcl_createViewSettingsInfo()
 	{
 		{ RTL_CONSTASCII_STRINGPARAM ( "HelpURL" ),				HANDLE_VIEWSET_HELP_URL          	, CPPUTYPE_OUSTRING,	PROPERTY_NONE,	0},
         { RTL_CONSTASCII_STRINGPARAM ( "IsVertRulerRightAligned"),HANDLE_VIEWSET_VRULER_RIGHT         , CPPUTYPE_BOOLEAN, PROPERTY_NONE, 0},
-        { RTL_CONSTASCII_STRINGPARAM ( "PreventHelpTips" ),     HANDLE_VIEWSET_PREVENT_TIPS         , CPPUTYPE_BOOLEAN, PROPERTY_NONE, 0},
+        { RTL_CONSTASCII_STRINGPARAM ( "ShowContentTips" ),     HANDLE_VIEWSET_SHOW_CONTENT_TIPS    , CPPUTYPE_BOOLEAN, PROPERTY_NONE, 0},
         { RTL_CONSTASCII_STRINGPARAM ( "ShowAnnotations" ),     HANDLE_VIEWSET_ANNOTATIONS          , CPPUTYPE_BOOLEAN, PROPERTY_NONE, 0},
 		{ RTL_CONSTASCII_STRINGPARAM ( "ShowBreaks"),			HANDLE_VIEWSET_BREAKS               , CPPUTYPE_BOOLEAN,	PROPERTY_NONE,	0},
 		{ RTL_CONSTASCII_STRINGPARAM ( "ShowDrawings"),			HANDLE_VIEWSET_DRAWINGS             , CPPUTYPE_BOOLEAN,	PROPERTY_NONE,	0},
@@ -681,7 +681,7 @@ void SwXViewSettings::_setSingleValue( const comphelper::PropertyInfo & rInfo, c
         case  HANDLE_VIEWSET_TEXT_BOUNDARIES       :   mpViewOption->SetDocBoundaries(bVal);    break;
 		case  HANDLE_VIEWSET_SMOOTH_SCROLLING      :   mpViewOption->SetSmoothScroll(bVal);	break;
 		case  HANDLE_VIEWSET_SOLID_MARK_HANDLES    :   mpViewOption->SetSolidMarkHdl(bVal);	break;
-        case  HANDLE_VIEWSET_PREVENT_TIPS :            mpViewOption->SetPreventTips(bVal); break;
+        case  HANDLE_VIEWSET_SHOW_CONTENT_TIPS     :   mpViewOption->SetShowContentTips(bVal); break;
         break;
         case  HANDLE_VIEWSET_ZOOM                   :
 		{
@@ -787,7 +787,7 @@ void SwXViewSettings::_getSingleValue( const comphelper::PropertyInfo & rInfo, :
         case  HANDLE_VIEWSET_TEXT_BOUNDARIES       :   bBoolVal = SwViewOption::IsDocBoundaries(); break;
 		case  HANDLE_VIEWSET_SMOOTH_SCROLLING      :   bBoolVal = mpConstViewOption->IsSmoothScroll();	break;
 		case  HANDLE_VIEWSET_SOLID_MARK_HANDLES    :   bBoolVal = mpConstViewOption->IsSolidMarkHdl();	break;
-        case  HANDLE_VIEWSET_PREVENT_TIPS :            bBoolVal = mpConstViewOption->IsPreventTips(); break;
+        case  HANDLE_VIEWSET_SHOW_CONTENT_TIPS     :   bBoolVal = mpConstViewOption->IsShowContentTips(); break;
         case  HANDLE_VIEWSET_ZOOM                   :
 				bBool = FALSE;
 				rValue <<= (sal_Int16)mpConstViewOption->GetZoom();

@@ -1338,7 +1338,7 @@ void GetLineIndex(SvxBoxItem &rBox, short nLineThickness, short nSpace, sal_uInt
                 eCodeIdx = WW8_BordersSO::single0;//   1 Twip for us
             else if( nLineThickness < 20)
                 eCodeIdx = WW8_BordersSO::single5;//   10 Twips for us
-            else if (nLineThickness < 50)
+            else if (nLineThickness < 45) //Modified for i120716
                 eCodeIdx = WW8_BordersSO::single1;//  20 Twips
             else if (nLineThickness < 80)
                 eCodeIdx = WW8_BordersSO::single2;//  50
@@ -1577,7 +1577,9 @@ bool SwWW8ImplReader::SetShadow(SvxShadowItem& rShadow, const short *pSizeArray,
     if (bRet)
     {
         rShadow.SetColor(Color(COL_BLACK));
-        short nVal = pSizeArray[WW8_RIGHT];
+	//i120718
+        short nVal = pbrc[WW8_RIGHT].DetermineBorderProperties(bVer67);
+	//End
         if (nVal < 0x10)
             nVal = 0x10;
         rShadow.SetWidth(nVal);
@@ -1924,6 +1926,10 @@ WW8SwFlyPara::WW8SwFlyPara( SwPaM& rPaM,
     nNewNettoWidth = MINFLY;                    // Minimum
 
     eSurround = ( rWW.nSp37 > 1 ) ? SURROUND_IDEAL : SURROUND_NONE;
+    //#i119466 mapping "Around" wrap setting to "Parallel" for table
+    const bool bIsTable = rIo.pPlcxMan->HasParaSprm(0x2416);
+	if (  bIsTable && rWW.nSp37 == 2 )
+		eSurround = SURROUND_PARALLEL;
 
     /*
      #95905#, #83307# seems to have gone away now, so reenable parallel
@@ -2989,12 +2995,19 @@ void SwWW8ImplReader::Read_BoldUsw( sal_uInt16 nId, const sal_uInt8* pData, shor
     SetToggleAttr( nI, bOn );
 }
 
-void SwWW8ImplReader::Read_Bidi(sal_uInt16, const sal_uInt8*, short nLen)
+void SwWW8ImplReader::Read_Bidi(sal_uInt16, const sal_uInt8* pData, short nLen)
 {
-	if (nLen > 0)
-		bBidi = true;
-	else
-		bBidi = false;
+	if( nLen < 0 )	//Property end
+	{
+		bBidi = sal_False;
+		pCtrlStck->SetAttr(*pPaM->GetPoint(),RES_CHRATR_BIDIRTL);
+	}
+	else	//Property start
+	{
+		bBidi = sal_True;
+		sal_uInt8 nBidi = SVBT8ToByte( pData );
+		NewAttr( SfxInt16Item( RES_CHRATR_BIDIRTL, (nBidi!=0)? 1 : 0 ) );	
+	}
 }
 
 // Read_BoldUsw for BiDi Italic, Bold
@@ -3449,6 +3462,53 @@ void SwWW8ImplReader::Read_TxtForeColor(sal_uInt16, const sal_uInt8* pData, shor
     }
 }
 
+void SwWW8ImplReader::Read_UnderlineColor(sal_uInt16, const sal_uInt8* pData, short nLen)
+{
+	if( nLen < 0 )
+	{
+		//because the UnderlineColor is not a standalone attribute in SW, it belongs to the underline attribute. 
+		//And, the .doc file stores attributes separately, this attribute ends here, the "underline"
+		//attribute also terminates (if the character next owns underline, that will be a new underline attribute).
+		//so nothing is left to be done here.
+        return;
+	}
+	else
+	{
+		if ( pAktColl )	//importing style
+		{
+			if( SFX_ITEM_SET == pAktColl->GetItemState( RES_CHRATR_UNDERLINE, sal_False ) )
+			{
+				const SwAttrSet& aSet = pAktColl->GetAttrSet();
+				SvxUnderlineItem *pUnderline 
+					= (SvxUnderlineItem *)(aSet.Get( RES_CHRATR_UNDERLINE, sal_False ).Clone());
+				if(pUnderline){
+					pUnderline->SetColor( Color( wwUtility::BGRToRGB(SVBT32ToUInt32(pData)) ) );
+					pAktColl->SetFmtAttr( *pUnderline );
+					delete pUnderline;
+				}
+			}
+		}
+		else if ( pAktItemSet )
+		{
+			if ( SFX_ITEM_SET == pAktItemSet->GetItemState( RES_CHRATR_UNDERLINE, sal_False ) )
+			{
+				SvxUnderlineItem *pUnderline 
+					= (SvxUnderlineItem *)(pAktItemSet->Get( RES_CHRATR_UNDERLINE, sal_False ) .Clone());
+				if(pUnderline){
+					pUnderline->SetColor( Color( wwUtility::BGRToRGB(SVBT32ToUInt32(pData)) ) );
+					pAktItemSet->Put( *pUnderline );
+					delete pUnderline;
+				}
+			}
+		}
+		else
+		{
+			SvxUnderlineItem* pUnderlineAttr = (SvxUnderlineItem*)pCtrlStck->GetOpenStackAttr( *pPaM->GetPoint(), RES_CHRATR_UNDERLINE );
+			if( pUnderlineAttr != NULL )
+				pUnderlineAttr->SetColor( Color( wwUtility::BGRToRGB(SVBT32ToUInt32( pData ))));
+		}
+	}
+}
 bool SwWW8ImplReader::GetFontParams( sal_uInt16 nFCode, FontFamily& reFamily,
     String& rName, FontPitch& rePitch, CharSet& reCharSet )
 {
@@ -3539,7 +3599,7 @@ bool SwWW8ImplReader::GetFontParams( sal_uInt16 nFCode, FontFamily& reFamily,
             break;
         }
     }
-    if( b < sizeof( eFamilyA ) )
+    if (b < (sizeof(eFamilyA)/sizeof(eFamilyA[0])))
         reFamily = eFamilyA[b];
     else
         reFamily = FAMILY_DONTKNOW;
@@ -3828,6 +3888,15 @@ void SwWW8ImplReader::Read_CColl( sal_uInt16, const sal_uInt8* pData, short nLen
         || pCollA[nId].bColl )              // oder Para-Style ?
         return;                             // dann ignorieren
 
+    // if current on loading a TOC field, and current trying to apply a hyperlink character style, 
+    // just ignore. For the hyperlinks inside TOC in MS Word is not same with a common hyperlink
+    // Character styles: without underline and blue font color. And such type style will be applied in others
+    // processes.
+    if (mbLoadingTOCCache && pCollA[nId].GetWWStyleId() == ww::stiHyperlink)
+    {
+        return;
+    }
+
     NewAttr( SwFmtCharFmt( (SwCharFmt*)pCollA[nId].pFmt ) );
     nCharFmt = (short) nId;
 }
@@ -3948,6 +4017,18 @@ void SwWW8ImplReader::Read_NoLineNumb(sal_uInt16 , const sal_uInt8* pData, short
     NewAttr( aLN );
 }
 
+bool lcl_HasExplicitLeft(const WW8PLCFMan *pPlcxMan, bool bVer67)
+{
+	WW8PLCFx_Cp_FKP *pPap = pPlcxMan ? pPlcxMan->GetPapPLCF() : 0;
+	if (pPap)
+	{
+		if (bVer67)
+			return pPap->HasSprm(17);
+		else
+			return (pPap->HasSprm(0x840F) || pPap->HasSprm(0x845E));
+	}
+	return false;
+}
 // Sprm 16, 17
 void SwWW8ImplReader::Read_LR( sal_uInt16 nId, const sal_uInt8* pData, short nLen )
 {
@@ -4041,6 +4122,27 @@ void SwWW8ImplReader::Read_LR( sal_uInt16 nId, const sal_uInt8* pData, short nLe
             }
 
             aLR.SetTxtFirstLineOfst(nPara);
+
+            if (!pAktColl)
+            {
+				if (const SwTxtNode* pNode = pPaM->GetNode()->GetTxtNode())
+				{
+					if ( const SwNumFmt *pNumFmt = GetNumFmtFromTxtNode(*pNode) )
+					{
+						if (!lcl_HasExplicitLeft(pPlcxMan, bVer67))
+						{
+							aLR.SetTxtLeft(pNumFmt->GetIndentAt());
+
+							// If have not explicit left, set number format list tab position is doc default tab
+							const SvxTabStopItem *pDefaultStopItem = (const SvxTabStopItem *)rDoc.GetAttrPool().GetPoolDefaultItem(RES_PARATR_TABSTOP);
+							if ( pDefaultStopItem &&  pDefaultStopItem->Count() > 0 )
+								((SwNumFmt*)(pNumFmt))->SetListtabPos( ((SvxTabStop&)(*pDefaultStopItem)[0]).GetTabPos() );
+						}
+					}
+				}
+		}
+            
+
             if (pAktColl)
             {        
                 pCollA[nAktColl].bListReleventIndentSet = true;
@@ -4271,10 +4373,20 @@ void SwWW8ImplReader::Read_UL( sal_uInt16 nId, const sal_uInt8* pData, short nLe
 
 void SwWW8ImplReader::Read_IdctHint( sal_uInt16, const sal_uInt8* pData, short nLen )
 {
-    if (nLen < 0)
-        nIdctHint = 0;
-    else
-        nIdctHint = *pData;
+    // sprmcidcthint (opcode 0x286f) specifies a script bias for the text in the run. 
+    // for unicode characters that are shared between far east and non-far east scripts, 
+    // this property determines what font and language the character will use. 
+    // when this value is 0, text properties bias towards non-far east properties. 
+    // when this value is 1, text properties bias towards far east properties. 
+	if( nLen < 0 )	//Property end 
+	{
+		pCtrlStck->SetAttr(*pPaM->GetPoint(),RES_CHRATR_IDCTHINT);
+	}
+	else	//Property start
+	{
+		sal_uInt8 nVal = SVBT8ToByte( pData );
+		NewAttr( SfxInt16Item( RES_CHRATR_IDCTHINT, (nVal!=0)? 1 : 0 ) );	
+	}
 }
 
 void SwWW8ImplReader::Read_Justify( sal_uInt16, const sal_uInt8* pData, short nLen )
@@ -6130,6 +6242,7 @@ const wwSprmDispatcher *GetWW8SprmDispatcher()
         {0x6815, 0},                                 //undocumented
         {0x6816, 0},                                 //undocumented
         {0x6870, &SwWW8ImplReader::Read_TxtForeColor},
+		{0x6877, &SwWW8ImplReader::Read_UnderlineColor},
         {0xC64D, &SwWW8ImplReader::Read_ParaBackColor},
         {0x6467, 0},                                 //undocumented
         {0xF617, 0},                                 //undocumented

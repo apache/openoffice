@@ -52,6 +52,8 @@ public:
     ///
     virtual void StartRun( const SwRedlineData* pRedlineData );
 
+    virtual void OnTOXEnding();
+
     /// End of the text run.
     ///
     /// No-op for binary filters.
@@ -290,6 +292,12 @@ protected:
     /// Sfx item RES_CHRATR_CTL_WEIGHT
     virtual void CharWeightCTL( const SvxWeightItem& );
 
+    /// Sfx item RES_CHRATR_BidiRTL
+    virtual void CharBidiRTL( const SfxPoolItem& rHt );
+
+    /// Sfx item RES_CHRATR_IdctHint
+    virtual void CharIdctHint( const SfxPoolItem& rHt );
+
     /// Sfx item RES_CHRATR_ROTATE
     virtual void CharRotate( const SvxCharRotateItem& );
 
@@ -429,8 +437,10 @@ protected:
     /// of the field results if we were forced to split text.
     sal_uInt16 m_nFieldResults;
 
+    bool mbOnTOXEnding;
+
 public:
-    WW8AttributeOutput( WW8Export &rWW8Export ) : AttributeOutputBase(), m_rWW8Export( rWW8Export ) {}
+    WW8AttributeOutput( WW8Export &rWW8Export ) : AttributeOutputBase(), m_rWW8Export( rWW8Export ),mbOnTOXEnding(false) {}
     virtual ~WW8AttributeOutput() {}
 
     /// Return the right export class.

@@ -2149,6 +2149,13 @@ void SwXTextDocument::setPropertyValue(const OUString& rPropertyName,
         }
         break;
         // <--
+        case WID_DOC_DEFAULT_PAGE_MODE:
+        {
+            bool bDefaultPageMode( false );
+            aValue >>= bDefaultPageMode;
+            pDocShell->GetDoc()->SetDefaultPageMode( bDefaultPageMode );
+        }
+        break;
 
         default:
 		{
@@ -2790,6 +2797,10 @@ sal_Int32 SAL_CALL SwXTextDocument::getRendererCount(
         }
         else
         {
+            if ( m_pRenderData->HasPostItData() )
+            {
+                m_pRenderData->DeletePostItData();
+            }
             const sal_Int16 nPostItMode = (sal_Int16) m_pPrintUIOptions->getIntValue( "PrintAnnotationMode", 0 );
             if (nPostItMode != POSTITS_NONE)
             {

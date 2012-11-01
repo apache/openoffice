@@ -375,7 +375,8 @@ void XclExpControlHelper::WriteFormulaSubRec( XclExpStream& rStrm, sal_uInt16 nS
 
 // ----------------------------------------------------------------------------
 
-#if EXC_EXP_OCX_CTRL
+//delete for exporting OCX
+//#if EXC_EXP_OCX_CTRL
 
 XclExpOcxControlObj::XclExpOcxControlObj( 
     XclExpObjectManager& rObjMgr, 
@@ -401,8 +402,7 @@ XclExpOcxControlObj::XclExpOcxControlObj(
     // fill DFF property set
     mrEscherEx.OpenContainer( ESCHER_SpContainer );
     mrEscherEx.AddShape( ESCHER_ShpInst_HostControl, SHAPEFLAG_HAVESPT | SHAPEFLAG_HAVEANCHOR | SHAPEFLAG_OLESHAPE );
-    Rectangle aDummyRect;
-    EscherPropertyContainer aPropOpt( mrEscherEx, mrEscherEx.QueryPicStream(), aDummyRect );
+    EscherPropertyContainer aPropOpt( mrEscherEx.GetGraphicProvider(), mrEscherEx.QueryPictureStream(), basegfx::B2DRange());
     aPropOpt.AddOpt( ESCHER_Prop_FitTextToShape,    0x00080008 );   // bool field
     aPropOpt.AddOpt( ESCHER_Prop_lineColor,         0x08000040 );
     aPropOpt.AddOpt( ESCHER_Prop_fNoLineDrawDash,   0x00080000 );   // bool field
@@ -485,7 +485,7 @@ void XclExpOcxControlObj::WriteSubRecs( XclExpStream& rStrm )
     rStrm.EndRecord();
 }
 
-#else
+//#else
 
 XclExpTbxControlObj::XclExpTbxControlObj( 
     XclExpObjectManager& rObjMgr, 
@@ -927,7 +927,7 @@ void XclExpTbxControlObj::WriteSbs( XclExpStream& rStrm )
     rStrm.EndRecord();
 }
 
-#endif
+//#endif
 
 // ----------------------------------------------------------------------------
 

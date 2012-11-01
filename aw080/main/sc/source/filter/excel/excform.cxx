@@ -202,7 +202,8 @@ ConvErr ExcelToSc::Convert( const ScTokenArray*& pErgebnis, XclImpStream& aIn, s
 	TokenId			nMerk0;
 	const sal_Bool		bRangeName = eFT == FT_RangeName;
 	const sal_Bool		bSharedFormula = eFT == FT_SharedFormula;
-	const sal_Bool		bRNorSF = bRangeName || bSharedFormula;
+	const sal_Bool		bConditional = eFT == FT_Conditional;
+	const sal_Bool		bRNorSF = bRangeName || bSharedFormula || bConditional;
 
 	ScSingleRefData		aSRD;
 	ScComplexRefData		aCRD;
@@ -1550,8 +1551,8 @@ static DefTokenId missArgForZeroList[] = {
 
 sal_Bool lcl_isInMissArgForZeroList(DefTokenId id)
 {
-	for(short index = 0; index < missArgForZeroCount; index++)
-		if(missArgForZeroList[index] == id)
+	for (sal_uInt32 nIndex = 0; nIndex < missArgForZeroCount; nIndex++)
+		if(missArgForZeroList[nIndex] == id)
 			return sal_True;
 	return sal_False;
 

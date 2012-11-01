@@ -927,20 +927,26 @@ void SdPage::CreateTitleAndLayout(bool bInit, bool bCreate )
 			// handout template
 
 			// delete all available handout presentation objects
-			SdrObject* pObj;
+			SdrObject *pObj=NULL;
 			while( (pObj = pMasterPage->GetPresObj(PRESOBJ_HANDOUT)) != 0 )
 			{
-				if( bUndo )
-					pUndoManager->AddUndoAction(rDrawDocument.GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
-
 				pMasterPage->RemoveObjectFromSdrObjList(pObj->GetNavigationPosition());
-
+                
                 if(getSdrModelFromSdrPage().isLocked())
                 {
                     // remove self when model is locked (during load), else the
                     // broadcast of object removal will do that
                     pMasterPage->RemovePresObj(pObj);
                 }
+
+				if( bUndo )
+                {
+					pUndoManager->AddUndoAction(rDrawDocument.GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
+				}
+                else
+				{
+					deleteSdrObjectSafeAndClearPointer(pObj);  // memory leak i120050
+				}
 			}
 
 			std::vector< basegfx::B2DRange > aAreas;
@@ -1301,6 +1307,7 @@ static void CalcAutoLayoutRanges( SdPage& rPage, int nLayout, basegfx::B2DRange*
 	{
 		SdPage& rMasterPage = static_cast<SdPage&>(rPage.TRG_GetMasterPage());
 		SdrObject* pMasterTitle = rMasterPage.GetPresObj( PRESOBJ_TITLE );
+		SdrObject* pMasterSubTitle = rMasterPage.GetPresObj( PRESOBJ_TEXT );        
 		SdrObject* pMasterOutline = rMasterPage.GetPresObj( rPage.GetPageKind()==PK_NOTES ? PRESOBJ_NOTES : PRESOBJ_OUTLINE );
 
 		if( pMasterTitle )
@@ -1308,8 +1315,9 @@ static void CalcAutoLayoutRanges( SdPage& rPage, int nLayout, basegfx::B2DRange*
 
 		if (aTitleRange.isEmpty() )
 			aTitleRange = rPage.GetTitleRange();
-
-		if( pMasterOutline )
+		if( pMasterSubTitle )                                           
+			aLayoutRange = sdr::legacy::GetLogicRange(*pMasterSubTitle);
+		else if( pMasterOutline )
 			aLayoutRange = sdr::legacy::GetLogicRange(*pMasterOutline);
 
 		if (aLayoutRange.isEmpty() )
@@ -1530,7 +1538,7 @@ void findAutoLayoutShapesImpl( SdPage& rPage, const LayoutDescriptor& rDescripto
 	bool bMissing = false;
 
 	// for each entry in the layoutdescriptor, arrange a presentation shape
-	for( i = 0; (i < PRESOBJ_MAX) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++ )
+    for (i = 0; (i < MAX_PRESOBJS) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++)
 	{
 		PresObjKind eKind = rDescriptor.meKind[i];
 		SdrObject* pObj = 0;
@@ -1552,7 +1560,7 @@ void findAutoLayoutShapesImpl( SdPage& rPage, const LayoutDescriptor& rDescripto
 	if( bMissing && bInit )
 	{
 		// for each entry in the layoutdescriptor, look for an alternative shape
-		for( i = 0; (i < PRESOBJ_MAX) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++ )
+        for (i = 0; (i < MAX_PRESOBJS) && (rDescriptor.meKind[i] != PRESOBJ_NONE); i++)
 		{
 			if( rShapes[i] )
 				continue;
@@ -1713,7 +1721,7 @@ void SdPage::SetAutoLayout(AutoLayout eLayout, bool bInit, bool bCreate )
 	int i;
 
 	// for each entry in the layoutdescriptor, arrange a presentation shape
-	for( i = 0; (i < PRESOBJ_MAX) && (aDescriptor.meKind[i] != PRESOBJ_NONE); i++ )
+    for (i = 0; (i < MAX_PRESOBJS) && (aDescriptor.meKind[i] != PRESOBJ_NONE); i++)
 	{
 		PresObjKind eKind = aDescriptor.meKind[i];
 		SdrObject* pObj = InsertAutoLayoutShape( aLayoutShapes[i], eKind, aDescriptor.mbVertical[i], aRanges[i], bInit );

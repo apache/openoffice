@@ -168,6 +168,21 @@ static float GetSwapFloat( SvStream& rSt )
 }
 #endif
 
+struct BLENDFUNCTION{
+	unsigned char aBlendOperation;
+	unsigned char aBlendFlags;
+	unsigned char aSrcConstantAlpha;
+	unsigned char aAlphaFormat;
+
+	friend SvStream& operator>>( SvStream& rIn, BLENDFUNCTION& rBlendFun );
+};
+
+SvStream& operator>>( SvStream& rIn, BLENDFUNCTION& rBlendFun )
+{
+	rIn >> rBlendFun.aBlendOperation >> rBlendFun.aBlendFlags >> 
+		     rBlendFun.aSrcConstantAlpha >> rBlendFun.aAlphaFormat;
+    return rIn;
+}
 SvStream& operator>>( SvStream& rIn, XForm& rXForm )
 {
 	if ( sizeof( float ) != 4 )
@@ -321,8 +336,6 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 
 			case EMR_POLYPOLYLINE :
 			{
-				sal_uInt16*	pnPoints;
-
 				sal_Int32	i, nPoly;
 				pWMF->SeekRel( 0x10 );
 
@@ -334,9 +347,9 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 				{
 					if ( ( static_cast< sal_uInt32 >( nPoly ) * sizeof(sal_uInt16) ) <= ( nEndPos - pWMF->Tell() ) )
 					{
-						pnPoints = new sal_uInt16[ nPoly ];
+						sal_uInt16*	pnPoints = new sal_uInt16[ nPoly ];
 
-						for ( i = 0; i < nPoly; i++ )
+						for ( i = 0; i < nPoly && !pWMF->IsEof(); i++ )
 						{
 							*pWMF >> nPoints;
 							pnPoints[ i ] = (sal_uInt16)nPoints;
@@ -362,45 +375,55 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 
 			case EMR_POLYPOLYGON :
 			{
-				sal_uInt16*	pnPoints;
-				Point*	pPtAry;
-
-				sal_uInt32	i, nPoly, nGesPoints;
+				sal_uInt32 nPoly(0);
+				sal_uInt32 nGesPoints(0);
+                sal_uInt32 nReadPoints(0);
 				pWMF->SeekRel( 0x10 );
 
 				// Anzahl der Polygone:
 				*pWMF >> nPoly >> nGesPoints;
 
-				if ( ( nGesPoints < SAL_MAX_UINT32 / sizeof(Point) ) && ( nPoly < SAL_MAX_UINT32 / sizeof(sal_uInt16) ) )
+				if ( ( nGesPoints < SAL_MAX_UINT32 / sizeof(Point) ) && ( nPoly < SAL_MAX_UINT32 / sizeof(sal_uInt16) )  && !pWMF->IsEof() )
 				{
 					if ( ( nPoly * sizeof(sal_uInt16) ) <= ( nEndPos - pWMF->Tell() ) )
 					{
-						pnPoints = new sal_uInt16[ nPoly ];
+        				sal_uInt32 i(0);
+						sal_uInt16*	pnPoints = new sal_uInt16[ nPoly ];
 		
-						for ( i = 0; i < nPoly; i++ )
+						for ( i = 0; i < nPoly && !pWMF->IsEof(); i++ )
 						{
 							*pWMF >> nPoints;
 							pnPoints[ i ] = (sal_uInt16)nPoints;
 						}
 
-						if ( ( nGesPoints * (sizeof(sal_uInt32)+sizeof(sal_uInt32)) ) <= ( nEndPos - pWMF->Tell() ) )
+						if ( ( nGesPoints * (sizeof(sal_uInt32)+sizeof(sal_uInt32)) ) <= ( nEndPos - pWMF->Tell() ) && !pWMF->IsEof())
 						{
-							// Polygonpunkte holen:
-							pPtAry  = new Point[ nGesPoints ];
-			
-							for ( i = 0; i < nGesPoints; i++ )
-							{
-								*pWMF >> nX32 >> nY32;
-								pPtAry[ i ] = Point( nX32, nY32 );
-							}
-							// PolyPolygon Actions erzeugen
-							PolyPolygon aPolyPoly( (sal_uInt16)nPoly, pnPoints, pPtAry );
-							pOut->DrawPolyPolygon( aPolyPoly, bRecordPath );
-							delete[] pPtAry;
+                            PolyPolygon aPolyPoly(nPoly, nPoly);
+
+						    for ( i = 0; i < nPoly && !pWMF->IsEof(); i++ )
+						    {
+                                const sal_uInt16 nPointCount(pnPoints[i]);
+                				Point* pPtAry = new Point[nPointCount];
+
+                                for(sal_uInt16 j(0); j < nPointCount && !pWMF->IsEof(); j++)
+                                {
+								    *pWMF >> nX32 >> nY32;
+								    pPtAry[ j ] = Point( nX32, nY32 );
+                                    nReadPoints++;
+                                }
+
+                                aPolyPoly.Insert(Polygon(nPointCount, pPtAry));
+                                delete[] pPtAry;
+                            }
+
+                            pOut->DrawPolyPolygon( aPolyPoly, bRecordPath );
 						}
-						delete[] pnPoints;
+
+                        delete[] pnPoints;
 					}
 				}
+
+                OSL_ENSURE(nReadPoints == nGesPoints, "The number Points processed from EMR_POLYPOLYGON is unequal imported number (!)");
 			}
 			break;
 
@@ -805,7 +828,63 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 				pOut->SetClipPath( aPolyPoly, iMode, sal_False );
 	        }
             break;
+			case EMR_ALPHABLEND:
+			{
+			   sal_Int32	xDest, yDest, cxDest, cyDest; 
+			      
+			   BLENDFUNCTION aFunc;
+			   sal_Int32  xSrc, ySrc;
+			   XForm	xformSrc;
+			   sal_uInt32	BkColorSrc,iUsageSrc ,offBmiSrc,cbBmiSrc,offBitsSrc,cbBitsSrc ,cxSrc,cySrc ;
 
+			   sal_uInt32	nStart = pWMF->Tell() - 8;
+				pWMF->SeekRel( 0x10 );
+
+				*pWMF >> xDest >> yDest >> cxDest >> cyDest >> aFunc >> xSrc >> ySrc
+						>> xformSrc >> BkColorSrc >> iUsageSrc >> offBmiSrc >> cbBmiSrc
+							>> offBitsSrc >> cbBitsSrc >>cxSrc>>cySrc ;
+
+				sal_uInt32	dwRop = SRCAND|SRCINVERT;
+
+				Bitmap		aBitmap;
+				Rectangle	aRect( Point( xDest, yDest ), Size( cxDest+1, cyDest+1 ) );
+
+				if ( (cbBitsSrc > (SAL_MAX_UINT32 - 14)) || ((SAL_MAX_UINT32 - 14) - cbBitsSrc < cbBmiSrc) )
+			        bStatus = sal_False;
+				else
+				{
+					sal_uInt32 nSize = cbBmiSrc + cbBitsSrc + 14;
+					if ( nSize <= ( nEndPos - nStartPos ) )
+					{
+						char* pBuf = new char[ nSize ];
+						SvMemoryStream aTmp( pBuf, nSize, STREAM_READ | STREAM_WRITE );
+						aTmp.ObjectOwnsMemory( sal_True );
+						aTmp << (sal_uInt8)'B'
+							 << (sal_uInt8)'M'
+							 << (sal_uInt32)cbBitsSrc
+							 << (sal_uInt16)0
+							 << (sal_uInt16)0
+							 << (sal_uInt32)cbBmiSrc + 14;
+						pWMF->Seek( nStart + offBmiSrc );
+						pWMF->Read( pBuf + 14, cbBmiSrc );
+						pWMF->Seek( nStart + offBitsSrc );
+						pWMF->Read( pBuf + 14 + cbBmiSrc, cbBitsSrc );
+						aTmp.Seek( 0 );
+						aBitmap.Read( aTmp, sal_True );
+						// test if it is sensible to crop
+						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) && 
+							( xSrc >= 0 ) && ( ySrc >= 0 ) &&
+                                ( xSrc + static_cast< sal_Int32 >(cxSrc) <= static_cast< sal_Int32 >(aBitmap.GetSizePixel().Width()) ) &&
+                                    ( ySrc + static_cast< sal_Int32 >(cySrc) <= static_cast< sal_Int32 >(aBitmap.GetSizePixel().Height()) ) )
+						{
+							Rectangle aCropRect( Point( xSrc, ySrc ), Size( cxSrc, cySrc ) );
+							aBitmap.Crop( aCropRect );
+						}
+ 						aBmpSaveList.Insert( new BSaveStruct( aBitmap, aRect, dwRop ), LIST_APPEND );
+					}
+				}
+			}
+			break;
 			case EMR_BITBLT :	// PASSTHROUGH INTENDED
 			case EMR_STRETCHBLT :
 			{
@@ -1133,41 +1212,55 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 
 			case EMR_POLYPOLYGON16 :
 			{
-				sal_uInt16*	pnPoints;
-				Point*	pPtAry;
-
-				sal_uInt32	i, nPoly, nGesPoints;
+				sal_uInt32 nPoly(0);
+                sal_uInt32 nGesPoints(0);
 				pWMF->SeekRel( 0x10 );
 				// Anzahl der Polygone:
 				*pWMF >> nPoly >> nGesPoints;
-				if ( ( nGesPoints < SAL_MAX_UINT32 / sizeof(Point) ) && ( nPoly < SAL_MAX_UINT32 / sizeof(sal_uInt16) ) )
+                sal_uInt32 nReadPoints(0);
+				
+                if ( ( nGesPoints < SAL_MAX_UINT32 / sizeof(Point) ) && ( nPoly < SAL_MAX_UINT32 / sizeof(sal_uInt16) )  && !pWMF->IsEof() )
 				{
 					if ( ( static_cast< sal_uInt32 >( nPoly ) * sizeof( sal_uInt16 ) ) <= ( nEndPos - pWMF->Tell() ) )
 					{
-						pnPoints = new sal_uInt16[ nPoly ];
-						for ( i = 0; i < nPoly; i++ )
+                        sal_uInt32 i(0);
+						sal_uInt16*	pnPoints = new sal_uInt16[ nPoly ];
+						
+                        for ( i = 0; i < nPoly && !pWMF->IsEof(); i++ )
 						{
 							*pWMF >> nPoints;
 							pnPoints[ i ] = (sal_uInt16)nPoints;
 						}
-						if ( ( nGesPoints * (sizeof(sal_uInt16)+sizeof(sal_uInt16)) ) <= ( nEndPos - pWMF->Tell() ) )
+						
+                        if ( ( nGesPoints * (sizeof(sal_uInt16)+sizeof(sal_uInt16)) ) <= ( nEndPos - pWMF->Tell() )  && !pWMF->IsEof() )
 						{
-							// Polygonpunkte holen:
-							pPtAry  = new Point[ nGesPoints ];
-							for ( i = 0; i < nGesPoints; i++ )
-							{
-								*pWMF >> nX16 >> nY16;
-								pPtAry[ i ] = Point( nX16, nY16 );
-							}
+                            PolyPolygon aPolyPoly(nPoly, nPoly);
+
+						    for ( i = 0; i < nPoly && !pWMF->IsEof(); i++ )
+						    {
+                                const sal_uInt16 nPointCount(pnPoints[i]);
+                				Point* pPtAry = new Point[nPointCount];
+
+                                for(sal_uInt16 b(0); b < nPointCount && !pWMF->IsEof(); b++)
+                                {
+								    *pWMF >> nX16 >> nY16;
+								    pPtAry[b] = Point( nX16, nY16 );
+                                    nReadPoints++;
+                                }
+                                
+                                aPolyPoly.Insert(Polygon(nPointCount, pPtAry));
+                                delete[] pPtAry;
+                            }
 			
-							// PolyPolygon Actions erzeugen
-							PolyPolygon aPolyPoly( (sal_uInt16)nPoly, pnPoints, pPtAry );
+							// create PolyPolygon actions
 							pOut->DrawPolyPolygon( aPolyPoly, bRecordPath );
-							delete[] pPtAry;
 						}
-						delete[] pnPoints;
+						
+                        delete[] pnPoints;
 					}
 				}
+
+                OSL_ENSURE(nReadPoints == nGesPoints, "The number Points processed from EMR_POLYPOLYGON16 is unequal imported number (!)");
 			}
 			break;
 
@@ -1187,7 +1280,46 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
                 }
             }
             break;
+			case EMR_CREATEDIBPATTERNBRUSHPT :
+			{
+				sal_uInt32	nTmp32;
+				sal_uInt32  nOffset;
+				*pWMF >> nIndex;
+				Bitmap	aBmp;
+				BitmapReadAccess* pBmp;
+				sal_uInt32	nRed = 0, nGreen = 0, nBlue = 0, nCount = 1;
 
+				*pWMF >> nTmp32;
+				*pWMF >> nOffset;
+				for ( sal_uInt32 i = 0; i < (nOffset - 20)/4; i ++ )
+				{
+					*pWMF >> nTmp32;
+				}
+
+				aBmp.Read( *pWMF, sal_False );
+				pBmp = aBmp.AcquireReadAccess();
+				if ( pBmp )
+				{
+					for ( sal_Int32 y = 0; y < pBmp->Height(); y++ )
+					{
+						for ( sal_Int32 x = 0; x < pBmp->Width(); x++ )
+						{
+							const BitmapColor aColor( pBmp->GetColor( y, x ) );						
+							
+							nRed += aColor.GetRed();
+							nGreen += aColor.GetGreen();
+							nBlue += aColor.GetBlue();
+						}
+					}
+					nCount = pBmp->Height() * pBmp->Width();
+					if ( !nCount )
+						nCount++;
+					aBmp.ReleaseAccess( pBmp );
+				}
+				Color aColor( (sal_Char)( nRed / nCount ), (sal_Char)( nGreen / nCount ), (sal_Char)( nBlue / nCount ) );
+				pOut->CreateObject( nIndex, GDI_BRUSH, new WinMtfFillStyle( aColor, sal_False ) );
+			}
+			break;
 
 #ifdef WIN_MTF_ASSERT
             default :                           WinMtfAssertHandler( "Unknown Meta Action" );       break;
@@ -1207,7 +1339,6 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 			case EMR_ANGLEARC :     	        WinMtfAssertHandler( "AngleArc" );                  break;
 			case EMR_SETCOLORADJUSTMENT :       WinMtfAssertHandler( "SetColorAdjustment" );	    break;
 			case EMR_POLYDRAW16 :		        WinMtfAssertHandler( "PolyDraw16" );                break;
-			case EMR_CREATEDIBPATTERNBRUSHPT :  WinMtfAssertHandler( "CreateDibPatternBrushPt" );   break;
 			case EMR_POLYTEXTOUTA : 		    WinMtfAssertHandler( "PolyTextOutA" );              break;
 			case EMR_POLYTEXTOUTW :			    WinMtfAssertHandler( "PolyTextOutW" );              break;
 			case EMR_CREATECOLORSPACE :         WinMtfAssertHandler( "CreateColorSpace" );	        break;
@@ -1225,7 +1356,6 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
             case EMR_COLORCORRECTPALETTE :      WinMtfAssertHandler( "ColorCorrectPalette" );       break;
             case EMR_SETICMPROFILEA :           WinMtfAssertHandler( "SetICMProfileA" );            break;
             case EMR_SETICMPROFILEW :           WinMtfAssertHandler( "SetICMProfileW" );            break;
-            case EMR_ALPHABLEND :               WinMtfAssertHandler( "Alphablend" );                break;
             case EMR_TRANSPARENTBLT :           WinMtfAssertHandler( "TransparenBlt" );             break;
             case EMR_TRANSPARENTDIB :           WinMtfAssertHandler( "TransparenDib" );             break;
             case EMR_GRADIENTFILL :             WinMtfAssertHandler( "GradientFill" );              break;

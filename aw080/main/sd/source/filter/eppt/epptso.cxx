@@ -1447,6 +1447,13 @@ void PPTWriter::ImplWriteParagraphs( SvStream& rOut, TextObj& rTextObj )
             nPropertyFlags |= 1;            // turn off bullet explicit
             nBulletFlags = 0;
         }
+
+        // Write nTextOfs and nBullets 
+        if ( mpStyleSheet->IsHardAttribute( nInstance, nDepth, ParaAttr_TextOfs, pPara->nTextOfs ) )
+            nPropertyFlags |= 0x100;
+        if ( mpStyleSheet->IsHardAttribute( nInstance, nDepth, ParaAttr_BulletOfs, pPara->nBulletOfs ))
+            nPropertyFlags |= 0x400;
+
         FontCollectionEntry aFontDescEntry( pPara->aFontDesc.Name, pPara->aFontDesc.Family, pPara->aFontDesc.Pitch, pPara->aFontDesc.CharSet );
         sal_uInt16  nFontId = (sal_uInt16)maFontCollection.GetId( aFontDescEntry );
 
@@ -1485,6 +1492,10 @@ void PPTWriter::ImplWriteParagraphs( SvStream& rOut, TextObj& rTextObj )
             rOut << (sal_uInt16)( pPara->mnLineSpacingTop );
         if ( nPropertyFlags & 0x00004000 )
             rOut << (sal_uInt16)( pPara->mnLineSpacingBottom );
+        if ( nPropertyFlags & 0x100 )
+            rOut << (sal_uInt16)(pPara->nTextOfs);
+        if (  nPropertyFlags & 0x400 )
+            rOut << (sal_uInt16)(pPara->nBulletOfs);
         if ( nPropertyFlags & 0x000e0000 )
         {
             sal_uInt16 nAsianSettings = 0;
@@ -2700,6 +2711,11 @@ void ParagraphObj::ImplGetNumberingLevel( PPTExBulletProvider& rBuProv, sal_Int1
                     case SVX_NUM_BITMAP :
                     case SVX_NUM_CHARS_UPPER_LETTER_N :     // zaehlt von  a-z, aa-zz, aaa-zzz
                     case SVX_NUM_CHARS_LOWER_LETTER_N :
+					case SVX_NUM_NUMBER_UPPER_ZH:
+					case SVX_NUM_CIRCLE_NUMBER:
+					case SVX_NUM_NUMBER_UPPER_ZH_TW:
+					case SVX_NUM_NUMBER_LOWER_ZH:
+					case SVX_NUM_FULL_WIDTH_ARABIC:
                     {
                         if ( nNumberingType != SVX_NUM_CHAR_SPECIAL )
                         {
@@ -2785,6 +2801,45 @@ void ParagraphObj::ImplGetNumberingLevel( PPTExBulletProvider& rBuProv, sal_Int1
                                     }
                                 }
                                 break;
+								case SVX_NUM_NUMBER_UPPER_ZH :
+								{
+									if ( sSuffix.Len() )			
+										nMappedNumType = 0x110001;   // Simplified Chinese with single-byte period.
+									else
+										nMappedNumType = 0x100001;   // Simplified Chinese.
+								}
+								break;
+								case SVX_NUM_CIRCLE_NUMBER :
+                                {
+									nMappedNumType = 0x120001;   // Double byte circle numbers.
+                                }
+                                break;								
+								case SVX_NUM_NUMBER_UPPER_ZH_TW :
+								{
+									if ( sSuffix.Len() )			
+										nMappedNumType = 0x160001;   // Traditional Chinese with single-byte period.
+									else
+										nMappedNumType = 0x150001;   // Traditional Chinese.
+								}
+								break;
+								case SVX_NUM_NUMBER_LOWER_ZH :
+								{
+									if ( sSuffix == String( sal_Unicode(0xff0e)) )
+										nMappedNumType = 0x260001;   // Japanese with double-byte period.
+									else if ( sSuffix.Len() )
+										nMappedNumType = 0x1B0001;   // Japanese/Korean with single-byte period.
+									else
+										nMappedNumType = 0x1A0001;   // Japanese/Korean.
+								}
+								break;
+								case SVX_NUM_FULL_WIDTH_ARABIC :
+								{
+									if ( sSuffix.Len() )			
+										nMappedNumType = 0x1D0001;   // Double-byte Arabic numbers with double-byte period.
+									else
+										nMappedNumType = 0x1C0001;   // Double-byte Arabic numbers.
+								}
+								break;
 								default:
 									break;
                             }
@@ -2794,6 +2849,7 @@ void ParagraphObj::ImplGetNumberingLevel( PPTExBulletProvider& rBuProv, sal_Int1
                         if ( mbIsBullet && bNumberingIsNumber )
                             nBulletFlags |= 1;
                     }
+		default: break;
                 }
             }
         }
@@ -3425,6 +3481,11 @@ void PPTWriter::ImplWriteTextStyleAtom( SvStream& rOut, int nTextInstance, sal_u
                             case SVX_NUM_ROMAN_UPPER :
                             case SVX_NUM_ROMAN_LOWER :
                             case SVX_NUM_ARABIC :
+							case SVX_NUM_NUMBER_UPPER_ZH:
+							case SVX_NUM_CIRCLE_NUMBER:
+							case SVX_NUM_NUMBER_UPPER_ZH_TW:
+							case SVX_NUM_NUMBER_LOWER_ZH:
+							case SVX_NUM_FULL_WIDTH_ARABIC:
                                 nNumberingType = pBulletPara->nMappedNumType;
                             break;
 
@@ -4171,7 +4232,7 @@ sal_Bool PPTWriter::ImplCreatePresentationPlaceholder( const sal_Bool bMasterPag
 		aPropOpt.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x110001 );
 		aPropOpt.AddOpt( ESCHER_Prop_lineColor, 0x8000001 );
 		aPropOpt.AddOpt( ESCHER_Prop_shadowColor, 0x8000002 );
-		aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+		aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 		sal_uInt32 nLineFlags = 0x90001;
 		if ( aPropOpt.GetOpt( ESCHER_Prop_fNoLineDrawDash, nLineFlags ) )
 			nLineFlags |= 0x10001;  // draw dashed line if no line
@@ -4233,14 +4294,17 @@ void PPTWriter::ImplCreateTextShape( EscherPropertyContainer& rPropOpt, EscherSo
     mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
     ImplCreateShape( ESCHER_ShpInst_TextBox, 0xa00, rSolver );
     if ( bFill )
-        rPropOpt.CreateFillProperties( mXPropSet, sal_True );
+        rPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 	if ( ImplGetText() )
 		rPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 }
 
 void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& aSolverContainer, PageType ePageType, sal_Bool bMasterPage, int nPageNumber )
 {
-    sal_uInt32  nInstance, nGroups, nShapes, nShapeCount, nPer, nLastPer, nIndices, nGroupLevel = 0, nOlePictureId;
+    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+    // sal_uInt32  nGroupLevel = 0;
+
+    sal_uInt32  nInstance, nGroups, nShapes, nShapeCount, nPer, nLastPer, nIndices, nOlePictureId;
     sal_uInt16  nEffectCount;
     ::com::sun::star::awt::Point   aTextRefPoint;
 
@@ -4389,7 +4453,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 				{
 	                ImplCreateShape( eShapeType, nMirrorFlags | 0xa00, aSolverContainer );
 					aPropOpt.CreateCustomShapeProperties( eShapeType, mXShape );
-					aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+					aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape);
 					if ( ImplGetText() )
 					{
 						if ( !aPropOpt.IsFontWork() )
@@ -4426,7 +4490,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 {
                     ImplCreateShape( ESCHER_ShpInst_Rectangle, 0xa00, aSolverContainer );          // Flags: Connector | HasSpt
                 }
-                aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 				if ( ImplGetText() )
 					aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_False );
             }
@@ -4444,7 +4508,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 {
                     mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                     ImplCreateShape( ESCHER_ShpInst_Ellipse, 0xa00, aSolverContainer );            // Flags: Connector | HasSpt
-                    aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                    aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 					if ( ImplGetText() )
 						aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_False );
 				}
@@ -4463,8 +4527,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                         // already applied to the polygon, nothing to do there
 						if ( ImplGetText() )
 						{
-							mpPptEscherEx->EnterGroup();
-							nGroupLevel = mpPptEscherEx->GetGroupLevel();
+							// #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                            // mpPptEscherEx->EnterGroup( 0,0 );
+							// nGroupLevel = mpPptEscherEx->GetGroupLevel();
 							bNeedText = sal_False;
 							bAdditionalText = true;
                             fTextRotation = mfObjectRotation;
@@ -4480,7 +4545,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     if(aOutline.isClosed())
                     {
                         if ( aPropOpt.CreatePolygonProperties( mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_False, aNewRect, &aPolygon ) )
-                            aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                            aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
                     }
                     else
                     {
@@ -4532,6 +4597,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                             << nPageId;
                 PPTExOleObjEntry* pEntry = new PPTExOleObjEntry( OCX_CONTROL, mpExEmbed->Tell() );
                 pEntry->xControlModel = aXControlModel;
+                pEntry->xShape = mXShape;
                 maExOleObj.Insert( pEntry );
 
                 mnExEmbed++;
@@ -4605,6 +4671,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 ImplCreateShape( ESCHER_ShpInst_HostControl, nSpFlags, aSolverContainer );
                 if ( aPropOpt.CreateGraphicProperties( mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "MetaFile" ) ), sal_False  ) )
                     aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
+                //export form control graphic
+                else if ( aPropOpt.CreateBlipPropertiesforOLEControl(mXPropSet,mXShape))
+                    aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
                 aPropOpt.AddOpt( ESCHER_Prop_pictureId, mnExEmbed );
                 aPropOpt.AddOpt( ESCHER_Prop_pictureActive, 0x10000 );
 
@@ -4671,8 +4740,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     aTextRefPoint = ::com::sun::star::awt::Point(basegfx::fround(maObjectRange.getMinX()), basegfx::fround(maObjectRange.getMinY()));
                     mnTextSize = 0;
                     bAdditionalText = true;
-                    fTextRotation = mfObjectRotation;
-                    mpPptEscherEx->EnterGroup( &maObjectRange, 0 );
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup( &maObjectRange, 0 );
                 }
                 mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                 sal_uInt32 nFlags = 0xa00;                                  // Flags: Connector | HasSpt
@@ -4696,8 +4765,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup();
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup();
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = true;
                     fTextRotation = mfObjectRotation;
                     mnTextSize = 0;
@@ -4715,15 +4785,16 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 //maObjectPosition = basegfx::B2DPoint(aNewRect.X, aNewRect.Y);
                 //maObjectScale = maMap100thMmToMs * basegfx::B2DVector(aNewRect.Width, aNewRect.Height);
 
-                aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                aPropOpt.CreateFillProperties( mXPropSet, sal_True , mXShape );
                 mfObjectRotation = 0.0;
             }
             else if ( bPolyLine )
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup();
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup();
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = true;
                     fTextRotation = mfObjectRotation;
                     mnTextSize = 0;
@@ -4743,8 +4814,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup();
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup();
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = true;
                     fTextRotation = mfObjectRotation;
                     mnTextSize = 0;
@@ -4764,8 +4836,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    mpPptEscherEx->EnterGroup();
-                    nGroupLevel = mpPptEscherEx->GetGroupLevel();
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // mpPptEscherEx->EnterGroup();
+                    // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = true;
                     fTextRotation = mfObjectRotation;
                     mnTextSize = 0;
@@ -4778,7 +4851,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 maObjectRange = basegfx::B2DRange(aNewRect.X, aNewRect.Y, aNewRect.X + aNewRect.Width, aNewRect.Y + aNewRect.Height);
                 maObjectRange.transform(maMap100thMmToMs);
 
-                aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+                aPropOpt.CreateFillProperties( mXPropSet, sal_True , mXShape );
                 mfObjectRotation = 0.0;
             }
             else if ( ( mType == "drawing.GraphicObject" ) || ( mType == "presentation.GraphicObject" ) )
@@ -4824,8 +4897,11 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     else
                     {
                         ImplCreateShape( ESCHER_ShpInst_PictureFrame, 0xa00, aSolverContainer );
+
                         if ( aPropOpt.CreateGraphicProperties( mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "GraphicURL" ) ), sal_False, sal_True ) )
+                        {
                             aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
+                        }
                     }
                 }
             }
@@ -4877,7 +4953,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 								aPropertyOptions.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x110001 );
 								aPropertyOptions.AddOpt( ESCHER_Prop_lineColor, 0x8000001 );
 								aPropertyOptions.AddOpt( ESCHER_Prop_shadowColor, 0x8000002 );
-								aPropertyOptions.CreateFillProperties( mXPropSet, sal_True );
+								aPropertyOptions.CreateFillProperties( mXPropSet, sal_True, mXShape );
 								sal_uInt32 nLineFlags = 0x90001;
 								if ( aPropertyOptions.GetOpt( ESCHER_Prop_fNoLineDrawDash, nLineFlags ) )
 									nLineFlags |= 0x10001;  // draw dashed line if no line
@@ -4925,7 +5001,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 							nPlaceHolderAtom = rLayout.nTypeOfTitle;
 							ImplCreateShape( ESCHER_ShpInst_Rectangle, 0x220, aSolverContainer );          // Flags: HaveAnchor | HaveMaster
 							aPropOpt.AddOpt( ESCHER_Prop_hspMaster, mnShapeMasterTitle );
-							aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+							aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 							aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 							ImplAdjustFirstLineLineSpacing( aTextObj, aPropOpt );
 							if ( mbEmptyPresObj )
@@ -4974,7 +5050,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 								aPropOpt2.AddOpt( ESCHER_Prop_lineColor, 0x8000001 );
 								aPropOpt2.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x90001 );
 								aPropOpt2.AddOpt( ESCHER_Prop_shadowColor, 0x8000002 );
-								aPropOpt2.CreateFillProperties( mXPropSet, sal_True );
+								aPropOpt2.CreateFillProperties( mXPropSet, sal_True, mXShape  );
 								sal_uInt32 nLineFlags = 0x90001;
 								if ( aPropOpt2.GetOpt( ESCHER_Prop_fNoLineDrawDash, nLineFlags ) )
 									nLineFlags |= 0x10001;  // draw dashed line if no line
@@ -4989,14 +5065,18 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 										<< (sal_Int16)basegfx::fround(maObjectRange.getMaxY());  // oben, links, rechts, unten ????
 								mpPptEscherEx->OpenContainer( ESCHER_ClientData );
 								mpPptEscherEx->AddAtom( 8, EPP_OEPlaceholderAtom );
+								sal_uInt8 PlaceHolderID = ( mType == "presentation.Subtitle") ? EPP_PLACEHOLDER_MASTERSUBTITLE:EPP_PLACEHOLDER_MASTERBODY;
 								*mpStrm << (sal_uInt32)1                                                        // PlacementID
-										<< (sal_uInt8)EPP_PLACEHOLDER_MASTERBODY                                    // PlaceHolderID
+										<< PlaceHolderID/*(sal_uInt8)EPP_PLACEHOLDER_MASTERBODY */                                   // PlaceHolderID
 										<< (sal_uInt8)0                                                         // Size of PlaceHolder ( 0 = FULL, 1 = HALF, 2 = QUARTER )
 										<< (sal_uInt16)0;                                                       // padword
 								mpPptEscherEx->CloseContainer();    // ESCHER_ClientData
 								mpPptEscherEx->OpenContainer( ESCHER_ClientTextbox );       // printf
 								mpPptEscherEx->AddAtom( 4, EPP_TextHeaderAtom );
-								*mpStrm << (sal_uInt32)EPP_TEXTTYPE_Body;
+								if ( mType == "presentation.Subtitle")
+									*mpStrm << (sal_uInt32)EPP_TEXTTYPE_CenterBody;
+								else
+									*mpStrm << (sal_uInt32)EPP_TEXTTYPE_Body;
 								mnTextSize = aTextObj.Count();
 								aTextObj.Write( mpStrm );
 								mpPptEscherEx->BeginAtom();
@@ -5026,7 +5106,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 							mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
 							ImplCreateShape( ESCHER_ShpInst_Rectangle, 0x220, aSolverContainer );          // Flags: HaveAnchor | HaveMaster
 							aPropOpt.AddOpt( ESCHER_Prop_hspMaster, mnShapeMasterBody );
-							aPropOpt.CreateFillProperties( mXPropSet, sal_True );
+							aPropOpt.CreateFillProperties( mXPropSet, sal_True, mXShape );
 							aPropOpt.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 							ImplAdjustFirstLineLineSpacing( aTextObj, aPropOpt );
 							if ( mbEmptyPresObj )
@@ -5043,6 +5123,13 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 }
                 if ( !mbPresObj )
                 {
+					if (ePageType == MASTER )
+					{
+						SdrObject* pObj = GetSdrObjectFromXShape( mXShape );
+						if (pObj && pObj->IsNotVisibleAsMaster())
+							continue;
+					}
+					
                     mType = "drawing.Text";
 	                ImplCreateTextShape( aPropOpt, aSolverContainer, true );
                 }
@@ -5200,7 +5287,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 				mfObjectRotation = 0.0;
                 mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
                 ImplCreateShape( ESCHER_ShpInst_PictureFrame, 0xa00, aSolverContainer );
-
+				if ( aPropOpt.CreateMediaGraphicProperties( mXShape ) )
+					aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
 				::com::sun::star::uno::Any aAny;
 				if ( PropValue::GetPropertyValue( aAny, mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "MediaURL" ) ), sal_True ) )
 				{
@@ -5251,6 +5339,18 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 									 << (sal_uInt16)EPP_ExObjRefAtom
 									 << (sal_uInt32)4
 									 << nRefId;
+						// write EPP_InteractiveInfo container for no_action
+						*pClientData << (sal_uInt32)( ( EPP_InteractiveInfo << 16 ) | 0xf ) << (sal_uInt32)24;
+						*pClientData << (sal_uInt16)0
+									 << (sal_uInt16)EPP_InteractiveInfoAtom
+									 << (sal_uInt32)16
+									 << (sal_uInt32) 0
+									 << (sal_uInt32) 0
+									 << (sal_uInt8) 6
+									 << (sal_uInt8) 0
+									 << (sal_uInt8) 0
+									 << (sal_uInt8) 0
+									 << (sal_uInt32) 0;
 					}
 				}
 			}
@@ -5494,6 +5594,11 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             }
             else
             {
+                // TTTT check against original
+                // if ( mnAngle < 0 )
+                //     mnAngle = ( 36000 + mnAngle ) % 36000;
+                // else
+                //     mnAngle = ( 36000 - ( mnAngle % 36000 ) );
                 ImplCreateTextShape( aPropOpt, aSolverContainer, false );
                 sal_Int32 nAngle(basegfx::fround(basegfx::snapToZeroRange(-mfObjectRotation / F_PI18000, 36000.0)));
         
@@ -5502,8 +5607,10 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 nAngle += 0x8000;
                 nAngle &=~0xffff;  // nAngle auf volle Gradzahl runden
                 aPropOpt.AddOpt( ESCHER_Prop_Rotation, nAngle );
-                mpPptEscherEx->SetGroupSnapPositionAndScale( nGroupLevel, maObjectRange );
-                mpPptEscherEx->SetGroupLogicPositionAndScale( nGroupLevel, maObjectRange );
+
+                // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                // mpPptEscherEx->SetGroupSnapPositionAndScale( nGroupLevel, maObjectRange );
+                // mpPptEscherEx->SetGroupLogicPositionAndScale( nGroupLevel, maObjectRange );
             }
             if ( !pClientTextBox )
                 pClientTextBox = new SvMemoryStream( 0x200, 0x200 );
@@ -5525,7 +5632,9 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             delete pClientTextBox, pClientTextBox = NULL;
 
             mpPptEscherEx->CloseContainer();  // ESCHER_SpContainer
-            mpPptEscherEx->LeaveGroup();
+            
+            // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+            // mpPptEscherEx->LeaveGroup();
         }
     }
     ClearGroupTable();                              // gruppierungen wegschreiben, sofern noch irgendwelche offen sind, was eigendlich nicht sein sollte
@@ -5545,10 +5654,11 @@ struct CellBorder
 	CellBorder() : mnPos ( 0 ), mnLength( 0 ){};
 };
 
-void PPTWriter::ImplCreateCellBorder( const CellBorder* pCellBorder, sal_Int32 nX1, sal_Int32 nY1, sal_Int32 nX2, sal_Int32 nY2 )
+sal_Bool PPTWriter::ImplCreateCellBorder( const CellBorder* pCellBorder, sal_Int32 nX1, sal_Int32 nY1, sal_Int32 nX2, sal_Int32 nY2)
 {
-	sal_Int32 nLineWidth = pCellBorder->maCellBorder.OuterLineWidth + pCellBorder->maCellBorder.InnerLineWidth;
-	if ( nLineWidth )
+	const sal_Int32 nLineWidth(2 * (pCellBorder->maCellBorder.OuterLineWidth + pCellBorder->maCellBorder.InnerLineWidth));
+
+    if ( nLineWidth )
 	{
 		mfObjectRotation = 0.0;
 		mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
@@ -5574,7 +5684,44 @@ void PPTWriter::ImplCreateCellBorder( const CellBorder* pCellBorder, sal_Int32 n
 					<< nX2
 					<< nY2;
 		mpPptEscherEx->CloseContainer();
+		return sal_True;
 	}
+	return sal_False;
+}
+
+//get merged cell's width
+sal_Int32 GetCellRight( sal_Int32 nColumn,  
+	const basegfx::B2DRange& rObjectRange,
+	std::vector< std::pair< sal_Int32, sal_Int32 > >& aColumns,
+	uno::Reference< table::XMergeableCell >& xCell )
+{
+	sal_Int32 nRight = aColumns[ nColumn ].first + aColumns[ nColumn ].second;
+	for ( sal_Int32 nColumnSpan = 1; nColumnSpan < xCell->getColumnSpan(); nColumnSpan++ )
+	{
+		sal_uInt32 nC = nColumnSpan + nColumn;
+		if ( nC < aColumns.size() )
+			nRight += aColumns[ nC ].second;
+		else
+			nRight = basegfx::fround(rObjectRange.getMaxX());
+	}
+	return nRight;
+}
+//get merged cell's height
+sal_Int32 GetCellBottom( sal_Int32 nRow, 
+	const basegfx::B2DRange& rObjectRange,
+	std::vector< std::pair< sal_Int32, sal_Int32 > >& aRows,
+	uno::Reference< table::XMergeableCell >& xCell )
+{
+	sal_Int32 nBottom = aRows[nRow].first + aRows[nRow].second;
+	for ( sal_Int32 nRowSpan = 1; nRowSpan < xCell->getRowSpan(); nRowSpan++ )
+	{
+		sal_uInt32 nR = nRowSpan + nRow;
+		if ( nR < aRows.size() )
+			nBottom += aRows[ nR ].second;
+		else
+			nBottom = basegfx::fround(rObjectRange.getMaxY());
+	}
+	return nBottom;
 }
 
 void PPTWriter::WriteCString( SvStream& rSt, const String& rString, sal_uInt32 nInstance )
@@ -5592,18 +5739,6 @@ void PPTWriter::WriteCString( SvStream& rSt, const String& rString, sal_uInt32 n
 void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, EscherSolverContainer& aSolverContainer,
 								EscherPropertyContainer& aPropOpt )
 {
-	mpPptEscherEx->OpenContainer( ESCHER_SpgrContainer );
-	mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
-	mpPptEscherEx->AddAtom( 16, ESCHER_Spgr, 1 );
-	*mpStrm		<< (sal_Int32)basegfx::fround(maObjectRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
-				<< (sal_Int32)basegfx::fround(maObjectRange.getMinY())    // TTTT: Check for mirrored if Min/Max needs to be exchanged
-				<< (sal_Int32)basegfx::fround(maObjectRange.getMaxX())
-				<< (sal_Int32)basegfx::fround(maObjectRange.getMaxY());
-
-    sal_uInt32 nShapeId = mpPptEscherEx->GenerateShapeId();
-	mpPptEscherEx->AddShape( ESCHER_ShpInst_Min, 0x201, nShapeId );		// Flags: Group | Patriarch
-	aSolverContainer.AddShape( rXShape, nShapeId );
-	EscherPropertyContainer aPropOpt2;
 	try
 	{
 		static const rtl::OUString	sModel( RTL_CONSTASCII_USTRINGPARAM ( "Model" ) );
@@ -5623,7 +5758,8 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 			std::vector< std::pair< sal_Int32, sal_Int32 > > aRows;
 
 			sal_uInt32 nPosition = basegfx::fround(maObjectRange.getMinX());
-			for ( sal_Int32 x = 0; x < nColumnCount; x++ )
+			
+            for ( sal_Int32 x = 0; x < nColumnCount; x++ )
 			{
 				uno::Reference< beans::XPropertySet > xPropSet( xColumns->getByIndex( x ), uno::UNO_QUERY_THROW );
                 long aWidth(0);
@@ -5633,8 +5769,16 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				nPosition += aWidth;
 			}
 
+            if(nPosition != basegfx::fround(maObjectRange.getMaxX()))
+            {
+                maObjectRange = basegfx::B2DRange(
+                    maObjectRange.getMinX(), maObjectRange.getMinY(),
+                    nPosition, maObjectRange.getMaxX());
+            }
+
 			nPosition = basegfx::fround(maObjectRange.getMinY());
-			for ( sal_Int32 y = 0; y < nRowCount; y++ )
+			
+            for ( sal_Int32 y = 0; y < nRowCount; y++ )
 			{
 				uno::Reference< beans::XPropertySet > xPropSet( xRows->getByIndex( y ), uno::UNO_QUERY_THROW );
                 long aHeight(0);
@@ -5643,6 +5787,27 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				aRows.push_back( std::pair< sal_Int32, sal_Int32 >( nPosition, aHeight ) );
 				nPosition += aHeight;
 			}
+
+            if(nPosition != basegfx::fround(maObjectRange.getMaxY()))
+            {
+                maObjectRange = basegfx::B2DRange(
+                    maObjectRange.getMinX(), maObjectRange.getMinY(),
+                    maObjectRange.getMaxX(), nPosition);
+            }
+
+            mpPptEscherEx->OpenContainer( ESCHER_SpgrContainer );
+			mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
+			mpPptEscherEx->AddAtom( 16, ESCHER_Spgr, 1 );
+
+            *mpStrm		<< (sal_Int32)basegfx::fround(maObjectRange.getMinX())	// Bounding box fuer die Gruppierten shapes an die sie attached werden
+				        << (sal_Int32)basegfx::fround(maObjectRange.getMinY())    // TTTT: Check for mirrored if Min/Max needs to be exchanged
+				        << (sal_Int32)basegfx::fround(maObjectRange.getMaxX())
+				        << (sal_Int32)basegfx::fround(maObjectRange.getMaxY());
+
+			sal_uInt32 nShapeId = mpPptEscherEx->GenerateShapeId();
+			mpPptEscherEx->AddShape( ESCHER_ShpInst_Min, 0x201, nShapeId );		// Flags: Group | Patriarch
+			aSolverContainer.AddShape( rXShape, nShapeId );
+			EscherPropertyContainer aPropOpt2;
 
 			if ( nRowCount )
 			{
@@ -5679,26 +5844,9 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 						{
 							sal_Int32 nLeft   = aColumns[ nColumn ].first;
 							sal_Int32 nTop    = aRows[ nRow ].first;
-							sal_Int32 nRight  = nLeft + aColumns[ nColumn ].second;
-							sal_Int32 nBottom = nTop + aRows[ nRow ].second;
-
-							for ( sal_Int32 nColumnSpan = 1; nColumnSpan < xCell->getColumnSpan(); nColumnSpan++ )
-							{
-								sal_uInt32 nC = nColumnSpan + nColumn;
-								if ( nC < aColumns.size() )
-									nRight += aColumns[ nC ].second;
-								else
-									nRight = basegfx::fround(maObjectRange.getMaxX());
-							}
-							for ( sal_Int32 nRowSpan = 1; nRowSpan < xCell->getRowSpan(); nRowSpan++ )
-							{
-								sal_uInt32 nR = nRowSpan + nRow;
-								if ( nR < aColumns.size() )
-									nBottom += aRows[ nR ].second;
-								else
-									nBottom = basegfx::fround(maObjectRange.getMaxY());
-							}
-
+							sal_Int32 nRight  = GetCellRight( nColumn, maObjectRange, aColumns, xCell );
+							sal_Int32 nBottom = GetCellBottom( nRow,  maObjectRange, aRows, xCell );
+							
 							mbFontIndependentLineSpacing = sal_False;
 							mXPropSet = uno::Reference< beans::XPropertySet >( xCell, uno::UNO_QUERY_THROW );
 							mXText = uno::Reference< text::XSimpleText >( xCell, uno::UNO_QUERY_THROW );
@@ -5713,25 +5861,37 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 							ImplCreateShape( ESCHER_ShpInst_Rectangle, 0xa02, aSolverContainer );          // Flags: Connector | HasSpt | Child
 							aPropOptSp.CreateFillProperties( mXPropSet, sal_True );
 							aPropOptSp.AddOpt( ESCHER_Prop_fNoLineDrawDash, 0x90000 );
-                            aPropOptSp.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
+							aPropOptSp.CreateTextProperties( mXPropSet, mnTxId += 0x60, sal_False, sal_True );
 							aPropOptSp.AddOpt( ESCHER_Prop_WrapText, ESCHER_WrapSquare );
 
-                            SvMemoryStream aClientTextBox( 0x200, 0x200 );
-                            SvMemoryStream  aExtBu( 0x200, 0x200 );
+							SvMemoryStream aClientTextBox( 0x200, 0x200 );
+							SvMemoryStream  aExtBu( 0x200, 0x200 );
 
-                            ImplWriteTextStyleAtom( aClientTextBox, EPP_TEXTTYPE_Other, 0, NULL, aExtBu, &aPropOptSp );
+							ImplWriteTextStyleAtom( aClientTextBox, EPP_TEXTTYPE_Other, 0, NULL, aExtBu, &aPropOptSp );
 
-                            aPropOptSp.Commit( *mpStrm );
-                            mpPptEscherEx->AddAtom( 16, ESCHER_ChildAnchor );
-                            *mpStrm 	<< nLeft
-                                        << nTop
-                                        << nRight
-                                        << nBottom;
+							// need write client data for extend bullet
+							if ( aExtBu.Tell() )
+							{
+								SvMemoryStream* pClientData = new SvMemoryStream( 0x200, 0x200 );
+								ImplProgTagContainer( pClientData, &aExtBu );
+								*mpStrm << (sal_uInt32)( ( ESCHER_ClientData << 16 ) | 0xf )
+									<< (sal_uInt32)pClientData->Tell();
 
-                            *mpStrm << (sal_uInt32)( ( ESCHER_ClientTextbox << 16 ) | 0xf )
-                                    << (sal_uInt32)aClientTextBox.Tell();
+								mpStrm->Write( pClientData->GetData(), pClientData->Tell() );
+								delete pClientData, pClientData = NULL;
+							}
 
-                            mpStrm->Write( aClientTextBox.GetData(), aClientTextBox.Tell() );
+							aPropOptSp.Commit( *mpStrm );
+							mpPptEscherEx->AddAtom( 16, ESCHER_ChildAnchor );
+							*mpStrm 	<< nLeft
+								<< nTop
+								<< nRight
+								<< nBottom;
+
+							*mpStrm << (sal_uInt32)( ( ESCHER_ClientTextbox << 16 ) | 0xf )
+								<< (sal_uInt32)aClientTextBox.Tell();
+
+							mpStrm->Write( aClientTextBox.GetData(), aClientTextBox.Tell() );
 							mpPptEscherEx->CloseContainer();
 						}
 					}
@@ -5745,106 +5905,112 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				static const rtl::OUString	sDiagonalBLTR( RTL_CONSTASCII_USTRINGPARAM ( "DiagonalBLTR" ) );
 
 				// creating horz lines
-				sal_Int32 nYPos = basegfx::fround(maObjectRange.getMinY());
 				for( sal_Int32 nLine = 0; nLine < ( xRows->getCount() + 1 ); nLine++ )
 				{
-					sal_Int32 nXPos = basegfx::fround(maObjectRange.getMinX());
-					std::vector< CellBorder > vCellBorders;
 					for( sal_Int32 nColumn = 0; nColumn < xColumns->getCount(); nColumn++ )
 					{
-						uno::Reference< beans::XPropertySet > xPropSet( xColumns->getByIndex( nColumn ), uno::UNO_QUERY_THROW );
-                        long aWidth(0);
-						xPropSet->getPropertyValue( sWidth ) >>= aWidth;
-                        aWidth = basegfx::fround(mfMap100thMmToMs * aWidth);
-
 						CellBorder aCellBorder;
-						aCellBorder.mnPos = nXPos;
-						aCellBorder.mnLength = aWidth;
+						aCellBorder.mnPos = aColumns[ nColumn ].first;
+						aCellBorder.mnLength = aColumns[ nColumn ].second;
+						sal_Bool bTop = sal_False;
+						//write nLine*nColumn cell's top border
 						if ( nLine < xRows->getCount() )
 						{	// top border
 							uno::Reference< table::XMergeableCell > xCell( xCellRange->getCellByPosition( nColumn, nLine ), uno::UNO_QUERY_THROW );
-							uno::Reference< beans::XPropertySet > xPropSet2( xCell, uno::UNO_QUERY_THROW );
-							table::BorderLine aBorderLine;
-							if ( xPropSet2->getPropertyValue( sTopBorder ) >>= aBorderLine )
-								aCellBorder.maCellBorder = aBorderLine;
+							if ( !xCell->isMerged()  )
+							{
+								uno::Reference< beans::XPropertySet > xPropSet2( xCell, uno::UNO_QUERY_THROW );
+								table::BorderLine aBorderLine;
+								if ( xPropSet2->getPropertyValue( sTopBorder ) >>= aBorderLine )
+									aCellBorder.maCellBorder = aBorderLine;
+								sal_Int32 nRight  = GetCellRight( nColumn, maObjectRange, aColumns, xCell );
+								bTop = ImplCreateCellBorder( &aCellBorder, aCellBorder.mnPos,
+									aRows[ nLine ].first, nRight,  aRows[ nLine ].first );
+							}
 						}
-						if ( nLine )
+
+						//if nLine*nColumn cell's top border is empty, check (nLine-1)*nColumn cell's bottom border
+						//and write the last row's bottom border
+						if (( nLine && !bTop ) || (nLine == xRows->getCount()))
 						{	// bottom border
-							uno::Reference< table::XMergeableCell > xCell( xCellRange->getCellByPosition( nColumn, nLine - 1 ), uno::UNO_QUERY_THROW );
-							uno::Reference< beans::XPropertySet > xPropSet2( xCell, uno::UNO_QUERY_THROW );
-							table::BorderLine aBorderLine;
-							if ( xPropSet2->getPropertyValue( sBottomBorder ) >>= aBorderLine )
-								aCellBorder.maCellBorder = aBorderLine;
+							sal_Int32 nRow =  nLine;
+							
+							while( nRow )
+							{   //find last no merged cell
+								uno::Reference< table::XMergeableCell > xCell( xCellRange->getCellByPosition( nColumn, nRow - 1 ), uno::UNO_QUERY_THROW );
+								if ( !xCell->isMerged()  )
+								{
+									sal_Int32 nRight  = GetCellRight( nColumn, maObjectRange, aColumns, xCell );
+									sal_Int32 nBottom = GetCellBottom( nRow - 1, maObjectRange, aRows, xCell );
+									if ( nBottom == ( aRows[ nLine-1 ].first + aRows[ nLine-1 ].second ) )
+									{
+										uno::Reference< table::XMergeableCell > xCellOwn( xCellRange->getCellByPosition( nColumn, nRow - 1 ), uno::UNO_QUERY_THROW );
+										uno::Reference< beans::XPropertySet > xPropSet2( xCellOwn, uno::UNO_QUERY_THROW );
+										table::BorderLine aBorderLine;
+										if ( xPropSet2->getPropertyValue( sBottomBorder ) >>= aBorderLine )
+											aCellBorder.maCellBorder = aBorderLine;
+										ImplCreateCellBorder( &aCellBorder, aCellBorder.mnPos,
+											nBottom, nRight, nBottom);
+									}
+									nRow=0;
+								}
+								else
+									nRow--;
+							}
 						}
-						vCellBorders.push_back( aCellBorder );
-						nXPos += aWidth;
-					}
-					std::vector< CellBorder >::const_iterator aCellBorderIter( vCellBorders.begin() );
-					while( aCellBorderIter != vCellBorders.end() )
-					{
-						ImplCreateCellBorder( &*aCellBorderIter, aCellBorderIter->mnPos, nYPos,
-							static_cast< sal_Int32 >( aCellBorderIter->mnPos + aCellBorderIter->mnLength ), nYPos );
-						aCellBorderIter++;
-					}
-					if ( nLine < xRows->getCount() )
-					{
-						uno::Reference< beans::XPropertySet > xPropSet( xRows->getByIndex( nLine ), uno::UNO_QUERY_THROW );
-                        long aHeight(0);
-						xPropSet->getPropertyValue( sHeight ) >>= aHeight;
-                        aHeight = basegfx::fround(mfMap100thMmToMs * aHeight);
-						nYPos += aHeight;
 					}
 				}
 
 				// creating vertical lines
-				sal_Int32 nXPos = basegfx::fround(maObjectRange.getMinX());
 				for( sal_Int32 nLine = 0; nLine < ( xColumns->getCount() + 1 ); nLine++ )
 				{
-					nYPos = basegfx::fround(maObjectRange.getMinY());
-					std::vector< CellBorder > vCellBorders;
 					for( sal_Int32 nRow = 0; nRow < xRows->getCount(); nRow++ )
 					{
-						uno::Reference< beans::XPropertySet > xPropSet( xRows->getByIndex( nRow ), uno::UNO_QUERY_THROW );
-                        long aHeight(0);
-						xPropSet->getPropertyValue( sHeight ) >>= aHeight;
-                        aHeight = basegfx::fround(mfMap100thMmToMs * aHeight);
 
 						CellBorder aCellBorder;
-						aCellBorder.mnPos = nYPos;
-						aCellBorder.mnLength = aHeight;
+						aCellBorder.mnPos = aRows[ nRow].first;
+						aCellBorder.mnLength = aRows[ nRow].second;
+						sal_Bool bLeft = sal_False;
 						if ( nLine < xColumns->getCount() )
 						{	// left border
 							uno::Reference< table::XMergeableCell > xCell( xCellRange->getCellByPosition( nLine, nRow ), uno::UNO_QUERY_THROW );
-							uno::Reference< beans::XPropertySet > xCellSet( xCell, uno::UNO_QUERY_THROW );
-							table::BorderLine aBorderLine;
-							if ( xCellSet->getPropertyValue( sLeftBorder ) >>= aBorderLine )
-								aCellBorder.maCellBorder = aBorderLine;
+							if (!xCell->isMerged() )
+							{
+								uno::Reference< beans::XPropertySet > xCellSet( xCell, uno::UNO_QUERY_THROW );
+								table::BorderLine aBorderLine;
+								if ( xCellSet->getPropertyValue( sLeftBorder ) >>= aBorderLine )
+									aCellBorder.maCellBorder = aBorderLine;
+								sal_Int32 nBottom = GetCellBottom( nRow, maObjectRange, aRows, xCell );
+								bLeft = ImplCreateCellBorder( &aCellBorder, aColumns[nLine].first, aCellBorder.mnPos,
+									aColumns[nLine].first, nBottom );
+							}
 						}
-						if ( nLine )
+						if ( ( nLine && !bLeft )||(nLine == xColumns->getCount()))
 						{	// right border
-							uno::Reference< table::XMergeableCell > xCell( xCellRange->getCellByPosition( nLine - 1, nRow ), uno::UNO_QUERY_THROW );
-							uno::Reference< beans::XPropertySet > xCellSet( xCell, uno::UNO_QUERY_THROW );
-							table::BorderLine aBorderLine;
-							if ( xCellSet->getPropertyValue( sRightBorder ) >>= aBorderLine )
-								aCellBorder.maCellBorder = aBorderLine;
+							sal_Int32 nColumn = nLine;
+							while ( nColumn )
+							{
+								uno::Reference< table::XMergeableCell > xCell( xCellRange->getCellByPosition( nColumn - 1, nRow ), uno::UNO_QUERY_THROW );
+								if (!xCell->isMerged() )
+								{
+									sal_Int32 nRight  = GetCellRight( nColumn-1, maObjectRange, aColumns, xCell );
+									sal_Int32 nBottom = GetCellBottom( nRow, maObjectRange, aRows, xCell );
+									if ( nRight == (aColumns[nLine-1].first + aColumns[nLine-1].second) )
+									{
+										uno::Reference< table::XMergeableCell > xCellOwn( xCellRange->getCellByPosition( nColumn - 1, nRow ), uno::UNO_QUERY_THROW );
+										uno::Reference< beans::XPropertySet > xCellSet( xCellOwn, uno::UNO_QUERY_THROW );
+										table::BorderLine aBorderLine;
+										if ( xCellSet->getPropertyValue( sRightBorder ) >>= aBorderLine )
+											aCellBorder.maCellBorder = aBorderLine;
+										ImplCreateCellBorder( &aCellBorder, nRight, aCellBorder.mnPos,
+											nRight,  nBottom );
+									}
+									nColumn = 0;
+								}
+								else 
+									nColumn --;
+							}
 						}
-						vCellBorders.push_back( aCellBorder );
-						nYPos += aHeight;
-					}
-					std::vector< CellBorder >::const_iterator aCellBorderIter( vCellBorders.begin() );
-					while( aCellBorderIter != vCellBorders.end() )
-					{
-						ImplCreateCellBorder( &*aCellBorderIter, nXPos, aCellBorderIter->mnPos,
-							nXPos, static_cast< sal_Int32 >( aCellBorderIter->mnPos + aCellBorderIter->mnLength ) );
-						aCellBorderIter++;
-					}
-					if ( nLine < xColumns->getCount() )
-					{
-						uno::Reference< beans::XPropertySet > xPropSet( xColumns->getByIndex( nLine ), uno::UNO_QUERY_THROW );
-                        long aWidth(0);
-						xPropSet->getPropertyValue( sWidth ) >>= aWidth;
-                        aWidth = basegfx::fround(mfMap100thMmToMs * aWidth);
-						nXPos += aWidth;
 					}
 				}
 			}

@@ -73,6 +73,7 @@
 #include <bf_svx/xlnwtit.hxx>
 #endif
 
+#include "arrayhelper.hxx"
 #include "pairs.hxx"
 #include "chmod3d.hxx"
 #include "chaxis.hxx"
@@ -785,6 +786,8 @@ namespace binfilter {
 /*N*/ 	long	nRowCnt = GetRowCount();
 /*N*/ 	short	nCol, nRow;
 /*N*/ 
+        if( nColCnt<0 || (static_cast< unsigned long>(nColCnt) > (std::numeric_limits<sal_uInt16>::max()-1)/2) )
+            return (SdrObjGroup*) pScene;
 /*N*/ 	Polygon     aFrontExtrude(1+nColCnt*2);
 /*N*/ 
 /*N*/ 	long nGapX      = nW * nGapWidth / 1000;
@@ -1300,7 +1303,9 @@ namespace binfilter {
 /*N*/ 		{
 /*N*/ 			DataDescription* pDescription = NULL;
 /*N*/ 
-/*N*/ 			double* fOldData = new double[nColCnt];
+/*N*/ 			double* fOldData = ArrayHelper<double>::create_long_size(nColCnt);
+                if( !fOldData )
+                    return (SdrObjGroup*) pScene;
 /*N*/ 			a3DPos.Z() += nBarWidthZ;
 /*N*/ 
 /*N*/ 			for (nRow = 0; nRow < nRowCnt; nRow++)
@@ -1433,7 +1438,9 @@ namespace binfilter {
 /*N*/ 
 /*N*/             // #100288# same structure as all other charts (no stacked and special groups)
 /*N*/             // create groups for all series
-/*N*/             E3dScene ** pDataGroup = new E3dScene * [ nRowCnt ];
+/*N*/             E3dScene ** pDataGroup = ArrayHelper<E3dScene*>::create_long_size( nRowCnt );
+                  if(!pDataGroup)
+                      return (SdrObjGroup*) pScene;
 /*N*/ 
 /*N*/             // create 3d sub-scenes for each data series. Insertion into the
 /*N*/             // main scene is done at the end of the for loop (#109628#)
@@ -2024,10 +2031,7 @@ namespace binfilter {
 /*N*/ 			{
 /*N*/ 				// FG: Das ist eine Variable die in BuildChart gesetzt wird, kutz bevor
 /*N*/ 				//     das Objekt zerstoert wird.
-/*?*/ 				double fRelativeXPosition = ((double) aTitleXAxisPosition.X()) / aInitialSizefor3d.Width();
-/*?*/ 				double fRelativeYPosition = ((double) aTitleXAxisPosition.Y()) / aInitialSizefor3d.Height();
-/*?*/ 				aXAxesTitlePosition.X() = (long)(aPageSize.Width() * fRelativeXPosition);
-/*?*/ 				aXAxesTitlePosition.Y() = (long)(aPageSize.Height() * fRelativeYPosition);
+/*?*/ 				aXAxesTitlePosition = calcRelativePosition( aTitleXAxisPosition, aInitialSizefor3d, aPageSize );
 /*N*/ 			}
 /*N*/ 			else
 /*N*/ 			{
@@ -2056,10 +2060,7 @@ namespace binfilter {
 /*N*/ 			{
 /*N*/ 				// FG: Das ist eine Variable die in BuildChart gesetzt wird, kutz bevor
 /*N*/ 				//     das Objekt zerstoert wird.
-/*N*/ 				double fRelativeXPosition = ((double) aTitleYAxisPosition.X()) / aInitialSizefor3d.Width();
-/*N*/ 				double fRelativeYPosition = ((double) aTitleYAxisPosition.Y()) / aInitialSizefor3d.Height();
-/*N*/ 				aYAxesTitlePosition.X() = (long)(aPageSize.Width() * fRelativeXPosition);
-/*N*/ 				aYAxesTitlePosition.Y() = (long)(aPageSize.Height() * fRelativeYPosition);
+/*N*/ 				aYAxesTitlePosition = calcRelativePosition( aTitleYAxisPosition, aInitialSizefor3d, aPageSize );
 /*N*/ 			}
 /*N*/ 			else
 /*N*/ 			{
@@ -2093,10 +2094,7 @@ namespace binfilter {
 /*N*/ 			{
 /*N*/ 				// FG: Das ist eine Variable die in BuildChart gesetzt wird, kutz bevor
 /*N*/ 				//     das Objekt zerstoert wird.
-/*N*/ 				double fRelativeXPosition = ((double) aTitleZAxisPosition.X()) / aInitialSizefor3d.Width();
-/*N*/ 				double fRelativeYPosition = ((double) aTitleZAxisPosition.Y()) / aInitialSizefor3d.Height();
-/*N*/ 				aZAxesTitlePosition.X() = (long)(aPageSize.Width() * fRelativeXPosition);
-/*N*/ 				aZAxesTitlePosition.Y() = (long)(aPageSize.Height() * fRelativeYPosition);
+/*N*/ 				aZAxesTitlePosition = calcRelativePosition( aTitleZAxisPosition, aInitialSizefor3d, aPageSize );
 /*N*/ 			}
 /*N*/ 			else if(aZAxesTitlePosition.Y()<aZAxisOutRect.GetHeight()/2)
 /*N*/ 			{

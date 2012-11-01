@@ -423,8 +423,9 @@ namespace drawinglayer
 
 				if(pLineAttribute)
 				{
-					// pre-fill fLineWidth
-					fLineWidth = pLineAttribute->getWidth();
+					// pre-fill fLineWidth #119198# Need to apply maCurrentTransformation, too (!)
+					const basegfx::B2DVector aDiscreteUnit(maCurrentTransformation * basegfx::B2DVector(pLineAttribute->getWidth(), 0.0));
+					fLineWidth = aDiscreteUnit.getLength();
 
 					// pre-fill fMiterLength
 					fMiterLength = fLineWidth;
@@ -589,7 +590,7 @@ namespace drawinglayer
             Even for XFillTransparenceItem it is used, thus it may need to be supported in
             UnifiedTransparencePrimitive2D, too, when interpreted as normally filled PolyPolygon.
 			Implemented for:
-				PRIMITIVE2D_ID_POLYPOLYGONBITMAPPRIMITIVE2D,
+				PRIMITIVE2D_ID_POLYPOLYGONGRAPHICPRIMITIVE2D,
 				PRIMITIVE2D_ID_POLYPOLYGONHATCHPRIMITIVE2D,
 				PRIMITIVE2D_ID_POLYPOLYGONGRADIENTPRIMITIVE2D,
 				PRIMITIVE2D_ID_POLYPOLYGONCOLORPRIMITIVE2D,
@@ -1162,14 +1163,29 @@ namespace drawinglayer
     					// direct draw of hairline; use default processing
     					// support SvtGraphicStroke MetaCommentAction
 					    const basegfx::BColor aLineColor(maBColorModifierStack.getModifiedColor(rHairlinePrimitive.getBColor()));
-					    SvtGraphicStroke* pSvtGraphicStroke = impTryToCreateSvtGraphicStroke(
-                            rHairlinePrimitive.getB2DPolygon(), 
-                            &aLineColor, 
-                            0, 0, 0, 0);
+                        SvtGraphicStroke* pSvtGraphicStroke = 0;
 
-					    impStartSvtGraphicStroke(pSvtGraphicStroke);
+                        // #121267# Not needed, does not give better quality compared with
+                        // the META_POLYPOLYGON_ACTION written by RenderPolygonHairlinePrimitive2D
+                        // below
+                        bool bSupportSvtGraphicStroke(false);
+
+                        if(bSupportSvtGraphicStroke)
+                        {
+                            pSvtGraphicStroke = impTryToCreateSvtGraphicStroke(
+                                rHairlinePrimitive.getB2DPolygon(), 
+                                &aLineColor, 
+                                0, 0, 0, 0);
+
+    					    impStartSvtGraphicStroke(pSvtGraphicStroke);
+                        }
+
 					    RenderPolygonHairlinePrimitive2D(static_cast< const primitive2d::PolygonHairlinePrimitive2D& >(rCandidate), false);
-					    impEndSvtGraphicStroke(pSvtGraphicStroke);
+					    
+                        if(bSupportSvtGraphicStroke)
+                        {
+                            impEndSvtGraphicStroke(pSvtGraphicStroke);
+                        }
                     }
 					break;
 				}
@@ -1304,9 +1320,35 @@ namespace drawinglayer
                             &rStrokeArrowPrimitive.getStart(), 
                             &rStrokeArrowPrimitive.getEnd());
 
+                        // write LineGeometry start marker
 			    		impStartSvtGraphicStroke(pSvtGraphicStroke);
-				    	process(rCandidate.get2DDecomposition(getViewInformation2D()));
-					    impEndSvtGraphicStroke(pSvtGraphicStroke);
+
+                        // #116162# When B&W is set as DrawMode, DRAWMODE_WHITEFILL is used
+                        // to let all fills be just white; for lines DRAWMODE_BLACKLINE is used
+                        // so all line geometry is supposed to get black. Since in the in-between
+                        // stages of line geometry drawing filled polygons are used (e.g. line
+                        // start/ends) it is necessary to change these drawmodes to preserve
+                        // that lines shall be black; thus change DRAWMODE_WHITEFILL to
+                        // DRAWMODE_BLACKFILL during line geometry processing to have line geometry
+                        // parts filled black.
+                        const sal_uLong nOldDrawMode(mpOutputDevice->GetDrawMode());
+                        const bool bDrawmodeChange(nOldDrawMode & DRAWMODE_WHITEFILL && mnSvtGraphicStrokeCount);
+
+                        if(bDrawmodeChange)
+                        {
+                            mpOutputDevice->SetDrawMode((nOldDrawMode & ~DRAWMODE_WHITEFILL) | DRAWMODE_BLACKFILL);
+                        }
+
+                        // process sub-line geometry (evtl. filled PolyPolygons)
+                        process(rCandidate.get2DDecomposition(getViewInformation2D()));
+
+                        if(bDrawmodeChange)
+                        {
+                            mpOutputDevice->SetDrawMode(nOldDrawMode);
+                        }
+
+                        // write LineGeometry end marker
+                        impEndSvtGraphicStroke(pSvtGraphicStroke);
                     }
 
                     break;
@@ -1317,20 +1359,20 @@ namespace drawinglayer
 					RenderBitmapPrimitive2D(static_cast< const primitive2d::BitmapPrimitive2D& >(rCandidate));
 					break;
 				}
-				case PRIMITIVE2D_ID_POLYPOLYGONBITMAPPRIMITIVE2D :
+				case PRIMITIVE2D_ID_POLYPOLYGONGRAPHICPRIMITIVE2D :
 				{
-					// need to handle PolyPolygonBitmapPrimitive2D here to support XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END
-					const primitive2d::PolyPolygonBitmapPrimitive2D& rBitmapCandidate = static_cast< const primitive2d::PolyPolygonBitmapPrimitive2D& >(rCandidate);
+					// need to handle PolyPolygonGraphicPrimitive2D here to support XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END
+					const primitive2d::PolyPolygonGraphicPrimitive2D& rBitmapCandidate = static_cast< const primitive2d::PolyPolygonGraphicPrimitive2D& >(rCandidate);
 					basegfx::B2DPolyPolygon aLocalPolyPolygon(rBitmapCandidate.getB2DPolyPolygon());
 
                     if(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
                     {
                         // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
                         // per polygon. If there are more use the splitted polygon and call recursively
-                        primitive2d::PolyPolygonBitmapPrimitive2D* pSplitted =
-							new primitive2d::PolyPolygonBitmapPrimitive2D(
+                        primitive2d::PolyPolygonGraphicPrimitive2D* pSplitted =
+							new primitive2d::PolyPolygonGraphicPrimitive2D(
                             aLocalPolyPolygon,
-                            rBitmapCandidate.getFillBitmap());
+                            rBitmapCandidate.getFillGraphic());
 						const primitive2d::Primitive2DReference aRefSplitted(pSplitted);
                         
                         processBasePrimitive2D(*pSplitted, aRefSplitted);
@@ -1341,62 +1383,57 @@ namespace drawinglayer
 
 					    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
 					    {
-						    aLocalPolyPolygon.transform(maCurrentTransformation);
-						    // calculate transformation. Get real object size, all values in FillBitmapAttribute
-						    // are relative to the unified object
-						    const attribute::FillBitmapAttribute& rFillBitmapAttribute = rBitmapCandidate .getFillBitmap();
-						    const basegfx::B2DRange aOutlineRange(basegfx::tools::getRange(aLocalPolyPolygon));
-						    const basegfx::B2DVector aOutlineSize(aOutlineRange.getRange());
+                            // #121194# Changed implementation and checked usages fo convert to metafile,
+                            // presentation start (uses SvtGraphicFill) and printing.
 
-						    // get absolute values
-						    const basegfx::B2DVector aFillBitmapSize(rFillBitmapAttribute.getSize() * aOutlineSize);
-						    const basegfx::B2DPoint aFillBitmapTopLeft(rFillBitmapAttribute.getTopLeft() * aOutlineSize);
+                            // calculate transformation. Get real object size, all values in FillGraphicAttribute
+						    // are relative to the unified object
+						    aLocalPolyPolygon.transform(maCurrentTransformation);
+                            const basegfx::B2DVector aOutlineSize(aLocalPolyPolygon.getB2DRange().getRange());
 
 						    // the scaling needs scale from pixel to logic coordinate system
-						    const BitmapEx& rBitmapEx = rFillBitmapAttribute.getBitmapEx();
-						    Size aBmpSizePixel(rBitmapEx.GetSizePixel());
+						    const attribute::FillGraphicAttribute& rFillGraphicAttribute = rBitmapCandidate.getFillGraphic();
+						    const Size aBmpSizePixel(rFillGraphicAttribute.getGraphic().GetSizePixel());
 
-						    if(!aBmpSizePixel.Width())
-						    {
-							    aBmpSizePixel.Width() = 1;
-						    }
-
-						    if(!aBmpSizePixel.Height())
-						    {
-							    aBmpSizePixel.Height() = 1;
-						    }
+						    // setup transformation like in impgrfll. Multiply with aOutlineSize
+                            // to get from unit coordinates in rFillGraphicAttribute.getGraphicRange()
+                            // to object coordinates with object's top left being at (0,0). Divide
+                            // by pixel size so that scale from pixel to logic will work in SvtGraphicFill.
+                            const basegfx::B2DVector aTransformScale(
+                                rFillGraphicAttribute.getGraphicRange().getRange() / 
+                                basegfx::B2DVector(
+                                    std::max(1.0, double(aBmpSizePixel.Width())), 
+                                    std::max(1.0, double(aBmpSizePixel.Height()))) * 
+                                aOutlineSize);
+                            const basegfx::B2DPoint aTransformPosition(
+                                rFillGraphicAttribute.getGraphicRange().getMinimum() * aOutlineSize);
 
 						    // setup transformation like in impgrfll
 						    SvtGraphicFill::Transform aTransform;
 
 						    // scale values are divided by bitmap pixel sizes
-						    aTransform.matrix[0] = aFillBitmapSize.getX() / aBmpSizePixel.Width();
-						    aTransform.matrix[4] = aFillBitmapSize.getY() / aBmpSizePixel.Height();
+						    aTransform.matrix[0] = aTransformScale.getX();
+						    aTransform.matrix[4] = aTransformScale.getY();
     						
                             // translates are absolute
-                            aTransform.matrix[2] = aFillBitmapTopLeft.getX();
-						    aTransform.matrix[5] = aFillBitmapTopLeft.getY();
+                            aTransform.matrix[2] = aTransformPosition.getX();
+						    aTransform.matrix[5] = aTransformPosition.getY();
 
-						    // setup fill graphic like in impgrfll
-						    Graphic aFillGraphic = Graphic(rBitmapEx);
-						    aFillGraphic.SetPrefMapMode(MapMode(MAP_PIXEL));
-						    aFillGraphic.SetPrefSize(aBmpSizePixel);
-
-						    pSvtGraphicFill = new SvtGraphicFill(
+                            pSvtGraphicFill = new SvtGraphicFill(
 							    PolyPolygon(aLocalPolyPolygon),
 							    Color(),
 							    0.0,
 							    SvtGraphicFill::fillEvenOdd,
 							    SvtGraphicFill::fillTexture,
 							    aTransform,
-							    rFillBitmapAttribute.getTiling(),
+							    rFillGraphicAttribute.getTiling(),
 							    SvtGraphicFill::hatchSingle,
 							    Color(),
 							    SvtGraphicFill::gradientLinear,
 							    Color(),
 							    Color(),
 							    0,
-							    aFillGraphic);
+							    rFillGraphicAttribute.getGraphic());
 					    }
 
 					    // Do use decomposition; encapsulate with SvtGraphicFill
@@ -1511,76 +1548,105 @@ namespace drawinglayer
 				}
 				case PRIMITIVE2D_ID_POLYPOLYGONGRADIENTPRIMITIVE2D :
                 {
-					const primitive2d::PolyPolygonGradientPrimitive2D& rGradientCandidate = static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate);
-			        basegfx::B2DPolyPolygon aLocalPolyPolygon(rGradientCandidate.getB2DPolyPolygon());
+                    basegfx::B2DVector aScale, aTranslate;
+                    double fRotate, fShearX;
 
-                    // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
-                    // per polygon. Split polygon until there are less than that
-                    while(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
-                        ;
+                    maCurrentTransformation.decompose(aScale, aTranslate, fRotate, fShearX);
 
-                    // for support of MetaCommentActions of the form XGRAD_SEQ_BEGIN, XGRAD_SEQ_END
-                    // it is safest to use the VCL OutputDevice::DrawGradient method which creates those.
-                    // re-create a VCL-gradient from FillGradientPrimitive2D and the needed tools PolyPolygon
-				    Gradient aVCLGradient;
-                    impConvertFillGradientAttributeToVCLGradient(aVCLGradient, rGradientCandidate.getFillGradient(), false);
-		            aLocalPolyPolygon.transform(maCurrentTransformation);
+                    if(!basegfx::fTools::equalZero(fRotate) || !basegfx::fTools::equalZero(fShearX))
+                    {
+                        // #121185# When rotation or shear is used, a VCL Gradient cannot be used directly.
+                        // This is because VCL Gradient mechanism does *not* support to rotate the gradient
+                        // with objects and this case is not expressable in a Metafile (and cannot be added
+                        // since the FileFormats used, e.g. *.wmf, do not support it either).
+                        // Such cases happen when a graphic object uses a Metafile as graphic information or
+                        // a fill style definition uses a Metafile. In this cases the graphic content is 
+                        // rotated with the graphic or filled object; this is not supported by the target 
+                        // format of this conversion renderer - Metafiles.
+                        // To solve this, not a Gradient is written, but the decomposition of this object
+                        // is written to the Metafile. This is the PolyPolygons building the gradient fill.
+                        // These will need more space and time, but the result will be as if the Gradient
+                        // was rotated with the object.
+                        // This mechanism is used by all exporters still not using Primtives (e.g. Print,
+                        // Slideshow, Export rto PDF, export to Picture, ...) but relying on Metafile 
+                        // transfers. One more reason to *change* these to primitives.
+                        // BTW: One more example how useful the principles of primitives are; the decomposition
+                        // is by definition a simpler, maybe more expensive representation of the same content.
+                        process(rCandidate.get2DDecomposition(getViewInformation2D()));
+                    }
+                    else
+                    {
+					    const primitive2d::PolyPolygonGradientPrimitive2D& rGradientCandidate = static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate);
+			            basegfx::B2DPolyPolygon aLocalPolyPolygon(rGradientCandidate.getB2DPolyPolygon());
+
+                        // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
+                        // per polygon. Split polygon until there are less than that
+                        while(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
+                            ;
+
+                        // for support of MetaCommentActions of the form XGRAD_SEQ_BEGIN, XGRAD_SEQ_END
+                        // it is safest to use the VCL OutputDevice::DrawGradient method which creates those.
+                        // re-create a VCL-gradient from FillGradientPrimitive2D and the needed tools PolyPolygon
+				        Gradient aVCLGradient;
+                        impConvertFillGradientAttributeToVCLGradient(aVCLGradient, rGradientCandidate.getFillGradient(), false);
+		                aLocalPolyPolygon.transform(maCurrentTransformation);
                     
-				    // #i82145# ATM VCL printing of gradients using curved shapes does not work,
-				    // i submitted the bug with the given ID to THB. When that task is fixed it is
-				    // necessary to again remove this subdivision since it decreases possible
-				    // printing quality (not even resolution-dependent for now). THB will tell
-				    // me when that task is fixed in the master
-				    const PolyPolygon aToolsPolyPolygon(basegfx::tools::adaptiveSubdivideByAngle(aLocalPolyPolygon));
+				        // #i82145# ATM VCL printing of gradients using curved shapes does not work,
+				        // i submitted the bug with the given ID to THB. When that task is fixed it is
+				        // necessary to again remove this subdivision since it decreases possible
+				        // printing quality (not even resolution-dependent for now). THB will tell
+				        // me when that task is fixed in the master
+				        const PolyPolygon aToolsPolyPolygon(basegfx::tools::adaptiveSubdivideByAngle(aLocalPolyPolygon));
 
-				    // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
-				    SvtGraphicFill* pSvtGraphicFill = 0;
+				        // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
+				        SvtGraphicFill* pSvtGraphicFill = 0;
 
-				    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
-				    {
-					    // setup gradient stuff like in like in impgrfll
-					    SvtGraphicFill::GradientType eGrad(SvtGraphicFill::gradientLinear);
+				        if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
+				        {
+					        // setup gradient stuff like in like in impgrfll
+					        SvtGraphicFill::GradientType eGrad(SvtGraphicFill::gradientLinear);
 
-					    switch(aVCLGradient.GetStyle())
-					    {
-						    default : // GRADIENT_LINEAR:
-						    case GRADIENT_AXIAL:
-							    eGrad = SvtGraphicFill::gradientLinear;
-							    break;
-						    case GRADIENT_RADIAL:
-						    case GRADIENT_ELLIPTICAL:
-							    eGrad = SvtGraphicFill::gradientRadial;
-							    break;
-						    case GRADIENT_SQUARE:
-						    case GRADIENT_RECT:
-							    eGrad = SvtGraphicFill::gradientRectangular;
-							    break;
-					    }
+					        switch(aVCLGradient.GetStyle())
+					        {
+						        default : // GRADIENT_LINEAR:
+						        case GRADIENT_AXIAL:
+							        eGrad = SvtGraphicFill::gradientLinear;
+							        break;
+						        case GRADIENT_RADIAL:
+						        case GRADIENT_ELLIPTICAL:
+							        eGrad = SvtGraphicFill::gradientRadial;
+							        break;
+						        case GRADIENT_SQUARE:
+						        case GRADIENT_RECT:
+							        eGrad = SvtGraphicFill::gradientRectangular;
+							        break;
+					        }
 						
-					    pSvtGraphicFill = new SvtGraphicFill(
-						    aToolsPolyPolygon,
-						    Color(),
-						    0.0,
-						    SvtGraphicFill::fillEvenOdd,
-						    SvtGraphicFill::fillGradient,
-						    SvtGraphicFill::Transform(),
-						    false,
-						    SvtGraphicFill::hatchSingle,
-						    Color(),
-						    eGrad,
-						    aVCLGradient.GetStartColor(),
-						    aVCLGradient.GetEndColor(),
-						    aVCLGradient.GetSteps(),
-						    Graphic());
-				    }
+					        pSvtGraphicFill = new SvtGraphicFill(
+						        aToolsPolyPolygon,
+						        Color(),
+						        0.0,
+						        SvtGraphicFill::fillEvenOdd,
+						        SvtGraphicFill::fillGradient,
+						        SvtGraphicFill::Transform(),
+						        false,
+						        SvtGraphicFill::hatchSingle,
+						        Color(),
+						        eGrad,
+						        aVCLGradient.GetStartColor(),
+						        aVCLGradient.GetEndColor(),
+						        aVCLGradient.GetSteps(),
+						        Graphic());
+				        }
 
-				    // call VCL directly; encapsulate with SvtGraphicFill
-				    impStartSvtGraphicFill(pSvtGraphicFill);
-		            mpOutputDevice->DrawGradient(aToolsPolyPolygon, aVCLGradient);
-				    impEndSvtGraphicFill(pSvtGraphicFill);
+				        // call VCL directly; encapsulate with SvtGraphicFill
+				        impStartSvtGraphicFill(pSvtGraphicFill);
+		                mpOutputDevice->DrawGradient(aToolsPolyPolygon, aVCLGradient);
+				        impEndSvtGraphicFill(pSvtGraphicFill);
 
-				    // NO usage of common own gradient randerer, not used ATM for VCL MetaFile, see text above
-				    // RenderPolyPolygonGradientPrimitive2D(static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate));
+				        // NO usage of common own gradient randerer, not used ATM for VCL MetaFile, see text above
+				        // RenderPolyPolygonGradientPrimitive2D(static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate));
+                    }
 
                     break;
                 }
@@ -1600,7 +1666,12 @@ namespace drawinglayer
 				    // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
 				    SvtGraphicFill* pSvtGraphicFill = 0;
 
-				    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
+                    // #121267# Not needed, does not give better quality compared with
+                    // the META_POLYPOLYGON_ACTION written by the DrawPolyPolygon command
+                    // below
+                    bool bSupportSvtGraphicFill(false);
+
+				    if(bSupportSvtGraphicFill && !mnSvtGraphicFillCount && aLocalPolyPolygon.count())
 				    {
 					    // setup simple color fill stuff like in impgrfll
 					    pSvtGraphicFill = new SvtGraphicFill(
@@ -1625,9 +1696,17 @@ namespace drawinglayer
 				    mpOutputDevice->SetLineColor();
 
 				    // call VCL directly; encapsulate with SvtGraphicFill
-                    impStartSvtGraphicFill(pSvtGraphicFill);
-				    mpOutputDevice->DrawPolyPolygon(aLocalPolyPolygon);
-				    impEndSvtGraphicFill(pSvtGraphicFill);
+                    if(bSupportSvtGraphicFill)
+                    {
+                            impStartSvtGraphicFill(pSvtGraphicFill);
+                    }
+				    
+                    mpOutputDevice->DrawPolyPolygon(aLocalPolyPolygon);
+				    
+                    if(bSupportSvtGraphicFill)
+                    {
+                        impEndSvtGraphicFill(pSvtGraphicFill);
+                    }
 
 					break;
 				}
@@ -1685,16 +1764,13 @@ namespace drawinglayer
                                 // Removed subdivision and fixed in Region::ImplPolyPolyRegionToBandRegionFunc() in VCL where
                                 // the ClipRegion is built from the Polygon. A AdaptiveSubdivide on the source polygon was missing there
                                 mpOutputDevice->Push(PUSH_CLIPREGION);
-								//mpOutputDevice->SetClipRegion(Region(PolyPolygon(basegfx::tools::adaptiveSubdivideByAngle(maClipPolyPolygon))));
-								//mpOutputDevice->SetClipRegion(Region(PolyPolygon(maClipPolyPolygon)));
-								mpOutputDevice->SetClipRegion(Region(maClipPolyPolygon));
-                            }
+                                mpOutputDevice->SetClipRegion(Region(maClipPolyPolygon));
 
-					        // recursively paint content
-					        process(rMaskCandidate.getChildren());
-                            
-                            if(maClipPolyPolygon.count())
-                            {
+                                // recursively paint content
+                                // #121267# Only need to process sub-content when clip polygon is *not* empty.
+                                // If it is empty, the clip is empty and there can be nothing inside.
+                                process(rMaskCandidate.getChildren());
+
                                 // restore VCL clip region
                                 mpOutputDevice->Pop();
                             }
@@ -1767,7 +1843,7 @@ namespace drawinglayer
 						    }
 
 						    // PolyPolygonGradientPrimitive2D, PolyPolygonHatchPrimitive2D and
-						    // PolyPolygonBitmapPrimitive2D are derived from PolyPolygonColorPrimitive2D.
+						    // PolyPolygonGraphicPrimitive2D are derived from PolyPolygonColorPrimitive2D.
 						    // Check also for correct ID to exclude derived implementations
 						    if(pPoPoColor && PRIMITIVE2D_ID_POLYPOLYGONCOLORPRIMITIVE2D == pPoPoColor->getPrimitive2DID())
 						    {
@@ -1785,8 +1861,13 @@ namespace drawinglayer
 
 							    // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
 							    SvtGraphicFill* pSvtGraphicFill = 0;
+                                
+                                // #121267# Not needed, does not give better quality compared with
+                                // the META_POLYPOLYGON_ACTION written by the DrawPolyPolygon command
+                                // below
+                                bool bSupportSvtGraphicFill(false);
 
-							    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
+							    if(bSupportSvtGraphicFill && !mnSvtGraphicFillCount && aLocalPolyPolygon.count())
 							    {
 								    // setup simple color with transparence fill stuff like in impgrfll
 								    pSvtGraphicFill = new SvtGraphicFill(
@@ -1812,11 +1893,19 @@ namespace drawinglayer
 							    mpOutputDevice->SetLineColor();
 
 							    // call VCL directly; encapsulate with SvtGraphicFill
-                                impStartSvtGraphicFill(pSvtGraphicFill);
+                                if(bSupportSvtGraphicFill)
+                                {
+                                    impStartSvtGraphicFill(pSvtGraphicFill);
+                                }
+
 							    mpOutputDevice->DrawTransparent(
 								    PolyPolygon(aLocalPolyPolygon), 
 								    nTransPercentVcl);
-							    impEndSvtGraphicFill(pSvtGraphicFill);
+							    
+                                if(bSupportSvtGraphicFill)
+                                {
+                                    impEndSvtGraphicFill(pSvtGraphicFill);
+                                }
 						    }
 						    else
 						    {

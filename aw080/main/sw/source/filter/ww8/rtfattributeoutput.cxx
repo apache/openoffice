@@ -2131,6 +2131,13 @@ void RtfAttributeOutput::CharWeightCTL( const SvxWeightItem& rWeight )
     if ( rWeight.GetWeight() != WEIGHT_BOLD )
         m_aStyles.append((sal_Int32)0);
 }
+void RtfAttributeOutput:: CharBidiRTL( const SfxPoolItem& )
+{
+}
+
+void RtfAttributeOutput:: CharIdctHint( const SfxPoolItem&)
+{
+}
 
 void RtfAttributeOutput::CharRotate( const SvxCharRotateItem& rRotate)
 {
@@ -2934,9 +2941,20 @@ void RtfAttributeOutput::FormatFrameDirection( const SvxFrameDirectionItem& rDir
     }
 }
 
-void RtfAttributeOutput::WriteExpand( const SwField* /*pFld*/ )
+void RtfAttributeOutput::WriteExpand( const SwField* pFld )
 {
-    OSL_TRACE("TODO: %s", OSL_THIS_FUNC);
+    String sStr;        // fuer optionale Parameter
+    switch (pFld->GetTyp()->Which())
+    {
+        //#119803# Export user field and DB field for RTF filter
+        case RES_DBFLD:
+            sStr = FieldString(ww::eMERGEFIELD);
+            // kein break !!
+        case RES_USERFLD:
+            sStr += pFld->GetTyp()->GetName();
+            m_rExport.OutputField(pFld, ww::eNONE, sStr);
+            break;
+    }
 }
 
 void RtfAttributeOutput::RefField( const SwField& /*rFld*/, const String& /*rRef*/ )

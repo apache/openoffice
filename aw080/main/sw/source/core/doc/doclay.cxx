@@ -1085,10 +1085,9 @@ sal_Bool TstFlyRange( const SwPaM* pPam, const SwPosition* pFlyPos,
 }
 
 
-void SwDoc::GetAllFlyFmts( SwPosFlyFrms& rPosFlyFmts,
-						   const SwPaM* pCmpRange, sal_Bool bDrawAlso ) const
+SwPosFlyFrms SwDoc::GetAllFlyFmts( const SwPaM* pCmpRange, sal_Bool bDrawAlso ) const
 {
-	SwPosFlyFrm *pFPos = 0;
+    SwPosFlyFrms aRetval;
 	SwFrmFmt *pFly;
 
 	// erstmal alle Absatzgebundenen einsammeln
@@ -1109,8 +1108,7 @@ void SwDoc::GetAllFlyFmts( SwPosFlyFrms& rPosFlyFmts,
 				if( pCmpRange &&
 					!TstFlyRange( pCmpRange, pAPos, rAnchor.GetAnchorId() ))
 						continue;		// kein gueltiger FlyFrame
-				pFPos = new SwPosFlyFrm( pAPos->nNode, pFly, rPosFlyFmts.Count() );
-				rPosFlyFmts.Insert( pFPos );
+                aRetval.insert(SwPosFlyFrmPtr(new SwPosFlyFrm(pAPos->nNode, pFly, aRetval.size())));
 			}
 		}
 	}
@@ -1118,9 +1116,10 @@ void SwDoc::GetAllFlyFmts( SwPosFlyFrms& rPosFlyFmts,
 	// kein Layout oder nur ein Teil, dann wars das
 	// Seitenbezogen Flys nur, wenn vollstaendig "gewuenscht" wird !
 	if( !GetCurrentViewShell() || pCmpRange )	//swmod 071108//swmod 071225
-		return;
+    {
+		return aRetval;
+    }
 
-	pFPos = 0;
 	SwPageFrm *pPage = (SwPageFrm*)GetCurrentLayout()->GetLower();	//swmod 080218
 	while( pPage )
 	{
@@ -1158,18 +1157,15 @@ void SwDoc::GetAllFlyFmts( SwPosFlyFrms& rPosFlyFmts,
 					if ( pCntntFrm )
 					{
 						SwNodeIndex aIdx( *pCntntFrm->GetNode() );
-						pFPos = new SwPosFlyFrm( aIdx, pFly, rPosFlyFmts.Count() );
+                        aRetval.insert(SwPosFlyFrmPtr(new SwPosFlyFrm(aIdx, pFly, aRetval.size())));
 					}
-				}
-				if ( pFPos )
-				{
-					rPosFlyFmts.Insert( pFPos );
-					pFPos = 0;
 				}
 			}
 		}
 		pPage = (SwPageFrm*)pPage->GetNext();
 	}
+
+    return aRetval;
 }
 
 /*************************************************************************

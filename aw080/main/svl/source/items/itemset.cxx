@@ -134,7 +134,8 @@ SfxItemSet::SfxItemSet
 
 :	_pPool( &rPool ),
 	_pParent( 0 ),
-	_nCount( 0 )
+	_nCount( 0 ),
+	_aHashKey( 0 ) //i120575
 {
 	DBG_CTOR(SfxItemSet, DbgCheckItemSet);
 	DBG_ASSERTWARNING( _pPool == _pPool->GetMasterPool(), "kein Master-Pool" );
@@ -163,7 +164,8 @@ SfxItemSet::SfxItemSet
 SfxItemSet::SfxItemSet( SfxItemPool& rPool, sal_uInt16 nWhich1, sal_uInt16 nWhich2 ):
 	_pPool( &rPool ),
 	_pParent( 0 ),
-	_nCount( 0 )
+	_nCount( 0 ),
+	_aHashKey( 0 ) //i120575
 {
 	DBG_CTOR(SfxItemSet, DbgCheckItemSet);
 	DBG_ASSERT( nWhich1 <= nWhich2, "Ungueltiger Bereich" );
@@ -205,7 +207,8 @@ SfxItemSet::SfxItemSet( SfxItemPool& rPool,
 	_pPool( &rPool ),
 	_pParent( 0 ),
 	_pWhichRanges( 0 ),
-	_nCount( 0 )
+	_nCount( 0 ),
+	_aHashKey( 0 ) //i120575
 {
 	DBG_CTOR(SfxItemSet, DbgCheckItemSet);
 	DBG_ASSERT( nWh1 <= nWh2, "Ungueltiger Bereich" );
@@ -256,7 +259,8 @@ SfxItemSet::SfxItemSet( SfxItemPool& rPool, const sal_uInt16* pWhichPairTable ):
 	_pPool( &rPool ),
 	_pParent( 0 ),
 	_pWhichRanges(0),
-	_nCount( 0 )
+	_nCount( 0 ),
+	_aHashKey( 0 ) //i120575
 {
 	DBG_CTOR(SfxItemSet, 0);
 	DBG_ASSERTWARNING( _pPool == _pPool->GetMasterPool(), "kein Master-Pool" );
@@ -272,7 +276,8 @@ SfxItemSet::SfxItemSet( SfxItemPool& rPool, const sal_uInt16* pWhichPairTable ):
 SfxItemSet::SfxItemSet( const SfxItemSet& rASet ):
 	_pPool( rASet._pPool ),
 	_pParent( rASet._pParent ),
-	_nCount( rASet._nCount )
+	_nCount( rASet._nCount ),
+	_aHashKey( 0 ) //i120575
 {
 	DBG_CTOR(SfxItemSet, DbgCheckItemSet);
 	DBG_ASSERTWARNING( _pPool == _pPool->GetMasterPool(), "kein Master-Pool" );
@@ -455,6 +460,7 @@ sal_uInt16 SfxItemSet::ClearItem( sal_uInt16 nWhich )
 			pPtr += 2;
 		}
 	}
+	InvalidateHashKey();	//i120575
 	return nDel;
 }
 
@@ -484,6 +490,7 @@ void SfxItemSet::ClearInvalidItems( bool bHardDefault )
 				}
 			pPtr += 2;
 		}
+	InvalidateHashKey();	//i120575
 }
 
 //------------------------------------------------------------------------
@@ -495,6 +502,7 @@ void SfxItemSet::InvalidateAllItems()
 	DBG_ASSERT( !_nCount, "Es sind noch Items gesetzt" );
 
 	memset( (void*)_aItems, -1, ( _nCount = TotalCount() ) * sizeof( SfxPoolItem*) );
+	InvalidateHashKey();	//i120575
 }
 
 // -----------------------------------------------------------------------
@@ -582,6 +590,7 @@ const SfxPoolItem* SfxItemSet::Put( const SfxPoolItem& rItem, sal_uInt16 nWhich 
 				if ( rItem.Which() && ( IsInvalidItem(*ppFnd) || !(*ppFnd)->Which() ) )
 				{
 					*ppFnd = &_pPool->Put( rItem, nWhich );
+					InvalidateHashKey();	//i120575
 					return *ppFnd;
 				}
 
@@ -589,6 +598,7 @@ const SfxPoolItem* SfxItemSet::Put( const SfxPoolItem& rItem, sal_uInt16 nWhich 
 				if( !rItem.Which() )
 				{
 					*ppFnd = rItem.Clone(_pPool);
+					InvalidateHashKey();	//i120575
 					return 0;
 				}
 				else
@@ -626,11 +636,14 @@ const SfxPoolItem* SfxItemSet::Put( const SfxPoolItem& rItem, sal_uInt16 nWhich 
 			SFX_ASSERT( !_pPool->IsItemFlag(nWhich, SFX_ITEM_POOLABLE) ||
 						dynamic_cast< const SfxSetItem* >(&rItem) || **ppFnd == rItem,
 						nWhich, "putted Item unequal" );
+			
+			InvalidateHashKey();	//i120575
 			return *ppFnd;
 		}
 		ppFnd += *(pPtr+1) - *pPtr + 1;
 		pPtr += 2;
 	}
+	InvalidateHashKey();	//i120575
 	return 0;
 }
 
@@ -864,6 +877,7 @@ void SfxItemSet::SetRanges( const sal_uInt16 *pNewRanges )
 		_pWhichRanges = new sal_uInt16[ nCount ];
 		memcpy( _pWhichRanges, pNewRanges, sizeof( sal_uInt16 ) * nCount );
 	}
+	InvalidateHashKey();	//i120575
 }
 
 // -----------------------------------------------------------------------
@@ -1126,6 +1140,7 @@ void SfxItemSet::Intersect( const SfxItemSet& rSet )
 			pItem = aIter.NextItem();
 		}
 	}
+	InvalidateHashKey();	//i120575	
 }
 
 // -----------------------------------------------------------------------
@@ -1198,6 +1213,7 @@ void SfxItemSet::Differentiate( const SfxItemSet& rSet )
 		}
 
 	}
+	InvalidateHashKey();	//i120575	
 }
 
 // -----------------------------------------------------------------------
@@ -1401,6 +1417,7 @@ void SfxItemSet::MergeValues( const SfxItemSet& rSet, bool bIgnoreDefaults )
 				MergeValue( *pItem, bIgnoreDefaults );
 		}
 	}
+	InvalidateHashKey();	//i120575	
 }
 
 // -----------------------------------------------------------------------
@@ -1423,6 +1440,7 @@ void SfxItemSet::MergeValue( const SfxPoolItem& rAttr, bool bIgnoreDefaults )
 		ppFnd += *(pPtr+1) - *pPtr + 1;
 		pPtr += 2;
 	}
+	InvalidateHashKey();	//i120575	
 }
 
 // -----------------------------------------------------------------------
@@ -1457,6 +1475,7 @@ void SfxItemSet::InvalidateItem( sal_uInt16 nWhich )
 		ppFnd += *(pPtr+1) - *pPtr + 1;
 		pPtr += 2;
 	}
+	InvalidateHashKey();	//i120575	
 }
 
 // -----------------------------------------------------------------------
@@ -1618,6 +1637,8 @@ SvStream &SfxItemSet::Load
 		}
 	}
 
+	
+	InvalidateHashKey();	//i120575
 	return rStream;
 }
 
@@ -1757,6 +1778,7 @@ bool SfxItemSet::PutDirect(const SfxPoolItem &rItem)
 					rItem.AddRef();
 			}
 
+			InvalidateHashKey();	//i120575
 			return true;
 		}
 		ppFnd += *(pPtr+1) - *pPtr + 1;
@@ -1996,6 +2018,8 @@ const SfxPoolItem* SfxAllItemSet::Put( const SfxPoolItem& rItem, sal_uInt16 nWhi
 
     if ( bIncrementCount )
         ++_nCount;
+	
+	InvalidateHashKey();	//i120575
 
 	return &rNew;
 }
@@ -2105,3 +2129,51 @@ SfxItemSet *SfxAllItemSet::Clone(bool bItems, SfxItemPool *pToPool ) const
 		return bItems ? new SfxAllItemSet(*this) : new SfxAllItemSet(*_pPool);
 }
 
+//for i120575
+//align with the rtl_hash, return signed int result and input len limited to 2G.
+//can be replaced with other hash function in future for better performance, e.g. fnv hash.
+inline sal_Int32 myhash(void * buf, sal_Int32 buf_len)
+{
+	return rtl_str_hashCode_WithLength( reinterpret_cast<const sal_Char *>(buf), buf_len);
+}
+
+inline void SfxItemSet::UpdateHashKey()
+{
+	_aHashKey= myhash(_aItems,TotalCount()* sizeof(_aItems[0]));
+
+	//always treat '0' as invalidate hash key, not using addtional bool data field for saving space.
+	if (!IsValidateHashKey() )
+	{
+		_aHashKey = 1;
+	}
+}
+
+sal_Bool SfxItemSet::QuickCompare( SfxItemSet & rCmp)
+{
+	if ( _pParent != rCmp._pParent ||
+		 _pPool != rCmp._pPool ||
+		 Count() != rCmp.Count() )
+		return sal_False;
+
+	if ((0==Count())&&(0==rCmp.Count())) 
+		return sal_True;
+
+	if (!IsValidateHashKey()) 
+	{
+		UpdateHashKey();
+	}
+	if (!rCmp.IsValidateHashKey()) 
+	{
+		rCmp.UpdateHashKey();
+	}
+
+	//improved performance here, in most cases, the hashkey is not equal.
+	if (GetHashKey() != rCmp.GetHashKey()) 
+		return sal_False;
+
+	if ( 0 == memcmp( _aItems, rCmp._aItems,  TotalCount() * sizeof(_aItems[0]) ) )
+		return sal_True;
+	else
+		return sal_False;
+}
+//end: i120575

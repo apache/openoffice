@@ -1169,6 +1169,8 @@ void SdrPage::SetInserted(bool bInserted)
 	if(bInserted != IsInserted())
 	{
 		mbInserted = bInserted;
+
+        // TTTT: Check if the original's travel over OLEs and setting them to connect/disconnect is needed or moved elsewhere
 	}
 }
 

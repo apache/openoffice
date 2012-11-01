@@ -72,7 +72,10 @@
 #include "wrtww8.hxx"
 #include "ww8par.hxx"
 #include "escher.hxx"
-
+//Added for i120568
+#include "ww8attributeoutput.hxx"
+#include "fmturl.hxx"
+//End
 #include "docsh.hxx"
 #include <cstdio>
 
@@ -372,6 +375,17 @@ void WW8Export::OutputOLENode( const SwOLENode& rOLENode )
 
 void WW8Export::OutGrf(const sw::Frame &rFrame)
 {
+	//Added for i120568,the hyperlink info within a graphic whose anchor type is "As character"
+	//will be exported to ensure the fidelity
+    const SwFmtURL& rURL = rFrame.GetFrmFmt().GetAttrSet().GetURL();
+    bool bURLStarted = false;
+    if( rURL.GetURL().Len() && rFrame.GetWriterType() == sw::Frame::eGraphic)
+    {
+        bURLStarted = true;
+        m_pAttrOutput->StartURL( rURL.GetURL(), rURL.GetTargetFrameName() );         
+    }
+    //End
+
     // GrfNode fuer spaeteres rausschreiben der Grafik merken
     pGrf->Insert(rFrame);
 
@@ -493,6 +507,11 @@ void WW8Export::OutGrf(const sw::Frame &rFrame)
         OutputField( 0, ww::eINCLUDEPICTURE, String(), WRITEFIELD_CLOSE );
     }
     // <--
+	//Added for i120568,the hyperlink info within a graphic whose anchor type is "As character"
+	//will be exported to ensure the fidelity
+    if( bURLStarted )
+        m_pAttrOutput->EndURL();
+        //End
 }
 
 GraphicDetails& GraphicDetails::operator=(const GraphicDetails &rOther)
@@ -609,8 +628,9 @@ void SwWW8WrGrf::WritePICFHeader(SvStream& rStrm, const sw::Frame &rFly,
     substitute the final size and loose on retaining the scaling factor but
     still keep the correct display size anyway.
     */
-    if ( (aGrTwipSz.Width() > SHRT_MAX) || (aGrTwipSz.Height() > SHRT_MAX)
-        || (aGrTwipSz.Width() < 0 ) || (aGrTwipSz.Height() < 0) )
+    const bool bIsSubstitutedSize = (aGrTwipSz.Width() > SHRT_MAX) || (aGrTwipSz.Height() > SHRT_MAX) ||
+                                    (aGrTwipSz.Width() < 0 ) || (aGrTwipSz.Height() < 0);
+    if ( bIsSubstitutedSize )
     {
         aGrTwipSz.Width() = nWidth;
         aGrTwipSz.Height() = nHeight;
@@ -625,26 +645,51 @@ void SwWW8WrGrf::WritePICFHeader(SvStream& rStrm, const sw::Frame &rFly,
     Set_UInt16(pArr, msword_cast<sal_uInt16>(aGrTwipSz.Width()));
     Set_UInt16(pArr, msword_cast<sal_uInt16>(aGrTwipSz.Height()));
 
-    if( aGrTwipSz.Width() + nXSizeAdd )             // set mx
+    if ( aGrTwipSz.Width() + nXSizeAdd )             // set mx
     {
-        double fVal = nWidth * 1000.0 / (aGrTwipSz.Width() + nXSizeAdd);
-        Set_UInt16( pArr, (sal_uInt16)::rtl::math::round(fVal) );
+        if ( !bIsSubstitutedSize )
+        {
+            const double fVal = nWidth * 1000.0 / (aGrTwipSz.Width() + nXSizeAdd );
+            Set_UInt16( pArr, (sal_uInt16)::rtl::math::round(fVal) );
+        }
+        else
+        {
+            Set_UInt16( pArr, 1000 );
+        }
     }
     else
-        pArr += 2;
-
-    if( aGrTwipSz.Height() + nYSizeAdd )            // set my
     {
-        double fVal = nHeight * 1000.0 / (aGrTwipSz.Height() + nYSizeAdd);
-        Set_UInt16( pArr, (sal_uInt16)::rtl::math::round(fVal) );
+        pArr += 2;
+    }
+
+    if ( aGrTwipSz.Height() + nYSizeAdd )            // set my
+    {
+        if ( !bIsSubstitutedSize )
+        {
+            const double fVal = nHeight * 1000.0 / (aGrTwipSz.Height() + nYSizeAdd);
+            Set_UInt16( pArr, (sal_uInt16)::rtl::math::round(fVal) );
+        }
+        else
+        {
+            Set_UInt16( pArr, 1000 );
+        }
     }
     else
+    {
         pArr += 2;
+    }
 
-    Set_UInt16( pArr, nCropL );                     // set dxaCropLeft
-    Set_UInt16( pArr, nCropT );                     // set dyaCropTop
-    Set_UInt16( pArr, nCropR );                     // set dxaCropRight
-    Set_UInt16( pArr, nCropB );                     // set dyaCropBottom
+    if ( !bIsSubstitutedSize )
+    {
+        Set_UInt16( pArr, nCropL );                     // set dxaCropLeft
+        Set_UInt16( pArr, nCropT );                     // set dyaCropTop
+        Set_UInt16( pArr, nCropR );                     // set dxaCropRight
+        Set_UInt16( pArr, nCropB );                     // set dyaCropBottom 
+    }
+    else
+    {
+        pArr += 8;
+    }
 
     rStrm.Write( aArr, nHdrLen );
 }

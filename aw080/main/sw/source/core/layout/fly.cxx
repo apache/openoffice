@@ -1531,8 +1531,17 @@ void SwFlyFrm::Format( const SwBorderAttrs *pAttrs )
                         nNewSize = nAutoWidth;
                 }
             }
-            else
-                nNewSize -= nLR;
+            /*else
+                nNewSize -= nLR;*/
+			else
+			{//Bug 120881:For enlarging fixed size Pagenumber frame,kangjian
+				if(nNewSize <= 500 && IsPageNumberingFrm())
+					nNewSize = nNewSize - nLR + 150;
+			
+				else
+					nNewSize -= nLR;
+			//Bug 120881(End)
+			}
 
             if( nNewSize < MINFLY )
                 nNewSize = MINFLY;
@@ -2690,7 +2699,8 @@ SwTwips lcl_CalcAutoWidth( const SwLayoutFrm& rFrm )
             nMin = ((SwTxtFrm*)pFrm)->CalcFitToContent();
             const SvxLRSpaceItem &rSpace =
                 ((SwTxtFrm*)pFrm)->GetTxtNode()->GetSwAttrSet().GetLRSpace();
-            nMin += rSpace.GetRight() + rSpace.GetTxtLeft() + rSpace.GetTxtFirstLineOfst();
+            if (!((SwTxtFrm*)pFrm)->IsLocked())
+                nMin += rSpace.GetRight() + rSpace.GetTxtLeft() + rSpace.GetTxtFirstLineOfst();
         }
         else if ( pFrm->IsTabFrm() )
         {
@@ -2964,4 +2974,40 @@ SwFlyFrmFmt * SwFlyFrm::GetFmt()
 {
     return static_cast< SwFlyFrmFmt * >( GetDep() );
 }
+
+//Bug 120881:Modify here for Directly Page Numbering
+sal_Bool SwFlyFrm::IsPageNumberingFrm()
+{
+	if (!GetAnchorFrm())//Invalidate frame...
+		return false;
+	if (bInCnt || bLayout)//Incorrect anchor type...
+		return false;
+	if (!(GetAnchorFrm()->IsTxtFrm() && GetAnchorFrm()->GetUpper() 
+		&& (GetAnchorFrm()->GetUpper()->FindFooterOrHeader())))//Not in header or footer frame
+		return false;
+
+	if (pNextLink || pPrevLink)//Linked...
+		return false;
+
+	SwFrmFmt* pFmt = NULL;
+	if ((pFmt = GetFmt()))
+	{
+		if (pLower && pLower->GetNext() && pFmt->GetCol().GetNumCols()>1)//Has more than 1 column...
+			return false;
+	}
+
+	if (!pLower)//Do not has even 1 child frame?
+		return false;
+
+	for (SwFrm* pIter = pLower;pIter!=NULL;pIter=pIter->GetNext())
+	{
+		if (pIter->IsTxtFrm() && ((SwTxtFrm*)pIter)->HasPageNumberField())
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+//Bug 120881(End)
 

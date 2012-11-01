@@ -1550,7 +1550,6 @@ void MSWordExportBase::SectionProperties( const WW8_SepInfo& rSepInfo, WW8_PdAtt
 
             // am Nachkommen NUR  die Spaltigkeit gemaess Sect-Attr.
             // umsetzen
-            aSet.Put( rSepInfo.pSectionFmt->GetFmtAttr( RES_COL ) );
 
             const SvxLRSpaceItem &rSectionLR =
                 ItemGet<SvxLRSpaceItem>( *(rSepInfo.pSectionFmt), RES_LR_SPACE );
@@ -1560,6 +1559,17 @@ void MSWordExportBase::SectionProperties( const WW8_SepInfo& rSepInfo, WW8_PdAtt
             SvxLRSpaceItem aResultLR( rPageLR.GetLeft() +
                     rSectionLR.GetLeft(), rPageLR.GetRight() +
                     rSectionLR.GetRight(), 0, 0, RES_LR_SPACE );
+            //i120133: The Section width should consider section indent value.
+			if (rSectionLR.GetLeft()+rSectionLR.GetRight()!=0)
+			{
+				const SwFmtCol& rCol = dynamic_cast<const SwFmtCol&>(rSepInfo.pSectionFmt->GetFmtAttr(RES_COL));
+				SwFmtCol aCol(rCol);
+				aCol.SetAdjustValue(rSectionLR.GetLeft()+rSectionLR.GetRight());
+				aSet.Put(aCol);
+			}
+			else
+				aSet.Put(rSepInfo.pSectionFmt->GetFmtAttr(RES_COL));
+
 
             aSet.Put( aResultLR );
 
@@ -1595,7 +1605,8 @@ void MSWordExportBase::SectionProperties( const WW8_SepInfo& rSepInfo, WW8_PdAtt
         {
             const SwPageDesc *pFollow = pPd->GetFollow();
             const SwFrmFmt& rFollowFmt = pFollow->GetMaster();
-            if ( sw::util::IsPlausableSingleWordSection( *pPdFmt, rFollowFmt ) )
+            const sal_Int8 nType = pDoc->GetDocumentType();
+            if ( sw::util::IsPlausableSingleWordSection( *pPdFmt, rFollowFmt, nType ))
             {
                 if (rSepInfo.pPDNd)
                     pPdFirstPgFmt = pPd->GetPageFmtOfNode( *rSepInfo.pPDNd );
@@ -1994,6 +2005,8 @@ bool WW8_WrPlcSubDoc::WriteGenericTxt( WW8Export& rWrt, sal_uInt8 nTTyp,
                 aCps.Insert( nCP, i );
                 pTxtPos->Append( nCP );
 
+                if( aCntnt[ i ] != NULL )
+                {
                 // is it an writer or sdr - textbox?
                 const SdrObject& rObj = *(SdrObject*)aCntnt[ i ];
                 if (rObj.GetObjInventor() == FmFormInventor)
@@ -2044,7 +2057,17 @@ bool WW8_WrPlcSubDoc::WriteGenericTxt( WW8Export& rWrt, sal_uInt8 nTTyp,
                     }
                     // <--
                 }
-
+                }
+				else if( i < aSpareFmts.Count() )
+				{
+					if( const SwFrmFmt* pFmt = (const SwFrmFmt*)aSpareFmts[ i ] )
+					{
+						const SwNodeIndex* pNdIdx = pFmt->GetCntnt().GetCntntIdx();
+						rWrt.WriteSpecialText( pNdIdx->GetIndex() + 1,
+								   pNdIdx->GetNode().EndOfSectionIndex(), nTTyp );
+					}
+				}
+                
                 // CR at end of one textbox text ( otherwise WW gpft :-( )
                 rWrt.WriteStringAsPara( aEmptyStr );
             }
@@ -2179,7 +2202,7 @@ void WW8_WrPlcSubDoc::WriteGenericPlc( WW8Export& rWrt, sal_uInt8 nTTyp,
                     // is it an writer or sdr - textbox?
                     const SdrObject* pObj = (SdrObject*)aCntnt[ i ];
                     sal_Int32 nCnt = 1;
-                    if ( !dynamic_cast< const SdrTextObj* >(pObj) )
+                    if ( pObj && !dynamic_cast< const SdrTextObj* >(pObj) )
                     {
                         // find the "highest" SdrObject of this
                         const SwFrmFmt& rFmt = *::FindFrmFmt( pObj );
@@ -2193,6 +2216,22 @@ void WW8_WrPlcSubDoc::WriteGenericPlc( WW8Export& rWrt, sal_uInt8 nTTyp,
                             pChn = &pChn->GetNext()->GetChain();
                         }
                     }
+					if( NULL == pObj )
+					{
+						if( i < aSpareFmts.Count() && aSpareFmts[ i ] )
+						{
+							const SwFrmFmt& rFmt = *(const SwFrmFmt*)aSpareFmts[ i ];
+
+							const SwFmtChain* pChn = &rFmt.GetChain();
+							while( pChn->GetNext() )
+							{
+								// has a chain?
+								// then calc the cur pos in the chain
+								++nCnt;
+								pChn = &pChn->GetNext()->GetChain();
+							}
+						}
+					}                    
                     // long cTxbx / iNextReuse
                     SwWW8Writer::WriteLong( *rWrt.pTableStrm, nCnt );
                     // long cReusable

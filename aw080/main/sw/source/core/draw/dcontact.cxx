@@ -1513,12 +1513,15 @@ void SwDrawContact::_Changed(
                 // --> OD 2004-11-11 #i35007# - notify anchor frame
                 // of as-character anchored object
                 {
-					//-->Modified for i119654,2012.6.8                        
-					SwFrm *pAnchorFrame = NULL;
-                    if ( pAnchoredDrawObj && ( pAnchorFrame = 
-							const_cast<SwAnchoredDrawObject*>( pAnchoredDrawObj )->AnchorFrm() ) )
-						pAnchorFrame->Prepare( PREP_FLY_ATTR_CHG, GetFmt() );
-					//<--
+                    //-->Modified for i119654,2012.6.8
+                    SwFrm* pAnchorFrame = pAnchoredDrawObj
+                                          ? const_cast<SwAnchoredDrawObject*>( pAnchoredDrawObj )->AnchorFrm()
+                                          : NULL;
+                    if ( pAnchorFrame )
+                    {
+                        pAnchorFrame->Prepare( PREP_FLY_ATTR_CHG, GetFmt() );
+                    }
+                    //<--
                 }
             }
         }

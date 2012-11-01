@@ -17,20 +17,16 @@
  * specific language governing permissions and limitations
  * under the License.
  * 
- *************************************************************/
-
-
-
-// MARKER(update_precomp.py): autogen include statement, do not remove
+ **************************************************************/
+ 
+ // MARKER(update_precomp.py): autogen include statement, do not remove
+//This file is about the conversion of the UOF v2.0 and ODF document format
 #include "precompiled_filter.hxx"
 
 #include <stdio.h>
 
 #include <cppuhelper/factory.hxx>
 #include <cppuhelper/servicefactory.hxx>
-#include <cppuhelper/implbase1.hxx>
-#include <cppuhelper/implbase2.hxx>
-#include <cppuhelper/implbase3.hxx>
 #include <cppuhelper/implbase4.hxx>
 #include <cppuhelper/implbase.hxx>
 
@@ -69,8 +65,17 @@
 #include <com/sun/star/util/XStringSubstitution.hpp>
 #include <com/sun/star/beans/NamedValue.hpp>
 
+
+#include <unotools/streamwrap.hxx>
+#include <comphelper/processfactory.hxx>
+#include <tools/stream.hxx>
+#include "uof2splitter.hxx"
+
 #include <xmloff/attrlist.hxx>
-#include <fla.hxx>
+#include "uof2storage.hxx"
+#include "uof2merge.hxx"
+#include <tools/stream.hxx>
+#include <string>
 
 using namespace ::rtl;
 using namespace ::cppu;
@@ -85,132 +90,6 @@ using namespace ::com::sun::star::xml::sax;
 using namespace ::com::sun::star::util;
 
 namespace XSLT {
-
-
-class FLABridge : public WeakImplHelper1< XDocumentHandler>
-{
-private:
-	const Reference<XDocumentHandler>& m_rDocumentHandler;
-	const sal_Unicode *eval(const sal_Unicode *expr, sal_Int32 exprLen);
-	FLA::Evaluator ev;
-	bool active;
-
-public:
-	FLABridge(const Reference<XDocumentHandler>& m_rDocumentHandler);
-
-    // XDocumentHandler
-    virtual void SAL_CALL startDocument()
-        throw (SAXException,RuntimeException);
-    virtual void SAL_CALL endDocument()
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL startElement(const OUString& str, const Reference<XAttributeList>& attriblist)
-        throw (SAXException,RuntimeException);
-    virtual void SAL_CALL endElement(const OUString& str)
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL characters(const OUString& str)
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL ignorableWhitespace(const OUString& str)
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL processingInstruction(const OUString& str, const OUString& str2)
-        throw (com::sun::star::xml::sax::SAXException,RuntimeException);
-    virtual void SAL_CALL setDocumentLocator(const Reference<XLocator>& doclocator)
-        throw (SAXException,RuntimeException);
-
-};
-
-FLABridge::FLABridge(const Reference<XDocumentHandler>& _rDocumentHandler) : m_rDocumentHandler(_rDocumentHandler), active(false)
-{
-}
-
-void FLABridge::startDocument() throw (SAXException,RuntimeException){
-    OSL_ASSERT(m_rDocumentHandler.is());
-    m_rDocumentHandler->startDocument();
-}
-
-void FLABridge::endDocument() throw (SAXException,RuntimeException){
-    OSL_ASSERT(m_rDocumentHandler.is());
-    m_rDocumentHandler->endDocument();
-
-}
-
-
-void FLABridge::startElement(const OUString& str, const Reference<XAttributeList>& attriblist)
-    throw (SAXException, RuntimeException)
-{
-    OSL_ASSERT(m_rDocumentHandler.is());
-	if (active)
-	{
-//		SvXMLAttributeList* _attriblist=SvXMLAttributeList::getImplementation(attriblist);
-		const int len=attriblist->getLength();
-		SvXMLAttributeList *_newattriblist= new SvXMLAttributeList();
-		for(int i=0;i<len;i++)
-		{
-			const OUString& name=attriblist->getNameByIndex( sal::static_int_cast<sal_Int16>( i ) );
-			sal_Int32 pos;
-			static const OUString _value_(".value", 6, RTL_TEXTENCODING_ASCII_US);
-			if ((pos=name.lastIndexOf(L'.'))!=-1 && name.match(_value_, pos))
-			{
-				const OUString newName(name, pos);
-				const OUString& value=attriblist->getValueByIndex( sal::static_int_cast<sal_Int16>( i ) );
-				const OUString newValue(ev.eval(value.getStr(), value.getLength()));
-				if (newValue.getLength()>0)
-				{
-					_newattriblist->AddAttribute(newName, newValue);
-				}
-			}
-			else
-			{
-				_newattriblist->AddAttribute(name, attriblist->getValueByIndex( sal::static_int_cast<sal_Int16>( i )));
-			}
-		};
-		const Reference<XAttributeList> newattriblist(_newattriblist);
-	    m_rDocumentHandler->startElement(str, newattriblist);
-	}
-	else
-	{
-		if (str.compareToAscii("fla:fla.activate")==0) 
-		{
-			active=1;
-		}
-		m_rDocumentHandler->startElement(str, attriblist);
-	}
-}
-
-void FLABridge::endElement(const OUString& str)
-    throw (SAXException, RuntimeException)
-{
-    OSL_ASSERT(m_rDocumentHandler.is());
-    m_rDocumentHandler->endElement(str);
-}
-
-void FLABridge::characters(const OUString& str)
-    throw (SAXException, RuntimeException)
-{
-    OSL_ASSERT(m_rDocumentHandler.is());
-    m_rDocumentHandler->characters(str);
-}
-
-void FLABridge::ignorableWhitespace(const OUString& str)
-    throw (SAXException, RuntimeException)
-{
-    OSL_ASSERT(m_rDocumentHandler.is());
-    m_rDocumentHandler->ignorableWhitespace(str);
-}
-
-void  FLABridge::processingInstruction(const OUString& str, const OUString& str2)
-    throw (SAXException, RuntimeException)
-{
-    OSL_ASSERT(m_rDocumentHandler.is());
-    m_rDocumentHandler->processingInstruction(str, str2);
-}
-
-void FLABridge::setDocumentLocator(const Reference<XLocator>& doclocator)
-    throw (SAXException, RuntimeException)
-{
-    OSL_ASSERT(m_rDocumentHandler.is());
-    m_rDocumentHandler->setDocumentLocator(doclocator);
-}
-
 
 
 class XSLTFilter : public WeakImplHelper4< XImportFilter, XExportFilter, XDocumentHandler, XStreamListener>
@@ -228,6 +107,10 @@ private:
 
     Reference< XActiveDataControl > m_tcontrol;
     oslCondition  m_cTransformed;
+
+	//UOF v2.0 export
+	Reference< XActiveDataControl > m_splitControl;
+
     sal_Bool m_bTerminated;
     sal_Bool m_bError;
 
@@ -280,6 +163,11 @@ public:
         throw (com::sun::star::xml::sax::SAXException,RuntimeException);
     virtual void SAL_CALL setDocumentLocator(const Reference<XLocator>& doclocator)
         throw (SAXException,RuntimeException);
+	// UOF v2.0 export
+private:
+	Reference< XStream > m_rStream;
+	UOF2Splitter * pSplitter;
+	
 };
 
 XSLTFilter::XSLTFilter( const Reference< XMultiServiceFactory > &r )
@@ -416,11 +304,20 @@ sal_Bool XSLTFilter::importer(
     {
         try
     	{
-            // we want to be notfied when the processing is done...
+            // we want to be notified when the processing is done...
             m_tcontrol->addListener(Reference< XStreamListener >(this));
 
             // connect input to transformer
             Reference< XActiveDataSink > tsink(m_tcontrol, UNO_QUERY);
+			//UOF v2 import
+			UOF2Storage aUOF2Storage(m_rServiceFactory, xInputStream);
+			if(aUOF2Storage.isValidUOF2Doc())
+			{
+				UOF2Merge aUOF2Merge(aUOF2Storage, m_rServiceFactory);
+				aUOF2Merge.merge();
+				tsink->setInputStream(aUOF2Merge.getMergedInStream());
+			}
+			else
             tsink->setInputStream(xInputStream);
 
             // create pipe
@@ -439,7 +336,7 @@ sal_Bool XSLTFilter::importer(
 	        aInput.aInputStream = pipein;
 
             // set doc handler
-			xSaxParser->setDocumentHandler(new FLABridge(xHandler));
+            xSaxParser->setDocumentHandler(xHandler);
 
             // transform
             m_tcontrol->start();
@@ -483,7 +380,7 @@ sal_Bool XSLTFilter::exporter(
 	OUString udStyleSheet = rel2abs(msUserData[5]);
 
     // read source data
-    // we are especialy interested in the output stream
+    // we are especially interested in the output stream
     // since that is where our xml-writer will push the data
     // from it's data-source interface
     OUString aName, sURL;
@@ -505,6 +402,9 @@ sal_Bool XSLTFilter::exporter(
 	        aSourceData[i].Value >>= m_rOutputStream;
         else if ( aName.equalsAscii("URL" ))
             aSourceData[i].Value >>= sURL;
+		//UOF v2.0 export, get Stream for constructing UOF2Storage
+		if ( aName.equalsAscii("StreamForOutput"))
+			aSourceData[i].Value >>= m_rStream;
     }
 
     if (!m_rDocumentHandler.is()) {
@@ -541,7 +441,7 @@ sal_Bool XSLTFilter::exporter(
     OSL_ASSERT(m_tcontrol.is());
     if (m_tcontrol.is() && m_rOutputStream.is() && m_rDocumentHandler.is())
     {
-        // we want to be notfied when the processing is done...
+        // we want to be notified when the processing is done...
         m_tcontrol->addListener(Reference< XStreamListener >(this));
 
         // create pipe
@@ -557,9 +457,26 @@ sal_Bool XSLTFilter::exporter(
         Reference< XActiveDataSink > tsink(m_tcontrol, UNO_QUERY);
         tsink->setInputStream(pipein);
 
-        // connect transformer to output
-        Reference< XActiveDataSource > tsource(m_tcontrol, UNO_QUERY);
-        tsource->setOutputStream(m_rOutputStream);
+		
+		//creating pipe2
+		Reference< XOutputStream > x_Pipeout( m_rServiceFactory->createInstance(
+			OUString::createFromAscii("com.sun.star.io.Pipe")), UNO_QUERY );
+		Reference< XInputStream > x_Pipein( x_Pipeout, UNO_QUERY );
+
+		// connect transformer to pipe2
+		Reference< XActiveDataSource > tsource(m_tcontrol, UNO_QUERY);
+		tsource->setOutputStream( x_Pipeout );
+
+		pSplitter = new UOF2Splitter( m_rServiceFactory, sURL );
+		m_splitControl = Reference< XActiveDataControl >( static_cast< cppu::OWeakObject* >( pSplitter), UNO_QUERY );
+		//m_splitControl->addListener( Reference< XStreamListener >(this));
+		// connect pipe2 to splitter
+		Reference< XActiveDataSink > splitsink( m_splitControl, UNO_QUERY );
+		splitsink->setInputStream( x_Pipein );
+		// connect splitter to output
+		Reference< XActiveDataStreamer > splitout( m_splitControl, UNO_QUERY );
+		splitout->setStream( m_rStream );
+		m_rOutputStream = m_rStream->getOutputStream();
 
         // we will start receiving events after returning 'true'.
         // we will start the transformation as soon as we receive the startDocument 
@@ -584,6 +501,10 @@ void XSLTFilter::startDocument() throw (SAXException,RuntimeException){
 void XSLTFilter::endDocument() throw (SAXException, RuntimeException){
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->endDocument();
+
+	//when the inputStream(outputStream of filter) was closed, start to parse it.
+	m_splitControl->start();
+
     // wait for the transformer to finish
     osl_waitCondition(m_cTransformed, 0);
     if (!m_bError && !m_bTerminated)
@@ -676,6 +597,31 @@ void SAL_CALL component_getImplementationEnvironment(
 	const sal_Char ** ppEnvTypeName, uno_Environment ** /* ppEnv */ )
 {
     *ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
+}
+
+sal_Bool SAL_CALL component_writeInfo(void * /* pServiceManager */, void * pRegistryKey )
+{
+    if (pRegistryKey)
+	{
+        try
+        {
+            Reference< XRegistryKey > xNewKey(
+                reinterpret_cast< XRegistryKey * >( pRegistryKey )->createKey(
+                    OUString::createFromAscii( "/" IMPLEMENTATION_NAME "/UNO/SERVICES" ) ) );
+
+            const Sequence< OUString > & rSNL = getSupportedServiceNames();
+            const OUString * pArray = rSNL.getConstArray();
+            for ( sal_Int32 nPos = rSNL.getLength(); nPos--; )
+                xNewKey->createKey( pArray[nPos] );
+
+            return sal_True;
+        }
+        catch (InvalidRegistryException &)
+        {
+            OSL_ENSURE( sal_False, "### InvalidRegistryException!" );
+        }
+    }
+    return sal_False;
 }
 
 void * SAL_CALL component_getFactory(

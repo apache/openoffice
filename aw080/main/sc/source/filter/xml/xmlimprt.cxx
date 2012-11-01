@@ -84,9 +84,9 @@
 #include <com/sun/star/util/NumberFormat.hpp>
 #include <com/sun/star/util/XNumberFormatTypes.hpp>
 #include <tools/urlobj.hxx>
-#include <com/sun/star/sheet/XNamedRanges.hpp>
+#include <com/sun/star/sheet/XNamedRanges2.hpp>
 #include <com/sun/star/sheet/NamedRangeFlag.hpp>
-#include <com/sun/star/sheet/XNamedRange.hpp>
+#include <com/sun/star/sheet/XNamedRange2.hpp>
 #include <com/sun/star/sheet/XLabelRanges.hpp>
 #include <com/sun/star/io/XSeekable.hpp>
 
@@ -640,6 +640,7 @@ const SvXMLTokenMap& ScXMLImport::GetTableElemTokenMap()
             { XML_NAMESPACE_TABLE,	XML_TABLE_ROW,					XML_TOK_TABLE_ROW			},
             { XML_NAMESPACE_TABLE,	XML_TABLE_SOURCE,				XML_TOK_TABLE_SOURCE		},
             { XML_NAMESPACE_TABLE,	XML_SCENARIO,					XML_TOK_TABLE_SCENARIO		},
+            { XML_NAMESPACE_TABLE,	XML_NAMED_EXPRESSIONS,			XML_TOK_TABLE_NAMED_EXPRESSIONS			},
             { XML_NAMESPACE_TABLE,	XML_SHAPES, 					XML_TOK_TABLE_SHAPES		},
             { XML_NAMESPACE_OFFICE,	XML_FORMS,						XML_TOK_TABLE_FORMS			},
             { XML_NAMESPACE_OFFICE, XML_EVENT_LISTENERS,            XML_TOK_TABLE_EVENT_LISTENERS },
@@ -2732,7 +2733,7 @@ void ScXMLImport::SetNamedRanges()
         uno::Reference <beans::XPropertySet> xPropertySet (GetModel(), uno::UNO_QUERY);
         if (xPropertySet.is())
         {
-            uno::Reference <sheet::XNamedRanges> xNamedRanges(xPropertySet->getPropertyValue(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(SC_NAMEDRANGES))), uno::UNO_QUERY);
+            uno::Reference <sheet::XNamedRanges2> xNamedRanges(xPropertySet->getPropertyValue(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(SC_NAMEDRANGES))), uno::UNO_QUERY);
             if (xNamedRanges.is())
             {
                 ScMyNamedExpressions::iterator aItr(pNamedExpressions->begin());
@@ -2747,7 +2748,10 @@ void ScXMLImport::SetNamedRanges()
                     {
                         try
                         {
-                            xNamedRanges->addNewByName((*aItr)->sName, sTempContent, aCellAddress, GetRangeType((*aItr)->sRangeType));
+                            //xNamedRanges->addNewByName((*aItr)->sName, sTempContent, aCellAddress, GetRangeType((*aItr)->sRangeType));//String::CreateFromInt32( (*aItr)->nNameScope)
+							String sTabName;
+							GetDocument()->GetName( (*aItr)->nNameScope, sTabName);
+							xNamedRanges->addNewByScopeName( sTabName, (*aItr)->sName, (*aItr)->sContent, aCellAddress, GetRangeType((*aItr)->sRangeType) );							
                         }
                         catch( uno::RuntimeException& )
                         {
@@ -2786,7 +2790,12 @@ void ScXMLImport::SetNamedRanges()
                     if (ScRangeStringConverter::GetAddressFromString(
                         aCellAddress, (*aItr)->sBaseCellAddress, GetDocument(), FormulaGrammar::CONV_OOO, nOffset ))
                     {
-                        uno::Reference <sheet::XNamedRange> xNamedRange(xNamedRanges->getByName((*aItr)->sName), uno::UNO_QUERY);
+						String sTableName;
+						GetDocument()->GetName( (*aItr)->nNameScope,  sTableName );
+						rtl::OUString sRangeScope( sTableName);
+                        //uno::Reference <sheet::XNamedRange> xNamedRange(xNamedRanges->getByName((*aItr)->sName), uno::UNO_QUERY);
+						//getByScopeName
+						uno::Reference <sheet::XNamedRange2> xNamedRange(xNamedRanges->getByScopeName( sRangeScope,(*aItr)->sName), uno::UNO_QUERY);
                         if (xNamedRange.is())
                         {
                             LockSolarMutex();

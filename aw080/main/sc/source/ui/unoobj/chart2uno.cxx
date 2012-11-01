@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -39,6 +37,7 @@
 #include "compiler.hxx"
 #include "reftokenhelper.hxx"
 #include "chartlis.hxx"
+#include "rangenam.hxx"
 
 #include <sfx2/objsh.hxx>
 #include <tools/table.hxx>
@@ -2036,6 +2035,53 @@ uno::Reference< chart2::data::XDataSequence > SAL_CALL
 
     vector<ScSharedTokenRef> aRefTokens;
     ScRefTokenHelper::compileRangeRepresentation(aRefTokens, aRangeRepresentation, m_pDocument);
+	if (aRefTokens.empty())	// i120962: If haven't get reference, that means aRangeRepresentation is not a simple address, then try formulas
+	{
+		ScRangeName	aLocalRangeName(*(m_pDocument->GetRangeName()));
+		sal_uInt16	nCurPos = 0;
+		sal_Bool	bFindName = aLocalRangeName.SearchName(aRangeRepresentation, nCurPos);	// Find global name first
+
+		for (SCTAB Scope = 0; Scope < MAXTABCOUNT && !bFindName; Scope++ )	// Find name in sheet scope
+			bFindName = aLocalRangeName.SearchName(aRangeRepresentation, nCurPos, Scope);
+
+		if (bFindName)
+		{
+			ScRangeData*	pData =(ScRangeData*)(aLocalRangeName.At(nCurPos));
+			ScTokenArray*	pArray = pData->GetCode();
+			sal_uInt16 nLen = pArray->GetLen();
+			if (!nLen)
+				;
+			else if (nLen == 1)	// range names
+			{
+				pArray->Reset();
+				const FormulaToken* p = pArray->GetNextReference();
+				if (p)
+					aRefTokens.push_back(
+							ScSharedTokenRef(static_cast<ScToken*>(p->Clone())));
+			}
+			else	// formulas
+			{
+				String	aSymbol;
+				pData->GetSymbol(aSymbol, FormulaGrammar::GRAM_ENGLISH);
+
+				String	aFormulaStr('=');
+				aFormulaStr += aSymbol;
+
+				ScAddress	aAddr;
+				ScFormulaCell*	pCell = new ScFormulaCell(m_pDocument, aAddr, aFormulaStr, FormulaGrammar::GRAM_ENGLISH);
+				pCell->Interpret();
+
+				if (pCell->GetValidRefToken())
+				{
+					aRefTokens.push_back(
+						ScSharedTokenRef(static_cast<ScToken*>(pCell->GetValidRefToken()->Clone())));
+				}
+
+				DELETEZ( pCell );
+			}
+		}
+	}
+
     if (aRefTokens.empty())
         return xResult;
 
@@ -2979,12 +3025,51 @@ uno::Sequence< double > SAL_CALL ScChart2DataSequence::getNumericalData()
     ::rtl::math::setNan(&fNAN);
 
     sal_Int32 nCount = m_aDataArray.size();
-    uno::Sequence<double> aSeq(nCount);
+    // i121058: if there's too many points need to be painted, it doens't need to get all points for performance consideration
+    // and so many points are not useful for users to understand the chart. So only picked some points to paint
+    sal_Int32 nStep = nCount >= 10000 ? 50 : 1;
+    nCount = nCount >= 10000 ? ((nCount - nCount % nStep) / nStep) : nCount;
+    sal_Int32 nRealCount = nStep == 1 ? nCount : nCount * 2;
+    uno::Sequence<double> aSeq(nRealCount);
     double* pArr = aSeq.getArray();
     ::std::list<Item>::const_iterator itr = m_aDataArray.begin(), itrEnd = m_aDataArray.end();
-    for (; itr != itrEnd; ++itr, ++pArr)
-        *pArr = itr->mbIsValue ? itr->mfValue : fNAN;
-
+    for (sal_Int32 i = 0; i < nCount; i++)
+    {
+        if (nStep == 1)
+        {
+            *pArr++ = itr->mbIsValue ? itr->mfValue : fNAN;
+            itr++;
+        }
+        else
+        {
+            sal_Int32 nMax = 0, nMin = 0, nMaxStep = 0, nMinStep = 0;
+            for (sal_Int32 j = 0; j < nStep; j++)
+            {
+                sal_Int32 nValue = itr->mbIsValue ? itr->mfValue : fNAN;
+                if (nValue > nMax)
+                {
+                    nMax = nValue;
+                    nMaxStep = j;
+                }
+                if (nValue < nMin)
+                {
+                    nMin = nValue;
+                    nMinStep = j;
+                }
+                itr++;
+            }
+            if (nMaxStep > nMinStep)
+            {
+                *pArr++ = nMin;
+                *pArr++ = nMax;
+            }
+            else
+            {
+                *pArr++ = nMax;
+                *pArr++ = nMin;
+            }
+        }
+    }
     return aSeq;
 }
 

@@ -110,6 +110,7 @@
 #include <bf_svx/xlnwtit.hxx>
 #endif
 
+#include "arrayhelper.hxx"
 #include "pairs.hxx"
 #include "datalog.hxx"
 
@@ -544,22 +545,24 @@ namespace binfilter {
 /*N*/ 
 /*N*/ 	if (nCnt != nPieSegCount)
 /*N*/ 	{
-/*N*/ 		long *pOfs = new long[nCnt];
+/*N*/ 		long *pOfs = ArrayHelper<long>::create_short_size(nCnt);
+            if( pOfs )
+            {
+/*N*/ 		    if (nPieSegCount > nCnt)
+/*N*/ 			    for (i = 0; i < nCnt; i++)
+/*N*/ 				    pOfs[i] = pPieSegOfs[i];
+/*N*/ 		    else
+/*N*/ 		    {
+/*N*/ 			    for (i = 0; i < nPieSegCount; i++)
+/*N*/ 				    pOfs[i] = pPieSegOfs[i];
+/*N*/ 			    for (; i < nCnt; i++)
+/*N*/ 				    pOfs[i] = 0;
+/*N*/ 		    }
 /*N*/ 
-/*N*/ 		if (nPieSegCount > nCnt)
-/*N*/ 			for (i = 0; i < nCnt; i++)
-/*N*/ 				pOfs[i] = pPieSegOfs[i];
-/*N*/ 		else
-/*N*/ 		{
-/*N*/ 			for (i = 0; i < nPieSegCount; i++)
-/*N*/ 				pOfs[i] = pPieSegOfs[i];
-/*N*/ 			for (; i < nCnt; i++)
-/*N*/ 				pOfs[i] = 0;
-/*N*/ 		}
-/*N*/ 
-/*N*/ 		delete[] pPieSegOfs;
-/*N*/ 		pPieSegOfs = pOfs;
-/*N*/ 		nPieSegCount = nCnt;
+/*N*/ 		    delete[] pPieSegOfs;
+/*N*/ 		    pPieSegOfs = pOfs;
+/*N*/ 		    nPieSegCount = nCnt;
+            }
 /*N*/ 	}
 /*N*/ 
 /*N*/ 
@@ -854,13 +857,16 @@ namespace binfilter {
 /*N*/ 	{
 /*N*/ 		const SchColorTable& aDefCols = pOptions->GetDefaultColors();
 /*N*/ 		nCount = aDefCols.Count();
-/*N*/ 		pDefaultCol = new ColorData[ nCount ];
+/*N*/ 		pDefaultCol = ArrayHelper<ColorData>::create_long_size( nCount );
 /*N*/  		DBG_ASSERT( nCount == ROW_COLOR_COUNT, "Chart: dynamic default color array size not supported yet" );
 /*N*/ 
-/*N*/ 		for( int i=0; i<nCount; i++ )
-/*N*/ 		{
-/*N*/ 			pDefaultCol[ i ] = aDefCols.GetColorData( i );
-/*N*/ 		}
+            if(pDefaultCol)
+            {
+/*N*/ 		    for( int i=0; i<nCount; i++ )
+/*N*/ 		    {
+/*N*/ 			    pDefaultCol[ i ] = aDefCols.GetColorData( i );
+/*N*/ 		    }
+            }
 /*N*/ 	}
 /*N*/ 	else
 /*N*/ 	{

@@ -256,9 +256,19 @@ void XclImpFont::FillToItemSet( SfxItemSet& rItemSet, XclFontItemType eType, boo
         rtl_TextEncoding eFontEnc = maData.GetFontEncoding();
         rtl_TextEncoding eTempTextEnc = (bEE && (eFontEnc == GetTextEncoding())) ?
             ScfTools::GetSystemTextEncoding() : eFontEnc;
+		
+		//add corresponding pitch for FontFamily
+		FontPitch ePitch = PITCH_DONTKNOW;
+		FontFamily eFtFamily = maData.GetScFamily( GetTextEncoding() ); 
+		switch( eFtFamily ) //refer http://msdn.microsoft.com/en-us/library/aa246306(v=VS.60).aspx
+		{
+			case FAMILY_ROMAN:				ePitch = PITCH_VARIABLE;		break;
+			case FAMILY_SWISS:				ePitch = PITCH_VARIABLE;		break;
+			case FAMILY_MODERN:				ePitch = PITCH_FIXED;			break;
+			default:						break;
+		 } 
+        SvxFontItem aFontItem( eFtFamily , maData.maName, EMPTY_STRING, ePitch, eTempTextEnc, ATTR_FONT );
 
-        SvxFontItem aFontItem( maData.GetScFamily( GetTextEncoding() ), maData.maName, EMPTY_STRING,
-                PITCH_DONTKNOW, eTempTextEnc, ATTR_FONT );
         // #91658# set only for valid script types
         if( mbHasWstrn )
             PUTITEM( aFontItem, ATTR_FONT,      EE_CHAR_FONTINFO );
@@ -980,6 +990,7 @@ void XclImpCellArea::FillToItemSet( SfxItemSet& rItemSet, const XclImpPalette& r
 XclImpXF::XclImpXF( const XclImpRoot& rRoot ) :
     XclXFBase( true ),      // default is cell XF
     XclImpRoot( rRoot ),
+    mpPooledPattern( 0 ),
     mpStyleSheet( 0 ),
     mnXclNumFmt( 0 ),
     mnXclFont( 0 )
@@ -1199,10 +1210,33 @@ void XclImpXF::ApplyPattern(
 
     // insert into document
     ScDocument& rDoc = GetDoc();
-    if( IsCellXF() && mpStyleSheet )
-        rDoc.ApplyStyleAreaTab( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, *mpStyleSheet );
-    if( HasUsedFlags() )
-        rDoc.ApplyPatternAreaTab( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, rPattern );
+	sal_Bool bApplyPattern = sal_False;
+
+	if (IsCellXF() && mpPooledPattern && mpPooledPattern->GetRefCount()>0 && mpPooledPattern->GetRefCount() <= SFX_ITEMS_MAXREF)
+	{
+		rDoc.ApplyPooledPatternAreaTab( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, *mpPooledPattern, rPattern );
+		mpPooledPattern->AddRef();
+	}
+	else
+	{
+		if( IsCellXF() && mpStyleSheet )
+		{
+			rDoc.ApplyStyleAreaTab( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, *mpStyleSheet );
+			bApplyPattern = sal_True;
+		}
+		if( HasUsedFlags() )
+		{
+			rDoc.ApplyPatternAreaTab( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, rPattern );
+			bApplyPattern = sal_True;
+		}
+	}		
+
+	if (IsCellXF() && !mpPooledPattern && bApplyPattern)
+	{
+		mpPooledPattern = rDoc.GetPattern(nScCol1, nScRow1, nScTab);
+		ScPatternAttr* pPooledPattern = const_cast<ScPatternAttr*>(mpPooledPattern);
+		StartListening(*pPooledPattern);
+	}
 
     // #108770# apply special number format
     if( nForceScNumFmt != NUMBERFORMAT_ENTRY_NOT_FOUND )
@@ -1211,6 +1245,11 @@ void XclImpXF::ApplyPattern(
         GetNumFmtBuffer().FillScFmtToItemSet( aPattern.GetItemSet(), nForceScNumFmt );
         rDoc.ApplyPatternAreaTab( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, aPattern );
     }
+}
+
+void XclImpXF::Notify(SfxBroadcaster& rBC, const SfxHint& rHint )
+{
+	mpPooledPattern = 0;
 }
 
 /*static*/ void XclImpXF::ApplyPatternForBiff2CellFormat( const XclImpRoot& rRoot,
@@ -1484,8 +1523,9 @@ void XclImpXFBuffer::ApplyPattern(
     if( XclImpXF* pXF = GetXF( rXFIndex.GetXFIndex() ) )
     {
         // #108770# set 'Standard' number format for all Boolean cells
-        sal_uLong nForceScNumFmt = rXFIndex.IsBoolCell() ? GetNumFmtBuffer().GetStdScNumFmt() : NUMBERFORMAT_ENTRY_NOT_FOUND;
-        pXF->ApplyPattern( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, nForceScNumFmt );
+        //sal_uLong nForceScNumFmt = rXFIndex.IsBoolCell() ? GetNumFmtBuffer().GetStdScNumFmt() : NUMBERFORMAT_ENTRY_NOT_FOUND;
+        sal_uLong nForceScNumFmt = NUMBERFORMAT_ENTRY_NOT_FOUND;
+		pXF->ApplyPattern( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, nForceScNumFmt );
     }
 }
 

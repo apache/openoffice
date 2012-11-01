@@ -1,5 +1,26 @@
 #!/usr/bin/perl
 
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
 =head1 NAME
 
     download_external_libraries.pl - Load missing tarballs specified in main/external_libs.lst.
@@ -61,10 +82,18 @@ use strict;
 use File::Spec;
 use File::Path;
 use File::Basename;
-use LWP::UserAgent;
 use Digest::MD5;
 use Digest::SHA;
 use URI;
+my $simple = 1;
+if ($simple)
+{
+    use LWP::Simple;
+}
+else
+{
+    use LWP::UserAgent;
+}
 
 my $Debug = 1;
 
@@ -159,11 +188,7 @@ sub ProcessLastBlock ()
         my $name = GetValue('name');
         my $checksum = GetChecksum();
 
-        if ( ! defined $checksum)
-        {
-            die "no checksum given for $name";
-        }
-        elsif ( ! IsPresent($name, $checksum))
+        if ( ! IsPresent($name, $checksum))
         {
             AddDownloadRequest($name, $checksum);
         }
@@ -263,7 +288,7 @@ sub SubstituteVariables ($)
     {
         my ($head,$name,$tail) = ($1,$2,$3);
         my $value = GetValue($name);
-        die "can evaluate variable $name" if ! defined $value;
+        die "can not evaluate variable $name" if ! defined $value;
         $text = $head.$value.$tail;
 
         die "(probably) detected an infinite recursion in variable definitions" if --$infinite_recursion_guard<=0;
@@ -387,7 +412,12 @@ sub IsPresent ($$)
 
     # File exists.  Check if its checksum is correct.
     my $checksum;
-    if ($given_checksum->{'type'} eq "MD5")
+    if ( ! defined $given_checksum)
+    {
+        print "no checksum given, can not verify\n";
+        return 1;
+    }
+    elsif ($given_checksum->{'type'} eq "MD5")
     {
         my $md5 = Digest::MD5->new();
         open my $in, $filename;
@@ -410,7 +440,7 @@ sub IsPresent ($$)
     {
         # Checksum does not match.  Delete the file.
         print "$name exists, but checksum does not match => deleting\n";
-        #unlink($filename);
+        unlink($filename);
         return 0;
     }
     else
@@ -455,7 +485,12 @@ sub Download ()
 
         foreach my $url (@$urls)
         {
-            last if DownloadFile($checksum->{'value'}."-".$name, $url, $checksum);
+            last if DownloadFile(
+                defined $checksum
+                    ? $checksum->{'value'}."-".$name
+                    : $name,
+                $url,
+                $checksum);
         }
     }
 }
@@ -480,7 +515,8 @@ sub DownloadFile ($$$)
     my $temporary_filename = $filename . ".part";
 
     print "downloading to $temporary_filename\n";
-    open my $out, ">$temporary_filename";
+    my $out;
+    open $out, ">$temporary_filename";
     binmode($out);
 
     # Prepare checksum
@@ -501,37 +537,59 @@ sub DownloadFile ($$$)
     }
 
     # Download the extension.
-    my $agent = LWP::UserAgent->new();
-    $agent->timeout(120);
-    $agent->show_progress(1);
-    my $last_was_redirect = 0;
-    $agent->add_handler('response_redirect'
-                        => sub{
-                            $last_was_redirect = 1;
-                            return;
-                        });
-    $agent->add_handler('response_data'
-                        => sub{
-                            if ($last_was_redirect)
-                            {
-                                $last_was_redirect = 0;
-                                # Throw away the data we got so far.
-                                $checksum->reset();
-                                close $out;
-                                open $out, ">$temporary_filename";
-                                binmode($out);
-                            }
-                            my($response,$agent,$h,$data)=@_;
-                            print $out $data;
-                            $digest->add($data);
-                        });
+    my $success = 0;
+    if ($simple)
+    {
+	my $content = LWP::Simple::get($URL);
+	$success = defined $content;
+	if ($success)
+	{
+	    open $out, ">$temporary_filename";
+	    binmode($out);
+	    print $out $content;
+	    close($out);
+	    $digest->add($content);
+	}
+	else
+	{
+	    print "download from $URL failed\n";
+	}
+    }
+    else
+    {
+	my $agent = LWP::UserAgent->new();
+	$agent->timeout(120);
+	$agent->env_proxy;
+	$agent->show_progress(1);
+	my $last_was_redirect = 0;
+	$agent->add_handler('response_redirect'
+			    => sub{
+				$last_was_redirect = 1;
+				return;
+			    });
+	$agent->add_handler('response_data'
+			    => sub{
+				if ($last_was_redirect)
+				{
+				    $last_was_redirect = 0;
+				    # Throw away the data we got so far.
+				    $digest->reset();
+				    close $out;
+				    open $out, ">$temporary_filename";
+				    binmode($out);
+				}
+				my($response,$agent,$h,$data)=@_;
+				print $out $data;
+				$digest->add($data);
+			    });
 
-    my $response = $agent->get($URL);
-    close $out;
-
+	$success = $agent->get($URL)->is_success();
+	close $out;
+    }
+    
     # When download was successfull then check the checksum and rename the .part file
     # into the actual extension name.
-    if ($response->is_success())
+    if ($success)
     {
         my $file_checksum = $digest->hexdigest();
         if (defined $checksum)

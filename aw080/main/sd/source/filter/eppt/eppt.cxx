@@ -176,6 +176,7 @@ PPTWriter::PPTWriter( const std::vector< com::sun::star::beans::PropertyValue >&
     if ( ImplGetPropertyValue( mXPagePropSet, String( RTL_CONSTASCII_USTRINGPARAM( "Height" ) ) ) )
         mAny >>= nHeight;
     maDestPageSize = maMap100thMmToMs * basegfx::B2DVector(nWidth, nHeight);
+    maPageSize = Size(nWidth, nHeight);
 
     mrStg = rSvStorage;
     if ( !mrStg.Is() )
@@ -1707,8 +1708,13 @@ void PPTWriter::ImplWriteBackground( ::com::sun::star::uno::Reference< ::com::su
 
     mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
     mpPptEscherEx->AddShape( ESCHER_ShpInst_Rectangle, 0xc00 );                     // Flags: Connector | Background | HasSpt
-    basegfx::B2DRange aObjectRange(0.0, 0.0, 28000.0, 21000.0);
-    EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aObjectRange);
+
+    // #121183# Use real PageSize in 100th mm
+    EscherPropertyContainer aPropOpt(
+        mpPptEscherEx->GetGraphicProvider(), 
+        mpPicStrm, 
+        basegfx::B2DRange(0.0, 0.0, maPageSize.Width(), maPageSize.Height()));
+
     aPropOpt.AddOpt( ESCHER_Prop_fillType, ESCHER_FillSolid );
     ::com::sun::star::drawing::FillStyle aFS( ::com::sun::star::drawing::FillStyle_NONE );
     if ( ImplGetPropertyValue( rXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "FillStyle" ) ) ) )
@@ -1829,7 +1835,8 @@ void PPTWriter::ImplWriteOLE( sal_uInt32 nCnvrtFlags )
                 if ( pPtr->xControlModel.is() )
                 {
                     String aName;
-                    ::com::sun::star::awt::Size aSize;
+                    //Initialize the graphic size which will be used on export
+                    ::com::sun::star::awt::Size  aSize( pPtr->xShape->getSize() );
                     SvStorageRef xDest( new SvStorage( new SvMemoryStream(), true ) );
                     sal_Bool bOk = SvxMSConvertOCXControls::WriteOCXStream( xDest, pPtr->xControlModel, aSize, aName );
                     if ( bOk )

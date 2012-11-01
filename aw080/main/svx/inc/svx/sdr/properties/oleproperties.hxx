@@ -35,9 +35,6 @@ namespace sdr
 		class OleProperties : public RectangleProperties
 		{
 		protected:
-            // #119287# get correct StyleSheet for SdrObject we are based on
-            virtual SfxStyleSheet* getObjectDependentDefaultStyleSheet() const;
-
         public:
 			// basic constructor
 			OleProperties(SdrObject& rObj);

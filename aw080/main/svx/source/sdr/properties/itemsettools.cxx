@@ -27,10 +27,9 @@
 #include <tools/debug.hxx>
 #include <svl/itemset.hxx>
 #include <svl/whiter.hxx>
-
-#include <vector>
 #include <svx/svdogrp.hxx>
 #include <svx/svditer.hxx>
+#include <vcl/region.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // class to remember broadcast start positions
