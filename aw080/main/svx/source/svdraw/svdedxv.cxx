@@ -95,7 +95,10 @@ SdrObjEditView::SdrObjEditView(SdrModel& rModel1, OutputDevice* pOut)
     mbTextEditOnlyOneView(false),
     mbTextEditNewObj(false),
     mbQuickTextEditMode(true),
-    mbMacroDown(false)
+    mbMacroDown(false),
+    mxSelectionController(),
+    mxLastSelectionController(),
+    mpOldTextEditUndoManager(0)
 {
 }
 

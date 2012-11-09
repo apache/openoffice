@@ -60,7 +60,7 @@ namespace drawinglayer
 				for(sal_Int32 a(0L); a < nCount; a++)
 				{
 					// get reference
-					const primitive2d::Primitive2DReference xReference(rSource[a]);
+					const primitive2d::Primitive2DReference& xReference(rSource[a]);
 
 					if(xReference.is())
 					{
