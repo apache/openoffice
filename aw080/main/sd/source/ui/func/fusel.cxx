@@ -697,6 +697,13 @@ bool FuSelection::MouseButtonUp(const MouseEvent& rMEvt)
 	if( !mpView )
 		return false;
 
+    if(mpView->isSelectionChangePending())
+    {
+        // force trigger selection change to get bSelectionChanged
+        // set in FuSelection::SelectionHasChanged() call eventually
+        mpView->forceSelectionChange();
+    }
+
 	const double fHitLog(basegfx::B2DVector(mpWindow->GetInverseViewTransformation() * basegfx::B2DVector(HITPIX, 0.0)).getLength());
 	const double fDrgLog(basegfx::B2DVector(mpWindow->GetInverseViewTransformation() * basegfx::B2DVector(DRGPIX, 0.0)).getLength());
 	const basegfx::B2DPoint aPixelPos(rMEvt.GetPosPixel().X(), rMEvt.GetPosPixel().Y());
