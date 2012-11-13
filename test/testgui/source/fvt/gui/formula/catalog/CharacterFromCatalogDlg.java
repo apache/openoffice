@@ -29,33 +29,24 @@ import static testlib.gui.UIMap.*;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.openoffice.test.common.Logger;
 
-/**
- *
- */
-public class InputCharacterFromCatalogDlg {
+import testlib.gui.AppTool;
 
-	@Rule
-	public Logger log = Logger.getLogger(this);
+public class CharacterFromCatalogDlg {
 
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-
-		// New a formula document
-		app.dispatch("private:factory/smath");
-		mathEditWindow.waitForExistence(10, 2);
-
+		AppTool.newFormula();
 		// Click catalog button
 		mathCatalogButton.click();
 	}
 
 	@After
 	public void tearDown() throws Exception {
-
+		AppTool.close();
+		app.stop();
 	}
 
 	/**
@@ -80,19 +71,10 @@ public class InputCharacterFromCatalogDlg {
 		mathEditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard()); // add
-																															// "%"
-																															// in
-																															// the
-																															// front,
-																															// add
-																															// " "
-																															// in
-																															// the
-																															// end
+		assertEquals("Symbol is not inserted succcessfully",
+				"%".concat(selectedSymbol).concat(" "), app.getClipboard());
+		// add "%" in the font, add " " in the end
 
-		// Close all dialogs
-		app.dispatch(".uno:CloseDoc");
 	}
 
 	/**
@@ -117,19 +99,9 @@ public class InputCharacterFromCatalogDlg {
 		mathEditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard()); // add
-																															// "%"
-																															// in
-																															// the
-																															// front,
-																															// add
-																															// " "
-																															// in
-																															// the
-																															// end
-
-		// Close all dialogs
-		app.dispatch(".uno:CloseDoc");
+		assertEquals("Symbol is not inserted succcessfully",
+				"%".concat(selectedSymbol).concat(" "), app.getClipboard());
+		// add "%" in the font, add " " in the end
 	}
 
 	/**
@@ -154,18 +126,8 @@ public class InputCharacterFromCatalogDlg {
 		mathEditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully", "%".concat(selectedSymbol).concat(" "), app.getClipboard()); // add
-																															// "%"
-																															// in
-																															// the
-																															// front,
-																															// add
-																															// " "
-																															// in
-																															// the
-																															// end
-
-		// Close all dialogs
-		app.dispatch(".uno:CloseDoc");
+		assertEquals("Symbol is not inserted succcessfully",
+				"%".concat(selectedSymbol).concat(" "), app.getClipboard());
+		// add "%" in the font, add " " in the end
 	}
 }

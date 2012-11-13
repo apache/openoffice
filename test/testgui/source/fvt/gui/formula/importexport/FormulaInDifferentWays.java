@@ -33,29 +33,23 @@ import static testlib.gui.UIMap.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
-import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
-import org.openoffice.test.common.Logger;
 
-/**
- *
- */
-public class CreateFormulaInDifferentWays {
+import testlib.gui.AppTool;
 
-	@Rule
-	public Logger log = Logger.getLogger(this);
+
+public class FormulaInDifferentWays {
 
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-
-		// New a formula document
-		app.dispatch("private:factory/smath");
+		newFormula();
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		close();
 		app.stop();
 	}
 
@@ -66,13 +60,10 @@ public class CreateFormulaInDifferentWays {
 	 */
 	@Test
 	public void testElementsWindowActive() throws Exception {
-
 		// Check if the "View->Elements" menu is selected
 		boolean viewElements = mathElementsWindow.exists();
-
 		// Active or inactive the Elements window
 		app.dispatch(".uno:ToolBox");
-
 		assertNotSame("Elements window active/inactive failed", viewElements, mathElementsWindow.exists());
 	}
 
@@ -89,7 +80,6 @@ public class CreateFormulaInDifferentWays {
 		if (!mathElementsWindow.exists()) {
 			app.dispatch(".uno:ToolBox");
 		}
-
 		// Click a formula in Elements window and edit the formula in the
 		// commands window
 		mathElementsRelations.click();
@@ -102,34 +92,20 @@ public class CreateFormulaInDifferentWays {
 		// Verify if the formula is correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
-																											// " "
-
-		// Save the formula
-		app.dispatch(".uno:SaveAs");
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); 
+		
+		// Save and reopen the formula
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-
-		// Close and reopen it
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		saveAs(saveTo);
+		close();
+		open(saveTo);
 		mathEditWindow.waitForExistence(10, 2);
 
 		// Verify if the formula still exists in the file, and correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
-																											// " "
-
-		// Close all dialogs
-		app.dispatch(".uno:CloseDoc");
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());
+	
 	}
 
 	/**
@@ -142,7 +118,6 @@ public class CreateFormulaInDifferentWays {
 		String saveTo = getPath("temp/" + "FormulaFromRightClickMenu.odf");
 
 		// Right click in equation editor, choose "Functions->More->arcsin(x)",
-		// input a
 		mathEditWindow.rightClick(5, 5);
 		typeKeys("<down>");
 		typeKeys("<down>");
@@ -153,41 +128,25 @@ public class CreateFormulaInDifferentWays {
 		typeKeys("<enter>");
 		typeKeys("<enter>");
 		typeKeys("a");
-		sleep(2); // If no sleep, error occur on mac
+		sleep(2); 
 		String insertedFormula = "arcsin(a)";
 
 		// Verify if the formula is correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
 
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
-																											// " "
-
-		// Save the formula
-		app.dispatch(".uno:SaveAs");
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); 
+		// Save and reopen the formula
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-
-		// Close and reopen it
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		saveAs(saveTo);
+		close();
+		open(saveTo);
+		
 		mathEditWindow.waitForExistence(10, 2);
-
 		// Verify if the formula still exists in the file, and correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); // add
-																											// " "
-
-		// Close all dialogs
-		app.dispatch(".uno:CloseDoc");
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());																								
 	}
 
 	/**
@@ -196,7 +155,6 @@ public class CreateFormulaInDifferentWays {
 	 * @throws Exception
 	 */
 	@Test
-	@Ignore("Bug #119077 - defect in windows only")
 	public void testUndoRedoInMath() throws Exception {
 
 		// Make Elements window pop up
@@ -214,14 +172,12 @@ public class CreateFormulaInDifferentWays {
 		app.dispatch(".uno:Undo");
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", "+<?> ", app.getClipboard()); // add
-																						// " "
+		assertEquals("The inserted formula into math", "+<?> ", app.getClipboard()); 																					
 
 		// Redo and verify if it works fine
 		app.dispatch(".uno:Redo");
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", "+a ", app.getClipboard()); // add
-																					// " "
+		assertEquals("The inserted formula into math", "+a ", app.getClipboard()); 
 	}
 }
