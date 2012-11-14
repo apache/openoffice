@@ -29,6 +29,7 @@
 #include <basegfx/vector/b2dvector.hxx>
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <basegfx/numeric/ftools.hxx>
+#include <basegfx/basegfxdllapi.h>
 
 #include <vector>
 #include <algorithm>

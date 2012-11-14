@@ -641,7 +641,7 @@ private:
 
 /** Factory method to create a BitmapDevice for given scanline format
  */
-BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector& rSize,
+BASEBMP_DLLPUBLIC BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector& rSize,
                                           bool                      bTopDown,
                                           sal_Int32                 nScanlineFormat );
 
@@ -652,7 +652,7 @@ BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector& rSize,
     lookups for the whole range of pixel values from the specified
     format.
  */
-BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector&        rSize,
+BASEBMP_DLLPUBLIC BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector&        rSize,
                                           bool                             bTopDown,
                                           sal_Int32                        nScanlineFormat,
                                           const PaletteMemorySharedVector& rPalette );
@@ -663,7 +663,7 @@ BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector&        rSize
     Note: the provided memory must have sufficient size, to store the
     image of the specified area and format.
  */
-BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector&        rSize,
+BASEBMP_DLLPUBLIC BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector&        rSize,
                                           bool                             bTopDown,
                                           sal_Int32                        nScanlineFormat,
                                           const RawMemorySharedArray&      rMem,
@@ -678,7 +678,7 @@ BitmapDeviceSharedPtr createBitmapDevice( const basegfx::B2IVector&        rSize
     area. Useful to implement rectangular clips (usually faster than
     setting up a 1bpp clip mask).
  */
-BitmapDeviceSharedPtr subsetBitmapDevice( const BitmapDeviceSharedPtr&     rProto,
+BASEBMP_DLLPUBLIC BitmapDeviceSharedPtr subsetBitmapDevice( const BitmapDeviceSharedPtr&     rProto,
                                           const basegfx::B2IRange&         rSubset );
 
 /** Factory method to clone a BitmapDevice from a given prototype.
@@ -687,7 +687,7 @@ BitmapDeviceSharedPtr subsetBitmapDevice( const BitmapDeviceSharedPtr&     rProt
     copied, only the size can be varied. Note that the prototype's
     bitmap content is <em>not</em> copied, only a palette (if any).
  */
-BitmapDeviceSharedPtr cloneBitmapDevice( const basegfx::B2IVector&        rSize,
+BASEBMP_DLLPUBLIC BitmapDeviceSharedPtr cloneBitmapDevice( const basegfx::B2IVector&        rSize,
                                          const BitmapDeviceSharedPtr&     rProto );
 
 }
