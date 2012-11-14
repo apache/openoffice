@@ -155,7 +155,8 @@ $(call gb_Helper_abbreviate_dirs,\
 		-o $(1) \
 		-xMMD \
 		-xMF $(call gb_CObject_get_dep_target,$(2)) \
-		$(DEFS) $(CFLAGS) \
+		$(DEFS) \
+		$(T_CFLAGS) \
 		-I$(dir $(3)) \
 		$(INCLUDE))
 endef
@@ -169,7 +170,8 @@ $(call gb_Helper_abbreviate_dirs,\
 	mkdir -p $(dir $(1)) && \
 	mkdir -p $(dir $(call gb_CxxObject_get_dep_target,$(2))) && \
 	$(gb_CXX) \
-		$(DEFS) $(CXXFLAGS) \
+		$(DEFS) \
+		$(T_CXXFLAGS) \
 		-c $(3) \
 		-o $(1) \
 		-xMMD \
