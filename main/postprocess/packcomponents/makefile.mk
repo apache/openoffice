@@ -85,6 +85,7 @@ my_components = \
     component/writerfilter/util/writerfilter \
     component/xmloff/source/transform/xof \
     component/xmloff/util/xo \
+    component/xmlscript/util/xcr \
     configmgr \
     ctl \
     date \
@@ -169,7 +170,6 @@ my_components = \
     uui \
     vbaevents \
     vbaobj \
-    xcr \
     xmlfa \
     xmlfd \
     xmx \

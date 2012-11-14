@@ -57,6 +57,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	wizards \
 	writerfilter \
 	xmloff \
+	xmlscript \
 ))
 
 # vim: set noet ts=4 sw=4:
