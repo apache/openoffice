@@ -1351,7 +1351,7 @@ void OOXMLFastContextHandlerProperties::handleHdrFtr()
 
 void OOXMLFastContextHandlerProperties::handleComment()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("handleComment");
 #endif
 
@@ -1361,7 +1361,7 @@ void OOXMLFastContextHandlerProperties::handleComment()
 
 void OOXMLFastContextHandlerProperties::handlePicture()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("handlePicture");
 #endif
 
@@ -1371,7 +1371,7 @@ void OOXMLFastContextHandlerProperties::handlePicture()
 
 void OOXMLFastContextHandlerProperties::handleBreak()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("handleBreak");
 #endif
 
@@ -1381,7 +1381,7 @@ void OOXMLFastContextHandlerProperties::handleBreak()
 
 void OOXMLFastContextHandlerProperties::handleOLE()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("handleOLE");
 #endif
 
@@ -1392,7 +1392,7 @@ void OOXMLFastContextHandlerProperties::handleOLE()
 void OOXMLFastContextHandlerProperties::setParent
 (OOXMLFastContextHandler * pParent)
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->startElement("setParent");
     debug_logger->chars("OOXMLFastContextHandlerProperties");
     debug_logger->endElement("setParent");
@@ -1498,7 +1498,7 @@ throw (uno::RuntimeException, xml::sax::SAXException)
 
 void OOXMLFastContextHandlerValue::setDefaultBooleanValue()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("setDefaultBooleanValue");
 #endif
 
@@ -1511,7 +1511,7 @@ void OOXMLFastContextHandlerValue::setDefaultBooleanValue()
 
 void OOXMLFastContextHandlerValue::setDefaultIntegerValue()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("setDefaultIntegerValue");
 #endif
     
@@ -1524,7 +1524,7 @@ void OOXMLFastContextHandlerValue::setDefaultIntegerValue()
 
 void OOXMLFastContextHandlerValue::setDefaultHexValue()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("setDefaultHexValue");
 #endif
     
@@ -1537,7 +1537,7 @@ void OOXMLFastContextHandlerValue::setDefaultHexValue()
 
 void OOXMLFastContextHandlerValue::setDefaultStringValue()
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("setDefaultStringValue");
 #endif
     
@@ -1656,7 +1656,7 @@ void OOXMLFastContextHandlerXNote::lcl_endFastElement
 
 void OOXMLFastContextHandlerXNote::checkId(OOXMLValue::Pointer_t pValue)
 {
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->startElement("checkId");
     debug_logger->attribute("myId", pValue->getString());
     debug_logger->attribute("id", getXNoteId());
@@ -1862,7 +1862,7 @@ OOXMLFastContextHandlerShape::OOXMLFastContextHandlerShape
             mrShapeContext->setDrawPage(getDocument()->getDrawPage());
             mrShapeContext->setInputStream(getDocument()->getStorageStream());
 
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
             debug_logger->startElement("setRelationFragmentPath");
             debug_logger->attribute("path", mpParserState->getTarget());
             debug_logger->endElement("setRelationFragmentPath");
@@ -2146,7 +2146,7 @@ OOXMLFastContextHandlerWrapper::lcl_createFastChildContext
 
     Id nNameSpace = Element & 0xffff0000;
 
-#ifdef DEBUG_ELEMENT
+#ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->startElement("Wrapper-createChildContext");
     debug_logger->attribute("token", fastTokenToId(Element));
 
