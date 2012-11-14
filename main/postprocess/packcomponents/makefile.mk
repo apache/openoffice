@@ -258,16 +258,16 @@ my_components += \
     ScriptProviderForJava \
     XMergeBridge \
     XSLTValidate \
-    agenda \
-    fax \
-    form \
+    component/wizards/com/sun/star/wizards/agenda/agenda \
+    component/wizards/com/sun/star/wizards/fax/fax \
+    component/wizards/com/sun/star/wizards/form/form \
     hsqldb \
     jdbc \
-    letter \
-    query \
-    report \
-    table \
-    web
+    component/wizards/com/sun/star/wizards/letter/letter \
+    component/wizards/com/sun/star/wizards/query/query \
+    component/wizards/com/sun/star/wizards/report/report \
+    component/wizards/com/sun/star/wizards/table/table \
+    component/wizards/com/sun/star/wizards/web/web
 .IF "$(ENABLE_BEANSHELL)" == "YES"
 my_components += ScriptProviderForBeanShell
 .END
