@@ -44,8 +44,7 @@ $(eval $(call gb_Library_set_include,dba,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,dba,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,dba,\
 	-DOOO_DLLIMPLEMENTATION_DBA \
 ))
 

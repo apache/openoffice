@@ -44,8 +44,7 @@ $(eval $(call gb_Library_set_include,rpt,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,rpt,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,rpt,\
 	-DREPORTDESIGN_DLLIMPLEMENTATION \
 ))
 

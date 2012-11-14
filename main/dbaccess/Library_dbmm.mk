@@ -43,10 +43,6 @@ $(eval $(call gb_Library_set_include,dbmm,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,dbmm,\
-	$$(DEFS) \
-))
-
 $(eval $(call gb_Library_add_linked_libs,dbmm,\
 	cppu          \
     cppuhelper    \

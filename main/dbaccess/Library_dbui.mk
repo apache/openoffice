@@ -45,17 +45,14 @@ $(eval $(call gb_Library_set_include,dbui,\
 ))
 
 ifeq ($(SYSTEM_ODBC_HEADERS),TRUE)
-$(eval $(call gb_Library_set_cflags,dbui,\
-    $$(CFLAGS) \
-    $$(OBJCFLAGS) \
+$(eval $(call gb_Library_add_cflags,dbui,\
 	-DSYSTEM_ODBC_HEADERS \
 ))
 endif
 
 ifneq ($(WINDOWS_VISTA_PSDK),) 
 ifeq ($(PROF_EDITION),)
-$(eval $(call gb_Library_set_defs,dbui,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,dbui,\
 	-DDBACCESS_DLLIMPLEMENTATION\
 	-DWINDOWS_VISTA_PSDK \
 ))
@@ -63,7 +60,7 @@ endif
 endif
 
 ifeq ($(GUI)$(COM),WNTGCC)
-$(eval $(call gb_Library_set_cflags,dbui,\
+$(eval $(call gb_Library_add_cflags,dbui,\
 	-fpermissive \
 ))
 endif
@@ -82,8 +79,7 @@ $(eval $(call gb_Library_add_exception_objects,dbui,\
 endif
 endif
 
-$(eval $(call gb_Library_set_defs,dbui,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,dbui,\
 	-DDBACCESS_DLLIMPLEMENTATION\
 ))
 

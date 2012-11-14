@@ -55,11 +55,17 @@ my_components = \
     component/comphelper/util/comphelp \
     component/cui/util/cui \
     component/drawinglayer/drawinglayer \
+	component/dbaccess/util/dba \
+	component/dbaccess/util/dbu \
+	component/dbaccess/util/sdbt \
     component/framework/util/fwk \
     component/framework/util/fwl \
     component/framework/util/fwm \
     component/linguistic/source/lng \
     component/oox/oox \
+	component/reportdesign/util/rpt \
+	component/reportdesign/util/rptui \
+	component/reportdesign/util/rptxml \
     component/vbahelper/util/msforms \
     component/sax/source/expatwrap/expwrap \
     component/sax/source/fastparser/fastsax \
@@ -91,14 +97,12 @@ my_components = \
     configmgr \
     ctl \
     date \
-    dba \
     dbase \
     dbaxml \
     dbmm \
     dbp \
     dbpool2 \
     dbtools \
-    dbu \
     deployment \
     deploymentgui \
     dlgprov \
@@ -145,7 +149,6 @@ my_components = \
     scriptframe \
     sd \
     sdbc2 \
-    sdbt \
     sdd \
     slideshow \
     spl \
