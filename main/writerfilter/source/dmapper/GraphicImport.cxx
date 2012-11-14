@@ -1092,6 +1092,7 @@ void GraphicImport::lcl_attribute(Id nName, Value & val)
                     }
                     catch( const beans::UnknownPropertyException e )
                     {
+                        (void) e;
                         // It isn't a graphic image
                     }
     
@@ -1733,8 +1734,9 @@ uno::Reference< text::XTextContent > GraphicImport::createGraphicObject( const b
                         xNamed->setName( m_pImpl->sName );
                     }    
                 }
-                catch( const uno::Exception& )
+                catch( const uno::Exception& e)
                 {
+                    (void) e;
                 }    
             }    
         }
