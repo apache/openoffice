@@ -407,7 +407,7 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(NATIVERES) " > $${RESPONSEFILE} && \
 	$(gb_LINK) \
 		$(gb_Executable_TARGETTYPEFLAGS) \
-		$(LDFLAGS) \
+		$(T_LDFLAGS) \
 		$(gb_MINGWLIBDIR)/crt2.o \
 		$(MINGW_CLIB_DIR)/crtbegin.o \
 		@$${RESPONSEFILE} \
@@ -431,7 +431,7 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(NATIVERES) " > $${RESPONSEFILE} && \
 	$(gb_LINK) \
 		$(gb_Library_TARGETTYPEFLAGS) \
-		$(LDFLAGS) \
+		$(T_LDFLAGS) \
 		--enable-auto-image-base \
 		-e _DllMainCRTStartup@12 \
 		$(gb_MINGWLIBDIR)/dllcrt2.o \

@@ -39,9 +39,4 @@ $(eval $(call gb_CppunitTest_add_linked_libs,sfx2_metadatable, \
     $(gb_STDLIBS) \
 ))
 
-$(eval $(call gb_CppunitTest_set_ldflags,sfx2_metadatable,\
-    $$(LDFLAGS) \
-    -lcppunit \
-))
-
 # vim: set noet sw=4 ts=4:

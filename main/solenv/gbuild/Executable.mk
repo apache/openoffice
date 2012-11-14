@@ -77,7 +77,9 @@ $(eval $(foreach method,\
 	add_defs \
 	set_defs \
 	set_include \
+	add_ldflags \
 	set_ldflags \
+	add_libs \
 	set_library_path_flags \
 	add_api \
 	add_linked_libs \

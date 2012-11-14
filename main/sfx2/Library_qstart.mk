@@ -48,12 +48,11 @@ $(eval $(call gb_Library_add_cflags,qstart_gtk,\
     $(filter-out -I%,$(GTK_CFLAGS)) \
 ))
 
-$(eval $(call gb_Library_set_ldflags,qstart_gtk,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,qstart_gtk,\
 ))
 
-$(eval $(call gb_Library_add_external_libs,qstart_gtk,	\
-    $(patsubst -l%,%, $(filter -l%,	$(GTK_LIBS)))	\
+$(eval $(call gb_Library_add_libs,qstart_gtk,\
+    $(GTK_LIBS) \
 ))
 
 
