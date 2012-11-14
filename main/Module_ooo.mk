@@ -44,6 +44,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	unoxml \
 	vbahelper \
 	vcl \
+	writerfilter \
 	xmloff \
 ))
 
