@@ -32,19 +32,14 @@ import static testlib.gui.UIMap.*;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
-import org.openoffice.test.common.Logger;
 
-public class OpenDocumentWithHeaderFooter {
-
-	@Rule
-	public Logger log = Logger.getLogger(this);
+public class DocumentWithHeaderFooter {
 
 	@Before
 	public void setUp() throws Exception {
-		app.start(true); // Bug 120476
+		app.start(true); 
 	}
 
 	@After
@@ -63,8 +58,7 @@ public class OpenDocumentWithHeaderFooter {
 	public void testOpenAOO34WithHeaderFooter() throws Exception {
 		// open sample file
 		String file = prepareData("sd/AOO3.4HeaderFooter.odp");
-		app.dispatch(".uno:Open");
-		submitOpenDlg(file);
+		open(file);
 		impress.waitForExistence(10, 2);
 
 		// check after reopen
@@ -79,24 +73,15 @@ public class OpenDocumentWithHeaderFooter {
 		sdApplyToAllButtonOnSlideFooter.click();
 
 		// save to odp and reopen
-		app.dispatch(".uno:SaveAs");
 		String saveTo2 = getPath("temp/" + "AOO3.4HeaderFooter.odp");
 		FileUtil.deleteFile(saveTo2);
-		submitSaveDlg(saveTo2);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		app.dispatch(".uno:CloseDoc");
+		saveAs(saveTo2);
+		close();
+		open(saveTo2);
+		impress.waitForExistence(10, 2);
 
-		openStartcenter();
-		app.dispatch(".uno:Open");
-		String openFrom2 = getPath("temp/" + "AOO3.4HeaderFooter.odp");
-		submitOpenDlg(openFrom2);
-		sleep(3);
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
-		// end-save to odp and reopen
 	}
 
 	/**
@@ -108,8 +93,7 @@ public class OpenDocumentWithHeaderFooter {
 	public void testOpenPPTWithHeaderFooter() throws Exception {
 		// open sample file
 		String file = prepareData("sd/gfdd.ppt");
-		app.dispatch(".uno:Open");
-		submitOpenDlg(file);
+		open(file);
 		impress.waitForExistence(10, 2);
 
 		// check after reopen
@@ -124,52 +108,30 @@ public class OpenDocumentWithHeaderFooter {
 		sdApplyToAllButtonOnSlideFooter.click();
 
 		// save to ppt and reopen
-		app.dispatch(".uno:SaveAs");
 		String saveTo = getPath("temp/" + "gfdd.ppt");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		sleep(5);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		if (alienFormatDlg.exists())
-			alienFormatDlg.ok();
-		app.dispatch(".uno:CloseDoc");
+		saveAs(saveTo);
+		close();
+		open(saveTo);
+		impress.waitForExistence(10, 2);
 
-		openStartcenter();
-		app.dispatch(".uno:Open");
-		String openFrom = getPath("temp/" + "gfdd.ppt");
-		submitOpenDlg(openFrom);
-		sleep(5);
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
-		// end-save to ppt and reopen
 
 		// close Header and Footer dialog.
 		sdApplyButtonOnSlideFooter.focus();
 		typeKeys("<tab>");
 		typeKeys("<enter>");
-		// end
 
 		// save to odp and reopen
-		app.dispatch(".uno:SaveAs");
 		String saveTo2 = getPath("temp/" + "gfdd.odp");
-		FileUtil.deleteFile(saveTo2);
-		submitSaveDlg(saveTo2);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		app.dispatch(".uno:CloseDoc");
+		FileUtil.deleteFile(saveTo);
+		saveAs(saveTo2);
+		close();
+		open(saveTo2);
+		impress.waitForExistence(10, 2);
 
-		openStartcenter();
-		app.dispatch(".uno:Open");
-		String openFrom2 = getPath("temp/" + "gfdd.odp");
-		submitOpenDlg(openFrom2);
-		sleep(3);
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
-		// end-save to odp and reopen
 	}
 }

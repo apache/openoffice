@@ -34,24 +34,22 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
+
 
 
 public class ShapeTypes {
-	@Rule
-	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {
 		app.start();
+		AppTool.newPresentation();
 
-		// New a impress, insert some slides
-		app.dispatch("private:factory/simpress?slot=6686");
-		presentationWizard.ok();
 		// Pop up navigator panel
 		if (!sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}
-			
+		//Pop up drawing toolbar
 		if(!sdDrawingToolbar.exists()){
 			app.dispatch(".uno:AvailableToolbars?Toolbar:string=toolbar");
 		}
@@ -60,6 +58,7 @@ public class ShapeTypes {
 	@After
 	public void tearDown() throws Exception {
 		sleep(3);
+		//close navigator
 		if (sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}
@@ -74,7 +73,7 @@ public class ShapeTypes {
 	public void testCalloutShapes() throws Exception{
 
 		impress.focus();
-		//---before insert CallOut Shape
+		//before insert CallOut Shape
 		sdNavigator.focus();
 		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
@@ -84,7 +83,7 @@ public class ShapeTypes {
 		String[] allShapes=sdNavigator.getAllItemsText();
 		assertEquals(3, allShapes.length);
 		
-		//--- After insert CallOut shape
+		//After insert CallOut shape
 		sdCalloutShapes.click();
 		impress.focus();
 		impress.drag(100, 100, 200, 200);
@@ -108,7 +107,7 @@ public class ShapeTypes {
 	public void testStarsShapes() throws Exception{
 
 		impress.focus();
-		//---before insert CallOut Shape
+		//before insert CallOut Shape
 		sdNavigator.focus();
 		sdNavigatorShapeFilter.click();
 		typeKeys("<down><down>");
@@ -118,7 +117,7 @@ public class ShapeTypes {
 		String[] allShapes=sdNavigator.getAllItemsText();
 		assertEquals(3, allShapes.length);
 		
-		//--- After insert CallOut shape
+		//After insert CallOut shape
 		sdStarShapes.click();
 		impress.focus();
 		impress.drag(100, 100, 200, 200);

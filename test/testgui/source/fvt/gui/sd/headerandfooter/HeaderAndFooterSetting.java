@@ -32,27 +32,18 @@ import static testlib.gui.UIMap.*;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
-import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
 import testlib.gui.SDTool;
 
 public class HeaderAndFooterSetting {
 
-	@Rule
-	public Logger log = Logger.getLogger(this);
-
 	@Before
 	public void setUp() throws Exception {
-		app.start(true); // Bug 120476
-
-		// New a impress, insert some slides
-		app.dispatch("private:factory/simpress?slot=6686");
-		presentationWizard.ok();
-		impress.waitForExistence(10, 2);
-
+		app.start(true); 
+		AppTool.newPresentation();
 		for (int i = 0; i < 5; i++) {
 			sdInsertPageButtonOnToolbar.click();
 		}
@@ -492,7 +483,7 @@ public class HeaderAndFooterSetting {
 		sdAutoUpdateTimeFooterType.select(7);
 		String currentTime = sdAutoUpdateTimeFooterType.getItemText(7);
 		sdApplyToAllButtonOnSlideFooter.click();
-		sleep(1); // Wait some time to check the time update
+		sleep(1);
 
 		app.dispatch(".uno:HeaderAndFooter");
 		String updatedTime = sdAutoUpdateTimeFooterType.getItemText(7);
@@ -514,7 +505,7 @@ public class HeaderAndFooterSetting {
 		sdAutoUpdateTimeFooter.check();
 		String currentTime = sdAutoUpdateTimeFooterType.getItemText(7);
 		sdApplyToAllButtonOnSlideFooter.click();
-		sleep(1); // Wait some time to check the time update
+		sleep(1); 
 
 		app.dispatch(".uno:HeaderAndFooter");
 		sdHeaderAndFooterOnNotesTabPage.select();
@@ -556,24 +547,14 @@ public class HeaderAndFooterSetting {
 		assertEquals(true, sdSlideNumAsFooterOnSlide.isChecked());
 		sdHeaderAndFooterOnNotesTabPage.cancel();
 
-		// save this file
-		app.dispatch(".uno:SaveAs");
+		// save and reopen this file
 		String saveTo = getPath("temp/" + "hello.odp");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
+		saveAs(saveTo);
+		close();
+		open(saveTo);
+		impress.waitForExistence(10, 2);
 
-		// Reopen this file
-		openStartcenter();
-		app.dispatch(".uno:Open");
-		String openFrom = getPath("temp/" + "hello.odp");
-		submitOpenDlg(openFrom);
-		sleep(5);
 		// check after reopen
 		app.dispatch(".uno:HeaderAndFooter");
 		sdHeaderAndFooterOnNotesTabPage.select();
@@ -616,23 +597,13 @@ public class HeaderAndFooterSetting {
 		typeKeys("<enter>");
 
 		// save this file
-		app.dispatch(".uno:SaveAs");
 		String saveTo = getPath("temp/" + "hello.odp");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
+		saveAs(saveTo);
+		close();
+		open(saveTo);
+		impress.waitForExistence(10, 2);
 
-		// Reopen this file
-		openStartcenter();
-		app.dispatch(".uno:Open");
-		String openFrom = getPath("temp/" + "hello.odp");
-		submitOpenDlg(openFrom);
-		sleep(5);
 		// check after reopen
 		app.dispatch(".uno:HeaderAndFooter");
 		assertEquals("Fix Date: 20120329", sdFixedDateAndTimeOnSlideInput.getText());

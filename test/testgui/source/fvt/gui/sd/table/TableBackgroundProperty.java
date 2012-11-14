@@ -30,9 +30,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
-public class ChangeTableBackgroundProperty {
-	@Rule
-	public Logger log = Logger.getLogger(this);
+import testlib.gui.AppTool;
+
+public class TableBackgroundProperty {
 
 	@Before
 	public void setUp() throws Exception {
@@ -41,21 +41,18 @@ public class ChangeTableBackgroundProperty {
 
 	@After
 	public void tearDown() throws Exception {
-		app.close();
+		app.stop();
 	}
 
 	/**
-	 * Open the Table Background property dialog in Presentation
+	 * Test the Table Background property dialog in Presentation
 	 * 
 	 * @throws Exception
 	 */
 
 	@Test
-	public void OpenTableBackgroundPropertyDialog() throws Exception {
-
-		// Create a new presentation document
-		app.dispatch("private:factory/simpress?slot=6686");
-		presentationWizard.ok();
+	public void testTableBackgroundPropertyDialog() throws Exception {
+		AppTool.newPresentation();
 
 		// Insert a table
 		app.dispatch(".uno:InsertTable", 3);
@@ -69,10 +66,10 @@ public class ChangeTableBackgroundProperty {
 		areaAreapage.select();
 		// select Color
 		areaFillType.select(1);
-		assertEquals("Area_Fill_Type is Color", areaFillType.getSelText(), areaFillType.getItemText(1));
+		assertEquals("Area_Fill_Type is not Color", areaFillType.getSelText(), areaFillType.getItemText(1));
 		areaFillColor.select(2);
 		// Area_Fill_Color.getItemCount();
-		assertEquals("Area_Fill_Color is second item", areaFillColor.getSelText(), areaFillColor.getItemText(2));
+		assertEquals("Area_Fill_Color is not the second item", areaFillColor.getSelText(), areaFillColor.getItemText(2));
 		areaAreapage.ok();
 
 		// open Table Properties Dialog
@@ -80,9 +77,9 @@ public class ChangeTableBackgroundProperty {
 		areaAreapage.select();
 		// select Gradient
 		areaFillType.select(2);
-		assertEquals("Area_Fill_Type is Gradient", areaFillType.getSelText(), areaFillType.getItemText(2));
+		assertEquals("Area_Fill_Type is not Gradient", areaFillType.getSelText(), areaFillType.getItemText(2));
 		areaFillGradient.select(2);
-		assertEquals("Area_Fill_Gradient is second item", areaFillGradient.getSelText(), areaFillGradient.getItemText(2));
+		assertEquals("Area_Fill_Gradient is not the second item", areaFillGradient.getSelText(), areaFillGradient.getItemText(2));
 		areaAreapage.ok();
 
 		// open Table Properties Dialog
@@ -90,9 +87,9 @@ public class ChangeTableBackgroundProperty {
 		areaAreapage.select();
 		// select Hatching
 		areaFillType.select(3);
-		assertEquals("Area_Fill_Type is Hatching", areaFillType.getSelText(), areaFillType.getItemText(3));
+		assertEquals("Area_Fill_Type is not Hatching", areaFillType.getSelText(), areaFillType.getItemText(3));
 		areaFillHatching.select(2);
-		assertEquals("Area_Fill_Hatching is second item", areaFillHatching.getSelText(), areaFillHatching.getItemText(2));
+		assertEquals("Area_Fill_Hatching is not the second item", areaFillHatching.getSelText(), areaFillHatching.getItemText(2));
 		areaAreapage.ok();
 
 		// open Table Properties Dialog
@@ -100,9 +97,9 @@ public class ChangeTableBackgroundProperty {
 		areaAreapage.select();
 		// select Bitmap
 		areaFillType.select(4);
-		assertEquals("Area_Fill_Type is Bitmap", areaFillType.getSelText(), areaFillType.getItemText(4));
+		assertEquals("Area_Fill_Type is not Bitmap", areaFillType.getSelText(), areaFillType.getItemText(4));
 		areaFillBitmap.select(2);
-		assertEquals("Area_Fill_Bitmap is second item", areaFillBitmap.getSelText(), areaFillBitmap.getItemText(2));
+		assertEquals("Area_Fill_Bitmap is not the second item", areaFillBitmap.getSelText(), areaFillBitmap.getItemText(2));
 		areaAreapage.ok();
 
 	}
