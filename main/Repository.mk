@@ -96,15 +96,11 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 ))
 
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_URE, \
-	xml2 \
 	xmlreader \
 ))
 
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_OOO, \
-	icuuc \
 	icule \
-	rdf \
-	xslt \
 ))
 
 
@@ -154,10 +150,8 @@ $(eval $(call gb_Helper_register_libraries,UNOVERLIBS, \
 
 $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
 	basegfx_s \
-	jpeglib \
 	ooopathutils \
 	salcpprt \
-	zlib \
     graphite \
     vclmain \
 ))
@@ -178,17 +172,6 @@ ifeq ($(SYSTEM_OPENSSL),YES)
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_NONE, \
 	crypto \
 	ssl \
-))
-endif
-
-ifeq ($(SYSTEM_EXPAT),YES)
-$(eval $(call gb_Helper_register_libraries,PLAINLIBS_NONE, \
-	expat \
-))
-else
-$(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
-	expat_xmlparse \
-	expat_xmltok \
 ))
 endif
 

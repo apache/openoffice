@@ -264,7 +264,6 @@ gb_Library_PLAINLIBS_NONE += \
 	$(gb_STDLIBS) \
 	dl \
     freetype \
-	jpeg \
 	nsl \
 	pthread \
 	socket \
@@ -272,7 +271,6 @@ gb_Library_PLAINLIBS_NONE += \
     Xext \
     SM \
     ICE \
-	z \
 	cppunit
 
 gb_Library_FILENAMES := \

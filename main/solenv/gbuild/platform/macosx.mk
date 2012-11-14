@@ -330,10 +330,8 @@ gb_Library__FRAMEWORKS := \
 gb_Library_PLAINLIBS_NONE += \
 	Cocoa \
 	objc \
-	jpeg \
 	m \
 	pthread \
-	z \
 	cppunit
 
 gb_Library_FILENAMES := \

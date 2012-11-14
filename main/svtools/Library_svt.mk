@@ -58,7 +58,6 @@ $(eval $(call gb_Library_add_linked_libs,svt,\
 	cppuhelper \
 	i18nisolang1 \
 	i18nutil \
-	icuuc \
 	jvmfwk \
 	sal \
 	sot \
@@ -73,26 +72,10 @@ $(eval $(call gb_Library_add_linked_libs,svt,\
 	$(gb_STDLIBS) \
 ))
 
-ifeq ($(SYSTEM_JPEG),YES)
-$(eval $(call gb_Library_add_linked_libs,svt,\
+$(call gb_Library_use_externals,svt,\
+	icuuc \
 	jpeg \
-))
-$(eval $(call gb_Library_set_ldflags,svt,\
-	$$(filter-out -L/usr/lib/jvm%,$$(LDFLAGS)) \
-))
-ifeq ($(GUIBASE),os2)
-# YD FIXME above is not working... needs ldflags hack...
-$(eval $(call gb_Library_set_ldflags,svt,\
-    $$(LDFLAGS) \
-    -ljpeg \
-))
-endif
-
-else
-$(eval $(call gb_Library_add_linked_static_libs,svt,\
-	jpeglib \
-))
-endif
+)
 
 $(eval $(call gb_Library_add_exception_objects,svt,\
 	svtools/source/brwbox/brwbox1 \

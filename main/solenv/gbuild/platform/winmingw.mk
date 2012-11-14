@@ -483,7 +483,6 @@ gb_Library_PLAINLIBS_NONE += \
 	$(gb_MINGW_LIBSTDCPP) \
 	$(gb_MINGW_LIBGCC) \
 	advapi32 \
-	cairo \
 	d3d9 \
 	d3dx \
 	ddraw \
@@ -504,7 +503,6 @@ gb_Library_PLAINLIBS_NONE += \
 	uwinapi \
 	winmm \
 	winspool \
-	z \
 	cppunit
 
 gb_Library_LAYER := \
