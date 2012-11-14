@@ -32,20 +32,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
 import testlib.gui.SCTool;
 
 public class ValidityDialogSetting {
-
-	@Rule
-	public Logger log = Logger.getLogger(this);
-
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-
-		// New a spreadsheet, select cell range, open Validity dialog
-		app.dispatch("private:factory/scalc");
-		calc.waitForExistence(10, 2);
+		AppTool.newSpreadsheet();
 		SCTool.selectRange("A1:C5");
 		app.dispatch(".uno:Validation");
 	}
@@ -237,8 +232,6 @@ public class ValidityDialogSetting {
 	 */
 	@Test
 	public void testAllowLessThanTextLength() {
-
-//		app.dispatch(".uno:Validation");
 
 		scValidityCriteriaTabpage.select();
 		scValidityCriteriaAllowList.select(7); // "Text length"

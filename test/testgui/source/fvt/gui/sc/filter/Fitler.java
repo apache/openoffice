@@ -35,6 +35,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
 import testlib.gui.SCTool;
 
 /**
@@ -42,19 +43,15 @@ import testlib.gui.SCTool;
  */
 public class Fitler {
 
-	@Rule
-	public Logger log = Logger.getLogger(this);
-
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-
-		// Create a new spreadsheet document
-		app.dispatch("private:factory/scalc");
+		AppTool.newSpreadsheet();
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		app.stop();
 
 	}
 
@@ -62,12 +59,12 @@ public class Fitler {
 	 * 
 	 * Verify 2+ won't be treated as 2
 	 */
-	@Ignore("Bug #120076")
+	@Ignore("Bug #120076 2+ and 2 will be filter out at the same time")
 	@Test
 	public void testAutoFilterWithPlusSign() {
 		String expect = "2+";
 		SCTool.selectRange("A1");
 		typeKeys(expect + "<enter>");
-		assertEquals(expect, SCTool.getCellText("A1"));
+		assertEquals("expect 2+ not display correctly",expect, SCTool.getCellText("A1"));
 	}
 }

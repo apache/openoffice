@@ -29,6 +29,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
+
 /**
  * Before running the testing class, you need specify the AOO location firstly
  * with system property openoffice.home.
@@ -36,21 +38,17 @@ import org.openoffice.test.common.Logger;
  * 
  */
 
-public class InsertSheet {
-
-	@Rule
-	public Logger log = Logger.getLogger(this);
+public class Sheets {
 
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-		app.dispatch("private:factory/scalc");
-		calc.waitForExistence(10, 3);
+		AppTool.newSpreadsheet();
 	}
 
 	@After
 	public void tearDown() throws Exception {
-
+		app.stop();
 	}
 
 	/**
@@ -69,12 +67,12 @@ public class InsertSheet {
 		// Verify new sheets have been inserted before Sheet1
 		app.dispatch(".uno:SelectTables");
 		// To support multi-language, just verify the number in the sheet name
-		assertTrue(scSheetsList.getItemsText()[0].contains("4"));
-		assertTrue(scSheetsList.getItemsText()[1].contains("5"));
-		assertTrue(scSheetsList.getItemsText()[2].contains("6"));
-		assertTrue(scSheetsList.getItemsText()[3].contains("1"));
-		assertTrue(scSheetsList.getItemsText()[4].contains("2"));
-		assertTrue(scSheetsList.getItemsText()[5].contains("3"));
+		assertTrue("The first sheet name not contain 4",scSheetsList.getItemsText()[0].contains("4"));
+		assertTrue("The second sheet name not contain 5",scSheetsList.getItemsText()[1].contains("5"));
+		assertTrue("The third sheet name not contain 6",scSheetsList.getItemsText()[2].contains("6"));
+		assertTrue("The fourth sheet name not contain 1",scSheetsList.getItemsText()[3].contains("1"));
+		assertTrue("The fifth sheet name not contain 2",scSheetsList.getItemsText()[4].contains("2"));
+		assertTrue("The sixth sheet name not contain 3",scSheetsList.getItemsText()[5].contains("3"));
 		scSelectSheetsDlg.ok();
 	}
 

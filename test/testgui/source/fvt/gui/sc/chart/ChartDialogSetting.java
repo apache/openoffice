@@ -33,26 +33,23 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
+
 /**
  * Test the setting about chart dialog in spreadsheet
  */
 public class ChartDialogSetting {
 
-	@Rule
-	public Logger log = Logger.getLogger(this);
-
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-
-		// Create a new spreadsheet document
-		app.dispatch("private:factory/scalc");
-		calc.waitForExistence(10, 2);
+		AppTool.newSpreadsheet();
 		app.dispatch(".uno:InsertObjectChart");
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		app.stop();
 
 	}
 
@@ -64,10 +61,10 @@ public class ChartDialogSetting {
 	@Test
 	public void testChartDialogCancelBack() {
 		wizardNextButton.click();
-		assertTrue(chartRangeChooseTabPage.isEnabled());
+		assertTrue("Range Choose Tab is disable",chartRangeChooseTabPage.isEnabled());
 		wizardBackButton.click();
-		assertTrue(chartTypeChooseTabPage.isEnabled());
+		assertTrue("Type Choose Tab is disable",chartTypeChooseTabPage.isEnabled());
 		chartWizard.cancel();
-		assertFalse(chartWizard.exists());
+		assertFalse("Chart wizard not exist", chartWizard.exists());
 	}
 }
