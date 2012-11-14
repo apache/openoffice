@@ -45,6 +45,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	toolkit \
 	tools \
 	udkapi \
+	unotools \
 	unoxml \
 	vbahelper \
 	vcl \
