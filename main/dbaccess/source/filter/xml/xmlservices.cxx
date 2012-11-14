@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_dbaccess.hxx"
+#include "precompiled_dbaxml.hxx"
 
 #ifndef _CPPUHELPER_FACTORY_HXX_
 #include <cppuhelper/factory.hxx>
@@ -70,7 +70,7 @@ extern "C" void SAL_CALL createRegistryInfo_dbaxml()
 
 //---------------------------------------------------------------------------------------
 
-extern "C" void SAL_CALL component_getImplementationEnvironment(
+extern "C" SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 				const sal_Char	**ppEnvTypeName,
 				uno_Environment	**
 			)
@@ -80,7 +80,7 @@ extern "C" void SAL_CALL component_getImplementationEnvironment(
 }
 
 //---------------------------------------------------------------------------------------
-extern "C" void* SAL_CALL component_getFactory(
+extern "C" SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory(
 					const sal_Char* pImplementationName,
 					void* pServiceManager,
 					void* /*pRegistryKey*/)
