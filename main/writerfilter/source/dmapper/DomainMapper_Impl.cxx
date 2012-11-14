@@ -1014,10 +1014,6 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
 
                 lcl_CorrectIndents(*pPropSeq);
 
-                ::std::string sTmp(pPropSeq->toString());
-
-                ::std::clog << sTmp << ::std::endl;
-
                 uno::Reference< text::XTextRange > xTextRange =
                     xTextAppend->finishParagraph( pPropSeq->getSequence() );
                 getTableManager( ).handle(xTextRange);
