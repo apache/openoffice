@@ -95,6 +95,7 @@ gb_Helper_REPOSITORYNAMES += $(1)
 
 endef
 
+# RepositoryExternal.mk is optional
 define gb_Helper_add_repository
 gb_Helper_CURRENTREPOSITORY :=
 include $(1)/Repository.mk
@@ -102,6 +103,7 @@ ifeq ($$(gb_Helper_CURRENTREPOSITORY),)
 $$(eval $$(call gb_Output_error,No call to gb_Helper_register_repository in Repository.mk for repository $(1)))
 endif
 $$(gb_Helper_CURRENTREPOSITORY) := $(1)
+-include $(1)/RepositoryExternal.mk
 
 endef
 
