@@ -462,6 +462,7 @@ gb_XSLTPROCPRECOMMAND := DYLD_LIBRARY_PATH=$(OUTDIR)/lib
 gb_Library_COMPONENTPREFIXES := \
     OOO:vnd.sun.star.expand:\dOOO_BASE_DIR/program/ \
     URELIB:vnd.sun.star.expand:\dURE_INTERNAL_LIB_DIR/ \
+    NONE:vnd.sun.star.expand:\dOOO_INBUILD_SHAREDLIB_DIR/ \
 
 # UnoApiTarget
 
