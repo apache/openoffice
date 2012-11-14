@@ -37,8 +37,8 @@ $(eval $(call gb_Library_set_include,vclplug_gtk,\
 	-I$(OUTDIR)/inc \
 ))
 
-$(eval $(call gb_Library_set_cxxflags,vclplug_gtk,\
-    $$(CXXFLAGS) \
+$(eval $(call gb_Library_set_include,vclplug_gtk,\
+	$$(INCLUDE) \
     $$(GTK_CFLAGS) \
 ))
 
@@ -57,23 +57,14 @@ $(eval $(call gb_Library_set_defs,vclplug_gtk,\
 	$$(DEFS) \
     -DENABLE_DBUS \
 ))
-$(eval $(call gb_Library_set_ldflags,vclplug_gtk,\
-	$$(LDFLAGS) \
-	$(filter-out -l%,$(shell pkg-config --libs dbus-glib-1)) \
-))
-$(eval $(call gb_Library_add_external_libs,vclplug_gtk, \
-	$(patsubst -l%,%, $(filter -l%, $(shell pkg-config --libs dbus-glib-1))) \
+$(eval $(call gb_Library_add_libs,vclplug_gtk,\
+	$(shell pkg-config --libs dbus-glib-1) \
 ))
 endif
 
-$(eval $(call gb_Library_set_ldflags,vclplug_gtk,	\
-    $$(LDFLAGS)						\
-    $(filter-out -l%,$(GTK_LIBS))			\
-    $(filter-out -l%,$(GTHREAD_LIBS)) \
-))
-$(eval $(call gb_Library_add_external_libs,vclplug_gtk,	\
-    $(patsubst -l%,%, $(filter -l%, $(GTK_LIBS)))	\
-    $(patsubst -l%,%, $(filter -l%, $(GTHREAD_LIBS))) \
+$(eval $(call gb_Library_add_libs,vclplug_gtk,\
+    $(GTK_LIBS) \
+    $(GTHREAD_LIBS) \
 ))
 
 $(eval $(call gb_Library_add_linked_libs,vclplug_gtk,\
