@@ -373,7 +373,7 @@ uno::Any PropertySequence::get(PropertyIds aPropId)
     return uno::Any();
 }
 
-void PropertySequence::set(PropertyIds aPropId, const uno::Any & rValue)
+int PropertySequence::getOrCreateIndex(PropertyIds aPropId)
 {
     Map_t::const_iterator aIt = m_indexMap.find(aPropId);
 
@@ -382,22 +382,29 @@ void PropertySequence::set(PropertyIds aPropId, const uno::Any & rValue)
     {
         sal_uInt32 nCount = m_sequence.getLength() + 1;
         m_sequence.realloc(nCount);
-        m_indexMap[aPropId] = nCount;
         nIndex = nCount - 1;
+        m_indexMap[aPropId] = nIndex;
     }
     else
     {
         nIndex = aIt->second;
     }
-    
+
+    return nIndex;
+}
+
+void PropertySequence::set(PropertyIds aPropId, const uno::Any & rValue)
+{
+    sal_Int32 nIndex = getOrCreateIndex(aPropId);
+
     m_sequence[nIndex].Name = m_rPropNameSupplier.GetName(aPropId);
-    m_sequence[nIndex].Value <<= rValue;
+    m_sequence[nIndex].Value = rValue;
 }
 
 void PropertySequence::set(PropertyIds aPropId, sal_uInt32 nValue)
 {
     uno::Any aAny;
-
+    
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -405,7 +412,7 @@ void PropertySequence::set(PropertyIds aPropId, sal_uInt32 nValue)
 void PropertySequence::set(PropertyIds aPropId, sal_Int32 nValue)
 {
     uno::Any aAny;
-
+    
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -413,7 +420,7 @@ void PropertySequence::set(PropertyIds aPropId, sal_Int32 nValue)
 void PropertySequence::set(PropertyIds aPropId, sal_uInt16 nValue)
 {
     uno::Any aAny;
-
+    
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -421,7 +428,7 @@ void PropertySequence::set(PropertyIds aPropId, sal_uInt16 nValue)
 void PropertySequence::set(PropertyIds aPropId, sal_Int16 nValue)
 {
     uno::Any aAny;
-
+    
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -446,6 +453,16 @@ uno::Sequence<beans::PropertyValue> & PropertySequence::getSequence()
         ::std::string sTmp = ::rtl::OUStringToOString(m_sequence[n].Name, RTL_TEXTENCODING_ASCII_US).getStr();
 
         sResult += sTmp;
+
+        if (m_sequence[n].Value.hasValue())
+        {
+            sal_Int32 nValue = 0;
+            m_sequence[n].Value >>= nValue;
+
+            static char buffer[256];
+            snprintf(buffer, sizeof(buffer), " = %" SAL_PRIdINT32, nValue);
+            sResult += buffer;
+        }
     }
 
     return sResult;
