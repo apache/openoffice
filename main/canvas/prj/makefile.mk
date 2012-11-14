@@ -2,7 +2,7 @@
 #
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
 # 
-# Copyright 2000, 2011 Oracle and/or its affiliates.
+# Copyright 2000, 2010 Oracle and/or its affiliates.
 #
 # OpenOffice.org - a multi-platform office productivity suite
 #
@@ -25,39 +25,16 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_Module_Module,canvas))
+PRJ=..
+TARGET=prj
 
-$(eval $(call gb_Module_add_targets,canvas,\
-	Library_canvastools \
-	Library_nullcanvas \
-	Library_simplecanvas \
-	Library_vclcanvas \
-	Library_canvasfactory \
-	Package_inc \
-))
+.INCLUDE : settings.mk
 
-ifeq ($(strip $(OS)),WNT)
-ifneq ($(strip $(ENABLE_DIRECTX)),)
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-# currently not supported
-#ifneq ($(strip $(USE_DIRECTX5)),)
-#$(eval $(call gb_Module_add_targets,canvas,\
-#	Library_directx5canvas \
-#))
-#endif
-
-$(eval $(call gb_Module_add_targets,canvas,\
-	Library_directx9canvas \
-	Library_gdipluscanvas \
-))
-
-endif
-endif
-
-ifneq ($(strip $(ENABLE_CAIRO_CANVAS)),)
-$(eval $(call gb_Module_add_targets,canvas,\
-	Library_cairocanvas \
-))
-endif
-
-# vim: set noet sw=4 ts=4:
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
