@@ -131,5 +131,16 @@ $(WORKDIR)/inc/svx/globlmn.hrc_clean :
 	rm -f $(WORKDIR)/inc/svx/lastrun.mk \
 		$(WORKDIR)/inc/svx/globlmn.hrc
 
+$(OUTDIR)/inc/svx/globlmn.hrc : $(WORKDIR)/inc/svx/globlmn.hrc
+	echo copying $@
+	-mkdir -p $(OUTDIR)/inc/svx
+	cp $(WORKDIR)/inc/svx/globlmn.hrc $(OUTDIR)/inc/svx/globlmn.hrc
+
+.PHONY : $(OUTDIR)/inc/svx/globlmn.hrc_clean
+$(OUTDIR)/inc/svx/globlmn.hrc_clean :
+	rm -f $(OUTDIR)/inc/svx/globlmn.hrc
+
+$(call gb_AllLangResTarget_get_target,svx) : $(OUTDIR)/inc/svx/globlmn.hrc
+
 
 # vim: set noet sw=4 ts=4:
