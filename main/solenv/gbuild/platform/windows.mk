@@ -457,6 +457,9 @@ gb_Library_PLAINEXT := .lib
 
 gb_Library_PLAINLIBS_NONE += \
 	advapi32 \
+	d3d9 \
+	d3dx \
+	ddraw \
 	gdi32 \
 	gdiplus \
 	gnu_getopt \
@@ -472,6 +475,7 @@ gb_Library_PLAINLIBS_NONE += \
 	user32 \
 	uuid \
 	uwinapi \
+	winmm \
 	winspool \
 	z \
 	cppunit

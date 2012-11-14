@@ -40,9 +40,10 @@ $(eval $(call gb_Helper_register_executables,OOO, \
 
 $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
     AppleRemote \
+	agg \
 	avmedia \
-	basegfx \
 	basebmp \
+	basegfx \
 	canvastools \
 	cppcanvas \
 	cui \
@@ -125,11 +126,19 @@ $(eval $(call gb_Helper_register_libraries,STLLIBS, \
 ))
 
 $(eval $(call gb_Helper_register_libraries,UNOLIBS_OOO, \
+	cairocanvas \
+	canvasfactory \
+	directx5canvas \
+	directx9canvas \
 	fsstorage \
+	gdipluscanvas \
 	hatchwindowfactory \
+	nullcanvas \
 	passwordcontainer \
+	simplecanvas \
 	vbaswobj \
     msforms \
+	vclcanvas \
 	writerfilter_debug \
 ))
 

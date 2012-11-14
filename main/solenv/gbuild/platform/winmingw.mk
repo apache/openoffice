@@ -496,6 +496,7 @@ gb_Library_PLAINLIBS_NONE += \
 	user32 \
 	uuid \
 	uwinapi \
+	winmm \
 	winspool \
 	z \
 	cppunit
