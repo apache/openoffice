@@ -32,6 +32,10 @@ $(eval $(call gb_Library_add_api,sax,\
 	offapi \
 ))
 
+$(eval $(call gb_Library_add_package_headers,sax,\
+	sax_inc \
+))
+
 $(eval $(call gb_Library_set_include,sax,\
 	$$(INCLUDE) \
 	-I$(SRCDIR)/sax/inc \
