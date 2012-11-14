@@ -196,6 +196,9 @@ gb_LinkTarget_LDFLAGS := \
 	-dynamicbase \
 	$(patsubst %,-LIBPATH:%,$(filter-out .,$(subst ;, ,$(subst \,/,$(ILIB))))) \
 
+gb_DEBUG_CFLAGS := -Zi
+
+# this does not use CFLAGS so it is not overridable
 ifneq ($(ENABLE_CRASHDUMP),)
 gb_LinkTarget_LDFLAGS += -DEBUG
 gb_CFLAGS+=-Zi
@@ -203,10 +206,8 @@ gb_CXXFLAGS+=-Zi
 endif
 
 ifeq ($(gb_DEBUGLEVEL),2)
-gb_CXXFLAGS +=-Zi
-gb_CFLAGS +=-Zi
-gb_COMPILEROPTFLAGS :=
 gb_LinkTarget_LDFLAGS += -DEBUG
+gb_COMPILEROPTFLAGS :=
 else
 gb_COMPILEROPTFLAGS := -Ob1 -Oxs -Oy-
 endif
@@ -410,7 +411,7 @@ endef
 
 # LinkTarget class
 
-gb_LinkTarget_CFLAGS := $(gb_CFLAGS) $(gb_CFLAGS_WERROR) $(gb_COMPILEROPTFLAGS)
+gb_LinkTarget_CFLAGS := $(gb_CFLAGS) $(gb_CFLAGS_WERROR)
 gb_LinkTarget_CXXFLAGS := $(gb_CXXFLAGS) $(gb_CXXFLAGS_WERROR)
 
 gb_LinkTarget_INCLUDE :=\
