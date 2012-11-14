@@ -56,6 +56,7 @@ my_components = \
     component/framework/util/fwk \
     component/framework/util/fwl \
     component/framework/util/fwm \
+    component/linguistic/source/lng \
     component/oox/oox \
     component/vbahelper/util/msforms \
     component/sfx2/util/sfx \
@@ -110,7 +111,6 @@ my_components = \
     hwp \
     i18npool \
     i18nsearch \
-    lng \
     lnth \
     localebe1 \
     log \
