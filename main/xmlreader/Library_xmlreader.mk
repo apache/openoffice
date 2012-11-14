@@ -33,8 +33,7 @@ $(eval $(call gb_Library_add_api,xmlreader,\
 	udkapi \
 ))
 
-$(eval $(call gb_Library_set_defs,xmlreader,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,xmlreader,\
 	-DOOO_DLLIMPLEMENTATION_XMLREADER \
 ))
 

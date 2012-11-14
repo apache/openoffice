@@ -50,8 +50,7 @@ $(eval $(call gb_Library_set_include,sfx,\
 	-I$(OUTDIR)/inc \
 ))
 
-$(eval $(call gb_Library_set_defs,sfx,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,sfx,\
 	-DSFX2_DLLIMPLEMENTATION \
 ))
 
@@ -259,23 +258,13 @@ $(eval $(call gb_SdiTarget_set_include,sfx2/sdi/sfxslots,\
 ))
 
 ifeq ($(OS),$(filter WNT MACOSX,$(OS)))
-$(eval $(call gb_Library_set_defs,sfx,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,sfx,\
 	-DENABLE_QUICKSTART_APPLET \
 ))
 endif
 
 ifeq ($(ENABLE_SYSTRAY_GTK),TRUE)
-$(eval $(call gb_Library_set_defs,sfx,\
-	$$(DEFS) \
-	-DENABLE_QUICKSTART_APPLET \
-	-DENABLE_SYSTRAY_GTK \
-))
-endif
-
-ifeq ($(ENABLE_SYSTRAY_GTK),TRUE)
-$(eval $(call gb_Library_set_defs,sfx,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,sfx,\
 	-DENABLE_QUICKSTART_APPLET \
 	-DENABLE_SYSTRAY_GTK \
 ))

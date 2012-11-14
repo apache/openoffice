@@ -37,8 +37,7 @@ $(eval $(call gb_Library_set_include,xo,\
 	-I$(SRCDIR)/xmloff/inc/pch \
 ))
 
-$(eval $(call gb_Library_set_defs,xo,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,xo,\
 	-DXMLOFF_DLLIMPLEMENTATION \
 ))
 

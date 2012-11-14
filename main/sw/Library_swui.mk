@@ -34,10 +34,6 @@ $(eval $(call gb_Library_set_include,swui,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,swui,\
-	$$(DEFS) \
-))
-
 $(eval $(call gb_Library_add_api,swui,\
 	udkapi \
 	offapi \

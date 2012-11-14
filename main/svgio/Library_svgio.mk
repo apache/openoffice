@@ -39,8 +39,7 @@ $(eval $(call gb_Library_add_api,svgio,\
 	offapi \
 ))
 
-$(eval $(call gb_Library_set_defs,svgio,\
-    $$(DEFS) \
+$(eval $(call gb_Library_add_defs,svgio,\
     -DSVGIO_DLLIMPLEMENTATION \
 ))
 

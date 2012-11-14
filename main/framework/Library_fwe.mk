@@ -32,8 +32,7 @@ $(eval $(call gb_Library_set_include,fwe,\
 	-I$(OUTDIR)/inc/framework \
 ))
 
-$(eval $(call gb_Library_set_defs,fwe,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,fwe,\
 	-DFWE_DLLIMPLEMENTATION\
 ))
 

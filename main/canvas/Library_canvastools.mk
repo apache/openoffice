@@ -1,7 +1,7 @@
 #*************************************************************************
 #
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-# 
+#
 # Copyright 2000, 2011 Oracle and/or its affiliates.
 #
 # OpenOffice.org - a multi-platform office productivity suite
@@ -42,21 +42,18 @@ $(eval $(call gb_Library_set_include,canvastools,\
 	-I$(SRCDIR)/canvas/inc/pch \
 ))
 
-$(eval $(call gb_Library_set_defs,canvastools,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,canvastools,\
 	-DCANVASTOOLS_DLLIMPLEMENTATION \
 ))
 
 ifneq ($(strip $(VERBOSE)$(verbose)),)
-$(eval $(call gb_Library_set_defs,canvastools,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,canvastools,\
 	-DVERBOSE \
 ))
 endif
 
 ifneq ($(strip $(PROFILER)$(profiler)),)
-$(eval $(call gb_Library_set_defs,canvastools,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,canvastools,\
 	-DPROFILER \
 ))
 endif
@@ -91,7 +88,7 @@ $(eval $(call gb_Library_add_exception_objects,canvastools,\
 	canvas/source/tools/verifyinput \
 ))
 
-ifeq ($(strip $(ENABLE_AGG)),YES) 
+ifeq ($(strip $(ENABLE_AGG)),YES)
 $(eval $(call gb_Library_add_exception_objects,canvastools,\
 	canvas/source/tools/bitmap \
 	canvas/source/tools/image \
@@ -99,9 +96,8 @@ $(eval $(call gb_Library_add_exception_objects,canvastools,\
 $(eval $(call gb_Library_add_linked_libs,canvastools,\
 	agg \
 ))
-ifneq ($(strip $(AGG_VERSION)),) 
-$(eval $(call gb_Library_set_defs,canvastools,\
-	$$(DEFS) \
+ifneq ($(strip $(AGG_VERSION)),)
+$(eval $(call gb_Library_add_defs,canvastools,\
 	-DAGG_VERSION=$(AGG_VERSION) \
 ))
 endif

@@ -36,8 +36,7 @@ $(eval $(call gb_Library_set_include,tk,\
 	-I$(SRCDIR)/toolkit/source \
 ))
 
-$(eval $(call gb_Library_set_defs,tk,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,tk,\
 	-DTOOLKIT_DLLIMPLEMENTATION \
 ))
 

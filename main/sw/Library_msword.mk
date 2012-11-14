@@ -42,10 +42,6 @@ $(eval $(call gb_Library_add_api,msword,\
 	offapi \
 ))
 
-$(eval $(call gb_Library_set_defs,msword,\
-	$$(DEFS) \
-))
-
 $(eval $(call gb_Library_add_linked_libs,msword,\
 	basegfx \
 	comphelper \

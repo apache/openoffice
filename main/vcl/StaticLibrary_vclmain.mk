@@ -54,6 +54,7 @@ $(OUTDIR)/lib/$(1) : $(call gb_CxxObject_get_target,vcl/source/salmain/salmain)
 endef
 
 ifeq ($(OS),WNT)
+$(eval $(call gb_StaticLibrary_add_defs,vclmain,-D_DLL))
 $(eval $(call StaticLibrary_salmain_hack,salmain.obj))
 else
 $(eval $(call StaticLibrary_salmain_hack,salmain.o))

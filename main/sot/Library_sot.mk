@@ -39,8 +39,7 @@ $(eval $(call gb_Library_add_api,sot,\
 	offapi \
 ))
 
-$(eval $(call gb_Library_set_defs,sot,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,sot,\
 	-DSOT_DLLIMPLEMENTATION \
 ))
 

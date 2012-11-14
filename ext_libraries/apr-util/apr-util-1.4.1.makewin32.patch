@@ -1,6 +1,6 @@
 --- misc/apr-util-1.4.1/Library_apr-util.mk	2012-01-05 14:49:40.529219100 +0100
 +++ misc/build/apr-util-1.4.1/Library_apr-util.mk	2012-01-05 14:47:18.621102400 +0100
-@@ -1 +1,90 @@
+@@ -1 +1,89 @@
 -dummy
 +#/**************************************************************
 +# * 
@@ -34,8 +34,7 @@
 +	-I$(OUTDIR)/inc/apr \
 +))
 +
-+$(eval $(call gb_Library_set_defs,apr-util,\
-+	$$(DEFS) \
++$(eval $(call gb_Library_add_defs,apr-util,\
 +	-DAPU_DECLARE_EXPORT -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DWIN32_EXPORTS \
 +))
 +

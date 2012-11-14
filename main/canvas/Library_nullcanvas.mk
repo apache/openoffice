@@ -38,13 +38,8 @@ $(eval $(call gb_Library_set_include,nullcanvas,\
 	-I$(SRCDIR)/canvas/inc/pch \
 ))
 
-$(eval $(call gb_Library_set_defs,nullcanvas,\
-	$$(DEFS) \
-))
-
 ifneq ($(strip $(VERBOSE)$(verbose)),)
-$(eval $(call gb_Library_set_defs,nullcanvas,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,nullcanvas,\
 	-DVERBOSE \
 ))
 endif

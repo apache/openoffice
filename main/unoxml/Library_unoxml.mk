@@ -29,10 +29,6 @@ $(eval $(call gb_Library_set_include,unoxml,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,unoxml,\
-	$$(DEFS) \
-))
-
 $(eval $(call gb_Library_add_api,unoxml,\
 	udkapi \
 	offapi \

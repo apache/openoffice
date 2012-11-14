@@ -31,8 +31,7 @@ $(eval $(call gb_Library_set_include,serf,\
 	-I$(OUTDIR)/inc/external/zlib \
 ))
 
-$(eval $(call gb_Library_set_defs,serf,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,serf,\
 	-DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DWIN32_EXPORTS \
 ))
 
