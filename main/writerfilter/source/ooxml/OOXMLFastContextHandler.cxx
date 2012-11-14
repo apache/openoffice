@@ -1860,7 +1860,7 @@ OOXMLFastContextHandlerShape::OOXMLFastContextHandlerShape
             mrShapeContext->setRelationFragmentPath
                 (mpParserState->getTarget());
         }
-#ifdef DEBUG_CONTEXT_STACK
+#ifdef DEBUG_CONTEXT_HANDLER
         else
         {
             debug_logger->startElement("error");
