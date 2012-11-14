@@ -43,7 +43,7 @@ namespace basegfx
 		@derive Use this class to implement Points or Vectors
 		which are based on two double values
 	*/
-	class BASEGFX_DLLPUBLIC B2DTuple
+	class B2DTuple
 	{
 	protected:
 		double										mfX;
@@ -89,7 +89,7 @@ namespace basegfx
 			@param rTup
 			The 2D Tuple which will be copied.
 		*/
-		explicit B2DTuple(const B2ITuple& rTup);
+		BASEGFX_DLLPUBLIC explicit B2DTuple(const B2ITuple& rTup);
 
 		~B2DTuple() 
 		{}
@@ -235,9 +235,9 @@ namespace basegfx
 			return *this; 
 		}
 
-		void correctValues(const double fCompareValue = 0.0);
+		BASEGFX_DLLPUBLIC void correctValues(const double fCompareValue = 0.0);
 
-		static const B2DTuple& getEmptyTuple();
+		BASEGFX_DLLPUBLIC static const B2DTuple& getEmptyTuple();
 	};
 
 	// external operators
