@@ -61,6 +61,8 @@ my_components = \
     component/sfx2/util/sfx \
     component/sot/util/sot \
     component/svgio/svgio \
+    component/starmath/util/sm \
+    component/starmath/util/smd \
     component/svl/source/fsstor/fsstorage \
     component/svl/source/passwordcontainer/passwordcontainer \
     component/svl/util/svl \
@@ -143,8 +145,6 @@ my_components = \
     sdd \
     simplecanvas \
     slideshow \
-    sm \
-    smd \
     spl \
     srtrs1 \
     stringresource \
