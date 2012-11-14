@@ -32,4 +32,11 @@ $(eval $(call gb_Module_add_targets,basebmp,\
 	Package_inc \
 ))
 
+ifeq ($(WITH_CPPUNIT),YES)
+$(eval $(call gb_Module_add_check_targets,basebmp,\
+	CppunitTest_basebmp \
+))
+endif
+
+
 # vim: set noet sw=4 ts=4:
