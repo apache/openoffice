@@ -147,4 +147,23 @@ $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
     vclmain \
 ))
 
+ifeq ($(OS),WNT)
+$(eval $(call gb_Helper_register_libraries,PLAINLIBS_OOO, \
+    crypto \
+    ssl \
+))
+else
+$(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
+    crypto \
+    ssl \
+))
+endif
+
+ifeq ($(SYSTEM_OPENSSL),YES)
+$(eval $(call gb_Helper_register_libraries,PLAINLIBS_NONE, \
+	crypto \
+	ssl \
+))
+endif
+
 # vim: set noet sw=4 ts=4:

@@ -30,6 +30,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	framework \
 	offapi \
 	oovbaapi \
+	oox \
 	padmin \
 	sfx2 \
 	sot \
