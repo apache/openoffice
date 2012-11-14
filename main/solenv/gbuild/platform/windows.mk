@@ -76,7 +76,6 @@ gb_CFLAGS := \
 	-GR \
 	-Gs \
 	-GS \
-	-Gy \
 	-nologo \
 	-Wall \
 	-wd4005 \
@@ -457,6 +456,7 @@ gb_Library_PLAINEXT := .lib
 
 gb_Library_PLAINLIBS_NONE += \
 	advapi32 \
+	cairo \
 	d3d9 \
 	d3dx \
 	ddraw \
