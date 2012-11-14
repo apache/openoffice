@@ -67,7 +67,7 @@ $(call gb_StaticLibrary_get_target,$(1)) : $(call gb_LinkTarget_get_target,$(2))
 $(call gb_StaticLibrary_get_clean_target,$(1)) : $(call gb_LinkTarget_get_clean_target,$(2))
 $(call gb_StaticLibrary_StaticLibrary_platform,$(1),$(2))
 $$(eval $$(call gb_Module_register_target,$(call gb_StaticLibrary_get_target,$(1)),$(call gb_StaticLibrary_get_clean_target,$(1))))
-$(call gb_Deliver_add_deliverable,$(call gb_StaticLibrary_get_target,$(1)),$(call gb_LinkTarget_get_target,$(2)))
+$(call gb_Deliver_add_deliverable,$(call gb_StaticLibrary_get_target,$(1)),$(call gb_LinkTarget_get_target,$(2)),$(1))
 
 endef
 
@@ -93,6 +93,7 @@ $(eval $(foreach method,\
 	set_include \
 	set_ldflags \
 	set_library_path_flags \
+	add_api \
 	add_linked_libs \
 	add_linked_static_libs \
 	add_package_headers \

@@ -43,7 +43,7 @@
 #include <vos/mutex.hxx>
 #endif
 
-#include <toolkit/unohlp.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
 #include <rtl/uuid.h>
 #include <rtl/memory.h>
 

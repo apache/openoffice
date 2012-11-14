@@ -23,12 +23,16 @@
 
 $(eval $(call gb_Library_Library,vclplug_kde4))
 
+$(eval $(call gb_Library_add_api,vclplug_kde4,\
+	udkapi \
+	offapi \
+))
+
 $(eval $(call gb_Library_set_include,vclplug_kde4,\
 	$$(INCLUDE) \
 	-I$(SRCDIR)/vcl/inc \
 	-I$(SRCDIR)/vcl/inc/pch \
 	-I$(SRCDIR)/solenv/inc \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc/stl \
 	-I$(OUTDIR)/inc \
 ))

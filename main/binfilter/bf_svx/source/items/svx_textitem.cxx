@@ -27,7 +27,7 @@
 #ifndef _STREAM_HXX
 #include <tools/stream.hxx>
 #endif
-#include <toolkit/unohlp.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
 #include <math.h>
 #ifndef INCLUDED_RTL_MATH_HXX
 #include <rtl/math.hxx>

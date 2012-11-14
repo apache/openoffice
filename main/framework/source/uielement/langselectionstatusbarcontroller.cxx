@@ -32,13 +32,10 @@
 #include <vcl/svapp.hxx>
 #include <vcl/window.hxx>
 #include <vcl/status.hxx>
-#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_
-#include <toolkit/unohlp.hxx>
-#endif
+#include <toolkit/helper/vclunohelper.hxx>
 #include <toolkit/helper/convert.hxx>
 
 #include <com/sun/star/frame/XPopupMenuController.hpp>
-#include <toolkit/helper/vclunohelper.hxx>
 #include <com/sun/star/awt/PopupMenuDirection.hpp>
 #include <svtools/langtab.hxx>
 #include "sal/types.h"
@@ -60,7 +57,6 @@
 #include <com/sun/star/util/XURLTransformer.hpp>
 #include <comphelper/processfactory.hxx>
 
-#include <toolkit/unohlp.hxx>
 #include <tools/gen.hxx>
 #include <com/sun/star/awt/Command.hpp>
 #include <svl/languageoptions.hxx>

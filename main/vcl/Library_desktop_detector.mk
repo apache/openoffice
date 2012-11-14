@@ -27,12 +27,16 @@ $(eval $(call gb_Library_Library,desktop_detector))
 
 $(eval $(call gb_Library_add_precompiled_header,desktop_detector,$(SRCDIR)/vcl/inc/pch/precompiled_vcl))
 
+$(eval $(call gb_Library_add_api,desktop_detector,\
+	udkapi \
+	offapi \
+))
+
 $(eval $(call gb_Library_set_include,desktop_detector,\
 	$$(INCLUDE) \
 	-I$(SRCDIR)/vcl/inc \
 	-I$(SRCDIR)/vcl/inc/pch \
 	-I$(SRCDIR)/solenv/inc \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc/stl \
 	-I$(OUTDIR)/inc \
 ))

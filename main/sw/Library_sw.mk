@@ -38,8 +38,12 @@ $(eval $(call gb_Library_set_include,sw,\
 	-I$(WORKDIR)/SdiTarget/sw/sdi \
 	-I$(WORKDIR)/Misc/sw/ \
 	$$(INCLUDE) \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc \
+))
+
+$(eval $(call gb_Library_add_api,sw,\
+	udkapi \
+	offapi \
 ))
 
 $(eval $(call gb_Library_set_defs,sw,\

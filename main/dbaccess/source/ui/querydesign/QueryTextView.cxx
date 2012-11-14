@@ -51,7 +51,7 @@
 #include "dbustrings.hrc"
 #endif
 #ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_ 
-#include <toolkit/unohlp.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
 #endif
 #ifndef _SV_SPLIT_HXX 
 #include <vcl/split.hxx>

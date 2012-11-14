@@ -436,11 +436,11 @@ $(call gb_Library_get_clean_target,$(1)) : AUXTARGETS +=  \
 		$(OUTDIR)/bin/$(notdir $(patsubst %.dll,%.pdb,$(3))) \
 		$(OUTDIR)/bin/$(notdir $(patsubst %.dll,%.ilk,$(3))) \
 
-$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(patsubst %.dll,%.pdb,$(3))),$(patsubst %.dll,%.pdb,$(3)))
-$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(patsubst %.dll,%.ilk,$(3))),$(patsubst %.dll,%.ilk,$(3)))
+$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(patsubst %.dll,%.pdb,$(3))),$(patsubst %.dll,%.pdb,$(3)),$(1))
+$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(patsubst %.dll,%.ilk,$(3))),$(patsubst %.dll,%.ilk,$(3)),$(1))
 endif
 
-$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(3)),$(3))
+$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(3)),$(3),$(1))
 
 $(call gb_LinkTarget_get_target,$(2)) \
 $(call gb_LinkTarget_get_headers_target,$(2)) : PDBFILE = $(call gb_LinkTarget_get_pdbfile,$(2))
@@ -502,7 +502,7 @@ define gb_Executable_Executable_platform
 
 #$(call gb_Executable_get_target,$(1)) \
 #$(call gb_Executable_get_clean_target,$(1)) : AUXTARGETS := $(call gb_Executable_get_target,$(1)).manifest
-#$(call gb_Deliver_add_deliverable,$(call gb_Executable_get_target,$(1)).manifest,$(call gb_LinkTarget_get_target,$(2)).manifest)
+#$(call gb_Deliver_add_deliverable,$(call gb_Executable_get_target,$(1)).manifest,$(call gb_LinkTarget_get_target,$(2)).manifest,$(1))
 
 #$(call gb_LinkTarget_get_target,$(2)) \
 #$(call gb_LinkTarget_get_headers_target,$(2)) : PDBFILE = $(call gb_LinkTarget_get_pdbfile,$(2))

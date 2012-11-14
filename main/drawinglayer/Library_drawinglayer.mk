@@ -35,7 +35,11 @@ $(eval $(call gb_Library_set_include,drawinglayer,\
 	-I$(SRCDIR)/drawinglayer/inc/pch \
 	-I$(SRCDIR)/drawinglayer/source/processor2d \
 	-I$(SRCDIR)/solenv/inc \
-	-I$(OUTDIR)/inc/offuh \
+))
+
+$(eval $(call gb_Library_add_api,drawinglayer,\
+	udkapi \
+	offapi \
 ))
 
 $(eval $(call gb_Library_set_defs,drawinglayer,\

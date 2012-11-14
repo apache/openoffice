@@ -34,8 +34,12 @@ $(eval $(call gb_Library_set_include,msword,\
 	-I$(WORKDIR)/inc/sw/sdi \
 	-I$(WORKDIR)/Misc/sw/ \
 	$$(INCLUDE) \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc/sw \
+))
+
+$(eval $(call gb_Library_add_api,msword,\
+	udkapi \
+	offapi \
 ))
 
 $(eval $(call gb_Library_set_defs,msword,\

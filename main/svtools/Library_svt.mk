@@ -29,6 +29,11 @@ $(eval $(call gb_Library_add_precompiled_header,svt,$(SRCDIR)/svtools/inc/pch/pr
 
 $(eval $(call gb_Library_set_componentfile,svt,svtools/util/svt))
 
+$(eval $(call gb_Library_add_api,svt,\
+	udkapi \
+	offapi \
+))
+
 $(eval $(call gb_Library_set_include,svt,\
 	-I$(OUTDIR)/inc/external/jpeg \
 	$$(INCLUDE) \
@@ -39,7 +44,6 @@ $(eval $(call gb_Library_set_include,svt,\
 	-I$(SRCDIR)/svtools/inc/svtools \
 	-I$(SRCDIR)/svtools/source/inc \
 	-I$(SRCDIR)/svtools/inc/pch \
-	-I$(OUTDIR)/inc/offuh \
 ))
 
 $(eval $(call gb_Library_set_defs,svt,\

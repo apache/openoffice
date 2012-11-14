@@ -25,7 +25,7 @@
 
 gb_ComponentTarget_get_outdir_target = $(OUTDIR)/xml/component/$(1).component
 gb_Executable_get_target = $(OUTDIR)/bin/$(1)$(gb_Executable_EXT)
-gb_PackagePart_get_destinations = $(OUTDIR)/xml $(OUTDIR)/inc $(OUTDIR)/bin
+gb_PackagePart_get_destinations = $(OUTDIR)/xml $(OUTDIR)/inc $(OUTDIR)/bin $(OUTDIR)/idl
 gb_PackagePart_get_target = $(OUTDIR)/$(1)
 gb_ResTarget_get_outdir_imagelist_target = $(OUTDIR)/res/img/$(1).ilst
 gb_ResTarget_get_outdir_target = $(OUTDIR)/bin/$(1).res
@@ -61,6 +61,10 @@ gb_JunitTest_get_userdir = $(WORKDIR)/JunitTest/$(1)/user
 gb_LinkTarget_get_external_headers_target = $(WORKDIR)/ExternalHeaders/$(1)
 gb_LinkTarget_get_headers_target = $(WORKDIR)/Headers/$(1)
 gb_LinkTarget_get_target = $(WORKDIR)/LinkTarget/$(1)
+gb_UnoApiTarget_get_target = $(WORKDIR)/UnoApiTarget/$(1).rdb
+gb_UnoApiOutTarget_get_target = $(OUTDIR)/bin/$(1).rdb
+gb_UnoApiPartTarget_get_target = $(WORKDIR)/UnoApiPartTarget/$(1)
+gb_UnoApiTarget_get_header_target = $(WORKDIR)/UnoApiHeaders/$(1)
 gb_Module_get_check_target = $(WORKDIR)/Module/check/$(1)
 gb_Module_get_subsequentcheck_target = $(WORKDIR)/Module/subsequentcheck/$(1)
 gb_Module_get_target = $(WORKDIR)/Module/$(1)
@@ -111,6 +115,7 @@ $(eval $(call gb_Helper_make_clean_targets,\
 	SrsTarget \
 	CppunitTest \
 	CustomTarget \
+	UnoApiTarget \
 ))
 
 $(eval $(call gb_Helper_make_outdir_clean_targets,\
@@ -118,6 +123,7 @@ $(eval $(call gb_Helper_make_outdir_clean_targets,\
 	Library \
 	Package \
 	StaticLibrary \
+	UnoApiOutTarget \
 ))
 
 $(eval $(call gb_Helper_make_dep_targets,\
@@ -127,6 +133,7 @@ $(eval $(call gb_Helper_make_dep_targets,\
 	LinkTarget \
 	SrsPartTarget \
 	SrsTarget \
+	UnoApiTarget \
 ))
 # needs to use same dep target because we use gb_CxxObject__command
 gb_GenCxxObject_get_dep_target = $(gb_CxxObject_get_dep_target)

@@ -84,6 +84,7 @@ $(eval $(foreach method,\
 	set_include \
 	set_ldflags \
 	set_library_path_flags \
+	add_api \
 	add_linked_libs \
 	add_linked_static_libs \
 	add_package_headers \

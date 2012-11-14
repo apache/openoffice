@@ -23,7 +23,7 @@
 
 #include <com/sun/star/awt/XBitmap.hpp>
 #include <vcl/virdev.hxx>
-#include <toolkit/unohlp.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
 
 #ifndef _SFXSTYLE_HXX
 #include <bf_svtools/style.hxx>

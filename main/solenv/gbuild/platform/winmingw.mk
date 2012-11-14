@@ -207,6 +207,17 @@ $(patsubst $(SRCDIR)%,$(gb_Helper_SRCDIR_NATIVE)%, \
 $(1)))))
 endef
 
+# convert parametters filesystem root to native notation
+# does some real work only on windows, make sure not to
+# break the dummy implementations on unx*
+define gb_Helper_convert_native
+$(patsubst -I$(OUTDIR)%,-I$(gb_Helper_OUTDIR_NATIVE)%, \
+$(patsubst $(OUTDIR)%,$(gb_Helper_OUTDIR_NATIVE)%, \
+$(patsubst $(WORKDIR)%,$(gb_Helper_WORKDIR_NATIVE)%, \
+$(patsubst $(SRCDIR)%,$(gb_Helper_SRCDIR_NATIVE)%, \
+$(1)))))
+endef
+
 # CObject class
 
 ifeq ($(gb_FULLDEPS),$(true))
@@ -543,7 +554,7 @@ $(call gb_LinkTarget_set_auxtargets,$(2),\
 $(call gb_Library_get_target,$(1)) \
 $(call gb_Library_get_clean_target,$(1)) : AUXTARGETS := $(OUTDIR)/bin/$(notdir $(3))
 
-$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(3)),$(3))
+$(call gb_Deliver_add_deliverable,$(OUTDIR)/bin/$(notdir $(3)),$(3),$(1))
 
 endef
 
@@ -694,5 +705,16 @@ gb_XSLTPROCPRECOMMAND := PATH="$${PATH}:$(OUTDIR)/bin"
 gb_Library_COMPONENTPREFIXES := \
     OOO:vnd.sun.star.expand:\dBRAND_BASE_DIR/program/ \
     URELIB:vnd.sun.star.expand:\dURE_INTERNAL_LIB_DIR/ \
+
+# UnoApiTarget
+
+gb_UnoApiTarget_IDLCTARGET := $(OUTDIR)/bin/idlc.exe
+gb_UnoApiTarget_IDLCCOMMAND := SOLARBINDIR=$(OUTDIR)/bin $(gb_UnoApiTarget_IDLCTARGET)
+gb_UnoApiTarget_REGMERGETARGET := $(OUTDIR)/bin/regmerge.exe
+gb_UnoApiTarget_REGMERGECOMMAND := SOLARBINDIR=$(OUTDIR)/bin $(gb_UnoApiTarget_REGMERGETARGET)
+gb_UnoApiTarget_CPPUMAKERTARGET := $(OUTDIR)/bin/cppumaker.exe
+gb_UnoApiTarget_CPPUMAKERCOMMAND := SOLARBINDIR=$(OUTDIR)/bin $(gb_UnoApiTarget_CPPUMAKERTARGET)
+gb_UnoApiTarget_REGVIEWTARGET := $(OUTDIR)/bin/regview.exe
+gb_UnoApiTarget_REGVIEWCOMMAND := SOLARBINDIR=$(OUTDIR)/bin $(gb_UnoApiTarget_REGVIEWTARGET)
 
 # vim: set noet sw=4 ts=4:

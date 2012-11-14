@@ -1548,7 +1548,7 @@ uno::Sequence< OUString > SAL_CALL SvxShapePolyPolygonBezier::getSupportedServic
 #endif
 #endif
 
-#include "toolkit/unohlp.hxx"
+#include "toolkit/helper/vclunohelper.hxx"
 namespace binfilter {//STRIP009
 //----------------------------------------------------------------------
 SvxGraphicObject::SvxGraphicObject( SdrObject* pObj ) throw()

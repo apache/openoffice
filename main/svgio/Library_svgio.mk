@@ -32,7 +32,11 @@ $(eval $(call gb_Library_set_include,svgio,\
     -I$(SRCDIR)/svgio/inc \
     -I$(SRCDIR)/svgio/inc/pch \
     -I$(SRCDIR)/solenv/inc \
-    -I$(OUTDIR)/inc/offuh \
+))
+
+$(eval $(call gb_Library_add_api,svgio,\
+	udkapi \
+	offapi \
 ))
 
 $(eval $(call gb_Library_set_defs,svgio,\
