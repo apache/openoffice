@@ -25,6 +25,7 @@
 # not follow any of the established nameschemes
 
 ifeq ($(OS),LINUX)
+
 gb_Library_FILENAMES := $(patsubst comphelper:libcomphelper%,comphelper:libcomphelp%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cppuhelper:libcppuhelper%,cppuhelper:libuno_cppuhelper%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cppuhelper:libcppuhelper%,cppuhelper:libuno_cppuhelper%,$(gb_Library_FILENAMES))
@@ -39,10 +40,21 @@ gb_Library_FILENAMES := $(patsubst stl:%,stl:libstdc++.so,$(gb_Library_FILENAMES
 gb_Library_TARGETS := $(filter-out stl,$(gb_Library_TARGETS))
 endif
 
+endif # ifeq ($(OS),LINUX)
+
+ifeq ($(OS),SOLARIS)
+
+gb_Library_FILENAMES := $(patsubst comphelper:libcomphelper%,comphelper:libcomphelp%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst cppuhelper:libcppuhelper%,cppuhelper:libuno_cppuhelper%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst ucbhelper:libucbhelper%,ucbhelper:libucbhelper4%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst jvmfwk:libuno_jvmfwk%,jvmfwk:libjvmfwk%,$(gb_Library_FILENAMES))
+gb_Library_FILENAMES := $(patsubst salhelper:libsalhelper%,salhelper:libuno_salhelper%,$(gb_Library_FILENAMES))
+#$(info libnames: $(gb_Library_FILENAMES))
+
 endif
 
-
 ifeq ($(OS),MACOSX)
+
 gb_Library_FILENAMES := $(patsubst comphelper:libcomphelper%,comphelper:libcomphelp%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cppuhelper:libcppuhelper%,cppuhelper:libuno_cppuhelper%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst jvmfwk:libuno_jvmfwk%,jvmfwk:libjvmfwk%,$(gb_Library_FILENAMES))
@@ -54,11 +66,12 @@ gb_Library_FILENAMES := $(patsubst stl:%,stl:libstdc++.dylib,$(gb_Library_FILENA
 gb_Library_TARGETS := $(filter-out stl,$(gb_Library_TARGETS))
 endif
 
-endif
-
+endif # ifeq ($(OS),MACOSX)
 
 ifeq ($(OS),WNT)
+
 ifneq ($(USE_MINGW),)
+
 gb_Library_FILENAMES := $(patsubst comphelper:icomphelper%,comphelper:icomphelp%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cppunit:icppunit%,cppunit:libcppunit.dll$(gb_Library_IARCEXT),$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cui:icui%,cui:icuin%,$(gb_Library_FILENAMES))
@@ -76,21 +89,28 @@ gb_Library_FILENAMES := $(patsubst xml2:ixml2%,xml2:libxml2$(gb_Library_IARCEXT)
 gb_Library_FILENAMES := $(patsubst xslt:ixslt%,xslt:libxslt.dll$(gb_Library_IARCEXT),$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst rdf:irdf%,rdf:librdf.dll$(gb_Library_IARCEXT),$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst z:iz%,z:zlib%,$(gb_Library_FILENAMES))
+
 ifeq ($(gb_PRODUCT),$(true))
 gb_Library_FILENAMES := $(patsubst stl:istl%,stl:stlport_vc71%,$(gb_Library_FILENAMES))
 else
 gb_Library_FILENAMES := $(patsubst stl:istl%,stl:stlport_vc71_stldebug%,$(gb_Library_FILENAMES))
 endif
+
+# handle libraries in msvc format that don't use an "i" prefix for their import library
+# these are libraries built by OOo, but only a few of them
+# all other libraries built by OOo and all platform libraries (exceptions see below) are used without an import library
+# we link against their dlls in gcc format directly
 gb_Library_NOILIBFILENAMES:=\
 	icule \
 	icuuc \
-	sot \
 	uwinapi \
 	winmm \
 
 gb_Library_FILENAMES := $(filter-out $(foreach lib,$(gb_Library_NOILIBFILENAMES),$(lib):%),$(gb_Library_FILENAMES))
 gb_Library_FILENAMES += $(foreach lib,$(gb_Library_NOILIBFILENAMES),$(lib):$(lib)$(gb_Library_PLAINEXT))
 
+# some Windows platform libraries are missing in mingw library set
+# we have to use them from the PSDK by linking against their ilibs
 gb_Library_ILIBFILENAMES:=\
 	gdiplus \
 	uuid \
@@ -111,7 +131,8 @@ gb_Library_FILENAMES := $(patsubst stl:%,stl:$(gb_Library_IARCSYSPRE)stdc++_s$(g
 gb_Library_TARGETS := $(filter-out stl,$(gb_Library_TARGETS))
 endif
 
-else
+else #ifneq ($(USE_MINGW),)
+
 gb_Library_FILENAMES := $(patsubst comphelper:icomphelper%,comphelper:icomphelp%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cppunit:icppunit%,cppunit:icppunit_dll%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst cui:icui%,cui:icuin%,$(gb_Library_FILENAMES))
@@ -128,44 +149,22 @@ gb_Library_FILENAMES := $(patsubst ssl:issl%,ssl:ssleay32%,$(gb_Library_FILENAME
 gb_Library_FILENAMES := $(patsubst xml2:ixml2%,xml2:libxml2%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst xslt:ixslt%,xslt:libxslt%,$(gb_Library_FILENAMES))
 gb_Library_FILENAMES := $(patsubst rdf:irdf%,rdf:librdf%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst z:iz%,z:zlib%,$(gb_Library_FILENAMES))
 gb_StaticLibrary_FILENAMES := $(patsubst graphite:graphite%,graphite:graphite_dll%,$(gb_StaticLibrary_FILENAMES))
+
 ifeq ($(gb_PRODUCT),$(true))
 gb_Library_FILENAMES := $(patsubst stl:istl%,stl:stlport_vc71%,$(gb_Library_FILENAMES))
 else
 gb_Library_FILENAMES := $(patsubst stl:istl%,stl:stlport_vc71_stldebug%,$(gb_Library_FILENAMES))
 endif
-gb_Library_NOILIBFILENAMES:=\
-	advapi32 \
-	cairo \
-	d3d9 \
-	d3dx \
-	ddraw \
-	expat \
-	expat_xmltok\
-	expat_xmlparse \
-	gdi32 \
-	gdiplus \
-	gnu_getopt \
-	icuuc \
-	icule \
-	imm32\
-	kernel32 \
-	msimg32 \
-	msvcrt \
-	mpr \
-	oldnames \
-	ole32 \
-	oleaut32 \
-	shell32 \
-	sot \
-	user32 \
-	uuid \
-	uwinapi \
-	winspool \
+
+# change the names of all import libraries that don't have an "i" prefix as in our standard naming schema
+gb_Library_NOILIBFILENAMES := $(gb_Library_PLAINLIBS_NONE)
+gb_Library_NOILIBFILENAMES += icuuc icule
 
 gb_Library_FILENAMES := $(filter-out $(foreach lib,$(gb_Library_NOILIBFILENAMES),$(lib):%),$(gb_Library_FILENAMES))
 gb_Library_FILENAMES += $(foreach lib,$(gb_Library_NOILIBFILENAMES),$(lib):$(lib)$(gb_Library_PLAINEXT))
+gb_Library_FILENAMES := $(patsubst z:z%,z:zlib%,$(gb_Library_FILENAMES))
+
 ifneq ($(gb_PRODUCT),$(true))
 gb_Library_FILENAMES := $(patsubst msvcrt:msvcrt%,msvcrt:msvcrtd%,$(gb_Library_FILENAMES))
 endif
@@ -175,9 +174,9 @@ gb_Library_DLLFILENAMES := $(patsubst icuuc:icuuc%,icuuc:icuuc40%,$(gb_Library_D
 gb_Library_DLLFILENAMES := $(patsubst ucbhelper:ucbhelper%,ucbhelper:ucbhelper4%,$(gb_Library_DLLFILENAMES))
 gb_Library_DLLFILENAMES := $(patsubst z:z%,z:zlib%,$(gb_Library_DLLFILENAMES))
 
-endif
+endif # ifneq ($(USE_MINGW),)
 
-endif
+endif # ifeq ($(OS),WNT)
 
 ifeq ($(OS),OS2)
 gb_Library_FILENAMES := $(patsubst comphelper:comphelper%,comphelper:comphelpgcc3%,$(gb_Library_FILENAMES))
@@ -228,16 +227,6 @@ gb_Library_NOILIBFILENAMES:=\
 gb_Library_ILIBFILENAMES:=\
 	ft2lib \
 	uuid \
-
-endif
-
-ifeq ($(OS),SOLARIS)
-gb_Library_FILENAMES := $(patsubst comphelper:libcomphelper%,comphelper:libcomphelp%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst cppuhelper:libcppuhelper%,cppuhelper:libuno_cppuhelper%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst ucbhelper:libucbhelper%,ucbhelper:libucbhelper4%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst jvmfwk:libuno_jvmfwk%,jvmfwk:libjvmfwk%,$(gb_Library_FILENAMES))
-gb_Library_FILENAMES := $(patsubst salhelper:libsalhelper%,salhelper:libuno_salhelper%,$(gb_Library_FILENAMES))
-#$(info libnames: $(gb_Library_FILENAMES))
 
 endif
 
