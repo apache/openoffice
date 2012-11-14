@@ -96,9 +96,7 @@ public class FormulaInDifferentWays {
 		
 		// Save and reopen the formula
 		FileUtil.deleteFile(saveTo);
-		saveAs(saveTo);
-		close();
-		open(saveTo);
+		saveAndReopen(saveTo);
 		mathEditWindow.waitForExistence(10, 2);
 
 		// Verify if the formula still exists in the file, and correct
@@ -138,9 +136,7 @@ public class FormulaInDifferentWays {
 		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); 
 		// Save and reopen the formula
 		FileUtil.deleteFile(saveTo);
-		saveAs(saveTo);
-		close();
-		open(saveTo);
+		saveAndReopen(saveTo);
 		
 		mathEditWindow.waitForExistence(10, 2);
 		// Verify if the formula still exists in the file, and correct
