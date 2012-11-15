@@ -253,11 +253,4 @@ ifeq ($(USE_SYSTEM_STL),YES)
 gb_Library_TARGETS := $(filter-out stl,$(gb_Library_TARGETS))
 endif
 
-ifeq ($(SYSTEM_OPENSSL),YES)
-gb_StaticLibrary_TARGETS := $(filter-out crypto,$(gb_StaticLibrary_TARGETS))
-gb_StaticLibrary_TARGETS := $(filter-out ssl,$(gb_StaticLibrary_TARGETS))
-gb_Library_TARGETS := $(filter-out crypto,$(gb_Library_TARGETS))
-gb_Library_TARGETS := $(filter-out ssl,$(gb_Library_TARGETS))
-endif
-
 # vim: set noet sw=4 ts=4:
