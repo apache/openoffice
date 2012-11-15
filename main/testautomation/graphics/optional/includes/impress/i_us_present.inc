@@ -511,7 +511,7 @@ testcase i_us_presentation
     DocumentImpress.TypeKeys "End"
     printlog "Inserted ending -slide."
     Kontext "Gallery"
-
+    printlog "Checking if gallery is closed..."
     if Gallery.Exists(2) then
         warnlog "The Gallery was visible. Closed it. Check earlier ran tests for inconsistency."
         ToolsGallery
@@ -519,15 +519,15 @@ testcase i_us_presentation
     end if
 
     kontext "slides"
-
+    printlog "moving up to first slide.."
     for i = 1 to 8
         sleep 1
         SlidesControl.TypeKeys "<PAGEUP>"
     next i
-
+    printlog "Starting presentation with f5."
     hTypeKeys "<F5>"
     kontext "DocumentPresentation"
-
+    printlog "Hitting pagedown 8 times to go through the presentation and end it."
     for iKeyStroke = 1 to 8
         wait( 3000 )
         DocumentPresentation.TypeKeys "<PAGEDOWN>"
@@ -535,7 +535,7 @@ testcase i_us_presentation
     next iKeyStroke
 
     kontext "DocumentPresentation"
-
+    printlog "Checking if presentation has ended."
     if ( DocumentPresentation.notExists( 5 ) ) then
         printlog( "Presentation closed. Good." )
     else
