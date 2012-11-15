@@ -275,7 +275,7 @@ endif
 define gb_CObject__command
 $(call gb_Output_announce,$(2),$(true),C  ,3)
 $(call gb_Helper_abbreviate_dirs_native,\
-	mkdir -p $(dir $(1)) && \
+	mkdir -p $(dir $(1)) $(dir $(4)) && \
 	unset INCLUDE && \
 	$(gb_CC) \
 		$(DEFS) \
@@ -295,7 +295,7 @@ endef
 define gb_CxxObject__command
 $(call gb_Output_announce,$(2),$(true),CXX,3)
 $(call gb_Helper_abbreviate_dirs_native,\
-	mkdir -p $(dir $(1)) && \
+	mkdir -p $(dir $(1)) $(dir $(4)) && \
 	unset INCLUDE && \
 	$(gb_CXX) \
 		$(DEFS) \
