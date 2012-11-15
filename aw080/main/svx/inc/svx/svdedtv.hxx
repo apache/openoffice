@@ -396,7 +396,7 @@ public:
 	// Folgende Methode wird gerufen, wenn z.B. durch ToTop, ToBtm, ... die
 	// Reihenfolgen der Objekte geaendert wurde. Der Aufruf erfolgt dann nach
 	// jedem SdrObjList::SetNavigationPosition(nOldPos,nNewPos);
-	virtual void ObjOrderChanged(SdrObject* pObj, sal_uIntPtr nOldPos, sal_uIntPtr nNewPos);
+	virtual void ObjOrderChanged(SdrObject* pObj, sal_uInt32 nOldPos, sal_uInt32 nNewPos);
 
 	// Falls ein oder mehrere Objekte des Types SdrGrafObj oder SdrOle2Obj
 	// markiert sind und diese in der Lage sind ein StarView-Metafile zu

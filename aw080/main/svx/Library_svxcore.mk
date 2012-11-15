@@ -367,6 +367,7 @@ $(eval $(call gb_Library_add_exception_objects,svxcore,\
 	svx/source/svdraw/svdsob \
 	svx/source/svdraw/sdrselection \
     svx/source/table/cell \
+    svx/source/table/celleditsource \
     svx/source/table/cellcursor \
     svx/source/table/cellrange \
     svx/source/table/propertyset \

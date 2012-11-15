@@ -682,7 +682,7 @@ sal_Bool PPTWriter::ImplCreateDocument()
                         nFlags |= 1;
                 }
 
-                if ( ImplGetPropertyValue( String( RTL_CONSTASCII_USTRINGPARAM( "IsEndless" ) ) ) ) // muesste eigendlich heissen IsNotEndless !=)"§()&
+                if ( ImplGetPropertyValue( String( RTL_CONSTASCII_USTRINGPARAM( "IsEndless" ) ) ) ) // muesste eigendlich heissen IsNotEndless !=)"ï¿½()&
                 {
                     sal_Bool bBool = sal_False;
                     mAny >>= bBool;
@@ -1710,10 +1710,11 @@ void PPTWriter::ImplWriteBackground( ::com::sun::star::uno::Reference< ::com::su
     mpPptEscherEx->AddShape( ESCHER_ShpInst_Rectangle, 0xc00 );                     // Flags: Connector | Background | HasSpt
 
     // #121183# Use real PageSize in 100th mm
+    basegfx::B2DRange aPageRange(0.0, 0.0, maPageSize.Width(), maPageSize.Height());
     EscherPropertyContainer aPropOpt(
         mpPptEscherEx->GetGraphicProvider(), 
         mpPicStrm, 
-        basegfx::B2DRange(0.0, 0.0, maPageSize.Width(), maPageSize.Height()));
+        aPageRange);
 
     aPropOpt.AddOpt( ESCHER_Prop_fillType, ESCHER_FillSolid );
     ::com::sun::star::drawing::FillStyle aFS( ::com::sun::star::drawing::FillStyle_NONE );

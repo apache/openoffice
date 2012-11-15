@@ -79,7 +79,7 @@ class EnhancedCustomShape2d : public SfxItemSet
 {
 private:
 		SdrObject*					pCustomShapeObj;
-		MSO_SPT						eSpType;
+		MSO_SPT						meSpType;
 
 		sal_Int32					nCoordLeft;
 		sal_Int32					nCoordTop;

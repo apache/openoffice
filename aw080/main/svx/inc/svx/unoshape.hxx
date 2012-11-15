@@ -142,6 +142,9 @@ enum SvxShapeKind
 // converter
 SvxShapeKind SVX_DLLPUBLIC SdrObjectCreatorInventorToSvxShapeKind(sal_uInt16 nIdent, sal_uInt32 nInvent);
 void SvxShapeKindToSdrObjectCreatorInventor(SvxShapeKind aSvxShapeKind, sal_uInt16& nIdent, sal_uInt32& nInvent);
+SvxShapeKind getSvxShapeKindFromTypeName(const rtl::OUString&);
+std::vector< rtl::OUString > getAllSvxShapeTypeNames();
+bool getNameForSvxShapeType(rtl::OUString&, SvxShapeKind);
 
 class SVX_DLLPUBLIC SvxShape : public SvxShape_UnoImplHelper,
                  public SfxListener,

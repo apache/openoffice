@@ -458,8 +458,8 @@ void SdrTextObj::ResizeTextAttributes(const Fraction& xFact, const Fraction& yFa
     if (pOutlinerParaObject!=0 && xFact.IsValid() && yFact.IsValid())
 	{
 		Fraction n100(100,1);
-		sal_Int32 nX=sal_Int32(xFact*n100);
-		sal_Int32 nY=sal_Int32(yFact*n100);
+		sal_Int32 nX=long(xFact*n100);
+		sal_Int32 nY=long(yFact*n100);
 	
         if (nX<0) 
             nX=-nX;

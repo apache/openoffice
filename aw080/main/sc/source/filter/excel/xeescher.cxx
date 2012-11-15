@@ -402,7 +402,8 @@ XclExpOcxControlObj::XclExpOcxControlObj(
     // fill DFF property set
     mrEscherEx.OpenContainer( ESCHER_SpContainer );
     mrEscherEx.AddShape( ESCHER_ShpInst_HostControl, SHAPEFLAG_HAVESPT | SHAPEFLAG_HAVEANCHOR | SHAPEFLAG_OLESHAPE );
-    EscherPropertyContainer aPropOpt( mrEscherEx.GetGraphicProvider(), mrEscherEx.QueryPictureStream(), basegfx::B2DRange());
+    basegfx::B2DRange aEmptyRange;
+    EscherPropertyContainer aPropOpt( mrEscherEx.GetGraphicProvider(), mrEscherEx.QueryPictureStream(), aEmptyRange);
     aPropOpt.AddOpt( ESCHER_Prop_FitTextToShape,    0x00080008 );   // bool field
     aPropOpt.AddOpt( ESCHER_Prop_lineColor,         0x08000040 );
     aPropOpt.AddOpt( ESCHER_Prop_fNoLineDrawDash,   0x00080000 );   // bool field

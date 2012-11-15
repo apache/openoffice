@@ -1429,7 +1429,7 @@ namespace
 						// #48763#
 						if(eKind1 == eKind2)
 						{
-							return (sal_Int32)pA < (sal_Int32)pB; // Notloesung, um immer die gleiche Sortierung zu haben
+							return pA < pB; // Notloesung, um immer die gleiche Sortierung zu haben
 						}
 						else
 						{
@@ -1443,7 +1443,7 @@ namespace
 				}
 				else 
 				{
-					return (sal_Int32)pObj1 < (sal_Int32)pObj2;
+					return pObj1 < pObj2;
 		    	}
 		    }
 			else 

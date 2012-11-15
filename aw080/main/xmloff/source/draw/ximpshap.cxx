@@ -83,6 +83,7 @@
 #include <com/sun/star/text/XTextDocument.hpp>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <basegfx/point/b2dpoint.hxx>
+#include <memory.h>
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;

@@ -49,7 +49,6 @@
 #include <mdiexp.hxx>           // Progress
 #include <redline.hxx>
 #include <fltshell.hxx>
-#include <unodraw.hxx>
 #include <shellio.hxx>
 #include <ndole.hxx>
 #include <svtools/filter.hxx>

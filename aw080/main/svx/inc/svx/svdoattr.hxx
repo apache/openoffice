@@ -30,7 +30,7 @@
 #include <svx/xlnasit.hxx>
 #include <svx/svdobj.hxx>
 #include <svx/svdattr.hxx>
-#include "svx/svxdllapi.h"
+#include <svx/svxdllapi.h>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines

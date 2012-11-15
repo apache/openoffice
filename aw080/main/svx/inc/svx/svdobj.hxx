@@ -44,7 +44,6 @@
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <svx/svdpool.hxx>
 #include <boost/utility.hpp>
-#include <svx/unoprov.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines

@@ -142,7 +142,7 @@ public:
         SdrHintKind eSdrHintKind = HINT_OBJCHG_RESIZE);
 
     // data read access
-    const SdrHintKind GetSdrHintKind() const { return meSdrHint; }
+    SdrHintKind GetSdrHintKind() const { return meSdrHint; }
     const SdrPage* GetSdrHintPage() const { return mpSdrPage; }
     const SdrObject* GetSdrHintObject() const { return mpSdrObject; }
 };

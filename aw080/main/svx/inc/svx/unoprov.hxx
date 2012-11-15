@@ -85,14 +85,14 @@ public:
 ***********************************************************************/
 
 extern SvxUnoPropertyMapProvider aSvxMapProvider;
-#define E3D_INVENTOR_FLAG			(0x80000000)
+//#define E3D_INVENTOR_FLAG			(0x80000000)
 
 // object creation info creator
-class rtl::OUString;
-enum SvxShapeKind;
-SvxShapeKind getSvxShapeKindFromTypeName(const rtl::OUString&);
-std::vector< rtl::OUString > getAllSvxShapeTypeNames();
-bool getNameForSvxShapeType(rtl::OUString&, SvxShapeKind);
+//class rtl::OUString;
+//enum SvxShapeKind;
+//SvxShapeKind getSvxShapeKindFromTypeName(const rtl::OUString&);
+//std::vector< rtl::OUString > getAllSvxShapeTypeNames();
+//bool getNameForSvxShapeType(rtl::OUString&, SvxShapeKind);
 
 /***********************************************************************
 * class SvxPropertySetInfoPool                                         *

@@ -25,9 +25,8 @@
 #define SW_UNDO_DRAW_HXX
 
 #include <undobj.hxx>
-
 #include <svx/svdundo.hxx>
-
+#include <svx/svdobj.hxx>
 
 struct SwUndoGroupObjImpl;
 class SdrMark;

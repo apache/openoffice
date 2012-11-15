@@ -89,7 +89,7 @@ void ZoomList::InsertZoomRange(const basegfx::B2DRange& rRange)
 	if (nRangeCount >= MAX_ENTRYS)
 	{
 		delete ((basegfx::B2DRange*) GetObject(0));
-		Remove((sal_uInt32) 0);
+		Remove((sal_uIntPtr) 0);
 	}
 	else if (nRangeCount == 0)
 	{

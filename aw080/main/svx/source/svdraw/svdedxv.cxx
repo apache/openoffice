@@ -772,7 +772,7 @@ bool SdrObjEditView::SdrBeginTextEdit(
             // alten Cursor merken
             if(GetTextEditOutliner()->GetViewCount())
 			{
-                OutlinerView* pTmpOLV = GetTextEditOutliner()->RemoveView(sal_uInt32(0));
+                OutlinerView* pTmpOLV = GetTextEditOutliner()->RemoveView(sal_uLong(0));
 
 				if(pTmpOLV && pTmpOLV != pGivenOutlinerView)
 				{
@@ -1016,7 +1016,7 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(bool bDontDeleteReally)
             }
             else
             {
-                OSL_ENSURE(false, "´Got UndoManager back in SdrEndTextEdit which is NOT the expected document UndoManager (!)");
+                OSL_ENSURE(false, "ï¿½Got UndoManager back in SdrEndTextEdit which is NOT the expected document UndoManager (!)");
                 delete pOriginal;
             }
         }

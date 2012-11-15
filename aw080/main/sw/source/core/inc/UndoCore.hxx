@@ -25,9 +25,8 @@
 #define SW_UNDOCORE_HXX
 
 #include <undobj.hxx>
-
 #include <calbck.hxx>
-
+#include <svx/svdobj.hxx>
 
 class SfxItemSet;
 class SwFmtColl;

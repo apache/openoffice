@@ -1157,7 +1157,7 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
 {
 		EscherGraphicProvider*	pGraphicProvider;
 		SvStream*				pPicOutStrm;
-        basegfx::B2DRange*      mpObjectRange;
+        basegfx::B2DRange*      mpObjectRange; // TTTT: think about making this a member to be able to hand over a const&
 		EscherPropSortStruct*	pSortStruct;
 
 		sal_uInt32				nSortCount;

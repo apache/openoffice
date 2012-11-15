@@ -918,7 +918,7 @@ bool SdDrawDocument::MovePages(sal_uInt32 nTargetPage)
 					bSomethingHappened = sal_True;
 				}
 			}
-			aPageList.Remove((sal_uInt32)0);
+			aPageList.Remove((sal_uIntPtr)0);
 			nTargetPage = pPage->GetPageNumber();
 		}
 	}

@@ -598,7 +598,7 @@ sal_Bool EnhancedCustomShape2d::ConvertSequenceToEnhancedCustomShape2dHandle(
 const sal_Int32* EnhancedCustomShape2d::ApplyShapeAttributes( const SdrCustomShapeGeometryItem& rGeometryItem )
 {
 	const sal_Int32* pDefData = NULL;
-	const mso_CustomShape* pDefCustomShape = GetCustomShapeContent( eSpType );
+	const mso_CustomShape* pDefCustomShape = GetCustomShapeContent( meSpType );
 	if ( pDefCustomShape )
 		pDefData = pDefCustomShape->pDefData;
 
@@ -707,7 +707,7 @@ EnhancedCustomShape2d::~EnhancedCustomShape2d()
 EnhancedCustomShape2d::EnhancedCustomShape2d( SdrObject* pAObj ) :
 	SfxItemSet			( pAObj->GetMergedItemSet() ),
 	pCustomShapeObj		( pAObj	),
-	eSpType				( mso_sptNil ),
+	meSpType			( mso_sptNil ),
 	nCoordLeft			( 0 ),
 	nCoordTop			( 0 ),
 	nCoordWidth			( 21600 ),
@@ -751,7 +751,7 @@ EnhancedCustomShape2d::EnhancedCustomShape2d( SdrObject* pAObj ) :
 	Any* pAny = rGeometryItem.GetPropertyValueByName( sType );
 	if ( pAny )
 		*pAny >>= sShapeType;
-	eSpType = EnhancedCustomShapeTypeNames::Get( sShapeType );
+	meSpType = EnhancedCustomShapeTypeNames::Get( sShapeType );
 
 //	pAny = rGeometryItem.GetPropertyValueByName( sMirroredX );
 //	if ( pAny )
@@ -768,7 +768,7 @@ EnhancedCustomShape2d::EnhancedCustomShape2d( SdrObject* pAObj ) :
 // 		nRotateAngle = sdr::legacy::GetRotateAngle(*pCustomShapeObj);
 
 	/*const sal_Int32* pDefData =*/ ApplyShapeAttributes( rGeometryItem );
-	switch( eSpType )
+	switch( meSpType )
 	{
 		case mso_sptCan :						nColorData = 0x20400000; break;
 		case mso_sptCube :						nColorData = 0x302e0000; break;
@@ -2123,7 +2123,7 @@ SdrObject* EnhancedCustomShape2d::CreatePathObj( sal_Bool bLineGeometryNeededOnl
 	sal_uInt16 nSegmentInd = 0;
 
 	std::vector< SdrPathObj* > vObjectList;
-	sal_Bool bSortFilledObjectsToBack = SortFilledObjectsToBackByDefault( eSpType );
+	sal_Bool bSortFilledObjectsToBack = SortFilledObjectsToBackByDefault( meSpType );
 
 	while( nSegmentInd <= seqSegments.getLength() )
 	{
@@ -2193,7 +2193,7 @@ SdrObject* EnhancedCustomShape2d::CreatePathObj( sal_Bool bLineGeometryNeededOnl
 
 			// #i88870# correct line arrows for callouts
 			if ( nLineObjectCount )
-				CorrectCalloutArrows( eSpType, nLineObjectCount, vObjectList );
+				CorrectCalloutArrows( meSpType, nLineObjectCount, vObjectList );
 
 			// sort objects so that filled ones are in front. Necessary
 			// for some strange objects
@@ -2254,7 +2254,7 @@ SdrObject* EnhancedCustomShape2d::CreateObject( sal_Bool bLineGeometryNeededOnly
 {
 	SdrObject* pRet = NULL;
 
-	if ( eSpType == mso_sptRectangle )
+	if ( meSpType == mso_sptRectangle )
 	{
 		pRet = new SdrRectObj(
 			pCustomShapeObj->getSdrModelFromSdrObject(),

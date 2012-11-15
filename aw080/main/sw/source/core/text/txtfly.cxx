@@ -76,6 +76,7 @@
 #include <editeng/lspcitem.hxx>
 #include <svx/svdoedge.hxx>
 #include <drawinglayer/processor2d/contourextractor2d.hxx>
+#include <svx/sdr/contact/viewcontact.hxx>
 #include "doc.hxx"
 
 #ifdef DBG_UTIL

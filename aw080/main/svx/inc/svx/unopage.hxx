@@ -45,6 +45,7 @@
 #include <comphelper/servicehelper.hxx>
 
 #include <svx/unoprov.hxx>
+#include <svx/unoshape.hxx>
 
 class SdrPage;
 class SdrModel;

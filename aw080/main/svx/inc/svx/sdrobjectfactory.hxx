@@ -56,10 +56,10 @@ public:
     {
     }
 
-    const sal_uInt16 getIdent() const { return mnIdent; }
+    sal_uInt16 getIdent() const { return mnIdent; }
     void setIdent(const sal_uInt16 nNew) { mnIdent = nNew; }
 
-    const sal_uInt32 getInvent() const { return mnInvent; }
+    sal_uInt32 getInvent() const { return mnInvent; }
     void setInvent(const sal_uInt32 nNew) { mnInvent = nNew; }
     
     const SdrPathObjType& getSdrPathObjType() const { return maSdrPathObjType; }
@@ -68,7 +68,7 @@ public:
     const SdrCircleObjType& getSdrCircleObjType() const { return maSdrCircleObjType; }
     void setSdrCircleObjType(const SdrCircleObjType& rNew) { maSdrCircleObjType = rNew; }
 
-    const bool getFreehandMode() const { return mbFreehandMode; }
+    bool getFreehandMode() const { return mbFreehandMode; }
     void setFreehandMode(const bool bNew) { mbFreehandMode = bNew; }
 };
 

@@ -2501,7 +2501,7 @@ SvxShape* SdrObject::getSvxShape() const
     //#113608#, make sure mpSvxShape is always synchronized with maWeakUnoShape
     if ( mpSvxShape && !xShape.is() )
     {
-        const_cast< SvxShape* >(mpSvxShape) = NULL;
+        const_cast< SdrObject* >(this)->mpSvxShape = NULL;
     }
 
 	return mpSvxShape;

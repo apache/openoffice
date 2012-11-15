@@ -68,6 +68,7 @@
 #include <sot/exchange.hxx>
 #include <sot/formats.hxx>
 #include "sot/clsids.hxx"
+#include <memory.h>
 
 #include "unostorageholder.hxx"
 

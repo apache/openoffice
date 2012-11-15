@@ -33,7 +33,6 @@
 ///////////////////////////////////////////////////////////////////////
 
 using ::rtl::OUString;
-
 using namespace ::osl;
 using namespace ::cppu;
 using namespace ::sdr::table;

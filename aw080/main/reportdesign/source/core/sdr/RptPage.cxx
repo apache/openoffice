@@ -129,7 +129,7 @@ void OReportPage::removeSdrObject(const uno::Reference< report::XReportComponent
     }
 }
 // -----------------------------------------------------------------------------
-SdrObject* OReportPage::RemoveObjectFromSdrObjList(sal_uLong nObjNum)
+SdrObject* OReportPage::RemoveObjectFromSdrObjList(sal_uInt32 nObjNum)
 {
     SdrObject* pObj = SdrPage::RemoveObjectFromSdrObjList(nObjNum);
     if (getSpecialMode())
@@ -229,7 +229,7 @@ void OReportPage::resetSpecialMode()
     m_bSpecialInsertMode = false;
 }
 // -----------------------------------------------------------------------------
-void OReportPage::InsertObjectToSdrObjList(SdrObject& rObj, sal_uLong nPos)
+void OReportPage::InsertObjectToSdrObjList(SdrObject& rObj, sal_uInt32 nPos)
 {
     SdrPage::InsertObjectToSdrObjList(rObj, nPos);
 

@@ -1553,7 +1553,8 @@ void PPTWriter::ImplWritePortions( SvStream& rOut, TextObj& rTextObj )
 				{
 					case ::com::sun::star::drawing::FillStyle_GRADIENT :
 					{
-                        EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, basegfx::B2DRange(0.0, 0.0, 28000.0, 21000.0));
+					    basegfx::B2DRange aPageRange(0.0, 0.0, 28000.0, 21000.0);
+                        EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aPageRange);
 						
                         aPropOpt.CreateGradientProperties( mXPropSet );
 						aPropOpt.GetOpt( ESCHER_Prop_fillColor, nBackgroundColor );
@@ -1575,7 +1576,8 @@ void PPTWriter::ImplWritePortions( SvStream& rOut, TextObj& rTextObj )
 						{
 							case ::com::sun::star::drawing::FillStyle_GRADIENT :
 							{
-                                EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, basegfx::B2DRange(0.0, 0.0, 28000.0, 21000.0));
+							    basegfx::B2DRange aPageRange(0.0, 0.0, 28000.0, 21000.0);
+                                EscherPropertyContainer aPropOpt(mpPptEscherEx->GetGraphicProvider(), mpPicStrm, aPageRange);
 								
                                 aPropOpt.CreateGradientProperties( mXBackgroundPropSet );
 								aPropOpt.GetOpt( ESCHER_Prop_fillColor, nBackgroundColor );
