@@ -71,6 +71,8 @@ my_components = \
     component/vbahelper/util/msforms \
     component/sax/source/expatwrap/expwrap \
     component/sax/source/fastparser/fastsax \
+    component/sd/util/sd \
+    component/sd/util/sdd \
     component/sfx2/util/sfx \
     component/sot/util/sot \
     component/svgio/svgio \
@@ -144,9 +146,7 @@ my_components = \
     scd \
     scn \
     scriptframe \
-    sd \
     sdbc2 \
-    sdd \
     slideshow \
     spl \
     srtrs1 \
