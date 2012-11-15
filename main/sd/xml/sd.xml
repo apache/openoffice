@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module-description PUBLIC "-//StarOffice//DTD ComponentDescription 1.0//EN" "module-description.dtd">
+<module-description xmlns:xlink="http://www.w3.org/1999/xlink">
+  <module-name>sd</module-name>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessibleDrawDocumentView</name>
+
+    <description>
+      This component represents the accessbility object for Draw
+      document views and Impress document views with the view modes edit view,
+      notes view, or handout view.  For more detailed information see the
+      documentation of the supported services and the link to the general
+      accessibility documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.drawing.AccessibleDrawDocumentView</supported-service>
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+
+    <type>com.sun.star.drawing.XAccessible</type>
+    <type>com.sun.star.drawing.XAccessibleContext</type>
+    <type>com.sun.star.drawing.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.drawing.XAccessibleComponent</type>
+    <type>com.sun.star.drawing.XAccessibleExtendedComponent</type>
+    <type>com.sun.star.drawing.XAccessibleSelection</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XServiceInfo</type>
+    <type>com.sun.star.lang.XComponent</type>
+    <type>com.sun.star.beans.XPropertyChangeListener</type>
+    <type>com.sun.star.awt.XWindowListener</type>
+    <type>com.sun.star.awt.XTopWindowListener</type>
+
+  </component-description>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessibleOutlineView</name>
+
+    <description>
+      This component represents the accessbility object for Impress
+      document views in outline view mode.  For more detailed information see the
+      documentation of the supported services and the link to the general
+      accessibility documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+
+    <type>com.sun.star.drawing.XAccessible</type>
+    <type>com.sun.star.drawing.XAccessibleContext</type>
+    <type>com.sun.star.drawing.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.drawing.XAccessibleComponent</type>
+    <type>com.sun.star.drawing.XAccessibleExtendedComponent</type>
+    <type>com.sun.star.drawing.XAccessibleSelection</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XServiceInfo</type>
+    <type>com.sun.star.lang.XComponent</type>
+    <type>com.sun.star.beans.XPropertyChangeListener</type>
+    <type>com.sun.star.awt.XWindowListener</type>
+    <type>com.sun.star.awt.XTopWindowListener</type>
+
+  </component-description>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessiblePageShape</name>
+
+    <description>
+      This component is derived from AccessibleShape and makes the
+      graphical representation of the currently visible draw page accessible.  For
+      more detailed information see the documentation of the base component
+      AccessibleShape, the supported services, and the link to the general
+      accessibility documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.drawing.AccessibleShape</supported-service>
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+
+    <type>com.sun.star.accessibility.XAccessible</type>
+    <type>com.sun.star.accessibility.XAccessibleContext</type>
+    <type>com.sun.star.accessibility.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.accessibility.XAccessibleComponent</type>
+    <type>com.sun.star.accessibility.XAccessibleExtendedComponent</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XServiceInfo</type>
+    <type>com.sun.star.lang.XComponent</type>
+    <type>com.sun.star.document.XEventListener</type>
+    <type>com.sun.star.lang.XUnoTunnel</type>
+
+  </component-description>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessiblePresentationGraphicShape</name>
+
+    <description>
+      This component is derived from AccessibleGraphicShape and
+      implements Impress specific behaviour.  For more detailed information see
+      the documentation of the base component AccessibleGraphicShape, the
+      supported services, and the link to the general accessibility
+      documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.drawing.AccessibleShape</supported-service>
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+
+    <type>com.sun.star.accessibility.XAccessible</type>
+    <type>com.sun.star.accessibility.XAccessibleContext</type>
+    <type>com.sun.star.accessibility.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.accessibility.XAccessibleComponent</type>
+    <type>com.sun.star.accessibility.XAccessibleExtendedComponent</type>
+    <type>com.sun.star.accessibility.XAccessibleImage</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XServiceInfo</type>
+    <type>com.sun.star.lang.XComponent</type>
+    <type>com.sun.star.document.XEventListener</type>
+    <type>com.sun.star.lang.XUnoTunnel</type>
+
+  </component-description>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessiblePresentationOLEShape</name>
+
+    <description>
+      This component is derived from AccessibleOLEShape and
+      implements Impress specific behaviour.  For more detailed information see
+      the documentation of the base component AccessibleOLEShape, the supported
+      services, and the link to the general accessibility
+      documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.drawing.AccessibleShape</supported-service>
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+
+    <type>com.sun.star.accessibility.XAccessible</type>
+    <type>com.sun.star.accessibility.XAccessibleContext</type>
+    <type>com.sun.star.accessibility.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.accessibility.XAccessibleComponent</type>
+    <type>com.sun.star.accessibility.XAccessibleExtendedComponent</type>
+    <type>com.sun.star.accessibility.XAccessibleAction</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XServiceInfo</type>
+    <type>com.sun.star.lang.XComponent</type>
+    <type>com.sun.star.document.XEventListener</type>
+    <type>com.sun.star.lang.XUnoTunnel</type>
+
+  </component-description>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessiblePresentationShape</name>
+
+    <description>
+      This component represents the accessbility object of generic
+      presentation shapes.  For more detailed information see the documentation of
+      the base component AccessibleShape, the supported services, and the link to
+      the general accessibility documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.drawing.AccessibleShape</supported-service>
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+
+    <type>com.sun.star.accessibility.XAccessible</type>
+    <type>com.sun.star.accessibility.XAccessibleContext</type>
+    <type>com.sun.star.accessibility.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.accessibility.XAccessibleComponent</type>
+    <type>com.sun.star.accessibility.XAccessibleExtendedComponent</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XServiceInfo</type>
+    <type>com.sun.star.lang.XComponent</type>
+    <type>com.sun.star.document.XEventListener</type>
+    <type>com.sun.star.lang.XUnoTunnel</type>
+
+  </component-description>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessibleSlideView</name>
+
+    <description>
+      This component represents the accessbility object for Impress
+      document views in slide view mode.  For more detailed information see the
+      documentation of the supported services and the link to the general
+      accessibility documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+    <supported-service>com.sun.star.drawing.AccessibleSlideView</supported-service>
+
+    <type>com.sun.star.drawing.XAccessible</type>
+    <type>com.sun.star.drawing.XAccessibleContext</type>
+    <type>com.sun.star.drawing.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.drawing.XAccessibleComponent</type>
+    <type>com.sun.star.drawing.XAccessibleSelection</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XUnoTunnel</type>
+
+  </component-description>
+  <component-description>
+
+    <author>Andre Fischer</author>
+    <name>AccessibleSlideView</name>
+
+    <description>
+      This component represents the accessbility object for the
+      slides managed by Impress slide view.  For more detailed information see the
+      documentation of the supported services and the link to the general
+      accessibility documentation.
+    </description>
+
+    <reference-docu xlink-href="http://ui.openoffice.org/accessibility"
+    title="Link to a general description of UNO accessibility"/>
+
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="alpha"/>
+
+    <supported-service>com.sun.star.accessibility.Accessible</supported-service>
+    <supported-service>com.sun.star.accessibility.AccessibleContext</supported-service>
+    <supported-service>com.sun.star.drawing.AccessibleSlideViewObject</supported-service>
+
+    <type>com.sun.star.drawing.XAccessible</type>
+    <type>com.sun.star.drawing.XAccessibleContext</type>
+    <type>com.sun.star.drawing.XAccessibleEventBroadcaster</type>
+    <type>com.sun.star.drawing.XAccessibleComponent</type>
+    <type>com.sun.star.lang.XTypeProvider</type>
+    <type>com.sun.star.lang.XUnoTunnel</type>
+
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>DrawController_DrawView</name>
+    <description>
+      specifies a document which consists of multiple pages
+      with drawings.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com::sun::star::drawing::DrawingDocumentDrawView</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>DrawController_HandoutView</name>
+    <description>
+      This componend integrates a view to a handout page inside a presentation
+      document into the desktop
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com::sun::star::drawing::DrawingDocumentDrawView</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>DrawController_NotesView</name>
+    <description>
+      This componend integrates a view to a handout page inside a presentation
+      document into the desktop.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com::sun::star::drawing::DrawingDocumentDrawView</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>DrawController_OutlineView</name>
+    <description>
+      This componend integrates an outline view to a presentation
+      document into the desktop.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com::sun::star::drawing::DrawingDocumentDrawView</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>DrawController_PresentationView</name>
+    <description>
+      This componend integrates a view to a slide show of a presentation
+      document into the desktop.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com::sun::star::drawing::DrawingDocumentDrawView</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdDocLinkTargets</name>
+    <description>
+      This component provides access to possible link targets inside a context
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.document.LinkTargets</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdDrawPage</name>
+    <description>
+      This component provides access to a single drawing page of a document.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.DrawPage</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdDrawPagesAccess</name>
+    <description>
+      This component provides access to the drawing pages of a document.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.DrawPages</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdGenericDrawPage</name>
+    <description>
+      This component provides a basic implementation for both master and drawing pages.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.GenericDrawPage</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdLayer</name>
+    <description>
+      This component provides access to a single layer inside a document.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.Layer</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdLayerManager</name>
+    <description>
+      This component provides access to the layers of a document
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.LayerManager</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdMasterPage</name>
+    <description>
+      This component provides access to a single master page inside a document
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.MasterPage</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdMasterPagesAccess</name>
+    <description>
+      This component provides access to the master drawing pages inside a document
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.MasterPages</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdPageLinkTargets</name>
+    <description>
+      This component provides the container for the link targets of a drawing page
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.document.LinkTargets</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdXCustomPresentation</name>
+    <description>
+      This component provides access to the draw pages in a custom presentation
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.presentation.CustomPresentation</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdXCustomPresentationAccess</name>
+    <description>
+      This component provides access to custom presentations of a document
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.presentation.CustomPresentationAccess</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdXImpressDocument</name>
+    <description>
+      This component provides access to an presentation document.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.presentation.PresentationDocument</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdXPresentation</name>
+    <description>
+      This component provides access to the presentation of a impress document
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.presentation.Presentation</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>com.sun.star.comp.office.SdXShape</name>
+    <description>
+      This component provides access to a single shape.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com.sun.star.drawing.Shape</supported-service>
+  </component-description>
+  <component-description>
+    <author>Christian Lippka</author>
+    <name>SdUnoSlideView</name>
+    <description>
+      This componend integrates a slides view to a presentation
+      document into the desktop.
+    </description>
+    <loader-name>com.sun.star.loader.SharedLibrary</loader-name>
+    <language>c++</language>
+    <status value="final"/>
+    <supported-service>com::sun::star::drawing::DrawingDocumentDrawView</supported-service>
+  </component-description>
+</module-description>

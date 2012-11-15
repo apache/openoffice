@@ -48,12 +48,6 @@ mkdir: %_DEST%\inc%_EXT%\sd
 
 ..\xml\*.xml %_DEST%\xml%_EXT%\*.xml
 
-..\uiconfig\sdraw\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\menubar\*.xml
-..\uiconfig\simpress\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\simpress\menubar\*.xml
-..\uiconfig\sdraw\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\toolbar\*.xml
-..\uiconfig\simpress\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\simpress\toolbar\*.xml
-..\uiconfig\sdraw\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\statusbar\*.xml
-..\uiconfig\simpress\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\simpress\statusbar\*.xml
 
 ..\%__SRC%\misc\sd.component %_DEST%\xml%_EXT%\sd.component
 ..\%__SRC%\misc\sdd.component %_DEST%\xml%_EXT%\sdd.component
