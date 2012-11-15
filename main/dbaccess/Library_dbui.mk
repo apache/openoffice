@@ -96,7 +96,6 @@ $(eval $(call gb_Library_add_linked_libs,dbui,\
 	svt \
 	stl \
 	vcl \
-	for \
 	tl \
 	utl \
 	ucbhelper \
