@@ -646,8 +646,8 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 		    SdDrawDocument*	pWorkModel = (SdDrawDocument*) pOwnData->GetWorkDocument();
 		    SdPage*			pWorkPage = (SdPage*) pWorkModel->GetSdPage( 0, PK_STANDARD );
 
-			// #104148# Use SnapRect, not BoundRect
-			const basegfx::B2DVector aOffset(sdr::legacy::GetAllObjSnapRange(pWorkPage->getSdrObjectVector()).getRange());
+            // #120393# Clipboard data uses full object geometry range
+			const basegfx::B2DVector aOffset(sdr::legacy::GetAllObjBoundRange(pWorkPage->getSdrObjectVector()).getRange());
 			maDropPos = pOwnData->GetStartPos() + (aOffset * 0.5);
 
 		    // delete pages, that are not of any interest for us
@@ -794,8 +794,8 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 
 					if( pOwnData )
 					{
-						// #104148# Use SnapRect, not BoundRect
-						const basegfx::B2DVector aOffset(sdr::legacy::GetAllObjSnapRange(pWorkPage->getSdrObjectVector()).getRange());
+                        // #120393# Clipboard data uses full object geometry range
+						const basegfx::B2DVector aOffset(sdr::legacy::GetAllObjBoundRange(pWorkPage->getSdrObjectVector()).getRange());
 						maDropPos = pOwnData->GetStartPos() + (aOffset * 0.5);
 					}
 
@@ -859,8 +859,8 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 
 					if( pOwnData )
 					{
-						// #104148# Use SnapRect, not BoundRect
-						const basegfx::B2DVector aOffset(sdr::legacy::GetAllObjSnapRange(pWorkPage->getSdrObjectVector()).getRange());
+                        // #120393# Clipboard data uses full object geometry range
+						const basegfx::B2DVector aOffset(sdr::legacy::GetAllObjBoundRange(pWorkPage->getSdrObjectVector()).getRange());
 						maDropPos = pOwnData->GetStartPos() + (aOffset * 0.5);
 					}
 
@@ -1200,8 +1200,8 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
                                                     pWorkModel->GetSdPage( 0, PK_STANDARD ) :
                                                     pWorkModel->GetPage( 0 ) );
 
-				// #104148# Use SnapRect, not BoundRect
-				const basegfx::B2DVector aRange(sdr::legacy::GetAllObjSnapRange(pWorkPage->getSdrObjectVector()).getRange());
+                // #120393# Clipboard data uses full object geometry range
+				const basegfx::B2DVector aRange(sdr::legacy::GetAllObjBoundRange(pWorkPage->getSdrObjectVector()).getRange());
 
 				aInsertPos = pOwnData->GetStartPos() + (aRange * 0.5);
 			}
@@ -1228,8 +1228,8 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
                                                 pWorkModel->GetSdPage( 0, PK_STANDARD ) :
                                                 pWorkModel->GetPage( 0 ) );
 
-			// #104148# Use SnapRect, not BoundRect
-			const basegfx::B2DVector aRange(sdr::legacy::GetAllObjSnapRange(pWorkPage->getSdrObjectVector()).getRange());
+            // #120393# Clipboard data uses full object geometry range
+			const basegfx::B2DVector aRange(sdr::legacy::GetAllObjBoundRange(pWorkPage->getSdrObjectVector()).getRange());
 
 			aInsertPos = pOwnData->GetStartPos() + (aRange * 0.5);
 		}
@@ -1251,8 +1251,8 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
                                                     pWorkModel->GetSdPage( 0, PK_STANDARD ) :
                                                     pWorkModel->GetPage( 0 ) );
 
-				// #104148# Use SnapRect, not BoundRect
-				const basegfx::B2DVector aSize(sdr::legacy::GetAllObjSnapRange(pWorkPage->getSdrObjectVector()).getRange());
+                // #120393# Clipboard data uses full object geometry range
+				const basegfx::B2DVector aSize(sdr::legacy::GetAllObjBoundRange(pWorkPage->getSdrObjectVector()).getRange());
 
 				aInsertPos = pOwnData->GetStartPos() + (aSize * 0.5);
 			}
