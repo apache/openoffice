@@ -36,7 +36,6 @@ GTK_TWO_FOUR=$(shell @+-$(PKG_CONFIG) --exists 'gtk+-2.0 >= 2.4.0' && echo YES)
 
 my_components = \
     abp \
-    adabasui \
     analysis \
     animcore \
     avmedia \
@@ -55,6 +54,9 @@ my_components = \
     component/comphelper/util/comphelp \
     component/cui/util/cui \
     component/drawinglayer/drawinglayer \
+	component/dbaccess/source/ext/adabas/adabasui \
+	component/dbaccess/source/ext/macromigration/dbmm \
+	component/dbaccess/source/filter/xml/dbaxml \
 	component/dbaccess/util/dba \
 	component/dbaccess/util/dbu \
 	component/dbaccess/util/sdbt \
@@ -63,9 +65,9 @@ my_components = \
     component/framework/util/fwm \
     component/linguistic/source/lng \
     component/oox/oox \
+	component/reportdesign/source/filter/xml/rptxml \
 	component/reportdesign/util/rpt \
 	component/reportdesign/util/rptui \
-	component/reportdesign/util/rptxml \
     component/vbahelper/util/msforms \
     component/sax/source/expatwrap/expwrap \
     component/sax/source/fastparser/fastsax \
@@ -98,8 +100,6 @@ my_components = \
     ctl \
     date \
     dbase \
-    dbaxml \
-    dbmm \
     dbp \
     dbpool2 \
     dbtools \
@@ -139,9 +139,6 @@ my_components = \
     pythonloader \
     pythonscript \
     res \
-    rpt \
-    rptui \
-    rptxml \
     sb \
     sc \
     scd \
