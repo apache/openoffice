@@ -97,10 +97,10 @@ function LiberalMeasurement ( sShould$, sActual$) as Boolean
             printlog "took units from http://gsl.openoffice.org/source/browse/gsl/vcl/source/src/units.src"
             select case GetMeasUnit(sShould$)
             case "mm", "ミリ", "公厘" : iTolerance = 2.0             '01, 81,     88
-            case "cm","セン�?","厘米","公分"  : iTolerance = 0.5       '01, 81, 86, 88
+            case "cm","セン�?","厘米","公分"  : iTolerance = 0.5       '01, 81, 86, 88
             case chr$(34) : iTolerance = 2.5
             case "pi","ピクセル" : iTolerance = 2.5                 '01, 81
-            case "pt",  "�?イント" : iTolerance = 2.5                '01, 81
+            case "pt",  "�?イント" : iTolerance = 2.5                '01, 81
             case "" : iTolerance = 1.5 ' cm is presubposition in old functions
             case else
                 iTolerance = 2.5
@@ -1117,7 +1117,8 @@ function CreateTextSetEffectAndAngle
         TabEntrance.OK
     end if
     kontext "tasks"
-    EffectStart.TypeKeys "<HOME><DOWN>" 'Select the second entry.
+    EffectStart.TypeKeys "<HOME>", true
+    EffectStart.TypeKeys "<DOWN>", true 'Select the second entry.
 
     kontext "DocumentImpress"
     FormatPositionAndSize
