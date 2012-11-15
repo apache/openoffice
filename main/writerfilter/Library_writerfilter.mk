@@ -51,8 +51,7 @@ $(eval $(call gb_Library_set_include,writerfilter,\
 	-I$(SRCDIR)/writerfilter/source/ooxml \
 ))
 
-$(eval $(call gb_Library_set_defs,writerfilter,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,writerfilter,\
 	-DWRITERFILTER_DLLIMPLEMENTATION \
 ))
 
