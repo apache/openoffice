@@ -33,7 +33,6 @@ $(eval $(call gb_Module_add_targets,sd,\
 	Library_sdui \
 	Library_sdd \
 	Library_sdfilt \
-	Package_misc \
 	Package_uiconfig \
 	Package_xml \
 ))
