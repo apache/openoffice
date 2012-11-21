@@ -95,7 +95,7 @@ public class BasicFuncOnCalc {
 	 */
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-		xmlResult = new DataSheet(getFile("output/svt.xml"));
+		xmlResult = new DataSheet(getFile("output/svt_calc.xml"));
 		xmlResult.addRow("Data", "Method", "No", "Consumed Time(MS)", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 
