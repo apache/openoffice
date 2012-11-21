@@ -1921,158 +1921,170 @@ OUString SAL_CALL SvxCustomShape::getShapeType()
 
 //------------------------------------------------------------------1----
 
-Polygon Rect2Poly(const Rectangle& rRect, long aOldRotation, long aOldShear) // TTTT needed?
-{
-	Polygon aPol(5);
-	aPol[0]=rRect.TopLeft();
-	aPol[1]=rRect.TopRight();
-	aPol[2]=rRect.BottomRight();
-	aPol[3]=rRect.BottomLeft();
-	aPol[4]=rRect.TopLeft();
-	
-    if (aOldShear) 
-        ShearPoly(aPol,rRect.TopLeft(),tan(aOldShear*nPi180));
-	
-    if (aOldRotation) 
-        RotatePoly(aPol,rRect.TopLeft(),sin(aOldRotation*nPi180), cos(aOldRotation*nPi180));
-
-	return aPol;
-}
-
-void Poly2Rect(const Polygon& rPol, Rectangle& rRect, long& rRotation, long& rShear) // TTTT needed?
-{
-	rRotation=GetAngle(rPol[1]-rPol[0]);
-	rShear=NormAngle360(rRotation);
-	// Drehung ist damit im Kasten
-
-	Point aPt1(rPol[1]-rPol[0]);
-	if (rRotation) RotatePoint(aPt1,Point(0,0),-sin(rRotation*nPi180), cos(rRotation*nPi180)); // -Sin fuer Rueckdrehung
-	long nWdt=aPt1.X();
-
-	Point aPt0(rPol[0]);
-	Point aPt3(rPol[3]-rPol[0]);
-	if (rRotation) RotatePoint(aPt3,Point(0,0),-sin(rRotation*nPi180), cos(rRotation*nPi180)); // -Sin fuer Rueckdrehung
-	long nHgt=aPt3.Y();
-
-	if(aPt3.X())
-	{
-		// #i74358# the axes are not orthogonal, so for getting the correct height, 
-		// calculate the length of aPt3
-
-		// #i74358# this change was wrong, in the field of the old geometry stuff
-		// it is not an error. The new height always is the same as before; shear
-		// does not change object height at all. This is different from the interactions,
-		// but obviously wanted in the old versions.
-		//
-		// nHgt = static_cast< long >(sqrt(static_cast< double >(aPt3.X() * aPt3.X() + aPt3.Y() * aPt3.Y())));
-	}
-
-    long nShW=GetAngle(aPt3);
-	nShW-=27000; // ShearWink wird zur Senkrechten gemessen
-	nShW=-nShW;  // Negieren, denn '+' ist Rechtskursivierung
-
-	bool bMirr=aPt3.Y()<0;
-	if (bMirr) { // "Punktetausch" bei Spiegelung
-		nHgt=-nHgt;
-		nShW+=18000;
-		aPt0=rPol[3];
-	}
-	nShW=NormAngle180(nShW);
-	if (nShW<-9000 || nShW>9000) {
-		nShW=NormAngle180(nShW+18000);
-	}
-	const long SDRMAXSHEAR(8900);
-	if (nShW<-SDRMAXSHEAR) nShW=-SDRMAXSHEAR; // ShearWinkel begrenzen auf +/- 89.00 deg
-	if (nShW>SDRMAXSHEAR)  nShW=SDRMAXSHEAR;
-	rShear=nShW;
-	Point aRU(aPt0);
-	aRU.X()+=nWdt;
-	aRU.Y()+=nHgt;
-	rRect=Rectangle(aPt0,aRU);
-}
+// TTTT: Not needed
+//Polygon Rect2Poly(const Rectangle& rRect, long aOldRotation, long aOldShear) // TTTT needed?
+//{
+//	Polygon aPol(5);
+//	aPol[0]=rRect.TopLeft();
+//	aPol[1]=rRect.TopRight();
+//	aPol[2]=rRect.BottomRight();
+//	aPol[3]=rRect.BottomLeft();
+//	aPol[4]=rRect.TopLeft();
+//	
+//    if (aOldShear) 
+//        ShearPoly(aPol,rRect.TopLeft(),tan(aOldShear*nPi180));
+//	
+//    if (aOldRotation) 
+//        RotatePoly(aPol,rRect.TopLeft(),sin(aOldRotation*nPi180), cos(aOldRotation*nPi180));
+//
+//	return aPol;
+//}
+//
+//void Poly2Rect(const Polygon& rPol, Rectangle& rRect, long& rRotation, long& rShear) // TTTT needed?
+//{
+//	rRotation=GetAngle(rPol[1]-rPol[0]);
+//	rShear=NormAngle360(rRotation);
+//	// Drehung ist damit im Kasten
+//
+//	Point aPt1(rPol[1]-rPol[0]);
+//	if (rRotation) RotatePoint(aPt1,Point(0,0),-sin(rRotation*nPi180), cos(rRotation*nPi180)); // -Sin fuer Rueckdrehung
+//	long nWdt=aPt1.X();
+//
+//	Point aPt0(rPol[0]);
+//	Point aPt3(rPol[3]-rPol[0]);
+//	if (rRotation) RotatePoint(aPt3,Point(0,0),-sin(rRotation*nPi180), cos(rRotation*nPi180)); // -Sin fuer Rueckdrehung
+//	long nHgt=aPt3.Y();
+//
+//	if(aPt3.X())
+//	{
+//		// #i74358# the axes are not orthogonal, so for getting the correct height, 
+//		// calculate the length of aPt3
+//
+//		// #i74358# this change was wrong, in the field of the old geometry stuff
+//		// it is not an error. The new height always is the same as before; shear
+//		// does not change object height at all. This is different from the interactions,
+//		// but obviously wanted in the old versions.
+//		//
+//		// nHgt = static_cast< long >(sqrt(static_cast< double >(aPt3.X() * aPt3.X() + aPt3.Y() * aPt3.Y())));
+//	}
+//
+//    long nShW=GetAngle(aPt3);
+//	nShW-=27000; // ShearWink wird zur Senkrechten gemessen
+//	nShW=-nShW;  // Negieren, denn '+' ist Rechtskursivierung
+//
+//	bool bMirr=aPt3.Y()<0;
+//	if (bMirr) { // "Punktetausch" bei Spiegelung
+//		nHgt=-nHgt;
+//		nShW+=18000;
+//		aPt0=rPol[3];
+//	}
+//	nShW=NormAngle180(nShW);
+//	if (nShW<-9000 || nShW>9000) {
+//		nShW=NormAngle180(nShW+18000);
+//	}
+//	const long SDRMAXSHEAR(8900);
+//	if (nShW<-SDRMAXSHEAR) nShW=-SDRMAXSHEAR; // ShearWinkel begrenzen auf +/- 89.00 deg
+//	if (nShW>SDRMAXSHEAR)  nShW=SDRMAXSHEAR;
+//	rShear=nShW;
+//	Point aRU(aPt0);
+//	aRU.X()+=nWdt;
+//	aRU.Y()+=nHgt;
+//	rRect=Rectangle(aPt0,aRU);
+//}
 
 awt::Point SAL_CALL SvxCustomShape::getPosition() throw(uno::RuntimeException)
 {
-	OGuard aGuard( Application::GetSolarMutex() );
-	if ( mpModel && mpObj.is() )
-	{
-		sal_Bool bMirroredX = sal_False;
-		sal_Bool bMirroredY = sal_False;
+    // TTTT: All exceptions because of mirroring should be obsolete
+    return SvxShape::getPosition();
 
-		if ( mpObj.is() )
-		{
-			bMirroredX = ( ((SdrObjCustomShape*)mpObj.get())->IsMirroredX() );
-			bMirroredY = ( ((SdrObjCustomShape*)mpObj.get())->IsMirroredY() );
-		}
-		// get aRect, this is the unrotated snaprect
-		Rectangle aRect(sdr::legacy::GetLogicRect(*((SdrObjCustomShape*)mpObj.get())));
-		Rectangle aRectangle( aRect );
-
-		if ( bMirroredX || bMirroredY )
-		{	
-			// we have to retrieve the unmirrored rect
-			long aRotation(sdr::legacy::GetRotateAngle(*mpObj.get()));
-			long aShear(sdr::legacy::GetShearAngleX(*mpObj.get()));
-
-			if ( bMirroredX )
-			{
-				Polygon aPol( Rect2Poly( aRect, aRotation, aShear ) );
-				Rectangle aBoundRect( aPol.GetBoundRect() );
-
-				Point aRef1( ( aBoundRect.Left() + aBoundRect.Right() ) >> 1, aBoundRect.Top() );
-				Point aRef2( aRef1.X(), aRef1.Y() + 1000 );
-				sal_uInt16 i;
-				sal_uInt16 nPntAnz=aPol.GetSize();
-				for (i=0; i<nPntAnz; i++)
-				{
-					MirrorPoint(aPol[i],aRef1,aRef2);
-				}
-				// Polygon wenden und etwas schieben
-				Polygon aPol0(aPol);
-				aPol[0]=aPol0[1];
-				aPol[1]=aPol0[0];
-				aPol[2]=aPol0[3];
-				aPol[3]=aPol0[2];
-				aPol[4]=aPol0[1];
-				Poly2Rect(aPol,aRectangle,aRotation, aShear);
-			}
-			if ( bMirroredY )
-			{
-				Polygon aPol( Rect2Poly( aRectangle, aRotation, aShear ) );
-				Rectangle aBoundRect( aPol.GetBoundRect() );
-
-				Point aRef1( aBoundRect.Left(), ( aBoundRect.Top() + aBoundRect.Bottom() ) >> 1 );
-				Point aRef2( aRef1.X() + 1000, aRef1.Y() );
-				sal_uInt16 i;
-				sal_uInt16 nPntAnz=aPol.GetSize();
-				for (i=0; i<nPntAnz; i++)
-				{
-					MirrorPoint(aPol[i],aRef1,aRef2);
-				}
-				// Polygon wenden und etwas schieben
-				Polygon aPol0(aPol);
-				aPol[0]=aPol0[1];
-				aPol[1]=aPol0[0];
-				aPol[2]=aPol0[3];
-				aPol[3]=aPol0[2];
-				aPol[4]=aPol0[1];
-				Poly2Rect( aPol, aRectangle, aRotation, aShear );
-			}
-		}
-
-		basegfx::B2DPoint aPt( aRectangle.Left(), aRectangle.Top() );
-
-        if(isWriterAnchorUsed())
-        {
-			aPt -= mpObj->GetAnchorPos();
-        }
-
-		ForceMetricTo100th_mm(aPt);
-
-		return ::com::sun::star::awt::Point( basegfx::fround(aPt.getX()), basegfx::fround(aPt.getY()) );
-	}
-	else
-		return SvxShape::getPosition();
+	//OGuard aGuard( Application::GetSolarMutex() );
+	//if ( mpModel && mpObj.is() )
+	//{
+	//	sal_Bool bMirroredX = sal_False;
+	//	sal_Bool bMirroredY = sal_False;
+    //
+	//	if ( mpObj.is() )
+	//	{
+    //        const SdrObjCustomShape* pSdrObjCustomShape = dynamic_cast< const SdrObjCustomShape* >(mpObj.get());
+    //
+    //        if(pSdrObjCustomShape)
+    //        {
+    //            bMirroredX = isMirroredX();
+    //            bMirroredY = isMirroredY();
+    //        }
+    //        // TTTT:
+	//		//bMirroredX = ( ((SdrObjCustomShape*)mpObj.get())->IsMirroredX() );
+	//		//bMirroredY = ( ((SdrObjCustomShape*)mpObj.get())->IsMirroredY() );
+	//	}
+	//	// get aRect, this is the unrotated snaprect
+	//	Rectangle aRect(sdr::legacy::GetLogicRect(*((SdrObjCustomShape*)mpObj.get())));
+	//	Rectangle aRectangle( aRect );
+    //
+	//	if ( bMirroredX || bMirroredY )
+	//	{	
+	//		// we have to retrieve the unmirrored rect
+	//		long aRotation(sdr::legacy::GetRotateAngle(*mpObj.get()));
+	//		long aShear(sdr::legacy::GetShearAngleX(*mpObj.get()));
+    //
+	//		if ( bMirroredX )
+	//		{
+	//			Polygon aPol( Rect2Poly( aRect, aRotation, aShear ) );
+	//			Rectangle aBoundRect( aPol.GetBoundRect() );
+    //
+	//			Point aRef1( ( aBoundRect.Left() + aBoundRect.Right() ) >> 1, aBoundRect.Top() );
+	//			Point aRef2( aRef1.X(), aRef1.Y() + 1000 );
+	//			sal_uInt16 i;
+	//			sal_uInt16 nPntAnz=aPol.GetSize();
+	//			for (i=0; i<nPntAnz; i++)
+	//			{
+	//				MirrorPoint(aPol[i],aRef1,aRef2);
+	//			}
+	//			// Polygon wenden und etwas schieben
+	//			Polygon aPol0(aPol);
+	//			aPol[0]=aPol0[1];
+	//			aPol[1]=aPol0[0];
+	//			aPol[2]=aPol0[3];
+	//			aPol[3]=aPol0[2];
+	//			aPol[4]=aPol0[1];
+	//			Poly2Rect(aPol,aRectangle,aRotation, aShear);
+	//		}
+	//		if ( bMirroredY )
+	//		{
+	//			Polygon aPol( Rect2Poly( aRectangle, aRotation, aShear ) );
+	//			Rectangle aBoundRect( aPol.GetBoundRect() );
+    //
+	//			Point aRef1( aBoundRect.Left(), ( aBoundRect.Top() + aBoundRect.Bottom() ) >> 1 );
+	//			Point aRef2( aRef1.X() + 1000, aRef1.Y() );
+	//			sal_uInt16 i;
+	//			sal_uInt16 nPntAnz=aPol.GetSize();
+	//			for (i=0; i<nPntAnz; i++)
+	//			{
+	//				MirrorPoint(aPol[i],aRef1,aRef2);
+	//			}
+	//			// Polygon wenden und etwas schieben
+	//			Polygon aPol0(aPol);
+	//			aPol[0]=aPol0[1];
+	//			aPol[1]=aPol0[0];
+	//			aPol[2]=aPol0[3];
+	//			aPol[3]=aPol0[2];
+	//			aPol[4]=aPol0[1];
+	//			Poly2Rect( aPol, aRectangle, aRotation, aShear );
+	//		}
+	//	}
+    //
+	//	basegfx::B2DPoint aPt( aRectangle.Left(), aRectangle.Top() );
+    //
+    //    if(isWriterAnchorUsed())
+    //    {
+	//		aPt -= mpObj->GetAnchorPos();
+    //    }
+    //
+	//	ForceMetricTo100th_mm(aPt);
+    //
+	//	return ::com::sun::star::awt::Point( basegfx::fround(aPt.getX()), basegfx::fround(aPt.getY()) );
+	//}
+	//else
+	//	return SvxShape::getPosition();
 }
 
 //----------------------------------------------------------------------
@@ -2101,83 +2113,87 @@ void SAL_CALL SvxCustomShape::setSize( const awt::Size& rSize )
 void SAL_CALL SvxCustomShape::setPropertyValue( const OUString& aPropertyName, const uno::Any& aValue )
 	throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException, com::sun::star::beans::PropertyVetoException, com::sun::star::lang::IllegalArgumentException)
 {
-	OGuard aGuard( Application::GetSolarMutex() );
-    SdrObject* pObject = mpObj.get();
-
-    const bool bCustomShapeGeometry(pObject && aPropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "CustomShapeGeometry" ) ));
-	bool bMirroredX = false;
-	bool bMirroredY = false;
-
-	if ( bCustomShapeGeometry )
-	{
-		bMirroredX = ( ((SdrObjCustomShape*)pObject)->IsMirroredX() );
-		bMirroredY = ( ((SdrObjCustomShape*)pObject)->IsMirroredY() );
-	}
-
+    // TTTT: All exceptions because of mirroring should be obsolete
 	SvxShape::setPropertyValue( aPropertyName, aValue );
 
-	if ( bCustomShapeGeometry )
-	{
-		((SdrObjCustomShape*)pObject)->MergeDefaultAttributes(0);
-		const Rectangle aRect( sdr::legacy::GetSnapRect(*pObject) );
-
-		// #i38892#
-		const bool bNeedsMirrorX(((SdrObjCustomShape*)pObject)->IsMirroredX() != bMirroredX);
-		const bool bNeedsMirrorY(((SdrObjCustomShape*)pObject)->IsMirroredY() != bMirroredY);
-		boost::scoped_ptr< SdrGluePointList > pListCopy;
-
-		if( bNeedsMirrorX || bNeedsMirrorY )
-		{
-			const SdrGluePointList* pList = pObject->GetGluePointList();
-			if( pList )
-				pListCopy.reset( new SdrGluePointList(*pList) );
-		}
-
-        if ( bNeedsMirrorX )
-		{
-			Point aTop( ( aRect.Left() + aRect.Right() ) >> 1, aRect.Top() );
-			Point aBottom( aTop.X(), aTop.Y() + 1000 );
-			sdr::legacy::MirrorSdrObject(*pObject, aTop, aBottom );
-			// NbcMirroring is flipping the current mirror state,
-			// so we have to set the correct state again
-			((SdrObjCustomShape*)pObject)->SetMirroredX( bMirroredX ? sal_False : sal_True );
-		}
-		if ( bNeedsMirrorY )
-		{
-			Point aLeft( aRect.Left(), ( aRect.Top() + aRect.Bottom() ) >> 1 );
-			Point aRight( aLeft.X() + 1000, aLeft.Y() );
-			sdr::legacy::MirrorSdrObject(*pObject, aLeft, aRight );
-			// NbcMirroring is flipping the current mirror state,
-			// so we have to set the correct state again
-			((SdrObjCustomShape*)pObject)->SetMirroredY( bMirroredY ? sal_False : sal_True );
-		}
-
-		if( pListCopy )
-		{
-			SdrGluePointList* pNewList = const_cast< SdrGluePointList* >( pObject->GetGluePointList() );
-			if(pNewList)
-				*pNewList = *pListCopy;
-		}
-	}
+    //OGuard aGuard( Application::GetSolarMutex() );
+    //SdrObject* pObject = mpObj.get();
+    //
+    //const bool bCustomShapeGeometry(pObject && aPropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "CustomShapeGeometry" ) ));
+	//bool bMirroredX = false;
+	//bool bMirroredY = false;
+    //
+	//if ( bCustomShapeGeometry )
+	//{
+	//	bMirroredX = ( ((SdrObjCustomShape*)pObject)->IsMirroredX() );
+	//	bMirroredY = ( ((SdrObjCustomShape*)pObject)->IsMirroredY() );
+	//}
+    //
+	//SvxShape::setPropertyValue( aPropertyName, aValue );
+    //
+	//if ( bCustomShapeGeometry )
+	//{
+	//	((SdrObjCustomShape*)pObject)->MergeDefaultAttributes(0);
+	//	const Rectangle aRect( sdr::legacy::GetSnapRect(*pObject) );
+    //
+	//	// #i38892#
+	//	const bool bNeedsMirrorX(((SdrObjCustomShape*)pObject)->IsMirroredX() != bMirroredX);
+	//	const bool bNeedsMirrorY(((SdrObjCustomShape*)pObject)->IsMirroredY() != bMirroredY);
+	//	boost::scoped_ptr< SdrGluePointList > pListCopy;
+    //
+	//	if( bNeedsMirrorX || bNeedsMirrorY )
+	//	{
+	//		const SdrGluePointList* pList = pObject->GetGluePointList();
+	//		if( pList )
+	//			pListCopy.reset( new SdrGluePointList(*pList) );
+	//	}
+    //
+    //    if ( bNeedsMirrorX )
+	//	{
+	//		Point aTop( ( aRect.Left() + aRect.Right() ) >> 1, aRect.Top() );
+	//		Point aBottom( aTop.X(), aTop.Y() + 1000 );
+	//		sdr::legacy::MirrorSdrObject(*pObject, aTop, aBottom );
+	//		// NbcMirroring is flipping the current mirror state,
+	//		// so we have to set the correct state again
+	//		((SdrObjCustomShape*)pObject)->SetMirroredX( bMirroredX ? sal_False : sal_True );
+	//	}
+	//	if ( bNeedsMirrorY )
+	//	{
+	//		Point aLeft( aRect.Left(), ( aRect.Top() + aRect.Bottom() ) >> 1 );
+	//		Point aRight( aLeft.X() + 1000, aLeft.Y() );
+	//		sdr::legacy::MirrorSdrObject(*pObject, aLeft, aRight );
+	//		// NbcMirroring is flipping the current mirror state,
+	//		// so we have to set the correct state again
+	//		((SdrObjCustomShape*)pObject)->SetMirroredY( bMirroredY ? sal_False : sal_True );
+	//	}
+    //
+	//	if( pListCopy )
+	//	{
+	//		SdrGluePointList* pNewList = const_cast< SdrGluePointList* >( pObject->GetGluePointList() );
+	//		if(pNewList)
+	//			*pNewList = *pListCopy;
+	//	}
+	//}
 }
 
-bool SvxCustomShape::getPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
-{
-	switch( pProperty->nWID )
-	{
-	    case SDRATTR_ROTATEANGLE:
-	    {
-		    double fAngle = static_cast<SdrObjCustomShape*>(mpObj.get())->GetObjectRotation();
-		    fAngle *= 100;
-		    rValue <<= (sal_Int32)fAngle;
-		    return true;
-	    }
-	    default:
-        {
-            return SvxShape::getPropertyValueImpl( rName, pProperty, rValue );
-	    }
-    }
-}
+// TTTT:
+//bool SvxCustomShape::getPropertyValueImpl( const ::rtl::OUString& rName, const SfxItemPropertySimpleEntry* pProperty, ::com::sun::star::uno::Any& rValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
+//{
+//	switch( pProperty->nWID )
+//	{
+//	    case SDRATTR_ROTATEANGLE:
+//	    {
+//		    double fAngle = static_cast<SdrObjCustomShape*>(mpObj.get())->GetObjectRotation();
+//		    fAngle *= 100;
+//		    rValue <<= (sal_Int32)fAngle;
+//		    return true;
+//	    }
+//	    default:
+//        {
+//            return SvxShape::getPropertyValueImpl( rName, pProperty, rValue );
+//	    }
+//    }
+//}
 //----------------------------------------------------------------------
 
 void SvxCustomShape::createCustomShapeDefaults( const rtl::OUString& rValueType ) throw (::com::sun::star::uno::RuntimeException)

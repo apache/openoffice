@@ -473,8 +473,8 @@ sal_Bool EnhancedCustomShape2d::ConvertSequenceToEnhancedCustomShape2dHandle(
 			const com::sun::star::beans::PropertyValue& rPropVal = rHandleProperties[ i ];
 
 			const rtl::OUString	sPosition			( RTL_CONSTASCII_USTRINGPARAM( "Position" ) );
-//			const rtl::OUString	sMirroredX			( RTL_CONSTASCII_USTRINGPARAM( "MirroredX" ) );
-//			const rtl::OUString	sMirroredY			( RTL_CONSTASCII_USTRINGPARAM( "MirroredY" ) );
+			const rtl::OUString	sMirroredX			( RTL_CONSTASCII_USTRINGPARAM( "MirroredX" ) );
+			const rtl::OUString	sMirroredY			( RTL_CONSTASCII_USTRINGPARAM( "MirroredY" ) );
 			const rtl::OUString	sSwitched			( RTL_CONSTASCII_USTRINGPARAM( "Switched" ) );
 			const rtl::OUString	sPolar				( RTL_CONSTASCII_USTRINGPARAM( "Polar" ) );
 //			const rtl::OUString	sMap				( RTL_CONSTASCII_USTRINGPARAM( "Map" ) );
@@ -494,24 +494,24 @@ sal_Bool EnhancedCustomShape2d::ConvertSequenceToEnhancedCustomShape2dHandle(
 				if ( rPropVal.Value >>= rDestinationHandle.aPosition )
 					bRetValue = sal_True;
 			}
-//			else if ( rPropVal.Name.equals( sMirroredX ) )
-//			{
-//				sal_Bool bMirroredX = sal_Bool();
-//				if ( rPropVal.Value >>= bMirroredX )
-//				{
-//					if ( bMirroredX )
-//						rDestinationHandle.nFlags |= HANDLE_FLAGS_MIRRORED_X;
-//				}
-//			}
-//			else if ( rPropVal.Name.equals( sMirroredY ) )
-//			{
-//				sal_Bool bMirroredY = sal_Bool();
-//				if ( rPropVal.Value >>= bMirroredY )
-//				{
-//					if ( bMirroredY )
-//						rDestinationHandle.nFlags |= HANDLE_FLAGS_MIRRORED_Y;
-//				}
-//			}
+			else if ( rPropVal.Name.equals( sMirroredX ) )
+			{
+				sal_Bool bMirroredX = sal_Bool();
+				if ( rPropVal.Value >>= bMirroredX )
+				{
+					if ( bMirroredX )
+						rDestinationHandle.nFlags |= HANDLE_FLAGS_MIRRORED_X;
+				}
+			}
+			else if ( rPropVal.Name.equals( sMirroredY ) )
+			{
+				sal_Bool bMirroredY = sal_Bool();
+				if ( rPropVal.Value >>= bMirroredY )
+				{
+					if ( bMirroredY )
+						rDestinationHandle.nFlags |= HANDLE_FLAGS_MIRRORED_Y;
+				}
+			}
 			else if ( rPropVal.Name.equals( sSwitched ) )
 			{
 				sal_Bool bSwitched = sal_Bool();
@@ -743,6 +743,7 @@ EnhancedCustomShape2d::EnhancedCustomShape2d( SdrObject* pAObj ) :
 	maLogicScale = basegfx::absolute(pCustomShapeObj->getSdrObjectScale());
 
 	const rtl::OUString	sType( RTL_CONSTASCII_USTRINGPARAM ( "Type" ) );
+    // TTTT: MirroredX/Y removed
 //	const rtl::OUString sMirroredX( RTL_CONSTASCII_USTRINGPARAM ( "MirroredX" ) );
 //	const rtl::OUString sMirroredY( RTL_CONSTASCII_USTRINGPARAM ( "MirroredY" ) );
 
@@ -753,6 +754,7 @@ EnhancedCustomShape2d::EnhancedCustomShape2d( SdrObject* pAObj ) :
 		*pAny >>= sShapeType;
 	meSpType = EnhancedCustomShapeTypeNames::Get( sShapeType );
 
+// TTTT:
 //	pAny = rGeometryItem.GetPropertyValueByName( sMirroredX );
 //	if ( pAny )
 //		*pAny >>= bFlipH;

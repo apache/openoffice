@@ -493,6 +493,14 @@ protected :
 	*/
 	virtual sal_Bool ShapeHasText(sal_uLong nShapeId, sal_uLong nFilePos) const;
 
+    // helper to apply rotation and mirroring to SdrObject
+    void ApplyRotationAndMirror(
+        SdrObject& rTarget,
+        const basegfx::B2DPoint& rCenter,
+        sal_Int32 nAngle, // in old DrawingLayer notation
+        bool bFlipHorizontal,
+        bool bFlipVertical);
+
 public:
 
 	void*				pSvxMSDffDummy1;

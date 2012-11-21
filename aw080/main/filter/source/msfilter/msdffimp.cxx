@@ -4183,6 +4183,38 @@ SdrObject* SvxMSDffManager::ImportObj( SvStream& rSt, void* pClientData,
     return pRet;
 }
 
+void SvxMSDffManager::ApplyRotationAndMirror(
+    SdrObject& rTarget,
+    const basegfx::B2DPoint& rCenter,
+    sal_Int32 nAngle, // in old DrawingLayer notation
+    bool bFlipHorizontal,
+    bool bFlipVertical)
+{
+    if(nAngle || bFlipHorizontal || bFlipVertical)
+    {
+        basegfx::B2DHomMatrix aTransform;
+        aTransform.translate(-rCenter);
+
+        if(nAngle)
+        {
+            aTransform.rotate((-nAngle * F_PI) / 18000.0);
+        }
+
+        if(bFlipHorizontal)
+        {
+            aTransform.scale(-1.0, 1.0);
+        }
+
+        if(bFlipVertical)
+        {
+            aTransform.scale(1.0, -1.0);
+        }
+
+        aTransform.translate(rCenter);
+        sdr::legacy::transformSdrObject(rTarget, aTransform);
+    }
+}
+
 SdrObject* SvxMSDffManager::ImportGroup( const DffRecordHeader& rHd, SvStream& rSt, void* pClientData,
 	basegfx::B2DRange& rClientRange, const basegfx::B2DRange& rGlobalChildRange,
 												int nCalledByGroup, sal_Int32* pShapeId )
@@ -4262,36 +4294,14 @@ SdrObject* SvxMSDffManager::ImportGroup( const DffRecordHeader& rHd, SvStream& r
 				aRecHd2.SeekToEndOfRecord( rSt );
 			}
 
-			if ( nGroupRotateAngle )
-			{
-				basegfx::B2DHomMatrix aTransform;
+            const basegfx::B2DPoint aCenter(aClientRange.getCenter());
 
-				aTransform.translate(-aClientRange.getCenter());
-				aTransform.rotate((-nGroupRotateAngle * F_PI) / 18000.0);
-				aTransform.translate(aClientRange.getCenter());
-
-				sdr::legacy::transformSdrObject(*pRet, aTransform);
-			}
-			if ( nSpFlags & SP_FFLIPV )		// Vertikal gespiegelt?
-			{	// BoundRect in aBoundRect
-                basegfx::B2DHomMatrix aTransform;
-
-				aTransform.translate(0.0, -aClientRange.getCenterY());
-				aTransform.scale(1.0, -1.0);
-				aTransform.translate(0.0, aClientRange.getCenterY());
-
-				sdr::legacy::transformSdrObject(*pRet, aTransform);
-			}
-			if ( nSpFlags & SP_FFLIPH )		// Horizontal gespiegelt?
-			{	// BoundRect in aBoundRect
-                basegfx::B2DHomMatrix aTransform;
-
-				aTransform.translate(-aClientRange.getCenterX(), 0.0);
-				aTransform.scale(-1.0, 1.0);
-				aTransform.translate(aClientRange.getCenterX(), 0.0);
-
-				sdr::legacy::transformSdrObject(*pRet, aTransform);
-			}
+            ApplyRotationAndMirror(
+                *pRet,
+                aCenter,
+                nGroupRotateAngle,
+                nSpFlags & SP_FFLIPH,
+                nSpFlags & SP_FFLIPV);
 		}
 	}
 	return pRet;
@@ -4861,51 +4871,22 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 
 					if( bIsConnector )
 					{
-						if( nObjectRotation )
-						{
-							basegfx::B2DHomMatrix aTransform;
+                        const basegfx::B2DPoint aCenter(aObjData.aBoundRect.getCenter());
 
-							aTransform.translate(-aObjData.aBoundRect.getCenter());
-							aTransform.rotate((-nObjectRotation * F_PI) / 18000.0);
-							aTransform.translate(aObjData.aBoundRect.getCenter());
+                        ApplyRotationAndMirror(
+                            *pRet,
+                            aCenter,
+                            nObjectRotation,
+                            nSpFlags & SP_FFLIPH,
+                            nSpFlags & SP_FFLIPV);
+                        // #120437# reset rotation, it is part of the path and shall not be applied again
+                        nObjectRotation = 0;
 
-							sdr::legacy::transformSdrObject(*pRet, aTransform);
-                            
-                            // #120437# reset rotation, it is part of the path and shall not be applied again
-                            nObjectRotation = 0;
-						}
+                        // #120437# reset hor filp
+                        nSpFlags &= ~SP_FFLIPH;
 
-                        // Horizontal gespiegelt?
-						if ( nSpFlags & SP_FFLIPH )
-						{
-							const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(*pRet));
-							basegfx::B2DHomMatrix aTransform;
-
-							aTransform.translate(-aSnapRange.getCenterX(), 0.0);
-							aTransform.scale(-1.0, 1.0);
-							aTransform.translate(aSnapRange.getCenterX(), 0.0);
-
-							sdr::legacy::transformSdrObject(*pRet, aTransform);
-                            
-                            // #120437# reset hor filp
-                            nSpFlags &= ~SP_FFLIPH;
-						}
-
-                        // Vertikal gespiegelt?
-						if ( nSpFlags & SP_FFLIPV )
-						{
-							const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(*pRet));
-							basegfx::B2DHomMatrix aTransform;
-
-							aTransform.translate(0.0, -aSnapRange.getCenterY());
-							aTransform.scale(1.0, -1.0);
-							aTransform.translate(0.0, aSnapRange.getCenterY());
-
-							sdr::legacy::transformSdrObject(*pRet, aTransform);
-                            
-                            // #120437# reset ver filp
-                            nSpFlags &= ~SP_FFLIPV;
-						}
+                        // #120437# reset ver filp
+                        nSpFlags &= ~SP_FFLIPV;
 
                         const basegfx::B2DPolyPolygon aPoly( SdrObjCustomShape::GetLineGeometry( (SdrObjCustomShape*)pRet, sal_True ) );
                         deleteSdrObjectSafeAndClearPointer( pRet );
@@ -5001,42 +4982,16 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 				}
 			}
 
-			if ( pRet )
+			if(pRet && (nObjectRotation || nSpFlags & (SP_FFLIPH|SP_FFLIPV)))
 			{
-				if( nObjectRotation )
-				{
-					basegfx::B2DHomMatrix aTransform;
+                const basegfx::B2DPoint aCenter(aObjData.aBoundRect.getCenter());
 
-					aTransform.translate(-aObjData.aBoundRect.getCenter());
-					aTransform.rotate((-nObjectRotation * F_PI) / 18000.0);
-					aTransform.translate(aObjData.aBoundRect.getCenter());
-
-					sdr::legacy::transformSdrObject(*pRet, aTransform);
-				}
-				// Horizontal gespiegelt?
-				if ( nSpFlags & SP_FFLIPH )
-				{
-					const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(*pRet));
-					basegfx::B2DHomMatrix aTransform;
-
-					aTransform.translate(-aSnapRange.getCenterX(), 0.0);
-					aTransform.scale(-1.0, 1.0);
-					aTransform.translate(aSnapRange.getCenterX(), 0.0);
-
-					sdr::legacy::transformSdrObject(*pRet, aTransform);
-				}
-				// Vertikal gespiegelt?
-				if ( nSpFlags & SP_FFLIPV )
-				{
-					const basegfx::B2DRange aSnapRange(sdr::legacy::GetSnapRange(*pRet));
-					basegfx::B2DHomMatrix aTransform;
-
-					aTransform.translate(0.0, -aSnapRange.getCenterY());
-					aTransform.scale(1.0, -1.0);
-					aTransform.translate(0.0, aSnapRange.getCenterY());
-
-					sdr::legacy::transformSdrObject(*pRet, aTransform);
-				}
+                ApplyRotationAndMirror(
+                    *pRet,
+                    aCenter,
+                    nObjectRotation,
+                    nSpFlags & SP_FFLIPH,
+                    nSpFlags & SP_FFLIPV);
 			}
 		}
 	}

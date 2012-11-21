@@ -56,6 +56,10 @@ class XMLEnhancedCustomShapeContext : public SvXMLImportContext
 	std::vector< rtl::OUString > maEquations;
 	std::vector< rtl::OUString > maEquationNames;
 
+    /// bitfield
+    bool                    mbCompatibilityMirroredX : 1;
+    bool                    mbCompatibilityMirroredY : 1;
+
 public:
 
 	XMLEnhancedCustomShapeContext( SvXMLImport& rImport, ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > &, sal_uInt16 nPrefix,

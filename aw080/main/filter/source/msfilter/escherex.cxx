@@ -3679,7 +3679,7 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 										const rtl::OUString	sMirroredY			( RTL_CONSTASCII_USTRINGPARAM( "MirroredY" ) );
 										const rtl::OUString	sSwitched			( RTL_CONSTASCII_USTRINGPARAM( "Switched" ) );
 										const rtl::OUString	sPolar				( RTL_CONSTASCII_USTRINGPARAM( "Polar" ) );
-	//									const rtl::OUString	sMap				( RTL_CONSTASCII_USTRINGPARAM( "Map" ) );
+//  									const rtl::OUString	sMap				( RTL_CONSTASCII_USTRINGPARAM( "Map" ) );
 										const rtl::OUString	sRadiusRangeMinimum	( RTL_CONSTASCII_USTRINGPARAM( "RadiusRangeMinimum" ) );
 										const rtl::OUString	sRadiusRangeMaximum	( RTL_CONSTASCII_USTRINGPARAM( "RadiusRangeMaximum" ) );
 										const rtl::OUString	sRangeXMinimum		( RTL_CONSTASCII_USTRINGPARAM( "RangeXMinimum" ) );
@@ -3901,10 +3901,9 @@ void EscherPropertyContainer::CreateCustomShapeProperties( const MSO_SPT eShapeT
 
 // ---------------------------------------------------------------------------------------------
 
-MSO_SPT EscherPropertyContainer::GetCustomShapeType( const uno::Reference< drawing::XShape > & rXShape, sal_uInt32& nMirrorFlags, rtl::OUString& rShapeType )
+MSO_SPT EscherPropertyContainer::GetCustomShapeType( const uno::Reference< drawing::XShape > & rXShape, rtl::OUString& rShapeType )
 {
 	MSO_SPT eShapeType = mso_sptNil;
-	nMirrorFlags = 0;
 	uno::Reference< beans::XPropertySet > aXPropSet( rXShape, uno::UNO_QUERY );
     if ( aXPropSet.is() )
     {
@@ -3924,18 +3923,21 @@ MSO_SPT EscherPropertyContainer::GetCustomShapeType( const uno::Reference< drawi
 						if ( rProp.Value >>= rShapeType )
 							eShapeType = EnhancedCustomShapeTypeNames::Get( rShapeType );
 					}
-					else if ( rProp.Name.equalsAscii( "MirroredX" ) )
-					{
-						sal_Bool bMirroredX = sal_Bool();
-						if ( ( rProp.Value >>= bMirroredX ) && bMirroredX )
-							nMirrorFlags  |= SHAPEFLAG_FLIPH;
-					}
-					else if ( rProp.Name.equalsAscii( "MirroredY" ) )
-					{
-						sal_Bool bMirroredY = sal_Bool();
-						if ( ( rProp.Value >>= bMirroredY ) && bMirroredY )
-							nMirrorFlags  |= SHAPEFLAG_FLIPV;
-					}
+                    // TTTT: Need to remove "MirroredX" and "MirroredY" attributes
+                    // for CustomShapeGeometry completely
+                    //
+					//else if ( rProp.Name.equalsAscii( "MirroredX" ) )
+					//{
+					//	sal_Bool bMirroredX = sal_Bool();
+					//	if ( ( rProp.Value >>= bMirroredX ) && bMirroredX )
+					//		nMirrorFlags  |= SHAPEFLAG_FLIPH;
+					//}
+					//else if ( rProp.Name.equalsAscii( "MirroredY" ) )
+					//{
+					//	sal_Bool bMirroredY = sal_Bool();
+					//	if ( ( rProp.Value >>= bMirroredY ) && bMirroredY )
+					//		nMirrorFlags  |= SHAPEFLAG_FLIPV;
+					//}
 				}
 			}
 		}
@@ -3944,12 +3946,6 @@ MSO_SPT EscherPropertyContainer::GetCustomShapeType( const uno::Reference< drawi
 		}
 	}
 	return eShapeType;
-}
-
-MSO_SPT EscherPropertyContainer::GetCustomShapeType( const uno::Reference< drawing::XShape > & rXShape, sal_uInt32& nMirrorFlags )
-{
-	rtl::OUString aShapeType;
-	return GetCustomShapeType( rXShape, nMirrorFlags, aShapeType );
 }
 
 // ---------------------------------------------------------------------------------------------

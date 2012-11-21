@@ -281,14 +281,30 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 		}
 
         // TTTT: adapted to transformation
+        // TTTT: Check mirroring exports for ALL shape types
         basegfx::B2DRange aObjectRange(0.0, 0.0, 1.0, 1.0);
+        sal_uInt32 nMirrorFlags(0);
 
 		if(rObj.ImplGetPropertyValue(::rtl::OUString::createFromAscii("Transformation")))
         {
 		    drawing::HomogenMatrix3 aMatrix;
             rObj.GetUsrAny() >>= aMatrix;
             const basegfx::tools::B2DHomMatrixBufferedDecompose aMat(basegfx::tools::UnoHomogenMatrix3ToB2DHomMatrix(aMatrix));
-            aObjectRange = basegfx::B2DRange(aMat.getTranslate(), aMat.getTranslate() + basegfx::absolute(aMat.getScale()));
+            // do not use absolute value of scale, it is WANTED
+            // that the range is really covering the unrotated, unmirrored shape
+            aObjectRange = basegfx::B2DRange(
+                aMat.getTranslate(), 
+                aMat.getTranslate() + aMat.getScale()); 
+
+            if(aMat.getScale().getX() < 0.0)
+            {
+                nMirrorFlags |= SHAPEFLAG_FLIPH;
+            }
+
+            if(aMat.getScale().getY() < 0.0)
+            {
+                nMirrorFlags |= SHAPEFLAG_FLIPV;
+            }
         }
 
         if ( !mpPicStrm )
@@ -303,13 +319,15 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 		if ( rObj.GetType().EqualsAscii( "drawing.Custom" ) )
 		{
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			sal_uInt32 nMirrorFlags;
+			// TTTT: remove when checked sal_uInt32 nMirrorFlags;
 
 			rtl::OUString sCustomShapeType;
-			MSO_SPT eShapeType = aPropOpt.GetCustomShapeType( rObj.GetShapeRef(), nMirrorFlags, sCustomShapeType );
+			MSO_SPT eShapeType = aPropOpt.GetCustomShapeType( rObj.GetShapeRef(), /*nMirrorFlags, */sCustomShapeType );
 			if ( sCustomShapeType.equalsAscii( "col-502ad400" ) || sCustomShapeType.equalsAscii( "col-60da8460" ) )
 			{
-				ADD_SHAPE( ESCHER_ShpInst_PictureFrame, 0xa00 );
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_PictureFrame,
+                    0xa00 ); // TTTT: no mirroring, metafile export version
 				if ( aPropOpt.CreateGraphicProperties( rObj.mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "MetaFile" ) ), sal_False ) )
 				{
 					aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
@@ -330,7 +348,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			{
 				ADD_SHAPE(
                     sal::static_int_cast< sal_uInt16 >(eShapeType),
-                    nMirrorFlags | 0xa00 );
+                    nMirrorFlags | 0xa00 ); // Flags: mirror | Connector | HasSpt
 				aPropOpt.CreateCustomShapeProperties( eShapeType, rObj.GetShapeRef() );
 				aPropOpt.CreateFillProperties( rObj.mXPropSet, sal_True );
 				if ( rObj.ImplGetText() )
@@ -349,7 +367,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			if( nRadius )
 			{
 				nRadius = ImplMapB2DVector(basegfx::B2DVector(nRadius, 0.0)).getLength();
-				ADD_SHAPE( ESCHER_ShpInst_RoundRectangle, 0xa00 );	// Flags: Connector | HasSpt
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_RoundRectangle, 
+                    nMirrorFlags | 0xa00 );	// Flags: mirror | Connector | HasSpt
 				const sal_Int32 nLenght(basegfx::fround((std::min(rObj.getObjectRange().getWidth(), rObj.getObjectRange().getHeight())) * 0.5));
 				if ( nRadius >= nLenght )
 					nRadius = 0x2a30;							// 0x2a30 ist PPTs maximum radius
@@ -359,7 +379,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			}
 			else
 			{
-				ADD_SHAPE( ESCHER_ShpInst_Rectangle, 0xa00 );			// Flags: Connector | HasSpt
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_Rectangle, 
+                    nMirrorFlags | 0xa00 );			// Flags: mirror | Connector | HasSpt
 			}
 			aPropOpt.CreateFillProperties( rObj.mXPropSet, sal_True );
 			if( rObj.ImplGetText() )
@@ -380,7 +402,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
             if(CircleType_Circle == pCircObj->GetSdrCircleObjType())
             {
 				mpEscherEx->OpenContainer( ESCHER_SpContainer );
-				ADD_SHAPE( ESCHER_ShpInst_Ellipse, 0xa00 );			// Flags: Connector | HasSpt
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_Ellipse, 
+                    nMirrorFlags | 0xa00 );			// Flags: mirror | Connector | HasSpt
 				aPropOpt.CreateFillProperties( rObj.mXPropSet, sal_True );;
             }
 			else
@@ -392,14 +416,17 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 
                 Polygon aPolygon(aOutline.getB2DPolygon(0));
                 
-				if( rObj.GetAngle() )
+				if( rObj.GetAngle() || nMirrorFlags)
 				{
                     // already applied to the polygon, nothing to do there
 					rObj.SetAngle( 0 );
+                    nMirrorFlags = 0;
 				}
 
                 mpEscherEx->OpenContainer( ESCHER_SpContainer );
-				ADD_SHAPE( ESCHER_ShpInst_NotPrimitive, 0xa00 );		// Flags: Connector | HasSpt
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_NotPrimitive, 
+                    nMirrorFlags | 0xa00 );		// Flags: mirror | Connector | HasSpt
 				::com::sun::star::awt::Rectangle aNewRect;
 
                 if(aOutline.isClosed())
@@ -439,7 +466,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 				
 			rObj.setObjectRange(aRange);
             mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( nSpType, nSpFlags );
+			ADD_SHAPE( 
+                nSpType, 
+                nMirrorFlags | nSpFlags ); // Flags: mirror | Connector | HasSpt
 		}
 		else if ( rObj.GetType().EqualsAscii( "drawing.Measure" ))
 		{
@@ -455,7 +484,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 				if ( maRect.Left() > maRect.Right() )
 					nFlags |= 0x40;												// Flags: HorzMirror
 
-				ADD_SHAPE( ESCHER_ShpInst_Line, nFlags );
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_Line, 
+                    nMirrorFlags | nFlags ); // Flags: mirror | nFlags
 				aPropOpt.AddOpt( ESCHER_Prop_shapePath, ESCHER_ShapeComplex );
 				aPropOpt.CreateLineProperties( rObj.mXPropSet, sal_False );
 				mpEscherEx->EndCount( ESCHER_OPT, 3 );
@@ -533,13 +564,17 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			//i27942: Poly/Lines/Bezier do not support text.
 
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			sal_uInt32 nFlags = 0xa00;			// Flags: Connector | HasSpt
-            if( aNewRect.Height < 0 )
-				nFlags |= 0x80;	  			// Flags: VertMirror
-			if( aNewRect.Width < 0 )
-				nFlags |= 0x40;				// Flags: HorzMirror
 
-			ADD_SHAPE( ESCHER_ShpInst_Line, nFlags );
+            // TTTT: Mirroring alraedy done above
+			//sal_uInt32 nFlags = 0xa00;			// Flags: Connector | HasSpt
+            //if( aNewRect.Height < 0 )
+			//	nFlags |= 0x80;	  			// Flags: VertMirror
+			//if( aNewRect.Width < 0 )
+			//	nFlags |= 0x40;				// Flags: HorzMirror
+
+			ADD_SHAPE( 
+                ESCHER_ShpInst_Line, 
+                nMirrorFlags ); // Flags: mirror
 			aPropOpt.AddOpt( ESCHER_Prop_shapePath, ESCHER_ShapeComplex );
 			aPropOpt.CreateLineProperties( rObj.mXPropSet, sal_False );
 			rObj.SetAngle( 0 );
@@ -552,7 +587,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 				bAdditionalText = sal_True;
 			}
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( ESCHER_ShpInst_NotPrimitive, 0xa00 );		// Flags: Connector | HasSpt
+			ADD_SHAPE( 
+                ESCHER_ShpInst_NotPrimitive, 
+                nMirrorFlags | 0xa00 );		// Flags: mirror | Connector | HasSpt
 			::com::sun::star::awt::Rectangle aNewRect;
 			aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_False, aNewRect, NULL );
             MapRect(rObj);
@@ -564,7 +601,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			//i27942: Poly/Lines/Bezier do not support text.
 
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( ESCHER_ShpInst_NotPrimitive, 0xa00 );		// Flags: Connector | HasSpt
+			ADD_SHAPE( 
+                ESCHER_ShpInst_NotPrimitive, 
+                nMirrorFlags | 0xa00 );		// Flags: mirror | Connector | HasSpt
 			::com::sun::star::awt::Rectangle aNewRect;
 			aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYLINE, sal_False, aNewRect, NULL );
             MapRect(rObj);
@@ -576,7 +615,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			//i27942: Poly/Lines/Bezier do not support text.
 
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( ESCHER_ShpInst_NotPrimitive, 0xa00 );		// Flags: Connector | HasSpt
+			ADD_SHAPE( 
+                ESCHER_ShpInst_NotPrimitive, 
+                nMirrorFlags | 0xa00 );		// Flags: mirror | Connector | HasSpt
 			::com::sun::star::awt::Rectangle aNewRect;
 			aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYLINE, sal_True, aNewRect, NULL );
             MapRect(rObj);
@@ -591,7 +632,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 				bAdditionalText = sal_True;
 			}
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( ESCHER_ShpInst_NotPrimitive, 0xa00 );		// Flags: Connector | HasSpt
+			ADD_SHAPE( 
+                ESCHER_ShpInst_NotPrimitive, 
+                nMirrorFlags | 0xa00 );		// Flags: mirror | Connector | HasSpt
 			::com::sun::star::awt::Rectangle aNewRect;
 			aPropOpt.CreatePolygonProperties( rObj.mXPropSet, ESCHER_CREATEPOLYGON_POLYPOLYGON, sal_True, aNewRect, NULL );
             MapRect(rObj);
@@ -605,7 +648,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			// ein GraphicObject kann auch ein ClickMe Element sein
 			if( rObj.IsEmptyPresObj() && ( ePageType == NORMAL ) )
 			{
-				ADD_SHAPE( ESCHER_ShpInst_Rectangle, 0x220 );				// Flags: HaveAnchor | HaveMaster
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_Rectangle, 
+                    nMirrorFlags | 0x220 );				// Flags: mirror | HaveAnchor | HaveMaster
 				sal_uInt32 nTxtBxId = mpEscherEx->QueryTextID( rObj.GetShapeRef(),
 														rObj.GetShapeId() );
 				aPropOpt.AddOpt( ESCHER_Prop_lTxid, nTxtBxId );
@@ -620,7 +665,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 					/* SJ #i34951#: because M. documents are not allowing GraphicObjects containing text, we
 					   have to create a simpe Rectangle with fill bitmap instead (while not allowing BitmapMode_Repeat).
 					*/
-					ADD_SHAPE( ESCHER_ShpInst_Rectangle, 0xa00 );			// Flags: Connector | HasSpt
+					ADD_SHAPE( 
+                        ESCHER_ShpInst_Rectangle, 
+                        nMirrorFlags | 0xa00 );			// Flags: mirror | Connector | HasSpt
 					if ( aPropOpt.CreateGraphicProperties( rObj.mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "GraphicURL" ) ), sal_True,  sal_True, sal_False ) )
 					{
 						aPropOpt.AddOpt( ESCHER_Prop_WrapText, ESCHER_WrapNone );
@@ -636,7 +683,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 				}
 				else
 				{
-					ADD_SHAPE( ESCHER_ShpInst_PictureFrame, 0xa00 );
+					ADD_SHAPE( 
+                        ESCHER_ShpInst_PictureFrame, 
+                        nMirrorFlags | 0xa00 ); // Flags: mirror | Connector | HasSpt
 					if ( aPropOpt.CreateGraphicProperties( rObj.mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "GraphicURL" ) ), sal_False, sal_True ) )
 						aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
 				}
@@ -649,7 +698,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 		else if ( rObj.GetType().EqualsAscii( "drawing.Page" ))
 		{
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( ESCHER_ShpInst_Rectangle, 0xa00 );
+			ADD_SHAPE( 
+                ESCHER_ShpInst_Rectangle, 
+                nMirrorFlags | 0xa00 ); // Flags: mirror | Connector | HasSpt // pages should never be mirrored, but who knows...
 			aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x40004 );
 			aPropOpt.AddOpt( ESCHER_Prop_fFillOK, 0x100001 );
 			aPropOpt.AddOpt( ESCHER_Prop_fNoFillHitTest, 0x110011 );
@@ -665,7 +716,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
 			if( rObj.IsEmptyPresObj() && ( ePageType == NORMAL ) )
 			{
-				ADD_SHAPE( ESCHER_ShpInst_Rectangle, 0x220 );				// Flags: HaveAnchor | HaveMaster
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_Rectangle, 
+                    nMirrorFlags | 0x220 );				// Flags: mirror | HaveAnchor | HaveMaster
 				sal_uInt32 nTxtBxId = mpEscherEx->QueryTextID( rObj.GetShapeRef(),
 														rObj.GetShapeId() );
 				aPropOpt.AddOpt( ESCHER_Prop_lTxid, nTxtBxId );
@@ -677,8 +730,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			{
 				//2do: could be made an option in HostAppData whether OLE object should be written or not
 				sal_Bool bAppOLE = sal_True;
-				ADD_SHAPE( ESCHER_ShpInst_PictureFrame,
-					0xa00 | (bAppOLE ? SHAPEFLAG_OLESHAPE : 0) );
+				ADD_SHAPE( 
+                    ESCHER_ShpInst_PictureFrame,
+					nMirrorFlags | 0xa00 | (bAppOLE ? SHAPEFLAG_OLESHAPE : 0) ); // Flags: mirror | Connector | HasSpt | OLE
 				if ( aPropOpt.CreateOLEGraphicProperties( rObj.GetShapeRef() ) )
 				{
 					if ( bAppOLE )
@@ -705,7 +759,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 				break;
 
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( ESCHER_ShpInst_PictureFrame, 0xa00 );
+			ADD_SHAPE( 
+                nMirrorFlags | ESCHER_ShpInst_PictureFrame, // TTTT: Probably nor mirror needed, check
+                0xa00 ); // Flags: Connector | HasSpt
 
                 if ( aPropOpt.CreateGraphicProperties( rObj.mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "Bitmap" ) ), sal_False ) )
 				aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
@@ -714,7 +770,9 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 		{
 			rObj.SetAngle( 0 );
 			mpEscherEx->OpenContainer( ESCHER_SpContainer );
-			ADD_SHAPE( ESCHER_ShpInst_PictureFrame, 0xa00 );
+			ADD_SHAPE( 
+                ESCHER_ShpInst_PictureFrame, 
+                nMirrorFlags | 0xa00 ); // Flags: mirror | Connector | HasSpt
 			if ( aPropOpt.CreateGraphicProperties( rObj.mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "MetaFile" ) ), sal_False ) )
 				aPropOpt.AddOpt( ESCHER_Prop_LockAgainstGrouping, 0x800080 );
 		}

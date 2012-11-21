@@ -309,8 +309,8 @@ SdrObject* EnhancedCustomShape3d::Create3DObject(const SdrObject& rShape2d, cons
 
     if(GetBool(rGeometryItem, sExtrusion, false))
 	{
-		const bool bIsMirroredX(rCustomShape.IsMirroredX());
-		const bool bIsMirroredY(rCustomShape.IsMirroredY());
+		const bool bIsMirroredX(rShape2d.isMirroredX()); // TTTT: rCustomShape.IsMirroredX()); Check if rShape2d is correct here
+		const bool bIsMirroredY(rShape2d.isMirroredY()); // TTTT: rCustomShape.IsMirroredY()); And if needed at all...
         basegfx::B2DRange aSnapRange(basegfx::B2DRange::getUnitB2DRange());
 		SfxItemSet aSet(rCustomShape.GetMergedItemSet());
         std::vector< E3dCompoundObject* > aPlaceholderObjectList;
@@ -671,7 +671,8 @@ SdrObject* EnhancedCustomShape3d::Create3DObject(const SdrObject& rShape2d, cons
 
             GetRotateAngle(rGeometryItem, fXRotate, fYRotate);
 			
-            const double fZRotate(rCustomShape.GetObjectRotation() * F_PI180);
+            // TTTT: const double fZRotate(rCustomShape.GetObjectRotation() * F_PI180);
+            const double fZRotate(rCustomShape.getSdrObjectRotate());
 
             if(0.0 != fZRotate)
             {
@@ -881,7 +882,8 @@ basegfx::B2DRange EnhancedCustomShape3d::CalculateNewSnapRect(
 	
     GetRotateAngle(rGeometryItem, fXRotate, fYRotate);
 
-    double fZRotate(-rCustomShape.GetObjectRotation() * F_PI180);
+    // TTTT: double fZRotate(-rCustomShape.GetObjectRotation() * F_PI180);
+    double fZRotate(-rCustomShape.getSdrObjectRotate());
 
 	// rotating bound volume
 	basegfx::B3DHomMatrix aMatrix;
@@ -893,12 +895,12 @@ basegfx::B2DRange EnhancedCustomShape3d::CalculateNewSnapRect(
 		aMatrix.rotate(0.0, 0.0, fZRotate);
     }
 
-	if(rCustomShape.IsMirroredX())
+	if(rCustomShape.isMirroredX()) // TTTT: rCustomShape.IsMirroredX()) check if rCustomShape is correct
     {
 		aMatrix.scale(-1.0, 1.0, 1.0);
     }
 
-	if(rCustomShape.IsMirroredY())
+	if(rCustomShape.isMirroredY()) // TTTT: rCustomShape.IsMirroredY()) and if needed at all
     {
 		aMatrix.scale(1.0, -1.0, 1.0);
     }

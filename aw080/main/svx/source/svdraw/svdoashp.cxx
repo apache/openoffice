@@ -442,53 +442,55 @@ bool SdrObjCustomShape::UseNoFillStyle() const
 	return bRet;
 }
 
-bool SdrObjCustomShape::IsMirroredX() const
-{
-	bool bMirroredX = false;
-	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
-	const rtl::OUString	sMirroredX( RTL_CONSTASCII_USTRINGPARAM ( "MirroredX" ) );
-	com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredX );
-	if ( pAny )
-		*pAny >>= bMirroredX;
-	return bMirroredX;
-}
-bool SdrObjCustomShape::IsMirroredY() const
-{
-	bool bMirroredY = false;
-	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
-	const rtl::OUString	sMirroredY( RTL_CONSTASCII_USTRINGPARAM ( "MirroredY" ) );
-	com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredY );
-	if ( pAny )
-		*pAny >>= bMirroredY;
-	return bMirroredY;
-}
-void SdrObjCustomShape::SetMirroredX( const bool bMirrorX )
-{
-	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
-	const rtl::OUString	sMirroredX( RTL_CONSTASCII_USTRINGPARAM ( "MirroredX" ) );
-	//com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredX );
-	PropertyValue aPropVal;
-	aPropVal.Name = sMirroredX;
-	aPropVal.Value <<= bMirrorX;
-	aGeometryItem.SetPropertyValue( aPropVal );
-	SetMergedItem( aGeometryItem );
-}
-void SdrObjCustomShape::SetMirroredY( const bool bMirrorY )
-{
-	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
-	const rtl::OUString	sMirroredY( RTL_CONSTASCII_USTRINGPARAM ( "MirroredY" ) );
-	//com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredY );
-	PropertyValue aPropVal;
-	aPropVal.Name = sMirroredY;
-	aPropVal.Value <<= bMirrorY;
-	aGeometryItem.SetPropertyValue( aPropVal );
-	SetMergedItem( aGeometryItem );
-}
+// TTTT: MirroredX/Y removed
+//bool SdrObjCustomShape::IsMirroredX() const
+//{
+//	bool bMirroredX = false;
+//	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+//	const rtl::OUString	sMirroredX( RTL_CONSTASCII_USTRINGPARAM ( "MirroredX" ) );
+//	com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredX );
+//	if ( pAny )
+//		*pAny >>= bMirroredX;
+//	return bMirroredX;
+//}
+//bool SdrObjCustomShape::IsMirroredY() const
+//{
+//	bool bMirroredY = false;
+//	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+//	const rtl::OUString	sMirroredY( RTL_CONSTASCII_USTRINGPARAM ( "MirroredY" ) );
+//	com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredY );
+//	if ( pAny )
+//		*pAny >>= bMirroredY;
+//	return bMirroredY;
+//}
+//void SdrObjCustomShape::SetMirroredX( const bool bMirrorX )
+//{
+//	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+//	const rtl::OUString	sMirroredX( RTL_CONSTASCII_USTRINGPARAM ( "MirroredX" ) );
+//	//com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredX );
+//	PropertyValue aPropVal;
+//	aPropVal.Name = sMirroredX;
+//	aPropVal.Value <<= bMirrorX;
+//	aGeometryItem.SetPropertyValue( aPropVal );
+//	SetMergedItem( aGeometryItem );
+//}
+//void SdrObjCustomShape::SetMirroredY( const bool bMirrorY )
+//{
+//	SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+//	const rtl::OUString	sMirroredY( RTL_CONSTASCII_USTRINGPARAM ( "MirroredY" ) );
+//	//com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredY );
+//	PropertyValue aPropVal;
+//	aPropVal.Name = sMirroredY;
+//	aPropVal.Value <<= bMirrorY;
+//	aGeometryItem.SetPropertyValue( aPropVal );
+//	SetMergedItem( aGeometryItem );
+//}
 
-double SdrObjCustomShape::GetObjectRotation() const
-{
-	return fObjectRotation;
-}
+// TTTT: Probably obsolete
+//double SdrObjCustomShape::GetObjectRotation() const
+//{
+//	return fObjectRotation;
+//}
 
 double SdrObjCustomShape::GetExtraTextRotation() const
 {
@@ -625,7 +627,7 @@ sdr::properties::BaseProperties* SdrObjCustomShape::CreateObjectSpecificProperti
 
 SdrObjCustomShape::SdrObjCustomShape(SdrModel& rSdrModel) 
 :	SdrTextObj(rSdrModel, basegfx::B2DHomMatrix(), OBJ_TEXT, true),
-	fObjectRotation( 0.0 ),
+	// TTTT: fObjectRotation( 0.0 ),
 	mpLastShadowGeometry(0)
 {
 }
@@ -649,7 +651,7 @@ void SdrObjCustomShape::copyDataFromSdrObject(const SdrObject& rSource)
 
 			// copy local data
 			aName = pSource->aName;
-			fObjectRotation = pSource->fObjectRotation;
+			// TTTT: fObjectRotation = pSource->fObjectRotation;
 			InvalidateRenderGeometry();
 		}
 		else
@@ -1650,7 +1652,7 @@ bool SdrObjCustomShape::IsDefaultGeometry( const DefaultType eDefaultType ) cons
 
 void SdrObjCustomShape::TakeObjInfo(SdrObjTransformInfoRec& rInfo) const
 {
-	rInfo.mbResizeFreeAllowed = 0.0 == fObjectRotation;
+	rInfo.mbResizeFreeAllowed = basegfx::fTools::equalZero(getSdrObjectRotate()); // TTTT: 0.0 == fObjectRotation;
 	rInfo.mbResizePropAllowed = true;
 	rInfo.mbRotateFreeAllowed = true;
 	rInfo.mbRotate90Allowed = true;
@@ -2000,9 +2002,11 @@ void SdrObjCustomShape::DragCreateObject( SdrDragStat& rStat )
 	sal_uInt32 nDefaultObjectSizeWidth = 3000;		// default width from SDOptions ?
 	sal_uInt32 nDefaultObjectSizeHeight= 3000;
 
-	if ( ImpVerticalSwitch( *this ) )
+	if ( ImpVerticalSwitch( *this ) ) // TTTT: What is this good for?
 	{
-		SetMirroredX( aRange.getMinX() > aRange.getMaxX() );
+        // TTTT: Not possible, maybe (if needed) need to use rStat.GetNow() - rStat.GetStart()
+        // to detect mirroring
+		// SetMirroredX( aRange.getMinX() > aRange.getMaxX() );
 
 		aRange = basegfx::B2DRange( rStat.GetNow(), basegfx::B2DTuple( nDefaultObjectSizeWidth, nDefaultObjectSizeHeight ) );
 		// subtracting the horizontal difference of the latest handle from shape position
@@ -2722,35 +2726,57 @@ SdrObjGeoData* SdrObjCustomShape::NewGeoData() const
 
 void SdrObjCustomShape::SaveGeoData(SdrObjGeoData& rGeo) const
 {
-	SdrTextObj::SaveGeoData( rGeo );
-	SdrAShapeObjGeoData& rAGeo=(SdrAShapeObjGeoData&)rGeo;
-	rAGeo.fObjectRotation = fObjectRotation;
-	rAGeo.bMirroredX = IsMirroredX();
-	rAGeo.bMirroredY = IsMirroredY();
+    // call parent
+    SdrTextObj::SaveGeoData( rGeo );
 
-	const rtl::OUString	sAdjustmentValues( RTL_CONSTASCII_USTRINGPARAM ( "AdjustmentValues" ) );
-	Any* pAny( ( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) ).GetPropertyValueByName( sAdjustmentValues ) );
-	if ( pAny )
-		*pAny >>= rAGeo.aAdjustmentSeq;
+    SdrAShapeObjGeoData* pSdrAShapeObjGeoData = dynamic_cast< SdrAShapeObjGeoData* >(&rGeo);
+
+    if(pSdrAShapeObjGeoData)
+    {
+    // TTTT: Should be obsolete
+    //rAGeo.fObjectRotation = fObjectRotation;
+    
+    // TTTT: MirrorX/Y removed
+	//rAGeo.bMirroredX = IsMirroredX();
+	//rAGeo.bMirroredY = IsMirroredY();
+
+        const rtl::OUString	sAdjustmentValues(RTL_CONSTASCII_USTRINGPARAM("AdjustmentValues"));
+        Any* pAny(((SdrCustomShapeGeometryItem&)GetMergedItem(SDRATTR_CUSTOMSHAPE_GEOMETRY)).GetPropertyValueByName(sAdjustmentValues));
+
+        if(pAny)
+        {
+            *pAny >>= pSdrAShapeObjGeoData->aAdjustmentSeq;
+        }
+    }
 }
 
 void SdrObjCustomShape::RestGeoData(const SdrObjGeoData& rGeo)
 {
-	SdrTextObj::RestGeoData( rGeo );
-	SdrAShapeObjGeoData& rAGeo=(SdrAShapeObjGeoData&)rGeo;
-	fObjectRotation = rAGeo.fObjectRotation;
-	SetMirroredX( rAGeo.bMirroredX );
-	SetMirroredY( rAGeo.bMirroredY );
+    // call parent
+    SdrTextObj::RestGeoData( rGeo );
 
-	SdrCustomShapeGeometryItem rGeometryItem = (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY );
-	const rtl::OUString	sAdjustmentValues( RTL_CONSTASCII_USTRINGPARAM ( "AdjustmentValues" ) );
-	PropertyValue aPropVal;
-	aPropVal.Name = sAdjustmentValues;
-	aPropVal.Value <<= rAGeo.aAdjustmentSeq;
-	rGeometryItem.SetPropertyValue( aPropVal );
-	SetMergedItem( rGeometryItem );
+    const SdrAShapeObjGeoData* pSdrAShapeObjGeoData = dynamic_cast< const SdrAShapeObjGeoData* >(&rGeo);
 
-	InvalidateRenderGeometry();
+    if(pSdrAShapeObjGeoData)
+    {
+    // TTTT: Should be obsolete
+    //fObjectRotation = rAGeo.fObjectRotation;
+    
+    // TTTT: MirrorX/Y removed
+	//SetMirroredX( rAGeo.bMirroredX );
+	//SetMirroredY( rAGeo.bMirroredY );
+
+        SdrCustomShapeGeometryItem rGeometryItem = (SdrCustomShapeGeometryItem&)GetMergedItem(SDRATTR_CUSTOMSHAPE_GEOMETRY);
+        const rtl::OUString	sAdjustmentValues(RTL_CONSTASCII_USTRINGPARAM("AdjustmentValues"));
+        PropertyValue aPropVal;
+    
+        aPropVal.Name = sAdjustmentValues;
+        aPropVal.Value <<= pSdrAShapeObjGeoData->aAdjustmentSeq;
+        rGeometryItem.SetPropertyValue(aPropVal);
+        SetMergedItem(rGeometryItem);
+
+        InvalidateRenderGeometry();
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

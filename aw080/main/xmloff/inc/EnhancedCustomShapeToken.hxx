@@ -92,9 +92,12 @@ namespace xmloff { namespace EnhancedCustomShapeToken {
 		EAS_CustomShapeEngine,
 		EAS_CustomShapeData,
 		EAS_Type,
+        
+        //  TTTT: MirrorX/Y removed, but still used at import and for EnhancedCustomShapeHandle
 		EAS_MirroredX,
 		EAS_MirroredY,
-		EAS_ViewBox,
+		
+        EAS_ViewBox,
 		EAS_TextRotateAngle,
 		EAS_ExtrusionAllowed,
 		EAS_ConcentricGradientFillAllowed,

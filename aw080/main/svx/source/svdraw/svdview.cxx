@@ -1430,14 +1430,16 @@ Pointer SdrView::GetPreferedPointer(const basegfx::B2DPoint& rMousePos, const Ou
 
 	const bool bMarkHit(SDRHIT_MARKEDOBJECT == eHit);
 	const SdrHdl* pHdl = aVEvt.mpHdl;
+    const bool bHandleFound(0 != pHdl); // remember pointer from handle, handle may be destroyed before used below
 
 	// Nun die Pointer fuer Dragging checken
 	if(pHdl || bMarkHit) 
 	{
-		const SdrHdlKind eHdl(pHdl  ? pHdl->GetKind() : HDL_MOVE);
+		const SdrHdlKind eHdl(pHdl ? pHdl->GetKind() : HDL_MOVE);
 		const bool bCorner(pHdl && pHdl->IsCornerHdl());
 		const bool bVertex(pHdl && pHdl->IsVertexHdl());
 		const bool bMov(HDL_MOVE == eHdl);
+        const Pointer aHdlPointer(pHdl  ? pHdl->GetPointer() : Pointer(POINTER_ARROW));
 		
 		if(bMov && (SDRDRAG_MOVE == GetDragMode() || SDRDRAG_RESIZE == GetDragMode() || IsMarkedHitMovesAlways())) 
 		{
@@ -1624,9 +1626,9 @@ Pointer SdrView::GetPreferedPointer(const basegfx::B2DPoint& rMousePos, const Ou
 			}
 		}
 
-		if(pHdl) 
+		if(bHandleFound) 
 		{
-			return pHdl->GetPointer();
+			return aHdlPointer;
 		}
 
 		if(bMov) 

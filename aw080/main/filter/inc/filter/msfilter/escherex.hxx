@@ -1251,8 +1251,7 @@ class MSFILTER_DLLPUBLIC EscherPropertyContainer
         // helper functions which are also used by the escher import
         static PolyPolygon GetPolyPolygon( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape );
 		static PolyPolygon GetPolyPolygon( const ::com::sun::star::uno::Any& rSource );
-        static MSO_SPT GetCustomShapeType( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape, sal_uInt32& nMirrorFlags );
-		static MSO_SPT GetCustomShapeType( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape, sal_uInt32& nMirrorFlags, rtl::OUString& rShapeType );
+		static MSO_SPT GetCustomShapeType( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rXShape, rtl::OUString& rShapeType );
 
 	// helper functions which are also used in ooxml export
 	static sal_Bool GetLineArrow( const sal_Bool bLineStart,

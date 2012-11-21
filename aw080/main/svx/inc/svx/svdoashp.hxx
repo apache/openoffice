@@ -53,9 +53,12 @@ class SdrAShapeObjGeoData : public SdrObjGeoData
 {
 	public:
 
-	bool	bMirroredX;
-	bool	bMirroredY;
-	double		fObjectRotation;
+    // TTTT: MirrorX/Y removed, is part of object transformation now
+//	bool	bMirroredX;
+//	bool	bMirroredY;
+
+    // TTTT: Should be obsolete
+	// double		fObjectRotation; // TTTT: Is this needed? Check, may remove some extra handling
 
 	com::sun::star::uno::Sequence< com::sun::star::drawing::EnhancedCustomShapeAdjustmentValue >
 				aAdjustmentSeq;
@@ -83,7 +86,8 @@ class SVX_DLLPUBLIC SdrObjCustomShape : public SdrTextObj
 {
 private:
 	// fObjectRotation is containing the object rotation in degrees.
-	double fObjectRotation;
+    // TTTT: SHould be obsolete
+	// double fObjectRotation;
 
 protected:
 	virtual sdr::contact::ViewContact* CreateObjectSpecificViewContact();
@@ -140,12 +144,13 @@ public:
 
 	bool UseNoFillStyle() const;
 
-	bool IsMirroredX() const;
-	bool IsMirroredY() const;
-	void SetMirroredX( const bool bMirroredX );
-	void SetMirroredY( const bool bMirroredY );
+    // TTTT: MirroredX/Y removed
+	//bool IsMirroredX() const;
+	//bool IsMirroredY() const;
+	//void SetMirroredX( const bool bMirroredX );
+	//void SetMirroredY( const bool bMirroredY );
 
-	double GetObjectRotation() const;
+	//double GetObjectRotation() const;
 	double GetExtraTextRotation() const;
 
 	SdrObjCustomShape(SdrModel& rSdrModel);
