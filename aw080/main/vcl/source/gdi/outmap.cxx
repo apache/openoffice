@@ -2508,9 +2508,11 @@ basegfx::B2DHomMatrix OutputDevice::GetTransformLogicToLogic(const MapMode& rMap
 
 	if(rMapModeSource != rMapModeDest)
 	{
-		aRetval = GetViewTransformation(rMapModeSource);
+        // GetViewTransformation converts from unit to pixel, thus it's [inv(rMapModeDest) * rMapModeSource]
+        // read right to left
+		aRetval = GetViewTransformation(rMapModeDest);
 		aRetval.invert();
-		aRetval = GetViewTransformation(rMapModeDest) * aRetval;
+		aRetval = aRetval * GetViewTransformation(rMapModeSource);
 	}
 
 	return aRetval;

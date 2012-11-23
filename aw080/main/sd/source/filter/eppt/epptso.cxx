@@ -1138,39 +1138,55 @@ bool PPTWriter::ImplGetShapeByIndex( sal_uInt32 nIndex, bool bGroup )
             break;
         
         // get object transformation
-        basegfx::tools::B2DHomMatrixBufferedDecompose aObjTrans(ImplGetObjectTransformation());
+        maObjTrans = ImplGetObjectTransformation();
 
         // map to PPt metrics
-        aObjTrans = basegfx::tools::B2DHomMatrixBufferedDecompose(
-            basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
-                maMap100thMmToMs* aObjTrans.getScale(),
-                aObjTrans.getShearX(),
-                aObjTrans.getRotate(),
-                maMap100thMmToMs * aObjTrans.getTranslate()));
+        maObjTrans.setScale(maMap100thMmToMs* maObjTrans.getScale());
+        maObjTrans.setTranslate(maMap100thMmToMs * maObjTrans.getTranslate());
 
-        // Use translation and scale to create range.
-        // Do not use absolute value of scale, it is WANTED
-        // that the range is really covering the unrotated, unmirrored shape
+        // Use translation and scale to create range. Use signed scale
+        // to get the unrotated SnapRect
         maObjectRange = basegfx::B2DRange(
-            aObjTrans.getTranslate(), 
-            aObjTrans.getTranslate() + aObjTrans.getScale());
+            maObjTrans.getTranslate(), 
+            maObjTrans.getTranslate() + maObjTrans.getScale());
 
-        // use scale to detect mirrorings
-        if(aObjTrans.getScale().getX() < 0.0)
+        // check mirroring
+        bool bMirroredX(maObjTrans.getScale().getX() < 0.0);
+        bool bMirroredY(maObjTrans.getScale().getY() < 0.0);
+
+        // get rotation
+        mfObjectRotation = maObjTrans.getRotate();
+
+        // if mirror is X and Y, replace with 180 degree rotation. Prefer
+        // rotation export over mirror export.
+        if(bMirroredX && bMirroredY)
+        {
+            bMirroredX = bMirroredY = false;
+            mfObjectRotation += F_PI;
+        }
+
+        // reset mirror flags
+        mnMirrorFlags = 0;
+
+        // set mirror flags
+        if(bMirroredX)
         {
             mnMirrorFlags |= SHAPEFLAG_FLIPH;
         }
 
-        if(aObjTrans.getScale().getY() < 0.0)
+        if(bMirroredY)
         {
             mnMirrorFlags |= SHAPEFLAG_FLIPV;
         }
 
+        if(bMirroredX != bMirroredY)
+        {
+            // if one axis is mirrored, invert the rotation
+            mfObjectRotation = -mfObjectRotation;
+        }
+
 //        mbMirroredX = aObjTrans.getScale().getX() < 0.0;
 //        mbMirroredY = aObjTrans.getScale().getY() < 0.0;
-
-        // get rotation
-        mfObjectRotation = aObjTrans.getRotate();
 
         // mbMirroredX and mbMirroredY are new aspects to handle. The text
         // in offices before transformation ignored mirrorX and used a 180
@@ -1188,7 +1204,7 @@ bool PPTWriter::ImplGetShapeByIndex( sal_uInt32 nIndex, bool bGroup )
 //        }
 
         // assert shear (not supported yet)
-        if(!basegfx::fTools::equalZero(aObjTrans.getShearX()))
+        if(!basegfx::fTools::equalZero(maObjTrans.getShearX()))
         {
             OSL_ENSURE(false, "PPt export: shear is not supported (!)");
         }
@@ -1754,39 +1770,39 @@ void PPTWriter::ImplHandleRotation( EscherPropertyContainer& rPropOpt )
 {
     if(!basegfx::fTools::equalZero(mfObjectRotation))
     {
-        sal_Int32 nAngle(basegfx::fround(basegfx::snapToZeroRange(-mfObjectRotation / F_PI18000, 36000.0)));
-        
-        nAngle = ( 36000 - ( nAngle % 36000 ) );
+        // MS shape format rotates around the object center, so adapt adapt ObjectRange
+        // to be centered at the center of the original shape to do this
+        const basegfx::B2DPoint aCurrentCenter(maObjTrans.getB2DHomMatrix() * basegfx::B2DPoint(0.5, 0.5));
+        const basegfx::B2DPoint aObjectRangeCenter(maObjectRange.getCenter());
 
-        double  fCos = cos( (double)nAngle * F_PI18000 );
-        double  fSin = sin( (double)nAngle * F_PI18000 );
+        if(!aCurrentCenter.equal(aObjectRangeCenter))
+        {
+            const basegfx::B2DHomMatrix aAdaptToCenterRotation(
+                basegfx::tools::createTranslateB2DHomMatrix(
+                    aCurrentCenter - aObjectRangeCenter));
 
-        const double fWidthHalf(maObjectRange.getWidth() * 0.5);
-        const double fHeightHalf(maObjectRange.getHeight() * 0.5);
+            maObjectRange.transform(aAdaptToCenterRotation);
+        }
 
-        double  fXDiff = fCos * fWidthHalf + fSin * (-fHeightHalf);
-        double  fYDiff = - ( fSin * fWidthHalf - fCos * ( -fHeightHalf ) );
+        // do not use negative mfObjectRotation here, PPT uses the correct orientation, too
+        sal_Int32 nAngle(basegfx::fround(basegfx::snapToZeroRange(mfObjectRotation / F_PI18000, 36000.0)));
 
-        maObjectRange.transform(
-            basegfx::tools::createTranslateB2DHomMatrix(
-                -(fWidthHalf - fXDiff),
-                -(fHeightHalf + fYDiff)));
-
+        // adapt angle to MS format
         nAngle *= 655;
         nAngle += 0x8000;
-        nAngle &=~0xffff;                                  // nAngle auf volle Gradzahl runden
-        rPropOpt.AddOpt( ESCHER_Prop_Rotation, nAngle );
+        nAngle &=~0xffff; // round to full degrees
+        rPropOpt.AddOpt(ESCHER_Prop_Rotation, nAngle);
 
-        if ( ( nAngle >= ( 45 << 16 ) && nAngle < ( 135 << 16 ) ) ||
-                ( nAngle >= ( 225 << 16 ) && nAngle < ( 315 << 16 ) ) )
+        if((nAngle >= (45 << 16) && nAngle < (135 << 16)) || (nAngle >= (225 << 16) && nAngle < (315 << 16)))
         {
-            // In diesen beiden Bereichen steht in PPT gemeinerweise die
-            // BoundingBox bereits senkrecht. Daher muss diese VOR
-            // DER ROTATION flachgelegt werden.
-            const basegfx::B2DPoint aPoint(maObjectRange.getMinX() + fWidthHalf - fHeightHalf, maObjectRange.getMinY() + fHeightHalf - fWidthHalf);
-            const basegfx::B2DVector aScale(maObjectRange.getHeight(), maObjectRange.getWidth());
+            // in this region of rotation the ObjectRange is already rotated,
+            // so do this here, too
+            const basegfx::B2DHomMatrix aMirrorDiagonal(
+                basegfx::tools::createRotateAroundPoint(
+                    maObjectRange.getCenter(),
+                    F_PI2));
 
-            maObjectRange = basegfx::B2DRange(aPoint, aPoint + aScale);
+            maObjectRange.transform(aMirrorDiagonal);
         }
     }
 }
@@ -4503,7 +4519,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 				}
 				else
 				{
-	                ImplCreateShape( eShapeType, /*nMirrorFlags | */0xa00, aSolverContainer );
+	                ImplCreateShape( eShapeType, /*nMirrorFlags | */0xa00, aSolverContainer ); // Flags: Connector | HasSpt
 					aPropOpt.CreateCustomShapeProperties( eShapeType, mXShape );
 					aPropOpt.CreateFillProperties( mXPropSet, true, mXShape);
 					if ( ImplGetText() )

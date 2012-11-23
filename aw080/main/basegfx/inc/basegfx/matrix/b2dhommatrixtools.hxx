@@ -220,14 +220,15 @@ namespace basegfx
 		class B2DHomMatrixBufferedOnDemandDecompose
 		{
 		private:
-			B2DHomMatrix           maB2DHomMatrix;
-			B2DVector              maScale;
-			B2DPoint				maTranslate;
-			double                 mfRotate;
-			double                 mfShearX;
+			B2DHomMatrix            maB2DHomMatrix;
+			B2DVector               maScale;
+			B2DPoint                maTranslate;
+			double                  mfRotate;
+			double                  mfShearX;
 
 			// bitfield
-			bool					mbDecomposed : 1;
+			bool                    mbDecomposed : 1;
+			bool                    mbCombined : 1;
 
 			void impCheckDecompose()
 			{
@@ -238,14 +239,24 @@ namespace basegfx
 				}
 			}
 
+			void impCheckCombined()
+			{
+				if(!mbCombined)
+				{
+					maB2DHomMatrix = createScaleShearXRotateTranslateB2DHomMatrix(maScale, mfShearX, mfRotate, maTranslate);
+					mbCombined = true;
+				}
+			}
+
 		public:
 			B2DHomMatrixBufferedOnDemandDecompose(const B2DHomMatrix& rB2DHomMatrix)
 			:   maB2DHomMatrix(rB2DHomMatrix),
-				maScale(0.0, 0.0),
+				maScale(1.0, 1.0),
 				maTranslate(0.0, 0.0),
 				mfRotate(0.0),
 				mfShearX(0.0),
-				mbDecomposed(false)
+				mbDecomposed(false),
+                mbCombined(true)
 			{
 			}
 
@@ -255,16 +266,108 @@ namespace basegfx
 				maTranslate(0.0, 0.0),
 				mfRotate(0.0),
 				mfShearX(0.0),
-				mbDecomposed(true)
+				mbDecomposed(true),
+                mbCombined(true)
 			{
 			}
 
 			// data read access
-			const B2DHomMatrix& getB2DHomMatrix() const { return maB2DHomMatrix; }
-			const B2DVector& getScale() const { const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); return maScale; }
-			const B2DPoint& getTranslate() const { const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); return maTranslate; }
-			double getRotate() const { const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); return mfRotate; }
-			double getShearX() const { const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); return mfShearX; }
+			const B2DHomMatrix& getB2DHomMatrix() const 
+            { 
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckCombined(); 
+                return maB2DHomMatrix; 
+            }
+			
+            const B2DVector& getScale() const 
+            { 
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+                return maScale; 
+            }
+			
+            const B2DPoint& getTranslate() const 
+            { 
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+                return maTranslate; 
+            }
+			
+            double getRotate() const 
+            { 
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+                return mfRotate; 
+            }
+			
+            double getShearX() const 
+            { 
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+                return mfShearX; 
+            }
+
+            // data write access
+            void reset()
+            {
+                maB2DHomMatrix.identity();
+                maScale = B2DVector(1.0, 1.0);
+                maTranslate = B2DPoint(0.0, 0.0);
+                mfRotate = 0.0;
+                mfShearX = 0.0;
+                mbDecomposed = true;
+                mbCombined = true;
+            }
+
+            void setB2DHomMatrix(const B2DHomMatrix& rNew) 
+            { 
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckCombined(); 
+
+                if(rNew != maB2DHomMatrix)
+                {
+                    maB2DHomMatrix = rNew;
+                    mbDecomposed = false;
+                }
+            }
+            
+            void setScale(const B2DVector& rNew) 
+            { 
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+
+                if(rNew != maScale)
+                {
+                    maScale = rNew;
+                    mbCombined = false;
+                }
+            }
+            
+            void setTranslate(const B2DPoint& rNew) 
+            {
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+
+                if(rNew != maTranslate)
+                {
+                    maTranslate = rNew;
+                    mbCombined = false;
+                }
+            }
+            
+            void setRotate(double fNew) 
+            {
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+
+                if(fNew != mfRotate)
+                {
+                    mfRotate = fNew;
+                    mbCombined = false;
+                }
+            }
+            
+            void setShearX(double fNew) 
+            {
+                const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
+
+                if(fNew != mfShearX)
+                {
+                    mfShearX = fNew;
+                    mbCombined = false;
+                }
+            }
 
 			// convenience bool tests
 			bool isRotated() const { return !fTools::equalZero(getRotate()); }
@@ -281,9 +384,6 @@ namespace basegfx
 				return (fTools::less(maScale.getX(), 0.0) || fTools::less(maScale.getY(), 0.0)); }
 			bool isTranslated() const { const_cast< B2DHomMatrixBufferedOnDemandDecompose* >(this)->impCheckDecompose(); 
 				return !(fTools::equalZero(maTranslate.getX()) && fTools::equalZero(maTranslate.getY())); }
-
-			// data write access
-			void setB2DHomMatrix(const B2DHomMatrix& rNew) { if(rNew != maB2DHomMatrix) { maB2DHomMatrix = rNew; mbDecomposed = false; }}
 		};
     } // end of namespace tools
 

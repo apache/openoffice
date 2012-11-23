@@ -37,20 +37,24 @@ class ImplEscherExSdr;
 
 class ImplEESdrObject
 {
+private:
 	::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >			mXShape;
 //	XTextRef			mXText;	// TextRef des globalen Text
 	::com::sun::star::uno::Any				mAny;
 	
     // the object range, split in pos and scale to keep the evtl. negative size (mirroring)
     basegfx::B2DRange   maObjectRange;
+    basegfx::tools::B2DHomMatrixBufferedOnDemandDecompose   maObjTrans;
 
     String				mType;
-	sal_uInt32				mnShapeId;
-	sal_uInt32				mnTextSize;
-	sal_Int32				mnAngle;
-	sal_Bool 				mbValid : 1;
-	sal_Bool				mbPresObj : 1;
-	sal_Bool				mbEmptyPresObj : 1;
+	sal_uInt32			mnShapeId;
+	sal_uInt32			mnTextSize;
+	sal_Int32			mnAngle;
+
+    /// bitfield
+	bool                mbValid : 1;
+	bool                mbPresObj : 1;
+	bool                mbEmptyPresObj : 1;
 
 	void Init( ImplEESdrWriter& rEx );
 public:
@@ -60,7 +64,7 @@ public:
 	ImplEESdrObject( ImplEESdrWriter& rEx, const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& rShape );
 	~ImplEESdrObject();
 
-	sal_Bool ImplGetPropertyValue( const sal_Unicode* pString );
+	bool ImplGetPropertyValue( const sal_Unicode* pString );
 
 	sal_Int32 ImplGetInt32PropertyValue( const sal_Unicode* pStr, sal_uInt32 nDef = 0 )
 	{ return ImplGetPropertyValue( pStr ) ? *(sal_Int32*)mAny.getValue() : nDef; }
@@ -78,16 +82,18 @@ public:
 
 	sal_uInt32				GetTextSize() const 	{ return mnTextSize; }
 
-	sal_Bool 				IsValid() const 		{ return mbValid; }
-	sal_Bool				IsPresObj() const 		{ return mbPresObj; }
-	sal_Bool				IsEmptyPresObj() const 	{ return mbEmptyPresObj; }
+	bool 				IsValid() const 		{ return mbValid; }
+	bool				IsPresObj() const 		{ return mbPresObj; }
+	bool				IsEmptyPresObj() const 	{ return mbEmptyPresObj; }
 	sal_uInt32				GetShapeId() const 		{ return mnShapeId; }
 	void 				SetShapeId( sal_uInt32 nVal ) { mnShapeId = nVal; }
 
 	const SdrObject*	GetSdrObject() const;
 
 	sal_uInt32 				ImplGetText();
-	sal_Bool 				ImplHasText() const;
+	bool 				ImplHasText() const;
+
+    basegfx::tools::B2DHomMatrixBufferedOnDemandDecompose& getTransform() { return maObjTrans; }
 };
 
 
@@ -141,26 +147,27 @@ protected:
 
 		sal_uInt16				mnEffectCount;
 
-		sal_Bool				mbIsTitlePossible;
-		sal_Bool				mbStatusIndicator;
-		sal_Bool				mbStatus;
+        /// bitfield
+		bool				mbIsTitlePossible : 1;
+		bool				mbStatusIndicator : 1;
+		bool				mbStatus : 1;
 
 
 								ImplEESdrWriter( EscherEx& rEx );
 
-			sal_Bool				ImplInitPageValues();
+			bool				ImplInitPageValues();
 
 			void				ImplWritePage(
 									EscherSolverContainer& rSolver,
 									ImplEESdrPageType ePageType,
-									sal_Bool bBackGround = sal_False );
+									bool bBackGround = false );
 
 			sal_uInt32				ImplWriteShape( ImplEESdrObject& rObj,
 									EscherSolverContainer& rSolver,
 									ImplEESdrPageType ePageType );	// returns ShapeID
 
-			void				ImplFlipBoundingBox( ImplEESdrObject& rObj, EscherPropertyContainer& rPropOpt );
-			sal_Bool				ImplGetText( ImplEESdrObject& rObj );
+			void				ImplHandleRotation( ImplEESdrObject& rObj, EscherPropertyContainer& rPropOpt );
+			bool				ImplGetText( ImplEESdrObject& rObj );
 			void				ImplWriteAdditionalText(
 												ImplEESdrObject& rObj,
 												const Point& rTextRefPoint );
@@ -170,7 +177,7 @@ protected:
 
 
 public:
-//			basegfx::B2DPoint ImplMapB2DPoint( const basegfx::B2DPoint& rPoint );
+			basegfx::B2DPoint ImplMapB2DPoint( const basegfx::B2DPoint& rPoint );
 			basegfx::B2DVector ImplMapB2DVector( const basegfx::B2DVector& rScale );
 			basegfx::B2DRange ImplMapB2DRange(const basegfx::B2DRange& rRange);
 

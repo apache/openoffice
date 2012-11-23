@@ -150,6 +150,7 @@ PPTWriter::PPTWriter( const std::vector< com::sun::star::beans::PropertyValue >&
     mXCursorPropSet(),
     mXTextField(),
     maObjectRange(),
+    maObjTrans(),
     mnMirrorFlags(0),
     mfObjectRotation(0.0),
     mType(),
