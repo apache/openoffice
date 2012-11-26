@@ -36,7 +36,9 @@ import testlib.gui.SCTool;
 
 public class ValidityDateSupport1024Columns {
 
-
+	@Rule
+	public Logger log = Logger.getLogger(this);
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);

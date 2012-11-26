@@ -39,6 +39,8 @@ import testlib.gui.AppTool;
  * Test the setting about chart dialog in spreadsheet
  */
 public class ChartDialogSetting {
+	@Rule
+	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {

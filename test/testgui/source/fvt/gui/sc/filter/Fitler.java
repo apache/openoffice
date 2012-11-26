@@ -42,6 +42,8 @@ import testlib.gui.SCTool;
  * Test cases about Data->Filter in spreadsheet
  */
 public class Fitler {
+	@Rule
+	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {

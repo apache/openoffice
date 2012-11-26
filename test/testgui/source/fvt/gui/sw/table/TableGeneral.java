@@ -29,12 +29,17 @@ import static testlib.gui.UIMap.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
+import org.junit.Rule;
 import org.junit.Test;
+import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 
 import testlib.gui.AppTool;
 
 public class TableGeneral {
+	
+	@Rule
+	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {

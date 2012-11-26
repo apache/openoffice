@@ -29,7 +29,9 @@ import static testlib.gui.UIMap.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.openoffice.test.common.Logger;
 import org.openoffice.test.vcl.widgets.VclDialog;
 
 import testlib.gui.AppTool;
@@ -37,6 +39,9 @@ import testlib.gui.AppTool;
 
 public class SymbolsFromCatalog {
 
+	@Rule
+	public Logger log = Logger.getLogger(this);
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
