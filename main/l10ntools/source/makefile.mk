@@ -17,186 +17,80 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+# *************************************************************
+
+TARGET=OpenOffice.org
+MAKEFILERC=true
+
+# 
+# build targets
+# 
+
+build_all : build_instsetoo_native
+
+all .PHONY : build_all
+
+check_modules .PHONY :
+	@+echo Checking module list
+	@+perl $(SOLARENV)$/bin$/build.pl --checkmodules
+
+# Only build when all modules available
+build_instsetoo_native .SETDIR=instsetoo_native/prj : check_modules
+	@+perl $(SOLARENV)$/bin$/build.pl --all $(PROFULLSWITCH)
+
+depend .SETDIR=instsetoo_native/prj : check_modules
+	@+perl $(SOLARENV)$/bin$/build.pl --all $(PROFULLSWITCH) depend=t
 
 
+# 
+# bootstrap target
+# 
 
-PRJ=..
+bootstrap .PHONY :
+	@bootstrap
 
-INCPRE=$(MISC)
 
-PRJNAME=l10ntools
-TARGET=transex
-TARGETTYPE=CUI
-LIBTARGET=no
-# --- Settings -----------------------------------------------------
-ENABLE_EXCEPTIONS=TRUE
-
-.INCLUDE :  settings.mk
-CDEFS+= -DYY_NEVER_INTERACTIVE=1
-#CDEFS+= -pg
-
-.IF "$(SYSTEM_EXPAT)" == "YES"
-CFLAGS+=-DSYSTEM_EXPAT
+distclean .PHONY: clean
+	-rm config.cache
+	-rm config.log
+.IF "$(BUILD_DMAKE)"!="NO"
+	-$(GNUMAKE) -C dmake distclean
 .ENDIF
 
-	
-# --- Files --------------------------------------------------------
 
-OBJFILES=   			\
-	$(OBJ)$/export.obj	\
-	$(OBJ)$/export2.obj	\
-	$(OBJ)$/merge.obj   \
-	$(OBJ)$/srciter.obj		\
-	$(OBJ)$/utf8conv.obj	\
-	$(OBJ)$/xmlparse.obj    \
-    $(OBJ)$/helpmerge.obj   \
-    $(OBJ)$/helpex.obj      \
-    $(OBJ)$/file.obj        \
-	$(OBJ)$/directory.obj   
-
-
-LIB1TARGET= $(LB)$/$(TARGET).lib
-LIB1ARCHIV= $(LB)$/libtransex.a
-#LIB1FILES=  $(LB)$/transex3.lib
-LIB1OBJFILES=        $(OBJ)$/export.obj      \
-        $(OBJ)$/export2.obj     \
-        $(OBJ)$/merge.obj   \
-        $(OBJ)$/srciter.obj             \
-        $(OBJ)$/file.obj \
-		$(OBJ)$/directory.obj     \
-        $(OBJ)$/utf8conv.obj    
-   
-
-APP1VERSIONMAP=exports.map
-
-# extractor and merger for *.src and *.hrc
-APP1TARGET=  transex3
-#APP1OBJS=   $(OBJ)$/src_yy.obj
-APP1OBJS=   $(OBJ)$/src_yy_wrapper.obj
-
-APP1STDLIBS+= \
-            $(TOOLSLIB) \
-            $(VOSLIB) \
-            $(SALLIB)
-
-.IF "$(OS)"=="MACOSX"
-# static libs at end for OS X
+clean .PHONY:
+	-rm -rf */$(INPATH)
+	-rm -rf solver/*/$(INPATH)
+.IF "$(ADDITIONAL_REPOSITORIES)"!=""
+	-rm -rf $(foreach,f,$(ADDITIONAL_REPOSITORIES) $f/*/$(INPATH))
 .ENDIF
-
-APP1LIBS+=	$(LB)$/$(TARGET).lib
-APP1DEPN=   $(OBJ)$/src_yy_wrapper.obj $(LB)$/$(TARGET).lib
-
-APP2TARGET= helpex
-APP2OBJS= $(OBJ)$/helpmerge.obj  $(OBJ)$/xmlparse.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj $(OBJ)$/merge.obj $(OBJ)$/helpex.obj 
-APP2RPATH= NONE
-
-.IF "$(OS)"!="MACOSX"
-.ENDIF
-
-APP2STDLIBS+=$(SALLIB) $(EXPATASCII3RDLIB) $(TOOLSLIB) $(VOSLIB)
-
-.IF "$(OS)"=="MACOSX"
-# static libs at end for OS X
-.ENDIF
-
-# extractor and merger for *.lng and *.lng
-APP3TARGET= ulfex
-APP3OBJS=   $(OBJ)$/lngmerge.obj $(OBJ)$/merge.obj $(OBJ)$/export2.obj $(OBJ)$/lngex.obj $(OBJ)$/utf8conv.obj
-APP3RPATH=  NONE
-
-.IF "$(OS)"!="MACOSX"
-#APP3STDLIBS+= $(BTSTRPLIB)
-.ENDIF
-APP3STDLIBS+= \
-            $(TOOLSLIB) \
-            $(VOSLIB) \
-            $(SALLIB)
-.IF "$(OS)"=="MACOSX"
-# static libs at end for OS X
-.ENDIF
-
-# encoding converter for *.gsi
-APP4TARGET= gsiconv
-APP4OBJS=   $(OBJ)$/utf8conv.obj $(OBJ)$/gsiconv.obj
-APP4STDLIBS+= \
-            $(TOOLSLIB) \
-            $(VOSLIB) \
-            $(SALLIB)
-
-# tag checker for *.gsi
-APP5TARGET= gsicheck
-APP5OBJS=   $(OBJ)$/gsicheck.obj $(OBJ)$/tagtest.obj
-APP5STDLIBS+= \
-            $(TOOLSLIB) \
-            $(VOSLIB) \
-            $(SALLIB)
-
-# extractor and merger for *.cfg
-APP6TARGET= cfgex
-APP6OBJS=   $(OBJ)$/cfgmerge.obj $(OBJ)$/cfg_yy_wrapper.obj  $(OBJ)$/merge.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj
-
-.IF "$(OS)"!="MACOSX"
-#APP6STDLIBS+= $(BTSTRPLIB)
-.ENDIF
-
-APP6STDLIBS+= \
-            $(TOOLSLIB) \
-            $(VOSLIB) \
-            $(SALLIB)
-
-.IF "$(OS)"=="MACOSX"
-# static libs at end for OS X
-.ENDIF
-
-# extractor and merger for *.xrm
-APP7TARGET= xrmex
-APP7OBJS=   $(OBJ)$/xrmmerge.obj $(OBJ)$/xrm_yy_wrapper.obj $(OBJ)$/merge.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj
-APP7RPATH=  NONE
-
-.IF "$(OS)"!="MACOSX"
-.ENDIF
-
-APP7STDLIBS+= \
-            $(TOOLSLIB) \
-            $(VOSLIB) \
-            $(SALLIB)
-
-.IF "$(OS)"=="MACOSX"
-# static libs at end for OS X
+.IF "$(BUILD_DMAKE)"!="NO"
+	-echo cleaning up dmake...
+	-$(GNUMAKE) -C dmake clean
 .ENDIF
 
 # 
-#APP8TARGET= treeconfig
-#APP8OBJS=   $(OBJ)$/treeconfig.obj $(OBJ)$/inireader.obj $(OBJ)$/export2.obj
-#APP8STDLIBS=$(TOOLSLIB) $(SALLIB) $(VOSLIB) $(ICUINLIB) $(STLPORT) 
+# configure target
+# 
 
-# localizer for l10n framework
-APP9TARGET= localize_sl
-EXCEPTIONSFILES=                            \
-                    $(OBJ)$/localize.obj
-APP9OBJS=   $(OBJ)$/localize.obj $(OBJ)$/utf8conv.obj $(OBJ)$/srciter.obj $(OBJ)$/export2.obj $(OBJ)$/file.obj $(OBJ)$/directory.obj $(OBJ)$/treeconfig.obj $(OBJ)$/inireader.obj
+configure .PHONY SETDIR=. :
+	@configure
 
-APP9STDLIBS+= \
-            $(TOOLSLIB) \
-            $(VOSLIB) \
-            $(ICUINLIB) \
-			$(ICUUCLIB) \
-			$(STLPORTLIB) \
-			$(SALLIB)
 
-DEPOBJFILES=$(APP1OBJS) $(APP2OBJS) $(APP3OBJS) $(APP4OBJS) $(APP5OBJS) $(APP6OBJS) $(APP7OBJS) $(APP8OBJS) $(APP9OBJS)
+# 
+# install target
+# 
 
-# --- Targets ------------------------------------------------------
+install .PHONY :
+	@test "$(DESTDIR)$(prefix)" != "" || (echo Usage: make install [DESTDIR=DIR] prefix=DIR; exit 2)
+	cp -p instsetoo_native/$(INPATH)/bin/* $(SOLARVER)/$(INPATH)/bin
+	cd instsetoo_native/util \
+	    && OUT=$(INPATH)\
+	    LOCAL_OUT=$(INPATH)\
+	    LOCAL_COMMON_OUT=$(INPATH)\
+            DEFAULT_TO_ENGLISH_FOR_PACKING=1\
+	    PYTHONPATH=$(SOLARVER)/$(INPATH)/bin:$(SOLARVER)/$(INPATH)/lib:$(PYTHONPATH) \
+	    $(PERL) $(SOLARENV)/bin/make_installer.pl -f openoffice.lst -l $(WITH_LANG:f:t",") -p OpenOffice -buildid 0 -simple $(DESTDIR)$(prefix)
 
-.INCLUDE :  target.mk
-
-$(MISC)$/%_yy.c : %lex.l
-	flex -l -w -8 -o$@ $<
-
-# Helper to suppress warnings in lex generated c code, see #i57362#
-
-$(OBJ)$/src_yy_wrapper.obj: $(MISC)$/src_yy.c
-$(OBJ)$/cfg_yy_wrapper.obj: $(MISC)$/cfg_yy.c
-$(OBJ)$/xrm_yy_wrapper.obj: $(MISC)$/xrm_yy.c
+#*************************************************************************
 
