@@ -91,51 +91,35 @@ void convert_xcu_impl::startCollectData(string& sCollectedText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu_impl::stopCollectData(string& sCollectedText)
 {
-  string sHead, sKey, sLang, sText;
-  int    nL;
+  string useKey;
 
-#if 0
-  // get type of tag
-  msCollector += sCollectedText;
-  nL = msCollector.find("<p");
-  if (nL != string::npos)
-    sHead = msCollector.substr(nL+1, 1);
-  else
-  {
-    nL = msCollector.find("<h");
-    sHead = msCollector.substr(nL+1, 2);
-  }
 
   // locate key and extract it
-  nL    = msCollector.find("id=") +4;
-  sKey  = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
-  nL    = msCollector.find("xml:lang=\"") + 10;
-  sLang = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
-  nL    = msCollector.find(">") +1;
-  sText = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
+  while (mcStack.size())
+  {
+    xcu_stack_entry nowEntry = mcStack.top();
+	mcStack.pop();
+	useKey = useKey + nowEntry.msName;
+  }
 
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
-    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
+    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
     string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
-    writeSourceFile(msCollector);
-    msCollector.clear();
+	writeSourceFile(msCollector + sCollectedText);
     for (int i = 0; i < nL; ++i)
     {
-      sNewLine = "\n<" + sHead + " id=\"" + sKey + "\"" + " xml:lang=\"" +
-                 cExtraLangauges[i]->msLanguage + "\">" +
-                 cExtraLangauges[i]->msText +
-                 "</" + sHead + ">";
-
+      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
+		         cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
     }
   }
   else
-    mcMemory.setEnUsKey(sKey, sText);
-#endif
+    mcMemory.setEnUsKey(useKey, sCollectedText);
+
   mbCollectingData = false;
   msCollector.clear();
 }  
