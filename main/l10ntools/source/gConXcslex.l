@@ -59,14 +59,43 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"<p"[^>]*>      |
-"<h"[0-9][^>]*> {
+"<oor:component-data "[^>]*> {
+  string text(yytext);
+//  convert_xcs::mcpImpl->pushKeyPart(TAG_COMPONENT, text);
+}
+
+
+"</oor:component-data>" {
+  string text(yytext);
+//  convert_xcs::mcpImpl->popKeyPart(TAG_COMPONENT, text);
+}
+
+"<prop oor:name=\""[^\"]*\" {
+  string text(yytext);
+//  convert_xcu::mcpImpl->pushKeyPart(TAG_PROP, text);
+}
+
+"</prop>" {
+  string text(yytext);
+//  convert_xcs::mcpImpl->popKeyPart(TAG_PROP, text);
+}
+
+"<node oor:name=\""[^\"]*\" {
+  string text(yytext);
+//  convert_xcs::mcpImpl->pushKeyPart(TAG_NODE, text);
+}
+
+"</node>" {
+  string text(yytext);
+//  convert_xcs::mcpImpl->popKeyPart(TAG_NODE, text);
+}
+  
+"<value xml:lang=\""[^\"]*\"[^>]*">" {
   string text(yytext);
   convert_xcs::mcpImpl->startCollectData(text);
 }
 
-"</p>"      |
-"</h"[0-9]> {
+"</value>" {
   string text(yytext);
   convert_xcs::mcpImpl->stopCollectData(text);
 }
@@ -75,6 +104,4 @@
   string text(yytext);
   convert_xcs::mcpImpl->collectData(text);
 }
-
-
 %%

@@ -19,35 +19,35 @@
  * 
  *************************************************************/
 using namespace std;
-#include "gConXcu.hxx"
+#include "gConPo.hxx"
 
 
 
 /*****************************************************************************
- *************************   G C O N X C U . C X X   *************************
+ **************************   G C O N P O . C X X   **************************
  *****************************************************************************
- * This is the conversion for .xcu files
+ * This is the conversion for .po files
  *****************************************************************************/
 
 
 
 /*****************************   G L O B A L S   *****************************/
-convert_xcu_impl * convert_xcu::mcpImpl;
+convert_po_impl * convert_po::mcpImpl;
 
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xcu::convert_xcu(const string& srSourceFile, l10nMem& crMemory)
+convert_po::convert_po(const string& srSourceFile, l10nMem& crMemory)
                         : convert_gen(srSourceFile, crMemory) 
-                          {mcpImpl = new convert_xcu_impl(srSourceFile, crMemory);}
-convert_xcu::~convert_xcu() {delete mcpImpl;}
-void convert_xcu::extract() {mcpImpl->extract();}
-void convert_xcu::insert()  {mcpImpl->insert();}
+                          {mcpImpl = new convert_po_impl(srSourceFile, crMemory);}
+convert_po::~convert_po() {delete mcpImpl;}
+void convert_po::extract() {mcpImpl->extract();}
+void convert_po::insert()  {mcpImpl->insert();}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-xcu_stack_entry::xcu_stack_entry(TAG_TYPE sIsNode, string& sName)
+po_stack_entry::po_stack_entry(TAG_TYPE sIsNode, string& sName)
                                 : mbIsNode (sIsNode),
                                   msName   (sName)
 {
@@ -56,14 +56,14 @@ xcu_stack_entry::xcu_stack_entry(TAG_TYPE sIsNode, string& sName)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-xcu_stack_entry::~xcu_stack_entry()
+po_stack_entry::~po_stack_entry()
 {
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xcu_impl::convert_xcu_impl(const string& srSourceFile, l10nMem& crMemory)
+convert_po_impl::convert_po_impl(const string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen (srSourceFile, crMemory)
 {
 }
@@ -71,14 +71,14 @@ convert_xcu_impl::convert_xcu_impl(const string& srSourceFile, l10nMem& crMemory
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xcu_impl::~convert_xcu_impl()
+convert_po_impl::~convert_po_impl()
 {
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::extract()
+void convert_po_impl::extract()
 {
   // generate l10mMem
   mbMergeMode = false;
@@ -90,7 +90,7 @@ void convert_xcu_impl::extract()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::insert()
+void convert_po_impl::insert()
 {
   // generate source files.
   mbMergeMode = true;

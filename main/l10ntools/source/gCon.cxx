@@ -78,6 +78,7 @@ convert_gen& convert_gen::getConverter(const string& srSourceFile, l10nMem& crMe
 
   // did the user give a .xxx with the source file ?
   if (sExtension == "hrc" || sExtension == "src") return *(new convert_src (srSourceFile, crMemory));
+  if (sExtension == "po")                         return *(new convert_po(srSourceFile, crMemory));
   if (sExtension == "tree")                       return *(new convert_tree(srSourceFile, crMemory));
   if (sExtension == "ulf")                        return *(new convert_ulf (srSourceFile, crMemory));
   if (sExtension == "xcu")                        return *(new convert_xcu (srSourceFile, crMemory));

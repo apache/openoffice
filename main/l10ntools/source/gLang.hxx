@@ -108,6 +108,25 @@ class convert_gen
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
+class convert_po_impl;
+class convert_po : public convert_gen
+{
+  public:
+    static convert_po_impl *mcpImpl;
+
+
+    convert_po(const string& srSourceFile, l10nMem& crMemory);
+    ~convert_po();
+    
+    void extract();
+    void insert();
+
+  private:
+};
+
+
+
+/********************   C L A S S   D E F I N I T I O N   ********************/
 class convert_src_impl;
 class convert_src : public convert_gen
 {

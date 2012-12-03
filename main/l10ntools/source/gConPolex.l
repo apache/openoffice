@@ -23,8 +23,8 @@
 /*****************************************************************************
  **********************   L E X   D E F I N I T I O N   **********************
  *****************************************************************************
- * lex grammar for parsing ressource source files (*.xrm files)
- * file is converted to gConXcu_yy.cxx with "flex"
+ * lex grammar for parsing ressource source files (*.po files)
+ * file is converted to gConPo_yy.cxx with "flex"
  *****************************************************************************/
 
 
@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_xcu::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { convert_po::mcpImpl->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -49,7 +49,7 @@
 /* --- The following options are for future use (maybe)                      */
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
-%option 8bit noyywrap never-interactive prefix="genxcu_"
+%option 8bit noyywrap never-interactive prefix="genpo_"
 %p 24000
 %e 1200
 %n 500
@@ -61,47 +61,47 @@
 
 "<oor:component-data "[^>]*> {
   string text(yytext);
-  convert_xcu::mcpImpl->pushKeyPart(TAG_COMPONENT, text);
+  convert_po::mcpImpl->pushKeyPart(TAG_COMPONENT, text);
 }
 
 
 "</oor:component-data>" {
   string text(yytext);
-  convert_xcu::mcpImpl->popKeyPart(TAG_COMPONENT, text);
+  convert_po::mcpImpl->popKeyPart(TAG_COMPONENT, text);
 }
 
 "<prop oor:name=\""[^\"]*\" {
   string text(yytext);
-  convert_xcu::mcpImpl->pushKeyPart(TAG_PROP, text);
+  convert_po::mcpImpl->pushKeyPart(TAG_PROP, text);
 }
 
 "</prop>" {
   string text(yytext);
-  convert_xcu::mcpImpl->popKeyPart(TAG_PROP, text);
+  convert_po::mcpImpl->popKeyPart(TAG_PROP, text);
 }
 
 "<node oor:name=\""[^\"]*\" {
   string text(yytext);
-  convert_xcu::mcpImpl->pushKeyPart(TAG_NODE, text);
+  convert_po::mcpImpl->pushKeyPart(TAG_NODE, text);
 }
 
 "</node>" {
   string text(yytext);
-  convert_xcu::mcpImpl->popKeyPart(TAG_NODE, text);
+  convert_po::mcpImpl->popKeyPart(TAG_NODE, text);
 }
   
 "<value xml:lang=\""[^\"]*\"[^>]*">" {
   string text(yytext);
-  convert_xcu::mcpImpl->startCollectData(text);
+  convert_po::mcpImpl->startCollectData(text);
 }
 
 "</value>" {
   string text(yytext);
-  convert_xcu::mcpImpl->stopCollectData(text);
+  convert_po::mcpImpl->stopCollectData(text);
 }
 
 .|\n {
   string text(yytext);
-  convert_xcu::mcpImpl->collectData(text);
+  convert_po::mcpImpl->collectData(text);
 }
 %%

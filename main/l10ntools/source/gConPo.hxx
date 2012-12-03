@@ -18,28 +18,28 @@
  * under the License.
  * 
  *************************************************************/
-#ifndef GCONXCU_HXX
-#define GCONXCU_HXX
+#ifndef GCONPO_HXX
+#define GCONPO_HXX
 #include "gLang.hxx"
 #include <stack>
 
 
 
 /*****************************************************************************
- *************************   G C O N X C U . H X X   *************************
+ **************************   G C O N P O . H X X   **************************
  *****************************************************************************
- * This is the class header for .xcu conversion
+ * This is the class header for .po conversion
  *****************************************************************************/
 typedef enum {TAG_COMPONENT, TAG_PROP, TAG_NODE } TAG_TYPE;
 
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class xcu_stack_entry
+class po_stack_entry
 {
   public:
-    xcu_stack_entry(TAG_TYPE sIsNode, string& sName);
-    ~xcu_stack_entry();
+    po_stack_entry(TAG_TYPE sIsNode, string& sName);
+    ~po_stack_entry();
 
     TAG_TYPE mbIsNode;
     string   msName;
@@ -49,12 +49,12 @@ class xcu_stack_entry
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class xcu_stack_entry;
-class convert_xcu_impl : public convert_gen
+class po_stack_entry;
+class convert_po_impl : public convert_gen
 {
   public:
-    convert_xcu_impl(const string& srSourceFile, l10nMem& crMemory);
-    ~convert_xcu_impl();
+    convert_po_impl(const string& srSourceFile, l10nMem& crMemory);
+    ~convert_po_impl();
 
     void pushKeyPart(TAG_TYPE eIsNode, string &sTag);
     void popKeyPart (TAG_TYPE eIsNode, string &sTag);
@@ -64,7 +64,7 @@ class convert_xcu_impl : public convert_gen
     void collectData(string& sCollectedText);
 
   private:
-    stack<xcu_stack_entry> mcStack;
+    stack<po_stack_entry> mcStack;
     bool                   mbMergeMode;
     bool                   mbCollectingData;
     string                 msCollector;
@@ -73,6 +73,6 @@ class convert_xcu_impl : public convert_gen
     void insert();
     void runLex();
 
-    friend class convert_xcu;
+    friend class convert_po;
 };
 #endif
