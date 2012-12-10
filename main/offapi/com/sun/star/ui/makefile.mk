@@ -40,6 +40,8 @@ IDLFILES=\
     ActionTriggerSeparatorType.idl              \
     ConfigurableUIElement.idl                   \
     ConfigurationEvent.idl                      \
+	ContextChangeEventMultiplexer.idl			\
+	ContextChangeEventObject.idl				\
     ContextMenuExecuteEvent.idl                 \
     ContextMenuInterceptorAction.idl            \
     DockingArea.idl                             \
@@ -81,6 +83,7 @@ IDLFILES=\
     XUIElementFactoryRegistration.idl           \
     XUIElementSettings.idl                      \
     XUIFunctionListener.idl                     \
+    XVerticalStackLayoutElement.idl             \
     XToolPanel.idl
 
 # ------------------------------------------------------------------

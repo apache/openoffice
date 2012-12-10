@@ -37,6 +37,7 @@
 #include <svl/intitem.hxx>
 #include <svx/svdotext.hxx>
 #include <svx/svdogrp.hxx>
+#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include <editeng/flditem.hxx>
 #include <svl/style.hxx>
 #include <svx/svdpagv.hxx>
@@ -187,6 +188,10 @@ void FuText::DoExecute( SfxRequest& )
 	mpViewShell->GetViewShellBase().GetToolBarManager()->SetToolBarShell(
         ToolBarManager::TBG_FUNCTION,
         RID_DRAW_TEXT_TOOLBOX);
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        mpViewShell->GetViewShellBase().GetController(),
+        ContextChangeEventMultiplexer::Application_Impress,
+        ContextChangeEventMultiplexer::Context_TextEdit);
 
 	mpView->SetCurrentObj(OBJ_TEXT);
 	mpView->SetEditMode(SDREDITMODE_EDIT);

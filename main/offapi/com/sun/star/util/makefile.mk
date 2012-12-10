@@ -48,6 +48,7 @@ IDLFILES=\
 	Duration.idl\
 	ElementChange.idl \
 	Endianness.idl \
+	EventMultiplexer.idl \
 	FileIOException.idl\
 	InvalidStateException.idl\
 	Language.idl\
@@ -82,6 +83,8 @@ IDLFILES=\
 	XCloseable.idl\
 	XCloseBroadcaster.idl\
 	XCloseListener.idl\
+	XEventListener.idl\
+	XEventMultiplexer.idl\
 	XFlushable.idl\
 	XFlushListener.idl\
 	XImportable.idl\
