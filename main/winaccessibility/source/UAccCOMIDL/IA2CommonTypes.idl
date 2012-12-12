@@ -1,0 +1,74 @@
+/*************************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright IBM Corporation 2010.
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************/
+
+/// These constants control the scrolling of an object or substring into a window.
+enum IA2ScrollType {
+
+  /** Scroll the top left of the object or substring to the top left of the 
+   window (or as close as possible).
+  */
+  IA2_SCROLL_TYPE_TOP_LEFT, 		
+
+  /** Scroll the bottom right of the object or substring to the bottom right of
+   the window (or as close as possible). 
+  */
+  IA2_SCROLL_TYPE_BOTTOM_RIGHT,
+
+  /** Scroll the top edge of the object or substring to the top edge of the 
+   window (or as close as possible). 
+  */
+  IA2_SCROLL_TYPE_TOP_EDGE,
+
+  /** Scroll the bottom edge of the object or substring to the bottom edge of 
+   the window (or as close as possible). 
+  */
+  IA2_SCROLL_TYPE_BOTTOM_EDGE, 
+
+  /** Scroll the left edge of the object or substring to the left edge of the 
+   window (or as close as possible). 
+  */
+  IA2_SCROLL_TYPE_LEFT_EDGE, 
+
+  /** Scroll the right edge of the object or substring to the right edge of the 
+   window (or as close as possible). 
+  */
+  IA2_SCROLL_TYPE_RIGHT_EDGE 
+};
+
+/// These constants define which coordinate system a point is located in.
+enum IA2CoordinateType {
+
+  /// The coordinates are relative to the screen.
+  IA2_COORDTYPE_SCREEN_RELATIVE, 
+
+  /** The coordinates are relative to the upper left corner of the bounding box
+   of the immediate parent.
+  */
+  IA2_COORDTYPE_PARENT_RELATIVE  
+
+};

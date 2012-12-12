@@ -1,0 +1,101 @@
+/*************************************************************************
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * Copyright IBM Corporation 2010.
+ * Copyright 2000, 2010 Oracle and/or its affiliates.
+ *
+ * OpenOffice.org - a multi-platform office productivity suite
+ *
+ * This file is part of OpenOffice.org.
+ *
+ * OpenOffice.org is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License version 3
+ * only, as published by the Free Software Foundation.
+ *
+ * OpenOffice.org is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License version 3 for more details
+ * (a copy is included in the LICENSE file that accompanied this code).
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * version 3 along with OpenOffice.org.  If not, see
+ * <http://www.openoffice.org/license.html>
+ * for a copy of the LGPLv3 License.
+ *
+ ************************************************************************/
+
+import "objidl.idl";
+import "oaidl.idl";
+import "oleacc.idl";
+
+/** @brief This interface gives access to a single numerical value.
+
+ The IAccessibleValue interface represents a single numerical value and should 
+  be implemented by any class that supports numerical value like progress bars 
+  and spin boxes.  This interface lets you access the value and its upper and 
+  lower bounds.
+*/
+[object, uuid(35855B5B-C566-4fd0-A7B1-E65465600394)]
+interface IAccessibleValue : IUnknown
+{
+
+  /** @brief Returns the value of this object as a number.
+        
+   The exact return type is implementation dependent.  Typical types are long and 
+    double.
+   @param [out] currentValue
+    Returns the current value represented by this object.
+  */
+  [propget] HRESULT currentValue
+    (
+     [out, retval] VARIANT *currentValue
+    );
+
+  /** @brief Sets the value of this object to the given number.
+        
+   The argument is clipped to the valid interval whose upper and lower 
+    bounds are returned by the methods IAccessibleValue::maximumValue and 
+	IAccessibleValue::minimumValue, i.e. if it is 	lower than the minimum 
+	value the new value will be the minimum and if it is greater than the 
+	maximum then the new value will be the maximum.
+
+   @param [out] value
+    The new value represented by this object.  The set of admissible types for 
+    this argument is implementation dependent.
+  */
+  HRESULT setCurrentValue
+    (
+     [in] VARIANT value
+    );
+
+  /** @brief Returns the maximal value that can be represented by this object.
+        
+   The type of the returned value is implementation dependent.  It does not have 
+    to be the same type as that returned by method IAccessibleValue::currentValue.
+
+   @param [out] maximumValue
+    Returns the maximal value in an implementation dependent type. If this object 
+    has no upper bound then an empty object is returned.
+  */
+  [propget] HRESULT maximumValue
+    (
+     [out, retval] VARIANT *maximumValue
+    );
+
+  /** @brief Returns the minimal value that can be represented by this object.
+        
+   The type of the returned value is implementation dependent.  It does not have 
+    to be the same type as that returned by method IAccessibleValue::currentValue.
+   
+   @param [out] minimumValue
+    Returns the minimal value in an implementation dependent type. If this object 
+    has no upper bound then an empty object is returned.
+  */
+  [propget] HRESULT minimumValue
+    (
+     [out, retval] VARIANT *minimumValue
+    );
+
+};
