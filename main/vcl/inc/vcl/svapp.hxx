@@ -448,6 +448,10 @@ public:
     
     static void                 ShowNativeErrorBox(const String& sTitle  ,
                                                    const String& sMessage);
+//IAccessibility2 Implementation 2009-----
+	static bool					EnableAccessInterface(bool bEnable);
+	static bool					IsEnableAccessInterface();
+//-----IAccessibility2 Implementation 2009
 
     // IME Status Window Control:
 
@@ -514,4 +518,13 @@ inline void Application::EndYield()
     PostUserEvent( Link() );
 }
 
+//IAccessibility2 Implementation 2009-----
+#ifdef WNT
+// VCL_DLLPUBLIC sal_Bool HasAtHook();
+VCL_DLLPUBLIC bool IsWNTInitAccessBridge();
+bool WNTEnableAccessInterface(bool bEnable);
+VCL_DLLPUBLIC bool TestBridgeRegistered();
+VCL_DLLPUBLIC bool IsBridgeRegistered();
+#endif
+//-----IAccessibility2 Implementation 2009
 #endif // _APP_HXX

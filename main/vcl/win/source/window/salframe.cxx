@@ -92,6 +92,30 @@
 using ::std::max;
 #endif
 
+//IAccessibility2 Implementation 2009-----
+#ifdef WNT
+#include <oleacc.h>
+#include <com/sun/star/accessibility/XMSAAService.hpp>
+#ifndef _WIN32_WCE
+#define WM_GETOBJECT                    0x003D
+#endif
+#define     OBJID_WINDOW        ((LONG)0x00000000)
+#define     OBJID_SYSMENU       ((LONG)0xFFFFFFFF)
+#define     OBJID_TITLEBAR      ((LONG)0xFFFFFFFE)
+#define     OBJID_MENU          ((LONG)0xFFFFFFFD)
+#define     OBJID_CLIENT        ((LONG)0xFFFFFFFC)
+#define     OBJID_VSCROLL       ((LONG)0xFFFFFFFB)
+#define     OBJID_HSCROLL       ((LONG)0xFFFFFFFA)
+#define     OBJID_SIZEGRIP      ((LONG)0xFFFFFFF9)
+#define     OBJID_CARET         ((LONG)0xFFFFFFF8)
+#define     OBJID_CURSOR        ((LONG)0xFFFFFFF7)
+#define     OBJID_ALERT         ((LONG)0xFFFFFFF6)
+#define     OBJID_SOUND         ((LONG)0xFFFFFFF5)
+#define     OBJID_QUERYCLASSNAMEIDX ((LONG)0xFFFFFFF4)
+#define     OBJID_NATIVEOM      ((LONG)0xFFFFFFF0)
+#include <win/g_msaasvc.h>
+#endif
+//-----IAccessibility2 Implementation 2009
 #include <com/sun/star/uno/Exception.hdl>
 
 #include <time.h>
@@ -153,7 +177,12 @@ sal_Bool WinSalFrame::mbInReparent = FALSE;
 #define Uni_SupplementaryPlanesStart    0x10000
 
 // =======================================================================
-
+//IAccessibility2 Implementation 2009-----
+#ifdef WNT
+using namespace ::com::sun::star::accessibility;
+XMSAAService* g_acc_manager1 = NULL;
+#endif
+//-----IAccessibility2 Implementation 2009
 static void UpdateFrameGeometry( HWND hWnd, WinSalFrame* pFrame );
 static void SetMaximizedFrameGeometry( HWND hWnd, WinSalFrame* pFrame, RECT* pParentRect = NULL );
 
@@ -6178,6 +6207,54 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
         case WM_IME_NOTIFY:
             ImplHandleIMENotify( hWnd, wParam );
             break;
+
+//IAccessibility2 implementation 2009-----
+#ifdef WNT
+		case WM_GETOBJECT:
+			{
+				if (!Application::IsEnableAccessInterface())
+				{
+					break;
+				}
+				else
+				{
+					// Make sure to launch Accessibiliity only the following criterias are satisfied to avoid RFT interrupts regular acc processing
+					if (g_acc_manager1 == NULL && 
+						Application::GetSettings().GetMiscSettings().GetEnableATToolSupport() &&
+						IsBridgeRegistered() /* && HasAtHook() */ )
+					{
+						sal_Bool bCancelled;
+						InitAccessBridge(sal_False,bCancelled);
+						if( bCancelled )
+							break;
+					}
+					if (g_acc_manager1 != NULL)
+					{
+						// MT: mhOnSetTitleWnd not set to reasonable value anywhere...
+						/*
+						sal_Bool bSkipSetTitleClient = sal_False;
+						SalFrame* pFrame = GetWindowPtr( hWnd );
+						if(pFrame)
+						{
+							bSkipSetTitleClient = (lParam == OBJID_CLIENT && hWnd == ((WinSalFrame*)pFrame)->mhOnSetTitleWnd);
+						}
+						*/
+						if ( (lParam == OBJID_CLIENT ) /* && !bSkipSetTitleClient */ )
+						{
+							long RetResult = g_acc_manager1->getAccObjectPtr((long)hWnd, lParam, wParam);
+							if(RetResult != 0)
+							{
+								rDef = FALSE;					
+								return (HRESULT)RetResult;
+							}
+						}
+					}
+				}
+				break;
+			}
+#endif			
+//-----IAccessibility2 implementation 2009
+
         case WM_APPCOMMAND:
             if( ImplHandleAppCommand( hWnd, lParam ) )
             {                
@@ -6398,3 +6475,25 @@ sal_Bool ImplWriteLastError( DWORD lastError, const char *szApiCall )
 
 // -----------------------------------------------------------------------
 
+//IAccessibility2 implementation 2009-----
+#ifdef WNT
+bool IsWNTInitAccessBridge()
+{
+	return NULL != g_acc_manager1;
+}
+#endif
+#ifdef WNT
+bool WNTEnableAccessInterface(bool bEnable)
+{
+    ImplSVData* pSVData = ImplGetSVData();
+
+	BOOL bPreVal = pSVData->maAppData.m_bEnableAccessInterface; 
+	long nEnable= bEnable;
+	::InterlockedExchange(
+		(LPLONG)&(pSVData->maAppData.m_bEnableAccessInterface),
+		nEnable);
+	
+	return bPreVal;
+}
+#endif
+//-----IAccessibility2 implementation 2009

@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
-//#include "svsys.h"
+#include "svsys.h"
 
 #include "comphelper/processfactory.hxx"
 
@@ -2045,34 +2045,72 @@ void Application::AddToRecentDocumentList(const rtl::OUString& rFileUrl, const r
 
 sal_Bool Application::IsAccessibilityEnabled()
 {
+//IAccessibility2 Implementation 2009-----
+#ifdef WNT
+	return IsWNTInitAccessBridge();
+#else 
     return sal_False;
+#endif 
+//-----IAccessibility2 Implementation 2009
 }
 
 sal_Bool InitAccessBridge( sal_Bool bShowCancel, sal_Bool &rCancelled )
 {
-    sal_Bool bRet = true;
+    sal_Bool bRet = sal_True;
+    rCancelled = sal_False;
 
 // Disable Java bridge on UNIX
 #if defined UNX
     (void) bShowCancel; // unsued
-    (void) rCancelled; // unused
 #else
-    bRet = ImplInitAccessBridge( bShowCancel, rCancelled );
-    
-    if( !bRet && bShowCancel && !rCancelled )
-    {
-        // disable accessibility if the user chooses to continue
-        AllSettings aSettings = Application::GetSettings();
-        MiscSettings aMisc = aSettings.GetMiscSettings();
-        aMisc.SetEnableATToolSupport( sal_False );
-        aSettings.SetMiscSettings( aMisc );
-        Application::SetSettings( aSettings );
-    }
-#endif // !UNX
+
+	// Checking TestBridgeRegistered() && HasAtHook() was introduced with IBM's IA2 CWS.
+	if(TestBridgeRegistered() /* && HasAtHook() */ )
+	{
+	    bRet = ImplInitAccessBridge( bShowCancel, rCancelled );
+	    
+	    if( !bRet && bShowCancel && !rCancelled )
+	    {
+	        // disable accessibility if the user chooses to continue
+	        AllSettings aSettings = Application::GetSettings();
+	        MiscSettings aMisc = aSettings.GetMiscSettings();
+	        aMisc.SetEnableATToolSupport( sal_False );
+	        aSettings.SetMiscSettings( aMisc );
+	        Application::SetSettings( aSettings );
+	    }
+	}
+	else
+	{
+		bRet = sal_False;
+	}
+#endif
 
     return bRet;
 }
 
+//IAccessibility2 Implementation 2009-----
+#ifdef WNT
+sal_Bool HasAtHook()
+{
+	// Added by Steve Yin
+	sal_Int32 bIsRuning=0;
+	// BOOL WINAPI SystemParametersInfo(
+	//	  __in     UINT uiAction,
+	//	  __in     UINT uiParam,
+	//	  __inout  PVOID pvParam,
+	//	  __in     UINT fWinIni
+	//	);
+	// pvParam must be BOOL (defined in MFC as int)
+	// End
+	if(SystemParametersInfo(SPI_GETSCREENREADER,0,&bIsRuning,0))
+	{
+		if( bIsRuning )
+			return sal_True;
+	}
+	return sal_False;
+}
+#endif
+//-----IAccessibility2 Implementation 2009
 // MT: AppProperty, AppEvent was in oldsv.cxx, but is still needed...
 // ------------------------------------------------------------------------
 
@@ -2094,9 +2132,53 @@ void Application::SetPropertyHandler( PropertyHandler* p )
         delete pHandler;
     pHandler = p;
 }
+//IAccessibility2 Implementation 2009-----
+bool Application::EnableAccessInterface(bool bEnable)
+{
+#ifdef WNT
+	return WNTEnableAccessInterface(bEnable);
+#else 
+    bEnable = TRUE; // avoid compiler warning
+    return TRUE;
+#endif 
+}
+bool Application::IsEnableAccessInterface()
+{
+	return ImplGetSVData()->maAppData.m_bEnableAccessInterface;
+}
+//-----IAccessibility2 Implementation 2009
 
 
 
 void Application::AppEvent( const ApplicationEvent& /*rAppEvent*/ )
 {
 }
+//IAccessibility2 Implementation 2009-----
+#ifdef WNT
+bool TestBridgeRegistered()
+{
+	const CLSID CLSID_MAccessible = {0xCF8DF8BA,0x44FE,0x4B10,{0xBD,0x2E,0x8C,0x8C,0xB3,0x22,0x48,0x5F}};
+
+	LPCOLESTR lpMAcc=L"UAccCOM.MAccessible";
+
+	CLSID mid;	
+	bool bReg = false;
+	if(S_OK  == CLSIDFromProgID(lpMAcc,&mid))
+	{
+		if( IsEqualCLSID(mid,CLSID_MAccessible))
+			bReg = true;
+		else
+			bReg = false;
+	}
+
+	ImplGetSVData()->maAppData.m_mbIsBridgeRegistered =bReg;
+	return bReg;
+}
+
+bool IsBridgeRegistered()
+{
+	return ImplGetSVData()->maAppData.m_mbIsBridgeRegistered;;
+}
+
+#endif
+//-----IAccessibility2 Implementation 2009
