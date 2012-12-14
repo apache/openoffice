@@ -21,23 +21,35 @@
  ***********************************************************-->
 <project name="Apache OpenOffice" basedir="." default="pack">
 
+  <property environment="env"/>
+  <property name="getrevision.script" value="${env.SOLARENV}/bin/getrevision.pl"/>
+
   <property name="out.dir" value="."/>
   <property name="aoo.name" value="aoo"/>
   <property name="aoo.ver" value="3.4.1"/>
-  <property name="release.dir.name" value="${aoo.name}-${aoo.ver}"/>
-  <property name="release.file.name" value="${release.dir.name}-incubating-src"/>
-  <property name="release.zip" value="${out.dir}/${release.file.name}.zip"/>
-  <property name="release.tar" value="${out.dir}/${release.file.name}.tar"/>
-  <property name="release.tar.gz" value="${out.dir}/${release.file.name}.tar.gz"/>
-  <property name="release.tar.bz2" value="${out.dir}/${release.file.name}.tar.bz2"/>
-  
+
   <property name="excludes.list" value="configure, moz/zipped/*.zip, **/.svn **/.gitignore, **/.git, warn, set_soenv, solver/**, makefile.mk, config.log, config.parms, config.status, bootstrap, autom4te.cache/**, MacOSXX86Env.*, external/unowinreg/unowinreg.dll" />
   <property name="excludes.executables" value="solenv/bin/macosx-create-bundle, solenv/bin/linkoo, solenv/bin/localize, solenv/bin/createpdbrelocators, solenv/bin/langwrap, solenv/bin/makedepn, solenv/bin/packmodule, solenv/bin/rpm-wrapper, solenv/bin/relocate, solenv/bin/receditor, solenv/bin/subsequenttests, **/*.sh, **/*.bat, **/*.exe, configure.cmd, oowintool, config.sub, config.guess, **/*.pl"/>
   <property name="includes.mk" value="inc/unxmac*.mk inc/unxlng*.mk inc/wntmsci*.mk inc/unxsol*.mk" />
   <property name="excludes.outdirs" value="**/unxmacx*/**, **/unxlng*/**, **/unxsol*/**, **/wntmsci*/**" />
   
   
-  <target name="clean">
+  <target name="getrevision">
+    <exec executable="perl" outputproperty="scm.revision">
+      <arg value="${getrevision.script}" />
+    </exec>
+  </target>
+ 
+  <target name="declarenames" depends="getrevision">
+    <property name="release.dir.name" value="${aoo.name}-${aoo.ver}"/>
+    <property name="release.file.name" value="${release.dir.name}-src-r${scm.revision}"/>
+    <property name="release.zip" value="${out.dir}/${release.file.name}.zip"/>
+    <property name="release.tar" value="${out.dir}/${release.file.name}.tar"/>
+    <property name="release.tar.gz" value="${out.dir}/${release.file.name}.tar.gz"/>
+    <property name="release.tar.bz2" value="${out.dir}/${release.file.name}.tar.bz2"/>
+  </target>
+
+  <target name="clean" depends="declarenames">
     <echo level="verbose" message="### clean output files:"/>
     <delete file="${release.zip}" verbose="true"/>
     <delete file="${release.tar}" verbose="true"/>
@@ -45,12 +57,13 @@
     <delete file="${release.tar.bz2}" verbose="true"/>
   </target>
 
-  <target name="source.zip">
+  <target name="source.zip" depends="declarenames">
     <echo level="verbose" message="### creating ${release.zip} ..."/>
     <echo level="verbose" message="### basedir=${basedir}"/>
     <echo level="verbose" message="### source.root=${source.root}"/>
     <echo level="verbose" message="### out.dir =${out.dir}"/>
     <zip destfile="${release.zip}">
+
       <zipfileset file="main/NOTICE" fullpath="${release.dir.name}/NOTICE"/>
       <zipfileset file="main/LICENSE" fullpath="${release.dir.name}/LICENSE"/>
       <zipfileset file="main/README" fullpath="${release.dir.name}/README"/>
@@ -64,7 +77,7 @@
     <echo level="verbose" message="   ... DONE"/>
   </target>
 
-  <target name="source.tar">
+  <target name="source.tar" depends="declarenames">
     <echo level="verbose" message="### creating intermediate ${release.tar} ..."/>
     <tar destfile="${release.tar}" longfile="gnu">
       <tarfileset file="main/NOTICE" fullpath="${release.dir.name}/NOTICE"/>
@@ -92,13 +105,6 @@
     <echo level="verbose" message="   ... DONE"/>
   </target>
 
-  <target name="dummy">
-    <zip destfile="${release.zip}">
-      <zipfileset file="main/NOTICE" fullpath="${release.dir.name}/NOTICE"/>
-      <zipfileset file="main/LICENSE" fullpath="${release.dir.name}/LICENSE"/>
-    </zip>
-  </target>
- 
   <target name="pack" depends="clean,source.zip,source.tar.gz,source.tar.bz2">
     <echo level="info" message="### Create source release files for Apache OpenOffice ${aoo.ver} ..."/>
   </target>
