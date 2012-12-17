@@ -39,7 +39,45 @@ using namespace std;
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcs_impl::runLex()
 {
-  genxcs_lex();
+  // currently no .xcs files generate en-US translation, so stop trying
+  // genxcs_lex();
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xcs_impl::setKey(string& sCollectedText)
+{
+  int    nL;
+  string sHead;
+
+  if (mbMergeMode)
+    writeSourceFile(msCollector+sCollectedText);
+  msCollector.clear();
+
+  // is it to be translated
+  if (sCollectedText.find("oor:localized=") == string::npos)
+	return;
+
+  // locate key (is any)
+  nL = sCollectedText.find("oor:name=\"");
+  if (nL == string::npos)
+	return;
+  sHead = sCollectedText.substr(nL+10);
+  nL    = sHead.find("\"");
+  msKey = sHead.substr(0,nL);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xcs_impl::unsetKey(string& sCollectedText)
+{
+  if (mbMergeMode)
+    writeSourceFile(msCollector+sCollectedText);
+  msCollector.clear();
+
+  msKey.clear();
 }
 
 
@@ -47,11 +85,12 @@ void convert_xcs_impl::runLex()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcs_impl::startCollectData(string& sCollectedText)
 {
-  if (mbMergeMode && msCollector.size())
+  if (mbMergeMode)
     writeSourceFile(msCollector);
+  msCollector.clear();
 
-  mbCollectingData = true;
-  msCollector      = sCollectedText;
+  if (!msKey.size())
+	return;
 }
 
 
@@ -112,9 +151,10 @@ void convert_xcs_impl::stopCollectData(string& sCollectedText)
 void convert_xcs_impl::collectData(string& sCollectedText)
 {
   msCollector += sCollectedText;
-  if (mbMergeMode && sCollectedText == "\n")
+  if (sCollectedText == "\n")
   {
-    writeSourceFile(msCollector);
+	if (mbMergeMode)
+      writeSourceFile(msCollector);
     msCollector.clear();
   }
 }

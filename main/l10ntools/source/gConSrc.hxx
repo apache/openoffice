@@ -78,7 +78,7 @@ class convert_src_impl : public convert_gen
     void runLex();
     void extract();
     void insert();
-
+	bool mbCollectingData;
     friend class convert_src;
 };
 #endif

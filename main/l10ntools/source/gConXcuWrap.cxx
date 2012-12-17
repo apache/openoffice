@@ -47,10 +47,28 @@ void convert_xcu_impl::runLex()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 {
+  string sKey, sHead;
+  int    nL;
+
+
   // remember text for merge
   msCollector += sTag;
 
-  xcu_stack_entry newTag(bIsNode, sTag);
+  // find key in tag
+  nL = sTag.find("oor:name=\"");
+  if (nL != string::npos)
+    sHead = sTag.substr(nL+10);
+  else
+	return;
+
+  // find end of key
+  nL = sHead.find("\"");
+  if (nL != string::npos)
+    sKey = sHead.substr(0, nL);
+  else
+	return;
+
+  xcu_stack_entry newTag(bIsNode, sKey);
 
   mcStack.push(newTag);
 }
@@ -64,12 +82,10 @@ void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
   msCollector += sTag;
 
   // check for correct node/prop relations
-  if (bIsNode != mcStack.top().mbIsNode)
-    throw "node/prob mismatch in file " + msSourceFile;
+  if (mcStack.size())
+    mcStack.pop();
 
-  mcStack.pop();
-
-  if (mbMergeMode && msCollector.size())
+  if (mbMergeMode)
     writeSourceFile(msCollector);
   msCollector.clear();
 }
@@ -79,7 +95,7 @@ void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu_impl::startCollectData(string& sCollectedText)
 {
-  if (mbMergeMode && msCollector.size())
+  if (mbMergeMode)
     writeSourceFile(msCollector);
 
   mbCollectingData = true;
@@ -93,34 +109,38 @@ void convert_xcu_impl::stopCollectData(string& sCollectedText)
 {
   string useKey;
 
+  // time to do something ?
+  if (!mbCollectingData)
+	return;
+  mbCollectingData = false;
 
   // locate key and extract it
   while (mcStack.size())
   {
     xcu_stack_entry nowEntry = mcStack.top();
-	mcStack.pop();
-	useKey = useKey + nowEntry.msName;
+    mcStack.pop();
+	useKey = nowEntry.msName + "." + useKey;
   }
 
   if (mbMergeMode)
   {
+	writeSourceFile(msCollector + sCollectedText);
+
     // get all languages (includes en-US)
     vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
     string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
-	writeSourceFile(msCollector + sCollectedText);
     for (int i = 0; i < nL; ++i)
     {
       sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
-		         cExtraLangauges[i]->msText + "</value>";
+	             cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
     }
   }
   else
-    mcMemory.setEnUsKey(useKey, sCollectedText);
+    mcMemory.setEnUsKey(useKey, msCollector);
 
-  mbCollectingData = false;
   msCollector.clear();
 }  
 

@@ -223,7 +223,10 @@ void handler::runExtract()
   // loop through all source files, and extract messages from each file
   for (vector<string>::iterator siSource = msSourceFiles.begin(); siSource != msSourceFiles.end(); ++siSource)
   {
-    // prepare translation memory
+	// JIX JUST FOR TEST
+	mcMemory.clear();
+
+	// prepare translation memory
     mcMemory.setFileName(*siSource);
 
     // get converter and extract files

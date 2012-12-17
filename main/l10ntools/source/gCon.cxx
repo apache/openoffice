@@ -149,6 +149,9 @@ void convert_gen::lineRead(bool *bEof, string& line)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_gen::writeSourceFile(const string& line)
 {
+  if (!line.size())
+	return;
+
   cout << line;
   // JIX
 }

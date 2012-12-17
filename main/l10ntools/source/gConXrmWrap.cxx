@@ -42,7 +42,7 @@ void convert_xrm_impl::runLex()
   genXrm_lex();
 
   // write last part of file.
-  if (mbMergeMode && msCollector.size())
+  if (mbMergeMode)
     writeSourceFile(msCollector);
 }
 
@@ -51,7 +51,7 @@ void convert_xrm_impl::runLex()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xrm_impl::startCollectData(string& sCollectedText)
 {
-  if (mbMergeMode && msCollector.size())
+  if (mbMergeMode)
     writeSourceFile(msCollector);
 
   mbCollectingData = true;

@@ -85,6 +85,17 @@ void l10nMem::save(const string& srTargetFile)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem::clear()
+{
+  cout << "--------------- clear of l10n -----------------" << endl;
+
+  mcMemory.clear();
+  // JIX
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem::setFileName(const string& srSourceFile)
 {
   msCurrentSourceFileName = srSourceFile;

@@ -64,7 +64,9 @@ po_stack_entry::~po_stack_entry()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_po_impl::convert_po_impl(const string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen (srSourceFile, crMemory)
+                                  : convert_gen (srSourceFile, crMemory),
+								  	mbCollectingData(false)
+
 {
 }
 

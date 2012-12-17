@@ -41,7 +41,7 @@ void convert_xhp_impl::runLex()
 {
   genXhp_lex();
 
-  if (mbMergeMode && msCollector.size())
+  if (mbMergeMode)
     writeSourceFile(msCollector);
 }
 
@@ -50,7 +50,7 @@ void convert_xhp_impl::runLex()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp_impl::startCollectData(string& sCollectedText)
 {
-  if (mbMergeMode && msCollector.size())
+  if (mbMergeMode)
     writeSourceFile(msCollector);
 
   mbCollectingData = true;

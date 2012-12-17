@@ -39,15 +39,17 @@ class convert_xcs_impl : public convert_gen
     convert_xcs_impl(const string& srSourceFile, l10nMem& crMemory);
     ~convert_xcs_impl();
 
-    void startCollectData(string& sCollectedText);
+	void setKey(string &sCollectedText);
+	void unsetKey(string &sCollectedText);
+	void startCollectData(string& sCollectedText);
     void stopCollectData(string& sCollectedText);
     void collectData(string& sCollectedText);
 
   private:
-    bool mbMergeMode;
-
-    bool mbCollectingData;
+    bool   mbMergeMode;
+    bool   mbCollectingData;
     string msCollector;
+	string msKey;
 
     void extract();
     void insert();

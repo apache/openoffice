@@ -59,38 +59,17 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"<oor:component-data "[^>]*> {
+"<prop"[^>]*> {
   string text(yytext);
-//  convert_xcs::mcpImpl->pushKeyPart(TAG_COMPONENT, text);
-}
-
-
-"</oor:component-data>" {
-  string text(yytext);
-//  convert_xcs::mcpImpl->popKeyPart(TAG_COMPONENT, text);
-}
-
-"<prop oor:name=\""[^\"]*\" {
-  string text(yytext);
-//  convert_xcu::mcpImpl->pushKeyPart(TAG_PROP, text);
+  convert_xcs::mcpImpl->setKey(text);
 }
 
 "</prop>" {
   string text(yytext);
-//  convert_xcs::mcpImpl->popKeyPart(TAG_PROP, text);
-}
-
-"<node oor:name=\""[^\"]*\" {
-  string text(yytext);
-//  convert_xcs::mcpImpl->pushKeyPart(TAG_NODE, text);
-}
-
-"</node>" {
-  string text(yytext);
-//  convert_xcs::mcpImpl->popKeyPart(TAG_NODE, text);
+  convert_xcs::mcpImpl->unsetKey(text);
 }
   
-"<value xml:lang=\""[^\"]*\"[^>]*">" {
+"<value"[^>]*> {
   string text(yytext);
   convert_xcs::mcpImpl->startCollectData(text);
 }
