@@ -213,6 +213,16 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/menu/virtmenu \
 	sfx2/source/notify/eventsupplier \
 	sfx2/source/notify/hintpost \
+	sfx2/source/sidebar/SidebarChildWindow \
+	sfx2/source/sidebar/SidebarDockingWindow \
+	sfx2/source/sidebar/SidebarController \
+	sfx2/source/sidebar/ContentPanelManager \
+	sfx2/source/sidebar/Deck \
+	sfx2/source/sidebar/Panel \
+	sfx2/source/sidebar/SidebarLayouter \
+	sfx2/source/sidebar/TabBar \
+	sfx2/source/sidebar/TitleBar \
+	sfx2/source/sidebar/Context \
 	sfx2/source/statbar/stbitem \
 	sfx2/source/toolbox/imgmgr \
 	sfx2/source/toolbox/tbxitem \

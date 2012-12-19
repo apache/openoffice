@@ -23,8 +23,8 @@
 #ifndef __com_sun_star_ui_ContextChangeEventMultiplexer_idl__
 #define __com_sun_star_ui_ContextChangeEventMultiplexer_idl__
 
-#ifndef __com_sun_star_util_XEventMultiplexer_idl__
-#include <com/sun/star/util/XEventMultiplexer.idl>
+#ifndef __com_sun_star_ui_XContextChangeEventMultiplexer_idl__
+#include <com/sun/star/ui/XContextChangeEventMultiplexer.idl>
 #endif
 
 module com {  module sun {  module star {  module ui {
@@ -33,7 +33,7 @@ module com {  module sun {  module star {  module ui {
 
     A typical listener for context changes is the sidebar.
 */
-singleton ContextChangeEventMultiplexer : com::sun::star::util::XEventMultiplexer;
+singleton ContextChangeEventMultiplexer : com::sun::star::ui::XContextChangeEventMultiplexer;
 
 }; }; }; }; // com.sun.star.ui
 

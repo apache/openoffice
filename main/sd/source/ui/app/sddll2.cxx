@@ -63,6 +63,7 @@
 
 #include <svx/layctrl.hxx>
 #include <svx/subtoolboxcontrol.hxx>
+#include <sfx2/SidebarChildWindow.hxx>
 
 #include "sddll.hxx"
 #define _SD_DIACTRL_CXX
@@ -137,6 +138,7 @@ void SdDLL::RegisterControllers()
 	::sd::LeftPaneImpressChildWindow::RegisterChildWindow(0, pMod);
 	::sd::LeftPaneDrawChildWindow::RegisterChildWindow(0, pMod);
 	::sd::ToolPanelChildWindow::RegisterChildWindow(0, pMod);
+    ::sfx2::SidebarChildWindow::RegisterChildWindow(NULL, pMod);
 
 	SvxFillToolBoxControl::RegisterControl(0, pMod);
 	SvxLineStyleToolBoxControl::RegisterControl(0, pMod);

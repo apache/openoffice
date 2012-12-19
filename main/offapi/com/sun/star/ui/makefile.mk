@@ -68,6 +68,8 @@ IDLFILES=\
     XAcceleratorConfiguration.idl               \
     XContextMenuInterception.idl                \
     XContextMenuInterceptor.idl                 \
+	XContextChangeEventListener.idl				\
+	XContextChangeEventMultiplexer.idl			\
     XDockingAreaAcceptor.idl                    \
     XImageManager.idl                           \
     XModuleUIConfigurationManager.idl           \

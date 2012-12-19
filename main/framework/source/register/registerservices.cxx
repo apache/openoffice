@@ -86,7 +86,7 @@
 #include <uifactory/windowcontentfactorymanager.hxx>
 #include <services/substitutepathvars.hxx>
 #include <services/pathsettings.hxx>
-#include <services/EventMultiplexer.hxx>
+#include <services/ContextChangeEventMultiplexer.hxx>
 
 COMPONENTGETIMPLEMENTATIONENVIRONMENT
 
@@ -129,6 +129,6 @@ COMPONENTGETFACTORY	(	IFFACTORY( ::framework::URLTransformer					        )	else
                         IFFACTORY( ::framework::TabWindowService                        )   else
                         IFFACTORY( ::framework::SubstitutePathVariables			        )	else
 						IFFACTORY( ::framework::PathSettings					        )   else
-						IFFACTORY( ::framework::EventMultiplexer				        )
+						IFFACTORY( ::framework::ContextChangeEventMultiplexer			)
 			)
 

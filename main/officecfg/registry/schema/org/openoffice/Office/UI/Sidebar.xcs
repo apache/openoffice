@@ -42,13 +42,13 @@
       <prop oor:name="Application" oor:type="xs:string" oor:localized="false">
         <info>
           <desc>Name of the application.  Known values are:
-          writer, calc, impress, draw, base</desc>
+          any, writer, calc, impress, draw, base</desc>
         </info>
         <value></value>
       </prop>
       <prop oor:name="ApplicationContext" oor:type="xs:string" oor:localized="false">
         <info>
-          <desc>Name of an application specific context.</desc>
+          <desc>Name of an application specific context.  The special name "any" matches any context name.</desc>
         </info>
         <value></value>
       </prop>
@@ -98,6 +98,12 @@
         </info>
         <value></value>
       </prop>
+      <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+        <info>
+          <desc>When true then the title bar can be ommitted when the panel is the only panel in a deck.</desc>
+        </info>
+        <value>false</value>
+      </prop>
       <prop oor:name="Id" oor:type="xs:string" oor:localized="false">
         <info>
           <desc>Internally used to identify the panel.</desc>
@@ -145,15 +151,20 @@
     </group>
   </templates>
   <component>
-    <set oor:name="DeckList" oor:node-type="Deck">
+    <group oor:name="Content">
       <info>
-        <desc>Contains all registered sidebar decks.</desc>
+        <desc>Description of the decks and panels that can be displayed in the content area of the sidebar.</desc>
       </info>
-    </set>
-    <set oor:name="PanelList" oor:node-type="Panel">
-      <info>
-        <desc>Contains all registered sidebar content panels.</desc>
-      </info>
-    </set>
+      <set oor:name="DeckList" oor:node-type="Deck">
+        <info>
+          <desc>Contains all registered sidebar decks.</desc>
+        </info>
+      </set>
+      <set oor:name="PanelList" oor:node-type="Panel">
+        <info>
+          <desc>Contains all registered sidebar content panels.</desc>
+        </info>
+      </set>
+    </group>
   </component>
 </oor:component-schema>

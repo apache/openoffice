@@ -41,6 +41,7 @@
 #include "glob.hrc"
 #include "unokywds.hxx"
 #include <svx/svxids.hrc>
+#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include "DrawDocShell.hxx"
 #include <sfx2/app.hxx>
 #include "PaneChildWindows.hxx"
@@ -403,6 +404,11 @@ void ViewShellBase::LateInit (const ::rtl::OUString& rsDefaultView)
         if (pFrameView != NULL)
             pFrameView->SetViewShellTypeOnLoad(pViewShell->GetShellType());
     }
+
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        GetController(),
+        ContextChangeEventMultiplexer::Application_Impress,
+        ContextChangeEventMultiplexer::Context_Default);
 }
 
 
