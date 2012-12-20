@@ -104,6 +104,12 @@ public class AppTool extends Tester {
 		app.dispatch(".uno:CloseDoc");
 	}
 	
+	public static void saveAndReopen(String path){
+		saveAs(path);
+		close();
+		open(path);
+	}
+	
 	public static void discard() {
 		app.dispatch(".uno:CloseDoc");
 		if (activeMsgBox.exists(2))

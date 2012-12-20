@@ -31,21 +31,23 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
 import testlib.gui.SCTool;
 
 public class ValidityDateSupport1024Columns {
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
-
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
+		AppTool.newSpreadsheet();
 	}
 
 	@After
-	public void tearDown() throws Exception {
-
+	public void tearDown() throws Exception {	
+		app.stop();
 	}
 
 	/**
@@ -54,7 +56,6 @@ public class ValidityDateSupport1024Columns {
 	 */
 	@Test
 	public void testValidityDateSupport1024Columns() {
-		app.dispatch("private:factory/scalc");
 		SCTool.selectRange("ALM1000:ALO1005");
 		app.dispatch(".uno:Validation");
 
@@ -71,25 +72,25 @@ public class ValidityDateSupport1024Columns {
 		SCTool.selectRange("ALM1001");
 		scInputBarInput.activate();
 		typeKeys("02/01/08<enter>");
-		assertEquals("02/01/08", SCTool.getCellText("ALM1001"));
+		assertEquals("Cell text in ALM1001 is not 02/01/08","02/01/08", SCTool.getCellText("ALM1001"));
 
 		SCTool.selectRange("ALM1002");
 		scInputBarInput.activate();
 		typeKeys("01/02/08<enter>");
-		assertEquals("01/02/08", SCTool.getCellText("ALM1002"));
+		assertEquals("Cell text in ALM1002 is not 01/02/08","01/02/08", SCTool.getCellText("ALM1002"));
 
 		SCTool.selectRange("ALM1003");
 		scInputBarInput.activate();
 		typeKeys("01/01/08<enter>");
-		assertEquals("Invalid value", activeMsgBox.getMessage());
+		assertEquals("Have no alert message","Invalid value", activeMsgBox.getMessage());
 		activeMsgBox.ok();
-		assertEquals("", SCTool.getCellText("ALM1003"));
+		assertEquals("Validity have not filter invalid value","", SCTool.getCellText("ALM1003"));
 
 		SCTool.selectRange("AML1003");
 		scInputBarInput.activate();
 		typeKeys("12/31/07<enter>");
-		assertEquals("Invalid value", activeMsgBox.getMessage());
+		assertEquals("Have no alert message","Invalid value", activeMsgBox.getMessage());
 		activeMsgBox.ok();
-		assertEquals("", SCTool.getCellText("AML1003"));
+		assertEquals("Validity have not filter invalid value","", SCTool.getCellText("AML1003"));
 	}
 }

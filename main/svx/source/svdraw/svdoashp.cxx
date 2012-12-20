@@ -1921,68 +1921,49 @@ void SdrObjCustomShape::NbcRotate( const Point& rRef, long nWink, double sn, dou
 
 void SdrObjCustomShape::NbcMirror( const Point& rRef1, const Point& rRef2 )
 {
-	// storing horizontal and vertical flipping without modifying the rotate angle
+    // TTTT: Fix for old mirroring, can be removed again in aw080
+    // storing horizontal and vertical flipping without modifying the rotate angle
+    // decompose other flipping to rotation and MirrorX.
+    long ndx = rRef2.X()-rRef1.X();
+    long ndy = rRef2.Y()-rRef1.Y();
 
-	sal_Bool bHorz = sal_False;
-	sal_Bool bVert = sal_False;
-	if ( rRef1.X() == rRef2.X() )
-		bHorz = sal_True;
-	if ( rRef1.Y() == rRef2.Y() )
-		bVert = sal_True;
-	if ( !bHorz && !bVert )
-		bHorz = bVert = sal_True;
+    if(!ndx) // MirroredX
+    {
+         SetMirroredX(!IsMirroredX());
+         SdrTextObj::NbcMirror( rRef1, rRef2 );
+    }
+    else
+    {
+        if(!ndy)  // MirroredY
+        {
+            SetMirroredY(!IsMirroredY());
+            SdrTextObj::NbcMirror( rRef1, rRef2 );
+        }
+        else // neither horizontal nor vertical
+        {
+            SetMirroredX(!IsMirroredX());
 
-	if ( bHorz || bVert )
-	{
-		SdrCustomShapeGeometryItem aGeometryItem( (SdrCustomShapeGeometryItem&)GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY ) );
+            // call parent
+            SdrTextObj::NbcMirror( rRef1, rRef2 );
 
-		/////////////////
-		// "MirroredX" //
-		/////////////////
-		if ( bHorz )
-		{
-			const rtl::OUString	sMirroredX( RTL_CONSTASCII_USTRINGPARAM ( "MirroredX" ) );
-			com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredX );
-			if ( pAny )
-			{
-				sal_Bool bFlip = sal_Bool();
-				if ( *pAny >>= bFlip )
-				{
-					if ( bFlip )
-						bHorz = sal_False;
-				}
-			}
-			PropertyValue aPropVal;
-			aPropVal.Name = sMirroredX;
-			aPropVal.Value <<= bHorz;
-			aGeometryItem.SetPropertyValue( aPropVal );
-		}
+            // update fObjectRotation
+            long nTextObjRotation = aGeo.nDrehWink;
+            double fWink = nTextObjRotation;
+            
+            fWink /= 100.0;
+            
+            bool bSingleFlip = (IsMirroredX()!= IsMirroredY());
+            
+            fObjectRotation = fmod( bSingleFlip ? -fWink : fWink, 360.0 );
+            
+            if ( fObjectRotation < 0 )
+            {
+                fObjectRotation = 360.0 + fObjectRotation;
+            }
+         }
+    }
 
-		/////////////////
-		// "MirroredY" //
-		/////////////////
-		if ( bVert )
-		{
-			const rtl::OUString	sMirroredY( RTL_CONSTASCII_USTRINGPARAM ( "MirroredY" ) );
-			com::sun::star::uno::Any* pAny = aGeometryItem.GetPropertyValueByName( sMirroredY );
-			if ( pAny )
-			{
-				sal_Bool bFlip = sal_Bool();
-				if ( *pAny >>= bFlip )
-				{
-					if ( bFlip )
-						bVert = sal_False;
-				}
-			}
-			PropertyValue aPropVal;
-			aPropVal.Name = sMirroredY;
-			aPropVal.Value <<= bVert;
-			aGeometryItem.SetPropertyValue( aPropVal );
-		}
-		SetMergedItem( aGeometryItem );
-	}
-	SdrTextObj::NbcMirror( rRef1, rRef2 );
-	InvalidateRenderGeometry();
+    InvalidateRenderGeometry();
 }
 
 void SdrObjCustomShape::Shear( const Point& rRef, long nWink, double tn, FASTBOOL bVShear )
@@ -1992,21 +1973,25 @@ void SdrObjCustomShape::Shear( const Point& rRef, long nWink, double tn, FASTBOO
 }
 void SdrObjCustomShape::NbcShear( const Point& rRef, long nWink, double tn, FASTBOOL bVShear )
 {
-	long nDrehWink = aGeo.nDrehWink;
-	if ( nDrehWink )
-	{
-		aGeo.nDrehWink = -nDrehWink;
-		aGeo.RecalcSinCos();
-		NbcRotate( rRef, aGeo.nDrehWink, aGeo.nSin, aGeo.nCos );
-	}
-	SdrTextObj::NbcShear(rRef,nWink,tn,bVShear);
-	if ( nDrehWink )
-	{
-		aGeo.nDrehWink = nDrehWink;
-		aGeo.RecalcSinCos();
-		Rotate( rRef, aGeo.nDrehWink, aGeo.nSin, aGeo.nCos );
-	}
-	InvalidateRenderGeometry();
+    // TTTT: Fix for old mirroring, can be removed again in aw080
+     SdrTextObj::NbcShear(rRef,nWink,tn,bVShear);
+
+    // updating fObjectRotation
+    long nTextObjRotation = aGeo.nDrehWink;
+    double fWink = nTextObjRotation;
+
+    fWink /= 100.0;
+
+    bool bSingleFlip = (IsMirroredX()!= IsMirroredY());
+
+    fObjectRotation = fmod( bSingleFlip ? -fWink : fWink, 360.0 );
+
+    if ( fObjectRotation < 0 )
+    {
+        fObjectRotation = 360.0 + fObjectRotation;
+    }
+
+    InvalidateRenderGeometry();
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3273,12 +3258,39 @@ void SdrObjCustomShape::TRSetBaseGeometry(const basegfx::B2DHomMatrix& rMatrix, 
 
 	// #i75086# Old DrawingLayer (GeoStat and geometry) does not support holding negative scalings
 	// in X and Y which equal a 180 degree rotation. Recognize it and react accordingly
-	if(basegfx::fTools::less(aScale.getX(), 0.0) && basegfx::fTools::less(aScale.getY(), 0.0))
+    const bool bMirrorX(basegfx::fTools::less(aScale.getX(), 0.0));
+    const bool bMirrorY(basegfx::fTools::less(aScale.getY(), 0.0));
+
+	if(bMirrorX && bMirrorY)
 	{
 		aScale.setX(fabs(aScale.getX()));
 		aScale.setY(fabs(aScale.getY()));
 		fRotate = fmod(fRotate + F_PI, F_2PI);
 	}
+    else if(bMirrorX || bMirrorY)
+    {
+        basegfx::B2DHomMatrix aNew;
+
+        // create pre-multiplied matrix without mirroring
+        aNew.translate(-0.5, -0.5);
+        aNew.scale(bMirrorX ? -1.0 : 1.0, bMirrorY ? -1.0 : 1.0);
+        aNew.translate(0.5, 0.5);
+        aNew = rMatrix * aNew;
+
+        // decompose to get corrected, mirror-free values
+        aNew.decompose(aScale, aTranslate, fRotate, fShearX);
+
+        // apply mirroring to CustomShapeGeometry
+        if((bool)IsMirroredX() != bMirrorX)
+        {
+            SetMirroredX(bMirrorX);
+        }
+
+        if((bool)IsMirroredY() != bMirrorY)
+        {
+            SetMirroredY(bMirrorY);
+        }
+    }
 
 	// reset object shear and rotations
 	aGeo.nDrehWink = 0;
@@ -3410,11 +3422,11 @@ sal_Bool SdrObjCustomShape::TRGetBaseGeometry(basegfx::B2DHomMatrix& rMatrix, ba
 			}
 			// Polygon wenden und etwas schieben
 			Polygon aPol0(aPol);
-			aPol[0]=aPol0[1];
-			aPol[1]=aPol0[0];
-			aPol[2]=aPol0[3];
-			aPol[3]=aPol0[2];
-			aPol[4]=aPol0[1];
+			aPol[0]=aPol0[3]; // This was WRONG for vertical (!)
+			aPol[1]=aPol0[2];
+			aPol[2]=aPol0[1];
+			aPol[3]=aPol0[0];
+			aPol[4]=aPol0[3];
 			Poly2Rect(aPol,aRectangle,aNewGeo);
 		}
 	}

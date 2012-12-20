@@ -71,8 +71,8 @@
 #include <vcl/msgbox.hxx>
 #endif
 #include <sfx2/opengrf.hxx>
-
 #include <sfx2/viewfrm.hxx>
+#include <svx/charthelper.hxx>
 
 #include "app.hrc"
 #include "misc.hxx"
@@ -400,7 +400,7 @@ void FuInsertOLE::DoExecute( SfxRequest& rReq )
                     // note, that this call modified the chart model which
                     // results in a change notification.  So call this after
                     // everything else is finished.
-                    mpViewShell->AdaptDefaultsForChart( xObj );
+                    ChartHelper::AdaptDefaultsForChart( xObj );
                 }
 			}
 		}

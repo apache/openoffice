@@ -34,9 +34,10 @@ import org.junit.Test;
 import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.SystemUtil;
 
+import testlib.gui.AppTool;
 
 public class TableGeneral {
-
+	
 	@Rule
 	public Logger log = Logger.getLogger(this);
 
@@ -45,12 +46,9 @@ public class TableGeneral {
 		// Start OpenOffice
 		app.start();
 
-		// Create a new text document
-		app.dispatch("private:factory/swriter");
-
+		AppTool.newTextDocument();
 		// Insert a table
 		app.dispatch(".uno:InsertTable");
-		assertTrue("Insert Table dialog pop up", writerInsertTable.exists());
 	}
 
 	@After
@@ -58,8 +56,12 @@ public class TableGeneral {
 		app.stop();
 	}
 
+	/**
+	 * Test setting table size in text document
+	 * 
+	 * @throws Exception
+	 */
 	@Test
-	// Test setting table size in text document
 	public void testTableSize() throws Exception {
 
 		swTableSizeColBox.focus();
@@ -70,7 +72,8 @@ public class TableGeneral {
 		typeKeys("4");
 		writerInsertTable.ok();
 
-		writer.focus(); // verify how many rows in the table
+		writer.focus();
+		// verify the rows in the table
 		assertNotNull(statusBar.getItemTextById(8));
 		for (int i = 0; i < 3; i++) {
 			typeKeys("<down>");
@@ -81,10 +84,13 @@ public class TableGeneral {
 		assertFalse(tableToolbar.exists());
 	}
 
-	// Test setting table cell background in text document
-
+	/**
+	 * Test setting table cell background in text document
+	 * 
+	 * @throws Exception
+	 */
 	@Test
-	@Ignore("Bug #120378")
+	@Ignore("Bug #120378- the table cell fill color change when copy one table cell in word processor to presentation")
 	public void testTableBackground() throws Exception {
 		writerInsertTable.ok();
 		assertNotNull(statusBar.getItemTextById(8));
@@ -94,7 +100,6 @@ public class TableGeneral {
 		swTableBackground.select();
 		assertTrue("Table background property dialog pop up",
 				swTableBackground.exists());
-		;
 		swTableBackgroundColor.focus();
 		swTableBackgroundColor.click(50, 50);
 		swTableBackground.ok();
@@ -104,8 +109,7 @@ public class TableGeneral {
 		app.dispatch(".uno:EntireCell");
 
 		typeKeys("<ctrl c>");
-		app.dispatch("private:factory/simpress?slot=6686");
-		presentationWizard.ok();
+		AppTool.newPresentation();
 		typeKeys("<ctrl v>");
 		// enable table cell area format dialog
 		app.dispatch(".uno:FormatArea");
@@ -115,8 +119,11 @@ public class TableGeneral {
 		sdTableBACGColorArea.cancel();
 	}
 
-	// Test setting table border in text document
-
+	/**
+	 * Test setting table border in text document
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableBorder() throws Exception {
 		writerInsertTable.ok();
@@ -127,14 +134,16 @@ public class TableGeneral {
 		swTableBorder.select();
 		assertTrue("Table border property dialog pop up",
 				swTableBorder.exists());
-		;
 		swTableBorderLineArrange.click(10, 10);
 		swTableBorder.ok();
 	}
 
-	// Test setting table border line style,line color,spacing to content in
-	// text document
-
+	/**
+	 * Test setting table border line style,line color,spacing to content in
+	 * text document
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableBorderLineStyle() throws Exception {
 		writerInsertTable.ok();
@@ -144,22 +153,26 @@ public class TableGeneral {
 		swTableBorder.select();
 		assertTrue("Table border property dialog pop up",
 				swTableBorder.exists());
-		;
-		swTableBorderLineStyle.select(8); // set line style
-		swTableBorderLineColor.select(5); // set line color
-		swTableSTCLeft.focus(); // set spacing to content
+		// set line style
+		swTableBorderLineStyle.select(8);
+		// set line color
+		swTableBorderLineColor.select(5);
+		// set spacing to content
+		swTableSTCLeft.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
-		typeKeys("0.5"); // set spacing to content
-		swTableShadow.click(40, 10); // set table shadow
+		// set spacing to content
+		typeKeys("0.5");
+		// set table shadow
+		swTableShadow.click(40, 10);
 		swTableShadowSize.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("2");
 		swTableShadowColor.select(5);
 		swTableBorder.ok();
-
-		writer.focus(); // verify the setting property of table
+		// verify the setting property of table
+		writer.focus();
 		app.dispatch(".uno:TableDialog");
 		swTableBorder.select();
 		assertEquals("2.60 pt", swTableBorderLineStyle.getItemText(8));
@@ -174,32 +187,35 @@ public class TableGeneral {
 		swTableBorder.close();
 
 		// uncheck Synchronize box and set spacing to content
-
 		writer.focus();
 		app.dispatch(".uno:TableDialog");
 		swTableBorder.select();
 		swTableSTCSYNC.uncheck();
-		swTableSTCLeft.focus();// set left spacing to content
+		// set left spacing to content
+		swTableSTCLeft.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("0.5");
-		swTableSTCRight.focus();// set right spacing to content
+		// set right spacing to content
+		swTableSTCRight.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("0.8");
-		swTableSTCTop.focus();// set top spacing to content
+		// set top spacing to content
+		swTableSTCTop.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("1.0");
-		swTableSTCBottom.focus();// set bottom spacing to content
+		// set bottom spacing to content
+		swTableSTCBottom.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("2");
 		swTableBorder.ok();
 		assertNotNull(statusBar.getItemTextById(8));
 
-		writer.focus(); // verify the setting value of spacing to content for
-						// tabel
+		writer.focus();
+		// verify the setting value of spacing to content for table
 		app.dispatch(".uno:TableDialog");
 		swTableBorder.select();
 		assertEquals("0.50\"", swTableSTCLeft.getText());
@@ -210,8 +226,11 @@ public class TableGeneral {
 		swTableBorder.close();
 	}
 
-	// create table with auto format
-
+	/**
+	 * create table with auto format
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableAutoFormat() throws Exception {
 		// create table with auto format
@@ -228,8 +247,11 @@ public class TableGeneral {
 
 	}
 
-	// set row height and select row,insert/delete row
-
+	/**
+	 * set row height and select row,insert/delete row
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableRowHeight() throws Exception {
 		writerInsertTable.ok();
@@ -255,7 +277,11 @@ public class TableGeneral {
 		swTableSetRowHeightDialog.close();
 	}
 
-	// select row
+	/**
+	 * test select row
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableSelectRow() throws Exception {
 		writerInsertTable.ok();
@@ -276,7 +302,11 @@ public class TableGeneral {
 
 	}
 
-	// insert row and verify how many row inserted
+	/**
+	 * insert row and verify how many row inserted
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableInsertRow() throws Exception {
 		writerInsertTable.ok();
@@ -284,15 +314,15 @@ public class TableGeneral {
 		writer.focus();
 		writer.openContextMenu();
 		swTableInsertRowMenu.select();
-		assertTrue("SWTable_InsertRow Dialog pop up",
-				swTableInsertRow.exists());
+		assertTrue("SWTable_InsertRow Dialog pop up", swTableInsertRow.exists());
 		swTableInsertRowColumnSetNumber.focus();
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("3");
 		swTableInsertRow.ok();
 
-		writer.focus(); // verify how many rows in the table
+		writer.focus();
+		// verify how many rows in the table
 		assertNotNull(statusBar.getItemTextById(8));
 		for (int i = 0; i < 4; i++) {
 			typeKeys("<down>");
@@ -303,7 +333,11 @@ public class TableGeneral {
 		assertFalse(tableToolbar.exists());
 	}
 
-	// delete row and verify row
+	/**
+	 * delete row and verify row
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableRowDelete() throws Exception {
 		writerInsertTable.ok();
@@ -321,7 +355,11 @@ public class TableGeneral {
 
 	}
 
-	// set column width and verify
+	/**
+	 * set column width and verify
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableColumnWidth() throws Exception {
 		writerInsertTable.ok();
@@ -343,7 +381,11 @@ public class TableGeneral {
 
 	}
 
-	// select column and verify
+	/**
+	 * select column and verify
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableColumnSelect() throws Exception {
 		writerInsertTable.ok();
@@ -363,7 +405,11 @@ public class TableGeneral {
 
 	}
 
-	// insert column and verify
+	/**
+	 * insert column and verify
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableColumnInsert() throws Exception {
 		writerInsertTable.ok();
@@ -390,7 +436,11 @@ public class TableGeneral {
 		assertFalse(tableToolbar.exists());
 	}
 
-	// delete column and verify whether delete or not
+	/**
+	 * delete column and verify whether delete or not
+	 * 
+	 * @throws Exception
+	 */
 	public void testTableColumnDelete() throws Exception {
 		writerInsertTable.ok();
 		assertNotNull(statusBar.getItemTextById(8));
@@ -409,7 +459,11 @@ public class TableGeneral {
 		assertFalse(tableToolbar.exists());
 	}
 
-	// split cell
+	/**
+	 * split cell
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	public void testTableCellSplit() throws Exception {
 		writerInsertTable.ok();
@@ -423,9 +477,11 @@ public class TableGeneral {
 			typeKeys("<delete>");
 			typeKeys("2");
 			if (k == 0) {
-				swTableCellSplitDialog.ok(); // split table cell horizontally
+				// split table cell horizontally
+				swTableCellSplitDialog.ok();
 			} else {
-				swTableCellSplitVERTButton.check(); // split table cell
+				// split table cell
+				swTableCellSplitVERTButton.check();
 				// vertically
 				swTableCellSplitDialog.ok();
 			}
@@ -440,7 +496,7 @@ public class TableGeneral {
 		sleep(1);
 		assertFalse(tableToolbar.exists());
 	}
-	
+
 	/**
 	 * Test convert table to text in text document
 	 * 
@@ -455,19 +511,17 @@ public class TableGeneral {
 
 		// Convert table to text
 		app.dispatch(".uno:ConvertTableToText");
-		assertTrue("Convert Table to Text dialog pop up", writerConvertTableToTextDlg.exists());
+		assertTrue("Convert Table to Text dialog pop up",
+				writerConvertTableToTextDlg.exists());
 		// typeKeys("<enter>");
-		writerConvertTableToTextDlg.ok(); // "Enter" does not work on linux
+		writerConvertTableToTextDlg.ok();
 
 		// Verify if text is converted successfully
 		app.dispatch(".uno:SelectAll");
 		app.dispatch(".uno:Copy");
 		if (SystemUtil.isWindows())
-			assertEquals("Converted text", "1\t2\r\n3\t4\r\n", app.getClipboard()); // in
-																					// windows,
-																					// \n
-																					// is
-																					// \r\n
+			assertEquals("Converted text", "1\t2\r\n3\t4\r\n",
+					app.getClipboard());
 		else
 			assertEquals("Converted text", "1\t2\n3\t4\n", app.getClipboard());
 	}

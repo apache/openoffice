@@ -70,8 +70,6 @@
 #include <toolkit/awt/vclxtabpagecontainer.hxx>
 #include <toolkit/awt/vclxtabpagemodel.hxx>
 
-#include <toolkit/awt/xsimpleanimation.hxx>
-#include <toolkit/awt/xthrobber.hxx>
 #include <toolkit/awt/animatedimagespeer.hxx>
 #include <toolkit/awt/vclxtopwindow.hxx>
 #include <toolkit/awt/vclxwindow.hxx>
@@ -315,11 +313,9 @@ static ComponentInfo __FAR_DATA aComponentInfos [] =
 	{ "radiobutton",		WINDOW_RADIOBUTTON },
 	{ "scrollbar",			WINDOW_SCROLLBAR },
 	{ "scrollbarbox",		WINDOW_SCROLLBARBOX },
-    { "simpleanimation",	WINDOW_CONTROL },
     { "animatedimages",     WINDOW_CONTROL },
 	{ "spinbutton",			WINDOW_SPINBUTTON },
 	{ "spinfield",			WINDOW_SPINFIELD },
-    { "throbber",        	WINDOW_CONTROL },
 	{ "splitter",			WINDOW_SPLITTER },
 	{ "splitwindow",		WINDOW_SPLITWINDOW },
 	{ "statusbar",			WINDOW_STATUSBAR },
@@ -1009,21 +1005,7 @@ Window*	VCLXToolkit::ImplCreateWindow( VCLXWindow** ppNewComp,
 				}
 			break;
 			case WINDOW_CONTROL:
-                if  ( aServiceName.EqualsAscii( "simpleanimation" ) )
-                {
-                    pNewWindow = new Throbber( pParent, nWinBits, Throbber::IMAGES_NONE );
-                    ((Throbber*)pNewWindow)->SetScaleMode( css::awt::ImageScaleMode::Anisotropic );
-                        // (compatibility)
-                    *ppNewComp = new ::toolkit::XSimpleAnimation;
-                }
-                else if ( aServiceName.EqualsAscii( "throbber" ) )
-                {
-                    pNewWindow = new Throbber( pParent, nWinBits, Throbber::IMAGES_NONE );
-                    ((Throbber*)pNewWindow)->SetScaleMode( css::awt::ImageScaleMode::Anisotropic );
-                        // (compatibility)
-                    *ppNewComp = new ::toolkit::XThrobber;
-                }
-				else if ( rDescriptor.WindowServiceName.equalsIgnoreAsciiCase(
+                if ( rDescriptor.WindowServiceName.equalsIgnoreAsciiCase(
                         ::rtl::OUString::createFromAscii("tabpagecontainer") ) )
                 {
                     pNewWindow = new TabControl( pParent, nWinBits );

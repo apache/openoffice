@@ -135,7 +135,6 @@ protected:
 	String		aName;
 
 public:
-
 	sal_Bool UseNoFillStyle() const;
 
 	sal_Bool IsMirroredX() const;

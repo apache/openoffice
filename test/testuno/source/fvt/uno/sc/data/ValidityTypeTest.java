@@ -24,7 +24,6 @@ import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.Collection;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -34,14 +33,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import org.openoffice.test.uno.UnoApp;
-
 import testlib.uno.SCUtil;
-import testlib.uno.TestUtil;
-
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.lang.XComponent;
 import com.sun.star.sheet.ConditionOperator;
-import com.sun.star.sheet.GeneralFunction;
 import com.sun.star.sheet.ValidationAlertStyle;
 import com.sun.star.sheet.ValidationType;
 import com.sun.star.sheet.XSheetCondition;
@@ -53,8 +48,6 @@ import com.sun.star.uno.UnoRuntime;
 
 @RunWith(value = Parameterized.class)
 public class ValidityTypeTest {
-	private static final UnoApp app = new UnoApp();
-
 	UnoApp unoApp = new UnoApp();
 	XSpreadsheetDocument scDocument = null;
 	XComponent scComponent = null;
@@ -84,7 +77,7 @@ public class ValidityTypeTest {
 						{ ValidationType.ANY, false, ValidationAlertStyle.STOP,
 								false, false, ConditionOperator.EQUAL, "0",
 								"5", "xls" },
-								//Custom type is not exist in GUI so remove this 
+						//Custom type is not exist in GUI so remove this 
 						// { ValidationType.CUSTOM, true,
 						// ValidationAlertStyle.INFO, false, true,
 						// ConditionOperator.EQUAL, "0", "5", "ods"},
@@ -159,7 +152,10 @@ public class ValidityTypeTest {
 		this.formula2 = formula2;
 		this.extName = extName;
 	}
-
+	
+	/**
+	 * test filter with every type
+	 */
 	@Test
 	public void test() throws Exception {
 		// New a SC document

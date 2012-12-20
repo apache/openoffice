@@ -19,12 +19,8 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
-
-
 
 #include <tools/debug.hxx>
 #include <com/sun/star/document/XEventsSupplier.hpp>
@@ -40,7 +36,6 @@
 #include <com/sun/star/drawing/EscapeDirection.hpp>
 #include <com/sun/star/media/ZoomLevel.hpp>
 #include <com/sun/star/awt/Rectangle.hpp>
-
 #include <com/sun/star/style/XStyleFamiliesSupplier.hpp>
 #include <com/sun/star/container/XNameAccess.hpp>
 #include <comphelper/extract.hxx>
@@ -74,7 +69,6 @@
 #include "XMLImageMapContext.hxx"
 #include "sdpropls.hxx"
 #include "eventimp.hxx"
-
 #include "descriptionimp.hxx"
 #include "ximpcustomshape.hxx"
 #include "XMLEmbeddedObjectImportContext.hxx"
@@ -83,10 +77,8 @@
 #include <tools/string.hxx>
 #include <com/sun/star/drawing/XEnhancedCustomShapeDefaulter.hpp>
 #include <com/sun/star/container/XChild.hpp>
-
-// --> OD 2006-02-22 #b6382898#
 #include <com/sun/star/text/XTextDocument.hpp>
-// <--
+#include <basegfx/vector/b2dvector.hxx>
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
@@ -164,6 +156,7 @@ SdXMLShapeContext::SdXMLShapeContext(
 ,	mnZOrder(-1)
 ,	maSize(1, 1)
 ,	maPosition(0, 0)
+,   maUsedTransformation()
 ,	mbVisible(true)
 ,	mbPrintable(true)
 {
@@ -466,8 +459,16 @@ void SdXMLShapeContext::AddShape(uno::Reference< drawing::XShape >& xShape)
 
 		if( maShapeId.getLength() )
 		{
-			uno::Reference< uno::XInterface > xRef( xShape, uno::UNO_QUERY );
-			GetImport().getInterfaceToIdentifierMapper().registerReference( maShapeId, xRef );
+            const SdXMLGraphicObjectShapeContext* pGSC = dynamic_cast< const SdXMLGraphicObjectShapeContext* >(this);
+
+            /* avoid registering when LateRegister is needed. E.g. MultiImage support where in-between multiple
+               xShapes with the same ID would be registered. Registration is done after deciding which image
+               to keep, see calls to solveMultipleImages */
+            if(!pGSC || !pGSC->getLateAddToIdentifierMapper())
+            {
+                uno::Reference< uno::XInterface > xRef( xShape, uno::UNO_QUERY );
+                GetImport().getInterfaceToIdentifierMapper().registerReference( maShapeId, xRef );
+            }
 		}
 
 		// #91065# count only if counting for shape import is enabled
@@ -533,7 +534,7 @@ void SdXMLShapeContext::SetTransformation()
 		uno::Reference< beans::XPropertySet > xPropSet(mxShape, uno::UNO_QUERY);
 		if(xPropSet.is())
 		{
-			::basegfx::B2DHomMatrix aTransformation;
+			maUsedTransformation.identity();
 
 			if(maSize.Width != 1 || maSize.Height != 1)
 			{
@@ -544,13 +545,13 @@ void SdXMLShapeContext::SetTransformation()
 					maSize.Height = 1;
 
 				// set global size. This should always be used.
-				aTransformation.scale(maSize.Width, maSize.Height);
+				maUsedTransformation.scale(maSize.Width, maSize.Height);
 			}
 
 			if(maPosition.X != 0 || maPosition.Y != 0)
 			{
 				// if global position is used, add it to transformation
-				aTransformation.translate(maPosition.X, maPosition.Y);
+				maUsedTransformation.translate(maPosition.X, maPosition.Y);
 			}
 
 			if(mnTransform.NeedsAction())
@@ -564,24 +565,24 @@ void SdXMLShapeContext::SetTransformation()
 				mnTransform.GetFullTransform(aMat);
 
 				// now add to transformation
-				aTransformation *= aMat;
+				maUsedTransformation *= aMat;
 			}
 
 			// now set transformation for this object
 			uno::Any aAny;
 			drawing::HomogenMatrix3 aMatrix;
 
-			aMatrix.Line1.Column1 = aTransformation.get(0, 0);
-			aMatrix.Line1.Column2 = aTransformation.get(0, 1);
-			aMatrix.Line1.Column3 = aTransformation.get(0, 2);
+			aMatrix.Line1.Column1 = maUsedTransformation.get(0, 0);
+			aMatrix.Line1.Column2 = maUsedTransformation.get(0, 1);
+			aMatrix.Line1.Column3 = maUsedTransformation.get(0, 2);
 
-			aMatrix.Line2.Column1 = aTransformation.get(1, 0);
-			aMatrix.Line2.Column2 = aTransformation.get(1, 1);
-			aMatrix.Line2.Column3 = aTransformation.get(1, 2);
+			aMatrix.Line2.Column1 = maUsedTransformation.get(1, 0);
+			aMatrix.Line2.Column2 = maUsedTransformation.get(1, 1);
+			aMatrix.Line2.Column3 = maUsedTransformation.get(1, 2);
 
-			aMatrix.Line3.Column1 = aTransformation.get(2, 0);
-			aMatrix.Line3.Column2 = aTransformation.get(2, 1);
-			aMatrix.Line3.Column3 = aTransformation.get(2, 2);
+			aMatrix.Line3.Column1 = maUsedTransformation.get(2, 0);
+			aMatrix.Line3.Column2 = maUsedTransformation.get(2, 1);
+			aMatrix.Line3.Column3 = maUsedTransformation.get(2, 2);
 
 			aAny <<= aMatrix;
 
@@ -2288,7 +2289,8 @@ SdXMLGraphicObjectShapeContext::SdXMLGraphicObjectShapeContext(
 	uno::Reference< drawing::XShapes >& rShapes,
     sal_Bool bTemporaryShape)
 :	SdXMLShapeContext( rImport, nPrfx, rLocalName, xAttrList, rShapes, bTemporaryShape ),
-	maURL()
+	maURL(),
+    mbLateAddToIdentifierMapper(false)
 {
 }
 
@@ -3428,9 +3430,16 @@ SvXMLImportContext *SdXMLFrameShapeContext::CreateChildContext( sal_uInt16 nPref
         mbSupportsReplacement = IsXMLToken(rLocalName, XML_OBJECT ) || IsXMLToken(rLocalName, XML_OBJECT_OLE);
         setSupportsMultipleContents(IsXMLToken(rLocalName, XML_IMAGE));
 
-        if(getSupportsMultipleContents() && dynamic_cast< SdXMLGraphicObjectShapeContext* >(pContext))
+        if(getSupportsMultipleContents())
         {
-            addContent(*mxImplContext);
+            SdXMLGraphicObjectShapeContext* pGSC = dynamic_cast< SdXMLGraphicObjectShapeContext* >(pContext);
+
+            if(pGSC)
+            {
+                // mark context as LateAdd to avoid conflicts with multiple objects registering with the same ID
+                pGSC->setLateAddToIdentifierMapper(true);
+                addContent(*mxImplContext);
+            }
         }
     }
     else if(getSupportsMultipleContents() && XML_NAMESPACE_DRAW == nPrefix && IsXMLToken(rLocalName, XML_IMAGE))
@@ -3440,8 +3449,12 @@ SvXMLImportContext *SdXMLFrameShapeContext::CreateChildContext( sal_uInt16 nPref
             GetImport(), nPrefix, rLocalName, xAttrList, mxShapes, mxAttrList);
         mxImplContext = pContext;
 
-        if(dynamic_cast< SdXMLGraphicObjectShapeContext* >(pContext))
+        SdXMLGraphicObjectShapeContext* pGSC = dynamic_cast< SdXMLGraphicObjectShapeContext* >(pContext);
+
+        if(pGSC)
         {
+            // mark context as LateAdd to avoid conflicts with multiple objects registering with the same ID
+            pGSC->setLateAddToIdentifierMapper(true);
             addContent(*mxImplContext);
         }
     }
@@ -3504,7 +3517,15 @@ void SdXMLFrameShapeContext::StartElement(const uno::Reference< xml::sax::XAttri
 void SdXMLFrameShapeContext::EndElement()
 {
     /// solve if multiple image child contexts were imported
-    solveMultipleImages();
+    const SvXMLImportContext* pWinner = solveMultipleImages();
+    const SdXMLGraphicObjectShapeContext* pGSCWinner = dynamic_cast< const SdXMLGraphicObjectShapeContext* >(pWinner);
+
+    /// if we have a winner and it's on LateAdd, add it now
+    if(pGSCWinner && pGSCWinner->getLateAddToIdentifierMapper() && pGSCWinner->getShapeId().getLength())
+    {
+        uno::Reference< uno::XInterface > xRef( pGSCWinner->getShape(), uno::UNO_QUERY );
+        GetImport().getInterfaceToIdentifierMapper().registerReference( pGSCWinner->getShapeId(), xRef );
+    }
 
 	if( !mxImplContext.Is() )
 	{
@@ -3655,6 +3676,48 @@ void SdXMLCustomShapeContext::StartElement( const uno::Reference< xml::sax::XAtt
 
 void SdXMLCustomShapeContext::EndElement()
 {
+    // for backward compatibility, the above SetTransformation() may alraedy have
+    // applied a call to SetMirroredX/SetMirroredY. This is not yet added to the
+    // beans::PropertyValues in maCustomShapeGeometry. When applying these now, this 
+    // would be lost again.
+    // TTTT: Remove again after aw080
+    if(!maUsedTransformation.isIdentity())
+    {
+        basegfx::B2DVector aScale, aTranslate;
+        double fRotate, fShearX;
+
+        maUsedTransformation.decompose(aScale, aTranslate, fRotate, fShearX);
+
+        bool bFlippedX(aScale.getX() < 0.0);
+        bool bFlippedY(aScale.getY() < 0.0);
+
+        if(bFlippedX && bFlippedY)
+        {
+            // when both are used it is the same as 180 degree rotation; reset
+            bFlippedX = bFlippedY = false;
+        }
+
+        if(bFlippedX || bFlippedY)
+        {
+            beans::PropertyValue aNewPoroperty;
+
+            if(bFlippedX)
+            {
+                aNewPoroperty.Name = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("MirroredX"));
+            }
+            else
+            {
+                aNewPoroperty.Name = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("MirroredY"));
+            }
+
+            aNewPoroperty.Handle = -1;
+            aNewPoroperty.Value <<= sal_True;
+            aNewPoroperty.State = beans::PropertyState_DIRECT_VALUE;
+
+            maCustomShapeGeometry.push_back(aNewPoroperty);
+        }
+    }
+
 	if ( !maCustomShapeGeometry.empty() )
 	{
 		const rtl::OUString	sCustomShapeGeometry	( RTL_CONSTASCII_USTRINGPARAM( "CustomShapeGeometry" ) );

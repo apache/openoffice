@@ -30,23 +30,23 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
+
 public class ValidityDialogDefaultValue {
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
-
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-
-		// New a spreadsheet, open Validity dialog
-		app.dispatch("private:factory/scalc");
+		AppTool.newSpreadsheet();
 		app.dispatch(".uno:Validation");
 	}
 
 	@After
 	public void tearDown() throws Exception {
-
+		app.stop();
 	}
 
 	/**
@@ -56,15 +56,14 @@ public class ValidityDialogDefaultValue {
 	public void testValidityUICellRange() {
 
 		scValidityCriteriaTabpage.select();
-		scValidityCriteriaAllowList.select(5); // "Cell range"
+		scValidityCriteriaAllowList.select(5); 
 
-		assertEquals(true, scValidityAllowBlankCells.isChecked());
-		assertEquals(true, scValidityShowSelectionList.isChecked());
-		assertEquals(false, scValiditySortEntriesAscending.isChecked());
-		assertEquals(true, scValidityAllowBlankCells.isEnabled());
-		assertEquals(true, scValiditySortEntriesAscending.isEnabled());
-		assertEquals(true, scValiditySortEntriesAscending.isEnabled());
-		assertEquals(true, scValiditySourcePicker.isEnabled());
+		assertEquals("Wrong default value of AllowBlankCells in Validity",true, scValidityAllowBlankCells.isChecked());
+		assertEquals("Wrong default value of ShowSelectionList in Validity",true, scValidityShowSelectionList.isChecked());
+		assertEquals("Wrong default value of Sort Entries Ascending in Validity",false, scValiditySortEntriesAscending.isChecked());
+		assertEquals("Wrong default value of AllowBlankCells in Validity",true, scValidityAllowBlankCells.isEnabled());
+		assertEquals("Wrong default value of Sort Entries Ascending in Validity",true, scValiditySortEntriesAscending.isEnabled());
+		assertEquals("Wrong default value of SourcePicker in Validity",true, scValiditySourcePicker.isEnabled());
 	}
 
 	/**
@@ -74,15 +73,15 @@ public class ValidityDialogDefaultValue {
 	public void testValidityUIErrorAlert() {
 
 		scValidityErrorAlertTabPage.select();
-		assertEquals(true, scValidityErrorAlertActionList.isEnabled());
-		// assertEquals("Stop",SC_ValidityErrorAlertActionList.getSelText()); //
+		assertEquals("Error Alert Action list is disable",true, scValidityErrorAlertActionList.isEnabled());
+		// assertEquals("Stop",SC_ValidityErrorAlertActionList.getSelText()); 
 		// Do not test this. Do it in GVT.
-		assertEquals(true, scValidityErrorMessageTitle.isEnabled());
-		assertEquals("", scValidityErrorMessageTitle.getText());
-		assertEquals(true, scValidityErrorMessage.isEnabled());
-		assertEquals("", scValidityErrorMessage.getText());
+		assertEquals("Error Message Title is disable",true, scValidityErrorMessageTitle.isEnabled());
+		assertEquals("Have default error message title","", scValidityErrorMessageTitle.getText());
+		assertEquals("Error message is disable",true, scValidityErrorMessage.isEnabled());
+		assertEquals("Have default error message","", scValidityErrorMessage.getText());
 		scValidityErrorAlertActionList.select(3); // "Macro"
-		assertEquals(true, scValidityErrorBrowseButton.isEnabled());
+		assertEquals("error browse button is disable",true, scValidityErrorBrowseButton.isEnabled());
 	}
 
 }

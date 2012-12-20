@@ -38,6 +38,7 @@ import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
 import testlib.gui.SCTool;
 
 /**
@@ -47,14 +48,11 @@ public class SortDialogSetting {
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
-
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
-
-		// Create a new spreadsheet document
-		app.dispatch("private:factory/scalc");
-		calc.waitForExistence(10, 2);
+		AppTool.newSpreadsheet();
 	}
 
 	@After
@@ -76,9 +74,8 @@ public class SortDialogSetting {
 		SCTool.selectRange("A1");
 		typeKeys("1ColumnName<down>D<down>C<down>B<down>A<down>a<down>");
 		SCTool.selectRange("A6");
-		app.dispatch(".uno:ChangeCaseToLower"); // In case SC capitalize first
-												// letter automatically
-
+		app.dispatch(".uno:ChangeCaseToLower");
+		// In case SC capitalize first letter automatically
 		// "Data->Sort...", choose "Ascending", check "Case sensitive"
 		app.dispatch(".uno:DataSort");
 		sortOptionsPage.select();
@@ -86,30 +83,18 @@ public class SortDialogSetting {
 		sortOptionsPage.ok();
 
 		// Verify sorted result
-		assertArrayEquals("Sorted result", expectedSortedResult, SCTool.getCellTexts("A2:A6"));
+		assertArrayEquals("Wrong Sorted result", expectedSortedResult, SCTool.getCellTexts("A2:A6"));
 
 		// Uodo/redo
 		app.dispatch(".uno:Undo");
-		assertArrayEquals("Undo sorted result", data, SCTool.getCellTexts("A2:A6"));
+		assertArrayEquals("Wrong Undo sorted result", data, SCTool.getCellTexts("A2:A6"));
 		app.dispatch(".uno:Redo");
-		assertArrayEquals("Redo sorted result", expectedSortedResult, SCTool.getCellTexts("A2:A6"));
+		assertArrayEquals("Wrong Redo sorted result", expectedSortedResult, SCTool.getCellTexts("A2:A6"));
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "RowsSortWithOptionsCaseSensitive.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
-		// Reopen and verify sorted result
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		saveAndReopen(saveTo);
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Saved sorted result", expectedSortedResult, SCTool.getCellTexts("A2:A6"));
 	}
@@ -119,18 +104,9 @@ public class SortDialogSetting {
 	 * 
 	 * @throws Exception
 	 */
-	@Ignore("Bug #119035")
+	@Ignore("Bug #119035 - Redo is not work when sort result to other postion")
 	public void testSortOptionsCopyResultTo() throws Exception {
 
-		// Input some data
-		// String[][] data = new String[][] {
-		// {"3", "D"},
-		// {"5", "FLK"},
-		// {"4", "E"},
-		// {"2", "BC"},
-		// {"6", "GE"},
-		// {"1", "AB"},
-		// };
 		String[][] expectedSortedResult = new String[][] { { "1", "AB" }, { "2", "BC" }, { "3", "D" }, { "4", "E" }, { "5", "FLK" }, { "6", "GE" }, };
 		SCTool.selectRange("A1");
 		typeKeys("3<down>5<down>4<down>2<down>6<down>1");
@@ -179,15 +155,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "RowsSortWithOptionsCopyResultTo.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
-		// Reopen and verify sorted result
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		saveAndReopen(saveTo);
+		
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Saved sorted result", expectedSortedResult, SCTool.getCellTexts("$Sheet3.$A4:$B9"));
 		assertArrayEquals("Saved sorted result to cell range", expectedSortedResult, SCTool.getCellTexts("$Sheet2.$A1:$B6"));
@@ -228,21 +198,11 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortCriteriaSortFirstBy.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
-		// Reopen, "Data->Sort...", choose "Descending", sort first by Column A
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		saveAndReopen(saveTo);
+		
 		calc.waitForExistence(10, 2);
+		// "Data->Sort...", choose "Descending", sort first by Column A
 		app.dispatch(".uno:DataSort");
 		sortPageDescending1.check();
 		sortPageBy1.select(1); // "Column A"
@@ -287,21 +247,11 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortCriteriaSortSecondBy.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
-		// Reopen, "Data->Sort...", sort first by Column B "Ascending", sort
-		// second by Column A "Descending"
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		saveAndReopen(saveTo);
+		
+//		// "Data->Sort...", sort first by Column B "Ascending", sort
+//		// second by Column A "Descending"
 		calc.waitForExistence(10, 2);
 		app.dispatch(".uno:DataSort");
 		sortPageBy1.select(2); // "Column B"
@@ -356,21 +306,11 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortCriteriaSortThirdBy.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
+		saveAndReopen(saveTo);
+		
 		// Reopen, "Data->Sort...", sort first by Column B "Ascending", sort
 		// second by Column C "Descending"
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
 		app.dispatch(".uno:DataSort");
 		sortPageBy1.select(2); // "Column B"
@@ -404,20 +344,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		saveTo = getPath("temp/" + "SortCriteriaSortThirdBy1.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
+		saveAndReopen(saveTo);
 
-		// Reopen and verify data sort is not lost
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Saved sorted result", expectedResultSortThirdByA, SCTool.getCellTexts("A1:C9"));
 	}
@@ -527,20 +456,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortOptionsCustomSortOrderPredefineFromCopyList.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
+		saveAndReopen(saveTo);
 
-		// Reopen and verify sorted result
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
 		app.dispatch(".uno:SelectTables");
 		scSheetsList.select(0); // Sheet 1
@@ -584,8 +502,7 @@ public class SortDialogSetting {
 		app.dispatch(".uno:CloseDoc");
 		// Dependencies end
 
-		// Create a new spreadsheet document
-		app.dispatch("private:factory/scalc");
+		AppTool.newSpreadsheet();
 
 		// Input some data
 		String[][] data = new String[][] { { "Color" }, { "black" }, { "yellow" }, { "blue" }, { "black" }, { "white" }, { "red" }, };
@@ -650,20 +567,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortOptionsCustomSortOrderPredefineFromNewList.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
-
-		// Reopen and verify sorted result
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
+		saveAndReopen(saveTo);
+		
 		calc.waitForExistence(10, 2);
 		app.dispatch(".uno:SelectTables");
 		scSheetsList.select(0); // Sheet 1
@@ -712,20 +618,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortOptionsDirectionSortColumns.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
+		saveAndReopen(saveTo);
 
-		// Reopen and verify sorted result
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Saved sorted result", expectedSortedResult, SCTool.getCellTexts("A1:G1"));
 	}
@@ -802,20 +697,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortOptionsIncludeFormats.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
+		saveAndReopen(saveTo);
 
-		// Reopen and verify sorted result
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Original data", dataWithCurrencyFormats, SCTool.getCellTexts("$Sheet1.$A1:$A7"));
 		assertArrayEquals("Saved sorted result exclude format", expectedSortedResultExcludeFormat, SCTool.getCellTexts("$Sheet2.$A1:$A7"));
@@ -879,20 +763,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortOptionsMultipleSortDataOverlap.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
+		saveAndReopen(saveTo);
 
-		// Reopen and verify sorted result
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Saved sorted result", expectedSortedResultDataOverlap, SCTool.getCellTexts("A1:A8"));
 		assertArrayEquals("Original data2", data2, SCTool.getCellTexts("G10:G14"));
@@ -975,20 +848,9 @@ public class SortDialogSetting {
 
 		// Save and close document
 		String saveTo = getPath("temp/" + "SortOptionsMultipleSortParameterSaved.ods");
-		app.dispatch(".uno:SaveAs");
 		FileUtil.deleteFile(saveTo);
-		submitSaveDlg(saveTo);
-		if (activeMsgBox.exists()) {
-			activeMsgBox.yes();
-			sleep(2);
-		}
-		sleep(5);
-		app.dispatch(".uno:CloseDoc");
-		openStartcenter();
+		saveAndReopen(saveTo);
 
-		// Reopen and verify sorted result and sort parameters
-		app.dispatch(".uno:Open");
-		submitOpenDlg(saveTo);
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Saved sorted result1", expectedSortedResult1, SCTool.getCellTexts("A1:A5"));
 		assertArrayEquals("Saved sorted result2", expectedSortedResult2, SCTool.getCellTexts("G10:G15"));
@@ -999,5 +861,6 @@ public class SortDialogSetting {
 		assertFalse("Include formats should not be checked", sortOptionsPageIncludeFormats.isChecked());
 		sortOptionsPage.ok();
 	}
+
 
 }

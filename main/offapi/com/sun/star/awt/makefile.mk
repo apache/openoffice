@@ -100,6 +100,7 @@ IDLFILES=\
 	Gradient.idl\
 	GradientStyle.idl\
     ImageAlign.idl\
+    ImageDrawMode.idl\
     ImagePosition.idl\
     ImageScaleMode.idl\
     ImageStatus.idl\
@@ -190,12 +191,8 @@ IDLFILES=\
 	UnoControlRoadmapModel.idl\
 	UnoControlScrollBar.idl\
 	UnoControlScrollBarModel.idl\
-	UnoControlSimpleAnimation.idl\
-	UnoControlSimpleAnimationModel.idl\
 	UnoControlSpinButton.idl\
 	UnoControlSpinButtonModel.idl\
-	UnoControlThrobber.idl\
-	UnoControlThrobberModel.idl\
 	UnoControlTimeField.idl\
 	UnoControlTimeFieldModel.idl\
 	VclContainerEvent.idl\
@@ -287,9 +284,7 @@ IDLFILES=\
 	XSystemDependentMenuPeer.idl\
 	XSystemDependentWindowPeer.idl\
 	SystemDependentXWindow.idl\
-	XSimpleAnimation.idl\
 	XSimpleTabController.idl\
-	XThrobber.idl\
 	XTabController.idl\
 	XTabControllerModel.idl\
         XTabListener.idl\

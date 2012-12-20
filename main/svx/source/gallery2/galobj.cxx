@@ -91,11 +91,12 @@ sal_Bool SgaObject::CreateThumb( const Graphic& rGraphic )
 		            else
 		                aBmpSize.Height() = FRound( aBmpSize.Width() / fFactorLog );
 
-		            aBmpEx.SetSizePixel( aBmpSize );
+		            aBmpEx.SetSizePixel( aBmpSize, BMP_SCALE_BESTQUALITY );
 		        }
 		    }
 
-			aThumbBmp = aBmpEx.GetBitmap( &aWhite );
+            // take over BitmapEx
+			aThumbBmp = aBmpEx;
 
 			if( ( aBmpSize.Width() <= S_THUMB ) && ( aBmpSize.Height() <= S_THUMB ) )
 			{
@@ -108,8 +109,10 @@ sal_Bool SgaObject::CreateThumb( const Graphic& rGraphic )
 				const Size	aNewSize( Max( (long) (fFactor < 1. ? S_THUMB * fFactor : S_THUMB), 8L ),
 									  Max( (long) (fFactor < 1. ? S_THUMB : S_THUMB / fFactor), 8L ) );
 
-				if( aThumbBmp.Scale( (double) aNewSize.Width() / aBmpSize.Width(),
-									 (double) aNewSize.Height() / aBmpSize.Height(), BMP_SCALE_INTERPOLATE ) )
+				if(aThumbBmp.Scale(
+                    (double) aNewSize.Width() / aBmpSize.Width(),
+                    (double) aNewSize.Height() / aBmpSize.Height(), 
+                    BMP_SCALE_BESTQUALITY ) )
 				{
 					aThumbBmp.Convert( BMP_CONVERSION_8BIT_COLORS );
 					bRet = sal_True;
@@ -127,8 +130,8 @@ sal_Bool SgaObject::CreateThumb( const Graphic& rGraphic )
 		else
 			aSize.Height() = (sal_Int32)( S_THUMB / fFactor );
 
-        const GraphicConversionParameters aParameters(aSize);
-        aThumbBmp = rGraphic.GetBitmap(aParameters);
+        const GraphicConversionParameters aParameters(aSize, false, true, true, true);
+        aThumbBmp = rGraphic.GetBitmapEx(aParameters);
 
 		if( !aThumbBmp.IsEmpty() )
 		{
@@ -352,7 +355,7 @@ SgaObjectSound::~SgaObjectSound()
 
 // ------------------------------------------------------------------------
 
-Bitmap SgaObjectSound::GetThumbBmp() const
+BitmapEx SgaObjectSound::GetThumbBmp() const
 {
 	sal_uInt16 nId;
 
@@ -373,9 +376,8 @@ Bitmap SgaObjectSound::GetThumbBmp() const
 	}
 
 	const BitmapEx  aBmpEx( GAL_RESID( nId ) );
-	const Color     aTransColor( COL_WHITE );
-
-	return aBmpEx.GetBitmap( &aTransColor );
+	
+    return aBmpEx;
 }
 
 // ------------------------------------------------------------------------
@@ -519,78 +521,54 @@ sal_Bool SgaObjectSvDraw::CreateThumb( const FmFormModel& rModel )
 	sal_Bool		bRet = sal_False;
 
 	if ( CreateIMapGraphic( rModel, aGraphic, aImageMap ) )
+    {
 		bRet = SgaObject::CreateThumb( aGraphic );
+    }
 	else
 	{
-        VirtualDevice aVDev;
+        const FmFormPage* pPage = static_cast< const FmFormPage* >(rModel.GetPage(0));
 
-        aVDev.SetOutputSizePixel( Size( S_THUMB*2, S_THUMB*2 ) );
-
-        bRet = DrawCentered( &aVDev, rModel );
-        if( bRet )
+        if(pPage)
         {
-            aThumbBmp = aVDev.GetBitmap( Point(), aVDev.GetOutputSizePixel() );
+            const Rectangle aObjRect(pPage->GetAllObjBoundRect());
 
-			Size aMS( 2, 2 );
-			BmpFilterParam aParam( aMS );
-			aThumbBmp.Filter( BMP_FILTER_MOSAIC, &aParam );
-			aThumbBmp.Scale( Size( S_THUMB, S_THUMB ) );
+            if(aObjRect.GetWidth() && aObjRect.GetHeight())
+            {
+                VirtualDevice aVDev;
+                FmFormView aView(const_cast< FmFormModel* >(&rModel), &aVDev);
 
-	        aThumbBmp.Convert( BMP_CONVERSION_8BIT_COLORS );
+                aView.ShowSdrPage(const_cast< FmFormPage* >(pPage));
+                aView.MarkAllObj();
+                aThumbBmp = aView.GetMarkedObjBitmapEx();
+
+                const Size aDiscreteSize(aThumbBmp.GetSizePixel());
+
+                if(aDiscreteSize.Width() && aDiscreteSize.Height())
+                {
+                    sal_uInt32 nTargetSizeX(S_THUMB);
+                    sal_uInt32 nTargetSizeY(S_THUMB);
+
+                    if(aDiscreteSize.Width() > aDiscreteSize.Height())
+                    {
+                        nTargetSizeY = (aDiscreteSize.Height() * nTargetSizeX) / aDiscreteSize.Width();
+                    }
+                    else
+                    {
+                        nTargetSizeX = (aDiscreteSize.Width() * nTargetSizeY) / aDiscreteSize.Height();
+                    }
+
+                    if(!!aThumbBmp)
+                    {
+                        aThumbBmp.Scale(Size(nTargetSizeX, nTargetSizeY), BMP_SCALE_BESTQUALITY);
+                        aThumbBmp.Convert(BMP_CONVERSION_8BIT_COLORS);
+                        bRet = true;
+                    }
+                }
+            }
         }
 	}
 
 	return bRet;
-}
-
-// ------------------------------------------------------------------------
-
-sal_Bool SgaObjectSvDraw::DrawCentered( OutputDevice* pOut, const FmFormModel& rModel )
-{
-    const FmFormPage*   pPage = static_cast< const FmFormPage* >( rModel.GetPage( 0 ) );
-    sal_Bool                bRet = sal_False;
-
-    if( pOut && pPage )
-    {
-        const Rectangle aObjRect( pPage->GetAllObjBoundRect() );
-        const Size      aOutSizePix( pOut->GetOutputSizePixel() );
-
-        if( aObjRect.GetWidth() && aObjRect.GetHeight() && aOutSizePix.Width() > 2 && aOutSizePix.Height() > 2 )
-        {
-            FmFormView      aView( const_cast< FmFormModel* >( &rModel ), pOut );
-            MapMode	        aMap( rModel.GetScaleUnit() );
-            Rectangle       aDrawRectPix( Point( 1, 1 ), Size( aOutSizePix.Width() - 2, aOutSizePix.Height() - 2 ) );
-            const double    fFactor  = (double) aObjRect.GetWidth() / aObjRect.GetHeight();
-            Fraction        aFrac( FRound( fFactor < 1. ? aDrawRectPix.GetWidth() * fFactor : aDrawRectPix.GetWidth() ),
-                                   pOut->LogicToPixel( aObjRect.GetSize(), aMap ).Width() );
-
-            aMap.SetScaleX( aFrac );
-            aMap.SetScaleY( aFrac );
-
-            const Size aDrawSize( pOut->PixelToLogic( aDrawRectPix.GetSize(), aMap ) );
-            Point aOrigin( pOut->PixelToLogic( aDrawRectPix.TopLeft(), aMap ) );
-
-            aOrigin.X() += ( ( aDrawSize.Width() - aObjRect.GetWidth() ) >> 1 ) - aObjRect.Left();
-            aOrigin.Y() += ( ( aDrawSize.Height() - aObjRect.GetHeight() ) >> 1 ) - aObjRect.Top();
-            aMap.SetOrigin( aOrigin );
-
-            aView.SetPageVisible( sal_False );
-            aView.SetBordVisible( sal_False );
-            aView.SetGridVisible( sal_False );
-            aView.SetHlplVisible( sal_False );
-            aView.SetGlueVisible( sal_False );
-
-            pOut->Push();
-            pOut->SetMapMode( aMap );
-            aView.ShowSdrPage( const_cast< FmFormPage* >( pPage ));
-            aView.CompleteRedraw( pOut, Rectangle( pOut->PixelToLogic( Point() ), pOut->GetOutputSize() ) );
-            pOut->Pop();
-
-            bRet = sal_True;
-        }
-    }
-
-    return bRet;
 }
 
 // ------------------------------------------------------------------------
@@ -613,3 +591,5 @@ void SgaObjectSvDraw::ReadData( SvStream& rIn, sal_uInt16& rReadVersion )
 		rIn >> aTmpStr; aTitle = String( aTmpStr.GetBuffer(), RTL_TEXTENCODING_UTF8 );
 	}
 }
+
+// eof
