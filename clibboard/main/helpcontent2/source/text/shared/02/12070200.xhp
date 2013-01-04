@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0212070200xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Fields</title>
+<filename>/text/shared/02/12070200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <switch select="appl"><case select="WRITER">
+  <bookmark branch="hid/sw:RadioButton:DLG_AP_INSERT_DB_SEL:RB_AS_FIELD" xml-lang="en-US" id="bm_id3153116"/><paragraph role="heading" level="1" id="hd_id3149991" l10n="U" xml-lang="en-US" oldref="1">Fields</paragraph>
+  <bookmark xml-lang="en-US" branch="index" id="bm_id3149987"><bookmark_value>database contents; inserting as fields</bookmark_value></bookmark><paragraph l10n="U" xml-lang="en-US" oldref="8" id="par_id3149987" role="paragraph"><ahelp hid="SW_RADIOBUTTON_DLG_AP_INSERT_DB_SEL_RB_AS_FIELD" visibility="hidden">Inserts data selected from the data source browser into the document as fields.</ahelp>In the <emph>Insert Database Columns</emph> dialog, select the <link href="text/swriter/01/04090000.xhp" name="Fields">Fields</link> to insert the selected data into the document as fields. These <link href="text/swriter/01/04090006.xhp" name="database fields">database fields</link> work as wildcards for the individual database columns and can be used for form letters. Click the <link href="text/shared/02/12080000.xhp" name="Data to Fields"><emph>Data to Fields</emph></link> icon to match the contents of the fields to the currently selected record.</paragraph>
+  <paragraph xml-lang="en-US" role="note" id="par_id3153114" l10n="U" oldref="9">If several records are selected when you choose the <emph>Data to Text</emph> function, the mail merge fields will be inserted according to the number of records. Also, a field command such as "Next record" will be inserted automatically between individual field command blocks.</paragraph>
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3145090" l10n="U" oldref="10">The <emph>Insert Database Columns</emph> dialog lets you define which database fields to insert into the document and how to format the paragraphs.</paragraph>
+  <paragraph role="heading" level="2" id="hd_id3156136" l10n="U" xml-lang="en-US" oldref="2">Fields</paragraph>
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3147571" l10n="U" oldref="11">In the <emph>Fields</emph> area, use the arrow button to select the database table columns into which you want to insert field contents.</paragraph>
+  <section id="ankerfuertextoption">
+  <bookmark branch="hid/sw:ListBox:DLG_AP_INSERT_DB_SEL:LB_TXT_DB_COLUMN" xml-lang="en-US" id="bm_id3156411"/><paragraph role="heading" level="3" id="hd_id3153345" l10n="U" xml-lang="en-US" oldref="3">Database columns</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3155535" xml-lang="en-US" oldref="12">Lists all columns of the database table, which can be accepted in the selection list box to insert them into the document. <ahelp hid="SW_LISTBOX_DLG_AP_INSERT_DB_SEL_LB_TXT_DB_COLUMN" visibility="visible">Select the database columns that you want to insert it in the document.</ahelp></paragraph>
+  <bookmark branch="hid/sw:ImageButton:DLG_AP_INSERT_DB_SEL:IB_DBCOL_TOEDIT" xml-lang="en-US" id="bm_id3149178"/><paragraph role="heading" level="3" id="hd_id3152551" l10n="U" xml-lang="en-US" oldref="4">&gt;</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3145345" xml-lang="en-US" oldref="13"><ahelp visibility="visible" hid="SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_TOEDIT">Moves the fields that you selected in the <emph>Database columns</emph> list box into the selection field.</ahelp> You can also double-click the entry to select it.</paragraph>
+  <bookmark branch="hid/sw:MultiLineEdit:DLG_AP_INSERT_DB_SEL:ED_DB_TEXT" xml-lang="en-US" id="bm_id3152997"/><paragraph role="heading" level="3" id="hd_id3166411" l10n="U" xml-lang="en-US" oldref="5">Select</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3163802" xml-lang="en-US" oldref="14"><ahelp hid="SW_MULTILINEEDIT_DLG_AP_INSERT_DB_SEL_ED_DB_TEXT" visibility="visible">Lists the database columns that you selected to be inserted into the document. You can also enter text here. This text will be also inserted into the document.</ahelp> The entries' order in the selection field corresponds to the data order in the document.</paragraph>
+  <embed href="text/shared/02/12070100.xhp#format"/>
+  <bookmark branch="hid/sw:ListBox:DLG_AP_INSERT_DB_SEL:LB_DB_PARA_COLL" xml-lang="en-US" id="bm_id3154852"/><paragraph role="heading" level="3" id="hd_id3153257" l10n="U" xml-lang="en-US" oldref="7">Paragraph Style</paragraph>
+  <paragraph xml-lang="en-US" oldref="15" id="par_id3158430" l10n="U" role="paragraph">By default, the inserted paragraphs are formatted with the current Paragraph Styles. This format corresponds to the "none" entry in the <emph>Paragraph Style</emph> list box. <ahelp hid="SW_LISTBOX_DLG_AP_INSERT_DB_SEL_LB_DB_PARA_COLL" visibility="visible">This is where you can select other Paragraph Styles to apply to the paragraph you want to insert into the document.</ahelp> The list box displays the available Paragraph Styles defined in <item type="productname">%PRODUCTNAME</item> and managed in the <link href="text/swriter/01/05130000.xhp" name="Style Catalog">Style Catalog</link>.</paragraph>
+  </section>
+  </case></switch>
+ </body>
+</helpdocument>

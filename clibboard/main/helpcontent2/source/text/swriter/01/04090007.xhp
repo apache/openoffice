@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104090007xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Special Tags</title>
+<filename>/text/swriter/01/04090007.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-11-27T08:27:44">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154106"><bookmark_value>tags; in $[officename] Writer</bookmark_value>
+<bookmark_value>$[officename] Writer; special HTML tags</bookmark_value>
+<bookmark_value>HTML;special tags for fields</bookmark_value>
+<bookmark_value>fields;HTML import and export</bookmark_value>
+<bookmark_value>time fields;HTML</bookmark_value>
+<bookmark_value>date fields;HTML</bookmark_value>
+<bookmark_value>DocInformation fields</bookmark_value>
+</bookmark><comment>MW changed "$[officename] Writer;tags" to "$[officename];special HTML tags"</comment>
+<paragraph role="heading" id="hd_id3154106" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/04090007.xhp" name="Special Tags">Special Tags</link></paragraph>
+<paragraph role="paragraph" id="par_id3153669" xml-lang="en-US" l10n="U" oldref="3">When you save a document that contains fields as an HTML document, $[officename] automatically converts date, time, and DocInformation fields to special HTML tags. The field contents are inserted between the opening and closing HTML tags of the converted fields. These special HTML tags do not correspond to standard HTML tags.</paragraph>
+<paragraph role="paragraph" id="par_id3152960" xml-lang="en-US" l10n="U" oldref="4">$[officename] Writer fields are identified by the &lt;SDFIELD&gt; tag in an HTML document. The field type, the format, and the name of the special field are included in the opening HTML tag. The format of a field tag that is recognized by an HTML filter depends on the field type.</paragraph>
+<section id="datumuhrzeit">
+<paragraph role="heading" id="hd_id3154570" xml-lang="en-US" level="2" l10n="U" oldref="5">Date and Time Fields</paragraph>
+<paragraph role="paragraph" id="par_id3149696" xml-lang="en-US" l10n="U" oldref="6">For "Date" and "Time" fields, the TYPE parameter equals DATETIME. The format of the date or the time is specified by the SDNUM parameter, for example, DD:MM:YY for dates, or HH:MM:SS for time.</paragraph>
+<paragraph role="paragraph" id="par_id3155183" xml-lang="en-US" l10n="U" oldref="7">For fixed date and time fields, the date or the time is specified by the SDVAL parameter.</paragraph>
+<paragraph role="paragraph" id="par_id3149485" xml-lang="en-US" l10n="U" oldref="8">Examples of date and time special HTML tags that are recognized by $[officename] as fields are shown in the following table:</paragraph>
+<table id="tbl_id3143275">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151257" xml-lang="en-US" l10n="U" oldref="9">Fields</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3148970" xml-lang="en-US" l10n="U" oldref="10">$[officename] Tag</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147102" xml-lang="en-US" l10n="U" oldref="11">Date is fixed</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153634" xml-lang="en-US" l10n="U" oldref="12">&lt;SDFIELD TYPE=DATETIME SDVAL="35843,4239988426" SDNUM="1031;1031;DD/MM/YY"&gt;17/02/98&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155137" xml-lang="en-US" l10n="U" oldref="13">Date is variable</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156275" xml-lang="en-US" l10n="U" oldref="14">&lt;SDFIELD TYPE=DATETIME SDNUM="1031;1031;DD/MM/YY"&gt;17/02/98&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145774" xml-lang="en-US" l10n="U" oldref="15">Time is fixed</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155915" xml-lang="en-US" l10n="U" oldref="16">&lt;SDFIELD TYPE=DATETIME SDVAL="35843,4240335648" SDNUM="1031;1031;HH:MM:SS"&gt;10:10:36&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150110" xml-lang="en-US" l10n="U" oldref="17">Time is variable</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155862" xml-lang="en-US" l10n="U" oldref="18">&lt;SDFIELD TYPE=DATETIME SDNUM="1031;1031;HH:MM:SS"&gt;10:10:36&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<section id="dokumentinfo">
+<paragraph role="heading" id="hd_id3147409" xml-lang="en-US" level="2" l10n="U" oldref="23">DocInformation Fields</paragraph>
+<paragraph role="paragraph" id="par_id3147487" xml-lang="en-US" l10n="U" oldref="24">For DocInformation fields, the TYPE parameter equals DOCINFO. The SUBTYPE parameter displays the specific field type, for example, for the "Created" DocInformation field, SUBTYPE=CREATE. For date and time DocInformation fields, the FORMAT parameter equals DATE or TIME, and the SDNUM parameter indicates the number format that is used. The SDFIXED parameter indicates if the content of the DocInformation field is fixed or not.</paragraph>
+<paragraph role="paragraph" id="par_id3147501" xml-lang="en-US" l10n="U" oldref="25">The contents of a fixed date or time field are equal to the SDVAL parameter, otherwise the contents are equal to the text found between the SDFIELD HTML tags.</paragraph>
+<paragraph role="paragraph" id="par_id3149562" xml-lang="en-US" l10n="U" oldref="26">Examples of DocInformation special HTML tags that are recognized by $[officename] as fields are shown in the following table:</paragraph>
+<table id="tbl_id3145265">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147738" xml-lang="en-US" l10n="U" oldref="27">Fields</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3146334" xml-lang="en-US" l10n="U" oldref="28">$[officename] Tag</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149846" xml-lang="en-US" l10n="U" oldref="29">Description (fixed content)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148863" xml-lang="en-US" l10n="U" oldref="30">&lt;SDFIELD TYPE=DOCINFO SUBTYPE=COMMENT SDFIXED&gt;Description&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151083" xml-lang="en-US" l10n="U" oldref="31">Creation date</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153298" xml-lang="en-US" l10n="CHG" oldref="32">&lt;SDFIELD TYPE=DOCINFO SUBTYPE=CREATE FORMAT=DATE SDNUM="1031;1031;QQ YY"&gt;1. Quarter 98&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150175" xml-lang="en-US" l10n="U" oldref="33">Creation time (fixed content)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156134" xml-lang="en-US" l10n="U" oldref="34">&lt;SDFIELD TYPE=DOCINFO SUBTYPE=CREATE FORMAT=TIME SDVAL="0" SDNUM="1031;1031;HH:MM:SS AM/PM" SDFIXED&gt;03:58:35 PM&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155077" xml-lang="en-US" l10n="U" oldref="35">Modification date</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154330" xml-lang="en-US" l10n="U" oldref="36">&lt;SDFIELD TYPE=DOCINFO SUBTYPE=CHANGE FORMAT=DATE SDNUM="1031;1031;NN DD MMM, YY"&gt;Mo 23 Feb, 98&lt;/SDFIELD&gt;</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+</body>
+</helpdocument>

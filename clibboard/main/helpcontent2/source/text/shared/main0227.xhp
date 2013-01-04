@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedmain0227xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Edit Points Bar</title>
+<filename>/text/shared/main0227.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="bezier">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149987"><bookmark_value>lines; editing points</bookmark_value>
+<bookmark_value>curves; editing points</bookmark_value>
+<bookmark_value>Edit Points bar</bookmark_value>
+</bookmark><comment>mw deleted "points;editing"</comment>
+<bookmark xml-lang="en-US" branch="hid/HID_BEZIER_TOOLBOX" id="bm_id3156418" localize="false"/><paragraph role="heading" id="hd_id3149987" xml-lang="en-US" level="1" l10n="CHG" oldref="39"><link href="text/shared/main0227.xhp" name="Edit Points Bar">Edit Points Bar</link></paragraph>
+<paragraph role="paragraph" id="par_id3150402" xml-lang="en-US" l10n="CHG" oldref="40"><ahelp hid="HID_BEZIER_TOOLBOX">The <emph>Edit Points </emph>Bar appears when you select a polygon object and click <emph>Edit Points</emph>.</ahelp></paragraph>
+</section>
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/simpress/guide/3d_create.xhp#3d_create"/>
+</case>
+<case select="DRAW"><embed href="text/simpress/guide/3d_create.xhp#3d_create"/>
+</case>
+</switch>
+<paragraph role="paragraph" id="par_id3144762" xml-lang="en-US" l10n="U" oldref="68">The functions provided allow you to edit the points of a curve or an object converted to a curve. The following icons are available:</paragraph>
+<paragraph role="heading" id="hd_id3153105" xml-lang="en-US" level="2" l10n="U" oldref="42">Edit Points</paragraph>
+<paragraph role="paragraph" id="par_id3159151" xml-lang="en-US" l10n="U" oldref="43">The <link href="text/shared/01/05270000.xhp" name="Edit Points"><emph>Edit Points</emph></link> icon allows you to activate or deactivate the edit mode for Bézier objects. In the edit mode, individual points of the drawing object can be selected.</paragraph>
+<table id="tbl_id3149664">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145366" xml-lang="en-US" l10n="E">
+<image id="img_id3153951" src="res/commandimagelist/sc_toggleobjectbeziermode.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153951" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150105" xml-lang="en-US" l10n="U" oldref="44">Edit Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierMove" id="bm_id4528551" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierMove" id="bm_id3153140" localize="false"/><paragraph role="heading" id="hd_id3146976" xml-lang="en-US" level="2" l10n="U" oldref="45">Move Points</paragraph>
+<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U" oldref="46"><ahelp hid=".uno:BezierMove">Activates a mode in which you can move points.</ahelp> The mouse pointer displays a small empty square when resting on a point. Drag that point to another location. The curve on both sides of the point follows the movement; the section of the curve between the next points changes shape.</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="47">Point at the curve between two points or within a closed curve and drag the mouse to shift the entire curve without distorting the form.</paragraph>
+<table id="tbl_id3152940">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154096" xml-lang="en-US" l10n="E">
+<image id="img_id3149377" src="res/commandimagelist/sc_beziermove.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149377" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147397" xml-lang="en-US" l10n="U" oldref="48">Move Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierInsert" id="bm_id3061552" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierInsert" id="bm_id3150418" localize="false"/><paragraph role="heading" id="hd_id3150115" xml-lang="en-US" level="2" l10n="U" oldref="49">Insert Points</paragraph>
+<paragraph role="paragraph" id="par_id3160478" xml-lang="en-US" l10n="U" oldref="50"><ahelp hid=".uno:BezierInsert">Activates the insert mode. This mode allows you to insert points.</ahelp> You can also move points, just as in the move mode. If, however, you click at the curve between two points and move the mouse a little while holding down the mouse button you insert a new point. The point is a smooth point, and the lines to the control points are parallel and remain so when moved.</paragraph>
+<paragraph role="paragraph" id="par_id3157846" xml-lang="en-US" l10n="U" oldref="51">If you wish to create a corner point you must first insert either a smooth or a symmetrical point which is then converted to a corner point by using <emph>Corner Point</emph>.</paragraph>
+<table id="tbl_id3156180">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153838" xml-lang="en-US" l10n="E">
+<image id="img_id3146969" src="res/commandimagelist/sc_bezierinsert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146969" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153710" xml-lang="en-US" l10n="U" oldref="54">Insert Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierDelete" id="bm_id7852235" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierDelete" id="bm_id3154755" localize="false"/><paragraph role="heading" id="hd_id3149020" xml-lang="en-US" level="2" l10n="U" oldref="55">Delete Points</paragraph>
+<paragraph role="paragraph" id="par_id3148917" xml-lang="en-US" l10n="U" oldref="56"><ahelp hid=".uno:BezierDelete">Use the <emph>Delete Points</emph> icon to delete one or several selected points. If you wish to select several points click the appropriate points while holding down the Shift key.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153766" xml-lang="en-US" l10n="U" oldref="57">First select the points to be deleted, and then click this icon, or press Del.</paragraph>
+<table id="tbl_id3159266">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147321" xml-lang="en-US" l10n="E">
+<image id="img_id3146920" src="res/commandimagelist/sc_bezierdelete.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146920" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155961" xml-lang="en-US" l10n="U" oldref="58">Delete Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierCutLine" id="bm_id1077279" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierCutLine" id="bm_id3163807" localize="false"/><paragraph role="heading" id="hd_id3147361" xml-lang="en-US" level="2" l10n="U" oldref="59">Split Curve</paragraph>
+<paragraph role="paragraph" id="par_id3151248" xml-lang="en-US" l10n="U" oldref="60"><ahelp hid=".uno:BezierCutLine">The<emph> Split Curve </emph>icon splits a curve. Select the point or points where you want to split the curve, then click the icon</ahelp>.</paragraph>
+<table id="tbl_id3145766">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153788" xml-lang="en-US" l10n="E">
+<image id="img_id3148489" src="res/commandimagelist/sc_beziercutline.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148489" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152581" xml-lang="en-US" l10n="U" oldref="61">Split Curve</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierConvert" id="bm_id2868052" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierConvert" id="bm_id3146808" localize="false"/><paragraph role="heading" id="hd_id3150345" xml-lang="en-US" level="2" l10n="U" oldref="62">Convert To Curve</paragraph>
+<paragraph role="paragraph" id="par_id3148420" xml-lang="en-US" l10n="U" oldref="63"><ahelp hid=".uno:BezierConvert">Converts a curve into a straight line or converts a straight line into a curve.</ahelp> If you select a single point, the curve before the point will be converted. If two points are selected, the curve between both points will be converted. If you select more than two points, each time you click this icon, a different portion of the curve will be converted. If necessary, round points are converted into corner points and corner points are converted into round points.</paragraph>
+<paragraph role="paragraph" id="par_id3150304" xml-lang="en-US" l10n="U" oldref="64">If a certain section of the curve is straight, the end points of the line have a maximum of one control point each. They cannot be modified to round points unless the straight line is converted back to a curve.</paragraph>
+<table id="tbl_id3147132">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3158212" xml-lang="en-US" l10n="E">
+<image id="img_id3149036" src="res/commandimagelist/sc_bezierconvert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149036" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3158445" xml-lang="en-US" l10n="U" oldref="65">Convert To Curve</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierEdge" id="bm_id1940216" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierEdge" id="bm_id3154585" localize="false"/><paragraph role="heading" id="hd_id3153199" xml-lang="en-US" level="2" l10n="U" oldref="66">Corner Point</paragraph>
+<paragraph role="paragraph" id="par_id3148460" xml-lang="en-US" l10n="U" oldref="67"><ahelp hid=".uno:BezierEdge">Converts the selected point or points into corner points.</ahelp> Corner points have two movable control points, which are independent from each other. A curved line, therefore, does not go straight through a corner point, but forms a corner.</paragraph>
+<table id="tbl_id3150982">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154576" xml-lang="en-US" l10n="E">
+<image id="img_id3154201" src="res/commandimagelist/sc_bezieredge.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154201" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3166429" xml-lang="en-US" l10n="U" oldref="25">Corner Point</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierSmooth" id="bm_id4189903" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierSmooth" id="bm_id3155379" localize="false"/><paragraph role="heading" id="hd_id3166436" xml-lang="en-US" level="2" l10n="U" oldref="27">Smooth Transition</paragraph>
+<paragraph role="paragraph" id="par_id3155510" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid=".uno:BezierSmooth">Converts a corner point or symmetrical point into a smooth point.</ahelp> Both control points of the corner point are aligned in parallel, and can only be moved simultaneously. The control points may differentiate in length, allowing you to vary the degree of curvature.</paragraph>
+<table id="tbl_id3154371">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148813" xml-lang="en-US" l10n="E">
+<image id="img_id3151183" src="res/commandimagelist/sc_beziersmooth.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151183" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154258" xml-lang="en-US" l10n="U" oldref="28">Smooth Transition</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierSymmetric" id="bm_id184203" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierSymmetric" id="bm_id3154530" localize="false"/><paragraph role="heading" id="hd_id3159622" xml-lang="en-US" level="2" l10n="U" oldref="30">Symmetric Transition</paragraph>
+<paragraph role="paragraph" id="par_id3155812" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid=".uno:BezierSymmetric">This icon converts a corner point or a smooth point into a symmetrical point.</ahelp> Both control points of the corner point are aligned in parallel and have the same length. They can only be moved simultaneously and the degree of curvature is the same in both directions.</paragraph>
+<table id="tbl_id3148599">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153818" xml-lang="en-US" l10n="E">
+<image id="img_id3159218" src="res/commandimagelist/sc_beziersymmetric.png" width="0.222inch" height="0.222inch"><alt id="alt_id3159218" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146866" xml-lang="en-US" l10n="U" oldref="31">Symmetric Transition</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierClose" id="bm_id4041301" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierClose" id="bm_id3150529" localize="false"/><paragraph role="heading" id="hd_id3146786" xml-lang="en-US" level="2" l10n="U" oldref="33">Close Bézier</paragraph>
+<paragraph role="paragraph" id="par_id3156032" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid=".uno:BezierClose">Closes a line or a curve.</ahelp> A line is closed by connecting the last point with the first point, indicated by an enlarged square.</paragraph>
+<table id="tbl_id3144508">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154344" xml-lang="en-US" l10n="E">
+<image id="img_id3148607" src="res/commandimagelist/sc_bezierclose.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148607" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147070" xml-lang="en-US" l10n="U" oldref="34">Close Bézier</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierEliminatePoints" id="bm_id3240924" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:BezierEliminatePoints" id="bm_id3154958" localize="false"/><paragraph role="heading" id="hd_id3156351" xml-lang="en-US" level="2" l10n="U" oldref="36">Eliminate Points</paragraph>
+<paragraph role="paragraph" id="par_id3149441" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid=".uno:BezierEliminatePoints">Marks the current point or the selected points for deletion.</ahelp> This happens in the event that the point is located on a straight line. If you convert a curve or a polygon with the <emph>Convert to Curve </emph>icon into a straight line or you change a curve with the mouse so that a point lies on the straight line, it is removed. The angle from which the point reduction is to take place <switchinline select="appl"><caseinline select="DRAW">can be set by choosing <link href="text/shared/optionen/01070300.xhp" name="Drawing - Grid"><emph>%PRODUCTNAME Draw - Grid</emph></link> in the Options dialog box</caseinline><caseinline select="IMPRESS">can be set by choosing <link href="text/shared/optionen/01070300.xhp" name="Presentation - Grid"><emph>%PRODUCTNAME Impress - Grid</emph></link> in the Options dialog box</caseinline><defaultinline>is 15° by default.</defaultinline></switchinline></paragraph>
+<table id="tbl_id3150892">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148970" xml-lang="en-US" l10n="E">
+<image id="img_id3155385" src="res/commandimagelist/sc_beziereliminatepoints.png" width="0.222inch" height="0.222inch"><alt id="alt_id3155385" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152869" xml-lang="en-US" l10n="U" oldref="37">Eliminate Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</body>
+</helpdocument>

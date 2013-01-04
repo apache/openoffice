@@ -1,0 +1,105 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+Installation gid_Installation_Ure
+    ProductName = "${PRODUCTNAME}";
+    ProductVersion = "${PRODUCTVERSION}";
+    ProductExtension = "${PRODUCTEXTENSION}";
+    OOoBaseVersion = "${OOOBASEVERSION}";
+#if defined WNT
+    DefaultDestPath = "<winprogpath>\%PRODUCTNAME";
+#else
+    DefaultDestPath = "/opt/%PRODUCTNAME";
+#endif
+End
+
+Directory gid_Dir_Ooo_Openofficeorg
+    ParentID = PREDEFINED_PROGDIR;
+  #ifdef WNT
+    HostName = "OpenOffice.org";
+  #else
+    HostName = "openoffice.org";
+  #endif
+    Styles = (ISINSTALLLOCATION);
+End
+
+Directory gid_Dir_Common_Ure
+    ParentID = gid_Dir_Ooo_Openofficeorg;
+  #ifdef WNT
+    HostName = "URE";
+  #else
+    HostName = "ure";
+  #endif
+    Styles = (UREDIRECTORY);
+End
+
+File gid_File_LICENSE_Ure
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Common_Ure;
+    Name = "LICENSE";
+    Styles = (PACKED);
+End
+
+File gid_File_NOTICE_Ure
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Common_Ure;
+    Name = "NOTICE";
+    Styles = (PACKED);
+End
+
+File gid_File_Readme_Ure
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Common_Ure;
+    Name = "README";
+    Styles = (PACKED);
+End
+
+// Module
+
+Module gid_Module_Root
+    Name = "ure";
+    Description = "ure";
+End
+
+// Windows Registry:
+RegistryItem gid_Regitem_Ure_Software_Manufacturer_Productname_Productversion_Productcode_Install
+	ParentID = PREDEFINED_HKEY_LOCAL_MACHINE;
+	Subkey = "Software\%MANUFACTURER\%PRODUCTNAME%PRODUCTADDON\%PRODUCTVERSION\%PRODUCTCODE";
+	ModuleID = gid_Module_Root;
+	Name = "INSTALLLOCATION";
+	Value = "[INSTALLLOCATION]";
+	Styles = (ALWAYS_REQUIRED);
+End
+
+RegistryItem gid_Regitem_Ure_Software_Manufacturer_Productname_Productversion_Upgradecode_Install
+	ParentID = PREDEFINED_HKEY_LOCAL_MACHINE;
+	Subkey = "Software\%MANUFACTURER\%PRODUCTNAME%PRODUCTADDON\%PRODUCTVERSION\%UPGRADECODE";
+	ModuleID = gid_Module_Root;
+	Name = "INSTALLLOCATION";
+	Value = "[INSTALLLOCATION]";
+	Styles = (ALWAYS_REQUIRED);
+End
+
+

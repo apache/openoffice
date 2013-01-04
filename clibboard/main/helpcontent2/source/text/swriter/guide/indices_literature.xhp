@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideindices_literaturexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Creating a Bibliography</title>
+         <filename>/text/swriter/guide/indices_literature.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149687"><bookmark_value>indexes;creating bibliographies</bookmark_value>
+      <bookmark_value>databases;creating bibliographies</bookmark_value>
+      <bookmark_value>bibliographies</bookmark_value>
+      <bookmark_value>entries;bibliographies</bookmark_value>
+      <bookmark_value>storing bibliographic information</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3149687" role="heading" level="1" l10n="U"
+                 oldref="46"><variable id="indices_literature"><link href="text/swriter/guide/indices_literature.xhp" name="Creating a Bibliography">Creating a Bibliography</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155864" role="paragraph" l10n="U" oldref="60">A bibliography is a list of works that you reference in a document.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153402" role="heading" level="2" l10n="U"
+                 oldref="61">Storing Bibliographic Information</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153414" role="paragraph" l10n="U" oldref="62">$[officename] stores bibliographic information in a bibliography database, or in an individual document.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154244" role="heading" level="3" l10n="U"
+                 oldref="63">To Store Information in the Bibliography Database</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155872" role="listitem" l10n="U" oldref="50">Choose <link href="text/shared/01/02250000.xhp" name="Tools - Bibliography Database"><emph>Tools - Bibliography Database</emph></link></paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155900" role="listitem" l10n="U" oldref="64">Choose <emph>Insert - Record</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147123" role="listitem" l10n="U" oldref="65">Type a name for the bibliography entry in the <item type="menuitem">Short name</item>
+               <emph/>box, and then add additional information to the record in the remaining boxes.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150219" role="listitem" l10n="U" oldref="66">Close the<emph/>
+               <item type="menuitem">Bibliography Database</item> window. </paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3150242" role="heading" level="3" l10n="U"
+                 oldref="67">To Store Bibliographic Information in an Individual Document</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150945" role="listitem" l10n="U" oldref="68">Click in your document where you want to add the bibliography entry.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150964" role="listitem" l10n="U" oldref="51">Choose <link href="text/swriter/01/04120300.xhp" name="Insert - Indexes and Tables - Bibliography Entry"><emph>Insert - Indexes and Tables - Bibliography Entry</emph></link>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150525" role="listitem" l10n="U" oldref="69">Select <emph>From document content</emph> and click <emph>New</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153738" role="listitem" l10n="U" oldref="70">Type a name for the bibliography entry in the <item type="menuitem">Short name</item>
+               <emph/>box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153763" role="listitem" l10n="U" oldref="71">Select the publication source for the record in the <item type="menuitem">Type</item>
+               <emph/>box, and then add additional information in the remaining boxes.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146873" role="listitem" l10n="U" oldref="72">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146897" role="listitem" l10n="U" oldref="73">In the <item type="menuitem">Insert Bibliography Entry</item>
+               <emph/>dialog, click <item type="menuitem">Insert</item>, and then <item type="menuitem">Close</item>.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/swriter/01/04120300.xhp#speicherhinweis"/>
+      <paragraph xml-lang="en-US" id="hd_id3150741" role="heading" level="2" l10n="U"
+                 oldref="74">Inserting Bibliography Entries From the Bibliography Database</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148402" role="listitem" l10n="U" oldref="75">Click in your document where you want to add the bibliography entry.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148421" role="listitem" l10n="U" oldref="52">Choose <emph>Insert - Indexes and Tables - Bibliography Entry</emph>.</paragraph>
+         </listitem>
+      </list>
+      <list type="ordered" startwith="3">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153231" role="listitem" l10n="U" oldref="53">Select <emph>From bibliography database</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147059" role="listitem" l10n="U" oldref="54">Select the name of the bibliography entry that you want to insert in the <item type="menuitem">Short name</item>
+               <emph/>box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147085" role="listitem" l10n="U" oldref="76">Click <emph>Insert</emph> and then click <emph>Close</emph>.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id3156060" role="paragraph" l10n="U" oldref="77"><link href="text/swriter/01/04120300.xhp" name="Bibliography Database">Bibliography Database</link></paragraph>
+         <embed href="text/swriter/guide/indices_toc.xhp#indices_toc"/>
+         <embed href="text/swriter/guide/indices_enter.xhp#indices_enter"/>
+         <embed href="text/swriter/guide/indices_edit.xhp#indices_edit"/>
+         <embed href="text/swriter/guide/indices_form.xhp#indices_form"/>
+         <embed href="text/swriter/guide/indices_delete.xhp#indices_delete"/>
+         <embed href="text/swriter/guide/indices_index.xhp#indices_index"/>
+         <embed href="text/swriter/guide/indices_userdef.xhp#indices_userdef"/>
+         <embed href="text/swriter/guide/indices_multidoc.xhp#indices_multidoc"/>
+         <paragraph xml-lang="en-US" id="par_id6367076" role="paragraph" l10n="NEW">Some external tools exist that can interact with %PRODUCTNAME. One example is called <link href="http://bibus-biblio.sourceforge.net/wiki/index.php/Main_Page">Bibus</link>.</paragraph>
+      </section>
+   </body>
+</helpdocument>

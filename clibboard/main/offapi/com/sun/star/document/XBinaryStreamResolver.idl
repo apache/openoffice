@@ -1,0 +1,80 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_document_XBinaryStreamResolver_idl__
+#define __com_sun_star_document_XBinaryStreamResolver_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+#ifndef __com_sun_star_io_XInputStream_idl__
+#include <com/sun/star/io/XInputStream.idl>
+#endif
+#ifndef __com_sun_star_io_XOututStream_idl__
+#include <com/sun/star/io/XOutputStream.idl>
+#endif
+
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module document {  
+ 
+//============================================================================= 
+ 
+/** 
+	<p>This interface encapsulates functionality to get/resolve binary data streams.
+	It is used to transform binary data to an url or to transform an url to binary
+	data. The binary data is represented through input and output streams.</p> 
+	
+	<p>In the case of transforming an url to binary data, the <code>getInputStream</code> 
+	method is used. This returns a <type scope="com::sun::star::io">XInputStream</type> 
+	from which the binary data, transformed from the given url, can be read.</p>
+	 
+	<p>In the case of transforming binary data to an url, a 
+	<type scope="com::sun::star::io">XOutputStream</type> is created first to write 
+	the binary data to. After this, the <code>resolveOutputStream</code> method can 
+	be used to transform the binary data, represented through the 
+	<type scope="com::sun::star::io">XOutputStream</type> interface, to an url.</p>
+ */
+published interface XBinaryStreamResolver: com::sun::star::uno::XInterface
+{ 
+	/** converts the given URL from the source URL namespace to an input stream,
+		from which binary data can be read
+	*/
+	com::sun::star::io::XInputStream getInputStream( [in] string aURL );
+
+	/** creates an output stream, to which binary data can be written.
+		After writing, an URL can be retrieved by a call to 
+		<method>XBinaryStreamResolver::resolveOutputStream</method>.
+	*/
+	com::sun::star::io::XOutputStream createOutputStream();
+
+	/** converts the output stream, data has been written to, to an URL in 
+		source URL namespace.
+	*/
+	string resolveOutputStream( [in] com::sun::star::io::XOutputStream aBinaryStream );
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

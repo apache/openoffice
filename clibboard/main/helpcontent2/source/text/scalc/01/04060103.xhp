@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalc0104060103xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Financial Functions Part One</title>
+         <filename>/text/scalc/01/04060103.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143284"><bookmark_value>financial functions</bookmark_value>
+      <bookmark_value>functions; financial functions</bookmark_value>
+      <bookmark_value>Function Wizard; financial</bookmark_value>
+      <bookmark_value>amortizations, see also depreciations</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3143284" role="heading" level="1" l10n="U" oldref="1">Financial Functions Part One</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149095" role="paragraph" l10n="CHG" oldref="2"><variable id="finanztext">This category contains the mathematical finance functions of <item type="productname">%PRODUCTNAME</item> Calc. 
+</variable></paragraph>
+<sort order="asc">
+<section id="amordegrc">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153366"><bookmark_value>AMORDEGRC function</bookmark_value>
+         <bookmark_value>depreciations;degressive amortizations</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_AMORDEGRC" id="bm_id3152578" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153366" role="heading" level="2" l10n="U"
+                    oldref="359">AMORDEGRC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147434" role="paragraph" l10n="U" oldref="360"><ahelp hid="HID_AAI_FUNC_AMORDEGRC">Calculates the amount of depreciation for a settlement period as degressive amortization.</ahelp> Unlike AMORLINC, a depreciation coefficient that is independent of the depreciable life is used here.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3155855" role="heading" level="3" l10n="U"
+                    oldref="361">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147427" role="code" l10n="U" oldref="362">AMORDEGRC(Cost; DatePurchased; FirstPeriod; Salvage; Period; Rate; Basis)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147125" role="paragraph" l10n="U" oldref="363">
+            <emph>Cost</emph> is the acquisition costs.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151074" role="paragraph" l10n="U" oldref="364">
+            <emph>DatePurchased</emph> is the date of acquisition.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3144765" role="paragraph" l10n="U" oldref="365">
+            <emph>FirstPeriod </emph>is the end date of the first settlement period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156286" role="paragraph" l10n="U" oldref="366">
+            <emph>Salvage</emph> is the salvage value of the capital asset at the end of the depreciable life.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153415" role="paragraph" l10n="U" oldref="367">
+            <emph>Period</emph> is the settlement period to be considered.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155064" role="paragraph" l10n="U" oldref="368">
+            <emph>Rate</emph> is the rate of depreciation.</paragraph>
+         <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+      </section>
+      <section id="amorlinc">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153765"><bookmark_value>AMORLINC function</bookmark_value>
+         <bookmark_value>depreciations;linear amortizations</bookmark_value>
+</bookmark><comment>mw added "depreciations;..."</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_AMORLINC" id="bm_id3153711" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153765" role="heading" level="2" l10n="U"
+                    oldref="369">AMORLINC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159264" role="paragraph" l10n="U" oldref="370"><ahelp hid="HID_AAI_FUNC_AMORLINC">Calculates the amount of depreciation for a settlement period as linear amortization. If the capital asset is purchased during the settlement period, the proportional amount of depreciation is considered.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150044" role="heading" level="3" l10n="U"
+                    oldref="371">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147363" role="code" l10n="U" oldref="372">AMORLINC(Cost; DatePurchased; FirstPeriod; Salvage; Period; Rate; Basis)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146920" role="paragraph" l10n="U" oldref="373">
+            <emph>Cost</emph> means the acquisition costs.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3163807" role="paragraph" l10n="U" oldref="374">
+            <emph>DatePurchased</emph> is the date of acquisition.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148488" role="paragraph" l10n="U" oldref="375">
+            <emph>FirstPeriod </emph>is the end date of the first settlement period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149530" role="paragraph" l10n="U" oldref="376">
+            <emph>Salvage</emph> is the salvage value of the capital asset at the end of the depreciable life.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148633" role="paragraph" l10n="U" oldref="377">
+            <emph>Period</emph> is the settlement period to be considered.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150982" role="paragraph" l10n="U" oldref="378">
+            <emph>Rate</emph> is the rate of depreciation.</paragraph>
+         <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+      </section>
+      <section id="accrint">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145257"><bookmark_value>ACCRINT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ACCRINT" id="bm_id3149815" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145257" role="heading" level="2" l10n="U"
+                    oldref="335">ACCRINT</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151276"><bookmark_value>accrued interests;periodic payments</bookmark_value>
+</bookmark><comment>mw changed "accrued interests"</comment>
+<paragraph xml-lang="en-US" id="par_id3151276" role="paragraph" l10n="U" oldref="336"><ahelp hid="HID_AAI_FUNC_ACCRINT">Calculates the accrued interest of a security in the case of periodic payments.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3152581" role="heading" level="3" l10n="U"
+                    oldref="337">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159092" role="code" l10n="U" oldref="338">ACCRINT(Issue; FirstInterest; Settlement; Rate; Par; Frequency; Basis)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150519" role="paragraph" l10n="U" oldref="339">
+            <emph>Issue</emph> is the issue date of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155376" role="paragraph" l10n="U" oldref="340">
+            <emph>FirstInterest</emph> is the first interest date of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3166431" role="paragraph" l10n="U" oldref="341">
+            <emph>Settlement</emph> is the date at which the interest accrued up until then is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154486" role="paragraph" l10n="U" oldref="342">
+            <emph>Rate</emph> is the annual nominal rate of interest (coupon interest rate)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156445" role="paragraph" l10n="U" oldref="343">
+            <emph>Par</emph> is the par value of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149406" role="paragraph" l10n="U" oldref="344">
+            <emph>Frequency</emph> is the number of interest payments per year (1, 2 or 4).</paragraph>
+         <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+         <paragraph xml-lang="en-US" id="hd_id3148699" role="heading" level="3" l10n="U"
+                    oldref="345">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148599" role="paragraph" l10n="CHG" oldref="346">A security is issued on 2001-02-28. First interest is set for 2001-08-31. The settlement date is 2001-05-01. The Rate is 0.1 or 10% and Par is 1000 currency units. Interest is paid half-yearly (frequency is 2). The basis is the US method (0). How much interest has accrued?</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148840" role="paragraph" l10n="CHG" oldref="347">
+            <item type="input">=ACCRINT("2001-02-28";"2001-08-31";"2001-05-01";0.1;1000;2;0)</item> returns 16.94444.</paragraph>
+      </section>
+      <section id="accrintm">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151240"><bookmark_value>ACCRINTM function</bookmark_value>
+         <bookmark_value>accrued interests;one-off payments</bookmark_value>
+</bookmark><comment>mw added one index entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ACCRINTM" id="bm_id3148866" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151240" role="heading" level="2" l10n="U"
+                    oldref="348">ACCRINTM</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157981" role="paragraph" l10n="U" oldref="349"><ahelp hid="HID_AAI_FUNC_ACCRINTM">Calculates the accrued interest of a security in the case of one-off payment at the settlement date.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159097" role="heading" level="3" l10n="U"
+                    oldref="350">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147074" role="code" l10n="U" oldref="351">ACCRINTM(Issue; Settlement; Rate; Par; Basis)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3144773" role="paragraph" l10n="U" oldref="352">
+            <emph>Issue</emph> is the issue date of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154956" role="paragraph" l10n="CHG" oldref="353">
+            <emph>Settlement</emph> is the date at which the interest accrued up until then is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153972" role="paragraph" l10n="U" oldref="354">
+            <emph>Rate</emph> is the annual nominal rate of interest (coupon interest rate).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159204" role="paragraph" l10n="U" oldref="355">
+            <emph>Par</emph> is the par value of the security.</paragraph>
+         <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+         <paragraph xml-lang="en-US" id="hd_id3155384" role="heading" level="3" l10n="U"
+                    oldref="356">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154541" role="paragraph" l10n="CHG" oldref="357">A security is issued on 2001-04-01. The maturity date is set for 2001-06-15. The Rate is 0.1 or 10% and Par is 1000 currency units. The basis of the daily/annual calculation is the daily balance (3). How much interest has accrued?</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149128" role="paragraph" l10n="CHG" oldref="358">
+            <item type="input">=ACCRINTM("2001-04-01";"2001-06-15";0.1;1000;3)</item> returns 20.54795.</paragraph>
+      </section>
+      <section id="received">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145753"><bookmark_value>RECEIVED function</bookmark_value>
+         <bookmark_value>amount received for fixed-interest securities</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_RECEIVED" id="bm_id3143218" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145753" role="heading" level="2" l10n="U"
+                    oldref="390">RECEIVED</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150051" role="paragraph" l10n="U" oldref="391"><ahelp hid="HID_AAI_FUNC_RECEIVED">Calculates the amount received that is paid for a fixed-interest security at a given point in time.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149385" role="heading" level="3" l10n="U"
+                    oldref="392">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145362" role="code" l10n="U" oldref="393">RECEIVED("Settlement"; "Maturity"; Investment; Discount; Basis)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154654" role="paragraph" l10n="U" oldref="394">
+            <emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153011" role="paragraph" l10n="U" oldref="395">
+            <emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155525" role="paragraph" l10n="U" oldref="396">
+            <emph>Investment</emph> is the purchase sum.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155760" role="paragraph" l10n="U" oldref="397">
+            <emph>Discount</emph> is the percentage discount on acquisition of the security.</paragraph>
+         <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+         <paragraph xml-lang="en-US" id="hd_id3154710" role="heading" level="3" l10n="U"
+                    oldref="398">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154735" role="paragraph" l10n="U" oldref="399">Settlement date: February 15 1999, maturity date: May 15 1999, investment sum: 1000 currency units, discount: 5.75 per cent, basis: Daily balance/360 = 2.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146108" role="paragraph" l10n="U" oldref="400">The amount received on the maturity date is calculated as follows:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147246" role="paragraph" l10n="CHG" oldref="401">
+            <item type="input">=RECEIVED("1999-02-15";"1999-05-15";1000;0.0575;2)</item> returns 1014.420266.</paragraph>
+      </section>
+      <section id="pv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147556"><bookmark_value>PV function</bookmark_value>
+         <bookmark_value>present values</bookmark_value>
+         <bookmark_value>calculating; present values</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BW" id="bm_id3153072" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147556" role="heading" level="2" l10n="U" oldref="3">PV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153301" role="paragraph" l10n="U" oldref="4"><ahelp hid="HID_FUNC_BW">Returns the present value of an investment resulting from a series of regular payments.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146099" role="paragraph" l10n="U" oldref="5">Use this function to calculate the amount of money needed to be invested at a fixed rate today, to receive a specific amount, an annuity, over a specified number of periods. You can also determine how much money is to remain after the elapse of the period. Specify as well if the amount is to be paid out at the beginning or at the end of each period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153334" role="paragraph" l10n="U" oldref="6">Enter these values either as numbers, expressions or references. If, for example, interest is paid annually at 8%, but you want to use month as your period, enter 8%/12 under <emph>Rate</emph> and <item type="productname">%PRODUCTNAME</item> Calc with automatically calculate the correct factor.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147407" role="heading" level="3" l10n="U" oldref="7">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150395" role="code" l10n="U" oldref="8">PV(Rate; NPer; Pmt; FV; Type)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151341" role="paragraph" l10n="U" oldref="9">
+            <emph>Rate</emph> defines the interest rate per period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153023" role="paragraph" l10n="U" oldref="10">
+            <emph>NPer</emph> is the total number of periods (payment period).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146323" role="paragraph" l10n="U" oldref="11">
+            <emph>Pmt</emph> is the regular payment made per period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150536" role="paragraph" l10n="U" oldref="12">
+            <emph>FV</emph> (optional) defines the future value remaining after the final installment has been made.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146883" role="paragraph" l10n="U" oldref="13">
+            <emph>Type</emph> (optional) denotes due date for payments. Type = 1 means due at the beginning of a period and Type = 0 (default) means due at the end of the period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_idN10B13" role="paragraph" l10n="NEW">
+            <embedvar href="text/scalc/00/00000004.xhp#optional"/>
+         </paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150037" role="heading" level="3" l10n="U"
+                    oldref="14">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145225" role="paragraph" l10n="U" oldref="15">What is the present value of an investment, if 500 currency units are paid out monthly and the annual interest rate is 8%? The payment period is 48 months and 20,000 currency units are to remain at the end of the payment period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155907" role="paragraph" l10n="U" oldref="16">
+            <item type="input">=PV(8%/12;48;500;20000)</item> = -35,019.37 currency units. Under the named conditions, you must deposit 35,019.37 currency units today, if you want to receive 500 currency units per month for 48 months and have 20,000 currency units left over at the end. Cross-checking shows that 48 x 500 currency units + 20,000 currency units = 44,000 currency units. The difference between this amount and the 35,000 currency units deposited represents the interest paid.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149150" role="paragraph" l10n="U" oldref="17">If you enter references instead of these values into the formula, you can calculate any number of "If-then" scenarios. Please note: references to constants must be defined as absolute references. Examples of this type of application are found under the depreciation functions.</paragraph>
+      </section>
+      <section id="syd">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152978"><bookmark_value>calculating; depreciations</bookmark_value>
+         <bookmark_value>SYD function</bookmark_value>
+         <bookmark_value>depreciations; arithmetic declining</bookmark_value>
+         <bookmark_value>arithmetic declining depreciations</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DIA" id="bm_id3157905" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152978" role="heading" level="2" l10n="U"
+                    oldref="19">SYD</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148732" role="paragraph" l10n="U" oldref="20"><ahelp hid="HID_FUNC_DIA">Returns the arithmetic-declining depreciation rate.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149886" role="paragraph" l10n="U" oldref="21">Use this function to calculate the depreciation amount for one period of the total depreciation span of an object. Arithmetic declining depreciation reduces the depreciation amount from period to period by a fixed sum.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149431" role="heading" level="3" l10n="U"
+                    oldref="22">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150483" role="code" l10n="U" oldref="23">SYD(Cost; Salvage; Life; Period)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146879" role="paragraph" l10n="U" oldref="24">
+            <emph>Cost</emph> is the initial cost of an asset.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147423" role="paragraph" l10n="U" oldref="25">
+            <emph>Salvage</emph> is the value of an asset after depreciation.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151229" role="paragraph" l10n="U" oldref="26">
+            <emph>Life</emph> is the period fixing the time span over which an asset is depreciated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147473" role="paragraph" l10n="U" oldref="27">
+            <emph>Period</emph> defines the period for which the depreciation is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3148434" role="heading" level="3" l10n="U"
+                    oldref="28">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149688" role="paragraph" l10n="U" oldref="29">A video system initially costing 50,000 currency units is to be depreciated annually for the next 5 years. The salvage value is to be 10,000 currency units. You want to calculate depreciation for the first year.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150900" role="paragraph" l10n="U" oldref="30">
+            <item type="input">=SYD(50000;10000;5;1)</item>=13,333.33 currency units. The depreciation amount for the first year is 13,333.33 currency units.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146142" role="paragraph" l10n="U" oldref="31">To have an overview of depreciation rates per period, it is best to define a depreciation table. By entering the different depreciation formulas available in <item type="productname">%PRODUCTNAME</item> Calc next to each other, you can see which depreciation form is the most appropriate. Enter the table as follows:</paragraph>
+         <table id="tbl_id3149189">
+            <tablerow>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155258" role="tablehead" l10n="U" oldref="32">
+                     <emph>A</emph>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154558" role="tablehead" l10n="U" oldref="33">
+                     <emph>B</emph>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3152372" role="tablehead" l10n="U" oldref="34">
+                     <emph>C</emph>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149949" role="tablehead" l10n="U" oldref="35">
+                     <emph>D</emph>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3145123" role="tablehead" l10n="U" oldref="36">
+                     <emph>E</emph>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149504" role="tablecontent" l10n="U" oldref="37">1</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153778" role="tablecontent" l10n="U" oldref="38">
+                     <item type="input">Initial Cost</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3159083" role="tablecontent" l10n="U" oldref="39">
+                     <item type="input">Salvage Value</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150002" role="tablecontent" l10n="U" oldref="40">
+                     <item type="input">Useful Life</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153006" role="tablecontent" l10n="U" oldref="41">
+                     <item type="input">Time Period</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154505" role="tablecontent" l10n="U" oldref="42">
+                     <item type="input">Deprec. SYD</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150336" role="tablecontent" l10n="U" oldref="43">2</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155926" role="tablecontent" l10n="U" oldref="44">
+                     <item type="input">50,000 currency units</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153736" role="tablecontent" l10n="U" oldref="45">
+                     <item type="input">10,000 currency units</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150131" role="tablecontent" l10n="U" oldref="46">
+                     <item type="input">5</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148766" role="tablecontent" l10n="U" oldref="47">
+                     <item type="input">1</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3159136" role="tablecontent" l10n="U" oldref="48">
+                     <item type="input">13,333.33 currency units</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3151018" role="tablecontent" l10n="U" oldref="49">3</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148397" role="tablecontent" l10n="U" oldref="50">
+                     <item type="input">2</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3146907" role="tablecontent" l10n="U" oldref="51">
+                     <item type="input">10,666.67 currency units</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3147356" role="tablecontent" l10n="U" oldref="52">4</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150267" role="tablecontent" l10n="U" oldref="53">
+                     <item type="input">3</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3145628" role="tablecontent" l10n="U" oldref="54">
+                     <item type="input">8,000.00 currency units</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149004" role="tablecontent" l10n="U" oldref="55">5</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153545" role="tablecontent" l10n="U" oldref="56">
+                     <item type="input">4</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154634" role="tablecontent" l10n="U" oldref="57">
+                     <item type="input">5,333.33 currency units</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3147537" role="tablecontent" l10n="U" oldref="58">6</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155085" role="tablecontent" l10n="U" oldref="59">
+                     <item type="input">5</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3158413" role="tablecontent" l10n="U" oldref="60">
+                     <item type="input">2,666.67 currency units</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154866" role="tablecontent" l10n="U" oldref="61">7</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155404" role="tablecontent" l10n="U" oldref="62">
+                     <item type="input">6</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148431" role="tablecontent" l10n="U" oldref="63">
+                     <item type="input">0.00 currency units</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3156261" role="tablecontent" l10n="U" oldref="64">8</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3083286" role="tablecontent" l10n="U" oldref="65">
+                     <item type="input">7</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3083443" role="tablecontent" l10n="U" oldref="67">9</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154815" role="tablecontent" l10n="U" oldref="68">
+                     <item type="input">8</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3145082" role="tablecontent" l10n="U" oldref="70">10</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3156307" role="tablecontent" l10n="U" oldref="71">
+                     <item type="input">9</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3147564" role="tablecontent" l10n="U" oldref="73">11</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3146856" role="tablecontent" l10n="U" oldref="74">
+                     <item type="input">10</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150880" role="tablecontent" l10n="U" oldref="76">12</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3145208" role="tablecontent" l10n="U" oldref="77">13</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3156113" role="tablecontent" l10n="U" oldref="78">
+                     <item type="input">&gt;0</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153625" role="tablecontent" l10n="U" oldref="79">
+                     <item type="input">Total</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3151297" role="tablecontent" l10n="U" oldref="80">
+                     <item type="input">40,000.00 currency units</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+         <paragraph xml-lang="en-US" id="par_id3149979" role="paragraph" l10n="U" oldref="81">The formula in E2 is as follows:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155849" role="paragraph" l10n="U" oldref="82">
+            <item type="input">=SYD($A$2;$B$2;$C$2;D2)</item>
+         </paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156124" role="paragraph" l10n="U" oldref="83">This formula is duplicated in column E down to E11 (select E2, then drag down the lower right corner with the mouse).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147270" role="paragraph" l10n="U" oldref="84">Cell E13 contains the formula used to check the total of the depreciation amounts. It uses the SUMIF function as the negative values in E8:E11 must not be considered. The condition &gt;0 is contained in cell A13. The formula in E13 is as follows:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152811" role="paragraph" l10n="U" oldref="85">
+            <item type="input">=SUMIF(E2:E11;A13)</item>
+         </paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155998" role="paragraph" l10n="U" oldref="86">Now view the depreciation for a 10 year period, or at a salvage value of 1 currency unit, or enter a different initial cost, and so on.</paragraph>
+      </section>
+      <section id="disc">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155104"><bookmark_value>DISC function</bookmark_value>
+         <bookmark_value>allowances</bookmark_value>
+         <bookmark_value>discounts</bookmark_value>
+</bookmark><comment>mw added "discounts" and "allowances"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_DISC" id="bm_id3149290" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155104" role="heading" level="2" l10n="U"
+                    oldref="379">DISC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153891" role="paragraph" l10n="U" oldref="380"><ahelp hid="HID_AAI_FUNC_DISC">Calculates the allowance (discount) of a security as a percentage.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153982" role="heading" level="3" l10n="U"
+                    oldref="381">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149756" role="code" l10n="U" oldref="382">DISC("Settlement"; "Maturity"; Price; Redemption; Basis)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156014" role="paragraph" l10n="U" oldref="383">
+            <emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154304" role="paragraph" l10n="U" oldref="384">
+            <emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159180" role="paragraph" l10n="U" oldref="385">
+            <emph>Price</emph> is the price of the security per 100 currency units of par value.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147253" role="paragraph" l10n="U" oldref="386">
+            <emph>Redemption</emph> is the redemption value of the security per 100 currency units of par value.</paragraph>
+         <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+         <paragraph xml-lang="en-US" id="hd_id3151174" role="heading" level="3" l10n="U"
+                    oldref="387">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155902" role="paragraph" l10n="CHG" oldref="388">A security is purchased on 2001-01-25; the maturity date is 2001-11-15. The price (purchase price) is 97, the redemption value is 100. Using daily balance calculation (basis 3) how high is the settlement (discount)?</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152797" role="paragraph" l10n="CHG" oldref="389">
+            <item type="input">=DISC("2001-01-25";"2001-11-15";97;100;3)</item> returns about 0.0372 or 3.72 per cent.</paragraph>
+      </section>
+      <section id="duration_add">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154695"><bookmark_value>DURATION_ADD function</bookmark_value>
+         <bookmark_value>Microsoft Excel functions</bookmark_value>
+         <bookmark_value>durations;fixed interest securities</bookmark_value>
+</bookmark><comment>mw added two entries</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_DURATION" id="bm_id3159344" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154695" role="heading" level="2" l10n="U"
+                    oldref="402">DURATION_ADD</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145768" role="paragraph" l10n="U" oldref="403"><ahelp hid="HID_AAI_FUNC_DURATION">Calculates the duration of a fixed interest security in years.</ahelp></paragraph>
+         <embed href="text/scalc/01/04060102.xhp#ADD_note"/>
+         <paragraph xml-lang="en-US" id="hd_id3153904" role="heading" level="3" l10n="U"
+                    oldref="404">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153373" role="code" l10n="U" oldref="405">DURATION_ADD("Settlement"; "Maturity"; Coupon; Yield; Frequency; Basis)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155397" role="paragraph" l10n="U" oldref="406">
+            <emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148558" role="paragraph" l10n="U" oldref="407">
+            <emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153096" role="paragraph" l10n="U" oldref="408">
+            <emph>Coupon</emph> is the annual coupon interest rate (nominal rate of interest)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154594" role="paragraph" l10n="U" oldref="409">
+            <emph>Yield</emph> is the annual yield of the security.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149906" role="paragraph" l10n="U" oldref="410">
+            <emph>Frequency</emph> is the number of interest payments per year (1, 2 or 4).</paragraph>
+         <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
+         <paragraph xml-lang="en-US" id="hd_id3146995" role="heading" level="3" l10n="U"
+                    oldref="411">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148834" role="paragraph" l10n="CHG" oldref="412">A security is purchased on 2001-01-01; the maturity date is 2006-01-01. The Coupon rate of interest is 8%. The yield is 9.0%. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) how long is the duration?</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154902" role="paragraph" l10n="CHG" oldref="413">
+            <item type="input">=DURATION_ADD("2001-01-01";"2006-01-01";0.08;0.09;2;3)</item>
+         </paragraph>
+      </section>
+      <section id="effective">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159147"><bookmark_value>annual net interest rates</bookmark_value>
+         <bookmark_value>calculating; annual net interest rates</bookmark_value>
+         <bookmark_value>net annual interest rates</bookmark_value>
+         <bookmark_value>EFFECTIVE function</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_EFFEKTIV" id="bm_id3154290" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3159147" role="heading" level="2" l10n="U"
+                    oldref="88">EFFECTIVE</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154204" role="paragraph" l10n="U" oldref="89"><ahelp hid="HID_FUNC_EFFEKTIV">Returns the net annual interest rate for a nominal interest rate.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145417" role="paragraph" l10n="U" oldref="90">Nominal interest refers to the amount of interest due at the end of a calculation period. Effective interest increases with the number of payments made. In other words, interest is often paid in installments (for example, monthly or quarterly) before the end of the calculation period.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150510" role="heading" level="3" l10n="U"
+                    oldref="91">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148805" role="code" l10n="U" oldref="92">EFFECTIVE(Nom; P)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149768" role="paragraph" l10n="U" oldref="93">
+            <emph>Nom</emph> is the nominal interest.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149334" role="paragraph" l10n="U" oldref="94">
+            <emph>P</emph> is the number of interest payment periods per year.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154223" role="heading" level="3" l10n="U"
+                    oldref="95">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3144499" role="paragraph" l10n="U" oldref="96">If the annual nominal interest rate is 9.75% and four interest calculation periods are defined, what is the actual interest rate (effective rate)?</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150772" role="paragraph" l10n="U" oldref="97">
+            <item type="input">=EFFECTIVE(9.75%;4)</item> = 10.11% The annual effective rate is therefore 10.11%.</paragraph>
+      </section>
+      <section id="effect_add">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147241"><bookmark_value>effective interest rates</bookmark_value>
+         <bookmark_value>EFFECT_ADD function</bookmark_value>
+</bookmark><comment>mw changed "effective rates"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_EFFECT" id="bm_id3147515" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147241" role="heading" level="2" l10n="U"
+                    oldref="414">EFFECT_ADD</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147524" role="paragraph" l10n="U" oldref="415"><ahelp hid="HID_AAI_FUNC_EFFECT">Calculates the effective annual rate of interest on the basis of the nominal interest rate and the number of interest payments per annum.</ahelp></paragraph>
+         <embed href="text/scalc/01/04060102.xhp#ADD_note"/>
+         <paragraph xml-lang="en-US" id="hd_id3155364" role="heading" level="3" l10n="U"
+                    oldref="416">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155118" role="code" l10n="U" oldref="417">EFFECT_ADD(NominalRate; NPerY)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148907" role="paragraph" l10n="U" oldref="418">
+            <emph>NominalRate</emph> is the annual nominal rate of interest.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154274" role="paragraph" l10n="U" oldref="419">
+            <emph>NPerY </emph>is the number of interest payments per year.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149156" role="heading" level="3" l10n="U"
+                    oldref="420">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3158426" role="paragraph" l10n="U" oldref="421">What is the effective annual rate of interest for a 5.25% nominal rate and quarterly payment.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148927" role="paragraph" l10n="U" oldref="422">
+            <item type="input">=EFFECT_ADD(0.0525;4)</item> returns 0.053543 or 5.3543%.</paragraph>
+      </section>
+      <section id="ddb">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149998"><bookmark_value>calculating; arithmetic-degressive depreciations</bookmark_value>
+         <bookmark_value>arithmetic-degressive depreciations</bookmark_value>
+         <bookmark_value>depreciations;arithmetic-degressive</bookmark_value>
+         <bookmark_value>DDB function</bookmark_value>
+</bookmark><comment>mw corrected two typos and added "depreciations;..."</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GDA" id="bm_id3149176" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149998" role="heading" level="2" l10n="U"
+                    oldref="99">DDB</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159190" role="paragraph" l10n="U" oldref="100"><ahelp hid="HID_FUNC_GDA">Returns the depreciation of an asset for a specified period using the arithmetic-declining method.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152361" role="paragraph" l10n="U" oldref="101">Use this form of depreciation if you require a higher initial depreciation value as opposed to linear depreciation. The depreciation value gets less with each period and is usually used for assets whose value loss is higher shortly after purchase (for example, vehicles, computers). Please note that the book value will never reach zero under this calculation type.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3156038" role="heading" level="3" l10n="U"
+                    oldref="102">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3166452" role="code" l10n="U" oldref="103">DDB(Cost; Salvage; Life; Period; Factor)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153237" role="paragraph" l10n="U" oldref="104">
+            <emph>Cost</emph> fixes the initial cost of an asset.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149787" role="paragraph" l10n="U" oldref="105">
+            <emph>Salvage</emph> fixes the value of an asset at the end of its life.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152945" role="paragraph" l10n="U" oldref="106">
+            <emph>Life</emph> is the number of periods (for example, years or months) defining how long the asset is to be used.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149736" role="paragraph" l10n="U" oldref="107">
+            <emph>Period</emph> states the period for which the value is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150243" role="paragraph" l10n="U" oldref="108">
+            <emph>Factor</emph> (optional) is the factor by which depreciation decreases. If a value is not entered, the default is factor 2.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159274" role="heading" level="3" l10n="U"
+                    oldref="109">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152882" role="paragraph" l10n="U" oldref="110">A computer system with an initial cost of 75,000 currency units is to be depreciated monthly over 5 years. The value at the end of the depreciation is to be 1 currency unit. The factor is 2.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154106" role="paragraph" l10n="U" oldref="111">
+            <item type="input">=DDB(75000;1;60;12;2) </item>= 1,721.81 currency units. Therefore, the double-declining depreciation in the twelfth month after purchase is 1,721.81 currency units.</paragraph>
+      </section>
+      <section id="db">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149962"><bookmark_value>calculating; geometric-degressive depreciations</bookmark_value>
+         <bookmark_value>geometric-degressive depreciations</bookmark_value>
+         <bookmark_value>depreciations;geometric-degressive</bookmark_value>
+         <bookmark_value>DB function</bookmark_value>
+</bookmark><comment>mw added "depreciations;.."</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GDA2" id="bm_id3149973" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149962" role="heading" level="2" l10n="U"
+                    oldref="113">DB</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148989" role="paragraph" l10n="U" oldref="114"><ahelp hid="HID_FUNC_GDA2">Returns the depreciation of an asset for a specified period using the double-declining balance method.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156213" role="paragraph" l10n="U" oldref="115">This form of depreciation is used if you want to get a higher depreciation value at the beginning of the depreciation (as opposed to linear depreciation). The depreciation value is reduced with every depreciation period by the depreciation already deducted from the initial cost.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149807" role="heading" level="3" l10n="U"
+                    oldref="116">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153349" role="code" l10n="U" oldref="117">DB(Cost; Salvage; Life; Period; Month)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148462" role="paragraph" l10n="U" oldref="118">
+            <emph>Cost</emph> is the initial cost of an asset.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148658" role="paragraph" l10n="U" oldref="119">
+            <emph>Salvage</emph> is the value of an asset at the end of the depreciation.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145371" role="paragraph" l10n="U" oldref="120">
+            <emph>Life</emph> defines the period over which an asset is depreciated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154608" role="paragraph" l10n="U" oldref="121">
+            <emph>Period</emph> is the length of each period. The length must be entered in the same date unit as the depreciation period.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150829" role="paragraph" l10n="U" oldref="122">
+            <emph>Month</emph> (optional) denotes the number of months for the first year of depreciation. If an entry is not defined, 12 is used as the default.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3151130" role="heading" level="3" l10n="U"
+                    oldref="123">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156147" role="paragraph" l10n="U" oldref="124">A computer system with an initial cost of 25,000 currency units is to be depreciated over a three year period. The salvage value is to be 1,000 currency units. One period is 30 days.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149513" role="paragraph" l10n="U" oldref="125">
+            <item type="input">=DB(25000;1000;36;1;6)</item> = 1,075.00 currency units</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159242" role="paragraph" l10n="U" oldref="126">The fixed-declining depreciation of the computer system is 1,075.00 currency units.</paragraph>
+      </section>
+      <section id="irr">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153948"><bookmark_value>IRR function</bookmark_value>
+         <bookmark_value>calculating;internal rates of return, regular payments</bookmark_value>
+         <bookmark_value>internal rates of return;regular payments</bookmark_value>
+</bookmark><comment>mw changed "calculating;..." and "internal rates"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_IKV" id="bm_id3148419" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153948" role="heading" level="2" l10n="U"
+                    oldref="128">IRR</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3143282" role="paragraph" l10n="U" oldref="129"><ahelp hid="HID_FUNC_IKV">Calculates the internal rate of return for an investment.</ahelp> The values represent cash flow values at regular intervals, at least one value must be negative (payments), and at least one value must be positive (income).</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150599" role="heading" level="3" l10n="U"
+                    oldref="130">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155427" role="code" l10n="U" oldref="131">IRR(Values; Guess)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3144758" role="paragraph" l10n="U" oldref="132">
+            <emph>Values</emph> represents an array containing the values.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149233" role="paragraph" l10n="U" oldref="133">
+            <emph>Guess</emph> (optional) is the estimated value. An iterative method is used to calculate the internal rate of return. If you can provide only few values, you should provide an initial guess to enable the iteration.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3151258" role="heading" level="3" l10n="U"
+                    oldref="134">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150630" role="paragraph" l10n="U" oldref="135">Under the assumption that cell contents are A1=<item type="input">-10000</item>, A2=<item type="input">3500</item>, A3=<item type="input">7600</item> and A4=<item type="input">1000</item>, the formula <item type="input">=IRR(A1:A4)</item> gives a result of 11,33%.</paragraph>
+      </section>
+      <section id="ispmt">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151012"><bookmark_value>calculating; interests for unchanged amortization installments</bookmark_value>
+         <bookmark_value>interests for unchanged amortization installments</bookmark_value>
+         <bookmark_value>ISPMT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISPMT" id="bm_id3149491" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151012" role="heading" level="2" l10n="U"
+                    oldref="314">ISPMT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148693" role="paragraph" l10n="U" oldref="315"><ahelp hid="HID_FUNC_ISPMT">Calculates the level of interest for unchanged amortization installments.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154661" role="heading" level="3" l10n="U"
+                    oldref="316">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146070" role="code" l10n="U" oldref="317">ISPMT(Rate; Period; TotalPeriods; Invest)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148672" role="paragraph" l10n="U" oldref="318">
+            <emph>Rate</emph> sets the periodic interest rate.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145777" role="paragraph" l10n="U" oldref="319">
+            <emph>Period</emph> is the number of installments for calculation of interest.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153678" role="paragraph" l10n="U" oldref="320">
+            <emph>TotalPeriods</emph> is the total number of installment periods.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159390" role="paragraph" l10n="U" oldref="321">
+            <emph>Invest</emph> is the amount of the investment.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3156162" role="heading" level="3" l10n="U"
+                    oldref="322">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149558" role="paragraph" l10n="U" oldref="323">For a credit amount of 120,000 currency units with a two-year term and monthly installments, at a yearly interest rate of 12% the level of interest after 1.5 years is required.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150949" role="paragraph" l10n="U" oldref="324">
+            <item type="input">=ISPMT(1%;18;24;120000)</item> = -300 currency units. The monthly interest after 1.5 years amounts to 300 currency units.</paragraph>
+      </section>
+</sort>
+<paragraph xml-lang="en-US" id="par_id3146812" role="paragraph" l10n="U" oldref="426"><link href="text/scalc/01/04060119.xhp" name="Forward to Financial Functions Part Two">Financial Functions Part Two</link></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154411" role="paragraph" l10n="U" oldref="427"><link href="text/scalc/01/04060118.xhp" name="Forward to Financial Functions Part Three">Financial Functions Part Three</link></paragraph>
+      <embed href="text/scalc/01/04060100.xhp#drking"/>
+   </body>
+</helpdocument>

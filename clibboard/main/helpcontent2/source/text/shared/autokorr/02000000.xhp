@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautokorr02000000xml" indexer="exclude" status="PUBLISH">
+<title id="tit" xml-lang="en-US">AutoCorrect has been activated</title>
+<filename>/text/shared/autokorr/02000000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-09-26T12:41:35">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/EDITENG_HID_AUTOCORR_HELP_SENT" id="bm_id3153882" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/EDITENG_HID_AUTOCORR_HELP_SENTENEMDASH" id="bm_id3149976" localize="false"/>
+<paragraph role="heading" id="hd_id3155354" xml-lang="en-US" level="1" l10n="U" oldref="1">AutoCorrect has been activated</paragraph>
+<paragraph role="heading" id="hd_id3150502" xml-lang="en-US" level="3" l10n="U" oldref="2">Start each sentence with a capital letter</paragraph>
+<paragraph role="paragraph" id="par_id3158397" xml-lang="en-US" l10n="CHG" oldref="3">Your text was corrected with <link href="text/shared/01/06040000.xhp" name="AutoCorrect">AutoCorrect</link> so that the current word began with a capital letter. AutoCorrect changes words at the beginning of a paragraph, and words after the character at the end of a sentence (period, exclamation point, question mark).</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#autokooptionen"/>
+</section>
+
+<embed href="text/shared/00/00000004.xhp#agentoff"/>
+
+<section id="relatedtopics">
+<embed href="text/shared/guide/autocorr_url.xhp#autocorr_url"/>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/auto_off.xhp#auto_off"/>
+</case>
+</switch>
+</section>
+</body>
+</helpdocument>

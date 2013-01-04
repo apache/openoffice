@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020204xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Put Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03020204.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-01T15:23:39">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="put">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150360"><bookmark_value>Put statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150360" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020204.xhp" name="Put Statement [Runtime]">Put Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="U" oldref="2">Writes a record to a relative file or a sequence of bytes to a binary file.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="3">See also: <link href="text/sbasic/shared/03020201.xhp" name="Get"><item type="literal">Get</item></link> statement</paragraph>
+<paragraph role="heading" id="hd_id3125863" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
+<paragraph role="code" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="5">Put [#] FileNumber As Integer, [position], Variable</paragraph>
+<paragraph role="heading" id="hd_id3153190" xml-lang="en-US" level="2" l10n="U" oldref="6">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="7">
+<emph>FileNumber:</emph> Any integer expression that defines the file that you want to write to.</paragraph>
+<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Position: </emph>For relative files (random access files), the number of the record that you want to write.</paragraph>
+<paragraph role="paragraph" id="par_id3148576" xml-lang="en-US" l10n="U" oldref="9">For binary files (binary access), the position of the byte in the file where you want to start writing.</paragraph>
+<paragraph role="paragraph" id="par_id3153729" xml-lang="en-US" l10n="U" oldref="10">
+<emph>Variable:</emph> Name of the variable that you want to write to the file.</paragraph>
+<paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="U" oldref="11">Note for relative files: If the contents of this variable does not match the length of the record that is specified in the <emph>Len</emph> clause of the <emph>Open</emph> statement, the space between the end of the newly written record and the next record is padded with existing data from the file that you are writing to.</paragraph>
+<paragraph role="paragraph" id="par_id3155855" xml-lang="en-US" l10n="U" oldref="12">Note for binary files: The contents of the variables are written to the specified position, and the file pointer is inserted directly after the last byte. No space is left between the records.</paragraph>
+<paragraph role="heading" id="hd_id3154491" xml-lang="en-US" level="2" l10n="U" oldref="13">Example:</paragraph>
+<paragraph role="code" id="par_id3149410" xml-lang="en-US" l10n="U" oldref="14">Sub ExampleRandomAccess</paragraph>
+<paragraph role="code" id="par_id3149959" xml-lang="en-US" l10n="U" oldref="15">Dim iNumber As Integer</paragraph>
+<paragraph role="code" id="par_id3154729" xml-lang="en-US" l10n="U" oldref="16">Dim sText As Variant REM Must be a variant type</paragraph>
+<paragraph role="code" id="par_id3156286" xml-lang="en-US" l10n="U" oldref="17">Dim aFile As String</paragraph>
+<paragraph role="code" id="par_id3149400" xml-lang="en-US" l10n="U" oldref="18">aFile = "c:\data.txt"</paragraph>
+<paragraph role="code" id="par_id3149124" xml-lang="en-US" l10n="U" oldref="20">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3150330" xml-lang="en-US" l10n="U" oldref="21">Open aFile For Random As #iNumber Len=32</paragraph>
+<paragraph role="code" id="par_id3156278" xml-lang="en-US" l10n="U" oldref="22">Seek #iNumber,1 REM Position to start writing</paragraph>
+<paragraph role="code" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="23">Put #iNumber,, "This is the first line of text" REM Fill line with text</paragraph>
+<paragraph role="code" id="par_id3155446" xml-lang="en-US" l10n="U" oldref="24">Put #iNumber,, "This is the second line of text"</paragraph>
+<paragraph role="code" id="par_id3154255" xml-lang="en-US" l10n="U" oldref="25">Put #iNumber,, "This is the third line of text"</paragraph>
+<paragraph role="code" id="par_id3150045" xml-lang="en-US" l10n="U" oldref="26">Seek #iNumber,2</paragraph>
+<paragraph role="code" id="par_id3145149" xml-lang="en-US" l10n="U" oldref="27">Get #iNumber,,sText</paragraph>
+<paragraph role="code" id="par_id3147363" xml-lang="en-US" l10n="U" oldref="28">Print sText</paragraph>
+<paragraph role="code" id="par_id3163806" xml-lang="en-US" l10n="U" oldref="29">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3149568" xml-lang="en-US" l10n="U" oldref="31">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3155607" xml-lang="en-US" l10n="U" oldref="32">Open aFile For Random As #iNumber Len=32</paragraph>
+<paragraph role="code" id="par_id3154022" xml-lang="en-US" l10n="U" oldref="33">Get #iNumber,2,sText</paragraph>
+<paragraph role="code" id="par_id3150940" xml-lang="en-US" l10n="U" oldref="34">Put #iNumber,,"This is new text"</paragraph>
+<paragraph role="code" id="par_id3146132" xml-lang="en-US" l10n="U" oldref="35">Get #iNumber,1,sText</paragraph>
+<paragraph role="code" id="par_id3154198" xml-lang="en-US" l10n="U" oldref="36">Get #iNumber,2,sText</paragraph>
+<paragraph role="code" id="par_id3159102" xml-lang="en-US" l10n="U" oldref="37">Put #iNumber,20,"This is the text in record 20"</paragraph>
+<paragraph role="code" id="par_id3153785" xml-lang="en-US" l10n="U" oldref="38">Print Lof(#iNumber)</paragraph>
+<paragraph role="code" id="par_id3151277" xml-lang="en-US" l10n="U" oldref="39">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3150786" xml-lang="en-US" l10n="U" oldref="41">end sub</paragraph>
+</body>
+</helpdocument>

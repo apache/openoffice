@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104120300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Insert Bibliography Entry</title>
+<filename>/text/swriter/01/04120300.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertAuthoritiesEntry" id="bm_id6229048" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertAuthoritiesEntry" id="bm_id3150763" localize="false"/><paragraph role="heading" id="hd_id3151187" xml-lang="en-US" level="1" l10n="U" oldref="1">Insert Bibliography Entry</paragraph>
+<paragraph role="paragraph" id="par_id3154642" xml-lang="en-US" l10n="U" oldref="2"><variable id="literaturvz"><ahelp hid=".uno:InsertAuthoritiesEntry">Inserts a bibliography reference.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000404.xhp#inhaltsverz"/>
+</section>
+<paragraph role="heading" id="hd_id3145416" xml-lang="en-US" level="2" l10n="U" oldref="3">Entry</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_AUTH_MARK_DLG_FROM_COMP_RB" id="bm_id3147512" localize="false"/><paragraph role="heading" id="hd_id3157721" xml-lang="en-US" level="3" l10n="U" oldref="15">From bibliography database</paragraph>
+<paragraph role="paragraph" id="par_id3154096" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_AUTH_MARK_DLG_FROM_COMP_RB">Inserts a reference from the bibliography database.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_AUTH_MARK_DLG_FROM_DOC_RB" id="bm_id3153529" localize="false"/><paragraph role="heading" id="hd_id3149805" xml-lang="en-US" level="3" l10n="U" oldref="17">From document content</paragraph>
+<paragraph role="paragraph" id="par_id3153536" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_AUTH_MARK_DLG_FROM_DOC_RB">Inserts a reference from the bibliography records that are stored in the current document.</ahelp> An entry that is stored in the document has priority over an entry that is stored in the bibliography database.</paragraph>
+<section id="speicherhinweis">
+<paragraph role="note" id="par_id3154200" xml-lang="en-US" l10n="U" oldref="19">When you save a document that contains bibliography entries, the corresponding records are automatically saved in a hidden field in the document.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_AUTH_MRK_ENTRY" id="bm_id3143284" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_AUTH_MARK_DLG_ID_LISTBOX" id="bm_id3149483" localize="false"/><paragraph role="heading" id="hd_id3143273" xml-lang="en-US" level="3" l10n="U" oldref="5">Short name</paragraph>
+<paragraph role="paragraph" id="par_id3149490" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="HID_AUTH_MARK_DLG_ID_LISTBOX">Select the short name of the bibliography record that you want to insert.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151260" xml-lang="en-US" level="3" l10n="U" oldref="7">Author, Title</paragraph>
+<paragraph role="paragraph" id="par_id3149824" xml-lang="en-US" l10n="U" oldref="8">If available, the author and the full title of the selected short name are displayed in this area.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_AUTH_MRK_OK" id="bm_id3147094" localize="false"/><paragraph role="heading" id="hd_id3149105" xml-lang="en-US" level="2" l10n="U" oldref="9">Insert</paragraph>
+<paragraph role="paragraph" id="par_id3147100" xml-lang="en-US" l10n="CHG" oldref="10"><ahelp hid="HID_INSERT_AUTH_MRK_OK">Inserts the bibliographic reference into the document. If you created a new record, you must also insert it as an entry, otherwise the record is lost when you close the document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_AUTH_MRK_CLOSE" id="bm_id3148983" localize="false"/><paragraph role="heading" id="hd_id3147216" xml-lang="en-US" level="2" l10n="U" oldref="11">Close</paragraph>
+<paragraph role="paragraph" id="par_id3149036" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_INSERT_AUTH_MRK_CLOSE">Closes the dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_AUTH_MRK_CREATE_ENTRY" id="bm_id3147573" localize="false"/><paragraph role="heading" id="hd_id3153634" xml-lang="en-US" level="2" l10n="U" oldref="13">New</paragraph>
+<paragraph role="paragraph" id="par_id3147579" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="HID_INSERT_AUTH_MRK_CREATE_ENTRY">Opens the <link href="text/swriter/01/04120229.xhp" name="Define Bibliography Entry">Define Bibliography Entry</link> dialog, where you can create a new bibliography record. This record is only stored in the document. To add a record to the bibliography database, choose <emph>Tools - Bibliography Database</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_AUTH_MRK_EDIT_ENTRY" id="bm_id3157894" localize="false"/><paragraph role="heading" id="hd_id3155142" xml-lang="en-US" level="2" l10n="U" oldref="20">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3157900" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="HID_INSERT_AUTH_MRK_EDIT_ENTRY">Opens the <link href="text/swriter/01/04120229.xhp" name="Define Bibliography Entry">Define Bibliography Entry</link> dialog where you can edit the selected bibliography record.</ahelp></paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<paragraph role="paragraph" id="par_id3149172" xml-lang="en-US" l10n="U" oldref="22"><link href="text/swriter/guide/indices_literature.xhp" name="Tips for working with bibliography entries">Tips for working with bibliography entries</link></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,57 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef SC_ADDIN_DFA_HRC
+#define SC_ADDIN_DFA_HRC
+
+#define DFA_PAR_DATE1_NAME    1 /* Name of Date1 Parameter */
+#define DFA_PAR_DATE2_NAME    2 /* Name of Date2 Parameter */
+#define DFA_PAR_MODE_NAME     3 /* Name of Mode Parameter */
+#define DFA_PAR_DATE_NAME     4 /* Name of Date Parameter */
+#define DFA_PAR_DATE_DESC     5 /* Description of Date Parameter 1 */
+
+#define DFA_WEEK_NAME         6 /* Name */
+#define DFA_WEEK_DESC         7 /* Description */
+#define DFA_WEEK_PAR1_DESC    8 /* Description of Parameter 1 */
+#define DFA_WEEK_PAR2_DESC    9 /* Description of Parameter 2 */
+#define DFA_WEEK_PAR3_DESC   10 /* Description of Parameter 3 */
+#define DFA_MONTHS_NAME      11 /* Name */
+#define DFA_MONTHS_DESC      12 /* Description */
+#define DFA_MONTHS_PAR1_DESC 13 /* Description of Parameter 1 */
+#define DFA_MONTHS_PAR2_DESC 14 /* Description of Parameter 2 */
+#define DFA_MONTHS_PAR3_DESC 15 /* Description of Parameter 2 */
+#define DFA_YEARS_NAME       16 /* Name */
+#define DFA_YEARS_DESC       17 /* Description */
+#define DFA_YEARS_PAR1_DESC  18 /* Description of Parameter 1 */
+#define DFA_YEARS_PAR2_DESC  19 /* Description of Parameter 2 */
+#define DFA_YEARS_PAR3_DESC  20 /* Description of Parameter 2 */
+#define DFA_ISLEAPYEAR_NAME  21 /* Name */
+#define DFA_ISLEAPYEAR_DESC  22 /* Description */
+#define DFA_DAYSINMONTH_NAME 23 /* Name */
+#define DFA_DAYSINMONTH_DESC 24 /* Description */
+#define DFA_DAYSINYEAR_NAME  25 /* Name */
+#define DFA_DAYSINYEAR_DESC  26 /* Description */
+#define DFA_WEEKSINYEAR_NAME 27 /* Name */
+#define DFA_WEEKSINYEAR_DESC 28 /* Description */
+
+#endif
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0201170300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Tab Order</title>
+<filename>/text/shared/02/01170300.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="tabordner">
+<bookmark xml-lang="en-US" branch="hid/.uno:TabDialog" id="bm_id9009761" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:TabDialog" id="bm_id3154841" localize="false"/><paragraph role="heading" id="hd_id3146959" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170300.xhp" name="Tab Order">Tab Order</link></paragraph>
+<paragraph role="paragraph" id="par_id3150347" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="text"><ahelp hid=".uno:TabDialog">In the<emph> Tab Order </emph>dialog you can modify the order in which control fields get the focus when the user presses the tab key.</ahelp>
+</variable><comment>the button Activation Order on Form Design toolbar opens the Tab Order dialog</comment></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00040501.xhp#tabordner"/>
+</section>
+<paragraph role="paragraph" id="par_id3109850" xml-lang="en-US" l10n="U" oldref="3">If form elements are inserted into a document, <item type="productname">%PRODUCTNAME</item> automatically determines in which order to move from one control to the next when using the Tab key. Every new control added is automatically placed at the end of this series. In the <emph>Tab Order</emph> dialog, you can adapt the order of this series to your individual needs.</paragraph>
+<paragraph role="paragraph" id="par_id3155934" xml-lang="en-US" l10n="U" oldref="12">You can also define the index of a control through its specific properties by entering the desired value under <link href="text/shared/02/01170101.xhp" name="Order"><emph>Order</emph></link> in the <emph>Properties</emph> dialog of the control.</paragraph>
+<paragraph role="paragraph" id="par_id3149760" xml-lang="en-US" l10n="CHG" oldref="13">A radio button inside a group can only be accessed by the Tab key when one of the radio buttons is set to "selected". If you have designed a group of radio buttons where no button is set to "selected", then the user will not be able to access the group or any of the radio buttons by keyboard.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/HID_TABORDER_CONTROLS" id="bm_id3153114" localize="false"/><paragraph role="heading" id="hd_id3149140" xml-lang="en-US" level="2" l10n="U" oldref="4">Controls</paragraph>
+<paragraph role="paragraph" id="par_id3150789" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="HID_TABORDER_CONTROLS">Lists all controls in the form. These controls can be selected with the tab key in the given order from top to bottom.</ahelp> Select a control from the <emph>Controls </emph>list to assign the desired position in the tab order.</paragraph>
+<!-- removed HID SVX_PUSHBUTTON_RID_SVXDLG_TAB_ORDER_PB_MOVE_UP -->
+<!-- removed HID pcr_PushButton_RID_DLG_TABORDER_PB_MOVE_UP --><paragraph role="heading" id="hd_id3153750" xml-lang="en-US" level="2" l10n="U" oldref="6">Move Up</paragraph>
+<paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_TAB_ORDER_PB_MOVE_UP">Click the<emph> Move Up</emph> button to shift the selected control one position higher in the tab order.</ahelp></paragraph>
+<!-- removed HID SVX_PUSHBUTTON_RID_SVXDLG_TAB_ORDER_PB_MOVE_DOWN -->
+<!-- removed HID pcr_PushButton_RID_DLG_TABORDER_PB_MOVE_DOWN --><paragraph role="heading" id="hd_id3155339" xml-lang="en-US" level="2" l10n="U" oldref="8">Move Down</paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_TAB_ORDER_PB_MOVE_DOWN">Click the<emph> Move Down</emph> button to shift the selected control one position lower in the tab order.</ahelp></paragraph>
+<!-- removed HID SVX_PUSHBUTTON_RID_SVXDLG_TAB_ORDER_PB_AUTO_ORDER -->
+<!-- removed HID pcr_PushButton_RID_DLG_TABORDER_PB_AUTO_ORDER --><paragraph role="heading" id="hd_id3154288" xml-lang="en-US" level="2" l10n="U" oldref="10">Automatic Sort</paragraph>
+<paragraph role="paragraph" id="par_id3153748" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_TAB_ORDER_PB_AUTO_ORDER">Click the<emph> Automatic Sort</emph> button to automatically sort the controls according to their position in the document.</ahelp></paragraph>
+</body>
+</helpdocument>

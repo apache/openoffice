@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textschart0104010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Titles</title>
+<filename>/text/schart/01/04010000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertMenuTitles" id="bm_id3146313" localize="false"/><paragraph role="heading" id="hd_id3147345" xml-lang="en-US" level="1" l10n="U" oldref="1">Titles</paragraph>
+<paragraph role="paragraph" id="par_id3150298" xml-lang="en-US" l10n="U" oldref="2"><variable id="titel"><ahelp hid=".uno:InsertMenuTitles">Opens a dialog to enter or modify the titles in a chart.</ahelp>
+</variable> You can define the text for the main title, subtitle and the axis labels, and specify if they are displayed.</paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#efgttl"/>
+</section>
+<!-- removed HID SCH:CHECKBOX:DLG_TITLE:CBX_MAINTITLE -->
+<!-- removed HID SCH:EDIT:DLG_TITLE:EDT_MAINTITLE --><paragraph role="heading" id="hd_id3150207" xml-lang="en-US" level="2" l10n="U" oldref="3">Main Title</paragraph>
+<paragraph role="paragraph" id="par_id3150371" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SCH:EDIT:DLG_TITLE:EDT_MAINTITLE">Marking the <emph>Main Title</emph> option activates the main title. Enter the desired title in the corresponding text field.</ahelp></paragraph>
+<!-- removed HID SCH:CHECKBOX:DLG_TITLE:CBX_SUBTITLE -->
+<!-- removed HID SCH:EDIT:DLG_TITLE:EDT_SUBTITLE --><paragraph role="heading" id="hd_id3146980" xml-lang="en-US" level="2" l10n="U" oldref="5">Subtitle</paragraph>
+<paragraph role="paragraph" id="par_id3149404" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SCH:EDIT:DLG_TITLE:EDT_SUBTITLE">Marking the <emph>Subtitle</emph> option activates the subtitle. Enter the desired title in the corresponding text field.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ToggleTitle" id="bm_id3148870" localize="false"/><paragraph role="paragraph" id="par_id3152901" xml-lang="en-US" l10n="CHG" oldref="7"><variable id="sytexttitel"><ahelp hid=".uno:ToggleTitle">Click <emph>Title On/Off</emph> on the Formatting bar to show or hide the title and subtitle.</ahelp>
+</variable></paragraph>
+<embed href="text/schart/00/00000004.xhp#titelanaus"/>
+<!-- removed HID SCH:CHECKBOX:DLG_TITLE:CBX_TITLE_X_AXIS -->
+<!-- removed HID SCH:EDIT:DLG_TITLE:EDT_X_AXIS --><paragraph role="heading" id="hd_id3156018" xml-lang="en-US" level="2" l10n="U" oldref="8">X axis</paragraph>
+<paragraph role="paragraph" id="par_id3152869" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SCH:EDIT:DLG_TITLE:EDT_X_AXIS">Marking the <emph>X axis</emph> option activates the X axis title. Enter the desired title in the corresponding text field.</ahelp></paragraph>
+<!-- removed HID SCH:CHECKBOX:DLG_TITLE:CBX_TITLE_Y_AXIS -->
+<!-- removed HID SCH:EDIT:DLG_TITLE:EDT_Y_AXIS --><paragraph role="heading" id="hd_id3159226" xml-lang="en-US" level="2" l10n="U" oldref="10">Y axis</paragraph>
+<paragraph role="paragraph" id="par_id3154763" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SCH:EDIT:DLG_TITLE:EDT_Y_AXIS">Marking the <emph>Y axis</emph> option activates the Y axis title. Enter the desired title in the corresponding text field.</ahelp></paragraph>
+<!-- removed HID SCH:CHECKBOX:DLG_TITLE:CBX_TITLE_Z_AXIS -->
+<!-- removed HID SCH:EDIT:DLG_TITLE:EDT_Z_AXIS --><paragraph role="heading" id="hd_id3153009" xml-lang="en-US" level="2" l10n="U" oldref="12">Z axis</paragraph>
+<paragraph role="paragraph" id="par_id3154710" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SCH:EDIT:DLG_TITLE:EDT_Z_AXIS">Marking the <emph>Z axis</emph> option activates the Z axis title. Enter the desired title in the corresponding text field.</ahelp> This option is only available for 3-D charts.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ToggleAxisTitle" id="bm_id3149054" localize="false"/><paragraph role="paragraph" id="par_id3153073" xml-lang="en-US" l10n="CHG" oldref="14"><variable id="sytextachse"><ahelp hid=".uno:ToggleAxisTitle">Click <emph>Axes Title On/Off</emph> on the Formatting bar to show or hide the axis labels.</ahelp>
+</variable></paragraph>
+<embed href="text/schart/00/00000004.xhp#achseeinaus"/>
+</body>
+</helpdocument>

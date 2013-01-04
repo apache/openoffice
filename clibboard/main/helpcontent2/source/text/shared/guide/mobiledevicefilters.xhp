@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidemobiledevicefiltersxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Mobile Device Filters for Pocket Device Appliances </title>
+<filename>/text/shared/guide/mobiledevicefilters.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147143"><bookmark_value>mobile device filters</bookmark_value>
+<bookmark_value>pocket device appliances</bookmark_value>
+<bookmark_value>$[officename] documents;mobile device filters</bookmark_value>
+<bookmark_value>Palm file filters</bookmark_value>
+<bookmark_value>Pocket PC file filters</bookmark_value>
+<bookmark_value>saving;documents for mobile devices</bookmark_value>
+<bookmark_value>opening;mobile device documents</bookmark_value>
+<bookmark_value>converting;Pocket PC formats</bookmark_value>
+<bookmark_value>synchronizing;Pocket PC and $[officename] formats</bookmark_value>
+<bookmark_value>installing;mobile device filters</bookmark_value>
+<bookmark_value>file filters;mobile devices</bookmark_value>
+</bookmark><comment>mw changed "mobile devices filters" 3x</comment><paragraph role="heading" id="hd_id3147143" xml-lang="en-US" level="1" l10n="U" oldref="33"><variable id="mobiledevicefilters"><link href="text/shared/guide/mobiledevicefilters.xhp" name="Mobile Devices Filters for Pocket Device Appliances">Mobile Devices Filters for Pocket Device Appliances</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="CHG" oldref="1">You can save and open documents to and from several mobile devices file formats.</paragraph>
+<paragraph role="paragraph" id="par_id3146957" xml-lang="en-US" l10n="U" oldref="2">Currently the following filters are available:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="3">AportisDoc for Palm OS compatible devices</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147209" xml-lang="en-US" l10n="U" oldref="4">Pocket Excel for Pocket PC compatible devices</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3166460" xml-lang="en-US" l10n="U" oldref="5">Pocket Word for Pocket PC compatible devices</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3147653" xml-lang="en-US" l10n="CHG" oldref="6">Installing the Pocket PC filters under Windows will also install a DLL file that supports the synchronization software of your Pocket PC.<comment>i67157</comment></paragraph>
+<paragraph role="note" id="par_id3153252" xml-lang="en-US" l10n="U" oldref="7">The Java Runtime Environment is required to use the mobile device filters.</paragraph>
+<paragraph role="heading" id="hd_id3153665" xml-lang="en-US" level="2" l10n="CHG" oldref="8">Installing the mobile device filters</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3148685" xml-lang="en-US" l10n="U" oldref="9">Close $[officename] and the Quickstarter.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156023" xml-lang="en-US" l10n="CHG" oldref="10">If you are using the Windows operating system with ActiveSync installed, disconnect any Pocket PC device from ActiveSync.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153061" xml-lang="en-US" l10n="U" oldref="11">Start the $[officename] Setup program:</paragraph>
+<paragraph role="listitem" id="par_idN107E7" xml-lang="en-US" l10n="NEW">Open the Windows <emph>Start</emph> button, choose <emph>Control Panel</emph>, double-click <emph>Add or Remove Programs</emph>, select the %PRODUCTNAME %PRODUCTVERSION entry, click <emph>Change</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146794" xml-lang="en-US" l10n="U" oldref="12">In Setup, choose the <emph>Modify</emph> option and click <emph>Next</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3151054" xml-lang="en-US" l10n="CHG" oldref="13">Open the <emph>Optional Components</emph> entry, then open the <emph>Mobile Device Filters</emph> entry. Select the filters you want to install.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154138" xml-lang="en-US" l10n="CHG" oldref="14">Click <emph>Next</emph>, <emph>Next</emph>, <emph>Install</emph>, <emph>Finish</emph> to install the filters and exit the Setup program.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3154123" xml-lang="en-US" level="2" l10n="U" oldref="15">Saving $[officename] documents for a mobile device</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="16">Choose <emph>File - Save As</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148672" xml-lang="en-US" l10n="U" oldref="17">Open the <emph>File type</emph> box and select the appropriate filter.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145419" xml-lang="en-US" l10n="U" oldref="18">Enter a name and click <emph>Save</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3153768" xml-lang="en-US" level="2" l10n="U" oldref="19">Opening mobile device documents in $[officename]</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147287" xml-lang="en-US" l10n="U" oldref="20">Choose <emph>File - Open</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147428" xml-lang="en-US" l10n="U" oldref="21">Open the <emph>File type</emph> box and select the appropriate filter.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148618" xml-lang="en-US" l10n="U" oldref="22">Select the file and click <emph>Open</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3159196" xml-lang="en-US" level="2" l10n="U" oldref="23">Synchronizing file types</paragraph>
+<paragraph role="paragraph" id="par_id3145272" xml-lang="en-US" l10n="U" oldref="24">To convert Pocket PC formats to and from $[officename] formats, you must first change some options within ActiveSync. To do this, open the ActiveSync window and open its Options dialog. Perform the following steps:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149064" xml-lang="en-US" l10n="U" oldref="25">Select the <emph>Rules</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147216" xml-lang="en-US" l10n="U" oldref="26">Click the <emph>Conversion Settings</emph> button.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154145" xml-lang="en-US" l10n="U" oldref="27">Click the <emph>Device to Desktop</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3159155" xml-lang="en-US" l10n="U" oldref="28">Select <emph>Pocket Word Document - Pocket PC</emph> and click <emph>Edit</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154638" xml-lang="en-US" l10n="U" oldref="29">In the drop down list of available conversions, select <emph>$[officename] Writer </emph>and click <emph>OK</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149958" xml-lang="en-US" l10n="U" oldref="30">Repeat steps 4 and 5 for <emph>Pocket Excel Workbook</emph> selecting <emph>$[officename] Calc</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3148389" xml-lang="en-US" l10n="U" oldref="31">After these steps you can copy documents between $[officename] and your Pocket PC, either by the ActiveSync software or by the Windows Explorer. The filters will be applied to the document files automatically.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/ms_import_export_limitations.xhp#about"/>
+<embed href="text/shared/guide/doc_open.xhp#doc_open"/>
+<embed href="text/shared/guide/import_ms.xhp#import_ms"/>
+<embed href="text/shared/guide/export_ms.xhp#export_ms"/>
+<embed href="text/shared/guide/ms_doctypes.xhp#ms_doctypes"/>
+</body>
+</helpdocument>

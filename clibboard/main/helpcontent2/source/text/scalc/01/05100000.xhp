@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalc0105100000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Styles and Formatting</title>
+         <filename>/text/scalc/01/05100000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="gestalter">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150447"><bookmark_value>Stylist, see Styles and Formatting window</bookmark_value>
+         <bookmark_value>Styles and Formatting window</bookmark_value>
+         <bookmark_value>formats; Styles and Formatting window</bookmark_value>
+         <bookmark_value>formatting; Styles and Formatting window</bookmark_value>
+         <bookmark_value>paint can for applying styles</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3150447" role="heading" level="1" l10n="CHG"
+                    oldref="1"><link href="text/scalc/01/05100000.xhp" name="Styles and Formatting">Styles and Formatting</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147434" role="paragraph" l10n="CHG" oldref="2">Use the Styles and Formatting window to assign styles to objects and text sections. You can update Styles, modify existing Styles or create new Styles.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3149665" role="paragraph" l10n="CHG" oldref="30">The Styles and Formatting <link href="text/shared/00/00000005.xhp#andocken" name="dockable window">dockable window</link> can remain open while editing the document.</paragraph>
+      <section id="howtoget">
+         <embed href="text/shared/00/00040500.xhp#gestalter"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3150012" role="heading" level="2" l10n="U"
+                 oldref="36">How to apply a cell style:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3159155" role="listitem" l10n="U" oldref="37">Select the cell or cell range.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145749" role="listitem" l10n="CHG" oldref="38">Double-click the style in the Styles and Formatting window.</paragraph>
+         </listitem>
+      </list>
+<bookmark xml-lang="en-US" branch="hid/.uno:ParaStyle" id="bm_id5973914" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ParaStyle" id="bm_id3148456" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153877" role="heading" level="2" l10n="U" oldref="4">Cell Styles</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145801" role="paragraph" l10n="U" oldref="6"><ahelp hid=".uno:ParaStyle">Displays the list of the available Cell Styles for <link href="text/shared/00/00000005.xhp#formatierung" name="indirect cell formatting">indirect cell formatting</link>.</ahelp></paragraph>
+      <table id="tbl_id3155602">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150751" role="paragraph" l10n="E">
+<image id="img_id3153714" src="sc/res/sf01.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3153714">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154255" role="paragraph" l10n="U" oldref="5">Cell Styles</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:PageStyle" id="bm_id3839136" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:PageStyle" id="bm_id3155336" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153963" role="heading" level="2" l10n="U" oldref="7">Page Styles</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147003" role="paragraph" l10n="CHG" oldref="9"><ahelp hid=".uno:PageStyle">Displays the Page Styles available for indirect page formatting.</ahelp></paragraph>
+      <table id="tbl_id3145791">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159100" role="paragraph" l10n="E">
+<image id="img_id3149814" src="sw/imglst/sf04.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3149814">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150361" role="paragraph" l10n="U" oldref="8">Page Styles</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_WATERCAN" id="bm_id3150370" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150202" role="heading" level="2" l10n="U"
+                 oldref="10">Fill Format Mode</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155531" role="paragraph" l10n="CHG" oldref="12"><ahelp hid="HID_TEMPLDLG_WATERCAN">Turns the Fill Format mode on and off. Use the paint can to assign the Style selected in the Styles and Formatting window.</ahelp></paragraph>
+      <table id="tbl_id3156445">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155087" role="paragraph" l10n="E">
+<image id="img_id3153068" src="res/commandimagelist/sc_fillstyle.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3153068">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156198" role="paragraph" l10n="U" oldref="11">Fill Format Mode</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="hd_id3148870" role="heading" level="2" l10n="U"
+                 oldref="13">How to apply a new style with the paint can:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145078" role="listitem" l10n="CHG" oldref="27">Select the desired style from the Styles and Formatting window.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3159098" role="listitem" l10n="U" oldref="28">Click the <emph>Fill Format Mode</emph> icon.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148609" role="listitem" l10n="U" oldref="15">Click a cell to format it, or drag your mouse over a certain range to format the whole range. Repeat this action for other cells and ranges.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149438" role="listitem" l10n="U" oldref="29">Click the <emph>Fill Format Mode</emph> again to exit this mode.</paragraph>
+         </listitem>
+      </list>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_NEWBYEXAMPLE" id="bm_id3150891" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153975" role="heading" level="2" l10n="U"
+                 oldref="16">New Style from Selection</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149499" l10n="CHG" oldref="18"><ahelp hid="HID_TEMPLDLG_NEWBYEXAMPLE">Creates a new style based on the formatting of a selected object.</ahelp> Assign a name for the style in the <link href="text/shared/01/05140100.xhp" name="Create Style">Create Style</link> dialog.</paragraph>
+      <table id="tbl_id3152873">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150050" role="paragraph" l10n="E">
+<image id="img_id3154649" src="res/commandimagelist/sc_stylenewbyexample.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3154649">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146963" role="paragraph" l10n="U" oldref="17">New Style from Selection</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_UPDATEBYEXAMPLE" id="bm_id3153486" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153813" role="heading" level="2" l10n="U"
+                 oldref="19">Update Style</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154707" role="paragraph" l10n="CHG" oldref="21"><ahelp hid="HID_TEMPLDLG_UPDATEBYEXAMPLE">Updates the Style selected in the Styles and Formatting window with the current formatting of the selected object.</ahelp></paragraph>
+      <table id="tbl_id3149317">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145118" role="paragraph" l10n="E">
+<image id="img_id3155754" src="res/commandimagelist/sc_styleupdatebyexample.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3155754">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147501" role="paragraph" l10n="U" oldref="20">Update Style</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLATE_FMT" id="bm_id3147436" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN109BE" role="heading" level="2" l10n="NEW">Style List</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN109C2" role="paragraph" l10n="NEW"><ahelp hid="HID_TEMPLATE_FMT">Displays the list of the styles from the selected style category.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN109D1" role="paragraph" l10n="NEW">In the <link href="text/shared/00/00000005.xhp#kontextmenue" name="context menu">context menu</link> you can choose commands to create a new style, delete a user-defined style, or change the selected style.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLATE_FILTER" id="bm_id3151339" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149053" role="heading" level="2" l10n="CHG"
+                 oldref="24">Style Groups<comment>UFI: use "groups" to be consistent with Writer</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147299" role="paragraph" l10n="CHG" oldref="25"><ahelp hid="HID_TEMPLATE_FILTER">Lists the available style groups.</ahelp></paragraph>
+   </body>
+</helpdocument>

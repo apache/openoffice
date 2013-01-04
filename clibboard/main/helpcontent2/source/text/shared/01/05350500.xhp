@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0105350500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Textures</title>
+<filename>/text/shared/01/05350500.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-13T09:05:01">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="texturen">
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEXTURE" id="bm_id3148410" localize="false"/>
+<paragraph role="heading" id="hd_id3150014" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05350500.xhp" name="Textures">Textures</link></paragraph>
+<paragraph role="paragraph" id="par_id3147000" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEXTURE">Sets the properties of the surface texture for the selected 3D object. This feature is only available after you apply a surface textures to the selected object. To quickly apply a surface texture, open the <emph>Gallery</emph>, hold down Shift+Ctrl (Mac: Shift+Command), and then drag an image onto the selected 3D object.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00040500.xhp#3dtexturen"/>
+</section>
+<paragraph role="heading" id="hd_id3145212" xml-lang="en-US" level="2" l10n="U" oldref="4">Textures</paragraph>
+<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="5">Sets the texture properties.</paragraph>
+<paragraph role="heading" id="hd_id3156410" xml-lang="en-US" level="3" l10n="U" oldref="6">Type</paragraph>
+<paragraph role="paragraph" id="par_id3145345" xml-lang="en-US" l10n="U" oldref="7">Set the color properties of the texture.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_LUMINANCE" id="bm_id3166461" localize="false"/>
+<paragraph role="heading" id="hd_id3150775" xml-lang="en-US" level="3" l10n="U" oldref="8">Black &amp; White</paragraph>
+<paragraph role="paragraph" id="par_id3147242" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_LUMINANCE">Converts the texture to black and white.</ahelp></paragraph>
+<table id="tbl_id3149149">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146773" xml-lang="en-US" l10n="E">
+<image id="img_id3150084" src="svx/res/luminanc.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3150084" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156156" xml-lang="en-US" l10n="U" oldref="10">Black &amp; White</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_COLOR" id="bm_id3150130" localize="false"/>
+<paragraph role="heading" id="hd_id3150670" xml-lang="en-US" level="3" l10n="U" oldref="11">Color</paragraph>
+<paragraph role="paragraph" id="par_id3145119" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_COLOR">Converts the texture to color.</ahelp></paragraph>
+<table id="tbl_id3155261">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="E">
+<image id="img_id3155388" src="svx/res/color.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3155388" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145316" xml-lang="en-US" l10n="U" oldref="13">Color</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3155342" xml-lang="en-US" level="3" l10n="U" oldref="14">Mode</paragraph>
+<paragraph role="paragraph" id="par_id3153827" xml-lang="en-US" l10n="U" oldref="15">Show or hide shading.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_REPLACE" id="bm_id3154905" localize="false"/>
+<paragraph role="heading" id="hd_id3149191" xml-lang="en-US" level="3" l10n="U" oldref="16">Only Texture</paragraph>
+<paragraph role="paragraph" id="par_id3148564" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_REPLACE">Applies the texture without shading.</ahelp></paragraph>
+<table id="tbl_id3147532">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154280" xml-lang="en-US" l10n="E">
+<image id="img_id3149045" src="svx/res/replac3d.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3149045" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156435" xml-lang="en-US" l10n="U" oldref="18">Only Texture</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_MODULATE" id="bm_id3151106" localize="false"/>
+<paragraph role="heading" id="hd_id3150541" xml-lang="en-US" level="3" l10n="U" oldref="19">Texture and Shading</paragraph>
+<paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_MODULATE">Applies the texture with shading. To define the shading options for the texture, click the <emph>Shading</emph> button in this dialog.</ahelp></paragraph>
+<table id="tbl_id3151210">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150742" xml-lang="en-US" l10n="E">
+<image id="img_id3152803" src="svx/res/modula3d.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3152803" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145419" xml-lang="en-US" l10n="U" oldref="21">Texture and Shading</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3148672" xml-lang="en-US" level="3" l10n="U" oldref="22">Projection X</paragraph>
+<paragraph role="paragraph" id="par_id3148677" xml-lang="en-US" l10n="U" oldref="23">Set the options for displaying the texture.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_OBJECT_X" id="bm_id3151041" localize="false"/>
+<paragraph role="heading" id="hd_id3148453" xml-lang="en-US" level="3" l10n="U" oldref="24">Object-specific</paragraph>
+<paragraph role="paragraph" id="par_id3144432" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_OBJECT_X">Automatically adjusts the texture based on the shape and size of the object.</ahelp></paragraph>
+<table id="tbl_id3143231">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155103" xml-lang="en-US" l10n="E">
+<image id="img_id3148920" src="svx/res/objspc3d.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3148920" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155133" xml-lang="en-US" l10n="U" oldref="26">Object-specific</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_PARALLEL_X" id="bm_id3149560" localize="false"/>
+<paragraph role="heading" id="hd_id3147300" xml-lang="en-US" level="3" l10n="U" oldref="27">Parallel</paragraph>
+<paragraph role="paragraph" id="par_id3153768" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_PARALLEL_X">Applies the texture parallel to the horizontal axis.</ahelp></paragraph>
+<table id="tbl_id3154145">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148977" xml-lang="en-US" l10n="E">
+<image id="img_id3147478" src="svx/res/parallel.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3147478" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147579" xml-lang="en-US" l10n="U" oldref="29">Parallel</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_CIRCLE_X" id="bm_id3144440" localize="false"/>
+<paragraph role="heading" id="hd_id3148577" xml-lang="en-US" level="3" l10n="U" oldref="30">Circular</paragraph>
+<paragraph role="paragraph" id="par_id3152418" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_CIRCLE_X">Wraps the horizontal axis of the texture pattern around a sphere.</ahelp></paragraph>
+<table id="tbl_id3159196">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="E">
+<image id="img_id3153943" src="svx/res/parallel.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153943" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156006" xml-lang="en-US" l10n="U" oldref="32">Circular</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3154129" xml-lang="en-US" level="3" l10n="U" oldref="33">Projection Y</paragraph>
+<paragraph role="paragraph" id="par_id3152878" xml-lang="en-US" l10n="U" oldref="34">Click the respective buttons to define the texture for the object Y axis.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_OBJECT_Y" id="bm_id3145113" localize="false"/>
+<paragraph role="heading" id="hd_id3154693" xml-lang="en-US" level="3" l10n="U" oldref="35">Object-specific</paragraph>
+<paragraph role="paragraph" id="par_id3153095" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_OBJECT_Y">Automatically adjusts the texture based on the shape and size of the object.</ahelp></paragraph>
+<table id="tbl_id3150684">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153210" xml-lang="en-US" l10n="E">
+<image id="img_id3153188" src="svx/res/objspc3d.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3153188" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U" oldref="37">Object-specific</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_PARALLEL_Y" id="bm_id3145799" localize="false"/>
+<paragraph role="heading" id="hd_id3148775" xml-lang="en-US" level="3" l10n="U" oldref="38">Parallel</paragraph>
+<paragraph role="paragraph" id="par_id3145730" xml-lang="en-US" l10n="U" oldref="39"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_PARALLEL_Y">Applies the texture parallel to the vertical axis.</ahelp></paragraph>
+<table id="tbl_id3149909">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147485" xml-lang="en-US" l10n="E">
+<image id="img_id3151280" src="svx/res/parallel.png" width="0.1661inch" height="0.1661inch"><alt id="alt_id3151280" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156737" xml-lang="en-US" l10n="U" oldref="40">Parallel</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_CIRCLE_Y" id="bm_id3154096" localize="false"/>
+<paragraph role="heading" id="hd_id3149377" xml-lang="en-US" level="3" l10n="U" oldref="41">Circular</paragraph>
+<paragraph role="paragraph" id="par_id3159348" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_CIRCLE_Y">Wraps the vertical axis of the texture pattern around a sphere.</ahelp></paragraph>
+<table id="tbl_id3144764">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3157876" xml-lang="en-US" l10n="E">
+<image id="img_id3152807" src="svx/res/parallel.png" width="0.222inch" height="0.222inch"><alt id="alt_id3152807" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151173" xml-lang="en-US" l10n="U" oldref="43">Circular</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3149581" xml-lang="en-US" level="3" l10n="U" oldref="44">Filter</paragraph>
+<paragraph role="paragraph" id="par_id3148456" xml-lang="en-US" l10n="U" oldref="45">Filters out some of the 'noise' that can occur when you apply a texture to a 3D object.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXFLOAT_3D:BTN_TEX_FILTER" id="bm_id3155085" localize="false"/>
+<paragraph role="heading" id="hd_id3151319" xml-lang="en-US" level="3" l10n="U" oldref="46">Filtering On/Off</paragraph>
+<paragraph role="paragraph" id="par_id3151038" xml-lang="en-US" l10n="U" oldref="47"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXFLOAT_3D:BTN_TEX_FILTER">Blurs the texture slightly to remove unwanted speckles.</ahelp></paragraph>
+<table id="tbl_id3148833">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145651" xml-lang="en-US" l10n="E">
+<image id="img_id3156355" src="res/sx10715.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id3156355" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146900" xml-lang="en-US" l10n="U" oldref="48">Filtering On/Off</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</body>
+</helpdocument>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared01gallery_filesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Files</title>
+<filename>/text/shared/01/gallery_files.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-24T11:27:24">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3150756" xml-lang="en-US" level="1" l10n="U" oldref="1">Files</paragraph>
+<paragraph role="paragraph" id="par_id3153882" xml-lang="en-US" l10n="U" oldref="2"><variable id="stargallerymanager">Adds new files to the selected theme. 
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#galleryregisterdateien"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXTABPAGE_GALLERYTHEME_FILES:CBB_FILETYPE" id="bm_id3151330" localize="false"/>
+<paragraph role="heading" id="hd_id3153089" xml-lang="en-US" level="3" l10n="U" oldref="5">File Type</paragraph>
+<paragraph role="paragraph" id="par_id3154497" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:COMBOBOX:RID_SVXTABPAGE_GALLERYTHEME_FILES:CBB_FILETYPE">Select the type of file that you want to add.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MultiListBox:RID_SVXTABPAGE_GALLERYTHEME_FILES:LBX_FOUND" id="bm_id3150902" localize="false"/>
+<paragraph role="heading" id="hd_id3153935" xml-lang="en-US" level="3" l10n="U" oldref="7">Files found</paragraph>
+<paragraph role="paragraph" id="par_id3145829" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX:MULTILISTBOX:RID_SVXTABPAGE_GALLERYTHEME_FILES:LBX_FOUND">Lists the available files. Select the file(s) that you want to add, and then click <emph>Add</emph>. To add all of the files in the list, click <emph>Add All</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXTABPAGE_GALLERYTHEME_FILES:BTN_SEARCH" id="bm_id3155552" localize="false"/>
+<paragraph role="heading" id="hd_id3154751" xml-lang="en-US" level="3" l10n="U" oldref="9">Find files</paragraph>
+<paragraph role="paragraph" id="par_id3147557" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX:PUSHBUTTON:RID_SVXTABPAGE_GALLERYTHEME_FILES:BTN_SEARCH">Locate the directory containing the files that you want to add, and then click <emph>OK</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXTABPAGE_GALLERYTHEME_FILES:BTN_TAKE" id="bm_id3147576" localize="false"/>
+<paragraph role="heading" id="hd_id3154317" xml-lang="en-US" level="3" l10n="U" oldref="13">Add</paragraph>
+<paragraph role="paragraph" id="par_id3150774" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX:PUSHBUTTON:RID_SVXTABPAGE_GALLERYTHEME_FILES:BTN_TAKE">Adds the selected file(s) to the current theme.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXTABPAGE_GALLERYTHEME_FILES:BTN_TAKEALL" id="bm_id3149095" localize="false"/>
+<paragraph role="heading" id="hd_id3149751" xml-lang="en-US" level="3" l10n="U" oldref="15">Add all</paragraph>
+<paragraph role="paragraph" id="par_id3156426" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX:PUSHBUTTON:RID_SVXTABPAGE_GALLERYTHEME_FILES:BTN_TAKEALL">Adds all of the files in the list to the current theme.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXTABPAGE_GALLERYTHEME_FILES:CBX_PREVIEW" id="bm_id3147654" localize="false"/>
+<paragraph role="heading" id="hd_id3147088" xml-lang="en-US" level="3" l10n="U" oldref="17">Preview</paragraph>
+<paragraph role="paragraph" id="par_id3151111" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX:CHECKBOX:RID_SVXTABPAGE_GALLERYTHEME_FILES:CBX_PREVIEW">Displays or hides a preview of the selected file.</ahelp></paragraph><comment>UFI: removed help id</comment>
+<paragraph role="heading" id="hd_id3147275" xml-lang="en-US" level="3" l10n="U" oldref="19">Preview box</paragraph>
+<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="HID_GALLERY_PREVIEW">Displays a preview of the selected file.</ahelp></paragraph>
+</body>
+</helpdocument>

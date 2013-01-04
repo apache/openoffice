@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0000000208xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text Import</title>
+<filename>/text/shared/00/00000208.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/sc:ModalDialog:RID_SCDLG_ASCII" id="bm_id3148919" localize="false"/><paragraph role="heading" id="hd_id3150960" xml-lang="en-US" level="1" l10n="U" oldref="1">Text Import</paragraph>
+<paragraph role="paragraph" id="par_id3149987" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="SC:MODALDIALOG:RID_SCDLG_ASCII">Sets the import options for delimited data.</ahelp></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#textimport"/>
+</section>
+<switch select="appl">
+<case select="CALC"><embed href="text/scalc/guide/csv_files.xhp#csv_files"/>
+<embed href="text/scalc/guide/csv_formula.xhp#csv_formula"/>
+</case>
+</switch>
+<paragraph role="heading" id="hd_id3147588" xml-lang="en-US" level="2" l10n="U" oldref="45">Import</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_ASCII:LB_CHARSET" id="bm_id3155934" localize="false"/><paragraph role="heading" id="hd_id3154788" xml-lang="en-US" level="3" l10n="U" oldref="9">Character Set</paragraph>
+<paragraph role="paragraph" id="par_id3149495" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SC:LISTBOX:RID_SCDLG_ASCII:LB_CHARSET">Specifies the character set to be used in the imported file.</ahelp></paragraph>
+
+
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_ASCII:LB_CUSTOMLANG" id="bm_id315593499" localize="false"/><paragraph role="heading" id="hd_id315478899" xml-lang="en-US" level="3" l10n="NEW">Language</paragraph>
+<paragraph role="paragraph" id="par_id314949588" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Determines how the number strings are imported.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id314949587" xml-lang="en-US" l10n="NEW">If Language is set to Default (for CSV import) or Automatic (for HTML import), Calc will use the globally set language. If Language is set to a specific language, that language will be used when importing numbers.</paragraph>
+<paragraph role="paragraph" id="par_id314949586" xml-lang="en-US" l10n="NEW">When importing an HTML document, the Language selection can conflict with the global HTML option <link href="text/shared/optionen/01030500.xhp" name="Use">Use 'English (USA)' locale for numbers</link>. The global HTML option is effective only when the Automatic language option is selected. If you select a specific language in the HTML Import Options dialog, the global HTML option is ignored.</paragraph>
+
+
+<bookmark xml-lang="en-US" branch="hid/sc:NumericField:RID_SCDLG_ASCII:NF_AT_ROW" id="bm_id3153377" localize="false"/><paragraph role="heading" id="hd_id3154894" xml-lang="en-US" level="3" l10n="U" oldref="47">From Row</paragraph>
+<paragraph role="paragraph" id="par_id3150247" xml-lang="en-US" l10n="U" oldref="48"><ahelp hid="SC:NUMERICFIELD:RID_SCDLG_ASCII:NF_AT_ROW">Specifies the row where you want to start the import.</ahelp> The rows are visible in the preview window at the bottom of the dialog.</paragraph>
+<paragraph role="heading" id="hd_id3149999" xml-lang="en-US" level="2" l10n="U" oldref="3">Separator Options</paragraph>
+<paragraph role="paragraph" id="par_id3149640" xml-lang="en-US" l10n="U" oldref="4">Specifies whether your data uses separators or fixed widths as delimiters.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_ASCII:RB_FIXED" id="bm_id3153894" localize="false"/><paragraph role="heading" id="hd_id3156553" xml-lang="en-US" level="3" l10n="U" oldref="7">Fixed width</paragraph>
+<paragraph role="paragraph" id="par_id3150710" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_ASCII:RB_FIXED">Separates fixed-width data (equal number of characters) into columns.</ahelp> Click on the ruler in the preview window to set the width.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_ASCII:RB_SEPARATED" id="bm_id3147043" localize="false"/><paragraph role="heading" id="hd_id3156560" xml-lang="en-US" level="3" l10n="U" oldref="5">Separated by</paragraph>
+<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_ASCII:RB_SEPARATED">Select the separator used in your data.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CKB_TAB" id="bm_id3153345" localize="false"/><paragraph role="heading" id="hd_id3147250" xml-lang="en-US" level="3" l10n="U" oldref="49">Tab</paragraph>
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="50"><ahelp hid="SC:CHECKBOX:RID_SCDLG_ASCII:CKB_TAB">Separates data delimited by tabs into columns.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CKB_SEMICOLON" id="bm_id3157959" localize="false"/><paragraph role="heading" id="hd_id3154317" xml-lang="en-US" level="3" l10n="U" oldref="51">Semicolon</paragraph>
+<paragraph role="paragraph" id="par_id3157863" xml-lang="en-US" l10n="U" oldref="52"><ahelp hid="SC:CHECKBOX:RID_SCDLG_ASCII:CKB_SEMICOLON">Separates data delimited by semicolons into columns.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CKB_COMMA" id="bm_id3147089" localize="false"/><paragraph role="heading" id="hd_id3145313" xml-lang="en-US" level="3" l10n="U" oldref="53">Comma</paragraph>
+<paragraph role="paragraph" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="54"><ahelp hid="SC:CHECKBOX:RID_SCDLG_ASCII:CKB_COMMA">Separates data delimited by commas into columns.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CKB_SPACE" id="bm_id3109848" localize="false"/><paragraph role="heading" id="hd_id3163802" xml-lang="en-US" level="3" l10n="U" oldref="55">Space</paragraph>
+<paragraph role="paragraph" id="par_id3153663" xml-lang="en-US" l10n="U" oldref="56"><ahelp hid="SC:CHECKBOX:RID_SCDLG_ASCII:CKB_SPACE">Separates data delimited by spaces into columns.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CKB_OTHER" id="bm_id3149098" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_ASCII:ED_OTHER" id="bm_id3149801" localize="false"/><paragraph role="heading" id="hd_id3147335" xml-lang="en-US" level="3" l10n="U" oldref="57">Other</paragraph>
+<paragraph role="paragraph" id="par_id3156329" xml-lang="en-US" l10n="U" oldref="58"><ahelp hid="SC:EDIT:RID_SCDLG_ASCII:ED_OTHER">Separates data into columns using the custom separator that you specify. Note: The custom separator must also be contained in your data.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CB_ASONCE" id="bm_id3146807" localize="false"/><paragraph role="heading" id="hd_id3150978" xml-lang="en-US" level="3" l10n="U" oldref="59">Merge delimiters</paragraph>
+<paragraph role="paragraph" id="par_id3153827" xml-lang="en-US" l10n="U" oldref="60"><ahelp hid="SC:CHECKBOX:RID_SCDLG_ASCII:CB_ASONCE">Combines consecutive delimiters and removes blank data fields.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ComboBox:RID_SCDLG_ASCII:CB_TEXTSEP" id="bm_id3147619" localize="false"/><paragraph role="heading" id="hd_id3155341" xml-lang="en-US" level="3" l10n="U" oldref="15">Text delimiter</paragraph>
+<paragraph role="paragraph" id="par_id3156326" xml-lang="en-US" l10n="CHG" oldref="16"><ahelp hid="SC:COMBOBOX:RID_SCDLG_ASCII:CB_TEXTSEP">Select a character to delimit text data. You can can also enter a character in the text box.</ahelp></paragraph>
+
+
+
+<paragraph role="heading" id="hd_id315538811" xml-lang="en-US" level="2" l10n="NEW">Other options</paragraph>
+<paragraph role="paragraph" id="par_id315366511" xml-lang="en-US" l10n="NEW">Sets some other import options.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CB_QUOTED_AS_TEXT" id="bm_id315790911" localize="false"/>
+<paragraph role="heading" id="hd_id314847411" xml-lang="en-US" level="3" l10n="NEW">Quoted fields as text</paragraph>
+<paragraph role="paragraph" id="par_id314995711" xml-lang="en-US" l10n="NEW"><ahelp hid=".">When this option is enabled, fields or cells whose values are quoted in their entirety (the first and last characters of the value equal the text delimiter) are imported as text.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ASCII:CB_DETECT_SPECIAL_NUMBER" id="bm_id315790922" localize="false"/>
+<paragraph role="heading" id="hd_id314847422" xml-lang="en-US" level="3" l10n="NEW">Detect special numbers</paragraph>
+<paragraph role="paragraph" id="par_id314995722" xml-lang="en-US" l10n="NEW"><ahelp hid=".">When this option is enabled, Calc will automatically detect all number formats, including special number formats such as dates, time, and scientific notation.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id314995723" xml-lang="en-US" l10n="NEW">The selected language influences how such special numbers are detected, since different languages and regions many have different conventions for such special numbers.</paragraph>
+<paragraph role="paragraph" id="par_id314995724" xml-lang="en-US" l10n="NEW">When this option is disabled, Calc will detect and convert only decimal numbers. The rest, including numbers formatted in scientific notation, will be imported as text. A decimal number string can have digits 0-9, thousands separators, and a decimal separator. Thousands separators and decimal separators may vary with the selected language and region.</paragraph>
+
+
+
+<paragraph role="heading" id="hd_id3155388" xml-lang="en-US" level="2" l10n="U" oldref="61">Fields</paragraph>
+<paragraph role="paragraph" id="par_id3153665" xml-lang="en-US" l10n="U" oldref="62">Shows how your data will look when it is separated into columns.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_ASCII:LB_TYPE1" id="bm_id3157909" localize="false"/><paragraph role="heading" id="hd_id3148474" xml-lang="en-US" level="3" l10n="U" oldref="63">Column type</paragraph>
+<paragraph role="paragraph" id="par_id3149957" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SC:LISTBOX:RID_SCDLG_ASCII:LB_TYPE1">Choose a column in the preview window and select the data type to be applied the imported data.</ahelp> You can select one of the following options:</paragraph>
+<table id="tbl_id3155179">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152945" xml-lang="en-US" l10n="U" oldref="25">Type</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3145121" xml-lang="en-US" l10n="U" oldref="26">Function</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149763" xml-lang="en-US" l10n="U" oldref="27">Standard</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155923" xml-lang="en-US" l10n="U" oldref="28">$[officename] determines the type.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152472" xml-lang="en-US" l10n="U" oldref="29">Text</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148946" xml-lang="en-US" l10n="U" oldref="30">Imported data are treated as text.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="31">Date (DMY)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156434" xml-lang="en-US" l10n="U" oldref="32">Applies a date format (Day, Month, Year) to the imported data in a column.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148740" xml-lang="en-US" l10n="U" oldref="33">Date (MDY)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149688" xml-lang="en-US" l10n="U" oldref="34">Applies a date format (Month, Day, Year) to the imported data in a column.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150230" xml-lang="en-US" l10n="U" oldref="35">Date (YMD)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153207" xml-lang="en-US" l10n="U" oldref="36">Applies a date format (Year, Month, Day) to the imported data in a column.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148981" xml-lang="en-US" l10n="U" oldref="65">US English</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153178" xml-lang="en-US" l10n="U" oldref="66">Numbers formatted in US English are searched for and included regardless of the system language. A number format is not applied. If there are no US English entries, the <emph>Standard</emph> format is applied.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154329" xml-lang="en-US" l10n="U" oldref="37">Hide</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154946" xml-lang="en-US" l10n="U" oldref="38">The data in the column are not imported.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="paragraph" id="par_id3149767" xml-lang="en-US" l10n="U" oldref="75">If you selected one of the date formats (DMY), (MDY), or (YMD) and you enter numbers without date delimiters, the numbers are interpreted as follows:</paragraph>
+<table id="tbl_id3145745">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150650" xml-lang="en-US" l10n="U" oldref="76">Number of characters </paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150495" xml-lang="en-US" l10n="U" oldref="77">Date format</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156212" xml-lang="en-US" l10n="U" oldref="78">6</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153056" xml-lang="en-US" l10n="U" oldref="79">Two characters each are taken for day, month, and year in the selected order.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147352" xml-lang="en-US" l10n="U" oldref="80">8</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153768" xml-lang="en-US" l10n="U" oldref="81">Four characters are taken for the year, two each for month and day, in the selected order.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147295" xml-lang="en-US" l10n="U" oldref="82">5 or 7</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151168" xml-lang="en-US" l10n="U" oldref="83">As with 6 or 8 characters, but the first part of the sequence has one character less. This will suppress a leading zero for month and day.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="tip" id="par_id3153143" xml-lang="en-US" l10n="U" oldref="44">If you want to include the leading zero in the data you import, in telephone numbers for example, apply the "Text" format to the column.</paragraph>
+<paragraph role="heading" id="hd_id3149287" xml-lang="en-US" level="3" l10n="U" oldref="39">Preview</paragraph>
+<paragraph role="paragraph" id="par_id3147377" xml-lang="en-US" l10n="U" oldref="40">Shows how the imported text will look after it is separated into columns. To apply a format to a column when it is imported, click a column and select a <emph>Column type</emph>. When you select a <emph>Column type</emph>, the column heading displays the applied format.</paragraph>
+<paragraph role="paragraph" id="par_id3150105" xml-lang="en-US" l10n="U" oldref="64">If you want to use a fixed width to separate the imported data into columns, click in the ruler to set the width boundaries.</paragraph>
+<paragraph role="paragraph" id="par_id3155746" xml-lang="en-US" l10n="U" oldref="74"><link href="text/shared/guide/keyboard.xhp" name="Navigating Without the Mouse">Navigating Without the Mouse</link></paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="43">For more information, see <link href="text/shared/00/00000020.xhp" name="Information about Import and Export Filters">Information about Import and Export Filters</link>.</paragraph>
+</body>
+</helpdocument>

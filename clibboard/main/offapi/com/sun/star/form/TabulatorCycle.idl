@@ -1,0 +1,80 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_form_TabulatorCycle_idl__ 
+#define __com_sun_star_form_TabulatorCycle_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module form {  
+ 
+//============================================================================= 
+ 
+/** specifies how the TAB key should be used in a form.
+
+	<p>If the last control of a form is focused, and the user pressed the TAB key, there are
+	several possibilities how a <type>FormController</type> should handle this.
+	<type>TabulatorCycle</type> specifies these possibilities.</p>
+
+	<p>Note that the <type>TabulatorCycle</type> determines what happens when SHIFT-TAB
+	is pressed on the <em>first</em> control of a form, as well as when TAB is pressed on the
+	<em>last</em> control.</p>
+
+	<p><em>First</em> and <em>last</em> refers to the tabbing order of controls.</p>
+
+	@see FormControlModel::TabIndex
+	@see FormController
+ */
+published enum TabulatorCycle
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** pressing the TAB key from the last control moves the focus to
+		the first control in the tab order of the next record.
+	 */
+	RECORDS, 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** pressing the TAB key from the last control moves the focus to
+		the first control in the tab order of the same record.
+	 */
+	CURRENT, 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** pressing the TAB key from the last control of a form moves
+		the focus to the first control of the next form in the tab order.
+	 */
+	PAGE 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

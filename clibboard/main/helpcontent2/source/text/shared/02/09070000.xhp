@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared0209070000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Hyperlink Dialog</title>
+         <filename>/text/shared/02/09070000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="hyperlink">
+<bookmark xml-lang="en-US" branch="hid/.uno:HyperlinkDialog" id="bm_id4087126" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:HyperlinkDialog" id="bm_id3149748" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:EditHyperlink" id="bm_id6121214" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:EditHyperlink" id="bm_id3151097" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145759" role="heading" level="1" l10n="U" oldref="1"><variable id="hyperdia"><link href="text/shared/02/09070000.xhp" name="Hyperlink Dialog">Hyperlink</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156183" role="paragraph" l10n="U" oldref="2"><variable id="hyperdiatext"><ahelp hid=".uno:EditHyperlink">Opens a dialog that enables you to create and edit hyperlinks.</ahelp>
+</variable></paragraph>
+      </section>
+      <section id="syhyperdia">
+         <table id="tbl_id3158405">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154927" role="paragraph" l10n="E">
+<image id="img_id3093440" src="res/commandimagelist/sc_hyperlinkdialog.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3093440">Icon</alt>
+	</image></paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155552" role="paragraph" l10n="U" oldref="3">Hyperlink Dialog</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+      </section>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_ICCDIALOG_CHOICECTRL" id="bm_id3149177" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3155391" role="paragraph" l10n="U" oldref="4"><ahelp hid="HID_ICCDIALOG_CHOICECTRL">Select the type of hyperlink to be inserted.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:OpenHyperlinkOnCursor" id="bm_id7868083" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:OpenHyperlinkOnCursor" id="bm_id3145345" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3153683" role="paragraph" l10n="CHG" oldref="16"><ahelp hid=".uno:OpenHyperlinkOnCursor" visibility="hidden">Opens the hyperlink in your default web browser.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:EditHyperlink" id="bm_id0122200902201484" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:EditHyperlink" id="bm_id0122200902201587" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0122200902231573" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens the Hyperlink dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:CopyHyperlinkLocation" id="bm_id0122200902224858" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0122200902231660" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Copies the URL to the clipboard.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:RemoveHyperlink" id="bm_id0122200902230774" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0122200902231630" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Removes the hyperlink, leaving plain text.</ahelp></paragraph>
+      <embed href="text/shared/02/09070100.xhp#internet"/>
+      <embed href="text/shared/02/09070200.xhp#mailnews"/>
+      <embed href="text/shared/02/09070300.xhp#dokument"/>
+      <embed href="text/shared/02/09070400.xhp#neuesdokument"/>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_ICCDIALOG_OK_BTN" id="bm_id3149811" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3166410" role="heading" level="3" l10n="U" oldref="7">Apply</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147209" role="paragraph" l10n="U" oldref="8"><ahelp hid="HID_ICCDIALOG_OK_BTN">Applies the data to your document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_ICCDIALOG_CANCEL_BTN" id="bm_id3159166" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149398" role="heading" level="3" l10n="U" oldref="9">Close</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149734" role="paragraph" l10n="U" oldref="10"><ahelp hid="HID_ICCDIALOG_CANCEL_BTN">Closes the dialog without saving.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153700" role="heading" level="3" l10n="U"
+                 oldref="11">Help</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150943" role="paragraph" l10n="U" oldref="12">Opens the Help.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_ICCDIALOG_RESET_BTN" id="bm_id3155434" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156192" role="heading" level="3" l10n="U"
+                 oldref="13">Back</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149234" role="paragraph" l10n="U" oldref="14"><ahelp hid="HID_ICCDIALOG_RESET_BTN">Resets the entries in the dialog to their original state.</ahelp></paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/hyperlink_insert.xhp#hyperlink_insert"/>
+      </section>
+   </body>
+</helpdocument>

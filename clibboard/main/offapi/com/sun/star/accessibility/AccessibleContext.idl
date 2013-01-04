@@ -1,0 +1,63 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_accessibility_AccessibleContext_idl__
+#define __com_sun_star_accessibility_AccessibleContext_idl__
+
+module com { module sun { module star { module accessibility {
+
+ published interface XAccessibleContext;
+ published interface XAccessibleEventBroadcaster;
+
+/** Central service of the Accessibility API that gives access to various
+    facets of an object's content.
+
+    <p>This service has to be implemented by every class that represents the
+    actual accessibility information of another UNO service.  It exposes two
+    kinds of information: A tree structure in which all accessible objects
+    are organized can be navigated in freely.  It typically represents
+    spatial relationship of one object containing a set of children like a
+    dialog box contains a set of buttons.  Additionally the
+    <type>XAccessibleContext</type> interface of this service exposes
+    methods that provide access to the actual object's content.  This can be
+    the object's role, name, description, and so on.</p>
+    
+    @see XAccessibleContext
+
+    @since OOo 1.1.2
+*/    
+published service AccessibleContext
+{
+	interface XAccessibleContext;
+
+	/** is implemented by accessible contexts that supports broadcasting of
+		accessible events.
+
+		@see AccessibleEventObject
+		@see AccessibleEventId
+	*/
+	[optional] interface XAccessibleEventBroadcaster; 
+};
+          
+}; }; }; };
+
+#endif

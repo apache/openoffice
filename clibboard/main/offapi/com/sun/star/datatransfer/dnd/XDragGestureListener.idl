@@ -1,0 +1,66 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_datatransfer_dnd_XDragGestureListener_idl__
+#define __com_sun_star_datatransfer_dnd_XDragGestureListener_idl__
+
+#ifndef __com_sun_star_datatransfer_dnd_DragGestureEvent_idl__
+#include <com/sun/star/datatransfer/dnd/DragGestureEvent.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XEventListener_idl__
+#include <com/sun/star/lang/XEventListener.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module datatransfer { module dnd {
+
+//=============================================================================
+/** This interface will be used by a <type>XDragGestureRecognizer</type> 
+	when it detects a drag initiating gesture. 
+
+    <p>The implementor of this interface is responsible for starting the drag 
+    as a result of receiving such notification.</p>
+
+*/
+
+published interface XDragGestureListener: com::sun::star::lang::XEventListener
+{
+	//-------------------------------------------------------------------------
+	/** A <type>XDragGestureRecognizer</type> has detected a platform-dependent 
+		drag initiating gesture and is notifying this listener in order 
+		for it to initiate the action for the user.
+
+	    @param dge
+	    The DragGestureEvent describing the gesture that has just occurred.
+
+	*/
+    [oneway] void dragGestureRecognized( [in] DragGestureEvent dge );
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

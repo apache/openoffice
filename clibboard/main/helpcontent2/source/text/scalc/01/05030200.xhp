@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0105030200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Optimal Row Heights</title>
+<filename>/text/scalc/01/05030200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-16T11:36:57">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148491"><bookmark_value>sheets; optimal row heights</bookmark_value>
+<bookmark_value>rows; optimal heights</bookmark_value>
+<bookmark_value>optimal row heights</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:SetOptimalRowHeight" id="bm_id1299843" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:SetOptimalRowHeight" id="bm_id3145673" localize="false"/>
+<paragraph role="heading" id="hd_id3148491" xml-lang="en-US" level="1" l10n="U" oldref="1">Optimal Row Heights</paragraph>
+<paragraph role="paragraph" id="par_id3154758" xml-lang="en-US" l10n="U" oldref="2"><variable id="optitext"><ahelp hid=".uno:SetOptimalRowHeight">Determines the optimal row height for the selected rows.</ahelp>
+</variable> The optimal row height depends on the font size of the largest character in the row. You can use various <link href="text/shared/00/00000003.xhp#metrik" name="units of measure">units of measure</link>.</paragraph>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000405.xhp#fozeiophoe"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sc:MetricField:RID_SCDLG_ROW_OPT:ED_VALUE" id="bm_id3156280" localize="false"/>
+<paragraph role="heading" id="hd_id3154908" xml-lang="en-US" level="2" l10n="U" oldref="3">Add</paragraph>
+<paragraph role="paragraph" id="par_id3151044" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SC:METRICFIELD:RID_SCDLG_ROW_OPT:ED_VALUE">Sets additional spacing between the largest character in a row and the cell boundaries.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_ROW_OPT:BTN_DEFVAL" id="bm_id3145271" localize="false"/>
+<paragraph role="heading" id="hd_id3150439" xml-lang="en-US" level="2" l10n="U" oldref="5">Default value</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SC:CHECKBOX:RID_SCDLG_ROW_OPT:BTN_DEFVAL">Restores the default value for the optimal row height.</ahelp></paragraph>
+</body>
+</helpdocument>

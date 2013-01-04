@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabase30000000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Adabas D Database</title>
+<filename>/text/shared/explorer/database/30000000.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3151262" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/explorer/database/30000000.xhp" name="Adabas D Database">Adabas D Database</link></paragraph>
+<paragraph role="paragraph" id="par_id3479720" xml-lang="en-US" l10n="NEW">The Adabas D software package can be downloaded and installed separately (see www.adabas.com).</paragraph>
+<paragraph role="heading" id="hd_id3152997" xml-lang="en-US" level="2" l10n="CHG" oldref="3">About Adabas</paragraph>
+<paragraph role="paragraph" id="par_id3151111" xml-lang="en-US" l10n="CHG" oldref="4">The free available Adabas database is restricted to a size of 100 MB, and a maximum of three users on a network. See the "License.txt" file in the Adabas directory for more details. The Adabas database must be installed in a separate directory from $[officename].</paragraph>
+<paragraph role="paragraph" id="par_id3154749" xml-lang="en-US" l10n="U" oldref="97">The name of an Adabas file cannot exceed 8 characters. The path to the Adabas file, including the file name, cannot exceed 30 characters, and must be compliant with the 7-bit ASCII code. Both the path and the file name cannot contain spaces.</paragraph>
+<paragraph role="note" id="par_id3153254" xml-lang="en-US" l10n="U" oldref="6">Under Windows, the Adabas setup application adds the DBROOT environment variable that contains the path information for the database. If the setup application finds this variable, it does not install the database.</paragraph>
+<paragraph role="heading" id="hd_id3154729" xml-lang="en-US" level="2" l10n="U" oldref="37">Create New Adabas Database</paragraph>
+<paragraph role="paragraph" id="par_id3149378" xml-lang="en-US" l10n="U" oldref="38">Use the <link href="text/shared/explorer/database/30100000.xhp" name="Create New Adabas Database"><emph>Create New Adabas Database</emph></link> dialog to create an Adabas database:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147045" xml-lang="en-US" l10n="CHG" oldref="39">Choose <emph>File - New - Database</emph> to open the Database Wizard.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147394" xml-lang="en-US" l10n="CHG" oldref="98">Click <emph>Connect to an existing database</emph>, and then select "Adabas" in the listbox (scroll up in the listbox).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155600" xml-lang="en-US" l10n="CHG" oldref="99">Work through the steps in the remaining pages of the Database Wizard.<comment>i73780</comment></paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3154270" xml-lang="en-US" level="2" l10n="U" oldref="42">Deleting an Adabas Database</paragraph>
+<paragraph role="paragraph" id="par_id3157869" xml-lang="en-US" l10n="CHG" oldref="43">To delete the reference to an Adabas database, choose <emph>Tools - Options - %PRODUCTNAME Base - Databases</emph>. Select the database, and then click <emph>Delete</emph>.</paragraph>
+</body>
+</helpdocument>

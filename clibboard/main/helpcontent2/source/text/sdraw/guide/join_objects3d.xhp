@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsdrawguidejoin_objects3dxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Assembling 3D Objects</title>
+<filename>/text/sdraw/guide/join_objects3d.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154014"><bookmark_value>3D objects; assembling</bookmark_value>
+<bookmark_value>assembled objects in 3D</bookmark_value>
+<bookmark_value>combining;3D objects</bookmark_value>
+<bookmark_value>joining;3D objects</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3154014" xml-lang="en-US" l10n="E" oldref="37" localize="false"/>
+<paragraph role="heading" id="hd_id3156442" xml-lang="en-US" level="1" l10n="U" oldref="29"><variable id="join_objects3d"><link href="text/sdraw/guide/join_objects3d.xhp" name="Assembling 3D Objects">Assembling 3D Objects</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3145251" xml-lang="en-US" l10n="U" oldref="30">3D objects that each form a 3D scene can be combined into a single 3D scene.</paragraph>
+<paragraph role="heading" id="hd_id3150042" xml-lang="en-US" level="3" l10n="U" oldref="41">To combine 3D objects:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154702" xml-lang="en-US" l10n="U" oldref="31">Insert a 3D object from the <emph>3D Objects</emph> toolbar (for example, a cube).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155335" xml-lang="en-US" l10n="U" oldref="32">Insert a second slightly larger 3D object (for example, a sphere).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148488" xml-lang="en-US" l10n="U" oldref="33">Select the second 3D object (sphere) and choose <emph>Edit - Cut</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149211" xml-lang="en-US" l10n="U" oldref="34">Double-click the first object (cube) to enter its group.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154652" xml-lang="en-US" l10n="U" oldref="35">Choose <emph>Edit - Paste</emph>. Both objects are now part of the same group. If you want, you can edit the individual objects or change their position within the group.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155376" xml-lang="en-US" l10n="U" oldref="36">Double-click outside the group to exit the group.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3148606" xml-lang="en-US" l10n="U" oldref="38">You cannot intersect or subtract 3D objects.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3154537" xml-lang="en-US" l10n="U" oldref="39"><link href="text/simpress/02/10090000.xhp" name="Objects in 3D">Objects in 3D</link></paragraph>
+<embed href="text/sdraw/guide/join_objects.xhp#join_objects"/>
+</section>
+</body>
+</helpdocument>

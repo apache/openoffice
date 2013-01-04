@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalc0104060116xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Add-in Functions, List of Analysis Functions Part Two</title>
+         <filename>/text/scalc/01/04060116.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145074"><bookmark_value>imaginary numbers in analysis functions</bookmark_value>
+      <bookmark_value>complex numbers in analysis functions</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3154659" role="heading" level="1" l10n="U" oldref="1">Add-in Functions, List of Analysis Functions Part Two</paragraph>
+      <section id="howtoget">
+         <embed href="text/scalc/00/00000404.xhp#addinana"/>
+      </section>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id3151242" role="paragraph" l10n="U" oldref="174"><link href="text/scalc/01/04060108.xhp" name="Category Statistics">Category Statistics</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148869" role="paragraph" l10n="U" oldref="5"><link href="text/scalc/01/04060115.xhp" name="Analysis Functions Part One">Analysis Functions Part One</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147072" role="paragraph" l10n="U" oldref="240"><link href="text/scalc/01/04060111.xhp" name="Back to the Overview">Back to the Overview</link></paragraph>
+      </section>
+<sort>
+<section id="imabs">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154959"><bookmark_value>IMABS function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMABS" id="bm_id3154541" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154959" role="heading" level="2" oldref="44">IMABS</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149895" role="paragraph" l10n="U" oldref="45"><ahelp hid="HID_AAI_FUNC_IMABS">The result is the absolute value of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3155382" role="heading" level="3" l10n="U"
+                    oldref="46">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151302" role="code" l10n="U" oldref="47">IMABS("ComplexNumber")</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153974" role="paragraph" l10n="CHG" oldref="48"><variable id="complex"><emph>ComplexNumber</emph> is a complex number that is entered in the form "x+yi" or "x+yj".
+</variable><comment>no blanks allowed, see i82522</comment></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149697" role="heading" level="3" l10n="U"
+                    oldref="49">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3143222" role="paragraph" l10n="U" oldref="50">
+            <item type="input">=IMABS("5+12j")</item> returns 13.</paragraph>
+      </section>
+      <section id="imaginary">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145357"><bookmark_value>IMAGINARY function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMAGINARY" id="bm_id3154651" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145357" role="heading" level="2" oldref="51">IMAGINARY</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146965" role="paragraph" l10n="U" oldref="52"><ahelp hid="HID_AAI_FUNC_IMAGINARY">The result is the imaginary coefficient of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153555" role="heading" level="3" l10n="U"
+                    oldref="53">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155522" role="code" l10n="U" oldref="54">IMAGINARY("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3151193" role="heading" level="3" l10n="U"
+                    oldref="56">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155592" role="paragraph" l10n="U" oldref="57">
+            <item type="input">=IMAGINARY("4+3j")</item> returns 3.</paragraph>
+      </section>
+      <section id="impower">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146106"><bookmark_value>IMPOWER function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMPOWER" id="bm_id3155755" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146106" role="heading" level="2" oldref="58">IMPOWER</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147245" role="paragraph" l10n="U" oldref="59"><ahelp hid="HID_AAI_FUNC_IMPOWER">The result is the integer power of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150954" role="heading" level="3" l10n="U"
+                    oldref="60">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147501" role="code" l10n="U" oldref="61">IMPOWER("ComplexNumber"; Number)</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="par_id3155743" role="paragraph" l10n="U" oldref="63">
+            <emph>Number</emph> is the exponent.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149048" role="heading" level="3" l10n="U"
+                    oldref="64">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151393" role="paragraph" l10n="U" oldref="65">
+            <item type="input">=IMPOWER("2+3i";2)</item> returns -5+12i.</paragraph>
+      </section>
+      <section id="imargument">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148748"><bookmark_value>IMARGUMENT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMARGUMENT" id="bm_id3147297" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148748" role="heading" level="2" oldref="66">IMARGUMENT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151341" role="paragraph" l10n="U" oldref="67"><ahelp hid="HID_AAI_FUNC_IMARGUMENT">The result is the argument (the phi angle) of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150533" role="heading" level="3" l10n="U"
+                    oldref="68">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156402" role="code" l10n="U" oldref="69">IMARGUMENT("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3153019" role="heading" level="3" l10n="U"
+                    oldref="71">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159125" role="paragraph" l10n="U" oldref="72">
+            <item type="input">=IMARGUMENT("3+4j")</item> returns 0.927295.</paragraph>
+      </section>
+      <section id="imcos">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149146"><bookmark_value>IMCOS function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCOS" id="bm_id3150378" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149146" role="heading" level="2" oldref="73">IMCOS</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149725" role="paragraph" l10n="U" oldref="74"><ahelp hid="HID_AAI_FUNC_IMCOS">The result is the cosine of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159116" role="heading" level="3" l10n="U"
+                    oldref="75">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147415" role="code" l10n="U" oldref="76">IMCOS("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152980" role="heading" level="3" l10n="U"
+                    oldref="78">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157901" role="paragraph" l10n="U" oldref="79">
+            <item type="input">=IMCOS("3+4j") </item>returns -27.03-3.85j (rounded).</paragraph>
+      </section>
+      <section id="imcosh">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149148"><bookmark_value>IMCOSH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCOS" id="bm_id3150380" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149148" role="heading" level="2" oldref="">IMCOSH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149727" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCOSH">The result is the hyberbolic cosine of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159118" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147417" role="code" l10n="New" oldref="">IMCOSH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152982" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157903" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCOSH("3+4j") </item>returns -6.58066304-7.58155274j (rounded).</paragraph>
+      </section>
+      <section id="imcot">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149149"><bookmark_value>IMCOT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCOT" id="bm_id3150381" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149149" role="heading" level="2" oldref="">IMCOT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149728" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCOT">The result is the cotangent of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159119" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147418" role="code" l10n="New" oldref="">IMCOT("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152983" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157904" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCOT("3+4j") </item>returns -0.00018759-1.00064439j (rounded).</paragraph>
+      </section>
+      <section id="imcsc">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149147"><bookmark_value>IMCSC function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCSC" id="bm_id3150379" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149147" role="heading" level="2" oldref="">IMCSC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149726" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCSC">The result is the cosecant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159117" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147416" role="code" l10n="New" oldref="">IMCSC("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152981" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157902" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCSC("3+4j") </item>returns 0.00517447+0.03627589j (rounded).</paragraph>
+      </section>
+      <section id="imcsch">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149150"><bookmark_value>IMCSCH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCSCH" id="bm_id3150382" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149150" role="heading" level="2" oldref="">IMCSCH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149729" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMCSCH">The result is the hyperbolic cosecant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159120" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147419" role="code" l10n="New" oldref="">IMCSCH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152984" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157905" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMCSCH("3+4j") </item>returns -1.30632891+1.51251400j (rounded). </paragraph>
+      </section>
+      <section id="imdiv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150024"><bookmark_value>IMDIV function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMDIV" id="bm_id3154679" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150024" role="heading" level="2" oldref="80">IMDIV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145825" role="paragraph" l10n="U" oldref="81"><ahelp hid="HID_AAI_FUNC_IMDIV">The result is the division of two complex numbers.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150465" role="heading" level="3" l10n="U"
+                    oldref="82">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146942" role="code" l10n="U" oldref="83">IMDIV("Numerator"; "Denominator")</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150741" role="paragraph" l10n="CHG" oldref="84">
+            <emph>Numerator</emph>, <emph>Denominator</emph> are complex numbers that are entered in the form "x+yi" or "x+yj".</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3151229" role="heading" level="3" l10n="U"
+                    oldref="85">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148440" role="paragraph" l10n="U" oldref="86">
+            <item type="input">=IMDIV("-238+240i";"10+24i")</item> returns 5+12i.</paragraph>
+      </section>
+      <section id="imexp">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153039"><bookmark_value>IMEXP function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMEXP" id="bm_id3147468" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153039" role="heading" level="2" oldref="87">IMEXP</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3144741" role="paragraph" l10n="CHG" oldref="88"><ahelp hid="HID_AAI_FUNC_IMEXP">The result is the power of e and the complex number.</ahelp> The constant e has a value of approximately 2.71828182845904.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3145591" role="heading" level="3" l10n="U"
+                    oldref="89">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154810" role="code" l10n="U" oldref="90">IMEXP("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3148581" role="heading" level="3" l10n="U"
+                    oldref="92">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149253" role="paragraph" l10n="U" oldref="93">
+            <item type="input">=IMEXP("1+j") </item>returns 1.47+2.29j (rounded).</paragraph>
+      </section>
+      <section id="imconjugate">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149955"><bookmark_value>IMCONJUGATE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMCONJUGATE" id="bm_id3152782" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149955" role="heading" level="2" oldref="94">IMCONJUGATE</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155263" role="paragraph" l10n="U" oldref="95"><ahelp hid="HID_AAI_FUNC_IMCONJUGATE">The result is the conjugated complex complement to a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3148750" role="heading" level="3" l10n="U"
+                    oldref="96">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153082" role="code" l10n="U" oldref="97">IMCONJUGATE("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3153326" role="heading" level="3" l10n="U"
+                    oldref="99">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149688" role="paragraph" l10n="U" oldref="100">
+            <item type="input">=IMCONJUGATE("1+j")</item> returns 1-j.</paragraph>
+      </section>
+      <section id="imln">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150898"><bookmark_value>IMLN function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMLN" id="bm_id3149190" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150898" role="heading" level="2" oldref="101">IMLN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146853" role="paragraph" l10n="CHG" oldref="102"><ahelp hid="HID_AAI_FUNC_IMLN">The result is the natural logarithm (to the base e) of a complex number.</ahelp> The constant e has a value of approximately 2.71828182845904.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150008" role="heading" level="3" l10n="U"
+                    oldref="103">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155954" role="code" l10n="U" oldref="104">IMLN("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3153565" role="heading" level="3" l10n="U"
+                    oldref="106">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153736" role="paragraph" l10n="U" oldref="107">
+            <item type="input">=IMLN("1+j")</item> returns 0.35+0.79j (rounded).</paragraph>
+      </section>
+      <section id="imlog10">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155929"><bookmark_value>IMLOG10 function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMLOG10" id="bm_id3148765" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155929" role="heading" level="2" oldref="108">IMLOG10</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149882" role="paragraph" l10n="CHG" oldref="109"><ahelp hid="HID_AAI_FUNC_IMLOG10">The result is the common logarithm (to the base 10) of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154327" role="heading" level="3" l10n="U"
+                    oldref="110">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150128" role="code" l10n="U" oldref="111">IMLOG10("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3149003" role="heading" level="3" l10n="U"
+                    oldref="113">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151021" role="paragraph" l10n="U" oldref="114">
+            <item type="input">=IMLOG10("1+j")</item> returns 0.15+0.34j (rounded).</paragraph>
+      </section>
+      <section id="imlog2">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155623"><bookmark_value>IMLOG2 function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMLOG2" id="bm_id3157975" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155623" role="heading" level="2" oldref="115">IMLOG2</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150932" role="paragraph" l10n="U" oldref="116"><ahelp hid="HID_AAI_FUNC_IMLOG2">The result is the binary logarithm of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153046" role="heading" level="3" l10n="U"
+                    oldref="117">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145355" role="code" l10n="U" oldref="118">IMLOG2("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3148768" role="heading" level="3" l10n="U"
+                    oldref="120">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149536" role="paragraph" l10n="U" oldref="121">
+            <item type="input">=IMLOG2("1+j")</item> returns 0.50+1.13j (rounded).</paragraph>
+      </section>
+      <section id="improduct">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145626"><bookmark_value>IMPRODUCT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMPRODUCT" id="bm_id3150661" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145626" role="heading" level="2" oldref="122">IMPRODUCT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153545" role="paragraph" l10n="U" oldref="123"><ahelp hid="HID_AAI_FUNC_IMPRODUCT">The result is the product of up to 29 complex numbers.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149388" role="heading" level="3" l10n="U"
+                    oldref="124">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149027" role="code" l10n="U" oldref="125">IMPRODUCT("ComplexNumber"; "ComplexNumber1"; ...)</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3153228" role="heading" level="3" l10n="U"
+                    oldref="127">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155815" role="paragraph" l10n="U" oldref="128">
+            <item type="input">=IMPRODUCT("3+4j";"5-3j")</item> returns 27+11j.</paragraph>
+      </section>
+      <section id="imreal">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147539"><bookmark_value>IMREAL function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMREAL" id="bm_id3148596" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147539" role="heading" level="2" oldref="129">IMREAL</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155372" role="paragraph" l10n="U" oldref="130"><ahelp hid="HID_AAI_FUNC_IMREAL">The result is the real coefficient of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154951" role="heading" level="3" l10n="U"
+                    oldref="131">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153927" role="code" l10n="U" oldref="132">IMREAL("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3155409" role="heading" level="3" l10n="U"
+                    oldref="134">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155986" role="paragraph" l10n="U" oldref="135">
+            <item type="input">=IMREAL("1+3j")</item> returns 1.</paragraph>
+      </section>
+      <section id="imsec">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148430"><bookmark_value>IMSEC function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSEC" id="bm_id3153715" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148430" role="heading" level="2" oldref="">IMSEC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152590" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMSEC">The result is the secant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149821" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150386" role="code" l10n="New" oldref="">IMSEC("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3150612" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154309" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMSEC("3+4j")</item> returns -0.03625350+0.00516434j (rounded).</paragraph>
+      </section>
+      <section id="imsech">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148432"><bookmark_value>IMSECH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSECH" id="bm_id3153717" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148432" role="heading" level="2" oldref="">IMSECH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152592" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMSECH">The result is the hyperbolic secant of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149823" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150388" role="code" l10n="New" oldref="">IMSECH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3150614" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154311" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMSECH("3+4j")</item> returns -1.30823089+1.51467895j (rounded).</paragraph>
+      </section>
+      <section id="imsin">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148431"><bookmark_value>IMSIN function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSIN" id="bm_id3153716" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148431" role="heading" level="2" oldref="136">IMSIN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152591" role="paragraph" l10n="U" oldref="137"><ahelp hid="HID_AAI_FUNC_IMSIN">The result is the sine of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149822" role="heading" level="3" l10n="U"
+                    oldref="138">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150387" role="code" l10n="U" oldref="139">IMSIN("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3150613" role="heading" level="3" l10n="U"
+                    oldref="141">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154310" role="paragraph" l10n="U" oldref="142">
+            <item type="input">=IMSIN("3+4j")</item> returns 3.85+27.02j (rounded).</paragraph>
+      </section>
+      <section id="imsinh">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148433"><bookmark_value>IMSINH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSINH" id="bm_id3153718" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148433" role="heading" level="2" oldref="">IMSINH</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152593" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMSINH">The result is the hyperbolic sine of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149824" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150389" role="code" l10n="New" oldref="">IMSINH("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3150615" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154312" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMSINH("3+4j")</item> returns -6.54812004-7.61923172j (rounded).</paragraph>
+      </section>
+      <section id="imsub">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163826"><bookmark_value>IMSUB function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSUB" id="bm_id3152481" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3163826" role="heading" level="2" oldref="143">IMSUB</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149277" role="paragraph" l10n="U" oldref="144"><ahelp hid="HID_AAI_FUNC_IMSUB">The result is the subtraction of two complex numbers.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149264" role="heading" level="3" l10n="U"
+                    oldref="145">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149710" role="code" l10n="U" oldref="146">IMSUB("ComplexNumber1"; "ComplexNumber2")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3155833" role="heading" level="3" l10n="U"
+                    oldref="148">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150963" role="paragraph" l10n="U" oldref="149">
+            <item type="input">=IMSUB("13+4j";"5+3j")</item> returns 8+j.</paragraph>
+      </section>
+      <section id="imsum">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156312"><bookmark_value>IMSUM function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSUM" id="bm_id3149454" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156312" role="heading" level="2" oldref="150">IMSUM</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153215" role="paragraph" l10n="U" oldref="151"><ahelp hid="HID_AAI_FUNC_IMSUM">The result is the sum of up to 29 complex numbers.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3156095" role="heading" level="3" l10n="U"
+                    oldref="152">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152930" role="code" l10n="U" oldref="153">IMSUM("ComplexNumber1"; "ComplexNumber2"; ...)</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3154640" role="heading" level="3" l10n="U"
+                    oldref="155">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147081" role="paragraph" l10n="U" oldref="156">
+            <item type="input">=IMSUM("13+4j";"5+3j")</item> returns 18+7j.</paragraph>
+      </section>
+      <section id="imsqrt">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147570"><bookmark_value>IMSQRT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMSQRT" id="bm_id3151189" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147570" role="heading" level="2" oldref="167">IMSQRT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156131" role="paragraph" l10n="U" oldref="168"><ahelp hid="HID_AAI_FUNC_IMSQRT">The result is the square root of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3145202" role="heading" level="3" l10n="U"
+                    oldref="169">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150760" role="code" l10n="U" oldref="170">IMSQRT("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3147268" role="heading" level="3" l10n="U"
+                    oldref="172">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152807" role="paragraph" l10n="U" oldref="173">
+            <item type="input">=IMSQRT("3+4i")</item> returns 2+1i.</paragraph>
+      </section>
+      <section id="imtan">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149151"><bookmark_value>IMTAN function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_IMTAN" id="bm_id3150383" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149151" role="heading" level="2" oldref="">IMTAN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149730" role="paragraph" l10n="New" oldref=""><ahelp hid="HID_AAI_FUNC_IMTAN">The result is the tangent of a complex number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159121" role="heading" level="3" l10n="New"
+                    oldref="">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147420" role="code" l10n="New" oldref="">IMTAN("ComplexNumber")</paragraph>
+         <embed href="text/scalc/01/04060116.xhp#complex"/>
+         <paragraph xml-lang="en-US" id="hd_id3152985" role="heading" level="3" l10n="New"
+                    oldref="">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157906" role="paragraph" l10n="New" oldref="">
+            <item type="input">=IMTAN("3+4j") </item>returns -0.00018734+0.99935599j (rounded).</paragraph>
+      </section>
+      <section id="complexfunc">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154054"><bookmark_value>COMPLEX function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COMPLEX" id="bm_id3156116" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154054" role="heading" level="2" oldref="157">COMPLEX</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156111" role="paragraph" l10n="U" oldref="158"><ahelp hid="HID_AAI_FUNC_COMPLEX">The result is a complex number which is returned from a real coefficient and an imaginary coefficient.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154744" role="heading" level="3" l10n="U"
+                    oldref="159">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155999" role="code" l10n="U" oldref="160">COMPLEX(RealNum; INum; Suffix)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153626" role="paragraph" l10n="U" oldref="161">
+            <emph>RealNum</emph> is the real coefficient of the complex number.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149135" role="paragraph" l10n="U" oldref="162">
+            <emph>INum</emph> is the imaginary coefficient of the complex number.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155849" role="paragraph" l10n="U" oldref="163">
+            <emph>Suffix</emph> is a list of options, "i" or "j".</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3145659" role="heading" level="3" l10n="U"
+                    oldref="164">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3143229" role="paragraph" l10n="U" oldref="165">
+            <item type="input">=COMPLEX(3;4;"j")</item> returns 3+4j.</paragraph>
+      </section>
+      <section id="oct2bin">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155103"><bookmark_value>OCT2BIN function</bookmark_value>
+         <bookmark_value>converting;octal numbers, into binary numbers</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_OCT2BIN" id="bm_id3149290" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155103" role="heading" level="2" l10n="E"
+                    oldref="217">OCT2BIN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146898" role="paragraph" l10n="U" oldref="218"><ahelp hid="HID_AAI_FUNC_OCT2BIN">The result is the binary number for the octal number entered.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3146088" role="heading" level="3" l10n="U"
+                    oldref="219">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154303" role="code" l10n="U" oldref="220">OCT2BIN(Number; Places)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156013" role="paragraph" l10n="U" oldref="221">
+            <emph>Number</emph> is the octal number. The number can have a maximum of 10 places. The most significant bit is the sign bit, the following bits return the value. Negative numbers are entered as two's complement.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153984" role="paragraph" l10n="U" oldref="222">
+            <emph>Places</emph> is the number of places to be output.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147493" role="heading" level="3" l10n="U"
+                    oldref="223">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147260" role="paragraph" l10n="U" oldref="224">
+            <item type="input">=OCT2BIN(3;3)</item> returns 011.</paragraph>
+      </section>
+      <section id="oct2dec">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152791"><bookmark_value>OCT2DEC function</bookmark_value>
+         <bookmark_value>converting;octal numbers, into decimal numbers</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_OCT2DEZ" id="bm_id3151168" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152791" role="heading" level="2" oldref="225">OCT2DEC</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149199" role="paragraph" l10n="U" oldref="226"><ahelp hid="HID_AAI_FUNC_OCT2DEZ">The result is the decimal number for the octal number entered.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159337" role="heading" level="3" l10n="U"
+                    oldref="227">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153902" role="code" l10n="U" oldref="228">OCT2DEC(Number)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155326" role="paragraph" l10n="U" oldref="229">
+            <emph>Number</emph> is the octal number. The number can have a maximum of 10 places. The most significant bit is the sign bit, the following bits return the value. Negative numbers are entered as two's complement.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154698" role="heading" level="3" l10n="U"
+                    oldref="230">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154930" role="paragraph" l10n="U" oldref="231">
+            <item type="input">=OCT2DEC(144)</item> returns 100.</paragraph>
+      </section>
+      <section id="oct2hex">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155391"><bookmark_value>OCT2HEX function</bookmark_value>
+         <bookmark_value>converting;octal numbers, into hexadecimal numbers</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_OCT2HEX" id="bm_id3149904" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155391" role="heading" level="2" oldref="232">OCT2HEX</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148831" role="paragraph" l10n="U" oldref="233"><ahelp hid="HID_AAI_FUNC_OCT2HEX"> The result is the hexadecimal number for the octal number entered.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3146988" role="heading" level="3" l10n="U"
+                    oldref="234">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150523" role="code" l10n="U" oldref="235">OCT2HEX(Number; Places)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159162" role="paragraph" l10n="U" oldref="236">
+            <emph>Number</emph> is the octal number. The number can have a maximum of 10 places. The most significant bit is the sign bit, the following bits return the value. Negative numbers are entered as two's complement.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145420" role="paragraph" l10n="U" oldref="237">
+            <emph>Places</emph> is the number of places to be output.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150504" role="heading" level="3" l10n="U"
+                    oldref="238">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148802" role="paragraph" l10n="U" oldref="239">
+            <item type="input">=OCT2HEX(144;4)</item> returns 0064.</paragraph>
+      </section>
+      <section id="convertadd">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148446"><bookmark_value>CONVERT_ADD function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_CONVERT" id="bm_id3150773" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148446" role="heading" level="2" l10n="CHG"
+                    oldref="175">CONVERT_ADD</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154902" role="paragraph" l10n="U" oldref="176"><ahelp hid="HID_AAI_FUNC_CONVERT">Converts a value from one unit of measure to the corresponding value in another unit of measure.</ahelp> Enter the units of measures directly as text in quotation marks or as a reference. If you enter the units of measure in cells, they must correspond exactly with the following list which is case sensitive: For example, in order to enter a lower case l (for liter) in a cell, enter the apostrophe ' immediately followed by l.</paragraph>
+         <table id="tbl_id3149771">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153055" role="tablehead" l10n="U" oldref="177">Property</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3147234" role="tablehead" l10n="U" oldref="178">Units</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3147512" role="tablecontent" l10n="U" oldref="179">Weight</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148476" role="tablecontent" l10n="U" oldref="180">g, sg, lbm, u, ozm, stone, ton, grain, pweight, hweight, shweight</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155361" role="tablecontent" l10n="U" oldref="181">Length</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148925" role="tablecontent" l10n="U" oldref="182">m, mi, Nmi, in, ft, yd, ang, Pica, ell, parsec</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3158429" role="tablecontent" l10n="U" oldref="183">Time</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150707" role="tablecontent" l10n="U" oldref="184">yr, day, hr, mn, sec</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153238" role="tablecontent" l10n="U" oldref="185">Pressure</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3166437" role="tablecontent" l10n="U" oldref="186">Pa, atm, mmHg, Torr, psi</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3152944" role="tablecontent" l10n="U" oldref="187">Force</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155582" role="tablecontent" l10n="U" oldref="188">N, dyn, pond</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153686" role="tablecontent" l10n="U" oldref="189">Energy</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153386" role="tablecontent" l10n="U" oldref="190">J, e, c, cal, eV, HPh, Wh, BTU</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154100" role="tablecontent" l10n="U" oldref="191">Power</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149915" role="tablecontent" l10n="U" oldref="192">W, HP, PS</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148988" role="tablecontent" l10n="U" oldref="193">Field strength</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148616" role="tablecontent" l10n="U" oldref="194">T, ga</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3151120" role="tablecontent" l10n="U" oldref="195">Temperature</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148659" role="tablecontent" l10n="U" oldref="196">C, F, K, Reau, Rank</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154610" role="tablecontent" l10n="U" oldref="197">Volume</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149423" role="tablecontent" l10n="U" oldref="198">l, tsp, tbs, oz, cup, pt, qt, gal, m3, mi3, Nmi3, in3, ft3, yd3, ang3, Pica3, barrel, bushel, regton, Schooner, Middy, Glass</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149244" role="tablecontent" l10n="U" oldref="199">Area</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150425" role="tablecontent" l10n="U" oldref="200">m2, mi2, Nmi2, in2, ft2, yd2, ang2, Pica2, Morgen, ar, acre, ha</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150629" role="tablecontent" l10n="U" oldref="201">Speed</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3159246" role="tablecontent" l10n="U" oldref="202">m/s, m/h, mph, kn, admkn</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+         <paragraph xml-lang="en-US" id="par_id3143277" role="paragraph" l10n="U" oldref="203">Each unit of measure can be preceded by a prefix character from the following list:</paragraph>
+         <table id="tbl_id3144759">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148422" role="tablehead" l10n="U" oldref="204">Permitted prefix characters</paragraph>
+               </tablecell>
+               <tablecell>
+</tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149490" role="tablecontent" l10n="U" oldref="205">10^(&lt;0)</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149931" role="tablecontent" l10n="U" oldref="206">d, c, m, u, n, p, f, a, z, y</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149589" role="tablecontent" l10n="U" oldref="207">10^(&gt;0)</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3151248" role="tablecontent" l10n="U" oldref="208">e, h, k, M, G, T, P, E, Z, Y</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id0908200903061174" role="tablecontent" l10n="NEW">Information units "bit" and "byte" may also be prefixed by one of the following IEC 60027-2 / IEEE 1541 prefixes:</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id0908200903090966" role="code" l10n="NEW">ki kibi 1024</paragraph>
+                  <paragraph xml-lang="en-US" id="par_id0908200903090958" role="code" l10n="NEW">Mi mebi 1048576</paragraph>
+                  <paragraph xml-lang="en-US" id="par_id0908200903090936" role="code" l10n="NEW">Gi gibi 1073741824</paragraph>
+                  <paragraph xml-lang="en-US" id="par_id0908200903090975" role="code" l10n="NEW">Ti tebi 1099511627776</paragraph>
+                  <paragraph xml-lang="en-US" id="par_id0908200903090930" role="code" l10n="NEW">Pi pebi 1125899906842620</paragraph>
+                  <paragraph xml-lang="en-US" id="par_id0908200903091070" role="code" l10n="NEW">Ei exbi 1152921504606850000</paragraph>
+                  <paragraph xml-lang="en-US" id="par_id0908200903091097" role="code" l10n="NEW">Zi zebi 1180591620717410000000</paragraph>
+                  <paragraph xml-lang="en-US" id="par_id0908200903091010" role="code" l10n="NEW">Yi yobi 1208925819614630000000000</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+         <embed href="text/scalc/01/04060102.xhp#ADD_note"/>
+         <paragraph xml-lang="en-US" id="hd_id3146125" role="heading" level="3" l10n="U"
+                    oldref="209">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153695" role="code" l10n="U" oldref="210">CONVERT_ADD(Number; "FromUnit"; "ToUnit")</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147522" role="paragraph" l10n="U" oldref="211">
+            <emph>Number</emph> is the number to be converted.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154472" role="paragraph" l10n="U" oldref="212">
+            <emph>FromUnit</emph> is the unit from which conversion is taking place.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153790" role="paragraph" l10n="U" oldref="213">
+            <emph>ToUnit</emph> is the unit to which conversion is taking place. Both units must be of the same type.</paragraph>
+<paragraph xml-lang="en-US" id="par_id09022809540918" role="paragraph" l10n="NEW"><link href="http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_CONVERT_ADD_function">Current list of CONVERT_ADD units in the OpenOffice.org Wiki.</link></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3156270" role="heading" level="3" l10n="U"
+                    oldref="214">Examples</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156336" role="paragraph" l10n="U" oldref="215">
+            <item type="input">=CONVERT_ADD(10;"HP";"PS") </item>returns, rounded to two decimal places, 10.14. 10 HP equal 10.14 PS.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154834" role="paragraph" l10n="U" oldref="216">
+            <item type="input">=CONVERT_ADD(10;"km";"mi") </item>returns, rounded to two decimal places, 6.21. 10 kilometers equal 6.21 miles. The k is the permitted prefix character for the factor 10^3.</paragraph>
+      </section>
+      <section id="factdouble">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147096"><bookmark_value>FACTDOUBLE function</bookmark_value>
+         <bookmark_value>factorials;numbers with increments of two</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_FACTDOUBLE" id="bm_id3150950" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147096" role="heading" level="2" oldref="36">FACTDOUBLE</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151309" role="paragraph" l10n="CHG" oldref="37"><ahelp hid="HID_AAI_FUNC_FACTDOUBLE">Returns the double factorial of a number.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154666" role="heading" level="3" l10n="U"
+                    oldref="38">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155121" role="code" l10n="U" oldref="39">FACTDOUBLE(Number)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3158440" role="paragraph" l10n="CHG" oldref="40">Returns <emph>Number</emph>
+            <emph>!!</emph>, the double factorial of <emph>Number</emph>, where <emph>Number</emph> is an integer greater than or equal to zero.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id2480849" role="paragraph" l10n="NEW">For even numbers FACTDOUBLE(n) returns:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id4181951" role="paragraph" l10n="NEW">2*4*6*8* ... *n</paragraph>
+         <paragraph xml-lang="en-US" id="par_id2927335" role="paragraph" l10n="NEW">For odd numbers FACTDOUBLE(n) returns:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id2107303" role="paragraph" l10n="NEW">1*3*5*7* ... *n</paragraph>
+         <paragraph xml-lang="en-US" id="par_id4071779" role="paragraph" l10n="NEW">FACTDOUBLE(0) returns 1 by definition.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154622" role="heading" level="3" l10n="U"
+                    oldref="42">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id7844477" role="paragraph" l10n="NEW">
+            <item type="input">=FACTDOUBLE(5)</item> returns 15.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154116" role="paragraph" l10n="U" oldref="43">
+            <item type="input">=FACTDOUBLE(6)</item> returns 48.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id6478469" role="paragraph" l10n="NEW">
+            <item type="input">=FACTDOUBLE(0)</item> returns 1.</paragraph><comment>see also FACT, MULTINOMIAL, PRODUCT  </comment>
+</section>
+</sort>
+<section id="Section1">
+         <embed href="text/scalc/01/04060100.xhp#drking"/>
+      </section>
+   </body>
+</helpdocument>

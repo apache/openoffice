@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidenavigatorxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Navigator for Document Overview</title>
+<filename>/text/shared/guide/navigator.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-31T13:00:11">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147008"><bookmark_value>documents; contents as lists</bookmark_value>
+<bookmark_value>Navigator; contents as lists</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147008" xml-lang="en-US" level="1" l10n="U" oldref="4"><variable id="navigator"><link href="text/shared/guide/navigator.xhp" name="Navigator for Document Overview">Navigator for Document Overview</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="3">All contents of the Navigator window are referred to here as "categories," whether titles, sheets, tables, text frames, graphics, OLE objects, sections, hyperlinks, references, indexes or comments.</paragraph>
+<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="5">The Navigator displays all types of objects contained in a document. If a plus sign appears next to a category, this indicates that at least one object of this kind exists. If you rest the mouse pointer on the category name, the number of objects is displayed in an extended tip.</paragraph>
+<paragraph role="paragraph" id="par_id3146797" xml-lang="en-US" l10n="U" oldref="6">Open a category by clicking on the plus sign. If you only want to view the entries in a certain category, select the category and click the <emph>Content View</emph> icon. Until you click the icon again, only the objects of this category will be displayed.</paragraph>
+<paragraph role="paragraph" id="par_id3166461" xml-lang="en-US" l10n="CHG" oldref="7">You may dock the Navigator to any document border or turn it back into a free window (double click on the gray area). You can change the size of the Navigator when it is a free window.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/navigator_setcursor.xhp#navigator_setcursor"/>
+<embed href="text/shared/guide/dragdrop.xhp#dragdrop"/>
+<switch select="appl">
+<case select="CALC"><embed href="text/scalc/guide/format_table.xhp#format_table"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/arrange_chapters.xhp#arrange_chapters"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/hyperlinks.xhp#hyperlinks"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/navigator.xhp#navigator"/>
+</case>
+</switch>
+</body>
+</helpdocument>

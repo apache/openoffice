@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0102100300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text Format (Search)</title>
+<filename>/text/shared/01/02100300.xhp</filename>
+</topic>
+</meta>
+<body>
+<switch select="appl">
+<case select="WRITER"><comment>UFI: why is this switched? would look very poor for other contexts</comment><comment>mw transferred all 6 index entries to Writer guide "finding.xhp"</comment><paragraph role="heading" id="hd_id3154840" xml-lang="en-US" level="1" l10n="U" oldref="130">Text Format (Search)</paragraph>
+<paragraph role="paragraph" id="par_id3150355" xml-lang="en-US" l10n="U" oldref="131"><variable id="formattext"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SEARCH:BTN_FORMAT">Finds specific text formatting features, such as font types, font effects, and text flow characteristics.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000402.xhp#suchenformat"/>
+</section>
+<paragraph role="paragraph" id="par_id3145383" xml-lang="en-US" l10n="U" oldref="192">The search criteria for attributes are listed below the <emph>Search for</emph> box.</paragraph>
+<paragraph role="note" id="par_id3150466" xml-lang="en-US" l10n="U" oldref="132">You do not need to specify a search text in the <emph>Search for</emph> box when you search and replace formatting.</paragraph>
+<paragraph role="paragraph" id="par_id3156152" xml-lang="en-US" l10n="U" oldref="133">To define a replacement format, click in the <emph>Replace with</emph> box, and then click the <emph>Format </emph>button.</paragraph>
+<paragraph role="paragraph" id="par_id3153821" xml-lang="en-US" l10n="U" oldref="157">Use the <emph>Text Format (Search)</emph> or the <emph>Text Format (Replace)</emph> to define your formatting search criteria. These dialogs contain the following tab pages:</paragraph>
+<embed href="text/shared/01/05020100.xhp#zeichen"/>
+<embed href="text/shared/01/05020200.xhp#schrifteffekt"/>
+<embed href="text/shared/01/05030100.xhp#einzuege"/>
+<embed href="text/shared/01/05030700.xhp#ausrichtung"/>
+<embed href="text/swriter/01/05030200.xhp#textfluss"/>
+<embed href="text/shared/01/05030600.xhp#hintergrund"/>
+<embed href="text/shared/00/00000007.xhp#asia"/>
+<embed href="text/shared/01/05020500.xhp#position"/>
+<embed href="text/shared/01/05020600.xhp#asilayout"/>
+<embed href="text/shared/01/05020700.xhp#asitypo"/>
+</case>
+</switch><comment>had to copy extended help to outside of switch construct - see issue 72448</comment>
+<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_SEARCH:BTN_FORMAT" id="bm_id3151100" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_SEARCH:BTN_FORMAT" id="bm_id6877651" localize="false"/><paragraph role="paragraph" id="par_id3062837" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Finds specific text formatting features, such as font types, font effects, and text flow characteristics.</ahelp></paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="C"><link href="text/shared/01/02100200.xhp" name="Attributes">Attributes</link></paragraph>
+</section>
+</body>
+</helpdocument>

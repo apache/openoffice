@@ -1,0 +1,147 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_configuration_backend_XSingleLayerStratum_idl__
+#define __com_sun_star_configuration_backend_XSingleLayerStratum_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif 
+
+#ifndef __com_sun_star_configuration_backend_XLayer_idl__
+#include <com/sun/star/configuration/backend/XLayer.idl>
+#endif 
+
+#ifndef __com_sun_star_configuration_backend_XUpdatableLayer_idl__
+#include <com/sun/star/configuration/backend/XUpdatableLayer.idl>
+#endif
+
+#ifndef __com_sun_star_configuration_backend_BackendAccessException_idl__
+#include <com/sun/star/configuration/backend/BackendAccessException.idl>
+#endif
+
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif 
+
+#ifndef __com_sun_star_lang_NoSupportException_idl__
+#include <com/sun/star/lang/NoSupportException.idl>
+#endif 
+
+//============================================================================= 
+
+module com { module sun { module star { module configuration { module backend {
+
+//============================================================================= 
+
+/** 
+  Handles access to a stratum consisting of a single layer 
+  in a configuration data repository
+ 
+  <p> The interface provides timestamp-checking capabilities 
+     for efficient caching.
+  </p>
+
+  @see com::sun::star::util::XTimeStamped
+  @see com::sun::star::configuration::backend::XSchemaSupplier
+  @see com::sun::star::configuration::backend::XMultiLayerStratum
+
+  @since OOo 1.1.2
+*/
+published interface XSingleLayerStratum : ::com::sun::star::uno::XInterface 
+{
+	//------------------------------------------------------------------------- 
+
+    /** 
+        retrieves the layer data for a component, if newer than indicated. 
+      
+        <p> A timestamp can be provided, which is used to indicate 
+            a point in time. The layer should be returned only if is modified 
+            since that time. 
+        </p>
+
+        @param aComponent 
+                The name of the component to access.
+
+        @param aTimestamp    
+                a timestamp for the layer.
+                
+                <p> An empty timestamp indicates, that the layer should be 
+                    retrieved irrespective of its modification time. 
+                </p>
+                <p> The format and meaning of a timestamp depends on 
+                    the implementation. Timestamps can be obtained using 
+                    <member scope="com::sun::star::util">XTimeStamped::getTimestamp()</member>.
+                </p>
+
+      @returns   
+                a <type>Layer</type> object providing access to the layer data, 
+                <NULL/> if the layer is newer than indicated by the timestamp. 
+
+      @throws   com::sun::star::lang::IllegalArgumentException
+                if the component identifier is invalid or 
+                if the timestamp is invalid.
+
+      @throws   com::sun::star::configuration::backend::BackendAccessException
+                if an error occurs while accessing the data.
+
+      @see com::sun::star::util::XTimeStamped
+	*/
+    XLayer getLayer([in] string aComponent, 
+                    [in] string aTimestamp)
+        raises (BackendAccessException,
+                com::sun::star::lang::IllegalArgumentException) ;
+
+	//------------------------------------------------------------------------- 
+
+    /**
+        retrieves a writable representation of the layer for a component.
+
+        @param aComponent 
+                The name of the component to access.
+      
+        @return   
+                an <type>UpdatableLayer</type> object providing 
+                write access to the layer
+
+        @throws   com::sun::star::lang::IllegalArgumentException
+                if the component identifier is invalid.
+
+        @throws   com::sun::star::lang::NoSupportException
+                if the implementation does not support updates.
+
+        @throws   com::sun::star::configuration::backend::BackendAccessException
+                if an error occurs while accessing the data.
+     */
+    XUpdatableLayer getUpdatableLayer([in] string aComponent)
+        raises (BackendAccessException,
+                com::sun::star::lang::NoSupportException,
+                com::sun::star::lang::IllegalArgumentException) ;
+    
+	//------------------------------------------------------------------------- 
+} ;
+
+//============================================================================= 
+
+} ; } ; } ; } ; } ;
+
+#endif 

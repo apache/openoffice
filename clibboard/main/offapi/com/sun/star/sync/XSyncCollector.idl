@@ -1,0 +1,84 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+ 
+#ifndef __com_sun_star_sync_XSyncCollector_idl__ 
+#define __com_sun_star_sync_XSyncCollector_idl__ 
+ 
+#ifndef __com_sun_star_ucb_XContentProviderManager_idl__ 
+#include <com/sun/star/ucb/XContentProviderManager.idl> 
+#endif 
+#ifndef __com_sun_star_ucb_XContent_idl__ 
+#include <com/sun/star/ucb/XContent.idl> 
+#endif 
+#ifndef __com_sun_star_sync_SyncScheme_idl__ 
+#include <com/sun/star/sync/SyncScheme.idl> 
+#endif 
+#ifndef __com_sun_star_sync_SyncInfo_idl__ 
+#include <com/sun/star/sync/SyncInfo.idl> 
+#endif 
+#ifndef __com_sun_star_sync_SyncElement_idl__ 
+#include <com/sun/star/sync/SyncElement.idl> 
+#endif 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module sync {  
+ 
+/// @deprecated
+published interface XSyncCollector: com::sun::star::uno::XInterface
+{ 
+	boolean											initialize( [in] com::sun::star::ucb::XContentProviderManager xMgr, 
+																[in] sequence<com::sun::star::sync::SyncScheme> aSyncSchemes,  
+																[in] string aBaseFileName ); 
+ 
+	sequence<com::sun::star::sync::SyncScheme>		getRegisteredSyncSchemes(); 
+ 
+	sequence<com::sun::star::sync::SyncElement>		getSyncSequence( [in] string aSyncSchemeName, 
+																	 [in] com::sun::star::sync::SyncInfo aSyncInfo ); 
+ 
+	[oneway] void									beginSynchronize(); 
+	
+	[oneway] void									endSynchronize(); 
+ 
+	boolean											getCorrespondingElement( [in] com::sun::star::sync::SyncScheme aSyncSchemeIn, 
+																			 [in] com::sun::star::sync::SyncElement aSyncElementIn,  
+																			 [out] com::sun::star::sync::SyncElement aSyncElementOut ); 
+ 
+	boolean											executeElementCommand( [in] string aSyncSchemeName,  
+																		   [in] com::sun::star::sync::SyncElement aSyncElement, 
+ 																		   [in] string aCommandName,  
+																		   [out] any aAny ); 
+ 
+	[oneway] void									elementSynchronized( [in] string aSyncSchemeName, 
+																		 [in] com::sun::star::sync::SyncElement aSyncElement, 
+																		 [in] unsigned long nSyncAction ); 
+ 
+	[oneway] void									notify( [in] com::sun::star::ucb::XContent XCnt, 
+															[in] unsigned long nEvent ); 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

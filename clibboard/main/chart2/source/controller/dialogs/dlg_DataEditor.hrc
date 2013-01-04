@@ -1,0 +1,43 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define DLG_DIAGRAM_DATA 744
+
+#define FT_POS 1
+#define TBX_EDIT 1
+#define EDT_FIELD 1
+#define TBX_DATA 2
+#define CTL_DATA 1
+
+// images for toolbox image list
+//the numbers correspond to the icon names: default_images\chart2\res\dataeditor_icon_xy
+#define TBI_DATA_INSERT_ROW 1
+#define TBI_DATA_INSERT_COL 2
+#define TBI_DATA_DELETE_ROW 3
+#define TBI_DATA_DELETE_COL 4
+#define TBI_DATA_SWAP_COL 5
+#define TBI_DATA_SWAP_ROW 6
+#define TBI_DATA_INSERT_TEXT_COL 7
+
+// image lists (normal and high-contrast) for toolbox
+#define IL_DIAGRAM_DATA     1
+#define IL_HC_DIAGRAM_DATA  2

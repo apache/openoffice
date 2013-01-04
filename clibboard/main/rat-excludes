@@ -1,0 +1,1473 @@
+##############################################################################
+#
+# external library data packages, not part of the source release.
+#
+
+ext_sources/
+ext_libraries/
+
+
+##############################################################################
+#
+# external libraries that are not part of the source release, but may be built
+# for the binary AOO incarnations dependent on the used configure switches. 
+# Each subproject contains a framework to get the library as tarball (from 
+# ext_sources), patch and build it. It does not contain the external libraries
+# themselves.
+#
+
+extras/
+
+
+##############################################################################
+#
+# files in the SGA but with no license yet (in progress)
+#
+
+main/swext/mediawiki/src/filter/odt2mediawiki.xsl
+main/testautomation/writer/optional/input/clipboard/dummy.txt
+main/ure/source/THIRDPARTYLICENSEREADME.html
+
+main/writerperfect/source/filter/DocumentCollector.cxx
+main/writerperfect/source/filter/DocumentCollector.hxx
+main/writerperfect/source/filter/DocumentElement.cxx
+main/writerperfect/source/filter/DocumentElement.hxx
+main/writerperfect/source/filter/DocumentHandler.cxx
+main/writerperfect/source/filter/FilterInternal.hxx
+main/writerperfect/source/filter/FontStyle.cxx
+main/writerperfect/source/filter/FontStyle.hxx
+main/writerperfect/source/filter/ListStyle.cxx
+main/writerperfect/source/filter/ListStyle.hxx
+main/writerperfect/source/filter/PageSpan.cxx
+main/writerperfect/source/filter/PageSpan.hxx
+main/writerperfect/source/filter/SectionStyle.cxx
+main/writerperfect/source/filter/SectionStyle.hxx
+main/writerperfect/source/filter/Style.hxx
+main/writerperfect/source/filter/TableStyle.cxx
+main/writerperfect/source/filter/TableStyle.hxx
+main/writerperfect/source/filter/TextRunStyle.cxx
+main/writerperfect/source/filter/TextRunStyle.hxx
+main/writerperfect/source/filter/WriterProperties.hxx
+main/writerperfect/source/stream/WPXSvStream.cxx
+main/writerperfect/source/stream/WPXSvStream.h
+main/writerperfect/source/wpdimp/WordPerfectCollector.cxx
+main/writerperfect/source/wpdimp/WordPerfectCollector.hxx
+main/writerperfect/source/wpdimp/WordPerfectImportFilter.cxx
+main/writerperfect/source/wpdimp/WordPerfectImportFilter.hxx
+
+
+##############################################################################
+#
+# small files with no creative content
+#
+
+main/automation/source/miniapp/test.sid
+main/testautomation/graphics/required/input/einfg.ini
+main/sd/res/webview/edit.pl
+main/sd/res/webview/index.pl
+main/qadevOOo/tests/java/mod/_javavm.uno/package.html
+main/sal/qa/rtl/random/makefile.add
+main/testautomation/writer/optional/input/export/filter/act_1.all
+main/icc/source/create_sRGB_profile/Makefile.am
+main/sysui/desktop/mimetypes/openoffice.applications
+main/binfilter/bf_sfx2/util/make_tco.btm
+main/framework/test/threadtest/test.btm
+main/framework/test/typecfg/build.btm
+main/l10ntools/workbench/gsicheckcheck.btm
+main/scp2/source/mkopenwith.btm
+main/sfx2/util/make_tco.btm
+main/chart2/qa/data.chd
+main/extras/unx/source/fonts/fonts.dir
+main/extras/unx/source/kde/applnk/.directory
+main/sfx2/qa/complex/sfx2/testdocuments/empty.rdf
+main/crashrep/source/win32/ctrylnglist.txt
+main/crashrep/source/win32/rcfooter.txt
+main/dbaccess/uiconfig/dbbrowser/menubar/preserve.txt
+main/desktop/win32/source/rebase/rcfooter.txt
+main/desktop/win32/source/rebase/rctmpl.txt
+main/desktop/win32/source/setup/rcfooter.txt
+main/helpcontent2/helpers/unocmds.txt
+main/officecfg/util/delcomment.sed
+main/sd/util/sdfilt.map
+main/sdext/source/minimizer/help/component.txt
+main/sdext/source/pdfimport/help/component.txt
+main/sdext/source/presenter/help/component.txt
+main/setup_native/source/packinfo/package.txt
+main/setup_native/source/packinfo/shellscripts.txt
+main/setup_native/source/packinfo/shellscripts_root.txt
+main/shell/source/unix/exec/urltest.txt
+main/shell/source/win32/shlxthandler/res/ctrylnglist.txt
+main/shell/source/win32/shlxthandler/res/rcfooter.txt
+main/shell/source/win32/shlxthandler/res/rcheader.txt
+main/solenv/bin/chrel.sed
+main/sysui/desktop/share/add_specfile_triggers.sed
+main/testautomation/dbaccess/optional/input/text_datasource/TT_Query1.txt
+main/testautomation/dbaccess/optional/input/text_datasource/text_database.txt
+main/testautomation/extensions/optional/input/files.txt
+main/testautomation/framework/optional/input/extras_formats/Tables_calc_en-US.txt
+main/testautomation/framework/optional/input/extras_formats/Tables_writer_en-US.txt
+main/testautomation/framework/optional/input/options/paths_1.txt
+main/testautomation/global/input/filters/graphic_filters.txt
+main/desktop/test/deployment/update/publisher/release-notes_de-DE.html
+main/swext/mediawiki/help/component.txt
+
+##############################################################################
+#
+# Single files to exclude
+#
+
+# own license files
+main/LICENSE_category_b
+main/NOTICE_category_b
+main/LICENSE_aggregated
+main/NOTICE_aggregated
+
+# part of SGA
+# Contains a list of labels used for printing; no header possible
+main/testautomation/framework/optional/input/extras_formats/Labels_en-US.txt
+
+# Used in writerfilter/source/doctok/xmigen.el (1), part of the SGA
+# XEmacs List (config file), comments possible (using ';' at each line start), ALv2 could be added
+main/writerfilter/source/doctok/xmigen.el
+
+# Used in main/extras/source/misc_config/autotbl.fmt (1), part of SGA
+# Excel format file, binary
+main/extras/source/misc_config/autotbl.fmt
+
+# Used in main/migrationanalysis/src/wizard/Wizard.FRX (1), part of SGA
+# binary information for a Visual Basic form (?)
+main/migrationanalysis/src/wizard/Wizard.FRX
+
+# Used in main/testautomation/writer/optional/input/import/hangul.hwp (1), part of SGA
+# binary? AOO specific? Hangul Word Processor file
+main/testautomation/writer/optional/input/import/hangul.hwp
+
+# main/scripting/java/org/openoffice/netbeans/editor/OOo.jcb (1), part of SGA
+# binary, file type not clear
+main/scripting/java/org/openoffice/netbeans/editor/OOo.jcb
+
+# main/scripting/java/org/openoffice/netbeans/editor/OOo.jcs (1), part of SGA
+# binary, file type not clear
+main/scripting/java/org/openoffice/netbeans/editor/OOo.jcs
+
+# main/writerfilter/qa/cppunittests/doctok/doctok.job (1), part of SGA
+# ascii, one line, support of comments not clear
+main/writerfilter/qa/cppunittests/doctok/doctok.job
+
+# used in main/officecfg/registry/schema/oo-common.ldif (1), part of SGA
+# ascii, included in makefiles, ALv2 might be added
+main/officecfg/registry/schema/oo-common.ldif
+
+# used in main/wizards/util/soffice.lnk (1), part of SGA
+# Linking of Modules to SBLs (?)
+main/wizards/util/soffice.lnk
+
+# used in main/sw/source/ui/lingu/cvdata.mac (1), part of SGA
+# some scriptfile, no creative content
+main/sw/source/ui/lingu/cvdata.mac
+
+# used in main/vos/util/libvos1C50.so.mapfile (1), part of SGA
+# AOO build specific mapping file, no creative content
+main/vos/util/libvos1C50.so.mapfile
+
+# used in main/sysui/desktop/mimetypes/openoffice.mime (1), part of SGA
+# no creative content
+main/sysui/desktop/mimetypes/openoffice.mime
+
+# used in main/odk/examples/java/NotesAccess/Stocks.nsf (1), part of SGA
+# seems binary (384kb) ?
+main/odk/examples/java/NotesAccess/Stocks.nsf
+
+# used in main/setup_native/source/win32/nsis/downloadtemplate.nsi (1), part of SGA
+# packaging infos, no creative content
+main/setup_native/source/win32/nsis/downloadtemplate.nsi
+
+# used in main/sysui/desktop/debian/openoffice.org-debian-menus (1), part of SGA
+# debian desktop configuration stuff, no creative content
+main/sysui/desktop/debian/openoffice.org-debian-menus
+
+# used in main/ure/source/uretest/Makefile.pln (1), part of SGA
+# used for build system, no creative content
+main/ure/source/uretest/Makefile.pln
+
+# used in main/testautomation/writer/optional/input/import/pocketword.psw (1), part of SGA
+# PocketWord document, used for testing
+main/testautomation/writer/optional/input/import/pocketword.psw
+
+# used in main/testautomation/writer/optional/input/import/amipro3.sam (1), part of SGA
+# sinlge Ami Pro 3.0 test file for automated testing
+main/testautomation/writer/optional/input/import/amipro3.sam
+
+# used in main/extras/source/truetype/symbol/OpenSymbol.sfd (1), part of SGA
+# AOO specific OpenSymbol source file, (S)ource(F)orge(D)ata, recently called (S)pline(F)ont(D)ata
+main/extras/source/truetype/symbol/OpenSymbol.sfd
+
+# used in main/writerfilter/source/rtftok/RTFScanner.skl (1), part of SGA 
+# binary file (?)
+main/writerfilter/source/rtftok/RTFScanner.skl
+
+# used in main/testautomation/spreadsheet/optional/input/loadsave/microsoft/sylk.slk (1), part of SGA 
+# SYLK spreadsheet, ascii. Comments possible (see in file), ALv2 may be added here
+main/testautomation/spreadsheet/optional/input/loadsave/microsoft/sylk.slk
+
+# used in main/cli_ure/source/cliuno.snk (1), part of SGA
+# Strong Name Key File (Microsoft Corporation), binary
+main/cli_ure/source/cliuno.snk
+
+# used in main/extras/source/palettes/standard.sob (1), part of SGA
+# AOO fill pattern (see http://www.openoffice.org/dev_docs/source/file_extensions.html)
+main/extras/source/palettes/standard.sob
+
+# main/extras/source/truetype/symbol/opens___.ttf (1), part of SGA
+# TrueType OpenSmbol font
+main/extras/source/truetype/symbol/opens___.ttf
+
+# used in main/scripting/java/org/openoffice/netbeans/modules/office/resources/office-scripting.url (1), part of SGA
+# contains a single ascii URL line
+main/scripting/java/org/openoffice/netbeans/modules/office/resources/office-scripting.url
+
+# used in main/extensions/test/ole/VisualBasic/Project1.vbproj (1), part of SGA
+# Visual Basic Project (xml)
+main/extensions/test/ole/VisualBasic/Project1.vbproj
+
+# used in main/testautomation/spreadsheet/optional/input/loadsave/corel/qpro6.wb2 (1), part of SGA
+# QuattroPro files
+main/testautomation/spreadsheet/optional/input/loadsave/corel/qpro6.wb2
+
+# used in main/testautomation/spreadsheet/optional/input/loadsave/lotus/lotuswk1.wk1 (1), part of SGA
+# worksheets from Older Lotus 123
+main/testautomation/spreadsheet/optional/input/loadsave/lotus/lotuswk1.wk1
+
+# used in main/testautomation/spreadsheet/optional/input/loadsave/lotus/lotuswks.wks (1), part of SGA
+# Lotus spreadsheet
+main/testautomation/spreadsheet/optional/input/loadsave/lotus/lotuswks.wks
+
+# used in main/extensions/test/ole/DCOM/scriptComponents/WriterDemo.wsc (1), part of SGA
+# Microsoft Windows scripting component file
+main/extensions/test/ole/DCOM/scriptComponents/WriterDemo.wsc
+
+# used in main/migrationanalysis/src/driver_docs/CreateDriverDocs.wsf (1), part of SGA
+# Windows Script File
+main/migrationanalysis/src/driver_docs/CreateDriverDocs.wsf
+
+# used in main/testautomation/spreadsheet/optional/input/loadsave/microsoft/ms_excel_2007_xml_template_macroenabled.xltm (1), part of SGA
+# Microsoft Excel 2007/2010 template documents with macros
+main/testautomation/spreadsheet/optional/input/loadsave/microsoft/ms_excel_2007_xml_template_macroenabled.xltm
+
+# used in main/testautomation/spreadsheet/optional/input/loadsave/microsoft/ms_excel_2007_xml_template.xltx (1), part of SGA
+# Excel Template (Microsoft Corporation)
+main/testautomation/spreadsheet/optional/input/loadsave/microsoft/ms_excel_2007_xml_template.xltx
+
+# used in main/migrationanalysis/src/wizard/Wizard.DCA (1), part of SGA
+# Document Content Architecture, Textdatei IBM DisplayWrite
+main/migrationanalysis/src/wizard/Wizard.DCA
+
+# used in main/odk/examples/OLE/delphi/InsertTables/SampleUI.dfm (1), part of SGA
+# Delphi Form
+main/odk/examples/OLE/delphi/InsertTables/SampleUI.dfm
+
+# used  in main/wizards/source/gimmicks/readdirs.dlg (1), part of SGA
+# Dialog Creation Template (for Excel) (?)
+main/wizards/source/gimmicks/readdirs.dlg
+
+# used in main/odk/examples/OLE/delphi/InsertTables/Project1.dpr (1), part of SGA
+# Pascal/Delphi file
+main/odk/examples/OLE/delphi/InsertTables/Project1.dpr
+
+
+##############################################################################
+#
+# file patterns with no creative content to exclude
+#
+
+# helper attr files (24) used in main/xmlsecurity/test_docs/CAs, no creative content
+**/*.attr
+
+# makefiles (6) used in main/accessibility/workben/org/openoffice/accessibility, no creative content
+**/*.common
+
+# component description files (19), uno API specific, no creative content
+**/*.components
+
+# Certificate Revocation List (18), binary, no creative content
+**/*.crl
+
+# Certificates (79), no creative content
+**/*.crt
+
+# Library definition files (21), no creative content
+**/*.def
+
+#  Developer Studio project file (4), no creative content
+**/*.dsp
+
+# Defines library export symbols (36), no creative content
+**/*.dxp
+
+# symbnol export filter files (20), no creative content
+**/*.flt
+
+#  (>50), part of SGA
+# Install Definition Tables, ascii, not sure about comment support
+#**/*.idt
+main/instsetoo_native/inc_ooolangpack/windows/msi_templates/*.idt
+main/instsetoo_native/inc_openoffice/windows/msi_templates/*.idt
+main/instsetoo_native/inc_sdkoo/windows/msi_templates/*.idt
+main/instsetoo_native/inc_ure/windows/msi_templates/*.idt
+
+# mostly build.lst and d.lst (two hid.lst, one extensions.lst, one api.lst, one help_hid.lst, one uno_hid.lst, one openoffice.lst,
+# one pack.lst, one ooo.lst, one image-sort.lst, entries in main/splitbuild (can be removed?), entries in main/toolkit/src2xml)
+# All build specific stuff, no creative content
+**/*.lst
+
+# used as MANIFEST.MF (28), part of SGA
+# used with other names (6), but also as definition file
+# no creative content
+**/*.mf
+
+# (3) used as *.patch.mingw, a diff for preparing external stuff for build, all  in SGA
+# no creative content
+**/*.mingw
+
+# all in SGA
+# aqua-specific definitions, no creative content
+main/vcl/aqua/source/res/MainMenu.nib/classes.nib
+main/vcl/aqua/source/res/MainMenu.nib/info.nib
+
+# (12), part of the SGA
+# Windows specific ascii registry files, unknown if header possible, no creative content
+**/*.rgs
+
+# VisualStudio solution (6), part of SGA
+# binary file, no creative content
+**/*.sln
+
+# all in SGA
+# binary data (msdev settings file?), no creative content
+main/scripting/java/org/openoffice/netbeans/modules/office/resources/*.settings
+
+# part of SGA
+# jar manifest templates, no creative content
+main/ure/source/uretest/javaclient.mf.template
+main/ure/source/uretest/javamain.mf.template
+main/ure/source/uretest/javanative.mf.template
+main/ure/source/uretest/javatest.mf.template
+main/ure/source/uretest/runner.mf.template
+main/ure/source/uretest/tester.mf.template
+main/ure/source/uretest/types.mf.template
+
+# part of SGA
+# filetype ascii tables, no copyright, no license, no creative content
+main/testautomation/writer/optional/input/export/filter/*.unx
+
+# (9), part of SGA
+# Menu definitions for automated testing, no creative content
+main/testautomation/framework/optional/input/menu/en-us_basic.txt
+main/testautomation/framework/optional/input/menu/en-us_calc.txt
+main/testautomation/framework/optional/input/menu/en-us_draw.txt
+main/testautomation/framework/optional/input/menu/en-us_htmldokument.txt
+main/testautomation/framework/optional/input/menu/en-us_impress.txt
+main/testautomation/framework/optional/input/menu/en-us_insight.txt
+main/testautomation/framework/optional/input/menu/en-us_masterdoc.txt
+main/testautomation/framework/optional/input/menu/en-us_math.txt
+main/testautomation/framework/optional/input/menu/en-us_writer.txt
+
+##############################################################################
+#
+# Patterns to exclude
+#
+
+
+# used in main/automation/source/miniapp/test.win (1), part of SGA, ascii config file
+# used in main/testautomation/global/win/* (30), part of SGA, automatic test config, scripting files
+main/automation/source/miniapp/test.win
+main/testautomation/global/win/*.win
+
+# (7), part of SGA 
+# ascii, ALv2 may be added here
+# Added ALv2 in these files 
+# main/testautomation/global/sid/*.sid
+
+# (158), part of SGA
+# AOO internal uno api definition files, XML, should all contain ALv2
+# All checked, all contain ALv2 header, disabling pattern
+#**/*.component
+
+# (2), part of SGA
+# MSDEV solution file, binary
+#**/*.dsw
+
+# Used in main/scripting/java/build.env, main/xmerge/source/palmtests/qa-wrapper/env/master.env (2), part of the SGA
+# shell script files, comments possible (using '#'), ALv2 could be added
+# Added ALv2 to both
+# **/*.env
+
+# used in main/migrationanalysis/src/wizard/* (4), part of SGA
+# WordPerfect file (?)
+main/migrationanalysis/src/wizard/ScanFolders.frm
+main/migrationanalysis/src/wizard/SearchDocs.frm
+main/migrationanalysis/src/wizard/Terminate.frm
+main/migrationanalysis/src/wizard/Wizard.frm
+
+# used in main/sysui/desktop/mimetypes/* (40), part of SGA
+# ascii, support of comments not clear
+#**/*.keys
+main/sysui/desktop/mimetypes/*.keys
+
+# part of SGA
+# ascii, no info about comment support
+main/sal/util/salalloc.list
+main/xmerge/source/palmtests/qa-wrapper/lists/master.list
+
+# One usage in main/apple_remote (1), files under MIT
+main/apple_remote/AppleRemote.m
+main/apple_remote/GlobalKeyboardDevice.m
+main/apple_remote/HIDRemoteControlDevice.m
+main/apple_remote/KeyspanFrontRowControl.m
+main/apple_remote/MultiClickRemoteBehavior.m
+main/apple_remote/RemoteControl.m
+main/apple_remote/RemoteControlContainer.m
+main/apple_remote/RemoteMainController.m
+
+# different than other map files
+main/connectivity/source/drivers/adabas/adabas.mxp.map
+main/connectivity/source/drivers/dbase/dbase.mxp.map
+main/connectivity/source/drivers/flat/flat.mxp.map
+main/connectivity/source/drivers/jdbc/jdbc.mxp.map
+main/connectivity/source/manager/sdbc.mxp.map
+
+# binary presentation template files, part of SGA
+main/extras/source/templates/layout/lang/*.otp
+main/extras/source/templates/presnt/lang/*.otp
+
+# binary calc template files, part of SGA
+main/extras/source/templates/wizard/styles/lang/*.ots
+main/testautomation/spreadsheet/optional/input/loadsave/sun/so8tmpl.ots
+
+# binary writer template files, part of SGA
+main/extras/source/templates/wizard/report/lang/*.ott
+
+# binary AOO extension, part of SGA
+main/desktop/test/deployment/*.oxt
+main/solenv/bin/*.oxt
+main/testautomation/*.oxt
+main/desktop/test/deployment/update/defect/update/fail4.oxt
+
+# All part of the SGA, documents used for testing
+main/testautomation/framework/optional/input/security/autotest.p12
+main/xmlsecurity/test_docs/certs/p12/*.p12
+
+# (133) Diverse patches used to allow building external libraries with the contained
+# needed changes
+**/*.patch
+**/*.patch.fixes
+
+# all part of SGA
+# packaging information (used to build install sets)
+main/setup_native/source/packinfo*.pcp
+
+# all part of SGA
+# used for automated testing
+main/xmerge/source/palmtests/qa-wrapper/results/baseline/pdb-base/*.pdb
+
+# all part of SGA
+# used for automated testing (seem to be certificates)
+main/xmlsecurity/test_docs/CAs/*/*.pem
+
+# both part of the SGA, allows no header, no creative content
+main/bean/test/applet/oooapplet/bean.policy
+main/stoc/test/security/test_security.policy
+
+# Postscript files, used for configuration 
+main/psprint_config/configuration/ppds/**/*.PS
+main/testgraphical/references/**/*.PS
+
+# part of the SGA
+# os2 specific mouse pointer definitions
+main/vcl/os2/source/src/*.ptr
+
+# both in the SGA
+# binary AOO specific UNO API component files, probably generated
+main/offapi/type_reference/types.rdb
+main/qadevOOo/testdocs/XSimpleRegistry.rdb
+
+# part of the SGA
+# ascii definition files, unknown if header possible, no creative content
+main/testautomation/framework/optional/input/options/*.ref
+
+# part of the SGA
+# Windows specific registry files, unknown if header possible, no creative content
+main/embedserv/regentries/*.reg
+
+# (3), part of the SGA
+# xml schema files, one of three with ALv2 header
+# Now all three with ALv2 header, disabling pattern
+#**/*.rng
+
+# (4), part of SGA
+# one of four contains ALv2 header
+main/testautomation/spreadsheet/optional/input/loadsave/preselected_filter/rtf.rtf
+main/testautomation/spreadsheet/optional/input/loadsave/tableimport/HTML_Doc_Numberformats_in_table.rtf
+main/testautomation/writer/optional/input/import/rtf.rtf
+
+# (31), part of SGA
+# AOO color palette (see http://www.openoffice.org/dev_docs/source/file_extensions.html)
+**/*.soc
+
+# (26), part of SGA
+# AOO line styles (see http://www.openoffice.org/dev_docs/source/file_extensions.html)
+**/*.sod
+
+# (26), part of SGA
+# AOO arrow styles (see http://www.openoffice.org/dev_docs/source/file_extensions.html)
+**/*.soe
+
+# (51), part of SGA
+# AOO gradients (see http://www.openoffice.org/dev_docs/source/file_extensions.html)
+**/*.sog
+
+# (26), part of SGA
+# AOO hatches (see http://www.openoffice.org/dev_docs/source/file_extensions.html)
+**/*.soh
+
+# part of SGA
+# used as c++ code snippets, ALv2 could be added (see .head)
+# Added ALv2 to these three, deactivating pattern
+# main/oox/source/token/*.tail
+
+# (5), part of SGA
+# VisualBasic Workspace (?)
+**/*.vbw
+
+# part of SGA
+# filetype ascii tables, no copyright, no license, not clear if comments allowed
+main/testautomation/writer/optional/input/export/filter/*.w95
+
+# part of SGA
+# patch files
+main/redland/raptor/raptor-1.4.18.patch.win32
+main/redland/rasqal/rasqal-0.9.16.patch.win32
+main/redland/redland/redland-1.0.8.patch.win32
+
+# (1000+), part of SGA
+# AOO library files, XML, ALv2 could be added
+**/*.xlb
+
+# part of SGA
+# UML defnitions for svx, binary, "Poseidon for UML" needed to read them
+main/svx/doc/UML/edit_engine_UNO_implementation.zuml
+main/svx/doc/UML/grid_control_implementation.zuml
+
+
+##############################################################################
+#
+# binary media formats
+#
+
+**/*.xbm
+**/*.tga
+**/*.sgv
+**/*.sgf
+**/*.ras
+**/*.psd
+**/*.pgm
+**/*.pcx
+**/*.pct
+**/*.pcd
+**/*.pbm
+**/*.met
+**/*.cgm
+**/*.bmp
+**/*.emf
+**/*.eps
+**/*.gif
+**/*.giff
+**/*.icns
+**/*.ico
+**/*.img
+**/*.jpeg
+**/*.jpg
+**/*.mov
+**/*.png
+**/*.svg
+**/*.tif
+**/*.tiff
+**/*.wav
+**/*.wmf
+**/*.wps
+
+# Cursors binaries (80), part of SGA
+**/*.cur
+
+# (33), part of SGA
+# X Pixmap file, Seen one with ALv2 comment, thus could be added to all
+**/*.xpm
+
+# AutoCad Drawing (4), used in automated tests, part of SGA
+**/*.dxf
+
+
+##############################################################################
+#
+# binary document formats
+#
+
+**/*.stc
+**/*.sdc
+**/*.sdd
+**/*.sdf
+**/*.sdg
+**/*.sds
+**/*.sdv
+**/*.sdw
+**/*.sda
+**/*.doc
+**/*.docx
+**/*.odb
+**/*.odf
+**/*.odg
+**/*.odl
+**/*.odm
+**/*.odp
+**/*.ods
+**/*.odt
+**/*.pdf
+**/*.ppm
+**/*.ppt
+**/*.xls
+**/*.xlsb
+**/*.xlsm
+**/*.xlsx
+
+# part of SGA
+# AOO formula (own format)
+main/testautomation/framework/optional/input/alldocs/ffortpf.smf
+main/testautomation/xml/optional/input/math/so_binary/*.smf
+
+# (90), part of SGA
+# AOO Text Document Template
+**/*.stw
+
+# (2), part of SGA
+# AOO StarView Metafile
+**/*.svm
+
+# (163), part of SGA
+# AOO Spreadsheet
+**/*.sxc
+
+# (16), part of SGA
+# AOO Draw
+**/*.sxd
+
+# (10), part of SGA
+# AOO Master Document
+**/*.sxg
+
+# (12), part of SGA
+# AOO Presentation File
+**/*.sxi
+
+# (7), part of SGA
+# AOO Math
+**/*.sxm
+
+# (2), part of SGA
+# AOO Chart
+**/*.sxs
+
+# (277), part of SGA
+# AOO Text Document
+**/*.sxw
+
+# (10), part of SGA
+# AOO configuration file
+**/*.thm
+
+# visual basic project (5)
+**/*.vbp
+
+# main/odk/examples/OLE/vbscript/WriterDemo.vbs: BSD without advertising
+# VisualBasic Script (?)
+main/odk/examples/OLE/vbscript/WriterDemo.vbs
+
+# used in main/extensions/test/ole/* (5), part of SGA
+# Visual Studio project (xml file)
+**/*.vcproj
+
+# used in main/testautomation/* (6), part of SGA
+# AOO Template
+**/*.vor
+
+# used in main/wizards/source/config/* (4), part of SGA
+# Excel Chart (Excel 2.0, 3.0, and 2.x file formats)
+**/*.xlc
+
+# (3), part of SGA
+# Excel Template (Microsoft Corporation)
+**/*.xlt
+
+# (25), part of the SGA
+# AOO dictionary FileFormat
+**/*.dic
+
+
+##############################################################################
+#
+# binary packages
+#
+
+**/*.dbf
+**/*.dbt
+**/*.jar
+**/*.zip
+
+
+##############################################################################
+#
+# build artifacts
+#
+
+**/*.autotools
+**/*.dmake
+**/*.gitignore
+**/*.hgignore
+**/*.hgtags
+**/*.manifest
+
+
+##############################################################################
+#
+# binary libraries and executables
+#
+
+**/*.class
+**/*.dll
+**/*.exe
+**/*.mdb
+
+
+##############################################################################
+#
+# csv files do not allow for comments, thus do not allow for ALv2 header
+# these files are licensed to ASF - but addition of header is not possible
+#
+
+**/*.csv
+
+
+##############################################################################
+#
+# files not requiring a header - empty or generated files 
+#
+
+main/accessibility/bridge/org/openoffice/accessibility/manifest
+main/accessibility/prj/l10n
+main/accessibility/workben/TODO
+main/accessibility/workben/org/openoffice/accessibility/awb/manifest
+main/afms/delzip
+main/automation/prj/l10n
+main/avmedia/source/java/manifest
+main/bean/util/delzip
+main/binfilter/no_localization
+main/binfilter/prj/l10n
+main/bridges/source/jni_uno/java/com/sun/star/bridges/jni_uno/manifest
+main/cairo/cairo/dummy_pkg_config
+main/cli_ure/source/basetypes/cli_basetypes_config
+main/cli_ure/source/native/cli_cppuhelper_config
+main/cli_ure/source/ure/cli_ure_config
+main/cli_ure/unotypes/cli_uretypes_config
+main/configmgr/qa/unit/no_localization
+main/cppuhelper/qa/propertysetmixin/manifest
+main/desktop/scripts/basis-link
+main/desktop/scripts/odf-basis-link
+main/desktop/scripts/so-basis-link
+main/desktop/scripts/ure-link
+main/desktop/test/deployment/active/MANIFEST.MF
+main/desktop/test/deployment/locationtest/MANIFEST.MF
+main/desktop/test/deployment/locationtest/delzip
+main/desktop/test/deployment/options/handler/com/sun/star/comp/extensionoptions/MANIFEST.MF
+main/desktop/test/deployment/passive/MANIFEST.MF
+main/desktop/test/deployment/update/updateinfocreation/build/MANIFEST.MF
+main/desktop/test/deployment/update/updateinfocreation/build/delzip
+main/desktop/zipintro/delzip
+main/embeddedobj/prj/l10n
+main/embedserv/source/inc/stdafx.h
+main/extensions/source/macosx/spotlight/delzip
+main/extras/source/autotext/delzip
+main/extras/source/autotext/lang/delzip
+main/extras/source/database/delzip
+main/extras/source/gallery/arrows/delzip
+main/extras/source/gallery/bullets/delzip
+main/extras/source/gallery/computers/delzip
+main/extras/source/gallery/delzip
+main/extras/source/gallery/diagrams/delzip
+main/extras/source/gallery/education/delzip
+main/extras/source/gallery/environment/delzip
+main/extras/source/gallery/finance/delzip
+main/extras/source/gallery/gallery_sound/delzip
+main/extras/source/gallery/gallery_system/delzip
+main/extras/source/gallery/htmlexpo/delzip
+main/extras/source/gallery/people/delzip
+main/extras/source/gallery/rulers/delzip
+main/extras/source/gallery/sounds/delzip
+main/extras/source/gallery/symbols/delzip
+main/extras/source/gallery/transportation/delzip
+main/extras/source/gallery/txtshapes/delzip
+main/extras/source/gallery/www-back/delzip
+main/extras/source/gallery/www-graf/delzip
+main/extras/source/misc_config/delzip
+main/extras/source/palettes/delzip
+main/extras/source/palettes/lang/delzip
+main/extras/source/symbols/delzip
+main/extras/source/templates/lang/delzip
+main/extras/source/templates/layout/lang/delzip
+main/extras/source/templates/presnt/lang/delzip
+main/extras/source/templates/wizard/agenda/lang/delzip
+main/extras/source/templates/wizard/bitmap/delzip
+main/extras/source/templates/wizard/desktop/delzip
+main/extras/source/templates/wizard/desktop/lang/delzip
+main/extras/source/templates/wizard/fax/lang/delzip
+main/extras/source/templates/wizard/letter/lang/delzip
+main/extras/source/templates/wizard/report/lang/delzip
+main/extras/source/templates/wizard/styles/lang/delzip
+main/extras/source/templates/wizard/web/lang/delzip
+main/extras/source/wordbook/delzip
+main/extras/source/wordbook/lang/delzip
+main/extras/unx/source/bitmaps/delzip
+main/extras/unx/source/kde/applnk/delzip
+main/extras/unx/source/kde/icons/delzip
+main/extras/unx/source/kde/icons/mini/delzip
+main/extras/unx/source/kde/mimelnk/application/delzip
+main/extras/unx/source/kde/mimelnk/text/delzip
+main/filter/source/config/fragments/delzip
+main/filter/source/xsltfilter/Manifest
+main/filter/source/xsltvalidate/Manifest
+main/helpcontent2/source/auxiliary/no_localization
+main/helpcontent2/util/delzip
+main/helpcontent2/util/sbasic/delzip
+main/helpcontent2/util/scalc/delzip
+main/helpcontent2/util/schart/delzip
+main/helpcontent2/util/sdatabase/delzip
+main/helpcontent2/util/sdraw/delzip
+main/helpcontent2/util/shared/delzip
+main/helpcontent2/util/simpress/delzip
+main/helpcontent2/util/smath/delzip
+main/helpcontent2/util/swriter/delzip
+main/i18npool/source/breakiterator/data/LICENSE_INFO
+main/javaunohelper/util/delzip
+main/javaunohelper/util/manifest
+main/jurt/util/delzip
+main/jurt/util/manifest
+main/jvmaccess/workbench/java/manifest
+main/jvmfwk/plugins/sunmajor/pluginlib/sunjavapluginrc
+main/jvmfwk/source/jvmfwk3rc
+main/l10ntools/java/jpropex/jpropex.MF
+main/l10ntools/java/l10nconv/converter.MF
+main/l10ntools/java/receditor/receditor.MF
+main/migrationanalysis/no_localization
+main/migrationanalysis/src/wizard/res_defines.h
+main/migrationanalysis/util/delzip
+main/mysqlc/source/delzip
+main/odk/no_localization
+main/odk/pack/gendocu/java/package-list
+main/odk/pack/gendocu/uno/package-list
+main/odk/util/delzip
+main/ooo_custom_images/industrial/TODO
+main/ooo_custom_images/industrial/duplicates
+main/ooo_custom_images/industrial/missing
+main/psprint_config/configuration/delzip
+main/psprint_config/configuration/ppds/delzip
+main/qadevOOo/runner/manifest
+main/qadevOOo/testdocs/backend/org/openoffice/manifest
+main/qadevOOo/testdocs/qadevlibs/source/com/sun/star/cmp/manifest
+main/qadevOOo/testdocs/qadevlibs/source/test/manifest
+main/rat-excludes
+main/redland/raptor/raptor-1.4.18.patch.os2
+main/redland/rasqal/rasqal-0.9.16.patch.os2
+main/redland/redland/redland-1.0.8.patch.os2
+main/reportbuilder/java/com/sun/star/report/pentaho/parser/style-mapping.txt
+main/reportbuilder/template/delzip
+main/reportbuilder/template/post.xml
+main/reportbuilder/template/pre.xml
+main/reportbuilder/util/component.txt
+main/reportbuilder/util/delzip
+main/ridljar/source/unoloader/com/sun/star/lib/unoloader/manifest
+main/ridljar/source/unoloader/delzip
+main/ridljar/util/delzip
+main/sal/workben/clipboardwben/testcopy/resource.h
+main/sal/workben/clipboardwben/testpaste/resource.h
+main/sal/workben/clipboardwben/testviewer/resource.h
+main/sc/uiconfig/layout/delzip
+main/scripting/examples/delzip
+main/scripting/java/org/openoffice/netbeans/modules/office/resources/templates/Empty.bsh_
+main/scripting/java/org/openoffice/netbeans/modules/office/resources/templates/EmptyParcelDescriptor.xml_
+main/scripting/java/org/openoffice/netbeans/modules/office/resources/templates/ParcelDescriptor.xml_
+main/sdext/source/minimizer/delzip
+main/sdext/source/pdfimport/delzip
+main/sdext/source/pdfimport/wrapper/keyword_list
+main/sdext/source/presenter/delzip
+main/setup_native/source/mac/macinstall.ulf
+main/setup_native/source/opensolaris/bundledextensions/installed
+main/setup_native/source/packinfo/linuxcopyrightfile
+main/setup_native/source/packinfo/private1copyrightfile
+main/setup_native/source/packinfo/solariscopyrightfile
+main/sfx2/workben/custompanel/delzip
+main/smoketestdoc/com/sun/star/comp/smoketest/MANIFEST.MF
+main/smoketestdoc/com/sun/star/comp/smoketest/delzip
+main/solenv/bin/genmap
+main/solenv/bin/install-sh
+main/solenv/inc/startup/summary
+main/soltools/winunistd/unistd.h
+main/splitbuild/bm
+main/stoc/test/javavm/testcomponent/manifest
+main/svtools/inc/svtools/chartprettypainter.hxx
+main/svtools/source/misc/chartprettypainter.cxx
+main/svx/uiconfig/layout/delzip
+main/sw/qa/core/performance-jobfile
+main/sw/source/filter/ww8/CREDITS
+main/sw/uiconfig/layout/delzip
+main/sysui/desktop/debian/control
+main/sysui/desktop/debian/postrm
+main/sysui/desktop/debian/prerm
+main/sysui/desktop/macosx/delzip
+main/sysui/desktop/share/documents.ulf
+main/sysui/desktop/share/launcher_genericname.ulf
+main/sysui/desktop/slackware/slack-desc
+main/sysui/desktop/slackware/update-script
+main/sysui/desktop/solaris/depend
+main/sysui/desktop/solaris/pkginfo
+main/sysui/desktop/solaris/prototype
+main/testautomation/global/input/empty/please_do_not_delete_this_file
+main/testgraphical/references/unxlngi/singletest/tolerance.ini_
+main/testtools/com/sun/star/comp/bridge/manifest
+main/testtools/source/bridgetest/pyuno/pyuno
+main/toolkit/doc/layout/TODO
+main/toolkit/uiconfig/layout/delzip
+main/toolkit/workben/no_localization
+main/ure/source/delzip
+main/vcl/aqua/source/res/delzip
+main/vcl/unx/generic/fontmanager/afm_keyword_list
+main/vcl/unx/gtk/a11y/TODO
+main/wizards/com/sun/star/wizards/agenda/MANIFEST.MF
+main/wizards/com/sun/star/wizards/common/MANIFEST.MF
+main/wizards/com/sun/star/wizards/common/delzip
+main/wizards/com/sun/star/wizards/db/MANIFEST.MF
+main/wizards/com/sun/star/wizards/fax/MANIFEST.MF
+main/wizards/com/sun/star/wizards/form/MANIFEST.MF
+main/wizards/com/sun/star/wizards/letter/MANIFEST.MF
+main/wizards/com/sun/star/wizards/query/MANIFEST.MF
+main/wizards/com/sun/star/wizards/report/MANIFEST.MF
+main/wizards/com/sun/star/wizards/report/delzip
+main/wizards/com/sun/star/wizards/table/MANIFEST.MF
+main/wizards/com/sun/star/wizards/web/MANIFEST.MF
+main/wizards/source/config/delzip
+main/wizards/source/configshare/delzip
+main/wizards/source/depot/delzip
+main/wizards/source/euro/delzip
+main/wizards/source/formwizard/delzip
+main/wizards/source/gimmicks/delzip
+main/wizards/source/importwizard/delzip
+main/wizards/source/launcher/delzip
+main/wizards/source/schedule/delzip
+main/wizards/source/standard/delzip
+main/wizards/source/template/delzip
+main/wizards/source/tools/delzip
+main/wizards/source/tutorials/delzip
+main/wizards/source/webwizard/delzip
+main/writerfilter/source/doctok/qnametostrfooter
+main/writerfilter/source/ooxml/modelcleanup
+main/writerfilter/source/ooxml/rngtocxx
+main/writerfilter/source/ooxml/tokenxmlfooter
+main/writerfilter/source/ooxml/tokenxmlheader
+main/writerfilter/source/resourcemodel/analyzerfooter
+main/writerfilter/source/resourcemodel/qnametostrfooter
+main/writerfilter/source/resourcemodel/setdebugflags
+main/writerfilter/source/resourcemodel/sprmcodetostrfooter
+main/xmerge/source/activesync/XMergeFactory.h
+main/xmerge/source/activesync/XMergeFilter.h
+main/xmerge/source/activesync/XMergeSync.h
+main/xmerge/source/activesync/resource.h
+main/xmerge/source/activesync/stdafx.h
+main/xmlhelp/source/com/sun/star/help/MANIFEST.MF
+main/xmlhelp/util/delzip
+main/xmlsecurity/test_docs/CAs/Root_1/demoCA/crl/DO_NOT_CREATE_A_CRL
+main/xmlsecurity/test_docs/CAs/Root_1/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_1/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_10/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_10/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_11/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_11/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_2/demoCA/crl/DO_NOT_CREATE_A_CRL
+main/xmlsecurity/test_docs/CAs/Root_2/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_2/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_3/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_3/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_4/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_4/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_5/demoCA/crl/DO_NOT_CREATE_A_CRL
+main/xmlsecurity/test_docs/CAs/Root_5/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_5/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_6/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Root_6/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_6/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_7/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Root_7/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_7/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_8/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Root_8/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_8/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Root_9/demoCA/DO_NO_INSTALL_THIS_ROOT_CERTIFICATE
+main/xmlsecurity/test_docs/CAs/Root_9/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Root_9/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_1/demoCA/crl/DO_NOT_CREATE_A_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_1/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_1/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_10/DO_NOT_INSTALL_THIS_CERTIFICATE
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_10/demoCA/DO_NOT_INSTALL_THIS_CERTIFICATE
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_10/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_10/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_10/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_2/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_2/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_3/demoCA/crl/DO_NOT_CREATE_A_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_3/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_3/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_4/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_4/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_5/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_5/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_5/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_6/demoCA/crl/DO_NOT_CREATE_A_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_6/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_6/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_7/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_7/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_7/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_8/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_8/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_8/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_9/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_9/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_4/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_4/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_7/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_7/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_7/demoCA/serial
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_8/demoCA/crl/DO_NOT_INSTALL_THIS_CRL
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_8/demoCA/crlnumber
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_8/demoCA/serial
+main/xmlsecurity/tools/demo/manifest
+test/testassistant/META-INF/MANIFEST.MF
+test/testassistant.feature/.project
+test/testassistant.feature/build.properties
+test/testassistant/.classpath
+test/testassistant/.project
+test/testassistant/META-INF/MANIFEST.MF
+test/testassistant/build.properties
+test/testcommon/.classpath
+test/testcommon/.project
+test/testgui/.classpath
+test/testgui/.project
+test/testgui/.settings/org.eclipse.jdt.core.prefs
+test/testgui/.settings/org.eclipse.jdt.launching.prefs
+test/testgui/ids/obsolete_hid
+test/testuno/data/limit_cfg.ini
+test/testuno/.classpath_linux
+test/testuno/.classpath_win
+test/testuno/.externalToolBuilders/Classpath Builder.launch
+test/testuno/.project
+
+# used in main/libtextcat/data/new_fingerprints/lm (74), not in SGA
+# some language mapping files, created using libtextcat
+#**/*.lm
+main/libtextcat/data/new_fingerprints/lm/*.lm
+
+# used in main/sc/source/ui/vba/testvba/TestDocuments/* (112), part of SGA
+# result of test runs, could be removed (?)
+#**/*.log
+main/sc/source/ui/vba/testvba/TestDocuments/logs/excel/*.log
+main/sc/source/ui/vba/testvba/TestDocuments/logs/unix/*.log
+main/sc/source/ui/vba/testvba/TestDocuments/logs/win/*.log
+main/sc/source/ui/vba/testvba/TestDocuments-ooo-build/logs/excel/*.log
+main/sc/source/ui/vba/testvba/TestDocuments-ooo-build/logs/format.log
+main/sc/source/ui/vba/testvba/TestDocuments-ooo-build/logs/unix/*.log
+main/sc/source/ui/vba/testvba/TestDocuments-ooo-build/logs/win/*.log
+
+
+##############################################################################
+#
+# no comments allowed in file format
+#
+
+test/testcommon/source/org/openoffice/test/Run.help
+main/setup_native/source/packinfo/package_names_ext.txt
+main/setup_native/source/packinfo/package_names.txt
+main/officecfg/registry/schema/oo-common.conf
+main/icu/createmak.cfg
+main/redland/raptor/raptor-1.4.18.patch.ooo_build
+main/redland/rasqal/rasqal-0.9.16.patch.ooo_build
+main/redland/redland/redland-1.0.8.patch.ooo_build
+main/binfilter/bf_sfx2/util/makefile.prj
+main/testautomation/spreadsheet/optional/input/loadsave/microsoft/dif.DIF
+main/mysqlc/source/description/description_de.txt
+main/mysqlc/source/description/description_en-US.txt
+main/mysqlc/source/description/description_es.txt
+main/mysqlc/source/description/description_fr.txt
+main/mysqlc/source/description/description_hu.txt
+main/mysqlc/source/description/description_it.txt
+main/mysqlc/source/description/description_nl.txt
+main/mysqlc/source/description/description_pl.txt
+main/mysqlc/source/description/description_pt-BR.txt
+main/mysqlc/source/description/description_pt.txt
+main/mysqlc/source/description/description_sv.txt
+main/mysqlc/source/description/description_zh-CN.txt
+main/mysqlc/source/description/description_zh-TW.txt
+main/odk/examples/DevelopersGuide/Components/SimpleLicense/registration/license_de.txt
+main/odk/examples/DevelopersGuide/Components/SimpleLicense/registration/license_en_US.txt
+main/odk/examples/cpp/StatusbarController/ModifiedStatusbarController/description/description_en-US.txt
+main/odk/examples/cpp/StatusbarController/SelectionModeStatusbarController/description/description_en-US.txt
+main/odk/examples/cpp/StatusbarController/WordCountStatusbarController/description/description_en-US.txt
+main/odk/examples/DevelopersGuide/UCB/data/data.txt
+main/odk/examples/basic/drawing/dirtree.txt
+main/odk/examples/basic/text/creating_an_index/indexlist.txt
+main/odk/pack/copying/idl_chapter_refs.txt
+main/oox/source/token/namespaces.txt
+main/oox/source/token/properties.txt
+main/oox/source/token/tokens.txt
+main/postprocess/rebase/coffbase.txt
+main/postprocess/rebase/no_rebase.txt
+main/postprocess/signing/no_signing.txt
+main/qadevOOo/testdocs/XSimpleFileAccess/XSimpleFileAccess.txt
+main/qadevOOo/testdocs/XSimpleFileAccess/XSimpleFileAccess2.txt
+main/qadevOOo/testdocs/XSimpleFileAccessBASIC/File1.txt
+main/qadevOOo/testdocs/XSimpleFileAccessBASIC/File2.txt
+main/testautomation/graphics/required/input/gallery/gal_1.txt
+main/testautomation/graphics/required/input/gallery/gal_31.txt
+main/testautomation/graphics/required/input/gallery/gal_33.txt
+main/testautomation/graphics/required/input/gallery/gal_34.txt
+main/testautomation/graphics/required/input/gallery/gal_36.txt
+main/testautomation/graphics/required/input/gallery/gal_39.txt
+main/testautomation/graphics/required/input/gallery/gal_48.txt
+main/testautomation/graphics/required/input/gallery/gal_55.txt
+main/testautomation/graphics/required/input/gallery/gal_oo_1.txt
+main/testautomation/graphics/required/input/gallery/gal_oo_49.txt
+main/testautomation/graphics/required/input/gallery/gal_oo_50.txt
+main/testautomation/graphics/required/input/gallery/gal_oo_84.txt
+main/testautomation/graphics/required/input/spellb_1.txt
+main/testautomation/graphics/required/input/spellb_31.txt
+main/testautomation/graphics/required/input/spellb_33.txt
+main/testautomation/graphics/required/input/spellb_34.txt
+main/testautomation/graphics/required/input/spellb_36.txt
+main/testautomation/graphics/required/input/spellb_39.txt
+main/testautomation/graphics/required/input/spellb_49.txt
+main/testautomation/graphics/required/input/spellb_50.txt
+main/testautomation/graphics/required/input/spellb_55.txt
+main/testautomation/writer/optional/input/filter/if_cod_lin.txt
+main/testautomation/writer/optional/input/filter/if_cod_w95.txt
+main/testautomation/writer/optional/input/filter/if_st_1_all.txt
+main/testautomation/writer/optional/input/filter/if_st_33_all.txt
+main/testautomation/writer/optional/input/filter/if_st_34_all.txt
+main/testautomation/writer/optional/input/filter/if_st_39_all.txt
+main/testautomation/writer/optional/input/filter/if_st_46_all.txt
+main/testautomation/writer/optional/input/filter/if_st_46_exe.txt
+main/testautomation/writer/optional/input/filter/if_st_49_all.txt
+main/testautomation/writer/optional/input/filter/if_st_55_all.txt
+main/testautomation/writer/optional/input/filter/if_st_81_all.txt
+main/testautomation/writer/optional/input/filter/if_st_82_all.txt
+main/testautomation/writer/optional/input/filter/if_st_86_all.txt
+main/testautomation/writer/optional/input/filter/if_st_88_all.txt
+main/testautomation/writer/optional/input/filter/if_st_all.txt
+main/testautomation/writer/optional/input/filter/if_w4w_lin.txt
+main/testautomation/writer/optional/input/filter/sa_actua_1.txt
+main/testautomation/writer/optional/input/filter/sa_actua_36.txt
+main/testautomation/writer/optional/input/filter/sa_actua_49.txt
+main/testautomation/writer/optional/input/filter/sa_actua_81.txt
+main/testautomation/writer/optional/input/filter/sa_actua_82.txt
+main/testautomation/writer/optional/input/filter/sa_actua_86.txt
+main/testautomation/writer/optional/input/filter/sa_actua_88.txt
+main/testautomation/writer/optional/input/filter/sa_sorte_1.txt
+main/testautomation/writer/optional/input/filter/sa_sorte_36.txt
+main/testautomation/writer/optional/input/filter/sa_sorte_49.txt
+main/testautomation/writer/optional/input/filter/sa_sorte_81.txt
+main/testautomation/writer/optional/input/filter/sa_sorte_82.txt
+main/testautomation/writer/optional/input/filter/sa_sorte_86.txt
+main/testautomation/writer/optional/input/filter/sa_sorte_88.txt
+main/testautomation/writer/optional/input/filter/wf____1_all.txt
+main/testautomation/writer/optional/input/filter/wf____49_all.txt
+main/testautomation/writer/optional/input/import/swdos.txt
+main/testautomation/writer/optional/input/number/format1.txt
+main/testautomation/writer/optional/input/number/format31.txt
+main/testautomation/writer/optional/input/number/format33.txt
+main/testautomation/writer/optional/input/number/format36.txt
+main/testautomation/writer/optional/input/number/format39.txt
+main/testautomation/writer/optional/input/number/format44.txt
+main/testautomation/writer/optional/input/number/format46.txt
+main/testautomation/writer/optional/input/number/format49.txt
+main/testautomation/writer/optional/input/number/format86.txt
+main/writerfilter/documentation/sprms.txt
+main/xmerge/source/activesync/guids.txt
+main/xmerge/source/bridge/antcall.txt
+main/xmlsecurity/test_docs/CAs/Root_1/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_10/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_11/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_2/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_3/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_4/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_5/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_6/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_7/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_8/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Root_9/DO_NOT_INSTALL_THIS_ROOT_CERT.txt
+main/xmlsecurity/test_docs/CAs/Root_9/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_1/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_10/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_2/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_3/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_4/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_5/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_6/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_7/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_8/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_1_Root_9/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_4/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_7/demoCA/index.txt
+main/xmlsecurity/test_docs/CAs/Sub_CA_2_Root_8/demoCA/index.txt
+main/xmlsecurity/tools/examples/eval_export.txt
+main/xmlsecurity/tools/examples/eval_import.txt
+
+
+##############################################################################
+#
+# empty files
+#
+
+main/odk/examples/OLE/delphi/InsertTables/Project1.res
+main/odk/pack/unzip_udk/deltree.txt
+main/testautomation/framework/required/input/basic_ide/Dialog5_ar_DZ.default
+main/instsetoo_native/inc_ure/windows/msi_templates/components.txt
+main/migrationanalysis/src/wizard/rcfooter.txt
+main/instsetoo_native/inc_sdkoo/windows/msi_templates/components.txt
+main/instsetoo_native/inc_openoffice/windows/msi_templates/components.txt
+main/instsetoo_native/inc_ooolangpack/windows/msi_templates/components.txt
+main/testautomation/writer/optional/input/filter/wf____49.all
+main/scripting/java/org/openoffice/netbeans/modules/office/Bundle.properties
+main/scripting/java/org/openoffice/netbeans/modules/office/Bundle_en_US.properties
+main/scripting/java/org/openoffice/netbeans/modules/office/filesystem/Bundle_en_US.properties
+main/scripting/java/org/openoffice/netbeans/modules/office/wizard/Bundle_en_US.properties
+main/testautomation/extensions/optional/input/extension_sources/TaskPaneComponent/nbproject/private/config.properties
+main/testgraphical/ui/java/ConvwatchGUIProject/nbproject/private/config.properties
+
+# used in main/extensions/source/macosx/spotlight/mdimporter/en.lproj/schema.strings (1), part of SGA
+#**/*.strings
+main/extensions/source/macosx/spotlight/mdimporter/en.lproj/schema.strings
+
+
+##############################################################################
+#
+# test files (need current contents)
+#
+
+main/desktop/test/deployment/update/defect/update/info1.update.xml
+main/desktop/test/deployment/update/defect/update/info2.update.xml
+
+
+##############################################################################
+#
+# files with Apache License 2.0 (ALv2)
+# that are plain copies, so they cannot be modified
+
+main/stax/download/README_stax-1.2.0.jar.txt
+
+##############################################################################
+#
+# files with MIT license
+#
+
+main/install-sh
+main/apple_remote/inc/AppleRemote.h
+main/apple_remote/inc/GlobalKeyboardDevice.h
+main/apple_remote/inc/HIDRemoteControlDevice.h
+main/apple_remote/inc/KeyspanFrontRowControl.h
+main/apple_remote/inc/MultiClickRemoteBehavior.h
+main/apple_remote/inc/RemoteControl.h
+main/apple_remote/inc/RemoteControlContainer.h
+main/apple_remote/inc/RemoteMainController.h
+
+
+##############################################################################
+#
+# files with W3C Software License
+#
+
+main/MathMLDTD/w3c_ipr_software_notice.html
+main/MathMLDTD/math.dtd
+
+
+##############################################################################
+#
+# files with Python Software Foundation License
+#
+
+main/filter/source/config/tools/merge/pyAltFCFGMerge
+
+
+##############################################################################
+#
+# files with ICU license
+#
+
+main/i18npool/source/breakiterator/data/char_in.txt
+main/i18npool/source/breakiterator/data/count_word.txt
+main/i18npool/source/breakiterator/data/count_word_fi.txt
+main/i18npool/source/breakiterator/data/dict_word.txt
+main/i18npool/source/breakiterator/data/dict_word_ca.txt
+main/i18npool/source/breakiterator/data/dict_word_fi.txt
+main/i18npool/source/breakiterator/data/dict_word_he.txt
+main/i18npool/source/breakiterator/data/dict_word_hu.txt
+main/i18npool/source/breakiterator/data/dict_word_nodash.txt
+main/i18npool/source/breakiterator/data/dict_word_prepostdash.txt
+main/i18npool/source/breakiterator/data/edit_word.txt
+main/i18npool/source/breakiterator/data/edit_word_he.txt
+main/i18npool/source/breakiterator/data/edit_word_hu.txt
+main/i18npool/source/breakiterator/data/line.txt
+main/i18npool/source/breakiterator/data/sent.txt
+
+
+##############################################################################
+#
+# files for SANE API, public domain
+#
+
+main/sane/inc/sane.h
+
+
+##############################################################################
+#
+# files with BSD license
+#
+
+main/unixODBC/inc/iodbcunix.h
+main/unixODBC/inc/sql.h
+main/unixODBC/inc/sqlext.h
+main/unixODBC/inc/sqltypes.h
+main/unixODBC/inc/sqlucode.h
+
+
+##############################################################################
+#
+# files with "The TWAIN License", see http://www.twain.org/license.shtm. Covered
+# in the main/NOTICE file as required
+#
+
+main/twain/inc/twain.h
+
+
+##############################################################################
+#
+# GPL, but special entry there:
+# # As a special exception to the GNU General Public License, if you
+# # distribute this file as part of a program that contains a
+# # configuration script generated by Autoconf, you may include it under
+# # the same distribution terms that you use for the rest of that program.
+# thus can be kept and should be added to rat excludes
+# Still: A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/config.guess
+main/config.sub
+
+
+##############################################################################
+#
+# Header contains license identical to BSD without advertising
+# A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/connectivity/qa/complex/connectivity/hsqldb/TestCacheSize.java
+
+
+##############################################################################
+#
+# FSF, contains MIT equal license
+# A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/hwpfilter/source/ksc5601.h
+
+
+##############################################################################
+#
+# originally from XConsortium, mkdepend.man contains license info (permission)
+# and looks like MIT1.1
+# A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/soltools/mkdepend/collectdircontent.cxx
+main/soltools/mkdepend/collectdircontent.hxx
+main/soltools/mkdepend/cppsetup.c
+main/soltools/mkdepend/def.h
+main/soltools/mkdepend/ifparser.c
+main/soltools/mkdepend/ifparser.h
+main/soltools/mkdepend/imakemdep.h
+main/soltools/mkdepend/include.c
+main/soltools/mkdepend/main.c
+main/soltools/mkdepend/mkdepend.man
+main/soltools/mkdepend/parse.c
+main/soltools/mkdepend/pr.c
+
+
+##############################################################################
+#
+# Open Document Managment API, uses "OPEN DOCUMENT MANAGEMENT API LICENSE 1.0"
+# defined in the file. Text is equal to BSD license without advertising
+# A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/ucb/source/ucp/odma/odma.h
+
+
+##############################################################################
+#
+# Copyright © 2000 SuSE, Inc., license from text (see files)
+# equal to MIT1.1
+# A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/x11_extensions/inc/Xrender.h
+main/x11_extensions/inc/randr.h
+main/x11_extensions/inc/randrproto.h
+main/x11_extensions/inc/render.h
+main/x11_extensions/inc/renderproto.h
+
+
+##############################################################################
+#
+# findings from af: The libtextcat version 2.2 library is under BSD license
+# It was released 2003 by WiseGuys Internet B.V. (http://software.wise-guys.nl:1080/libtextcat/index.html ).
+# No problem there. It's BSD license (with advertising).
+# Asking on the list what category this may be
+# A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/libtextcat/data/new_fingerprints/fpdb.conf
+
+
+##############################################################################
+#
+# (C) 1988, 1989, 1990 by Adobe Systems Incorporated
+# permissive license, but not categorized by Apache (not A, B or X)
+# A case for https://issues.apache.org/jira/browse/LEGAL-130
+#
+
+main/vcl/unx/generic/fontmanager/parseAFM.cxx
+main/vcl/unx/generic/fontmanager/parseAFM.hxx
+
+
+##############################################################################
+#
+# Copyright Free Software Foundation, Inc., it's free software
+#
+
+main/icc/source/create_sRGB_profile/Makefile.in
+

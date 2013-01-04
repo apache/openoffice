@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><helpdocument version="1.0">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+<meta>
+<topic id="textsharedguidecollabxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Collaboration</title>
+<filename>text/shared/guide/collab.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id4459669">
+<bookmark_value>sharing documents</bookmark_value>
+<bookmark_value>collaboration</bookmark_value>
+<bookmark_value>file locking with collaboration</bookmark_value>
+<bookmark_value>locked documents</bookmark_value>
+</bookmark><comment>MW changed the index entries to one level entries.</comment><comment>MW added two index entries with "lock"</comment>
+<paragraph id="hd_id130008" role="heading" xml-lang="en-US" level="1"><variable id="collab"><link href="text/shared/guide/collab.xhp">Collaboration</link></variable></paragraph>
+<paragraph id="par_id5821710" role="paragraph" xml-lang="en-US">In %PRODUCTNAME Writer, Impress, and Draw, only one user at a time can open any document for writing. In Calc, many users can open the same spreadsheet for writing at the same time.</paragraph><comment>Tools - Share Document menu</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:ShareDocument" id="bm_id8779564" localize="false"/>
+<paragraph id="par_id9590136" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">Opens the Share Document dialog where you can enable or disable collaborative sharing of the document.</ahelp></paragraph><comment>Share Document dialog - Share this spreadsheet with other users</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_SHAREDOCUMENT:CB_SHARE" id="bm_id7900021" localize="false"/>
+<paragraph id="par_id2519913" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">Enable to share the current document with other users. Disable to use the document unshared. This will invalidate the not yet saved edits that other users applied in the time since you last opened or saved this document.</ahelp></paragraph>
+<paragraph id="hd_id6917020" role="heading" xml-lang="en-US" level="2">Collaboration in Calc</paragraph>
+<paragraph id="par_id4411145" role="paragraph" xml-lang="en-US">In %PRODUCTNAME Calc, document sharing allows simultaneous write access for many users. Every user who wants to collaborate should enter a name on the <switchinline select="sys"><caseinline select="MAC"><emph>%PRODUCTNAME - Preferences</emph>
+</caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME - User Data</emph> tab page.</paragraph>
+<paragraph id="par_id6799218" role="warning" xml-lang="en-US">Some commands are not available (grayed out) when change tracking or document sharing is activated. For a new spreadsheet you cannot apply or insert the grayed out elements. <comment>Spec Doc owner told me that this is work in progress and may change any time</comment></paragraph>
+<paragraph id="hd_id3274941" role="heading" xml-lang="en-US" level="3">Creating a new spreadsheet</paragraph>
+<paragraph id="par_id9804681" role="paragraph" xml-lang="en-US">User A creates a new spreadsheet document. The following conditions can apply:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph id="par_id2109744" role="paragraph" xml-lang="en-US">The user does not want to share the spreadsheet for collaboration.</paragraph>
+<paragraph id="par_id5374614" role="paragraph" xml-lang="en-US">User A opens, edits, and saves the document as described above for Writer, Impress, and Draw document.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id768761" role="paragraph" xml-lang="en-US">The user wants to share the document for collaboration.</paragraph>
+<paragraph id="par_id6844691" role="paragraph" xml-lang="en-US">The user chooses <item type="menuitem">Tools - Share Document</item> to activate the collaboration features for this document. A dialog opens where the user can choose to enable or disable sharing. If the user enables sharing, the document will be saved in shared mode, which is also shown on the title bar.</paragraph>
+</listitem></list>
+<paragraph id="par_id5288857" role="paragraph" xml-lang="en-US">The <item type="menuitem">Tools - Share Document</item> command can be used to switch the mode for the current document from unshared mode to shared mode. If you want to use a shared document in unshared mode, you would save the shared document using another name or path. This creates a copy of the spreadsheet that is not shared.</paragraph>
+<paragraph id="hd_id8842127" role="heading" xml-lang="en-US" level="3">Opening a spreadsheet</paragraph>
+<paragraph id="par_id7276528" role="paragraph" xml-lang="en-US">User A opens a spreadsheet document. The following conditions can apply:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph id="par_id8363902" role="paragraph" xml-lang="en-US">The spreadsheet document is not in shared mode.</paragraph>
+<paragraph id="par_id5974303" role="paragraph" xml-lang="en-US">The user can open, edit, and save the document as described above for Writer, Impress, and Draw documents.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id5323343" role="paragraph" xml-lang="en-US">The spreadsheet document is in shared mode.</paragraph>
+<paragraph id="par_id5824457" role="paragraph" xml-lang="en-US">The user sees a message that the document is in shared mode and that some features are not available in this mode. The user can disable this message for the future. After clicking OK, the document is opened in shared mode.</paragraph>
+</listitem></list><comment>Resolve Conflicts dialog</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCDLG_CONFLICTS" id="bm_id9671926" localize="false"/>
+<paragraph id="par_id5800653" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">If the same contents are changed by different users, the Resolve Conflicts dialog opens. For each conflict, decide which changes to keep.</ahelp></paragraph><comment>Keep Mine</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_CONFLICTS:BTN_KEEPMINE" id="bm_id1640369" localize="false"/>
+<paragraph id="par_id6263924" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">Keeps your change, voids the other change.</ahelp></paragraph><comment>Keep Other</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_CONFLICTS:BTN_KEEPOTHER" id="bm_id1640360" localize="false"/>
+<paragraph id="par_id3609118" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">Keeps the change of the other user, voids your change.</ahelp></paragraph><comment>Keep All Mine</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_CONFLICTS:BTN_KEEPALLMINE" id="bm_id1640361" localize="false"/>
+<paragraph id="par_id7184057" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">Keeps all your changes, voids all other changes.</ahelp></paragraph><comment>Keep All Others</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_CONFLICTS:BTN_KEEPALLOTHERS" id="bm_id1640363" localize="false"/>
+<paragraph id="par_id786767" role="paragraph" xml-lang="en-US"><ahelp hid="." visibility="hidden">Keeps the changes of all other users, voids your changes.</ahelp></paragraph>
+<paragraph id="hd_id2934965" role="heading" xml-lang="en-US" level="3">Saving a shared spreadsheet document</paragraph>
+<paragraph id="par_id1174657" role="paragraph" xml-lang="en-US">User A saves a shared document. The following conditions can apply:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph id="par_id2577593" role="paragraph" xml-lang="en-US">The document was not modified and saved by another user since user A opened the document.</paragraph>
+<paragraph id="par_id5883968" role="paragraph" xml-lang="en-US">The document is saved.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id9049653" role="paragraph" xml-lang="en-US">The document was modified and saved by another user since user A opened the document.</paragraph>
+<paragraph id="par_id1976683" role="paragraph" xml-lang="en-US">If the changes do not conflict, the document is saved.</paragraph>
+<paragraph id="par_id43946" role="paragraph" xml-lang="en-US">If the changes conflict, the Resolve Conflicts dialog will be shown. User A must decide for the conflicts which version to keep, "Keep Mine" or "Keep Other". When all conflicts are resolved, the document is saved. While user A resolves the conflicts, no other user is able to save the shared document.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id6449171" role="paragraph" xml-lang="en-US">Another user tries to save the shared document and resolves conflicts in this moment.</paragraph>
+<paragraph id="par_id7101046" role="paragraph" xml-lang="en-US">User A sees a message that a merge-in is in progress. User A can choose to cancel the save command for now, or retry saving some time later.</paragraph>
+</listitem></list>
+<paragraph id="par_id7186498" role="paragraph" xml-lang="en-US">When a user successfully saves a shared spreadsheet, the document will be reloaded after the save command, so that the spreadsheet shows the latest version of all changes that got saved by all users. A message shows that "foreign changes have been added" when another user did change some contents.</paragraph>
+<paragraph id="hd_id2871791" role="heading" xml-lang="en-US" level="2">Collaboration in Writer, Impress, and Draw</paragraph>
+<paragraph id="par_id2675862" role="paragraph" xml-lang="en-US">For all modules Writer, Impress, Draw, and for Calc when document sharing is not enabled, a file locking is possible. This file locking is available even when accessing the same document from different operating systems:</paragraph>
+<paragraph id="par_id7333597" role="paragraph" xml-lang="en-US">User A opens a document. The following conditions can apply:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph id="par_id9976195" role="paragraph" xml-lang="en-US">The document is not locked by any other user.</paragraph>
+<paragraph id="par_id2507400" role="paragraph" xml-lang="en-US">This document will be opened for read and write access by user A. The document will be locked for other users until user A closes the document.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id216681" role="paragraph" xml-lang="en-US">The document is marked as "read-only" by the file system.</paragraph>
+<paragraph id="par_id7709585" role="paragraph" xml-lang="en-US">This document will be opened in read-only mode. Editing is not allowed. User A can save the document using another document name or another path. User A can edit this copy.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id4309518" role="paragraph" xml-lang="en-US">The document is locked by another user.</paragraph>
+<paragraph id="par_id206610" role="paragraph" xml-lang="en-US">User A sees a dialog that tells the user the document is locked. The dialog offers to open the document in read-only mode, or to open a copy for editing, or to cancel the Open command.</paragraph>
+</listitem></list>
+<paragraph id="hd_id29349651" role="heading" xml-lang="en-US" level="2">User access permissions and sharing documents</paragraph>
+<paragraph id="par_id11746571" role="paragraph" xml-lang="en-US">Some conditions must be met on operating systems with a user permission management.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph id="par_id25775931" role="paragraph" xml-lang="en-US">The shared file needs to reside in a location which is accessible by all collaborators.</paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id90496531" role="paragraph" xml-lang="en-US">The file permissions for both the document and the corresponding lock file need to be set so that all collaborators can create, delete, and change the files.</paragraph>
+</listitem></list>
+<paragraph id="par_id71864981" role="warning" xml-lang="en-US">Write access also enables other users to (accidentally or deliberately) delete or change a file.</paragraph>
+<section id="relatedtopics">
+<paragraph id="par_id4263740" role="paragraph" xml-lang="en-US"><link href="text/shared/01/01070000.xhp" name="Save As">Save As</link></paragraph>
+</section>
+</body>
+</helpdocument>

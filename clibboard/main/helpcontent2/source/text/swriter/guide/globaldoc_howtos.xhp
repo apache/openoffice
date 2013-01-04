@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideglobaldoc_howtosxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Working with Master Documents and Subdocuments</title>
+         <filename>/text/swriter/guide/globaldoc_howtos.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145246"><bookmark_value>Navigator;master documents</bookmark_value>
+      <bookmark_value>master documents;creating/editing/exporting</bookmark_value>
+      <bookmark_value>subdocuments;creating/editing/removing</bookmark_value>
+      <bookmark_value>removing;subdocuments</bookmark_value>
+      <bookmark_value>indexes; master documents</bookmark_value>
+</bookmark><comment>MW created 4 new index entries. 2 index entries were taken from globaldoc.xhp.</comment><comment>MW made one index entry out of 2 "subdocuments;" entries</comment>
+<paragraph xml-lang="en-US" id="hd_id3145246" role="heading" level="1" l10n="U" oldref="4"><variable id="globaldoc_howtos"><link href="text/swriter/guide/globaldoc_howtos.xhp">Working with Master Documents and Subdocuments</link>
+</variable></paragraph><comment>MW: this is a new guide created from splitting globaldoc.xhp</comment>
+<paragraph xml-lang="en-US" id="par_id1522873" role="paragraph" l10n="NEW">A master document lets you manage large documents, such as a book with many chapters. The master document can be seen as a container for individual <item type="productname">%PRODUCTNAME</item> Writer files. The individual files are called subdocuments.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153127" role="heading" level="2" l10n="U"
+                 oldref="29">To Create a Master Document</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149634" role="listitem" l10n="U" oldref="30">Do one of the following:</paragraph>
+         </listitem>
+      </list>
+
+
+
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149956" xml-lang="en-US" l10n="U" oldref="31">Choose <emph>File - New - Master Document</emph>.</paragraph>
+</listitem>
+
+<listitem>
+<paragraph role="listitem" id="par_id3149612" xml-lang="en-US" l10n="U" oldref="32">Open an existing document and choose <emph>File - Send - Create Master Document</emph>.</paragraph>
+</listitem>
+</list>
+
+
+
+
+      <list type="ordered" startwith="2">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149873" role="listitem" l10n="CHG" oldref="28">If you are creating a new master document, the first entry in the Navigator should be a <item type="menuitem">Text</item>
+               <emph/>entry. Type an introduction or enter some text. This ensures that after having edited an existing style in the master document, you see the changed style when viewing the subdocuments.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145114" role="listitem" l10n="CHG" oldref="33">In the <item type="menuitem">Navigator</item> for master documents (should open automatically, else press F5 to open), click and hold the <item type="menuitem">Insert</item>
+               <emph/>icon, and do one of the following:</paragraph>
+         </listitem>
+      </list>
+
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156240" xml-lang="en-US" l10n="U" oldref="34">To insert an existing file as a subdocument, choose <emph>File</emph>, locate the file that you want to include, and then click <emph>OK</emph>.</paragraph>
+</listitem>
+
+<listitem>
+<paragraph role="listitem" id="par_id3145405" xml-lang="en-US" l10n="U" oldref="35">To create a new subdocument, choose <emph>New Document</emph>, type a name for the file, and then click <emph>Save</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id8550981" xml-lang="en-US" l10n="CHG">To insert some text between subdocuments, choose <emph>Text</emph>. Then type the text. You cannot insert text next to an existing text entry in the Navigator.<comment>i81372</comment></paragraph>
+</listitem>
+</list>
+
+
+      <list type="ordered" startwith="4">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153382" role="listitem" l10n="U" oldref="36">Choose <emph>File - Save</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3154242" role="heading" level="2" l10n="U"
+                 oldref="37">To Edit a Master Document</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154255" role="paragraph" l10n="U" oldref="20">Use the Navigator for rearranging and editing the subdocuments in a master document.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155879" role="listitem" l10n="CHG" oldref="38">To open a subdocument for editing, double-click the name of the subdocument in the Navigator.</paragraph>
+         </listitem>
+      </list>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155931" role="listitem" l10n="CHG" oldref="39">To remove a subdocument from the master document, right-click the subdocument in the Navigator list and choose <emph>Delete</emph>. The subdocument file is not deleted, only the entry in the Navigator is removed.</paragraph>
+         </listitem>
+      </list>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148677" role="listitem" l10n="CHG" oldref="8">To add text to a master document, right-click an item in the Navigator list, and then choose <emph>Insert - Text</emph>. A text section is inserted before the selected item in the master document where you can type the text that you want. You cannot insert text next to an existing text entry in the Navigator.<comment>i81372</comment></paragraph>
+         </listitem>
+      </list>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149982" role="listitem" l10n="U" oldref="10">To reorder the subdocuments in a master document, drag a subdocument to a new location in the Navigator list. You can also select a subdocument in the list, and click the <item type="menuitem">Move down</item> or <item type="menuitem">Move up</item>
+               <emph/>icon.</paragraph>
+         </listitem>
+      </list>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153022" role="listitem" l10n="CHG" oldref="40">To add an index, such as a table of contents, right-click in the Navigator list, and then choose <emph>Insert - Index</emph>.</paragraph>
+         </listitem>
+      </list>
+      <table id="tbl_id3154206">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148949" role="paragraph" l10n="E">
+<image id="img_id3148959" src="sw/imglst/sc20246.png" width="0.1862in" height="0.1862in"><alt xml-lang="en-US" id="alt_id3148959">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153632" role="paragraph" l10n="U" oldref="21">To update an index in a master document, select the index in the Navigator, and then click the <emph>Update</emph> icon.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_idN10C40" role="note" l10n="NEW">When you insert an object like a frame or a picture into a master document, do not anchor the object "to page". Instead, set the anchor "to paragraph" on the <emph>Format - (Object type) - Type</emph> tab page, and then set the object's position relative to "Entire Page" in the <emph>Horizontal</emph> and <emph>Vertical</emph> list boxes.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153656" role="heading" level="3" l10n="U"
+                 oldref="41">To Start Each Subdocument on a New Page</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152760" role="listitem" l10n="U" oldref="42">Ensure that each subdocument starts with a heading that uses the same paragraph style, for example "Heading 1".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153876" role="listitem" l10n="U" oldref="43">In the master document, choose <emph>Format - Styles and Formatting</emph>, and click the <emph>Paragraph Styles</emph> icon.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153907" role="listitem" l10n="U" oldref="44">Right-click "Heading 1" and choose <emph>Modify</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147124" role="listitem" l10n="U" oldref="45">Click the <item type="menuitem">Text Flow</item>
+               <emph/>tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149770" role="listitem" l10n="CHG" oldref="46">In the <item type="menuitem">Breaks</item>
+               <emph/>area, select <item type="menuitem">Insert</item>, and then select “Page”<emph/>in the <item type="menuitem">Type</item>
+               <emph/>box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150224" role="listitem" l10n="U" oldref="17">If you want each subdocument to start on an odd page, select <emph>With Page Style</emph>, and select "Right page" in the box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145205" role="listitem" l10n="U" oldref="47">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3145228" role="heading" level="3" l10n="CHG"
+                 oldref="48">To Export a Master Document as a <item type="productname">%PRODUCTNAME</item> Text Document</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150315" role="listitem" l10n="U" oldref="49">Choose <item type="menuitem">File - Export</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148580" role="listitem" l10n="U" oldref="50">In the <emph>File format</emph> list, select a text document file format and click <emph>Export</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id8371227" role="note" l10n="NEW">The subdocuments will be exported as sections. Use <item type="menuitem">Format - Sections</item> to unprotect and remove sections, if you prefer a plain text document without sections.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/indices_multidoc.xhp#indices_multidoc"/>
+         <paragraph xml-lang="en-US" id="par_id3154382" role="paragraph" l10n="C"><link href="text/shared/01/02110000.xhp" name="Navigator in master mode">Navigator in master mode</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

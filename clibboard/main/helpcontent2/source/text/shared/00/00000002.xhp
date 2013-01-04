@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0000000002xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Glossary of Internet Terms</title>
+<filename>/text/shared/00/00000002.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="glossar">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150702"><bookmark_value>Internet glossary</bookmark_value>
+<bookmark_value>common terms;Internet glossary</bookmark_value>
+<bookmark_value>glossaries;Internet terms</bookmark_value>
+<bookmark_value>terminology;Internet glossary</bookmark_value>
+</bookmark><comment>mw changed "Internet...".</comment><paragraph role="heading" id="hd_id3150702" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/00/00000002.xhp" name="Glossary of Internet Terms">Glossary of Internet Terms</link></paragraph>
+<paragraph role="paragraph" id="par_id3155577" xml-lang="en-US" l10n="U" oldref="2">If you are a newcomer to the Internet, you will be confronted with unfamiliar terms: browser, bookmark, e-mail, homepage, search engine, and many others. To make your first steps easier, this glossary explains some of the more important terminology you may find in the Internet, intranet, mail and news.</paragraph>
+</section>
+<sort>
+<section id="frame">
+<paragraph role="heading" id="hd_id3153146" xml-lang="en-US" level="2" l10n="U" oldref="36">Frames</paragraph>
+<paragraph role="paragraph" id="par_id3157909" xml-lang="en-US" l10n="U" oldref="37">Frames are useful for designing the layout of <link href="text/shared/00/00000002.xhp#html" name="HTML">HTML</link> pages. $[officename] uses floating frames into which you can place objects such as graphics, movie files and sound. The context menu of a frame shows the options for restoring or editing frame contents. Some of these commands are also listed in <emph>Edit - Object</emph> when the frame is selected.</paragraph>
+</section>
+<section id="ftp">
+<paragraph role="heading" id="hd_id3147077" xml-lang="en-US" level="2" l10n="U" oldref="43">FTP</paragraph>
+<paragraph role="paragraph" id="par_id3147335" xml-lang="en-US" l10n="U" oldref="44">FTP stands for File Transfer Protocol and is the standard transfer protocol for files in the Internet. An FTP server is a program on a computer connected to the Internet which stores files to be transmitted with the aid of FTP. While FTP is responsible for transmitting and downloading Internet files, <link href="text/shared/00/00000002.xhp#http" name="HTTP">HTTP</link> (Hypertext Transfer Protocol) provides the connection setup and data transfer between WWW servers and clients.</paragraph>
+</section>
+<section id="html">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145609"><bookmark_value>HTML; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145609" xml-lang="en-US" level="2" l10n="U" oldref="56">HTML</paragraph>
+<paragraph role="paragraph" id="par_id3161459" xml-lang="en-US" l10n="U" oldref="57">HTML (Hypertext Markup Language) is a document code language, which is used as the file format for WWW documents. It is derived from <link href="text/shared/00/00000002.xhp#sgml" name="SGML">SGML</link> and integrates text, graphics, videos and sound.</paragraph>
+<paragraph role="paragraph" id="par_id3154346" xml-lang="en-US" l10n="CHG" oldref="58">If you want to type HTML commands directly, for example when doing exercises from one of the many available HTML books, remember that HTML pages are pure text files. Save your document under the document type <emph>Text </emph>and give it the file name extension .HTML. Be sure there are no umlauts or other special characters of the extended character set. If you want to re-open this file in $[officename] and edit the HTML code, you must load it with the file type <emph>Text</emph> and not with the file type <emph>Web pages</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3153960" xml-lang="en-US" l10n="U" oldref="244">There are several references on the Internet providing an introduction to the HTML language.</paragraph>
+</section>
+<section id="http">
+<paragraph role="heading" id="hd_id3147423" xml-lang="en-US" level="2" l10n="U" oldref="59">HTTP</paragraph>
+<paragraph role="paragraph" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="60">The Hypertext Transfer Protocol is a record of transmission of WWW documents between WWW servers (hosts) and browsers (clients).</paragraph>
+</section>
+<section id="hyperlink">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149290"><bookmark_value>hyperlinks; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149290" xml-lang="en-US" level="2" l10n="U" oldref="61">Hyperlink</paragraph>
+<paragraph role="paragraph" id="par_id3145420" xml-lang="en-US" l10n="CHG" oldref="62">Hyperlinks are cross-references, highlighted in text in various colors and activated by mouse-click. With the aid of hyperlinks, readers can jump to specific information within a document as well as to related information in other documents.</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="CHG" oldref="63">In $[officename] you can assign hyperlinks to text as well as to graphics and text frames (see the Hyperlink Dialog icon on the Standard bar).</paragraph>
+</section>
+<section id="imagemap">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152805"><bookmark_value>ImageMap; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3152805" xml-lang="en-US" level="2" l10n="U" oldref="64">ImageMap</paragraph>
+<paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="65">An ImageMap is a reference-sensitive graphic or text frame. You can click on defined areas of the graphic or text frame to go to a target (<link href="text/shared/00/00000002.xhp#url" name="URL">URL</link>), which is linked with the area. The reference areas, along with the linked URLs and corresponding text displayed when resting the mouse pointer on these areas, are defined in the <link href="text/shared/01/02220000.xhp" name="ImageMap Editor">ImageMap Editor</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3153178" xml-lang="en-US" l10n="U" oldref="66">There are two different types of ImageMaps. A Client Side ImageMap is evaluated on the client computer, which loaded the graphic from the Internet, while a Server Side ImageMap is evaluated on the server computer which provides the <link href="text/shared/00/00000002.xhp#html" name="HTML">HTML</link> page on the Internet. In server evaluation, clicking an ImageMap sends the relative coordinates of the cursor within the image to the server, and a dedicated program on the server responds. In the client evaluation, clicking a defined hotspot of the ImageMap activates the URL, as if it were a normal text link. The URL appears below the mouse pointer when passing across the ImageMap.</paragraph>
+<paragraph role="paragraph" id="par_id3150740" xml-lang="en-US" l10n="U" oldref="67">As ImageMaps can be used in different ways, they can be stored in different formats.</paragraph>
+<paragraph role="heading" id="hd_id3146874" xml-lang="en-US" level="2" l10n="U" oldref="68">ImageMap Formats</paragraph>
+<paragraph role="paragraph" id="par_id3145153" xml-lang="en-US" l10n="U" oldref="69">ImageMaps are basically divided between those that are analyzed on the server (i. e. your Internet provider) and those analyzed on the web browser of the reader's computer.</paragraph>
+</section>
+<section id="ss_imagemaps">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152881"><bookmark_value>Server Side ImageMap</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3152881" xml-lang="en-US" level="2" l10n="U" oldref="70">Server Side ImageMaps</paragraph>
+<paragraph role="paragraph" id="par_id3153057" xml-lang="en-US" l10n="U" oldref="71">Server Side ImageMaps appear for the reader as a picture or frame on the page. Click on the ImageMap with the mouse, and the coordinates of the relative position are sent to the server. Aided by an extra program, the server then determines the next step to take. There are several incompatible methods to define this process, the two most common being:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147502" xml-lang="en-US" l10n="U" oldref="72">W3C (CERN) HTTP Server (Format type: MAP - CERN)</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154011" xml-lang="en-US" l10n="U" oldref="73">NCSA HTTP Server (Format type: MAP - NCSA)</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3149483" xml-lang="en-US" l10n="CHG" oldref="74">$[officename] creates ImageMaps for both methods. Select the format from the <emph>File type </emph>list in the <emph>Save As </emph>dialog in the <emph>ImageMap Editor</emph>. Separate Map Files are created which you must upload to the server. You will need to ask your provider or network administrator which type of ImageMaps are supported by the server and how to access the evaluation program.</paragraph>
+</section>
+<section id="cs_imagemaps">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152418"><bookmark_value>Client Side ImageMap</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3152418" xml-lang="en-US" level="2" l10n="U" oldref="75">Client Side ImageMap</paragraph>
+<paragraph role="paragraph" id="par_id3151290" xml-lang="en-US" l10n="CHG" oldref="76">The area of the picture or frame where the reader can click is indicated by the appearance of the linked <link href="text/shared/00/00000002.xhp#url" name="URL">URL</link> when the mouse passes over the area. The ImageMap is stored in a layer below the picture and contains information about the referenced regions. The only disadvantage of Client Side ImageMaps is that older Web browsers cannot read them; a disadvantage that will, however, resolve itself in time.</paragraph>
+<paragraph role="paragraph" id="par_id3149664" xml-lang="en-US" l10n="U" oldref="77">When saving the ImageMap, select the file type <emph>SIP - StarView ImageMap</emph>. This saves the ImageMap directly in a format which can be applied to every active picture or frame in your document. However, if you just want to use the ImageMap on the current picture or text frame, you do not have to save it in any special format. After defining the regions, simply click <emph>Apply</emph>. Nothing more is necessary. Client Side ImageMaps saved in <link href="text/shared/00/00000002.xhp#html" name="HTML">HTML</link> format are inserted directly into the page in HTML code.</paragraph>
+</section>
+<section id="java">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159125"><bookmark_value>Java; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3159125" xml-lang="en-US" level="2" l10n="U" oldref="92">Java</paragraph>
+<paragraph role="paragraph" id="par_id3153188" xml-lang="en-US" l10n="CHG" oldref="93">The Java programming language is a platform independent programming language that is especially suited for use in the Internet. Web pages and applications programmed with Java class files can be used on all modern operating systems. Programs using Java programming language are usually developed in a Java development environment and then compiled to a "byte code".</paragraph>
+</section>
+<section id="plugin">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159153"><bookmark_value>plug-ins; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3159153" xml-lang="en-US" level="2" l10n="U" oldref="107">Plug-In</paragraph>
+<paragraph role="paragraph" id="par_id3154127" xml-lang="en-US" l10n="U" oldref="109">Extensions providing additional functionality in Web browsers are referred to as Plug-Ins.</paragraph>
+<paragraph role="paragraph" id="par_id3147484" xml-lang="en-US" l10n="U" oldref="108">A Plug-In is a term used in various contexts:</paragraph>
+<paragraph role="heading" id="hd_id3168608" xml-lang="en-US" level="3" l10n="U" oldref="172">Plug-Ins in $[officename]</paragraph>
+<paragraph role="paragraph" id="par_id3149910" xml-lang="en-US" l10n="CHG" oldref="111">You will notice in $[officename] that the <emph>Formatting</emph> Bar changes after certain operations. For example, if you insert a formula into your text document, you see icons for editing the formula, in fact the same icons you see in formula documents. In this sense, we refer to the formula as a plug-in within the text document.</paragraph>
+<paragraph role="heading" id="hd_id3148387" xml-lang="en-US" level="3" l10n="U" oldref="177">Using Plug-Ins to extend your programs</paragraph>
+<paragraph role="paragraph" id="par_id3156737" xml-lang="en-US" l10n="CHG" oldref="114">Plug-ins, generally speaking, are software additions to particular applications which provide enhanced functionality. Often import and export filters for various file formats are stored as plug-ins in a plug-in directory.</paragraph>
+<paragraph role="paragraph" id="par_id3149958" xml-lang="en-US" l10n="U" oldref="115">Netscape web browser extensions produced by Netscape Communication Corporation are also called plug-ins. These are external programs mainly taken from the multimedia field and which communicate with the browser through standardized interfaces. These plug-ins can be linked to $[officename] documents.</paragraph>
+<paragraph role="paragraph" id="par_id3149420" xml-lang="en-US" l10n="CHG" oldref="179">Any Netscape plug-ins (32 bit) installed on your system are automatically recognized by $[officename].<comment>removed path</comment></paragraph>
+</section>
+<section id="proxy">
+<paragraph role="heading" id="hd_id3145647" xml-lang="en-US" level="2" l10n="U" oldref="127">Proxy</paragraph>
+<paragraph role="paragraph" id="par_id3148455" xml-lang="en-US" l10n="U" oldref="128">A proxy is a computer in the network acting as a kind of clipboard for data transfer. Whenever you access the Internet from a company network and request a Web page that has already been read by a colleague, the proxy will be able to display the page much quicker, as long as it's still in the memory. All that has to be checked in this case is that the page stored in the proxy is the latest version. If this is the case, the page won't have to be downloaded from the much slower Internet but can be loaded directly from the proxy.</paragraph>
+</section>
+<section id="sgml">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154729"><bookmark_value>SGML; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154729" xml-lang="en-US" level="2" l10n="U" oldref="229">SGML</paragraph>
+<paragraph role="paragraph" id="par_id3147330" xml-lang="en-US" l10n="U" oldref="230">SGML stands for "Standard Generalized Markup Language". SGML is based on the idea that documents have structural and other semantic elements that can be described without reference to how such elements should be displayed. The actual display of such a document may vary, depending on the output medium and style preferences. In structured texts, SGML not only defines structures (in the DTD = Document Type Definition) but also ensures they are consistently used.</paragraph>
+<paragraph role="paragraph" id="par_id3148747" xml-lang="en-US" l10n="CHG" oldref="231"><link href="text/shared/00/00000002.xhp#html" name="HTML">HTML</link> is a specialized application of SGML. This means that most Web browsers support only a limited range of SGML standards and that almost all SGML-enabled systems can produce attractive HTML pages.</paragraph>
+</section>
+<section id="suchmaschine">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153950"><bookmark_value>search engines; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153950" xml-lang="en-US" level="2" l10n="U" oldref="138">Search Engines</paragraph>
+<paragraph role="paragraph" id="par_id3157965" xml-lang="en-US" l10n="U" oldref="139">A search engine is a service in the Internet based on a software program used to explore a vast amount of information using key words.</paragraph>
+</section>
+<section id="tags">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150751"><bookmark_value>tags; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150751" xml-lang="en-US" level="2" l10n="U" oldref="141">Tags</paragraph>
+<paragraph role="paragraph" id="par_id3156360" xml-lang="en-US" l10n="CHG" oldref="142"><link href="text/shared/00/00000002.xhp#html" name="HTML">HTML</link> pages contain certain structural and formatting instructions called tags. Tags are code words enclosed by brackets in the document description language HTML. Many tags contain text or hyperlink references between the opening and closing brackets. For example, titles are marked by the tags &lt;h1&gt; at the beginning and &lt;/h1&gt; at the end of the title. Some tags only appear on their own such as &lt;br&gt; for a line break or &lt;img ...&gt; to link a graphic.</paragraph>
+</section>
+<section id="url">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153766"><bookmark_value>URL; definition</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153766" xml-lang="en-US" level="2" l10n="U" oldref="145">URL</paragraph>
+<paragraph role="paragraph" id="par_id3152931" xml-lang="en-US" l10n="U" oldref="146">The Uniform Resource Locator (URL) displays the address of a document or a server in the Internet. The general structure of a URL varies according to type and is generally in the form Service://Hostname:Port/Path/Page#Mark although not all elements are always required. An URL can be a FTP address, a WWW (HTTP) address, a file address or an e-mail address.</paragraph>
+</section>
+</sort></body>
+</helpdocument>

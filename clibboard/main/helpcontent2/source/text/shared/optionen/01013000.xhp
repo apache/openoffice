@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01013000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Accessibility</title>
+<filename>/text/shared/optionen/01013000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="accessibility">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159411"><bookmark_value>disabled persons</bookmark_value>
+<bookmark_value>text colors for better accessibility</bookmark_value>
+<bookmark_value>animations; accessibility options</bookmark_value>
+<bookmark_value>Help tips; hiding</bookmark_value>
+<bookmark_value>high contrast mode</bookmark_value>
+<bookmark_value>accessibility; options</bookmark_value>
+<bookmark_value>options; accessibility</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3159411" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01013000.xhp" name="Accessibility">Accessibility</link></paragraph>
+<paragraph role="paragraph" id="par_id3149827" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Sets options that make <item type="productname">%PRODUCTNAME</item> programs more accessible for users with reduced sight, limited dexterity or other disabilities.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#accessibility"/>
+</section>
+<embed href="text/shared/guide/accessibility.xhp#accessibility"/>
+<paragraph role="heading" id="hd_id3166460" xml-lang="en-US" level="2" l10n="U" oldref="9">Miscellaneous options</paragraph>
+<paragraph role="paragraph" id="par_id3152996" xml-lang="en-US" l10n="U" oldref="10">Sets accessibility options.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_ACCESSIBILITY_TOOL" id="bm_id3153881" localize="false"/><paragraph role="heading" id="hd_id3154750" xml-lang="en-US" level="3" l10n="U" oldref="23"><switchinline select="sys"><caseinline select="UNIX">
+</caseinline><defaultinline>Support assistive technology tools (program restart required)</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3155628" xml-lang="en-US" l10n="U" oldref="24"><switchinline select="sys"><caseinline select="UNIX">
+</caseinline><defaultinline><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_ACCESSIBILITY_TOOL">Allows you to use assistive tools, such as external screen readers, Braille devices or speech recognition input devices. The Java Runtime Environment must be installed on your computer before you can enable assistive support.</ahelp></defaultinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_TEXTSELECTION" id="bm_id3155342" localize="false"/><paragraph role="heading" id="hd_id3154047" xml-lang="en-US" level="3" l10n="U" oldref="27">Use text selection cursor in read-only text document</paragraph>
+<paragraph role="paragraph" id="par_id3149164" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_TEXTSELECTION">Displays cursor in read-only documents.</ahelp></paragraph>
+<comment>
+issue 103084 <!-- removed HID SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_SYSTEM_FONT -->
+</comment>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_ANIMATED_GRAPHICS" id="bm_id3153627" localize="false"/><paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="3" l10n="U" oldref="15">Allow animated graphics</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_ANIMATED_GRAPHICS">Previews animated graphics, such as GIF images, in <item type="productname">%PRODUCTNAME</item>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_ANIMATED_TEXTS" id="bm_id3152812" localize="false"/><paragraph role="heading" id="hd_id3147264" xml-lang="en-US" level="3" l10n="U" oldref="17">Allow animated text</paragraph>
+<paragraph role="paragraph" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_ANIMATED_TEXTS">Previews animated text, such as blinking and scrolling, in <item type="productname">%PRODUCTNAME</item>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_TIPHELP" id="bm_id3151211" localize="false"/><paragraph role="heading" id="hd_id3153381" xml-lang="en-US" level="3" l10n="U" oldref="11">Help tips disappear after</paragraph>
+<paragraph role="paragraph" id="par_id3150868" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_TIPHELP">Hides the <link href="text/shared/main0108.xhp" name="Help tips">Help tips</link> after the number of seconds that you enter.</ahelp> Otherwise, Help tips are displayed until you press Escape or move the cursor.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_ACCESSIBILITYCONFIG:NF_TIPHELP" id="bm_id3147230" localize="false"/><paragraph role="heading" id="hd_id3151043" xml-lang="en-US" level="3" l10n="U" oldref="13">Seconds</paragraph>
+<paragraph role="paragraph" id="par_id3148672" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX_NUMERICFIELD_RID_SVXPAGE_ACCESSIBILITYCONFIG_NF_TIPHELP">Enter the number of seconds to display the Help tips.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149809" xml-lang="en-US" level="2" l10n="U" oldref="3">Options for high contrast appearance</paragraph>
+<paragraph role="paragraph" id="par_id3153106" xml-lang="en-US" l10n="U" oldref="4">High contrast is an operating system setting that changes the system color scheme to improve readability. You can decide how <item type="productname">%PRODUCTNAME</item> uses the high contrast settings of the operating system.</paragraph>
+<paragraph role="paragraph" id="par_id3125863" xml-lang="en-US" l10n="U" oldref="31">Cell borders and shadows are always shown in text color when high contrast mode is active. The cell background color is ignored then.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_AUTO_DETECT_HC" id="bm_id3159254" localize="false"/><paragraph role="heading" id="hd_id3155132" xml-lang="en-US" level="3" l10n="U" oldref="29">Automatically detect high contrast mode of operating system</paragraph>
+<paragraph role="paragraph" id="par_id3153768" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_AUTO_DETECT_HC">Switches <item type="productname">%PRODUCTNAME</item> into high contrast mode when the system background color is very dark.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_AUTOMATIC_FONT_COLOR" id="bm_id3153365" localize="false"/><paragraph role="heading" id="hd_id3154918" xml-lang="en-US" level="3" l10n="CHG" oldref="19">Use automatic font color for screen display</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_AUTOMATIC_FONT_COLOR">Displays fonts in <item type="productname">%PRODUCTNAME</item> using the system color settings. This option only affects the screen display.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ACCESSIBILITYCONFIG:CB_PAGE_PREVIEWS" id="bm_id3152941" localize="false"/><paragraph role="heading" id="hd_id3153091" xml-lang="en-US" level="3" l10n="U" oldref="7">Use system colors for page previews</paragraph>
+<paragraph role="paragraph" id="par_id3146923" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ACCESSIBILITYCONFIG_CB_PAGE_PREVIEWS">Applies the high contrast settings of the operating system to page previews.</ahelp></paragraph>
+</body>
+</helpdocument>

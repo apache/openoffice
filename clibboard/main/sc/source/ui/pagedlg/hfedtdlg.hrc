@@ -1,0 +1,60 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "sc.hrc"
+
+//#define RID_SCPAGE_HFEDIT 256
+//#define RID_SCDLG_HFEDIT 256
+
+#define FT_LEFT 1
+#define FT_CENTER 2
+#define FT_RIGHT 3
+#define FT_INFO 4
+#define WND_LEFT 1
+#define WND_CENTER 2
+#define WND_RIGHT 3
+#define BTN_TEXT 1
+#define BTN_PAGE 2
+#define BTN_PAGES 3
+#define BTN_DATE 4
+#define BTN_TIME 5
+#define BTN_FILE 6
+#define BTN_TABLE 7
+
+#define RID_POPUP_FCOMMAND		10
+#define FILE_COMMAND_TITEL		11
+#define FILE_COMMAND_FILENAME	12
+#define FILE_COMMAND_PATH		13
+
+#define FL_INFO                 14
+
+#define IMG_TEXT_H              21
+#define IMG_PAGE_H              22
+#define IMG_PAGES_H             23
+#define IMG_DATE_H              24
+#define IMG_TIME_H              25
+#define IMG_FILE_H              26
+#define IMG_TABLE_H             27
+#define FT_HF_DEFINED           28
+#define LB_DEFINED              29
+#define FT_HF_CUSTOM            30

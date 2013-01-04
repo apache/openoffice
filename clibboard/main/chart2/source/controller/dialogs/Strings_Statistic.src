@@ -1,0 +1,68 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include "Strings.hrc"
+
+//SchStatisticTabPage and SchDataStatisticsDlg
+String STR_INDICATE_BOTH
+{
+	Text [ en-US ] = "Negative and Positive" ;
+};
+String STR_INDICATE_DOWN
+{
+	Text [ en-US ] = "Negative" ;
+};
+String STR_INDICATE_UP
+{
+	Text [ en-US ] = "Positive" ;
+};
+
+// used for own data in error bar dialog
+String STR_CONTROLTEXT_ERROR_BARS_FROM_DATA
+{
+    Text [ en-US ] = "From Data Table" ;
+};
+
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+
+String STR_REGRESSION_LINEAR
+{
+	Text [ en-US ] = "Linear (%SERIESNAME)" ;
+};
+String STR_REGRESSION_LOG
+{
+	Text [ en-US ] = "Logarithmic (%SERIESNAME)" ;
+};
+String STR_REGRESSION_EXP
+{
+	Text [ en-US ] = "Exponential (%SERIESNAME)" ;
+};
+String STR_REGRESSION_POWER
+{
+	Text [ en-US ] = "Power (%SERIESNAME)" ;
+};
+
+String STR_REGRESSION_MEAN
+{
+	Text [ en-US ] = "Mean (%SERIESNAME)" ;
+};

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0105260300xml" indexer="include">
+<title id="tit" xml-lang="en-US">To Character</title>
+<filename>/text/shared/01/05260300.xhp</filename>
+</topic>
+</meta>
+<body>
+<switch select="appl">
+<case select="WRITER">
+<section id="amzeichen">
+<bookmark xml-lang="en-US" branch="hid/.uno:SetAnchorToChar" id="bm_id9823184" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SetAnchorAtChar" id="bm_id0801200803430844" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SetAnchorAtChar" id="bm_id0801200803430880" localize="false"/>
+<paragraph role="heading" id="hd_id3154044" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05260300.xhp" name="To Character">To Character</link></paragraph>
+<paragraph role="paragraph" id="par_id3147069" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Anchors the selected item to a character.</ahelp> This command is only available for graphic objects.</paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040501.xhp#amzeichen"/>
+</section>
+<paragraph role="paragraph" id="par_id3146067" xml-lang="en-US" l10n="U" oldref="3">The anchor is displayed in front of the character.</paragraph>
+<paragraph role="tip" id="par_id3152924" xml-lang="en-US" l10n="U" oldref="4">To align a graphic relative to the character that it is anchored to, right-click the graphic, and then choose <emph>Graphics</emph>. Click the <emph>Type </emph>tab, and in the <emph>Position </emph>area, select <emph>Character</emph> in the <emph>to</emph> boxes.</paragraph>
+</case>
+</switch>
+</body>
+</helpdocument>

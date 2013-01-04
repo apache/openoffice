@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0103090909xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Fonts and Font Sizes</title>
+<filename>/text/smath/01/03090909.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-06T11:44:30">FPE: Icon resource modified</lastedited>
+</history>
+</meta>
+<body>
+<section id="schrift">
+<bookmark xml-lang="en-US" branch="index" id="bm_id7562181"><bookmark_value>font sizes;example</bookmark_value>
+<bookmark_value>sum range example</bookmark_value>
+<bookmark_value>examples ;integral</bookmark_value>
+<bookmark_value>range of integral example</bookmark_value>
+<bookmark_value>integrals;example</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3155959" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><comment>UFI: as fix to #i23019#, tried to make Integral and Range more visible in the Help</comment><link href="text/smath/01/03090909.xhp" name="Fonts and Font Sizes">Integral and Sum Ranges, Font Size</link></paragraph>
+<paragraph role="paragraph" id="par_id3145791" xml-lang="en-US" l10n="U" oldref="2">Here is an example of how to use various fonts and font sizes within a formula in <emph>$[officename] Math</emph>.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3151243" xml-lang="en-US" l10n="E">
+<image id="img_id3148871" src="res/helpimg/smzb9.png" width="9.257cm" height="3.196cm"><alt id="alt_id3148871" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<paragraph role="code" id="par_id3150052" xml-lang="en-US" l10n="U" oldref="4" localize="false">f(t)=int from size*1.5 0 to 1 left[g(t')+sum from i=1 to N h_i(t')right]</paragraph>
+</body>
+</helpdocument>

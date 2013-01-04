@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsimpressguideline_arrow_stylesxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Loading Line and Arrow Styles</title>
+         <filename>/text/simpress/guide/line_arrow_styles.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145253"><bookmark_value>line styles;loading</bookmark_value>
+      <bookmark_value>lines;about line ends</bookmark_value>
+      <bookmark_value>arrows;loading arrow styles</bookmark_value>
+      <bookmark_value>styles;arrow and line styles</bookmark_value>
+      <bookmark_value>loading;arrow and line styles</bookmark_value>
+</bookmark><comment>mw changed "line ends;" to "lines;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3145253" role="heading" level="1" l10n="U"
+                 oldref="48"><variable id="line_arrow_styles"><link href="text/simpress/guide/line_arrow_styles.xhp" name="Loading Line and Arrow Styles">Loading Line and Arrow Styles</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154017" role="paragraph" l10n="CHG" oldref="49">You can use styles to organize similar line and arrow types. $[officename] provides a few standard style files that you can load and use in your document. If you want, you can add or delete elements from a style file, or even create a custom style file.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154485" role="heading" level="2" l10n="U"
+                 oldref="50">To load a line styles file:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156382" role="listitem" l10n="CHG" oldref="58">Choose <emph>Format - Line</emph>, and then click the <emph>Line Styles</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154705" role="listitem" l10n="U" oldref="51">Click the <emph>Load Line Styles</emph> button.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145588" role="listitem" l10n="U" oldref="52">Locate the file containing the line styles that you want to load, and then click <emph>OK</emph>. The file has the format [filename].sod.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3151240" role="paragraph" l10n="U" oldref="53">To save a line styles file, click the <emph>Save Line Styles</emph> button, enter a filename, and then click <emph>OK</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154765" role="heading" level="2" l10n="U"
+                 oldref="54">To load an arrow styles file:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153070" role="listitem" l10n="CHG" oldref="59">Choose <emph>Format - Line</emph>, and then click the <emph>Arrow Styles</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149054" role="listitem" l10n="U" oldref="55">Click the <emph>Load Arrow Styles</emph> button.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150391" role="listitem" l10n="CHG" oldref="56">Locate the file containing the arrow styles that you want to load, and then click <emph>OK</emph>. The file has the format [filename].soe.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3166465" role="paragraph" l10n="CHG" oldref="57">To save an arrow styles file, click the <emph>Save Arrow Styles</emph> button, enter a filename, and then click <emph>OK</emph>.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <paragraph xml-lang="en-US" id="par_id3145822" role="paragraph" l10n="CHG"><link href="text/shared/01/05200000.xhp" name="Format - Line">Format - Line</link></paragraph>
+      <embed href="text/simpress/guide/palette_files.xhp#palette_files"/>
+   </body>
+</helpdocument>

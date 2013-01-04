@@ -1,0 +1,76 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_util_XCloseBroadcaster_idl__
+#define __com_sun_star_util_XCloseBroadcaster_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_util_XCloseListener_idl__
+#include <com/sun/star/util/XCloseListener.idl>
+#endif
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module util {
+
+//=============================================================================
+/** broadcasts each tried closing of an object to all interest listener
+
+    <p>
+    The called object for closing must post the closing events immediately
+    and before any internal cancel operations will be started.
+    If a listener disagree with that it should throw a <type>CloseVetoException</type>
+    and called function <method>XCloseable::close</method> must be breaked immediately.
+    It's not allowed to catch it inside the close() request.
+    If no listener nor internal processes hinder the object on closing
+    all listener get's a notification about real closing.
+    </p>
+
+    @see
+ */
+published interface XCloseBroadcaster: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+    /** adds the specified listener to receive or have a veto for "close" events
+
+        @param Listener
+            the listener wich is interest on closing events
+	 */
+    [oneway] void addCloseListener( [in] XCloseListener Listener );
+
+	//-------------------------------------------------------------------------
+    /** removes the specified listener
+
+        @param Listener
+            the listener wich isn't interest on closing events anylonger
+	 */
+    [oneway] void removeCloseListener( [in] XCloseListener Listener );
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

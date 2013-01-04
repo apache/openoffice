@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0106020000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Hyphenation</title>
+<filename>/text/scalc/01/06020000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159399"><bookmark_value>automatic hyphenation in spreadsheets</bookmark_value>
+<bookmark_value>hyphenation; in spreadsheets</bookmark_value>
+<bookmark_value>syllables in spreadsheets</bookmark_value>
+</bookmark><comment>mw made "hyphenation..." a two level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:Hyphenate" id="bm_id7241058" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Hyphenate" id="bm_id3153541" localize="false"/>
+<paragraph role="heading" id="hd_id3159399" xml-lang="en-US" level="1" l10n="U" oldref="1">Hyphenation</paragraph>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="2"><variable id="silben"><ahelp hid=".uno:Hyphenate">The <emph>Hyphenation </emph>command calls the dialog for setting the hyphenation in $[officename] Calc.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+<embed href="text/scalc/00/00000406.xhp#silbentrennungc"/>
+</section>
+<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="3">You can only turn on the automatic hyphenation in $[officename] Calc when the <link href="text/shared/01/05340300.xhp" name="row break">row break</link> feature is active.</paragraph>
+<paragraph role="heading" id="hd_id3153192" xml-lang="en-US" level="2" l10n="U" oldref="4">Hyphenation for selected cells.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150868" xml-lang="en-US" l10n="U" oldref="5">Select the cells for which you want to change the hyphenation.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150440" xml-lang="en-US" l10n="CHG" oldref="6">Choose <emph>Tools - Language - Hyphenation</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156441" xml-lang="en-US" l10n="U" oldref="7">The <emph>Format Cells</emph> dialog appears with the <emph>Alignment</emph> tab page open.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149260" xml-lang="en-US" l10n="CHG" oldref="12">Mark the <emph>Wrap text automatically</emph> and <emph>Hyphenation active</emph> check boxes.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3153094" xml-lang="en-US" level="2" l10n="U" oldref="8">Hyphenation for Drawing Objects</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3148577" xml-lang="en-US" l10n="U" oldref="9">Select a drawing object.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156285" xml-lang="en-US" l10n="CHG" oldref="10">Choose <emph>Tools - Language - Hyphenation</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147394" xml-lang="en-US" l10n="U" oldref="11">Each time you call the command you turn the hyphenation for the drawing object on or off. A check mark shows the current status.</paragraph>
+</listitem>
+</list>
+</body>
+</helpdocument>

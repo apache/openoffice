@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguidemark_cellsxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Selecting Multiple Cells</title>
+         <filename>/text/scalc/guide/mark_cells.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153361"><bookmark_value>cells; selecting</bookmark_value>
+      <bookmark_value>marking cells</bookmark_value>
+      <bookmark_value>selecting;cells</bookmark_value>
+      <bookmark_value>multiple cells selection</bookmark_value>
+      <bookmark_value>selection modes in spreadsheets</bookmark_value>
+      <bookmark_value>tables; selecting ranges</bookmark_value>
+</bookmark><comment>mw changed "selection modes..."</comment>
+<paragraph xml-lang="en-US" id="hd_id3153361" role="heading" level="1" l10n="U" oldref="1"><variable id="mark_cells"><link href="text/scalc/guide/mark_cells.xhp" name="Selecting Multiple Cells">Selecting Multiple Cells</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3145272" role="heading" level="2" l10n="U" oldref="2">Select a rectangular range</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149261" role="paragraph" l10n="U" oldref="3">With the mouse button pressed, drag from one corner to the diagonally opposed corner of the range.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3151119" role="heading" level="2" l10n="U" oldref="4">Mark a single cell</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146975" role="paragraph" l10n="U" oldref="19">Do one of the following:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3163710" role="listitem" l10n="U" oldref="20">Click, then Shift-click the cell.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149959" role="listitem" l10n="CHG" oldref="5">Pressing the mouse button, drag a range across two cells, do not release the mouse button, and then drag back to the first cell. Release the mouse button. You can now move the individual cell by drag and drop.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3154942" role="heading" level="2" l10n="U" oldref="6">Select various dispersed cells</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1001200901072060" role="paragraph" l10n="NEW">Do one of the following:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156284" role="paragraph" l10n="U" oldref="7">Mark at least one cell. Then while pressing <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>, click each of the additional cells.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1001200901072023" role="paragraph" l10n="NEW">Click the STD / EXT / ADD area in the status bar until it shows ADD. Now click all cells that you want to select.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3146971" role="heading" level="2" l10n="U" oldref="8">Switch marking mode</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155064" role="paragraph" l10n="U" oldref="9">On the status bar, click the box with the legend STD / EXT / ADD to switch the marking mode:</paragraph>
+      <table id="tbl_id3145643">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159264" role="paragraph" l10n="U" oldref="10">Field contents</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155337" role="paragraph" l10n="U" oldref="11">Effect of clicking the mouse</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="U" oldref="12">STD</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148486" role="paragraph" l10n="U" oldref="13">A mouse click selects the cell you have clicked on. Unmarks all marked cells.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150090" role="paragraph" l10n="U" oldref="14">EXT</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150305" role="paragraph" l10n="CHG" oldref="15">A mouse click marks a rectangular range from the current cell to the cell you clicked. Alternatively, Shift-click a cell.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145587" role="paragraph" l10n="U" oldref="16">ADD</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154368" role="paragraph" l10n="U" oldref="17">A mouse click in a cell adds it to the already marked cells. A mouse click in a marked cell unmarks it. Alternatively, <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>-click the cells.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id3154487" role="paragraph" l10n="U" oldref="18"><link href="text/scalc/main0208.xhp" name="Status bar">Status bar</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

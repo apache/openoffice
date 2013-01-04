@@ -1,0 +1,98 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_linguistic2_XPossibleHyphens_idl__
+#define __com_sun_star_linguistic2_XPossibleHyphens_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_lang_Locale_idl__
+#include <com/sun/star/lang/Locale.idl>
+#endif
+
+
+//=============================================================================
+
+module com { module sun { module star { module linguistic2 {
+
+//=============================================================================
+/** Gives information about a word's possible hyphenation points.
+
+ 	<P>Example: In German pre-spelling-reform you may have the following:
+ 	getWord:					Dampfschiffahrt
+ 	getPossibleHyphens:			Dampf=schiff=fahrt
+ 	getOrigHyphensPositions:	4, 9
+ 	That is "Dampfschiffahrt" can be hyphenated after the "pf" (4) and
+ 	between the double "ff" (9). And if you are going to hyphenate it at
+ 	position 9 you will get an additional "f" before the hyphen
+ 	character.</P>
+
+    @see    <type scope="com::sun::star::linguistic2">XHyphenator</type>
+*/
+published interface XPossibleHyphens : com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/**
+	 	@returns
+	 		the word for which the information of possible hyphenation
+	 		points was obtained.
+	*/
+	string getWord();
+
+	//-------------------------------------------------------------------------
+	/** @returns
+			the language of the hyphenated word.
+
+        @see    <type scope="com::sun::star::lang">Locale</type>
+	*/
+	com::sun::star::lang::Locale getLocale();
+
+	//-------------------------------------------------------------------------
+	/**
+	 	@returns
+	 		a string depicting the word with all hyphen positions
+	 		which are represented by '=' characters.
+	 		If there are any alternative spellings, the word will be altered
+	 		accordingly.
+	*/
+	string getPossibleHyphens();
+
+	//-------------------------------------------------------------------------
+	/**
+	 	@returns
+	 		an ascending sequence of numbers where each number is an offset
+	 		within the original word which denotes a hyphenation
+	 		position corresponding to one of the hyphens in the
+            string returned by 
+            <member scope="com::sun::star::linguistic2">XPossibleHyphens::getPossibleHyphens</member>.
+	*/
+	sequence<short> getHyphenationPositions();
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

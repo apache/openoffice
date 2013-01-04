@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03080801xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Hex Function [Runtime]</title>
+<filename>/text/sbasic/shared/03080801.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T12:46:16">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="hex">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150616"><bookmark_value>Hex function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150616" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080801.xhp" name="Hex Function [Runtime]">Hex Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U" oldref="2">Returns a string that represents the hexadecimal value of a number.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U" oldref="4">Hex (Number)</paragraph>
+<paragraph role="heading" id="hd_id3147530" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
+<paragraph role="heading" id="hd_id3156344" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Number:</emph> Any numeric expression that you want to convert to a hexadecimal number.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3145420" xml-lang="en-US" l10n="U" oldref="29">Sub ExampleHex</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="30">REM uses BasicFormulas in $[officename] Calc</paragraph>
+<paragraph role="paragraph" id="par_id3153970" xml-lang="en-US" l10n="U" oldref="31">Dim a2, b2, c2 as String</paragraph>
+<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="U" oldref="32">a2 = "&amp;H3E8"</paragraph>
+<paragraph role="paragraph" id="par_id3148674" xml-lang="en-US" l10n="U" oldref="33">b2 = Hex2Int(a2)</paragraph>
+<paragraph role="paragraph" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="34">MsgBox b2</paragraph>
+<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U" oldref="35">c2 = Int2Hex(b2)</paragraph>
+<paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="36">MsgBox c2</paragraph>
+<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U" oldref="37">End Sub</paragraph>
+<paragraph role="paragraph" id="par_id3148645" xml-lang="en-US" l10n="U" oldref="19">Function Hex2Int( sHex As String ) As Long</paragraph>
+<paragraph role="paragraph" id="par_id3149262" xml-lang="en-US" l10n="U" oldref="20">REM Returns a Long-Integer from a hexadecimal value.</paragraph>
+<paragraph role="paragraph" id="par_id3148616" xml-lang="en-US" l10n="U" oldref="21">Hex2Int = clng( sHex )</paragraph>
+<paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U" oldref="22">End Function</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="24">Function Int2Hex( iLong As Long) As String</paragraph>
+<paragraph role="paragraph" id="par_id3147215" xml-lang="en-US" l10n="U" oldref="25">REM Calculates a hexadecimal value in Integer.</paragraph>
+<paragraph role="paragraph" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="26">Int2Hex = "&amp;H" &amp; Hex( iLong )</paragraph>
+<paragraph role="paragraph" id="par_id3151073" xml-lang="en-US" l10n="U" oldref="27">End Function</paragraph>
+</body>
+</helpdocument>

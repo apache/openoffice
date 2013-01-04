@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105060100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Type</title>
+<filename>/text/swriter/01/05060100.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="typ">
+<bookmark xml-lang="en-US" branch="index" id="bm_id9646290"><bookmark_value>resizing;aspect ratio</bookmark_value>
+<bookmark_value>aspect ratio;resizing objects</bookmark_value>
+</bookmark><comment>UFI: new index entries, see i54237</comment>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_FRM_STD" id="bm_id3147406" localize="false"/>
+<paragraph role="heading" id="hd_id3151389" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05060100.xhp" name="Type">Type</link></paragraph>
+<paragraph role="paragraph" id="par_id3150568" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_FRM_STD">Specifies the size and the position of the selected object or frame on a page.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#grafiktyp"/>
+</section>
+<paragraph role="heading" id="hd_id3147168" xml-lang="en-US" level="2" l10n="U" oldref="3">Size</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FRM_STD:ED_WIDTH" id="bm_id3150761" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SWPOSSIZE:MF_WIDTH" id="bm_id9134495" localize="false"/>
+<paragraph role="heading" id="hd_id3147567" xml-lang="en-US" level="3" l10n="U" oldref="5">Width</paragraph>
+<paragraph role="paragraph" id="par_id3151180" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SW:METRICFIELD:TP_FRM_STD:ED_WIDTH">Enter the width that you want for the selected object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_STD:CB_REL_WIDTH" id="bm_id3151177" localize="false"/>
+<paragraph role="heading" id="hd_id3154646" xml-lang="en-US" level="3" l10n="U" oldref="7">Relative</paragraph>
+<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="CHG" oldref="8"><ahelp hid="SW:CHECKBOX:TP_FRM_STD:CB_REL_WIDTH">Calculates the width of the selected object as a percentage of the width of the page text area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FRM_STD:ED_HEIGHT" id="bm_id3152948" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SWPOSSIZE:MF_HEIGHT" id="bm_id9007232" localize="false"/>
+<paragraph role="heading" id="hd_id3147516" xml-lang="en-US" level="3" l10n="U" oldref="9">Height</paragraph>
+<paragraph role="paragraph" id="par_id3154099" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SW:METRICFIELD:TP_FRM_STD:ED_HEIGHT">Enter the height that you want for the selected object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_STD:CB_REL_HEIGHT" id="bm_id3153535" localize="false"/>
+<paragraph role="heading" id="hd_id3149809" xml-lang="en-US" level="3" l10n="U" oldref="11">Relative</paragraph>
+<paragraph role="paragraph" id="par_id3154563" xml-lang="en-US" l10n="CHG" oldref="12"><ahelp hid="SW:CHECKBOX:TP_FRM_STD:CB_REL_HEIGHT">Calculates the height of the selected object as a percentage of the height of the page text area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_STD:CB_FIXEDRATIO" id="bm_id3153668" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_SWPOSSIZE:CB_KEEPRATIO" id="bm_id7496566" localize="false"/>
+<paragraph role="heading" id="hd_id3151313" xml-lang="en-US" level="3" l10n="U" oldref="13">Keep ratio</paragraph>
+<paragraph role="paragraph" id="par_id3153675" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SW:CHECKBOX:TP_FRM_STD:CB_FIXEDRATIO">Maintains the height and width ratio when you change the width or the height setting.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_FRM_STD:BT_REALSIZE" id="bm_id3154482" localize="false"/>
+<paragraph role="heading" id="hd_id3154470" xml-lang="en-US" level="3" l10n="U" oldref="41">Original Size</paragraph>
+<paragraph role="paragraph" id="par_id3155898" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SW:PUSHBUTTON:TP_FRM_STD:BT_REALSIZE">Resets the size settings of the selected object to the original values.</ahelp></paragraph>
+<paragraph role="note" id="par_id3149102" xml-lang="en-US" l10n="U" oldref="44">This option is not available for frames.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_STD:CB_AUTOHEIGHT" id="bm_id3151255" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_STD:CB_AUTOWIDTH" id="bm_id358592" localize="false"/>
+<paragraph role="heading" id="hd_id3149824" xml-lang="en-US" level="3" l10n="CHG" oldref="15">Automatic</paragraph>
+<paragraph role="paragraph" id="par_id3151262" xml-lang="en-US" l10n="CHG" oldref="16"><ahelp hid="SW:CHECKBOX:TP_FRM_STD:CB_AUTOHEIGHT">Automatically adjusts the width or height of a frame to match the contents of the frame. If you want, you can specify a minimum width or minimum height for the frame.</ahelp></paragraph>
+<paragraph role="note" id="par_id3152773" xml-lang="en-US" l10n="CHG" oldref="43">The <emph>Automatic</emph> option is only available when you select a frame.</paragraph>
+<paragraph role="heading" id="hd_id3155144" xml-lang="en-US" level="2" l10n="U" oldref="17">Anchor</paragraph>
+<paragraph role="paragraph" id="par_id3153352" xml-lang="en-US" l10n="CHG" oldref="18">Specify the anchoring options for the selected object or frame. The anchor options are not available when you open the dialog from the Styles and Formatting window.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FRM_STD:RB_ANCHOR_PAGE" id="bm_id3156280" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_SWPOSSIZE:RB_TOPAGE" id="bm_id8638874" localize="false"/>
+<paragraph role="heading" id="hd_id3156269" xml-lang="en-US" level="3" l10n="U" oldref="45">To page</paragraph>
+<paragraph role="paragraph" id="par_id3149169" xml-lang="en-US" l10n="U" oldref="46"><ahelp hid="SW_RADIOBUTTON_TP_FRM_STD_RB_ANCHOR_PAGE">Anchors the selection to the current page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FRM_STD:RB_ANCHOR_PARA" id="bm_id3145771" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_SWPOSSIZE:RB_TOPARA" id="bm_id5567796" localize="false"/>
+<paragraph role="heading" id="hd_id3151028" xml-lang="en-US" level="3" l10n="U" oldref="60">To paragraph</paragraph>
+<paragraph role="paragraph" id="par_id3145777" xml-lang="en-US" l10n="U" oldref="61"><ahelp hid="SW_RADIOBUTTON_TP_FRM_STD_RB_ANCHOR_PARA">Anchors the selection to the current paragraph.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FRM_STD:RB_ANCHOR_AT_CHAR" id="bm_id3151370" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_SWPOSSIZE:RB_TOCHAR" id="bm_id89419" localize="false"/>
+<paragraph role="heading" id="hd_id3155913" xml-lang="en-US" level="3" l10n="U" oldref="62">To character</paragraph>
+<paragraph role="paragraph" id="par_id3151377" xml-lang="en-US" l10n="U" oldref="63"><ahelp hid="SW_RADIOBUTTON_TP_FRM_STD_RB_ANCHOR_AT_CHAR">Anchors the selection to a character.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_FRM_STD:RB_ANCHOR_AS_CHAR" id="bm_id3155856" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_SWPOSSIZE:RB_ASCHAR" id="bm_id2176274" localize="false"/>
+<paragraph role="heading" id="hd_id3150115" xml-lang="en-US" level="3" l10n="U" oldref="47">As character</paragraph>
+<paragraph role="paragraph" id="par_id3155863" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SW_RADIOBUTTON_TP_FRM_STD_RB_ANCHOR_AS_CHAR">Anchors the selection as character. The height of the current line is resized to match the height of the selection.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150693" xml-lang="en-US" level="2" l10n="U" oldref="25">Position</paragraph>
+<paragraph role="paragraph" id="par_id3147413" xml-lang="en-US" l10n="U" oldref="26">Specify the location of the selected object on the current page.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FRM_STD:DLB_HORIZONTAL" id="bm_id3147500" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_SWPOSSIZE:LB_HORI" id="bm_id2376781" localize="false"/>
+<paragraph role="heading" id="hd_id3147488" xml-lang="en-US" level="3" l10n="U" oldref="27">Horizontal</paragraph>
+<paragraph role="paragraph" id="par_id3145121" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SW:LISTBOX:TP_FRM_STD:DLB_HORIZONTAL">Select the horizontal alignment option for the object.</ahelp> This option is not available if you chose "anchor as character".</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FRM_STD:ED_AT_HORZ_POS" id="bm_id3149565" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SWPOSSIZE:MF_HORIBY" id="bm_id8156682" localize="false"/>
+<paragraph role="heading" id="hd_id3149554" xml-lang="en-US" level="3" l10n="U" oldref="29">by</paragraph>
+<paragraph role="paragraph" id="par_id3145258" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SW:METRICFIELD:TP_FRM_STD:ED_AT_HORZ_POS">Enter the amount of space to leave between the left edge of the selected object and the reference point that you select in the <emph>To</emph> box.</ahelp> This option is only available if you select "From Left" in the <emph>Horizontal</emph> box.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FRM_STD:LB_HORI_RELATION" id="bm_id3150556" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_SWPOSSIZE:LB_HORITO" id="bm_id3423566" localize="false"/>
+<paragraph role="heading" id="hd_id3150545" xml-lang="en-US" level="3" l10n="U" oldref="48">to</paragraph>
+<paragraph role="paragraph" id="par_id3149213" xml-lang="en-US" l10n="U" oldref="49"><ahelp hid="SW:LISTBOX:TP_FRM_STD:LB_HORI_RELATION">Select the reference point for the selected horizontal alignment option.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149230" xml-lang="en-US" l10n="U" oldref="51">You can see the result of the alignments options that you select in the Preview box.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_STD:CB_MIRROR" id="bm_id3146331" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_SWPOSSIZE:CB_HORIMIRROR" id="bm_id1756950" localize="false"/>
+<paragraph role="heading" id="hd_id3147746" xml-lang="en-US" level="3" l10n="U" oldref="52">Mirror on even pages</paragraph>
+<paragraph role="paragraph" id="par_id3146337" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="SW:CHECKBOX:TP_FRM_STD:CB_MIRROR">Reverses the current horizontal alignment settings on even pages.</ahelp></paragraph>
+<paragraph role="tip" id="par_id3148446" xml-lang="en-US" l10n="U" oldref="54">You can also use the <link href="text/swriter/01/05060300.xhp" name="Graphics"><emph>Graphics</emph></link> flip options to adjust the layout of objects on even and odd pages.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FRM_STD:DLB_VERTICAL" id="bm_id3145321" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_SWPOSSIZE:LB_VERT" id="bm_id7322305" localize="false"/>
+<paragraph role="heading" id="hd_id3145310" xml-lang="en-US" level="3" l10n="U" oldref="31">Vertical</paragraph>
+<paragraph role="paragraph" id="par_id3150161" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SW:LISTBOX:TP_FRM_STD:DLB_VERTICAL">Select the vertical alignment option for the object.</ahelp></paragraph>
+<paragraph role="note" id="par_id3150463" xml-lang="en-US" l10n="U" oldref="59">If you anchor an object to a frame with a fixed height, only the "Bottom" and "Center" alignment options are available.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_FRM_STD:ED_AT_VERT_POS" id="bm_id3156123" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SWPOSSIZE:MF_VERTBY" id="bm_id8157292" localize="false"/>
+<paragraph role="heading" id="hd_id3154724" xml-lang="en-US" level="3" l10n="U" oldref="33">by</paragraph>
+<paragraph role="paragraph" id="par_id3156130" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SW:METRICFIELD:TP_FRM_STD:ED_AT_VERT_POS">Enter the amount of space to leave between the top edge of the selected object and the reference point that you select in the <emph>To</emph> box.</ahelp> This option is only available if you select "From Top" or "From Bottom" (as character) in the <emph>Vertical</emph> box. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FRM_STD:LB_VERT_RELATION" id="bm_id3150923" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_SWPOSSIZE:LB_VERTTO" id="bm_id1466719" localize="false"/>
+<paragraph role="heading" id="hd_id3150912" xml-lang="en-US" level="3" l10n="U" oldref="56">to</paragraph>
+<paragraph role="paragraph" id="par_id3155075" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="SW:LISTBOX:TP_FRM_STD:LB_VERT_RELATION">Select the reference point for the selected vertical alignment option.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_STD:CB_FOLLOWTEXTFLOW" id="bm_id611285" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_SWPOSSIZE:CB_FOLLOW" id="bm_id4516434" localize="false"/>
+<paragraph role="heading" id="par_idN10A8E" xml-lang="en-US" level="3" l10n="NEW">Follow text flow</paragraph>
+<paragraph role="paragraph" id="par_idN10A92" xml-lang="en-US" l10n="NEW"><ahelp hid="sw:CheckBox:TP_FRM_STD:CB_FOLLOWTEXTFLOW">Keeps the selected object within the layout boundaries of the text that the object is anchored to. To place the selected object anywhere in your document, do not select this option.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN10AA6" xml-lang="en-US" l10n="NEW">By default, the <emph>Follow text flow</emph> option is selected when you open a document that was created in a version of %PRODUCTNAME older than %PRODUCTNAME %PRODUCTVERSION. However, this option is not selected when you create a document or when you open a document in Microsoft Word format (*.doc).</paragraph>
+<embed href="text/shared/00/00000001.xhp#vorschau"/>
+<paragraph role="paragraph" id="par_id3149241" xml-lang="en-US" l10n="U" oldref="58">The green rectangle represents the selected object and the red rectangle represents the alignment reference point. If you anchor the object as a character, the reference rectangle changes to a red line.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<paragraph role="paragraph" id="par_id3146949" xml-lang="en-US" l10n="U" oldref="66"><link href="text/shared/01/05260000.xhp" name="Format - Anchor"><emph>Format - Anchor</emph></link></paragraph>
+<paragraph role="paragraph" id="par_id3153231" xml-lang="en-US" l10n="U" oldref="67"><link href="text/shared/01/05070000.xhp" name="Format - Alignment"><emph>Format - Alignment</emph></link></paragraph>
+</body>
+</helpdocument>

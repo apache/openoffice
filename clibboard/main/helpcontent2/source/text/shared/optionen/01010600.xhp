@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+
+<meta>
+      <topic id="textsharedoptionen01010600xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">General</title>
+         <filename>/text/shared/optionen/01010600.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155450"><bookmark_value>opening; dialog settings</bookmark_value>
+      <bookmark_value>saving; dialog settings</bookmark_value>
+      <bookmark_value>years; 2-digit options</bookmark_value>
+      <bookmark_value>Help Agent;options</bookmark_value>
+      <bookmark_value>Help;style sheets</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="par_id3155450" role="paragraph" l10n="E" oldref="42"
+                 localize="false"/>
+      <section id="allg">
+         <paragraph xml-lang="en-US" id="hd_id3154514" role="heading" level="1" l10n="U" oldref="8"><link href="text/shared/optionen/01010600.xhp" name="General">General</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150085" role="paragraph" l10n="U" oldref="9"><ahelp hid=".">Specifies the general settings for $[officename].</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#allg"/>
+      </section>
+<!-- removed HID OFFMGR:NUMERICFIELD:OFA_TP_MISC:NF_YEARVALUE -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:OFA_TP_MISC:NF_YEARVALUE" id="bm_id6075624" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153561" role="heading" level="2" l10n="U" oldref="5">Year (two digits)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147530" role="paragraph" l10n="U" oldref="6"><ahelp hid="OFFMGR:NUMERICFIELD:OFA_TP_MISC:NF_YEARVALUE">Defines a date range, within which the system recognizes a two-digit year.</ahelp></paragraph>
+      <section id="jahreszahlen">
+         <paragraph xml-lang="en-US" id="par_id3156343" role="paragraph" l10n="U" oldref="7">In $[officename], years are indicated by four digits, so that the difference between 1/1/99 and 1/1/01 is two years. This <emph>Year (two digits)</emph> setting allows the user to define the years in which two-digit dates are added to 2000. To illustrate, if you specify a date of 1/1/30 or later, the entry "1/1/20" is recognized as 1/1/2020 instead of 1/1/1920.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3148664" role="heading" level="2" l10n="CHG"
+                 oldref="25">Help</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153525" role="paragraph" l10n="CHG" oldref="38">Specifies the behavior of the installed help.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_MISC:CB_TOOLTIP" id="bm_id3539841" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN106DB" role="heading" level="3" l10n="NEW">Tips</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106DF" role="paragraph" l10n="CHG"><ahelp hid=".">Displays the icon names and more bubble help information, for example, chapter names when you scroll through a document with chapters.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_MISC:CB_EXTHELP" id="bm_id1425519" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN106F6" role="heading" level="3" l10n="NEW">Extended tips</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106FA" role="paragraph" l10n="NEW"><ahelp hid=".">Displays a help text when you rest the cursor on an icon, a menu command, or a control on a dialog.</ahelp></paragraph>
+<!-- removed HID OFFMGR_CHECKBOX_OFA_TP_MISC_CB_HELPAGENT -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_MISC:CB_HELPAGENT" id="bm_id1998657" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154138" role="heading" level="3" l10n="CHG"
+                 oldref="26">Help Agent</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145174" role="paragraph" l10n="CHG" oldref="27"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_MISC_CB_HELPAGENT">Specifies that the Help Agent will be displayed automatically in selected situations. Click the Help Agent window to see a Help page with information about the current context.</ahelp></paragraph>
+<!-- removed HID OFFMGR_PUSHBUTTON_OFA_TP_MISC_PB_HELPAGENT_RESET -->
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:OFA_TP_MISC:PB_HELPAGENT_RESET" id="bm_id7073885" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153968" role="heading" level="3" l10n="CHG"
+                 oldref="30">Reset Help Agent</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151176" role="paragraph" l10n="U" oldref="31">If you have not opened the Help Agent for a particular situation three times in succession, but rather have closed it or let it close automatically, the Help Agent for this situation is not shown again.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159150" role="paragraph" l10n="CHG" oldref="32"><ahelp hid="OFFMGR_PUSHBUTTON_OFA_TP_MISC_PB_HELPAGENT_RESET">Click <emph>Reset Help Agent </emph>to restore the default list of situations for which the Help Agent is displayed.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3159252" role="heading" level="2" l10n="U"
+                 oldref="43">$[officename] Help formatting</paragraph>
+<!-- removed HID OFFMGR_LISTBOX_OFA_TP_MISC_LB_STYLESHEET -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_MISC:LB_HELPFORMAT" id="bm_id6819971" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150011" role="heading" level="3" l10n="U"
+                 oldref="44">Style sheet</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153366" role="paragraph" l10n="U" oldref="45"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_MISC_LB_STYLESHEET">Choose the style of $[officename] Help.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3152577" role="heading" level="2" l10n="CHG"
+                 oldref="34">Open/Save dialogs<comment>UFI: see spec doc "Gnome file selector"</comment></paragraph>
+<!-- removed HID OFFMGR_CHECKBOX_OFA_TP_MISC_CB_FILEDLG -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_MISC:CB_FILEDLG" id="bm_id7715994" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145366" role="heading" level="3" l10n="CHG"
+                 oldref="35">Use $[officename] dialogs</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149260" role="paragraph" l10n="CHG" oldref="36"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_MISC_CB_FILEDLG">Specifies whether $[officename] dialogs are used to open and save documents. Otherwise the dialogs of the operating system are used.</ahelp></paragraph>
+<switch select="sys">
+<case select="WIN">
+<paragraph xml-lang="en-US" id="par_idN10856" role="warning" l10n="NEW">When you open a file by an URL from the Windows file dialog, Windows will open a local copy of the file, located in the Internet Explorer cache. The %PRODUCTNAME file dialog opens the remote file.</paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="par_id3153138" role="paragraph" l10n="CHG" oldref="37">The $[officename] dialogs for <link href="text/shared/01/01020000.xhp" name="opening">opening</link> and <link href="text/shared/01/01070000.xhp" name="saving">saving</link> documents are described in $[officename] Help. </paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3148617" role="heading" level="2" l10n="U"
+                 oldref="39">Document status</paragraph>
+<!-- removed HID OFFMGR_CHECKBOX_OFA_TP_MISC_CB_DOCSTATUS -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_MISC:CB_DOCSTATUS" id="bm_id3986632" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149299" role="heading" level="3" l10n="U"
+                 oldref="40">Printing sets "document modified" status</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145800" role="paragraph" l10n="U" oldref="41"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_MISC_CB_DOCSTATUS">Specifies whether the printing of the document counts as a modification.</ahelp> When this option is marked, the very next time the document is closed you are asked if the changes should be saved. The print date is then entered in the document properties as a change.</paragraph>
+   </body>
+</helpdocument>

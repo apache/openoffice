@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedragdropxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Dragging and Dropping Within a $[officename] Document</title>
+<filename>/text/shared/guide/dragdrop.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-09-13T14:24:50">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154927"><bookmark_value>drag and drop;overview</bookmark_value>
+<bookmark_value>mouse; pointers when using drag and drop</bookmark_value>
+<bookmark_value>links;by drag and drop</bookmark_value>
+<bookmark_value>copying;by drag and drop</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3154927" xml-lang="en-US" l10n="E" oldref="10" localize="false"/>
+<paragraph role="heading" id="hd_id3147571" xml-lang="en-US" level="1" l10n="U" oldref="11"><variable id="dragdrop"><link href="text/shared/guide/dragdrop.xhp" name="Dragging and Dropping Within a $[officename] Document">Dragging and Dropping Within a $[officename] Document</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147008" xml-lang="en-US" l10n="U" oldref="3">There are many options for moving or copying objects using drag-and-drop. Text sections, drawing objects, graphics, form controls, hyperlinks, cell ranges, and many more can be moved or copied with the mouse.</paragraph>
+<paragraph role="paragraph" id="par_id3155892" xml-lang="en-US" l10n="U" oldref="12">Note that the mouse pointer displays a plus sign when copying and an arrow when creating a link or hyperlink.</paragraph>
+<table id="tbl_id3147576">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3146798" xml-lang="en-US" l10n="U" oldref="5">Mouse Pointer</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147618" xml-lang="en-US" l10n="U" oldref="6">Description</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159177" xml-lang="en-US" l10n="E">
+<image id="img_id3147573" src="res/helpimg/movedata.png" width="8.47mm" height="8.47mm"><alt id="alt_id3147573" xml-lang="en-US">Mouse pointer moving data</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154898" xml-lang="en-US" l10n="U" oldref="7">Moving</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154306" xml-lang="en-US" l10n="E">
+<image id="img_id3149233" src="res/helpimg/copydata.png" width="8.47mm" height="8.47mm"><alt id="alt_id3149233" xml-lang="en-US">Mouse pointer copying data</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153627" xml-lang="en-US" l10n="U" oldref="8">Copying</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153896" xml-lang="en-US" l10n="E">
+<image id="img_id3159413" src="res/helpimg/linkdata.png" width="8.47mm" height="8.47mm"><alt id="alt_id3159413" xml-lang="en-US">Mouse pointer inserting link</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154938" xml-lang="en-US" l10n="U" oldref="9">Creating a link</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="13">If you press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> or Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> while releasing the mouse button, you can control whether the object is copied, moved, or a link is created.</paragraph>
+<table id="tbl_id3150768">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148672" xml-lang="en-US" l10n="E">
+<image id="img_id3158407" src="sw/imglst/sc20238.png" width="5.64mm" height="5.64mm"><alt id="alt_id3158407" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="U" oldref="14">If you drag objects out of the <link href="text/shared/guide/navigator.xhp" name="Navigator"><emph>Navigator</emph></link>, you can specify in the submenu of the Navigator's <emph>Drag Mode</emph> icon whether to copy the object, insert it as a link or insert it as a hyperlink.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="tip" id="par_id3153144" xml-lang="en-US" l10n="U" oldref="4">You can cancel a drag-and-drop operation in $[officename] at any time by pressing the Esc key before releasing the mouse button.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/dragdrop_graphic.xhp#dragdrop_graphic"/>
+<embed href="text/shared/guide/dragdrop_table.xhp#dragdrop_table"/>
+<embed href="text/shared/guide/dragdrop_fromgallery.xhp#dragdrop_fromgallery"/>
+<embed href="text/shared/guide/dragdrop_gallery.xhp#dragdrop_gallery"/>
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/dragdroptext.xhp#dragdroptext"/>
+</case>
+</switch>
+<switch select="appl">
+<case select="CALC"><embed href="text/scalc/guide/cellreference_dragdrop.xhp#cellreference_dragdrop"/>
+</case>
+</switch>
+</body>
+</helpdocument>

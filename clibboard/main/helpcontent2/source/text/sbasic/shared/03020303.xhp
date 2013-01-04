@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020303xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Lof Function [Runtime]</title>
+<filename>/text/sbasic/shared/03020303.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-01T15:25:31">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="lof">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156024"><bookmark_value>Lof function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3156024" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020303.xhp" name="Lof Function [Runtime]">Lof Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3146794" xml-lang="en-US" l10n="U" oldref="2">Returns the size of an open file in bytes.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3153380" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3150359" xml-lang="en-US" l10n="U" oldref="4">Lof (FileNumber)</paragraph>
+<paragraph role="heading" id="hd_id3154141" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3147230" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
+<paragraph role="heading" id="hd_id3156281" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U" oldref="8">
+<emph>FileNumber:</emph> Any numeric expression that contains the file number that is specified in the Open statement.</paragraph>
+<paragraph role="tip" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="9">To obtain the length of a file that is not open, use the <emph>FileLen</emph> function.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<embed href="text/sbasic/shared/00000003.xhp#err52"/>
+<paragraph role="heading" id="hd_id3155415" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="code" id="par_id3151074" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleRandomAccess</paragraph>
+<paragraph role="code" id="par_id3145251" xml-lang="en-US" l10n="U" oldref="12">Dim iNumber As Integer</paragraph>
+<paragraph role="code" id="par_id3154730" xml-lang="en-US" l10n="U" oldref="13">Dim sText As Variant REM must be a Variant</paragraph>
+<paragraph role="code" id="par_id3145646" xml-lang="en-US" l10n="U" oldref="14">Dim aFile As String</paragraph>
+<paragraph role="code" id="par_id3153157" xml-lang="en-US" l10n="U" oldref="15">aFile = "c:\data.txt"</paragraph>
+<paragraph role="code" id="par_id3149403" xml-lang="en-US" l10n="U" oldref="17">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3149121" xml-lang="en-US" l10n="U" oldref="18">Open aFile For Random As #iNumber Len=32</paragraph>
+<paragraph role="code" id="par_id3156276" xml-lang="en-US" l10n="U" oldref="19">Seek #iNumber,1 REM Position at start</paragraph>
+<paragraph role="code" id="par_id3148405" xml-lang="en-US" l10n="U" oldref="20">Put #iNumber,, "This is the first line of text" REM Fill with text</paragraph>
+<paragraph role="code" id="par_id3154756" xml-lang="en-US" l10n="U" oldref="21">Put #iNumber,, "This is the second line of text"</paragraph>
+<paragraph role="code" id="par_id3145643" xml-lang="en-US" l10n="U" oldref="22">Put #iNumber,, "This is the third line of text"</paragraph>
+<paragraph role="code" id="par_id3156383" xml-lang="en-US" l10n="U" oldref="23">Seek #iNumber,2</paragraph>
+<paragraph role="code" id="par_id3155333" xml-lang="en-US" l10n="U" oldref="24">Get #iNumber,,sText</paragraph>
+<paragraph role="code" id="par_id3149255" xml-lang="en-US" l10n="U" oldref="25">Print sText</paragraph>
+<paragraph role="code" id="par_id3154702" xml-lang="en-US" l10n="U" oldref="26">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3153965" xml-lang="en-US" l10n="U" oldref="28">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3163807" xml-lang="en-US" l10n="U" oldref="29">Open aFile For Random As #iNumber Len=32</paragraph>
+<paragraph role="code" id="par_id3155607" xml-lang="en-US" l10n="U" oldref="30">Get #iNumber,2,sText</paragraph>
+<paragraph role="code" id="par_id3150299" xml-lang="en-US" l10n="U" oldref="31">Put #iNumber,,"This is a new line of text"</paragraph>
+<paragraph role="code" id="par_id3147002" xml-lang="en-US" l10n="U" oldref="32">Get #iNumber,1,sText</paragraph>
+<paragraph role="code" id="par_id3149036" xml-lang="en-US" l10n="U" oldref="33">Get #iNumber,2,sText</paragraph>
+<paragraph role="code" id="par_id3166425" xml-lang="en-US" l10n="U" oldref="34">Put #iNumber,20,"This is the text in record 20"</paragraph>
+<paragraph role="code" id="par_id3149817" xml-lang="en-US" l10n="U" oldref="35">Print Lof(#iNumber)</paragraph>
+<paragraph role="code" id="par_id3146811" xml-lang="en-US" l10n="U" oldref="36">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3154200" xml-lang="en-US" l10n="U" oldref="38">end sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0103080000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Normal View</title>
+<filename>/text/simpress/01/03080000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="zeichnung">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148576"><bookmark_value>normal view;presentations</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:DrawingMode" id="bm_id4758646" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DrawingMode" id="bm_id3153729" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_BTN_DRAW" id="bm_id3147436" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:NormalMultiPaneGUI" id="bm_id9567247" localize="false"/><paragraph role="heading" id="hd_id3148576" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/simpress/01/03080000.xhp" name="Normal View">Normal</link></paragraph>
+<paragraph role="paragraph" id="par_id3145251" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SD_BTN_DRAW">Switches to normal view where you can create and edit your slides.</ahelp>.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000403.xhp#aszng"/>
+</section><comment>some context menu commands in Normal view</comment><comment>Slide command in context menu</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:PageMenu" id="bm_id9935605" localize="false"/><paragraph role="paragraph" id="par_id1977294" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a submenu with commands for the current slide.</ahelp></paragraph><comment>Display Background of Master</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:DisplayMasterBackground" id="bm_id2551347" localize="false"/><paragraph role="paragraph" id="par_id9628894" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">When enabled, the current slide shows the background picture of the slide master.</ahelp></paragraph><comment>Display Objects from Master</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:DisplayMasterObjects" id="bm_id9849543" localize="false"/><paragraph role="paragraph" id="par_id7587206" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">When enabled, the current slide shows the objects of the slide master.</ahelp></paragraph><comment>Set Background Picture for Slide</comment><comment>i83563</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:SelectBackground" id="bm_id1203650" localize="false"/><paragraph role="paragraph" id="par_id3257545" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a file dialog to select a picture. The picture will be scaled and inserted on the background of the current slide master. Use Format - Slide/Page - Background to remove the picture.</ahelp></paragraph>
+</body>
+</helpdocument>

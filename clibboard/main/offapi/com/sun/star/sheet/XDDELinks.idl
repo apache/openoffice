@@ -1,0 +1,88 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_XDDELinks_idl__
+#define __com_sun_star_sheet_XDDELinks_idl__
+
+#ifndef __com_sun_star_container_XNameAccess_idl__
+#include <com/sun/star/container/XNameAccess.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_XDDELink_idl__
+#include <com/sun/star/sheet/XDDELink.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_DDELinkMode_idl__
+#include <com/sun/star/sheet/DDELinkMode.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** provides a method to add a DDE link to a spreadsheet.
+
+    @see com::sun::star::sheet::DDELinks
+
+    @since OOo 3.0
+ */
+published interface XDDELinks: com::sun::star::container::XNameAccess
+{
+    //-------------------------------------------------------------------------
+
+    /** adds a DDE link to the spreadsheet without updating it.
+
+        <p>If a DDE link with the specified parameters already exists, the
+        existing DDE link will be returned. Otherwise a new DDE link will be
+        created.</p>
+
+        @param aApplication
+            the DDE server application from which data are requested.
+
+        @param aTopic
+            the DDE topic from which data are requested.
+
+        @param aItem
+            the DDE item from which data are requested.
+
+        @param nMode
+            the DDE link mode.
+
+        @returns
+            the DDE link.
+     */
+    com::sun::star::sheet::XDDELink addDDELink(
+            [in] string aApplication,
+            [in] string aTopic,
+            [in] string aItem,
+            [in] com::sun::star::sheet::DDELinkMode nMode );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsimpress0102120000xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Duplicate</title>
+         <filename>/text/simpress/01/02120000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="hid/.uno:CopyObjects" id="bm_id5589802" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:CopyObjects" id="bm_id3149943" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148868" role="heading" level="1" l10n="U" oldref="1">Duplicate</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148604" role="paragraph" l10n="U" oldref="2"><variable id="duplizieren"><ahelp hid=".uno:CopyObjects">Makes one or more copies of a selected object. </ahelp>
+</variable></paragraph>
+      <section id="howtoget">
+         <embed href="text/simpress/00/00000402.xhp#badpz"/>
+      </section>
+      <embed href="text/sdraw/guide/duplicate_object.xhp#duplicate_object"/>
+<bookmark xml-lang="en-US" branch="hid/sd:NumericField:DLG_COPY:NUM_FLD_COPIES" id="bm_id3153813" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146962" role="heading" level="2" l10n="U" oldref="3">Number of copies</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153075" role="paragraph" l10n="U" oldref="4"><ahelp hid="SD:NUMERICFIELD:DLG_COPY:NUM_FLD_COPIES">Enter the number of copies you want to make.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ImageButton:DLG_COPY:BTN_SET_VIEWDATA" id="bm_id3147300" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150431" role="heading" level="2" l10n="U"
+                 oldref="25">Values from selection</paragraph>
+      <table id="tbl_id3150395">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150534" role="paragraph" l10n="E">
+<image id="img_id3157870" src="res/sc10350.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3157870">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150744" role="paragraph" l10n="U" oldref="27"><ahelp hid="SD:IMAGEBUTTON:DLG_COPY:BTN_SET_VIEWDATA">Enters the width and the height values of the selected object in the <emph>X axis </emph>and the <emph>Y axis </emph>boxes respectively as well as the fill color of the object in the Start box.</ahelp> The rotation angle of the selected object is not entered.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="hd_id3153932" role="heading" level="2" l10n="U" oldref="5">Placement</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150860" role="paragraph" l10n="U" oldref="6">Sets the position and rotation of a duplicate object with respect to the selected object.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:DLG_COPY:MTR_FLD_MOVE_X" id="bm_id3153110" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153084" role="heading" level="3" l10n="U" oldref="7">X axis</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153564" role="paragraph" l10n="CHG" oldref="8"><ahelp hid="SD:METRICFIELD:DLG_COPY:MTR_FLD_MOVE_X">Enter the horizontal distance between the centers of the selected object and the duplicate object. Positive values shift the duplicate object to the right and negative values shift the duplicate object to the left.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:DLG_COPY:MTR_FLD_MOVE_Y" id="bm_id3150338" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154507" role="heading" level="3" l10n="U" oldref="9">Y axis</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149882" role="paragraph" l10n="CHG" oldref="10"><ahelp hid="SD:METRICFIELD:DLG_COPY:MTR_FLD_MOVE_Y">Enter the vertical distance between the centers of the selected object and the duplicate object. Positive values shift the duplicate object down and negative values shift the duplicate object up.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:DLG_COPY:MTR_FLD_ANGLE" id="bm_id3153731" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150022" role="heading" level="3" l10n="U"
+                 oldref="11">Angle</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153738" role="paragraph" l10n="U" oldref="12"><ahelp hid="SD:METRICFIELD:DLG_COPY:MTR_FLD_ANGLE">Enter the angle (0 to 359 degrees) by which you want to rotate the duplicate object. Positive values rotate the duplicate object in a clockwise direction and negative values in a counterclockwise direction. </ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3145296" role="heading" level="2" l10n="U"
+                 oldref="13">Enlargement</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156065" role="paragraph" l10n="U" oldref="14">Sets the size of a duplicate object.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:DLG_COPY:MTR_FLD_WIDTH" id="bm_id3150568" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148769" role="heading" level="3" l10n="U"
+                 oldref="15">Width</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150267" role="paragraph" l10n="U" oldref="16"><ahelp hid="SD:METRICFIELD:DLG_COPY:MTR_FLD_WIDTH">Enter the amount by which you want to enlarge or reduce the width of the duplicate object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:DLG_COPY:MTR_FLD_HEIGHT" id="bm_id3153046" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150930" role="heading" level="3" l10n="U"
+                 oldref="17">Height</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3157970" role="paragraph" l10n="U" oldref="18"><ahelp hid="SD:METRICFIELD:DLG_COPY:MTR_FLD_HEIGHT">Enter the amount by which you want to enlarge or reduce the height of the duplicate object.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154866" role="heading" level="2" l10n="U"
+                 oldref="19">Colors</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150474" role="paragraph" l10n="U" oldref="20">Sets the colors for the selected object and the duplicate object. If you make more than one copy, these colors define the start and end points of a color gradient.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:DLG_COPY:LB_START_COLOR" id="bm_id3155372" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155819" role="heading" level="3" l10n="U"
+                 oldref="21">Start</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155987" role="paragraph" l10n="U" oldref="22"><ahelp hid="SD:LISTBOX:DLG_COPY:LB_START_COLOR">Choose a color for the selected object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:DLG_COPY:LB_END_COLOR" id="bm_id3155405" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156258" role="heading" level="3" l10n="U"
+                 oldref="23">End</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147167" role="paragraph" l10n="U" oldref="24"><ahelp hid="SD:LISTBOX:DLG_COPY:LB_END_COLOR">Choose a color for the duplicate object. If you are making more than one copy, this color is applied to the last copy. </ahelp></paragraph>
+      <embed href="text/shared/00/00000001.xhp#standard"/>
+   </body>
+</helpdocument>

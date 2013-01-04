@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textschart0105120000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Arrangement</title>
+<filename>/text/schart/01/05120000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-14T10:13:24">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="anordnung">
+<paragraph role="heading" id="hd_id3159153" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/schart/01/05120000.xhp" name="Arrangement">Arrangement</link></paragraph>
+<paragraph role="paragraph" id="par_id3145750" xml-lang="en-US" l10n="U" oldref="2">Allows you to modify the order of the data series already set in the chart.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="8">The position of the data in the data table remains unchanged. You can only choose the commands after inserting a chart in $[officename] Calc.</paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#anordnung"/>
+</section>
+<paragraph role="warning" id="par_id3154757" xml-lang="en-US" l10n="U" oldref="5">This function is only available if you have data displayed in columns. It is not possible to switch to data display in rows.</paragraph>
+<paragraph role="heading" id="hd_id3147339" xml-lang="en-US" level="2" l10n="U" oldref="3">Bring Forward</paragraph>
+<paragraph role="paragraph" id="par_id3149259" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid=".uno:Forward">Brings the selected data series forward (to the right).</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3146316" xml-lang="en-US" level="2" l10n="U" oldref="4">Send Backward</paragraph>
+<paragraph role="paragraph" id="par_id3147001" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid=".uno:Backward">Sends the selected data series backward (to the left).</ahelp></paragraph>
+</body>
+</helpdocument>

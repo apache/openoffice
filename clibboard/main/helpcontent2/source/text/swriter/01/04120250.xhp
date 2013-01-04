@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104120250xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Edit Concordance File</title>
+<filename>/text/swriter/01/04120250.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148768"><bookmark_value>editing; concordance files</bookmark_value>
+<bookmark_value>concordance files; definition</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_DLG_CREATE_AUTOMARK" id="bm_id3147169" localize="false"/><paragraph role="heading" id="hd_id3148768" xml-lang="en-US" level="1" l10n="U" oldref="1">Edit Concordance File</paragraph>
+<paragraph role="paragraph" id="par_id3151180" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid="HID_DLG_CREATE_AUTOMARK">Create or edit a list of words to include in an Alphabetical Index.</ahelp> A concordance file lists words that should be referenced in an alphabetical index, together with the page number(s) where they appear in the document.</paragraph>
+<paragraph role="paragraph" id="par_id837427" xml-lang="en-US" l10n="NEW">You can use the Find All button on the Find &amp; Replace dialog to highlight all places where a word appears, then open the Insert Index Entry dialog to add that word and places to the alphabetical index. However, if you need the same set of alphabetical indexes in multiple documents, the concordance file allows to enter every word just once, then use the list many times.<comment>i61650</comment></paragraph>
+<paragraph role="heading" id="hd_id3154645" xml-lang="en-US" level="2" l10n="U" oldref="19">To access the Edit Concordance File dialog:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149292" xml-lang="en-US" l10n="U" oldref="20">Choose <emph>Insert - Indexes and Tables - Indexes and Tables - Index/Table</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145420" xml-lang="en-US" l10n="U" oldref="21">In the <emph>Type </emph>box, select "Alphabetical Index".</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154107" xml-lang="en-US" l10n="U" oldref="22">In the <emph>Options </emph>area, select the <emph>Concordance file</emph> check box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153668" xml-lang="en-US" l10n="U" oldref="23">Click the <emph>File</emph> button, and then choose <emph>New</emph> or <emph>Edit</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3154470" xml-lang="en-US" l10n="U" oldref="24">A concordance file contains the following fields: </paragraph>
+<paragraph role="paragraph" id="par_id3152953" xml-lang="en-US" l10n="U" oldref="3">"Search term" refers to the index entry that you want to mark in the document.</paragraph>
+<paragraph role="paragraph" id="par_id3155896" xml-lang="en-US" l10n="U" oldref="4">"Alternative entry" refers to the index entry that you want to appear in the index.</paragraph>
+<paragraph role="paragraph" id="par_id3154194" xml-lang="en-US" l10n="U" oldref="5">The 1st and 2nd Keys are parent index entries. The "Search term" or the "Alternative entry" appears as a subentry under the 1st and 2nd Keys.</paragraph>
+<paragraph role="paragraph" id="par_id3155184" xml-lang="en-US" l10n="U" oldref="6">"Match case" means that uppercase and lowercase letters are considered.</paragraph>
+<paragraph role="paragraph" id="par_id3143282" xml-lang="en-US" l10n="U" oldref="7">"Word only" searches for the term as a single word.</paragraph>
+<paragraph role="note" id="par_id3147220" xml-lang="en-US" l10n="U" oldref="8">To enable the "Match case" or "Word only" options, click in the corresponding cell, and then select the check box.</paragraph>
+<paragraph role="heading" id="hd_id3153629" xml-lang="en-US" level="2" l10n="U" oldref="25">To create a concordance file without the Edit Concordance File dialog:</paragraph>
+<paragraph role="paragraph" id="par_id3153644" xml-lang="en-US" l10n="U" oldref="9">Use the following format guidelines when you create a concordance file:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3152770" xml-lang="en-US" l10n="U" oldref="10">Each entry in the concordance file is on a separate line.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155142" xml-lang="en-US" l10n="U" oldref="26">Commented lines start with #.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153354" xml-lang="en-US" l10n="U" oldref="11">Use the following format for the entries:</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3149172" xml-lang="en-US" l10n="U" oldref="12">Search term;Alternative entry;1st key;2nd key;Match case;Word only</paragraph>
+<paragraph role="paragraph" id="par_id3156270" xml-lang="en-US" l10n="U" oldref="13">The entries "Match case" and "Word only" are interpreted as "No" or FALSE if they are empty or zero (0). All other contents are interpreted as "Yes" or TRUE.</paragraph>
+<paragraph role="heading" id="hd_id3145778" xml-lang="en-US" level="3" l10n="U" oldref="27">Example</paragraph>
+<paragraph role="paragraph" id="par_id3155907" xml-lang="en-US" l10n="U" oldref="14">For example, to include the word "Boston" in your alphabetical index under the "Cities" entry, enter the following line in the concordance file:</paragraph>
+<paragraph role="paragraph" id="par_id3151370" xml-lang="en-US" l10n="CHG" oldref="15">Boston;Boston;Cities;;0;0 <comment>UFI: translate this with same name as in par_id3155907. Pay attention to the following paras also</comment></paragraph>
+<paragraph role="paragraph" id="par_id3151383" xml-lang="en-US" l10n="U" oldref="16">This also finds "Boston" if it is written in lowercase letters.</paragraph>
+<paragraph role="paragraph" id="par_id3155866" xml-lang="en-US" l10n="U" oldref="17">To include the "Beacon Hill" district in Boston under the "Cities" entry, enter the following line:</paragraph>
+<paragraph role="paragraph" id="par_id3150116" xml-lang="en-US" l10n="CHG" oldref="18">Beacon Hill;Boston;Cities; </paragraph>
+</body>
+</helpdocument>

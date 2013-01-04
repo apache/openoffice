@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03103100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Let Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03103100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-10-11T13:33:52">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="let">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147242"><bookmark_value>Let statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147242" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103100.xhp" name="Let Statement [Runtime]">Let Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="2">Assigns a value to a variable.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3153127" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154285" xml-lang="en-US" l10n="U" oldref="4">[Let] VarName=Expression</paragraph>
+<paragraph role="heading" id="hd_id3148944" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="6">
+<emph>VarName:</emph> Variable that you want to assign a value to. Value and variable type must be compatible.</paragraph>
+<paragraph role="note" id="par_id3148451" xml-lang="en-US" l10n="U" oldref="7">As in most BASIC dialects, the keyword <emph>Let</emph> is optional.</paragraph>
+<paragraph role="heading" id="hd_id3145785" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150441" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleLen</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="CHG" oldref="10">Dim sText as String</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="11">Let sText = "Las Vegas"</paragraph>
+<paragraph role="paragraph" id="par_id3152939" xml-lang="en-US" l10n="U" oldref="12">msgbox Len(sText) REM returns 9</paragraph>
+<paragraph role="paragraph" id="par_id3146921" xml-lang="en-US" l10n="U" oldref="13">End Sub</paragraph>
+</body>
+</helpdocument>

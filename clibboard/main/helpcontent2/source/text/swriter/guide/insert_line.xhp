@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideinsert_linexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Inserting a Horizontal Line</title>
+         <filename>/text/swriter/guide/insert_line.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151178"><bookmark_value>horizontal lines</bookmark_value>
+      <bookmark_value>lines; inserting horizontal lines</bookmark_value>
+      <bookmark_value>rules</bookmark_value>
+      <bookmark_value>inserting; horizontal lines</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3151178" role="heading" level="1" l10n="U"
+                 oldref="76"><variable id="insert_line"><link href="text/swriter/guide/insert_line.xhp" name="Inserting a Horizontal Line">Inserting a Horizontal Line</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id2165898" role="tip" l10n="CHG">This guide is about inserting graphical rules. You can also insert other lines, see <link href="text/shared/guide/line_intext.xhp">Drawing Lines in Text</link>.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149691" role="listitem" l10n="U" oldref="82">Click in the document where you want to insert the line.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155186" role="listitem" l10n="CHG" oldref="77">Choose <emph>Insert - Horizontal Rule</emph>.</paragraph>
+         </listitem>
+      </list>
+      <list type="ordered" startwith="3">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155902" role="listitem" l10n="U" oldref="83">Click the line that you want to insert in the <emph>Selection </emph>list.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147124" role="listitem" l10n="U" oldref="84">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id5338602" role="heading" level="2" l10n="NEW">The "Plain" type</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5342265" role="paragraph" l10n="CHG">If you select the "Plain" type of rules, an empty paragraph is inserted at the position of the cursor. This paragraph has the style "Horizontal Line", with a line as the lower border of the paragraph. You can edit that Paragraph Style to change the properties of all "Plain" rules in your document. For example you can set the left indent to 3 inches, or you can change the line style, thickness, and color.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id707113" role="heading" level="3" l10n="NEW">To edit the "Plain" rule style</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5267494" role="paragraph" l10n="NEW">Choose <emph>Format - Styles and Formatting</emph> to open the Styles and Formatting window.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5074922" role="paragraph" l10n="NEW">In the listbox at the bottom, select to display "All Styles".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id8491470" role="paragraph" l10n="NEW">Right-click the "Horizontal Line" paragraph style.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3253883" role="paragraph" l10n="NEW">Choose Modify.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3196203" role="paragraph" l10n="CHG">For example, open the Borders tab page to set the thickness and style of the lines. Open the Indents &amp; Spacing tab page to set the indents of the line.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id8385265" role="heading" level="2" l10n="NEW">The graphical type</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2582476" role="paragraph" l10n="NEW">Select any rule type below of the "Plain" rule type. This inserts a new paragraph at the position of the cursor. A picture showing a graphical horizontal line is inserted.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150217" role="paragraph" l10n="U" oldref="78">The inserted line is anchored to the current paragraph and centered between the page margins.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id2111575" role="paragraph" l10n="NEW">To edit the graphical line, right-click the line and choose <emph>Picture</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3150231" role="tip" l10n="U" oldref="79">You can also insert one of these lines by dragging it from the <emph>Rulers</emph> folder in the <emph>Gallery</emph> into the current document.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/shared/guide/line_intext.xhp#line_intext"/>
+      <embed href="text/shared/guide/insert_bitmap.xhp#insert_bitmap"/>
+      <paragraph xml-lang="en-US" id="par_id3150944" role="paragraph" l10n="U" oldref="80"><link href="text/shared/01/gallery.xhp" name="Gallery">Gallery</link></paragraph>
+   </body>
+</helpdocument>

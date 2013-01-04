@@ -1,0 +1,81 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_frame_XLoadable_idl__
+#define __com_sun_star_frame_XLoadable_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_io_IOException_idl__
+#include <com/sun/star/io/IOException.idl>
+#endif
+
+#ifndef __com_sun_star_frame_DoubleInitializationException_idl__
+#include <com/sun/star/frame/DoubleInitializationException.idl>
+#endif
+
+#ifndef __com_sun_star_beans_PropertyValue_idl__
+#include <com/sun/star/beans/PropertyValue.idl>
+#endif
+
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module frame {
+
+//=============================================================================
+/** offers a simple way to initialize a component or load it from an URL.
+	<p>In case an object supports the interface the object must be initialized
+	   with either initNew() or load() call before any usage. In case the object
+	   is already initialized the mentioned methods should throw DoubleInitializationException.
+	</p>
+
+	@since OOo 1.1.2
+ */
+published interface XLoadable: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/** creates a component from scratch
+	*/
+	void initNew()
+        raises( DoubleInitializationException, com::sun::star::io::IOException, com::sun::star::uno::Exception );
+
+	//-------------------------------------------------------------------------
+	/** loads a component from an URL
+        @param lArguments
+            parameters for saving
+            (see <type scope="com::sun::star::document">MediaDescriptor</type> for further details)
+			the FileName parameter must be specified, other parameters are optional
+	*/
+
+	void load( [in] sequence<com::sun::star::beans::PropertyValue> lArguments )
+        raises( DoubleInitializationException, com::sun::star::io::IOException, com::sun::star::uno::Exception );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidetable_repeat_multiple_headersxml" indexer="include"
+             status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Repeating a Table Header on a New Page</title>
+         <filename>/text/swriter/guide/table_repeat_multiple_headers.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155870"><bookmark_value>tables; heading repetition after page breaks</bookmark_value>
+      <bookmark_value>repeating; table headings after page breaks</bookmark_value>
+      <bookmark_value>headings; repeating in tables</bookmark_value>
+      <bookmark_value>multi-page tables</bookmark_value>
+</bookmark><comment>MW made "table heading repetition..." a two level entry and changed "headers;" to "headings:"</comment><comment>mw added "multi-page tables"</comment>
+<paragraph xml-lang="en-US" id="par_id3155870" role="paragraph" l10n="E" oldref="5"
+                 localize="false"/>
+      <paragraph xml-lang="en-US" id="hd_id3153406" role="heading" level="1" l10n="U" oldref="6"><variable id="table_repeat_multiple_headers"><link href="text/swriter/guide/table_repeat_multiple_headers.xhp" name="Repeating a Table Header on a New Page">Repeating a Table Heading on a New Page</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149636" role="paragraph" l10n="U" oldref="7">You can repeat a table heading on each new page that the table spans.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145098" role="listitem" l10n="CHG" oldref="8">Choose <emph>Table - Insert - Table</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156240" role="listitem" l10n="CHG" oldref="9">Select the <item type="menuitem">Heading</item>
+               <emph/>and the <item type="menuitem">Repeat heading</item>
+               <emph/>check boxes.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153376" role="listitem" l10n="U" oldref="10">Select the number of rows and columns for the table.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153393" role="listitem" l10n="U" oldref="11">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/tablemode.xhp#tablemode"/>
+      <embed href="text/swriter/guide/table_sizing.xhp#table_sizing"/>
+   </body>
+</helpdocument>

@@ -1,0 +1,59 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_awt_MouseWheelBehavior_idl__
+#define __com_sun_star_awt_MouseWheelBehavior_idl__
+
+//=============================================================================
+
+module com { module sun { module star { module awt { 
+
+//=============================================================================
+
+/** describes the scroll behavior of the mouse wheel for a control
+    @since OOo 3.2
+ */
+constants MouseWheelBehavior
+{
+    /** defines that the mouse wheel cannot be used to scroll through the control's content
+    */
+    const short SCROLL_DISABLED = 0;
+
+    /** defines that the mouse can only be used to scroll through the control's content if it currently
+        has the focus.
+    */
+    const short SCROLL_FOCUS_ONLY = 1;
+
+    /** defines that the mouse can be used to scroll through the control's content, no matter whether or not
+        it has the focus, as long as the mouse pointer is over the control.
+    */
+    const short SCROLL_ALWAYS = 2;
+};
+
+//=============================================================================
+
+}; }; }; }; 
+
+//=============================================================================
+
+#endif

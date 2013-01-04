@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0201170904xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Combo Box Wizard: Database Field</title>
+<filename>/text/shared/02/01170904.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-05-03T12:06:24">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="seite3b">
+<paragraph role="heading" id="hd_id3144740" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170904.xhp" name="Combo Box Wizard: Database Field">Combo Box Wizard: Database Field</link></paragraph>
+<paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="U" oldref="2">With the combination fields, you can either save the value of a field in a database or display this value in a form.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3155150" xml-lang="en-US" l10n="U" oldref="12">The user values entered in the combination field or selected in the list can be saved in the database table that is accessed in the form. Note that the saving of values in another table is not possible. If the values are not to be saved in a database, they will be saved only in the form. This is especially helpful in HTML forms, where the user's entered or selected values are to be assigned to a server.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00040501.xhp#aupikomli3b"/>
+</section>
+<paragraph role="heading" id="hd_id3149760" xml-lang="en-US" level="2" l10n="U" oldref="3">Do you want to save the value in a database field?</paragraph>
+<paragraph role="paragraph" id="par_id3150178" xml-lang="en-US" l10n="U" oldref="4">Two options are available for this question:</paragraph>
+<!-- removed HID DBP_RADIOBUTTON_RID_PAGE_OPTION_DBFIELD_RB_STOREINFIELD_YES -->
+<paragraph role="heading" id="hd_id3153394" xml-lang="en-US" level="3" l10n="U" oldref="5">Yes, I want to save it in the following database field</paragraph>
+<paragraph role="paragraph" id="par_id3147043" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="DBP_RADIOBUTTON_RID_PAGE_OPTION_DBFIELD_RB_STOREINFIELD_YES">Specifies whether the user's entered or selected combination field value should be saved in a database field.</ahelp> Several database table fields are offered which can be accessed in the current form.</paragraph>
+<paragraph role="paragraph" id="par_id3145212" xml-lang="en-US" l10n="U" oldref="11">In <link href="text/shared/02/01170102.xhp" name="Control - Properties">Control - Properties</link> the selected field appears as an entry in the <emph>Data</emph> tab page under <emph>Data field</emph>.</paragraph>
+<!-- removed HID DBP_LISTBOX_RID_PAGE_OPTION_DBFIELD_LB_STOREINFIELD -->
+<paragraph role="heading" id="hd_id3149177" xml-lang="en-US" level="3" l10n="U" oldref="7">List field</paragraph>
+<paragraph role="paragraph" id="par_id3147008" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="DBP_LISTBOX_RID_PAGE_OPTION_DBFIELD_LB_STOREINFIELD">Specifies the data field where the combination field value should be saved.</ahelp></paragraph>
+<!-- removed HID DBP_RADIOBUTTON_RID_PAGE_OPTION_DBFIELD_RB_STOREINFIELD_NO -->
+<paragraph role="heading" id="hd_id3148538" xml-lang="en-US" level="3" l10n="U" oldref="9">No, I only want to save the value in the form</paragraph>
+<paragraph role="paragraph" id="par_id3149398" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="DBP_RADIOBUTTON_RID_PAGE_OPTION_DBFIELD_RB_STOREINFIELD_NO">Specifies that the value of this combination field will not be written in the database and will only be saved in the form.</ahelp></paragraph>
+</body>
+</helpdocument>

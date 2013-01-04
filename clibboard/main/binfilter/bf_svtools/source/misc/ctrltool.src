@@ -1,0 +1,140 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include <bf_svtools/svtools.hrc>
+
+String STR_SVT_STYLE_LIGHT
+{
+	Text [ en-US ] = "Light" ;
+};
+
+String STR_SVT_STYLE_LIGHT_ITALIC
+{
+	Text [ en-US ] = "Light Italic" ;
+};
+
+String STR_SVT_STYLE_NORMAL
+{
+	Text [ en-US ] = "Regular" ;
+};
+
+String STR_SVT_STYLE_NORMAL_ITALIC
+{
+	Text [ en-US ] = "Italic" ;
+};
+
+String STR_SVT_STYLE_BOLD
+{
+	Text [ en-US ] = "Bold" ;
+};
+
+String STR_SVT_STYLE_BOLD_ITALIC
+{
+	Text [ en-US ] = "Bold Italic" ;
+};
+
+String STR_SVT_STYLE_BLACK
+{
+	Text [ en-US ] = "Black" ;
+};
+
+String STR_SVT_STYLE_BLACK_ITALIC
+{
+	Text [ en-US ] = "Black Italic" ;
+};
+
+/*
+Finnische Texte:
+	"Light",
+	"Light Kursivoitu",
+	"Normaali",
+	"Kursivoitu",
+	"Lihavoitu",
+	"Lihavoitu Kursivoitu",
+	"Black",
+	"Black Kursivoitu"
+*/
+
+String STR_SVT_FONTMAP_BOTH
+{
+	Text [ en-US ] = "The same font will be used on both your printer and your screen." ;
+};
+
+String STR_SVT_FONTMAP_PRINTERONLY
+{
+	Text [ en-US ] = "This is a printer font. The screen image may differ." ;
+};
+
+String STR_SVT_FONTMAP_SCREENONLY
+{
+	Text [ en-US ] = "This is a screen font. The printer image may differ." ;
+};
+
+String STR_SVT_FONTMAP_SIZENOTAVAILABLE
+{
+	Text [ en-US ] = "This font size has not been installed. The closest available size will be used.";
+};
+
+String STR_SVT_FONTMAP_STYLENOTAVAILABLE
+{
+	Text [ en-US ] = "This font style will be simulated or the closest matching style will be used.";
+};
+
+String STR_SVT_FONTMAP_NOTAVAILABLE
+{
+	Text [ en-US ] = "This font has not been installed. The closest available font will be used.";
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

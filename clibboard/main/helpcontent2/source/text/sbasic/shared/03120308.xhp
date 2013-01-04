@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03120308xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">RSet Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03120308.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T14:16:38">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="rset">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153345"><bookmark_value>RSet statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120308.xhp" name="RSet Statement [Runtime]">RSet Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150503" xml-lang="en-US" l10n="U" oldref="2">Right-aligns a string within a string variable, or copies a user-defined variable type into another.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3149234" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="4">RSet Text As String = Text or RSet Variable1 = Variable2</paragraph>
+<paragraph role="heading" id="hd_id3156024" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Text:</emph> Any string variable.</paragraph>
+<paragraph role="paragraph" id="par_id3154924" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Text</emph>: String that you want to right-align in the string variable.</paragraph>
+<paragraph role="paragraph" id="par_id3149456" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Variable1:</emph> User-defined variable that is the target for the copied variable.</paragraph>
+<paragraph role="paragraph" id="par_id3153381" xml-lang="en-US" l10n="U" oldref="9">
+<emph>Variable2:</emph> User-defined variable that you want to copy to another variable.</paragraph>
+<paragraph role="paragraph" id="par_id3154140" xml-lang="en-US" l10n="U" oldref="10">If the string is shorter than the string variable, <emph>RSet</emph> aligns the string to the right within the string variable. Any remaining characters in the string variable are replaced with spaces. If the string is longer than the string variable, characters exceeding the length of the variable are truncated, and only the remaining characters are right-aligned within the string variable.</paragraph>
+<paragraph role="paragraph" id="par_id3149202" xml-lang="en-US" l10n="U" oldref="11">You can also use the <emph>RSet statement</emph> to assign variables of one user-defined type to another.</paragraph>
+<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="12">The following example uses the <emph>RSet</emph> and <emph>LSet</emph> statements to modify the left and right alignment of a string.</paragraph>
+<paragraph role="heading" id="hd_id3154909" xml-lang="en-US" level="2" l10n="U" oldref="13">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154218" xml-lang="en-US" l10n="U" oldref="14">Sub ExampleRLSet</paragraph>
+<paragraph role="paragraph" id="par_id3147288" xml-lang="en-US" l10n="U" oldref="15">Dim sVar as string</paragraph>
+<paragraph role="paragraph" id="par_id3153367" xml-lang="en-US" l10n="U" oldref="16">Dim sExpr as string</paragraph>
+<paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U" oldref="18">sVar = String(40,"*")</paragraph>
+<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="19">sExpr = "SBX"</paragraph>
+<paragraph role="paragraph" id="par_id3155856" xml-lang="en-US" l10n="U" oldref="20">REM Right-align "SBX" in a 40-character string</paragraph>
+<paragraph role="paragraph" id="par_id3152577" xml-lang="en-US" l10n="U" oldref="21">REM Replace asterisks with spaces</paragraph>
+<paragraph role="paragraph" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="22">RSet sVar = sExpr</paragraph>
+<paragraph role="paragraph" id="par_id3156444" xml-lang="en-US" l10n="U" oldref="23">Print "&gt;"; sVar; "&lt;"</paragraph>
+<paragraph role="paragraph" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="25">sVar = String(5,"*")</paragraph>
+<paragraph role="paragraph" id="par_id3153140" xml-lang="en-US" l10n="U" oldref="26">sExpr = "123457896"</paragraph>
+<paragraph role="paragraph" id="par_id3153144" xml-lang="en-US" l10n="U" oldref="27">RSet sVar = sExpr</paragraph>
+<paragraph role="paragraph" id="par_id3150116" xml-lang="en-US" l10n="U" oldref="28">Print "&gt;"; sVar; "&lt;"</paragraph>
+<paragraph role="paragraph" id="par_id3154491" xml-lang="en-US" l10n="U" oldref="30">sVar = String(40,"*")</paragraph>
+<paragraph role="paragraph" id="par_id3149412" xml-lang="en-US" l10n="U" oldref="31">sExpr = "SBX"</paragraph>
+<paragraph role="paragraph" id="par_id3145801" xml-lang="en-US" l10n="U" oldref="32">REM Left-align "SBX" in a 40-character string</paragraph>
+<paragraph role="paragraph" id="par_id3145646" xml-lang="en-US" l10n="U" oldref="33">LSet sVar = sExpr</paragraph>
+<paragraph role="paragraph" id="par_id3154511" xml-lang="en-US" l10n="U" oldref="34">Print "&gt;"; sVar; "&lt;"</paragraph>
+<paragraph role="paragraph" id="par_id3153839" xml-lang="en-US" l10n="U" oldref="36">sVar = String(5,"*")</paragraph>
+<paragraph role="paragraph" id="par_id3149122" xml-lang="en-US" l10n="U" oldref="37">sExpr = "123456789"</paragraph>
+<paragraph role="paragraph" id="par_id3150330" xml-lang="en-US" l10n="U" oldref="38">LSet sVar = sExpr</paragraph>
+<paragraph role="paragraph" id="par_id3154480" xml-lang="en-US" l10n="U" oldref="39">Print "&gt;"; sVar; "&lt;"</paragraph>
+<paragraph role="paragraph" id="par_id3148914" xml-lang="en-US" l10n="U" oldref="40">End Sub</paragraph>
+</body>
+</helpdocument>

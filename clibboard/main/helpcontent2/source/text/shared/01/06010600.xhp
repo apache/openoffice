@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106010600xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Chinese Conversion</title>
+<filename>/text/shared/01/06010600.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-21T12:24:22">UFI: former Chinese Translation dialog, issue 58212</created>
+<lastedited date="2004-12-16T12:54:32">DEDR: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="chinese">
+<bookmark xml-lang="en-US" branch="index" id="bm_id49745"><bookmark_value>Chinese writing systems</bookmark_value>
+<bookmark_value>simplified Chinese;conversion to traditional Chinese</bookmark_value>
+<bookmark_value>traditional Chinese;conversion to simplified Chinese</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ChineseConversion" id="bm_id9033860" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ChineseConversion" id="bm_id2549516" localize="false"/>
+<paragraph role="heading" id="par_idN10547" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/01/06010600.xhp">Chinese Conversion</link></paragraph>
+<paragraph role="paragraph" id="par_idN10557" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Converts the selected Chinese text from one Chinese writing system to the other. If no text is selected, the entire document is converted.</ahelp> You can only use this command if you enable Asian language support in <emph>Tools - Options - Language Settings - Languages</emph>.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#chinese"/>
+</section>
+<paragraph role="heading" id="par_idN10572" xml-lang="en-US" level="2" l10n="NEW">Conversion direction</paragraph>
+<paragraph role="paragraph" id="par_idN10576" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the conversion direction.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10579" xml-lang="en-US" level="3" l10n="NEW">Traditional Chinese to Simplified Chinese</paragraph>
+<paragraph role="paragraph" id="par_idN1057D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Converts traditional Chinese text characters to simplified Chinese text characters. Click <emph>OK</emph> to convert the selected text. If no text is selected, the whole document is converted.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10580" xml-lang="en-US" level="3" l10n="NEW">Simplified Chinese to Traditional Chinese</paragraph>
+<paragraph role="paragraph" id="par_idN10584" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Converts simplified Chinese text characters to traditional Chinese text characters. Click <emph>OK</emph> to convert the selected text. If no text is selected, the whole document is converted.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN1058E" xml-lang="en-US" level="2" l10n="NEW">Common terms</paragraph>
+<paragraph role="paragraph" id="par_idN10592" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Common terms are words that have the same meaning in traditional and simplified Chinese but are written with different characters.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10595" xml-lang="en-US" level="3" l10n="NEW">Convert Common Terms</paragraph>
+<paragraph role="paragraph" id="par_idN10599" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Converts words with two or more characters that are in the list of common terms. After the list is scanned, the remaining text is converted character by character.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN1059C" xml-lang="en-US" level="3" l10n="NEW">Edit terms</paragraph>
+<paragraph role="paragraph" id="par_idN105A0" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/shared/01/06010601.xhp">Edit Dictionary</link> dialog where you can edit the list of conversion terms.</ahelp></paragraph>
+</body>
+</helpdocument>

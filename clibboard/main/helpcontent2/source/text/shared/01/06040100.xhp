@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0106040100xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Options</title>
+         <filename>/text/shared/01/06040100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="optionen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155620"><bookmark_value>AutoCorrect function; options</bookmark_value>
+         <bookmark_value>replacement options</bookmark_value>
+         <bookmark_value>words; automatically replacing</bookmark_value>
+         <bookmark_value>abbreviation replacement</bookmark_value>
+         <bookmark_value>capital letters; AutoCorrect function</bookmark_value>
+         <bookmark_value>bold; AutoFormat function</bookmark_value>
+         <bookmark_value>underlining; AutoFormat function</bookmark_value>
+         <bookmark_value>spaces; ignoring double</bookmark_value>
+         <bookmark_value>numbering; using automatically</bookmark_value>
+         <bookmark_value>paragraphs; numbering automatically</bookmark_value>
+         <bookmark_value>tables in text; creating automatically</bookmark_value>
+         <bookmark_value>titles; formatting automatically</bookmark_value>
+         <bookmark_value>empty paragraph removal</bookmark_value>
+         <bookmark_value>paragraphs; removing blank ones</bookmark_value>
+         <bookmark_value>styles; replacing automatically</bookmark_value>
+         <bookmark_value>user-defined styles; automatically replacing</bookmark_value>
+         <bookmark_value>bullets; replacing</bookmark_value>
+         <bookmark_value>paragraphs; joining</bookmark_value>
+         <bookmark_value>joining; paragraphs</bookmark_value>
+</bookmark><comment>removed two bookmarks "automatic..." and two more entries about quotes and 1/2 replacement</comment><comment>MW removed "numbering;paragraphs"</comment>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OFAPAGE_AUTOCORR_CLB" id="bm_id3148765" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OFAPAGE_AUTOCORR_OPTIONS" id="bm_id3147527" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OFAPAGE_AUTOFMT_OPTIONS" id="bm_id3149962" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OFAPAGE_AUTOFORMAT_CLB" id="bm_id3150999" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155620" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/01/06040100.xhp" name="Options">Options</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146946" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_OFAPAGE_AUTOFORMAT_CLB">Select the options for automatically correcting errors as you type, and then click <emph>OK</emph>.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#autokooptionen"/>
+      </section>
+<switch select="appl">
+<case select="WRITER">
+<paragraph xml-lang="en-US" id="par_id3153124" role="paragraph" l10n="CHG" oldref="32">In text documents, you can choose to apply the AutoCorrect corrections while you type [T], or only when you modify existing text [M] with <emph>Format - AutoCorrect - Apply</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7547227" role="note" l10n="CHG">When you choose to modify existing text with all options deselected, still all "Default" paragraph styles will be converted to "Text body" styles. <comment>see i72339</comment><comment>Don't use inline switches for notes, tips and warnings. The icon will still show up.</comment></paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="hd_id3154398" role="heading" level="3" l10n="U" oldref="3">Use replacement table</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151234" role="paragraph" l10n="CHG" oldref="4">If you type a letter combination that matches a shortcut in the <link href="text/shared/01/06040200.xhp" name="replacement table">replacement table</link>, the letter combination is replaced with the replacement text.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150144" role="heading" level="3" l10n="U" oldref="5">Correct TWo INitial CApitals</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149177" role="paragraph" l10n="U" oldref="6">If you type two uppercase letters at the beginning of a "WOrd", the second uppercase letter is automatically replaced with a lowercase letter.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3156426" role="heading" level="3" l10n="U" oldref="7">Capitalize first letter of every sentence.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155339" role="paragraph" l10n="U" oldref="8">Capitalizes the first letter of every sentence.</paragraph>
+<switch select="appl">
+<case select="CALC">
+<paragraph xml-lang="en-US" id="par_id5240028" role="note" l10n="NEW">The first letter in a Calc cell will never be capitalized automatically.<comment>see i78661</comment></paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="hd_id3145072" role="heading" level="3" l10n="U"
+                 oldref="24">Automatic *bold* and _underline_</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153577" role="paragraph" l10n="CHG" oldref="26">Automatically applies bold formatting to text enclosed by asterisks (*), and underline to text enclosed by underscores ( _ ), for example, *bold*. The asterisks and underscores are not displayed after the formatting is applied.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153127" role="note" l10n="U" oldref="105">This feature does not work if the formatting characters * or _ are entered with an <link href="text/shared/00/00000005.xhp#IME" name="Input Method Editor">Input Method Editor</link>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150275" role="heading" level="3" l10n="U"
+                 oldref="17">URL Recognition</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3158430" role="paragraph" l10n="U" oldref="18">Automatically creates a hyperlink when you type a <link href="text/shared/00/00000002.xhp#url" name="URL">URL</link>.</paragraph>
+<comment>UFI: moved "replace 1st" to Localized Options tab page, cws cbosdo01</comment>
+      <paragraph xml-lang="en-US" id="hd_id3148473" role="heading" level="3" l10n="U"
+                 oldref="19">Replace Dashes<comment>UFI: changed switches, added table, #61325#</comment></paragraph><comment>UFI: see i73558 for name: not the dashes are replaced but the hyphens (or even better the minus signs)</comment>
+<paragraph xml-lang="en-US" id="par_id3144439" role="paragraph" l10n="CHG" oldref="20">Replaces one or two hyphens with a long dash (see the following table).</paragraph>
+      <paragraph xml-lang="en-US" id="par_id87282" role="paragraph" l10n="CHG">Text will be replaced after you type a trailing white space (space, tab, or return). In the following table, the A and B represent text consisting of letters A to z or digits 0 to 9.</paragraph>
+      <table id="tbl_id2444227">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3408612" role="tablehead" l10n="NEW">Text that you type:</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4362010" role="tablehead" l10n="NEW">Result that you get:</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1432844" role="tablecontent" l10n="NEW">A - B (A, space, minus, space, B)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id7553941" role="tablecontent" l10n="NEW">A – B (A, space, en-dash, space, B)</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1421246" role="tablecontent" l10n="NEW">A -- B (A, space, minus, minus, space, B)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2305673" role="tablecontent" l10n="NEW">A – B (A, space, en-dash, space, B)</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id8703573" role="tablecontent" l10n="NEW">A--B (A, minus, minus, B)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6049684" role="tablecontent" l10n="CHG">A—B (A, em-dash, B)<br/>(see note below the table)</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2219916" role="tablecontent" l10n="NEW">A-B (A, minus, B)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1868037" role="tablecontent" l10n="NEW">A-B (unchanged)</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id714438" role="tablecontent" l10n="NEW">A -B (A, space, minus, B)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3924985" role="tablecontent" l10n="NEW">A -B (unchanged)</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1486861" role="tablecontent" l10n="NEW">A --B (A, space, minus, minus, B)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id844141" role="tablecontent" l10n="NEW">A –B (A, space, en-dash, B)</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id1416974" role="note" l10n="NEW">If the text has the Hungarian or Finnish language attribute, then two hyphens in the sequence A--B are replaced by an en-dash instead of an em-dash.<comment>i71908</comment></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3152472" role="heading" level="3" l10n="U"
+                 oldref="99"><switchinline select="appl"><caseinline select="WRITER">Delete spaces and tabs at beginning and end of paragraph
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156024" role="paragraph" l10n="U" oldref="100"><switchinline select="appl"><caseinline select="WRITER">Removes spaces and tabs at the beginning of a paragraph. To use this option, the <emph>Apply Styles</emph> option must also be selected.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3147303" role="heading" level="3" l10n="U"
+                 oldref="101"><switchinline select="appl"><caseinline select="WRITER">Delete blanks and tabs at end and start of lines
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150866" role="paragraph" l10n="U" oldref="102"><switchinline select="appl"><caseinline select="WRITER">Removes spaces and tabs at the beginning of each line. To use this option, the <emph>Apply Styles</emph> option must also be selected.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150400" role="heading" level="3" l10n="U"
+                 oldref="28">Ignore double spaces</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154938" role="paragraph" l10n="U" oldref="29">Replaces two or more consecutive spaces with a single space.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3145116" role="heading" level="3" l10n="U"
+                 oldref="33"><switchinline select="appl"><caseinline select="WRITER">Apply numbering - symbol
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150870" role="paragraph" l10n="U" oldref="34"><switchinline select="appl"><caseinline select="WRITER">Automatically creates a numbered list when you press Enter at the end of a line that starts with a number followed by a period, a space, and text. If a line starts with a hyphen (-), a plus sign (+), or an asterisk (*), followed by a space, and text, a bulleted list is created when you press Enter.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146874" role="paragraph" l10n="U" oldref="92"><switchinline select="appl"><caseinline select="WRITER">To cancel automatic numbering when you press Enter at the end of a line that starts with a numbering symbol, press Enter again.
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="WRITER">
+<paragraph xml-lang="en-US" id="par_id3145606" role="tip" l10n="U" oldref="77">The automatic numbering option is only applied to paragraphs that are formatted with the "Default", "Text body", or "Text body indent" paragraph style.</paragraph>
+</case>
+</switch>
+<switch select="appl">
+<case select="WRITER">
+<paragraph xml-lang="en-US" id="hd_id3157962" role="heading" level="3" l10n="U"
+                 oldref="35">Apply border</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3144445" role="paragraph" l10n="U" oldref="36">Automatically applies a border at the base of the preceding paragraph when you type three or more specific characters, and then press Enter. To create a single line, type three or more hyphens (-), or underscores ( _ ), and then press Enter. To create a double line, type three or more equal signs (=), asterisks (*), tildes (~), or hash marks (#), and then press Enter.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10C2E" role="paragraph" l10n="NEW">To delete the created line, click the paragraph above the line, choose <emph>Format - Paragraph - Borders</emph>, delete the bottom border.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10C35" role="paragraph" l10n="NEW">The following table summarizes the line thickness for the different characters: </paragraph>
+      <table id="tbl_id3149985">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148576" role="tablecontent" l10n="U" oldref="37">---</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154690" role="tablecontent" l10n="U" oldref="38">0.5pt single underline</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154472" role="tablecontent" l10n="U" oldref="39">___</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149266" role="tablecontent" l10n="U" oldref="40">1.0pt single underline</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147580" role="tablecontent" l10n="U" oldref="41">===</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145364" role="tablecontent" l10n="U" oldref="42">1.1pt double underline</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148647" role="tablecontent" l10n="U" oldref="43">***</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152791" role="tablecontent" l10n="U" oldref="44">4.5pt double underline</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146975" role="tablecontent" l10n="U" oldref="45">~~~</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152885" role="tablecontent" l10n="U" oldref="46">6.0pt double underline</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145591" role="tablecontent" l10n="U" oldref="47">###</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153188" role="tablecontent" l10n="U" oldref="48">9.0pt double underline</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+      <embed href="text/shared/guide/line_intext.xhp#line_intext"/>
+      <embed href="text/swriter/guide/insert_line.xhp#insert_line"/>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="hd_id3149064" role="heading" level="3" l10n="U"
+                 oldref="49"><switchinline select="appl"><caseinline select="WRITER">Create table
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146119" role="paragraph" l10n="U" oldref="50"><switchinline select="appl"><caseinline select="WRITER">Creates a table when you press Enter after typing a series of hyphens (-) or tabs separated by plus signs, that is, +------+---+. Plus signs indicate column dividers, while hyphens and tabs indicate the width of a column.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147219" role="paragraph" l10n="U" oldref="53"><switchinline select="appl"><caseinline select="WRITER">+-----------------+---------------+------+
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153334" role="heading" level="3" l10n="U"
+                 oldref="55"><switchinline select="appl"><caseinline select="WRITER">Apply Styles
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147396" role="paragraph" l10n="U" oldref="56"><switchinline select="appl"><caseinline select="WRITER">Automatically replaces the "Default" paragraph style with the Heading 1 to Heading 8 paragraph styles. To apply the Heading 1 paragraph style, type the text that you want to use as a heading (without a period), and then press Enter twice. To apply a sub-heading, press Tab one or more times, type the text (without a period), and then press Enter.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3151075" role="heading" level="3" l10n="U"
+                 oldref="58"><switchinline select="appl"><caseinline select="WRITER">Remove blank paragraphs
+</caseinline></switchinline></paragraph>
+<paragraph xml-lang="en-US" id="par_id3145728" role="paragraph" l10n="U" oldref="59"><switchinline select="appl"><caseinline select="WRITER">Removes empty paragraphs from the current document when you choose <emph>Format - AutoCorrect - Apply</emph>.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3152375" role="heading" level="3" l10n="U"
+                 oldref="60"><switchinline select="appl"><caseinline select="WRITER">Replace Custom Styles
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156299" role="paragraph" l10n="U" oldref="61"><switchinline select="appl"><caseinline select="WRITER">Replaces the custom paragraph styles in the current document with the "Default", the "Text Body", or the "Text Body Indent" paragraph style.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3147045" role="heading" level="3" l10n="U"
+                 oldref="62"><switchinline select="appl"><caseinline select="WRITER">Replace bullets with
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150420" role="paragraph" l10n="U" oldref="63"><switchinline select="appl"><caseinline select="WRITER">Converts paragraphs that start with a hyphen (-), a plus sign (+), or an asterisk (*) directly followed by a space or a tab, to bulleted lists. This option only works on paragraphs that are formatted with the "Default", "Text Body", or "Text Body Indent" paragraph styles. To change the bullet style that is used, select this option, and then click <emph>Edit</emph>.
+</caseinline></switchinline></paragraph>
+<comment>removed "replace standard quotes..." cws cbosdo01</comment>
+<paragraph xml-lang="en-US" id="hd_id3151019" role="heading" level="3" l10n="U"
+                 oldref="66"><switchinline select="appl"><caseinline select="WRITER">Combine single line paragraphs if length greater than ...
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154162" role="paragraph" l10n="U" oldref="67"><switchinline select="appl"><caseinline select="WRITER">Combines consecutive single-line paragraphs into a single paragraph. This option only works on paragraphs that use the "Default" paragraph style. If a paragraph is longer than the specified length value, the paragraph is combined with the next paragraph. To enter a different length value, select the option, and then click <link href="text/swriter/01/05150104.xhp"><emph>Edit</emph></link>.
+</caseinline></switchinline></paragraph>
+<!-- removed HID OFFMGR:PUSHBUTTON:RID_OFAPAGE_AUTOFMT_APPLY:PB_EDIT -->
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_OFAPAGE_AUTOFMT_APPLY:PB_EDIT" id="bm_id9193700" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id1218200910244459" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Modifies the selected AutoCorrect option.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3144749" role="heading" level="2" l10n="U"
+                 oldref="75"><switchinline select="appl"><caseinline select="WRITER">Edit
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153841" role="paragraph" l10n="U" oldref="76"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="OFFMGR:PUSHBUTTON:RID_OFAPAGE_AUTOFMT_APPLY:PB_EDIT">Modifies the selected AutoCorrect option.</ahelp>
+</caseinline></switchinline></paragraph>
+   </body>
+</helpdocument>

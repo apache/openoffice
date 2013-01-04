@@ -1,0 +1,128 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_frame_LayoutManager_idl__
+#define __com_sun_star_frame_LayoutManager_idl__
+
+#ifndef __com_sun_star_frame_XLayoutManager_idl__
+#include <com/sun/star/frame/XLayoutManager.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XFrameActionListener_idl__
+#include <com/sun/star/frame/XFrameActionListener.idl>
+#endif
+
+#ifndef __com_sun_star_ui_XUIConfigurationListener_idl__
+#include <com/sun/star/ui/XUIConfigurationListener.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XInplaceLayout_idl__
+#include <com/sun/star/frame/XInplaceLayout.idl>
+#endif
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__
+#include <com/sun/star/beans/XPropertySet.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XMenuBarMergingAcceptor_idl__
+#include <com/sun/star/frame/XMenuBarMergingAcceptor.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XLayoutManagerEventBroadcaster_idl__
+#include <com/sun/star/frame/XLayoutManagerEventBroadcaster.idl>
+#endif
+
+//============================================================================= 
+
+ module com { module sun { module star { module frame {
+
+//============================================================================= 
+/** controls the layout of user interface elements which are part of a frame.
+
+    <p>
+    Layout management is the process of determining the size and position of 
+    user interface elements. By default, each <type>Frame</type> has a layout 
+    manager -- it performs layout management for the user interface elements 
+    within the frame. User interface elements can provide size and alignment 
+    hints to layout managers, but layout managers have the final decision on 
+    the size and position of those user interface elements. 
+    </p>
+
+    @since OOo 2.0
+*/
+
+service LayoutManager
+{
+    /** central interface to query for, create, destroy and manipulate user 
+        interface elements which are bound to a frame.
+
+        @see ::com::sun::star::frame::XLayoutManager;
+    */
+    interface ::com::sun::star::frame::XLayoutManager;
+        
+    /** notification interface to receive status information about the state 
+        of the connected frame.
+
+        <p>
+        E.g., you can receive events of instantiation/destruction and
+        activation/deactivation of a frame.
+        </p>
+
+        @see XFrame::addFrameActionListener()
+        @see XFrame::removeFrameActionListener()
+    */
+    interface ::com::sun::star::frame::XFrameActionListener;
+
+    /** notification interface to receive change messages of user interface 
+        elements which are part of the layout manager.
+
+        <p>
+        E.g., you can receive events of insertion/replacing and
+        removing of settings data of user interface elements.
+        </p>
+
+        @see com::sun::star::ui::XUIConfiguration
+    */
+    interface ::com::sun::star::ui::XUIConfigurationListener;
+
+    /** provides functions to merge menus for inplace editing of components
+        inside OpenOffice.org.
+    */
+    interface ::com::sun::star::frame::XMenuBarMergingAcceptor;
+
+    /** registers listeners that want to receive layout manager
+        events.
+    */
+    [optional] interface ::com::sun::star::frame::XLayoutManagerEventBroadcaster;
+
+    /** interface to support settings a menu bar for inplace editing of 
+        components inside OpenOffice.org.
+
+        @deprecated
+    */    
+    [optional] interface ::com::sun::star::frame::XInplaceLayout;
+};
+
+}; }; }; };
+
+#endif

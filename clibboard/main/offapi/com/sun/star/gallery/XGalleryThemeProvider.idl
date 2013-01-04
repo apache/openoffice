@@ -1,0 +1,90 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_gallery_XGalleryThemeProvider_idl__
+#define __com_sun_star_gallery_XGalleryThemeProvider_idl__
+
+#ifndef __com_sun_star_gallery_XGalleryTheme_idl__
+#include <com/sun/star/gallery/XGalleryTheme.idl>
+#endif
+#ifndef __com_sun_star_container_XNameAccess_idl__
+#include <com/sun/star/container/XNameAccess.idl>
+#endif
+#ifndef __com_sun_star_container_ElementExistException_idl__
+#include <com/sun/star/container/ElementExistException.idl>
+#endif
+#ifndef __com_sun_star_container_NoSuchElementException_idl__
+#include <com/sun/star/container/NoSuchElementException.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module gallery {
+
+//=============================================================================
+
+/** provides access to the Gallery themes. It also allows inserting and
+	removing of Gallery themes by name.
+
+	<p>This interface extends the interface
+	<type scope="com::sun::star::container">XNameAccess</type> which provides
+	access to existing Gallery themes collection.</p>
+
+	@see com::sun::star::container::XNameAccess
+ */
+interface XGalleryThemeProvider : com::sun::star::container::XNameAccess
+{
+	/** creates a new Gallery theme and adds it to the collection.
+
+		@param ThemeName
+			The name of the Gallery theme to be added to the collection.
+			The name must be unique.
+		
+		@returns XGalleryTheme
+			The created theme interface
+
+		@see com::sun::star::container::ElementExistException
+	 */
+	XGalleryTheme insertNewByName( [in] string ThemeName )
+		raises ( com::sun::star::container::ElementExistException );
+
+	//-------------------------------------------------------------------------
+
+	/** deletes a Gallery theme from the collection.
+
+		@param ThemeName
+			The name of the Gallery theme to be removed. The
+			theme with the given name must exist.
+ 		
+		@see com::sun::star::container::NoSuchElementException
+	*/
+	void removeByName( [in] string ThemeName )
+		raises ( com::sun::star::container::NoSuchElementException );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

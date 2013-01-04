@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0104060104xml" indexer="include">
+<title id="tit" xml-lang="en-US">Information Functions</title>
+<filename>/text/scalc/01/04060104.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147247"><bookmark_value>information functions</bookmark_value>
+<bookmark_value>Function Wizard; information</bookmark_value>
+<bookmark_value>functions; information functions</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147247" xml-lang="en-US" level="1" l10n="U" oldref="1">Information Functions</paragraph>
+<paragraph role="paragraph" id="par_id3147499" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="informationtext">This category contains the <emph>Information</emph> functions. 
+</variable></paragraph>
+<section id="howtoget">
+<embed href="text/scalc/00/00000404.xhp#eikain"/>
+</section>
+<paragraph role="paragraph" id="par_id3159128" xml-lang="en-US" l10n="U" oldref="3">The data in the following table serves as the basis for some of the examples in the function descriptions:</paragraph>
+<table id="tbl_id3157876">
+<tablerow>
+<tablecell>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3146885" xml-lang="en-US" l10n="U" oldref="4">C</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3149944" xml-lang="en-US" l10n="U" oldref="5">D</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150457" xml-lang="en-US" l10n="U" oldref="6">
+<emph>2</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150024" xml-lang="en-US" l10n="U" oldref="7">x <item type="input">value</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3148725" xml-lang="en-US" l10n="U" oldref="8">y <item type="input">value</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150480" xml-lang="en-US" l10n="U" oldref="9">
+<emph>3</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3148440" xml-lang="en-US" l10n="U" oldref="10">
+<item type="input">-5</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3148888" xml-lang="en-US" l10n="U" oldref="11">
+<item type="input">-3</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153034" xml-lang="en-US" l10n="U" oldref="12">
+<emph>4</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150139" xml-lang="en-US" l10n="U" oldref="13">
+<item type="input">-2</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149542" xml-lang="en-US" l10n="U" oldref="14">
+<item type="input">0</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149188" xml-lang="en-US" l10n="U" oldref="15">
+<emph>5</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153329" xml-lang="en-US" l10n="U" oldref="16">
+<item type="input">-1</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155257" xml-lang="en-US" l10n="U" oldref="17">
+<item type="input">1</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145142" xml-lang="en-US" l10n="U" oldref="18">
+<emph>6</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149956" xml-lang="en-US" l10n="U" oldref="19">
+<item type="input">0</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145594" xml-lang="en-US" l10n="U" oldref="20">
+<item type="input">3</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153113" xml-lang="en-US" l10n="U" oldref="21">
+<emph>7</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3148573" xml-lang="en-US" l10n="U" oldref="22">
+<item type="input">2</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145166" xml-lang="en-US" l10n="U" oldref="23">
+<item type="input">4</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3157998" xml-lang="en-US" l10n="U" oldref="24">
+<emph>8</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150018" xml-lang="en-US" l10n="U" oldref="25">
+<item type="input">4</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150129" xml-lang="en-US" l10n="U" oldref="26">
+<item type="input">6</item>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145245" xml-lang="en-US" l10n="U" oldref="27">
+<emph>9</emph>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3148389" xml-lang="en-US" l10n="U" oldref="28">
+<item type="input">6</item>
+</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156068" xml-lang="en-US" l10n="U" oldref="29">
+<item type="input">8</item>
+</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<sort order="asc">
+<section id="info">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3691824"><bookmark_value>INFO function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_INFO" id="bm_id5369426" localize="false"/>
+<paragraph role="heading" id="hd_id5787224" xml-lang="en-US" level="2" l10n="NEW">INFO</paragraph>
+<paragraph role="paragraph" id="par_id1507309" xml-lang="en-US" l10n="NEW">Returns specific information about the current working environment. The function receives a single text argument and returns data depending on that parameter.</paragraph>
+<paragraph role="heading" id="hd_id7693411" xml-lang="en-US" level="3" l10n="NEW">Syntax</paragraph>
+<paragraph role="code" id="par_id3928952" xml-lang="en-US" l10n="NEW">INFO("Type")</paragraph>
+<paragraph role="paragraph" id="par_id5206762" xml-lang="en-US" l10n="NEW">The following table lists the values for the text parameter <item type="literal">Type</item> and the return values of the INFO function.</paragraph>
+<table id="tbl_id1342204">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id5735953" xml-lang="en-US" l10n="NEW">Value for "Type"<comment>Do not translate the text values in this column below</comment></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id8360850" xml-lang="en-US" l10n="NEW">Return value</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id9648731" xml-lang="en-US" l10n="NEW">"osversion"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id908841" xml-lang="en-US" l10n="NEW">Always "Windows (32-bit) NT 5.01", for compatibility reasons</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id8193914" xml-lang="en-US" l10n="NEW">"system"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id9841608" xml-lang="en-US" l10n="NEW">The type of the operating system. <br/>"WNT" for Microsoft Windows <br/>"LINUX" for Linux <br/>"SOLARIS" for Solaris</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id2701803" xml-lang="en-US" l10n="NEW">"release"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id2136295" xml-lang="en-US" l10n="NEW">The product release identifier, for example "300m25(Build:9876)"</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id9200109" xml-lang="en-US" l10n="NEW">"numfile"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id4186223" xml-lang="en-US" l10n="NEW">Always 1, for compatibility reasons</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id5766472" xml-lang="en-US" l10n="NEW">"recalc"</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id1491134" xml-lang="en-US" l10n="NEW">Current formula recalculation mode, either "Automatic" or "Manual" (localized into %PRODUCTNAME language)</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="note" id="par_id1161534" xml-lang="en-US" l10n="NEW">Other spreadsheet applications may accept localized values for the <item type="literal">Type</item> parameter, but %PRODUCTNAME Calc will only accept the English values.</paragraph>
+<paragraph role="heading" id="hd_id5459456" xml-lang="en-US" level="3" l10n="NEW">Example</paragraph>
+<paragraph role="paragraph" id="par_id3994567" xml-lang="en-US" l10n="NEW">
+<item type="input">=INFO("release")</item> returns the product release number of the %PRODUCTNAME in use.<comment>Do not translate "release"</comment></paragraph>
+<paragraph role="paragraph" id="par_id2873622" xml-lang="en-US" l10n="NEW">
+<item type="input">=INFO(D5)</item> with cell <item type="literal">D5</item> containing a text string <item type="literal">system</item> returns the operation system type.<comment>Do not translate the hlp_literal system</comment></paragraph>
+</section>
+<section id="current">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155625"><bookmark_value>CURRENT function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_AKTUELL" id="bm_id3145295" localize="false"/>
+<paragraph role="heading" id="hd_id3155625" xml-lang="en-US" level="2" l10n="U" oldref="30">CURRENT</paragraph>
+<paragraph role="paragraph" id="par_id3157975" xml-lang="en-US" l10n="CHG" oldref="31"><ahelp hid="HID_FUNC_AKTUELL">This function returns the result to date of evaluating the formula of which it is a part (in other words the result as far as that evaluation has got). Its main use is together with the STYLE() function to apply selected styles to a cell depending on the cell contents.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148880" xml-lang="en-US" level="3" l10n="U" oldref="32">Syntax</paragraph>
+<paragraph role="code" id="par_id3150930" xml-lang="en-US" l10n="U" oldref="33">CURRENT()</paragraph>
+<paragraph role="heading" id="hd_id3145629" xml-lang="en-US" level="3" l10n="U" oldref="34">Example</paragraph>
+<paragraph role="paragraph" id="par_id5919064" xml-lang="en-US" l10n="NEW">
+<item type="input">=1+2+CURRENT()</item>
+</paragraph>
+<paragraph role="paragraph" id="par_id8751792" xml-lang="en-US" l10n="NEW">The example returns 6. The formula is calculated from left to right as: 1 + 2 equals 3, giving the result to date when CURRENT() is encountered; CURRENT() therefore yields 3, which is added to the original 3 to give 6.</paragraph>
+<paragraph role="paragraph" id="par_id5863826" xml-lang="en-US" l10n="NEW">
+<item type="input">=A2+B2+STYLE(IF(CURRENT()&gt;10;”Red”;”Default”))</item>
+</paragraph>
+<paragraph role="paragraph" id="par_id7463911" xml-lang="en-US" l10n="NEW">The example returns A2 + B2 (STYLE returns 0 here). If this sum is greater than 10, the style Red is applied to the cell. See the <emph>STYLE</emph> function for more explanation.</paragraph>
+<paragraph role="paragraph" id="par_id7318643" xml-lang="en-US" l10n="NEW">
+<item type="input">="choo"&amp;CURRENT()</item>
+</paragraph>
+<paragraph role="paragraph" id="par_id6019165" xml-lang="en-US" l10n="NEW">The example returns choochoo.</paragraph>
+</section>
+<section id="formula">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150688"><bookmark_value>FORMULA function</bookmark_value>
+<bookmark_value>formula cells;displaying formulas in other cells</bookmark_value>
+<bookmark_value>displaying;formulas at any position</bookmark_value>
+</bookmark><comment>mw added "formula cells;" and "displaying;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FORMEL" id="bm_id3155373" localize="false"/>
+<paragraph role="heading" id="hd_id3150688" xml-lang="en-US" level="2" l10n="U" oldref="147">FORMULA</paragraph>
+<paragraph role="paragraph" id="par_id3158417" xml-lang="en-US" l10n="CHG" oldref="148"><ahelp hid="HID_FUNC_FORMEL">Displays the formula of a formula cell as a text string.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154954" xml-lang="en-US" level="3" l10n="U" oldref="149">Syntax</paragraph>
+<paragraph role="code" id="par_id3147535" xml-lang="en-US" l10n="CHG" oldref="150">FORMULA(Reference)</paragraph>
+<paragraph role="paragraph" id="par_id3014313" xml-lang="en-US" l10n="NEW">
+<emph>Reference</emph> is a reference to a cell containing a formula.</paragraph>
+<paragraph role="paragraph" id="par_id8857081" xml-lang="en-US" l10n="NEW">An invalid reference or a reference to a cell with no formula results in the error value #N/A.</paragraph>
+<paragraph role="heading" id="hd_id3152820" xml-lang="en-US" level="3" l10n="U" oldref="151">Example</paragraph>
+<paragraph role="paragraph" id="par_id3153179" xml-lang="en-US" l10n="CHG" oldref="152">If cell A8 contains the formula <item type="input">=SUM(1;2;3)</item> then</paragraph>
+<paragraph role="paragraph" id="par_id3153923" xml-lang="en-US" l10n="CHG" oldref="153">
+<item type="input">=FORMULA(A8)</item> returns the text =SUM(1;2;3).</paragraph>
+</section>
+<section id="isref">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155409"><bookmark_value>ISREF function</bookmark_value>
+<bookmark_value>references;testing cell contents</bookmark_value>
+<bookmark_value>cell contents;testing for references</bookmark_value>
+</bookmark><comment>mw added "references;" and "cell contents;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTBEZUG" id="bm_id3149774" localize="false"/>
+<paragraph role="heading" id="hd_id3155409" xml-lang="en-US" level="2" l10n="U" oldref="37">ISREF</paragraph>
+<paragraph role="paragraph" id="par_id3153723" xml-lang="en-US" l10n="CHG" oldref="38"><ahelp hid="HID_FUNC_ISTBEZUG">Tests if the argument is a reference.</ahelp> Returns TRUE if the argument is a reference, returns FALSE otherwise. When given a reference this function does not examine the value being referenced.<comment>i82565</comment></paragraph>
+<embed href="text/shared/00/00000001.xhp#wahr"/>
+<paragraph role="heading" id="hd_id3147175" xml-lang="en-US" level="3" l10n="U" oldref="39">Syntax</paragraph>
+<paragraph role="code" id="par_id3149821" xml-lang="en-US" l10n="U" oldref="40">ISREF(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3146152" xml-lang="en-US" l10n="U" oldref="41">
+<emph>Value</emph> is the value to be tested, to determine whether it is a reference.</paragraph>
+<paragraph role="heading" id="hd_id3083448" xml-lang="en-US" level="3" l10n="U" oldref="42">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154317" xml-lang="en-US" l10n="CHG" oldref="43">
+<item type="input">=ISREF(C5)</item> returns the result TRUE because C5 is a valid reference.</paragraph>
+<paragraph role="paragraph" id="par_id9728072" xml-lang="en-US" l10n="CHG">
+<item type="input">=ISREF("abcdef")</item> returns always FALSE because a text can never be a reference.</paragraph>
+<paragraph role="paragraph" id="par_id2131544" xml-lang="en-US" l10n="NEW">
+<item type="input">=ISREF(4)</item> returns FALSE.</paragraph>
+<paragraph role="paragraph" id="par_id4295480" xml-lang="en-US" l10n="NEW">
+<item type="input">=ISREF(INDIRECT("A6"))</item> returns TRUE, because INDIRECT is a function that returns a reference.</paragraph>
+<paragraph role="paragraph" id="par_id3626819" xml-lang="en-US" l10n="NEW">
+<item type="input">=ISREF(ADDRESS(1; 1; 2;"Sheet2"))</item> returns FALSE, because ADDRESS is a function that returns a text, although it looks like a reference.</paragraph>
+</section>
+<section id="iserr">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154812"><bookmark_value>ISERR function</bookmark_value>
+<bookmark_value>error codes;controlling</bookmark_value>
+</bookmark><comment>mw added "error codes,"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTFEHL" id="bm_id3145081" localize="false"/>
+<paragraph role="heading" id="hd_id3154812" xml-lang="en-US" level="2" l10n="U" oldref="45">ISERR</paragraph>
+<paragraph role="paragraph" id="par_id3149282" xml-lang="en-US" l10n="CHG" oldref="46"><ahelp hid="HID_FUNC_ISTFEHL">Tests for error conditions, except the #N/A error value, and returns TRUE or FALSE.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#wahr"/>
+<paragraph role="heading" id="hd_id3149450" xml-lang="en-US" level="3" l10n="U" oldref="47">Syntax</paragraph>
+<paragraph role="code" id="par_id3156312" xml-lang="en-US" l10n="U" oldref="48">ISERR(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3146857" xml-lang="en-US" l10n="CHG" oldref="49">
+<emph>Value</emph> is any value or expression which is tested to see whether an error value other than #N/A is present.</paragraph>
+<paragraph role="heading" id="hd_id3153212" xml-lang="en-US" level="3" l10n="U" oldref="50">Example</paragraph>
+<paragraph role="paragraph" id="par_id3153276" xml-lang="en-US" l10n="CHG" oldref="51">
+<item type="input">=ISERR(C8)</item> where cell C8 contains <item type="input">=1/0</item> returns TRUE, because 1/0 is an error.</paragraph>
+<paragraph role="paragraph" id="par_id8456984" xml-lang="en-US" l10n="NEW">
+<item type="input">=ISERR(C9)</item> where cell C9 contains <item type="input">=NA()</item> returns FALSE, because ISERR() ignores the #N/A error.</paragraph>
+</section>
+<section id="iserror">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147081"><bookmark_value>ISERROR function</bookmark_value>
+<bookmark_value>recognizing;general errors</bookmark_value>
+</bookmark><comment>mw added "recognizing;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTFEHLER" id="bm_id3145206" localize="false"/>
+<paragraph role="heading" id="hd_id3147081" xml-lang="en-US" level="2" l10n="U" oldref="53">ISERROR</paragraph>
+<paragraph role="paragraph" id="par_id3156316" xml-lang="en-US" l10n="CHG" oldref="54"><ahelp hid="HID_FUNC_ISTFEHLER">Tests for error conditions, including the #N/A error value, and returns TRUE or FALSE.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#wahr"/>
+<paragraph role="heading" id="hd_id3147569" xml-lang="en-US" level="3" l10n="U" oldref="55">Syntax</paragraph>
+<paragraph role="code" id="par_id3153155" xml-lang="en-US" l10n="U" oldref="56">ISERROR(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3154047" xml-lang="en-US" l10n="CHG" oldref="57">
+<emph>Value</emph> is or refers to the value to be tested. ISERROR() returns TRUE if there is an error and FALSE if not.</paragraph>
+<paragraph role="heading" id="hd_id3155994" xml-lang="en-US" level="3" l10n="U" oldref="58">Example</paragraph>
+<paragraph role="paragraph" id="par_id3150256" xml-lang="en-US" l10n="CHG" oldref="59">
+<item type="input">=ISERROR(C8)</item> where cell C8 contains <item type="input">=1/0</item> returns TRUE, because 1/0 is an error.</paragraph>
+<paragraph role="paragraph" id="par_id1889095" xml-lang="en-US" l10n="NEW">
+<item type="input">=ISERROR(C9)</item> where cell C9 contains <item type="input">=NA()</item> returns TRUE.</paragraph>
+</section>
+<section id="isformula">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153618"><bookmark_value>ISFORMULA function</bookmark_value>
+<bookmark_value>recognizing formula cells</bookmark_value>
+<bookmark_value>formula cells;recognizing</bookmark_value>
+</bookmark><comment>mw inserted "recognizing..." and "formula cells;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTFORMEL" id="bm_id3154740" localize="false"/>
+<paragraph role="heading" id="hd_id3153618" xml-lang="en-US" level="2" l10n="U" oldref="61">ISFORMULA</paragraph>
+<paragraph role="paragraph" id="par_id3149138" xml-lang="en-US" l10n="U" oldref="62"><ahelp hid="HID_FUNC_ISTFORMEL">Returns TRUE if a cell is a formula cell.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#wahr"/>
+<paragraph role="heading" id="hd_id3155100" xml-lang="en-US" level="3" l10n="U" oldref="63">Syntax</paragraph>
+<paragraph role="code" id="par_id3143230" xml-lang="en-US" l10n="U" oldref="64">ISFORMULA(Reference)</paragraph>
+<paragraph role="paragraph" id="par_id3150150" xml-lang="en-US" l10n="U" oldref="65">
+<emph>Reference</emph> indicates the reference to a cell in which a test will be performed to determine if it contains a formula.</paragraph>
+<paragraph role="heading" id="hd_id3147491" xml-lang="en-US" level="3" l10n="U" oldref="66">Example</paragraph>
+<paragraph role="paragraph" id="par_id3159182" xml-lang="en-US" l10n="CHG" oldref="67">
+<item type="input">=ISFORMULA(C4)</item> returns FALSE if the cell C4 contains the number <item type="input">5</item>.</paragraph>
+</section>
+<section id="iseven_add">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149760"><bookmark_value>ISEVEN_ADD function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ISEVEN" id="bm_id3146094" localize="false"/>
+<paragraph role="heading" id="hd_id3149760" xml-lang="en-US" level="2" oldref="229">ISEVEN_ADD</paragraph>
+<paragraph role="paragraph" id="par_id3147253" xml-lang="en-US" l10n="CHG" oldref="230"><ahelp hid="HID_AAI_FUNC_ISEVEN">Tests for even numbers. Returns 1 if the number divided by 2 returns a whole number.</ahelp></paragraph>
+<embed href="text/scalc/01/04060102.xhp#ADD_note"/>
+<paragraph role="heading" id="hd_id3152799" xml-lang="en-US" level="3" l10n="U" oldref="231">Syntax</paragraph>
+<paragraph role="code" id="par_id3149202" xml-lang="en-US" l10n="U" oldref="232">ISEVEN_ADD(Number)</paragraph>
+<paragraph role="paragraph" id="par_id3151168" xml-lang="en-US" l10n="CHG" oldref="233">
+<emph>Number</emph> is the number to be tested.</paragraph>
+<paragraph role="heading" id="hd_id3150115" xml-lang="en-US" level="3" l10n="U" oldref="234">Example</paragraph>
+<paragraph role="paragraph" id="par_id3153904" xml-lang="en-US" l10n="U" oldref="235">
+<item type="input">=ISEVEN_ADD(5)</item> returns 0.</paragraph>
+<paragraph role="paragraph" id="par_id6238308" xml-lang="en-US" l10n="NEW">
+<item type="input">=ISEVEN_ADD(A1)</item> returns 1 if cell A1 contains the number <item type="input">2</item>.</paragraph>
+</section>
+<section id="isnontext">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154692"><bookmark_value>ISNONTEXT function</bookmark_value>
+<bookmark_value>cell contents;no text</bookmark_value>
+</bookmark><comment>mw added "cell contents;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTKTEXT" id="bm_id3159342" localize="false"/>
+<paragraph role="heading" id="hd_id3154692" xml-lang="en-US" level="2" l10n="U" oldref="68">ISNONTEXT</paragraph>
+<paragraph role="paragraph" id="par_id3155330" xml-lang="en-US" l10n="U" oldref="69"><ahelp hid="HID_FUNC_ISTKTEXT">Tests if the cell contents are text or numbers, and returns FALSE if the contents are text.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id5719779" xml-lang="en-US" l10n="NEW">If an error occurs, the function returns TRUE.</paragraph>
+<paragraph role="heading" id="hd_id3154931" xml-lang="en-US" level="3" l10n="U" oldref="70">Syntax</paragraph>
+<paragraph role="code" id="par_id3148829" xml-lang="en-US" l10n="U" oldref="71">ISNONTEXT(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3146992" xml-lang="en-US" l10n="U" oldref="72">
+<emph>Value</emph> is any value or expression where a test is performed to determine whether it is a text or numbers or a Boolean value.</paragraph>
+<paragraph role="heading" id="hd_id3150525" xml-lang="en-US" level="3" l10n="U" oldref="73">Example</paragraph>
+<paragraph role="paragraph" id="par_id3149906" xml-lang="en-US" l10n="CHG" oldref="74">
+<item type="input">=ISNONTEXT(D2)</item> returns FALSE if cell D2 contains the text <item type="input">abcdef</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3150777" xml-lang="en-US" l10n="CHG" oldref="75">
+<item type="input">=ISNONTEXT(D9)</item> returns TRUE if cell D9 contains the number <item type="input">8</item>.</paragraph>
+</section>
+<section id="isblank">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159148"><bookmark_value>ISBLANK function</bookmark_value>
+<bookmark_value>blank cell contents</bookmark_value>
+<bookmark_value>empty cells; recognizing</bookmark_value>
+</bookmark><comment>mw added "blank..." and "empty cells;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTLEER" id="bm_id3148940" localize="false"/>
+<paragraph role="heading" id="hd_id3159148" xml-lang="en-US" level="2" l10n="U" oldref="77">ISBLANK</paragraph>
+<paragraph role="paragraph" id="par_id3148800" xml-lang="en-US" l10n="U" oldref="78"><ahelp hid="HID_FUNC_ISTLEER">Returns TRUE if the reference to a cell is blank.</ahelp> This function is used to determine if the content of a cell is empty. A cell with a formula inside is not empty. </paragraph>
+<embed href="text/shared/00/00000001.xhp#wahr"/>
+<paragraph role="heading" id="hd_id3159162" xml-lang="en-US" level="3" l10n="U" oldref="79">Syntax</paragraph>
+<paragraph role="code" id="par_id3158406" xml-lang="en-US" l10n="U" oldref="80">ISBLANK(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3154212" xml-lang="en-US" l10n="U" oldref="81">
+<emph>Value</emph> is the content to be tested.</paragraph>
+<paragraph role="heading" id="hd_id3147508" xml-lang="en-US" level="3" l10n="U" oldref="82">Example</paragraph>
+<paragraph role="paragraph" id="par_id3147234" xml-lang="en-US" l10n="U" oldref="83">
+<item type="input">=ISBLANK(D2)</item> returns FALSE as a result.</paragraph>
+</section>
+<section id="islogical">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155356"><bookmark_value>ISLOGICAL function</bookmark_value>
+<bookmark_value>number formats;logical</bookmark_value>
+<bookmark_value>logical number formats</bookmark_value>
+</bookmark><comment>mw added "number formats;" and "logical..."</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTLOG" id="bm_id3158424" localize="false"/>
+<paragraph role="heading" id="hd_id3155356" xml-lang="en-US" level="2" l10n="U" oldref="85">ISLOGICAL</paragraph>
+<paragraph role="paragraph" id="par_id3148926" xml-lang="en-US" l10n="CHG" oldref="86"><ahelp hid="HID_FUNC_ISTLOG">Tests for a logical value (TRUE or FALSE).</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3541062" xml-lang="en-US" l10n="NEW">If an error occurs, the function returns FALSE.</paragraph>
+<paragraph role="heading" id="hd_id3149162" xml-lang="en-US" level="3" l10n="U" oldref="87">Syntax</paragraph>
+<paragraph role="code" id="par_id3148918" xml-lang="en-US" l10n="U" oldref="88">ISLOGICAL(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3146946" xml-lang="en-US" l10n="CHG" oldref="89">Returns TRUE if <emph>Value</emph> is a logical value (TRUE or FALSE), and returns FALSE otherwise.</paragraph>
+<paragraph role="heading" id="hd_id3150709" xml-lang="en-US" level="3" l10n="U" oldref="90">Example</paragraph>
+<paragraph role="paragraph" id="par_id3166442" xml-lang="en-US" l10n="CHG" oldref="91">
+<item type="input">=ISLOGICAL(99)</item> returns FALSE, because 99 is a number, not a logical value.</paragraph>
+<paragraph role="paragraph" id="par_id3556016" xml-lang="en-US" l10n="NEW">
+<item type="input">=ISLOGICAL(ISNA(D4))</item> returns TRUE whatever the contents of cell D4, because ISNA() returns a logical value.</paragraph>
+</section>
+<section id="isna">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153685"><bookmark_value>ISNA function</bookmark_value>
+<bookmark_value>#N/A error;recognizing</bookmark_value>
+</bookmark><comment>mw added "#N/A ..."</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTNV" id="bm_id3159273" localize="false"/>
+<paragraph role="heading" id="hd_id3153685" xml-lang="en-US" level="2" l10n="U" oldref="93">ISNA</paragraph>
+<paragraph role="paragraph" id="par_id3149105" xml-lang="en-US" l10n="U" oldref="94"><ahelp hid="HID_FUNC_ISTNV">Returns TRUE if a cell contains the #N/A (value not available) error value.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id6018860" xml-lang="en-US" l10n="NEW">If an error occurs, the function returns FALSE.</paragraph>
+<paragraph role="heading" id="hd_id3152947" xml-lang="en-US" level="3" l10n="U" oldref="95">Syntax</paragraph>
+<paragraph role="code" id="par_id3153748" xml-lang="en-US" l10n="U" oldref="96">ISNA(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3152884" xml-lang="en-US" l10n="U" oldref="97">
+<emph>Value</emph> is the value or expression to be tested.</paragraph>
+<paragraph role="heading" id="hd_id3149964" xml-lang="en-US" level="3" l10n="U" oldref="98">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154852" xml-lang="en-US" l10n="U" oldref="99">
+<item type="input">=ISNA(D3)</item> returns FALSE as a result.</paragraph>
+</section>
+<section id="istext">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149426"><bookmark_value>ISTEXT function</bookmark_value>
+<bookmark_value>cell contents;text</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTTEXT" id="bm_id3148468" localize="false"/>
+<paragraph role="heading" id="hd_id3149426" xml-lang="en-US" level="2" l10n="U" oldref="101">ISTEXT</paragraph>
+<paragraph role="paragraph" id="par_id3145368" xml-lang="en-US" l10n="U" oldref="102"><ahelp hid="HID_FUNC_ISTTEXT">Returns TRUE if the cell contents refer to text.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id6779686" xml-lang="en-US" l10n="NEW">If an error occurs, the function returns FALSE.</paragraph>
+<paragraph role="heading" id="hd_id3154332" xml-lang="en-US" level="3" l10n="U" oldref="103">Syntax</paragraph>
+<paragraph role="code" id="par_id3148649" xml-lang="en-US" l10n="U" oldref="104">ISTEXT(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3150417" xml-lang="en-US" l10n="U" oldref="105">
+<emph>Value</emph> is a value, number, Boolean value, or an error value to be tested.</paragraph>
+<paragraph role="heading" id="hd_id3149239" xml-lang="en-US" level="3" l10n="U" oldref="106">Example</paragraph>
+<paragraph role="paragraph" id="par_id3144756" xml-lang="en-US" l10n="CHG" oldref="107">
+<item type="input">=ISTEXT(D9)</item> returns TRUE if cell D9 contains the text <item type="input">abcdef</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3148416" xml-lang="en-US" l10n="CHG" oldref="108">
+<item type="input">=ISTEXT(C3)</item> returns FALSE if cell C3 contains the number <item type="input">3</item>.</paragraph>
+</section>
+<section id="isodd_add">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153939"><bookmark_value>ISODD_ADD function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ISODD" id="bm_id3149927" localize="false"/>
+<paragraph role="heading" id="hd_id3153939" xml-lang="en-US" level="2" oldref="236">ISODD_ADD</paragraph>
+<paragraph role="paragraph" id="par_id3153538" xml-lang="en-US" l10n="U" oldref="237"><ahelp hid="HID_AAI_FUNC_ISODD">Returns TRUE (1) if the number does not return a whole number when divided by 2.</ahelp></paragraph>
+<embed href="text/scalc/01/04060102.xhp#ADD_note"/>
+<paragraph role="heading" id="hd_id3145601" xml-lang="en-US" level="3" l10n="U" oldref="238">Syntax</paragraph>
+<paragraph role="code" id="par_id3149485" xml-lang="en-US" l10n="U" oldref="239">ISODD_ADD(Number)</paragraph>
+<paragraph role="paragraph" id="par_id3153315" xml-lang="en-US" l10n="U" oldref="240">
+<emph>Number</emph> is the number to be tested.</paragraph>
+<paragraph role="heading" id="hd_id3143274" xml-lang="en-US" level="3" l10n="U" oldref="241">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154793" xml-lang="en-US" l10n="U" oldref="242">
+<item type="input">=ISODD_ADD(5)</item> returns 1.</paragraph>
+</section>
+<section id="isnumber">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148688"><bookmark_value>ISNUMBER function</bookmark_value>
+<bookmark_value>cell contents;numbers</bookmark_value>
+</bookmark><comment>mw added "cell contents;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTZAHL" id="bm_id3149587" localize="false"/>
+<paragraph role="heading" id="hd_id3148688" xml-lang="en-US" level="2" l10n="U" oldref="110">ISNUMBER</paragraph>
+<paragraph role="paragraph" id="par_id3154618" xml-lang="en-US" l10n="U" oldref="111"><ahelp hid="HID_FUNC_ISTZAHL">Returns TRUE if the value refers to a number.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#wahr"/>
+<paragraph role="heading" id="hd_id3152769" xml-lang="en-US" level="3" l10n="U" oldref="112">Syntax</paragraph>
+<paragraph role="code" id="par_id3150595" xml-lang="en-US" l10n="U" oldref="113">ISNUMBER(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3150351" xml-lang="en-US" l10n="U" oldref="114">
+<emph>Value</emph> is any expression to be tested to determine whether it is a number or text.</paragraph>
+<paragraph role="heading" id="hd_id3146793" xml-lang="en-US" level="3" l10n="U" oldref="115">Example</paragraph>
+<paragraph role="paragraph" id="par_id3155614" xml-lang="en-US" l10n="CHG" oldref="116">
+<item type="input">=ISNUMBER(C3)</item> returns TRUE if the cell C3 contains the number <item type="input">4</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3154417" xml-lang="en-US" l10n="CHG" oldref="117">
+<item type="input">=ISNUMBER(C2)</item> returns FALSE if the cell C2 contains the text <item type="input">abcdef</item>.</paragraph>
+</section>
+<section id="n">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153694"><bookmark_value>N function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_N" id="bm_id3153786" localize="false"/>
+<paragraph role="heading" id="hd_id3153694" xml-lang="en-US" level="2" l10n="U" oldref="119">N</paragraph>
+<paragraph role="paragraph" id="par_id3150405" xml-lang="en-US" l10n="CHG" oldref="120"><ahelp hid="HID_FUNC_N">Returns the numeric value of the given parameter. Returns 0 if parameter is text, FALSE or #NA.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id9115573" xml-lang="en-US" l10n="NEW">If an error occurs, other than #NA, the function returns the error value.</paragraph>
+<paragraph role="heading" id="hd_id3145774" xml-lang="en-US" level="3" l10n="U" oldref="121">Syntax</paragraph>
+<paragraph role="code" id="par_id3153883" xml-lang="en-US" l10n="U" oldref="122">N(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3151101" xml-lang="en-US" l10n="CHG" oldref="123">
+<emph>Value</emph> is the parameter to be converted into a number. N() returns the numeric value if it can. It returns the logical values TRUE and FALSE as 1 and 0 respectively. It returns text and errors as 0.</paragraph>
+<paragraph role="heading" id="hd_id3147097" xml-lang="en-US" level="3" l10n="U" oldref="124">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154117" xml-lang="en-US" l10n="CHG" oldref="125">
+<item type="input">=N(123)</item> returns 123</paragraph>
+<paragraph role="paragraph" id="par_id2337717" xml-lang="en-US" l10n="NEW">
+<item type="input">=N(TRUE)</item> returns 1</paragraph>
+<paragraph role="paragraph" id="par_id3153781" xml-lang="en-US" l10n="U" oldref="126">
+<item type="input">=N(FALSE)</item> returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3154670" xml-lang="en-US" l10n="U" oldref="243">
+<item type="input">=N("abc")</item> returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3519089" xml-lang="en-US" l10n="NEW">=N(1/0) returns #DIV/0!</paragraph>
+</section>
+<section id="na">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156275"><bookmark_value>NA function</bookmark_value>
+<bookmark_value>#N/A error;assigning to a cell</bookmark_value>
+</bookmark><comment>mw added "#N/A error;"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_NV" id="bm_id3154569" localize="false"/>
+<paragraph role="heading" id="hd_id3156275" xml-lang="en-US" level="2" l10n="U" oldref="129">NA</paragraph>
+<paragraph role="paragraph" id="par_id3156161" xml-lang="en-US" l10n="U" oldref="130"><ahelp hid="HID_FUNC_NV">Returns the error value #N/A.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147532" xml-lang="en-US" level="3" l10n="U" oldref="131">Syntax</paragraph>
+<paragraph role="code" id="par_id3149563" xml-lang="en-US" l10n="U" oldref="132">NA()</paragraph>
+<paragraph role="heading" id="hd_id3155128" xml-lang="en-US" level="3" l10n="U" oldref="133">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154481" xml-lang="en-US" l10n="U" oldref="134">
+<item type="input">=NA()</item> converts the contents of the cell into #N/A.</paragraph>
+</section>
+<section id="type">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151255"><bookmark_value>TYPE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TYP" id="bm_id3146127" localize="false"/>
+<paragraph role="heading" id="hd_id3151255" xml-lang="en-US" level="2" l10n="U" oldref="136">TYPE</paragraph>
+<paragraph role="paragraph" id="par_id3155900" xml-lang="en-US" l10n="U" oldref="137"><ahelp hid="HID_FUNC_TYP">Returns the type of value.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#wahr"/>
+<paragraph role="heading" id="hd_id3149992" xml-lang="en-US" level="3" l10n="U" oldref="138">Syntax</paragraph>
+<paragraph role="code" id="par_id3148400" xml-lang="en-US" l10n="U" oldref="139">TYPE(Value)</paragraph>
+<paragraph role="paragraph" id="par_id3150830" xml-lang="en-US" l10n="U" oldref="140">
+<emph>Value</emph> is a specific value for which the data type is determined. Value 1 = number, value 2 = text, value 4 = Boolean value, value 8 = formula, value 16 = error value.</paragraph>
+<paragraph role="heading" id="hd_id3154363" xml-lang="en-US" level="3" l10n="U" oldref="141">Example (see example table above)</paragraph>
+<paragraph role="paragraph" id="par_id3153357" xml-lang="en-US" l10n="U" oldref="142">
+<item type="input">=TYPE(C2)</item> returns 2 as a result.</paragraph>
+<paragraph role="paragraph" id="par_id3148980" xml-lang="en-US" l10n="U" oldref="143">
+<item type="input">=TYPE(D9)</item> returns 1 as a result.</paragraph>
+</section>
+<section id="cell">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155509"><bookmark_value>CELL function</bookmark_value>
+<bookmark_value>cell information</bookmark_value>
+<bookmark_value>information on cells</bookmark_value>
+</bookmark><comment>mw added two entries</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZELLE" id="bm_id3159412" localize="false"/>
+<paragraph role="heading" id="hd_id3155509" xml-lang="en-US" level="2" l10n="U" oldref="154">CELL</paragraph>
+<paragraph role="paragraph" id="par_id3153196" xml-lang="en-US" l10n="U" oldref="155"><ahelp hid="HID_FUNC_ZELLE">Returns information on address, formatting or contents of a cell.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149323" xml-lang="en-US" level="3" l10n="U" oldref="156">Syntax</paragraph>
+<paragraph role="code" id="par_id3147355" xml-lang="en-US" l10n="U" oldref="157">CELL("InfoType"; Reference)</paragraph>
+<paragraph role="paragraph" id="par_id3154716" xml-lang="en-US" l10n="U" oldref="158">
+<emph>InfoType</emph> is the character string that specifies the type of information. The character string is always in English. Upper or lower case is optional.</paragraph>
+<table id="tbl_id3152470">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id3150636" xml-lang="en-US" l10n="U" oldref="165">InfoType</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3149344" xml-lang="en-US" l10n="U" oldref="166">Meaning</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3153266" xml-lang="en-US" l10n="U" oldref="167">COL</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156204" xml-lang="en-US" l10n="U" oldref="168">Returns the number of the referenced column.</paragraph>
+<paragraph role="tablecontent" id="par_id3150094" xml-lang="en-US" l10n="U" oldref="162">
+<item type="input">=CELL("COL";D2)</item> returns 4.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3151276" xml-lang="en-US" l10n="U" oldref="169">ROW</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147583" xml-lang="en-US" l10n="U" oldref="170">Returns the number of the referenced row.</paragraph>
+<paragraph role="tablecontent" id="par_id3151222" xml-lang="en-US" l10n="U" oldref="163">
+<item type="input">=CELL("ROW";D2)</item> returns 2.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3159217" xml-lang="en-US" l10n="U" oldref="171">SHEET</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3151201" xml-lang="en-US" l10n="U" oldref="172">Returns the number of the referenced sheet.</paragraph>
+<paragraph role="tablecontent" id="par_id3149169" xml-lang="en-US" l10n="U" oldref="164">
+<item type="input">=CELL("Sheet";Sheet3.D2)</item> returns 3.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3149431" xml-lang="en-US" l10n="U" oldref="173">ADDRESS</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156054" xml-lang="en-US" l10n="U" oldref="174">Returns the absolute address of the referenced cell.</paragraph>
+<paragraph role="tablecontent" id="par_id3154136" xml-lang="en-US" l10n="U" oldref="175">
+<item type="input">=CELL("ADDRESS";D2)</item> returns $D$2.</paragraph>
+<paragraph role="tablecontent" id="par_id3159198" xml-lang="en-US" l10n="U" oldref="176">
+<item type="input">=CELL("ADDRESS";Sheet3.D2)</item> returns $Sheet3.$D$2.</paragraph>
+<paragraph role="tablecontent" id="par_id3150245" xml-lang="en-US" l10n="U" oldref="177">
+<item type="input">=CELL("ADDRESS";'X:\dr\test.sxc'#$Sheet1.D2)</item> returns 'file:///X:/dr/test.sxc'#$Sheet1.$D$2.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3146811" xml-lang="en-US" l10n="U" oldref="178">FILENAME</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3151328" xml-lang="en-US" l10n="U" oldref="179">Returns the file name and the sheet number of the referenced cell.</paragraph>
+<paragraph role="tablecontent" id="par_id3148896" xml-lang="en-US" l10n="U" oldref="180">
+<item type="input">=CELL("FILENAME";D2)</item> returns 'file:///X:/dr/own.sxc'#$Sheet1, if the formula in the current document X:\dr\own.sxc is located in Sheet1.</paragraph>
+<paragraph role="tablecontent" id="par_id3155144" xml-lang="en-US" l10n="U" oldref="181">
+<item type="input">=CELL("FILENAME";'X:\dr\test.sxc'#$Sheet1.D2)</item> returns 'file:///X:/dr/test.sxc'#$Sheet1.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3151381" xml-lang="en-US" l10n="U" oldref="182">COORD</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3151004" xml-lang="en-US" l10n="U" oldref="183">Returns the complete cell address in Lotus(TM) notation.</paragraph>
+<paragraph role="tablecontent" id="par_id3159104" xml-lang="en-US" l10n="U" oldref="184">
+<item type="input">=CELL("COORD"; D2)</item> returns $A:$D$2.</paragraph>
+<paragraph role="tablecontent" id="par_id3163720" xml-lang="en-US" l10n="U" oldref="185">
+<item type="input">=CELL("COORD"; Sheet3.D2)</item> returns $C:$D$2.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3155910" xml-lang="en-US" l10n="U" oldref="186">CONTENTS</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156041" xml-lang="en-US" l10n="U" oldref="187">Returns the contents of the referenced cell, without any formatting.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3151069" xml-lang="en-US" l10n="U" oldref="188">TYPE</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155344" xml-lang="en-US" l10n="U" oldref="189">Returns the type of cell contents.</paragraph>
+<paragraph role="tablecontent" id="par_id3145217" xml-lang="en-US" l10n="U" oldref="190">b = blank. empty cell</paragraph>
+<paragraph role="tablecontent" id="par_id3155176" xml-lang="en-US" l10n="U" oldref="191">l = label. Text, result of a formula as text</paragraph>
+<paragraph role="tablecontent" id="par_id3147280" xml-lang="en-US" l10n="U" oldref="192">v = value. Value, result of a formula as a number</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3156348" xml-lang="en-US" l10n="U" oldref="193">WIDTH</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154920" xml-lang="en-US" l10n="U" oldref="194">Returns the width of the referenced column. The unit is the number of zeros (0) that fit into the column in the default text and the default size.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3152355" xml-lang="en-US" l10n="U" oldref="195">PREFIX</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154230" xml-lang="en-US" l10n="U" oldref="196">Returns the alignment of the referenced cell.</paragraph>
+<paragraph role="tablecontent" id="par_id3155946" xml-lang="en-US" l10n="U" oldref="197">' = align left or left-justified</paragraph>
+<paragraph role="tablecontent" id="par_id3147220" xml-lang="en-US" l10n="U" oldref="198">" = align right</paragraph>
+<paragraph role="tablecontent" id="par_id3149038" xml-lang="en-US" l10n="U" oldref="199">^ = centered</paragraph>
+<paragraph role="tablecontent" id="par_id3153129" xml-lang="en-US" l10n="U" oldref="200">\ = repeating (currently inactive)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3154406" xml-lang="en-US" l10n="U" oldref="201">PROTECT</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145127" xml-lang="en-US" l10n="U" oldref="202">Returns the status of the cell protection for the cell.</paragraph>
+<paragraph role="tablecontent" id="par_id3155794" xml-lang="en-US" l10n="U" oldref="203">1 = cell is protected</paragraph>
+<paragraph role="tablecontent" id="par_id3155072" xml-lang="en-US" l10n="U" oldref="204">0 = cell is not protected</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3156178" xml-lang="en-US" l10n="U" oldref="205">FORMAT</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150220" xml-lang="en-US" l10n="U" oldref="206">Returns a character string that indicates the number format.</paragraph>
+<paragraph role="tablecontent" id="par_id3153824" xml-lang="en-US" l10n="U" oldref="207">, = number with thousands separator</paragraph>
+<paragraph role="tablecontent" id="par_id3153837" xml-lang="en-US" l10n="U" oldref="208">F = number without thousands separator</paragraph>
+<paragraph role="tablecontent" id="par_id3150318" xml-lang="en-US" l10n="U" oldref="209">C = currency format</paragraph>
+<paragraph role="tablecontent" id="par_id3153168" xml-lang="en-US" l10n="U" oldref="210">S = exponential representation, for example, 1.234+E56</paragraph>
+<paragraph role="tablecontent" id="par_id3153515" xml-lang="en-US" l10n="U" oldref="211">P = percentage</paragraph>
+<paragraph role="tablecontent" id="par_id3154375" xml-lang="en-US" l10n="U" oldref="212">In the above formats, the number of decimal places after the decimal separator is given as a number. Example: the number format #,##0.0 returns ,1 and the number format 00.000% returns P3</paragraph>
+<paragraph role="tablecontent" id="par_id3150575" xml-lang="en-US" l10n="U" oldref="213">D1 = MMM-D-YY, MM-D-YY and similar formats</paragraph>
+<paragraph role="tablecontent" id="par_id3150589" xml-lang="en-US" l10n="U" oldref="214">D2 = DD-MM</paragraph>
+<paragraph role="tablecontent" id="par_id3151034" xml-lang="en-US" l10n="U" oldref="215">D3 = MM-YY</paragraph>
+<paragraph role="tablecontent" id="par_id3156371" xml-lang="en-US" l10n="U" oldref="216">D4 = DD-MM-YYYY HH:MM:SS</paragraph>
+<paragraph role="tablecontent" id="par_id3157881" xml-lang="en-US" l10n="U" oldref="217">D5 = MM-DD</paragraph>
+<paragraph role="tablecontent" id="par_id3157894" xml-lang="en-US" l10n="U" oldref="218">D6 = HH:MM:SS AM/PM</paragraph>
+<paragraph role="tablecontent" id="par_id3154068" xml-lang="en-US" l10n="U" oldref="219">D7 = HH:MM AM/PM</paragraph>
+<paragraph role="tablecontent" id="par_id3150286" xml-lang="en-US" l10n="U" oldref="220">D8 = HH:MM:SS</paragraph>
+<paragraph role="tablecontent" id="par_id3145756" xml-lang="en-US" l10n="U" oldref="221">D9 = HH:MM</paragraph>
+<paragraph role="tablecontent" id="par_id3145768" xml-lang="en-US" l10n="U" oldref="222">G = All other formats</paragraph>
+<paragraph role="tablecontent" id="par_id3153375" xml-lang="en-US" l10n="U" oldref="223">- (Minus) at the end = negative numbers are formatted in color</paragraph>
+<paragraph role="tablecontent" id="par_id3155545" xml-lang="en-US" l10n="U" oldref="224">() (brackets) at the end = there is an opening bracket in the format code</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3154594" xml-lang="en-US" l10n="U" oldref="225">COLOR</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3152922" xml-lang="en-US" l10n="U" oldref="226">Returns 1, if negative values have been formatted in color, otherwise 0.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="code" id="par_id3145563" xml-lang="en-US" l10n="U" oldref="227">PARENTHESES</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156072" xml-lang="en-US" l10n="U" oldref="228">Returns 1 if the format code contains an opening bracket (, otherwise 0.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3156090" xml-lang="en-US" l10n="U" oldref="159">
+<emph>Reference</emph> (list of options) is the position of the cell to be examined. If <emph>Reference</emph> is a range, the cell moves to the top left of the range. If <emph>Reference</emph> is missing, $[officename] Calc uses the position of the cell in which this formula is located. Microsoft Excel uses the reference of the cell in which the cursor is positioned.</paragraph>
+</section>
+</sort>
+<section id="relatedtopics">
+<embed href="text/scalc/01/04060100.xhp#drking"/>
+</section>
+</body>
+</helpdocument>

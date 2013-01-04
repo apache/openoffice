@@ -1,0 +1,58 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+Module gid_Module_Optional_OGLTrans
+    PackageInfo = "packinfo_office.txt";
+    MOD_NAME_DESC(MODULE_OPTIONAL_OGLTRANS);
+    ParentID = gid_Module_Optional;
+    Files = ( gid_File_Lib_OpenGLTransitions, gid_File_Share_Config_Sofficecfg_Impress_Transitions_OGL_Xml, gid_File_Share_Registry_Ogltrans_Xcd );
+    Minimal = NO;
+    Default = NO;
+End
+
+File gid_File_Lib_OpenGLTransitions
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = SCP2_OOO_BIN_DIR;
+  #ifdef UNX
+    Name = STRING(CONCAT2(OGLTrans.uno,UNXSUFFIX));
+  #else
+    Name = "OGLTrans.uno.dll";
+  #endif
+End
+
+File gid_File_Share_Config_Sofficecfg_Impress_Transitions_OGL_Xml
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Config_Sofficecfg_Simpress;
+    Name = "transitions-ogl.xml";
+End
+
+File gid_File_Share_Registry_Ogltrans_Xcd
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Registry;
+    Name = "ogltrans.xcd";
+End

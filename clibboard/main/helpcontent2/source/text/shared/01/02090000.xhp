@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0102090000xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Select All</title>
+<filename>/text/shared/01/02090000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="auswaehlen">
+  <bookmark xml-lang="en-US" branch="hid/.uno:SelectAll" id="bm_id1119112" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:SelectAll" xml-lang="en-US" id="bm_id3159079"/><bookmark xml-lang="en-US" branch="hid/.uno:Select" id="bm_id9111451" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:Select" xml-lang="en-US" id="bm_id3154788"/><paragraph id="hd_id3145138" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/shared/01/02090000.xhp" name="Select All">Select All</link></paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3149999" xml-lang="en-US" oldref="2"><variable id="allestext"><ahelp hid=".uno:Select" visibility="visible">Selects the entire content of the current file, frame, or text object.</ahelp></variable></paragraph>
+  </section>
+  <paragraph l10n="U" role="paragraph" id="par_id3155261" xml-lang="en-US" oldref="3"><switchinline select="appl"> <caseinline select="CALC">To select all of the cells on a sheet, click the button at the intersection of the column and row header in the top left corner of the sheet.</caseinline> <defaultinline/> </switchinline></paragraph>
+  <section id="howtoget">
+  <embed href="text/shared/00/00000402.xhp#alles"/>
+</section>
+  <bookmark xml-lang="en-US" branch="hid/.uno:TableSelectAll" id="bm_id4889160" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:TableSelectAll" xml-lang="en-US" id="bm_id3152349"/><paragraph l10n="U" role="paragraph" id="par_id3154046" xml-lang="en-US" oldref="4"><switchinline select="appl"> <caseinline select="CALC">To select all of the sheets in a spreadsheet file, right-click the name tab of a sheet, and then choose <emph>Select All Sheets</emph>.<ahelp hid=".uno:TableSelectAll" visibility="hidden">Selects all of the sheets in the current spreadsheet.</ahelp></caseinline> <defaultinline/> </switchinline></paragraph>
+ </body>
+</helpdocument>

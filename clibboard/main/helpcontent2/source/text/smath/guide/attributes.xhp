@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmathguideattributesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Changing Default Attributes</title>
+<filename>/text/smath/guide/attributes.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-09-05T15:19:39">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145792"><bookmark_value>attributes; changing in $[officename] Math</bookmark_value>
+<bookmark_value>font attributes;changing defaults</bookmark_value>
+<bookmark_value>formatting;changing default attributes</bookmark_value>
+<bookmark_value>defaults;changing default formatting</bookmark_value>
+<bookmark_value>changing;default formatting</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3145792" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="attributes"><link href="text/smath/guide/attributes.xhp" name="Changing Default Attributes">Changing Default Attributes</link>
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3154484" xml-lang="en-US" level="3" l10n="U" oldref="2">Can default formats in $[officename] Math be modified?</paragraph>
+<paragraph role="paragraph" id="par_id3148870" xml-lang="en-US" l10n="U" oldref="3">Some parts of formulas are always formatted bold or italic by default.</paragraph>
+<paragraph role="paragraph" id="par_id3150210" xml-lang="en-US" l10n="U" oldref="7">You can remove these attributes using "nbold" and "nitalic". Example:</paragraph>
+<paragraph role="code" id="par_id3143231" xml-lang="en-US" l10n="U" oldref="6">a + b</paragraph>
+<paragraph role="code" id="par_id3153810" xml-lang="en-US" l10n="U" oldref="5">nitalic a + bold b.</paragraph>
+<paragraph role="paragraph" id="par_id3149872" xml-lang="en-US" l10n="U" oldref="4">In the second formula, the a is not italic. The b is bold. You cannot change the plus sign by this method.</paragraph>
+<section id="relatedtopics">
+<embed href="text/smath/guide/main.xhp#main"/>
+</section>
+</body>
+</helpdocument>

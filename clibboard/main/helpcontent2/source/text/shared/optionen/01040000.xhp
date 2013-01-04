@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01040000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text Document Options</title>
+<filename>/text/shared/optionen/01040000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-10-06T16:23:56">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:SwEditOptions" id="bm_id7223842" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:SwEditOptions" id="bm_id3148491" localize="false"/>
+<paragraph role="heading" id="hd_id3155628" xml-lang="en-US" level="1" l10n="U" oldref="1">%PRODUCTNAME Writer Options</paragraph>
+<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="2"><variable id="optionentextdokument"><ahelp hid=".uno:SwEditOptions">These settings determine the way text documents that are created in $[officename] are handled. It is also possible to define settings for the current text document.</ahelp>
+</variable> The global settings are automatically saved.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#optionentextdokument"/>
+</section>
+<embed href="text/shared/optionen/01040900.xhp#laden"/>
+<embed href="text/shared/optionen/01040200.xhp#layout"/>
+<embed href="text/shared/optionen/01040600.xhp#schattencursor"/>
+<embed href="text/shared/optionen/01050100.xhp#raster"/>
+<paragraph role="heading" id="hd_id3159399" xml-lang="en-US" level="2" l10n="U" oldref="5"><link href="text/shared/optionen/01040300.xhp" name="Basic Fonts (Western)">Basic Fonts (Western)</link></paragraph>
+<paragraph role="paragraph" id="par_id3151385" xml-lang="en-US" l10n="U" oldref="3">Specifies the settings for the basic fonts.</paragraph>
+<paragraph role="heading" id="hd_id3148563" xml-lang="en-US" level="2" l10n="U" oldref="6"><link href="text/shared/optionen/01040300.xhp" name="Basic Fonts (Asian)">Basic Fonts (Asian)</link></paragraph>
+<paragraph role="paragraph" id="par_id3147304" xml-lang="en-US" l10n="U" oldref="4">Specifies the settings for the basic Asian fonts if Asian language support has been activated under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages.</emph>
+</paragraph>
+<paragraph role="heading" id="hd_id3149294" xml-lang="en-US" level="2" l10n="U" oldref="7"><link href="text/shared/optionen/01040300.xhp" name="Basic Fonts (CTL)">Basic Fonts (CTL)</link></paragraph>
+<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U" oldref="8">Specifies the settings for basic fonts for complex text layout languages if their support has been activated under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages</emph>.</paragraph>
+<embed href="text/shared/optionen/01040400.xhp#drucken"/>
+<embed href="text/shared/optionen/01040500.xhp#tabelle"/>
+<embed href="text/shared/optionen/01040700.xhp#aenderungen"/>
+<embed href="text/shared/optionen/01041000.xhp#compatibility"/>
+<embed href="text/shared/optionen/01041100.xhp#autocaption"/>
+<embed href="text/shared/optionen/mailmerge.xhp#mailmerge"/>
+</body>
+</helpdocument>

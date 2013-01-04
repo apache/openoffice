@@ -1,0 +1,91 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+File gid_File_Lib_Placeware
+#ifdef OS2
+    Name = LIBNAME(placewar);
+#else
+    Name = LIBNAME(placeware);
+#endif
+    PACKED_LIB_FILE_BODY;
+End
+
+File gid_File_Lib_Animcore
+	Name = SPECIAL_NAME(animcore);
+	PACKED_LIB_FILE_BODY;
+End
+
+File gid_File_Share_Registry_Impress_Xcd
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Registry;
+    Name = "impress.xcd";
+End
+
+File gid_File_Help_Simpress_Zip
+    Dir = gid_Dir_Help_Isolanguage;
+    TXT_FILE_BODY;
+    Styles = (ARCHIVE,DONT_OVERWRITE);
+    EXTRA_ALL_GOOD_HELP_LOCALIZATIONS_LANG(simpress);
+    Patchfiles = (); 
+End
+
+File gid_File_Exe_Simpress
+    BIN_FILE_BODY;
+    Dir = gid_Brand_Dir_Program;
+    Name = EXENAME(simpress);
+  #ifdef WNT
+    FileDescription = "%PRODUCTNAME Impress";
+    Styles = (PACKED, PATCH_SO_NAME);
+  #else
+    Styles = (PACKED);
+  #endif
+End
+
+// new user interface configuration files
+/*
+File gid_File_Share_Config_Sofficecfg_Impress_Menubar_Xml
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Config_Sofficecfg_Simpress_Menubar;
+    Name = "/uiconfig/simpress/menubar/menubar.xml";
+End
+*/
+
+// configuration files for custom animation effects
+
+File gid_File_Share_Config_Sofficecfg_Impress_Effects_Xml
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Config_Sofficecfg_Simpress;
+    Name = "effects.xml";
+End
+
+File gid_File_Share_Config_Sofficecfg_Impress_Transitions_Xml
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Config_Sofficecfg_Simpress;
+    Name = "transitions.xml";
+End

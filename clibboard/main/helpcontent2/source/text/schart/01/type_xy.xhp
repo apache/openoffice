@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textschart01type_xyxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Chart Type XY</title>
+<filename>/text/schart/01/type_xy.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id84231"><bookmark_value>scatter charts</bookmark_value>
+<bookmark_value>XY charts</bookmark_value>
+<bookmark_value>chart types;XY (scatter)</bookmark_value>
+<bookmark_value>error indicators in charts</bookmark_value>
+<bookmark_value>error bars in charts</bookmark_value>
+<bookmark_value>averages in charts</bookmark_value>
+<bookmark_value>statistics in charts</bookmark_value>
+<bookmark_value>variances in charts</bookmark_value>
+<bookmark_value>standard deviation in charts</bookmark_value>
+</bookmark><comment>mw changed xy to XY (2x)</comment>
+<paragraph role="heading" id="hd_id9346598" xml-lang="en-US" level="1" l10n="NEW"><variable id="type_xy"><link href="text/schart/01/type_xy.xhp">Chart Type XY (Scatter)</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id2003845" xml-lang="en-US" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type. </paragraph>
+<section id="howtoget">
+<embed href="text/schart/00/00000004.xhp#wiz"/>
+</section>
+<paragraph role="heading" id="hd_id7757194" xml-lang="en-US" level="2" l10n="NEW">XY (Scatter)</paragraph>
+<paragraph role="paragraph" id="par_id5977965" xml-lang="en-US" l10n="NEW">An XY chart in its basic form is based on one data series consisting of a name, a list of x‑values, and a list of y‑values. Each value pair (x|y) is shown as a point in a coordinate system. The name of the data series is associated with the y‑values and shown in the legend.</paragraph>
+<paragraph role="paragraph" id="par_id4381847" xml-lang="en-US" l10n="NEW">Choose an XY chart for the following example tasks:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id1336710" xml-lang="en-US" l10n="NEW">scale the x‑axis</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1221655" xml-lang="en-US" l10n="CHG">generate a parameter curve, for example a spiral</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3397320" xml-lang="en-US" l10n="NEW">draw the graph of a function</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id7657399" xml-lang="en-US" l10n="NEW">explore the statistical association of quantitative variables</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id8925138" xml-lang="en-US" l10n="NEW">Your XY chart may have more than one data series.</paragraph>
+<paragraph role="heading" id="hd_id5461897" xml-lang="en-US" level="2" l10n="NEW">XY Chart Variants</paragraph>
+<paragraph role="paragraph" id="par_id8919339" xml-lang="en-US" l10n="NEW">You can choose an XY chart variant on the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link>, or by choosing <item type="menuitem">Format - Chart Type </item>for a chart in edit mode.</paragraph>
+<paragraph role="paragraph" id="par_id4634235" xml-lang="en-US" l10n="NEW">The chart is created with default settings. After the chart is finished, you can edit its properties to change the appearance. Line styles and icons can be changed on the <emph>Line</emph>tab page of the data series properties dialog.</paragraph>
+<paragraph role="paragraph" id="par_id5482039" xml-lang="en-US" l10n="CHG">Double-click any data point to open the <item type="menuitem">Data Series</item> dialog. In this dialog, you can change many properties of the data series.</paragraph>
+<paragraph role="paragraph" id="par_id0805200810492449" xml-lang="en-US" l10n="NEW">For 2D charts, you can choose <item type="menuitem">Insert - Y Error Bars</item> to enable the display of error bars.</paragraph>
+<paragraph role="paragraph" id="par_id6221198" xml-lang="en-US" l10n="NEW">You can enable the display of mean value lines and trend lines using commands on the Insert menu.</paragraph>
+<paragraph role="heading" id="hd_id1393475" xml-lang="en-US" level="3" l10n="NEW">Points only</paragraph>
+<paragraph role="paragraph" id="par_id6571550" xml-lang="en-US" l10n="NEW">Each data point is shown by an icon. %PRODUCTNAME uses default icons with different forms and colors for each data series. The default colors are set in <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Charts - Default Colors</item>. </paragraph>
+<paragraph role="heading" id="hd_id5376140" xml-lang="en-US" level="3" l10n="NEW">Lines Only</paragraph>
+<paragraph role="paragraph" id="par_id4408093" xml-lang="en-US" l10n="NEW">This variant draws straight lines from one data point to the next. The data points are not shown by icons. </paragraph>
+<paragraph role="paragraph" id="par_id7261268" xml-lang="en-US" l10n="NEW">The drawing order is the same as the order in the data series. Mark <emph>Sort by X Values</emph> to draw the lines in the order of the x values. This sorting applies only to the chart, not to the data in the table.</paragraph>
+<paragraph role="heading" id="hd_id6949369" xml-lang="en-US" level="3" l10n="NEW">Points and Lines</paragraph>
+<paragraph role="paragraph" id="par_id9611499" xml-lang="en-US" l10n="NEW">This variant shows points and lines at the same time.</paragraph>
+<paragraph role="heading" id="hd_id6765953" xml-lang="en-US" level="3" l10n="NEW">3D Lines</paragraph>
+<paragraph role="paragraph" id="par_id7422711" xml-lang="en-US" l10n="NEW">The lines are shown like tapes. The data points are not shown by icons. In the finished chart choose <link href="text/schart/01/three_d_view.xhp">3D View</link> to set properties like illumination and angle of view.</paragraph>
+<paragraph role="heading" id="hd_id239265" xml-lang="en-US" level="3" l10n="NEW">Smooth Lines</paragraph>
+<paragraph role="paragraph" id="par_id7957396" xml-lang="en-US" l10n="CHG">Mark <emph>Smooth Lines</emph> to draw curves instead of straight line segments.<comment>i80587</comment></paragraph>
+<paragraph role="paragraph" id="par_id1202124" xml-lang="en-US" l10n="NEW">Click <emph>Properties</emph> to set details for the curves.</paragraph>
+<paragraph role="paragraph" id="par_id5989562" xml-lang="en-US" l10n="NEW">
+<emph>Cubic Spline</emph> interpolates your data points with polynomials of degree 3. The transitions between the polynomial pieces are smooth, having the same slope and curvature. </paragraph>
+<paragraph role="paragraph" id="par_id6128421" xml-lang="en-US" l10n="NEW">The <emph>Resolution</emph> determines how many line segments are calculated to draw a piece of polynomial between two data points. You can see the intermediate points if you click any data point.</paragraph>
+<paragraph role="paragraph" id="par_id9280373" xml-lang="en-US" l10n="NEW">
+<emph>B-Spline</emph> uses the data points as control points to form a B-spline curve. Those curves are built piecewise from polynomials. The <emph>Data points order</emph> sets the degree k of these polynomials. <comment>Besides the first and last point the curve doesn't go through the data points but lays inside the convex hull of each k+1 adjacent data points. Having Resolution r and n+1 data points, r times n uniform line segments are used to draw the whole curve.</comment></paragraph><comment>Regina: watch issue 72218, which would bring a change to UI</comment>
+<section id="relatedtopics">
+<embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+<embed href="text/schart/01/wiz_chart_type.xhp#wiz_chart_type"/>
+<embed href="text/schart/01/wiz_data_range.xhp#wiz_data_range"/>
+<embed href="text/schart/01/wiz_data_series.xhp#wiz_data_series"/>
+<embed href="text/schart/01/wiz_chart_elements.xhp#wiz_chart_elements"/>
+</section>
+</body>
+</helpdocument>

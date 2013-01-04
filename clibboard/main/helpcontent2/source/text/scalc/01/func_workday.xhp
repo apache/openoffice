@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_workdayxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">WORKDAY</title>
+<filename>/text/scalc/01/func_workday.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149012"><bookmark_value>WORKDAY function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_WORKDAY" id="bm_id3150028" localize="false"/><paragraph role="heading" id="hd_id3149012" xml-lang="en-US" level="2" l10n="U" oldref="186"><variable id="workday"><link href="text/scalc/01/func_workday.xhp">WORKDAY</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149893" xml-lang="en-US" l10n="U" oldref="187"><ahelp hid="HID_AAI_FUNC_WORKDAY"> The result is a date number that can be formatted as a date. You then see the date of a day that is a certain number of <emph>workdays</emph> away from the <emph>start date</emph>.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3146944" xml-lang="en-US" level="3" l10n="U" oldref="188">Syntax</paragraph>
+<paragraph role="code" id="par_id3154844" xml-lang="en-US" l10n="U" oldref="189">WORKDAY(StartDate; Days; Holidays)</paragraph>
+<paragraph role="paragraph" id="par_id3147469" xml-lang="en-US" l10n="U" oldref="190">
+<emph>StartDate</emph> is the date from when the calculation is carried out. If the start date is a workday, the day is included in the calculation.</paragraph>
+<paragraph role="paragraph" id="par_id3153038" xml-lang="en-US" l10n="U" oldref="191">
+<emph>Days</emph> is the number of workdays. Positive value for a result after the start date, negative value for a result before the start date.</paragraph>
+<paragraph role="paragraph" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="192">
+<emph>Holidays</emph> is a list of optional holidays. These are non-working days. Enter a cell range in which the holidays are listed individually.</paragraph>
+<paragraph role="heading" id="hd_id3150141" xml-lang="en-US" level="3" l10n="U" oldref="193">Example</paragraph>
+<paragraph role="paragraph" id="par_id3152782" xml-lang="en-US" l10n="CHG" oldref="194">What date came 17 workdays after 1 December 2001? Enter the start date "2001-12-01" in C3 and the number of workdays in D3. Cells F3 to J3 contain the following Christmas and New Year holidays: "2001-12-24", "2001-12-25", "2001-12-26", "2001-12-31", "2002-01-01".</paragraph>
+<paragraph role="paragraph" id="par_id3146142" xml-lang="en-US" l10n="CHG" oldref="195">=WORKDAY(C3;D3;F3:J3) returns 2001-12-28. Format the serial date number as a date, for example in the format YYYY-MM-DD.<comment>UFI: fixed #i30213#</comment></paragraph>
+</body>
+</helpdocument>

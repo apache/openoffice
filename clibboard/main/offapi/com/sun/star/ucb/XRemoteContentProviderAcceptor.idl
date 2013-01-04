@@ -1,0 +1,101 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XRemoteContentProviderAcceptor_idl__
+#define __com_sun_star_ucb_XRemoteContentProviderAcceptor_idl__
+
+#ifndef __com_sun_star_lang_XMultiServiceFactory_idl__
+#include <com/sun/star/lang/XMultiServiceFactory.idl>
+#endif
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+ published interface XRemoteContentProviderDoneListener;
+
+//=============================================================================
+/** Accept remote content providers that want to make themselves known to the
+	local process.
+
+	@version 1.0
+	@author Stephan Bergmann
+*/
+published interface XRemoteContentProviderAcceptor: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/** Add a remote content provider.
+
+		@param Identifier  An arbitrary identifier uniquely identifying the
+		remote content provider.
+
+		@param Factory  A factory through which the remote content provider's
+		<type>UniversalContentBroker</type> service can be instantiated.
+
+		@param Templates  A sequence of URL templates the remote content
+		provider is willing to handle.
+
+		@param DoneListener  If not null, the implementation of this interface
+		can---through this callback---tell the calling side that the
+		implementation no longer needs the remote content provider.  (And the
+		calling side should call 
+        <member>XRemoteContentProviderAcceptor::removeRemoteContentProvider</member>
+		then.)
+
+		To enable connection control, it is recommended that this argument
+		also implements the interface
+		<type>XRemoteContentProviderConnectionControl</type>.
+
+		@return  true if the remote content provider has successfully been
+		added.
+	*/
+	boolean
+	addRemoteContentProvider([in] string Identifier,
+							 [in] com::sun::star::lang::XMultiServiceFactory
+							         Factory,
+							 [in] sequence< string > Templates,
+							 [in] XRemoteContentProviderDoneListener
+							 		 DoneListener);
+
+	//-------------------------------------------------------------------------
+	/** Remove a remote content provider.
+
+		@param Identifier  An arbitrary identifier uniquely identifying the
+		remote content provider.
+
+		@return  true if the remote content provider has successfully been
+		removed.
+	*/
+	boolean
+	removeRemoteContentProvider([in] string Identifier);
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

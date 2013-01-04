@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01060600xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Changes</title>
+<filename>/text/shared/optionen/01060600.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-05-17T11:26:32">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="aenderungen">
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_OPREDLINE" id="bm_id3149233" localize="false"/>
+<paragraph role="heading" id="hd_id3159399" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01060600.xhp" name="Changes">Changes</link></paragraph>
+<paragraph role="paragraph" id="par_id3155390" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SCPAGE_OPREDLINE">The<emph> Changes </emph>dialog specifies various options for highlighting recorded changes in documents.</ahelp></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U" oldref="13">To record changes to your work, choose <link href="text/shared/01/02230000.xhp" name="Edit - Changes"><emph>Edit - Changes</emph></link>.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#exopaen"/>
+</section>
+<paragraph role="heading" id="hd_id3152812" xml-lang="en-US" level="2" l10n="U" oldref="3">Color Definition for Changes</paragraph>
+<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="CHG" oldref="4">Defines colors for recorded changes. If you select the "By author" entry, $[officename] will automatically set the color depending on the author who undertook the changes.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_OPREDLINE:CLB_CONTENT" id="bm_id3153192" localize="false"/>
+<paragraph role="heading" id="hd_id3150400" xml-lang="en-US" level="3" l10n="U" oldref="5">Changes</paragraph>
+<paragraph role="paragraph" id="par_id3148451" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SC:LISTBOX:RID_SCPAGE_OPREDLINE:CLB_CONTENT">Specifies the color for changes of cell contents.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_OPREDLINE:CLB_REMOVE" id="bm_id3152920" localize="false"/>
+<paragraph role="heading" id="hd_id3158410" xml-lang="en-US" level="3" l10n="U" oldref="7">Deletions</paragraph>
+<paragraph role="paragraph" id="par_id3147084" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SC:LISTBOX:RID_SCPAGE_OPREDLINE:CLB_REMOVE">Specifies the color to highlight deletions in a document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_OPREDLINE:CLB_INSERT" id="bm_id3154123" localize="false"/>
+<paragraph role="heading" id="hd_id3154685" xml-lang="en-US" level="3" l10n="U" oldref="9">Insertions</paragraph>
+<paragraph role="paragraph" id="par_id3151383" xml-lang="en-US" l10n="CHG" oldref="10"><ahelp hid="SC:LISTBOX:RID_SCPAGE_OPREDLINE:CLB_INSERT">Specifies the color to highlight insertions in a document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_OPREDLINE:CLB_MOVE" id="bm_id3156422" localize="false"/>
+<paragraph role="heading" id="hd_id3125863" xml-lang="en-US" level="3" l10n="U" oldref="11">Moved entries</paragraph>
+<paragraph role="paragraph" id="par_id3159151" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SC:LISTBOX:RID_SCPAGE_OPREDLINE:CLB_MOVE">Specifies the color to highlight moved cell contents.</ahelp></paragraph>
+</body>
+</helpdocument>

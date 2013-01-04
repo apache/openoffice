@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabase05020100xml" indexer="exclude" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Relations</title>
+<filename>/text/shared/explorer/database/05020100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-28T10:38:34">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBAddRelation" id="bm_id3155150" localize="false"/>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150499"><bookmark_value>relations; properties (Base)</bookmark_value>
+<bookmark_value>key fields for relations (Base)</bookmark_value>
+<bookmark_value>cascading update (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)" to all entries</comment>
+<paragraph role="heading" id="hd_id3150445" xml-lang="en-US" level="1" l10n="U" oldref="1">Relations</paragraph>
+<paragraph role="paragraph" id="par_id3150499" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:DBAddRelation">Allows you to define and edit a relation between two tables.</ahelp></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000450.xhp#relationen"/>
+</section>
+<paragraph role="note" id="par_id3155136" xml-lang="en-US" l10n="U" oldref="3">The update and delete options are only available if they are supported by the database used.</paragraph>
+<!-- removed HID DBACCESS_LISTBOX_DLG_REL_PROPERTIES_LB_LEFT_TABLE -->
+<!-- removed HID DBACCESS_LISTBOX_DLG_REL_PROPERTIES_LB_RIGHT_TABLE -->
+<paragraph role="heading" id="hd_id3155341" xml-lang="en-US" level="2" l10n="U" oldref="27">Tables</paragraph>
+<paragraph role="paragraph" id="par_id3153880" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="DBACCESS_LISTBOX_DLG_REL_PROPERTIES_LB_RIGHT_TABLE" visibility="hidden">This is where the two related tables are listed.</ahelp>If you create a new relation, you can select one table from each of the combo boxes in the top part of the dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3154047" xml-lang="en-US" l10n="U" oldref="29">If you opened the <emph>Relations</emph> dialog for an existing relation by double-clicking the connection lines in the Relation window, then the tables involved in the relation cannot be modified.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_RELDLG_KEYFIELDS" id="bm_id3153716" localize="false"/>
+<paragraph role="heading" id="hd_id3153822" xml-lang="en-US" level="2" l10n="U" oldref="4">Key fields</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="HID_RELDLG_KEYFIELDS">Defines the key fields for the relation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_RELATIONDIALOG_LEFTFIELDCELL" id="bm_id3153561" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_RELATIONDIALOG_RIGHTFIELDCELL" id="bm_id3153543" localize="false"/>
+<paragraph role="paragraph" id="par_id3149235" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="HID_RELATIONDIALOG_RIGHTFIELDCELL">The names of the tables selected for the link appear here as column names.</ahelp> If you click a field, you can use the arrow buttons to select a field from the table. Each relation is written in a row.</paragraph>
+<paragraph role="heading" id="hd_id3145609" xml-lang="en-US" level="2" l10n="U" oldref="6">Update options</paragraph>
+<paragraph role="paragraph" id="par_id3153061" xml-lang="en-US" l10n="U" oldref="7">Here you can select options that take effect when there are changes to a primary key field.</paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_NO_CASC_UPD -->
+<paragraph role="heading" id="hd_id3149046" xml-lang="en-US" level="3" l10n="U" oldref="8">No action</paragraph>
+<paragraph role="paragraph" id="par_id3152360" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_NO_CASC_UPD">Specifies that any change made to a primary key does not affect other external key fields.</ahelp></paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_UPD -->
+<paragraph role="heading" id="hd_id3148664" xml-lang="en-US" level="3" l10n="U" oldref="10">Updating cascade</paragraph>
+<paragraph role="paragraph" id="par_id3154073" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_UPD">Updates all the external key fields if the value of the corresponding primary key has been modified (Cascading Update).</ahelp></paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_UPD_NULL -->
+<paragraph role="heading" id="hd_id3145171" xml-lang="en-US" level="3" l10n="U" oldref="12">Set null</paragraph>
+<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_UPD_NULL"> If the corresponding primary key has been modified, use this option to set the "IS NULL" value to all external key fields. IS NULL means that the field is empty.</ahelp></paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_UPD_DEFAULT -->
+<paragraph role="heading" id="hd_id3150448" xml-lang="en-US" level="3" l10n="U" oldref="14">Set default</paragraph>
+<paragraph role="paragraph" id="par_id3151041" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_UPD_DEFAULT"> If the corresponding primary key has been modified, use this option to set a default value to all external key fields.</ahelp> During the creation of the corresponding table, the default value of an external key field will be defined when you assign the field properties.</paragraph>
+<paragraph role="heading" id="hd_id3125863" xml-lang="en-US" level="2" l10n="U" oldref="16">Delete options</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="17">Here you can select options that take effect when a primary key field is deleted.</paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_NO_CASC_DEL -->
+<paragraph role="heading" id="hd_id3159252" xml-lang="en-US" level="3" l10n="U" oldref="18">No action</paragraph>
+<paragraph role="paragraph" id="par_id3145785" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_NO_CASC_DEL">Specifies that the deletion of a primary key will not have any effect on other external key fields.</ahelp></paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL -->
+<paragraph role="heading" id="hd_id3154146" xml-lang="en-US" level="3" l10n="U" oldref="20">Delete cascade</paragraph>
+<paragraph role="paragraph" id="par_id3155309" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL">Specifies that all external key fields will be deleted if you delete the corresponding primary key field.</ahelp></paragraph>
+<paragraph role="warning" id="par_id3153140" xml-lang="en-US" l10n="U" oldref="22">When you delete a primary key field with the<emph> Delete cascade </emph>option, all records from other tables that have this key as their foreign key are also deleted. Use this option with great care; it is possible that a major portion of the database can be deleted.</paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL_NULL -->
+<paragraph role="heading" id="hd_id3152596" xml-lang="en-US" level="3" l10n="U" oldref="23">Set null</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL_NULL">If you delete the corresponding primary key, the "IS NULL" value will be assigned to all external key fields.</ahelp></paragraph>
+<!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL_DEFAULT -->
+<paragraph role="heading" id="hd_id3145272" xml-lang="en-US" level="3" l10n="U" oldref="25">Set Default</paragraph>
+<paragraph role="paragraph" id="par_id3154320" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL_DEFAULT">If you delete the corresponding primary key, a set value will be set to all external key fields.</ahelp></paragraph>
+</body>
+</helpdocument>

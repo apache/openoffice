@@ -1,0 +1,77 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_reflection_XServiceTypeDescription2_idl__
+#define __com_sun_star_reflection_XServiceTypeDescription2_idl__
+
+#include "com/sun/star/reflection/XServiceTypeDescription.idl"
+
+module com {  module sun {  module star {  module reflection {
+
+interface XServiceConstructorDescription;
+interface XTypeDescription;
+
+/**
+   Reflects a service, supporting single-interface&ndash;based services.
+
+   <p>This type supersedes <type>XServiceTypeDescription</type>, which only
+   supports obsolete, accumulation-based services.</p>
+
+   @since OOo 2.0
+ */
+interface XServiceTypeDescription2: XServiceTypeDescription {
+    /**
+       Returns whether this object reflects a single-interface&ndash;based
+       service.
+
+       @return <TRUE/> if this object reflects a single-interface&ndash;based
+           service, and <FALSE/> if this object reflects an obsolete,
+           accumulation-based service
+     */
+    boolean isSingleInterfaceBased();
+
+    /**
+       Returns the interface type associated with the service.
+
+       @return the reflection of the interface type associated with the service
+           (of type <type
+           scope="com::sun::star::reflection">XInterfaceTypeDescription</type>
+           or, in case of a typedef, <type
+           scope="com::sun::star::reflection">XIndirectTypeDescription</type>),
+           for a single-interface&ndash;based service; for an obsolete,
+           accumulation-based service, <NULL/> is returned
+     */
+    XTypeDescription getInterface();
+
+    /**
+       Returns the constructors of the service.
+
+       @return the reflections of all constructors of the service, in no
+           particular order
+     */
+    sequence<XServiceConstructorDescription> getConstructors();
+};
+
+}; }; }; };
+
+#endif

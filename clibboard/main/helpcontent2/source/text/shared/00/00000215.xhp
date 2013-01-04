@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0000000215xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">ASCII Filter Options</title>
+<filename>/text/shared/00/00000215.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-02-06T16:27:54">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3146856" xml-lang="en-US" level="1" l10n="U" oldref="1">ASCII Filter Options</paragraph>
+<paragraph role="paragraph" id="par_id3153070" xml-lang="en-US" l10n="U" oldref="2">You can specify which options, such as basic font, language, character set, or break, are imported or exported with a text document. The dialog appears when you load an ASCII file with the filter "Text Encoded" or when you save the document the first time, or when you "save as" with another name.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#ascii"/>
+</section>
+<paragraph role="heading" id="hd_id3159217" xml-lang="en-US" level="2" l10n="U" oldref="3">Properties</paragraph>
+<paragraph role="paragraph" id="par_id3155577" xml-lang="en-US" l10n="U" oldref="4">Defines the settings for importing or exporting your file. When exporting, only the character set and paragraph break can be defined.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_ASCII_FILTER:LB_CHARSET" id="bm_id3159242" localize="false"/>
+<paragraph role="heading" id="hd_id3146959" xml-lang="en-US" level="3" l10n="U" oldref="5">Character set</paragraph>
+<paragraph role="paragraph" id="par_id3143206" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SW:LISTBOX:DLG_ASCII_FILTER:LB_CHARSET">Specifies the character set of the file for export or import.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_ASCII_FILTER:LB_FONT" id="bm_id3150008" localize="false"/>
+<paragraph role="heading" id="hd_id3154926" xml-lang="en-US" level="3" l10n="U" oldref="7">Default fonts</paragraph>
+<paragraph role="paragraph" id="par_id3151262" xml-lang="en-US" l10n="CHG" oldref="8"><ahelp hid="SW:LISTBOX:DLG_ASCII_FILTER:LB_FONT">By setting a default font, you specify that the text should be displayed in a specific font. The default fonts can only be selected when importing.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_ASCII_FILTER:LB_LANGUAGE" id="bm_id3153124" localize="false"/>
+<paragraph role="heading" id="hd_id3154894" xml-lang="en-US" level="3" l10n="U" oldref="9">Language</paragraph>
+<paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SW:LISTBOX:DLG_ASCII_FILTER:LB_LANGUAGE">Specifies the language of the text, if this has not already been defined. This setting is only available when importing.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147143" xml-lang="en-US" level="3" l10n="U" oldref="11">Paragraph break</paragraph>
+<paragraph role="paragraph" id="par_id3143281" xml-lang="en-US" l10n="U" oldref="12">Defines the type of paragraph break for a text line.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_ASCII_FILTER:RB_CRLF" id="bm_id3149640" localize="false"/>
+<paragraph role="heading" id="hd_id3150935" xml-lang="en-US" level="3" l10n="U" oldref="13">CR &amp; LF</paragraph>
+<paragraph role="paragraph" id="par_id3145829" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SW:RADIOBUTTON:DLG_ASCII_FILTER:RB_CRLF">Produces a "Carriage Return" and a "Linefeed". This option is the default.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_ASCII_FILTER:RB_CR" id="bm_id3150178" localize="false"/>
+<paragraph role="heading" id="hd_id3153551" xml-lang="en-US" level="3" l10n="U" oldref="15">CR</paragraph>
+<paragraph role="paragraph" id="par_id3156042" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SW:RADIOBUTTON:DLG_ASCII_FILTER:RB_CR">Produces a "Carriage Return" as the paragraph break.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_ASCII_FILTER:RB_LF" id="bm_id3147374" localize="false"/>
+<paragraph role="heading" id="hd_id3150713" xml-lang="en-US" level="3" l10n="U" oldref="17">LF</paragraph>
+<paragraph role="paragraph" id="par_id3145090" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SW:RADIOBUTTON:DLG_ASCII_FILTER:RB_LF">Produces a "Linefeed" as the paragraph break.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasemenufilesavexhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Save</title>
+<filename>/text/shared/explorer/database/menufilesave.xhp</filename>
+</topic>
+<history>
+<created date="2005-02-07T15:50:39">save dialog in Base</created>
+<lastedited date="2007-01-26T10:31:14"/>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10547" xml-lang="en-US" level="1" l10n="NEW">Save</paragraph>
+<paragraph role="paragraph" id="par_idN1054B" xml-lang="en-US" l10n="NEW">In this dialog, you can specify the position and name of a form <comment>UFI: spec says also for report, but reports can be created only by Wizard and are autosaved there</comment><comment>UFI: spec says also for query, cannot verify</comment> that you save within a <link href="text/shared/explorer/database/dabadoc.xhp">database file</link>. The dialog opens automatically when you save a form the first time.<comment>UFI: no chance to open the dialog a second time</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ImageButton:DLG_COLLECTION_VIEW:BTN_EXPLORERFILE_NEWFOLDER" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN10564" xml-lang="en-US" level="2" l10n="NEW">Create New Directory</paragraph>
+<paragraph role="paragraph" id="par_idN10568" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to create a new folder within the database file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ImageButton:DLG_COLLECTION_VIEW:BTN_EXPLORERFILE_UP" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN1057F" xml-lang="en-US" level="2" l10n="NEW">Up One Level</paragraph>
+<paragraph role="paragraph" id="par_idN10583" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to go up one level in the folder hierarchy.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:Edit:DLG_COLLECTION_VIEW:ED_EXPLORERFILE_FILENAME" id="bm_id1669362" localize="false"/>
+<paragraph role="heading" id="par_idN1059A" xml-lang="en-US" level="2" l10n="NEW">File name</paragraph>
+<paragraph role="paragraph" id="par_idN1059E" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter the file name for the saved form.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:PushButton:DLG_COLLECTION_VIEW:BTN_EXPLORERFILE_SAVE" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN105B5" xml-lang="en-US" level="2" l10n="NEW">Save</paragraph>
+<paragraph role="paragraph" id="par_idN105B9" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Click to save the form to the database file.</ahelp></paragraph>
+</body>
+</helpdocument>

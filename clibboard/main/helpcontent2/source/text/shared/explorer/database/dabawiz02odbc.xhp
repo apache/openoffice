@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasedabawiz02odbcxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">ODBC Connection</title>
+<filename>/text/shared/explorer/database/dabawiz02odbc.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-28T16:27:31">UFI: Database Wizard ODBC page</created>
+<lastedited date="2006-05-02T14:15:18">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149031"><bookmark_value>ODBC;database (Base)</bookmark_value>
+<bookmark_value>databases;ODBC (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)" to all entries</comment>
+<paragraph role="heading" id="par_idN1053D" xml-lang="en-US" level="1" l10n="NEW"><variable id="odbc"><link href="text/shared/explorer/database/dabawiz02odbc.xhp">ODBC Connection</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN10541" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the settings for <link href="text/shared/00/00000005.xhp#odbc" name="ODBC">ODBC</link> databases.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id8856776" xml-lang="en-US" l10n="NEW">To edit or add records to a database table in $[officename], the table must have a unique index field.</paragraph>
+<paragraph role="paragraph" id="par_id8034302" xml-lang="en-US" l10n="NEW">On Solaris and Linux platforms, try to use a JDBC driver instead of an ODBC driver. See http://www.unixodbc.org for an ODBC implementation on Solaris or Linux.</paragraph>
+<paragraph role="paragraph" id="par_id8560136" xml-lang="en-US" l10n="NEW">To connect to a Microsoft Access database on Windows, use the ADO or Access database interface, rather than ODBC.</paragraph>
+<paragraph role="note" id="par_id2082583" xml-lang="en-US" l10n="NEW">Drivers for ODBC are supplied and supported by the manufacturer of the database. $[officename] only supports the ODBC 3 standard.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_ODBC_ET_NAMEOFODBCDATASOURCE" id="bm_id9201025" localize="false"/>
+<paragraph role="heading" id="par_idN10552" xml-lang="en-US" level="2" l10n="NEW">Name of the ODBC database</paragraph>
+<paragraph role="paragraph" id="par_idN10556" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter the path to the database file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_ODBC_PB_NAMEOFODBCDATASOURCE" id="bm_id5588549" localize="false"/>
+<paragraph role="heading" id="par_idN10559" xml-lang="en-US" level="2" l10n="NEW">Browse</paragraph>
+<paragraph role="paragraph" id="par_idN1055D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to open an ODBC data source selection dialog:</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10560" xml-lang="en-US" level="3" l10n="NEW">Choose a data source</paragraph>
+<paragraph role="paragraph" id="par_idN10564" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select a data source to which you want to connect using ODBC. Then click <emph>OK</emph>.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN10567" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz03auth.xhp">Authentication</link></paragraph>
+<paragraph role="paragraph" id="par_idN10576" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link></paragraph>
+</body>
+</helpdocument>

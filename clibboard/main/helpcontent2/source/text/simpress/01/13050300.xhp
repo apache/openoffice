@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0113050300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Convert to 3D </title>
+<filename>/text/simpress/01/13050300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-05-17T09:01:36">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="in3d">
+<bookmark xml-lang="en-US" branch="hid/.uno:ConvertInto3D" id="bm_id2295296" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ConvertInto3D" id="bm_id3155602" localize="false"/>
+<paragraph role="heading" id="hd_id3154017" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/simpress/01/13050300.xhp" name="Convert to 3D">Convert to 3D</link></paragraph>
+<paragraph role="paragraph" id="par_id3155066" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:ConvertInto3D">Converts the selected object to a three-dimensional (3D) object.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000413.xhp#adni3d"/>
+</section>
+<paragraph role="paragraph" id="par_id3147339" xml-lang="en-US" l10n="U" oldref="8">
+<variable id="anmerkung">The selected object is first converted to a contour, and then to a 3D object.
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149127" xml-lang="en-US" l10n="U" oldref="3">If you select two or more objects and convert them to 3D, the result is a 3D group that acts as a single object. You can edit the individual objects in the group by choosing <switchinline select="appl">
+<caseinline select="DRAW"><emph>Modify</emph> - <emph>Enter Group</emph>
+</caseinline><defaultinline>
+<emph>Format - Group - Edit Group</emph></defaultinline></switchinline>. Choose <switchinline select="appl">
+<caseinline select="DRAW"><emph>Modify – Exit Group</emph>
+</caseinline><defaultinline>
+<emph>Format – Group – Exit Group</emph></defaultinline></switchinline> when you are finished.</paragraph>
+<paragraph role="note" id="par_id3151242" xml-lang="en-US" l10n="U" oldref="5">Converting a group of objects to 3D does not change the stacking order of the individual objects.</paragraph>
+
+<paragraph role="tip" id="par_id3146965" xml-lang="en-US" l10n="U" oldref="9">Press F3 to quickly enter a group and Ctrl+F3 to leave the group.</paragraph>
+
+<paragraph role="paragraph" id="par_id3145114" xml-lang="en-US" l10n="U" oldref="4">You can also convert bitmap images and vector graphics, including clipart, to 3D objects. $[officename] treats bitmaps as rectangles and vector graphics as a group of polygons when converting to 3D.</paragraph>
+<paragraph role="paragraph" id="par_id3149876" xml-lang="en-US" l10n="U" oldref="6">Even drawing objects that contain text can be converted.</paragraph>
+<paragraph role="paragraph" id="par_id3153960" xml-lang="en-US" l10n="U" oldref="7">If you want, you can also apply a <link href="text/shared/01/05350000.xhp" name="3D Effect">3D Effect</link> to the converted object.</paragraph>
+</body>
+</helpdocument>

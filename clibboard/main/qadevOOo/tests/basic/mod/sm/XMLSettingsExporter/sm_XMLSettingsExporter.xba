@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="sm_XMLSettingsExporter" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+' Required for  com.sun.star.lang.XInitialization:
+  Global aInitArgs() As Variant
+
+' Required for  com.sun.star.document.XFilter:
+  Global oFilterDescriptor As Variant
+
+' Required for  com.sun.star.document.XExporter:
+  Global oSrcDocument As Object
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' sm.XMLSettingsExporter
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim initArgs(0) As Object
+    Dim oMSF As Object
+    Dim filter As Variant
+    Dim printXML As Boolean
+    Dim Tag1, Tag2 As Variant
+    Dim expMargin As Integer
+    
+    printXML = true
+    expMargin = 67
+    oMSF = getProcessServiceManager()
+    oDoc = utils.createDocument("smath", cObjectName)
+    oDocHandler = oMSF.createInstanceWithArguments("basichelper.DocumentHandler", Array(printXML))
+
+    Tag1 = Array("office:document-settings")
+    Tag2 = Array("config:config-item", "config:name", "TopMargin")
+    filter = Array( _
+                Array("TagExists", Tag1), _
+                Array("CharsEnclosed", Tag2, ""+expMargin) _
+             )
+
+    oDocHandler.initialize(filter)
+
+    initArgs(0) = oDocHandler
+    aInitArgs = initArgs()
+    oObj = oMSF.createInstanceWithArguments("com.sun.star.comp.Math.XMLSettingsExporter", initArgs())
+
+    oDoc.setPropertyValue("TopMargin", expMargin)
+    
+    oObj.setSourceDocument(oDoc)
+
+    Dim aFilterDescr(0) As New com.sun.star.beans.PropertyValue
+    aFilterDescr(0).Name = "FilterName"
+    aFilterDescr(0).Value = "smath: StarOffice XML (Formula)"
+    oFilterDescriptor = aFilterDescr()
+
+    oSrcDocument = oDoc
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+Global oDocHandler As Object
+
+Function checkFilter() As Boolean
+    checkFilter = oDocHandler.getByName("XMLIsCorrect")
+    Out.Log(oDocHandler.getByName("XMLCode"))
+End Function
+</script:module>

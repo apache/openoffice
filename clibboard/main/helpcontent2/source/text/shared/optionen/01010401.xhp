@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01010401xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Edit module</title>
+<filename>/text/shared/optionen/01010401.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-06-04T13:45:02">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154230"><bookmark_value>spellcheck; activating for a language</bookmark_value>
+<bookmark_value>hyphenation; activating for a language</bookmark_value>
+<bookmark_value>thesaurus; activating for a language</bookmark_value>
+<bookmark_value>languages; activating modules</bookmark_value>
+<bookmark_value>dictionaries;creating</bookmark_value>
+<bookmark_value>user-defined dictionaries;creating</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3154230" xml-lang="en-US" l10n="E" oldref="17" localize="false"/>
+<section id="module">
+<paragraph role="heading" id="hd_id3154046" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010401.xhp" name="Edit module">Edit module</link></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#linguistikmodule"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_CLB_EDIT_MODULES_MODULES" id="bm_id3156329" localize="false"/>
+<paragraph role="heading" id="hd_id3148685" xml-lang="en-US" level="2" l10n="U" oldref="3">Options</paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="HID_CLB_EDIT_MODULES_MODULES">Specifies the language and the available spelling, hyphenation and Thesaurus sub-modules for the selected module.</ahelp> You can arrange the sub-modules by priority.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3155449" xml-lang="en-US" l10n="U" oldref="5">Select the language from the <emph>Language</emph> list.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3144510" xml-lang="en-US" l10n="U" oldref="6">Mark all modules that are to be activated for this language under the headings Spelling, Hyphenation and Thesaurus.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154923" xml-lang="en-US" l10n="U" oldref="7">As long as you have more than one sub-module available for one area, the sub-modules for spelling and the Thesaurus are processed in the sequence in which they are listed. You can change the sequence using the <emph>Move Up</emph> and <emph>Move Down</emph> buttons.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148663" xml-lang="en-US" l10n="U" oldref="8">Only one sub-module can be activated under Hyphenation.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXDLG_EDIT_MODULES:LB_EDIT_MODULES_LANGUAGE" id="bm_id3148798" localize="false"/>
+<paragraph role="heading" id="hd_id3150398" xml-lang="en-US" level="3" l10n="U" oldref="9">Language</paragraph>
+<paragraph role="paragraph" id="par_id3152933" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX_LISTBOX_RID_SVXDLG_EDIT_MODULES_LB_EDIT_MODULES_LANGUAGE">Specifies the language of the module.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="19">For all language selection fields in <item type="productname">%PRODUCTNAME</item>, the following applies:</paragraph>
+<paragraph role="paragraph" id="par_id3148922" xml-lang="en-US" l10n="U" oldref="20"><variable id="sprachenfeld">A language entry has a check mark in front of it if the spellcheck is activated for this language.
+</variable></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_EDIT_MODULES:PB_EDIT_MODULES_PRIO_UP" id="bm_id3154686" localize="false"/>
+<paragraph role="heading" id="hd_id3145419" xml-lang="en-US" level="3" l10n="U" oldref="11">Move up</paragraph>
+<paragraph role="paragraph" id="par_id3154216" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_EDIT_MODULES_PB_EDIT_MODULES_PRIO_UP">Increases the priority of the module selected in the list box by one level.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_EDIT_MODULES:PB_EDIT_MODULES_PRIO_DOWN" id="bm_id3159255" localize="false"/>
+<paragraph role="heading" id="hd_id3158407" xml-lang="en-US" level="3" l10n="U" oldref="13">Move down</paragraph>
+<paragraph role="paragraph" id="par_id3155429" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_EDIT_MODULES_PB_EDIT_MODULES_PRIO_DOWN">Decreases the priority of the module selected in the list box by one level.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXDLG_EDIT_MODULES:PB_EDIT_MODULES_PRIO_BACK" id="bm_id3153574" localize="false"/>
+<paragraph role="heading" id="hd_id3161832" xml-lang="en-US" level="3" l10n="U" oldref="15">Back</paragraph>
+<paragraph role="paragraph" id="par_id3155307" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX_PUSHBUTTON_RID_SVXDLG_EDIT_MODULES_PB_EDIT_MODULES_PRIO_BACK">Click here to undo the current changes in the list box.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,101 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_form_XFormsSupplier_idl__ 
+#define __com_sun_star_form_XFormsSupplier_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_container_XNameContainer_idl__ 
+#include <com/sun/star/container/XNameContainer.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module form {  
+ 
+//============================================================================= 
+ 
+/** provides the access to a collection of forms.
+ */
+published interface XFormsSupplier: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** accesses the forms.
+		
+		@example StarBASIC
+		<listing>
+		REM  *****  BASIC  *****
+
+		Sub createColorSelectionBox
+			' create a new shape
+			xShape = thisComponent.createInstance( "com.sun.star.drawing.ControlShape" )
+			Dim aPos as new com.sun.star.awt.Point
+			aPos.X = 200
+			aPos.Y = 100
+			xShape.Position = aPos
+			Erase aPos
+			Dim aSize as new com.sun.star.awt.Size
+			aSize.Width = 2500
+			aSize.Height = 5000
+			xShape.Size = aSize
+			Erase aSize
+
+			' create a combo box model
+			xControlModel = thisComponent.createInstance( "com.sun.star.form.component.ComboBox" )
+			xControlModel.Name = "ColorSelection"
+			xControlModel.Text = "red"
+
+			' marry the shape and the model
+			xShape.Control = xControlModel
+
+			if ( 0 = thisComponent.DrawPage.Forms.getCount() ) Then
+				xForm = thisComponent.createInstance( "com.sun.star.form.component.DataForm" )
+				xForm.Name = "SampleForm"
+				thisComponent.DrawPage.Forms.insertByIndex( 0, xForm )
+			End If	
+			' insert the control model into the first form of the forms collection of the
+			' draw page of the document
+			thisComponent.DrawPage.Forms.getByIndex(0).insertByIndex( 0, xControlModel )
+			thisComponent.DrawPage.add( xShape )
+		End Sub
+		</listing>
+
+		@returns
+			the container of all the top-level forms belonging to the component.
+	 */
+	com::sun::star::container::XNameContainer getForms(); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

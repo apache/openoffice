@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared01020200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Using Objects</title>
+<filename>/text/sbasic/shared/01020200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-01T14:23:07">FPE: Deleted Screenshot. Cleaned.</lastedited>
+</history>
+</meta>
+<body>
+<section id="objekte">
+<paragraph role="heading" id="hd_id3145645" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="01020200"><link href="text/sbasic/shared/01020200.xhp">Using the Object Catalog</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153707" xml-lang="en-US" l10n="U" oldref="76">The object catalog provides an overview of all modules and dialogs you have created in $[officename].</paragraph>
+</section>
+<section id="object_catalog">
+<paragraph role="paragraph" id="par_id3147346" xml-lang="en-US" l10n="U" oldref="78">Click the <emph>Object Catalog</emph> icon 
+<image id="img_id3147341" src="res/commandimagelist/sc_objectcatalog.png" width="0.564cm" height="0.564cm"><alt id="alt_id3147341" xml-lang="en-US">Icon</alt>
+	</image> in the Macro toolbar to display the object catalog.</paragraph>
+<paragraph role="paragraph" id="par_id3155114" xml-lang="en-US" l10n="U" oldref="79">The dialog shows a list of all existing objects in a hierarchical representation. Double-clicking a list entry opens its subordinate objects.</paragraph>
+<paragraph role="paragraph" id="par_id3150786" xml-lang="en-US" l10n="U" oldref="83">To display a certain module in the Editor or to position the cursor in a selected SUB or FUNCTION, select the corresponding entry and click the <emph>Show</emph> icon 
+<image id="img_id3149527" src="basctl/res/im01.png" width="0.564cm" height="0.564cm"><alt id="alt_id3149527" xml-lang="en-US">Icon</alt>
+	</image>.</paragraph>
+<paragraph role="paragraph" id="par_id3153266" xml-lang="en-US" l10n="U" oldref="81">Click the (X) icon in the title bar to close the object catalog.</paragraph>
+</section>
+</body>
+</helpdocument>

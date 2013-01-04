@@ -1,0 +1,60 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#define	GB_REDUCE						1
+
+#define FT_OUTPUTTYPE					2
+#define RB_PRINTEROUTPUT				3
+#define RB_PRINTFILEOUTPUT				4
+
+#define GB_OUTPUT						5
+
+#define CB_REDUCETRANSPARENCY			10
+#define RB_REDUCETRANSPARENCY_AUTO		11
+#define RB_REDUCETRANSPARENCY_NONE		12
+
+#define CB_REDUCEGRADIENTS				20
+#define RB_REDUCEGRADIENTS_STRIPES		21
+#define RB_REDUCEGRADIENTS_COLOR		22
+#define NF_REDUCEGRADIENTS_STEPCOUNT	23
+
+#define CB_REDUCEBITMAPS				30
+#define RB_REDUCEBITMAPS_OPTIMAL		31
+#define RB_REDUCEBITMAPS_NORMAL			32
+#define RB_REDUCEBITMAPS_RESOLUTION		33
+#define CB_REDUCEBITMAPS_TRANSPARENCY	34
+#define LB_REDUCEBITMAPS_RESOLUTION		35
+
+#define CB_CONVERTTOGREYSCALES			40
+
+#define GB_PRINT_WARN					50
+#define CB_PAPERSIZE					51
+#define CB_PAPERORIENTATION				52
+#define CB_TRANSPARENCY					53
+
+#define FI_PRINTTRANSWARN				60
+#define FT_PRINTTRANSWARN				61
+#define BTN_PRINTTRANS_YES				62
+#define BTN_PRINTTRANS_NO				63
+#define BTN_PRINTTRANS_CANCEL			64
+#define CBX_NOPRINTTRANSWARN			65

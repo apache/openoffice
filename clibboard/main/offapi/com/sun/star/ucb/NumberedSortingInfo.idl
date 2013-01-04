@@ -1,0 +1,54 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_NumberedSortingInfo_idl__
+#define __com_sun_star_ucb_NumberedSortingInfo_idl_
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** contains information for sorting a <type>ContentResultSet</type>.
+
+	<p> In contrast to the struct <type>SortingInfo</type> this struct is
+	used to be on the safe side, that no one asks for sorting by a property
+	which is not contained in a <type>ContentResultSet</type>.
+*/
+published struct NumberedSortingInfo
+{
+	//-------------------------------------------------------------------------
+	/** sort the resultset by this column. Index starts with <code>1</code>.
+	*/
+	long ColumnIndex;
+
+	//-------------------------------------------------------------------------
+	/** contains a flag indicating the sort mode (ascending or descending).
+	*/
+	boolean Ascending;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

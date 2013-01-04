@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalc0105120000xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Conditional Formatting</title>
+         <filename>/text/scalc/01/05120000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConditionalFormatDialog" id="bm_id5008046" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConditionalFormatDialog" id="bm_id3147428" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155132" role="heading" level="1" l10n="U" oldref="1">Conditional Formatting</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3163710" role="paragraph" l10n="U" oldref="2"><variable id="bedingtetext"><ahelp hid=".uno:ConditionalFormatDialog">Choose <emph>Conditional Formatting</emph> to define format styles depending on certain conditions.</ahelp>
+</variable> If a style was already assigned to a cell, it remains unchanged. The style entered here is then evaluated. You can enter three conditions that query the contents of cell values or formulas. The conditions are evaluated from 1 to 3. If the condition 1 matches the condition, the defined style will be used. Otherwise, condition 2 is evaluated, and its defined style used. If this style does not match, condition 3 is evaluated.</paragraph>
+      <section id="howtoget">
+         <embed href="text/scalc/00/00000405.xhp#bedingte"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id2414014" role="warning" l10n="NEW">To apply conditional formatting, AutoCalculate must be enabled. Choose Tools - Cell Contents - AutoCalculate (you see a check mark next to the command when AutoCalculate is enabled).</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153189"><bookmark_value>conditional formatting; conditions</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_CONDFORMAT:CBX_COND1" id="bm_id3152598" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_CONDFORMAT:CBX_COND2" id="bm_id3154490" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_CONDFORMAT:CBX_COND3" id="bm_id3155415" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153189" role="heading" level="2" l10n="U"
+                 oldref="18">Condition 1/2/3</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149413" role="paragraph" l10n="U" oldref="4"><ahelp hid="SC:CHECKBOX:RID_SCDLG_CONDFORMAT:CBX_COND3">Mark the boxes corresponding to each condition and enter the corresponding condition.</ahelp> To close the dialog, click <emph>OK</emph>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND1_1" id="bm_id3149581" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND2_1" id="bm_id3153158" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND3_1" id="bm_id3149379" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147394" role="heading" level="2" l10n="U" oldref="5">Cell Value / Formula</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155602" role="paragraph" l10n="U" oldref="6"><ahelp hid="SC:LISTBOX:RID_SCDLG_CONDFORMAT:LB_COND3_1">Specifies if conditional formatting is dependent on a cell value or a formula.</ahelp> If you select a formula as a reference, the <emph>Cell Value Condition</emph> box is displayed to the right of the <emph>Cell value/Formula</emph> field. If the condition is "Formula is", enter a cell reference. If the cell reference is a value other than zero, the condition matches.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND1_2" id="bm_id3153712" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND2_2" id="bm_id3145641" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND3_2" id="bm_id3154755" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153709" role="heading" level="2" l10n="U" oldref="7">Cell Value Condition</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153764" role="paragraph" l10n="U" oldref="8"><ahelp hid="SC:LISTBOX:RID_SCDLG_CONDFORMAT:LB_COND3_2">Choose a condition for the format to be applied to the selected cells.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND1_TEMPLATE" id="bm_id3147345" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND2_TEMPLATE" id="bm_id3146918" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_CONDFORMAT:LB_COND3_TEMPLATE" id="bm_id3149257" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156384" role="heading" level="2" l10n="U" oldref="9">Cell Style</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145228" role="paragraph" l10n="U" oldref="10"><ahelp hid="SC:LISTBOX:RID_SCDLG_CONDFORMAT:LB_COND3_TEMPLATE">Choose the style to be applied if the specified condition matches.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_CONDFORMAT:BTN_COND1_NEW" id="bm_id3149267" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_CONDFORMAT:BTN_COND2_NEW" id="bm_id3149367" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_CONDFORMAT:BTN_COND3_NEW" id="bm_id3249267" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0509200913175331" role="heading" level="2" l10n="NEW">New Style</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0509200913175368" role="paragraph" l10n="NEW"><ahelp hid=".">If you haven't already defined a style to be used, you can click New Style to open the Organizer tab page of the Cell Style dialog. Define a new style there and click OK.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_CONDFORMAT:EDT_COND2_2" id="bm_id3150298" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_CONDFORMAT:EDT_COND1_1" id="bm_id3147001" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_CONDFORMAT:EDT_COND1_2" id="bm_id3154020" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_CONDFORMAT:EDT_COND2_1" id="bm_id3159236" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_CONDFORMAT:EDT_COND3_1" id="bm_id3149207" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_CONDFORMAT:EDT_COND3_2" id="bm_id3158212" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146316" role="heading" level="2" l10n="U"
+                 oldref="11">Parameter field</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155114" role="paragraph" l10n="U" oldref="12"><ahelp hid="SC:EDIT:RID_SCDLG_CONDFORMAT:EDT_COND3_2" visibility="hidden">Enter a reference, value or formula.</ahelp> Enter a reference, value or formula in the parameter field, or in both parameter fields if you have selected a condition that requires two parameters. You can also enter formulas containing relative references.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145257" role="paragraph" l10n="U" oldref="13">Once the parameters have been defined, the condition is complete. It may appear as:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150784" role="paragraph" l10n="U" oldref="14">Cell value is equal 0: Cell style Null value (You must have already defined a cell style with this name before assigning it to a condition).</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150365" role="paragraph" l10n="CHG" oldref="15">Cell value is between $B$20 and $B$21: Cell style Result (The corresponding value limits must already exist in cells B20 and B21).</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152992" role="paragraph" l10n="CHG" oldref="16">Formula is SUM($A$1:$A$5)=10: Cell style Result (The selected cells are formatted with the Result style if the sum of the contents in cells A1 to A5 is equal to 10).</paragraph>
+      <embed href="text/shared/00/00000001.xhp#eingabesymbol"/>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_idN107E1" role="paragraph" l10n="NEW">
+            <embedvar href="text/scalc/guide/cellstyle_conditional.xhp#cellstyle_conditional"/>
+         </paragraph>
+      </section>
+   </body>
+</helpdocument>

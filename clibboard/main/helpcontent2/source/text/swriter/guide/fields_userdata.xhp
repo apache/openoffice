@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidefields_userdataxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Querying User Data in Fields or Conditions</title>
+         <filename>/text/swriter/guide/fields_userdata.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153398"><bookmark_value>fields; user data</bookmark_value>
+      <bookmark_value>user data; querying</bookmark_value>
+      <bookmark_value>conditions; user data fields</bookmark_value>
+      <bookmark_value>hiding;text, from specific users</bookmark_value>
+      <bookmark_value>text; hiding from specific users, with conditions</bookmark_value>
+      <bookmark_value>user variables in conditions/fields</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3153398" role="heading" level="1" l10n="U"
+                 oldref="59"><variable id="fields_userdata"><link href="text/swriter/guide/fields_userdata.xhp" name="Querying User Data in Fields or Conditions">Querying User Data in Fields or Conditions</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154239" role="paragraph" l10n="U" oldref="60">You can access and compare some user data from conditions or fields. For example, you can compare user data with the following operators:</paragraph>
+      <table id="tbl_id3154255">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155889" role="tablehead" l10n="U" oldref="94">Operator</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147110" role="tablehead" l10n="U" oldref="95">Meaning</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150508" role="tablecontent" l10n="U" oldref="96">== or EQ</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150531" role="tablecontent" l10n="U" oldref="97">equals</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150725" role="tablecontent" l10n="U" oldref="98">!= or NEQ</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150748" role="tablecontent" l10n="U" oldref="99">is not equal to</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3153167" role="paragraph" l10n="U" oldref="101">If you want, you can use a condition to hide specific text in your document from a specific user.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153190" role="listitem" l10n="U" oldref="102">Select the text in the document that you want to hide.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145273" role="listitem" l10n="U" oldref="103">Choose <emph>Insert - Section</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145297" role="listitem" l10n="U" oldref="104">In the <item type="menuitem">Hide</item>
+               <emph/>area, select the <item type="menuitem">Hide</item> check box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155533" role="listitem" l10n="U" oldref="105">In the <emph>With Condition</emph> box, type <emph>user_lastname == "Doe"</emph>, where "Doe" is the last name of the user that you want to hide the text from. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155573" role="listitem" l10n="U" oldref="107">Click <emph>Insert</emph> and then save the document.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3147760" role="note" l10n="U" oldref="108">The name of the hidden section can still be seen in the Navigator.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147777" role="paragraph" l10n="U" oldref="61">The following table is a list of the user variables that you can access when defining a condition or a field:</paragraph>
+      <table id="tbl_id3147793">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147819" role="tablehead" l10n="U" oldref="62">User variables</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147218" role="tablehead" l10n="U" oldref="63">Meaning</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147245" role="code" l10n="U" oldref="64">user_firstname</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147268" role="paragraph" l10n="U" oldref="65">First name</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145592" role="code" l10n="U" oldref="66">user_lastname</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145615" role="paragraph" l10n="U" oldref="67">Last name</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145642" role="code" l10n="U" oldref="68">user_initials</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145666" role="paragraph" l10n="U" oldref="69">Initials</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151200" role="code" l10n="U" oldref="70">user_company</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151223" role="paragraph" l10n="U" oldref="71">Company</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151250" role="code" l10n="U" oldref="72">user_street</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152912" role="paragraph" l10n="U" oldref="73">Street</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152940" role="code" l10n="U" oldref="74">user_country</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152963" role="paragraph" l10n="U" oldref="75">Country</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152990" role="code" l10n="U" oldref="76">user_zipcode</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145679" role="paragraph" l10n="U" oldref="77">Zip Code</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145706" role="code" l10n="U" oldref="78">user_city</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145729" role="paragraph" l10n="U" oldref="79">City</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145756" role="code" l10n="U" oldref="80">user_title</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145779" role="paragraph" l10n="U" oldref="81">Title</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156284" role="code" l10n="U" oldref="82">user_position</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156307" role="paragraph" l10n="U" oldref="83">Position</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156334" role="code" l10n="U" oldref="84">user_tel_work</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156357" role="paragraph" l10n="U" oldref="85">Business telephone number</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156384" role="code" l10n="U" oldref="86">user_tel_home</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149728" role="paragraph" l10n="U" oldref="87">Home telephone number</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149756" role="code" l10n="U" oldref="88">user_fax</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149778" role="paragraph" l10n="U" oldref="89">Fax number</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149806" role="code" l10n="U" oldref="90">user_email</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147294" role="paragraph" l10n="U" oldref="91">E-mail address</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147321" role="code" l10n="U" oldref="92">user_state</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147344" role="paragraph" l10n="U" oldref="93">State</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/fields.xhp#fields"/>
+         <embed href="text/swriter/guide/conditional_text.xhp#conditional_text"/>
+         <embed href="text/swriter/guide/hidden_text.xhp#hidden_text"/>
+         <paragraph xml-lang="en-US" id="par_id3147392" role="paragraph" l10n="C"><link href="text/swriter/02/14020000.xhp" name="List of operators">List of operators</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

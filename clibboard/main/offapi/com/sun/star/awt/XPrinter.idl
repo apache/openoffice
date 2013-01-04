@@ -1,0 +1,120 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_XPrinter_idl__ 
+#define __com_sun_star_awt_XPrinter_idl__ 
+ 
+#ifndef __com_sun_star_awt_XPrinterPropertySet_idl__ 
+#include <com/sun/star/awt/XPrinterPropertySet.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_PrinterException_idl__ 
+#include <com/sun/star/awt/PrinterException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__ 
+#include <com/sun/star/lang/IllegalArgumentException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_XDevice_idl__ 
+#include <com/sun/star/awt/XDevice.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module awt {  
+ 
+//============================================================================= 
+ 
+/** represents a virtual printer. 
+			
+	<p>All properties are vetoable properties.
+    If you change the properties between a call to
+    <member scope="com::sun::star::awt">XPrinter::startPage</member> and a call
+    to <member scope="com::sun::star::awt">XPrinter::endPage</member>,
+    a <type scope="com::sun::star::beans">PropertyVetoException</type> is
+    thrown.</p>
+ */
+published interface XPrinter: com::sun::star::awt::XPrinterPropertySet
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** puts the job into the printer spooler. 
+						
+		<p>This call may block the thread. So release all resources 
+		(mutex, semaphore, etc.) before this call.</p>
+	 */
+	boolean start( [in] string nJobName, 
+			 [in] short nCopies, 
+			 [in] boolean nCollate ) 
+			raises( com::sun::star::awt::PrinterException, 
+					com::sun::star::lang::IllegalArgumentException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** notifies the printer spooler that the job is done and printing
+		starts.
+
+        @see terminate
+	 */
+	void end() 
+			raises( com::sun::star::awt::PrinterException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** stops the current print job. 
+						
+		<p>If the method
+        <member scope="com::sun::star::awt">XPrinter::end</member>
+        is called beforehand, then this call does nothing. If you call
+		<member scope="com::sun::star::awt">XPrinter::terminate</member>
+        in or before the call to
+		<member scope="com::sun::star::awt">XPrinter::start</member>,
+		<member scope="com::sun::star::awt">XPrinter::terminate</member>
+        returns <FALSE/>. This call must not block the thread.</p>
+
+        @see end
+	 */
+	void terminate(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** begins with a new page.
+	 */
+	com::sun::star::awt::XDevice startPage() 
+			raises( com::sun::star::awt::PrinterException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** ends the current page.
+	 */
+	void endPage() 
+			raises( com::sun::star::awt::PrinterException ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

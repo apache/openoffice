@@ -1,0 +1,64 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_chart_StackableDiagram_idl__ 
+#define __com_sun_star_chart_StackableDiagram_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module chart {  
+ 
+//============================================================================= 
+ 
+/** 
+
+a helper service for stackable chart types (e.g., charts in
+	which the data rows may be displayed stacked on each other or in
+	percent relation).
+ */
+published service StackableDiagram
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** If <TRUE/>, the series of the diagram are stacked and each
+        category sums up to 100%.
+	 */
+	[property] boolean Percent; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** If <TRUE/>, the series of the diagram are stacked.
+
+        <p>If you have a stacked bar chart, you can easily determine
+        the sum of data in each category, by taking the top of the
+        topmost bar.</p>
+	 */
+	[property] boolean Stacked; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

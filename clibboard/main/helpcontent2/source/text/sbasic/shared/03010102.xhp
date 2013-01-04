@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03010102xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">MsgBox Function [Runtime]</title>
+<filename>/text/sbasic/shared/03010102.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-09-13T11:33:09">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="msgbox">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153379"><bookmark_value>MsgBox function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153379" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03010102.xhp" name="MsgBox Function [Runtime]">MsgBox Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="U" oldref="2">Displays a dialog box containing a message and returns a value.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3156281" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="4">MsgBox (Text As String [,Type As Integer [,Dialogtitle As String]])</paragraph>
+<paragraph role="heading" id="hd_id3153771" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3146985" xml-lang="en-US" l10n="U" oldref="6">Integer</paragraph>
+<paragraph role="heading" id="hd_id3153363" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameter:</paragraph>
+<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Text</emph>: String expression displayed as a message in the dialog box. Line breaks can be inserted with Chr$(13).</paragraph>
+<paragraph role="paragraph" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="9">
+<emph>DialogTitle</emph>: String expression displayed in the title bar of the dialog. If omitted, the name of the respective application is displayed.</paragraph>
+<paragraph role="paragraph" id="par_id3153954" xml-lang="en-US" l10n="U" oldref="10">
+<emph>Type</emph>: Any integer expression that specifies the dialog type and defines the number and type of buttons or icons displayed. <emph>Type</emph> represents a combination of bit patterns (dialog elements defined by adding the respective values):</paragraph>
+<paragraph role="paragraph" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="11">
+<emph>Values</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3147397" xml-lang="en-US" l10n="U" oldref="12">0 : Display OK button only.</paragraph>
+<paragraph role="paragraph" id="par_id3145646" xml-lang="en-US" l10n="U" oldref="13">1 : Display OK and Cancel buttons.</paragraph>
+<paragraph role="paragraph" id="par_id3149410" xml-lang="en-US" l10n="CHG" oldref="14">2 : Display Abort, Retry, and Ignore buttons.</paragraph>
+<paragraph role="paragraph" id="par_id3151075" xml-lang="en-US" l10n="U" oldref="15">3 : Display Yes, No, and Cancel buttons.</paragraph>
+<paragraph role="paragraph" id="par_id3153878" xml-lang="en-US" l10n="U" oldref="16">4 : Display Yes and No buttons.</paragraph>
+<paragraph role="paragraph" id="par_id3155601" xml-lang="en-US" l10n="U" oldref="17">5 : Display Retry and Cancel buttons.</paragraph>
+<paragraph role="paragraph" id="par_id3150716" xml-lang="en-US" l10n="U" oldref="18">16 : Add the Stop icon to the dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3153837" xml-lang="en-US" l10n="U" oldref="19">32 : Add the Question icon to the dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3150751" xml-lang="en-US" l10n="U" oldref="20">48 : Add the Exclamation Point icon to the dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3146915" xml-lang="en-US" l10n="U" oldref="21">64 : Add the Information icon to the dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3145640" xml-lang="en-US" l10n="U" oldref="22">128 : First button in the dialog as default button.</paragraph>
+<paragraph role="paragraph" id="par_id3153765" xml-lang="en-US" l10n="U" oldref="23">256 : Second button in the dialog as default button.</paragraph>
+<paragraph role="paragraph" id="par_id3153715" xml-lang="en-US" l10n="U" oldref="24">512 : Third button in the dialog as default button.</paragraph>
+<paragraph role="paragraph" id="par_id3159267" xml-lang="en-US" l10n="U" oldref="25">
+<emph>Return value:</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3145230" xml-lang="en-US" l10n="U" oldref="26">1 : OK</paragraph>
+<paragraph role="paragraph" id="par_id3149567" xml-lang="en-US" l10n="U" oldref="27">2 : Cancel</paragraph>
+<paragraph role="paragraph" id="par_id4056825" xml-lang="en-US" l10n="NEW">3 : Abort</paragraph>
+<paragraph role="paragraph" id="par_id3155335" xml-lang="en-US" l10n="U" oldref="28">4 : Retry</paragraph>
+<paragraph role="paragraph" id="par_id3146918" xml-lang="en-US" l10n="U" oldref="29">5 : Ignore</paragraph>
+<paragraph role="paragraph" id="par_id3155961" xml-lang="en-US" l10n="U" oldref="30">6 : Yes</paragraph>
+<paragraph role="paragraph" id="par_id3148488" xml-lang="en-US" l10n="U" oldref="31">7 : No</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3150090" xml-lang="en-US" level="2" l10n="U" oldref="40">Example:</paragraph>
+<paragraph role="code" id="par_id3154120" xml-lang="en-US" l10n="U" oldref="41">Sub ExampleMsgBox</paragraph>
+<paragraph role="code" id="par_id3145131" xml-lang="en-US" l10n="U" oldref="42">Dim sVar as Integer</paragraph>
+<paragraph role="code" id="par_id3151278" xml-lang="en-US" l10n="U" oldref="43">sVar = MsgBox("Las Vegas")</paragraph>
+<paragraph role="code" id="par_id3149034" xml-lang="en-US" l10n="U" oldref="44">sVar = MsgBox("Las Vegas",1)</paragraph>
+<paragraph role="code" id="par_id3166424" xml-lang="en-US" l10n="U" oldref="45">sVar = MsgBox( "Las Vegas",256 + 16 + 2,"Dialog title")</paragraph>
+<paragraph role="code" id="par_id3152581" xml-lang="en-US" l10n="U" oldref="46">end sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,126 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+ // include ------------------------------------------------------------------
+#include <sfx2/sfx.hrc>
+#include "helpid.hrc"
+#include "optspell.hrc"
+ // pragma -------------------------------------------------------------------
+
+ // RID_SFXPAGE_SPELL --------------------------------------------------------
+TabPage RID_SFXPAGE_SPELL
+{
+	HelpId = HID_OPTIONS_SPELL ;
+	SVLook = TRUE ;
+	Size = MAP_APPFONT ( 221 , 185 ) ;
+	Text [ en-US ] = "Spellcheck" ;
+	PushButton BTN_BOOK
+	{
+	    HelpID = "cui:PushButton:RID_SFXPAGE_SPELL:BTN_BOOK";
+		Pos = MAP_APPFONT ( 128 , 6 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Text [ en-US ] = "~Edit..." ;
+		TabStop = TRUE ;
+	};
+	MultiListBox LB_BOOK
+	{
+	    HelpID = "cui:MultiListBox:RID_SFXPAGE_SPELL:LB_BOOK";
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 12 , 14 ) ;
+		Size = MAP_APPFONT ( 103 , 47 ) ;
+		TabStop = TRUE ;
+		AutoHScroll = TRUE ;
+	};
+    FixedLine GB_BOOK
+	{
+		Pos = MAP_APPFONT ( 6 , 3 ) ;
+		Size = MAP_APPFONT ( 115 , 66 ) ;
+		/* ### ACHTUNG: Neuer Text in Resource? Wörterbücher : W÷rterb³cher */
+		/* ### ACHTUNG: Neuer Text in Resource? Wörterbücher : W÷rterb³cher */
+		Text [ en-US ] = "Dictionaries" ;
+	};
+	CheckBox BTN_CAPS
+	{
+	    HelpID = "cui:CheckBox:RID_SFXPAGE_SPELL:BTN_CAPS";
+		Pos = MAP_APPFONT ( 12 , 82 ) ;
+		Size = MAP_APPFONT ( 103 , 10 ) ;
+		/* ### ACHTUNG: Neuer Text in Resource? ~Großgeschriebene Wörter : ~Gro˜geschriebene W÷rter */
+		/* ### ACHTUNG: Neuer Text in Resource? ~Großgeschriebene Wörter : ~Gro˜geschriebene W÷rter */
+		Text [ en-US ] = "~Capital words" ;
+		TabStop = TRUE ;
+	};
+	CheckBox BTN_NUMS
+	{
+	    HelpID = "cui:CheckBox:RID_SFXPAGE_SPELL:BTN_NUMS";
+		Pos = MAP_APPFONT ( 12 , 95 ) ;
+		Size = MAP_APPFONT ( 103 , 10 ) ;
+		/* ### ACHTUNG: Neuer Text in Resource? ~Wörter mit Ziffern  : ~W÷rter mit Ziffern  */
+		/* ### ACHTUNG: Neuer Text in Resource? ~Wörter mit Ziffern  : ~W÷rter mit Ziffern  */
+		Text [ en-US ] = "~Words with numbers " ;
+		TabStop = TRUE ;
+	};
+	CheckBox BTN_UPLOW
+	{
+	    HelpID = "cui:CheckBox:RID_SFXPAGE_SPELL:BTN_UPLOW";
+		Pos = MAP_APPFONT ( 12 , 108 ) ;
+		Size = MAP_APPFONT ( 103 , 10 ) ;
+		/* ### ACHTUNG: Neuer Text in Resource? Groß- u. ~Kleinschreibung  : Gro˜- u. ~Kleinschreibung  */
+		/* ### ACHTUNG: Neuer Text in Resource? Groß- u. ~Kleinschreibung  : Gro˜- u. ~Kleinschreibung  */
+		Text [ en-US ] = "~Case sensitive " ;
+		TabStop = TRUE ;
+	};
+    FixedLine GB_AUDIT
+	{
+		Pos = MAP_APPFONT ( 6 , 71 ) ;
+		Size = MAP_APPFONT ( 115 , 53 ) ;
+		/* ### ACHTUNG: Neuer Text in Resource? Prüfen : Pr³fen */
+		/* ### ACHTUNG: Neuer Text in Resource? Prüfen : Pr³fen */
+		Text [ en-US ] = "Check" ;
+	};
+};
+ // ********************************************************************** EOF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

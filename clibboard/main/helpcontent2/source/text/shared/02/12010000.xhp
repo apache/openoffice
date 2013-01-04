@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0212010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Sort Ascending</title>
+<filename>/text/shared/02/12010000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="aufsteigend">
+<paragraph role="heading" id="hd_id3152594" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/12010000.xhp" name="Sort Ascending">Sort Ascending</link></paragraph>
+<paragraph role="paragraph" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="." visibility="hidden">Sorts the data of the selected field in ascending order. </ahelp>Text fields are sorted alphabetically, numerical fields are sorted by number.<comment>UFI: Help ID .uno:Sortup is found in 	text/shared/explorer/database/11090000.xhp so I deleted it here</comment></paragraph>
+</section>
+<section id="syaufsteigend">
+<table id="tbl_id3150774">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154749" xml-lang="en-US" l10n="E">
+<image id="img_id3147276" src="res/commandimagelist/sc_sortascending.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id3147276" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159158" xml-lang="en-US" l10n="U" oldref="3">Sort Ascending</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+<paragraph role="paragraph" id="par_id3154380" xml-lang="en-US" l10n="U" oldref="4"><variable id="selektionsortieren">Data of the currently selected field are always sorted. A field is always selected as soon as you place the cursor in the field. To sort within tables, you can also click the corresponding column header. 
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150504" xml-lang="en-US" l10n="U" oldref="5"><variable id="dialogsortieren">To sort more than one data field, choose <emph>Data - Sort</emph>, then choose the <link href="text/shared/02/12100100.xhp" name="Sort Criteria">Sort Criteria</link> tab, where you can combine several sort criteria. 
+</variable></paragraph>
+</body>
+</helpdocument>

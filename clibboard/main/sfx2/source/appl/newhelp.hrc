@@ -1,0 +1,80 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _SFX_NEWHELP_HRC
+#define _SFX_NEWHELP_HRC
+
+// #defines *****************************************************************
+
+// Index Window
+#define LB_ACTIVE								10
+#define FL_ACTIVE								11
+#define TC_INDEX								12
+
+// Index TabPage
+#define FT_EXPRESSION							10
+#define CB_INDEX								11
+#define PB_OPEN_INDEX							12
+
+// Search TabPage
+#define FT_SEARCH								10
+#define ED_SEARCH								11
+#define PB_SEARCH								12
+#define FT_RESULT								13
+#define CB_FULLWORDS							14
+#define CB_SCOPE								15
+#define LB_RESULT								16
+#define PB_OPEN_SEARCH							17
+
+// Bookmarks TabPage
+#define FT_BOOKMARKS							10
+#define LB_BOOKMARKS							11
+#define PB_BOOKMARKS							12
+
+// Content TabPage
+#define LB_CONTENTS								10
+
+// Add to bookmarks dialog
+#define FT_BOOKMARK_TITLE						10
+#define ED_BOOKMARK_TITLE						11
+#define PB_BOOKMARK_OK							12
+#define PB_BOOKMARK_CANCEL						13
+#define PB_BOOKMARK_HELP						14
+#define STR_BOOKMARK_RENAME						15
+
+// Index Window: Id's of the tabpages
+#define HELP_INDEX_PAGE_FIRST					1
+#define HELP_INDEX_PAGE_CONTENTS				HELP_INDEX_PAGE_FIRST
+#define HELP_INDEX_PAGE_INDEX					2
+#define HELP_INDEX_PAGE_SEARCH					3
+#define HELP_INDEX_PAGE_BOOKMARKS				4
+#define HELP_INDEX_PAGE_LAST					HELP_INDEX_PAGE_BOOKMARKS
+
+// context menu ids
+#define MID_OPEN								1
+#define MID_RENAME								2
+#define MID_DELETE								3
+
+#endif // #ifndef _SFX_NEWHELP_HRC
+
+// ******************************************************************* EOF
+

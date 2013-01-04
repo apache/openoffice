@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidepageorientationxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Changing Page Orientation (Landscape or Portrait)</title>
+         <filename>/text/swriter/guide/pageorientation.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id9683828"><bookmark_value>page styles;orientation/scope</bookmark_value>
+      <bookmark_value>page formats; changing individual pages</bookmark_value>
+      <bookmark_value>formatting; changing individual pages</bookmark_value>
+      <bookmark_value>portrait and landscape</bookmark_value>
+      <bookmark_value>landscape and portrait</bookmark_value>
+      <bookmark_value>printing;portrait/landscape format</bookmark_value>
+      <bookmark_value>orientation of pages</bookmark_value>
+      <bookmark_value>paper orientation</bookmark_value>
+      <bookmark_value>pages;orientation</bookmark_value>
+      <bookmark_value>sideways orientation of pages</bookmark_value>
+      <bookmark_value>scope of page styles</bookmark_value>
+</bookmark><comment>MW changed "page styles;..." and added one entry</comment>
+<paragraph xml-lang="en-US" id="par_idN106FF" role="heading" level="1" l10n="NEW"><variable id="pageorientation"><link href="text/swriter/guide/pageorientation.xhp">Changing Page Orientation</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id6418042" role="paragraph" l10n="NEW">All page properties for Writer text documents, like for example the page orientation, are defined by page styles. By default, a new text document uses the “Default” page style for all pages. If you open an existing text document, different page styles may have been applied to the different pages. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id8324533" role="paragraph" l10n="NEW">It is important to know that changes that you apply to a page property will only affect the pages that use the current page style. The current page style is listed in the Status Bar at the lower window border.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7524033" role="heading" level="2" l10n="CHG">To Change the Page Orientation for All Pages</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6307260" role="paragraph" l10n="NEW">If your text document consists only of pages with the same page style, you can change the page properties directly:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5256508" role="listitem" l10n="NEW">Choose <emph>Format - Page</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9681997" role="listitem" l10n="NEW">Click the <emph>Page</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7994323" role="listitem" l10n="NEW">Under <item type="menuitem">Paper format</item>, select “Portrait” or “Landscape”.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7069002" role="listitem" l10n="NEW">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id4202398" role="heading" level="2" l10n="NEW">To Change the Page Orientation Only for Some Pages</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1071D" role="paragraph" l10n="NEW">$[officename] uses page styles to specify the orientation of the pages in a document. Page styles define more page properties, as for example header and footer or page margins. You can either change the “Default” page style for the current document, or you can define own page styles and apply those page styles to any parts of your text. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id1449324" role="paragraph" l10n="NEW">At the end of this help page, we'll discuss the scope of page styles in detail. If you are unsure about the page style concept, please read the section at the end of this page.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1480758" role="note" l10n="NEW">Unlike character styles or paragraph styles, the page styles don't know a hierarchy. You can create a new page style based on the properties of an existing page style, but when you later change the source style, the new page style does not automatically inherit the changes.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2962126" role="paragraph" l10n="CHG">To change the page orientation for all pages that share the same page style, you first need a page style, then apply that style:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10727" role="listitem" l10n="NEW">Choose <emph>Format - Styles and Formatting</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10741" role="listitem" l10n="NEW">Click the <emph>Page Styles</emph> icon.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10749" role="listitem" l10n="CHG">Right-click a page style and choose <emph>New</emph>. The new page style initially gets all properties of the selected page style.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10751" role="listitem" l10n="CHG">On the <emph>Organizer</emph> tab page, type a name for the page style in the <emph>Name</emph> box, for example "My Landscape".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1075D" role="listitem" l10n="CHG">In the <emph>Next Style</emph> box, select the page style that you want to apply to the next page that follows a page with the new style. See the section about the scope of page styles at the end of this help page.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10775" role="listitem" l10n="NEW">Click the <emph>Page</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1077D" role="listitem" l10n="NEW">Under <item type="menuitem">Paper format</item>, select “Portrait” or “Landscape”.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN108AE" role="listitem" l10n="NEW">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id1658375" role="listitem" l10n="NEW">Now you have defined a proper page style with the name "My Landscape". To apply the new style, double-click the "My Landscape" page style in the <emph>Styles and Formatting</emph> window. All pages in the current scope of page styles will be changed. If you defined the "next style" to be a different style, only the first page of the current scope of page styles will be changed.</paragraph>
+      <section id="scope">
+         <paragraph xml-lang="en-US" id="hd_id6082949" role="heading" level="2" l10n="NEW">The Scope of Page Styles</paragraph>
+         <paragraph xml-lang="en-US" id="par_id2858668" role="paragraph" l10n="NEW">You should be aware of the scope of page styles in %PRODUCTNAME. Which pages of your text document get affected by editing a page style?</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3278603" role="heading" level="3" l10n="NEW">One Page Long Styles</paragraph>
+         <paragraph xml-lang="en-US" id="par_id5169225" role="paragraph" l10n="NEW">A page style can be defined to span one page only. The “First Page” style is an example. You set this property by defining another page style to be the "next style", on the <item type="menuitem">Format - Page - Organizer</item> tab page.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id6670125" role="paragraph" l10n="NEW">A one page long style starts from the lower border of the current page style range up to the next page break. The next page break appears automatically when the text flows to the next page, which is sometimes called a "soft page break". Alternatively, you can insert a manual page break.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id2118594" role="paragraph" l10n="NEW">To insert a manual page break at the cursor position, press <item type="keycode">Ctrl+Enter</item> or choose <item type="menuitem">Insert - Manual Break</item> and just click OK.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id166020" role="heading" level="3" l10n="NEW">Manually Defined Range of a Page style</paragraph>
+         <paragraph xml-lang="en-US" id="par_id6386913" role="paragraph" l10n="NEW">The “Default” page style does not set a different "next style" on the <item type="menuitem">Format - Page - Organizer</item> tab page. Instead, the "next style" is set also to be “Default”. All page styles that are followed by the same page style can span multiple pages. The lower and upper borders of the page style range are defined by "page breaks with style". All the pages between any two "page breaks with style" use the same page style.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id6062196" role="paragraph" l10n="NEW">You can insert a "page break with style" directly at the cursor position. Alternatively, you can apply the "page break with style" property to a paragraph or to a paragraph style.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id6054261" role="paragraph" l10n="NEW">Perform any one of the following commands:</paragraph>
+         <list type="unordered">
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id1811578" role="listitem" l10n="NEW">To insert a "page break with style" at the cursor position, choose <item type="menuitem">Insert - Manual Break</item>, select a <emph>Style</emph> name from the listbox, and click OK.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id9935911" role="listitem" l10n="NEW">To apply the "page break with style" property to the current paragraph, choose <item type="menuitem">Format - Paragraph - Text Flow</item>. In the Breaks area, activate <emph>Enable</emph> and <emph>With Page Style</emph>. Select a page style name from the listbox.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id4753868" role="listitem" l10n="NEW">To apply the "page break with style" property to the current paragraph style, right-click the current paragraph. Choose <item type="menuitem">Edit Paragraph Style</item> from the context menu. Click the <emph>Text Flow</emph> tab. In the Breaks area, activate <emph>Enable</emph> and <emph>With Page Style</emph>. Select a page style name from the listbox.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id4744407" role="listitem" l10n="NEW">To apply the "page break with style" property to an arbitrary paragraph style, choose <item type="menuitem">Format - Styles and Formatting</item>. Click the <emph>Paragraph Styles</emph> icon. Right-click the name of the paragraph style you want to modify and choose <emph>Modify</emph>. Click the <emph>Text Flow</emph> tab. In the Breaks area, activate <emph>Enable</emph> and <emph>With Page Style</emph>. Select a page style name from the listbox.</paragraph>
+            </listitem>
+         </list>
+      </section>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/header_footer.xhp#header_footer"/>
+      <embed href="text/swriter/guide/change_header.xhp#change_header"/>
+      <embed href="text/swriter/guide/header_with_chapter.xhp#header_with_chapter"/>
+      <embed href="text/swriter/guide/header_with_line.xhp#header_with_line"/>
+   </body>
+</helpdocument>

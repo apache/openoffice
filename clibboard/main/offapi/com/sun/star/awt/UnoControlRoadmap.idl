@@ -1,0 +1,81 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_UnoControlRoadmap_idl__
+#define __com_sun_star_awt_UnoControlRoadmap_idl__
+
+#ifndef __com_sun_star_awt_UnoControl_idl__
+#include <com/sun/star/awt/UnoControl.idl>
+#endif
+
+#ifndef __com_sun_star_awt_XItemEventBroadcaster_idl__
+#include <com/sun/star/awt/XItemEventBroadcaster.idl>
+#endif
+
+#ifndef __com_sun_star_beans_XPropertyChangeListener_idl__
+#include <com/sun/star/beans/XPropertyChangeListener.idl>
+#endif
+
+
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module awt {
+
+//=============================================================================
+
+/** specifies a Roadmap control. The model of the Roadmap control must be a
+    <type>UnoControlRoadmapModel</type>
+
+    <p>The model properties are implemented in the control as follows:
+    <ul><li>CurrentItem: The RGB code of the background color is RGB(194, 211, 238)</li>
+        <li>ImageURL: The image referenced by the URL is placed in the lower right corner
+            of the control.</li>
+        <li>Graphic: The graphic is placed in the lower right corner of the control.</li>
+        <li>Complete: When set to <FALSE/> a non interactive RoadmapItem is appended
+            after the last roadmap item, labeled with three dots, indicating incompleteness.</li>
+        <li>Interactive: When activating a RoadmapItem (see <type>RoadmapItem</type>) the
+            information about which Item has been selected is passed over when an itemlistener
+            has been registered at the control.</li>
+    </ul></p>
+*/
+service UnoControlRoadmap
+{
+	service com::sun::star::awt::UnoControl;
+
+	/** This interface allows to add an Itemlistener to the roadmap.
+	    If the property "Interactive" at the com::sun::star::awt::UnoControlRoadmapModel
+	    is set to 'true' the listener is triggered each time the user selects a RoadmapItem
+	    by Mouseclick or pressing space bar at the currently focussed RoadmapItem.
+	    The property ItemID of the com::sun::star::awt::ItemEvent:: is assigned
+	    the value of the property "ID" of the activated RoadmapItem.
+	 */
+	interface com::sun::star::awt::XItemEventBroadcaster;
+
+
+};
+//=============================================================================
+
+}; }; }; };
+
+
+#endif

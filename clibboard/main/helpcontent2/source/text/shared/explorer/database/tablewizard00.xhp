@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textsharedexplorerdatabasetablewizard00xml" indexer="include">
+<title id="tit" xml-lang="en-US">Table Wizard</title>
+<filename>/text/shared/explorer/database/tablewizard00.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="tablewizard">
+<bookmark xml-lang="en-US" branch="index" id="bm_id6009094"><bookmark_value>wizards;database tables (Base)</bookmark_value>
+<bookmark_value>Table Wizard (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)" to all entries</comment>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGTABLE_DIALOG" id="bm_id406201" localize="false"/>
+<paragraph role="heading" id="par_idN1054C" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/tablewizard00.xhp">Table Wizard</link></paragraph>
+<paragraph role="paragraph" id="par_idN1055C" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The Table Wizard helps you to create a database table.</ahelp></paragraph>
+</section>
+<embed href="text/shared/explorer/database/tablewizard01.xhp#selecttable"/>
+<embed href="text/shared/explorer/database/tablewizard02.xhp#settype"/>
+<embed href="text/shared/explorer/database/tablewizard03.xhp#setprimary"/>
+<embed href="text/shared/explorer/database/tablewizard04.xhp#createtable"/>
+<embed href="text/shared/00/00000001.xhp#zurueckautopi"/>
+<embed href="text/shared/00/00000001.xhp#weiterautopi"/>
+<embed href="text/shared/00/00000001.xhp#finish"/>
+<embed href="text/shared/00/00000001.xhp#abbrechen"/>
+<paragraph role="paragraph" id="par_idN105AF" xml-lang="en-US" l10n="CHG"><link href="text/shared/explorer/database/tablewizard01.xhp" name="Table Wizard - Select fields">Table Wizard - Select fields</link></paragraph>
+</body>
+</helpdocument>

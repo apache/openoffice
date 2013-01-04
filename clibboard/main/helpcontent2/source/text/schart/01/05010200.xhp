@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textschart0105010200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Data Series</title>
+<filename>/text/schart/01/05010200.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="datenreihe">
+<paragraph role="heading" id="hd_id3150449" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/schart/01/05010200.xhp" name="Data Series">Data Series</link></paragraph>
+<paragraph role="paragraph" id="par_id3145750" xml-lang="en-US" l10n="U" oldref="2">Use this to change the properties of a selected data series. This dialog appears when one data series is selected when you choose <emph>Format - Format Selection</emph>. Some of the menu entries are only available for 2D or 3D charts.</paragraph>
+</section>
+<paragraph role="note" id="par_id3154015" xml-lang="en-US" l10n="U" oldref="4">Any changes made here affect the entire data series. For example, if you change the color, all elements belonging to this data series will change color.</paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#frtodr"/>
+</section>
+<embed href="text/shared/01/05200100.xhp#linie"/>
+<embed href="text/shared/01/05210100.xhp#flaeche"/>
+<embed href="text/shared/01/05210700.xhp#transparenz"/>
+<embed href="text/shared/01/05020100.xhp#zeichen"/>
+<embed href="text/shared/01/05020100.xhp#zn"/>
+<embed href="text/schart/01/04030000.xhp#datalabels"/>
+<paragraph role="heading" id="hd_id3146916" xml-lang="en-US" level="2" l10n="CHG" oldref="3"><link href="text/schart/01/04050000.xhp" name="Y Error Bars">Y Error Bars</link></paragraph>
+<embed href="text/schart/01/04050000.xhp#statistik"/>
+<embed href="text/schart/01/04060000.xhp#optionen"/>
+<embed href="text/shared/00/00000001.xhp#zurueck"/>
+</body>
+</helpdocument>

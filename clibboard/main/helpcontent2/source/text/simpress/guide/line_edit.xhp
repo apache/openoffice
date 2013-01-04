@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpressguideline_editxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Editing Curves</title>
+<filename>/text/simpress/guide/line_edit.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150441"><bookmark_value>curves; editing</bookmark_value>
+<bookmark_value>editing; curves</bookmark_value>
+<bookmark_value>splitting;curves</bookmark_value>
+<bookmark_value>closing;shapes</bookmark_value>
+<bookmark_value>deleting;points</bookmark_value>
+<bookmark_value>converting;points</bookmark_value>
+<bookmark_value>points;adding/converting/deleting</bookmark_value>
+</bookmark><comment>MW deleted "adding;"</comment><paragraph role="heading" id="hd_id3150441" xml-lang="en-US" level="1" l10n="U" oldref="10"><variable id="line_edit"><link href="text/simpress/guide/line_edit.xhp" name="Editing Curves">Editing Curves</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150342" xml-lang="en-US" l10n="U" oldref="11">A curved line segment consists of two data points (endpoints) and two control points (handles). A control line connects a control point to a data point. You can change the shape of a curve by converting a data point to a different type, or by dragging the control points to a different location.</paragraph>
+<paragraph role="paragraph" id="par_id3145252" xml-lang="en-US" l10n="U" oldref="16">You can also modify the properties of the line by selecting the line and choosing <emph>Format - Line</emph>.</paragraph>
+<table id="tbl_id3150715">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153711" xml-lang="en-US" l10n="E">
+<image id="img_id3149018" src="res/commandimagelist/sc_toggleobjectbeziermode.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149018" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="CHG" oldref="54">To view the data points and control points of a curved line, select the line, and then click the <emph>Points</emph> icon on the Drawing bar. The data points are represented by squares and the control points by circles. A control point might overlay a data point.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3145587" xml-lang="en-US" level="3" l10n="U" oldref="55">To adjust a curved line segment:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3151241" xml-lang="en-US" l10n="CHG" oldref="51">Select a curved line, and then click the <emph>Points </emph>icon on the <emph>Drawing</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150213" xml-lang="en-US" l10n="U" oldref="56">Do one of the following:</paragraph>
+</listitem>
+</list>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153810" xml-lang="en-US" l10n="U" oldref="12">Drag a data point to resize the line. If a control point overlies the data point, drag the control point until you can see the data point, and then drag the data point.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149872" xml-lang="en-US" l10n="U" oldref="13">Drag a control point. The curve pulls in the direction that you drag the control point.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3150431" xml-lang="en-US" level="3" l10n="U" oldref="57">To split a curved line:</paragraph>
+<paragraph role="paragraph" id="par_id3150395" xml-lang="en-US" l10n="U" oldref="58">You can only split a curved line that has three or more data points.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3151392" xml-lang="en-US" l10n="CHG" oldref="59">Select a curved line, and then click the <emph>Points </emph>icon on the <emph>Drawing</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149941" xml-lang="en-US" l10n="CHG" oldref="60">Select a data point, and then click the <emph>Split Curve </emph>icon on the <emph>Edit Points</emph> Bar.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3150655" xml-lang="en-US" level="3" l10n="U" oldref="61">To create a closed shape:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150743" xml-lang="en-US" l10n="CHG" oldref="62">Select a curved line, and then click the <emph>Points </emph>icon on the <emph>Drawing</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153080" xml-lang="en-US" l10n="CHG" oldref="63">On the <emph>Edit Points</emph> Bar, click the<emph> Close Bézier</emph> icon.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3145162" xml-lang="en-US" level="3" l10n="U" oldref="15">To convert a data point on a curved line:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150336" xml-lang="en-US" l10n="CHG" oldref="64">Select a curved line, and then click the <emph>Points </emph>icon on the <emph>Drawing</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155925" xml-lang="en-US" l10n="U" oldref="14">Click the data point you want to convert, and do one of the following:</paragraph>
+</listitem>
+</list>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3145241" xml-lang="en-US" l10n="CHG" oldref="65">To convert the data point to a smooth point, click the <emph>Smooth Transition</emph> icon on the <emph>Edit Points</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145299" xml-lang="en-US" l10n="U" oldref="66">To convert the data point to a symmetrical point, click the <emph>Symmetric Transition</emph> icon on the <emph>Edit Points</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145348" xml-lang="en-US" l10n="CHG" oldref="67">To convert the data point to a corner point, click the <emph>Corner Point</emph> icon on the <emph>Edit Points</emph> Bar.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3150471" xml-lang="en-US" level="3" l10n="U" oldref="68">To add a data point:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3155373" xml-lang="en-US" l10n="CHG" oldref="69">Select a curved line, and then click the <emph>Points </emph>icon on the <emph>Drawing</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156256" xml-lang="en-US" l10n="CHG" oldref="70">On the <emph>Edit Points</emph> Bar, click the<emph> Insert Points</emph> icon.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3083280" xml-lang="en-US" l10n="U" oldref="71">Click the line where you want to add the point, and drag a short distance.</paragraph>
+</listitem>
+</list>
+<paragraph role="tip" id="par_id3154643" xml-lang="en-US" l10n="CHG" oldref="72">If a data point does not have a control point, select the data point, and then click the <emph>Convert to Curve</emph> icon on the <emph>Edit Points</emph> Bar.</paragraph>
+<paragraph role="heading" id="hd_id3151186" xml-lang="en-US" level="3" l10n="U" oldref="73">To delete a data point:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153624" xml-lang="en-US" l10n="CHG" oldref="74">Select a curved line, and then click the <emph>Points </emph>icon on the <emph>Drawing</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150261" xml-lang="en-US" l10n="U" oldref="75">Click the point you want to delete.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3143230" xml-lang="en-US" l10n="CHG" oldref="76">On the <emph>Edit Points</emph> Bar, click the<emph> Delete Points</emph> icon.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3151174" xml-lang="en-US" l10n="CHG" oldref="52"><link href="text/shared/main0227.xhp" name="Edit Points bar">Edit Points bar</link></paragraph>
+<embed href="text/simpress/guide/line_draw.xhp#line_draw"/>
+<embed href="text/simpress/guide/vectorize.xhp#vectorize"/>
+<embed href="text/simpress/guide/3d_create.xhp#3d_create"/>
+<embed href="text/simpress/guide/text2curve.xhp#text2curve"/>
+</section>
+</body>
+</helpdocument>

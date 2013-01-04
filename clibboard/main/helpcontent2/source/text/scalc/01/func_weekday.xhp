@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_weekdayxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">WEEKDAY </title>
+<filename>/text/scalc/01/func_weekday.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154925"><bookmark_value>WEEKDAY function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WOCHENTAG" id="bm_id3152359" localize="false"/><paragraph role="heading" id="hd_id3154925" xml-lang="en-US" level="2" l10n="U" oldref="136"><variable id="weekday"><link href="text/scalc/01/func_weekday.xhp">WEEKDAY</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154228" xml-lang="en-US" l10n="U" oldref="137"><ahelp hid="HID_FUNC_WOCHENTAG">Returns the day of the week for the given date value.</ahelp> The day is returned as an integer between 1 (Sunday) and 7 (Saturday) if no type or type=1 is specified. If type=2, numbering begins at Monday=1; and if type=3 numbering begins at Monday=0.</paragraph>
+<paragraph role="heading" id="hd_id3147217" xml-lang="en-US" level="3" l10n="U" oldref="138">Syntax</paragraph>
+<paragraph role="code" id="par_id3149033" xml-lang="en-US" l10n="U" oldref="139">WEEKDAY(Number; Type)</paragraph>
+<paragraph role="paragraph" id="par_id3149046" xml-lang="en-US" l10n="U" oldref="140">
+<emph>Number</emph>, as a date value, is a decimal for which the weekday is to be returned.</paragraph>
+<paragraph role="paragraph" id="par_id3154394" xml-lang="en-US" l10n="U" oldref="141">
+<emph>Type</emph> determines the type of calculation. For Type=1, the weekdays are counted starting from Sunday (this is the default even when the Type parameter is missing). For Type=2, the weekdays are counted starting from Monday=1. For Type=3, the weekdays are counted starting from Monday=0.</paragraph>
+<paragraph role="note" id="par_id3156188" xml-lang="en-US" l10n="U" oldref="142">These values apply only to the standard date format that you select under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Calculate</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3153836" xml-lang="en-US" level="3" l10n="U" oldref="143">Examples</paragraph>
+<paragraph role="paragraph" id="par_id3150317" xml-lang="en-US" l10n="CHG" oldref="144">=WEEKDAY("2000-06-14") returns 4 (the Type parameter is missing, therefore the standard count is used. The standard count starts with Sunday as day number 1. June 14, 2000 was a Wednesday and therefore day number 4).</paragraph>
+<paragraph role="paragraph" id="par_id3153174" xml-lang="en-US" l10n="CHG" oldref="145">=WEEKDAY("1996-07-24";2) returns 3 (the Type parameter is 2, therefore Monday is day number 1. July 24, 1996 was a Wednesday and therefore day number 3).</paragraph>
+<paragraph role="paragraph" id="par_id3153525" xml-lang="en-US" l10n="CHG" oldref="146">=WEEKDAY("1996-07-24";1) returns 4 (the Type parameter is 1, therefore Sunday is day number 1. July 24, 1996 was a Wednesday and therefore day number 4).</paragraph>
+<paragraph role="paragraph" id="par_id3150575" xml-lang="en-US" l10n="CHG" oldref="147">=WEEKDAY(NOW()) returns the number of the current day.</paragraph>
+<paragraph role="tip" id="par_id3150588" xml-lang="en-US" l10n="U" oldref="171">To obtain a function indicating whether a day in A1 is a business day, use the IF and WEEKDAY functions as follows: <br/>IF(WEEKDAY(A1;2)&lt;6;"Business day";"Weekend")</paragraph>
+</body>
+</helpdocument>

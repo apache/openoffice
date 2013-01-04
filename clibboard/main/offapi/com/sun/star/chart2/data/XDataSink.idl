@@ -1,0 +1,74 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef com_sun_star_chart2_data_XDataSink_idl
+#define com_sun_star_chart2_data_XDataSink_idl
+
+#include <com/sun/star/uno/XInterface.idl>
+
+#include <com/sun/star/chart2/data/XLabeledDataSequence.idl>
+
+module com
+{
+module sun
+{
+module star
+{
+module chart2
+{
+module data
+{
+
+/** is a container for sequences of data.  With this interface data
+    can only be written to.
+
+    <p>If you want to be able to also read the data set here, your
+    component must also implement <type>XDataSource</type>.</p>
+  */
+interface XDataSink : ::com::sun::star::uno::XInterface
+{
+    /** sets new data sequences.  The elements set here must support
+        the service <type>DataSequence</type>.
+
+        <p>If the data consist only of floating point numbers (double
+        values), the instances set here should also support the
+        service <type>NumericalDataSequence</type>.</p>
+
+        <p>If the data consist only of strings, the instances set here
+        should also support the service
+        <type>TextualDataSequence</type>.</p>
+
+        <p>If one of the derived services is supported by one element
+        of the sequence, it should be available for all elements in
+        the sequence.</p>
+     */
+    void  setData( [in] sequence< XLabeledDataSequence > aData );
+};
+
+} ; // data
+} ; // chart2
+} ; // com
+} ; // sun
+} ; // star
+
+
+#endif

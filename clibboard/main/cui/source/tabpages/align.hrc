@@ -1,0 +1,80 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _SVX_ALIGN_HRC
+#define _SVX_ALIGN_HRC
+
+// defines ------------------------------------------------------------------
+
+// resource id's
+#define FL_ALIGNMENT                10
+#define FT_HORALIGN                 11
+#define LB_HORALIGN                 12
+#define FT_INDENT                   13
+#define ED_INDENT                   14
+#define FT_VERALIGN                 15
+#define LB_VERALIGN                 16
+
+#define FL_ORIENTATION              20
+#define BTN_TXTSTACKED              21
+#define CTR_DIAL                    22
+#define FT_DEGREES                  23
+#define NF_DEGREES                  24
+#define FT_BORDER_LOCK              25
+#define CTR_BORDER_LOCK             26
+#define BTN_ASIAN_VERTICAL          27
+
+#define FL_WRAP                     40
+#define BTN_WRAP                    41
+#define BTN_HYPH                    42
+#define FT_TEXTFLOW                 43
+#define LB_FRAMEDIR                 44
+#define BTN_SHRINK                  45
+
+//#define ED_INDENT1                  100
+
+// list box indexes
+#define ALIGNDLG_HORALIGN_STD       0
+#define ALIGNDLG_HORALIGN_LEFT      1
+#define ALIGNDLG_HORALIGN_CENTER    2
+#define ALIGNDLG_HORALIGN_RIGHT     3
+#define ALIGNDLG_HORALIGN_BLOCK     4
+#define ALIGNDLG_HORALIGN_FILL      5
+
+#define ALIGNDLG_VERALIGN_STD       0
+#define ALIGNDLG_VERALIGN_TOP       1
+#define ALIGNDLG_VERALIGN_MID       2
+#define ALIGNDLG_VERALIGN_BOTTOM    3
+
+// image list for ValueSets:
+#define IL_LOCK_BMPS                1100
+#define IL_LOCK_BMPS_HC				1101
+#define IID_BOTTOMLOCK              1
+#define IID_TOPLOCK                 2
+#define IID_CELLLOCK                3
+
+#define STR_BOTTOMLOCK              1
+#define STR_TOPLOCK                 2
+#define STR_CELLLOCK                3
+
+#endif
+

@@ -1,0 +1,11 @@
+--- misc/serf-1.1.0/configure.in	2011-07-13 03:10:50.000000000 +0200
++++ misc/build/serf-1.1.0/configure.in	2012-01-30 17:45:16.000000000 +0100
+@@ -199,7 +199,7 @@
+ 
+ libs=""
+ if test -n "$apu_config"; then
+-  APR_ADDTO(libs, [`$apu_config --link-libtool --libs`])
++  APR_ADDTO(libs, [`$apu_config --link-libtool`])
+ fi
+ APR_ADDTO(libs, [`$apr_config --link-libtool --libs` $LIBS])
+ 

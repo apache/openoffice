@@ -1,0 +1,73 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XRecycler_idl__
+#define __com_sun_star_ucb_XRecycler_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_XContentIdentifier_idl__
+#include <com/sun/star/ucb/XContentIdentifier.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_XCommandProcessor_idl__
+#include <com/sun/star/ucb/XCommandProcessor.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** Allows an <type>XContent</type> to delete itself into the trash can.
+
+	<p>This is an additional interface the XContent representing the trash
+	can (URL: "vnd.sun.staroffice.trashcan:///") should support.
+*/
+published interface XRecycler : com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/** Notify the trash can that an <type>XContent</type> is deleting itself
+	    into it.
+
+		@param Properties
+		The trash can uses this interface to access the	properties of the
+		content being deleted, to copy them for later display etc.  The
+		trash can will not use the interface after it has returned from this
+		method.
+
+		@param Identifier
+		When the deleted content is later restored or ultimately deleted, the
+		trash can will use this identifier to query an XContent that it will
+		send the undelete or delete command to.
+	*/
+	void trashContent([in] com::sun::star::ucb::XCommandProcessor Properties,
+			  		  [in] com::sun::star::ucb::XContentIdentifier Identifier);
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

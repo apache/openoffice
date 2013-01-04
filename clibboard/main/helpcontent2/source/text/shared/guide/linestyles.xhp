@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidelinestylesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Applying Line Styles</title>
+<filename>/text/shared/guide/linestyles.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-07-15T11:38:14">FPE: Cleaned; dedr: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153884"><bookmark_value>separator lines; defining</bookmark_value>
+<bookmark_value>reference lines</bookmark_value>
+<bookmark_value>arrows; defining arrow lines</bookmark_value>
+<bookmark_value>line styles; applying</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153884" xml-lang="en-US" level="1" l10n="CHG" oldref="3"><variable id="linestyles"><link href="text/shared/guide/linestyles.xhp" name="Applying Line Styles Using the Toolbar">Applying Line Styles Using the Toolbar</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="CHG" oldref="5">The <emph>Drawing Object Properties</emph> toolbar contains icons and combo boxes to define various line attributes.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="CHG" oldref="6">Click the <emph>Line</emph> icon 
+<image id="img_id3144510" src="res/commandimagelist/sc_formatline.png" width="0.222inch" height="0.222inch"><alt id="alt_id3144510" xml-lang="en-US">Icon</alt>
+	</image> to open the <emph>Line</emph> dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106D6" xml-lang="en-US" l10n="NEW">Click the <emph>Arrow Styles</emph> icon 
+<image id="img_id5858221" src="res/commandimagelist/sc_lineendstyle.png" width="0.222inch" height="0.222inch"><alt id="alt_id5858221" xml-lang="en-US">Icon</alt>
+	</image> to select an arrow style for the right and left ends of a line.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3150868" xml-lang="en-US" l10n="CHG" oldref="7">Select a style from the <emph>Line Style</emph> box and specify the width in the <emph>Line Width</emph> box. A width of 0 corresponds to 1 pixel.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN1070A" xml-lang="en-US" l10n="NEW">Select the line and arrow color in the <emph>Line Color</emph> box.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/shared/guide/linestyle_define.xhp#linestyle_define"/>
+<embed href="text/shared/guide/lineend_define.xhp#lineend_define"/>
+</section>
+</body>
+</helpdocument>

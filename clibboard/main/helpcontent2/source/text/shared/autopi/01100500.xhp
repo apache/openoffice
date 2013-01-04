@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01100500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Report Wizard - Create Report</title>
+<filename>/text/shared/autopi/01100500.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-07-12T10:33:19">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="savereport">
+<paragraph role="heading" id="hd_id3156211" xml-lang="en-US" level="1" l10n="CHG" oldref="11"><link href="text/shared/autopi/01100500.xhp" name="Report Wizard - Create Report">Report Wizard - Create Report</link></paragraph>
+<paragraph role="paragraph" id="par_id3159224" xml-lang="en-US" l10n="CHG" oldref="1"><ahelp hid=".">You can create the report as a static or dynamic report. When you open a dynamic report, it will display with the current data contents. When you open a static report, it will always display the same data from the time when the static report was created.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#autopilotreport"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_4_TITLE" id="bm_id3153049" localize="false"/>
+<paragraph role="heading" id="hd_id3145669" xml-lang="en-US" level="2" l10n="U" oldref="2">Title of report</paragraph>
+<paragraph role="paragraph" id="par_id3156136" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_DLGREPORT_4_TITLE">Specifies the title that is printed at the title line of each page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_5_OPTSTATDOCUMENT" id="bm_id3149235" localize="false"/>
+<paragraph role="heading" id="hd_id3157910" xml-lang="en-US" level="2" l10n="U" oldref="7">Static report</paragraph>
+<paragraph role="paragraph" id="par_id3149580" xml-lang="en-US" l10n="CHG" oldref="17"><ahelp hid="HID_DLGREPORT_5_OPTSTATDOCUMENT">Saves the report as a static report. When you open a static report, it will always display the data from the time the report was created.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_5_OPTDYNTEMPLATE" id="bm_id3145136" localize="false"/>
+<paragraph role="heading" id="hd_id3154751" xml-lang="en-US" level="2" l10n="U" oldref="2">Dynamic report</paragraph>
+<paragraph role="paragraph" id="par_id3155805" xml-lang="en-US" l10n="CHG" oldref="12"><ahelp hid="HID_DLGREPORT_5_OPTDYNTEMPLATE">Saves the report as a template. When you open a dynamic report, it will display with the current data contents.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_5_OPTEDITTEMPLATE" id="bm_id3166460" localize="false"/>
+<paragraph role="heading" id="hd_id3148538" xml-lang="en-US" level="3" l10n="CHG" oldref="5">Modify report layout</paragraph>
+<paragraph role="paragraph" id="par_id3163802" xml-lang="en-US" l10n="CHG" oldref="15"><ahelp hid="HID_DLGREPORT_5_OPTEDITTEMPLATE">When you click <emph>Finish</emph>, the report will be saved and opened for edit.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGREPORT_5_OPTUSETEMPLATE" id="bm_id3146948" localize="false"/>
+<paragraph role="heading" id="hd_id3153127" xml-lang="en-US" level="3" l10n="CHG" oldref="6">Create report now</paragraph>
+<paragraph role="paragraph" id="par_id3156194" xml-lang="en-US" l10n="CHG" oldref="16"><ahelp hid="HID_DLGREPORT_5_OPTUSETEMPLATE">When you click <emph>Finish</emph>, the report will be saved.</ahelp></paragraph>
+</body>
+</helpdocument>

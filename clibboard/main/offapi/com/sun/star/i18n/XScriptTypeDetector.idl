@@ -1,0 +1,87 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_i18n_XScriptTypeDetector_idl__
+#define __com_sun_star_i18n_XScriptTypeDetector_idl__
+
+#include <com/sun/star/uno/XInterface.idl>
+
+//=============================================================================
+
+module com {  module sun {  module star {  module i18n {
+
+//=============================================================================
+
+//--------------------------------------------------------------------------
+/** 
+    contains the help routines for layouting complex text
+
+    <p> Assumption - StartPos is inclusive and EndPos is exclusive. </p>
+
+    <p> The <em>nScriptDirection</em> parameters are of type
+    <type>ScriptDirection</type></p>
+
+	 @since OOo 1.1.2
+*/
+
+published interface XScriptTypeDetector : ::com::sun::star::uno::XInterface
+{
+
+    /** @returns the position where the specified Script Direction starts.
+    */
+    long beginOfScriptDirection( [in] string aText, [in] long nPos,
+                  [in] short nScriptDirection );
+
+    //--------------------------------------------------------------------------
+    /** @returns the position where the specified Script Direction ends.
+    */
+    long endOfScriptDirection( [in] string aText, [in] long nPos,
+                  [in] short nScriptDirection );
+
+    //--------------------------------------------------------------------------
+    /** @returns the Script Direction of the current position.
+    */
+    short   getScriptDirection  ([in] string aText, [in] long nPos,
+                  [in] short nDefaultScriptDirection );
+
+    //--------------------------------------------------------------------------
+    /** @returns the position where the specified CTL Script Type starts.
+    */
+    long beginOfCTLScriptType( [in] string aText, [in] long nPos);
+
+    //--------------------------------------------------------------------------
+    /** @returns the position where the specified CTL Script Type ends.
+    */
+    long endOfCTLScriptType( [in] string aText, [in] long nPos);
+
+    //--------------------------------------------------------------------------
+    /** @returns the CTL script type of the current position. <br/>
+        One of <type>CTLScriptType</type> constants.
+    */
+    short   getCTLScriptType  ([in] string aText, [in] long nPos);
+};
+
+//=============================================================================
+}; }; }; };
+
+#endif

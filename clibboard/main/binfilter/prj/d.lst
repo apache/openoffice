@@ -1,0 +1,7 @@
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%__SRC%\slb\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\misc\legacy_binfilters.rdb %_DEST%\xml%_EXT%\legacy_binfilters.rdb
+..\%__SRC%\misc\bf_migratefilter.component %_DEST%\xml%_EXT%\bf_migratefilter.component
+..\%__SRC%\misc\bindet.component %_DEST%\xml%_EXT%\bindet.component

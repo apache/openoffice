@@ -1,0 +1,99 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __ooo_vba_XDocumentProperty_idl__
+#define __ooo_vba_XDocumentProperty_idl__
+
+#ifndef __com_sun_star_script_BasicErrorException_idl__
+#include <com/sun/star/script/BasicErrorException.idl>
+#endif
+#ifndef __com_sun_star_script_XDefaultProperty_idl__
+#include <com/sun/star/script/XDefaultProperty.idl>
+#endif
+#ifndef __ooo_vba_XHelperInterface_idl__
+#include <ooo/vba/XHelperInterface.idl>
+#endif
+
+module ooo { module vba { 
+
+/**
+ * Specific built-in document property. Use CustomDocumentProperties(index),
+ * where index is the name or index number of the custom document property,
+ * to return a DocumentProperty object that represents a specific custom document property.
+ */
+interface XDocumentProperty 
+{
+   
+    interface com::sun::star::script::XDefaultProperty;
+    interface ooo::vba::XHelperInterface;
+
+    void Delete()
+        raises (com::sun::star::script::BasicErrorException);
+
+    /** Required String. The name of the property.
+     */
+    string getName()
+        raises (com::sun::star::script::BasicErrorException);
+
+    void setName([in] string Name)
+        raises (com::sun::star::script::BasicErrorException);
+
+    /** The data type of the property.
+     * Can be one of the following MsoDocProperties constants:
+     * msoPropertyTypeBoolean, msoPropertyTypeDate, msoPropertyTypeFloat,
+     * msoPropertyTypeNumber, or msoPropertyTypeString.
+     */
+    byte getType()
+        raises (com::sun::star::script::BasicErrorException);
+
+    void setType([in] byte Type)
+        raises (com::sun::star::script::BasicErrorException);
+
+    /** If true, then LinkSource has a valid value. */
+    boolean getLinkToContent()
+        raises (com::sun::star::script::BasicErrorException);
+
+    void setLinkToContent([in] boolean LinkToContent)
+        raises (com::sun::star::script::BasicErrorException);
+
+    /** If LinkToContent is false, then this contains the value of the property
+     * The data type of the value will match the Type property.
+     */
+    any getValue()
+        raises (com::sun::star::script::BasicErrorException);
+
+    void setValue([in] any Value)
+        raises (com::sun::star::script::BasicErrorException);
+
+    /** If LinkToContent is false, then this contains the value of the property */
+    string getLinkSource()
+        raises (com::sun::star::script::BasicErrorException);
+
+    void setLinkSource([in] string LinkSource)
+        raises (com::sun::star::script::BasicErrorException);
+};
+
+}; };
+
+#endif
+

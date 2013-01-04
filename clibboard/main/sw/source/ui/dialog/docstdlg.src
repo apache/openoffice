@@ -1,0 +1,180 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "globals.hrc"
+#include "docstdlg.hrc"
+#include "helpid.h"
+ // #define TP_DOC_STAT 256
+TabPage TP_DOC_STAT
+{
+	HelpID = HID_DOC_STAT ;
+	Hide = TRUE;
+	Size = MAP_APPFONT ( 260 , 185 ) ;
+	FixedText FT_PAGE
+	{
+		Pos = MAP_APPFONT ( 6 , 6 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of Pages:" ;
+		Left = TRUE ;
+	};
+	FixedText FT_TABLE
+	{
+		Pos = MAP_APPFONT ( 6 , 18 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of Tables:" ;
+		Left = TRUE ;
+	};
+	FixedText FT_GRF
+	{
+		Pos = MAP_APPFONT ( 6 , 30 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of Graphics:" ;
+		Left = TRUE ;
+	};
+	FixedText FT_OLE
+	{
+		Pos = MAP_APPFONT ( 6 , 42 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of OLE Objects:" ;
+		Left = TRUE ;
+	};
+	FixedText FT_PARA
+	{
+		Pos = MAP_APPFONT ( 6 , 54 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of Paragraphs:" ;
+		Left = TRUE ;
+	};
+	FixedText FT_WORD
+	{
+		Pos = MAP_APPFONT ( 6 , 68 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of Words:" ;
+		Left = TRUE ;
+	};
+	FixedText FT_CHAR
+	{
+		Pos = MAP_APPFONT ( 6 , 82 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of Characters:" ;
+		Left = TRUE ;
+	};
+	FixedText FT_LINE
+	{
+		Pos = MAP_APPFONT ( 6 , 96 ) ;
+		Size = MAP_APPFONT ( 90 , 8 ) ;
+		Text [ en-US ] = "Number of Lines:" ;
+	};
+	FixedText FT_PAGE_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 6 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+	};
+	FixedText FT_TABLE_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 18 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+	};
+	FixedText FT_GRF_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 30 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+	};
+	FixedText FT_OLE_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 42 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+	};
+	FixedText FT_PARA_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 54 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+	};
+	FixedText FT_WORD_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 68 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+	};
+	FixedText FT_CHAR_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 82 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+	};
+	FixedText FT_LINE_COUNT
+	{
+		Pos = MAP_APPFONT ( 114 , 96 ) ;
+		Size = MAP_APPFONT ( 27 , 8 ) ;
+		Left = TRUE ;
+		Text = "..." ;
+	};
+	PushButton PB_PDATE
+	{
+	    HelpID = "sw:PushButton:TP_DOC_STAT:PB_PDATE";
+		Pos = MAP_APPFONT ( 204 , 94 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Text [ en-US ] = "~Update" ;
+	};
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared01moviesoundxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Movie and Sound</title>
+         <filename>/text/shared/01/moviesound.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="moviesound">
+<bookmark xml-lang="en-US" branch="index" id="bm_id1907712"><bookmark_value>inserting;movies/sounds</bookmark_value>
+         <bookmark_value>sound files</bookmark_value>
+         <bookmark_value>playing movies and sound files</bookmark_value>
+         <bookmark_value>videos</bookmark_value>
+         <bookmark_value>movies</bookmark_value>
+         <bookmark_value>audio</bookmark_value>
+         <bookmark_value>music</bookmark_value>
+</bookmark><comment>UFI: added "music;inserting"</comment><comment>MW made "sounds;",  "audio;", "music;" one level entries and added "movies"</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertAVMedia" id="bm_id6085699" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertAVMedia" id="bm_id6890774" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1065C" role="heading" level="1" l10n="NEW"><variable id="moviesoundtitle"><link href="text/shared/01/moviesound.xhp">Movie and Sound</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_idN1066C" role="paragraph" l10n="NEW"><ahelp hid=".">Inserts a video or sound file into your document.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000404.xhp#moviesound"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_idN10683" role="heading" level="2" l10n="NEW">To insert a movie or sound file into your document</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1068A" role="paragraph" l10n="NEW">Click where you want to insert the file.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1068E" role="paragraph" l10n="NEW">Choose <emph>Insert - Movie and Sound</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10696" role="paragraph" l10n="NEW">In the File Open dialog, select the file that you want to insert.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN10699" role="note" l10n="NEW">The file types that are listed in this dialog are not supported by all operating systems.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106D7" role="paragraph" l10n="NEW">Click <emph>Open</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id0120200912190948" role="paragraph" l10n="NEW">Alternatively, you can choose <item type="menuitem">Tools - Media Player</item> to open the Media Player. Use the Media Player to preview all supported media files. Click the Apply button in the Media Player window to insert the current media file into your document.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1069C" role="heading" level="2" l10n="NEW">To play a movie or sound file</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106A7" role="paragraph" l10n="NEW">Click the object icon for the movie or sound file in your document.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id0120200912190940" role="paragraph" l10n="NEW">If the icon is arranged on the background, hold down Ctrl while you click.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id0120200912062096" role="paragraph" l10n="NEW">The Media Playback toolbar is shown.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10788" role="paragraph" l10n="NEW">Click <emph>Play</emph> on the <emph>Media Playback</emph> toolbar.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id0120200912062064" role="note" l10n="NEW">When you show an Impress presentation, the embedded sound or video on the current slide plays automatically until it's over or until you leave the slide.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106D0" role="paragraph" l10n="CHG">You can also use the Media Playback Bar to pause, to stop, to loop, as well as to adjust the volume or to mute the playback of the file. The current playback position in the file is indicated on the left slider. Use the right slider to adjust the playback volume. For movie files, the bar also contains a list box where you can select the zoom factor for the playback.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/01/mediaplayer.xhp#mediaplayertitle"/>
+      </section>
+   </body>
+</helpdocument>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01150100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Asian Layout</title>
+<filename>/text/shared/optionen/01150100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-10-13T11:28:51">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="asialayout">
+<paragraph role="heading" id="hd_id3156414" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01150100.xhp" name="Asian Layout">Asian Layout</link></paragraph>
+<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U" oldref="2">Defines the typographic default settings for Asian text.</paragraph>
+<embed href="text/shared/00/00000007.xhp#asiahinweis"/>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#asialayout"/>
+</section>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143268"><bookmark_value>kerning;Asian texts</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3143268" xml-lang="en-US" level="2" l10n="U" oldref="3">Kerning</paragraph>
+<paragraph role="paragraph" id="par_id3155535" xml-lang="en-US" l10n="U" oldref="4">Defines the default settings for kerning between individual characters.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ASIAN_LAYOUT:RB_CHAR_KERNING" id="bm_id3149811" localize="false"/>
+<paragraph role="heading" id="hd_id3147275" xml-lang="en-US" level="3" l10n="U" oldref="5">Western characters only</paragraph>
+<paragraph role="paragraph" id="par_id3149398" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX_RADIOBUTTON_RID_SVXPAGE_ASIAN_LAYOUT_RB_CHAR_KERNING">Specifies that kerning is only applied to western text.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ASIAN_LAYOUT:RB_CHAR_PUNCT" id="bm_id3157910" localize="false"/>
+<paragraph role="heading" id="hd_id3148538" xml-lang="en-US" level="3" l10n="U" oldref="7">Western text and Asian punctuation</paragraph>
+<paragraph role="paragraph" id="par_id3147336" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX_RADIOBUTTON_RID_SVXPAGE_ASIAN_LAYOUT_RB_CHAR_PUNCT">Specifies that kerning is applied to both western text and Asian punctuation.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153088" xml-lang="en-US" level="2" l10n="U" oldref="9">Character spacing</paragraph>
+<paragraph role="paragraph" id="par_id3145119" xml-lang="en-US" l10n="U" oldref="10">Defines the default settings for character spacing in Asian texts, cells, and drawing objects.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ASIAN_LAYOUT:RB_NO_COMP" id="bm_id3159158" localize="false"/>
+<paragraph role="heading" id="hd_id3150669" xml-lang="en-US" level="3" l10n="U" oldref="11">No compression</paragraph>
+<paragraph role="paragraph" id="par_id3150503" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX_RADIOBUTTON_RID_SVXPAGE_ASIAN_LAYOUT_RB_NO_COMP">Specifies that no compression at all will occur.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ASIAN_LAYOUT:RB_PUNCT_COMP" id="bm_id3154514" localize="false"/>
+<paragraph role="heading" id="hd_id3155419" xml-lang="en-US" level="3" l10n="U" oldref="13">Compress only punctuation</paragraph>
+<paragraph role="paragraph" id="par_id3145673" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX_RADIOBUTTON_RID_SVXPAGE_ASIAN_LAYOUT_RB_PUNCT_COMP">Specifies that only the punctuation is compressed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_ASIAN_LAYOUT:RB_PUNCT_KANA_COMP" id="bm_id3148944" localize="false"/>
+<paragraph role="heading" id="hd_id3151245" xml-lang="en-US" level="3" l10n="U" oldref="15">Compress punctuation and Japanese Kana</paragraph>
+<paragraph role="paragraph" id="par_id3154346" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX_RADIOBUTTON_RID_SVXPAGE_ASIAN_LAYOUT_RB_PUNCT_KANA_COMP">Specifies that punctuation and Japanese Kana are compressed.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148552" xml-lang="en-US" level="2" l10n="U" oldref="17">First and last characters</paragraph>
+<paragraph role="paragraph" id="par_id3149295" xml-lang="en-US" l10n="U" oldref="18">Defines the default settings for 'first' and 'last' characters. In the dialog that appears when you choose <emph>Format -</emph><link href="text/shared/01/05020700.xhp" name="Asian Typography"><emph>Asian Typography</emph></link>, you can specify whether the list of forbidden characters applies to those at the beginning or end of a line in a paragraph.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_ASIAN_LAYOUT:LB_LANGUAGE" id="bm_id3154138" localize="false"/>
+<paragraph role="heading" id="hd_id3154071" xml-lang="en-US" level="3" l10n="U" oldref="19">Language</paragraph>
+<paragraph role="paragraph" id="par_id3151210" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_ASIAN_LAYOUT_LB_LANGUAGE">Specifies the language for which you want to define first and last characters.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ASIAN_LAYOUT:CB_STANDARD" id="bm_id3150767" localize="false"/>
+<paragraph role="heading" id="hd_id3145606" xml-lang="en-US" level="3" l10n="U" oldref="21">Default</paragraph>
+<paragraph role="paragraph" id="par_id3148920" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ASIAN_LAYOUT_CB_STANDARD">When you mark<emph> Default</emph>, the following two text boxes are filled with the default characters for the selected language:</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_ASIAN_LAYOUT:ED_START" id="bm_id3154216" localize="false"/>
+<paragraph role="heading" id="hd_id3144761" xml-lang="en-US" level="3" l10n="U" oldref="23">Not at start of line:</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SVX_EDIT_RID_SVXPAGE_ASIAN_LAYOUT_ED_START">Specifies the characters that should not appear alone at the beginning of a line.</ahelp> If a character typed here is positioned at the beginning of a line after a line break, it is automatically moved to the end of the previous line. For example, an exclamation point at the end of a sentence never appears at the start of a line if it is part of the <emph>Not at start of line</emph> list.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_ASIAN_LAYOUT:ED_END" id="bm_id3149560" localize="false"/>
+<paragraph role="heading" id="hd_id3154908" xml-lang="en-US" level="3" l10n="U" oldref="25">Not at end of line:</paragraph>
+<paragraph role="paragraph" id="par_id3153367" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SVX_EDIT_RID_SVXPAGE_ASIAN_LAYOUT_ED_END">Specifies the characters that should not appear alone at the end of a line.</ahelp> If a character typed here is positioned at the end of a line due to a line break, it is automatically moved to the beginning of the next line. For example, a currency symbol that appears in front of an amount never appears at the end of a line if it is part of the<emph> Not at end of line</emph> list.</paragraph>
+</body>
+</helpdocument>

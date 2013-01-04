@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textschart0105040202xml" indexer="include">
+<title id="tit" xml-lang="en-US">Positioning</title>
+<filename>/text/schart/01/05040202.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="positioning">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150869"><bookmark_value>positioning; axes</bookmark_value>
+<bookmark_value>charts;positioning axes</bookmark_value>
+<bookmark_value>X axes;positioning</bookmark_value>
+<bookmark_value>Y axes;positioning</bookmark_value>
+<bookmark_value>axes;interval marks</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150868" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/schart/01/05040202.xhp" name="positioning">Positioning</link></paragraph>
+<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="2">Controls the positioning of the axis.</paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/schart/00/00000004.xhp#positioning"/>
+</section>
+<paragraph role="heading" id="hd_id1006200801024782" xml-lang="en-US" level="2" l10n="NEW">Axis line</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CHART2_LISTBOX_TP_AXIS_POSITIONS_LB_CROSSES_OTHER_AXIS_AT" id="bm_id1006200812484446" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:ListBox:TP_AXIS_POSITIONS:LB_CROSSES_OTHER_AXIS_AT" id="bm_id1006200805113310" localize="false"/>
+<paragraph role="paragraph" id="par_id1006200801024970" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select where to cross the other axis: at start, at end, at a specified value, or at a category.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CHART2_SPINFIELD_TP_AXIS_POSITIONS_EDT_CROSSES_OTHER_AXIS_AT" id="bm_id1006200801472176" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:SpinField:TP_AXIS_POSITIONS:EDT_CROSSES_OTHER_AXIS_AT" id="bm_id1006200805121926" localize="false"/><comment>value selected</comment>
+<paragraph role="paragraph" id="par_id1006200801024957" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the value where the axis line should cross the other axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CHART2_COMBOBOX_TP_AXIS_POSITIONS_EDT_CROSSES_OTHER_AXIS_AT_CATEGORY" id="bm_id1006200801475131" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:ComboBox:TP_AXIS_POSITIONS:EDT_CROSSES_OTHER_AXIS_AT_CATEGORY" id="bm_id1006200805134034" localize="false"/><comment>category selected</comment>
+<paragraph role="paragraph" id="par_id100620080102503" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select the category where the axis line should cross the other axis.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id100620080102509" xml-lang="en-US" level="2" l10n="NEW">Labels</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CHART2_LISTBOX_TP_AXIS_POSITIONS_LB_PLACE_LABELS" id="bm_id1006200801483463" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:ListBox:TP_AXIS_POSITIONS:LB_PLACE_LABELS" id="bm_id1006200805141692" localize="false"/>
+<paragraph role="heading" id="hd_id1006200801523879" xml-lang="en-US" level="3" l10n="NEW">Place labels</paragraph>
+<paragraph role="paragraph" id="par_id1006200801523889" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select where to place the labels: near axis, near axis (other side), outside start, or outside end.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id1006200801025030" xml-lang="en-US" level="2" l10n="NEW">Interval marks</paragraph>
+<paragraph role="heading" id="hd_id3149048" xml-lang="en-US" level="3" l10n="CHG" oldref="65">Major:</paragraph>
+<paragraph role="paragraph" id="par_id3150397" xml-lang="en-US" l10n="U" oldref="71">Specifies whether the marks are to be on the inner or outer side of the axis. It is possible to combine both: you will then see marks on both sides.</paragraph>
+<!-- removed HID SCH:CHECKBOX:TP_SCALE_Y:CBX_TICKS_INNER -->
+<!-- removed HID chart2:CheckBox:TP_SCALE_Y:CBX_TICKS_INNER -->
+<bookmark xml-lang="en-US" branch="hid/CHART2_CHECKBOX_TP_AXIS_POSITIONS_CB_TICKS_INNER" id="bm_id1006200801511432" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_AXIS_POSITIONS:CB_TICKS_INNER" id="bm_id1006200805150554" localize="false"/>
+<paragraph role="heading" id="hd_id3151387" xml-lang="en-US" level="3" l10n="U" oldref="66">Inner</paragraph>
+<paragraph role="paragraph" id="par_id3156399" xml-lang="en-US" l10n="U" oldref="72"><ahelp hid="SCH:CHECKBOX:TP_SCALE_Y:CBX_TICKS_INNER">Specifies that marks are placed on the inner side of the axis.</ahelp></paragraph>
+<!-- removed HID SCH:CHECKBOX:TP_SCALE_Y:CBX_TICKS_OUTER -->
+<!-- removed HID chart2:CheckBox:TP_SCALE_Y:CBX_TICKS_OUTER -->
+<bookmark xml-lang="en-US" branch="hid/CHART2_CHECKBOX_TP_AXIS_POSITIONS_CB_TICKS_OUTER" id="bm_id1006200801513081" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_AXIS_POSITIONS:CB_TICKS_OUTER" id="bm_id100620080515253" localize="false"/>
+<paragraph role="heading" id="hd_id3166469" xml-lang="en-US" level="3" l10n="U" oldref="67">Outer</paragraph>
+<paragraph role="paragraph" id="par_id3153120" xml-lang="en-US" l10n="U" oldref="73"><ahelp hid="SCH:CHECKBOX:TP_SCALE_Y:CBX_TICKS_OUTER">Specifies that marks are placed on the outer side of the axis.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3159128" xml-lang="en-US" level="2" l10n="U" oldref="68">Minor:</paragraph>
+<paragraph role="paragraph" id="par_id3146885" xml-lang="en-US" l10n="U" oldref="74">This area is used to define the marking dashes between the axis marks. It is possible to activate both fields. This will result in a marking line running from the outside to the inside.</paragraph>
+<!-- removed HID SCH:CHECKBOX:TP_SCALE_Y:CBX_HELPTICKS_INNER -->
+<!-- removed HID chart2:CheckBox:TP_SCALE_Y:CBX_HELPTICKS_INNER -->
+<bookmark xml-lang="en-US" branch="hid/CHART2_CHECKBOX_TP_AXIS_POSITIONS_CB_MINOR_INNER" id="bm_id1006200801514858" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_AXIS_POSITIONS:CB_MINOR_INNER" id="bm_id100620080515528" localize="false"/>
+<paragraph role="heading" id="hd_id3150654" xml-lang="en-US" level="3" l10n="U" oldref="69">Inner</paragraph>
+<paragraph role="paragraph" id="par_id3146880" xml-lang="en-US" l10n="U" oldref="75"><ahelp hid="SCH:CHECKBOX:TP_SCALE_Y:CBX_HELPTICKS_INNER">Specifies that minor interval marks are placed on the inner side of the axis.</ahelp></paragraph>
+<!-- removed HID SCH:CHECKBOX:TP_SCALE_Y:CBX_HELPTICKS_OUTER -->
+<!-- removed HID chart2:CheckBox:TP_SCALE_Y:CBX_HELPTICKS_OUTER -->
+<bookmark xml-lang="en-US" branch="hid/CHART2_CHECKBOX_TP_AXIS_POSITIONS_CB_MINOR_OUTER" id="bm_id1006200801520545" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_AXIS_POSITIONS:CB_MINOR_OUTER" id="bm_id1006200805160860" localize="false"/>
+<paragraph role="heading" id="hd_id3154677" xml-lang="en-US" level="3" l10n="U" oldref="70">Outer</paragraph>
+<paragraph role="paragraph" id="par_id3150745" xml-lang="en-US" l10n="U" oldref="76"><ahelp hid="SCH:CHECKBOX:TP_SCALE_Y:CBX_HELPTICKS_OUTER">Specifies that minor interval marks are placed on the outer side of the axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CHART2_LISTBOX_TP_AXIS_POSITIONS_LB_PLACE_TICKS" id="bm_id1006200801523066" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:ListBox:TP_AXIS_POSITIONS:LB_PLACE_TICKS" id="bm_id1006200805165355" localize="false"/>
+<paragraph role="heading" id="hd_id1006200801025271" xml-lang="en-US" level="3" l10n="NEW">Place marks</paragraph>
+<paragraph role="paragraph" id="par_id1006200801025278" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select where to place the marks: at labels, at axis, or at axis and labels.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _LABFMT_HRC
+#define _LABFMT_HRC
+
+// #include *****************************************************************
+
+#include "envelp.hrc"
+
+// Lokale Resourcen *********************************************************
+
+#define WIN_PREVIEW   1
+#define TXT_HDIST     2
+#define FLD_HDIST     3
+#define TXT_VDIST     4
+#define FLD_VDIST     5
+#define TXT_WIDTH     6
+#define FLD_WIDTH     7
+#define TXT_HEIGHT    8
+#define FLD_HEIGHT    9
+#define TXT_LEFT     10
+#define FLD_LEFT     11
+#define TXT_UPPER    12
+#define FLD_UPPER    13
+#define TXT_COLUMNS  14
+#define FLD_COLUMNS  15
+#define TXT_ROWS     16
+#define FLD_ROWS     17
+#define FL_NONAME   18
+#define PB_SAVE   	 19
+#define FI_MAKE      20
+#define FI_TYPE	     21
+
+#define FL_OPTIONS              1
+#define FT_MAKE         2
+#define CB_MAKE         3
+#define FT_TYPE         4
+#define ED_TYPE         5
+#define PB_OK           6
+#define PB_CANCEL       7
+#define PB_HELP         8
+#define MB_QUERY		9
+
+// Globale Resourcen ********************************************************
+
+#define STR_HDIST   (RC_LABFMT_BEGIN + 1)
+#define STR_VDIST   (RC_LABFMT_BEGIN + 2)
+#define STR_WIDTH   (RC_LABFMT_BEGIN + 3)
+#define STR_HEIGHT  (RC_LABFMT_BEGIN + 4)
+#define STR_LEFT    (RC_LABFMT_BEGIN + 5)
+#define STR_UPPER   (RC_LABFMT_BEGIN + 6)
+#define STR_COLS    (RC_LABFMT_BEGIN + 7)
+#define STR_ROWS    (RC_LABFMT_BEGIN + 8)
+
+// Ueberlaufpruefung ********************************************************
+
+#define LABFMT_ACT_END  STR_ROWS
+
+#if LABFMT_ACT_END > RC_LABFMT_END
+#error Resource-Ueberlauf in #file, #line
+#endif
+
+#endif
+

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsharedguidescriptingxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Scripting %PRODUCTNAME</title>
+         <filename>/text/shared/guide/scripting.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id5277565"><bookmark_value>assigning scripts</bookmark_value>
+      <bookmark_value>programming;scripting</bookmark_value>
+      <bookmark_value>form controls;assigning macros</bookmark_value>
+      <bookmark_value>pictures;assigning macros</bookmark_value>
+      <bookmark_value>hyperlinks;assigning macros</bookmark_value>
+      <bookmark_value>shortcut keys;assigning macros</bookmark_value>
+      <bookmark_value>controls;assigning macros (Basic)</bookmark_value>
+      <bookmark_value>menus;assigning macros</bookmark_value>
+      <bookmark_value>events;assigning scripts</bookmark_value>
+</bookmark><comment>MW deleted "programming;...",  "scripting in programming", "BeanShell scripting", "Basic;..."  and "java;..."</comment><comment>MW added "controls;..",  "menus;..." and "events;..."</comment>
+<paragraph xml-lang="en-US" id="par_idN1070A" role="heading" level="1" l10n="NEW"><variable id="scripting"><link href="text/shared/guide/scripting.xhp">Assigning Scripts in %PRODUCTNAME</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10728" role="paragraph" l10n="NEW">You can assign custom scripts (macros) to menu items, icons, dialog controls, and events in %PRODUCTNAME.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1072B" role="paragraph" l10n="NEW">%PRODUCTNAME internally supports the following scripting languages:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10731" role="paragraph" l10n="NEW">%PRODUCTNAME Basic</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10739" role="paragraph" l10n="NEW">JavaScript</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1073D" role="paragraph" l10n="CHG">BeanShell</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id6797082" role="paragraph" l10n="CHG">Python</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1091F" role="paragraph" l10n="NEW">In addition, developers can use high-level languages, for example Java programming language, to control %PRODUCTNAME externally. See the API project at OpenOffice.org.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10751" role="heading" level="2" l10n="NEW">To assign a script to a new menu entry</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10758" role="paragraph" l10n="NEW">Choose <emph>Tools - Customize</emph>, and click the <emph>Menus</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1093D" role="paragraph" l10n="NEW">Click <emph>Add</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10760" role="paragraph" l10n="NEW">In the <emph>Category</emph> list box, scroll down and open the "%PRODUCTNAME Macros" entry.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10768" role="paragraph" l10n="NEW">You see entries for "%PRODUCTNAME Macros" (scripts in the share directory of your %PRODUCTNAME installation), "My Macros" (scripts in the user directory), and the current document. Open any one of them to see the supported scripting languages.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1076C" role="paragraph" l10n="NEW">Open any scripting language entry to see the available scripts. Select a script.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10770" role="paragraph" l10n="NEW">A list of the script functions appears in the <emph>Commands</emph> list box. Select a function.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10778" role="paragraph" l10n="NEW">Click <emph>Add</emph> to create a new menu assignment. The new menu entry appears in the <emph>Entries</emph> list box.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN10783" role="heading" level="2" l10n="NEW">To assign a script to a key combination</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10787" role="paragraph" l10n="NEW">Choose <emph>Tools - Customize - Keyboard</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A59" role="paragraph" l10n="NEW">In the <emph>Category</emph> list box, scroll down and open the "%PRODUCTNAME Macros" entry.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A61" role="paragraph" l10n="NEW">You see entries for "%PRODUCTNAME Macros" (scripts in the share directory of your %PRODUCTNAME installation), "My Macros" (scripts in the user directory), and the current document. Open any one of them to see the supported scripting languages.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A65" role="paragraph" l10n="NEW">Open any scripting language entry to see the available scripts. Select any script.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A69" role="paragraph" l10n="NEW">A list of the script functions will appear in the <emph>Commands</emph> list box. Select any function.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A71" role="paragraph" l10n="NEW">Click the option button for %PRODUCTNAME or Writer (or whichever application is currently open). </paragraph>
+            <paragraph xml-lang="en-US" id="par_idN10A74" role="paragraph" l10n="NEW">Selecting the option button sets the scope of the new key combination to be applicable in all of %PRODUCTNAME or only in documents of the current module.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A78" role="paragraph" l10n="NEW">Select a key combination from the <emph>Shortcut keys</emph> list box and click <emph>Modify</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1078A" role="heading" level="2" l10n="NEW">To assign a script to an event</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1078E" role="paragraph" l10n="NEW">Choose <emph>Tools - Customize - Events</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A16" role="paragraph" l10n="NEW">Click <emph>Macro</emph> button.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10A9E" role="paragraph" l10n="NEW">In the <emph>Library</emph> list box, scroll down and open the "%PRODUCTNAME Macros" entry.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AA6" role="paragraph" l10n="NEW">You see entries for "%PRODUCTNAME Macros" (scripts in the share directory of your %PRODUCTNAME installation), "My Macros" (scripts in the user directory), and the current document. Open any one of them to see the supported scripting languages.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AAA" role="paragraph" l10n="NEW">Open any scripting language entry to see the available scripts. Select any script.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AAE" role="paragraph" l10n="NEW">A list of the script functions will appear in the <emph>Assigned Action</emph> list box. Select any function.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AB6" role="paragraph" l10n="NEW">Select to save in %PRODUCTNAME or current document.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN10AB9" role="paragraph" l10n="CHG">This sets the scope of the new event assignment to be applicable in all of %PRODUCTNAME or only in documents of the current module.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10ABD" role="paragraph" l10n="NEW">Select an event from the list and click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN10791" role="heading" level="2" l10n="NEW">To assign a script to an event for an embedded object</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10795" role="paragraph" l10n="NEW">Select the embedded object, for example a chart, in your document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10ADB" role="paragraph" l10n="NEW">Choose <emph>Format - Frame/Object - Macro</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10ADF" role="paragraph" l10n="NEW">In the <emph>Macros</emph> list box, open the %PRODUCTNAME Scripts entry.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AE7" role="paragraph" l10n="NEW">You see entries for share (scripts in the share directory of your %PRODUCTNAME installation), user (scripts in the user directory), and the current document. Open any one of them to see the supported scripting languages.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AEB" role="paragraph" l10n="NEW">Open any scripting language entry to see the available scripts. Select any script.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AEF" role="paragraph" l10n="NEW">A list of the script functions will appear in the <emph>Existing macros in</emph> list box. Select any function.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10AF7" role="paragraph" l10n="NEW">Select an event from the list and click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN10798" role="heading" level="2" l10n="NEW">To assign a script to a hyperlink</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1079C" role="paragraph" l10n="NEW">Position the cursor inside the hyperlink. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B15" role="paragraph" l10n="NEW">Choose <emph>Insert - Hyperlink</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B19" role="paragraph" l10n="NEW">Click the <emph>Events</emph> button.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B21" role="paragraph" l10n="NEW">Select and assign as stated above.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1079F" role="heading" level="2" l10n="NEW">To assign a script to a graphic</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107A3" role="paragraph" l10n="NEW">Select the graphic in your document. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B3B" role="paragraph" l10n="CHG">Choose <emph>Format - Picture - Macro</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B3F" role="paragraph" l10n="NEW">Select and assign as stated above.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN107A6" role="heading" level="2" l10n="NEW">To assign a script to a form control</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107AA" role="paragraph" l10n="CHG">Insert a form control, for example a button: Open the Form Controls toolbar, click the <emph>Push Button</emph> icon, drag open a button on your document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B59" role="paragraph" l10n="CHG">With the form control selected, click <emph>Control</emph> on the Form Controls toolbar.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B5D" role="paragraph" l10n="NEW">Click the <emph>Events</emph> tab of the Properties dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B61" role="paragraph" l10n="NEW">Click one of the <emph>...</emph> buttons to open a dialog where you can assign a script to the selected event.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN107AD" role="heading" level="2" l10n="NEW">To assign a script to a control in the %PRODUCTNAME Basic dialog</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107B1" role="paragraph" l10n="NEW">Open the %PRODUCTNAME Basic dialog editor, then create a dialog with a control on it.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B7F" role="paragraph" l10n="NEW">Right-click the control, then choose <emph>Properties</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B87" role="paragraph" l10n="NEW">Click the <emph>Events</emph> tab of the Properties dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10B8B" role="paragraph" l10n="NEW">Click one of the <emph>...</emph> buttons to open a dialog where you can assign a script to the selected event.</paragraph>
+         </listitem>
+      </list>
+   </body>
+</helpdocument>

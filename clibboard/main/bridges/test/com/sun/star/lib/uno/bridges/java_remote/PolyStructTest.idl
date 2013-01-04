@@ -1,0 +1,48 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "com/sun/star/uno/XInterface.idl"
+
+module com { module sun { module star { module lib { module uno {
+module bridges { module javaremote {
+
+enum TestEnum { VALUE1 = 100, VALUE2 = -100 };
+
+struct TestPolyStruct<T> { T member; };
+
+interface TestTransport {
+    TestPolyStruct<boolean> transportBoolean([in] TestPolyStruct<boolean> arg);
+    TestPolyStruct<byte> transportByte([in] TestPolyStruct<byte> arg);
+    TestPolyStruct<short> transportShort([in] TestPolyStruct<short> arg);
+    TestPolyStruct<long> transportLong([in] TestPolyStruct<long> arg);
+    TestPolyStruct<hyper> transportHyper([in] TestPolyStruct<hyper> arg);
+    TestPolyStruct<float> transportFloat([in] TestPolyStruct<float> arg);
+    TestPolyStruct<double> transportDouble([in] TestPolyStruct<double> arg);
+    TestPolyStruct<char> transportChar([in] TestPolyStruct<char> arg);
+    TestPolyStruct<string> transportString([in] TestPolyStruct<string> arg);
+    TestPolyStruct<type> transportType([in] TestPolyStruct<type> arg);
+    TestPolyStruct<any> transportAny([in] TestPolyStruct<any> arg);
+    TestPolyStruct<TestEnum> transportEnum([in] TestPolyStruct<TestEnum> arg);
+};
+
+}; }; }; }; }; }; };

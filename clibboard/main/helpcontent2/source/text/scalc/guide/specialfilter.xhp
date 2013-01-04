@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidespecialfilterxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Filter: Applying Advanced Filters</title>
+<filename>/text/scalc/guide/specialfilter.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148798"><bookmark_value>filters;defining advanced filters </bookmark_value>
+<bookmark_value>advanced filters</bookmark_value>
+<bookmark_value>defining; advanced filters</bookmark_value>
+<bookmark_value>database ranges; advanced filters</bookmark_value>
+</bookmark>
+  <comment>MW made "applying;advanced filters" a one level entry</comment>
+  <paragraph xml-lang="en-US" id="hd_id3148798" role="heading" level="1" l10n="U" oldref="18"><variable id="specialfilter"><link href="text/scalc/guide/specialfilter.xhp" name="Filter: Applying Advanced Filters">Filter: Applying Advanced Filters</link> 
+</variable></paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3145785" role="listitem" l10n="U" oldref="19">Copy the column headers of the sheet ranges to be filtered into an empty area of the sheet, and then enter the criteria for the filter in a row beneath the headers. Horizontally arranged data in a row will always be logically connected with AND, and vertically arranged data in a column will always be logically connected with OR.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3153142" role="listitem" l10n="U" oldref="20">Once you have created a filter matrix, select the sheet ranges to be filtered. Open the <emph>Advanced Filter</emph> dialog by choosing <emph>Data - Filter - Advanced Filter</emph>, and define the filter conditions.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3153726" role="listitem" l10n="U" oldref="21">Then click OK, and you will see that only the rows from the original sheet whose contents have met the search criteria are still visible. All other rows are temporarily hidden and can be made to reappear with the <emph>Format - Row - Show </emph>command.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="par_id3149664" role="paragraph" l10n="U" oldref="22"> <emph>Example</emph> </paragraph>
+  <paragraph xml-lang="en-US" id="par_id3147427" role="paragraph" l10n="U" oldref="23">Load a spreadsheet with a large number of records. We are using a fictional <emph>Turnover</emph> document, but you can just as easily use any other document. The document has the following layout:</paragraph>
+  <table id="tbl_id3149377">
+   
+   
+   <tablerow>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3154510" role="paragraph" l10n="U" oldref="24"> <emph>A</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3150327" role="paragraph" l10n="U" oldref="25"> <emph>B</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3154756" role="paragraph" l10n="U" oldref="26"> <emph>C</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3155335" role="paragraph" l10n="U" oldref="27"> <emph>D</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3146315" role="paragraph" l10n="U" oldref="28"> <emph>E</emph> </paragraph>
+    </tablecell>
+   </tablerow>
+   <tablerow>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3145790" role="paragraph" l10n="U" oldref="29"> <emph>1</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3159239" role="paragraph" l10n="U" oldref="30">Month</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3150086" role="paragraph" l10n="U" oldref="31">Standard</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3150202" role="paragraph" l10n="U" oldref="32">Business</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3150883" role="paragraph" l10n="U" oldref="33">Luxury</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3152987" role="paragraph" l10n="U" oldref="34">Suite</paragraph>
+    </tablecell>
+   </tablerow>
+   <tablerow>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3154486" role="paragraph" l10n="U" oldref="35"> <emph>2</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3148839" role="paragraph" l10n="U" oldref="36">January</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3153816" role="paragraph" l10n="U" oldref="37">125600</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3157978" role="paragraph" l10n="U" oldref="38">200500</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3155268" role="paragraph" l10n="U" oldref="39">240000</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3153286" role="paragraph" l10n="U" oldref="40">170000</paragraph>
+    </tablecell>
+   </tablerow>
+   <tablerow>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3146782" role="paragraph" l10n="U" oldref="41"> <emph>3</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3149900" role="paragraph" l10n="U" oldref="42">February</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3154763" role="paragraph" l10n="U" oldref="43">160000</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3150050" role="paragraph" l10n="U" oldref="44">180300</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3153801" role="paragraph" l10n="U" oldref="45">362000</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3154708" role="paragraph" l10n="U" oldref="46">220000</paragraph>
+    </tablecell>
+   </tablerow>
+   <tablerow>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3151191" role="paragraph" l10n="U" oldref="47"> <emph>4</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3147250" role="paragraph" l10n="U" oldref="48">March</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3153334" role="paragraph" l10n="U" oldref="49">170000</paragraph>
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3151391" role="paragraph" l10n="U" oldref="50">and so on...</paragraph>
+    </tablecell>
+   </tablerow>
+  </table>
+  <paragraph xml-lang="en-US" id="par_id3147300" role="paragraph" l10n="U" oldref="51">Copy row 1 with the row headers (field names), to row 20, for example. Enter the filter conditions linked with OR in rows 21, 22, and so on.</paragraph>
+  <table id="tbl_id3166462">
+   
+   
+   <tablerow>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3159115" role="paragraph" l10n="U" oldref="52"> <emph>A</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3146886" role="paragraph" l10n="U" oldref="53"> <emph>B</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3153124" role="paragraph" l10n="U" oldref="54"> <emph>C</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3152979" role="paragraph" l10n="U" oldref="55"> <emph>D</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3145827" role="paragraph" l10n="U" oldref="56"> <emph>E</emph> </paragraph>
+    </tablecell>
+   </tablerow>
+   <tablerow>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3149892" role="paragraph" l10n="U" oldref="57"> <emph>20</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3150693" role="paragraph" l10n="U" oldref="58">Month</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3147475" role="paragraph" l10n="U" oldref="59">Standard</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3154846" role="paragraph" l10n="U" oldref="60">Business</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3153082" role="paragraph" l10n="U" oldref="61">Luxury</paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3149506" role="paragraph" l10n="U" oldref="62">Suite</paragraph>
+    </tablecell>
+   </tablerow>
+   <tablerow>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3149188" role="paragraph" l10n="U" oldref="63"> <emph>21</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3149956" role="paragraph" l10n="CHG" oldref="64">January</paragraph>
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+   </tablerow>
+   <tablerow>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3150865" role="paragraph" l10n="U" oldref="65"> <emph>22</emph> </paragraph>
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     <paragraph xml-lang="en-US" id="par_id3155957" role="paragraph" l10n="U" oldref="66">&lt;160000</paragraph>
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+    <tablecell>
+     
+    </tablecell>
+   </tablerow>
+  </table>
+  <paragraph xml-lang="en-US" id="par_id3153566" role="paragraph" l10n="CHG" oldref="67">Specify that only rows which either have the value <item type="literal">January</item> in the <emph>Month</emph> cells OR a value of under 160000 in the <emph>Standard</emph><comment>standard not default, look at U59!!!</comment> cells will be displayed.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3147372" role="paragraph" l10n="U" oldref="68">Choose <emph>Data - Filter - Advanced Filter</emph>, and then select the range A20:E22. After you click OK, only the filtered rows will be displayed. The other rows will be hidden from view.</paragraph>
+  <section id="relatedtopics">
+   
+   <embed href="text/scalc/guide/filters.xhp#filters"/>
+   <embed href="text/scalc/guide/autofilter.xhp#autofilter"/>
+   <embed href="text/scalc/guide/cellcopy.xhp#cellcopy"/>
+   
+  </section>
+ </body>
+</helpdocument>

@@ -1,0 +1,78 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_script_XDirectInvocation_idl__ 
+#define __com_sun_star_script_XDirectInvocation_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__ 
+#include <com/sun/star/lang/IllegalArgumentException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_script_CannotConvertException_idl__ 
+#include <com/sun/star/script/CannotConvertException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_reflection_InvocationTargetException_idl__ 
+#include <com/sun/star/reflection/InvocationTargetException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_beans_UnknownPropertyException_idl__ 
+#include <com/sun/star/beans/UnknownPropertyException.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module script {  
+ 
+//============================================================================= 
+/** provides access to an object's methods and properties.
+ */
+published interface XDirectInvocation: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	/** provides access to methods and properties exposed by an object.
+		
+		@param aParams all parameters, out parameters are not supported
+	 */
+	any directInvoke( [in] string aName, 
+			 [in] sequence<any> aParams )
+			raises( com::sun::star::lang::IllegalArgumentException, 
+					com::sun::star::script::CannotConvertException, 
+					com::sun::star::reflection::InvocationTargetException ); 
+ 
+	//------------------------------------------------------------------------- 
+	/** returns <TRUE/> if the method or property with the specified name exists, else <FALSE/>.
+	 */
+	boolean hasMember( [in] string aName ); 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 
+

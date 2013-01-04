@@ -1,0 +1,49 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define FL_LINE			1
+#define FL_LABEL		2
+#define FL_VERT			3
+
+#define FT_LINE_DIST 1
+#define FT_HELPLINE_OVERHANG 2
+#define FT_HELPLINE_DIST 3
+#define FT_HELPLINE1_LEN 4
+#define FT_HELPLINE2_LEN 5
+#define FT_POSITION 6
+#define FT_DECIMALPLACES 7
+#define MTR_LINE_DIST 1
+#define MTR_FLD_HELPLINE_OVERHANG 2
+#define MTR_FLD_HELPLINE_DIST 3
+#define MTR_FLD_HELPLINE1_LEN 4
+#define MTR_FLD_HELPLINE2_LEN 5
+#define MTR_FLD_DECIMALPLACES 6
+#define TSB_BELOW_REF_EDGE 1
+#define TSB_SHOW_UNIT 2
+#define TSB_AUTOPOSV 3
+#define TSB_AUTOPOSH 4
+#define TSB_PARALLEL 5
+#define CTL_POSITION 1
+#define CTL_PREVIEW 2
+#define LB_UNIT 1
+
+#define STR_MEASURE_AUTOMATIC 1

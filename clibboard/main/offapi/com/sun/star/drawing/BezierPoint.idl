@@ -1,0 +1,73 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_drawing_BezierPoint_idl__ 
+#define __com_sun_star_drawing_BezierPoint_idl__ 
+ 
+#ifndef __com_sun_star_awt_Point_idl__ 
+#include <com/sun/star/awt/Point.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module drawing {  
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: struct com::sun::star::drawing::BezierPoint
+/** This is a point on a bezier curve.
+	
+	<p>The two control points specify how the bezier curve
+	goes through the given position.</p>
+
+	@deprecated
+ */
+published struct BezierPoint
+{
+	// DocMerge from xml: field com::sun::star::drawing::BezierPoint::Position
+	/** This is the position of this point.
+	 */
+	com::sun::star::awt::Point Position; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: field com::sun::star::drawing::BezierPoint::ControlPoint1
+	/** This is the position of the first control point.
+	 */
+	com::sun::star::awt::Point ControlPoint1; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: field com::sun::star::drawing::BezierPoint::ControlPoint2
+	/** This is the position of the second control point.
+	 */
+	com::sun::star::awt::Point ControlPoint2; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 
+

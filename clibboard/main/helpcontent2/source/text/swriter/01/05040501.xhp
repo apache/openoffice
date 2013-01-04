@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105040501xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Options</title>
+<filename>/text/swriter/01/05040501.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-10T15:00:18">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3149871" xml-lang="en-US" level="1" l10n="U" oldref="1">Options</paragraph>
+<paragraph role="paragraph" id="par_id3148569" xml-lang="en-US" l10n="U" oldref="2">Specifies the number of columns and the column layout for the section.</paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#spaltenber"/>
+</section>
+<paragraph role="paragraph" id="par_id3151390" xml-lang="en-US" l10n="U" oldref="4">Sections follow the text flow behavior of the page they are inserted into.</paragraph>
+<paragraph role="paragraph" id="par_id3083448" xml-lang="en-US" l10n="U" oldref="5">For example, if you insert a section that uses a two-column layout into a page style that uses a four-column layout, the two-column layout is nested inside one of the four columns.</paragraph>
+<paragraph role="paragraph" id="par_id3155625" xml-lang="en-US" l10n="U" oldref="6">You can also nest sections, that is, you can insert a section into another section.</paragraph>
+<embed href="text/swriter/01/05040500.xhp#spalten"/>
+<embed href="text/swriter/01/04020200.xhp#indents"/><comment>UFI: changed embedded links, see #i64128</comment><embed href="text/shared/01/05030600.xhp#hintergrund"/>
+<embed href="text/swriter/01/05040700.xhp#fussendnoten"/>
+</body>
+</helpdocument>

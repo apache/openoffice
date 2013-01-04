@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="svx_SvxShapePolyPolygonBezier" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+' Requiered for  com.sun.star.lang.XComponent
+ Global oComponentInstance As Object ' it will be disposed
+
+' Requiered for  com.sun.star.drawing.XShapeDescriptor
+ Global cShapeType As String
+
+' Requiered for  com.sun.star.text.XText
+ Global oInstance As Object
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' svx.SvxShapePolyPolygonBezier
+'*************************************************************************
+On Error Goto ErrHndl
+
+    Dim bOK As Boolean
+    bOK = true
+
+    oDoc = utils.loadTestDocument("SvxShape.sxd")
+
+    cShapeType = "com.sun.star.drawing.ClosedBezierShape"
+
+    oObj = oDoc.createInstance("com.sun.star.drawing.ClosedBezierShape")
+    oDoc.DrawPages(0).add(oObj)
+    Dim oSize As new com.sun.star.awt.Size
+    Dim oPosition As new com.sun.star.awt.Point
+    oSize.Width = 5000
+    oSize.Height = 5000
+    oPosition.X = 4000
+    oPosition.Y = 4000
+    oObj.Size = oSize
+    oObj.Position = oPosition
+
+    oComponentInstance = oDoc.createInstance("com.sun.star.drawing.ClosedBezierShape")
+    oDoc.DrawPages(0).add(oComponentInstance)
+    oSize.Width = 8000
+    oSize.Height = 8000
+    oPosition.X = 4000
+    oPosition.Y = 4000
+    oComponentInstance.Size = oSize
+    oComponentInstance.Position = oPosition
+
+    Dim ps1(3) As new com.sun.star.awt.Point
+    Dim pf1(3) As Integer
+    with com.sun.star.drawing.PolygonFlags
+
+    ps1(0).X = 5000 : ps1(0).Y = 5000 : pf1(0) = .NORMAL
+    ps1(1).X = 10000 : ps1(1).Y = 5000 : pf1(1) = .CONTROL
+    ps1(2).X = 10000 : ps1(2).Y = 10000 : pf1(2) = .CONTROL
+    ps1(3).X = 5000 : ps1(3).Y = 10000 : pf1(3) = .NORMAL
+
+    Dim ps2(3) As new com.sun.star.awt.Point
+    Dim pf2(3) As Integer
+    ps2(0).X = 6500 : ps2(0).Y = 6500 : pf2(0) = .NORMAL
+    ps2(1).X = 8500 : ps2(1).Y = 6500 : pf2(1) = .CONTROL
+    ps2(2).X = 8500 : ps2(2).Y = 8500 : pf2(2) = .CONTROL
+    ps2(3).X = 6500 : ps2(3).Y = 8500 : pf2(3) = .NORMAL
+    end with
+
+    Dim psA As Variant
+    psA = Array( ps1(), ps2() )
+
+    Dim oFlags As Variant
+    oFlags = Array( pf1(), pf2() )
+
+    Dim oCoords As New com.sun.star.drawing.PolyPolygonBezierCoords
+    oCoords.Coordinates = psA()
+    oCoords.Flags = oFlags()
+
+    oInstance = oDoc.createInstance("com.sun.star.text.TextField.DateTime")
+
+    oObj.PolyPolygonBezier = oCoords
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+</script:module>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswritermain0208xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Status Bar</title>
+         <filename>/text/swriter/main0208.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="status">
+         <paragraph xml-lang="en-US" id="hd_id3153397" role="heading" level="1" l10n="U" oldref="1"><link href="text/swriter/main0208.xhp" name="Status Bar">Status Bar</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153414" role="paragraph" l10n="CHG" oldref="2">The Status Bar contains information about the current document and offers various buttons with special functions. </paragraph>
+      </section>
+      <embed href="text/swriter/02/08010000.xhp#seitennummer"/>
+      <embed href="text/shared/02/20020000.xhp#aktuelleseitenvorlage"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:LanguageStatus" id="bm_id8360850" localize="false"/>
+
+<paragraph xml-lang="en-US" id="hd_id9648731" role="heading" level="1" l10n="NEW">Language<comment>i80434</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id8193914" role="paragraph" l10n="NEW"><ahelp hid=".">Displays the language for the selected text. <br/>Click to open a menu where you can choose another language for the selected text or for the current paragraph. <br/>Choose None to exclude the text from spellchecking and hyphenation. <br/>Choose Reset to Default Language to re-apply the default language for the selection or the paragraph. <br/>Choose More to open a dialog with more options.</ahelp></paragraph>
+
+      <embed href="text/shared/02/20040000.xhp#einfuegemodus"/>
+      <embed href="text/shared/02/20050000.xhp#selektionsmodus"/>
+      <embed href="text/shared/02/20060000.xhp#dokumentveraenderung"/>
+      <paragraph xml-lang="en-US" id="hd_id0821200911015962" role="heading" level="2" l10n="NEW">Digital Signature</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0821200911015941" role="paragraph" l10n="NEW">See also <link href="text/shared/guide/digital_signatures.xhp">Digital Signatures</link>.</paragraph>
+      <embed href="text/swriter/02/08080000.xhp#kombinierteanzeige"/>
+      <paragraph xml-lang="en-US" id="hd_id8070314" role="heading" level="2" l10n="NEW">Zoom &amp; View Layout</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7723929" role="paragraph" l10n="NEW">Three controls on the Writer Status Bar allow to change the zoom and view layout of your text documents. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ViewLayout" id="bm_id5961180" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3666188" role="paragraph" l10n="NEW"><ahelp hid=".">The View Layout icons show from left to right: Single column mode. View mode with pages side by side. Book mode with two pages as in an open book.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ZoomSlider" id="bm_id6407055" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id8796349" role="paragraph" l10n="NEW"><ahelp hid=".">Drag the Zoom slider to the left to show more pages, drag to the right to zoom into a page and show a smaller area of the page.</ahelp></paragraph>
+      <embed href="text/shared/02/20030000.xhp#maszstab"/>
+   </body>
+</helpdocument>
