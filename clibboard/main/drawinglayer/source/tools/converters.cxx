@@ -129,7 +129,7 @@ namespace drawinglayer
             if(bDoSaveForVisualControl)
             {
                 SvFileStream aNew((const String&)String(ByteString( "c:\\test.png" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
-                aNew << aRetval;
+                WriteDIBBitmapEx(aRetval, aNew);
             }
 #endif
 
