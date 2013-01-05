@@ -520,9 +520,26 @@ inline void Application::EndYield()
 
 //IAccessibility2 Implementation 2009-----
 #ifdef WNT
-// VCL_DLLPUBLIC sal_Bool HasAtHook();
+VCL_DLLPUBLIC sal_Bool HasAtHook();
 VCL_DLLPUBLIC bool IsWNTInitAccessBridge();
 bool WNTEnableAccessInterface(bool bEnable);
+
+class VCL_DLLPUBLIC CEnableAccessInterface
+{
+public:
+	CEnableAccessInterface(bool bEnable = false)
+	{
+		m_bIsEnableAccessInterface = Application::IsEnableAccessInterface();
+		Application::EnableAccessInterface(bEnable);
+	}
+	~CEnableAccessInterface()
+	{
+		Application::EnableAccessInterface(m_bIsEnableAccessInterface);
+	}
+private:
+	bool m_bIsEnableAccessInterface;
+};
+
 VCL_DLLPUBLIC bool TestBridgeRegistered();
 VCL_DLLPUBLIC bool IsBridgeRegistered();
 #endif
