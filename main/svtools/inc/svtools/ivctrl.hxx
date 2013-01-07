@@ -272,6 +272,9 @@ protected:
 	void				CallImplEventListeners(sal_uLong nEvent, void* pData);
 
 public:
+//IAccessibility2 Implementation 2009-----
+	sal_Bool 	bCanBeFocused;
+//-----IAccessibility2 Implementation 2009
 
 						SvtIconChoiceCtrl( Window* pParent, WinBits nWinStyle = WB_ICON | WB_BORDER );
 						SvtIconChoiceCtrl( Window* pParent, const ResId& rResId );
