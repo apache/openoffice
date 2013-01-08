@@ -1152,7 +1152,7 @@ bool ImplWriteDIBBody(const Bitmap& rBitmap, SvStream& rOStm, BitmapReadAccess& 
 	sal_uInt32 nCompression(COMPRESS_NONE);
 	bool bRet(false);
 
-	aHeader.nSize = DIBV5HEADERSIZE; // always big size
+	aHeader.nSize = pAccAlpha ? DIBV5HEADERSIZE : DIBINFOHEADERSIZE; // size dependent on CF_DIB type to use
 	aHeader.nWidth = rAcc.Width();
 	aHeader.nHeight = rAcc.Height();
 	aHeader.nPlanes = 1;
