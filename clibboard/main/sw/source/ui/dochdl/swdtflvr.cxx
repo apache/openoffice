@@ -543,9 +543,7 @@ sal_Bool SwTransferable::GetData( const DATA_FLAVOR& rFlavor )
         case SOT_FORMATSTR_ID_PNG:
             // #126398#  Neither pClpBitmap nor pClpGraphic are necessarily set
             if( (eBufferType & TRNSFR_GRAPHIC) && (pClpBitmap != 0 || pClpGraphic != 0))
-				bOK = SetBitmapEx( (pClpBitmap ? pClpBitmap
-											 : pClpGraphic)->GetBitmapEx(),
-								 rFlavor );
+				bOK = SetBitmapEx( (pClpBitmap ? pClpBitmap : pClpGraphic)->GetBitmapEx(), rFlavor );
 			break;
 
 		case SOT_FORMATSTR_ID_SVIM:

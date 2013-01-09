@@ -371,8 +371,7 @@ Any SAL_CALL TransferableHelper::getTransferData( const DataFlavor& rFlavor ) th
 			    GetData( aSubstFlavor );
                 bDone = maAny.hasValue();
             }
-            else if((SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_BMP, aSubstFlavor ) 
-                    || (SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_PNG, aSubstFlavor))) 
+            else if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_BMP, aSubstFlavor ) 
                 && TransferableDataHelper::IsEqual( aSubstFlavor, rFlavor )
                 && SotExchange::GetFormatDataFlavor(FORMAT_BITMAP, aSubstFlavor))
             {
@@ -1784,11 +1783,11 @@ sal_Bool TransferableDataHelper::GetString( const DataFlavor& rFlavor, ::rtl::OU
 
 sal_Bool TransferableDataHelper::GetBitmapEx( SotFormatStringId nFormat, BitmapEx& rBmpEx )
 {
-	DataFlavor aFlavor;
-
     if(FORMAT_BITMAP == nFormat)
     {
         // try to get PNG first
+        DataFlavor aFlavor;
+
         if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_PNG, aFlavor))
         {
             if(GetBitmapEx(aFlavor, rBmpEx))
@@ -1798,6 +1797,7 @@ sal_Bool TransferableDataHelper::GetBitmapEx( SotFormatStringId nFormat, BitmapE
         }
     }
 
+    DataFlavor aFlavor;
     return( SotExchange::GetFormatDataFlavor( nFormat, aFlavor ) && GetBitmapEx( aFlavor, rBmpEx ) );
 }
 
@@ -1935,11 +1935,11 @@ sal_Bool TransferableDataHelper::GetGDIMetaFile( const DataFlavor& rFlavor, GDIM
 
 sal_Bool TransferableDataHelper::GetGraphic( SotFormatStringId nFormat, Graphic& rGraphic )
 {
-    DataFlavor aFlavor;
-
     if(FORMAT_BITMAP == nFormat)
     {
         // try to get PNG first
+        DataFlavor aFlavor;
+
         if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_PNG, aFlavor))
         {
             if(GetGraphic(aFlavor, rGraphic))
@@ -1949,6 +1949,7 @@ sal_Bool TransferableDataHelper::GetGraphic( SotFormatStringId nFormat, Graphic&
         }
     }
 
+    DataFlavor aFlavor;
     return( SotExchange::GetFormatDataFlavor( nFormat, aFlavor ) && GetGraphic( aFlavor, rGraphic ) );
 }
 
@@ -1959,7 +1960,8 @@ sal_Bool TransferableDataHelper::GetGraphic( const ::com::sun::star::datatransfe
 	DataFlavor	aFlavor;
 	sal_Bool	bRet = sal_False;
 
-    if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_PNG, aFlavor) && TransferableDataHelper::IsEqual(aFlavor, rFlavor))
+    if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_PNG, aFlavor) && 
+        TransferableDataHelper::IsEqual(aFlavor, rFlavor))
 	{
         // try to get PNG first
 		BitmapEx aBmpEx;
