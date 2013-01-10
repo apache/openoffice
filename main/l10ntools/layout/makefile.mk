@@ -46,8 +46,6 @@ CFLAGS+=-DSYSTEM_EXPAT
 APP1TARGET=$(TARGET)
 
 OBJFILES =\
-	$(OBJ)/export2.obj\
-	$(OBJ)/helpmerge.obj\
 	$(OBJ)/layoutparse.obj\
 	$(OBJ)/merge.obj\
 	$(OBJ)/tralay.obj\
