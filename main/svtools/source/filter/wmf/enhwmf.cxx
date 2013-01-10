@@ -19,14 +19,13 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
 
 #include "winmtf.hxx"
 #include <osl/endian.h>
 #include <basegfx/matrix/b2dhommatrix.hxx>
+#include <vcl/dibtools.hxx>
 
 //=========================== GDI-Array ===================================
 
@@ -871,8 +870,9 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 						pWMF->Seek( nStart + offBitsSrc );
 						pWMF->Read( pBuf + 14 + cbBmiSrc, cbBitsSrc );
 						aTmp.Seek( 0 );
-						aBitmap.Read( aTmp, sal_True );
-						// test if it is sensible to crop
+						ReadDIB(aBitmap, aTmp, true);
+						
+                        // test if it is sensible to crop
 						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) && 
 							( xSrc >= 0 ) && ( ySrc >= 0 ) &&
                                 ( xSrc + static_cast< sal_Int32 >(cxSrc) <= static_cast< sal_Int32 >(aBitmap.GetSizePixel().Width()) ) &&
@@ -932,7 +932,7 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 						pWMF->Seek( nStart + offBitsSrc );
 						pWMF->Read( pBuf + 14 + cbBmiSrc, cbBitsSrc );
 						aTmp.Seek( 0 );
-						aBitmap.Read( aTmp, sal_True );
+						ReadDIB(aBitmap, aTmp, true);
 
 						// test if it is sensible to crop
 						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) && 
@@ -986,7 +986,7 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 						pWMF->Seek( nStart + offBitsSrc );
 						pWMF->Read( pBuf + 14 + cbBmiSrc, cbBitsSrc );
 						aTmp.Seek( 0 );
-						aBitmap.Read( aTmp, sal_True );
+						ReadDIB(aBitmap, aTmp, true);
 
 						// test if it is sensible to crop
 						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) && 
@@ -1307,7 +1307,7 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 					*pWMF >> nTmp32;
 				}
 
-				aBmp.Read( *pWMF, sal_False );
+				ReadDIB(aBmp, *pWMF, false);
 				pBmp = aBmp.AcquireReadAccess();
 				if ( pBmp )
 				{
