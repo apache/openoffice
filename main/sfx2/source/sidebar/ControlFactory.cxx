@@ -19,33 +19,29 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
+#include "precompiled_sfx2.hxx"
 
-#include "Context.hxx"
-#include <vector>
-#include <boost/shared_ptr.hpp>
+#include "ControlFactory.hxx"
+
+#include "MenuButton.hxx"
+#include "TabItem.hxx"
 
 
 namespace sfx2 { namespace sidebar {
 
-class DeckDescriptor
-{
-public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
 
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
-};
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+CheckBox* ControlFactory::CreateMenuButton (Window* pParentWindow)
+{
+    return new MenuButton(pParentWindow);
+}
+
+
+
+
+ImageRadioButton* ControlFactory::CreateTabItem (Window* pParentWindow)
+{
+    return new TabItem(pParentWindow);
+}
+
 
 } } // end of namespace sfx2::sidebar
-
-#endif

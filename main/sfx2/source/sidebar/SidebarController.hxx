@@ -22,7 +22,7 @@
 #ifndef SFX_SIDEBAR_CONTROLLER_HXX
 #define SFX_SIDEBAR_CONTROLLER_HXX
 
-#include "ContentPanelManager.hxx"
+#include "ResourceManager.hxx"
 
 #include <com/sun/star/ui/XContextChangeEventListener.hpp>
 #include <boost/noncopyable.hpp>
@@ -40,10 +40,14 @@ namespace
 }
 
 
-namespace sfx2 {
+class DockingWindow;
+
+namespace sfx2 { namespace sidebar {
 
 class TabBar;
+class TabBarConfiguration;
 class DeckDescriptor;
+class DeckConfiguration;
 class ContentPanelDescriptor;
 
 class SidebarController
@@ -53,7 +57,7 @@ class SidebarController
 {
 public:
     SidebarController(
-        Window* pParentWindow,
+        DockingWindow* pParentWindow,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
     virtual ~SidebarController (void);
 
@@ -65,29 +69,33 @@ public:
 
     void NotifyResize (void);
 
+    void SwitchToDeck (
+        const DeckDescriptor& rDeckDescriptor);
+
 private:
-    class Configuration;
-    ::boost::scoped_ptr<Configuration> mpCurrentConfiguration;
-    Window* mpParentWindow;
+    ::boost::shared_ptr<DeckConfiguration> mpCurrentConfiguration;
+    DockingWindow* mpParentWindow;
     TabBar* mpTabBar;
     cssu::Reference<css::frame::XFrame> mxFrame;
+    Context maCurrentContext;
 
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
-    void UpdateConfiguration (
+    void UpdateConfigurations (const Context& rContext);
+    cssu::Reference<css::ui::XUIElement> CreateUIElement (
+        const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
+        const ::rtl::OUString& rsImplementationURL) const;
+    void SwitchToDeck (
+        const DeckDescriptor& rDeckDescriptor,
         const Context& rContext);
-    void ProcessMatchingDeck (
-        const DeckDescriptor& rDeck,
-        Configuration& rConfiguration);
-    void ProcessMatchingPanel (
-        const ContentPanelDescriptor& rPanel,
-        Configuration& rConfiguration);
-    void MakeConfigurationCurrent (Configuration& rConfiguration);
+    void MakeConfigurationCurrent (const ::boost::shared_ptr<DeckConfiguration>& rpConfiguration);
+    void ShowPopupMenu (const Rectangle& rButtonBox) const;
+    ::boost::shared_ptr<PopupMenu> CreatePopupMenu (void) const;
+    DECL_LINK(OnMenuItemSelected, Menu*);
 
     virtual void SAL_CALL disposing (void);
 };
 
 
-} // end of namespace sfx2
-
+} } // end of namespace sfx2::sidebar
 
 #endif

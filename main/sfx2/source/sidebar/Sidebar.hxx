@@ -30,7 +30,7 @@
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 
 /** SFX-less version of a module dependent task pane, filled with tool panels as specified in the respective
@@ -63,6 +63,6 @@ private:
 };
 
 
-} // end of namespace sfx2
+} } // end of namespace sfx2::sidebar
 
 #endif

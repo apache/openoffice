@@ -19,32 +19,34 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
+#ifndef SFX_SIDEBAR_MENU_BUTTON_HXX
+#define SFX_SIDEBAR_MENU_BUTTON_HXX
 
-#include "Context.hxx"
-#include <vector>
-#include <boost/shared_ptr.hpp>
+#include "vcl/button.hxx"
 
 
 namespace sfx2 { namespace sidebar {
 
-class DeckDescriptor
+class MenuButton
+    : public CheckBox
 {
 public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
+    MenuButton (Window* pParentWindow);
+    virtual ~MenuButton (void);
 
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
+    virtual void Paint (const Rectangle& rUpdateArea);
+    virtual void MouseMove (const MouseEvent& rEvent);
+    virtual void MouseButtonDown (const MouseEvent& rMouseEvent);
+    virtual void MouseButtonUp (const MouseEvent& rMouseEvent);
+
+private:
+    bool mbIsLeftButtonDown;
+    enum PaintType {
+        PT_Native,
+        PT_Theme
+    } mePaintType;
 };
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+
 
 } } // end of namespace sfx2::sidebar
 

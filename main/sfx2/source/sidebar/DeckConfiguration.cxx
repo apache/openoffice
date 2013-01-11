@@ -19,33 +19,44 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
+#include "precompiled_sfx2.hxx"
 
-#include "Context.hxx"
-#include <vector>
-#include <boost/shared_ptr.hpp>
+#include "DeckConfiguration.hxx"
+#include "Deck.hxx"
+#include "Panel.hxx"
+#include "TitleBar.hxx"
 
 
 namespace sfx2 { namespace sidebar {
 
-class DeckDescriptor
+DeckConfiguration::DeckConfiguration (void)
+    : mpDeck(NULL),
+      maPanels()
 {
-public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
+}
 
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
-};
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+
+
+
+void DeckConfiguration::Disable (void)
+{
+    // Move the deck and its children temporarily to a new root to
+    // avoid a crash when calling removeWindow(,NULL).
+    Window aTemporaryParent (NULL,0);
+    mpDeck->Hide();
+    mpDeck->Dispose();
+    mpDeck->GetParent()->removeWindow(mpDeck, &aTemporaryParent);
+    maPanels.clear();
+    mpDeck = NULL;
+}
+
+
+
+
+void DeckConfiguration::Activate (void)
+{
+    mpDeck->SetPanels(maPanels);
+}
+
 
 } } // end of namespace sfx2::sidebar
-
-#endif

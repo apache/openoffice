@@ -22,12 +22,12 @@
 #include "precompiled_sfx2.hxx"
 
 #include "Sidebar.hxx"
-#include "ContentPanelManager.hxx"
+#include "ResourceManager.hxx"
 
 using namespace css;
 using namespace cssu;
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 Sidebar::Sidebar(
     Window& rParentWindow,
@@ -63,4 +63,19 @@ void Sidebar::GetFocus (void)
 }
 
 
-} // end of namespace sfx2
+
+
+void Sidebar::DataChanged (const DataChangedEvent& rDataChangedEvent)
+{
+    if  (rDataChangedEvent.GetType() == DATACHANGED_SETTINGS
+        &&  (rDataChangedEvent.GetFlags() & SETTINGS_STYLE)!= 0)
+    {
+        Invalidate();
+    }
+    else
+        Window::DataChanged(rDataChangedEvent);
+}
+
+
+
+} } // end of namespace sfx2::sidebar

@@ -22,20 +22,22 @@
 #include "precompiled_sfx2.hxx"
 
 #include "TitleBar.hxx"
+#include "Theme.hxx"
+#include "Paint.hxx"
 
 #include <tools/svborder.hxx>
 #include <vcl/gradient.hxx>
 
+ToolbarValue::~ToolbarValue (void) {}
 
-namespace sfx2 {
+
+namespace sfx2 { namespace sidebar {
 
 TitleBar::TitleBar (
     const ::rtl::OUString& rsTitle,
-    const bool bIsDeckTitle,
     Window* pParentWindow)
     : Window(pParentWindow),
-      msTitle(rsTitle),
-      mbIsDeckTitle(bIsDeckTitle)
+      msTitle(rsTitle)
 {
     SetBackground(Wallpaper());
 }
@@ -52,14 +54,9 @@ TitleBar::~TitleBar (void)
 
 void TitleBar::Paint (const Rectangle& rUpdateArea)
 {
-    Push(PUSH_FONT | PUSH_FILLCOLOR | PUSH_LINECOLOR);
-
-    // Set title bar colors.
-    SetFillColor(GetSettings().GetStyleSettings().GetDialogColor());
-    SetLineColor();
-    
     // Paint title bar background.
     Size aWindowSize( GetOutputSizePixel() );
+    /*
     int nOuterLeft = 0;
     const SvBorder aBorder( 3, 1, 3, 3 );
     const sal_Int32 m_nTitleBarHeight = GetSettings().GetStyleSettings().GetTitleHeight();
@@ -75,11 +72,53 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
         nOuterRight, 
         nInnerTop-1
         );
-    const static Gradient aTitleBarGradient(
-        GRADIENT_LINEAR,
-        Color(0xe8e8f0),
-        Color(0xf0f0ff));
-    DrawGradient(aTitleBarBox, aTitleBarGradient);
+    */
+    Rectangle aTitleBarBox(
+        0,
+        0, 
+        aWindowSize.Width(), 
+        aWindowSize.Height()
+        );
+
+    
+    PaintBackground(aTitleBarBox);
+    PaintDecoration(aTitleBarBox);
+    PaintTitle(GetTitleArea(aTitleBarBox));
+}
+
+
+
+void TitleBar::PaintBackground (const Rectangle& rTitleBarBox)
+{
+    const sidebar::Paint aBackgroundPaint (GetBackgroundPaint());
+
+    switch(aBackgroundPaint.GetType())
+    {
+        case Paint::NoPaint:
+        default:
+            break;
+
+        case Paint::ColorPaint:
+            // Set title bar colors.
+            Push(PUSH_LINECOLOR | PUSH_FILLCOLOR);
+            SetFillColor(aBackgroundPaint.GetColor());
+            SetLineColor();
+            DrawRect(rTitleBarBox);
+            Pop();
+            break;
+
+        case Paint::GradientPaint:
+            DrawGradient(rTitleBarBox, aBackgroundPaint.GetGradient());
+            break;
+    }
+}
+
+
+
+
+void TitleBar::PaintTitle (const Rectangle& rTitleBox)
+{
+    Push(PUSH_FONT | PUSH_TEXTCOLOR);
 
     // Use a bold font for the deck title.
     Font aFont(GetFont());
@@ -87,15 +126,14 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
     SetFont(aFont);
 
     // Paint title bar text.
-    SetLineColor( GetSettings().GetStyleSettings().GetActiveTextColor() );
-    aTitleBarBox.Left() += 3;
+    SetTextColor(GetTextColor());
     DrawText(
-        aTitleBarBox,
+        rTitleBox,
         msTitle,
         TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER);
-
+    
     Pop();
 }
 
 
-} // end of namespace sfx2
+} } // end of namespace sfx2::sidebar

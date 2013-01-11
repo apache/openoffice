@@ -19,33 +19,42 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
+#include "precompiled_sfx2.hxx"
 
-#include "Context.hxx"
-#include <vector>
-#include <boost/shared_ptr.hpp>
-
+#include "DeckDescriptor.hxx"
 
 namespace sfx2 { namespace sidebar {
 
-class DeckDescriptor
+DeckDescriptor::DeckDescriptor (void)
+    : msTitle(),
+      msId(),
+      msIconURL(),
+      msHighContrastIconURL(),
+      msHelpURL(),
+      msHelpText(),
+      maContexts()
 {
-public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
+}
 
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
-};
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+
+
+
+DeckDescriptor::DeckDescriptor (const DeckDescriptor& rOther)
+    : msTitle(rOther.msTitle),
+      msId(rOther.msId),
+      msIconURL(rOther.msIconURL),
+      msHighContrastIconURL(rOther.msHighContrastIconURL),
+      msHelpURL(rOther.msHelpURL),
+      msHelpText(rOther.msHelpText),
+      maContexts(rOther.maContexts)
+{
+}
+
+
+
+
+DeckDescriptor::~DeckDescriptor (void)
+{
+}
 
 } } // end of namespace sfx2::sidebar
-
-#endif

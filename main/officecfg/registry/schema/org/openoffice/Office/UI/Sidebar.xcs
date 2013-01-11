@@ -76,6 +76,13 @@
         </info>
         <value></value>
       </prop>
+      <prop oor:name="HighContrastIconURL" oor:type="xs:string">
+        <info>
+          <desc>This icon is displayed in the sidebar tab bar when high contrast mode is active.
+          Any URL scheme supported by the com.sun.star.graphic.GraphicProvider service is suitable here.</desc>
+        </info>
+        <value></value>
+      </prop>
       <prop oor:name="HelpURL" oor:type="xs:string">
         <info>
           <desc>Help about the sidebar deck.</desc>
@@ -147,6 +154,12 @@
           <desc>URL by which the implementation of the panel is known by its factory.</desc>
         </info>
         <value></value>
+      </prop>
+      <prop oor:name="IsExpandedByDefault" oor:type="xs:boolean">
+        <info>
+          <desc>When true then the panel is initialized in its expanded state.</desc>
+        </info>
+        <value>true</value>
       </prop>
     </group>
   </templates>

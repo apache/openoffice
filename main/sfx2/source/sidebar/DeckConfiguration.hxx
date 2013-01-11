@@ -19,32 +19,31 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
+#ifndef SFX_SIDEBAR_DECK_CONFIGURATION_HXX
+#define SFX_SIDEBAR_DECK_CONFIGURATION_HXX
 
-#include "Context.hxx"
 #include <vector>
-#include <boost/shared_ptr.hpp>
-
 
 namespace sfx2 { namespace sidebar {
 
-class DeckDescriptor
+class Deck;
+class Panel;
+
+
+class DeckConfiguration
 {
 public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
+    Deck* mpDeck;
+    ::std::vector<Panel*> maPanels;
 
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
+    DeckConfiguration (void);
+    
+    void Disable (void);
+    void Activate (void);
 };
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+
+
+
 
 } } // end of namespace sfx2::sidebar
 

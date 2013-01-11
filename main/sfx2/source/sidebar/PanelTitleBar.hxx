@@ -19,32 +19,40 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
+#ifndef SFX_SIDEBAR_PANEL_TITLE_BAR_HXX
+#define SFX_SIDEBAR_PANEL_TITLE_BAR_HXX
 
-#include "Context.hxx"
-#include <vector>
-#include <boost/shared_ptr.hpp>
+#include "TitleBar.hxx"
 
 
 namespace sfx2 { namespace sidebar {
 
-class DeckDescriptor
+class Panel;
+
+class PanelTitleBar
+    : public TitleBar
 {
 public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
+    PanelTitleBar (
+        const ::rtl::OUString& rsTitle,
+        Window* pParentWindow,
+        Panel* pPanel);
+    virtual ~PanelTitleBar (void);
 
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
+    virtual void MouseButtonDown (const MouseEvent& rMouseEvent);
+    virtual void MouseButtonUp (const MouseEvent& rMouseEvent);
+
+protected:
+    virtual Rectangle GetTitleArea (const Rectangle& rTitleBarBox);
+    virtual void PaintDecoration (const Rectangle& rTitleBarBox);
+    virtual sidebar::Paint GetBackgroundPaint (void);
+    virtual Color GetTextColor (void);
+
+private:
+    bool mbIsLeftButtonDown;
+    Panel* mpPanel;
 };
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+
 
 } } // end of namespace sfx2::sidebar
 

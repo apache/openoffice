@@ -22,16 +22,19 @@
 #ifndef SFX_SIDEBAR_PANEL_HXX
 #define SFX_SIDEBAR_PANEL_HXX
 
-#include "vcl/window.hxx"
+#include <vcl/window.hxx>
+
 #include <com/sun/star/ui/XUIElement.hpp>
 #include <com/sun/star/ui/XVerticalStackLayoutElement.hpp>
+
+#include <boost/function.hpp>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
-class ContentPanelDescriptor;
+class PanelDescriptor;
 class TitleBar;
 
 
@@ -40,27 +43,41 @@ class Panel
 {
 public:
     Panel (
-        const ContentPanelDescriptor& rPanelDescriptor,
-        Window* pParentWindow);
+        const PanelDescriptor& rPanelDescriptor,
+        Window* pParentWindow,
+        const ::boost::function<void(void)>& rDeckLayoutTrigger);
     virtual ~Panel (void);
 
+    void Dispose (void);
+    
     const ::rtl::OUString& GetLayoutHint (void) const;
     TitleBar* GetTitleBar (void) const;
     bool IsTitleBarOptional (void) const;
     void SetUIElement (const cssu::Reference<css::ui::XUIElement>& rxElement);
-    cssu::Reference<css::ui::XVerticalStackLayoutElement> Panel::GetVerticalStackElement (void) const;
+    cssu::Reference<css::ui::XVerticalStackLayoutElement> GetVerticalStackElement (void) const;
+    void SetExpanded (const bool bIsExpanded);
+    bool IsExpanded (void) const;
     
     virtual void Paint (const Rectangle& rUpdateArea);
+    virtual void SetPosSizePixel (
+        long nX,
+        long nY,
+        long nWidth,
+        long nHeight,
+        sal_uInt16 nFlags = WINDOW_POSSIZE_ALL);
 
 private:
     const ::rtl::OUString msLayoutHint;
     TitleBar* mpTitleBar;
     const bool mbIsTitleBarOptional;
     cssu::Reference<css::ui::XUIElement> mxElement;
+    cssu::Reference<css::awt::XWindow> mxElementWindow;
     cssu::Reference<css::ui::XVerticalStackLayoutElement> mxVerticalStackLayoutElement;
+    bool mbIsExpanded;
+    const ::boost::function<void(void)> maDeckLayoutTrigger;
 };
 
 
-} // end of namespace sfx2
+} } // end of namespace sfx2::sidebar
 
 #endif

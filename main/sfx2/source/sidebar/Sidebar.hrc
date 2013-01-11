@@ -19,33 +19,18 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
 
-#include "Context.hxx"
-#include <vector>
-#include <boost/shared_ptr.hpp>
+#include <sfx2/sfx.hrc>
 
+#define RID_SIDEBAR_RESOURCE  (RID_SFX_SIDEBAR_START +  0)
 
-namespace sfx2 { namespace sidebar {
-
-class DeckDescriptor
-{
-public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
-
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
-};
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
-
-} } // end of namespace sfx2::sidebar
-
-#endif
+#define IMAGE_SIDEBAR_PLUS      1
+#define IMAGE_SIDEBAR_PLUS_HC   2
+#define IMAGE_SIDEBAR_MINUS     3
+#define IMAGE_SIDEBAR_MINUS_HC  4
+#define IMAGE_SIDEBAR_GRIP      5
+#define IMAGE_SIDEBAR_GRIP_HC   6
+#define IMAGE_SIDEBAR_MENU      7
+#define IMAGE_SIDEBAR_MENU_HC   8
+#define STRING_CUSTOMIZATION    9
+#define STRING_RESTORE         10

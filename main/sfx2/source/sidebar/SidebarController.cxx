@@ -23,20 +23,27 @@
 
 #include "SidebarController.hxx"
 #include "Deck.hxx"
+#include "DeckConfiguration.hxx"
 #include "Panel.hxx"
+#include "SidebarResource.hxx"
 #include "TitleBar.hxx"
-#include "SidebarLayouter.hxx"
 #include "TabBar.hxx"
+#include "Theme.hxx"
+
 #include "sfxresid.hxx"
 #include "sfx2/sfxsids.hrc"
+#include "sfxlocal.hrc"
+#include <vcl/floatwin.hxx>
+#include <vcl/dockwin.hxx>
+#include <comphelper/componentfactory.hxx>
+#include <comphelper/componentcontext.hxx>
+#include <comphelper/namedvaluecollection.hxx>
 
 #include <com/sun/star/ui/ContextChangeEventMultiplexer.hpp>
 #include <com/sun/star/ui/ContextChangeEventObject.hpp>
 
 #include <boost/bind.hpp>
-#include <comphelper/componentfactory.hxx>
-#include <comphelper/componentcontext.hxx>
-#include <comphelper/namedvaluecollection.hxx>
+#include <boost/foreach.hpp>
 
 
 using namespace css;
@@ -45,30 +52,32 @@ using namespace cssu;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
-
-class SidebarController::Configuration
-{
-public:
-    Deck* mpDeck;
-    ::std::vector<Panel*> maPanels;
-
-    Configuration (void);
-    void Disable (void);
-    void Activate (void);
-};
-
-
+namespace {
+    enum MenuId
+    {
+        MID_UNLOCK_TASK_PANEL = 1,
+        MID_LOCK_TASK_PANEL,
+        MID_CUSTOMIZATION,
+        MID_RESTORE_DEFAULT,
+        MID_FIRST_PANEL,
+        MID_FIRST_HIDE = 1000
+    };
+}
 
 
 SidebarController::SidebarController (
-    Window* pParentWindow,
+    DockingWindow* pParentWindow,
     const cssu::Reference<css::frame::XFrame>& rxFrame)
     : SidebarControllerInterfaceBase(m_aMutex),
       mpCurrentConfiguration(),
       mpParentWindow(pParentWindow),
-      mpTabBar(new TabBar(mpParentWindow)),
+      mpTabBar(new TabBar(
+              mpParentWindow,
+              rxFrame,
+              ::boost::bind(&SidebarController::SwitchToDeck, this, _1),
+              ::boost::bind(&SidebarController::ShowPopupMenu, this, _1))),
       mxFrame(rxFrame)
 {
     if (pParentWindow == NULL)
@@ -77,7 +86,7 @@ SidebarController::SidebarController (
             return;
     }
 
-    UpdateConfiguration(Context(A2S("default"), A2S("default")));
+    UpdateConfigurations(Context(A2S("default"), A2S("default")));
 
     // Listen for context change events.
     cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
@@ -124,7 +133,7 @@ void SAL_CALL SidebarController::disposing (void)
 void SAL_CALL SidebarController::notifyContextChangeEvent (const css::ui::ContextChangeEventObject& rEvent)
     throw(cssu::RuntimeException)
 {
-    UpdateConfiguration(Context(rEvent.ApplicationName, rEvent.ContextName));
+    UpdateConfigurations(Context(rEvent.ApplicationName, rEvent.ContextName));
 }
 
 
@@ -153,80 +162,140 @@ void SidebarController::NotifyResize (void)
 {
     if (mpCurrentConfiguration != NULL)
     {
-        SidebarLayouter::LayoutSidebar(mpCurrentConfiguration->mpDeck, mpTabBar);
-        SidebarLayouter::LayoutPanels(mpCurrentConfiguration->mpDeck, mpCurrentConfiguration->maPanels);
+        if (mpCurrentConfiguration->mpDeck==NULL || mpTabBar==NULL)
+        {
+            OSL_ASSERT(mpCurrentConfiguration->mpDeck!=NULL && mpTabBar!=NULL);
+        }
+        else
+        {
+            Window* pParentWindow = mpCurrentConfiguration->mpDeck->GetParent();
+            if (pParentWindow==NULL || pParentWindow!=mpTabBar->GetParent())
+            {
+                OSL_ASSERT(mpCurrentConfiguration->mpDeck->GetParent() != NULL);
+                OSL_ASSERT(mpCurrentConfiguration->mpDeck->GetParent() == mpTabBar->GetParent());
+            }
+    
+            const sal_Int32 nWidth (pParentWindow->GetSizePixel().Width());
+            const sal_Int32 nHeight (pParentWindow->GetSizePixel().Height());
+            mpCurrentConfiguration->mpDeck->SetPosSizePixel(0,0, nWidth-TabBar::GetDefaultWidth(), nHeight);
+            mpCurrentConfiguration->mpDeck->Show();
+            mpTabBar->SetPosSizePixel(nWidth-TabBar::GetDefaultWidth(),0,TabBar::GetDefaultWidth(),nHeight);
+            mpTabBar->Show();
+
+            mpCurrentConfiguration->mpDeck->RequestLayout();
+        }
     }
 }
 
 
 
 
-void SidebarController::UpdateConfiguration (const Context& rContext)
+void SidebarController::UpdateConfigurations (const Context& rContext)
 {
-    ::boost::scoped_ptr<Configuration> pConfiguration(new Configuration());
-    
-    SharedContentPanelManager pContentManager (ContentPanelManager::Instance());
-    pContentManager->CallForBestMatchingDeck (
-        ::boost::bind(&SidebarController::ProcessMatchingDeck, this, _1, ::boost::ref(*pConfiguration)),
-        rContext);
-    
-    if (pConfiguration->mpDeck == NULL)
-        return;
-    
-    pContentManager->CallForMatchingPanels (
-        ::boost::bind(&SidebarController::ProcessMatchingPanel, this, _1, ::boost::ref(*pConfiguration)),
+    maCurrentContext = rContext;
+
+    ResourceManager::DeckContainer aDeckDescriptors;
+    ResourceManager::Instance().GetMatchingDecks (
+        aDeckDescriptors,
         rContext,
-        pConfiguration->mpDeck->GetId());
+        mxFrame);
+    mpTabBar->SetDecks(aDeckDescriptors);
 
-    MakeConfigurationCurrent(*pConfiguration);
-    mpCurrentConfiguration.swap(pConfiguration);
+    const DeckDescriptor* pDeckDescriptor (ResourceManager::Instance().GetBestMatchingDeck(rContext, mxFrame));
+    if (pDeckDescriptor != NULL)
+        SwitchToDeck(*pDeckDescriptor, rContext);
 }
 
 
 
 
-void SidebarController::ProcessMatchingDeck (
-    const DeckDescriptor& rDeckDescriptor,
-    Configuration& rConfiguration)
+void SidebarController::SwitchToDeck (
+    const DeckDescriptor& rDeckDescriptor)
 {
-    if (rConfiguration.mpDeck != NULL)
+    SwitchToDeck(rDeckDescriptor, maCurrentContext);
+}
+
+
+
+
+void SidebarController::SwitchToDeck (
+    const DeckDescriptor& rDeckDescriptor,
+    const Context& rContext)
+{
+    // Determine the panels to display in the deck.
+    ResourceManager::PanelContainer aPanelDescriptors;
+    ResourceManager::Instance().GetMatchingPanels(
+        aPanelDescriptors,
+        rContext,
+        rDeckDescriptor.msId,
+        mxFrame);
+
+    // Setup a configuration for the requested deck
+    // and create the deck.
+    ::boost::shared_ptr<DeckConfiguration> pConfiguration (new DeckConfiguration);
+    pConfiguration->mpDeck = new Deck(rDeckDescriptor, mpParentWindow);
+
+    // Create the panels.
+    for (ResourceManager::PanelContainer::const_iterator
+             iPanel(aPanelDescriptors.begin()),
+             iEnd(aPanelDescriptors.end());
+         iPanel!=iEnd;
+         ++iPanel)
     {
-        // When more than one deck matches the context then choose the first.
-        return;
+        // Create the panel which is the parent window of the UIElement.
+        Panel* pPanel = new Panel(
+            *iPanel,
+            pConfiguration->mpDeck,
+            ::boost::bind(&Deck::RequestLayout,pConfiguration->mpDeck));
+
+        // Create the XUIElement.
+        Reference<ui::XUIElement> xUIElement (CreateUIElement(
+                pPanel->GetComponentInterface(),
+                iPanel->msImplementationURL));
+        if (xUIElement.is())
+        {
+            // Initialize the panel and add it to the active deck.
+            pPanel->SetUIElement(xUIElement);
+            pConfiguration->maPanels.push_back(pPanel);
+        }
+        else
+        {
+            delete pPanel;
+        }
     }
 
-    rConfiguration.mpDeck = new Deck(rDeckDescriptor, mpParentWindow);
+    // Activate the new configuration.
+    MakeConfigurationCurrent(pConfiguration);
+
+    // Tell the tab bar to highlight the button associated with the
+    // deck.
+    mpTabBar->HighlightDeck(rDeckDescriptor.msId);
 }
 
 
 
 
-void SidebarController::ProcessMatchingPanel (
-    const ContentPanelDescriptor& rPanelDescriptor,
-    Configuration& rConfiguration)
+Reference<ui::XUIElement> SidebarController::CreateUIElement (
+    const Reference<awt::XWindowPeer>& rxWindow,
+    const ::rtl::OUString& rsImplementationURL) const
 {
-    // Create the panel which is the parent window of the UIElement
-    // that we are about to create.
-    Panel* pPanel = new Panel(rPanelDescriptor, rConfiguration.mpDeck);
-
-    Reference<ui::XUIElement> xElement;
     try
     {
         const ::comphelper::ComponentContext aComponentContext (::comphelper::getProcessServiceFactory());
         const Reference<ui::XUIElementFactory> xUIElementFactory (
             aComponentContext.createComponent("com.sun.star.ui.UIElementFactoryManager"),
             UNO_QUERY_THROW);
-    
+
+
+        // Create the XUIElement.
         ::comphelper::NamedValueCollection aCreationArguments;
         aCreationArguments.put("Frame", makeAny(mxFrame));
-        aCreationArguments.put("ParentWindow", makeAny(pPanel->GetComponentInterface()));
-        
-        pPanel->SetUIElement(
-            Reference<ui::XUIElement>(
-                xUIElementFactory->createUIElement(
-                    rPanelDescriptor.msImplementationURL,
-                    aCreationArguments.getPropertyValues()),
-                UNO_QUERY_THROW));
+        aCreationArguments.put("ParentWindow", makeAny(rxWindow));
+        return Reference<ui::XUIElement>(
+            xUIElementFactory->createUIElement(
+                rsImplementationURL,
+                aCreationArguments.getPropertyValues()),
+            UNO_QUERY_THROW);
     }
     catch(Exception& rException)
     {
@@ -236,23 +305,32 @@ void SidebarController::ProcessMatchingPanel (
         // Probably because its factory was not properly registered.
         // TODO: provide feedback to developer to better pinpoint the
         // source of the error.
+
+        return NULL;
     }
-    rConfiguration.maPanels.push_back(pPanel);
 }
 
 
 
 
-void SidebarController::MakeConfigurationCurrent (Configuration& rConfiguration)
+void SidebarController::MakeConfigurationCurrent (const ::boost::shared_ptr<DeckConfiguration>& rpConfiguration)
 {
-    if (rConfiguration.mpDeck == NULL)
+    if ( ! rpConfiguration || rpConfiguration->mpDeck == NULL)
         return;
 
     // Deactivate the current deck and panels.
     if (mpCurrentConfiguration && mpCurrentConfiguration->mpDeck!=NULL)
         mpCurrentConfiguration->Disable();
-    SidebarLayouter::LayoutSidebar(rConfiguration.mpDeck, mpTabBar);
-    rConfiguration.Activate();
+
+    mpCurrentConfiguration = rpConfiguration;
+
+    mpCurrentConfiguration->mpDeck->SetPosSizePixel(
+        0,
+        0,
+        mpParentWindow->GetSizePixel().Width()-TabBar::GetDefaultWidth(),
+        mpParentWindow->GetSizePixel().Height());
+    mpCurrentConfiguration->mpDeck->Show();
+    mpCurrentConfiguration->Activate();
 }
 
 
@@ -274,6 +352,13 @@ IMPL_LINK(SidebarController, WindowEventHandler, VclWindowEvent*, pEvent)
                 NotifyResize();
                 break;
 
+            case VCLEVENT_WINDOW_DATACHANGED:
+                // Force an update of deck and tab bar to reflect
+                // changes in theme (high contrast mode).
+                Theme::HandleDataChange();
+                mpParentWindow->Invalidate();
+                break;
+                
             case SFX_HINT_DYING:
                 dispose();
                 break;
@@ -289,61 +374,107 @@ IMPL_LINK(SidebarController, WindowEventHandler, VclWindowEvent*, pEvent)
 
 
 
-//===== SidebarController::Configuration ======================================
-
-SidebarController::Configuration::Configuration (void)
-    : mpDeck(NULL),
-      maPanels()
+void SidebarController::ShowPopupMenu (const Rectangle& rButtonBox) const
 {
+    ::boost::shared_ptr<PopupMenu> pMenu = CreatePopupMenu();
+    pMenu->SetSelectHdl(LINK(this, SidebarController, OnMenuItemSelected));
+        
+    // pass toolbox button rect so the menu can stay open on button up
+    Rectangle aBox (rButtonBox);
+    aBox.Move(mpTabBar->GetPosPixel().X(), 0);
+    pMenu->Execute(mpParentWindow, aBox, POPUPMENU_EXECUTE_DOWN);
 }
 
 
 
 
-void SidebarController::Configuration::Disable (void)
+::boost::shared_ptr<PopupMenu> SidebarController::CreatePopupMenu (void) const
 {
-    // Hide and destroy the panels.
-    for (::std::vector<Panel*>::const_iterator
-             iPanel(maPanels.begin()),
-             iEnd(maPanels.end());
-         iPanel!=iEnd;
-         ++iPanel)
+    ::boost::shared_ptr<PopupMenu> pMenu (new PopupMenu());
+    FloatingWindow* pMenuWindow = dynamic_cast<FloatingWindow*>(pMenu->GetWindow());
+    if (pMenuWindow != NULL)
     {
-        (*iPanel)->Hide();
-        mpDeck->removeWindow(*iPanel, NULL);
-        delete *iPanel;
+        pMenuWindow->SetPopupModeFlags(pMenuWindow->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOMOUSEUPCLOSE);
     }
-    maPanels.clear();
 
-    // Hide and destroy the deck window.
-    mpDeck->Hide();
-    mpDeck->GetParent()->removeWindow(mpDeck, NULL);
-    delete mpDeck;
-    mpDeck = NULL;
-}
-
-
-
-
-void SidebarController::Configuration::Activate (void)
-{
-    SidebarLayouter::LayoutPanels(mpDeck, maPanels);
-
-    // Show the deck window.
-    mpDeck->GetTitleBar()->Show();
-    mpDeck->Show();
-
-    // Show the panels.
-    for (::std::vector<Panel*>::const_iterator
-             iPanel(maPanels.begin()),
-             iEnd(maPanels.end());
-         iPanel!=iEnd;
-         ++iPanel)
+    SidebarResource aLocalResource;
+    
+    // Add one entry for every tool panel element to individually make
+    // them visible or hide them.
+    if (mpTabBar != NULL)
     {
-        (*iPanel)->GetTitleBar()->Show();
-        (*iPanel)->Show();
+        mpTabBar->AddPopupMenuEntries(*pMenu, MID_FIRST_PANEL);
+        pMenu->InsertSeparator();
     }
+
+    // Add entry for docking or un-docking the tool panel.
+    if (mpParentWindow->IsFloatingMode())
+        pMenu->InsertItem(MID_LOCK_TASK_PANEL, String(SfxResId(STR_SFX_DOCK)));
+    else
+        pMenu->InsertItem(MID_UNLOCK_TASK_PANEL, String(SfxResId(STR_SFX_UNDOCK)));
+
+    // Add sub menu for customization (hiding of deck tabs.)
+    PopupMenu* pCustomizationMenu = new PopupMenu();
+    mpTabBar->AddCustomizationMenuEntries(*pCustomizationMenu, MID_FIRST_HIDE);
+    pCustomizationMenu->InsertSeparator();
+    pCustomizationMenu->InsertItem(MID_RESTORE_DEFAULT, String(SfxResId(STRING_RESTORE)));
+    
+    pMenu->InsertItem(MID_CUSTOMIZATION, String(SfxResId(STRING_CUSTOMIZATION)));
+    pMenu->SetPopupMenu(MID_CUSTOMIZATION, pCustomizationMenu);
+
+    pMenu->RemoveDisabledEntries(sal_False, sal_False);
+    
+    return pMenu;
 }
 
 
-} // end of namespace sfx2
+
+
+IMPL_LINK(SidebarController, OnMenuItemSelected, Menu*, pMenu)
+{
+    if (pMenu == NULL)
+    {
+        OSL_ENSURE(pMenu!=NULL, "TaskPaneController_Impl::OnMenuItemSelected: illegal menu!");
+        return 0;
+    }
+
+    pMenu->Deactivate();
+    const sal_Int32 nIndex (pMenu->GetCurItemId());
+    switch (nIndex)
+    {
+        case MID_UNLOCK_TASK_PANEL:
+            mpParentWindow->SetFloatingMode(sal_True);
+            break;
+
+        case MID_LOCK_TASK_PANEL:
+            mpParentWindow->SetFloatingMode(sal_False);
+            break;
+
+        case MID_RESTORE_DEFAULT:
+            mpTabBar->RestoreHideFlags();
+            break;
+            
+        default:
+        {
+            try
+            {
+                if (nIndex >= MID_FIRST_PANEL && nIndex<MID_FIRST_HIDE)
+                    SwitchToDeck(mpTabBar->GetDeckDescriptorForIndex(nIndex - MID_FIRST_PANEL));
+                else if (nIndex >=MID_FIRST_HIDE)
+                    mpTabBar->ToggleHideFlag(nIndex-MID_FIRST_HIDE);
+            }
+            catch (RuntimeException&)
+            {
+            }
+        }
+        break;
+    }
+
+    return 1;
+}
+
+
+
+
+
+} } // end of namespace sfx2::sidebar

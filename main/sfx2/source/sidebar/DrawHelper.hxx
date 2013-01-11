@@ -19,37 +19,51 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_TITLE_BAR_HXX
-#define SFX_SIDEBAR_TITLE_BAR_HXX
+#ifndef SFX_SIDEBAR_DRAW_HELPER_HXX
+#define SFX_SIDEBAR_DRAW_HELPER_HXX
 
-#include "Paint.hxx"
 #include "vcl/window.hxx"
 
+#include <tools/SvBorder.hxx>
+
+
+class Color;
 
 namespace sfx2 { namespace sidebar {
 
-class TitleBar
-    : public Window
+class Paint;
+
+/** Some convenience functions for painting backgrounds and borders.
+*/
+class DrawHelper
 {
 public:
-    TitleBar (
-        const ::rtl::OUString& rsTitle,
-        Window* pParentWindow);
-    virtual ~TitleBar (void);
-
-    virtual void Paint (const Rectangle& rUpdateArea);
-
-protected:
-    virtual Rectangle GetTitleArea (const Rectangle& rTitleBarBox) = 0;
-    virtual void PaintDecoration (const Rectangle& rTitleBarBox) = 0;
-    virtual sidebar::Paint GetBackgroundPaint (void) = 0;
-    virtual Color GetTextColor (void) = 0;
-
-private:
-    const ::rtl::OUString msTitle;
-
-    void PaintBackground (const Rectangle& rTitleBarBox);
-    void PaintTitle (const Rectangle& rTitleBox);
+    static void DrawBorder (
+        OutputDevice& rDevice,
+        const Rectangle rBox,
+        const SvBorder aBorderSize,
+        const Paint& rHorizontalPaint,
+        const Paint& rVerticalPaint);
+    static void DrawHorizontalLine(
+        OutputDevice& rDevice,
+        const int nLeft,
+        const int nRight,
+        const int nY,
+        const int nHeight,
+        const Paint& rPaint);
+    static void DrawVerticalLine(
+        OutputDevice& rDevice,
+        const int nTop,
+        const int nBottom,
+        const int nX,
+        const int nWidth,
+        const Paint& rPaint);
+    static void DrawRoundedRectangle (
+        OutputDevice& rDevice,
+        const Rectangle& rBox,
+        const int nCornerRadius,
+        const Color& rBorderColor,
+        const Paint& rFillPaint);
 };
 
 

@@ -203,7 +203,7 @@ namespace sd { namespace toolpanel
             );
 
         ::Window* pParentWindow = VCLUnoHelper::GetWindow( xParentWindow );
-        if ( !pParentWindow || !pToolPanelShell->IsPanelAnchorWindow( *pParentWindow ) )
+        if ( !pParentWindow )//|| !pToolPanelShell->IsPanelAnchorWindow( *pParentWindow ) )
             throw IllegalArgumentException(
                 ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Unsupported parent window." ) ),
                 *this,

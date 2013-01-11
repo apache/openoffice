@@ -29,7 +29,10 @@
 namespace sfx2 {
 
 class SidebarChildWindow;
-class SidebarController;
+
+namespace sidebar {
+    class SidebarController;
+}
 
 class SidebarDockingWindow
     : public SfxDockingWindow
@@ -47,7 +50,7 @@ protected:
     virtual void GetFocus (void);
 
 private:
-    ::rtl::Reference<SidebarController> mpSidebarController;
+    ::rtl::Reference<sfx2::sidebar::SidebarController> mpSidebarController;
 
     void DoDispose (void);
 };

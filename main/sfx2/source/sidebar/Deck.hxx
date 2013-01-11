@@ -25,9 +25,10 @@
 #include "vcl/window.hxx"
 
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 class DeckDescriptor;
+class Panel;
 class TitleBar;
 
 
@@ -43,19 +44,37 @@ public:
         Window* pParentWindow);
     virtual ~Deck (void);
 
+    void Dispose (void);
+    
     const ::rtl::OUString& GetId (void) const;
     TitleBar* GetTitleBar (void) const;
+    Rectangle GetContentArea (void) const;
+    ::rtl::OUString GetIconURL (const bool bIsHighContrastModeActive) const;
+    void SetPanels (const ::std::vector<Panel*>& rPanels);
+    void RequestLayout (void);
     
     virtual void Paint (const Rectangle& rUpdateArea);
 
 private:
     const ::rtl::OUString msTitle;
     const ::rtl::OUString msId;
-
     TitleBar* mpTitleBar;
+    Image maIcon;
+    const ::rtl::OUString msIconURL;
+    const ::rtl::OUString msHighContrastIconURL;
+    ::std::vector<Panel*> maPanels;
+    Window* mpFiller;
+    
+    void LayoutSinglePanel (void);
+    void LayoutMultiplePanels (void);
+    Rectangle PlaceDeckTitle (
+        TitleBar* pDeckTitleBar,
+        const Rectangle& rAvailableSpace);
+    void ShowFiller (const Rectangle& rBox);
+    void HideFiller (void);
 };
 
 
-} // end of namespace sfx2
+} } // end of namespace sfx2::sidebar
 
 #endif

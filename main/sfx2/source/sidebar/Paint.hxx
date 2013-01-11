@@ -19,32 +19,58 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
+#ifndef SFX_SIDEBAR_PAINT_HXX
+#define SFX_SIDEBAR_PAINT_HXX
 
-#include "Context.hxx"
-#include <vector>
-#include <boost/shared_ptr.hpp>
+#include <tools/color.hxx>
+#include <vcl/gradient.hxx>
+#include <vcl/wall.hxx>
 
+#include <boost/variant.hpp>
 
 namespace sfx2 { namespace sidebar {
 
-class DeckDescriptor
+/** Abstraction of different ways to fill outlines.
+    Can be
+     - none (empty: outline is not filled)
+     - singular color
+     - gradient
+*/
+class Paint
 {
 public:
-    ::rtl::OUString msTitle;
-    ::rtl::OUString msId;
-    ::rtl::OUString msIconURL;
-    ::rtl::OUString msHighContrastIconURL;
-    ::rtl::OUString msHelpURL;
-    ::rtl::OUString msHelpText;
-    ::std::vector<Context> maContexts;
+    enum Type
+    {
+        NoPaint,
+        ColorPaint,
+        GradientPaint
+    };
 
-    DeckDescriptor (void);
-    DeckDescriptor (const DeckDescriptor& rOther);
-    ~DeckDescriptor (void);
+    // Create paint with type NoPaint.
+    explicit Paint (void);
+
+    // Create a Paint object for the given color.
+    explicit Paint (const Color& rColor);
+
+    // Create a Paint object for the given gradient.
+    explicit Paint (const Gradient& rGradient);
+
+    void Set (const ::sfx2::sidebar::Paint& rOther);
+    
+    Type GetType (void) const;
+    const Color& GetColor (void) const;
+    const Gradient& GetGradient (void) const;
+
+    Wallpaper GetWallpaper (void) const;
+
+private:
+    Type meType;
+    ::boost::variant<
+        Color,
+        Gradient
+    > maValue;
 };
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+
 
 } } // end of namespace sfx2::sidebar
 

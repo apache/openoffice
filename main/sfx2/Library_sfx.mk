@@ -216,12 +216,22 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/sidebar/SidebarChildWindow \
 	sfx2/source/sidebar/SidebarDockingWindow \
 	sfx2/source/sidebar/SidebarController \
-	sfx2/source/sidebar/ContentPanelManager \
+	sfx2/source/sidebar/ControlFactory \
 	sfx2/source/sidebar/Deck \
+	sfx2/source/sidebar/DeckConfiguration \
+	sfx2/source/sidebar/DeckDescriptor \
+	sfx2/source/sidebar/DeckTitleBar \
+	sfx2/source/sidebar/DrawHelper \
+	sfx2/source/sidebar/MenuButton \
+	sfx2/source/sidebar/Paint \
 	sfx2/source/sidebar/Panel \
-	sfx2/source/sidebar/SidebarLayouter \
+	sfx2/source/sidebar/PanelDescriptor \
+	sfx2/source/sidebar/PanelTitleBar \
+	sfx2/source/sidebar/ResourceManager \
 	sfx2/source/sidebar/TabBar \
+	sfx2/source/sidebar/TabItem \
 	sfx2/source/sidebar/TitleBar \
+	sfx2/source/sidebar/Theme \
 	sfx2/source/sidebar/Context \
 	sfx2/source/statbar/stbitem \
 	sfx2/source/toolbox/imgmgr \
