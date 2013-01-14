@@ -753,7 +753,7 @@ SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
 	aRet.subRegExpressions = 0;
 	if( !pRegexMatcher)
 		return aRet;
-	
+
 	if( endPos > searchStr.getLength())
 		endPos = searchStr.getLength();
 
@@ -801,7 +801,7 @@ SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
 	aRet.subRegExpressions = 0;
 	if( !pRegexMatcher)
 		return aRet;
-	
+
 	if( startPos > searchStr.getLength())
 		startPos = searchStr.getLength();
 
