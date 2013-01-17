@@ -389,10 +389,24 @@ namespace drawinglayer
 		// direct draw of transformed BitmapEx primitive
 		void VclProcessor2D::RenderBitmapPrimitive2D(const primitive2d::BitmapPrimitive2D& rBitmapCandidate)
 		{
-            // create local transform
-			basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rBitmapCandidate.getTransform());
-			BitmapEx aBitmapEx(rBitmapCandidate.getBitmapEx());
-			bool bPainted(false);
+            // check local ViewPort
+            const basegfx::B2DRange& rDiscreteViewPort(getViewInformation2D().getDiscreteViewport());
+            const basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rBitmapCandidate.getTransform());
+
+            if(!rDiscreteViewPort.isEmpty())
+            {
+                // check if we are visible
+                basegfx::B2DRange aUnitRange(0.0, 0.0, 1.0, 1.0);
+
+                aUnitRange.transform(aLocalTransform);
+
+                if(!aUnitRange.overlaps(rDiscreteViewPort))
+                {
+                    return;
+                }
+            }
+
+            BitmapEx aBitmapEx(rBitmapCandidate.getBitmapEx());
 
 			if(maBColorModifierStack.count())
 			{
@@ -409,14 +423,12 @@ namespace drawinglayer
 					mpOutputDevice->SetLineColor();
 					mpOutputDevice->DrawPolygon(aPolygon);
 
-					bPainted = true;
+					return;
 				}
 			}
 
-			if(!bPainted)
 			{
 				static bool bForceUseOfOwnTransformer(false);
-				static bool bUseGraphicManager(true);
 
 				// decompose matrix to check for shear, rotate and mirroring
 				basegfx::B2DVector aScale, aTranslate;
@@ -426,19 +438,12 @@ namespace drawinglayer
                 // #121387# when mirrored and rotated, avoid the GraphicManager output which has low quality
                 const bool bRotated(!basegfx::fTools::equalZero(fRotate));
                 const bool bSheared(!basegfx::fTools::equalZero(fShearX));
-                const bool bMirrored(aScale.getX() < 0.0 || aScale.getY() < 0.0);
-                const bool bMirroredAndRotated(bRotated && bMirrored);
+                //const bool bMirrored(aScale.getX() < 0.0 || aScale.getY() < 0.0);
+                // const bool bMirroredAndRotated(bRotated && bMirrored);
 
-				if(!bForceUseOfOwnTransformer && !bSheared && !bMirroredAndRotated)
+				if(!bForceUseOfOwnTransformer && !bRotated && !bSheared) // && !bMirrored)
 				{
-					if(!bUseGraphicManager && !bRotated)
-					{
-						RenderBitmapPrimitive2D_BitmapEx(*mpOutputDevice, aBitmapEx, aLocalTransform);
-					}
-					else
-					{
-						RenderBitmapPrimitive2D_GraphicManager(*mpOutputDevice, aBitmapEx, aLocalTransform);
-					}
+					RenderBitmapPrimitive2D_BitmapEx(*mpOutputDevice, aBitmapEx, aLocalTransform);
 				}
 				else
 				{

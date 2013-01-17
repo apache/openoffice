@@ -753,13 +753,13 @@ SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
 	aRet.subRegExpressions = 0;
 	if( !pRegexMatcher)
 		return aRet;
-	
+
 	if( endPos > searchStr.getLength())
 		endPos = searchStr.getLength();
 
 	// use the ICU RegexMatcher to find the matches
 	UErrorCode nIcuErr = U_ZERO_ERROR;
-	const IcuUniString aSearchTargetStr( (const UChar*)searchStr.getStr(), searchStr.getLength());
+	const IcuUniString aSearchTargetStr( (const UChar*)searchStr.getStr(), endPos);
 	pRegexMatcher->reset( aSearchTargetStr);
 	// search until there is a valid match
 	for(;;)
@@ -801,7 +801,7 @@ SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
 	aRet.subRegExpressions = 0;
 	if( !pRegexMatcher)
 		return aRet;
-	
+
 	if( startPos > searchStr.getLength())
 		startPos = searchStr.getLength();
 
@@ -816,9 +816,15 @@ SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
 
 	// find the last match
 	int nLastPos = 0;
+	int nFoundEnd = 0;
 	do {
 		nLastPos = pRegexMatcher->start( nIcuErr);
-	} while( pRegexMatcher->find( nLastPos + 1, nIcuErr));
+		nFoundEnd = pRegexMatcher->end( nIcuErr);
+		if( nFoundEnd >= startPos)
+			break;
+		if( nFoundEnd == nLastPos)
+			++nFoundEnd;
+	} while( pRegexMatcher->find( nFoundEnd, nIcuErr));
 
 	// find last match again to get its details
 	pRegexMatcher->find( nLastPos, nIcuErr);
