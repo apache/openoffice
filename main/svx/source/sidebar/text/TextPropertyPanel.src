@@ -278,107 +278,107 @@ Control RID_SIDEBAR_TEXT_PANEL
 	
 	Image IMG_INCREASE
 	{
-		ImageBitmap = Bitmap{File = "enlarge font.png";};
+		ImageBitmap = Bitmap{File = "symphony/enlarge font.png";};
 	//	MaskColor = IMAGE_MASK_COLOR;
 	};
 	Image IMG_INCREASE_H
 	{
-		ImageBitmap = Bitmap{File = "enlarge font.png";};
+		ImageBitmap = Bitmap{File = "symphony/enlarge font.png";};
 	};
 	Image IMG_DECREASE
 	{
-		ImageBitmap = Bitmap{File = "decrease font.png";};
+		ImageBitmap = Bitmap{File = "symphony/decrease font.png";};
 	};
 	Image IMG_DECREASE_H
 	{
-		ImageBitmap = Bitmap{File = "decrease font.png";};
+		ImageBitmap = Bitmap{File = "symphony/decrease font.png";};
 	};
 	Image IMG_BOLD
 	{
-		ImageBitmap = Bitmap{File = "sc_bold.png";};//sc_bold.bmp
+		ImageBitmap = Bitmap{File = "symphony/sc_bold.png";};//sc_bold.bmp
 	};
 	Image IMG_BOLD_H
 	{
-		ImageBitmap = Bitmap{File = "sc_bold.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_bold.png";};
 	};
 	Image IMG_ITALIC
 	{
-		ImageBitmap = Bitmap{File = "sc_italic.png";};//sc_italic.bmp
+		ImageBitmap = Bitmap{File = "symphony/sc_italic.png";};//sc_italic.bmp
 	};
 	Image IMG_ITALIC_H
 	{
-		ImageBitmap = Bitmap{File = "sc_italic.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_italic.png";};
 	};
 	Image IMG_UNDERLINE
 	{
-		ImageBitmap = Bitmap{File = "sc_underline.png";};//sc_underline.png
+		ImageBitmap = Bitmap{File = "symphony/sc_underline.png";};//sc_underline.png
 	};
 	Image IMG_UNDERLINE_H
 	{
-		ImageBitmap = Bitmap{File = "sc_underline.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_underline.png";};
 	};
 
 	Image IMG_STRIKEOUT
 	{
-		ImageBitmap = Bitmap{File = "sc_strikeout.png";};//sc_strikeout.png
+		ImageBitmap = Bitmap{File = "symphony/sc_strikeout.png";};//sc_strikeout.png
 	};
 	Image IMG_STRIKEOUT_H
 	{
-		ImageBitmap = Bitmap{File = "sc_strikeout.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_strikeout.png";};
 	};
 	Image IMG_SHADOWED
 	{
-		ImageBitmap = Bitmap{File = "sc_shadowed.png";};//sc_shadowed.png
+		ImageBitmap = Bitmap{File = "symphony/sc_shadowed.png";};//sc_shadowed.png
 	};
 	Image IMG_SHADOWED_H
 	{
-		ImageBitmap = Bitmap{File = "sc_shadowed.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_shadowed.png";};
 	};
 	Image IMG_FONTCOLOR
 	{
-		ImageBitmap = Bitmap{File = "sc_color.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_color.png";};
 	};
 	Image IMG_FONTCOLOR_H
 	{
-		ImageBitmap = Bitmap{File = "sc_color.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_color.png";};
 	};
 	Image IMG_SUPSCRIPT
 	{
-		ImageBitmap = Bitmap{File = "sc_superscript.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_superscript.png";};
 	};
 	Image IMG_SUPSCRIPT_H
 	{
-		ImageBitmap = Bitmap{File = "sc_superscript.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_superscript.png";};
 	};
 	Image IMG_SUBSCRIPT
 	{
-		ImageBitmap = Bitmap{File = "sc_subscript.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_subscript.png";};
 	};
 	Image IMG_SUBSCRIPT_H
 	{
-		ImageBitmap = Bitmap{File = "sc_subscript.png";};
+		ImageBitmap = Bitmap{File = "symphony/sc_subscript.png";};
 	};
 //	Image IMG_SPACING
 //	{
-//		ImageBitmap = Bitmap{File = "icon_normal.png";};
+//		ImageBitmap = Bitmap{File = "symphony/icon_normal.png";};
 //	};
 //	Image IMG_SPACING_H
 //	{
-//		ImageBitmap = Bitmap{File = "icon_normal.png";};
+//		ImageBitmap = Bitmap{File = "symphony/icon_normal.png";};
 //	};
 	Image IMG_HIGHLIGHT
 	{
-		ImageBitmap = Bitmap{File = "Highlight.png";};//sc_backcolor
+		ImageBitmap = Bitmap{File = "symphony/Highlight.png";};//sc_backcolor
 	};
 	Image IMG_HIGHLIGHT_H
 	{
-		ImageBitmap = Bitmap{File = "Highlight.png";};
+		ImageBitmap = Bitmap{File = "symphony/Highlight.png";};
 	};
 	
 	//small icon for spacing
 	Image IMG_SPACING_D
 	{
-		ImageBitmap = Bitmap{File = "icon_normal.png";};
+		ImageBitmap = Bitmap{File = "symphony/icon_normal.png";};
 	};
 };
 
@@ -412,137 +412,137 @@ Control RID_POPUPPANEL_TEXTPAGE_UNDERLINE
 	
 	Image IMG_SINGLE
 	{
-		ImageBitmap = Bitmap{File = "line1.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line1.bmp";};
 	};
 	Image IMG_DOUBLE
 	{
-		ImageBitmap = Bitmap{File = "line2.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line2.bmp";};
 	};
 	Image IMG_BOLD2
 	{
-		ImageBitmap = Bitmap{File = "line3.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line3.bmp";};
 	};
 	Image IMG_DOT
 	{
-		ImageBitmap = Bitmap{File = "line4.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line4.bmp";};
 	};
 	Image IMG_DOT_BOLD
 	{
-		ImageBitmap = Bitmap{File = "line5.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line5.bmp";};
 	};
 	Image IMG_DASH
 	{
-		ImageBitmap = Bitmap{File = "line6.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line6.bmp";};
 	};
 	Image IMG_DASH_LONG
 	{
-		ImageBitmap = Bitmap{File = "line7.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line7.bmp";};
 	};
 	Image IMG_DASH_DOT
 	{
-		ImageBitmap = Bitmap{File = "line8.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line8.bmp";};
 	};
 	Image IMG_DASH_DOT_DOT
 	{
-		ImageBitmap = Bitmap{File = "line9.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line9.bmp";};
 	};
 	Image IMG_WAVE
 	{
-		ImageBitmap = Bitmap{File = "line10.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line10.bmp";};
 	};
 	
 	//high contract
 	Image IMG_SINGLE_H
 	{
-		ImageBitmap = Bitmap{File = "line1_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line1_h.bmp";};
 	};
 	Image IMG_DOUBLE_H
 	{
-		ImageBitmap = Bitmap{File = "line2_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line2_h.bmp";};
 	};
 	Image IMG_BOLD2_H
 	{
-		ImageBitmap = Bitmap{File = "line3_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line3_h.bmp";};
 	};
 	Image IMG_DOT_H
 	{
-		ImageBitmap = Bitmap{File = "line4_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line4_h.bmp";};
 	};
 	Image IMG_DOT_BOLD_H
 	{
-		ImageBitmap = Bitmap{File = "line5_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line5_h.bmp";};
 	};
 	Image IMG_DASH_H
 	{
-		ImageBitmap = Bitmap{File = "line6_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line6_h.bmp";};
 	};
 	Image IMG_DASH_LONG_H
 	{
-		ImageBitmap = Bitmap{File = "line7_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line7_h.bmp";};
 	};
 	Image IMG_DASH_DOT_H
 	{
-		ImageBitmap = Bitmap{File = "line8_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line8_h.bmp";};
 	};
 	Image IMG_DASH_DOT_DOT_H
 	{
-		ImageBitmap = Bitmap{File = "line9_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line9_h.bmp";};
 	};
 	Image IMG_WAVE_H
 	{
-		ImageBitmap = Bitmap{File = "line10_h.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/line10_h.bmp";};
 	};
 	
 	//image when selected
 	Image IMG_SINGLE_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line1.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line1.bmp";};
 	};
 	Image IMG_DOUBLE_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line2.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line2.bmp";};
 	};
 	Image IMG_BOLD2_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line3.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line3.bmp";};
 	};
 	Image IMG_DOT_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line4.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line4.bmp";};
 	};
 	Image IMG_DOT_BOLD_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line5.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line5.bmp";};
 	};
 	Image IMG_DASH_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line6.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line6.bmp";};
 	};
 	Image IMG_DASH_LONG_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line7.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line7.bmp";};
 	};
 	Image IMG_DASH_DOT_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line8.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line8.bmp";};
 	};
 	Image IMG_DASH_DOT_DOT_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line9.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line9.bmp";};
 	};
 	Image IMG_WAVE_SEL
 	{
-		ImageBitmap = Bitmap{File = "selected-line10.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/selected-line10.bmp";};
 	};
 	
 	//more button bmps
 	Bitmap	BMP_UNDERLINE_MORE
 	{
-		File = "morebutton.bmp";
+		File = "symphony/morebutton.bmp";
 	};
 	Bitmap	BMP_UNDERLINE_MORE_H
 	{
-		File = "morebutton_h.bmp";
+		File = "symphony/morebutton_h.bmp";
 	};	
 	
 	//tips 
@@ -692,53 +692,53 @@ Control RID_POPUPPANEL_TEXTPAGE_SPACING
 	
 	Image IMG_NORMAL
 	{
-		ImageBitmap = Bitmap{File = "spacing_normal.bmp" ;};//"spacing_normal.bmp"
+		ImageBitmap = Bitmap{File = "symphony/spacing_normal.bmp" ;};//"spacing_normal.bmp"
 	};
 	Image IMG_VERY_TIGHT
 	{
-		ImageBitmap = Bitmap{File = "spacing_very tight.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_very tight.bmp";};
 	};
 	Image IMG_TIGHT
 	{
-		ImageBitmap = Bitmap{File = "spacing_tight.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_tight.bmp";};
 	};
 	Image IMG_LOOSE
 	{
-		ImageBitmap = Bitmap{File = "spacing_loose.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_loose.bmp";};
 	};
 	Image IMG_VERY_LOOSE
 	{
-		ImageBitmap = Bitmap{File = "spacing_very loose.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_very loose.bmp";};
 	};
 	
 	Image IMG_NORMAL_S
 	{
-		ImageBitmap = Bitmap{File = "spacing_normal_s.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_normal_s.bmp";};
 	};
 	Image IMG_VERY_TIGHT_S
 	{
-		ImageBitmap = Bitmap{File = "spacing_very tight_s.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_very tight_s.bmp";};
 	};
 	Image IMG_TIGHT_S
 	{
-		ImageBitmap = Bitmap{File = "spacing_tight_s.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_tight_s.bmp";};
 	};
 	Image IMG_LOOSE_S
 	{
-		ImageBitmap = Bitmap{File = "spacing_loose_s.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_loose_s.bmp";};
 	};
 	Image IMG_VERY_LOOSE_S
 	{
-		ImageBitmap = Bitmap{File = "spacing_very loose_s.bmp";};
+		ImageBitmap = Bitmap{File = "symphony/spacing_very loose_s.bmp";};
 	};
 	
 	Image IMG_CUSTOM
 	{
-		ImageBitmap = Bitmap{File = "last_custom_common.png";};
+		ImageBitmap = Bitmap{File = "symphony/last_custom_common.png";};
 	};
 	Image IMG_CUSTOM_GRAY
 	{
-		ImageBitmap = Bitmap{File = "last_custom_common_grey.png";};
+		ImageBitmap = Bitmap{File = "symphony/last_custom_common_grey.png";};
 	};
 	
 	String STR_VERY_TIGHT
