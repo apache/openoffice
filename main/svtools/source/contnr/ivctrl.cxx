@@ -133,9 +133,6 @@ SvtIconChoiceCtrl::SvtIconChoiceCtrl( Window* pParent, WinBits nWinStyle ) :
 	_pImp->SetGrid( Size( 100, 70 ) );
 	_pImp->InitSettings();
 	_pImp->SetPositionMode( IcnViewPositionModeAutoArrange );
-//IAccessibility2 Implementation 2009-----
-	bCanBeFocused = sal_True;
-//-----IAccessibility2 Implementation 2009
 }
 
 SvtIconChoiceCtrl::SvtIconChoiceCtrl( Window* pParent, const ResId& rResId ) :
@@ -151,9 +148,6 @@ SvtIconChoiceCtrl::SvtIconChoiceCtrl( Window* pParent, const ResId& rResId ) :
 	_pImp->SetGrid( Size( 100, 70 ) );
 	_pImp->InitSettings();
 	_pImp->SetPositionMode( IcnViewPositionModeAutoArrange );
-//IAccessibility2 Implementation 2009-----
-	bCanBeFocused = sal_True;
-//-----IAccessibility2 Implementation 2009
 }
 
 SvtIconChoiceCtrl::~SvtIconChoiceCtrl()
@@ -312,13 +306,6 @@ void SvtIconChoiceCtrl::VisibleRectChanged()
 
 void SvtIconChoiceCtrl::GetFocus()
 {
-//IAccessibility2 Implementation 2009-----
-	if( !bCanBeFocused ) 
-	{
-		bCanBeFocused = sal_True;		
-		return;
-	}
-//-----IAccessibility2 Implementation 2009
 	_pImp->GetFocus();
 	Control::GetFocus();
 	sal_uLong nPos;
