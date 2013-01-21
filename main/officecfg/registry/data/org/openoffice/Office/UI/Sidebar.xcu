@@ -29,4 +29,61 @@
     xmlns:oor="http://openoffice.org/2001/registry"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <node oor:name="Content">
+    	<node oor:name="DeckList">
+			<node oor:name="PropertyDeck" oor:op="replace">
+	        	<prop oor:name="Title" oor:type="xs:string">
+                	<value xml:lang="en-US">Properties</value>
+            	</prop>
+            	<prop oor:name="Id" oor:type="xs:string">
+                	<value>PropertyDeck</value>
+            	</prop>
+            	<prop oor:name="IconURL" oor:type="xs:string">
+                	<value>.uno:Config</value>
+            	</prop>
+            	<prop oor:name="HighContrastIconURL" oor:type="xs:string">
+                	<value>.uno:Config</value>
+            	</prop>
+            	<node oor:name="ContextList">
+            		<node oor:name="context1" oor:op="replace">
+            			<prop oor:name="Application" oor:type="xs:string">
+            		    	<value>any</value>
+            			</prop>
+            			<prop oor:name="ApplicationContext" oor:type="xs:string">
+            		    	<value>any</value>
+            			</prop>
+                	</node>
+            	</node>
+          	</node>
+	    </node>
+    	<node oor:name="PanelList">
+			<node oor:name="TextPropertyPanel" oor:op="replace">
+	        	<prop oor:name="Title" oor:type="xs:string">
+                	<value xml:lang="en-US">Text Properties</value>
+            	</prop>
+            	<prop oor:name="Id" oor:type="xs:string">
+                	<value>TextPropertyPanel</value>
+            	</prop>
+            	<prop oor:name="DeckId" oor:type="xs:string">
+                	<value>PropertyDeck</value>
+            	</prop>
+            	<node oor:name="ContextList">
+            		<node oor:name="context1" oor:op="replace">
+            			<prop oor:name="Application" oor:type="xs:string">
+            		    	<value>any</value>
+            			</prop>
+            			<prop oor:name="ApplicationContext" oor:type="xs:string">
+            		    	<value>any</value>
+            			</prop>
+                	</node>
+            	</node>
+            	<prop oor:name="Layout" oor:type="xs:string">
+                	<value>vertical-stack</value>
+            	</prop>
+            	<prop oor:name="ImplementationURL" oor:type="xs:string">
+            		<value>private:resource/toolpanel/SvxPanelFactory/TextPropertyPanel</value>
+            	</prop>
+        	</node>
+    	</node>
+    </node>
 </oor:component-data>

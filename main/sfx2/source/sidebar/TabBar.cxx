@@ -23,17 +23,16 @@
 
 #include "TabBar.hxx"
 #include "TabItem.hxx"
-#include "ControlFactory.hxx"
+#include "sfx2/sidebar/ControlFactory.hxx"
 #include "DeckDescriptor.hxx"
 #include "Paint.hxx"
-#include "Theme.hxx"
-#include "sfx2/imagemgr.hxx"
+#include "sfx2/sidebar/Theme.hxx"
+#include "Tools.hxx"
 
 #include <vcl/gradient.hxx>
 #include <vcl/image.hxx>
 #include <comphelper/processfactory.hxx>
 #include <comphelper/componentcontext.hxx>
-#include <comphelper/namedvaluecollection.hxx>
 #include <tools/SvBorder.hxx>
 
 #include <com/sun/star/graphic/XGraphicProvider.hpp>
@@ -43,8 +42,6 @@ using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 
 
-
-#define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
 
 namespace sfx2 { namespace sidebar {
@@ -61,16 +58,18 @@ TabBar::TabBar (
       maDeckActivationFunctor(rDeckActivationFunctor),
       maPopupMenuProvider(rPopupMenuProvider)
 {
-    SetBackground(Theme::GetTabBarBackground().GetWallpaper());
+    SetBackground(Theme::GetPaint(Theme::Paint_TabBarBackground).GetWallpaper());
     
     mpMenuButton->SetHelpText(A2S("This is the menu button"));
     mpMenuButton->SetQuickHelpText(A2S("This is the menu button"));
     mpMenuButton->SetModeImage(
-        Theme::GetMenuImage(),
+        Theme::GetImage(Theme::Image_Menu),
         Theme::IsHighContrastMode()
             ? BMP_COLOR_HIGHCONTRAST
             : BMP_COLOR_NORMAL);
     mpMenuButton->SetClickHdl(LINK(this, TabBar, OnToolboxClicked));
+
+    EnableClipSiblings();
 }
 
 
@@ -88,8 +87,8 @@ void TabBar::Paint (const Rectangle& rUpdateArea)
     Window::Paint(rUpdateArea);
 
     const sal_Int32 nVerticalPadding (Theme::GetTabMenuPadding());
-    const sal_Int32 nHorizontalPadding (Theme::GetTabMenuSeparatorPadding());
-    SetLineColor(Theme::GetTabMenuSeparatorColor());
+    const sal_Int32 nHorizontalPadding (Theme::GetInteger(Theme::Int_TabMenuSeparatorPadding));
+    SetLineColor(Theme::GetColor(Theme::Color_TabMenuSeparator));
     DrawLine(
         Point(nHorizontalPadding, mnMenuSeparatorY),
         Point(GetSizePixel().Width()-nHorizontalPadding, mnMenuSeparatorY));
@@ -100,8 +99,9 @@ void TabBar::Paint (const Rectangle& rUpdateArea)
 
 sal_Int32 TabBar::GetDefaultWidth (void)
 {
-    const SvBorder aPadding (Theme::GetTabBarPadding());
-    return Theme::GetTabItemSize().Width() + aPadding.Left() + aPadding.Right();
+    return Theme::GetInteger(Theme::Int_TabItemWidth)
+        + Theme::GetInteger(Theme::Int_TabBarLeftPadding)
+        + Theme::GetInteger(Theme::Int_TabBarRightPadding);
 }
 
 
@@ -154,7 +154,7 @@ void TabBar::UpdateButtonIcons (void)
             ? BMP_COLOR_HIGHCONTRAST
             : BMP_COLOR_NORMAL);
     
-    mpMenuButton->SetModeImage(Theme::GetMenuImage(), eColorMode);
+    mpMenuButton->SetModeImage(Theme::GetImage(Theme::Image_Menu), eColorMode);
 
     for(ItemContainer::const_iterator
             iItem(maItems.begin()), iEnd(maItems.end());
@@ -172,18 +172,25 @@ void TabBar::UpdateButtonIcons (void)
 
 void TabBar::Layout (void)
 {
-    const SvBorder aPadding (Theme::GetTabBarPadding());
+    const SvBorder aPadding (
+        Theme::GetInteger(Theme::Int_TabBarLeftPadding),
+        Theme::GetInteger(Theme::Int_TabBarTopPadding),
+        Theme::GetInteger(Theme::Int_TabBarRightPadding),
+        Theme::GetInteger(Theme::Int_TabBarBottomPadding));
     sal_Int32 nX (aPadding.Top());
     sal_Int32 nY (aPadding.Left());
+    const Size aTabItemSize (
+        Theme::GetInteger(Theme::Int_TabItemWidth),
+        Theme::GetInteger(Theme::Int_TabItemHeight));
 
     if (mpMenuButton != NULL)
     {
         mpMenuButton->SetPosSizePixel(
             Point(nX,nY),
-            Theme::GetTabItemSize());
+            aTabItemSize);
         mpMenuButton->Show();
-        nY += mpMenuButton->GetSizePixel().Height() + 1 + Theme::GetTabMenuPadding();
-        mnMenuSeparatorY = nY - Theme::GetTabMenuPadding()/2 - 1;
+        nY += mpMenuButton->GetSizePixel().Height() + 1 + Theme::GetInteger(Theme::Int_TabMenuPadding);
+        mnMenuSeparatorY = nY - Theme::GetInteger(Theme::Int_TabMenuPadding)/2 - 1;
     }
     
     for(ItemContainer::const_iterator
@@ -199,7 +206,7 @@ void TabBar::Layout (void)
         // Place and size the icon.
         rButton.SetPosSizePixel(
             Point(nX,nY),
-            Theme::GetTabItemSize());
+            aTabItemSize);
         rButton.Show();
         
         nY += rButton.GetSizePixel().Height() + 1 + aPadding.Bottom();
@@ -256,44 +263,10 @@ RadioButton* TabBar::CreateTabItem (const DeckDescriptor& rDeckDescriptor)
 
 Image TabBar::GetItemImage (const DeckDescriptor& rDeckDescriptor) const
 {
-    const bool bIsHighContrastModeActive (Theme::IsHighContrastMode());
-    const ::rtl::OUString sIconURL (
-        bIsHighContrastModeActive
-            ? rDeckDescriptor.msHighContrastIconURL
-            : rDeckDescriptor.msIconURL);
-    if (sIconURL.getLength() > 0)
-    {
-        static const sal_Char* sCommandImagePrefix = "private:commandimage/";
-        static const sal_Int32 nCommandImagePrefixLen = strlen(sCommandImagePrefix);
-        if (sIconURL.compareToAscii(sCommandImagePrefix, nCommandImagePrefixLen) == 0)
-        {
-            ::rtl::OUStringBuffer aCommandName;
-            aCommandName.appendAscii(".uno:");
-            aCommandName.append(sIconURL.copy(nCommandImagePrefixLen));
-            const ::rtl::OUString sCommandName (aCommandName.makeStringAndClear());
-            
-            const Image aPanelImage (GetImage(mxFrame, sCommandName, sal_False, bIsHighContrastModeActive));
-            return aPanelImage;
-        }
-        else
-        {
-            const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
-            const Reference<graphic::XGraphicProvider> xGraphicProvider (
-                aContext.createComponent("com.sun.star.graphic.GraphicProvider"),
-                UNO_QUERY);
-            if ( xGraphicProvider.is())
-            {
-                ::comphelper::NamedValueCollection aMediaProperties;
-                aMediaProperties.put("URL", sIconURL);
-                const Reference<graphic::XGraphic> xGraphic (
-                    xGraphicProvider->queryGraphic(aMediaProperties.getPropertyValues()),
-                    UNO_QUERY);
-                if (xGraphic.is())
-                    return Image(xGraphic);
-            }
-        }
-    }
-    return Image();
+    return Tools::GetImage(
+        rDeckDescriptor.msIconURL,
+        rDeckDescriptor.msHighContrastIconURL,
+        mxFrame);
 }
 
 

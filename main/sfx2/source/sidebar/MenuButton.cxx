@@ -25,7 +25,7 @@
 
 #include "DrawHelper.hxx"
 #include "Paint.hxx"
-#include "Theme.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -39,7 +39,6 @@ MenuButton::MenuButton (Window* pParentWindow)
       mbIsLeftButtonDown(false),
       mePaintType(PT_Theme)
 {
-    SetBackground(Theme::GetTabBarBackground().GetWallpaper());
 }
 
 
@@ -65,8 +64,8 @@ void MenuButton::Paint (const Rectangle& rUpdateArea)
                 *this,
                 Rectangle(Point(0,0), GetSizePixel()),
                 2,
-                bIsMouseOver||bIsSelected ? Theme::GetTabItemBorderColor() : Color(0xffffffff),
-                bIsMouseOver ? Theme::GetTabItemBackgroundPaint() : sidebar::Paint());
+                bIsMouseOver||bIsSelected ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
+                bIsMouseOver ? Theme::GetPaint(Theme::Paint_TabItemBackground) : sidebar::Paint());
         
             const Image aIcon (Button::GetModeImage(Theme::IsHighContrastMode()
                     ? BMP_COLOR_HIGHCONTRAST

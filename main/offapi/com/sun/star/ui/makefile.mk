@@ -74,6 +74,7 @@ IDLFILES=\
     XImageManager.idl                           \
     XModuleUIConfigurationManager.idl           \
     XModuleUIConfigurationManagerSupplier.idl   \
+	XSidebarPanel.idl							\
     XUIConfiguration.idl                        \
     XUIConfigurationListener.idl                \
     XUIConfigurationManager.idl                 \

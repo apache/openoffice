@@ -22,7 +22,7 @@
 #include "precompiled_sfx2.hxx"
 
 #include "DeckTitleBar.hxx"
-#include "Theme.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 
 namespace sfx2 { namespace sidebar {
 
@@ -49,7 +49,7 @@ DeckTitleBar::~DeckTitleBar (void)
 
 Rectangle DeckTitleBar::GetTitleArea (const Rectangle& rTitleBarBox)
 {
-    Image aGripImage (Theme::GetExpandImage());
+    Image aGripImage (Theme::GetImage(Theme::Image_Grip));
     return Rectangle(
         aGripImage.GetSizePixel().Width() + gaLeftGripPadding + gaRightGripPadding,
         rTitleBarBox.Top(),
@@ -62,7 +62,9 @@ Rectangle DeckTitleBar::GetTitleArea (const Rectangle& rTitleBarBox)
 
 void DeckTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
 {
-    Image aGripImage (Theme::GetGripImage());
+    (void)rTitleBarBox;
+    
+    Image aGripImage (Theme::GetImage(Theme::Image_Grip));
 
     const Point aTopLeft (
         gaLeftGripPadding,
@@ -75,7 +77,7 @@ void DeckTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
 
 sidebar::Paint DeckTitleBar::GetBackgroundPaint (void)
 {
-    return Theme::GetDeckTitleBackground();
+    return Theme::GetPaint(Theme::Paint_DeckTitleBarBackground);
 }
 
 
@@ -83,7 +85,7 @@ sidebar::Paint DeckTitleBar::GetBackgroundPaint (void)
 
 Color DeckTitleBar::GetTextColor (void)
 {
-    return Theme::GetDeckTitleFontColor();
+    return Theme::GetColor(Theme::Color_DeckTitleFont);
 }
 
 

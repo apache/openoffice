@@ -36,7 +36,7 @@ namespace framework {
 
 
 ContextChangeEventMultiplexer::ContextChangeEventMultiplexer (
-    const cssu::Reference<css::uno::XComponentContext>& rxContext)
+    const cssu::Reference<cssu::XComponentContext>& rxContext)
     : ContextChangeEventMultiplexerInterfaceBase(m_aMutex),
       maListeners()
 {
@@ -48,7 +48,30 @@ ContextChangeEventMultiplexer::ContextChangeEventMultiplexer (
 
 ContextChangeEventMultiplexer::~ContextChangeEventMultiplexer (void)
 {
-    maListeners.clear();
+}
+
+
+
+
+void SAL_CALL ContextChangeEventMultiplexer::disposing (void)
+{
+    ListenerMap aListeners;
+    aListeners.swap(maListeners);
+
+    css::lang::EventObject aEvent (cssu::Reference<cssu::XInterface>(static_cast<XWeak*>(this)));
+    for (ListenerMap::const_iterator iContainer(aListeners.begin()), iEnd(aListeners.end());
+         iContainer!=iEnd;
+         ++iContainer)
+    {
+        for (ListenerContainer::const_iterator
+                 iListener(iContainer->second.begin()),
+                 iContainerEnd(iContainer->second.end());
+             iListener!=iContainerEnd;
+             ++iListener)
+        {
+            (*iListener)->disposing(aEvent);
+        }
+    }
 }
 
 
@@ -107,7 +130,15 @@ void SAL_CALL ContextChangeEventMultiplexer::removeContextChangeEventListener (
         ListenerContainer& rContainer (iListenerContainer->second);
         const ListenerContainer::iterator iListener (::std::find(rContainer.begin(), rContainer.end(), rxListener));
         if (iListener != rContainer.end())
+        {
             rContainer.erase(iListener);
+
+            // Remove the listener container as well when its last
+            // listener was just removed.  This prevents us from
+            // holding the focus alive.
+            if (rContainer.empty())
+                maListeners.erase(iListenerContainer);
+        }
     }
  
 }
@@ -122,6 +153,7 @@ void SAL_CALL ContextChangeEventMultiplexer::removeAllContextChangeEventListener
     if ( ! rxListener.is())
         throw cssl::IllegalArgumentException(A2S("can not remove an empty reference"), static_cast<XWeak*>(this), 0);
 
+    ::std::vector<cssu::Reference<cssu::XInterface> > aContainersToRemove;
     for (ListenerMap::iterator
              iContainer(maListeners.begin()),
              iEnd(maListeners.end());
@@ -130,7 +162,23 @@ void SAL_CALL ContextChangeEventMultiplexer::removeAllContextChangeEventListener
     {
         const ListenerContainer::iterator iListener (::std::find(iContainer->second.begin(), iContainer->second.end(), rxListener));
         if (iListener != iContainer->second.end())
+        {
             iContainer->second.erase(iListener);
+
+            // When we just removed the last listener then mark the
+            // container as to be removed.
+            if (iContainer->second.empty())
+                aContainersToRemove.push_back(iContainer->first);
+        }
+    }
+
+    for (::std::vector<cssu::Reference<cssu::XInterface> >::iterator
+             iFocus(aContainersToRemove.begin()),
+             iEnd(aContainersToRemove.end());
+         iFocus!=iEnd;
+         ++iFocus)
+    {
+        maListeners.erase(*iFocus);
     }
 }
 

@@ -24,7 +24,7 @@
 #include "Panel.hxx"
 #include "PanelTitleBar.hxx"
 #include "PanelDescriptor.hxx"
-#include "Theme.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 #include "Paint.hxx"
 
 #include <tools/svborder.hxx>
@@ -55,24 +55,8 @@ Panel::Panel (
       mbIsExpanded(true),
       maDeckLayoutTrigger(rDeckLayoutTrigger)
 {
-    const sidebar::Paint aPaint (Theme::GetPanelBackground());
-    switch(aPaint.GetType())
-    {
-        case Paint::NoPaint:
-        default:
-            SetBackground();
-            break;
-
-        case Paint::ColorPaint:
-        {
-            const Color aColor (aPaint.GetColor());
-            SetBackground(Wallpaper(aColor));
-            break;
-        }
-        case Paint::GradientPaint:
-            SetBackground(Wallpaper(aPaint.GetGradient()));
-            break;
-    }
+    SetBackground(Theme::GetPaint(Theme::Paint_PanelBackground).GetWallpaper());
+    AddEventListener(LINK(this,Panel,WindowEventHandler));
 }
 
 
@@ -136,12 +120,7 @@ void Panel::SetUIElement (const Reference<ui::XUIElement>& rxElement)
     {
         Reference<ui::XToolPanel> xToolPanel(mxElement->getRealInterface(), UNO_QUERY);
         if (xToolPanel.is())
-        {
             mxElementWindow = xToolPanel->getWindow();
-            Reference<awt::XWindowPeer> xPeer (mxElementWindow, UNO_QUERY);
-            if (xPeer.is())
-                xPeer->setBackground(0x00000000);
-        }
 
         if (msLayoutHint.equalsAscii(VerticalStackLayouterName))
             mxVerticalStackLayoutElement.set(mxElement->getRealInterface(), UNO_QUERY);
@@ -186,10 +165,33 @@ void Panel::SetPosSizePixel (
     long nHeight,
     sal_uInt16 nFlags)
 {
+    maBoundingBox = Rectangle(Point(nX,nY),Size(nWidth,nHeight));
+    
+    if ( ! IsReallyVisible())
+        return;
+
     Window::SetPosSizePixel(nX, nY, nWidth, nHeight, nFlags);
 
     if (mxElementWindow.is())
         mxElementWindow->setPosSize(0, 0, nWidth, nHeight, nFlags);
+}
+
+
+
+
+void Panel::Activate (void)
+{
+    Window::Activate();
+}
+
+
+
+
+
+void Panel::DataChanged (const DataChangedEvent& rEvent)
+{
+    (void)rEvent;
+    SetBackground(Theme::GetPaint(Theme::Paint_PanelBackground).GetWallpaper());
 }
 
 
@@ -200,5 +202,31 @@ Reference<ui::XVerticalStackLayoutElement> Panel::GetVerticalStackElement (void)
     return mxVerticalStackLayoutElement;
 }
 
-    
+
+
+
+IMPL_LINK(Panel, WindowEventHandler, VclWindowEvent*, pEvent)
+{
+    if (pEvent != NULL)
+    {
+        switch (pEvent->GetId())
+        {
+            case VCLEVENT_WINDOW_SHOW:
+            case VCLEVENT_WINDOW_RESIZE:
+                SetPosSizePixel(
+                    maBoundingBox.Left(),
+                    maBoundingBox.Top(),
+                    maBoundingBox.GetWidth(),
+                    maBoundingBox.GetHeight());
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    return sal_True;
+}
+
+
 } } // end of namespace sfx2::sidebar

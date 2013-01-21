@@ -25,13 +25,15 @@
 #include "Deck.hxx"
 #include "DeckConfiguration.hxx"
 #include "Panel.hxx"
+#include "SidebarPanel.hxx"
 #include "SidebarResource.hxx"
 #include "TitleBar.hxx"
 #include "TabBar.hxx"
-#include "Theme.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 
 #include "sfxresid.hxx"
 #include "sfx2/sfxsids.hrc"
+#include "sfx2/dockwin.hxx"
 #include "sfxlocal.hrc"
 #include <vcl/floatwin.hxx>
 #include <vcl/dockwin.hxx>
@@ -99,6 +101,11 @@ SidebarController::SidebarController (
 
     // Listen for window events.
     mpParentWindow->AddEventListener(LINK(this, SidebarController, WindowEventHandler));
+
+    // Listen for theme property changes.
+    Theme::GetPropertySet()->addPropertyChangeListener(
+        A2S(""),
+        static_cast<css::beans::XPropertyChangeListener*>(this));
 }
 
 
@@ -125,6 +132,16 @@ void SAL_CALL SidebarController::disposing (void)
         mpParentWindow->RemoveEventListener(LINK(this, SidebarController, WindowEventHandler));
         mpParentWindow = NULL;
     }
+
+    if (mpCurrentConfiguration)
+    {
+        mpCurrentConfiguration->Disable();
+        mpCurrentConfiguration.reset();
+    }
+
+    Theme::GetPropertySet()->removePropertyChangeListener(
+        A2S(""),
+        static_cast<css::beans::XPropertyChangeListener*>(this));
 }
 
 
@@ -153,6 +170,17 @@ void SAL_CALL SidebarController::disposing (const css::lang::EventObject& rEvent
         delete mpTabBar;
         mpTabBar = NULL;
     }
+}
+
+
+
+
+void SAL_CALL SidebarController::propertyChange (const css::beans::PropertyChangeEvent& rEvent)
+    throw(cssu::RuntimeException)
+{
+    DataChangedEvent aEvent (DATACHANGED_USER);
+    mpParentWindow->NotifyAllChilds(aEvent);
+    mpParentWindow->Invalidate(INVALIDATE_CHILDREN);
 }
 
 
@@ -251,7 +279,9 @@ void SidebarController::SwitchToDeck (
         // Create the XUIElement.
         Reference<ui::XUIElement> xUIElement (CreateUIElement(
                 pPanel->GetComponentInterface(),
-                iPanel->msImplementationURL));
+                iPanel->msImplementationURL,
+                pPanel
+                ));
         if (xUIElement.is())
         {
             // Initialize the panel and add it to the active deck.
@@ -277,7 +307,8 @@ void SidebarController::SwitchToDeck (
 
 Reference<ui::XUIElement> SidebarController::CreateUIElement (
     const Reference<awt::XWindowPeer>& rxWindow,
-    const ::rtl::OUString& rsImplementationURL) const
+    const ::rtl::OUString& rsImplementationURL,
+    Panel* pPanel) const
 {
     try
     {
@@ -291,11 +322,31 @@ Reference<ui::XUIElement> SidebarController::CreateUIElement (
         ::comphelper::NamedValueCollection aCreationArguments;
         aCreationArguments.put("Frame", makeAny(mxFrame));
         aCreationArguments.put("ParentWindow", makeAny(rxWindow));
-        return Reference<ui::XUIElement>(
+        SfxDockingWindow* pSfxDockingWindow = dynamic_cast<SfxDockingWindow*>(mpParentWindow);
+        if (pSfxDockingWindow != NULL)
+            aCreationArguments.put("SfxBindings", makeAny(sal_uInt64(&pSfxDockingWindow->GetBindings())));
+        Reference<ui::XUIElement> xUIElement(
             xUIElementFactory->createUIElement(
                 rsImplementationURL,
                 aCreationArguments.getPropertyValues()),
             UNO_QUERY_THROW);
+
+        // Provide the new ui element with the XSidebarPanel object
+        // that gives access to a canvas, screen coordinates of the
+        // panel or the theme properties.
+        if (xUIElement.is())
+        {
+            Reference<lang::XInitialization> xInitialization(xUIElement->getRealInterface(), UNO_QUERY);
+            if (xInitialization.is())
+            {
+                Sequence<Any> aArguments (1);
+                Reference<ui::XSidebarPanel> xPanel (SidebarPanel::Create(pPanel));
+                aArguments[0] = Any(xPanel);
+                xInitialization->initialize(aArguments);
+            }
+        }
+        
+        return xUIElement;
     }
     catch(Exception& rException)
     {

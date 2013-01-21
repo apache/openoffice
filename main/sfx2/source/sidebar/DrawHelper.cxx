@@ -47,7 +47,7 @@ void DrawHelper::DrawBorder (
     // Draw bottom line.
     DrawHorizontalLine(
         rDevice,
-        rBox.Left(),
+        rBox.Left()+aBorderSize.Left(),
         rBox.Right(),
         rBox.Bottom()-aBorderSize.Bottom()+1,
         aBorderSize.Bottom(),
@@ -56,15 +56,15 @@ void DrawHelper::DrawBorder (
     DrawVerticalLine(
         rDevice,
         rBox.Top()+aBorderSize.Top(),
-        rBox.Bottom()-aBorderSize.Bottom()+1,
+        rBox.Bottom(),
         rBox.Left(),
         aBorderSize.Left(),
         rVerticalPaint);
     // Draw right line.
     DrawVerticalLine(
         rDevice,
-        rBox.Top(),
-        rBox.Bottom(),
+        rBox.Top()+aBorderSize.Top(),
+        rBox.Bottom()-aBorderSize.Bottom(),
         rBox.Right()-aBorderSize.Right()+1,
         aBorderSize.Right(),
         rVerticalPaint);
@@ -75,10 +75,10 @@ void DrawHelper::DrawBorder (
 
 void DrawHelper::DrawHorizontalLine(
     OutputDevice& rDevice,
-    const int nLeft,
-    const int nRight,
-    const int nY,
-    const int nHeight,
+    const sal_Int32 nLeft,
+    const sal_Int32 nRight,
+    const sal_Int32 nY,
+    const sal_Int32 nHeight,
     const Paint& rPaint)
 {
     switch (rPaint.GetType())
@@ -88,18 +88,15 @@ void DrawHelper::DrawHorizontalLine(
             break;
 
         case Paint::ColorPaint:
-            rDevice.SetLineColor(rPaint.GetColor());
-            if (nHeight == 1)
+        {
+            const Color aColor (rPaint.GetColor());
+            rDevice.SetLineColor(aColor);
+            for (sal_Int32 nYOffset=0; nYOffset<nHeight; ++nYOffset)
                 rDevice.DrawLine(
-                    Point(nLeft,nY),
-                    Point(nRight,nY));
-            else
-                rDevice.DrawLine(
-                    Point(nLeft,nY),
-                    Point(nRight,nY),
-                    LineInfo(LINE_SOLID,nHeight));
+                    Point(nLeft,nY+nYOffset),
+                    Point(nRight,nY+nYOffset));
             break;
-
+        }
         case Paint::GradientPaint:
             rDevice.DrawGradient(
                 Rectangle(
@@ -117,10 +114,10 @@ void DrawHelper::DrawHorizontalLine(
 
 void DrawHelper::DrawVerticalLine(
     OutputDevice& rDevice,
-    const int nTop,
-    const int nBottom,
-    const int nX,
-    const int nWidth,
+    const sal_Int32 nTop,
+    const sal_Int32 nBottom,
+    const sal_Int32 nX,
+    const sal_Int32 nWidth,
     const Paint& rPaint)
 {
     switch (rPaint.GetType())
@@ -130,18 +127,15 @@ void DrawHelper::DrawVerticalLine(
             break;
 
         case Paint::ColorPaint:
-            rDevice.SetLineColor(rPaint.GetColor());
-            if (nWidth == 1)
+        {
+            const Color aColor (rPaint.GetColor());
+            rDevice.SetLineColor(aColor);
+            for (sal_Int32 nXOffset=0; nXOffset<nWidth; ++nXOffset)
                 rDevice.DrawLine(
-                    Point(nX, nTop),
-                    Point(nX, nBottom));
-            else
-                rDevice.DrawLine(
-                    Point(nX, nTop),
-                    Point(nX, nBottom),
-                    LineInfo(LINE_SOLID, nWidth));
+                    Point(nX+nXOffset, nTop),
+                    Point(nX+nXOffset, nBottom));
             break;
-
+        }
         case Paint::GradientPaint:
             rDevice.DrawGradient(
                 Rectangle(
@@ -160,7 +154,7 @@ void DrawHelper::DrawVerticalLine(
 void DrawHelper::DrawRoundedRectangle (
     OutputDevice& rDevice,
     const Rectangle& rBox,
-    const int nCornerRadius,
+    const sal_Int32 nCornerRadius,
     const Color& rBorderColor,
     const Paint& rFillPaint)
 {

@@ -19,40 +19,23 @@
  * 
  *************************************************************/
 
-#include "precompiled_sfx2.hxx"
+#ifndef SFX_SIDEBAR_CONTROL_FACTORY_HXX
+#define SFX_SIDEBAR_CONTROL_FACTORY_HXX
 
-#include "sidebar/ControlFactory.hxx"
-
-#include "MenuButton.hxx"
-#include "TabItem.hxx"
-#include "SidebarToolBox.hxx"
-#include <vcl/toolbox.hxx>
-
+#include <sfx2/dllapi.h>
+#include <vcl/button.hxx>
 
 namespace sfx2 { namespace sidebar {
 
-
-CheckBox* ControlFactory::CreateMenuButton (Window* pParentWindow)
+class SFX2_DLLPUBLIC ControlFactory
 {
-    return new MenuButton(pParentWindow);
-}
+public:
+    static CheckBox* CreateMenuButton (Window* pParentWindow);
+    static ImageRadioButton* CreateTabItem (Window* pParentWindow);
+    static ToolBox* CreateToolBox (Window* pParentWindow, const ResId& rResId);
+};
 
-
-
-
-ImageRadioButton* ControlFactory::CreateTabItem (Window* pParentWindow)
-{
-    return new TabItem(pParentWindow);
-}
-
-
-
-
-ToolBox* ControlFactory::CreateToolBox (
-    Window* pParentWindow,
-    const ResId& rResId)
-{
-    return new SidebarToolBox(pParentWindow, rResId);
-}
 
 } } // end of namespace sfx2::sidebar
+
+#endif

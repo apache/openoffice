@@ -85,6 +85,7 @@
 #include <sfx2/msg.hxx>
 #include <sfx2/objface.hxx>
 #include <sfx2/viewfrm.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <svl/whiter.hxx>
 #include <comphelper/processfactory.hxx>
 #include <vcl/msgbox.hxx>
@@ -404,11 +405,6 @@ void ViewShellBase::LateInit (const ::rtl::OUString& rsDefaultView)
         if (pFrameView != NULL)
             pFrameView->SetViewShellTypeOnLoad(pViewShell->GetShellType());
     }
-
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        GetController(),
-        ContextChangeEventMultiplexer::Application_Impress,
-        ContextChangeEventMultiplexer::Context_Default);
 }
 
 
@@ -857,6 +853,11 @@ void ViewShellBase::ReadUserDataSequence (
 void ViewShellBase::Activate (sal_Bool bIsMDIActivate)
 {
     SfxViewShell::Activate(bIsMDIActivate);
+
+    
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        GetController(),
+        ::sfx2::sidebar::EnumContext::Context_Default);
 
     Reference<XControllerManager> xControllerManager (GetController(), UNO_QUERY);
     if (xControllerManager.is())

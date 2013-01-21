@@ -21,258 +21,122 @@
 
 #include "precompiled_sfx2.hxx"
 
-#include "Theme.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 #include "Paint.hxx"
 #include "SidebarResource.hxx"
+#include "Tools.hxx"
 
-#include <tools/SvBorder.hxx>
+#include <tools/svborder.hxx>
 #include <tools/rc.hxx>
 #include <vcl/svapp.hxx>
+
+using namespace css;
+using namespace cssu;
 
 
 namespace sfx2 { namespace sidebar {
 
-void InitializeTheme1 (Theme::Data& rData);
+::rtl::Reference<Theme> Theme::mpInstance;
 
-class Theme::Data
+
+
+
+Theme& Theme::GetCurrentTheme (void)
 {
-public:
-    Data (void) {}
-    void Initialize (void) { if ( ! mbIsInitialized) {InitializeTheme1(*this);mbIsInitialized=true;} }
-
-    Paint maDeckBackground;
-    Paint maDeckTitleBackground;
-    SvBorder maDeckPadding;
-    sal_Int32 mnDeckBorderSize;
-    Color maDeckTitleFontColor;
-    sal_Int32 mnDeckTitleBarHeight;
-    
-    Paint maPanelBackground;
-    Paint maPanelTitleBackground;
-    Color maPanelTitleFontColor;
-    sal_Int32 mnPanelTitleBarHeight;
-    
-    Paint maTabBarBackground;
-    SvBorder maTabBarPadding;
-
-    sal_Int32 mnTabMenuPadding;
-    Color maTabMenuSeparatorColor;
-    sal_Int32 mnTabMenuSeparatorPadding;
-
-    Size maTabItemSize;
-    Color maTabItemBorderColor;
-    Paint maTabItemBackgroundPaint;
-
-    Paint maHorizontalBorderPaint;
-    Paint maVerticalBorderPaint;
-
-    Image maGripImage;
-    Image maExpandImage;
-    Image maCollapseImage;
-    Image maMenuImage;
-
-    bool mbIsHighContrastMode;
-};
-
-
-bool Theme::mbIsInitialized (false);
-
-
-
-Theme::Data& Theme::GetCurrentTheme (void)
-{
-    static Theme::Data maData;
-    maData.Initialize();
-    return maData;
-}
-
-Paint& Theme::GetDeckBackground (void)
-{
-    return GetCurrentTheme().maDeckBackground;
+    if ( ! mpInstance.is())
+    {
+        mpInstance.set(new Theme());
+        mpInstance->InitializeTheme();
+    }
+    return *mpInstance;
 }
 
 
 
 
-Paint& Theme::GetDeckTitleBackground (void)
+Theme::Theme (void)
+    : ThemeInterfaceBase(m_aMutex),
+      maImages(),
+      maColors(),
+      maPaints(),
+      maIntegers(),
+      maBooleans(),
+      mbIsHighContrastMode(Application::GetSettings().GetStyleSettings().GetHighContrastMode()),
+      maPropertyNameToIdMap(),
+      maPropertyIdToNameMap(),
+      maRawValues(),
+      maChangeListeners(),
+      maVetoableListeners()
+
 {
-    return GetCurrentTheme().maDeckTitleBackground;
+    SetupPropertyMaps();
 }
 
 
 
 
-SvBorder& Theme::GetDeckPadding (void)
+Theme::~Theme (void)
 {
-    return GetCurrentTheme().maDeckPadding;
 }
 
 
 
 
-Color Theme::GetDeckTitleFontColor (void)
+Image Theme::GetImage (const ThemeItem eItem)
 {
-    return GetCurrentTheme().maDeckTitleFontColor;
+    const PropertyType eType (GetPropertyType(eItem));
+    OSL_ASSERT(eType==PT_Image);
+    const sal_Int32 nIndex (GetIndex(eItem, eType));
+    const Theme& rTheme (GetCurrentTheme());
+    return rTheme.maImages[nIndex];
 }
 
 
 
 
-sal_Int32 Theme::GetDeckTitleBarHeight (void)
+Color Theme::GetColor (const ThemeItem eItem)
 {
-    return GetCurrentTheme().mnDeckTitleBarHeight;
+    const PropertyType eType (GetPropertyType(eItem));
+    OSL_ASSERT(eType==PT_Color);
+    const sal_Int32 nIndex (GetIndex(eItem, eType));
+    const Theme& rTheme (GetCurrentTheme());
+    return rTheme.maColors[nIndex];
 }
 
 
 
 
-Paint& Theme::GetPanelBackground (void)
+const Paint& Theme::GetPaint (const ThemeItem eItem)
 {
-    return GetCurrentTheme().maPanelBackground;
+    const PropertyType eType (GetPropertyType(eItem));
+    OSL_ASSERT(eType==PT_Paint);
+    const sal_Int32 nIndex (GetIndex(eItem, eType));
+    const Theme& rTheme (GetCurrentTheme());
+    return rTheme.maPaints[nIndex];
 }
 
 
 
 
-Paint& Theme::GetPanelTitleBackground (void)
+sal_Int32 Theme::GetInteger (const ThemeItem eItem)
 {
-    return GetCurrentTheme().maPanelTitleBackground;
+    const PropertyType eType (GetPropertyType(eItem));
+    OSL_ASSERT(eType==PT_Integer);
+    const sal_Int32 nIndex (GetIndex(eItem, eType));
+    const Theme& rTheme (GetCurrentTheme());
+    return rTheme.maIntegers[nIndex];
 }
 
 
 
 
-Color Theme::GetPanelTitleFontColor (void)
+bool Theme::GetBoolean (const ThemeItem eItem)
 {
-    return GetCurrentTheme().maPanelTitleFontColor;
-}
-
-
-
-
-sal_Int32 Theme::GetPanelTitleBarHeight (void)
-{
-    return GetCurrentTheme().mnPanelTitleBarHeight;
-}
-
-
-
-
-Paint& Theme::GetTabBarBackground (void)
-{
-    return GetCurrentTheme().maTabBarBackground;
-}
-
-
-
-
-SvBorder& Theme::GetTabBarPadding (void)
-{
-    return GetCurrentTheme().maTabBarPadding;
-}
-
-
-
-
-sal_Int32 Theme::GetTabMenuPadding (void)
-{
-    return GetCurrentTheme().mnTabMenuPadding;
-}
-
-
-
-
-Color Theme::GetTabMenuSeparatorColor (void)
-{
-    return GetCurrentTheme().maTabMenuSeparatorColor;
-}
-
-
-
-
-sal_Int32 Theme::GetTabMenuSeparatorPadding (void)
-{
-    return GetCurrentTheme().mnTabMenuSeparatorPadding;
-}
-
-
-
-
-Size Theme::GetTabItemSize (void)
-{
-    return GetCurrentTheme().maTabItemSize;
-}
-
-
-
-
-Color Theme::GetTabItemBorderColor (void)
-{
-    return GetCurrentTheme().maTabItemBorderColor;
-}
-
-
-
-
-Paint& Theme::GetTabItemBackgroundPaint (void)
-{
-    return GetCurrentTheme().maTabItemBackgroundPaint;
-}
-
-
-
-
-Paint& Theme::GetHorizontalBorderPaint (void)
-{
-    return GetCurrentTheme().maHorizontalBorderPaint;
-}
-
-
-
-
-Paint& Theme::GetVerticalBorderPaint (void)
-{
-    return GetCurrentTheme().maVerticalBorderPaint;
-}
-
-
-
-
-sal_Int32 Theme::GetBorderSize (void)
-{
-    return GetCurrentTheme().mnDeckBorderSize;
-}
-
-
-
-
-Image Theme::GetGripImage (void)
-{
-    return GetCurrentTheme().maGripImage;
-}
-
-
-
-
-Image Theme::GetExpandImage (void)
-{
-    return GetCurrentTheme().maExpandImage;
-}
-
-
-
-
-Image Theme::GetCollapseImage (void)
-{
-    return GetCurrentTheme().maCollapseImage;
-}
-
-
-
-
-Image Theme::GetMenuImage (void)
-{
-    return GetCurrentTheme().maMenuImage;
+    const PropertyType eType (GetPropertyType(eItem));
+    OSL_ASSERT(eType==PT_Boolean);
+    const sal_Int32 nIndex (GetIndex(eItem, eType));
+    const Theme& rTheme (GetCurrentTheme());
+    return rTheme.maBooleans[nIndex];
 }
 
 
@@ -280,7 +144,8 @@ Image Theme::GetMenuImage (void)
 
 bool Theme::IsHighContrastMode (void)
 {
-    return GetCurrentTheme().mbIsHighContrastMode;
+    const Theme& rTheme (GetCurrentTheme());
+    return rTheme.mbIsHighContrastMode;
 }
 
 
@@ -288,72 +153,690 @@ bool Theme::IsHighContrastMode (void)
 
 void Theme::HandleDataChange (void)
 {
-    mbIsInitialized = false;
+    GetCurrentTheme().mbIsHighContrastMode = Application::GetSettings().GetStyleSettings().GetHighContrastMode();
+    GetCurrentTheme().InitializeTheme();
 }
 
 
 
 
-void InitializeTheme1 (Theme::Data& rData)
+void Theme::InitializeTheme (void)
 {
     SidebarResource aLocalResource;
-    
-    rData.mbIsHighContrastMode = Application::GetSettings().GetStyleSettings().GetHighContrastMode();
 
-    rData.maDeckBackground.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x000000 : 0xf0f0f0)));
-    rData.maDeckTitleBackground.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x000000 :0xf0f0f0)));
-    rData.maDeckPadding = SvBorder(2,2,2,2);
-    rData.mnDeckBorderSize = 1;
-    rData.maDeckTitleFontColor.SetColor(
-        rData.mbIsHighContrastMode ? 0x00ff00 : 0x262626);
-    rData.mnDeckTitleBarHeight = 26;
-    
-    rData.maPanelBackground.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x000000 : 0xffffff)));
-    rData.maPanelTitleBackground.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x000000 : 0xb2b2b2)));
-    rData.maPanelTitleFontColor.SetColor(
-        rData.mbIsHighContrastMode ? 0x00ff00 : 0x262626);
-    rData.mnPanelTitleBarHeight = 26;
+    try
+    {
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_DeckBackground],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xf0f0f0)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_DeckTitleBarBackground],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 :0xf0f0f0)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_DeckLeftPadding],
+            Any(sal_Int32(2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_DeckTopPadding],
+            Any(sal_Int32(2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_DeckRightPadding],
+            Any(sal_Int32(2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_DeckBottomPadding],
+            Any(sal_Int32(2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_DeckBorderSize],
+            Any(sal_Int32(1)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_DeckSeparatorHeight],
+            Any(sal_Int32(1)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Color_DeckTitleFont],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0x262626)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_DeckTitleBarHeight],
+            Any(sal_Int32(26)));
 
-    rData.maTabBarBackground.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x000000 : 0xf0f0f0)));
-    rData.maTabBarPadding = SvBorder(2,2,2,2);
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_PanelBackground],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xffffff)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_PanelTitleBarBackground],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xb2b2b2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Color_PanelTitleFont],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0x262626)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_PanelTitleBarHeight],
+            Any(sal_Int32(26)));
 
-    rData.mnTabMenuPadding = 6;
-    rData.maTabMenuSeparatorColor.SetColor(
-        rData.mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf);
-    rData.mnTabMenuSeparatorPadding = 7;
-    
-    rData.maTabItemSize = Size(32,32);
-    rData.maTabItemBorderColor.SetColor(
-        rData.mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf);
-    rData.maTabItemBackgroundPaint.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x000000 : 0xffffff)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_TabBarBackground],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xf0f0f0)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabBarLeftPadding],
+            Any(sal_Int32(2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabBarTopPadding],
+            Any(sal_Int32(2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabBarRightPadding],
+            Any(sal_Int32(2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabBarBottomPadding],
+            Any(sal_Int32(2)));
 
-    rData.maHorizontalBorderPaint.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x00ff000 : 0xd9d9d9)));
-    rData.maVerticalBorderPaint.Set(Paint(Color(
-                rData.mbIsHighContrastMode ? 0x00ff000 : 0xd9d9d9)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabMenuPadding],
+            Any(sal_Int32(6)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Color_TabMenuSeparator],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabMenuSeparatorPadding],
+            Any(sal_Int32(7)));
     
-    rData.maGripImage = Image(SfxResId(
-            rData.mbIsHighContrastMode
-                ? IMAGE_SIDEBAR_GRIP_HC
-                : IMAGE_SIDEBAR_GRIP));
-    rData.maExpandImage = Image(SfxResId(
-            rData.mbIsHighContrastMode
-                ? IMAGE_SIDEBAR_PLUS_HC
-                : IMAGE_SIDEBAR_PLUS));
-    rData.maCollapseImage = Image(SfxResId(
-            rData.mbIsHighContrastMode
-                ? IMAGE_SIDEBAR_MINUS_HC
-                : IMAGE_SIDEBAR_MINUS));
-    rData.maMenuImage = Image(SfxResId(
-            rData.mbIsHighContrastMode
-                ? IMAGE_SIDEBAR_MENU_HC
-                : IMAGE_SIDEBAR_MENU));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabItemWidth],
+            Any(sal_Int32(32)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_TabItemHeight],
+            Any(sal_Int32(32)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Color_TabItemBorder],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_TabItemBackground],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xffffff)));
+
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_HorizontalBorder],
+            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff000 : 0xd9d9d9)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_VerticalBorder],
+            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff000 : 0xd9d9d9)));
+
+        setPropertyValue(
+            maPropertyIdToNameMap[Image_Grip],
+            Any(
+                mbIsHighContrastMode
+                    ? A2S("private:graphicrepository/sfx2/res/grip_hc.png")
+                    : A2S("private:graphicrepository/sfx2/res/grip.png")));
+        setPropertyValue(
+            maPropertyIdToNameMap[Image_Expand],
+            Any(
+                mbIsHighContrastMode
+                    ? A2S("private:graphicrepository/res/plus_sch.png")
+                    : A2S("private:graphicrepository/res/plus.png")));
+        setPropertyValue(
+            maPropertyIdToNameMap[Image_Collapse],
+            Any(
+                mbIsHighContrastMode
+                    ? A2S("private:graphicrepository/res/minus_sch.png")
+                    : A2S("private:graphicrepository/res/minus.png")));
+        setPropertyValue(
+            maPropertyIdToNameMap[Image_Menu],
+            Any(
+                mbIsHighContrastMode
+                    ? A2S("private:graphicrepository/sfx2/res/menu_ch.png")
+                    : A2S("private:graphicrepository/sfx2/res/menu.png")));
+
+        setPropertyValue(
+            maPropertyIdToNameMap[Bool_UseSymphonyIcons],
+            Any(true));
+    }
+    catch(beans::UnknownPropertyException&)
+    {
+        OSL_ASSERT(false);
+    }
 }
+
+
+
+
+void SAL_CALL Theme::disposing (void)
+{
+    ChangeListeners aListeners;
+    maChangeListeners.swap(aListeners);
+
+    const lang::EventObject aEvent (static_cast<XWeak*>(this));
+    
+    for (ChangeListeners::const_iterator
+             iContainer(maChangeListeners.begin()),
+             iContainerEnd(maChangeListeners.end());
+         iContainerEnd!=iContainerEnd;
+         ++iContainerEnd)
+    {
+        for (ChangeListenerContainer::const_iterator
+                 iListener(iContainer->second.begin()),
+                 iEnd(iContainer->second.end());
+             iListener!=iEnd;
+             ++iListener)
+        {
+            try
+            {
+                (*iListener)->disposing(aEvent);
+            }
+            catch(const Exception&)
+            {
+            }
+        }
+    }
+}
+
+
+
+
+Reference<beans::XPropertySet> Theme::GetPropertySet (void)
+{
+    return Reference<beans::XPropertySet>(static_cast<XWeak*>(&GetCurrentTheme()), UNO_QUERY);
+}
+
+
+
+
+Reference<beans::XPropertySetInfo> SAL_CALL Theme::getPropertySetInfo (void)
+    throw(cssu::RuntimeException)
+{
+    return Reference<beans::XPropertySetInfo>();
+}
+
+
+
+
+void SAL_CALL Theme::setPropertyValue (
+    const ::rtl::OUString& rsPropertyName,
+    const cssu::Any& rValue)
+    throw(cssu::RuntimeException)
+{
+    PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+    if (iId == maPropertyNameToIdMap.end())
+        throw beans::UnknownPropertyException();
+
+    const PropertyType eType (GetPropertyType(iId->second));
+    if (eType == PT_Invalid)
+        throw beans::UnknownPropertyException();
+
+    const ThemeItem eItem (iId->second);
+        
+    if (rValue == maRawValues[eItem])
+    {
+        // Value is not different from the one in the property
+        // set => nothing to do.
+        return;
+    }
+
+    const Any aOldValue (maRawValues[eItem]);
+
+    const beans::PropertyChangeEvent aEvent(
+        static_cast<XWeak*>(this),
+        rsPropertyName,
+        sal_False,
+        eItem,
+        aOldValue,
+        rValue);
+    
+    if (DoVetoableListenersVeto(GetVetoableListeners(__AnyItem, false), aEvent))
+        return;
+    if (DoVetoableListenersVeto(GetVetoableListeners(eItem, false), aEvent))
+        return;
+    
+    maRawValues[eItem] = rValue;
+    ProcessNewValue(rValue, eItem, eType);
+
+    BroadcastPropertyChange(GetChangeListeners(__AnyItem, false), aEvent);
+    BroadcastPropertyChange(GetChangeListeners(eItem, false), aEvent);
+}
+
+
+
+
+Any SAL_CALL Theme::getPropertyValue (
+    const ::rtl::OUString& rsPropertyName)
+    throw(css::beans::UnknownPropertyException,
+        css::lang::WrappedTargetException,
+        cssu::RuntimeException)
+{
+    PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+    if (iId == maPropertyNameToIdMap.end())
+        throw beans::UnknownPropertyException();
+
+    const PropertyType eType (GetPropertyType(iId->second));
+    if (eType == PT_Invalid)
+        throw beans::UnknownPropertyException();
+
+    const ThemeItem eItem (iId->second);
+
+    return maRawValues[eItem];
+}
+
+
+
+
+void SAL_CALL Theme::addPropertyChangeListener(
+    const ::rtl::OUString& rsPropertyName,
+    const cssu::Reference<css::beans::XPropertyChangeListener>& rxListener)
+    throw(css::beans::UnknownPropertyException,
+        css::lang::WrappedTargetException,
+        cssu::RuntimeException)
+{
+    ThemeItem eItem (__AnyItem);
+    if (rsPropertyName.getLength() > 0)
+    {
+        PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+        if (iId == maPropertyNameToIdMap.end())
+            throw beans::UnknownPropertyException();
+
+        const PropertyType eType (GetPropertyType(iId->second));
+        if (eType == PT_Invalid)
+            throw beans::UnknownPropertyException();
+
+        eItem = iId->second;
+    }
+    ChangeListenerContainer* pListeners = GetChangeListeners(eItem, true);
+    if (pListeners != NULL)
+        pListeners->push_back(rxListener);
+}
+
+
+
+
+void SAL_CALL Theme::removePropertyChangeListener(
+    const ::rtl::OUString& rsPropertyName,
+    const cssu::Reference<css::beans::XPropertyChangeListener>& rxListener)
+    throw(css::beans::UnknownPropertyException,
+        css::lang::WrappedTargetException,
+        cssu::RuntimeException)
+{
+    ThemeItem eItem (__AnyItem);
+    if (rsPropertyName.getLength() > 0)
+    {
+        PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+        if (iId == maPropertyNameToIdMap.end())
+            throw beans::UnknownPropertyException();
+
+        const PropertyType eType (GetPropertyType(iId->second));
+        if (eType == PT_Invalid)
+            throw beans::UnknownPropertyException();
+
+        eItem = iId->second;
+    }
+    ChangeListenerContainer* pContainer = GetChangeListeners(eItem, false);
+    if (pContainer != NULL)
+    {
+        ChangeListenerContainer::iterator iListener (::std::find(pContainer->begin(), pContainer->end(), rxListener));
+        if (iListener != pContainer->end())
+        {
+            pContainer->erase(iListener);
+
+            // Remove the listener container when empty.
+            if (pContainer->empty())
+                maChangeListeners.erase(eItem);
+        }
+    }
+}
+
+
+
+
+void SAL_CALL Theme::addVetoableChangeListener(
+    const ::rtl::OUString& rsPropertyName,
+    const cssu::Reference<css::beans::XVetoableChangeListener>& rxListener)
+    throw(css::beans::UnknownPropertyException,
+        css::lang::WrappedTargetException,
+        cssu::RuntimeException)
+{
+    ThemeItem eItem (__AnyItem);
+    if (rsPropertyName.getLength() > 0)
+    {
+        PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+        if (iId == maPropertyNameToIdMap.end())
+            throw beans::UnknownPropertyException();
+
+        const PropertyType eType (GetPropertyType(iId->second));
+        if (eType == PT_Invalid)
+            throw beans::UnknownPropertyException();
+
+        eItem = iId->second;
+    }
+    VetoableListenerContainer* pListeners = GetVetoableListeners(eItem, true);
+    if (pListeners != NULL)
+        pListeners->push_back(rxListener);
+}
+
+
+
+
+void SAL_CALL Theme::removeVetoableChangeListener(
+    const ::rtl::OUString& rsPropertyName,
+    const cssu::Reference<css::beans::XVetoableChangeListener>& rxListener)
+    throw(css::beans::UnknownPropertyException,
+        css::lang::WrappedTargetException,
+        cssu::RuntimeException)
+{
+    ThemeItem eItem (__AnyItem);
+    if (rsPropertyName.getLength() > 0)
+    {
+        PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+        if (iId == maPropertyNameToIdMap.end())
+            throw beans::UnknownPropertyException();
+
+        const PropertyType eType (GetPropertyType(iId->second));
+        if (eType == PT_Invalid)
+            throw beans::UnknownPropertyException();
+
+        eItem = iId->second;
+    }
+    VetoableListenerContainer* pContainer = GetVetoableListeners(eItem, false);
+    if (pContainer != NULL)
+    {
+        VetoableListenerContainer::iterator iListener (::std::find(pContainer->begin(), pContainer->end(), rxListener));
+        if (iListener != pContainer->end())
+        {
+            pContainer->erase(iListener);
+            // Remove container when empty.
+            if (pContainer->empty())
+                maVetoableListeners.erase(eItem);
+        }
+    }
+}
+
+
+
+
+void Theme::SetupPropertyMaps (void)
+{
+    maPropertyIdToNameMap.resize(__Post_Bool);
+    maImages.resize(__Image_Color - __Pre_Image - 1);
+    maColors.resize(__Color_Paint - __Image_Color - 1);
+    maPaints.resize(__Paint_Int - __Color_Paint - 1);
+    maIntegers.resize(__Int_Bool - __Paint_Int - 1);
+    maBooleans.resize(__Post_Bool - __Int_Bool - 1);
+    
+    #define AddEntry(e) maPropertyNameToIdMap[A2S(#e)]=e; maPropertyIdToNameMap[e]=A2S(#e)
+    AddEntry(Image_Grip);
+    AddEntry(Image_Expand);
+    AddEntry(Image_Collapse);
+    AddEntry(Image_Menu);
+
+    AddEntry(Color_DeckTitleFont);
+    AddEntry(Color_PanelTitleFont);
+    AddEntry(Color_TabMenuSeparator);
+    AddEntry(Color_TabItemBorder);
+
+    AddEntry(Paint_DeckBackground);
+    AddEntry(Paint_DeckTitleBarBackground);
+    AddEntry(Paint_PanelBackground);
+    AddEntry(Paint_PanelTitleBarBackground);
+    AddEntry(Paint_TabBarBackground);
+    AddEntry(Paint_TabItemBackground);
+    AddEntry(Paint_HorizontalBorder);
+    AddEntry(Paint_VerticalBorder);
+
+    AddEntry(Int_DeckTitleBarHeight);
+    AddEntry(Int_DeckBorderSize);
+    AddEntry(Int_DeckSeparatorHeight);
+    AddEntry(Int_PanelTitleBarHeight);
+    AddEntry(Int_TabMenuPadding);
+    AddEntry(Int_TabMenuSeparatorPadding);
+    AddEntry(Int_TabItemWidth);
+    AddEntry(Int_TabItemHeight);
+    AddEntry(Int_DeckLeftPadding);
+    AddEntry(Int_DeckTopPadding);
+    AddEntry(Int_DeckRightPadding);
+    AddEntry(Int_DeckBottomPadding);
+    AddEntry(Int_TabBarLeftPadding);
+    AddEntry(Int_TabBarTopPadding);
+    AddEntry(Int_TabBarRightPadding);
+    AddEntry(Int_TabBarBottomPadding);
+
+    AddEntry(Bool_UseSymphonyIcons);
+    #undef AddEntry
+
+    maRawValues.resize(maPropertyIdToNameMap.size());
+}
+
+
+
+
+Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
+{
+    switch(eItem)
+    {
+        case Image_Grip:
+        case Image_Expand:
+        case Image_Collapse:
+        case Image_Menu:
+            return PT_Image;
+
+        case Color_DeckTitleFont:
+        case Color_PanelTitleFont:
+        case Color_TabMenuSeparator:
+        case Color_TabItemBorder:
+            return PT_Color;
+
+        case Paint_DeckBackground:
+        case Paint_DeckTitleBarBackground:
+        case Paint_PanelBackground:
+        case Paint_PanelTitleBarBackground:
+        case Paint_TabBarBackground:
+        case Paint_TabItemBackground:
+        case Paint_HorizontalBorder:
+        case Paint_VerticalBorder:
+            return PT_Paint;
+
+        case Int_DeckTitleBarHeight:
+        case Int_DeckBorderSize:
+        case Int_DeckSeparatorHeight:
+        case Int_PanelTitleBarHeight:
+        case Int_TabMenuPadding:
+        case Int_TabMenuSeparatorPadding:
+        case Int_TabItemWidth:
+        case Int_TabItemHeight:
+        case Int_DeckLeftPadding:
+        case Int_DeckTopPadding:
+        case Int_DeckRightPadding:
+        case Int_DeckBottomPadding:
+        case Int_TabBarLeftPadding:
+        case Int_TabBarTopPadding:
+        case Int_TabBarRightPadding:
+        case Int_TabBarBottomPadding:
+            return PT_Integer;
+
+        case Bool_UseSymphonyIcons:
+            return PT_Boolean;
+
+        default:
+            return PT_Invalid;
+    }
+}
+
+
+
+
+sal_Int32 Theme::GetIndex (const ThemeItem eItem, const PropertyType eType)
+{
+    switch(eType)
+    {
+        case PT_Image:
+            return eItem - __Pre_Image-1;
+        case PT_Color:
+            return eItem - __Image_Color-1;
+        case PT_Paint:
+            return eItem - __Color_Paint-1;
+        case PT_Integer:
+            return eItem - __Paint_Int-1;
+        case PT_Boolean:
+            return eItem - __Int_Bool-1;
+
+        default:
+            OSL_ASSERT(false);
+            return 0;
+    }
+}
+
+
+
+
+Theme::VetoableListenerContainer* Theme::GetVetoableListeners (
+    const ThemeItem eItem,
+    const bool bCreate)
+{
+    VetoableListeners::iterator iContainer (maVetoableListeners.find(eItem));
+    if (iContainer != maVetoableListeners.end())
+        return &iContainer->second;
+    else if (bCreate)
+    {
+        maVetoableListeners[eItem] = VetoableListenerContainer();
+        return &maVetoableListeners[eItem];
+    }
+    else
+        return NULL;
+}
+
+
+
+
+Theme::ChangeListenerContainer* Theme::GetChangeListeners (
+    const ThemeItem eItem,
+    const bool bCreate)
+{
+    ChangeListeners::iterator iContainer (maChangeListeners.find(eItem));
+    if (iContainer != maChangeListeners.end())
+        return &iContainer->second;
+    else if (bCreate)
+    {
+        maChangeListeners[eItem] = ChangeListenerContainer();
+        return &maChangeListeners[eItem];
+    }
+    else
+        return NULL;
+}
+
+
+
+
+bool Theme::DoVetoableListenersVeto (
+    const VetoableListenerContainer* pListeners,
+    const beans::PropertyChangeEvent& rEvent) const
+{
+    if (pListeners == NULL)
+        return false;
+
+    VetoableListenerContainer aListeners (*pListeners);
+    try
+    {
+        for (VetoableListenerContainer::const_iterator
+                 iListener(aListeners.begin()),
+                 iEnd(aListeners.end());
+             iListener!=iEnd;
+             ++iListener)
+        {
+            (*iListener)->vetoableChange(rEvent);
+        }
+    }
+    catch(const beans::PropertyVetoException&)
+    {
+        return true;
+    }
+    catch(const Exception&)
+    {
+        // Ignore any other errors (such as disposed listeners).
+    }
+    return false;
+}
+
+
+
+
+void Theme::BroadcastPropertyChange (
+    const ChangeListenerContainer* pListeners,
+    const beans::PropertyChangeEvent& rEvent) const
+{
+    if (pListeners == NULL)
+        return;
+
+    const ChangeListenerContainer aListeners (*pListeners);
+    try
+    {
+        for (ChangeListenerContainer::const_iterator
+                 iListener(aListeners.begin()),
+                 iEnd(aListeners.end());
+             iListener!=iEnd;
+             ++iListener)
+        {
+            (*iListener)->propertyChange(rEvent);
+        }
+    }
+    catch(const Exception&)
+    {
+        // Ignore any errors (such as disposed listeners).
+    }
+}
+
+
+
+
+void Theme::ProcessNewValue (
+    const Any& rValue,
+    const ThemeItem eItem,
+    const PropertyType eType)
+{
+    const sal_Int32 nIndex (GetIndex (eItem, eType));
+    switch (eType)
+    {
+        case PT_Image:
+        {
+            ::rtl::OUString sURL;
+            if (rValue >>= sURL)
+            {
+                maImages[nIndex] = Tools::GetImage(sURL, NULL);
+            }
+            break;
+        }
+        case PT_Color:
+        {
+            sal_Int32 nColorValue;
+            if (rValue >>= nColorValue)
+            {
+                maColors[nIndex] = Color(nColorValue);
+            }
+            break;
+        }
+        case PT_Paint:
+        {
+            sal_Int32 nColorValue;
+            if (rValue >>= nColorValue)
+            {
+                maPaints[nIndex] = Paint(Color(nColorValue));
+            }
+            break;
+        }
+        case PT_Integer:
+        {
+            sal_Int32 nValue;
+            if (rValue >>= nValue)
+            {
+                maIntegers[nIndex] = nValue;
+            }
+            break;
+        }
+        case PT_Boolean:
+        {
+            sal_Bool nValue;
+            if (rValue >>= nValue)
+            {
+                maBooleans[nIndex] = (nValue==sal_True);
+            }
+            break;
+        }
+        case PT_Invalid:
+            OSL_ASSERT(eType != PT_Invalid);
+            throw RuntimeException();
+    }
+}
+
+
+
 
 } } // end of namespace sfx2::sidebar

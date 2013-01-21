@@ -21,38 +21,35 @@
 
 #include "precompiled_sfx2.hxx"
 
-#include "sidebar/ControlFactory.hxx"
-
-#include "MenuButton.hxx"
-#include "TabItem.hxx"
-#include "SidebarToolBox.hxx"
-#include <vcl/toolbox.hxx>
-
+#include "sidebar/ControllerItem.hxx"
 
 namespace sfx2 { namespace sidebar {
 
-
-CheckBox* ControlFactory::CreateMenuButton (Window* pParentWindow)
+ControllerItem::ControllerItem (
+    const sal_uInt16 nId,
+    SfxBindings &rBindings,
+    ItemUpdateReceiverInterface& rItemUpdateReceiver)
+    : SfxControllerItem(nId, rBindings),
+      mrItemUpdateReceiver(rItemUpdateReceiver)
 {
-    return new MenuButton(pParentWindow);
 }
 
 
 
 
-ImageRadioButton* ControlFactory::CreateTabItem (Window* pParentWindow)
+ControllerItem::~ControllerItem (void)
 {
-    return new TabItem(pParentWindow);
 }
 
 
 
 
-ToolBox* ControlFactory::CreateToolBox (
-    Window* pParentWindow,
-    const ResId& rResId)
+void ControllerItem::StateChanged (
+    sal_uInt16 nSID,
+    SfxItemState eState,
+    const SfxPoolItem* pState)
 {
-    return new SidebarToolBox(pParentWindow, rResId);
+    mrItemUpdateReceiver.NotifyItemUpdate(nSID, eState, pState);
 }
 
 } } // end of namespace sfx2::sidebar

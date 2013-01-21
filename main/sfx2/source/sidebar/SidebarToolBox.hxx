@@ -19,27 +19,25 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_CONTENT_PANEL_DESCRIPTOR_HXX
-#define SFX_SIDEBAR_CONTENT_PANEL_DESCRIPTOR_HXX
+#ifndef SFX_SIDEBAR_TOOLBOX_HXX
+#define SFX_SIDEBAR_TOOLBOX_HXX
 
-#include "Context.hxx"
+#include "vcl/toolbox.hxx"
 
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
-class ContentPanelDescriptor
+class SidebarToolBox
+    : public ToolBox
 {
 public:
-    ::rtl::OUString msTitle;
-    sal_Bool mbIsTitleBarOptional;
-    ::rtl::OUString msId;
-    ::rtl::OUString msDeckId;
-    ::rtl::OUString msHelpURL;
-    ::std::vector<Context> maContexts;
-    ::rtl::OUString msLayout;
-    ::rtl::OUString msImplementationURL;
+    SidebarToolBox (Window* pParentWindow, const ResId& rResId);
+    virtual ~SidebarToolBox (void);
+
+    virtual void Paint (const Rectangle& rRect);
 };
 
-} // end of namespace sfx2
+
+} } // end of namespace sfx2::sidebar
 
 #endif

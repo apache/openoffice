@@ -65,6 +65,8 @@ public:
         long nWidth,
         long nHeight,
         sal_uInt16 nFlags = WINDOW_POSSIZE_ALL);
+    virtual void DataChanged (const DataChangedEvent& rEvent);
+    virtual void Activate (void);
 
 private:
     const ::rtl::OUString msLayoutHint;
@@ -75,6 +77,9 @@ private:
     cssu::Reference<css::ui::XVerticalStackLayoutElement> mxVerticalStackLayoutElement;
     bool mbIsExpanded;
     const ::boost::function<void(void)> maDeckLayoutTrigger;
+    Rectangle maBoundingBox;
+
+    DECL_LINK(WindowEventHandler, VclWindowEvent*);
 };
 
 

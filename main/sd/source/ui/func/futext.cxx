@@ -49,6 +49,7 @@
 #include <svx/svdoutl.hxx>
 #include <svx/svxids.hrc>
 #include <sfx2/docfile.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <comphelper/processfactory.hxx>
 #include <editeng/outlobj.hxx>
 #include <svtools/langtab.hxx>
@@ -190,8 +191,7 @@ void FuText::DoExecute( SfxRequest& )
         RID_DRAW_TEXT_TOOLBOX);
     ContextChangeEventMultiplexer::NotifyContextChange(
         mpViewShell->GetViewShellBase().GetController(),
-        ContextChangeEventMultiplexer::Application_Impress,
-        ContextChangeEventMultiplexer::Context_TextEdit);
+        ::sfx2::sidebar::EnumContext::Context_Text);
 
 	mpView->SetCurrentObj(OBJ_TEXT);
 	mpView->SetEditMode(SDREDITMODE_EDIT);

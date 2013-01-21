@@ -22,8 +22,10 @@
 #ifndef _SVX_SIDEBAR_CONTEXT_CHANGE_EVENT_MULTIPLEXER_HXX_
 #define _SVX_SIDEBAR_CONTEXT_CHANGE_EVENT_MULTIPLEXER_HXX_
 
-#include <com/sun/star/frame/XController.hpp>
 #include "svx/svxdllapi.h"
+#include <sfx2/sidebar/EnumContext.hxx>
+#include <com/sun/star/frame/XController.hpp>
+#include <com/sun/star/frame/XFrame.hpp>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
@@ -33,15 +35,13 @@ namespace cssu = ::com::sun::star::uno;
 class SVX_DLLPUBLIC ContextChangeEventMultiplexer
 {
 public:
-    static const ::rtl::OUString Application_Impress;
-    
-    static const ::rtl::OUString Context_TextEdit;
-    static const ::rtl::OUString Context_Default;
-    
     static void NotifyContextChange (
         const cssu::Reference<css::frame::XController>& rxController,
-        const ::rtl::OUString& rsApplicationName,
-        const ::rtl::OUString& rsContextName);
+        const ::sfx2::sidebar::EnumContext::Context eContext);
+
+private:
+    static ::rtl::OUString GetModuleName (
+        const cssu::Reference<css::frame::XFrame>& rxFrame);
 };
 
 #endif

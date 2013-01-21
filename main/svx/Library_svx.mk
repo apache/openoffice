@@ -170,6 +170,9 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/mnuctrls/fntszctl \
     svx/source/mnuctrls/SmartTagCtl \
     svx/source/sidebar/ContextChangeEventMultiplexer \
+    svx/source/sidebar/PanelFactory \
+    svx/source/sidebar/text/SvxSBFontNameBox \
+    svx/source/sidebar/text/TextPropertyPanel \
     svx/source/stbctrls/pszctrl \
     svx/source/stbctrls/insctrl \
     svx/source/stbctrls/selctrl \

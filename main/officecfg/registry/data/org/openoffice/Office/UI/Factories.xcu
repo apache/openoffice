@@ -95,6 +95,20 @@
           <value>com.sun.star.drawing.DefaultToolPanelFactory</value>
         </prop>
       </node>
+      <node oor:name="SvxPanelFactory" oor:op="replace">
+        <prop oor:name="Type">
+          <value>toolpanel</value>
+        </prop>
+        <prop oor:name="Name">
+          <value>SvxPanelFactory</value>
+        </prop>
+        <prop oor:name="Module">
+          <value/>
+        </prop>
+        <prop oor:name="FactoryImplementation">
+          <value>org.apache.openoffice.comp.svx.sidebar.PanelFactory</value>
+        </prop>
+      </node>
     </node>
   </node>
 </oor:component-data>

@@ -19,40 +19,34 @@
  * 
  *************************************************************/
 
-#include "precompiled_sfx2.hxx"
+#ifndef SFX_SIDEBAR_TOOLS_HXX
+#define SFX_SIDEBAR_TOOLS_HXX
 
-#include "sidebar/ControlFactory.hxx"
+#include "vcl/image.hxx"
 
-#include "MenuButton.hxx"
-#include "TabItem.hxx"
-#include "SidebarToolBox.hxx"
-#include <vcl/toolbox.hxx>
+
+#define A2S(s) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(s)))
+
+namespace css = ::com::sun::star;
+namespace cssu = ::com::sun::star::uno;
 
 
 namespace sfx2 { namespace sidebar {
 
-
-CheckBox* ControlFactory::CreateMenuButton (Window* pParentWindow)
+class Tools
 {
-    return new MenuButton(pParentWindow);
-}
+public:
+    static Image GetImage (
+        const ::rtl::OUString& rsImageURL,
+        const ::rtl::OUString& rsHighContrastImageURL,
+        const cssu::Reference<css::frame::XFrame>& rxFrame);
 
+    static Image GetImage (
+        const ::rtl::OUString& rsURL,
+        const cssu::Reference<css::frame::XFrame>& rxFrame);
+};
 
-
-
-ImageRadioButton* ControlFactory::CreateTabItem (Window* pParentWindow)
-{
-    return new TabItem(pParentWindow);
-}
-
-
-
-
-ToolBox* ControlFactory::CreateToolBox (
-    Window* pParentWindow,
-    const ResId& rResId)
-{
-    return new SidebarToolBox(pParentWindow, rResId);
-}
 
 } } // end of namespace sfx2::sidebar
+
+#endif

@@ -25,7 +25,7 @@
 
 #include "Paint.hxx"
 #include "Panel.hxx"
-#include "Theme.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 
 #include <tools/svborder.hxx>
 #include <vcl/gradient.hxx>
@@ -63,8 +63,8 @@ Rectangle PanelTitleBar::GetTitleArea (const Rectangle& rTitleBarBox)
     if (mpPanel != NULL)
     {
         Image aImage (mpPanel->IsExpanded()
-            ? Theme::GetExpandImage()
-            : Theme::GetCollapseImage());
+            ? Theme::GetImage(Theme::Image_Expand)
+            : Theme::GetImage(Theme::Image_Collapse));
         return Rectangle(
             aImage.GetSizePixel().Width() + gaLeftIconPadding + gaRightIconPadding,
             rTitleBarBox.Top(),
@@ -83,8 +83,8 @@ void PanelTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
     if (mpPanel != NULL)
     {
         Image aImage (mpPanel->IsExpanded()
-            ? Theme::GetExpandImage()
-            : Theme::GetCollapseImage());
+            ? Theme::GetImage(Theme::Image_Expand)
+            : Theme::GetImage(Theme::Image_Collapse));
         const Point aTopLeft (
             gaLeftIconPadding,
             (GetSizePixel().Height()-aImage.GetSizePixel().Height())/2);
@@ -97,7 +97,7 @@ void PanelTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
 
 Paint PanelTitleBar::GetBackgroundPaint (void)
 {
-    return Theme::GetPanelTitleBackground();
+    return Theme::GetPaint(Theme::Paint_PanelTitleBarBackground);
 }
 
 
@@ -105,7 +105,7 @@ Paint PanelTitleBar::GetBackgroundPaint (void)
 
 Color PanelTitleBar::GetTextColor (void)
 {
-    return Theme::GetPanelTitleFontColor();
+    return Theme::GetColor(Theme::Color_PanelTitleFont);
 }
 
 

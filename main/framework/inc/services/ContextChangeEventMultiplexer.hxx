@@ -55,7 +55,9 @@ class ContextChangeEventMultiplexer
 public:
     ContextChangeEventMultiplexer(const cssu::Reference<css::uno::XComponentContext>& rxContext);
     virtual ~ContextChangeEventMultiplexer (void);
-    
+
+    virtual void SAL_CALL disposing (void);
+
     // XContextChangeEventMultiplexer
     virtual void SAL_CALL addContextChangeEventListener (
         const cssu::Reference<css::ui::XContextChangeEventListener>& rxListener,

@@ -20,38 +20,60 @@
  *************************************************************/
 
 #include "precompiled_svx.hxx"
+
+#include "svx/sidebar/ContextChangeEventMultiplexer.hxx"
+
 #include <com/sun/star/ui/ContextChangeEventObject.hpp>
 #include <com/sun/star/ui/XContextChangeEventMultiplexer.hpp>
 #include <com/sun/star/ui/ContextChangeEventMultiplexer.hpp>
+#include <com/sun/star/frame/XModuleManager.hpp>
 #include <comphelper/processfactory.hxx>
-#include "svx/sidebar/ContextChangeEventMultiplexer.hxx"
-#include <boost/scoped_ptr.hpp>
+#include <comphelper/componentcontext.hxx>
 
+#include <tools/diagnose_ex.h>
 
 using namespace css;
 using namespace cssu;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
-const ::rtl::OUString ContextChangeEventMultiplexer::Application_Impress (A2S("impress"));
-
-const ::rtl::OUString ContextChangeEventMultiplexer::Context_TextEdit (A2S("text-edit"));
-const ::rtl::OUString ContextChangeEventMultiplexer::Context_Default (A2S("default"));
-
-
 void ContextChangeEventMultiplexer::NotifyContextChange (
     const cssu::Reference<css::frame::XController>& rxController,
-    const ::rtl::OUString& rsApplicationName,
-    const ::rtl::OUString& rsContextName)
+    const ::sfx2::sidebar::EnumContext::Context eContext)
 {
-    const css::ui::ContextChangeEventObject aEvent(
+    if (rxController.is())
+    {
+        const css::ui::ContextChangeEventObject aEvent(
             rxController,
-            rsApplicationName,
-            rsContextName);
+            GetModuleName(rxController->getFrame()),
+            ::sfx2::sidebar::EnumContext::GetContextName(eContext));
     
-    cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
-        css::ui::ContextChangeEventMultiplexer::get(
-            ::comphelper::getProcessComponentContext()));
-    if (xMultiplexer.is())
-        xMultiplexer->broadcastContextChangeEvent(aEvent, rxController);
+        cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
+            css::ui::ContextChangeEventMultiplexer::get(
+                ::comphelper::getProcessComponentContext()));
+        if (xMultiplexer.is())
+            xMultiplexer->broadcastContextChangeEvent(aEvent, rxController);
+    }
+}
+
+
+
+
+::rtl::OUString ContextChangeEventMultiplexer::GetModuleName (
+    const cssu::Reference<css::frame::XFrame>& rxFrame)
+{
+    try
+    {
+        const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
+        const Reference<frame::XModuleManager> xModuleManager (
+            aContext.createComponent("com.sun.star.frame.ModuleManager" ),
+            UNO_QUERY_THROW );
+        return xModuleManager->identify(rxFrame);
+    }
+    catch (const Exception&)
+    {
+        DBG_UNHANDLED_EXCEPTION();
+    }
+    return ::sfx2::sidebar::EnumContext::GetApplicationName(
+        ::sfx2::sidebar::EnumContext::Application_Other);
 }

@@ -19,20 +19,39 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_CONTROL_FACTORY_HXX
-#define SFX_SIDEBAR_CONTROL_FACTORY_HXX
+#ifndef SVX_SIDEBAR_CONTROLLER_ITEM_HXX
+#define SVX_SIDEBAR_CONTROLLER_ITEM_HXX
 
-#include <vcl/button.hxx>
+#include <sfx2/ctrlitem.hxx>
+
+#include <boost/function.hpp>
+
 
 namespace sfx2 { namespace sidebar {
 
-class ControlFactory
+class SFX2_DLLPUBLIC ControllerItem : public SfxControllerItem
 {
 public:
-    static CheckBox* CreateMenuButton (Window* pParentWindow);
-    static ImageRadioButton* CreateTabItem (Window* pParentWindow);
-};
+    class ItemUpdateReceiverInterface
+    {
+    public:
+        virtual void NotifyItemUpdate(
+            const sal_uInt16 nSId,
+            const SfxItemState eState,
+            const SfxPoolItem* pState) = 0;
+    };
+    
+    ControllerItem (
+        const sal_uInt16 nId,
+        SfxBindings &rBindings,
+        ItemUpdateReceiverInterface& rItemUpdateReceiver);
+    virtual ~ControllerItem (void);
 
+    virtual void StateChanged (sal_uInt16 nSId, SfxItemState eState, const SfxPoolItem* pState);
+
+private:
+    ItemUpdateReceiverInterface& mrItemUpdateReceiver;
+};
 
 } } // end of namespace sfx2::sidebar
 

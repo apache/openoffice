@@ -22,7 +22,6 @@
 #include "precompiled_sfx2.hxx"
 
 #include "TitleBar.hxx"
-#include "Theme.hxx"
 #include "Paint.hxx"
 
 #include <tools/svborder.hxx>
@@ -85,6 +84,7 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
     PaintDecoration(aTitleBarBox);
     PaintTitle(GetTitleArea(aTitleBarBox));
 }
+
 
 
 

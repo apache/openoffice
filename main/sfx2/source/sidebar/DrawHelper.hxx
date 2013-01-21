@@ -46,22 +46,22 @@ public:
         const Paint& rVerticalPaint);
     static void DrawHorizontalLine(
         OutputDevice& rDevice,
-        const int nLeft,
-        const int nRight,
-        const int nY,
-        const int nHeight,
+        const sal_Int32 nLeft,
+        const sal_Int32 nRight,
+        const sal_Int32 nY,
+        const sal_Int32 nHeight,
         const Paint& rPaint);
     static void DrawVerticalLine(
         OutputDevice& rDevice,
-        const int nTop,
-        const int nBottom,
-        const int nX,
-        const int nWidth,
+        const sal_Int32 nTop,
+        const sal_Int32 nBottom,
+        const sal_Int32 nX,
+        const sal_Int32 nWidth,
         const Paint& rPaint);
     static void DrawRoundedRectangle (
         OutputDevice& rDevice,
         const Rectangle& rBox,
-        const int nCornerRadius,
+        const sal_Int32 nCornerRadius,
         const Color& rBorderColor,
         const Paint& rFillPaint);
 };

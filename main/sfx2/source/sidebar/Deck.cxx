@@ -25,8 +25,9 @@
 #include "DeckDescriptor.hxx"
 #include "DrawHelper.hxx"
 #include "DeckTitleBar.hxx"
+#include "Paint.hxx"
 #include "Panel.hxx"
-#include "Theme.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 
 #include <tools/SvBorder.hxx>
 
@@ -49,6 +50,8 @@ Deck::Deck (
       maIcon(),
       msIconURL(rDeckDescriptor.msIconURL),
       msHighContrastIconURL(rDeckDescriptor.msHighContrastIconURL),
+      maPanels(),
+      maSeparators(),
       mpFiller(NULL)
 {
     SetBackground(Wallpaper());
@@ -101,14 +104,13 @@ TitleBar* Deck::GetTitleBar (void) const
 Rectangle Deck::GetContentArea (void) const
 {
     const Size aWindowSize (GetSizePixel());
-    const SvBorder aPadding (Theme::GetDeckPadding());
-    const int nBorderSize (Theme::GetBorderSize());
+    const int nBorderSize (Theme::GetInteger(Theme::Int_DeckBorderSize));
 
     return Rectangle(
-        aPadding.Left() + nBorderSize,
-        aPadding.Top() + nBorderSize,
-        aWindowSize.Width() - 1 - aPadding.Right() - nBorderSize,
-        aWindowSize.Height() - 1 - aPadding.Bottom() - nBorderSize);
+        Theme::GetInteger(Theme::Int_DeckLeftPadding) + nBorderSize,
+        Theme::GetInteger(Theme::Int_DeckTopPadding) + nBorderSize,
+        aWindowSize.Width() - 1 - Theme::GetInteger(Theme::Int_DeckRightPadding) - nBorderSize,
+        aWindowSize.Height() - 1 - Theme::GetInteger(Theme::Int_DeckBottomPadding) - nBorderSize);
 }
 
 
@@ -128,32 +130,62 @@ Rectangle Deck::GetContentArea (void) const
 void Deck::Paint (const Rectangle& rUpdateArea)
 {
     const Size aWindowSize (GetSizePixel());
-    const SvBorder aPadding (Theme::GetDeckPadding());
+    const SvBorder aPadding (
+            Theme::GetInteger(Theme::Int_DeckLeftPadding),
+            Theme::GetInteger(Theme::Int_DeckTopPadding),
+            Theme::GetInteger(Theme::Int_DeckRightPadding),
+            Theme::GetInteger(Theme::Int_DeckBottomPadding));
 
     // Paint deck background outside the border.
+    Rectangle aBox(
+        0,
+        0,
+        aWindowSize.Width() - 1,
+        aWindowSize.Height() - 1);
     DrawHelper::DrawBorder(
         *this,
-        Rectangle(
-            0,
-            0,
-            aWindowSize.Width() - 1,
-            aWindowSize.Height() - 1),
+        aBox,
         aPadding,
-        Theme::GetDeckBackground(),
-        Theme::GetDeckBackground());
+        Theme::GetPaint(Theme::Paint_DeckBackground),
+        Theme::GetPaint(Theme::Paint_DeckBackground));
 
     // Paint the border.
-    const int nBorderSize (Theme::GetBorderSize());
+    const int nBorderSize (Theme::GetInteger(Theme::Int_DeckBorderSize));
+    aBox.Left() += aPadding.Left();
+    aBox.Top() += aPadding.Top();
+    aBox.Right() -= aPadding.Right();
+    aBox.Bottom() -= aPadding.Bottom();
+    const sfx2::sidebar::Paint& rHorizontalBorderPaint (Theme::GetPaint(Theme::Paint_HorizontalBorder));
     DrawHelper::DrawBorder(
         *this,
-        Rectangle(
-            aPadding.Left(),
-            aPadding.Top(),
-            aWindowSize.Width() - 1 - aPadding.Right(),
-            aWindowSize.Height() - 1 - aPadding.Bottom()),
+        aBox,
         SvBorder(nBorderSize, nBorderSize, nBorderSize, nBorderSize),
-        Theme::GetHorizontalBorderPaint(),
-        Theme::GetVerticalBorderPaint());
+        rHorizontalBorderPaint,
+        Theme::GetPaint(Theme::Paint_VerticalBorder));
+
+    // Paint the separators.
+    const int nSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
+    const int nLeft = aBox.Left() + nBorderSize;
+    const int nRight = aBox.Right() - nBorderSize;
+    for (::std::vector<sal_Int32>::const_iterator iY(maSeparators.begin()), iEnd(maSeparators.end()); iY!=iEnd; ++iY)
+    {
+        DrawHelper::DrawHorizontalLine(
+            *this,
+            nLeft,
+            nRight,
+            *iY,
+            nSeparatorHeight,
+            rHorizontalBorderPaint);
+    }
+}
+
+
+
+
+void Deck::DataChanged (const DataChangedEvent& rEvent)
+{
+    (void)rEvent;
+    RequestLayout();
 }
 
 
@@ -177,7 +209,11 @@ void Deck::RequestLayout (void)
         case 0:
             // This basically is an error but there is not much that
             // we can do about it.
-            OSL_ASSERT(maPanels.size()>0);
+            if (mpFiller == NULL)
+            {
+                OSL_ASSERT(maPanels.size()>0);
+            }
+            ShowFiller(PlaceDeckTitle(GetTitleBar(), GetContentArea()));
             break;
 
         case 1:
@@ -208,10 +244,21 @@ void Deck::LayoutSinglePanel (void)
     aBox = PlaceDeckTitle(GetTitleBar(), aBox);
     Panel& rPanel (*maPanels.front());
 
+    // Prepare the separators, horizontal lines above and below the
+    // panel titels.
+    const sal_Int32 nDeckSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
+    maSeparators.clear();
+
     if (rPanel.IsExpanded())
     {
         rPanel.Show();
         rPanel.GetTitleBar()->Hide();
+
+        // Add single separator between deck title (pane title is not
+        // visible) and panel content.
+        maSeparators.push_back(aBox.Top());
+        aBox.Top() += nDeckSeparatorHeight;
+        
         rPanel.SetPosSizePixel(aBox.Left(), aBox.Top(), aBox.GetWidth(), aBox.GetHeight());
         HideFiller();
     }
@@ -232,8 +279,13 @@ void Deck::LayoutMultiplePanels (void)
         return;
     aBox = PlaceDeckTitle(GetTitleBar(), aBox);
     const sal_Int32 nWidth (aBox.GetWidth());
-    const sal_Int32 nPanelTitleBarHeight (Theme::GetPanelTitleBarHeight());
+    const sal_Int32 nPanelTitleBarHeight (Theme::GetInteger(Theme::Int_PanelTitleBarHeight));
 
+    // Prepare the separators, horizontal lines above and below the
+    // panel titels.
+    const sal_Int32 nDeckSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
+    maSeparators.clear();
+    
     // Determine the height that is available for panel content
     // and count the different layouts.
     const sal_Int32 nX = aBox.Left();
@@ -249,13 +301,15 @@ void Deck::LayoutMultiplePanels (void)
         const Panel& rPanel (**iPanel);
         
         nHeight -= nPanelTitleBarHeight;
+        nHeight -= 2*nDeckSeparatorHeight;
 
         if (rPanel.IsExpanded())
         {
             if (rPanel.GetVerticalStackElement().is())
             {
                 ++nVerticalStackCount;
-                nHeight -= rPanel.GetVerticalStackElement()->getHeightForWidth(nWidth);
+                const sal_Int32 nRequestedHeight (rPanel.GetVerticalStackElement()->getHeightForWidth(nWidth));
+                nHeight -= nRequestedHeight;
             }
             else
             {
@@ -287,12 +341,20 @@ void Deck::LayoutMultiplePanels (void)
          ++iPanel)
     {
         Panel& rPanel (**iPanel);
+
+        // Separator above the panel title bar.
+        maSeparators.push_back(nY);
+        nY += nDeckSeparatorHeight;
         
         // Place the title bar.
         TitleBar* pTitleBar = rPanel.GetTitleBar();
         pTitleBar->SetPosSizePixel(nX, nY, nWidth, nPanelTitleBarHeight);
         pTitleBar->Show();
         nY += nPanelTitleBarHeight;
+
+        // Separator below the panel title bar.
+        maSeparators.push_back(nY);
+        nY += nDeckSeparatorHeight;
 
         if (rPanel.IsExpanded())
         {
@@ -334,7 +396,7 @@ Rectangle Deck::PlaceDeckTitle (
         return rAvailableSpace;
     }
 
-    const sal_Int32 nDeckTitleBarHeight (Theme::GetDeckTitleBarHeight());
+    const sal_Int32 nDeckTitleBarHeight (Theme::GetInteger(Theme::Int_DeckTitleBarHeight));
     pDeckTitleBar->SetPosSizePixel(
         rAvailableSpace.Left(),
         rAvailableSpace.Top(),
@@ -356,7 +418,7 @@ void Deck::ShowFiller (const Rectangle& rBox)
     if (mpFiller == NULL)
     {
         mpFiller = new Window(this);
-        mpFiller->SetBackground(Theme::GetDeckBackground().GetWallpaper());
+        mpFiller->SetBackground(Theme::GetPaint(Theme::Paint_DeckBackground).GetWallpaper());
     }
     mpFiller->SetPosSizePixel(rBox.TopLeft(), rBox.GetSize());
     mpFiller->Show();

@@ -54,6 +54,7 @@ public:
     void RequestLayout (void);
     
     virtual void Paint (const Rectangle& rUpdateArea);
+    virtual void DataChanged (const DataChangedEvent& rEvent);
 
 private:
     const ::rtl::OUString msTitle;
@@ -63,6 +64,7 @@ private:
     const ::rtl::OUString msIconURL;
     const ::rtl::OUString msHighContrastIconURL;
     ::std::vector<Panel*> maPanels;
+    ::std::vector<sal_Int32> maSeparators;
     Window* mpFiller;
     
     void LayoutSinglePanel (void);

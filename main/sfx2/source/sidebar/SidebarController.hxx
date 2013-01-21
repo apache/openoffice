@@ -24,9 +24,11 @@
 
 #include "ResourceManager.hxx"
 
+#include <com/sun/star/awt/XWindowPeer.hpp>
+#include <com/sun/star/beans/XPropertyChangeListener.hpp>
 #include <com/sun/star/ui/XContextChangeEventListener.hpp>
 #include <boost/noncopyable.hpp>
-#include <cppuhelper/compbase1.hxx>
+#include <cppuhelper/compbase2.hxx>
 #include <cppuhelper/basemutex.hxx>
 
 namespace css = ::com::sun::star;
@@ -34,8 +36,9 @@ namespace cssu = ::com::sun::star::uno;
 
 namespace
 {
-    typedef ::cppu::WeakComponentImplHelper1 <
-        css::ui::XContextChangeEventListener
+    typedef ::cppu::WeakComponentImplHelper2 <
+        css::ui::XContextChangeEventListener,
+        css::beans::XPropertyChangeListener
         > SidebarControllerInterfaceBase;
 }
 
@@ -44,6 +47,7 @@ class DockingWindow;
 
 namespace sfx2 { namespace sidebar {
 
+class Panel;
 class TabBar;
 class TabBarConfiguration;
 class DeckDescriptor;
@@ -61,12 +65,18 @@ public:
         const cssu::Reference<css::frame::XFrame>& rxFrame);
     virtual ~SidebarController (void);
 
+    // ui::XContextChangeEventListener
     virtual void SAL_CALL notifyContextChangeEvent (const css::ui::ContextChangeEventObject& rEvent)
         throw(cssu::RuntimeException);
 
+    // XEventListener
     virtual void SAL_CALL disposing (const css::lang::EventObject& rEventObject)
         throw(cssu::RuntimeException);
 
+    // beans::XPropertyChangeListener
+    virtual void SAL_CALL propertyChange (const css::beans::PropertyChangeEvent& rEvent)
+        throw(cssu::RuntimeException);
+    
     void NotifyResize (void);
 
     void SwitchToDeck (
@@ -83,7 +93,8 @@ private:
     void UpdateConfigurations (const Context& rContext);
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
-        const ::rtl::OUString& rsImplementationURL) const;
+        const ::rtl::OUString& rsImplementationURL,
+        Panel* pPanel) const;
     void SwitchToDeck (
         const DeckDescriptor& rDeckDescriptor,
         const Context& rContext);
