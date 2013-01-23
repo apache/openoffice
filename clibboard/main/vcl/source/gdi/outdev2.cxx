@@ -2092,6 +2092,7 @@ void OutputDevice::ImplDrawAlpha( const Bitmap& rBmp, const AlphaMask& rAlpha,
         // separate alpha VDev
         bool bTryDirectPaint(!mpAlphaVDev && !pDisableNative && !bHMirr && !bVMirr);
 
+#ifdef WNT
         if(bTryDirectPaint)
         {
             // only paint direct when no scaling and no MapMode, else the
@@ -2102,6 +2103,7 @@ void OutputDevice::ImplDrawAlpha( const Bitmap& rBmp, const AlphaMask& rAlpha,
                 bTryDirectPaint = false;
             }
         }
+#endif
 
         if(bTryDirectPaint) 
         {
