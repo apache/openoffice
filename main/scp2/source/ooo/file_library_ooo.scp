@@ -22,6 +22,22 @@
 
 #include "macros.inc"
 
+// IAccessible2 implementation
+#if defined(WNT) && !defined(DISABLE_ATL)
+File gid_File_Lib_Winaccessibility
+	TXT_FILE_BODY;
+	Styles	= (PACKED,UNO_COMPONENT);
+	RegistryID      = gid_Starregistry_Services_Rdb;
+	Dir	= gid_Dir_Program;
+	Name	= "winaccessibility.dll";
+End
+File gid_File_Lib_UAccCOM
+	BIN_FILE_BODY;
+	Styles	= (PACKED);
+	Dir	= gid_Dir_Program;
+	Name	= "UAccCOM.dll";
+End
+#endif
 #ifdef WNT
 File gid_File_Lib_Accessbridge
     BIN_FILE_BODY;

@@ -154,6 +154,10 @@ namespace com { namespace sun { namespace star {
 #define VCLEVENT_ITEM_COLLAPSED             1175
 // <--
 #define VCLEVENT_DROPDOWN_PRE_OPEN          1176
+//IAccessibility2 Implementation 2009-----
+#define VCLEVENT_LISTBOX_FOCUSITEMCHANGED	1180
+// #define VCLEVENT_EDIT_CARETCHANGED  		xxxx	// IA2 CWS. MT: VCL only has selection API - difference for selection_changed vs. caret_changed is handled in accessibility wrapper since OOo 3.2
+//-----IAccessibility2 Implementation 2009
 
 // VclMenuEvent
 #define VCLEVENT_MENU_ACTIVATE              1200

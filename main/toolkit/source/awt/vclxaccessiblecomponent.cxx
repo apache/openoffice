@@ -904,7 +904,8 @@ sal_Int32 SAL_CALL VCLXAccessibleComponent::getForeground(	) throw (uno::Runtime
 				aFont = pWindow->GetFont();
 			nColor = aFont.GetColor().GetColor();
 //IAccessibility2 Implementation 2009-----
-			if ( nColor == COL_AUTO)
+// COL_AUTO is not very meaningful for AT
+			if ( nColor == (sal_Int32)COL_AUTO)
 				nColor = pWindow->GetTextColor().GetColor();
 //-----IAccessibility2 Implementation 2009
 		}
