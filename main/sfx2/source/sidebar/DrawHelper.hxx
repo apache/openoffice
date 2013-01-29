@@ -24,8 +24,7 @@
 
 #include "vcl/window.hxx"
 
-#include <tools/SvBorder.hxx>
-
+#include <tools/svborder.hxx>
 
 class Color;
 
@@ -44,6 +43,13 @@ public:
         const SvBorder aBorderSize,
         const Paint& rHorizontalPaint,
         const Paint& rVerticalPaint);
+    static void DrawBevelBorder (
+        OutputDevice& rDevice,
+        const Rectangle rBox,
+        const SvBorder aBorderSize,
+        const Paint& rTopLeftPaint,
+        const Paint& rCenterPaint,
+        const Paint& rBottomRightPaint);
     static void DrawHorizontalLine(
         OutputDevice& rDevice,
         const sal_Int32 nLeft,

@@ -24,6 +24,9 @@
 #include "sfx2/sidebar/SidebarPanelBase.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 #include "sfx2/imagemgr.hxx"
+#include <vcl/ctrl.hxx>
+#include <comphelper/processfactory.hxx>
+
 #include <com/sun/star/ui/ContextChangeEventMultiplexer.hpp>
 #include <com/sun/star/ui/UIElementType.hpp>
 
@@ -33,20 +36,31 @@ using namespace cssu;
 
 namespace sfx2 { namespace sidebar {
 
+Reference<ui::XUIElement> SidebarPanelBase::Create (
+    const ::rtl::OUString& rsResourceURL,
+    const cssu::Reference<css::frame::XFrame>& rxFrame,
+    Control* pControl)
+{
+    Reference<ui::XUIElement> xUIElement (
+        new SidebarPanelBase(
+            rsResourceURL,
+            rxFrame,
+            pControl));
+    return xUIElement;
+}
+
+
+
+
 SidebarPanelBase::SidebarPanelBase (
     const ::rtl::OUString& rsResourceURL,
-    Window* pParentWindow,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    const ResId& rResId)
+    Control* pControl)
     : SidebarPanelBaseInterfaceBase(m_aMutex),
       msResourceURL(rsResourceURL),
-      Control(pParentWindow, rResId),
       mxFrame(rxFrame),
-      meFontUnderline(UNDERLINE_SINGLE)
+      mpControl(pControl)
 {
-    // Let the Pane draw the background.
-    SetBackground(Wallpaper());
-    
     cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
         css::ui::ContextChangeEventMultiplexer::get(
             ::comphelper::getProcessComponentContext()));
@@ -67,6 +81,8 @@ SidebarPanelBase::~SidebarPanelBase (void)
 void SAL_CALL SidebarPanelBase::disposing (void)
     throw (cssu::RuntimeException)
 {
+    mpControl = NULL;
+    
     if (mxFrame.is())
     {
         cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
@@ -84,11 +100,19 @@ void SAL_CALL SidebarPanelBase::disposing (void)
 // XContextChangeEventListener
 void SAL_CALL SidebarPanelBase::notifyContextChangeEvent (
     const ui::ContextChangeEventObject& rEvent)
+    throw (cssu::RuntimeException)
 {
-    HandleContextChange (
-        EnumContext(
+    if (mpControl != NULL)
+    {
+        const EnumContext aContext(
             EnumContext::GetApplicationEnum(rEvent.ApplicationName),
-            EnumContext::GetContextEnum(rEvent.ContextName)));
+            EnumContext::GetContextEnum(rEvent.ContextName));
+
+        ContextChangeReceiverInterface* pContextChangeReceiver
+            = dynamic_cast<ContextChangeReceiverInterface*>(mpControl);
+        if (pContextChangeReceiver != NULL)
+            pContextChangeReceiver->HandleContextChange(aContext);
+    }
 }
 
 
@@ -98,6 +122,10 @@ void SAL_CALL SidebarPanelBase::disposing (
     const css::lang::EventObject& rEvent)
     throw (cssu::RuntimeException)
 {
+    (void)rEvent;
+    
+    mxFrame = NULL;
+    mpControl = NULL;
 }
 
 
@@ -143,6 +171,8 @@ Reference<accessibility::XAccessible> SAL_CALL SidebarPanelBase::createAccessibl
     const Reference<accessibility::XAccessible>& rxParentAccessible)
     throw(cssu::RuntimeException)
 {
+    (void)rxParentAccessible;
+    
     // Not yet implemented.
     return NULL;
 }
@@ -153,33 +183,24 @@ Reference<accessibility::XAccessible> SAL_CALL SidebarPanelBase::createAccessibl
 Reference<awt::XWindow> SAL_CALL SidebarPanelBase::getWindow (void)
     throw(cssu::RuntimeException)
 {
-    return Reference<awt::XWindow>(
-        Control::GetComponentInterface(),
-        UNO_QUERY);    
+    if (mpControl != NULL)
+        return Reference<awt::XWindow>(
+            mpControl->GetComponentInterface(),
+            UNO_QUERY);
+    else
+        return NULL;
 }
 
 
 
 
-FontUnderline SidebarPanelBase::GetDefaultUnderline (void) const
+sal_Int32 SAL_CALL SidebarPanelBase::getHeightForWidth (const sal_Int32 nWidth)
+    throw(cssu::RuntimeException)
 {
-    return meFontUnderline;
-}
-
-
-
-
-Image SidebarPanelBase::GetIcon (const ::rtl::OUString& rsURL)
-{
-    return GetImage(mxFrame, rsURL, sal_False, Theme::IsHighContrastMode());
-}
-
-
-
-
-void SidebarPanelBase::SetDefaultUnderline (const FontUnderline eFontUnderline)
-{
-    meFontUnderline = eFontUnderline;
+    if (mpControl != NULL)
+        return mpControl->GetSizePixel().Height();
+    else
+        return -1;
 }
 
 

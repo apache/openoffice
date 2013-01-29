@@ -189,9 +189,6 @@ void FuText::DoExecute( SfxRequest& )
 	mpViewShell->GetViewShellBase().GetToolBarManager()->SetToolBarShell(
         ToolBarManager::TBG_FUNCTION,
         RID_DRAW_TEXT_TOOLBOX);
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        mpViewShell->GetViewShellBase().GetController(),
-        ::sfx2::sidebar::EnumContext::Context_Text);
 
 	mpView->SetCurrentObj(OBJ_TEXT);
 	mpView->SetEditMode(SDREDITMODE_EDIT);

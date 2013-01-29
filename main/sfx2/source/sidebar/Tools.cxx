@@ -29,7 +29,11 @@
 #include <comphelper/processfactory.hxx>
 #include <comphelper/componentcontext.hxx>
 #include <comphelper/namedvaluecollection.hxx>
+#include <vcl/gradient.hxx>
 
+#include <com/sun/star/graphic/XGraphicProvider.hpp>
+
+#include <cstring>
 
 using namespace css;
 using namespace cssu;
@@ -98,5 +102,55 @@ Image Tools::GetImage (
     return Image();
 }
 
+
+
+
+css::awt::Gradient Tools::VclToAwtGradient (const Gradient aVclGradient)
+{
+    css::awt::Gradient aAwtGradient (
+        awt::GradientStyle(aVclGradient.GetStyle()),
+        aVclGradient.GetStartColor().GetRGBColor(),
+        aVclGradient.GetEndColor().GetRGBColor(),
+        aVclGradient.GetAngle(),
+        aVclGradient.GetBorder(),
+        aVclGradient.GetOfsX(),
+        aVclGradient.GetOfsY(),
+        aVclGradient.GetStartIntensity(),
+        aVclGradient.GetEndIntensity(),
+        aVclGradient.GetSteps());
+    return aAwtGradient;
+}
+
+
+
+
+Gradient Tools::AwtToVclGradient (const css::awt::Gradient aAwtGradient)
+{
+    Gradient aVclGradient (
+        GradientStyle(aAwtGradient.Style),
+        aAwtGradient.StartColor,
+        aAwtGradient.EndColor);
+    aVclGradient.SetAngle(aAwtGradient.Angle);
+    aVclGradient.SetBorder(aAwtGradient.Border);
+    aVclGradient.SetOfsX(aAwtGradient.XOffset);
+    aVclGradient.SetOfsY(aAwtGradient.YOffset);
+    aVclGradient.SetStartIntensity(aAwtGradient.StartIntensity);
+    aVclGradient.SetEndIntensity(aAwtGradient.EndIntensity);
+    aVclGradient.SetSteps(aAwtGradient.StepCount);
+
+    return aVclGradient;
+}
+
+
+
+
+SvBorder Tools::RectangleToSvBorder (const Rectangle aBox)
+{
+    return SvBorder(
+        aBox.Left(),
+        aBox.Top(),
+        aBox.Right(),
+        aBox.Bottom());
+}
 
 } } // end of namespace sfx2::sidebar

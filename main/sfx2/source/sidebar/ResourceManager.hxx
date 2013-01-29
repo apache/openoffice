@@ -24,7 +24,9 @@
 
 #include "DeckDescriptor.hxx"
 #include "PanelDescriptor.hxx"
-
+#include "sfx2/sidebar/EnumContext.hxx"
+#include <unotools/confignode.hxx>
+#include <com/sun/star/frame/XFrame.hpp>
 #include <set>
 #include <boost/shared_ptr.hpp>
 
@@ -44,21 +46,39 @@ public:
     static ResourceManager& Instance (void);
 
     const DeckDescriptor* GetBestMatchingDeck (
-        const Context& rContext,
+        const EnumContext& rContext,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
-    typedef ::std::vector<DeckDescriptor> DeckContainer;
-    typedef ::std::vector<PanelDescriptor> PanelContainer;
+    const DeckDescriptor* GetDeckDescriptor (
+        const ::rtl::OUString& rsDeckId) const;
+    const PanelDescriptor* GetPanelDescriptor (
+        const ::rtl::OUString& rsPanelId) const;
 
-    const DeckContainer& GetMatchingDecks (
-        DeckContainer& rDeckDescriptors,
-        const Context& rContext,
-        const cssu::Reference<css::frame::XFrame>& rxFrame);
-
-    const PanelContainer& GetMatchingPanels (
-        PanelContainer& rPanelDescriptors,
-        const Context& rContext,
+    /** Excluded or include a deck from being displayed in the tab
+        bar.
+        Note that this value is not persistent.
+        The flag can not be set directly at a DeckDescriptor object
+        because the ResourceManager gives access to to them only
+        read-only.
+    */
+    void SetIsDeckEnabled (
         const ::rtl::OUString& rsDeckId,
+        const bool bIsEnabled);
+
+    typedef ::std::vector<rtl::OUString> IdContainer;
+
+    const IdContainer& GetMatchingDecks (
+        IdContainer& rDeckDescriptors,
+        const EnumContext& rContext,
+        const cssu::Reference<css::frame::XFrame>& rxFrame);
+
+    const IdContainer& GetMatchingPanels (
+        IdContainer& rPanelDescriptors,
+        const EnumContext& rContext,
+        const ::rtl::OUString& rsDeckId,
+        const cssu::Reference<css::frame::XFrame>& rxFrame);
+
+    static ::rtl::OUString GetModuleName (
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
 private:
@@ -67,7 +87,9 @@ private:
     class Deleter;
     friend class Deleter;
 
+    typedef ::std::vector<DeckDescriptor> DeckContainer;
     DeckContainer maDecks;
+    typedef ::std::vector<PanelDescriptor> PanelContainer;
     PanelContainer maPanels;
     mutable ::std::set<rtl::OUString> maProcessedApplications;
 
@@ -75,11 +97,9 @@ private:
     void ReadPanelList (void);
     void ReadContextList (
         const ::utl::OConfigurationNode& rNode,
-        ::std::vector<Context>& rContextContainer) const;
+        ::std::vector<EnumContext>& rContextContainer) const;
     void ReadLegacyAddons (
         const cssu::Reference<css::frame::XFrame>& rxFrame);
-    ::rtl::OUString GetModuleName (
-        const cssu::Reference<css::frame::XFrame>& rxFrame) const;
     ::utl::OConfigurationTreeRoot GetLegacyAddonRootNode (
         const ::rtl::OUString& rsModuleName) const;
     void GetToolPanelNodeNames (

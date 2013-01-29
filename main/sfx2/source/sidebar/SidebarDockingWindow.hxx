@@ -25,6 +25,7 @@
 #include "sfx2/dockwin.hxx"
 #include "Sidebar.hxx"
 
+#include <rtl/ref.hxx>
 
 namespace sfx2 {
 

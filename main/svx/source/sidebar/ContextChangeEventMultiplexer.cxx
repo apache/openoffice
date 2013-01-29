@@ -41,7 +41,7 @@ void ContextChangeEventMultiplexer::NotifyContextChange (
     const cssu::Reference<css::frame::XController>& rxController,
     const ::sfx2::sidebar::EnumContext::Context eContext)
 {
-    if (rxController.is())
+    if (rxController.is() && rxController->getFrame().is())
     {
         const css::ui::ContextChangeEventObject aEvent(
             rxController,
@@ -72,8 +72,10 @@ void ContextChangeEventMultiplexer::NotifyContextChange (
     }
     catch (const Exception&)
     {
-        DBG_UNHANDLED_EXCEPTION();
+        // An exception typically means that a context change is notified
+        // during initialization or destruction of a view.
+        // Ignore it.
     }
     return ::sfx2::sidebar::EnumContext::GetApplicationName(
-        ::sfx2::sidebar::EnumContext::Application_Other);
+        ::sfx2::sidebar::EnumContext::Application_Unknown);
 }

@@ -39,10 +39,10 @@
                 	<value>PropertyDeck</value>
             	</prop>
             	<prop oor:name="IconURL" oor:type="xs:string">
-                	<value>.uno:Config</value>
+                	<value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
             	</prop>
             	<prop oor:name="HighContrastIconURL" oor:type="xs:string">
-                	<value>.uno:Config</value>
+                	<value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
             	</prop>
             	<node oor:name="ContextList">
             		<node oor:name="context1" oor:op="replace">
@@ -82,6 +82,9 @@
             	</prop>
             	<prop oor:name="ImplementationURL" oor:type="xs:string">
             		<value>private:resource/toolpanel/SvxPanelFactory/TextPropertyPanel</value>
+            	</prop>
+            	<prop oor:name="OrderIndex" oor:type="xs:int">
+            		<value>100</value>
             	</prop>
         	</node>
     	</node>

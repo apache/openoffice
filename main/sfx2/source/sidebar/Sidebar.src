@@ -63,6 +63,16 @@ Resource RID_SIDEBAR_RESOURCE
         ImageBitmap = Bitmap { File = "menu_hc.png" ;};
     };
 
+    Image IMAGE_SIDEBAR_TOOLBOX_SEPARATOR
+    {
+        ImageBitmap = Bitmap { File = "separator.png" ;};
+    };
+
+    Image IMAGE_SIDEBAR_TABBAR_PROPERTIES
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock01.png" ;};
+    };
+
     String STRING_CUSTOMIZATION
     {
 	Text [en-US] = "Customization";

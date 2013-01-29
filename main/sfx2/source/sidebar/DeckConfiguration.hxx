@@ -38,8 +38,7 @@ public:
 
     DeckConfiguration (void);
     
-    void Disable (void);
-    void Activate (void);
+    void Dispose (void);
 };
 
 

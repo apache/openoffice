@@ -26,6 +26,8 @@
 
 #include <rtl/ustring.hxx>
 
+#include <vector>
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -38,10 +40,14 @@ public:
         Application_Calc,
         Application_Draw,
         Application_Impress,
-        
-        Application_Other,
 
-        __LastApplicationEnum = Application_Other
+        // Used only by deck or panel descriptors.  Matches any
+        // application.
+        Application_Any,
+
+        Application_Unknown,
+
+        __LastApplicationEnum = Application_Unknown
     };
     enum Context
     {
@@ -56,10 +62,16 @@ public:
         Context_Table,
         Context_Text,
         Context_TextObject,
-        
+
+        // Default context of an application.  Do we need this?
         Context_Default,
 
-        __LastContextEnum = Context_Default
+        // Used only by deck or panel descriptors.  Matches any context.
+        Context_Any,
+
+        Context_Unknown,
+        
+        __LastContextEnum = Context_Unknown
     };
 
     Application meApplication;
@@ -69,9 +81,35 @@ public:
     EnumContext (
         const Application eApplication,
         const Context eContext);
-    sal_Int32 GetCombinedContext(void) const;
-    bool operator == (const EnumContext aOther);
+    EnumContext (
+        const ::rtl::OUString& rsApplicationName,
+        const ::rtl::OUString& rsContextName);
     
+    sal_Int32 GetCombinedContext(void) const;
+    const ::rtl::OUString& GetApplicationName (void) const;
+    const ::rtl::OUString& GetContextName (void) const;
+
+    bool operator == (const EnumContext aOther);
+    bool operator != (const EnumContext aOther);
+    
+    /** When two contexts are matched against each other then
+        application or context name may have the wildcard value 'any'.
+        In order to prefer matches without wildcards over matches with
+        wildcards we introduce a integer evaluation for matches.
+    */
+    const static sal_Int32 NoMatch;
+    const static sal_Int32 OptimalMatch;
+
+    /** Return the numeric value that describes how good the match
+        between two contexts is.
+        Smaller values represent better matches.
+    */
+    sal_Int32 EvaluateMatch (const EnumContext& rOther) const;
+
+    /** Return the best match against the given list of contexts.
+    */
+    sal_Int32 EvaluateMatch (const ::std::vector<EnumContext>& rOthers) const;
+
     static Application GetApplicationEnum (const ::rtl::OUString& rsApplicationName);
     static const ::rtl::OUString& GetApplicationName (const Application eApplication);
 

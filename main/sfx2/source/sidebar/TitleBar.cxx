@@ -53,25 +53,10 @@ TitleBar::~TitleBar (void)
 
 void TitleBar::Paint (const Rectangle& rUpdateArea)
 {
+    (void)rUpdateArea;
+
     // Paint title bar background.
     Size aWindowSize( GetOutputSizePixel() );
-    /*
-    int nOuterLeft = 0;
-    const SvBorder aBorder( 3, 1, 3, 3 );
-    const sal_Int32 m_nTitleBarHeight = GetSettings().GetStyleSettings().GetTitleHeight();
-    int nInnerLeft = nOuterLeft + aBorder.Left() - 1;
-    int nOuterRight = aWindowSize.Width() - 1;
-    int nInnerRight = nOuterRight - aBorder.Right() + 1;
-    int nInnerTop = m_nTitleBarHeight + aBorder.Top() - 1;
-    int nOuterBottom = aWindowSize.Height() - 1;
-    int nInnerBottom = nOuterBottom - aBorder.Bottom() + 1;
-    Rectangle aTitleBarBox(
-        nOuterLeft,
-        0, 
-        nOuterRight, 
-        nInnerTop-1
-        );
-    */
     Rectangle aTitleBarBox(
         0,
         0, 

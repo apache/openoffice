@@ -26,6 +26,7 @@
 #include "MenuButton.hxx"
 #include "TabItem.hxx"
 #include "SidebarToolBox.hxx"
+#include "ToolBoxBackground.hxx"
 #include <vcl/toolbox.hxx>
 
 
@@ -52,7 +53,15 @@ ToolBox* ControlFactory::CreateToolBox (
     Window* pParentWindow,
     const ResId& rResId)
 {
-    return new SidebarToolBox(pParentWindow, rResId);
+    Window* pBorderWindow = new ToolBoxBackground(pParentWindow);
+    pBorderWindow->Show();
+    
+    SidebarToolBox* pToolBox = new SidebarToolBox(pBorderWindow, rResId);
+    pToolBox->SetBorderWindow(pBorderWindow);
+
+    pToolBox->Invalidate();
+    
+    return pToolBox;
 }
 
 } } // end of namespace sfx2::sidebar

@@ -62,6 +62,7 @@ Theme::Theme (void)
       maIntegers(),
       maBooleans(),
       mbIsHighContrastMode(Application::GetSettings().GetStyleSettings().GetHighContrastMode()),
+      mbIsHighContrastModeSetManually(false),
       maPropertyNameToIdMap(),
       maPropertyIdToNameMap(),
       maRawValues(),
@@ -142,6 +143,18 @@ bool Theme::GetBoolean (const ThemeItem eItem)
 
 
 
+Rectangle Theme::GetRectangle (const ThemeItem eItem)
+{
+    const PropertyType eType (GetPropertyType(eItem));
+    OSL_ASSERT(eType==PT_Rectangle);
+    const sal_Int32 nIndex (GetIndex(eItem, eType));
+    const Theme& rTheme (GetCurrentTheme());
+    return rTheme.maRectangles[nIndex];
+}
+
+
+
+
 bool Theme::IsHighContrastMode (void)
 {
     const Theme& rTheme (GetCurrentTheme());
@@ -153,8 +166,16 @@ bool Theme::IsHighContrastMode (void)
 
 void Theme::HandleDataChange (void)
 {
-    GetCurrentTheme().mbIsHighContrastMode = Application::GetSettings().GetStyleSettings().GetHighContrastMode();
-    GetCurrentTheme().InitializeTheme();
+    Theme& rTheme (GetCurrentTheme());
+
+    if ( ! rTheme.mbIsHighContrastModeSetManually)
+    {
+        // Do not modify mbIsHighContrastMode when it was manually set.
+        GetCurrentTheme().mbIsHighContrastMode = Application::GetSettings().GetStyleSettings().GetHighContrastMode();
+        rTheme.maRawValues[Bool_IsHighContrastModeActive] = Any(GetCurrentTheme().mbIsHighContrastMode);
+    }
+
+    GetCurrentTheme().UpdateTheme();
 }
 
 
@@ -162,16 +183,41 @@ void Theme::HandleDataChange (void)
 
 void Theme::InitializeTheme (void)
 {
+    setPropertyValue(
+        maPropertyIdToNameMap[Bool_UseSymphonyIcons],
+        Any(true));
+    setPropertyValue(
+        maPropertyIdToNameMap[Bool_UseSystemColors],
+        Any(false));
+}
+
+
+
+
+void Theme::UpdateTheme (void)
+{
     SidebarResource aLocalResource;
 
     try
     {
+        const StyleSettings& rStyle (Application::GetSettings().GetStyleSettings());
+        const bool bUseSystemColors (GetBoolean(Bool_UseSystemColors));
+
+#define Alternatives(n,hc,sys) (mbIsHighContrastMode ? hc : (bUseSystemColors ? sys : n))
+
         setPropertyValue(
             maPropertyIdToNameMap[Paint_DeckBackground],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xf0f0f0)));
+            Any(sal_Int32(Alternatives(
+                        0xf0f0f0,
+                        0x000000,
+                        rStyle.GetDialogColor().GetRGBColor()))));
+
         setPropertyValue(
             maPropertyIdToNameMap[Paint_DeckTitleBarBackground],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 :0xf0f0f0)));
+            Any(sal_Int32(Alternatives(
+                        0xf0f0f0,
+                        0x000000,
+                        rStyle.GetDialogColor().GetRGBColor()))));
         setPropertyValue(
             maPropertyIdToNameMap[Int_DeckLeftPadding],
             Any(sal_Int32(2)));
@@ -192,11 +238,16 @@ void Theme::InitializeTheme (void)
             Any(sal_Int32(1)));
         setPropertyValue(
             maPropertyIdToNameMap[Color_DeckTitleFont],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0x262626)));
+            Any(sal_Int32(Alternatives(
+                        0x262626,
+                        0x00ff00,
+                        rStyle.GetDialogTextColor().GetRGBColor()))));
         setPropertyValue(
             maPropertyIdToNameMap[Int_DeckTitleBarHeight],
-            Any(sal_Int32(26)));
-
+            Any(sal_Int32(Alternatives(
+                        26,
+                        26,
+                        rStyle.GetFloatTitleHeight()))));
         setPropertyValue(
             maPropertyIdToNameMap[Paint_PanelBackground],
             Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xffffff)));
@@ -208,8 +259,10 @@ void Theme::InitializeTheme (void)
             Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0x262626)));
         setPropertyValue(
             maPropertyIdToNameMap[Int_PanelTitleBarHeight],
-            Any(sal_Int32(26)));
-
+            Any(sal_Int32(Alternatives(
+                        26,
+                        26,
+                        rStyle.GetTitleHeight()))));
         setPropertyValue(
             maPropertyIdToNameMap[Paint_TabBarBackground],
             Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xf0f0f0)));
@@ -246,15 +299,18 @@ void Theme::InitializeTheme (void)
             maPropertyIdToNameMap[Color_TabItemBorder],
             Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf)));
         setPropertyValue(
-            maPropertyIdToNameMap[Paint_TabItemBackground],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xffffff)));
+            maPropertyIdToNameMap[Paint_TabItemBackgroundNormal],
+            Any());
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_TabItemBackgroundHighlight],
+            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0x00ffffff)));
 
         setPropertyValue(
             maPropertyIdToNameMap[Paint_HorizontalBorder],
-            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff000 : 0xd9d9d9)));
+            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff00 : 0xd9d9d9)));
         setPropertyValue(
             maPropertyIdToNameMap[Paint_VerticalBorder],
-            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff000 : 0xd9d9d9)));
+            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff00 : 0xd9d9d9)));
 
         setPropertyValue(
             maPropertyIdToNameMap[Image_Grip],
@@ -278,15 +334,52 @@ void Theme::InitializeTheme (void)
             maPropertyIdToNameMap[Image_Menu],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/sfx2/res/menu_ch.png")
+                    ? A2S("private:graphicrepository/sfx2/res/menu_hc.png")
                     : A2S("private:graphicrepository/sfx2/res/menu.png")));
-
         setPropertyValue(
-            maPropertyIdToNameMap[Bool_UseSymphonyIcons],
-            Any(true));
+            maPropertyIdToNameMap[Image_ToolBoxItemSeparator],
+            Any(
+                A2S("private:graphicrepository/sfx2/res/separator.png")));
+
+        // ToolBox
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBackground],
+            Any(Tools::VclToAwtGradient(Gradient(
+                        GRADIENT_LINEAR,
+                        Color(0xf2f2f2),
+                        Color(0xfefefe)
+                        ))));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBorderTopLeft],
+            mbIsHighContrastMode
+                ? Any(util::Color(sal_uInt32(0x00ff00)))
+                : Any(util::Color(sal_uInt32(0xf2f2f2))));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBorderCenterCorners],
+            mbIsHighContrastMode
+                ? Any(util::Color(sal_uInt32(0x00ff00)))
+                : Any(util::Color(sal_uInt32(0xf2f2f2))));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBorderBottomRight],
+            mbIsHighContrastMode
+                ? Any(util::Color(sal_uInt32(0x00ff00)))
+                : Any(util::Color(sal_uInt32(0xf2f2f2))));
+        setPropertyValue(
+            maPropertyIdToNameMap[Rect_ToolBoxPadding],
+            Any(awt::Rectangle(2,2,2,2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Rect_ToolBoxBorder],
+            Any(awt::Rectangle(1,1,1,1)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Bool_UseToolBoxItemSeparator],
+            Any(false));
     }
-    catch(beans::UnknownPropertyException&)
+    catch(beans::UnknownPropertyException& rException)
     {
+        OSL_TRACE("unknown property: %s",
+            OUStringToOString(
+                rException.Message,
+                RTL_TEXTENCODING_ASCII_US).getStr());
         OSL_ASSERT(false);
     }
 }
@@ -338,7 +431,7 @@ Reference<beans::XPropertySet> Theme::GetPropertySet (void)
 Reference<beans::XPropertySetInfo> SAL_CALL Theme::getPropertySetInfo (void)
     throw(cssu::RuntimeException)
 {
-    return Reference<beans::XPropertySetInfo>();
+    return Reference<beans::XPropertySetInfo>(this);
 }
 
 
@@ -351,11 +444,11 @@ void SAL_CALL Theme::setPropertyValue (
 {
     PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
     if (iId == maPropertyNameToIdMap.end())
-        throw beans::UnknownPropertyException();
+        throw beans::UnknownPropertyException(rsPropertyName, NULL);
 
     const PropertyType eType (GetPropertyType(iId->second));
     if (eType == PT_Invalid)
-        throw beans::UnknownPropertyException();
+        throw beans::UnknownPropertyException(rsPropertyName, NULL);
 
     const ThemeItem eItem (iId->second);
         
@@ -544,20 +637,92 @@ void SAL_CALL Theme::removeVetoableChangeListener(
 
 
 
+cssu::Sequence<css::beans::Property> SAL_CALL Theme::getProperties (void)
+    throw(cssu::RuntimeException)
+{
+    ::std::vector<beans::Property> aProperties;
+
+    for (sal_Int32 nItem(__Begin),nEnd(__End); nItem!=nEnd; ++nItem)
+    {
+        const ThemeItem eItem (static_cast<ThemeItem>(nItem));
+        const PropertyType eType (GetPropertyType(eItem));
+        if (eType == PT_Invalid)
+            continue;
+
+        const beans::Property aProperty(
+            maPropertyIdToNameMap[eItem],
+            eItem,
+            GetCppuType(eType),
+            0);
+        aProperties.push_back(aProperty);
+    }
+        
+    return cssu::Sequence<css::beans::Property>(
+        &aProperties.front(),
+        aProperties.size());
+}
+
+
+
+
+beans::Property SAL_CALL Theme::getPropertyByName (const ::rtl::OUString& rsPropertyName)
+    throw(css::beans::UnknownPropertyException,
+        cssu::RuntimeException)
+{
+    PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+    if (iId == maPropertyNameToIdMap.end())
+        throw beans::UnknownPropertyException();
+
+    const PropertyType eType (GetPropertyType(iId->second));
+    if (eType == PT_Invalid)
+        throw beans::UnknownPropertyException();
+
+    const ThemeItem eItem (iId->second);
+
+    return beans::Property(
+        rsPropertyName,
+        eItem,
+        GetCppuType(eType),
+        0);
+}
+
+
+
+
+sal_Bool SAL_CALL Theme::hasPropertyByName (const ::rtl::OUString& rsPropertyName)
+    throw(cssu::RuntimeException)
+{
+    PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
+    if (iId == maPropertyNameToIdMap.end())
+        return sal_False;
+
+    const PropertyType eType (GetPropertyType(iId->second));
+    if (eType == PT_Invalid)
+        return sal_False;
+
+    return sal_True;
+}
+
+
+
+
 void Theme::SetupPropertyMaps (void)
 {
-    maPropertyIdToNameMap.resize(__Post_Bool);
+    maPropertyIdToNameMap.resize(__Post_Rect);
     maImages.resize(__Image_Color - __Pre_Image - 1);
     maColors.resize(__Color_Paint - __Image_Color - 1);
     maPaints.resize(__Paint_Int - __Color_Paint - 1);
     maIntegers.resize(__Int_Bool - __Paint_Int - 1);
-    maBooleans.resize(__Post_Bool - __Int_Bool - 1);
+    maBooleans.resize(__Bool_Rect - __Int_Bool - 1);
+    maRectangles.resize(__Post_Rect - __Bool_Rect - 1);
     
     #define AddEntry(e) maPropertyNameToIdMap[A2S(#e)]=e; maPropertyIdToNameMap[e]=A2S(#e)
+    
     AddEntry(Image_Grip);
     AddEntry(Image_Expand);
     AddEntry(Image_Collapse);
     AddEntry(Image_Menu);
+    AddEntry(Image_ToolBoxItemSeparator);
 
     AddEntry(Color_DeckTitleFont);
     AddEntry(Color_PanelTitleFont);
@@ -569,9 +734,14 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Paint_PanelBackground);
     AddEntry(Paint_PanelTitleBarBackground);
     AddEntry(Paint_TabBarBackground);
-    AddEntry(Paint_TabItemBackground);
+    AddEntry(Paint_TabItemBackgroundNormal);
+    AddEntry(Paint_TabItemBackgroundHighlight);
     AddEntry(Paint_HorizontalBorder);
     AddEntry(Paint_VerticalBorder);
+    AddEntry(Paint_ToolBoxBackground);
+    AddEntry(Paint_ToolBoxBorderTopLeft);
+    AddEntry(Paint_ToolBoxBorderCenterCorners);
+    AddEntry(Paint_ToolBoxBorderBottomRight);
 
     AddEntry(Int_DeckTitleBarHeight);
     AddEntry(Int_DeckBorderSize);
@@ -591,6 +761,13 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Int_TabBarBottomPadding);
 
     AddEntry(Bool_UseSymphonyIcons);
+    AddEntry(Bool_UseSystemColors);
+    AddEntry(Bool_UseToolBoxItemSeparator);
+    AddEntry(Bool_IsHighContrastModeActive);
+
+    AddEntry(Rect_ToolBoxPadding);
+    AddEntry(Rect_ToolBoxBorder);
+    
     #undef AddEntry
 
     maRawValues.resize(maPropertyIdToNameMap.size());
@@ -607,6 +784,7 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Image_Expand:
         case Image_Collapse:
         case Image_Menu:
+        case Image_ToolBoxItemSeparator:
             return PT_Image;
 
         case Color_DeckTitleFont:
@@ -620,9 +798,14 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Paint_PanelBackground:
         case Paint_PanelTitleBarBackground:
         case Paint_TabBarBackground:
-        case Paint_TabItemBackground:
+        case Paint_TabItemBackgroundNormal:
+        case Paint_TabItemBackgroundHighlight:
         case Paint_HorizontalBorder:
         case Paint_VerticalBorder:
+        case Paint_ToolBoxBackground:
+        case Paint_ToolBoxBorderTopLeft:
+        case Paint_ToolBoxBorderCenterCorners:
+        case Paint_ToolBoxBorderBottomRight:
             return PT_Paint;
 
         case Int_DeckTitleBarHeight:
@@ -644,10 +827,48 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
             return PT_Integer;
 
         case Bool_UseSymphonyIcons:
+        case Bool_UseSystemColors:
+        case Bool_UseToolBoxItemSeparator:
+        case Bool_IsHighContrastModeActive:
             return PT_Boolean;
 
+        case Rect_ToolBoxBorder:
+        case Rect_ToolBoxPadding:
+            return PT_Rectangle;
+            
         default:
             return PT_Invalid;
+    }
+}
+
+
+
+
+cssu::Type Theme::GetCppuType (const PropertyType eType)
+{
+    switch(eType)
+    {
+        case PT_Image:
+            return getCppuType((rtl::OUString*)NULL);
+
+        case PT_Color:
+            return getCppuType((sal_uInt32*)NULL);
+
+        case PT_Paint:
+            return getCppuVoidType();
+
+        case PT_Integer:
+            return getCppuType((sal_Int32*)NULL);
+
+        case PT_Boolean:
+            return getCppuType((sal_Bool*)NULL);
+
+        case PT_Rectangle:
+            return getCppuType((awt::Rectangle*)NULL);
+
+        case PT_Invalid:
+        default:
+            return getCppuVoidType();
     }
 }
 
@@ -668,6 +889,8 @@ sal_Int32 Theme::GetIndex (const ThemeItem eItem, const PropertyType eType)
             return eItem - __Paint_Int-1;
         case PT_Boolean:
             return eItem - __Int_Bool-1;
+        case PT_Rectangle:
+            return eItem - __Bool_Rect-1;
 
         default:
             OSL_ASSERT(false);
@@ -796,7 +1019,7 @@ void Theme::ProcessNewValue (
         }
         case PT_Color:
         {
-            sal_Int32 nColorValue;
+            sal_Int32 nColorValue (0);
             if (rValue >>= nColorValue)
             {
                 maColors[nIndex] = Color(nColorValue);
@@ -805,16 +1028,12 @@ void Theme::ProcessNewValue (
         }
         case PT_Paint:
         {
-            sal_Int32 nColorValue;
-            if (rValue >>= nColorValue)
-            {
-                maPaints[nIndex] = Paint(Color(nColorValue));
-            }
+            maPaints[nIndex] = Paint::Create(rValue);
             break;
         }
         case PT_Integer:
         {
-            sal_Int32 nValue;
+            sal_Int32 nValue (0);
             if (rValue >>= nValue)
             {
                 maIntegers[nIndex] = nValue;
@@ -823,10 +1042,33 @@ void Theme::ProcessNewValue (
         }
         case PT_Boolean:
         {
-            sal_Bool nValue;
+            sal_Bool nValue (0);
             if (rValue >>= nValue)
             {
                 maBooleans[nIndex] = (nValue==sal_True);
+                if (eItem == Bool_IsHighContrastModeActive)
+                {
+                    mbIsHighContrastModeSetManually = true;
+                    mbIsHighContrastMode = maBooleans[nIndex];
+                    HandleDataChange();
+                }
+                else if (eItem == Bool_UseSystemColors)
+                {
+                    HandleDataChange();
+                }
+            }
+            break;
+        }
+        case PT_Rectangle:
+        {
+            awt::Rectangle aBox;
+            if (rValue >>= aBox)
+            {
+                maRectangles[nIndex] = Rectangle(
+                    aBox.X,
+                    aBox.Y,
+                    aBox.Width,
+                    aBox.Height);
             }
             break;
         }

@@ -19,36 +19,50 @@
  * 
  *************************************************************/
 
-#include "precompiled_sfx2.hxx"
+#ifndef SFX_SIDEBAR_TOOLBOX_BACKGROUND_HXX
+#define SFX_SIDEBAR_TOOLBOX_BACKGROUND_HXX
 
-#include "DeckConfiguration.hxx"
-#include "Deck.hxx"
-#include "Panel.hxx"
-#include "TitleBar.hxx"
+#include "vcl/window.hxx"
 
+#include <tools/svborder.hxx>
+
+
+class ToolBox;
 
 namespace sfx2 { namespace sidebar {
 
-DeckConfiguration::DeckConfiguration (void)
-    : mpDeck(NULL),
-      maPanels()
+class ToolBoxBackground
+    : public Window
 {
-}
+public:
+    ToolBoxBackground (Window* pParentWindow);
+    virtual ~ToolBoxBackground (void);
 
+    /** Call this method once to
+        a) let the ToolBoxBackground object know which ToolBox to
+           monitor and
+        b) so that position and sizes can be set up.
+        @return
+            The relative position of the child.
+    */
+    Point SetToolBoxChild (
+        ToolBox* pChild,
+        long nX,
+        long nY,
+        long nWidth,
+        long nHeight,
+        sal_uInt16 nFlags);
+    
+    virtual void Paint (const Rectangle& rRect);
+    virtual void DataChanged (const DataChangedEvent& rEvent);
 
+private:
+    SvBorder maPadding;
 
-
-void DeckConfiguration::Dispose (void)
-{
-    // Move the deck and its children temporarily to a new root to
-    // avoid a crash when calling removeWindow(,NULL).
-    Window aTemporaryParent (NULL,0);
-    mpDeck->Hide();
-    mpDeck->Dispose();
-    mpDeck->GetParent()->removeWindow(mpDeck, &aTemporaryParent);
-    maPanels.clear();
-    mpDeck = NULL;
-}
+    DECL_LINK(WindowEventHandler, VclWindowEvent*);
+};
 
 
 } } // end of namespace sfx2::sidebar
+
+#endif

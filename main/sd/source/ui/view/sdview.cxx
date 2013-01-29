@@ -56,6 +56,7 @@
 #include <svx/xlndsit.hxx>
 #include <svx/xlineit0.hxx>
 #include <svx/xlnclit.hxx>
+#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include <vcl/virdev.hxx>
 
 #include "app.hrc"
@@ -775,6 +776,10 @@ sal_Bool View::SdrBeginTextEdit(
 		pGivenOutlinerView, bDontDeleteOutliner,
 		bOnlyOneView, bGrabFocus);
 
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        GetViewShell()->GetViewShellBase().GetController(),
+        ::sfx2::sidebar::EnumContext::Context_Text);
+
 	if (bReturn)
 	{
 		::Outliner* pOL = GetTextEditOutliner();
@@ -831,7 +836,12 @@ SdrEndTextEditKind View::SdrEndTextEdit(sal_Bool bDontDeleteReally )
 		}
 	}
 
-	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT, (void*)xObj.get() );
+	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
+        sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT,
+        (void*)xObj.get() );
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        GetViewShell()->GetViewShellBase().GetController(),
+        ::sfx2::sidebar::EnumContext::Context_Default);
 
 	if( xObj.is() )
 	{

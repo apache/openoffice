@@ -28,7 +28,10 @@
 
 #include <vos/mutex.hxx>
 #include <vcl/svapp.hxx>
+#include <svl/smplhint.hxx>
 #include <comphelper/componentcontext.hxx>
+#include <comphelper/processfactory.hxx>
+#include <com/sun/star/awt/XWindowPeer.hpp>
 
 
 using namespace css;
@@ -71,6 +74,7 @@ SidebarPanel::~SidebarPanel (void)
 void SAL_CALL SidebarPanel::disposing (const css::lang::EventObject& rEventObject)
     throw(cssu::RuntimeException)
 {
+    (void)rEventObject;
 }
 
 

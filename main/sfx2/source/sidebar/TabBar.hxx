@@ -25,9 +25,14 @@
 #include "DeckDescriptor.hxx"
 #include "ResourceManager.hxx"
 
-#include "vcl/window.hxx"
+#include <vcl/menu.hxx>
+#include <vcl/window.hxx>
+
+#include <boost/function.hpp>
+#include <boost/tuple/tuple.hpp>
 
 class Button;
+class RadioButton;
 
 namespace sfx2 { namespace sidebar {
 
@@ -40,11 +45,20 @@ class TabBar
     : public Window
 {
 public:
+    /** DeckMenuData has entries for display name, deck id, and a flag:
+         - isCurrentDeck for the deck selection data
+         - isEnabled     for the show/hide menu 
+    */
+    typedef ::boost::tuple<rtl::OUString,rtl::OUString,bool> DeckMenuData;
+    typedef ::boost::function<void(
+            const Rectangle&,
+            const ::std::vector<DeckMenuData>& rDeckSelectionData,
+            const ::std::vector<DeckMenuData>& rDeckShowData)> PopupMenuProvider;
     TabBar (
         Window* pParentWindow,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        const ::boost::function<void(const DeckDescriptor&)>& rDeckActivationFunctor,
-        const ::boost::function<void(const Rectangle&)>& rPopupMenuProvider);
+        const ::boost::function<void(const ::rtl::OUString&rsDeckId)>& rDeckActivationFunctor,
+        const PopupMenuProvider& rPopupMenuProvider);
     virtual ~TabBar (void);
 
     virtual void Paint (const Rectangle& rUpdateArea);
@@ -53,7 +67,7 @@ public:
     static sal_Int32 GetDefaultWidth (void);
 
     void SetDecks (
-        const ResourceManager::DeckContainer& rDeckDescriptors);
+        const ResourceManager::IdContainer& rDeckIds);
     void HighlightDeck (const ::rtl::OUString& rsDeckId);
     void AddPopupMenuEntries (
         PopupMenu& rMenu,
@@ -61,7 +75,7 @@ public:
     void AddCustomizationMenuEntries (
         PopupMenu& rMenu,
         const sal_Int32 nFirstIndex);
-    const DeckDescriptor& GetDeckDescriptorForIndex (const sal_Int32 nIndex) const;
+    const ::rtl::OUString GetDeckIdForIndex (const sal_Int32 nIndex) const;
     void ToggleHideFlag (const sal_Int32 nIndex);
     void RestoreHideFlags (void);
     
@@ -73,16 +87,16 @@ private:
     public:
         DECL_LINK(HandleClick, Button*);
         RadioButton* mpButton;
-        DeckDescriptor maDeckDescriptor;
-        ::boost::function<void(const DeckDescriptor&)> maDeckActivationFunctor;
+        ::rtl::OUString msDeckId;
+        ::boost::function<void(const ::rtl::OUString&rsDeckId)> maDeckActivationFunctor;
         bool mbIsHidden;
         bool mbIsHiddenByDefault;
     };
     typedef ::std::vector<Item> ItemContainer;
     ItemContainer maItems;
-    const ::boost::function<void(const DeckDescriptor&)> maDeckActivationFunctor;
+    const ::boost::function<void(const ::rtl::OUString&rsDeckId)> maDeckActivationFunctor;
     sal_Int32 mnMenuSeparatorY;
-    ::boost::function<void(const Rectangle&)> maPopupMenuProvider;
+    PopupMenuProvider maPopupMenuProvider;
     
     RadioButton* CreateTabItem (const DeckDescriptor& rDeckDescriptor);
     Image GetItemImage (const DeckDescriptor& rDeskDescriptor) const;

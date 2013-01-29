@@ -66,8 +66,10 @@ void TabItem::Paint (const Rectangle& rUpdateArea)
                 Rectangle(Point(0,0), GetSizePixel()),
                 2,
                 bIsMouseOver||bIsSelected ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
-                bIsMouseOver ? Theme::GetPaint(Theme::Paint_TabItemBackground) : sidebar::Paint());
-        
+                bIsMouseOver
+                    ? Theme::GetPaint(Theme::Paint_TabItemBackgroundHighlight)
+                    : Theme::GetPaint(Theme::Paint_TabItemBackgroundNormal));
+
             const Image aIcon (Button::GetModeImage(Theme::IsHighContrastMode()
                     ? BMP_COLOR_HIGHCONTRAST
                     : BMP_COLOR_NORMAL));

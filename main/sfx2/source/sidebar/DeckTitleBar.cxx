@@ -24,6 +24,9 @@
 #include "DeckTitleBar.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 
+#include <vcl/image.hxx>
+
+
 namespace sfx2 { namespace sidebar {
 
 static const sal_Int32 gaLeftGripPadding (3);
@@ -63,7 +66,7 @@ Rectangle DeckTitleBar::GetTitleArea (const Rectangle& rTitleBarBox)
 void DeckTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
 {
     (void)rTitleBarBox;
-    
+        
     Image aGripImage (Theme::GetImage(Theme::Image_Grip));
 
     const Point aTopLeft (

@@ -25,6 +25,8 @@
 #include <sfx2/dllapi.h>
 #include <vcl/button.hxx>
 
+class ToolBox;
+
 namespace sfx2 { namespace sidebar {
 
 class SFX2_DLLPUBLIC ControlFactory

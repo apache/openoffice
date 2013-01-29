@@ -21,34 +21,73 @@
 
 #include "precompiled_sfx2.hxx"
 
-#include "DeckConfiguration.hxx"
-#include "Deck.hxx"
-#include "Panel.hxx"
-#include "TitleBar.hxx"
+#include "AsynchronousCall.hxx"
+
+#include <vcl/svapp.hxx>
 
 
 namespace sfx2 { namespace sidebar {
 
-DeckConfiguration::DeckConfiguration (void)
-    : mpDeck(NULL),
-      maPanels()
+AsynchronousCall::AsynchronousCall (const Action& rAction)
+    : maAction(rAction),
+      mnCallId(0)
 {
 }
 
 
 
 
-void DeckConfiguration::Dispose (void)
+AsynchronousCall::~AsynchronousCall (void)
 {
-    // Move the deck and its children temporarily to a new root to
-    // avoid a crash when calling removeWindow(,NULL).
-    Window aTemporaryParent (NULL,0);
-    mpDeck->Hide();
-    mpDeck->Dispose();
-    mpDeck->GetParent()->removeWindow(mpDeck, &aTemporaryParent);
-    maPanels.clear();
-    mpDeck = NULL;
+    CancelRequest();
+}
+
+
+
+
+void AsynchronousCall::RequestCall (const Action& rAction)
+{
+    CancelRequest();
+    maAction = rAction;
+    RequestCall();
+}
+
+
+
+
+void AsynchronousCall::RequestCall (void)
+{
+    if (mnCallId == 0)
+    {
+        Link aLink (LINK(this, AsynchronousCall, HandleUserCall));
+        mnCallId = Application::PostUserEvent(aLink);
+    }
+}
+
+
+
+
+void AsynchronousCall::CancelRequest (void)
+{
+    if (mnCallId != 0)
+    {
+        Application::RemoveUserEvent(mnCallId);
+        mnCallId = -1;
+    }
+}
+
+
+
+
+IMPL_LINK(AsynchronousCall, HandleUserCall, void*, EMPTYARG )
+{
+    mnCallId = 0;
+    if (maAction)
+        maAction();
+
+    return sal_True;
 }
 
 
 } } // end of namespace sfx2::sidebar
+

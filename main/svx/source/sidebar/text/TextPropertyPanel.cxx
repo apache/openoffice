@@ -45,12 +45,13 @@
 #include <sfx2/sidebar/propertypanel.hrc>
 #include <sfx2/sidebar/ControlFactory.hxx>
 #include <sfx2/sidebar/Theme.hxx>
+#include "sfx2/imagemgr.hxx"
 #include <svtools/ctrltool.hxx>
 #include <svtools/unitconv.hxx>
 
 #include <vcl/gradient.hxx>
 #include <vcl/svapp.hxx>
-
+#include <vcl/toolbox.hxx>
 
 using namespace css;
 using namespace cssu;
@@ -84,8 +85,7 @@ namespace svx { namespace sidebar {
 
 
 
-Reference<ui::XUIElement> TextPropertyPanel::Create (
-    const ::rtl::OUString& rsResourceURL,
+TextPropertyPanel* TextPropertyPanel::Create (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
@@ -97,24 +97,20 @@ Reference<ui::XUIElement> TextPropertyPanel::Create (
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to TextPropertyPanel::Create"), NULL, 2);
     
-    ::rtl::Reference<TextPropertyPanel> pPanel (
-        new TextPropertyPanel(
-            rsResourceURL,
-            pParent,
-            rxFrame,
-            pBindings));
-    return Reference<ui::XUIElement>(static_cast<XWeak*>(pPanel.get()), UNO_QUERY);
+    return new TextPropertyPanel(
+        pParent,
+        rxFrame,
+        pBindings);
 }
 
 
 
 
 TextPropertyPanel::TextPropertyPanel (
-    const ::rtl::OUString& rsResourceURL,
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
-    :	::sfx2::sidebar::SidebarPanelBase(rsResourceURL, pParent, rxFrame, SVX_RES(RID_SIDEBAR_TEXT_PANEL)),
+    :	Control(pParent, SVX_RES(RID_SIDEBAR_TEXT_PANEL)),
         mpFontNameBox (new SvxSBFontNameBox(this, SVX_RES(CB_SBFONT_FONT))),
     	maFontSizeBox		(this, SVX_RES(MB_SBFONT_FONTSIZE)),
     	mpToolBoxIncDec(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_INCREASE_DECREASE))),
@@ -180,11 +176,15 @@ TextPropertyPanel::TextPropertyPanel (
         mpFloatWinSpacing(NULL),
         mpPageSpacing(NULL)
         */
+        mxFrame(rxFrame),
         maContext(),
         mpBindings(pBindings)
 {
 	Initialize();
 	FreeResource();
+
+    // Let the Pane draw the background.
+    SetBackground(Wallpaper());
 }
 
 
@@ -205,6 +205,14 @@ TextPropertyPanel::~TextPropertyPanel (void)
 	delete mpPageSpacing;
 	delete mpFloatWinSpacing;
     */
+}
+
+
+
+
+Image TextPropertyPanel::GetIcon (const ::rtl::OUString& rsURL)
+{
+    return GetImage(mxFrame, rsURL, sal_False, Theme::IsHighContrastMode());
 }
 
 
@@ -304,108 +312,10 @@ void TextPropertyPanel::HandleContextChange (
 
 
 
-void TextPropertyPanel::PaintRect(const ToolBox &rTB)
-{
-	Point aPos = rTB.GetPosPixel();	
-	Size aSize = rTB.GetSizePixel();
-	Rectangle aRect( aPos, aSize );
-	aRect.Left() -= 2;
-	aRect.Top() -= 1;
-	aRect.Right() += 2;
-	aRect.Bottom() += 1;
-	Color aOldLineColor = GetLineColor();
-	Color aOldFillColor = GetFillColor();
-	Color aLineColor(200,209,225);
-//	Color aLineColor = GetSettings().GetStyleSettings().GetPropertySectionTBxBorderColor();
-	if(!GetSettings().GetStyleSettings().GetHighContrastMode())	
-		SetLineColor(aLineColor);
-	else
-		SetLineColor(GetSettings().GetStyleSettings().GetShadowColor());
-	SetFillColor(COL_TRANSPARENT);
-	DrawRect(aRect);
-
-	aRect.Left() += 1 ;
-	aRect.Top() += 1;
-	aRect.Right() -= 1;
-	aRect.Bottom() -= 1;
-	Color aStartColor(220,228,238);
-	Color aEndColor(245,245,247);
-	Gradient aBKGrad(GRADIENT_LINEAR, aStartColor, aEndColor);
-	if(!GetSettings().GetStyleSettings().GetHighContrastMode())	
-//	DrawGradient(aRect, GetSettings().GetStyleSettings().GetPropertySectionTBxBKGGradient());
-		DrawGradient(aRect, aBKGrad);
-	//else
-	//{
-	//	SetFillColor(GetSettings().GetStyleSettings().GetMenuColor());
-	//	DrawRect(aRect);
-	//}
-
-	SetLineColor(aOldLineColor);
-	SetFillColor(aOldFillColor);
-}
-
-
-
-
-void TextPropertyPanel::Paint(const Rectangle &rRect)
-{	
-	SidebarPanelBase::Paint(rRect);
-
-	if(mpFontColorUpdater == NULL && mpHighlightUpdater == NULL)
-		return;
-	
-	//size increase & decrease
-    //AF	PaintRect(*mpToolBoxIncDec);
-
-	//Font Toolbox
-	PaintRect(*mpToolBoxFont);
-
-	//font color toolbox
-	PaintRect(*mpToolBoxFontColor);
-
-	//script for sw
-    switch (maContext.GetCombinedContext())
-    {
-        case CombinedEnumContext(Application_Writer, Context_Text):
-        case CombinedEnumContext(Application_Writer, Context_Table):
-            PaintRect(*mpToolBoxHighlight);
-            // fall through
-        case CombinedEnumContext(Application_Writer, Context_DrawText):
-        case CombinedEnumContext(Application_Writer, Context_Annotation):
-            PaintRect(*mpToolBoxScriptSw);
-            break;
-
-        case CombinedEnumContext(Application_Calc, Context_EditCell):
-        case CombinedEnumContext(Application_Calc, Context_DrawText):
-        case CombinedEnumContext(Application_Draw, Context_DrawText):
-        case CombinedEnumContext(Application_Draw, Context_Text):
-        case CombinedEnumContext(Application_Draw, Context_Table):
-        case CombinedEnumContext(Application_Draw, Context_OutlineText):
-        case CombinedEnumContext(Application_Draw, Context_Draw):
-        case CombinedEnumContext(Application_Draw, Context_TextObject):
-        case CombinedEnumContext(Application_Draw, Context_Graphic):
-        case CombinedEnumContext(Application_Impress, Context_DrawText):
-        case CombinedEnumContext(Application_Impress, Context_Text):
-        case CombinedEnumContext(Application_Impress, Context_Table):
-        case CombinedEnumContext(Application_Impress, Context_OutlineText):
-        case CombinedEnumContext(Application_Impress, Context_Draw):
-        case CombinedEnumContext(Application_Impress, Context_TextObject):
-        case CombinedEnumContext(Application_Impress, Context_Graphic):
-            PaintRect(*mpToolBoxScript);
-            break;
-    }
-
-    if (maContext.GetCombinedContext() != CombinedEnumContext(Application_Calc, Context_Cell))
-	{
-		PaintRect(*mpToolBoxSpacing);
-	}
-}
-
-
-
-
 void TextPropertyPanel::DataChanged (const DataChangedEvent& rEvent)
 {
+    (void)rEvent;
+    
     SetupIcons();
 }
 
@@ -413,8 +323,8 @@ void TextPropertyPanel::DataChanged (const DataChangedEvent& rEvent)
 
 void TextPropertyPanel::Initialize (void)
 {
-	//<<modify fill font list
-	SfxObjectShell* pDocSh = SfxObjectShell::Current();
+    //<<modify fill font list
+    SfxObjectShell* pDocSh = SfxObjectShell::Current();
     const SfxPoolItem* pItem = NULL;
     
     if (pDocSh != NULL)
@@ -424,58 +334,59 @@ void TextPropertyPanel::Initialize (void)
     else
     {
         mpFontList = new FontList( Application::GetDefaultDevice() );
-		mbMustDelete = 1;
+        mbMustDelete = 1;
     }
 
     mpFontNameBox->SetAccessibleName(mpFontNameBox->GetQuickHelpText());
-    maFontSizeBox.Fill( &mpFontList->Get( String::CreateFromAscii( "" ), String::CreateFromAscii( "" )),mpFontList );
-	maFontSizeBox.SetAccessibleName(maFontSizeBox.GetQuickHelpText());
+    const FontInfo aFontInfo (mpFontList->Get( String::CreateFromAscii( "" ), String::CreateFromAscii( "" )));
+    maFontSizeBox.Fill(&aFontInfo,mpFontList);
+    maFontSizeBox.SetAccessibleName(maFontSizeBox.GetQuickHelpText());
 
 	//toolbox
     SetupIcons();
-	InitToolBoxIncDec();
-	InitToolBoxFont();
-	InitToolBoxFontColor();
-	InitToolBoxScript();
-	InitToolBoxSpacing();
-	InitToolBoxHighlight();
+    InitToolBoxIncDec();
+    InitToolBoxFont();
+    InitToolBoxFontColor();
+    InitToolBoxScript();
+    InitToolBoxSpacing();
+    InitToolBoxHighlight();
 
 #ifdef HAS_IA2
-	mpFontNameBox->SetAccRelationLabeledBy(&maFontNameBox);
+    mpFontNameBox->SetAccRelationLabeledBy(&maFontNameBox);
     mpFontNameBox->SetMpSubEditAccLableBy(&maFontNameBox);
     maFontSizeBox.SetAccRelationLabeledBy(&maFontSizeBox);
-	maFontSizeBox.SetMpSubEditAccLableBy(&maFontSizeBox);
-	maToolBoxFont.SetAccRelationLabeledBy(&maToolBoxFont);
-	maToolBoxIncDec.SetAccRelationLabeledBy(&maToolBoxIncDec);
-	maToolBoxFontColor.SetAccRelationLabeledBy(&maToolBoxFontColor);
-	maToolBoxScript.SetAccRelationLabeledBy(&maToolBoxScript);
-	maToolBoxScriptSw.SetAccRelationLabeledBy(&maToolBoxScriptSw);
-	maToolBoxSpacing.SetAccRelationLabeledBy(&maToolBoxSpacing);
-	maToolBoxHighlight.SetAccRelationLabeledBy(&maToolBoxHighlight);
+    maFontSizeBox.SetMpSubEditAccLableBy(&maFontSizeBox);
+    maToolBoxFont.SetAccRelationLabeledBy(&maToolBoxFont);
+    maToolBoxIncDec.SetAccRelationLabeledBy(&maToolBoxIncDec);
+    maToolBoxFontColor.SetAccRelationLabeledBy(&maToolBoxFontColor);
+    maToolBoxScript.SetAccRelationLabeledBy(&maToolBoxScript);
+    maToolBoxScriptSw.SetAccRelationLabeledBy(&maToolBoxScriptSw);
+    maToolBoxSpacing.SetAccRelationLabeledBy(&maToolBoxSpacing);
+    maToolBoxHighlight.SetAccRelationLabeledBy(&maToolBoxHighlight);
 #endif
 
-	//init state
-	mpHeightItem = NULL;
-	meWeight = WEIGHT_NORMAL;
-	meItalic = ITALIC_NONE;
-	mbShadow = false;
-	meStrike = STRIKEOUT_NONE;
-	mbPostureAvailable = true;
-	mbWeightAvailable = true;
-	meUnderline = UNDERLINE_NONE;
-	meUnderlineColor = COL_AUTO;   //
-	maColor = COL_BLACK;
-	mbColorAvailable = true;
-	maBackColor = COL_AUTO;
-	mbBackColorAvailable = true;
-	meColorType = FONT_COLOR;
-	meEscape = SVX_ESCAPEMENT_OFF;
-	mbSuper = false;
-	mbSub = false;
-	mbKernAvailable = true;
-	mbKernLBAvailable = true;
-	mlKerning = 0;
-	mpFontColorUpdater.reset(new ToolboxButtonColorUpdater(
+    //init state
+    mpHeightItem = NULL;
+    meWeight = WEIGHT_NORMAL;
+    meItalic = ITALIC_NONE;
+    mbShadow = false;
+    meStrike = STRIKEOUT_NONE;
+    mbPostureAvailable = true;
+    mbWeightAvailable = true;
+    meUnderline = UNDERLINE_NONE;
+    meUnderlineColor = COL_AUTO;   //
+    maColor = COL_BLACK;
+    mbColorAvailable = true;
+    maBackColor = COL_AUTO;
+    mbBackColorAvailable = true;
+    meColorType = FONT_COLOR;
+    meEscape = SVX_ESCAPEMENT_OFF;
+    mbSuper = false;
+    mbSub = false;
+    mbKernAvailable = true;
+    mbKernLBAvailable = true;
+    mlKerning = 0;
+    mpFontColorUpdater.reset(new ToolboxButtonColorUpdater(
             SID_ATTR_CHAR_COLOR,
             TBI_FONTCOLOR,
             mpToolBoxFontColor.get(),
@@ -486,31 +397,31 @@ void TextPropertyPanel::Initialize (void)
             mpToolBoxHighlight.get(),
             TBX_UPDATER_MODE_CHAR_COLOR_NEW));
 
-	//set handler
-	mpFontNameBox->SetBindings(mpBindings);
-	//add 
-	Link aLink = LINK(this, TextPropertyPanel, FontSelHdl);
-	mpFontNameBox->SetSelectHdl(aLink);
-	//add end
+    //set handler
+    mpFontNameBox->SetBindings(mpBindings);
+    //add 
+    Link aLink = LINK(this, TextPropertyPanel, FontSelHdl);
+    mpFontNameBox->SetSelectHdl(aLink);
+    //add end
 	
-	aLink = LINK(this, TextPropertyPanel, FontSizeModifyHdl);
-	maFontSizeBox.SetModifyHdl(aLink);
-	//add 
-	aLink = LINK(this, TextPropertyPanel, FontSizeSelHdl);
-	maFontSizeBox.SetSelectHdl(aLink);
-	//add end
-	aLink = LINK(this, TextPropertyPanel, FontSizeLoseFocus);
-	maFontSizeBox.SetLoseFocusHdl(aLink);
+    aLink = LINK(this, TextPropertyPanel, FontSizeModifyHdl);
+    maFontSizeBox.SetModifyHdl(aLink);
+    //add 
+    aLink = LINK(this, TextPropertyPanel, FontSizeSelHdl);
+    maFontSizeBox.SetSelectHdl(aLink);
+    //add end
+    aLink = LINK(this, TextPropertyPanel, FontSizeLoseFocus);
+    maFontSizeBox.SetLoseFocusHdl(aLink);
 
-// add
-	long aSizeBoxHeight = maFontSizeBox.GetSizePixel().getHeight();;
-	Point aPosFontSize = maFontSizeBox.GetPosPixel();
-	long aPosY = aPosFontSize.getY();
-	Point pTBIncDec = mpToolBoxIncDec->GetPosPixel();
-	long aIncDecHeight = mpToolBoxIncDec->GetSizePixel().getHeight();
-	pTBIncDec.setY(aPosY+aSizeBoxHeight/2-aIncDecHeight/2);
-	mpToolBoxIncDec->SetPosPixel(pTBIncDec);
-	//end
+    // add
+    long aSizeBoxHeight = maFontSizeBox.GetSizePixel().getHeight();;
+    Point aPosFontSize = maFontSizeBox.GetPosPixel();
+    long aPosY = aPosFontSize.getY();
+    Point pTBIncDec = mpToolBoxIncDec->GetPosPixel();
+    long aIncDecHeight = mpToolBoxIncDec->GetSizePixel().getHeight();
+    pTBIncDec.setY(aPosY+aSizeBoxHeight/2-aIncDecHeight/2);
+    mpToolBoxIncDec->SetPosPixel(pTBIncDec);
+    //end
 }
 
 
@@ -553,8 +464,6 @@ void TextPropertyPanel::InitToolBoxFontColor()
 	Size aTbxSize( mpToolBoxFontColor->CalcWindowSizePixel() );
 	mpToolBoxFontColor->SetOutputSizePixel( aTbxSize );
 	mpToolBoxFontColor->SetItemBits( TBI_FONTCOLOR, mpToolBoxFontColor->GetItemBits( TBI_FONTCOLOR ) | TIB_DROPDOWNONLY );
-	mpToolBoxFontColor->SetBackground(Wallpaper());
-	mpToolBoxFontColor->SetPaintTransparent(true);
 	
 	Link aLink = LINK(this, TextPropertyPanel, ToolBoxFontColorDropHdl);
     mpToolBoxFontColor->SetDropdownClickHdl ( aLink );
@@ -565,16 +474,12 @@ void TextPropertyPanel::InitToolBoxScript()
 {
 	Size aTbxSize( mpToolBoxScriptSw->CalcWindowSizePixel() );
 	mpToolBoxScriptSw->SetOutputSizePixel( aTbxSize );
-	mpToolBoxScriptSw->SetBackground(Wallpaper());
-	mpToolBoxScriptSw->SetPaintTransparent(true);
 	
 	Link aLink = LINK(this, TextPropertyPanel, ToolBoxSwScriptSelectHdl);
     mpToolBoxScriptSw->SetSelectHdl ( aLink );
 
 	aTbxSize = mpToolBoxScript->CalcWindowSizePixel() ;
 	mpToolBoxScript->SetOutputSizePixel( aTbxSize );
-	mpToolBoxScript->SetBackground(Wallpaper());
-	mpToolBoxScript->SetPaintTransparent(true);
 
 	aLink = LINK(this, TextPropertyPanel, ToolBoxScriptSelectHdl);
     mpToolBoxScript->SetSelectHdl ( aLink );
@@ -584,8 +489,6 @@ void TextPropertyPanel::InitToolBoxSpacing()
 	Size aTbxSize( mpToolBoxSpacing->CalcWindowSizePixel() );
 	mpToolBoxSpacing->SetOutputSizePixel( aTbxSize );
 	mpToolBoxSpacing->SetItemBits( TBI_SPACING, mpToolBoxSpacing->GetItemBits( TBI_SPACING ) | TIB_DROPDOWNONLY );
-	mpToolBoxSpacing->SetBackground(Wallpaper());
-	mpToolBoxSpacing->SetPaintTransparent(true);
 
 	Link aLink = LINK(this, TextPropertyPanel, SpacingClickHdl);
     mpToolBoxSpacing->SetDropdownClickHdl ( aLink );
@@ -596,8 +499,6 @@ void TextPropertyPanel::InitToolBoxHighlight()
 	Size aTbxSize( mpToolBoxHighlight->CalcWindowSizePixel() );
 	mpToolBoxHighlight->SetOutputSizePixel( aTbxSize );
 	mpToolBoxHighlight->SetItemBits( TBI_HIGHLIGHT, mpToolBoxHighlight->GetItemBits( TBI_HIGHLIGHT ) | TIB_DROPDOWNONLY );
-	mpToolBoxHighlight->SetBackground(Wallpaper());
-	mpToolBoxHighlight->SetPaintTransparent(true);
 
 	Link aLink = LINK(this, TextPropertyPanel, ToolBoxHighlightDropHdl);
     mpToolBoxHighlight->SetDropdownClickHdl ( aLink );
@@ -746,7 +647,8 @@ IMPL_LINK(TextPropertyPanel, ToolboxFontSelectHandler, ToolBox*, pToolBox)
 		//add , keep underline's color
 		if(meUnderline == UNDERLINE_NONE)
 		{
-			meUnderline = GetDefaultUnderline();
+			//AF: meUnderline = GetDefaultUnderline();
+			meUnderline = UNDERLINE_SINGLE;
 			//<<modify 
 			//SvxTextLineItem aLineItem(meUnderline, SID_ATTR_CHAR_UNDERLINE);
 			SvxUnderlineItem aLineItem(meUnderline, SID_ATTR_CHAR_UNDERLINE);
@@ -1361,13 +1263,15 @@ void TextPropertyPanel::NotifyItemUpdate (
                 const SvxBrushItem* pItem =  (const SvxBrushItem*)pState;
                 maColor = pItem->GetColor();
                 mbColorAvailable = true;
-                mpFontColorUpdater->Update(maColor);
+				if (mpFontColorUpdater)
+	                mpFontColorUpdater->Update(maColor);
             }
             else
             {
                 mbColorAvailable = false;
                 maColor.SetColor(COL_AUTO);
-                mpFontColorUpdater->Update(maColor);
+				if (mpFontColorUpdater)
+					mpFontColorUpdater->Update(maColor);
             }
             break;
         case SID_ATTR_BRUSH_CHAR:

@@ -22,7 +22,12 @@
 #ifndef SFX_SIDEBAR_TOOLS_HXX
 #define SFX_SIDEBAR_TOOLS_HXX
 
-#include "vcl/image.hxx"
+#include <vcl/image.hxx>
+#include <vcl/gradient.hxx>
+#include <tools/svborder.hxx>
+
+#include <com/sun/star/awt/Gradient.hpp>
+#include <com/sun/star/frame/XFrame.hpp>
 
 
 #define A2S(s) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(s)))
@@ -44,6 +49,11 @@ public:
     static Image GetImage (
         const ::rtl::OUString& rsURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
+
+    static css::awt::Gradient VclToAwtGradient (const Gradient aGradient);
+    static Gradient AwtToVclGradient (const css::awt::Gradient aGradient);
+
+    static SvBorder RectangleToSvBorder (const Rectangle aBox);
 };
 
 

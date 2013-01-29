@@ -22,8 +22,11 @@
 #include "precompiled_sfx2.hxx"
 
 #include "SidebarToolBox.hxx"
+#include "ToolBoxBackground.hxx"
+#include "sfx2/sidebar/Theme.hxx"
 
 #include <vcl/gradient.hxx>
+
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -35,10 +38,12 @@ namespace sfx2 { namespace sidebar {
 SidebarToolBox::SidebarToolBox (
     Window* pParentWindow,
     const ResId& rResId)
-    : ToolBox(pParentWindow, rResId)
+    : ToolBox(pParentWindow, rResId),
+      mbParentIsBorder(false),
+      maItemSeparator(Theme::GetImage(Theme::Image_ToolBoxItemSeparator))
 {
-	SetBackground(Wallpaper());
-	SetPaintTransparent(true);
+    SetBackground(Wallpaper());
+    SetPaintTransparent(true);
 }
 
 
@@ -51,51 +56,104 @@ SidebarToolBox::~SidebarToolBox (void)
 
 
 
+void SidebarToolBox::SetBorderWindow (const Window* pBorderWindow)
+{
+    if (pBorderWindow != GetParent())
+    {
+        OSL_ASSERT("SetBorderWindow can only handle parent as border window");
+        return;
+    }
+
+    if ( ! mbParentIsBorder)
+    {
+        mbParentIsBorder = true;
+
+        SetPosSizePixel (
+            GetPosPixel().X(),
+            GetPosPixel().Y(),
+            GetSizePixel().Width(),
+            GetSizePixel().Height(),
+            WINDOW_POSSIZE_ALL);
+    }
+}
+
+
+
+
 void SidebarToolBox::Paint (const Rectangle& rRect)
 {
-    /*
-    OutputDevice* pDevice (GetParent());
-
-    if (pDevice != NULL)
-    {
-        Rectangle aRect (GetPosPixel(), GetSizePixel());
-        aRect.Left() -= 2;
-        aRect.Top() -= 1;
-        aRect.Right() += 2;
-        aRect.Bottom() += 1;
-        const Color aSavedLineColor = pDevice->GetLineColor();
-        const Color aSavedFillColor = pDevice->GetFillColor();
-        Color aLineColor(200,209,225);
-        //	Color aLineColor = GetSettings().GetStyleSettings().GetPropertySectionTBxBorderColor();
-        if(!GetSettings().GetStyleSettings().GetHighContrastMode())	
-            pDevice->SetLineColor(aLineColor);
-        else
-            pDevice->SetLineColor(GetSettings().GetStyleSettings().GetShadowColor());
-        pDevice->SetFillColor(COL_TRANSPARENT);
-        pDevice->DrawRect(aRect);
-
-        aRect.Left() += 1 ;
-        aRect.Top() += 1;
-        aRect.Right() -= 1;
-        aRect.Bottom() -= 1;
-        Color aStartColor(220,228,238);
-        Color aEndColor(245,245,247);
-        Gradient aBKGrad(GRADIENT_LINEAR, aStartColor, aEndColor);
-        if(!GetSettings().GetStyleSettings().GetHighContrastMode())	
-            //	DrawGradient(aRect, GetSettings().GetStyleSettings().GetPropertySectionTBxBKGGradient());
-            pDevice->DrawGradient(aRect, aBKGrad);
-	//else
-	//{
-	//	SetFillColor(GetSettings().GetStyleSettings().GetMenuColor());
-	//	DrawRect(aRect);
-	//}
-
-        pDevice->SetLineColor(aSavedLineColor);
-        pDevice->SetFillColor(aSavedFillColor);
-    }
-    */
-
     ToolBox::Paint(rRect);
+    
+    OSL_TRACE("paint ToolBox at %d,%d",
+        GetPosPixel().X(),
+        GetPosPixel().Y());
+
+    if (Theme::GetBoolean(Theme::Bool_UseToolBoxItemSeparator))
+    {
+        const sal_Int32 nSeparatorY ((GetSizePixel().Height() - maItemSeparator.GetSizePixel().Height())/2);
+        const sal_uInt16 nItemCount (GetItemCount());
+        int nLastRight (-1);
+        for (sal_uInt16 nIndex=0; nIndex<nItemCount; ++nIndex)
+        {
+            const Rectangle aItemBoundingBox (GetItemPosRect(nIndex));
+            if (nLastRight >= 0)
+            {
+                const int nSeparatorX ((nLastRight + aItemBoundingBox.Left() - 1) / 2);
+                DrawImage(Point(nSeparatorX,nSeparatorY), maItemSeparator);
+            }
+        
+            nLastRight = aItemBoundingBox.Right();
+        }
+    }
 }
+
+
+
+
+Point SidebarToolBox::GetPosPixel (void) const
+{
+    if (mbParentIsBorder)
+    {
+        const Point aParentPoint (GetParent()->GetPosPixel());
+        const Point aChildPoint (ToolBox::GetPosPixel());
+        return Point(
+            aParentPoint.X() + aChildPoint.X(),
+            aParentPoint.Y() + aChildPoint.Y());
+    }
+    else
+        return ToolBox::GetPosPixel();
+}
+
+
+
+
+void SidebarToolBox::SetPosSizePixel (
+    long nX,
+    long nY,
+    long nWidth,
+    long nHeight,
+    sal_uInt16 nFlags)
+{
+    if (mbParentIsBorder)
+    {
+        const Point aRelativePosition (static_cast<ToolBoxBackground*>(GetParent())->SetToolBoxChild(
+                this,
+                nX,
+                nY,
+                nWidth,
+                nHeight,
+                nFlags));
+        ToolBox::SetPosSizePixel(
+            aRelativePosition.X(),
+            aRelativePosition.Y(),
+            nWidth,
+            nHeight,
+            nFlags);
+    }
+    else
+        ToolBox::SetPosSizePixel(nX, nY, nWidth, nHeight, nFlags);
+}
+
+
 
 } } // end of namespace sfx2::sidebar

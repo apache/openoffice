@@ -29,6 +29,8 @@
 
 #include <tools/svborder.hxx>
 #include <vcl/gradient.hxx>
+#include <vcl/image.hxx>
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -83,8 +85,8 @@ void PanelTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
     if (mpPanel != NULL)
     {
         Image aImage (mpPanel->IsExpanded()
-            ? Theme::GetImage(Theme::Image_Expand)
-            : Theme::GetImage(Theme::Image_Collapse));
+            ? Theme::GetImage(Theme::Image_Collapse)
+            : Theme::GetImage(Theme::Image_Expand));
         const Point aTopLeft (
             gaLeftIconPadding,
             (GetSizePixel().Height()-aImage.GetSizePixel().Height())/2);

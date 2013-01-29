@@ -23,6 +23,7 @@
 #define SFX_SIDEBAR_DECK_HXX
 
 #include "vcl/window.hxx"
+#include "vcl/image.hxx"
 
 
 namespace sfx2 { namespace sidebar {

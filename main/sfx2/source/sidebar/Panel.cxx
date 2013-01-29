@@ -29,6 +29,7 @@
 
 #include <tools/svborder.hxx>
 
+#include <com/sun/star/awt/XWindowPeer.hpp>
 #include <com/sun/star/ui/XToolPanel.hpp>
 
 
@@ -47,6 +48,7 @@ Panel::Panel (
     Window* pParentWindow,
     const ::boost::function<void(void)>& rDeckLayoutTrigger)
     : Window(pParentWindow),
+      msPanelId(rPanelDescriptor.msId),
       msLayoutHint(rPanelDescriptor.msLayout),
       mpTitleBar(new PanelTitleBar(rPanelDescriptor.msTitle, pParentWindow, this)),
       mbIsTitleBarOptional(rPanelDescriptor.mbIsTitleBarOptional),
@@ -72,12 +74,22 @@ Panel::~Panel (void)
 void Panel::Dispose (void)
 {
     mxVerticalStackLayoutElement = NULL;
+
+    
+    if (mxElement.is())
     {
+        Reference<lang::XComponent> xComponent (mxElement->getRealInterface(), UNO_QUERY);
+        if (xComponent.is())
+            xComponent->dispose();
+    }
+
+    {    
         Reference<lang::XComponent> xComponent (mxElement, UNO_QUERY);
         mxElement = NULL;
         if (xComponent.is())
             xComponent->dispose();
     }
+
     {
         Reference<lang::XComponent> xComponent (mxElementWindow, UNO_QUERY);
         mxElementWindow = NULL;
@@ -145,6 +157,17 @@ void Panel::SetExpanded (const bool bIsExpanded)
 bool Panel::IsExpanded (void) const
 {
     return mbIsExpanded;
+}
+
+
+
+
+bool Panel::HasIdPredicate (const ::rtl::OUString& rsId) const
+{
+    if (this == NULL)
+        return false;
+    else
+        return msPanelId.equals(rsId);
 }
 
 

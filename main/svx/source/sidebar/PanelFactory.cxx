@@ -22,10 +22,10 @@
 #include "sidebar/PanelFactory.hxx"
 
 #include "text/TextPropertyPanel.hxx"
-
+#include <sfx2/sidebar/SidebarPanelBase.hxx>
+#include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 #include <vcl/window.hxx>
-#include <sfx2/sfxbasecontroller.hxx>
 #include <rtl/ref.hxx>
 
 
@@ -51,7 +51,6 @@ namespace svx { namespace sidebar {
 
 cssu::Reference<cssu::XInterface> SAL_CALL PanelFactory::createInstance (
     const uno::Reference<lang::XMultiServiceFactory>& rxFactory)
-    throw(uno::Exception)
 {
     (void)rxFactory;
     
@@ -136,7 +135,13 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             NULL);
 
     if (rsResourceURL.endsWithAsciiL("/TextPropertyPanel", strlen("/TextPropertyPanel")))
-        xElement = TextPropertyPanel::Create(rsResourceURL, pParentWindow, xFrame, pBindings);
+    {
+        TextPropertyPanel* pPanel = TextPropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel);
+    }
 
     return xElement;
 }

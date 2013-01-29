@@ -24,14 +24,14 @@
 
 #include "EnumContext.hxx"
 
-#include <vcl/ctrl.hxx>
-#include <cppuhelper/compbase3.hxx>
+#include <cppuhelper/compbase4.hxx>
 #include <cppuhelper/basemutex.hxx>
 
 #include <com/sun/star/frame/XController.hpp>
 #include <com/sun/star/ui/XContextChangeEventListener.hpp>
 #include <com/sun/star/ui/XUIElement.hpp>
 #include <com/sun/star/ui/XToolPanel.hpp>
+#include <com/sun/star/ui/XVerticalStackLayoutElement.hpp>
 #include <boost/noncopyable.hpp>
 
 
@@ -39,14 +39,18 @@ namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
 
 
+class Control;
+
+
 namespace sfx2 { namespace sidebar {
 
 namespace
 {
-    typedef ::cppu::WeakComponentImplHelper3 <
+    typedef ::cppu::WeakComponentImplHelper4 <
         css::ui::XContextChangeEventListener,
         css::ui::XUIElement,
-        css::ui::XToolPanel
+        css::ui::XToolPanel,
+        css::ui::XVerticalStackLayoutElement
         > SidebarPanelBaseInterfaceBase;
 }
 
@@ -56,13 +60,25 @@ namespace
 class SFX2_DLLPUBLIC SidebarPanelBase
     : private ::boost::noncopyable,
       private ::cppu::BaseMutex,
-      public SidebarPanelBaseInterfaceBase,
-      public Control
+      public SidebarPanelBaseInterfaceBase
 {
 public:
+    class ContextChangeReceiverInterface
+    {
+      public:
+        virtual void HandleContextChange (
+            const EnumContext aContext) = 0;
+    };
+    
+    static cssu::Reference<css::ui::XUIElement> Create (
+        const ::rtl::OUString& rsResourceURL,
+        const cssu::Reference<css::frame::XFrame>& rxFrame,
+        Control* pControl);
+
     // XContextChangeEventListener
     virtual void SAL_CALL notifyContextChangeEvent (
-        const css::ui::ContextChangeEventObject& rEvent);
+        const css::ui::ContextChangeEventObject& rEvent)
+        throw (cssu::RuntimeException);
 
     // XEventListener
     virtual void SAL_CALL disposing (
@@ -85,30 +101,25 @@ public:
         throw(cssu::RuntimeException);
     virtual cssu::Reference<css::awt::XWindow> SAL_CALL getWindow (void)
         throw(cssu::RuntimeException);
+
+    // XVerticalStackLayoutElement
+    virtual sal_Int32 SAL_CALL getHeightForWidth (const sal_Int32 nWidth)
+        throw(cssu::RuntimeException);
     
 protected:
     SidebarPanelBase (
         const ::rtl::OUString& rsResourceURL,
-        Window* pParentWindow,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        const ResId& rResId);
+        Control* pControl);
     virtual ~SidebarPanelBase (void);
 
     virtual void SAL_CALL disposing (void)
         throw (cssu::RuntimeException);
 
-    virtual void HandleContextChange (
-        const EnumContext aContext) = 0;
-
-    FontUnderline GetDefaultUnderline (void) const;
-    void SetDefaultUnderline (const FontUnderline eFontUnderline);
-
-    Image GetIcon (const ::rtl::OUString& rsURL);
-
 private:
     const ::rtl::OUString msResourceURL;
     cssu::Reference<css::frame::XFrame> mxFrame;
-    FontUnderline meFontUnderline;
+    Control* mpControl;
 };
 
 } } // end of namespace sfx2::sidebar

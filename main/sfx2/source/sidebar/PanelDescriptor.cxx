@@ -34,7 +34,8 @@ PanelDescriptor::PanelDescriptor (void)
       msHelpURL(),
       maContexts(),
       msLayout(),
-      msImplementationURL()
+      msImplementationURL(),
+      mnOrderIndex(10000) // Default value as defined in Sidebar.xcs
 {
 }
 
@@ -49,7 +50,8 @@ PanelDescriptor::PanelDescriptor (const PanelDescriptor& rOther)
       msHelpURL(rOther.msHelpURL),
       maContexts(rOther.maContexts),
       msLayout(rOther.msLayout),
-      msImplementationURL(rOther.msImplementationURL)
+      msImplementationURL(rOther.msImplementationURL),
+      mnOrderIndex(rOther.mnOrderIndex)
 {
 }
 

@@ -22,11 +22,11 @@
 #ifndef SVX_SIDEBAR_TEXT_PROPERTY_PAGE_HXX
 #define SVX_SIDEBAR_TEXT_PROPERTY_PAGE_HXX
 
+#include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
 
 #include <svtools/ctrlbox.hxx>
-#include <vcl/toolbox.hxx>
 #include <svx/tbxcolorupdate.hxx>
 #include <editeng/svxenum.hxx>
 #include <editeng/fhgtitem.hxx>
@@ -36,24 +36,25 @@
 #include <boost/scoped_ptr.hpp>
 
 
+class FloatingWindow;
+class ToolBox;
+
+
 namespace svx { namespace sidebar {
 
 class SvxSBFontNameBox;
 
 class TextPropertyPanel
-    : public ::sfx2::sidebar::SidebarPanelBase,
+    : public Control,
+      public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
       public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:
-    static cssu::Reference<css::ui::XUIElement> Create (
-        const ::rtl::OUString& rsResourceURL,
+    static TextPropertyPanel* Create (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         SfxBindings* pBindings);
 
-    //	SVX_DLLPUBLIC static SfxSectionPage* createSectionPage(Window* pParent, SfxPropertyPanel* pPanel, PropertySectionType nPageId);
-
-    virtual void Paint (const Rectangle &rRect);
     virtual void DataChanged (const DataChangedEvent& rEvent);
 
     //	void SetDefaultUnderline(FontUnderline eUnderline);
@@ -86,7 +87,6 @@ public:
         BACK_COLOR = 2
     };
 
-protected:
     virtual void HandleContextChange (
         const ::sfx2::sidebar::EnumContext aContext);
 
@@ -179,17 +179,16 @@ private:
 	bool mbMustDelete;
 	bool mbFocusOnFontSizeCtrl;
 
+    cssu::Reference<css::frame::XFrame> mxFrame;
     ::sfx2::sidebar::EnumContext maContext;
     SfxBindings* mpBindings;
     
     TextPropertyPanel (
-        const ::rtl::OUString& rsResourceURL,
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         SfxBindings* pBindings);
     virtual ~TextPropertyPanel (void);
 
-	void PaintRect(const ToolBox &rTB);
 	void Initialize (void);
     void SetupIcons (void);
 	void InitToolBoxFont();
@@ -235,6 +234,8 @@ private:
 	DECL_LINK(ToolBoxHighlightDropHdl, ToolBox *);
 
 	void TextStyleChanged();
+
+    Image GetIcon (const ::rtl::OUString& rsURL);
 };
 
 } } // end of namespace ::svx::sidebar

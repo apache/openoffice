@@ -24,8 +24,15 @@
 #include "ResourceManager.hxx"
 #include <unotools/confignode.hxx>
 #include <comphelper/componentcontext.hxx>
+#include <comphelper/processfactory.hxx>
 #include <comphelper/namedvaluecollection.hxx>
+#include <comphelper/types.hxx>
+#include <rtl/ustrbuf.hxx>
 #include <tools/diagnose_ex.h>
+
+#include <com/sun/star/frame/XModuleManager.hpp>
+
+#include <map>
 
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
@@ -81,12 +88,12 @@ ResourceManager::~ResourceManager (void)
 
 
 const DeckDescriptor* ResourceManager::GetBestMatchingDeck (
-    const Context& rContext,
+    const EnumContext& rContext,
     const Reference<frame::XFrame>& rxFrame)
 {
     ReadLegacyAddons(rxFrame);
     
-    sal_Int32 nBestMatch (Context::NoMatch);
+    sal_Int32 nBestMatch (EnumContext::NoMatch);
     const DeckContainer::const_iterator iEnd (maDecks.end());
     DeckContainer::const_iterator iBestDeck (iEnd);
     
@@ -97,10 +104,10 @@ const DeckDescriptor* ResourceManager::GetBestMatchingDeck (
         const sal_Int32 nMatch (rContext.EvaluateMatch(iDeck->maContexts));
         if (nMatch < nBestMatch)
         {
-            // Found a better matching decks.
+            // Found a better matching deck.
             nBestMatch = nMatch;
             iBestDeck = iDeck;
-            if (nBestMatch == Context::OptimalMatch)
+            if (nBestMatch == EnumContext::OptimalMatch)
             {
                 // We will not find a better match.
                 break;
@@ -116,9 +123,66 @@ const DeckDescriptor* ResourceManager::GetBestMatchingDeck (
 
 
 
-const ResourceManager::DeckContainer& ResourceManager::GetMatchingDecks (
-    DeckContainer& rDeckDescriptors,
-    const Context& rContext,
+const DeckDescriptor* ResourceManager::GetDeckDescriptor (
+    const ::rtl::OUString& rsDeckId) const
+{
+    for (DeckContainer::const_iterator
+             iDeck(maDecks.begin()),
+             iEnd(maDecks.end());
+         iDeck!=iEnd;
+         ++iDeck)
+    {
+        if (iDeck->msId.equals(rsDeckId))
+            return &*iDeck;
+    }
+    return NULL;
+}
+
+
+
+
+const PanelDescriptor* ResourceManager::GetPanelDescriptor (
+    const ::rtl::OUString& rsPanelId) const
+{
+    for (PanelContainer::const_iterator
+             iPanel(maPanels.begin()),
+             iEnd(maPanels.end());
+         iPanel!=iEnd;
+         ++iPanel)
+    {
+        if (iPanel->msId.equals(rsPanelId))
+            return &*iPanel;
+    }
+    return NULL;
+}
+
+
+
+
+void ResourceManager::SetIsDeckEnabled (
+    const ::rtl::OUString& rsDeckId,
+    const bool bIsEnabled)
+{
+    for (DeckContainer::iterator
+             iDeck(maDecks.begin()),
+             iEnd(maDecks.end());
+         iDeck!=iEnd;
+         ++iDeck)
+    {
+        if (iDeck->msId.equals(rsDeckId))
+        {
+            iDeck->mbIsEnabled = bIsEnabled;
+            return;
+        }
+    }
+}
+
+
+
+
+const ResourceManager::IdContainer& ResourceManager::GetMatchingDecks (
+    IdContainer& rDeckIds,
+    const EnumContext& rContext,
     const Reference<frame::XFrame>& rxFrame)
 {
     ReadLegacyAddons(rxFrame);
@@ -129,24 +193,25 @@ const ResourceManager::DeckContainer& ResourceManager::GetMatchingDecks (
          iDeck!=iEnd;
          ++iDeck)
     {
-        if (rContext.EvaluateMatch(iDeck->maContexts) != Context::NoMatch)
-            rDeckDescriptors.push_back(*iDeck);
+        if (rContext.EvaluateMatch(iDeck->maContexts) != EnumContext::NoMatch)
+            rDeckIds.push_back(iDeck->msId);
     }
 
-    return rDeckDescriptors;
+    return rDeckIds;
 }
 
 
 
 
-const ResourceManager::PanelContainer& ResourceManager::GetMatchingPanels (
-    PanelContainer& rPanelDescriptors,
-    const Context& rContext,
+const ResourceManager::IdContainer& ResourceManager::GetMatchingPanels (
+    IdContainer& rPanelIds,
+    const EnumContext& rContext,
     const ::rtl::OUString& rsDeckId,
     const Reference<frame::XFrame>& rxFrame)
 {
     ReadLegacyAddons(rxFrame);
 
+    ::std::multimap<sal_Int32,OUString> aOrderedIds;
     for (PanelContainer::const_iterator
              iPanel(maPanels.begin()),
              iEnd(maPanels.end());
@@ -155,11 +220,22 @@ const ResourceManager::PanelContainer& ResourceManager::GetMatchingPanels (
     {
         const PanelDescriptor& rPanelDescriptor (*iPanel);
         if (rPanelDescriptor.msDeckId.equals(rsDeckId))
-            if (rContext.EvaluateMatch(rPanelDescriptor.maContexts) != Context::NoMatch)
-                rPanelDescriptors.push_back(*iPanel);
+            if (rContext.EvaluateMatch(rPanelDescriptor.maContexts) != EnumContext::NoMatch)
+                aOrderedIds.insert(::std::multimap<sal_Int32,OUString>::value_type(
+                        iPanel->mnOrderIndex,
+                        iPanel->msId));
     }
 
-    return rPanelDescriptors;
+    for (::std::multimap<sal_Int32,OUString>::const_iterator
+             iId(aOrderedIds.begin()),
+             iEnd(aOrderedIds.end());
+         iId!=iEnd;
+         ++iId)
+    {
+        rPanelIds.push_back(iId->second);
+    }
+    
+    return rPanelIds;
 }
 
 
@@ -193,6 +269,7 @@ void ResourceManager::ReadDeckList (void)
         rDeckDescriptor.msHighContrastIconURL = ::comphelper::getString(aDeckNode.getNodeValue("HighContrastIconURL"));
         rDeckDescriptor.msHelpURL = ::comphelper::getString(aDeckNode.getNodeValue("HelpURL"));
         rDeckDescriptor.msHelpText = rDeckDescriptor.msTitle;
+        rDeckDescriptor.mbIsEnabled = true;
         ReadContextList(aDeckNode.openNode("ContextList"), rDeckDescriptor.maContexts);
     }
 
@@ -241,6 +318,8 @@ void ResourceManager::ReadPanelList (void)
             aPanelNode.getNodeValue("Layout"));
         rPanelDescriptor.msImplementationURL = ::comphelper::getString(
             aPanelNode.getNodeValue("ImplementationURL"));
+        rPanelDescriptor.mnOrderIndex = ::comphelper::getINT32(
+            aPanelNode.getNodeValue("OrderIndex"));
         ReadContextList(aPanelNode.openNode("ContextList"), rPanelDescriptor.maContexts);
     }
 
@@ -255,7 +334,7 @@ void ResourceManager::ReadPanelList (void)
 
 void ResourceManager::ReadContextList (
     const ::utl::OConfigurationNode& rNode,
-    ::std::vector<Context>& rContextContainer) const
+    ::std::vector<EnumContext>& rContextContainer) const
 {
     const Sequence<OUString> aChildNodeNames (rNode.getNodeNames());
     const sal_Int32 nCount (aChildNodeNames.getLength());
@@ -263,10 +342,9 @@ void ResourceManager::ReadContextList (
     for (sal_Int32 nIndex(0); nIndex<nCount; ++nIndex)
     {
         const ::utl::OConfigurationNode aChildNode (rNode.openNode(aChildNodeNames[nIndex]));
-        Context& rContext (rContextContainer[nIndex]);
-
-        rContext.msApplication = ::comphelper::getString(aChildNode.getNodeValue("Application"));
-        rContext.msContext = ::comphelper::getString(aChildNode.getNodeValue("ApplicationContext"));
+        rContextContainer[nIndex] = EnumContext(
+            ::comphelper::getString(aChildNode.getNodeValue("Application")),
+            ::comphelper::getString(aChildNode.getNodeValue("ApplicationContext")));
     }
 }
 
@@ -300,8 +378,8 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
     ::std::vector<OUString> aMatchingNodeNames;
     GetToolPanelNodeNames(aMatchingNodeNames, aLegacyRootNode);
     const sal_Int32 nCount (aMatchingNodeNames.size());
-    sal_Int32 nDeckWriteIndex (maDecks.size());
-    sal_Int32 nPanelWriteIndex (maPanels.size());
+    size_t nDeckWriteIndex (maDecks.size());
+    size_t nPanelWriteIndex (maPanels.size());
     maDecks.resize(maDecks.size() + nCount);
     maPanels.resize(maPanels.size() + nCount);
     for (sal_Int32 nReadIndex(0); nReadIndex<nCount; ++nReadIndex)
@@ -319,7 +397,8 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
         rDeckDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
         rDeckDescriptor.msHelpText = rDeckDescriptor.msTitle;
         rDeckDescriptor.maContexts.resize(1);
-        rDeckDescriptor.maContexts.front() = Context(A2S("any"), A2S("any"));
+        rDeckDescriptor.maContexts.front() = EnumContext(sModuleName, A2S("any"));
+        rDeckDescriptor.mbIsEnabled = true;
 
         PanelDescriptor& rPanelDescriptor (maPanels[nPanelWriteIndex++]);
         rPanelDescriptor.msTitle = ::comphelper::getString(aChildNode.getNodeValue("UIName"));
@@ -328,7 +407,7 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
         rPanelDescriptor.msDeckId = rsNodeName;
         rPanelDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
         rPanelDescriptor.maContexts.resize(1);
-        rPanelDescriptor.maContexts.front() = Context(A2S("any"), A2S("any"));
+        rPanelDescriptor.maContexts.front() = EnumContext(sModuleName, A2S("any"));
         rPanelDescriptor.msLayout = A2S("full");
         rPanelDescriptor.msImplementationURL = rsNodeName;            
     }
@@ -345,7 +424,7 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
 
 
 ::rtl::OUString ResourceManager::GetModuleName (
-    const cssu::Reference<css::frame::XFrame>& rxFrame) const
+    const cssu::Reference<css::frame::XFrame>& rxFrame)
 {
     try
     {

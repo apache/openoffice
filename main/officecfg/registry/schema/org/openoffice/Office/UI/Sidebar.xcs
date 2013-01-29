@@ -42,7 +42,11 @@
       <prop oor:name="Application" oor:type="xs:string" oor:localized="false">
         <info>
           <desc>Name of the application.  Known values are:
-          any, writer, calc, impress, draw, base</desc>
+          any,
+          com.sun.star.text.TextDocument (Writer),
+          com.sun.star.sheet.SpreadsheetDocument (Calc),
+          com.sun.star.presentation.PresentationDocument (Impress),
+          com.sun.star.drawing.DrawingDocument (Draw)</desc>
         </info>
         <value></value>
       </prop>
@@ -160,6 +164,12 @@
           <desc>When true then the panel is initialized in its expanded state.</desc>
         </info>
         <value>true</value>
+      </prop>
+      <prop oor:name="OrderIndex" oor:type="xs:int">
+        <info>
+          <desc>Index used for ordering panels inside a deck.  Smaller values correspond to positions nearer to the top of the deck.</desc>
+        </info>
+        <value>10000</value>
       </prop>
     </group>
   </templates>

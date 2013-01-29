@@ -34,7 +34,20 @@ public:
     SidebarToolBox (Window* pParentWindow, const ResId& rResId);
     virtual ~SidebarToolBox (void);
 
+    void SetBorderWindow (const Window* pBorderWindow);
     virtual void Paint (const Rectangle& rRect);
+
+    virtual Point GetPosPixel (void) const;
+    virtual void SetPosSizePixel (
+        long nX,
+        long nY,
+        long nWidth,
+        long nHeight,
+        sal_uInt16 nFlags);
+
+private:
+    bool mbParentIsBorder;
+    Image maItemSeparator;
 };
 
 

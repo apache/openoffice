@@ -24,13 +24,15 @@
 
 #define RID_SIDEBAR_RESOURCE  (RID_SFX_SIDEBAR_START +  0)
 
-#define IMAGE_SIDEBAR_PLUS      1
-#define IMAGE_SIDEBAR_PLUS_HC   2
-#define IMAGE_SIDEBAR_MINUS     3
-#define IMAGE_SIDEBAR_MINUS_HC  4
-#define IMAGE_SIDEBAR_GRIP      5
-#define IMAGE_SIDEBAR_GRIP_HC   6
-#define IMAGE_SIDEBAR_MENU      7
-#define IMAGE_SIDEBAR_MENU_HC   8
-#define STRING_CUSTOMIZATION    9
-#define STRING_RESTORE         10
+#define IMAGE_SIDEBAR_PLUS               1
+#define IMAGE_SIDEBAR_PLUS_HC            2
+#define IMAGE_SIDEBAR_MINUS              3
+#define IMAGE_SIDEBAR_MINUS_HC           4
+#define IMAGE_SIDEBAR_GRIP               5
+#define IMAGE_SIDEBAR_GRIP_HC            6
+#define IMAGE_SIDEBAR_MENU               7
+#define IMAGE_SIDEBAR_MENU_HC            8
+#define IMAGE_SIDEBAR_TOOLBOX_SEPARATOR  9
+#define IMAGE_SIDEBAR_TABBAR_PROPERTIES 10
+#define STRING_CUSTOMIZATION            11
+#define STRING_RESTORE                  12

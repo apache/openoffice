@@ -213,13 +213,13 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/menu/virtmenu \
 	sfx2/source/notify/eventsupplier \
 	sfx2/source/notify/hintpost \
-	sfx2/source/sidebar/Theme \
 	sfx2/source/sidebar/SidebarChildWindow \
 	sfx2/source/sidebar/SidebarDockingWindow \
 	sfx2/source/sidebar/SidebarController \
 	sfx2/source/sidebar/SidebarPanel \
 	sfx2/source/sidebar/SidebarPanelBase \
 	sfx2/source/sidebar/SidebarToolBox \
+	sfx2/source/sidebar/AsynchronousCall \
 	sfx2/source/sidebar/Context \
 	sfx2/source/sidebar/ControlFactory \
 	sfx2/source/sidebar/ControllerItem \
@@ -240,6 +240,7 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/sidebar/TitleBar \
 	sfx2/source/sidebar/Theme \
 	sfx2/source/sidebar/Tools \
+	sfx2/source/sidebar/ToolBoxBackground \
 	sfx2/source/statbar/stbitem \
 	sfx2/source/toolbox/imgmgr \
 	sfx2/source/toolbox/tbxitem \

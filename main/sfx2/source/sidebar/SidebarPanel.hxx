@@ -22,6 +22,7 @@
 #ifndef SFX_SIDEBAR_SIDEBAR_PANEL_HXX
 #define SFX_SIDEBAR_SIDEBAR_PANEL_HXX
 
+#include <tools/link.hxx>
 #include <com/sun/star/ui/XSidebarPanel.hpp>
 
 #include <boost/noncopyable.hpp>
@@ -40,6 +41,7 @@ namespace
 
 
 class DockingWindow;
+class VclWindowEvent;
 
 namespace sfx2 { namespace sidebar {
 

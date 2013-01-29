@@ -854,11 +854,6 @@ void ViewShellBase::Activate (sal_Bool bIsMDIActivate)
 {
     SfxViewShell::Activate(bIsMDIActivate);
 
-    
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        GetController(),
-        ::sfx2::sidebar::EnumContext::Context_Default);
-
     Reference<XControllerManager> xControllerManager (GetController(), UNO_QUERY);
     if (xControllerManager.is())
     {
@@ -868,6 +863,10 @@ void ViewShellBase::Activate (sal_Bool bIsMDIActivate)
             xConfigurationController->update();
     }
     GetToolBarManager()->RequestUpdate();
+
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        GetController(),
+        ::sfx2::sidebar::EnumContext::Context_Default);
 }
 
 

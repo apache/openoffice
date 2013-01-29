@@ -29,7 +29,7 @@
 #include "Panel.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 
-#include <tools/SvBorder.hxx>
+#include <tools/svborder.hxx>
 
 
 namespace sfx2 { namespace sidebar {
@@ -78,7 +78,8 @@ void Deck::Dispose (void)
          iPanel!=iEnd;
          ++iPanel)
     {
-        (*iPanel)->Dispose();
+		if (*iPanel != NULL)
+			(*iPanel)->Dispose();
     }
 }
 
@@ -129,6 +130,8 @@ Rectangle Deck::GetContentArea (void) const
 
 void Deck::Paint (const Rectangle& rUpdateArea)
 {
+    (void) rUpdateArea;
+    
     const Size aWindowSize (GetSizePixel());
     const SvBorder aPadding (
             Theme::GetInteger(Theme::Int_DeckLeftPadding),
@@ -209,10 +212,6 @@ void Deck::RequestLayout (void)
         case 0:
             // This basically is an error but there is not much that
             // we can do about it.
-            if (mpFiller == NULL)
-            {
-                OSL_ASSERT(maPanels.size()>0);
-            }
             ShowFiller(PlaceDeckTitle(GetTitleBar(), GetContentArea()));
             break;
 
@@ -298,7 +297,10 @@ void Deck::LayoutMultiplePanels (void)
          iPanel!=iEnd;
          ++iPanel)
     {
-        const Panel& rPanel (**iPanel);
+		if (*iPanel == NULL)
+			continue;
+        
+		const Panel& rPanel (**iPanel);
         
         nHeight -= nPanelTitleBarHeight;
         nHeight -= 2*nDeckSeparatorHeight;
@@ -307,9 +309,18 @@ void Deck::LayoutMultiplePanels (void)
         {
             if (rPanel.GetVerticalStackElement().is())
             {
-                ++nVerticalStackCount;
                 const sal_Int32 nRequestedHeight (rPanel.GetVerticalStackElement()->getHeightForWidth(nWidth));
-                nHeight -= nRequestedHeight;
+                if (nRequestedHeight >= 0)
+                {
+                    ++nVerticalStackCount;
+                    nHeight -= nRequestedHeight;
+                }
+                else
+                {
+                    // Treat -1 as a special value that the panel
+                    // wants as much space as possible.
+                    ++nFullCount;
+                }
             }
             else
             {
@@ -318,12 +329,14 @@ void Deck::LayoutMultiplePanels (void)
         }
     }
 
+    // The remaining height is distributed between the full size panels.
     sal_Int32 nHeightPerPanel (nFullCount<=0 ? 0 : nHeight / nFullCount);
+    
     // The division might lead to rounding errors.  Enlarge the first
     // panel to compensate for that.
     sal_Int32 nHeightOfFirstPanel = nFullCount+nVerticalStackCount<=0
         ? 0
-        : nHeightPerPanel + (nHeight - nHeightPerPanel*(nFullCount+nVerticalStackCount));
+        : nHeightPerPanel + (nHeight - nHeightPerPanel*nFullCount);
     if (nHeightPerPanel < MinimalPanelHeight)
     {
         // Display a vertical scroll bar.
@@ -340,6 +353,9 @@ void Deck::LayoutMultiplePanels (void)
          iPanel!=iEnd;
          ++iPanel)
     {
+		if (*iPanel == NULL)
+			continue;
+
         Panel& rPanel (**iPanel);
 
         // Separator above the panel title bar.
@@ -418,8 +434,8 @@ void Deck::ShowFiller (const Rectangle& rBox)
     if (mpFiller == NULL)
     {
         mpFiller = new Window(this);
-        mpFiller->SetBackground(Theme::GetPaint(Theme::Paint_DeckBackground).GetWallpaper());
     }
+    mpFiller->SetBackground(Theme::GetPaint(Theme::Paint_PanelBackground).GetWallpaper());
     mpFiller->SetPosSizePixel(rBox.TopLeft(), rBox.GetSize());
     mpFiller->Show();
 }

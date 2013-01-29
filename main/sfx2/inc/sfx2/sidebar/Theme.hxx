@@ -26,11 +26,17 @@
 
 #include <tools/color.hxx>
 #include <vcl/image.hxx>
-#include <cppuhelper/compbase1.hxx>
+#include <cppuhelper/compbase2.hxx>
 #include <cppuhelper/basemutex.hxx>
+#include <tools/gen.hxx>
+#include <rtl/ref.hxx>
+
+#include <com/sun/star/beans/XPropertySet.hpp>
 
 #include <hash_map>
 #include <map>
+#include <boost/optional.hpp>
+
 
 class SvBorder;
 
@@ -43,8 +49,9 @@ namespace sfx2 { namespace sidebar {
 
 namespace
 {
-    typedef ::cppu::WeakComponentImplHelper1 <
-        css::beans::XPropertySet
+    typedef ::cppu::WeakComponentImplHelper2 <
+        css::beans::XPropertySet,
+        css::beans::XPropertySetInfo
         > ThemeInterfaceBase;
 }
 
@@ -61,13 +68,16 @@ class SFX2_DLLPUBLIC Theme
 public:
     enum ThemeItem
     {
-        __Pre_Image,
+        __Begin,
+        __Pre_Image = __Begin,
+        
         __AnyItem = __Pre_Image,
         
         Image_Grip,
         Image_Expand,
         Image_Collapse,
         Image_Menu,
+        Image_ToolBoxItemSeparator,
 
         __Image_Color,
         
@@ -83,9 +93,14 @@ public:
         Paint_PanelBackground,
         Paint_PanelTitleBarBackground,
         Paint_TabBarBackground,
-        Paint_TabItemBackground,
+        Paint_TabItemBackgroundNormal,
+        Paint_TabItemBackgroundHighlight,
         Paint_HorizontalBorder,
         Paint_VerticalBorder,
+        Paint_ToolBoxBackground,
+        Paint_ToolBoxBorderTopLeft,
+        Paint_ToolBoxBorderCenterCorners,
+        Paint_ToolBoxBorderBottomRight,
 
         __Paint_Int,
         
@@ -109,8 +124,17 @@ public:
         __Int_Bool,
 
         Bool_UseSymphonyIcons,
+        Bool_UseSystemColors,
+        Bool_UseToolBoxItemSeparator,
+        Bool_IsHighContrastModeActive,
+
+        __Bool_Rect,
+
+        Rect_ToolBoxPadding,
+        Rect_ToolBoxBorder,
         
-        __Post_Bool
+        __Post_Rect,
+        __End=__Post_Rect
     };
     
     static Image GetImage (const ThemeItem eItem);
@@ -118,7 +142,8 @@ public:
     static const Paint& GetPaint (const ThemeItem eItem);
     static sal_Int32 GetInteger (const ThemeItem eItem);
     static bool GetBoolean (const ThemeItem eItem);
-
+    static Rectangle GetRectangle (const ThemeItem eItem);
+    
     static bool IsHighContrastMode (void);
 
     static void HandleDataChange (void);
@@ -131,42 +156,51 @@ public:
     static cssu::Reference<css::beans::XPropertySet> GetPropertySet (void);
     
     // beans::XPropertySet
-    cssu::Reference<css::beans::XPropertySetInfo> SAL_CALL getPropertySetInfo (void)
+    virtual cssu::Reference<css::beans::XPropertySetInfo> SAL_CALL getPropertySetInfo (void)
         throw(cssu::RuntimeException);
-    void SAL_CALL setPropertyValue (
+    virtual void SAL_CALL setPropertyValue (
         const ::rtl::OUString& rsPropertyName,
         const cssu::Any& rValue)
         throw(cssu::RuntimeException);
-    cssu::Any SAL_CALL getPropertyValue (
+    virtual cssu::Any SAL_CALL getPropertyValue (
         const ::rtl::OUString& rsPropertyName)
         throw(css::beans::UnknownPropertyException,
             css::lang::WrappedTargetException,
             cssu::RuntimeException);
-    void SAL_CALL addPropertyChangeListener(
+    virtual void SAL_CALL addPropertyChangeListener(
         const ::rtl::OUString& rsPropertyName,
         const cssu::Reference<css::beans::XPropertyChangeListener>& rxListener)
         throw(css::beans::UnknownPropertyException,
             css::lang::WrappedTargetException,
             cssu::RuntimeException);
-    void SAL_CALL removePropertyChangeListener(
+    virtual void SAL_CALL removePropertyChangeListener(
         const ::rtl::OUString& rsPropertyName,
         const cssu::Reference<css::beans::XPropertyChangeListener>& rxListener)
         throw(css::beans::UnknownPropertyException,
             css::lang::WrappedTargetException,
             cssu::RuntimeException);
-    void SAL_CALL addVetoableChangeListener(
+    virtual void SAL_CALL addVetoableChangeListener(
         const ::rtl::OUString& rsPropertyName,
         const cssu::Reference<css::beans::XVetoableChangeListener>& rxListener)
         throw(css::beans::UnknownPropertyException,
             css::lang::WrappedTargetException,
             cssu::RuntimeException);
-    void SAL_CALL removeVetoableChangeListener(
+    virtual void SAL_CALL removeVetoableChangeListener(
         const ::rtl::OUString& rsPropertyName,
         const cssu::Reference<css::beans::XVetoableChangeListener>& rxListener)
         throw(css::beans::UnknownPropertyException,
             css::lang::WrappedTargetException,
             cssu::RuntimeException);
 
+    // beans::XPropertySetInfo
+    virtual cssu::Sequence<css::beans::Property> SAL_CALL getProperties (void)
+        throw(cssu::RuntimeException);
+    virtual css::beans::Property SAL_CALL getPropertyByName (const ::rtl::OUString& rsName)
+        throw(css::beans::UnknownPropertyException,
+            cssu::RuntimeException);
+    virtual sal_Bool SAL_CALL hasPropertyByName (const ::rtl::OUString& rsName)
+        throw(cssu::RuntimeException);
+    
 private:
     static ::rtl::Reference<Theme> mpInstance;
     static Theme& GetCurrentTheme (void);
@@ -176,7 +210,9 @@ private:
     ::std::vector<Paint> maPaints;
     ::std::vector<sal_Int32> maIntegers;
     ::std::vector<bool> maBooleans;
+    ::std::vector<Rectangle> maRectangles;
     bool mbIsHighContrastMode;
+    bool mbIsHighContrastModeSetManually;
     
     typedef ::std::hash_map<rtl::OUString,ThemeItem, rtl::OUStringHash> PropertyNameToIdMap;
     PropertyNameToIdMap maPropertyNameToIdMap;
@@ -199,12 +235,15 @@ private:
         PT_Paint,
         PT_Integer,
         PT_Boolean,
+        PT_Rectangle,
         PT_Invalid
     };
     
     void SetupPropertyMaps (void);
     void InitializeTheme (void);
+    void UpdateTheme (void);
     static PropertyType GetPropertyType (const ThemeItem eItem);
+    static cssu::Type GetCppuType (const PropertyType eType);
     static sal_Int32 GetIndex (
         const ThemeItem eItem,
         const PropertyType eType);

@@ -22,6 +22,11 @@
 #include "precompiled_sfx2.hxx"
 
 #include "Paint.hxx"
+#include "Tools.hxx"
+#include <com/sun/star/awt/Gradient.hpp>
+
+
+using namespace ::com::sun::star;
 
 namespace sfx2 { namespace sidebar {
 
@@ -46,6 +51,22 @@ Paint::Paint (const Gradient& rGradient)
     : meType(GradientPaint),
       maValue(rGradient)
 {
+}
+
+
+
+
+Paint Paint::Create (const cssu::Any& rValue)
+{
+    ColorData aColor (0);
+    if (rValue >>= aColor)
+        return Paint(Color(aColor));
+
+    awt::Gradient aAwtGradient;
+    if (rValue >>= aAwtGradient)
+        return Paint(Tools::AwtToVclGradient(aAwtGradient));
+
+    return Paint();        
 }
 
 

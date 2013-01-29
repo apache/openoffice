@@ -73,6 +73,67 @@ void DrawHelper::DrawBorder (
 
 
 
+void DrawHelper::DrawBevelBorder (
+    OutputDevice& rDevice,
+    const Rectangle rBox,
+    const SvBorder aBorderSize,
+    const Paint& rTopLeftPaint,
+    const Paint& rCenterPaint,
+    const Paint& rBottomRightPaint)
+{
+    // Draw top line.
+    DrawHorizontalLine(
+        rDevice,
+        rBox.Left(),
+        rBox.Right() - aBorderSize.Right(),
+        rBox.Top(),
+        aBorderSize.Top(),
+        rTopLeftPaint);
+    // Draw bottom line.
+    DrawHorizontalLine(
+        rDevice,
+        rBox.Left()+aBorderSize.Left(),
+        rBox.Right(),
+        rBox.Bottom()-aBorderSize.Bottom()+1,
+        aBorderSize.Bottom(),
+        rBottomRightPaint);
+    // Draw left line.
+    DrawVerticalLine(
+        rDevice,
+        rBox.Top()+aBorderSize.Top(),
+        rBox.Bottom() - aBorderSize.Bottom(),
+        rBox.Left(),
+        aBorderSize.Left(),
+        rTopLeftPaint);
+    // Draw right line.
+    DrawVerticalLine(
+        rDevice,
+        rBox.Top()+aBorderSize.Top(),
+        rBox.Bottom()-aBorderSize.Bottom(),
+        rBox.Right()-aBorderSize.Right()+1,
+        aBorderSize.Right(),
+        rBottomRightPaint);
+    // Draw top right corner.
+    DrawVerticalLine(
+        rDevice,
+        rBox.Top(),
+        rBox.Top()+aBorderSize.Top()-1,
+        rBox.Right()-aBorderSize.Right()+1,
+        aBorderSize.Right(),
+        rCenterPaint);
+    // Draw bottom right corner.
+    DrawVerticalLine(
+        rDevice,
+        rBox.Bottom() - aBorderSize.Bottom()+1,
+        rBox.Bottom(),
+        rBox.Left(),
+        aBorderSize.Left(),
+        rCenterPaint);
+}
+
+
+
+
 void DrawHelper::DrawHorizontalLine(
     OutputDevice& rDevice,
     const sal_Int32 nLeft,
@@ -181,6 +242,7 @@ void DrawHelper::DrawRoundedRectangle (
             break;
     }    
 }
+
 
 
 

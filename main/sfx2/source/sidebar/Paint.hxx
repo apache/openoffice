@@ -25,8 +25,11 @@
 #include <tools/color.hxx>
 #include <vcl/gradient.hxx>
 #include <vcl/wall.hxx>
+#include <com/sun/star/awt/Gradient.hpp>
 
 #include <boost/variant.hpp>
+
+namespace cssu = ::com::sun::star::uno;
 
 namespace sfx2 { namespace sidebar {
 
@@ -46,6 +49,10 @@ public:
         GradientPaint
     };
 
+    // Create a Paint object for an Any that may contain a color, a
+    // awt::Gradient, or nothing.
+    static Paint Create (const cssu::Any& rValue);
+    
     // Create paint with type NoPaint.
     explicit Paint (void);
 

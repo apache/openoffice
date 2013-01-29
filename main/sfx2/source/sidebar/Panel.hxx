@@ -57,6 +57,7 @@ public:
     cssu::Reference<css::ui::XVerticalStackLayoutElement> GetVerticalStackElement (void) const;
     void SetExpanded (const bool bIsExpanded);
     bool IsExpanded (void) const;
+    bool HasIdPredicate (const ::rtl::OUString& rsId) const;
     
     virtual void Paint (const Rectangle& rUpdateArea);
     virtual void SetPosSizePixel (
@@ -69,6 +70,7 @@ public:
     virtual void Activate (void);
 
 private:
+    const ::rtl::OUString msPanelId;
     const ::rtl::OUString msLayoutHint;
     TitleBar* mpTitleBar;
     const bool mbIsTitleBarOptional;
@@ -82,6 +84,7 @@ private:
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
 };
 
+    
 
 } } // end of namespace sfx2::sidebar
 

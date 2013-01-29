@@ -19,33 +19,37 @@
  * 
  *************************************************************/
 
+#ifndef SFX_SIDEBAR_ASYNCHRONOUS_CALL_HXX
+#define SFX_SIDEBAR_ASYNCHRONOUS_CALL_HXX
 
+#include <boost/function.hpp>
+#include <tools/solar.h>
+#include <tools/link.hxx>
 
-#ifndef __com_sun_star_util_XEventListener_idl__
-#define __com_sun_star_util_XEventListener_idl__
+namespace sfx2 { namespace sidebar {
 
-#ifndef __com_sun_star_uno_XInterface_idl__
-#include <com/sun/star/uno/XInterface.idl>
-#endif
-
-#ifndef __com_sun_star_lang_XEventListener_idl__
-#include <com/sun/star/lang/XEventListener.idl>
-#endif
-
-#ifndef __com_sun_star_lang_EventObject_idl__
-#include <com/sun/star/lang/EventObject.idl>
-#endif
-
-module com { module sun { module star { module util {
-
-/** Generic event listener.
+/** A simple asynchronous call via Application::PostUserCall.
 */
-interface XEventListener : ::com::sun::star::lang::XEventListener 
+class AsynchronousCall
 {
-    [oneway] void notifyEvent (
-        [in] com::sun::star::lang::EventObject event);
-} ;
+public:
+    typedef ::boost::function<void(void)> Action;
+    
+    AsynchronousCall (const Action& rAction);
+    ~AsynchronousCall (void);
 
-} ; } ; } ; } ;
+    void RequestCall (const Action& rAction);
+    void RequestCall (void);
+    void CancelRequest (void);
+    
+private:
+    Action maAction;
+    sal_uLong mnCallId;
+
+    DECL_LINK(HandleUserCall, void*);
+};
+
+
+} } // end of namespace sfx2::sidebar
 
 #endif

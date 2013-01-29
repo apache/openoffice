@@ -39,6 +39,9 @@ public:
     virtual void MouseButtonDown (const MouseEvent& rMouseEvent);
     virtual void MouseButtonUp (const MouseEvent& rMouseEvent);
 
+protected:
+    using CheckBox::FillLayoutData;
+    
 private:
     bool mbIsLeftButtonDown;
     enum PaintType {

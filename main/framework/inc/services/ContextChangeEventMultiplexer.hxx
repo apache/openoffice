@@ -31,6 +31,10 @@
 
 #include "macros/xserviceinfo.hxx"
 
+#include <map>
+#include <boost/noncopyable.hpp>
+
+
 namespace
 {
     typedef ::cppu::WeakComponentImplHelper3 <
@@ -99,7 +103,14 @@ public:
 
 private:
     typedef ::std::vector<cssu::Reference<css::ui::XContextChangeEventListener> > ListenerContainer;
-    typedef ::std::map<cssu::Reference<cssu::XInterface>, ListenerContainer> ListenerMap;
+    class FocusDescriptor
+    {
+    public:
+        ListenerContainer maListeners;
+        ::rtl::OUString msCurrentApplicationName;
+        ::rtl::OUString msCurrentContextName;
+    };
+    typedef ::std::map<cssu::Reference<cssu::XInterface>, FocusDescriptor> ListenerMap;
     ListenerMap maListeners;
 
     /** Notify all listeners in the container that is associated with
