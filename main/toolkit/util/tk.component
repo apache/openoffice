@@ -260,14 +260,6 @@
     <service name="com.sun.star.awt.UnoControlScrollBar"/>
     <service name="stardiv.vcl.control.ScrollBar"/>
   </implementation>
-  <implementation name="stardiv.Toolkit.UnoSimpleAnimationControl">
-    <service name="com.sun.star.awt.UnoControlSimpleAnimation"/>
-    <service name="com.sun.star.awt.UnoSimpleAnimationControl"/>
-  </implementation>
-  <implementation name="stardiv.Toolkit.UnoSimpleAnimationControlModel">
-    <service name="com.sun.star.awt.UnoControlSimpleAnimationModel"/>
-    <service name="com.sun.star.awt.UnoSimpleAnimationControlModel"/>
-  </implementation>
   <implementation name="org.openoffice.comp.toolkit.SpinningProgressControlModel">
     <service name="com.sun.star.awt.SpinningProgressControlModel"/>
   </implementation>
@@ -282,14 +274,6 @@
   </implementation>
   <implementation name="stardiv.Toolkit.UnoSpinButtonModel">
     <service name="com.sun.star.awt.UnoControlSpinButtonModel"/>
-  </implementation>
-  <implementation name="stardiv.Toolkit.UnoThrobberControl">
-    <service name="com.sun.star.awt.UnoControlThrobber"/>
-    <service name="com.sun.star.awt.UnoThrobberControl"/>
-  </implementation>
-  <implementation name="stardiv.Toolkit.UnoThrobberControlModel">
-    <service name="com.sun.star.awt.UnoControlThrobberModel"/>
-    <service name="com.sun.star.awt.UnoThrobberControlModel"/>
   </implementation>
   <implementation name="stardiv.Toolkit.UnoTimeFieldControl">
     <service name="com.sun.star.awt.UnoControlTimeField"/>

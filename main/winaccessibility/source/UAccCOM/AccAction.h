@@ -85,7 +85,7 @@ public:
     // Gets description of specified action.
     STDMETHOD(get_description)(long actionIndex,BSTR __RPC_FAR *description);
 
-    // added by qiuhd, 2006/06/28, for driver 07/11
+    // added , 2006/06/28, for driver 07/11
     // get the action name
     STDMETHOD(get_name)( long actionIndex, BSTR __RPC_FAR *name);
 

@@ -135,7 +135,7 @@ LINKFLAGS += /delayload:sal3.dll \
     
 SHL1OBJS=$(SLOFILES)
 SHL1DEF=$(TARGET).def 
-SHL1RES=$(RES)$/$(TARGET).res 
+SHL1RES=$(RES)/$(TARGET).res 
 
 DEF1NAME= $(TARGET)
 #DEF1EXPORTFILE=	exports.dxp

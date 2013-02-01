@@ -31,9 +31,7 @@
 #include <vcl/outdev.hxx>
 #include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
 #include <drawinglayer/primitive2d/bitmapprimitive2d.hxx>
-#include <vclhelperbitmaptransform.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
-#include <vclhelperbitmaprender.hxx>
 #include <drawinglayer/attribute/sdrfillgraphicattribute.hxx>
 #include <drawinglayer/primitive2d/fillgraphicprimitive2d.hxx>
 #include <drawinglayer/primitive2d/polypolygonprimitive2d.hxx>
@@ -389,14 +387,28 @@ namespace drawinglayer
 		// direct draw of transformed BitmapEx primitive
 		void VclProcessor2D::RenderBitmapPrimitive2D(const primitive2d::BitmapPrimitive2D& rBitmapCandidate)
 		{
-            // create local transform
-			basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rBitmapCandidate.getTransform());
-			BitmapEx aBitmapEx(rBitmapCandidate.getBitmapEx());
-			bool bPainted(false);
+            // check local ViewPort
+            const basegfx::B2DRange& rDiscreteViewPort(getViewInformation2D().getDiscreteViewport());
+            const basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rBitmapCandidate.getTransform());
+
+            if(!rDiscreteViewPort.isEmpty())
+            {
+                // check if we are visible
+                basegfx::B2DRange aUnitRange(0.0, 0.0, 1.0, 1.0);
+
+                aUnitRange.transform(aLocalTransform);
+
+                if(!aUnitRange.overlaps(rDiscreteViewPort))
+                {
+                    return;
+                }
+            }
+
+            BitmapEx aBitmapEx(rBitmapCandidate.getBitmapEx());
 
 			if(maBColorModifierStack.count())
 			{
-				aBitmapEx = impModifyBitmapEx(maBColorModifierStack, aBitmapEx);
+                aBitmapEx = aBitmapEx.ModifyBitmapEx(maBColorModifierStack);
 
 				if(aBitmapEx.IsEmpty())
 				{
@@ -409,49 +421,33 @@ namespace drawinglayer
 					mpOutputDevice->SetLineColor();
 					mpOutputDevice->DrawPolygon(aPolygon);
 
-					bPainted = true;
+					return;
 				}
 			}
 
-			if(!bPainted)
+			// decompose matrix to check for shear, rotate and mirroring
+			basegfx::B2DVector aScale, aTranslate;
+			double fRotate, fShearX;
+
+            aLocalTransform.decompose(aScale, aTranslate, fRotate, fShearX);
+
+            const bool bRotated(!basegfx::fTools::equalZero(fRotate));
+            const bool bSheared(!basegfx::fTools::equalZero(fShearX));
+
+			if(!aBitmapEx.IsTransparent() && (bSheared || bRotated))
 			{
-				static bool bForceUseOfOwnTransformer(false);
-				static bool bUseGraphicManager(true);
-
-				// decompose matrix to check for shear, rotate and mirroring
-				basegfx::B2DVector aScale, aTranslate;
-				double fRotate, fShearX;
-				aLocalTransform.decompose(aScale, aTranslate, fRotate, fShearX);
-
-                // #121387# when mirrored and rotated, avoid the GraphicManager output which has low quality
-                const bool bRotated(!basegfx::fTools::equalZero(fRotate));
-                const bool bSheared(!basegfx::fTools::equalZero(fShearX));
-                const bool bMirrored(aScale.getX() < 0.0 || aScale.getY() < 0.0);
-                const bool bMirroredAndRotated(bRotated && bMirrored);
-
-				if(!bForceUseOfOwnTransformer && !bSheared && !bMirroredAndRotated)
-				{
-					if(!bUseGraphicManager && !bRotated)
-					{
-						RenderBitmapPrimitive2D_BitmapEx(*mpOutputDevice, aBitmapEx, aLocalTransform);
-					}
-					else
-					{
-						RenderBitmapPrimitive2D_GraphicManager(*mpOutputDevice, aBitmapEx, aLocalTransform);
-					}
-				}
-				else
-				{
-					if(!aBitmapEx.IsTransparent() && (bSheared || bRotated))
-					{
-						// parts will be uncovered, extend aBitmapEx with a mask bitmap
-						const Bitmap aContent(aBitmapEx.GetBitmap());
-						aBitmapEx = BitmapEx(aContent, Bitmap(aContent.GetSizePixel(), 1));
-					}
-
-					RenderBitmapPrimitive2D_self(*mpOutputDevice, aBitmapEx, aLocalTransform);
-				}
+				// parts will be uncovered, extend aBitmapEx with a mask bitmap
+				const Bitmap aContent(aBitmapEx.GetBitmap());
+#if defined(MACOSX)
+				const AlphaMask aMaskBmp( aContent.GetSizePixel());
+#else
+				const Bitmap aMaskBmp( aContent.GetSizePixel(), 1);
+#endif
+				aBitmapEx = BitmapEx(aContent, aMaskBmp);
 			}
+
+            // draw using OutputDevice'sDrawTransformedBitmapEx
+            mpOutputDevice->DrawTransformedBitmapEx(aLocalTransform, aBitmapEx);
 		}
 
 		void VclProcessor2D::RenderFillGraphicPrimitive2D(const primitive2d::FillGraphicPrimitive2D& rFillBitmapCandidate)
@@ -532,7 +528,7 @@ namespace drawinglayer
 					            if(maBColorModifierStack.count())
 					            {
                                     // when color modifier, apply to bitmap
-						            aBitmapEx = impModifyBitmapEx(maBColorModifierStack, aBitmapEx);
+						            aBitmapEx = aBitmapEx.ModifyBitmapEx(maBColorModifierStack);
 
                                     // impModifyBitmapEx uses empty bitmap as sign to return that
                                     // the content will be completely replaced to mono color, use shortcut

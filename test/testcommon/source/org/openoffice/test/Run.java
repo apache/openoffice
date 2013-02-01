@@ -28,6 +28,7 @@ import java.util.logging.Level;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.RunListener;
+import org.junit.runner.notification.Failure;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.NamedRequest;
@@ -142,10 +143,15 @@ public class Run {
 		int code = 0;
 		for (NamedRequest request : requests) {
 			Result result = core.run(request.getRunner());
-			if (!result.wasSuccessful())
+			if (!result.wasSuccessful()) {
 				code = 1;
+				java.util.List<Failure> failureList = result.getFailures();
+				for( Failure f: failureList)
+					log.log( Level.SEVERE, "Failure in "+request.getName()+" :"+ f.toString(), f.getException());
+			}
 		}
 		
 		System.exit(code);
 	}
 }
+

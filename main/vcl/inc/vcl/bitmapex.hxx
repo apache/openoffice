@@ -28,6 +28,7 @@
 #include <vcl/bitmap.hxx>
 #include <vcl/alpha.hxx>
 #include <tools/color.hxx>
+#include <basegfx/color/bcolormodifier.hxx>
 
 // -------------------
 // - TransparentType -
@@ -46,9 +47,9 @@ enum TransparentType
 
 class VCL_DLLPUBLIC BitmapEx
 {
-	friend class ImpGraphic;
-
 private:
+	friend class ImpGraphic;
+    friend bool VCL_DLLPUBLIC WriteDIBBitmapEx(const BitmapEx& rSource, SvStream& rOStm);
 
 	Bitmap				aBitmap;
 	Bitmap				aMask;
@@ -59,14 +60,8 @@ private:
 
 public:
 
-//#if 0 // _SOLAR__PRIVATE
-
     SAL_DLLPRIVATE  ImpBitmap*  ImplGetBitmapImpBitmap() const { return aBitmap.ImplGetImpBitmap(); }
     SAL_DLLPRIVATE  ImpBitmap*  ImplGetMaskImpBitmap() const { return aMask.ImplGetImpBitmap(); }
-
-//#endif // PRIVATE
-
-public:
 
 						BitmapEx();
 						BitmapEx( const ResId& rResId );
@@ -387,10 +382,43 @@ public:
      */
     sal_uInt8 GetTransparency(sal_Int32 nX, sal_Int32 nY) const;
 
-public:
+    /** Create transformed Bitmap
+        
+        @param fWidth
+        The target width in pixels
 
-	friend VCL_DLLPUBLIC SvStream&	operator<<( SvStream& rOStm, const BitmapEx& rBitmapEx );
-	friend VCL_DLLPUBLIC SvStream&	operator>>( SvStream& rIStm, BitmapEx& rBitmapEx );
+        @param fHeight
+        The target height in pixels
+
+        @param rTransformation
+        The back transformation for each pixel in (0 .. fWidth),(0 .. fHeight) to
+        local pixel coordiantes
+    */
+    BitmapEx TransformBitmapEx(
+        double fWidth,
+        double fHeight,
+        const basegfx::B2DHomMatrix& rTransformation) const;
+
+    /** Create transformed Bitmap
+
+        @param rTransformation
+        The transformation from unit coordinates to target
+
+        @param fMaximumArea
+        A limitation for the maximum size of pixels to use for the result
+
+        @return The transformed bitmap
+    */
+    BitmapEx getTransformed(
+        const basegfx::B2DHomMatrix& rTransformation, 
+        double fMaximumArea = 500000.0) const;
+
+    /** Create ColorStack-modified version of this BitmapEx
+
+        @param rBColorModifierStack
+        A ColrModifierStack which defines how each pixel has to be modified
+    */
+    BitmapEx ModifyBitmapEx(const basegfx::BColorModifierStack& rBColorModifierStack) const;
 };
 
 #endif // _SV_BITMAPEX_HXX

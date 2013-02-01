@@ -118,7 +118,7 @@ my_platform = .windows
 $(MISC)/winaccessibility.component .ERRREMOVE : \
         $(SOLARENV)/bin/createcomponent.xslt winaccessibility.component
     $(XSLTPROC) --nonet --stringparam uri \
-        '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL4TARGETN:f)' -o $@ \
+        '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL1TARGETN:f)' -o $@ \
         $(SOLARENV)/bin/createcomponent.xslt winaccessibility.component
 
 
