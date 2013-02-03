@@ -34,6 +34,9 @@ import testlib.gui.AppTool;
 
 public class ValidityDialogDefaultValue {
 
+	@Rule
+	public Logger log = Logger.getLogger(this);
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);

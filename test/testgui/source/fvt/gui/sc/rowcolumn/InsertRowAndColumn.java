@@ -34,6 +34,8 @@ import testlib.gui.AppTool;
 import testlib.gui.SCTool;
 
 public class InsertRowAndColumn {
+	@Rule
+	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {

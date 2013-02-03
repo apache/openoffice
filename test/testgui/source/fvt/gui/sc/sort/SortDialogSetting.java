@@ -46,6 +46,9 @@ import testlib.gui.SCTool;
  */
 public class SortDialogSetting {
 
+	@Rule
+	public Logger log = Logger.getLogger(this);
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);

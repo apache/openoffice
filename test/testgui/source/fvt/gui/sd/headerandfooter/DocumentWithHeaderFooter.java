@@ -32,10 +32,15 @@ import static testlib.gui.UIMap.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
+import org.openoffice.test.common.Logger;
 
 public class DocumentWithHeaderFooter {
+	@Rule
+	public Logger log = Logger.getLogger(this);
+	
 
 	@Before
 	public void setUp() throws Exception {

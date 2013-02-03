@@ -66,8 +66,8 @@ CONFIGURE_ACTION=.$/configure --prefix=$(OUTDIR) --includedir=$(OUTDIR)$/inc$/ap
 CONFIGURE_FLAGS=
 
 BUILD_DIR=$(CONFIGURE_DIR)
-BUILD_ACTION=$(GNUMAKE)
-BUILD_FLAGS+= -j$(EXTMAXPROCESS)
+BUILD_ACTION=$(GNUMAKE) --debug=b
+#BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 
 # Make apr-1-config believe that apr has been installed.
 INSTALL_ACTION=if [ -f apr-1-config.orig ]; then mv -f apr-1-config.orig apr-1-config; fi;	\

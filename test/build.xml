@@ -144,7 +144,7 @@
 		</condition>
 		<pathconvert property="openoffice.pack" setonempty="false">
 			<path>
-				<fileset dir="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/OpenOffice/archive/install/en-US" includes="*.tar.gz,*.zip"  erroronmissingdir="false"/>
+				<fileset dir="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/archive/install/en-US" includes="*.tar.gz,*.zip"  erroronmissingdir="false"/>
 			</path>
 		</pathconvert>
 		<condition property="test.arg0" value="-Dopenoffice.pack=${openoffice.pack}">

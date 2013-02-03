@@ -1079,6 +1079,18 @@ namespace svgio
                     aSource = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
                 }
 
+                if(pTransform)
+                {
+                    // create embedding group element with transformation. This applies the given
+                    // transformation to the graphical content, but *not* to mask and/or clip (as needed)
+                    const drawinglayer::primitive2d::Primitive2DReference xRef(
+                        new drawinglayer::primitive2d::TransformPrimitive2D(
+                            *pTransform,
+                            aSource));
+
+                    aSource = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
+                }
+
                 if(getClipPathXLink().getLength())
                 {
                     // try to access linked ClipPath
@@ -1105,17 +1117,6 @@ namespace svgio
 
                     if(aSource.hasElements()) // test again, applied mask may have lead to empty geometry
                     {
-                        if(pTransform)
-                        {
-                            // create embedding group element with transformation
-                            const drawinglayer::primitive2d::Primitive2DReference xRef(
-                                new drawinglayer::primitive2d::TransformPrimitive2D(
-                                    *pTransform,
-                                    aSource));
-
-                            aSource = drawinglayer::primitive2d::Primitive2DSequence(&xRef, 1);
-                        }
-
                         // append to current target
                         drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(rTarget, aSource);
                     }
@@ -1960,7 +1961,7 @@ namespace svgio
             return 0;
         }
 
-        const SvgNumber SvgStyleAttributes::getStrokeWidth() const 
+        SvgNumber SvgStyleAttributes::getStrokeWidth() const 
         { 
             if(mbIsClipPathContent)
             {
@@ -1982,7 +1983,7 @@ namespace svgio
             return SvgNumber(1.0); 
         }
 
-        const SvgNumber SvgStyleAttributes::getStopOpacity() const 
+        SvgNumber SvgStyleAttributes::getStopOpacity() const 
         { 
             if(maStopOpacity.isSet()) 
             {
@@ -1993,7 +1994,7 @@ namespace svgio
             return SvgNumber(1.0); 
         }
 
-        const SvgNumber SvgStyleAttributes::getFillOpacity() const 
+        SvgNumber SvgStyleAttributes::getFillOpacity() const 
         { 
             if(mbIsClipPathContent)
             {
@@ -2015,7 +2016,7 @@ namespace svgio
             return SvgNumber(1.0); 
         }
 
-        const FillRule SvgStyleAttributes::getFillRule() const
+        FillRule SvgStyleAttributes::getFillRule() const
         {
             if(FillRule_notset != maFillRule)
             {
@@ -2056,7 +2057,7 @@ namespace svgio
             return maStrokeDasharray; 
         }
 
-        const SvgNumber SvgStyleAttributes::getStrokeDashOffset() const 
+        SvgNumber SvgStyleAttributes::getStrokeDashOffset() const 
         { 
             if(maStrokeDashOffset.isSet()) 
             {
@@ -2110,7 +2111,7 @@ namespace svgio
             return StrokeLinejoin_miter; 
         }
 
-        const SvgNumber SvgStyleAttributes::getStrokeMiterLimit() const 
+        SvgNumber SvgStyleAttributes::getStrokeMiterLimit() const 
         { 
             if(maStrokeMiterLimit.isSet()) 
             {
@@ -2128,7 +2129,7 @@ namespace svgio
             return SvgNumber(4.0); 
         }
 
-        const SvgNumber SvgStyleAttributes::getStrokeOpacity() const 
+        SvgNumber SvgStyleAttributes::getStrokeOpacity() const 
         { 
             if(maStrokeOpacity.isSet()) 
             {
@@ -2164,7 +2165,7 @@ namespace svgio
             return maFontFamily; 
         }
 
-        const SvgNumber SvgStyleAttributes::getFontSize() const 
+        SvgNumber SvgStyleAttributes::getFontSize() const 
         { 
             if(maFontSize.isSet()) 
             {
@@ -2360,7 +2361,7 @@ namespace svgio
             return 0;
         }
 
-        const rtl::OUString SvgStyleAttributes::getMarkerStartXLink() const 
+        rtl::OUString SvgStyleAttributes::getMarkerStartXLink() const 
         { 
             if(maMarkerStartXLink.getLength())
             {
@@ -2392,7 +2393,7 @@ namespace svgio
             return mpMarkerStartXLink;
         }
 
-        const rtl::OUString SvgStyleAttributes::getMarkerMidXLink() const 
+        rtl::OUString SvgStyleAttributes::getMarkerMidXLink() const 
         { 
             if(maMarkerMidXLink.getLength())
             {
@@ -2424,7 +2425,7 @@ namespace svgio
             return mpMarkerMidXLink;
         }
 
-        const rtl::OUString SvgStyleAttributes::getMarkerEndXLink() const 
+        rtl::OUString SvgStyleAttributes::getMarkerEndXLink() const 
         { 
             if(maMarkerEndXLink.getLength())
             {

@@ -40,6 +40,9 @@ import testlib.gui.AppTool;
 
 public class ShapeTypes {
 
+	@Rule
+	public Logger log = Logger.getLogger(this);
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start();

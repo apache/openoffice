@@ -25,40 +25,26 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
 import testlib.uno.SCUtil;
-import com.sun.star.beans.Property;
-import com.sun.star.beans.PropertyAttribute;
-import com.sun.star.beans.PropertyValue;
 import com.sun.star.beans.XPropertySet;
-import com.sun.star.beans.XPropertySetInfo;
-import com.sun.star.container.XEnumerationAccess;
 import com.sun.star.container.XIndexAccess;
-import com.sun.star.container.XNamed;
-import com.sun.star.frame.XModel;
-import com.sun.star.frame.XStorable;
-import com.sun.star.io.IOException;
-import com.sun.star.lang.IndexOutOfBoundsException;
-import com.sun.star.lang.WrappedTargetException;
 import com.sun.star.lang.XComponent;
 import com.sun.star.sheet.SheetLinkMode;
-import com.sun.star.sheet.XCalculatable;
-import com.sun.star.sheet.XExternalDocLink;
-import com.sun.star.sheet.XExternalDocLinks;
 import com.sun.star.sheet.XSheetLinkable;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
-import com.sun.star.sheet.XSpreadsheetView;
 import com.sun.star.sheet.XSpreadsheets;
-import com.sun.star.table.XCell;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.util.XRefreshable;
 
+/**
+ * Basic sheet operator testing
+ *
+ */
 public class SheetBasicTest {
 	UnoApp unoApp = new UnoApp();
-
 	XSpreadsheetDocument scDocument = null;
 	XComponent scComponent = null;
 
@@ -84,6 +70,9 @@ public class SheetBasicTest {
 		unoApp.close();
 	}
 
+	/**
+	 * test insert a sheet, rename sheet name and delete sheet
+	 */
 	@Test
 	public void insertRenameDeleteSheet() throws Exception {
 		// Insert a sheet named aa after first sheet
@@ -125,6 +114,9 @@ public class SheetBasicTest {
 		SCUtil.save(scDocumentTemp);
 	}
 
+	/**
+	 * Test copy and past sheet
+	 */
 	@Test
 	public void copypastesheet() throws Exception {
 		// Insert some value into cells
@@ -137,7 +129,7 @@ public class SheetBasicTest {
 		XSpreadsheet sourceSpreadSheet = SCUtil.getSCSheetByName(scDocument,
 				souceSheetName);
 		// input strings into sheet1
-		SCUtil.setTextToCellRange(sourceSpreadSheet, 0, 0, 5, 2, stringValues);
+		SCUtil.setTextToCellRange(sourceSpreadSheet, 0, 0, stringValues);
 		// copy the sheet from sourcesheet to copysheet
 		String newcopysheet = "copysheet";
 		XSpreadsheets spreadsheets = scDocument.getSheets();
@@ -158,6 +150,9 @@ public class SheetBasicTest {
 
 	}
 
+	/**
+	 * Test move sheet
+	 */
 	@Test
 	public void movesheet() throws Exception {
 
@@ -173,7 +168,7 @@ public class SheetBasicTest {
 				{ "Rival in business", "12.2", "12.6", "17.7", "20.4", "100" }, };
 		XSpreadsheet movesheet = SCUtil
 				.getSCSheetByIndex(scDocument, (short) 0);
-		SCUtil.setTextToCellRange(movesheet, 0, 0, 5, 2, stringValues);
+		SCUtil.setTextToCellRange(movesheet, 0, 0,stringValues);
 
 		// Before move, get the 2nd sheet name
 		String secondSheetNameBeforeMove = SCUtil.getSCSheetNameByIndex(
@@ -209,9 +204,11 @@ public class SheetBasicTest {
 
 		assertArrayEquals("Expect result should be stringValues", stringValues,
 				stringValuesaftermove);
-
 	}
 
+	/**
+	 * Test hide and show sheet
+	 */
 	@Test
 	public void hideShowSheet() throws Exception {
 		// Insert a sheet named hide sheet after first sheet
@@ -264,6 +261,9 @@ public class SheetBasicTest {
 		SCUtil.save(scDocument);
 	}
 
+	/**
+	 * Test sheet tab color
+	 */
 	@Test
 	public void sheetColor() throws Exception {
 		// get first sheet propertyset
@@ -274,7 +274,7 @@ public class SheetBasicTest {
 		XPropertySet sheet1PropertySet = (XPropertySet) UnoRuntime
 				.queryInterface(XPropertySet.class, firstSpreadSheet);
 
-		// Set tabcolor to 111
+		// Set sheet tab color to 111
 		sheet1PropertySet.setPropertyValue("TabColor", 111);
 
 		// copy the color sheet to new sheet
@@ -310,6 +310,9 @@ public class SheetBasicTest {
 				copySheetcolorid);
 	}
 
+	/**
+	 * test insert sheet from other file
+	 */
 	@Test
 	public void insertSheetFromfile() throws Exception {
 		// New a document source.xls, add value to 3 sheet

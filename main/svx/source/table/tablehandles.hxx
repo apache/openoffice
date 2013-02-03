@@ -74,16 +74,22 @@ private:
 class TableBorderHdl : public SdrHdl
 {
 public:
-	TableBorderHdl( const Rectangle& rRect );
+	TableBorderHdl( 
+        const Rectangle& rRect,
+        bool bAnimate);
 
 	virtual Pointer GetPointer() const;
+    bool getAnimate() const { return mbAnimate; }
 
 protected:
 	// create marker for this kind
 	virtual void CreateB2dIAObject();
 
 private:
-	Rectangle maRectangle;
+    Rectangle maRectangle;
+
+    /// bitfield
+    bool            mbAnimate : 1;
 };
 
 } // end of namespace table

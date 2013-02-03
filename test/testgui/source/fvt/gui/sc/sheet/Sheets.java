@@ -39,6 +39,9 @@ import testlib.gui.AppTool;
  */
 
 public class Sheets {
+	
+	@Rule
+	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {

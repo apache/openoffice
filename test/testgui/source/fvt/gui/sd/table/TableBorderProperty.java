@@ -34,6 +34,8 @@ import org.openoffice.test.common.Logger;
 import testlib.gui.AppTool;
 
 public class TableBorderProperty {
+	@Rule
+	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {
