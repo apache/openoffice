@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textschart01wiz_data_rangexhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Chart Wizard - Data Range</title>
+         <filename>/text/schart/01/wiz_data_range.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id2429578"><bookmark_value>data ranges in charts</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<paragraph xml-lang="en-US" id="hd_id8313852" role="heading" level="1" l10n="NEW"><variable id="wiz_data_range"><link href="text/schart/01/wiz_data_range.xhp">Chart Wizard - Data Range</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id8829309" role="paragraph" l10n="NEW">On this page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can select one single source of data range. This range may consist of more than one rectangular range of cells.</paragraph><comment>context menu Data Ranges</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:DataRanges" id="bm_id7543259" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id6401867" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens the Data Ranges dialog where you can edit Data Range and Data Series.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id2025818" role="tip" l10n="NEW">Use the Chart Wizard - Data Series page if you need more control over the data ranges.</paragraph>
+      <section id="howtoget">
+         <embed href="text/schart/00/00000004.xhp#wiz_ranges"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id8466139" role="paragraph" l10n="NEW">This dialog is only available for charts based on a Calc or Writer table.</paragraph>
+      <embed href="text/shared/00/00000001.xhp#ShiftF1"/>
+      <paragraph xml-lang="en-US" id="hd_id1877193" role="heading" level="2" l10n="NEW">To specify a data range</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5924863" role="paragraph" l10n="NEW">Select the data range. Do one of the following:</paragraph>
+            <paragraph xml-lang="en-US" id="par_id4357432" role="paragraph" l10n="NEW">Enter the data range in the text box.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id5626392" role="paragraph" l10n="NEW">In Calc, an example data range would be "$Sheet1.$B$3:$B$14". Note that a data range may consist of more than one region in a spreadsheet, e.g. "$Sheet1.A1:A5;$Sheet1.D1:D5" is also a valid data range. In Writer, an example data range would be "Table1.A1:E4".</paragraph>
+            <paragraph xml-lang="en-US" id="par_id1363872" role="paragraph" l10n="CHG">In Calc, click <emph>Select data range</emph> to minimize the dialog, then drag over a cell area to select the data range.<comment>Hold down the Ctrl key and drag to select multiple ranges. --- see issue 71894</comment></paragraph>
+            <paragraph xml-lang="en-US" id="par_id6823938" role="paragraph" l10n="NEW">If you want a data range of multiple cell areas that are not next to each other, enter the first range, then manually add a semicolon at the end of the text box, then enter the other ranges. Use a semicolon as delimiter between ranges.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1434369" role="paragraph" l10n="NEW">Click one of the options for data series in rows or in columns.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7524033" role="paragraph" l10n="NEW">Check whether the data range has labels in the first row or in the first column or both.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id5256508" role="paragraph" l10n="NEW">In the preview you can see how the final chart will look.</paragraph><comment>data range text box &amp; shrinky</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:Edit:TP_RANGECHOOSER:ED_RANGE" id="bm_id2121951" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:ImageButton:TP_RANGECHOOSER:IB_RANGE" id="bm_id4829554" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id379650" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the data range that you want to include in your chart. To minimize this dialog while you select the data range in Calc, click the <emph>Select data range</emph> button.</ahelp></paragraph><comment>data series in rows</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_RANGECHOOSER:RB_DATAROWS" id="bm_id2901699" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id953703" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Data series get their data from consecutive rows in the selected range. For scatter charts, the first data series will contain x-values for all series. All other data series are used as y-values, one for each series.</ahelp></paragraph><comment>data series in columns</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_RANGECHOOSER:RB_DATACOLS" id="bm_id5534226" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id4496597" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Data series get their data from consecutive columns in the selected range. For scatter charts, the first data column will contain x-values for all series. All other data columns are used as y-values, one for each series.</ahelp></paragraph><comment>first row as label</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_RANGECHOOSER:CB_FIRST_ROW_ASLABELS" id="bm_id49134" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id2898953" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">For data series in columns: The first row in the range is used as names for data series. For data series in rows: The first row in the range is used as categories. The remaining rows comprise the data series. If this check box is not selected, all rows are data series.</ahelp></paragraph><comment>first column as label</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_RANGECHOOSER:CB_FIRST_COLUMN_ASLABELS" id="bm_id8939481" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id7546311" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">For data series in columns: The first column in the range is used as names for data series. For data series in rows: The first column in the range is used as categories. The remaining columns comprise the data columns. If this check box is not selected, all columns are data columns.</ahelp></paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+         <embed href="text/schart/01/wiz_chart_type.xhp#wiz_chart_type"/>
+         <embed href="text/schart/01/wiz_data_series.xhp#wiz_data_series"/>
+         <embed href="text/schart/01/wiz_chart_elements.xhp#wiz_chart_elements"/>
+      </section>
+   </body>
+</helpdocument>

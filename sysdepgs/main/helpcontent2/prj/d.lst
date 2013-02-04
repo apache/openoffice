@@ -1,0 +1,15 @@
+mkdir: %_DEST%\pck%_EXT%
+mkdir: %COMMON_DEST%\bin%_EXT%
+
+..\helpers\hid.lst %COMMON_DEST%\bin%_EXT%\hid.lst
+..\%__SRC%\bin\helpimg.ilst %COMMON_DEST%\res%_EXT%\img\helpimg.ilst
+
+..\%__SRC%\bin\sbasic_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\scalc_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\schart_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\sdatabase_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\sdraw_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\shared_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\simpress_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\smath_*.zip %_DEST%\pck%_EXT%
+..\%__SRC%\bin\swriter_*.zip %_DEST%\pck%_EXT%

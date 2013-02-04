@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalc0206030000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Sum</title>
+         <filename>/text/scalc/02/06030000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="summe">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157909"><bookmark_value>functions;sum function icon</bookmark_value>
+         <bookmark_value>formula bar;sum function</bookmark_value>
+         <bookmark_value>sum icon</bookmark_value>
+         <bookmark_value>AutoSum button, see sum icon</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_INSWIN_SUMME" id="bm_id3151384" localize="false"/><comment>MW inserted a cross-reference</comment>
+<paragraph xml-lang="en-US" id="hd_id3157909" role="heading" level="1" l10n="U" oldref="1"><link href="text/scalc/02/06030000.xhp" name="Sum">Sum</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150543" role="paragraph" l10n="CHG" oldref="2"><ahelp hid="HID_INSWIN_SUMME">Inserts the sum of a cell range into the current cell, or inserts sum values into selected cells. Click in a cell, click this icon, and optionally adjust the cell range. Or select some cells into which the sum values will be inserted, then click the icon.</ahelp></paragraph>
+      </section>
+      <section id="sysumme">
+         <table id="tbl_id3150868">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153770" role="paragraph" l10n="E">
+<image id="img_id3147434" src="res/commandimagelist/sc_autosum.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3147434">Icon</alt>
+	</image></paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3152577" role="paragraph" l10n="U" oldref="15">Sum</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3156444" role="paragraph" l10n="U" oldref="16">$[officename] automatically suggests a cell range, provided that the spreadsheet contains data. If the cell range already contains a sum function, you can combine it with the new one to yield the total sum of the range. If the range contains filters, the Subtotal function is inserted instead of the Sum function.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153189" role="paragraph" l10n="U" oldref="3">Click the <emph>Accept</emph> icon (green check mark) to use the formula displayed in the input line.</paragraph>
+   </body>
+</helpdocument>

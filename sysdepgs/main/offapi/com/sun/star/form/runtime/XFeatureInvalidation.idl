@@ -1,0 +1,72 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_form_runtime_XFeatureInvalidation_idl__
+#define __com_sun_star_form_runtime_XFeatureInvalidation_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module form { module runtime { 
+
+//=============================================================================
+
+/** implements a callback for a <type>XFormOperations</type> instance, which is called
+    when the state of one or more <type>FormFeature</type>s might have changed.
+
+    @see XFormOperations
+
+    @since OOo 2.2
+*/
+interface XFeatureInvalidation
+{
+    /** invalidates the given <type>FormFeature</type>s
+
+        <p>Invalidation means that any user interface representation (such as toolbox buttons), or
+        any dispatches associated with the features in question are potentially out-of-date, and
+        need to be updated.</p>
+
+        @param Features
+            The set of features whose state might have changed.
+    */
+    void    invalidateFeatures( [in] sequence< short > Features );
+
+    /** invalidates all features
+
+        <p>This method is used of it cannot be exactly and reliably determined
+        which features might actually have changed their state. In this case, the callee
+        should assume all features it is interested in must be requeried.</p>
+    */
+    void    invalidateAllFeatures();
+};
+
+//=============================================================================
+
+}; }; }; }; }; 
+
+//=============================================================================
+
+#endif

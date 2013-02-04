@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Meta" script:language="StarBasic">REM  *****  BASIC  *****
+
+Dim oDialog AS Object
+Dim document AS Object
+
+&apos; Fetches the meta values from the document and executes the dialog
+Sub Main
+
+	If not IsHelpFile Then
+		msgbox(strErr_NoHelpFile)
+		Exit Sub
+	End If
+
+	document = StarDesktop.CurrentComponent
+
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgMeta&quot;)
+	oDialogModel = oDialog.Model
+	
+	&apos;oTxtFName = oDialog.GetControl(&quot;txtFileName&quot;)
+	&apos;oTxtFName.Text = document.DocumentInfo.PropertyValues(29).Value
+	&apos;oTxtFName.Text = document.DocumentInfo.GetPropertyValue(&quot;Description&quot;)
+	
+&apos;	If oTxtFName.Text = &quot;&quot; Then
+&apos;		msgbox &quot;The document must be saved first.&quot;+chr(13)+&quot;Please save the document and call this dialog again.&quot;
+&apos;		oDialog.dispose
+&apos;		Exit Sub
+&apos;	End If
+	
+	oTxtTitle = oDialog.GetControl(&quot;txtTitle&quot;)
+	oTxtTitle.Text = document.DocumentInfo.Title
+	
+	oOpIndInc = oDialog.GetControl(&quot;opIndexInclude&quot;)
+	oOpIndExc = oDialog.GetControl(&quot;opIndexExclude&quot;)
+	
+	
+	&apos;oCbFileStatus = oDialog.GetControl(&quot;cbFileStatus&quot;)
+	&apos;arItems = Array(&quot;DRAFT&quot;,&quot;FINAL&quot;,&quot;PUBLISH&quot;,&quot;STALLED&quot;,&quot;DEPRECATED&quot;)
+	&apos;oCbFileStatus.AddItems(arItems,ubound(arItems))
+	&apos;sStatus = document.DocumentInfo.GetPropertyValue(&quot;Keywords&quot;)
+	&apos;If (InStr(&quot;DRAFT FINAL PUBLISH STALLED DEPRECATED&quot;,sStatus)=0) Then
+	&apos;	oCbFileStatus.SetText(&quot;DRAFT&quot;)
+	&apos;Else
+	&apos;	oCbFileStatus.SetText(sStatus)
+	&apos;End If
+	
+
+	If document.DocumentInfo.GetUserFieldValue(GetUserFieldNumber(&quot;Indexer&quot;)) = &quot;exclude&quot; then
+		oOpIndExc.State = True
+	Else
+		oOpIndInc.State = True
+	End If
+	
+	&apos;oTxtTopicID = oDialog.GetControl(&quot;txtTopicID&quot;)
+	&apos;oTxtTopicID.Text = document.DocumentInfo.GetUserFieldValue(1)
+	
+	&apos;oTxtComment = oDialog.GetControl(&quot;txtComment&quot;)
+	&apos;oTxtComment.Text = document.DocumentInfo.GetUserFieldValue(GetUserFieldNumber(&quot;Comment&quot;))
+	
+	&apos;oTxtEdited = oDialog.GetControl(&quot;txtLastEdited&quot;)
+	&apos;oTxtEdited.Text = document.DocumentInfo.GetUserFieldValue(3)
+	
+	If oDialog.Execute() = 1 Then &apos; update the meta data
+		document.DocumentInfo.Title = oTxtTitle.Text
+		&apos;document.DocumentInfo.SetUserFieldValue(1,oTxtTopicID.Text)
+		&apos;document.DocumentInfo.SetUserFieldValue(GetUserFieldNumber(&quot;Comment&quot;),oTxtComment.Text)	
+		&apos;document.DocumentInfo.SetUserFieldValue(3,oTxtEdited.Text)
+		&apos;document.DocumentInfo.SetPropertyValue(&quot;Keywords&quot;,oCbFileStatus.Text)
+		
+		&apos;If (oCbFileStatus.Text = &quot;PUBLISH&quot;) Then
+			REM... Check for paras without ID: If there are any, this cannot be PUBLISH!
+		
+		&apos;End If
+		
+		If oOpIndExc.State = True Then
+			document.DocumentInfo.SetUserFieldValue(GetUserFieldNumber(&quot;Indexer&quot;),&quot;exclude&quot;)
+		Else
+			document.DocumentInfo.SetUserFieldValue(GetUserFieldNumber(&quot;Indexer&quot;),&quot;include&quot;)
+		End If
+	End If
+	oDialog.dispose
+end sub
+
+&apos; Normalizes the values for title and topic id 
+&apos; (if the fields are empty or contain invalid values)
+Sub NormalizeMeta (Event As Object)
+	Select Case Event.Source.Model.Name
+		Case &quot;txtTitle&quot;:
+			If Event.Source.Text = &quot;&quot; Then
+				msgbox &quot;Topic title must not be empty!&quot;+chr(13)+&quot;Resetting to default value.&quot;
+			End If
+			SetTopicTitle(Event.Source.Text)
+		Case &quot;txtTopicID&quot;:
+			If Event.Source.Text = &quot;&quot; Then
+				msgbox &quot;Topic ID must not be empty!&quot;+chr(13)+&quot;Resetting to default value.&quot;
+			End If
+			SetTopicID(Event.Source.Text)
+	End Select
+End Sub
+
+&apos; Sets the value in the Topic ID dialog field
+Sub SetTopicID(txt As String)
+	oTxtTopicID = oDialog.GetControl(&quot;txtTopicID&quot;)
+	If txt = &quot;&quot; Then
+		oTxtTopicID.Text = AlphaNum(document.DocumentInfo.PropertyValues(29).Value)
+	Else
+		oTxtTopicID.Text = AlphaNum(txt)
+	End If
+End Sub
+
+Sub Test
+	On Error Resume Next
+	document = StarDesktop.CurrentComponent
+&apos;	showprop document
+	msgbox document.URL
+
+End Sub
+
+&apos; Sets the value in the Topic title dialog field
+Sub SetTopicTitle(txt As String)
+	dim strg As String
+	oTxtTitle = oDialog.GetControl(&quot;txtTitle&quot;)
+
+	If txt =&quot;&quot; Then
+		Enum = document.Text.createEnumeration
+
+		Do While Enum.hasMoreElements
+			TextElement = Enum.nextElement
+			If TextElement.supportsService(&quot;com.sun.star.text.Paragraph&quot;) Then
+				If Left(TextElement.ParaStyleName,8)=&quot;hlp_head&quot; Then
+					Enum2 = TextElement.createEnumeration
+					While Enum2.hasMoreElements
+						TextPortion = Enum2.nextElement
+						If Not(TextPortion.TextPortionType=&quot;TextField&quot;) Then
+							strg = strg + TextPortion.String
+						End If
+					Wend
+					oTxtTitle.Text = strg
+					Exit Do
+				End If
+			End If
+		Loop
+	Else
+		oTxtTitle.Text = txt
+	End If	
+End Sub
+
+&apos; Sets the value in the Topic title field when
+&apos; &quot;Fetch&quot; button is pressed
+Sub FetchTopicTitle
+	SetTopicTitle(&quot;&quot;)
+	
+End Sub
+
+&apos; Sets the value in the Topic ID dialog field when
+&apos; &quot;Suggest&quot; button is pressed
+Sub SuggestTopicID
+	SetTopicID(&quot;&quot;)
+End Sub
+
+Sub ChangeStatus
+	oCbFileStatus = oDialog.GetControl(&quot;cbFileStatus&quot;)
+	sStatus = document.DocumentInfo.GetPropertyValue(&quot;Keywords&quot;)
+	If (oCbFileStatus.Text = &quot;PUBLISH&quot;) Then
+		nNoID = 0 &apos; DEBUG
+		If nNoID &lt;&gt; 0 Then
+			msgbox &quot;There are &quot;+nNoID+&quot; new paragraphs in the file.&quot;+chr(13)+&quot;File status PUBLISH invalid.&quot;+chr(13)+&quot;Setting back to &quot;+sStatus, 48, &quot;D&apos;oh!&quot;
+		End If
+	End If
+End Sub
+</script:module>

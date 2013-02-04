@@ -1,0 +1,117 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_text_XAutoTextGroup_idl__ 
+#define __com_sun_star_text_XAutoTextGroup_idl__ 
+ 
+#ifndef __com_sun_star_container_XNameAccess_idl__ 
+#include <com/sun/star/container/XNameAccess.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__ 
+#include <com/sun/star/lang/IllegalArgumentException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_container_ElementExistException_idl__ 
+#include <com/sun/star/container/ElementExistException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_io_IOException_idl__ 
+#include <com/sun/star/io/IOException.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_text_XAutoTextEntry_idl__ 
+#include <com/sun/star/text/XAutoTextEntry.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_text_XTextRange_idl__ 
+#include <com/sun/star/text/XTextRange.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_container_NoSuchElementException_idl__ 
+#include <com/sun/star/container/NoSuchElementException.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module text { 
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: interface com::sun::star::text::XAutoTextGroup
+/** The interface provide methods to insert, rename and delete autotext entries from the current autotext group.
+ */
+published interface XAutoTextGroup: com::sun::star::container::XNameAccess
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: method com::sun::star::text::XAutoTextGroup::getTitles
+	/** returns the titles of all autotext entries. The order of the entries 
+				corresponds to the output of the function getElementNames().
+	 */
+	sequence<string> getTitles(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: method com::sun::star::text::XAutoTextGroup::renameByName
+	/** renames an entry in the autotext group.
+		
+		
+		
+		<p>The position of the autotext entry is not changed.
+		
+		</p>
+	 */
+	void renameByName( [in] string aElementName, 
+			 [in] string aNewElementName, 
+			 [in] string aNewElementTitle ) 
+			raises( com::sun::star::lang::IllegalArgumentException, 
+					com::sun::star::container::ElementExistException, 
+					com::sun::star::io::IOException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: method com::sun::star::text::XAutoTextGroup::insertNewByName
+	/** creates a new <type>AutoTextEntry</type> entry.
+	 */
+	com::sun::star::text::XAutoTextEntry insertNewByName( [in] string aName, 
+			 [in] string aTitle, 
+			 [in] com::sun::star::text::XTextRange xTextRange ) 
+			raises( com::sun::star::container::ElementExistException ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: method com::sun::star::text::XAutoTextGroup::removeByName
+	/** removes the specified autotext entry.
+	 */
+	void removeByName( [in] string aEntryName ) 
+			raises( com::sun::star::container::NoSuchElementException ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+
+#endif 

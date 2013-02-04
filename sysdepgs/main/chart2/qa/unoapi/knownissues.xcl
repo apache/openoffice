@@ -1,0 +1,60 @@
+# *************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+# *************************************************************
+#i83851
+sch.ChXChartDocument::com::sun::star::frame::XModel
+#i83833
+sch.ChXChartDocument::com::sun::star::chart::XChartDocument
+#i83834
+sch.ChXChartDocument::com::sun::star::chart::ChartTableAddressSupplier
+
+#i83852
+sch.ChXChartView::com::sun::star::view::XSelectionSupplier
+
+#i83855
+sch.ChXDiagram::com::sun::star::chart::LineDiagram
+#i83853
+sch.ChXDiagram::com::sun::star::beans::XPropertySet
+#i83854
+sch.ChXDiagram::com::sun::star::chart::ChartAxisXSupplier
+sch.ChXDiagram::com::sun::star::chart::ChartAxisYSupplier
+sch.ChXDiagram::com::sun::star::chart::ChartAxisZSupplier
+#i83856
+sch.ChXDiagram::com::sun::star::chart::StockDiagram
+
+sch.ChartLegend::com::sun::star::drawing::XShape
+#i83830
+sch.ChartTitle::com::sun::star::drawing::XShape
+
+#i78867
+sch.ChXChartDocument::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChXChartAxis::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChXDiagram::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChartArea::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChartGrid::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChartLegend::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChartLine::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChartTitle::com::sun::star::xml::UserDefinedAttributeSupplier
+sch.ChXDataPoint::com::sun::star::xml::UserDefinedAttributeSupplier
+
+#i83865
+sch.ChXDataPoint::com::sun::star::drawing::LineProperties
+#112078
+sch.ChartLegend::com::sun::star::beans::XPropertySet

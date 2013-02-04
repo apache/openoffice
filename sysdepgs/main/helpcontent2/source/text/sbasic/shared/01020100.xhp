@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared01020100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Using Variables</title>
+<filename>/text/sbasic/shared/01020100.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="variable">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149346"><bookmark_value>names of variables</bookmark_value>
+<bookmark_value>variables; using</bookmark_value>
+<bookmark_value>types of variables</bookmark_value>
+<bookmark_value>declaring variables</bookmark_value>
+<bookmark_value>values;of variables</bookmark_value>
+<bookmark_value>constants</bookmark_value>
+<bookmark_value>arrays;declaring</bookmark_value>
+<bookmark_value>defining;constants</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149346" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/01020100.xhp" name="Using Variables">Using Variables</link></paragraph>
+<paragraph role="paragraph" id="par_id3154346" xml-lang="en-US" l10n="U" oldref="3">The following describes the basic use of variables in $[officename] Basic.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3153361" xml-lang="en-US" level="2" l10n="U" oldref="4">Naming Conventions for Variable Identifiers</paragraph>
+<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="U" oldref="5">A variable name can consist of a maximum of 255 characters. The first character of a variable name <emph>must</emph> be a letter A-Z or a-z. Numbers can also be used in a variable name, but punctuation symbols and special characters are not permitted, with exception of the underscore character ("_"). In $[officename] Basic variable identifiers are not case-sensitive. Variable names may contain spaces but must be enclosed in square brackets if they do.</paragraph>
+<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="U" oldref="6">Examples for variable identifiers:</paragraph>
+<table id="tbl_id3154685">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3163798" xml-lang="en-US" l10n="U" oldref="7">MyNumber=5</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156441" xml-lang="en-US" l10n="U" oldref="126">Correct</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="8">MyNumber5=15</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149664" xml-lang="en-US" l10n="U" oldref="127">Correct</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3145364" xml-lang="en-US" l10n="U" oldref="9">MyNumber_5=20</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146119" xml-lang="en-US" l10n="U" oldref="128">Correct</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3154729" xml-lang="en-US" l10n="U" oldref="10">My Number=20</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153876" xml-lang="en-US" l10n="U" oldref="11">Not valid, variable with space must be enclosed in square brackets</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3147126" xml-lang="en-US" l10n="U" oldref="14">[My Number]=12</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154510" xml-lang="en-US" l10n="U" oldref="15">Correct</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3153708" xml-lang="en-US" l10n="U" oldref="12">DéjàVu=25</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150330" xml-lang="en-US" l10n="U" oldref="129">Not valid, special characters are not allowed</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3155443" xml-lang="en-US" l10n="U" oldref="13">5MyNumber=12</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154254" xml-lang="en-US" l10n="U" oldref="130">Not valid, variable may not begin with a number</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3147345" xml-lang="en-US" l10n="U" oldref="16">Number,Mine=12</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149256" xml-lang="en-US" l10n="U" oldref="131">Not valid, punctuation marks are not allowed</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="heading" id="hd_id3146317" xml-lang="en-US" level="2" l10n="U" oldref="17">Declaring Variables</paragraph>
+<paragraph role="paragraph" id="par_id3150299" xml-lang="en-US" l10n="U" oldref="18">In $[officename] Basic you don't need to declare variables explicitly. A variable declaration can be performed with the <emph>Dim</emph> statement. You can declare more than one variable at a time by separating the names with a comma. To define the variable type, use either a type-declaration sign after the name, or the appropriate key word. </paragraph>
+<paragraph role="paragraph" id="par_id3154118" xml-lang="en-US" l10n="U" oldref="140">Examples for variable declarations:</paragraph>
+<table id="tbl_id3154658">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3150090" xml-lang="en-US" l10n="U" oldref="19">DIM a$</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150982" xml-lang="en-US" l10n="U" oldref="132">Declares the variable "a" as a String</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3149531" xml-lang="en-US" l10n="U" oldref="20">DIM a As String</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150343" xml-lang="en-US" l10n="U" oldref="133">Declares the variable "a" as a String</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3149036" xml-lang="en-US" l10n="U" oldref="21">DIM a$, b As Integer</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155507" xml-lang="en-US" l10n="U" oldref="22">Declares one variable as a String and one as an Integer</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_idN10854" xml-lang="en-US" l10n="NEW">DIM c As Boolean</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10859" xml-lang="en-US" l10n="NEW">Declares c as a Boolean variable that can be TRUE or FALSE</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="paragraph" id="par_id3150519" xml-lang="en-US" l10n="U" oldref="23">It is very important when declaring variables that you use the type-declaration character each time, even if it was used in the declaration instead of a keyword. Thus the following statements are invalid:</paragraph>
+<table id="tbl_id3155529">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3152985" xml-lang="en-US" l10n="U" oldref="24">DIM a$</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154527" xml-lang="en-US" l10n="U" oldref="134">Declares "a" as a String</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3148599" xml-lang="en-US" l10n="U" oldref="25">a="TestString"</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153064" xml-lang="en-US" l10n="U" oldref="135">Type-declaration missing: "a$="</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="warning" id="par_id3144770" xml-lang="en-US" l10n="U" oldref="26">Once you have declared a variable as a certain type, you cannot declare the variable under the same name again as a different type!</paragraph>
+<paragraph role="heading" id="hd_id3149331" xml-lang="en-US" level="3" l10n="U" oldref="27">Forcing Variable Declarations</paragraph>
+<paragraph role="paragraph" id="par_id3149443" xml-lang="en-US" l10n="U" oldref="28">To force declaration of variables, use the following command:</paragraph>
+<paragraph role="code" id="par_id3152869" xml-lang="en-US" l10n="U" oldref="29">OPTION EXPLICIT</paragraph>
+<paragraph role="paragraph" id="par_id3155072" xml-lang="en-US" l10n="U" oldref="30">The <emph>Option Explicit</emph> statement has to be the first line in the module, before the first SUB. Generally, only arrays need to be declared explicitly. All other variables are declared according to the type-declaration character, or - if omitted - as the default type <emph>Single</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3154614" xml-lang="en-US" level="2" l10n="U" oldref="34">Variable Types</paragraph>
+<paragraph role="paragraph" id="par_id3155383" xml-lang="en-US" l10n="U" oldref="35">$[officename] Basic supports four variable classes:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153972" xml-lang="en-US" l10n="U" oldref="36">
+<emph>Numeric</emph> variables can contain number values. Some variables are used to store large or small numbers, and others are used for floating-point or fractional numbers. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3159226" xml-lang="en-US" l10n="U" oldref="37">
+<emph>String</emph> variables contain character strings.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145217" xml-lang="en-US" l10n="U" oldref="38">
+<emph>Boolean</emph> variables contain either the TRUE or the FALSE value.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154762" xml-lang="en-US" l10n="U" oldref="39">
+<emph>Object</emph> variables can store objects of various types, like tables and documents within a document.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3153805" xml-lang="en-US" level="3" l10n="U" oldref="40">Integer Variables</paragraph>
+<paragraph role="paragraph" id="par_id3146966" xml-lang="en-US" l10n="U" oldref="41">Integer variables range from -32768 to 32767. If you assign a floating-point value to an integer variable, the decimal places are rounded to the next integer. Integer variables are rapidly calculated in procedures and are suitable for counter variables in loops. An integer variable only requires two bytes of memory. "%" is the type-declaration character.</paragraph>
+<paragraph role="code" id="par_id3153810" xml-lang="en-US" l10n="U" oldref="43">Dim Variable%</paragraph>
+<paragraph role="code" id="par_id3153556" xml-lang="en-US" l10n="U" oldref="44">Dim Variable As Integer</paragraph>
+<paragraph role="heading" id="hd_id3147546" xml-lang="en-US" level="3" l10n="U" oldref="45">Long Integer Variables</paragraph>
+<paragraph role="paragraph" id="par_id3151193" xml-lang="en-US" l10n="U" oldref="46">Long integer variables range from -2147483648 to 2147483647. If you assign a floating-point value to a long integer variable, the decimal places are rounded to the next integer. Long integer variables are rapidly calculated in procedures and are suitable for counter variables in loops for large values. A long integer variable requires four bytes of memory. "&amp;" is the type-declaration character.</paragraph>
+<paragraph role="code" id="par_id3154708" xml-lang="en-US" l10n="U" oldref="48">Dim Variable&amp;</paragraph>
+<paragraph role="code" id="par_id3156365" xml-lang="en-US" l10n="U" oldref="49">Dim Variable as Long</paragraph>
+<paragraph role="heading" id="hd_id7596972" xml-lang="en-US" level="3" l10n="NEW">Decimal Variables<comment>see i64349</comment></paragraph>
+<paragraph role="paragraph" id="par_id2649311" xml-lang="en-US" l10n="NEW">Decimal variables can take positive or negative numbers or zero. Accuracy is up to 29 digits.</paragraph><comment>i85284</comment><paragraph role="paragraph" id="par_id7617114" xml-lang="en-US" l10n="NEW">You can use plus (+) or minus (-) signs as prefixes for decimal numbers (with or without spaces).</paragraph>
+<paragraph role="paragraph" id="par_id1593676" xml-lang="en-US" l10n="NEW">If a decimal number is assigned to an integer variable, %PRODUCTNAME Basic rounds the figure up or down.<comment>this is the only information from "Programming Guide
+for BASIC" about decimal variables</comment></paragraph>
+<paragraph role="heading" id="hd_id3147500" xml-lang="en-US" level="3" l10n="U" oldref="50">Single Variables</paragraph>
+<paragraph role="paragraph" id="par_id3153070" xml-lang="en-US" l10n="U" oldref="51">Single variables can take positive or negative values ranging from 3.402823 x 10E38 to 1.401298 x 10E-45. Single variables are floating-point variables, in which the decimal precision decreases as the non-decimal part of the number increases. Single variables are suitable for mathematical calculations of average precision. Calculations require more time than for Integer variables, but are faster than calculations with Double variables. A Single variable requires 4 bytes of memory. The type-declaration character is "!".</paragraph>
+<paragraph role="code" id="par_id3149875" xml-lang="en-US" l10n="U" oldref="52">Dim Variable!</paragraph>
+<paragraph role="code" id="par_id3153302" xml-lang="en-US" l10n="U" oldref="53">Dim Variable as Single</paragraph>
+<paragraph role="heading" id="hd_id3155753" xml-lang="en-US" level="3" l10n="U" oldref="54">Double Variables</paragraph>
+<paragraph role="paragraph" id="par_id3150953" xml-lang="en-US" l10n="U" oldref="55">Double variables can take positive or negative values ranging from 1.79769313486232 x 10E308 to 4.94065645841247 x 10E-324. Double variables are floating-point variables, in which the decimal precision decreases as the non-decimal part of the number increases. Double variables are suitable for precise calculations. Calculations require more time than for Single variables. A Double variable requires 8 bytes of memory. The type-declaration character is "#".</paragraph>
+<paragraph role="code" id="par_id3150431" xml-lang="en-US" l10n="U" oldref="56">Dim Variable#</paragraph>
+<paragraph role="code" id="par_id3154406" xml-lang="en-US" l10n="U" oldref="57">Dim Variable As Double</paragraph>
+<paragraph role="heading" id="hd_id3155747" xml-lang="en-US" level="3" l10n="U" oldref="95">Currency Variables</paragraph>
+<paragraph role="paragraph" id="par_id3153337" xml-lang="en-US" l10n="U" oldref="96">Currency variables are internally stored as 64-bit numbers (8 Bytes) and displayed as a fixed-decimal number with 15 non-decimal and 4 decimal places. The values range from -922337203685477.5808 to +922337203685477.5807. Currency variables are used to calculate currency values with a high precision. The type-declaration character is "@".</paragraph>
+<paragraph role="code" id="par_id3147296" xml-lang="en-US" l10n="U" oldref="97">Dim Variable@</paragraph>
+<paragraph role="code" id="par_id3150391" xml-lang="en-US" l10n="U" oldref="98">Dim Variable As Currency</paragraph>
+<paragraph role="heading" id="hd_id3148742" xml-lang="en-US" level="3" l10n="U" oldref="58">String Variables</paragraph>
+<paragraph role="paragraph" id="par_id3151393" xml-lang="en-US" l10n="U" oldref="59">String variables can hold character strings with up to 65,535 characters. Each character is stored as the corresponding Unicode value. String variables are suitable for word processing within programs and for temporary storage of any non-printable character up to a maximum length of 64 Kbytes. The memory required for storing string variables depends on the number of characters in the variable. The type-declaration character is "$".</paragraph>
+<paragraph role="code" id="par_id3166467" xml-lang="en-US" l10n="U" oldref="60">Dim Variable$</paragraph>
+<paragraph role="code" id="par_id3153027" xml-lang="en-US" l10n="U" oldref="61">Dim Variable As String</paragraph>
+<paragraph role="heading" id="hd_id3150534" xml-lang="en-US" level="3" l10n="U" oldref="62">Boolean Variables</paragraph>
+<paragraph role="paragraph" id="par_id3145632" xml-lang="en-US" l10n="CHG" oldref="63">Boolean variables store only one of two values: TRUE or FALSE. A number 0 evaluates to FALSE, every other value evaluates to TRUE.</paragraph>
+<paragraph role="code" id="par_id3147615" xml-lang="en-US" l10n="U" oldref="64">Dim Variable As Boolean</paragraph>
+<paragraph role="heading" id="hd_id3149722" xml-lang="en-US" level="3" l10n="U" oldref="65">Date Variables</paragraph>
+<paragraph role="paragraph" id="par_id3159116" xml-lang="en-US" l10n="U" oldref="66">Date variables can only contain dates and time values stored in an internal format. Values assigned to Date variables with <link href="text/sbasic/shared/03030101.xhp" name="Dateserial"><emph>Dateserial</emph></link>, <link href="text/sbasic/shared/03030102.xhp" name="Datevalue"><emph>Datevalue</emph></link>, <link href="text/sbasic/shared/03030205.xhp" name="Timeserial"><emph>Timeserial</emph></link> or <link href="text/sbasic/shared/03030206.xhp" name="Timevalue"><emph>Timevalue</emph></link> are automatically converted to the internal format. Date-variables are converted to normal numbers by using the <link href="text/sbasic/shared/03030103.xhp" name="Day"><emph>Day</emph></link>, <link href="text/sbasic/shared/03030104.xhp" name="Month"><emph>Month</emph></link>, <link href="text/sbasic/shared/03030106.xhp" name="Year"><emph>Year</emph></link> or the <link href="text/sbasic/shared/03030201.xhp" name="Hour"><emph>Hour</emph></link>, <link href="text/sbasic/shared/03030202.xhp" name="Minute"><emph>Minute</emph></link>, <link href="text/sbasic/shared/03030204.xhp" name="Second"><emph>Second</emph></link> function. The internal format enables a comparison of date/time values by calculating the difference between two numbers. These variables can only be declared with the key word <emph>Date</emph>.</paragraph>
+<paragraph role="code" id="par_id3150462" xml-lang="en-US" l10n="U" oldref="67">Dim Variable As Date</paragraph>
+<paragraph role="heading" id="hd_id3148732" xml-lang="en-US" level="2" l10n="U" oldref="68">Initial Variable Values</paragraph>
+<paragraph role="paragraph" id="par_id3154549" xml-lang="en-US" l10n="U" oldref="69">As soon as the variable has been declared, it is automatically set to the "Null" value. Note the following conventions:</paragraph>
+<paragraph role="paragraph" id="par_id3143222" xml-lang="en-US" l10n="U" oldref="70">
+<emph>Numeric</emph> variables are automatically assigned the value "0" as soon as they are declared.</paragraph>
+<paragraph role="paragraph" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="71">
+<emph>Date variables</emph> are assigned the value 0 internally; equivalent to converting the value to "0" with the <link href="text/sbasic/shared/03030103.xhp" name="Day"><emph>Day</emph></link>, <link href="text/sbasic/shared/03030104.xhp" name="Month"><emph>Month</emph></link>, <link href="text/sbasic/shared/03030106.xhp" name="Year"><emph>Year</emph></link> or the <link href="text/sbasic/shared/03030201.xhp" name="Hour"><emph>Hour</emph></link>, <link href="text/sbasic/shared/03030202.xhp" name="Minute"><emph>Minute</emph></link>, <link href="text/sbasic/shared/03030204.xhp" name="Second"><emph>Second</emph></link> function.</paragraph>
+<paragraph role="paragraph" id="par_id3154807" xml-lang="en-US" l10n="U" oldref="72">
+<emph>String variables</emph> are assigned an empty-string ("") when they are declared.</paragraph>
+<paragraph role="heading" id="hd_id3153936" xml-lang="en-US" level="2" l10n="U" oldref="83">Arrays</paragraph>
+<paragraph role="paragraph" id="par_id3148736" xml-lang="en-US" l10n="U" oldref="84">$[officename] Basic knows one- or multi-dimensional arrays, defined by a specified variable type. Arrays are suitable for editing lists and tables in programs. Individual elements of an array can be addressed through a numeric index.</paragraph>
+<paragraph role="paragraph" id="par_id3149546" xml-lang="en-US" l10n="U" oldref="85">Arrays <emph>must</emph> be declared with the <emph>Dim</emph> statement. There are several ways to define the index range of an array:</paragraph>
+<table id="tbl_id3155829">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3150143" xml-lang="en-US" l10n="U" oldref="86">DIM text$(20)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154567" xml-lang="en-US" l10n="U" oldref="136">21 elements numbered from 0 to 20</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3145596" xml-lang="en-US" l10n="U" oldref="125">DIM text$(5,4)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154397" xml-lang="en-US" l10n="U" oldref="137">30 elements (a matrix of 6 x 5 elements)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3149185" xml-lang="en-US" l10n="U" oldref="87">DIM text$(5 to 25)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149690" xml-lang="en-US" l10n="U" oldref="138">21 elements numbered from 5 to 25</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="code" id="par_id3155950" xml-lang="en-US" l10n="U" oldref="88">DIM text$(-15 to 5)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153113" xml-lang="en-US" l10n="U" oldref="89">21 elements (including 0), numbered from -15 to 5</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph role="paragraph" id="par_id3153005" xml-lang="en-US" l10n="CHG" oldref="90">The index range can include positive as well as negative numbers. <comment>UFI: deleted second sentence, #i36558#</comment></paragraph>
+<paragraph role="heading" id="hd_id3154507" xml-lang="en-US" level="2" l10n="U" oldref="91">Constants</paragraph>
+<paragraph role="paragraph" id="par_id3156357" xml-lang="en-US" l10n="U" oldref="92">Constants have a fixed value. They are only defined once in the program and cannot be redefined later:</paragraph>
+<paragraph role="code" id="par_id3153203" xml-lang="en-US" l10n="U" oldref="93">CONST ConstName=Expression</paragraph>
+</body>
+</helpdocument>

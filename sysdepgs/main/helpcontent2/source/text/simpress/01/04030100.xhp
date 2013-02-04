@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0104030100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Edit Snap Line / Point</title>
+<filename>/text/simpress/01/04030100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-23T15:26:40">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149020"><bookmark_value>guides; editing</bookmark_value>
+<bookmark_value>editing; guides and snap points</bookmark_value>
+<bookmark_value>snap points; editing</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:SetSnapItem" id="bm_id4873612" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:SetSnapItem" id="bm_id3147338" localize="false"/>
+<paragraph role="heading" id="hd_id3149020" xml-lang="en-US" level="1" l10n="U" oldref="1">Edit Snap Line / Point</paragraph>
+<paragraph role="paragraph" id="par_id3149259" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:SetSnapItem">Sets the position of the selected snap point or snap line relative to the top left corner of the page. </ahelp><comment>well, relative to the origin, which can easily be dragged away from that corner</comment></paragraph>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000404.xhp#efglbe"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sd:PushButton:DLG_SNAPLINE:BTN_DELETE" id="bm_id3150205" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteSnapItem" id="bm_id3963543" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteSnapItem" id="bm_id3166427" localize="false"/>
+<paragraph role="heading" id="hd_id3159238" xml-lang="en-US" level="2" l10n="U" oldref="3">Delete Snap Line/Point</paragraph>
+<paragraph role="paragraph" id="par_id3154656" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid=".uno:DeleteSnapItem">Deletes the selected snap point or snap line.</ahelp></paragraph>
+</body>
+</helpdocument>

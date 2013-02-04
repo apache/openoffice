@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03060500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Or-Operator [Runtime]</title>
+<filename>/text/sbasic/shared/03060500.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-03T16:03:51">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="or">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150986"><bookmark_value>Or operator (logical)</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150986" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03060500.xhp" name="Or-Operator [Runtime]">Or Operator [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="2">Performs a logical OR disjunction on two expressions.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3148664" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="4">Result = Expression1 Or Expression2</paragraph>
+<paragraph role="heading" id="hd_id3151211" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Result:</emph> Any numeric variable that contains the result of the disjunction.</paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Expression1, Expression2:</emph> Any numeric expressions that you want to compare.</paragraph>
+<paragraph role="paragraph" id="par_id3154684" xml-lang="en-US" l10n="U" oldref="8">A logical OR disjunction of two Boolean expressions returns the value True if at least one comparison expression is True.</paragraph>
+<paragraph role="paragraph" id="par_id3153768" xml-lang="en-US" l10n="U" oldref="9">A bit-wise comparison sets a bit in the result if the corresponding bit is set in at least one of the two expressions.</paragraph>
+<paragraph role="heading" id="hd_id3161831" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleOr</paragraph>
+<paragraph role="paragraph" id="par_id3153142" xml-lang="en-US" l10n="U" oldref="12">Dim vA as Variant, vB as Variant, vC as Variant, vD as Variant</paragraph>
+<paragraph role="paragraph" id="par_id3154014" xml-lang="en-US" l10n="U" oldref="13">Dim vOut as Variant</paragraph>
+<paragraph role="paragraph" id="par_id3155856" xml-lang="en-US" l10n="U" oldref="14">vA = 10: vB = 8: vC = 6: vD = Null</paragraph>
+<paragraph role="paragraph" id="par_id3152460" xml-lang="en-US" l10n="U" oldref="15">vOut = vA &gt; vB Or vB &gt; vC REM -1</paragraph>
+<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="16">vOut = vB &gt; vA Or vB &gt; vC REM -1</paragraph>
+<paragraph role="paragraph" id="par_id3151114" xml-lang="en-US" l10n="U" oldref="17">vOut = vA &gt; vB Or vB &gt; vD REM -1</paragraph>
+<paragraph role="paragraph" id="par_id3153726" xml-lang="en-US" l10n="CHG" oldref="18">vOut = (vB &gt; vD Or vB &gt; vA) REM 0</paragraph>
+<paragraph role="paragraph" id="par_id3152598" xml-lang="en-US" l10n="U" oldref="19">vOut = vB Or vA REM 10</paragraph>
+<paragraph role="paragraph" id="par_id3150420" xml-lang="en-US" l10n="U" oldref="20">End Sub</paragraph>
+</body>
+</helpdocument>

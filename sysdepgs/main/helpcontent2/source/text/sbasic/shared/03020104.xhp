@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020104xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Reset Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03020104.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-01T15:21:04">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="reset">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154141"><bookmark_value>Reset statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154141" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020104.xhp">Reset Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U" oldref="2">Closes all open files and writes the contents of all file buffers to the harddisk.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3154124" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="4">Reset</paragraph>
+<paragraph role="heading" id="hd_id3161831" xml-lang="en-US" level="2" l10n="U" oldref="5">Example:</paragraph>
+<paragraph role="code" id="par_id3151113" xml-lang="en-US" l10n="U" oldref="37">Sub ExampleReset</paragraph>
+<paragraph role="code" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="38">On Error Goto ErrorHandler</paragraph>
+<paragraph role="code" id="par_id3153093" xml-lang="en-US" l10n="U" oldref="39">Dim iNumber As Integer</paragraph>
+<paragraph role="code" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="40">Dim iCount As Integer</paragraph>
+<paragraph role="code" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="41">Dim sLine As String</paragraph>
+<paragraph role="code" id="par_id3154320" xml-lang="en-US" l10n="U" oldref="42">Dim aFile As String</paragraph>
+<paragraph role="code" id="par_id3163712" xml-lang="en-US" l10n="U" oldref="43">aFile = "c:\data.txt"</paragraph>
+<paragraph role="code" id="par_id3146121" xml-lang="en-US" l10n="U" oldref="45">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3154491" xml-lang="en-US" l10n="U" oldref="46">Open aFile For Output As #iNumber</paragraph>
+<paragraph role="code" id="par_id3148455" xml-lang="en-US" l10n="U" oldref="47">Print #iNumber, "This is a new line of text"</paragraph>
+<paragraph role="code" id="par_id3145646" xml-lang="en-US" l10n="U" oldref="48">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3149410" xml-lang="en-US" l10n="U" oldref="50">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3147126" xml-lang="en-US" l10n="U" oldref="51">Open aFile For Input As iNumber</paragraph>
+<paragraph role="code" id="par_id3154510" xml-lang="en-US" l10n="U" oldref="52">For iCount = 1 to 5</paragraph>
+<paragraph role="code" id="par_id3146971" xml-lang="en-US" l10n="U" oldref="53">Line Input #iNumber, sLine</paragraph>
+<paragraph role="code" id="par_id3156277" xml-lang="en-US" l10n="U" oldref="54">If sLine &lt;&gt;"" then</paragraph>
+<paragraph role="code" id="par_id3153707" xml-lang="en-US" l10n="U" oldref="55">rem</paragraph>
+<paragraph role="code" id="par_id3150322" xml-lang="en-US" l10n="U" oldref="56">end if</paragraph>
+<paragraph role="code" id="par_id3148405" xml-lang="en-US" l10n="U" oldref="57">Next iCount</paragraph>
+<paragraph role="code" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="58">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3156382" xml-lang="en-US" l10n="U" oldref="59">Exit Sub</paragraph>
+<paragraph role="code" id="par_id3159264" xml-lang="en-US" l10n="U" oldref="60">ErrorHandler:</paragraph>
+<paragraph role="code" id="par_id3145147" xml-lang="en-US" l10n="U" oldref="61">Reset</paragraph>
+<paragraph role="code" id="par_id3163805" xml-lang="en-US" l10n="U" oldref="62">MsgBox "All files will be closed",0,"Error"</paragraph>
+<paragraph role="code" id="par_id3147364" xml-lang="en-US" l10n="U" oldref="63">End Sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,72 @@
+# various extensions left behind
+*.sw[op]
+*-
+*-HEAD
+*-git
+*-patched
+*-pristine
+*.bak
+*.cxx-*
+*.git
+*.hxx-*
+*.log
+*.orig
+*.patched
+*.pristine
+*.pyc
+*.rej
+*~
+.\#*
+*.o
+*.DS_Store
+
+# configure autoconf related
+/Linux*Env.Set*
+/MacOS*Env.Set*
+/autom4te.cache
+/config.guess
+/config.log
+/config.parms
+/config.status
+/configure
+/set_soenv
+/bootstrap
+/makefile.mk
+/solver
+/winenv.set*
+/Makefile
+/dmake/*
+/guw/guw.exe*
+/warn
+
+# misc
+CVS
+TAGS
+\#*
+
+# id-utils, ctags, cscope
+/ID
+/tags
+/*/ID
+/*/tags
+/*/cscope.files
+/*/cscope.in.out
+/*/cscope.out
+/*/cscope.po.out
+
+# externals
+/external/unowinreg/unowinreg.dll
+/external/msvcp90/*
+/moz/zipped/*.zip
+
+# $INPATH output directories
+/*/unxlng??
+/*/unxlng??.pro
+/*/wntmsc???
+/*/wntmsc???.pro
+/*/wntgcc?
+/*/wntgcc?.pro
+/*/unxso???
+/*/unxso???.pro
+/*/unxmac??
+/*/unxmac??.pro

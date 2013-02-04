@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0105230400xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Slant &amp; Corner Radius</title>
+<filename>/text/shared/01/05230400.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-03-21T13:43:43">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="schraegstellen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149988"><bookmark_value>slanting draw objects</bookmark_value>
+<bookmark_value>draw objects; slanting</bookmark_value>
+<bookmark_value>areas; slanting</bookmark_value>
+</bookmark><comment>mw made "slanting;..." a one level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_TRANS_SLANT" id="bm_id3143272" localize="false"/>
+<paragraph role="heading" id="hd_id3149988" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05230400.xhp" name="Slant &amp; Corner Radius">Slant &amp; Corner Radius</link></paragraph>
+<paragraph role="paragraph" id="par_id3154788" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_TRANS_SLANT">Slants the selected object, or rounds the corners of a rectangular object.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00040502.xhp#ecke"/>
+</section>
+<paragraph role="heading" id="hd_id3154497" xml-lang="en-US" level="2" l10n="U" oldref="3">Corner Radius</paragraph>
+<paragraph role="paragraph" id="par_id3156027" xml-lang="en-US" l10n="U" oldref="4">You can only round the corners of a rectangular object.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SLANT:MTR_FLD_RADIUS" id="bm_id3156042" localize="false"/>
+<paragraph role="heading" id="hd_id3153935" xml-lang="en-US" level="3" l10n="U" oldref="5">Radius</paragraph>
+<paragraph role="paragraph" id="par_id3147373" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_SLANT:MTR_FLD_RADIUS">Enter the radius of the circle that you want to use to round the corners.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="2" l10n="U" oldref="7">Slant</paragraph>
+<paragraph role="paragraph" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="8">Slants the selected object along an axis that you specify.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SLANT:MTR_FLD_ANGLE" id="bm_id3154318" localize="false"/>
+<paragraph role="heading" id="hd_id3154983" xml-lang="en-US" level="3" l10n="U" oldref="9">Angle</paragraph>
+<paragraph role="paragraph" id="par_id3153683" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_SLANT:MTR_FLD_ANGLE">Enter the angle of the slant axis.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,82 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_accessibility_XAccessibleImage_idl__
+#define __com_sun_star_accessibility_XAccessibleImage_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+
+module com { module sun { module star { module accessibility {
+
+/** Implement this interface to represent images and icons.
+
+    <p>This interface is used for a representation of images like icons of
+    buttons.  The corresponding interface of the Java Accessibility API is
+    AccessibleIcon.  This interface lets you retrieve an image's size and
+    description.</p>
+
+    @since OOo 1.1.2
+*/
+published interface XAccessibleImage : ::com::sun::star::uno::XInterface
+{
+    /** Returns the localized description of the image.
+        
+        <p>It depends on the usage of an image whether the description
+        should express the image's function (e.g. for icons) or the actual
+        content of the image (e.g. for image maps or non-iconic images
+        embedded into a document.)</p>
+            
+        @return
+            Returns a localized string that describes the images's function
+            or content.
+    */
+    string getAccessibleImageDescription ();
+    
+    /** Returns the height of the image.
+        
+        <p>The height is returned in units specified by the parents
+        coordinate system.</p>
+        
+        @return
+            Returns the image's height with respect to the parent's
+            coordinate system.
+    */
+    long getAccessibleImageHeight ();
+
+    /** Returns the width of the image.
+        
+        <p>The width is returned in units specified by the parents
+        coordinate system.</p>
+        
+        @return
+            Returns the image's width with respect to the parent's
+            coordinate system.
+    */
+    long getAccessibleImageWidth ();
+};
+          
+}; }; }; };
+
+#endif

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104130100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Resizing and Moving Frames, Objects With the Keyboard</title>
+<filename>/text/swriter/01/04130100.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154506"><bookmark_value>moving;objects and frames</bookmark_value>
+<bookmark_value>objects;moving and resizing with keyboard</bookmark_value>
+<bookmark_value>resizing;objects and frames, by keyboard</bookmark_value>
+</bookmark><comment>MW changed "objects;"</comment><paragraph role="heading" id="hd_id3154506" xml-lang="en-US" level="1" l10n="U" oldref="1">Resizing and Moving Frames, Objects With the Keyboard</paragraph>
+<paragraph role="paragraph" id="par_id3145248" xml-lang="en-US" l10n="U" oldref="2">You can resize and move selected frames and objects with the keyboard.</paragraph>
+<paragraph role="paragraph" id="par_id3148771" xml-lang="en-US" l10n="U" oldref="4">To move a selected frame or object, press an arrow key. To move by one pixel, hold down <switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>, and then press an arrow key.</paragraph>
+<paragraph role="paragraph" id="par_id3150762" xml-lang="en-US" l10n="U" oldref="5">To resize a selected frame or object, first press Ctrl+Tab. Now one of the handles blinks to show that it is selected. To select another handle, press Ctrl+Tab again. Press an arrow key to resize the object by one grid unit. To resize by one pixel, hold down <switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>, and then press an arrow key.</paragraph>
+<paragraph role="paragraph" id="par_id3149294" xml-lang="en-US" l10n="U" oldref="6">The increment by which you move an object with the keyboard is determined by the document grid. To change the properties of the document grid, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01050100.xhp" name="Text document - Grid">%PRODUCTNAME Writer - Grid</link></emph>.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/swriter/guide/keyboard.xhp#keyboard"/>
+</body>
+</helpdocument>

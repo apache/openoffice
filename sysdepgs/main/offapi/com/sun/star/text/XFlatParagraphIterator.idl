@@ -1,0 +1,114 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_text_XFlatParagraphIterator_idl__
+#define __com_sun_star_text_XFlatParagraphIterator_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+#ifndef __com_sun_star_text_XFlatParagraph_idl__
+#include <com/sun/star/text/XFlatParagraph.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module text {
+
+//=============================================================================
+
+/** provides functionality to ...
+
+    @since OOo 3.0
+ */
+
+interface XFlatParagraphIterator: com::sun::star::uno::XInterface
+{
+
+    //-------------------------------------------------------------------------
+    /** get the first flat paragraph to be checked or an empty reference if
+        there are no more paragraphs to check.
+
+        @returns
+                the paragraph.
+    */
+    com::sun::star::text::XFlatParagraph getFirstPara();
+
+    //-------------------------------------------------------------------------
+    /** get the next flat paragraph to be checked or an empty reference if
+        there are no more paragraphs to check.
+
+        @returns
+                the paragraph.
+    */
+    com::sun::star::text::XFlatParagraph getNextPara();
+
+    //-------------------------------------------------------------------------
+    /** get the last flat paragraph
+
+        @returns
+                the paragraph.
+    */
+    com::sun::star::text::XFlatParagraph getLastPara();
+
+    //-------------------------------------------------------------------------
+    /** get the flat paragraph before this one
+
+        @param  xPara
+                the current flat paragraph
+
+		@returns
+                the flat paragraph.
+
+        @throws IllegalArgumentException
+                if any argument is wrong.
+    */
+    com::sun::star::text::XFlatParagraph getParaBefore( [in] com::sun::star::text::XFlatParagraph xPara )
+            raises( com::sun::star::lang::IllegalArgumentException );
+
+    //-------------------------------------------------------------------------
+    /** get the flat paragraph just following this one
+
+        @param  xPara
+                the current flat paragraph
+
+		@returns
+                the flat paragraph.
+
+        @throws IllegalArgumentException
+                if any argument is wrong.
+    */
+    com::sun::star::text::XFlatParagraph getParaAfter( [in] com::sun::star::text::XFlatParagraph xPara )
+            raises( com::sun::star::lang::IllegalArgumentException );
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

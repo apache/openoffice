@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswriterguideusing_thesaurusxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Thesaurus</title>
+         <filename>/text/swriter/guide/using_thesaurus.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145576"><bookmark_value>thesaurus; related words</bookmark_value>
+      <bookmark_value>related words in thesaurus</bookmark_value>
+      <bookmark_value>spelling in thesaurus</bookmark_value>
+      <bookmark_value>dictionaries; thesaurus</bookmark_value>
+      <bookmark_value>lexicon, see thesaurus</bookmark_value>
+      <bookmark_value>synonyms in thesaurus</bookmark_value>
+      <bookmark_value>searching;synonyms</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3145576" role="heading" level="1" l10n="U"
+                 oldref="15"><variable id="using_thesaurus"><link href="text/swriter/guide/using_thesaurus.xhp" name="Thesaurus">Thesaurus</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149820" role="paragraph" l10n="U" oldref="16">You can use the thesaurus to look up synonyms or related terms.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155920" role="listitem" l10n="U" oldref="17">Click in the word that you want to look up or replace.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155867" role="listitem" l10n="CHG" oldref="39">Choose <emph>Tools - Language - Thesaurus</emph>, or press <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F7.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149848" role="listitem" l10n="U" oldref="40">In the Alternatives list, click an entry to copy that related term to the "Replace with" text box.</paragraph>
+         </listitem>
+          <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153136" role="listitem" l10n="U" oldref="45">Optionally double-click an entry to look up related terms for that entry. On your keyboard, you can also press the arrow up or down keys to select an entry. Then press Return to replace, or press the spacebar to look up.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149644" role="listitem" l10n="U" oldref="46">Click <emph>Replace</emph>.</paragraph>
+         </listitem>
+      </list>
+
+
+
+      <paragraph xml-lang="en-US" id="par_id3156263" role="paragraph" l10n="U" oldref="19">Initially, the thesaurus uses the language of the selected word in the document, if a thesaurus library for that language is installed. The title bar of the Thesaurus dialog displays the language in use.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145113" role="note" l10n="U" oldref="18">To look up the word in a different language, click the Language button, and select one of the installed thesaurus languages. A thesaurus library may not be available for all installed languages. You can install languages with a thesaurus library from the <link href="http://extensions.services.openoffice.org/">Extensions</link> web page.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3196263" role="paragraph" l10n="U" oldref="19">If a thesaurus library is installed for the language of a word, the context menu of the word shows a Synonyms submenu. Select any of the terms from the submenu to replace the word.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/spellcheck_dialog.xhp#spellcheck_dialog"/>
+      <embed href="text/swriter/guide/using_hyphen.xhp#using_hyphen"/>
+      <paragraph xml-lang="en-US" id="par_id3154392" role="paragraph" l10n="U" oldref="41"><link href="text/shared/01/06020000.xhp" name="Thesaurus">Thesaurus</link></paragraph>
+   </body>
+</helpdocument>

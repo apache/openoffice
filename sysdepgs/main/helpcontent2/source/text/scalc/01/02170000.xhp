@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0102170000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Delete Sheet</title>
+<filename>/text/scalc/01/02170000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-27T11:19:29">converted from old format - fpe
+YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156424"><bookmark_value>spreadsheets; deleting</bookmark_value>
+<bookmark_value>sheets; deleting</bookmark_value>
+<bookmark_value>deleting; spreadsheets</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:Remove" id="bm_id7030283" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:Remove" id="bm_id3150769" localize="false"/>
+<paragraph role="heading" id="hd_id3156424" xml-lang="en-US" level="1" l10n="U" oldref="1"> Delete Sheet</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="2"><variable id="tabelleloeschentext"><ahelp hid=".uno:Remove">Deletes the current sheet after query confirmation.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000402.xhp#btaloes"/>
+</section>
+<paragraph role="note" id="par_id3145801" xml-lang="en-US" l10n="CHG" oldref="7">You cannot delete a sheet while <emph>Edit - Changes - Record</emph> is activated.</paragraph>
+<paragraph role="heading" id="hd_id3147124" xml-lang="en-US" level="2" l10n="U" oldref="3">Yes</paragraph>
+<paragraph role="paragraph" id="par_id3154943" xml-lang="en-US" l10n="U" oldref="4">Deletes the current sheet.</paragraph>
+<paragraph role="heading" id="hd_id3149412" xml-lang="en-US" level="2" l10n="U" oldref="5">No</paragraph>
+<paragraph role="paragraph" id="par_id3154510" xml-lang="en-US" l10n="U" oldref="6">Cancels the dialog. No delete is performed.</paragraph>
+</body>
+</helpdocument>

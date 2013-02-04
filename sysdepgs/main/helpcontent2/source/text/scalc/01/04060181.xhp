@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalc0104060181xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Statistical Functions Part One</title>
+         <filename>/text/scalc/01/04060181.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <paragraph xml-lang="en-US" id="hd_id3146320" role="heading" level="1" l10n="U" oldref="1"><variable id="ae"><link href="text/scalc/01/04060181.xhp">Statistical Functions Part One</link>
+</variable></paragraph>
+<sort order="asc">
+<section id="intercept">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145632"><bookmark_value>INTERCEPT function</bookmark_value>
+         <bookmark_value>points of intersection</bookmark_value>
+         <bookmark_value>intersections</bookmark_value>
+</bookmark><comment>mw added two entries</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ACHSENABSCHNITT" id="bm_id3153018" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145632" role="heading" level="2" l10n="U" oldref="2">INTERCEPT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146887" role="paragraph" l10n="U" oldref="3"><ahelp hid="HID_FUNC_ACHSENABSCHNITT">Calculates the point at which a line will intersect the y-values by using known x-values and y-values.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150374" role="heading" level="3" l10n="U" oldref="4">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149718" role="code" l10n="U" oldref="5">INTERCEPT(DataY; DataX)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149947" role="paragraph" l10n="U" oldref="6">
+            <emph>DataY</emph> is the dependent set of observations or data.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147412" role="paragraph" l10n="U" oldref="7">
+            <emph>DataX</emph> is the independent set of observations or data.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152983" role="paragraph" l10n="U" oldref="8">Names, arrays or references containing numbers must be used here. Numbers can also be entered directly.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3157906" role="heading" level="3" l10n="U" oldref="9">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148728" role="paragraph" l10n="U" oldref="10">To calculate the intercept, use cells D3:D9 as the y value and C3:C9 as the x value from the example spreadsheet. Input will be as follows:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149013" role="paragraph" l10n="U" oldref="11">
+            <item type="input">=INTERCEPT(D3:D9;C3:C9)</item> = 2.15.</paragraph>
+      </section>
+      <section id="count">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148437"><bookmark_value>COUNT function</bookmark_value>
+         <bookmark_value>numbers;counting</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ANZAHL" id="bm_id3153040" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148437" role="heading" level="2" l10n="U"
+                    oldref="13">COUNT</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150700" role="paragraph" l10n="U" oldref="14"><ahelp hid="HID_FUNC_ANZAHL">Counts how many numbers are in the list of arguments.</ahelp> Text entries are ignored.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153930" role="heading" level="3" l10n="U"
+                    oldref="15">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148585" role="code" l10n="U" oldref="16">COUNT(Value1; Value2; ... Value30)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155827" role="paragraph" l10n="CHG" oldref="17">
+            <emph>Value1; Value2, ...</emph> are 1 to 30 values or ranges representing the values to be counted.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149254" role="heading" level="3" l10n="U"
+                    oldref="18">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149953" role="paragraph" l10n="U" oldref="19">The entries 2, 4, 6 and eight in the Value 1-4 fields are to be counted.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154558" role="paragraph" l10n="U" oldref="20">
+            <item type="input">=COUNT(2;4;6;"eight")</item> = 3. The count of numbers is therefore 3.</paragraph>
+      </section>
+      <section id="counta">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149729"><bookmark_value>COUNTA function</bookmark_value>
+         <bookmark_value>number of entries</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ANZAHL2" id="bm_id3148738" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149729" role="heading" level="2" l10n="U"
+                    oldref="22">COUNTA</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150142" role="paragraph" l10n="CHG" oldref="23"><ahelp hid="HID_FUNC_ANZAHL2">Counts how many values are in the list of arguments.</ahelp> Text entries are also counted, even when they contain an empty string of length 0. If an argument is an array or reference, empty cells within the array or reference are ignored.<comment>UFI: fix to #i35888#</comment></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3148573" role="heading" level="3" l10n="U"
+                    oldref="24">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153111" role="code" l10n="U" oldref="25">COUNTA(Value1; Value2; ... Value30)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150001" role="paragraph" l10n="U" oldref="26">
+            <emph>Value1; Value2, ...</emph> are 1 to 30 arguments representing the values to be counted.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150334" role="heading" level="3" l10n="U"
+                    oldref="27">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154508" role="paragraph" l10n="U" oldref="28">The entries 2, 4, 6 and eight in the Value 1-4 fields are to be counted.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3158000" role="paragraph" l10n="U" oldref="29">
+            <item type="input">=COUNTA(2;4;6;"eight")</item> = 4. The count of values is therefore 4.</paragraph>
+      </section>
+      <section id="b">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150267"><bookmark_value>B function</bookmark_value>
+         <bookmark_value>probabilities of samples with binomial distribution</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_B" id="bm_id3153044" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150267" role="heading" level="2" l10n="U"
+                    oldref="31">B</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156061" role="paragraph" l10n="U" oldref="32"><ahelp hid="HID_FUNC_B">Returns the probability of a sample with binomial distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150659" role="heading" level="3" l10n="U"
+                    oldref="33">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148392" role="code" l10n="U" oldref="34">B(Trials; SP; T1; T2)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149002" role="paragraph" l10n="U" oldref="35">
+            <emph>Trials</emph> is the number of independent trials.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148875" role="paragraph" l10n="U" oldref="36">
+            <emph>SP</emph> is the probability of success on each trial.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145352" role="paragraph" l10n="U" oldref="37">
+            <emph>T1</emph> defines the lower limit for the number of trials.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149538" role="paragraph" l10n="U" oldref="38">
+            <emph>T2</emph> (optional) defines the upper limit for the number of trials.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3148768" role="heading" level="3" l10n="U"
+                    oldref="39">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154633" role="paragraph" l10n="U" oldref="40">What is the probability with ten throws of the dice, that a six will come up exactly twice? The probability of a six (or any other number) is 1/6. The following formula combines these factors:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149393" role="paragraph" l10n="U" oldref="41">
+            <item type="input">=B(10;1/6;2)</item> returns a probability of 29%.</paragraph>
+      </section>
+      <section id="rsq">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158416"><bookmark_value>RSQ function</bookmark_value>
+         <bookmark_value>determination coefficients</bookmark_value>
+         <bookmark_value>regression analysis</bookmark_value>
+</bookmark><comment>mw added regression analysis</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BESTIMMTHEITSMASS" id="bm_id3153228" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3158416" role="heading" level="2" l10n="U"
+                    oldref="43">RSQ</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154949" role="paragraph" l10n="U" oldref="44"><ahelp hid="HID_FUNC_BESTIMMTHEITSMASS">Returns the square of the Pearson correlation coefficient based on the given values.</ahelp> RSQ (also called determination coefficient) is a measure for the accuracy of an adjustment and can be used to produce a regression analysis.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3152820" role="heading" level="3" l10n="U"
+                    oldref="45">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155822" role="code" l10n="U" oldref="46">RSQ(DataY; DataX)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150470" role="paragraph" l10n="U" oldref="47">
+            <emph>DataY</emph> is an array or range of data points.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153181" role="paragraph" l10n="U" oldref="48">
+            <emph>DataX</emph> is an array or range of data points.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3156258" role="heading" level="3" l10n="U"
+                    oldref="49">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155991" role="paragraph" l10n="U" oldref="50">
+            <item type="input">=RSQ(A1:A20;B1:B20)</item> calculates the determination coefficient for both data sets in columns A and B.</paragraph>
+      </section>
+      <section id="betainv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145620"><bookmark_value>BETAINV function</bookmark_value>
+         <bookmark_value>cumulative probability density function;inverse of</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BETAINV" id="bm_id3146154" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145620" role="heading" level="2" l10n="U"
+                    oldref="52">BETAINV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149825" role="paragraph" l10n="U" oldref="53"><ahelp hid="HID_FUNC_BETAINV">Returns the inverse of the cumulative beta probability density function.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3152479" role="heading" level="3" l10n="U"
+                    oldref="54">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156300" role="code" l10n="U" oldref="55">BETAINV(Number; Alpha; Beta; Start; End)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149266" role="paragraph" l10n="U" oldref="56">
+            <emph>Number</emph> is the value between <emph>Start</emph> and <emph>End</emph> at which to evaluate the function.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149710" role="paragraph" l10n="U" oldref="57">
+            <emph>Alpha</emph> is a parameter to the distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156306" role="paragraph" l10n="U" oldref="58">
+            <emph>Beta</emph> is a parameter to the distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150960" role="paragraph" l10n="U" oldref="59">
+            <emph>Start</emph> (optional) is the lower bound for <emph>Number</emph>.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151268" role="paragraph" l10n="U" oldref="60">
+            <emph>End</emph> (optional) is the upper bound for <emph>Number</emph>.</paragraph>
+         <paragraph xml-lang="en-US" id="par_idN109DF" role="paragraph" l10n="NEW">
+            <embedvar href="text/scalc/00/00000004.xhp#optional"/>
+         </paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147077" role="heading" level="3" l10n="U"
+                    oldref="61">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146859" role="paragraph" l10n="U" oldref="62">
+            <item type="input">=BETAINV(0.5;5;10)</item> returns the value 0.33.</paragraph>
+      </section>
+      <section id="betadist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156096"><bookmark_value>BETADIST function</bookmark_value>
+         <bookmark_value>cumulative probability density function;calculating</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BETAVERT" id="bm_id3153213" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156096" role="heading" level="2" l10n="U"
+                    oldref="64">BETADIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150880" role="paragraph" l10n="U" oldref="65"><ahelp hid="HID_FUNC_BETAVERT">Returns the beta function.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150762" role="heading" level="3" l10n="U"
+                    oldref="66">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147571" role="code" l10n="CHG" oldref="67">BETADIST(Number; Alpha; Beta; Start; End; Cumulative)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156317" role="paragraph" l10n="U" oldref="68">
+            <emph>Number</emph> is the value between <emph>Start</emph> and <emph>End</emph> at which to evaluate the function.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156107" role="paragraph" l10n="U" oldref="69">
+            <emph>Alpha</emph> is a parameter to the distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153619" role="paragraph" l10n="U" oldref="70">
+            <emph>Beta</emph> is a parameter to the distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150254" role="paragraph" l10n="U" oldref="71">
+            <emph>Start</emph> (optional) is the lower bound for <emph>Number</emph>.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149138" role="paragraph" l10n="U" oldref="72">
+            <emph>End</emph> (optional) is the upper bound for <emph>Number</emph>.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id012020091254453" role="paragraph" l10n="NEW">
+            <emph>Cumulative</emph> (optional) can be 0 or False to calculate the probability density function. It can be any other value or True or omitted to calculate the cumulative distribution function.</paragraph>
+         <paragraph xml-lang="en-US" id="par_idN10AB3" role="paragraph" l10n="NEW">
+            <embedvar href="text/scalc/00/00000004.xhp#optional"/>
+         </paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3145649" role="heading" level="3" l10n="U"
+                    oldref="73">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156118" role="paragraph" l10n="U" oldref="74">
+            <item type="input">=BETADIST(0.75;3;4)</item> returns the value 0.96</paragraph>
+      </section>
+      <section id="binomdist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143228"><bookmark_value>BINOMDIST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BINOMVERT" id="bm_id3150146" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3143228" role="heading" level="2" l10n="U"
+                    oldref="76">BINOMDIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146897" role="paragraph" l10n="U" oldref="77"><ahelp hid="HID_FUNC_BINOMVERT">Returns the individual term binomial distribution probability.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149289" role="heading" level="3" l10n="U"
+                    oldref="78">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156009" role="code" l10n="U" oldref="79">BINOMDIST(X; Trials; SP; C)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154304" role="paragraph" l10n="U" oldref="80">
+            <emph>X</emph> is the number of successes in a set of trials.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147492" role="paragraph" l10n="U" oldref="81">
+            <emph>Trials</emph> is the number of independent trials.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146085" role="paragraph" l10n="U" oldref="82">
+            <emph>SP</emph> is the probability of success on each trial.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149760" role="paragraph" l10n="U" oldref="83">
+            <emph>C</emph> = 0 calculates the probability of a single event and <emph>C</emph> = 1 calculates the cumulative probability.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3151171" role="heading" level="3" l10n="U"
+                    oldref="84">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145666" role="paragraph" l10n="U" oldref="85">
+            <item type="input">=BINOMDIST(A1;12;0.5;0)</item> shows (if the values <item type="input">0</item> to <item type="input">12</item> are entered in A1) the probabilities for 12 flips of a coin that <emph>Heads</emph> will come up exactly the number of times entered in A1.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150120" role="paragraph" l10n="U" oldref="86">
+            <item type="input">=BINOMDIST(A1;12;0.5;1)</item> shows the cumulative probabilities for the same series. For example, if A1 = <item type="input">4</item>, the cumulative probability of the series is 0, 1, 2, 3 or 4 times <emph>Heads</emph> (non-exclusive OR).</paragraph>
+      </section>
+      <section id="chisqinv">
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHISQINV" id="bm_id0119200902430717" localize="false"/>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0119200902432928"><bookmark_value>CHISQINV function</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id0119200902421451" role="heading" level="2" l10n="NEW">CHISQINV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200902421449" role="paragraph" l10n="NEW"><ahelp hid=".">Returns the inverse of CHISQDIST.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id0119200902475241" role="heading" level="3" l10n="NEW">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200902475286" role="paragraph" l10n="NEW">
+            <emph>Probability</emph> is the probability value for which the inverse of the chi-square distribution is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200902475282" role="paragraph" l10n="NEW">
+            <emph>Degrees Of Freedom</emph> is the degrees of freedom for the chi-square function.</paragraph>
+      </section>
+      <section id="chiinv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148835"><bookmark_value>CHIINV function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHIINV" id="bm_id3148823" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148835" role="heading" level="2" l10n="U"
+                    oldref="88">CHIINV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149906" role="paragraph" l10n="U" oldref="89"><ahelp hid="HID_FUNC_CHIINV">Returns the inverse of the one-tailed probability of the chi-squared distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159157" role="heading" level="3" l10n="U"
+                    oldref="90">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150504" role="code" l10n="U" oldref="91">CHIINV(Number; DegreesFreedom)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154898" role="paragraph" l10n="U" oldref="92">
+            <emph>Number</emph> is the value of the error probability.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154294" role="paragraph" l10n="U" oldref="93">
+            <emph>DegreesFreedom</emph> is the degrees of freedom of the experiment.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154208" role="heading" level="3" l10n="U"
+                    oldref="94">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150777" role="paragraph" l10n="U" oldref="130">A die is thrown 1020 times. The numbers on the die 1 through 6 come up 195, 151, 148, 189, 183 and 154 times (observation values). The hypothesis that the die is not fixed is to be tested.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153062" role="paragraph" l10n="U" oldref="131">The Chi square distribution of the random sample is determined by the formula given above. Since the expected value for a given number on the die for n throws is n times 1/6, thus 1020/6 = 170, the formula returns a Chi square value of 13.27.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148806" role="paragraph" l10n="U" oldref="132">If the (observed) Chi square is greater than or equal to the (theoretical) Chi square CHIINV, the hypothesis will be discarded, since the deviation between theory and experiment is too great. If the observed Chi square is less that CHIINV, the hypothesis is confirmed with the indicated probability of error.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149763" role="paragraph" l10n="U" oldref="95">
+            <item type="input">=CHIINV(0.05;5)</item> returns 11.07.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159142" role="paragraph" l10n="U" oldref="133">
+            <item type="input">=CHIINV(0.02;5)</item> returns 13.39.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3158401" role="paragraph" l10n="U" oldref="134">If the probability of error is 5%, the die is not true. If the probability of error is 2%, there is no reason to believe it is fixed.</paragraph>
+      </section>
+      <section id="chitest">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154260"><bookmark_value>CHITEST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHITEST" id="bm_id3155355" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154260" role="heading" level="2" l10n="U"
+                    oldref="97">CHITEST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151052" role="paragraph" l10n="U" oldref="98"><ahelp hid="HID_FUNC_CHITEST">Returns the probability of a deviance from a random distribution of two test series based on the chi-squared test for independence.</ahelp> CHITEST returns the chi-squared distribution of the data.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148925" role="paragraph" l10n="U" oldref="135">The probability determined by CHITEST can also be determined with CHIDIST, in which case the Chi square of the random sample must then be passed as a parameter instead of the data row.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154280" role="heading" level="3" l10n="U"
+                    oldref="99">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149162" role="code" l10n="U" oldref="100">CHITEST(DataB; DataE)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3158421" role="paragraph" l10n="U" oldref="101">
+            <emph>DataB</emph> is the array of the observations.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3166453" role="paragraph" l10n="U" oldref="102">
+            <emph>DataE</emph> is the range of the expected values.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3146946" role="heading" level="3" l10n="U"
+                    oldref="103">Example</paragraph>
+         <table id="tbl_id3153233">
+            <tablerow>
+               <tablecell>
+</tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154096" role="paragraph" l10n="U" oldref="136">Data_B (observed)</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3152948" role="paragraph" l10n="U" oldref="137">Data_E (expected)</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3152876" role="paragraph" l10n="U" oldref="138">1</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3159279" role="paragraph" l10n="U" oldref="139">
+                     <item type="input">195</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149105" role="paragraph" l10n="U" oldref="140">
+                     <item type="input">170</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149922" role="paragraph" l10n="U" oldref="141">2</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148621" role="paragraph" l10n="U" oldref="142">
+                     <item type="input">151</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148987" role="paragraph" l10n="U" oldref="143">
+                     <item type="input">170</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149417" role="paragraph" l10n="U" oldref="144">3</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148661" role="paragraph" l10n="U" oldref="145">
+                     <item type="input">148</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3151128" role="paragraph" l10n="U" oldref="146">
+                     <item type="input">170</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148467" role="paragraph" l10n="U" oldref="147">4</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149237" role="paragraph" l10n="U" oldref="148">
+                     <item type="input">189</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3145304" role="paragraph" l10n="U" oldref="149">
+                     <item type="input">170</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149927" role="paragraph" l10n="U" oldref="150">5</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150630" role="paragraph" l10n="U" oldref="151">
+                     <item type="input">183</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3150423" role="paragraph" l10n="U" oldref="152">
+                     <item type="input">170</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3143275" role="paragraph" l10n="U" oldref="153">6</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3144750" role="paragraph" l10n="U" oldref="154">
+                     <item type="input">154</item>
+                  </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153947" role="paragraph" l10n="U" oldref="155">
+                     <item type="input">170</item>
+                  </paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+         <paragraph xml-lang="en-US" id="par_id3149481" role="paragraph" l10n="U" oldref="104">
+            <item type="input">=CHITEST(A1:A6;B1:B6)</item> equals 0.02. This is the probability which suffices the observed data of the theoretical Chi-square distribution.</paragraph>
+      </section>
+      <section id="chidist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148690"><bookmark_value>CHIDIST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHIVERT" id="bm_id3147521" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148690" role="heading" level="2" l10n="U"
+                    oldref="106">CHIDIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156338" role="paragraph" l10n="U" oldref="156"><ahelp hid="HID_FUNC_CHIVERT">Returns the probability value from the indicated Chi square that a hypothesis is confirmed.</ahelp> CHIDIST compares the Chi square value to be given for a random sample that is calculated from the sum of (observed value-expected value)^2/expected value for all values with the theoretical Chi square distribution and determines from this the probability of error for the hypothesis to be tested.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151316" role="paragraph" l10n="U" oldref="157">The probability determined by CHIDIST can also be determined by CHITEST.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3155123" role="heading" level="3" l10n="U"
+                    oldref="108">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3158439" role="code" l10n="U" oldref="109">CHIDIST(Number; DegreesFreedom)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148675" role="paragraph" l10n="U" oldref="110">
+            <emph>Number</emph> is the chi-square value of the random sample used to determine the error probability.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155615" role="paragraph" l10n="U" oldref="111">
+            <emph>DegreesFreedom</emph> are the degrees of freedom of the experiment.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3146787" role="heading" level="3" l10n="U"
+                    oldref="112">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145774" role="paragraph" l10n="U" oldref="113">
+            <item type="input">=CHIDIST(13.27; 5)</item> equals 0.02.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156141" role="paragraph" l10n="U" oldref="158">If the Chi square value of the random sample is 13.27 and if the experiment has 5 degrees of freedom, then the hypothesis is assured with a probability of error of 2%.</paragraph>
+      </section>
+      <section id="chisqdist">
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHISQDIST" id="bm_id0119200902213671" localize="false"/>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0119200902231887"><bookmark_value>CHISQDIST function</bookmark_value>
+<bookmark_value>chi-square distribution</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id0119200901583452" role="heading" level="2" l10n="NEW">CHISQDIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200901583471" role="paragraph" l10n="NEW"><ahelp hid=".">Returns the value of the probability density function or the cumulative distribution function for the chi-square distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id0119200902395520" role="heading" level="3" l10n="NEW">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200902395679" role="code" l10n="NEW">CHISQDIST(Number; Degrees Of Freedom; Cumulative)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id011920090239564" role="paragraph" l10n="NEW">
+            <emph>Number</emph> is the number for which the function is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200902395660" role="paragraph" l10n="NEW">
+            <emph>Degrees Of Freedom</emph> is the degrees of freedom for the chi-square function.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200902395623" role="paragraph" l10n="NEW">
+            <emph>Cumulative</emph> (optional): 0 or False calculates the probability density function. Other values or True or omitted calculates the cumulative distribution function.</paragraph>
+      </section>
+      <section id="expondist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150603"><bookmark_value>EXPONDIST function</bookmark_value>
+         <bookmark_value>exponential distributions</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_EXPONVERT" id="bm_id3152962" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150603" role="heading" level="2" l10n="U"
+                    oldref="115">EXPONDIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149563" role="paragraph" l10n="U" oldref="116"><ahelp hid="HID_FUNC_EXPONVERT">Returns the exponential distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153789" role="heading" level="3" l10n="U"
+                    oldref="117">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150987" role="code" l10n="U" oldref="118">EXPONDIST(Number; Lambda; C)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154663" role="paragraph" l10n="U" oldref="119">
+            <emph>Number</emph> is the value of the function.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154569" role="paragraph" l10n="U" oldref="120">
+            <emph>Lambda</emph> is the parameter value.</paragraph><comment>UFI removed a double bookmark</comment>
+<paragraph xml-lang="en-US" id="par_id3147332" role="paragraph" l10n="U" oldref="121">
+            <emph>C</emph> is a logical value that determines the form of the function. <emph>C = 0</emph> calculates the density function, and <emph>C = 1</emph> calculates the distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3146133" role="heading" level="3" l10n="U"
+                    oldref="122">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150357" role="paragraph" l10n="U" oldref="123">
+            <item type="input">=EXPONDIST(3;0.5;1)</item> returns 0.78.</paragraph>
+      </section>
+</sort>
+<section id="relatedtopics">
+         <embed href="text/scalc/01/04060100.xhp#drking"/>
+      </section>
+   </body>
+</helpdocument>

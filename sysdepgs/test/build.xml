@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<project basedir="." default="test">
+    <property environment="env" />
+	<property name="junit.home" value="${env.JUNIT_HOME}" />
+	<property name="dist.dir" value="." />
+	<property name="dist.name" value="aoo_test" />
+	<property name="junit.jar.repos" value="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar" />
+	
+	<path id="uno.classpath">
+		<fileset dir="${env.OUTDIR}/bin" erroronmissingdir="false">
+			<include name="juh.jar" />
+			<include name="unoil.jar" />
+			<include name="ridl.jar" />
+			<include name="jurt.jar" />
+		</fileset>
+		<fileset dir="${openoffice.home}" erroronmissingdir="false">
+			<include name="**/juh.jar" />
+			<include name="**/unoil.jar" />
+			<include name="**/ridl.jar" />
+			<include name="**/jurt.jar" />
+		</fileset>
+	</path>
+				
+	<target name="check.junit">
+	    <copy todir="lib" >
+	        <fileset dir="${junit.home}" erroronmissingdir="false">
+	            <include name="junit*.jar" />
+			</fileset>
+			<globmapper from="*" to="junit.jar" />
+        </copy>
+		<available file="lib/junit.jar" property="junit.jar.exists"/>
+	</target>
+
+	<target name="prepare.junit" depends="check.junit" unless="junit.jar.exists">
+		<mkdir dir="lib" />
+		<get src="${junit.jar.repos}" dest="lib/junit.jar" skipexisting="true" />
+	</target>
+	
+	<target name="testcommon.init">
+		<mkdir dir="testcommon/bin" />
+		<copy includeemptydirs="false" todir="testcommon/bin">
+			<fileset dir="testcommon/source">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="testcommon.compile" depends="testcommon.init, prepare.junit">
+		<javac destdir="testcommon/bin" debug="on" source="1.6" target="1.6" encoding="utf-8" includeantruntime="false">
+			<src path="testcommon/source"/>
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="testgui.init">
+		<mkdir dir="testgui/bin" />
+		<copy includeemptydirs="false" todir="testgui/bin">
+			<fileset dir="testgui/source">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="testgui.compile" depends="testcommon.compile, testgui.init">
+		<javac destdir="testgui/bin" debug="on" source="1.6" target="1.6" encoding="utf-8" includeantruntime="false">
+			<src path="testgui/source"/>
+			<classpath>
+				<fileset dir="lib">
+				    <include name="*.jar" />
+				</fileset>
+				<pathelement location="testcommon/bin" />
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="testuno.init">
+		<mkdir dir="testuno/bin" />
+		<copy includeemptydirs="false" todir="testuno/bin">
+			<fileset dir="testuno/source">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="testuno.compile" depends="testcommon.compile, testuno.init">
+		<javac destdir="testuno/bin" debug="on" source="1.6" target="1.6" encoding="utf-8" includeantruntime="false">
+			<src path="testuno/source"/>
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar" />
+				</fileset>
+				<pathelement location="testcommon/bin" />
+				<path refid="uno.classpath"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="clean" description="Clean all output">
+		<delete dir="testcommon/bin" />
+		<delete dir="testgui/bin" />
+		<delete dir="testuno/bin" />
+	</target>
+	
+	<target name="compile" depends="testcommon.compile,testgui.compile,testuno.compile" description="Compile source code">
+	</target>
+	
+	<target name="dist" depends="clean,compile">
+		<tstamp/>
+        	<zip destfile="${dist.dir}/${dist.name}_${DSTAMP}.zip" update="false">
+			<zipfileset dir="." includes="lib/**, testcommon/**,testgui/**,testuno/**,build.xml,run,run.bat" filemode="751" prefix="aoo_test/"/>
+		</zip>
+	</target>
+	
+	<target name="test" depends="compile" description="start test">
+		<condition property="test.arg0" value="-Dopenoffice.home=${openoffice.home}">
+			<isset property="openoffice.home" />
+		</condition>
+		<pathconvert property="openoffice.pack" setonempty="false">
+			<path>
+				<fileset dir="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/archive/install/en-US" includes="*.tar.gz,*.zip"  erroronmissingdir="false"/>
+			</path>
+		</pathconvert>
+		<condition property="test.arg0" value="-Dopenoffice.pack=${openoffice.pack}">
+			<isset property="openoffice.pack" />
+		</condition>
+		<fail message="No OpenOffice available!" unless="test.arg0"/>
+		<condition property="test.executable" value="./run.bat">
+			<os family="windows" />
+		</condition>
+		<property name="test.executable" value="./run"/>
+		<property name="test.args" value="-tp bvt"/>
+		<exec executable="${test.executable}">
+			<arg value="${test.arg0}"/>
+			<arg line="${test.args}"/>
+		</exec>
+	</target>
+</project>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguideredlining_docmergexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Merging Versions</title>
+<filename>/text/shared/guide/redlining_docmerge.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-13T15:50:48">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154230"><bookmark_value>documents; merging</bookmark_value>
+<bookmark_value>merging; documents</bookmark_value>
+<bookmark_value>versions;merging document versions</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154230" xml-lang="en-US" level="1" l10n="U" oldref="17"><variable id="redlining_docmerge"><link href="text/shared/guide/redlining_docmerge.xhp" name="Merging Versions">Merging Versions</link>
+</variable></paragraph>
+<paragraph role="note" id="par_id2136295" xml-lang="en-US" l10n="NEW">The review function is available in %PRODUCTNAME for text documents and spreadsheet documents.</paragraph>
+<paragraph role="paragraph" id="par_id3153049" xml-lang="en-US" l10n="U" oldref="19">When a document has been edited by more than one person, it is possible to merge the edited copies into the original. The only requirement is that the documents differ only and exclusively in the recorded changes - all other original text must be identical.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3152425" xml-lang="en-US" l10n="U" oldref="20">Open the original document into which you want to merge all copies.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="21">Choose <emph>Edit - Changes - Merge Document</emph>. A file selection dialog appears.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="23">Select the copy of the document from the dialog. If there have been no subsequent changes to the original document, the copy is merged into the original.</paragraph>
+<paragraph role="listitem" id="par_id3149182" xml-lang="en-US" l10n="U" oldref="24">If changes have been made to the original document, an error dialog appears that informs you that the merge is unsuccessful.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154749" xml-lang="en-US" l10n="U" oldref="22">After you merge the documents you will see the recorded changes from the copy in the original document.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/redlining.xhp#redlining"/>
+<embed href="text/shared/guide/redlining_enter.xhp#redlining_enter"/>
+<embed href="text/shared/guide/redlining_accept.xhp#redlining_accept"/>
+<embed href="text/shared/guide/redlining_doccompare.xhp#redlining_doccompare"/>
+<embed href="text/shared/guide/redlining_versions.xhp#redlining_versions"/>
+</body>
+</helpdocument>

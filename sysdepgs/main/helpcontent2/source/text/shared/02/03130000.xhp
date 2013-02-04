@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0203130000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Borders</title>
+<filename>/text/shared/02/03130000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-16T10:37:13">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="umrandung">
+<bookmark xml-lang="en-US" branch="hid/.uno:SetBorderStyle" id="bm_id5165835" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SetBorderStyle" id="bm_id3154228" localize="false"/>
+<paragraph role="heading" id="hd_id3143284" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/03130000.xhp" name="Borders">Borders</link></paragraph>
+<paragraph role="paragraph" id="par_id3153255" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".uno:SetBorderStyle">Click the <emph>Borders</emph> icon to open the <emph>Borders</emph> toolbar, where you can modify the border of a sheet area or an object.</ahelp></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3147261" xml-lang="en-US" l10n="CHG" oldref="3"><switchinline select="appl"><caseinline select="CALC">
+</caseinline><defaultinline>This object can be the border of a text frame, a graphic or a table. The icon will only be visible if a graphic, table, object or frame has been selected.</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U" oldref="6"><switchinline select="appl"><caseinline select="CALC">To apply a particular type of border to a single cell, position the cursor in the cell, open the <emph>Border</emph> toolbar and select a border. 
+</caseinline><defaultinline>Whenever you insert graphics or tables, they already have a complete border. To remove that border, select the graphic object or the entire table and click the "no border" icon on the <emph>Border</emph> toolbar.</defaultinline></switchinline></paragraph>
+<section id="syumrandung">
+<table id="tbl_id3147088">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="E">
+<image id="img_id3149095" src="res/commandimagelist/sc_setborderstyle.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149095" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152780" xml-lang="en-US" l10n="U" oldref="4">Borders</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<paragraph role="paragraph" id="par_id3148990" xml-lang="en-US" l10n="U" oldref="5">Further information can be found in the Help in <link href="text/shared/01/05030500.xhp" name="Borders"><emph>Borders</emph></link>. You can also find information on how to <link href="text/shared/guide/border_table.xhp" name="format a text table">format a text table</link> with the <emph>Borders</emph> icon.</paragraph>
+<section id="relatedtopics">
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/border_object.xhp#border_object"/><comment>UFI: moved border_object into Writer switch</comment><embed href="text/swriter/guide/border_page.xhp#border_page"/>
+</case>
+</switch>
+<embed href="text/shared/guide/border_paragraph.xhp#border_paragraph"/>
+<embed href="text/shared/guide/border_table.xhp#border_table"/>
+</section>
+</body>
+</helpdocument>

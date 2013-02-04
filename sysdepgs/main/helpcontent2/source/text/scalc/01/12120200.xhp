@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112120200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Input Help</title>
+<filename>/text/scalc/01/12120200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-07-20T14:16:16">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="eingabehilfe">
+<bookmark xml-lang="en-US" branch="hid/sc:TabPage:TP_VALIDATION_INPUTHELP" id="bm_id3150871" localize="false"/>
+<paragraph role="heading" id="hd_id3156280" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/12120200.xhp" name="Input Help">Input Help</link></paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="SC:TABPAGE:TP_VALIDATION_INPUTHELP">Enter the message that you want to display when the cell or cell range is selected in the sheet.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#datengueltigeingabe"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sc:TriStateBox:TP_VALIDATION_INPUTHELP:TSB_HELP" id="bm_id3149260" localize="false"/>
+<paragraph role="heading" id="hd_id3146986" xml-lang="en-US" level="2" l10n="U" oldref="3">Show input help when cell is selected</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SC:TRISTATEBOX:TP_VALIDATION_INPUTHELP:TSB_HELP">Displays the message that you enter in the <emph>Contents</emph> box when the cell or cell range is selected in the sheet.</ahelp></paragraph>
+<paragraph role="warning" id="par_id3154730" xml-lang="en-US" l10n="U" oldref="5">If you enter text in the <emph>Contents</emph> box of this dialog, and then select and clear this check box, the text will be lost.</paragraph>
+<paragraph role="heading" id="hd_id3147394" xml-lang="en-US" level="2" l10n="U" oldref="6">Contents</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:TP_VALIDATION_INPUTHELP:EDT_TITLE" id="bm_id3149377" localize="false"/>
+<paragraph role="heading" id="hd_id3149582" xml-lang="en-US" level="3" l10n="U" oldref="8">Title</paragraph>
+<paragraph role="paragraph" id="par_id3149400" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SC:EDIT:TP_VALIDATION_INPUTHELP:EDT_TITLE">Enter the title that you want to display when the cell or cell range is selected.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:MultiLineEdit:TP_VALIDATION_INPUTHELP:EDT_INPUTHELP" id="bm_id3156275" localize="false"/>
+<paragraph role="heading" id="hd_id3149121" xml-lang="en-US" level="3" l10n="U" oldref="10">Input help</paragraph>
+<paragraph role="paragraph" id="par_id3150752" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SC:MULTILINEEDIT:TP_VALIDATION_INPUTHELP:EDT_INPUTHELP">Enter the message that you want to display when the cell or cell range is selected.</ahelp></paragraph>
+</body>
+</helpdocument>

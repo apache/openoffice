@@ -1,0 +1,161 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_xforms_XFormsUIHelper1_idl__ 
+#define __com_sun_star_xforms_XFormsUIHelper1_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_xml_dom_XNode_idl__ 
+#include <com/sun/star/xml/dom/XNode.idl> 
+#endif 
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__ 
+#include <com/sun/star/beans/XPropertySet.idl> 
+#endif 
+
+#ifndef __com_sun_star_container_XIndexAccess_idl__ 
+#include <com/sun/star/container/XSet.idl> 
+#endif 
+
+#ifndef __com_sun_star_xforms_XDataTypeRepository_idl__ 
+#include <com/sun/star/xforms/XDataTypeRepository.idl> 
+#endif 
+
+#ifndef __com_sun_star_xml_dom_XDocument_idl__ 
+#include <com/sun/star/xml/dom/XDocument.idl> 
+#endif 
+
+#ifndef __com_sun_star_xml_dom_XDocument_idl__ 
+#include <com/sun/star/xml/dom/XNode.idl> 
+#endif 
+
+#ifndef __com_sun_star_frame_XModel_idl__
+#include <com/sun/star/frame/XModel.idl>
+#endif 
+
+#ifndef __com_sun_star_xforms_XModel_idl__
+#include <com/sun/star/xforms/XModel.idl>
+#endif 
+
+
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module xforms {  
+ 
+//============================================================================= 
+ 
+/** provide several helper methods for the UI
+
+    <b>This interfaces is for UI use only, and will likely be unsupported in
+    future versions.</p>
+*/
+interface XFormsUIHelper1
+{ 
+    string getDefaultServiceNameForNode( [in] com::sun::star::xml::dom::XNode xNode );
+
+    string getDefaultBindingExpressionForNode( [in] com::sun::star::xml::dom::XNode xNode );
+
+    string getNodeDisplayName( [in] com::sun::star::xml::dom::XNode xNode,
+                               [in] boolean bDetail );
+
+    string getNodeName( [in] com::sun::star::xml::dom::XNode xNode );
+
+    string getBindingName( [in] com::sun::star::beans::XPropertySet xBinding,
+                           [in] boolean bDetail );
+
+    string getSubmissionName( [in] com::sun::star::beans::XPropertySet xSubm,
+                              [in] boolean bDetail );
+
+	// Creates a new binding based on the one passed as argument.
+	// The new binding does *not* contribute to the MIPs table and acts
+	// as a propertyset in disguise, which is what the UI needs this object for...
+	com::sun::star::beans::XPropertySet cloneBindingAsGhost( [in] com::sun::star::beans::XPropertySet binding );
+
+    void removeBindingIfUseless( [in] com::sun::star::beans::XPropertySet xBinding );
+
+    // handle instances
+
+    com::sun::star::xml::dom::XDocument newInstance( [in] string sName,
+                      [in] string sURL,
+                      [in] boolean bURLOnce );
+
+    void renameInstance( [in] string sFrom, [in] string sTo,
+                      [in] string sURL,
+                      [in] boolean bURLOnce );
+
+    void removeInstance( [in] string sName );
+
+
+    // handle models
+    com::sun::star::xforms::XModel newModel( [in] com::sun::star::frame::XModel xModel,
+                   [in] string sName );
+    void renameModel( [in] com::sun::star::frame::XModel xModel,
+                      [in] string sFrom, [in] string sTo );
+    void removeModel( [in] com::sun::star::frame::XModel xModel,
+                      [in] string sName );
+
+
+    // DOM helpers
+    com::sun::star::xml::dom::XNode 
+        createElement( [in] com::sun::star::xml::dom::XNode xParent,
+                       [in] string sName );
+    com::sun::star::xml::dom::XNode
+        createAttribute( [in] com::sun::star::xml::dom::XNode xParent,
+                         [in] string sName );
+    
+    com::sun::star::xml::dom::XNode renameNode( 
+        [in] com::sun::star::xml::dom::XNode xNode,
+        [in] string sName );
+
+    com::sun::star::beans::XPropertySet getBindingForNode(
+        [in] com::sun::star::xml::dom::XNode xNode, 
+        [in] boolean bCreate );
+
+    void removeBindingForNode(
+        [in] com::sun::star::xml::dom::XNode xNode );
+
+    string getResultForExpression(
+        [in] com::sun::star::beans::XPropertySet xBinding,
+        [in] boolean bIsBindingExpression,
+        [in] string sExpression );
+
+    boolean isValidXMLName( [in] string sName );
+
+    boolean isValidPrefixName( [in] string sName );
+
+    void setNodeValue( 
+        [in] com::sun::star::xml::dom::XNode xNode,
+        [in] string sValue );
+    
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

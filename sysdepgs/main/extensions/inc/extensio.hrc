@@ -1,0 +1,71 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef EXTENSIONS_INC_EXTENSIO_HRC
+#define EXTENSIONS_INC_EXTENSIO_HRC
+
+#include <svl/solar.hrc>
+
+// -----------------------------------------------------------------------
+// - resource id ranges
+
+#define RID_ABP_START		( RID_MORE_EXTENSIONS_START +   0 )
+#define RID_ABP_END			( RID_MORE_EXTENSIONS_START +  19 )
+
+#define RID_DBP_START       ( RID_MORE_EXTENSIONS_START +  20 )
+#define RID_DBP_END         ( RID_MORE_EXTENSIONS_START +  39 )
+
+// !!! please adjust RID_LAST_EXTENSIONS_RANGE if you add new ranges here !!!
+
+#define RID_LAST_EXTENSIONS_RANGE RID_DBP_END
+
+#if RID_LAST_EXTENSIONS_RANGE > RID_MORE_EXTENSIONS_END
+    #error id range overflow
+#endif
+
+// -----------------------------------------------------------------------
+// - help id ranges
+
+#define HID_DBP_START		( HID_EXTENSIONS_START +   0 )
+#define HID_DBP_END			( HID_EXTENSIONS_START +  19 )
+
+#define HID_ABP_START		( HID_EXTENSIONS_START +  20 )
+#define HID_ABP_END			( HID_EXTENSIONS_START +  39 )
+
+#define HID_BIBLIO_START    ( HID_EXTENSIONS_START +   40 )
+#define HID_BIBLIO_END      ( HID_EXTENSIONS_START +   89 )
+
+#define HID_PROPC_START     ( HID_EXTENSIONS_START +   90 )
+#define HID_PROPC_END       ( HID_EXTENSIONS_START +  499 )
+
+#define HID_UPDATE_START    ( HID_EXTENSIONS_START +  500 )
+#define HID_UPDATE_END      ( HID_EXTENSIONS_START +  519 )
+
+// !!! please adjust HID_LAST_EXTENSIONS_RANGE if you add new ranges here !!!
+
+#define HID_LAST_EXTENSIONS_RANGE HID_UPDATE_END
+
+#if HID_LAST_EXTENSIONS_RANGE > HID_EXTENSIONS_END
+    #error id range overflow
+#endif
+
+#endif

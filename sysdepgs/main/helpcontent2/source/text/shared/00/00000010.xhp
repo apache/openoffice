@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0000000010xml" indexer="exclude" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Context Menus</title>
+<filename>/text/shared/00/00000010.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <paragraph role="heading" level="1" id="hd_id3160447" l10n="U" xml-lang="en-US" oldref="1">Context Menus</paragraph>
+  <section id="ausschneiden">
+  <paragraph role="heading" level="2" id="hd_id3148765" l10n="U" xml-lang="en-US" oldref="45">Cut</paragraph>
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3153383" l10n="U" oldref="46">Cuts out the selected object and stores it on the clipboard. The object can be reinserted from the clipboard by using <emph>Paste</emph>.</paragraph>
+  </section>
+  <section id="einfuegen">
+  <bookmark branch="hid/SID_EXPLORERCONTENT_PASTE" xml-lang="en-US" id="bm_id3155448"/><paragraph role="heading" level="2" id="hd_id3156069" l10n="U" xml-lang="en-US" oldref="68">Paste</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3154896" xml-lang="en-US" oldref="69"><ahelp hid="SID_EXPLORERCONTENT_PASTE" visibility="visible">Inserts the element that you moved to the clipboard into the document.</ahelp> This command can only be called if the contents of the clipboard can be inserted at the current cursor position.</paragraph>
+  </section>
+  <section id="hinzufuegen">
+  <paragraph role="heading" level="2" id="hd_id3149948" l10n="U" xml-lang="en-US" oldref="76">Insert</paragraph>
+  <paragraph xml-lang="en-US" oldref="77" role="paragraph" id="par_id3147588" l10n="U">Opens a submenu in the Gallery where you can choose between <emph>Copy</emph> and <emph>Link</emph>. The selected Gallery object is either copied into the current document or a link is created.</paragraph>
+  <paragraph role="warning" id="par_id3146130" l10n="U" xml-lang="en-US" oldref="78">If you have selected an object in your document, then a new insertion will replace the selected object.</paragraph>
+  </section>
+  <bookmark branch="hid/SVX_HID_GALLERY_MN_BACKGROUND" xml-lang="en-US" id="bm_id3156302"/><paragraph role="heading" level="2" id="hd_id3145829" l10n="U" xml-lang="en-US" oldref="79">Background</paragraph>
+  <paragraph l10n="U" xml-lang="en-US" oldref="80" role="paragraph" id="par_id3149180"><ahelp hid="HID_GALLERY_MN_BACKGROUND" visibility="visible">Inserts the selected picture as a background graphic.</ahelp> Use the submenu commands <emph>Page</emph> or <emph>Paragraph</emph> to define whether the graphic should cover the entire page or only the current paragraph.</paragraph>
+  <section id="kopieren">
+  <bookmark branch="hid/SID_EXPLORERCONTENT_COPY" xml-lang="en-US" id="bm_id3154751"/><paragraph role="heading" level="2" id="hd_id3153049" l10n="U" xml-lang="en-US" oldref="87">Copy</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150774" xml-lang="en-US" oldref="88"><ahelp hid="SID_EXPLORERCONTENT_COPY" visibility="visible">Copies the selected element to the clipboard.</ahelp></paragraph>
+  </section>
+  <section id="loeschen">
+  <bookmark branch="hid/SID_EXPLORERCONTENT_DESTROY" xml-lang="en-US" id="bm_id3155355"/><paragraph role="heading" level="2" id="hd_id3148620" l10n="U" xml-lang="en-US" oldref="91">Delete</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3154317" xml-lang="en-US" oldref="92"><ahelp visibility="visible" hid="SID_EXPLORERCONTENT_DESTROY">Deletes the current selection. If multiple objects are selected, all will be deleted. In most cases, a <link href="text/shared/01/03150100.xhp" name="security query">security query</link> appears before objects are deleted.</ahelp></paragraph>
+  <paragraph role="paragraph" id="par_id3155941" l10n="U" xml-lang="en-US" oldref="190">The object is either physically deleted from the data carrier or the object display is removed, depending on context.</paragraph>
+  </section>
+  <section id="loeschen2">
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3150506" l10n="U" oldref="192">If you choose <emph>Delete</emph> while in the Gallery, the entry will be deleted from the Gallery, but the file itself will remain untouched.</paragraph>
+  </section>
+  <section id="oeffnen">
+  <bookmark branch="hid/SID_EXPLORERCONTENT_OPEN" xml-lang="en-US" id="bm_id3154749"/><bookmark branch="hid/SID_EXPLORERCONTENT_OPEN_FOLDER" xml-lang="en-US" id="bm_id3145383"/><bookmark branch="hid/SID_EXPLORERCONTENT_OPEN_OBJECT" xml-lang="en-US" id="bm_id3156113"/><paragraph role="heading" level="2" id="hd_id3150443" l10n="U" xml-lang="en-US" oldref="136">Open</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3149149" xml-lang="en-US" oldref="137"><ahelp visibility="visible" hid="SID_EXPLORERCONTENT_OPEN_OBJECT">Use the<emph> Open </emph>command to open the selected object in a new task.</ahelp></paragraph>
+  </section>
+  <section id="umbenennen">
+  <bookmark branch="hid/SID_EXPLORERCONTENT_RENAME" xml-lang="en-US" id="bm_id3149578"/><paragraph role="heading" level="2" id="hd_id3149732" l10n="U" xml-lang="en-US" oldref="165">Rename</paragraph>
+  <paragraph l10n="U" xml-lang="en-US" role="paragraph" id="par_id3149797" oldref="166"><ahelp hid="SID_EXPLORERCONTENT_RENAME" visibility="visible">Enables a selected object to be renamed.</ahelp> After selecting <emph>Rename</emph> the name is selected and a new one can be entered directly. Use the arrow keys to set the cursor at the beginning or end of the name to delete or add to part of the name or to reposition the cursor.</paragraph>
+  </section>
+  <section id="aktualisieren">
+  <bookmark branch="hid/SVX_HID_GALLERY_ACTUALIZE" xml-lang="en-US" id="bm_id3150275"/><paragraph role="heading" level="2" id="hd_id3155434" l10n="U" xml-lang="en-US" oldref="317">Update</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3154898" xml-lang="en-US" oldref="318"><ahelp hid="HID_GALLERY_ACTUALIZE" visibility="visible">Updates the view in the window or in the selected object.</ahelp></paragraph>
+  </section>
+  <section id="vorschau">
+  <paragraph role="heading" level="2" id="hd_id3147573" l10n="U" xml-lang="en-US" oldref="172">Preview</paragraph>
+  <paragraph role="paragraph" id="par_id3155583" l10n="U" xml-lang="en-US" oldref="173">The element selected is displayed in the Gallery at maximum size. Double-click the preview to switch back to the normal Gallery view.</paragraph>
+  </section>
+  <section id="verknuepfungerstellen">
+  <paragraph role="heading" level="2" id="hd_id3157809" l10n="U" xml-lang="en-US" oldref="319">Create Link</paragraph>
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3153716" l10n="U" oldref="320">This command can be activated if an object is selected. A link named "Link to xxx" (<emph>xxx</emph> represents the name of the object) will be created directly in the same directory as that of the selected object.</paragraph>
+  </section>
+  
+ </body>
+</helpdocument>

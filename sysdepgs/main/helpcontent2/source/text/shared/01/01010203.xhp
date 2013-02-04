@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0101010203xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Options</title>
+<filename>/text/shared/01/01010203.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="drucker">
+  <bookmark branch="hid/SW_HID_LAB_PRT" xml-lang="en-US" id="bm_id3154894"/><paragraph id="hd_id3155599" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/shared/01/01010203.xhp" name="Options">Options</link></paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3154497" xml-lang="en-US" oldref="2"><ahelp hid="HID_LAB_PRT" visibility="visible">Sets additional options for your labels or business cards, including text synchronization and printer settings.</ahelp></paragraph>
+  </section>
+  <section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#druckereti"/>
+</section>
+  <bookmark branch="hid/sw:RadioButton:TP_LAB_PRT:BTN_PAGE" xml-lang="en-US" id="bm_id3159233"/><paragraph role="heading" level="2" id="hd_id3150713" l10n="U" xml-lang="en-US" oldref="3">Entire Page</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3155355" xml-lang="en-US" oldref="4"><ahelp hid="SW:RADIOBUTTON:TP_LAB_PRT:BTN_PAGE" visibility="visible">Creates a full page of  labels or business cards.</ahelp></paragraph>
+  <bookmark branch="hid/sw:RadioButton:TP_LAB_PRT:BTN_SINGLE" xml-lang="en-US" id="bm_id3147089"/><paragraph role="heading" level="2" id="hd_id3146958" l10n="U" xml-lang="en-US" oldref="5">Single Label</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3155535" xml-lang="en-US" oldref="6"><ahelp hid="SW:RADIOBUTTON:TP_LAB_PRT:BTN_SINGLE" visibility="visible">Prints a single label or  business card on a page.</ahelp></paragraph>
+  <bookmark branch="hid/sw:NumericField:TP_LAB_PRT:FLD_COL" xml-lang="en-US" id="bm_id3155338"/><paragraph role="heading" level="2" id="hd_id3148621" l10n="U" xml-lang="en-US" oldref="7">Column</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3145345" xml-lang="en-US" oldref="8"><ahelp hid="SW:NUMERICFIELD:TP_LAB_PRT:FLD_COL" visibility="visible">Enter the number of labels or business cards that you want to have in a row on your page.</ahelp></paragraph>
+  <bookmark branch="hid/sw:NumericField:TP_LAB_PRT:FLD_ROW" xml-lang="en-US" id="bm_id3150443"/><paragraph role="heading" level="2" id="hd_id3149398" l10n="U" xml-lang="en-US" oldref="9">Row</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3166410" xml-lang="en-US" oldref="10"><ahelp hid="SW:NUMERICFIELD:TP_LAB_PRT:FLD_ROW" visibility="visible">Enter the number of rows of labels or business cards that you want to have on your page.</ahelp></paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_LAB_PRT:CB_SYNCHRON" xml-lang="en-US" id="bm_id3159166"/><paragraph role="heading" level="2" id="hd_id3149237" l10n="U" xml-lang="en-US" oldref="15">Synchronize contents</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3155342" xml-lang="en-US" oldref="16"><ahelp visibility="visible" hid="SW:CHECKBOX:TP_LAB_PRT:CB_SYNCHRON">Allows you to edit a single label or business card and updates the contents of the remaining labels or business cards on the page when you click the <emph>Synchronize Labels </emph>button.</ahelp></paragraph>
+  <bookmark branch="hid/sw:PushButton:DLG_SYNC_BTN:BTN_SYNC" xml-lang="en-US" id="bm_id3145119"/><paragraph role="heading" level="2" id="hd_id3149164" l10n="U" xml-lang="en-US" oldref="18">Synchronize Labels</paragraph>
+  <paragraph xml-lang="en-US" oldref="17" l10n="U" role="paragraph" id="par_id3148474">The <emph>Synchronize labels </emph>button only appears in your document if you selected the <emph>Synchronize contents </emph>on the<emph> Options tab </emph>when you created the labels or business cards.</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3149762" xml-lang="en-US" oldref="19"><ahelp hid="SW:PUSHBUTTON:DLG_SYNC_BTN:BTN_SYNC" visibility="visible">Copies the contents of the top left label or business card to the remaining labels or business cards on the page.</ahelp></paragraph>
+  <paragraph role="heading" level="2" id="hd_id3150504" l10n="U" xml-lang="en-US" oldref="11">Printer</paragraph>
+  <paragraph role="paragraph" id="par_id3148990" l10n="U" xml-lang="en-US" oldref="12">Displays the name of the currently selected printer.</paragraph>
+  <bookmark branch="hid/sw:PushButton:TP_LAB_PRT:BTN_PRTSETUP" xml-lang="en-US" id="bm_id3155180"/><paragraph role="heading" level="2" id="hd_id3153127" l10n="U" xml-lang="en-US" oldref="13">Setup</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3144438" xml-lang="en-US" oldref="14"><ahelp visibility="visible" hid="SW:PUSHBUTTON:TP_LAB_PRT:BTN_PRTSETUP">Opens the <link href="text/shared/01/01140000.xhp" name="Printer Setup">Printer Setup</link> dialog.</ahelp></paragraph>
+ </body>
+</helpdocument>

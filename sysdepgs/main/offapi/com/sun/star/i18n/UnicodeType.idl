@@ -1,0 +1,75 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_i18n_UnicodeType_idl__
+#define __com_sun_star_i18n_UnicodeType_idl__
+
+//============================================================================
+
+module com {  module sun {  module star {  module i18n {
+
+//============================================================================
+
+/**
+    Constants to classify Unicode characters, returned by
+    <member>XCharacterClassification::getType()</member>
+ */
+
+published constants UnicodeType
+{
+    const short UNASSIGNED             = 0;
+    const short UPPERCASE_LETTER       = 1;
+    const short LOWERCASE_LETTER       = 2;
+    const short TITLECASE_LETTER       = 3;
+    const short MODIFIER_LETTER        = 4;
+    const short OTHER_LETTER           = 5;
+    const short NON_SPACING_MARK       = 6;
+    const short ENCLOSING_MARK         = 7;
+    const short COMBINING_SPACING_MARK = 8;
+    const short DECIMAL_DIGIT_NUMBER   = 9;
+    const short LETTER_NUMBER          = 10;
+    const short OTHER_NUMBER           = 11;
+    const short SPACE_SEPARATOR        = 12;
+    const short LINE_SEPARATOR         = 13;
+    const short PARAGRAPH_SEPARATOR    = 14;
+    const short CONTROL                = 15;
+    const short FORMAT                 = 16;
+    const short PRIVATE_USE            = 17;
+    const short SURROGATE              = 18;
+    const short DASH_PUNCTUATION       = 19;
+    const short INITIAL_PUNCTUATION    = 20;
+    const short FINAL_PUNCTUATION      = 21;
+    const short CONNECTOR_PUNCTUATION  = 22;
+    const short OTHER_PUNCTUATION      = 23;
+    const short MATH_SYMBOL            = 24;
+    const short CURRENCY_SYMBOL        = 25;
+    const short MODIFIER_SYMBOL        = 26;
+    const short OTHER_SYMBOL           = 27;
+    const short START_PUNCTUATION      = 28;
+    const short END_PUNCTUATION        = 29;
+    const short GENERAL_TYPES_COUNT    = 30;
+};
+
+//============================================================================
+}; }; }; };
+
+#endif

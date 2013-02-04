@@ -1,0 +1,75 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_RuleTerm_idl__
+#define __com_sun_star_ucb_RuleTerm_idl__
+
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** describes a term.
+
+    <p>A term is used to select objects to which a rule should apply.
+*/
+published struct RuleTerm
+{
+	//-------------------------------------------------------------------------
+	/** the name of the property used to match the term.
+	*/
+	string Property;
+
+	//-------------------------------------------------------------------------
+	/** the value of the property used to compare with the document
+		property.
+	*/
+	any Operand;
+
+	//-------------------------------------------------------------------------
+	/** the operator used to compare the property of the document with
+		the given value (e.g. "contains" or "greater equal").
+
+		<p>The value can be one of the <type>RuleOperator</type> constants.
+	*/
+	short Operator;
+
+	//-------------------------------------------------------------------------
+	/** this flag indicates whether a string "operand" shall be compared
+	    case sensitive.
+	*/
+	boolean CaseSensitive;
+
+	//-------------------------------------------------------------------------
+	/** this flag indicates whether a string "operand" shall be treated
+	    as a regular expression.
+	*/
+	boolean RegularExpression;
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

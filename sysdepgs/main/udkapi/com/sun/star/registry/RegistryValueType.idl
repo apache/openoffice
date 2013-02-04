@@ -1,0 +1,115 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_registry_RegistryValueType_idl__ 
+#define __com_sun_star_registry_RegistryValueType_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module registry {  
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: enum com::sun::star::registry::RegistryValueType
+/** represents all possible types of a key value.
+	
+	<p>An ASCII value and a string value will both be handled with type
+	string. But interns will be handled differently. Normally the idl
+	string represents a unicode string. </p>
+ */
+published enum RegistryValueType
+{ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	NOT_DEFINED, 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::NOT_DEFINED
+	/** the type of the key is not defined.
+	 */
+	NOT_DEFINED, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	LONG, 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::LONG
+	/** the type of the key is long.
+	 */
+	LONG, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	ASCII, 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::ASCII
+	/** the type of the key is ASCII.
+	 */
+	ASCII, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	STRING, 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::STRING
+	/** the type of the key is a string.
+	 */
+	STRING, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	BINARY, 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::BINARY
+	/** the type of the key is binary.
+	 */
+	BINARY, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	LONGLIST, 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::LONGLIST
+	/** the type of the key is LONGLIST.
+	 */
+	LONGLIST, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	ASCIILIST, 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::ASCIILIST
+	/** the type of the key is a ASCIILIST.
+	 */
+	ASCIILIST, 
+ 
+	//------------------------------------------------------------------------- 
+	// DOCUMENTATION OMITTED FOR RegistryValueType::	STRINGLIST 
+	
+	// DocMerge from xml: value com::sun::star::registry::RegistryValueType::STRINGLIST
+	/** the type of the key is a STRINGLIST.
+	 */
+	STRINGLIST 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

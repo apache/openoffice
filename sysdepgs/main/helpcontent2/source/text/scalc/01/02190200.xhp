@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0102190200xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Column Break</title>
+<filename>/text/scalc/01/02190200.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  <section id="spaltenumbruch">
+   
+   
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151384"><bookmark_value>spreadsheets;deleting column breaks</bookmark_value>
+<bookmark_value>deleting;manual column breaks</bookmark_value>
+<bookmark_value>column breaks;deleting</bookmark_value>
+</bookmark>
+   <comment>MW deleted "removing;" and changed "deleting;"</comment>
+   
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteColumnbreak" id="bm_id2513425" localize="false"/>
+   
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteColumnbreak" id="bm_id3154758" localize="false"/>
+   <paragraph xml-lang="en-US" id="hd_id3151384" role="heading" level="1" l10n="U" oldref="1"><link href="text/scalc/01/02190200.xhp" name="Column Break">Column Break</link></paragraph>
+   <paragraph xml-lang="en-US" id="par_id3154124" role="paragraph" l10n="U" oldref="2"><ahelp hid=".uno:DeleteColumnbreak">Removes a manual column break to the left of the active cell.</ahelp></paragraph>
+   
+  </section>
+  <paragraph xml-lang="en-US" id="par_id3145173" role="paragraph" l10n="U" oldref="3">Position the cursor in the cell to the right of the column break indicated by a vertical line and choose <emph>Edit - Delete Manual Break - Column Break</emph>. The manual column break is removed.</paragraph>
+  <section id="howtoget">
+   
+   <embed href="text/scalc/00/00000402.xhp#bspaum"/>
+   
+  </section>
+ </body>
+</helpdocument>

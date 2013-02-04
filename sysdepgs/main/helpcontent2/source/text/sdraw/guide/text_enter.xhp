@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsdrawguidetext_enterxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Adding Text</title>
+         <filename>/text/sdraw/guide/text_enter.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153144"><bookmark_value>text frames</bookmark_value>
+      <bookmark_value>inserting;text frames</bookmark_value>
+      <bookmark_value>copying;text from other documents</bookmark_value>
+      <bookmark_value>pasting;text from other documents</bookmark_value>
+      <bookmark_value>legends; drawings</bookmark_value>
+</bookmark><comment>mw changed "adding;" to "inserting;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3153144" role="heading" level="1" l10n="U"
+                 oldref="45"><variable id="text_enter"><link href="text/sdraw/guide/text_enter.xhp" name="Adding Text">Adding Text</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145750" role="paragraph" l10n="CHG" oldref="46">There are several types of text you can add to a drawing or presentation: </paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10824" role="paragraph" l10n="NEW">Text in a text box</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10828" role="paragraph" l10n="NEW">Text that changes character size to fill the frame size</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1082C" role="paragraph" l10n="NEW">Text that is added to any drawing object by double-clicking the object</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10830" role="paragraph" l10n="NEW">Text that is copied from a Writer document</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10834" role="paragraph" l10n="NEW">Text that is inserted from a text document or HTML document</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3150202" role="heading" level="2" l10n="U"
+                 oldref="48">Adding a Text Box</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155266" role="paragraph" l10n="U" oldref="49">Click the <emph>Text</emph> icon 
+<image id="img_id3156450" src="res/commandimagelist/sc_text.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3156450">Icon</alt>
+	</image> and move the mouse pointer to where you want to enter the text box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149052" role="paragraph" l10n="U" oldref="50">Drag a text box to the size you want in your document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151194" role="paragraph" l10n="CHG" oldref="51">Type or paste your text into the text box.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3145118" role="paragraph" l10n="CHG" oldref="53">Double-click the text to edit it or to format text properties, such as font size or font color. Click the border of the text box to edit the object properties, such as border color or arranging in front or behind other objects.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150437" role="heading" level="2" l10n="U"
+                 oldref="54">Fitting Text to Frames</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146877" role="paragraph" l10n="CHG" oldref="56">Create a text box as described in the steps above.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN108A3" role="paragraph" l10n="NEW">With the text object selected, choose <emph>Format - Text</emph>. The <emph>Text</emph> dialog opens.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN108AF" role="paragraph" l10n="NEW">On the <emph>Text</emph> tab page, clear the <emph>Fit height to text</emph> checkbox, then select the <emph>Fit to frame</emph> checkbox. Click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0610200902133994" role="paragraph" l10n="NEW">Now you can resize the text box to change the size and shape of the text characters.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3155955" role="heading" level="2" l10n="CHG"
+                 oldref="58">Text Tied to a Graphic</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10917" role="paragraph" l10n="NEW">You can add text to any graphic after double-clicking the graphic.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1827448" role="paragraph" l10n="NEW">To determine the position of the text, use the settings in <emph>Format - Text</emph>.<comment>this is the Draw command. In Writer it is Format - Object - Text attributes.</comment></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147366" role="paragraph" l10n="CHG" oldref="59">For example, click the arrow next to the <emph>Callouts</emph> icon 
+<image id="img_id3154508" src="res/commandimagelist/sc_calloutshapes.png" width="0.1665in" height="0.1665in"><alt xml-lang="en-US" id="alt_id3154508">Icon</alt>
+	</image> to open the Callouts toolbar.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN108FD" role="paragraph" l10n="NEW">Select a callout and move the mouse pointer to where you want the callout to start.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150272" role="paragraph" l10n="CHG" oldref="60">Drag to draw the callout.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1978514" role="paragraph" l10n="NEW">Enter the text.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1091A" role="heading" level="2" l10n="NEW">Copying Text</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10921" role="paragraph" l10n="NEW">Select the text in your Writer document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10925" role="paragraph" l10n="NEW">Copy the text to the clipboard (<emph>Edit - Copy</emph>).</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1092D" role="paragraph" l10n="NEW">Click the page or slide where you want to paste the text.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10931" role="paragraph" l10n="NEW">Paste the text using <emph>Edit - Paste</emph> or <emph>Edit - Paste special</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN1093C" role="paragraph" l10n="NEW">Using <emph>Paste special</emph>, you can choose the text format to be pasted. Depending on formats, you can copy different text attributes.<comment>UFI: added an emph tag, see #60923</comment></paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1093F" role="heading" level="2" l10n="NEW">Importing Text</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10946" role="paragraph" l10n="NEW">Click the page or slide where you want to import the text.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1094A" role="paragraph" l10n="NEW">Choose <emph>Insert - File</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10952" role="paragraph" l10n="NEW">Select a text file (*.txt) or an HTML file and click <emph>Insert</emph>. The <emph>Insert Text</emph> dialog opens. Click <emph>OK</emph> to insert the text.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/text_frame.xhp#text_frame"/>
+</case>
+</switch>
+</section>
+   </body>
+</helpdocument>

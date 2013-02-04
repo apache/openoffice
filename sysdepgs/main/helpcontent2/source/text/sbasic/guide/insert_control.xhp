@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicguideinsert_controlxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating Controls in the Dialog Editor</title>
+<filename>/text/sbasic/guide/insert_control.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-07-25T15:51:18">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149182"><bookmark_value>controls; creating in the dialog editor</bookmark_value>
+<bookmark_value>dialog editor;creating controls</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149182" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="insert_control"><link href="text/sbasic/guide/insert_control.xhp" name="Creating Controls in the Dialog Editor">Creating Controls in the Dialog Editor</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3146797" xml-lang="en-US" l10n="CHG" oldref="2">Use the tools on the <emph>Toolbox </emph>of the BASIC dialog editor to add controls to your dialog.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150276" xml-lang="en-US" l10n="CHG" oldref="7">To open the <emph>Toolbox</emph>, click the arrow next to the <emph>Insert Controls</emph> icon on the <emph>Macro</emph> toolbar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="3">Click a tool on the toolbar, for example, <emph>Button</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153360" xml-lang="en-US" l10n="U" oldref="4">On the dialog, drag the button to the size you want.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/sbasic/guide/control_properties.xhp#control_properties"/>
+<embed href="text/sbasic/guide/create_dialog.xhp#create_dialog"/>
+<embed href="text/sbasic/guide/show_dialog.xhp#show_dialog"/>
+<embed href="text/sbasic/guide/sample_code.xhp#sample_code"/>
+</section>
+</body>
+</helpdocument>

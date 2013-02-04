@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgWarn" dlg:left="188" dlg:top="135" dlg:width="170" dlg:height="121" dlg:closeable="true" dlg:moveable="true" dlg:title="Warning">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0xe6e6e6" dlg:border="none"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:button dlg:id="butTerminate" dlg:tab-index="1" dlg:left="95" dlg:top="86" dlg:width="70" dlg:height="14" dlg:tabstop="true" dlg:value="Terminate Validation" dlg:button-type="cancel"/>
+  <dlg:button dlg:id="butIgnore" dlg:tab-index="2" dlg:left="95" dlg:top="103" dlg:width="70" dlg:height="14" dlg:tabstop="true" dlg:default="true" dlg:value="Ignore and Continue" dlg:button-type="ok"/>
+  <dlg:textfield dlg:style-id="0" dlg:id="txtSolution" dlg:tab-index="3" dlg:disabled="true" dlg:left="5" dlg:top="25" dlg:width="161" dlg:height="54" dlg:tabstop="false" dlg:multiline="true" dlg:readonly="true"/>
+  <dlg:text dlg:id="txtWarning" dlg:tab-index="4" dlg:left="5" dlg:top="5" dlg:width="162" dlg:height="14"/>
+  <dlg:fixedline dlg:id="FixedLine1" dlg:tab-index="5" dlg:left="5" dlg:top="19" dlg:width="162" dlg:height="6"/>
+  <dlg:checkbox dlg:id="cbWarn" dlg:tab-index="0" dlg:left="8" dlg:top="104" dlg:width="84" dlg:height="10" dlg:help-text="Disables warnings for this validation" dlg:tabstop="true" dlg:value="Switch off warnings" dlg:checked="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

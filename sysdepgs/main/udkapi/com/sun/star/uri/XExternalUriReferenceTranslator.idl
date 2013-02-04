@@ -1,0 +1,87 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_uri_XExternalUriReferenceTranslator_idl__
+#define __com_sun_star_uri_XExternalUriReferenceTranslator_idl__
+
+#include <com/sun/star/uno/XInterface.idl>
+
+module com { module sun { module star { module uri {
+
+/**
+   translates between external and internal URI references.
+
+   <p>Some URI schemes leave unspecified important aspects of how to interpret
+   URIs of those schemes.  For example, it is unspecified for &ldquo;file&rdquo;
+   URLs how to map the byte sequences that constitute the path segments of a
+   &ldquo;file&rdquo; URL to filenames on a given platform:  The UNO environment
+   always assumes that path segments of &ldquo;file&rdquo; URLs represent
+   UTF-8&ndash;encoded strings (which have to be mapped to filenames in a
+   platform-specific way), while other applications typically assume that path
+   segments of &ldquo;file&rdquo; URLs directly represent a platform's
+   byte-sequence filenames.  This interface offers methods to translate between
+   such <dfn>internal</dfn> URIs (e.g., UTF-8&ndash;encoded &ldquo;file&rdquo;
+   URLs used within the UNO environment) and <dfn>external</dfn> URIs (e.g.,
+   byte-sequence&ndash;oriented &ldquo;file&rdquo; URLs used by other
+   applications).  Typically, only &ldquo;file&rdquo; URLs are affected by this
+   translation.</p>
+
+   <p>Since the translation process is based on URI schemes, relative URI
+   references (that do not include a scheme) are left unmodified by the
+   translation process.</p>
+
+   @since OOo 2.0
+ */
+published interface XExternalUriReferenceTranslator {
+    /**
+       returns the internal counterpart of an external URI reference.
+
+       @param externalUriReference
+       an external URI reference.
+
+       @returns
+       the internal counterpart of the given external URI reference.  An empty
+       string is returned if the given external URI reference either is an empty
+       string or cannot be converted (for example, because it contains illegal
+       characters).
+     */
+    string translateToInternal([in] string externalUriReference);
+
+    /**
+       returns the external counterpart of an internal URI reference.
+
+       @param internalUriReference
+       an internal URI reference.
+
+       @returns
+       the external counterpart of the given internal URI reference.  An empty
+       string is returned if the given internal URI reference either is an empty
+       string or cannot be converted (for example, because it contains illegal
+       characters).
+     */
+    string translateToExternal([in] string internalUriReference);
+};
+
+}; }; }; };
+
+#endif

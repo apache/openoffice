@@ -1,0 +1,69 @@
+/**************************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ *************************************************************/
+
+#ifndef __com_sun_star_system_XSystemShellExecute_idl__
+#define __com_sun_star_system_XSystemShellExecute_idl__
+
+#include <com/sun/star/uno/XInterface.idl>
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#include <com/sun/star/system/SystemShellExecuteException.idl>
+
+module com { module sun { module star { module system {
+
+/** Specifies an interface for executing a system command.
+*/
+published interface XSystemShellExecute
+{
+    /** Executes an abitrary system command.
+
+    @param aCommand
+        Specifies the command to execute.
+        <p>This may be an executable file or a document which is registered with
+        an application on a specific platform, so that the platform knows what
+        application to launch for that document.</p>
+        <p>If the command specifies a path to an executable, etc, this has to be
+        a system specific path.</p>
+
+    @param aParameter
+        Specifies a list of space separated parameters.
+        <p>The method does not validate the given parameters, but only passes it
+        as a parameter to the specified command.</p>
+
+    @param nFlags
+        A combination of <type>SystemShellExecuteFlags</type> specifying different
+        flags to control the execution of this method.
+
+    @throws com::sun::star::lang::IllegalArgumentException
+        when the specified flags are wrong or exclude each other.
+
+    @throws com::sun::star::sys::SystemExecuteException
+        in the case of errors when trying to executed the specified command.
+    */
+    void execute( [in] string sCommand,
+                  [in] string sParameter,
+                  [in] long nFlags )
+        raises( ::com::sun::star::lang::IllegalArgumentException,
+                ::com::sun::star::system::SystemShellExecuteException );
+};
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideindices_tocxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Creating a Table of Contents</title>
+         <filename>/text/swriter/guide/indices_toc.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147104"><bookmark_value>tables of contents; creating and updating</bookmark_value>
+      <bookmark_value>updating; tables of contents</bookmark_value>
+</bookmark><comment>mw deleted "creating;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3147104" role="heading" level="1" l10n="U"
+                 oldref="16"><variable id="indices_toc"><link href="text/swriter/guide/indices_toc.xhp" name="Creating a Table of Contents">Creating a Table of Contents</link>
+</variable></paragraph>
+      <section id="tomanual">
+         <paragraph xml-lang="en-US" id="par_id3150942" role="paragraph" l10n="U" oldref="45">The best way to generate a table of contents is to apply the predefined heading paragraph styles, such as "Heading 1", to the paragraphs that you want to include in your table of contents. After you apply these styles, you can then create a table of contents.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id5876949" role="heading" level="2" l10n="NEW">To Insert a Table of Contents</paragraph>
+         <list type="ordered">
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3150510" role="listitem" l10n="U" oldref="17">Click in your document where you want to create the table of contents.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3150528" role="listitem" l10n="U" oldref="18">Choose <emph>Insert - Indexes and Tables - Indexes and Tables</emph>, and then click the <link href="text/swriter/01/04120211.xhp" name="Index/Table"><emph>Index/Table</emph></link> tab.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3153746" role="listitem" l10n="U" oldref="46">Select "Table of Contents" in the <emph>Type</emph> box.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3146856" role="listitem" l10n="U" oldref="47">Select any options that you want.</paragraph>
+            </listitem>
+            <listitem>
+               <paragraph xml-lang="en-US" id="par_id3146872" role="listitem" l10n="U" oldref="19">Click <emph>OK</emph>.</paragraph>
+            </listitem>
+         </list>
+         <paragraph xml-lang="en-US" id="par_id3146896" role="paragraph" l10n="U" oldref="20">If you want to use a different paragraph style as a table of contents entry, select the <item type="menuitem">Additional Styles</item>
+            <emph/>check box in the <item type="menuitem">Create from</item> area, and then click the (<item type="menuitem">...</item>) button next to the check box. In the <item type="menuitem">Assign Styles</item> dialog, click the style in the list, and then click the <item type="menuitem">&gt;&gt;</item>
+            <emph/>or the <item type="menuitem">&lt;&lt;</item>
+            <emph/>button to define the outline level for the paragraph style.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3153148" role="heading" level="2" l10n="U"
+                 oldref="21">To Update a Table of Contents</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153161" role="paragraph" l10n="U" oldref="22">Do one of the following:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153183" role="listitem" l10n="U" oldref="48">Right-click in the table of contents and choose <emph>Update Index/Table</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147066" role="listitem" l10n="U" oldref="44">Choose <emph>Tools - Update - All Indexes and Tables</emph>.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/indices_enter.xhp#indices_enter"/>
+      <embed href="text/swriter/guide/indices_edit.xhp#indices_edit"/>
+      <embed href="text/swriter/guide/indices_form.xhp#indices_form"/>
+      <embed href="text/swriter/guide/indices_delete.xhp#indices_delete"/>
+      <embed href="text/swriter/guide/indices_index.xhp#indices_index"/>
+      <embed href="text/swriter/guide/indices_userdef.xhp#indices_userdef"/>
+      <embed href="text/swriter/guide/indices_literature.xhp#indices_literature"/>
+      <embed href="text/swriter/guide/indices_multidoc.xhp#indices_multidoc"/>
+   </body>
+</helpdocument>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidescenarioxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Using Scenarios</title>
+<filename>/text/scalc/guide/scenario.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149664"><bookmark_value>scenarios; creating/editing/deleting</bookmark_value>
+<bookmark_value>opening;scenarios</bookmark_value>
+<bookmark_value>selecting;scenarios in Navigator</bookmark_value>
+</bookmark><comment>UFI: removed "sample" from index term: no sample in OOo</comment><comment>MW changed "scenarios;"</comment><paragraph role="heading" id="hd_id3125863" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="scenario"><link href="text/scalc/guide/scenario.xhp" name="Using Scenarios">Using Scenarios</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="CHG" oldref="2">A $[officename] Calc scenario is a set of cell values that can be used within your calculations. You assign a name to every scenario on your sheet. Define several scenarios on the same sheet, each with some different values in the cells. Then you can easily switch the sets of cell values by their name and immediately observe the results. Scenarios are a tool to test out "what-if" questions.</paragraph>
+<paragraph role="heading" id="hd_id3149255" xml-lang="en-US" level="3" l10n="U" oldref="15">Creating Your Own Scenarios</paragraph>
+<paragraph role="paragraph" id="par_id3154704" xml-lang="en-US" l10n="U" oldref="16">To create a scenario, select all the cells that provide the data for the scenario. </paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154020" xml-lang="en-US" l10n="CHG" oldref="17">Select the cells that contain the values that will change between scenarios. To select multiple cells, hold down the <item type="keycode"><switchinline select="sys"><caseinline select="MAC">Command </caseinline><defaultinline>Ctrl </defaultinline></switchinline></item>key as you click each cell.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150364" xml-lang="en-US" l10n="U" oldref="18">Choose <emph>Tools - Scenarios</emph>. The <emph>Create Scenario</emph> dialog appears.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3166426" xml-lang="en-US" l10n="U" oldref="19">Enter a name for the new scenario and leave the other fields unchanged with their default values. Close the dialog with OK. Your new scenario is automatically activated.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3149664" xml-lang="en-US" level="3" l10n="CHG" oldref="3">Using Scenarios</paragraph><comment>removed "commercial" switched contents</comment><paragraph role="paragraph" id="par_id3153415" xml-lang="en-US" l10n="CHG" oldref="11">Scenarios can be selected in the Navigator:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150752" xml-lang="en-US" l10n="CHG" oldref="12">Open the Navigator with the <emph>Navigator</emph> icon 
+<image id="img_id1593676" src="res/commandimagelist/sc_navigator.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id1593676" xml-lang="en-US">Navigator icon</alt>
+	</image> on the Standard bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155764" xml-lang="en-US" l10n="CHG" oldref="13">Click the <emph>Scenarios</emph> icon 
+<image id="img_id7617114" src="sc/res/imglst/navipi/na07.png" width="0.222inch" height="0.222inch"><alt id="alt_id7617114" xml-lang="en-US">Scenarios icon</alt>
+	</image> in the Navigator.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3154256" xml-lang="en-US" l10n="U" oldref="14">In the Navigator, you see the defined scenarios with the comments that were entered when the scenarios were created.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id1243629" xml-lang="en-US" l10n="NEW">Double-click a scenario name in the Navigator to apply that scenario to the current sheet.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id9044770" xml-lang="en-US" l10n="NEW">To delete a scenario, right-click the name in the Navigator and choose <emph>Delete</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3674123" xml-lang="en-US" l10n="NEW">To edit a scenario, right-click the name in the Navigator and choose <emph>Properties</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3424481" xml-lang="en-US" l10n="NEW">To hide the border of a set of cells that are part of a scenario, open the <emph>Properties</emph> dialog for each scenario that affects the cells and clear the Display border checkbox. Hiding the border also removes the listbox on the sheet where you can choose the scenarios.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3154368" xml-lang="en-US" l10n="U" oldref="22">If you want to know which values in the scenario affect other values, choose <emph>Tools - Detective - Trace Dependents</emph>. You see arrows to the cells that are directly dependent on the current cell.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3154484" xml-lang="en-US" l10n="U" oldref="29"><link href="text/scalc/01/06050000.xhp" name="Creating Scenarios">Creating Scenarios</link></paragraph>
+<embed href="text/scalc/guide/multioperation.xhp#multioperation"/>
+</section>
+</body>
+</helpdocument>

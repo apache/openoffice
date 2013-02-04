@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03101700xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">DefObj Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03101700.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T11:26:40">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="defobj">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149811"><bookmark_value>DefObj statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149811" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03101700.xhp" name="DefObj Statement [Runtime]">DefObj Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="2">Sets the default variable type, according to a letter range, if no type-declaration character or keyword is specified.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3150504" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3147530" xml-lang="en-US" l10n="U" oldref="4">Defxxx Characterrange1[, Characterrange2[,...]]</paragraph>
+<paragraph role="heading" id="hd_id3153896" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Characterrange:</emph> Letters that specify the range of variables that you want to set the default data type for.</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="7">
+<emph>xxx:</emph> Keyword that defines the default variable type:</paragraph>
+<paragraph role="paragraph" id="par_id3148798" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Keyword: </emph>Default variable type</paragraph>
+<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="U" oldref="9">
+<emph>DefObj:</emph> Object</paragraph>
+<paragraph role="heading" id="hd_id3156212" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U" oldref="12">REM Prefix definitions for variable types:</paragraph>
+<paragraph role="paragraph" id="par_id3156424" xml-lang="en-US" l10n="U" oldref="13">DefBool b</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="14">DefDate t</paragraph>
+<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U" oldref="15">DefDbL d</paragraph>
+<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U" oldref="16">DefInt i</paragraph>
+<paragraph role="paragraph" id="par_id3145365" xml-lang="en-US" l10n="U" oldref="17">DefLng l</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="18">DefObj o</paragraph>
+<paragraph role="paragraph" id="par_id3152886" xml-lang="en-US" l10n="U" oldref="19">DefVar v</paragraph>
+</body>
+</helpdocument>

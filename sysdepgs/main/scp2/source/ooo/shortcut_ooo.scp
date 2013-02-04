@@ -1,0 +1,140 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+#ifdef UNX
+#ifndef SYSTEM_ICU
+
+Shortcut gid_Shortcut_Lib_Icudata
+    FileID = gid_File_Lib_Icudata;
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = STRING(CONCAT5(libicudata,UNXSUFFIX,.,ICU_MAJOR,ICU_MINOR));
+    Styles = (NETWORK,RELATIVE,FORCE_INTO_UPDATE_PACKAGE);
+End
+
+Shortcut gid_Shortcut_Lib_Icui18n
+    FileID = gid_File_Lib_Icui18n;
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = STRING(CONCAT5(libicui18n,UNXSUFFIX,.,ICU_MAJOR,ICU_MINOR));
+    Styles = (NETWORK,RELATIVE,FORCE_INTO_UPDATE_PACKAGE);
+End
+
+Shortcut gid_Shortcut_Lib_Icule
+    FileID = gid_File_Lib_Icule;
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = STRING(CONCAT5(libicule,UNXSUFFIX,.,ICU_MAJOR,ICU_MINOR));
+    Styles = (NETWORK,RELATIVE,FORCE_INTO_UPDATE_PACKAGE);
+End
+
+Shortcut gid_Shortcut_Lib_Icuuc
+    FileID = gid_File_Lib_Icuuc;
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = STRING(CONCAT5(libicuuc,UNXSUFFIX,.,ICU_MAJOR,ICU_MINOR));
+    Styles = (NETWORK,RELATIVE,FORCE_INTO_UPDATE_PACKAGE);
+End
+
+#endif
+
+Shortcut gid_Shortcut_Lib_Graphite_0
+    FileID = gid_File_Lib_Graphite;
+    Dir = gid_Dir_Program;
+    Name = STRING(CONCAT2(libgraphite,UNXSUFFIX));
+    Styles = (NETWORK,RELATIVE);
+End
+
+Shortcut gid_Shortcut_Lib_Graphite_1
+    FileID = gid_File_Lib_Graphite;
+    Dir = gid_Dir_Program;
+    Name = STRING(CONCAT4(libgraphite,UNXSUFFIX,.,3));
+    Styles = (NETWORK,RELATIVE);
+End
+
+Shortcut gid_Shortcut_Lib_Graphite_2
+    FileID = gid_File_Lib_Graphite;
+    Dir = gid_Dir_Program;
+    Name = STRING(CONCAT4(libgraphite,UNXSUFFIX,.,3.0));
+    Styles = (NETWORK,RELATIVE);
+End
+
+#endif
+
+#ifdef MACOSX
+
+Shortcut gid_Shortcut_Lib_Hsqldb_2
+    FileID = gid_File_Lib_Hsqldb_2;
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = "libhsqldb.jnilib";
+    Styles = (NETWORK, RELATIVE);
+End
+
+#endif
+
+#ifdef UNX
+
+// Create links to the fully quantified libraries apr, apr-util, and serf.
+// The major version number is handled in a non-standard way (part of the name).
+// Therefore the hard-coded .0 suffix.
+
+#ifdef APR_MAJOR 
+Shortcut gid_Shortcut_Lib_Apr
+    FileID = gid_File_Lib_Apr;
+    Dir = SCP2_OOO_BIN_DIR;
+    #ifdef MACOSX
+        Name = STRING(CONCAT2(libapr-1.0,UNXSUFFIX));
+    #else
+        Name = STRING(CONCAT3(libapr-1,UNXSUFFIX,.0));
+    #endif
+    Styles = (NETWORK,RELATIVE,FORCE_INTO_UPDATE_PACKAGE);
+End
+#endif
+
+#ifdef APR_UTIL_MAJOR
+Shortcut gid_Shortcut_Lib_AprUtil
+    FileID = gid_File_Lib_AprUtil;
+    Dir = SCP2_OOO_BIN_DIR;
+    #ifdef MACOSX
+        Name = STRING(CONCAT2(libaprutil-1.0,UNXSUFFIX));
+    #else
+        Name = STRING(CONCAT3(libaprutil-1,UNXSUFFIX,.0));
+    #endif
+    Styles = (NETWORK,RELATIVE,FORCE_INTO_UPDATE_PACKAGE);
+End
+#endif
+
+#ifdef SERF_MAJOR
+Shortcut gid_Shortcut_Lib_Serf
+    FileID = gid_File_Lib_Serf;
+    Dir = SCP2_OOO_BIN_DIR;
+    #ifdef MACOSX
+        Name = STRING(CONCAT2(libserf-1.0,UNXSUFFIX));
+    #else
+        Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.0));
+    #endif
+    Styles = (NETWORK,RELATIVE,FORCE_INTO_UPDATE_PACKAGE);
+End
+#endif
+
+#endif
+
+//i44154 -end-

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared0106130000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Macro</title>
+<filename>/text/sbasic/shared/01/06130000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-01-31T13:05:01">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145786"><bookmark_value>macros; Basic IDE</bookmark_value>
+<bookmark_value>Basic IDE; macros</bookmark_value>
+</bookmark><comment>UFI: removed all help ids</comment><comment>ufi: this file needs more work, see i62546</comment>
+<paragraph role="heading" id="hd_id3145786" xml-lang="en-US" level="1" l10n="U" oldref="1">Macro</paragraph>
+<paragraph role="paragraph" id="par_id3152886" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="makro"><ahelp hid=".">Opens the <emph>Macro </emph>dialog, where you can create, edit, organize, and run $[officename] Basic macros.</ahelp>
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3154145" xml-lang="en-US" level="2" l10n="U" oldref="3">Macro name</paragraph>
+<paragraph role="paragraph" id="par_id3151116" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="BASCTL_EDIT_RID_MACROCHOOSER_RID_ED_MACRONAME">Displays the name of the selected macro. To create or to change the name of a macro, enter a name here.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153729" xml-lang="en-US" level="2" l10n="U" oldref="7">Macro from / Save macro in</paragraph>
+<paragraph role="paragraph" id="par_id3153190" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_BASICIDE_LIBS">Lists the libraries and the modules where you can open or save your macros. To save a macro with a particular document, open the document, and then open this dialog.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3146975" xml-lang="en-US" level="2" l10n="U" oldref="11">Run / Save</paragraph>
+<paragraph role="paragraph" id="par_id3154791" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_RUN">Runs or saves the current macro.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153158" xml-lang="en-US" level="2" l10n="U" oldref="15">Assign</paragraph>
+<paragraph role="paragraph" id="par_id3149961" xml-lang="en-US" l10n="CHG" oldref="16"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ASSIGN">Opens the Customize dialog, where you can assign the selected macro to a menu command, a toolbar, or an event.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145799" xml-lang="en-US" level="2" l10n="U" oldref="17">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3147127" xml-lang="en-US" l10n="CHG" oldref="18"><ahelp hid=".">Starts the $[officename] Basic editor and opens the selected macro for editing.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149400" xml-lang="en-US" level="2" l10n="U" oldref="19">New/Delete</paragraph>
+<paragraph role="paragraph" id="par_id3155602" xml-lang="en-US" l10n="CHG" oldref="61"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_DEL">Creates a new macro, or deletes the selected macro.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149124" xml-lang="en-US" l10n="CHG" oldref="20">To create a new macro, select the "Standard" module in the <emph>Macro from</emph> list, and then click <emph>New</emph>. </paragraph>
+<paragraph role="paragraph" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="21">To delete a macro, select it, and then click <emph>Delete</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3153764" xml-lang="en-US" level="2" l10n="U" oldref="22">Organizer</paragraph>
+<paragraph role="paragraph" id="par_id3148405" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ORG">Opens the <emph>Macro Organizer</emph> dialog, where you can add, edit, or delete existing macro modules, dialogs, and libraries.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3166447" xml-lang="en-US" level="3" l10n="U" oldref="29">Module/Dialog</paragraph>
+<paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="CHG" oldref="30"><ahelp hid="HID_BASICIDE_MODULES_TREE">Lists the existing macros and dialogs.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149922" xml-lang="en-US" l10n="CHG" oldref="31">You can drag-and-drop a module or a dialog between libraries.</paragraph>
+<paragraph role="paragraph" id="par_id3159333" xml-lang="en-US" l10n="CHG" oldref="33">To copy a dialog or a module, hold down the <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> key while you drag-and-drop.</paragraph>
+<paragraph role="heading" id="hd_id3147131" xml-lang="en-US" level="3" l10n="U" oldref="34">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3149816" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_EDIT">Opens the selected macro or dialog for editing.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151214" xml-lang="en-US" level="3" l10n="CHG" oldref="36">New</paragraph>
+<paragraph role="paragraph" id="par_id3154202" xml-lang="en-US" l10n="CHG" oldref="37"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_NEWMOD">Creates a new module.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153269" xml-lang="en-US" l10n="CHG" oldref="40"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_NEWDLG">Creates a new dialog.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154587" xml-lang="en-US" level="3" l10n="U" oldref="42">Libraries tab page</paragraph>
+<paragraph role="paragraph" id="par_id3153705" xml-lang="en-US" l10n="CHG" oldref="43"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_NEWDLG">Lets you manage the macro libraries.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145259" xml-lang="en-US" level="3" l10n="CHG" oldref="44">Location</paragraph>
+<paragraph role="paragraph" id="par_id3153234" xml-lang="en-US" l10n="CHG" oldref="45"><ahelp hid="BASCTL_LISTBOX_RID_TP_LIBS_RID_LB_BASICS">Select the location containing the macro libraries that you want to organize.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148460" xml-lang="en-US" level="3" l10n="U" oldref="46">Library</paragraph>
+<paragraph role="paragraph" id="par_id3150828" xml-lang="en-US" l10n="CHG" oldref="47"><ahelp hid="HID_BASICIDE_LIBS_TREE">Lists the macro libraries in the chosen location.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145134" xml-lang="en-US" level="3" l10n="U" oldref="48">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3150518" xml-lang="en-US" l10n="U" oldref="49"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_EDIT">Opens the $[officename] Basic editor so that you can modify the selected library.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150371" xml-lang="en-US" level="3" l10n="U" oldref="50">Password</paragraph>
+<paragraph role="paragraph" id="par_id3166430" xml-lang="en-US" l10n="CHG" oldref="51"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_PASSWORD">Assigns or edits the <link href="text/sbasic/shared/01/06130100.xhp" name="password">password</link> for the selected library. "Standard" libraries cannot have a password.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154372" xml-lang="en-US" level="3" l10n="U" oldref="52">New</paragraph>
+<paragraph role="paragraph" id="par_id3145387" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_NEWLIB">Creates a new library.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154259" xml-lang="en-US" level="3" l10n="U" oldref="56">Name</paragraph>
+<paragraph role="paragraph" id="par_id3156169" xml-lang="en-US" l10n="CHG" oldref="57"><ahelp hid="BASCTL_EDIT_RID_DLG_NEWLIB_RID_ED_LIBNAME">Enter a name for the new module, dialog, or library.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151183" xml-lang="en-US" level="3" l10n="U" oldref="54">Append</paragraph>
+<paragraph role="paragraph" id="par_id3155126" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_APPEND">Locate that $[officename] Basic library that you want to add to the current list, and then click Open.</ahelp></paragraph>
+</body>
+</helpdocument>

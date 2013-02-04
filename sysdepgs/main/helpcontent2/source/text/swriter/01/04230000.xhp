@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104230000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Footer</title>
+<filename>/text/swriter/01/04230000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-10-31T14:56:54">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="fusszeile">
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertPageFooter" id="bm_id8849099" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertPageFooter" id="bm_id3155061" localize="false"/>
+<paragraph role="heading" id="hd_id3147403" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/swriter/01/04230000.xhp" name="Footer">Footer</link></paragraph>
+<paragraph role="paragraph" id="par_id3149353" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:InsertPageFooter">Adds or removes a footer from the page style that you select in the submenu. The footer is added to all of the pages that use the same page style.</ahelp> In a new document, only the "Default" page style is listed. Other page styles are added to the list after you apply them in the document.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000404.xhp#fusszeile"/>
+</section>
+<paragraph role="note" id="par_id7026276" xml-lang="en-US" l10n="NEW">The footers are visible only when you view the document in print layout (enable <emph>View - Print Layout</emph>).</paragraph>
+<paragraph role="paragraph" id="par_id3150018" xml-lang="en-US" l10n="U" oldref="3">A check mark is displayed in front of the page styles that have footers.</paragraph>
+<paragraph role="paragraph" id="par_id3150566" xml-lang="en-US" l10n="U" oldref="4">To remove a footer, choose <emph>Insert - Footer</emph>, and then select the page style containing the footer. The footer is removed from all of the pages that use this page style.</paragraph>
+<paragraph role="paragraph" id="par_id3153923" xml-lang="en-US" l10n="U" oldref="5">To add or remove footers from all of the page styles that are in use in the document, choose <emph>Insert - Footer - All</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3151187" xml-lang="en-US" l10n="U" oldref="6">To format a footer, choose <link href="text/shared/01/05040300.xhp" name="Format - Page - Footer"><emph>Format - Page - Footer</emph></link>.</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalc01func_timevaluexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">TIMEVALUE </title>
+         <filename>/text/scalc/01/func_timevalue.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146755"><bookmark_value>TIMEVALUE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZEITWERT" id="bm_id3146767" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146755" role="heading" level="2" l10n="U"
+                 oldref="160"><variable id="timevalue"><link href="text/scalc/01/func_timevalue.xhp">TIMEVALUE</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148502" role="paragraph" l10n="U" oldref="161"><ahelp hid="HID_FUNC_ZEITWERT">TIMEVALUE returns the internal time number from a text enclosed by quotes and which may show a possible time entry format.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150794" role="paragraph" l10n="U" oldref="162">The internal number indicated as a decimal is the result of the date system used under $[officename] to calculate date entries.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id011920090347118" role="paragraph" l10n="NEW">If the text string also includes a year, month, or day, TIMEVALUE only returns the fractional part of the conversion.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150810" role="heading" level="3" l10n="U"
+                 oldref="163">Syntax</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150823" role="code" l10n="U" oldref="164">TIMEVALUE("Text")</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152556" role="paragraph" l10n="U" oldref="165">
+         <emph>Text</emph> is a valid time expression and must be entered in quotation marks.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3146815" role="heading" level="3" l10n="U"
+                 oldref="166">Examples</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146829" role="paragraph" l10n="U" oldref="167">
+         <item type="input">=TIMEVALUE("4PM")</item> returns 0.67. When formatting in time format HH:MM:SS, you then get 16:00:00.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153632" role="paragraph" l10n="U" oldref="168">
+         <item type="input">=TIMEVALUE("24:00")</item> returns 1. If you use the HH:MM:SS time format, the value is 00:00:00.</paragraph>
+   </body>
+</helpdocument>

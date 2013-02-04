@@ -1,0 +1,98 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sheet_XViewSplitable_idl__ 
+#define __com_sun_star_sheet_XViewSplitable_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module sheet {  
+ 
+//============================================================================= 
+ 
+/** enables a <type>SpreadsheetView</type> to split the view.
+
+	@deprecated
+ */
+published interface XViewSplitable: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns <TRUE/> if the view is split
+		into individual panes.
+		
+		<p>Only one of
+		<member>XViewSplitable::getIsWindowSplit()</member> and 
+		<member>XViewFreezable::hasFrozenPanes()</member>
+		can be <TRUE/>.</p>
+	 */
+	boolean getIsWindowSplit(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the horizontal position in pixels where 
+		the view is split.
+	 */
+	long getSplitHorizontal(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the vertical position in pixels where 
+		the view is split.
+	 */
+	long getSplitVertical(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the column before which the view is split.
+	 */
+	long getSplitColumn(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the row before which the view is split.
+	 */
+	long getSplitRow(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** splits the view at the specified position.
+		
+		<p>To split only horizontally, specify <var>nPixelY</var> as 0.
+		To split only vertically, specify <var>nPixelX</var> as 0.</p>
+	 */
+	void splitAtPosition( [in] long nPixelX, 
+			 [in] long nPixelY ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif
+

@@ -1,0 +1,137 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include "precompiled_reportdesign.hxx"
+#include "xmlFunction.hxx"
+#include "xmlfilter.hxx"
+#include <xmloff/xmltoken.hxx>
+#include <xmloff/xmlnmspe.hxx>
+#include <xmloff/nmspmap.hxx>
+#include "xmlHelper.hxx"
+#include "xmlEnums.hxx"
+#include "xmlstrings.hrc"
+#include <tools/debug.hxx>
+
+namespace rptxml
+{
+	using namespace ::com::sun::star;
+	using namespace ::com::sun::star::uno;
+	using namespace ::com::sun::star::report;
+	using namespace ::com::sun::star::xml::sax;
+
+DBG_NAME( rpt_OXMLFunction )
+
+OXMLFunction::OXMLFunction( ORptFilter& _rImport
+				,sal_uInt16 nPrfx
+				,const ::rtl::OUString& _sLocalName
+				,const Reference< XAttributeList > & _xAttrList 
+                ,const Reference< XFunctionsSupplier >&	_xFunctions
+                ,bool _bAddToReport
+				) :
+	SvXMLImportContext( _rImport, nPrfx, _sLocalName )
+    ,m_xFunctions(_xFunctions->getFunctions())
+    ,m_bAddToReport(_bAddToReport)
+{
+    DBG_CTOR( rpt_OXMLFunction,NULL);
+
+	OSL_ENSURE(m_xFunctions.is(),"Functions is NULL!");
+    m_xFunction = m_xFunctions->createFunction();
+	
+	OSL_ENSURE(_xAttrList.is(),"Attribute list is NULL!");
+
+	const SvXMLNamespaceMap& rMap = _rImport.GetNamespaceMap();
+	const SvXMLTokenMap& rTokenMap = _rImport.GetFunctionElemTokenMap();
+
+	const sal_Int16 nLength = (_xAttrList.is()) ? _xAttrList->getLength() : 0;
+	static const ::rtl::OUString s_sTRUE = ::xmloff::token::GetXMLToken(XML_TRUE);
+	for(sal_Int16 i = 0; i < nLength; ++i)
+	{
+	 ::rtl::OUString sLocalName;
+		const rtl::OUString sAttrName = _xAttrList->getNameByIndex( i );
+		const sal_uInt16 nPrefix = rMap.GetKeyByAttrName( sAttrName,&sLocalName );
+		const rtl::OUString sValue = _xAttrList->getValueByIndex( i );
+
+		try
+		{
+			switch( rTokenMap.Get( nPrefix, sLocalName ) )
+			{
+				case XML_TOK_FUNCTION_NAME:
+					m_xFunction->setName(sValue);
+					break;
+				case XML_TOK_FUNCTION_FORMULA: 
+					m_xFunction->setFormula(ORptFilter::convertFormula(sValue));
+					break;
+				case XML_TOK_PRE_EVALUATED:
+					m_xFunction->setPreEvaluated(sValue == s_sTRUE);
+					break;
+                case XML_TOK_INITIAL_FORMULA:
+                    if ( sValue.getLength() )
+					    m_xFunction->setInitialFormula(beans::Optional< ::rtl::OUString>(sal_True,ORptFilter::convertFormula(sValue)));
+					break;
+                case XML_TOK_DEEP_TRAVERSING:
+					m_xFunction->setDeepTraversing(sValue == s_sTRUE);
+					break;
+                default:
+                    break;
+			}
+		}
+		catch(const Exception&)
+		{
+			OSL_ENSURE(0,"Exception catched while putting Function props!");
+		}
+	}
+}
+// -----------------------------------------------------------------------------
+
+OXMLFunction::~OXMLFunction()
+{
+    DBG_DTOR( rpt_OXMLFunction,NULL);
+}
+// -----------------------------------------------------------------------------
+ORptFilter& OXMLFunction::GetOwnImport()
+{
+	return static_cast<ORptFilter&>(GetImport());
+}
+// -----------------------------------------------------------------------------
+void OXMLFunction::EndElement()
+{
+    if ( m_bAddToReport )
+    {
+        GetOwnImport().insertFunction(m_xFunction);
+        m_xFunction.clear();
+    }
+    else
+    {
+	    try
+	    {
+		    m_xFunctions->insertByIndex(m_xFunctions->getCount(),uno::makeAny(m_xFunction));
+            m_xFunction.clear();
+	    }catch(uno::Exception&)
+	    {
+		    OSL_ENSURE(0,"Exception catched!");
+	    }
+    }
+}
+// -----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+} // namespace rptxml
+// -----------------------------------------------------------------------------

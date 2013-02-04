@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidefieldsxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">About Fields</title>
+         <filename>/text/swriter/guide/fields.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145576"><bookmark_value>fields;updating/viewing</bookmark_value>
+      <bookmark_value>updating;fields</bookmark_value>
+      <bookmark_value>Help tips;fields</bookmark_value>
+      <bookmark_value>properties;fields</bookmark_value>
+      <bookmark_value>disabling;field highlighting</bookmark_value>
+      <bookmark_value>changing;field shadings</bookmark_value>
+      <bookmark_value>viewing;fields</bookmark_value>
+</bookmark><comment>mw changed "fields;..."</comment>
+<paragraph xml-lang="en-US" id="hd_id3145576" role="heading" level="1" l10n="U" oldref="3"><variable id="fields"><link href="text/swriter/guide/fields.xhp" name="About Fields">About Fields</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154246" role="paragraph" l10n="U" oldref="4">Fields are used for data that changes in a document, such as the current date or the total number of pages in a document.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154262" role="heading" level="2" l10n="U" oldref="5">Viewing Fields</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150509" role="paragraph" l10n="U" oldref="6">Fields consist of a field name and the field content. To switch the field display between the field name or the field content, choose <link href="text/swriter/01/03090000.xhp" name="View - Fields"><emph>View - Field Names</emph></link>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150536" role="paragraph" l10n="U" oldref="195">To display or hide field highlighting in a document, choose <emph>View - Field Shadings</emph>. To permanently disable this feature, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - Appearance</emph>, and clear the check box in front of <emph>Field shadings</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152885" role="paragraph" l10n="U" oldref="7">To change the color of field shadings, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01012000.xhp" name="$[officename] - Appearance"><item type="menuitem">$[officename] - Appearance</item></link></emph>, locate the <item type="menuitem">Field shadings</item> option, and then select a different color in the <item type="menuitem">Color setting</item> box.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153166" role="heading" level="2" l10n="U" oldref="8">Field Properties</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153180" role="paragraph" l10n="U" oldref="181">Most field types in a document, including database fields, store and display variable values.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155533" role="paragraph" l10n="U" oldref="182">The following field types execute an action when you click the field:</paragraph>
+      <table id="tbl_id3155548">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155582" role="tablehead" l10n="U" oldref="183">Field Type</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147760" role="tablehead" l10n="U" oldref="184">Property</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147789" role="tablecontent" l10n="U" oldref="185">Placeholder</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147812" role="tablecontent" l10n="U" oldref="186">Opens a dialog to insert the object for which the placeholder was set.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147216" role="tablecontent" l10n="U" oldref="187">Insert Reference</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147239" role="tablecontent" l10n="U" oldref="188">Moves the mouse pointer to the reference.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147267" role="tablecontent" l10n="U" oldref="189">Run macro</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147290" role="tablecontent" l10n="U" oldref="190">Runs a macro.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145614" role="tablecontent" l10n="U" oldref="191">Input Field</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145637" role="tablecontent" l10n="U" oldref="192">Opens a dialog to edit the contents of the field.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3151244" role="note" l10n="U" oldref="10">Placeholder, hidden text, insert reference, variable, database, and user-defined fields display a help tip when you rest the mouse pointer over the field in a document. To enable this feature, ensure that the Extended Tips<emph/>option (<item type="menuitem">What's This?</item>) is selected in the <item type="menuitem">Help</item> menu.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155937" role="heading" level="2" l10n="U"
+                 oldref="11">Updating Fields</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155963" role="paragraph" l10n="U" oldref="12">To update all of the fields in a document, press F9, or choose <emph>Edit - Select All</emph>, and then press F9.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155984" role="paragraph" l10n="U" oldref="13">To update a field that was inserted from a database, select the field, and then press F9.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/fields_userdata.xhp#fields_userdata"/>
+      <embed href="text/swriter/guide/fields_enter.xhp#fields_enter"/>
+      <embed href="text/swriter/guide/fields_date.xhp#fields_date"/>
+      <embed href="text/swriter/guide/conditional_text.xhp#conditional_text"/>
+      <embed href="text/swriter/guide/conditional_text2.xhp#conditional_text2"/>
+      <embed href="text/swriter/guide/pagenumbers.xhp#pagenumbers"/>
+   </body>
+</helpdocument>

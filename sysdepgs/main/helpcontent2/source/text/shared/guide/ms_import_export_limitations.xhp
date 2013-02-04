@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<meta>
+      <topic id="textsharedguidems_import_export_limitationsxml" indexer="include">
+         <title xml-lang="en-US" id="tit">About Converting Microsoft Office Documents</title>
+         <filename>/text/shared/guide/ms_import_export_limitations.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149760"><bookmark_value>Microsoft Office;document import restrictions</bookmark_value>
+      <bookmark_value>import restrictions for Microsoft Office</bookmark_value>
+      <bookmark_value>Microsoft Office;importing password protected files</bookmark_value>
+</bookmark><comment>MW moved "Microsoft Office;" from shared/guide/protection.xhp</comment>
+<paragraph role="paragraph" id="par_id3149760" xml-lang="en-US" l10n="E" oldref="32" localize="false"/>
+<paragraph role="heading" id="hd_id3152425" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="about"><link href="text/shared/guide/ms_import_export_limitations.xhp" name="About Converting Microsoft Office Documents">About Converting Microsoft Office Documents</link></variable></paragraph>
+<paragraph role="paragraph" id="par_id3147834" xml-lang="en-US" l10n="U" oldref="2">$[officename] can automatically open Microsoft Office 97/2000/XP documents. However, some layout features and formatting attributes in more complex Microsoft Office documents are handled differently in $[officename] or are unsupported. As a result, converted files require some degree of manual reformatting. The amount of reformatting that can be expected is proportional to the complexity of the structure and formatting of the source document. $[officename] cannot run Visual Basic Scripts, but can load them for you to analyze.</paragraph>
+<paragraph role="note" id="par_id0804200804174819" xml-lang="en-US" l10n="NEW">The most recent versions of %PRODUCTNAME can load, but not save, the Microsoft Office Open XML document formats with the extensions docx, xlsx, and pptx. The same versions can also run some Excel Visual Basic scripts, if you enable this feature at <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - VBA Properties</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3155934" xml-lang="en-US" l10n="U" oldref="3">The following lists provide a general overview of Microsoft Office features that may cause conversion challenges. These will not affect your ability to use or work with the content of the converted document.</paragraph>
+<paragraph role="heading" id="hd_id3155892" xml-lang="en-US" level="2" l10n="U" oldref="6">Microsoft Word</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147088" xml-lang="en-US" l10n="U" oldref="7">AutoShapes</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150774" xml-lang="en-US" l10n="U" oldref="8">Revision marks</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147209" xml-lang="en-US" l10n="U" oldref="9">OLE objects</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154749" xml-lang="en-US" l10n="U" oldref="10">Certain controls and Microsoft Office form fields</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149578" xml-lang="en-US" l10n="U" oldref="11">Indexes</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155342" xml-lang="en-US" l10n="U" oldref="12">Tables, frames, and multi-column formatting</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153541" xml-lang="en-US" l10n="U" oldref="13">Hyperlinks and bookmarks</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154143" xml-lang="en-US" l10n="U" oldref="14">Microsoft WordArt graphics</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156117" xml-lang="en-US" l10n="U" oldref="15">Animated characters/text</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3153524" xml-lang="en-US" level="2" l10n="U" oldref="24">Microsoft PowerPoint</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154365" xml-lang="en-US" l10n="U" oldref="25">AutoShapes</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156424" xml-lang="en-US" l10n="U" oldref="26">Tab, line, and paragraph spacing</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154910" xml-lang="en-US" l10n="U" oldref="27">Master background graphics</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3159151" xml-lang="en-US" l10n="U" oldref="28">Grouped objects</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156282" xml-lang="en-US" l10n="U" oldref="29">Certain multimedia effects</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3150986" xml-lang="en-US" level="2" l10n="U" oldref="16">Microsoft Excel</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3148685" xml-lang="en-US" l10n="U" oldref="17">AutoShapes</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149514" xml-lang="en-US" l10n="U" oldref="18">OLE objects</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148943" xml-lang="en-US" l10n="U" oldref="19">Certain controls and Microsoft Office form fields</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155922" xml-lang="en-US" l10n="U" oldref="20">Pivot tables</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3152361" xml-lang="en-US" l10n="U" oldref="21">New chart types</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156343" xml-lang="en-US" l10n="U" oldref="22">Conditional formatting</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149456" xml-lang="en-US" l10n="CHG" oldref="23">Some functions/formulas (see below)</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id0811200801491971" xml-lang="en-US" l10n="NEW">One example of differences between Calc and Excel is the handling of boolean values. Enter TRUE to cells A1 and A2. </paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id0811200801491973" xml-lang="en-US" l10n="NEW">In Calc, the formula =A1+A2 returns the value 2, and the formula =SUM(A1;A2) returns 2. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id0811200801491972" xml-lang="en-US" l10n="NEW">In Excel, the formula =A1+A2 returns 2, but the formula =SUM(A1,A2) returns 0.<comment>in SUM(A1&lt;limiter&gt;A2), use the Excel limiter comma , in English and semicolon ; in German</comment></paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3150439" xml-lang="en-US" l10n="CHG" oldref="30">For a detailed overview about converting documents to and from Microsoft Office format, see the <link href="http://wiki.services.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Migration_Guide">Migration Guide</link>.</paragraph>
+<paragraph role="heading" id="par_idN10A9F" xml-lang="en-US" level="2" l10n="NEW">Opening Microsoft Office Documents That Are Protected With a Password</paragraph>
+<paragraph role="paragraph" id="par_id8699606" xml-lang="en-US" l10n="NEW">%PRODUCTNAME can open the following Microsoft Office document types that are protected by a password.</paragraph>
+<table id="tbl_id4497512">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10AB6" xml-lang="en-US" l10n="NEW">Microsoft Office format</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_idN10ABC" xml-lang="en-US" l10n="NEW">Supported encryption method</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AC3" xml-lang="en-US" l10n="NEW">Word 6.0, Word 95</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AC9" xml-lang="en-US" l10n="NEW">Weak XOR encryption</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AD0" xml-lang="en-US" l10n="NEW">Word 97, Word 2000, Word XP, Word 2003</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AD6" xml-lang="en-US" l10n="NEW">Office 97/2000 compatible encryption</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10ADD" xml-lang="en-US" l10n="NEW">Word XP, Word 2003</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AE3" xml-lang="en-US" l10n="NEW">Weak XOR encryption from older Word versions</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AEA" xml-lang="en-US" l10n="NEW">Excel 2.1, Excel 3.0, Excel 4.0, Excel 5.0, Excel 95</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AF0" xml-lang="en-US" l10n="NEW">Weak XOR encryption</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AF7" xml-lang="en-US" l10n="NEW">Excel 97, Excel 2000, Excel XP, Excel 2003</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10AFD" xml-lang="en-US" l10n="NEW">Office 97/2000 compatible encryption</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10B04" xml-lang="en-US" l10n="NEW">Excel XP, Excel 2003</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_idN10B0A" xml-lang="en-US" l10n="NEW">Weak XOR encryption from older Excel versions</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<paragraph xml-lang="en-US" id="par_idN10B0D" role="paragraph" l10n="NEW">Starting from OpenOffice.org 3.2 or StarOffice 9.2, Microsoft Office files that are encrypted by AES128 can be opened. Other encryption methods are not supported.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/ms_user.xhp#ms_user"/>
+         <embed href="text/shared/guide/ms_doctypes.xhp#ms_doctypes"/>
+         <paragraph xml-lang="en-US" id="par_id3147318" role="paragraph" l10n="U" oldref="33"><link href="text/shared/optionen/01010200.xhp" name="Setting the default file format">Setting the default file format</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

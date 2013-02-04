@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0206010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Sheet Area</title>
+<filename>/text/scalc/02/06010000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-07-05T10:26:22">UFI: fixed #i28238# and "sc-features Create named ranges by typing into the name box"
+dedr: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="tabellenbereich">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156326"><bookmark_value>formula bar; sheet area names</bookmark_value>
+<bookmark_value>sheet area names</bookmark_value>
+<bookmark_value>showing; cell references</bookmark_value>
+<bookmark_value>cell references; showing</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_INSWIN_POS" id="bm_id3153087" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FocusCellAddress" id="bm_id2941984" localize="false"/>
+<paragraph role="heading" id="hd_id3156326" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/scalc/02/06010000.xhp" name="Name Box">Name Box</link></paragraph>
+<paragraph role="paragraph" id="par_id3149656" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid="HID_INSWIN_POS">Displays the reference for the current cell, the range of the selected cells, or the name of the area. You can also select a range of cells, and then type a name for that range into the <emph>Name Box</emph>.</ahelp><comment>UFI: fixes #i28238#</comment></paragraph>
+</section>
+<section id="sytabellenbereich">
+<table id="tbl_id3150870">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3163710" xml-lang="en-US" l10n="E">
+<image id="img_id3152576" src="res/helpimg/calcein.png" width="1.2398inch" height="0.2398inch" localize="true"><alt id="alt_id3152576" xml-lang="en-US">Combo box sheet area</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151118" xml-lang="en-US" l10n="CHG" oldref="4">Name Box</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<paragraph role="paragraph" id="par_id3152596" xml-lang="en-US" l10n="U" oldref="6">To jump to a particular cell, or to select a cell range, type the cell reference, or cell range reference in this box, for example, F1, or A1:C4.</paragraph>
+</body>
+</helpdocument>

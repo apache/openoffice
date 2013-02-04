@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0201170900xml" indexer="include">
+<title id="tit" xml-lang="en-US">Combo Box/List Box Wizard</title>
+<filename>/text/shared/02/01170900.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159233"><bookmark_value>forms; Combo Box/List Box Wizard</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154094" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170900.xhp" name="Combo Box/List Box Wizard">Combo Box/List Box Wizard</link></paragraph>
+<paragraph role="paragraph" id="par_id3152363" xml-lang="en-US" l10n="U" oldref="2">If you insert a combo box or a list box in a document, a wizard starts automatically. This wizard allows you to interactively specify which information is shown.</paragraph>
+<section id="howtoget">
+<embed href="text/shared/00/00040501.xhp#aupikomli"/>
+</section>
+<paragraph role="note" id="par_id3145211" xml-lang="en-US" l10n="CHG" oldref="21">You can use the <link href="text/shared/02/01171100.xhp" name="Wizards On/Off"><emph>Wizards On/Off</emph></link> icon to keep the wizard from starting automatically.</paragraph>
+<paragraph role="paragraph" id="par_id3155391" xml-lang="en-US" l10n="U" oldref="22">The wizards for combo boxes and list boxes differ from each other in their final step. This is because the nature of control fields:</paragraph>
+<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="23">
+<emph>List Boxes</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3166410" xml-lang="en-US" l10n="U" oldref="24">In the case of a list box, the user selects one entry from a list of entries. These entries are saved in a database table and cannot be modified through the list box.</paragraph>
+<paragraph role="paragraph" id="par_id3166460" xml-lang="en-US" l10n="U" oldref="25">As a general rule, the database table that contains the visible list entries in the form is not the table on which the form is based. The list boxes in a form work by using references; that is, references to the visible list entries are located in the form table (values table) and are also entered as such in the values table if the user selects an entry from the list and saves it. Through reference values, list boxes can display data from a table linked to the current form table. Thus the <emph>List Box Wizard</emph> allows two tables of a database to be linked, so that the control field can display a detailed list of a database field that is located in a different table from the one to which the form refers.</paragraph>
+<paragraph role="paragraph" id="par_id3145673" xml-lang="en-US" l10n="U" oldref="31">In the other tables the required field is searched for by using the field names (ControlSource) and then the fields will be completed accordingly. If the field name is not found, the list will remain empty. When list fields contain linked columns, the first column of the other table will be used without a query being shown first.</paragraph>
+<paragraph role="paragraph" id="par_id3154860" xml-lang="en-US" l10n="U" oldref="26">If an article table contains, for example, the number of a supplier, the list box can use the "Supplier number" link to display the name of the supplier from the supplier table. On the <emph>Field links</emph> page the Wizard will ask you about all the settings required for this link.</paragraph>
+<paragraph role="paragraph" id="par_id3150977" xml-lang="en-US" l10n="U" oldref="27">
+<emph>Combo Boxes</emph>
+</paragraph>
+<paragraph role="paragraph" id="par_id3158430" xml-lang="en-US" l10n="U" oldref="28">In the case of combo boxes, users can select one entry from the list entries or enter text themselves. The entries, which are offered as a list from which users can select, may originate from any database table. The entries that users select or enter so that they can be saved can be saved either in the form only, or in a database. If they are saved in a database, they will be written to the database table on which the form is based.</paragraph>
+<paragraph role="paragraph" id="par_id3154046" xml-lang="en-US" l10n="U" oldref="29">Combo boxes can display the data of any table. A direct link between the current form table and the table whose values are to be displayed in the combo box (list table) is not required. Combo boxes do not work with references. If the user enters or selects a value and saves it, the value actually displayed will be entered in the form table. As there is no link between the form table and the list table, the <emph>Field Link</emph> table does not appear here.</paragraph>
+<paragraph role="paragraph" id="par_id3146949" xml-lang="en-US" l10n="U" oldref="30">In the case of a list box, you select entries from the list, and these are saved in the list table. In the case of a combo box, you can add additional text that can be written to the current database table of the form (values table) and stored there as desired. For this function, the <emph>Combo Box Wizard</emph> has the <emph>Data Processing</emph> page as the last page, whereas in the case of list boxes this page does not exist. Here you can enter whether and where text that has been entered is to be saved in the values table.</paragraph>
+<embed href="text/shared/02/01170801.xhp#seite1"/>
+<embed href="text/shared/02/01170901.xhp#seite1"/>
+<embed href="text/shared/02/01170902.xhp#seite2"/>
+<embed href="text/shared/02/01170903.xhp#seite3a"/>
+<embed href="text/shared/02/01170904.xhp#seite3b"/>
+<embed href="text/shared/00/00000001.xhp#abbrechen"/>
+<embed href="text/shared/00/00000001.xhp#zurueckautopi"/>
+<embed href="text/shared/00/00000001.xhp#weiterautopi"/>
+</body>
+</helpdocument>

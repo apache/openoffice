@@ -1,0 +1,95 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_linguistic2_XThesaurus_idl__
+#define __com_sun_star_linguistic2_XThesaurus_idl__
+
+#ifndef __com_sun_star_linguistic2_XSupportedLocales_idl__
+#include <com/sun/star/linguistic2/XSupportedLocales.idl>
+#endif
+
+#ifndef __com_sun_star_linguistic2_XMeaning_idl__
+#include <com/sun/star/linguistic2/XMeaning.idl>
+#endif
+
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+#ifndef __com_sun_star_beans_PropertyValues_idl__
+#include <com/sun/star/beans/PropertyValues.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module linguistic2 {
+
+//=============================================================================
+/** allows for the retrieval of possible meanings for a given word and language.
+
+	<P>
+ 	The meaning of a word is in essence a descriptive text for that word.
+ 	Each meaning may have several synonyms where a synonym is a word
+ 	(or small text) with the same or similar meaning.
+	</P>
+
+    @see    <type scope="com::sun::star::linguistic2">XSupportedLocales</type>
+*/
+published interface XThesaurus : com::sun::star::linguistic2::XSupportedLocales
+{
+	//-------------------------------------------------------------------------
+	/**
+		@returns
+			a list of meanings for the given word and language.
+
+	 	@param	aTerm
+	 		the word to query for its meanings.
+
+		@param	aLocale
+			specifies the language of the word.
+
+			<P>If the language is not supported, an
+			<type scope="com::sun::star::lang">IllegalArgumentException</type>
+			exception is raised.</P>
+
+		@param aProperties
+			provides property values to be used for this function call only.
+			It is usually empty in order to use the default values supplied with
+			the property set.
+
+        @see    <type scope="com::sun::star::lang">Locale</type>
+        @see    <type scope="com::sun::star::linguistic2">XMeaning</type>
+	*/
+	sequence< com::sun::star::linguistic2::XMeaning > queryMeanings(
+			[in] string aTerm,
+		 	[in] com::sun::star::lang::Locale aLocale,
+			[in] com::sun::star::beans::PropertyValues aProperties )
+		raises( com::sun::star::lang::IllegalArgumentException );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

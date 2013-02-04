@@ -1,0 +1,96 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XFileIdentifierConverter_idl__
+#define __com_sun_star_ucb_XFileIdentifierConverter_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** specifies methods to convert between (file) URLs and file paths in system
+	dependent notation.
+
+    @version	1.0
+    @author   	Andreas Bille
+*/
+published interface XFileIdentifierConverter : com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/** Get information about the 'locality' of a file content provider.
+
+		<p>The returned information can be used to chose the 'best' among a
+		number of file content providers implementing this interface.
+
+		@param BaseURL
+		the base (file) URL used to specify a file content provider.
+
+		@returns
+		an appropriat value representing the 'locality' of the specified file
+		content provider.   Generally, higher (non-negative) numbers denote
+		file content providers that are more 'local', and negative numbers
+		denote content providers that are not file content providers at all.
+		As a convention (and to keep this useful), values should be restricted
+		to the range from -1 to +10, inclusive.
+	 */
+	long getFileProviderLocality( [in] string BaseURL );
+
+	//-------------------------------------------------------------------------
+	/** converts a file path in system dependent notation to a (file) URL.
+
+		@param BaseURL
+		the base (file) URL relative to which the file path shall be
+		interpreted.
+
+		@param SystemPath
+		a file path in system dependent notation.
+
+		@returns
+		the URL corresponding to the file path, or an empty string if the file
+		path cannot be converted into a URL.
+	*/
+	string getFileURLFromSystemPath( [in] string BaseURL,
+									 [in] string SystemPath );
+
+	//-------------------------------------------------------------------------
+	/** converts a (file) URL to a file path in system dependent notation.
+
+		@param URL
+		a (file) URL.
+
+		@returns
+		the file path corresponding to the URL, or an empty string if the URL
+		cannot be converted into a file path.
+	*/
+	string getSystemPathFromFileURL( [in] string URL );
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0218030200xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Time</title>
+<filename>/text/swriter/02/18030200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="zeit">
+  <bookmark branch="index" xml-lang="en-US" id="bm_id3147174"><bookmark_value>time fields;inserting</bookmark_value><bookmark_value>fields;inserting time</bookmark_value></bookmark><bookmark xml-lang="en-US" branch="hid/.uno:InsertTimeField" id="bm_id393753" localize="false"/><!-- HID added by script -->
+<bookmark branch="hid/.uno:InsertTimeField" xml-lang="en-US" id="bm_id3145243"/><paragraph id="hd_id3147174" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/swriter/02/18030200.xhp" name="Time">Time</link></paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3152896" xml-lang="en-US" oldref="2"><ahelp hid=".uno:InsertTimeField" visibility="visible">Inserts the current time as a field.</ahelp> The time is taken directly from the system settings of your operating system. A fixed time format is applied, which cannot be updated by using the F9 function key.</paragraph>
+  </section>
+  <section id="howtoget">
+  <embed href="text/swriter/00/00000404.xhp#feldbefehluhrzeit"/>
+</section>
+  <paragraph xml-lang="en-US" oldref="3" l10n="U" role="paragraph" id="par_id3151177">To assign a different time format, or adapt the actual time data, select <emph>Insert - Fields - Other</emph> and make the desired changes in the <link href="text/swriter/01/04090000.xhp" name="Fields"><emph>Fields</emph></link> dialog. Additionally, you can modify the format of an inserted time field at any time by choosing <link href="text/swriter/01/02140000.xhp" name="Edit - Fields"><emph>Edit - Fields</emph></link>.</paragraph>
+ </body>
+</helpdocument>

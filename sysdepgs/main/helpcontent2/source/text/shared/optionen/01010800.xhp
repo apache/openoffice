@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedoptionen01010800xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">View</title>
+         <filename>/text/shared/optionen/01010800.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="ansicht">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155341"><bookmark_value>views; defaults</bookmark_value>
+         <bookmark_value>defaults; views</bookmark_value>
+         <bookmark_value>settings; views</bookmark_value>
+         <bookmark_value>scaling; font sizes in user interface</bookmark_value>
+         <bookmark_value>font sizes; scaling on screen</bookmark_value>
+         <bookmark_value>WYSIWYG in fonts lists</bookmark_value>
+         <bookmark_value>previews; fonts lists</bookmark_value>
+         <bookmark_value>font lists</bookmark_value>
+         <bookmark_value>font name box</bookmark_value>
+         <bookmark_value>mouse; positioning</bookmark_value>
+         <bookmark_value>clipboard; selection clipboard</bookmark_value>
+         <bookmark_value>selection clipboard</bookmark_value>
+</bookmark><comment>mw corrected a typo in font lists</comment><comment>ufi: removed index entries for 3d view &amp; dithering &amp; optimized output, in cws aw059</comment>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OFA_TP_VIEW" id="bm_id3156330" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155341" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010800.xhp" name="View">View</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155630" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_OFA_TP_VIEW">Specifies view options.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#ansicht"/>
+      </section>
+<!-- removed HID OFFMGR:METRICFIELD:OFA_TP_VIEW:MF_SCALING -->
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:OFA_TP_VIEW:MF_WINDOWSIZE" id="bm_id7275002" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145171" role="heading" level="3" l10n="CHG"
+                 oldref="45">Scaling</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3158407" role="paragraph" l10n="U" oldref="46"><ahelp hid="OFFMGR:METRICFIELD:OFA_TP_VIEW:MF_SCALING">Uses percentile scaling for font size in user interface elements, such as dialogs and icon labels.</ahelp></paragraph><comment>UFI: see OOo only feature "Icon theme switching"</comment>
+<paragraph xml-lang="en-US" id="par_id3159154" role="note" l10n="CHG" oldref="67">The <emph>Scaling</emph> setting does not affect the font size of text in a document.</paragraph>
+<!-- removed HID OFFMGR_LISTBOX_OFA_TP_VIEW_LB_BIG -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_VIEW:LB_ICONSIZE" id="bm_id6505935" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_LISTBOX_OFA_TP_VIEW_LB_ICONSIZE" id="bm_id0525200903212046" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149123" role="heading" level="3" l10n="CHG"
+                 oldref="112">Icon size and style</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153947" role="paragraph" l10n="U" oldref="113"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_VIEW_LB_BIG">Specifies the display size of toolbar icons.</ahelp><switchinline select="sys"><caseinline select="WIN">The <emph>Automatic</emph> option uses the font size settings of your operating system for menus.
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_VIEW:LB_ICONSTYLE" id="bm_id5482039" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_LISTBOX_OFA_TP_VIEW_LB_ICONSTYLE" id="bm_id0525200903230259" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id4664754" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select the icon style for icons in toolbars and dialogs.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_VIEW:CB_SYSTEM_FONT" id="bm_id8840601" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_CHECKBOX_OFA_TP_VIEW_CB_SYSTEM_FONT" id="bm_id0525200903233636" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10738" role="heading" level="3" l10n="NEW">Use system font for user interface</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1073C" role="paragraph" l10n="CHG"><ahelp hid="svx_CheckBox_OFA_TP_VIEW_CB_SYSTEM_FONT">Specifies to use the system font to display all menus and dialogs. Else another installed font is used.</ahelp></paragraph>
+<switch select="sys">
+<case select="UNIX">
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_VIEW:CB_FONTANTIALIASING" id="bm_id1062654" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3400982" role="heading" level="3" l10n="NEW">Screen font antialiasing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6649372" role="paragraph" l10n="NEW"><ahelp hid=".">Select to smooth the screen appearance of text.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:OFA_TP_VIEW:NF_AA_POINTLIMIT" id="bm_id9525742" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id4743797" role="paragraph" l10n="NEW"><ahelp hid=".">Enter the smallest font size to apply antialiasing.</ahelp></paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="par_idN107A3" role="heading" level="2" l10n="NEW">Menu</paragraph>
+<!-- removed HID OFFMGR_CHECKBOX_OFA_TP_VIEW_CB_MENU_ICONS -->
+<!-- removed HID svx_CheckBox_OFA_TP_VIEW_CB_MENU_ICONS -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_VIEW:LB_MENU_ICONS" id="bm_id052520090333263" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156056" role="heading" level="3" l10n="CHG"
+                 oldref="91">Icons in menus</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155766" role="paragraph" l10n="CHG" oldref="92"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_VIEW_CB_MENU_ICONS">Displays icons next to the corresponding menu items. Select from "Automatic", "Hide" and "Show". "Automatic" displays icons according to system settings and themes.</ahelp></paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:OFA_TP_VIEW:CB_FONT_SHOW -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_VIEW:CB_FONT_SHOW" id="bm_id7441328" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149262" role="heading" level="3" l10n="CHG"
+                 oldref="63">Show preview of fonts</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155415" role="paragraph" l10n="CHG" oldref="64"><ahelp hid="OFFMGR:CHECKBOX:OFA_TP_VIEW:CB_FONT_SHOW">Displays the names of selectable fonts in the corresponding font, for example, fonts in the Font box on the <emph>Formatting</emph> bar.</ahelp></paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:OFA_TP_VIEW:CB_FONT_HISTORY -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_VIEW:CB_FONT_HISTORY" id="bm_id9274880" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151319" role="heading" level="3" l10n="CHG"
+                 oldref="68">Show font history</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153513" role="paragraph" l10n="CHG" oldref="69"><ahelp hid="OFFMGR:CHECKBOX:OFA_TP_VIEW:CB_FONT_HISTORY">Lists the last five fonts that you used in the current document at the top of the list in the <emph>Font Name</emph> box on the <emph>Formatting</emph> bar.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:RestoreEditingView" id="bm_id555742" localize="false"/><comment>UFI: i53104. This is still in Customize dialog</comment>
+<paragraph xml-lang="en-US" id="par_idN10962" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether to restore the last used document view. Many view properties valid when the document was last saved will be restored.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_idN10AC8" role="heading" level="2" l10n="NEW">Graphics output</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:RefreshView" id="bm_id6835216" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:RefreshView" id="bm_id9305703" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10A1D" role="tip" l10n="NEW"><ahelp hid="20201">Press Shift+Ctrl+R to restore or refresh the view of the current document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_VIEW:CB_USE_HARDACCELL" id="bm_id4084902" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10AD4" role="heading" level="3" l10n="NEW">Use hardware acceleration</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10AD8" role="paragraph" l10n="NEW"><ahelp hid=".">Directly accesses hardware features of the graphical display adapter to improve the screen display.</ahelp> The support for hardware acceleration is not available for all operating systems and platform distributions of %PRODUCTNAME.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:CheckBox:OFA_TP_VIEW:CB_USE_ANTIALIASE" id="bm_id1019200910503048" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id1208200812004470" role="heading" level="3" l10n="NEW">Use Anti-Aliasing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1208200812004444" role="paragraph" l10n="NEW"><ahelp hid=".">When supported, you can enable and disable anti-aliasing of graphics. With anti-aliasing enabled, the display of most graphical objects looks smoother and with less artifacts.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id101920091058114" role="heading" level="2" l10n="NEW">Selection</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:CheckBox:OFA_TP_VIEW:CB_SELECTION" id="bm_id1019200910494637" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id1019200910581166" role="heading" level="3" l10n="NEW">Transparency</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1019200910581186" role="paragraph" l10n="NEW"><ahelp hid=".">If enabled, the text selection in Writer and the cell selection in Calc will be shown using a transparent color. If not enabled, the selection will be shown by inverted colors.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:MetricField:OFA_TP_VIEW:MF_SELECTION" id="bm_id101920091057065" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id1019200910581266" role="heading" level="3" l10n="NEW">Transparency level</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1019200910581220" role="paragraph" l10n="NEW"><ahelp hid=".">Select the transparency level for transparent selections. The default value is 75%. You can select values from 10% to 90%.</ahelp></paragraph>
+<!-- removed HID OFFMGR:LISTBOX:OFA_TP_VIEW:LB_MOUSEPOS -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_VIEW:LB_MOUSEPOS" id="bm_id6703085" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3166432" role="heading" level="2" l10n="U"
+                 oldref="47">Mouse positioning</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155530" role="paragraph" l10n="U" oldref="48"><ahelp hid="OFFMGR:LISTBOX:OFA_TP_VIEW:LB_MOUSEPOS">Specifies if and how the mouse pointer will be positioned in newly opened dialogs.</ahelp></paragraph>
+<!-- removed HID OFFMGR_LISTBOX_OFA_TP_VIEW_LB_MOUSEMIDDLE -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:OFA_TP_VIEW:LB_MOUSEMIDDLE" id="bm_id5366069" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146982" role="heading" level="2" l10n="U"
+                 oldref="93">Middle mouse button</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150521" role="paragraph" l10n="U" oldref="94"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_VIEW_LB_MOUSEMIDDLE">Defines the function of the middle mouse button.</ahelp></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152889" role="listitem" l10n="U" oldref="97">
+               <emph>Automatic scrolling</emph> - dragging while pressing the middle mouse button shifts the view.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155810" role="listitem" l10n="U" oldref="98">
+               <emph>Paste clipboard</emph> - pressing the middle mouse button inserts the contents of the "Selection clipboard" at the cursor position. </paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3148703" role="paragraph" l10n="U" oldref="99">The "Selection clipboard" is independent of the normal clipboard that you use by <emph>Edit - Copy/Cut /Insert</emph> or the respective keyboard shortcuts. Clipboard and "Selection clipboard" can contain different contents at the same time.</paragraph>
+      <table id="tbl_id3156197">
+         <tablerow>
+            <tablecell>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148870" role="tablehead" l10n="U" oldref="100">
+                  <emph>Clipboard</emph>
+               </paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145076" role="tablehead" l10n="U" oldref="101">
+                  <emph>Selection clipboard</emph>
+               </paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156030" role="tablecontent" l10n="U" oldref="102">
+                  <emph>Copy content</emph>
+               </paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150110" role="tablecontent" l10n="U" oldref="103">Edit - Copy Ctrl+C.</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149588" role="tablecontent" l10n="U" oldref="104">Select text, table, object.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149331" role="tablecontent" l10n="U" oldref="105">
+                  <emph>Paste content</emph>
+               </paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156337" role="tablecontent" l10n="U" oldref="106">Edit - Paste Ctrl+V pastes at the cursor position.</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151127" role="tablecontent" l10n="U" oldref="107">Clicking the middle mouse button pastes at the mouse pointer position.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159206" role="tablecontent" l10n="U" oldref="108">
+                  <emph>Pasting into another document</emph>
+               </paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148974" role="tablecontent" l10n="U" oldref="109">No effect on the clipboard contents.</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152870" role="tablecontent" l10n="U" oldref="110">The last marked selection is the content of the selection clipboard.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+   </body>
+</helpdocument>

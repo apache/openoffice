@@ -1,0 +1,77 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+#ifdef WNT
+
+File gid_File_Lib_Xmergesync
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = "xmergesync.dll";
+End
+
+#endif
+
+#ifdef WNT
+
+File gid_File_Lib_Jfregca
+    TXT_FILE_BODY;
+    Styles = (PACKED, BINARYTABLE, BINARYTABLE_ONLY);
+    Dir = SCP2_OOO_BIN_DIR;
+    Name = "jfregca.dll";
+End
+
+#endif
+
+File gid_File_Share_Registry_Palm_Xcd
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Registry;
+    Name = "palm.xcd";
+End
+
+File gid_File_Share_Registry_Pocketexcel_Xcd
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Registry;
+    Name = "pocketexcel.xcd";
+End
+
+File gid_File_Share_Registry_Pocketword_Xcd
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Registry;
+    Name = "pocketword.xcd";
+End
+
+#ifdef SOLAR_JAVA
+
+STD_JAR_FILE( gid_File_Jar_Aportisdoc, aportisdoc )
+STD_JAR_FILE( gid_File_Jar_Pexcel, pexcel )
+STD_JAR_FILE( gid_File_Jar_Pocketword, pocketword )
+STD_JAR_FILE( gid_File_Jar_Xmerge, xmerge )
+STD_JAR_FILE( gid_File_Jar_Xmergebridge, XMergeBridge )
+
+#endif

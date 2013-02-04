@@ -1,0 +1,163 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+ // include ------------------------------------------------------------------
+#include <svx/dialogs.hrc>
+#include "hyprlink.hrc"
+#include "helpid.hrc"
+#include <svx/svxids.hrc>
+
+ // pragma -------------------------------------------------------------------
+
+ // RID_SVXDLG_HYPERLINK ------------------------------------------------------
+ToolBox RID_SVXDLG_HYPERLINK
+{
+	OutputSize = TRUE ;
+	Hide = TRUE;
+
+	//     Dockable = TRUE ;
+	//     Closeable = TRUE ;
+	//     Moveable = TRUE ;
+	//     Sizeable = TRUE ;
+	//     EnableResizing = TRUE ;
+
+	SVLook = TRUE ;
+	Border = TRUE ;
+	Size = MAP_APPFONT ( 410 , 17 ) ;
+	Scroll = TRUE ;
+	HelpID = HID_OFA_HYPERLINK_DLG ;
+
+	Text [ en-US ] = "Insert Hyperlink" ;
+
+	ComboBox CB_NAME
+	{
+		HelpID = HID_OFA_HYPERLINK_NAME ;
+		Pos = MAP_APPFONT ( 2 , 3 ) ;
+		Size = MAP_APPFONT ( 100 , 60 ) ;
+		TabStop = TRUE ;
+		DropDown = TRUE ;
+		AutoSize = TRUE ;
+		AutoHScroll = TRUE ;
+		DDExtraWidth = TRUE ;
+		QuickHelpText [ en-US ] = "URL Name" ;
+	};
+	FixedText FT_URL
+	{
+		HelpID = HID_OFA_HYPERLINK_URL_TXT ;
+		Pos = MAP_APPFONT ( 105 , 5 ) ;
+		Size = MAP_APPFONT ( 16 , 10 ) ;
+		Text [ en-US ] = "URL:" ;
+	};
+	ComboBox CB_URL
+	{
+		HelpID = HID_OFA_HYPERLINK_URL ;
+		Pos = MAP_APPFONT ( 121 , 3 ) ;
+		Size = MAP_APPFONT ( 204 , 60 ) ;
+		TabStop = TRUE ;
+		DropDown = TRUE ;
+		AutoSize = TRUE ;
+		AutoHScroll = TRUE ;
+		DDExtraWidth = TRUE ;
+		QuickHelpText [ en-US ] = "Internet URLs" ;
+	};
+	ItemList =
+	{
+		ToolBoxItem
+		{
+			HelpID = HID_OFA_HYPERLINK_TARGET ;
+			Identifier = BTN_TARGET ;
+			DropDown = TRUE ;
+			Text [ en-US ] = "Target Frame" ;
+		};
+		ToolBoxItem
+		{
+			Type = TOOLBOXITEM_SEPARATOR ;
+		};
+		ToolBoxItem
+		{
+			HelpID = CMD_SID_HYPERLINK_SETLINK ;
+			Identifier = BTN_LINK ;
+			Disable = TRUE ;
+			DropDown = TRUE ;
+			Text [ en-US ] = "Hyperlink" ;
+		};
+		ToolBoxItem
+		{
+			HelpID = CMD_SID_CREATELINK ;
+			Identifier = BTN_INSERT_BOOKMARK ;
+			Disable = TRUE ;
+			Hide = TRUE;
+			Text [ en-US ] = "Link" ;
+		};
+		ToolBoxItem
+		{
+			HelpID = HID_OFA_HYPERLINK_SEARCH ;
+			Identifier = BTN_INET_SEARCH ;
+			Disable = TRUE ;
+			DropDown = TRUE ;
+			Text [ en-US ] = "Find" ;
+		};
+	};
+	String STR_ADDRESS
+	{
+		Text [ en-US ] = "Address Book" ;
+	};
+	String STR_EXPLORER
+	{
+		Text [ en-US ] = "Bookmark folder" ;
+	};
+	String STR_BOOKMARK_SEARCH
+	{
+		Text [ en-US ] = "Search in bookmarks";
+	};
+};
+ // PopupMenu -------------------------------------------------------------
+Menu RID_SVXMN_HYPERLINK
+{
+	ItemList =
+	{
+		MenuItem
+		{
+			Identifier = MN_FIELD ;
+			Text [ en-US ] = "As Text" ;
+		};
+		MenuItem
+		{
+			Identifier = MN_BUTTON ;
+			Text [ en-US ] = "As Button" ;
+		};
+	};
+};
+QueryBox RID_SVXQB_DONTEXIST
+{
+	BUTTONS = WB_YES_NO ;
+	DEFBUTTON = WB_DEF_YES ;
+	Message [ en-US ] = "This URL does not exist.\nInsert anyway?" ;
+};
+
+
+
+
+
+
+
+

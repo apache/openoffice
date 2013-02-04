@@ -1,0 +1,56 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _CHRDLG_HRC
+#define _CHRDLG_HRC
+
+#include "rcid.hrc"
+
+#define DLG_CHAR                (RC_CHRDLG_BEGIN +  1)
+#define DLG_PARA                (RC_CHRDLG_BEGIN +  2)
+#define DLG_PAGE                (RC_CHRDLG_BEGIN +  3)
+#define DLG_BREAK               (RC_CHRDLG_BEGIN +  5)
+#define DLG_PAGENUM             (RC_CHRDLG_BEGIN +  6)
+#define DLG_HEADER_FOOTER       (RC_CHRDLG_BEGIN +  7)
+#define DLG_DROPCAPS            (RC_CHRDLG_BEGIN +  8)
+#define DLG_DRAWCHAR            (RC_CHRDLG_BEGIN +  9)
+#define DLG_DRAWPARA            (RC_CHRDLG_BEGIN + 10)
+
+// Tabpages -> jetzt in globals.hrc
+
+#define STR_TEXTCOLL_HEADER     (RC_CHRDLG_BEGIN +  2)
+#define STR_PAGEFMT_HEADER      (RC_CHRDLG_BEGIN +  4)
+#define SW_STR_NONE             (RC_CHRDLG_BEGIN +  5)
+//#define STR_NUMFMT           	(RC_CHRDLG_BEGIN +  6)
+
+#define MSG_ILLEGAL_PAGENUM     (RC_CHRDLG_BEGIN +  1)
+
+#define CHRDLG_ACT_END  DLG_DRAWPARA
+
+#if CHRDLG_ACT_END > RC_CHRDLG_END
+#error Resource-Id Ueberlauf in #file, #line
+#endif
+
+#define DLG_SWDROPCAPS            (RC_CHRDLG_BEGIN + 11)
+
+#endif

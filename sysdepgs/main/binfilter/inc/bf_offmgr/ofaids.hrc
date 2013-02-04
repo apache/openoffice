@@ -1,0 +1,93 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _OFF_OFAIDS_HRC
+#define _OFF_OFAIDS_HRC
+
+// include ---------------------------------------------------------------
+
+#ifndef _SVX_SVXIDS_HRC
+#include <bf_svx/svxids.hrc>
+#endif
+
+// defines ---------------------------------------------------------------
+
+#ifndef SID_SPELLCHECKER_CHANGED
+#define SID_SPELLCHECKER_CHANGED                        (SID_OFASLOTS_START +  21)
+#endif
+
+//diese Ids stehen auch im app.hrc!
+#define RID_SW_TP_CONTENT_OPT           (RID_OFA_START + 206)
+#define RID_SW_TP_LAYOUT_OPT            (RID_OFA_START + 207)
+#define RID_SW_TP_STD_FONT              (RID_OFA_START + 208)
+#define RID_SW_TP_OPTPRINT_PAGE         (RID_OFA_START + 209)
+#define RID_SW_TP_OPTTABLE_PAGE         (RID_OFA_START + 210)
+#define RID_SW_TP_OPTSHDWCRSR           (RID_OFA_START + 211)
+#define RID_SW_TP_REDLINE_OPT           (RID_OFA_START + 212)
+#define RID_SW_TP_OPTINSERT_PAGE        (RID_OFA_START + 213)
+#define RID_SW_TP_OPTLOAD_PAGE          (RID_OFA_START + 214)
+#define RID_SW_TP_OPTTEST_PAGE          (RID_OFA_START + 215)
+#define RID_SW_TP_OPTSRCVIEW            (RID_OFA_START + 216)
+#define RID_SW_TP_BACKGROUND            (RID_OFA_START + 217)
+#define SID_SC_TP_LAYOUT 		        (RID_OFA_START + 218)
+#define SID_SC_TP_CONTENT	 	        (RID_OFA_START + 219)
+#define SID_SC_TP_INPUT	 	            (RID_OFA_START + 220)
+#define SID_SC_TP_GRID 	 	            (RID_OFA_START + 221)
+#define SID_SC_TP_USERLISTS	            (RID_OFA_START + 222)
+#define SID_SC_TP_CALC	 	            (RID_OFA_START + 223)
+#define SID_SC_TP_CHANGES               (RID_OFA_START + 224)
+#define SID_SC_TP_CHANGES               (RID_OFA_START + 224)
+#define SID_SD_TP_CONTENTS              (RID_OFA_START + 225)
+#define SID_SD_TP_LAYOUT                (RID_OFA_START + 226)
+#define SID_SD_TP_SNAP                  (RID_OFA_START + 227)
+#define SID_SD_TP_SCALE                 (RID_OFA_START + 228)
+#define SID_SD_TP_GRID                  (RID_OFA_START + 229)
+#define SID_SD_TP_PRINT                 (RID_OFA_START + 220)
+#define SID_SD_TP_MISC                  (RID_OFA_START + 231)
+#define SID_SI_TP_CONTENTS              (RID_OFA_START + 232)
+#define SID_SI_TP_LAYOUT                (RID_OFA_START + 233)
+#define SID_SI_TP_SNAP                  (RID_OFA_START + 234)
+#define SID_SI_TP_GRID                  (RID_OFA_START + 235)
+#define SID_SI_TP_PRINT                 (RID_OFA_START + 236)
+#define SID_SI_TP_MISC                  (RID_OFA_START + 237)
+#define RID_SW_TP_OPTINSERT_HTML_PAGE   (RID_OFA_START + 238)
+#define SID_SC_TP_MISC					(RID_OFA_START + 239)
+#define RID_SW_TP_HTML_CONTENT_OPT      (RID_OFA_START + 240)
+#define RID_SW_TP_HTML_LAYOUT_OPT       (RID_OFA_START + 241)
+#define RID_SW_TP_HTML_OPTPRINT_PAGE    (RID_OFA_START + 242)
+#define RID_SW_TP_HTML_OPTTABLE_PAGE    (RID_OFA_START + 243)
+#define RID_SW_TP_HTML_OPTGRID_PAGE     (RID_OFA_START + 244)
+#define RID_SW_TP_HTML_OPTSHDWCRSR      (RID_OFA_START + 246)
+#define RID_SW_TP_STD_FONT_CJK          (RID_OFA_START + 247)
+#define RID_SC_TP_PRINT                 (RID_OFA_START + 248)
+#define RID_SW_TP_STD_FONT_CTL          (RID_OFA_START + 251)
+#define	RID_OFA_TP_INTERNATIONAL		(RID_OFA_START + 252)		// 4 SC & ID 4 resource
+#define	RID_OFA_TP_INTERNATIONAL_SD		(RID_OFA_START + 253)		// 4 SD
+#define	RID_OFA_TP_INTERNATIONAL_IMPR	(RID_OFA_START + 254)		// 4 impress
+
+
+#define SID_SB_POOLING_ENABLED			(RID_OFA_START + 247)
+#define SID_SB_DRIVER_TIMEOUTS			(RID_OFA_START + 248)
+
+#endif
+

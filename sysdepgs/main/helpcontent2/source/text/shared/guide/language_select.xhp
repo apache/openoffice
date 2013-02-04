@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsharedguidelanguage_selectxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Selecting the Document Language</title>
+         <filename>/text/shared/guide/language_select.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3083278"><bookmark_value>languages; selecting for text</bookmark_value>
+      <bookmark_value>documents; languages</bookmark_value>
+      <bookmark_value>characters; language selection</bookmark_value>
+      <bookmark_value>character styles;language selection</bookmark_value>
+      <bookmark_value>text; language selection</bookmark_value>
+      <bookmark_value>paragraph styles; languages</bookmark_value>
+      <bookmark_value>drawings; languages</bookmark_value>
+      <bookmark_value>defaults;languages</bookmark_value>
+      <bookmark_value>spellcheck; default languages</bookmark_value>
+      <bookmark_value>dictionaries, see also languages</bookmark_value>
+</bookmark><comment>mw deleted "applying;" and changed "languages;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3083278" role="heading" level="1" l10n="U" oldref="1"><variable id="language_select"><link href="text/shared/guide/language_select.xhp" name="Selecting the Document Language">Selecting the Document Language</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150040" role="paragraph" l10n="U" oldref="2">The language you select for your document determines the dictionary used for spellcheck, thesaurus and hyphenation, the decimal and thousands delimiter used and the default currency format.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153093" role="listitem" l10n="U" oldref="3">The language you select applies to the whole document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152578" role="listitem" l10n="U" oldref="4">Within the document, you can apply a separate language to any paragraph style. This has priority over the language of the whole document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3152886" role="listitem" l10n="U" oldref="5">You can assign a language to selected pieces of text in a paragraph, either by direct formatting or with a character style. This assignment has priority over the paragraph style and document language.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3146121" role="heading" level="2" l10n="U" oldref="6">Selecting a language for the whole document</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3083443" role="listitem" l10n="U" oldref="7">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline></emph>. Go to <link href="text/shared/optionen/01140000.xhp" name="Language Settings - Languages"><emph>Language Settings - Languages</emph></link>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149664" role="listitem" l10n="U" oldref="8">Under <emph>Default languages for documents</emph>, select the document language for all newly created documents. If you mark <emph>For the current document only</emph>, your choice will only apply to the current document. Close the dialog with <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3152938" role="heading" level="2" l10n="U" oldref="9">Selecting a language for a Paragraph Style</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150872" role="listitem" l10n="U" oldref="10">Place the cursor in the paragraph whose paragraph style you want to edit.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145367" role="listitem" l10n="U" oldref="11">Open the context menu and select <emph>Edit Paragraph Style</emph>. This opens the <emph>Paragraph Style</emph> dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3166413" role="listitem" l10n="U" oldref="12">Select the <emph>Font</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156283" role="listitem" l10n="U" oldref="13">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3154942" role="listitem" l10n="U" oldref="14">All paragraphs formatted with the current paragraph style will have the selected language.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3145801" role="heading" level="2" l10n="U"
+                 oldref="15">Applying a language directly to selected text</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148455" role="listitem" l10n="U" oldref="16">Select the text to which you want to apply a language.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3159348" role="listitem" l10n="U" oldref="17">Choose <emph>Format - Character</emph>. This opens the <emph>Character</emph> dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155600" role="listitem" l10n="U" oldref="18">Select the <emph>Font</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154510" role="listitem" l10n="U" oldref="19">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3154164" role="paragraph" l10n="U" oldref="20">In <item type="productname">%PRODUCTNAME</item> Calc, choose <emph>Format - Cells</emph> and proceed accordingly.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154272" role="heading" level="2" l10n="U"
+                 oldref="21">Selecting a language for a Character Style</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145649" role="listitem" l10n="U" oldref="22">Open the Styles and Formatting window and click on the <emph>Character Styles</emph> icon.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146792" role="listitem" l10n="U" oldref="23">Click on the name of the character style to which you want to apply a different language.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150753" role="listitem" l10n="U" oldref="24">Then open the context menu in the Styles and Formatting window and select <emph>Modify</emph>. This opens the <emph>Character Style</emph> dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150321" role="listitem" l10n="U" oldref="25">Select the <emph>Font</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154756" role="listitem" l10n="U" oldref="26">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3155766" role="listitem" l10n="U" oldref="27">Now you can apply the character style to your selected text.</paragraph>
+         </listitem>
+      </list><comment>UFI: see i76182</comment>
+<paragraph xml-lang="en-US" id="hd_id8703268" role="heading" level="2" l10n="NEW">Adding More Text Languages</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7919248" role="paragraph" l10n="CHG">Dictionaries are supplied and installed as extensions. Choose <item type="menuitem">Tools - Language - More Dictionaries Online</item> to open the dictionaries page in your default web browser.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5174108" role="paragraph" l10n="NEW">Select a dictionary in the list of descriptions. Click the heading in a dictionary description that you want to get.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id2897427" role="paragraph" l10n="NEW">In the next page, click the Get It icon to download the dictionary extension. Note the folder name to which your browser downloads the file. Download additional dictionaries as you like.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3906979" role="paragraph" l10n="NEW">In %PRODUCTNAME, choose <item type="menuitem">Tools - Extension Manager</item> and click Add to install the downloaded extensions.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0220200911174493" role="paragraph" l10n="NEW">After you installed the extensions, you should close %PRODUCTNAME (including the Quickstarter), and restart.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id9100924" role="heading" level="2" l10n="NEW">Setting UI Language</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2761314" role="paragraph" l10n="NEW">A standard installation of %PRODUCTNAME software will give you a user interface (UI) of your chosen language.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3912778" role="paragraph" l10n="CHG">Most users download the American English version, which gives you English menu commands and English application help. If you want another language for the menus (and for the application help, if available in that language), change the UI language as follows.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3163853" role="paragraph" l10n="NEW">Choose <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id121158" role="paragraph" l10n="NEW">Select another UI language in the "User interface" listbox.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3806878" role="paragraph" l10n="NEW">Click OK and restart the %PRODUCTNAME software.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id130619" role="paragraph" l10n="NEW">If the listbox doesn't list the language that you want, see "Adding More UI Languages".</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id9999694" role="heading" level="2" l10n="NEW">Adding More UI Languages</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id2216559" role="paragraph" l10n="NEW">Open your Web browser and enter <link href="http://wiki.services.openoffice.org/wiki/Download_OpenOffice.org_LanguagePacks">http://wiki.services.openoffice.org/wiki/Download_OpenOffice.org_LanguagePacks</link></paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7869502" role="paragraph" l10n="CHG">Select and download the correct language pack for your version of %PRODUCTNAME software.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9852900" role="paragraph" l10n="CHG">Close %PRODUCTNAME software (also close the Quickstarter, if you enabled it).</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3791924" role="paragraph" l10n="NEW">Install the language pack. Either double-click the exe file, or unpack the tar.gz file according to standard practice on your platform.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <paragraph xml-lang="en-US" id="par_id3150043" role="paragraph" l10n="U" oldref="28"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01140000.xhp" name="Language Settings - Languages">Language Settings - Languages</link></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152483" role="paragraph" l10n="U" oldref="29"><link href="text/shared/01/05020100.xhp" name="Format - Character - Font">Format - Character - Font</link></paragraph>
+   </body>
+</helpdocument>

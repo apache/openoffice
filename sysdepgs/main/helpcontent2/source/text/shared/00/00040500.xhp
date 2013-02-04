@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared0000040500xml" indexer="exclude">
+         <title xml-lang="en-US" id="tit">Format Menu</title>
+         <filename>/text/shared/00/00040500.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <paragraph xml-lang="en-US" id="hd_id3150347" role="heading" level="1" l10n="U" oldref="1">Format Menu</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145356" role="paragraph" l10n="CHG" oldref="8"><variable id="standard">Choose <emph>Format - Default Formatting</emph>
+</variable></paragraph>
+      <section id="zeichen">
+         <paragraph xml-lang="en-US" id="par_id3153244" role="paragraph" l10n="U" oldref="9">Choose <emph>Format - Character</emph>
+</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152352" role="paragraph" l10n="CHG" oldref="10">On <emph>Text Formatting</emph> Bar (with cursor in object), click</paragraph>
+         <section id="syzeich">
+            <table id="tbl_id3150008">
+               <tablerow>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3148998" role="paragraph" l10n="E">
+<image id="img_id3154894" src="res/commandimagelist/sc_outlineformat.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3154894">Icon</alt>
+	</image></paragraph>
+                  </tablecell>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3149999" role="paragraph" l10n="U" oldref="11">Character</paragraph>
+                  </tablecell>
+               </tablerow>
+            </table>
+
+         </section>
+      </section>
+      <section id="schrift">
+         <paragraph xml-lang="en-US" id="par_id3153935" role="paragraph" l10n="U" oldref="12">Choose <emph>Format - Character - Font</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157958" role="paragraph" l10n="CHG" oldref="14">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Font</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155338" role="paragraph" l10n="U" oldref="16">Open context menu of a row header in a database table - choose <emph>Table Format - Font</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150355" role="paragraph" l10n="U" oldref="18">Choose <emph>Format - Title - Character</emph> tab (Chart documents)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149812" role="paragraph" l10n="U" oldref="19">Choose <emph>Format - Legend - Character</emph> tab (Chart documents)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153717" role="paragraph" l10n="U" oldref="20">Choose <emph>Format - Axis - Character</emph> tab (Chart documents)</paragraph>
+<switch select="appl">
+<case select="CALC">
+<paragraph xml-lang="en-US" id="par_id3154749" role="paragraph" l10n="U" oldref="17">Choose <emph>Format - Cell - Font</emph> tab (spreadsheets)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156306" role="paragraph" l10n="U" oldref="199">Menu <emph>Format - Page - Header/Footer</emph> - <emph>Edit</emph> button (spreadsheets)</paragraph>
+</case>
+</switch>
+</section>
+      <section id="schrifteffekt">
+         <paragraph xml-lang="en-US" id="par_id3155829" role="paragraph" l10n="U" oldref="21">Choose <emph>Format - Character - Font Effects</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149819" role="paragraph" l10n="CHG" oldref="23">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Font Effects</emph> tab</paragraph>
+<switch select="appl">
+<case select="CALC">
+<paragraph xml-lang="en-US" id="par_id3159176" role="paragraph" l10n="U" oldref="200">Menu <emph>Format - Page - Header/Footer</emph> - <emph>Edit</emph> button (spreadsheets)</paragraph>
+</case>
+</switch>
+</section>
+      <section id="position">
+         <paragraph xml-lang="en-US" id="par_id3153541" role="paragraph" l10n="U" oldref="181">Choose <emph>Format - Character - Position</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159256" role="paragraph" l10n="CHG" oldref="183">Choose <emph>Format - Styles and Formatting - </emph>open context menu of an entry and click <emph>Modify/New - Alignment</emph> tab</paragraph>
+<switch select="appl">
+<case select="CALC">
+<paragraph xml-lang="en-US" id="par_id3151385" role="paragraph" l10n="U" oldref="201">Menu <emph>Format - Page - Header/Footer</emph> - <emph>Edit</emph> button (spreadsheets)</paragraph>
+</case>
+</switch>
+</section>
+      <section id="asilayout">
+         <paragraph xml-lang="en-US" id="par_id3148550" role="paragraph" l10n="U" oldref="186">Choose <emph>Format - Character - Asian Layout</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152811" role="paragraph" l10n="CHG" oldref="188">Choose <emph>Format - Styles and Formatting - </emph>open context menu of an entry and click <emph>Modify/New - Asian Layout</emph> tab</paragraph>
+      </section>
+      <section id="asitypo">
+         <paragraph xml-lang="en-US" id="par_id3153524" role="paragraph" l10n="U" oldref="190">Choose <emph>Format - Paragraph - Asian Typography</emph> tab (not in HTML)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154366" role="paragraph" l10n="U" oldref="191"><switchinline select="appl"><caseinline select="CALC">Choose <emph>Format - Cell - Asian Typography</emph> tab 
+</caseinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148742" role="paragraph" l10n="CHG" oldref="193">Choose <emph>Format - Styles and Formatting - </emph>open context menu of an entry and click <emph>Modify/New - Asian Typography</emph> tab</paragraph>
+      </section>
+      <section id="hyperl">
+         <paragraph xml-lang="en-US" id="par_id3148922" role="paragraph" l10n="U" oldref="26">Choose <emph>Format - Character - Hyperlink</emph> tab</paragraph>
+      </section>
+      <section id="absatz">
+         <paragraph xml-lang="en-US" id="par_id3149169" role="paragraph" l10n="U" oldref="29">Choose <emph>Format - Paragraph</emph>
+</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151381" role="paragraph" l10n="CHG" oldref="30">On <emph>Text Formatting</emph> bar (with cursor in object), click</paragraph>
+         <section id="syabsatz">
+            <table id="tbl_id3150652">
+               <tablerow>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3155995" role="paragraph" l10n="E">
+<image id="img_id3150495" src="res/commandimagelist/sc_paragraphdialog.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3150495">Icon</alt>
+	</image></paragraph>
+                  </tablecell>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3147299" role="paragraph" l10n="CHG" oldref="31">Paragraph</paragraph>
+                  </tablecell>
+               </tablerow>
+            </table>
+
+         </section>
+      </section>
+      <section id="absatzausrichtung">
+         <paragraph xml-lang="en-US" id="par_id3147289" role="paragraph" l10n="U" oldref="4">Choose <emph>Format - Paragraph - Alignment</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147352" role="paragraph" l10n="CHG" oldref="179">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Alignment</emph> tab</paragraph>
+      </section>
+      <section id="einzug">
+         <paragraph xml-lang="en-US" id="par_id3154640" role="paragraph" l10n="U" oldref="32">Choose <emph>Format - Paragraph - Indents &amp; Spacing</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152463" role="paragraph" l10n="CHG" oldref="34">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Indents &amp; Spacing</emph> tab</paragraph>
+      </section>
+      <section id="tabulator">
+         <paragraph xml-lang="en-US" id="par_id3154319" role="paragraph" l10n="U" oldref="39">Choose <emph>Format - Paragraph - Tabs</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154833" role="paragraph" l10n="CHG" oldref="41">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Tabs</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159155" role="paragraph" l10n="U" oldref="43">Double-click the ruler</paragraph>
+      </section>
+      <section id="umrandung">
+         <paragraph xml-lang="en-US" id="par_idN109E2" role="paragraph" l10n="NEW">(all options only in Writer or Calc)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156105" role="paragraph" l10n="CHG" oldref="44">Choose <emph>Format - Paragraph - Borders</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154149" role="paragraph" l10n="CHG" oldref="45">Choose <emph>Format - Picture - Borders</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3163822" role="paragraph" l10n="U" oldref="48">Choose <emph>Format - Frame/Object - Borders</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150048" role="paragraph" l10n="U" oldref="51">Choose <emph>Format - Page - Borders</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149911" role="paragraph" l10n="CHG" oldref="53">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Borders</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150094" role="paragraph" l10n="U" oldref="54">Choose <emph>Format - Page - Header - More</emph> button</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154501" role="paragraph" l10n="CHG" oldref="55">Choose <emph>Format - Page - Footer - More</emph> button</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148455" role="paragraph" l10n="U" oldref="56"><switchinline select="appl"><caseinline select="CALC">Choose <emph>Format - Cells - Borders</emph> tab 
+</caseinline></switchinline></paragraph>
+      </section>
+      <section id="umrandungab">
+         <paragraph xml-lang="en-US" id="par_id3155915" role="paragraph" l10n="U" oldref="177"><switchinline select="appl"><caseinline select="WRITER">Menu <emph>Format - Paragraph</emph> - <emph>Border</emph> tab -<emph> Spacing to contents</emph>
+</caseinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159130" role="paragraph" l10n="U" oldref="178"><switchinline select="appl"><caseinline select="CALC">Menu<emph> Format - Page - Border - Spacing to contents</emph>
+</caseinline></switchinline></paragraph>
+      </section>
+      <section id="hintergrund">
+         <paragraph xml-lang="en-US" id="par_id3155853" role="paragraph" l10n="U" oldref="57">Choose <emph>Format - Paragraph - Background</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147330" role="paragraph" l10n="U" oldref="58">Choose <emph>Format - Character - Background</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149486" role="paragraph" l10n="CHG" oldref="59">Choose <emph>Format - Picture - Background</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150592" role="paragraph" l10n="U" oldref="61">Choose <emph>Format - Frame/Object - Background</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151321" role="paragraph" l10n="U" oldref="65">Choose <emph>Format - Page - Background</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154510" role="paragraph" l10n="U" oldref="68">Choose <emph>Format - Page - Header - More</emph> button</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159110" role="paragraph" l10n="U" oldref="69">Choose <emph>Format - Page - Footer - More</emph> button</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153532" role="paragraph" l10n="CHG" oldref="67">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Background</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3144747" role="paragraph" l10n="U" oldref="174">Choose <emph>Insert/Edit - Section - Background</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146900" role="paragraph" l10n="U" oldref="71"><switchinline select="appl"><caseinline select="CALC">Choose <emph>Format - Cells - Background</emph> tab 
+</caseinline></switchinline></paragraph>
+      </section>
+      <section id="seiteverwalten">
+         <paragraph xml-lang="en-US" id="par_id3146791" role="paragraph" l10n="U" oldref="72">Choose <emph>Format - Page - Organizer</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154482" role="paragraph" l10n="CHG" oldref="74">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Organizer</emph> tab</paragraph>
+      </section>
+      <section id="seite">
+         <paragraph xml-lang="en-US" id="par_id3153357" role="paragraph" l10n="U" oldref="75">Choose <emph>Format - Page - Page</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154362" role="paragraph" l10n="CHG" oldref="77">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Page</emph> tab</paragraph>
+      </section>
+      <section id="kopfzeile">
+         <paragraph xml-lang="en-US" id="par_id3155515" role="paragraph" l10n="U" oldref="78">Choose <emph>Format - Page - Header</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148405" role="paragraph" l10n="CHG" oldref="80">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Header</emph> tab</paragraph>
+      </section>
+      <section id="fusszeile">
+         <paragraph xml-lang="en-US" id="par_id3145618" role="paragraph" l10n="U" oldref="81">Choose <emph>Format - Page - Footer</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155175" role="paragraph" l10n="CHG" oldref="83">Choose <emph>Format - Styles and Formatting</emph> - open context menu of an entry and choose <emph>Modify/New - Footer</emph> tab</paragraph>
+      </section>
+      <section id="gestalter">
+         <paragraph xml-lang="en-US" id="par_id3147404" role="paragraph" l10n="U" oldref="84">Choose <emph>Format - Styles and Formatting</emph>
+</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3166447" role="paragraph" l10n="U" oldref="95"><switchinline select="sys"><caseinline select="MAC">Command+T</caseinline><defaultinline>F11</defaultinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147321" role="paragraph" l10n="CHG" oldref="85">On <emph>Formatting</emph> Bar, click</paragraph>
+         <table id="tbl_id3163807">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148533" role="paragraph" l10n="E">
+<image id="img_id3149568" src="res/commandimagelist/sc_designerdialog.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3149568">Icon</alt>
+	</image></paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153534" role="paragraph" l10n="CHG" oldref="86">Styles and Formatting</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+      </section>
+      <section id="3d">
+         <paragraph xml-lang="en-US" id="par_id3159313" role="paragraph" l10n="CHG" oldref="88"><switchinline select="appl"><caseinline select="CHART">
+</caseinline><caseinline select="CALC">
+</caseinline><caseinline select="WRITER">
+</caseinline><caseinline select="MATH">
+</caseinline><defaultinline>On the <emph>Drawing</emph> bar, click</defaultinline></switchinline></paragraph>
+         <section id="sy3d">
+            <table id="tbl_id3150297">
+               <tablerow>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3109845" role="paragraph" l10n="E">
+<image id="img_id3159236" src="res/commandimagelist/sc_window3d.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3159236">Icon</alt>
+	</image></paragraph>
+                  </tablecell>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3152498" role="paragraph" l10n="CHG" oldref="3">
+<emph>3D Effects</emph>
+</paragraph>
+                  </tablecell>
+               </tablerow>
+            </table>
+
+         </section>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3145256" role="paragraph" l10n="CHG" oldref="90"><variable id="3dgeometrie">Open the context menu of the 3D object, choose <emph>3D Effects - Geometry</emph> tab 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154203" role="paragraph" l10n="CHG" oldref="91"><variable id="3ddarstellung">Open the context menu of the 3D object, choose <emph>3D Effects - Shading</emph> tab 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151284" role="paragraph" l10n="CHG" oldref="92"><variable id="3dbeleuchtung">Open the context menu of the 3D object, choose <emph>3D Effects - Illumination</emph> tab 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152475" role="paragraph" l10n="CHG" oldref="93"><variable id="3dtexturen">Open the context menu of the 3D object, choose <emph>3D Effects - Textures</emph> tab 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154572" role="paragraph" l10n="CHG" oldref="94"><variable id="3dmaterial">Open the context menu of the 3D object, choose <emph>3D Effects - Material</emph> tab 
+</variable></paragraph>
+      <section id="numauf">
+         <paragraph xml-lang="en-US" id="par_id3145220" role="paragraph" l10n="CHG" oldref="155">Choose <emph>Format - Bullets and Numbering </emph>
+</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148771" role="paragraph" l10n="CHG" oldref="156">On <emph>Formatting</emph> toolbar, click</paragraph>
+         <section id="synumauf">
+            <table id="tbl_id3152774">
+               <tablerow>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3149445" role="paragraph" l10n="E">
+<image id="img_id3149964" src="res/commandimagelist/sc_defaultbullet.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3149964">Icon</alt>
+	</image></paragraph>
+                  </tablecell>
+                  <tablecell>
+                     <paragraph xml-lang="en-US" id="par_id3157970" role="paragraph" l10n="U" oldref="163">Bullets On/Off</paragraph>
+                  </tablecell>
+               </tablerow>
+            </table>
+
+         </section>
+      </section>
+      <section id="numoptionen">
+         <paragraph xml-lang="en-US" id="par_id3149735" role="paragraph" l10n="CHG" oldref="157">Choose <emph>Format - Bullets and Numbering</emph>. Open <emph>Options</emph> tab page</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150785" role="paragraph" l10n="U" oldref="164"><switchinline select="appl"><caseinline select="IMPRESS">Open <emph>Styles and Formatting</emph> - Presentation Styles - context menu of an Outline Style - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148420" role="paragraph" l10n="CHG" oldref="165"><switchinline select="appl"><caseinline select="WRITER">Open <emph>Styles and Formatting</emph> - Numbering Styles - context menu of an entry - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+      </section>
+      <section id="numbullets">
+         <paragraph xml-lang="en-US" id="par_id3148888" role="paragraph" l10n="CHG" oldref="158">Choose <emph>Format - Bullets and Numbering - Bullets</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149917" role="paragraph" l10n="U" oldref="166"><switchinline select="appl"><caseinline select="IMPRESS">Open Styles and Formatting - Presentation Styles - context menu of an Outline Style - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154930" role="paragraph" l10n="CHG" oldref="167"><switchinline select="appl"><caseinline select="WRITER">Open Styles and Formatting - Numbering Styles - context menu of an entry - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+      </section>
+      <section id="numnumerierungsart">
+         <paragraph xml-lang="en-US" id="par_id3150862" role="paragraph" l10n="CHG" oldref="159">Choose <emph>Format - Bullets and Numbering - Numbering</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155378" role="paragraph" l10n="U" oldref="168"><switchinline select="appl"><caseinline select="IMPRESS">Open <emph>Styles and Formatting</emph> - Presentation Styles - context menu of an Outline Style - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156011" role="paragraph" l10n="CHG" oldref="169"><switchinline select="appl"><caseinline select="WRITER">Open <emph>Styles and Formatting</emph> - Numbering Styles - context menu of an entry - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id0611200904324832" role="paragraph" l10n="NEW"><variable id="graphics">Choose <emph>Format - Bullets and Numbering - Graphics</emph> tab
+</variable></paragraph>
+      <section id="numnumerierung">
+         <paragraph xml-lang="en-US" id="par_id3155848" role="paragraph" l10n="CHG" oldref="160">Choose <emph>Format - Bullets and Numbering - Outline</emph> tab</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148733" role="paragraph" l10n="CHG" oldref="170"><switchinline select="appl"><caseinline select="WRITER">Open <emph>Styles and Formatting</emph> - Numbering Styles - context menu of an entry - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+      </section>
+      <section id="numposition">
+         <paragraph xml-lang="en-US" id="par_id3156658" role="paragraph" l10n="CHG" oldref="162">Choose <emph>Format - Bullets and Numbering</emph>. Open <emph>Position</emph> tab page</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156170" role="paragraph" l10n="U" oldref="152"><switchinline select="appl"><caseinline select="WRITER">Choose <emph>Tools - Outline Numbering - Position</emph> tab 
+</caseinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153812" role="paragraph" l10n="CHG" oldref="173"><switchinline select="appl"><caseinline select="WRITER">Open <emph>Styles and Formatting - Numbering Styles</emph> - context menu of an entry - choose <emph>New/Modify</emph>
+</caseinline></switchinline></paragraph>
+      </section>
+      <section id="grafikzuschn">
+         <paragraph xml-lang="en-US" id="par_id3151332" role="paragraph" l10n="CHG" oldref="194"><switchinline select="appl"><caseinline select="WRITER">Menu <emph>Format - Picture </emph>- <emph>Crop</emph> tab 
+</caseinline></switchinline></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153317" role="paragraph" l10n="CHG" oldref="198"><switchinline select="appl"><caseinline select="WRITER">
+</caseinline><defaultinline>Icon on the <emph>Picture</emph> toolbar:</defaultinline></switchinline></paragraph>
+<switch select="appl">
+<case select="WRITER">
+</case>
+<default>
+<table id="tbl_id3154374">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149953" role="paragraph" l10n="E">
+<image id="img_id3155092" src="res/commandimagelist/sc_grafattrcrop.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id3155092">Icon</alt>
+	</image></paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3153695" role="paragraph" l10n="U" oldref="209">Crop</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+</default>
+</switch>
+</section>
+      <section id="grossklein">
+         <paragraph xml-lang="en-US" id="par_id3151254" role="paragraph" l10n="CHG" oldref="195">Choose <emph>Format - Change Case</emph>
+</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159624" role="paragraph" l10n="U" oldref="196">Open context menu (text) - choose <emph>Case/Characters</emph>
+</paragraph>
+      </section>
+      <section id="ruby">
+         <paragraph xml-lang="en-US" id="par_id3153579" role="paragraph" l10n="CHG" oldref="197">Menu <emph>Format - Asian phonetic guide</emph>
+</paragraph>
+      </section>
+   </body>
+</helpdocument>

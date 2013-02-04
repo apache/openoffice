@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideeven_odd_sdwxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Alternating Page Styles on Odd and Even Pages</title>
+         <filename>/text/swriter/guide/even_odd_sdw.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153407"><bookmark_value>page styles; left and right pages</bookmark_value>
+      <bookmark_value>blank pages with alternating page styles</bookmark_value>
+      <bookmark_value>empty page with alternating page styles</bookmark_value>
+      <bookmark_value>pages; left and right pages</bookmark_value>
+      <bookmark_value>formatting; even/odd pages</bookmark_value>
+      <bookmark_value>title pages; page styles</bookmark_value>
+      <bookmark_value>First Page page style</bookmark_value>
+      <bookmark_value>Left Page page style</bookmark_value>
+      <bookmark_value>right pages</bookmark_value>
+      <bookmark_value>even/odd pages;formatting</bookmark_value>
+</bookmark><comment>MW made "empty pages;..." and "blank pages;.." to one level entries.</comment>
+<paragraph xml-lang="en-US" id="hd_id3153407" role="heading" level="1" l10n="U" oldref="1"><variable id="even_odd_sdw"><link href="text/swriter/guide/even_odd_sdw.xhp" name="Alternating Page Styles on Odd and Even Pages">Alternating Page Styles on Odd and Even Pages</link>
+</variable></paragraph>
+      <table id="tbl_id3152897">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154265" role="paragraph" l10n="E">
+<image id="img_id3155876" src="res/commandimagelist/sc_designerdialog.png" width="0.1862in" height="0.1862in"><alt xml-lang="en-US" id="alt_id3155876">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147126" role="paragraph" l10n="U" oldref="2">$[officename] can automatically apply alternating page styles on even (left) and odd pages (right) in your document. For example, you can use page styles to display different headers and footers on even and odd pages. The current page style is displayed in the <emph>Status Bar</emph> at the bottom of the workplace.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="hd_id8194219" role="heading" level="2" l10n="NEW">To Set Up Alternating Page Styles</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150526" role="listitem" l10n="U" oldref="4">Choose <item type="menuitem">Format - Styles and Formatting</item>, and then click the <item type="menuitem">Page Styles</item>
+               <emph/>icon.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153153" role="listitem" l10n="U" oldref="6">In the list of page styles, right-click "Left Page" and choose <emph>Modify</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153179" role="listitem" l10n="U" oldref="8">Click the <emph>Organizer</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145267" role="listitem" l10n="U" oldref="17">Select "Right Page" in the <emph>Next Style</emph> box, and then click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145299" role="listitem" l10n="U" oldref="9">In the list of page styles, right-click "Right Page" and choose <emph>Modify</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155529" role="listitem" l10n="U" oldref="18">Select "Left Page" in the <emph>Next Style</emph> box, and then click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155561" role="listitem" l10n="U" oldref="10">Go to the first page in your document, and double-click "Right Page" in the list of page styles in the Styles and Formatting window.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3155588" role="paragraph" l10n="U" oldref="19">To add a header to one of the page styles, choose<emph/>
+         <item type="menuitem">Insert - Header</item>, and choose the page style that you want to add the header to. In the header frame, type the text that you want to use as the header.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147772" role="paragraph" l10n="U" oldref="20">To add a footer to one of the page styles, choose<emph/>
+         <item type="menuitem">Insert - Footer</item>, and choose the page style that you want to add the footer to. In the footer frame, type the text that you want to use as a footer.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147254" role="tip" l10n="CHG" oldref="12">If you do not want to have a header or a footer on the title page of your document, apply the "First Page" style to the title page.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id888698" role="heading" level="2" l10n="NEW">To Suppress the Printout of Empty Pages</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3394573" role="paragraph" l10n="NEW">If two even or two odd pages directly follow each other in your document, Writer will insert an empty page by default. You can suppress those automatically generated empty pages from printing and from exporting to PDF.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7594225" role="paragraph" l10n="NEW">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Writer - Print</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id8147221" role="paragraph" l10n="NEW">Remove the check mark from <emph>Print automatically inserted blank pages</emph>.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/pagestyles.xhp#pagestyles"/>
+         <embed href="text/swriter/guide/header_footer.xhp#header_footer"/>
+         <paragraph xml-lang="en-US" id="par_id3145596" role="paragraph" l10n="U" oldref="13"><link href="text/swriter/01/04010000.xhp" name="Insert Break dialog">Insert Break dialog</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

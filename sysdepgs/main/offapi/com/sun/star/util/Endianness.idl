@@ -1,0 +1,60 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_util_Endianness_idl__
+#define __com_sun_star_util_Endianness_idl__
+
+module com { module sun { module star { module util {
+
+/** These constans describe the endiannes of data structures.<p>
+
+	The endianness specifies the order in which the bytes of larger
+	types are laid out in memory.<p>
+
+    @since OOo 2.0
+ */
+constants Endianness 
+{
+    /** Little endian.<p>
+
+    	The values are stored in little endian format, i.e. the bytes
+    	of the long word 0xAABBCCDD are layed out like 0xDD, 0xCC,
+    	0xBB, 0xAA in memory. That is, data of arbitrary machine word
+    	lengths always starts with the least significant byte, and
+    	ends with the most significant one.<p>
+     */
+    const byte	LITTLE=0;
+
+    /** Big endian.<p>
+
+    	The values are stored in big endian format, i.e. the bytes of
+    	the long word 0xAABBCCDD are layed out like 0xAA, 0xBB, 0xCC,
+    	0xDD in memory. That is, data of arbitrary machine word
+    	lengths always start with the most significant byte, and ends
+    	with the least significant one.<p>
+     */
+    const byte BIG=1;
+};
+
+}; }; }; };
+
+#endif

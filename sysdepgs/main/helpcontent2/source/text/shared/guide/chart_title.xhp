@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidechart_titlexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Editing Chart Titles</title>
+<filename>/text/shared/guide/chart_title.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-01-08T12:10:51">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156136"><bookmark_value>charts; editing titles</bookmark_value>
+<bookmark_value>editing; chart titles</bookmark_value>
+<bookmark_value>titles; editing in charts</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3156136" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="chart_title"><link href="text/shared/guide/chart_title.xhp" name="Editing Chart Titles">Editing Chart Titles</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153527" xml-lang="en-US" l10n="U" oldref="2">To edit a chart title that you have inserted into a $[officename] document:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153681" xml-lang="en-US" l10n="U" oldref="3">Double-click on the chart.</paragraph>
+<paragraph role="listitem" id="par_id3145345" xml-lang="en-US" l10n="U" oldref="4">A gray border appears around the chart and the menu bar now contains commands for editing the objects in the chart.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149811" xml-lang="en-US" l10n="CHG" oldref="5">Double-click on an existing title text. A gray border appears around the text and you can now make changes. Press Enter to create a new line.</paragraph>
+<paragraph role="listitem" id="par_id2706991" xml-lang="en-US" l10n="NEW">If no title text exists, choose <emph>Insert - Title</emph> to enter the text in a dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145382" xml-lang="en-US" l10n="U" oldref="6">A single-click on the title allows you to move it with the mouse.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155341" xml-lang="en-US" l10n="U" oldref="7">If you want to change the formatting of the main title, choose <emph>Format - Title - Main Title</emph>. This opens the <emph>Title</emph> dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147336" xml-lang="en-US" l10n="U" oldref="8">Select one of the available tabs in the dialog to make modifications.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155135" xml-lang="en-US" l10n="U" oldref="9">Click <emph>OK</emph>. In your document, click outside the chart to exit chart editing mode.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3154046" xml-lang="en-US" l10n="U" oldref="10"><link href="text/schart/01/05010000.xhp" name="Format - Object properties">Format - Object properties</link></paragraph>
+<embed href="text/shared/guide/chart_legend.xhp#chart_legend"/>
+<embed href="text/shared/guide/chart_axis.xhp#chart_axis"/>
+</section>
+</body>
+</helpdocument>

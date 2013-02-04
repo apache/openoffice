@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0112030200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Options</title>
+<filename>/text/scalc/01/12030200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-05-08T12:41:26">converted from old format - fpe
+YJ: checked
+UFI: included note for asian languages into AVIS text.
+YJ: checked again</lastedited>
+</history>
+</meta>
+<body>
+<section id="optionen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147228"><bookmark_value>sorting; options for database ranges</bookmark_value>
+<bookmark_value>sorting;Asian languages</bookmark_value>
+<bookmark_value>Asian languages;sorting</bookmark_value>
+<bookmark_value>phonebook sorting rules</bookmark_value>
+<bookmark_value>natural sort algorithm</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_SORT_OPTIONS" id="bm_id3151044" localize="false"/>
+<paragraph role="heading" id="hd_id3147228" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/12030200.xhp" name="Options"> Options</link></paragraph>
+<paragraph role="paragraph" id="par_id3153770" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SCPAGE_SORT_OPTIONS"> Sets additional sorting options.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000412.xhp#dnstot"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_SORT_OPTIONS:BTN_CASESENSITIVE" id="bm_id3149664" localize="false"/>
+<paragraph role="heading" id="hd_id3146976" xml-lang="en-US" level="2" l10n="U" oldref="3"> Case Sensitivity</paragraph>
+<paragraph role="paragraph" id="par_id3153091" xml-lang="en-US" l10n="CHG" oldref="4"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_CASESENSITIVE"> Sorts first by uppercase letters and then by lowercase letters. For Asian languages, special handling applies.</ahelp></paragraph>
+<paragraph role="note" id="par_idN10637" xml-lang="en-US" l10n="NEW"> Note for Asian languages: Check <emph>Case Sensitivity</emph> to apply multi-level collation. With multi-level collation, entries are first compared in their primitive forms with their cases and diacritics ignored. If they evaluate as the same, their diacritics are taken into account for the second-level comparison. If they still evaluate as the same, their cases, character widths, and Japanese Kana difference are considered for the third-level comparison.<comment>UFI: see #112590# and #112507#</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_SORT_OPTIONS:BTN_LABEL" id="bm_id3145271" localize="false"/>
+<paragraph role="heading" id="hd_id3155856" xml-lang="en-US" level="2" l10n="U" oldref="5"> Range contains column/row labels</paragraph>
+<paragraph role="paragraph" id="par_id3154014" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_LABEL"> Omits the first row or the first column in the selection from the sort.</ahelp> The <emph>Direction</emph> setting at the bottom of the dialog defines the name and function of this check box.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_SORT_OPTIONS:BTN_FORMATS" id="bm_id3149410" localize="false"/>
+<paragraph role="heading" id="hd_id3147436" xml-lang="en-US" level="2" l10n="U" oldref="7"> Include formats</paragraph>
+<paragraph role="paragraph" id="par_id3149377" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_FORMATS"> Preserves the current cell formatting.</ahelp></paragraph><comment>&lt;BOOKMARK branch="hid/SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_NATURALSORT" id="bm_id3149412" localize="false"/&gt;</comment><comment>Enable natural sort</comment><comment>&lt;AVIS hid="."&gt; Natural sort is a sort algorithm that sorts string-prefixed numbers based on the value of the numerical element in each sorted number.&lt;/AVIS&gt;</comment><comment>When this option is not checked, a series of values such as Number1, Number2, Number3, ..., Number19, Number20, Number21 will be sorted as Number1, Number11, Number12, ..., Number19, Number2, Number20, Number21, Number3, and so on. With the natural sort feature enabled, the result will be Number1, Number2, Number3, ..., Number19, Number20, Number21.</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_SORT_OPTIONS:BTN_COPYRESULT" id="bm_id3147124" localize="false"/>
+<paragraph role="heading" id="hd_id3153878" xml-lang="en-US" level="2" l10n="U" oldref="10"> Copy sort results to:</paragraph>
+<paragraph role="paragraph" id="par_id3156286" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_COPYRESULT"> Copies the sorted list to the cell range that you specify.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_SORT_OPTIONS:LB_OUTAREA" id="bm_id3149403" localize="false"/>
+<paragraph role="heading" id="hd_id3153418" xml-lang="en-US" level="3" l10n="U" oldref="12"> Sort results</paragraph>
+<paragraph role="paragraph" id="par_id3155602" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SC:LISTBOX:RID_SCPAGE_SORT_OPTIONS:LB_OUTAREA"> Select a named <link href="text/scalc/01/12010000.xhp" name="cell range"> cell range</link> where you want to display the sorted list, or enter a cell range in the input box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCPAGE_SORT_OPTIONS:ED_OUTAREA" id="bm_id3153767" localize="false"/>
+<paragraph role="heading" id="hd_id3153707" xml-lang="en-US" level="3" l10n="U" oldref="14"> Sort results</paragraph>
+<paragraph role="paragraph" id="par_id3145642" xml-lang="en-US" l10n="CHG" oldref="15"><ahelp hid="SC:EDIT:RID_SCPAGE_SORT_OPTIONS:ED_OUTAREA"> Enter the cell range where you want to display the sorted list, or select a named range from the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_SORT_OPTIONS:BTN_SORT_USER" id="bm_id3147339" localize="false"/>
+<paragraph role="heading" id="hd_id3155445" xml-lang="en-US" level="2" l10n="CHG" oldref="16"> Custom sort order</paragraph>
+<paragraph role="paragraph" id="par_id3156385" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_SORT_USER"> Click here and then select the custom sort order that you want.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_SORT_OPTIONS:LB_SORT_USER" id="bm_id3146917" localize="false"/>
+<paragraph role="heading" id="hd_id3154704" xml-lang="en-US" level="3" l10n="U" oldref="18"> Custom sort order</paragraph>
+<paragraph role="paragraph" id="par_id3155962" xml-lang="en-US" l10n="CHG" oldref="19"><ahelp hid="SC:LISTBOX:RID_SCPAGE_SORT_OPTIONS:LB_SORT_USER"> Select the custom sort order that you want to apply. To define a custom sort order, choose <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01060400.xhp" name="%PRODUCTNAME Calc - Sort Lists">%PRODUCTNAME Calc - Sort Lists</link> .</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3149257" xml-lang="en-US" level="2" l10n="U" oldref="28"> Language</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_SORT_OPTIONS:LB_LANGUAGE" id="bm_id3150299" localize="false"/>
+<paragraph role="heading" id="hd_id3147004" xml-lang="en-US" level="3" l10n="U" oldref="29"> Language</paragraph>
+<paragraph role="paragraph" id="par_id3150787" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SC_LISTBOX_RID_SCPAGE_SORT_OPTIONS_LB_LANGUAGE"> Select the language for the sorting rules.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_SORT_OPTIONS:LB_ALGORITHM" id="bm_id3150304" localize="false"/>
+<paragraph role="heading" id="hd_id3150344" xml-lang="en-US" level="3" l10n="U" oldref="30"> Options</paragraph>
+<paragraph role="paragraph" id="par_id3155113" xml-lang="en-US" l10n="U" oldref="33"><ahelp hid="SC_LISTBOX_RID_SCPAGE_SORT_OPTIONS_LB_ALGORITHM"> Select a sorting option for the language.</ahelp> For example, select the "phonebook" option for German to include the umlaut special character in the sorting.</paragraph>
+<paragraph role="heading" id="hd_id3152580" xml-lang="en-US" level="2" l10n="U" oldref="20"> Direction</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCPAGE_SORT_OPTIONS:BTN_TOP_DOWN" id="bm_id3155507" localize="false"/>
+<paragraph role="heading" id="hd_id3154201" xml-lang="en-US" level="3" l10n="U" oldref="22"> Top to Bottom (Sort Rows)</paragraph>
+<paragraph role="paragraph" id="par_id3166430" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="SC:RADIOBUTTON:RID_SCPAGE_SORT_OPTIONS:BTN_TOP_DOWN"> Sorts rows by the values in the active columns of the selected range.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCPAGE_SORT_OPTIONS:BTN_LEFT_RIGHT" id="bm_id3155529" localize="false"/>
+<paragraph role="heading" id="hd_id3145588" xml-lang="en-US" level="3" l10n="U" oldref="24"> Left to Right (Sort Columns)</paragraph>
+<paragraph role="paragraph" id="par_id3154370" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SC:RADIOBUTTON:RID_SCPAGE_SORT_OPTIONS:BTN_LEFT_RIGHT"> Sorts columns by the values in the active rows of the selected range.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3156290" xml-lang="en-US" level="2" l10n="U" oldref="26"> Data area</paragraph>
+<paragraph role="paragraph" id="par_id3156446" xml-lang="en-US" l10n="U" oldref="27"> Displays the cell range that you want to sort.</paragraph>
+</body>
+</helpdocument>

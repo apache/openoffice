@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguidedatapilot_createtablexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Creating Pivot Tables</title>
+         <filename>/text/scalc/guide/datapilot_createtable.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148491"><bookmark_value>pivot tables</bookmark_value>
+      <bookmark_value>pivot table function; calling up and applying</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3148491" role="heading" level="1" l10n="U" oldref="7"><variable id="datapilot_createtable"><link href="text/scalc/guide/datapilot_createtable.xhp" name="Creating Pivot Tables">Creating Pivot Tables</link>
+</variable></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156023" role="listitem" l10n="U" oldref="8">Position the cursor within a range of cells containing values, row and column headings.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147264" role="listitem" l10n="CHG" oldref="9">Choose <emph>Data - Pivot Table - Create</emph>. The <emph>Select Source</emph> dialog appears. Choose <emph>Current selection</emph> and confirm with <emph>OK</emph>. The table headings are shown as buttons in the <emph>Pivot Table</emph> dialog. Drag these buttons as required and drop them into the layout areas "Page Fields", "Column Fields", "Row Fields" and "Data Fields".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150868" role="listitem" l10n="CHG" oldref="10">Drag the desired buttons into one of the four areas.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id7599414" role="paragraph" l10n="NEW">Drag a button to the <emph>Page Fields</emph> area to create a button and a listbox on top of the generated pivot table. The listbox can be used to filter the pivot table by the contents of the selected item. You can use drag-and-drop within the generated pivot table to use another page field as a filter.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154011" role="paragraph" l10n="CHG" oldref="11">If the button is dropped in the <emph>Data Fields</emph> area it will be given a caption that also shows the formula that will be used to calculate the data.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146974" role="listitem" l10n="CHG" oldref="16">By double-clicking on one of the fields in the <emph>Data Fields</emph> area you can call up the <link href="text/scalc/01/12090105.xhp" name="Data Field"><emph>Data Field</emph></link> dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156286" role="listitem" l10n="U" oldref="17">Use the <item type="menuitem">Data Field</item> dialog to select the calculations to be used for the data. To make a multiple selection, press the <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl </defaultinline></switchinline>key while clicking the desired calculation.</paragraph>
+         </listitem>
+      </list>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150329" role="listitem" l10n="CHG" oldref="13">The order of the buttons can be changed at any time by moving them to a different position in the area with the mouse.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153714" role="listitem" l10n="U" oldref="14">Remove a button by dragging it back to the area of the other buttons at the right of the dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147338" role="listitem" l10n="U" oldref="15">To open the <link href="text/scalc/01/12090105.xhp" name="Data Field"><emph>Data Field</emph></link> dialog, double-click one of the buttons in the <emph>Row</emph> or <emph>Column</emph> area. Use the dialog to select if and to what extent <item type="productname">%PRODUCTNAME</item> calculates display subtotals.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3154020" role="paragraph" l10n="CHG" oldref="18">Exit the Pivot Table dialog by pressing OK. A <emph>Filter</emph> button will now be inserted, or a page button for every data field that you dropped in the <emph>Page Fields</emph> area. The pivot table is inserted further down.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/datapilot.xhp#datapilot"/>
+         <embed href="text/scalc/guide/datapilot_edittable.xhp#datapilot_edittable"/>
+         <embed href="text/scalc/guide/datapilot_filtertable.xhp#datapilot_filtertable"/>
+         <embed href="text/scalc/guide/datapilot_updatetable.xhp#datapilot_updatetable"/>
+         <embed href="text/scalc/guide/datapilot_grouping.xhp#datapilot_grouping"/>
+         <embed href="text/scalc/guide/datapilot_tipps.xhp#datapilot_tipps"/>
+         <embed href="text/scalc/guide/datapilot_deletetable.xhp#datapilot_deletetable"/>
+      </section>
+   </body>
+</helpdocument>

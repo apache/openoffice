@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_xml_crypto_xciphercontext_idl_
+#define __com_sun_star_xml_crypto_xciphercontext_idl_
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+#ifndef __com_sun_star_lang_DisposedException_idl__
+#include <com/sun/star/lang/DisposedException.idl>
+#endif
+
+//============================================================================
+
+ module com {  module sun {  module star {  module xml { module crypto {
+
+//============================================================================
+/** This interface allows to encrypt/decrypt data using the cipher context.
+    <p>
+    The algorithm as well as encryption data are specified on object creation.
+    </p>
+
+    @see <type>XCipherContextSupplier</type>
+    @since OOo 3.4
+ */
+interface XCipherContext : com::sun::star::uno::XInterface
+{
+    //------------------------------------------------------------------------
+    /** encrypts/decrypts the data using the cipher.
+        <p>
+        Please have in mind, the cipher object state might depend from the
+        already encrypted/decrypted data ( it depends from the used
+        algorithm ).
+        </p>
+
+        <p>
+        Whether the object does encryption or decryption is specified by
+        creation of the object.
+        </p>
+
+        @param aData
+            data that should be encrypted/decrypted
+     */
+    sequence<byte> convertWithCipherContext( [in] sequence< byte > aData )
+        raises( ::com::sun::star::lang::IllegalArgumentException,
+                ::com::sun::star::lang::DisposedException );
+
+    //------------------------------------------------------------------------
+    /** finalizes cipher and disposes context.
+     */
+    sequence<byte> finalizeCipherContextAndDispose()
+        raises( ::com::sun::star::lang::DisposedException );
+};
+
+//============================================================================
+
+}; }; }; }; };
+
+#endif
+

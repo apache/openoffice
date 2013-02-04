@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textshared0105040200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Page</title>
+<filename>/text/shared/01/05040200.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="seite">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150620"><bookmark_value>pages;formatting and numbering</bookmark_value>
+<bookmark_value>formatting;pages</bookmark_value>
+<bookmark_value>paper formats</bookmark_value>
+<bookmark_value>paper trays</bookmark_value>
+<bookmark_value>printers;paper trays</bookmark_value>
+<bookmark_value>layout;pages</bookmark_value>
+<bookmark_value>binding space</bookmark_value>
+<bookmark_value>margins;pages</bookmark_value>
+<bookmark_value>gutter</bookmark_value>
+</bookmark><comment>mw made "binding space;" a one level entry and added "gutter" and "margins;pages"</comment>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_FORMAT_PAGE" id="bm_id3149877" localize="false"/>
+<paragraph role="heading" id="hd_id3150620" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05040200.xhp" name="Page">Page</link></paragraph>
+<paragraph role="paragraph" id="par_id3153255" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_FORMAT_PAGE">Allows you to define page layouts for single and multiple-page documents, as well as a numbering and paper formats.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040500.xhp#seite"/>
+</section>
+<embed href="text/shared/guide/pageformat_max.xhp#pageformat_max"/>
+<paragraph role="heading" id="hd_id3149549" xml-lang="en-US" level="2" l10n="U" oldref="31">Paper format</paragraph>
+<paragraph role="paragraph" id="par_id3150710" xml-lang="en-US" l10n="U" oldref="32">Select from a list of predefined paper sizes, or define a custom paper format.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_PAPER_SIZE" id="bm_id3147834" localize="false"/>
+<paragraph role="heading" id="hd_id3153394" xml-lang="en-US" level="3" l10n="U" oldref="33">Format</paragraph>
+<paragraph role="paragraph" id="par_id3149827" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_PAGE:LB_PAPER_SIZE">Select a predefined paper size, or create a custom format by entering the dimensions for the paper in the <emph>Height </emph>and <emph>Width </emph>boxes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_PAGE:ED_PAPER_WIDTH" id="bm_id3155893" localize="false"/>
+<paragraph role="heading" id="hd_id3154823" xml-lang="en-US" level="3" l10n="U" oldref="35">Width</paragraph>
+<paragraph role="paragraph" id="par_id3145313" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_PAGE:ED_PAPER_WIDTH">Displays the width of the selected paper format. To define a custom format, enter a width here.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_PAGE:ED_PAPER_HEIGHT" id="bm_id3155392" localize="false"/>
+<paragraph role="heading" id="hd_id3147008" xml-lang="en-US" level="3" l10n="U" oldref="37">Height</paragraph>
+<paragraph role="paragraph" id="par_id3156113" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_PAGE:ED_PAPER_HEIGHT">Displays the height of the selected paper format. To define a custom format, enter a height here.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_PAGE:RB_PORTRAIT" id="bm_id3147276" localize="false"/>
+<paragraph role="heading" id="hd_id3146798" xml-lang="en-US" level="3" l10n="U" oldref="39">Portrait</paragraph>
+<paragraph role="paragraph" id="par_id3149811" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_PAGE:RB_PORTRAIT">Displays and prints the current document with the paper oriented vertically.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_PAGE:RB_LANDSCAPE" id="bm_id3159116" localize="false"/>
+<paragraph role="heading" id="hd_id3150976" xml-lang="en-US" level="3" l10n="U" oldref="41">Landscape</paragraph>
+<paragraph role="paragraph" id="par_id3153827" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_PAGE:RB_LANDSCAPE">Displays and prints the current document with the paper oriented horizontally.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_TEXT_FLOW" id="bm_id3146774" localize="false"/>
+<paragraph role="heading" id="hd_id3156153" xml-lang="en-US" level="3" l10n="U" oldref="74">Text direction</paragraph>
+<paragraph role="paragraph" id="par_id3154380" xml-lang="en-US" l10n="U" oldref="73"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_PAGE_LB_TEXT_FLOW">Select the text direction that you want to use in your document.</ahelp> The "right-to-left (vertical)" text flow direction rotates all layout settings to the right by 90 degrees, except for the header and footer.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_PAPER_TRAY" id="bm_id3154516" localize="false"/>
+<paragraph role="heading" id="hd_id3156327" xml-lang="en-US" level="3" l10n="U" oldref="43">Paper tray</paragraph>
+<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="CHG" oldref="44"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_PAGE:LB_PAPER_TRAY">Select the paper source for your printer. If you want, you can assign different paper trays to different page styles. For example, assign a different tray to the First Page style and load the tray with your company's letterhead paper.</ahelp><comment>UFI: #i31234#</comment></paragraph>
+<embed href="text/shared/00/00000001.xhp#vorschau"/>
+<paragraph role="heading" id="hd_id3150275" xml-lang="en-US" level="2" l10n="U" oldref="3">Margins</paragraph>
+<paragraph role="paragraph" id="par_id3153348" xml-lang="en-US" l10n="U" oldref="4">Specify the amount of space to leave between the edges of the page and the document text.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_PAGE:ED_LEFT_MARGIN" id="bm_id3148943" localize="false"/>
+<paragraph role="heading" id="hd_id3153061" xml-lang="en-US" level="3" l10n="U" oldref="5">Left / Inner</paragraph>
+<paragraph role="paragraph" id="par_id3151384" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_PAGE:ED_LEFT_MARGIN">Enter the amount of space to leave between the left edge of the page and the document text. If you are using the <emph>Mirrored</emph> page layout, enter the amount of space to leave between the inner text margin and the inner edge of the page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_PAGE:ED_RIGHT_MARGIN" id="bm_id3154758" localize="false"/>
+<paragraph role="heading" id="hd_id3154923" xml-lang="en-US" level="3" l10n="U" oldref="8">Right / Outer</paragraph>
+<paragraph role="paragraph" id="par_id3147304" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_PAGE:ED_RIGHT_MARGIN">Enter the amount of space to leave between the right edge of the page and the document text. If you are using the <emph>Mirrored</emph> page layout, enter the amount of space to leave between the outer text margin and the outer edge of the page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_PAGE:ED_TOP_MARGIN" id="bm_id3148739" localize="false"/>
+<paragraph role="heading" id="hd_id3161657" xml-lang="en-US" level="3" l10n="U" oldref="11">Top</paragraph>
+<paragraph role="paragraph" id="par_id3154226" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_PAGE:ED_TOP_MARGIN">Enter the amount of space to leave between the upper edge of the page and the document text.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_PAGE:ED_BOTTOM_MARGIN" id="bm_id3153797" localize="false"/>
+<paragraph role="heading" id="hd_id3153381" xml-lang="en-US" level="3" l10n="U" oldref="13">Bottom</paragraph>
+<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_PAGE:ED_BOTTOM_MARGIN">Enter the amount of space to leave between the lower edge of the page and the document text.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_PAGE:CB_REGISTER" id="bm_id3159123" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_PAGE:CB_REGISTER" id="bm_id0428200802395615" localize="false"/>
+<paragraph role="paragraph" id="par_id0522200809473735" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Aligns the text on the selected Page Style to a vertical page grid.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150488" xml-lang="en-US" level="3" l10n="U" oldref="55"><switchinline select="appl"><caseinline select="WRITER">Register-true
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3151112" xml-lang="en-US" l10n="CHG" oldref="56"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_PAGE:CB_REGISTER">Aligns the text on the selected Page Style to a vertical page grid.</ahelp> The spacing of the grid is defined by the <emph>Reference Style</emph>.
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_REGISTER" id="bm_id3147426" localize="false"/>
+<paragraph role="paragraph" id="par_id0522200809473732" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select the Paragraph Style that you want to use as a reference for lining up the text on the selected Page style. The height of the font that is specified in the reference style sets the spacing of the vertical page grid. </ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150686" xml-lang="en-US" level="3" l10n="U" oldref="57"><switchinline select="appl"><caseinline select="WRITER">Reference Style
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3146146" xml-lang="en-US" l10n="CHG" oldref="58"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_PAGE:LB_REGISTER"><switchinline select="appl"><caseinline select="WRITER">Select the Paragraph Style that you want to use as a reference for lining up the text on the selected Page style. The height of the font that is specified in the reference style sets the spacing of the vertical page grid.
+</caseinline></switchinline></ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147480" xml-lang="en-US" level="2" l10n="U" oldref="47"><switchinline select="appl"><caseinline select="CALC">Table alignment
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3150417" xml-lang="en-US" l10n="U" oldref="48"><switchinline select="appl"><caseinline select="CALC">Specify the alignment options for the cells on a printed page.
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_PAGE:CB_HORZ" id="bm_id3149270" localize="false"/>
+<paragraph role="paragraph" id="par_id0522200809473845" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Centers the cells horizontally on the printed page.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147047" xml-lang="en-US" level="3" l10n="U" oldref="49"><switchinline select="appl"><caseinline select="CALC">Horizontal
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3153878" xml-lang="en-US" l10n="U" oldref="50"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_PAGE:CB_HORZ"><switchinline select="appl"><caseinline select="CALC">Centers the cells horizontally on the printed page.
+</caseinline></switchinline></ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_PAGE:CB_VERT" id="bm_id3154063" localize="false"/>
+<paragraph role="paragraph" id="par_id0522200809473811" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Centers the cells vertically on the printed page.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153522" xml-lang="en-US" level="3" l10n="U" oldref="51"><switchinline select="appl"><caseinline select="CALC">Vertical
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3149413" xml-lang="en-US" l10n="U" oldref="52"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_PAGE:CB_VERT"><switchinline select="appl"><caseinline select="CALC">Centers the cells vertically on the printed page.
+</caseinline></switchinline></ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147381" xml-lang="en-US" level="2" l10n="CHG" oldref="63">Layout settings</paragraph>
+
+<paragraph role="heading" id="hd_id3151041" xml-lang="en-US" level="2" l10n="U" oldref="15"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Page Layout</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3157962" xml-lang="en-US" l10n="U" oldref="16"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Select the page layout style to use in the current document.</defaultinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_LAYOUT" id="bm_id3153104" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_LAYOUT" id="bm_id5546128" localize="false"/><comment>ufi: see i47727 why the switched help text is not shown</comment>
+<paragraph role="heading" id="hd_id3145744" xml-lang="en-US" level="3" l10n="U" oldref="17"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Page layout</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3154218" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_PAGE:LB_LAYOUT"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Specify whether the current style should show odd pages, even pages, or both odd and even pages.</defaultinline></switchinline></ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154946" xml-lang="en-US" level="4" l10n="U" oldref="19"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Right and left</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3153058" xml-lang="en-US" l10n="CHG" oldref="20"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>The current page style shows both odd and even pages with left and right margins as specified.</defaultinline></switchinline></paragraph>
+<paragraph role="heading" id="hd_id3147287" xml-lang="en-US" level="4" l10n="U" oldref="21"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Mirrored</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3147317" xml-lang="en-US" l10n="CHG" oldref="22"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>The current page style shows both odd and even pages with inner and outer margins as specified. Use this layout if you want to bind the printed pages like a book. Enter the binding space as the "Inner" margin.</defaultinline></switchinline></paragraph>
+<paragraph role="heading" id="hd_id3155308" xml-lang="en-US" level="4" l10n="U" oldref="23"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Only right</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3152885" xml-lang="en-US" l10n="U" oldref="24"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>The current page style shows only odd (right) pages. Even pages are shown as blank pages.</defaultinline></switchinline></paragraph>
+<paragraph role="heading" id="hd_id3157309" xml-lang="en-US" level="4" l10n="U" oldref="25"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>Only left</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3147326" xml-lang="en-US" l10n="U" oldref="26"><switchinline select="appl"><caseinline select="DRAW">
+</caseinline><caseinline select="IMPRESS">
+</caseinline><defaultinline>The current page style shows only even (left) pages. Odd pages are shown as blank pages.</defaultinline></switchinline></paragraph>
+<paragraph role="heading" id="hd_id3155366" xml-lang="en-US" level="2" l10n="U" oldref="53"><switchinline select="appl"><caseinline select="WRITER">Register-true
+</caseinline></switchinline></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_NUMBER_FORMAT" id="bm_id3149417" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_PAGE:LB_NUMBER_FORMAT" id="bm_id5692312" localize="false"/><comment>ufi: removed switches</comment>
+<paragraph role="heading" id="hd_id3083281" xml-lang="en-US" level="3" l10n="CHG" oldref="27">Format</paragraph>
+<paragraph role="paragraph" id="par_id3153745" xml-lang="en-US" l10n="CHG" oldref="28"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_PAGE:LB_NUMBER_FORMAT">Select the page numbering format that you want to use for the current page style.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_PAGE:CB_ADAPT" id="bm_id3156178" localize="false"/>
+<paragraph role="paragraph" id="par_id0522200809473965" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Resizes the drawing objects so that they fit on the paper format that you select. The arrangement of the drawing objects is preserved.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3151318" xml-lang="en-US" level="3" l10n="U" oldref="67"><switchinline select="appl"><caseinline select="OFFICE">
+</caseinline><caseinline select="WRITER">
+</caseinline><caseinline select="CALC">
+</caseinline><caseinline select="CHART">
+</caseinline><caseinline select="MATH">
+</caseinline><caseinline select="IMAGE">
+</caseinline><defaultinline>AutoFit object to page format</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3144746" xml-lang="en-US" l10n="U" oldref="68"><switchinline select="appl"><caseinline select="OFFICE">
+</caseinline><caseinline select="WRITER">
+</caseinline><caseinline select="CALC">
+</caseinline><caseinline select="CHART">
+</caseinline><caseinline select="MATH">
+</caseinline><caseinline select="IMAGE">
+</caseinline><defaultinline><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_PAGE:CB_ADAPT">Resizes the drawing objects so that they fit on the paper format that you select. The arrangement of the drawing objects is preserved.</ahelp></defaultinline></switchinline></paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3149123" xml-lang="en-US" l10n="C"><link href="text/shared/00/00000001.xhp#metrik" name="Changing measurement units">Changing measurement units</link></paragraph>
+<switch select="appl">
+<case select="WRITER">
+<paragraph role="paragraph" id="par_id3153730" xml-lang="en-US" l10n="CHG"><link href="text/swriter/guide/registertrue.xhp" name="Writing Register-true">Writing Register-true</link></paragraph>
+</case>
+</switch>
+</section>
+</body>
+</helpdocument>

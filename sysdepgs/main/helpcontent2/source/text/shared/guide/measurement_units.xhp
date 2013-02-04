@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidemeasurement_unitsxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Selecting Measurement Units</title>
+<filename>/text/shared/guide/measurement_units.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-04-22T12:49:25">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159201"><bookmark_value>documents;measurement units in</bookmark_value>
+<bookmark_value>measurement units;selecting</bookmark_value>
+<bookmark_value>units;measurement units</bookmark_value>
+<bookmark_value>centimeters</bookmark_value>
+<bookmark_value>inches</bookmark_value>
+<bookmark_value>distances</bookmark_value>
+<bookmark_value>selecting;measurement units</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3159201" xml-lang="en-US" level="1" l10n="C"><variable id="measurement_units"><link href="text/shared/guide/measurement_units.xhp" name="Selecting Measurement Units">Selecting Measurement Units</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3146957" xml-lang="en-US" l10n="U" oldref="2">You can select separate measurement units for $[officename] Writer, $[officename] Writer/Web, $[officename] Calc, $[officename] Impress and $[officename] Draw documents.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_idN10674" xml-lang="en-US" l10n="NEW">Open a document of the type for which you want to change the measurement units.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="3">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline></emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154749" xml-lang="en-US" l10n="CHG" oldref="4">In the left pane of the dialog, double-click the application for which you want to select the measurement unit.</paragraph>
+<paragraph role="listitem" id="par_id3147653" xml-lang="en-US" l10n="CHG" oldref="5">Double-click <emph>%PRODUCTNAME Writer</emph> if you want to select the measurement units for text documents.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150443" xml-lang="en-US" l10n="U" oldref="6">Click on <emph>General</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147335" xml-lang="en-US" l10n="CHG" oldref="7">On the <emph>General</emph> tab page, select the measurement unit. Close the dialog with <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="CHG" oldref="8"><link href="text/shared/00/00000003.xhp" name="Entering measurement units directly">Entering measurement units directly</link></paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="9"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01040200.xhp" name="Writer - General">%PRODUCTNAME Writer - General</link></paragraph>
+</body>
+</helpdocument>

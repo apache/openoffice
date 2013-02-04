@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswriterguidebackgroundxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Defining Background Colors or Background Graphics</title>
+         <filename>/text/swriter/guide/background.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149346"><bookmark_value>backgrounds;text objects</bookmark_value>
+<bookmark_value>words;backgrounds</bookmark_value>
+<bookmark_value>paragraphs; backgrounds</bookmark_value>
+<bookmark_value>text;backgrounds</bookmark_value>
+<bookmark_value>tables; backgrounds</bookmark_value>
+<bookmark_value>cells; backgrounds</bookmark_value>
+<bookmark_value>backgrounds;selecting</bookmark_value>
+</bookmark><comment>MW transferred 4 index entries from shared/guide/background.xhp and added 3 new entries</comment>
+<paragraph xml-lang="en-US" id="hd_id3149346" role="heading" level="1" l10n="U" oldref="1"><variable id="background"><link href="text/swriter/guide/background.xhp" name="Defining Background Colors or Background Graphics">Defining Background Colors or Background Graphics</link>
+</variable></paragraph><comment>MW built this file from splitting shared/guide/background.xhp</comment>
+<paragraph xml-lang="en-US" id="par_id7355265" role="paragraph" l10n="NEW">You can define a background color or use a graphic as a background for various objects in $[officename] Writer.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3147653" role="heading" level="2" l10n="U" oldref="3">To Apply a Background To Text Characters</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150669" role="listitem" l10n="U" oldref="4">Select the characters.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155390" role="listitem" l10n="U" oldref="5">Choose <emph>Format - Character</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153665" role="listitem" l10n="U" oldref="6">Click the <emph>Background</emph> tab, select the background color.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3153541" role="heading" level="2" l10n="U" oldref="7">To Apply a Background To a Paragraph</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145119" role="listitem" l10n="U" oldref="8">Place the cursor in the paragraph or select several paragraphs.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3158430" role="listitem" l10n="U" oldref="9">Choose <emph>Format - Paragraph</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151245" role="listitem" l10n="U" oldref="10">On the <emph>Background</emph> tab page, select the background color or a background graphic.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id0104201010554939" role="tip" l10n="NEW">To select an object in the background, hold down the <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> key and click the object. Alternatively, use the Navigator to select the object.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149294" role="heading" level="2" l10n="U"
+                 oldref="11">To Apply a Background To All or Part of a Table</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154346" role="listitem" l10n="U" oldref="12">Place the cursor in the table in your text document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148664" role="listitem" l10n="CHG" oldref="13">Choose <emph>Table - Table Properties</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154938" role="listitem" l10n="U" oldref="14">On the <emph>Background</emph> tab page, select the background color or a background graphic.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156280" role="listitem" l10n="U" oldref="15">In the <emph>For</emph> box, choose whether the color or graphic should apply to the current cell, the current row or the whole table. If you select several cells or rows before opening the dialog, the change applies to the selection.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3151041" role="tip" l10n="U" oldref="31">You may also use an icon to apply a background to table parts.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150767" role="tip" l10n="U" oldref="32">To apply a background color to cells, select the cells and click the color on the <emph>Background Color</emph> toolbar.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147084" role="tip" l10n="U" oldref="33">To apply a background color to a text paragraph within a cell, place the cursor into the text paragraph, then click the color on the <item type="menuitem">Background Color</item> toolbar.</paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+<switch select="appl">
+<case select="IMPRESS"><embed href="text/simpress/guide/background.xhp#background"/>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="par_idN10A56" role="paragraph" l10n="NEW"><link href="text/shared/02/02160000.xhp">Highlighting icon</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156180" role="paragraph" l10n="U" oldref="30"><link href="text/shared/01/05030600.xhp" name="Background tab page">Background tab page</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id4922025" role="paragraph" l10n="NEW"><link href="text/shared/guide/background.xhp">Watermarks</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id478530" role="paragraph" l10n="NEW"><link href="text/swriter/guide/pagebackground.xhp">Page Backgrounds as Page Styles</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

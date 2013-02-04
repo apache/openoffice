@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideheader_pagestylesxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Defining Different Headers and Footers</title>
+         <filename>/text/swriter/guide/header_pagestyles.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155920"><bookmark_value>headers;defining for left and right pages</bookmark_value>
+      <bookmark_value>footers;defining for left and right pages</bookmark_value>
+      <bookmark_value>page styles; changing</bookmark_value>
+      <bookmark_value>defining; headers/footers</bookmark_value>
+      <bookmark_value>mirrored page layout</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3155920" role="heading" level="1" l10n="U"
+                 oldref="25"><variable id="header_pagestyles"><link href="text/swriter/guide/header_pagestyles.xhp" name="Defining Different Headers and Footers">Defining Different Headers and Footers</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154263" role="paragraph" l10n="U" oldref="26">You can use different headers and footers on different pages in your document, so long as the pages use different page styles. $[officename] provides several predefined page styles, such as <emph>First page</emph>, <emph>Left page</emph> and <emph>Right page</emph>, or you can create a custom page style.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147105" role="paragraph" l10n="U" oldref="27">You can also use the mirrored page layout if you want to add a header to a page style that has different inner and outer page margins. To apply this option to a page style, choose <item type="menuitem">Format - Page</item>, click the<emph/>
+         <item type="menuitem">Page</item> tab, and in the<emph/>
+         <item type="menuitem">Layout settings</item> area, choose “Mirrored” in the<emph/>
+         <item type="menuitem">Page layout</item> box.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150224" role="paragraph" l10n="U" oldref="28">For example, you can use page styles to define different headers for even and odd pages in a document.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150929" role="listitem" l10n="U" oldref="29">Open a new text document.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150946" role="listitem" l10n="U" oldref="31">Choose <emph>Format - Styles and Formatting</emph> and click the <emph>Page Styles</emph> icon in the Styles and Formatting window.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150510" role="listitem" l10n="U" oldref="30">Right-click "Right Page" in the list of page styles and choose <emph>Modify</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150536" role="listitem" l10n="U" oldref="33">In the <item type="menuitem">Page Styles</item> dialog, click the <item type="menuitem">Header</item>
+               <emph/>tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153750" role="listitem" l10n="U" oldref="34">Select<emph/>
+               <item type="menuitem">Header on</item> and click the <item type="menuitem">Organizer</item> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146865" role="listitem" l10n="U" oldref="35">In the <item type="menuitem">Next Style</item>
+               <emph/>box, select "Left Page".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146889" role="listitem" l10n="U" oldref="36">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150714" role="listitem" l10n="U" oldref="37">In the <emph>Styles and Formatting</emph> window, right-click "Left Page" in the list of page styles and choose <emph>Modify</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150748" role="listitem" l10n="U" oldref="38">In the <item type="menuitem">Page Styles</item> dialog, click the <item type="menuitem">Header</item>
+               <emph/>tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153172" role="listitem" l10n="U" oldref="39">Select<emph/>
+               <item type="menuitem">Header on</item> and click the <item type="menuitem">Organizer</item> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147061" role="listitem" l10n="U" oldref="40">In the <item type="menuitem">Next Style</item>
+               <emph/>box, select "Right Page".</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147086" role="listitem" l10n="U" oldref="41">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145263" role="listitem" l10n="U" oldref="42">Double-click "Right Page" in the list of page styles to apply the style to the current page.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145284" role="listitem" l10n="U" oldref="43">Enter text or graphics in the header for the Left Page style. After the next page is added to your document, enter text or graphics in the header for the Right Page style. </paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/header_footer.xhp#header_footer"/>
+      <embed href="text/swriter/guide/change_header.xhp#change_header"/>
+      <embed href="text/swriter/guide/header_with_chapter.xhp#header_with_chapter"/>
+      <embed href="text/swriter/guide/header_with_line.xhp#header_with_line"/>
+   </body>
+</helpdocument>

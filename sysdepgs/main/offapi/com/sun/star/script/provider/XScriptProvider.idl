@@ -1,0 +1,70 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_script_provider_XScriptProvider_idl__
+#define __com_sun_star_script_provider_XScriptProvider_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+#ifndef __com_sun_star_script_provider_XScript_idl__
+#include <com/sun/star/script/provider/XScript.idl>
+#endif
+#ifndef __com_sun_star_script_provider_ScriptFrameworkErrorException_idl__
+#include <com/sun/star/script/provider/ScriptFrameworkErrorException.idl>
+#endif
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+//===========================================================================
+
+module com { module sun { module star { module script { module provider {
+
+//===========================================================================
+/**
+    This interface provides a factory for obtaining objects implmenting the
+    XScript interface.
+*/
+interface XScriptProvider : ::com::sun::star::uno::XInterface {
+
+    //----------------------------------------------------------------------
+    /** a factory method for the creation of XScript
+        implementations.
+
+        @param sScriptURI 
+            is the logical or language-dependent script URI 
+
+        @returns 
+            an object implementing <type scope="::com::sun::star::script::provider">XScript</type> representing the script
+
+        @throws ::com::sun::star::provider::ScriptFrameworkErrorException
+            Framework error getting  script for URI.
+    */
+	XScript getScript( [in] string sScriptURI )  raises ( ::com::sun::star::script::provider::ScriptFrameworkErrorException );
+};
+
+//===========================================================================
+}; }; }; }; }; // ::com::sun::star::script::provider
+
+#endif

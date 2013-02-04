@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105190000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Split Table</title>
+<filename>/text/swriter/01/05190000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-11T15:17:06">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="tabelleauf">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153246"><bookmark_value>tables; splitting</bookmark_value>
+<bookmark_value>splitting tables; at cursor position</bookmark_value>
+<bookmark_value>dividing tables</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:SplitTable" id="bm_id3037041" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:SplitTable" id="bm_id3154654" localize="false"/>
+<!-- removed HID 20642 -->
+<paragraph role="heading" id="hd_id3153246" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05190000.xhp" name="Split Table">Split Table</link></paragraph>
+<paragraph role="paragraph" id="par_id3083450" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:SplitTable">Splits the current table into two separate tables at the cursor position.</ahelp> You can also access this command by right-clicking in a table cell.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#tabauf"/>
+</section>
+<paragraph role="heading" id="hd_id3149351" xml-lang="en-US" level="2" l10n="U" oldref="3">Mode</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SPLIT_TABLE:RB_CNTNT" id="bm_id3153002" localize="false"/>
+<paragraph role="heading" id="hd_id3154554" xml-lang="en-US" level="3" l10n="U" oldref="5">Copy heading</paragraph>
+<paragraph role="paragraph" id="par_id3154503" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SW:RADIOBUTTON:DLG_SPLIT_TABLE:RB_CNTNT">Includes the first row of the original table as the first row of the second table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SPLIT_TABLE:RB_BOX_PARA" id="bm_id3145247" localize="false"/>
+<paragraph role="heading" id="hd_id3149880" xml-lang="en-US" level="3" l10n="U" oldref="7">Custom heading (apply style)</paragraph>
+<paragraph role="paragraph" id="par_id3148389" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SW:RADIOBUTTON:DLG_SPLIT_TABLE:RB_BOX_PARA">Inserts a blank header row in the second table that is formatted with the style of the first row in the original table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SPLIT_TABLE:RB_BOX_NOPARA" id="bm_id3148775" localize="false"/>
+<paragraph role="heading" id="hd_id3150568" xml-lang="en-US" level="3" l10n="U" oldref="9">Custom heading</paragraph>
+<paragraph role="paragraph" id="par_id3149027" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SW:RADIOBUTTON:DLG_SPLIT_TABLE:RB_BOX_NOPARA">Inserts an additional blank row in the second table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_SPLIT_TABLE:RB_BORDER" id="bm_id3147173" localize="false"/>
+<paragraph role="heading" id="hd_id3153720" xml-lang="en-US" level="3" l10n="U" oldref="11">No heading</paragraph>
+<paragraph role="paragraph" id="par_id3156318" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SW:RADIOBUTTON:DLG_SPLIT_TABLE:RB_BORDER">Splits the table without copying the header row.</ahelp></paragraph>
+<paragraph role="warning" id="par_id3145411" xml-lang="en-US" l10n="U" oldref="13">When you split a table that contains formulas, the formulas may be affected.</paragraph>
+</body>
+</helpdocument>

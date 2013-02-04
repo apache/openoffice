@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="sw_SwXTextField" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+'Required for com.sun.star.lang.XComponent
+Global oComponentInstance As Object
+
+Global oXTextContent as Object
+Global oXTextContentRange as Object
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' sw.SwXTextField
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim oFieldMaster As Object
+    Dim oFieldMaster2 As Object
+    Dim oFieldMaster3 As Object
+    Dim oCursor As Object
+
+    oDoc = utils.createDocument("swriter", cObjectName)
+
+    oFieldMaster = oDoc.createInstance("com.sun.star.text.FieldMaster.Database")
+    oFieldMaster2 = oDoc.createInstance("com.sun.star.text.FieldMaster.Database")
+    oFieldMaster3 = oDoc.createInstance("com.sun.star.text.FieldMaster.Database")
+    oObj = oDoc.createInstance("com.sun.star.text.TextField.Database")
+    oComponentInstance = oDoc.createInstance("com.sun.star.text.TextField.Database")
+
+    oFieldMaster.setPropertyValue("DataBaseName","Address Book File")
+    oFieldMaster.setPropertyValue("DataTableName","address")
+    oFieldMaster.setPropertyValue("DataColumnName","FIRSTNAME")
+
+    oFieldMaster2.setPropertyValue("DataBaseName","Address Book File")
+    oFieldMaster2.setPropertyValue("DataTableName","address")
+    oFieldMaster2.setPropertyValue("DataColumnName","FIRSTNAME")
+
+    oFieldMaster3.setPropertyValue("DataBaseName","Address Book File")
+    oFieldMaster3.setPropertyValue("DataTableName","address")
+    oFieldMaster3.setPropertyValue("DataColumnName","FIRSTNAME")
+
+    oCursor = oDoc.Text.createTextCursor()
+
+    oObj.attachTextFieldMaster(oFieldMaster)
+    oDoc.Text.insertTextContent(oCursor, oObj, false)
+    oComponentInstance.attachTextFieldMaster(oFieldMaster2)
+    oDoc.Text.insertTextContent(oCursor, oComponentInstance, false)
+
+	oXTextContent = oDoc.createInstance("com.sun.star.text.TextField.Database")
+	oXTextContent.attachTextFieldMaster(oFieldMaster3)
+	oXTextContentRange = oDoc.Text.createTextCursor()
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+</script:module>

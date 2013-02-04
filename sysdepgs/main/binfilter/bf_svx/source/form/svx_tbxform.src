@@ -1,0 +1,107 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define NO_LOCALIZE_EXPORT
+#include "svxids.hrc"
+#include "fmresids.hrc"
+#include "helpid.hrc"
+
+#define IMAGE_STDBTN_COLOR Color { Red = 0xC000; Green = 0xC000; Blue = 0xC000; }
+
+String RID_SVXTBX_FORM_FILTER
+{
+	Text [ de ] = "Filterleiste" ;
+	Text [ en-US ] = "Filter bar" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Barra de filtros";
+	Text[ ru ] = "Панель фильтров";
+	Text[ el ] = "Γραμμή φίλτρου";
+	Text[ nl ] = "Filterbalk";
+	Text[ fr ] = "Barre de filtres";
+	Text[ es ] = "Barra de filtros";
+	Text[ fi ] = "Suodatusrivi";
+	Text[ ca ] = "Barra de filtre";
+	Text[ it ] = "Barra dei filtri";
+	Text[ sk ] = "Panel filtra";
+	Text[ da ] = "Filterlinje";
+	Text[ sv ] = "Filterlist";
+	Text[ pl ] = "Pasek filtru";
+	Text[ pt-BR ] = "Barra de filtros";
+	Text[ th ] = "แถบตัวกรอง";
+	Text[ ja ] = "フィルタバー";
+	Text[ ko ] = "필터 도구모음";
+	Text[ zh-CN ] = "筛选栏";
+	Text[ zh-TW ] = "篩選欄";
+	Text[ tr ] = "Filtre çubuğu";
+	Text[ hi-IN ] = "फिल्टर पट्टी";
+	Text[ ar ] = "شريط الفلتر";
+	Text[ he ] = "‮סרגל מסננים‬";
+};
+
+String RID_SVXTBX_FORM_NAVIGATION
+{
+	Text [ de ] = "Datenbankleiste" ;
+	Text [ en-US ] = "Database bar" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Barra de ferramentas da base de dados";
+	Text[ ru ] = "Панель базы данных";
+	Text[ el ] = "Γραμμή βάσης δεδομένων";
+	Text[ nl ] = "Databasebalk";
+	Text[ fr ] = "Barre de base de données";
+	Text[ es ] = "Barra de base de datos";
+	Text[ fi ] = "Tietolähdetyökalurivi";
+	Text[ ca ] = "Barra de la base de dades";
+	Text[ it ] = "Barra degli strumenti per database";
+	Text[ sk ] = "Panel databázy";
+	Text[ da ] = "Databaselinje";
+	Text[ sv ] = "Databaslist";
+	Text[ pl ] = "Pasek bazy danych";
+	Text[ pt-BR ] = "Barra do banco de dados";
+	Text[ th ] = "แถบฐานข้อมูล";
+	Text[ ja ] = "データベースバー";
+	Text[ ko ] = "데이터베이스 도구모음";
+	Text[ zh-CN ] = "数据库工具栏";
+	Text[ zh-TW ] = "資料庫工具列";
+	Text[ tr ] = "Veritabanı çubuğu";
+	Text[ hi-IN ] = "लेखासंचय पट्टी";
+	Text[ ar ] = "شريط قاعدة البيانات";
+	Text[ he ] = "‮סרגל מסד נתונים‬";
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

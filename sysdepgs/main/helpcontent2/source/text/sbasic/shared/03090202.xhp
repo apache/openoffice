@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090202xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">For...Next Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090202.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T12:09:02">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="fornext">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149205"><bookmark_value>For statement</bookmark_value>
+<bookmark_value>To statement</bookmark_value>
+<bookmark_value>Step statement</bookmark_value>
+<bookmark_value>Next statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090202.xhp" name="For...Next Statement [Runtime]">For...Next Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U" oldref="2">Repeats the statements between the For...Next block a specified number of times.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3156153" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="4">For counter=start To end [Step step]</paragraph>
+<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U" oldref="5">statement block</paragraph>
+<paragraph role="paragraph" id="par_id3146796" xml-lang="en-US" l10n="U" oldref="6">[Exit For]</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="7">statement block</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="8">Next [counter]</paragraph>
+<paragraph role="heading" id="hd_id3150400" xml-lang="en-US" level="2" l10n="U" oldref="9">Variables:</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="10">
+<emph>Counter:</emph> Loop counter initially assigned the value to the right of the equal sign (start). Only numeric variables are valid. The loop counter increases or decreases according to the variable Step until End is passed.</paragraph>
+<paragraph role="paragraph" id="par_id3152455" xml-lang="en-US" l10n="U" oldref="11">
+<emph>Start:</emph> Numeric variable that defines the initial value at the beginning of the loop.</paragraph>
+<paragraph role="paragraph" id="par_id3151043" xml-lang="en-US" l10n="U" oldref="12">
+<emph>End:</emph> Numeric variable that defines the final value at the end of the loop.</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="13">
+<emph>Step:</emph> Sets the value by which to increase or decrease the loop counter. If Step is not specified, the loop counter is incremented by 1. In this case, End must be greater than Start. If you want to decrease Counter, End must be less than Start, and Step must be assigned a negative value.</paragraph>
+<paragraph role="paragraph" id="par_id3154684" xml-lang="en-US" l10n="U" oldref="14">The <emph>For...Next</emph> loop repeats all of the statements in the loop for the number of times that is specified by the parameters.</paragraph>
+<paragraph role="paragraph" id="par_id3147287" xml-lang="en-US" l10n="U" oldref="15">As the counter variable is decreased, $[officename] Basic checks if the end value has been reached. As soon as the counter passes the end value, the loop automatically ends.</paragraph>
+<paragraph role="paragraph" id="par_id3159154" xml-lang="en-US" l10n="U" oldref="16">It is possible to nest <emph>For...Next</emph> statements. If you do not specify a variable following the <emph>Next</emph> statement, <emph>Next</emph> automatically refers to the most recent <emph>For</emph> statement.</paragraph>
+<paragraph role="paragraph" id="par_id3155306" xml-lang="en-US" l10n="U" oldref="17">If you specify an increment of 0, the statements between <emph>For</emph> and <emph>Next</emph> are repeated continuously.</paragraph>
+<paragraph role="paragraph" id="par_id3155854" xml-lang="en-US" l10n="U" oldref="18">When counting down the counter variable, $[officename] Basic checks for overflow or underflow. The loop ends when Counter exceeds End (positive Step value) or is less than End (negative Step value).</paragraph>
+<paragraph role="paragraph" id="par_id3145273" xml-lang="en-US" l10n="U" oldref="19">Use the <emph>Exit For</emph> statement to exit the loop unconditionally. This statement must be within a <emph>For...Next</emph> loop. Use the <emph>If...Then</emph> statement to test the exit condition as follows:</paragraph>
+<paragraph role="paragraph" id="par_id3153190" xml-lang="en-US" l10n="U" oldref="20">For...</paragraph>
+<paragraph role="paragraph" id="par_id3149482" xml-lang="en-US" l10n="U" oldref="21">statements</paragraph>
+<paragraph role="paragraph" id="par_id3147124" xml-lang="en-US" l10n="U" oldref="22">If condition = True Then Exit For</paragraph>
+<paragraph role="paragraph" id="par_id3153159" xml-lang="en-US" l10n="U" oldref="23">statements</paragraph>
+<paragraph role="paragraph" id="par_id3154096" xml-lang="en-US" l10n="U" oldref="24">Next</paragraph>
+<paragraph role="paragraph" id="par_id3156286" xml-lang="en-US" l10n="U" oldref="25">Note: In nested <emph>For...Next</emph> loops, if you exit a loop unconditionally with <emph>Exit For</emph>, only one loop is exited.</paragraph>
+<paragraph role="heading" id="hd_id3148457" xml-lang="en-US" level="2" l10n="U" oldref="26">Example</paragraph>
+<paragraph role="paragraph" id="par_id3151074" xml-lang="en-US" l10n="U" oldref="27">The following example uses two nested loops to sort a string array with 10 elements ( sEntry() ), that are first filled with various contents:</paragraph>
+<paragraph role="paragraph" id="par_id3155603" xml-lang="en-US" l10n="U" oldref="28">Sub ExampleSort</paragraph>
+<paragraph role="paragraph" id="par_id3156275" xml-lang="en-US" l10n="U" oldref="29">Dim sEntry(9) As String</paragraph>
+<paragraph role="paragraph" id="par_id3155066" xml-lang="en-US" l10n="U" oldref="30">Dim iCount As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3150751" xml-lang="en-US" l10n="U" oldref="31">Dim iCount2 As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3155446" xml-lang="en-US" l10n="U" oldref="32">Dim sTemp As String</paragraph>
+<paragraph role="paragraph" id="par_id3155767" xml-lang="en-US" l10n="U" oldref="42">sEntry(0) = "Jerry"</paragraph>
+<paragraph role="paragraph" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="33">sEntry(1) = "Patty"</paragraph>
+<paragraph role="paragraph" id="par_id3148993" xml-lang="en-US" l10n="U" oldref="34">sEntry(2) = "Kurt"</paragraph>
+<paragraph role="paragraph" id="par_id3156382" xml-lang="en-US" l10n="U" oldref="35">sEntry(3) = "Thomas"</paragraph>
+<paragraph role="paragraph" id="par_id3155174" xml-lang="en-US" l10n="U" oldref="36">sEntry(4) = "Michael"</paragraph>
+<paragraph role="paragraph" id="par_id3166448" xml-lang="en-US" l10n="U" oldref="37">sEntry(5) = "David"</paragraph>
+<paragraph role="paragraph" id="par_id3149255" xml-lang="en-US" l10n="U" oldref="38">sEntry(6) = "Cathy"</paragraph>
+<paragraph role="paragraph" id="par_id3149565" xml-lang="en-US" l10n="U" oldref="39">sEntry(7) = "Susie"</paragraph>
+<paragraph role="paragraph" id="par_id3145148" xml-lang="en-US" l10n="U" oldref="40">sEntry(8) = "Edward"</paragraph>
+<paragraph role="paragraph" id="par_id3145229" xml-lang="en-US" l10n="U" oldref="41">sEntry(9) = "Christine"</paragraph>
+<paragraph role="paragraph" id="par_id3149107" xml-lang="en-US" l10n="U" oldref="44">For iCount = 0 To 9</paragraph>
+<paragraph role="paragraph" id="par_id3148485" xml-lang="en-US" l10n="U" oldref="45">For iCount2 = iCount + 1 To 9</paragraph>
+<paragraph role="paragraph" id="par_id3155608" xml-lang="en-US" l10n="U" oldref="46">If sEntry(iCount) &gt; sEntry(iCount2) Then</paragraph>
+<paragraph role="paragraph" id="par_id3150938" xml-lang="en-US" l10n="U" oldref="47">sTemp = sEntry(iCount)</paragraph>
+<paragraph role="paragraph" id="par_id3153790" xml-lang="en-US" l10n="U" oldref="48">sEntry(iCount) = sEntry(iCount2)</paragraph>
+<paragraph role="paragraph" id="par_id3149210" xml-lang="en-US" l10n="U" oldref="49">sEntry(iCount2) = sTemp</paragraph>
+<paragraph role="paragraph" id="par_id3153781" xml-lang="en-US" l10n="U" oldref="50">End If</paragraph>
+<paragraph role="paragraph" id="par_id3158446" xml-lang="en-US" l10n="U" oldref="51">Next iCount2</paragraph>
+<paragraph role="paragraph" id="par_id3150783" xml-lang="en-US" l10n="U" oldref="52">Next iCount</paragraph>
+<paragraph role="paragraph" id="par_id3151278" xml-lang="en-US" l10n="U" oldref="57">For iCount = 0 To 9</paragraph>
+<paragraph role="paragraph" id="par_id3148462" xml-lang="en-US" l10n="U" oldref="58">Print sEntry(iCount)</paragraph>
+<paragraph role="paragraph" id="par_id3149528" xml-lang="en-US" l10n="U" oldref="59">Next iCount</paragraph>
+<paragraph role="paragraph" id="par_id3152580" xml-lang="en-US" l10n="U" oldref="60">End Sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,216 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+ // include ---------------------------------------------------------------
+#include <sfx2/sfx.hrc>
+#include "dialog.hrc"
+#include "templdlg.hrc"
+#include "helpid.hrc"
+
+ImageList DLG_STYLE_DESIGNER
+{
+    Prefix = "sc";
+	MaskColor = Color { Red = 0xFFFF ; Green = 0x0000 ; Blue = 0xFFFF ; };
+	IdList =
+	{
+		SID_STYLE_WATERCAN ;
+		SID_STYLE_NEW_BY_EXAMPLE ;
+		SID_STYLE_UPDATE_BY_EXAMPLE ;
+	};
+	IdCount = { 3 ; };
+};
+ImageList IMG_LST_STYLE_DESIGNER_HC
+{
+    Prefix = "sch";
+	MaskColor = Color { Red = 0xFFFF ; Green = 0x0000 ; Blue = 0xFFFF ; };
+	IdList =
+	{
+		SID_STYLE_WATERCAN ;
+		SID_STYLE_NEW_BY_EXAMPLE ;
+		SID_STYLE_UPDATE_BY_EXAMPLE ;
+	};
+	IdCount = { 3 ; };
+};
+ // RID_STYLECATALOG ------------------------------------------------------
+ModalDialog RID_STYLECATALOG
+{
+	HelpId = CMD_SID_STYLE_CATALOG ;
+	OutputSize = TRUE ;
+	SVLook = TRUE ;
+	Size = MAP_APPFONT ( 181 , 134 ) ;
+	Text [ en-US ] = "Style Catalog" ;
+	Moveable = TRUE ;
+	OKButton BT_OK
+	{
+		DefButton = TRUE ;
+		Pos = MAP_APPFONT ( 123 , 6 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		TabStop = TRUE ;
+	};
+	CancelButton BT_CANCEL
+	{
+		Pos = MAP_APPFONT ( 123 , 23 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		TabStop = TRUE ;
+	};
+	PushButton BT_ORG
+	{
+	    HelpID = "sfx2:PushButton:RID_STYLECATALOG:BT_ORG";
+		Pos = MAP_APPFONT ( 123 , 97 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Text [ en-US ] = "~Organizer..." ;
+		TabStop = TRUE ;
+	};
+	PushButton BT_DEL
+	{
+	    HelpID = "sfx2:PushButton:RID_STYLECATALOG:BT_DEL";
+		Pos = MAP_APPFONT ( 123 , 78 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Text [ en-US ] = "~Delete..." ;
+		TabStop = TRUE ;
+	};
+	PushButton BT_EDIT
+	{
+	    HelpID = "sfx2:PushButton:RID_STYLECATALOG:BT_EDIT";
+		Pos = MAP_APPFONT ( 123 , 60 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Text [ en-US ] = "~Modify..." ;
+		TabStop = TRUE ;
+	};
+	PushButton BT_NEW
+	{
+	    HelpID = "sfx2:PushButton:RID_STYLECATALOG:BT_NEW";
+		Pos = MAP_APPFONT ( 123 , 43 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Text [ en-US ] = "~New..." ;
+		TabStop = TRUE ;
+	};
+	HelpButton BT_HELP
+	{
+		Pos = MAP_APPFONT ( 123 , 114 ) ;
+		Size = MAP_APPFONT ( 50 , 14 ) ;
+		TabStop = TRUE ;
+	};
+	ListBox BT_TOOL
+	{
+	    HelpID = "sfx2:ListBox:RID_STYLECATALOG:BT_TOOL";
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 6 , 6 ) ;
+		Size = MAP_APPFONT ( 110 , 55 ) ;
+		TabStop = TRUE ;
+		DropDown = TRUE ;
+	};
+	Control BT_VLIST
+	{
+		HelpId = HID_TEMPLATE_FMT ;
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 6 , 23 ) ;
+		Size = MAP_APPFONT ( 110 , 89 ) ;
+		TabStop = TRUE ;
+	};
+	ListBox BT_FLIST
+	{
+	    HelpID = "sfx2:ListBox:RID_STYLECATALOG:BT_FLIST";
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 6 , 114 ) ;
+		Size = MAP_APPFONT ( 110 , 77 ) ;
+		TabStop = TRUE ;
+		Hide = TRUE ;
+		DropDown = TRUE ;
+	};
+};
+ // Strings ---------------------------------------------------------------
+String STR_STYLE_ELEMTLIST
+{
+	Text [ en-US ] = "Style List" ;
+};
+String STR_STYLE_FILTER_HIERARCHICAL
+{
+	Text [ en-US ] = "Hierarchical" ;
+};
+ // DLG_STYLE_DESIGNER ----------------------------------------------------
+DockingWindow DLG_STYLE_DESIGNER
+{
+	Text [ en-US ] = "Styles and Formatting" ;
+
+	HelpId = CMD_SID_STYLE_DESIGNER ;
+	OutputSize = TRUE ;
+	Hide = TRUE ;
+	SVLook = TRUE ;
+	Size = MAP_APPFONT ( 116 , 215 ) ;
+	Pos = MAP_APPFONT ( 0 , 0 ) ;
+	Closeable = TRUE ;
+	Zoomable = TRUE ;
+	Sizeable = TRUE ;
+	Dockable = TRUE ;
+	EnableResizing = TRUE ;
+	 //	HideWhenDeactivate = TRUE;
+	Border = TRUE ;
+	Moveable = TRUE ;
+	ToolBox TB_ACTION
+	{
+		Pos = MAP_APPFONT ( 3 , 3 ) ;
+		Size = MAP_APPFONT ( 57 , 42 ) ;
+		LineCount = 1 ;
+		ItemImageList = DLG_STYLE_DESIGNER ;
+		HelpId = HID_TEMPLDLG_TOOLBOX_RIGHT ;
+		ItemList =
+		{
+			ToolBoxItem
+			{
+				HelpId = HID_TEMPLDLG_WATERCAN ;
+				Identifier = SID_STYLE_WATERCAN ;
+				Text [ en-US ] = "Fill Format Mode" ;
+			};
+			ToolBoxItem
+			{
+				HelpId = HID_TEMPLDLG_NEWBYEXAMPLE ;
+				Identifier = SID_STYLE_NEW_BY_EXAMPLE ;
+				Text [ en-US ] = "New Style from Selection" ;
+			};
+			ToolBoxItem
+			{
+				HelpId = HID_TEMPLDLG_UPDATEBYEXAMPLE ;
+				Identifier = SID_STYLE_UPDATE_BY_EXAMPLE ;
+				Text [ en-US ] = "Update Style" ;
+			};
+		};
+	};
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#define SDR_ResourceBegin            2560
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Achtung: Alle Strings zwischen SDR_StringCacheBegin und
+// SDR_StringCacheEnd muessen buendig aneinander liegen.
+#define SDR_StringCacheBegin         (SDR_ResourceBegin)
+
+//changed by jmeng begin
+#define STR_ObjNameEnd	(SDR_StringCacheBegin + 140)
+//chnaged by jmeng end
+
+#define STR_EditBegin                (STR_ObjNameEnd+1)
+//changed by jmeng begin
+#define STR_EditEnd                  (STR_EditBegin  + 57)
+//changed by jmeng end
+
+#define STR_ExchangeBegin            (STR_EditEnd+1)
+//changed by jmeng begin
+#define STR_ExchangeEnd                  (STR_ExchangeBegin  + 4)
+//changed by jmeng end
+
+
+#define STR_DragBegin                (STR_ExchangeEnd+1)
+//changed by jmeng begin
+#define STR_DragEnd                  (STR_DragBegin +23)
+//changed by jmeng end
+
+#define STR_ViewBegin                (STR_DragEnd+1)
+#define STR_ViewTextEdit             (STR_ViewBegin + 0)
+#define STR_ViewMarkPoints           (STR_ViewBegin + 8)
+#define STR_ViewMarkGluePoints       (STR_ViewBegin +10)
+#define STR_ViewMarkMoreGluePoints   (STR_ViewBegin +11)
+//changed by jmeng begin
+#define STR_ViewEnd                  (STR_ViewBegin +12)
+//changed by jmeng end
+
+#define STR_UndoBegin                (STR_ViewEnd+1)
+//changed by jmeng begin
+#define STR_UndoEnd                  (STR_UndoBegin +15)
+//changed by jmeng end
+
+
+#define STR_LayerBegin               (STR_UndoEnd+1)
+#define STR_StandardLayerName        (STR_LayerBegin +0)
+//changed by jmeng begin
+#define STR_LayerEnd                  (STR_LayerBegin +0)
+//changed by jmeng end
+
+
+#define STR_ItemBegin                    (STR_LayerEnd+1)
+#define STR_ItemValBegin                 (STR_ItemBegin)
+//changed by jmeng begin
+#define STR_ItemValEnd                   (STR_ItemValBegin + 52)
+//changed by jmeng end 
+
+#define STR_ItemNamBegin                 (STR_ItemValEnd+1)
+//changed by jmeng
+#define STR_ItemEnd                      (STR_ItemNamBegin + 73)
+//changed by jmeng
+
+// 64 Resource-Id's reserviert fuer kompatible Erweiterungen
+#define STR_SvDraw_CacheReserve_Begin    (STR_ItemEnd+1)
+#define STR_SvDraw_CacheReserve_End      (STR_SvDraw_CacheReserve_Begin+63)
+#define SDR_StringCacheEnd               (STR_SvDraw_CacheReserve_Begin-1)
+
+#define STR_ErrorBegin                   (STR_SvDraw_CacheReserve_End+1)
+#define STR_SvDraw_ErrorReserve_Begin    (STR_ErrorBegin + 2)
+// hier ist Platz fuer 30 Eintraege
+#define STR_SvDraw_ErrorReserve_End      (STR_SvDraw_ErrorReserve_Begin + 29)
+#define STR_ErrorEnd                     STR_SvDraw_ErrorReserve_End
+
+// 22-05-98: 2 Eintraege fuer die Bitmaps von der StrErrorReserve abgeknapst
+#define BMAP_Begin                       (STR_ErrorEnd+1)
+#define BMAP_GrafikEi                    (BMAP_Begin +0)
+#define BMAP_End                         (BMAP_Begin +1)
+
+// Strings fuer den Vorlagen-Dialog
+#define	SIP_Begin							(BMAP_End)
+
+
+
+
+// #100499#
+
+// #101928#
+
+
+#define SDR_ResourceEnd						(SIP_End)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+

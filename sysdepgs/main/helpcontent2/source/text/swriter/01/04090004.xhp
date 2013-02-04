@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textswriter0104090004xml" indexer="include">
+<title id="tit" xml-lang="en-US">DocInformation</title>
+<filename>/text/swriter/01/04090004.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="dokumentinfo">
+<bookmark xml-lang="en-US" branch="hid/SW_HID_FLD_DOKINF" id="bm_id3152958" localize="false"/>
+<paragraph role="heading" id="hd_id3154479" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/04090004.xhp" name="DocInformation">DocInformation</link></paragraph>
+<paragraph role="paragraph" id="par_id3149692" xml-lang="en-US" l10n="U" oldref="2">DocInformation fields contain information about the properties of a document, such as the date a document was created. To view the properties of a document, choose <emph>File - Properties</emph>.</paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/swriter/00/00000404.xhp#felddokumentinfo"/>
+</section>
+<paragraph role="note" id="par_id3148982" xml-lang="en-US" l10n="U" oldref="3">When you export and import an HTML document containing DocInformation fields, <link href="text/swriter/01/04090007.xhp#dokumentinfo" name="special $[officename] formats">special $[officename] formats</link> are used.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_FIELD_DINF_TYPE" id="bm_id3153639" localize="false"/>
+<paragraph role="paragraph" id="par_id0902200804290053" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Lists the available field types. To add a field to your document, click a field type, click a field in the Select list, and then click Insert.</ahelp></paragraph>
+<embed href="text/swriter/01/04090001.xhp#feldtyp"/>
+<table id="tbl_id3149039">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id3155140" xml-lang="en-US" l10n="U" oldref="4">Type</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3149176" xml-lang="en-US" l10n="U" oldref="5">Meaning</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145774" xml-lang="en-US" l10n="U" oldref="6">Modified</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155915" xml-lang="en-US" l10n="U" oldref="7">Inserts the name of the author, and the date, or the time of the last save.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150108" xml-lang="en-US" l10n="U" oldref="8">Editing time</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155860" xml-lang="en-US" l10n="U" oldref="9">Inserts the amount of time spent on editing a document.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150700" xml-lang="en-US" l10n="U" oldref="10">Comments</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147490" xml-lang="en-US" l10n="U" oldref="11">Inserts the comments as entered in the <emph>Description</emph> tab page of the <emph>Properties</emph> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145262" xml-lang="en-US" l10n="U" oldref="12">Document number</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150556" xml-lang="en-US" l10n="U" oldref="13">Inserts the version number of the current document.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3146326" xml-lang="en-US" l10n="U" oldref="14">Created</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149833" xml-lang="en-US" l10n="U" oldref="15">Inserts the name of the author, and the date, or the time when the document was created.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3148856" xml-lang="en-US" l10n="U" oldref="16">Info 0 - 3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154784" xml-lang="en-US" l10n="U" oldref="17">Inserts the contents of the info fields found on the <emph>User Defined </emph>tab of the <link href="text/shared/01/01100300.xhp" name="File - Properties"><emph>File - Properties</emph></link> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150177" xml-lang="en-US" l10n="U" oldref="18">Last printed</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156094" xml-lang="en-US" l10n="U" oldref="19">Inserts the name of the author, and the date or time that the document was last printed.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156122" xml-lang="en-US" l10n="U" oldref="20">Keywords</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150912" xml-lang="en-US" l10n="U" oldref="21">Inserts the keywords as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154328" xml-lang="en-US" l10n="U" oldref="22">Subject</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3146942" xml-lang="en-US" l10n="U" oldref="23">Inserts the subject as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150092" xml-lang="en-US" l10n="U" oldref="24">Title</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150033" xml-lang="en-US" l10n="U" oldref="25">Inserts the title as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<embed href="text/swriter/01/04090001.xhp#hinweis"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_DOKINF:LB_DOKINFSELECTION" id="bm_id3154623" localize="false"/>
+<paragraph role="paragraph" id="par_id0902200804290272" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Lists the available fields for the field type selected in the <emph>Type </emph>list. To insert a field, click the field, and then click <emph>Insert</emph>.</ahelp></paragraph>
+<embed href="text/swriter/01/04090001.xhp#auswahl"/>
+<paragraph role="note" id="par_id3149956" xml-lang="en-US" l10n="U" oldref="26">For the "Created", "Modified", and "Last printed" field types, you can include the author, date, and time of the corresponding operation.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_DOKINF:LB_DOKINFFORMAT" id="bm_id3166051" localize="false"/>
+<paragraph role="paragraph" id="par_id0902200804290382" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Click the format that you want to apply to the selected field, or click "Additional formats" to define a custom format.</ahelp></paragraph>
+<embed href="text/swriter/01/04090001.xhp#format"/>
+<embed href="text/swriter/01/04090001.xhp#datumuhrzeitformat"/>
+<section id="inhaltfix">
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FLD_DOKINF:CB_DOKINFFIXEDCONTENT" id="bm_id3149620" localize="false"/>
+<paragraph role="heading" id="hd_id3149608" xml-lang="en-US" level="2" l10n="U" oldref="28">Fixed content</paragraph>
+<paragraph role="paragraph" id="par_id3150767" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SW:CHECKBOX:TP_FLD_DOKINF:CB_DOKINFFIXEDCONTENT">Inserts the field as static content, that is, the field cannot be updated.</ahelp></paragraph>
+</section>
+<paragraph role="note" id="par_id3155554" xml-lang="en-US" l10n="U" oldref="30">Fields with fixed content are only evaluated when you create a new document from a template that contains such a field. For example, a date field with fixed content inserts the date that a new document was created from the template.</paragraph>
+</body>
+</helpdocument>

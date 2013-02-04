@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0105010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Fonts</title>
+<filename>/text/smath/01/05010000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-07-12T16:22:08">converted from old format - fpe
+dedr: fixed #i30893#</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156261"><bookmark_value>fonts; in $[officename] Math</bookmark_value>
+<bookmark_value>formula fonts; defining</bookmark_value>
+<bookmark_value>defining; formula fonts</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ChangeFont" id="bm_id3153925" localize="false"/>
+<paragraph role="heading" id="hd_id3156261" xml-lang="en-US" level="1" l10n="U" oldref="1">Fonts</paragraph>
+<paragraph role="paragraph" id="par_id3153716" xml-lang="en-US" l10n="U" oldref="2"><variable id="schriftartentext"><ahelp hid="SID_FONT">Defines the fonts that can be applied to formula elements.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/smath/00/00000004.xhp#fmtsfa"/>
+</section>
+<paragraph role="heading" id="hd_id3154639" xml-lang="en-US" level="2" l10n="U" oldref="3">Formula Fonts</paragraph>
+<paragraph role="paragraph" id="par_id3151187" xml-lang="en-US" l10n="U" oldref="4">You can define fonts for the variables, functions, numbers and inserted text that form the elements of your formula.</paragraph>
+<paragraph role="paragraph" id="par_id3156318" xml-lang="en-US" l10n="U" oldref="5">The list boxes in the <emph>Fonts</emph> dialog display a default font for all elements. To change to a different font, click <emph>Modify</emph>, then select the element type. A new dialog box appears. Select the desired font and check any desired attributes, then click <emph>OK</emph>. To set the changes as the default fonts, click the <emph>Default</emph> button.</paragraph>
+<paragraph role="note" id="par_id3148831" xml-lang="en-US" l10n="U" oldref="6">If you want to mark individual text segments with a font other than that used for the whole text, then enter the <link href="text/smath/01/05010000.xhp" name="FONT">Font</link> command in the <emph>Commands</emph> window.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_FONTTYPEDIALOG:1" id="bm_id3147509" localize="false"/>
+<paragraph role="heading" id="hd_id3154262" xml-lang="en-US" level="3" l10n="U" oldref="7">Variables</paragraph>
+<paragraph role="paragraph" id="par_id3147516" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="STARMATH_LISTBOX_RID_FONTTYPEDIALOG_1">You can select the fonts for the variables in your formula.</ahelp> For example, in the formula x=SIN(y), x and y are variables, and will reflect the assigned font.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_FONTTYPEDIALOG:2" id="bm_id3152943" localize="false"/>
+<paragraph role="heading" id="hd_id3150708" xml-lang="en-US" level="3" l10n="U" oldref="9">Functions</paragraph>
+<paragraph role="paragraph" id="par_id3152950" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="STARMATH:LISTBOX:RID_FONTTYPEDIALOG:2">Select the fonts for names and properties of functions.</ahelp> For example, the functions in the formula x=SIN(y) are =SIN( ).</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_FONTTYPEDIALOG:3" id="bm_id3154603" localize="false"/>
+<paragraph role="heading" id="hd_id3149805" xml-lang="en-US" level="3" l10n="U" oldref="11">Numbers</paragraph>
+<paragraph role="paragraph" id="par_id3154610" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="STARMATH:LISTBOX:RID_FONTTYPEDIALOG:3">You can select the fonts for the numbers in your formula.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_FONTTYPEDIALOG:4" id="bm_id3153773" localize="false"/>
+<paragraph role="heading" id="hd_id3153529" xml-lang="en-US" level="3" l10n="U" oldref="13">Text</paragraph>
+<paragraph role="paragraph" id="par_id3153780" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="STARMATH:LISTBOX:RID_FONTTYPEDIALOG:4">Define the fonts for the text in your formula here.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3152963" xml-lang="en-US" level="2" l10n="U" oldref="15">Custom Fonts</paragraph>
+<paragraph role="paragraph" id="par_id3154566" xml-lang="en-US" l10n="U" oldref="16">In this section of the <emph>Fonts</emph> dialog you can define fonts, with which you can format other text components in the formula. The three basic fonts <emph>Serif, Sans</emph> and <emph>Fixed</emph> are available. You can add any other font to each standard installed basic font. Every font installed on your system is available for you to use. Select the <emph>Modify</emph> button to expand the selection offered in the list box.</paragraph>
+<paragraph role="paragraph" id="par_id3151315" xml-lang="en-US" l10n="U" oldref="17">These custom fonts are used if you set a different font with the FONT command in the <emph>Commands</emph> window. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_FONTTYPEDIALOG:5" id="bm_id3151101" localize="false"/>
+<paragraph role="heading" id="hd_id3153670" xml-lang="en-US" level="3" l10n="U" oldref="22">Serif</paragraph>
+<paragraph role="paragraph" id="par_id3151108" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="STARMATH:LISTBOX:RID_FONTTYPEDIALOG:5">You can specify the font to be used for the <emph>font serif</emph> format.</ahelp> Serifs are the small "guides" that can be seen, for example, at the bottom of a capital A when the Times serif font is used. Using serifs is quite helpful since it guides a reader's eye in a straight line and can speed up reading.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_FONTTYPEDIALOG:6" id="bm_id3155893" localize="false"/>
+<paragraph role="heading" id="hd_id3150836" xml-lang="en-US" level="3" l10n="U" oldref="24">Sans</paragraph>
+<paragraph role="paragraph" id="par_id3155900" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="STARMATH:LISTBOX:RID_FONTTYPEDIALOG:6">You can specify the font to be used for <emph>sans</emph> font formatting.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:ListBox:RID_FONTTYPEDIALOG:7" id="bm_id3154192" localize="false"/>
+<paragraph role="heading" id="hd_id3149340" xml-lang="en-US" level="3" l10n="U" oldref="26">Fixed</paragraph>
+<paragraph role="paragraph" id="par_id3154198" xml-lang="en-US" l10n="U" oldref="27"><ahelp hid="STARMATH:LISTBOX:RID_FONTTYPEDIALOG:7">You can specify the font to be used for <emph>fixed</emph> font formatting.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:MenuButton:RID_FONTTYPEDIALOG:1" id="bm_id3146925" localize="false"/>
+<paragraph role="heading" id="hd_id3159194" xml-lang="en-US" level="2" l10n="U" oldref="28">Modify</paragraph>
+<paragraph role="paragraph" id="par_id3146932" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="STARMATH:MENUBUTTON:RID_FONTTYPEDIALOG:1">Click one of the choices from this pop-up menu to access the <link href="text/smath/01/05010100.xhp" name="Fonts">Fonts</link> dialog, where you can define the font and attributes for the respective formula and for custom fonts.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/starmath:PushButton:RID_FONTTYPEDIALOG:2" id="bm_id3155180" localize="false"/>
+<paragraph role="heading" id="hd_id3149304" xml-lang="en-US" level="2" l10n="U" oldref="30">Default</paragraph>
+<paragraph role="paragraph" id="par_id3155186" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="STARMATH:PUSHBUTTON:RID_FONTTYPEDIALOG:2">Click this button to save your changes as the default for all new formulas.</ahelp> After confirming the changes, click the <emph>Yes</emph> button.</paragraph>
+</body>
+</helpdocument>

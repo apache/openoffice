@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguiderename_tablexml" indexer="include">
+         <title xml-lang="en-US" id="tit">Renaming Sheets</title>
+         <filename>/text/scalc/guide/rename_table.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150398"><bookmark_value>renaming;sheets</bookmark_value>
+      <bookmark_value>sheet tabs;renaming</bookmark_value>
+      <bookmark_value>tables;renaming</bookmark_value>
+      <bookmark_value>names; sheets</bookmark_value>
+</bookmark><comment>mw made "renaming sheets" a two level entry.</comment>
+<paragraph xml-lang="en-US" id="hd_id3150398" role="heading" level="1" l10n="U"
+                 oldref="11"><variable id="rename_table"><link href="text/scalc/guide/rename_table.xhp" name="Renaming Sheets">Renaming Sheets</link>
+</variable></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155131" role="listitem" l10n="U" oldref="12">Click the name of the sheet that you want to change.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3146976" role="listitem" l10n="U" oldref="13">Open the context menu and choose the <emph>Rename Sheet</emph> command. A dialog box appears where you can enter a new name.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149260" role="listitem" l10n="U" oldref="15">Enter a new name for the sheet and click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149667" role="listitem" l10n="U" oldref="27">Alternatively, hold down the <switchinline select="sys"><caseinline select="MAC">Option key
+</caseinline><defaultinline>Alt key</defaultinline></switchinline> and click on any sheet name and enter the new name directly.</paragraph>
+            <embed href="text/shared/00/00000099.xhp#winmanager"/>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id0909200810502833" role="paragraph" l10n="NEW">Sheet names can contain almost any character. Some naming restrictions apply when you want to save the spreadsheet to Microsoft Excel format.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id090920081050283" role="paragraph" l10n="NEW">When saving to Microsoft Excel format, the following characters are not allowed in sheet names:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id090920081050281" role="paragraph" l10n="NEW">colon :</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0909200810502897" role="paragraph" l10n="NEW">back slash \</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id090920081050299" role="paragraph" l10n="NEW">forward slash /</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0909200810502913" role="paragraph" l10n="NEW">question mark ?</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id090920081050298" role="paragraph" l10n="NEW">asterisk *</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0909200810502969" role="paragraph" l10n="NEW">left square bracket [</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0909200810502910" role="paragraph" l10n="NEW">right square bracket ]</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id0909200810502971" role="paragraph" l10n="NEW">single quote ' as the first or last character of the name</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id090920081050307" role="paragraph" l10n="NEW">In cell references, a sheet name has to be enclosed in single quotes ' if the name contains other characters than alphanumeric or underscore. A single quote contained within a name has to be escaped by doubling it (two single quotes). For example, you want to reference the cell A1 on a sheet with the following name:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0909200810503071" role="paragraph" l10n="NEW">This year's sheet</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0909200810503054" role="paragraph" l10n="NEW">The reference must be enclosed in single quotes, and the one single quote inside the name must be doubled:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0909200810503069" role="paragraph" l10n="NEW">'This year''s sheet'.A1</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155444" role="paragraph" l10n="U" oldref="16">The name of a sheet is independent of the name of the spreadsheet. You enter the spreadsheet name when you save it for the first time as a file. The document can contain up to 256 individual sheets, which can have different names.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/multitables.xhp#multitables"/>
+      </section>
+   </body>
+</helpdocument>

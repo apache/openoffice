@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0103100000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Nonprinting Characters</title>
+<filename>/text/swriter/01/03100000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-04-26T14:03:10">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="steuerzeichen">
+<bookmark xml-lang="en-US" branch="hid/.uno:ControlCodes" id="bm_id9113552" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ControlCodes" id="bm_id3145241" localize="false"/>
+<paragraph role="heading" id="hd_id3154507" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/03100000.xhp" name="Nonprinting Characters">Nonprinting Characters</link></paragraph>
+<paragraph role="paragraph" id="par_id3154646" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:ControlCodes">Shows nonprinting characters in your text, such as paragraph marks, line breaks, tab stops, and spaces.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000403.xhp#steuerzeichen"/>
+</section>
+<paragraph role="paragraph" id="par_id3145410" xml-lang="en-US" l10n="U" oldref="5">When you delete a paragraph mark, the paragraph that is merged takes on the formatting of the paragraph that the cursor is in.</paragraph>
+<paragraph role="paragraph" id="par_id3147511" xml-lang="en-US" l10n="U" oldref="6">To specify which nonprinting characters are displayed, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01040600.xhp" name="Writer - Formatting Aids">%PRODUCTNAME Writer - Formatting Aids</link></emph>, and then select the options that you want in the <emph>Display of</emph> area.</paragraph>
+</body>
+</helpdocument>

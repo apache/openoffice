@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106150200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Test XML Filter</title>
+<filename>/text/shared/01/06150200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-03-03T15:48:27">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3150379" xml-lang="en-US" level="1" l10n="U" oldref="22"><variable id="testxml"><link href="text/shared/01/06150200.xhp" name="Test XML Filter">Test XML Filter</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3146857" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid=".">Tests the XSLT stylesheets used by the selected <link href="text/shared/01/06150000.xhp" name="XML filter">XML filter</link>.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3151260" xml-lang="en-US" l10n="E" localize="false"><link href="text/shared/00/00000406.xhp#xmlfiltertest"></link></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#xmlfilter"/>
+</section>
+<paragraph role="heading" id="hd_id3146765" xml-lang="en-US" level="2" l10n="U" oldref="1">Export</paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_EXPORT_XSLT_FILE" id="bm_id4476454" localize="false"/>
+<paragraph role="heading" id="hd_id3153070" xml-lang="en-US" level="3" l10n="U" oldref="2">XSLT for export</paragraph>
+<paragraph role="paragraph" id="par_id3147617" xml-lang="en-US" l10n="U" oldref="3"><ahelp hid=".">Displays the file name of the XSLT filter that you entered on the <emph>Transformation</emph> tab page.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147090" xml-lang="en-US" level="3" l10n="U" oldref="4">Transform document</paragraph>
+<paragraph role="paragraph" id="par_id3153029" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid=".">Displays the file name of the document that you want to use to test the XSLT filter.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_EXPORT_BROWSE" id="bm_id3152363" localize="false"/>
+<paragraph role="heading" id="hd_id3145160" xml-lang="en-US" level="4" l10n="U" oldref="6">Browse</paragraph>
+<paragraph role="paragraph" id="par_id3144436" xml-lang="en-US" l10n="C"><ahelp hid="HID_XML_FILTER_TEST_EXPORT_BROWSE">Locate the file that you want to apply the XML export filter to. The XML code of the transformed file is displayed in the <link href="text/shared/01/06150210.xhp">XML Filter output</link> window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_EXPORT_CURRENT" id="bm_id3147226" localize="false"/>
+<paragraph role="heading" id="hd_id3159194" xml-lang="en-US" level="4" l10n="U" oldref="8">Current Document</paragraph>
+<paragraph role="paragraph" id="par_id3147250" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="HID_XML_FILTER_TEST_EXPORT_CURRENT">The front-most open file that matches the XML filter criteria will be used to test the filter. The current XML export filter transforms the file and the resulting XML code is displayed in the <link href="text/shared/01/06150210.xhp">XML Filter output</link> window.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154823" xml-lang="en-US" level="2" l10n="U" oldref="10">Import</paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_IMPORT_XSLT_FILE" id="bm_id8536027" localize="false"/>
+<paragraph role="heading" id="hd_id3159233" xml-lang="en-US" level="3" l10n="U" oldref="11">XSLT for import</paragraph>
+<paragraph role="paragraph" id="par_id3153681" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_XML_FILTER_TEST_EXPORT_CURRENT">Displays the file name of the XSLT filter that you entered on the <emph>Transformation</emph> tab page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_IMPORT_TEMPLATE_FILE" id="bm_id2557145" localize="false"/>
+<paragraph role="heading" id="hd_id3149177" xml-lang="en-US" level="3" l10n="U" oldref="13">Template for import</paragraph>
+<paragraph role="paragraph" id="par_id3156410" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="HID_XML_FILTER_TEST_EXPORT_CURRENT">Displays the file name of the template that you entered on the <emph>Transformation</emph> tab page.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3163802" xml-lang="en-US" level="3" l10n="U" oldref="15">Transform file</paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_IMPORT_DISPLAY_SOURCE" id="bm_id3149812" localize="false"/>
+<paragraph role="heading" id="hd_id3147242" xml-lang="en-US" level="4" l10n="U" oldref="16">Display source</paragraph>
+<paragraph role="paragraph" id="par_id3150444" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="HID_XML_FILTER_TEST_IMPORT_DISPLAY_SOURCE">Opens the <embedvar href="text/shared/01/06150210.xhp#xmlfilteroutput"/> window, where the XML source of the selected document is displayed. The document is used to test the import filter.</ahelp> The <emph>Validate</emph> button in the window validates the XML source of the document.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_IMPORT_BROWSE" id="bm_id3154577" localize="false"/>
+<paragraph role="heading" id="hd_id3147078" xml-lang="en-US" level="4" l10n="U" oldref="18">Browse</paragraph>
+<paragraph role="paragraph" id="par_id3149885" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="HID_XML_FILTER_TEST_IMPORT_BROWSE">Opens a file selection dialog. The selected file is opened using the current XML import filter.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_IMPORT_RECENT" id="bm_id3150465" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_TEST_IMPORT_RECENT_FILE" id="bm_id264595" localize="false"/>
+<paragraph role="heading" id="hd_id3153666" xml-lang="en-US" level="4" l10n="U" oldref="20">Recent File</paragraph>
+<paragraph role="paragraph" id="par_id3146137" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="HID_XML_FILTER_TEST_IMPORT_RECENT">Re-opens the document that was last opened with this dialog.</ahelp></paragraph>
+</body>
+</helpdocument>

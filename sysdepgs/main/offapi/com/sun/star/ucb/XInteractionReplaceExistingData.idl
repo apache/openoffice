@@ -1,0 +1,53 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XInteractionReplaceExistingData_idl__
+#define __com_sun_star_ucb_XInteractionReplaceExistingData_idl__
+
+#ifndef __com_sun_star_task_XInteractionContinuation_idl__
+#include <com/sun/star/task/XInteractionContinuation.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** is an interaction continuation used to instruct the requester to replace
+    existing data.
+
+    <p>For example, this continuation can be selected when handling a
+    <type>NameClashResolveRequest</type> in order to instruct the requester
+    to overwrite the clashing data.
+
+    @version  1.0
+    @author   Kai Sommerfeld
+*/
+published interface XInteractionReplaceExistingData : com::sun::star::task::XInteractionContinuation
+{
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

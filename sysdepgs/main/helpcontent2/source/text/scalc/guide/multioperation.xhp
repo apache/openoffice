@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textscalcguidemultioperationxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Applying Multiple Operations</title>
+<filename>/text/scalc/guide/multioperation.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147559"><bookmark_value>multiple operations</bookmark_value>
+<bookmark_value>what if operations;two variables</bookmark_value>
+<bookmark_value>tables; multiple operations in</bookmark_value>
+<bookmark_value>data tables; multiple operations in</bookmark_value>
+<bookmark_value>cross-classified tables</bookmark_value>
+</bookmark><comment>mw made "what if operations" a two level entry</comment>
+<paragraph role="heading" id="hd_id3147559" xml-lang="en-US" level="1" l10n="U" oldref="5"><variable id="multioperation"><link href="text/scalc/guide/multioperation.xhp" name="Applying Multiple Operations">Applying Multiple Operations</link>
+</variable></paragraph>
+<paragraph role="heading" id="hd_id3145171" xml-lang="en-US" level="2" l10n="U" oldref="1">Multiple Operations in Columns or Rows</paragraph>
+<paragraph role="paragraph" id="par_id4123966" xml-lang="en-US" l10n="NEW">The <item type="menuitem">Data - Multiple Operations</item> command provides a planning tool for "what if" questions. In your spreadsheet, you enter a formula to calculate a result from values that are stored in other cells. Then, you set up a cell range where you enter some fixed values, and the Multiple Operations command will calculate the results depending on the formula.</paragraph>
+<paragraph role="paragraph" id="par_id3156424" xml-lang="en-US" l10n="CHG" oldref="2">In the <emph>Formulas</emph> field, enter the cell reference to the formula that applies to the data range. In the <emph>Column input cell/Row input cell</emph> field, enter the cell reference to the corresponding cell that is part of the formula. This can be explained best by examples:</paragraph>
+<paragraph role="heading" id="hd_id3159153" xml-lang="en-US" level="3" l10n="U" oldref="7">Examples</paragraph>
+<paragraph role="paragraph" id="par_id3153189" xml-lang="en-US" l10n="U" oldref="8">You produce toys which you sell for $10 each. Each toy costs $2 to make, in addition to which you have fixed costs of $10,000 per year. How much profit will you make in a year if you sell a particular number of toys?</paragraph>
+<paragraph role="paragraph" id="par_id6478774" xml-lang="en-US" l10n="NEW">
+<image id="img_id1621753" src="res/helpimg/what-if.png" width="0.2228in" height="0.2228in"><alt id="alt_id1621753" xml-lang="en-US">what-if sheet area</alt>
+	</image></paragraph>
+<paragraph role="heading" id="hd_id3145239" xml-lang="en-US" level="3" l10n="U" oldref="41">Calculating With One Formula and One Variable</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3146888" xml-lang="en-US" l10n="U" oldref="42">To calculate the profit, first enter any number as the quantity (items sold) - in this example 2000. The profit is found from the formula Profit=Quantity * (Selling price - Direct costs) - Fixed costs. Enter this formula in B5.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3157875" xml-lang="en-US" l10n="CHG" oldref="43">In column D enter given annual sales, one below the other; for example, 500 to 5000, in steps of 500.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3159115" xml-lang="en-US" l10n="CHG" oldref="44">Select the range D2:E11, and thus the values in column D and the empty cells alongside in column E.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149723" xml-lang="en-US" l10n="U" oldref="45">Choose <emph>Data - Multiple operations</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149149" xml-lang="en-US" l10n="U" oldref="46">With the cursor in the <emph>Formulas </emph>field, click cell B5.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149355" xml-lang="en-US" l10n="CHG" oldref="47">Set the cursor in the <emph>Column input cell</emph> field and click cell B4. This means that B4, the quantity, is the variable in the formula, which is replaced by the selected column values.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149009" xml-lang="en-US" l10n="CHG" oldref="48">Close the dialog with <emph>OK</emph>. You see the profits for the different quantities in column E.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3148725" xml-lang="en-US" level="3" l10n="U" oldref="49">Calculating with Several Formulas Simultaneously</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3146880" xml-lang="en-US" l10n="U" oldref="50">Delete column E.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154675" xml-lang="en-US" l10n="U" oldref="51">Enter the following formula in C5: = B5 / B4. You are now calculating the annual profit per item sold.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148885" xml-lang="en-US" l10n="CHG" oldref="52">Select the range D2:F11, thus three columns.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3147474" xml-lang="en-US" l10n="U" oldref="53">Choose <emph>Data - Multiple Operations</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154846" xml-lang="en-US" l10n="U" oldref="54">With the cursor in the <emph>Formulas</emph> field, select cells B5 thru C5.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153931" xml-lang="en-US" l10n="CHG" oldref="55">Set the cursor in the <emph>Column input cell</emph> field and click cell B4.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150862" xml-lang="en-US" l10n="U" oldref="56">Close the dialog with <emph>OK</emph>. You will now see the profits in column E and the annual profit per item in column F.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3146139" xml-lang="en-US" level="2" l10n="U" oldref="3">Multiple Operations Across Rows and Columns</paragraph>
+<paragraph role="paragraph" id="par_id3148584" xml-lang="en-US" l10n="CHG" oldref="4">
+<item type="productname">%PRODUCTNAME</item> allows you to carry out joint multiple operations for columns and rows in so-called cross-tables. The formula cell has to refer to both the data range arranged in rows and the one arranged in columns. Select the range defined by both data ranges and call the multiple operation dialog. Enter the reference to the formula in the <emph>Formulas</emph> field. The <emph>Row input cell</emph> and the <emph>Column input cell</emph> fields are used to enter the reference to the corresponding cells of the formula.</paragraph>
+<paragraph role="heading" id="hd_id3149949" xml-lang="en-US" level="3" l10n="U" oldref="57">Calculating with Two Variables</paragraph>
+<paragraph role="paragraph" id="par_id3154808" xml-lang="en-US" l10n="U" oldref="58">Consider columns A and B of the sample table above. You now want to vary not just the quantity produced annually, but also the selling price, and you are interested in the profit in each case.</paragraph>
+<paragraph role="paragraph" id="par_id3149731" xml-lang="en-US" l10n="CHG" oldref="59">Expand the table shown above. D2 thru D11 contain the numbers 500, 1000 and so on, up to 5000. In E1 through H1 enter the numbers 8, 10, 15 and 20.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3152810" xml-lang="en-US" l10n="U" oldref="95">Select the range D1:H11.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153620" xml-lang="en-US" l10n="U" oldref="96">Choose <emph>Data - Multiple Operations</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149981" xml-lang="en-US" l10n="U" oldref="97">With the cursor in the <emph>Formulas</emph> field, click cell B5.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156113" xml-lang="en-US" l10n="CHG" oldref="98">Set the cursor in the <emph>Row input cell</emph> field and click cell B1. This means that B1, the selling price, is the horizontally entered variable (with the values 8, 10, 15 and 20).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154049" xml-lang="en-US" l10n="CHG" oldref="99">Set the cursor in the <emph>Column input cell</emph> field and click in B4. This means that B4, the quantity, is the vertically entered variable.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149141" xml-lang="en-US" l10n="CHG" oldref="100">Close the dialog with OK. You see the profits for the different selling prices in the range E2:H11.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3155104" xml-lang="en-US" l10n="U" oldref="101"><link href="text/scalc/01/12060000.xhp" name="Multiple operations">Multiple operations</link></paragraph>
+<embed href="text/scalc/guide/scenario.xhp#scenario"/>
+</section>
+</body>
+</helpdocument>

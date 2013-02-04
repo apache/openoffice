@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0102230200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Show Changes</title>
+<filename>/text/shared/01/02230200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-10-07T13:03:57">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149988"><bookmark_value>changes; showing</bookmark_value>
+<bookmark_value>hiding;changes</bookmark_value>
+<bookmark_value>showing; changes</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ShowTrackedChanges" id="bm_id9726954" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ShowTrackedChanges" id="bm_id3154349" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ShowChanges" id="bm_id3459113" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ShowChanges" id="bm_id3147240" localize="false"/>
+<paragraph role="heading" id="hd_id3149988" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/02230200.xhp" name="Show Changes">Show Changes</link></paragraph>
+<paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="U" oldref="2"><variable id="text"><ahelp hid=".uno:ShowChanges">Shows or hides recorded changes.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000402.xhp#anzeigen"/>
+</section>
+<paragraph role="paragraph" id="par_id3152425" xml-lang="en-US" l10n="U" oldref="7">You can change the display properties of the markup elements by choosing <switchinline select="appl"><caseinline select="WRITER"><link href="text/shared/optionen/01060600.xhp" name="Writer - Changes"><emph>%PRODUCTNAME Writer - Changes</emph></link> in the Options dialog box.</caseinline></switchinline><switchinline select="appl"><caseinline select="CALC"><link href="text/shared/optionen/01060600.xhp" name="Calc - Changes"><emph>%PRODUCTNAME Calc - Changes</emph></link> in the Options dialog box.</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3155356" xml-lang="en-US" l10n="U" oldref="6">When you rest the mouse pointer over a change markup in the document, a <emph>Tip</emph> displays the author and the date and time that the change was made.<switchinline select="appl"><caseinline select="CALC"> If the <emph>Extended Tips</emph> are activated, the type of change and any attached comments are also displayed.</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_HIGHLIGHT_CHANGES:CB_HIGHLIGHT" id="bm_id3152551" localize="false"/>
+<paragraph role="heading" id="hd_id3153681" xml-lang="en-US" level="2" l10n="U" oldref="8"><switchinline select="appl"><caseinline select="CALC">Show changes in spreadsheet</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3149150" xml-lang="en-US" l10n="U" oldref="9"><switchinline select="appl"><caseinline select="CALC"><ahelp hid="SC:CHECKBOX:RID_SCDLG_HIGHLIGHT_CHANGES:CB_HIGHLIGHT">Shows or hides recorded changes.</ahelp></caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="CALC"><embed href="text/shared/01/02230402.xhp#calc"/>
+</case>
+</switch>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_HIGHLIGHT_CHANGES:CB_HIGHLIGHT_ACCEPT" id="bm_id3154810" localize="false"/>
+<paragraph role="heading" id="hd_id3147336" xml-lang="en-US" level="2" l10n="U" oldref="10"><switchinline select="appl"><caseinline select="CALC">Show accepted changes</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3153541" xml-lang="en-US" l10n="U" oldref="11"><switchinline select="appl"><caseinline select="CALC"><ahelp hid="SC:CHECKBOX:RID_SCDLG_HIGHLIGHT_CHANGES:CB_HIGHLIGHT_ACCEPT">Shows or hides the changes that were accepted.</ahelp>
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_HIGHLIGHT_CHANGES:CB_HIGHLIGHT_REJECT" id="bm_id3155829" localize="false"/>
+<paragraph role="heading" id="hd_id3149956" xml-lang="en-US" level="2" l10n="U" oldref="12"><switchinline select="appl"><caseinline select="CALC">Show rejected changes 
+</caseinline></switchinline></paragraph>
+<paragraph role="relatedtopics" id="par_id3159166" xml-lang="en-US" l10n="U" oldref="13"><switchinline select="appl"><caseinline select="CALC"><ahelp hid="SC:CHECKBOX:RID_SCDLG_HIGHLIGHT_CHANGES:CB_HIGHLIGHT_REJECT">Shows or hides the changes that were rejected.</ahelp>
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="WRITER">
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3145119" xml-lang="en-US" l10n="C"><link href="text/shared/01/02230300.xhp" name="Comments">Comments</link></paragraph>
+</section>
+</case>
+</switch>
+</body>
+</helpdocument>

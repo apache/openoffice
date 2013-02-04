@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc0104060000xml" indexer="include">
+<title id="tit" xml-lang="en-US">Function Wizard</title>
+<filename>/text/scalc/01/04060000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="funktionsautopilot">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147426"><bookmark_value>inserting functions; Function Wizard</bookmark_value>
+<bookmark_value>functions;Function Wizard</bookmark_value>
+<bookmark_value>wizards; functions</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_INSWIN_CALC" id="bm_id3145750" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FunctionDialog" id="bm_id1185225" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FunctionDialog" id="bm_id3148577" localize="false"/>
+<paragraph role="heading" id="hd_id3147426" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/04060000.xhp" name="AutoPilot: Functions">Function Wizard</link></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3145271" xml-lang="en-US" l10n="U" oldref="2"><variable id="funktionsautopilottext"><ahelp hid=".uno:FunctionDialog">Opens the <emph>Function Wizard</emph>, which helps you to interactively create formulas.</ahelp>
+</variable> Before you start the Wizard, select a cell or a range of cells from the current sheet, in order to determine the position at which the formula will be inserted.</paragraph>
+<section id="howtoget">
+<embed href="text/scalc/00/00000404.xhp#eifu"/>
+</section>
+<paragraph role="note" id="par_id8007446" xml-lang="en-US" l10n="NEW">You can download the complete ODFF (OpenDocument Format Formula) specification from the <link href="http://www.oasis-open.org/committees/documents.php?wg_abbrev=office-formula">OASIS</link> web site.</paragraph>
+<paragraph role="paragraph" id="par_id3159153" xml-lang="en-US" l10n="U" oldref="60">The <emph>Function Wizard</emph> has two tabs: <emph>Functions</emph> is used to create formulas, and <emph>Structure</emph> is used to check the formula build.</paragraph>
+<paragraph role="heading" id="hd_id3154490" xml-lang="en-US" level="2" l10n="U" oldref="3">Functions Tab</paragraph>
+<paragraph role="paragraph" id="par_id3149378" xml-lang="en-US" l10n="U" oldref="5"><link href="text/scalc/01/04060100.xhp" name="List of Categories and Functions">List of Categories and Functions</link></paragraph>
+<!-- removed HID SC:LISTBOX:RID_SCTAB_FUNCTION:LB_CATEGORY -->
+<paragraph role="heading" id="hd_id3154730" xml-lang="en-US" level="3" l10n="U" oldref="36">Category</paragraph>
+<paragraph role="paragraph" id="par_id3153417" xml-lang="en-US" l10n="U" oldref="37"><variable id="kategorienliste"><ahelp hid="SC:LISTBOX:RID_SCTAB_FUNCTION:LB_CATEGORY">Lists all the categories to which the different functions are assigned. Select a category to view the appropriate functions in the list field below.</ahelp> Select "All" to view all functions in alphabetical order, irrespective of category. "Last Used" lists the functions you have most recently used. 
+</variable></paragraph>
+<!-- removed HID SC:LISTBOX:RID_SCTAB_FUNCTION:LB_FUNCTION -->
+<paragraph role="heading" id="hd_id3150749" xml-lang="en-US" level="3" l10n="U" oldref="6">Function</paragraph>
+<paragraph role="paragraph" id="par_id3155445" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SC:LISTBOX:RID_SCTAB_FUNCTION:LB_FUNCTION">Displays the functions found under the selected category. Double-click to select a function.</ahelp> A single-click displays a short function description.</paragraph>
+<!-- removed HID SC:CHECKBOX:RID_SCDLG_FORMULA:BTN_MATRIX -->
+<paragraph role="heading" id="hd_id3159264" xml-lang="en-US" level="3" l10n="U" oldref="8">Array</paragraph>
+<paragraph role="paragraph" id="par_id3149566" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SC:CHECKBOX:RID_SCDLG_FORMULA:BTN_MATRIX">Specifies that the selected function is inserted into the selected cell range as an array formula. </ahelp> Array formulas operate on multiple cells. Each cell in the array contains the formula, not as a copy but as a common formula shared by all matrix cells.</paragraph>
+<paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="61">The <emph>Array</emph> option is identical to the <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Enter command, which is used to enter and confirm formulas in the sheet. The formula is inserted as a matrix formula indicated by two braces { }.</paragraph>
+<paragraph role="note" id="par_id3152993" xml-lang="en-US" l10n="U" oldref="40">The maximum size of an array range is 128 by 128 cells.</paragraph>
+<paragraph role="heading" id="hd_id3150367" xml-lang="en-US" level="3" l10n="U" oldref="41">Argument Input Fields</paragraph>
+<paragraph role="paragraph" id="par_id3145587" xml-lang="en-US" l10n="CHG" oldref="15">When you double-click a function, the argument input field(s) appear on the right side of the dialog. To select a cell reference as an argument, click directly into the cell, or drag across the required range on the sheet while holding down the mouse button. You can also enter numerical and other values or references directly into the corresponding fields in the dialog. When using <link href="text/scalc/01/04060102.xhp" name="date entries">date entries</link>, make sure you use the correct format. Click OK to insert the result into the spreadsheet.</paragraph>
+<embed href="text/shared/00/00000001.xhp#eingabesymbol"/>
+<paragraph role="heading" id="hd_id3149408" xml-lang="en-US" level="3" l10n="U" oldref="18">Function Result</paragraph>
+<paragraph role="paragraph" id="par_id3155809" xml-lang="en-US" l10n="U" oldref="19">As soon you enter arguments in the function, the result is calculated. This preview informs you if the calculation can be carried out with the arguments given. If the arguments result in an error, the corresponding <link href="text/scalc/05/02140000.xhp" name="error code">error code</link> is displayed.</paragraph>
+<paragraph role="paragraph" id="par_id3148700" xml-lang="en-US" l10n="CHG" oldref="23">The required arguments are indicated by names in bold print.</paragraph>
+<!-- removed HID HID_SC_FAP_BTN_FX1 -->
+<!-- removed HID HID_SC_FAP_BTN_FX2 -->
+<!-- removed HID HID_SC_FAP_BTN_FX3 -->
+<!-- removed HID HID_SC_FAP_BTN_FX4 -->
+<paragraph role="heading" id="hd_id3153064" xml-lang="en-US" level="3" l10n="CHG" oldref="22">f(x) (depending on the selected function)</paragraph>
+<paragraph role="paragraph" id="par_id3157980" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="HID_SC_FAP_BTN_FX4">Allows you to access a subordinate level of the <emph>Function Wizard</emph> in order to nest another function within the function, instead of a value or reference.</ahelp></paragraph>
+<!-- removed HID SC:EDIT:RID_SCDLG_FORMULA:ED_REF -->
+<paragraph role="heading" id="hd_id3145076" xml-lang="en-US" level="3" l10n="CHG" oldref="25">Argument/Parameter/Cell Reference (depending on the selected function)</paragraph>
+<paragraph role="paragraph" id="par_id3159097" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SC:EDIT:RID_SCDLG_FORMULA:ED_REF">The number of visible text fields depends on the function. Enter arguments either directly into the argument fields or by clicking a cell in the table.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154957" xml-lang="en-US" level="3" l10n="U" oldref="51">Result</paragraph>
+<paragraph role="paragraph" id="par_id3150211" xml-lang="en-US" l10n="U" oldref="52">Displays the calculation result or an error message.</paragraph>
+<!-- removed HID HID_SC_FAP_FORMULA -->
+<paragraph role="heading" id="hd_id3151304" xml-lang="en-US" level="3" l10n="U" oldref="43">Formula</paragraph>
+<paragraph role="paragraph" id="par_id3149898" xml-lang="en-US" l10n="CHG" oldref="44"><ahelp hid="HID_SC_FAP_FORMULA">Displays the created formula. Type your entries directly, or create the formula using the wizard.</ahelp></paragraph>
+<!-- removed HID SC:PUSHBUTTON:RID_SCDLG_FORMULA:BTN_BACKWARD -->
+<paragraph role="heading" id="hd_id3153249" xml-lang="en-US" level="3" l10n="U" oldref="45">Back</paragraph>
+<paragraph role="paragraph" id="par_id3152869" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="SC:PUSHBUTTON:RID_SCDLG_FORMULA:BTN_BACKWARD">Moves the focus back through the formula components, marking them as it does so.</ahelp></paragraph>
+<paragraph role="tip" id="par_id3146966" xml-lang="en-US" l10n="U" oldref="56">To select a single function from a complex formula consisting of several functions, double-click the function in the formula window.</paragraph>
+<!-- removed HID SC:PUSHBUTTON:RID_SCDLG_FORMULA:BTN_FORWARD -->
+<paragraph role="heading" id="hd_id3155762" xml-lang="en-US" level="3" l10n="U" oldref="54">Next</paragraph>
+<paragraph role="paragraph" id="par_id3149316" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="SC:PUSHBUTTON:RID_SCDLG_FORMULA:BTN_FORWARD">Moves forward through the formula components in the formula window.</ahelp> This button can also be used to assign functions to the formula. If you select a function and click the <emph>Next </emph>button, the selection appears in the formula window.</paragraph>
+<paragraph role="tip" id="par_id3159262" xml-lang="en-US" l10n="U" oldref="57">Double-click a function in the selection window to transfer it to the formula window.</paragraph>
+<paragraph role="heading" id="hd_id3148745" xml-lang="en-US" level="3" l10n="U" oldref="58">Cancel</paragraph>
+<paragraph role="paragraph" id="par_id3147402" xml-lang="en-US" l10n="U" oldref="59">Closes the dialog without implementing the formula.</paragraph>
+<paragraph role="heading" id="hd_id3150534" xml-lang="en-US" level="3" l10n="U" oldref="32">OK</paragraph>
+<paragraph role="paragraph" id="par_id3153029" xml-lang="en-US" l10n="CHG" oldref="33">Ends the <emph>Function Wizard</emph>, and transfers the formula to the selected cells.</paragraph>
+<paragraph role="paragraph" id="par_id3156400" xml-lang="en-US" l10n="U" oldref="34"><link href="text/scalc/01/04060100.xhp" name="List of Categories and Functions">List of Categories and Functions</link></paragraph>
+<paragraph role="heading" id="hd_id3147610" xml-lang="en-US" level="2" l10n="U" oldref="47">Structure tab</paragraph>
+<paragraph role="paragraph" id="par_id3153122" xml-lang="en-US" l10n="U" oldref="48">On this page, you can view the structure of the function.</paragraph>
+<paragraph role="note" id="par_id3149350" xml-lang="en-US" l10n="U" oldref="4">If you start the <emph>Function Wizard</emph> while the cell cursor is positioned in a cell that already contains a function, the <emph>Structure</emph> tab is opened and shows the composition of the current formula.</paragraph>
+<!-- removed HID HID_SC_FAP_STRUCT -->
+<paragraph role="heading" id="hd_id3149014" xml-lang="en-US" level="3" l10n="U" oldref="49">Structure</paragraph>
+<paragraph role="paragraph" id="par_id3150481" xml-lang="en-US" l10n="U" oldref="50"><ahelp hid="HID_SC_FAP_STRUCT">Displays a hierarchical representation of the current function.</ahelp> You can hide or show the arguments by a click on the plus or minus sign in front.</paragraph>
+<paragraph role="note" id="par_id3148886" xml-lang="en-US" l10n="U" oldref="63">Blue dots denote correctly entered arguments. Red dots indicate incorrect data types. For example: if the SUM function has one argument entered as text, this is highlighted in red as SUM only permits number entries.</paragraph>
+</body>
+</helpdocument>

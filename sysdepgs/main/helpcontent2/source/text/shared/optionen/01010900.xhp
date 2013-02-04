@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01010900xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Print Options</title>
+<filename>/text/shared/optionen/01010900.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="drucken">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147323"><bookmark_value>printing; colors in grayscale</bookmark_value>
+<bookmark_value>grayscale printing</bookmark_value>
+<bookmark_value>colors; printing in grayscale</bookmark_value>
+<bookmark_value>printing; warnings</bookmark_value>
+<bookmark_value>paper size warning</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010900.xhp" name="Print Options">Print Options</link></paragraph>
+<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Specifies the print setting options.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#drucken"/>
+</section>
+<embed href="text/shared/guide/print_faster.xhp#print_faster"/>
+<paragraph role="heading" id="hd_id3148451" xml-lang="en-US" level="2" l10n="U" oldref="56">Reduce print data</paragraph>
+<paragraph role="paragraph" id="par_id3154910" xml-lang="en-US" l10n="U" oldref="68">You can reduce the amount of data to be sent to the printer. Reducing the print data increases the print speed because the print files are smaller. This makes it easier for printers with a smaller memory to print. Reducing print data can result in slightly lower print quality.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_PRINTEROUTPUT" id="bm_id3149807" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_PRINTFILEOUTPUT" id="bm_id3150868" localize="false"/><paragraph role="heading" id="hd_id3147085" xml-lang="en-US" level="3" l10n="U" oldref="57">Settings for</paragraph>
+<paragraph role="paragraph" id="par_id3158407" xml-lang="en-US" l10n="U" oldref="69"><ahelp hid="SFX2_RADIOBUTTON_TP_COMMONPRINTOPTIONS_RB_PRINTFILEOUTPUT">Specifies whether the print settings apply to direct printing or to printing to a file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_REDUCETRANSPARENCY" id="bm_id3150441" localize="false"/><paragraph role="heading" id="hd_id3145786" xml-lang="en-US" level="3" l10n="U" oldref="58">Reduce transparency</paragraph>
+<paragraph role="paragraph" id="par_id3159154" xml-lang="en-US" l10n="U" oldref="70"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_REDUCETRANSPARENCY">If you mark this field the transparent objects will be printed like normal, non-transparent objects, depending on your selection in the following two option buttons.</ahelp></paragraph>
+<section id="transhint">
+<paragraph role="note" id="par_id3156444" xml-lang="en-US" l10n="U" oldref="71">Transparency cannot be output directly to a printer. The areas of the document in which transparency is to be visible must therefore always be calculated as bitmaps and sent to the printer. Depending on the size of the bitmaps and the print resolution a large amount of data may result.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_REDUCETRANSPARENCY_AUTO" id="bm_id3148577" localize="false"/><paragraph role="heading" id="hd_id3147441" xml-lang="en-US" level="4" l10n="U" oldref="59">Automatically</paragraph>
+<paragraph role="paragraph" id="par_id3150488" xml-lang="en-US" l10n="U" oldref="72"><ahelp hid="SFX2_RADIOBUTTON_TP_COMMONPRINTOPTIONS_RB_REDUCETRANSPARENCY_AUTO">Specifies that the transparency is only printed if the transparent area covers less than a quarter of the entire page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_REDUCETRANSPARENCY_NONE" id="bm_id3145251" localize="false"/><paragraph role="heading" id="hd_id3149417" xml-lang="en-US" level="4" l10n="U" oldref="73">No transparency</paragraph>
+<paragraph role="paragraph" id="par_id3153878" xml-lang="en-US" l10n="U" oldref="74"><ahelp hid="SFX2_RADIOBUTTON_TP_COMMONPRINTOPTIONS_RB_REDUCETRANSPARENCY_NONE">With this option transparency is never printed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_REDUCEBITMAPS" id="bm_id3150113" localize="false"/><paragraph role="heading" id="hd_id3149960" xml-lang="en-US" level="3" l10n="U" oldref="60">Reduce bitmaps</paragraph>
+<paragraph role="paragraph" id="par_id3148455" xml-lang="en-US" l10n="U" oldref="75"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_REDUCEBITMAPS">Specifies that bitmaps are printed with reduced quality. The resolution can only be reduced and not increased.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_REDUCEBITMAPS_OPTIMAL" id="bm_id3156181" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_REDUCEBITMAPS_NORMAL" id="bm_id3155600" localize="false"/><paragraph role="heading" id="hd_id3149400" xml-lang="en-US" level="4" l10n="U" oldref="61">High/normal print quality</paragraph>
+<paragraph role="paragraph" id="par_id3154510" xml-lang="en-US" l10n="U" oldref="76"><ahelp hid="SFX2_RADIOBUTTON_TP_COMMONPRINTOPTIONS_RB_REDUCEBITMAPS_NORMAL">High print quality corresponds to a resolution of 300dpi. Normal print quality corresponds to a resolution of 200dpi. </ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_REDUCEBITMAPS_RESOLUTION" id="bm_id3146900" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sfx2:ListBox:TP_COMMONPRINTOPTIONS:LB_REDUCEBITMAPS_RESOLUTION" id="bm_id3156332" localize="false"/><paragraph role="heading" id="hd_id3146969" xml-lang="en-US" level="4" l10n="U" oldref="62">Resolution</paragraph>
+<paragraph role="paragraph" id="par_id3154270" xml-lang="en-US" l10n="U" oldref="77"><ahelp hid="SFX2_LISTBOX_TP_COMMONPRINTOPTIONS_LB_REDUCEBITMAPS_RESOLUTION">Specifies the maximum print quality in dpi. The resolution can only be reduced and not increased.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_REDUCEBITMAPS_TRANSPARENCY" id="bm_id3146913" localize="false"/><paragraph role="heading" id="hd_id3146789" xml-lang="en-US" level="4" l10n="U" oldref="63">Include transparent objects</paragraph>
+<paragraph role="paragraph" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="78"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_REDUCEBITMAPS_TRANSPARENCY">If this field is marked, the reduction in print quality for bitmaps also applies to the transparent areas of objects.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_REDUCEGRADIENTS" id="bm_id3155444" localize="false"/><paragraph role="heading" id="hd_id3154362" xml-lang="en-US" level="3" l10n="U" oldref="64">Reduce gradients</paragraph>
+<paragraph role="paragraph" id="par_id3148914" xml-lang="en-US" l10n="U" oldref="79"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_REDUCEGRADIENTS">If this field is marked, gradients are printed with reduced quality.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_REDUCEGRADIENTS_STRIPES" id="bm_id3147338" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sfx2:NumericField:TP_COMMONPRINTOPTIONS:NF_REDUCEGRADIENTS_STEPCOUNT" id="bm_id3150387" localize="false"/><paragraph role="heading" id="hd_id3155766" xml-lang="en-US" level="4" l10n="U" oldref="65">Gradient stripes</paragraph>
+<paragraph role="paragraph" id="par_id3156382" xml-lang="en-US" l10n="U" oldref="80"><ahelp hid="SFX2_NUMERICFIELD_TP_COMMONPRINTOPTIONS_NF_REDUCEGRADIENTS_STEPCOUNT">Specifies the maximum number of gradient stripes for printing.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_COMMONPRINTOPTIONS:RB_REDUCEGRADIENTS_COLOR" id="bm_id3149259" localize="false"/><paragraph role="heading" id="hd_id3146313" xml-lang="en-US" level="4" l10n="U" oldref="66">Intermediate color</paragraph>
+<paragraph role="paragraph" id="par_id3145230" xml-lang="en-US" l10n="U" oldref="81"><ahelp hid="SFX2_RADIOBUTTON_TP_COMMONPRINTOPTIONS_RB_REDUCEGRADIENTS_COLOR">Specifies that gradients are only printed in a single intermediate color.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_CONVERTTOGREYSCALES" id="bm_id3149565" localize="false"/><paragraph role="heading" id="hd_id3147323" xml-lang="en-US" level="3" l10n="U" oldref="67">Convert colors to grayscale</paragraph>
+<paragraph role="paragraph" id="par_id3145150" xml-lang="en-US" l10n="U" oldref="82"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_CONVERTTOGREYSCALES">Specifies that all colors are printed only as grayscale.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150646" xml-lang="en-US" level="2" l10n="U" oldref="50">Printer warnings</paragraph>
+<paragraph role="paragraph" id="par_id3154022" xml-lang="en-US" l10n="U" oldref="51"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_CONVERTTOGREYSCALES">Defines which warnings appear before printing begins.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_PAPERSIZE" id="bm_id3154665" localize="false"/><paragraph role="heading" id="hd_id3147003" xml-lang="en-US" level="3" l10n="U" oldref="52">Paper size</paragraph>
+<paragraph role="paragraph" id="par_id3150206" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_PAPERSIZE">Mark this check box if a certain paper size is needed for printing the current document.</ahelp> If the paper size used in the document is not provided by the current printer, you will receive an error message.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_PAPERORIENTATION" id="bm_id3158213" localize="false"/><paragraph role="heading" id="hd_id3155581" xml-lang="en-US" level="3" l10n="U" oldref="54">Paper orientation</paragraph>
+<paragraph role="paragraph" id="par_id3153231" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_PAPERORIENTATION">Mark this check box if you need a certain paper orientation for printing the current document.</ahelp> If the format used by the current document is not available from the printer, an error message will appear.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_COMMONPRINTOPTIONS:CB_TRANSPARENCY" id="bm_id3153784" localize="false"/><paragraph role="heading" id="hd_id3149531" xml-lang="en-US" level="3" l10n="U" oldref="83">Transparency</paragraph>
+<paragraph role="paragraph" id="par_id3152778" xml-lang="en-US" l10n="U" oldref="84"><ahelp hid="SFX2_CHECKBOX_TP_COMMONPRINTOPTIONS_CB_TRANSPARENCY">Mark this check box if you always want to be warned if transparent objects are contained in the document.</ahelp> If you print such a document, a dialog appears in which you can select if the transparency is to be printed in this print instruction.</paragraph>
+</body>
+</helpdocument>

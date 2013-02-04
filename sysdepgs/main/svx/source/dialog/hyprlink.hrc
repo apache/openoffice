@@ -1,0 +1,54 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _SVX_HYPERLINK_HRC
+#define _SVX_HYPERLINK_HRC
+
+#ifndef _SVX_SVXIDS_HRC
+#include <svx/svxids.hrc>
+#endif
+
+#ifndef _SFXSIDS_HRC
+#include <sfx2/sfxsids.hrc>
+#endif
+
+// defines ------------------------------------------------------------------
+
+#define CB_NAME				 1
+#define FT_URL				 2
+#define CB_URL				 3
+#define BTN_LINK			 SID_HLINKBAR_LINK
+#define BTN_INSERT_BOOKMARK  SID_HLINKBAR_BOOKMARK
+#define BTN_INET_SEARCH      SID_HLINKBAR_SEARCH
+#define TB					 7
+#define MN_FIELD			 8
+#define MN_BUTTON			 9
+#define BTN_TARGET			SID_HLINKBAR_TARGET
+#define STR_ADDRESS			11
+#define STR_EXPLORER		12
+#define STR_BOOKMARK_SEARCH 13
+
+#define BTN_OPENDIALOG		SID_HYPERLINK_DIALOG
+
+
+#endif
+

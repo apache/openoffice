@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidecalculatexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Calculating in Text Documents</title>
+         <filename>/text/swriter/guide/calculate.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149909"><bookmark_value>calculating; in text</bookmark_value>
+      <bookmark_value>formulas; calculating in text</bookmark_value>
+      <bookmark_value>references;in Writer tables</bookmark_value>
+</bookmark><comment>mw deleted "formula bar in text"</comment>
+<paragraph xml-lang="en-US" id="hd_id3149909" role="heading" level="1" l10n="U" oldref="1"><variable id="calculate"><link href="text/swriter/guide/calculate.xhp" name="Calculating in Text Documents">Calculating in Text Documents</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149949" role="paragraph" l10n="U" oldref="2">You can insert a calculation directly into a text document or into a text table.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149972" role="listitem" l10n="U" oldref="3">Click in the document where you want to insert the calculation, and then press F2. If you are in a table cell, type an equals sign =.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155547" role="listitem" l10n="U" oldref="10">Type the calculation that you want to insert, for example, <item type="literal">=10000/12</item>, and then press Enter.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3155565" role="paragraph" l10n="U" oldref="11">You can also click the <item type="menuitem">Formula</item>
+         <emph/>icon on the <item type="menuitem">Formula Bar</item>, and then choose a function for your formula.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8316904" role="note" l10n="NEW">To reference cells in a Writer text table, enclose the cell address or the cell range in angle brackets. For example, to reference cell A1 from another cell, enter =&lt;A1&gt; into the cell.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/main0214.xhp#releistename"/>
+      <embed href="text/swriter/guide/calculate_intext.xhp#calculate_intext"/>
+      <embed href="text/swriter/guide/calculate_clipboard.xhp#calculate_clipboard"/>
+      <embed href="text/swriter/guide/calculate_intable.xhp#calculate_intable"/>
+      <embed href="text/swriter/guide/calculate_multitable.xhp#calculate_multitable"/>
+   </body>
+</helpdocument>

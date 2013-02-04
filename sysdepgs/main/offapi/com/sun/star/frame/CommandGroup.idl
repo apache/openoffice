@@ -1,0 +1,175 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_frame_CommandGroup_idl__
+#define __com_sun_star_frame_CommandGroup_idl__
+
+//=============================================================================
+
+module com {  module sun {  module star {  module frame {
+
+//=============================================================================
+/** provides information about a supported command
+
+    @see XDispatchInformationProvider
+    @see Controller
+
+    @since OOo 2.0
+ */
+published constants CommandGroup
+{
+	//------------------------------------------------------------------------- 		
+	/** specifies interal commands.
+	 */
+    const short INTERNAL = 0;
+
+	//------------------------------------------------------------------------- 
+	/** specifies application based commands.
+	 */
+    const short APPLICATION = 1;
+
+	//------------------------------------------------------------------------- 
+	/** specifies view specific commands.
+	 */
+    const short VIEW = 2;
+
+	//------------------------------------------------------------------------- 
+	/** specifies document specific commands.
+	 */
+    const short DOCUMENT = 3;
+
+	//------------------------------------------------------------------------- 
+	/** specifies edit specific commands.
+	 */
+    const short EDIT = 4;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands used by the built-in Basic.
+	 */
+    const short MACRO = 5;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands to change options.
+	 */
+    const short OPTIONS = 6;
+
+	//------------------------------------------------------------------------- 
+	/** specifies math specific commands.
+	 */
+    const short MATH = 7;
+
+	//------------------------------------------------------------------------- 
+	/** specifies navigate commands.
+	 */
+    const short NAVIGATOR = 8;
+
+	//------------------------------------------------------------------------- 
+	/** specifies insert commands.
+	 */
+    const short INSERT = 9;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to formats.
+	 */
+    const short FORMAT = 10;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to templates.
+	 */
+    const short TEMPLATE = 11;
+
+	//------------------------------------------------------------------------- 
+	/** specifies text specific commands.
+	 */
+    const short TEXT = 12;
+
+	//------------------------------------------------------------------------- 
+	/** specifies frame specific commands.
+	 */
+    const short FRAME = 13;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to graphical data.
+	 */
+    const short GRAPHIC = 14;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to tables.
+	 */
+    const short TABLE = 15;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to bullets and numbering.
+	 */
+    const short ENUMERATION = 16;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to data.
+	 */
+    const short DATA = 17;
+
+	//------------------------------------------------------------------------- 
+	/** specifies special commands.
+	 */
+    const short SPECIAL = 18;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to images.
+	 */
+    const short IMAGE = 19;
+
+	//------------------------------------------------------------------------- 
+	/** specifies chart specific commands.
+	 */
+    const short CHART = 20;
+
+	//------------------------------------------------------------------------- 
+	/** specifies explorer specific commands.
+	 */
+    const short EXPLORER = 21;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to connectors.
+	 */
+    const short CONNECTOR = 22;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to modifications.
+	 */
+    const short MODIFY = 23;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to drawing.
+	 */
+    const short DRAWING = 24;
+
+	//------------------------------------------------------------------------- 
+	/** specifies commands that are related to controls.
+	 */
+    const short CONTROLS = 25;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

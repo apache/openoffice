@@ -1,0 +1,58 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_drawing_framework_BasicPaneFactory_idl__
+#define __com_sun_star_drawing_framework_BasicPaneFactory_idl__
+
+#ifndef __com_sun_star_frame_XController_idl__
+#include <com/sun/star/frame/XController.idl>
+#endif
+#ifndef _COM_SUN_STAR_DRAWING_FRAMEWORK_XPANEFACTORY_IDL_
+#include <com/sun/star/drawing/framework/XResourceFactory.idl>
+#endif
+
+module com { module sun { module star { module drawing { module framework {
+
+/** The <type>BasicPaneFactory</pane> is a resource factory that provides the
+    panes used by the Draw and Impress applications.
+    <p>This factory provides the center, left, and right pane.  For the left
+    pane there are two URLS, <code>private:resource/floater/LeftImpressPane</code>
+    and <code>private:resource/floater/LeftDrawPane</code>, one for Impress,
+    the other for Draw.  The center pane and the right pane have the URLs
+    <code>private:resource/floater/CenterPane</code> and
+    <code>private:resource/floater/RightPane</code> respectively.</p>
+    <p>This factory is typically created indirectly by registering it in the
+    configuration and have the <type>XModuleController</type> create it on
+    demand.</p>
+*/
+service BasicPaneFactory : XResourceFactory
+{
+    /** Give the controller to new instances so that they have access to the
+        drawing framework controllers.
+    */
+    create ([in] ::com::sun::star::frame::XController xController);
+};
+
+}; }; }; }; }; // ::com::sun::star::drawing::framework
+
+#endif

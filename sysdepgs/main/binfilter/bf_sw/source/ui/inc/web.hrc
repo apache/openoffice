@@ -1,0 +1,76 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _WEB_HRC
+#define _WEB_HRC
+
+#include "rcid.hrc"
+
+#define RC_WEB_ICON								(RC_WEB_BEGIN + 1)
+#define RID_WEBTOOLS_TOOLBOX					(RC_WEB_BEGIN + 2)
+#define RID_WEBTEXT_TOOLBOX						(RC_WEB_BEGIN + 3)
+#define STR_SHELLNAME_WEBTEXT					(RC_WEB_BEGIN + 6)
+#define STR_SHELLNAME_WEBFRAME					(RC_WEB_BEGIN + 7)
+#define RID_WEBFRAME_TOOLBOX					(RC_WEB_BEGIN + 8)
+#define RID_WEBGRAPHIC_TOOLBOX					(RC_WEB_BEGIN + 10)
+#define RID_WEBOLE_TOOLBOX						(RC_WEB_BEGIN + 11)
+
+
+#define MN_WEBFILE								(RC_WEB_BEGIN + 30)
+#define MN_WEBEDIT								(RC_WEB_BEGIN + 31)
+#define MN_WEBVIEW								(RC_WEB_BEGIN + 32)
+#define MN_WEBINS								(RC_WEB_BEGIN + 33)
+#define MN_WEBFORMAT							(RC_WEB_BEGIN + 34)
+#define MN_WEBEXTRA 							(RC_WEB_BEGIN + 35)
+#define MN_WEBWIN 								(RC_WEB_BEGIN + 36)
+
+#define MN_OBJECTMENU_WEBTEXT		   		(RC_WEB_BEGIN + 37)
+#define MN_OBJECTMENU_WEBLIST		   		(RC_WEB_BEGIN + 38)
+#define MN_OBJECTMENU_WEBTABLE		   		(RC_WEB_BEGIN + 39)
+#define MN_OBJECTMENU_WEBFRAME		   		(RC_WEB_BEGIN + 40)
+#define MN_OBJECTMENU_WEBGRAFIK 	   		(RC_WEB_BEGIN + 41)
+#define MN_OBJECTMENU_WEBDRAW		   		(RC_WEB_BEGIN + 42)
+#define MN_OBJECTMENU_WEBDRWTXT 	   		(RC_WEB_BEGIN + 43)
+#define MN_OBJECTMENU_WEBOLE		   		(RC_WEB_BEGIN + 44)
+#define MN_OBJECTMENU_WEBDRAWCONTROL   		(RC_WEB_BEGIN + 45)
+
+#define MN_WEB_TEXT_POPUPMENU   			(RC_WEB_BEGIN + 46)
+
+#define MN_WEBFILE_PORT							(RC_WEB_BEGIN + 47)
+#define MN_WEBEDIT_PORT			   				(RC_WEB_BEGIN + 48)
+#define MN_WEBVIEW_PORT			   				(RC_WEB_BEGIN + 49)
+#define MN_WEBINS_PORT			   				(RC_WEB_BEGIN + 50)
+#define MN_WEBFORMAT_PORT		   				(RC_WEB_BEGIN + 51)
+#define MN_WEBEXTRA_PORT 		   				(RC_WEB_BEGIN + 52)
+#define MN_WEBWIN_PORT 			   				(RC_WEB_BEGIN + 53)
+
+// ------------------------------------------------------------------------
+
+#define WEB_ACT_END					MN_OBJECTMENU_WEBDRAWCONTROL
+
+
+#if WEB_ACT_END > RC_WEB_END
+#error Resource-Id Ueberlauf in #file, #line
+#endif
+
+#endif

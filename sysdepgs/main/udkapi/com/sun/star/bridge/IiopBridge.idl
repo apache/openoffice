@@ -1,0 +1,76 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_bridge_Iiop_idl__ 
+#define __com_sun_star_bridge_Iiop_idl__ 
+
+#ifndef __com_sun_star_lang_XInitialization_idl__ 
+#include <com/sun/star/lang/XInitialization.idl>
+#endif 
+
+#ifndef __com_sun_star_lang_XComponent_idl__ 
+#include <com/sun/star/lang/XComponent.idl>
+#endif 
+
+#ifndef __com_sun_star_bridge_XBridge_idl__ 
+#include <com/sun/star/bridge/XBridge.idl>
+#endif 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module bridge {  
+ 
+//============================================================================= 
+/** Concrete service of the meta service Bridge for iiop.
+
+    <p> This bridge works with the iiop protocol. </p>
+
+    @see com.sun.star.bridge.Bridge
+ */
+published service IiopBridge
+{ 
+	/** This interface allows to initialize the bridge service with the necessary
+		arguments. The sequence&lt;any&gt; must have 4 members.
+		
+		<ol>
+			<li> String: The unique name of the bridge or an empty string</li>
+			<li> String: iiop</li>
+			<li> XConnection: The bidirectional connection, the bridge should work on</li>
+			<li> XInstanceProvider: 
+				The instance provider, that shall be called to access the initial object.</li>
+		</ol>
+	 */
+	interface com::sun::star::lang::XInitialization;
+	
+	/** The main interface of the service.
+	 */
+	interface com::sun::star::bridge::XBridge;
+
+	/** allows to terminate the interprocess bridge.
+	 */
+	interface com::sun::star::lang::XComponent;
+
+}; 
+//============================================================================= 
+ 
+}; }; }; };  
+#endif 

@@ -1,0 +1,67 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+// local resources
+
+#ifndef _SFXLOCAL_HRC
+#define _SFXLOCAL_HRC
+
+#include <sfx2/sfx.hrc>
+
+// Strings ---------------------------------------------------------------
+
+#define STR_SFX_NEWOFFICEDOC                (RID_SFX_SFXLOCAL_START +  0)
+#define STR_SFX_FILEDLG_ACTUALVERSION       (RID_SFX_SFXLOCAL_START +  2)
+#define STR_SFX_EXPLORERFILE_INSERT         (RID_SFX_SFXLOCAL_START +  3)
+#define STR_SFX_EXPLORERFILE_BUTTONINSERT   (RID_SFX_SFXLOCAL_START +  4)
+#define STR_SFX_IMPORT_ALL                  (RID_SFX_SFXLOCAL_START +  5)
+#define STR_SFX_EXPLORERFILE_EXPORT         (RID_SFX_SFXLOCAL_START +  6)
+#define STR_SFX_DOCK                        (RID_SFX_SFXLOCAL_START +  7)
+#define STR_SFX_UNDOCK                      (RID_SFX_SFXLOCAL_START +  8)
+#define STR_SFX_TASK_PANE_VIEW              (RID_SFX_SFXLOCAL_START +  9)
+#define STR_SFX_TASKS                       (RID_SFX_SFXLOCAL_START + 10)
+
+// Controls --------------------------------------------------------------
+
+#define SFX_CB_PROPERTY_NAME                (RID_SFX_SFXLOCAL_START +  0)
+#define SFX_ED_PROPERTY_VALUE               (RID_SFX_SFXLOCAL_START +  1)
+#define SFX_RB_PROPERTY_YES                 (RID_SFX_SFXLOCAL_START +  2)
+#define SFX_RB_PROPERTY_NO                  (RID_SFX_SFXLOCAL_START +  3)
+#define SFX_LB_PROPERTY_TYPE                (RID_SFX_SFXLOCAL_START +  4)
+#define SFX_PB_PROPERTY_REMOVE              (RID_SFX_SFXLOCAL_START +  5)
+#define SFX_WIN_PROPERTY_YESNO              (RID_SFX_SFXLOCAL_START +  6)
+#define SFX_QB_WRONG_TYPE                   (RID_SFX_SFXLOCAL_START +  7)
+#define SFX_FLD_DATE                        (RID_SFX_SFXLOCAL_START +  10)
+#define SFX_FLD_TIME                        (RID_SFX_SFXLOCAL_START +  11)
+#define SFX_FLD_DURATION                    (RID_SFX_SFXLOCAL_START +  12)
+#define SFX_ST_DURATION_FORMAT              (RID_SFX_SFXLOCAL_START +  13)
+
+// Images ----------------------------------------------------------------
+
+#define SFX_IMG_PROPERTY_REMOVE             (RID_SFX_SFXLOCAL_START +  0)
+#define SFX_IMG_PROPERTY_REMOVE_HC          (RID_SFX_SFXLOCAL_START +  1)
+#define SFX_IMG_CLOSE_DOC                   (RID_SFX_SFXLOCAL_START +  2)
+#define SFX_IMG_CLOSE_DOC_HC                (RID_SFX_SFXLOCAL_START +  3)
+
+#endif
+

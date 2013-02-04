@@ -1,0 +1,80 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_CachedDynamicResultSetStub_idl__
+#define __com_sun_star_ucb_CachedDynamicResultSetStub_idl__
+
+#ifndef __com_sun_star_ucb_XDynamicResultSet_idl__
+#include <com/sun/star/ucb/XDynamicResultSet.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_XSourceInitialization_idl__
+#include <com/sun/star/ucb/XSourceInitialization.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** provides read access to a static or dynamicallly changing
+	<type>ContentResultSet</type>.
+
+	<p>For example, a <type>DynamicResultSet</type> is returned from the
+    open-command executed by an <type>XCommandProcessor</type> of the service
+    <type>Content</type>.
+*/
+
+published service CachedDynamicResultSetStub
+{
+	//-------------------------------------------------------------------------
+	/** In Combination with a <type>CachedDynamicResultSet</type> this provides
+		remote optimized read access to a static or dynamically changing
+		<type>ContentResultSet</type>.
+
+        <p>The <type scope="com::sun::star::sdbc">XResultSet</type>s given to
+        the listener in the first notification in the
+        <type>WelcomeDynamicResultSetStruct</type> are implementations of
+        <type>CachedContentResultSetStub</type>.
+
+		<p>This interface is required.
+	*/
+	interface com::sun::star::ucb::XDynamicResultSet;
+
+	//-------------------------------------------------------------------------
+	/** provides the initialization of the <type>CachedDynamicResultSetStub</type>
+		with a source object.
+
+		<p>The <var>Source</var> in
+		<member>XSourceInitialization::setSource</member> has to be an
+		implementation of service <type>DynamicResultSet</type>
+
+		<p>This interface is required.
+	 */
+	interface com::sun::star::ucb::XSourceInitialization;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

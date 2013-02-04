@@ -1,0 +1,140 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+interface ViewShellBaseView
+{
+    SID_SWITCH_SHELL
+    [
+        ExecMethod = Execute;
+	]
+    SID_LEFT_PANE_IMPRESS
+    [
+		ExecMethod = Execute;
+        StateMethod = GetState;
+    ]
+    SID_LEFT_PANE_DRAW
+    [
+		ExecMethod = Execute;
+        StateMethod = GetState;
+    ]
+    SID_TASKPANE
+    [
+		ExecMethod = Execute;
+        StateMethod = GetState;
+    ]
+    SID_NOTES_WINDOW
+    [
+		ExecMethod = Execute;
+        StateMethod = GetState;
+    ]
+    SID_NORMAL_MULTI_PANE_GUI
+    [
+		ExecMethod = Execute;
+        StateMethod = GetState;
+    ]
+    SID_SLIDE_SORTER_MULTI_PANE_GUI
+    [
+		ExecMethod = Execute;
+        StateMethod = GetState;
+    ]
+	SID_DRAWINGMODE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetState;
+	]
+	SID_DIAMODE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetState;
+	]
+	SID_OUTLINEMODE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetState;
+	]
+	SID_NOTESMODE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetState;
+	]
+	SID_HANDOUTMODE
+	[
+		ExecMethod = Execute;
+		StateMethod = GetState;
+	]
+    SID_SHOW_TOOL_PANEL
+	[
+		ExecMethod = Execute;
+		StateMethod = GetState;
+	]
+    SID_WIN_FULLSCREEN
+	[
+		ExecMethod = Execute;
+		StateMethod = GetState;
+	]
+    FN_INSERT_SOFT_HYPHEN // status(final|play)
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+	]
+	FN_INSERT_HARDHYPHEN // status()
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+	]
+	FN_INSERT_HARD_SPACE // status(final|play)
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+	]
+    SID_INSERT_RLM
+    [
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+    ]
+    SID_INSERT_LRM
+    [
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+    ]
+    SID_INSERT_ZWSP
+    [
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+    ]
+    SID_INSERT_ZWNBSP
+    [
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+    ]
+    SID_RESTORE_EDITING_VIEW
+    [
+        ExecMethod = Execute ;
+        StateMethod = GetState ;
+    ]
+}
+
+shell ViewShellBase
+{
+    import ViewShellBaseView[Automation];
+}

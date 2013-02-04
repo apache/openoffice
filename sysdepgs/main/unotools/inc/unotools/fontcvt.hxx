@@ -1,0 +1,75 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _UNOTOOLS_FONTCVT_HXX
+#define _UNOTOOLS_FONTCVT_HXX
+
+#include <unotools/unotoolsdllapi.h>
+#include <tools/string.hxx>
+
+// ------------------
+// - FontToSubsFont -
+// ------------------
+
+#define FONTTOSUBSFONT_IMPORT                   ((sal_uLong)0x00000001)
+#define FONTTOSUBSFONT_EXPORT                   ((sal_uLong)0x00000002)
+#define FONTTOSUBSFONT_ONLYOLDSOSYMBOLFONTS     ((sal_uLong)0x00000004)
+
+typedef void* FontToSubsFontConverter;
+UNOTOOLS_DLLPUBLIC FontToSubsFontConverter     CreateFontToSubsFontConverter( const String& rFontName, sal_uLong nFlags );
+UNOTOOLS_DLLPUBLIC void                        DestroyFontToSubsFontConverter( FontToSubsFontConverter hConverter );
+UNOTOOLS_DLLPUBLIC sal_Unicode                 ConvertFontToSubsFontChar( FontToSubsFontConverter hConverter, sal_Unicode c );
+UNOTOOLS_DLLPUBLIC String                      GetFontToSubsFontName( FontToSubsFontConverter hConverter );
+
+// ---------------------------
+// - StarSymbolToMSMultiFont -
+// ---------------------------
+
+class UNOTOOLS_DLLPUBLIC StarSymbolToMSMultiFont
+{
+public:
+    //Returns the name of the best windows symbol font which this char can be
+    //mapped to. Sets rChar to the correct position for that font. If no
+    //match found, then no name is returned, and rChar is unchanged. If you
+    //want to convert a string, you don't want to use this.
+    virtual String ConvertChar(sal_Unicode &rChar) = 0;
+
+    //Starts converting the string at position rIndex. It converts as much of
+    //the string that can be converted to the same symbol font and returns the
+    //name of that font. rIndex is modified to the last index that was
+    //converted. Typically you call if continously until rIndex ==
+    //rString.Len() and handle each section as seperate 8bit strings using
+    //seperate fonts. Will return an empty string for a continous section
+    //that has no possible mapping.
+    virtual String ConvertString(String &rString, xub_StrLen &rIndex) = 0;
+    virtual ~StarSymbolToMSMultiFont() {}
+};
+
+//with bPerfect set the converter will only try and convert symbols which have
+//perfect mappings to the windows symbols fonts. With it not set, it will
+//allow somewhat more dubious transformations that are nevertheless
+//recognizably similiar. Even in this mode there will be characters that fail.
+//The users of this might want to make a distinction between failed characters
+//which were inside and those outside the unicode private area. 
+UNOTOOLS_DLLPUBLIC StarSymbolToMSMultiFont *CreateStarSymbolToMSMultiFont(bool bPerfectOnly=false);
+#endif // _UNOTOOLS_FONTCVT_HXX

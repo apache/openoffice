@@ -1,0 +1,219 @@
+#**************************************************************
+#
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#
+#**************************************************************
+
+
+
+# used for sdk common files
+PRODUCT_RELEASE=3.5
+OFFICENAME=Apache OpenOffice
+SDKDIRNAME=apacheopenoffice$(PRODUCT_RELEASE)_sdk
+OFFICEPRODUCTNAME=$(OFFICENAME) $(PRODUCT_RELEASE)
+TITLE=$(OFFICENAME) $(PRODUCT_RELEASE) SDK
+IDLDOCREFNAME="$(OFFICENAME) $(PRODUCT_RELEASE) API"
+
+
+PRODUCT_NAME=odkcommon
+PRODUCTZIPFILE=$(PRODUCT_NAME).zip
+
+DESTDIR=$(OUT)/bin/$(PRODUCT_NAME)
+DESTDIRBIN=$(DESTDIR)/bin
+DESTDIRLIB=$(DESTDIR)/lib
+DESTDIRDLL=$(DESTDIRLIB)
+DESTDIRIDL=$(DESTDIR)/idl
+DESTDIRINC=$(DESTDIR)/include
+DESTDIRJAR=$(DESTDIR)/classes
+DESTDIRXML=$(DESTDIR)/xml
+DESTDIRSETTINGS=$(DESTDIR)/settings
+DESTDIREXAMPLES=$(DESTDIR)/examples
+DESTDIRINC=$(DESTDIR)/include
+DESTDIRCLASSES=$(DESTDIR)/classes
+DESTDIRDOCU=$(DESTDIR)/docs
+DESTDIRCOMMONDOCU=$(DESTDIRDOCU)/common
+DESTDIRGENIDLREF=$(DESTDIRCOMMONDOCU)/ref
+DESTDIRDOCUIMAGES=$(DESTDIRDOCU)/images
+DESTDIRCPPDOCU=$(DESTDIRDOCU)/cpp
+DESTDIRGENCPPREF=$(DESTDIRDOCU)/cpp/ref
+DESTDIRJAVADOCU=$(DESTDIRDOCU)/java
+DESTDIRGENJAVAREF=$(DESTDIRDOCU)/java/ref
+
+BINOUT=$(SOLARBINDIR)
+INCOUT=$(SOLARINCDIR)
+IDLOUT=$(SOLARIDLDIR)
+XMLOUT=$(SOLARXMLDIR)
+LIBOUT=$(SOLARLIBDIR)
+
+CONVERTTAGSCRIPT=$(SOLARENV)/bin/converttags.pl
+CONVERTTAGFLAGNAME=converttags_html_files.flag
+CONVERTTAGFLAG = $(MISC)/$(CONVERTTAGFLAGNAME)
+
+MY_AUTODOC=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/autodoc
+
+.IF "$(OS)"=="FREEBSD" || "$(OS)"=="NETBSD"
+MY_COPY=$(GNUCOPY)
+MY_COPY_RECURSIVE=$(GNUCOPY) -R
+.ELSE
+.IF "$(OS)"=="MACOSX"
+MY_COPY=$(GNUCOPY)
+MY_COPY_RECURSIVE=$(GNUCOPY) -R
+.ELSE
+MY_COPY=$(GNUCOPY) -u
+MY_COPY_RECURSIVE=$(GNUCOPY) -urf
+.ENDIF
+.ENDIF
+
+MY_DELETE_RECURSIVE=rm -rf
+MY_TEXTCOPY=@cp 
+
+.IF "$(GUI)"=="WNT"
+#--------------------
+# WNT ONLY
+#--------------------
+#MY_DELETE_RECURSIVE=+del /sxyf
+#MY_TEXTCOPY=cat
+
+MY_DLLPREFIX=
+MY_DLLPOSTFIX=.dll
+MY_DLLOUT=$(OUT)/bin
+EXEPOSTFIX=.exe
+DLLOUT=$(SOLARBINDIR)
+DESTDIRCPPEXAMPLES=$(DESTDIR)/examples/cpp
+
+.IF "$(COM)"=="GCC"
+DESTPLATFROM=mingw
+.ELSE
+DESTPLATFROM=windows
+.ENDIF
+DESTDIRDLL=$(DESTDIRBIN)
+DESTDIRCLI=$(DESTDIR)/cli
+
+.ELSE
+#--------------------
+# UNX ONLYDESTDIRCPPEXAMPLES=$(DESTDIR)/examples/cpp
+
+#--------------------
+#MY_DELETE_RECURSIVE=rm -rf
+#MY_TEXTCOPY= tr -d "\015"
+
+MY_DLLPREFIX=lib
+.IF "$(OS)"=="MACOSX"
+MY_DLLPOSTFIX=.dylib
+.ELSE
+MY_DLLPOSTFIX=.so
+.ENDIF
+MY_DLLOUT=$(OUT)/lib
+DLLOUT=$(SOLARLIBDIR)
+
+.IF "$(OS)$(CPU)"=="SOLARISS"
+##############
+# SOLARIS SPARC
+##############
+DESTPLATFROM=solsparc
+
+.ELIF "$(OS)$(CPU)"=="SOLARISU"
+##############
+# SOLARIS SPARC 64
+##############
+DESTPLATFROM=solsparc64
+
+.ELIF "$(OS)$(CPU)"=="SOLARISI"
+##########
+# SOLARIS INTEL
+##########
+DESTPLATFROM=solintel
+
+.ELIF "$(OS)"=="LINUX"
+###########
+# LINUX
+###########
+DESTPLATFROM=linux
+
+.ELIF "$(OS)"=="NETBSD"
+###########
+# NETBSD
+###########
+DESTPLATFROM=netbsd
+
+.ELIF "$(OS)"=="FREEBSD"
+###########
+# FREEBSD
+###########
+DESTPLATFROM=freebsd
+
+.ELIF "$(OS)"=="MACOSX"
+###########
+# MACOSX
+###########
+DESTPLATFROM=macosx
+.ENDIF
+
+#DESTDIRBIN=$(DESTDIR)/$(DESTPLATFROM)/bin
+#DESTDIRLIB=$(DESTDIR)/$(DESTPLATFROM)/lib
+#DESTDIRDLL=$(DESTDIRLIB)
+
+.ENDIF
+
+#MY_TEXTCOPY_SOURCEPRE=<
+#MY_TEXTCOPY_TARGETPRE=>
+
+
+INCLUDETOPDIRLIST= \
+	$(INCOUT)/sal \
+	$(INCOUT)/salhelper \
+	$(INCOUT)/rtl \
+	$(INCOUT)/osl \
+	$(INCOUT)/store \
+	$(INCOUT)/typelib \
+	$(INCOUT)/uno \
+	$(INCOUT)/cppu \
+	$(INCOUT)/cppuhelper \
+	$(INCOUT)/registry \
+	$(INCOUT)/stl
+
+.IF "$(GUI)"=="WNT"
+INCLUDETOPDIRLIST += $(INCOUT)/systools
+.ENDIF
+
+INCLUDEDIRLIST:={$(subst,/,/ $(shell @$(FIND) $(INCLUDETOPDIRLIST) -type d -print))}
+
+INCLUDEFILELIST=\
+    $(INCOUT)/com/sun/star/uno/Any.h \
+    $(INCOUT)/com/sun/star/uno/Any.hxx \
+    $(INCOUT)/com/sun/star/uno/genfunc.h \
+    $(INCOUT)/com/sun/star/uno/genfunc.hxx \
+    $(INCOUT)/com/sun/star/uno/Reference.h \
+    $(INCOUT)/com/sun/star/uno/Reference.hxx \
+    $(INCOUT)/com/sun/star/uno/Sequence.h \
+    $(INCOUT)/com/sun/star/uno/Sequence.hxx \
+    $(INCOUT)/com/sun/star/uno/Type.h \
+    $(INCOUT)/com/sun/star/uno/Type.hxx
+
+INCLUDELIST:=\
+	{$(shell @$(FIND) $(INCLUDETOPDIRLIST) -type f ! \( -name "*~" -o -name "*build.lst" -o -name "*deliver.log" \) -print)} \
+	$(INCLUDEFILELIST)
+
+SDK_CONTENT_CHECK_FILES= \
+	$(MISC)/copying_files.txt
+
+SDK_CHECK_FLAGS= \
+	$(MISC)/checkbin.txt \
+	$(MISC)/checkidl.txt \
+	$(MISC)/checkinc.txt \
+	$(MISC)/checkinc2.txt

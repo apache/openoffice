@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="HID" script:language="StarBasic">&apos; *** MODULE HID ***
+
+Dim oDialog AS Object
+Dim document AS Object
+
+Sub Main
+
+	If not IsHelpFile Then
+		msgbox(strErr_NoHelpFile)
+		Exit Sub
+	End If
+
+	document = StarDesktop.CurrentComponent
+
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgHID&quot;)
+	oDialogModel = oDialog.Model
+	
+&apos;	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)	
+&apos;	filename = oPath.UserConfig+&quot;/help_hid.lst&quot;
+&apos;	oButHIDList = oDialog.GetControl(&quot;butHIDList&quot;)
+&apos;	If FileExists(filename) Then
+&apos;		oButHIDList.Enable = true
+&apos;	Else
+&apos;		oLblWait = oDialog.GetControl(&quot;lblWait&quot;)
+&apos;		oLblWait.Text = &quot;No hid list found in your config folder&quot;
+&apos;		oButHIDList.Enable = false
+&apos;	End If
+	oTxtHID = oDialog.GetControl(&quot;txtHID&quot;)
+	
+	&apos; Check if bookmarks are allowed here
+	If IsInList Then
+		msgbox &quot;No Bookmarks allowed inside a list.&quot;, 48, &quot;D&apos;oh!&quot;
+		Exit Sub
+	End If
+	
+	&apos; Find out if we are in front of an existing HID
+	If oDialog.Execute() = 1 Then
+	
+		If oTxtHID.Text = &quot;&quot; Then
+			msgbox &quot;Empty Help ID. No Help ID element added.&quot;
+		Else
+			If IsInBookmark &gt; 0 or Not(ParaIsEmpty) Then
+				CR
+			End If
+			If not(join(split(oTxtHID.Text,&quot; &quot;),&quot;&quot;) = oTxtHID.Text) Then
+&apos;				msgbox &quot;Help ID seems to contain forbidden characters (like spaces). You may need to verify this.&quot;
+&apos;               HID and uno command
+				arHID = split(oTxtHID.Text,&quot; &quot;)
+				sHID = arHID(0)
+				sUNO = arHID(1)
+			Else
+				sHID = oTxtHID.Text
+				sUNO = &quot;&quot;
+			End If
+			
+			If sHID &lt;&gt; &quot;&quot; Then
+				bmid = CreateID
+				InsertTagCR(&quot;BOOKMARK&quot;,&quot;&lt;BOOKMARK branch=&quot;&quot;hid/&quot; + sHID + &quot;&quot;&quot; id=&quot;&quot;bm_id&quot; + bmid + &quot;&quot;&quot; localize=&quot;&quot;false&quot;&quot;/&gt;&quot;,&quot;hlp_aux_bookmark&quot;)
+			End If
+			If sUNO &lt;&gt; &quot;&quot; Then
+				bmid = CreateID
+				InsertTagCR(&quot;BOOKMARK&quot;,&quot;&lt;BOOKMARK branch=&quot;&quot;hid/&quot; + sUNO + &quot;&quot;&quot; id=&quot;&quot;bm_id&quot; + bmid + &quot;&quot;&quot; localize=&quot;&quot;false&quot;&quot;/&gt;&quot;,&quot;hlp_aux_bookmark&quot;)
+			End If
+			
+		End If
+	End If
+	oDialog.dispose
+
+End Sub
+
+Sub ConvertToSymbol
+	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)	
+	filename = oPath.UserConfig+&quot;/help_hid.lst&quot;
+	oTxtHID = oDialog.GetControl(&quot;txtHID&quot;)
+	oButHIDList = oDialog.GetControl(&quot;butHIDList&quot;)
+	sHID = oTxtHID.Text
+	sCt = 0
+	If FileExists(filename) AND sHID &lt;&gt; &quot;&quot; Then
+		oLblWait = oDialog.GetControl(&quot;lblWait&quot;)
+		oLblWait.Text = &quot;Searching help_hid.lst. Please wait...&quot;
+		iNumber = Freefile
+		bFound = false
+		Open filename For Input As iNumber
+		Do While (not eof(iNumber) AND not(bFound))
+			Line Input #iNumber, sLine
+			sCt = sCt+1
+			arHID = split(sLine,&quot;,&quot;)
+			If arHID(1) = sHID Then
+				If arHID(2) &lt;&gt; &quot;&quot; Then
+					symHID = arHID(0) + &quot; &quot; + arHID(2)
+				Else
+					symHID = arHID(0)
+				End If
+				bFound = true	
+			End If
+		Loop
+		Close #iNumber
+		If not bFound Then
+			oLblWait.Text = &quot;Nothing found. Searched &quot;+sCt+&quot; Help IDs&quot;
+		Else
+			oTxtHID.Text = symHID
+			oLblWait.Text = &quot;HelpID found. Searched &quot;+sCt+&quot; Help IDs&quot;
+			oButHIDList.Enable = false
+		End If
+	Else
+		oLblWait.Text = &quot;No help_hid.lst found in your config folder&quot;
+	End If
+End Sub
+
+</script:module>

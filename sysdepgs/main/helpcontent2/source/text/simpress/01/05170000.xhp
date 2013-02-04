@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0105170000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Connectors</title>
+<filename>/text/simpress/01/05170000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-01-12T14:05:26">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150297"><bookmark_value>connectors; properties of</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorAttributes" id="bm_id7044568" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorAttributes" id="bm_id3150343" localize="false"/>
+<paragraph role="heading" id="hd_id3150297" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/simpress/01/05170000.xhp" name="Connectors">Connectors</link></paragraph>
+<paragraph role="paragraph" id="par_id3149209" xml-lang="en-US" l10n="U" oldref="2"><variable id="verbindertext"><ahelp hid=".uno:ConnectorAttributes">Sets the properties of a connector.</ahelp>
+</variable></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_CONNECTION:LB_TYPE" id="bm_id3149405" localize="false"/>
+<paragraph role="heading" id="hd_id3145384" xml-lang="en-US" level="2" l10n="U" oldref="21">Type</paragraph>
+<paragraph role="paragraph" id="par_id3152899" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_CONNECTION:LB_TYPE">Lists the types of connectors that are available.</ahelp>There are four types of connectors: <emph>standard, line, straight, and curved</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3148866" xml-lang="en-US" level="2" l10n="U" oldref="3">Line skew</paragraph>
+<paragraph role="paragraph" id="par_id3148605" xml-lang="en-US" l10n="U" oldref="4">Defines the skew of a connector line. The preview window displays the result.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_CONNECTION:MTR_FLD_LINE_1" id="bm_id3159206" localize="false"/>
+<paragraph role="heading" id="hd_id3157982" xml-lang="en-US" level="3" l10n="U" oldref="5">Line 1</paragraph>
+<paragraph role="paragraph" id="par_id3150215" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_CONNECTION:MTR_FLD_LINE_1">Enter a skew value for Line 1.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_CONNECTION:MTR_FLD_LINE_2" id="bm_id3150046" localize="false"/>
+<paragraph role="heading" id="hd_id3145360" xml-lang="en-US" level="3" l10n="U" oldref="7">Line 2</paragraph>
+<paragraph role="paragraph" id="par_id3146962" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_CONNECTION:MTR_FLD_LINE_2">Enter a skew value for Line 2.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_CONNECTION:MTR_FLD_LINE_3" id="bm_id3153071" localize="false"/>
+<paragraph role="heading" id="hd_id3149873" xml-lang="en-US" level="3" l10n="U" oldref="9">Line 3</paragraph>
+<paragraph role="paragraph" id="par_id3153957" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_CONNECTION:MTR_FLD_LINE_3">Enter a skew value for Line 3.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145581" xml-lang="en-US" level="2" l10n="U" oldref="11">Line spacing</paragraph>
+<paragraph role="paragraph" id="par_id3150395" xml-lang="en-US" l10n="U" oldref="12">Sets the line spacing for the connectors.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_CONNECTION:MTR_FLD_HORZ_1" id="bm_id3150538" localize="false"/>
+<paragraph role="heading" id="hd_id3147297" xml-lang="en-US" level="3" l10n="U" oldref="13">Begin horizontal</paragraph>
+<paragraph role="paragraph" id="par_id3145238" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_CONNECTION:MTR_FLD_HORZ_1">Enter the amount of horizontal space you want at the beginning of the connector.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_CONNECTION:MTR_FLD_VERT_1" id="bm_id3149353" localize="false"/>
+<paragraph role="heading" id="hd_id3153118" xml-lang="en-US" level="3" l10n="U" oldref="15">Begin vertical</paragraph>
+<paragraph role="paragraph" id="par_id3150653" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_CONNECTION:MTR_FLD_VERT_1">Enter the amount of vertical space you want at the beginning of the connector.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_CONNECTION:MTR_FLD_HORZ_2" id="bm_id3149889" localize="false"/>
+<paragraph role="heading" id="hd_id3150746" xml-lang="en-US" level="3" l10n="U" oldref="17">End horizontal</paragraph>
+<paragraph role="paragraph" id="par_id3148726" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_CONNECTION:MTR_FLD_HORZ_2">Enter the amount of horizontal space you want at the end of the connector.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_CONNECTION:MTR_FLD_VERT_2" id="bm_id3145596" localize="false"/>
+<paragraph role="heading" id="hd_id3153038" xml-lang="en-US" level="3" l10n="U" oldref="19">End vertical</paragraph>
+<paragraph role="paragraph" id="par_id3155260" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_CONNECTION:MTR_FLD_VERT_2">Enter the amount of vertical space you want at the end of the connector.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:NewRouting" id="bm_id5161886" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:NewRouting" id="bm_id3153735" localize="false"/>
+<paragraph role="heading" id="hd_id3147369" xml-lang="en-US" level="2" l10n="U" oldref="23">Reset line skew</paragraph>
+<paragraph role="paragraph" id="par_id3159205" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid=".uno:NewRouting">Resets the line skew values to the default.</ahelp>.<embedvar href="text/shared/00/00000001.xhp#kontext"/>
+</paragraph>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/orgchart.xhp#orgchart"/>
+</section>
+</body>
+</helpdocument>

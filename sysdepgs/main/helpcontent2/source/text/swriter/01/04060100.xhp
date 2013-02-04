@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104060100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Options</title>
+<filename>/text/swriter/01/04060100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-07T11:54:57">converted from old format - fpe
+UFI: edited re spec "Enhance Caption Dialog in Writer"</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_CAPTION:BTN_OPTION" id="bm_id3151170" localize="false"/>
+<paragraph role="heading" id="hd_id3149287" xml-lang="en-US" level="1" l10n="CHG" oldref="1">Options</paragraph>
+<paragraph role="paragraph" id="par_id3151177" xml-lang="en-US" l10n="U" oldref="2"><variable id="optionentext"><ahelp hid="SW:PUSHBUTTON:DLG_CAPTION:BTN_OPTION">Adds the chapter number to the caption label. To use this feature, you must first assign an <link href="text/swriter/guide/chapter_numbering.xhp" name="outline level">outline level</link> to a paragraph style, and then apply the style to the chapter headings in your document.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000404.xhp#nummernkreisoptionen"/>
+</section>
+<paragraph role="heading" id="hd_id3149805" xml-lang="en-US" level="2" l10n="U" oldref="3">Numbering by chapter</paragraph>
+<paragraph role="paragraph" id="par_id3153532" xml-lang="en-US" l10n="U" oldref="4">When you add chapter numbers to caption labels, the caption numbering is reset when a chapter heading is encountered. For example, if the last figure in chapter 1 is "Figure 1.12", the first figure in the next chapter would be "Figure 2.1".</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_SEQUENCE_OPTION:LB_LEVEL" id="bm_id3154479" localize="false"/>
+<paragraph role="heading" id="hd_id3154574" xml-lang="en-US" level="3" l10n="U" oldref="5">Level</paragraph>
+<paragraph role="paragraph" id="par_id3152954" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SW:LISTBOX:DLG_SEQUENCE_OPTION:LB_LEVEL">Select the number of outline levels from the top of the chapter hierarchy down to include in the caption label.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_SEQUENCE_OPTION:ED_SEPARATOR" id="bm_id3153672" localize="false"/>
+<paragraph role="heading" id="hd_id3151316" xml-lang="en-US" level="3" l10n="U" oldref="7">Separator</paragraph>
+<paragraph role="paragraph" id="par_id3155892" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SW:EDIT:DLG_SEQUENCE_OPTION:ED_SEPARATOR">Enter the character that you want to insert between the chapter number and the caption number.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10633" xml-lang="en-US" level="2" l10n="NEW">Category and frame format</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_SEQUENCE_OPTION:LB_CHARSTYLE" id="bm_id8001037" localize="false"/>
+<paragraph role="heading" id="par_idN10639" xml-lang="en-US" level="3" l10n="NEW">Character style</paragraph>
+<paragraph role="paragraph" id="par_idN1063F" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the character style.</ahelp></paragraph>
+<!-- removed HID SW:CHECKBOX:DLG_CAPTION:CB_COPY_ATTR -->
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_SEQUENCE_OPTION:CB_APPLYBAS" id="bm_id2826013" localize="false"/>
+<paragraph role="heading" id="hd_id3143280" xml-lang="en-US" level="3" l10n="U" oldref="43">Apply border and shadow</paragraph>
+<paragraph role="paragraph" id="par_id3149826" xml-lang="en-US" l10n="CHG" oldref="44"><ahelp hid="SW:CHECKBOX:DLG_CAPTION:CB_COPY_ATTR">Applies the border and shadow of the object to the caption frame.</ahelp></paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/swriter/guide/captions_numbers.xhp#captions_numbers"/>
+<embed href="text/swriter/guide/captions.xhp#captions"/>
+<embed href="text/swriter/guide/chapter_numbering.xhp#chapter_numbering"/>
+</body>
+</helpdocument>

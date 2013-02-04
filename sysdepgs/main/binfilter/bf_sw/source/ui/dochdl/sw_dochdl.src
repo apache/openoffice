@@ -1,0 +1,151 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define NO_LOCALIZE_EXPORT
+
+
+#include "dochdl.hrc"
+#include "globals.hrc"
+
+
+
+
+
+
+String STR_PRIVATETEXT
+{
+	/* ### ACHTUNG: Neuer Text in Resource? StarWriter : Formatierter Text [StarWriter] */
+	Text [ de ] = "%PRODUCTNAME Writer" ;
+	Text [ en-US ] = "%PRODUCTNAME Writer" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "%PRODUCTNAME Writer";
+	Text[ ru ] = "%PRODUCTNAME Writer";
+	Text[ el ] = "%PRODUCTNAME Writer";
+	Text[ nl ] = "%PRODUCTNAME Writer";
+	Text[ fr ] = "%PRODUCTNAME Writer";
+	Text[ es ] = "%PRODUCTNAME Writer";
+	Text[ fi ] = "%PRODUCTNAME Writer";
+	Text[ ca ] = "%PRODUCTNAME Writer";
+	Text[ it ] = "%PRODUCTNAME Writer";
+	Text[ sk ] = "%PRODUCTNAME Writer";
+	Text[ da ] = "%PRODUCTNAME Writer";
+	Text[ sv ] = "%PRODUCTNAME Writer";
+	Text[ pl ] = "%PRODUCTNAME Writer";
+	Text[ pt-BR ] = "%PRODUCTNAME Writer";
+	Text[ th ] = "%PRODUCTNAME Writer";
+	Text[ ja ] = "%PRODUCTNAME Writer";
+	Text[ ko ] = "%PRODUCTNAME Writer";
+	Text[ zh-CN ] = "%PRODUCTNAME Writer";
+	Text[ zh-TW ] = "%PRODUCTNAME Writer";
+	Text[ tr ] = "%PRODUCTNAME Writer";
+	Text[ hi-IN ] = "%PRODUCTNAME लेखक";
+	Text[ ar ] = "%PRODUCTNAME Writer";
+	Text[ he ] = "%PRODUCTNAME Writer";
+};
+String STR_PRIVATEGRAPHIC
+{
+	Text [ de ] = "Grafik [%PRODUCTNAME Writer]" ;
+	Text [ en-US ] = "Graphics [%PRODUCTNAME Writer]" ;
+	Text[ pt ] = "Imagem [%PRODUCTNAME Writer]";
+	Text[ ru ] = "Графический объект [%PRODUCTNAME Writer]";
+	Text[ el ] = "Γραφικό [%PRODUCTNAME Writer]";
+	Text[ nl ] = "Afbeelding [%PRODUCTNAME Writer]";
+	Text[ fr ] = "Image [%PRODUCTNAME Writer]";
+	Text[ es ] = "Imagen [%PRODUCTNAME Writer]";
+	Text[ fi ] = "Grafiikka [%PRODUCTNAME Writer]";
+	Text[ ca ] = "Imatge [%PRODUCTNAME Writer]";
+	Text[ it ] = "Immagine [%PRODUCTNAME Writer]";
+	Text[ sk ] = "Obrázok [%PRODUCTNAME Writer]";
+	Text[ da ] = "Grafik [%PRODUCTNAME Writer]";
+	Text[ sv ] = "Grafik [%PRODUCTNAME Writer]";
+	Text[ pl ] = "[%PRODUCTNAME Writer] - Grafika";
+	Text[ pt-BR ] = "Figura [%PRODUCTNAME Writer]";
+	Text[ th ] = "กราฟิค [%PRODUCTNAME Writer]";
+	Text[ ja ] = "図 [%PRODUCTNAME Writer]";
+	Text[ ko ] = "그림 [%PRODUCTNAME Writer]";
+	Text[ zh-CN ] = "图形 [%PRODUCTNAME Writer]";
+	Text[ zh-TW ] = "圖形 [%PRODUCTNAME Writer]";
+	Text[ tr ] = "Grafik [%PRODUCTNAME Writer]";
+	Text[ hi-IN ] = "सुचित्र [%PRODUCTNAME लेखक]";
+	Text[ ar ] = "[%PRODUCTNAME Writer] رسومات";
+	Text[ he ] = "Grafik [%PRODUCTNAME Writer]";
+};
+String STR_PRIVATEOLE
+{
+	Text [ de ] = "Objekt [%PRODUCTNAME Writer]" ;
+	Text [ en-US ] = "Object [%PRODUCTNAME Writer]" ;
+	Text[ pt ] = "Objecto [%PRODUCTNAME Writer]";
+	Text[ ru ] = "Объект [%PRODUCTNAME Writer]";
+	Text[ el ] = "Αντικείμενο [%PRODUCTNAME Writer]";
+	Text[ nl ] = "Object [%PRODUCTNAME Writer]";
+	Text[ fr ] = "Objet [%PRODUCTNAME Writer]";
+	Text[ es ] = "Objeto [%PRODUCTNAME Writer]";
+	Text[ fi ] = "Objekti [%PRODUCTNAME Writer]";
+	Text[ ca ] = "Objecte [%PRODUCTNAME Writer]";
+	Text[ it ] = "Oggetto [%PRODUCTNAME Writer]";
+	Text[ sk ] = "Objekt [%PRODUCTNAME Writer]";
+	Text[ da ] = "Objekt [%PRODUCTNAME Writer]";
+	Text[ sv ] = "Objekt [%PRODUCTNAME Writer]";
+	Text[ pl ] = "Obiekt [%PRODUCTNAME Writer]";
+	Text[ pt-BR ] = "Objeto [%PRODUCTNAME Writer]";
+	Text[ th ] = "วัตถุ [%PRODUCTNAME Writer]";
+	Text[ ja ] = "オブジェクト [%PRODUCTNAME Writer]";
+	Text[ ko ] = "개체 [%PRODUCTNAME Writer]";
+	Text[ zh-CN ] = "对象 [%PRODUCTNAME Writer]";
+	Text[ zh-TW ] = "物件 [%PRODUCTNAME Writer]";
+	Text[ tr ] = "Nesne [%PRODUCTNAME Writer]";
+	Text[ hi-IN ] = "वस्तु [%PRODUCTNAME लेखक]";
+	Text[ ar ] = "[%PRODUCTNAME Writer]كائن ";
+	Text[ he ] = "Objekt [%PRODUCTNAME Writer]";
+};
+String STR_DDEFORMAT
+{
+	/* ### ACHTUNG: Neuer Text in Resource? DDE Verkn�pfung : DDE Verkn�pfung */
+	Text [ de ] = "DDE Verknüpfung" ;
+	Text [ en-US ] = "DDE link" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Ligação DDE";
+	Text[ ru ] = "Связь по DDE";
+	Text[ el ] = "Σύνδεσμος DDE";
+	Text[ nl ] = "DDE-koppeling";
+	Text[ fr ] = "Lien DDE";
+	Text[ es ] = "Vínculo DDE";
+	Text[ fi ] = "DDE-linkki";
+	Text[ ca ] = "Enllaç DDE";
+	Text[ it ] = "Collegamento DDE";
+	Text[ sk ] = "Odkaz DDE";
+	Text[ da ] = "DDE-kæde";
+	Text[ sv ] = "DDE-länk";
+	Text[ pl ] = "Łącza DDE ";
+	Text[ pt-BR ] = "Vínculo DDE";
+	Text[ th ] = "เชื่อมโยง DDE ";
+	Text[ ja ] = "DDE リンク";
+	Text[ ko ] = "DDE 연결";
+	Text[ zh-CN ] = "DDE 链接";
+	Text[ zh-TW ] = "DDE 捷徑";
+	Text[ tr ] = "DDE bağlantısı";
+	Text[ hi-IN ] = "DDE लिंक";
+	Text[ ar ] = "ارتباط DDE";
+	Text[ he ] = "DDE Verknüpfung";
+};
+
+

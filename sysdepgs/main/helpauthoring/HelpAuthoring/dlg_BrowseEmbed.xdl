@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlg_BrowseEmbed" dlg:left="0" dlg:top="0" dlg:width="283" dlg:height="134" dlg:closeable="true" dlg:moveable="true" dlg:title="Sections/Variables/Paragraphs">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:border="simple" dlg:font-name="Monospace" dlg:font-stylename="Regular"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:button dlg:id="butClose" dlg:tab-index="6" dlg:left="229" dlg:top="112" dlg:width="43" dlg:height="14" dlg:help-text="Closes the dialog without inserting the comment" dlg:tabstop="true" dlg:value="Close" dlg:button-type="cancel"/>
+  <dlg:button dlg:id="butSelect" dlg:tab-index="4" dlg:disabled="true" dlg:left="229" dlg:top="94" dlg:width="43" dlg:height="14" dlg:help-text="Inserts the comment and closes the dialog" dlg:tabstop="true" dlg:default="true" dlg:value="Select" dlg:button-type="ok"/>
+  <dlg:radiogroup>
+   <dlg:radio dlg:id="opSections" dlg:tab-index="1" dlg:left="230" dlg:top="15" dlg:width="35" dlg:height="10" dlg:help-text="Select this if the embedded item is a section (default)" dlg:tabstop="true" dlg:value="Sections" dlg:checked="true">
+    <script:event script:event-name="on-itemstatechange" script:location="application" script:macro-name="HelpAuthoring.Embed.UpdateLIst" script:language="StarBasic"/>
+   </dlg:radio>
+   <dlg:radio dlg:id="opVariables" dlg:tab-index="2" dlg:left="230" dlg:top="25" dlg:width="35" dlg:height="10" dlg:help-text="Select this if the embedded item is an inline variable." dlg:tabstop="true" dlg:value="Variables">
+    <script:event script:event-name="on-itemstatechange" script:location="application" script:macro-name="HelpAuthoring.Embed.UpdateLIst" script:language="StarBasic"/>
+   </dlg:radio>
+   <dlg:radio dlg:id="opParas" dlg:tab-index="3" dlg:left="230" dlg:top="35" dlg:width="45" dlg:height="10" dlg:help-text="Select this if the embedded item is an inline variable." dlg:tabstop="true" dlg:value="Paragraphs">
+    <script:event script:event-name="on-itemstatechange" script:location="application" script:macro-name="HelpAuthoring.Embed.UpdateLIst" script:language="StarBasic"/>
+   </dlg:radio>
+  </dlg:radiogroup>
+  <dlg:text dlg:id="lblShow" dlg:tab-index="5" dlg:left="230" dlg:top="7" dlg:width="39" dlg:height="8" dlg:value="Show:"/>
+  <dlg:menulist dlg:style-id="0" dlg:id="lbElements" dlg:tab-index="0" dlg:left="5" dlg:top="5" dlg:width="215" dlg:height="123" dlg:tabstop="true">
+   <script:event script:event-name="on-itemstatechange" script:location="application" script:macro-name="HelpAuthoring.Embed.CheckButton" script:language="StarBasic"/>
+  </dlg:menulist>
+ </dlg:bulletinboard>
+</dlg:window>

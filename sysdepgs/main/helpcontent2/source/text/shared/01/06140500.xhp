@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106140500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Events</title>
+<filename>/text/shared/01/06140500.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="ereignisse">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152427"><bookmark_value>customizing; events</bookmark_value>
+<bookmark_value>events; customizing</bookmark_value>
+</bookmark>
+<!-- removed HID HID_CONFIG_EVENT -->
+<bookmark xml-lang="en-US" branch="hid/.uno:TableEvents" id="bm_id1163922275" localize="false"/>
+<paragraph role="heading" id="hd_id3152427" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/06140500.xhp" name="Events">Events</link></paragraph>
+<paragraph role="paragraph" id="par_id3152937" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="assignaction"><ahelp hid=".">Assigns macros to program events. The assigned macro runs automatically every time the selected event occurs.</ahelp></variable></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000406.xhp#events"/>
+</section>
+
+<switch select="appl">
+<case select="CALC">
+<paragraph role="note" id="par_id317748820" xml-lang="en-US" l10n="NEW">The dialog box has reduced functionality when called from the Edit-Sheet menu of a spreadsheet.</paragraph>
+</case>
+</switch>
+
+
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_EVENTS:LB_SAVEIN" id="bm_id1163975" localize="false"/><paragraph role="heading" id="par_idN1060A" xml-lang="en-US" level="2" l10n="NEW">Save In</paragraph>
+<paragraph role="paragraph" id="par_idN1060E" xml-lang="en-US" l10n="NEW"><ahelp hid="705547787">Select first where to save the event binding, in the current document or in %PRODUCTNAME.</ahelp></paragraph>
+<paragraph role="note" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="36">A macro that is saved with a document can only be run when that document is opened.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SVX_MACRO_LB_EVENT" id="bm_id1800286" localize="false"/><paragraph role="paragraph" id="par_idN1061A" xml-lang="en-US" l10n="NEW"><ahelp hid="40000">The big list box lists the events and the assigned macros. After you selected the location in the <emph>Save In</emph> list box, select an event in the big list box. Then click <emph>Assign Macro</emph>.</ahelp></paragraph>
+<!-- removed HID SFX2:PUSHBUTTON:TP_CONFIG_EVENT:PB_ASSIGN -->
+
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_MACROASSIGN:PB_ASSIGN" id="bm_id755672891" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_EVENTS:PB_ASSIGN" id="bm_id752891" localize="false"/>
+<paragraph role="heading" id="hd_id3159258" xml-lang="en-US" level="2" l10n="CHG" oldref="22">Assign Macro</paragraph>
+<paragraph role="paragraph" id="par_id3156152" xml-lang="en-US" l10n="CHG" oldref="23"><ahelp hid="SFX2:PUSHBUTTON:TP_CONFIG_EVENT:PB_ASSIGN">Opens the <link href="text/shared/01/06130000.xhp">Macro Selector</link> to assign a macro to the selected event.</ahelp></paragraph>
+<!-- removed HID SFX2:PUSHBUTTON:TP_CONFIG_EVENT:PB_DELETE -->
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_EVENTS:PB_DELETE" id="bm_id9109164.00000001" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_MACROASSIGN:PB_DELETE" id="bm_id9109164341" localize="false"/>
+<paragraph role="heading" id="hd_id3154046" xml-lang="en-US" level="2" l10n="CHG" oldref="24">Remove Macro</paragraph>
+<paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="SFX2:PUSHBUTTON:TP_CONFIG_EVENT:PB_DELETE">Deletes the macro assignment for the selected event.</ahelp></paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3159147" xml-lang="en-US" l10n="U" oldref="38"><link href="text/swriter/01/05060700.xhp" name="List of events">List of events</link></paragraph>
+<embed href="text/shared/guide/configure_overview.xhp#configure_overview"/>
+</section>
+</body>
+</helpdocument>

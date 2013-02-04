@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textschart01type_areaxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Chart Type Area</title>
+<filename>/text/schart/01/type_area.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id4130680"><bookmark_value>area charts</bookmark_value>
+<bookmark_value>chart types;area</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id310678" xml-lang="en-US" level="1" l10n="NEW"><variable id="type_area"><link href="text/schart/01/type_area.xhp">Chart Type Area</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id916776" xml-lang="en-US" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type. </paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#wiz"/>
+</section>
+<paragraph role="heading" id="hd_id961943" xml-lang="en-US" level="2" l10n="NEW">Area</paragraph>
+<paragraph role="paragraph" id="par_id631733" xml-lang="en-US" l10n="NEW">An area chart shows values as points on the y axis. The x axis shows categories. The y values of each data series are connected by a line. The area between each two lines is filled with a color. The area chart's focus is to emphasize the changes from one category to the next.</paragraph>
+<paragraph role="paragraph" id="par_id7811822" xml-lang="en-US" l10n="NEW">Normal - this subtype plots all values as absolute y values. It first plots the area of the last column in the data range, then the next to last, and so on, and finally the first column of data is drawn. Thus, if the values in the first column are higher than other values, the last drawn area will hide the other areas.</paragraph>
+<paragraph role="paragraph" id="par_id3640247" xml-lang="en-US" l10n="NEW">Stacked - this subtypes plots values cumulatively stacked on each other. It ensures that all values are visible, and no data set is hidden by others. However, the y values no longer represent absolute values, except for the last column which is drawn at the bottom of the stacked areas.</paragraph>
+<paragraph role="paragraph" id="par_id4585100" xml-lang="en-US" l10n="NEW">Percent - this subtype plots values cumulatively stacked on each other and scaled as percentage of the category total.</paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+<embed href="text/schart/01/wiz_chart_type.xhp#wiz_chart_type"/>
+<embed href="text/schart/01/wiz_data_range.xhp#wiz_data_range"/>
+<embed href="text/schart/01/wiz_data_series.xhp#wiz_data_series"/>
+<embed href="text/schart/01/wiz_chart_elements.xhp#wiz_chart_elements"/>
+</section>
+</body>
+</helpdocument>

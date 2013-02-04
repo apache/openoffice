@@ -1,0 +1,105 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_SheetLink_idl__
+#define __com_sun_star_sheet_SheetLink_idl__
+
+#ifndef __com_sun_star_container_XNamed_idl__
+#include <com/sun/star/container/XNamed.idl>
+#endif
+
+#ifndef __com_sun_star_util_XRefreshable_idl__
+#include <com/sun/star/util/XRefreshable.idl>
+#endif
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__
+#include <com/sun/star/beans/XPropertySet.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** represents a sheet link.
+
+	<p>A sheet link contains the source data of linked sheets, i.e. the
+	URL and sheet name of the external document.</p>
+
+	<p>To create a linked sheet, the sheet which will be used as linked
+	sheet has to exist already. The method
+	<member>XSheetLinkable::link</member> creates a <type>SheetLink</type>
+	object in the document's <type>SheetLinks</type> collection and links
+	the sheet to the specified external sheet.</p>
+ */
+published service SheetLink
+{
+	//-------------------------------------------------------------------------
+
+	/** provides access to the name of the linked document.
+
+		<p>This name is equal to the <const>Url</const> property.</p>
+	 */
+	interface com::sun::star::container::XNamed;
+
+	//-------------------------------------------------------------------------
+
+	/** provides methods to reload the external data.
+	 */
+	interface com::sun::star::util::XRefreshable;
+
+	//-------------------------------------------------------------------------
+
+//!published service PropertySet
+	/** provides access to the properties.
+	 */
+	interface com::sun::star::beans::XPropertySet;
+
+	//=========================================================================
+
+	/** specifies the URL of the source document.
+	 */
+	[property] string Url;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies the name of the filter needed to load the source
+		document.
+	 */
+	[property] string Filter;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies the filter options needed to load the source document.
+	 */
+	[property] string FilterOptions;
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

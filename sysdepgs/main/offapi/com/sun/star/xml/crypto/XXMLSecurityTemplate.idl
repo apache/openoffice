@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+ 
+//i20156 - new file for xmlsecurity module
+
+/** -- idl definition -- **/
+
+#ifndef __com_sun_star_xml_crypto_xxmlsecuritytemplate_idl_
+#define __com_sun_star_xml_crypto_xxmlsecuritytemplate_idl_
+
+#include <com/sun/star/uno/XInterface.idl>
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+
+#include <com/sun/star/xml/wrapper/XXMLElementWrapper.idl>
+#include <com/sun/star/xml/crypto/XUriBinding.idl>
+#include <com/sun/star/xml/crypto/SecurityOperationStatus.idl>
+
+module com { module sun { module star { module xml { module crypto {
+
+/**
+ * Interface of the XML security template
+ *
+ * <p>This interface represents a security template, which is the super interface
+ * of the XXMLSignatureTemplate interface and the XXMLEncryptionTemplate interface.
+ */
+interface XXMLSecurityTemplate : com::sun::star::uno::XInterface
+{
+	/**
+	 * Load a XML signature template from xml signature element
+	 */
+	void setTemplate(
+		[in] com::sun::star::xml::wrapper::XXMLElementWrapper aXmlElement
+	) raises( com::sun::star::lang::IllegalArgumentException ) ;
+
+	/**
+	 * Get the XML signature element that represents the signature template
+	 */
+	com::sun::star::xml::wrapper::XXMLElementWrapper getTemplate(
+	) ;
+
+	/**
+	 * Load the target xml element, i.e. the element to be signed
+	 */
+	void setTarget(
+		[in] com::sun::star::xml::wrapper::XXMLElementWrapper aXmlElement
+	) raises( com::sun::star::lang::IllegalArgumentException ) ;
+
+	/**
+	 * Set the template status
+	 */
+	void setStatus(
+		[in] SecurityOperationStatus status
+	) raises( com::sun::star::lang::IllegalArgumentException ) ;
+
+	/**
+	 * Get the template status
+	 */
+	SecurityOperationStatus getStatus( ) ;
+} ;
+
+} ; } ; } ; } ; } ;
+
+
+#endif
+

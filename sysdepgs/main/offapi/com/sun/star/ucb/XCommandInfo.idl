@@ -1,0 +1,119 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XCommandInfo_idl__
+#define __com_sun_star_ucb_XCommandInfo_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_CommandInfo_idl__
+#include <com/sun/star/ucb/CommandInfo.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_UnsupportedCommandException_idl__
+#include <com/sun/star/ucb/UnsupportedCommandException.idl>
+#endif
+
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** provides access to information on a set of commands.
+
+	@version  1.0
+	@author   Kai Sommerfeld
+*/
+published interface XCommandInfo: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/** obtains information for all supported commands.
+
+		@returns
+		a sequence with information for all supported commands.
+	*/
+	sequence<com::sun::star::ucb::CommandInfo> getCommands();
+
+	//-------------------------------------------------------------------------
+	/** returns information for a specific command.
+
+		@returns
+		the information for the requested command.
+
+		@param Name
+		specifies the name of the requested command.
+
+		@throws UnsupportedCommandException
+		if the command is not supported.
+	*/
+	com::sun::star::ucb::CommandInfo getCommandInfoByName( [in] string Name )
+			raises( com::sun::star::ucb::UnsupportedCommandException );
+
+	//-------------------------------------------------------------------------
+	/** returns information for a specific command.
+
+		@returns
+		the information for the requested command.
+
+		@param Handle
+		specifies the handle of the requested command.
+
+		@throws UnsupportedCommandException
+		if the command is not supported.
+	*/
+	com::sun::star::ucb::CommandInfo getCommandInfoByHandle( [in] long Handle )
+			raises( com::sun::star::ucb::UnsupportedCommandException );
+
+	//-------------------------------------------------------------------------
+	/** checks whether a command specific is supported.
+
+		@returns
+		<TRUE/> if a command with the specified name is supported;
+		otherwise <FALSE/> is returned.
+
+		@param Name
+		specifies the name of the requested command.
+	*/
+	boolean hasCommandByName( [in] string Name );
+
+	//-------------------------------------------------------------------------
+	/** checks whether a apecific command is supported.
+
+		@returns
+		<TRUE/> if a command with the specified handle is supported;
+		otherwise <FALSE/> is returned.
+
+		@param Name
+		specifies the handle of the requested command.
+	*/
+	boolean hasCommandByHandle( [in] long Handle );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

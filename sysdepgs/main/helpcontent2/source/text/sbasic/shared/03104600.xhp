@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03104600xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">EqualUnoObjects Function [Runtime]</title>
+<filename>/text/sbasic/shared/03104600.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T11:36:22">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="equalunoobjects">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149205"><bookmark_value>EqualUnoObjects function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03104600.xhp" name="EqualUnoObjects Function [Runtime]">EqualUnoObjects Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145090" xml-lang="en-US" l10n="U" oldref="2">Returns True if the two specified Basic Uno objects represent the same Uno object instance.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3148538" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="4">EqualUnoObjects( oObj1, oObj2 )</paragraph>
+<paragraph role="heading" id="hd_id3150984" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3154285" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U" oldref="8">// Copy of objects -&gt; same instance</paragraph>
+<paragraph role="paragraph" id="par_id3154923" xml-lang="en-US" l10n="U" oldref="9">oIntrospection = CreateUnoService( "com.sun.star.beans.Introspection" )</paragraph>
+<paragraph role="paragraph" id="par_id3147559" xml-lang="en-US" l10n="U" oldref="10">oIntro2 = oIntrospection</paragraph>
+<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="11">print EqualUnoObjects( oIntrospection, oIntro2 )</paragraph>
+<paragraph role="paragraph" id="par_id3153525" xml-lang="en-US" l10n="U" oldref="12">// Copy of structs as value -&gt; new instance</paragraph>
+<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="13">Dim Struct1 as new com.sun.star.beans.Property</paragraph>
+<paragraph role="paragraph" id="par_id3154348" xml-lang="en-US" l10n="U" oldref="14">Struct2 = Struct1</paragraph>
+<paragraph role="paragraph" id="par_id3154125" xml-lang="en-US" l10n="U" oldref="15">print EqualUnoObjects( Struct1, Struct2 )</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03080301xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Randomize Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03080301.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="randomize">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150616"><bookmark_value>Randomize statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150616" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080301.xhp" name="Randomize Statement [Runtime]">Randomize Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145090" xml-lang="en-US" l10n="U" oldref="2">Initializes the random-number generator.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="4">Randomize [Number]</paragraph>
+<paragraph role="heading" id="hd_id3152456" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="CHG" oldref="6">
+<emph>Number:</emph> Any integer value that initializes the random-number generator.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3149655" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
+<paragraph role="code" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="8">Sub ExampleRandomize</paragraph>
+<paragraph role="code" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="9">Dim iVar As Integer, sText As String</paragraph>
+<paragraph role="code" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="10">Dim iSpectral(10) As Integer</paragraph>
+<paragraph role="code" id="par_id3148673" xml-lang="en-US" l10n="U" oldref="12">Randomize 2^14-1</paragraph>
+<paragraph role="code" id="par_id3156423" xml-lang="en-US" l10n="U" oldref="13">For iCount = 1 To 1000</paragraph>
+<paragraph role="code" id="par_id3147288" xml-lang="en-US" l10n="U" oldref="14">iVar = Int((10 * Rnd) ) REM Range from 0 to 9</paragraph>
+<paragraph role="code" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="15">iSpectral(iVar) = iSpectral(iVar) +1</paragraph>
+<paragraph role="code" id="par_id3153143" xml-lang="en-US" l10n="U" oldref="16">Next iCount</paragraph>
+<paragraph role="code" id="par_id3154011" xml-lang="en-US" l10n="U" oldref="18">sText = " | "</paragraph>
+<paragraph role="code" id="par_id3151114" xml-lang="en-US" l10n="U" oldref="19">For iCount = 0 To 9</paragraph>
+<paragraph role="code" id="par_id3145748" xml-lang="en-US" l10n="U" oldref="20">sText = sText &amp; iSpectral(iCount) &amp; " | "</paragraph>
+<paragraph role="code" id="par_id3146921" xml-lang="en-US" l10n="U" oldref="21">Next iCount</paragraph>
+<paragraph role="code" id="par_id3148617" xml-lang="en-US" l10n="U" oldref="22">MsgBox sText,0,"Spectral Distribution"</paragraph>
+<paragraph role="code" id="par_id3152941" xml-lang="en-US" l10n="U" oldref="23">end sub</paragraph>
+</body>
+</helpdocument>

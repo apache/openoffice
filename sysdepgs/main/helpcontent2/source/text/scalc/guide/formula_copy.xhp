@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguideformula_copyxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Copying Formulas</title>
+<filename>/text/scalc/guide/formula_copy.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-18T14:55:39">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151113"><bookmark_value>formulas; copying and pasting</bookmark_value>
+<bookmark_value>copying; formulas</bookmark_value>
+<bookmark_value>pasting;formulas</bookmark_value>
+</bookmark><comment>mw added "pasting;" and changed "formulas;"</comment>
+<paragraph role="heading" id="hd_id3151113" xml-lang="en-US" level="1" l10n="U" oldref="54"><variable id="formula_copy"><link href="text/scalc/guide/formula_copy.xhp" name="Copying Formulas">Copying Formulas</link>
+</variable></paragraph>
+<section id="copytext">
+<paragraph role="paragraph" id="par_id3156424" xml-lang="en-US" l10n="U" oldref="11">There are various ways to copy a formula. One suggested method is:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="30">Select the cell containing the formula.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="31">Choose <emph>Edit - Copy</emph>, or press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+C to copy it.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3159155" xml-lang="en-US" l10n="U" oldref="32">Select the cell into which you want the formula to be copied.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153728" xml-lang="en-US" l10n="U" oldref="33">Choose <emph>Edit - Paste</emph>, or press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+V. The formula will be positioned in the new cell.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3149961" xml-lang="en-US" l10n="U" oldref="34">If you want to copy a formula into multiple cells, there is a quick and easy way to copy into adjacent cell areas:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149400" xml-lang="en-US" l10n="U" oldref="12">Select the cell containing the formula.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154018" xml-lang="en-US" l10n="U" oldref="13">Position the mouse on the bottom right of the highlighted border of the cell, and continue holding down the mouse button until the pointer changes to a cross-hair symbol.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="14">With the mouse button pressed, drag it down or to the right over all the cells into which you want to copy the formula.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153714" xml-lang="en-US" l10n="U" oldref="15">When you release the mouse button, the formula will be copied into the cells and automatically adjusted.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3156385" xml-lang="en-US" l10n="U" oldref="53">If you do not want values and texts to be automatically adjusted, then hold down the <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> key when dragging. Formulas, however, are always adjusted accordingly.</paragraph>
+</section>
+<section id="relatedtopics">
+<embed href="text/scalc/guide/relativ_absolut_ref.xhp#relativ_absolut_ref"/>
+</section>
+</body>
+</helpdocument>

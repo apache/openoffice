@@ -1,0 +1,58 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_awt_grid_XSortableMutableGridDataModel_idl__
+#define __com_sun_star_awt_grid_XSortableMutableGridDataModel_idl__
+
+#include <com/sun/star/awt/grid/XMutableGridDataModel.idl>
+#include <com/sun/star/awt/grid/XSortableGridData.idl>
+
+//==================================================================================================================
+
+module com { module sun { module star { module awt { module grid {
+
+//==================================================================================================================
+
+/** describes a grid control data model whose data can be modified and sorted.
+ */
+interface XSortableMutableGridDataModel
+{
+    /** provides access to the basic functionality of a grid data model, plus functions to modify it.
+    */
+    interface XMutableGridDataModel;
+
+    /** provides means to sort the data represented by the model.
+
+        <p>If you set a new column sort order, the implementation will notify the registered <type>XGridDataListener</type>s
+        via a call to its <member>XGridDataListener::dataChanged</member> method.</p>
+    */
+    interface XSortableGridData;
+};
+
+//==================================================================================================================
+
+}; }; }; }; }; 
+
+//==================================================================================================================
+
+#endif

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0212100100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Sort Order</title>
+<filename>/text/shared/02/12100100.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147000"><bookmark_value>sorting; databases</bookmark_value>
+<bookmark_value>databases; sorting</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DLG_ORDERCRIT" id="bm_id3154788" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:OrderCrit" id="bm_id3154682" localize="false"/><section id="sortorder">
+<paragraph role="heading" id="hd_id3147000" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="sortierung"><link href="text/shared/02/12100100.xhp" name="Sort Order">Sort Order</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3163829" xml-lang="en-US" l10n="U" oldref="2"><variable id="sortierentext"><ahelp hid=".uno:OrderCrit">Specifies the sort criteria for the data display.</ahelp>
+</variable></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000450.xhp#sortieren"/>
+</section>
+<paragraph role="paragraph" id="par_id3149549" xml-lang="en-US" l10n="U" oldref="12">While the functions <link href="text/shared/02/12010000.xhp" name="Sort in Ascending Order"><emph>Sort in Ascending Order</emph></link> and <link href="text/shared/02/12020000.xhp" name="Sort in Descending Order"><emph>Sort in Descending Order</emph></link> sort by one criterion only, you can combine several criteria in the<emph> Sort Order </emph>dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U" oldref="13">You can remove a sorting that has been performed with the <link href="text/shared/02/12040000.xhp" name="Remove Filter/Sorting"><emph>Remove Filter/Sorting</emph></link> icon.</paragraph>
+<paragraph role="heading" id="hd_id3148548" xml-lang="en-US" level="2" l10n="U" oldref="4">Sorting</paragraph>
+<paragraph role="paragraph" id="par_id3155941" xml-lang="en-US" l10n="U" oldref="5">Use this area to enter sorting criteria. If you enter additional sorting criteria under <emph>and then</emph>, the data matching the content of the higher-order criterion is ordered according to the next criterion.</paragraph>
+<paragraph role="paragraph" id="par_id3148620" xml-lang="en-US" l10n="U" oldref="14">If you sort the field name "First name" in ascending order and the field name "last name" in descending order, all records will be sorted in ascending order by first name, and then within the first names, in descending order by last name.</paragraph>
+<paragraph role="heading" id="hd_id3145345" xml-lang="en-US" level="3" l10n="U" oldref="6">Field name</paragraph>
+<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid=".uno:OrderCrit">Specifies the data field name whose content will determine the sort order.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150774" xml-lang="en-US" level="3" l10n="U" oldref="8">Order</paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".uno:OrderCrit">Specifies the sort order (either ascending or descending).</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147275" xml-lang="en-US" level="3" l10n="U" oldref="10">and then</paragraph>
+<paragraph role="paragraph" id="par_id3166460" xml-lang="en-US" l10n="U" oldref="11">Specifies additional subordinate sort criteria from the other fields.</paragraph>
+</body>
+</helpdocument>

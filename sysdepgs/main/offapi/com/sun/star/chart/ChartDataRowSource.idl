@@ -1,0 +1,57 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_chart_ChartDataRowSource_idl__ 
+#define __com_sun_star_chart_ChartDataRowSource_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module chart {  
+ 
+//============================================================================= 
+ 
+/** specifies if the data rows (aka data series) displayed in the
+	chart, take their values from the row or the column in the underlying
+	data source (<type>ChartDataArray</type>).
+ */
+published enum ChartDataRowSource
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** values displayed as data rows are taken from the rows of the data source.
+	 */
+	ROWS, 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** values displayed as data rows are taken from the columns of the data source.
+	 */
+	COLUMNS 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

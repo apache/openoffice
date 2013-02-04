@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01010300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Paths</title>
+<filename>/text/shared/optionen/01010300.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="pfade">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149514"><bookmark_value>paths; defaults</bookmark_value>
+<bookmark_value>variables; for paths</bookmark_value>
+<bookmark_value>directories;directory structure</bookmark_value>
+<bookmark_value>files and folders in $[officename]</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_PATH" id="bm_id3159399" localize="false"/><paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010300.xhp" name="Paths">Paths</link></paragraph>
+<paragraph role="paragraph" id="par_id3151384" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_OPTIONS_PATH">This section contains the default paths to important folders in $[officename]. These paths can be edited by the user.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000406.xhp#pfade"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTPATH_CTL_PATH" id="bm_id3146795" localize="false"/><paragraph role="heading" id="hd_id3149810" xml-lang="en-US" level="2" l10n="CHG" oldref="13">Paths used by %PRODUCTNAME</paragraph>
+<paragraph role="paragraph" id="par_id3154923" xml-lang="en-US" l10n="CHG" oldref="5"><ahelp hid="HID_OPTPATH_CTL_PATH">To modify an entry in this list, click the entry and click <emph>Edit</emph>. You can also double click the entry.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SFXPAGE_PATH:BTN_STANDARD" id="bm_id3154216" localize="false"/><paragraph role="heading" id="hd_id3151210" xml-lang="en-US" level="2" l10n="U" oldref="160">Default</paragraph>
+<paragraph role="paragraph" id="par_id3153968" xml-lang="en-US" l10n="U" oldref="161"><ahelp hid="SVX:PUSHBUTTON:RID_SFXPAGE_PATH:BTN_STANDARD">The<emph> Default </emph>button resets the predefined paths for all selected entries.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SFXPAGE_PATH:BTN_PATH" id="bm_id3150448" localize="false"/><paragraph role="heading" id="hd_id3147229" xml-lang="en-US" level="2" l10n="U" oldref="6">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3151177" xml-lang="en-US" l10n="CHG" oldref="7"><ahelp hid="SVX:PUSHBUTTON:RID_SFXPAGE_PATH:BTN_PATH">Click to display the <emph>Select Path</emph> or <emph>Edit Paths</emph> dialog.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="162">You can change the sequence of entries by clicking the bar in the <emph>Type</emph> column. The column width can be changed by moving the separator between the columns with the mouse.</paragraph>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="CHG" oldref="190">In the following list of paths, the paths for the shared folders in the directory where %PRODUCTNAME is installed, are not shown. The user data for each user is stored in the {user} directory, which is located in the user's <switchinline select="sys"><caseinline select="UNIX">home
+</caseinline><defaultinline>Documents and Settings</defaultinline></switchinline> directory.</paragraph><table id="tbl_id3145364">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149260" xml-lang="en-US" l10n="CHG" oldref="14">Type</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3146974" xml-lang="en-US" l10n="CHG" oldref="15">Path</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152938" xml-lang="en-US" l10n="U" oldref="16">Description</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151073" xml-lang="en-US" l10n="U" oldref="23">My Documents</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149400" xml-lang="en-US" l10n="U" oldref="175">Default document folder of your system</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153418" xml-lang="en-US" l10n="U" oldref="25">You can see this folder when you first call the <emph>Open</emph> or <emph>Save</emph> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id8316599" xml-lang="en-US" l10n="NEW">AutoCorrect</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3753776" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="UNIX">{user}/user/autocorr
+</caseinline><defaultinline>{user}\user\autocorr</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id5284279" xml-lang="en-US" l10n="NEW">This folder stores your own AutoCorrect texts.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id4494766" xml-lang="en-US" l10n="NEW">AutoText</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id7858516" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="UNIX">{user}/user/autotext
+</caseinline><defaultinline>{user}\user\autotext</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id973540" xml-lang="en-US" l10n="NEW">This folder stores your own AutoText texts.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154493" xml-lang="en-US" l10n="U" oldref="68">Gallery</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154484" xml-lang="en-US" l10n="CHG" oldref="69"><switchinline select="sys"><caseinline select="UNIX">{user}/user/gallery
+</caseinline><defaultinline>{user}\user\gallery</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156289" xml-lang="en-US" l10n="CHG" oldref="70">New Gallery themes are stored in this folder.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151333" xml-lang="en-US" l10n="U" oldref="26">Graphics</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152890" xml-lang="en-US" l10n="CHG" oldref="27"><switchinline select="sys"><caseinline select="UNIX">{user}/user/gallery
+</caseinline><defaultinline>{user}\user\gallery</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148597" xml-lang="en-US" l10n="U" oldref="28">This folder is displayed when you first call the dialog for opening or saving a graphic object.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146891" xml-lang="en-US" l10n="U" oldref="41">Backups</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154915" xml-lang="en-US" l10n="CHG" oldref="42"><switchinline select="sys"><caseinline select="UNIX">{user}/user/backup
+</caseinline><defaultinline>{user}\user\backup</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154603" xml-lang="en-US" l10n="U" oldref="43">Automatic backup copies of documents are stored here.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id4680928" xml-lang="en-US" l10n="NEW">Templates</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id9014252" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="UNIX">{user}/user/template
+</caseinline><defaultinline>{user}\user\template</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id6011841" xml-lang="en-US" l10n="NEW">In this folder you can store your own templates.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154606" xml-lang="en-US" l10n="U" oldref="195">Temporary files</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149343" xml-lang="en-US" l10n="CHG" oldref="196"><switchinline select="sys"><caseinline select="UNIX">{user}/user/temp
+</caseinline><defaultinline>{user}\user\temp</defaultinline></switchinline></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154650" xml-lang="en-US" l10n="U" oldref="197">This is where $[officename] puts its temporary files.</paragraph>
+</tablecell>
+</tablerow>
+</table><comment>removed path info</comment></body>
+</helpdocument>

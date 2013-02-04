@@ -1,0 +1,247 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+Installation gid_Installation_Sdk
+    ProductName = "${PRODUCTNAME}";
+    ProductVersion = "${PRODUCTVERSION}";
+    ProductExtension = "${PRODUCTEXTENSION}";
+    OOoBaseVersion = "${OOOBASEVERSION}";
+#if defined WNT
+    DefaultDestPath = "<winprogpath>\%PRODUCTNAME";
+#else
+    DefaultDestPath = "/opt/%PRODUCTNAME";
+#endif
+End
+
+DataCarrier gid_Datacarrier
+    Name = "%PRODUCTNAME %PRODUCTVERSION";
+    DiskNo = 1;
+End
+
+#ifndef MACOSX
+
+#ifdef WNT
+Directory gid_Dir_Sdkoo_Root
+    ParentID = PREDEFINED_PROGDIR;
+    HostName = "${PRODUCTNAME}_${PRODUCTVERSION}_${POSTVERSIONEXTENSION}";
+    Styles = (OFFICEDIRECTORY, ISINSTALLLOCATION);
+End
+#endif
+
+#ifndef WNT
+Directory gid_Dir_Ooo_Openofficeorg_Sdk
+    ParentID = PREDEFINED_PROGDIR;
+    HostName = "${UNIXBASISROOTNAME}";
+End
+#endif
+
+#ifndef WNT
+Directory gid_Dir_Ooo_Basis_Sdk
+    ParentID = gid_Dir_Ooo_Openofficeorg_Sdk;
+    HostName = "basis${OOOBASEVERSION}";
+    Styles = (BASISDIRECTORY);
+End
+#endif
+
+#endif
+
+Directory gid_Dir_Basis_Sdk
+#if defined MACOSX
+    ParentID = PREDEFINED_PROGDIR;
+    DosName = "Apache_OpenOffice_SDK";
+#else
+  #if defined WNT
+    ParentID = gid_Dir_Sdkoo_Root;
+  #else
+    ParentID = gid_Dir_Ooo_Basis_Sdk;
+  #endif
+    DosName = "sdk";
+#endif
+End
+
+
+#if defined MACOSX
+ScpAction scp_Copy_License_Txt_Sdk
+    Copy = "LICENSE";
+    Name = "LICENSE";
+    Styles = (SCPZIP_REPLACE);
+    Subdir = "LICENSEs";
+End
+ScpAction scp_Copy_Notice_Txt_Sdk
+    Copy = "NOTICE";
+    Name = "NOTICE";
+    Styles = (SCPZIP_REPLACE);
+    Subdir = "LICENSEs";
+End
+#endif
+
+
+Directory gid_Dir_Share_Sdk
+    ParentID = gid_Dir_Basis_Sdk;
+    DosName = "share";
+End
+
+Directory gid_Dir_Share_Readme_Sdk
+    ParentID = gid_Dir_Share_Sdk;
+    DosName = "readme";
+End
+
+
+Module gid_Module_Root
+    Name = "sdkoo";
+    Description = "sdkoo";
+    PackageInfo = "packinfo_sdkoo.txt";
+End
+
+File gid_File_Txt_Notice
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Basis_Sdk;
+    Name = "NOTICE";
+    Styles = (PACKED, SCPZIP_REPLACE);
+End
+
+File gid_File_Txt_License_Root
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Basis_Sdk;
+    Name = "LICENSE";
+    Styles = (PACKED, SCPZIP_REPLACE);
+End
+
+File gid_File_Txt_Readme
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Share_Readme_Sdk;
+  #ifdef UNX
+    Name = "README_en-US";
+  #endif
+  #ifdef WNT
+    Name = "readme_en-US.txt";
+  #endif
+    Styles = (PACKED, SCPZIP_REPLACE);
+End
+
+File gid_File_Txt_Readme_Html
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Share_Readme_Sdk;
+  #ifdef UNX
+    Name = "README_en-US.html";
+  #endif
+  #ifdef WNT
+    Name = "readme_en-US.html";
+  #endif
+    Styles = (PACKED, SCPZIP_REPLACE);
+End
+
+
+File gid_File_Zip_Odkexamples
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Basis_Sdk;
+    Name = "odkexamples.zip";
+    Styles = (ARCHIVE,USE_INTERNAL_RIGHTS);
+End
+
+
+File gid_File_Zip_Odkcommon
+    TXT_FILE_BODY;
+    Dir = gid_Dir_Basis_Sdk;
+    Name = "odkcommon.zip";
+    Styles = (ARCHIVE,USE_INTERNAL_RIGHTS);
+End
+
+#if (!defined(WNT) && !defined( MACOSX) )
+Directory gid_Dir_Lib_Sdk    
+    Styles = (CREATE);
+    ParentID = gid_Dir_Basis_Sdk;
+    DosName = "lib";
+End
+#endif
+
+#if (!defined(WNT) && !defined( MACOSX) )
+Unixlink gid_Unixlink_Sal_Link_Sdk
+    BIN_FILE_BODY;
+    Styles = ();
+    Name = SCP2_URE_DL_UNO_NORMAL("sal");
+    Dir = gid_Dir_Lib_Sdk;
+    Target = "../../ure-link/lib/" SCP2_URE_DL_UNO_VER("sal", "3");
+End
+#endif
+
+#if (!defined(WNT) && !defined( MACOSX) )
+Unixlink gid_Unixlink_Salhelper_Link_Sdk
+    BIN_FILE_BODY;
+    Styles = ();
+    Name = SCP2_URE_DL_UNO_COMID_NORMAL("salhelper");
+    Dir = gid_Dir_Lib_Sdk;
+    Target = "../../ure-link/lib/" SCP2_URE_DL_UNO_COMID_VER("salhelper", "3");
+End
+#endif
+
+#if (!defined(WNT) && !defined( MACOSX) )
+Unixlink gid_Unixlink_Cppu_Link_Sdk
+    BIN_FILE_BODY;
+    Styles = ();
+    Name = SCP2_URE_DL_UNO_NORMAL("cppu");
+    Dir = gid_Dir_Lib_Sdk;
+    Target = "../../ure-link/lib/" SCP2_URE_DL_UNO_VER("cppu", "3");
+End
+#endif
+
+#if (!defined(WNT) && !defined( MACOSX) )
+Unixlink gid_Unixlink_Cppuhelper_Link_Sdk
+    BIN_FILE_BODY;
+    Styles = ();
+    // Styles = (LAYERLINK);
+    Name = SCP2_URE_DL_UNO_COMID_NORMAL("cppuhelper");
+    Dir = gid_Dir_Lib_Sdk;
+    Target = "../../ure-link/lib/" SCP2_URE_DL_UNO_COMID_VER("cppuhelper", "3");
+End
+#endif
+
+#if (!defined(WNT) && !defined( MACOSX) )
+Unixlink gid_Unixlink_Purpenvhelper_Link_Sdk
+    BIN_FILE_BODY;
+    Styles = ();
+    Name = SCP2_URE_DL_UNO_COMID_NORMAL("purpenvhelper");
+    Dir = gid_Dir_Lib_Sdk;
+    Target = "../../ure-link/lib/" SCP2_URE_DL_UNO_COMID_VER("purpenvhelper", "3");
+End
+#endif
+
+#ifdef MACOSX
+ScpAction scp_Copy_Dmg_Background_Image
+    Copy = "osxdndinstall.png";
+    Name = "background.png";
+    UnixRights = 444;
+    Styles = ();
+    Subdir = ".background";
+End
+
+ScpAction scp_Copy_Ds_Store
+    Copy = "DS_Store_SDK";
+#    PatchCopy = "DS_Store_Patch";
+    Name = ".DS_Store";
+    UnixRights = 444;
+    Styles = ();
+End
+#endif

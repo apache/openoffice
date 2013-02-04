@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0105250000xml" indexer="include">
+<title id="tit" xml-lang="en-US">Arrange</title>
+<filename>/text/shared/01/05250000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="anordnung">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152427"><bookmark_value>objects; arranging within stacks</bookmark_value>
+<bookmark_value>arranging; objects</bookmark_value>
+<bookmark_value>borders; arranging</bookmark_value>
+<bookmark_value>pictures; arranging within stacks</bookmark_value>
+<bookmark_value>draw objects; arranging within stacks</bookmark_value>
+<bookmark_value>controls; arranging within stacks</bookmark_value>
+<bookmark_value>OLE objects; arranging within stacks</bookmark_value>
+<bookmark_value>charts; arranging within stacks</bookmark_value>
+<bookmark_value>layer arrangement</bookmark_value>
+<bookmark_value>levels; depth stagger</bookmark_value>
+<bookmark_value>depth stagger</bookmark_value>
+</bookmark><comment>mw made "layers;..." a one level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:ObjectPosition" id="bm_id8728812" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ObjectPosition" id="bm_id3149551" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ArrangeMenu" id="bm_id3945738" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ArrangeFrameMenu" id="bm_id0801200803311649" localize="false"/>
+<paragraph role="heading" id="hd_id3152427" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/shared/01/05250000.xhp" name="Arranging Objects">Arrange</link></paragraph>
+<paragraph role="paragraph" id="par_id3154230" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:ObjectPosition">Changes the stacking order of the selected object(s).</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040501.xhp#anordnung"/>
+</section>
+<paragraph role="heading" id="hd_id3153894" xml-lang="en-US" level="2" l10n="U" oldref="9">Layer for text and graphics</paragraph>
+<paragraph role="paragraph" id="par_id3154186" xml-lang="en-US" l10n="U" oldref="4">Each object that you place in your document is successively stacked on the preceding object. Use the arrange commands to change the stacking order of objects in your document. You cannot change the stacking order of text.</paragraph>
+<embed href="text/shared/01/05250100.xhp#ganznachvorn"/>
+<embed href="text/shared/01/05250200.xhp#positionnachvorn"/>
+<embed href="text/shared/01/05250300.xhp#positionnachhinten"/>
+<embed href="text/shared/01/05250400.xhp#ganznachhinten"/>
+<embed href="text/shared/01/05250500.xhp#indenvordergrund"/>
+<embed href="text/shared/01/05250600.xhp#indenhintergrund"/>
+</body>
+</helpdocument>

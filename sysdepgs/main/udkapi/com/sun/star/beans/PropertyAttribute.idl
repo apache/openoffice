@@ -1,0 +1,117 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_beans_PropertyAttribute_idl__
+#define __com_sun_star_beans_PropertyAttribute_idl__
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module beans {
+
+//=============================================================================
+
+/** These values are used to specify the behavior of a <type>Property</type>.
+ */
+published constants PropertyAttribute
+{
+	//-------------------------------------------------------------------------
+
+	/** indicates that a property value can be void.
+
+		<p>It does not mean that the type of the property is void!
+	 */
+	const short MAYBEVOID = 1;
+
+	//-------------------------------------------------------------------------
+
+	/** indicates that a <type>PropertyChangeEvent</type> will be fired
+		to all registered <type>XPropertyChangeListener</type>s whenever the
+		value of this property changes.
+	 */
+	const short BOUND = 2;
+
+	//-------------------------------------------------------------------------
+
+	/** indicates that a <type>PropertyChangeEvent</type> will be fired
+		to all registered <type>XVetoableChangeListener</type>s whenever the
+		value of this property changes.
+
+			<p>This always implies that the property is <em>bound</em>, too. </p>
+	 */
+	const short CONSTRAINED = 4;
+
+	//-------------------------------------------------------------------------
+
+	/** indicates that the value of the property is not persistent.
+	 */
+	const short TRANSIENT = 8;
+
+	//-------------------------------------------------------------------------
+
+	/** indicates that the value of the property is read-only.
+	 */
+	const short READONLY = 16;
+
+	//-------------------------------------------------------------------------
+
+	/** indicates that the value of the property can be ambiguous.
+	 */
+	const short MAYBEAMBIGUOUS = 32;
+
+	//-------------------------------------------------------------------------
+
+	/** indicates that the property can be set to default.
+	 */
+	const short MAYBEDEFAULT = 64;
+
+	//-------------------------------------------------------------------------
+
+	/** indicates that the property can be removed
+		(i.e., by calling <member>XPropertyContainer::removeProperty</member>).
+	 */
+	const short REMOVEABLE = 128;
+
+	//-------------------------------------------------------------------------
+	/** @deprecated
+		same as <const>PropertyAttribute::REMOVEABLE</const>.
+	 */
+	const short REMOVABLE = 128;
+
+	//-------------------------------------------------------------------------
+    /** indicates that a property is optional.
+
+        <p>This attribute is not of interest for concrete property
+        implementations. It's needed for property specifications inside
+        service specifications in UNOIDL.
+
+        @see com::sun::star::reflection::XPropertyTypeDescription
+        @see com::sun::star::reflection::XServiceTypeDescription
+	@since OOo 1.1.2
+     */
+    const short OPTIONAL = 256;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

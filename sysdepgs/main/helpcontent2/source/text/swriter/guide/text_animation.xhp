@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidetext_animationxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Animating Text</title>
+         <filename>/text/swriter/guide/text_animation.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151182"><bookmark_value>text animation</bookmark_value>
+      <bookmark_value>effects; text animation</bookmark_value>
+      <bookmark_value>animations;text</bookmark_value>
+</bookmark><comment>mw made "animating text" a two level entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3151182" role="heading" level="1" l10n="U"
+                 oldref="17"><variable id="text_animation"><link href="text/swriter/guide/text_animation.xhp" name="Animating Text">Animating Text</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145080" role="paragraph" l10n="CHG" oldref="18">You can only animate text that is contained in a drawing object, such as rectangles, lines, or text objects. For example, draw a rectangle, then double-click the rectangle and enter your text.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149811" role="listitem" l10n="U" oldref="19">Select the drawing object containing the text that you want to animate.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155178" role="listitem" l10n="CHG" oldref="20">Choose <item type="menuitem">Format - Object - Text Attributes</item>, and then click the<emph/>
+               <item type="menuitem">Text Animation</item> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149819" role="listitem" l10n="U" oldref="21">In the <item type="menuitem">Effect</item>
+               <emph/>box, select the animation that you want.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145786" role="listitem" l10n="U" oldref="22">Set the properties of the effect, and then click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+   </body>
+</helpdocument>

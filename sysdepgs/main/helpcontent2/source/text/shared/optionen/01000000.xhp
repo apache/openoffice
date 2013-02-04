@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsharedoptionen01000000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Options</title>
+         <filename>/text/shared/optionen/01000000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="optionen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153665"><bookmark_value>options; tools</bookmark_value>
+         <bookmark_value>defaults; program configuration</bookmark_value>
+         <bookmark_value>settings; program configuration</bookmark_value>
+</bookmark><comment>mw changed "settings;options" and "defaults;..."</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:OptionsTreeDialog" id="bm_id8304653" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:OptionsTreeDialog" id="bm_id3147335" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153665" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01000000.xhp" name="Options">Options</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151384" role="paragraph" l10n="U" oldref="2"><ahelp hid=".uno:OptionsTreeDialog">This command opens a dialog for a customized program configuration.</ahelp></paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3156344" role="paragraph" l10n="CHG" oldref="18">All your settings are saved automatically. To expand an entry either double click this entry or click the plus sign. To collapse the entry, click the minus sign or double click the entry.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10607" role="note" l10n="CHG">You see only the entries that are applicable to the current document. If the current document is a text document, you see the %PRODUCTNAME Writer entry, and so on for all modules of %PRODUCTNAME. %PRODUCTNAME Impress and %PRODUCTNAME Draw are treated as the same in this dialog. The common entries are always visible.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OFADLG_TREELISTBOX" id="bm_id3158409" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3125863" role="paragraph" l10n="U" oldref="13"><ahelp hid="HID_OFADLG_TREELISTBOX" visibility="hidden">Select an entry to edit.</ahelp></paragraph>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#optionen"/>
+         <paragraph xml-lang="en-US" id="par_id1013200911280529" role="note" l10n="NEW">Note for Mac OS X users: The Help mentions the menu path Tools - Options at numerous places. Replace this path with %PRODUCTNAME - Preferences on your Mac OS X main menu. Both menu entries open the Options dialog box.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3159149" role="heading" level="2" l10n="U" oldref="4"><link href="text/shared/optionen/01010000.xhp" name="$[officename]">%PRODUCTNAME</link></paragraph>
+      <embed href="text/shared/optionen/01010000.xhp#optionenallgemein"/>
+      <paragraph xml-lang="en-US" id="hd_id3145787" role="heading" level="2" l10n="U" oldref="3"><link href="text/shared/optionen/01020000.xhp" name="Load/Save">Load/Save</link></paragraph>
+      <embed href="text/shared/optionen/01020000.xhp#laden"/>
+      <paragraph xml-lang="en-US" id="hd_id3153726" role="heading" level="2" l10n="U"
+                 oldref="19"><link href="text/shared/optionen/01150000.xhp" name="Language Settings">Language Settings</link></paragraph>
+      <embed href="text/shared/optionen/01150000.xhp#typotext"/>
+      <paragraph xml-lang="en-US" id="hd_id3150872" role="heading" level="2" l10n="U"
+                 oldref="20"><link href="text/shared/optionen/01030000.xhp" name="Internet">Internet</link></paragraph>
+      <embed href="text/shared/optionen/01030000.xhp#laden"/>
+      <paragraph xml-lang="en-US" id="hd_id3153188" role="heading" level="2" l10n="CHG"
+                 oldref="6"><link href="text/shared/optionen/01040000.xhp" name="Text Document">%PRODUCTNAME Writer</link></paragraph>
+      <embed href="text/shared/optionen/01040000.xhp#optionentextdokument"/>
+      <paragraph xml-lang="en-US" id="hd_id3150104" role="heading" level="2" l10n="CHG"
+                 oldref="5"><link href="text/shared/optionen/01050000.xhp" name="HTML Document">%PRODUCTNAME Writer/Web</link></paragraph>
+      <embed href="text/shared/optionen/01050000.xhp#webbrowser"/>
+      <paragraph xml-lang="en-US" id="hd_id3154918" role="heading" level="2" l10n="CHG"
+                 oldref="7"><link href="text/shared/optionen/01060000.xhp" name="Spreadsheet">%PRODUCTNAME Calc</link></paragraph>
+      <embed href="text/shared/optionen/01060000.xhp#allgemein"/>
+      <paragraph xml-lang="en-US" id="hd_id3153142" role="heading" level="2" l10n="CHG"
+                 oldref="8"><link href="text/shared/optionen/01070000.xhp" name="Presentation">%PRODUCTNAME Impress</link></paragraph>
+      <embed href="text/shared/optionen/01070000.xhp#allgemein"/>
+      <paragraph xml-lang="en-US" id="hd_id3147434" role="heading" level="2" l10n="CHG"
+                 oldref="12"><link href="text/shared/optionen/01080000.xhp" name="Drawing">%PRODUCTNAME Draw</link></paragraph>
+      <embed href="text/shared/optionen/01080000.xhp#allgemein"/>
+      <paragraph xml-lang="en-US" id="hd_id3154732" role="heading" level="2" l10n="CHG"
+                 oldref="9"><link href="text/shared/optionen/01090000.xhp" name="Formula">%PRODUCTNAME Math</link></paragraph>
+      <embed href="text/shared/optionen/01090000.xhp#druckentext"/>
+      <paragraph xml-lang="en-US" id="hd_id3155418" role="heading" level="2" l10n="CHG"
+                 oldref="15"><link href="text/shared/optionen/01110000.xhp" name="Chart">Charts</link></paragraph>
+      <embed href="text/shared/optionen/01110000.xhp#farbe"/>
+      <paragraph xml-lang="en-US" id="hd_id3149420" role="heading" level="2" l10n="CHG"
+                 oldref="21"><link href="text/shared/optionen/01160000.xhp" name="Data Sources">%PRODUCTNAME Database</link></paragraph>
+      <embed href="text/shared/optionen/01160000.xhp#daten"/>
+   </body>
+</helpdocument>

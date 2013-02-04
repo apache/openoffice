@@ -1,0 +1,122 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_XFont_idl__ 
+#define __com_sun_star_awt_XFont_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_FontDescriptor_idl__ 
+#include <com/sun/star/awt/FontDescriptor.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_SimpleFontMetric_idl__ 
+#include <com/sun/star/awt/SimpleFontMetric.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module awt {  
+ 
+//============================================================================= 
+ 
+/** decribes a font on a specific device. 
+			
+	<p>All values are in pixels within this device.</p>
+ */
+published interface XFont: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the description of the font.  
+				 
+	    <p>The unit of measurement is pixels for the device.
+	 */
+	com::sun::star::awt::FontDescriptor getFontDescriptor(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns additional information about the font.
+	 */
+	com::sun::star::awt::SimpleFontMetric getFontMetric(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the width of the specified character.
+    
+        @returns  
+				the character width measured in pixels for the device.
+	 */
+	short getCharWidth( [in] char c ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the widths of the specified characters.
+       
+        @returns 
+				a sequence of the widths of subsequent characters for this font.
+	 */
+	sequence<short> getCharWidths( [in] char nFirst, [in] char nLast ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the string width.
+        
+        @returns 
+				the width of the specified string of characters  
+				measured in pixels for the device.
+	 */
+	long getStringWidth( [in] string str ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the string and the character widths.
+        
+        @returns 
+				the width of the specified string of characters  
+				measured in pixels for the device. 
+				 
+	    @param aDXArray 
+				receives the width of every single character  
+				measured in pixels for the device.
+	 */
+	long getStringWidthArray( [in] string str, 
+			 [out] sequence<long> aDXArray ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** queries the kerning pair table.
+	 */
+	void getKernPairs( [out] sequence<char> Chars1, 
+			 [out] sequence<char> Chars2, 
+			 [out] sequence<short> Kerns ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

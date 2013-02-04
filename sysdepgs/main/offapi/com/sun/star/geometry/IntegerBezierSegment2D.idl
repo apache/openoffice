@@ -1,0 +1,63 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_geometry_IntegerBezierSegment2D_idl__
+#define __com_sun_star_geometry_IntegerBezierSegment2D_idl__
+
+module com {  module sun {  module star {  module geometry {
+
+/** This structure contains the relevant data for a cubic Bezier
+    curve.<p>
+
+    The data is stored integer-valued. The last point of the segment
+    is taken from the first point of the following segment, and thus
+    not included herein. That is, when forming a polygon out of cubic
+    Bezier segments, each two consecutive IntegerBezierSegment2Ds
+    define the actual curve, with the very last segment providing only
+    the end point of the last curve, and the remaining members
+    ignored.<p>
+
+    @see com.sun.star.rendering.XBezierPolyPolygon2D
+    @since OOo 2.0
+ */
+struct IntegerBezierSegment2D
+{
+    /// The x coordinate of the start point.
+    long Px;
+    /// The y coordinate of the start point.
+    long Py;
+
+    /// The x coordinate of the first control point.
+    long C1x;
+    /// The y coordinate of the first control point.
+    long C1y;
+
+    /// The x coordinate of the second control point.
+    long C2x;
+    /// The y coordinate of the second control point.
+    long C2y;
+
+};
+
+}; }; }; };
+
+#endif

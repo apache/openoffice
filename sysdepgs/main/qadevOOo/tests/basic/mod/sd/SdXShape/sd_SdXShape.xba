@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="sd_SdXShape" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+'Required for com.sun.star.lang.XComponent
+Global oComponentInstance as Object
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' sd.SdXShape
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim oDrawPage As Object
+    Dim oDrawPages As Object
+    Dim oCollection As Object
+
+    oDoc = utils.createDocument("sdraw", cObjectName)
+
+    oDrawPages = oDoc.DrawPages
+    oDrawPage = oDrawPages.getByIndex(0)
+    addShape(oDrawPage, 1000, 1000)
+    addShape(oDrawPage, 5000, 5000)
+    oCollection = oDrawPage
+    oObj = oDrawPage.getByIndex(0)
+    oComponentInstance = oDrawPage.getByIndex(1)
+
+
+    Dim oLayerManager As Object
+    Dim nLayer As Integer
+    Dim oLayer As Object
+
+    oLayerManager = oDoc.LayerManager
+    nLayer = oLayerManager.Count
+    oLayer = oLayerManager.insertNewByIndex(nLayer)
+    oLayer.Name = "Test"
+    oLayerManager.attachShapeToLayer(oObj, oLayer)
+
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+
+Sub AddShape(oPage as Object, nPosX as Integer, nPosY as Integer)
+    Dim aPoint As New com.sun.star.awt.Point
+    Dim aSize As New com.sun.star.awt.Size
+    Dim oRectangleShape As Object
+
+    aPoint.x = nPosX
+    aPoint.y = nPosY
+    aSize.Width = 10000
+    aSize.Height = 10000
+    oRectangleShape = oDoc.createInstance("com.sun.star.drawing.RectangleShape")
+    oRectangleShape.Size = aSize
+    oRectangleShape.Position = aPoint
+    oRectangleShape.FillColor = RGB(255, 0, 0)
+    oPage.add(oRectangleShape)
+End Sub
+</script:module>

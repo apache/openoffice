@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidearrange_chaptersxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Rearranging a Document by Using the Navigator</title>
+         <filename>/text/swriter/guide/arrange_chapters.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149973"><bookmark_value>headings;rearranging</bookmark_value>
+      <bookmark_value>rearranging headings</bookmark_value>
+      <bookmark_value>moving;headings</bookmark_value>
+      <bookmark_value>demoting heading levels</bookmark_value>
+      <bookmark_value>promoting heading levels</bookmark_value>
+      <bookmark_value>Navigator;heading levels and chapters</bookmark_value>
+      <bookmark_value>arranging;headings</bookmark_value>
+      <bookmark_value>outlines;arranging chapters</bookmark_value>
+</bookmark><comment>mw added "outlines;..." entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3149973" role="heading" level="1" l10n="CHG"
+                 oldref="58"><variable id="arrange_chapters"><link href="text/swriter/guide/arrange_chapters.xhp" name="Rearranging a Document by Using the Navigator">Arranging Chapters in the Navigator</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147795" xml-lang="en-US" l10n="U" oldref="59">You can move headings and subordinate text up and down in a document text by using the Navigator. You can also promote and demote heading levels. To use this feature, format the headings in your document with one of the predefined heading paragraph styles. To use a custom paragraph style for a heading, choose <emph>Tools - Outline Numbering</emph>, select the style in the <emph>Paragraph Style </emph>box, and then double-click a number in the <emph>Levels </emph>list.</paragraph>
+<paragraph role="tip" id="par_id3145652" xml-lang="en-US" l10n="U" oldref="62">To quickly move the text cursor to a heading in the document, double-click the heading in the <emph>Navigator </emph>list.</paragraph>
+<paragraph role="paragraph" id="par_id3155461" xml-lang="en-US" l10n="CHG" oldref="60">To dock the <emph>Navigator</emph>, drag the title bar to the edge of the workspace. To undock the <emph>Navigator</emph>, double-click its frame.</paragraph>
+<paragraph role="heading" id="hd_id3151184" xml-lang="en-US" level="3" l10n="U" oldref="70">To Move a Heading Up or Down in the Document</paragraph>
+<paragraph role="warning" id="par_id0915200809400790" xml-lang="en-US" l10n="NEW">Ensure that all heading levels are shown in the Navigator. By default all levels are shown. See steps below how to change the heading levels that are shown.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3151206" xml-lang="en-US" l10n="U" oldref="71">On the <emph>Standard Bar</emph>, click the<emph> Navigator</emph> icon 
+<image id="img_id5211883" src="res/commandimagelist/sc_navigator.png" width="0.564cm" height="0.564cm"><alt id="alt_id5211883" xml-lang="en-US">Icon</alt>
+	</image> to open the <emph>Navigator</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3151238" xml-lang="en-US" l10n="U" oldref="72">On the <emph>Navigator</emph>, click the <emph>Content View </emph>icon 
+<image id="img_id3156338" src="sw/imglst/sc20244.png" width="0.564cm" height="0.564cm"><alt id="alt_id3156338" xml-lang="en-US">Icon</alt>
+	</image>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155089" xml-lang="en-US" l10n="U" oldref="74">Do one of the following:</paragraph>
+</listitem>
+</list>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3155114" xml-lang="en-US" l10n="U" oldref="63">Drag a heading to a new location in the <emph>Navigator </emph>list.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3155139" xml-lang="en-US" l10n="U" oldref="75">Click a heading in the <emph>Navigator </emph>list, and then click the <emph>Promote Chapter</emph>
+<image id="img_id4217546" src="sw/imglst/sc20174.png" width="0.564cm" height="0.564cm"><alt id="alt_id4217546" xml-lang="en-US">Icon</alt>
+	</image> or <emph>Demote Chapter </emph>icon 
+<image id="img_id6505788" src="sw/imglst/sc20171.png" width="0.564cm" height="0.564cm"><alt id="alt_id6505788" xml-lang="en-US">Icon</alt>
+	</image>.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3145758" xml-lang="en-US" l10n="U" oldref="64">To move the heading without the subordinate text, hold down Ctrl while you drag or click the <emph>Promote Chapter </emph>or <emph>Demote Chapter </emph>icons.</paragraph>
+<paragraph role="heading" id="hd_id3155402" xml-lang="en-US" level="3" l10n="U" oldref="76">To Promote or Demote the Level of a Heading</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3155424" xml-lang="en-US" l10n="U" oldref="77">Select the heading in the <emph>Navigator </emph>list. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_idN1081C" xml-lang="en-US" l10n="NEW">Click the <emph>Promote Level </emph>
+<image id="img_id5564488" src="sw/imglst/sc20172.png" width="0.564cm" height="0.564cm"><alt id="alt_id5564488" xml-lang="en-US">Icon</alt>
+	</image> or <emph>Demote Level </emph>icon 
+<image id="img_id3159363" src="sw/imglst/sc20173.png" width="0.564cm" height="0.564cm"><alt id="alt_id3159363" xml-lang="en-US">Icon</alt>
+	</image>.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3155525" xml-lang="en-US" level="3" l10n="U" oldref="78">To Change the Number of Heading Levels That Are Displayed</paragraph>
+<paragraph role="paragraph" id="par_id3151352" xml-lang="en-US" l10n="U" oldref="79">Click the <emph>Heading Levels Shown </emph>icon 
+<image id="img_id3151310" src="sw/imglst/sc20236.png" width="0.564cm" height="0.564cm"><alt id="alt_id3151310" xml-lang="en-US">Icon</alt>
+	</image>, and then select a number from the list.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/guide/navigator.xhp#navigator"/>
+         <embed href="text/swriter/guide/hyperlinks.xhp#hyperlinks"/>
+      </section>
+   </body>
+</helpdocument>

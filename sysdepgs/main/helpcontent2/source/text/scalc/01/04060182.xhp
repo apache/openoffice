@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalc0104060182xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Statistical Functions Part Two</title>
+         <filename>/text/scalc/01/04060182.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <paragraph xml-lang="en-US" id="hd_id3154372" role="heading" level="1" l10n="U" oldref="1"><variable id="fh"><link href="text/scalc/01/04060182.xhp" name="Statistical Functions Part Two">Statistical Functions Part Two</link>
+</variable></paragraph>
+<sort order="asc">
+<section id="finv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145388"><bookmark_value>FINV function</bookmark_value>
+         <bookmark_value>inverse F probability distribution</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FINV" id="bm_id3146113" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145388" role="heading" level="2" l10n="U" oldref="2">FINV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155089" role="paragraph" l10n="U" oldref="3"><ahelp hid="HID_FUNC_FINV">Returns the inverse of the F probability distribution.</ahelp> The F distribution is used for F tests in order to set the relation between two differing data sets.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153816" role="heading" level="3" l10n="U" oldref="4">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153068" role="code" l10n="U" oldref="5">FINV(Number; DegreesFreedom1; DegreesFreedom2)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146866" role="paragraph" l10n="U" oldref="6">
+            <emph>Number</emph> is probability value for which the inverse F distribution is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153914" role="paragraph" l10n="U" oldref="7">
+            <emph>DegreesFreedom1</emph> is the number of degrees of freedom in the numerator of the F distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148607" role="paragraph" l10n="U" oldref="8">
+            <emph>DegreesFreedom2</emph> is the number of degrees of freedom in the denominator of the F distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3156021" role="heading" level="3" l10n="U" oldref="9">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145073" role="paragraph" l10n="U" oldref="10">
+            <item type="input">=FINV(0.5;5;10)</item> yields 0.93.</paragraph>
+      </section>
+      <section id="fisher">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150888"><bookmark_value>FISHER function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FISHER" id="bm_id3146782" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150888" role="heading" level="2" l10n="U"
+                    oldref="12">FISHER</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155384" role="paragraph" l10n="U" oldref="13"><ahelp hid="HID_FUNC_FISHER">Returns the Fisher transformation for x and creates a function close to a normal distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149898" role="heading" level="3" l10n="U"
+                    oldref="14">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3143220" role="code" l10n="U" oldref="15">FISHER(Number)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159228" role="paragraph" l10n="U" oldref="16">
+            <emph>Number</emph> is the value to be transformed.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154763" role="heading" level="3" l10n="U"
+                    oldref="17">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149383" role="paragraph" l10n="U" oldref="18">
+            <item type="input">=FISHER(0.5)</item> yields 0.55.</paragraph>
+      </section>
+      <section id="fisherinv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155758"><bookmark_value>FISHERINV function</bookmark_value>
+         <bookmark_value>inverse of Fisher transformation</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FISHERINV" id="bm_id3149317" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155758" role="heading" level="2" l10n="U"
+                    oldref="20">FISHERINV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154734" role="paragraph" l10n="U" oldref="21"><ahelp hid="HID_FUNC_FISHERINV">Returns the inverse of the Fisher transformation for x and creates a function close to a normal distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3155755" role="heading" level="3" l10n="U"
+                    oldref="22">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146108" role="code" l10n="U" oldref="23">FISHERINV(Number)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145115" role="paragraph" l10n="U" oldref="24">
+            <emph>Number</emph> is the value that is to undergo reverse-transformation.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3155744" role="heading" level="3" l10n="U"
+                    oldref="25">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150432" role="paragraph" l10n="U" oldref="26">
+            <item type="input">=FISHERINV(0.5)</item> yields 0.46.</paragraph>
+      </section>
+      <section id="ftest">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151390"><bookmark_value>FTEST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FTEST" id="bm_id3159263" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151390" role="heading" level="2" l10n="U"
+                    oldref="28">FTEST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150534" role="paragraph" l10n="U" oldref="29"><ahelp hid="HID_FUNC_FTEST">Returns the result of an F test.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3166466" role="heading" level="3" l10n="U"
+                    oldref="30">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153024" role="code" l10n="U" oldref="31">FTEST(Data1; Data2)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150032" role="paragraph" l10n="U" oldref="32">
+            <emph>Data1</emph> is the first record array.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153018" role="paragraph" l10n="U" oldref="33">
+            <emph>Data2</emph> is the second record array.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153123" role="heading" level="3" l10n="U"
+                    oldref="34">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159126" role="paragraph" l10n="U" oldref="35">
+            <item type="input">=FTEST(A1:A30;B1:B12)</item> calculates whether the two data sets are different in their variance and returns the probability that both sets could have come from the same total population.</paragraph>
+      </section>
+      <section id="fdist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150372"><bookmark_value>FDIST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FVERT" id="bm_id3149722" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150372" role="heading" level="2" l10n="U"
+                    oldref="37">FDIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152981" role="paragraph" l10n="U" oldref="38"><ahelp hid="HID_FUNC_FVERT">Calculates the values of an F distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150484" role="heading" level="3" l10n="U"
+                    oldref="39">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145826" role="code" l10n="U" oldref="40">FDIST(Number; DegreesFreedom1; DegreesFreedom2)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150461" role="paragraph" l10n="U" oldref="41">
+            <emph>Number</emph> is the value for which the F distribution is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150029" role="paragraph" l10n="U" oldref="42">
+            <emph>degreesFreedom1</emph> is the degrees of freedom in the numerator in the F distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146877" role="paragraph" l10n="U" oldref="43">
+            <emph>degreesFreedom2</emph> is the degrees of freedom in the denominator in the F distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147423" role="heading" level="3" l10n="U"
+                    oldref="44">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150696" role="paragraph" l10n="U" oldref="45">
+            <item type="input">=FDIST(0.8;8;12)</item> yields 0.61.</paragraph>
+      </section>
+      <section id="gamma">
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMA" id="bm_id0119200903221254" localize="false"/>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0119200903223192"><bookmark_value>GAMMA function</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id0119200903205393" role="heading" level="2" l10n="NEW">GAMMA</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200903205379" role="paragraph" l10n="NEW"><ahelp hid=".">Returns the Gamma function value.</ahelp> Note that GAMMAINV is not the inverse of GAMMA, but of GAMMADIST.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id0119200903271613" role="heading" level="3" l10n="NEW">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200903271614" role="paragraph" l10n="NEW">
+            <emph>Number</emph> is the number for which the Gamma function value is to be calculated.</paragraph>
+      </section>
+      <section id="gammainv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154841"><bookmark_value>GAMMAINV function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMAINV" id="bm_id3149249" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154841" role="heading" level="2" l10n="U"
+                    oldref="47">GAMMAINV</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153932" role="paragraph" l10n="U" oldref="48"><ahelp hid="HID_FUNC_GAMMAINV">Returns the inverse of the Gamma cumulative distribution GAMMADIST.</ahelp> This function allows you to search for variables with different distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149949" role="heading" level="3" l10n="U"
+                    oldref="49">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155828" role="code" l10n="U" oldref="50">GAMMAINV(Number; Alpha; Beta)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145138" role="paragraph" l10n="U" oldref="51">
+            <emph>Number</emph> is the probability value for which the inverse Gamma distribution is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152785" role="paragraph" l10n="U" oldref="52">
+            <emph>Alpha</emph> is the parameter Alpha of the Gamma distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154561" role="paragraph" l10n="U" oldref="53">
+            <emph>Beta</emph> is the parameter Beta of the Gamma distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3148734" role="heading" level="3" l10n="U"
+                    oldref="54">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153331" role="paragraph" l10n="U" oldref="55">
+            <item type="input">=GAMMAINV(0.8;1;1)</item> yields 1.61.</paragraph>
+      </section>
+      <section id="gammaln">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154806"><bookmark_value>GAMMALN function</bookmark_value>
+         <bookmark_value>natural logarithm of Gamma function</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMALN" id="bm_id3149511" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154806" role="heading" level="2" l10n="U"
+                    oldref="57">GAMMALN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148572" role="paragraph" l10n="U" oldref="58"><ahelp hid="HID_FUNC_GAMMALN">Returns the natural logarithm of the Gamma function: G(x).</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3152999" role="heading" level="3" l10n="U"
+                    oldref="59">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153112" role="code" l10n="U" oldref="60">GAMMALN(Number)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154502" role="paragraph" l10n="U" oldref="61">
+            <emph>Number</emph> is the value for which the natural logarithm of the Gamma function is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153568" role="heading" level="3" l10n="U"
+                    oldref="62">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153730" role="paragraph" l10n="U" oldref="63">
+            <item type="input">=GAMMALN(2)</item> yields 0.</paragraph>
+      </section>
+      <section id="gammadist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150132"><bookmark_value>GAMMADIST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMAVERT" id="bm_id3154330" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150132" role="heading" level="2" l10n="U"
+                    oldref="65">GAMMADIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155931" role="paragraph" l10n="U" oldref="66"><ahelp hid="HID_FUNC_GAMMAVERT">Returns the values of a Gamma distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id0119200903333675" role="paragraph" l10n="NEW">The inverse function is GAMMAINV.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147373" role="heading" level="3" l10n="U"
+                    oldref="67">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155436" role="code" l10n="U" oldref="68">GAMMADIST(Number; Alpha; Beta; C)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150571" role="paragraph" l10n="U" oldref="69">
+            <emph>Number</emph> is the value for which the Gamma distribution is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145295" role="paragraph" l10n="U" oldref="70">
+            <emph>Alpha</emph> is the parameter Alpha of the Gamma distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151015" role="paragraph" l10n="U" oldref="71">
+            <emph>Beta</emph> is the parameter Beta of the Gamma distribution</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3157972" role="paragraph" l10n="CHG" oldref="72">
+            <emph>C</emph> (optional) = 0 or False calculates the density function <emph>C</emph> = 1 or True calculates the distribution.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149535" role="heading" level="3" l10n="U"
+                    oldref="73">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145354" role="paragraph" l10n="U" oldref="74">
+            <item type="input">=GAMMADIST(2;1;1;1)</item> yields 0.86.</paragraph>
+      </section>
+      <section id="gauss">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150272"><bookmark_value>GAUSS function</bookmark_value>
+         <bookmark_value>normal distribution; standard</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAUSS" id="bm_id3149388" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150272" role="heading" level="2" l10n="U"
+                    oldref="76">GAUSS</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149030" role="paragraph" l10n="U" oldref="77"><ahelp hid="HID_FUNC_GAUSS">Returns the standard normal cumulative distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id2059694" role="paragraph" l10n="NEW">It is GAUSS(x)=NORMSDIST(x)-0.5</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3153551" role="heading" level="3" l10n="U"
+                    oldref="78">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155368" role="code" l10n="U" oldref="79">GAUSS(Number)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153228" role="paragraph" l10n="CHG" oldref="80">
+            <emph>Number</emph> is the value for which the value of the standard normal distribution is to be calculated.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150691" role="heading" level="3" l10n="U"
+                    oldref="81">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154867" role="paragraph" l10n="U" oldref="82">
+            <item type="input">=GAUSS(0.19)</item> = 0.08</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148594" role="paragraph" l10n="U" oldref="83">
+            <item type="input">=GAUSS(0.0375)</item> = 0.01</paragraph>
+      </section>
+      <section id="geomean">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148425"><bookmark_value>GEOMEAN function</bookmark_value>
+         <bookmark_value>means;geometric</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GEOMITTEL" id="bm_id3149777" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148425" role="heading" level="2" l10n="U"
+                    oldref="85">GEOMEAN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156257" role="paragraph" l10n="U" oldref="86"><ahelp hid="HID_FUNC_GEOMITTEL">Returns the geometric mean of a sample.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147167" role="heading" level="3" l10n="U"
+                    oldref="87">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153720" role="code" l10n="U" oldref="88">GEOMEAN(Number1; Number2; ...Number30)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3152585" role="paragraph" l10n="CHG" oldref="89">
+            <emph>Number1, Number2,...Number30</emph> are numeric arguments or ranges that represent a random sample.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3146146" role="heading" level="3" l10n="U"
+                    oldref="90">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149819" role="paragraph" l10n="U" oldref="92">
+            <item type="input">=GEOMEAN(23;46;69)</item> = 41.79. The geometric mean value of this random sample is therefore 41.79.</paragraph>
+      </section>
+      <section id="trimmean">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152966"><bookmark_value>TRIMMEAN function</bookmark_value>
+         <bookmark_value>means;of data set without margin data</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GESTUTZTMITTEL" id="bm_id3145081" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152966" role="heading" level="2" l10n="U"
+                    oldref="94">TRIMMEAN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149716" role="paragraph" l10n="U" oldref="95"><ahelp hid="HID_FUNC_GESTUTZTMITTEL">Returns the mean of a data set without the Alpha percent of data at the margins.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3149281" role="heading" level="3" l10n="U"
+                    oldref="96">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154821" role="code" l10n="U" oldref="97">TRIMMEAN(Data; Alpha)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155834" role="paragraph" l10n="U" oldref="98">
+            <emph>Data</emph> is the array of data in the sample.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156304" role="paragraph" l10n="U" oldref="99">
+            <emph>Alpha</emph> is the percentage of the marginal data that will not be taken into consideration.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3151180" role="heading" level="3" l10n="U"
+                    oldref="100">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156130" role="paragraph" l10n="U" oldref="101">
+            <item type="input">=TRIMMEAN(A1:A50; 0.1)</item> calculates the mean value of numbers in A1:A50, without taking into consideration the 5 percent of the values representing the highest values and the 5 percent of the values representing the lowest ones. The percentage numbers refer to the amount of the untrimmed mean value, not to the number of summands.</paragraph>
+      </section>
+      <section id="ztest">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153216"><bookmark_value>ZTEST function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GTEST" id="bm_id3147569" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153216" role="heading" level="2" l10n="U"
+                    oldref="103">ZTEST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150758" role="paragraph" l10n="CHG" oldref="104"><ahelp hid="HID_FUNC_GTEST">Calculates the probability of observing a z-statistic greater than the one computed based on a sample.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150872" role="heading" level="3" l10n="U"
+                    oldref="105">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153274" role="code" l10n="CHG" oldref="106">ZTEST(Data; mu; Sigma)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3156109" role="paragraph" l10n="CHG" oldref="107">
+            <emph>Data</emph> is the given sample, drawn from a normally distributed population.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149977" role="paragraph" l10n="CHG" oldref="108">
+            <emph>mu</emph> is the known mean of the population.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154740" role="paragraph" l10n="CHG" oldref="109">
+            <emph>Sigma</emph> (optional) is the known standard deviation of the population. If omitted, the standard deviation of the given sample is used.</paragraph>
+	 <paragraph xml-lang="en-US" id="par_id0305200911372999" role="paragraph" l10n="NEW">See also the <link href="http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_ZTEST_function">Wiki page</link>.</paragraph>
+      </section>
+      <section id="harmean">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153623"><bookmark_value>HARMEAN function</bookmark_value>
+         <bookmark_value>means;harmonic</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_HARMITTEL" id="bm_id3154052" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153623" role="heading" level="2" l10n="U"
+                    oldref="113">HARMEAN</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155102" role="paragraph" l10n="U" oldref="114"><ahelp hid="HID_FUNC_HARMITTEL">Returns the harmonic mean of a data set.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3146900" role="heading" level="3" l10n="U"
+                    oldref="115">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149287" role="code" l10n="U" oldref="116">HARMEAN(Number1; Number2; ...Number30)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154303" role="paragraph" l10n="CHG" oldref="117">
+            <emph>Number1,Number2,...Number30</emph> are up to 30 values or ranges, that can be used to calculate the harmonic mean.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3159179" role="heading" level="3" l10n="U"
+                    oldref="118">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146093" role="paragraph" l10n="U" oldref="120">
+            <item type="input">=HARMEAN(23;46;69)</item> = 37.64. The harmonic mean of this random sample is thus 37.64</paragraph>
+      </section>
+      <section id="hypgeomdist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152801"><bookmark_value>HYPGEOMDIST function</bookmark_value>
+         <bookmark_value>sampling without replacement</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_HYPGEOMVERT" id="bm_id3153910" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152801" role="heading" level="2" l10n="U"
+                    oldref="122">HYPGEOMDIST</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3159341" role="paragraph" l10n="U" oldref="123"><ahelp hid="HID_FUNC_HYPGEOMVERT">Returns the hypergeometric distribution.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3154697" role="heading" level="3" l10n="U"
+                    oldref="124">Syntax</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155388" role="code" l10n="U" oldref="125">HYPGEOMDIST(X; NSample; Successes; NPopulation)</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154933" role="paragraph" l10n="U" oldref="126">
+            <emph>X</emph> is the number of results achieved in the random sample.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153106" role="paragraph" l10n="U" oldref="127">
+            <emph>NSample</emph> is the size of the random sample.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146992" role="paragraph" l10n="U" oldref="128">
+            <emph>Successes</emph> is the number of possible results in the total population.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148826" role="paragraph" l10n="U" oldref="129">
+            <emph>NPopulation </emph>is the size of the total population.</paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3150529" role="heading" level="3" l10n="U"
+                    oldref="130">Example</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154904" role="paragraph" l10n="U" oldref="131">
+            <item type="input">=HYPGEOMDIST(2;2;90;100)</item> yields 0.81. If 90 out of 100 pieces of buttered toast fall from the table and hit the floor with the buttered side first, then if 2 pieces of buttered toast are dropped from the table, the probability is 81%, that both will strike buttered side first.</paragraph>
+      </section>
+</sort>
+<section id="relatedtopics">
+         <embed href="text/scalc/01/04060100.xhp#drking"/>
+      </section>
+   </body>
+</helpdocument>

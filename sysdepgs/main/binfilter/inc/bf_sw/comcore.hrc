@@ -1,0 +1,71 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _COMCORE_HRC
+#define _COMCORE_HRC
+
+#include "rcid.hrc"
+
+// ---------------
+// die Strings
+// ---------------
+
+#define STR_TABLE_DEFNAME					(RC_COMCORE_BEGIN + 2)
+#define STR_GRAPHIC_DEFNAME					(RC_COMCORE_BEGIN + 3)
+#define STR_OBJECT_DEFNAME					(RC_COMCORE_BEGIN + 4)
+#define STR_FRAME_DEFNAME					(RC_COMCORE_BEGIN + 5)
+#define STR_REGION_DEFNAME					(RC_COMCORE_BEGIN + 6)
+#define RID_GRAPHIC_REPLACEBMP				(RC_COMCORE_BEGIN + 8)
+#define RID_GRAPHIC_ERRORBMP				(RC_COMCORE_BEGIN + 9)
+#define STR_NUMRULE_DEFNAME					(RC_COMCORE_BEGIN + 10)
+#define MSG_DISABLE_READLINE_QUESTION		(RC_COMCORE_BEGIN + 18)
+
+// defines fuer die Autoformat Redline Kommentare
+#define STR_AUTOFMTREDL_DEL_EMPTY_PARA			0
+#define STR_AUTOFMTREDL_USE_REPLACE             1
+#define STR_AUTOFMTREDL_CPTL_STT_WORD           2
+#define STR_AUTOFMTREDL_CPTL_STT_SENT           3
+#define STR_AUTOFMTREDL_TYPO                    4
+#define STR_AUTOFMTREDL_USER_STYLE              5
+#define STR_AUTOFMTREDL_BULLET                  6
+#define STR_AUTOFMTREDL_UNDER              		7
+#define STR_AUTOFMTREDL_BOLD              		8
+#define STR_AUTOFMTREDL_FRACTION                9
+#define STR_AUTOFMTREDL_DETECT_URL              10
+#define STR_AUTOFMTREDL_DASH                    11
+#define STR_AUTOFMTREDL_ORDINAL                 12
+#define STR_AUTOFMTREDL_RIGHT_MARGIN            13
+#define STR_AUTOFMTREDL_SET_TMPL_TEXT			14
+#define STR_AUTOFMTREDL_SET_TMPL_INDENT			15
+#define STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT		16
+#define STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT	17
+#define STR_AUTOFMTREDL_SET_TMPL_HEADLINE		18
+#define STR_AUTOFMTREDL_SET_NUMBULET			19
+#define STR_AUTOFMTREDL_DEL_MORELINES			20
+// !!!!!!!!!!!!!!!!!!!!!!!!!!  das Ende immer richtig setzen !!!!!!!!!!!!
+#define STR_AUTOFMTREDL_END						21
+
+
+#endif
+
+
+

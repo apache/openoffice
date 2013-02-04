@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsharedmain0212xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Table Data Bar</title>
+         <filename>/text/shared/main0212.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="datenbank">
+         <paragraph xml-lang="en-US" id="hd_id3147102" role="heading" level="1" l10n="CHG"
+                    oldref="1"><link href="text/shared/main0212.xhp" name="Table Data Bar">Table Data Bar</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153394" role="paragraph" l10n="CHG" oldref="10"><ahelp hid=".">Use the Table Data bar to control the data view. </ahelp></paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3149346" role="paragraph" l10n="CHG" oldref="12">The filtered data view is active until you change or cancel the sorting or filtering criteria. If a filter is active, the <emph>Apply Filter</emph> icon on the <emph>Table Data</emph> bar is activated.</paragraph>
+      <embed href="text/shared/02/07070200.xhp#datensatzspeichern"/>
+      <table id="">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147303" role="paragraph" l10n="E">
+<image id="img_id3153896" src="res/commandimagelist/sc_recsave.png" width="0.222in" height="0.222in"><alt xml-lang="en-US" id="alt_id3153896">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153360" role="paragraph" l10n="CHG" oldref="13">Save Record</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+      <embed href="text/shared/02/07070100.xhp#datenbearbeiten"/>
+      <embed href="text/shared/02/07070100.xhp#sybearbeiten"/>
+      <embed href="text/shared/01/02010000.xhp#rueckgaengig"/>
+      <table id="">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145173" role="paragraph" l10n="E">
+<image id="img_id3154123" src="res/commandimagelist/sc_recundo.png" width="0.222in" height="0.222in"><alt xml-lang="en-US" id="alt_id3154123">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151382" role="paragraph" l10n="U" oldref="14">Undo: Data Input</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+      <embed href="text/shared/02/12100200.xhp#findrecord"/>
+      <embed href="text/shared/00/00000450.xhp#sydatensuchen"/>
+      <embed href="text/shared/02/12050000.xhp#aktualisieren"/>
+      <embed href="text/shared/02/12050000.xhp#syaktualisieren"/>
+      <embed href="text/shared/02/12100100.xhp#sortorder"/>
+      <embed href="text/shared/00/00000450.xhp#sysortieren"/>
+      <embed href="text/shared/02/12010000.xhp#aufsteigend"/>
+      <embed href="text/shared/02/12010000.xhp#syaufsteigend"/>
+      <embed href="text/shared/02/12020000.xhp#absteigend"/>
+      <embed href="text/shared/02/12020000.xhp#syabsteigend"/>
+      <embed href="text/shared/02/12030000.xhp#autofilter"/>
+      <embed href="text/shared/02/12030000.xhp#syautofilter"/>
+      <embed href="text/shared/02/12120000.xhp#filteranwenden"/>
+      <embed href="text/shared/02/12120000.xhp#syfilteranwenden"/>
+      <embed href="text/shared/02/12090000.xhp#standardfilter1"/>
+      <embed href="text/shared/02/12090000.xhp#systandardfilter"/>
+      <embed href="text/shared/02/12040000.xhp#filterentfernen"/>
+      <embed href="text/shared/02/12040000.xhp#syfilterentfernen"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DSBInsertColumns" id="bm_id5734733" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10744" role="head2" l10n="NEW"><link href="text/shared/02/12070000.xhp">Data to Text</link></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10753" role="paragraph" l10n="NEW"><ahelp hid=".">Inserts all fields of the marked record into the current document at the cursor position.</ahelp></paragraph>
+      <embed href="text/shared/02/12070000.xhp#sydatenintext"/>
+      <embed href="text/shared/02/12080000.xhp#dateninfelder"/>
+      <embed href="text/shared/02/12080000.xhp#sydateninfelder"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DSBFormLetter" id="bm_id0928200901513623" localize="false"/><comment>Help ID is here because we need it in shared since the F4 browser has another context "sdatabase" so I had to move the Help ID from the swriter folder</comment>
+<paragraph xml-lang="en-US" id="par_idN10780" role="head2" l10n="NEW"><link href="text/swriter/01/mailmerge00.xhp">Mail Merge</link></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1078F" role="paragraph" l10n="NEW"><ahelp hid=".">Starts the Mail Merge Wizard to create form letters.</ahelp></paragraph>
+      <embed href="text/swriter/00/00000401.xhp#syserienbrief"/>
+      <embed href="text/shared/02/12140000.xhp#aktdokdat"/>
+      <embed href="text/shared/02/12140000.xhp#syaktdokdat"/>
+      <embed href="text/shared/02/12000000.xhp#explorer"/>
+      <embed href="text/shared/02/12000000.xhp#syexplorer"/>
+   </body>
+</helpdocument>

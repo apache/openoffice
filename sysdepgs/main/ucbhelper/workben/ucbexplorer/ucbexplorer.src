@@ -1,0 +1,147 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "ucbexplorer.hrc"
+
+Menu MENU_MAIN
+{
+    ItemList =
+
+    {
+        MenuItem
+        {
+            Identifier = MENU_FILE ;
+            Text [ en-US ] = "~File" ;
+            SubMenu = Menu
+            {
+                ItemList =
+
+                {
+                    MenuItem
+                    {
+                        Identifier = MENU_EXIT ;
+                        Text [ en-US ] = "~Exit" ;
+                        AccelKey = KeyCode
+                        {
+                            Function = KEYFUNC_QUIT ;
+                        };
+                    };
+                };
+            };
+        };
+    };
+};
+
+Menu MENU_POPUP
+{
+    ItemList =
+
+    {
+        MenuItem
+        {
+            Identifier = MENU_NEW ;
+            Text [ en-US ] = "~New" ;
+        };
+        MenuItem
+        {
+            Identifier = MENU_RENAME ;
+            Text [ en-US ] = "~Rename" ;
+        };
+        MenuItem
+        {
+            Identifier = MENU_DELETE ;
+            Text [ en-US ] = "~Delete" ;
+        };
+    };
+};
+
+/*
+Bitmap BMP_FOLDER_CLOSED
+{
+    File = "bmp/fldclose.bmp" ;
+};
+Bitmap BMP_FOLDER_OPENED
+{
+    File = "bmp/fldopen.bmp" ;
+};
+Bitmap BMP_DOCUMENT
+{
+    File = "bmp/document.bmp" ;
+};
+Bitmap BMP_LINK
+{
+    File = "bmp/link.bmp" ;
+};
+*/
+
+ModalDialog DLG_STRINGINPUT
+{
+    HelpID = "ucbhelper:ModalDialog:DLG_STRINGINPUT";
+    Border = TRUE ;
+    Moveable = TRUE ;
+    OutputSize = TRUE ;
+    SVLook = TRUE ;
+    Size = MAP_APPFONT ( 218 , 44 ) ;
+    FixedText FT_STRINGINPUT_DLG_NAME
+    {
+        Pos = MAP_APPFONT ( 12 , 18 ) ;
+        Size = MAP_APPFONT ( 28 , 10 ) ;
+        Text [ en-US ] = "~Value" ;
+    };
+    Edit ED_STRINGINPUT_DLG_NAME
+    {
+        HelpID = "ucbhelper:Edit:DLG_STRINGINPUT:ED_STRINGINPUT_DLG_NAME";
+        Pos = MAP_APPFONT ( 40 , 16 ) ;
+        Size = MAP_APPFONT ( 110 , 12 ) ;
+        Border = TRUE ;
+        Left = TRUE ;
+    };
+    GroupBox GB_STRINGINPUT_DLG_NAME
+    {
+        Group = TRUE ;
+        Pos = MAP_APPFONT ( 6 , 3 ) ;
+        Size = MAP_APPFONT ( 150 , 36 ) ;
+    };
+    OKButton BT_STRINGINPUT_DLG_OK
+    {
+        Pos = MAP_APPFONT ( 162 , 6 ) ;
+        Size = MAP_APPFONT ( 50 , 14 ) ;
+        DefButton = TRUE ;
+    };
+    CancelButton BT_STRINGINPUT_DLG_CANCEL
+    {
+        Pos = MAP_APPFONT ( 162 , 23 ) ;
+        Size = MAP_APPFONT ( 50 , 14 ) ;
+    };
+    HelpButton BT_STRINGINPUT_DLG_HELP
+    {
+        Pos = MAP_APPFONT ( 162 , 200 ) ;
+        Size = MAP_APPFONT ( 50 , 14 ) ;
+    };
+};
+
+String TEXT_TITLEBAR
+{
+    Text [ en-US ] = "UCB Explorer" ;
+};
+

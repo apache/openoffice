@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidestylist_fromselectxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Creating New Styles From Selections</title>
+         <filename>/text/swriter/guide/stylist_fromselect.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155911"><bookmark_value>styles; creating from selections</bookmark_value>
+      <bookmark_value>drag and drop;creating new styles</bookmark_value>
+      <bookmark_value>copying;styles, from selections</bookmark_value>
+</bookmark><comment>mw deleted "creating;" and added "copying;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3155911" role="heading" level="1" l10n="U"
+                 oldref="34"><variable id="stylist_fromselect"><link href="text/swriter/guide/stylist_fromselect.xhp" name="Creating New Styles From Selections">Creating New Styles From Selections</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149829" role="heading" level="2" l10n="U"
+                 oldref="35">To Create a New Style From a Manually Formatted Selection</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156097" role="listitem" l10n="CHG" oldref="36">Choose <emph>Format - Styles and Formatting</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153402" role="listitem" l10n="CHG" oldref="42">Click the icon of the style category that you want to create.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153119" role="listitem" l10n="U" oldref="37">Click in the document where you want to copy the style from, for example, in a paragraph that you applied manual formatting to.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153138" role="listitem" l10n="CHG" oldref="38">Click the arrow next to the <item type="menuitem">New Style from Selection</item> icon and choose <item type="menuitem">New Style from Selection</item>
+               <emph/>from the submenu</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156260" role="listitem" l10n="U" oldref="43">Type a name in the <item type="menuitem">Style Name</item>
+               <emph/>box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154411" role="listitem" l10n="U" oldref="44">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3153373" role="heading" level="2" l10n="U"
+                 oldref="20">To Create a New Style by Drag-And-Drop</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154233" role="listitem" l10n="CHG" oldref="31">Choose <emph>Format - Styles and Formatting</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154258" role="listitem" l10n="U" oldref="45">Click the icon of the style category that you want to create.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154851" role="listitem" l10n="U" oldref="32">Select at least one character, or object, in the style that you want to copy. For page and frame styles, select at least one character or object in the page or frame.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154871" role="listitem" l10n="CHG" oldref="33">Drag the character or object to the Styles and Formatting window and release.</paragraph>
+            <paragraph xml-lang="en-US" id="par_idN107B2" role="listitem" l10n="NEW">For paragraph and character styles, you can drag-and-drop onto the respective icon in the Styles and Formatting window. You do not need to open that style category in advance.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN107B5" role="note" l10n="NEW">You can also drag-and-drop a frame into the Styles and Formatting window to create a new frame style: Click the frame, wait a moment with the mouse button pressed down, but without moving the mouse, then drag to the Styles and Formatting window and drop the frame onto the Frame Styles icon.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/templates_styles.xhp#templates_styles"/>
+         <embed href="text/swriter/guide/stylist_fillformat.xhp#stylist_fillformat"/>
+         <embed href="text/swriter/guide/stylist_update.xhp#stylist_update"/>
+         <paragraph xml-lang="en-US" id="par_id3149988" role="paragraph" l10n="U" oldref="40"><link href="text/swriter/01/05140000.xhp" name="Styles and Formatting">Styles and Formatting</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

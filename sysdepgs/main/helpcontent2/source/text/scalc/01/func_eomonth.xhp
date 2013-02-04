@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_eomonthxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">EOMONTH</title>
+<filename>/text/scalc/01/func_eomonth.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150991"><bookmark_value>EOMONTH function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_EOMONTH" id="bm_id3158439" localize="false"/><paragraph role="heading" id="hd_id3150991" xml-lang="en-US" level="2" oldref="231"><variable id="eomonth"><link href="text/scalc/01/func_eomonth.xhp">EOMONTH</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3152766" xml-lang="en-US" l10n="U" oldref="232"><ahelp hid="HID_AAI_FUNC_EOMONTH">Returns the date of the last day of a month which falls m<emph>onths</emph> away from the s<emph>tart date</emph>.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150597" xml-lang="en-US" level="3" l10n="U" oldref="233">Syntax</paragraph>
+<paragraph role="code" id="par_id3150351" xml-lang="en-US" l10n="U" oldref="234">EOMONTH(StartDate; Months)</paragraph>
+<paragraph role="paragraph" id="par_id3146787" xml-lang="en-US" l10n="U" oldref="235">
+<emph>StartDate</emph> is a date (the starting point of the calculation).</paragraph>
+<paragraph role="paragraph" id="par_id3155615" xml-lang="en-US" l10n="U" oldref="236">
+<emph>Months</emph> is the number of months before (negative) or after (positive) the start date.</paragraph>
+<paragraph role="heading" id="hd_id3156335" xml-lang="en-US" level="3" l10n="U" oldref="237">Example</paragraph>
+<paragraph role="paragraph" id="par_id3154829" xml-lang="en-US" l10n="U" oldref="238">What is the last day of the month that falls 6 months after September 14 2001?</paragraph>
+
+<paragraph role="paragraph" id="par_id3156143" xml-lang="en-US" l10n="U" oldref="239"><item type="input">=EOMONTH(DATE(2001;9;14);6)</item> returns the serial number 37346. Formatted as a date, this is 2002-03-31.</paragraph>
+<paragraph role="paragraph" id="par_id3156144" xml-lang="en-US" l10n="U" oldref="239"><item type="input">=EOMONTH("2001-09-14";6)</item> works as well. If the date is given as string, it has to be in ISO format.</paragraph>
+
+</body>
+</helpdocument>

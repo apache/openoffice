@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabase04030000xml" indexer="exclude" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Form Design</title>
+<filename>/text/shared/explorer/database/04030000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-28T10:33:40">FPE: Reformatted and cleaned</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148668"><bookmark_value>forms; designing (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)"</comment>
+<paragraph role="heading" id="hd_id3148668" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="formularentwurf"><link href="text/shared/explorer/database/04030000.xhp" name="Form Design">Form Design</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154230" xml-lang="en-US" l10n="U" oldref="2">Any $[officename] document can be expanded into a form. Simply add one or more form controls.</paragraph>
+<paragraph role="paragraph" id="par_id3145382" xml-lang="en-US" l10n="CHG" oldref="3">Open the Form Controls toolbar. The Form Controls toolbar contains the <link href="text/shared/02/01170000.xhp" name="functions">functions</link> needed to edit a form. More functions can be found in the <emph>Form Design</emph> bar and <emph>More Controls</emph> bar.</paragraph>
+<paragraph role="paragraph" id="par_id3153146" xml-lang="en-US" l10n="U" oldref="5">In the form design you can <link href="text/shared/02/01170000.xhp" name="include controls">include controls</link>, <link href="text/shared/02/01170100.xhp" name="apply properties">apply properties</link> to them, define <link href="text/shared/02/01170200.xhp" name="Form properties">Form properties</link>, and <link href="text/shared/02/01170203.xhp" name="define subforms">define subforms</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3154924" xml-lang="en-US" l10n="CHG" oldref="9">The<emph> Form Navigator</emph> icon 
+<image id="img_id3156002" src="res/commandimagelist/sc_showfmexplorer.png" width="4.23mm" height="4.23mm"><alt id="alt_id3156002" xml-lang="en-US">Icon</alt>
+	</image> on the Form Design bar opens the <link href="text/shared/02/01170600.xhp" name="Form Navigator"><emph>Form Navigator</emph></link>.</paragraph>
+<paragraph role="paragraph" id="par_id3153968" xml-lang="en-US" l10n="CHG" oldref="6">The <link href="text/shared/02/01171000.xhp" name="Open in Design Mode"><emph>Open in Design Mode</emph></link> icon 
+<image id="img_id1871395" src="res/commandimagelist/sc_openreadonly.png" width="5.59mm" height="5.59mm"><alt id="alt_id1871395" xml-lang="en-US">Icon</alt>
+	</image> allows you to save a form document so that it always opens in editing mode.</paragraph>
+<paragraph role="paragraph" id="par_id3154948" xml-lang="en-US" l10n="U" oldref="8">If there is an error when assigning properties to the objects contained in the form (for example, when assigning a non-existent database table to an object), a corresponding error message appears. This error message may contain a <emph>More</emph> button. <ahelp hid="dummy">If you click <emph>More</emph>, a dialog displaying more information about the current problem appears.</ahelp></paragraph>
+</body>
+</helpdocument>

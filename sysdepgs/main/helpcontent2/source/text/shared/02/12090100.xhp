@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared0212090100xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Standard Filter</title>
+         <filename>/text/shared/02/12090100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="hid/.uno:DataFilterStandardFilter" id="bm_id9065823" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DataFilterStandardFilter" id="bm_id3154232" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151097" role="heading" level="1" l10n="U" oldref="1">Standard Filter</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149716" role="paragraph" l10n="U" oldref="2"><ahelp hid=".uno:DataFilterStandardFilter">Specifies the logical conditions to filter your table data.</ahelp> This dialog is available for spreadsheet documents, database tables and database forms. The dialog for databases does not contain the <emph>More Options</emph> button.</paragraph>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000409.xhp#dnfitdf"/>
+      </section>
+<switch select="appl">
+<case select="CALC">
+<paragraph xml-lang="en-US" id="par_idN105EE" role="paragraph" l10n="NEW">
+         <embedvar href="text/scalc/guide/filters.xhp#filters"/>
+      </paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="hd_id3155555" role="heading" level="2" l10n="U" oldref="3">Filter criteria</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147834" role="paragraph" l10n="U" oldref="4">You can define a filter by indicating the type of line, the name of the field, a logical condition and a value or a combination of arguments.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_OP1" id="bm_id3153683" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_OP2" id="bm_id3147577" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHERECOND2" id="bm_id3155892" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHERECOND3" id="bm_id3150774" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149751" role="heading" level="2" l10n="U" oldref="5">Operator</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149177" role="paragraph" l10n="U" oldref="6"><ahelp hid="DBACCESS_LISTBOX_DLG_FILTERCRIT_LB_WHERECOND3">For the following arguments, you can choose between the logical operators AND / OR.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_FIELD1" id="bm_id3153682" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_FIELD2" id="bm_id3155942" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_FIELD3" id="bm_id3150693" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHEREFIELD1" id="bm_id3153345" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHEREFIELD2" id="bm_id3155535" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHEREFIELD3" id="bm_id3148538" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149182" role="heading" level="2" l10n="U" oldref="7">Field name</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149398" role="paragraph" l10n="U" oldref="8"><ahelp hid="DBACCESS_LISTBOX_DLG_FILTERCRIT_LB_WHEREFIELD3">Specifies the field names from the current table to set them in the argument.</ahelp> You will see the column identifiers if no text is available for the field names.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_COND1" id="bm_id3149811" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_COND2" id="bm_id3153760" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_FILTER:LB_COND3" id="bm_id3153126" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHERECOMP1" id="bm_id3159270" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHERECOMP2" id="bm_id3148990" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ListBox:DLG_FILTERCRIT:LB_WHERECOMP3" id="bm_id3153252" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147653" role="heading" level="2" l10n="U" oldref="9">Condition</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150254" role="paragraph" l10n="U" oldref="10"><ahelp hid="DBACCESS_LISTBOX_DLG_FILTERCRIT_LB_WHERECOMP3">Specifies the <link href="text/shared/02/12090101.xhp" name="comparative operators">comparative operators</link> through which the entries in the <emph>Field name</emph> and <emph>Value</emph> fields can be linked.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ComboBox:RID_SCDLG_FILTER:ED_VAL1" id="bm_id3155136" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ComboBox:RID_SCDLG_FILTER:ED_VAL2" id="bm_id3148492" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ComboBox:RID_SCDLG_FILTER:ED_VAL3" id="bm_id3150276" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:Edit:DLG_FILTERCRIT:ET_WHEREVALUE1" id="bm_id3146949" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:Edit:DLG_FILTERCRIT:ET_WHEREVALUE2" id="bm_id3153700" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:Edit:DLG_FILTERCRIT:ET_WHEREVALUE3" id="bm_id3159400" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149166" role="heading" level="2" l10n="U"
+                 oldref="11">Value</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149795" role="paragraph" l10n="U" oldref="12"><ahelp hid="DBACCESS_EDIT_DLG_FILTERCRIT_ET_WHEREVALUE3">Specifies a value to filter the field.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150976" role="paragraph" l10n="U" oldref="14">The<emph> Value </emph>list box contains all possible values for the specified <emph>Field name</emph> . Choose the value to be used in the filter. You can also choose the <emph>- empty -</emph> or <emph>-not empty -</emph> entries..</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156118" role="paragraph" l10n="U" oldref="15">If you use the filter function in database tables or forms, then type the value in the <emph>Value </emph>text box to be used for filtering.</paragraph>
+<switch select="appl">
+<case select="CALC">
+<paragraph xml-lang="en-US" id="hd_id3153061" role="heading" level="2" l10n="U"
+                 oldref="13"><link href="text/scalc/01/12040201.xhp" name="More Options">More Options</link></paragraph>
+      <embed href="text/scalc/01/12040201.xhp#zusaetzetext"/>
+</case>
+</switch>
+</body>
+</helpdocument>

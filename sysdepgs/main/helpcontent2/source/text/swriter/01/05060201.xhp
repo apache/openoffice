@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105060201xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Contour Editor</title>
+<filename>/text/swriter/01/05060201.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-22T14:11:55">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/svx:FloatingWindow:RID_SVXDLG_CONTOUR" id="bm_id3151318" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ContourDialog" id="bm_id8126690" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:ContourDialog" id="bm_id3154564" localize="false"/>
+<paragraph role="heading" id="hd_id3153539" xml-lang="en-US" level="1" l10n="U" oldref="1">Contour Editor</paragraph>
+<paragraph role="paragraph" id="par_id3153677" xml-lang="en-US" l10n="U" oldref="2"><variable id="konturtext"><ahelp hid=".uno:ContourDialog">Changes the contour of the selected object. $[officename] uses the contour when determining the <link href="text/swriter/01/05060200.xhp" name="text wrap">text wrap</link> options for the object.</ahelp>
+</variable></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_GRAPHWND" id="bm_id3155903" localize="false"/>
+<paragraph role="paragraph" id="par_id3155892" xml-lang="en-US" l10n="U" oldref="46"><ahelp hid="HID_CONTDLG_GRAPHWND">Displays a preview of the contour.</ahelp><comment>and this bubble text hides both from view if not set to 0 length</comment></paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#kontureditor"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_APPLY" id="bm_id3155178" localize="false"/>
+<paragraph role="heading" id="hd_id3159195" xml-lang="en-US" level="2" l10n="U" oldref="3">Apply</paragraph>
+<paragraph role="paragraph" id="par_id3155184" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="HID_CONTDLG_APPLY">Applies the contour to the selected object.</ahelp></paragraph>
+<table id="tbl_id3149495">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149827" xml-lang="en-US" l10n="E">
+<image id="img_id3151253" src="svx/res/nu07.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151253" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148971" xml-lang="en-US" l10n="U" oldref="5">Apply</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_WORKPLACE" id="bm_id3147102" localize="false"/>
+<paragraph role="heading" id="hd_id3147091" xml-lang="en-US" level="2" l10n="U" oldref="6">Wrap Region</paragraph>
+<paragraph role="paragraph" id="par_id3147217" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="HID_CONTDLG_WORKPLACE">Deletes the custom contour. Click here, and then click in the preview area.</ahelp></paragraph>
+<table id="tbl_id3153637">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147579" xml-lang="en-US" l10n="E">
+<image id="img_id3147585" src="svx/res/cd02.png" width="0.222inch" height="0.222inch"><alt id="alt_id3147585" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153351" xml-lang="en-US" l10n="U" oldref="8">Work area</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_SELECT" id="bm_id3149181" localize="false"/>
+<paragraph role="heading" id="hd_id3149170" xml-lang="en-US" level="2" l10n="U" oldref="9">Select</paragraph>
+<paragraph role="paragraph" id="par_id3156270" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_CONTDLG_SELECT">Changes to selection mode, so that you can select the contour.</ahelp></paragraph>
+<table id="tbl_id3151029">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151370" xml-lang="en-US" l10n="E">
+<image id="img_id3151377" src="res/commandimagelist/sc_drawselect.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151377" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150121" xml-lang="en-US" l10n="U" oldref="11">Select</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_RECT" id="bm_id3150690" localize="false"/>
+<paragraph role="heading" id="hd_id3155868" xml-lang="en-US" level="2" l10n="U" oldref="12">Rectangle</paragraph>
+<paragraph role="paragraph" id="par_id3150696" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="HID_CONTDLG_RECT">Draws a rectangular contour where you drag in the object preview. To draw a square, hold down Shift while you drag.</ahelp></paragraph>
+<table id="tbl_id3147424">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149559" xml-lang="en-US" l10n="E">
+<image id="img_id3149565" src="res/commandimagelist/sc_rect.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149565" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145137" xml-lang="en-US" l10n="U" oldref="14">Rectangle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_CIRCLE" id="bm_id3150552" localize="false"/>
+<paragraph role="heading" id="hd_id3155980" xml-lang="en-US" level="2" l10n="U" oldref="15">Ellipse</paragraph>
+<paragraph role="paragraph" id="par_id3150558" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_CONTDLG_CIRCLE">Draws an oval contour where you drag in the object preview.</ahelp> To draw a circle, hold down shift while you drag.</paragraph>
+<table id="tbl_id3149228">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146332" xml-lang="en-US" l10n="E">
+<image id="img_id3146338" src="res/commandimagelist/sc_ellipse.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146338" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148857" xml-lang="en-US" l10n="U" oldref="17">Ellipse</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_POLY" id="bm_id3154769" localize="false"/>
+<paragraph role="heading" id="hd_id3148443" xml-lang="en-US" level="2" l10n="U" oldref="18">Polygon</paragraph>
+<paragraph role="paragraph" id="par_id3154774" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="HID_CONTDLG_POLY">Draws a closed contour consisting of straight line segments. Click where you want to start the polygon, and drag to draw a line segment. Click again to define the end of the line segment, and continue clicking to define the remaining line segments of the polygon. Double-click to finish drawing the polygon. To constrain the polygon to angles of 45 degree, hold down Shift when you click.</ahelp></paragraph>
+<table id="tbl_id3151089">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145304" xml-lang="en-US" l10n="E">
+<image id="img_id3145311" src="res/commandimagelist/sc_polygon.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145311" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150164" xml-lang="en-US" l10n="U" oldref="20">Polygon</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_POLYEDIT" id="bm_id3156106" localize="false"/>
+<paragraph role="heading" id="hd_id3156096" xml-lang="en-US" level="2" l10n="U" oldref="21">Edit Points</paragraph>
+<paragraph role="paragraph" id="par_id3156112" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_CONTDLG_POLYEDIT">Lets you change the shape of the contour. Click here, and then drag the handles of the contour.</ahelp></paragraph>
+<table id="tbl_id3145342">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154711" xml-lang="en-US" l10n="E">
+<image id="img_id3154717" src="res/commandimagelist/sc_toggleobjectbeziermode.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154717" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145632" xml-lang="en-US" l10n="U" oldref="23">Edit Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_POLYMOVE" id="bm_id3150919" localize="false"/>
+<paragraph role="heading" id="hd_id3150909" xml-lang="en-US" level="2" l10n="U" oldref="24">Move Points</paragraph>
+<paragraph role="paragraph" id="par_id3150925" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="HID_CONTDLG_POLYMOVE">Lets you drag the handles of the contour to change the shape of the contour.</ahelp></paragraph>
+<table id="tbl_id3155088">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146940" xml-lang="en-US" l10n="E">
+<image id="img_id3146947" src="res/commandimagelist/sc_beziermove.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146947" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154330" xml-lang="en-US" l10n="U" oldref="26">Move Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_POLYINSERT" id="bm_id3150097" localize="false"/>
+<paragraph role="heading" id="hd_id3150086" xml-lang="en-US" level="2" l10n="U" oldref="27">Insert Points</paragraph>
+<paragraph role="paragraph" id="par_id3150103" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="HID_CONTDLG_POLYINSERT">Inserts a handle that you can drag to change the shape of the contour. Click here, and then click on the contour outline.</ahelp></paragraph>
+<table id="tbl_id3148793">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149357" xml-lang="en-US" l10n="E">
+<image id="img_id3149363" src="res/commandimagelist/sc_bezierinsert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149363" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153120" xml-lang="en-US" l10n="U" oldref="29">Insert Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_POLYDELETE" id="bm_id3154618" localize="false"/>
+<paragraph role="heading" id="hd_id3153136" xml-lang="en-US" level="2" l10n="U" oldref="30">Delete Points</paragraph>
+<paragraph role="paragraph" id="par_id3154624" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="HID_CONTDLG_POLYDELETE">Removes a point from the contour outline. Click here, and then click the point that you want to delete.</ahelp></paragraph>
+<table id="tbl_id3147380">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149637" xml-lang="en-US" l10n="E">
+<image id="img_id3149643" src="res/commandimagelist/sc_bezierdelete.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149643" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154028" xml-lang="en-US" l10n="U" oldref="32">Delete Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_AUTOCONTOUR" id="bm_id3149960" localize="false"/>
+<paragraph role="heading" id="hd_id3149949" xml-lang="en-US" level="2" l10n="U" oldref="33">Auto Contour</paragraph>
+<paragraph role="paragraph" id="par_id3149966" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_CONTDLG_AUTOCONTOUR">Automatically draws a contour around the object that you can edit.</ahelp></paragraph>
+<table id="tbl_id3147277">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149615" xml-lang="en-US" l10n="E">
+<image id="img_id3149621" src="svx/res/cd025.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149621" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145655" xml-lang="en-US" l10n="U" oldref="35">AutoContour</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_UNDO" id="bm_id3148716" localize="false"/>
+<paragraph role="heading" id="hd_id3148705" xml-lang="en-US" level="2" l10n="U" oldref="36">Undo</paragraph>
+<paragraph role="paragraph" id="par_id3148722" xml-lang="en-US" l10n="U" oldref="37"><ahelp hid="HID_CONTDLG_UNDO">Reverses the last action.</ahelp></paragraph>
+<table id="tbl_id3155345">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149200" xml-lang="en-US" l10n="E">
+<image id="img_id3149206" src="svx/res/cd020.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149206" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3157890" xml-lang="en-US" l10n="U" oldref="38">Undo</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_REDO" id="bm_id3154213" localize="false"/>
+<paragraph role="heading" id="hd_id3157907" xml-lang="en-US" level="2" l10n="U" oldref="39">Redo</paragraph>
+<paragraph role="paragraph" id="par_id3154219" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="HID_CONTDLG_REDO">Reverses the action of the last <emph>Undo </emph>command.</ahelp></paragraph>
+<table id="tbl_id3155773">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154058" xml-lang="en-US" l10n="E">
+<image id="img_id3154073" src="res/commandimagelist/sc_redo.png" width="0.2228inch" height="0.2228inch"><alt id="alt_id3154073" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153195" xml-lang="en-US" l10n="U" oldref="41">Redo</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_CONTDLG_PIPETTE" id="bm_id3145092" localize="false"/>
+<paragraph role="heading" id="hd_id3153212" xml-lang="en-US" level="2" l10n="CHG" oldref="42">Color Replacer</paragraph>
+<paragraph role="paragraph" id="par_id3145098" xml-lang="en-US" l10n="U" oldref="43"><ahelp hid="HID_CONTDLG_PIPETTE">Selects the parts of the bitmap that are the same color. Click here, and then click a color in the bitmap. To increase the color range that is selected, increase the value in the <emph>Tolerance</emph> box.</ahelp></paragraph>
+<table id="tbl_id3146880">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149578" xml-lang="en-US" l10n="E">
+<image id="img_id3149585" src="sd/res/pipette.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149585" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149381" xml-lang="en-US" l10n="CHG" oldref="44">Color Replacer</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/svx:MetricField:RID_SVXDLG_CONTOUR:MTF_TOLERANCE" id="bm_id3154729" localize="false"/>
+<paragraph role="heading" id="hd_id3149398" xml-lang="en-US" level="2" l10n="U" oldref="45">Tolerance</paragraph>
+<paragraph role="paragraph" id="par_id3154735" xml-lang="en-US" l10n="CHG" oldref="47"><ahelp hid=".">Enter the color tolerance for the Color Replacer as a percentage. To increase the color range that the Color Replacer selects, enter a high percentage.</ahelp></paragraph>
+<section id="relatedtopics">
+<embed href="text/swriter/guide/wrap.xhp#wrap"/>
+</section>
+</body>
+</helpdocument>

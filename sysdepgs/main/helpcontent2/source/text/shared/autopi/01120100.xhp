@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01120100xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Group Element Wizard: Data</title>
+<filename>/text/shared/autopi/01120100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="seite1">
+  <paragraph id="hd_id3155599" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/shared/autopi/01120100.xhp" name="Group Element Wizard: Data">Group Element Wizard: Data</link></paragraph>
+  <paragraph role="paragraph" id="par_id3154894" l10n="U" xml-lang="en-US" oldref="2">Specifies which option fields are contained inside the group box.</paragraph>
+  </section>
+  <section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#gruppen1"/>
+</section>
+  <!-- removed HID DBP_EDIT_RID_PAGE_GROUPRADIOSELECTION_ET_RADIOLABELS --><paragraph role="heading" level="2" id="hd_id3153894" l10n="U" xml-lang="en-US" oldref="3">Which names do you want to give the option fields?</paragraph>
+  <paragraph l10n="U" xml-lang="en-US" role="paragraph" id="par_id3154673" oldref="4"><ahelp hid="DBP_EDIT_RID_PAGE_GROUPRADIOSELECTION_ET_RADIOLABELS" visibility="visible">Specifies the respective label for each option field. You will see the label of the option field in the form.</ahelp> This entry corresponds to the <link href="text/shared/02/01170101.xhp" name="Label">Label</link> property of the option field.</paragraph>
+  <!-- removed HID DBP_PUSHBUTTON_RID_PAGE_GROUPRADIOSELECTION_PB_MOVETORIGHT --><paragraph role="heading" level="3" id="hd_id3155805" l10n="U" xml-lang="en-US" oldref="10">Accept</paragraph>
+  <table id="tbl_id3145211">
+   
+   
+   
+    <tablerow>
+     <tablecell>
+      <paragraph role="paragraph" id="par_id3147008" l10n="U" xml-lang="en-US" oldref="12">&gt;&gt;</paragraph>
+     </tablecell>
+     <tablecell>
+      <paragraph l10n="U" role="paragraph" id="par_id3153345" xml-lang="en-US" oldref="5"><ahelp visibility="visible" hid="DBP_PUSHBUTTON_RID_PAGE_GROUPRADIOSELECTION_PB_MOVETORIGHT">Confirms the current label and copies the label to the <emph>Option fields</emph> list.</ahelp></paragraph>
+     </tablecell>
+    </tablerow>
+   
+  </table>
+  <paragraph role="paragraph" id="par_id3154749" l10n="U" xml-lang="en-US" oldref="6">Enter the label for each option field of the group that you want to create and copy the label to the list by clicking the arrow button. Repeat this procedure until all the option fields are defined.</paragraph>
+  <!-- removed HID DBP_LISTBOX_RID_PAGE_GROUPRADIOSELECTION_LB_RADIOBUTTONS --><paragraph role="heading" level="2" id="hd_id3150443" l10n="U" xml-lang="en-US" oldref="7">Option fields</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3152996" xml-lang="en-US" oldref="8"><ahelp hid="DBP_LISTBOX_RID_PAGE_GROUPRADIOSELECTION_LB_RADIOBUTTONS" visibility="visible">Displays all option fields which have to be included in the group box.</ahelp></paragraph>
+  <!-- removed HID DBP_PUSHBUTTON_RID_PAGE_GROUPRADIOSELECTION_PB_MOVETOLEFT --><paragraph role="heading" level="3" id="hd_id3146949" l10n="U" xml-lang="en-US" oldref="11">Remove</paragraph>
+  <table id="tbl_id3149578">
+   
+   
+   
+    <tablerow>
+     <tablecell>
+      <paragraph role="paragraph" id="par_id3153561" l10n="U" xml-lang="en-US" oldref="13">&lt;&lt;</paragraph>
+     </tablecell>
+     <tablecell>
+      <paragraph l10n="U" role="paragraph" id="par_id3159157" xml-lang="en-US" oldref="9"><ahelp hid="DBP_PUSHBUTTON_RID_PAGE_GROUPRADIOSELECTION_PB_MOVETOLEFT" visibility="visible">Removes the selected option fields from the list.</ahelp></paragraph>
+     </tablecell>
+    </tablerow>
+   
+  </table>
+ </body>
+</helpdocument>

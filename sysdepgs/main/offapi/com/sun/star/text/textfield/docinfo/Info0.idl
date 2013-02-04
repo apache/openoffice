@@ -1,0 +1,61 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_text_textfield_docinfo_Info0_idl__
+#define __com_sun_star_text_textfield_docinfo_Info0_idl_
+
+#include <com/sun/star/text/TextField.idl>
+
+//=============================================================================
+
+module com { module sun { module star {
+    module text { module textfield { module docinfo {
+
+//=============================================================================
+/** specifies service of a text field that provides the Info0 field that is contained
+    in the document information.
+    @deprecated this service is no longer implemented as of OOo 3.0;
+        use com::sun::star::text::textfield::docinfo::Custom instead.
+	@see com::sun::star::text::TextField
+*/
+published service Info0
+{
+    /** contains content information.
+	 */
+	[property] string Content;
+    /** contains the current content of the text field.
+        <p> This property is escpecially useful for import/export purposes. </p>
+	 */
+    [property]string CurrentPresentation;
+    /** If this flag is set to <FALSE/> the content updated everytime the document
+        information is changed.
+	 */
+    [property]boolean IsFixed;
+};
+
+//=============================================================================
+
+}; }; }; }; }; };
+
+#endif
+

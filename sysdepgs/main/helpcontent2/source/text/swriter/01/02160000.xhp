@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0102160000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Edit Index Entry</title>
+<filename>/text/swriter/01/02160000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-22T14:43:58">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:IndexEntryDialog" id="bm_id5051951" localize="false"/><!-- HID added by script -->
+<bookmark xml-lang="en-US" branch="hid/.uno:IndexEntryDialog" id="bm_id3154471" localize="false"/>
+<paragraph role="heading" id="hd_id3154567" xml-lang="en-US" level="1" l10n="U" oldref="1">Edit Index Entry</paragraph>
+<paragraph role="paragraph" id="par_id3151314" xml-lang="en-US" l10n="U" oldref="2"><variable id="verzeichniseintragtext"><ahelp hid=".uno:IndexEntryDialog">Edits the selected index entry. Click in front of or in the index entry, and then choose this command.</ahelp>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3155896" xml-lang="en-US" l10n="U" oldref="30">To insert an index entry, select a word in the document, and then choose <link href="text/swriter/01/04120100.xhp" name="Insert - Indexes and Tables - Entry"><emph>Insert - Indexes and Tables - Entry</emph></link>.</paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000402.xhp#verzeichniseintrag"/>
+</section>
+<paragraph role="heading" id="hd_id3159193" xml-lang="en-US" level="2" l10n="U" oldref="3">Selection</paragraph>
+<paragraph role="paragraph" id="par_id3149486" xml-lang="en-US" l10n="U" oldref="4">Edits the selected index entry.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_MULTMRK:LB_TOX" id="bm_id3143283" localize="false"/>
+<paragraph role="heading" id="hd_id3143272" xml-lang="en-US" level="3" l10n="U" oldref="5">Index</paragraph>
+<paragraph role="paragraph" id="par_id3151251" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SW:LISTBOX:DLG_MULTMRK:LB_TOX">Displays the type of index that the selected entry belongs to.</ahelp> You cannot change the index type of an index entry in this dialog. Instead, you must delete the index entry from the document, and then insert it again in a different index type.</paragraph>
+<paragraph role="heading" id="hd_id3149107" xml-lang="en-US" level="3" l10n="U" oldref="7">Entry</paragraph>
+<paragraph role="paragraph" id="par_id3149823" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SW:LISTBOX:DLG_MULTMRK:LB_TOX">Edit the index entry if necessary. When you modify the index entry, the new text only appears in the index, and not at the index entry anchor in the document. </ahelp> For example, you can enter an index with comments such as "Basics, see also General".</paragraph>
+<paragraph role="heading" id="hd_id3149036" xml-lang="en-US" level="3" l10n="U" oldref="9">1st key</paragraph>
+<paragraph role="paragraph" id="par_id3153631" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SW:LISTBOX:DLG_MULTMRK:LB_TOX">To create a multilevel index, type the name of the first level index entry, or select a name from the list. The current index entry is added below this name.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3152773" xml-lang="en-US" level="3" l10n="U" oldref="11">2nd key</paragraph>
+<paragraph role="paragraph" id="par_id3145758" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SW:LISTBOX:DLG_MULTMRK:LB_TOX">Type the name of the second level index entry, or select a name from the list. The current index entry is added below this name.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155143" xml-lang="en-US" level="3" l10n="U" oldref="13">Level</paragraph>
+<paragraph role="paragraph" id="par_id3149170" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SW:LISTBOX:DLG_MULTMRK:LB_TOX">Changes the outline level of a table of contents entry.</ahelp></paragraph>
+<embed href="text/swriter/01/04120100.xhp#phonetic"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_DELETE" id="bm_id3155912" localize="false"/>
+<paragraph role="heading" id="hd_id3145785" xml-lang="en-US" level="2" l10n="U" oldref="15">Delete</paragraph>
+<paragraph role="paragraph" id="par_id3155919" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_INSERT_IDX_MRK_DELETE">Deletes the selected entry from the index. The entry text in the document is not deleted.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_PREV_SAME" id="bm_id3155863" localize="false"/>
+<paragraph role="heading" id="hd_id3151384" xml-lang="en-US" level="2" l10n="U" oldref="18">End arrow to left</paragraph>
+<paragraph role="paragraph" id="par_id3155869" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="HID_INSERT_IDX_MRK_PREV_SAME">Jumps to the first index entry of the same type in the document.</ahelp></paragraph>
+<table id="tbl_id3150123">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147420" xml-lang="en-US" l10n="E">
+<image id="img_id3149551" src="sd/res/imagelst/nv03.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149551" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150550" xml-lang="en-US" l10n="U" oldref="26">End arrow to left</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_NEXT_SAME" id="bm_id3147747" localize="false"/>
+<paragraph role="heading" id="hd_id3147736" xml-lang="en-US" level="2" l10n="U" oldref="20">End arrow to right</paragraph>
+<paragraph role="paragraph" id="par_id3149829" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="HID_INSERT_IDX_MRK_NEXT_SAME">Jumps to the last index entry of the same type in the document.</ahelp></paragraph>
+<table id="tbl_id3149848">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153298" xml-lang="en-US" l10n="E">
+<image id="img_id3153309" src="sd/res/imagelst/nv06.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153309" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156108" xml-lang="en-US" l10n="U" oldref="27">End arrow to right</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_PREV" id="bm_id3155091" localize="false"/>
+<paragraph role="heading" id="hd_id3155080" xml-lang="en-US" level="2" l10n="U" oldref="22">Arrow to left</paragraph>
+<paragraph role="paragraph" id="par_id3154327" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="HID_INSERT_IDX_MRK_PREV">Jumps to the previous index entry of the same type in the document.</ahelp></paragraph>
+<table id="tbl_id3150084">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148785" xml-lang="en-US" l10n="E">
+<image id="img_id3148791" src="res/commandimagelist/sc_prevrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148791" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153129" xml-lang="en-US" l10n="U" oldref="28">Left Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_NEXT" id="bm_id3154628" localize="false"/>
+<paragraph role="heading" id="hd_id3154617" xml-lang="en-US" level="2" l10n="U" oldref="24">Arrow to right</paragraph>
+<paragraph role="paragraph" id="par_id3154633" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="HID_INSERT_IDX_MRK_NEXT">Jumps to the next index entry of the same type in the document.</ahelp></paragraph>
+<table id="tbl_id3149640">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150677" xml-lang="en-US" l10n="E">
+<image id="img_id3154020" src="sd/res/imagelst/nv05.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154020" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149965" xml-lang="en-US" l10n="U" oldref="29">Right Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="tip" id="par_id3155539" xml-lang="en-US" l10n="U" oldref="32">You can jump quickly to index entries with the <link href="text/swriter/01/02110100.xhp" name="Navigation Bar">Navigation Bar</link>.</paragraph>
+</body>
+</helpdocument>

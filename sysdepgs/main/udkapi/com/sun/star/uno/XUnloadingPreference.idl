@@ -1,0 +1,67 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_uno_XUnloadingPreference_idl__ 
+#define __com_sun_star_uno_XUnloadingPreference_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+  
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module uno {  
+ 
+//============================================================================= 
+/** Components can implement <code>XUnloadingPreference</code> in order to indicate
+	how they should be treated when their hosting library is to be unloaded.
+
+   When someone calls <code>rtl_unloadUnusedModules</code> then the unloading
+	listeners are notified by calling previously registered callback
+	functions. A listener is an entity that employs, registers, and
+	unregisters the callback functions on its behalf. Upon notification
+	(the callback function is being called) 
+	a listener may release references to UNO components. Thus, the
+	loaded libraries can be unloaded, if no one else keeps any 
+	objects from the library alive. <br>
+	Before a listener releases references, it should ask for this interface.
+	If the interface is not implemented, then the listener may release the
+	object; otherwise, it calls <code>releaseOnNotification</code>. If the function
+	returns false then the listener should keep the reference, otherwise 
+	it may release it.
+*/
+published interface XUnloadingPreference: com::sun::star::uno::XInterface
+{ 
+	/**
+		The return value determines if the object wants to stay
+		alive in case of an unloading procedure.
+		@return 
+		<FALSE/>do not release references to this object,otherwise
+		<TRUE/>
+	*/
+	boolean releaseOnNotification();
+}; 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

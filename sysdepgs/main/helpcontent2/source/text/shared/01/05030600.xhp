@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0105030600xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Background</title>
+         <filename>/text/shared/01/05030600.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="hintergrund">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151097"><bookmark_value>frames; backgrounds</bookmark_value>
+<bookmark_value>backgrounds; frames/sections/indexes</bookmark_value>
+<bookmark_value>sections; backgrounds</bookmark_value>
+<bookmark_value>indexes; backgrounds</bookmark_value>
+<bookmark_value>footers;backgrounds</bookmark_value>
+<bookmark_value>headers;backgrounds</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_BACKGROUND" id="bm_id3147000" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151097" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/01/05030600.xhp" name="Background">Background</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153748" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_BACKGROUND">Set the background color or graphic.</ahelp></paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3147653" role="paragraph" l10n="U" oldref="34">You can specify the background for <switchinline select="appl"><caseinline select="WRITER">paragraphs, pages, headers, footers, text frames, tables, table cells, sections, and indexes.
+</caseinline><caseinline select="CALC">cells and pages.
+</caseinline></switchinline></paragraph>
+      <section id="howtoget">
+         <embed href="text/shared/00/00040500.xhp#hintergrund"/>
+      </section>
+      <embed href="text/shared/guide/background.xhp#background"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_BACKGROUND:LB_SELECTOR" id="bm_id3153321" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154514" role="heading" level="2" l10n="U" oldref="4">As</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154380" role="paragraph" l10n="U" oldref="5"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_BACKGROUND:LB_SELECTOR">Select the type of background that you want to apply.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3151245" role="heading" level="2" l10n="U" oldref="7">Using a Color as a Background</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_BACKGROUND_CTL_BGDCOLORSET" id="bm_id3159414" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148946" role="heading" level="3" l10n="U" oldref="8">Color Background</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152361" role="paragraph" l10n="U" oldref="9"><ahelp hid="HID_BACKGROUND_CTL_BGDCOLORSET">Click the color that you want to use as a background. To remove a background color, click <emph>No Fill</emph>.</ahelp></paragraph>
+
+      <embed href="text/shared/02/02160000.xhp#syzeichenhintergrund"/>
+      <embed href="text/shared/02/02170000.xhp#syabsatzhintergrund"/>
+      <embed href="text/shared/02/02160000.xhp#zeichenhintergrundtext"/>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_BACKGROUND:MF_COL_TRANS" id="bm_id3150400" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153524" role="heading" level="3" l10n="U"
+                 oldref="37"><switchinline select="appl"><caseinline select="WRITER">Transparency
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="WRITER">
+<paragraph xml-lang="en-US" id="par_idN107A4" role="note" l10n="NEW">Background transparency can be set only for frames.</paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="par_id3150358" role="paragraph" l10n="U" oldref="38"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SVX_METRICFIELD_RID_SVXPAGE_BACKGROUND_MF_COL_TRANS">Set the transparency for the background color or graphic of a frame, where 100% is completely transparent and 0% is opaque. When you increase the transparency of the background, the underlying text or objects become visible through the background of the frame.</ahelp>
+</caseinline></switchinline></paragraph>
+      <embed href="text/shared/00/00000001.xhp#vorschau"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_BACKGROUND:LB_PARA_BOX" id="bm_id3147228" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_BACKGROUND:LB_TBL_BOX" id="bm_id3153352" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154216" role="heading" level="3" l10n="U"
+                 oldref="11"><switchinline select="appl"><caseinline select="WRITER">For
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145419" role="paragraph" l10n="U" oldref="12"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_BACKGROUND:LB_TBL_BOX">Select the area that you want to apply the background color to.</ahelp> For example, when you define the background color for a table, you can choose to apply it to the table, the active cell, the row, or the column.
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="WRITER">
+<paragraph xml-lang="en-US" id="par_id3150497" role="note" l10n="U" oldref="13">This option is only available when you edit the background of a table or a paragraph style.</paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="hd_id3153056" role="heading" level="2" l10n="U"
+                 oldref="14">Using a Graphic as a Background</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149983" role="heading" level="3" l10n="U"
+                 oldref="15">File</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152462" role="paragraph" l10n="U" oldref="16">Contains information about the graphic file.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3145592" role="heading" level="3" l10n="U"
+                 oldref="17">Display field</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154920" role="paragraph" l10n="U" oldref="18">Shows the path for the graphic file.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_BACKGROUND:BTN_LINK" id="bm_id3145264" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145272" role="heading" level="3" l10n="U"
+                 oldref="19">Link</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154150" role="paragraph" l10n="CHG" oldref="20"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_BACKGROUND:BTN_LINK">Links to or embeds the graphic file in the current file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_BACKGROUND:BTN_PREVIEW" id="bm_id3159196" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155366" role="heading" level="3" l10n="U"
+                 oldref="21">Preview</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147426" role="paragraph" l10n="U" oldref="22"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_BACKGROUND:BTN_PREVIEW">Displays or hides a preview of the selected graphic.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_BACKGROUND:BTN_BROWSE" id="bm_id3153095" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154472" role="heading" level="3" l10n="U"
+                 oldref="23">Browse</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153951" role="paragraph" l10n="U" oldref="24"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_BACKGROUND:BTN_BROWSE">Locate the graphic file that you want to use as a background, and then click <emph>Open</emph>.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153726" role="heading" level="3" l10n="U"
+                 oldref="25">Type</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147442" role="paragraph" l10n="U" oldref="26">Specify the way that you want to display the background graphic.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_BACKGROUND_CTL_POSITION" id="bm_id3083445" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_BACKGROUND:BTN_POSITION" id="bm_id3156062" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153366" role="heading" level="3" l10n="U"
+                 oldref="27">Position</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153741" role="paragraph" l10n="U" oldref="28"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_BACKGROUND:BTN_POSITION">Select this option, and then click a location in the position grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_BACKGROUND:BTN_AREA" id="bm_id3146146" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156005" role="heading" level="3" l10n="U"
+                 oldref="29">Area</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152596" role="paragraph" l10n="U" oldref="30"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_BACKGROUND:BTN_AREA">Stretches the graphic to fill the entire background of the selected object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_BACKGROUND:BTN_TILE" id="bm_id3153138" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145663" role="heading" level="3" l10n="U"
+                 oldref="32">Tile</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149481" role="paragraph" l10n="U" oldref="33"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_BACKGROUND:BTN_TILE">Repeats the graphic so that it covers the entire background of the selected object.</ahelp></paragraph>
+      <embed href="text/shared/00/00000001.xhp#vorschau"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_POPUP_COLOR_CTRL" id="bm_id3151075" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3151114" role="paragraph" l10n="U" oldref="35"><ahelp hid="." visibility="hidden">Click a color. Click No Fill to remove a background or highlighting color. Click Automatic to reset a font color.</ahelp></paragraph>
+   </body>
+</helpdocument>

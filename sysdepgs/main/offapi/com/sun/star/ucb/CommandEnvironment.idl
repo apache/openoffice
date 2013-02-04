@@ -1,0 +1,60 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _com_sun_star_ucb_CommandEnvironment_idl_
+#define _com_sun_star_ucb_CommandEnvironment_idl_
+
+#include <com/sun/star/ucb/XCommandEnvironment.idl>
+#include <com/sun/star/task/XInteractionHandler.idl>
+#include <com/sun/star/ucb/XProgressHandler.idl>
+
+module com { module sun { module star { module ucb {
+
+ /* This service implements an <type>XCommandEnvironment</type> that can be
+    initialized with any implementation of
+    <type scope="com::sun::star::task">XInteractionHandler</type> and
+    <type scope="com::sun::star::ucb">XProgressHandler</type>. The respective
+    get methods will simply return these handlers.
+
+    @since OOo 3.3
+ */
+ published service CommandEnvironment : ::com::sun::star::ucb::XCommandEnvironment
+ {
+    //-------------------------------------------------------------------------
+    /** Constructor.
+
+        @param InteractionHandler the interaction handler instance that will be
+                                  returned by this service' implementation of
+                                  <method>XCommandEnvironemt::getInteractionHandler</method>
+
+        @param ProgressHandler    the progress handler instance that will be
+                                  returned by this service' implementation of
+                                  <method>XCommandEnvironemt::getProgressHandler</method>
+    */
+     create( [in] com::sun::star::task::XInteractionHandler InteractionHandler,
+             [in] com::sun::star::ucb::XProgressHandler ProgressHandler );
+ };
+
+};};};};
+
+#endif

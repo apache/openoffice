@@ -1,0 +1,147 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_SheetFilterDescriptor_idl__
+#define __com_sun_star_sheet_SheetFilterDescriptor_idl__
+
+#include <com/sun/star/sheet/XSheetFilterDescriptor.idl>
+#include <com/sun/star/sheet/XSheetFilterDescriptor2.idl>
+#include <com/sun/star/beans/XPropertySet.idl>
+#include <com/sun/star/table/TableOrientation.idl>
+#include <com/sun/star/table/CellAddress.idl>
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** represents a description of how a cell range is to be filtered.
+
+	<p>The descriptor contains properties and a collection of filter
+	conditions (filter fields) which control the behaviour of a filter
+	operation.</p>
+ */
+published service SheetFilterDescriptor
+{
+	//-------------------------------------------------------------------------
+
+	/** provides access to the collection of filter fields.
+	 */
+	interface XSheetFilterDescriptor;
+
+	//-------------------------------------------------------------------------
+
+	/** provides access to the collection of filter fields.
+
+        <p>This interface provides a sequence of <type>TableFilterField2</type>
+        structures supporting a wider range of comparison operators, compared
+        to the <type>TableFilterField</type> structure provided by interface
+        <type>XSheetFilterDescriptor</type>.
+        
+        @since OOo 3.2
+	 */
+	[optional] interface XSheetFilterDescriptor2;
+
+	//-------------------------------------------------------------------------
+
+//!published service PropertySet
+	/** provides access to the properties.
+	 */
+	interface com::sun::star::beans::XPropertySet;
+
+	//=========================================================================
+
+	/** specifies if the case of letters is important when comparing entries.
+	 */
+	[property] boolean IsCaseSensitive;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies if duplicate entries are left out of the result.
+	 */
+	[property] boolean SkipDuplicates;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies if the <member>TableFilterField::StringValue</member>
+		strings are interpreted as regular expressions.
+	 */
+	[property] boolean UseRegularExpressions;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies if the <member>SheetFilterDescriptor::OutputPosition</member>
+		position is saved for future calls.
+
+		<p>This is only used if
+		<member>SheetFilterDescriptor::CopyOutputData</member> is <TRUE/>.</p>
+	 */
+	[property] boolean SaveOutputPosition;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies if columns or rows are filtered.
+	 */
+	[property] com::sun::star::table::TableOrientation Orientation;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies if the first row (or column) contains headers which should
+		not be filtered.
+	 */
+	[property] boolean ContainsHeader;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies if the filtered data should be copied to another position
+		in the document.
+	 */
+	[property] boolean CopyOutputData;
+
+	//-------------------------------------------------------------------------
+
+	/** specifies the position where filtered data are to be copied.
+
+		<p>This is only used if
+		<member>SheetFilterDescriptor::CopyOutputData</member> is <TRUE/>.</p>
+	 */
+	[property] com::sun::star::table::CellAddress OutputPosition;
+
+	//-------------------------------------------------------------------------
+
+	/** returns the maximum number of filter fields in the descriptor.
+
+		<p>This read-only property indicates the maximum count of fields the
+		current implementation supports.</p>
+	 */
+	[readonly, property] long MaxFieldCount;
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

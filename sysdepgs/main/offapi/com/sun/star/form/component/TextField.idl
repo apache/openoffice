@@ -1,0 +1,85 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_form_component_TextField_idl__ 
+#define __com_sun_star_form_component_TextField_idl__ 
+ 
+#ifndef __com_sun_star_awt_UnoControlEditModel_idl__ 
+#include <com/sun/star/awt/UnoControlEditModel.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_form_FormControlModel_idl__ 
+#include <com/sun/star/form/FormControlModel.idl> 
+#endif 
+
+#ifndef __com_sun_star_form_component_RichTextControl_idl__ 
+#include <com/sun/star/form/component/RichTextControl.idl> 
+#endif
+
+#ifndef __com_sun_star_form_XReset_idl__ 
+#include <com/sun/star/form/XReset.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module form {  module component { 
+ 
+//============================================================================= 
+ 
+/** specifies a component which allows the input of text, either single- or multi-line.
+ */
+published service TextField
+{ 
+	service com::sun::star::awt::UnoControlEditModel; 
+	
+	service com::sun::star::form::FormControlModel; 
+
+    /** specifies optional capabilities for displaying and inputting formatted text.
+
+        <p>If the <member>RichTextControl::RichText</member> property is set to <TRUE/>,
+        then the <type>TextField</type> component will disable it's reset capabilities. This means
+        that all calls to <member scope="com::sun::star::form">XReset::reset</member> will be ignored.</p>
+    */
+    [optional] service RichTextControl;
+
+	/** can be used to reset the control to it's default text.
+
+		@see TextField::DefaultText
+	*/
+	interface com::sun::star::form::XReset; 
+ 
+	/** contains a default value for the control.
+
+		<p>This value is used when the control is initially displayed, and for resetting it.</p>
+
+		@see com::sun::star::awt::UnoControlEditModel::Text
+		@see com::sun::star::form::XReset
+	 */
+	[property] string DefaultText; 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; }; 
+ 
+#endif 

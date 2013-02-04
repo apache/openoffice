@@ -1,0 +1,94 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sdb_Connection_idl__ 
+#define __com_sun_star_sdb_Connection_idl__ 
+ 
+#ifndef __com_sun_star_container_XChild_idl__ 
+#include <com/sun/star/container/XChild.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_sdbc_Connection_idl__ 
+#include <com/sun/star/sdbc/Connection.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_sdbcx_DatabaseDefinition_idl__ 
+#include <com/sun/star/sdbcx/DatabaseDefinition.idl> 
+#endif 
+ 
+module com {  module sun {  module star {  module lang {  
+	 published interface XMultiServiceFactory;
+};};};};
+
+ module com {  module sun {  module star {  module sdb { 
+ 
+ published interface XSQLQueryComposerFactory; 
+ published interface XQueriesSupplier; 
+ published interface XCommandPreparation; 
+ 
+ module application { interface XTableUIProvider; };
+ 
+/** extends the 
+	<type scope="com::sun::star::sdbc">Connection</type>
+	of SDBC by providing the data definitions of a connected database.
+ */
+published service Connection
+{ 
+	service com::sun::star::sdbc::Connection; 
+ 
+	/** access to the owning data source.
+	 */
+	interface com::sun::star::container::XChild; 
+ 
+	/** interface for complex command execution.
+	 */
+	interface XCommandPreparation; 
+ 
+	/** access to the database definition information of the connection.
+	 */
+	service com::sun::star::sdbcx::DatabaseDefinition; 
+ 
+	/** returns a container of associated queries.
+	 */
+	interface XQueriesSupplier; 
+ 
+	/** returns a tool for composing queries.
+	 */
+	interface XSQLQueryComposerFactory; 
+
+	/** allows the creation of different services which can only exists with a connection.
+	 */
+	[optional] interface com::sun::star::lang::XMultiServiceFactory;
+
+    /** allows the connection to overrule the database application's default
+        user interface for tables.
+    */
+//    [optional] interface com::sun::star::sdb::application::XTableUIProvider;
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*=========================================================================== 
+===========================================================================*/ 
+#endif 

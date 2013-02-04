@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguideaccessibilityxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Accessibility in %PRODUCTNAME</title>
+<filename>/text/shared/guide/accessibility.xhp</filename>
+</topic>
+</meta>
+<body>
+  <bookmark xml-lang="en-US" branch="index" id="bm_id3150502"><bookmark_value>accessibility; %PRODUCTNAME features</bookmark_value></bookmark><paragraph id="hd_id3150502" role="heading" level="1" oldref="7" l10n="U" xml-lang="en-US"><variable id="accessibility"><link name="Accessibility in %PRODUCTNAME" href="text/shared/guide/accessibility.xhp">Accessibility in <item type="productname">%PRODUCTNAME</item></link></variable></paragraph>
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3154894" l10n="U" oldref="6">The following accessibility features are part of <item type="productname">%PRODUCTNAME</item>:</paragraph>
+  <list type="unordered">
+   <listitem>
+    <paragraph l10n="U" role="listitem" id="par_id3153894" xml-lang="en-US" oldref="5">Support of <link href="text/shared/guide/assistive.xhp" name="external devices and applications">external devices and applications</link></paragraph>
+   </listitem>
+   <listitem>
+    <paragraph l10n="U" role="listitem" id="par_id3155552" xml-lang="en-US" oldref="4">Access to all functions by keyboard. The keys that replace the mouse actions are listed in the <link name="%PRODUCTNAME Help" href="text/shared/guide/keyboard.xhp"><item type="productname">%PRODUCTNAME</item> Help</link></paragraph>
+   </listitem>
+   <listitem>
+    <paragraph role="listitem" id="par_id3149177" l10n="U" xml-lang="en-US" oldref="3">Improved readability of screen contents</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph role="listitem" id="par_id3146957" l10n="U" xml-lang="en-US" oldref="8">Zooming of on-screen user interface for menus, icons, and documents</paragraph>
+    <paragraph xml-lang="en-US" oldref="12" l10n="U" role="listitem" id="par_id3145071">The user interface is scalable through your <switchinline select="sys"><caseinline select="UNIX">Window Manager</caseinline><defaultinline>operating system</defaultinline></switchinline> settings. The default font size for dialogs is 12pt, corresponding to a scale of 100%. You can also change the font size for dialogs in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <item type="productname">%PRODUCTNAME</item> - View</emph>. The zoom factor of a document can be changed in <emph>View - Zoom</emph>, or by double-clicking the zoom factor displayed in the Status Bar.</paragraph>
+   </listitem>
+  </list>
+  <paragraph role="note" id="par_id3152349" l10n="U" xml-lang="en-US" oldref="2">Please note that accessibility support relies on Java technology for communications with assistive technology tools. This means that the first program startup may take a few seconds longer, because the Java runtime environment has to be started as well.</paragraph>
+  <section id="relatedtopics">
+  <embed href="text/shared/guide/assistive.xhp#assistive"/>
+  <paragraph l10n="U" role="paragraph" id="par_id3149578" xml-lang="en-US" oldref="9"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link name="%PRODUCTNAME - View" href="text/shared/optionen/01010800.xhp"><item type="productname">%PRODUCTNAME</item> - View</link></paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150084" xml-lang="en-US" oldref="10"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link name="%PRODUCTNAME - Appearance" href="text/shared/optionen/01012000.xhp"><item type="productname">%PRODUCTNAME</item> - Appearance</link></paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150771" xml-lang="en-US" oldref="11"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link name="%PRODUCTNAME - Accessibility" href="text/shared/optionen/01013000.xhp"><item type="productname">%PRODUCTNAME</item> - Accessibility</link></paragraph>
+  <embed href="text/shared/guide/keyboard.xhp#keyboard"/>
+  <embed href="text/shared/04/01010000.xhp#common_keys"/>
+	</section>
+ </body>
+</helpdocument>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105120100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Column Width</title>
+<filename>/text/swriter/01/05120100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-04-11T13:17:39">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:SetColumnWidth" id="bm_id7860324" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SetColumnWidth" id="bm_id3149875" localize="false"/>
+<paragraph role="heading" id="hd_id3150345" xml-lang="en-US" level="1" l10n="U" oldref="1">Column Width</paragraph>
+<paragraph role="paragraph" id="par_id3149503" xml-lang="en-US" l10n="U" oldref="2"><variable id="breitetext"><ahelp hid=".uno:SetColumnWidth">Changes the width of the selected column(s).</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#breites"/>
+</section>
+<paragraph role="heading" id="hd_id3083452" xml-lang="en-US" level="2" l10n="U" oldref="3">Width</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:DLG_COL_WIDTH:ED_COL" id="bm_id3149350" localize="false"/>
+<paragraph role="heading" id="hd_id3146323" xml-lang="en-US" level="3" l10n="U" oldref="4">Columns</paragraph>
+<paragraph role="paragraph" id="par_id3145822" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="SW:NUMERICFIELD:DLG_COL_WIDTH:ED_COL">Enter the column number of the column you want to change the width of.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:DLG_COL_WIDTH:ED_WIDTH" id="bm_id3150019" localize="false"/>
+<paragraph role="heading" id="hd_id3154502" xml-lang="en-US" level="3" l10n="U" oldref="6">Width</paragraph>
+<paragraph role="paragraph" id="par_id3149880" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SW:METRICFIELD:DLG_COL_WIDTH:ED_WIDTH">Enter the width that you want for the selected column(s).</ahelp><comment>removed 2 sentences, see #i64155</comment></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,86 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_document_XDocumentRevisionListPersistence_idl__
+#define __com_sun_star_document_XDocumentRevisionListPersistence_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_embed_XStorage_idl__
+#include <com/sun/star/embed/XStorage.idl>
+#endif
+
+#ifndef __com_sun_star_util_RevisionTag_idl__
+#include <com/sun/star/util/RevisionTag.idl>
+#endif
+
+#ifndef __com_sun_star_io_IOException_idl__
+#include <com/sun/star/io/IOException.idl>
+#endif
+
+#ifndef __com_sun_star_container_NoSuchElementException_idl__
+#include <com/sun/star/io/NoSuchElementException.idl>
+#endif
+
+#ifndef __com_sun_star_uno_Exception_idl__
+#include <com/sun/star/uno/Exception.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module document {
+
+//=============================================================================
+/** interface to load or store a list of document revisions from or to a document
+    using the packed XML file format
+ */
+interface XDocumentRevisionListPersistence: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+     /** Loads a list of available revisions from a storage
+        <p>
+        This method does not load any revision itself
+        </p>
+	 */
+    sequence < ::com::sun::star::util::RevisionTag > load( [in] ::com::sun::star::embed::XStorage Storage)
+        raises( com::sun::star::container::NoSuchElementException,
+                com::sun::star::io::IOException,
+                com::sun::star::uno::Exception );
+
+	//-------------------------------------------------------------------------
+     /** Stores a list of available revisions to a storage
+        <p>
+        This method does not store revisions themselves
+        </p>
+	 */
+    void store( [in] ::com::sun::star::embed::XStorage Storage, [in] sequence < ::com::sun::star::util::RevisionTag > List )
+        raises( com::sun::star::io::IOException,
+                com::sun::star::uno::Exception );
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<component loader="com.sun.star.loader.SharedLibrary"
+    xmlns="http://openoffice.org/2010/uno-components">
+  <implementation name="com.sun.star.comp.frame.SessionListener">
+    <service name="com.sun.star.frame.SessionListener"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.AddonsToolBarFactory">
+    <service name="com.sun.star.ui.ToolBarFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.AutoRecovery">
+    <service name="com.sun.star.frame.AutoRecovery"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.BackingComp">
+    <service name="com.sun.star.frame.StartModule"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ControlMenuController">
+    <service name="com.sun.star.frame.PopupMenuController"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.Desktop">
+    <service name="com.sun.star.frame.Desktop"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.DocumentAcceleratorConfiguration">
+    <service name="com.sun.star.ui.DocumentAcceleratorConfiguration"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.Frame">
+    <service name="com.sun.star.frame.Frame"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.GlobalAcceleratorConfiguration">
+    <service name="com.sun.star.ui.GlobalAcceleratorConfiguration"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ImageManager">
+    <service name="com.sun.star.ui.ImageManager"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.JobExecutor">
+    <service name="com.sun.star.task.JobExecutor"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.LangSelectionStatusbarController">
+    <service name="com.sun.star.frame.StatusbarController"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.LayoutManager">
+    <service name="com.sun.star.frame.LayoutManager"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.MenuBarFactory">
+    <service name="com.sun.star.ui.UIElementFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ModuleAcceleratorConfiguration">
+    <service name="com.sun.star.ui.ModuleAcceleratorConfiguration"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ModuleManager">
+    <service name="com.sun.star.frame.ModuleManager"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ModuleUIConfigurationManager">
+    <service name="com.sun.star.ui.ModuleUIConfigurationManager"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ModuleUIConfigurationManagerSupplier">
+    <service name="com.sun.star.ui.ModuleUIConfigurationManagerSupplier"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ObjectMenuController">
+    <service name="com.sun.star.frame.PopupMenuController"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.PathSettings">
+    <service name="com.sun.star.util.PathSettings"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.PathSubstitution">
+    <service name="com.sun.star.util.PathSubstitution"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.PopupMenuControllerFactory">
+    <service name="com.sun.star.frame.PopupMenuControllerFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.RecentFilesMenuController">
+    <service name="com.sun.star.frame.PopupMenuController"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.StatusBarControllerFactory">
+    <service name="com.sun.star.frame.StatusbarControllerFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.StatusBarFactory">
+    <service name="com.sun.star.ui.StatusBarFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.StatusIndicatorFactory">
+    <service name="com.sun.star.task.StatusIndicatorFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.TaskCreator">
+    <service name="com.sun.star.frame.TaskCreator"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ToolBarControllerFactory">
+    <service name="com.sun.star.frame.ToolBarControllerFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.ToolBarFactory">
+    <service name="com.sun.star.ui.ToolBarFactory"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.UICategoryDescription">
+    <service name="com.sun.star.ui.UICategoryDescription"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.UICommandDescription">
+    <service name="com.sun.star.frame.UICommandDescription"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.UIConfigurationManager">
+    <service name="com.sun.star.ui.UIConfigurationManager"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.UIElementFactoryManager">
+    <service name="com.sun.star.ui.UIElementFactoryManager"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.URLTransformer">
+    <service name="com.sun.star.util.URLTransformer"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.WindowContentFactoryManager">
+    <service name="com.sun.star.ui.WindowContentFactoryManager"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.WindowStateConfiguration">
+    <service name="com.sun.star.ui.WindowStateConfiguration"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.jobs.JobDispatch">
+    <service name="com.sun.star.frame.ProtocolHandler"/>
+  </implementation>
+  <implementation name="com.sun.star.comp.framework.TabWindowService">
+    <service name="com.sun.star.ui.dialogs.TabContainerWindow"/>
+  </implementation>
+</component>

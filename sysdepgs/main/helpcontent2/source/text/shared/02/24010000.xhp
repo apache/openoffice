@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0224010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Graphic Filter Bar</title>
+<filename>/text/shared/02/24010000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-10-25T15:46:20">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="filter">
+<!-- removed HID SID_GRAFTBX_FILTERS -->
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterToolbox" id="bm_id3153255" localize="false"/>
+<paragraph role="heading" id="hd_id3151299" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/shared/02/24010000.xhp" name="Graphic Filter Bar">Graphic Filter Bar</link></paragraph>
+<paragraph role="paragraph" id="par_id3156183" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".uno:GraphicFilterToolbox">This icon on the <emph>Picture</emph> bar opens the <emph>Graphic Filter</emph> bar, where you can use various filters on the selected picture.</ahelp></paragraph>
+</section>
+<section id="syfilter">
+<table id="tbl_id3151315">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154673" xml-lang="en-US" l10n="E">
+<image id="img_id3152924" src="res/commandimagelist/sc_graphicfiltertoolbox.png" width="0.222inch" height="0.222inch"><alt id="alt_id3152924" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155805" xml-lang="en-US" l10n="U" oldref="3">Filter</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+<!-- removed HID SID_GRAFFILTER_INVERT -->
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterInvert" id="bm_id6161795" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterInvert" id="bm_id3156426" localize="false"/>
+<paragraph role="heading" id="hd_id3155535" xml-lang="en-US" level="2" l10n="C">Invert</paragraph>
+<paragraph role="paragraph" id="par_id3145345" xml-lang="en-US" l10n="CHG" oldref="5"><ahelp hid=".uno:GraphicFilterInvert">Inverts the color values of a color image, or the brightness values of a grayscale image. Apply the filter again to revert the effect.</ahelp></paragraph>
+<table id="tbl_id3143267">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153681" xml-lang="en-US" l10n="E">
+<image id="img_id3145313" src="res/commandimagelist/sc_graphicfilterinvert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145313" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147275" xml-lang="en-US" l10n="U" oldref="6">Invert</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<!-- removed HID SID_GRAFFILTER_SMOOTH -->
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSmooth" id="bm_id6076636" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSmooth" id="bm_id3149578" localize="false"/>
+<paragraph role="heading" id="hd_id3153541" xml-lang="en-US" level="2" l10n="C">Smooth</paragraph>
+<paragraph role="paragraph" id="par_id3159399" xml-lang="en-US" l10n="CHG" oldref="8"><ahelp hid=".uno:GraphicFilterSmooth">Softens or blurs the image by applying a low pass filter.</ahelp><comment>low pass filter with a kernel of: 1-2-1, 2-5-2, 1-2-1</comment></paragraph>
+<table id="tbl_id3149164">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149514" xml-lang="en-US" l10n="E">
+<image id="img_id3154285" src="res/commandimagelist/sc_graphicfiltersmooth.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154285" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148492" xml-lang="en-US" l10n="U" oldref="9">Smooth</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<!-- removed HID SID_GRAFFILTER_SHARPEN -->
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSharpen" id="bm_id4973428" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSharpen" id="bm_id3155449" localize="false"/>
+<paragraph role="heading" id="hd_id3156329" xml-lang="en-US" level="2" l10n="C">Sharpen</paragraph>
+<paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="CHG" oldref="11"><ahelp hid=".uno:GraphicFilterSharpen">Sharpens the image by applying a high pass filter.</ahelp><comment>high pass filter with a kernel of: -1/-1/-1, -1/16/-1, -1/-1/-1</comment></paragraph>
+<table id="tbl_id3153716">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153480" xml-lang="en-US" l10n="E">
+<image id="img_id3156023" src="res/commandimagelist/sc_graphicfiltersharpen.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156023" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="12">Sharpen</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<!-- removed HID SID_GRAFFILTER_REMOVENOISE -->
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterRemoveNoise" id="bm_id4672819" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterRemoveNoise" id="bm_id3156435" localize="false"/>
+<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="2" l10n="C">Remove Noise</paragraph>
+<paragraph role="paragraph" id="par_id3150866" xml-lang="en-US" l10n="CHG" oldref="14"><ahelp hid=".uno:GraphicFilterRemoveNoise">Removes noise by applying a median filter.</ahelp><comment>See i70055</comment></paragraph>
+<table id="tbl_id3153524">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="E">
+<image id="img_id3153797" src="res/commandimagelist/sc_graphicfilterremovenoise.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153797" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149810" xml-lang="en-US" l10n="U" oldref="15">Remove Noise</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSolarize" id="bm_id6035997" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSolarize" id="bm_id3154910" localize="false"/>
+<paragraph role="heading" id="hd_id3144760" xml-lang="en-US" level="2" l10n="C">Solarization</paragraph>
+<paragraph role="paragraph" id="par_id3159150" xml-lang="en-US" l10n="U" oldref="74"><ahelp hid=".uno:GraphicFilterSolarize">Opens a dialog for defining solarization. Solarization refers to an effect that looks like what can happen when there is too much light during photo development. The colors become partly inverted.</ahelp></paragraph>
+<table id="tbl_id3143231">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148453" xml-lang="en-US" l10n="E">
+<image id="img_id3154329" src="res/commandimagelist/sc_graphicfiltersolarize.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154329" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="75">Solarization</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3145785" xml-lang="en-US" level="3" l10n="U" oldref="76">Parameters</paragraph>
+<paragraph role="paragraph" id="par_id3147352" xml-lang="en-US" l10n="U" oldref="77">Specifies the degree and type of solarization.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVX_GRFFILTER_DLG_SOLARIZE:DLG_FILTERSOLARIZE_MTR_THRESHOLD" id="bm_id3151353" localize="false"/>
+<paragraph role="heading" id="hd_id3153370" xml-lang="en-US" level="3" l10n="U" oldref="78">Threshold Value</paragraph>
+<paragraph role="paragraph" id="par_id3083443" xml-lang="en-US" l10n="U" oldref="79"><ahelp hid="SVX_METRICFIELD_RID_SVX_GRFFILTER_DLG_SOLARIZE_DLG_FILTERSOLARIZE_MTR_THRESHOLD">Specifies the degree of brightness, in percent, above which the pixels are to be solarized.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVX_GRFFILTER_DLG_SOLARIZE:DLG_FILTERSOLARIZE_CBX_INVERT" id="bm_id3147318" localize="false"/>
+<paragraph role="heading" id="hd_id3152596" xml-lang="en-US" level="3" l10n="U" oldref="80">Invert</paragraph>
+<paragraph role="paragraph" id="par_id3146921" xml-lang="en-US" l10n="CHG" oldref="81"><ahelp hid="SVX_CHECKBOX_RID_SVX_GRFFILTER_DLG_SOLARIZE_DLG_FILTERSOLARIZE_CBX_INVERT">Specifies to also invert all pixels.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSepia" id="bm_id2629364" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSepia" id="bm_id3150105" localize="false"/>
+<paragraph role="heading" id="hd_id3150875" xml-lang="en-US" level="2" l10n="C">Aging</paragraph>
+<paragraph role="paragraph" id="par_id3163712" xml-lang="en-US" l10n="CHG" oldref="83"><ahelp hid=".uno:GraphicFilterSepia">All pixels are set to their gray values, and then the green and blue color channels are reduced by the amount you specify. The red color channel is not changed.</ahelp></paragraph>
+<table id="tbl_id3163717">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153139" xml-lang="en-US" l10n="E">
+<image id="img_id3159196" src="res/commandimagelist/sc_graphicfiltersepia.png" width="0.222inch" height="0.222inch"><alt id="alt_id3159196" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145365" xml-lang="en-US" l10n="U" oldref="72">Aging</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVX_GRFFILTER_DLG_SEPIA:DLG_FILTERSEPIA_MTR_SEPIA" id="bm_id3151116" localize="false"/>
+<paragraph role="heading" id="hd_id3156443" xml-lang="en-US" level="3" l10n="U" oldref="84">Aging Degree</paragraph>
+<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid="SVX_METRICFIELD_RID_SVX_GRFFILTER_DLG_SEPIA_DLG_FILTERSEPIA_MTR_SEPIA">Defines the intensity of aging, in percent. At 0% you see the gray values of all pixels. At 100% only the red color channel remains.</ahelp><comment>ufi: cannot see any difference between 0% and 100% aging here...</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterPoster" id="bm_id6359144" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterPoster" id="bm_id3151052" localize="false"/>
+<paragraph role="heading" id="hd_id3146119" xml-lang="en-US" level="2" l10n="C">Posterize</paragraph>
+<paragraph role="paragraph" id="par_id3147396" xml-lang="en-US" l10n="U" oldref="87"><ahelp hid=".uno:GraphicFilterPoster">Opens a dialog to determine the number of poster colors.</ahelp> This effect is based on the reduction of the number of colors. It makes photos look like paintings.</paragraph>
+<table id="tbl_id3149487">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155851" xml-lang="en-US" l10n="E">
+<image id="img_id3150658" src="res/commandimagelist/sc_graphicfilterposter.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150658" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156284" xml-lang="en-US" l10n="U" oldref="88">Posterize</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVX_GRFFILTER_DLG_POSTER:DLG_FILTERPOSTER_NUM_POSTER" id="bm_id3148878" localize="false"/>
+<paragraph role="heading" id="hd_id3156736" xml-lang="en-US" level="3" l10n="U" oldref="89">Poster Colors</paragraph>
+<paragraph role="paragraph" id="par_id3151280" xml-lang="en-US" l10n="U" oldref="90"><ahelp hid="SVX_NUMERICFIELD_RID_SVX_GRFFILTER_DLG_POSTER_DLG_FILTERPOSTER_NUM_POSTER">Specifies the number of colors to which the image is to be reduced.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterPopart" id="bm_id5192722" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterPopart" id="bm_id3146928" localize="false"/>
+<paragraph role="heading" id="hd_id3144767" xml-lang="en-US" level="2" l10n="C">Pop Art</paragraph>
+<paragraph role="paragraph" id="par_id3153512" xml-lang="en-US" l10n="CHG" oldref="92"><ahelp hid=".uno:GraphicFilterPopart">Converts an image to a pop-art format.</ahelp></paragraph>
+<table id="tbl_id3154510">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148495" xml-lang="en-US" l10n="E">
+<image id="img_id3156437" src="res/commandimagelist/sc_graphicfilterpopart.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156437" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151207" xml-lang="en-US" l10n="U" oldref="93">Pop Art</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSobel" id="bm_id7462566" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSobel" id="bm_id3154272" localize="false"/>
+<paragraph role="heading" id="hd_id3153003" xml-lang="en-US" level="2" l10n="C">Charcoal Sketch</paragraph>
+<paragraph role="paragraph" id="par_id3152971" xml-lang="en-US" l10n="CHG" oldref="96"><ahelp hid=".uno:GraphicFilterSobel">Displays the image as a charcoal sketch. The contours of the image are drawn in black, and the original colors are suppressed.</ahelp></paragraph>
+<table id="tbl_id3146914">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150327" xml-lang="en-US" l10n="E">
+<image id="img_id3154636" src="res/commandimagelist/sc_graphicfiltersobel.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154636" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3163825" xml-lang="en-US" l10n="U" oldref="97">Charcoal Sketch</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterRelief" id="bm_id7726141" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterRelief" id="bm_id3153356" localize="false"/>
+<paragraph role="heading" id="hd_id3154360" xml-lang="en-US" level="2" l10n="C">Relief</paragraph>
+<paragraph role="paragraph" id="par_id3153714" xml-lang="en-US" l10n="U" oldref="120"><ahelp hid=".uno:GraphicFilterRelief">Displays a dialog for creating reliefs.</ahelp> You can choose the position of the imaginary light source that determines the type of shadow created, and how the graphic image looks in relief.</paragraph>
+<table id="tbl_id3153735">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154756" xml-lang="en-US" l10n="E">
+<image id="img_id3154256" src="res/commandimagelist/sc_graphicfilterrelief.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154256" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150043" xml-lang="en-US" l10n="U" oldref="100">Relief</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3166447" xml-lang="en-US" level="3" l10n="U" oldref="101">Light Source</paragraph>
+<paragraph role="paragraph" id="par_id3145295" xml-lang="en-US" l10n="U" oldref="102">Specifies the light source position. A dot represents the light source.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterMosaic" id="bm_id4595573" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterMosaic" id="bm_id3154967" localize="false"/>
+<paragraph role="heading" id="hd_id3146919" xml-lang="en-US" level="2" l10n="C">Mosaic</paragraph>
+<paragraph role="paragraph" id="par_id3163807" xml-lang="en-US" l10n="U" oldref="104"><ahelp hid=".uno:GraphicFilterMosaic">Joins small groups of pixels into rectangular areas of the same color.</ahelp> The larger the individual rectangles are, the fewer details the graphic image has.</paragraph>
+<table id="tbl_id3147344">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146316" xml-lang="en-US" l10n="E">
+<image id="img_id3155939" src="res/commandimagelist/sc_graphicfiltermosaic.png" width="0.222inch" height="0.222inch"><alt id="alt_id3155939" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155901" xml-lang="en-US" l10n="U" oldref="105">Mosaic</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3153922" xml-lang="en-US" level="3" l10n="U" oldref="106">Element resolution</paragraph>
+<paragraph role="paragraph" id="par_id3150646" xml-lang="en-US" l10n="U" oldref="107">Determines the number of pixels to be joined into rectangles.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVX_GRFFILTER_DLG_MOSAIC:DLG_FILTERMOSAIC_MTR_WIDTH" id="bm_id3145790" localize="false"/>
+<paragraph role="heading" id="hd_id3159336" xml-lang="en-US" level="3" l10n="U" oldref="108">Width</paragraph>
+<paragraph role="paragraph" id="par_id3150939" xml-lang="en-US" l10n="U" oldref="109"><ahelp hid="SVX_METRICFIELD_RID_SVX_GRFFILTER_DLG_MOSAIC_DLG_FILTERMOSAIC_MTR_WIDTH">Defines the width of the individual tiles.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVX_GRFFILTER_DLG_MOSAIC:DLG_FILTERMOSAIC_MTR_HEIGHT" id="bm_id3147131" localize="false"/>
+<paragraph role="heading" id="hd_id3150827" xml-lang="en-US" level="3" l10n="U" oldref="110">Height</paragraph>
+<paragraph role="paragraph" id="par_id3149735" xml-lang="en-US" l10n="U" oldref="111"><ahelp hid="SVX_METRICFIELD_RID_SVX_GRFFILTER_DLG_MOSAIC_DLG_FILTERMOSAIC_MTR_HEIGHT">Defines the height of the individual tiles.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVX_GRFFILTER_DLG_MOSAIC:DLG_FILTERMOSAIC_CBX_EDGES" id="bm_id3154573" localize="false"/>
+<paragraph role="heading" id="hd_id3157972" xml-lang="en-US" level="3" l10n="U" oldref="121">Enhance edges</paragraph>
+<paragraph role="paragraph" id="par_id3151216" xml-lang="en-US" l10n="U" oldref="122"><ahelp hid="SVX_CHECKBOX_RID_SVX_GRFFILTER_DLG_MOSAIC_DLG_FILTERMOSAIC_CBX_EDGES">Enhances, or sharpens, the edges of the object.</ahelp></paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/guide/insert_bitmap.xhp#insert_bitmap"/>
+</section>
+</body>
+</helpdocument>

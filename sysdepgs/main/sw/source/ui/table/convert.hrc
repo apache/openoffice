@@ -1,0 +1,46 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define CB_TAB			1
+#define CB_SEMI			3
+#define CB_PARA			4
+#define FL_DELIM                5
+#define RB_OTHER		6
+#define ED_OTHER		7
+#define CB_KEEPCOLUMN	8
+#define STR_CONVERT_TEXT_TABLE		9
+#define CB_HEADER			13
+#define CB_REPEAT_HEADER	14
+#define CB_DONT_SPLIT       15
+#define CB_BORDER			16
+#define FL_OPTIONS                      17
+#define FT_REPEAT_HEADER	18
+#define NF_REPEAT_HEADER	19
+
+#define BT_OK 			100
+#define BT_CANCEL 		101
+#define BT_AUTOFORMAT	102
+#define BT_HELP 		103
+#define WIN_REPEAT_HEADER   104
+//IAccessibility2 Implementation 2009-----
+#define	STR_SYMBOL		105
+//-----IAccessibility2 Implementation 2009

@@ -1,0 +1,79 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef com_sun_star_chart2_data_LabeledDataSequence_idl
+#define com_sun_star_chart2_data_LabeledDataSequence_idl
+
+#include <com/sun/star/util/XCloneable.idl>
+#include <com/sun/star/util/XModifyBroadcaster.idl>
+
+#include <com/sun/star/chart2/data/XLabeledDataSequence.idl>
+
+module com
+{
+module sun
+{
+module star
+{
+module chart2
+{
+module data
+{
+
+/** describes a container for a sequence pair of value-sequences, one
+    for a label and one for the associated data.
+  */
+service LabeledDataSequence
+{
+    /** provides read- and write-access to the underlying data.
+     */
+    interface XLabeledDataSequence;
+
+    /** is used to broadcast when the sequence for labels or values
+        change their identity, or their content changes.
+
+        <p>The LabeledDataSequence should add itself at its
+        XDataSequences for values and labels, and forward any change
+        events coming from there.</p>
+     */
+    interface com::sun::star::util::XModifyBroadcaster;
+
+    /** Allows creating copies of data sequences.  If this interface
+        is not supported, the same object will be shared if used by
+        multiple objects.
+
+        <p>If a <type>LabeledDataSequence</type> is cloned, it has to
+        query its contents for the
+        <type scope="com::sun::star::util">XCloneable</type> interface
+        and use it if available.</p>
+    */
+    [optional] interface ::com::sun::star::util::XCloneable;
+};
+
+} ; // data
+} ; // chart2
+} ; // com
+} ; // sun
+} ; // star
+
+
+#endif

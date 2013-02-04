@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0105070100xml" indexer="include">
+<title id="tit" xml-lang="en-US">Align Left</title>
+<filename>/text/shared/01/05070100.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="links">
+<bookmark xml-lang="en-US" branch="hid/.uno:ObjectAlignLeft" id="bm_id4256888" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ObjectAlignLeft" id="bm_id3147294" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AlignLeft" id="bm_id4286842" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AlignLeft" id="bm_id3155619" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AlignLeft" id="bm_id0801200803221452" localize="false"/>
+<paragraph role="heading" id="hd_id3147069" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05070100.xhp" name="Align Left">Align Left</link></paragraph>
+<paragraph role="paragraph" id="par_id3160463" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".uno:AlignLeft">Aligns the left edges of the selected objects. If only one object is selected in Draw or Impress, the left edge of the object is aligned to the left page margin.</ahelp></paragraph><comment>UFI: this help id .uno:alignleft is also called from Calc, where it has a different function</comment>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040501.xhp#links"/>
+</section>
+<paragraph role="paragraph" id="par_id3150146" xml-lang="en-US" l10n="U" oldref="4">Objects are aligned to the left edge of the leftmost object in the selection.</paragraph>
+<paragraph role="note" id="par_id3150445" xml-lang="en-US" l10n="U" oldref="3"><variable id="mehrfachselektion">To align the individual objects in a group, <switchinline select="appl"><caseinline select="CALC">choose <emph>Format - Group - Edit Group</emph>
+</caseinline><defaultinline>double-click</defaultinline></switchinline> to enter the group, select the objects, right-click, and then choose an alignment option. 
+</variable></paragraph>
+</body>
+</helpdocument>
