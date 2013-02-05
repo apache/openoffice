@@ -233,30 +233,30 @@ namespace drawinglayer
 			GDIMetaFile& o_rContentMetafile)
         {
             // Prepare VDev, MetaFile and connections
-			OutputDevice* pLastOutputDevice = mpOutputDevice;
+			OutputDevice& rLastOutputDevice = getOutputDevice();
             GDIMetaFile* pLastMetafile = mpMetaFile;
 			basegfx::B2DRange aPrimitiveRange(primitive2d::getB2DRangeFromPrimitive2DSequence(rContent, getViewInformation2D()));
 			
 			// transform primitive range with current transformation (e.g shadow offset)
-			aPrimitiveRange.transform(maCurrentTransformation);
+			aPrimitiveRange.transform(getCurrentTransformation());
 	
 			const Rectangle aPrimitiveRectangle(
 				basegfx::fround(aPrimitiveRange.getMinX()), basegfx::fround(aPrimitiveRange.getMinY()),
 				basegfx::fround(aPrimitiveRange.getMaxX()), basegfx::fround(aPrimitiveRange.getMaxY()));
 			VirtualDevice aContentVDev;
-			MapMode aNewMapMode(pLastOutputDevice->GetMapMode());
+			MapMode aNewMapMode(rLastOutputDevice.GetMapMode());
 			
-			mpOutputDevice = &aContentVDev;
+			pushOutputDevice(aContentVDev);
             mpMetaFile = &o_rContentMetafile;
 			aContentVDev.EnableOutput(false);
-			aContentVDev.SetMapMode(pLastOutputDevice->GetMapMode());
+			aContentVDev.SetMapMode(rLastOutputDevice.GetMapMode());
 			o_rContentMetafile.Record(&aContentVDev);
-			aContentVDev.SetLineColor(pLastOutputDevice->GetLineColor());
-			aContentVDev.SetFillColor(pLastOutputDevice->GetFillColor());
-			aContentVDev.SetFont(pLastOutputDevice->GetFont());
-			aContentVDev.SetDrawMode(pLastOutputDevice->GetDrawMode());
-			aContentVDev.SetSettings(pLastOutputDevice->GetSettings());
-			aContentVDev.SetRefPoint(pLastOutputDevice->GetRefPoint());
+			aContentVDev.SetLineColor(rLastOutputDevice.GetLineColor());
+			aContentVDev.SetFillColor(rLastOutputDevice.GetFillColor());
+			aContentVDev.SetFont(rLastOutputDevice.GetFont());
+			aContentVDev.SetDrawMode(rLastOutputDevice.GetDrawMode());
+			aContentVDev.SetSettings(rLastOutputDevice.GetSettings());
+			aContentVDev.SetRefPoint(rLastOutputDevice.GetRefPoint());
 
             // dump to MetaFile
 			process(rContent);
@@ -267,7 +267,7 @@ namespace drawinglayer
 			aNewMapMode.SetOrigin(aPrimitiveRectangle.TopLeft());
 			o_rContentMetafile.SetPrefMapMode(aNewMapMode);
 			o_rContentMetafile.SetPrefSize(aPrimitiveRectangle.GetSize());
-			mpOutputDevice = pLastOutputDevice;
+			popOutputDevice();
             mpMetaFile = pLastMetafile;
 
             return aPrimitiveRectangle;
@@ -287,8 +287,8 @@ namespace drawinglayer
 			else
 			{
 				// use color modifier to influence start/end color of gradient
-			    o_rVCLGradient.SetStartColor(Color(maBColorModifierStack.getModifiedColor(rFiGrAtt.getStartColor())));
-			    o_rVCLGradient.SetEndColor(Color(maBColorModifierStack.getModifiedColor(rFiGrAtt.getEndColor())));
+			    o_rVCLGradient.SetStartColor(Color(getBColorModifierStack().getModifiedColor(rFiGrAtt.getStartColor())));
+			    o_rVCLGradient.SetEndColor(Color(getBColorModifierStack().getModifiedColor(rFiGrAtt.getEndColor())));
 			}
 
             o_rVCLGradient.SetAngle(static_cast< sal_uInt16 >(rFiGrAtt.getAngle() * (1.0 / F_PI1800)));
@@ -380,12 +380,12 @@ namespace drawinglayer
 				}
 				else if(pLineAttribute)
 				{
-					aStrokeColor = maBColorModifierStack.getModifiedColor(pLineAttribute->getColor());
+					aStrokeColor = getBColorModifierStack().getModifiedColor(pLineAttribute->getColor());
 				}
 
 				// It IS needed to record the stroke color at all in the metafile,
 				// SvtGraphicStroke has NO entry for stroke color(!)
-				mpOutputDevice->SetLineColor(Color(aStrokeColor));
+				getOutputDevice().SetLineColor(Color(aStrokeColor));
 
 				if(!rB2DPolygon.isClosed())
 				{
@@ -421,8 +421,8 @@ namespace drawinglayer
 
 				if(pLineAttribute)
 				{
-					// pre-fill fLineWidth #119198# Need to apply maCurrentTransformation, too (!)
-					const basegfx::B2DVector aDiscreteUnit(maCurrentTransformation * basegfx::B2DVector(pLineAttribute->getWidth(), 0.0));
+					// pre-fill fLineWidth #119198# Need to apply getCurrentTransformation(), too (!)
+					const basegfx::B2DVector aDiscreteUnit(getCurrentTransformation() * basegfx::B2DVector(pLineAttribute->getWidth(), 0.0));
 					fLineWidth = aDiscreteUnit.getLength();
 
 					// pre-fill fMiterLength
@@ -492,9 +492,9 @@ namespace drawinglayer
 				// add the transformation to SvtGraphicStroke and to handle it there
 				basegfx::B2DPolygon aB2DPolygon(rB2DPolygon);
 
-				aB2DPolygon.transform(maCurrentTransformation);
-				aStartArrow.transform(maCurrentTransformation);
-				aEndArrow.transform(maCurrentTransformation);
+				aB2DPolygon.transform(getCurrentTransformation());
+				aStartArrow.transform(getCurrentTransformation());
+				aEndArrow.transform(getCurrentTransformation());
 
 				pRetval = new SvtGraphicStroke(
 					Polygon(aB2DPolygon),
@@ -545,9 +545,9 @@ namespace drawinglayer
 			mpPDFExtOutDevData(dynamic_cast< vcl::PDFExtOutDevData* >(rOutDev.GetExtOutDevData()))
 		{
 			OSL_ENSURE(rOutDev.GetConnectMetaFile(), "VclMetafileProcessor2D: Used on OutDev which has no MetaFile Target (!)");
-			// draw to logic coordinates, do not initialize maCurrentTransformation to viewTransformation
+			// draw to logic coordinates, do not initialize getCurrentTransformation() to viewTransformation
             // but only to ObjectTransformation. Do not change MapMode of destination.
-			maCurrentTransformation = rViewInformation.getObjectTransformation();
+			setCurrentTransformation(rViewInformation.getObjectTransformation());
 		}
 
 		VclMetafileProcessor2D::~VclMetafileProcessor2D()
@@ -887,7 +887,7 @@ namespace drawinglayer
                                 pPDFControl->Location = aRectLogic;
                                 
                                 Size aFontSize(pPDFControl->TextFont.GetSize());
-                                aFontSize = mpOutputDevice->LogicToLogic(aFontSize, MapMode(MAP_POINT), mpOutputDevice->GetMapMode());
+                                aFontSize = getOutputDevice().LogicToLogic(aFontSize, MapMode(MAP_POINT), getOutputDevice().GetMapMode());
                                 pPDFControl->TextFont.SetSize(aFontSize);
                                 
                                 mpPDFExtOutDevData->BeginStructureElement(vcl::PDFWriter::Form);
@@ -915,7 +915,7 @@ namespace drawinglayer
                                 // remember old graphics and create new
 					            uno::Reference< awt::XView > xControlView(rXControl, uno::UNO_QUERY_THROW);
                                 const uno::Reference< awt::XGraphics > xOriginalGraphics(xControlView->getGraphics());
-					            const uno::Reference< awt::XGraphics > xNewGraphics(mpOutputDevice->CreateUnoGraphics());
+					            const uno::Reference< awt::XGraphics > xNewGraphics(getOutputDevice().CreateUnoGraphics());
 
                                 if(xNewGraphics.is())
                                 {
@@ -1070,14 +1070,14 @@ namespace drawinglayer
 					// const primitive2d::TextDecoratedPortionPrimitive2D* pTextDecoratedCandidate = dynamic_cast< const primitive2d::TextDecoratedPortionPrimitive2D* >(&rCandidate);
 
 					// Adapt evtl. used special DrawMode
-					const sal_uInt32 nOriginalDrawMode(mpOutputDevice->GetDrawMode());
+					const sal_uInt32 nOriginalDrawMode(getOutputDevice().GetDrawMode());
 					adaptTextToFillDrawMode();
 
 					// directdraw of text simple portion; use default processing
 					RenderTextSimpleOrDecoratedPortionPrimitive2D(rTextCandidate);
 
 					// restore DrawMode
-					mpOutputDevice->SetDrawMode(nOriginalDrawMode);
+					getOutputDevice().SetDrawMode(nOriginalDrawMode);
 
 					// #i101169# if(pTextDecoratedCandidate)
                     {
@@ -1152,7 +1152,7 @@ namespace drawinglayer
                     {
     					// direct draw of hairline; use default processing
     					// support SvtGraphicStroke MetaCommentAction
-					    const basegfx::BColor aLineColor(maBColorModifierStack.getModifiedColor(rHairlinePrimitive.getBColor()));
+					    const basegfx::BColor aLineColor(getBColorModifierStack().getModifiedColor(rHairlinePrimitive.getBColor()));
                         SvtGraphicStroke* pSvtGraphicStroke = 0;
 
                         // #121267# Not needed, does not give better quality compared with
@@ -1227,13 +1227,13 @@ namespace drawinglayer
 								    &aHairLinePolyPolygon, 0, rStroke.getFullDotDashLen());
 						    }
 
-						    const basegfx::BColor aHairlineColor(maBColorModifierStack.getModifiedColor(rLine.getColor()));
-						    mpOutputDevice->SetLineColor(Color(aHairlineColor));
-						    mpOutputDevice->SetFillColor();
-						    aHairLinePolyPolygon.transform(maCurrentTransformation);
+						    const basegfx::BColor aHairlineColor(getBColorModifierStack().getModifiedColor(rLine.getColor()));
+						    getOutputDevice().SetLineColor(Color(aHairlineColor));
+						    getOutputDevice().SetFillColor();
+						    aHairLinePolyPolygon.transform(getCurrentTransformation());
 							
 							// #i113922# LineWidth needs to be transformed, too
-							const basegfx::B2DVector aDiscreteUnit(maCurrentTransformation * basegfx::B2DVector(rLine.getWidth(), 0.0));
+							const basegfx::B2DVector aDiscreteUnit(getCurrentTransformation() * basegfx::B2DVector(rLine.getWidth(), 0.0));
 							const double fDiscreteLineWidth(aDiscreteUnit.getLength());
 
 							LineInfo aLineInfo(LINE_SOLID, basegfx::fround(fDiscreteLineWidth));
@@ -1311,12 +1311,12 @@ namespace drawinglayer
                         // that lines shall be black; thus change DRAWMODE_WHITEFILL to
                         // DRAWMODE_BLACKFILL during line geometry processing to have line geometry
                         // parts filled black.
-                        const sal_uLong nOldDrawMode(mpOutputDevice->GetDrawMode());
+                        const sal_uLong nOldDrawMode(getOutputDevice().GetDrawMode());
                         const bool bDrawmodeChange(nOldDrawMode & DRAWMODE_WHITEFILL && mnSvtGraphicStrokeCount);
 
                         if(bDrawmodeChange)
                         {
-                            mpOutputDevice->SetDrawMode((nOldDrawMode & ~DRAWMODE_WHITEFILL) | DRAWMODE_BLACKFILL);
+                            getOutputDevice().SetDrawMode((nOldDrawMode & ~DRAWMODE_WHITEFILL) | DRAWMODE_BLACKFILL);
                         }
 
                         // process sub-line geometry (evtl. filled PolyPolygons)
@@ -1324,7 +1324,7 @@ namespace drawinglayer
 
                         if(bDrawmodeChange)
                         {
-                            mpOutputDevice->SetDrawMode(nOldDrawMode);
+                            getOutputDevice().SetDrawMode(nOldDrawMode);
                         }
 
                         // write LineGeometry end marker
@@ -1366,7 +1366,7 @@ namespace drawinglayer
 
                             // calculate transformation. Get real object size, all values in FillGraphicAttribute
 						    // are relative to the unified object
-						    aLocalPolyPolygon.transform(maCurrentTransformation);
+						    aLocalPolyPolygon.transform(getCurrentTransformation());
                             const basegfx::B2DVector aOutlineSize(aLocalPolyPolygon.getB2DRange().getRange());
 
 						    // the scaling needs scale from pixel to logic coordinate system
@@ -1448,7 +1448,7 @@ namespace drawinglayer
 					}
 
                     SvtGraphicFill* pSvtGraphicFill = 0;
-				    aLocalPolyPolygon.transform(maCurrentTransformation);
+				    aLocalPolyPolygon.transform(getCurrentTransformation());
 
 				    if(!mnSvtGraphicFillCount && aLocalPolyPolygon.count())
 				    {
@@ -1514,7 +1514,7 @@ namespace drawinglayer
                         attribute::HATCHSTYLE_DOUBLE == rFillHatchAttribute.getStyle() ? HATCH_DOUBLE :
                         HATCH_TRIPLE);
 
-                    mpOutputDevice->DrawHatch(aToolsPolyPolygon, 
+                    getOutputDevice().DrawHatch(aToolsPolyPolygon, 
                         Hatch(aHatchStyle, 
                             Color(rFillHatchAttribute.getColor()),
                             basegfx::fround(rFillHatchAttribute.getDistance()),
@@ -1529,7 +1529,7 @@ namespace drawinglayer
                     basegfx::B2DVector aScale, aTranslate;
                     double fRotate, fShearX;
 
-                    maCurrentTransformation.decompose(aScale, aTranslate, fRotate, fShearX);
+                    getCurrentTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
 
                     if(!basegfx::fTools::equalZero(fRotate) || !basegfx::fTools::equalZero(fShearX))
                     {
@@ -1567,7 +1567,7 @@ namespace drawinglayer
                         // re-create a VCL-gradient from FillGradientPrimitive2D and the needed tools PolyPolygon
 				        Gradient aVCLGradient;
                         impConvertFillGradientAttributeToVCLGradient(aVCLGradient, rGradientCandidate.getFillGradient(), false);
-		                aLocalPolyPolygon.transform(maCurrentTransformation);
+		                aLocalPolyPolygon.transform(getCurrentTransformation());
                     
 				        // #i82145# ATM VCL printing of gradients using curved shapes does not work,
 				        // i submitted the bug with the given ID to THB. When that task is fixed it is
@@ -1619,7 +1619,7 @@ namespace drawinglayer
 
 				        // call VCL directly; encapsulate with SvtGraphicFill
 				        impStartSvtGraphicFill(pSvtGraphicFill);
-		                mpOutputDevice->DrawGradient(aToolsPolyPolygon, aVCLGradient);
+		                getOutputDevice().DrawGradient(aToolsPolyPolygon, aVCLGradient);
 				        impEndSvtGraphicFill(pSvtGraphicFill);
                     }
 
@@ -1635,8 +1635,8 @@ namespace drawinglayer
                     while(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
                         ;
 
-				    const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(rPolygonCandidate.getBColor()));
-				    aLocalPolyPolygon.transform(maCurrentTransformation);
+				    const basegfx::BColor aPolygonColor(getBColorModifierStack().getModifiedColor(rPolygonCandidate.getBColor()));
+				    aLocalPolyPolygon.transform(getCurrentTransformation());
 
 				    // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
 				    SvtGraphicFill* pSvtGraphicFill = 0;
@@ -1667,8 +1667,8 @@ namespace drawinglayer
 				    }
 
                     // set line and fill color
-				    mpOutputDevice->SetFillColor(Color(aPolygonColor));
-				    mpOutputDevice->SetLineColor();
+				    getOutputDevice().SetFillColor(Color(aPolygonColor));
+				    getOutputDevice().SetLineColor();
 
 				    // call VCL directly; encapsulate with SvtGraphicFill
                     if(bSupportSvtGraphicFill)
@@ -1676,7 +1676,7 @@ namespace drawinglayer
                             impStartSvtGraphicFill(pSvtGraphicFill);
                     }
 				    
-                    mpOutputDevice->DrawPolyPolygon(aLocalPolyPolygon);
+                    getOutputDevice().DrawPolyPolygon(aLocalPolyPolygon);
 				    
                     if(bSupportSvtGraphicFill)
                     {
@@ -1697,7 +1697,7 @@ namespace drawinglayer
 				        if(aMask.count())
 				        {
 							// prepare new mask polygon and rescue current one
-					        aMask.transform(maCurrentTransformation);
+					        aMask.transform(getCurrentTransformation());
                             const basegfx::B2DPolyPolygon aLastClipPolyPolygon(maClipPolyPolygon);
 					        
                             if(maClipPolyPolygon.count())
@@ -1721,8 +1721,8 @@ namespace drawinglayer
                                 // set VCL clip region; subdivide before conversion to tools polygon. Subdivision necessary (!)
                                 // Removed subdivision and fixed in Region::ImplPolyPolyRegionToBandRegionFunc() in VCL where
                                 // the ClipRegion is built from the Polygon. A AdaptiveSubdivide on the source polygon was missing there
-                                mpOutputDevice->Push(PUSH_CLIPREGION);
-                                mpOutputDevice->SetClipRegion(Region(maClipPolyPolygon));
+                                getOutputDevice().Push(PUSH_CLIPREGION);
+                                getOutputDevice().SetClipRegion(Region(maClipPolyPolygon));
 
                                 // recursively paint content
                                 // #121267# Only need to process sub-content when clip polygon is *not* empty.
@@ -1730,7 +1730,7 @@ namespace drawinglayer
                                 process(rMaskCandidate.getChildren());
 
                                 // restore VCL clip region
-                                mpOutputDevice->Pop();
+                                getOutputDevice().Pop();
                             }
 
                             // restore to rescued clip polygon
@@ -1759,14 +1759,14 @@ namespace drawinglayer
 
                     if(!aInvisibleRange.isEmpty())
                     {
-		                aInvisibleRange.transform(maCurrentTransformation);
+		                aInvisibleRange.transform(getCurrentTransformation());
                         const Rectangle aRectLogic(
 	                        (sal_Int32)floor(aInvisibleRange.getMinX()), (sal_Int32)floor(aInvisibleRange.getMinY()), 
 	                        (sal_Int32)ceil(aInvisibleRange.getMaxX()), (sal_Int32)ceil(aInvisibleRange.getMaxY()));
 
-                        mpOutputDevice->SetFillColor();
-		                mpOutputDevice->SetLineColor();
-		                mpOutputDevice->DrawRect(aRectLogic);
+                        getOutputDevice().SetFillColor();
+		                getOutputDevice().SetLineColor();
+		                getOutputDevice().DrawRect(aRectLogic);
                     }
 
 					break;
@@ -1806,7 +1806,7 @@ namespace drawinglayer
 						    if(pPoPoColor && PRIMITIVE2D_ID_POLYPOLYGONCOLORPRIMITIVE2D == pPoPoColor->getPrimitive2DID())
 						    {
 							    // single transparent PolyPolygon identified, use directly
-							    const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(pPoPoColor->getBColor()));
+							    const basegfx::BColor aPolygonColor(getBColorModifierStack().getModifiedColor(pPoPoColor->getBColor()));
 							    basegfx::B2DPolyPolygon aLocalPolyPolygon(pPoPoColor->getB2DPolyPolygon());
                                 
                                 // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
@@ -1815,7 +1815,7 @@ namespace drawinglayer
                                     ;
 
                                 // now transform
-                                aLocalPolyPolygon.transform(maCurrentTransformation);
+                                aLocalPolyPolygon.transform(getCurrentTransformation());
 
 							    // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
 							    SvtGraphicFill* pSvtGraphicFill = 0;
@@ -1847,8 +1847,8 @@ namespace drawinglayer
 
                                 // set line and fill color
 							    const sal_uInt16 nTransPercentVcl((sal_uInt16)basegfx::fround(rUniTransparenceCandidate.getTransparence() * 100.0));
-							    mpOutputDevice->SetFillColor(Color(aPolygonColor));
-							    mpOutputDevice->SetLineColor();
+							    getOutputDevice().SetFillColor(Color(aPolygonColor));
+							    getOutputDevice().SetLineColor();
 
 							    // call VCL directly; encapsulate with SvtGraphicFill
                                 if(bSupportSvtGraphicFill)
@@ -1856,7 +1856,7 @@ namespace drawinglayer
                                     impStartSvtGraphicFill(pSvtGraphicFill);
                                 }
 
-							    mpOutputDevice->DrawTransparent(
+							    getOutputDevice().DrawTransparent(
 								    PolyPolygon(aLocalPolyPolygon), 
 								    nTransPercentVcl);
 							    
@@ -1900,7 +1900,7 @@ namespace drawinglayer
 							    aVCLGradient.SetSteps(2);
     							
 							    // render it to VCL
-							    mpOutputDevice->DrawTransparent(
+							    getOutputDevice().DrawTransparent(
 								    aContentMetafile, aPrimitiveRectangle.TopLeft(), 
 								    aPrimitiveRectangle.GetSize(), aVCLGradient);
 						    }
@@ -1946,7 +1946,7 @@ namespace drawinglayer
                             impConvertFillGradientAttributeToVCLGradient(aVCLGradient, pFiGradient->getFillGradient(), true);
 							
 							// render it to VCL
-							mpOutputDevice->DrawTransparent(
+							getOutputDevice().DrawTransparent(
 								aContentMetafile, aPrimitiveRectangle.TopLeft(), 
 								aPrimitiveRectangle.GetSize(), aVCLGradient);
                         }
@@ -1966,11 +1966,11 @@ namespace drawinglayer
                             // refine to tiling here.
 
 				            basegfx::B2DRange aViewRange(primitive2d::getB2DRangeFromPrimitive2DSequence(rContent, getViewInformation2D()));
-				            aViewRange.transform(maCurrentTransformation);
+				            aViewRange.transform(getCurrentTransformation());
 		                    const Rectangle aRectLogic(
 			                    (sal_Int32)floor(aViewRange.getMinX()), (sal_Int32)floor(aViewRange.getMinY()), 
 			                    (sal_Int32)ceil(aViewRange.getMaxX()), (sal_Int32)ceil(aViewRange.getMaxY()));
-		                    const Rectangle aRectPixel(mpOutputDevice->LogicToPixel(aRectLogic));
+		                    const Rectangle aRectPixel(getOutputDevice().LogicToPixel(aRectLogic));
                             Size aSizePixel(aRectPixel.GetSize());
                     		const Point aEmptyPoint;
                             VirtualDevice aBufferDevice;
@@ -1989,16 +1989,16 @@ namespace drawinglayer
                             if(aBufferDevice.SetOutputSizePixel(aSizePixel))
                             {
                                 // create and set MapModes for target devices
-		                        MapMode aNewMapMode(mpOutputDevice->GetMapMode());
+		                        MapMode aNewMapMode(getOutputDevice().GetMapMode());
 		                        aNewMapMode.SetOrigin(Point(-aRectLogic.Left(), -aRectLogic.Top()));
 		                        aBufferDevice.SetMapMode(aNewMapMode);
 
                                 // prepare view transformation for target renderers
                                 // ATTENTION! Need to apply another scaling because of the potential DPI differences
-                                // between Printer and VDev (mpOutputDevice and aBufferDevice here).
+                                // between Printer and VDev (getOutputDevice() and aBufferDevice here).
                                 // To get the DPI, LogicToPixel from (1,1) from MAP_INCH needs to be used.
                                 basegfx::B2DHomMatrix aViewTransform(aBufferDevice.GetViewTransformation());
-                                const Size aDPIOld(mpOutputDevice->LogicToPixel(Size(1, 1), MAP_INCH));
+                                const Size aDPIOld(getOutputDevice().LogicToPixel(Size(1, 1), MAP_INCH));
                                 const Size aDPINew(aBufferDevice.LogicToPixel(Size(1, 1), MAP_INCH));
                                 const double fDPIXChange((double)aDPIOld.getWidth() / (double)aDPINew.getWidth());
                                 const double fDPIYChange((double)aDPIOld.getHeight() / (double)aDPINew.getHeight());
@@ -2046,7 +2046,7 @@ namespace drawinglayer
 #endif
 
                                 // paint
-                                mpOutputDevice->DrawBitmapEx(
+                                getOutputDevice().DrawBitmapEx(
                                     aRectLogic.TopLeft(),
                                     aRectLogic.GetSize(),
                                     BitmapEx(aBmContent, aBmAlpha));

@@ -69,34 +69,34 @@ namespace drawinglayer
 {
 	namespace processor2d
 	{
-		VclPixelProcessor2D::VclPixelProcessor2D(const geometry::ViewInformation2D& rViewInformation, OutputDevice& rOutDev)
+        VclPixelProcessor2D::VclPixelProcessor2D(const geometry::ViewInformation2D& rViewInformation, OutputDevice& rOutDev)
 		:	VclProcessor2D(rViewInformation, rOutDev)
 		{
-			// prepare maCurrentTransformation matrix with viewTransformation to target directly to pixels
-			maCurrentTransformation = rViewInformation.getObjectToViewTransformation();
+			// prepare getCurrentTransformation() matrix with viewTransformation to target directly to pixels
+			setCurrentTransformation(rViewInformation.getObjectToViewTransformation());
 
             // prepare output directly to pixels
-   			mpOutputDevice->Push(PUSH_MAPMODE);
-    		mpOutputDevice->SetMapMode();
+   			getOutputDevice().Push(PUSH_MAPMODE);
+    		getOutputDevice().SetMapMode();
 
             // react on AntiAliasing settings
             if(getOptionsDrawinglayer().IsAntiAliasing())
             {
-                mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() | ANTIALIASING_ENABLE_B2DDRAW);
+                getOutputDevice().SetAntialiasing(getOutputDevice().GetAntialiasing() | ANTIALIASING_ENABLE_B2DDRAW);
             }
             else
             {
-                mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
+                getOutputDevice().SetAntialiasing(getOutputDevice().GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
             }
         }
 
 		VclPixelProcessor2D::~VclPixelProcessor2D()
 		{
             // restore MapMode
-   			mpOutputDevice->Pop();
+   			getOutputDevice().Pop();
 
             // restore AntiAliasing
-            mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
+            getOutputDevice().SetAntialiasing(getOutputDevice().GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
 		}
 
 		void VclPixelProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate)
@@ -114,9 +114,9 @@ namespace drawinglayer
 
 						if(!renderWrongSpellPrimitive2D(
 							rWrongSpellPrimitive, 
-							*mpOutputDevice, 
-							maCurrentTransformation,
-							maBColorModifierStack))
+							getOutputDevice(), 
+							getCurrentTransformation(),
+							getBColorModifierStack()))
 						{
 							// fallback to decomposition (MetaFile)
 							process(rWrongSpellPrimitive.get2DDecomposition(getViewInformation2D()));
@@ -134,7 +134,7 @@ namespace drawinglayer
                     static bool bForceSimpleTextDecomposition(false);
 
 					// Adapt evtl. used special DrawMode
-					const sal_uInt32 nOriginalDrawMode(mpOutputDevice->GetDrawMode());
+					const sal_uInt32 nOriginalDrawMode(getOutputDevice().GetDrawMode());
 					adaptTextToFillDrawMode();
 
 					if(!bForceSimpleTextDecomposition && getOptionsDrawinglayer().IsRenderSimpleTextDirect())
@@ -147,7 +147,7 @@ namespace drawinglayer
                     }
 					
 					// restore DrawMode
-					mpOutputDevice->SetDrawMode(nOriginalDrawMode);
+					getOutputDevice().SetDrawMode(nOriginalDrawMode);
 					
 					break;
 				}
@@ -157,7 +157,7 @@ namespace drawinglayer
                     static bool bForceComplexTextDecomposition(false);
 
 					// Adapt evtl. used special DrawMode
-					const sal_uInt32 nOriginalDrawMode(mpOutputDevice->GetDrawMode());
+					const sal_uInt32 nOriginalDrawMode(getOutputDevice().GetDrawMode());
 					adaptTextToFillDrawMode();
 
 					if(!bForceComplexTextDecomposition && getOptionsDrawinglayer().IsRenderDecoratedTextDirect())
@@ -170,7 +170,7 @@ namespace drawinglayer
                     }
 
 					// restore DrawMode
-					mpOutputDevice->SetDrawMode(nOriginalDrawMode);
+					getOutputDevice().SetDrawMode(nOriginalDrawMode);
 
 					break;
 				}
@@ -197,20 +197,20 @@ namespace drawinglayer
 				    // direct draw of gradient
 					const primitive2d::PolyPolygonGradientPrimitive2D& rPolygonCandidate = static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate);
 			        const attribute::FillGradientAttribute& rGradient(rPolygonCandidate.getFillGradient());
-			        basegfx::BColor aStartColor(maBColorModifierStack.getModifiedColor(rGradient.getStartColor()));
-			        basegfx::BColor aEndColor(maBColorModifierStack.getModifiedColor(rGradient.getEndColor()));
+			        basegfx::BColor aStartColor(getBColorModifierStack().getModifiedColor(rGradient.getStartColor()));
+			        basegfx::BColor aEndColor(getBColorModifierStack().getModifiedColor(rGradient.getEndColor()));
 			        basegfx::B2DPolyPolygon aLocalPolyPolygon(rPolygonCandidate.getB2DPolyPolygon());
 
 			        if(aLocalPolyPolygon.count())
 			        {
-				        aLocalPolyPolygon.transform(maCurrentTransformation);
+				        aLocalPolyPolygon.transform(getCurrentTransformation());
 
 				        if(aStartColor == aEndColor)
 				        {
 					        // no gradient at all, draw as polygon in AA and non-AA case
-					        mpOutputDevice->SetLineColor();
-					        mpOutputDevice->SetFillColor(Color(aStartColor));
-					        mpOutputDevice->DrawPolyPolygon(aLocalPolyPolygon);
+					        getOutputDevice().SetLineColor();
+					        getOutputDevice().SetFillColor(Color(aStartColor));
+					        getOutputDevice().DrawPolyPolygon(aLocalPolyPolygon);
 				        }
 				        else
 				        {
@@ -236,11 +236,11 @@ namespace drawinglayer
 				{
        				// #i98289#
                     const bool bForceLineSnap(getOptionsDrawinglayer().IsAntiAliasing() && getOptionsDrawinglayer().IsSnapHorVerLinesToDiscrete());
-                    const sal_uInt16 nOldAntiAliase(mpOutputDevice->GetAntialiasing());
+                    const sal_uInt16 nOldAntiAliase(getOutputDevice().GetAntialiasing());
 
                     if(bForceLineSnap)
                     {
-                        mpOutputDevice->SetAntialiasing(nOldAntiAliase | ANTIALIASING_PIXELSNAPHAIRLINE);
+                        getOutputDevice().SetAntialiasing(nOldAntiAliase | ANTIALIASING_PIXELSNAPHAIRLINE);
                     }
 
                     // use new Metafile decomposition
@@ -248,7 +248,7 @@ namespace drawinglayer
                     
                     if(bForceLineSnap)
                     {
-                        mpOutputDevice->SetAntialiasing(nOldAntiAliase);
+                        getOutputDevice().SetAntialiasing(nOldAntiAliase);
                     }
 					
                     break;
@@ -301,14 +301,14 @@ namespace drawinglayer
 											// single transparent PolyPolygon identified, use directly
 											const primitive2d::PolyPolygonColorPrimitive2D* pPoPoColor = static_cast< const primitive2d::PolyPolygonColorPrimitive2D* >(pBasePrimitive);
 											OSL_ENSURE(pPoPoColor, "OOps, PrimitiveID and PrimitiveType do not match (!)");
-											const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(pPoPoColor->getBColor()));
-											mpOutputDevice->SetFillColor(Color(aPolygonColor));
-											mpOutputDevice->SetLineColor();
+											const basegfx::BColor aPolygonColor(getBColorModifierStack().getModifiedColor(pPoPoColor->getBColor()));
+											getOutputDevice().SetFillColor(Color(aPolygonColor));
+											getOutputDevice().SetLineColor();
 		        							
 											basegfx::B2DPolyPolygon aLocalPolyPolygon(pPoPoColor->getB2DPolyPolygon());
-											aLocalPolyPolygon.transform(maCurrentTransformation);
+											aLocalPolyPolygon.transform(getCurrentTransformation());
 		        							
-											mpOutputDevice->DrawTransparent(aLocalPolyPolygon, rUniTransparenceCandidate.getTransparence());
+											getOutputDevice().DrawTransparent(aLocalPolyPolygon, rUniTransparenceCandidate.getTransparence());
 											bDrawTransparentUsed = true;
 											break;
 										}
@@ -375,7 +375,7 @@ namespace drawinglayer
                         // remember old graphics and create new
 					    uno::Reference< awt::XView > xControlView(rXControl, uno::UNO_QUERY_THROW);
                         const uno::Reference< awt::XGraphics > xOriginalGraphics(xControlView->getGraphics());
-					    const uno::Reference< awt::XGraphics > xNewGraphics(mpOutputDevice->CreateUnoGraphics());
+					    const uno::Reference< awt::XGraphics > xNewGraphics(getOutputDevice().CreateUnoGraphics());
 
                         if(xNewGraphics.is())
                         {
@@ -383,7 +383,7 @@ namespace drawinglayer
 				            xControlView->setGraphics(xNewGraphics);
 
                             // get position
-                            const basegfx::B2DHomMatrix aObjectToPixel(maCurrentTransformation * rControlPrimitive.getTransform());
+                            const basegfx::B2DHomMatrix aObjectToPixel(getCurrentTransformation() * rControlPrimitive.getTransform());
                             const basegfx::B2DPoint aTopLeftPixel(aObjectToPixel * basegfx::B2DPoint(0.0, 0.0));
 
                             // find out if the control is already visualized as a VCL-ChildWindow. If yes,
@@ -395,7 +395,7 @@ namespace drawinglayer
                             {
                                 // draw it. Do not forget to use the evtl. offsetted origin of the target device,
                                 // e.g. when used with mask/transparence buffer device
-                                const Point aOrigin(mpOutputDevice->GetMapMode().GetOrigin());
+                                const Point aOrigin(getOutputDevice().GetMapMode().GetOrigin());
                                 xControlView->draw(
                                     aOrigin.X() + basegfx::fround(aTopLeftPixel.getX()), 
                                     aOrigin.Y() + basegfx::fround(aTopLeftPixel.getY()));
@@ -423,7 +423,7 @@ namespace drawinglayer
 					// evtl. set DrawModes aka DRAWMODE_BLACKLINE, DRAWMODE_GRAYLINE,
 					// DRAWMODE_GHOSTEDLINE, DRAWMODE_WHITELINE or DRAWMODE_SETTINGSLINE
 					// working, these need to be copied to the corresponding fill modes
-					const sal_uInt32 nOriginalDrawMode(mpOutputDevice->GetDrawMode());
+					const sal_uInt32 nOriginalDrawMode(getOutputDevice().GetDrawMode());
 					adaptLineToFillDrawMode();
 
 					// polygon stroke primitive
@@ -433,13 +433,13 @@ namespace drawinglayer
 					{
                         // remeber that we enter a PolygonStrokePrimitive2D decomposition,
                         // used for AA thick line drawing
-                        mnPolygonStrokePrimitive2D++;
+                        getPolygonStrokePrimitive2DCounter()++;
 
                         // with AA there is no need to handle thin lines special
 						process(rCandidate.get2DDecomposition(getViewInformation2D()));
 
                         // leave PolygonStrokePrimitive2D
-                        mnPolygonStrokePrimitive2D--;
+                        getPolygonStrokePrimitive2DCounter()--;
 					}
 					else
 					{
@@ -453,7 +453,7 @@ namespace drawinglayer
 					}
 
 					// restore DrawMode
-					mpOutputDevice->SetDrawMode(nOriginalDrawMode);
+					getOutputDevice().SetDrawMode(nOriginalDrawMode);
 
 					break;
 				}
@@ -478,23 +478,23 @@ namespace drawinglayer
 						
 						// create hatch polygon in range size and discrete coordinates
 						basegfx::B2DRange aHatchRange(rFillHatchPrimitive.getObjectRange());
-						aHatchRange.transform(maCurrentTransformation);
+						aHatchRange.transform(getCurrentTransformation());
 						const basegfx::B2DPolygon aHatchPolygon(basegfx::tools::createPolygonFromRect(aHatchRange));
 
                         if(rFillHatchAttributes.isFillBackground())
                         {
                             // #i111846# background fill is active; draw fill polygon
-			                const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(rFillHatchPrimitive.getBColor()));
+			                const basegfx::BColor aPolygonColor(getBColorModifierStack().getModifiedColor(rFillHatchPrimitive.getBColor()));
 			                
-                            mpOutputDevice->SetFillColor(Color(aPolygonColor));
-			                mpOutputDevice->SetLineColor();
-            			    mpOutputDevice->DrawPolygon(aHatchPolygon);
+                            getOutputDevice().SetFillColor(Color(aPolygonColor));
+			                getOutputDevice().SetLineColor();
+            			    getOutputDevice().DrawPolygon(aHatchPolygon);
                         }
 
 						// set hatch line color
-						const basegfx::BColor aHatchColor(maBColorModifierStack.getModifiedColor(rFillHatchPrimitive.getBColor()));
-						mpOutputDevice->SetFillColor();
-						mpOutputDevice->SetLineColor(Color(aHatchColor));
+						const basegfx::BColor aHatchColor(getBColorModifierStack().getModifiedColor(rFillHatchPrimitive.getBColor()));
+						getOutputDevice().SetFillColor();
+						getOutputDevice().SetLineColor(Color(aHatchColor));
 
 						// get hatch style
 						HatchStyle eHatchStyle(HATCH_SINGLE);
@@ -518,13 +518,13 @@ namespace drawinglayer
 						}
 
 						// create hatch
-						const basegfx::B2DVector aDiscreteDistance(maCurrentTransformation * basegfx::B2DVector(rFillHatchAttributes.getDistance(), 0.0));
+						const basegfx::B2DVector aDiscreteDistance(getCurrentTransformation() * basegfx::B2DVector(rFillHatchAttributes.getDistance(), 0.0));
 						const sal_uInt32 nDistance(basegfx::fround(aDiscreteDistance.getLength()));
 						const sal_uInt16 nAngle10((sal_uInt16)basegfx::fround(rFillHatchAttributes.getAngle() / F_PI1800));
 						::Hatch aVCLHatch(eHatchStyle, Color(rFillHatchAttributes.getColor()), nDistance, nAngle10);
 
 						// draw hatch using VCL
-						mpOutputDevice->DrawHatch(PolyPolygon(Polygon(aHatchPolygon)), aVCLHatch);
+						getOutputDevice().DrawHatch(PolyPolygon(Polygon(aHatchPolygon)), aVCLHatch);
 					}
 					break;
 				}
@@ -532,25 +532,25 @@ namespace drawinglayer
 				{
 					// #i98404# Handle directly, especially when AA is active
 					const primitive2d::BackgroundColorPrimitive2D& rPrimitive = static_cast< const primitive2d::BackgroundColorPrimitive2D& >(rCandidate);
-					const sal_uInt16 nOriginalAA(mpOutputDevice->GetAntialiasing());
+					const sal_uInt16 nOriginalAA(getOutputDevice().GetAntialiasing());
 
 					// switch AA off in all cases
-	                mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
+	                getOutputDevice().SetAntialiasing(getOutputDevice().GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
 
 					// create color for fill
-					const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(rPrimitive.getBColor()));
-					mpOutputDevice->SetFillColor(Color(aPolygonColor));
-					mpOutputDevice->SetLineColor();
+					const basegfx::BColor aPolygonColor(getBColorModifierStack().getModifiedColor(rPrimitive.getBColor()));
+					getOutputDevice().SetFillColor(Color(aPolygonColor));
+					getOutputDevice().SetLineColor();
 
 					// create rectangle for fill
 					const basegfx::B2DRange& aViewport(getViewInformation2D().getDiscreteViewport());
 					const Rectangle aRectangle(
 						(sal_Int32)floor(aViewport.getMinX()), (sal_Int32)floor(aViewport.getMinY()),
 						(sal_Int32)ceil(aViewport.getMaxX()), (sal_Int32)ceil(aViewport.getMaxY()));
-					mpOutputDevice->DrawRect(aRectangle);
+					getOutputDevice().DrawRect(aRectangle);
 
 					// restore AA setting
-					mpOutputDevice->SetAntialiasing(nOriginalAA);
+					getOutputDevice().SetAntialiasing(nOriginalAA);
 					break;
 				}
                 case PRIMITIVE2D_ID_TEXTHIERARCHYEDITPRIMITIVE2D :
@@ -568,17 +568,17 @@ namespace drawinglayer
 				{
 					// invert primitive (currently only used for HighContrast fallback for selection in SW and SC).
 					// Set OutDev to XOR and switch AA off (XOR does not work with AA)
-                    mpOutputDevice->Push();
-                    mpOutputDevice->SetRasterOp( ROP_XOR );
-                    const sal_uInt16 nAntiAliasing(mpOutputDevice->GetAntialiasing());
-                    mpOutputDevice->SetAntialiasing(nAntiAliasing & ~ANTIALIASING_ENABLE_B2DDRAW);
+                    getOutputDevice().Push();
+                    getOutputDevice().SetRasterOp( ROP_XOR );
+                    const sal_uInt16 nAntiAliasing(getOutputDevice().GetAntialiasing());
+                    getOutputDevice().SetAntialiasing(nAntiAliasing & ~ANTIALIASING_ENABLE_B2DDRAW);
 
 					// process content recursively
 					process(rCandidate.get2DDecomposition(getViewInformation2D()));
 
 					// restore OutDev
-					mpOutputDevice->Pop();
-                    mpOutputDevice->SetAntialiasing(nAntiAliasing);
+					getOutputDevice().Pop();
+                    getOutputDevice().SetAntialiasing(nAntiAliasing);
 					break;
 				}
                 case PRIMITIVE2D_ID_EPSPRIMITIVE2D :

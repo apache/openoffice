@@ -34,6 +34,7 @@ ENABLE_EXCEPTIONS=TRUE
 # --- Files -------------------------------------
 
 SLOFILES= $(SLO)$/b2dclipstate.obj	\
+          $(SLO)$/cmanager.obj	\
           $(SLO)$/canvastools.obj	\
 		  $(SLO)$/gradienttools.obj	\
 		  $(SLO)$/debugplotter.obj	\

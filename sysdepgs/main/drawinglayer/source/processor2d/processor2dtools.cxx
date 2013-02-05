@@ -25,6 +25,11 @@
 #include <drawinglayer/processor2d/processor2dtools.hxx>
 #include <drawinglayer/processor2d/vclpixelprocessor2d.hxx>
 #include <drawinglayer/processor2d/vclmetafileprocessor2d.hxx>
+#include <vcl/outdev.hxx>
+
+#ifdef WNT
+#include <drawinglayer/processor2d/win_pixelprocessor2d.hxx>
+#endif
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -40,6 +45,16 @@ namespace drawinglayer
             OutputDevice& rTargetOutDev, 
             const drawinglayer::geometry::ViewInformation2D& rViewInformation2D)
         {
+#ifdef WNT
+            static bool bTestDirectRenderer(false);
+
+            if(bTestDirectRenderer)
+            {
+                // create Win-dependent PilxelProcessor
+                return new Win_PixelProcessor2D(rViewInformation2D, rTargetOutDev);
+            }
+#endif
+
             // create Pixel Vcl-Processor
             return new VclPixelProcessor2D(rViewInformation2D, rTargetOutDev);
         }

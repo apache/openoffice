@@ -62,6 +62,18 @@ $(eval $(call gb_Library_add_linked_libs,drawinglayer,\
     $(gb_STDLIBS) \
 ))
 
+ifeq ($(OS),WNT)
+
+$(eval $(call gb_Library_add_exception_objects,drawinglayer,\
+	drawinglayer/source/processor2d/win_pixelprocessor2d \
+))
+
+$(eval $(call gb_Library_add_linked_libs,drawinglayer,\
+	gdiplus \
+))
+
+endif
+
 $(eval $(call gb_Library_add_exception_objects,drawinglayer,\
 	drawinglayer/source/animation/animationtiming \
 	drawinglayer/source/attribute/fillgradientattribute \

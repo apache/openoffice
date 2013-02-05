@@ -28,6 +28,7 @@
 #include <win/wincomp.hxx>
 #include <salbmp.hxx>
 #include <boost/shared_ptr.hpp>
+#include <basegfx/tools/cacheable.hxx>
 
 // --------------
 // - SalBitmap	-
@@ -37,34 +38,19 @@ struct	BitmapBuffer;
 class	BitmapColor;
 class	BitmapPalette;
 class	SalGraphics;
-namespace Gdiplus { class Bitmap; }
-typedef boost::shared_ptr< Gdiplus::Bitmap > GdiPlusBmpPtr;
 
-class WinSalBitmap : public SalBitmap
+class WinSalBitmap : public SalBitmap, public basegfx::cache::cacheable
 {
 private:
-    friend class GdiPlusBuffer; // allow buffer to remove maGdiPlusBitmap eventually
-
 	Size				maSize;
 	HGLOBAL 			mhDIB;
 	HBITMAP 			mhDDB;
-
-    // the buffered evtl. used Gdiplus::Bitmap instance. It is managed by
-    // GdiPlusBuffer. To make this safe, it is only handed out as shared
-    // pointer; the GdiPlusBuffer may delete the local instance
-    GdiPlusBmpPtr       maGdiPlusBitmap;
-
     sal_uInt16			mnBitCount;
 
-    Gdiplus::Bitmap* ImplCreateGdiPlusBitmap(const WinSalBitmap& rAlphaSource);
-    Gdiplus::Bitmap* ImplCreateGdiPlusBitmap();
-
 public:
-
 	HGLOBAL 			ImplGethDIB() const { return mhDIB; }
 	HBITMAP 			ImplGethDDB() const { return mhDDB; }
     
-    GdiPlusBmpPtr ImplGetGdiPlusBitmap(const WinSalBitmap* pAlphaSource = 0) const;
 
 	static HGLOBAL		ImplCreateDIB( const Size& rSize, sal_uInt16 nBitCount, const BitmapPalette& rPal );
 	static HANDLE		ImplCopyDIBOrDDB( HANDLE hHdl, bool bDIB );

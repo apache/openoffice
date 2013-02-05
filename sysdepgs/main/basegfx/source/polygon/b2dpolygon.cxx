@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
 #include <osl/diagnose.h>
@@ -34,6 +32,10 @@
 #include <boost/scoped_ptr.hpp>
 #include <vector>
 #include <algorithm>
+
+#ifdef WNT
+#include <basegfx/tools/cacheable.hxx>
+#endif
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -614,6 +616,9 @@ public:
 //////////////////////////////////////////////////////////////////////////////
 
 class ImplB2DPolygon
+#ifdef WNT
+    : public basegfx::cache::cacheable
+#endif
 {
 private:
 	// The point vector. This vector exists always and defines the
@@ -630,6 +635,22 @@ private:
 	// flag which decides if this polygon is opened or closed
 	bool                                            mbIsClosed;
 
+    void ensureBufferedData()
+    {
+        if(!mpBufferedData)
+        {
+            mpBufferedData.reset(new ImplBufferedData);
+        }
+    }
+
+    void changed()
+    {
+        mpBufferedData.reset();
+#ifdef WNT
+        onChange();
+#endif
+    }
+
 public:
 	const basegfx::B2DPolygon& getDefaultAdaptiveSubdivision(const basegfx::B2DPolygon& rSource) const
 	{
@@ -638,20 +659,14 @@ public:
     		return rSource;
         }
 
-        if(!mpBufferedData)
-        {
-			const_cast< ImplB2DPolygon* >(this)->mpBufferedData.reset(new ImplBufferedData);
-        }
+        const_cast< ImplB2DPolygon* >(this)->ensureBufferedData();
 
         return mpBufferedData->getDefaultAdaptiveSubdivision(rSource);
 	}
 
 	const basegfx::B2DRange& getB2DRange(const basegfx::B2DPolygon& rSource) const
     {
-        if(!mpBufferedData)
-        {
-			const_cast< ImplB2DPolygon* >(this)->mpBufferedData.reset(new ImplBufferedData);
-        }
+        const_cast< ImplB2DPolygon* >(this)->ensureBufferedData();
 
         return mpBufferedData->getB2DRange(rSource);
     }
@@ -661,7 +676,8 @@ public:
 		mpControlVector(),
 		mpBufferedData(),
         mbIsClosed(false)
-	{}
+	{
+    }
 
 	ImplB2DPolygon(const ImplB2DPolygon& rToBeCopied)
 	:	maPoints(rToBeCopied.maPoints),
@@ -688,7 +704,9 @@ public:
 			mpControlVector.reset( new ControlVectorArray2D(*rToBeCopied.mpControlVector, nIndex, nCount) );
 
 			if(!mpControlVector->isUsed())
+            {
                 mpControlVector.reset();
+            }
 		}
 	}
 
@@ -696,13 +714,16 @@ public:
     {
 		maPoints = rToBeCopied.maPoints;
 		mpControlVector.reset();
-		mpBufferedData.reset();
+        changed();
 		mbIsClosed = rToBeCopied.mbIsClosed;
 
 		// complete initialization using copy
 		if(rToBeCopied.mpControlVector && rToBeCopied.mpControlVector->isUsed())
+        {
 			mpControlVector.reset( new ControlVectorArray2D(*rToBeCopied.mpControlVector) );        
+        }
 
+        changed();
         return *this;
     }
 
@@ -720,8 +741,8 @@ public:
 	{
 		if(bNew != mbIsClosed)
 		{
-			mpBufferedData.reset();
-			mbIsClosed = bNew;
+            changed();
+            mbIsClosed = bNew;
 		}
 	}
 
@@ -771,7 +792,7 @@ public:
 
 	void setPoint(sal_uInt32 nIndex, const basegfx::B2DPoint& rValue)
 	{
-		mpBufferedData.reset();
+        changed();
 		maPoints.setCoordinate(nIndex, rValue);
 	}
 
@@ -782,7 +803,7 @@ public:
 
 	void append(const basegfx::B2DPoint& rPoint)
 	{
-		mpBufferedData.reset(); // TODO: is this needed?
+        changed();
 		const CoordinateData2D aCoordinate(rPoint);
 		maPoints.append(aCoordinate);
 
@@ -797,7 +818,7 @@ public:
 	{
 		if(nCount)
 		{
-			mpBufferedData.reset();
+            changed();
 			CoordinateData2D aCoordinate(rPoint);
 			maPoints.insert(nIndex, aCoordinate, nCount);
 
@@ -827,18 +848,20 @@ public:
 		{
 			if(!rValue.equalZero())
 			{
-				mpBufferedData.reset();
+                changed();
 				mpControlVector.reset( new ControlVectorArray2D(maPoints.count()) );
 				mpControlVector->setPrevVector(nIndex, rValue);
 			}
 		}
 		else
 		{
-			mpBufferedData.reset();
+            changed();
 			mpControlVector->setPrevVector(nIndex, rValue);
 
 			if(!mpControlVector->isUsed())
+            {
                 mpControlVector.reset();
+            }
 		}
 	}
 
@@ -860,18 +883,20 @@ public:
 		{
 			if(!rValue.equalZero())
 			{
-				mpBufferedData.reset();
+                changed();
 				mpControlVector.reset( new ControlVectorArray2D(maPoints.count()) );
 				mpControlVector->setNextVector(nIndex, rValue);
 			}
 		}
 		else
 		{
-			mpBufferedData.reset();
+            changed();
 			mpControlVector->setNextVector(nIndex, rValue);
 
 			if(!mpControlVector->isUsed())
+            {
                 mpControlVector.reset();
+            }
 		}
 	}
 
@@ -888,7 +913,7 @@ public:
 
 	void resetControlVectors()
 	{
-		mpBufferedData.reset();
+        changed();
 		mpControlVector.reset();
 	}
 
@@ -900,7 +925,7 @@ public:
 
 	void appendBezierSegment(const basegfx::B2DVector& rNext, const basegfx::B2DVector& rPrev, const basegfx::B2DPoint& rPoint)
 	{
-		mpBufferedData.reset();
+        changed();
 		const sal_uInt32 nCount(maPoints.count());
 
         if(nCount)
@@ -918,7 +943,7 @@ public:
 
 		if(nCount)
 		{
-			mpBufferedData.reset();
+            changed();
 
 			if(rSource.mpControlVector && rSource.mpControlVector->isUsed() && !mpControlVector)
 			{
@@ -932,7 +957,9 @@ public:
 				mpControlVector->insert(nIndex, *rSource.mpControlVector);
 
 				if(!mpControlVector->isUsed())
+                {
                     mpControlVector.reset();
+                }
 			}
 			else if(mpControlVector)
 			{
@@ -946,7 +973,7 @@ public:
 	{
 		if(nCount)
 		{
-			mpBufferedData.reset();
+            changed();
 			maPoints.remove(nIndex, nCount);
 
 			if(mpControlVector)
@@ -954,7 +981,9 @@ public:
 				mpControlVector->remove(nIndex, nCount);
 
 				if(!mpControlVector->isUsed())
+                {
                     mpControlVector.reset();
+                }
 			}
 		}
 	}
@@ -963,7 +992,7 @@ public:
 	{
 		if(maPoints.count() > 1)
 		{
-			mpBufferedData.reset();
+            changed();
 
 			// flip points
 			maPoints.flip(mbIsClosed);
@@ -1026,7 +1055,7 @@ public:
 		// Only remove DoublePoints at Begin and End when poly is closed
 		if(mbIsClosed)
 		{
-			mpBufferedData.reset();
+            changed();
 
             if(mpControlVector)
 			{
@@ -1079,7 +1108,7 @@ public:
 
 	void removeDoublePointsWholeTrack()
 	{
-		mpBufferedData.reset();
+        changed();
 
         if(mpControlVector)
 		{
@@ -1127,43 +1156,46 @@ public:
 
 	void transform(const basegfx::B2DHomMatrix& rMatrix)
 	{
-		mpBufferedData.reset();
+        if(!rMatrix.isIdentity())
+        {
+            changed();
 
-        if(mpControlVector)
-		{
-			for(sal_uInt32 a(0); a < maPoints.count(); a++)
-			{
-				basegfx::B2DPoint aCandidate = maPoints.getCoordinate(a);
+            if(mpControlVector)
+		    {
+			    for(sal_uInt32 a(0); a < maPoints.count(); a++)
+			    {
+				    basegfx::B2DPoint aCandidate = maPoints.getCoordinate(a);
 
-				if(mpControlVector->isUsed())
-				{
-					const basegfx::B2DVector& rPrevVector(mpControlVector->getPrevVector(a));
-					const basegfx::B2DVector& rNextVector(mpControlVector->getNextVector(a));
+				    if(mpControlVector->isUsed())
+				    {
+					    const basegfx::B2DVector& rPrevVector(mpControlVector->getPrevVector(a));
+					    const basegfx::B2DVector& rNextVector(mpControlVector->getNextVector(a));
 					
-					if(!rPrevVector.equalZero())
-					{
-						basegfx::B2DVector aPrevVector(rMatrix * rPrevVector);
-						mpControlVector->setPrevVector(a, aPrevVector);
-					}
+					    if(!rPrevVector.equalZero())
+					    {
+						    basegfx::B2DVector aPrevVector(rMatrix * rPrevVector);
+						    mpControlVector->setPrevVector(a, aPrevVector);
+					    }
 
-					if(!rNextVector.equalZero())
-					{
-						basegfx::B2DVector aNextVector(rMatrix * rNextVector);
-						mpControlVector->setNextVector(a, aNextVector);
-					}
-				}
+					    if(!rNextVector.equalZero())
+					    {
+						    basegfx::B2DVector aNextVector(rMatrix * rNextVector);
+						    mpControlVector->setNextVector(a, aNextVector);
+					    }
+				    }
 
-				aCandidate *= rMatrix;
-				maPoints.setCoordinate(a, aCandidate);
-			}
+				    aCandidate *= rMatrix;
+				    maPoints.setCoordinate(a, aCandidate);
+			    }
 
-			if(!mpControlVector->isUsed())
-                mpControlVector.reset();
-		}
-		else
-		{
-			maPoints.transform(rMatrix);
-		}
+			    if(!mpControlVector->isUsed())
+                    mpControlVector.reset();
+		    }
+		    else
+		    {
+			    maPoints.transform(rMatrix);
+		    }
+        }
 	}
 
     const basegfx::B2DPoint* begin() const
@@ -1178,13 +1210,13 @@ public:
 
     basegfx::B2DPoint* begin()
     {
-       mpBufferedData.reset();
+       changed();
        return maPoints.begin();
     }
 
     basegfx::B2DPoint* end()
     {
-        mpBufferedData.reset();
+        changed();
         return maPoints.end();
     }
 };
@@ -1197,6 +1229,13 @@ namespace basegfx
 	{ 
 		struct DefaultPolygon: public rtl::Static<B2DPolygon::ImplType, DefaultPolygon> {}; 
 	}
+
+#ifdef WNT
+    basegfx::cache::cacheable& B2DPolygon::getCacheable() const
+    {
+        return const_cast< ImplB2DPolygon& >(*mpPolygon);
+    }
+#endif
 
 	B2DPolygon::B2DPolygon() 
 	:	mpPolygon(DefaultPolygon::get())

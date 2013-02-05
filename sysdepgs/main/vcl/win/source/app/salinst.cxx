@@ -470,6 +470,12 @@ void DeInitSalData()
 	CoUninitialize();
 	SalData* pSalData = GetSalData();
 
+    // flush evtl. cached Gdiplus objects
+    if(pSalData)
+    {
+        pSalData->maGdiPlusObjectBuffer.flush();
+    }
+
     // deinit GDIPlus
     if(pSalData)
     {

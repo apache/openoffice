@@ -37,6 +37,10 @@ namespace basegfx
 	class B2DHomMatrix;
 } // end of namespace basegfx
 
+#ifdef WNT
+namespace basegfx { namespace cache { class cacheable; }}
+#endif
+
 //////////////////////////////////////////////////////////////////////////////
 
 namespace basegfx
@@ -127,6 +131,10 @@ namespace basegfx
         const B2DPolygon* end() const;
         B2DPolygon* begin();
         B2DPolygon* end();
+
+#ifdef WNT
+        basegfx::cache::cacheable& getCacheable() const;
+#endif
 	};
 
     // typedef for a vector of B2DPolyPolygons

@@ -50,22 +50,25 @@ namespace drawinglayer
 			// Do use createPolygonFromUnitCircle, but let create from first quadrant to mimic old geometry creation.
 			// This is needed to have the same look when stroke is used since the polygon start point defines the
 			// stroke start, too.
-			basegfx::B2DPolygon aUnitOutline(basegfx::tools::createPolygonFromUnitCircle(1));
+            const basegfx::B2DPolygon aUnitOutlinePolygon(basegfx::tools::createPolygonFromUnitCircle(1));
 
-			// scale and move UnitEllipse to UnitObject (-1,-1 1,1) -> (0,0 1,1)
-			const basegfx::B2DHomMatrix aUnitCorrectionMatrix(
-                basegfx::tools::createScaleTranslateB2DHomMatrix(0.5, 0.5, 0.5, 0.5));
+            // also prepare a single PolyPolygon from it to have a single reference
+            const basegfx::B2DPolyPolygon aUnitOutlinePolyPolygon(aUnitOutlinePolygon);
 
-			// apply to the geometry
-			aUnitOutline.transform(aUnitCorrectionMatrix);
+            // create transformation. Scale and move UnitEllipse to 
+            // UnitObject (-1,-1 1,1) -> (0,0 1,1), then multiply with 
+            // given geometry transformation. This avoids modifying the
+            // unit outline polygon, thus all will use the same instance
+            const basegfx::B2DHomMatrix aTransform(
+                getTransform() * basegfx::tools::createScaleTranslateB2DHomMatrix(0.5, 0.5, 0.5, 0.5));
 
 			// add fill
 			if(!getSdrLFSTAttribute().getFill().isDefault())
 			{
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aUnitOutlinePolyPolygon, 
+                        aTransform, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -77,15 +80,15 @@ namespace drawinglayer
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
 					createHiddenGeometryPrimitives2D(
                         false,
-						basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform()));
+						aUnitOutlinePolyPolygon, 
+                        aTransform));
 			}
 			else
 			{
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolygonLinePrimitive(
-                        aUnitOutline, 
-                        getTransform(), 
+                        aUnitOutlinePolygon, 
+                        aTransform, 
                         getSdrLFSTAttribute().getLine(),
 						attribute::SdrLineStartEndAttribute()));
 			}
@@ -95,8 +98,8 @@ namespace drawinglayer
 			{
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createTextPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aUnitOutlinePolyPolygon, 
+                        aTransform, 
                         getSdrLFSTAttribute().getText(), 
                         getSdrLFSTAttribute().getLine(), 
                         false, 
@@ -154,34 +157,40 @@ namespace drawinglayer
 			Primitive2DSequence aRetval;
 
 			// create unit outline polygon
-			basegfx::B2DPolygon aUnitOutline(basegfx::tools::createPolygonFromUnitEllipseSegment(mfStartAngle, mfEndAngle));
+			basegfx::B2DPolygon aUnitOutlinePolygon(
+                basegfx::tools::createPolygonFromUnitEllipseSegment(
+                    getStartAngle(), 
+                    getEndAngle()));
 
-			if(mbCloseSegment)
+			if(getCloseSegment())
 			{
-				if(mbCloseUsingCenter)
+				if(getCloseUsingCenter())
 				{
 					// for compatibility, insert the center point at polygon start to get the same
 					// line stroking pattern as the old painting mechanisms.
-					aUnitOutline.insert(0L, basegfx::B2DPoint(0.0, 0.0));
+					aUnitOutlinePolygon.insert(0, basegfx::B2DPoint(0.0, 0.0));
 				}
 
-				aUnitOutline.setClosed(true);
+				aUnitOutlinePolygon.setClosed(true);
 			}
 
-			// move and scale UnitEllipse to UnitObject (-1,-1 1,1) -> (0,0 1,1)
-			const basegfx::B2DHomMatrix aUnitCorrectionMatrix(
-                basegfx::tools::createScaleTranslateB2DHomMatrix(0.5, 0.5, 0.5, 0.5));
+            // also prepare a single PolyPolygon from it to have a single reference
+            const basegfx::B2DPolyPolygon aUnitOutlinePolyPolygon(aUnitOutlinePolygon);
 
-			// apply to the geometry
-			aUnitOutline.transform(aUnitCorrectionMatrix);
+            // create transformation. Scale and move UnitEllipse to 
+            // UnitObject (-1,-1 1,1) -> (0,0 1,1), then multiply with 
+            // given geometry transformation. This avoids modifying the
+            // unit outline polygon, thus all will use the same instance
+            const basegfx::B2DHomMatrix aTransform(
+                getTransform() * basegfx::tools::createScaleTranslateB2DHomMatrix(0.5, 0.5, 0.5, 0.5));
 
 			// add fill
-			if(!getSdrLFSTAttribute().getFill().isDefault() && aUnitOutline.isClosed())
+			if(!getSdrLFSTAttribute().getFill().isDefault() && aUnitOutlinePolygon.isClosed())
 			{
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolyPolygonFillPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aUnitOutlinePolyPolygon, 
+                        aTransform, 
                         getSdrLFSTAttribute().getFill(), 
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
@@ -193,15 +202,15 @@ namespace drawinglayer
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
 					createHiddenGeometryPrimitives2D(
                         false,
-						basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform()));
+						aUnitOutlinePolyPolygon, 
+                        aTransform));
 			}
 			else
 			{
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createPolygonLinePrimitive(
-                        aUnitOutline, 
-                        getTransform(), 
+                        aUnitOutlinePolygon, 
+                        aTransform, 
                         getSdrLFSTAttribute().getLine(), 
                         getSdrLFSTAttribute().getLineStartEnd()));
 			}
@@ -211,8 +220,8 @@ namespace drawinglayer
 			{
 				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
                     createTextPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
+                        aUnitOutlinePolyPolygon, 
+                        aTransform, 
 						getSdrLFSTAttribute().getText(), 
                         getSdrLFSTAttribute().getLine(), 
                         false, 
@@ -252,10 +261,10 @@ namespace drawinglayer
 			{
 				const SdrEllipseSegmentPrimitive2D& rCompare = (SdrEllipseSegmentPrimitive2D&)rPrimitive;
 
-				if(	mfStartAngle == rCompare.mfStartAngle
-					&& mfEndAngle == rCompare.mfEndAngle
-					&& mbCloseSegment == rCompare.mbCloseSegment 
-					&& mbCloseUsingCenter == rCompare.mbCloseUsingCenter)
+				if(	getStartAngle() == rCompare.getStartAngle()
+					&& getEndAngle() == rCompare.getEndAngle()
+					&& getCloseSegment() == rCompare.getCloseSegment() 
+					&& getCloseUsingCenter() == rCompare.getCloseUsingCenter())
 				{
 					return true;
 				}

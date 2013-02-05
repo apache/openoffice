@@ -122,6 +122,28 @@ namespace drawinglayer
 	    using ::com::sun::star::awt::XWindow;
 	    using ::com::sun::star::awt::PosSize::POSSIZE;
 
+
+        //////////////////////////////////////////////////////////////////////////////
+        // tooling
+        void VclProcessor2D::pushOutputDevice(OutputDevice& rNew)
+        {
+            mnOutputDevices.push_back(&rNew);
+            mpOutputDevice = &rNew;
+        }
+
+        void VclProcessor2D::popOutputDevice()
+        {
+            if(mnOutputDevices.empty())
+            {
+                OSL_ENSURE(false, "OOps, push/popOutputDevice mismatch (!)");
+            }
+            else
+            {
+                mpOutputDevice = mnOutputDevices.back();
+                mnOutputDevices.pop_back();
+            }
+        }
+
 		//////////////////////////////////////////////////////////////////////////////
 		// rendering support
 
@@ -132,7 +154,7 @@ namespace drawinglayer
 		void VclProcessor2D::RenderTextSimpleOrDecoratedPortionPrimitive2D(const primitive2d::TextSimplePortionPrimitive2D& rTextCandidate)
 		{
             // decompose matrix to have position and size of text
-			basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rTextCandidate.getTextTransform());
+			basegfx::B2DHomMatrix aLocalTransform(getCurrentTransformation() * rTextCandidate.getTextTransform());
 			basegfx::B2DVector aFontScaling, aTranslate;
 			double fRotate, fShearX;
 			aLocalTransform.decompose(aFontScaling, aTranslate, fRotate, fShearX);
@@ -167,16 +189,16 @@ namespace drawinglayer
 					{
 
                         // set the color of text decorations
-                        const basegfx::BColor aTextlineColor = maBColorModifierStack.getModifiedColor(pTCPP->getTextlineColor());
-                        mpOutputDevice->SetTextLineColor( Color(aTextlineColor) );
+                        const basegfx::BColor aTextlineColor = getBColorModifierStack().getModifiedColor(pTCPP->getTextlineColor());
+                        getOutputDevice().SetTextLineColor( Color(aTextlineColor) );
 
                         // set Overline attribute
                         const FontUnderline eFontOverline(primitive2d::mapTextLineToFontUnderline( pTCPP->getFontOverline() ));
                         if( eFontOverline != UNDERLINE_NONE )
                         {
                             aFont.SetOverline( eFontOverline );
-                            const basegfx::BColor aOverlineColor = maBColorModifierStack.getModifiedColor(pTCPP->getOverlineColor());
-                            mpOutputDevice->SetOverlineColor( Color(aOverlineColor) );
+                            const basegfx::BColor aOverlineColor = getBColorModifierStack().getModifiedColor(pTCPP->getOverlineColor());
+                            getOutputDevice().SetOverlineColor( Color(aOverlineColor) );
                             if( pTCPP->getWordLineMode() )
                                 aFont.SetWordLineMode( true );
                         }
@@ -249,7 +271,7 @@ namespace drawinglayer
 					if(rTextCandidate.getDXArray().size())
 					{
 						aTransformedDXArray.reserve(rTextCandidate.getDXArray().size());
-						const basegfx::B2DVector aPixelVector(maCurrentTransformation * basegfx::B2DVector(1.0, 0.0));
+						const basegfx::B2DVector aPixelVector(getCurrentTransformation() * basegfx::B2DVector(1.0, 0.0));
 						const double fPixelVectorFactor(aPixelVector.getLength());
 
 						for(::std::vector< double >::const_iterator aStart(rTextCandidate.getDXArray().begin());
@@ -260,24 +282,24 @@ namespace drawinglayer
 					}
 
 					// set parameters and paint text snippet
-					const basegfx::BColor aRGBFontColor(maBColorModifierStack.getModifiedColor(rTextCandidate.getFontColor()));
+					const basegfx::BColor aRGBFontColor(getBColorModifierStack().getModifiedColor(rTextCandidate.getFontColor()));
 					const basegfx::B2DPoint aPoint(aLocalTransform * basegfx::B2DPoint(0.0, 0.0));
 					const Point aStartPoint(basegfx::fround(aPoint.getX()), basegfx::fround(aPoint.getY()));
-                    const sal_uInt32 nOldLayoutMode(mpOutputDevice->GetLayoutMode());
+                    const sal_uInt32 nOldLayoutMode(getOutputDevice().GetLayoutMode());
 
                     if(rTextCandidate.getFontAttribute().getRTL())
                     {
                         sal_uInt32 nRTLLayoutMode(nOldLayoutMode & ~(TEXT_LAYOUT_COMPLEX_DISABLED|TEXT_LAYOUT_BIDI_STRONG));
                         nRTLLayoutMode |= TEXT_LAYOUT_BIDI_RTL|TEXT_LAYOUT_TEXTORIGIN_LEFT;
-                        mpOutputDevice->SetLayoutMode(nRTLLayoutMode);
+                        getOutputDevice().SetLayoutMode(nRTLLayoutMode);
                     }
 
-					mpOutputDevice->SetFont(aFont);
-					mpOutputDevice->SetTextColor(Color(aRGBFontColor));
+					getOutputDevice().SetFont(aFont);
+					getOutputDevice().SetTextColor(Color(aRGBFontColor));
 
 					if(aTransformedDXArray.size())
 					{
-						mpOutputDevice->DrawTextArray(
+						getOutputDevice().DrawTextArray(
 							aStartPoint,
 							rTextCandidate.getText(),
 							&(aTransformedDXArray[0]),
@@ -286,7 +308,7 @@ namespace drawinglayer
 					}
 					else
 					{
-						mpOutputDevice->DrawText(
+						getOutputDevice().DrawText(
 							aStartPoint,
 							rTextCandidate.getText(),
 							rTextCandidate.getTextPosition(),
@@ -295,7 +317,7 @@ namespace drawinglayer
 
                     if(rTextCandidate.getFontAttribute().getRTL())
                     {
-                        mpOutputDevice->SetLayoutMode(nOldLayoutMode);
+                        getOutputDevice().SetLayoutMode(nOldLayoutMode);
                     }
 
 					bPrimitiveAccepted = true;
@@ -312,12 +334,12 @@ namespace drawinglayer
 		// direct draw of hairline
 		void VclProcessor2D::RenderPolygonHairlinePrimitive2D(const primitive2d::PolygonHairlinePrimitive2D& rPolygonCandidate, bool bPixelBased)
 		{
-            const basegfx::BColor aHairlineColor(maBColorModifierStack.getModifiedColor(rPolygonCandidate.getBColor()));
-			mpOutputDevice->SetLineColor(Color(aHairlineColor));
-			mpOutputDevice->SetFillColor();
+            const basegfx::BColor aHairlineColor(getBColorModifierStack().getModifiedColor(rPolygonCandidate.getBColor()));
+			getOutputDevice().SetLineColor(Color(aHairlineColor));
+			getOutputDevice().SetFillColor();
 
 			basegfx::B2DPolygon aLocalPolygon(rPolygonCandidate.getB2DPolygon());
-			aLocalPolygon.transform(maCurrentTransformation);
+			aLocalPolygon.transform(getCurrentTransformation());
 
             static bool bCheckTrapezoidDecomposition(false);
             static bool bShowOutlinesThere(false);
@@ -352,17 +374,17 @@ namespace drawinglayer
 
                             if(bShowOutlinesThere)
                             {
-                                mpOutputDevice->SetFillColor(Color(aHairlineColor));
-			                    mpOutputDevice->SetLineColor();
+                                getOutputDevice().SetFillColor(Color(aHairlineColor));
+			                    getOutputDevice().SetLineColor();
                             }
 
-                            mpOutputDevice->DrawPolygon(aTempPolygon);
+                            getOutputDevice().DrawPolygon(aTempPolygon);
 
                             if(bShowOutlinesThere)
                             {
-                                mpOutputDevice->SetFillColor();
-        		                mpOutputDevice->SetLineColor(Color(aInvPolygonColor));
-    	    		            mpOutputDevice->DrawPolyLine(aTempPolygon, 0.0);
+                                getOutputDevice().SetFillColor();
+        		                getOutputDevice().SetLineColor(Color(aInvPolygonColor));
+    	    		            getOutputDevice().DrawPolyLine(aTempPolygon, 0.0);
                             }
                         }
                     }
@@ -380,7 +402,7 @@ namespace drawinglayer
 				    aLocalPolygon = basegfx::tools::snapPointsOfHorizontalOrVerticalEdges(aLocalPolygon);
 			    }
 
-			    mpOutputDevice->DrawPolyLine(aLocalPolygon, 0.0);
+			    getOutputDevice().DrawPolyLine(aLocalPolygon, 0.0);
             }
 		}
 
@@ -389,7 +411,7 @@ namespace drawinglayer
 		{
             // check local ViewPort
             const basegfx::B2DRange& rDiscreteViewPort(getViewInformation2D().getDiscreteViewport());
-            const basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rBitmapCandidate.getTransform());
+            const basegfx::B2DHomMatrix aLocalTransform(getCurrentTransformation() * rBitmapCandidate.getTransform());
 
             if(!rDiscreteViewPort.isEmpty())
             {
@@ -406,20 +428,20 @@ namespace drawinglayer
 
             BitmapEx aBitmapEx(rBitmapCandidate.getBitmapEx());
 
-			if(maBColorModifierStack.count())
+			if(getBColorModifierStack().count())
 			{
-                aBitmapEx = aBitmapEx.ModifyBitmapEx(maBColorModifierStack);
+                aBitmapEx = aBitmapEx.ModifyBitmapEx(getBColorModifierStack());
 
 				if(aBitmapEx.IsEmpty())
 				{
 					// color gets completely replaced, get it
-					const basegfx::BColor aModifiedColor(maBColorModifierStack.getModifiedColor(basegfx::BColor()));
+					const basegfx::BColor aModifiedColor(getBColorModifierStack().getModifiedColor(basegfx::BColor()));
 					basegfx::B2DPolygon aPolygon(basegfx::tools::createUnitPolygon());
 					aPolygon.transform(aLocalTransform);
 
-					mpOutputDevice->SetFillColor(Color(aModifiedColor));
-					mpOutputDevice->SetLineColor();
-					mpOutputDevice->DrawPolygon(aPolygon);
+					getOutputDevice().SetFillColor(Color(aModifiedColor));
+					getOutputDevice().SetLineColor();
+					getOutputDevice().DrawPolygon(aPolygon);
 
 					return;
 				}
@@ -447,7 +469,7 @@ namespace drawinglayer
 			}
 
             // draw using OutputDevice'sDrawTransformedBitmapEx
-            mpOutputDevice->DrawTransformedBitmapEx(aLocalTransform, aBitmapEx);
+            getOutputDevice().DrawTransformedBitmapEx(aLocalTransform, aBitmapEx);
 		}
 
 		void VclProcessor2D::RenderFillGraphicPrimitive2D(const primitive2d::FillGraphicPrimitive2D& rFillBitmapCandidate)
@@ -475,7 +497,7 @@ namespace drawinglayer
                     && !rFillGraphicAttribute.getGraphic().IsAnimated()) 
                 {
 				    // decompose matrix to check for shear, rotate and mirroring
-				    basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rFillBitmapCandidate.getTransformation());
+				    basegfx::B2DHomMatrix aLocalTransform(getCurrentTransformation() * rFillBitmapCandidate.getTransformation());
 				    basegfx::B2DVector aScale, aTranslate;
 				    double fRotate, fShearX;
 				    aLocalTransform.decompose(aScale, aTranslate, fRotate, fShearX);
@@ -489,7 +511,7 @@ namespace drawinglayer
                         // transform object range to device coordinates (pixels). Use
                         // the device transformation for better accuracy
                         basegfx::B2DRange aObjectRange(aTranslate, aTranslate + aScale);
-                        aObjectRange.transform(mpOutputDevice->GetViewTransformation());
+                        aObjectRange.transform(getOutputDevice().GetViewTransformation());
 
                         // extract discrete size of object
                         const sal_Int32 nOWidth(basegfx::fround(aObjectRange.getWidth()));
@@ -501,7 +523,7 @@ namespace drawinglayer
                             // transform graphic range to device coordinates (pixels). Use
                             // the device transformation for better accuracy
                             basegfx::B2DRange aGraphicRange(rFillGraphicAttribute.getGraphicRange());
-                            aGraphicRange.transform(mpOutputDevice->GetViewTransformation() * aLocalTransform);
+                            aGraphicRange.transform(getOutputDevice().GetViewTransformation() * aLocalTransform);
 
                             // extract discrete size of graphic
                             const sal_Int32 nBWidth(basegfx::fround(aGraphicRange.getWidth()));
@@ -525,23 +547,23 @@ namespace drawinglayer
 
 					            bool bPainted(false);
 
-					            if(maBColorModifierStack.count())
+					            if(getBColorModifierStack().count())
 					            {
                                     // when color modifier, apply to bitmap
-						            aBitmapEx = aBitmapEx.ModifyBitmapEx(maBColorModifierStack);
+						            aBitmapEx = aBitmapEx.ModifyBitmapEx(getBColorModifierStack());
 
                                     // impModifyBitmapEx uses empty bitmap as sign to return that
                                     // the content will be completely replaced to mono color, use shortcut
 						            if(aBitmapEx.IsEmpty())
 						            {
 							            // color gets completely replaced, get it
-							            const basegfx::BColor aModifiedColor(maBColorModifierStack.getModifiedColor(basegfx::BColor()));
+							            const basegfx::BColor aModifiedColor(getBColorModifierStack().getModifiedColor(basegfx::BColor()));
 							            basegfx::B2DPolygon aPolygon(basegfx::tools::createUnitPolygon());
 							            aPolygon.transform(aLocalTransform);
 
-							            mpOutputDevice->SetFillColor(Color(aModifiedColor));
-							            mpOutputDevice->SetLineColor();
-							            mpOutputDevice->DrawPolygon(aPolygon);
+							            getOutputDevice().SetFillColor(Color(aModifiedColor));
+							            getOutputDevice().SetLineColor();
+							            getOutputDevice().DrawPolygon(aPolygon);
 
 							            bPainted = true;
 						            }
@@ -590,9 +612,9 @@ namespace drawinglayer
 
 						            // prepare OutDev
 						            const Point aEmptyPoint(0, 0);
-						            const Rectangle aVisiblePixel(aEmptyPoint, mpOutputDevice->GetOutputSizePixel());
-						            const bool bWasEnabled(mpOutputDevice->IsMapModeEnabled());
-						            mpOutputDevice->EnableMapMode(false);
+						            const Rectangle aVisiblePixel(aEmptyPoint, getOutputDevice().GetOutputSizePixel());
+						            const bool bWasEnabled(getOutputDevice().IsMapModeEnabled());
+						            getOutputDevice().EnableMapMode(false);
 
                                     // check if offset is used
                                     const sal_Int32 nOffsetX(basegfx::fround(rFillGraphicAttribute.getOffsetX() * nBWidth));
@@ -611,11 +633,11 @@ namespace drawinglayer
                                                 {
                                                     if(bPreScaled)
                                                     {
-                                                        mpOutputDevice->DrawBitmapEx(aOutRectPixel.TopLeft(), aBitmapEx);
+                                                        getOutputDevice().DrawBitmapEx(aOutRectPixel.TopLeft(), aBitmapEx);
                                                     }
                                                     else
                                                     {
-                                                        mpOutputDevice->DrawBitmapEx(aOutRectPixel.TopLeft(), aNeededBitmapSizePixel, aBitmapEx);
+                                                        getOutputDevice().DrawBitmapEx(aOutRectPixel.TopLeft(), aNeededBitmapSizePixel, aBitmapEx);
                                                     }
                                                 }
                                             }
@@ -638,11 +660,11 @@ namespace drawinglayer
                                                 {
                                                     if(bPreScaled)
                                                     {
-                                                        mpOutputDevice->DrawBitmapEx(aOutRectPixel.TopLeft(), aBitmapEx);
+                                                        getOutputDevice().DrawBitmapEx(aOutRectPixel.TopLeft(), aBitmapEx);
                                                     }
                                                     else
                                                     {
-                                                        mpOutputDevice->DrawBitmapEx(aOutRectPixel.TopLeft(), aNeededBitmapSizePixel, aBitmapEx);
+                                                        getOutputDevice().DrawBitmapEx(aOutRectPixel.TopLeft(), aNeededBitmapSizePixel, aBitmapEx);
                                                     }
                                                 }
                                             }
@@ -650,7 +672,7 @@ namespace drawinglayer
                                     }
 
 						            // restore OutDev
-						            mpOutputDevice->EnableMapMode(bWasEnabled);
+						            getOutputDevice().EnableMapMode(bWasEnabled);
                                 }
                             }
                         }
@@ -695,11 +717,11 @@ namespace drawinglayer
                         if(!rFillGraphicAttribute.getGraphic().IsTransparent() && !rFillGraphicAttribute.getGraphic().IsAlpha())
                         {
                             // bitmap is not transparent and has no alpha
-                            const sal_uInt32 nBColorModifierStackCount(maBColorModifierStack.count());
+                            const sal_uInt32 nBColorModifierStackCount(getBColorModifierStack().count());
 
                             if(nBColorModifierStackCount)
                             {
-                                const basegfx::BColorModifier& rTopmostModifier = maBColorModifierStack.getBColorModifier(nBColorModifierStackCount - 1);
+                                const basegfx::BColorModifier& rTopmostModifier = getBColorModifierStack().getBColorModifier(nBColorModifierStackCount - 1);
 
                                 if(basegfx::BCOLORMODIFYMODE_REPLACE == rTopmostModifier.getMode())
                                 {
@@ -710,10 +732,10 @@ namespace drawinglayer
                                         // with tiling, fill the whole PolyPolygon with the modifier color
                                         basegfx::B2DPolyPolygon aLocalPolyPolygon(rPolyPolygon);
 
-                                        aLocalPolyPolygon.transform(maCurrentTransformation);
-                                        mpOutputDevice->SetLineColor();
-                                        mpOutputDevice->SetFillColor(Color(rTopmostModifier.getBColor()));
-                                        mpOutputDevice->DrawPolyPolygon(aLocalPolyPolygon);
+                                        aLocalPolyPolygon.transform(getCurrentTransformation());
+                                        getOutputDevice().SetLineColor();
+                                        getOutputDevice().SetFillColor(Color(rTopmostModifier.getBColor()));
+                                        getOutputDevice().DrawPolyPolygon(aLocalPolyPolygon);
                                     }
                                     else
                                     {
@@ -742,10 +764,10 @@ namespace drawinglayer
 
                                         if(aTarget.count())
                                         {
-                                            aTarget.transform(maCurrentTransformation);
-                                            mpOutputDevice->SetLineColor();
-                                            mpOutputDevice->SetFillColor(Color(rTopmostModifier.getBColor()));
-                                            mpOutputDevice->DrawPolyPolygon(aTarget);
+                                            aTarget.transform(getCurrentTransformation());
+                                            getOutputDevice().SetLineColor();
+                                            getOutputDevice().SetFillColor(Color(rTopmostModifier.getBColor()));
+                                            getOutputDevice().DrawPolyPolygon(aTarget);
                                         }
                                     }
 
@@ -775,12 +797,12 @@ namespace drawinglayer
 		// direct draw of PolyPolygon with color
 		void VclProcessor2D::RenderPolyPolygonColorPrimitive2D(const primitive2d::PolyPolygonColorPrimitive2D& rPolygonCandidate)
 		{
-			const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(rPolygonCandidate.getBColor()));
-			mpOutputDevice->SetFillColor(Color(aPolygonColor));
-			mpOutputDevice->SetLineColor();
+			const basegfx::BColor aPolygonColor(getBColorModifierStack().getModifiedColor(rPolygonCandidate.getBColor()));
+			getOutputDevice().SetFillColor(Color(aPolygonColor));
+			getOutputDevice().SetLineColor();
 
 			basegfx::B2DPolyPolygon aLocalPolyPolygon(rPolygonCandidate.getB2DPolyPolygon());
-			aLocalPolyPolygon.transform(maCurrentTransformation);
+			aLocalPolyPolygon.transform(getCurrentTransformation());
 
             static bool bCheckTrapezoidDecomposition(false);
             static bool bShowOutlinesThere(false);
@@ -814,17 +836,17 @@ namespace drawinglayer
 
                             if(bShowOutlinesThere)
                             {
-                                mpOutputDevice->SetFillColor(Color(aPolygonColor));
-			                    mpOutputDevice->SetLineColor();
+                                getOutputDevice().SetFillColor(Color(aPolygonColor));
+			                    getOutputDevice().SetLineColor();
                             }
 
-                            mpOutputDevice->DrawPolygon(aTempPolygon);
+                            getOutputDevice().DrawPolygon(aTempPolygon);
 
                             if(bShowOutlinesThere)
                             {
-                                mpOutputDevice->SetFillColor();
-        		                mpOutputDevice->SetLineColor(Color(aInvPolygonColor));
-    	    		            mpOutputDevice->DrawPolyLine(aTempPolygon, 0.0);
+                                getOutputDevice().SetFillColor();
+        		                getOutputDevice().SetLineColor(Color(aInvPolygonColor));
+    	    		            getOutputDevice().DrawPolyLine(aTempPolygon, 0.0);
                             }
                         }
                     }
@@ -832,21 +854,21 @@ namespace drawinglayer
             }
             else
             {
-			    mpOutputDevice->DrawPolyPolygon(aLocalPolyPolygon);
+			    getOutputDevice().DrawPolyPolygon(aLocalPolyPolygon);
 
-                if(mnPolygonStrokePrimitive2D
+                if(0 != getPolygonStrokePrimitive2DCounter()
                     && getOptionsDrawinglayer().IsAntiAliasing()
-                    && (mpOutputDevice->GetAntialiasing() & ANTIALIASING_ENABLE_B2DDRAW))
+                    && (getOutputDevice().GetAntialiasing() & ANTIALIASING_ENABLE_B2DDRAW))
                 {
                     // when AA is on and this filled polygons are the result of stroked line geometry,
                     // draw the geometry once extra as lines to avoid AA 'gaps' between partial polygons
-			        mpOutputDevice->SetFillColor();
-			        mpOutputDevice->SetLineColor(Color(aPolygonColor));
+			        getOutputDevice().SetFillColor();
+			        getOutputDevice().SetLineColor(Color(aPolygonColor));
                     const sal_uInt32 nCount(aLocalPolyPolygon.count());
 
                     for(sal_uInt32 a(0); a < nCount; a++)
                     {
-                        mpOutputDevice->DrawPolyLine(aLocalPolyPolygon.getB2DPolygon(a), 0.0);
+                        getOutputDevice().DrawPolyLine(aLocalPolyPolygon.getB2DPolygon(a), 0.0);
                     }
                 }
             }
@@ -861,21 +883,20 @@ namespace drawinglayer
 
 				if(aMask.count())
 				{
-					aMask.transform(maCurrentTransformation);
+					aMask.transform(getCurrentTransformation());
 					const basegfx::B2DRange aRange(basegfx::tools::getRange(aMask));
-					impBufferDevice aBufferDevice(*mpOutputDevice, aRange, true);
+					impBufferDevice aBufferDevice(getOutputDevice(), aRange, true);
 
 					if(aBufferDevice.isVisible())
 					{
 						// remember last OutDev and set to content
-						OutputDevice* pLastOutputDevice = mpOutputDevice;
-						mpOutputDevice = &aBufferDevice.getContent();
+						pushOutputDevice(aBufferDevice.getContent());
 
 						// paint to it
 						process(rMaskCandidate.getChildren());
 
 						// back to old OutDev
-						mpOutputDevice = pLastOutputDevice;
+						popOutputDevice();
 
 					    // draw mask
                         if(getOptionsDrawinglayer().IsAntiAliasing())
@@ -910,9 +931,9 @@ namespace drawinglayer
 		{
 			if(rModifiedCandidate.getChildren().hasElements())
 			{
-				maBColorModifierStack.push(rModifiedCandidate.getColorModifier());
+				getBColorModifierStack().push(rModifiedCandidate.getColorModifier());
 				process(rModifiedCandidate.getChildren());
-				maBColorModifierStack.pop();
+				getBColorModifierStack().pop();
 			}
 		}
 
@@ -939,20 +960,19 @@ namespace drawinglayer
 			        {
                         // transparence is in visible range
 				        basegfx::B2DRange aRange(primitive2d::getB2DRangeFromPrimitive2DSequence(rTransCandidate.getChildren(), getViewInformation2D()));
-				        aRange.transform(maCurrentTransformation);
-				        impBufferDevice aBufferDevice(*mpOutputDevice, aRange, true);
+				        aRange.transform(getCurrentTransformation());
+				        impBufferDevice aBufferDevice(getOutputDevice(), aRange, true);
 
 				        if(aBufferDevice.isVisible())
 				        {
 					        // remember last OutDev and set to content
-					        OutputDevice* pLastOutputDevice = mpOutputDevice;
-					        mpOutputDevice = &aBufferDevice.getContent();
+					        pushOutputDevice(aBufferDevice.getContent());
 
 					        // paint content to it
 					        process(rTransCandidate.getChildren());
 
 					        // back to old OutDev
-					        mpOutputDevice = pLastOutputDevice;
+					        popOutputDevice();
 
 					        // dump buffer to outdev using given transparence
 					        aBufferDevice.paint(rTransCandidate.getTransparence());
@@ -968,33 +988,33 @@ namespace drawinglayer
 			if(rTransCandidate.getChildren().hasElements())
 			{
 				basegfx::B2DRange aRange(primitive2d::getB2DRangeFromPrimitive2DSequence(rTransCandidate.getChildren(), getViewInformation2D()));
-				aRange.transform(maCurrentTransformation);
-				impBufferDevice aBufferDevice(*mpOutputDevice, aRange, true);
+				aRange.transform(getCurrentTransformation());
+				impBufferDevice aBufferDevice(getOutputDevice(), aRange, true);
 
 				if(aBufferDevice.isVisible())
 				{
 					// remember last OutDev and set to content
-					OutputDevice* pLastOutputDevice = mpOutputDevice;
-					mpOutputDevice = &aBufferDevice.getContent();
+					pushOutputDevice(aBufferDevice.getContent());
 
 					// paint content to it
 					process(rTransCandidate.getChildren());
 
 					// set to mask
-					mpOutputDevice = &aBufferDevice.getTransparence();
+                    popOutputDevice();
+					pushOutputDevice(aBufferDevice.getTransparence());
 
 					// when painting transparence masks, reset the color stack
-					basegfx::BColorModifierStack aLastBColorModifierStack(maBColorModifierStack);
-					maBColorModifierStack = basegfx::BColorModifierStack();
+					basegfx::BColorModifierStack aLastBColorModifierStack(getBColorModifierStack());
+					getBColorModifierStack() = basegfx::BColorModifierStack();
 
 					// paint mask to it (always with transparence intensities, evtl. with AA)
 					process(rTransCandidate.getTransparence());
 
 					// back to old color stack
-					maBColorModifierStack = aLastBColorModifierStack;
+					getBColorModifierStack() = aLastBColorModifierStack;
 
 					// back to old OutDev
-					mpOutputDevice = pLastOutputDevice;
+					popOutputDevice();
 
 					// dump buffer to outdev
 					aBufferDevice.paint();
@@ -1006,12 +1026,12 @@ namespace drawinglayer
 		void VclProcessor2D::RenderTransformPrimitive2D(const primitive2d::TransformPrimitive2D& rTransformCandidate)
 		{
 			// remember current transformation and ViewInformation
-			const basegfx::B2DHomMatrix aLastCurrentTransformation(maCurrentTransformation);
+			const basegfx::B2DHomMatrix aLastCurrentTransformation(getCurrentTransformation());
             const geometry::ViewInformation2D aLastViewInformation2D(getViewInformation2D());
 
 			// create new transformations for CurrentTransformation
             // and for local ViewInformation2D
-			maCurrentTransformation = maCurrentTransformation * rTransformCandidate.getTransformation();
+			setCurrentTransformation(getCurrentTransformation() * rTransformCandidate.getTransformation());
             const geometry::ViewInformation2D aViewInformation2D(
                 getViewInformation2D().getObjectTransformation() * rTransformCandidate.getTransformation(),
                 getViewInformation2D().getViewTransformation(),
@@ -1025,7 +1045,7 @@ namespace drawinglayer
 			process(rTransformCandidate.getChildren());
 
 			// restore transformations
-			maCurrentTransformation = aLastCurrentTransformation;
+			setCurrentTransformation(aLastCurrentTransformation);
             updateViewInformation(aLastViewInformation2D);
 		}
 
@@ -1078,26 +1098,26 @@ namespace drawinglayer
 					const basegfx::B2DVector aDiscreteHalfSize(
                         (aBitmapSize.getWidth() - 1.0) * 0.5,
                         (aBitmapSize.getHeight() - 1.0) * 0.5);
-			        const bool bWasEnabled(mpOutputDevice->IsMapModeEnabled());
+			        const bool bWasEnabled(getOutputDevice().IsMapModeEnabled());
 
                     // do not forget evtl. moved origin in target device MapMode when
                     // switching it off; it would be missing and lead to wrong positions.
                     // All his could be done using logic sizes and coordinates, too, but
                     // we want a 1:1 bitmap rendering here, so it's more safe and faster
                     // to work with switching off MapMode usage completely.
-                    const Point aOrigin(mpOutputDevice->GetMapMode().GetOrigin());
+                    const Point aOrigin(getOutputDevice().GetMapMode().GetOrigin());
 
-                    mpOutputDevice->EnableMapMode(false);
+                    getOutputDevice().EnableMapMode(false);
 
 					for(std::vector< basegfx::B2DPoint >::const_iterator aIter(rPositions.begin()); aIter != rPositions.end(); aIter++)
 				    {
-					    const basegfx::B2DPoint aDiscreteTopLeft((maCurrentTransformation * (*aIter)) - aDiscreteHalfSize);
+					    const basegfx::B2DPoint aDiscreteTopLeft((getCurrentTransformation() * (*aIter)) - aDiscreteHalfSize);
                         const Point aDiscretePoint(basegfx::fround(aDiscreteTopLeft.getX()), basegfx::fround(aDiscreteTopLeft.getY()));
 
-						mpOutputDevice->DrawBitmapEx(aDiscretePoint + aOrigin, rMarker);
+						getOutputDevice().DrawBitmapEx(aDiscretePoint + aOrigin, rMarker);
 					}
 
-			        mpOutputDevice->EnableMapMode(bWasEnabled);
+			        getOutputDevice().EnableMapMode(bWasEnabled);
 				}
 			}
 		}
@@ -1106,15 +1126,15 @@ namespace drawinglayer
 		void VclProcessor2D::RenderPointArrayPrimitive2D(const primitive2d::PointArrayPrimitive2D& rPointArrayCandidate)
 		{
 			const std::vector< basegfx::B2DPoint >& rPositions = rPointArrayCandidate.getPositions();
-			const basegfx::BColor aRGBColor(maBColorModifierStack.getModifiedColor(rPointArrayCandidate.getRGBColor()));
+			const basegfx::BColor aRGBColor(getBColorModifierStack().getModifiedColor(rPointArrayCandidate.getRGBColor()));
 			const Color aVCLColor(aRGBColor);
 
 			for(std::vector< basegfx::B2DPoint >::const_iterator aIter(rPositions.begin()); aIter != rPositions.end(); aIter++)
 			{
-				const basegfx::B2DPoint aViewPosition(maCurrentTransformation * (*aIter));
+				const basegfx::B2DPoint aViewPosition(getCurrentTransformation() * (*aIter));
 				const Point aPos(basegfx::fround(aViewPosition.getX()), basegfx::fround(aViewPosition.getY()));
 
-				mpOutputDevice->DrawPixel(aPos, aVCLColor);
+				getOutputDevice().DrawPixel(aPos, aVCLColor);
 			}
 		}
 
@@ -1128,14 +1148,14 @@ namespace drawinglayer
 
 			if(basegfx::fTools::more(fLineWidth, 0.0))
 			{
-				const basegfx::B2DVector aDiscreteUnit(maCurrentTransformation * basegfx::B2DVector(fLineWidth, 0.0));
+				const basegfx::B2DVector aDiscreteUnit(getCurrentTransformation() * basegfx::B2DVector(fLineWidth, 0.0));
 				const double fDiscreteLineWidth(aDiscreteUnit.getLength());
 				const attribute::StrokeAttribute& rStrokeAttribute = rPolygonStrokeCandidate.getStrokeAttribute();
-				const basegfx::BColor aHairlineColor(maBColorModifierStack.getModifiedColor(rLineAttribute.getColor()));
+				const basegfx::BColor aHairlineColor(getBColorModifierStack().getModifiedColor(rLineAttribute.getColor()));
 				basegfx::B2DPolyPolygon aHairlinePolyPolygon;
 
-				mpOutputDevice->SetLineColor(Color(aHairlineColor));
-				mpOutputDevice->SetFillColor();
+				getOutputDevice().SetLineColor(Color(aHairlineColor));
+				getOutputDevice().SetFillColor();
 
 				if(0.0 == rStrokeAttribute.getFullDotDashLen())
 				{
@@ -1155,7 +1175,7 @@ namespace drawinglayer
 				if(nCount)
 				{
                     const bool bAntiAliased(getOptionsDrawinglayer().IsAntiAliasing());
-                    aHairlinePolyPolygon.transform(maCurrentTransformation);
+                    aHairlinePolyPolygon.transform(getCurrentTransformation());
 
                     if(bAntiAliased)
                     {
@@ -1165,7 +1185,7 @@ namespace drawinglayer
                             // paint as simple hairline
                             for(sal_uInt32 a(0); a < nCount; a++)
                             {
-                                mpOutputDevice->DrawPolyLine(aHairlinePolyPolygon.getB2DPolygon(a), 0.0);
+                                getOutputDevice().DrawPolyLine(aHairlinePolyPolygon.getB2DPolygon(a), 0.0);
                             }
 
                             bDone = true;
@@ -1185,22 +1205,22 @@ namespace drawinglayer
                                 aMat.set(0, 2, -fHalfDistance);
                                 aMat.set(1, 2, -fHalfDistance);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                                 
                                 aMat.set(0, 2, fDistance);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                                 
                                 aMat.set(0, 2, 0.0);
                                 aMat.set(1, 2, fDistance);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                                 
                                 aMat.set(0, 2, -fDistance);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             }
 
                             bDone = true;
@@ -1216,27 +1236,27 @@ namespace drawinglayer
                             {
                                 basegfx::B2DPolygon aCandidate(aHairlinePolyPolygon.getB2DPolygon(a));
 
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
 
                                 aMat.set(0, 2, -fDistance);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             
                                 aMat.set(0, 2, fDistance);
                                 aMat.set(1, 2, -fDistance);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             
                                 aMat.set(0, 2, fDistance);
                                 aMat.set(1, 2, fDistance);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             
                                 aMat.set(0, 2, -fDistance);
                                 aMat.set(1, 2, fDistance);
                                 aCandidate.transform(aMat);
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             }
 
                             bDone = true;
@@ -1253,7 +1273,7 @@ namespace drawinglayer
                             // line width below 1.5, draw the basic hairline polygon
                             for(sal_uInt32 a(0); a < nCount; a++)
                             {
-                                mpOutputDevice->DrawPolyLine(aHairlinePolyPolygon.getB2DPolygon(a), 0.0);
+                                getOutputDevice().DrawPolyLine(aHairlinePolyPolygon.getB2DPolygon(a), 0.0);
                             }
 
                             bDone = true;
@@ -1267,25 +1287,25 @@ namespace drawinglayer
                                 basegfx::B2DPolygon aCandidate(aHairlinePolyPolygon.getB2DPolygon(a));
                                 basegfx::B2DHomMatrix aMat;
 
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             
                                 aMat.set(0, 2, 1.0);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
                             
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             
                                 aMat.set(0, 2, 0.0);
                                 aMat.set(1, 2, 1.0);
                                 aCandidate.transform(aMat);
                             
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             
                                 aMat.set(0, 2, -1.0);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
                             
-                                mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
+                                getOutputDevice().DrawPolyLine(aCandidate, 0.0);
                             }
 
                             bDone = true;
@@ -1304,7 +1324,7 @@ namespace drawinglayer
                         // for very complex polygons, too
                         for(sal_uInt32 a(0); a < nCount; a++)
                         {
-                            mpOutputDevice->DrawPolyLine(
+                            getOutputDevice().DrawPolyLine(
                                 aHairlinePolyPolygon.getB2DPolygon(a), 
                                 fDiscreteLineWidth, 
                                 rLineAttribute.getLineJoin(),
@@ -1320,13 +1340,13 @@ namespace drawinglayer
             {
                 // remeber that we enter a PolygonStrokePrimitive2D decomposition,
                 // used for AA thick line drawing
-                mnPolygonStrokePrimitive2D++;
+                getPolygonStrokePrimitive2DCounter()++;
 
                 // line width is big enough for standard filled polygon visualisation or zero
 				process(rPolygonStrokeCandidate.get2DDecomposition(getViewInformation2D()));
 
                 // leave PolygonStrokePrimitive2D
-                mnPolygonStrokePrimitive2D--;
+                getPolygonStrokePrimitive2DCounter()--;
             }
 		}
 
@@ -1340,7 +1360,7 @@ namespace drawinglayer
             // to do that, i added a boolean return to OutputDevice::DrawEPS(..)
             // to know when EPS was handled directly already.
 			basegfx::B2DRange aRange(0.0, 0.0, 1.0, 1.0);
-            aRange.transform(maCurrentTransformation * rEpsPrimitive2D.getEpsTransform());
+            aRange.transform(getCurrentTransformation() * rEpsPrimitive2D.getEpsTransform());
 
             if(!aRange.isEmpty())
             {
@@ -1351,7 +1371,7 @@ namespace drawinglayer
                 if(!aRectangle.IsEmpty())
                 {
                     // try to paint EPS directly without fallback visualisation
-                    const bool bEPSPaintedDirectly(mpOutputDevice->DrawEPS(
+                    const bool bEPSPaintedDirectly(getOutputDevice().DrawEPS(
                         aRectangle.TopLeft(),
                         aRectangle.GetSize(),
                         rEpsPrimitive2D.getGfxLink(),
@@ -1373,15 +1393,15 @@ namespace drawinglayer
 
             if(basegfx::fTools::more(fDelta, 0.0))
             {
-                const basegfx::BColor aColorA(maBColorModifierStack.getModifiedColor(rCandidate.getColorA()));
-                const basegfx::BColor aColorB(maBColorModifierStack.getModifiedColor(rCandidate.getColorB()));
+                const basegfx::BColor aColorA(getBColorModifierStack().getModifiedColor(rCandidate.getColorA()));
+                const basegfx::BColor aColorB(getBColorModifierStack().getModifiedColor(rCandidate.getColorB()));
                 const double fDiscreteUnit((getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 0.0)).getLength());
 
                 // use color distance and discrete lengths to calculate step count
                 const sal_uInt32 nSteps(calculateStepsForSvgGradient(aColorA, aColorB, fDelta, fDiscreteUnit));
 
                 // switch off line painting
-                mpOutputDevice->SetLineColor();
+                getOutputDevice().SetLineColor();
 
                 // prepare polygon in needed width at start position (with discrete overlap)
                 const basegfx::B2DPolygon aPolygon(
@@ -1402,9 +1422,9 @@ namespace drawinglayer
                 {
                     basegfx::B2DPolygon aNew(aPolygon);
 
-                    aNew.transform(maCurrentTransformation * basegfx::tools::createTranslateB2DHomMatrix(fDelta * fUnitScale, 0.0));
-                    mpOutputDevice->SetFillColor(Color(basegfx::interpolate(aColorA, aColorB, fUnitScale)));
-                    mpOutputDevice->DrawPolyPolygon(basegfx::B2DPolyPolygon(aNew));
+                    aNew.transform(getCurrentTransformation() * basegfx::tools::createTranslateB2DHomMatrix(fDelta * fUnitScale, 0.0));
+                    getOutputDevice().SetFillColor(Color(basegfx::interpolate(aColorA, aColorB, fUnitScale)));
+                    getOutputDevice().DrawPolyPolygon(basegfx::B2DPolyPolygon(aNew));
                 }
             }
         }
@@ -1415,15 +1435,15 @@ namespace drawinglayer
 
             if(basegfx::fTools::more(fDeltaScale, 0.0))
             {
-                const basegfx::BColor aColorA(maBColorModifierStack.getModifiedColor(rCandidate.getColorA()));
-                const basegfx::BColor aColorB(maBColorModifierStack.getModifiedColor(rCandidate.getColorB()));
+                const basegfx::BColor aColorA(getBColorModifierStack().getModifiedColor(rCandidate.getColorA()));
+                const basegfx::BColor aColorB(getBColorModifierStack().getModifiedColor(rCandidate.getColorB()));
                 const double fDiscreteUnit((getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 0.0)).getLength());
 
                 // use color distance and discrete lengths to calculate step count
                 const sal_uInt32 nSteps(calculateStepsForSvgGradient(aColorA, aColorB, fDeltaScale, fDiscreteUnit));
 
                 // switch off line painting
-                mpOutputDevice->SetLineColor();
+                getOutputDevice().SetLineColor();
 
                 // prepare loop ([0.0 .. 1.0[, full polygons, no polypolygons with holes)
                 double fUnitScale(0.0);
@@ -1457,16 +1477,16 @@ namespace drawinglayer
 
                     basegfx::B2DPolygon aNew(basegfx::tools::createPolygonFromUnitCircle());
                     
-                    aNew.transform(maCurrentTransformation * aTransform);
-                    mpOutputDevice->SetFillColor(Color(basegfx::interpolate(aColorB, aColorA, fUnitScale)));
-                    mpOutputDevice->DrawPolyPolygon(basegfx::B2DPolyPolygon(aNew));
+                    aNew.transform(getCurrentTransformation() * aTransform);
+                    getOutputDevice().SetFillColor(Color(basegfx::interpolate(aColorB, aColorA, fUnitScale)));
+                    getOutputDevice().DrawPolyPolygon(basegfx::B2DPolyPolygon(aNew));
                 }
             }
         }
 
 		void VclProcessor2D::adaptLineToFillDrawMode() const
 		{
-			const sal_uInt32 nOriginalDrawMode(mpOutputDevice->GetDrawMode());
+			const sal_uInt32 nOriginalDrawMode(getOutputDevice().GetDrawMode());
 
 			if(nOriginalDrawMode & (DRAWMODE_BLACKLINE|DRAWMODE_GRAYLINE|DRAWMODE_GHOSTEDLINE|DRAWMODE_WHITELINE|DRAWMODE_SETTINGSLINE))
 			{
@@ -1517,13 +1537,13 @@ namespace drawinglayer
 					nAdaptedDrawMode &= ~DRAWMODE_SETTINGSFILL;
 				}
 
-				mpOutputDevice->SetDrawMode(nAdaptedDrawMode);
+				getOutputDevice().SetDrawMode(nAdaptedDrawMode);
 			}
 		}
 
 		void VclProcessor2D::adaptTextToFillDrawMode() const
 		{
-			const sal_uInt32 nOriginalDrawMode(mpOutputDevice->GetDrawMode());
+			const sal_uInt32 nOriginalDrawMode(getOutputDevice().GetDrawMode());
 			if(nOriginalDrawMode & (DRAWMODE_BLACKTEXT|DRAWMODE_GRAYTEXT|DRAWMODE_GHOSTEDTEXT|DRAWMODE_WHITETEXT|DRAWMODE_SETTINGSTEXT))
 			{
 				sal_uInt32 nAdaptedDrawMode(nOriginalDrawMode);
@@ -1573,7 +1593,7 @@ namespace drawinglayer
 					nAdaptedDrawMode &= ~DRAWMODE_SETTINGSFILL;
 				}
 
-				mpOutputDevice->SetDrawMode(nAdaptedDrawMode);
+				getOutputDevice().SetDrawMode(nAdaptedDrawMode);
 			}
 		}
 
@@ -1584,11 +1604,12 @@ namespace drawinglayer
 			const geometry::ViewInformation2D& rViewInformation,
 			OutputDevice& rOutDev)
 		:	BaseProcessor2D(rViewInformation),
-			mpOutputDevice(&rOutDev),
+			mpOutputDevice(0),
+            mnOutputDevices(),
 			maBColorModifierStack(),
 			maCurrentTransformation(),
 			maDrawinglayerOpt(),
-            mnPolygonStrokePrimitive2D(0)
+            mnPolygonStrokePrimitive2DCounter(0)
 		{
             // set digit language, derived from SvtCTLOptions to have the correct
             // number display for arabic/hindi numerals
@@ -1609,10 +1630,13 @@ namespace drawinglayer
             }
 
             rOutDev.SetDigitLanguage(eLang);
+            pushOutputDevice(rOutDev);
 		}
 
 		VclProcessor2D::~VclProcessor2D()
 		{
+            popOutputDevice();
+            OSL_ENSURE(mnOutputDevices.empty(), "Mismatch in push/popOutputDevices (!)");
 		}
 	} // end of namespace processor2d
 } // end of namespace drawinglayer

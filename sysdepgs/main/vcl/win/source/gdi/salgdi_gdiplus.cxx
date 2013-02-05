@@ -51,137 +51,613 @@
 #endif
 
 #include <basegfx/polygon/b2dpolygon.hxx>
+#include <basegfx/polygon/b2dpolypolygon.hxx>
+#include <vcl/salbtype.hxx>
+#include <vcl/bitmap.hxx>
+#include <vcl/bitmapex.hxx>
+#include <win/gdiplusobjectbuffer.hxx>
+#include <impbmp.hxx>
 
-// -----------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////
 
-void impAddB2DPolygonToGDIPlusGraphicsPathReal(Gdiplus::GraphicsPath& rPath, const basegfx::B2DPolygon& rPolygon, bool bNoLineJoin)
+class GdiPlusBitmapBufferNode : public basegfx::cache::node
 {
-    sal_uInt32 nCount(rPolygon.count());
+private:
+    boost::shared_ptr< Gdiplus::Bitmap >       maGdiPlusBitmapPtr;
 
-    if(nCount)
-    {
-        const sal_uInt32 nEdgeCount(rPolygon.isClosed() ? nCount : nCount - 1);
-        const bool bControls(rPolygon.areControlPointsUsed());
-        basegfx::B2DPoint aCurr(rPolygon.getB2DPoint(0));
-        Gdiplus::PointF aFCurr(Gdiplus::REAL(aCurr.getX()), Gdiplus::REAL(aCurr.getY()));
+protected:
+    Gdiplus::Bitmap* createGdiPlusBitmap(const WinSalBitmap& rBitmapSource);
+    Gdiplus::Bitmap* createGdiPlusBitmap(const WinSalBitmap& rBitmapSource, const WinSalBitmap& rAlphaSource);
 
-        for(sal_uInt32 a(0); a < nEdgeCount; a++)
-        {
-	        const sal_uInt32 nNextIndex((a + 1) % nCount);
-	        const basegfx::B2DPoint aNext(rPolygon.getB2DPoint(nNextIndex));
-	        const Gdiplus::PointF aFNext(Gdiplus::REAL(aNext.getX()), Gdiplus::REAL(aNext.getY()));
+public:
+    GdiPlusBitmapBufferNode(
+        GdiPlusObjectBuffer& rBuffer, 
+        const WinSalBitmap& rBitmapSource, 
+        const WinSalBitmap* pAlphaSource);
+    virtual ~GdiPlusBitmapBufferNode();
 
-	        if(bControls && (rPolygon.isNextControlPointUsed(a) || rPolygon.isPrevControlPointUsed(nNextIndex)))
-	        {
-		        const basegfx::B2DPoint aCa(rPolygon.getNextControlPoint(a));
-		        const basegfx::B2DPoint aCb(rPolygon.getPrevControlPoint(nNextIndex));
+    boost::shared_ptr< Gdiplus::Bitmap > getGdiPlusBitmapPtr() const { return maGdiPlusBitmapPtr; }
+};
 
-		        rPath.AddBezier(
-			        aFCurr, 
-			        Gdiplus::PointF(Gdiplus::REAL(aCa.getX()), Gdiplus::REAL(aCa.getY())),
-			        Gdiplus::PointF(Gdiplus::REAL(aCb.getX()), Gdiplus::REAL(aCb.getY())),
-			        aFNext);
-	        }
-	        else
-	        {
-		        rPath.AddLine(aFCurr, aFNext);
-	        }
+//////////////////////////////////////////////////////////////////////////////
 
-	        if(a + 1 < nEdgeCount)
-	        {
-		        aFCurr = aFNext;
+class GdiPlusGraphicsPathBufferNode : public basegfx::cache::node
+{
+private:
+    boost::shared_ptr< Gdiplus::GraphicsPath >       maGdiPlusGraphicsPathPtr;
 
-			    if(bNoLineJoin)
-			    {
-				    rPath.StartFigure();
-			    }
-	        }
-        }
-    }
+protected:
+    Gdiplus::GraphicsPath* createGdiPlusGraphicsPath(const basegfx::B2DPolygon& rSource);
+    Gdiplus::GraphicsPath* createGdiPlusGraphicsPath(const basegfx::B2DPolyPolygon& rSource);
+
+public:
+    GdiPlusGraphicsPathBufferNode(
+        GdiPlusObjectBuffer& rBuffer, 
+        const basegfx::B2DPolygon& rSource);
+    GdiPlusGraphicsPathBufferNode(
+        GdiPlusObjectBuffer& rBuffer, 
+        const basegfx::B2DPolyPolygon& rSource);
+    virtual ~GdiPlusGraphicsPathBufferNode();
+
+    boost::shared_ptr< Gdiplus::GraphicsPath > getGdiPlusGraphicsPathPtr() const { return maGdiPlusGraphicsPathPtr; }
+};
+
+//////////////////////////////////////////////////////////////////////////////
+
+GdiPlusObjectBuffer::GdiPlusObjectBuffer()
+:   basegfx::cache::cmanager(30), // keep for 30 seconds
+    Timer()
+{
+    SetTimeout(1000); // one second
+    Stop();
 }
 
-void impAddB2DPolygonToGDIPlusGraphicsPathInteger(Gdiplus::GraphicsPath& rPath, const basegfx::B2DPolygon& rPolygon, bool bNoLineJoin)
+GdiPlusObjectBuffer::~GdiPlusObjectBuffer()
 {
-    sal_uInt32 nCount(rPolygon.count());
-
-    if(nCount)
-    {
-        const sal_uInt32 nEdgeCount(rPolygon.isClosed() ? nCount : nCount - 1);
-        const bool bControls(rPolygon.areControlPointsUsed());
-        basegfx::B2DPoint aCurr(rPolygon.getB2DPoint(0));
-        Gdiplus::Point aICurr(INT(aCurr.getX()), INT(aCurr.getY()));
-
-        for(sal_uInt32 a(0); a < nEdgeCount; a++)
-        {
-	        const sal_uInt32 nNextIndex((a + 1) % nCount);
-	        const basegfx::B2DPoint aNext(rPolygon.getB2DPoint(nNextIndex));
-	        const Gdiplus::Point aINext(INT(aNext.getX()), INT(aNext.getY()));
-
-	        if(bControls && (rPolygon.isNextControlPointUsed(a) || rPolygon.isPrevControlPointUsed(nNextIndex)))
-	        {
-		        const basegfx::B2DPoint aCa(rPolygon.getNextControlPoint(a));
-		        const basegfx::B2DPoint aCb(rPolygon.getPrevControlPoint(nNextIndex));
-
-		        rPath.AddBezier(
-			        aICurr, 
-			        Gdiplus::Point(INT(aCa.getX()), INT(aCa.getY())),
-			        Gdiplus::Point(INT(aCb.getX()), INT(aCb.getY())),
-			        aINext);
-	        }
-	        else
-	        {
-		        rPath.AddLine(aICurr, aINext);
-	        }
-
-	        if(a + 1 < nEdgeCount)
-	        {
-		        aICurr = aINext;
-
-			    if(bNoLineJoin)
-			    {
-				    rPath.StartFigure();
-			    }
-	        }
-        }
-    }
+    Stop();
 }
 
-bool WinSalGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon& rPolyPolygon, double fTransparency)
+boost::shared_ptr< Gdiplus::Bitmap > GdiPlusObjectBuffer::getGdiPlusBitmapFromWinSalBitmap(
+    const WinSalBitmap& rBitmapSource, 
+    const WinSalBitmap* pAlphaSource)
 {
-	const sal_uInt32 nCount(rPolyPolygon.count());
+    const Size aSize(rBitmapSource.GetSize());
 
-	if(mbBrush && nCount && (fTransparency >= 0.0 && fTransparency < 1.0))
-	{
-		Gdiplus::Graphics aGraphics(getHDC());
-		const sal_uInt8 aTrans((sal_uInt8)255 - (sal_uInt8)basegfx::fround(fTransparency * 255.0));
-		Gdiplus::Color aTestColor(aTrans, SALCOLOR_RED(maFillColor), SALCOLOR_GREEN(maFillColor), SALCOLOR_BLUE(maFillColor));
-		Gdiplus::SolidBrush aTestBrush(aTestColor);
-		Gdiplus::GraphicsPath aPath;
+    if(aSize.Width() && aSize.Height())
+    {
+        const GdiPlusBitmapBufferNode* pEntry = static_cast< const GdiPlusBitmapBufferNode* >(getEntry(rBitmapSource));
 
-		for(sal_uInt32 a(0); a < nCount; a++)
-		{
-            if(0 != a)
-            {
-                aPath.StartFigure(); // #i101491# not needed for first run
-            }
-
-			impAddB2DPolygonToGDIPlusGraphicsPathReal(aPath, rPolyPolygon.getB2DPolygon(a), false);
-            aPath.CloseFigure();
-		}
-
-        if(getAntiAliasB2DDraw())
+        if(!pEntry)
         {
-            aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeAntiAlias);
+            pEntry = new GdiPlusBitmapBufferNode(*this, rBitmapSource, pAlphaSource);
         }
         else
         {
-    		aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeNone);
+            const_cast< GdiPlusBitmapBufferNode* >(pEntry)->touch();
         }
 
-		aGraphics.FillPath(&aTestBrush, &aPath);
-	}
+        return pEntry->getGdiPlusBitmapPtr();
+    }
 
- 	return true;
+    return boost::shared_ptr< Gdiplus::Bitmap >();
+}
+
+boost::shared_ptr< Gdiplus::GraphicsPath > GdiPlusObjectBuffer::getGdiPlusGraphicsPathFromB2DPolygon(
+    const basegfx::B2DPolygon& rPolygonSource)
+{
+    if(rPolygonSource.count())
+    {
+        const GdiPlusGraphicsPathBufferNode* pEntry = static_cast< const GdiPlusGraphicsPathBufferNode* >(getEntry(rPolygonSource.getCacheable()));
+
+        if(!pEntry)
+        {
+            pEntry = new GdiPlusGraphicsPathBufferNode(*this, rPolygonSource);
+        }
+        else
+        {
+            const_cast< GdiPlusGraphicsPathBufferNode* >(pEntry)->touch();
+        }
+
+        return pEntry->getGdiPlusGraphicsPathPtr();
+    }
+
+    return boost::shared_ptr< Gdiplus::GraphicsPath >();
+}
+
+boost::shared_ptr< Gdiplus::GraphicsPath > GdiPlusObjectBuffer::getGdiPlusGraphicsPathFromB2DPolyPolygon(
+    const basegfx::B2DPolyPolygon& rPolyPolygonSource)
+{
+    if(rPolyPolygonSource.count())
+    {
+        const GdiPlusGraphicsPathBufferNode* pEntry = static_cast< const GdiPlusGraphicsPathBufferNode* >(getEntry(rPolyPolygonSource.getCacheable()));
+
+        if(!pEntry)
+        {
+            pEntry = new GdiPlusGraphicsPathBufferNode(*this, rPolyPolygonSource);
+        }
+        else
+        {
+            const_cast< GdiPlusGraphicsPathBufferNode* >(pEntry)->touch();
+        }
+
+        return pEntry->getGdiPlusGraphicsPathPtr();
+    }
+
+    return boost::shared_ptr< Gdiplus::GraphicsPath >();
+}
+
+void GdiPlusObjectBuffer::onEmpty()
+{
+    Stop();
+}
+
+void GdiPlusObjectBuffer::onFilled()
+{
+    Start();
+}
+
+void GdiPlusObjectBuffer::Timeout()
+{
+    trigger();
+
+    if(!empty())
+    {
+        Start();
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+Gdiplus::Bitmap* GdiPlusBitmapBufferNode::createGdiPlusBitmap(
+    const WinSalBitmap& rBitmapSource)
+{
+    Gdiplus::Bitmap* pRetval(0);
+    WinSalBitmap* pSalRGB = const_cast< WinSalBitmap* >(&rBitmapSource);
+    WinSalBitmap* pExtraWinSalRGB = 0;
+
+    if(!pSalRGB->ImplGethDIB())
+    {
+        // we need DIB for success with AcquireBuffer, create a replacement WinSalBitmap
+        pExtraWinSalRGB = new WinSalBitmap();
+        pExtraWinSalRGB->Create(*pSalRGB, pSalRGB->GetBitCount());
+        pSalRGB = pExtraWinSalRGB;
+    }
+
+    BitmapBuffer* pRGB = pSalRGB->AcquireBuffer(true);
+    BitmapBuffer* pExtraRGB = 0;
+
+    if(pRGB && BMP_FORMAT_24BIT_TC_BGR != (pRGB->mnFormat & ~BMP_FORMAT_TOP_DOWN))
+    {
+        // convert source bitmap to BMP_FORMAT_24BIT_TC_BGR format if not yet in that format
+        SalTwoRect aSalTwoRect;
+
+        aSalTwoRect.mnSrcX = aSalTwoRect.mnSrcY = aSalTwoRect.mnDestX = aSalTwoRect.mnDestY = 0;
+        aSalTwoRect.mnSrcWidth = aSalTwoRect.mnDestWidth = pRGB->mnWidth;
+        aSalTwoRect.mnSrcHeight = aSalTwoRect.mnDestHeight = pRGB->mnHeight;
+
+        pExtraRGB = StretchAndConvert( 
+            *pRGB,
+            aSalTwoRect,
+            BMP_FORMAT_24BIT_TC_BGR,
+            0);
+
+        pSalRGB->ReleaseBuffer(pRGB, true);
+        pRGB = pExtraRGB;
+    }
+
+    if(pRGB 
+        && pRGB->mnWidth > 0
+        && pRGB->mnHeight > 0
+        && BMP_FORMAT_24BIT_TC_BGR == (pRGB->mnFormat & ~BMP_FORMAT_TOP_DOWN))
+    {
+        const sal_uInt32 nW(pRGB->mnWidth);
+        const sal_uInt32 nH(pRGB->mnHeight);
+
+        pRetval = new Gdiplus::Bitmap(nW, nH, PixelFormat24bppRGB);
+
+        if(pRetval)
+        {
+            sal_uInt8* pSrcRGB(pRGB->mpBits);
+            const sal_uInt32 nExtraRGB(pRGB->mnScanlineSize - (nW * 3));
+            const bool bTopDown(pRGB->mnFormat & BMP_FORMAT_TOP_DOWN);
+
+            for(sal_uInt32 y(0); y < nH; y++)
+            {
+                const sal_uInt32 nYInsert(bTopDown ? y : nH - y - 1);
+
+                for(sal_uInt32 x(0); x < nW; x++)
+                {
+                    const sal_uInt8 nB(*pSrcRGB++);
+                    const sal_uInt8 nG(*pSrcRGB++);
+                    const sal_uInt8 nR(*pSrcRGB++);
+
+                    pRetval->SetPixel(x, nYInsert, Gdiplus::Color(nR, nG, nB));
+                }
+
+                pSrcRGB += nExtraRGB;
+            }
+        }
+    }
+
+    if(pExtraRGB)
+    {
+        delete pExtraRGB;
+    }
+    else
+    {
+        pSalRGB->ReleaseBuffer(pRGB, true);
+    }
+
+    if(pExtraWinSalRGB)
+    {
+        delete pExtraWinSalRGB;
+    }
+
+    return pRetval;
+}
+
+Gdiplus::Bitmap* GdiPlusBitmapBufferNode::createGdiPlusBitmap(
+    const WinSalBitmap& rBitmapSource, 
+    const WinSalBitmap& rAlphaSource)
+{
+    Gdiplus::Bitmap* pRetval(0);
+    WinSalBitmap* pSalRGB = const_cast< WinSalBitmap* >(&rBitmapSource);
+    WinSalBitmap* pExtraWinSalRGB = 0;
+
+    if(!pSalRGB->ImplGethDIB())
+    {
+        // we need DIB for success with AcquireBuffer, create a replacement WinSalBitmap
+        pExtraWinSalRGB = new WinSalBitmap();
+        pExtraWinSalRGB->Create(*pSalRGB, pSalRGB->GetBitCount());
+        pSalRGB = pExtraWinSalRGB;
+    }
+
+    BitmapBuffer* pRGB = pSalRGB->AcquireBuffer(true);
+    BitmapBuffer* pExtraRGB = 0;
+
+    if(pRGB && BMP_FORMAT_24BIT_TC_BGR != (pRGB->mnFormat & ~BMP_FORMAT_TOP_DOWN))
+    {
+        // convert source bitmap to BMP_FORMAT_24BIT_TC_BGR format if not yet in that format
+        SalTwoRect aSalTwoRect;
+
+        aSalTwoRect.mnSrcX = aSalTwoRect.mnSrcY = aSalTwoRect.mnDestX = aSalTwoRect.mnDestY = 0;
+        aSalTwoRect.mnSrcWidth = aSalTwoRect.mnDestWidth = pRGB->mnWidth;
+        aSalTwoRect.mnSrcHeight = aSalTwoRect.mnDestHeight = pRGB->mnHeight;
+
+        pExtraRGB = StretchAndConvert( 
+            *pRGB,
+            aSalTwoRect,
+            BMP_FORMAT_24BIT_TC_BGR,
+            0);
+
+        pSalRGB->ReleaseBuffer(pRGB, true);
+        pRGB = pExtraRGB;
+    }
+
+    WinSalBitmap* pSalA = const_cast< WinSalBitmap* >(&rAlphaSource);
+    WinSalBitmap* pExtraWinSalA = 0;
+
+    if(!pSalA->ImplGethDIB())
+    {
+        // we need DIB for success with AcquireBuffer, create a replacement WinSalBitmap
+        pExtraWinSalA = new WinSalBitmap();
+        pExtraWinSalA->Create(*pSalA, pSalA->GetBitCount());
+        pSalA = pExtraWinSalA;
+    }
+
+    BitmapBuffer* pA = pSalA->AcquireBuffer(true);
+    BitmapBuffer* pExtraA = 0;
+
+    if(pA && BMP_FORMAT_8BIT_PAL != (pA->mnFormat & ~BMP_FORMAT_TOP_DOWN))
+    {
+        // convert alpha bitmap to BMP_FORMAT_8BIT_PAL format if not yet in that format
+        SalTwoRect aSalTwoRect;
+
+        aSalTwoRect.mnSrcX = aSalTwoRect.mnSrcY = aSalTwoRect.mnDestX = aSalTwoRect.mnDestY = 0;
+        aSalTwoRect.mnSrcWidth = aSalTwoRect.mnDestWidth = pA->mnWidth;
+        aSalTwoRect.mnSrcHeight = aSalTwoRect.mnDestHeight = pA->mnHeight;
+        const BitmapPalette& rTargetPalette = Bitmap::GetGreyPalette(256);
+
+        pExtraA = StretchAndConvert( 
+            *pA,
+            aSalTwoRect,
+            BMP_FORMAT_8BIT_PAL,
+            &rTargetPalette);
+
+        pSalA->ReleaseBuffer(pA, true);
+        pA = pExtraA;
+    }
+
+    if(pRGB 
+        && pA 
+        && pRGB->mnWidth > 0
+        && pRGB->mnHeight > 0
+        && pRGB->mnWidth == pA->mnWidth 
+        && pRGB->mnHeight == pA->mnHeight 
+        && BMP_FORMAT_24BIT_TC_BGR == (pRGB->mnFormat & ~BMP_FORMAT_TOP_DOWN)
+        && BMP_FORMAT_8BIT_PAL == (pA->mnFormat & ~BMP_FORMAT_TOP_DOWN))
+    {
+        // we have alpha and bitmap in known formats, create GdiPlus Bitmap as 32bit ARGB
+        const sal_uInt32 nW(pRGB->mnWidth);
+        const sal_uInt32 nH(pRGB->mnHeight);
+
+        pRetval = new Gdiplus::Bitmap(nW, nH, PixelFormat32bppARGB);
+
+        if(pRetval)
+        {
+            sal_uInt8* pSrcRGB(pRGB->mpBits);
+            sal_uInt8* pSrcA(pA->mpBits);
+            const sal_uInt32 nExtraRGB(pRGB->mnScanlineSize - (nW * 3));
+            const sal_uInt32 nExtraA(pA->mnScanlineSize - nW);
+            const bool bTopDown(pRGB->mnFormat & BMP_FORMAT_TOP_DOWN);
+
+            for(sal_uInt32 y(0); y < nH; y++)
+            {
+                const sal_uInt32 nYInsert(bTopDown ? y : nH - y - 1);
+
+                for(sal_uInt32 x(0); x < nW; x++)
+                {
+                    const sal_uInt8 nB(*pSrcRGB++);
+                    const sal_uInt8 nG(*pSrcRGB++);
+                    const sal_uInt8 nR(*pSrcRGB++);
+                    const sal_uInt8 nA(0xff - *pSrcA++);
+
+                    pRetval->SetPixel(x, nYInsert, Gdiplus::Color(nA, nR, nG, nB));
+                }
+
+                pSrcRGB += nExtraRGB;
+                pSrcA += nExtraA;
+            }
+        }
+    }
+
+    if(pExtraA)
+    {
+        delete pExtraA;
+    }
+    else
+    {
+        pSalA->ReleaseBuffer(pA, true);
+    }
+
+    if(pExtraWinSalA)
+    {
+        delete pExtraWinSalA;
+    }
+
+    if(pExtraRGB)
+    {
+        delete pExtraRGB;
+    }
+    else
+    {
+        pSalRGB->ReleaseBuffer(pRGB, true);
+    }
+
+    if(pExtraWinSalRGB)
+    {
+        delete pExtraWinSalRGB;
+    }
+
+    return pRetval;
+}
+
+GdiPlusBitmapBufferNode::GdiPlusBitmapBufferNode(
+    GdiPlusObjectBuffer& rBuffer, 
+    const WinSalBitmap& rBitmapSource, 
+    const WinSalBitmap* pAlphaSource)
+:   basegfx::cache::node(rBuffer, rBitmapSource),
+    maGdiPlusBitmapPtr()
+{
+    if(pAlphaSource)
+    {
+        maGdiPlusBitmapPtr.reset(createGdiPlusBitmap(rBitmapSource, *pAlphaSource));
+    }
+    else
+    {
+        maGdiPlusBitmapPtr.reset(createGdiPlusBitmap(rBitmapSource));
+    }
+}
+
+GdiPlusBitmapBufferNode::~GdiPlusBitmapBufferNode()
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+namespace
+{
+    void addGdiPlusGraphicsPath(
+        Gdiplus::GraphicsPath* pRetval, const basegfx::B2DPolygon& rSource,
+        bool bForceSingleEdges)
+    {
+        const sal_uInt32 nCount(rSource.count());
+
+        if(nCount)
+        {
+            const sal_uInt32 nEdgeCount(rSource.isClosed() ? nCount : nCount - 1);
+            const bool bControls(rSource.areControlPointsUsed());
+            basegfx::B2DPoint aCurr(rSource.getB2DPoint(0));
+            Gdiplus::PointF aFCurr(Gdiplus::REAL(aCurr.getX()), Gdiplus::REAL(aCurr.getY()));
+
+            for(sal_uInt32 a(0); a < nEdgeCount; a++)
+            {
+                const sal_uInt32 nNextIndex((a + 1) % nCount);
+                const basegfx::B2DPoint aNext(rSource.getB2DPoint(nNextIndex));
+                const Gdiplus::PointF aFNext(Gdiplus::REAL(aNext.getX()), Gdiplus::REAL(aNext.getY()));
+
+                if(bControls && (rSource.isNextControlPointUsed(a) || rSource.isPrevControlPointUsed(nNextIndex)))
+                {
+                    const basegfx::B2DPoint aCa(rSource.getNextControlPoint(a));
+                    const basegfx::B2DPoint aCb(rSource.getPrevControlPoint(nNextIndex));
+
+                    pRetval->AddBezier(
+                        aFCurr, 
+                        Gdiplus::PointF(Gdiplus::REAL(aCa.getX()), Gdiplus::REAL(aCa.getY())),
+                        Gdiplus::PointF(Gdiplus::REAL(aCb.getX()), Gdiplus::REAL(aCb.getY())),
+                        aFNext);
+                }
+                else
+                {
+                    pRetval->AddLine(aFCurr, aFNext);
+                }
+
+                if(a + 1 < nEdgeCount)
+                {
+                    aFCurr = aFNext;
+
+                    if(bForceSingleEdges)
+                    {
+                        pRetval->StartFigure();
+                    }
+                }
+            }
+        }
+    }
+} // end of anonymous namespace
+
+//////////////////////////////////////////////////////////////////////////////
+
+Gdiplus::GraphicsPath* GdiPlusGraphicsPathBufferNode::createGdiPlusGraphicsPath(const basegfx::B2DPolygon& rSource)
+{
+    Gdiplus::GraphicsPath* pRetval = 0;
+    const sal_uInt32 nCount(rSource.count());
+
+    if(nCount)
+    {
+        pRetval = new Gdiplus::GraphicsPath;
+
+        addGdiPlusGraphicsPath(pRetval, rSource, false);
+
+        if(rSource.isClosed())
+        {
+            pRetval->CloseFigure();
+        }
+    }
+
+    return pRetval;
+}
+
+Gdiplus::GraphicsPath* GdiPlusGraphicsPathBufferNode::createGdiPlusGraphicsPath(const basegfx::B2DPolyPolygon& rSource)
+{
+    Gdiplus::GraphicsPath* pRetval = 0;
+    const sal_uInt32 nCount(rSource.count());
+
+    if(nCount)
+    {
+        pRetval = new Gdiplus::GraphicsPath;
+        bool bFirst(true);
+
+        for(sal_uInt32 a(0); a < nCount; a++)
+        {
+            const basegfx::B2DPolygon aPolygon(rSource.getB2DPolygon(a));
+
+            // try to get an already existing and buffered Gdiplus::GraphicsPath from the single B2DPolygon
+            boost::shared_ptr< Gdiplus::GraphicsPath > aSource(GetSalData()->maGdiPlusObjectBuffer.getGdiPlusGraphicsPathFromB2DPolygon(aPolygon));
+
+            if(aSource.get())
+            {
+                if(bFirst)
+                {
+                    pRetval->StartFigure();
+                    bFirst = false;
+                }
+
+                // concatenate partial path
+                pRetval->AddPath(aSource.get(), FALSE);
+
+                // for PolyPolygon, always close
+                pRetval->CloseFigure();
+            }
+        }
+    }
+
+    return pRetval;
+}
+
+GdiPlusGraphicsPathBufferNode::GdiPlusGraphicsPathBufferNode(
+    GdiPlusObjectBuffer& rBuffer, 
+    const basegfx::B2DPolygon& rSource)
+:   basegfx::cache::node(rBuffer, rSource.getCacheable()),
+    maGdiPlusGraphicsPathPtr()
+{
+    maGdiPlusGraphicsPathPtr.reset(createGdiPlusGraphicsPath(rSource));
+}
+
+GdiPlusGraphicsPathBufferNode::GdiPlusGraphicsPathBufferNode(
+    GdiPlusObjectBuffer& rBuffer, 
+    const basegfx::B2DPolyPolygon& rSource)
+:   basegfx::cache::node(rBuffer, rSource.getCacheable()),
+    maGdiPlusGraphicsPathPtr()
+{
+    maGdiPlusGraphicsPathPtr.reset(createGdiPlusGraphicsPath(rSource));
+}
+
+GdiPlusGraphicsPathBufferNode::~GdiPlusGraphicsPathBufferNode()
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+VCL_DLLPUBLIC boost::shared_ptr< Gdiplus::Bitmap > getBufferedGdiPlusBitmapFromBitmapEx(
+    const BitmapEx& rBitmapEx)
+{
+    const SalBitmap& rSalSrcBmp = *rBitmapEx.ImplGetBitmapImpBitmap()->ImplGetSalBitmap();
+    const SalBitmap* pSalAlphaBmp = 0;
+
+    if(rBitmapEx.IsTransparent())
+    {
+        pSalAlphaBmp = rBitmapEx.ImplGetMaskImpBitmap()->ImplGetSalBitmap();
+    }
+
+    return GetSalData()->maGdiPlusObjectBuffer.getGdiPlusBitmapFromWinSalBitmap(
+        static_cast< const WinSalBitmap& >(rSalSrcBmp), 
+        static_cast< const WinSalBitmap* >(pSalAlphaBmp));
+}
+
+VCL_DLLPUBLIC boost::shared_ptr< Gdiplus::GraphicsPath > getBufferedGdiPlusGraphicsPathFromB2DPolygon(
+    const basegfx::B2DPolygon& rSource)
+{
+    return GetSalData()->maGdiPlusObjectBuffer.getGdiPlusGraphicsPathFromB2DPolygon(rSource);
+}
+
+VCL_DLLPUBLIC boost::shared_ptr< Gdiplus::GraphicsPath > getBufferedGdiPlusGraphicsPathFromB2DPolyPolygon(
+    const basegfx::B2DPolyPolygon& rSource)
+{
+    return GetSalData()->maGdiPlusObjectBuffer.getGdiPlusGraphicsPathFromB2DPolyPolygon(rSource);
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+bool WinSalGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon& rPolyPolygon, double fTransparency)
+{
+    const sal_uInt32 nCount(rPolyPolygon.count());
+
+    if(mbBrush && nCount && (fTransparency >= 0.0 && fTransparency < 1.0))
+    {
+        const boost::shared_ptr< Gdiplus::GraphicsPath > aPath(getBufferedGdiPlusGraphicsPathFromB2DPolyPolygon(rPolyPolygon));
+
+        if(aPath.get())
+        {
+            Gdiplus::Graphics aGraphics(getHDC());
+            const sal_uInt8 aTrans((sal_uInt8)255 - (sal_uInt8)basegfx::fround(fTransparency * 255.0));
+            Gdiplus::Color aTestColor(aTrans, SALCOLOR_RED(maFillColor), SALCOLOR_GREEN(maFillColor), SALCOLOR_BLUE(maFillColor));
+            Gdiplus::SolidBrush aTestBrush(aTestColor);
+
+            if(getAntiAliasB2DDraw())
+            {
+                aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeAntiAlias);
+            }
+            else
+            {
+                aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeNone);
+            }
+
+            aGraphics.FillPath(&aTestBrush, aPath.get());
+        }
+    }
+
+    return true;
 }
 
 bool WinSalGraphics::drawPolyLine( 
@@ -193,94 +669,104 @@ bool WinSalGraphics::drawPolyLine(
 {
     const sal_uInt32 nCount(rPolygon.count());
 
-	if(mbPen && nCount)
-	{
-		Gdiplus::Graphics aGraphics(getHDC());
-		const sal_uInt8 aTrans = (sal_uInt8)basegfx::fround( 255 * (1.0 - fTransparency) );
-		Gdiplus::Color aTestColor(aTrans, SALCOLOR_RED(maLineColor), SALCOLOR_GREEN(maLineColor), SALCOLOR_BLUE(maLineColor));
-		Gdiplus::Pen aTestPen(aTestColor, Gdiplus::REAL(rLineWidths.getX()));
-		Gdiplus::GraphicsPath aPath;
-		bool bNoLineJoin(false);
+    if(mbPen && nCount)
+    {
+        boost::shared_ptr< Gdiplus::GraphicsPath > aPath;
+        const sal_uInt8 aTrans = (sal_uInt8)basegfx::fround( 255 * (1.0 - fTransparency) );
+        Gdiplus::Color aTestColor(aTrans, SALCOLOR_RED(maLineColor), SALCOLOR_GREEN(maLineColor), SALCOLOR_BLUE(maLineColor));
+        Gdiplus::Pen aTestPen(aTestColor, Gdiplus::REAL(rLineWidths.getX()));
+        bool bNoLineJoin(false);
 
-		switch(eLineJoin)
-		{
-			default : // basegfx::B2DLINEJOIN_NONE :
-			{
-				if(basegfx::fTools::more(rLineWidths.getX(), 0.0))
-				{
-					bNoLineJoin = true;
-				}
-				break;
-			}
-			case basegfx::B2DLINEJOIN_BEVEL :
-			{
-				aTestPen.SetLineJoin(Gdiplus::LineJoinBevel);
-				break;
-			}
-			case basegfx::B2DLINEJOIN_MIDDLE :
-			case basegfx::B2DLINEJOIN_MITER :
-			{
-				const Gdiplus::REAL aMiterLimit(15.0);
-				aTestPen.SetMiterLimit(aMiterLimit);
-				aTestPen.SetLineJoin(Gdiplus::LineJoinMiter);
-				break;
-			}
-			case basegfx::B2DLINEJOIN_ROUND :
-			{
-				aTestPen.SetLineJoin(Gdiplus::LineJoinRound);
-				break;
-			}
-		}
-
-        switch(eLineCap)
+        switch(eLineJoin)
         {
-            default: /*com::sun::star::drawing::LineCap_BUTT*/
+            default : // basegfx::B2DLINEJOIN_NONE :
             {
-                // nothing to do
+                if(basegfx::fTools::more(rLineWidths.getX(), 0.0))
+                {
+                    bNoLineJoin = true;
+                }
                 break;
             }
-            case com::sun::star::drawing::LineCap_ROUND:
+            case basegfx::B2DLINEJOIN_BEVEL :
             {
-                aTestPen.SetStartCap(Gdiplus::LineCapRound);
-                aTestPen.SetEndCap(Gdiplus::LineCapRound);
+                aTestPen.SetLineJoin(Gdiplus::LineJoinBevel);
                 break;
             }
-            case com::sun::star::drawing::LineCap_SQUARE:
+            case basegfx::B2DLINEJOIN_MIDDLE :
+            case basegfx::B2DLINEJOIN_MITER :
             {
-                aTestPen.SetStartCap(Gdiplus::LineCapSquare);
-                aTestPen.SetEndCap(Gdiplus::LineCapSquare);
+                const Gdiplus::REAL aMiterLimit(15.0);
+                aTestPen.SetMiterLimit(aMiterLimit);
+                aTestPen.SetLineJoin(Gdiplus::LineJoinMiter);
+                break;
+            }
+            case basegfx::B2DLINEJOIN_ROUND :
+            {
+                aTestPen.SetLineJoin(Gdiplus::LineJoinRound);
                 break;
             }
         }
 
-		if(nCount > 250 && basegfx::fTools::more(rLineWidths.getX(), 1.5))
+        if(bNoLineJoin)
         {
-    		impAddB2DPolygonToGDIPlusGraphicsPathInteger(aPath, rPolygon, bNoLineJoin);
+            // need to create a special version to support the line join mode 'none'. This
+            // is simply done by creating single edges, so no line joins will be visualized
+            Gdiplus::GraphicsPath* pNew = new Gdiplus::GraphicsPath;
+
+            addGdiPlusGraphicsPath(pNew, rPolygon, true);
+
+            if(rPolygon.isClosed())
+            {
+                pNew->CloseFigure();
+            }
+
+            aPath.reset(pNew);
         }
         else
         {
-    		impAddB2DPolygonToGDIPlusGraphicsPathReal(aPath, rPolygon, bNoLineJoin);
+            // use the buffered common geometry version
+            aPath = getBufferedGdiPlusGraphicsPathFromB2DPolygon(rPolygon);
         }
 
-        if(rPolygon.isClosed() && !bNoLineJoin)
+        if(aPath.get())
         {
-            // #i101491# needed to create the correct line joins
-            aPath.CloseFigure();
-        }
-		
-        if(getAntiAliasB2DDraw())
-        {
-    		aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeAntiAlias);
-        }
-        else
-        {
-    		aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeNone);
-        }
+            Gdiplus::Graphics aGraphics(getHDC());
 
-		aGraphics.DrawPath(&aTestPen, &aPath);
-	}
+            switch(eLineCap)
+            {
+                default: /*com::sun::star::drawing::LineCap_BUTT*/
+                {
+                    // nothing to do
+                    break;
+                }
+                case com::sun::star::drawing::LineCap_ROUND:
+                {
+                    aTestPen.SetStartCap(Gdiplus::LineCapRound);
+                    aTestPen.SetEndCap(Gdiplus::LineCapRound);
+                    break;
+                }
+                case com::sun::star::drawing::LineCap_SQUARE:
+                {
+                    aTestPen.SetStartCap(Gdiplus::LineCapSquare);
+                    aTestPen.SetEndCap(Gdiplus::LineCapSquare);
+                    break;
+                }
+            }
 
-	return true;
+            if(getAntiAliasB2DDraw())
+            {
+                aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeAntiAlias);
+            }
+            else
+            {
+                aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeNone);
+            }
+
+            aGraphics.DrawPath(&aTestPen, aPath.get());
+        }
+    }
+
+    return true;
 }
 
 // -----------------------------------------------------------------------
@@ -354,7 +840,9 @@ bool WinSalGraphics::tryDrawBitmapGdiPlus(const SalTwoRect& rTR, const SalBitmap
     if(rTR.mnSrcWidth && rTR.mnSrcHeight && rTR.mnDestWidth && rTR.mnDestHeight)
     {
         const WinSalBitmap& rSalBitmap = static_cast< const WinSalBitmap& >(rSrcBitmap);
-        GdiPlusBmpPtr aARGB(rSalBitmap.ImplGetGdiPlusBitmap());
+        boost::shared_ptr< Gdiplus::Bitmap > aARGB(GetSalData()->maGdiPlusObjectBuffer.getGdiPlusBitmapFromWinSalBitmap(
+            rSalBitmap,
+            0));
 
         if(aARGB.get())
         {
@@ -388,7 +876,9 @@ bool WinSalGraphics::drawAlphaBitmap(
     {
         const WinSalBitmap& rSalBitmap = static_cast< const WinSalBitmap& >(rSrcBitmap);
         const WinSalBitmap& rSalAlpha = static_cast< const WinSalBitmap& >(rAlphaBmp);
-        GdiPlusBmpPtr aARGB(rSalBitmap.ImplGetGdiPlusBitmap(&rSalAlpha));
+        boost::shared_ptr< Gdiplus::Bitmap > aARGB(GetSalData()->maGdiPlusObjectBuffer.getGdiPlusBitmapFromWinSalBitmap(
+            rSalBitmap, 
+            &rSalAlpha));
 
         if(aARGB.get())
         {
@@ -424,7 +914,9 @@ bool WinSalGraphics::drawTransformedBitmap(
 {
     const WinSalBitmap& rSalBitmap = static_cast< const WinSalBitmap& >(rSourceBitmap);
     const WinSalBitmap* pSalAlpha = static_cast< const WinSalBitmap* >(pAlphaBitmap);
-    GdiPlusBmpPtr aARGB(rSalBitmap.ImplGetGdiPlusBitmap(pSalAlpha));
+    boost::shared_ptr< Gdiplus::Bitmap > aARGB(GetSalData()->maGdiPlusObjectBuffer.getGdiPlusBitmapFromWinSalBitmap(
+        rSalBitmap, 
+        pSalAlpha));
 
     if(aARGB.get())
     {

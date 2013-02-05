@@ -90,7 +90,8 @@ mkdir: %_DEST%\inc%_EXT%\basegfx\tuple
 ..\inc\basegfx\tuple\b3i64tuple.hxx %_DEST%\inc%_EXT%\basegfx\tuple\b3i64tuple.hxx
 
 mkdir: %_DEST%\inc%_EXT%\basegfx\tools
-..\inc\basegfx\tools\canvastools.hxx %_DEST%\inc%_EXT%\basegfx\tools\canvastools.hxx
+..\inc\basegfx\tools\cacheable.hxx %_DEST%\inc%_EXT%\basegfx\tools\cacheable.hxx
+..\inc\basegfx\tools\cmanager.hxx %_DEST%\inc%_EXT%\basegfx\tools\cmanager.hxx
 ..\inc\basegfx\tools\keystoplerp.hxx %_DEST%\inc%_EXT%\basegfx\tools\keystoplerp.hxx
 ..\inc\basegfx\tools\lerp.hxx %_DEST%\inc%_EXT%\basegfx\tools\lerp.hxx
 ..\inc\basegfx\tools\unopolypolygon.hxx %_DEST%\inc%_EXT%\basegfx\tools\unopolypolygon.hxx

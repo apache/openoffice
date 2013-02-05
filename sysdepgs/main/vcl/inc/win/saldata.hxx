@@ -19,19 +19,15 @@
  * 
  *************************************************************/
 
-
-
 #ifndef _SV_SALDATA_HXX
 #define _SV_SALDATA_HXX
 
 #include "osl/module.h"
-
 #include <svdata.hxx>
 #include <salwtype.hxx>
-
 #include <win/wincomp.hxx>
-
-#include <set>  // for hMenu validation
+#include <win/gdiplusobjectbuffer.hxx>
+#include <set>
 #include <map>
 
 class AutoTimer;
@@ -135,6 +131,9 @@ public:
     
     // for GdiPlus GdiplusStartup/GdiplusShutdown
     ULONG_PTR               gdiplusToken;
+
+    // cache for Gdiplus objects
+    GdiPlusObjectBuffer     maGdiPlusObjectBuffer;
 
     std::set< HMENU >       mhMenuSet;              // keeps track of menu handles created by VCL, used by IsKnownMenuHandle()
     std::map< UINT,USHORT > maVKMap;      // map some dynamic VK_* entries

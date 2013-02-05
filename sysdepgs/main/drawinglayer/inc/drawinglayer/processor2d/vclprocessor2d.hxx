@@ -29,6 +29,7 @@
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <basegfx/color/bcolormodifier.hxx>
 #include <svtools/optionsdrawinglayer.hxx>
+#include <vector>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -71,9 +72,10 @@ namespace drawinglayer
          */
 		class VclProcessor2D : public BaseProcessor2D
 		{
-		protected:
-			// the destination OutDev
+        private:
+			// the destination OutDev and the stack of OutputDevices
 			OutputDevice*											mpOutputDevice;
+            std::vector< OutputDevice* >                            mnOutputDevices;
 
 			// the modifiedColorPrimitive stack
 			basegfx::BColorModifierStack							maBColorModifierStack;
@@ -88,11 +90,30 @@ namespace drawinglayer
 
             // stack value (increment and decrement) to count how deep we are in
             // PolygonStrokePrimitive2D's decompositions (normally only one)
-            sal_uInt32                                              mnPolygonStrokePrimitive2D;
+            sal_uInt32                                              mnPolygonStrokePrimitive2DCounter;
 
-			//////////////////////////////////////////////////////////////////////////////
+		protected:
+            //////////////////////////////////////////////////////////////////////////////
+            // tooling
+            void pushOutputDevice(OutputDevice& rNew);
+            void popOutputDevice();
+            OutputDevice& getOutputDevice() const { OSL_ENSURE(0 != mpOutputDevice, "0 == mpOutputDevice (!)"); return *mpOutputDevice; }
+
+            // access to transformation stack
+            const basegfx::B2DHomMatrix& getCurrentTransformation() const { return maCurrentTransformation; }
+            void setCurrentTransformation(const basegfx::B2DHomMatrix& rNew) { maCurrentTransformation = rNew; }
+
+            // access to color modifyer stack
+            basegfx::BColorModifierStack& getBColorModifierStack() { return maBColorModifierStack; }
+
+            // access to counter to manage depth of fat line sub-usings
+            sal_uInt32& getPolygonStrokePrimitive2DCounter() { return mnPolygonStrokePrimitive2DCounter; }
+
+            // access to Drawinglayer configuration options
+            const SvtOptionsDrawinglayer& getOptionsDrawinglayer() const { return maDrawinglayerOpt; }
+
+            //////////////////////////////////////////////////////////////////////////////
 			// common VCL rendering support
-
             void RenderTextSimpleOrDecoratedPortionPrimitive2D(const primitive2d::TextSimplePortionPrimitive2D& rTextCandidate);
 			void RenderPolygonHairlinePrimitive2D(const primitive2d::PolygonHairlinePrimitive2D& rPolygonCandidate, bool bPixelBased);
 			void RenderBitmapPrimitive2D(const primitive2d::BitmapPrimitive2D& rBitmapCandidate);
@@ -123,9 +144,6 @@ namespace drawinglayer
 				const geometry::ViewInformation2D& rViewInformation, 
 				OutputDevice& rOutDev);
 			virtual ~VclProcessor2D();
-
-			// access to Drawinglayer configuration options
-			const SvtOptionsDrawinglayer& getOptionsDrawinglayer() const { return maDrawinglayerOpt; }
 		};
 	} // end of namespace processor2d
 } // end of namespace drawinglayer

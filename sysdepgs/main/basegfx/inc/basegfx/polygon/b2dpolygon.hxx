@@ -42,6 +42,10 @@ namespace basegfx
     class B2DCubicBezier;
 } // end of namespace basegfx
 
+#ifdef WNT
+namespace basegfx { namespace cache { class cacheable; }}
+#endif
+
 //////////////////////////////////////////////////////////////////////////////
 
 namespace basegfx
@@ -262,6 +266,10 @@ namespace basegfx
         const B2DPoint* end() const;
         B2DPoint* begin();
         B2DPoint* end();
+
+#ifdef WNT
+        basegfx::cache::cacheable& getCacheable() const;
+#endif
 	};
 
     // typedef for a vector of B2DPolygons

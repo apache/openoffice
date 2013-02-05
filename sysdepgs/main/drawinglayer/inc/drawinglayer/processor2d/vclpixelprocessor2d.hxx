@@ -19,14 +19,15 @@
  * 
  *************************************************************/
 
-
-
 #ifndef INCLUDED_DRAWINGLAYER_PROCESSOR2D_VCLPIXELPROCESSOR2D_HXX
 #define INCLUDED_DRAWINGLAYER_PROCESSOR2D_VCLPIXELPROCESSOR2D_HXX
 
 #include <drawinglayer/drawinglayerdllapi.h>
 #include <drawinglayer/processor2d/vclprocessor2d.hxx>
-#include <vcl/outdev.hxx>
+
+//////////////////////////////////////////////////////////////////////////////
+// predefines
+class OutputDevice;
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -44,7 +45,7 @@ namespace drawinglayer
 		{
         private:
 		protected:
-			/*  the local processor for BasePrinitive2D-Implementation based primitives,
+			/**  the local processor for BasePrinitive2D-Implementation based primitives,
 			    called from the common process()-implementation
              */
 			virtual void processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate);

@@ -514,4 +514,16 @@ inline void Application::EndYield()
     PostUserEvent( Link() );
 }
 
+//////////////////////////////////////////////////////////////////////////////
+// support for access to buffered instances of BitmapEx and basegfx Polygons
+// as Gdiplus objects
+#ifdef WNT
+namespace Gdiplus { class Bitmap; class GraphicsPath; }
+namespace basegfx { class B2DPolygon; class B2DPolyPolygon; }
+VCL_DLLPUBLIC boost::shared_ptr< Gdiplus::Bitmap > getBufferedGdiPlusBitmapFromBitmapEx(const BitmapEx& rBitmapEx);
+VCL_DLLPUBLIC boost::shared_ptr< Gdiplus::GraphicsPath > getBufferedGdiPlusGraphicsPathFromB2DPolygon(const basegfx::B2DPolygon& rSource);
+VCL_DLLPUBLIC boost::shared_ptr< Gdiplus::GraphicsPath > getBufferedGdiPlusGraphicsPathFromB2DPolyPolygon(const basegfx::B2DPolyPolygon& rSource);
+#endif
+//////////////////////////////////////////////////////////////////////////////
+
 #endif // _APP_HXX

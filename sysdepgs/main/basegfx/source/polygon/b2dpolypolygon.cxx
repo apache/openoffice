@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
 #include <basegfx/polygon/b2dpolypolygon.hxx>
@@ -34,11 +32,26 @@
 #include <vector>
 #include <algorithm>
 
+#ifdef WNT
+#include <basegfx/tools/cacheable.hxx>
+#endif
+
 //////////////////////////////////////////////////////////////////////////////
 
 class ImplB2DPolyPolygon
+#ifdef WNT
+    : public basegfx::cache::cacheable
+#endif
 {
+private:
 	basegfx::B2DPolygonVector                   maPolygons;
+
+    void changed()
+    {
+#ifdef WNT
+        onChange();
+#endif
+    }
 
 public:
 	ImplB2DPolyPolygon() : maPolygons()
@@ -70,6 +83,7 @@ public:
 
 	void setB2DPolygon(sal_uInt32 nIndex, const basegfx::B2DPolygon& rPolygon)
 	{
+        changed();
 		maPolygons[nIndex] = rPolygon;
 	}
 
@@ -81,6 +95,7 @@ public:
 			basegfx::B2DPolygonVector::iterator aIndex(maPolygons.begin());
 			aIndex += nIndex;
 			maPolygons.insert(aIndex, nCount, rPolygon);
+            changed();
 		}
 	}
 
@@ -100,6 +115,8 @@ public:
 				aIndex = maPolygons.insert(aIndex, rPolyPolygon.getB2DPolygon(a));
 				aIndex++;
 			}
+
+            changed();
 		}
 	}
 
@@ -113,6 +130,7 @@ public:
 			const basegfx::B2DPolygonVector::iterator aEnd(aStart + nCount);
 
 			maPolygons.erase(aStart, aEnd);
+            changed();
 		}
 	}
 
@@ -127,6 +145,8 @@ public:
 		{
 			maPolygons[a].setClosed(bNew);
 		}
+
+        changed();
 	}
 
 	void flip()
@@ -134,6 +154,7 @@ public:
         std::for_each( maPolygons.begin(),
                        maPolygons.end(),
                        std::mem_fun_ref( &basegfx::B2DPolygon::flip ));
+        changed();
 	}
 
 	void removeDoublePoints()
@@ -141,14 +162,20 @@ public:
         std::for_each( maPolygons.begin(),
                        maPolygons.end(),
                        std::mem_fun_ref( &basegfx::B2DPolygon::removeDoublePoints ));
+        changed();
 	}
 
 	void transform(const basegfx::B2DHomMatrix& rMatrix)
 	{
-		for(sal_uInt32 a(0L); a < maPolygons.size(); a++)
-		{
-			maPolygons[a].transform(rMatrix);
-		}
+        if(!rMatrix.isIdentity())
+        {
+		    for(sal_uInt32 a(0L); a < maPolygons.size(); a++)
+		    {
+			    maPolygons[a].transform(rMatrix);
+		    }
+
+            changed();
+        }
 	}
 
     void makeUnique()
@@ -197,6 +224,13 @@ namespace basegfx
 {
     namespace { struct DefaultPolyPolygon: public rtl::Static<B2DPolyPolygon::ImplType, 
                                                               DefaultPolyPolygon> {}; }
+
+#ifdef WNT
+    basegfx::cache::cacheable& B2DPolyPolygon::getCacheable() const
+    {
+        return const_cast< ImplB2DPolyPolygon& >(*mpPolyPolygon);
+    }
+#endif
 
 	B2DPolyPolygon::B2DPolyPolygon() :
         mpPolyPolygon(DefaultPolyPolygon::get())
