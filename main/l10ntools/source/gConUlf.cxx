@@ -69,22 +69,19 @@ void convert_ulf::handleLines()
 {
   bool   bEof, bMultiLineComment = false;
   int    nL;
-  string sWorkLine, sOrgLine, sKey, sText;
+  string sWorkLine, sKey, sText;
 
 
   // loop through all lines
   for (;;)
   {
-    lineRead(&bEof, sOrgLine);
+    lineRead(&bEof, sWorkLine);
     if (bEof)
       break;
 
-    // copy line so the original can be copied
-    sWorkLine  = sOrgLine;
-    sOrgLine  += "\n";
-	
+	// write back original line (add languages are added later)
 	if (mbMergeMode)
-      writeSourceFile(sOrgLine);
+      writeSourceFile(sWorkLine + "\n");
 
     // check for end of multiLineComment
     if (bMultiLineComment)
@@ -131,15 +128,15 @@ void convert_ulf::handleLines()
     // must be language line
     nL = sWorkLine.find_first_of("=");
     if (nL == string::npos)
-      throw "unknown format in " + msSourceFile + " missing = in line: " + sOrgLine;
+      throw "unknown format in " + msSourceFile + " missing = in line: " + sWorkLine;
 
     nL = sWorkLine.find_first_of("\"");
     if (nL == string::npos)
-      throw "unknown format: <<" + sOrgLine + ">> missing '='";
+      throw "unknown format: <<" + sWorkLine + ">> missing '='";
 
 	if (!mbMergeMode)
 	{
-	  sText = sWorkLine.substr(nL+1, sWorkLine.size()-2);
+	  sText = sWorkLine.substr(nL+1, sWorkLine.size()-nL-2);
       trim(sText);
       mcMemory.setEnUsKey(sKey, sText);
 	  continue;
