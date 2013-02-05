@@ -59,16 +59,34 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"<p"[^>]*>      |
-"<h"[0-9][^>]*> {
+"<title"[^>]*> {
   string text(yytext);
-  convert_xhp::mcpImpl->startCollectData(text);
+  convert_xhp::mcpImpl->startCollectData(text.substr(1,5), text);
 }
 
-"</p>"      |
-"</h"[0-9]> {
+"<bookmark "[^>]*> {
   string text(yytext);
-  convert_xhp::mcpImpl->stopCollectData(text);
+  convert_xhp::mcpImpl->startCollectData(text.substr(1,8), text);
+}
+
+"<paragraph"[^>]*> {
+  string text(yytext);
+  convert_xhp::mcpImpl->startCollectData(text.substr(1,9), text);
+}
+
+"</paragraph>" {
+  string text(yytext);
+  convert_xhp::mcpImpl->stopCollectData(text.substr(2,9), text);
+}
+
+"</bookmark>" {
+  string text(yytext);
+  convert_xhp::mcpImpl->stopCollectData(text.substr(2,8), text);
+}
+
+"</title>" {
+  string text(yytext);
+  convert_xhp::mcpImpl->stopCollectData(text.substr(2,5), text);
 }
 
 .|\n {

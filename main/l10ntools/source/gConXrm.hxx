@@ -39,15 +39,15 @@ class convert_xrm_impl : public convert_gen
     convert_xrm_impl(const string& srSourceFile, l10nMem& crMemory);
     ~convert_xrm_impl();
 
-    void startCollectData(string& sCollectedText);
-    void stopCollectData(string& sCollectedText);
+    void startCollectData(string& sType, string& sCollectedText);
+    void stopCollectData(string& sType, string& sCollectedText);
     void collectData(string& sCollectedText);
 
   private:
-    bool mbMergeMode;
-
-    bool mbCollectingData;
+    bool   mbCollectingData;
     string msCollector;
+	string msTag;
+	string msMergeType;
 
     void extract();
     void insert();

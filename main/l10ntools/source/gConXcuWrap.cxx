@@ -47,27 +47,27 @@ void convert_xcu_impl::runLex()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 {
-  string sKey, sHead;
-  int    nL;
+  string sKey;
+  int    nL, nE;
 
 
-  // remember text for merge
-  msCollector += sTag;
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sTag);
+  msCollector.clear();
 
   // find key in tag
   nL = sTag.find("oor:name=\"");
-  if (nL != string::npos)
-    sHead = sTag.substr(nL+10);
-  else
+  if (nL == string::npos)
 	return;
 
   // find end of key
-  nL = sHead.find("\"");
-  if (nL != string::npos)
-    sKey = sHead.substr(0, nL);
-  else
+  nL += 10;
+  nE = sTag.find("\"", nL);
+  if (nE == string::npos)
 	return;
 
+  sKey = sTag.substr(nL, nE - nL);
   xcu_stack_entry newTag(bIsNode, sKey);
 
   mcStack.push(newTag);
@@ -78,16 +78,14 @@ void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
 {
-  // remember text for merge
-  msCollector += sTag;
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sTag);
+  msCollector.clear();
 
   // check for correct node/prop relations
   if (mcStack.size())
     mcStack.pop();
-
-  if (mbMergeMode)
-    writeSourceFile(msCollector);
-  msCollector.clear();
 }
 
 
@@ -96,10 +94,10 @@ void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
 void convert_xcu_impl::startCollectData(string& sCollectedText)
 {
   if (mbMergeMode)
-    writeSourceFile(msCollector);
+    writeSourceFile(msCollector+sCollectedText);
+  msCollector.clear();
 
   mbCollectingData = true;
-  msCollector.clear();
 }
 
 

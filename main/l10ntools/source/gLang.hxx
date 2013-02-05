@@ -98,6 +98,7 @@ class convert_gen
 
 
   protected:
+    bool          mbMergeMode;
     const string& msSourceFile;
     string        msSourceBuffer;
     int           mnSourceReadIndex;
@@ -172,7 +173,7 @@ class convert_ulf : public convert_gen
     void insert();
 
   private:
-    void handleLines(bool bMergeMode);
+    void handleLines();
 };
 
 

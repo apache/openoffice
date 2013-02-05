@@ -65,7 +65,6 @@ class convert_xcu_impl : public convert_gen
 
   private:
     stack<xcu_stack_entry> mcStack;
-    bool                   mbMergeMode;
     bool                   mbCollectingData;
     string                 msCollector;
 

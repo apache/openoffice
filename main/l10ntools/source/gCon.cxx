@@ -138,7 +138,7 @@ void convert_gen::lineRead(bool *bEof, string& line)
     nNextLF = msSourceBuffer.size()+1;
 
   // copy string
-  line              = msSourceBuffer.substr(mnSourceReadIndex, nNextLF - mnSourceReadIndex-1);
+  line              = msSourceBuffer.substr(mnSourceReadIndex, nNextLF - mnSourceReadIndex);
   mnSourceReadIndex = nNextLF +1;
   *bEof             = false;
   return;

@@ -39,15 +39,15 @@ class convert_xhp_impl : public convert_gen
     convert_xhp_impl(const string& srSourceFile, l10nMem& crMemory);
     ~convert_xhp_impl();
 
-    void startCollectData(string& sCollectedText);
-    void stopCollectData(string& sCollectedText);
+    void startCollectData(string& sType, string& sCollectedText);
+    void stopCollectData(string& sType, string& sCollectedText);
     void collectData(string& sCollectedText);
 
   private:
-    bool mbMergeMode;
-
     bool mbCollectingData;
     string msCollector;
+	string msMergeType;
+    string msTag;
 
     void extract();
     void insert();

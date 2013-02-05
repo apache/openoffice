@@ -46,7 +46,6 @@ class convert_xcs_impl : public convert_gen
     void collectData(string& sCollectedText);
 
   private:
-    bool   mbMergeMode;
     bool   mbCollectingData;
     string msCollector;
 	string msKey;

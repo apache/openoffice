@@ -69,7 +69,7 @@ void convert_xcs_impl::extract()
   mbMergeMode = false;
 
   // run lex parser and build token tree
-  runLex();
+  // CURRENTLY NOTHING TO TRANSLATE: runLex();
 }
 
 
@@ -81,7 +81,7 @@ void convert_xcs_impl::insert()
   mbMergeMode = true;
 
   // run lex parser and build token tree
-  runLex();
+  // CURRENTLY NOTHING TO TRANSLATE: runLex();
 }
 
 

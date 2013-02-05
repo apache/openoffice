@@ -48,42 +48,37 @@ void convert_xhp_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::startCollectData(string& sCollectedText)
+void convert_xhp_impl::startCollectData(string& sType, string& sCollectedText)
 {
   if (mbMergeMode)
-    writeSourceFile(msCollector);
+    writeSourceFile(msCollector+sCollectedText);
+  msCollector.clear();
 
-  mbCollectingData = true;
-  msCollector      = sCollectedText;
+  // Only start if tag is not imidiatly closed !
+  if (sCollectedText[sCollectedText.size()-2] != '/')
+  {
+    mbCollectingData = true;
+    msMergeType      = sType;
+    msTag            = sCollectedText;
+  }
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::stopCollectData(string& sCollectedText)
+void convert_xhp_impl::stopCollectData(string& sType, string& sCollectedText)
 {
-  string sHead, sKey, sLang, sText;
+  string sKey;
   int    nL;
 
 
-  // get type of tag
-  msCollector += sCollectedText;
-  nL = msCollector.find("<p");
-  if (nL != string::npos)
-    sHead = msCollector.substr(nL+1, 1);
-  else
-  {
-    nL = msCollector.find("<h");
-    sHead = msCollector.substr(nL+1, 2);
-  }
+  // check tag match
+  if (sType != msMergeType)
+	throw "Conflicting tags: " + msTag + msCollector + sCollectedText;
 
   // locate key and extract it
-  nL    = msCollector.find("id=") +4;
-  sKey  = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
-  nL    = msCollector.find("xml:lang=\"") + 10;
-  sLang = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
-  nL    = msCollector.find(">") +1;
-  sText = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
+  nL    = msTag.find("id=") +4;
+  sKey  = msTag.substr(nL, msTag.find("\"", nL+1) - nL);
 
   if (mbMergeMode)
   {
@@ -92,20 +87,22 @@ void convert_xhp_impl::stopCollectData(string& sCollectedText)
     string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
-    writeSourceFile(msCollector);
-    msCollector.clear();
+	// write en-US entry
+    writeSourceFile(msCollector+sCollectedText);
+
+	// and all other languages for that key
     for (int i = 0; i < nL; ++i)
     {
-      sNewLine = "\n<" + sHead + " id=\"" + sKey + "\"" + " xml:lang=\"" +
+      sNewLine = "\n<" + sType + " id=\"" + sKey + "\"" + " xml:lang=\"" +
                  cExtraLangauges[i]->msLanguage + "\">" +
                  cExtraLangauges[i]->msText +
-                 "</" + sHead + ">";
+                 "</" + sType + ">";
 
       writeSourceFile(sNewLine);
     }
   }
   else
-    mcMemory.setEnUsKey(sKey, sText);
+    mcMemory.setEnUsKey(sKey, msCollector);
 
   mbCollectingData = false;
   msCollector.clear();
