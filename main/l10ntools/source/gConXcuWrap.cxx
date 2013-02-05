@@ -58,13 +58,13 @@ void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 
   // find key in tag
   nL = sTag.find("oor:name=\"");
-  if (nL == string::npos)
+  if (nL == (int)string::npos)
 	return;
 
   // find end of key
   nL += 10;
   nE = sTag.find("\"", nL);
-  if (nE == string::npos)
+  if (nE == (int)string::npos)
 	return;
 
   sKey = sTag.substr(nL, nE - nL);

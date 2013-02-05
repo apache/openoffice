@@ -148,6 +148,25 @@ class convert_src : public convert_gen
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
+class convert_hrc_impl;
+class convert_hrc : public convert_gen
+{
+  public:
+    static convert_hrc_impl *mcpImpl;
+
+
+    convert_hrc(const string& srSourceFile, l10nMem& crMemory);
+    ~convert_hrc();
+    
+    void extract();
+    void insert();
+
+  private:
+};
+
+
+
+/********************   C L A S S   D E F I N I T I O N   ********************/
 class convert_tree : public convert_gen
 {
   public:

@@ -87,7 +87,7 @@ void convert_ulf::handleLines()
     if (bMultiLineComment)
     {
       nL = sWorkLine.find("*/");
-      if (nL == string::npos)
+      if (nL == (int)string::npos)
 		continue;
 
       bMultiLineComment = false;
@@ -96,10 +96,10 @@ void convert_ulf::handleLines()
 
     // check for start of comment
     nL = sWorkLine.find("/*");
-    if (nL != string::npos)
+    if (nL != (int)string::npos)
     {
       int nE = sWorkLine.find("*/");
-      if (nE == string::npos)
+      if (nE == (int)string::npos)
       {
         bMultiLineComment = true;
         continue;
@@ -127,11 +127,11 @@ void convert_ulf::handleLines()
 
     // must be language line
     nL = sWorkLine.find_first_of("=");
-    if (nL == string::npos)
+    if (nL == (int)string::npos)
       throw "unknown format in " + msSourceFile + " missing = in line: " + sWorkLine;
 
     nL = sWorkLine.find_first_of("\"");
-    if (nL == string::npos)
+    if (nL == (int)string::npos)
       throw "unknown format: <<" + sWorkLine + ">> missing '='";
 
 	if (!mbMergeMode)
@@ -147,7 +147,7 @@ void convert_ulf::handleLines()
       // get all languages (includes en-US)
       vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
       string                   sNewLine;
-      int                      nL = cExtraLangauges.size();
+      nL = cExtraLangauges.size();
 
 
       for (int i = 0; i < nL; ++i)

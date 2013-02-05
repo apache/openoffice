@@ -18,37 +18,37 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
-#include "gConSrc.hxx"
+using namespace std; 
+#include "gConHrc.hxx"
 
 
 
 
 /*****************************************************************************
- *************************   G C O N S R C . C X X   *************************
+ *************************   G C O N H R C . C X X   *************************
  *****************************************************************************
- * This is the conversion for .src, it uses lex to analyze
+ * This is the conversion for .hrc, it uses lex to analyze
  *****************************************************************************/
 
 
 
 /*****************************   G L O B A L S   *****************************/
-convert_src_impl * convert_src::mcpImpl;
+convert_hrc_impl * convert_hrc::mcpImpl;
 
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_src::convert_src(const string& srSourceFile, l10nMem& crMemory)
+convert_hrc::convert_hrc(const string& srSourceFile, l10nMem& crMemory)
                                 : convert_gen(srSourceFile, crMemory) 
-                            {mcpImpl = new convert_src_impl(srSourceFile, crMemory);}
-convert_src::~convert_src() {delete mcpImpl;}
-void convert_src::extract() {mcpImpl->extract();}
-void convert_src::insert()  {mcpImpl->insert();}
+                            {mcpImpl = new convert_hrc_impl(srSourceFile, crMemory);}
+convert_hrc::~convert_hrc() {delete mcpImpl;}
+void convert_hrc::extract() {mcpImpl->extract();}
+void convert_hrc::insert()  {mcpImpl->insert();}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_src_impl::convert_src_impl(const string& srSourceFile, l10nMem& crMemory)
+convert_hrc_impl::convert_hrc_impl(const string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen(srSourceFile, crMemory),
 								  	mbCollectingData(false)
 
@@ -58,14 +58,14 @@ convert_src_impl::convert_src_impl(const string& srSourceFile, l10nMem& crMemory
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_src_impl::~convert_src_impl()
+convert_hrc_impl::~convert_hrc_impl()
 {
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::extract()
+void convert_hrc_impl::extract()
 {
   // run lex parser and build token tree
   runLex();
@@ -76,7 +76,7 @@ void convert_src_impl::extract()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::insert()
+void convert_hrc_impl::insert()
 {
   //JIX
 }

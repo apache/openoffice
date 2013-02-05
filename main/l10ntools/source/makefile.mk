@@ -166,10 +166,36 @@ APP7STDLIBS+= \
 # static libs at end for OS X
 .ENDIF
 
+# localizer for new l10n framework
 # 
-#APP8TARGET= treeconfig
-#APP8OBJS=   $(OBJ)$/treeconfig.obj $(OBJ)$/inireader.obj $(OBJ)$/export2.obj
-#APP8STDLIBS=$(TOOLSLIB) $(SALLIB) $(VOSLIB) $(ICUINLIB) $(STLPORT) 
+APP8OBJS= $(OBJ)$/gLang.obj \
+          $(OBJ)$/gL10nMem.obj \
+          $(OBJ)$/gHandler.obj \
+          $(OBJ)$/gConProp.obj \
+          $(OBJ)$/gConHrc.obj \
+          $(OBJ)$/gConSrc.obj \
+          $(OBJ)$/gConTree.obj \
+          $(OBJ)$/gConUlf.obj \
+          $(OBJ)$/gConPo.obj \
+          $(OBJ)$/gConXcs.obj \
+          $(OBJ)$/gConXcu.obj \
+          $(OBJ)$/gConXhp.obj \
+          $(OBJ)$/gConXrm.obj \
+          $(OBJ)$/gCon.obj \
+          $(OBJ)$/gConPoWrap.obj \
+          $(OBJ)$/gConHrcWrap.obj \
+          $(OBJ)$/gConSrcWrap.obj \
+          $(OBJ)$/gConXcsWrap.obj \
+          $(OBJ)$/gConXcuWrap.obj \
+          $(OBJ)$/gConXrmWrap.obj \
+          $(OBJ)$/gConXhpWrap.obj 
+APP8RPATH=  NONE
+APP8STDLIBS+= $(TOOLSLIB) \
+              $(VOSLIB) \
+              $(SALLIB)
+APP8TARGET= genLang
+
+DEPOBJFILES=$(APP8OBJS)
 
 # localizer for l10n framework
 APP9TARGET= localize_sl
@@ -197,39 +223,11 @@ $(MISC)$/%_yy.c : %lex.l
 
 # --- Files --------------------------------------------------------
 
-# localizer for new l10n framework
-# 
-APP8TARGET= genLang
-APP8OBJS= $(OBJ)$/gLang.obj \
-          $(OBJ)$/gL10nMem.obj \
-          $(OBJ)$/gHandler.obj \
-          $(OBJ)$/gConProp.obj \
-          $(OBJ)$/gConSrc.obj \
-          $(OBJ)$/gConSrcUtil.obj \
-          $(OBJ)$/gConTree.obj \
-          $(OBJ)$/gConUlf.obj \
-          $(OBJ)$/gConPo.obj \
-          $(OBJ)$/gConXcs.obj \
-          $(OBJ)$/gConXcu.obj \
-          $(OBJ)$/gConXhp.obj \
-          $(OBJ)$/gConXrm.obj \
-          $(OBJ)$/gCon.obj \
-          $(OBJ)$/gConPoWrap.obj \
-          $(OBJ)$/gConSrcWrap.obj \
-          $(OBJ)$/gConXcsWrap.obj \
-          $(OBJ)$/gConXcuWrap.obj \
-          $(OBJ)$/gConXrmWrap.obj \
-          $(OBJ)$/gConXhpWrap.obj 
-APP8RPATH=  NONE
-APP8STDLIBS+= $(TOOLSLIB) \
-              $(VOSLIB) \
-              $(SALLIB)
-
-DEPOBJFILES=$(APP8OBJS)
 
 # Helper to suppress warnings in lex generated c code, see #i57362#
 
 $(OBJ)$/gConPoWrap.obj: $(MISC)$/gConPo_yy.c
+$(OBJ)$/gConHrcWrap.obj: $(MISC)$/gConHrc_yy.c
 $(OBJ)$/gConSrcWrap.obj: $(MISC)$/gConSrc_yy.c
 $(OBJ)$/gConXcuWrap.obj: $(MISC)$/gConXcu_yy.c
 $(OBJ)$/gConXcsWrap.obj: $(MISC)$/gConXcs_yy.c

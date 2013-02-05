@@ -61,7 +61,7 @@ void convert_xcs_impl::setKey(string& sCollectedText)
 
   // locate key (is any)
   nL = sCollectedText.find("oor:name=\"");
-  if (nL == string::npos)
+  if (nL == (int)string::npos)
 	return;
   sHead = sCollectedText.substr(nL+10);
   nL    = sHead.find("\"");
@@ -105,7 +105,7 @@ void convert_xcs_impl::stopCollectData(string& sCollectedText)
   // get type of tag
   msCollector += sCollectedText;
   nL = msCollector.find("<p");
-  if (nL != string::npos)
+  if (nL != (int)string::npos)
     sHead = msCollector.substr(nL+1, 1);
   else
   {
@@ -126,7 +126,7 @@ void convert_xcs_impl::stopCollectData(string& sCollectedText)
     // get all languages (includes en-US)
     vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
     string                   sNewLine;
-    int                      nL = cExtraLangauges.size();
+    nL = cExtraLangauges.size();
 
     writeSourceFile(msCollector);
     msCollector.clear();

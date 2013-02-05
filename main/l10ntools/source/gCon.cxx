@@ -77,15 +77,16 @@ convert_gen& convert_gen::getConverter(const string& srSourceFile, l10nMem& crMe
   string sExtension = srSourceFile.substr(nInx+1);
 
   // did the user give a .xxx with the source file ?
-  if (sExtension == "hrc" || sExtension == "src") return *(new convert_src (srSourceFile, crMemory));
-  if (sExtension == "po")                         return *(new convert_po(srSourceFile, crMemory));
-  if (sExtension == "tree")                       return *(new convert_tree(srSourceFile, crMemory));
-  if (sExtension == "ulf")                        return *(new convert_ulf (srSourceFile, crMemory));
-  if (sExtension == "xcu")                        return *(new convert_xcu (srSourceFile, crMemory));
-  if (sExtension == "xcs")                        return *(new convert_xcs (srSourceFile, crMemory));
-  if (sExtension == "xrm")                        return *(new convert_xrm (srSourceFile, crMemory));
-  if (sExtension == "xhp")                        return *(new convert_xhp (srSourceFile, crMemory));
-  if (sExtension == "properties")                 return *(new convert_properties(srSourceFile, crMemory));
+  if (sExtension == "hrc")        return *(new convert_hrc       (srSourceFile, crMemory));
+  if (sExtension == "src")        return *(new convert_src       (srSourceFile, crMemory));
+  if (sExtension == "po")         return *(new convert_po        (srSourceFile, crMemory));
+  if (sExtension == "tree")       return *(new convert_tree      (srSourceFile, crMemory));
+  if (sExtension == "ulf")        return *(new convert_ulf       (srSourceFile, crMemory));
+  if (sExtension == "xcu")        return *(new convert_xcu       (srSourceFile, crMemory));
+  if (sExtension == "xcs")        return *(new convert_xcs       (srSourceFile, crMemory));
+  if (sExtension == "xrm")        return *(new convert_xrm       (srSourceFile, crMemory));
+  if (sExtension == "xhp")        return *(new convert_xhp       (srSourceFile, crMemory));
+  if (sExtension == "properties") return *(new convert_properties(srSourceFile, crMemory));
 
   throw string("unknown extension on source file: ")+srSourceFile;
 }
@@ -134,7 +135,7 @@ void convert_gen::lineRead(bool *bEof, string& line)
 
   // find next newline
   int nNextLF = msSourceBuffer.find('\n', mnSourceReadIndex);
-  if (nNextLF == msSourceBuffer.npos)
+  if (nNextLF == (int)msSourceBuffer.npos)
     nNextLF = msSourceBuffer.size()+1;
 
   // copy string
@@ -165,11 +166,11 @@ void convert_gen::trim(string& sLine)
 
   // remove leading spaces
   nL = sLine.find_first_not_of(" \t");
-  if (nL != string::npos)
+  if (nL != (int)string::npos)
     sLine.erase(0, nL);
 
   // remove trailing spaces
   nL = sLine.find_last_not_of(" \t");
-  if (nL != string::npos)
+  if (nL != (int)string::npos)
     sLine.erase(nL +1);
 }

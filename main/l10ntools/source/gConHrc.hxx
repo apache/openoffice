@@ -18,16 +18,16 @@
  * under the License.
  * 
  *************************************************************/
-#ifndef GCONSRCHXX
-#define GCONSRCHXX
+#ifndef GCONHRCHXX
+#define GCONHRCHXX
 #include "gLang.hxx"
 
 
 
 /*****************************************************************************
- *************************   G C O N S R C . H X X   *************************
+ *************************   G C O N H R C . H X X   *************************
  *****************************************************************************
- * This is the class header for .src conversion
+ * This is the class header for .hrc conversion
  *****************************************************************************/
 
 
@@ -46,7 +46,7 @@ template<typename T>
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_src_impl : public convert_gen
+class convert_hrc_impl : public convert_gen
 {
   public:
     typedef enum
@@ -60,8 +60,8 @@ class convert_src_impl : public convert_gen
       PRAGMA,         _LISTTEXT,  TEXTREFID, LISTRESID,     _LISTRESID,          NORMDEFINE
     } LEX_TOKENS;
 
-    convert_src_impl(const string& srSourceFile, l10nMem& crMemory);
-    ~convert_src_impl();
+    convert_hrc_impl(const string& srSourceFile, l10nMem& crMemory);
+    ~convert_hrc_impl();
     
     void addTokenToSet(LEX_TOKENS nToken, string srYYtext);
     void addCommentToSet(LEX_TOKENS nToken, string srYYtext);
@@ -79,6 +79,6 @@ class convert_src_impl : public convert_gen
     void extract();
     void insert();
 	bool mbCollectingData;
-    friend class convert_src;
+    friend class convert_hrc;
 };
 #endif

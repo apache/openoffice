@@ -39,8 +39,8 @@ class convert_xhp_impl : public convert_gen
     convert_xhp_impl(const string& srSourceFile, l10nMem& crMemory);
     ~convert_xhp_impl();
 
-    void startCollectData(string& sType, string& sCollectedText);
-    void stopCollectData(string& sType, string& sCollectedText);
+    void startCollectData(string sType, string& sCollectedText);
+    void stopCollectData(string sType, string& sCollectedText);
     void collectData(string& sCollectedText);
 
   private:

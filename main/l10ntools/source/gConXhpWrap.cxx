@@ -48,7 +48,7 @@ void convert_xhp_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::startCollectData(string& sType, string& sCollectedText)
+void convert_xhp_impl::startCollectData(string sType, string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -66,7 +66,7 @@ void convert_xhp_impl::startCollectData(string& sType, string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::stopCollectData(string& sType, string& sCollectedText)
+void convert_xhp_impl::stopCollectData(string sType, string& sCollectedText)
 {
   string sKey;
   int    nL;
@@ -85,7 +85,7 @@ void convert_xhp_impl::stopCollectData(string& sType, string& sCollectedText)
     // get all languages (includes en-US)
     vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
     string                   sNewLine;
-    int                      nL = cExtraLangauges.size();
+    nL = cExtraLangauges.size();
 
 	// write en-US entry
     writeSourceFile(msCollector+sCollectedText);
