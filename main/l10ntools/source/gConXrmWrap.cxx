@@ -32,14 +32,16 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+namespace XrmWrap
+{
 #include "gConXrm_yy.c"
-
+}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xrm_impl::runLex()
 {
-  genXrm_lex();
+  XrmWrap::genXrm_lex();
 
   // write last part of file.
   if (mbMergeMode)

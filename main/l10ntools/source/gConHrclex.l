@@ -49,7 +49,7 @@
 /* --- The following options are for future use (maybe)               */
 /* yyclass=           --> subClass yyFlexLexer to allow own functions */
 /* c++                --> generate C++ classes                        */
-%option 8bit noyywrap never-interactive prefix="genSrc_"
+%option 8bit noyywrap never-interactive prefix="genHrc_"
 %p 24000
 %e 1200
 %n 500

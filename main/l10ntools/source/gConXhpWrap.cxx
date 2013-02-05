@@ -32,14 +32,16 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+namespace XhpWrap
+{
 #include "gConXhp_yy.c"
-
+}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp_impl::runLex()
 {
-  genXhp_lex();
+  XhpWrap::genXhp_lex();
 
   if (mbMergeMode)
     writeSourceFile(msCollector);

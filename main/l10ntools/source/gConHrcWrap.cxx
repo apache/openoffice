@@ -35,7 +35,10 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+namespace HrcWrap
+{
 #include "gConHrc_yy.c"
+}
 
 
 
@@ -65,7 +68,7 @@ void convert_hrc_impl::addCommentToSet(LEX_TOKENS nToken, string srYYtext)
   // loop and collect whole comment
   for (check_comment_terminate = false, buf[1] = '\0';;)
   {
-    buf[0] = yyinput();
+    buf[0] = HrcWrap::yyinput();
 
     // end of file ?
     if (!buf[0])
@@ -98,5 +101,5 @@ void convert_hrc_impl::addCommentToSet(LEX_TOKENS nToken, string srYYtext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_hrc_impl::runLex()
 {
-  genSrc_lex();
+  HrcWrap::genHrc_lex();
 }

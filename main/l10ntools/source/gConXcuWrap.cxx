@@ -32,14 +32,17 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+namespace XcuWrap
+{
 #include "gConXcu_yy.c"
+}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu_impl::runLex()
 {
-  genxcu_lex();
+  XcuWrap::genxcu_lex();
 }
 
 

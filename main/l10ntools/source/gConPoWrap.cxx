@@ -32,14 +32,17 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+namespace PoWrap
+{
 #include "gConPo_yy.c"
+}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_po_impl::runLex()
 {
-  genpo_lex();
+  PoWrap::genpo_lex();
 }
 
 

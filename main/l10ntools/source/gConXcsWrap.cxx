@@ -32,7 +32,10 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+namespace XcsWrap
+{
 #include "gConXcs_yy.c"
+}
 
 
 
@@ -40,7 +43,7 @@ using namespace std;
 void convert_xcs_impl::runLex()
 {
   // currently no .xcs files generate en-US translation, so stop trying
-  // genxcs_lex();
+  XcsWrap::genxcs_lex();
 }
 
 
