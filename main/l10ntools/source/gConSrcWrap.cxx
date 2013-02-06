@@ -53,27 +53,43 @@ void convert_src_impl::runLex()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src_impl::pushKey(string &sText)
 {
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::popKey()
+void convert_src_impl::popKey(string &sText)
 {
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::pushNoKey()
+void convert_src_impl::pushNoKey(string &sText)
 {
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::registerPushKey()
+void convert_src_impl::registerPushKey(string &sText)
 {
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
 }
 
 
@@ -81,18 +97,33 @@ void convert_src_impl::registerPushKey()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src_impl::pushRegistredKey(string &sText)
 {
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::saveData(string& sCollectedText)
+void convert_src_impl::saveData(string &sText)
 {
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::copyData(string& sCollectedText)
+void convert_src_impl::copyData(string &sText)
 {
+  msCollector += sText;
+  if (sText == "\n")
+  {
+    if (mbMergeMode)
+      writeSourceFile(msCollector);
+    msCollector.clear();
+  }
 }

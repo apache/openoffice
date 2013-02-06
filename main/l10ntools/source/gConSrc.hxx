@@ -54,9 +54,9 @@ class convert_src_impl : public convert_gen
     ~convert_src_impl();
     
     void pushKey(string &sText);
-    void popKey ();
-    void pushNoKey();
-    void registerPushKey();
+    void popKey (string &sText);
+    void pushNoKey(string &sText);
+    void registerPushKey(string &sText);
     void pushRegistredKey(string &sText);
     
     void saveData(string& sCollectedText);

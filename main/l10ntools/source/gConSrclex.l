@@ -85,11 +85,13 @@
 }
 
 "PageList "[^\{]* {
-  convert_src::mcpImpl->pushNoKey();
+  string text(yytext);
+  convert_src::mcpImpl->pushNoKey(text);
 }
 
 "PageItem "[^\{]* {
-  convert_src::mcpImpl->registerPushKey();
+  string text(yytext);
+  convert_src::mcpImpl->registerPushKey(text);
 }
 
 "Identifier "[^;]* {
@@ -103,7 +105,8 @@
 }
 
 "};" {
-  convert_src::mcpImpl->popKey();
+  string text(yytext);
+  convert_src::mcpImpl->popKey(text);
 }
 
 .|\n {
