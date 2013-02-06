@@ -23,7 +23,7 @@
 /*****************************************************************************
  **********************   L E X   D E F I N I T I O N   **********************
  *****************************************************************************
- * lex grammar for parsing ressource source files (*.src and *.hrc files)
+ * lex grammar for parsing ressource source files (*.src)
  * file is converted to gConSrc_yy.cxx with "flex"
  *****************************************************************************/
 
@@ -59,96 +59,56 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-^[\t ]*"#pragma".*   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::PRAGMA, string(yytext)); }
+"TabDialog "[^\{]* {
+  string text(yytext);
+  convert_src::mcpImpl->pushKey(text);
+}
 
-^[ \t]*\n   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::EMPTYLINE, string(yytext)); }
+"TabControl "[^\{]* {
+  string text(yytext);
+  convert_src::mcpImpl->pushKey(text);
+}
 
-[\t ]+               |
-^[\t ]*"#include".*  |
-^[\t ]*"#undef".*    |
-"//".*               |
-";"                  |
-"<"                  |
-">"                  |
-\n   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::IGNORED, string(yytext)); }
+"TabPage "[^\{]* {
+  string text(yytext);
+  convert_src::mcpImpl->pushKey(text);
+}
 
-"/*"   {
-  convert_src::mcpImpl->addCommentToSet(convert_src_impl::COMMEND, string(yytext)); }
+"FixedText "[^\{]* {
+  string text(yytext);
+  convert_src::mcpImpl->pushKey(text);
+}
 
-^[\t ]*"#ifndef".+$   |
-^[\t ]*"#ifdef".+$    |
-^[\t ]*"#if".+$       |
-^[\t ]*"#elif".+$     |
-^[\t ]*"#else".+$     |
-^[\t ]*"#endif".+$    {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::CONDITION, string(yytext)); }
+"String "[^\{]* {
+  string text(yytext);
+  convert_src::mcpImpl->pushKey(text);
+}
 
-[a-zA-Z]+[\t ]+[^={\n]+[\t ]   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::DEFINEDRES, string(yytext)); /* defined Res */ }
+"PageList "[^\{]* {
+  convert_src::mcpImpl->pushNoKey();
+}
 
-[a-zA-Z]+[ \t]+[^={;\n]+\n[ \t]*"#".*\n[ \t]*"{"        |
-[a-zA-Z]+[ \t]+[^={;\n]+\n?([ \t]*"//".*\n)*[ \t]*"{"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::RESSOURCE, string(yytext)); /* RESSOURCE // String TTT_XX ... */ }
+"PageItem "[^\{]* {
+  convert_src::mcpImpl->registerPushKey();
+}
 
-^[\t ]*[a-zA-Z_]+[\t ]*"\\"?[\t ]*\n?[ \t]*"{"[\t ]*"\\"?   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::SMALRESSOURCE, string(yytext)); /* SMALRESSOURCE // String ... */ }
+"Identifier "[^;]* {
+  string text(yytext);
+  convert_src::mcpImpl->pushRegistredKey(text);
+}
 
-[\t ]*[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?=[ \t]*L?\".*\".*\n?   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::TEXTLINE, string(yytext)); /* TEXTLINE // TextTyp = "A Text" */ }
+"Text "[^\"]*[^\"]*"\";" {
+  string text(yytext);
+  convert_src::mcpImpl->saveData(text);
+}
 
-[\t ]*[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?(\n[ \t]*)?=([ \t]*\n)?(([a-zA-Z0-9_]+)|(\".*\")|([ \t\n]*))*\".*\"(([a-zA-Z0-9_]+)|(\".*\")|([ \t\n]*))*;   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::LONGTEXTLINE, string(yytext)); /* LONGTEXTLINE // TextTyp = "A Text" HHH_XXX "A Text" ZZZ_TTT ... */ }
+"};" {
+  convert_src::mcpImpl->popKey();
+}
 
-\".*\"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::TEXT, string(yytext)); /* TEXT // "A Text" */ }
-
-"{"[ \t]*\\?   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::LEVELUP, string(yytext)); /* LEVELUP */ }
-
-"}"[ \t]*;([ \t]*\\)?   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::LEVELDOWN, string(yytext)); /* LEVELDOWN */ }
-
-[a-zA-Z0-9_]+[ \t]*"="[ \t]*"MAP_APPFONT"[ \t]*"(".+")".*   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::APPFONTMAPPING, string(yytext)); /* APPFONTMAPPING  Typ = MAP_APPFONT( ... ) */ }
-
-[ \t]*[a-zA-Z0-9_]+[ \t]*=[ \t]*[0123456789]{1,5}[ \t]*";"?\\?   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::TEXTREFID, string(yytext)); /* TEXTREFID // TextTyp = 12345 */ }
-
-[a-zA-Z0-9_]+[ \t]*"=".*                          | 
-[a-zA-Z0-9_]+[ \t]*"="[\t ]*([ \t]*"//".*\n)*.*   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::ASSIGNMENT, string(yytext)); /* ASSIGNMENT  Typ = ...  */ }
-
-[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"[ \t]*(\\[ \t]*)?\n?[ \t]*"<"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::LISTASSIGNMENT, string(yytext)); /* LISTASSIGNMENT  Typ [ ... ] = ... */ }
-
-"StringList"+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"[ \t]*(\\[ \t]*)?\n?[ \t]*   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::LISTASSIGNMENT, string(yytext)); /* LISTASSIGNMENT  Typ [ ... ] = ... */ }
-
-"UIEntries"[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::UIENTRIES, string(yytext)); /* UIENTRIES */ }
-
-"<"?[ \t]*L?\".*\".*">"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::LISTTEXT, string(yytext)); /* LISTTEXT */ }
-
-[ \t]*"#define"[ \t]+[a-zA-Z0-9_]+.*"\\"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::RSCDEFINE, string(yytext)); /* RSCDEFINE  #define ... */ }
-
-[ \t]*"#define"[ \t]+[a-zA-Z0-9_]+.+   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::NORMDEFINE, string(yytext)); /* #define ... */ }
-
-"\\"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::RSCDEFINELEND, string(yytext)); /* RSCDEFINELEND */ }
-
-[a-zA-Z0-9_]+[ \t]*;   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::ANYTOKEN, string(yytext)); /* allowed other tokens like "49 ;" or "SFX_... ;" */ }
-
-.   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::UNKNOWNCHAR, string(yytext)); /* YYWarning( "Unknown Char" ); */ }
-
-"{"?[ \t]*\".*\"[ \t]*";"[ \t]*"}"   {
-  convert_src::mcpImpl->addTokenToSet(convert_src_impl::_LISTTEXT, string(yytext)); /* _LISTTEXT */ }
+.|\n {
+  string text(yytext);
+  convert_src::mcpImpl->copyData(text);
+}
 
 %%

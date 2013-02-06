@@ -43,63 +43,56 @@ namespace SrcWrap
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::addTokenToSet(LEX_TOKENS nToken, string srYYtext)
-{
-//JIX
-#if 0
-  tokenStorage newToken;
-
-  newToken.mnToken = nToken;
-  newToken.msYYtext = srYYtext;
-
-  mcTokenSet.push_back(newToken);
-#endif
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::addCommentToSet(LEX_TOKENS nToken, string srYYtext)
-{
-  char buf[2];
-  bool check_comment_terminate;
-
-
-  // loop and collect whole comment
-  for (check_comment_terminate = false, buf[1] = '\0';;)
-  {
-    buf[0] = SrcWrap::yyinput();
-
-    // end of file ?
-    if (!buf[0])
-      break;
-
-    // remember byte
-    srYYtext.append(buf);
-
-    // did we receive ´*' ?
-    if (check_comment_terminate)
-    {
-      // end of comment ?
-      if (buf[0] == '/')
-        break;
-
-      // it was not the end of comment
-      check_comment_terminate = false;
-    }
-    else
-      // Start on end of comment ?
-      if (buf[0] == '*')
-        check_comment_terminate = true;
-  }
-
-  addTokenToSet(COMMEND, srYYtext);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src_impl::runLex()
 {
   SrcWrap::genSrc_lex();
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::pushKey(string &sText)
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::popKey()
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::pushNoKey()
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::registerPushKey()
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::pushRegistredKey(string &sText)
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::saveData(string& sCollectedText)
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::copyData(string& sCollectedText)
+{
 }

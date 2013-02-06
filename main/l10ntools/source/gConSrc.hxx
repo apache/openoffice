@@ -21,6 +21,7 @@
 #ifndef GCONSRCHXX
 #define GCONSRCHXX
 #include "gLang.hxx"
+#include <stack>
 
 
 
@@ -32,16 +33,16 @@
 
 
 
-/*****************   T E M P L A T E   D E F I N I T I O N   *****************/
-#if 0
-template<typename T>
-  void RemoveChars(std::basic_string<T> & Str, const T *CharsToRemove)
-  {
-    std::basic_string<T>::size_type pos = 0;
-    while ( (pos = Str.find_first_of(CharsToRemove, pos)) != std::basic_string<T>::npos)
-        Str.erase(pos, 1); 
-  }
-#endif
+/********************   C L A S S   D E F I N I T I O N   ********************/
+class src_stack_entry
+{
+  public:
+    src_stack_entry(string& sName);
+    ~src_stack_entry();
+
+    string   msName;
+};
+
 
 
 
@@ -49,36 +50,27 @@ template<typename T>
 class convert_src_impl : public convert_gen
 {
   public:
-    typedef enum
-    {
-      IGNORED      = 400,
-      COMMEND,        DEFINEDRES, ANYTOKEN,  UNKNOWNTOKEN,  UNKNOWNCONSTRUCTION, UNKNOWNCHAR,
-      FILTER_LEVEL = 500,
-      CONDITION,      EMPTYLINE,  RESSOURCE, RESSOURCEEXPR, SMALRESSOURCE,       TEXTLINE,
-      LONGTEXTLINE,   TEXT,       LEVELUP,   LEVELDOWN,     APPFONTMAPPING,      ASSIGNMENT, 
-      LISTASSIGNMENT, LISTTEXT,   RSCDEFINE, RSCDEFINELEND, NEWTEXTINRES,        UIENTRIES, 
-      PRAGMA,         _LISTTEXT,  TEXTREFID, LISTRESID,     _LISTRESID,          NORMDEFINE
-    } LEX_TOKENS;
-
     convert_src_impl(const string& srSourceFile, l10nMem& crMemory);
     ~convert_src_impl();
     
-    void addTokenToSet(LEX_TOKENS nToken, string srYYtext);
-    void addCommentToSet(LEX_TOKENS nToken, string srYYtext);
+    void pushKey(string &sText);
+    void popKey ();
+    void pushNoKey();
+    void registerPushKey();
+    void pushRegistredKey(string &sText);
+    
+    void saveData(string& sCollectedText);
+    void copyData(string& sCollectedText);
 
   private:
-    class tokenStorageEntry
-    {
-      public:
-        tokenStorageEntry(LEX_TOKENS nToken, string& sYYtext): mnToken(nToken), msYYtext(sYYtext){};
-        LEX_TOKENS mnToken;
-        string     msYYtext;
-    };
+    stack<src_stack_entry> mcStack;
+    bool                   mbCollectingData;
+    string                 msCollector;
 
-    void runLex();
     void extract();
     void insert();
-	bool mbCollectingData;
+    void runLex();
+
     friend class convert_src;
 };
 #endif
