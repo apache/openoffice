@@ -71,9 +71,7 @@ void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 	return;
 
   sKey = sTag.substr(nL, nE - nL);
-  xcu_stack_entry newTag(bIsNode, sKey);
-
-  mcStack.push(newTag);
+  mcStack.push_back(sKey);
 }
 
 
@@ -88,7 +86,7 @@ void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
 
   // check for correct node/prop relations
   if (mcStack.size())
-    mcStack.pop();
+    mcStack.pop_back();
 }
 
 
@@ -108,6 +106,7 @@ void convert_xcu_impl::startCollectData(string& sCollectedText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu_impl::stopCollectData(string& sCollectedText)
 {
+  int    nL;
   string useKey;
 
   // time to do something ?
@@ -116,12 +115,8 @@ void convert_xcu_impl::stopCollectData(string& sCollectedText)
   mbCollectingData = false;
 
   // locate key and extract it
-  while (mcStack.size())
-  {
-    xcu_stack_entry nowEntry = mcStack.top();
-    mcStack.pop();
-	useKey = nowEntry.msName + "." + useKey;
-  }
+  for (nL = 0; nL < (int)mcStack.size(); ++nL)
+	useKey += (nL > 0 ? "." : "") + mcStack[nL];
 
   if (mbMergeMode)
   {

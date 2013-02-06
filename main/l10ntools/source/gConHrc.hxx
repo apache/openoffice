@@ -32,53 +32,27 @@
 
 
 
-/*****************   T E M P L A T E   D E F I N I T I O N   *****************/
-#if 0
-template<typename T>
-  void RemoveChars(std::basic_string<T> & Str, const T *CharsToRemove)
-  {
-    std::basic_string<T>::size_type pos = 0;
-    while ( (pos = Str.find_first_of(CharsToRemove, pos)) != std::basic_string<T>::npos)
-        Str.erase(pos, 1); 
-  }
-#endif
-
-
-
 /********************   C L A S S   D E F I N I T I O N   ********************/
 class convert_hrc_impl : public convert_gen
 {
   public:
-    typedef enum
-    {
-      IGNORED      = 400,
-      COMMEND,        DEFINEDRES, ANYTOKEN,  UNKNOWNTOKEN,  UNKNOWNCONSTRUCTION, UNKNOWNCHAR,
-      FILTER_LEVEL = 500,
-      CONDITION,      EMPTYLINE,  RESSOURCE, RESSOURCEEXPR, SMALRESSOURCE,       TEXTLINE,
-      LONGTEXTLINE,   TEXT,       LEVELUP,   LEVELDOWN,     APPFONTMAPPING,      ASSIGNMENT, 
-      LISTASSIGNMENT, LISTTEXT,   RSCDEFINE, RSCDEFINELEND, NEWTEXTINRES,        UIENTRIES, 
-      PRAGMA,         _LISTTEXT,  TEXTREFID, LISTRESID,     _LISTRESID,          NORMDEFINE
-    } LEX_TOKENS;
-
     convert_hrc_impl(const string& srSourceFile, l10nMem& crMemory);
     ~convert_hrc_impl();
     
-    void addTokenToSet(LEX_TOKENS nToken, string srYYtext);
-    void addCommentToSet(LEX_TOKENS nToken, string srYYtext);
+    void setKey(string &sText);
+    void saveData(string& sText);
+    void copyData(string& sText);
 
   private:
-    class tokenStorageEntry
-    {
-      public:
-        tokenStorageEntry(LEX_TOKENS nToken, string& sYYtext): mnToken(nToken), msYYtext(sYYtext){};
-        LEX_TOKENS mnToken;
-        string     msYYtext;
-    };
+    vector<string> mcStack;
+    string         msCollector;
+    string         msKey;
 
-    void runLex();
+
     void extract();
     void insert();
-	bool mbCollectingData;
+    void runLex();
+
     friend class convert_hrc;
 };
 #endif

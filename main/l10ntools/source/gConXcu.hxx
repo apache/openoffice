@@ -21,7 +21,7 @@
 #ifndef GCONXCU_HXX
 #define GCONXCU_HXX
 #include "gLang.hxx"
-#include <stack>
+#include <vector>
 
 
 
@@ -31,20 +31,6 @@
  * This is the class header for .xcu conversion
  *****************************************************************************/
 typedef enum {TAG_COMPONENT, TAG_PROP, TAG_NODE } TAG_TYPE;
-
-
-
-/********************   C L A S S   D E F I N I T I O N   ********************/
-class xcu_stack_entry
-{
-  public:
-    xcu_stack_entry(TAG_TYPE sIsNode, string& sName);
-    ~xcu_stack_entry();
-
-    TAG_TYPE mbIsNode;
-    string   msName;
-};
-
 
 
 
@@ -64,9 +50,9 @@ class convert_xcu_impl : public convert_gen
     void collectData(string& sCollectedText);
 
   private:
-    stack<xcu_stack_entry> mcStack;
-    bool                   mbCollectingData;
-    string                 msCollector;
+    vector<string> mcStack;
+    bool           mbCollectingData;
+    string         msCollector;
 
     void extract();
     void insert();

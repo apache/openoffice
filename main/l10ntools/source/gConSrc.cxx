@@ -48,25 +48,8 @@ void convert_src::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-src_stack_entry::src_stack_entry(string& sName)
-                                : msName   (sName)
-{
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-src_stack_entry::~src_stack_entry()
-{
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
 convert_src_impl::convert_src_impl(const string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen(srSourceFile, crMemory),
-								  	mbCollectingData(false)
-
+                                  : convert_gen(srSourceFile, crMemory)
 {
 }
 

@@ -43,63 +43,77 @@ namespace HrcWrap
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::addTokenToSet(LEX_TOKENS nToken, string srYYtext)
-{
-//JIX
-#if 0
-  tokenStorage newToken;
-
-  newToken.mnToken = nToken;
-  newToken.msYYtext = srYYtext;
-
-  mcTokenSet.push_back(newToken);
-#endif
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::addCommentToSet(LEX_TOKENS nToken, string srYYtext)
-{
-  char buf[2];
-  bool check_comment_terminate;
-
-
-  // loop and collect whole comment
-  for (check_comment_terminate = false, buf[1] = '\0';;)
-  {
-    buf[0] = HrcWrap::yyinput();
-
-    // end of file ?
-    if (!buf[0])
-      break;
-
-    // remember byte
-    srYYtext.append(buf);
-
-    // did we receive ´*' ?
-    if (check_comment_terminate)
-    {
-      // end of comment ?
-      if (buf[0] == '/')
-        break;
-
-      // it was not the end of comment
-      check_comment_terminate = false;
-    }
-    else
-      // Start on end of comment ?
-      if (buf[0] == '*')
-        check_comment_terminate = true;
-  }
-
-  addTokenToSet(COMMEND, srYYtext);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
 void convert_hrc_impl::runLex()
 {
   HrcWrap::genHrc_lex();
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_hrc_impl::setKey(string &sText)
+{
+  int    nL, nE;
+
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
+
+  // locate id
+  for (nL = 0; sText[nL] != ' ' && sText[nL] != '\t' && sText[nL] != '\n'; ++nL) ;
+  for (; sText[nL] == ' ' || sText[nL] == '\t'; ++nL) ;
+  for (nE = nL; sText[nE] != ' ' && sText[nE] != '\t' && sText[nE] != '\n'; ++nE) ;
+  msKey = sText.substr(nL, nE - nL);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_hrc_impl::saveData(string &sText)
+{
+  int    nL, nE;
+  string sUseText;
+
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
+
+  // locate id
+  for (nL = 0; sText[nL] != '=' && sText[nL] != '\n'; ++nL) ;
+  for (; sText[nL] != '\"'; ++nL) ;
+  for (nE = nL+1; sText[nE] != '\"'; ++nE) ;
+  sUseText = sText.substr(nL+1, nE - nL -1);
+
+  if (mbMergeMode)
+  {
+    // get all languages (includes en-US)
+    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(msKey);
+    string                   sNewLine;
+    int                      nL = cExtraLangauges.size();
+
+    for (int i = 0; i < nL; ++i)
+    {
+      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
+	             cExtraLangauges[i]->msText + "</value>";
+      writeSourceFile(sNewLine);
+    }
+  }
+  else
+    mcMemory.setEnUsKey(msKey, sUseText);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_hrc_impl::copyData(string &sText)
+{
+  msCollector += sText;
+  if (sText == "\n")
+  {
+    if (mbMergeMode)
+      writeSourceFile(msCollector);
+    msCollector.clear();
+  }
 }

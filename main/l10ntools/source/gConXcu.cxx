@@ -47,22 +47,6 @@ void convert_xcu::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-xcu_stack_entry::xcu_stack_entry(TAG_TYPE sIsNode, string& sName)
-                                : mbIsNode (sIsNode),
-                                  msName   (sName)
-{
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-xcu_stack_entry::~xcu_stack_entry()
-{
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
 convert_xcu_impl::convert_xcu_impl(const string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen (srSourceFile, crMemory),
 								  	mbCollectingData(false)

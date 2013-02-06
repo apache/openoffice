@@ -21,7 +21,7 @@
 #ifndef GCONSRCHXX
 #define GCONSRCHXX
 #include "gLang.hxx"
-#include <stack>
+#include <vector>
 
 
 
@@ -30,19 +30,6 @@
  *****************************************************************************
  * This is the class header for .src conversion
  *****************************************************************************/
-
-
-
-/********************   C L A S S   D E F I N I T I O N   ********************/
-class src_stack_entry
-{
-  public:
-    src_stack_entry(string& sName);
-    ~src_stack_entry();
-
-    string   msName;
-};
-
 
 
 
@@ -56,16 +43,14 @@ class convert_src_impl : public convert_gen
     void pushKey(string &sText);
     void popKey (string &sText);
     void pushNoKey(string &sText);
-    void registerPushKey(string &sText);
-    void pushRegistredKey(string &sText);
+    void registerKey(string &sText);
     
-    void saveData(string& sCollectedText);
-    void copyData(string& sCollectedText);
+    void saveData(string& sText);
+    void copyData(string& sText);
 
   private:
-    stack<src_stack_entry> mcStack;
-    bool                   mbCollectingData;
-    string                 msCollector;
+    vector<string> mcStack;
+    string         msCollector;
 
     void extract();
     void insert();

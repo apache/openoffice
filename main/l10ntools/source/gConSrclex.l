@@ -59,47 +59,47 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"TabDialog "[^\{]* {
+[tT][aA][bB][dD][iI][aA][lL][oO][gG][^\{]* {
   string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
-"TabControl "[^\{]* {
+[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][^\{]* {
   string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
-"TabPage "[^\{]* {
+[tT][aA][bB][pP][aA][gG][eE][^\{]* {
   string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
-"FixedText "[^\{]* {
+[fF][iI][xX][eE][dD][tT][eE][xX][tT][^\{]* {
   string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
-"String "[^\{]* {
+[sS][tT][rR][iI][nN][gG][^\{]* {
   string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
-"PageList "[^\{]* {
+[pP][aA][gG][eE][lL][iI][sS][tT][^\{]* {
   string text(yytext);
   convert_src::mcpImpl->pushNoKey(text);
 }
 
-"PageItem "[^\{]* {
+[pP][aA][gG][eE][iI][tT][eE][mM][^\{]* {
   string text(yytext);
-  convert_src::mcpImpl->registerPushKey(text);
+  convert_src::mcpImpl->pushNoKey(text);
 }
 
-"Identifier "[^;]* {
+[iI][dD][eE][nN][tT][iI][fF][iI][eE][rR][^;]* {
   string text(yytext);
-  convert_src::mcpImpl->pushRegistredKey(text);
+  convert_src::mcpImpl->registerKey(text);
 }
 
-"Text "[^\"]*[^\"]*"\";" {
+[tT][eE][xX][tT][^\"]*"\""[^\"]*"\";" {
   string text(yytext);
   convert_src::mcpImpl->saveData(text);
 }

@@ -59,96 +59,29 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-^[\t ]*"#pragma".*   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::PRAGMA, string(yytext)); }
+[fF][iI][xX][eE][dD][lL][iI][nN][eE][^\{]* {
+  string text(yytext);
+  convert_hrc::mcpImpl->setKey(text);
+}
 
-^[ \t]*\n   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::EMPTYLINE, string(yytext)); }
+[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nM][^\{]* {
+  string text(yytext);
+  convert_hrc::mcpImpl->setKey(text);
+}
 
-[\t ]+               |
-^[\t ]*"#include".*  |
-^[\t ]*"#undef".*    |
-"//".*               |
-";"                  |
-"<"                  |
-">"                  |
-\n   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::IGNORED, string(yytext)); }
+[cC][hH][eE][cC][kK][bB][oO][xX][^\{]* {
+  string text(yytext);
+  convert_hrc::mcpImpl->setKey(text);
+}
 
-"/*"   {
-  convert_hrc::mcpImpl->addCommentToSet(convert_hrc_impl::COMMEND, string(yytext)); }
+[tT][eE][xX][tT][^\"]*"\""[^\"]*"\";" {
+  string text(yytext);
+  convert_hrc::mcpImpl->saveData(text);
+}
 
-^[\t ]*"#ifndef".+$   |
-^[\t ]*"#ifdef".+$    |
-^[\t ]*"#if".+$       |
-^[\t ]*"#elif".+$     |
-^[\t ]*"#else".+$     |
-^[\t ]*"#endif".+$    {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::CONDITION, string(yytext)); }
-
-[a-zA-Z]+[\t ]+[^={\n]+[\t ]   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::DEFINEDRES, string(yytext)); /* defined Res */ }
-
-[a-zA-Z]+[ \t]+[^={;\n]+\n[ \t]*"#".*\n[ \t]*"{"        |
-[a-zA-Z]+[ \t]+[^={;\n]+\n?([ \t]*"//".*\n)*[ \t]*"{"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::RESSOURCE, string(yytext)); /* RESSOURCE // String TTT_XX ... */ }
-
-^[\t ]*[a-zA-Z_]+[\t ]*"\\"?[\t ]*\n?[ \t]*"{"[\t ]*"\\"?   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::SMALRESSOURCE, string(yytext)); /* SMALRESSOURCE // String ... */ }
-
-[\t ]*[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?=[ \t]*L?\".*\".*\n?   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::TEXTLINE, string(yytext)); /* TEXTLINE // TextTyp = "A Text" */ }
-
-[\t ]*[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?(\n[ \t]*)?=([ \t]*\n)?(([a-zA-Z0-9_]+)|(\".*\")|([ \t\n]*))*\".*\"(([a-zA-Z0-9_]+)|(\".*\")|([ \t\n]*))*;   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::LONGTEXTLINE, string(yytext)); /* LONGTEXTLINE // TextTyp = "A Text" HHH_XXX "A Text" ZZZ_TTT ... */ }
-
-\".*\"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::TEXT, string(yytext)); /* TEXT // "A Text" */ }
-
-"{"[ \t]*\\?   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::LEVELUP, string(yytext)); /* LEVELUP */ }
-
-"}"[ \t]*;([ \t]*\\)?   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::LEVELDOWN, string(yytext)); /* LEVELDOWN */ }
-
-[a-zA-Z0-9_]+[ \t]*"="[ \t]*"MAP_APPFONT"[ \t]*"(".+")".*   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::APPFONTMAPPING, string(yytext)); /* APPFONTMAPPING  Typ = MAP_APPFONT( ... ) */ }
-
-[ \t]*[a-zA-Z0-9_]+[ \t]*=[ \t]*[0123456789]{1,5}[ \t]*";"?\\?   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::TEXTREFID, string(yytext)); /* TEXTREFID // TextTyp = 12345 */ }
-
-[a-zA-Z0-9_]+[ \t]*"=".*                          | 
-[a-zA-Z0-9_]+[ \t]*"="[\t ]*([ \t]*"//".*\n)*.*   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::ASSIGNMENT, string(yytext)); /* ASSIGNMENT  Typ = ...  */ }
-
-[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"[ \t]*(\\[ \t]*)?\n?[ \t]*"<"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::LISTASSIGNMENT, string(yytext)); /* LISTASSIGNMENT  Typ [ ... ] = ... */ }
-
-"StringList"+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"[ \t]*(\\[ \t]*)?\n?[ \t]*   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::LISTASSIGNMENT, string(yytext)); /* LISTASSIGNMENT  Typ [ ... ] = ... */ }
-
-"UIEntries"[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::UIENTRIES, string(yytext)); /* UIENTRIES */ }
-
-"<"?[ \t]*L?\".*\".*">"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::LISTTEXT, string(yytext)); /* LISTTEXT */ }
-
-[ \t]*"#define"[ \t]+[a-zA-Z0-9_]+.*"\\"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::RSCDEFINE, string(yytext)); /* RSCDEFINE  #define ... */ }
-
-[ \t]*"#define"[ \t]+[a-zA-Z0-9_]+.+   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::NORMDEFINE, string(yytext)); /* #define ... */ }
-
-"\\"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::RSCDEFINELEND, string(yytext)); /* RSCDEFINELEND */ }
-
-[a-zA-Z0-9_]+[ \t]*;   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::ANYTOKEN, string(yytext)); /* allowed other tokens like "49 ;" or "SFX_... ;" */ }
-
-.   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::UNKNOWNCHAR, string(yytext)); /* YYWarning( "Unknown Char" ); */ }
-
-"{"?[ \t]*\".*\"[ \t]*";"[ \t]*"}"   {
-  convert_hrc::mcpImpl->addTokenToSet(convert_hrc_impl::_LISTTEXT, string(yytext)); /* _LISTTEXT */ }
+.|\n {
+  string text(yytext);
+  convert_hrc::mcpImpl->copyData(text);
+}
 
 %%

@@ -49,9 +49,7 @@ void convert_hrc::insert()  {mcpImpl->insert();}
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_hrc_impl::convert_hrc_impl(const string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen(srSourceFile, crMemory),
-								  	mbCollectingData(false)
-
+                                  : convert_gen(srSourceFile, crMemory)
 {
 }
 
@@ -67,10 +65,10 @@ convert_hrc_impl::~convert_hrc_impl()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_hrc_impl::extract()
 {
+  mbMergeMode = false;
+
   // run lex parser and build token tree
   runLex();
-
-  //JIX
 }
 
 
@@ -78,5 +76,8 @@ void convert_hrc_impl::extract()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_hrc_impl::insert()
 {
-  //JIX
+  mbMergeMode = true;
+
+  // run lex parser and build token tree
+  runLex();
 }

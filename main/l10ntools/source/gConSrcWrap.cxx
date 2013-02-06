@@ -53,10 +53,21 @@ void convert_src_impl::runLex()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src_impl::pushKey(string &sText)
 {
+  string sKey;
+  int    nL, nE;
+
   // write text for merge
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
+
+  // locate id
+  for (nL = 0; sText[nL] != ' ' && sText[nL] != '\t' && sText[nL] != '\n'; ++nL) ;
+  for (; sText[nL] == ' ' || sText[nL] == '\t'; ++nL) ;
+  for (nE = nL; sText[nE] != ' ' && sText[nE] != '\t' && sText[nE] != '\n'; ++nE) ;
+  sKey = sText.substr(nL, nE - nL);
+
+  mcStack.push_back(sKey);
 }
 
 
@@ -68,6 +79,10 @@ void convert_src_impl::popKey(string &sText)
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
+
+  // check for correct node/prop relations
+  if (mcStack.size())
+    mcStack.pop_back();
 }
 
 
@@ -84,23 +99,22 @@ void convert_src_impl::pushNoKey(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::registerPushKey(string &sText)
+void convert_src_impl::registerKey(string &sText)
 {
+  string sKey;
+  int    nL, nE;
+
   // write text for merge
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
-}
 
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::pushRegistredKey(string &sText)
-{
-  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sText);
-  msCollector.clear();
+  // locate id
+  for (nL = 0; sText[nL] != '=' && sText[nL] != '\n'; ++nL) ;
+  for (++nL; sText[nL] == ' ' || sText[nL] == '\t'; ++nL) ;
+  for (nE = nL; sText[nE] != ' ' && sText[nE] != '\t' && sText[nE] != '\n' && nE < (int)sText.size(); ++nE) ;
+  sKey = sText.substr(nL, nE - nL);
+  mcStack.push_back(sKey);
 }
 
 
@@ -108,10 +122,40 @@ void convert_src_impl::pushRegistredKey(string &sText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src_impl::saveData(string &sText)
 {
+  int    nL, nE;
+  string sKey, sUseText;
+
   // write text for merge
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
+
+  // locate key and extract it
+  for (nL = 0; nL < (int)mcStack.size(); ++nL)
+	sKey += (nL > 0 ? "." : "") + mcStack[nL];
+
+  // locate id
+  for (nL = 0; sText[nL] != '=' && sText[nL] != '\n'; ++nL) ;
+  for (; sText[nL] != '\"'; ++nL) ;
+  for (nE = nL+1; sText[nE] != '\"'; ++nE) ;
+  sUseText = sText.substr(nL+1, nE - nL -1);
+
+  if (mbMergeMode)
+  {
+    // get all languages (includes en-US)
+    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
+    string                   sNewLine;
+    int                      nL = cExtraLangauges.size();
+
+    for (int i = 0; i < nL; ++i)
+    {
+      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
+	             cExtraLangauges[i]->msText + "</value>";
+      writeSourceFile(sNewLine);
+    }
+  }
+  else
+    mcMemory.setEnUsKey(sKey, sUseText);
 }
 
 
