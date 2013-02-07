@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gLang.hxx"
 
 
@@ -33,26 +32,26 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::convert_gen(const string& srSourceFile, l10nMem& crMemory)
+convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory)
                         : msSourceFile(srSourceFile),
                           mcMemory(crMemory)
 {
-  ifstream inputFile(msSourceFile.c_str(), ios::binary);
+  std::ifstream inputFile(msSourceFile.c_str(), std::ios::binary);
 
   
   if (!inputFile.is_open())
-    throw string("Could not open ")+msSourceFile;
+    throw std::string("Could not open ")+msSourceFile;
 
   // get length of file:
   mnSourceReadIndex = 0;
-  inputFile.seekg (0, ios::end);
+  inputFile.seekg (0, std::ios::end);
   msSourceBuffer.resize((unsigned int)inputFile.tellg());
-  inputFile.seekg (0, ios::beg);
+  inputFile.seekg (0, std::ios::beg);
 
-  // get size, prepare string and read whole file
+  // get size, prepare std::string and read whole file
   inputFile.read((char *)msSourceBuffer.c_str(), msSourceBuffer.size());
   if ((unsigned int)inputFile.gcount() != msSourceBuffer.size())
-    throw string("cannot read whole file: "+msSourceFile);
+    throw std::string("cannot read whole file: "+msSourceFile);
   inputFile.close();
 }
 
@@ -66,15 +65,15 @@ convert_gen::~convert_gen()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen& convert_gen::getConverter(const string& srSourceFile, l10nMem& crMemory)
+convert_gen& convert_gen::getConverter(const std::string& srSourceFile, l10nMem& crMemory)
 {
   // did the user give a .xxx with the source file ?
   int nInx = srSourceFile.find_last_of(".");
   if (nInx <= 0)
-    throw string("source file: ")+srSourceFile+" missing extension";
+    throw std::string("source file: ")+srSourceFile+" missing extension";
 
   // find correct conversion class
-  string sExtension = srSourceFile.substr(nInx+1);
+  std::string sExtension = srSourceFile.substr(nInx+1);
 
   // did the user give a .xxx with the source file ?
   if (sExtension == "hrc")        return *(new convert_hrc       (srSourceFile, crMemory));
@@ -88,7 +87,7 @@ convert_gen& convert_gen::getConverter(const string& srSourceFile, l10nMem& crMe
   if (sExtension == "xhp")        return *(new convert_xhp       (srSourceFile, crMemory));
   if (sExtension == "properties") return *(new convert_properties(srSourceFile, crMemory));
 
-  throw string("unknown extension on source file: ")+srSourceFile;
+  throw std::string("unknown extension on source file: ")+srSourceFile;
 }
 
 
@@ -123,7 +122,7 @@ void convert_gen::lexRead(char *sBuf, int *nResult, int nMax_size)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::lineRead(bool *bEof, string& line)
+void convert_gen::lineRead(bool *bEof, std::string& line)
 {
   // did we hit eof
   if (mnSourceReadIndex == -1 || mnSourceReadIndex >= (int)msSourceBuffer.size())
@@ -138,7 +137,7 @@ void convert_gen::lineRead(bool *bEof, string& line)
   if (nNextLF == (int)msSourceBuffer.npos)
     nNextLF = msSourceBuffer.size()+1;
 
-  // copy string
+  // copy std::string
   line              = msSourceBuffer.substr(mnSourceReadIndex, nNextLF - mnSourceReadIndex);
   mnSourceReadIndex = nNextLF +1;
   *bEof             = false;
@@ -148,29 +147,29 @@ void convert_gen::lineRead(bool *bEof, string& line)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::writeSourceFile(const string& line)
+void convert_gen::writeSourceFile(const std::string& line)
 {
   if (!line.size())
 	return;
 
-  cout << line;
+  std::cout << line;
   // JIX
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::trim(string& sLine)
+void convert_gen::trim(std::string& sLine)
 {
   int nL;
 
   // remove leading spaces
   nL = sLine.find_first_not_of(" \t");
-  if (nL != (int)string::npos)
+  if (nL != (int)std::string::npos)
     sLine.erase(0, nL);
 
   // remove trailing spaces
   nL = sLine.find_last_not_of(" \t");
-  if (nL != (int)string::npos)
+  if (nL != (int)std::string::npos)
     sLine.erase(nL +1);
 }

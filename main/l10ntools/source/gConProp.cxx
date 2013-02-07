@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gLang.hxx"
 
 
@@ -32,10 +31,10 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_properties::convert_properties(const string& srSourceFile, l10nMem& crMemory)
+convert_properties::convert_properties(const std::string& srSourceFile, l10nMem& crMemory)
                                       : convert_gen(srSourceFile, crMemory)
 {
-  throw string("convert_properties not implemented");
+  throw std::string("convert_properties not implemented");
 }
 
 
@@ -50,7 +49,7 @@ convert_properties::~convert_properties()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_properties::extract()
 {
-  throw string("convert_properties::extract not implemented");
+  throw std::string("convert_properties::extract not implemented");
 }
 
 
@@ -58,6 +57,6 @@ void convert_properties::extract()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_properties::insert()
 {
-  throw string("convert_properties::insert not implemented");
+  throw std::string("convert_properties::insert not implemented");
 }
 

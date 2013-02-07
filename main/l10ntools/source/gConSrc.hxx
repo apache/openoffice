@@ -37,20 +37,20 @@
 class convert_src_impl : public convert_gen
 {
   public:
-    convert_src_impl(const string& srSourceFile, l10nMem& crMemory);
+    convert_src_impl(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_src_impl();
     
-    void pushKey(string &sText);
-    void popKey (string &sText);
-    void pushNoKey(string &sText);
-    void registerKey(string &sText);
+    void pushKey(std::string &sText);
+    void popKey (std::string &sText);
+    void pushNoKey(std::string &sText);
+    void registerKey(std::string &sText);
     
-    void saveData(string& sText);
-    void copyData(string& sText);
+    void saveData(std::string& sText);
+    void copyData(std::string& sText);
 
   private:
-    vector<string> mcStack;
-    string         msCollector;
+    std::vector<std::string> mcStack;
+    std::string         msCollector;
 
     void extract();
     void insert();

@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConHrc.hxx"
 
 
@@ -51,7 +50,7 @@ void convert_hrc_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::setKey(string &sText)
+void convert_hrc_impl::setKey(std::string &sText)
 {
   int    nL, nE;
 
@@ -70,10 +69,10 @@ void convert_hrc_impl::setKey(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::saveData(string &sText)
+void convert_hrc_impl::saveData(std::string &sText)
 {
   int    nL, nE;
-  string sUseText;
+  std::string sUseText;
 
   // write text for merge
   if (mbMergeMode)
@@ -89,8 +88,8 @@ void convert_hrc_impl::saveData(string &sText)
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
-    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(msKey);
-    string                   sNewLine;
+    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(msKey);
+    std::string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
     for (int i = 0; i < nL; ++i)
@@ -107,7 +106,7 @@ void convert_hrc_impl::saveData(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::copyData(string &sText)
+void convert_hrc_impl::copyData(std::string &sText)
 {
   msCollector += sText;
   if (sText == "\n")

@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConXrm.hxx"
 
 
@@ -37,7 +36,7 @@ convert_xrm_impl * convert_xrm::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xrm::convert_xrm(const string& srSourceFile, l10nMem& crMemory)
+convert_xrm::convert_xrm(const std::string& srSourceFile, l10nMem& crMemory)
                         : convert_gen(srSourceFile, crMemory) 
                           {mcpImpl = new convert_xrm_impl(srSourceFile, crMemory);}
 convert_xrm::~convert_xrm() {delete mcpImpl;}
@@ -47,7 +46,7 @@ void convert_xrm::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xrm_impl::convert_xrm_impl(const string& srSourceFile, l10nMem& crMemory)
+convert_xrm_impl::convert_xrm_impl(const std::string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen (srSourceFile, crMemory),
 								    mbCollectingData(false)
 {

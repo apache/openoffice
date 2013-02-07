@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConSrc.hxx"
 
 
@@ -51,9 +50,9 @@ void convert_src_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::pushKey(string &sText)
+void convert_src_impl::pushKey(std::string &sText)
 {
-  string sKey;
+  std::string sKey;
   int    nL, nE;
 
   // write text for merge
@@ -73,7 +72,7 @@ void convert_src_impl::pushKey(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::popKey(string &sText)
+void convert_src_impl::popKey(std::string &sText)
 {
   // write text for merge
   if (mbMergeMode)
@@ -88,7 +87,7 @@ void convert_src_impl::popKey(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::pushNoKey(string &sText)
+void convert_src_impl::pushNoKey(std::string &sText)
 {
   // write text for merge
   if (mbMergeMode)
@@ -99,9 +98,9 @@ void convert_src_impl::pushNoKey(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::registerKey(string &sText)
+void convert_src_impl::registerKey(std::string &sText)
 {
-  string sKey;
+  std::string sKey;
   int    nL, nE;
 
   // write text for merge
@@ -120,10 +119,10 @@ void convert_src_impl::registerKey(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::saveData(string &sText)
+void convert_src_impl::saveData(std::string &sText)
 {
   int    nL, nE;
-  string sKey, sUseText;
+  std::string sKey, sUseText;
 
   // write text for merge
   if (mbMergeMode)
@@ -143,8 +142,8 @@ void convert_src_impl::saveData(string &sText)
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
-    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-    string                   sNewLine;
+    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
+    std::string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
     for (int i = 0; i < nL; ++i)
@@ -161,7 +160,7 @@ void convert_src_impl::saveData(string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::copyData(string &sText)
+void convert_src_impl::copyData(std::string &sText)
 {
   msCollector += sText;
   if (sText == "\n")

@@ -31,7 +31,7 @@
 
 /***************   O V E R W R I T I N G   F U N C T I O N S   ***************/
 %{
-/* enlarge token buffer to tokenize whole strings */
+/* enlarge token buffer to tokenize whole std::strings */
 #undef  YYLMAX
 #define YYLMAX 64000
 
@@ -60,57 +60,57 @@
 %%
 
 [tT][aA][bB][dD][iI][aA][lL][oO][gG][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
 [tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
 [tT][aA][bB][pP][aA][gG][eE][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
 [fF][iI][xX][eE][dD][tT][eE][xX][tT][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
 [sS][tT][rR][iI][nN][gG][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
 [pP][aA][gG][eE][lL][iI][sS][tT][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->pushNoKey(text);
 }
 
 [pP][aA][gG][eE][iI][tT][eE][mM][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->pushNoKey(text);
 }
 
 [iI][dD][eE][nN][tT][iI][fF][iI][eE][rR][^;]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->registerKey(text);
 }
 
 [tT][eE][xX][tT][^\"]*"\""[^\"]*"\";" {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->saveData(text);
 }
 
 "};" {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->popKey(text);
 }
 
 .|\n {
-  string text(yytext);
+  std::string text(yytext);
   convert_src::mcpImpl->copyData(text);
 }
 

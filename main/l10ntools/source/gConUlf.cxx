@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gLang.hxx"
 
 
@@ -32,7 +31,7 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_ulf::convert_ulf(const string& srSourceFile, l10nMem& crMemory)
+convert_ulf::convert_ulf(const std::string& srSourceFile, l10nMem& crMemory)
                         : convert_gen(srSourceFile, crMemory)
 {
 }
@@ -69,7 +68,7 @@ void convert_ulf::handleLines()
 {
   bool   bEof, bMultiLineComment = false;
   int    nL;
-  string sWorkLine, sKey, sText;
+  std::string sWorkLine, sKey, sText;
 
 
   // loop through all lines
@@ -87,7 +86,7 @@ void convert_ulf::handleLines()
     if (bMultiLineComment)
     {
       nL = sWorkLine.find("*/");
-      if (nL == (int)string::npos)
+      if (nL == (int)std::string::npos)
 		continue;
 
       bMultiLineComment = false;
@@ -96,10 +95,10 @@ void convert_ulf::handleLines()
 
     // check for start of comment
     nL = sWorkLine.find("/*");
-    if (nL != (int)string::npos)
+    if (nL != (int)std::string::npos)
     {
       int nE = sWorkLine.find("*/");
-      if (nE == (int)string::npos)
+      if (nE == (int)std::string::npos)
       {
         bMultiLineComment = true;
         continue;
@@ -127,11 +126,11 @@ void convert_ulf::handleLines()
 
     // must be language line
     nL = sWorkLine.find_first_of("=");
-    if (nL == (int)string::npos)
+    if (nL == (int)std::string::npos)
       throw "unknown format in " + msSourceFile + " missing = in line: " + sWorkLine;
 
     nL = sWorkLine.find_first_of("\"");
-    if (nL == (int)string::npos)
+    if (nL == (int)std::string::npos)
       throw "unknown format: <<" + sWorkLine + ">> missing '='";
 
 	if (!mbMergeMode)
@@ -145,8 +144,8 @@ void convert_ulf::handleLines()
     // copy line if merging or add to translation
     {
       // get all languages (includes en-US)
-      vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-      string                   sNewLine;
+      std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
+      std::string                   sNewLine;
       nL = cExtraLangauges.size();
 
 

@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConXhp.hxx"
 
 
@@ -50,7 +49,7 @@ void convert_xhp_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::startCollectData(string sType, string& sCollectedText)
+void convert_xhp_impl::startCollectData(std::string sType, std::string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -68,9 +67,9 @@ void convert_xhp_impl::startCollectData(string sType, string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::stopCollectData(string sType, string& sCollectedText)
+void convert_xhp_impl::stopCollectData(std::string sType, std::string& sCollectedText)
 {
-  string sKey;
+  std::string sKey;
   int    nL;
 
 
@@ -85,8 +84,8 @@ void convert_xhp_impl::stopCollectData(string sType, string& sCollectedText)
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
-    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-    string                   sNewLine;
+    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
+    std::string                   sNewLine;
     nL = cExtraLangauges.size();
 
 	// write en-US entry
@@ -112,7 +111,7 @@ void convert_xhp_impl::stopCollectData(string sType, string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::collectData(string& sCollectedText)
+void convert_xhp_impl::collectData(std::string& sCollectedText)
 {
   msCollector += sCollectedText;
   if (sCollectedText == "\n")

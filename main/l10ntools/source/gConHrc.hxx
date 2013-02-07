@@ -36,17 +36,17 @@
 class convert_hrc_impl : public convert_gen
 {
   public:
-    convert_hrc_impl(const string& srSourceFile, l10nMem& crMemory);
+    convert_hrc_impl(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_hrc_impl();
     
-    void setKey(string &sText);
-    void saveData(string& sText);
-    void copyData(string& sText);
+    void setKey(std::string &sText);
+    void saveData(std::string& sText);
+    void copyData(std::string& sText);
 
   private:
-    vector<string> mcStack;
-    string         msCollector;
-    string         msKey;
+    std::vector<std::string> mcStack;
+    std::string         msCollector;
+    std::string         msKey;
 
 
     void extract();

@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std; 
 #include "gConHrc.hxx"
 
 
@@ -38,7 +37,7 @@ convert_hrc_impl * convert_hrc::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_hrc::convert_hrc(const string& srSourceFile, l10nMem& crMemory)
+convert_hrc::convert_hrc(const std::string& srSourceFile, l10nMem& crMemory)
                                 : convert_gen(srSourceFile, crMemory) 
                             {mcpImpl = new convert_hrc_impl(srSourceFile, crMemory);}
 convert_hrc::~convert_hrc() {delete mcpImpl;}
@@ -48,7 +47,7 @@ void convert_hrc::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_hrc_impl::convert_hrc_impl(const string& srSourceFile, l10nMem& crMemory)
+convert_hrc_impl::convert_hrc_impl(const std::string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen(srSourceFile, crMemory)
 {
 }

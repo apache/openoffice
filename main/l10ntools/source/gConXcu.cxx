@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConXcu.hxx"
 
 
@@ -37,7 +36,7 @@ convert_xcu_impl * convert_xcu::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xcu::convert_xcu(const string& srSourceFile, l10nMem& crMemory)
+convert_xcu::convert_xcu(const std::string& srSourceFile, l10nMem& crMemory)
                         : convert_gen(srSourceFile, crMemory) 
                           {mcpImpl = new convert_xcu_impl(srSourceFile, crMemory);}
 convert_xcu::~convert_xcu() {delete mcpImpl;}
@@ -47,7 +46,7 @@ void convert_xcu::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xcu_impl::convert_xcu_impl(const string& srSourceFile, l10nMem& crMemory)
+convert_xcu_impl::convert_xcu_impl(const std::string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen (srSourceFile, crMemory),
 								  	mbCollectingData(false)
 

@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConXcs.hxx"
 
 
@@ -37,7 +36,7 @@ convert_xcs_impl * convert_xcs::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xcs::convert_xcs(const string& srSourceFile, l10nMem& crMemory)
+convert_xcs::convert_xcs(const std::string& srSourceFile, l10nMem& crMemory)
                         : convert_gen(srSourceFile, crMemory) 
                           {mcpImpl = new convert_xcs_impl(srSourceFile, crMemory);}
 convert_xcs::~convert_xcs() {delete mcpImpl;}
@@ -47,7 +46,7 @@ void convert_xcs::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xcs_impl::convert_xcs_impl(const string& srSourceFile, l10nMem& crMemory)
+convert_xcs_impl::convert_xcs_impl(const std::string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen (srSourceFile, crMemory),
 								  mbCollectingData(false)
 {
@@ -69,7 +68,7 @@ void convert_xcs_impl::extract()
   mbMergeMode = false;
 
   // run lex parser and build token tree
-  throw string("convert_xcs::extract not active");
+  throw std::string("convert_xcs::extract not active");
   runLex();
 }
 
@@ -82,7 +81,7 @@ void convert_xcs_impl::insert()
   mbMergeMode = true;
 
   // run lex parser and build token tree
-  throw string("convert_xcs::insert not active");
+  throw std::string("convert_xcs::insert not active");
   runLex();
 }
 

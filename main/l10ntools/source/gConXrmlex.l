@@ -31,7 +31,7 @@
  
 /***************   O V E R W R I T I N G   F U N C T I O N S   ***************/
 %{
-/* enlarge token buffer to tokenize whole strings */
+/* enlarge token buffer to tokenize whole std::strings */
 #undef  YYLMAX
 #define YYLMAX 64000
 
@@ -60,27 +60,27 @@
 %%
 
 "<p"[^>]*> {
-  string text(yytext);
+  std::string text(yytext);
   convert_xrm::mcpImpl->startCollectData(text.substr(1,1), text);
 }
 
 "<h"[0-9][^>]*> {
-  string text(yytext);
+  std::string text(yytext);
   convert_xrm::mcpImpl->startCollectData(text.substr(1,2), text);
 }
 
 "</p>" {
-  string text(yytext);
+  std::string text(yytext);
   convert_xrm::mcpImpl->stopCollectData(text.substr(2,1), text);
 }
 
 "</h"[0-9]> {
-  string text(yytext);
+  std::string text(yytext);
   convert_xrm::mcpImpl->stopCollectData(text.substr(2,2), text);
 }
 
 .|\n {
-  string text(yytext);
+  std::string text(yytext);
   convert_xrm::mcpImpl->collectData(text);
 }
 

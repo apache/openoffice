@@ -38,11 +38,11 @@ typedef enum {TAG_COMPONENT, TAG_PROP, TAG_NODE } TAG_TYPE;
 class po_stack_entry
 {
   public:
-    po_stack_entry(TAG_TYPE sIsNode, string& sName);
+    po_stack_entry(TAG_TYPE sIsNode, std::string& sName);
     ~po_stack_entry();
 
     TAG_TYPE mbIsNode;
-    string   msName;
+    std::string   msName;
 };
 
 
@@ -53,21 +53,21 @@ class po_stack_entry;
 class convert_po_impl : public convert_gen
 {
   public:
-    convert_po_impl(const string& srSourceFile, l10nMem& crMemory);
+    convert_po_impl(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_po_impl();
 
-    void pushKeyPart(TAG_TYPE eIsNode, string &sTag);
-    void popKeyPart (TAG_TYPE eIsNode, string &sTag);
+    void pushKeyPart(TAG_TYPE eIsNode, std::string &sTag);
+    void popKeyPart (TAG_TYPE eIsNode, std::string &sTag);
 
-    void startCollectData(string& sCollectedText);
-    void stopCollectData(string& sCollectedText);
-    void collectData(string& sCollectedText);
+    void startCollectData(std::string& sCollectedText);
+    void stopCollectData(std::string& sCollectedText);
+    void collectData(std::string& sCollectedText);
 
   private:
-    stack<po_stack_entry> mcStack;
+    std::stack<po_stack_entry> mcStack;
     bool                   mbMergeMode;
     bool                   mbCollectingData;
-    string                 msCollector;
+    std::string                 msCollector;
 
     void extract();
     void insert();

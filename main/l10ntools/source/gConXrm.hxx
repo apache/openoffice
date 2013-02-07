@@ -36,18 +36,18 @@
 class convert_xrm_impl : public convert_gen
 {
   public:
-    convert_xrm_impl(const string& srSourceFile, l10nMem& crMemory);
+    convert_xrm_impl(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_xrm_impl();
 
-    void startCollectData(string sType, string& sCollectedText);
-    void stopCollectData(string sType, string& sCollectedText);
-    void collectData(string& sCollectedText);
+    void startCollectData(std::string sType, std::string& sCollectedText);
+    void stopCollectData(std::string sType, std::string& sCollectedText);
+    void collectData(std::string& sCollectedText);
 
   private:
     bool   mbCollectingData;
-    string msCollector;
-	string msTag;
-	string msMergeType;
+    std::string msCollector;
+	std::string msTag;
+	std::string msMergeType;
 
     void extract();
     void insert();

@@ -36,18 +36,18 @@
 class convert_xhp_impl : public convert_gen
 {
   public:
-    convert_xhp_impl(const string& srSourceFile, l10nMem& crMemory);
+    convert_xhp_impl(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_xhp_impl();
 
-    void startCollectData(string sType, string& sCollectedText);
-    void stopCollectData(string sType, string& sCollectedText);
-    void collectData(string& sCollectedText);
+    void startCollectData(std::string sType, std::string& sCollectedText);
+    void stopCollectData(std::string sType, std::string& sCollectedText);
+    void collectData(std::string& sCollectedText);
 
   private:
     bool mbCollectingData;
-    string msCollector;
-	string msMergeType;
-    string msTag;
+    std::string msCollector;
+	std::string msMergeType;
+    std::string msTag;
 
     void extract();
     void insert();

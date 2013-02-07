@@ -36,19 +36,19 @@
 class convert_xcs_impl : public convert_gen
 {
   public:
-    convert_xcs_impl(const string& srSourceFile, l10nMem& crMemory);
+    convert_xcs_impl(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_xcs_impl();
 
-	void setKey(string &sCollectedText);
-	void unsetKey(string &sCollectedText);
-	void startCollectData(string& sCollectedText);
-    void stopCollectData(string& sCollectedText);
-    void collectData(string& sCollectedText);
+	void setKey(std::string &sCollectedText);
+	void unsetKey(std::string &sCollectedText);
+	void startCollectData(std::string& sCollectedText);
+    void stopCollectData(std::string& sCollectedText);
+    void collectData(std::string& sCollectedText);
 
   private:
     bool   mbCollectingData;
-    string msCollector;
-	string msKey;
+    std::string msCollector;
+	std::string msKey;
 
     void extract();
     void insert();

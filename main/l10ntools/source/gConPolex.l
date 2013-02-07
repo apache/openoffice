@@ -31,7 +31,7 @@
  
 /***************   O V E R W R I T I N G   F U N C T I O N S   ***************/
 %{
-/* enlarge token buffer to tokenize whole strings */
+/* enlarge token buffer to tokenize whole std::strings */
 #undef  YYLMAX
 #define YYLMAX 64000
 
@@ -60,48 +60,48 @@
 %%
 
 "<oor:component-data "[^>]*> {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->pushKeyPart(TAG_COMPONENT, text);
 }
 
 
 "</oor:component-data>" {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->popKeyPart(TAG_COMPONENT, text);
 }
 
 "<prop oor:name=\""[^\"]*\" {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->pushKeyPart(TAG_PROP, text);
 }
 
 "</prop>" {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->popKeyPart(TAG_PROP, text);
 }
 
 "<node oor:name=\""[^\"]*\" {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->pushKeyPart(TAG_NODE, text);
 }
 
 "</node>" {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->popKeyPart(TAG_NODE, text);
 }
   
 "<value xml:lang=\""[^\"]*\"[^>]*">" {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->startCollectData(text);
 }
 
 "</value>" {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->stopCollectData(text);
 }
 
 .|\n {
-  string text(yytext);
+  std::string text(yytext);
   convert_po::mcpImpl->collectData(text);
 }
 %%

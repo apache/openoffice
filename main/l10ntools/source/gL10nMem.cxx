@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gLang.hxx"
 
 
@@ -33,9 +32,9 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-l10nMem_entry::l10nMem_entry(const string& srSourceFile, const string& srModuleName,
-                             const string& srKey,        const string& srLanguage,
-                             const string& srText)
+l10nMem_entry::l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName,
+                             const std::string& srKey,        const std::string& srLanguage,
+                             const std::string& srText)
                             : msSourceFile(srSourceFile),
                               msModuleName(srModuleName),
                               msKey(srKey),
@@ -71,14 +70,14 @@ l10nMem::~l10nMem()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::save(const string& srTargetFile)
+void l10nMem::save(const std::string& srTargetFile)
 {
   int i;
 
-  cout << "--------------- dump of l10n " << srTargetFile << "-----------------" << endl;
+  std::cout << "--------------- dump of l10n " << srTargetFile << "-----------------" << std::endl;
 
   for (i = 0; i < (int)mcMemory.size(); ++i)
-    cout << "key: " << mcMemory[i].msKey << "  text: " << mcMemory[i].msText << endl;
+    std::cout << "key: " << mcMemory[i].msKey << "  text: " << mcMemory[i].msText << std::endl;
   // JIX
 }
 
@@ -87,7 +86,7 @@ void l10nMem::save(const string& srTargetFile)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem::clear()
 {
-  cout << "--------------- clear of l10n -----------------" << endl;
+  std::cout << "--------------- clear of l10n -----------------" << std::endl;
 
   mcMemory.clear();
   // JIX
@@ -96,7 +95,7 @@ void l10nMem::clear()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setFileName(const string& srSourceFile)
+void l10nMem::setFileName(const std::string& srSourceFile)
 {
   msCurrentSourceFileName = srSourceFile;
 }
@@ -104,7 +103,7 @@ void l10nMem::setFileName(const string& srSourceFile)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setModuleName(const string& srModuleName)
+void l10nMem::setModuleName(const std::string& srModuleName)
 {
   msCurrentModuleName = srModuleName;
 }
@@ -112,9 +111,9 @@ void l10nMem::setModuleName(const string& srModuleName)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setEnUsKey(const string& srKey, const string& srText)
+void l10nMem::setEnUsKey(const std::string& srKey, const std::string& srText)
 {
-  string baseLanguage = "en-US";
+  std::string baseLanguage = "en-US";
   mcMemory.push_back(l10nMem_entry(msCurrentSourceFileName, msCurrentModuleName,
                                    srKey, baseLanguage, srText));
 }
@@ -122,7 +121,7 @@ void l10nMem::setEnUsKey(const string& srKey, const string& srText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-vector<l10nMem_entry *>&  l10nMem::getLanguagesForKey(const string& srKey)
+std::vector<l10nMem_entry *>&  l10nMem::getLanguagesForKey(const std::string& srKey)
 {
   int nL = mcMemory.size();
 

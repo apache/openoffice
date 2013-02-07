@@ -39,20 +39,20 @@ class xcu_stack_entry;
 class convert_xcu_impl : public convert_gen
 {
   public:
-    convert_xcu_impl(const string& srSourceFile, l10nMem& crMemory);
+    convert_xcu_impl(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_xcu_impl();
 
-    void pushKeyPart(TAG_TYPE eIsNode, string &sTag);
-    void popKeyPart (TAG_TYPE eIsNode, string &sTag);
+    void pushKeyPart(TAG_TYPE eIsNode, std::string &sTag);
+    void popKeyPart (TAG_TYPE eIsNode, std::string &sTag);
 
-    void startCollectData(string& sCollectedText);
-    void stopCollectData(string& sCollectedText);
-    void collectData(string& sCollectedText);
+    void startCollectData(std::string& sCollectedText);
+    void stopCollectData(std::string& sCollectedText);
+    void collectData(std::string& sCollectedText);
 
   private:
-    vector<string> mcStack;
+    std::vector<std::string> mcStack;
     bool           mbCollectingData;
-    string         msCollector;
+    std::string         msCollector;
 
     void extract();
     void insert();

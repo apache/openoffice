@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include <iostream>
 #include "gLang.hxx"
 
@@ -59,34 +58,34 @@ void handler::checkCommandLine(int argc, char *argv[])
   {
     // check for parameter count
     if (argc <= 1)
-      throw string("");
+      throw std::string("");
 
     // check for working mode
-    string meWorkText(argv[1]);
+    std::string meWorkText(argv[1]);
 
     if      (meWorkText == "extract")  meWorkMode = DO_EXTRACT;
     else if (meWorkText == "merge")    meWorkMode = DO_MERGE;
     else if (meWorkText == "generate") meWorkMode = DO_GENERATE;
     else if (meWorkText == "insert")   meWorkMode = DO_INSERT;
-    else if (meWorkText == "--help")   throw string("");
-    else                               throw string("unknown mode (1 argument)");
+    else if (meWorkText == "--help")   throw std::string("");
+    else                               throw std::string("unknown mode (1 argument)");
 
     // decode parameters and translate to variables
     for (int n = 2; n < argc; ++n)
     {
-      string sArg(argv[n]);
+      std::string sArg(argv[n]);
 
       // all -x is followed by a directory
       if (sArg.at(0) == '-')
       {
         if (n == argc)
-          throw string("missing directory after ")+sArg;
+          throw std::string("missing directory after ")+sArg;
 
         // find directory type, and set it
         if      (sArg == "-m") msModuleName = argv[++n];      
         else if (sArg == "-t") msTargetDir  = argv[++n];      
         else if (sArg == "-s") msSourceDir  = argv[++n];      
-        else                  throw string("unknown parameter: ")+sArg;
+        else                  throw std::string("unknown parameter: ")+sArg;
       }
       else
         msSourceFiles.push_back(sArg);
@@ -97,52 +96,52 @@ void handler::checkCommandLine(int argc, char *argv[])
     {
       case DO_EXTRACT:
            // required parameters
-           if (!msModuleName.size())  throw string("missing -m <module name>");
-           if (!msTargetDir.size())   throw string("missing -t <target dir>");
-           if (!msSourceFiles.size()) throw string("missing source files");
+           if (!msModuleName.size())  throw std::string("missing -m <module name>");
+           if (!msTargetDir.size())   throw std::string("missing -t <target dir>");
+           if (!msSourceFiles.size()) throw std::string("missing source files");
            break;
 
       case DO_MERGE:
            // required parameters
-           if (!msSourceDir.size())   throw string("missing -s <source dir>");
-           if (!msTargetDir.size())   throw string("missing -t <target dir>");
+           if (!msSourceDir.size())   throw std::string("missing -s <source dir>");
+           if (!msTargetDir.size())   throw std::string("missing -t <target dir>");
 
            // not allowed parameters
-           if (msModuleName.size())   throw string("-m is invalid with merge");
-           if (msSourceFiles.size())  throw string("<source> is invalid with merge");
+           if (msModuleName.size())   throw std::string("-m is invalid with merge");
+           if (msSourceFiles.size())  throw std::string("<source> is invalid with merge");
            break;
 
       case DO_GENERATE:
            // required parameters
-           if (!msSourceDir.size())   throw string("missing -s <source dir>");
-           if (!msTargetDir.size())   throw string("missing -t <target dir>");
+           if (!msSourceDir.size())   throw std::string("missing -s <source dir>");
+           if (!msTargetDir.size())   throw std::string("missing -t <target dir>");
 
            // not allowed parameters
-           if (msModuleName.size())   throw string("-m is invalid with generate");
-           if (!msSourceFiles.size()) throw string("<source> is invalid with generate");
+           if (msModuleName.size())   throw std::string("-m is invalid with generate");
+           if (!msSourceFiles.size()) throw std::string("<source> is invalid with generate");
            break;
 
       case DO_INSERT:
            // required parameters
-           if (!msModuleName.size())  throw string("missing -m <module name>");
-           if (!msSourceDir.size())   throw string("missing -s <source dir>");
+           if (!msModuleName.size())  throw std::string("missing -m <module name>");
+           if (!msSourceDir.size())   throw std::string("missing -s <source dir>");
 
            // not allowed parameters
-           if (!msSourceFiles.size()) throw string("<source> is invalid with generate");
+           if (!msSourceFiles.size()) throw std::string("<source> is invalid with generate");
            break;
 
       case DO_NONE:
-           throw string("unknown mode (1 argument)");
+           throw std::string("unknown mode (1 argument)");
     }
   }
-  catch(string sErr)
+  catch(std::string sErr)
   {
     // do we have an error text ?
     if (sErr.size())
-      cerr << "commandline error:" << sErr << endl;
+      std::cerr << "commandline error:" << sErr << std::endl;
 
     // give the correct usage
-    cout << "genLang (c)2012 by Apache Software Foundation\n"
+    std::cout << "genLang (c)2012 by Apache Software Foundation\n"
             "====================================\n"
             "As part of the L10N framework, genLang extracts and merges translations\n"
             "out of and into the whole source tree.\n\n"
@@ -202,12 +201,12 @@ void handler::run()
       case DO_MERGE:    runMerge();    break;
       case DO_GENERATE: runGenerate(); break;
       case DO_INSERT:   runInsert();   break;
-      case DO_NONE:     throw string("INTERNAL ERROR, checkCommandLine not called!!!");
+      case DO_NONE:     throw std::string("INTERNAL ERROR, checkCommandLine not called!!!");
     }
   }
-  catch(string sErr)
+  catch(std::string sErr)
   {
-    cerr << "runtime error: " << sErr << endl;
+    std::cerr << "runtime error: " << sErr << std::endl;
     exit(-1);
   }
 }
@@ -221,7 +220,7 @@ void handler::runExtract()
   mcMemory.setModuleName(msModuleName);
 
   // loop through all source files, and extract messages from each file
-  for (vector<string>::iterator siSource = msSourceFiles.begin(); siSource != msSourceFiles.end(); ++siSource)
+  for (std::vector<std::string>::iterator siSource = msSourceFiles.begin(); siSource != msSourceFiles.end(); ++siSource)
   {
 	// JIX JUST FOR TEST
 	mcMemory.clear();
@@ -242,7 +241,7 @@ void handler::runExtract()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runMerge()
 {
-  throw string("handler::runMerge not implemented");
+  throw std::string("handler::runMerge not implemented");
 }
 
 
@@ -250,7 +249,7 @@ void handler::runMerge()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runGenerate()
 {
-  throw string("handler::runGenerate not implemented");
+  throw std::string("handler::runGenerate not implemented");
 }
 
 
@@ -258,5 +257,5 @@ void handler::runGenerate()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runInsert()
 {
-  throw string("handler::runInsert not implemented");
+  throw std::string("handler::runInsert not implemented");
 }

@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gLang.hxx"
 
 
@@ -32,12 +31,12 @@ using namespace std;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_tree::convert_tree(const string& srSourceFile, l10nMem& crMemory)
+convert_tree::convert_tree(const std::string& srSourceFile, l10nMem& crMemory)
                           : convert_gen(srSourceFile, crMemory)
 {
 // extension,     program,     parameter,          collectMode, xxx
 // ".tree",       "xhtex",     "",                 "negative",  "noiso"
-  throw string("convert_tree not implemented");
+  throw std::string("convert_tree not implemented");
 }
 
 
@@ -52,7 +51,7 @@ convert_tree::~convert_tree()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_tree::extract()
 {
-  throw string("convert_tree::extract not implemented");
+  throw std::string("convert_tree::extract not implemented");
 }
 
 
@@ -60,5 +59,5 @@ void convert_tree::extract()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_tree::insert()
 {
-  throw string("convert_tree::insert not implemented");
+  throw std::string("convert_tree::insert not implemented");
 }

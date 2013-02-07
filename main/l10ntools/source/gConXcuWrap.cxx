@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConXcu.hxx"
 
 
@@ -48,9 +47,9 @@ void convert_xcu_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
+void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, std::string& sTag)
 {
-  string sKey;
+  std::string sKey;
   int    nL, nE;
 
 
@@ -61,13 +60,13 @@ void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 
   // find key in tag
   nL = sTag.find("oor:name=\"");
-  if (nL == (int)string::npos)
+  if (nL == (int)std::string::npos)
 	return;
 
   // find end of key
   nL += 10;
   nE = sTag.find("\"", nL);
-  if (nE == (int)string::npos)
+  if (nE == (int)std::string::npos)
 	return;
 
   sKey = sTag.substr(nL, nE - nL);
@@ -77,7 +76,7 @@ void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
+void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, std::string &sTag)
 {
   // write text for merge
   if (mbMergeMode)
@@ -92,7 +91,7 @@ void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::startCollectData(string& sCollectedText)
+void convert_xcu_impl::startCollectData(std::string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -104,10 +103,10 @@ void convert_xcu_impl::startCollectData(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::stopCollectData(string& sCollectedText)
+void convert_xcu_impl::stopCollectData(std::string& sCollectedText)
 {
   int    nL;
-  string useKey;
+  std::string useKey;
 
   // time to do something ?
   if (!mbCollectingData)
@@ -123,8 +122,8 @@ void convert_xcu_impl::stopCollectData(string& sCollectedText)
 	writeSourceFile(msCollector + sCollectedText);
 
     // get all languages (includes en-US)
-    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
-    string                   sNewLine;
+    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
+    std::string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
     for (int i = 0; i < nL; ++i)
@@ -142,7 +141,7 @@ void convert_xcu_impl::stopCollectData(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::collectData(string& sCollectedText)
+void convert_xcu_impl::collectData(std::string& sCollectedText)
 {
   msCollector += sCollectedText;
   if (sCollectedText == "\n")

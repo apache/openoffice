@@ -31,7 +31,7 @@
 
 /***************   O V E R W R I T I N G   F U N C T I O N S   ***************/
 %{
-/* enlarge token buffer to tokenize whole strings */
+/* enlarge token buffer to tokenize whole std::strings */
 #undef  YYLMAX
 #define YYLMAX 64000
 
@@ -60,27 +60,27 @@
 %%
 
 [fF][iI][xX][eE][dD][lL][iI][nN][eE][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_hrc::mcpImpl->setKey(text);
 }
 
 [rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nM][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_hrc::mcpImpl->setKey(text);
 }
 
 [cC][hH][eE][cC][kK][bB][oO][xX][^\{]* {
-  string text(yytext);
+  std::string text(yytext);
   convert_hrc::mcpImpl->setKey(text);
 }
 
 [tT][eE][xX][tT][^\"]*"\""[^\"]*"\";" {
-  string text(yytext);
+  std::string text(yytext);
   convert_hrc::mcpImpl->saveData(text);
 }
 
 .|\n {
-  string text(yytext);
+  std::string text(yytext);
   convert_hrc::mcpImpl->copyData(text);
 }
 

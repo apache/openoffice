@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConXhp.hxx"
 
 
@@ -37,7 +36,7 @@ convert_xhp_impl * convert_xhp::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xhp::convert_xhp(const string& srSourceFile, l10nMem& crMemory)
+convert_xhp::convert_xhp(const std::string& srSourceFile, l10nMem& crMemory)
                         : convert_gen(srSourceFile, crMemory) 
                           {mcpImpl = new convert_xhp_impl(srSourceFile, crMemory);}
 convert_xhp::~convert_xhp() {delete mcpImpl;}
@@ -47,7 +46,7 @@ void convert_xhp::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xhp_impl::convert_xhp_impl(const string& srSourceFile, l10nMem& crMemory)
+convert_xhp_impl::convert_xhp_impl(const std::string& srSourceFile, l10nMem& crMemory)
                                   : convert_gen (srSourceFile, crMemory),
 								    mbCollectingData(false)
 {

@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConPo.hxx"
 
 
@@ -48,7 +47,7 @@ void convert_po_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
+void convert_po_impl::pushKeyPart(TAG_TYPE bIsNode, std::string& sTag)
 {
   // remember text for merge
   msCollector += sTag;
@@ -61,7 +60,7 @@ void convert_po_impl::pushKeyPart(TAG_TYPE bIsNode, string& sTag)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
+void convert_po_impl::popKeyPart(TAG_TYPE bIsNode, std::string &sTag)
 {
   // remember text for merge
   msCollector += sTag;
@@ -80,7 +79,7 @@ void convert_po_impl::popKeyPart(TAG_TYPE bIsNode, string &sTag)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::startCollectData(string& sCollectedText)
+void convert_po_impl::startCollectData(std::string& sCollectedText)
 {
   if (mbMergeMode && msCollector.size())
     writeSourceFile(msCollector);
@@ -92,9 +91,9 @@ void convert_po_impl::startCollectData(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::stopCollectData(string& sCollectedText)
+void convert_po_impl::stopCollectData(std::string& sCollectedText)
 {
-  string useKey;
+  std::string useKey;
 
 
   // locate key and extract it
@@ -108,8 +107,8 @@ void convert_po_impl::stopCollectData(string& sCollectedText)
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
-    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
-    string                   sNewLine;
+    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
+    std::string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
 	writeSourceFile(msCollector + sCollectedText);
@@ -129,7 +128,7 @@ void convert_po_impl::stopCollectData(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::collectData(string& sCollectedText)
+void convert_po_impl::collectData(std::string& sCollectedText)
 {
   msCollector += sCollectedText;
   if (sCollectedText == "\n")

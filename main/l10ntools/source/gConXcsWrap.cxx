@@ -18,7 +18,6 @@
  * under the License.
  * 
  *************************************************************/
-using namespace std;
 #include "gConXcs.hxx"
 
 
@@ -49,22 +48,22 @@ void convert_xcs_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::setKey(string& sCollectedText)
+void convert_xcs_impl::setKey(std::string& sCollectedText)
 {
   int    nL;
-  string sHead;
+  std::string sHead;
 
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
   msCollector.clear();
 
   // is it to be translated
-  if (sCollectedText.find("oor:localized=") == string::npos)
+  if (sCollectedText.find("oor:localized=") == std::string::npos)
 	return;
 
   // locate key (is any)
   nL = sCollectedText.find("oor:name=\"");
-  if (nL == (int)string::npos)
+  if (nL == (int)std::string::npos)
 	return;
   sHead = sCollectedText.substr(nL+10);
   nL    = sHead.find("\"");
@@ -74,7 +73,7 @@ void convert_xcs_impl::setKey(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::unsetKey(string& sCollectedText)
+void convert_xcs_impl::unsetKey(std::string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -86,7 +85,7 @@ void convert_xcs_impl::unsetKey(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::startCollectData(string& sCollectedText)
+void convert_xcs_impl::startCollectData(std::string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector);
@@ -99,16 +98,16 @@ void convert_xcs_impl::startCollectData(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::stopCollectData(string& sCollectedText)
+void convert_xcs_impl::stopCollectData(std::string& sCollectedText)
 {
-  string sHead, sKey, sLang, sText;
+  std::string sHead, sKey, sLang, sText;
   int    nL;
 
 
   // get type of tag
   msCollector += sCollectedText;
   nL = msCollector.find("<p");
-  if (nL != (int)string::npos)
+  if (nL != (int)std::string::npos)
     sHead = msCollector.substr(nL+1, 1);
   else
   {
@@ -127,8 +126,8 @@ void convert_xcs_impl::stopCollectData(string& sCollectedText)
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
-    vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-    string                   sNewLine;
+    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
+    std::string                   sNewLine;
     nL = cExtraLangauges.size();
 
     writeSourceFile(msCollector);
@@ -151,7 +150,7 @@ void convert_xcs_impl::stopCollectData(string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::collectData(string& sCollectedText)
+void convert_xcs_impl::collectData(std::string& sCollectedText)
 {
   msCollector += sCollectedText;
   if (sCollectedText == "\n")

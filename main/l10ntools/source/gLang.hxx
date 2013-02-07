@@ -42,15 +42,15 @@
 class l10nMem_entry
 {
   public:
-    l10nMem_entry(const string& srSourceFile, const string& srModuleName, const string& srKey,
-                  const string& srLanguage,   const string& srText);
+    l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName, const std::string& srKey,
+                  const std::string& srLanguage,   const std::string& srText);
     ~l10nMem_entry();
 
-    string msSourceFile;
-    string msModuleName;
-    string msKey;
-    string msLanguage;
-    string msText;
+    std::string msSourceFile;
+    std::string msModuleName;
+    std::string msKey;
+    std::string msLanguage;
+    std::string msText;
 
   private:
 };
@@ -63,18 +63,18 @@ class l10nMem
     l10nMem();
     ~l10nMem();
 
-    void save(const string& srTargetFile);
+    void save(const std::string& srTargetFile);
 	void clear();
-    void setFileName(const string& srSourceFile);
-    void setModuleName(const string& srModuleName);
-    void setEnUsKey(const string& srKey, const string& srText);
-    vector<l10nMem_entry *>& getLanguagesForKey(const string& srKey);
+    void setFileName(const std::string& srSourceFile);
+    void setModuleName(const std::string& srModuleName);
+    void setEnUsKey(const std::string& srKey, const std::string& srText);
+    std::vector<l10nMem_entry *>& getLanguagesForKey(const std::string& srKey);
 
   private:
-    string                  msCurrentModuleName;
-    string                  msCurrentSourceFileName;
-    vector<l10nMem_entry *> mcCurrentSelection;
-    vector<l10nMem_entry>   mcMemory;
+    std::string                  msCurrentModuleName;
+    std::string                  msCurrentSourceFileName;
+    std::vector<l10nMem_entry *> mcCurrentSelection;
+    std::vector<l10nMem_entry>   mcMemory;
 };
 
 
@@ -83,24 +83,24 @@ class l10nMem
 class convert_gen
 {
   public:
-    convert_gen(const string& srSourceFile, l10nMem& crMemory);
+    convert_gen(const std::string& srSourceFile, l10nMem& crMemory);
     virtual ~convert_gen();
     
-    static convert_gen& getConverter(const string& srSourceFile, l10nMem& crMemory);
+    static convert_gen& getConverter(const std::string& srSourceFile, l10nMem& crMemory);
 
     virtual void extract() = 0;
     virtual void insert()  = 0;
 
     void lexRead (char *sBuf, int *nResult, int nMax_size);
-    void lineRead(bool *bEof, string& line);
-    void writeSourceFile(const string& line);
-    void trim(string& line);
+    void lineRead(bool *bEof, std::string& line);
+    void writeSourceFile(const std::string& line);
+    void trim(std::string& line);
 
 
   protected:
     bool          mbMergeMode;
-    const string& msSourceFile;
-    string        msSourceBuffer;
+    const std::string& msSourceFile;
+    std::string        msSourceBuffer;
     int           mnSourceReadIndex;
     l10nMem&      mcMemory;
 
@@ -117,7 +117,7 @@ class convert_po : public convert_gen
     static convert_po_impl *mcpImpl;
 
 
-    convert_po(const string& srSourceFile, l10nMem& crMemory);
+    convert_po(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_po();
     
     void extract();
@@ -136,7 +136,7 @@ class convert_src : public convert_gen
     static convert_src_impl *mcpImpl;
 
 
-    convert_src(const string& srSourceFile, l10nMem& crMemory);
+    convert_src(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_src();
     
     void extract();
@@ -155,7 +155,7 @@ class convert_hrc : public convert_gen
     static convert_hrc_impl *mcpImpl;
 
 
-    convert_hrc(const string& srSourceFile, l10nMem& crMemory);
+    convert_hrc(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_hrc();
     
     void extract();
@@ -170,7 +170,7 @@ class convert_hrc : public convert_gen
 class convert_tree : public convert_gen
 {
   public:
-    convert_tree(const string& srSourceFile, l10nMem& crMemory);
+    convert_tree(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_tree();
     
     void extract();
@@ -185,7 +185,7 @@ class convert_tree : public convert_gen
 class convert_ulf : public convert_gen
 {
   public:
-    convert_ulf(const string& srSourceFile, l10nMem& srMemory);
+    convert_ulf(const std::string& srSourceFile, l10nMem& srMemory);
     ~convert_ulf();
     
     void extract();
@@ -205,7 +205,7 @@ class convert_xcu : public convert_gen
     static convert_xcu_impl *mcpImpl;
 
 
-    convert_xcu(const string& srSourceFile, l10nMem& crMemory);
+    convert_xcu(const std::string& srSourceFile, l10nMem& crMemory);
     virtual ~convert_xcu();
     
     virtual void extract();
@@ -224,7 +224,7 @@ class convert_xcs : public convert_gen
     static convert_xcs_impl *mcpImpl;
 
 
-    convert_xcs(const string& srSourceFile, l10nMem& srMemory);
+    convert_xcs(const std::string& srSourceFile, l10nMem& srMemory);
     ~convert_xcs();
     
     void extract();
@@ -243,7 +243,7 @@ class convert_xrm : public convert_gen
     static convert_xrm_impl *mcpImpl;
 
 
-    convert_xrm(const string& srSourceFile, l10nMem& srMemory);
+    convert_xrm(const std::string& srSourceFile, l10nMem& srMemory);
     ~convert_xrm();
     
     void extract();
@@ -262,7 +262,7 @@ class convert_xhp : public convert_gen
     static convert_xhp_impl *mcpImpl;
 
 
-    convert_xhp(const string& srSourceFile, l10nMem& crMemory);
+    convert_xhp(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_xhp();
     
     void extract();
@@ -277,7 +277,7 @@ class convert_xhp : public convert_gen
 class convert_properties : public convert_gen
 {
   public:
-    convert_properties(const string& srSourceFile, l10nMem& crMemory);
+    convert_properties(const std::string& srSourceFile, l10nMem& crMemory);
     ~convert_properties();
     
     void extract();
@@ -302,11 +302,11 @@ class handler
   private:
     enum {DO_NONE, DO_EXTRACT, DO_MERGE, DO_GENERATE, DO_INSERT} meWorkMode;
     l10nMem        mcMemory;
-    string         msModuleName;
-    string         msSourceDir;
-    string         msTargetDir;
+    std::string         msModuleName;
+    std::string         msSourceDir;
+    std::string         msTargetDir;
     bool           mbDoNotCopy;
-    vector<string> msSourceFiles;
+    std::vector<std::string> msSourceFiles;
 
     void runExtract();
     void runMerge();
