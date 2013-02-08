@@ -49,6 +49,8 @@ OBJFILES =\
 	$(OBJ)/layoutparse.obj\
 	$(OBJ)/merge.obj\
 	$(OBJ)/tralay.obj\
+	$(OBJ)/helpmerge.obj\
+	$(OBJ)/export2.obj\
 	$(OBJ)/xmlparse.obj
 
 APP1OBJS = $(OBJFILES)
