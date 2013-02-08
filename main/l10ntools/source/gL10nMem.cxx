@@ -72,12 +72,17 @@ l10nMem::~l10nMem()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem::save(const std::string& srTargetFile)
 {
-  int i;
+  int           i;
+  std::ofstream outputFile(srTargetFile.c_str(), std::ios::binary);
 
-  std::cout << "--------------- dump of l10n " << srTargetFile << "-----------------" << std::endl;
+  if (!outputFile.is_open())
+    throw std::string("Could not open ")+srTargetFile;
 
+	
   for (i = 0; i < (int)mcMemory.size(); ++i)
-    std::cout << "key: " << mcMemory[i].msKey << "  text: " << mcMemory[i].msText << std::endl;
+	outputFile << msCurrentModuleName << "\t" << msCurrentSourceFileName << "\t"
+	           << mcMemory[i].msKey   << "\t" << mcMemory[i].msLanguage  << "\t"
+               << mcMemory[i].msText  << std::endl;
   // JIX
 }
 
@@ -86,8 +91,6 @@ void l10nMem::save(const std::string& srTargetFile)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem::clear()
 {
-  std::cout << "--------------- clear of l10n -----------------" << std::endl;
-
   mcMemory.clear();
   // JIX
 }
