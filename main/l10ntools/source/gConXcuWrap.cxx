@@ -124,7 +124,7 @@ void convert_xcu_impl::stopCollectData(std::string& sCollectedText)
     // get all languages (includes en-US)
     std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
     std::string                   sNewLine;
-    int                      nL = cExtraLangauges.size();
+    nL = cExtraLangauges.size();
 
     for (int i = 0; i < nL; ++i)
     {

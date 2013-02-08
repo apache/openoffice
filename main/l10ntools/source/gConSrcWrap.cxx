@@ -144,7 +144,7 @@ void convert_src_impl::saveData(std::string &sText)
     // get all languages (includes en-US)
     std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
     std::string                   sNewLine;
-    int                      nL = cExtraLangauges.size();
+    nL = cExtraLangauges.size();
 
     for (int i = 0; i < nL; ++i)
     {
