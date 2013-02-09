@@ -39,7 +39,7 @@ class xcu_stack_entry;
 class convert_xcu_impl : public convert_gen
 {
   public:
-    convert_xcu_impl(const std::string& srSourceFile, l10nMem& crMemory);
+    convert_xcu_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
     ~convert_xcu_impl();
 
     void pushKeyPart(TAG_TYPE eIsNode, std::string &sTag);

@@ -36,9 +36,9 @@ convert_xrm_impl * convert_xrm::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xrm::convert_xrm(const std::string& srSourceFile, l10nMem& crMemory)
-                        : convert_gen(srSourceFile, crMemory) 
-                          {mcpImpl = new convert_xrm_impl(srSourceFile, crMemory);}
+convert_xrm::convert_xrm(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                        : convert_gen(srSourceFile, crMemory, brVerbose) 
+                          {mcpImpl = new convert_xrm_impl(srSourceFile, crMemory, brVerbose);}
 convert_xrm::~convert_xrm() {delete mcpImpl;}
 void convert_xrm::extract() {mcpImpl->extract();}
 void convert_xrm::insert()  {mcpImpl->insert();}
@@ -46,8 +46,8 @@ void convert_xrm::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xrm_impl::convert_xrm_impl(const std::string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen (srSourceFile, crMemory),
+convert_xrm_impl::convert_xrm_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                  : convert_gen (srSourceFile, crMemory, brVerbose),
 								    mbCollectingData(false)
 {
 }

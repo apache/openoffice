@@ -36,7 +36,7 @@
 class convert_xcs_impl : public convert_gen
 {
   public:
-    convert_xcs_impl(const std::string& srSourceFile, l10nMem& crMemory);
+    convert_xcs_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
     ~convert_xcs_impl();
 
 	void setKey(std::string &sCollectedText);

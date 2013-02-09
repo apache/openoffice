@@ -36,7 +36,7 @@
 class convert_xhp_impl : public convert_gen
 {
   public:
-    convert_xhp_impl(const std::string& srSourceFile, l10nMem& crMemory);
+    convert_xhp_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
     ~convert_xhp_impl();
 
     void startCollectData(std::string sType, std::string& sCollectedText);

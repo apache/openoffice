@@ -37,9 +37,9 @@ convert_src_impl * convert_src::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_src::convert_src(const std::string& srSourceFile, l10nMem& crMemory)
-                                : convert_gen(srSourceFile, crMemory) 
-                            {mcpImpl = new convert_src_impl(srSourceFile, crMemory);}
+convert_src::convert_src(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                : convert_gen(srSourceFile, crMemory, brVerbose) 
+                            {mcpImpl = new convert_src_impl(srSourceFile, crMemory, brVerbose);}
 convert_src::~convert_src() {delete mcpImpl;}
 void convert_src::extract() {mcpImpl->extract();}
 void convert_src::insert()  {mcpImpl->insert();}
@@ -47,8 +47,8 @@ void convert_src::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_src_impl::convert_src_impl(const std::string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen(srSourceFile, crMemory)
+convert_src_impl::convert_src_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                  : convert_gen(srSourceFile, crMemory, brVerbose)
 {
 }
 

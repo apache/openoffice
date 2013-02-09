@@ -36,7 +36,7 @@
 class convert_hrc_impl : public convert_gen
 {
   public:
-    convert_hrc_impl(const std::string& srSourceFile, l10nMem& crMemory);
+    convert_hrc_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
     ~convert_hrc_impl();
     
     void setKey(std::string &sText);

@@ -37,7 +37,7 @@
 class convert_src_impl : public convert_gen
 {
   public:
-    convert_src_impl(const std::string& srSourceFile, l10nMem& crMemory);
+    convert_src_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
     ~convert_src_impl();
     
     void pushKey(std::string &sText);

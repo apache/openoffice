@@ -129,14 +129,17 @@ void convert_src_impl::saveData(std::string &sText)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
 
+  // Is it a real text
+  if (sText.find('\"') == std::string::npos)
+	return;
+
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
 	sKey += (nL > 0 ? "." : "") + mcStack[nL];
 
   // locate id
-  for (nL = 0; sText[nL] != '=' && sText[nL] != '\n'; ++nL) ;
-  for (; sText[nL] != '\"'; ++nL) ;
-  for (nE = nL+1; sText[nE] != '\"'; ++nE) ;
+  for (nL = 0; sText[nL] != '\"' && nL < (int)sText.size(); ++nL) ;
+  for (nE = sText.size()-1; sText[nE] != '\"' && nE > nL; --nE) ;
   sUseText = sText.substr(nL+1, nE - nL -1);
 
   if (mbMergeMode)

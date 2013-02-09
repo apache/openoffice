@@ -37,9 +37,9 @@ convert_hrc_impl * convert_hrc::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_hrc::convert_hrc(const std::string& srSourceFile, l10nMem& crMemory)
-                                : convert_gen(srSourceFile, crMemory) 
-                            {mcpImpl = new convert_hrc_impl(srSourceFile, crMemory);}
+convert_hrc::convert_hrc(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                : convert_gen(srSourceFile, crMemory, brVerbose) 
+                            {mcpImpl = new convert_hrc_impl(srSourceFile, crMemory, brVerbose);}
 convert_hrc::~convert_hrc() {delete mcpImpl;}
 void convert_hrc::extract() {mcpImpl->extract();}
 void convert_hrc::insert()  {mcpImpl->insert();}
@@ -47,8 +47,8 @@ void convert_hrc::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_hrc_impl::convert_hrc_impl(const std::string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen(srSourceFile, crMemory)
+convert_hrc_impl::convert_hrc_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                  : convert_gen(srSourceFile, crMemory, brVerbose)
 {
 }
 

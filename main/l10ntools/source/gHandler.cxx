@@ -36,7 +36,7 @@
 /**********************   I M P L E M E N T A T I O N   **********************/
 handler::handler()
                 : meWorkMode(DO_NONE),
-                  mbDoNotCopy(false)
+                  mbVerbose(false)
 {
   // clear translation memory
 }
@@ -53,6 +53,9 @@ handler::~handler()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::checkCommandLine(int argc, char *argv[])
 {
+  std::string sWorkText;
+
+
   // make internal throw test (to avoid if cascades
   try
   {
@@ -61,14 +64,14 @@ void handler::checkCommandLine(int argc, char *argv[])
       throw std::string("");
 
     // check for working mode
-    std::string meWorkText(argv[1]);
+    sWorkText = argv[1];
 
-    if      (meWorkText == "extract")  meWorkMode = DO_EXTRACT;
-    else if (meWorkText == "merge")    meWorkMode = DO_MERGE;
-    else if (meWorkText == "generate") meWorkMode = DO_GENERATE;
-    else if (meWorkText == "insert")   meWorkMode = DO_INSERT;
-    else if (meWorkText == "--help")   throw std::string("");
-    else                               throw std::string("unknown mode (1 argument)");
+    if      (sWorkText == "extract")  meWorkMode = DO_EXTRACT;
+    else if (sWorkText == "merge")    meWorkMode = DO_MERGE;
+    else if (sWorkText == "generate") meWorkMode = DO_GENERATE;
+    else if (sWorkText == "insert")   meWorkMode = DO_INSERT;
+    else if (sWorkText == "--help")   throw std::string("");
+    else                              throw std::string("unknown mode (1 argument)");
 
     // decode parameters and translate to variables
     for (int n = 2; n < argc; ++n)
@@ -84,7 +87,8 @@ void handler::checkCommandLine(int argc, char *argv[])
         // find directory type, and set it
         if      (sArg == "-m") msModuleName = argv[++n];      
         else if (sArg == "-t") msTargetDir  = argv[++n];      
-        else if (sArg == "-s") msSourceDir  = argv[++n];      
+        else if (sArg == "-s") msSourceDir  = argv[++n];  
+        else if (sArg == "-v") mbVerbose    = true;  
         else                  throw std::string("unknown parameter: ")+sArg;
       }
       else
@@ -162,6 +166,7 @@ void handler::checkCommandLine(int argc, char *argv[])
             "  insert,   uses the module file <source dir>/<module name> to\n"
             "            update the source files in the module"
             "\n"
+			"  -v                verbose mode, tells what gLang is doing\n"
             "  -m <modulename>   name of the module, used in file naming\n"
             "  -s <source dir>   extract:  source file directory\n"
             "                    merge:    language staging input directory\n"
@@ -185,6 +190,10 @@ void handler::checkCommandLine(int argc, char *argv[])
     if (msTargetDir.at(nLen-1) != '/')
       msTargetDir.append("/");
   }
+
+  // tell system
+  if (mbVerbose)
+    std::cout << "gLang starting to " + sWorkText << " in module " << msModuleName << std::endl; 
 }
 
 
@@ -222,14 +231,15 @@ void handler::runExtract()
   // loop through all source files, and extract messages from each file
   for (std::vector<std::string>::iterator siSource = msSourceFiles.begin(); siSource != msSourceFiles.end(); ++siSource)
   {
-	// JIX JUST FOR TEST
-	mcMemory.clear();
+	// tell system
+	if (mbVerbose)
+	  std::cout << "gLang extracting text from file " << *siSource << std::endl;
 
 	// prepare translation memory
     mcMemory.setFileName(*siSource);
 
     // get converter and extract files
-    convert_gen::getConverter(msSourceDir + *siSource, mcMemory).extract();
+    convert_gen::getConverter(msSourceDir + *siSource, mcMemory, mbVerbose).extract();
   }
 
   // and generate language file

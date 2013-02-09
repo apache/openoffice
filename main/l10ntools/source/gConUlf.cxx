@@ -31,8 +31,8 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_ulf::convert_ulf(const std::string& srSourceFile, l10nMem& crMemory)
-                        : convert_gen(srSourceFile, crMemory)
+convert_ulf::convert_ulf(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                        : convert_gen(srSourceFile, crMemory, brVerbose)
 {
 }
 
@@ -110,7 +110,9 @@ void convert_ulf::handleLines()
 
     // remove leading/trailing blanks and handle empty lines
     trim(sWorkLine);
-    if (!sWorkLine.size())
+    if (!sWorkLine.size() ||
+		((int)sWorkLine.size() == 1 &&
+		   (sWorkLine[0] == ' ' || sWorkLine[0] == '\t')))
       continue;
 
     // the format is:

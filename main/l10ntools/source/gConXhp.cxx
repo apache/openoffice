@@ -36,9 +36,9 @@ convert_xhp_impl * convert_xhp::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xhp::convert_xhp(const std::string& srSourceFile, l10nMem& crMemory)
-                        : convert_gen(srSourceFile, crMemory) 
-                          {mcpImpl = new convert_xhp_impl(srSourceFile, crMemory);}
+convert_xhp::convert_xhp(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                        : convert_gen(srSourceFile, crMemory, brVerbose) 
+                          {mcpImpl = new convert_xhp_impl(srSourceFile, crMemory, brVerbose);}
 convert_xhp::~convert_xhp() {delete mcpImpl;}
 void convert_xhp::extract() {mcpImpl->extract();}
 void convert_xhp::insert()  {mcpImpl->insert();}
@@ -46,8 +46,8 @@ void convert_xhp::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xhp_impl::convert_xhp_impl(const std::string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen (srSourceFile, crMemory),
+convert_xhp_impl::convert_xhp_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                  : convert_gen (srSourceFile, crMemory, brVerbose),
 								    mbCollectingData(false)
 {
 }

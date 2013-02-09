@@ -36,9 +36,9 @@ convert_xcs_impl * convert_xcs::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xcs::convert_xcs(const std::string& srSourceFile, l10nMem& crMemory)
-                        : convert_gen(srSourceFile, crMemory) 
-                          {mcpImpl = new convert_xcs_impl(srSourceFile, crMemory);}
+convert_xcs::convert_xcs(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                        : convert_gen(srSourceFile, crMemory, brVerbose) 
+                          {mcpImpl = new convert_xcs_impl(srSourceFile, crMemory, brVerbose);}
 convert_xcs::~convert_xcs() {delete mcpImpl;}
 void convert_xcs::extract() {mcpImpl->extract();}
 void convert_xcs::insert()  {mcpImpl->insert();}
@@ -46,8 +46,8 @@ void convert_xcs::insert()  {mcpImpl->insert();}
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_xcs_impl::convert_xcs_impl(const std::string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen (srSourceFile, crMemory),
+convert_xcs_impl::convert_xcs_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                  : convert_gen (srSourceFile, crMemory, brVerbose),
 								  mbCollectingData(false)
 {
 }

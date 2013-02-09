@@ -36,9 +36,9 @@ convert_po_impl * convert_po::mcpImpl;
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_po::convert_po(const std::string& srSourceFile, l10nMem& crMemory)
-                        : convert_gen(srSourceFile, crMemory) 
-                          {mcpImpl = new convert_po_impl(srSourceFile, crMemory);}
+convert_po::convert_po(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                        : convert_gen(srSourceFile, crMemory, brVerbose) 
+                          {mcpImpl = new convert_po_impl(srSourceFile, crMemory, brVerbose);}
 convert_po::~convert_po() {delete mcpImpl;}
 void convert_po::extract() {mcpImpl->extract();}
 void convert_po::insert()  {mcpImpl->insert();}
@@ -62,8 +62,8 @@ po_stack_entry::~po_stack_entry()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_po_impl::convert_po_impl(const std::string& srSourceFile, l10nMem& crMemory)
-                                  : convert_gen (srSourceFile, crMemory),
+convert_po_impl::convert_po_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                  : convert_gen (srSourceFile, crMemory, brVerbose),
 								  	mbCollectingData(false)
 
 {

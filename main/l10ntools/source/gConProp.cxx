@@ -31,8 +31,8 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_properties::convert_properties(const std::string& srSourceFile, l10nMem& crMemory)
-                                      : convert_gen(srSourceFile, crMemory)
+convert_properties::convert_properties(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                      : convert_gen(srSourceFile, crMemory, brVerbose)
 {
   throw std::string("convert_properties not implemented");
 }

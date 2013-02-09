@@ -53,7 +53,7 @@ class po_stack_entry;
 class convert_po_impl : public convert_gen
 {
   public:
-    convert_po_impl(const std::string& srSourceFile, l10nMem& crMemory);
+    convert_po_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
     ~convert_po_impl();
 
     void pushKeyPart(TAG_TYPE eIsNode, std::string &sTag);

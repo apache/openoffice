@@ -31,8 +31,8 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_tree::convert_tree(const std::string& srSourceFile, l10nMem& crMemory)
-                          : convert_gen(srSourceFile, crMemory)
+convert_tree::convert_tree(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                          : convert_gen(srSourceFile, crMemory, brVerbose)
 {
 // extension,     program,     parameter,          collectMode, xxx
 // ".tree",       "xhtex",     "",                 "negative",  "noiso"

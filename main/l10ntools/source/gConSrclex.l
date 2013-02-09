@@ -99,7 +99,7 @@
   convert_src::mcpImpl->registerKey(text);
 }
 
-[tT][eE][xX][tT][^\"]*"\""[^\"]*"\";" {
+[tT][eE][xX][tT][^\n]* {
   std::string text(yytext);
   convert_src::mcpImpl->saveData(text);
 }

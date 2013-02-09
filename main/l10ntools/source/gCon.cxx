@@ -32,8 +32,9 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory)
+convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
                         : msSourceFile(srSourceFile),
+						  mbVerbose(brVerbose),
                           mcMemory(crMemory)
 {
   std::ifstream inputFile(msSourceFile.c_str(), std::ios::binary);
@@ -65,7 +66,7 @@ convert_gen::~convert_gen()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen& convert_gen::getConverter(const std::string& srSourceFile, l10nMem& crMemory)
+convert_gen& convert_gen::getConverter(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
 {
   // did the user give a .xxx with the source file ?
   int nInx = srSourceFile.find_last_of(".");
@@ -76,16 +77,16 @@ convert_gen& convert_gen::getConverter(const std::string& srSourceFile, l10nMem&
   std::string sExtension = srSourceFile.substr(nInx+1);
 
   // did the user give a .xxx with the source file ?
-  if (sExtension == "hrc")        return *(new convert_hrc       (srSourceFile, crMemory));
-  if (sExtension == "src")        return *(new convert_src       (srSourceFile, crMemory));
-  if (sExtension == "po")         return *(new convert_po        (srSourceFile, crMemory));
-  if (sExtension == "tree")       return *(new convert_tree      (srSourceFile, crMemory));
-  if (sExtension == "ulf")        return *(new convert_ulf       (srSourceFile, crMemory));
-  if (sExtension == "xcu")        return *(new convert_xcu       (srSourceFile, crMemory));
-  if (sExtension == "xcs")        return *(new convert_xcs       (srSourceFile, crMemory));
-  if (sExtension == "xrm")        return *(new convert_xrm       (srSourceFile, crMemory));
-  if (sExtension == "xhp")        return *(new convert_xhp       (srSourceFile, crMemory));
-  if (sExtension == "properties") return *(new convert_properties(srSourceFile, crMemory));
+  if (sExtension == "hrc")        return *(new convert_hrc       (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "src")        return *(new convert_src       (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "po")         return *(new convert_po        (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "tree")       return *(new convert_tree      (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "ulf")        return *(new convert_ulf       (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "xcu")        return *(new convert_xcu       (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "xcs")        return *(new convert_xcs       (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "xrm")        return *(new convert_xrm       (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "xhp")        return *(new convert_xhp       (srSourceFile, crMemory, brVerbose));
+  if (sExtension == "properties") return *(new convert_properties(srSourceFile, crMemory, brVerbose));
 
   throw std::string("unknown extension on source file: ")+srSourceFile;
 }

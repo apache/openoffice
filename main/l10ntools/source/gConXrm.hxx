@@ -36,7 +36,7 @@
 class convert_xrm_impl : public convert_gen
 {
   public:
-    convert_xrm_impl(const std::string& srSourceFile, l10nMem& crMemory);
+    convert_xrm_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
     ~convert_xrm_impl();
 
     void startCollectData(std::string sType, std::string& sCollectedText);
