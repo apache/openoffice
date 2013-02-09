@@ -183,12 +183,15 @@ class convert_tree : public convert_gen
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
+class convert_ulf_impl;
 class convert_ulf : public convert_gen
 {
   public:
-    convert_ulf(const std::string& srSourceFile, l10nMem& srMemory, bool brVerbose);
+    static convert_ulf_impl *mcpImpl;
+
+	convert_ulf(const std::string& srSourceFile, l10nMem& srMemory, bool brVerbose);
     ~convert_ulf();
-    
+
     void extract();
     void insert();
 

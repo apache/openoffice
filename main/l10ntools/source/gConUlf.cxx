@@ -18,7 +18,7 @@
  * under the License.
  * 
  *************************************************************/
-#include "gLang.hxx"
+#include "gConUlf.hxx"
 
 
 
@@ -30,35 +30,56 @@
 
 
 
+/*****************************   G L O B A L S   *****************************/
+convert_ulf_impl * convert_ulf::mcpImpl;
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_ulf::convert_ulf(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
-                        : convert_gen(srSourceFile, crMemory, brVerbose)
+                        : convert_gen(srSourceFile, crMemory, brVerbose) 
+                          {mcpImpl = new convert_ulf_impl(srSourceFile, crMemory, brVerbose);}
+convert_ulf::~convert_ulf() {delete mcpImpl;}
+void convert_ulf::extract() {mcpImpl->extract();}
+void convert_ulf::insert()  {mcpImpl->insert();}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+convert_ulf_impl::convert_ulf_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
+                                  : convert_gen (srSourceFile, crMemory, brVerbose)
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+convert_ulf_impl::~convert_ulf_impl()
 {
 }
 
 
 
 /*****************************************************************************/
-convert_ulf::~convert_ulf()
+void convert_ulf_impl::extract()
 {
-}
-
-
-
-/*****************************************************************************/
-void convert_ulf::extract()
-{
+  // generate l10mMem
   mbMergeMode = false;
-  handleLines();
+
+  // run lex parser and build token tree
+  runLex();
 }
 
 
 
 /*****************************************************************************/
-void convert_ulf::insert()
+void convert_ulf_impl::insert()
 {
+  // generate l10mMem
   mbMergeMode = true;
-  handleLines();
+
+  // run lex parser and build token tree
+  runLex();
 }
 
 
