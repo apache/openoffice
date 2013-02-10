@@ -59,70 +59,97 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-[bB][iI][tT][mM][aA][pP]\ +[a-zA-Z]+[^\{]*                          |
-[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]\ +[a-zA-Z]+[^\{]*      |
-[eE][dD][iI][tT]\ +[a-zA-Z]+[^\{]*                                  |
-[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*  |
-[cC][oO][nN][tT][rR][oO][lL]\ +[a-zA-Z]+[^\{]*                      |
-[eE][rR][rR][oO][rR][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                  |
-[fF][iI][xX][eE][dD][tT][eE][xX][tT]\ +[a-zA-Z]+[^\{]*              |
-[iI][mM][aA][gG][eE]\ +[a-zA-Z]+[^\{]*                              |
-[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*      |
-[iI][tT][eE][mM][lL][iI][sS][tT]\ +[a-zA-Z]+[^\{]*                  |
-[hH][eE][lL][pP][bB][uU][tT][oO][mM]\ +[a-zA-Z]+[^\{]*              |
-[mM][eE][nN][uU]\ +[a-zA-Z]+[^\{]*                                  |
-[mM][eE][nN][uU][iI][tT][eE][mM]\ +[a-zA-Z]+[^\{]*                  |
-[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]\ +[a-zA-Z]+[^\{]*      |
-[mM][uU][lL][tT][iI][lL][iI][nN][eE][dD][iI][tT]\ +[a-zA-Z]+[^\{]*  |
-[pP][aA][gG][eE][iI][tT][eE][mM]\ +[a-zA-Z]+[^\{]*                  |
-[pP][aA][gG][eE][lL][iI][sS][tT]\ +[a-zA-Z]+[^\{]*                  |
-[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*          |
-[sS][tT][rR][iI][nN][gG]\ +[a-zA-Z]+[^\{]*                          |
-[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]\ +[a-zA-Z]+[^\{]*      |
-[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]\ +[a-zA-Z]+[^\{]*          |
-[tT][aA][bB][dD][iI][aA][lL][oO][gG]\ +[a-zA-Z]+[^\{]*              |
-[tT][aA][bB][pP][aA][gG][eE]\ +[a-zA-Z]+[^\{]*                      {
+[bB][iI][tT][mM][aA][pP]\ +[a-zA-Z]+[^\{]*                                  |
+[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]\ +[a-zA-Z]+[^\{]*              |
+[eE][dD][iI][tT]\ +[a-zA-Z]+[^\{]*                                          |
+[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*          |
+[cC][hH][eE][cC][kK][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
+[cC][oO][nN][tT][rR][oO][lL]\ +[a-zA-Z]+[^\{]*                              |
+[cC][oO][mM][bB][oO][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
+[eE][rR][rR][oO][rR][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
+[fF][iI][xX][eE][dD][tT][eE][xX][tT]\ +[a-zA-Z]+[^\{]*                      |
+[fF][iI][xX][eE][dD][lL][iI][nN][eE]\ +[a-zA-Z]+[^\{]*                      |
+[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]\ +[a-zA-Z]+[^\{]*  |
+[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*                  |
+[iI][dD][lL][iI][sS][tT]\ +[a-zA-Z]+[^\{]*                                  |
+[iI][mM][aA][gG][eE]\ +[a-zA-Z]+[^\{]*                                      |
+[iI][mM][aA][gG][eE][lL][iI][sS][tT]\ +[a-zA-Z]+[^\{]*                      |
+[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*              |
+[iI][tT][eE][mM][lL][iI][sS][tT]\ +[a-zA-Z]+[^\{]*                          |
+[lL][iI][sS][tT][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                              |
+[mM][eE][nN][uU]\ +[a-zA-Z]+[^\{]*                                          |
+[mM][eE][nN][uU][iI][tT][eE][mM]\ +[a-zA-Z]+[^\{]*                          |
+[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]\ +[a-zA-Z]+[^\{]*              |
+[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]\ +[a-zA-Z]+[^\{]*      |
+[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]\ +[a-zA-Z]+[^\{]*          |
+[oO][kK][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*                          |
+[pP][aA][gG][eE][iI][tT][eE][mM]\ +[a-zA-Z]+[^\{]*                          |
+[pP][aA][gG][eE][lL][iI][sS][tT]\ +[a-zA-Z]+[^\{]*                          |
+[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*                  |
+[qQ][uU][eE][rR][yY][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
+[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*              |
+[sS][tT][rR][iI][nN][gG]\ +[a-zA-Z]+[^\{]*                                  |
+[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]\ +[a-zA-Z]+[^\{]*              |
+[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]\ +[a-zA-Z]+[^\{]*                  |
+[tT][aA][bB][dD][iI][aA][lL][oO][gG]\ +[a-zA-Z]+[^\{]*                      |
+[tT][aA][bB][pP][aA][gG][eE]\ +[a-zA-Z]+[^\{]*                              |
+[tT][oO][oO][lL][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                              |
+[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]\ +[a-zA-Z]+[^\{]*              {
   std::string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
 
 
-[bB][iI][tT][mM][aA][pP][ \t\n]+"{"                          |
-[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE][ \t\n]+"{"      |
-[eE][dD][iI][tT][ \t\n]+"{"                                  |
-[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN][ \t\n]"{"   |
-[cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"                      |
-[eE][rR][rR][oO][rR][bB][oO][xX][ \t\n]+"{"                  |
-[fF][iI][xX][eE][dD][tT][eE][xX][tT][ \t\n]+"{"              |
-[iI][mM][aA][gG][eE][ \t\n]+"{"                              |
-[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN][ \t\n]+"{"      |
-[iI][tT][eE][mM][lL][iI][sS][tT][ \t\n=]+"{"                  |
-[hH][eE][lL][pP][bB][uU][tT][oO][mM][ \t\n]+"{"              |
-[mM][eE][nN][uU][ \t\n]+"{"                                  |
-[mM][eE][nN][uU][iI][tT][eE][mM][ \t\n]+"{"                  |
-[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG][ \t\n]+"{"      |
-[mM][uU][lL][tT][iI][lL][iI][nN][eE][dD][iI][tT][ \t\n]+"{"  |
-[pP][aA][gG][eE][iI][tT][eE][mM][ \t\n]+"{"                  |
-[pP][aA][gG][eE][lL][iI][sS][tT][ \t\n]+"{"                  |
-[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN][ \t\n]+"{"          |
-[sS][tT][rR][iI][nN][gG][ \t\n]+"{"                          |
-[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"          |
-[tT][aA][bB][dD][iI][aA][lL][oO][gG][ \t\n]+"{"              |
-[tT][aA][bB][pP][aA][gG][eE][ \t\n]+"{"                      {
+[bB][iI][tT][mM][aA][pP][ \t\n]+"{"                                  |
+[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE][ \t\n]+"{"              |
+[eE][dD][iI][tT][ \t\n]+"{"                                          |
+[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN][ \t\n]"{"           |
+[cC][hH][eE][cC][kK][bB][oO][xX][ \t\n]+"{"                          |
+[cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"                              |
+[cC][oO][mM][bB][oO][bB][oO][xX][ \t\n]+"{"                          |
+[eE][rR][rR][oO][rR][bB][oO][xX][ \t\n]+"{"                          |
+[fF][iI][xX][eE][dD][tT][eE][xX][tT][ \t\n]+"{"                      |
+[fF][iI][xX][eE][dD][lL][iI][nN][eE][ \t\n]+"{"                      |
+[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW][ \t\n]+"{"  |
+[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN][ \t\n]+"{"                  |
+[iI][dD][lL][iI][sS][tT][ \t\n=]+"{"                                 |
+[iI][mM][aA][gG][eE][ \t\n]+"{"                                      |
+[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN][ \t\n]+"{"              |
+[iI][mM][aA][gG][eE][lL][iI][sS][tT][ \t\n]+"{"                      |
+[iI][tT][eE][mM][lL][iI][sS][tT][ \t\n=]+"{"                         |
+[lL][iI][sS][tT][bB][oO][xX][ \t\n]+"{"                              |
+[mM][eE][nN][uU][ \t\n]+"{"                                          |
+[mM][eE][nN][uU][iI][tT][eE][mM][ \t\n]+"{"                          |
+[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG][ \t\n]+"{"              |
+[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT][ \t\n]+"{"      |
+[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD][ \t\n]+"{"          |
+[oO][kK][bB][uU][tT][tT][oO][nN][ \t\n]+"{"                          |
+[pP][aA][gG][eE][iI][tT][eE][mM][ \t\n]+"{"                          |
+[pP][aA][gG][eE][lL][iI][sS][tT][ \t\n]+"{"                          |
+[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN][ \t\n]+"{"                  |
+[qQ][uU][eE][rR][yY][bB][oO][xX][ \t\n]+"{"                          |
+[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN][ \t\n]+"{"              |
+[sS][tT][rR][iI][nN][gG][ \t\n]+"{"                                  |
+[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"                  |
+[tT][aA][bB][dD][iI][aA][lL][oO][gG][ \t\n]+"{"                      |
+[tT][aA][bB][pP][aA][gG][eE][ \t\n]+"{"                              |
+[tT][oO][oO][lL][bB][oO][xX][ \t\n]+"{"                              |
+[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM][ \t\n]+"{"              {
   std::string text(yytext);
   convert_src::mcpImpl->pushNoKey(text);
 }
 
-[hH][eE][lL][pP][iI][dD]\ *"="\ *[a-zA-Z]+[^;]*                 |
-[iI][dD][eE][nN][tT][iI][fF][iI][eE][rR]\ *"="\ *[a-zA-Z]+[^;]* {
+[hH][eE][lL][pP][iI][dD]\ *"="\ *[a-zA-Z\"]+[^;]*                 |
+[iI][dD][eE][nN][tT][iI][fF][iI][eE][rR]\ *"="\ *[a-zA-Z\"]+[^;]* {
   std::string text(yytext);
   convert_src::mcpImpl->registerKey(text);
 }
 
 [mM][eE][sS][sS][aA][gG][eE]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]*                         |
 [qQ][uU][iI][cC][kK][hH][eE][lL][pP][tT][eE][xX][tT]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]* |
-[tT][eE][xX][tT]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]*                                     {
+[tT][eE][xX][tT]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]*                                     |
+[tT][iI][tT][lL][eE]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]*                                 {
   std::string text(yytext);
   convert_src::mcpImpl->saveData(text);
 }
