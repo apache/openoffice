@@ -176,6 +176,53 @@ void convert_src_impl::saveData(std::string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src_impl::saveItemList(std::string &sText)
+{
+  int    nL, nE;
+  std::string sKey, sUseText;
+
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + sText);
+  msCollector.clear();
+
+  // locate key and extract it
+  for (nL = 0; nL < (int)mcStack.size(); ++nL)
+	if (mcStack[nL] != "dummy")
+	  sKey += (nL > 0 ? "." : "") + mcStack[nL];
+
+  // loop and find all texts
+  for (int cnt = 0, nL = 0; nL < (int)sText.size();)
+  {
+    // Is it a real text
+	nL = sText.find('\"', nL);
+    if (nL == std::string::npos)
+      break;
+	nE = sText.find('\"', nL+1);
+    sUseText = sText.substr(nL+1,nE-nL-1);
+    nL = nE +1;
+	mcMemory.setEnUsKey(sKey, sUseText, ++cnt);
+  }
+
+  if (mbMergeMode)
+  {
+    // get all languages (includes en-US)
+    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
+    std::string                   sNewLine;
+    nL = cExtraLangauges.size();
+
+    for (int i = 0; i < nL; ++i)
+    {
+      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
+	             cExtraLangauges[i]->msText + "</value>";
+      writeSourceFile(sNewLine);
+    }
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src_impl::copyData(std::string &sText)
 {
   msCollector += sText;

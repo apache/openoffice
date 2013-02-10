@@ -27,19 +27,20 @@
  *****************************************************************************
  * This is the translation memory that links between the converts (from source
  * files) and to the language files. The memory contains the actual text info
- *****************************************************************************/
+ ***********************d******************************************************/
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem_entry::l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName,
                              const std::string& srKey,        const std::string& srLanguage,
-                             const std::string& srText)
+                             const std::string& srText,       const int iIndex)
                             : msSourceFile(srSourceFile),
                               msModuleName(srModuleName),
                               msKey(srKey),
                               msLanguage(srLanguage),
-                              msText(srText)
+                              msText(srText),
+							  miIndex(iIndex)
 {
 }
 
@@ -77,9 +78,14 @@ void l10nMem::save(const std::string& srTargetFile)
 
 	
   for (i = 0; i < (int)mcMemory.size(); ++i)
+  {
 	outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
-	           << mcMemory[i].msKey   << "\t" << mcMemory[i].msLanguage  << "\t"
-               << mcMemory[i].msText  << std::endl;
+	           << mcMemory[i].msKey;
+	if (mcMemory[i].miIndex)
+	  outputFile << ":" << mcMemory[i].miIndex;
+	outputFile << "\t" << mcMemory[i].msLanguage  << "\t"
+               << mcMemory[i].msText << std::endl;
+  }
   // JIX
 }
 
@@ -111,11 +117,11 @@ void l10nMem::setModuleName(const std::string& srModuleName)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setEnUsKey(const std::string& srKey, const std::string& srText)
+void l10nMem::setEnUsKey(const std::string& srKey, const std::string& srText, int iIndex)
 {
   std::string baseLanguage = "en-US";
   mcMemory.push_back(l10nMem_entry(msCurrentSourceFileName, msCurrentModuleName,
-                                   srKey, baseLanguage, srText));
+                                   srKey, baseLanguage, srText, iIndex));
 }
 
 

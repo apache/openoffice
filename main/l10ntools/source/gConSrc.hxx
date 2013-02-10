@@ -46,6 +46,7 @@ class convert_src_impl : public convert_gen
     void registerKey(std::string &sText);
     
     void saveData(std::string& sText);
+    void saveItemList(std::string& sText);
     void copyData(std::string& sText);
 
   private:
