@@ -51,6 +51,7 @@ class convert_src_impl : public convert_gen
   private:
     std::vector<std::string> mcStack;
     std::string         msCollector;
+	bool                mbNoKey;
 
     void extract();
     void insert();

@@ -48,7 +48,8 @@ void convert_src::insert()  {mcpImpl->insert();}
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_src_impl::convert_src_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
-                                  : convert_gen(srSourceFile, crMemory, brVerbose)
+                                  : convert_gen(srSourceFile, crMemory, brVerbose),
+								    mbNoKey(false)
 {
 }
 

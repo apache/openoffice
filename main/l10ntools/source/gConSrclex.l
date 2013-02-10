@@ -59,52 +59,74 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-[tT][aA][bB][dD][iI][aA][lL][oO][gG][^\{]* {
+[bB][iI][tT][mM][aA][pP][ ]+[a-zA-Z]+[^\{]*                          |
+[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE][ ]+[a-zA-Z]+[^\{]*      |
+[eE][dD][iI][tT][ ]+[a-zA-Z]+[^\{]*                                  |
+[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN][ ]+[a-zA-Z]+[^\{]*  |
+[cC][oO][nN][tT][rR][oO][lL][ ]+[a-zA-Z]+[^\{]*                      |
+[eE][rR][rR][oO][rR][bB][oO][xX][ ]+[a-zA-Z]+[^\{]*                  |
+[fF][iI][xX][eE][dD][tT][eE][xX][tT][ ]+[a-zA-Z]+[^\{]*              |
+[iI][mM][aA][gG][eE][ ]+[a-zA-Z]+[^\{]*                              |
+[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN][ ]+[a-zA-Z]+[^\{]*      |
+[iI][tT][eE][mM][lL][iI][sS][tT][ ]+[a-zA-Z]+[^\{]*                  |
+[hH][eE][lL][pP][bB][uU][tT][oO][mM][ ]+[a-zA-Z]+[^\{]*              |
+[mM][eE][nN][uU][ ]+[a-zA-Z]+[^\{]*                                  |
+[mM][eE][nN][uU][iI][tT][eE][mM][ ]+[a-zA-Z]+[^\{]*                  |
+[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG][ ]+[a-zA-Z]+[^\{]*      |
+[mM][uU][lL][tT][iI][lL][iI][nN][eE][dD][iI][tT][ ]+[a-zA-Z]+[^\{]*  |
+[pP][aA][gG][eE][iI][tT][eE][mM][ ]+[a-zA-Z]+[^\{]*                  |
+[pP][aA][gG][eE][lL][iI][sS][tT][ ]+[a-zA-Z]+[^\{]*                  |
+[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN][ ]+[a-zA-Z]+[^\{]*          |
+[sS][tT][rR][iI][nN][gG][ ]+[a-zA-Z]+[^\{]*                          |
+[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][ ]+[a-zA-Z]+[^\{]*          |
+[tT][aA][bB][dD][iI][aA][lL][oO][gG][ ]+[a-zA-Z]+[^\{]*              |
+[tT][aA][bB][pP][aA][gG][eE][ ]+[a-zA-Z]+[^\{]*                      {
   std::string text(yytext);
   convert_src::mcpImpl->pushKey(text);
 }
 
-[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][^\{]* {
-  std::string text(yytext);
-  convert_src::mcpImpl->pushKey(text);
-}
 
-[tT][aA][bB][pP][aA][gG][eE][^\{]* {
-  std::string text(yytext);
-  convert_src::mcpImpl->pushKey(text);
-}
 
-[fF][iI][xX][eE][dD][tT][eE][xX][tT][^\{]* {
-  std::string text(yytext);
-  convert_src::mcpImpl->pushKey(text);
-}
-
-[sS][tT][rR][iI][nN][gG][^\{]* {
-  std::string text(yytext);
-  convert_src::mcpImpl->pushKey(text);
-}
-
-[pP][aA][gG][eE][lL][iI][sS][tT][^\{]* {
+[bB][iI][tT][mM][aA][pP][ \t\n]+"{"                          |
+[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE][ \t\n]+"{"      |
+[eE][dD][iI][tT][ \t\n]+"{"                                  |
+[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN][ \t\n]"{"   |
+[cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"                      |
+[eE][rR][rR][oO][rR][bB][oO][xX][ \t\n]+"{"                  |
+[fF][iI][xX][eE][dD][tT][eE][xX][tT][ \t\n]+"{"              |
+[iI][mM][aA][gG][eE][ \t\n]+"{"                              |
+[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN][ \t\n]+"{"      |
+[iI][tT][eE][mM][lL][iI][sS][tT][ \t\n=]+"{"                  |
+[hH][eE][lL][pP][bB][uU][tT][oO][mM][ \t\n]+"{"              |
+[mM][eE][nN][uU][ \t\n]+"{"                                  |
+[mM][eE][nN][uU][iI][tT][eE][mM][ \t\n]+"{"                  |
+[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG][ \t\n]+"{"      |
+[mM][uU][lL][tT][iI][lL][iI][nN][eE][dD][iI][tT][ \t\n]+"{"  |
+[pP][aA][gG][eE][iI][tT][eE][mM][ \t\n]+"{"                  |
+[pP][aA][gG][eE][lL][iI][sS][tT][ \t\n]+"{"                  |
+[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN][ \t\n]+"{"          |
+[sS][tT][rR][iI][nN][gG][ \t\n]+"{"                          |
+[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"          |
+[tT][aA][bB][dD][iI][aA][lL][oO][gG][ \t\n]+"{"              |
+[tT][aA][bB][pP][aA][gG][eE][ \t\n]+"{"                      {
   std::string text(yytext);
   convert_src::mcpImpl->pushNoKey(text);
 }
 
-[pP][aA][gG][eE][iI][tT][eE][mM][^\{]* {
-  std::string text(yytext);
-  convert_src::mcpImpl->pushNoKey(text);
-}
-
-[iI][dD][eE][nN][tT][iI][fF][iI][eE][rR][^;]* {
+[hH][eE][lL][pP][iI][dD][ \t]+'='[ \t]+[a-zA-Z]+[^;]*                 |
+[iI][dD][eE][nN][tT][iI][fF][iI][eE][rR][ \t]*"="[ \t]*[a-zA-Z]+[^;]* {
   std::string text(yytext);
   convert_src::mcpImpl->registerKey(text);
 }
 
-[tT][eE][xX][tT][^\n]* {
+[mM][eE][sS][sS][aA][gG][eE][ \t]*"["[ \t]*"en-US"[ \t]*"]"[ \t]+"="[^\n]*                         |
+[qQ][uU][iI][cC][kK][hH][eE][lL][pP][tT][eE][xX][tT][ \t]*"["[ \t]*"en-US"[ \t]*"]"[ \t]+"="[^\n]* |
+[tT][eE][xX][tT][ \t]*"["[ \t]*"en-US"[ \t]*"]"[ \t]+"="[^\n]*                                     {
   std::string text(yytext);
   convert_src::mcpImpl->saveData(text);
 }
 
-"};" {
+"}"[ ]*";" {
   std::string text(yytext);
   convert_src::mcpImpl->popKey(text);
 }

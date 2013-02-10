@@ -54,10 +54,6 @@ l10nMem_entry::~l10nMem_entry()
 /**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem::l10nMem()
 {
-  mcMemory.push_back(l10nMem_entry("file1", "module1",
-                                   "key", "da", "hovsa"));
-  mcMemory.push_back(l10nMem_entry("file1", "module1",
-                                   "key", "ja", "hovsa"));
 }
 
 
@@ -73,14 +69,15 @@ l10nMem::~l10nMem()
 void l10nMem::save(const std::string& srTargetFile)
 {
   int           i;
-  std::ofstream outputFile(srTargetFile.c_str(), std::ios::binary);
+  std::string   sFile = srTargetFile + ".cnv";
+  std::ofstream outputFile(sFile.c_str(), std::ios::binary);
 
   if (!outputFile.is_open())
     throw std::string("Could not open ")+srTargetFile;
 
 	
   for (i = 0; i < (int)mcMemory.size(); ++i)
-	outputFile << msCurrentModuleName << "\t" << msCurrentSourceFileName << "\t"
+	outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
 	           << mcMemory[i].msKey   << "\t" << mcMemory[i].msLanguage  << "\t"
                << mcMemory[i].msText  << std::endl;
   // JIX

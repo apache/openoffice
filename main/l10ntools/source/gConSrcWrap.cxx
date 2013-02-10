@@ -67,6 +67,7 @@ void convert_src_impl::pushKey(std::string &sText)
   sKey = sText.substr(nL, nE - nL);
 
   mcStack.push_back(sKey);
+  mbNoKey = false;
 }
 
 
@@ -82,6 +83,7 @@ void convert_src_impl::popKey(std::string &sText)
   // check for correct node/prop relations
   if (mcStack.size())
     mcStack.pop_back();
+  mbNoKey = false;
 }
 
 
@@ -93,6 +95,8 @@ void convert_src_impl::pushNoKey(std::string &sText)
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
+  mbNoKey = true;
+  mcStack.push_back("dummy");
 }
 
 
@@ -108,11 +112,19 @@ void convert_src_impl::registerKey(std::string &sText)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
 
+  // do we expect a delayed key
+  if (!mbNoKey)
+	return;
+  mbNoKey = false;
+
   // locate id
   for (nL = 0; sText[nL] != '=' && sText[nL] != '\n'; ++nL) ;
   for (++nL; sText[nL] == ' ' || sText[nL] == '\t'; ++nL) ;
   for (nE = nL; sText[nE] != ' ' && sText[nE] != '\t' && sText[nE] != '\n' && nE < (int)sText.size(); ++nE) ;
   sKey = sText.substr(nL, nE - nL);
+
+  // put key on stack instead of dummy
+  mcStack.pop_back();
   mcStack.push_back(sKey);
 }
 
@@ -135,7 +147,8 @@ void convert_src_impl::saveData(std::string &sText)
 
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
-	sKey += (nL > 0 ? "." : "") + mcStack[nL];
+	if (mcStack[nL] != "dummy")
+	  sKey += (nL > 0 ? "." : "") + mcStack[nL];
 
   // locate id
   for (nL = 0; sText[nL] != '\"' && nL < (int)sText.size(); ++nL) ;
