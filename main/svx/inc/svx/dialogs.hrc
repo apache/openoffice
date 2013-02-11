@@ -56,7 +56,6 @@
 #define RID_SVXSTR_GALLERY_PREVIEW			(RID_SVX_START + 255)
 //-----IAccessibility2 Implementation 2009
 
-
 // factory IDs of tabpages implemented in CUI
 #define RID_SVXPAGE_CHAR_TWOLINES			(RID_SVX_START + 242)
 #define RID_SVXPAGE_EXT_PARAGRAPH           (RID_SVX_START +   7)
@@ -383,6 +382,10 @@
 #define RID_POPUPPANEL_TEXTPAGE_UNDERLINE   (RID_SVX_START + 289)
 #define RID_POPUPPANEL_TEXTPAGE_FONT_COLOR  (RID_SVX_START + 290)
 #define RID_POPUPPANEL_TEXTPAGE_SPACING     (RID_SVX_START + 291)
+
+#define RID_SIDEBAR_AREA_PANEL              (RID_SVX_START + 292)
+#define RID_POPUPPANEL_AERAPAGE_COLOR		(RID_SVX_START + 293)
+#define RID_POPUPPANEL_AREAPAGE_TRGR		(RID_SVX_START + 294)
 // !!! please update RID_SVX_FIRSTFREE !!! see line 46
 
 // Strings ------------------------------------------------------------------

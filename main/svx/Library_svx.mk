@@ -173,6 +173,8 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/sidebar/PanelFactory \
     svx/source/sidebar/text/SvxSBFontNameBox \
     svx/source/sidebar/text/TextPropertyPanel \
+    svx/source/sidebar/geometry/AreaPropertyPanel \
+    svx/source/sidebar/tools/PropertyPanelTools \
     svx/source/stbctrls/pszctrl \
     svx/source/stbctrls/insctrl \
     svx/source/stbctrls/selctrl \

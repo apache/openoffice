@@ -22,6 +22,7 @@
 #include "sidebar/PanelFactory.hxx"
 
 #include "text/TextPropertyPanel.hxx"
+#include <geometry/AreaPropertyPanel.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
@@ -137,6 +138,15 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     if (rsResourceURL.endsWithAsciiL("/TextPropertyPanel", strlen("/TextPropertyPanel")))
     {
         TextPropertyPanel* pPanel = TextPropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel);
+    }
+
+    if (rsResourceURL.endsWithAsciiL("/AreaPropertyPanel", strlen("/AreaPropertyPanel")))
+    {
+        AreaPropertyPanel* pPanel = AreaPropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
