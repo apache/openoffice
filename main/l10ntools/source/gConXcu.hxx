@@ -20,8 +20,7 @@
  *************************************************************/
 #ifndef GCONXCU_HXX
 #define GCONXCU_HXX
-#include "gLang.hxx"
-#include <vector>
+#include "gCon.hxx"
 
 
 
@@ -30,34 +29,27 @@
  *****************************************************************************
  * This is the class header for .xcu conversion
  *****************************************************************************/
-typedef enum {TAG_COMPONENT, TAG_PROP, TAG_NODE } TAG_TYPE;
 
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
 class xcu_stack_entry;
-class convert_xcu_impl : public convert_gen
+class convert_xcu : public convert_gen_impl
 {
   public:
-    convert_xcu_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
-    ~convert_xcu_impl();
+    typedef enum {TAG_COMPONENT, TAG_PROP, TAG_NODE } TAG_TYPE;
+    convert_xcu(l10nMem& crMemory);
+    ~convert_xcu();
 
-    void pushKeyPart(TAG_TYPE eIsNode, std::string &sTag);
-    void popKeyPart (TAG_TYPE eIsNode, std::string &sTag);
+    void pushKeyPart(TAG_TYPE eIsNode, char *sTag);
+    void popKeyPart (TAG_TYPE eIsNode, char *sTag);
 
-    void startCollectData(std::string& sCollectedText);
-    void stopCollectData(std::string& sCollectedText);
-    void collectData(std::string& sCollectedText);
+    void startCollectData(char *sCollectedText);
+    void stopCollectData(char *sCollectedText);
 
   private:
     std::vector<std::string> mcStack;
-    bool           mbCollectingData;
-    std::string         msCollector;
 
-    void extract();
-    void insert();
-    void runLex();
-
-    friend class convert_xcu;
+    void execute();
 };
 #endif

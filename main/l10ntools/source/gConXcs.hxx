@@ -20,7 +20,7 @@
  *************************************************************/
 #ifndef GCONXCS_HXX
 #define GCONXCS_HXX
-#include "gLang.hxx"
+#include "gCon.hxx"
 
 
 
@@ -33,27 +33,18 @@
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_xcs_impl : public convert_gen
+class convert_xcs : public convert_gen_impl
 {
   public:
-    convert_xcs_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
-    ~convert_xcs_impl();
+    convert_xcs(l10nMem& crMemory);
+    ~convert_xcs();
 
-	void setKey(std::string &sCollectedText);
-	void unsetKey(std::string &sCollectedText);
-	void startCollectData(std::string& sCollectedText);
-    void stopCollectData(std::string& sCollectedText);
-    void collectData(std::string& sCollectedText);
+	void setKey(char *sCollectedText);
+	void unsetKey(char *sCollectedText);
+	void startCollectData(char *sCollectedText);
+    void stopCollectData(char *sCollectedText);
 
   private:
-    bool   mbCollectingData;
-    std::string msCollector;
-	std::string msKey;
-
-    void extract();
-    void insert();
-    void runLex();
-
-    friend class convert_xcs;
+    void execute();
 };
 #endif

@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 #include "gConXhp.hxx"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 
@@ -30,15 +33,23 @@
 
 
 
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_xhp::convert_xhp(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_xhp::~convert_xhp()                                              {}
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
 namespace XhpWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_xhp *)convert_gen_impl::mcImpl)
 #include "gConXhp_yy.c"
 }
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::runLex()
+void convert_xhp::execute()
 {
   XhpWrap::genXhp_lex();
 
@@ -49,7 +60,7 @@ void convert_xhp_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::startCollectData(std::string sType, std::string& sCollectedText)
+void convert_xhp::startCollectData(std::string sType, std::string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -67,7 +78,7 @@ void convert_xhp_impl::startCollectData(std::string sType, std::string& sCollect
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::stopCollectData(std::string sType, std::string& sCollectedText)
+void convert_xhp::stopCollectData(std::string sType, std::string& sCollectedText)
 {
   std::string sKey;
   int    nL;
@@ -108,16 +119,3 @@ void convert_xhp_impl::stopCollectData(std::string sType, std::string& sCollecte
   mbCollectingData = false;
   msCollector.clear();
 }  
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp_impl::collectData(std::string& sCollectedText)
-{
-  msCollector += sCollectedText;
-  if (sCollectedText == "\n")
-  {
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
-}

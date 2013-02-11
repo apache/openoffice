@@ -20,8 +20,7 @@
  *************************************************************/
 #ifndef GCONPO_HXX
 #define GCONPO_HXX
-#include "gLang.hxx"
-#include <stack>
+#include "gCon.hxx"
 
 
 
@@ -30,49 +29,20 @@
  *****************************************************************************
  * This is the class header for .po conversion
  *****************************************************************************/
-typedef enum {TAG_COMPONENT, TAG_PROP, TAG_NODE } TAG_TYPE;
 
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class po_stack_entry
+class convert_po : public convert_gen_impl
 {
   public:
-    po_stack_entry(TAG_TYPE sIsNode, std::string& sName);
-    ~po_stack_entry();
+    convert_po(l10nMem& crMemory);
+    ~convert_po();
 
-    TAG_TYPE mbIsNode;
-    std::string   msName;
-};
-
-
-
-
-/********************   C L A S S   D E F I N I T I O N   ********************/
-class po_stack_entry;
-class convert_po_impl : public convert_gen
-{
-  public:
-    convert_po_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
-    ~convert_po_impl();
-
-    void pushKeyPart(TAG_TYPE eIsNode, std::string &sTag);
-    void popKeyPart (TAG_TYPE eIsNode, std::string &sTag);
-
-    void startCollectData(std::string& sCollectedText);
-    void stopCollectData(std::string& sCollectedText);
-    void collectData(std::string& sCollectedText);
+    void startCollectData(char *sCollectedText);
+    void stopCollectData(char *sCollectedText);
 
   private:
-    std::stack<po_stack_entry> mcStack;
-    bool                   mbMergeMode;
-    bool                   mbCollectingData;
-    std::string                 msCollector;
-
-    void extract();
-    void insert();
-    void runLex();
-
-    friend class convert_po;
+    void execute();
 };
 #endif

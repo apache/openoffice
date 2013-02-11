@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 #include "gConHrc.hxx"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 
@@ -30,19 +33,24 @@
 
 
 
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_hrc::convert_hrc(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_hrc::~convert_hrc()                                              {}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 namespace HrcWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_hrc *)convert_gen_impl::mcImpl)
 #include "gConHrc_yy.c"
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::runLex()
+void convert_hrc::execute()
 {
   HrcWrap::genHrc_lex();
 }
@@ -50,8 +58,9 @@ void convert_hrc_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::setKey(std::string &sText)
+void convert_hrc::setKey(char *sInpText)
 {
+  std::string sText(sInpText);
   int    nL, nE;
 
   // write text for merge
@@ -69,10 +78,10 @@ void convert_hrc_impl::setKey(std::string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::saveData(std::string &sText)
+void convert_hrc::saveData(char *sInpText)
 {
   int    nL, nE;
-  std::string sUseText;
+  std::string sUseText, sText(sInpText);
 
   // write text for merge
   if (mbMergeMode)
@@ -101,18 +110,4 @@ void convert_hrc_impl::saveData(std::string &sText)
   }
   else
     mcMemory.setEnUsKey(msKey, sUseText);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_hrc_impl::copyData(std::string &sText)
-{
-  msCollector += sText;
-  if (sText == "\n")
-  {
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
 }

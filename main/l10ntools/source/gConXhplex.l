@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_xhp::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -61,37 +61,37 @@
 
 "<title"[^>]*> {
   std::string text(yytext);
-  convert_xhp::mcpImpl->startCollectData(text.substr(1,5), text);
+  LOCptr->startCollectData(text.substr(1,5), text);
 }
 
 "<bookmark "[^>]*> {
   std::string text(yytext);
-  convert_xhp::mcpImpl->startCollectData(text.substr(1,8), text);
+  LOCptr->startCollectData(text.substr(1,8), text);
 }
 
 "<paragraph"[^>]*> {
   std::string text(yytext);
-  convert_xhp::mcpImpl->startCollectData(text.substr(1,9), text);
+  LOCptr->startCollectData(text.substr(1,9), text);
 }
 
 "</paragraph>" {
   std::string text(yytext);
-  convert_xhp::mcpImpl->stopCollectData(text.substr(2,9), text);
+  LOCptr->stopCollectData(text.substr(2,9), text);
 }
 
 "</bookmark>" {
   std::string text(yytext);
-  convert_xhp::mcpImpl->stopCollectData(text.substr(2,8), text);
+  LOCptr->stopCollectData(text.substr(2,8), text);
 }
 
 "</title>" {
   std::string text(yytext);
-  convert_xhp::mcpImpl->stopCollectData(text.substr(2,5), text);
+  LOCptr->stopCollectData(text.substr(2,5), text);
 }
 
 .|\n {
   std::string text(yytext);
-  convert_xhp::mcpImpl->collectData(text);
+  IMPLptr->collectData(yytext);
 }
 
 

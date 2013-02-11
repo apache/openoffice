@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_xcu::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -60,48 +60,39 @@
 %%
 
 "<oor:component-data "[^>]*> {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->pushKeyPart(TAG_COMPONENT, text);
+  LOCptr->pushKeyPart(convert_xcu::TAG_COMPONENT, yytext);
 }
 
 
 "</oor:component-data>" {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->popKeyPart(TAG_COMPONENT, text);
+  LOCptr->popKeyPart(convert_xcu::TAG_COMPONENT, yytext);
 }
 
 "<prop oor:name=\""[^\"]*\" {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->pushKeyPart(TAG_PROP, text);
+  LOCptr->pushKeyPart(convert_xcu::TAG_PROP, yytext);
 }
 
 "</prop>" {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->popKeyPart(TAG_PROP, text);
+  LOCptr->popKeyPart(convert_xcu::TAG_PROP, yytext);
 }
 
 "<node oor:name=\""[^\"]*\" {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->pushKeyPart(TAG_NODE, text);
+  LOCptr->pushKeyPart(convert_xcu::TAG_NODE, yytext);
 }
 
 "</node>" {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->popKeyPart(TAG_NODE, text);
+  LOCptr->popKeyPart(convert_xcu::TAG_NODE, yytext);
 }
   
 "<value xml:lang=\""[^\"]*\"[^>]*">" {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->startCollectData(text);
+  LOCptr->startCollectData(yytext);
 }
 
 "</value>" {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->stopCollectData(text);
+  LOCptr->stopCollectData(yytext);
 }
 
 .|\n {
-  std::string text(yytext);
-  convert_xcu::mcpImpl->collectData(text);
+  IMPLptr->collectData(yytext);
 }
 %%

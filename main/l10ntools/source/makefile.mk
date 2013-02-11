@@ -170,11 +170,7 @@ APP7STDLIBS+= \
 APP8TARGET= genLang 
 APP8OBJS= $(OBJ)$/gLang.obj       $(OBJ)$/gL10nMem.obj \
           $(OBJ)$/gHandler.obj    $(OBJ)$/gConProp.obj \
-          $(OBJ)$/gConHrc.obj     $(OBJ)$/gConSrc.obj \
-          $(OBJ)$/gConTree.obj    $(OBJ)$/gConUlf.obj \
-          $(OBJ)$/gConPo.obj      $(OBJ)$/gConXcs.obj \
-          $(OBJ)$/gConXcu.obj     $(OBJ)$/gConXhp.obj \
-          $(OBJ)$/gConXrm.obj     $(OBJ)$/gCon.obj \
+          $(OBJ)$/gConTree.obj    $(OBJ)$/gCon.obj \
           $(OBJ)$/gConPoWrap.obj  $(OBJ)$/gConHrcWrap.obj \
           $(OBJ)$/gConSrcWrap.obj $(OBJ)$/gConXcsWrap.obj \
           $(OBJ)$/gConXcuWrap.obj $(OBJ)$/gConXrmWrap.obj \

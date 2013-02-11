@@ -19,7 +19,9 @@
  * 
  *************************************************************/
 #include "gConXcu.hxx"
-
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 /*****************************************************************************
@@ -30,16 +32,24 @@
 
 
 
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_xcu::convert_xcu(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_xcu::~convert_xcu()                                              {}
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
 namespace XcuWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_xcu *)convert_gen_impl::mcImpl)
 #include "gConXcu_yy.c"
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::runLex()
+void convert_xcu::execute()
 {
   XcuWrap::genxcu_lex();
 }
@@ -47,9 +57,9 @@ void convert_xcu_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, std::string& sTag)
+void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *sTag)
 {
-  std::string sKey;
+  std::string sKey, myTag(sTag);
   int    nL, nE;
 
 
@@ -59,24 +69,24 @@ void convert_xcu_impl::pushKeyPart(TAG_TYPE bIsNode, std::string& sTag)
   msCollector.clear();
 
   // find key in tag
-  nL = sTag.find("oor:name=\"");
+  nL = myTag.find("oor:name=\"");
   if (nL == (int)std::string::npos)
 	return;
 
   // find end of key
   nL += 10;
-  nE = sTag.find("\"", nL);
+  nE = myTag.find("\"", nL);
   if (nE == (int)std::string::npos)
 	return;
 
-  sKey = sTag.substr(nL, nE - nL);
+  sKey = myTag.substr(nL, nE - nL);
   mcStack.push_back(sKey);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, std::string &sTag)
+void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *sTag)
 {
   // write text for merge
   if (mbMergeMode)
@@ -91,7 +101,7 @@ void convert_xcu_impl::popKeyPart(TAG_TYPE bIsNode, std::string &sTag)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::startCollectData(std::string& sCollectedText)
+void convert_xcu::startCollectData(char *sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -103,7 +113,7 @@ void convert_xcu_impl::startCollectData(std::string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::stopCollectData(std::string& sCollectedText)
+void convert_xcu::stopCollectData(char *sCollectedText)
 {
   int    nL;
   std::string useKey;
@@ -138,16 +148,3 @@ void convert_xcu_impl::stopCollectData(std::string& sCollectedText)
 
   msCollector.clear();
 }  
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu_impl::collectData(std::string& sCollectedText)
-{
-  msCollector += sCollectedText;
-  if (sCollectedText == "\n")
-  {
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
-}

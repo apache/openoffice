@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 #include "gConPo.hxx"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 
@@ -30,16 +33,24 @@
 
 
 
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_po::convert_po(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_po::~convert_po()                                              {}
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
 namespace PoWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_po *)convert_gen_impl::mcImpl)
 #include "gConPo_yy.c"
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::runLex()
+void convert_po::execute()
 {
   PoWrap::genpo_lex();
 }
@@ -47,40 +58,9 @@ void convert_po_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::pushKeyPart(TAG_TYPE bIsNode, std::string& sTag)
+void convert_po::startCollectData(char *sText)
 {
-  // remember text for merge
-  msCollector += sTag;
-
-  po_stack_entry newTag(bIsNode, sTag);
-
-  mcStack.push(newTag);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::popKeyPart(TAG_TYPE bIsNode, std::string &sTag)
-{
-  // remember text for merge
-  msCollector += sTag;
-
-  // check for correct node/prop relations
-  if (bIsNode != mcStack.top().mbIsNode)
-    throw "node/prob mismatch in file " + msSourceFile;
-
-  mcStack.pop();
-
-  if (mbMergeMode && msCollector.size())
-    writeSourceFile(msCollector);
-  msCollector.clear();
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::startCollectData(std::string& sCollectedText)
-{
+  std::string sCollectedText(sText);
   if (mbMergeMode && msCollector.size())
     writeSourceFile(msCollector);
 
@@ -91,18 +71,12 @@ void convert_po_impl::startCollectData(std::string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::stopCollectData(std::string& sCollectedText)
+void convert_po::stopCollectData(char *sText)
 {
+  std::string sCollectedText(sText);
   std::string useKey;
 
 
-  // locate key and extract it
-  while (mcStack.size())
-  {
-    po_stack_entry nowEntry = mcStack.top();
-	mcStack.pop();
-	useKey = useKey + nowEntry.msName;
-  }
 
   if (mbMergeMode)
   {
@@ -125,16 +99,3 @@ void convert_po_impl::stopCollectData(std::string& sCollectedText)
   mbCollectingData = false;
   msCollector.clear();
 }  
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po_impl::collectData(std::string& sCollectedText)
-{
-  msCollector += sCollectedText;
-  if (sCollectedText == "\n")
-  {
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
-}

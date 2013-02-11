@@ -20,8 +20,7 @@
  *************************************************************/
 #ifndef GCONSRCHXX
 #define GCONSRCHXX
-#include "gLang.hxx"
-#include <vector>
+#include "gCon.hxx"
 
 
 
@@ -34,30 +33,25 @@
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_src_impl : public convert_gen
+class convert_src : public convert_gen_impl
 {
   public:
-    convert_src_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
-    ~convert_src_impl();
+    convert_src(l10nMem& crMemory);
+    ~convert_src();
     
-    void pushKey(std::string &sText);
-    void popKey (std::string &sText);
-    void pushNoKey(std::string &sText);
-    void registerKey(std::string &sText);
+    void pushKey(char *sText);
+    void popKey (char *sText);
+    void pushNoKey(char *sText);
+    void registerKey(char *sText);
     
-    void saveData(std::string& sText);
-    void saveItemList(std::string& sText);
-    void copyData(std::string& sText);
+    void saveData(char *sText);
+    void saveItemList(char *sText);
 
   private:
     std::vector<std::string> mcStack;
     std::string         msCollector;
 	bool                mbNoKey;
 
-    void extract();
-    void insert();
-    void runLex();
-
-    friend class convert_src;
+    void execute();
 };
 #endif

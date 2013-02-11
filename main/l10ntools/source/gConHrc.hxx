@@ -20,7 +20,7 @@
  *************************************************************/
 #ifndef GCONHRCHXX
 #define GCONHRCHXX
-#include "gLang.hxx"
+#include "gCon.hxx"
 
 
 
@@ -33,26 +33,19 @@
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_hrc_impl : public convert_gen
+class convert_hrc : public convert_gen_impl
 {
   public:
-    convert_hrc_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
-    ~convert_hrc_impl();
+    convert_hrc(l10nMem& crMemory);
+    ~convert_hrc();
     
-    void setKey(std::string &sText);
-    void saveData(std::string& sText);
-    void copyData(std::string& sText);
+    void setKey(char *sText);
+    void saveData(char *sText);
 
   private:
     std::vector<std::string> mcStack;
-    std::string         msCollector;
-    std::string         msKey;
 
 
-    void extract();
-    void insert();
-    void runLex();
-
-    friend class convert_hrc;
+    void execute();
 };
 #endif

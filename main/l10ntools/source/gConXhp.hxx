@@ -20,7 +20,7 @@
  *************************************************************/
 #ifndef GCONXHP_HXX
 #define GCONXHP_HXX
-#include "gLang.hxx"
+#include "gCon.hxx"
 
 
 
@@ -33,26 +33,19 @@
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_xhp_impl : public convert_gen
+class convert_xhp : public convert_gen_impl
 {
   public:
-    convert_xhp_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
-    ~convert_xhp_impl();
+    convert_xhp(l10nMem& crMemory);
+    ~convert_xhp();
 
     void startCollectData(std::string sType, std::string& sCollectedText);
     void stopCollectData(std::string sType, std::string& sCollectedText);
-    void collectData(std::string& sCollectedText);
 
   private:
-    bool mbCollectingData;
-    std::string msCollector;
 	std::string msMergeType;
     std::string msTag;
 
-    void extract();
-    void insert();
-    void runLex();
-
-    friend class convert_xhp;
+    void execute();
 };
 #endif

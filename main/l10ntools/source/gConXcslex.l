@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_xcs::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -60,27 +60,22 @@
 %%
 
 "<prop"[^>]*> {
-  std::string text(yytext);
-  convert_xcs::mcpImpl->setKey(text);
+  LOCptr->setKey(yytext);
 }
 
 "</prop>" {
-  std::string text(yytext);
-  convert_xcs::mcpImpl->unsetKey(text);
+  LOCptr->unsetKey(yytext);
 }
   
 "<value"[^>]*> {
-  std::string text(yytext);
-  convert_xcs::mcpImpl->startCollectData(text);
+  LOCptr->startCollectData(yytext);
 }
 
 "</value>" {
-  std::string text(yytext);
-  convert_xcs::mcpImpl->stopCollectData(text);
+  LOCptr->stopCollectData(yytext);
 }
 
 .|\n {
-  std::string text(yytext);
-  convert_xcs::mcpImpl->collectData(text);
+  IMPLptr->collectData(yytext);
 }
 %%

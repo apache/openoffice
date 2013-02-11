@@ -19,7 +19,9 @@
  * 
  *************************************************************/
 #include "gConXrm.hxx"
-
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 /*****************************************************************************
@@ -30,15 +32,23 @@
 
 
 
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_xrm::convert_xrm(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_xrm::~convert_xrm()                                              {}
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
 namespace XrmWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_xrm *)convert_gen_impl::mcImpl)
 #include "gConXrm_yy.c"
 }
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm_impl::runLex()
+void convert_xrm::execute()
 {
   XrmWrap::genXrm_lex();
 
@@ -50,7 +60,7 @@ void convert_xrm_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm_impl::startCollectData(std::string sType, std::string& sCollectedText)
+void convert_xrm::startCollectData(std::string sType, std::string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -64,7 +74,7 @@ void convert_xrm_impl::startCollectData(std::string sType, std::string& sCollect
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm_impl::stopCollectData(std::string sType, std::string& sCollectedText)
+void convert_xrm::stopCollectData(std::string sType, std::string& sCollectedText)
 {
   std::string sKey;
   int    nL;
@@ -105,16 +115,3 @@ void convert_xrm_impl::stopCollectData(std::string sType, std::string& sCollecte
   mbCollectingData = false;
   msCollector.clear();
 }  
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm_impl::collectData(std::string& sCollectedText)
-{
-  msCollector += sCollectedText;
-  if (sCollectedText == "\n")
-  {
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
-}

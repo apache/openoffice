@@ -18,7 +18,20 @@
  * under the License.
  * 
  *************************************************************/
-#include "gLang.hxx"
+#include "gCon.hxx"
+#include "gConHrc.hxx"
+#include "gConPo.hxx"
+#include "gConProp.hxx"
+#include "gConSrc.hxx"
+#include "gConTree.hxx"
+#include "gConUlf.hxx"
+#include "gConXcs.hxx"
+#include "gConXcu.hxx"
+#include "gConXhp.hxx"
+#include "gConXrm.hxx"
+
+#include <iostream>
+#include <fstream>
 
 
 
@@ -31,11 +44,70 @@
 
 
 
+/*******************   G L O B A L   D E F I N I T I O N   *******************/
+convert_gen_impl * convert_gen_impl::mcImpl = NULL;
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
-                        : msSourceFile(srSourceFile),
-						  mbVerbose(brVerbose),
-                          mcMemory(crMemory)
+convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, const bool bMerge) 
+{
+  // did the user give a .xxx with the source file ?
+  int nInx = srSourceFile.rfind(".");
+  if (nInx == std::string::npos)
+    throw std::string("source file: ")+srSourceFile+" missing extension";
+
+  // do we have an old object
+  if (convert_gen_impl::mcImpl)
+	delete convert_gen_impl::mcImpl;
+
+  // find correct conversion class and create correct object
+  std::string sExtension = srSourceFile.substr(nInx+1);
+  if      (sExtension == "hrc")        convert_gen_impl::mcImpl = new convert_hrc(crMemory);
+  else if (sExtension == "src")        convert_gen_impl::mcImpl = new convert_src(crMemory);
+  else if (sExtension == "po")         convert_gen_impl::mcImpl = new convert_po(crMemory);
+  else if (sExtension == "tree")       convert_gen_impl::mcImpl = new convert_tree(crMemory);
+  else if (sExtension == "ulf")        convert_gen_impl::mcImpl = new convert_ulf(crMemory);
+  else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcs(crMemory);
+  else if (sExtension == "xhp")        convert_gen_impl::mcImpl = new convert_xhp(crMemory);
+  else if (sExtension == "properties") convert_gen_impl::mcImpl = new convert_prop(crMemory);
+  else throw std::string("unknown extension on source file: ")+srSourceFile;
+
+  // and set environment
+  convert_gen_impl::mcImpl->msSourceFile = srSourceFile;
+  convert_gen_impl::mcImpl->mbMergeMode  = bMerge;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+convert_gen::~convert_gen()
+{
+  delete convert_gen_impl::mcImpl;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_gen::execute()
+{
+  // and load file
+  convert_gen_impl::mcImpl->prepareFile(); 
+
+  // and execute conversion
+  convert_gen_impl::mcImpl->execute();
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+convert_gen_impl::convert_gen_impl(l10nMem& crMemory) : mcMemory(crMemory) {}
+convert_gen_impl::~convert_gen_impl()                                      {mcImpl = NULL;}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_gen_impl::prepareFile()
 {
   std::ifstream inputFile(msSourceFile.c_str(), std::ios::binary);
 
@@ -58,43 +130,9 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, boo
 
 
 
-/**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::~convert_gen()
-{
-}
-
-
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen& convert_gen::getConverter(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
-{
-  // did the user give a .xxx with the source file ?
-  int nInx = srSourceFile.find_last_of(".");
-  if (nInx <= 0)
-    throw std::string("source file: ")+srSourceFile+" missing extension";
-
-  // find correct conversion class
-  std::string sExtension = srSourceFile.substr(nInx+1);
-
-  // did the user give a .xxx with the source file ?
-  if (sExtension == "hrc")        return *(new convert_hrc       (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "src")        return *(new convert_src       (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "po")         return *(new convert_po        (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "tree")       return *(new convert_tree      (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "ulf")        return *(new convert_ulf       (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "xcu")        return *(new convert_xcu       (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "xcs")        return *(new convert_xcs       (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "xrm")        return *(new convert_xrm       (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "xhp")        return *(new convert_xhp       (srSourceFile, crMemory, brVerbose));
-  if (sExtension == "properties") return *(new convert_properties(srSourceFile, crMemory, brVerbose));
-
-  throw std::string("unknown extension on source file: ")+srSourceFile;
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::lexRead(char *sBuf, int *nResult, int nMax_size)
+void convert_gen_impl::lexRead(char *sBuf, int *nResult, int nMax_size)
 {
   // did we hit eof
   if (mnSourceReadIndex == -1)
@@ -123,7 +161,7 @@ void convert_gen::lexRead(char *sBuf, int *nResult, int nMax_size)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::lineRead(bool *bEof, std::string& line)
+void convert_gen_impl::lineRead(bool *bEof, std::string& line)
 {
   // did we hit eof
   if (mnSourceReadIndex == -1 || mnSourceReadIndex >= (int)msSourceBuffer.size())
@@ -148,7 +186,7 @@ void convert_gen::lineRead(bool *bEof, std::string& line)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::writeSourceFile(const std::string& line)
+void convert_gen_impl::writeSourceFile(const std::string& line)
 {
   if (!line.size())
 	return;
@@ -160,7 +198,7 @@ void convert_gen::writeSourceFile(const std::string& line)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::trim(std::string& sLine)
+void convert_gen_impl::trim(std::string& sLine)
 {
   int nL;
 
@@ -173,4 +211,18 @@ void convert_gen::trim(std::string& sLine)
   nL = sLine.find_last_not_of(" \t");
   if (nL != (int)std::string::npos)
     sLine.erase(nL +1);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_gen_impl::collectData(char *sText)
+{
+  msCollector += sText;
+  if (sText == "\n")
+  {
+    if (mbMergeMode)
+      writeSourceFile(msCollector);
+    msCollector.clear();
+  }
 }

@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_ulf::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -60,17 +60,14 @@
 %%
 
 "["[^\]]*"]" {
-  std::string text(yytext);
-  convert_ulf::mcpImpl->setKey(text);
+  LOCptr->setKey(yytext);
 }
 
 "en-US"[ ]*"="[^\n]* {
-  std::string text(yytext);
-  convert_ulf::mcpImpl->setText(text);
+  LOCptr->setText(yytext);
 }
   
 .|\n {
-  std::string text(yytext);
-  convert_ulf::mcpImpl->collectData(text);
+  IMPLptr->collectData(yytext);
 }
 %%

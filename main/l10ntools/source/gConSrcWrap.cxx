@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 #include "gConSrc.hxx"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 
@@ -30,19 +33,24 @@
 
 
 
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_src::convert_src(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_src::~convert_src()                                              {}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 namespace SrcWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_src *)convert_gen_impl::mcImpl)
 #include "gConSrc_yy.c"
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::runLex()
+void convert_src::execute()
 {
   SrcWrap::genSrc_lex();
 }
@@ -50,9 +58,9 @@ void convert_src_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::pushKey(std::string &sText)
+void convert_src::pushKey(char *sInpText)
 {
-  std::string sKey;
+  std::string sKey, sText(sInpText);
   int    nL, nE;
 
   // write text for merge
@@ -63,8 +71,8 @@ void convert_src_impl::pushKey(std::string &sText)
   // locate id
   for (nL = 0; sText[nL] != ' ' && sText[nL] != '\t' && sText[nL] != '\n'; ++nL) ;
   for (; sText[nL] == ' ' || sText[nL] == '\t'; ++nL) ;
-  for (nE = nL; sText[nE] != ' ' && sText[nE] != '\t' && sText[nE] != '\n'; ++nE) ;
-  sKey = sText.substr(nL, nE - nL);
+  for (nE = sText.size()-1; sText[nE] == ' ' || sText[nE] == '\t' || sText[nE] == '\n'; --nE) ;
+  sKey = sText.substr(nL, nE - nL +1);
 
   mcStack.push_back(sKey);
   mbNoKey = false;
@@ -73,9 +81,11 @@ void convert_src_impl::pushKey(std::string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::popKey(std::string &sText)
+void convert_src::popKey(char *sInpText)
 {
-  // write text for merge
+  std::string sText(sInpText);
+
+	  // write text for merge
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
@@ -89,8 +99,9 @@ void convert_src_impl::popKey(std::string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::pushNoKey(std::string &sText)
+void convert_src::pushNoKey(char *sInpText)
 {
+  std::string sText(sInpText);
   // write text for merge
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
@@ -102,12 +113,12 @@ void convert_src_impl::pushNoKey(std::string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::registerKey(std::string &sText)
+void convert_src::registerKey(char *sInpText)
 {
-  std::string sKey;
+  std::string sKey, sText(sInpText);
   int    nL, nE;
 
-  // write text for merge
+  // write text for merged
   if (mbMergeMode)
     writeSourceFile(msCollector + sText);
   msCollector.clear();
@@ -131,10 +142,10 @@ void convert_src_impl::registerKey(std::string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::saveData(std::string &sText)
+void convert_src::saveData(char *sInpText)
 {
   int    nL, nE;
-  std::string sKey, sUseText;
+  std::string sKey, sUseText, sText(sInpText);
 
   // write text for merge
   if (mbMergeMode)
@@ -176,10 +187,10 @@ void convert_src_impl::saveData(std::string &sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::saveItemList(std::string &sText)
+void convert_src::saveItemList(char *sInpText)
 {
   int    nL, nE;
-  std::string sKey, sUseText;
+  std::string sKey, sUseText, sText(sInpText);
 
   // write text for merge
   if (mbMergeMode)
@@ -217,19 +228,5 @@ void convert_src_impl::saveItemList(std::string &sText)
 	             cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
     }
-  }
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src_impl::copyData(std::string &sText)
-{
-  msCollector += sText;
-  if (sText == "\n")
-  {
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
   }
 }

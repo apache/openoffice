@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_src::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -61,11 +61,11 @@
 
 [bB][iI][tT][mM][aA][pP]\ +[a-zA-Z]+[^\{]*                                  |
 [bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]\ +[a-zA-Z]+[^\{]*              |
-[eE][dD][iI][tT]\ +[a-zA-Z]+[^\{]*                                          |
 [cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*          |
 [cC][hH][eE][cC][kK][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
 [cC][oO][nN][tT][rR][oO][lL]\ +[a-zA-Z]+[^\{]*                              |
 [cC][oO][mM][bB][oO][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
+[eE][dD][iI][tT]\ +[a-zA-Z]+[^\{]*                                          |
 [eE][rR][rR][oO][rR][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
 [fF][iI][xX][eE][dD][tT][eE][xX][tT]\ +[a-zA-Z]+[^\{]*                      |
 [fF][iI][xX][eE][dD][lL][iI][nN][eE]\ +[a-zA-Z]+[^\{]*                      |
@@ -79,6 +79,7 @@
 [lL][iI][sS][tT][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                              |
 [mM][eE][nN][uU]\ +[a-zA-Z]+[^\{]*                                          |
 [mM][eE][nN][uU][iI][tT][eE][mM]\ +[a-zA-Z]+[^\{]*                          |
+[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]\ +[a-zA-Z]+[^\{]*              |
 [mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]\ +[a-zA-Z]+[^\{]*              |
 [mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]\ +[a-zA-Z]+[^\{]*      |
 [nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]\ +[a-zA-Z]+[^\{]*          |
@@ -88,6 +89,7 @@
 [pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*                  |
 [qQ][uU][eE][rR][yY][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                          |
 [rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]\ +[a-zA-Z]+[^\{]*              |
+[rR][eE][sS][oO][uU][rR][cC][eE]\ +[a-zA-Z]+[^\{]*                          |
 [sS][tT][rR][iI][nN][gG]\ +[a-zA-Z]+[^\{]*                                  |
 [sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]\ +[a-zA-Z]+[^\{]*              |
 [tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]\ +[a-zA-Z]+[^\{]*                  |
@@ -95,19 +97,18 @@
 [tT][aA][bB][pP][aA][gG][eE]\ +[a-zA-Z]+[^\{]*                              |
 [tT][oO][oO][lL][bB][oO][xX]\ +[a-zA-Z]+[^\{]*                              |
 [tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]\ +[a-zA-Z]+[^\{]*              {
-  std::string text(yytext);
-  convert_src::mcpImpl->pushKey(text);
+  LOCptr->pushKey(yytext);
 }
 
 
 
 [bB][iI][tT][mM][aA][pP][ \t\n]+"{"                                  |
 [bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE][ \t\n]+"{"              |
-[eE][dD][iI][tT][ \t\n]+"{"                                          |
 [cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN][ \t\n]"{"           |
 [cC][hH][eE][cC][kK][bB][oO][xX][ \t\n]+"{"                          |
 [cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"                              |
 [cC][oO][mM][bB][oO][bB][oO][xX][ \t\n]+"{"                          |
+[eE][dD][iI][tT][ \t\n]+"{"                                          |
 [eE][rR][rR][oO][rR][bB][oO][xX][ \t\n]+"{"                          |
 [fF][iI][xX][eE][dD][tT][eE][xX][tT][ \t\n]+"{"                      |
 [fF][iI][xX][eE][dD][lL][iI][nN][eE][ \t\n]+"{"                      |
@@ -121,6 +122,7 @@
 [lL][iI][sS][tT][bB][oO][xX][ \t\n]+"{"                              |
 [mM][eE][nN][uU][ \t\n]+"{"                                          |
 [mM][eE][nN][uU][iI][tT][eE][mM][ \t\n]+"{"                          |
+[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD][ \t\n]+"{"              |
 [mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG][ \t\n]+"{"              |
 [mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT][ \t\n]+"{"      |
 [nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD][ \t\n]+"{"          |
@@ -130,43 +132,40 @@
 [pP][uU][sS][hH][bB][uU][tT][tT][oO][nN][ \t\n]+"{"                  |
 [qQ][uU][eE][rR][yY][bB][oO][xX][ \t\n]+"{"                          |
 [rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN][ \t\n]+"{"              |
+[rR][eE][sS][oO][uU][rR][cC][eE][ \t\n]+"{"                          |
 [sS][tT][rR][iI][nN][gG][ \t\n]+"{"                                  |
+[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY][ \t\n]+"{"              |
 [tT][aA][bB][cC][oO][nN][tT][rR][oO][lL][ \t\n]+"{"                  |
 [tT][aA][bB][dD][iI][aA][lL][oO][gG][ \t\n]+"{"                      |
 [tT][aA][bB][pP][aA][gG][eE][ \t\n]+"{"                              |
 [tT][oO][oO][lL][bB][oO][xX][ \t\n]+"{"                              |
 [tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM][ \t\n]+"{"              {
-  std::string text(yytext);
-  convert_src::mcpImpl->pushNoKey(text);
+  LOCptr->pushNoKey(yytext);
 }
 
 [hH][eE][lL][pP][iI][dD]\ *"="\ *[a-zA-Z\"]+[^;]*                 |
 [iI][dD][eE][nN][tT][iI][fF][iI][eE][rR]\ *"="\ *[a-zA-Z\"]+[^;]* {
-  std::string text(yytext);
-  convert_src::mcpImpl->registerKey(text);
+  LOCptr->registerKey(yytext);
 }
 
 [mM][eE][sS][sS][aA][gG][eE]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]*                         |
 [qQ][uU][iI][cC][kK][hH][eE][lL][pP][tT][eE][xX][tT]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]* |
 [tT][eE][xX][tT]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]*                                     |
 [tT][iI][tT][lL][eE]\ *"["\ *"en-US"\ *"]"\ *"="[^\n]*                                 {
-  std::string text(yytext);
-  convert_src::mcpImpl->saveData(text);
+  LOCptr->saveData(yytext);
 }
 
-[iI][tT][eE][mM][lL][iI][sS][tT]\ *"["\ *"en-US"\ *"]"\ *"="[ \n]+"{"[^\}]*"};"       {
-  std::string text(yytext);
-  convert_src::mcpImpl->saveItemList(text);
+[iI][tT][eE][mM][lL][iI][sS][tT]\ *"["\ *"en-US"\ *"]"\ *"="[ \t\n]+"{"[^\}]*"};"          |
+[sS][tT][rR][iI][nN][gG][lL][iI][sS][tT]\ *"["\ *"en-US"\ *"]"\ *"="[ \t\n]+"{"[^\}]*"};"  {
+  LOCptr->saveItemList(yytext);
 }
 
 "}"[ ]*";" {
-  std::string text(yytext);
-  convert_src::mcpImpl->popKey(text);
+  LOCptr->popKey(yytext);
 }
 
 .|\n {
-  std::string text(yytext);
-  convert_src::mcpImpl->copyData(text);
+  IMPLptr->collectData(yytext);
 }
 
 %%

@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_po::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -59,49 +59,16 @@
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"<oor:component-data "[^>]*> {
-  std::string text(yytext);
-  convert_po::mcpImpl->pushKeyPart(TAG_COMPONENT, text);
-}
-
-
-"</oor:component-data>" {
-  std::string text(yytext);
-  convert_po::mcpImpl->popKeyPart(TAG_COMPONENT, text);
-}
-
-"<prop oor:name=\""[^\"]*\" {
-  std::string text(yytext);
-  convert_po::mcpImpl->pushKeyPart(TAG_PROP, text);
-}
-
-"</prop>" {
-  std::string text(yytext);
-  convert_po::mcpImpl->popKeyPart(TAG_PROP, text);
-}
-
-"<node oor:name=\""[^\"]*\" {
-  std::string text(yytext);
-  convert_po::mcpImpl->pushKeyPart(TAG_NODE, text);
-}
-
-"</node>" {
-  std::string text(yytext);
-  convert_po::mcpImpl->popKeyPart(TAG_NODE, text);
-}
   
 "<value xml:lang=\""[^\"]*\"[^>]*">" {
-  std::string text(yytext);
-  convert_po::mcpImpl->startCollectData(text);
+  LOCptr->startCollectData(yytext);
 }
 
 "</value>" {
-  std::string text(yytext);
-  convert_po::mcpImpl->stopCollectData(text);
+  LOCptr->stopCollectData(yytext);
 }
 
 .|\n {
-  std::string text(yytext);
-  convert_po::mcpImpl->collectData(text);
+  IMPLptr->collectData(yytext);
 }
 %%

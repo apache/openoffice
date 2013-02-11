@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { convert_hrc::mcpImpl->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
 %}
 
 
@@ -60,28 +60,23 @@
 %%
 
 [fF][iI][xX][eE][dD][lL][iI][nN][eE][^\{]* {
-  std::string text(yytext);
-  convert_hrc::mcpImpl->setKey(text);
+  LOCptr->setKey(yytext);
 }
 
 [rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nM][^\{]* {
-  std::string text(yytext);
-  convert_hrc::mcpImpl->setKey(text);
+  LOCptr->setKey(yytext);
 }
 
 [cC][hH][eE][cC][kK][bB][oO][xX][^\{]* {
-  std::string text(yytext);
-  convert_hrc::mcpImpl->setKey(text);
+  LOCptr->setKey(yytext);
 }
 
 [tT][eE][xX][tT][^\"]*"\""[^\"]*"\";" {
-  std::string text(yytext);
-  convert_hrc::mcpImpl->saveData(text);
+  LOCptr->saveData(yytext);
 }
 
 .|\n {
-  std::string text(yytext);
-  convert_hrc::mcpImpl->copyData(text);
+  IMPLptr->collectData(yytext);
 }
 
 %%

@@ -20,7 +20,7 @@
  *************************************************************/
 #ifndef GCONXRM_HXX
 #define GCONXRM_HXX
-#include "gLang.hxx"
+#include "gCon.hxx"
 
 
 
@@ -33,25 +33,20 @@
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_xrm_impl : public convert_gen
+class convert_xrm : public convert_gen_impl
 {
   public:
-    convert_xrm_impl(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose);
-    ~convert_xrm_impl();
+    convert_xrm(l10nMem& crMemory);
+    ~convert_xrm();
 
     void startCollectData(std::string sType, std::string& sCollectedText);
     void stopCollectData(std::string sType, std::string& sCollectedText);
-    void collectData(std::string& sCollectedText);
 
   private:
-    bool   mbCollectingData;
-    std::string msCollector;
 	std::string msTag;
 	std::string msMergeType;
 
-    void extract();
-    void insert();
-    void runLex();
+    void execute();
 
     friend class convert_xrm;
 };

@@ -20,6 +20,7 @@
  *************************************************************/
 #include <iostream>
 #include "gLang.hxx"
+#include <cstdlib>
 
 
 
@@ -34,19 +35,8 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-handler::handler()
-                : meWorkMode(DO_NONE),
-                  mbVerbose(false)
-{
-  // clear translation memory
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-handler::~handler()
-{
-}
+handler::handler()  {}
+handler::~handler() {}
 
 
 
@@ -67,7 +57,7 @@ void handler::checkCommandLine(int argc, char *argv[])
     sWorkText = argv[1];
 
     if      (sWorkText == "extract")  meWorkMode = DO_EXTRACT;
-    else if (sWorkText == "merge")    meWorkMode = DO_MERGE;
+    else if (sWorkText == "merge")    meWorkMode = DO_EXTRACTMERGE;
     else if (sWorkText == "generate") meWorkMode = DO_GENERATE;
     else if (sWorkText == "insert")   meWorkMode = DO_INSERT;
     else if (sWorkText == "--help")   throw std::string("");
@@ -105,7 +95,7 @@ void handler::checkCommandLine(int argc, char *argv[])
            if (!msSourceFiles.size()) throw std::string("missing source files");
            break;
 
-      case DO_MERGE:
+      case DO_EXTRACTMERGE:
            // required parameters
            if (!msSourceDir.size())   throw std::string("missing -s <source dir>");
            if (!msTargetDir.size())   throw std::string("missing -t <target dir>");
@@ -133,9 +123,6 @@ void handler::checkCommandLine(int argc, char *argv[])
            // not allowed parameters
            if (!msSourceFiles.size()) throw std::string("<source> is invalid with generate");
            break;
-
-      case DO_NONE:
-           throw std::string("unknown mode (1 argument)");
     }
   }
   catch(std::string sErr)
@@ -145,7 +132,7 @@ void handler::checkCommandLine(int argc, char *argv[])
       std::cerr << "commandline error:" << sErr << std::endl;
 
     // give the correct usage
-    std::cout << "genLang (c)2012 by Apache Software Foundation\n"
+    std::cout << "genLang (c)2013 by Apache Software Foundation\n"
             "====================================\n"
             "As part of the L10N framework, genLang extracts and merges translations\n"
             "out of and into the whole source tree.\n\n"
@@ -206,11 +193,10 @@ void handler::run()
     // use workMode to start correct control part
     switch (meWorkMode)
     {
-      case DO_EXTRACT:  runExtract();  break;
-      case DO_MERGE:    runMerge();    break;
-      case DO_GENERATE: runGenerate(); break;
-      case DO_INSERT:   runInsert();   break;
-      case DO_NONE:     throw std::string("INTERNAL ERROR, checkCommandLine not called!!!");
+      case DO_EXTRACT:      runExtractMerge(false); break;
+      case DO_EXTRACTMERGE: runExtractMerge(true);  break;
+      case DO_GENERATE:     runGenerate();          break;
+      case DO_INSERT:       runInsert();            break;
     }
   }
   catch(std::string sErr)
@@ -223,7 +209,7 @@ void handler::run()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void handler::runExtract()
+void handler::runExtractMerge(bool bMerge)
 {
   // prepare translation memory to module type
   mcMemory.setModuleName(msModuleName);
@@ -239,19 +225,12 @@ void handler::runExtract()
     mcMemory.setFileName(*siSource);
 
     // get converter and extract files
-    convert_gen::getConverter(msSourceDir + *siSource, mcMemory, mbVerbose).extract();
+	convert_gen convertObj(msSourceDir + *siSource, mcMemory, bMerge);
+	convertObj.execute();
   }
 
   // and generate language file
   mcMemory.save(msTargetDir + msModuleName);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void handler::runMerge()
-{
-  throw std::string("handler::runMerge not implemented");
 }
 
 

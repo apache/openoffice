@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 #include "gConXcs.hxx"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 
@@ -30,16 +33,24 @@
 
 
 
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_xcs::convert_xcs(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_xcs::~convert_xcs()                                              {}
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
 namespace XcsWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_xcs *)convert_gen_impl::mcImpl)
 #include "gConXcs_yy.c"
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::runLex()
+void convert_xcs::execute()
 {
   // currently no .xcs files generate en-US translation, so stop trying
   XcsWrap::genxcs_lex();
@@ -48,24 +59,24 @@ void convert_xcs_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::setKey(std::string& sCollectedText)
+void convert_xcs::setKey(char *sCollectedText)
 {
   int    nL;
-  std::string sHead;
+  std::string sHead, myText(sCollectedText);
 
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
   msCollector.clear();
 
   // is it to be translated
-  if (sCollectedText.find("oor:localized=") == std::string::npos)
+  if (myText.find("oor:localized=") == std::string::npos)
 	return;
 
   // locate key (is any)
-  nL = sCollectedText.find("oor:name=\"");
+  nL = myText.find("oor:name=\"");
   if (nL == (int)std::string::npos)
 	return;
-  sHead = sCollectedText.substr(nL+10);
+  sHead = myText.substr(nL+10);
   nL    = sHead.find("\"");
   msKey = sHead.substr(0,nL);
 }
@@ -73,8 +84,10 @@ void convert_xcs_impl::setKey(std::string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::unsetKey(std::string& sCollectedText)
+void convert_xcs::unsetKey(char *sText)
 {
+  std::string sCollectedText(sText);
+
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
   msCollector.clear();
@@ -85,8 +98,11 @@ void convert_xcs_impl::unsetKey(std::string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::startCollectData(std::string& sCollectedText)
+void convert_xcs::startCollectData(char *sText)
 {
+  std::string sCollectedText(sText);
+
+
   if (mbMergeMode)
     writeSourceFile(msCollector);
   msCollector.clear();
@@ -98,9 +114,9 @@ void convert_xcs_impl::startCollectData(std::string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::stopCollectData(std::string& sCollectedText)
+void convert_xcs::stopCollectData(char *sInpText)
 {
-  std::string sHead, sKey, sLang, sText;
+  std::string sHead, sKey, sLang, sText, sCollectedText(sInpText);
   int    nL;
 
 
@@ -147,16 +163,3 @@ void convert_xcs_impl::stopCollectData(std::string& sCollectedText)
 
   mbCollectingData = false;
 }  
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs_impl::collectData(std::string& sCollectedText)
-{
-  msCollector += sCollectedText;
-  if (sCollectedText == "\n")
-  {
-	if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
-}

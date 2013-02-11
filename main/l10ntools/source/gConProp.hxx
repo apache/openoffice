@@ -7,7 +7,7 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *  
  *   http://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing,
@@ -18,32 +18,29 @@
  * under the License.
  * 
  *************************************************************/
-#ifndef GCONULF_HXX
-#define GCONULF_HXX
+#ifndef GCONPROP_HXX
+#define GCONPROP_HXX
 #include "gCon.hxx"
 
 
 
 /*****************************************************************************
- *************************   G C O N U L F . H X X   *************************
+ ************************   G C O N P R O P . H X X   ************************
  *****************************************************************************
- * This is the class header for .ulf conversion
+ * This is the class header for .proporties conversion
  *****************************************************************************/
 
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_ulf : public convert_gen_impl
+class convert_prop : public convert_gen_impl
 {
   public:
-    convert_ulf(l10nMem& crMemory);
-    ~convert_ulf();
+    convert_prop(l10nMem& crMemory);
+    ~convert_prop();
 
-	void setKey(char *sCollectedText);
-	void setText(char *sCollectedText);
 
   private:
     void execute();
-	void handleLines();
 };
 #endif

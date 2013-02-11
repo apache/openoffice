@@ -18,7 +18,7 @@
  * under the License.
  * 
  *************************************************************/
-#include "gLang.hxx"
+#include "gConProp.hxx"
 
 
 
@@ -31,32 +31,22 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_properties::convert_properties(const std::string& srSourceFile, l10nMem& crMemory, bool brVerbose)
-                                      : convert_gen(srSourceFile, crMemory, brVerbose)
+convert_prop::convert_prop(l10nMem& crMemory) : convert_gen_impl(crMemory)
 {
-  throw std::string("convert_properties not implemented");
+  throw std::string("convert_prop not implemented");
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_properties::~convert_properties()
+convert_prop::~convert_prop()
 {
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_properties::extract()
+void convert_prop::execute()
 {
-  throw std::string("convert_properties::extract not implemented");
+  throw std::string("convert_prop::execute not implemented");
 }
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_properties::insert()
-{
-  throw std::string("convert_properties::insert not implemented");
-}
-

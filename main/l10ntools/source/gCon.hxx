@@ -7,7 +7,7 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *  
  *   http://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing,
@@ -18,32 +18,62 @@
  * under the License.
  * 
  *************************************************************/
-#ifndef GCONULF_HXX
-#define GCONULF_HXX
-#include "gCon.hxx"
+#ifndef GCON_HXX
+#define GCON_HXX
+#include "gLang.hxx"
 
 
 
 /*****************************************************************************
- *************************   G C O N U L F . H X X   *************************
+ ****************************   G C O N . H X X   ****************************
  *****************************************************************************
- * This is the class header for .ulf conversion
+ * This is the class definition header for all converter classes,
+ * all classes and their interrelations is defined here
  *****************************************************************************/
 
 
 
+/*******************   G L O B A L   D E F I N I T I O N   *******************/
+
+
+
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class convert_ulf : public convert_gen_impl
+class convert_gen_impl
 {
   public:
-    convert_ulf(l10nMem& crMemory);
-    ~convert_ulf();
+    static convert_gen_impl *mcImpl;
 
-	void setKey(char *sCollectedText);
-	void setText(char *sCollectedText);
+
+    convert_gen_impl(l10nMem& crMemory);
+	virtual ~convert_gen_impl();
+
+	// all converters MUST implement this function
+    virtual void execute() = 0;
+
+	// generic variables
+    bool         mbMergeMode;
+    std::string  msSourceFile;
+    l10nMem&     mcMemory;
+
+	// converter help variables
+	bool         mbCollectingData;
+    std::string  msCollector;
+    std::string  msKey;
+
+	// utility functions for converters
+	void lexRead (char *sBuf, int *nResult, int nMax_size);
+    void lineRead(bool *bEof, std::string& line);
+    void writeSourceFile(const std::string& line);
+    void trim(std::string& line);
+	void collectData(char *sCollectedText);
 
   private:
-    void execute();
-	void handleLines();
+    std::string  msSourceBuffer;
+    int          mnSourceReadIndex;
+
+	void prepareFile();
+
+
+	friend class convert_gen;
 };
 #endif

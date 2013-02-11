@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 #include "gConUlf.hxx"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 
 
@@ -31,15 +34,23 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+convert_ulf::convert_ulf(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
+convert_ulf::~convert_ulf()                                              {}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 namespace UlfWrap
 {
+#define IMPLptr convert_gen_impl::mcImpl
+#define LOCptr ((convert_ulf *)convert_gen_impl::mcImpl)
 #include "gConUlf_yy.c"
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf_impl::runLex()
+void convert_ulf::execute()
 {
   UlfWrap::genulf_lex();
 }
@@ -47,8 +58,9 @@ void convert_ulf_impl::runLex()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf_impl::setKey(std::string& sCollectedText)
+void convert_ulf::setKey(char *sText)
 {
+  std::string sCollectedText(sText);
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
   msCollector.clear();
@@ -60,8 +72,9 @@ void convert_ulf_impl::setKey(std::string& sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf_impl::setText(std::string& sCollectedText)
+void convert_ulf::setText(char *sInpText)
 {
+  std::string sCollectedText(sInpText);
   int         nL, nE;
   std::string sText;
 
@@ -96,18 +109,4 @@ void convert_ulf_impl::setText(std::string& sCollectedText)
   }
   else
     mcMemory.setEnUsKey(msKey, msCollector);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf_impl::collectData(std::string& sCollectedText)
-{
-  msCollector += sCollectedText;
-  if (sCollectedText == "\n")
-  {
-	if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
 }

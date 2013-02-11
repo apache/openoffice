@@ -19,6 +19,7 @@
  * 
  *************************************************************/
 #include "gLang.hxx"
+#include <fstream>
 
 
 
@@ -82,7 +83,7 @@ void l10nMem::save(const std::string& srTargetFile)
 	outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
 	           << mcMemory[i].msKey;
 	if (mcMemory[i].miIndex)
-	  outputFile << ":" << mcMemory[i].miIndex;
+	  outputFile << "." << mcMemory[i].miIndex;
 	outputFile << "\t" << mcMemory[i].msLanguage  << "\t"
                << mcMemory[i].msText << std::endl;
   }
