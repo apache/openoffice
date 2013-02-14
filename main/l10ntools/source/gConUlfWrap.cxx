@@ -58,37 +58,29 @@ void convert_ulf::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf::setKey(char *sText)
+void convert_ulf::setKey(char *syyText)
 {
-  std::string sCollectedText(sText);
-  if (mbMergeMode)
-    writeSourceFile(msCollector+sCollectedText);
-  msCollector.clear();
+  std::string sText = copySource(syyText);
 
   // locate key (is any)
-  msKey = sCollectedText.substr(1,sCollectedText.size()-2);
+  msKey = sText.substr(1,sText.size()-2);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf::setText(char *sInpText)
+void convert_ulf::setText(char *syyText)
 {
-  std::string sCollectedText(sInpText);
+  std::string sText = copySource(syyText);
   int         nL, nE;
-  std::string sText;
 
-
-  if (mbMergeMode)
-    writeSourceFile(msCollector+sCollectedText);
-  msCollector.clear();
 
   // isolate text
-  nL = sCollectedText.find("\"");
+  nL = sText.find("\"");
   if (nL == (int)std::string::npos)
 	return;
-  nE = sCollectedText.rfind("\"");
-  sText = sCollectedText.substr(nL+1,nE - nL -1);
+  nE = sText.rfind("\"");
+  sText = sText.substr(nL+1,nE - nL -1);
 
   if (mbMergeMode)
   {
@@ -108,5 +100,5 @@ void convert_ulf::setText(char *sInpText)
     }
   }
   else
-    mcMemory.setEnUsKey(msKey, msCollector);
+    mcMemory.setEnUsKey(msKey, std::string("dummy"), msCollector);
 }

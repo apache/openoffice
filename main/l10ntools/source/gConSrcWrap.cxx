@@ -22,7 +22,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
-
+#include <string.h>
 
 
 /*****************************************************************************
@@ -34,8 +34,13 @@
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_src::convert_src(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
-convert_src::~convert_src()                                              {}
+convert_src::convert_src(l10nMem& crMemory)
+	                    : convert_gen_impl(crMemory),
+						  mbUseIdentifier(false),
+	                      mbDoDefine(false)
+{}
+convert_src::~convert_src()
+{}
 
 
 
@@ -58,81 +63,73 @@ void convert_src::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushKey(char *sInpText)
+void convert_src::pushKey(char *syyText)
 {
-  std::string sKey, sText(sInpText);
-  int    nL, nE;
+  std::string sKey, sText = copySource(syyText);
+  int         nL;
 
-  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sText);
-  msCollector.clear();
-
-  // locate id
-  for (nL = 0; sText[nL] != ' ' && sText[nL] != '\t' && sText[nL] != '\n'; ++nL) ;
-  for (; sText[nL] == ' ' || sText[nL] == '\t'; ++nL) ;
-  for (nE = sText.size()-1; sText[nE] == ' ' || sText[nE] == '\t' || sText[nE] == '\n'; --nE) ;
-  sKey = sText.substr(nL, nE - nL +1);
+  // skip object type and isolate id
+  isolateText(sText,  0, &nL, sKey);
+  isolateText(sText, nL, &nL, sKey);
 
   mcStack.push_back(sKey);
-  mbNoKey = false;
+  mbUseIdentifier = false;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::popKey(char *sInpText)
+void convert_src::popKey(char *syyText)
 {
-  std::string sText(sInpText);
-
-	  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sText);
-  msCollector.clear();
+  copySource(syyText);
 
   // check for correct node/prop relations
   if (mcStack.size())
     mcStack.pop_back();
-  mbNoKey = false;
+  mbUseIdentifier = false;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushNoKey(char *sInpText)
+void convert_src::pushNoKey(char *syyText)
 {
-  std::string sText(sInpText);
-  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sText);
-  msCollector.clear();
-  mbNoKey = true;
+  copySource(syyText);
+
+  mbUseIdentifier = true;
   mcStack.push_back("dummy");
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::registerKey(char *sInpText)
+void convert_src::pushPlaceHolder(char *syyText)
 {
-  std::string sKey, sText(sInpText);
-  int    nL, nE;
+  copySource(syyText);
 
-  // write text for merged
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sText);
-  msCollector.clear();
+  mbUseIdentifier = true;
+  mcStack.push_back("dummy");
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::registerHelpKey(char *syyText)
+{
+  std::string sKey, sText = copySource(syyText);
+  int         nL;
 
   // do we expect a delayed key
-  if (!mbNoKey)
+  if (!mbUseIdentifier)
 	return;
-  mbNoKey = false;
 
-  // locate id
-  for (nL = 0; sText[nL] != '=' && sText[nL] != '\n'; ++nL) ;
-  for (++nL; sText[nL] == ' ' || sText[nL] == '\t'; ++nL) ;
-  for (nE = nL; sText[nE] != ' ' && sText[nE] != '\t' && sText[nE] != '\n' && nE < (int)sText.size(); ++nE) ;
-  sKey = sText.substr(nL, nE - nL);
+  // check if help is alone or before ident
+  if (mcStack.back() != "dummy")
+	return;
+
+  // skip object type and isolate id
+  isolateText(sText,  0, &nL, sKey);
+  isolateText(sText, nL, &nL, sKey);
 
   // put key on stack instead of dummy
   mcStack.pop_back();
@@ -142,29 +139,47 @@ void convert_src::registerKey(char *sInpText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::saveData(char *sInpText)
+void convert_src::registerIdentKey(char *syyText)
 {
-  int    nL, nE;
-  std::string sKey, sUseText, sText(sInpText);
+  std::string sKey, sText = copySource(syyText);
+  int         nL;
 
-  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sText);
-  msCollector.clear();
+  // do we expect a delayed key
+  if (!mbUseIdentifier)
+	return;
+  mbUseIdentifier = false;
+
+  // skip object type and isolate id
+  isolateText(sText,  0, &nL, sKey);
+  isolateText(sText, nL, &nL, sKey);
+
+  // put key on stack instead of dummy
+  mcStack.pop_back();
+  mcStack.push_back(sKey);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::saveData(char *syyText)
+{
+  std::string sObj, sKey, sUseText, sText = copySource(syyText);
+  int         nL;
 
   // Is it a real text
   if (sText.find('\"') == std::string::npos)
 	return;
 
   // locate key and extract it
+  sKey.clear();
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
 	if (mcStack[nL] != "dummy")
-	  sKey += (nL > 0 ? "." : "") + mcStack[nL];
+	  sKey += (sKey.size() ? "." : "") + mcStack[nL];
 
-  // locate id
-  for (nL = 0; sText[nL] != '\"' && nL < (int)sText.size(); ++nL) ;
-  for (nE = sText.size()-1; sText[nE] != '\"' && nE > nL; --nE) ;
-  sUseText = sText.substr(nL+1, nE - nL -1);
+  // skip object type and isolate id
+  isolateText(sText,  0, &nL, sObj);
+  nL = sText.find('\"', nL);
+  isolateText(sText, nL, &nL, sUseText);
 
   if (mbMergeMode)
   {
@@ -181,38 +196,35 @@ void convert_src::saveData(char *sInpText)
     }
   }
   else
-    mcMemory.setEnUsKey(sKey, sUseText);
+    mcMemory.setEnUsKey(sKey, sObj, sUseText);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::saveItemList(char *sInpText)
+void convert_src::saveItemList(char *syyText)
 {
-  int    nL, nE;
-  std::string sKey, sUseText, sText(sInpText);
-
-  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sText);
-  msCollector.clear();
+  std::string sObj, sKey, sUseText, sText = copySource(syyText);
+  int         cnt, nL;
 
   // locate key and extract it
+  sKey.clear();
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
 	if (mcStack[nL] != "dummy")
-	  sKey += (nL > 0 ? "." : "") + mcStack[nL];
+	  sKey += (sKey.size() ? "." : "") + mcStack[nL];
+
+  // Locate object type
+  isolateText(sText,  0, &nL, sObj);
 
   // loop and find all texts
-  for (int cnt = 0, nL = 0; nL < (int)sText.size();)
+  for (cnt = 0, nL = 0; nL < (int)sText.size();)
   {
     // Is it a real text
-	nL = sText.find('\"', nL);
-    if (nL == std::string::npos)
+	nL = sText.find('\"', nL+1);
+    if (nL == (int)std::string::npos)
       break;
-	nE = sText.find('\"', nL+1);
-    sUseText = sText.substr(nL+1,nE-nL-1);
-    nL = nE +1;
-	mcMemory.setEnUsKey(sKey, sUseText, ++cnt);
+    isolateText(sText, nL, &nL, sUseText);
+	mcMemory.setEnUsKey(sKey, sObj, sUseText, ++cnt);
   }
 
   if (mbMergeMode)
@@ -227,6 +239,55 @@ void convert_src::saveItemList(char *sInpText)
       sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
 	             cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
+    }
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::startDefine(char *syyText)
+{
+  std::string sKey, sText = copySource(syyText);
+  int         nL;
+
+  // skip #define and get key
+  isolateText(sText,  1, &nL, sKey);
+  isolateText(sText,  nL, &nL, sKey);
+  mbDoDefine = true;
+
+  // put key on stack
+  mcStack.push_back(sKey);
+
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::collectData(char *syyText)
+{
+  int  nL;
+  bool doMacro;
+
+  msCollector += syyText;
+  nL = msCollector.size()-1;
+  if (msCollector[nL] == '\n')
+  {
+    doMacro = (nL > 1 && msCollector[nL -1] == '\\');
+    if (mbMergeMode)
+      writeSourceFile(msCollector);
+
+  	msCollector.clear();
+
+	// Time to stop macro
+	if (doMacro)
+	  return;
+
+    // drop key and stop macro
+    if (mbDoDefine)
+    {
+      mbDoDefine = false;
+      mcStack.pop_back();
     }
   }
 }

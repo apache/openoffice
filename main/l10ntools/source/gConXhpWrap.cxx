@@ -34,8 +34,18 @@
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xhp::convert_xhp(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
-convert_xhp::~convert_xhp()                                              {}
+convert_xhp::convert_xhp(l10nMem& crMemory)
+	                    : convert_gen_impl(crMemory),
+                          mbCollectingData(false)
+{
+}
+
+
+
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_xhp::~convert_xhp()
+{
+}
 
 
 
@@ -114,7 +124,7 @@ void convert_xhp::stopCollectData(std::string sType, std::string& sCollectedText
     }
   }
   else
-    mcMemory.setEnUsKey(sKey, msCollector);
+    mcMemory.setEnUsKey(sKey, std::string("dummy"), msCollector);
 
   mbCollectingData = false;
   msCollector.clear();

@@ -45,9 +45,8 @@ class convert_xrm : public convert_gen_impl
   private:
 	std::string msTag;
 	std::string msMergeType;
+	bool        mbCollectingData;
 
     void execute();
-
-    friend class convert_xrm;
 };
 #endif

@@ -34,8 +34,18 @@
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xcs::convert_xcs(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
-convert_xcs::~convert_xcs()                                              {}
+convert_xcs::convert_xcs(l10nMem& crMemory)
+	                    : convert_gen_impl(crMemory),
+                          mbCollectingData(false)
+{
+}
+
+
+
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_xcs::~convert_xcs()
+{
+}
 
 
 
@@ -59,24 +69,20 @@ void convert_xcs::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::setKey(char *sCollectedText)
+void convert_xcs::setKey(char *syyText)
 {
   int    nL;
-  std::string sHead, myText(sCollectedText);
-
-  if (mbMergeMode)
-    writeSourceFile(msCollector+sCollectedText);
-  msCollector.clear();
+  std::string sHead, sText = copySource(syyText);
 
   // is it to be translated
-  if (myText.find("oor:localized=") == std::string::npos)
+  if (sText.find("oor:localized=") == std::string::npos)
 	return;
 
   // locate key (is any)
-  nL = myText.find("oor:name=\"");
+  nL = sText.find("oor:name=\"");
   if (nL == (int)std::string::npos)
 	return;
-  sHead = myText.substr(nL+10);
+  sHead = sText.substr(nL+10);
   nL    = sHead.find("\"");
   msKey = sHead.substr(0,nL);
 }
@@ -84,29 +90,17 @@ void convert_xcs::setKey(char *sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::unsetKey(char *sText)
+void convert_xcs::unsetKey(char *syyText)
 {
-  std::string sCollectedText(sText);
-
-  if (mbMergeMode)
-    writeSourceFile(msCollector+sCollectedText);
-  msCollector.clear();
-
-  msKey.clear();
+  copySource(syyText);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::startCollectData(char *sText)
+void convert_xcs::startCollectData(char *syyText)
 {
-  std::string sCollectedText(sText);
-
-
-  if (mbMergeMode)
-    writeSourceFile(msCollector);
-  msCollector.clear();
-
+  copySource(syyText);
   if (!msKey.size())
 	return;
 }
@@ -114,9 +108,9 @@ void convert_xcs::startCollectData(char *sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::stopCollectData(char *sInpText)
+void convert_xcs::stopCollectData(char *syyText)
 {
-  std::string sHead, sKey, sLang, sText, sCollectedText(sInpText);
+  std::string sHead, sKey, sLang, sText, sCollectedText = copySource(syyText, false);
   int    nL;
 
 
@@ -138,6 +132,7 @@ void convert_xcs::stopCollectData(char *sInpText)
   sLang = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
   nL    = msCollector.find(">") +1;
   sText = msCollector.substr(nL, msCollector.find("\"", nL+1) - nL);
+  msCollector.clear();
 
   if (mbMergeMode)
   {
@@ -146,8 +141,6 @@ void convert_xcs::stopCollectData(char *sInpText)
     std::string                   sNewLine;
     nL = cExtraLangauges.size();
 
-    writeSourceFile(msCollector);
-    msCollector.clear();
     for (int i = 0; i < nL; ++i)
     {
       sNewLine = "\n<" + sHead + " id=\"" + sKey + "\"" + " xml:lang=\"" +
@@ -159,7 +152,7 @@ void convert_xcs::stopCollectData(char *sInpText)
     }
   }
   else
-    mcMemory.setEnUsKey(sKey, sText);
+    mcMemory.setEnUsKey(sKey, std::string("dummy"), sText);
 
   mbCollectingData = false;
 }  

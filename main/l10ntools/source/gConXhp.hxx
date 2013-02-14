@@ -45,6 +45,7 @@ class convert_xhp : public convert_gen_impl
   private:
 	std::string msMergeType;
     std::string msTag;
+	bool        mbCollectingData;
 
     void execute();
 };

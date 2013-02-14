@@ -19,7 +19,6 @@
  * 
  *************************************************************/
 #include "gCon.hxx"
-#include "gConHrc.hxx"
 #include "gConPo.hxx"
 #include "gConProp.hxx"
 #include "gConSrc.hxx"
@@ -54,7 +53,7 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, con
 {
   // did the user give a .xxx with the source file ?
   int nInx = srSourceFile.rfind(".");
-  if (nInx == std::string::npos)
+  if (nInx == (int)std::string::npos)
     throw std::string("source file: ")+srSourceFile+" missing extension";
 
   // do we have an old object
@@ -63,7 +62,7 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, con
 
   // find correct conversion class and create correct object
   std::string sExtension = srSourceFile.substr(nInx+1);
-  if      (sExtension == "hrc")        convert_gen_impl::mcImpl = new convert_hrc(crMemory);
+  if      (sExtension == "hrc")        convert_gen_impl::mcImpl = new convert_src(crMemory);
   else if (sExtension == "src")        convert_gen_impl::mcImpl = new convert_src(crMemory);
   else if (sExtension == "po")         convert_gen_impl::mcImpl = new convert_po(crMemory);
   else if (sExtension == "tree")       convert_gen_impl::mcImpl = new convert_tree(crMemory);
@@ -101,8 +100,18 @@ void convert_gen::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen_impl::convert_gen_impl(l10nMem& crMemory) : mcMemory(crMemory) {}
-convert_gen_impl::~convert_gen_impl()                                      {mcImpl = NULL;}
+convert_gen_impl::convert_gen_impl(l10nMem& crMemory)
+	                              : mcMemory(crMemory)
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+convert_gen_impl::~convert_gen_impl()
+{
+  mcImpl = NULL;
+}
 
 
 
@@ -219,10 +228,69 @@ void convert_gen_impl::trim(std::string& sLine)
 void convert_gen_impl::collectData(char *sText)
 {
   msCollector += sText;
-  if (sText == "\n")
+  if (msCollector[msCollector.size()-1] == '\n')
   {
     if (mbMergeMode)
       writeSourceFile(msCollector);
     msCollector.clear();
   }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
+{
+  msCopyText = yyText;
+
+  // write text for merge
+  if (mbMergeMode)
+    writeSourceFile(msCollector + msCopyText);
+
+  if (bDoClear)
+    msCollector.clear();
+
+  return msCopyText;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_gen_impl::isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult)
+{
+  int  iCur;
+
+
+  // Skip initial space
+  for (; sText[iStart] == ' ' || sText[iStart] == '\t' || sText[iStart] == '='; ++iStart) ;
+
+  // time to collecting text or word ?
+  if (sText[iStart] == '\"')
+  {
+    for (iCur = ++iStart; sText[iCur] != '\0'; ++iCur)
+    {
+	  // Escape next char
+	  if (sText[iCur] == '\\')
+	  {
+		++iCur;
+		continue;
+	  }
+	  if (sText[iCur] == '\"')
+		break;
+	}
+	*iEnd = iCur+1;
+  }
+  else
+  {
+    for (iCur = iStart; sText[iCur] != '\0'; ++iCur)
+    {
+	  // Time to stop
+	  if (sText[iCur] == '[' || sText[iCur] == ' ' || sText[iCur] == '\t' || sText[iCur] == '\n')
+		break;
+	}
+	*iEnd = iCur;
+  }
+
+  // Update result
+  sResult = sText.substr(iStart, iCur - iStart);
 }

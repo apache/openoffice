@@ -39,18 +39,23 @@ class convert_src : public convert_gen_impl
     convert_src(l10nMem& crMemory);
     ~convert_src();
     
-    void pushKey(char *sText);
-    void popKey (char *sText);
-    void pushNoKey(char *sText);
-    void registerKey(char *sText);
+    void pushKey(char *syyText);
+    void popKey (char *syyText);
+    void pushNoKey(char *syyText);
+    void pushPlaceHolder(char *syyText);
+    void registerHelpKey(char *syyText);
+    void registerIdentKey(char *syyText);
     
-    void saveData(char *sText);
-    void saveItemList(char *sText);
+    void saveData(char *syyText);
+    void saveItemList(char *syyText);
+	void startDefine(char *syyText);
+	void collectData(char *sCollectedText);
 
   private:
     std::vector<std::string> mcStack;
     std::string         msCollector;
-	bool                mbNoKey;
+	bool                mbUseIdentifier;
+	bool                mbDoDefine;
 
     void execute();
 };

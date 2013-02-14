@@ -44,12 +44,14 @@ class l10nMem_entry
 {
   public:
     l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName, const std::string& srKey,
-                  const std::string& srLanguage,   const std::string& srText,       const int          iIndex);
+                  const std::string& srObjectType, const std::string& srLanguage,   const std::string& srText,
+				  const int          iIndex);
     ~l10nMem_entry();
 
     std::string msSourceFile;
     std::string msModuleName;
     std::string msKey;
+	std::string msObjectType;
     std::string msLanguage;
     std::string msText;
 	int         miIndex;
@@ -70,7 +72,7 @@ class l10nMem
 	void clear();
     void setFileName  (const std::string& srSourceFile);
     void setModuleName(const std::string& srModuleName);
-    void setEnUsKey   (const std::string& srKey, const std::string& srText, int iIndex = 0);
+    void setEnUsKey   (const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex = 0);
     std::vector<l10nMem_entry *>& getLanguagesForKey(const std::string& srKey);
 
   private:

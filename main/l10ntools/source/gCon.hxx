@@ -54,21 +54,20 @@ class convert_gen_impl
     bool         mbMergeMode;
     std::string  msSourceFile;
     l10nMem&     mcMemory;
-
-	// converter help variables
-	bool         mbCollectingData;
     std::string  msCollector;
-    std::string  msKey;
+
 
 	// utility functions for converters
 	void lexRead (char *sBuf, int *nResult, int nMax_size);
     void lineRead(bool *bEof, std::string& line);
     void writeSourceFile(const std::string& line);
     void trim(std::string& line);
-	void collectData(char *sCollectedText);
+	virtual void collectData(char *sCollectedText);
+	std::string& copySource(char *yyText, bool bDoClear = true);
+	void isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult);
 
-  private:
-    std::string  msSourceBuffer;
+private:
+    std::string  msSourceBuffer, msCopyText;
     int          mnSourceReadIndex;
 
 	void prepareFile();

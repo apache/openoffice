@@ -39,10 +39,13 @@ class convert_ulf : public convert_gen_impl
     convert_ulf(l10nMem& crMemory);
     ~convert_ulf();
 
-	void setKey(char *sCollectedText);
-	void setText(char *sCollectedText);
+	void setKey(char *syyText);
+	void setText(char *syyText);
 
   private:
+	std::string msKey;
+
+
     void execute();
 	void handleLines();
 };

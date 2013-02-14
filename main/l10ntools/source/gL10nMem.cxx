@@ -34,11 +34,13 @@
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem_entry::l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName,
-                             const std::string& srKey,        const std::string& srLanguage,
-                             const std::string& srText,       const int iIndex)
+                             const std::string& srKey,        const std::string& srObjectType, 
+							 const std::string& srLanguage,   const std::string& srText,
+							 const int iIndex)
                             : msSourceFile(srSourceFile),
                               msModuleName(srModuleName),
                               msKey(srKey),
+							  msObjectType(srObjectType),
                               msLanguage(srLanguage),
                               msText(srText),
 							  miIndex(iIndex)
@@ -84,7 +86,7 @@ void l10nMem::save(const std::string& srTargetFile)
 	           << mcMemory[i].msKey;
 	if (mcMemory[i].miIndex)
 	  outputFile << "." << mcMemory[i].miIndex;
-	outputFile << "\t" << mcMemory[i].msLanguage  << "\t"
+	outputFile << "." << mcMemory[i].msObjectType << "\t" << mcMemory[i].msLanguage  << "\t"
                << mcMemory[i].msText << std::endl;
   }
   // JIX
@@ -118,11 +120,11 @@ void l10nMem::setModuleName(const std::string& srModuleName)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setEnUsKey(const std::string& srKey, const std::string& srText, int iIndex)
+void l10nMem::setEnUsKey(const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex)
 {
   std::string baseLanguage = "en-US";
   mcMemory.push_back(l10nMem_entry(msCurrentSourceFileName, msCurrentModuleName,
-                                   srKey, baseLanguage, srText, iIndex));
+                                   srKey, srObjectType, baseLanguage, srText, iIndex));
 }
 
 
@@ -133,9 +135,10 @@ std::vector<l10nMem_entry *>&  l10nMem::getLanguagesForKey(const std::string& sr
   int nL = mcMemory.size();
 
   mcCurrentSelection.clear();
-  for (int i = 0; i < nL; ++i)
-    if (mcMemory[i].msLanguage != "en-US")
-      mcCurrentSelection.push_back(&mcMemory[i]);
+  if (srKey.size())
+    for (int i = 0; i < nL; ++i)
+      if (mcMemory[i].msLanguage != "en-US")
+        mcCurrentSelection.push_back(&mcMemory[i]);
 
   return mcCurrentSelection;
 }

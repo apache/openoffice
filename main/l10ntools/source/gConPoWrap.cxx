@@ -58,22 +58,19 @@ void convert_po::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::startCollectData(char *sText)
+void convert_po::startCollectData(char *syyText)
 {
-  std::string sCollectedText(sText);
-  if (mbMergeMode && msCollector.size())
-    writeSourceFile(msCollector);
+  std::string sCollectedText = copySource(syyText);
 
-  mbCollectingData = true;
-  msCollector.clear();
+//  mbCollectingData = true;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::stopCollectData(char *sText)
+void convert_po::stopCollectData(char *syyText)
 {
-  std::string sCollectedText(sText);
+  std::string sCollectedText = copySource(syyText);
   std::string useKey;
 
 
@@ -94,8 +91,8 @@ void convert_po::stopCollectData(char *sText)
     }
   }
   else
-    mcMemory.setEnUsKey(useKey, sCollectedText);
+    mcMemory.setEnUsKey(useKey, std::string("dummy"), sCollectedText);
 
-  mbCollectingData = false;
+//  mbCollectingData = false;
   msCollector.clear();
 }  

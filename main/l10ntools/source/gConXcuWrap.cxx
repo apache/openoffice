@@ -33,8 +33,18 @@
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_xcu::convert_xcu(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
-convert_xcu::~convert_xcu()                                              {}
+convert_xcu::convert_xcu(l10nMem& crMemory)
+	                    : convert_gen_impl(crMemory),
+                          mbCollectingData(false)
+{
+}
+
+
+
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_xcu::~convert_xcu()
+{
+}
 
 
 
@@ -57,41 +67,32 @@ void convert_xcu::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *sTag)
+void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText)
 {
-  std::string sKey, myTag(sTag);
+  std::string sKey, sTag = copySource(syyText);
   int    nL, nE;
 
-
-  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sTag);
-  msCollector.clear();
-
   // find key in tag
-  nL = myTag.find("oor:name=\"");
+  nL = sTag.find("oor:name=\"");
   if (nL == (int)std::string::npos)
 	return;
 
   // find end of key
   nL += 10;
-  nE = myTag.find("\"", nL);
+  nE = sTag.find("\"", nL);
   if (nE == (int)std::string::npos)
 	return;
 
-  sKey = myTag.substr(nL, nE - nL);
+  sKey = sTag.substr(nL, nE - nL);
   mcStack.push_back(sKey);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *sTag)
+void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText)
 {
-  // write text for merge
-  if (mbMergeMode)
-    writeSourceFile(msCollector + sTag);
-  msCollector.clear();
+  copySource(syyText);
 
   // check for correct node/prop relations
   if (mcStack.size())
@@ -101,11 +102,9 @@ void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *sTag)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::startCollectData(char *sCollectedText)
+void convert_xcu::startCollectData(char *syyText)
 {
-  if (mbMergeMode)
-    writeSourceFile(msCollector+sCollectedText);
-  msCollector.clear();
+  copySource(syyText);
 
   mbCollectingData = true;
 }
@@ -113,10 +112,12 @@ void convert_xcu::startCollectData(char *sCollectedText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::stopCollectData(char *sCollectedText)
+void convert_xcu::stopCollectData(char *syyText)
 {
   int    nL;
   std::string useKey;
+
+  copySource(syyText);
 
   // time to do something ?
   if (!mbCollectingData)
@@ -129,8 +130,6 @@ void convert_xcu::stopCollectData(char *sCollectedText)
 
   if (mbMergeMode)
   {
-	writeSourceFile(msCollector + sCollectedText);
-
     // get all languages (includes en-US)
     std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
     std::string                   sNewLine;
@@ -144,7 +143,5 @@ void convert_xcu::stopCollectData(char *sCollectedText)
     }
   }
   else
-    mcMemory.setEnUsKey(useKey, msCollector);
-
-  msCollector.clear();
+    mcMemory.setEnUsKey(useKey, std::string("dummy"), msCollector);
 }  
