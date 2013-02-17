@@ -55,6 +55,7 @@ class convert_gen_impl
     std::string  msSourceFile;
     l10nMem&     mcMemory;
     std::string  msCollector;
+	int          miLineNo;
 
 
 	// utility functions for converters
@@ -62,9 +63,9 @@ class convert_gen_impl
     void lineRead(bool *bEof, std::string& line);
     void writeSourceFile(const std::string& line);
     void trim(std::string& line);
-	virtual void collectData(char *sCollectedText);
-	std::string& copySource(char *yyText, bool bDoClear = true);
-	void isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult);
+	virtual void collectData(char *sCollectedText, int iLineNo);
+	std::string& copySource(char *yyText, int iLineNo, bool bDoClear = true);
+	void isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult, bool bEOL = false);
 
 private:
     std::string  msSourceBuffer, msCopyText;

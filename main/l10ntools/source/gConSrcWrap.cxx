@@ -63,14 +63,14 @@ void convert_src::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushKey(char *syyText)
+void convert_src::pushKey(char *syyText, int iLineno)
 {
-  std::string sKey, sText = copySource(syyText);
+  std::string sKey, sText = copySource(syyText, iLineno);
   int         nL;
 
   // skip object type and isolate id
   isolateText(sText,  0, &nL, sKey);
-  isolateText(sText, nL, &nL, sKey);
+  isolateText(sText, nL, &nL, sKey, true);
 
   mcStack.push_back(sKey);
   mbUseIdentifier = false;
@@ -79,9 +79,9 @@ void convert_src::pushKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::popKey(char *syyText)
+void convert_src::popKey(char *syyText, int iLineno)
 {
-  copySource(syyText);
+  copySource(syyText, iLineno);
 
   // check for correct node/prop relations
   if (mcStack.size())
@@ -92,9 +92,9 @@ void convert_src::popKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushNoKey(char *syyText)
+void convert_src::pushNoKey(char *syyText, int iLineno)
 {
-  copySource(syyText);
+  copySource(syyText, iLineno);
 
   mbUseIdentifier = true;
   mcStack.push_back("dummy");
@@ -103,9 +103,9 @@ void convert_src::pushNoKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushPlaceHolder(char *syyText)
+void convert_src::pushPlaceHolder(char *syyText, int iLineno)
 {
-  copySource(syyText);
+  copySource(syyText, iLineno);
 
   mbUseIdentifier = true;
   mcStack.push_back("dummy");
@@ -114,9 +114,9 @@ void convert_src::pushPlaceHolder(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::registerHelpKey(char *syyText)
+void convert_src::registerHelpKey(char *syyText, int iLineno)
 {
-  std::string sKey, sText = copySource(syyText);
+  std::string sKey, sText = copySource(syyText, iLineno);
   int         nL;
 
   // do we expect a delayed key
@@ -139,9 +139,9 @@ void convert_src::registerHelpKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::registerIdentKey(char *syyText)
+void convert_src::registerIdentKey(char *syyText, int iLineno)
 {
-  std::string sKey, sText = copySource(syyText);
+  std::string sKey, sText = copySource(syyText, iLineno);
   int         nL;
 
   // do we expect a delayed key
@@ -161,9 +161,9 @@ void convert_src::registerIdentKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::saveData(char *syyText)
+void convert_src::saveData(char *syyText, int iLineno)
 {
-  std::string sObj, sKey, sUseText, sText = copySource(syyText);
+  std::string sObj, sKey, sUseText, sText = copySource(syyText, iLineno);
   int         nL;
 
   // Is it a real text
@@ -202,9 +202,9 @@ void convert_src::saveData(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::saveItemList(char *syyText)
+void convert_src::saveItemList(char *syyText, int iLineno)
 {
-  std::string sObj, sKey, sUseText, sText = copySource(syyText);
+  std::string sObj, sKey, sUseText, sText = copySource(syyText, iLineno);
   int         cnt, nL;
 
   // locate key and extract it
@@ -246,9 +246,9 @@ void convert_src::saveItemList(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::startDefine(char *syyText)
+void convert_src::startDefine(char *syyText, int iLineno)
 {
-  std::string sKey, sText = copySource(syyText);
+  std::string sKey, sText = copySource(syyText, iLineno);
   int         nL;
 
   // skip #define and get key
@@ -264,7 +264,7 @@ void convert_src::startDefine(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::collectData(char *syyText)
+void convert_src::collectData(char *syyText, int iLineno)
 {
   int  nL;
   bool doMacro;

@@ -67,7 +67,7 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, con
   else if (sExtension == "po")         convert_gen_impl::mcImpl = new convert_po(crMemory);
   else if (sExtension == "tree")       convert_gen_impl::mcImpl = new convert_tree(crMemory);
   else if (sExtension == "ulf")        convert_gen_impl::mcImpl = new convert_ulf(crMemory);
-  else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcs(crMemory);
+  else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcu(crMemory);
   else if (sExtension == "xhp")        convert_gen_impl::mcImpl = new convert_xhp(crMemory);
   else if (sExtension == "properties") convert_gen_impl::mcImpl = new convert_prop(crMemory);
   else throw std::string("unknown extension on source file: ")+srSourceFile;
@@ -225,8 +225,9 @@ void convert_gen_impl::trim(std::string& sLine)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen_impl::collectData(char *sText)
+void convert_gen_impl::collectData(char *sText, int iLineNo)
 {
+  miLineNo     = iLineNo;
   msCollector += sText;
   if (msCollector[msCollector.size()-1] == '\n')
   {
@@ -239,8 +240,11 @@ void convert_gen_impl::collectData(char *sText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
+std::string& convert_gen_impl::copySource(char *yyText, int iLineNo, bool bDoClear)
 {
+  int nL;
+
+
   msCopyText = yyText;
 
   // write text for merge
@@ -250,13 +254,23 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
   if (bDoClear)
     msCollector.clear();
 
+  // remove any CR
+  for (;;)
+  {
+	nL = msCopyText.find("\r");
+	if (nL == (int)std::string::npos)
+	  break;
+
+	msCopyText.erase(nL, 1);
+  }
+
   return msCopyText;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen_impl::isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult)
+void convert_gen_impl::isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult, bool bEOL)
 {
   int  iCur;
 
@@ -285,8 +299,19 @@ void convert_gen_impl::isolateText(std::string& sText, int iStart, int *iEnd, st
     for (iCur = iStart; sText[iCur] != '\0'; ++iCur)
     {
 	  // Time to stop
-	  if (sText[iCur] == '[' || sText[iCur] == ' ' || sText[iCur] == '\t' || sText[iCur] == '\n')
-		break;
+      if (bEOL)
+	  {
+	    if (sText[iCur] == '\n')
+		{
+		  if (sText[iCur-1] == '\\')
+			--iCur;
+		  for (; sText[iCur-1] == ' ' || sText[iCur-1] == '\t'; --iCur) ;
+		  break;
+		}
+	  }
+	  else
+	    if (sText[iCur] == '[' || sText[iCur] == ' ' || sText[iCur] == '\t' || sText[iCur] == '\n')
+		  break;
 	}
 	*iEnd = iCur;
   }

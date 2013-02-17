@@ -60,14 +60,14 @@
 %%
 
 "["[^\]]*"]" {
-  LOCptr->setKey(yytext);
+  LOCptr->setKey(yytext, genulf_lineno);
 }
 
 "en-US"[ ]*"="[^\n]* {
-  LOCptr->setText(yytext);
+  LOCptr->setText(yytext, genulf_lineno);
 }
   
 .|\n {
-  IMPLptr->collectData(yytext);
+  IMPLptr->collectData(yytext, genulf_lineno);
 }
 %%

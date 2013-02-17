@@ -39,17 +39,17 @@ class convert_src : public convert_gen_impl
     convert_src(l10nMem& crMemory);
     ~convert_src();
     
-    void pushKey(char *syyText);
-    void popKey (char *syyText);
-    void pushNoKey(char *syyText);
-    void pushPlaceHolder(char *syyText);
-    void registerHelpKey(char *syyText);
-    void registerIdentKey(char *syyText);
+    void pushKey(char *syyText, int iLineNo);
+    void popKey (char *syyText, int iLineNo);
+    void pushNoKey(char *syyText, int iLineNo);
+    void pushPlaceHolder(char *syyTex, int iLineNot);
+    void registerHelpKey(char *syyText, int iLineNo);
+    void registerIdentKey(char *syyText, int iLineNo);
     
-    void saveData(char *syyText);
-    void saveItemList(char *syyText);
-	void startDefine(char *syyText);
-	void collectData(char *sCollectedText);
+    void saveData(char *syyText, int iLineNo);
+    void saveItemList(char *syyText, int iLineNo);
+	void startDefine(char *syyText, int iLineNo);
+	void collectData(char *sCollectedText, int iLineNo);
 
   private:
     std::vector<std::string> mcStack;

@@ -67,9 +67,9 @@ void convert_xcu::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText)
+void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText, int iLineno)
 {
-  std::string sKey, sTag = copySource(syyText);
+  std::string sKey, sTag = copySource(syyText, iLineno);
   int    nL, nE;
 
   // find key in tag
@@ -90,9 +90,9 @@ void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText)
+void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText, int iLineno)
 {
-  copySource(syyText);
+  copySource(syyText, iLineno);
 
   // check for correct node/prop relations
   if (mcStack.size())
@@ -102,9 +102,14 @@ void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::startCollectData(char *syyText)
+void convert_xcu::startCollectData(char *syyText, int iLineno)
 {
-  copySource(syyText);
+  int nL;
+  std::string sTag = copySource(syyText, iLineno);
+
+  // locate object name
+  for (nL = 1; sTag[nL] != ' '; ++nL) ;
+  msObj = sTag.substr(1,nL-1);
 
   mbCollectingData = true;
 }
@@ -112,12 +117,12 @@ void convert_xcu::startCollectData(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::stopCollectData(char *syyText)
+void convert_xcu::stopCollectData(char *syyText, int iLineno)
 {
   int    nL;
-  std::string useKey;
-
-  copySource(syyText);
+  std::string useKey, useText = msCollector;
+  
+  copySource(syyText, iLineno);
 
   // time to do something ?
   if (!mbCollectingData)
@@ -127,7 +132,7 @@ void convert_xcu::stopCollectData(char *syyText)
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
 	useKey += (nL > 0 ? "." : "") + mcStack[nL];
-
+  
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
@@ -143,5 +148,5 @@ void convert_xcu::stopCollectData(char *syyText)
     }
   }
   else
-    mcMemory.setEnUsKey(useKey, std::string("dummy"), msCollector);
+    mcMemory.setEnUsKey(useKey, msObj, useText);
 }  

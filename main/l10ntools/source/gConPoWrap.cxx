@@ -58,9 +58,9 @@ void convert_po::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::startCollectData(char *syyText)
+void convert_po::startCollectData(char *syyText, int iLineno)
 {
-  std::string sCollectedText = copySource(syyText);
+  std::string sCollectedText = copySource(syyText, iLineno);
 
 //  mbCollectingData = true;
 }
@@ -68,9 +68,9 @@ void convert_po::startCollectData(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::stopCollectData(char *syyText)
+void convert_po::stopCollectData(char *syyText, int iLineno)
 {
-  std::string sCollectedText = copySource(syyText);
+  std::string sCollectedText = copySource(syyText, iLineno);
   std::string useKey;
 
 

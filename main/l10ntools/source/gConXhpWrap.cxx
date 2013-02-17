@@ -70,7 +70,7 @@ void convert_xhp::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp::startCollectData(std::string sType, std::string& sCollectedText)
+void convert_xhp::startCollectData(std::string sType, std::string& sCollectedText, int iLineno)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -88,7 +88,7 @@ void convert_xhp::startCollectData(std::string sType, std::string& sCollectedTex
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp::stopCollectData(std::string sType, std::string& sCollectedText)
+void convert_xhp::stopCollectData(std::string sType, std::string& sCollectedText, int iLineno)
 {
   std::string sKey;
   int    nL;

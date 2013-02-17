@@ -39,8 +39,8 @@ class convert_po : public convert_gen_impl
     convert_po(l10nMem& crMemory);
     ~convert_po();
 
-    void startCollectData(char *syyText);
-    void stopCollectData(char *syyText);
+    void startCollectData(char *syyText, int iLineNo);
+    void stopCollectData(char *syyText, int iLineNo);
 
   private:
     void execute();

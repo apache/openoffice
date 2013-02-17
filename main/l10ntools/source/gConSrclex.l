@@ -58,111 +58,123 @@
 /***********************   H E L P E R   M A C R O S   ***********************/
 IDENT        [a-zA-Z0-9_]
 PRE          ^[ \t]*
-KEYPART      [ \t]+{IDENT}+[^\{]*"{"
+KEYPART      [ \t]+{IDENT}+(.|\n)*"{"
 NOKEYPART    ([ \t\n]+|[ \t\n]*"="[ \t\n]*)"{" 
 REGKEYPART   [ \t]*"="[ \t]*[a-zA-Z\"]+[^;]*
 GENSAVEPART  [ \t]*"["[ \t]*"en-US"[ \t]*"]"[ \t]*"="
-SAVEKEYPART  {GENSAVEPART}[^\n]*
-SAVEITEMPART {GENSAVEPART}[ \t\n]*[\\]*"\n"[ \t]*"{"[^\}]*"};"
+SAVEKEYPART  {GENSAVEPART}[^\n]*"\n"
+SAVEITEMPART {GENSAVEPART}[ \t]*[\\]*"\n"[ \t]*"{"[^\}]*"};"
 
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
 
-{PRE}[bB][iI][tT][mM][aA][pP]{KEYPART}                                  |
-{PRE}[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]{KEYPART}              |
-{PRE}[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]{KEYPART}          |
-{PRE}[cC][hH][eE][cC][kK][bB][oO][xX]{KEYPART}                          |
-{PRE}[cC][oO][nN][tT][rR][oO][lL]{KEYPART}                              |
-{PRE}[cC][oO][mM][bB][oO][bB][oO][xX]{KEYPART}                          |
-{PRE}[eE][dD][iI][tT]{KEYPART}                                          |
-{PRE}[eE][rR][rR][oO][rR][bB][oO][xX]{KEYPART}                          |
-{PRE}[fF][iI][xX][eE][dD][tT][eE][xX][tT]{KEYPART}                      |
-{PRE}[fF][iI][xX][eE][dD][lL][iI][nN][eE]{KEYPART}                      |
-{PRE}[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]{KEYPART}  |
-{PRE}[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]{KEYPART}                  |
-{PRE}[iI][dD][lL][iI][sS][tT]{KEYPART}                                  |
-{PRE}[iI][mM][aA][gG][eE]{KEYPART}                                      |
-{PRE}[iI][mM][aA][gG][eE][lL][iI][sS][tT]{KEYPART}                      |
-{PRE}[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]{KEYPART}              |
-{PRE}[iI][tT][eE][mM][lL][iI][sS][tT]{KEYPART}                          |
-{PRE}[lL][iI][sS][tT][bB][oO][xX]{KEYPART}                              |
-{PRE}[mM][eE][nN][uU]{KEYPART}                                          |
-{PRE}[mM][eE][nN][uU][iI][tT][eE][mM]{KEYPART}                          |
-{PRE}[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]{KEYPART}              |
-{PRE}[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]{KEYPART}              |
-{PRE}[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]{KEYPART}      |
-{PRE}[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]{KEYPART}          |
-{PRE}[oO][kK][bB][uU][tT][tT][oO][nN]{KEYPART}                          |
-{PRE}[pP][aA][gG][eE][iI][tT][eE][mM]{KEYPART}                          |
-{PRE}[pP][aA][gG][eE][lL][iI][sS][tT]{KEYPART}                          |
-{PRE}[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]{KEYPART}                  |
-{PRE}[qQ][uU][eE][rR][yY][bB][oO][xX]{KEYPART}                          |
-{PRE}[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{KEYPART}              |
-{PRE}[rR][eE][sS][oO][uU][rR][cC][eE]{KEYPART}                          |
-{PRE}[sS][pP][iI][nN][fF][iI][eE][lL][dD]{KEYPART}                      |
-{PRE}[sS][tT][rR][iI][nN][gG]{KEYPART}                                  |
-{PRE}[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]{KEYPART}              |
-{PRE}[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]{KEYPART}                  |
-{PRE}[tT][aA][bB][dD][iI][aA][lL][oO][gG]{KEYPART}                      |
-{PRE}[tT][aA][bB][pP][aA][gG][eE]{KEYPART}                              |
-{PRE}[tT][oO][oO][lL][bB][oO][xX]{KEYPART}                              |
-{PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{KEYPART}              |
-{PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{KEYPART}              {
-  LOCptr->pushKey(yytext);
+{PRE}[bB][iI][tT][mM][aA][pP]{KEYPART}                                          |
+{PRE}[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]{KEYPART}                      |
+{PRE}[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]{KEYPART}                  |
+{PRE}[cC][hH][eE][cC][kK][bB][oO][xX]{KEYPART}                                  |
+{PRE}[cC][oO][nN][tT][rR][oO][lL]{KEYPART}                                      |
+{PRE}[cC][oO][mM][bB][oO][bB][oO][xX]{KEYPART}                                  |
+{PRE}[eE][dD][iI][tT]{KEYPART}                                                  |
+{PRE}[eE][rR][rR][oO][rR][bB][oO][xX]{KEYPART}                                  |
+{PRE}[fF][iI][xX][eE][dD][tT][eE][xX][tT]{KEYPART}                              |
+{PRE}[fF][iI][xX][eE][dD][lL][iI][nN][eE]{KEYPART}                              |
+{PRE}[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]{KEYPART}          |
+{PRE}[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]{KEYPART}                          |
+{PRE}[iI][dD][lL][iI][sS][tT]{KEYPART}                                          |
+{PRE}[iI][mM][aA][gG][eE]{KEYPART}                                              |
+{PRE}[iI][mM][aA][gG][eE][lL][iI][sS][tT]{KEYPART}                              |
+{PRE}[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]{KEYPART}                      |
+{PRE}[iI][mM][aA][gG][eE][rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{KEYPART}  |
+{PRE}[iI][nN][fF][oO][bB][oO][xX]{KEYPART}                                      |
+{PRE}[iI][tT][eE][mM][lL][iI][sS][tT]{KEYPART}                                  |
+{PRE}[lL][iI][sS][tT][bB][oO][xX]{KEYPART}                                      |
+{PRE}[mM][eE][nN][uU]{KEYPART}                                                  |
+{PRE}[mM][eE][nN][uU][bB][uU][tT][tT][oO][nN]{KEYPART}                          |
+{PRE}[mM][eE][nN][uU][iI][tT][eE][mM]{KEYPART}                                  |
+{PRE}[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]{KEYPART}                      |
+{PRE}[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]{KEYPART}                      |
+{PRE}[mM][oO][dD][eE][lL][eE][sS][sS][dD][iI][aA][lL][oO][gG]{KEYPART}          |
+{PRE}[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]{KEYPART}              |
+{PRE}[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]{KEYPART}                  |
+{PRE}[oO][kK][bB][uU][tT][tT][oO][nN]{KEYPART}                                  |
+{PRE}[pP][aA][gG][eE][iI][tT][eE][mM]{KEYPART}                                  |
+{PRE}[pP][aA][gG][eE][lL][iI][sS][tT]{KEYPART}                                  |
+{PRE}[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]{KEYPART}                          |
+{PRE}[qQ][uU][eE][rR][yY][bB][oO][xX]{KEYPART}                                  |
+{PRE}[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{KEYPART}                      |
+{PRE}[rR][eE][sS][oO][uU][rR][cC][eE]{KEYPART}                                  |
+{PRE}[sS][pP][iI][nN][fF][iI][eE][lL][dD]{KEYPART}                              |
+{PRE}[sS][tT][rR][iI][nN][gG]{KEYPART}                                          |
+{PRE}[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]{KEYPART}                      |
+{PRE}[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]{KEYPART}                          |
+{PRE}[tT][aA][bB][dD][iI][aA][lL][oO][gG]{KEYPART}                              |
+{PRE}[tT][aA][bB][pP][aA][gG][eE]{KEYPART}                                      |
+{PRE}[tT][oO][oO][lL][bB][oO][xX]{KEYPART}                                      |
+{PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{KEYPART}                      |
+{PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{KEYPART}                      |
+{PRE}[wW][aA][rR][nN][iI][nN][gG][bB][oO][xX]{KEYPART}                          |
+{PRE}[wW][iI][nN][dD][oO][wW]{KEYPART}                                          {
+  LOCptr->pushKey(yytext, genSrc_lineno);
 }
 
 
 
-{PRE}[bB][iI][tT][mM][aA][pP]{NOKEYPART}                                  |   
-{PRE}[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]{NOKEYPART}              |
-{PRE}[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]{NOKEYPART}          |
-{PRE}[cC][hH][eE][cC][kK][bB][oO][xX]{NOKEYPART}                          |
-{PRE}[cC][oO][nN][tT][rR][oO][lL]{NOKEYPART}                              |
-{PRE}[cC][oO][mM][bB][oO][bB][oO][xX]{NOKEYPART}                          |
-{PRE}[eE][dD][iI][tT]{NOKEYPART}                                          |
-{PRE}[eE][rR][rR][oO][rR][bB][oO][xX]{NOKEYPART}                          |
-{PRE}[fF][iI][xX][eE][dD][tT][eE][xX][tT]{NOKEYPART}                      |
-{PRE}[fF][iI][xX][eE][dD][lL][iI][nN][eE]{NOKEYPART}                      |
-{PRE}[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]{NOKEYPART}  |
-{PRE}[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]{NOKEYPART}                  |
-{PRE}[iI][dD][lL][iI][sS][tT]{NOKEYPART}                                  |
-{PRE}[iI][mM][aA][gG][eE]{NOKEYPART}                                      |
-{PRE}[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]{NOKEYPART}              |
-{PRE}[iI][mM][aA][gG][eE][lL][iI][sS][tT]{NOKEYPART}                      |
-{PRE}[iI][tT][eE][mM][lL][iI][sS][tT]{NOKEYPART}                          |
-{PRE}[lL][iI][sS][tT][bB][oO][xX]{NOKEYPART}                              |
-{PRE}[mM][eE][nN][uU]{NOKEYPART}                                          |
-{PRE}[mM][eE][nN][uU][iI][tT][eE][mM]{NOKEYPART}                          |
-{PRE}[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]{NOKEYPART}              |
-{PRE}[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]{NOKEYPART}              |
-{PRE}[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]{NOKEYPART}      |
-{PRE}[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]{NOKEYPART}          |
-{PRE}[oO][kK][bB][uU][tT][tT][oO][nN]{NOKEYPART}                          |
-{PRE}[pP][aA][gG][eE][iI][tT][eE][mM]{NOKEYPART}                          |
-{PRE}[pP][aA][gG][eE][lL][iI][sS][tT]{NOKEYPART}                          |
-{PRE}[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]{NOKEYPART}                  |
-{PRE}[qQ][uU][eE][rR][yY][bB][oO][xX]{NOKEYPART}                          |
-{PRE}[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{NOKEYPART}              |
-{PRE}[rR][eE][sS][oO][uU][rR][cC][eE]{NOKEYPART}                          |
-{PRE}[sS][pP][iI][nN][fF][iI][eE][lL][dD]{NOKEYPART}                      |
-{PRE}[sS][tT][rR][iI][nN][gG]{NOKEYPART}                                  |
-{PRE}[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]{NOKEYPART}              |
-{PRE}[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]{NOKEYPART}                  |
-{PRE}[tT][aA][bB][dD][iI][aA][lL][oO][gG]{NOKEYPART}                      |
-{PRE}[tT][aA][bB][pP][aA][gG][eE]{NOKEYPART}                              |
-{PRE}[tT][oO][oO][lL][bB][oO][xX]{NOKEYPART}                              |
-{PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{NOKEYPART}              |
-{PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{NOKEYPART}              {
-  LOCptr->pushNoKey(yytext);
+{PRE}[bB][iI][tT][mM][aA][pP]{NOKEYPART}                                          |   
+{PRE}[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]{NOKEYPART}                      |
+{PRE}[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]{NOKEYPART}                  |
+{PRE}[cC][hH][eE][cC][kK][bB][oO][xX]{NOKEYPART}                                  |
+{PRE}[cC][oO][nN][tT][rR][oO][lL]{NOKEYPART}                                      |
+{PRE}[cC][oO][mM][bB][oO][bB][oO][xX]{NOKEYPART}                                  |
+{PRE}[eE][dD][iI][tT]{NOKEYPART}                                                  |
+{PRE}[eE][rR][rR][oO][rR][bB][oO][xX]{NOKEYPART}                                  |
+{PRE}[fF][iI][xX][eE][dD][tT][eE][xX][tT]{NOKEYPART}                              |
+{PRE}[fF][iI][xX][eE][dD][lL][iI][nN][eE]{NOKEYPART}                              |
+{PRE}[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]{NOKEYPART}          |
+{PRE}[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]{NOKEYPART}                          |
+{PRE}[iI][dD][lL][iI][sS][tT]{NOKEYPART}                                          |
+{PRE}[iI][mM][aA][gG][eE]{NOKEYPART}                                              |
+{PRE}[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]{NOKEYPART}                      |
+{PRE}[iI][mM][aA][gG][eE][rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{NOKEYPART}  |
+{PRE}[iI][mM][aA][gG][eE][lL][iI][sS][tT]{NOKEYPART}                              |
+{PRE}[iI][nN][fF][oO][bB][oO][xX]{NOKEYPART}                                      |
+{PRE}[iI][tT][eE][mM][lL][iI][sS][tT]{NOKEYPART}                                  |
+{PRE}[lL][iI][sS][tT][bB][oO][xX]{NOKEYPART}                                      |
+{PRE}[mM][eE][nN][uU]{NOKEYPART}                                                  |
+{PRE}[mM][eE][nN][uU][bB][uU][tT][tT][oO][nN]{NOKEYPART}                          |
+{PRE}[mM][eE][nN][uU][iI][tT][eE][mM]{NOKEYPART}                                  |
+{PRE}[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]{NOKEYPART}                      |
+{PRE}[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]{NOKEYPART}                      |
+{PRE}[mM][oO][dD][eE][lL][eE][sS][sS][dD][iI][aA][lL][oO][gG]{NOKEYPART}          |
+{PRE}[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]{NOKEYPART}              |
+{PRE}[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]{NOKEYPART}                  |
+{PRE}[oO][kK][bB][uU][tT][tT][oO][nN]{NOKEYPART}                                  |
+{PRE}[pP][aA][gG][eE][iI][tT][eE][mM]{NOKEYPART}                                  |
+{PRE}[pP][aA][gG][eE][lL][iI][sS][tT]{NOKEYPART}                                  |
+{PRE}[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]{NOKEYPART}                          |
+{PRE}[qQ][uU][eE][rR][yY][bB][oO][xX]{NOKEYPART}                                  |
+{PRE}[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{NOKEYPART}                      |
+{PRE}[rR][eE][sS][oO][uU][rR][cC][eE]{NOKEYPART}                                  |
+{PRE}[sS][pP][iI][nN][fF][iI][eE][lL][dD]{NOKEYPART}                              |
+{PRE}[sS][tT][rR][iI][nN][gG]{NOKEYPART}                                          |
+{PRE}[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]{NOKEYPART}                      |
+{PRE}[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]{NOKEYPART}                          |
+{PRE}[tT][aA][bB][dD][iI][aA][lL][oO][gG]{NOKEYPART}                              |
+{PRE}[tT][aA][bB][pP][aA][gG][eE]{NOKEYPART}                                      |
+{PRE}[tT][oO][oO][lL][bB][oO][xX]{NOKEYPART}                                      |
+{PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{NOKEYPART}                      |
+{PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{NOKEYPART}                      |
+{PRE}[wW][aA][rR][nN][iI][nN][gG][bB][oO][xX]{NOKEYPART}                          |
+{PRE}[wW][iI][nN][dD][oO][wW]{NOKEYPART}                                          {
+  LOCptr->pushNoKey(yytext, genSrc_lineno);
 }
 
 [hH][eE][lL][pP][iI][dD]{REGKEYPART} {
-  LOCptr->registerHelpKey(yytext);
+  LOCptr->registerHelpKey(yytext, genSrc_lineno);
 }
 
 [iI][dD][eE][nN][tT][iI][fF][iI][eE][rR]{REGKEYPART} {
-  LOCptr->registerIdentKey(yytext);
+  LOCptr->registerIdentKey(yytext, genSrc_lineno);
 }
 
 [cC][uU][sS][tT][oO][mM][uU][nN][iI][tT][tT][eE][xX][tT]{SAVEKEYPART} |
@@ -170,30 +182,30 @@ SAVEITEMPART {GENSAVEPART}[ \t\n]*[\\]*"\n"[ \t]*"{"[^\}]*"};"
 [qQ][uU][iI][cC][kK][hH][eE][lL][pP][tT][eE][xX][tT]{SAVEKEYPART}     |
 [tT][eE][xX][tT]{SAVEKEYPART}                                         |
 [tT][iI][tT][lL][eE]{SAVEKEYPART}                                     {
-  LOCptr->saveData(yytext);
+  LOCptr->saveData(yytext, genSrc_lineno);
 }
 
 [iI][tT][eE][mM][lL][iI][sS][tT]{SAVEITEMPART}          |
 [sS][tT][rR][iI][nN][gG][lL][iI][sS][tT]{SAVEITEMPART}  {
-  LOCptr->saveItemList(yytext);
+  LOCptr->saveItemList(yytext, genSrc_lineno);
 }
 
 "}"[ ]*";" {
-  LOCptr->popKey(yytext);
+  LOCptr->popKey(yytext, genSrc_lineno);
 }
 
 "{" {
-  LOCptr->pushPlaceHolder(yytext);
+  LOCptr->pushPlaceHolder(yytext, genSrc_lineno);
 }
 
 "#define"[ \t]+[a-zA-Z_]+[ \t]+\\\n {
-  LOCptr->startDefine(yytext);
+  LOCptr->startDefine(yytext, genSrc_lineno);
 }
 
 "#define"[^\\\n]+\n |
 "//".*\n            |
 .|\n                {
-  LOCptr->collectData(yytext);
+  LOCptr->collectData(yytext, genSrc_lineno);
 }
 
 %%

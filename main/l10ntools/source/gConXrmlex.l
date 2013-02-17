@@ -61,26 +61,26 @@
 
 "<p"[^>]*> {
   std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,1), text);
+  LOCptr->startCollectData(text.substr(1,1), text, genXrm_lineno);
 }
 
 "<h"[0-9][^>]*> {
   std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,2), text);
+  LOCptr->startCollectData(text.substr(1,2), text, genXrm_lineno);
 }
 
 "</p>" {
   std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,1), text);
+  LOCptr->stopCollectData(text.substr(2,1), text, genXrm_lineno);
 }
 
 "</h"[0-9]> {
   std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,2), text);
+  LOCptr->stopCollectData(text.substr(2,2), text, genXrm_lineno);
 }
 
 .|\n {
-  IMPLptr->collectData(yytext);
+  IMPLptr->collectData(yytext, genXrm_lineno);
 }
 
 

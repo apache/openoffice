@@ -58,9 +58,9 @@ void convert_ulf::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf::setKey(char *syyText)
+void convert_ulf::setKey(char *syyText, int iLineno)
 {
-  std::string sText = copySource(syyText);
+  std::string sText = copySource(syyText, iLineno);
 
   // locate key (is any)
   msKey = sText.substr(1,sText.size()-2);
@@ -69,18 +69,17 @@ void convert_ulf::setKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf::setText(char *syyText)
+void convert_ulf::setText(char *syyText, int iLineno)
 {
-  std::string sText = copySource(syyText);
-  int         nL, nE;
+  std::string useText, sText = copySource(syyText, iLineno);
+  int         nL;
 
 
   // isolate text
-  nL = sText.find("\"");
+  nL = sText.find("=");
   if (nL == (int)std::string::npos)
 	return;
-  nE = sText.rfind("\"");
-  sText = sText.substr(nL+1,nE - nL -1);
+  isolateText(sText,  nL+1, &nL, useText);
 
   if (mbMergeMode)
   {
@@ -100,5 +99,5 @@ void convert_ulf::setText(char *syyText)
     }
   }
   else
-    mcMemory.setEnUsKey(msKey, std::string("dummy"), msCollector);
+    mcMemory.setEnUsKey(msKey, std::string("LngText"), useText);
 }

@@ -61,37 +61,37 @@
 
 "<title"[^>]*> {
   std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,5), text);
+  LOCptr->startCollectData(text.substr(1,5), text, genXhp_lineno);
 }
 
 "<bookmark "[^>]*> {
   std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,8), text);
+  LOCptr->startCollectData(text.substr(1,8), text, genXhp_lineno);
 }
 
 "<paragraph"[^>]*> {
   std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,9), text);
+  LOCptr->startCollectData(text.substr(1,9), text, genXhp_lineno);
 }
 
 "</paragraph>" {
   std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,9), text);
+  LOCptr->stopCollectData(text.substr(2,9), text, genXhp_lineno);
 }
 
 "</bookmark>" {
   std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,8), text);
+  LOCptr->stopCollectData(text.substr(2,8), text, genXhp_lineno);
 }
 
 "</title>" {
   std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,5), text);
+  LOCptr->stopCollectData(text.substr(2,5), text, genXhp_lineno);
 }
 
 .|\n {
   std::string text(yytext);
-  IMPLptr->collectData(yytext);
+  IMPLptr->collectData(yytext, genXhp_lineno);
 }
 
 

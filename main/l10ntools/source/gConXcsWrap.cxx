@@ -69,10 +69,10 @@ void convert_xcs::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::setKey(char *syyText)
+void convert_xcs::setKey(char *syyText, int iLineno)
 {
   int    nL;
-  std::string sHead, sText = copySource(syyText);
+  std::string sHead, sText = copySource(syyText, iLineno);
 
   // is it to be translated
   if (sText.find("oor:localized=") == std::string::npos)
@@ -90,17 +90,17 @@ void convert_xcs::setKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::unsetKey(char *syyText)
+void convert_xcs::unsetKey(char *syyText, int iLineno)
 {
-  copySource(syyText);
+  copySource(syyText, iLineno);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::startCollectData(char *syyText)
+void convert_xcs::startCollectData(char *syyText, int iLineno)
 {
-  copySource(syyText);
+  copySource(syyText, iLineno);
   if (!msKey.size())
 	return;
 }
@@ -108,9 +108,9 @@ void convert_xcs::startCollectData(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::stopCollectData(char *syyText)
+void convert_xcs::stopCollectData(char *syyText, int iLineno)
 {
-  std::string sHead, sKey, sLang, sText, sCollectedText = copySource(syyText, false);
+  std::string sHead, sKey, sLang, sText, sCollectedText = copySource(syyText, iLineno, false);
   int    nL;
 
 
