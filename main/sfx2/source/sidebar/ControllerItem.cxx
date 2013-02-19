@@ -52,4 +52,7 @@ void ControllerItem::StateChanged (
     mrItemUpdateReceiver.NotifyItemUpdate(nSID, eState, pState);
 }
 
+
+
+
 } } // end of namespace sfx2::sidebar

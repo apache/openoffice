@@ -20,7 +20,6 @@
  * 
  ***********************************************************-->
 
-
 <!DOCTYPE oor:component-data SYSTEM "../../../../../component-update.dtd">
 <oor:component-data
     oor:name="Sidebar"
@@ -29,94 +28,397 @@
     xmlns:oor="http://openoffice.org/2001/registry"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   <node oor:name="Content">
-    	<node oor:name="DeckList">
-			<node oor:name="PropertyDeck" oor:op="replace">
-	        	<prop oor:name="Title" oor:type="xs:string">
-                	<value xml:lang="en-US">Properties</value>
-            	</prop>
-            	<prop oor:name="Id" oor:type="xs:string">
-                	<value>PropertyDeck</value>
-            	</prop>
-            	<prop oor:name="IconURL" oor:type="xs:string">
-                	<value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
-            	</prop>
-            	<prop oor:name="HighContrastIconURL" oor:type="xs:string">
-                	<value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
-            	</prop>
-            	<node oor:name="ContextList">
-            		<node oor:name="context1" oor:op="replace">
-            			<prop oor:name="Application" oor:type="xs:string">
-            		    	<value>any</value>
-            			</prop>
-            			<prop oor:name="ApplicationContext" oor:type="xs:string">
-            		    	<value>any</value>
-            			</prop>
-                	</node>
-            	</node>
-          	</node>
-	    </node>
-    	<node oor:name="PanelList">
-          <node oor:name="TextPropertyPanel" oor:op="replace">
-            <prop oor:name="Title" oor:type="xs:string">
-              <value xml:lang="en-US">Text Properties</value>
+  <node oor:name="Content">
+    <node oor:name="DeckList">
+      <node oor:name="PropertyDeck" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Properties</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>any</value>
             </prop>
-            <prop oor:name="Id" oor:type="xs:string">
-              <value>TextPropertyPanel</value>
-            </prop>
-            <prop oor:name="DeckId" oor:type="xs:string">
-              <value>PropertyDeck</value>
-            </prop>
-            <node oor:name="ContextList">
-              <node oor:name="context1" oor:op="replace">
-                <prop oor:name="Application" oor:type="xs:string">
-                  <value>any</value>
-                </prop>
-                <prop oor:name="ApplicationContext" oor:type="xs:string">
-                  <value>any</value>
-                </prop>
-              </node>
-            </node>
-            <prop oor:name="Layout" oor:type="xs:string">
-              <value>vertical-stack</value>
-            </prop>
-            <prop oor:name="ImplementationURL" oor:type="xs:string">
-              <value>private:resource/toolpanel/SvxPanelFactory/TextPropertyPanel</value>
-            </prop>
-            <prop oor:name="OrderIndex" oor:type="xs:int">
-              <value>100</value>
-            </prop>
-          </node>
-          <node oor:name="GeometryPropertyPanel" oor:op="replace">
-            <prop oor:name="Title" oor:type="xs:string">
-              <value xml:lang="en-US">Text Properties</value>
-            </prop>
-            <prop oor:name="Id" oor:type="xs:string">
-              <value>GeometryPropertyPanel</value>
-            </prop>
-            <prop oor:name="DeckId" oor:type="xs:string">
-              <value>PropertyDeck</value>
-            </prop>
-            <node oor:name="ContextList">
-              <node oor:name="context1" oor:op="replace">
-                <prop oor:name="Application" oor:type="xs:string">
-                  <value>any</value>
-                </prop>
-                <prop oor:name="ApplicationContext" oor:type="xs:string">
-                  <value>any</value>
-                </prop>
-              </node>
-            </node>
-            <prop oor:name="Layout" oor:type="xs:string">
-              <value>vertical-stack</value>
-            </prop>
-            <prop oor:name="ImplementationURL" oor:type="xs:string">
-              <value>private:resource/toolpanel/SvxPanelFactory/GeometryPropertyPanel</value>
-            </prop>
-            <prop oor:name="OrderIndex" oor:type="xs:int">
-              <value>100</value>
+            <prop oor:name="ContextList">
+              <value>any</value>
             </prop>
           </node>
         </node>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+      </node>
+      <node oor:name="ImpressMasterPagesDeck" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">MasterPages</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>MasterPagesDeck</value>
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock01_sd.png</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>200</value>
+        </prop>
+      </node>
+      <node oor:name="ImpressAnimationEffects" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Custom Animation</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>CustomAnimationDeck</value>
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock02_sd.png</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>300</value>
+        </prop>
+      </node>
+      <node oor:name="SlideTransitionDeck" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Slide Transition</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>SlideTransitionDeck</value>
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock03_sd.png</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>400</value>
+        </prop>
+      </node>
     </node>
+    <node oor:name="PanelList">
+      <node oor:name="TextPropertyPanel" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Text Properties</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>TextPropertyPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>any</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SvxPanelFactory/TextPropertyPanel</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+      </node>
+      <node oor:name="GeometryPropertyPanel" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Text Properties</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>GeometryPropertyPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>any</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SvxPanelFactory/GeometryPropertyPanel</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+      </node>
+      <node oor:name="Impress1" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Layouts</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>ImpressLayoutsPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="IsContextListNegated">
+              <value>true</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>table</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/Layouts</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>200</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+      <node oor:name="Impress2" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Used in This Presentation</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>UsedMasterPagesPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>MasterPagesDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/UsedMasterPages</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+      <node oor:name="Impress3" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Recently Used</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>RecentMasterPagesPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>MasterPagesDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/RecentMasterPages</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>200</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+      <node oor:name="Impress4" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Available for Use</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>AllMasterPagesPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>MasterPagesDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/AllMasterPages</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>300</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+      <node oor:name="Impress5" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Custom Animation</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>CustomAnimationPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>CustomAnimationDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/CustomAnimations</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+      <node oor:name="Impress6" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Slide Transition</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>SlideTransitionPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>SlideTransitionDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/SlideTransitions</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+      <node oor:name="Impress7" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Table Design</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>ImpressTableDesignPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/TableDesign</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>9000</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+    </node>
+  </node>
 </oor:component-data>

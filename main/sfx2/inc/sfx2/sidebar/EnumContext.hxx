@@ -74,9 +74,6 @@ public:
         __LastContextEnum = Context_Unknown
     };
 
-    Application meApplication;
-    Context meContext;
-
     EnumContext (void);
     EnumContext (
         const Application eApplication,
@@ -117,6 +114,9 @@ public:
     static const ::rtl::OUString& GetContextName (const Context eContext);
 
 private:
+    Application meApplication;
+    Context meContext;
+
     static void ProvideApplicationContainers (void);
     static void ProvideContextContainers (void);
     static void AddEntry (const ::rtl::OUString& rsName, const Application eApplication);

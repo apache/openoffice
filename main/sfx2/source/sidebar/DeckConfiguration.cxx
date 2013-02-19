@@ -23,8 +23,6 @@
 
 #include "DeckConfiguration.hxx"
 #include "Deck.hxx"
-#include "Panel.hxx"
-#include "TitleBar.hxx"
 
 
 namespace sfx2 { namespace sidebar {
@@ -40,15 +38,18 @@ DeckConfiguration::DeckConfiguration (void)
 
 void DeckConfiguration::Dispose (void)
 {
-    // Move the deck and its children temporarily to a new root to
-    // avoid a crash when calling removeWindow(,NULL).
-    Window aTemporaryParent (NULL,0);
-    mpDeck->Hide();
-    mpDeck->Dispose();
-    mpDeck->GetParent()->removeWindow(mpDeck, &aTemporaryParent);
-    maPanels.clear();
-    mpDeck = NULL;
+    if (mpDeck != NULL)
+    {
+        mpDeck->Dispose();
+
+        Deck* pDeck = mpDeck;
+        mpDeck = NULL;
+        OSL_TRACE("deleting deck window subtree");
+        pDeck->PrintWindowTree();
+        delete pDeck;
+    }
 }
+
 
 
 } } // end of namespace sfx2::sidebar

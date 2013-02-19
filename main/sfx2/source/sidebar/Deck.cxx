@@ -23,13 +23,23 @@
 
 #include "Deck.hxx"
 #include "DeckDescriptor.hxx"
+#include "DeckLayouter.hxx"
 #include "DrawHelper.hxx"
 #include "DeckTitleBar.hxx"
 #include "Paint.hxx"
 #include "Panel.hxx"
+#include "ToolBoxBackground.hxx"
+#include "Tools.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 
+#include <vcl/dockwin.hxx>
+#include <vcl/scrbar.hxx>
 #include <tools/svborder.hxx>
+
+#include <boost/bind.hpp>
+
+using namespace ::com::sun::star;
+using namespace ::com::sun::star::uno;
 
 
 namespace sfx2 { namespace sidebar {
@@ -40,21 +50,38 @@ namespace {
 }
 
 
-
 Deck::Deck (
     const DeckDescriptor& rDeckDescriptor,
-    Window* pParentWindow)
+    Window* pParentWindow,
+    const ::boost::function<void(void)>& rCloserAction)
     : Window(pParentWindow),
       msId(rDeckDescriptor.msId),
-      mpTitleBar(new DeckTitleBar(rDeckDescriptor.msTitle, this)),
       maIcon(),
       msIconURL(rDeckDescriptor.msIconURL),
       msHighContrastIconURL(rDeckDescriptor.msHighContrastIconURL),
       maPanels(),
-      maSeparators(),
-      mpFiller(NULL)
+      mpTitleBar(new DeckTitleBar(rDeckDescriptor.msTitle, this, rCloserAction)),
+      mpScrollClipWindow(new Window(this)),
+      mpScrollContainer(new ScrollContainerWindow(mpScrollClipWindow.get())),
+      mpFiller(new Window(this)),
+      mpVerticalScrollBar(new ScrollBar(this))
 {
     SetBackground(Wallpaper());
+
+    mpScrollClipWindow->Show();
+    mpScrollClipWindow->SetBackground(Wallpaper());
+    mpScrollContainer->Show();
+    mpScrollContainer->SetBackground(Wallpaper());
+
+    mpVerticalScrollBar->SetScrollHdl(LINK(this, Deck, HandleVerticalScrollBarChange));
+
+#ifdef DEBUG
+    OSL_TRACE("creating Deck at %x", this);
+    SetText(A2S("Deck"));
+    mpScrollClipWindow->SetText(A2S("ScrollClipWindow"));
+    mpFiller->SetText(A2S("Filler"));
+    mpVerticalScrollBar->SetText(A2S("VerticalScrollBar"));
+#endif
 }
 
 
@@ -62,6 +89,7 @@ Deck::Deck (
 
 Deck::~Deck (void)
 {
+    OSL_TRACE("destroying Deck at %x", this);
     Dispose();
 }
 
@@ -70,9 +98,9 @@ Deck::~Deck (void)
 
 void Deck::Dispose (void)
 {
-    ::std::vector<Panel*> aPanels;
+    PanelContainer aPanels;
     aPanels.swap(maPanels);
-    for (::std::vector<Panel*>::const_iterator
+    for (PanelContainer::const_iterator
              iPanel(aPanels.begin()),
              iEnd(aPanels.end());
          iPanel!=iEnd;
@@ -81,6 +109,10 @@ void Deck::Dispose (void)
 		if (*iPanel != NULL)
 			(*iPanel)->Dispose();
     }
+
+    mpTitleBar.reset();
+    mpFiller.reset();
+    mpVerticalScrollBar.reset();
 }
 
 
@@ -94,9 +126,9 @@ const ::rtl::OUString& Deck::GetId (void) const
 
 
 
-TitleBar* Deck::GetTitleBar (void) const
+DeckTitleBar* Deck::GetTitleBar (void) const
 {
-    return mpTitleBar;
+    return mpTitleBar.get();
 }
 
 
@@ -165,21 +197,6 @@ void Deck::Paint (const Rectangle& rUpdateArea)
         SvBorder(nBorderSize, nBorderSize, nBorderSize, nBorderSize),
         rHorizontalBorderPaint,
         Theme::GetPaint(Theme::Paint_VerticalBorder));
-
-    // Paint the separators.
-    const int nSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
-    const int nLeft = aBox.Left() + nBorderSize;
-    const int nRight = aBox.Right() - nBorderSize;
-    for (::std::vector<sal_Int32>::const_iterator iY(maSeparators.begin()), iEnd(maSeparators.end()); iY!=iEnd; ++iY)
-    {
-        DrawHelper::DrawHorizontalLine(
-            *this,
-            nLeft,
-            nRight,
-            *iY,
-            nSeparatorHeight,
-            rHorizontalBorderPaint);
-    }
 }
 
 
@@ -196,8 +213,14 @@ void Deck::DataChanged (const DataChangedEvent& rEvent)
 
 void Deck::SetPanels (const ::std::vector<Panel*>& rPanels)
 {
-    maPanels.resize(rPanels.size());
-    ::std::copy(rPanels.begin(), rPanels.end(), maPanels.begin());
+    maPanels.clear();
+    maPanels.reserve(rPanels.size());
+    for (::std::vector<Panel*>::const_iterator iPanel(rPanels.begin()),iEnd(rPanels.end());
+         iPanel!=iEnd;
+         ++iPanel)
+    {
+        maPanels.push_back(*iPanel);
+    }
 
     RequestLayout();
 }
@@ -207,29 +230,16 @@ void Deck::SetPanels (const ::std::vector<Panel*>& rPanels)
 
 void Deck::RequestLayout (void)
 {
-    switch(maPanels.size())
-    {
-        case 0:
-            // This basically is an error but there is not much that
-            // we can do about it.
-            ShowFiller(PlaceDeckTitle(GetTitleBar(), GetContentArea()));
-            break;
+    PrintWindowTree();
 
-        case 1:
-            if (maPanels[0]->IsTitleBarOptional())
-            {
-                // There is only one panel in the deck and its title
-                // bar is optional => do not draw the title bar.
-                LayoutSinglePanel();
-            }
-            else
-                LayoutMultiplePanels();
-            break;
-
-        default:
-            LayoutMultiplePanels();
-            break;
-    }
+    DeckLayouter::LayoutDeck(
+        GetContentArea(),
+        maPanels,
+        *GetTitleBar(),
+        *mpScrollClipWindow,
+        *mpScrollContainer,
+        *mpFiller,
+        *mpVerticalScrollBar);
 
     Invalidate();
 }
@@ -237,218 +247,133 @@ void Deck::RequestLayout (void)
 
 
 
-void Deck::LayoutSinglePanel (void)
+::Window* Deck::GetPanelParentWindow (void)
 {
-    Rectangle aBox (GetContentArea());
-    aBox = PlaceDeckTitle(GetTitleBar(), aBox);
-    Panel& rPanel (*maPanels.front());
+    return mpScrollContainer.get();
+}
 
-    // Prepare the separators, horizontal lines above and below the
-    // panel titels.
-    const sal_Int32 nDeckSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
-    maSeparators.clear();
 
-    if (rPanel.IsExpanded())
+
+
+const char* GetWindowClassification (const Window* pWindow)
+{
+    const String& rsName (pWindow->GetText());
+    if (rsName.Len() > 0)
     {
-        rPanel.Show();
-        rPanel.GetTitleBar()->Hide();
-
-        // Add single separator between deck title (pane title is not
-        // visible) and panel content.
-        maSeparators.push_back(aBox.Top());
-        aBox.Top() += nDeckSeparatorHeight;
-        
-        rPanel.SetPosSizePixel(aBox.Left(), aBox.Top(), aBox.GetWidth(), aBox.GetHeight());
-        HideFiller();
+        return ::rtl::OUStringToOString(rsName, RTL_TEXTENCODING_ASCII_US).getStr();
     }
     else
     {
-        rPanel.Hide();
-        ShowFiller(aBox);
+        static char msWindow[] = "window";
+        return msWindow;
     }
+}
+
+
+void Deck::PrintWindowSubTree (Window* pRoot, int nIndentation)
+{
+    static char* sIndentation = "                                                                  ";
+    const Point aLocation (pRoot->GetPosPixel());
+    const Size aSize (pRoot->GetSizePixel());
+    const char* sClassification = GetWindowClassification(pRoot);
+    const char* sVisible = pRoot->IsVisible() ? "visible" : "hidden";
+    OSL_TRACE("%s%x %s %s +%d+%d x%dx%d",
+        sIndentation+strlen(sIndentation)-nIndentation*4,
+        pRoot,
+        sClassification,
+        sVisible,
+        aLocation.X(),aLocation.Y(),
+        aSize.Width(),aSize.Height());
+
+    const sal_uInt16 nChildCount (pRoot->GetChildCount());
+    for (sal_uInt16 nIndex=0; nIndex<nChildCount; ++nIndex)
+        PrintWindowSubTree(pRoot->GetChild(nIndex), nIndentation+1);
 }
 
 
 
 
-void Deck::LayoutMultiplePanels (void)
+void Deck::PrintWindowTree (void)
 {
-    Rectangle aBox (GetContentArea());
-    if (aBox.GetWidth()<=0 || aBox.GetHeight()<=0)
-        return;
-    aBox = PlaceDeckTitle(GetTitleBar(), aBox);
-    const sal_Int32 nWidth (aBox.GetWidth());
-    const sal_Int32 nPanelTitleBarHeight (Theme::GetInteger(Theme::Int_PanelTitleBarHeight));
+    PrintWindowSubTree(this, 0);
+}
 
-    // Prepare the separators, horizontal lines above and below the
-    // panel titels.
-    const sal_Int32 nDeckSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
-    maSeparators.clear();
+
+
+
+void Deck::PrintWindowTree (const ::std::vector<Panel*>& rPanels)
+{
+    (void)rPanels;
     
-    // Determine the height that is available for panel content
-    // and count the different layouts.
-    const sal_Int32 nX = aBox.Left();
-    sal_Int32 nHeight = aBox.GetHeight();
-    sal_Int32 nFullCount (0);
-    sal_Int32 nVerticalStackCount (0);
-    for (::std::vector<Panel*>::const_iterator
-             iPanel(maPanels.begin()),
-             iEnd(maPanels.end());
-         iPanel!=iEnd;
-         ++iPanel)
-    {
-		if (*iPanel == NULL)
-			continue;
-        
-		const Panel& rPanel (**iPanel);
-        
-        nHeight -= nPanelTitleBarHeight;
-        nHeight -= 2*nDeckSeparatorHeight;
+    PrintWindowTree();
+}
 
-        if (rPanel.IsExpanded())
-        {
-            if (rPanel.GetVerticalStackElement().is())
-            {
-                const sal_Int32 nRequestedHeight (rPanel.GetVerticalStackElement()->getHeightForWidth(nWidth));
-                if (nRequestedHeight >= 0)
-                {
-                    ++nVerticalStackCount;
-                    nHeight -= nRequestedHeight;
-                }
-                else
-                {
-                    // Treat -1 as a special value that the panel
-                    // wants as much space as possible.
-                    ++nFullCount;
-                }
-            }
-            else
-            {
-                ++nFullCount;
-            }
-        }
-    }
 
-    // The remaining height is distributed between the full size panels.
-    sal_Int32 nHeightPerPanel (nFullCount<=0 ? 0 : nHeight / nFullCount);
+
+
+IMPL_LINK(Deck, HandleVerticalScrollBarChange,void*, EMPTYARG)
+{
+    const sal_Int32 nYOffset (-mpVerticalScrollBar->GetThumbPos());
+    mpScrollContainer->SetPosPixel(
+        Point(
+            mpScrollContainer->GetPosPixel().X(),
+            nYOffset));
+    return sal_True;
+}
+
+
+
+
+//----- Deck::ScrollContainerWindow -------------------------------------------
+
+Deck::ScrollContainerWindow::ScrollContainerWindow (Window* pParentWindow)
+    : Window(pParentWindow),
+      maSeparators()
+{
+#ifdef DEBUG
+    SetText(A2S("ScrollContainerWindow"));
+#endif
+}
+
+
+
+
+Deck::ScrollContainerWindow::~ScrollContainerWindow (void)
+{
+}
+
+
+
+
+void Deck::ScrollContainerWindow::Paint (const Rectangle& rUpdateArea)
+{
+    (void)rUpdateArea;
     
-    // The division might lead to rounding errors.  Enlarge the first
-    // panel to compensate for that.
-    sal_Int32 nHeightOfFirstPanel = nFullCount+nVerticalStackCount<=0
-        ? 0
-        : nHeightPerPanel + (nHeight - nHeightPerPanel*nFullCount);
-    if (nHeightPerPanel < MinimalPanelHeight)
+    // Paint the separators.
+    const sal_Int32 nSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
+    const sal_Int32 nLeft  (0);
+    const sal_Int32 nRight (GetSizePixel().Width()-1);
+    const sfx2::sidebar::Paint& rHorizontalBorderPaint (Theme::GetPaint(Theme::Paint_HorizontalBorder));
+    for (::std::vector<sal_Int32>::const_iterator iY(maSeparators.begin()), iEnd(maSeparators.end());
+         iY!=iEnd;
+         ++iY)
     {
-        // Display a vertical scroll bar.
-        // Force height to the minimal panel height.
-        nHeightPerPanel = MinimalPanelHeight;
-        nHeightOfFirstPanel = nHeightPerPanel;
+        DrawHelper::DrawHorizontalLine(
+            *this,
+            nLeft,
+            nRight,
+            *iY,
+            nSeparatorHeight,
+            rHorizontalBorderPaint);
     }
-
-    // Assign heights and places.
-    sal_Int32 nY (aBox.Top());
-    for (::std::vector<Panel*>::const_iterator
-             iPanel(maPanels.begin()),
-             iEnd(maPanels.end());
-         iPanel!=iEnd;
-         ++iPanel)
-    {
-		if (*iPanel == NULL)
-			continue;
-
-        Panel& rPanel (**iPanel);
-
-        // Separator above the panel title bar.
-        maSeparators.push_back(nY);
-        nY += nDeckSeparatorHeight;
-        
-        // Place the title bar.
-        TitleBar* pTitleBar = rPanel.GetTitleBar();
-        pTitleBar->SetPosSizePixel(nX, nY, nWidth, nPanelTitleBarHeight);
-        pTitleBar->Show();
-        nY += nPanelTitleBarHeight;
-
-        // Separator below the panel title bar.
-        maSeparators.push_back(nY);
-        nY += nDeckSeparatorHeight;
-
-        if (rPanel.IsExpanded())
-        {
-            rPanel.Show();
-            
-            // Place the panel.
-            sal_Int32 nPanelHeight (0);
-            if (rPanel.GetVerticalStackElement().is())
-                nPanelHeight = rPanel.GetVerticalStackElement()->getHeightForWidth(nWidth);        
-            else
-                if (iPanel==maPanels.begin())
-                    nPanelHeight = nHeightOfFirstPanel;
-                else
-                    nPanelHeight = nHeightPerPanel;
-            
-            rPanel.SetPosSizePixel(nX, nY, nWidth, nPanelHeight);
-            nY += nPanelHeight;
-        }
-        else
-            rPanel.Hide();
-    }
-
-    if (nY < aBox.Bottom())
-        ShowFiller(Rectangle(aBox.Left(), nY, aBox.Right(), aBox.Bottom()));
-    else
-        HideFiller();
 }
 
 
 
 
-Rectangle Deck::PlaceDeckTitle (
-    TitleBar* pDeckTitleBar,
-    const Rectangle& rAvailableSpace)
+void Deck::ScrollContainerWindow::SetSeparators (const ::std::vector<sal_Int32>& rSeparators)
 {
-    if (pDeckTitleBar == NULL)
-    {
-        OSL_ASSERT(pDeckTitleBar!=NULL);
-        return rAvailableSpace;
-    }
-
-    const sal_Int32 nDeckTitleBarHeight (Theme::GetInteger(Theme::Int_DeckTitleBarHeight));
-    pDeckTitleBar->SetPosSizePixel(
-        rAvailableSpace.Left(),
-        rAvailableSpace.Top(),
-        rAvailableSpace.GetWidth(),
-        nDeckTitleBarHeight);
-    pDeckTitleBar->Show();
-    return Rectangle(
-        rAvailableSpace.Left(),
-        rAvailableSpace.Top() + nDeckTitleBarHeight,
-        rAvailableSpace.Right(),
-        rAvailableSpace.Bottom());
+    maSeparators = rSeparators;
 }
-
-
-
-
-void Deck::ShowFiller (const Rectangle& rBox)
-{
-    if (mpFiller == NULL)
-    {
-        mpFiller = new Window(this);
-    }
-    mpFiller->SetBackground(Theme::GetPaint(Theme::Paint_PanelBackground).GetWallpaper());
-    mpFiller->SetPosSizePixel(rBox.TopLeft(), rBox.GetSize());
-    mpFiller->Show();
-}
-
-
-
-
-void Deck::HideFiller (void)
-{
-    if (mpFiller != NULL)
-        mpFiller->Hide();
-}
-
-
 
 } } // end of namespace sfx2::sidebar

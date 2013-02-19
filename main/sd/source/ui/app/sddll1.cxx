@@ -45,7 +45,7 @@
 #include "DrawDocShell.hxx"
 #include "GraphicDocShell.hxx"
 #include "SlideSorterViewShell.hxx"
-#include "taskpane/ToolPanelViewShell.hxx"
+#include "SidebarViewShell.hxx"
 #include "FactoryIds.hxx"
 #include "sdmod.hxx"
 #include "app.hrc"
@@ -123,8 +123,8 @@ void SdDLL::RegisterInterfaces()
 
     // View shells for the side panes.
     ::sd::slidesorter::SlideSorterViewShell::RegisterInterface (pMod);
-	::sd::toolpanel::ToolPanelViewShell::RegisterInterface(pMod);
+	::sd::sidebar::SidebarViewShell::RegisterInterface(pMod);
     // Tell the tool panel view shell to register the interfaces of its
     // controls.
-	::sd::toolpanel::ToolPanelViewShell::RegisterControls();
+	::sd::sidebar::SidebarViewShell::RegisterControls();
 }

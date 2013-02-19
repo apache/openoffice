@@ -72,6 +72,18 @@ Resource RID_SIDEBAR_RESOURCE
     {
         ImageBitmap = Bitmap { File = "symphony/hpaneldock01.png" ;};
     };
+    Image IMAGE_SIDEBAR_TABBAR_MASTERS_SD
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock01_sd.png" ;};
+    };
+    Image IMAGE_SIDEBAR_TABBAR_CUSTOM_ANIMATION_SD
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock02_sd.png" ;};
+    };
+    Image IMAGE_SIDEBAR_TABBAR_SLIDE_TRANSITION_SD
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock03_sd.png" ;};
+    };
 
     String STRING_CUSTOMIZATION
     {

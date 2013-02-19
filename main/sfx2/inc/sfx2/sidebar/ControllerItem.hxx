@@ -29,7 +29,8 @@
 
 namespace sfx2 { namespace sidebar {
 
-class SFX2_DLLPUBLIC ControllerItem : public SfxControllerItem
+class SFX2_DLLPUBLIC ControllerItem
+    : public SfxControllerItem
 {
 public:
     class ItemUpdateReceiverInterface
@@ -40,7 +41,6 @@ public:
             const SfxItemState eState,
             const SfxPoolItem* pState) = 0;
     };
-    
     ControllerItem (
         const sal_uInt16 nId,
         SfxBindings &rBindings,

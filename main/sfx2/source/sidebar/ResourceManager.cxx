@@ -27,6 +27,8 @@
 #include <comphelper/processfactory.hxx>
 #include <comphelper/namedvaluecollection.hxx>
 #include <comphelper/types.hxx>
+#include <comphelper/stlunosequence.hxx>
+
 #include <rtl/ustrbuf.hxx>
 #include <tools/diagnose_ex.h>
 
@@ -88,7 +90,7 @@ ResourceManager::~ResourceManager (void)
 
 
 const DeckDescriptor* ResourceManager::GetBestMatchingDeck (
-    const EnumContext& rContext,
+    const Context& rContext,
     const Reference<frame::XFrame>& rxFrame)
 {
     ReadLegacyAddons(rxFrame);
@@ -101,7 +103,7 @@ const DeckDescriptor* ResourceManager::GetBestMatchingDeck (
          iDeck!=iEnd;
          ++iDeck)
     {
-        const sal_Int32 nMatch (rContext.EvaluateMatch(iDeck->maContexts));
+        const sal_Int32 nMatch (iDeck->maContextMatcher.EvaluateMatch(rContext));
         if (nMatch < nBestMatch)
         {
             // Found a better matching deck.
@@ -182,21 +184,34 @@ void ResourceManager::SetIsDeckEnabled (
 
 const ResourceManager::IdContainer& ResourceManager::GetMatchingDecks (
     IdContainer& rDeckIds,
-    const EnumContext& rContext,
+    const Context& rContext,
     const Reference<frame::XFrame>& rxFrame)
 {
     ReadLegacyAddons(rxFrame);
 
+    ::std::multimap<sal_Int32,OUString> aOrderedIds;
     for (DeckContainer::const_iterator
              iDeck(maDecks.begin()),
              iEnd (maDecks.end());
          iDeck!=iEnd;
          ++iDeck)
     {
-        if (rContext.EvaluateMatch(iDeck->maContexts) != EnumContext::NoMatch)
-            rDeckIds.push_back(iDeck->msId);
+        const DeckDescriptor& rDeckDescriptor (*iDeck);
+        if (rDeckDescriptor.maContextMatcher.EvaluateMatch(rContext) != EnumContext::NoMatch)
+            aOrderedIds.insert(::std::multimap<sal_Int32,OUString>::value_type(
+                    rDeckDescriptor.mnOrderIndex,
+                    rDeckDescriptor.msId));
     }
 
+    for (::std::multimap<sal_Int32,OUString>::const_iterator
+             iId(aOrderedIds.begin()),
+             iEnd(aOrderedIds.end());
+         iId!=iEnd;
+         ++iId)
+    {
+        rDeckIds.push_back(iId->second);
+    }
+    
     return rDeckIds;
 }
 
@@ -205,7 +220,7 @@ const ResourceManager::IdContainer& ResourceManager::GetMatchingDecks (
 
 const ResourceManager::IdContainer& ResourceManager::GetMatchingPanels (
     IdContainer& rPanelIds,
-    const EnumContext& rContext,
+    const Context& rContext,
     const ::rtl::OUString& rsDeckId,
     const Reference<frame::XFrame>& rxFrame)
 {
@@ -220,10 +235,10 @@ const ResourceManager::IdContainer& ResourceManager::GetMatchingPanels (
     {
         const PanelDescriptor& rPanelDescriptor (*iPanel);
         if (rPanelDescriptor.msDeckId.equals(rsDeckId))
-            if (rContext.EvaluateMatch(rPanelDescriptor.maContexts) != EnumContext::NoMatch)
+            if (rPanelDescriptor.maContextMatcher.EvaluateMatch(rContext) != EnumContext::NoMatch)
                 aOrderedIds.insert(::std::multimap<sal_Int32,OUString>::value_type(
-                        iPanel->mnOrderIndex,
-                        iPanel->msId));
+                        rPanelDescriptor.mnOrderIndex,
+                        rPanelDescriptor.msId));
     }
 
     for (::std::multimap<sal_Int32,OUString>::const_iterator
@@ -263,14 +278,22 @@ void ResourceManager::ReadDeckList (void)
 
         DeckDescriptor& rDeckDescriptor (maDecks[nWriteIndex++]);
 
-        rDeckDescriptor.msTitle = ::comphelper::getString(aDeckNode.getNodeValue("Title"));
-        rDeckDescriptor.msId = ::comphelper::getString(aDeckNode.getNodeValue("Id"));
-        rDeckDescriptor.msIconURL = ::comphelper::getString(aDeckNode.getNodeValue("IconURL"));
-        rDeckDescriptor.msHighContrastIconURL = ::comphelper::getString(aDeckNode.getNodeValue("HighContrastIconURL"));
-        rDeckDescriptor.msHelpURL = ::comphelper::getString(aDeckNode.getNodeValue("HelpURL"));
+        rDeckDescriptor.msTitle = ::comphelper::getString(
+            aDeckNode.getNodeValue("Title"));
+        rDeckDescriptor.msId = ::comphelper::getString(
+            aDeckNode.getNodeValue("Id"));
+        rDeckDescriptor.msIconURL = ::comphelper::getString(
+            aDeckNode.getNodeValue("IconURL"));
+        rDeckDescriptor.msHighContrastIconURL = ::comphelper::getString(
+            aDeckNode.getNodeValue("HighContrastIconURL"));
+        rDeckDescriptor.msHelpURL = ::comphelper::getString(
+            aDeckNode.getNodeValue("HelpURL"));
         rDeckDescriptor.msHelpText = rDeckDescriptor.msTitle;
         rDeckDescriptor.mbIsEnabled = true;
-        ReadContextList(aDeckNode.openNode("ContextList"), rDeckDescriptor.maContexts);
+        rDeckDescriptor.mnOrderIndex = ::comphelper::getINT32(
+            aDeckNode.getNodeValue("OrderIndex"));
+
+        ReadContextMatcher(aDeckNode.openNode("ContextMatchers"), rDeckDescriptor.maContextMatcher);
     }
 
     // When there where invalid nodes then we have to adapt the size
@@ -314,13 +337,15 @@ void ResourceManager::ReadPanelList (void)
             aPanelNode.getNodeValue("DeckId"));
         rPanelDescriptor.msHelpURL = ::comphelper::getString(
             aPanelNode.getNodeValue("HelpURL"));
-        rPanelDescriptor.msLayout = ::comphelper::getString(
-            aPanelNode.getNodeValue("Layout"));
         rPanelDescriptor.msImplementationURL = ::comphelper::getString(
             aPanelNode.getNodeValue("ImplementationURL"));
         rPanelDescriptor.mnOrderIndex = ::comphelper::getINT32(
             aPanelNode.getNodeValue("OrderIndex"));
-        ReadContextList(aPanelNode.openNode("ContextList"), rPanelDescriptor.maContexts);
+        rPanelDescriptor.mbHasMenu = ::comphelper::getBOOL(
+            aPanelNode.getNodeValue("HasMenu"));
+        rPanelDescriptor.mbWantsCanvas = ::comphelper::getBOOL(
+            aPanelNode.getNodeValue("WantsCanvas"));
+        ReadContextMatcher(aPanelNode.openNode("ContextMatchers"), rPanelDescriptor.maContextMatcher);
     }
 
     // When there where invalid nodes then we have to adapt the size
@@ -332,19 +357,41 @@ void ResourceManager::ReadPanelList (void)
 
 
 
-void ResourceManager::ReadContextList (
+void ResourceManager::ReadContextMatcher (
     const ::utl::OConfigurationNode& rNode,
-    ::std::vector<EnumContext>& rContextContainer) const
+    ContextMatcher& rContextMatcher) const
 {
-    const Sequence<OUString> aChildNodeNames (rNode.getNodeNames());
-    const sal_Int32 nCount (aChildNodeNames.getLength());
-    rContextContainer.resize(nCount);
-    for (sal_Int32 nIndex(0); nIndex<nCount; ++nIndex)
+    const Sequence<OUString> aMatcherNodeNames (rNode.getNodeNames());
+    const sal_Int32 nMatcherCount (aMatcherNodeNames.getLength());
+    for (sal_Int32 nMatcherIndex(0); nMatcherIndex<nMatcherCount; ++nMatcherIndex)
     {
-        const ::utl::OConfigurationNode aChildNode (rNode.openNode(aChildNodeNames[nIndex]));
-        rContextContainer[nIndex] = EnumContext(
-            ::comphelper::getString(aChildNode.getNodeValue("Application")),
-            ::comphelper::getString(aChildNode.getNodeValue("ApplicationContext")));
+        const ::utl::OConfigurationNode aMatcherNode (rNode.openNode(aMatcherNodeNames[nMatcherIndex]));
+        
+        const OUString sApplicationName (
+            ::comphelper::getString(aMatcherNode.getNodeValue("Application")));
+        const bool bIsContextListNegated (
+            ::comphelper::getBOOL(aMatcherNode.getNodeValue("IsContextListNegated")));
+
+        // Read the context names.
+        Any aContextListValue (aMatcherNode.getNodeValue("ContextList"));
+        Sequence<OUString> aContextList;
+        ::std::vector<OUString> aContextVector;
+        if (aContextListValue >>= aContextList)
+        {
+            aContextVector.reserve(aContextList.getLength());
+            ::std::copy(
+                ::comphelper::stl_begin(aContextList),
+                ::comphelper::stl_end(aContextList),
+                ::std::back_inserter(aContextVector));
+        }
+        // Empty list defaults to "any".
+        if (aContextVector.empty())
+            aContextVector.push_back(A2S("any"));
+        
+        rContextMatcher.AddMatcher(
+                sApplicationName,
+                aContextVector,
+                bIsContextListNegated);
     }
 }
 
@@ -396,19 +443,16 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
         rDeckDescriptor.msHighContrastIconURL = rDeckDescriptor.msIconURL;
         rDeckDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
         rDeckDescriptor.msHelpText = rDeckDescriptor.msTitle;
-        rDeckDescriptor.maContexts.resize(1);
-        rDeckDescriptor.maContexts.front() = EnumContext(sModuleName, A2S("any"));
+        rDeckDescriptor.maContextMatcher.AddMatcher(sModuleName, A2S("any"));
         rDeckDescriptor.mbIsEnabled = true;
 
         PanelDescriptor& rPanelDescriptor (maPanels[nPanelWriteIndex++]);
         rPanelDescriptor.msTitle = ::comphelper::getString(aChildNode.getNodeValue("UIName"));
-        rPanelDescriptor.mbIsTitleBarOptional = false;
+        rPanelDescriptor.mbIsTitleBarOptional = true;
         rPanelDescriptor.msId = rsNodeName;
         rPanelDescriptor.msDeckId = rsNodeName;
         rPanelDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
-        rPanelDescriptor.maContexts.resize(1);
-        rPanelDescriptor.maContexts.front() = EnumContext(sModuleName, A2S("any"));
-        rPanelDescriptor.msLayout = A2S("full");
+        rPanelDescriptor.maContextMatcher.AddMatcher(sModuleName, A2S("any"));
         rPanelDescriptor.msImplementationURL = rsNodeName;            
     }
 

@@ -26,9 +26,11 @@
 #define AnyApplicationName "any"
 #define AnyContextName "any"
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 const sal_Int32 Context::NoMatch = 4;
+const sal_Int32 Context::ApplicationWildcardMatch = 1;
+const sal_Int32 Context::ContextWildcardMatch = 2;
 const sal_Int32 Context::OptimalMatch = 0;  // Neither application nor context name is "any".
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
@@ -64,8 +66,8 @@ sal_Int32 Context::EvaluateMatch (
         if (rOther.msContext.equals(msContext) || bContextNameIsAny)
         {
             // Context name matches.
-            return (bApplicationNameIsAny ? 1 : 0)
-                + (bContextNameIsAny ? 2 : 0);
+            return (bApplicationNameIsAny ? ApplicationWildcardMatch : 0)
+                + (bContextNameIsAny ? ContextWildcardMatch : 0);
         }
     }
     return NoMatch;
@@ -98,4 +100,23 @@ sal_Int32 Context::EvaluateMatch (const ::std::vector<Context>& rOthers) const
     return nBestMatch;
 }
 
-} // end of namespace sfx2
+
+
+
+bool Context::operator== (const Context& rOther) const
+{
+    return msApplication.equals(rOther.msApplication)
+        && msContext.equals(rOther.msContext);
+}
+
+
+
+
+bool Context::operator!= (const Context& rOther) const
+{
+    return ( ! msApplication.equals(rOther.msApplication))
+        || ( ! msContext.equals(rOther.msContext));
+}
+
+
+} } // end of namespace sfx2::sidebar

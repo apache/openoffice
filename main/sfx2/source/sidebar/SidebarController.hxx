@@ -23,9 +23,9 @@
 #define SFX_SIDEBAR_CONTROLLER_HXX
 
 #include "ResourceManager.hxx"
-#include "sfx2/sidebar/EnumContext.hxx"
 #include "AsynchronousCall.hxx"
 #include "TabBar.hxx"
+#include "Context.hxx"
 
 #include <vcl/menu.hxx>
 
@@ -33,24 +33,24 @@
 #include <com/sun/star/beans/XPropertyChangeListener.hpp>
 #include <com/sun/star/ui/XContextChangeEventListener.hpp>
 #include <com/sun/star/ui/XUIElement.hpp>
+#include <com/sun/star/ui/XSidebar.hpp>
 
 #include <boost/noncopyable.hpp>
-#include <cppuhelper/compbase2.hxx>
+#include <cppuhelper/compbase3.hxx>
 #include <cppuhelper/basemutex.hxx>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
 
+
 namespace
 {
-    typedef ::cppu::WeakComponentImplHelper2 <
+    typedef ::cppu::WeakComponentImplHelper3 <
         css::ui::XContextChangeEventListener,
-        css::beans::XPropertyChangeListener
+        css::beans::XPropertyChangeListener,
+        css::ui::XSidebar
         > SidebarControllerInterfaceBase;
 }
-
-
-class DockingWindow;
 
 namespace sfx2 { namespace sidebar {
 
@@ -59,6 +59,7 @@ class Deck;
 class DeckConfiguration;
 class DeckDescriptor;
 class Panel;
+class SidebarDockingWindow;
 class TabBar;
 class TabBarConfiguration;
 
@@ -69,7 +70,7 @@ class SidebarController
 {
 public:
     SidebarController(
-        DockingWindow* pParentWindow,
+        SidebarDockingWindow* pParentWindow,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
     virtual ~SidebarController (void);
 
@@ -84,33 +85,50 @@ public:
     // beans::XPropertyChangeListener
     virtual void SAL_CALL propertyChange (const css::beans::PropertyChangeEvent& rEvent)
         throw(cssu::RuntimeException);
+
+    // ui::XSidebar
+    virtual void SAL_CALL requestLayout (void)
+        throw(cssu::RuntimeException);
     
     void NotifyResize (void);
 
     void SwitchToDeck (
         const ::rtl::OUString& rsDeckId);
 
+    /** Show only the tab bar, not the deck.
+    */
+    void CloseDeck (void);
+
+    /** Open the deck area and restore the parent window to its old width.
+    */
+    void OpenDeck (void);
+
 private:
     ::boost::shared_ptr<DeckConfiguration> mpCurrentConfiguration;
-    DockingWindow* mpParentWindow;
-    TabBar* mpTabBar;
+    SidebarDockingWindow* mpParentWindow;
+    ::boost::scoped_ptr<TabBar> mpTabBar;
     cssu::Reference<css::frame::XFrame> mxFrame;
-    EnumContext maCurrentContext;
+    Context maCurrentContext;
     ::rtl::OUString msCurrentDeckId;
     AsynchronousCall maPropertyChangeForwarder;
+    bool mbIsDeckClosed;
+    /** Before the deck is closed the sidebar width is saved into this variable,
+        so that it can be restored when the deck is reopended.
+    */
+    sal_Int32 mnSavedSidebarWidth;
     
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
-    void UpdateConfigurations (const EnumContext& rContext);
+    void UpdateConfigurations (const Context& rContext);
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
         const ::rtl::OUString& rsImplementationURL,
-        Panel* pPanel) const;
+        Panel* pPanel);
     Panel* CreatePanel (
         const ::rtl::OUString& rsPanelId,
-        Deck* pDeck) const;
+        ::Window* pParentWindow);
     void SwitchToDeck (
         const DeckDescriptor& rDeckDescriptor,
-        const EnumContext& rContext);
+        const Context& rContext);
     void ShowPopupMenu (
         const Rectangle& rButtonBox,
         const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
@@ -121,6 +139,19 @@ private:
     DECL_LINK(OnMenuItemSelected, Menu*);
     void BroadcastPropertyChange (void);
 
+    /** The close of the deck changes the width of the child window.
+        That is only possible if there is no other docking window docked above or below the sidebar.
+        Return whether the width of the child window can be modified.
+    */
+    bool CanModifyChildWindowWidth (void) const;
+        
+    /** Set the child window container to a new width.
+        Return the old width.
+    */
+    sal_Int32 SetChildWindowWidth (const sal_Int32 nNewWidth);
+
+    void RestrictWidth (void);
+    
     virtual void SAL_CALL disposing (void);
 };
 

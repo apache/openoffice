@@ -29,6 +29,7 @@
 
 #include <vcl/toolbox.hxx>
 #include <vcl/gradient.hxx>
+#include <svl/smplhint.hxx>
 
 
 namespace sfx2 { namespace sidebar {
@@ -38,6 +39,10 @@ ToolBoxBackground::ToolBoxBackground (Window* pParentWindow)
       maPadding(Tools::RectangleToSvBorder(Theme::GetRectangle(Theme::Rect_ToolBoxPadding)))
 {
     SetBackground(Theme::GetPaint(Theme::Paint_ToolBoxBackground).GetWallpaper());
+
+#ifdef DEBUG
+    SetText(A2S("ToolBoxBackground"));
+#endif
 }
 
 
@@ -88,9 +93,6 @@ void ToolBoxBackground::Paint (const Rectangle& rRect)
 {
     Window::Paint(rRect);
 
-    OSL_TRACE("paint ToolBoxBackground at %d,%d",
-        GetPosPixel().X(),
-        GetPosPixel().Y());
     Rectangle aBox (Point(0,0), GetSizePixel());
     
     const sidebar::Paint aTopLeftBorderPaint (Theme::GetPaint(Theme::Paint_ToolBoxBorderTopLeft));
@@ -136,6 +138,10 @@ IMPL_LINK(ToolBoxBackground, WindowEventHandler, VclWindowEvent*, pEvent)
                     Hide();
                 break;
 
+            case SFX_HINT_DYING:
+                doLazyDelete();
+                break;
+                
             default:
                 break;
         }

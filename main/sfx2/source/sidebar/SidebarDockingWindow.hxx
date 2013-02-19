@@ -23,17 +23,16 @@
 #define SFX_SIDEBAR_DOCKING_WINDOW_HXX
 
 #include "sfx2/dockwin.hxx"
+#include "sfx2/dockwin.hxx"
 #include "Sidebar.hxx"
 
 #include <rtl/ref.hxx>
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 class SidebarChildWindow;
 
-namespace sidebar {
-    class SidebarController;
-}
+class SidebarController;
 
 class SidebarDockingWindow
     : public SfxDockingWindow
@@ -45,7 +44,11 @@ public:
         Window* pParent,
         WinBits nBits);
     virtual ~SidebarDockingWindow (void);
+
+    virtual sal_Bool Close (void);
     
+    SfxChildWindow* GetChildWindow (void);
+
 protected:
     // Window overridables
     virtual void GetFocus (void);
@@ -57,7 +60,7 @@ private:
 };
 
 
-} // end of namespace sfx2
+} } // end of namespace sfx2::sidebar
 
 
 #endif

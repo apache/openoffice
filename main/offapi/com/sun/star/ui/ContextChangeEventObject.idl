@@ -38,7 +38,6 @@ module com { module sun { module star { module ui {
 struct ContextChangeEventObject : com::sun::star::lang::EventObject
 {
     /** Return the name of the application.
-        Known names are: writer, calc, impress, draw, base.
     */
     string ApplicationName;
     

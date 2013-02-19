@@ -39,7 +39,6 @@
 class FloatingWindow;
 class ToolBox;
 
-
 namespace svx { namespace sidebar {
 
 class SvxSBFontNameBox;
@@ -95,16 +94,25 @@ public:
         const SfxItemState eState,
         const SfxPoolItem* pState);
 
+    void ShowMenu (void);
+
 private:
 	//ui controls
     ::boost::scoped_ptr<SvxSBFontNameBox> mpFontNameBox;
 	FontSizeBox maFontSizeBox;
-	::boost::scoped_ptr<ToolBox> mpToolBoxIncDec;	
+	::boost::scoped_ptr<Window> mpToolBoxIncDecBackground;
+	::boost::scoped_ptr<ToolBox> mpToolBoxIncDec;
+	::boost::scoped_ptr<Window> mpToolBoxFontBackground;
 	::boost::scoped_ptr<ToolBox> mpToolBoxFont;
+	::boost::scoped_ptr<Window> mpToolBoxFontColorBackground;	
 	::boost::scoped_ptr<ToolBox> mpToolBoxFontColor;	
+	::boost::scoped_ptr<Window> mpToolBoxScriptBackground;
 	::boost::scoped_ptr<ToolBox> mpToolBoxScript;
+	::boost::scoped_ptr<Window> mpToolBoxScriptSwBackground;
 	::boost::scoped_ptr<ToolBox> mpToolBoxScriptSw;
+	::boost::scoped_ptr<Window> mpToolBoxSpacingBackground;
 	::boost::scoped_ptr<ToolBox> mpToolBoxSpacing;
+	::boost::scoped_ptr<Window> mpToolBoxHighlightBackground;
 	::boost::scoped_ptr<ToolBox> mpToolBoxHighlight;
 	::boost::scoped_ptr<ToolboxButtonColorUpdater> mpFontColorUpdater;
     ::boost::scoped_ptr<ToolboxButtonColorUpdater> mpHighlightUpdater;

@@ -25,6 +25,8 @@
 
 #include "DrawHelper.hxx"
 #include "Paint.hxx"
+#include "Tools.hxx"
+
 #include "sfx2/sidebar/Theme.hxx"
 
 using namespace ::com::sun::star;
@@ -40,6 +42,9 @@ TabItem::TabItem (Window* pParentWindow)
       mePaintType(PT_Theme)
 {
     SetBackground(Theme::GetPaint(Theme::Paint_TabBarBackground).GetWallpaper());
+#ifdef DEBUG
+    SetText(A2S("TabItem"));
+#endif
 }
 
 

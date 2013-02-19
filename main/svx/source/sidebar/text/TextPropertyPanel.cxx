@@ -56,6 +56,7 @@
 using namespace css;
 using namespace cssu;
 using ::sfx2::sidebar::Theme;
+using ::sfx2::sidebar::ControlFactory;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
@@ -113,13 +114,34 @@ TextPropertyPanel::TextPropertyPanel (
     :	Control(pParent, SVX_RES(RID_SIDEBAR_TEXT_PANEL)),
         mpFontNameBox (new SvxSBFontNameBox(this, SVX_RES(CB_SBFONT_FONT))),
     	maFontSizeBox		(this, SVX_RES(MB_SBFONT_FONTSIZE)),
-    	mpToolBoxIncDec(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_INCREASE_DECREASE))),
-        mpToolBoxFont(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_FONT))),
-        mpToolBoxFontColor(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_FONTCOLOR))),		
-        mpToolBoxScript(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_SCRIPT))),
-        mpToolBoxScriptSw(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_SCRIPT_SW))),
-        mpToolBoxSpacing(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_SPACING))),
-        mpToolBoxHighlight(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_HIGHLIGHT))),
+    	mpToolBoxIncDecBackground(ControlFactory::CreateToolBoxBackground(this)),
+    	mpToolBoxIncDec(ControlFactory::CreateToolBox(
+                mpToolBoxIncDecBackground.get(),
+                SVX_RES(TB_INCREASE_DECREASE))),
+        mpToolBoxFontBackground(ControlFactory::CreateToolBoxBackground(this)),
+        mpToolBoxFont(ControlFactory::CreateToolBox(
+                mpToolBoxFontBackground.get(),
+                SVX_RES(TB_FONT))),
+        mpToolBoxFontColorBackground(ControlFactory::CreateToolBoxBackground(this)),
+        mpToolBoxFontColor(ControlFactory::CreateToolBox(
+                mpToolBoxFontColorBackground.get(),
+                SVX_RES(TB_FONTCOLOR))),		
+        mpToolBoxScriptBackground(ControlFactory::CreateToolBoxBackground(this)),
+        mpToolBoxScript(ControlFactory::CreateToolBox(
+                mpToolBoxScriptBackground.get(),
+                SVX_RES(TB_SCRIPT))),
+        mpToolBoxScriptSwBackground(ControlFactory::CreateToolBoxBackground(this)),
+        mpToolBoxScriptSw(ControlFactory::CreateToolBox(
+                mpToolBoxScriptSwBackground.get(),
+                SVX_RES(TB_SCRIPT_SW))),
+        mpToolBoxSpacingBackground(ControlFactory::CreateToolBoxBackground(this)),
+        mpToolBoxSpacing(ControlFactory::CreateToolBox(
+                mpToolBoxSpacingBackground.get(),
+                SVX_RES(TB_SPACING))),
+        mpToolBoxHighlightBackground(ControlFactory::CreateToolBoxBackground(this)),
+        mpToolBoxHighlight(ControlFactory::CreateToolBox(
+                mpToolBoxHighlightBackground.get(),
+                SVX_RES(TB_HIGHLIGHT))),
         mpFontColorUpdater(),
         mpHighlightUpdater(),
 
@@ -205,6 +227,24 @@ TextPropertyPanel::~TextPropertyPanel (void)
 	delete mpPageSpacing;
 	delete mpFloatWinSpacing;
     */
+
+    // Destroy the toolbox windows.
+    mpToolBoxIncDec.reset();
+    mpToolBoxFont.reset();
+    mpToolBoxFontColor.reset();
+    mpToolBoxScript.reset();
+    mpToolBoxScriptSw.reset();
+    mpToolBoxSpacing.reset();
+    mpToolBoxHighlight.reset();
+
+    // Destroy the background windows of the toolboxes.
+    mpToolBoxIncDecBackground.reset();
+    mpToolBoxFontBackground.reset();
+    mpToolBoxFontColorBackground.reset();
+    mpToolBoxScriptBackground.reset();
+    mpToolBoxScriptSwBackground.reset();
+    mpToolBoxSpacingBackground.reset();
+    mpToolBoxHighlightBackground.reset();
 }
 
 
@@ -1280,13 +1320,15 @@ void TextPropertyPanel::NotifyItemUpdate (
                 const SvxBrushItem* pItem =  (const SvxBrushItem*)pState;
                 maBackColor = pItem->GetColor();
                 mbBackColorAvailable = true;
-                mpHighlightUpdater->Update(maBackColor);
+                if (mpHighlightUpdater)
+                    mpHighlightUpdater->Update(maBackColor);
             }
             else
             {
                 mbBackColorAvailable = false;
                 maBackColor.SetColor(COL_AUTO);
-                mpHighlightUpdater->Update(maBackColor);
+                if (mpHighlightUpdater)
+                    mpHighlightUpdater->Update(maBackColor);
             }
             break;
         case SID_ATTR_CHAR_ESCAPEMENT:
@@ -1407,6 +1449,19 @@ void TextPropertyPanel::NotifyItemUpdate (
                     break;
                 }
                 break;
+    }
+}
+
+
+
+
+void TextPropertyPanel::ShowMenu (void)
+{
+    if (mpBindings != NULL)
+    {
+        SfxDispatcher* pDispatcher = mpBindings->GetDispatcher();
+        if (pDispatcher != NULL)
+            pDispatcher->Execute(SID_CHAR_DLG, SFX_CALLMODE_ASYNCHRON);
     }
 }
 

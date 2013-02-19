@@ -71,6 +71,9 @@
   <implementation name="com.sun.star.comp.Draw.framework.TaskPanelFactory">
     <service name="com.sun.star.drawing.framework.TaskPanelFactory"/>
   </implementation>
+  <implementation name="org.openoffice.comp.Draw.framework.SidebarFactory">
+    <service name="com.sun.star.drawing.framework.SidebarFactory"/>
+  </implementation>
   <implementation name="com.sun.star.comp.Draw.framework.configuration.Configuration">
     <service name="com.sun.star.drawing.framework.Configuration"/>
   </implementation>

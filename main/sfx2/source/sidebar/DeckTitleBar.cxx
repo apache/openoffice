@@ -26,6 +26,10 @@
 
 #include <vcl/image.hxx>
 
+#ifdef DEBUG
+#include "Tools.hxx"
+#endif
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -35,9 +39,25 @@ static const sal_Int32 gaRightGripPadding (3);
 
 DeckTitleBar::DeckTitleBar (
     const ::rtl::OUString& rsTitle,
-    Window* pParentWindow)
-    : TitleBar(rsTitle, pParentWindow)
+    Window* pParentWindow,
+    const ::boost::function<void(void)>& rCloserAction)
+    : TitleBar(rsTitle, pParentWindow, GetBackgroundPaint()),
+      mnCloserItemIndex(1),
+      maCloserAction(rCloserAction),
+      mbIsCloserVisible(rCloserAction)
 {
+    OSL_ASSERT(pParentWindow != NULL);
+    
+    if (maCloserAction)
+    {
+        maToolBox.InsertItem(
+            mnCloserItemIndex,
+            Theme::GetImage(Theme::Image_Closer));
+    }
+
+#ifdef DEBUG
+    SetText(A2S("DeckTitleBar"));
+#endif
 }
 
 
@@ -45,6 +65,25 @@ DeckTitleBar::DeckTitleBar (
 
 DeckTitleBar::~DeckTitleBar (void)
 {
+}
+
+
+
+
+void DeckTitleBar::SetCloserVisible (const bool bIsCloserVisible)
+{
+    if (mbIsCloserVisible != bIsCloserVisible)
+    {
+        mbIsCloserVisible = bIsCloserVisible;
+
+        if (mbIsCloserVisible)
+            maToolBox.InsertItem(
+                mnCloserItemIndex,
+                Theme::GetImage(Theme::Image_Closer));
+        else
+            maToolBox.RemoveItem(
+                maToolBox.GetItemPos(mnCloserItemIndex));
+    }
 }
 
 
@@ -89,6 +128,26 @@ sidebar::Paint DeckTitleBar::GetBackgroundPaint (void)
 Color DeckTitleBar::GetTextColor (void)
 {
     return Theme::GetColor(Theme::Color_DeckTitleFont);
+}
+
+
+
+
+void DeckTitleBar::HandleToolBoxItemClick (const sal_uInt16 nItemIndex)
+{
+    if (nItemIndex == mnCloserItemIndex)
+        if (maCloserAction)
+            maCloserAction();
+}
+
+
+
+
+void DeckTitleBar::DataChanged (const DataChangedEvent& rEvent)
+{
+    maToolBox.SetItemImage(
+        mnCloserItemIndex,
+        Theme::GetImage(Theme::Image_Closer));
 }
 
 

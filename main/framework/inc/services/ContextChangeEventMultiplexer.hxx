@@ -26,7 +26,7 @@
 
 #include <com/sun/star/ui/XContextChangeEventMultiplexer.hpp>
 
-#include <cppuhelper/compbase3.hxx>
+#include <cppuhelper/compbase4.hxx>
 #include <cppuhelper/basemutex.hxx>
 
 #include "macros/xserviceinfo.hxx"
@@ -37,10 +37,11 @@
 
 namespace
 {
-    typedef ::cppu::WeakComponentImplHelper3 <
+    typedef ::cppu::WeakComponentImplHelper4 <
         css::ui::XContextChangeEventMultiplexer,
         css::lang::XSingleComponentFactory,
-        css::lang::XServiceInfo
+        css::lang::XServiceInfo,
+        css::lang::XEventListener
         > ContextChangeEventMultiplexerInterfaceBase;
 }
 
@@ -97,6 +98,11 @@ public:
     virtual cssu::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames (void)
         throw (cssu::RuntimeException);
 
+    // XEventListener
+    virtual void SAL_CALL disposing (
+        const css::lang::EventObject& rEvent)
+        throw (cssu::RuntimeException);
+    
     static ::rtl::OUString SAL_CALL impl_getStaticImplementationName (void);
     static cssu::Reference<cssu::XInterface> SAL_CALL impl_createFactory (
         const cssu::Reference<cssl::XMultiServiceFactory>& xServiceManager);
@@ -122,7 +128,10 @@ private:
     void BroadcastEventToSingleContainer (
         const css::ui::ContextChangeEventObject& rEventObject,
         const cssu::Reference<cssu::XInterface>& rxEventFocus);
-
+    FocusDescriptor* GetFocusDescriptor (
+        const cssu::Reference<cssu::XInterface>& rxEventFocus,
+        const bool bCreateWhenMissing);
+    
     static cssu::Sequence< ::rtl::OUString > SAL_CALL static_GetSupportedServiceNames (void);
     static cssu::Reference<cssu::XInterface> SAL_CALL static_CreateInstance (
         const cssu::Reference<cssu::XComponentContext>& rxComponentContext)

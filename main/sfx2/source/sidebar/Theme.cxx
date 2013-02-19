@@ -119,6 +119,14 @@ const Paint& Theme::GetPaint (const ThemeItem eItem)
 
 
 
+const Wallpaper Theme::GetWallpaper (const ThemeItem eItem)
+{
+    return GetPaint(eItem).GetWallpaper();
+}
+
+
+
+
 sal_Int32 Theme::GetInteger (const ThemeItem eItem)
 {
     const PropertyType eType (GetPropertyType(eItem));
@@ -322,20 +330,33 @@ void Theme::UpdateTheme (void)
             maPropertyIdToNameMap[Image_Expand],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/res/plus_sch.png")
-                    : A2S("private:graphicrepository/res/plus.png")));
+                    ? A2S("private:graphicrepository/svtools/res/triangle_right_hc.png")
+                    : A2S("private:graphicrepository/svtools/res/triangle_right.png")));
+        //                    ? A2S("private:graphicrepository/res/plus_sch.png")
+        //                    : A2S("private:graphicrepository/res/plus.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_Collapse],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/res/minus_sch.png")
-                    : A2S("private:graphicrepository/res/minus.png")));
+                    ? A2S("private:graphicrepository/svtools/res/triangle_down_hc.png")
+                    : A2S("private:graphicrepository/svtools/res/triangle_down.png")));
+        //                    ? A2S("private:graphicrepository/res/minus_sch.png")
+        //                    : A2S("private:graphicrepository/res/minus.png")));
         setPropertyValue(
-            maPropertyIdToNameMap[Image_Menu],
+            maPropertyIdToNameMap[Image_TabBarMenu],
             Any(
                 mbIsHighContrastMode
                     ? A2S("private:graphicrepository/sfx2/res/menu_hc.png")
                     : A2S("private:graphicrepository/sfx2/res/menu.png")));
+        setPropertyValue(
+            maPropertyIdToNameMap[Image_PanelMenu],
+            Any(
+                mbIsHighContrastMode
+                    ? A2S("private:graphicrepository/res/imh30823.png")
+                    : A2S("private:graphicrepository/res/im30823.png")));
+        setPropertyValue(
+            maPropertyIdToNameMap[Image_Closer],
+            Any(A2S("private:graphicrepository/sfx2/res/closedoc.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_ToolBoxItemSeparator],
             Any(
@@ -721,8 +742,10 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Image_Grip);
     AddEntry(Image_Expand);
     AddEntry(Image_Collapse);
-    AddEntry(Image_Menu);
+    AddEntry(Image_TabBarMenu);
+    AddEntry(Image_PanelMenu);
     AddEntry(Image_ToolBoxItemSeparator);
+    AddEntry(Image_Closer);
 
     AddEntry(Color_DeckTitleFont);
     AddEntry(Color_PanelTitleFont);
@@ -783,8 +806,10 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Image_Grip:
         case Image_Expand:
         case Image_Collapse:
-        case Image_Menu:
+        case Image_TabBarMenu:
+        case Image_PanelMenu:
         case Image_ToolBoxItemSeparator:
+        case Image_Closer:
             return PT_Image;
 
         case Color_DeckTitleFont:

@@ -28,11 +28,17 @@
 #include <vcl/menu.hxx>
 #include <vcl/window.hxx>
 
+#include <com/sun/star/frame/XFrame.hpp>
 #include <boost/function.hpp>
 #include <boost/tuple/tuple.hpp>
+#include <boost/scoped_ptr.hpp>
 
 class Button;
 class RadioButton;
+
+namespace css = ::com::sun::star;
+namespace cssu = ::com::sun::star::uno;
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -81,12 +87,12 @@ public:
     
 private:
     cssu::Reference<css::frame::XFrame> mxFrame;
-    Button* mpMenuButton;
+    ::boost::scoped_ptr<Button> mpMenuButton;
     class Item
     {
     public:
         DECL_LINK(HandleClick, Button*);
-        RadioButton* mpButton;
+        ::boost::shared_ptr<RadioButton> mpButton;
         ::rtl::OUString msDeckId;
         ::boost::function<void(const ::rtl::OUString&rsDeckId)> maDeckActivationFunctor;
         bool mbIsHidden;

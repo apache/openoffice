@@ -32,10 +32,11 @@ PanelDescriptor::PanelDescriptor (void)
       msId(),
       msDeckId(),
       msHelpURL(),
-      maContexts(),
-      msLayout(),
+      maContextMatcher(),
       msImplementationURL(),
-      mnOrderIndex(10000) // Default value as defined in Sidebar.xcs
+      mnOrderIndex(10000), // Default value as defined in Sidebar.xcs
+      mbHasMenu(false),
+      mbWantsCanvas(false)
 {
 }
 
@@ -48,10 +49,11 @@ PanelDescriptor::PanelDescriptor (const PanelDescriptor& rOther)
       msId(rOther.msId),
       msDeckId(rOther.msDeckId),
       msHelpURL(rOther.msHelpURL),
-      maContexts(rOther.maContexts),
-      msLayout(rOther.msLayout),
+      maContextMatcher(rOther.maContextMatcher),
       msImplementationURL(rOther.msImplementationURL),
-      mnOrderIndex(rOther.mnOrderIndex)
+      mnOrderIndex(rOther.mnOrderIndex),
+      mbHasMenu(rOther.mbHasMenu),
+      mbWantsCanvas(rOther.mbWantsCanvas)
 {
 }
 

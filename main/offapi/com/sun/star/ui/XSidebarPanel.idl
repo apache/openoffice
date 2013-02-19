@@ -39,27 +39,48 @@
 #ifndef __com_sun_star_beans_XPropertySet_idl__
 #include <com/sun/star/beans/XPropertySet.idl>
 #endif
+#ifndef __com_sun_star_ui_LayoutSize_idl__
+#include <com/sun/star/ui/LayoutSize.idl>
+#endif
 
 module com { module sun { module star { module ui {
 
-/** Give access to data for one sidebar panel.
+/** Optional interface of sidebar panels.
 */
 interface XSidebarPanel
 {
-    /** Return a canvas that will paint directly into the panel.
-        It is created on the first call.
-    */
-    rendering::XCanvas getCanvas ();
+    /** For a given width of the container the layouter asks every ui element for its
+        optimal height.
 
-    /** Return the position of the content area (without any border or decoration)
-        in screen coordinates.
-    */
-    awt::Point getPositionOnScreen ();
+        The height to which a ui element is set may differ from the returned value.
 
-    /** Return a property set that represents the theme that is used to render the panel and its controls.
-        Note that the same properties are shared by all panels and decks.
+        The height is set via the XWindow interface.
     */
-    beans::XPropertySet getThemeProperties ();
+    LayoutSize getHeightForWidth ( [in] long nWidth);
+
+    /** If the panel has a menu or dialog then show it now.
+    */
+    void showMenu ();
+
+    /** Return whether the panel supports (ie wants to be displayed
+        for) the given context.
+
+        The decision of whether to display a panel for a given context
+        depends on two sources of information.
+        One is the configuration
+        (org.openoffice.Office.UI/Sidebar/Content/PanelList).
+        The other is this function.
+
+        @param sApplicationName
+            Name of an application (reference of valid values needed,
+        Wiki page?)
+        @param sContextName
+            Name of the context in the scope of the application
+            (reference needed).
+    */
+    boolean isContextSupported (
+        [in] string sApplicationName,
+        [in] string sContextName);
 } ;
 
 } ; } ; } ; } ;

@@ -24,6 +24,7 @@
 #include "SidebarToolBox.hxx"
 #include "ToolBoxBackground.hxx"
 #include "sfx2/sidebar/Theme.hxx"
+#include "Tools.hxx"
 
 #include <vcl/gradient.hxx>
 
@@ -44,6 +45,9 @@ SidebarToolBox::SidebarToolBox (
 {
     SetBackground(Wallpaper());
     SetPaintTransparent(true);
+#ifdef DEBUG
+    SetText(A2S("SidebarToolBox"));
+#endif
 }
 
 

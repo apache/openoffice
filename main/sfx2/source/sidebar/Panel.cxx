@@ -27,10 +27,19 @@
 #include "sfx2/sidebar/Theme.hxx"
 #include "Paint.hxx"
 
+#ifdef DEBUG
+#include "Tools.hxx"
+#include "Deck.hxx"
+#endif
+
 #include <tools/svborder.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
 
 #include <com/sun/star/awt/XWindowPeer.hpp>
+#include <com/sun/star/awt/PosSize.hpp>
 #include <com/sun/star/ui/XToolPanel.hpp>
+
+#include <boost/bind.hpp>
 
 
 using namespace css;
@@ -49,16 +58,25 @@ Panel::Panel (
     const ::boost::function<void(void)>& rDeckLayoutTrigger)
     : Window(pParentWindow),
       msPanelId(rPanelDescriptor.msId),
-      msLayoutHint(rPanelDescriptor.msLayout),
-      mpTitleBar(new PanelTitleBar(rPanelDescriptor.msTitle, pParentWindow, this)),
+      mpTitleBar(new PanelTitleBar(
+              rPanelDescriptor.msTitle,
+              pParentWindow,
+              this,
+              rPanelDescriptor.mbHasMenu
+                  ? ::boost::bind(&Panel::ShowMenu, this)
+                  : ::boost::function<void(void)>())),
       mbIsTitleBarOptional(rPanelDescriptor.mbIsTitleBarOptional),
       mxElement(),
-      mxVerticalStackLayoutElement(),
+      mxPanelComponent(),
       mbIsExpanded(true),
       maDeckLayoutTrigger(rDeckLayoutTrigger)
 {
     SetBackground(Theme::GetPaint(Theme::Paint_PanelBackground).GetWallpaper());
-    AddEventListener(LINK(this,Panel,WindowEventHandler));
+
+#ifdef DEBUG
+    OSL_TRACE("creating Panel at %x", this);
+    SetText(A2S("Panel"));
+#endif
 }
 
 
@@ -66,6 +84,8 @@ Panel::Panel (
 
 Panel::~Panel (void)
 {
+    OSL_TRACE("destroying Panel at %x", this);
+    Dispose();
 }
 
 
@@ -73,9 +93,8 @@ Panel::~Panel (void)
 
 void Panel::Dispose (void)
 {
-    mxVerticalStackLayoutElement = NULL;
+    mxPanelComponent = NULL;
 
-    
     if (mxElement.is())
     {
         Reference<lang::XComponent> xComponent (mxElement->getRealInterface(), UNO_QUERY);
@@ -91,19 +110,12 @@ void Panel::Dispose (void)
     }
 
     {
-        Reference<lang::XComponent> xComponent (mxElementWindow, UNO_QUERY);
-        mxElementWindow = NULL;
+        Reference<lang::XComponent> xComponent (GetElementWindow(), UNO_QUERY);
         if (xComponent.is())
             xComponent->dispose();
     }
-}
 
-
-
-
-const ::rtl::OUString& Panel::GetLayoutHint (void) const
-{
-    return msLayoutHint;
+    mpTitleBar.reset();
 }
 
 
@@ -111,7 +123,7 @@ const ::rtl::OUString& Panel::GetLayoutHint (void) const
 
 TitleBar* Panel::GetTitleBar (void) const
 {
-    return mpTitleBar;
+    return mpTitleBar.get();
 }
 
 
@@ -130,12 +142,7 @@ void Panel::SetUIElement (const Reference<ui::XUIElement>& rxElement)
     mxElement = rxElement;
     if (mxElement.is())
     {
-        Reference<ui::XToolPanel> xToolPanel(mxElement->getRealInterface(), UNO_QUERY);
-        if (xToolPanel.is())
-            mxElementWindow = xToolPanel->getWindow();
-
-        if (msLayoutHint.equalsAscii(VerticalStackLayouterName))
-            mxVerticalStackLayoutElement.set(mxElement->getRealInterface(), UNO_QUERY);
+        mxPanelComponent.set(mxElement->getRealInterface(), UNO_QUERY);
     }
 }
 
@@ -181,22 +188,22 @@ void Panel::Paint (const Rectangle& rUpdateArea)
 
 
 
-void Panel::SetPosSizePixel (
-    long nX,
-    long nY,
-    long nWidth,
-    long nHeight,
-    sal_uInt16 nFlags)
+void Panel::Resize (void)
 {
-    maBoundingBox = Rectangle(Point(nX,nY),Size(nWidth,nHeight));
-    
-    if ( ! IsReallyVisible())
-        return;
+    Window::Resize();
 
-    Window::SetPosSizePixel(nX, nY, nWidth, nHeight, nFlags);
-
-    if (mxElementWindow.is())
-        mxElementWindow->setPosSize(0, 0, nWidth, nHeight, nFlags);
+    // Forward new size to window of XUIElement.
+    Reference<awt::XWindow> xElementWindow (GetElementWindow());
+    if (xElementWindow.is())
+    {
+        const Size aSize (GetSizePixel());
+        xElementWindow->setPosSize(
+            0,
+            0,
+            aSize.Width(),
+            aSize.Height(),
+            awt::PosSize::POSSIZE);
+    }
 }
 
 
@@ -220,35 +227,49 @@ void Panel::DataChanged (const DataChangedEvent& rEvent)
 
 
 
-Reference<ui::XVerticalStackLayoutElement> Panel::GetVerticalStackElement (void) const
+Reference<ui::XSidebarPanel> Panel::GetPanelComponent (void) const
 {
-    return mxVerticalStackLayoutElement;
+    return mxPanelComponent;
 }
 
 
 
 
-IMPL_LINK(Panel, WindowEventHandler, VclWindowEvent*, pEvent)
+void Panel::ShowMenu (void)
 {
-    if (pEvent != NULL)
-    {
-        switch (pEvent->GetId())
-        {
-            case VCLEVENT_WINDOW_SHOW:
-            case VCLEVENT_WINDOW_RESIZE:
-                SetPosSizePixel(
-                    maBoundingBox.Left(),
-                    maBoundingBox.Top(),
-                    maBoundingBox.GetWidth(),
-                    maBoundingBox.GetHeight());
-                break;
+    if (mxPanelComponent.is())
+        mxPanelComponent->showMenu();
+}
 
-            default:
-                break;
-        }
+
+
+void Panel::PrintWindowTree (void)
+{
+#ifdef DEBUG
+    Window* pElementWindow = VCLUnoHelper::GetWindow(GetElementWindow());
+    if (pElementWindow != NULL)
+    {
+        OSL_TRACE("panel parent is %x", pElementWindow->GetParent());
+        Deck::PrintWindowSubTree(pElementWindow, 2);
+    }
+    else
+        OSL_TRACE("    panel is empty");
+#endif
+}
+
+
+
+
+Reference<awt::XWindow> Panel::GetElementWindow (void)
+{
+    if (mxElement.is())
+    {
+        Reference<ui::XToolPanel> xToolPanel(mxElement->getRealInterface(), UNO_QUERY);
+        if (xToolPanel.is())
+            return xToolPanel->getWindow();
     }
 
-    return sal_True;
+    return NULL;
 }
 
 

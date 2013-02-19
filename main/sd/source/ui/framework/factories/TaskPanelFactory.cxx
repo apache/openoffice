@@ -23,9 +23,12 @@
 
 #include "precompiled_sd.hxx"
 #include "TaskPanelFactory.hxx"
-#include "taskpane/ToolPanelViewShell.hxx"
+#include "SidebarViewShell.hxx"
+#include "SidebarPanelId.hxx"
 #include "DrawController.hxx"
 #include "framework/FrameworkHelper.hxx"
+#include "framework/TaskPanelResource.hxx"
+#include "Window.hxx"
 #include <cppuhelper/compbase1.hxx>
 #include <tools/diagnose_ex.h>
 
@@ -36,6 +39,8 @@ using namespace ::com::sun::star::drawing::framework;
 
 using ::rtl::OUString;
 using ::sd::framework::FrameworkHelper;
+
+#define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
 namespace sd { namespace framework {
 
@@ -64,42 +69,6 @@ Sequence<rtl::OUString> SAL_CALL TaskPanelFactory_getSupportedServiceNames (void
         OUString::createFromAscii("com.sun.star.drawing.framework.TaskPanelFactory"));
 	return Sequence<rtl::OUString>(&sServiceName, 1);
 }
-
-
-
-
-//===== ToolPanelResource =====================================================
-
-namespace {
-
-typedef ::cppu::WeakComponentImplHelper1 <
-    css::drawing::framework::XResource
-    > TaskPanelResourceInterfaceBase;
-
-class TaskPanelResource
-    : private ::cppu::BaseMutex,
-      public TaskPanelResourceInterfaceBase      
-{
-public:
-    TaskPanelResource (
-        const Reference<XResourceId>& rxResourceId );
-    virtual ~TaskPanelResource ();
-    
-    virtual void SAL_CALL disposing ();
-
-    // XResource
-
-    virtual Reference<XResourceId> SAL_CALL getResourceId (void)
-        throw (css::uno::RuntimeException);
-
-    virtual sal_Bool SAL_CALL isAnchorOnly () throw (RuntimeException)
-    { return false; }
-
-private:
-    const Reference<XResourceId> mxResourceId;
-};
-
-} // end of anonymous namespace.
 
 
 
@@ -163,7 +132,9 @@ void SAL_CALL TaskPanelFactory::initialize(
             Reference<XControllerManager> xCM (xController, UNO_QUERY_THROW);
             Reference<XConfigurationController> xCC (
                 xCM->getConfigurationController(), UNO_QUERY_THROW);
-            xCC->addResourceFactory(FrameworkHelper::msMasterPagesTaskPanelURL, this);
+            xCC->addResourceFactory(FrameworkHelper::msAllMasterPagesTaskPanelURL, this);
+            xCC->addResourceFactory(FrameworkHelper::msRecentMasterPagesTaskPanelURL, this);
+            xCC->addResourceFactory(FrameworkHelper::msUsedMasterPagesTaskPanelURL, this);
             xCC->addResourceFactory(FrameworkHelper::msLayoutTaskPanelURL, this);
             xCC->addResourceFactory(FrameworkHelper::msTableDesignPanelURL, this);
             xCC->addResourceFactory(FrameworkHelper::msCustomAnimationTaskPanelURL, this);
@@ -206,28 +177,56 @@ Reference<XResource> SAL_CALL TaskPanelFactory::createResource (
         return NULL;
 
     OUString sResourceURL (rxResourceId->getResourceURL());
-
-    if ( sResourceURL.match( FrameworkHelper::msTaskPanelURLPrefix ) )
+    
+    if (sResourceURL.match(FrameworkHelper::msTaskPanelURLPrefix))
     {
-        toolpanel::PanelId ePanelId( toolpanel::GetStandardPanelId( sResourceURL ) );
-        
-        if ( ( ePanelId != toolpanel::PID_UNKNOWN ) && ( mpViewShellBase != NULL ) )
+        sidebar::PanelId ePanelId (sidebar::PID_UNKNOWN);
+
+        if (mpViewShellBase == NULL)
+            return NULL;
+
+        sidebar::SidebarViewShell* pSidebarViewShell
+            = dynamic_cast<sidebar::SidebarViewShell*>(
+                FrameworkHelper::Instance(*mpViewShellBase)
+                    ->GetViewShell(FrameworkHelper::msSidebarPaneURL).get());
+        if (pSidebarViewShell == NULL)
+            return NULL;
+
+        if (sResourceURL.equals(FrameworkHelper::msAllMasterPagesTaskPanelURL))
         {
-            ::boost::shared_ptr< FrameworkHelper > pFrameworkHelper( FrameworkHelper::Instance( *mpViewShellBase ) );
-
-            // assume that the top-level anchor is the URL of the pane
-            ::std::vector< ::rtl::OUString > aResourceURLs;
-            lcl_collectResourceURLs( rxResourceId, aResourceURLs );
-
-            const ::rtl::OUString sPaneURL = aResourceURLs[ aResourceURLs.size() - 1 ];
-            const ::boost::shared_ptr< ViewShell > pPaneViewShell( pFrameworkHelper->GetViewShell( sPaneURL ) );
-
-            toolpanel::ToolPanelViewShell* pToolPanel = dynamic_cast< toolpanel::ToolPanelViewShell* >( pPaneViewShell.get() );
-            if ( pToolPanel != NULL )
-                xResource = new TaskPanelResource( rxResourceId );
-
-            OSL_POSTCOND( xResource.is(), "TaskPanelFactory::createResource: did not find the given resource!" );
+            ePanelId = sidebar::PID_MASTER_PAGES_ALL;
         }
+        else if (sResourceURL.equals(FrameworkHelper::msRecentMasterPagesTaskPanelURL))
+        {
+            ePanelId = sidebar::PID_MASTER_PAGES_RECENT;
+        }
+        else if (sResourceURL.equals(FrameworkHelper::msUsedMasterPagesTaskPanelURL))
+        {
+            ePanelId = sidebar::PID_MASTER_PAGES_USED;
+        }
+        else if (sResourceURL.equals(FrameworkHelper::msLayoutTaskPanelURL))
+        {
+            ePanelId = sidebar::PID_LAYOUT;
+        }
+        else if (sResourceURL.equals(FrameworkHelper::msCustomAnimationTaskPanelURL))
+        {
+            ePanelId = sidebar::PID_CUSTOM_ANIMATION;
+        }
+        else if (sResourceURL.equals(FrameworkHelper::msSlideTransitionTaskPanelURL))
+        {
+            ePanelId = sidebar::PID_SLIDE_TRANSITION;
+        }
+        else if (sResourceURL.equals(FrameworkHelper::msTableDesignPanelURL))
+        {
+            ePanelId = sidebar::PID_TABLE_DESIGN;
+        }
+        else
+            return NULL;
+        
+        xResource = new TaskPanelResource(
+            *pSidebarViewShell,
+            ePanelId,
+            rxResourceId);
     }
 
     return xResource;
@@ -240,80 +239,10 @@ void SAL_CALL TaskPanelFactory::releaseResource (
     const Reference<XResource>& rxResource)
     throw (RuntimeException)
 {
-    ENSURE_OR_RETURN_VOID( rxResource.is(), "illegal resource" );
-    const Reference< XResourceId > xResourceId( rxResource->getResourceId(), UNO_SET_THROW );
-
-    // assume that the top-level anchor is the URL of the pane
-    ::std::vector< ::rtl::OUString > aResourceURLs;
-    lcl_collectResourceURLs( xResourceId, aResourceURLs );
-
-    OSL_ENSURE( !aResourceURLs.empty(), "TaskPanelFactory::releaseResource: illegal resource/URL!" );
-    if ( !aResourceURLs.empty() )
-    {
-        const ::rtl::OUString sPaneURL = aResourceURLs[ aResourceURLs.size() - 1 ];
-        ::boost::shared_ptr< FrameworkHelper > pFrameworkHelper( FrameworkHelper::Instance( *mpViewShellBase ) );
-        const ::boost::shared_ptr< ViewShell > pPaneViewShell( pFrameworkHelper->GetViewShell( sPaneURL ) );
-        if ( pPaneViewShell != NULL )
-        {
-            const ::rtl::OUString sPanelResourceURL( xResourceId->getResourceURL() );
-            const toolpanel::PanelId ePanelId( toolpanel::GetStandardPanelId( sPanelResourceURL ) );
-            toolpanel::ToolPanelViewShell* pToolPanel = dynamic_cast< toolpanel::ToolPanelViewShell* >( pPaneViewShell.get() );
-
-            if  (   ( ePanelId != toolpanel::PID_UNKNOWN )
-                &&  ( pToolPanel != NULL )
-                )
-            {
-                pToolPanel->DeactivatePanel( sPanelResourceURL );
-            }
-            else
-            {
-                OSL_ENSURE( false, "TaskPanelFactory::releaseResource: don't know what to do with this resource!" );
-            }
-        }
-    }
-
     Reference<XComponent> xComponent (rxResource, UNO_QUERY);
     if (xComponent.is())
         xComponent->dispose();
 }
 
-
-
-
-//===== ToolPanelResource =====================================================
-
-namespace {
-
-TaskPanelResource::TaskPanelResource (
-    const Reference<XResourceId>& rxResourceId)
-    : TaskPanelResourceInterfaceBase(m_aMutex),
-      mxResourceId(rxResourceId)
-{
-}
-
-
-
-
-TaskPanelResource::~TaskPanelResource (void)
-{
-}
-
-
-
-
-void SAL_CALL TaskPanelResource::disposing ()
-{
-}
-
-
-
-
-Reference<XResourceId> SAL_CALL TaskPanelResource::getResourceId ()
-    throw (css::uno::RuntimeException)
-{
-    return mxResourceId;
-}
-
-} // end of anonymous namespace
 
 } } // end of namespace sd::framework

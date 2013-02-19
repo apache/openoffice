@@ -22,7 +22,7 @@
 #include "precompiled_sfx2.hxx"
 
 #include "SidebarDockingWindow.hxx"
-#include "SidebarChildWindow.hxx"
+#include "sfx2/sidebar/SidebarChildWindow.hxx"
 #include "SidebarController.hxx"
 
 #include "sfx2/bindings.hxx"
@@ -33,7 +33,7 @@ using namespace css;
 using namespace cssu;
 
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 
 SidebarDockingWindow::SidebarDockingWindow(
@@ -84,4 +84,28 @@ void SidebarDockingWindow::GetFocus()
 
 
 
-} // end of namespace sfx2
+SfxChildWindow* SidebarDockingWindow::GetChildWindow (void)
+{
+    return GetChildWindow_Impl();
+}
+
+
+
+
+sal_Bool SidebarDockingWindow::Close (void)
+{
+    if (mpSidebarController.is())
+    {
+        // Do not close the floating window.
+        // Dock it and close just the deck instead.
+        mpSidebarController->CloseDeck();
+        SetFloatingMode(sal_False);
+        mpSidebarController->NotifyResize();
+        return sal_False;
+    }
+    else
+        return SfxDockingWindow::Close();
+}
+
+
+} } // end of namespace sfx2::sidebar

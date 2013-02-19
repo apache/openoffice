@@ -134,7 +134,7 @@
 #include <mailmergechildwindow.hxx>
 #include <modcfg.hxx>
 #include <fontcfg.hxx>
-#include <sfx2/SidebarChildWindow.hxx>
+#include <sfx2/sidebar/SidebarChildWindow.hxx>
 #include <sfx2/taskpane.hxx>
 #include <sfx2/evntconf.hxx>
 #include <sfx2/appuno.hxx>
@@ -465,7 +465,7 @@ void SwDLL::RegisterControls()
 	::avmedia::MediaPlayer::RegisterChildWindow(0, pMod);
 
     SvxSmartTagsControl::RegisterControl(SID_OPEN_SMARTTAGMENU, pMod);
-    ::sfx2::SidebarChildWindow::RegisterChildWindow(NULL, pMod);
+    ::sfx2::sidebar::SidebarChildWindow::RegisterChildWindow(NULL, pMod);
     ::sfx2::TaskPaneWrapper::RegisterChildWindow(NULL, pMod);
 }
 

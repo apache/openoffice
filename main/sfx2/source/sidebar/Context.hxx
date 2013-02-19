@@ -26,7 +26,7 @@
 
 #include <vector>
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 class Context
 {
@@ -46,6 +46,8 @@ public:
     */
     const static sal_Int32 NoMatch;
     const static sal_Int32 OptimalMatch;
+    const static sal_Int32 ApplicationWildcardMatch;
+    const static sal_Int32 ContextWildcardMatch;
 
     /** Return the numeric value that describes how good the match
         between two contexts is.
@@ -56,9 +58,12 @@ public:
     /** Return the best match against the given list of contexts.
     */
     sal_Int32 EvaluateMatch (const ::std::vector<Context>& rOthers) const;
+
+    bool operator== (const Context& rOther) const;
+    bool operator!= (const Context& rOther) const;
 };
 
 
-} // end of namespace sfx2
+} } // end of namespace sfx2::sidebar
 
 #endif

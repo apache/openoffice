@@ -22,12 +22,15 @@
 #include "sidebar/PanelFactory.hxx"
 
 #include "text/TextPropertyPanel.hxx"
-#include <geometry/AreaPropertyPanel.hxx>
+#include "geometry/AreaPropertyPanel.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 #include <vcl/window.hxx>
 #include <rtl/ref.hxx>
+#include <comphelper/namedvaluecollection.hxx>
+
+#include <boost/bind.hpp>
 
 
 using namespace css;
@@ -98,28 +101,12 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
         RuntimeException)
 {
     Reference<ui::XUIElement> xElement;
-    Reference<awt::XWindow> xParentWindow;
-    Reference<frame::XFrame> xFrame;
-    SfxBindings* pBindings = NULL;
 
-    for (sal_Int32 nIndex(0),nCount(rArguments.getLength()); nIndex<nCount; ++nIndex)
-    {
-        const beans::PropertyValue& rValue (rArguments[nIndex]);
-        if (rValue.Name.equalsAscii("ParentWindow"))
-        {
-            xParentWindow = Reference<awt::XWindow>(rValue.Value, UNO_QUERY);
-        }
-        else if (rValue.Name.equalsAscii("Frame"))
-        {
-            xFrame = Reference<frame::XFrame>(rValue.Value, UNO_QUERY);
-        }
-        else if (rValue.Name.equalsAscii("SfxBindings"))
-        {
-            sal_uInt64 nValue;
-            if (rValue.Value >>= nValue)
-                pBindings = reinterpret_cast<SfxBindings*>(nValue);
-        }
-    }
+    const ::comphelper::NamedValueCollection aArguments (rArguments);
+    Reference<frame::XFrame> xFrame (aArguments.getOrDefault("Frame", Reference<frame::XFrame>()));
+    Reference<awt::XWindow> xParentWindow (aArguments.getOrDefault("ParentWindow", Reference<awt::XWindow>()));
+    const sal_uInt64 nBindingsValue (aArguments.getOrDefault("SfxBindings", sal_uInt64(0)));
+    SfxBindings* pBindings = reinterpret_cast<SfxBindings*>(nBindingsValue);
 
     ::Window* pParentWindow = VCLUnoHelper::GetWindow(xParentWindow);
     if ( ! xParentWindow.is() || pParentWindow==NULL)
@@ -138,10 +125,13 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     if (rsResourceURL.endsWithAsciiL("/TextPropertyPanel", strlen("/TextPropertyPanel")))
     {
         TextPropertyPanel* pPanel = TextPropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        pPanel->Show();
+        pPanel->GetParent()->Show();
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
-            pPanel);
+            pPanel,
+            ::boost::bind(&TextPropertyPanel::ShowMenu, pPanel));
     }
 
     if (rsResourceURL.endsWithAsciiL("/AreaPropertyPanel", strlen("/AreaPropertyPanel")))

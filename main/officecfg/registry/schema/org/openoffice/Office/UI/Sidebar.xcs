@@ -34,10 +34,10 @@
     <desc>Specification of decks and content panels of the sidebar.</desc>
   </info>
   <templates>
-    <group oor:name="Context">
+    <group oor:name="ContextMatcherType">
       <info>
-        <desc>A context specifies the combination of application and application
-        context (curor in table, selection active, text editing active).</desc>
+        <desc>A context specifies the combination of one application name and one or more
+        context names (eg cursor in table, selection active, text editing active).</desc>
       </info>
       <prop oor:name="Application" oor:type="xs:string" oor:localized="false">
         <info>
@@ -48,13 +48,18 @@
           com.sun.star.presentation.PresentationDocument (Impress),
           com.sun.star.drawing.DrawingDocument (Draw)</desc>
         </info>
-        <value></value>
       </prop>
-      <prop oor:name="ApplicationContext" oor:type="xs:string" oor:localized="false">
+      <prop oor:name="IsContextListNegated" oor:type="xs:boolean">
         <info>
-          <desc>Name of an application specific context.  The special name "any" matches any context name.</desc>
+          <desc>Use this to match the complement of the listed contexts.  The application match is not negated.
+          Defaults to false (ie match the contexts as listed).</desc>
         </info>
-        <value></value>
+        <value>false</value>
+      </prop>
+      <prop oor:name="ContextList" oor:type="oor:string-list" oor:localized="false">
+        <info>
+          <desc>Names of application specific contexts.  The special name "any" matches any context name.</desc>
+        </info>
       </prop>
     </group>
     <group oor:name="Deck">
@@ -93,11 +98,17 @@
         </info>
         <value></value>
       </prop>
-      <set oor:name="ContextList" oor:node-type="Context">
+      <set oor:name="ContextMatchers" oor:node-type="ContextMatcherType">
         <info>
-          <desc>List of contexts for which to show the deck.</desc>
+          <desc>One or more context matchers that define when to show the deck.</desc>
         </info>
       </set>
+      <prop oor:name="OrderIndex" oor:type="xs:int">
+        <info>
+          <desc>Index used for ordering decks in the tab bar.  Smaller values correspond to positions nearer to the top of the tab bar.</desc>
+        </info>
+        <value>10000</value>
+      </prop>
     </group>
     <group oor:name="Panel">
       <info>
@@ -133,25 +144,17 @@
         </info>
         <value></value>
       </prop>
-      <set oor:name="ContextList" oor:node-type="Context">
+      <set oor:name="ContextMatchers" oor:node-type="ContextMatcherType">
         <info>
-          <desc>List of contexts for which to show the panel.</desc>
+          <desc>One or more context matchers that define when to show the panel.</desc>
         </info>
       </set>
-      <prop oor:name="Layout" oor:type="xs:string">
+      <prop oor:name="AskPanelForContextMatcher" oor:type="xs:boolean">
         <info>
-          <desc>Name of the layout to use to calculate the height of the panel.
-          Known values are:
-          full              Use as much of the visible area as possible.
-                            When more than one panel use "full" then the available space is
-                                distributed equally.
-                            This is the fallback when the panel does not support the layout
-                                interface required by other layout names.
-          vertical-stack    Panel has to implement com::sun::star::ui::XVerticalStackLayoutElement.
-                            Use this layout if possible.
-          </desc>
+          <desc>Sometimes the context matcher in the registry is too simple.  In that case the panel can implement the XSidebarPanel interface and provide a more complex matcher in its isContextSupported() method.  That method is only called when the value of this AsPanel property is set to true.
+          Defaults to false.</desc>
         </info>
-        <value></value>
+        <value>false</value>
       </prop>
       <prop oor:name="ImplementationURL" oor:type="xs:string">
         <info>
@@ -170,6 +173,18 @@
           <desc>Index used for ordering panels inside a deck.  Smaller values correspond to positions nearer to the top of the deck.</desc>
         </info>
         <value>10000</value>
+      </prop>
+      <prop oor:name="HasMenu" oor:type="xs:boolean">
+        <info>
+          <desc>When true then the panel title bar displays a menu button. When clicked the ui::XSidebarPanel::showmenu() method is called.</desc>
+        </info>
+        <value>false</value>
+      </prop>
+      <prop oor:name="WantsCanvas" oor:type="xs:boolean">
+        <info>
+          <desc>Experimental: Set to true when panel wants to paint its content via a XCanvas.</desc>
+        </info>
+        <value>false</value>
       </prop>
     </group>
   </templates>

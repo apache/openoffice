@@ -31,16 +31,17 @@
 #include <com/sun/star/ui/XContextChangeEventListener.hpp>
 #include <com/sun/star/ui/XUIElement.hpp>
 #include <com/sun/star/ui/XToolPanel.hpp>
-#include <com/sun/star/ui/XVerticalStackLayoutElement.hpp>
+#include <com/sun/star/ui/XSidebarPanel.hpp>
+
 #include <boost/noncopyable.hpp>
+#include <boost/function.hpp>
 
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
 
 
-class Control;
-
+class Window;
 
 namespace sfx2 { namespace sidebar {
 
@@ -50,7 +51,7 @@ namespace
         css::ui::XContextChangeEventListener,
         css::ui::XUIElement,
         css::ui::XToolPanel,
-        css::ui::XVerticalStackLayoutElement
+        css::ui::XSidebarPanel
         > SidebarPanelBaseInterfaceBase;
 }
 
@@ -73,7 +74,8 @@ public:
     static cssu::Reference<css::ui::XUIElement> Create (
         const ::rtl::OUString& rsResourceURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        Control* pControl);
+        Window* mpWindow,
+        const ::boost::function<void(void)>& rMenuProvider);
 
     // XContextChangeEventListener
     virtual void SAL_CALL notifyContextChangeEvent (
@@ -102,24 +104,41 @@ public:
     virtual cssu::Reference<css::awt::XWindow> SAL_CALL getWindow (void)
         throw(cssu::RuntimeException);
 
-    // XVerticalStackLayoutElement
-    virtual sal_Int32 SAL_CALL getHeightForWidth (const sal_Int32 nWidth)
+    // XSidebarPanel
+    virtual css::ui::LayoutSize SAL_CALL getHeightForWidth (sal_Int32 nWidth)
         throw(cssu::RuntimeException);
-    
+    virtual void SAL_CALL showMenu (void)
+        throw(cssu::RuntimeException);
+    /** Always return <TRUE/> in the assumption that the panel
+        descriptor in the registry has this covered.
+        If a panel needs finer control then it has to overload this
+        method.
+    */
+    virtual sal_Bool SAL_CALL isContextSupported (
+        const ::rtl::OUString& rsApplicationName,
+        const ::rtl::OUString& rsContextName)
+        throw(cssu::RuntimeException);
+
 protected:
+    cssu::Reference<css::frame::XFrame> mxFrame;
+
     SidebarPanelBase (
         const ::rtl::OUString& rsResourceURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        Control* pControl);
+        Window* pWindow,
+        const ::boost::function<void(void)>& rMenuProvider);
     virtual ~SidebarPanelBase (void);
 
     virtual void SAL_CALL disposing (void)
         throw (cssu::RuntimeException);
 
+    void SetControl (::Window* pControl);
+    ::Window* GetControl (void) const;
+    
 private:
+    Window* mpControl;
     const ::rtl::OUString msResourceURL;
-    cssu::Reference<css::frame::XFrame> mxFrame;
-    Control* mpControl;
+    const ::boost::function<void(void)> maMenuProvider;
 };
 
 } } // end of namespace sfx2::sidebar

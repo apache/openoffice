@@ -23,7 +23,9 @@
 #define SFX_SIDEBAR_TITLE_BAR_HXX
 
 #include "Paint.hxx"
-#include "vcl/window.hxx"
+
+#include <vcl/window.hxx>
+#include <vcl/toolbox.hxx>
 
 
 namespace sfx2 { namespace sidebar {
@@ -34,22 +36,33 @@ class TitleBar
 public:
     TitleBar (
         const ::rtl::OUString& rsTitle,
-        Window* pParentWindow);
+        Window* pParentWindow,
+        const sidebar::Paint& rInitialBackgroundPaint);
     virtual ~TitleBar (void);
 
     virtual void Paint (const Rectangle& rUpdateArea);
+    virtual void DataChanged (const DataChangedEvent& rEvent);
+    virtual void SetPosSizePixel (
+        long nX,
+        long nY,
+        long nWidth,
+        long nHeight,
+        sal_uInt16 nFlags = WINDOW_POSSIZE_ALL);
 
 protected:
+    ToolBox maToolBox;
+
     virtual Rectangle GetTitleArea (const Rectangle& rTitleBarBox) = 0;
     virtual void PaintDecoration (const Rectangle& rTitleBarBox) = 0;
     virtual sidebar::Paint GetBackgroundPaint (void) = 0;
     virtual Color GetTextColor (void) = 0;
-
+    virtual void HandleToolBoxItemClick (const sal_uInt16 nItemIndex);
+    
 private:
     const ::rtl::OUString msTitle;
 
-    void PaintBackground (const Rectangle& rTitleBarBox);
     void PaintTitle (const Rectangle& rTitleBox);
+    DECL_LINK(SelectionHandler, ToolBox*);
 };
 
 

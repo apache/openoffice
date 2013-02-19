@@ -25,9 +25,10 @@
 #include <vcl/window.hxx>
 
 #include <com/sun/star/ui/XUIElement.hpp>
-#include <com/sun/star/ui/XVerticalStackLayoutElement.hpp>
+#include <com/sun/star/ui/XSidebarPanel.hpp>
 
 #include <boost/function.hpp>
+#include <boost/scoped_ptr.hpp>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
@@ -50,38 +51,33 @@ public:
 
     void Dispose (void);
     
-    const ::rtl::OUString& GetLayoutHint (void) const;
     TitleBar* GetTitleBar (void) const;
     bool IsTitleBarOptional (void) const;
     void SetUIElement (const cssu::Reference<css::ui::XUIElement>& rxElement);
-    cssu::Reference<css::ui::XVerticalStackLayoutElement> GetVerticalStackElement (void) const;
+    cssu::Reference<css::ui::XSidebarPanel> GetPanelComponent (void) const;
     void SetExpanded (const bool bIsExpanded);
     bool IsExpanded (void) const;
     bool HasIdPredicate (const ::rtl::OUString& rsId) const;
     
     virtual void Paint (const Rectangle& rUpdateArea);
-    virtual void SetPosSizePixel (
-        long nX,
-        long nY,
-        long nWidth,
-        long nHeight,
-        sal_uInt16 nFlags = WINDOW_POSSIZE_ALL);
+    virtual void Resize (void);
     virtual void DataChanged (const DataChangedEvent& rEvent);
     virtual void Activate (void);
 
+    void PrintWindowTree (void);
+    
 private:
     const ::rtl::OUString msPanelId;
-    const ::rtl::OUString msLayoutHint;
-    TitleBar* mpTitleBar;
+    ::boost::scoped_ptr<TitleBar> mpTitleBar;
     const bool mbIsTitleBarOptional;
     cssu::Reference<css::ui::XUIElement> mxElement;
-    cssu::Reference<css::awt::XWindow> mxElementWindow;
-    cssu::Reference<css::ui::XVerticalStackLayoutElement> mxVerticalStackLayoutElement;
+    cssu::Reference<css::ui::XSidebarPanel> mxPanelComponent;
     bool mbIsExpanded;
     const ::boost::function<void(void)> maDeckLayoutTrigger;
     Rectangle maBoundingBox;
 
-    DECL_LINK(WindowEventHandler, VclWindowEvent*);
+    void ShowMenu (void);
+    cssu::Reference<css::awt::XWindow> GetElementWindow (void);
 };
 
     

@@ -29,12 +29,16 @@ class ToolBox;
 
 namespace sfx2 { namespace sidebar {
 
+class ToolBoxBackground;
+
+
 class SFX2_DLLPUBLIC ControlFactory
 {
 public:
     static CheckBox* CreateMenuButton (Window* pParentWindow);
     static ImageRadioButton* CreateTabItem (Window* pParentWindow);
     static ToolBox* CreateToolBox (Window* pParentWindow, const ResId& rResId);
+    static Window* CreateToolBoxBackground (Window* pParentWindow);
 };
 
 

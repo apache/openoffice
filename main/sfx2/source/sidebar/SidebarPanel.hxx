@@ -65,14 +65,6 @@ protected:
 
     virtual void SAL_CALL disposing (void);
 
-    // XSidebarPanel
-    virtual cssu::Reference<css::rendering::XCanvas> SAL_CALL getCanvas (void)
-        throw (cssu::RuntimeException);
-    virtual css::awt::Point SAL_CALL getPositionOnScreen (void)
-        throw (cssu::RuntimeException);
-    virtual cssu::Reference<css::beans::XPropertySet> SAL_CALL getThemeProperties (void)
-        throw (cssu::RuntimeException);
-    
 private:
     Panel* mpPanel;
     cssu::Reference<css::rendering::XCanvas> mxCanvas;

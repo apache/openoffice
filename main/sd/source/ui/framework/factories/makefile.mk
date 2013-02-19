@@ -48,6 +48,7 @@ SLOFILES =      							\
 	$(SLO)$/Pane.obj						\
 	$(SLO)$/PresentationFactory.obj			\
 	$(SLO)$/TaskPanelFactory.obj			\
+	$(SLO)$/TaskPanelResource.obj			\
 	$(SLO)$/ViewShellWrapper.obj
 
 # --- Tagets -------------------------------------------------------

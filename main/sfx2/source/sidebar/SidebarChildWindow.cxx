@@ -19,18 +19,16 @@
  * 
  *************************************************************/
 
-
-
 #include "precompiled_sfx2.hxx"
 
-#include "sfx2/SidebarChildWindow.hxx"
+#include "sfx2/sidebar/SidebarChildWindow.hxx"
 #include "SidebarDockingWindow.hxx"
 #include "sfx2/sfxsids.hrc"
 #include "helpid.hrc"
 #include "sfx2/dockwin.hxx"
 
 
-namespace sfx2 {
+namespace sfx2 { namespace sidebar {
 
 
 SFX_IMPL_DOCKINGWINDOW(SidebarChildWindow, SID_SIDEBAR);
@@ -60,4 +58,4 @@ SidebarChildWindow::SidebarChildWindow (
 }
 
 
-} // end of namespace sfx2
+} } // end of namespace sfx2::sidebar

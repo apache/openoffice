@@ -216,16 +216,17 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/sidebar/SidebarChildWindow \
 	sfx2/source/sidebar/SidebarDockingWindow \
 	sfx2/source/sidebar/SidebarController \
-	sfx2/source/sidebar/SidebarPanel \
 	sfx2/source/sidebar/SidebarPanelBase \
 	sfx2/source/sidebar/SidebarToolBox \
 	sfx2/source/sidebar/AsynchronousCall \
 	sfx2/source/sidebar/Context \
+	sfx2/source/sidebar/ContextMatcher \
 	sfx2/source/sidebar/ControlFactory \
 	sfx2/source/sidebar/ControllerItem \
 	sfx2/source/sidebar/Deck \
 	sfx2/source/sidebar/DeckConfiguration \
 	sfx2/source/sidebar/DeckDescriptor \
+	sfx2/source/sidebar/DeckLayouter \
 	sfx2/source/sidebar/DeckTitleBar \
 	sfx2/source/sidebar/DrawHelper \
 	sfx2/source/sidebar/EnumContext \

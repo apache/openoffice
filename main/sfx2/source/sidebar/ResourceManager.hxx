@@ -24,7 +24,7 @@
 
 #include "DeckDescriptor.hxx"
 #include "PanelDescriptor.hxx"
-#include "sfx2/sidebar/EnumContext.hxx"
+#include "Context.hxx"
 #include <unotools/confignode.hxx>
 #include <com/sun/star/frame/XFrame.hpp>
 #include <set>
@@ -36,6 +36,8 @@ namespace cssu = ::com::sun::star::uno;
 
 namespace sfx2 { namespace sidebar {
 
+class Context;
+
 /** Read the content of the Sidebar.xcu file and provide access
     methods so that the sidebar can easily decide which content panels
     to display for a certain context.
@@ -46,7 +48,7 @@ public:
     static ResourceManager& Instance (void);
 
     const DeckDescriptor* GetBestMatchingDeck (
-        const EnumContext& rContext,
+        const Context& rContext,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
     const DeckDescriptor* GetDeckDescriptor (
@@ -69,12 +71,12 @@ public:
 
     const IdContainer& GetMatchingDecks (
         IdContainer& rDeckDescriptors,
-        const EnumContext& rContext,
+        const Context& rContext,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
     const IdContainer& GetMatchingPanels (
         IdContainer& rPanelDescriptors,
-        const EnumContext& rContext,
+        const Context& rContext,
         const ::rtl::OUString& rsDeckId,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
@@ -95,9 +97,9 @@ private:
 
     void ReadDeckList (void);
     void ReadPanelList (void);
-    void ReadContextList (
+    void ReadContextMatcher (
         const ::utl::OConfigurationNode& rNode,
-        ::std::vector<EnumContext>& rContextContainer) const;
+        ContextMatcher& rContextMatcher) const;
     void ReadLegacyAddons (
         const cssu::Reference<css::frame::XFrame>& rxFrame);
     ::utl::OConfigurationTreeRoot GetLegacyAddonRootNode (

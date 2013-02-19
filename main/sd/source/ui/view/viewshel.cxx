@@ -174,7 +174,8 @@ ViewShell::~ViewShell()
 {
     // Keep the content window from accessing in its destructor the
     // WindowUpdater.
-    mpContentWindow->SetViewShell(NULL);
+    if (mpContentWindow)
+        mpContentWindow->SetViewShell(NULL);
 
 	delete mpZoomList;
 
@@ -183,6 +184,13 @@ ViewShell::~ViewShell()
     if (mpImpl->mpSubShellFactory.get() != NULL)
         GetViewShellBase().GetViewShellManager()->RemoveSubShellFactory(
             this,mpImpl->mpSubShellFactory);
+
+    if (mpContentWindow)
+    {
+        OSL_TRACE("destroying mpContentWindow at %x with parent %x", mpContentWindow.get(),
+            mpContentWindow->GetParent());
+        mpContentWindow.reset();
+    }
 }
 
 
@@ -964,9 +972,10 @@ void ViewShell::ArrangeGUIElements (void)
     {
         OSL_ASSERT (GetViewShell()!=NULL);
 
-        mpContentWindow->SetPosSizePixel(
-            Point(nLeft,nTop),
-            Size(nRight-nLeft,nBottom-nTop));
+        if (mpContentWindow)
+            mpContentWindow->SetPosSizePixel(
+                Point(nLeft,nTop),
+                Size(nRight-nLeft,nBottom-nTop));
     }
 
     // Windows in the center and rulers at the left and top side.

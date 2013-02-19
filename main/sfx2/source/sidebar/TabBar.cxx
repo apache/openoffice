@@ -31,6 +31,7 @@
 
 #include <vcl/gradient.hxx>
 #include <vcl/image.hxx>
+#include <vcl/wrkwin.hxx>
 #include <comphelper/processfactory.hxx>
 #include <comphelper/componentcontext.hxx>
 #include <tools/svborder.hxx>
@@ -60,15 +61,17 @@ TabBar::TabBar (
 {
     SetBackground(Theme::GetPaint(Theme::Paint_TabBarBackground).GetWallpaper());
     
-    mpMenuButton->SetHelpText(A2S("This is the menu button"));
-    mpMenuButton->SetQuickHelpText(A2S("This is the menu button"));
     mpMenuButton->SetModeImage(
-        Theme::GetImage(Theme::Image_Menu),
+        Theme::GetImage(Theme::Image_TabBarMenu),
         Theme::IsHighContrastMode()
             ? BMP_COLOR_HIGHCONTRAST
             : BMP_COLOR_NORMAL);
     mpMenuButton->SetClickHdl(LINK(this, TabBar, OnToolboxClicked));
     Layout();
+
+#ifdef DEBUG
+    SetText(A2S("TabBar"));
+#endif
 }
 
 
@@ -110,13 +113,12 @@ void TabBar::SetDecks (
 {
     // Remove the current buttons.
     {
-        Window aTemporaryParent (NULL,0);
-        for(ItemContainer::const_iterator
+        for(ItemContainer::iterator
                 iItem(maItems.begin()), iEnd(maItems.end());
             iItem!=iEnd;
             ++iItem)
         {
-            removeWindow(iItem->mpButton, &aTemporaryParent);
+            iItem->mpButton.reset();
         }
         maItems.clear();
     }
@@ -138,7 +140,7 @@ void TabBar::SetDecks (
             
         Item& rItem (maItems[nIndex++]);
         rItem.msDeckId = pDescriptor->msId;
-        rItem.mpButton = CreateTabItem(*pDescriptor);
+        rItem.mpButton.reset(CreateTabItem(*pDescriptor));
         rItem.mpButton->SetClickHdl(LINK(&rItem, TabBar::Item, HandleClick));
         rItem.maDeckActivationFunctor = maDeckActivationFunctor;
         rItem.mbIsHiddenByDefault = false;
@@ -159,7 +161,7 @@ void TabBar::UpdateButtonIcons (void)
             ? BMP_COLOR_HIGHCONTRAST
             : BMP_COLOR_NORMAL);
     
-    mpMenuButton->SetModeImage(Theme::GetImage(Theme::Image_Menu), eColorMode);
+    mpMenuButton->SetModeImage(Theme::GetImage(Theme::Image_TabBarMenu), eColorMode);
 
     for(ItemContainer::const_iterator
             iItem(maItems.begin()), iEnd(maItems.end());

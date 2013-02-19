@@ -53,15 +53,23 @@ ToolBox* ControlFactory::CreateToolBox (
     Window* pParentWindow,
     const ResId& rResId)
 {
-    Window* pBorderWindow = new ToolBoxBackground(pParentWindow);
-    pBorderWindow->Show();
-    
-    SidebarToolBox* pToolBox = new SidebarToolBox(pBorderWindow, rResId);
-    pToolBox->SetBorderWindow(pBorderWindow);
+    SidebarToolBox* pToolBox = new SidebarToolBox(pParentWindow, rResId);
+    pToolBox->SetBorderWindow(pParentWindow);
 
     pToolBox->Invalidate();
     
     return pToolBox;
+}
+
+
+
+
+Window* ControlFactory::CreateToolBoxBackground (
+    Window* pParentWindow)
+{
+    ToolBoxBackground* pBorderWindow = new ToolBoxBackground(pParentWindow);
+    pBorderWindow->Show();
+    return pBorderWindow;
 }
 
 } } // end of namespace sfx2::sidebar

@@ -31,6 +31,10 @@
 #include <vcl/gradient.hxx>
 #include <vcl/image.hxx>
 
+#ifdef DEBUG
+#include "Tools.hxx"
+#endif
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -42,12 +46,27 @@ static const sal_Int32 gaRightIconPadding (5);
 PanelTitleBar::PanelTitleBar (
     const ::rtl::OUString& rsTitle,
     Window* pParentWindow,
-    Panel* pPanel)
-    : TitleBar(rsTitle, pParentWindow),
+    Panel* pPanel,
+    const ::boost::function<void(void)>& rMenuAction)
+    : TitleBar(rsTitle, pParentWindow, GetBackgroundPaint()),
       mbIsLeftButtonDown(false),
-      mpPanel(pPanel)
+      mpPanel(pPanel),
+      mnMenuItemIndex(1),
+      maMenuAction(rMenuAction)
 {
     OSL_ASSERT(mpPanel != NULL);
+
+    if (maMenuAction)
+    {
+        maToolBox.InsertItem(
+            mnMenuItemIndex,
+            Theme::GetImage(Theme::Image_PanelMenu));
+        maToolBox.SetOutStyle(TOOLBOX_STYLE_FLAT);
+    }
+
+#ifdef DEBUG
+    SetText(A2S("PanelTitleBar"));
+#endif
 }
 
 
@@ -113,6 +132,16 @@ Color PanelTitleBar::GetTextColor (void)
 
 
 
+void PanelTitleBar::HandleToolBoxItemClick (const sal_uInt16 nItemIndex)
+{
+    if (nItemIndex == mnMenuItemIndex)
+        if (maMenuAction)
+            maMenuAction();
+}
+
+
+
+
 void PanelTitleBar::MouseButtonDown (const MouseEvent& rMouseEvent)
 {
     if (rMouseEvent.IsLeft())
@@ -146,5 +175,13 @@ void PanelTitleBar::MouseButtonUp (const MouseEvent& rMouseEvent)
 }
 
 
+
+
+void PanelTitleBar::DataChanged (const DataChangedEvent& rEvent)
+{
+    maToolBox.SetItemImage(
+        mnMenuItemIndex,
+        Theme::GetImage(Theme::Image_PanelMenu));
+}
 
 } } // end of namespace sfx2::sidebar

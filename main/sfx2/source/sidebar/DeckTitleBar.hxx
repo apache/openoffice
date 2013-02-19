@@ -24,6 +24,8 @@
 
 #include "TitleBar.hxx"
 
+#include <boost/function.hpp>
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -33,16 +35,26 @@ class DeckTitleBar
 public:
     DeckTitleBar (
         const ::rtl::OUString& rsTitle,
-        Window* pParentWindow);
+        Window* pParentWindow,
+        const ::boost::function<void(void)>& rCloserAction);
     virtual ~DeckTitleBar (void);
+
+    void SetCloserVisible (const bool bIsCloserVisible);
+    
+    virtual void DataChanged (const DataChangedEvent& rEvent);
 
 protected:
     virtual Rectangle GetTitleArea (const Rectangle& rTitleBarBox);
     virtual void PaintDecoration (const Rectangle& rTitleBarBox);
     virtual sidebar::Paint GetBackgroundPaint (void);
     virtual Color GetTextColor (void);
-};
+    virtual void HandleToolBoxItemClick (const sal_uInt16 nItemIndex);
 
+private:
+    const sal_uInt16 mnCloserItemIndex;
+    const ::boost::function<void(void)> maCloserAction;
+    bool mbIsCloserVisible;
+};
 
 } } // end of namespace sfx2::sidebar
 

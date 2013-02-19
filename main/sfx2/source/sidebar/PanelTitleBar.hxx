@@ -24,6 +24,8 @@
 
 #include "TitleBar.hxx"
 
+#include <boost/function.hpp>
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -36,9 +38,11 @@ public:
     PanelTitleBar (
         const ::rtl::OUString& rsTitle,
         Window* pParentWindow,
-        Panel* pPanel);
+        Panel* pPanel,
+        const ::boost::function<void(void)>& rMenuAction);
     virtual ~PanelTitleBar (void);
 
+    virtual void DataChanged (const DataChangedEvent& rEvent);
     virtual void MouseButtonDown (const MouseEvent& rMouseEvent);
     virtual void MouseButtonUp (const MouseEvent& rMouseEvent);
 
@@ -47,10 +51,13 @@ protected:
     virtual void PaintDecoration (const Rectangle& rTitleBarBox);
     virtual sidebar::Paint GetBackgroundPaint (void);
     virtual Color GetTextColor (void);
+    virtual void HandleToolBoxItemClick (const sal_uInt16 nItemIndex);
 
 private:
     bool mbIsLeftButtonDown;
     Panel* mpPanel;
+    const sal_uInt16 mnMenuItemIndex;
+    const ::boost::function<void(void)> maMenuAction;
 };
 
 

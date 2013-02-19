@@ -30,6 +30,7 @@
 #include <cppuhelper/basemutex.hxx>
 #include <tools/gen.hxx>
 #include <rtl/ref.hxx>
+#include <vcl/wall.hxx>
 
 #include <com/sun/star/beans/XPropertySet.hpp>
 
@@ -76,8 +77,10 @@ public:
         Image_Grip,
         Image_Expand,
         Image_Collapse,
-        Image_Menu,
+        Image_TabBarMenu,
+        Image_PanelMenu,
         Image_ToolBoxItemSeparator,
+        Image_Closer,
 
         __Image_Color,
         
@@ -140,6 +143,7 @@ public:
     static Image GetImage (const ThemeItem eItem);
     static Color GetColor (const ThemeItem eItem);
     static const Paint& GetPaint (const ThemeItem eItem);
+    static const Wallpaper GetWallpaper (const ThemeItem eItem);
     static sal_Int32 GetInteger (const ThemeItem eItem);
     static bool GetBoolean (const ThemeItem eItem);
     static Rectangle GetRectangle (const ThemeItem eItem);

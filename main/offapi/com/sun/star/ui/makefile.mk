@@ -50,6 +50,7 @@ IDLFILES=\
     ItemDescriptor.idl                          \
     ItemStyle.idl                               \
     ItemType.idl                                \
+	LayoutSize.idl								\
     ModuleUICategoryDescription.idl             \
     ModuleUICommandDescription.idl              \
     ModuleUIConfigurationManager.idl            \
@@ -74,6 +75,7 @@ IDLFILES=\
     XImageManager.idl                           \
     XModuleUIConfigurationManager.idl           \
     XModuleUIConfigurationManagerSupplier.idl   \
+	XSidebar.idl								\
 	XSidebarPanel.idl							\
     XUIConfiguration.idl                        \
     XUIConfigurationListener.idl                \
@@ -86,7 +88,6 @@ IDLFILES=\
     XUIElementFactoryRegistration.idl           \
     XUIElementSettings.idl                      \
     XUIFunctionListener.idl                     \
-    XVerticalStackLayoutElement.idl             \
     XToolPanel.idl
 
 # ------------------------------------------------------------------

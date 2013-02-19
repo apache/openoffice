@@ -34,11 +34,15 @@ namespace sfx2 { namespace sidebar {
 
 TitleBar::TitleBar (
     const ::rtl::OUString& rsTitle,
-    Window* pParentWindow)
+    Window* pParentWindow,
+    const sidebar::Paint& rInitialBackgroundPaint)
     : Window(pParentWindow),
+      maToolBox(this),
       msTitle(rsTitle)
 {
-    SetBackground(Wallpaper());
+    SetBackground(rInitialBackgroundPaint.GetWallpaper());
+
+    maToolBox.SetSelectHdl(LINK(this, TitleBar, SelectionHandler));
 }
 
 
@@ -64,8 +68,6 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
         aWindowSize.Height()
         );
 
-    
-    PaintBackground(aTitleBarBox);
     PaintDecoration(aTitleBarBox);
     PaintTitle(GetTitleArea(aTitleBarBox));
 }
@@ -73,29 +75,38 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
 
 
 
-void TitleBar::PaintBackground (const Rectangle& rTitleBarBox)
+void TitleBar::DataChanged (const DataChangedEvent& rEvent)
 {
-    const sidebar::Paint aBackgroundPaint (GetBackgroundPaint());
+    (void)rEvent;
+    
+    SetBackground(GetBackgroundPaint().GetWallpaper());
+}
 
-    switch(aBackgroundPaint.GetType())
-    {
-        case Paint::NoPaint:
-        default:
-            break;
 
-        case Paint::ColorPaint:
-            // Set title bar colors.
-            Push(PUSH_LINECOLOR | PUSH_FILLCOLOR);
-            SetFillColor(aBackgroundPaint.GetColor());
-            SetLineColor();
-            DrawRect(rTitleBarBox);
-            Pop();
-            break;
 
-        case Paint::GradientPaint:
-            DrawGradient(rTitleBarBox, aBackgroundPaint.GetGradient());
-            break;
-    }
+
+void TitleBar::SetPosSizePixel (
+    long nX,
+    long nY,
+    long nWidth,
+    long nHeight,
+    sal_uInt16 nFlags)
+{
+    Window::SetPosSizePixel(nX,nY,nWidth,nHeight,nFlags);
+
+    // Place the toolbox.
+    const sal_Int32 nToolBoxWidth (maToolBox.GetItemPosRect(0).GetWidth());
+    maToolBox.SetPosSizePixel(nWidth-nToolBoxWidth,0,nToolBoxWidth,nHeight);
+    maToolBox.Show();
+}
+
+
+
+
+void TitleBar::HandleToolBoxItemClick (const sal_uInt16 nItemIndex)
+{
+    (void)nItemIndex;
+    // Any real processing has to be done in derived class.
 }
 
 
@@ -120,5 +131,18 @@ void TitleBar::PaintTitle (const Rectangle& rTitleBox)
     Pop();
 }
 
+
+
+
+IMPL_LINK(TitleBar, SelectionHandler, ToolBox*, pToolBox)
+{
+    (void)pToolBox;
+    OSL_ASSERT(&maToolBox==pToolBox);
+    const sal_uInt16 nItemId (maToolBox.GetHighlightItemId());
+
+    HandleToolBoxItemClick(nItemId);
+    
+    return sal_True;
+}
 
 } } // end of namespace sfx2::sidebar

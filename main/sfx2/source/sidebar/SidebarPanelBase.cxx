@@ -39,13 +39,15 @@ namespace sfx2 { namespace sidebar {
 Reference<ui::XUIElement> SidebarPanelBase::Create (
     const ::rtl::OUString& rsResourceURL,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    Control* pControl)
+    Window* pWindow,
+    const ::boost::function<void(void)>& rMenuProvider)
 {
     Reference<ui::XUIElement> xUIElement (
         new SidebarPanelBase(
             rsResourceURL,
             rxFrame,
-            pControl));
+            pWindow,
+            rMenuProvider));
     return xUIElement;
 }
 
@@ -55,17 +57,24 @@ Reference<ui::XUIElement> SidebarPanelBase::Create (
 SidebarPanelBase::SidebarPanelBase (
     const ::rtl::OUString& rsResourceURL,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    Control* pControl)
+    Window* pWindow,
+    const ::boost::function<void(void)>& rMenuProvider)
     : SidebarPanelBaseInterfaceBase(m_aMutex),
-      msResourceURL(rsResourceURL),
       mxFrame(rxFrame),
-      mpControl(pControl)
+      mpControl(pWindow),
+      msResourceURL(rsResourceURL),
+      maMenuProvider(rMenuProvider)
 {
-    cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
-        css::ui::ContextChangeEventMultiplexer::get(
-            ::comphelper::getProcessComponentContext()));
-    if (xMultiplexer.is())
-        xMultiplexer->addContextChangeEventListener(this, mxFrame->getController());
+    if (mxFrame.is())
+    {
+        cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
+            css::ui::ContextChangeEventMultiplexer::get(
+                ::comphelper::getProcessComponentContext()));
+        if (xMultiplexer.is())
+            xMultiplexer->addContextChangeEventListener(this, mxFrame->getController());
+    }
+    if (mpControl != NULL)
+        mpControl->Show();
 }
 
 
@@ -97,21 +106,36 @@ void SAL_CALL SidebarPanelBase::disposing (void)
 
 
 
+void SidebarPanelBase::SetControl (::Window* pControl)
+{
+    OSL_TRACE("setting control of SidebarPanelBase at %x to %x", this, pControl);
+    mpControl = pControl;
+}
+
+
+
+
+::Window* SidebarPanelBase::GetControl (void) const
+{
+    return mpControl;
+}
+
+
+
+
 // XContextChangeEventListener
 void SAL_CALL SidebarPanelBase::notifyContextChangeEvent (
     const ui::ContextChangeEventObject& rEvent)
     throw (cssu::RuntimeException)
 {
-    if (mpControl != NULL)
+    ContextChangeReceiverInterface* pContextChangeReceiver
+        = dynamic_cast<ContextChangeReceiverInterface*>(mpControl);
+    if (pContextChangeReceiver != NULL)
     {
         const EnumContext aContext(
             EnumContext::GetApplicationEnum(rEvent.ApplicationName),
             EnumContext::GetContextEnum(rEvent.ContextName));
-
-        ContextChangeReceiverInterface* pContextChangeReceiver
-            = dynamic_cast<ContextChangeReceiverInterface*>(mpControl);
-        if (pContextChangeReceiver != NULL)
-            pContextChangeReceiver->HandleContextChange(aContext);
+        pContextChangeReceiver->HandleContextChange(aContext);
     }
 }
 
@@ -194,15 +218,41 @@ Reference<awt::XWindow> SAL_CALL SidebarPanelBase::getWindow (void)
 
 
 
-sal_Int32 SAL_CALL SidebarPanelBase::getHeightForWidth (const sal_Int32 nWidth)
+ui::LayoutSize SAL_CALL SidebarPanelBase::getHeightForWidth (const sal_Int32 nWidth)
     throw(cssu::RuntimeException)
 {
     if (mpControl != NULL)
-        return mpControl->GetSizePixel().Height();
+    {
+        const sal_Int32 nHeight (mpControl->GetSizePixel().Height());
+        return ui::LayoutSize(nHeight,nHeight,nHeight);
+    }
     else
-        return -1;
+        return ui::LayoutSize(0,0,0);
 }
 
+
+
+
+void SAL_CALL SidebarPanelBase::showMenu (void)
+    throw(cssu::RuntimeException)
+{
+    if (maMenuProvider)
+        maMenuProvider();
+}
+
+
+
+
+sal_Bool SAL_CALL SidebarPanelBase::isContextSupported (
+    const ::rtl::OUString& rsApplicationName,
+    const ::rtl::OUString& rsContextName)
+    throw(cssu::RuntimeException)
+{
+    (void)rsApplicationName;
+    (void)rsContextName;
+    
+    return sal_True;
+}
 
 
 } } // end of namespace sfx2::sidebar

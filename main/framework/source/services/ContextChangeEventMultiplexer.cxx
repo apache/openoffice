@@ -28,6 +28,9 @@ using ::rtl::OUString;
 
 #define A2S(s) ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(s))
 
+using namespace css;
+using namespace cssu;
+
 namespace framework {
 
 #define IMPLEMENTATION_NAME "org.apache.openoffice.comp.framework.ContextChangeEventMultiplexer"
@@ -64,9 +67,16 @@ void SAL_CALL ContextChangeEventMultiplexer::disposing (void)
          iContainer!=iEnd;
          ++iContainer)
     {
+        // Unregister from the focus object.
+        Reference<lang::XComponent> xComponent (iContainer->first, UNO_QUERY);
+        if (xComponent.is())
+            xComponent->removeEventListener(this);
+
+        // Tell all listeners that we are being disposed.
+        const FocusDescriptor& rFocusDescriptor (iContainer->second);
         for (ListenerContainer::const_iterator
-                 iListener(iContainer->second.maListeners.begin()),
-                 iContainerEnd(iContainer->second.maListeners.end());
+                 iListener(rFocusDescriptor.maListeners.begin()),
+                 iContainerEnd(rFocusDescriptor.maListeners.end());
              iListener!=iContainerEnd;
              ++iListener)
         {
@@ -91,18 +101,10 @@ void SAL_CALL ContextChangeEventMultiplexer::addContextChangeEventListener (
             static_cast<XWeak*>(this),
             0);
 
-    ListenerMap::iterator iDescriptor (maListeners.find(rxEventFocus));
-    if (iDescriptor == maListeners.end())
+    FocusDescriptor* pFocusDescriptor = GetFocusDescriptor(rxEventFocus, true);
+    if (pFocusDescriptor != NULL)
     {
-        // Create a new listener container for the event focus.
-        iDescriptor = maListeners.insert(
-            ListenerMap::value_type(
-                rxEventFocus,
-                FocusDescriptor())).first;
-    }
-    if (iDescriptor != maListeners.end())
-    {
-        ListenerContainer& rContainer (iDescriptor->second.maListeners);
+        ListenerContainer& rContainer (pFocusDescriptor->maListeners);
         if (::std::find(rContainer.begin(), rContainer.end(), rxListener) == rContainer.end())
             rContainer.push_back(rxListener);
         else
@@ -115,12 +117,12 @@ void SAL_CALL ContextChangeEventMultiplexer::addContextChangeEventListener (
 
     // Send out an initial event that informs the new listener about
     // the current context.
-    if (rxEventFocus.is() && iDescriptor != maListeners.end())
+    if (rxEventFocus.is() && pFocusDescriptor!=NULL)
     {
         css::ui::ContextChangeEventObject aEvent (
             NULL,
-            iDescriptor->second.msCurrentApplicationName,
-            iDescriptor->second.msCurrentContextName);
+            pFocusDescriptor->msCurrentApplicationName,
+            pFocusDescriptor->msCurrentContextName);
         rxListener->notifyContextChangeEvent(aEvent);
     }
 }
@@ -138,21 +140,18 @@ void SAL_CALL ContextChangeEventMultiplexer::removeContextChangeEventListener (
             A2S("can not remove an empty reference"),
             static_cast<XWeak*>(this), 0);
 
-    ListenerMap::iterator iDescriptor (maListeners.find(rxEventFocus));
-    if (iDescriptor != maListeners.end())
+    FocusDescriptor* pFocusDescriptor = GetFocusDescriptor(rxEventFocus, false);
+    if (pFocusDescriptor != NULL)
     {
-        ListenerContainer& rContainer (iDescriptor->second.maListeners);
+        ListenerContainer& rContainer (pFocusDescriptor->maListeners);
         const ListenerContainer::iterator iListener (
             ::std::find(rContainer.begin(), rContainer.end(), rxListener));
         if (iListener != rContainer.end())
         {
             rContainer.erase(iListener);
 
-            // Remove the listener container as well when its last
-            // listener was just removed.  This prevents us from
-            // holding the focus alive.
-            if (rContainer.empty())
-                maListeners.erase(iDescriptor);
+            // We hold on to the focus descriptor even when the last listener has been removed.
+            // This allows us to keep track of the current context and send it to new listeners.
         }
     }
  
@@ -170,7 +169,6 @@ void SAL_CALL ContextChangeEventMultiplexer::removeAllContextChangeEventListener
             A2S("can not remove an empty reference"),
             static_cast<XWeak*>(this), 0);
 
-    ::std::vector<cssu::Reference<cssu::XInterface> > aContainersToRemove;
     for (ListenerMap::iterator
              iContainer(maListeners.begin()),
              iEnd(maListeners.end());
@@ -183,20 +181,9 @@ void SAL_CALL ContextChangeEventMultiplexer::removeAllContextChangeEventListener
         {
             iContainer->second.maListeners.erase(iListener);
 
-            // When we just removed the last listener then mark the
-            // container as to be removed.
-            if (iContainer->second.maListeners.empty())
-                aContainersToRemove.push_back(iContainer->first);
+            // We hold on to the focus descriptor even when the last listener has been removed.
+            // This allows us to keep track of the current context and send it to new listeners.
         }
-    }
-
-    for (::std::vector<cssu::Reference<cssu::XInterface> >::iterator
-             iFocus(aContainersToRemove.begin()),
-             iEnd(aContainersToRemove.end());
-         iFocus!=iEnd;
-         ++iFocus)
-    {
-        maListeners.erase(*iFocus);
     }
 }
 
@@ -211,11 +198,11 @@ void SAL_CALL ContextChangeEventMultiplexer::broadcastContextChangeEvent (
     // Remember the current context.
     if (rxEventFocus.is())
     {
-        ListenerMap::iterator iDescriptor (maListeners.find(rxEventFocus));
-        if (iDescriptor != maListeners.end())
+        FocusDescriptor* pFocusDescriptor = GetFocusDescriptor(rxEventFocus, true);
+        if (pFocusDescriptor != NULL)
         {
-            iDescriptor->second.msCurrentApplicationName = rEventObject.ApplicationName;
-            iDescriptor->second.msCurrentContextName = rEventObject.ContextName;
+            pFocusDescriptor->msCurrentApplicationName = rEventObject.ApplicationName;
+            pFocusDescriptor->msCurrentContextName = rEventObject.ContextName;
         }
     }
 
@@ -231,12 +218,12 @@ void ContextChangeEventMultiplexer::BroadcastEventToSingleContainer (
     const css::ui::ContextChangeEventObject& rEventObject,
     const cssu::Reference<cssu::XInterface>& rxEventFocus)
 {
-    ListenerMap::iterator iDescriptor (maListeners.find(rxEventFocus));
-    if (iDescriptor != maListeners.end())
+    FocusDescriptor* pFocusDescriptor = GetFocusDescriptor(rxEventFocus, false);
+    if (pFocusDescriptor != NULL)
     {
         // Create a copy of the listener container to avoid problems
         // when one of the called listeners calls add... or remove...
-        ListenerContainer aContainer (iDescriptor->second.maListeners);
+        ListenerContainer aContainer (pFocusDescriptor->maListeners);
         for (ListenerContainer::const_iterator
                  iListener(aContainer.begin()),
                  iEnd(aContainer.end());
@@ -246,6 +233,33 @@ void ContextChangeEventMultiplexer::BroadcastEventToSingleContainer (
             (*iListener)->notifyContextChangeEvent(rEventObject);
         }
     }
+}
+
+
+
+
+ContextChangeEventMultiplexer::FocusDescriptor* ContextChangeEventMultiplexer::GetFocusDescriptor (
+    const cssu::Reference<cssu::XInterface>& rxEventFocus,
+    const bool bCreateWhenMissing)
+{
+    ListenerMap::iterator iDescriptor (maListeners.find(rxEventFocus));
+    if (iDescriptor == maListeners.end() && bCreateWhenMissing)
+    {
+        // Listen for the focus being disposed.
+        Reference<lang::XComponent> xComponent (rxEventFocus, UNO_QUERY);
+        if (xComponent.is())
+            xComponent->addEventListener(this);
+
+        // Create a new listener container for the event focus.
+        iDescriptor = maListeners.insert(
+            ListenerMap::value_type(
+                rxEventFocus,
+                FocusDescriptor())).first;
+    }
+    if (iDescriptor != maListeners.end())
+        return &iDescriptor->second;
+    else
+        return NULL;
 }
 
 
@@ -303,6 +317,26 @@ cssu::Sequence<OUString> SAL_CALL ContextChangeEventMultiplexer::getSupportedSer
     throw (cssu::RuntimeException)
 {
     return static_GetSupportedServiceNames();
+}
+
+
+
+
+void SAL_CALL ContextChangeEventMultiplexer::disposing (
+    const css::lang::EventObject& rEvent)
+    throw (cssu::RuntimeException)
+{
+    ListenerMap::iterator iDescriptor (maListeners.find(rEvent.Source));
+
+    if (iDescriptor == maListeners.end())
+    {
+        OSL_ASSERT(iDescriptor != maListeners.end());
+        return;
+    }
+
+    // Should we notify the remaining listeners?
+
+    maListeners.erase(iDescriptor);
 }
 
 

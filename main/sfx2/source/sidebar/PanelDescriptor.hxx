@@ -23,7 +23,7 @@
 #define SFX_SIDEBAR_PANEL_DESCRIPTOR_HXX
 
 #include "sfx2/sidebar/EnumContext.hxx"
-
+#include "ContextMatcher.hxx"
 #include <boost/shared_ptr.hpp>
 
 
@@ -37,11 +37,12 @@ public:
     ::rtl::OUString msId;
     ::rtl::OUString msDeckId;
     ::rtl::OUString msHelpURL;
-    ::std::vector<EnumContext> maContexts;
-    ::rtl::OUString msLayout;
+    ContextMatcher maContextMatcher;
     ::rtl::OUString msImplementationURL;
     sal_Int32 mnOrderIndex;
-
+    bool mbHasMenu;
+    bool mbWantsCanvas;
+    
     PanelDescriptor (void);
     PanelDescriptor (const PanelDescriptor& rPanelDescriptor);
     ~PanelDescriptor (void);
