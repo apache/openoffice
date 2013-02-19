@@ -352,13 +352,11 @@ TabPage TP_SUMMARY
 String STR_FORM
 {
     Text [ en-US ] = "Form '$name$'";
-    Text [ x-comment ] = "This refers to a form document inside a database document.";
 };
 
 String STR_REPORT
 {
     Text [ en-US ] = "Report '$name$'";
-    Text [ x-comment ] = "This refers to a report document inside a database document.";
 };
 
 String STR_OVERALL_PROGRESS
