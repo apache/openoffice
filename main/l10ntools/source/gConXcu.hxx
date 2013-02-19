@@ -37,20 +37,19 @@ class xcu_stack_entry;
 class convert_xcu : public convert_gen_impl
 {
   public:
-    typedef enum {TAG_COMPONENT, TAG_PROP, TAG_NODE } TAG_TYPE;
+    bool mbNoCollectingData;
+
     convert_xcu(l10nMem& crMemory);
     ~convert_xcu();
 
-    void pushKeyPart(TAG_TYPE eIsNode, char *syyText);
-    void popKeyPart (TAG_TYPE eIsNode, char *syyText);
+    void pushKey(char *syyText);
+    void popKey(char *syyText);
 
     void startCollectData(char *syyText);
     void stopCollectData(char *syyText);
 
   private:
     std::vector<std::string> mcStack;
-  std::string              msObj;
-  bool                     mbCollectingData;
 
 
     void execute();

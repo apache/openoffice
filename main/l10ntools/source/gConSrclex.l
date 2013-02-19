@@ -57,11 +57,13 @@
 
 
 /***********************   H E L P E R   M A C R O S   ***********************/
+%x CMD
 PRE   ^[ \t]*
 SUF   [ \t\r\n]
 SUFT  [ \t\r\n\[]
 SPACE [ \t]*
-IDENT [a-zA-Z0-9_-]+
+IDENT ([a-zA-Z0-9][ a-zA-Z0-9_\-\+\*]*[a-zA-Z0-9]|[0-9])
+KEYID [a-zA-Z0-9_-]+
 
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
@@ -147,7 +149,7 @@ IDENT [a-zA-Z0-9_-]+
 
 
 
-"["{SPACE}{IDENT}{SPACE}"]" {
+"["{SPACE}{KEYID}{SPACE}"]" {
   LOCptr->setLang(yytext, false);
 }
 
@@ -200,6 +202,21 @@ IDENT [a-zA-Z0-9_-]+
 {PRE}[wW][iI][nN][dD][oO][wW]{SUF}                                          {
   yyless(strlen(yytext)-1);
   LOCptr->setCmd(yytext);
+  BEGIN(CMD);
+}
+
+<CMD>{IDENT} {
+  LOCptr->setName(yytext);
+  BEGIN(INITIAL);
+}
+
+<CMD>[ \t=]+ {
+  IMPLptr->copySource(yytext);
+}
+
+<CMD>[\\\n] {
+  yyless(1);
+  BEGIN(INITIAL);
 }
 
 
@@ -250,7 +267,7 @@ IDENT [a-zA-Z0-9_-]+
 
 
 
-{IDENT} {
+{KEYID} {
   LOCptr->setName(yytext);
 }
 

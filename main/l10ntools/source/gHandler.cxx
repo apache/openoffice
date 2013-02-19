@@ -211,26 +211,31 @@ void handler::run()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runExtractMerge(bool bMerge)
 {
+  bool bDoNotSave = false;
+
   // prepare translation memory to module type
   mcMemory.setModuleName(msModuleName);
 
   // loop through all source files, and extract messages from each file
   for (std::vector<std::string>::iterator siSource = msSourceFiles.begin(); siSource != msSourceFiles.end(); ++siSource)
   {
-  // tell system
-  if (mbVerbose)
-    std::cout << "gLang extracting text from file " << *siSource << std::endl;
+    // tell system
+    if (mbVerbose)
+      std::cout << "gLang extracting text from file " << *siSource << std::endl;
 
-  // prepare translation memory
+    // prepare translation memory
     mcMemory.setFileName(*siSource);
 
     // get converter and extract files
-  convert_gen convertObj(msSourceDir + *siSource, mcMemory, bMerge);
-  convertObj.execute();
+    convert_gen convertObj(msSourceDir + *siSource, mcMemory, bMerge);
+    convertObj.execute();
+    if (!bDoNotSave)
+      bDoNotSave = convertObj.isError();
   }
 
   // and generate language file
-  mcMemory.save(msTargetDir + msModuleName);
+  if (!bDoNotSave)
+    mcMemory.save(msTargetDir + msModuleName);
 }
 
 

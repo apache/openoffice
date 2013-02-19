@@ -34,8 +34,8 @@
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xcu::convert_xcu(l10nMem& crMemory)
-                      : convert_gen_impl(crMemory),
-                          mbCollectingData(false)
+                        : convert_gen_impl(crMemory),
+                          mbNoCollectingData(true)
 {
 }
 
@@ -61,36 +61,34 @@ namespace XcuWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xcu::execute()
 {
-  XcuWrap::genxcu_lex();
+  XcuWrap::yylex();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText)
+void convert_xcu::pushKey(char *syyText)
 {
   std::string sKey, sTag = copySource(syyText);
   int    nL, nE;
 
   // find key in tag
   nL = sTag.find("oor:name=\"");
-  if (nL == (int)std::string::npos)
-  return;
-
-  // find end of key
-  nL += 10;
-  nE = sTag.find("\"", nL);
-  if (nE == (int)std::string::npos)
-  return;
-
-  sKey = sTag.substr(nL, nE - nL);
+  if (nL != (int)std::string::npos)
+  {
+    // find end of key
+    nL += 10;
+    nE  = sTag.find("\"", nL);
+    if (nE != (int)std::string::npos)
+      sKey = sTag.substr(nL, nE - nL);
+  }
   mcStack.push_back(sKey);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText)
+void convert_xcu::popKey(char *syyText)
 {
   copySource(syyText);
 
@@ -108,10 +106,19 @@ void convert_xcu::startCollectData(char *syyText)
   std::string sTag = copySource(syyText);
 
   // locate object name
-  for (nL = 1; sTag[nL] != ' '; ++nL) ;
-  msObj = sTag.substr(1,nL-1);
-
-  mbCollectingData = true;
+  nL = sTag.find("xml:lang=\"");
+  if (nL != (int)std::string::npos)
+  {
+    // test langauge
+    nL += 10;
+    if (sTag.substr(nL,5) != "en-US")
+    {
+      std::string sErr = sTag.substr(nL,5) + " is not en-US";
+      showError((char *)sErr.c_str());
+    }
+    else
+      mbNoCollectingData = false;
+  }
 }
 
 
@@ -125,13 +132,14 @@ void convert_xcu::stopCollectData(char *syyText)
   copySource(syyText);
 
   // time to do something ?
-  if (!mbCollectingData)
-  return;
-  mbCollectingData = false;
+  if (mbNoCollectingData)
+    return;
+
+  mbNoCollectingData = true;
 
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
-  useKey += (nL > 0 ? "." : "") + mcStack[nL];
+    useKey += (nL > 0 ? "." : "") + mcStack[nL];
   
   if (mbMergeMode)
   {
@@ -148,5 +156,5 @@ void convert_xcu::stopCollectData(char *syyText)
     }
   }
   else
-    mcMemory.setEnUsKey(useKey, msObj, useText);
+    mcMemory.setEnUsKey(useKey, "value", useText);
 }  

@@ -49,50 +49,53 @@
 /* --- The following options are for future use (maybe)                      */
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
-%option 8bit noyywrap never-interactive prefix="genxcu_"
+%option 8bit noyywrap never-interactive
 %p 24000
 %e 1200
 %n 500
 
 
 
+/***********************   H E L P E R   M A C R O S   ***********************/
+SPACE [ \t]*
+NAME  {SPACE}"oor:name="\"[^\"]+\"{SPACE}
+
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"<oor:component-data "[^>]*> {
-  LOCptr->pushKeyPart(convert_xcu::TAG_COMPONENT, yytext);
+
+
+"<oor:component-data"{NAME} |
+"<prop"{NAME}               |
+"<node"{NAME}               {
+  LOCptr->pushKey(yytext);
 }
 
 
-"</oor:component-data>" {
-  LOCptr->popKeyPart(convert_xcu::TAG_COMPONENT, yytext);
+
+"</oor:component-data" |
+"</prop"               |
+"</node"               {
+  LOCptr->popKey(yytext);
 }
 
-"<prop oor:name=\""[^\"]*\" {
-  LOCptr->pushKeyPart(convert_xcu::TAG_PROP, yytext);
-}
 
-"</prop>" {
-  LOCptr->popKeyPart(convert_xcu::TAG_PROP, yytext);
-}
-
-"<node oor:name=\""[^\"]*\" {
-  LOCptr->pushKeyPart(convert_xcu::TAG_NODE, yytext);
-}
-
-"</node>" {
-  LOCptr->popKeyPart(convert_xcu::TAG_NODE, yytext);
-}
-  
-"<value xml:lang=\""[^\"]*\"[^>]*">" {
+"<value xml:lang="\"[^\"]+\"[^>]*">" {
   LOCptr->startCollectData(yytext);
 }
+
+
 
 "</value>" {
   LOCptr->stopCollectData(yytext);
 }
 
+
+
 .|\n {
-  IMPLptr->copySource(yytext);
+  IMPLptr->copySource(yytext, false, LOCptr->mbNoCollectingData);
 }
+
+
+
 %%

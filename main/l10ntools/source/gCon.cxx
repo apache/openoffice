@@ -100,6 +100,14 @@ void convert_gen::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+bool convert_gen::isError()
+{
+  return convert_gen_impl::mcImpl->mbInError; 
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 convert_gen_impl::convert_gen_impl(l10nMem& crMemory)
                                 : mcMemory(crMemory),
                                   mbInError(false),
@@ -197,6 +205,8 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bSkipLeading, bool 
 
   if (bDoClear)
     msCollector.clear();
+  else
+    msCollector += msCopyText;
 
   // remove leading blanks
   if (bSkipLeading)
@@ -224,6 +234,7 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bSkipLeading, bool 
 /**********************   I M P L E M E N T A T I O N   **********************/
 std::string convert_gen_impl::showError(char *sText)
 {
+  mbInError = true;
   std::cerr << "ERROR in " << msSourceFile << ":" << miLineNo << ":  " << sText << std::endl;
   return "ERROR";
 }

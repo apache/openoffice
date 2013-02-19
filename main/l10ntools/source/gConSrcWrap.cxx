@@ -92,11 +92,11 @@ void convert_src::setValue(char *syyText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::setLang(char *syyText, bool bEnUs)
 {
-  copySource(syyText);
+  std::string useText = copySource(syyText) + " is no en-US language";
 
   mbEnUs = bEnUs;
   if (!bEnUs)
-    throw "no en-US source used";  
+    showError((char *)useText.c_str());
 }
 
 

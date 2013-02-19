@@ -51,10 +51,10 @@ class l10nMem_entry
     std::string msSourceFile;
     std::string msModuleName;
     std::string msKey;
-  std::string msObjectType;
+    std::string msObjectType;
     std::string msLanguage;
     std::string msText;
-  int         miIndex;
+    int         miIndex;
 
   private:
 };
@@ -69,7 +69,7 @@ class l10nMem
     ~l10nMem();
 
     void save         (const std::string& srTargetFile);
-  void clear();
+    void clear();
     void setFileName  (const std::string& srSourceFile);
     void setModuleName(const std::string& srModuleName);
     void setEnUsKey   (const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex = 0);
@@ -88,11 +88,12 @@ class l10nMem
 class convert_gen
 {
   public:
-  convert_gen(const std::string& srSourceFile, l10nMem& crMemory, const bool bMerge);
-  ~convert_gen();
+    convert_gen(const std::string& srSourceFile, l10nMem& crMemory, const bool bMerge);
+    ~convert_gen();
 
-  // do extract/merge
+    // do extract/merge
     void execute();
+    bool isError();
 };
 
 
