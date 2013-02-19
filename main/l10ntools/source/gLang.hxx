@@ -45,16 +45,16 @@ class l10nMem_entry
   public:
     l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName, const std::string& srKey,
                   const std::string& srObjectType, const std::string& srLanguage,   const std::string& srText,
-				  const int          iIndex);
+          const int          iIndex);
     ~l10nMem_entry();
 
     std::string msSourceFile;
     std::string msModuleName;
     std::string msKey;
-	std::string msObjectType;
+  std::string msObjectType;
     std::string msLanguage;
     std::string msText;
-	int         miIndex;
+  int         miIndex;
 
   private:
 };
@@ -69,7 +69,7 @@ class l10nMem
     ~l10nMem();
 
     void save         (const std::string& srTargetFile);
-	void clear();
+  void clear();
     void setFileName  (const std::string& srSourceFile);
     void setModuleName(const std::string& srModuleName);
     void setEnUsKey   (const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex = 0);
@@ -88,10 +88,10 @@ class l10nMem
 class convert_gen
 {
   public:
-	convert_gen(const std::string& srSourceFile, l10nMem& crMemory, const bool bMerge);
-	~convert_gen();
+  convert_gen(const std::string& srSourceFile, l10nMem& crMemory, const bool bMerge);
+  ~convert_gen();
 
-	// do extract/merge
+  // do extract/merge
     void execute();
 };
 
@@ -114,7 +114,7 @@ class handler
     std::string              msSourceDir;
     std::string              msTargetDir;
     std::vector<std::string> msSourceFiles;
-	bool                      mbVerbose;
+  bool                      mbVerbose;
 
     void runExtractMerge(bool bMerge);
     void runGenerate();

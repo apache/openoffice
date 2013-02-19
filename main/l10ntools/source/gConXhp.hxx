@@ -39,13 +39,13 @@ class convert_xhp : public convert_gen_impl
     convert_xhp(l10nMem& crMemory);
     ~convert_xhp();
 
-    void startCollectData(std::string sType, std::string& sCollectedText, int iLineNo);
-    void stopCollectData(std::string sType, std::string& sCollectedText, int iLineNo);
+    void startCollectData(std::string sType, std::string& sCollectedText);
+    void stopCollectData(std::string sType, std::string& sCollectedText);
 
   private:
-	std::string msMergeType;
+  std::string msMergeType;
     std::string msTag;
-	bool        mbCollectingData;
+  bool        mbCollectingData;
 
     void execute();
 };

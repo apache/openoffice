@@ -39,14 +39,14 @@ class convert_xcs : public convert_gen_impl
     convert_xcs(l10nMem& crMemory);
     ~convert_xcs();
 
-	void setKey(char *syyText, int iLineNo);
-	void unsetKey(char *syyText, int iLineNo);
-	void startCollectData(char *syyText, int iLineNo);
-    void stopCollectData(char *syyText, int iLineNo);
+  void setKey(char *syyText);
+  void unsetKey(char *syyText);
+  void startCollectData(char *syyText);
+    void stopCollectData(char *syyText);
 
   private:
-	std::string msKey;
-	bool        mbCollectingData;
+  std::string msKey;
+  bool        mbCollectingData;
 
 
     void execute();

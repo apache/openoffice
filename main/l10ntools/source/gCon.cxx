@@ -58,7 +58,7 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, con
 
   // do we have an old object
   if (convert_gen_impl::mcImpl)
-	delete convert_gen_impl::mcImpl;
+    delete convert_gen_impl::mcImpl;
 
   // find correct conversion class and create correct object
   std::string sExtension = srSourceFile.substr(nInx+1);
@@ -101,7 +101,9 @@ void convert_gen::execute()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_gen_impl::convert_gen_impl(l10nMem& crMemory)
-	                              : mcMemory(crMemory)
+                                : mcMemory(crMemory),
+                                  mbInError(false),
+                                  miLineNo(1)
 {
 }
 
@@ -122,7 +124,7 @@ void convert_gen_impl::prepareFile()
 
   
   if (!inputFile.is_open())
-    throw std::string("Could not open ")+msSourceFile;
+    throw showError("Cannot open file");
 
   // get length of file:
   mnSourceReadIndex = 0;
@@ -133,7 +135,7 @@ void convert_gen_impl::prepareFile()
   // get size, prepare std::string and read whole file
   inputFile.read((char *)msSourceBuffer.c_str(), msSourceBuffer.size());
   if ((unsigned int)inputFile.gcount() != msSourceBuffer.size())
-    throw std::string("cannot read whole file: "+msSourceFile);
+    throw showError("cannot read whole file");
   inputFile.close();
 }
 
@@ -170,35 +172,10 @@ void convert_gen_impl::lexRead(char *sBuf, int *nResult, int nMax_size)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen_impl::lineRead(bool *bEof, std::string& line)
-{
-  // did we hit eof
-  if (mnSourceReadIndex == -1 || mnSourceReadIndex >= (int)msSourceBuffer.size())
-  {
-    *bEof             = true;
-    mnSourceReadIndex = -1;
-    return;
-  }
-
-  // find next newline
-  int nNextLF = msSourceBuffer.find('\n', mnSourceReadIndex);
-  if (nNextLF == (int)msSourceBuffer.npos)
-    nNextLF = msSourceBuffer.size()+1;
-
-  // copy std::string
-  line              = msSourceBuffer.substr(mnSourceReadIndex, nNextLF - mnSourceReadIndex);
-  mnSourceReadIndex = nNextLF +1;
-  *bEof             = false;
-  return;
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
 void convert_gen_impl::writeSourceFile(const std::string& line)
 {
   if (!line.size())
-	return;
+    return;
 
   std::cout << line;
   // JIX
@@ -207,40 +184,7 @@ void convert_gen_impl::writeSourceFile(const std::string& line)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen_impl::trim(std::string& sLine)
-{
-  int nL;
-
-  // remove leading spaces
-  nL = sLine.find_first_not_of(" \t");
-  if (nL != (int)std::string::npos)
-    sLine.erase(0, nL);
-
-  // remove trailing spaces
-  nL = sLine.find_last_not_of(" \t");
-  if (nL != (int)std::string::npos)
-    sLine.erase(nL +1);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen_impl::collectData(char *sText, int iLineNo)
-{
-  miLineNo     = iLineNo;
-  msCollector += sText;
-  if (msCollector[msCollector.size()-1] == '\n')
-  {
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-    msCollector.clear();
-  }
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-std::string& convert_gen_impl::copySource(char *yyText, int iLineNo, bool bDoClear)
+std::string& convert_gen_impl::copySource(char *yyText, bool bSkipLeading, bool bDoClear)
 {
   int nL;
 
@@ -254,14 +198,22 @@ std::string& convert_gen_impl::copySource(char *yyText, int iLineNo, bool bDoCle
   if (bDoClear)
     msCollector.clear();
 
-  // remove any CR
-  for (;;)
-  {
-	nL = msCopyText.find("\r");
-	if (nL == (int)std::string::npos)
-	  break;
+  // remove leading blanks
+  if (bSkipLeading)
+    for (; msCopyText[0] == ' ' || msCopyText[0] == '\t'; )
+      msCopyText.erase(0,1);
 
-	msCopyText.erase(nL, 1);
+  // remove any CR
+  for (nL = 0; nL < (int)msCopyText.size(); ++nL)
+  {
+  if (msCopyText[nL] == '\r')
+  {
+    msCopyText.erase(nL, 1);
+    --nL;
+    continue;
+  }
+  if (msCopyText[nL] == '\n')
+      ++miLineNo;
   }
 
   return msCopyText;
@@ -270,52 +222,8 @@ std::string& convert_gen_impl::copySource(char *yyText, int iLineNo, bool bDoCle
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen_impl::isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult, bool bEOL)
+std::string convert_gen_impl::showError(char *sText)
 {
-  int  iCur;
-
-
-  // Skip initial space
-  for (; sText[iStart] == ' ' || sText[iStart] == '\t' || sText[iStart] == '='; ++iStart) ;
-
-  // time to collecting text or word ?
-  if (sText[iStart] == '\"')
-  {
-    for (iCur = ++iStart; sText[iCur] != '\0'; ++iCur)
-    {
-	  // Escape next char
-	  if (sText[iCur] == '\\')
-	  {
-		++iCur;
-		continue;
-	  }
-	  if (sText[iCur] == '\"')
-		break;
-	}
-	*iEnd = iCur+1;
-  }
-  else
-  {
-    for (iCur = iStart; sText[iCur] != '\0'; ++iCur)
-    {
-	  // Time to stop
-      if (bEOL)
-	  {
-	    if (sText[iCur] == '\n')
-		{
-		  if (sText[iCur-1] == '\\')
-			--iCur;
-		  for (; sText[iCur-1] == ' ' || sText[iCur-1] == '\t'; --iCur) ;
-		  break;
-		}
-	  }
-	  else
-	    if (sText[iCur] == '[' || sText[iCur] == ' ' || sText[iCur] == '\t' || sText[iCur] == '\n')
-		  break;
-	}
-	*iEnd = iCur;
-  }
-
-  // Update result
-  sResult = sText.substr(iStart, iCur - iStart);
+  std::cerr << "ERROR in " << msSourceFile << ":" << miLineNo << ":  " << sText << std::endl;
+  return "ERROR";
 }

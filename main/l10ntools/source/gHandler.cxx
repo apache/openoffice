@@ -153,7 +153,7 @@ void handler::checkCommandLine(int argc, char *argv[])
             "  insert,   uses the module file <source dir>/<module name> to\n"
             "            update the source files in the module"
             "\n"
-			"  -v                verbose mode, tells what gLang is doing\n"
+      "  -v                verbose mode, tells what gLang is doing\n"
             "  -m <modulename>   name of the module, used in file naming\n"
             "  -s <source dir>   extract:  source file directory\n"
             "                    merge:    language staging input directory\n"
@@ -217,16 +217,16 @@ void handler::runExtractMerge(bool bMerge)
   // loop through all source files, and extract messages from each file
   for (std::vector<std::string>::iterator siSource = msSourceFiles.begin(); siSource != msSourceFiles.end(); ++siSource)
   {
-	// tell system
-	if (mbVerbose)
-	  std::cout << "gLang extracting text from file " << *siSource << std::endl;
+  // tell system
+  if (mbVerbose)
+    std::cout << "gLang extracting text from file " << *siSource << std::endl;
 
-	// prepare translation memory
+  // prepare translation memory
     mcMemory.setFileName(*siSource);
 
     // get converter and extract files
-	convert_gen convertObj(msSourceDir + *siSource, mcMemory, bMerge);
-	convertObj.execute();
+  convert_gen convertObj(msSourceDir + *siSource, mcMemory, bMerge);
+  convertObj.execute();
   }
 
   // and generate language file

@@ -35,15 +35,15 @@
 /**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem_entry::l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName,
                              const std::string& srKey,        const std::string& srObjectType, 
-							 const std::string& srLanguage,   const std::string& srText,
-							 const int iIndex)
+               const std::string& srLanguage,   const std::string& srText,
+               const int iIndex)
                             : msSourceFile(srSourceFile),
                               msModuleName(srModuleName),
                               msKey(srKey),
-							  msObjectType(srObjectType),
+                msObjectType(srObjectType),
                               msLanguage(srLanguage),
                               msText(srText),
-							  miIndex(iIndex)
+                miIndex(iIndex)
 {
 }
 
@@ -79,14 +79,14 @@ void l10nMem::save(const std::string& srTargetFile)
   if (!outputFile.is_open())
     throw std::string("Could not open ")+srTargetFile;
 
-	
+  
   for (i = 0; i < (int)mcMemory.size(); ++i)
   {
-	outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
-	           << mcMemory[i].msKey;
-	if (mcMemory[i].miIndex)
-	  outputFile << "." << mcMemory[i].miIndex;
-	outputFile << "." << mcMemory[i].msObjectType << "\t" << mcMemory[i].msLanguage  << "\t"
+  outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
+             << mcMemory[i].msKey;
+  if (mcMemory[i].miIndex)
+    outputFile << "." << mcMemory[i].miIndex;
+  outputFile << "." << mcMemory[i].msObjectType << "\t" << mcMemory[i].msLanguage  << "\t"
                << mcMemory[i].msText << std::endl;
   }
   // JIX

@@ -61,14 +61,14 @@
 
   
 "<value xml:lang=\""[^\"]*\"[^>]*">" {
-  LOCptr->startCollectData(yytext, genpo_lineno);
+  LOCptr->startCollectData(yytext);
 }
 
 "</value>" {
-  LOCptr->stopCollectData(yytext, genpo_lineno);
+  LOCptr->stopCollectData(yytext);
 }
 
 .|\n {
-  IMPLptr->collectData(yytext, genpo_lineno);
+  IMPLptr->copySource(yytext);
 }
 %%

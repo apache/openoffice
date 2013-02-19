@@ -22,6 +22,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include <sstream>
 #include <string.h>
 
 
@@ -35,9 +36,13 @@
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_src::convert_src(l10nMem& crMemory)
-	                    : convert_gen_impl(crMemory),
-						  mbUseIdentifier(false),
-	                      mbDoDefine(false)
+                        : convert_gen_impl(crMemory),
+                          mbEnUs(false),
+                          mbExpectName(false),
+                          mbExpectMacro(false),
+                          mbExpectStringList(false),
+                          mbAutoPush(false),
+                          mbValuePresent(false)
 {}
 convert_src::~convert_src()
 {}
@@ -57,237 +62,203 @@ namespace SrcWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::execute()
 {
-  SrcWrap::genSrc_lex();
+  SrcWrap::yylex();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushKey(char *syyText, int iLineno)
+void convert_src::setValue(char *syyText)
 {
-  std::string sKey, sText = copySource(syyText, iLineno);
+  if (mbExpectStringList)
+  {
+    std::stringstream ssBuf;
+
+    msTextName   = msSaveTextName;
+    mbEnUs       = 
+    mbExpectName = true;
+    ssBuf        << ++miListCount;
+    msName       = ssBuf.str();
+    mcStack.pop_back();
+    mcStack.push_back(msName);
+  }
+
+  msValue        = copySource(syyText, false);
+  mbValuePresent = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setLang(char *syyText, bool bEnUs)
+{
+  copySource(syyText);
+
+  mbEnUs = bEnUs;
+  if (!bEnUs)
+    throw "no en-US source used";  
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setId(char *syyText, bool bId)
+{
+  copySource(syyText);
+  if (bId || !mcStack.back().size())
+    mbExpectName = mbAutoPush = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setText(char *syyText)
+{
+  msTextName = copySource(syyText);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setName(char *syyText)
+{
+  std::string useText = copySource(syyText);
+
+  if (mbExpectName)
+  {
+    mbExpectName = false;
+    if (!mbAutoPush)
+      msName = useText;
+    else
+    {
+      if (mcStack.size())
+        mcStack.pop_back();
+      mcStack.push_back(useText);
+    }
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setCmd(char *syyText)
+{
+  copySource(syyText);
+  mbExpectName = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setMacro(char *syyText)
+{
+  copySource(syyText);
+  mbExpectName  =
+  mbExpectMacro =
+  mbAutoPush    = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setList(char *syyText)
+{
+  msSaveTextName = msTextName  = copySource(syyText);
+  miListCount    = 0;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setStringList(char *syyText)
+{
+  msSaveTextName = msTextName  = copySource(syyText);
+  mbExpectStringList = true;
+  miListCount        = 0;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::setNL(char *syyText, bool bMacro)
+{
   int         nL;
+  std::string sKey;
 
-  // skip object type and isolate id
-  isolateText(sText,  0, &nL, sKey);
-  isolateText(sText, nL, &nL, sKey, true);
 
-  mcStack.push_back(sKey);
-  mbUseIdentifier = false;
+  copySource(syyText);
+
+  if (msTextName.size() && mbValuePresent && mbEnUs)
+  {
+    // locate key and extract it
+    sKey.clear();
+    for (nL = 0; nL < (int)mcStack.size(); ++nL)
+      if (mcStack[nL].size())
+        sKey += (sKey.size() ? "." : "") + mcStack[nL];
+
+    mcMemory.setEnUsKey(sKey, msTextName, msValue);
+    mbEnUs = false;
+  }
+
+  if (!bMacro && mbExpectMacro)
+  {
+    mcStack.pop_back();
+    mbExpectMacro = false;
+  }
+
+  mbValuePresent =
+  mbExpectName   =
+  mbAutoPush     = false;
+  msValue.clear();
+  msTextName.clear();
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::popKey(char *syyText, int iLineno)
+void convert_src::startBlock(char *syyText)
 {
-  copySource(syyText, iLineno);
+  copySource(syyText);
+
+  mcStack.push_back(msName);
+  msName.clear();
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::stopBlock(char *syyText)
+{
+  copySource(syyText);
 
   // check for correct node/prop relations
   if (mcStack.size())
     mcStack.pop_back();
-  mbUseIdentifier = false;
+  mbExpectStringList = false;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushNoKey(char *syyText, int iLineno)
+void convert_src::setListItem(char *syyText, bool bIsStart)
 {
-  copySource(syyText, iLineno);
+  copySource(syyText);
 
-  mbUseIdentifier = true;
-  mcStack.push_back("dummy");
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::pushPlaceHolder(char *syyText, int iLineno)
-{
-  copySource(syyText, iLineno);
-
-  mbUseIdentifier = true;
-  mcStack.push_back("dummy");
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::registerHelpKey(char *syyText, int iLineno)
-{
-  std::string sKey, sText = copySource(syyText, iLineno);
-  int         nL;
-
-  // do we expect a delayed key
-  if (!mbUseIdentifier)
-	return;
-
-  // check if help is alone or before ident
-  if (mcStack.back() != "dummy")
-	return;
-
-  // skip object type and isolate id
-  isolateText(sText,  0, &nL, sKey);
-  isolateText(sText, nL, &nL, sKey);
-
-  // put key on stack instead of dummy
-  mcStack.pop_back();
-  mcStack.push_back(sKey);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::registerIdentKey(char *syyText, int iLineno)
-{
-  std::string sKey, sText = copySource(syyText, iLineno);
-  int         nL;
-
-  // do we expect a delayed key
-  if (!mbUseIdentifier)
-	return;
-  mbUseIdentifier = false;
-
-  // skip object type and isolate id
-  isolateText(sText,  0, &nL, sKey);
-  isolateText(sText, nL, &nL, sKey);
-
-  // put key on stack instead of dummy
-  mcStack.pop_back();
-  mcStack.push_back(sKey);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::saveData(char *syyText, int iLineno)
-{
-  std::string sObj, sKey, sUseText, sText = copySource(syyText, iLineno);
-  int         nL;
-
-  // Is it a real text
-  if (sText.find('\"') == std::string::npos)
-	return;
-
-  // locate key and extract it
-  sKey.clear();
-  for (nL = 0; nL < (int)mcStack.size(); ++nL)
-	if (mcStack[nL] != "dummy")
-	  sKey += (sKey.size() ? "." : "") + mcStack[nL];
-
-  // skip object type and isolate id
-  isolateText(sText,  0, &nL, sObj);
-  nL = sText.find('\"', nL);
-  isolateText(sText, nL, &nL, sUseText);
-
-  if (mbMergeMode)
+  if (bIsStart)
   {
-    // get all languages (includes en-US)
-    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-    std::string                   sNewLine;
-    nL = cExtraLangauges.size();
+    std::stringstream ssBuf;
 
-    for (int i = 0; i < nL; ++i)
-    {
-      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
-	             cExtraLangauges[i]->msText + "</value>";
-      writeSourceFile(sNewLine);
-    }
+    msTextName     = msSaveTextName;
+    mbEnUs         = 
+    mbExpectName   = true;
+    mbExpectName   = true;
+    ssBuf          << ++miListCount;
+    msName         = ssBuf.str();
   }
   else
-    mcMemory.setEnUsKey(sKey, sObj, sUseText);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::saveItemList(char *syyText, int iLineno)
-{
-  std::string sObj, sKey, sUseText, sText = copySource(syyText, iLineno);
-  int         cnt, nL;
-
-  // locate key and extract it
-  sKey.clear();
-  for (nL = 0; nL < (int)mcStack.size(); ++nL)
-	if (mcStack[nL] != "dummy")
-	  sKey += (sKey.size() ? "." : "") + mcStack[nL];
-
-  // Locate object type
-  isolateText(sText,  0, &nL, sObj);
-
-  // loop and find all texts
-  for (cnt = 0, nL = 0; nL < (int)sText.size();)
   {
-    // Is it a real text
-	nL = sText.find('\"', nL+1);
-    if (nL == (int)std::string::npos)
-      break;
-    isolateText(sText, nL, &nL, sUseText);
-	mcMemory.setEnUsKey(sKey, sObj, sUseText, ++cnt);
-  }
-
-  if (mbMergeMode)
-  {
-    // get all languages (includes en-US)
-    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-    std::string                   sNewLine;
-    nL = cExtraLangauges.size();
-
-    for (int i = 0; i < nL; ++i)
-    {
-      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
-	             cExtraLangauges[i]->msText + "</value>";
-      writeSourceFile(sNewLine);
-    }
-  }
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::startDefine(char *syyText, int iLineno)
-{
-  std::string sKey, sText = copySource(syyText, iLineno);
-  int         nL;
-
-  // skip #define and get key
-  isolateText(sText,  1, &nL, sKey);
-  isolateText(sText,  nL, &nL, sKey);
-  mbDoDefine = true;
-
-  // put key on stack
-  mcStack.push_back(sKey);
-
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::collectData(char *syyText, int iLineno)
-{
-  int  nL;
-  bool doMacro;
-
-  msCollector += syyText;
-  nL = msCollector.size()-1;
-  if (msCollector[nL] == '\n')
-  {
-    doMacro = (nL > 1 && msCollector[nL -1] == '\\');
-    if (mbMergeMode)
-      writeSourceFile(msCollector);
-
-  	msCollector.clear();
-
-	// Time to stop macro
-	if (doMacro)
-	  return;
-
-    // drop key and stop macro
-    if (mbDoDefine)
-    {
-      mbDoDefine = false;
-      mcStack.pop_back();
-    }
+    mbExpectName = false;
+    mcStack.pop_back();
+    mcStack.push_back(msName);
   }
 }

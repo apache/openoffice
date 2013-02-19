@@ -60,22 +60,22 @@
 %%
 
 "<prop"[^>]*> {
-  LOCptr->setKey(yytext, genxcs_lineno);
+  LOCptr->setKey(yytext);
 }
 
 "</prop>" {
-  LOCptr->unsetKey(yytext, genxcs_lineno);
+  LOCptr->unsetKey(yytext);
 }
   
 "<value"[^>]*> {
-  LOCptr->startCollectData(yytext, genxcs_lineno);
+  LOCptr->startCollectData(yytext);
 }
 
 "</value>" {
-  LOCptr->stopCollectData(yytext, genxcs_lineno);
+  LOCptr->stopCollectData(yytext);
 }
 
 .|\n {
-  IMPLptr->collectData(yytext, genxcs_lineno);
+  IMPLptr->copySource(yytext);
 }
 %%

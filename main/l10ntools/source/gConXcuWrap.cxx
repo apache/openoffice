@@ -34,7 +34,7 @@
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xcu::convert_xcu(l10nMem& crMemory)
-	                    : convert_gen_impl(crMemory),
+                      : convert_gen_impl(crMemory),
                           mbCollectingData(false)
 {
 }
@@ -67,21 +67,21 @@ void convert_xcu::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText, int iLineno)
+void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText)
 {
-  std::string sKey, sTag = copySource(syyText, iLineno);
+  std::string sKey, sTag = copySource(syyText);
   int    nL, nE;
 
   // find key in tag
   nL = sTag.find("oor:name=\"");
   if (nL == (int)std::string::npos)
-	return;
+  return;
 
   // find end of key
   nL += 10;
   nE = sTag.find("\"", nL);
   if (nE == (int)std::string::npos)
-	return;
+  return;
 
   sKey = sTag.substr(nL, nE - nL);
   mcStack.push_back(sKey);
@@ -90,9 +90,9 @@ void convert_xcu::pushKeyPart(TAG_TYPE bIsNode, char *syyText, int iLineno)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText, int iLineno)
+void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText)
 {
-  copySource(syyText, iLineno);
+  copySource(syyText);
 
   // check for correct node/prop relations
   if (mcStack.size())
@@ -102,10 +102,10 @@ void convert_xcu::popKeyPart(TAG_TYPE bIsNode, char *syyText, int iLineno)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::startCollectData(char *syyText, int iLineno)
+void convert_xcu::startCollectData(char *syyText)
 {
   int nL;
-  std::string sTag = copySource(syyText, iLineno);
+  std::string sTag = copySource(syyText);
 
   // locate object name
   for (nL = 1; sTag[nL] != ' '; ++nL) ;
@@ -117,21 +117,21 @@ void convert_xcu::startCollectData(char *syyText, int iLineno)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::stopCollectData(char *syyText, int iLineno)
+void convert_xcu::stopCollectData(char *syyText)
 {
   int    nL;
   std::string useKey, useText = msCollector;
   
-  copySource(syyText, iLineno);
+  copySource(syyText);
 
   // time to do something ?
   if (!mbCollectingData)
-	return;
+  return;
   mbCollectingData = false;
 
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
-	useKey += (nL > 0 ? "." : "") + mcStack[nL];
+  useKey += (nL > 0 ? "." : "") + mcStack[nL];
   
   if (mbMergeMode)
   {
@@ -143,7 +143,7 @@ void convert_xcu::stopCollectData(char *syyText, int iLineno)
     for (int i = 0; i < nL; ++i)
     {
       sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
-	             cExtraLangauges[i]->msText + "</value>";
+               cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
     }
   }

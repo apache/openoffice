@@ -41,16 +41,16 @@ class convert_xcu : public convert_gen_impl
     convert_xcu(l10nMem& crMemory);
     ~convert_xcu();
 
-    void pushKeyPart(TAG_TYPE eIsNode, char *syyText, int iLineNo);
-    void popKeyPart (TAG_TYPE eIsNode, char *syyText, int iLineNo);
+    void pushKeyPart(TAG_TYPE eIsNode, char *syyText);
+    void popKeyPart (TAG_TYPE eIsNode, char *syyText);
 
-    void startCollectData(char *syyText, int iLineNo);
-    void stopCollectData(char *syyText, int iLineNo);
+    void startCollectData(char *syyText);
+    void stopCollectData(char *syyText);
 
   private:
     std::vector<std::string> mcStack;
-	std::string              msObj;
-	bool                     mbCollectingData;
+  std::string              msObj;
+  bool                     mbCollectingData;
 
 
     void execute();

@@ -34,7 +34,7 @@
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xrm::convert_xrm(l10nMem& crMemory)
-	                    : convert_gen_impl(crMemory),
+                      : convert_gen_impl(crMemory),
                           mbCollectingData(false)
 {
 }
@@ -70,7 +70,7 @@ void convert_xrm::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm::startCollectData(std::string sType, std::string& sCollectedText, int iLineno)
+void convert_xrm::startCollectData(std::string sType, std::string& sCollectedText)
 {
   if (mbMergeMode)
     writeSourceFile(msCollector+sCollectedText);
@@ -84,7 +84,7 @@ void convert_xrm::startCollectData(std::string sType, std::string& sCollectedTex
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm::stopCollectData(std::string sType, std::string& sCollectedText, int iLineno)
+void convert_xrm::stopCollectData(std::string sType, std::string& sCollectedText)
 {
   std::string sKey;
   int    nL;
@@ -92,7 +92,7 @@ void convert_xrm::stopCollectData(std::string sType, std::string& sCollectedText
 
   // check tag match
   if (sType != msMergeType)
-	throw "Conflicting tags: " + msTag + msCollector + sCollectedText;
+  throw "Conflicting tags: " + msTag + msCollector + sCollectedText;
 
   // locate key and extract it
   nL    = msTag.find("id=") +4;
@@ -105,11 +105,11 @@ void convert_xrm::stopCollectData(std::string sType, std::string& sCollectedText
     std::string                   sNewLine;
     nL = cExtraLangauges.size();
 
-	// write en-US entry
+  // write en-US entry
     writeSourceFile(msCollector+sCollectedText);
 
-	// and all other languages for that key
-	for (int i = 0; i < nL; ++i)
+  // and all other languages for that key
+  for (int i = 0; i < nL; ++i)
     {
       sNewLine = "\n<" + sType + " id=\"" + sKey + "\"" + " xml:lang=\"" +
                  cExtraLangauges[i]->msLanguage + "\">" +

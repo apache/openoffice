@@ -45,35 +45,33 @@ class convert_gen_impl
 
 
     convert_gen_impl(l10nMem& crMemory);
-	virtual ~convert_gen_impl();
+    virtual ~convert_gen_impl();
 
-	// all converters MUST implement this function
+    // all converters MUST implement this function
     virtual void execute() = 0;
 
-	// generic variables
+    // generic variables
     bool         mbMergeMode;
     std::string  msSourceFile;
     l10nMem&     mcMemory;
     std::string  msCollector;
-	int          miLineNo;
+    int          miLineNo;
 
 
-	// utility functions for converters
-	void lexRead (char *sBuf, int *nResult, int nMax_size);
-    void lineRead(bool *bEof, std::string& line);
+    // utility functions for converters
+    void lexRead (char *sBuf, int *nResult, int nMax_size);
     void writeSourceFile(const std::string& line);
-    void trim(std::string& line);
-	virtual void collectData(char *sCollectedText, int iLineNo);
-	std::string& copySource(char *yyText, int iLineNo, bool bDoClear = true);
-	void isolateText(std::string& sText, int iStart, int *iEnd, std::string& sResult, bool bEOL = false);
+    std::string showError(char *sText);
+    std::string& copySource(char *yyText, bool bSkipLeading = true, bool bDoClear = true);
 
-private:
+  private:
     std::string  msSourceBuffer, msCopyText;
+    bool         mbInError;
     int          mnSourceReadIndex;
 
-	void prepareFile();
+    void prepareFile();
 
 
-	friend class convert_gen;
+    friend class convert_gen;
 };
 #endif

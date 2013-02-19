@@ -35,7 +35,7 @@
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xcs::convert_xcs(l10nMem& crMemory)
-	                    : convert_gen_impl(crMemory),
+                      : convert_gen_impl(crMemory),
                           mbCollectingData(false)
 {
 }
@@ -69,19 +69,19 @@ void convert_xcs::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::setKey(char *syyText, int iLineno)
+void convert_xcs::setKey(char *syyText)
 {
   int    nL;
-  std::string sHead, sText = copySource(syyText, iLineno);
+  std::string sHead, sText = copySource(syyText);
 
   // is it to be translated
   if (sText.find("oor:localized=") == std::string::npos)
-	return;
+  return;
 
   // locate key (is any)
   nL = sText.find("oor:name=\"");
   if (nL == (int)std::string::npos)
-	return;
+  return;
   sHead = sText.substr(nL+10);
   nL    = sHead.find("\"");
   msKey = sHead.substr(0,nL);
@@ -90,27 +90,27 @@ void convert_xcs::setKey(char *syyText, int iLineno)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::unsetKey(char *syyText, int iLineno)
+void convert_xcs::unsetKey(char *syyText)
 {
-  copySource(syyText, iLineno);
+  copySource(syyText);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::startCollectData(char *syyText, int iLineno)
+void convert_xcs::startCollectData(char *syyText)
 {
-  copySource(syyText, iLineno);
+  copySource(syyText);
   if (!msKey.size())
-	return;
+  return;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcs::stopCollectData(char *syyText, int iLineno)
+void convert_xcs::stopCollectData(char *syyText)
 {
-  std::string sHead, sKey, sLang, sText, sCollectedText = copySource(syyText, iLineno, false);
+  std::string sHead, sKey, sLang, sText, sCollectedText = copySource(syyText, false);
   int    nL;
 
 

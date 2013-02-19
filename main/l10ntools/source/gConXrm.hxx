@@ -39,13 +39,13 @@ class convert_xrm : public convert_gen_impl
     convert_xrm(l10nMem& crMemory);
     ~convert_xrm();
 
-    void startCollectData(std::string sType, std::string& sCollectedText, int iLineNo);
-    void stopCollectData(std::string sType, std::string& sCollectedText, int iLineNo);
+    void startCollectData(std::string sType, std::string& sCollectedText);
+    void stopCollectData(std::string sType, std::string& sCollectedText);
 
   private:
-	std::string msTag;
-	std::string msMergeType;
-	bool        mbCollectingData;
+  std::string msTag;
+  std::string msMergeType;
+  bool        mbCollectingData;
 
     void execute();
 };

@@ -60,39 +60,39 @@
 %%
 
 "<oor:component-data "[^>]*> {
-  LOCptr->pushKeyPart(convert_xcu::TAG_COMPONENT, yytext, genxcu_lineno);
+  LOCptr->pushKeyPart(convert_xcu::TAG_COMPONENT, yytext);
 }
 
 
 "</oor:component-data>" {
-  LOCptr->popKeyPart(convert_xcu::TAG_COMPONENT, yytext, genxcu_lineno);
+  LOCptr->popKeyPart(convert_xcu::TAG_COMPONENT, yytext);
 }
 
 "<prop oor:name=\""[^\"]*\" {
-  LOCptr->pushKeyPart(convert_xcu::TAG_PROP, yytext, genxcu_lineno);
+  LOCptr->pushKeyPart(convert_xcu::TAG_PROP, yytext);
 }
 
 "</prop>" {
-  LOCptr->popKeyPart(convert_xcu::TAG_PROP, yytext, genxcu_lineno);
+  LOCptr->popKeyPart(convert_xcu::TAG_PROP, yytext);
 }
 
 "<node oor:name=\""[^\"]*\" {
-  LOCptr->pushKeyPart(convert_xcu::TAG_NODE, yytext, genxcu_lineno);
+  LOCptr->pushKeyPart(convert_xcu::TAG_NODE, yytext);
 }
 
 "</node>" {
-  LOCptr->popKeyPart(convert_xcu::TAG_NODE, yytext, genxcu_lineno);
+  LOCptr->popKeyPart(convert_xcu::TAG_NODE, yytext);
 }
   
 "<value xml:lang=\""[^\"]*\"[^>]*">" {
-  LOCptr->startCollectData(yytext, genxcu_lineno);
+  LOCptr->startCollectData(yytext);
 }
 
 "</value>" {
-  LOCptr->stopCollectData(yytext, genxcu_lineno);
+  LOCptr->stopCollectData(yytext);
 }
 
 .|\n {
-  IMPLptr->collectData(yytext, genxcu_lineno);
+  IMPLptr->copySource(yytext);
 }
 %%

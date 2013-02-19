@@ -58,9 +58,9 @@ void convert_ulf::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf::setKey(char *syyText, int iLineno)
+void convert_ulf::setKey(char *syyText)
 {
-  std::string sText = copySource(syyText, iLineno);
+  std::string sText = copySource(syyText);
 
   // locate key (is any)
   msKey = sText.substr(1,sText.size()-2);
@@ -69,17 +69,17 @@ void convert_ulf::setKey(char *syyText, int iLineno)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf::setText(char *syyText, int iLineno)
+void convert_ulf::setText(char *syyText)
 {
-  std::string useText, sText = copySource(syyText, iLineno);
+  std::string useText, sText = copySource(syyText);
   int         nL;
 
 
   // isolate text
   nL = sText.find("=");
   if (nL == (int)std::string::npos)
-	return;
-  isolateText(sText,  nL+1, &nL, useText);
+  return;
+//JIX  isolateText(sText,  nL+1, &nL, useText);
 
   if (mbMergeMode)
   {
@@ -88,8 +88,8 @@ void convert_ulf::setText(char *syyText, int iLineno)
     std::string                   sNewLine;
     nL = cExtraLangauges.size();
 
-	// and all other languages for that key
-	for (int i = 0; i < nL; ++i)
+  // and all other languages for that key
+  for (int i = 0; i < nL; ++i)
     {
       sNewLine = cExtraLangauges[i]->msLanguage + " = \"" +
                  cExtraLangauges[i]->msText +

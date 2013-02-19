@@ -58,9 +58,9 @@ void convert_po::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::startCollectData(char *syyText, int iLineno)
+void convert_po::startCollectData(char *syyText)
 {
-  std::string sCollectedText = copySource(syyText, iLineno);
+  std::string sCollectedText = copySource(syyText);
 
 //  mbCollectingData = true;
 }
@@ -68,9 +68,9 @@ void convert_po::startCollectData(char *syyText, int iLineno)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::stopCollectData(char *syyText, int iLineno)
+void convert_po::stopCollectData(char *syyText)
 {
-  std::string sCollectedText = copySource(syyText, iLineno);
+  std::string sCollectedText = copySource(syyText);
   std::string useKey;
 
 
@@ -82,11 +82,11 @@ void convert_po::stopCollectData(char *syyText, int iLineno)
     std::string                   sNewLine;
     int                      nL = cExtraLangauges.size();
 
-	writeSourceFile(msCollector + sCollectedText);
+  writeSourceFile(msCollector + sCollectedText);
     for (int i = 0; i < nL; ++i)
     {
       sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
-		         cExtraLangauges[i]->msText + "</value>";
+             cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
     }
   }
