@@ -55,6 +55,7 @@ SLOFILES =      							\
 	$(SLO)$/PreviewValueSet.obj				\
 	$(SLO)$/RecentlyUsedMasterPages.obj		\
 	$(SLO)$/RecentMasterPagesSelector.obj	\
+	$(SLO)$/SidebarShellManager.obj			\
 	$(SLO)$/SlideTransitionPanel.obj		\
 	$(SLO)$/TableDesignPanel.obj
 

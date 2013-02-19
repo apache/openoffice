@@ -25,8 +25,8 @@
 #include "MasterPageContainer.hxx"
 #include "SlideSorterViewShell.hxx"
 #include "PreviewValueSet.hxx"
-#include "../ISidebarReceiver.hxx"
-#include "../ILayoutableWindow.hxx"
+#include "ISidebarReceiver.hxx"
+#include "ILayoutableWindow.hxx"
 
 #include "pres.hxx"
 #include <sfx2/shell.hxx>

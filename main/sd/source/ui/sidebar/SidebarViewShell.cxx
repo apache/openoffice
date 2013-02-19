@@ -23,7 +23,7 @@
 
 #include "SidebarViewShell.hxx"
 
-#include "SidebarShellManager.hxx"
+#include "panels/SidebarShellManager.hxx"
 #include "SidebarFocusManager.hxx"
 #include "taskpane/SlideSorterCacheDisplay.hxx"
 #include "panels/LayoutMenu.hxx"

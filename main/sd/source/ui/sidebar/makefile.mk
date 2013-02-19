@@ -41,12 +41,7 @@ PRJINC=..
 SLOFILES =      							\
 	$(SLO)$/SidebarFactory.obj				\
 	$(SLO)$/UIElementWrapper.obj			\
-	$(SLO)$/SidebarShellManager.obj			\
 	$(SLO)$/SidebarViewShell.obj			\
-
-EXCEPTIONSFILES= 
-#SRS2NAME = sidebar
-#SRC2FILES = SlsChildWindow.src
 
 # --- Tagets -------------------------------------------------------
 

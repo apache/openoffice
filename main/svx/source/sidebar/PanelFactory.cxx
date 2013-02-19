@@ -125,22 +125,20 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     if (rsResourceURL.endsWithAsciiL("/TextPropertyPanel", strlen("/TextPropertyPanel")))
     {
         TextPropertyPanel* pPanel = TextPropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        pPanel->Show();
-        pPanel->GetParent()->Show();
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
             ::boost::bind(&TextPropertyPanel::ShowMenu, pPanel));
     }
-
-    if (rsResourceURL.endsWithAsciiL("/AreaPropertyPanel", strlen("/AreaPropertyPanel")))
+    else if (rsResourceURL.endsWithAsciiL("/AreaPropertyPanel", strlen("/AreaPropertyPanel")))
     {
         AreaPropertyPanel* pPanel = AreaPropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
-            pPanel);
+            pPanel,
+            ::boost::function<void(void)>());
     }
 
     return xElement;

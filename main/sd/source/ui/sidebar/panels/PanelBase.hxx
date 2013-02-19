@@ -22,9 +22,9 @@
 #ifndef SD_SIDEBAR_PANELS_PANEL_BASE_HXX
 #define SD_SIDEBAR_PANELS_PANEL_BASE_HXX
 
-#include "../IDisposable.hxx"
-#include "../ILayoutableWindow.hxx"
-#include "../ISidebarReceiver.hxx"
+#include "IDisposable.hxx"
+#include "ILayoutableWindow.hxx"
+#include "ISidebarReceiver.hxx"
 
 #include <vcl/ctrl.hxx>
 

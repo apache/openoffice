@@ -23,7 +23,7 @@
 
 #include "LayoutMenu.hxx"
 
-#include "../SidebarShellManager.hxx"
+#include "SidebarShellManager.hxx"
 #include "app.hrc"
 #include "controller/SlideSorterController.hxx"
 #include "controller/SlsPageSelector.hxx"

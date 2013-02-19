@@ -24,7 +24,7 @@
 #include "CurrentMasterPagesSelector.hxx"
 #include "PreviewValueSet.hxx"
 #include "ViewShellBase.hxx"
-#include "../SidebarShellManager.hxx"
+#include "SidebarShellManager.hxx"
 #include "DrawViewShell.hxx"
 #include "drawdoc.hxx"
 #include "sdpage.hxx"

@@ -19,16 +19,13 @@
  * 
  *************************************************************/
 
-
-
-// MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
 
 #include "MasterPagesSelector.hxx"
 
 #include "MasterPageContainer.hxx"
 #include "DocumentHelper.hxx"
-#include "../SidebarShellManager.hxx"
+#include "SidebarShellManager.hxx"
 #include "pres.hxx"
 #include "drawdoc.hxx"
 #include "DrawDocShell.hxx"

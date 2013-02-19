@@ -182,7 +182,7 @@
           <value>private:resource/toolpanel/SvxPanelFactory/GeometryPropertyPanel</value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>100</value>
+          <value>150</value>
         </prop>
       </node>
       <node oor:name="Impress1" oor:op="replace">
@@ -203,11 +203,8 @@
             <prop oor:name="Application" oor:type="xs:string">
               <value>com.sun.star.presentation.PresentationDocument</value>
             </prop>
-            <prop oor:name="IsContextListNegated">
-              <value>true</value>
-            </prop>
             <prop oor:name="ContextList">
-              <value>table</value>
+              <value>default</value>
             </prop>
           </node>
         </node>
@@ -405,7 +402,7 @@
               <value>com.sun.star.presentation.PresentationDocument</value>
             </prop>
             <prop oor:name="ContextList">
-              <value>any</value>
+              <value>table</value>
             </prop>
           </node>
         </node>

@@ -25,7 +25,7 @@
 
 #include "framework/FrameworkHelper.hxx"
 #include "framework/TaskPanelResource.hxx"
-#include "ILayoutableWindow.hxx"
+#include "panels/ILayoutableWindow.hxx"
 #include "panels/LayoutMenu.hxx"
 #include "DrawController.hxx"
 #include <comphelper/make_shared_from_uno.hxx>

@@ -24,9 +24,9 @@
 #ifndef SD_SIDEBAR_LAYOUT_MENU_HXX
 #define SD_SIDEBAR_LAYOUT_MENU_HXX
 
-#include "../IDisposable.hxx"
-#include "../ILayoutableWindow.hxx"
-#include "../ISidebarReceiver.hxx"
+#include "IDisposable.hxx"
+#include "ILayoutableWindow.hxx"
+#include "ISidebarReceiver.hxx"
 
 #include "glob.hxx"
 #include "pres.hxx"
