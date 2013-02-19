@@ -27,20 +27,14 @@
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <svx/xgrad.hxx>
 #include <svx/itemwin.hxx>
-//#include <svx/dlgctrl.hxx>
-//#include <sfx2/sectionpage.hxx>
-//#include <svx/svxdllapi.h>
 #include <svx/xfillit0.hxx>
 #include <svx/xflclit.hxx>
-//#include <svx/xtable.hxx>
 #include <svx/xflgrit.hxx>
 #include <svx/xflhtit.hxx>
 #include <svx/xbtmpit.hxx>
 #include <svx/drawitem.hxx>
 #include <vcl/lstbox.hxx>
 #include <vcl/field.hxx>
-//#include <vcl/button.hxx>
-//#include <vcl/toolbox.hxx>
 #include <vcl/fixed.hxx>
 #include <svl/intitem.hxx>
 #include <svx/tbxcolorupdate.hxx>
@@ -89,7 +83,7 @@ public:
     SfxBindings* GetBindings();
 
 private:
-    sal_uInt16                                          eLastXFS;
+    sal_uInt16                                          meLastXFS;
     Color                                               maLastColor;
 
     sal_uInt16                                          mnLastPosGradient;
@@ -161,8 +155,6 @@ private:
 
     ::boost::scoped_ptr< PropertyPanelPopuplWindow >    mpTrGrFloatWin;
     ::boost::scoped_ptr< SvxAreaTrGrPage >              mpTrGrPage;
-
-    //for new  color picker 
     ::boost::scoped_ptr< PropertyPanelPopuplWindow >    mpFloatWinColor;
     ::boost::scoped_ptr< SvxColorPage >                 mpPageColor; 
     ::boost::scoped_ptr< XFillFloatTransparenceItem >   mpGradientItem;
@@ -184,15 +176,17 @@ private:
     DECL_LINK( ClickTrGrHdl_Impl, ToolBox* );
     DECL_LINK( ImplPopupModeEndHdl, FloatingWindow* );
 
+    // for transparency gradient
+    void ImpEnsureTrGrFloatWinAndTrGrPage();
     SvxAreaTrGrPage* GetTrGrPage();
     PropertyPanelPopuplWindow* GetTrGrFloatWin();
 
-    //for color picker 
+    // for color picker 
     void ImpEnsureFloatWinColorAndPageColor();
     SvxColorPage* GetColorPage();
     PropertyPanelPopuplWindow* GetColorFloatWin();
 
-    // cobstructor/destuctor
+    // constructor/destuctor
     AreaPropertyPanel(
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
@@ -201,7 +195,7 @@ private:
 
     void SetupIcons(void);
     void Initialize();
-    void Update();//const SfxPoolItem* pState 
+    void Update();
 };
 
 //////////////////////////////////////////////////////////////////////////////

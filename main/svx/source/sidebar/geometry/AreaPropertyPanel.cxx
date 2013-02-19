@@ -19,7 +19,6 @@
  * 
  *************************************************************/
 
-//#include<tools/color.hxx>
 #include <sfx2/sidebar/propertypanel.hrc>
 #include <sfx2/sidebar/Theme.hxx>
 #include <sfx2/sidebar/ControlFactory.hxx>
@@ -27,28 +26,16 @@
 #include "AreaPropertyPanel.hrc"
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
-//#include <svx/fillctrl.hxx>
-//#include <svx/xenum.hxx>
 #include <sfx2/objsh.hxx>
-//#include <drawitem.hxx>
-//#include <sfx2/viewsh.hxx>
-//#include <svx/xfillit0.hxx>
-//#include <svx/xflclit.hxx>
 #include <svx/xfltrit.hxx>
 #include <svx/xflftrit.hxx>
 #include <svx/xtable.hxx>
-//#include <svx/xflgrit.hxx>
-//#include <svx/xflhtit.hxx>
-//#include <svx/xbtmpit.hxx>
-//#include <sfx2/sectionpage.hxx>
 #include <sfx2/dispatch.hxx>
 #include <sfx2/bindings.hxx>
 #include <helpid.hrc>
 #include <svtools/valueset.hxx>
-//#include <svx/xtable.hxx>
 #include <unotools/pathoptions.hxx>
 #include <svx/svxitems.hrc>
-//#include <sfx2/app.hxx>
 #include <vcl/toolbox.hxx>
 
 using namespace css;
@@ -634,7 +621,7 @@ AreaPropertyPanel::AreaPropertyPanel(
 :   Control(
         pParent, 
         SVX_RES(RID_SIDEBAR_AREA_PANEL)),
-    eLastXFS(-1),
+    meLastXFS(-1),
     maLastColor(Color(COL_DEFAULT_SHAPE_FILLING)),
     mnLastPosGradient(0),
     mnLastPosHatch(0),
@@ -841,26 +828,11 @@ void AreaPropertyPanel::Initialize()
 
 //////////////////////////////////////////////////////////////////////////////
 
-SvxAreaTrGrPage* AreaPropertyPanel::GetTrGrPage()
-{
-	if(!mpTrGrFloatWin)
-	{
-		mpTrGrFloatWin.reset(new PropertyPanelPopuplWindow(this));
-		mpTrGrFloatWin->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency and Gradient")));	//wj acc
-		mpTrGrFloatWin->SetPopupModeEndHdl( LINK( this, AreaPropertyPanel, ImplPopupModeEndHdl ) );
-		mpTrGrPage.reset(new SvxAreaTrGrPage(mpTrGrFloatWin.get(), *this));
-	}
-
-    return mpTrGrPage.get();
-}
-
-//////////////////////////////////////////////////////////////////////////////
-
 IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pBox )
 {
 	XFillStyle  eXFS = (XFillStyle)mpLbFillType->GetSelectEntryPos();
 
-	if( (XFillStyle) eLastXFS != eXFS )
+	if( (XFillStyle) meLastXFS != eXFS )
 	{
 			mpLbFillAttr->Clear();
 			SfxObjectShell* pSh = SfxObjectShell::Current();
@@ -993,7 +965,7 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pBox )
 				}
 				break;
 			}
-			eLastXFS = (sal_uInt16)eXFS;
+			meLastXFS = (sal_uInt16)eXFS;
 			if( eXFS != XFILL_NONE )
 			{
 				if ( pBox )
@@ -1013,7 +985,7 @@ IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pBox )
 	SfxObjectShell* pSh = SfxObjectShell::Current();
 	if(pBox)
 	{
-		if( (XFillStyle) eLastXFS != eXFS )
+		if( (XFillStyle) meLastXFS != eXFS )
         {
 			GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_STYLE, SFX_CALLMODE_RECORD, &aXFillStyleItem, 0L); //Added  20090909
         }
@@ -1239,7 +1211,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
-			mpTransTypeItem.reset((SfxUInt16Item*)pState->Clone());
+			mpTransTypeItem.reset(pState ? (SfxUInt16Item*)pState->Clone() : 0);
 			sal_uInt16 m_nValue =  mpTransTypeItem->GetValue();
 			if(m_nValue>0 && m_nValue <= 100)
 			{
@@ -1353,16 +1325,16 @@ void AreaPropertyPanel::NotifyItemUpdate(
 			mpLbFillAttr->SetNoSelection();
 			mpToolBoxColor->Hide();
 			mbTBShow = false;
-			eLastXFS = -1; 
+			meLastXFS = -1; 
             mpStyleItem.reset();
 		}
 		else if( SFX_ITEM_AVAILABLE == eState )
 		{
-			mpStyleItem.reset((XFillStyleItem*)pState->Clone());
+			mpStyleItem.reset(pState ? (XFillStyleItem*)pState->Clone() : 0);
 			mpLbFillType->Enable();
 
 			eXFS = (XFillStyle)mpStyleItem->GetValue();
-			eLastXFS = eXFS;  
+			meLastXFS = eXFS;  
 			mpLbFillType->SelectEntryPos(
 				sal::static_int_cast< sal_uInt16 >( eXFS ) );
 			//Added for select invisable
@@ -1384,7 +1356,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 			mpLbFillAttr->SetNoSelection();
 			mpToolBoxColor->Hide();
 			mbTBShow = false;
-			eLastXFS = -1;  //Added 
+			meLastXFS = -1;  //Added 
 			mpStyleItem.reset();
 		}
 	}
@@ -1392,7 +1364,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{	
-			mpColorItem.reset((XFillColorItem*)pState->Clone());
+			mpColorItem.reset(pState ? (XFillColorItem*)pState->Clone() : 0);
 		}
 		if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue() == XFILL_SOLID)
 		{
@@ -1423,7 +1395,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{
-			mpFillGradientItem.reset((XFillGradientItem*)pState->Clone());
+			mpFillGradientItem.reset(pState ? (XFillGradientItem*)pState->Clone() : 0);
 		}
 		if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue() == XFILL_GRADIENT )
 		{
@@ -1449,7 +1421,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{	
-			mpHatchItem.reset((XFillHatchItem*)pState->Clone());
+			mpHatchItem.reset(pState ? (XFillHatchItem*)pState->Clone() : 0);
 		}
 		if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue() == XFILL_HATCH )
 		{
@@ -1474,7 +1446,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{
-			mpBitmapItem.reset((XFillBitmapItem*)pState->Clone());
+			mpBitmapItem.reset(pState ? (XFillBitmapItem*)pState->Clone() : 0);
 		}
 		if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue() == XFILL_BITMAP )
 		{
@@ -1499,7 +1471,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{
-			mpColorTableItem.reset((SvxColorTableItem*)pState->Clone());
+			mpColorTableItem.reset(pState ? (SvxColorTableItem*)pState->Clone() : 0);
 
 			if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue()== XFILL_SOLID)
 			{
@@ -1523,7 +1495,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{
-			mpGradientListItem.reset((SvxGradientListItem*)pState->Clone());
+			mpGradientListItem.reset(pState ? (SvxGradientListItem*)pState->Clone() : 0);
 
 			if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue() == XFILL_GRADIENT)
 			{
@@ -1546,7 +1518,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{
-			mpHatchListItem.reset((SvxHatchListItem*)pState->Clone());
+			mpHatchListItem.reset(pState ? (SvxHatchListItem*)pState->Clone() : 0);
 
 			if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue() == XFILL_HATCH )
 			{
@@ -1569,7 +1541,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	{
 		if( SFX_ITEM_AVAILABLE == eState)
 		{
-			mpBitmapListItem.reset((SvxBitmapListItem*)pState->Clone());
+			mpBitmapListItem.reset(pState ? (SvxBitmapListItem*)pState->Clone() : 0);
 
 			if( mpStyleItem && (XFillStyle)mpStyleItem->GetValue() == XFILL_BITMAP )
 			{
@@ -1599,9 +1571,9 @@ SfxBindings* AreaPropertyPanel::GetBindings()
 
 //////////////////////////////////////////////////////////////////////////////
 
-void AreaPropertyPanel::Update()// const SfxPoolItem* pState 
+void AreaPropertyPanel::Update()
 {
-	if ( mpStyleItem )// && pState 
+	if ( mpStyleItem )
 	{
 		XFillStyle eXFS = (XFillStyle)mpStyleItem->GetValue();
 		SfxObjectShell* pSh = SfxObjectShell::Current();
@@ -1715,15 +1687,29 @@ void AreaPropertyPanel::Update()// const SfxPoolItem* pState
 
 //////////////////////////////////////////////////////////////////////////////
 
+void AreaPropertyPanel::ImpEnsureTrGrFloatWinAndTrGrPage()
+{
+    if(!mpTrGrFloatWin)
+    {
+        mpTrGrFloatWin.reset(new PropertyPanelPopuplWindow(this));
+        mpTrGrFloatWin->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency and Gradient")));	//wj acc
+        mpTrGrFloatWin->SetPopupModeEndHdl( LINK( this, AreaPropertyPanel, ImplPopupModeEndHdl ) );
+        mpTrGrPage.reset(new SvxAreaTrGrPage(mpTrGrFloatWin.get(), *this));
+    }
+}
+
+SvxAreaTrGrPage* AreaPropertyPanel::GetTrGrPage()
+{
+    ImpEnsureTrGrFloatWinAndTrGrPage();
+
+    return mpTrGrPage.get();
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
 PropertyPanelPopuplWindow* AreaPropertyPanel::GetTrGrFloatWin()
 {
-	if (!mpTrGrFloatWin)
-	{
-		mpTrGrFloatWin.reset(new PropertyPanelPopuplWindow(this));
-		mpTrGrFloatWin->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency and Gradient")));	//wj acc
-		mpTrGrFloatWin->SetPopupModeEndHdl( LINK( this, AreaPropertyPanel, ImplPopupModeEndHdl ) );
-		mpTrGrPage.reset(new SvxAreaTrGrPage(mpTrGrFloatWin.get(), *this));
-	}
+    ImpEnsureTrGrFloatWinAndTrGrPage();
 
     return mpTrGrFloatWin.get();
 }

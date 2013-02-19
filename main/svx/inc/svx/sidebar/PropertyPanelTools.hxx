@@ -25,60 +25,14 @@
 #include "svx/svxdllapi.h"
 
 #include <vcl/ctrl.hxx>
-//#include "layoutablewin.hxx"
-//#include "propertypaneltype.hxx"
-//#include <sfx2/dllapi.h>
-//#include <sfx2/ctrlitem.hxx>
 #include <vcl/floatwin.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines
-//class SfxPropertyPanel;
-//class SfxSectionPage;
-//typedef SfxSectionPage* (*FnSectionPageCtor)(Window* pParent, SfxPropertyPanel* pPanel, PropertySectionType nPageId);
 
 //////////////////////////////////////////////////////////////////////////////
 
 namespace svx { namespace sidebar {
-
-//////////////////////////////////////////////////////////////////////////////
-
-//class SVX_DLLPUBLIC SfxSectionPage: public Control, public ILayoutableWindow
-//{
-//public:
-//    SfxSectionPage(Window* pParent, const ResId& rResId ,SfxPropertyPanel* pPanel, PropertySectionType nPageId);	
-//    virtual ~SfxSectionPage();
-//
-//    virtual void Init(PropertyContextType nContextId){}
-//    virtual sal_Int32 GetPreferredWidth (sal_Int32 nHeight);
-//    virtual sal_Int32 GetPreferredHeight (sal_Int32 nWidth);
-//    virtual sal_Int32 GetMinimumWidth (void);
-//    virtual void StateChangedImpl(sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState);
-//    SfxBindings* GetBindings();
-//
-//    SfxPropertyPanel* GetPanel();
-//    long GetPanelWidth();
-//    void PanelResize();
-//
-//private:
-//    SfxPropertyPanel*           mpPanel;
-//    PropertySectionType         mnPageId;
-//    sal_Int32                   mnMinimumWidth;
-//};
-
-//////////////////////////////////////////////////////////////////////////////
-
-//class SVX_DLLPUBLIC SfxPropertyPageController:public SfxControllerItem
-//{
-//private:
-//    SfxSectionPage* mpPage;
-//
-//public:
-//    SfxPropertyPageController(sal_uInt16 nId, SfxSectionPage *pPage, SfxBindings &rBindings);
-//    virtual ~SfxPropertyPageController();
-//
-//    virtual void StateChanged(sal_uInt16 nId, SfxItemState eState, const SfxPoolItem* pState);
-//};
 
 //////////////////////////////////////////////////////////////////////////////
 // SfxPopupPanelWin

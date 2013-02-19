@@ -1264,8 +1264,13 @@
 #define SID_SVX_AREA_TRANSPARENCY                       (SID_SVX_START+1106)
 #define SID_SVX_AREA_TRANSP_GRADIENT                    (SID_SVX_START+1107)
 
+#define SID_ATTR_LINE_TRANSPARENCE                      (SID_SVX_START+1108)
+
+#define SID_FLIP_HORIZONTAL                             (SID_SVX_START+1109)
+#define SID_FLIP_VERTICAL                               (SID_SVX_START+1110)
+
 // IMPORTANT NOTE: adjust SID_SVX_FIRSTFREE, when adding new slot id
-#define SID_SVX_FIRSTFREE								(SID_SVX_AREA_TRANSP_GRADIENT + 1)
+#define SID_SVX_FIRSTFREE								(SID_FLIP_VERTICAL + 1)
 
 // --------------------------------------------------------------------------
 // Overflow check for slot IDs

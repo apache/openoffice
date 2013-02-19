@@ -21,97 +21,12 @@
 
 #include <svx/sidebar/PropertyPanelTools.hxx>
 #include <sfx2/sidebar/Theme.hxx>
-//#include "propertypanel.hxx"
-//#include <vcl/svapp.hxx>
 #include <vcl/gradient.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////
 
 namespace svx { namespace sidebar {
 
-////////////////////////////////////////////////////////////////////////////////
-//
-//SfxSectionPage::SfxSectionPage(Window* pParent, const ResId& rResId ,SfxPropertyPanel* pPanel, PropertySectionType nPageId)
-//:	Control(pParent, rResId ),
-//	mpPanel(pPanel),
-//	mnPageId(nPageId)
-//{
-//	mnMinimumWidth = GetOutputSizePixel().Width();
-//	EnableChildTransparentMode( TRUE);	
-//	//add  for high contract
-//	if(!GetSettings().GetStyleSettings().GetHighContrastMode())
-//		SetBackground(Wallpaper(GetSettings().GetStyleSettings().GetPropertyPanelBackgroundColor()));
-//	else
-//		SetBackground(Wallpaper(GetSettings().GetStyleSettings().GetMenuColor()));
-//}
-//
-//SfxSectionPage::~SfxSectionPage()
-//{
-//}
-//
-//SfxPropertyPanel* SfxSectionPage::GetPanel()
-//{
-//	return mpPanel;
-//}
-//
-//long SfxSectionPage::GetPanelWidth()
-//{
-//	return mpPanel->GetOutputSizePixel().Width();
-//}
-//
-//void SfxSectionPage::PanelResize()
-//{
-//	mpPanel->RequestReSize();
-//}
-//
-//sal_Int32 SfxSectionPage::GetPreferredWidth (sal_Int32 nHeight)
-//{
-//	//now we don't support auto layout, so return GetOutputSizePixel().Width();
-//	return GetOutputSizePixel().Width();
-//}
-//
-//sal_Int32 SfxSectionPage::GetPreferredHeight (sal_Int32 nWidth)
-//{
-//	//now we don't support auto layout, so return GetOutputSizePixel().Height();
-//	return GetOutputSizePixel().Height();
-//}
-//
-//sal_Int32 SfxSectionPage::GetMinimumWidth (void)
-//{
-//	return mnMinimumWidth;
-//}
-//
-//void SfxSectionPage::StateChangedImpl(sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState) 
-//{
-//    // The SubClass can override this function to listent context switching
-//}
-//
-//SfxBindings* SfxSectionPage::GetBindings()
-//{
-//	if(NULL == mpPanel) return NULL;
-//	return mpPanel->GetBindings();
-//}
-//
-////////////////////////////////////////////////////////////////////////////////
-//
-//SfxPropertyPageController::SfxPropertyPageController(sal_uInt16 nId, SfxSectionPage *p, SfxBindings &rBindings)
-//:   SfxControllerItem(nId, rBindings),
-//    mpPage(p)
-//{
-//}
-//
-//SfxPropertyPageController::~SfxPropertyPageController()
-//{
-//}
-//
-//void SfxPropertyPageController::StateChanged( sal_uInt16 nSID, SfxItemState eState,	const SfxPoolItem* pState )
-//{
-//    if(mpPage) 
-//    {
-//        mpPage->NotifyItemUpdate(nSID, eState, pState);
-//    }
-//}
-//
 ////////////////////////////////////////////////////////////////////////////////
 
 PropertyPanelPopuplWindow::PropertyPanelPopuplWindow(Window* pParent)
