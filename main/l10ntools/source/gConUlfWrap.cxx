@@ -52,7 +52,7 @@ namespace UlfWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_ulf::execute()
 {
-  UlfWrap::genulf_lex();
+  UlfWrap::yylex();
 }
 
 
@@ -69,35 +69,22 @@ void convert_ulf::setKey(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_ulf::setText(char *syyText)
+void convert_ulf::setText(char *syyText, bool bIsEnUs)
 {
-  std::string useText, sText = copySource(syyText);
-  int         nL;
+  std::string sText = copySource(syyText) + " is not en-US";
 
 
-  // isolate text
-  nL = sText.find("=");
-  if (nL == (int)std::string::npos)
-  return;
-//JIX  isolateText(sText,  nL+1, &nL, useText);
+  if (!bIsEnUs)
+    showError((char *)sText.c_str());
+}
 
-  if (mbMergeMode)
-  {
-    // get all languages (includes en-US)
-    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(msKey);
-    std::string                   sNewLine;
-    nL = cExtraLangauges.size();
 
-  // and all other languages for that key
-  for (int i = 0; i < nL; ++i)
-    {
-      sNewLine = cExtraLangauges[i]->msLanguage + " = \"" +
-                 cExtraLangauges[i]->msText +
-                 "\"\n";
 
-      writeSourceFile(sNewLine);
-    }
-  }
-  else
-    mcMemory.setEnUsKey(msKey, std::string("LngText"), useText);
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_ulf::setValue(char *syyText)
+{
+  std::string sText = copySource(syyText, false);
+
+
+  mcMemory.setEnUsKey(msKey, std::string("LngText"), sText);
 }

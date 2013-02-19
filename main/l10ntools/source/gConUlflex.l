@@ -49,23 +49,70 @@
 /* --- The following options are for future use (maybe)                      */
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
-%option 8bit noyywrap never-interactive prefix="genulf_"
+%option 8bit noyywrap never-interactive
 %p 24000
 %e 1200
 %n 500
 
+/***********************   H E L P E R   M A C R O S   ***********************/
+PRE   ^[ \t]*
 
+
+SUF   [ \t\r\n]
+SUFT  [ \t\r\n\[]
+SPACE [ \t]*
+IDENT ([a-zA-Z0-9][ a-zA-Z0-9_\-\+\*]*[a-zA-Z0-9]|[0-9])
+KEYID [a-zA-Z0-9_-]+
 
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"["[^\]]*"]" {
+
+
+"/*" {
+  int i = 1;
+  for (;;)
+  {
+    while ((yytext[++i] = yyinput()) != '*') ;
+    if ((yytext[++i] = yyinput()) == '/')
+    break;
+  }
+  yytext[i] = '\0';
+
+  IMPLptr->copySource(yytext);
+}
+
+
+
+"\"" {
+  int i = 0;
+  for (; (yytext[++i] = yyinput()) != '\"';)
+    if (yytext[i] == '\\')
+      yytext[++i] = yyinput();
+  yytext[i] = '\0';
+
+  LOCptr->setValue(&yytext[1]);
+}
+
+
+
+"["[^\]]+"]" {
   LOCptr->setKey(yytext);
 }
 
-"en-US"[ ]*"="[^\n]* {
-  LOCptr->setText(yytext);
+
+
+"en-US"[ \t]*"=" {
+  LOCptr->setText(yytext, true);
 }
+
+
+
+[a-zA-Z_\-]+[ \t]*"=" {
+  LOCptr->setText(yytext, false);
+}
+
+
   
 .|\n {
   IMPLptr->copySource(yytext);
