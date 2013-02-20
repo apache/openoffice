@@ -62,6 +62,13 @@ public:
         Context_Table,
         Context_Text,
         Context_TextObject,
+        Context_OLE,
+        Context_Media,
+        Context_Frame,
+        Context_Form,
+        Context_Chart,
+        Context_Multiobj,
+        Context_3DObj,
 
         // Default context of an application.  Do we need this?
         Context_Default,

@@ -60,8 +60,8 @@ class AreaPropertyPanel
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 private:
-    friend class SvxColorPage;
-    friend class SvxAreaTrGrPage;
+    friend class ::SvxColorPage;
+    friend class ::SvxAreaTrGrPage;
 
 public:
     static AreaPropertyPanel* Create(
@@ -165,8 +165,8 @@ private:
     SfxBindings*                                        mpBindings;
 
     /// bitfield
-    bool                                                mbTBShow;
-    bool                                                mbColorAvail;
+    bool                                                mbTBShow : 1;
+    bool                                                mbColorAvail : 1;
 
     DECL_LINK(SelectFillTypeHdl, ListBox* );
     DECL_LINK(SelectFillAttrHdl, ListBox* );

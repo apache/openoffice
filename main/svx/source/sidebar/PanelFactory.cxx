@@ -21,9 +21,10 @@
 
 #include "sidebar/PanelFactory.hxx"
 
-#include "text/TextPropertyPanel.hxx"
-#include "geometry/AreaPropertyPanel.hxx"
+#include <text/TextPropertyPanel.hxx>
+#include <geometry/AreaPropertyPanel.hxx>
 #include <geometry/LinePropertyPanel.hxx>
+#include <geometry/TransformationPropertyPanel.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
@@ -150,8 +151,19 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             pPanel,
             ::boost::function<void(void)>());
     }
+    else if (rsResourceURL.endsWithAsciiL("/TransformationPropertyPanel", strlen("/TransformationPropertyPanel")))
+    {
+        LinePropertyPanel* pPanel = LinePropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>());
+    }
 
     return xElement;
 }
 
 } } // end of namespace svx::sidebar
+
+// eof

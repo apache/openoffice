@@ -79,6 +79,7 @@ $(eval $(call gb_SrsTarget_add_files,svx/res,\
     svx/source/mnuctrls/mnuctrls.src \
     svx/source/sidebar/geometry/AreaPropertyPanel.src \
     svx/source/sidebar/geometry/LinePropertyPanel.src \
+    svx/source/sidebar/geometry/TransformationPropertyPanel.src \
     svx/source/sidebar/text/TextPropertyPanel.src \
     svx/source/stbctrls/stbctrls.src \
     svx/source/svdraw/svdstr.src \

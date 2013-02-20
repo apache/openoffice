@@ -55,9 +55,9 @@ class LinePropertyPanel
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 private:
-    friend class SvxLineColorPage;
-    friend class SvxLineStylePage;
-    friend class SvxLineWidthPage;
+    friend class ::SvxLineColorPage;
+    friend class ::SvxLineStylePage;
+    friend class ::SvxLineWidthPage;
 
 public:
     static LinePropertyPanel* Create(
@@ -184,9 +184,6 @@ private:
     void ImpEnsureFloatWinWidthAndPageWidth();
     SvxLineWidthPage* GetWidthPage();
     PropertyPanelPopuplWindow* GetWidthFloatWin();
-
-//	
-//	void SetStyleSelect(XDash aDash);
 };
 
 //////////////////////////////////////////////////////////////////////////////
