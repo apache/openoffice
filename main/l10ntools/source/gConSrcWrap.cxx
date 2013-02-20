@@ -131,6 +131,7 @@ void convert_src::setName(char *syyText)
       msName = useText;
     else
     {
+      mbAutoPush = false;
       if (mcStack.size())
         mcStack.pop_back();
       mcStack.push_back(useText);
@@ -156,6 +157,7 @@ void convert_src::setMacro(char *syyText)
   mbExpectName  =
   mbExpectMacro =
   mbAutoPush    = true;
+  mcStack.push_back("");
 }
 
 
@@ -197,12 +199,12 @@ void convert_src::setNL(char *syyText, bool bMacro)
         sKey += (sKey.size() ? "." : "") + mcStack[nL];
 
     mcMemory.setEnUsKey(sKey, msTextName, msValue);
-    mbEnUs = false;
   }
 
   if (!bMacro && mbExpectMacro)
   {
     mcStack.pop_back();
+    mbEnUs        =
     mbExpectMacro = false;
   }
 
@@ -235,6 +237,7 @@ void convert_src::stopBlock(char *syyText)
   if (mcStack.size())
     mcStack.pop_back();
   mbExpectStringList = false;
+  mbEnUs             = false;
 }
 
 
@@ -243,22 +246,24 @@ void convert_src::stopBlock(char *syyText)
 void convert_src::setListItem(char *syyText, bool bIsStart)
 {
   copySource(syyText);
+  mbExpectStringList = false;
 
   if (bIsStart)
   {
-    std::stringstream ssBuf;
-
-    msTextName     = msSaveTextName;
-    mbEnUs         = 
-    mbExpectName   = true;
-    mbExpectName   = true;
-    ssBuf          << ++miListCount;
-    msName         = ssBuf.str();
+    msTextName   = msSaveTextName;
+    mbExpectName = true;
+    msName.clear();
   }
   else
   {
+    std::stringstream ssBuf;
+
     mbExpectName = false;
     mcStack.pop_back();
+    ssBuf << ++miListCount;
+    if (msName.size())
+      ssBuf << "." << msName;
+    msName = ssBuf.str();
     mcStack.push_back(msName);
   }
 }

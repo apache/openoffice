@@ -85,7 +85,7 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
-"//".*\n {
+"//".* {
   IMPLptr->copySource(yytext);
 }
 
@@ -103,15 +103,13 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
-{PRE}"{"{SUF} {
-  yyless(strlen(yytext)-1);
+"{" {
   LOCptr->startBlock(yytext);
 }
 
 
 
-{PRE}"}"{SPACE}";"*{SUF} {
-  yyless(strlen(yytext)-1);
+"}"{SPACE}";"* {
   LOCptr->stopBlock(yytext);
 }
 
@@ -214,7 +212,7 @@ KEYID [a-zA-Z0-9_-]+
   IMPLptr->copySource(yytext);
 }
 
-<CMD>[\\\n] {
+<CMD>[\\\n/] {
   yyless(1);
   BEGIN(INITIAL);
 }
