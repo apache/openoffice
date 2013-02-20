@@ -780,6 +780,18 @@ TransformationPropertyPanel::~TransformationPropertyPanel()
 
 //////////////////////////////////////////////////////////////////////////////
 
+void TransformationPropertyPanel::ShowMenu (void)
+{
+    if (mpBindings != NULL)
+    {
+        SfxDispatcher* pDispatcher = mpBindings->GetDispatcher();
+        if (pDispatcher != NULL)
+            pDispatcher->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_ASYNCHRON);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
 void TransformationPropertyPanel::Initialize()
 {
 	//Position : Horizontal / Vertical

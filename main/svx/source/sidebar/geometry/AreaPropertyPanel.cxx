@@ -703,6 +703,18 @@ AreaPropertyPanel::~AreaPropertyPanel()
 
 //////////////////////////////////////////////////////////////////////////////
 
+void AreaPropertyPanel::ShowMenu (void)
+{
+    if (mpBindings != NULL)
+    {
+        SfxDispatcher* pDispatcher = mpBindings->GetDispatcher();
+        if (pDispatcher != NULL)
+            pDispatcher->Execute(SID_ATTRIBUTES_AREA, SFX_CALLMODE_ASYNCHRON);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
 void AreaPropertyPanel::Initialize()
 {
     maGradientLinear.SetXOffset(DEFAULT_CENTERX);

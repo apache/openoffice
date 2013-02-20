@@ -81,6 +81,7 @@ public:
         const SfxPoolItem* pState);
 
     SfxBindings* GetBindings();
+    void ShowMenu (void);
 
 private:
     sal_uInt16                                          meLastXFS;

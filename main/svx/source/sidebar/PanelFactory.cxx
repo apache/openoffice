@@ -140,7 +140,7 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>());
+            ::boost::bind(&AreaPropertyPanel::ShowMenu, pPanel));
     }
     else if (rsResourceURL.endsWithAsciiL("/LinePropertyPanel", strlen("/LinePropertyPanel")))
     {
@@ -149,16 +149,16 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>());
+            ::boost::bind(&LinePropertyPanel::ShowMenu, pPanel));
     }
     else if (rsResourceURL.endsWithAsciiL("/TransformationPropertyPanel", strlen("/TransformationPropertyPanel")))
     {
-        LinePropertyPanel* pPanel = LinePropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        TransformationPropertyPanel* pPanel = TransformationPropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>());
+            ::boost::bind(&TransformationPropertyPanel::ShowMenu, pPanel));
     }
 
     return xElement;

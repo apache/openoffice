@@ -77,6 +77,7 @@ public:
         const SfxPoolItem* pState);
 
     SfxBindings* GetBindings();
+    void ShowMenu (void);
 
 private:
     //Position

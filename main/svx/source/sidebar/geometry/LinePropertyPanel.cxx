@@ -1325,6 +1325,18 @@ LinePropertyPanel::~LinePropertyPanel()
 
 //////////////////////////////////////////////////////////////////////////////
 
+void LinePropertyPanel::ShowMenu (void)
+{
+    if (mpBindings != NULL)
+    {
+        SfxDispatcher* pDispatcher = mpBindings->GetDispatcher();
+        if (pDispatcher != NULL)
+            pDispatcher->Execute(SID_ATTRIBUTES_LINE, SFX_CALLMODE_ASYNCHRON);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
 void LinePropertyPanel::Initialize()
 {
 	mpIMGStyleIcon.get()[0] = Image(SVX_RES(IMG_LINE1_ICON));
