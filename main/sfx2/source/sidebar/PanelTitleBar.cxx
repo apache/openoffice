@@ -182,6 +182,7 @@ void PanelTitleBar::DataChanged (const DataChangedEvent& rEvent)
     maToolBox.SetItemImage(
         mnMenuItemIndex,
         Theme::GetImage(Theme::Image_PanelMenu));
+    TitleBar::DataChanged(rEvent);
 }
 
 } } // end of namespace sfx2::sidebar

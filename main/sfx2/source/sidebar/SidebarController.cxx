@@ -149,6 +149,8 @@ void SAL_CALL SidebarController::disposing (void)
         mpCurrentConfiguration.reset();
     }
 
+    mpTabBar.reset();
+
     Theme::GetPropertySet()->removePropertyChangeListener(
         A2S(""),
         static_cast<css::beans::XPropertyChangeListener*>(this));

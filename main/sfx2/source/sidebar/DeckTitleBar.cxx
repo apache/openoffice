@@ -148,6 +148,7 @@ void DeckTitleBar::DataChanged (const DataChangedEvent& rEvent)
     maToolBox.SetItemImage(
         mnCloserItemIndex,
         Theme::GetImage(Theme::Image_Closer));
+    TitleBar::DataChanged(rEvent);
 }
 
 
