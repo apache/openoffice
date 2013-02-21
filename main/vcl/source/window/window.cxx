@@ -5393,7 +5393,7 @@ long Window::Notify( NotifyEvent& rNEvt )
 }
 
 // IAccessible2 implementation, 2009
-void Window::NotifyVCLEvent( ULONG nEvent ,void* pData /*= NULL*/)
+void Window::NotifyVCLEvent( sal_uLong nEvent ,void* pData /*= NULL*/)
 {
 	ImplCallEventListeners( nEvent ,pData);
 }
