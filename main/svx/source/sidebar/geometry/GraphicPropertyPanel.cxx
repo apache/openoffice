@@ -128,15 +128,14 @@ void GraphicPropertyPanel::Initialize()
 	mpMtrBlue->SetAccessibleName(mpMtrBlue->GetQuickHelpText());		//wj acc
 	mpMtrGamma->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Gamma value")));	//wj acc
 
-    // IAccessible2 (?) not supported by AOO
-    // mpMtrRed->SetAccRelationLabeledBy(&maMtrRed);
-	// mpMtrGreen->SetAccRelationLabeledBy(&maMtrGreen);
-	// mpMtrBlue->SetAccRelationLabeledBy(&maMtrBlue);
-	// mpMtrGamma->SetAccRelationLabeledBy(&maMtrGamma);
-	// mpMtrBrightness->SetAccRelationLabeledBy(mpFtBrightness);	//7874
-	// mpMtrContrast->SetAccRelationLabeledBy(mpFtContrast);	//7874
-	// mpMtrTrans->SetAccRelationLabeledBy(mpFtTrans);	//7874
-	// mpLBColorMode->SetAccRelationLabeledBy(mpFtColorMode);	//7874
+    mpMtrRed->SetAccessibleRelationLabeledBy(mpMtrRed.get());
+	mpMtrGreen->SetAccessibleRelationLabeledBy(mpMtrGreen.get());
+	mpMtrBlue->SetAccessibleRelationLabeledBy(mpMtrBlue.get());
+	mpMtrGamma->SetAccessibleRelationLabeledBy(mpMtrGamma.get());
+	mpMtrBrightness->SetAccessibleRelationLabeledBy(mpFtBrightness.get());	//7874
+	mpMtrContrast->SetAccessibleRelationLabeledBy(mpFtContrast.get());	//7874
+	mpMtrTrans->SetAccessibleRelationLabeledBy(mpFtTrans.get());	//7874
+	mpLBColorMode->SetAccessibleRelationLabeledBy(mpFtColorMode.get());	//7874
 }
 
 //////////////////////////////////////////////////////////////////////////////

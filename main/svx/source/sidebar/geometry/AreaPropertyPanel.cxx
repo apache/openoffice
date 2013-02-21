@@ -704,6 +704,12 @@ AreaPropertyPanel::~AreaPropertyPanel()
     // Destroy the background windows of the toolboxes.
     mpToolBoxColorBackground.reset();
     mpBTNGradientBackground.reset();
+
+    // Destroy the popup windows
+    mpTrGrPage.reset();
+    mpTrGrFloatWin.reset();
+    mpPageColor.reset();
+    mpFloatWinColor.reset();
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -845,7 +851,7 @@ void AreaPropertyPanel::Initialize()
 
 //////////////////////////////////////////////////////////////////////////////
 
-IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pBox )
+IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 {
 	XFillStyle  eXFS = (XFillStyle)mpLbFillType->GetSelectEntryPos();
 
@@ -985,7 +991,7 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pBox )
 			meLastXFS = (sal_uInt16)eXFS;
 			if( eXFS != XFILL_NONE )
 			{
-				if ( pBox )
+				if ( pToolBox )
 					mpLbFillType->Selected();
 			}
 	}
@@ -994,13 +1000,13 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pBox )
 
 //////////////////////////////////////////////////////////////////////////////
 
-IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pBox )
+IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pToolBox )
 {
-	XFillStyle eXFS = (XFillStyle)mpLbFillType->GetSelectEntryPos();
-	XFillStyleItem aXFillStyleItem( eXFS );
+    XFillStyle eXFS = (XFillStyle)mpLbFillType->GetSelectEntryPos();
+    XFillStyleItem aXFillStyleItem( eXFS );
+    SfxObjectShell* pSh = SfxObjectShell::Current();
 
-	SfxObjectShell* pSh = SfxObjectShell::Current();
-	if(pBox)
+    if(pToolBox)
 	{
 		if( (XFillStyle) meLastXFS != eXFS )
         {
@@ -1090,33 +1096,35 @@ IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pBox )
 //////////////////////////////////////////////////////////////////////////////
 //add  for color picker
 
-IMPL_LINK(AreaPropertyPanel, ToolBoxColorDropHdl,ToolBox*, pToolBox)
+IMPL_LINK(AreaPropertyPanel, ToolBoxColorDropHdl, ToolBox*, pToolBox)
 {
-	sal_uInt16 nId = pToolBox->GetCurItemId();
-	if(nId == TBI_COLOR)
-	{
+    sal_uInt16 nId = pToolBox->GetCurItemId();
+
+    if(nId == TBI_COLOR)
+    {
 		pToolBox->SetItemDown( nId, true );
 
 		SvxColorPage* pColorPage = GetColorPage();
 		Size aFloatSz = pColorPage->GetOutputSizePixel();
-//		GetColorFloatWin()->SetSizePixel( aFloatSz );
+        GetColorFloatWin()->SetSizePixel( aFloatSz );
 
 		Point aPos = mpToolBoxColor->GetPosPixel();
 		aPos = OutputToScreenPixel( aPos );
 		Size aSize = mpToolBoxColor->GetSizePixel();
 		Rectangle aRect( aPos, aSize );
 
-//		GetColorFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_NOFOCUSCLOSE|FLOATWIN_POPUPMODE_DOWN );
-//		GetColorFloatWin()->SetPopupModeFlags(GetColorFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
+        GetColorFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_NOFOCUSCLOSE|FLOATWIN_POPUPMODE_DOWN );
+        GetColorFloatWin()->SetPopupModeFlags(GetColorFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
 		
 		pColorPage->GetFocus();
-		//modified );
-		if(mpColorItem)
+
+        if(mpColorItem)
 			pColorPage->SetCurColorSelect(mpColorItem->GetColorValue(), mbColorAvail);		
 		else
 			pColorPage->SetCurColorSelect(COL_WHITE, false);
 	}
-	return 0;
+
+    return 0;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -1740,33 +1748,38 @@ IMPL_LINK( AreaPropertyPanel, ImplPopupModeEndHdl, FloatingWindow*, EMPTYARG )
 
 //////////////////////////////////////////////////////////////////////////////
 
-IMPL_LINK( AreaPropertyPanel, ClickTrGrHdl_Impl, ToolBox*, pBox )
+IMPL_LINK( AreaPropertyPanel, ClickTrGrHdl_Impl, ToolBox*, pToolBox )
 {
-	SvxAreaTrGrPage* pTrGrPage = GetTrGrPage();
-	pTrGrPage->Rearrange(mpGradientItem.get());
-	pBox->SetItemDown( TBI_BTX_GRADIENT, true );
+    sal_uInt16 nId = pToolBox->GetCurItemId();
+    
+    if(nId == BTN_GRADIENT)
+    {
+	    SvxAreaTrGrPage* pTrGrPage = GetTrGrPage();
+	    pTrGrPage->Rearrange(mpGradientItem.get());
+	    pToolBox->SetItemDown( TBI_BTX_GRADIENT, true );
 
-	const XGradient& rGradient = mpGradientItem->GetGradientValue();	
-	XGradientStyle eXGS(rGradient.GetGradientStyle());
+	    const XGradient& rGradient = mpGradientItem->GetGradientValue();	
+	    XGradientStyle eXGS(rGradient.GetGradientStyle());
 
-	Size aFloatSz = pTrGrPage->GetOutputSizePixel();
-    GetTrGrFloatWin()->SetSizePixel( aFloatSz );
+	    Size aFloatSz = pTrGrPage->GetOutputSizePixel();
+        GetTrGrFloatWin()->SetSizePixel( aFloatSz );
 
-	Point aPos=mpBTNGradient->GetPosPixel();
-	aPos = OutputToScreenPixel( aPos );
-	Size aSize = mpBTNGradient->GetSizePixel();
-	Rectangle aRect( aPos, aSize );
+	    Point aPos=mpBTNGradient->GetPosPixel();
+	    aPos = OutputToScreenPixel( aPos );
+	    Size aSize = mpBTNGradient->GetSizePixel();
+	    Rectangle aRect( aPos, aSize );
 
-	//Todo
-	//if( ImplIsAntiparallel() )
-    //    ImplReMirror( aRect );
+	    //Todo
+	    //if( ImplIsAntiparallel() )
+        //    ImplReMirror( aRect );
 
-	GetTrGrFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_DOWN | FLOATWIN_POPUPMODE_NOFOCUSCLOSE);
-	GetTrGrFloatWin()->SetPopupModeFlags(GetTrGrFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
+	    GetTrGrFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_DOWN | FLOATWIN_POPUPMODE_NOFOCUSCLOSE);
+	    GetTrGrFloatWin()->SetPopupModeFlags(GetTrGrFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
 
-	pTrGrPage->ToGetFocus();
+	    pTrGrPage->ToGetFocus();
+    }
 
-	return (0L);
+    return (0L);
 }
 
 //////////////////////////////////////////////////////////////////////////////

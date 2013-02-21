@@ -828,14 +828,13 @@ void TransformationPropertyPanel::Initialize()
 	mpFlipTbx->SetQuickHelpText(FLIP_HORIZONTAL,String(SVX_RES(STR_QH_HORI_FLIP))); //Add
 	mpFlipTbx->SetQuickHelpText(FLIP_VERTICAL,String(SVX_RES(STR_QH_VERT_FLIP))); //Add
 	
-    // IAccessible2 (?) Not supported by AOO
-	//mpMtrPosX->SetAccRelationLabeledBy(mpFtPosX);	
-	//mpMtrPosY->SetAccRelationLabeledBy(mpFtPosY);	
-	//mpMtrWidth->SetAccRelationLabeledBy(mpFtWidth);	
-	//mpMtrHeight->SetAccRelationLabeledBy(mpFtHeight);	
-	//mpMtrAngle->SetAccRelationLabeledBy(mpFtAngle);
-	//mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle);
-	//mpFlipTbx->SetAccRelationLabeledBy(mpFtFlip);
+	mpMtrPosX->SetAccessibleRelationLabeledBy(mpFtPosX.get());	
+	mpMtrPosY->SetAccessibleRelationLabeledBy(mpFtPosY.get());	
+	mpMtrWidth->SetAccessibleRelationLabeledBy(mpFtWidth.get());	
+	mpMtrHeight->SetAccessibleRelationLabeledBy(mpFtHeight.get());	
+	mpMtrAngle->SetAccessibleRelationLabeledBy(mpFtAngle.get());
+	//mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
+	mpFlipTbx->SetAccessibleRelationLabeledBy(mpFtFlip.get());
 
     mpMtrAngle->InsertValue(0, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(4500, FUNIT_CUSTOM);

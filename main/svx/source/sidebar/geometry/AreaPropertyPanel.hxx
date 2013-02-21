@@ -158,8 +158,10 @@ private:
 
     ::boost::scoped_ptr< PropertyPanelPopuplWindow >    mpTrGrFloatWin;
     ::boost::scoped_ptr< SvxAreaTrGrPage >              mpTrGrPage;
+
     ::boost::scoped_ptr< PropertyPanelPopuplWindow >    mpFloatWinColor;
     ::boost::scoped_ptr< SvxColorPage >                 mpPageColor; 
+
     ::boost::scoped_ptr< XFillFloatTransparenceItem >   mpGradientItem;
     ::boost::scoped_ptr< SfxUInt16Item >                mpTransTypeItem;
 

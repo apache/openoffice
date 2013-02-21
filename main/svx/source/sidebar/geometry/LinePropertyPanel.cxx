@@ -1439,14 +1439,12 @@ void LinePropertyPanel::Initialize()
 	mpMFTransparent->SetModifyHdl(aLink);
 	mpMFTransparent->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency")));	//wj acc
 	
-    // SetAccRelationLabeledBy (Iaccessible2?) not supported by AOO
-    //
-	// mpTBWidth->SetAccRelationLabeledBy(mpFTWidth);
-	// mpTBColor->SetAccRelationLabeledBy(mpFTColor);
-	// mpTBStyle->SetAccRelationLabeledBy(mpFTStyle);
-	// mpMFTransparent->SetAccRelationLabeledBy(mpFTTrancparency);
-	// mpLBStart->SetAccRelationLabeledBy(mpFTArrow);
-	// mpLBEnd->SetAccRelationLabeledBy(mpLBEnd);
+	mpTBWidth->SetAccessibleRelationLabeledBy(mpFTWidth.get());
+	mpTBColor->SetAccessibleRelationLabeledBy(mpFTColor.get());
+	mpTBStyle->SetAccessibleRelationLabeledBy(mpFTStyle.get());
+	mpMFTransparent->SetAccessibleRelationLabeledBy(mpFTTrancparency.get());
+	mpLBStart->SetAccessibleRelationLabeledBy(mpFTArrow.get());
+	mpLBEnd->SetAccessibleRelationLabeledBy(mpLBEnd.get());
 }
 
 //////////////////////////////////////////////////////////////////////////////
