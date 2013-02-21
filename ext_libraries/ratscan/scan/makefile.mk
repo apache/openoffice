@@ -23,7 +23,7 @@ PRJ=..
 
 .INCLUDE :	settings.mk
 
-version=3.5
+version=4.0
 
 .IF "$(RAT_JAR_HOME)"=="BUILD"
 rat_jar_home=$(CLASSDIR)
