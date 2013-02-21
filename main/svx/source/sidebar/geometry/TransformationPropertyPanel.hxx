@@ -102,6 +102,7 @@ private:
 
     //flip
     ::boost::scoped_ptr< FixedText >        mpFtFlip;
+    ::boost::scoped_ptr< Window >           mpFlipTbxBackground;
     ::boost::scoped_ptr< ToolBox >          mpFlipTbx;
 
     // Internal variables

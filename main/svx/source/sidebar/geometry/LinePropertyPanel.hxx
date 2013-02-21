@@ -82,10 +82,13 @@ public:
 private:
     //ui controls
     ::boost::scoped_ptr< FixedText >                        mpFTWidth;
+    ::boost::scoped_ptr< Window >                           mpTBWidthBackground;
     ::boost::scoped_ptr< ToolBox >                          mpTBWidth;
     ::boost::scoped_ptr< FixedText >                        mpFTColor;
+    ::boost::scoped_ptr< Window >                           mpTBColorBackground;
     ::boost::scoped_ptr< ToolBox >                          mpTBColor;
     ::boost::scoped_ptr< FixedText >                        mpFTStyle;
+    ::boost::scoped_ptr< Window >                           mpTBStyleBackground;
     ::boost::scoped_ptr< ToolBox >                          mpTBStyle;
     ::boost::scoped_ptr< FixedText >                        mpFTTrancparency;
     ::boost::scoped_ptr< MetricField >                      mpMFTransparent;

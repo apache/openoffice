@@ -728,7 +728,8 @@ TransformationPropertyPanel::TransformationPropertyPanel(
     mpMtrAngle(new MetricBox(this, SVX_RES(MTR_FLD_ANGLE))),
     mpDial(new DialControl(this, SVX_RES(DIAL_CONTROL), true)),
     mpFtFlip(new FixedText(this, SVX_RES(FT_FLIP))),
-    mpFlipTbx(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TBX_FLIP))),
+    mpFlipTbxBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
+    mpFlipTbx(sfx2::sidebar::ControlFactory::CreateToolBox(mpFlipTbxBackground.get(), SVX_RES(TBX_FLIP))),
     maRect(),
     mpView(0),
     mlOldWidth(1),
@@ -776,6 +777,9 @@ TransformationPropertyPanel::TransformationPropertyPanel(
 TransformationPropertyPanel::~TransformationPropertyPanel()
 {
     mbInDestructor = true;
+
+    // Destroy the background windows of the toolboxes.
+    mpFlipTbxBackground.reset();
 }
 
 //////////////////////////////////////////////////////////////////////////////

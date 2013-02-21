@@ -103,10 +103,12 @@ private:
     ::boost::scoped_ptr< FixedText >                    mpColorTextFT;
     ::boost::scoped_ptr< SvxFillTypeBox >               mpLbFillType;
     ::boost::scoped_ptr< SvxFillAttrBox >               mpLbFillAttr;
+    ::boost::scoped_ptr< Window >                       mpToolBoxColorBackground;
     ::boost::scoped_ptr< ToolBox >                      mpToolBoxColor; // for new color picker
     ::boost::scoped_ptr< FixedText >                    mpTrspTextFT;
     ::boost::scoped_ptr< ListBox >                      mpLBTransType;
     ::boost::scoped_ptr< MetricField >                  mpMTRTransparent;
+    ::boost::scoped_ptr< Window >                       mpBTNGradientBackground;
     ::boost::scoped_ptr< ToolBox >                      mpBTNGradient;
 
     ::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;

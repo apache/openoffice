@@ -636,11 +636,13 @@ AreaPropertyPanel::AreaPropertyPanel(
     mpColorTextFT(new FixedText(this, SVX_RES(FT_COLOR_LIST))),
     mpLbFillType(new SvxFillTypeBox(this)),
     mpLbFillAttr(new SvxFillAttrBox(this)),
-    mpToolBoxColor(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_COLOR))),
+    mpToolBoxColorBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
+    mpToolBoxColor(sfx2::sidebar::ControlFactory::CreateToolBox(mpToolBoxColorBackground.get(), SVX_RES(TB_COLOR))),
     mpTrspTextFT(new FixedText(this, SVX_RES(FL_TRSP_TEXT))),
     mpLBTransType(new ListBox(this, SVX_RES(LB_TRGR_TYPES))),
     mpMTRTransparent(new MetricField(this, SVX_RES(MTR_TRANSPARENT))),
-    mpBTNGradient(sfx2::sidebar::ControlFactory::CreateToolBox(this,SVX_RES(BTN_GRADIENT))),
+    mpBTNGradientBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
+    mpBTNGradient(sfx2::sidebar::ControlFactory::CreateToolBox(mpBTNGradientBackground.get(), SVX_RES(BTN_GRADIENT))),
     mpColorUpdater(new ::svx::ToolboxButtonColorUpdater(SID_ATTR_FILL_COLOR, TBI_COLOR, mpToolBoxColor.get(), TBX_UPDATER_MODE_CHAR_COLOR_NEW)),
     mpStyleItem(),
     mpColorItem(),
@@ -699,6 +701,9 @@ AreaPropertyPanel::AreaPropertyPanel(
 
 AreaPropertyPanel::~AreaPropertyPanel()
 {
+    // Destroy the background windows of the toolboxes.
+    mpToolBoxColorBackground.reset();
+    mpBTNGradientBackground.reset();
 }
 
 //////////////////////////////////////////////////////////////////////////////

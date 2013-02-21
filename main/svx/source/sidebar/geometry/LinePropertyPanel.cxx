@@ -1262,11 +1262,14 @@ LinePropertyPanel::LinePropertyPanel(
         pParent, 
         SVX_RES(RID_SIDEBAR_LINE_PANEL)),
     mpFTWidth(new FixedText(this, SVX_RES(FT_WIDTH))),
-    mpTBWidth(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_WIDTH))),
+    mpTBWidthBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
+    mpTBWidth(sfx2::sidebar::ControlFactory::CreateToolBox(mpTBWidthBackground.get(), SVX_RES(TB_WIDTH))),
     mpFTColor(new FixedText(this, SVX_RES(FT_COLOR))),
-    mpTBColor(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_COLOR))),
+    mpTBColorBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
+    mpTBColor(sfx2::sidebar::ControlFactory::CreateToolBox(mpTBColorBackground.get(), SVX_RES(TB_COLOR))),
     mpFTStyle(new FixedText(this, SVX_RES(FT_STYLE))),
-    mpTBStyle(sfx2::sidebar::ControlFactory::CreateToolBox(this, SVX_RES(TB_STYLE))),
+    mpTBStyleBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
+    mpTBStyle(sfx2::sidebar::ControlFactory::CreateToolBox(mpTBStyleBackground.get(), SVX_RES(TB_STYLE))),
     mpFTTrancparency(new FixedText(this, SVX_RES(FT_TRANSPARENT))),
     mpMFTransparent(new MetricField(this, SVX_RES(MF_TRANSPARENT))),
     mpFTArrow(new FixedText(this, SVX_RES(FT_ARROW))),
@@ -1321,6 +1324,10 @@ LinePropertyPanel::LinePropertyPanel(
 
 LinePropertyPanel::~LinePropertyPanel()
 {
+    // Destroy the background windows of the toolboxes.
+    mpTBWidthBackground.reset();
+    mpTBColorBackground.reset();
+    mpTBStyleBackground.reset();
 }
 
 //////////////////////////////////////////////////////////////////////////////
