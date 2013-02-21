@@ -23,6 +23,7 @@
 
 #include <text/TextPropertyPanel.hxx>
 #include <geometry/AreaPropertyPanel.hxx>
+#include <geometry/GraphicPropertyPanel.hxx>
 #include <geometry/LinePropertyPanel.hxx>
 #include <geometry/TransformationPropertyPanel.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
@@ -141,6 +142,15 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             xFrame,
             pPanel,
             ::boost::bind(&AreaPropertyPanel::ShowMenu, pPanel));
+    }
+    else if (rsResourceURL.endsWithAsciiL("/GraphicPropertyPanel", strlen("/GraphicPropertyPanel")))
+    {
+        GraphicPropertyPanel* pPanel = GraphicPropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>());
     }
     else if (rsResourceURL.endsWithAsciiL("/LinePropertyPanel", strlen("/LinePropertyPanel")))
     {

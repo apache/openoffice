@@ -174,6 +174,7 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/sidebar/text/SvxSBFontNameBox \
     svx/source/sidebar/text/TextPropertyPanel \
     svx/source/sidebar/geometry/AreaPropertyPanel \
+    svx/source/sidebar/geometry/GraphicPropertyPanel \
     svx/source/sidebar/geometry/LinePropertyPanel \
     svx/source/sidebar/geometry/TransformationPropertyPanel \
     svx/source/sidebar/tools/PropertyPanelTools \

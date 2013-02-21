@@ -248,6 +248,36 @@
           <value>true</value>
         </prop>
       </node>
+      <node oor:name="GraphicPropertyPanel" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Graphic Properties</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>GraphicPropertyPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>any</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SvxPanelFactory/GraphicPropertyPanel</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+      </node>
       <node oor:name="Impress1" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Layouts</value>
