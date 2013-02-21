@@ -261,8 +261,8 @@ void convert_src::setListItem(char *syyText, bool bIsStart)
     mbExpectName = false;
     mcStack.pop_back();
     ssBuf << ++miListCount;
-    if (msName.size())
-      ssBuf << "." << msName;
+//    if (msName.size())
+//      ssBuf << "." << msName;
     msName = ssBuf.str();
     mcStack.push_back(msName);
   }

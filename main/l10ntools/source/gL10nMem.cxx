@@ -19,6 +19,7 @@
  * 
  *************************************************************/
 #include "gLang.hxx"
+#include <algorithm>
 #include <fstream>
 
 
@@ -72,7 +73,7 @@ l10nMem::~l10nMem()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem::save(const std::string& srTargetFile)
 {
-  int           i;
+  int           i, nL;
   std::string   sFile = srTargetFile + ".cnv";
   std::ofstream outputFile(sFile.c_str(), std::ios::binary);
 
@@ -82,12 +83,26 @@ void l10nMem::save(const std::string& srTargetFile)
   
   for (i = 0; i < (int)mcMemory.size(); ++i)
   {
-  outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
-             << mcMemory[i].msKey;
-  if (mcMemory[i].miIndex)
-    outputFile << "." << mcMemory[i].miIndex;
-  outputFile << "." << mcMemory[i].msObjectType << "\t" << mcMemory[i].msLanguage  << "\t"
-               << mcMemory[i].msText << std::endl;
+    std::replace( mcMemory[i].msSourceFile.begin(), mcMemory[i].msSourceFile.end(), '/', '\\' );
+    for (;;)
+    {
+      nL = mcMemory[i].msText.find("\\\"");
+      if (nL == (int)std::string::npos)
+        break;
+      mcMemory[i].msText.erase(nL,1);
+    }
+    for (;;)
+    {
+      nL = mcMemory[i].msText.find("\\\\");
+      if (nL == (int)std::string::npos)
+        break;
+      mcMemory[i].msText.erase(nL,1);
+    }
+    outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
+               << mcMemory[i].msKey;
+    //if (mcMemory[i].miIndex)
+    //  outputFile << "." << mcMemory[i].miIndex;
+    outputFile << "\t" << mcMemory[i].msLanguage  << "\t" << mcMemory[i].msText << std::endl;
   }
   // JIX
 }

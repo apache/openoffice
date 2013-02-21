@@ -139,7 +139,7 @@ void convert_xcu::stopCollectData(char *syyText)
 
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
-    useKey += (nL > 0 ? "." : "") + mcStack[nL];
+    useKey += "." + mcStack[nL];
   
   if (mbMergeMode)
   {
