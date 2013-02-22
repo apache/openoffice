@@ -23,8 +23,8 @@
 #define SD_SIDEBAR_PANELS_PANEL_BASE_HXX
 
 #include "IDisposable.hxx"
-#include "ILayoutableWindow.hxx"
 #include "ISidebarReceiver.hxx"
+#include <sfx2/sidebar/ILayoutableWindow.hxx>
 
 #include <vcl/ctrl.hxx>
 
@@ -46,7 +46,7 @@ namespace sd { namespace sidebar {
 
 class PanelBase
     : public Control,
-      public ILayoutableWindow,
+      public sfx2::sidebar::ILayoutableWindow,
       public IDisposable,
       public ISidebarReceiver
 {

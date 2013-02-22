@@ -25,8 +25,6 @@
 
 #include "SidebarShellManager.hxx"
 #include "app.hrc"
-#include "controller/SlideSorterController.hxx"
-#include "controller/SlsPageSelector.hxx"
 #include "drawdoc.hxx"
 #include "framework/FrameworkHelper.hxx"
 #include "glob.hrc"
@@ -42,7 +40,6 @@
 #include "DrawDocShell.hxx"
 #include "DrawViewShell.hxx"
 #include "EventMultiplexer.hxx"
-#include "SidebarViewShell.hxx"
 #include "SlideSorterViewShell.hxx"
 #include "ViewShellBase.hxx"
 
@@ -54,6 +51,7 @@
 #include <sfx2/viewfrm.hxx>
 #include <svl/languageoptions.hxx>
 #include <vcl/image.hxx>
+#include <vcl/floatwin.hxx>
 
 #include <com/sun/star/frame/XController.hpp>
 #include <com/sun/star/drawing/framework/XControllerManager.hpp>
@@ -62,10 +60,6 @@
 
 #include <vector>
 #include <memory>
-
-using namespace ::sd::sidebar;
-#define LayoutMenu
-#include "sdslots.hxx"
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::text;
@@ -77,13 +71,6 @@ using ::sd::framework::FrameworkHelper;
 namespace sd { namespace sidebar {
 
 
-SFX_IMPL_INTERFACE(LayoutMenu, SfxShell, 
-    SdResId(STR_SIDEBAR_LAYOUTMENU))
-{
-	SFX_POPUPMENU_REGISTRATION(SdResId(RID_TASKPANE_LAYOUTMENU_POPUP));
-}
-
-TYPEINIT1(LayoutMenu, SfxShell);
 
 struct snewfoil_value_info
 {
@@ -147,22 +134,22 @@ static snewfoil_value_info standard[] =
 LayoutMenu::LayoutMenu (
     ::Window* pParent,
     ViewShellBase& rViewShellBase,
-    SidebarShellManager& rSubShellManager)
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
     : ValueSet (pParent),
       DragSourceHelper(this),
       DropTargetHelper(this),
       mrBase(rViewShellBase),
-      mrShellManager(rSubShellManager),
       mbUseOwnScrollBar(false),
       mnPreferredColumnCount(3),
       mxListener(NULL),
       mbSelectionUpdatePending(true),
       mbIsMainViewChangePending(false),
-      mxSidebar(),
+      mxSidebar(rxSidebar),
       mbIsDisposed(false)
 {
     implConstruct( *mrBase.GetDocument()->GetDocSh() );
-
+    OSL_TRACE("created LayoutMenu at %x", this);
+    
 #ifdef DEBUG
     SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:LayoutMenu")));
 #endif
@@ -186,8 +173,6 @@ void LayoutMenu::implConstruct( DrawDocShell& rDocumentShell )
         SetStyle (GetStyle() | WB_VSCROLL);
 	SetExtraSpacing(2);
 	SetSelectHdl (LINK(this, LayoutMenu, ClickHandler));
-	SetPool (&rDocumentShell.GetDoc()->GetPool());
-    SetName(String(RTL_CONSTASCII_USTRINGPARAM("LayoutMenu")));
     InvalidateContent();
 
     Link aEventListenerLink (LINK(this,LayoutMenu,EventMultiplexerListener));
@@ -209,9 +194,6 @@ void LayoutMenu::implConstruct( DrawDocShell& rDocumentShell )
         Reference<frame::XDispatchProvider>(mrBase.GetController()->getFrame(), UNO_QUERY),
         ::rtl::OUString::createFromAscii(".uno:VerticalTextState"));
 
-    // Add this new object as shell to the shell factory.
-    GetShellManager()->AddSubShell(SHELLID_SD_TASK_PANE_PREVIEW_LAYOUTS,this,this);
-    
     SetSizePixel(GetParent()->GetSizePixel());
     Link aWindowEventHandlerLink (LINK(this,LayoutMenu,WindowEventHandler));
     GetParent()->AddEventListener(aWindowEventHandlerLink);
@@ -222,6 +204,7 @@ void LayoutMenu::implConstruct( DrawDocShell& rDocumentShell )
 
 LayoutMenu::~LayoutMenu (void)
 {
+    OSL_TRACE("destroying LayoutMenu at %x", this);
     Dispose();
 }
 
@@ -233,12 +216,10 @@ void LayoutMenu::Dispose (void)
     if (mbIsDisposed)
         return;
 
+    OSL_TRACE("disposing LayoutMenu at %x", this);
+
     mbIsDisposed = true;
 
-    // Tell the shell factory that this object is no longer available.
-    if (GetShellManager() != NULL)
-        GetShellManager()->RemoveSubShell(this);
-    
     Reference<lang::XComponent> xComponent (mxListener, UNO_QUERY);
     if (xComponent.is())
         xComponent->dispose();
@@ -475,27 +456,7 @@ void LayoutMenu::MouseButtonDown (const MouseEvent& rEvent)
 
 
 
-
-void LayoutMenu::Execute (SfxRequest& rRequest)
-{
-	switch (rRequest.GetSlot())
-    {
-        case SID_TP_APPLY_TO_SELECTED_SLIDES:
-            AssignLayoutToSelectedSlides(GetSelectedAutoLayout());
-            rRequest.Done();
-            break;
-
-        case SID_INSERTPAGE_LAYOUT_MENU:
-            // Add arguments to this slot and forward it to the main view
-            // shell.
-            InsertPageWithLayout(GetSelectedAutoLayout());
-            break;
-    }
-}
-
-
-
-
+/*
 void LayoutMenu::GetState (SfxItemSet& rItemSet)
 {
     // Cut and paste is not supported.  The SID_(CUT,COPY,PASTE) entries
@@ -512,7 +473,7 @@ void LayoutMenu::GetState (SfxItemSet& rItemSet)
     if (aState == SFX_ITEM_DISABLED)
         rItemSet.DisableItem(SID_INSERTPAGE_LAYOUT_MENU);
 }
-
+*/
 
 
 
@@ -546,14 +507,6 @@ void LayoutMenu::InsertPageWithLayout (AutoLayout aLayout)
 
 
 
-SidebarShellManager* LayoutMenu::GetShellManager()
-{
-    return &mrShellManager;
-}
-
-
-
-
 void LayoutMenu::InvalidateContent (void)
 {
     // The number of items may have changed.  Request a resize so that the
@@ -563,6 +516,9 @@ void LayoutMenu::InvalidateContent (void)
     // Throw away the current set and fill the menu anew according to the
     // current settings (this includes the support for vertical writing.)
     Fill();
+
+    if (mxSidebar.is())
+        mxSidebar->requestLayout();
 }
 
 
@@ -835,31 +791,40 @@ void LayoutMenu::Command (const CommandEvent& rEvent)
         case COMMAND_CONTEXTMENU:
             if ( ! SD_MOD()->GetWaterCan())
             {
-                if (GetShellManager() != NULL)
-                    GetShellManager()->MoveToTop(this);
+                // Determine the position where to show the menu.
+                Point aMenuPosition;
                 if (rEvent.IsMouseEvent())
                 {
-                    // Do not show the context menu when the mouse was not
-                    // pressed over an item.
-                    if (GetItemId(rEvent.GetMousePosPixel()) > 0)
-                        mrBase.GetViewFrame()->GetDispatcher()->ExecutePopup(
-                            SdResId(RID_TASKPANE_LAYOUTMENU_POPUP));
+                    if (GetItemId(rEvent.GetMousePosPixel()) <= 0)
+                        return;
+                    aMenuPosition = rEvent.GetMousePosPixel();
                 }
                 else
                 {
-                    // When the command event was not caused by a mouse
-                    // event (for example a key press instead) then show the
-                    // popup menu at the center of the current item.
-                    if (GetSelectItemId() != (sal_uInt16)-1)
-                    {
-                    	Rectangle aBBox (GetItemRect(GetSelectItemId()));
-                        Point aPosition (aBBox.Center());
-                        mrBase.GetViewFrame()->GetDispatcher()->ExecutePopup(
-                            SdResId(RID_TASKPANE_LAYOUTMENU_POPUP),
-                            this,
-                            &aPosition);
-                    }
+                    if (GetSelectItemId() == (sal_uInt16)-1)
+                        return;
+                    Rectangle aBBox (GetItemRect(GetSelectItemId()));
+                    aMenuPosition = aBBox.Center();
                 }
+
+                // Setup the menu.
+                ::boost::shared_ptr<PopupMenu> pMenu (new PopupMenu(SdResId(RID_TASKPANE_LAYOUTMENU_POPUP)));
+                FloatingWindow* pMenuWindow = dynamic_cast<FloatingWindow*>(pMenu->GetWindow());
+                if (pMenuWindow != NULL)
+                    pMenuWindow->SetPopupModeFlags(
+                        pMenuWindow->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOMOUSEUPCLOSE);
+                pMenu->SetSelectHdl(LINK(this, LayoutMenu, OnMenuItemSelected));
+
+                // Disable the SID_INSERTPAGE_LAYOUT_MENU item when
+                // the document is read-only.
+                const SfxPoolItem* pItem = NULL;
+                const SfxItemState aState (
+                    mrBase.GetViewFrame()->GetDispatcher()->QueryState(SID_INSERTPAGE, pItem));
+                if (aState == SFX_ITEM_DISABLED)
+                    pMenu->EnableItem(SID_INSERTPAGE_LAYOUT_MENU, sal_False);
+
+                // Show the menu.
+                pMenu->Execute(this, Rectangle(aMenuPosition,Size(1,1)), POPUPMENU_EXECUTE_DOWN);
             }
             break;
 
@@ -875,6 +840,34 @@ void LayoutMenu::Command (const CommandEvent& rEvent)
 IMPL_LINK(LayoutMenu, StateChangeHandler, ::rtl::OUString*, EMPTYARG)
 {
     InvalidateContent();
+    return 0;
+}
+
+
+
+
+IMPL_LINK(LayoutMenu, OnMenuItemSelected, Menu*, pMenu)
+{
+    if (pMenu == NULL)
+    {
+        OSL_ENSURE(pMenu!=NULL, "LayoutMenu::OnMenuItemSelected: illegal menu!");
+        return 0;
+    }
+
+    pMenu->Deactivate();
+    const sal_Int32 nIndex (pMenu->GetCurItemId());
+
+    if (nIndex == SID_TP_APPLY_TO_SELECTED_SLIDES)
+    {
+        AssignLayoutToSelectedSlides(GetSelectedAutoLayout());
+    }
+    else if (nIndex == SID_INSERTPAGE_LAYOUT_MENU)
+    {
+        // Add arguments to this slot and forward it to the main view
+        // shell.
+        InsertPageWithLayout(GetSelectedAutoLayout());
+    }
+
     return 0;
 }
 
@@ -1004,14 +997,6 @@ void LayoutMenu::DataChanged (const DataChangedEvent& rEvent)
 }
 
 
-
-
-void LayoutMenu::SetSidebar (const cssu::Reference<css::ui::XSidebar>& rxSidebar)
-{
-    mxSidebar = rxSidebar;
-    if (mxSidebar.is())
-        mxSidebar->requestLayout();
-}
 
 
 

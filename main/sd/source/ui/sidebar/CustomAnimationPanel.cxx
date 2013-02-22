@@ -21,15 +21,14 @@
 
 #include "precompiled_sd.hxx"
 
-#include "SlideTransitionPanel.hxx"
+#include "CustomAnimationPanel.hxx"
 
-#include "SidebarViewShell.hxx"
 #include "ViewShellBase.hxx"
 
 
 namespace sd {
-    extern ::Window* createSlideTransitionPanel (::Window* pParent, ViewShellBase& rBase);
-    extern sal_Int32 getSlideTransitionPanelMinimumHeight (::Window* pParent);
+    extern ::Window * createCustomAnimationPanel (::Window* pParent, ViewShellBase& rBase);
+    extern sal_Int32 getCustomAnimationPanelMinimumHeight (::Window* pParent);
 }
 
 
@@ -38,40 +37,43 @@ namespace sd {
 namespace sd { namespace sidebar {
 
 
-SlideTransitionPanel::SlideTransitionPanel (
+CustomAnimationPanel::CustomAnimationPanel (
     ::Window* pParentWindow,
     ViewShellBase& rViewShellBase)
-    : PanelBase(pParentWindow, rViewShellBase)
+    : PanelBase(
+        pParentWindow,
+        rViewShellBase)
 {
 #ifdef DEBUG
-    SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:SlideTransitionPanel")));
+    SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:CustomAnimationPanel")));
 #endif
 }
 
 
 
 
-SlideTransitionPanel::~SlideTransitionPanel (void)
+CustomAnimationPanel::~CustomAnimationPanel (void)
 {
 }
 
 
 
 
-::Window* SlideTransitionPanel::CreateWrappedControl (
+::Window* CustomAnimationPanel::CreateWrappedControl (
     ::Window* pParentWindow,
     ViewShellBase& rViewShellBase)
 {
-    return createSlideTransitionPanel(pParentWindow, rViewShellBase);
+    return createCustomAnimationPanel(pParentWindow, rViewShellBase);
 }
 
 
 
 
-css::ui::LayoutSize SlideTransitionPanel::GetHeightForWidth (const sal_Int32 nWidth)
+css::ui::LayoutSize CustomAnimationPanel::GetHeightForWidth (const sal_Int32 nWidth)
 {
-    const sal_Int32 nMinimumHeight(getSlideTransitionPanelMinimumHeight(mpWrappedControl.get()));
+    const sal_Int32 nMinimumHeight(getCustomAnimationPanelMinimumHeight(mpWrappedControl.get()));
     return css::ui::LayoutSize(nMinimumHeight,-1, nMinimumHeight);
 }
+
 
 } } // end of namespace sd::sidebar

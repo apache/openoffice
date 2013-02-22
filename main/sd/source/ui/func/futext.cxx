@@ -1185,7 +1185,8 @@ void FuText::SetInEditMode(const MouseEvent& rMEvt, sal_Bool bQuickDrag)
 						{
 							// #98198# Move cursor to end of text
 							ESelection aNewSelection(EE_PARA_NOT_FOUND, EE_INDEX_NOT_FOUND, EE_PARA_NOT_FOUND, EE_INDEX_NOT_FOUND);
-							pOLV->SetSelection(aNewSelection);
+							if (pOLV != NULL)
+								pOLV->SetSelection(aNewSelection);
 						}
 					}
 					else

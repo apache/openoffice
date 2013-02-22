@@ -38,7 +38,6 @@
 #include "DrawViewShell.hxx"
 #include "GraphicViewShell.hxx"
 #include "OutlineViewShell.hxx"
-#include "SidebarViewShell.hxx"
 #include "PresentationViewShell.hxx"
 #include "SlideSorterViewShell.hxx"
 #include "FrameView.hxx"
@@ -327,7 +326,6 @@ void SAL_CALL BasicViewFactory::initialize (const Sequence<Any>& aArguments)
             mxConfigurationController->addResourceFactory(FrameworkHelper::msNotesViewURL, this);
             mxConfigurationController->addResourceFactory(FrameworkHelper::msHandoutViewURL, this);
             mxConfigurationController->addResourceFactory(FrameworkHelper::msPresentationViewURL, this);
-            mxConfigurationController->addResourceFactory(FrameworkHelper::msSidebarViewURL, this);
             mxConfigurationController->addResourceFactory(FrameworkHelper::msSlideSorterURL, this);
         }
         catch (RuntimeException&)
@@ -440,15 +438,6 @@ void SAL_CALL BasicViewFactory::initialize (const Sequence<Any>& aArguments)
     {
         pViewShell.reset(
             new PresentationViewShell(
-                &rFrame,
-                *mpBase,
-                &rWindow,
-                pFrameView));
-    }
-    else if (rsViewURL.equals(FrameworkHelper::msSidebarViewURL))
-    {
-        pViewShell.reset(
-            new ::sd::sidebar::SidebarViewShell(
                 &rFrame,
                 *mpBase,
                 &rWindow,

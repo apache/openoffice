@@ -75,7 +75,8 @@ public:
         const ::rtl::OUString& rsResourceURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         Window* mpWindow,
-        const ::boost::function<void(void)>& rMenuProvider);
+        const ::boost::function<void(void)>& rMenuProvider,
+        const css::ui::LayoutSize& rLayoutSize);
 
     // XContextChangeEventListener
     virtual void SAL_CALL notifyContextChangeEvent (
@@ -126,7 +127,8 @@ protected:
         const ::rtl::OUString& rsResourceURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         Window* pWindow,
-        const ::boost::function<void(void)>& rMenuProvider);
+        const ::boost::function<void(void)>& rMenuProvider,
+        const css::ui::LayoutSize& rLayoutSize);
     virtual ~SidebarPanelBase (void);
 
     virtual void SAL_CALL disposing (void)
@@ -139,6 +141,7 @@ private:
     Window* mpControl;
     const ::rtl::OUString msResourceURL;
     const ::boost::function<void(void)> maMenuProvider;
+    const css::ui::LayoutSize maLayoutSize;
 };
 
 } } // end of namespace sfx2::sidebar

@@ -61,7 +61,6 @@ SVSDI1DEPEND= \
         tables.sdi\
 	outlnvsh.sdi \
 	SlideSorterController.sdi \
-	SidebarViewShell.sdi \
 	ViewShellBase.sdi \
 	sdslots.hrc \
 	$(PRJ)$/inc$/app.hrc
@@ -84,7 +83,6 @@ SVSDI2DEPEND= \
         mediaob.sdi \
 	outlnvsh.sdi \
 	ViewShellBase.sdi \
-	SidebarViewShell.sdi \
 	sdslots.hrc \
 	$(PRJ)$/inc$/app.hrc
 

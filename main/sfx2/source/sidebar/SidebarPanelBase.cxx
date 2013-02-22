@@ -23,6 +23,7 @@
 
 #include "sfx2/sidebar/SidebarPanelBase.hxx"
 #include "sfx2/sidebar/Theme.hxx"
+#include "sfx2/sidebar/ILayoutableWindow.hxx"
 #include "sfx2/imagemgr.hxx"
 #include <vcl/ctrl.hxx>
 #include <comphelper/processfactory.hxx>
@@ -40,14 +41,16 @@ Reference<ui::XUIElement> SidebarPanelBase::Create (
     const ::rtl::OUString& rsResourceURL,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     Window* pWindow,
-    const ::boost::function<void(void)>& rMenuProvider)
+    const ::boost::function<void(void)>& rMenuProvider,
+    const css::ui::LayoutSize& rLayoutSize)
 {
     Reference<ui::XUIElement> xUIElement (
         new SidebarPanelBase(
             rsResourceURL,
             rxFrame,
             pWindow,
-            rMenuProvider));
+            rMenuProvider,
+            rLayoutSize));
     return xUIElement;
 }
 
@@ -58,13 +61,17 @@ SidebarPanelBase::SidebarPanelBase (
     const ::rtl::OUString& rsResourceURL,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     Window* pWindow,
-    const ::boost::function<void(void)>& rMenuProvider)
+    const ::boost::function<void(void)>& rMenuProvider,
+    const css::ui::LayoutSize& rLayoutSize)
     : SidebarPanelBaseInterfaceBase(m_aMutex),
       mxFrame(rxFrame),
       mpControl(pWindow),
       msResourceURL(rsResourceURL),
-      maMenuProvider(rMenuProvider)
+      maMenuProvider(rMenuProvider),
+      maLayoutSize(rLayoutSize)
 {
+    OSL_TRACE("SidebarPanelBase created at %x", this);
+
     if (mxFrame.is())
     {
         cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
@@ -82,6 +89,7 @@ SidebarPanelBase::SidebarPanelBase (
 
 SidebarPanelBase::~SidebarPanelBase (void)
 {
+    OSL_TRACE("SidebarPanelBase destroyed at %x", this);
 }
 
 
@@ -90,7 +98,13 @@ SidebarPanelBase::~SidebarPanelBase (void)
 void SAL_CALL SidebarPanelBase::disposing (void)
     throw (cssu::RuntimeException)
 {
-    mpControl = NULL;
+    OSL_TRACE("SidebarPanelBase disposing at %x", this);
+
+    if (mpControl != NULL)
+    {
+        delete mpControl;
+        mpControl = NULL;
+    }
     
     if (mxFrame.is())
     {
@@ -128,6 +142,8 @@ void SAL_CALL SidebarPanelBase::notifyContextChangeEvent (
     const ui::ContextChangeEventObject& rEvent)
     throw (cssu::RuntimeException)
 {
+    OSL_TRACE("SidebarPanelBase notified at %x with control at %x", this, mpControl);
+
     ContextChangeReceiverInterface* pContextChangeReceiver
         = dynamic_cast<ContextChangeReceiverInterface*>(mpControl);
     if (pContextChangeReceiver != NULL)
@@ -147,6 +163,8 @@ void SAL_CALL SidebarPanelBase::disposing (
     throw (cssu::RuntimeException)
 {
     (void)rEvent;
+
+    OSL_TRACE("SidebarPanelBase disposing(e) at %x", this);
     
     mxFrame = NULL;
     mpControl = NULL;
@@ -221,13 +239,21 @@ Reference<awt::XWindow> SAL_CALL SidebarPanelBase::getWindow (void)
 ui::LayoutSize SAL_CALL SidebarPanelBase::getHeightForWidth (const sal_Int32 nWidth)
     throw(cssu::RuntimeException)
 {
-    if (mpControl != NULL)
-    {
-        const sal_Int32 nHeight (mpControl->GetSizePixel().Height());
-        return ui::LayoutSize(nHeight,nHeight,nHeight);
-    }
+    if (maLayoutSize.Minimum >= 0)
+        return maLayoutSize;
     else
-        return ui::LayoutSize(0,0,0);
+    {
+        ILayoutableWindow* pLayoutableWindow = dynamic_cast<ILayoutableWindow*>(mpControl);
+        if (pLayoutableWindow != NULL)
+            return pLayoutableWindow->GetHeightForWidth(nWidth);
+        else if (mpControl != NULL)
+        {
+            const sal_Int32 nHeight (mpControl->GetSizePixel().Height());
+            return ui::LayoutSize(nHeight,nHeight,nHeight);
+        }
+    }
+
+    return ui::LayoutSize(0,0,0);
 }
 
 

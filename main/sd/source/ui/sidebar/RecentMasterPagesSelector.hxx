@@ -38,8 +38,7 @@ public:
     static MasterPagesSelector* Create (
         ::Window* pParent,
         ViewShellBase& rViewShellBase,
-        SidebarShellManager& rSubShellManager);
-    virtual void GetState (SfxItemSet& rItemSet);
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 
 protected:
     DECL_LINK(MasterPageListListener, void*);
@@ -61,13 +60,15 @@ protected:
         SdPage* pMasterPage,
         const ::boost::shared_ptr<std::vector<SdPage*> >& rpPageList);
 
+    virtual void ProcessPopupMenu (Menu& rMenu);
+
 private:
     RecentMasterPagesSelector (
         ::Window* pParent, 
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        SidebarShellManager& rSubShellManager,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer);
+        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~RecentMasterPagesSelector (void);
 
     virtual void LateInit (void);

@@ -60,6 +60,8 @@ using namespace cssu;
 using ::rtl::OUString;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
+#define S2A(s) OUStringToOString(s, RTL_TEXTENCODING_ASCII_US).getStr()
+
 
 namespace sfx2 { namespace sidebar {
 
@@ -376,6 +378,14 @@ void SidebarController::SwitchToDeck (
         rDeckDescriptor.msId,
         mxFrame);
 
+    if (mpCurrentConfiguration
+        && ArePanelSetsEqual(mpCurrentConfiguration->maPanels, aPanelIds))
+    {
+        // Requested set of panels is identical to the current set of
+        // panels => Nothing to do.
+        return;
+    }
+    
     // Provide a configuration and Deck object.
     if ( ! mpCurrentConfiguration)
     {
@@ -394,6 +404,7 @@ void SidebarController::SwitchToDeck (
         aCurrentPanels.swap(mpCurrentConfiguration->maPanels);
     aNewPanels.resize(nNewPanelCount);
     sal_Int32 nWriteIndex (0);
+    bool bHasPanelSetChanged (false);
     for (sal_Int32 nReadIndex=0; nReadIndex<nNewPanelCount; ++nReadIndex)
     {
         const OUString& rsPanelId (aPanelIds[nReadIndex]);
@@ -410,6 +421,7 @@ void SidebarController::SwitchToDeck (
             // to new configuration.
             aNewPanels[nWriteIndex] = *iPanel;
             aCurrentPanels[::std::distance(aCurrentPanels.begin(), iPanel)] = NULL;
+            OSL_TRACE("    reusing panel %s", S2A(rsPanelId));
         }
         else
         {
@@ -417,6 +429,8 @@ void SidebarController::SwitchToDeck (
             aNewPanels[nWriteIndex] = CreatePanel(
                 rsPanelId,
                 mpCurrentConfiguration->mpDeck->GetPanelParentWindow());
+            OSL_TRACE("    creating panel %s", S2A(rsPanelId));
+            bHasPanelSetChanged = true;
         }
         if (aNewPanels[nWriteIndex] != NULL)
             ++nWriteIndex;
@@ -429,7 +443,11 @@ void SidebarController::SwitchToDeck (
          ++iPanel)
     {
         if (*iPanel != NULL)
+        {
             (*iPanel)->Dispose();
+            OSL_TRACE("    releasing panel %s", S2A((*iPanel)->GetId()));
+            bHasPanelSetChanged = true;
+        }
     }
 
     // Activate the deck and the new set of panels.
@@ -448,7 +466,47 @@ void SidebarController::SwitchToDeck (
 
     mpParentWindow->SetText(rDeckDescriptor.msTitle);
 
-    NotifyResize();
+    if (bHasPanelSetChanged)
+        NotifyResize();
+}
+
+
+
+
+bool SidebarController::ArePanelSetsEqual (
+    const ::std::vector<Panel*>& rCurrentPanels,
+    const ResourceManager::IdContainer& rRequestedPanelIds)
+{
+    OSL_TRACE("current panel list:");
+    for (std::vector<Panel*>::const_iterator
+             iPanel(rCurrentPanels.begin()),
+             iEnd(rCurrentPanels.end());
+         iPanel!=iEnd;
+         ++iPanel)
+    {
+        OSL_TRACE("    panel %s", S2A((*iPanel)->GetId()));
+    }
+
+    OSL_TRACE("requested panels: ");
+    for (ResourceManager::IdContainer::const_iterator
+             iId(rRequestedPanelIds.begin()),
+             iEnd(rRequestedPanelIds.end());
+         iId!=iEnd;
+         ++iId)
+    {
+        OSL_TRACE("    panel %s", S2A(*iId));
+    }
+
+    if (rCurrentPanels.size() != rRequestedPanelIds.size())
+        return false;
+    for (sal_Int32 nIndex=0,nCount=rCurrentPanels.size(); nIndex<nCount; ++nIndex)
+    {
+        if (rCurrentPanels[nIndex] == NULL)
+            return false;
+        if ( ! rCurrentPanels[nIndex]->GetId().equals(rRequestedPanelIds[nIndex]))
+            return false;
+    }
+    return true;
 }
 
 
@@ -501,6 +559,8 @@ Reference<ui::XUIElement> SidebarController::CreateUIElement (
     const ::rtl::OUString& rsImplementationURL,
     Panel* pPanel)
 {
+    (void)pPanel;
+    
     try
     {
         const ::comphelper::ComponentContext aComponentContext (::comphelper::getProcessServiceFactory());

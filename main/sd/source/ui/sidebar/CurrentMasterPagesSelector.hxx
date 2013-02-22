@@ -46,7 +46,7 @@ public:
     static MasterPagesSelector* Create (
         ::Window* pParent,
         ViewShellBase& rViewShellBase,
-        SidebarShellManager& rSubShellManager);
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 
     /** Set the selection so that the master page is selected that is
         used by the currently selected page of the document in the
@@ -62,9 +62,10 @@ public:
 
 protected:
     virtual ResId GetContextMenuResId (void) const;
-    virtual void Execute (SfxRequest& rRequest);
-    virtual void GetState (SfxItemSet& rItemSet);
-    
+
+    virtual void ProcessPopupMenu (Menu& rMenu);
+    virtual void ExecuteCommand (const sal_Int32 nCommandId);
+
 private:
     cssu::Reference<css::lang::XComponent> mxListener;
 
@@ -72,8 +73,8 @@ private:
         ::Window* pParent, 
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        SidebarShellManager& rShellManager,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer);
+        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~CurrentMasterPagesSelector (void);
 
     virtual void LateInit (void);

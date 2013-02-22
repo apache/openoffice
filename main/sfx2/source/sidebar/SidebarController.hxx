@@ -119,6 +119,9 @@ private:
     
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
     void UpdateConfigurations (const Context& rContext);
+    bool ArePanelSetsEqual (
+        const ::std::vector<Panel*>& rCurrentPanels,
+        const ResourceManager::IdContainer& rRequestedPanelIds);
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
         const ::rtl::OUString& rsImplementationURL,

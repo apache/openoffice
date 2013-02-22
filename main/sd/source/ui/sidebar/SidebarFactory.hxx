@@ -28,8 +28,6 @@
 #include "framework/Pane.hxx"
 
 #include <com/sun/star/ui/XUIElementFactory.hpp>
-#include <com/sun/star/drawing/framework/XResourceFactory.hpp>
-#include <com/sun/star/drawing/framework/XConfigurationController.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <com/sun/star/lang/XInitialization.hpp>
 
@@ -40,7 +38,6 @@
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
-namespace cssdf = ::com::sun::star::drawing::framework;
 
 
 namespace sd {
@@ -51,10 +48,9 @@ namespace sd { namespace sidebar {
 
 namespace
 {
-    typedef ::cppu::WeakComponentImplHelper4 <
+    typedef ::cppu::WeakComponentImplHelper3 <
         css::lang::XInitialization,
         css::ui::XUIElementFactory,
-        cssdf::XResourceFactory,
         css::lang::XEventListener
         > SidebarFactoryInterfaceBase;
 }
@@ -112,39 +108,10 @@ public:
             cssu::RuntimeException);
 
 
-    // XResourceFactory
-
-    virtual css::uno::Reference<cssdf::XResource>
-        SAL_CALL createResource (
-            const css::uno::Reference<cssdf::XResourceId>& rxPaneId)
-        throw (css::uno::RuntimeException, css::lang::IllegalArgumentException, css::lang::WrappedTargetException);
-    virtual void SAL_CALL
-        releaseResource (
-            const css::uno::Reference<cssdf::XResource>& rxPane)
-        throw (css::uno::RuntimeException);
-
-    
     // XEventListener
 
     virtual void SAL_CALL disposing (const ::css::lang::EventObject& rEvent)
         throw(cssu::RuntimeException);
-
-private:
-    /** Due to the fact that this class is a factory for both
-        XUIElement and XResource objects, there are different
-        instantiations for the same XController although only one
-        would be really necessary.  This map makes sure that the
-        different object have access to the same information.
-    */
-    class Implementation;
-    typedef ::boost::shared_ptr<Implementation> SharedImplementation;
-    typedef ::std::map<cssu::Reference<css::frame::XController>,SharedImplementation>
-        ControllerToImplementationMap;
-    static ControllerToImplementationMap maControllerToImplementationMap;
-    SharedImplementation mpImplementation;
-
-    static SharedImplementation GetImplementationForController (
-        const cssu::Reference<css::frame::XController>& rxController);
 };
 
 

@@ -39,7 +39,8 @@ public:
     static MasterPagesSelector* Create (
         ::Window* pParent,
         ViewShellBase& rViewShellBase,
-        SidebarShellManager& rSubShellManager);
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
+    
     /** Scan the set of templates for the ones whose first master pages are
         shown by this control and store them in the MasterPageContainer.
     */
@@ -60,8 +61,8 @@ private:
         ::Window* pParent, 
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        SidebarShellManager& rShellManager,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer);
+        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~AllMasterPagesSelector (void);
 
     void AddTemplate (const TemplateEntry& rEntry);

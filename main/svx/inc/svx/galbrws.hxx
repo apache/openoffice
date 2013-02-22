@@ -62,7 +62,7 @@ class GalleryBrowser2;
 class GallerySplitter;
 class Gallery;
 
-class GalleryBrowser : public SfxDockingWindow
+class SVX_DLLPUBLIC GalleryBrowser : public SfxDockingWindow
 {
 	friend class GalleryBrowser1;
 	friend class GalleryBrowser2;

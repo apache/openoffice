@@ -46,13 +46,14 @@
 // pedefines
 class XFillFloatTransparenceItem;
 namespace svx { class ToolboxButtonColorUpdater; }
-class SvxColorPage;
-class SvxAreaTrGrPage;
 
 //////////////////////////////////////////////////////////////////////////////
 // namespace open
 
 namespace svx { namespace sidebar {
+
+class SvxColorPage;
+class SvxAreaTrGrPage;
 
 class AreaPropertyPanel
 :   public Control,
@@ -60,8 +61,8 @@ class AreaPropertyPanel
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 private:
-    friend class ::SvxColorPage;
-    friend class ::SvxAreaTrGrPage;
+    friend class SvxColorPage;
+    friend class SvxAreaTrGrPage;
 
 public:
     static AreaPropertyPanel* Create(

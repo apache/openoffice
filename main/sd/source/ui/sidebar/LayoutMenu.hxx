@@ -19,14 +19,12 @@
  * 
  *************************************************************/
 
-
-
 #ifndef SD_SIDEBAR_LAYOUT_MENU_HXX
 #define SD_SIDEBAR_LAYOUT_MENU_HXX
 
 #include "IDisposable.hxx"
-#include "ILayoutableWindow.hxx"
 #include "ISidebarReceiver.hxx"
+#include <sfx2/sidebar/ILayoutableWindow.hxx>
 
 #include "glob.hxx"
 #include "pres.hxx"
@@ -66,17 +64,11 @@ class SidebarShellManager;
 
 class LayoutMenu
     : public ValueSet,
-      public SfxShell,
       public DragSourceHelper, 
       public DropTargetHelper,
-      public ILayoutableWindow,
-      public IDisposable,
-      public ISidebarReceiver
+      public sfx2::sidebar::ILayoutableWindow
 {
 public:
-    TYPEINFO();
-    SFX_DECL_INTERFACE(SD_IF_SDLAYOUTMENU)
-
     /** Create a new layout menu.  Depending on the given flag it
         displays its own scroll bar or lets a surrounding window
         handle that.
@@ -88,7 +80,7 @@ public:
     LayoutMenu (
         ::Window* pParent,
         ViewShellBase& rViewShellBase,
-        SidebarShellManager& rSubShellManager);
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~LayoutMenu (void);
 
     virtual void Dispose (void);
@@ -113,9 +105,6 @@ public:
     */
     virtual void MouseButtonDown (const MouseEvent& rEvent);
 
-    void Execute (SfxRequest& rRequest);
-    void GetState (SfxItemSet& rItemSet);
-
     /** The LayoutMenu does not support some main views.  In this case the
         LayoutMenu is disabled.  This state is updated in this method.
         @param eMode
@@ -127,8 +116,6 @@ public:
     */
     enum MasterMode { MM_NORMAL, MM_MASTER, MM_UNKNOWN };
     void UpdateEnabledState (const MasterMode eMode);
-
-    SidebarShellManager* GetShellManager (void);
 
     /** Call this method when the set of displayed layouts is not up-to-date
         anymore.  It will re-assemple this set according to the current
@@ -152,15 +139,11 @@ public:
     */
     virtual void DataChanged (const DataChangedEvent& rEvent);
 
-    // ISidebarReceiver
-    virtual void SetSidebar (const cssu::Reference<css::ui::XSidebar>& rxSidebar);
-
 	using Window::GetWindow;
 	using ValueSet::StartDrag;
 
 private:
     ViewShellBase& mrBase;
-    SidebarShellManager& mrShellManager;
 
     /** Do we use our own scroll bar or is viewport handling done by
         our parent?
@@ -234,6 +217,7 @@ private:
     DECL_LINK(StateChangeHandler, ::rtl::OUString*);
     DECL_LINK(EventMultiplexerListener, ::sd::tools::EventMultiplexerEvent*);
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
+    DECL_LINK(OnMenuItemSelected, Menu*);
 };
 
 } } // end of namespace ::sd::toolpanel

@@ -41,14 +41,6 @@ public:
 	virtual void Paint (const Rectangle& rRect);
     virtual void Resize (void);
     
-    /** When a request for the display of a context menu is made to this
-        method then that request is forwarded via the ContextMenuCallback.
-        This way the owning class can handle the context menu without having
-        to be derived from this class.
-        Use SetContextMenuCallback to set or rest the handler.
-    */
-	virtual void Command (const CommandEvent& rEvent);
-
     void SetPreviewSize (const Size& rSize);
 
     sal_Int32 GetPreferredWidth (sal_Int32 nHeight);
@@ -59,18 +51,11 @@ public:
     */
     void Rearrange (bool bForceRequestResize = false);
 
-    /** Set the callback function to which requests for context menus are
-        forewarded.  Call with an empty Link to reset the callback
-        function.
-    */
-    void SetContextMenuCallback (const Link& rLink);
-
 protected:
     virtual void MouseButtonDown (const MouseEvent& rEvent);
 
 private:
     Link maRightMouseClickHandler;
-    Link maContextMenuCallback;
     Size maPreviewSize;
     const int mnBorderWidth;
     const int mnBorderHeight;

@@ -91,7 +91,7 @@ public:
 MasterPagesSelector* AllMasterPagesSelector::Create (
     ::Window* pParent,
     ViewShellBase& rViewShellBase,
-    SidebarShellManager& rSubShellManager)
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 {
     SdDrawDocument* pDocument = rViewShellBase.GetDocument();
     if (pDocument == NULL)
@@ -104,14 +104,10 @@ MasterPagesSelector* AllMasterPagesSelector::Create (
             pParent, 
             *pDocument,
             rViewShellBase,
-            rSubShellManager,
-            pContainer));
+            pContainer,
+            rxSidebar));
     pSelector->LateInit();
     pSelector->SetHelpId(HID_SD_TASK_PANE_PREVIEW_ALL);
-    rSubShellManager.AddSubShell(
-        SHELLID_SD_TASK_PANE_PREVIEW_ALL,
-        pSelector,
-        pSelector->GetWindow());
 
     return pSelector;
 }
@@ -123,12 +119,11 @@ AllMasterPagesSelector::AllMasterPagesSelector (
     ::Window* pParent,
     SdDrawDocument& rDocument,
     ViewShellBase& rBase,
-    SidebarShellManager& rShellManager,
-    const ::boost::shared_ptr<MasterPageContainer>& rpContainer)
-    : MasterPagesSelector(pParent, rDocument, rBase, rShellManager, rpContainer),
+    const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
+    : MasterPagesSelector(pParent, rDocument, rBase, rpContainer, rxSidebar),
       mpSortedMasterPages(new SortedMasterPageDescriptorList())
 {
-    SetName (String(RTL_CONSTASCII_USTRINGPARAM("AllMasterPagesSelector")));
     MasterPagesSelector::Fill();
 }
 
@@ -224,7 +219,7 @@ void AllMasterPagesSelector::UpdatePageSet (ItemList& rItemList)
 
 void AllMasterPagesSelector::GetState (SfxItemSet& rItemSet)
 {
-    MasterPagesSelector::GetState(rItemSet);
+    //    MasterPagesSelector::GetState(rItemSet);
 
 	if (rItemSet.GetItemState(SID_TP_EDIT_MASTER) == SFX_ITEM_AVAILABLE)
         rItemSet.DisableItem(SID_TP_EDIT_MASTER);

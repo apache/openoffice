@@ -58,6 +58,7 @@ public:
     void SetExpanded (const bool bIsExpanded);
     bool IsExpanded (void) const;
     bool HasIdPredicate (const ::rtl::OUString& rsId) const;
+    const ::rtl::OUString& GetId (void) const;
     
     virtual void Paint (const Rectangle& rUpdateArea);
     virtual void Resize (void);

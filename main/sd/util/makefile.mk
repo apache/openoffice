@@ -132,8 +132,7 @@ LIB5FILES=     							\
 			$(SLB)$/animui.lib			\
 			$(SLB)$/accessibility.lib	\
 			$(SLB)$/uitools.lib			\
-			$(SLB)$/sidebar.lib			\
-			$(SLB)$/sidebarpanels.lib
+			$(SLB)$/sidebar.lib
 
 LIB6TARGET=$(SLB)$/sdraw3_3.lib
 LIB6FILES=      								\

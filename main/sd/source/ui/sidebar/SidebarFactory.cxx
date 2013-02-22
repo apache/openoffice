@@ -22,21 +22,25 @@
 #include "precompiled_sd.hxx"
 
 #include "SidebarFactory.hxx"
-#include "framework/FrameworkHelper.hxx"
 #include "framework/Pane.hxx"
 #include "ViewShellBase.hxx"
-#include "UIElementWrapper.hxx"
+#include "DrawController.hxx"
+#include "LayoutMenu.hxx"
+#include "CurrentMasterPagesSelector.hxx"
+#include "RecentMasterPagesSelector.hxx"
+#include "AllMasterPagesSelector.hxx"
+#include "CustomAnimationPanel.hxx"
+#include "TableDesignPanel.hxx"
+#include "SlideTransitionPanel.hxx"
 
 #include <sfx2/viewfrm.hxx>
+#include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <comphelper/namedvaluecollection.hxx>
 #include <vcl/window.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 
-#include <com/sun/star/drawing/framework/XControllerManager.hpp>
-
 using namespace css;
 using namespace cssu;
-using namespace css::drawing::framework;
 using namespace ::sd::framework;
 using ::rtl::OUString;
 
@@ -58,23 +62,6 @@ namespace {
     const static char* gsResourceNameTableDesign = "/TableDesign";
 }
 
-class SidebarFactory::Implementation
-{
-public:
-    Reference<cssdf::XConfigurationController> mxConfigurationController;
-    rtl::Reference<framework::Pane> mxPane;
-    Reference<ui::XUIElement> mxUIElement;
-    Reference<frame::XController> mxController;
-    Reference<awt::XWindow> mxParentWindow;
-    bool mbIsDisposed;
-
-    Implementation (const Reference<frame::XController>& rxController);
-    ~Implementation (void);
-    void Dispose (void);
-};
-    
-
-SidebarFactory::ControllerToImplementationMap SidebarFactory::maControllerToImplementationMap;
 Reference<lang::XEventListener> mxControllerDisposeListener;
 
 
@@ -114,8 +101,7 @@ Sequence<rtl::OUString> SAL_CALL SidebarFactory_getSupportedServiceNames (void)
 
 SidebarFactory::SidebarFactory(
         const css::uno::Reference<css::uno::XComponentContext>& rxContext)
-    : SidebarFactoryInterfaceBase(m_aMutex),
-      mpImplementation()
+    : SidebarFactoryInterfaceBase(m_aMutex)
 {
 }
 
@@ -131,10 +117,6 @@ SidebarFactory::~SidebarFactory (void)
 
 void SAL_CALL SidebarFactory::disposing (void)
 {
-    SharedImplementation pImplementation;
-    pImplementation.swap(mpImplementation);
-    if (pImplementation)
-        pImplementation->Dispose();
 }
 
 
@@ -145,11 +127,6 @@ void SAL_CALL SidebarFactory::disposing (void)
 void SAL_CALL SidebarFactory::initialize (const Sequence<Any>& aArguments)
     throw (Exception, RuntimeException)
 {
-    if (aArguments.getLength() > 0)
-    {
-        mpImplementation = GetImplementationForController(
-            Reference<frame::XController>(aArguments[0], UNO_QUERY));
-    }
 }
 
 
@@ -181,41 +158,41 @@ Reference<ui::XUIElement> SAL_CALL SidebarFactory::createUIElement (
         throw RuntimeException(
             A2S("SidebarFactory::createUIElement called without XFrame"),
             NULL);
-    mpImplementation = GetImplementationForController(xFrame->getController());
-    if ( ! mpImplementation)
-        throw RuntimeException(
-            A2S("SidebarFactory::createUIElement called without XController"),
-            NULL);
-    if (mpImplementation->mxConfigurationController.is())
-        mpImplementation->mxConfigurationController->addResourceFactory(
-            FrameworkHelper::msSidebarPaneURL+A2S("*"), this);
 
-    //  Remember the parent window, so that following calls to
-    //  createResource() can access it.
-    mpImplementation->mxParentWindow = xParentWindow;
-    if (mpImplementation->mxPane.is())
-        mpImplementation->mxPane->SetWindow(VCLUnoHelper::GetWindow(xParentWindow));
+    // Tunnel through the controller to obtain a ViewShellBase.
+    ViewShellBase* pBase = NULL;
+    Reference<lang::XUnoTunnel> xTunnel (xFrame->getController(), UNO_QUERY);
+    if (xTunnel.is())
+    {
+        ::sd::DrawController* pController = reinterpret_cast<sd::DrawController*>(
+            xTunnel->getSomething(sd::DrawController::getUnoTunnelId()));
+        if (pController != NULL)
+            pBase = pController->GetViewShellBase();
+    }
+    if (pBase == NULL)
+        throw RuntimeException(A2S("can not get ViewShellBase for frame"), NULL);
 
     // Create a framework view.
-    OUString sTaskPanelURL;
+    ::Window* pControl = NULL;
+
 #define EndsWith(s,t) s.endsWithAsciiL(t,strlen(t))
     if (EndsWith(rsUIElementResourceURL, gsResourceNameCustomAnimations))
-        sTaskPanelURL = FrameworkHelper::msCustomAnimationTaskPanelURL;
+        pControl = new CustomAnimationPanel(pParentWindow, *pBase);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameLayouts))
-        sTaskPanelURL = FrameworkHelper::msLayoutTaskPanelURL;
+        pControl = new LayoutMenu(pParentWindow, *pBase, xSidebar);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameAllMasterPages))
-        sTaskPanelURL = FrameworkHelper::msAllMasterPagesTaskPanelURL;
+        pControl = AllMasterPagesSelector::Create(pParentWindow, *pBase, xSidebar);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameRecentMasterPages))
-        sTaskPanelURL = FrameworkHelper::msRecentMasterPagesTaskPanelURL;
+        pControl = RecentMasterPagesSelector::Create(pParentWindow, *pBase, xSidebar);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameUsedMasterPages))
-        sTaskPanelURL = FrameworkHelper::msUsedMasterPagesTaskPanelURL;
+        pControl = CurrentMasterPagesSelector::Create(pParentWindow, *pBase, xSidebar);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameSlideTransitions))
-        sTaskPanelURL = FrameworkHelper::msSlideTransitionTaskPanelURL;
+        pControl = new SlideTransitionPanel(pParentWindow, *pBase);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameTableDesign))
-        sTaskPanelURL = FrameworkHelper::msTableDesignPanelURL;
+        pControl = new TableDesignPanel(pParentWindow, *pBase);
 #undef EndsWith
-    
-    if (sTaskPanelURL.getLength() == 0)
+
+    if (pControl == NULL)
         throw lang::IllegalArgumentException();
 
     // Create a wrapper around pane and view and return it as
@@ -223,12 +200,13 @@ Reference<ui::XUIElement> SAL_CALL SidebarFactory::createUIElement (
     Reference<ui::XUIElement> xUIElement;
     try
     {
-        xUIElement.set(new UIElementWrapper(
+        xUIElement.set(
+            sfx2::sidebar::SidebarPanelBase::Create(
                 rsUIElementResourceURL,
                 xFrame,
-                sTaskPanelURL,
-                xSidebar,
-                VCLUnoHelper::GetWindow(xParentWindow)));
+                pControl,
+                ::boost::function<void(void)>(),
+                ui::LayoutSize(-1,-1,-1)));
     }
     catch(Exception& rException)
     {
@@ -240,48 +218,6 @@ Reference<ui::XUIElement> SAL_CALL SidebarFactory::createUIElement (
         xComponent->addEventListener(this);
     
     return xUIElement;
-}
-
-
-
-
-// XResourceFactory
-
-Reference<drawing::framework::XResource>
-    SAL_CALL SidebarFactory::createResource (
-        const Reference<drawing::framework::XResourceId>& rxPaneId)
-    throw (RuntimeException, lang::IllegalArgumentException, lang::WrappedTargetException)
-{
-    if ( ! rxPaneId.is())
-        throw lang::IllegalArgumentException();
-
-    const OUString sResourceURL (rxPaneId->getResourceURL());
-    if ( ! sResourceURL.equals(FrameworkHelper::msSidebarPaneURL))
-        throw lang::IllegalArgumentException();
-
-    if ( ! mpImplementation)
-        throw RuntimeException(A2S("SidebarFactory not initialized"), NULL);
-    
-    ::Window* pWindow = VCLUnoHelper::GetWindow(mpImplementation->mxParentWindow);
-    if (pWindow == NULL)
-        throw RuntimeException();
-
-    mpImplementation->mxPane.set(new Pane(rxPaneId, pWindow));
-    Reference<drawing::framework::XResource> xPane (static_cast<XPane*>(mpImplementation->mxPane.get()));
-    return xPane;
-}
-
-
-
-
-void SAL_CALL SidebarFactory::releaseResource (
-    const Reference<drawing::framework::XResource>& rxPane)
-    throw (RuntimeException)
-{
-    (void)rxPane;
-    
-    // Any panes created by us are just wrappers around windows whose lifetime
-    // is controlled somewhere else => nothing to do.
 }
 
 
@@ -300,79 +236,6 @@ void SAL_CALL SidebarFactory::disposing (const ::css::lang::EventObject& rEvent)
 }
 
 
-
-
-SidebarFactory::SharedImplementation SidebarFactory::GetImplementationForController (
-    const cssu::Reference<css::frame::XController>& rxController)
-{
-    SharedImplementation pImplementation;
-    if (rxController.is())
-    {
-        ControllerToImplementationMap::const_iterator iImplementation (
-            maControllerToImplementationMap.find(rxController));
-        if (iImplementation == maControllerToImplementationMap.end())
-        {
-            pImplementation.reset(new Implementation(rxController));
-            maControllerToImplementationMap[rxController] = pImplementation;
-            
-            // Each Implementation object is referenced by two
-            // SidebarFactory objects.  The Implementation object is
-            // destroyed when the first of the SidebarFactory objects
-            // is disposed.
-        }
-        else
-            pImplementation = iImplementation->second;
-    }
-    return pImplementation;
-}
-
-
-
-
-//----- SidebarFactory::Implementation ----------------------------------------
-
-SidebarFactory::Implementation::Implementation (const Reference<frame::XController>& rxController)
-    : mxConfigurationController(),
-      mxPane(),
-      mxUIElement(),
-      mxController(rxController),
-      mxParentWindow(),
-      mbIsDisposed(false)
-{
-    Reference<XControllerManager> xCM (rxController, UNO_QUERY);
-    if (xCM.is())
-    {
-        mxConfigurationController = xCM->getConfigurationController();
-    }
-}
-
-
-
-
-SidebarFactory::Implementation::~Implementation (void)
-{
-    Dispose();
-}
-
-
-
-
-void SidebarFactory::Implementation::Dispose (void)
-{
-    if (mbIsDisposed)
-        return;
-
-    mbIsDisposed = true;
-
-    // Release the entry in the maControllerToImplementationMap even though there
-    // may be another object that "references" to it.
-    ControllerToImplementationMap::iterator iImplementation (
-        maControllerToImplementationMap.find(mxController));
-        if (iImplementation != maControllerToImplementationMap.end())
-            maControllerToImplementationMap.erase(iImplementation);
-    
-    mxController.clear();
-}
 
 
 } } // end of namespace sd::sidebar

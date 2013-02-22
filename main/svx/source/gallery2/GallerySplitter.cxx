@@ -19,56 +19,37 @@
  * 
  *************************************************************/
 
-#include "precompiled_sd.hxx"
+#include "precompiled_svx.hxx"
 
-#include "TableDesignPanel.hxx"
-
-#include "ViewShellBase.hxx"
-#include "SidebarViewShell.hxx"
+#include "GallerySplitter.hxx"
 
 
-namespace sd {
-	extern ::Window * createTableDesignPanel (::Window* pParent, ViewShellBase& rBase);
-}
+DBG_NAME(GallerySplitter)
 
-
-namespace sd { namespace sidebar {
-
-
-TableDesignPanel::TableDesignPanel (
-    ::Window* pParentWindow,
-    ViewShellBase& rViewShellBase)
-    : PanelBase(pParentWindow, rViewShellBase)
+GallerySplitter::GallerySplitter(
+    Window* pParent,
+    const ResId& rResId,
+    const ::boost::function<void(void)>& rDataChangeFunctor)
+    : Splitter( pParent, rResId ),
+      maDataChangeFunctor(rDataChangeFunctor)
 {
-#ifdef DEBUG
-    SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:TableDesignPanel")));
-#endif
+    DBG_CTOR(GallerySplitter,NULL);
 }
 
 
 
 
-TableDesignPanel::~TableDesignPanel (void)
+GallerySplitter::~GallerySplitter()
 {
+    DBG_DTOR(GallerySplitter,NULL);
 }
 
 
 
 
-::Window* TableDesignPanel::CreateWrappedControl (
-    ::Window* pParentWindow,
-    ViewShellBase& rViewShellBase)
+void GallerySplitter::DataChanged( const DataChangedEvent& rDCEvt )
 {
-    return createTableDesignPanel(pParentWindow, rViewShellBase);
+    Splitter::DataChanged( rDCEvt );
+    if (maDataChangeFunctor)
+        maDataChangeFunctor();
 }
-
-
-
-
-css::ui::LayoutSize TableDesignPanel::GetHeightForWidth (const sal_Int32 nWidth)
-{
-    //TODO: make the sizes depend on the font size.
-    return css::ui::LayoutSize(350,-1, 400);
-}
-
-} } // end of namespace sd::sidebar

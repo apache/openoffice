@@ -795,11 +795,15 @@ sal_Bool View::SdrBeginTextEdit(
 			{
 				aBackground = pObj->GetPage()->GetPageBackgroundColor(pPV);
 			}
-			pOL->SetBackgroundColor( aBackground  );
+            if (pOL != NULL)
+                pOL->SetBackgroundColor( aBackground  );
 		}
 
-		pOL->SetParaInsertedHdl(LINK(this, View, OnParagraphInsertedHdl));
-		pOL->SetParaRemovingHdl(LINK(this, View, OnParagraphRemovingHdl));
+        if (pOL != NULL)
+        {
+            pOL->SetParaInsertedHdl(LINK(this, View, OnParagraphInsertedHdl));
+            pOL->SetParaRemovingHdl(LINK(this, View, OnParagraphRemovingHdl));
+        }
 	}
 
 	return(bReturn);

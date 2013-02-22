@@ -110,26 +110,6 @@ void PreviewValueSet::Resize (void)
 
 
 
-void PreviewValueSet::Command (const CommandEvent& rEvent)
-{
-    switch (rEvent.GetCommand())
-    {
-        case COMMAND_CONTEXTMENU:
-        {
-            CommandEvent aNonConstEventCopy (rEvent);
-            maContextMenuCallback.Call(&aNonConstEventCopy);
-        }
-        break;
-            
-        default:
-            ValueSet::Command(rEvent);
-            break;
-    }
-}
-
-
-
-
 void PreviewValueSet::Rearrange (bool bForceRequestResize)
 {
     sal_uInt16 nOldColumnCount (GetColCount());
@@ -148,14 +128,6 @@ void PreviewValueSet::Rearrange (bool bForceRequestResize)
     {
         //SIDEBAR:TODO:   mpParent->RequestResize();
     }
-}
-
-
-
-
-void PreviewValueSet::SetContextMenuCallback (const Link& rLink)
-{
-    maContextMenuCallback = rLink;
 }
 
 

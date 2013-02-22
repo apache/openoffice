@@ -42,7 +42,7 @@ namespace sd { namespace sidebar {
 MasterPagesSelector* RecentMasterPagesSelector::Create (
     ::Window* pParent,
     ViewShellBase& rViewShellBase,
-    SidebarShellManager& rSubShellManager)
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 {
     SdDrawDocument* pDocument = rViewShellBase.GetDocument();
     if (pDocument == NULL)
@@ -55,14 +55,10 @@ MasterPagesSelector* RecentMasterPagesSelector::Create (
             pParent, 
             *pDocument,
             rViewShellBase,
-            rSubShellManager,
-            pContainer));
+            pContainer,
+            rxSidebar));
     pSelector->LateInit();
     pSelector->SetHelpId(HID_SD_TASK_PANE_PREVIEW_RECENT);
-    rSubShellManager.AddSubShell(
-        SHELLID_SD_TASK_PANE_PREVIEW_RECENT,
-        pSelector,
-        pSelector->GetWindow());
 
     return pSelector;
 }
@@ -74,11 +70,10 @@ RecentMasterPagesSelector::RecentMasterPagesSelector (
     ::Window* pParent,
     SdDrawDocument& rDocument,
     ViewShellBase& rBase,
-    SidebarShellManager& rSubShellManager,
-    const ::boost::shared_ptr<MasterPageContainer>& rpContainer)
-    : MasterPagesSelector (pParent, rDocument, rBase, rSubShellManager, rpContainer)
+    const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
+    : MasterPagesSelector (pParent, rDocument, rBase, rpContainer, rxSidebar)
 {
-	SetName (String(RTL_CONSTASCII_USTRINGPARAM("RecentMasterPagesSelector")));
 }
 
 
@@ -174,11 +169,10 @@ void RecentMasterPagesSelector::AssignMasterPageToPageList (
 
 
 
-void RecentMasterPagesSelector::GetState (SfxItemSet& rItemSet)
+void RecentMasterPagesSelector::ProcessPopupMenu (Menu& rMenu)
 {
-    MasterPagesSelector::GetState (rItemSet);
-    if (rItemSet.GetItemState(SID_TP_EDIT_MASTER) == SFX_ITEM_AVAILABLE)
-        rItemSet.DisableItem (SID_TP_EDIT_MASTER);
+    if (rMenu.GetItemPos(SID_TP_EDIT_MASTER) != MENU_ITEM_NOTFOUND)
+        rMenu.EnableItem(SID_TP_EDIT_MASTER, sal_False);
 }
 
 

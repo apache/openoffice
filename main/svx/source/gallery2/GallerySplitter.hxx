@@ -19,31 +19,27 @@
  * 
  *************************************************************/
 
+#ifndef SVX_GALLERY_SPLITTER_HXX
+#define SVX_GALLERY_SPLITTER_HXX
 
+#include <vcl/split.hxx>
+#include <boost/function.hpp>
 
-#ifndef SD_SIDEBAR_LAYOUTABLE_WINDOW_INTERFACE_HXX
-#define SD_SIDEBAR_LAYOUTABLE_WINDOW_INTERFACE_HXX
-
-#include <tools/gen.hxx>
-#include <sal/types.h>
-
-#include <com/sun/star/ui/LayoutSize.hpp>
-
-class Window;
-
-namespace sd { namespace sidebar {
-
-
-class ILayoutableWindow
+class GallerySplitter : public Splitter
 {
 public:
-    /** Return the preferred height with the constraint, that the
-        window will be set to the given width.
-    */
-    virtual ::com::sun::star::ui::LayoutSize GetHeightForWidth (const sal_Int32 nWidth) = 0;
+    GallerySplitter (
+        Window* pParent,
+        const ResId& rResId,
+        const ::boost::function<void(void)>& rDataChangeFunctor);
+    virtual ~GallerySplitter (void);
+
+protected:
+    virtual void    DataChanged( const DataChangedEvent& rDCEvt );
+
+private:
+    ::boost::function<void(void)> maDataChangeFunctor;
 };
 
-
-} } // end of namespace ::sd::sidebar
 
 #endif

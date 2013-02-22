@@ -39,9 +39,25 @@ PRJINC=..
 # --- Files --------------------------------------------------------
 
 SLOFILES =      							\
+	$(SLO)$/AllMasterPagesSelector.obj		\
+	$(SLO)$/CurrentMasterPagesSelector.obj	\
+	$(SLO)$/CustomAnimationPanel.obj		\
+	$(SLO)$/DocumentHelper.obj				\
+	$(SLO)$/LayoutMenu.obj					\
+	$(SLO)$/MasterPageContainer.obj			\
+	$(SLO)$/MasterPageContainerFiller.obj	\
+	$(SLO)$/MasterPageContainerProviders.obj\
+	$(SLO)$/MasterPageContainerQueue.obj	\
+	$(SLO)$/MasterPageDescriptor.obj		\
+	$(SLO)$/MasterPageObserver.obj			\
+	$(SLO)$/MasterPagesSelector.obj			\
+	$(SLO)$/PanelBase.obj					\
+	$(SLO)$/PreviewValueSet.obj				\
+	$(SLO)$/RecentlyUsedMasterPages.obj		\
+	$(SLO)$/RecentMasterPagesSelector.obj	\
 	$(SLO)$/SidebarFactory.obj				\
-	$(SLO)$/UIElementWrapper.obj			\
-	$(SLO)$/SidebarViewShell.obj			\
+	$(SLO)$/SlideTransitionPanel.obj		\
+	$(SLO)$/TableDesignPanel.obj
 
 # --- Tagets -------------------------------------------------------
 

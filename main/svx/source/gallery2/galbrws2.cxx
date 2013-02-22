@@ -315,7 +315,7 @@ void GalleryToolBox::KeyInput( const KeyEvent& rKEvt )
 // -------------------
 DBG_NAME(GalleryBrowser2)
 
-GalleryBrowser2::GalleryBrowser2( GalleryBrowser* pParent, const ResId& rResId, Gallery* pGallery ) :
+GalleryBrowser2::GalleryBrowser2( Window* pParent, const ResId& rResId, Gallery* pGallery ) :
 	Control				( pParent, rResId ),
 	mpGallery			( pGallery ),
 	mpCurTheme			( NULL ),

@@ -54,6 +54,32 @@
           <value>100</value>
         </prop>
       </node>
+<!--
+      <node oor:name="GalleryDeck" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Gallery</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>GalleryDeck</value>
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>any</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>150</value>
+        </prop>
+      </node>
+-->
       <node oor:name="ImpressMasterPagesDeck" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">MasterPages</value>
@@ -141,10 +167,26 @@
         <node oor:name="ContextMatchers">
           <node oor:name="matcher1"  oor:op="replace">
             <prop oor:name="Application" oor:type="xs:string">
-              <value>any</value>
+              <value>com.sun.star.text.TextDocument</value>
             </prop>
             <prop oor:name="ContextList">
               <value>any</value>
+            </prop>
+          </node>
+          <node oor:name="matcher2"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+          <node oor:name="matcher3"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>text</value>
             </prop>
           </node>
         </node>
@@ -158,6 +200,7 @@
           <value>true</value>
         </prop>
       </node>
+<!--
       <node oor:name="AreaPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Fill Properties</value>
@@ -188,6 +231,8 @@
           <value>true</value>
         </prop>
       </node>
+-->
+<!--
       <node oor:name="LinePropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Line Properties</value>
@@ -218,6 +263,40 @@
           <value>true</value>
         </prop>
       </node>
+-->
+<!--
+      <node oor:name="GalleryPanel" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Gallery</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>GalleryPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>GalleryDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>any</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SvxPanelFactory/GalleryPanel</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>false</value>
+        </prop>
+      </node>
+-->
+<!--
       <node oor:name="TransformationPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Transformation Properties</value>
@@ -248,6 +327,8 @@
           <value>true</value>
         </prop>
       </node>
+-->
+<!--
       <node oor:name="GraphicPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Graphic Properties</value>
@@ -278,6 +359,7 @@
           <value>true</value>
         </prop>
       </node>
+-->
       <node oor:name="Impress1" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Layouts</value>
@@ -296,8 +378,11 @@
             <prop oor:name="Application" oor:type="xs:string">
               <value>com.sun.star.presentation.PresentationDocument</value>
             </prop>
+            <prop oor:name="IsContextListNegated" oor:type="xs:boolean">
+              <value>true</value>
+            </prop>
             <prop oor:name="ContextList">
-              <value>default</value>
+              <value>text</value>
             </prop>
           </node>
         </node>

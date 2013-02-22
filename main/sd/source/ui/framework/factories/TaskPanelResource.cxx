@@ -21,8 +21,6 @@
 
 #include "precompiled_sd.hxx"
 
-#include "SidebarViewShell.hxx"
-
 #include "framework/TaskPanelResource.hxx"
 
 #include <vcl/window.hxx>

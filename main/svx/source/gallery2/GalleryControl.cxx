@@ -19,110 +19,66 @@
  * 
  *************************************************************/
 
-// MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_svx.hxx"
+#include "sidebar/PanelFactory.hxx"
 
-#include <vcl/split.hxx>
-#include <vcl/ctrl.hxx>
-#include <unotools/pathoptions.hxx>
-#include <sfx2/app.hxx>
-#include <sfx2/sfxsids.hrc>
+#include "GalleryControl.hxx"
+
 #include "gallery.hrc"
 #include "svx/galmisc.hxx"
 #include "svx/gallery1.hxx"
 #include "galbrws1.hxx"
 #include "galbrws2.hxx"
-#include "svx/galbrws.hxx"
 #include "GallerySplitter.hxx"
+#include <vcl/svapp.hxx>
 
 #include <boost/bind.hpp>
 
-// -------------------------
-// - SvxGalleryChildWindow -
-// -------------------------
-DBG_NAME(GalleryChildWindow)
+namespace svx { namespace sidebar {
 
-GalleryChildWindow::GalleryChildWindow( Window* _pParent, sal_uInt16 nId, SfxBindings* pBindings, SfxChildWinInfo* pInfo ) :
-	SfxChildWindow( _pParent, nId )
+GalleryControl::GalleryControl (
+    SfxBindings* pBindings,
+    Window* pParentWindow)
+    : Window(pParentWindow, GAL_RESID(RID_SVXDLG_GALLERYBROWSER)),
+      mpGallery (Gallery::GetGalleryInstance()),
+      mpBrowser1(new GalleryBrowser1(
+              this,
+              GAL_RESID(GALLERY_BROWSER1),
+              mpGallery,
+              ::boost::bind(&GalleryControl::KeyInput,this,_1,_2),
+              ::boost::bind(&GalleryControl::ThemeSelectionHasChanged, this))),
+      mpSplitter(new GallerySplitter(
+              this,
+              GAL_RESID(GALLERY_SPLITTER),
+              ::boost::bind(&GalleryControl::InitSettings, this))),
+      mpBrowser2(new GalleryBrowser2(this, GAL_RESID(GALLERY_BROWSER2), mpGallery)),
+      maLastSize(0,0)
 {
-    DBG_CTOR(GalleryChildWindow,NULL);
+    FreeResource();
+    //    SetMinOutputSizePixel(maLastSize);
+    SetSizePixel(Size(300,300));
+    
+    mpBrowser1->SelectTheme(0);
+    mpBrowser1->Show(sal_True);
+    mpBrowser2->Show(sal_True);
 
-	pWindow = new GalleryBrowser( pBindings, this, _pParent, GAL_RESID( RID_SVXDLG_GALLERYBROWSER ) );
-	eChildAlignment = SFX_ALIGN_TOP;
-	( (GalleryBrowser*) pWindow )->Initialize( pInfo );
-};
-
-// -----------------------------------------------------------------------------
-
-GalleryChildWindow::~GalleryChildWindow()
-{
-
-    DBG_DTOR(GalleryChildWindow,NULL);
-}
-
-// -----------------------------------------------------------------------------
-
-SFX_IMPL_DOCKINGWINDOW( GalleryChildWindow, SID_GALLERY )
-
-// ------------------
-// - GalleryBrowser -
-// ------------------
-DBG_NAME(GalleryBrowser)
-
-GalleryBrowser::GalleryBrowser(
-    SfxBindings* _pBindings, 
-    SfxChildWindow* pCW,
-    Window* pParent, 
-    const ResId& rResId) 
-:   SfxDockingWindow(_pBindings, pCW, pParent, rResId),
-    maLastSize(GetOutputSizePixel()),
-    mpSplitter(0),
-    mpBrowser1(0),
-    mpBrowser2(0),
-    mpGallery(0)
-{
-    DBG_CTOR(GalleryBrowser,NULL);
-
-	mpGallery = Gallery::GetGalleryInstance();
-	mpBrowser1 = new GalleryBrowser1(
-        this,
-        GAL_RESID( GALLERY_BROWSER1 ),
-        mpGallery,
-        ::boost::bind(&GalleryBrowser::KeyInput,this,_1,_2),
-        ::boost::bind(&GalleryBrowser::ThemeSelectionHasChanged, this));
-	mpSplitter = new GallerySplitter( this, GAL_RESID( GALLERY_SPLITTER ),
-        ::boost::bind(&GalleryBrowser::InitSettings, this));
-	mpBrowser2 = new GalleryBrowser2( this, GAL_RESID( GALLERY_BROWSER2 ), mpGallery );
-
-	FreeResource();
-	SetMinOutputSizePixel(maLastSize);
-
-	mpBrowser1->SelectTheme( 0 );
-	mpBrowser1->Show( sal_True );
-	mpBrowser2->Show( sal_True );
-
-    const bool bLayoutHorizontal(maLastSize.Width() > maLastSize.Height());
-    mpSplitter->SetHorizontal(bLayoutHorizontal);
-	mpSplitter->SetSplitHdl( LINK( this, GalleryBrowser, SplitHdl ) );
+    mpSplitter->SetHorizontal(true);
+	mpSplitter->SetSplitHdl( LINK( this, GalleryControl, SplitHdl ) );
 	mpSplitter->Show( sal_True );
 
     InitSettings();
 }
 
-// -----------------------------------------------------------------------------
 
-GalleryBrowser::~GalleryBrowser()
+
+
+GalleryControl::~GalleryControl (void)
 {
-	delete mpBrowser2;
-	delete mpSplitter;
-	delete mpBrowser1;
-
-    DBG_DTOR(GalleryBrowser,NULL);
 }
 
-// -----------------------------------------------------------------------------
 
-void GalleryBrowser::InitSettings()
+
+
+void GalleryControl::InitSettings (void)
 {
 	SetBackground( Wallpaper( GALLERY_DLG_COLOR ) );
 	SetControlBackground( GALLERY_DLG_COLOR );
@@ -141,12 +97,13 @@ void GalleryBrowser::InitSettings()
 	mpBrowser2->SetControlForeground( GALLERY_DLG_COLOR );
 }
 
-// -----------------------------------------------------------------------------
 
-void GalleryBrowser::Resize()
+
+
+void GalleryControl::Resize (void)
 {
     // call parent
-    SfxDockingWindow::Resize();
+    Window::Resize();
 
     // update hor/ver
     const Size aNewSize( GetOutputSizePixel() );
@@ -205,9 +162,10 @@ void GalleryBrowser::Resize()
     maLastSize = aNewSize;
 }
 
-// -----------------------------------------------------------------------------
 
-sal_Bool GalleryBrowser::KeyInput( const KeyEvent& rKEvt, Window* )
+
+
+sal_Bool GalleryControl::KeyInput( const KeyEvent& rKEvt, Window* )
 {
     const sal_uInt16    nCode = rKEvt.GetKeyCode().GetCode();
     sal_Bool            bRet = ( !rKEvt.GetKeyCode().IsMod1() &&
@@ -242,66 +200,67 @@ sal_Bool GalleryBrowser::KeyInput( const KeyEvent& rKEvt, Window* )
     return bRet;
 }
 
-// -----------------------------------------------------------------------------
 
-sal_Bool GalleryBrowser::Close()
+
+
+void GalleryControl::GetFocus (void)
 {
-	return SfxDockingWindow::Close();
-}
-
-// -----------------------------------------------------------------------------
-
-void GalleryBrowser::GetFocus()
-{
-	SfxDockingWindow::GetFocus();
+	Window::GetFocus();
 	mpBrowser1->GrabFocus();
 }
 
-// -----------------------------------------------------------------------------
 
-void GalleryBrowser::ThemeSelectionHasChanged()
+
+
+void GalleryControl::ThemeSelectionHasChanged (void)
 {
-	mpBrowser2->SelectTheme( mpBrowser1->GetSelectedTheme() );
+	mpBrowser2->SelectTheme(mpBrowser1->GetSelectedTheme());
 }
 
-// -----------------------------------------------------------------------------
 
-INetURLObject GalleryBrowser::GetURL() const
+
+
+INetURLObject GalleryControl::GetURL (void) const
 {
 	return mpBrowser2->GetURL();
 }
 
-// -----------------------------------------------------------------------------
 
-String GalleryBrowser::GetFilterName() const
+
+
+String GalleryControl::GetFilterName (void) const
 {
 	return mpBrowser2->GetFilterName();
 }
 
-// -----------------------------------------------------------------------------
 
-Graphic GalleryBrowser::GetGraphic() const
+
+
+Graphic GalleryControl::GetGraphic(void) const
 {
 	return mpBrowser2->GetGraphic();
 }
 
-// -----------------------------------------------------------------------------
 
-sal_Bool GalleryBrowser::GetVCDrawModel( FmFormModel& rModel ) const
+
+
+sal_Bool GalleryControl::GetVCDrawModel( FmFormModel& rModel ) const
 {
 	return mpBrowser2->GetVCDrawModel( rModel );
 }
 
-// -----------------------------------------------------------------------------
 
-sal_Bool GalleryBrowser::IsLinkage() const
+
+
+sal_Bool GalleryControl::IsLinkage (void) const
 {
 	return mpBrowser2->IsLinkage();
 }
 
-// -----------------------------------------------------------------------------
 
-IMPL_LINK( GalleryBrowser, SplitHdl, void*, EMPTYARG )
+
+
+IMPL_LINK( GalleryControl, SplitHdl, void*, EMPTYARG )
 {
     if(mpSplitter->IsHorizontal())
     {
@@ -317,5 +276,5 @@ IMPL_LINK( GalleryBrowser, SplitHdl, void*, EMPTYARG )
 	return 0L;
 }
 
-// -----------------------------------------------------------------------------
-// eof
+
+} } // end of namespace svx::sidebar

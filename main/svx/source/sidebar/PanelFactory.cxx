@@ -21,17 +21,19 @@
 
 #include "sidebar/PanelFactory.hxx"
 
-#include <text/TextPropertyPanel.hxx>
-#include <geometry/AreaPropertyPanel.hxx>
-#include <geometry/GraphicPropertyPanel.hxx>
-#include <geometry/LinePropertyPanel.hxx>
-#include <geometry/TransformationPropertyPanel.hxx>
+#include "text/TextPropertyPanel.hxx"
+#include "geometry/AreaPropertyPanel.hxx"
+#include "geometry/GraphicPropertyPanel.hxx"
+#include "geometry/LinePropertyPanel.hxx"
+#include "geometry/TransformationPropertyPanel.hxx"
+#include "gallery/GalleryControl.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 #include <vcl/window.hxx>
 #include <rtl/ref.hxx>
 #include <comphelper/namedvaluecollection.hxx>
+
 
 #include <boost/bind.hpp>
 
@@ -125,51 +127,70 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             A2S("PanelFactory::createUIElement called without SfxBindings"),
             NULL);
 
-    if (rsResourceURL.endsWithAsciiL("/TextPropertyPanel", strlen("/TextPropertyPanel")))
+#define DoesResourceEndWith(s) rsResourceURL.endsWithAsciiL(s,strlen(s))
+    if (DoesResourceEndWith("/TextPropertyPanel"))
     {
         TextPropertyPanel* pPanel = TextPropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&TextPropertyPanel::ShowMenu, pPanel));
+            ::boost::bind(&TextPropertyPanel::ShowMenu, pPanel),
+            ui::LayoutSize(-1,-1,-1));
     }
-    else if (rsResourceURL.endsWithAsciiL("/AreaPropertyPanel", strlen("/AreaPropertyPanel")))
+    else if (DoesResourceEndWith("/AreaPropertyPanel"))
     {
         AreaPropertyPanel* pPanel = AreaPropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&AreaPropertyPanel::ShowMenu, pPanel));
+            ::boost::bind(&AreaPropertyPanel::ShowMenu, pPanel),
+            ui::LayoutSize(-1,-1,-1));
     }
-    else if (rsResourceURL.endsWithAsciiL("/GraphicPropertyPanel", strlen("/GraphicPropertyPanel")))
+    else if (DoesResourceEndWith("/GraphicPropertyPanel"))
     {
         GraphicPropertyPanel* pPanel = GraphicPropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>());
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(-1,-1,-1));
     }
-    else if (rsResourceURL.endsWithAsciiL("/LinePropertyPanel", strlen("/LinePropertyPanel")))
+    else if (DoesResourceEndWith("/LinePropertyPanel"))
     {
         LinePropertyPanel* pPanel = LinePropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&LinePropertyPanel::ShowMenu, pPanel));
+            ::boost::bind(&LinePropertyPanel::ShowMenu, pPanel),
+            ui::LayoutSize(-1,-1,-1));
     }
-    else if (rsResourceURL.endsWithAsciiL("/TransformationPropertyPanel", strlen("/TransformationPropertyPanel")))
+    else if (DoesResourceEndWith("/TransformationPropertyPanel"))
     {
         TransformationPropertyPanel* pPanel = TransformationPropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&TransformationPropertyPanel::ShowMenu, pPanel));
+            ::boost::bind(&TransformationPropertyPanel::ShowMenu, pPanel),
+            ui::LayoutSize(-1,-1,-1));
     }
+    else if (DoesResourceEndWith("/GalleryPanel"))
+    {
+        GalleryControl* pGalleryControl = new GalleryControl(
+            pBindings,
+            pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pGalleryControl,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(300,-1,400));
+    }
+#undef DoesResourceEndWith
 
     return xElement;
 }

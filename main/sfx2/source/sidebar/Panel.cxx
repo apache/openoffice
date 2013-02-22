@@ -180,6 +180,14 @@ bool Panel::HasIdPredicate (const ::rtl::OUString& rsId) const
 
 
 
+const ::rtl::OUString& Panel::GetId (void) const
+{
+    return msPanelId;
+}
+
+
+
+
 void Panel::Paint (const Rectangle& rUpdateArea)
 {
     Window::Paint(rUpdateArea);

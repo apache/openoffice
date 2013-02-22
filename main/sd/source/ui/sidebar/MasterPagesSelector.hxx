@@ -26,7 +26,7 @@
 #include "SlideSorterViewShell.hxx"
 #include "PreviewValueSet.hxx"
 #include "ISidebarReceiver.hxx"
-#include "ILayoutableWindow.hxx"
+#include <sfx2/sidebar/ILayoutableWindow.hxx>
 
 #include "pres.hxx"
 #include <sfx2/shell.hxx>
@@ -62,21 +62,16 @@ class SidebarShellManager;
     templates or designs that are loaded from files.
 */
 class MasterPagesSelector
-    : public SfxShell,
-      public PreviewValueSet,
-      public ISidebarReceiver,
-      public ILayoutableWindow
+    : public PreviewValueSet,
+      public sfx2::sidebar::ILayoutableWindow
 {
 public:
-    TYPEINFO();
-    SFX_DECL_INTERFACE(SD_IF_SDMASTERPAGESSELECTOR)
-
     MasterPagesSelector (
         ::Window* pParent,
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        SidebarShellManager& rShellManager,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer);
+        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~MasterPagesSelector (void);
 
     virtual void LateInit (void);
@@ -101,9 +96,6 @@ public:
     virtual ::Window* GetWindow (void);
     virtual sal_Int32 GetMinimumWidth (void);
 
-    virtual void Execute (SfxRequest& rRequest);
-    virtual void GetState (SfxItemSet& rItemSet);
-
     /** Update the selection of previews according to whatever
         influences them appart from mouse and keyboard.  If, for
         example, the current page of the main pane changes, then call
@@ -126,7 +118,6 @@ public:
     */
     void ClearPageSet (void);
 
-    using SfxShell::SetHelpId;
 	void SetHelpId( const rtl::OString& aId );
 
     /** Mark the preview that belongs to the given index as not up-to-date
@@ -140,9 +131,6 @@ public:
     void InvalidatePreview (const SdPage* pPage);
 
     void UpdateAllPreviews (void);
-
-    // ISidebarReceiver
-    virtual void SetSidebar (const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 
     // ILayoutableWindow
     virtual css::ui::LayoutSize GetHeightForWidth (const sal_Int32 nWidth);
@@ -220,10 +208,12 @@ protected:
     */
     virtual ResId GetContextMenuResId (void) const;
 
-    SidebarShellManager* GetShellManager (void);
+    virtual void Command (const CommandEvent& rEvent);
+
+    virtual void ProcessPopupMenu (Menu& rMenu);
+    virtual void ExecuteCommand (const sal_Int32 nCommandId);
 
 private:
-    SidebarShellManager& mrShellManager;
     cssu::Reference<css::ui::XSidebar> mxSidebar;
 
     /** The offset between ValueSet index and MasterPageContainer::Token
@@ -234,6 +224,7 @@ private:
     DECL_LINK(RightClickHandler, MouseEvent*);
     DECL_LINK(ContextMenuCallback, CommandEvent*);
     DECL_LINK(ContainerChangeListener, MasterPageContainerChangeEvent*);
+    DECL_LINK(OnMenuItemSelected, Menu*);
     
     void SetItem (
         sal_uInt16 nIndex,

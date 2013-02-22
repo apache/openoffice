@@ -52,7 +52,7 @@ namespace sd { namespace sidebar {
 MasterPagesSelector* CurrentMasterPagesSelector::Create (
     ::Window* pParent,
     ViewShellBase& rViewShellBase,
-    SidebarShellManager& rSubShellManager)
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 {
     SdDrawDocument* pDocument = rViewShellBase.GetDocument();
     if (pDocument == NULL)
@@ -65,14 +65,10 @@ MasterPagesSelector* CurrentMasterPagesSelector::Create (
             pParent, 
             *pDocument,
             rViewShellBase,
-            rSubShellManager,
-            pContainer));
+            pContainer,
+            rxSidebar));
     pSelector->LateInit();
     pSelector->SetHelpId( HID_SD_TASK_PANE_PREVIEW_CURRENT );
-    rSubShellManager.AddSubShell(
-        SHELLID_SD_TASK_PANE_PREVIEW_CURRENT,
-        pSelector,
-        pSelector->GetWindow());
 
     return pSelector;
 }
@@ -84,12 +80,10 @@ CurrentMasterPagesSelector::CurrentMasterPagesSelector (
     ::Window* pParent,
     SdDrawDocument& rDocument,
     ViewShellBase& rBase,
-    SidebarShellManager& rShellManager,
-    const ::boost::shared_ptr<MasterPageContainer>& rpContainer)
-    : MasterPagesSelector (pParent, rDocument, rBase, rShellManager, rpContainer)
+    const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
+    : MasterPagesSelector (pParent, rDocument, rBase, rpContainer, rxSidebar)
 {
-	SetName(String(RTL_CONSTASCII_USTRINGPARAM("CurrentMasterPagesSelector")));
-
     // For this master page selector only we change the default action for
     // left clicks.
     mnDefaultClickAction = SID_TP_APPLY_TO_SELECTED_SLIDES;
@@ -243,54 +237,48 @@ void CurrentMasterPagesSelector::UpdateSelection (void)
 
 
 
-void CurrentMasterPagesSelector::Execute (SfxRequest& rRequest)
+void CurrentMasterPagesSelector::ExecuteCommand (const sal_Int32 nCommandId)
 {
-	switch (rRequest.GetSlot())
+	if (nCommandId == SID_DELETE_MASTER_PAGE)
     {
-        case SID_DELETE_MASTER_PAGE:
+        // Check once again that the master page can safely be deleted,
+        // i.e. is not used.
+        SdPage* pMasterPage = GetSelectedMasterPage();
+        if (pMasterPage != NULL
+            && mrDocument.GetMasterPageUserCount(pMasterPage) == 0)
         {
-            // Check once again that the master page can safely be deleted,
-            // i.e. is not used.
-            SdPage* pMasterPage = GetSelectedMasterPage();
-            if (pMasterPage != NULL
-                && mrDocument.GetMasterPageUserCount(pMasterPage) == 0)
-            {
-                // Removing the precious flag so that the following call to
-                // RemoveUnnessesaryMasterPages() will remove this master page.
-                pMasterPage->SetPrecious(false);
-                mrDocument.RemoveUnnecessaryMasterPages(pMasterPage, sal_False, sal_True);
-            }
+            // Removing the precious flag so that the following call to
+            // RemoveUnnessesaryMasterPages() will remove this master page.
+            pMasterPage->SetPrecious(false);
+            mrDocument.RemoveUnnecessaryMasterPages(pMasterPage, sal_False, sal_True);
         }
-        break;
-            
-        default:
-            MasterPagesSelector::Execute(rRequest);
-            break;
     }
+    else
+        MasterPagesSelector::ExecuteCommand(nCommandId);
 }
 
 
 
 
-void CurrentMasterPagesSelector::GetState (SfxItemSet& rItemSet)
+void CurrentMasterPagesSelector::ProcessPopupMenu (Menu& rMenu)
 {
     // Disable the SID_DELTE_MASTER slot when there is only one master page.
-    if (rItemSet.GetItemState(SID_DELETE_MASTER_PAGE) == SFX_ITEM_AVAILABLE
-        && mrDocument.GetMasterPageUserCount(GetSelectedMasterPage()) > 0)
+    if (mrDocument.GetMasterPageUserCount(GetSelectedMasterPage()) > 0)
     {
-        rItemSet.DisableItem(SID_DELETE_MASTER_PAGE);
+        if (rMenu.GetItemPos(SID_DELETE_MASTER_PAGE) != MENU_ITEM_NOTFOUND)
+            rMenu.EnableItem(SID_DELETE_MASTER_PAGE, sal_False);
     }
 
     ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
         ::boost::dynamic_pointer_cast<DrawViewShell>(mrBase.GetMainViewShell()));
-	if (rItemSet.GetItemState(SID_TP_EDIT_MASTER) == SFX_ITEM_AVAILABLE
-        && pDrawViewShell
+	if (pDrawViewShell
         && pDrawViewShell->GetEditMode() == EM_MASTERPAGE)
     {
-        rItemSet.DisableItem (SID_TP_EDIT_MASTER);
+        if (rMenu.GetItemPos(SID_TP_EDIT_MASTER) != MENU_ITEM_NOTFOUND)
+            rMenu.EnableItem(SID_TP_EDIT_MASTER, sal_False);
     }
 
-    MasterPagesSelector::GetState(rItemSet);
+    MasterPagesSelector::ProcessPopupMenu(rMenu);
 }
 
 

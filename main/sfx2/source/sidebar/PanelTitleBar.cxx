@@ -101,6 +101,8 @@ Rectangle PanelTitleBar::GetTitleArea (const Rectangle& rTitleBarBox)
 
 void PanelTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
 {
+    (void)rTitleBarBox;
+    
     if (mpPanel != NULL)
     {
         Image aImage (mpPanel->IsExpanded()

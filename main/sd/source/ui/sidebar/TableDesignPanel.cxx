@@ -21,60 +21,53 @@
 
 #include "precompiled_sd.hxx"
 
-#include "CustomAnimationPanel.hxx"
+#include "TableDesignPanel.hxx"
 
-#include "SidebarViewShell.hxx"
 #include "ViewShellBase.hxx"
 
 
 namespace sd {
-    extern ::Window * createCustomAnimationPanel (::Window* pParent, ViewShellBase& rBase);
-    extern sal_Int32 getCustomAnimationPanelMinimumHeight (::Window* pParent);
+	extern ::Window * createTableDesignPanel (::Window* pParent, ViewShellBase& rBase);
 }
-
-
 
 
 namespace sd { namespace sidebar {
 
 
-CustomAnimationPanel::CustomAnimationPanel (
+TableDesignPanel::TableDesignPanel (
     ::Window* pParentWindow,
     ViewShellBase& rViewShellBase)
-    : PanelBase(
-        pParentWindow,
-        rViewShellBase)
+    : PanelBase(pParentWindow, rViewShellBase)
 {
 #ifdef DEBUG
-    SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:CustomAnimationPanel")));
+    SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:TableDesignPanel")));
 #endif
 }
 
 
 
 
-CustomAnimationPanel::~CustomAnimationPanel (void)
+TableDesignPanel::~TableDesignPanel (void)
 {
 }
 
 
 
 
-::Window* CustomAnimationPanel::CreateWrappedControl (
+::Window* TableDesignPanel::CreateWrappedControl (
     ::Window* pParentWindow,
     ViewShellBase& rViewShellBase)
 {
-    return createCustomAnimationPanel(pParentWindow, rViewShellBase);
+    return createTableDesignPanel(pParentWindow, rViewShellBase);
 }
 
 
 
 
-css::ui::LayoutSize CustomAnimationPanel::GetHeightForWidth (const sal_Int32 nWidth)
+css::ui::LayoutSize TableDesignPanel::GetHeightForWidth (const sal_Int32 nWidth)
 {
-    const sal_Int32 nMinimumHeight(getCustomAnimationPanelMinimumHeight(mpWrappedControl.get()));
-    return css::ui::LayoutSize(nMinimumHeight,-1, nMinimumHeight);
+    //TODO: make the sizes depend on the font size.
+    return css::ui::LayoutSize(350,-1, 400);
 }
-
 
 } } // end of namespace sd::sidebar
