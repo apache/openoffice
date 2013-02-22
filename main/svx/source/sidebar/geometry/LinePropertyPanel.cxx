@@ -1168,12 +1168,12 @@ long SvxLineWidthPage::GetTmpCustomWidth()
 
 //////////////////////////////////////////////////////////////////////////////
 
-class LineEndLB : public ListBox
+class LineEndLB_LPP : public ListBox
 {
 
 public:
-		 LineEndLB( Window* pParent, ResId Id ) : ListBox( pParent, Id ) {}
-		 LineEndLB( Window* pParent, WinBits aWB ) : ListBox( pParent, aWB ) {}
+		 LineEndLB_LPP( Window* pParent, ResId Id ) : ListBox( pParent, Id ) {}
+		 LineEndLB_LPP( Window* pParent, WinBits aWB ) : ListBox( pParent, aWB ) {}
 
 	void Fill( const XLineEndList* pList, bool bStart = true );
 
@@ -1183,7 +1183,7 @@ public:
 					bool bStart = true );
 };
 
-void LineEndLB::Fill( const XLineEndList* pList, bool bStart )
+void LineEndLB_LPP::Fill( const XLineEndList* pList, bool bStart )
 {
 	long nCount = pList->Count();
 	XLineEndEntry* pEntry;
@@ -1211,7 +1211,7 @@ void LineEndLB::Fill( const XLineEndList* pList, bool bStart )
 	SetUpdateMode( true );
 }
 
-void LineEndLB::Append( XLineEndEntry* pEntry, Bitmap* pBmp, bool bStart )
+void LineEndLB_LPP::Append( XLineEndEntry* pEntry, Bitmap* pBmp, bool bStart )
 {
 	if( pBmp )
 	{
@@ -1228,7 +1228,7 @@ void LineEndLB::Append( XLineEndEntry* pEntry, Bitmap* pBmp, bool bStart )
 		InsertEntry( pEntry->GetName() );
 }
 
-void LineEndLB::Modify( XLineEndEntry* pEntry, sal_uInt16 nPos, Bitmap* pBmp, bool bStart )
+void LineEndLB_LPP::Modify( XLineEndEntry* pEntry, sal_uInt16 nPos, Bitmap* pBmp, bool bStart )
 {
 	RemoveEntry( nPos );
 
@@ -1273,8 +1273,8 @@ LinePropertyPanel::LinePropertyPanel(
     mpFTTrancparency(new FixedText(this, SVX_RES(FT_TRANSPARENT))),
     mpMFTransparent(new MetricField(this, SVX_RES(MF_TRANSPARENT))),
     mpFTArrow(new FixedText(this, SVX_RES(FT_ARROW))),
-    mpLBStart(new LineEndLB(this, SVX_RES(LB_START))),
-    mpLBEnd(new LineEndLB(this, SVX_RES(LB_END))),
+    mpLBStart(new LineEndLB_LPP(this, SVX_RES(LB_START))),
+    mpLBEnd(new LineEndLB_LPP(this, SVX_RES(LB_END))),
     maColorControl(SID_ATTR_LINE_COLOR, *pBindings, *this),
     maStyleControl(SID_ATTR_LINE_STYLE, *pBindings, *this),
     maDashControl (SID_ATTR_LINE_DASH, *pBindings, *this),

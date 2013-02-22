@@ -1759,7 +1759,6 @@ void FillTypeLB::Fill()
 |*	Fuellt die Listbox (vorlaeufig) mit Strings
 |*
 \************************************************************************/
-
 void LineLB::Fill( const XDashList* pList )
 {
 	long nCount = pList->Count();
@@ -1858,6 +1857,20 @@ void LineLB::SelectEntryByList( const XDashList* pList, const String& rStr,
 |*	Fuellt die Listbox (vorlaeufig) mit Strings
 |*
 \************************************************************************/
+LineEndLB::LineEndLB( Window* pParent, ResId Id )
+    : ListBox( pParent, Id )
+{
+}
+
+LineEndLB::LineEndLB( Window* pParent, WinBits aWB )
+    : ListBox( pParent, aWB )
+{
+}
+
+LineEndLB::~LineEndLB(void)
+{
+}
+
 
 void LineEndLB::Fill( const XLineEndList* pList, sal_Bool bStart )
 {

@@ -41,7 +41,7 @@ class XLineStyleItem;
 class XLineDashItem;
 class XLineStartItem;
 class XLineEndItem;
-class LineEndLB;
+class LineEndLB_LPP;
 class XLineEndList;
 
 //////////////////////////////////////////////////////////////////////////////
@@ -93,8 +93,8 @@ private:
     ::boost::scoped_ptr< FixedText >                        mpFTTrancparency;
     ::boost::scoped_ptr< MetricField >                      mpMFTransparent;
     ::boost::scoped_ptr< FixedText >                        mpFTArrow;
-    ::boost::scoped_ptr< LineEndLB >                        mpLBStart;
-    ::boost::scoped_ptr< LineEndLB >                        mpLBEnd;
+    ::boost::scoped_ptr< LineEndLB_LPP >                        mpLBStart;
+    ::boost::scoped_ptr< LineEndLB_LPP >                        mpLBEnd;
 
     //ControllerItem
     ::sfx2::sidebar::ControllerItem                         maColorControl;
