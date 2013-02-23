@@ -35,10 +35,12 @@
 class convert_src : public convert_gen_impl
 {
   public:
+    bool mbExpectValue;
+
     convert_src(l10nMem& crMemory);
     ~convert_src();
     
-    void setValue      (char *syyText);
+    void setValue      (char *syyText, char *sbuildValue);
     void setLang       (char *syyText, bool bEnUs);
     void setId         (char *syyText, bool bIde);
     void setText       (char *syyText);

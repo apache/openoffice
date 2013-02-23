@@ -41,6 +41,7 @@ convert_src::convert_src(l10nMem& crMemory)
                           mbExpectName(false),
                           mbExpectMacro(false),
                           mbExpectStringList(false),
+                          mbExpectValue(false),
                           mbAutoPush(false),
                           mbValuePresent(false)
 {}
@@ -68,7 +69,7 @@ void convert_src::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::setValue(char *syyText)
+void convert_src::setValue(char *syyText, char *sbuildValue)
 {
   if (mbExpectStringList)
   {
@@ -83,8 +84,10 @@ void convert_src::setValue(char *syyText)
     mcStack.push_back(msName);
   }
 
-  msValue        = copySource(syyText, false);
+  copySource(syyText);
+  msValue        = sbuildValue;
   mbValuePresent = true;
+  mbExpectValue  = false;
 }
 
 
@@ -95,7 +98,7 @@ void convert_src::setLang(char *syyText, bool bEnUs)
   std::string useText = copySource(syyText) + " is no en-US language";
 
   mbEnUs = bEnUs;
-  if (!bEnUs)
+  if (!bEnUs && mbExpectValue)
     showError((char *)useText.c_str());
 }
 
@@ -114,7 +117,8 @@ void convert_src::setId(char *syyText, bool bId)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::setText(char *syyText)
 {
-  msTextName = copySource(syyText);
+  msTextName    = copySource(syyText);
+  mbExpectValue = true;
 }
 
 
@@ -176,6 +180,7 @@ void convert_src::setStringList(char *syyText)
 {
   msSaveTextName = msTextName  = copySource(syyText);
   mbExpectStringList = true;
+
   miListCount        = 0;
 }
 
@@ -251,7 +256,8 @@ void convert_src::setListItem(char *syyText, bool bIsStart)
   if (bIsStart)
   {
     msTextName   = msSaveTextName;
-    mbExpectName = true;
+    mbExpectValue = 
+    mbExpectName  = true;
     msName.clear();
   }
   else

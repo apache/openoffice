@@ -92,13 +92,27 @@ KEYID [a-zA-Z0-9_-]+
 
 
 "\"" {
-  int i = 0;
-  for (; (yytext[++i] = yyinput()) != '\"';)
-    if (yytext[i] == '\\')
-      yytext[++i] = yyinput();
-  yytext[i] = '\0';
+  char buildValue[8000];
+  int j, i;
 
-  LOCptr->setValue(&yytext[1]);
+  // loop across multiple "..." and combine them, while keeping the source
+  buildValue[0] = yytext[0];
+  for (j = i = 0; yytext[i] != ';' ;)
+  {
+    // build current "..."
+    for (; (buildValue[++j] = yytext[++i] = yyinput()) != '\"';)
+      if (yytext[i] == '\\')
+        buildValue[++j] = yytext[++i] = yyinput();
+    --j;
+    // Look for termination or continuation
+    if (LOCptr->mbExpectValue)
+      for (; (yytext[++i] = yyinput()) != ';' && yytext[i] != '\"';) ;
+    else
+      break;
+  }
+  yytext[++i]   =
+  buildValue[j+1] = '\0';
+  LOCptr->setValue(yytext, &buildValue[1]);
 }
 
 
