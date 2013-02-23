@@ -208,7 +208,8 @@ void convert_src::setNL(char *syyText, bool bMacro)
 
   if (!bMacro && mbExpectMacro)
   {
-    mcStack.pop_back();
+    if (mcStack.size())
+      mcStack.pop_back();
     mbEnUs        =
     mbExpectMacro = false;
   }

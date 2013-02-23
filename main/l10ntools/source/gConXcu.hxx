@@ -42,7 +42,7 @@ class convert_xcu : public convert_gen_impl
     convert_xcu(l10nMem& crMemory);
     ~convert_xcu();
 
-    void pushKey(char *syyText);
+    void pushKey(char *syyText, bool bIsComponent);
     void popKey(char *syyText);
 
     void startCollectData(char *syyText);

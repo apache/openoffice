@@ -59,16 +59,21 @@
 /***********************   H E L P E R   M A C R O S   ***********************/
 SPACE [ \t]*
 NAME  {SPACE}"oor:name="\"[^\"]+\"{SPACE}
-
+FIN   [^/>]*">"
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
 
 
-"<oor:component-data"{NAME} |
-"<prop"{NAME}               |
-"<node"{NAME}               {
-  LOCptr->pushKey(yytext);
+"<oor:component-data"{NAME} {
+  LOCptr->pushKey(yytext, true);
+}
+
+
+
+"<prop"{NAME}{FIN} |
+"<node"{NAME}{FIN} {
+  LOCptr->pushKey(yytext, false);
 }
 
 

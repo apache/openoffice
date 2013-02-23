@@ -67,7 +67,7 @@ void convert_xcu::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::pushKey(char *syyText)
+void convert_xcu::pushKey(char *syyText, bool bIsComponent)
 {
   std::string sKey, sTag = copySource(syyText);
   int    nL, nE;
@@ -80,7 +80,7 @@ void convert_xcu::pushKey(char *syyText)
     nL += 10;
     nE  = sTag.find("\"", nL);
     if (nE != (int)std::string::npos)
-      sKey = sTag.substr(nL, nE - nL);
+      sKey = (bIsComponent ? "." : "") + sTag.substr(nL, nE - nL);
   }
   mcStack.push_back(sKey);
 }
@@ -139,7 +139,7 @@ void convert_xcu::stopCollectData(char *syyText)
 
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
-    useKey += "." + mcStack[nL];
+    useKey += (useKey.size() ? "." : "" ) + mcStack[nL];
   
   if (mbMergeMode)
   {

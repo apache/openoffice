@@ -62,7 +62,7 @@ PRE   ^[ \t]*
 SUF   [ \t\r\n]
 SUFT  [ \t\r\n\[]
 SPACE [ \t]*
-IDENT ([a-zA-Z0-9_][ a-zA-Z0-9_\-\+\*(,&]*[a-zA-Z0-9)]|[0-9])
+IDENT ([a-zA-Z0-9_][ a-zA-Z0-9_\-\+\*(,&]*[a-zA-Z0-9)]|[a-zA-Z0-9_])
 KEYID [a-zA-Z0-9_-]+
 
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
@@ -211,7 +211,8 @@ KEYID [a-zA-Z0-9_-]+
 {PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{SUF}                      |
 {PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{SUF}                      |
 {PRE}[wW][aA][rR][nN][iI][nN][gG][bB][oO][xX]{SUF}                          |
-{PRE}[wW][iI][nN][dD][oO][wW]{SUF}                                          {
+{PRE}[wW][iI][nN][dD][oO][wW]{SUF}                                          |
+{PRE}[wW][oO][rR][kK][wW][iI][nN][dD][oO][wW]{SUF}                          {
   yyless(strlen(yytext)-1);
   LOCptr->setCmd(yytext);
   BEGIN(CMD);
@@ -226,9 +227,18 @@ KEYID [a-zA-Z0-9_-]+
   IMPLptr->copySource(yytext);
 }
 
+<CMD>"{" {
+  yyless(1);
+  BEGIN(INITIAL);
+}
+
 <CMD>[\\\n/] {
   yyless(1);
   BEGIN(INITIAL);
+}
+
+<CMD>. {
+  IMPLptr->showError("gCon encountered a translation problem in .src module");
 }
 
 
