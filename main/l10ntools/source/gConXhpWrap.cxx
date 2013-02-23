@@ -35,7 +35,7 @@
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xhp::convert_xhp(l10nMem& crMemory)
-                      : convert_gen_impl(crMemory),
+                        : convert_gen_impl(crMemory),
                           mbCollectingData(false)
 {
 }
@@ -61,7 +61,7 @@ namespace XhpWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::execute()
 {
-  XhpWrap::genXhp_lex();
+  XhpWrap::yylex();
 
   if (mbMergeMode)
     writeSourceFile(msCollector);
@@ -70,62 +70,90 @@ void convert_xhp::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp::startCollectData(std::string sType, std::string& sCollectedText)
+void convert_xhp::startData(char *yytext)
 {
-  if (mbMergeMode)
-    writeSourceFile(msCollector+sCollectedText);
-  msCollector.clear();
+  std::string sText = copySource(yytext);
+  std::string sLang;
+  int         nL, nE;
+
 
   // Only start if tag is not imidiatly closed !
-  if (sCollectedText[sCollectedText.size()-2] != '/')
+  if (sText[sText.size()-2] == '/')
+    return;
+
+  // locate id, if any
+  nL = sText.find("id=\"");
+  if (nL == (int)std::string::npos)
+    return;
+  nE    = sText.find("\"", nL+4);
+  msKey = sText.substr(nL+4, nE - nL-4);
+
+  // locate oldref, if any
+  nL = sText.find("oldref=\"");
+  if (nL != (int)std::string::npos)
   {
-    mbCollectingData = true;
-    msMergeType      = sType;
-    msTag            = sCollectedText;
+    nE     = sText.find("\"", nL+8);
+    msKey += "." + sText.substr(nL+8, nE - nL-8);
   }
+
+  // locate lang, if any
+  nL = sText.find("xml-lang=\"");
+  if (nL == (int)std::string::npos)
+    return;
+  nE    = sText.find("\"", nL+10);
+  sLang = sText.substr(nL+10, nE - nL-10);
+
+  if (sLang != "en-US")
+  {
+    showError((char *)(sLang + " is no en-US language").c_str());
+    return;
+  }
+
+  mbCollectingData = true;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp::stopCollectData(std::string sType, std::string& sCollectedText)
+void convert_xhp::saveData(char *yytext)
 {
-  std::string sKey;
-  int    nL;
+  int nL;
 
 
-  // check tag match
-  if (sType != msMergeType)
-  throw "Conflicting tags: " + msTag + msCollector + sCollectedText;
+  if (!mbCollectingData)
+    return;
 
-  // locate key and extract it
-  nL    = msTag.find("id=") +4;
-  sKey  = msTag.substr(nL, msTag.find("\"", nL+1) - nL);
-
-  if (mbMergeMode)
+  for (;;)
   {
-    // get all languages (includes en-US)
-    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-    std::string                   sNewLine;
-    nL = cExtraLangauges.size();
-
-  // write en-US entry
-    writeSourceFile(msCollector+sCollectedText);
-
-  // and all other languages for that key
-    for (int i = 0; i < nL; ++i)
-    {
-      sNewLine = "\n<" + sType + " id=\"" + sKey + "\"" + " xml:lang=\"" +
-                 cExtraLangauges[i]->msLanguage + "\">" +
-                 cExtraLangauges[i]->msText +
-                 "</" + sType + ">";
-
-      writeSourceFile(sNewLine);
-    }
+    nL = msCollector.find("\n");
+    if (nL == (int)std::string::npos)
+      break;
+    msCollector.erase(nL,1);
   }
-  else
-    mcMemory.setEnUsKey(sKey, std::string("dummy"), msCollector);
+  for (nL = 0;; nL += 2)
+  {
+    nL = msCollector.find("<", nL);
+    if (nL == (int)std::string::npos)
+      break;
+    msCollector.insert(nL, "\\");
+  }
+  for (nL = 0;; nL += 2)
+  {
+    nL = msCollector.find(">", nL);
+    if (nL == (int)std::string::npos)
+      break;
+    msCollector.insert(nL, "\\");
+  }
+  for (nL = 0;; nL += 2)
+  {
+    nL = msCollector.find("\"", nL);
+    if (nL == (int)std::string::npos)
+      break;
+    msCollector.insert(nL, "\\");
+  }
 
+
+  mcMemory.setEnUsKey(msKey, std::string("text"), msCollector);
   mbCollectingData = false;
-  msCollector.clear();
+  copySource(yytext);
 }  

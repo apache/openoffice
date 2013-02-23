@@ -36,16 +36,22 @@
 class convert_xhp : public convert_gen_impl
 {
   public:
+    bool        mbCollectingData;
+
     convert_xhp(l10nMem& crMemory);
     ~convert_xhp();
 
-    void startCollectData(std::string sType, std::string& sCollectedText);
-    void stopCollectData(std::string sType, std::string& sCollectedText);
+    void setValue(char *yytext);
+    void openTag(char *yytext);
+    void closeTag(char *yytext);
+    void startId(char *yytext);
+    void startLang(char *yytext);
+    void openTransTag(char *yytext);
+    void closeTransTag(char *yytext);
+    void handleData(char *yytext);
 
   private:
-  std::string msMergeType;
-    std::string msTag;
-  bool        mbCollectingData;
+    std::string msKey;
 
     void execute();
 };

@@ -49,50 +49,80 @@
 /* --- The following options are for future use (maybe)                      */
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
-%option 8bit noyywrap never-interactive prefix="genXhp_"
+%option 8bit noyywrap never-interactive
 %p 24000
 %e 1200
 %n 500
 
 
 
+/***********************   H E L P E R   M A C R O S   ***********************/
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"<title"[^>]*> {
-  std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,5), text);
+
+
+"\"" {
+  int i;
+
+  for (i = 0; (yytext[++i] = yyinput()) != '\"';)
+    if (yytext[i] == '\\')
+      yytext[++i] = yyinput();
+
+  yytext[i] = '\0';
+  LOCptr->setValue(yytext);
 }
 
-"<bookmark "[^>]*> {
-  std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,8), text);
+
+
+"<" {
+  LOCptr->openTag(yytext);
 }
 
-"<paragraph"[^>]*> {
-  std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,9), text);
+
+
+">" {
+  LOCptr->closeTag(yytext);
 }
 
+
+
+"id=" {
+  LOCptr->startId(yytext);
+}
+
+
+
+"xml-lang=" {
+  LOCptr->startLang(yytext);
+}
+
+
+
+"oldref=" {
+  LOCptr->startLang(yytext);
+}
+
+
+"<title "     |
+"<bookmark "  |
+"<paragraph " {
+  LOCptr->openTransTag(yytext);
+}
+
+
+"</title>"     |
+"</bookmark>"  |
 "</paragraph>" {
-  std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,9), text);
+  LOCptr->stopTransTag(yytext);
 }
 
-"</bookmark>" {
-  std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,8), text);
-}
 
-"</title>" {
-  std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,5), text);
-}
 
 .|\n {
-  std::string text(yytext);
-  IMPLptr->copySource(yytext);
+  LOCptr->handleData(yytext);
 }
+
 
 
 %%
