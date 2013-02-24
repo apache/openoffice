@@ -192,7 +192,7 @@ void convert_gen_impl::writeSourceFile(const std::string& line)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-std::string& convert_gen_impl::copySource(char *yyText, bool bSkipLeading, bool bDoClear)
+std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
 {
   int nL;
 
@@ -207,11 +207,6 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bSkipLeading, bool 
     msCollector.clear();
   else
     msCollector += msCopyText;
-
-  // remove leading blanks
-  if (bSkipLeading)
-    for (; msCopyText[0] == ' ' || msCopyText[0] == '\t'; )
-      msCopyText.erase(0,1);
 
   // remove any CR
   for (nL = 0; nL < (int)msCopyText.size(); ++nL)

@@ -62,7 +62,7 @@ class convert_gen_impl
     void lexRead (char *sBuf, int *nResult, int nMax_size);
     void writeSourceFile(const std::string& line);
     std::string showError(char *sText);
-    std::string& copySource(char *yyText, bool bSkipLeading = true, bool bDoClear = true);
+    std::string& copySource(char *yyText, bool bDoClear = true);
 
   private:
     std::string  msSourceBuffer, msCopyText;

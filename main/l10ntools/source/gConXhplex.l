@@ -57,50 +57,45 @@
 
 
 /***********************   H E L P E R   M A C R O S   ***********************/
+SP [ \t]*
+IDENT [\.a-zA-Z0-9_-]+
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
 
 
-"\"" {
-  int i;
-
-  for (i = 0; (yytext[++i] = yyinput()) != '\"';)
-    if (yytext[i] == '\\')
-      yytext[++i] = yyinput();
-
-  yytext[i] = '\0';
-  LOCptr->setValue(yytext);
+\" {
+  LOCptr->setString(yytext);
 }
 
 
 
-"<" {
+\< {
   LOCptr->openTag(yytext);
 }
 
 
 
-">" {
+\> {
   LOCptr->closeTag(yytext);
 }
 
 
 
-"id=" {
-  LOCptr->startId(yytext);
+"id="{SP}\"{SP}{IDENT}{SP}\" {
+  LOCptr->setId(yytext);
 }
 
 
 
-"xml-lang=" {
-  LOCptr->startLang(yytext);
+"xml-lang="{SP}\"{SP}{IDENT}{SP}\" {
+  LOCptr->setLang(yytext);
 }
 
 
 
-"oldref=" {
-  LOCptr->startLang(yytext);
+"oldref="{SP}\"{SP}{IDENT}{SP}\" {
+  LOCptr->setRef(yytext);
 }
 
 
@@ -114,13 +109,51 @@
 "</title>"     |
 "</bookmark>"  |
 "</paragraph>" {
+  LOCptr->closeTransTag(yytext);
+}
+
+
+
+"<comment>" {
+  LOCptr->startComment(yytext);
+}
+
+
+
+"</comment>" {
+  LOCptr->stopComment(yytext);
+}
+
+
+
+"localize=\"false\"" {
   LOCptr->stopTransTag(yytext);
 }
 
 
 
+"&amp;"  |
+"&gt;"   |
+"&lt;"   |
+"&quot;" {
+  LOCptr->handleSpecial(yytext);
+}
+
+
+\r*\n\t* {
+  LOCptr->handleDataEnd(yytext);
+}
+
+
+
+\\ {
+  LOCptr->duplicate(yytext);
+}
+
+
+
 .|\n {
-  LOCptr->handleData(yytext);
+  LOCptr->copySourceWithCollector(yytext);
 }
 
 

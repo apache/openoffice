@@ -83,7 +83,7 @@ void convert_ulf::setText(char *syyText, bool bIsEnUs)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_ulf::setValue(char *syyText)
 {
-  std::string sText = copySource(syyText, false);
+  std::string sText = copySource(syyText);
 
 
   mcMemory.setEnUsKey(msKey, std::string("LngText"), sText);

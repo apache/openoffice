@@ -80,24 +80,9 @@ void l10nMem::save(const std::string& srTargetFile)
   if (!outputFile.is_open())
     throw std::string("Could not open ")+srTargetFile;
 
-  
+
   for (i = 0; i < (int)mcMemory.size(); ++i)
   {
-    std::replace( mcMemory[i].msSourceFile.begin(), mcMemory[i].msSourceFile.end(), '/', '\\' );
-    for (;;)
-    {
-      nL = mcMemory[i].msText.find("\\\"");
-      if (nL == (int)std::string::npos)
-        break;
-      mcMemory[i].msText.erase(nL,1);
-    }
-    for (;;)
-    {
-      nL = mcMemory[i].msText.find("\\\\");
-      if (nL == (int)std::string::npos)
-        break;
-      mcMemory[i].msText.erase(nL,1);
-    }
     outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
                << mcMemory[i].msKey;
     //if (mcMemory[i].miIndex)
@@ -122,6 +107,9 @@ void l10nMem::clear()
 void l10nMem::setFileName(const std::string& srSourceFile)
 {
   msCurrentSourceFileName = srSourceFile;
+
+  // modify to please current sdf format
+  std::replace(msCurrentSourceFileName.begin(), msCurrentSourceFileName.end(), '/', '\\' );
 }
 
 

@@ -36,23 +36,36 @@
 class convert_xhp : public convert_gen_impl
 {
   public:
-    bool        mbCollectingData;
-
     convert_xhp(l10nMem& crMemory);
     ~convert_xhp();
 
-    void setValue(char *yytext);
+    void setString(char *yytext);
     void openTag(char *yytext);
     void closeTag(char *yytext);
-    void startId(char *yytext);
-    void startLang(char *yytext);
+    void setId(char *yytext);
+    void setLang(char *yytext);
+    void setRef(char *yytext);
     void openTransTag(char *yytext);
     void closeTransTag(char *yytext);
-    void handleData(char *yytext);
+    void stopTransTag(char *yytext);
+    void startComment(char *yytext);
+    void stopComment(char *yytext);
+    void handleSpecial(char *yytext);
+    void handleDataEnd(char *yytext);
+    void duplicate(char *yytext);
+    std::string& copySourceWithCollector(char *yytext);
 
   private:
-    std::string msKey;
+    enum
+    {
+      VALUE_NOT_USED,
+      VALUE_IS_TAG,
+      VALUE_IS_TAG_TRANS,
+      VALUE_IS_VALUE,
+      VALUE_IS_VALUE_TAG
+    } meExpectValue, mePushValue;
+    std::string msKey, msPushCollect;
 
-    void execute();
+    void         execute();
 };
 #endif

@@ -19,6 +19,7 @@
  * 
  *************************************************************/
 #include "gConXhp.hxx"
+#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -36,7 +37,7 @@
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xhp::convert_xhp(l10nMem& crMemory)
                         : convert_gen_impl(crMemory),
-                          mbCollectingData(false)
+                          meExpectValue(VALUE_NOT_USED)
 {
 }
 
@@ -70,90 +71,244 @@ void convert_xhp::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp::startData(char *yytext)
+void convert_xhp::setString(char *yytext)
 {
-  std::string sText = copySource(yytext);
-  std::string sLang;
-  int         nL, nE;
+  if (meExpectValue == VALUE_IS_VALUE_TAG)
+    msCollector += "\\";
 
-
-  // Only start if tag is not imidiatly closed !
-  if (sText[sText.size()-2] == '/')
-    return;
-
-  // locate id, if any
-  nL = sText.find("id=\"");
-  if (nL == (int)std::string::npos)
-    return;
-  nE    = sText.find("\"", nL+4);
-  msKey = sText.substr(nL+4, nE - nL-4);
-
-  // locate oldref, if any
-  nL = sText.find("oldref=\"");
-  if (nL != (int)std::string::npos)
-  {
-    nE     = sText.find("\"", nL+8);
-    msKey += "." + sText.substr(nL+8, nE - nL-8);
-  }
-
-  // locate lang, if any
-  nL = sText.find("xml-lang=\"");
-  if (nL == (int)std::string::npos)
-    return;
-  nE    = sText.find("\"", nL+10);
-  sLang = sText.substr(nL+10, nE - nL-10);
-
-  if (sLang != "en-US")
-  {
-    showError((char *)(sLang + " is no en-US language").c_str());
-    return;
-  }
-
-  mbCollectingData = true;
+  copySourceWithCollector(yytext);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xhp::saveData(char *yytext)
+void convert_xhp::openTag(char *yytext)
 {
-  int nL;
+  if (meExpectValue == VALUE_IS_VALUE)
+  {
+    meExpectValue  = VALUE_IS_VALUE_TAG;
+    msCollector   += "\\";
+  }
+  copySourceWithCollector(yytext);
+}
 
 
-  if (!mbCollectingData)
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::closeTag(char *yytext)
+{
+  copySourceWithCollector(yytext);
+  switch (meExpectValue)
+  {
+    case VALUE_IS_VALUE_TAG:
+         meExpectValue = VALUE_IS_VALUE;
+         msCollector.insert(msCollector.size()-1, "\\");
+         break;
+
+    case VALUE_IS_TAG_TRANS:
+         if (msKey.size())
+           meExpectValue = VALUE_IS_VALUE;
+         break;
+
+    case VALUE_IS_TAG:
+         msKey.clear();
+         meExpectValue = VALUE_NOT_USED;
+         break;
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::setId(char *yytext)
+{
+  int          nL, nE, nX = msCollector.size();
+  std::string& sText = copySourceWithCollector(yytext);
+
+
+  nL = sText.find("\"");
+  nE = sText.find("\"", nL+1);
+  if (nL == (int)std::string::npos || nE == (int)std::string::npos)
     return;
 
-  for (;;)
+  switch (meExpectValue)
   {
-    nL = msCollector.find("\n");
-    if (nL == (int)std::string::npos)
-      break;
-    msCollector.erase(nL,1);
+    case VALUE_IS_TAG:
+    case VALUE_IS_TAG_TRANS:
+         msKey = sText.substr(nL+1, nE - nL -1) + msKey;
+         break;
+
+    case VALUE_IS_VALUE_TAG:
+         msCollector.insert(nX + nE, "\\");
+         msCollector.insert(nX + nL, "\\");
+         break;
   }
-  for (nL = 0;; nL += 2)
-  {
-    nL = msCollector.find("<", nL);
-    if (nL == (int)std::string::npos)
-      break;
-    msCollector.insert(nL, "\\");
-  }
-  for (nL = 0;; nL += 2)
-  {
-    nL = msCollector.find(">", nL);
-    if (nL == (int)std::string::npos)
-      break;
-    msCollector.insert(nL, "\\");
-  }
-  for (nL = 0;; nL += 2)
-  {
-    nL = msCollector.find("\"", nL);
-    if (nL == (int)std::string::npos)
-      break;
-    msCollector.insert(nL, "\\");
-  }
+}
 
 
-  mcMemory.setEnUsKey(msKey, std::string("text"), msCollector);
-  mbCollectingData = false;
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::setLang(char *yytext)
+{
+  int          nL, nE, nX = msCollector.size();
+  std::string  sLang;
+  std::string& sText = copySourceWithCollector(yytext);
+
+
+  nL = sText.find("\"");
+  nE = sText.find("\"", nL+1);
+  if (nL == (int)std::string::npos || nE == (int)std::string::npos)
+    return;
+
+  switch (meExpectValue)
+  {
+    case VALUE_IS_TAG:
+         sLang = sText.substr(nL+1, nE - nL -1);
+         if (sLang == "en-US")
+           meExpectValue = VALUE_IS_TAG_TRANS;
+         else
+          showError((char *)(sLang + " is no en-US language").c_str());
+         break;
+
+    case VALUE_IS_VALUE_TAG:
+         msCollector.erase(msCollector.size() - sText.size() -1);
+         break;
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::setRef(char *yytext)
+{
+  int          nL, nE, nX = msCollector.size();
+  std::string& sText = copySourceWithCollector(yytext);
+
+
+  nL = sText.find("\"");
+  nE = sText.find("\"", nL+1);
+  if (nL == (int)std::string::npos || nE == (int)std::string::npos)
+    return;
+
+  switch (meExpectValue)
+  {
+    case VALUE_IS_TAG:
+    case VALUE_IS_TAG_TRANS:
+         msKey += "." + sText.substr(nL+1, nE - nL -1);
+         break;
+
+    case VALUE_IS_VALUE_TAG:
+         msCollector.insert(nX + nE, "\\");
+         msCollector.insert(nX + nL, "\\");
+         break;
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::openTransTag(char *yytext)
+{
   copySource(yytext);
-}  
+  msKey.clear();
+  meExpectValue = VALUE_IS_TAG;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::closeTransTag(char *yytext)
+{
+  if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
+  {
+    if (msCollector.size() && msCollector != "-")
+      mcMemory.setEnUsKey(msKey, std::string("text"), msCollector);
+    msKey.clear();
+  }
+  copySource(yytext);
+  meExpectValue = VALUE_NOT_USED;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::stopTransTag(char *yytext)
+{
+  copySource(yytext);
+  meExpectValue = VALUE_NOT_USED;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::startComment(char *yytext)
+{
+  mePushValue   = meExpectValue;
+  msPushCollect = msCollector;
+  meExpectValue = VALUE_NOT_USED;
+  copySource(yytext);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::stopComment(char *yytext)
+{
+  copySource(yytext);
+  meExpectValue = mePushValue;
+  msCollector   = msPushCollect;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::handleSpecial(char *yytext)
+{
+  int          nX    = msCollector.size();
+  std::string& sText = copySourceWithCollector(yytext);
+
+
+  if (meExpectValue != VALUE_IS_VALUE || meExpectValue != VALUE_IS_VALUE_TAG)
+  {
+    msCollector.erase(nX);
+    if      (sText == "&amp;")
+      msCollector += "&";
+    else if (sText == "&lt;")
+      msCollector += "<";
+    else if (sText == "&gt;")
+      msCollector += ">";
+    else if (sText == "&quot;")
+      msCollector += "\"";
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::handleDataEnd(char *yytext)
+{
+  int nX = msCollector.size();
+  copySourceWithCollector(yytext);
+
+  if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
+    msCollector.erase(nX);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xhp::duplicate(char *yytext)
+{
+  copySourceWithCollector(yytext);
+
+  if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
+    msCollector += msCollector[msCollector.size()-1];
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+std::string& convert_xhp::copySourceWithCollector(char *yytext)
+{
+  return copySource(yytext, (meExpectValue == VALUE_NOT_USED || meExpectValue == VALUE_IS_TAG_TRANS));
+}

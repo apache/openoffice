@@ -203,6 +203,21 @@ void convert_src::setNL(char *syyText, bool bMacro)
       if (mcStack[nL].size())
         sKey += (sKey.size() ? "." : "") + mcStack[nL];
 
+    for (nL = -1;;)
+    {
+      nL = msValue.find("\\\"", nL+1);
+      if (nL == (int)std::string::npos)
+        break;
+      msValue.erase(nL,1);
+    }
+    for (nL = -1;;)
+    {
+      nL = msValue.find("\\\\", nL+1);
+      if (nL == (int)std::string::npos)
+        break;
+      msValue.erase(nL,1);
+    }
+
     mcMemory.setEnUsKey(sKey, msTextName, msValue);
   }
 

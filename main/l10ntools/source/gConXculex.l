@@ -98,7 +98,7 @@ FIN   [^/>]*">"
 
 
 .|\n {
-  IMPLptr->copySource(yytext, false, LOCptr->mbNoCollectingData);
+  IMPLptr->copySource(yytext, LOCptr->mbNoCollectingData);
 }
 
 
