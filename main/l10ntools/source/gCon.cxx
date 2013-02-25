@@ -69,6 +69,7 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, con
   else if (sExtension == "ulf")        convert_gen_impl::mcImpl = new convert_ulf(crMemory);
   else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcu(crMemory);
   else if (sExtension == "xhp")        convert_gen_impl::mcImpl = new convert_xhp(crMemory);
+  else if (sExtension == "xrm")        convert_gen_impl::mcImpl = new convert_xrm(crMemory);
   else if (sExtension == "properties") convert_gen_impl::mcImpl = new convert_prop(crMemory);
   else throw std::string("unknown extension on source file: ")+srSourceFile;
 

@@ -56,14 +56,11 @@
 
 /***********************   H E L P E R   M A C R O S   ***********************/
 PRE   ^[ \t]*
-
-
 SUF   [ \t\r\n]
 SUFT  [ \t\r\n\[]
 SPACE [ \t]*
 IDENT ([a-zA-Z0-9][ a-zA-Z0-9_\-\+\*]*[a-zA-Z0-9]|[0-9])
 KEYID [a-zA-Z0-9_-]+
-
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
@@ -84,13 +81,7 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
-"\"" {
-  int i = 0;
-  for (; (yytext[++i] = yyinput()) != '\"';)
-    if (yytext[i] == '\\')
-      yytext[++i] = yyinput();
-  yytext[i] = '\0';
-
+"\"".* {
   LOCptr->setValue(&yytext[1]);
 }
 

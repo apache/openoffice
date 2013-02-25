@@ -42,15 +42,17 @@ class convert_xcu : public convert_gen_impl
     convert_xcu(l10nMem& crMemory);
     ~convert_xcu();
 
-    void pushKey(char *syyText, bool bIsComponent);
+    void pushKey(char *syyText);
     void popKey(char *syyText);
 
     void startCollectData(char *syyText);
     void stopCollectData(char *syyText);
+    void copySpecial(char *syyText);
+    void addLevel();
 
   private:
     std::vector<std::string> mcStack;
-
+    int                      miLevel;
 
     void execute();
 };

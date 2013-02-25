@@ -58,22 +58,30 @@
 
 /***********************   H E L P E R   M A C R O S   ***********************/
 SPACE [ \t]*
-NAME  {SPACE}"oor:name="\"[^\"]+\"{SPACE}
+NAME  .*"oor:name="\"[^\"]+\"{SPACE}
 FIN   [^/>]*">"
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
 
 
+"component-data" {
+  LOCptr->addLevel();
+  IMPLptr->copySource(yytext, false);
+}
+
+
+
 "<oor:component-data"{NAME} {
-  LOCptr->pushKey(yytext, true);
+  LOCptr->addLevel();
+  LOCptr->pushKey(yytext);
 }
 
 
 
 "<prop"{NAME}{FIN} |
 "<node"{NAME}{FIN} {
-  LOCptr->pushKey(yytext, false);
+  LOCptr->pushKey(yytext);
 }
 
 
@@ -93,6 +101,16 @@ FIN   [^/>]*">"
 
 "</value>" {
   LOCptr->stopCollectData(yytext);
+}
+
+
+
+"&amp;"  |
+"&apos;" |
+"&gt;"   |
+"&lt;"   |
+"&quot;" {
+  LOCptr->copySpecial(yytext);
 }
 
 

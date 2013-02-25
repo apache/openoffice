@@ -36,16 +36,20 @@
 class convert_xrm : public convert_gen_impl
 {
   public:
+    bool mbNoCollectingData;
     convert_xrm(l10nMem& crMemory);
     ~convert_xrm();
 
-    void startCollectData(std::string sType, std::string& sCollectedText);
-    void stopCollectData(std::string sType, std::string& sCollectedText);
+    void setId(char *yytext);
+    void setLang(char *yytext);
+    void setTag(char *yytext);
+    void startCollectData(char *yytext);
+    void stopCollectData(char *yytext);
 
   private:
-  std::string msTag;
-  std::string msMergeType;
-  bool        mbCollectingData;
+    std::string msKey;
+    bool        mbIsTag;
+    bool        mbIsLang;
 
     void execute();
 };

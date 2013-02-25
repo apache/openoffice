@@ -119,6 +119,7 @@ void convert_src::setText(char *syyText)
 {
   msTextName    = copySource(syyText);
   mbExpectValue = true;
+  mbEnUs        = false;
 }
 
 

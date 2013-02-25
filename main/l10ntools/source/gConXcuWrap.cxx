@@ -35,7 +35,8 @@
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xcu::convert_xcu(l10nMem& crMemory)
                         : convert_gen_impl(crMemory),
-                          mbNoCollectingData(true)
+                          mbNoCollectingData(true),
+                          miLevel(0)
 {
 }
 
@@ -67,7 +68,7 @@ void convert_xcu::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xcu::pushKey(char *syyText, bool bIsComponent)
+void convert_xcu::pushKey(char *syyText)
 {
   std::string sKey, sTag = copySource(syyText);
   int    nL, nE;
@@ -80,7 +81,7 @@ void convert_xcu::pushKey(char *syyText, bool bIsComponent)
     nL += 10;
     nE  = sTag.find("\"", nL);
     if (nE != (int)std::string::npos)
-      sKey = (bIsComponent ? "." : "") + sTag.substr(nL, nE - nL);
+      sKey = sTag.substr(nL, nE - nL);
   }
   mcStack.push_back(sKey);
 }
@@ -140,6 +141,7 @@ void convert_xcu::stopCollectData(char *syyText)
   // locate key and extract it
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
     useKey += (useKey.size() ? "." : "" ) + mcStack[nL];
+  useKey.insert(0, miLevel, '.');
   
   if (mbMergeMode)
   {
@@ -157,4 +159,36 @@ void convert_xcu::stopCollectData(char *syyText)
   }
   else
     mcMemory.setEnUsKey(useKey, "value", useText);
+}  
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xcu::copySpecial(char *syyText)
+{
+  int         nX    = msCollector.size();
+  std::string sText = copySource(syyText, mbNoCollectingData);
+
+  if (!mbNoCollectingData)
+  {
+    msCollector.erase(nX);
+    if (sText == "&amp;")
+      msCollector += "&";
+    else if (sText == "&apos;")
+      msCollector += "\'";
+    else if (sText == "&gt;")
+      msCollector += ">";
+    else if (sText == "&lt;")
+      msCollector += "<";
+    else if (sText == "&quot;")
+      msCollector += "\"";
+  }
+}  
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xcu::addLevel()
+{
+  ++miLevel;
 }  

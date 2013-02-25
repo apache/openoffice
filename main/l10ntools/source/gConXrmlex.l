@@ -49,38 +49,54 @@
 /* --- The following options are for future use (maybe)                      */
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
-%option 8bit noyywrap never-interactive prefix="genXrm_"
+%option 8bit noyywrap never-interactive
 %p 24000
 %e 1200
 %n 500
 
-
-
+/***********************   H E L P E R   M A C R O S   ***********************/
+IDENT [a-zA-Z0-9_-]*
+NAME  \"{IDENT}\"
+SP    [ \t]*
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-"<p"[^>]*> {
-  std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,1), text);
+
+
+"id"{SP}"="{SP}{NAME} {
+  LOCptr->setId(yytext);
 }
 
-"<h"[0-9][^>]*> {
-  std::string text(yytext);
-  LOCptr->startCollectData(text.substr(1,2), text);
+
+
+"lang"{SP}"="{SP}{NAME} {
+  LOCptr->setLang(yytext);
 }
 
-"</p>" {
-  std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,1), text);
+
+
+"<h"[0-9]" " |
+"<p "        {
+  LOCptr->setTag(yytext);
 }
 
-"</h"[0-9]> {
-  std::string text(yytext);
-  LOCptr->stopCollectData(text.substr(2,2), text);
+
+
+"</h"[0-9] |
+"</p"      {
+  LOCptr->stopCollectData(yytext);
 }
+
+
+
+">" {
+  LOCptr->startCollectData(yytext);
+}
+
+
 
 .|\n {
-  IMPLptr->copySource(yytext);
+  IMPLptr->copySource(yytext, LOCptr->mbNoCollectingData);
 }
 
 

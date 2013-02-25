@@ -34,8 +34,10 @@
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xrm::convert_xrm(l10nMem& crMemory)
-                      : convert_gen_impl(crMemory),
-                          mbCollectingData(false)
+                        : convert_gen_impl(crMemory),
+                          mbNoCollectingData(true),
+                          mbIsTag(false),
+                          mbIsLang(false)
 {
 }
 
@@ -60,7 +62,7 @@ namespace XrmWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xrm::execute()
 {
-  XrmWrap::genXrm_lex();
+  XrmWrap::yylex();
 
   // write last part of file.
   if (mbMergeMode)
@@ -70,58 +72,84 @@ void convert_xrm::execute()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm::startCollectData(std::string sType, std::string& sCollectedText)
+void convert_xrm::setId(char *yytext)
 {
-  if (mbMergeMode)
-    writeSourceFile(msCollector+sCollectedText);
-  msCollector.clear();
+  std::string& sText = copySource(yytext, mbNoCollectingData);
+  int          nL, nE;
 
-  mbCollectingData = true;
-  msMergeType      = sType;
-  msTag            = sCollectedText;
+
+  if (mbIsTag)
+  {
+    nL = sText.find("\"");
+    nE = sText.find("\"", nL+1);
+    if (nL == (int)std::string::npos || nE == (int)std::string::npos)
+      return;
+
+    msKey = sText.substr(nL+1, nE - nL -1);
+  }
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_xrm::stopCollectData(std::string sType, std::string& sCollectedText)
+void convert_xrm::setLang(char *yytext)
 {
-  std::string sKey;
-  int    nL;
+  std::string& sText = copySource(yytext, mbNoCollectingData);
+  std::string  sLang;
+  int          nL, nE;
 
 
-  // check tag match
-  if (sType != msMergeType)
-  throw "Conflicting tags: " + msTag + msCollector + sCollectedText;
-
-  // locate key and extract it
-  nL    = msTag.find("id=") +4;
-  sKey  = msTag.substr(nL, msTag.find("\"", nL+1) - nL);
-
-  if (mbMergeMode)
+  if (mbIsTag)
   {
-    // get all languages (includes en-US)
-    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
-    std::string                   sNewLine;
-    nL = cExtraLangauges.size();
+    nL = sText.find("\"");
+    nE = sText.find("\"", nL+1);
+    if (nL == (int)std::string::npos || nE == (int)std::string::npos)
+      return;
 
-  // write en-US entry
-    writeSourceFile(msCollector+sCollectedText);
-
-  // and all other languages for that key
-  for (int i = 0; i < nL; ++i)
-    {
-      sNewLine = "\n<" + sType + " id=\"" + sKey + "\"" + " xml:lang=\"" +
-                 cExtraLangauges[i]->msLanguage + "\">" +
-                 cExtraLangauges[i]->msText +
-                 "</" + sType + ">";
-
-      writeSourceFile(sNewLine);
-    }
+    sLang = sText.substr(nL+1, nE - nL -1);
+    if (sLang == "en-US")
+      mbIsLang = true;
+    else
+      showError((char *)(sLang + " is no en-US language").c_str());
   }
-  else
-    mcMemory.setEnUsKey(sKey, std::string("dummy"), msCollector);
+}
 
-  mbCollectingData = false;
-  msCollector.clear();
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xrm::setTag(char *yytext)
+{
+  copySource(yytext);
+
+  msKey.clear();
+  mbIsLang = false;
+  mbIsTag  = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xrm::startCollectData(char *yytext)
+{
+  copySource(yytext, mbNoCollectingData);
+
+  if (mbIsTag && mbIsLang && msKey.size())
+    mbNoCollectingData = false;
+
+  mbIsTag = mbIsLang = false;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xrm::stopCollectData(char *yytext)
+{
+  if (!mbNoCollectingData)
+  {
+    msKey = msKey + "." + msKey;
+    mcMemory.setEnUsKey(msKey, std::string("text"), msCollector);
+    mbNoCollectingData = true;
+    msKey.clear();
+  }
+  copySource(yytext);
 }  
