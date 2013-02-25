@@ -162,6 +162,7 @@ void convert_src::setMacro(char *syyText)
   mbExpectName  =
   mbExpectMacro =
   mbAutoPush    = true;
+  miMacroLevel  = mcStack.size();
   mcStack.push_back("");
 }
 
@@ -224,7 +225,7 @@ void convert_src::setNL(char *syyText, bool bMacro)
 
   if (!bMacro && mbExpectMacro)
   {
-    if (mcStack.size())
+    while ((int)mcStack.size() > miMacroLevel)
       mcStack.pop_back();
     mbEnUs        =
     mbExpectMacro = false;

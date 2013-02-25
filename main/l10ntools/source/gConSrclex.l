@@ -167,52 +167,55 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
-{PRE}[bB][iI][tT][mM][aA][pP]{SUF}                                          |
-{PRE}[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]{SUF}                      |
-{PRE}[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]{SUF}                  |
-{PRE}[cC][hH][eE][cC][kK][bB][oO][xX]{SUF}                                  |
-{PRE}[cC][oO][nN][tT][rR][oO][lL]{SUF}                                      |
-{PRE}[cC][oO][mM][bB][oO][bB][oO][xX]{SUF}                                  |
-{PRE}[eE][dD][iI][tT]{SUF}                                                  |
-{PRE}[eE][rR][rR][oO][rR][bB][oO][xX]{SUF}                                  |
-{PRE}[fF][iI][xX][eE][dD][tT][eE][xX][tT]{SUF}                              |
-{PRE}[fF][iI][xX][eE][dD][lL][iI][nN][eE]{SUF}                              |
-{PRE}[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]{SUF}          |
-{PRE}[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]{SUF}                          |
-{PRE}[iI][dD][lL][iI][sS][tT]{SUF}                                          |
-{PRE}[iI][mM][aA][gG][eE]{SUF}                                              |
-{PRE}[iI][mM][aA][gG][eE][lL][iI][sS][tT]{SUF}                              |
-{PRE}[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]{SUF}                      |
-{PRE}[iI][mM][aA][gG][eE][rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{SUF}  |
-{PRE}[iI][nN][fF][oO][bB][oO][xX]{SUF}                                      |
-{PRE}[lL][iI][sS][tT][bB][oO][xX]{SUF}                                      |
-{PRE}[mM][eE][nN][uU]{SUF}                                                  |
-{PRE}[mM][eE][nN][uU][bB][uU][tT][tT][oO][nN]{SUF}                          |
-{PRE}[mM][eE][nN][uU][iI][tT][eE][mM]{SUF}                                  |
-{PRE}[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]{SUF}                      |
-{PRE}[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]{SUF}                      |
-{PRE}[mM][oO][dD][eE][lL][eE][sS][sS][dD][iI][aA][lL][oO][gG]{SUF}          |
-{PRE}[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]{SUF}              |
-{PRE}[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]{SUF}                  |
-{PRE}[oO][kK][bB][uU][tT][tT][oO][nN]{SUF}                                  |
-{PRE}[pP][aA][gG][eE][iI][tT][eE][mM]{SUF}                                  |
-{PRE}[pP][aA][gG][eE][lL][iI][sS][tT]{SUF}                                  |
-{PRE}[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]{SUF}                          |
-{PRE}[qQ][uU][eE][rR][yY][bB][oO][xX]{SUF}                                  |
-{PRE}[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{SUF}                      |
-{PRE}[rR][eE][sS][oO][uU][rR][cC][eE]{SUF}                                  |
-{PRE}[sS][pP][iI][nN][fF][iI][eE][lL][dD]{SUF}                              |
-{PRE}[sS][tT][rR][iI][nN][gG]{SUF}                                          |
-{PRE}[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]{SUF}                      |
-{PRE}[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]{SUF}                          |
-{PRE}[tT][aA][bB][dD][iI][aA][lL][oO][gG]{SUF}                              |
-{PRE}[tT][aA][bB][pP][aA][gG][eE]{SUF}                                      |
-{PRE}[tT][oO][oO][lL][bB][oO][xX]{SUF}                                      |
-{PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{SUF}                      |
-{PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{SUF}                      |
-{PRE}[wW][aA][rR][nN][iI][nN][gG][bB][oO][xX]{SUF}                          |
-{PRE}[wW][iI][nN][dD][oO][wW]{SUF}                                          |
-{PRE}[wW][oO][rR][kK][wW][iI][nN][dD][oO][wW]{SUF}                          {
+{PRE}[bB][iI][tT][mM][aA][pP]{SUF}                                                 |
+{PRE}[bB][uU][tT][tT][oO][nN][iI][mM][aA][gG][eE]{SUF}                             |
+{PRE}[cC][aA][nN][cC][eE][lL][bB][uU][tT][tT][oO][nN]{SUF}                         |
+{PRE}[cC][hH][eE][cC][kK][bB][oO][xX]{SUF}                                         |
+{PRE}[cC][oO][nN][tT][rR][oO][lL]{SUF}                                             |
+{PRE}[cC][oO][mM][bB][oO][bB][oO][xX]{SUF}                                         |
+{PRE}[dD][oO][cC][kK][iI][nN][gG][wW][iI][nN][dD][oO][wW]{SUF}                     |
+{PRE}[eE][dD][iI][tT]{SUF}                                                         |
+{PRE}[eE][rR][rR][oO][rR][bB][oO][xX]{SUF}                                         |
+{PRE}[fF][iI][xX][eE][dD][tT][eE][xX][tT]{SUF}                                     |
+{PRE}[fF][iI][xX][eE][dD][lL][iI][nN][eE]{SUF}                                     |
+{PRE}[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]{SUF}                 |
+{PRE}[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]{SUF}                                 |
+{PRE}[iI][dD][lL][iI][sS][tT]{SUF}                                                 |
+{PRE}[iI][mM][aA][gG][eE]{SUF}                                                     |
+{PRE}[iI][mM][aA][gG][eE][lL][iI][sS][tT]{SUF}                                     |
+{PRE}[iI][mM][aA][gG][eE][bB][uU][tT][tT][oO][nN]{SUF}                             |
+{PRE}[iI][mM][aA][gG][eE][rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{SUF}         |
+{PRE}[iI][nN][fF][oO][bB][oO][xX]{SUF}                                             |
+{PRE}[lL][iI][sS][tT][bB][oO][xX]{SUF}                                             |
+{PRE}[mM][eE][nN][uU]{SUF}                                                         |
+{PRE}[mM][eE][nN][uU][bB][uU][tT][tT][oO][nN]{SUF}                                 |
+{PRE}[mM][eE][nN][uU][iI][tT][eE][mM]{SUF}                                         |
+{PRE}[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]{SUF}                             |
+{PRE}[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]{SUF}                             |
+{PRE}[mM][oO][dD][eE][lL][eE][sS][sS][dD][iI][aA][lL][oO][gG]{SUF}                 |
+{PRE}[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]{SUF}                     |
+{PRE}[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]{SUF}                         |
+{PRE}[oO][kK][bB][uU][tT][tT][oO][nN]{SUF}                                         |
+{PRE}[pP][aA][gG][eE][iI][tT][eE][mM]{SUF}                                         |
+{PRE}[pP][aA][gG][eE][lL][iI][sS][tT]{SUF}                                         |
+{PRE}[pP][uU][sS][hH][bB][uU][tT][tT][oO][nN]{SUF}                                 |
+{PRE}[qQ][uU][eE][rR][yY][bB][oO][xX]{SUF}                                         |
+{PRE}[rR][aA][dD][iI][oO][bB][uU][tT][tT][oO][nN]{SUF}                             |
+{PRE}[rR][eE][sS][oO][uU][rR][cC][eE]{SUF}                                         |
+{PRE}[sS][fF][xX][sS][tT][yY][lL][eE][fF][aA][mM][iI][lL][iI][eS][sS]{SUF}         |
+{PRE}[sS][fF][xX][sS][tT][yY][lL][eE][fF][aA][mM][iI][lL][yY][iI][tT][eE][mM]{SUF} |
+{PRE}[sS][pP][iI][nN][fF][iI][eE][lL][dD]{SUF}                                     |
+{PRE}[sS][tT][rR][iI][nN][gG]{SUF}                                                 |
+{PRE}[sS][tT][rR][iI][nN][gG][aA][rR][rR][aA][yY]{SUF}                             |
+{PRE}[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]{SUF}                                 |
+{PRE}[tT][aA][bB][dD][iI][aA][lL][oO][gG]{SUF}                                     |
+{PRE}[tT][aA][bB][pP][aA][gG][eE]{SUF}                                             |
+{PRE}[tT][oO][oO][lL][bB][oO][xX]{SUF}                                             |
+{PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{SUF}                             |
+{PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{SUF}                             |
+{PRE}[wW][aA][rR][nN][iI][nN][gG][bB][oO][xX]{SUF}                                 |
+{PRE}[wW][iI][nN][dD][oO][wW]{SUF}                                                 |
+{PRE}[wW][oO][rR][kK][wW][iI][nN][dD][oO][wW]{SUF}                                 {
   yyless(strlen(yytext)-1);
   LOCptr->setCmd(yytext);
   BEGIN(CMD);
@@ -228,11 +231,11 @@ KEYID [a-zA-Z0-9_-]+
 }
 
 <CMD>"{" {
-  yyless(1);
+  LOCptr->startBlock(yytext);
   BEGIN(INITIAL);
 }
 
-<CMD>[\\\n/] {
+<CMD>[\\\r\n/] {
   yyless(1);
   BEGIN(INITIAL);
 }
@@ -268,7 +271,8 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
-{PRE}[iI][tT][eE][mM][lL][iI][sS][tT]{SUFT} {
+{PRE}[iI][tT][eE][mM][lL][iI][sS][tT]{SUFT}                             |
+{PRE}[sS][tT][yY][lL][eE][fF][aA][mM][iI][lL][yY][lL][iI][sS][tT]{SUF}  {
   yyless(strlen(yytext)-1);
   LOCptr->setList(yytext);
 }

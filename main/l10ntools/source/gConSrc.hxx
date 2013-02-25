@@ -67,6 +67,7 @@ class convert_src : public convert_gen_impl
     bool                     mbAutoPush;
     bool                     mbValuePresent;
     int                      miListCount;
+    int                      miMacroLevel;
     void execute();
 };
 #endif
