@@ -25,15 +25,7 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
-//#include <sfx2/sectionpage.hxx>
-//#include <svx/svxdllapi.h>
 #include <vcl/fixed.hxx>
-//#include <vcl/field.hxx>
-//#include <vcl/button.hxx>
-//#include <vcl/toolbox.hxx>
-//#include <svx/dlgctrl.hxx>
-//#include <svx/xbitmap.hxx>
-//#include <svx/xtable.hxx>
 #include <boost/scoped_ptr.hpp>
 
 //////////////////////////////////////////////////////////////////////////////

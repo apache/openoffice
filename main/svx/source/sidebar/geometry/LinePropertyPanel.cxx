@@ -49,6 +49,8 @@
 #include <svx/xlntrit.hxx>
 #include <svx/xlnstit.hxx>
 #include <svx/xlnedit.hxx>
+#include <svx/xlncapit.hxx>
+#include <svx/xlinjoit.hxx>
 
 using namespace css;
 using namespace cssu;
@@ -1275,14 +1277,20 @@ LinePropertyPanel::LinePropertyPanel(
     mpFTArrow(new FixedText(this, SVX_RES(FT_ARROW))),
     mpLBStart(new LineEndLB_LPP(this, SVX_RES(LB_START))),
     mpLBEnd(new LineEndLB_LPP(this, SVX_RES(LB_END))),
-    maColorControl(SID_ATTR_LINE_COLOR, *pBindings, *this),
-    maStyleControl(SID_ATTR_LINE_STYLE, *pBindings, *this),
-    maDashControl (SID_ATTR_LINE_DASH, *pBindings, *this),
-    maWidthControl(SID_ATTR_LINE_WIDTH, *pBindings, *this),
-    maTransControl(SID_ATTR_LINE_TRANSPARENCE, *pBindings, *this),
-    maStartControl(SID_ATTR_LINE_START, *pBindings, *this),
-    maEndControl(SID_ATTR_LINE_END, *pBindings, *this),
-    maLineEndListControl(SID_LINEEND_LIST, *pBindings, *this),
+    mpFTEdgeStyle(new FixedText(this, SVX_RES(FT_EDGESTYLE))),
+    mpLBEdgeStyle(new ListBox(this, SVX_RES(LB_EDGESTYLE))),
+    mpFTCapStyle(new FixedText(this, SVX_RES(FT_CAPSTYLE))),
+    mpLBCapStyle(new ListBox(this, SVX_RES(LB_CAPSTYLE))),
+    maStyleControl(SID_ATTR_LINE_STYLE, *pBindings, *this),             // ( SID_SVX_START + 169 )
+    maDashControl (SID_ATTR_LINE_DASH, *pBindings, *this),              // ( SID_SVX_START + 170 )
+    maWidthControl(SID_ATTR_LINE_WIDTH, *pBindings, *this),             // ( SID_SVX_START + 171 )
+    maColorControl(SID_ATTR_LINE_COLOR, *pBindings, *this),             // ( SID_SVX_START + 172 )
+    maStartControl(SID_ATTR_LINE_START, *pBindings, *this),             // ( SID_SVX_START + 173 )
+    maEndControl(SID_ATTR_LINE_END, *pBindings, *this),                 // ( SID_SVX_START + 174 )
+    maLineEndListControl(SID_LINEEND_LIST, *pBindings, *this),          // ( SID_SVX_START + 184 )
+    maTransControl(SID_ATTR_LINE_TRANSPARENCE, *pBindings, *this),      // (SID_SVX_START+1107)
+    maEdgeStyle(SID_ATTR_LINE_JOINT, *pBindings, *this),                // (SID_SVX_START+1110)
+    maCapStyle(SID_ATTR_LINE_CAP, *pBindings, *this),                   // (SID_SVX_START+1111)
     maColor(COL_BLACK),
     mpColorUpdater(new ::svx::ToolboxButtonColorUpdater(SID_ATTR_LINE_COLOR, TBI_COLOR, mpTBColor.get(), TBX_UPDATER_MODE_CHAR_COLOR_NEW)),
     mpStyleItem(),
@@ -1445,6 +1453,14 @@ void LinePropertyPanel::Initialize()
 	mpMFTransparent->SetAccessibleRelationLabeledBy(mpFTTrancparency.get());
 	mpLBStart->SetAccessibleRelationLabeledBy(mpFTArrow.get());
 	mpLBEnd->SetAccessibleRelationLabeledBy(mpLBEnd.get());
+
+    aLink = LINK( this, LinePropertyPanel, ChangeEdgeStyleHdl );
+    mpLBEdgeStyle->SetSelectHdl( aLink );
+    mpLBEdgeStyle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Corner Style")));
+
+    aLink = LINK( this, LinePropertyPanel, ChangeCapStyleHdl );
+    mpLBCapStyle->SetSelectHdl( aLink );
+    mpLBCapStyle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Cap Style")));
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -1518,151 +1534,279 @@ void LinePropertyPanel::NotifyItemUpdate(
 {
 	switch(nSID)
 	{
-	case SID_ATTR_LINE_COLOR:
-		if( eState == SFX_ITEM_DISABLED)
-		{ 
-			mpFTColor->Disable();
-			mpTBColor->Disable();
-			mbColorAvailable = false;
-			mpColorUpdater->Update(COL_WHITE);
-		}
-		else
-		{
-			mpFTColor->Enable();
-			mpTBColor->Enable();
-			if (  eState >= SFX_ITEM_DEFAULT && pState && pState->ISA(XLineColorItem) )
-			{
-				maColor = ((const XLineColorItem*)pState)->GetColorValue();
-				mbColorAvailable = true;
-				mpColorUpdater->Update(maColor);
-			}
-			else
-			{
-				mbColorAvailable = false;
-				mpColorUpdater->Update(COL_WHITE);
-			}	
-		}
-		break;
-	case SID_ATTR_LINE_STYLE:
-	case SID_ATTR_LINE_DASH:
-		if( eState == SFX_ITEM_DISABLED)
-		{
-			mpFTStyle->Disable();
-			mpTBStyle->Disable();
-			mpTBStyle->SetItemImage(TBI_STYLE,maIMGNone);
-		}
-		else
-		{
-			mpFTStyle->Enable();
-			mpTBStyle->Enable();
-			if( eState  >= SFX_ITEM_DEFAULT )
-			{
-				if(nSID == SID_ATTR_LINE_STYLE && pState && pState->ISA(XLineStyleItem))
-				{
-					mbStyleAvailable =true;
-					mpStyleItem.reset(pState ? (XLineStyleItem*)pState->Clone() : 0);
-				}
-				else if(nSID == SID_ATTR_LINE_DASH && pState && pState->ISA(XLineDashItem))
-				{
-					mbDashAvailable = true;
-					mpDashItem.reset(pState ? (XLineDashItem*)pState->Clone() : 0);
-				}
-			}
-			else
-			{
-				if(nSID == SID_ATTR_LINE_STYLE)
-					mbStyleAvailable = false;
-				else 
-					mbDashAvailable = false;
-			}
-			SetStyleIcon();
-		}
-		break;
-	case SID_ATTR_LINE_TRANSPARENCE:
-		if( eState == SFX_ITEM_DISABLED )
-		{
-			mpFTTrancparency->Disable();
-			mpMFTransparent->Disable();
-			mpMFTransparent->SetValue(0);//add 
-			mpMFTransparent->SetText(String());
-			mbTransAvailable = false;
-		}
-		else
-		{
-			mpFTTrancparency->Enable();
-			mpMFTransparent->Enable();
-			mbTransAvailable = true;
-			if(eState != SFX_ITEM_DONTCARE && pState && pState->ISA(XLineTransparenceItem) )
-			{
-				const XLineTransparenceItem* pItem = (const XLineTransparenceItem*)pState;
-				mnTrans = pItem->GetValue();
-				mpMFTransparent->SetValue(mnTrans);
-			}
-			else
-			{
-				mpMFTransparent->SetValue(0);//add 
-				mpMFTransparent->SetText(String());
-			}
-		}
-		break;
-	case SID_ATTR_LINE_WIDTH:
-		if(eState == SFX_ITEM_DISABLED)
-		{
-			mpTBWidth->Disable();
-			mpFTWidth->Disable();
-		}
-		else
-		{
-			//enable
-			mpTBWidth->Enable();
-			mpFTWidth->Enable();
-			if(eState >= SFX_ITEM_AVAILABLE && pState->ISA(XLineWidthItem) )
-			{
-				const XLineWidthItem* pItem = (const XLineWidthItem*)pState;
-				mnWidthCoreValue = pItem->GetValue();
-				mbWidthValuable = true;
-			}
-			else
-			{
-				mbWidthValuable = false;
-			}
-		}
-		SetWidthIcon();
-		break;
-	case SID_ATTR_LINE_START:
-		if(eState != SFX_ITEM_DONTCARE && pState && pState->ISA(XLineStartItem) )
-		{
-			mbStartAvailable = true;	//add 
-			mpStartItem.reset(pState ? (XLineStartItem*)pState->Clone() : 0);
-			SelectEndStyle(true);
-		}
-		else
-		{
-			mpLBStart->SetNoSelection();
-			mbStartAvailable = false;	//add 
-		}
-		break;
-	case SID_ATTR_LINE_END:
-		mpFTArrow->Enable();
-		mpLBEnd->Enable();
-		if(eState != SFX_ITEM_DONTCARE && pState && pState->ISA(XLineEndItem))
-		{
-			mbEndAvailable = true;		//add 
-			mpEndItem.reset(pState ? (XLineEndItem*)pState->Clone() : 0);
-			SelectEndStyle(false);		
-		}
-		else
-		{
-			mpLBEnd->SetNoSelection();
-			mbEndAvailable = false;		//add 
-		}	
-		break;
-	case SID_LINEEND_LIST:
-		FillLineEndList();
-		SelectEndStyle(true);
-		SelectEndStyle(false);
-		break;
-	}
+    	case SID_ATTR_LINE_COLOR:
+        {
+		    if( eState == SFX_ITEM_DISABLED)
+		    { 
+			    mpFTColor->Disable();
+			    mpTBColor->Disable();
+			    mbColorAvailable = false;
+			    mpColorUpdater->Update(COL_WHITE);
+		    }
+		    else
+		    {
+			    mpFTColor->Enable();
+			    mpTBColor->Enable();
+                const XLineColorItem* pItem = dynamic_cast< const XLineColorItem* >(pState);
+
+			    if(eState >= SFX_ITEM_DEFAULT && pItem)
+			    {
+				    maColor = pItem->GetColorValue();
+				    mbColorAvailable = true;
+				    mpColorUpdater->Update(maColor);
+			    }
+			    else
+			    {
+				    mbColorAvailable = false;
+				    mpColorUpdater->Update(COL_WHITE);
+			    }	
+		    }
+		    break;
+        }
+	    case SID_ATTR_LINE_STYLE:
+	    case SID_ATTR_LINE_DASH:
+        {
+		    if( eState == SFX_ITEM_DISABLED)
+		    {
+			    mpFTStyle->Disable();
+			    mpTBStyle->Disable();
+			    mpTBStyle->SetItemImage(TBI_STYLE,maIMGNone);
+		    }
+		    else
+		    {
+			    mpFTStyle->Enable();
+			    mpTBStyle->Enable();
+			    if( eState  >= SFX_ITEM_DEFAULT )
+			    {
+				    if(nSID == SID_ATTR_LINE_STYLE)
+				    {
+                        const XLineStyleItem* pItem = dynamic_cast< const XLineStyleItem* >(pState);
+
+                        if(pItem)
+                        {
+					        mbStyleAvailable =true;
+    					    mpStyleItem.reset(pState ? (XLineStyleItem*)pItem->Clone() : 0);
+                        }
+				    }
+				    else if(nSID == SID_ATTR_LINE_DASH)
+				    {
+                        const XLineDashItem* pItem = dynamic_cast< const XLineDashItem* >(pState);
+
+                        if(pItem)
+                        {
+    					    mbDashAvailable = true;
+	    				    mpDashItem.reset(pState ? (XLineDashItem*)pItem->Clone() : 0);
+                        }
+				    }
+			    }
+			    else
+			    {
+				    if(nSID == SID_ATTR_LINE_STYLE)
+					    mbStyleAvailable = false;
+				    else 
+					    mbDashAvailable = false;
+			    }
+			    SetStyleIcon();
+		    }
+		    break;
+        }
+    	case SID_ATTR_LINE_TRANSPARENCE:
+        {
+		    if( eState == SFX_ITEM_DISABLED )
+		    {
+			    mpFTTrancparency->Disable();
+			    mpMFTransparent->Disable();
+			    mpMFTransparent->SetValue(0);//add 
+			    mpMFTransparent->SetText(String());
+			    mbTransAvailable = false;
+		    }
+		    else
+		    {
+			    mpFTTrancparency->Enable();
+			    mpMFTransparent->Enable();
+			    mbTransAvailable = true;
+                const XLineTransparenceItem* pItem = dynamic_cast< const XLineTransparenceItem* >(pState);
+
+                if(eState != SFX_ITEM_DONTCARE && pItem)
+			    {
+				    mnTrans = pItem->GetValue();
+				    mpMFTransparent->SetValue(mnTrans);
+			    }
+			    else
+			    {
+				    mpMFTransparent->SetValue(0);//add 
+				    mpMFTransparent->SetText(String());
+			    }
+		    }
+		    break;
+        }
+    	case SID_ATTR_LINE_WIDTH:
+        {
+		    if(eState == SFX_ITEM_DISABLED)
+		    {
+			    mpTBWidth->Disable();
+			    mpFTWidth->Disable();
+		    }
+		    else
+		    {
+			    //enable
+			    mpTBWidth->Enable();
+			    mpFTWidth->Enable();
+                const XLineWidthItem* pItem = dynamic_cast< const XLineWidthItem* >(pState);
+
+			    if(eState >= SFX_ITEM_AVAILABLE && pItem)
+			    {
+				    mnWidthCoreValue = pItem->GetValue();
+				    mbWidthValuable = true;
+			    }
+			    else
+			    {
+				    mbWidthValuable = false;
+			    }
+		    }
+		    SetWidthIcon();
+		    break;
+        }
+    	case SID_ATTR_LINE_START:
+        {
+            const XLineStartItem* pItem = dynamic_cast< const XLineStartItem* >(pState);
+
+		    if(eState != SFX_ITEM_DONTCARE && pItem)
+		    {
+			    mbStartAvailable = true;	//add 
+			    mpStartItem.reset(pItem ? (XLineStartItem*)pItem->Clone() : 0);
+			    SelectEndStyle(true);
+		    }
+		    else
+		    {
+			    mpLBStart->SetNoSelection();
+			    mbStartAvailable = false;	//add 
+		    }
+		    break;
+        }
+    	case SID_ATTR_LINE_END:
+        {
+		    mpFTArrow->Enable();
+		    mpLBEnd->Enable();
+            const XLineEndItem* pItem = dynamic_cast< const XLineEndItem* >(pState);
+
+		    if(eState != SFX_ITEM_DONTCARE && pItem)
+		    {
+			    mbEndAvailable = true;		//add 
+			    mpEndItem.reset(pItem ? (XLineEndItem*)pItem->Clone() : 0);
+			    SelectEndStyle(false);		
+		    }
+		    else
+		    {
+			    mpLBEnd->SetNoSelection();
+			    mbEndAvailable = false;		//add 
+		    }	
+		    break;
+        }
+    	case SID_LINEEND_LIST:
+        {
+		    FillLineEndList();
+		    SelectEndStyle(true);
+		    SelectEndStyle(false);
+		    break;
+        }
+        case SID_ATTR_LINE_JOINT:
+        {
+            if(eState == SFX_ITEM_DISABLED)
+            {
+                mpLBEdgeStyle->Disable();
+            }
+            else
+            {
+                mpLBEdgeStyle->Enable();
+                const XLineJointItem* pItem = dynamic_cast< const XLineJointItem* >(pState);
+                sal_uInt16 nEntryPos(0);
+
+                if(eState >= SFX_ITEM_AVAILABLE && pItem)
+                {
+                    switch(pItem->GetValue())
+                    {
+                        case com::sun::star::drawing::LineJoint_MIDDLE:
+                        case com::sun::star::drawing::LineJoint_ROUND:
+                        {
+                            nEntryPos = 1;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineJoint_NONE:
+                        {
+                            nEntryPos = 2;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineJoint_MITER:
+                        {
+                            nEntryPos = 3;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineJoint_BEVEL:
+                        {
+                            nEntryPos = 4;
+                            break;
+                        }
+                    }
+                }
+
+                if(nEntryPos)
+                {
+                    mpLBEdgeStyle->SelectEntryPos(nEntryPos - 1);
+                }
+                else
+                {
+                    mpLBEdgeStyle->SetNoSelection();
+                }
+            }
+            break;
+        }
+        case SID_ATTR_LINE_CAP:
+        {
+            if(eState == SFX_ITEM_DISABLED)
+            {
+                mpLBCapStyle->Disable();
+            }
+            else
+            {
+                mpLBCapStyle->Enable();
+                const XLineCapItem* pItem = dynamic_cast< const XLineCapItem* >(pState);
+                sal_uInt16 nEntryPos(0);
+
+                if(eState >= SFX_ITEM_AVAILABLE && pItem)
+                {
+                    switch(pItem->GetValue())
+                    {
+                        case com::sun::star::drawing::LineCap_BUTT:
+                        {
+                            nEntryPos = 1;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineCap_ROUND:
+                        {
+                            nEntryPos = 2;
+                            break;
+                        }
+                        case com::sun::star::drawing::LineCap_SQUARE:
+                        {
+                            nEntryPos = 3;
+                            break;
+                        }
+                    }
+                }
+
+                if(nEntryPos)
+                {
+                    mpLBCapStyle->SelectEntryPos(nEntryPos - 1);
+                }
+                else
+                {
+                    mpLBCapStyle->SetNoSelection();
+                }
+            }
+            break;
+        }
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -1786,6 +1930,81 @@ IMPL_LINK(LinePropertyPanel, ChangeEndHdl, void*, EMPTYARG)
 		delete pItem;
 	}
 	return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+IMPL_LINK(LinePropertyPanel, ChangeEdgeStyleHdl, void*, EMPTYARG)
+{
+    const sal_uInt16 nPos(mpLBEdgeStyle->GetSelectEntryPos());
+
+    if(LISTBOX_ENTRY_NOTFOUND != nPos && nPos != mpLBEdgeStyle->GetSavedValue())
+    {
+        XLineJointItem* pItem = 0;
+
+        switch(nPos)
+        {
+            case 0: // rounded
+            {
+                pItem = new XLineJointItem(com::sun::star::drawing::LineJoint_ROUND);
+                break;
+            }
+            case 1: // none
+            {
+                pItem = new XLineJointItem(com::sun::star::drawing::LineJoint_NONE);
+                break;
+            }
+            case 2: // mitered
+            {
+                pItem = new XLineJointItem(com::sun::star::drawing::LineJoint_MITER);
+                break;
+            }
+            case 3: // beveled
+            {
+                pItem = new XLineJointItem(com::sun::star::drawing::LineJoint_BEVEL);
+                break;
+            }
+        }
+
+        GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_JOINT, SFX_CALLMODE_RECORD, pItem,  0L);
+        delete pItem;
+    }
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+IMPL_LINK(LinePropertyPanel, ChangeCapStyleHdl, void*, EMPTYARG)
+{
+    const sal_uInt16 nPos(mpLBCapStyle->GetSelectEntryPos());
+
+    if(LISTBOX_ENTRY_NOTFOUND != nPos && nPos != mpLBCapStyle->GetSavedValue())
+    {
+        XLineCapItem* pItem = 0;
+
+        switch(nPos)
+        {
+            case 0: // flat
+            {
+                pItem = new XLineCapItem(com::sun::star::drawing::LineCap_BUTT);
+                break;
+            }
+            case 1: // round
+            {
+                pItem = new XLineCapItem(com::sun::star::drawing::LineCap_ROUND);
+                break;
+            }
+            case 2: // square
+            {
+                pItem = new XLineCapItem(com::sun::star::drawing::LineCap_SQUARE);
+                break;
+            }
+        }
+
+        GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_CAP, SFX_CALLMODE_RECORD, pItem,  0L);
+        delete pItem;
+    }
+    return 0;
 }
 
 //////////////////////////////////////////////////////////////////////////////

@@ -19,39 +19,40 @@
  * 
  *************************************************************/
 
-#ifndef _SVX_XLNCAPIT_HXX
-#define _SVX_XLNCAPIT_HXX
+#ifndef _SVX_AFFINEMATRIXITEM_HXX
+#define _SVX_AFFINEMATRIXITEM_HXX
 
 #include <svx/svxdllapi.h>
-#include <svl/eitem.hxx>
-#include <svx/xenum.hxx>
-#include <com/sun/star/drawing/LineCap.hpp>
+#include <svl/poolitem.hxx>
+#include <com/sun/star/geometry/AffineMatrix2D.hpp>
 
 //---------------------
-// class XLineCapItem
+// class AffineMatrixItem
 //---------------------
 
-class SVX_DLLPUBLIC XLineCapItem : public SfxEnumItem
+class SVX_DLLPUBLIC AffineMatrixItem : public SfxPoolItem
 {
+private:
+    com::sun::star::geometry::AffineMatrix2D        maMatrix;
+
 public:
     TYPEINFO();
-    XLineCapItem(com::sun::star::drawing::LineCap eLineCap = com::sun::star::drawing::LineCap_BUTT);
-    XLineCapItem(SvStream& rIn);
+    AffineMatrixItem(const com::sun::star::geometry::AffineMatrix2D* pMatrix = 0);
+    AffineMatrixItem(SvStream& rIn);
+    AffineMatrixItem(const AffineMatrixItem&);
+    virtual ~AffineMatrixItem();
 
-    virtual sal_uInt16      GetVersion( sal_uInt16 nFileFormatVersion ) const;
-    virtual SfxPoolItem*    Clone( SfxItemPool* pPool = 0 ) const;
-    virtual SfxPoolItem*    Create( SvStream& rIn, sal_uInt16 nVer ) const;
+    virtual int operator==(const SfxPoolItem&) const;
+    virtual SfxPoolItem* Clone( SfxItemPool* pPool = 0 ) const;
+    virtual SfxPoolItem* Create( SvStream& rIn, sal_uInt16 nVer ) const;
+    virtual SvStream& Store(SvStream &, sal_uInt16 nItemVersion ) const;
 
     virtual sal_Bool QueryValue( com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 ) const;
     virtual sal_Bool PutValue( const com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 );
-    virtual SfxItemPresentation GetPresentation( SfxItemPresentation ePres,
-                                    SfxMapUnit eCoreMetric, SfxMapUnit ePresMetric,
-                                    String &rText, const IntlWrapper * = 0 ) const;
 
-    virtual sal_uInt16          GetValueCount() const;
-    com::sun::star::drawing::LineCap GetValue() const;
+    const com::sun::star::geometry::AffineMatrix2D& GetAffineMatrix2D() const;
 };
 
-#endif // _SVX_XLNCAPIT_HXX
+#endif // _SVX_AFFINEMATRIXITEM_HXX
 
-/* vim:set shiftwidth=4 softtabstop=4 expandtab: */
+// eof

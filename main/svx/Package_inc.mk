@@ -173,6 +173,7 @@ $(eval $(call gb_Package_add_file,svx_inc,inc/svx/unomaster.hxx,svx/unomaster.hx
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/svdedtv.hxx,svx/svdedtv.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/xlinjoit.hxx,svx/xlinjoit.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/xlncapit.hxx,svx/xlncapit.hxx))
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/AffineMatrixItem.hxx,svx/AffineMatrixItem.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sxmbritm.hxx,svx/sxmbritm.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/AccessibleGraphicShape.hxx,svx/AccessibleGraphicShape.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/xlnstit.hxx,svx/xlnstit.hxx))

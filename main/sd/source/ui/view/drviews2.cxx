@@ -135,12 +135,19 @@ void DrawViewShell::FuTemporary(SfxRequest& rReq)
 		case SID_ATTR_FILL_HATCH:
 		case SID_ATTR_FILL_BITMAP:
 		case SID_ATTR_FILL_SHADOW:
+        case SID_ATTR_FILL_TRANSPARENCE:
+        case SID_ATTR_FILL_FLOATTRANSPARENCE:
 
 		case SID_ATTR_LINE_STYLE:
 		case SID_ATTR_LINE_DASH:
 		case SID_ATTR_LINE_WIDTH:
 		case SID_ATTR_LINE_COLOR:
 		case SID_ATTR_LINEEND_STYLE:
+        case SID_ATTR_LINE_START:
+        case SID_ATTR_LINE_END:
+        case SID_ATTR_LINE_TRANSPARENCE:
+        case SID_ATTR_LINE_JOINT:
+        case SID_ATTR_LINE_CAP:
 
 		case SID_ATTR_TEXT_FITTOSIZE:
 		{
@@ -287,12 +294,17 @@ void DrawViewShell::FuTemporary(SfxRequest& rReq)
 					case SID_ATTR_FILL_GRADIENT:
 					case SID_ATTR_FILL_HATCH:
 					case SID_ATTR_FILL_BITMAP:
+                    case SID_ATTR_FILL_TRANSPARENCE:
+                    case SID_ATTR_FILL_FLOATTRANSPARENCE:
 						GetViewFrame()->GetDispatcher()->Execute( SID_ATTRIBUTES_AREA, SFX_CALLMODE_ASYNCHRON );
 						break;
 					case SID_ATTR_LINE_STYLE:
 					case SID_ATTR_LINE_DASH:
 					case SID_ATTR_LINE_WIDTH:
 					case SID_ATTR_LINE_COLOR:
+                    case SID_ATTR_LINE_TRANSPARENCE:
+                    case SID_ATTR_LINE_JOINT:
+                    case SID_ATTR_LINE_CAP:
 						GetViewFrame()->GetDispatcher()->Execute( SID_ATTRIBUTES_LINE, SFX_CALLMODE_ASYNCHRON );
 						break;
 					case SID_ATTR_TEXT_FITTOSIZE:

@@ -139,14 +139,21 @@ void ScDrawShell::ExecDrawAttr( SfxRequest& rReq )
 
 		case SID_ATTR_LINE_STYLE:
 		case SID_ATTR_LINEEND_STYLE:
+        case SID_ATTR_LINE_START:
+        case SID_ATTR_LINE_END:
 		case SID_ATTR_LINE_DASH:
 		case SID_ATTR_LINE_WIDTH:
 		case SID_ATTR_LINE_COLOR:
+        case SID_ATTR_LINE_TRANSPARENCE:
+        case SID_ATTR_LINE_JOINT:
+        case SID_ATTR_LINE_CAP:
 		case SID_ATTR_FILL_STYLE:
 		case SID_ATTR_FILL_COLOR:
 		case SID_ATTR_FILL_GRADIENT:
 		case SID_ATTR_FILL_HATCH:
 		case SID_ATTR_FILL_BITMAP:
+		case SID_ATTR_FILL_TRANSPARENCE:
+		case SID_ATTR_FILL_FLOATTRANSPARENCE:
 
 		// #i25616#
 		case SID_ATTR_FILL_SHADOW:
@@ -160,6 +167,9 @@ void ScDrawShell::ExecDrawAttr( SfxRequest& rReq )
 						case SID_ATTR_LINE_DASH:
 						case SID_ATTR_LINE_WIDTH:
 						case SID_ATTR_LINE_COLOR:
+                        case SID_ATTR_LINE_TRANSPARENCE:
+                        case SID_ATTR_LINE_JOINT:
+                        case SID_ATTR_LINE_CAP:
 							ExecuteLineDlg( rReq );
 							break;
 
@@ -168,6 +178,8 @@ void ScDrawShell::ExecDrawAttr( SfxRequest& rReq )
 						case SID_ATTR_FILL_GRADIENT:
 						case SID_ATTR_FILL_HATCH:
 						case SID_ATTR_FILL_BITMAP:
+		                case SID_ATTR_FILL_TRANSPARENCE:
+		                case SID_ATTR_FILL_FLOATTRANSPARENCE:
 
 						// #i25616#
 						case SID_ATTR_FILL_SHADOW:

@@ -26,9 +26,6 @@
 #include <GraphicPropertyPanel.hrc>
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
-//#include <svl/intitem.hxx>
-//#include <sfx2/bindings.hxx>
-//#include <sfx2/dispatch.hxx>
 #include <vcl/field.hxx>
 #include <vcl/lstbox.hxx>
 #include <svl/intitem.hxx>
@@ -301,9 +298,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpMtrBrightness->Enable();
-			if(pState&&pState->ISA(SfxInt16Item))
+            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+
+			if(pItem)
 			{
-				sal_Int64 nBright = ((SfxInt16Item*)pState)->GetValue();
+				sal_Int64 nBright = pItem->GetValue();
 				mpMtrBrightness->SetValue(nBright);
 			}
 		}
@@ -319,9 +318,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpMtrContrast->Enable();
-			if(pState&&pState->ISA(SfxInt16Item))
+            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+
+            if(pItem)
 			{
-				sal_Int64 nContrast = ((SfxInt16Item*)pState)->GetValue();
+				sal_Int64 nContrast = pItem->GetValue();
 				mpMtrContrast->SetValue(nContrast);
 			}
 		}
@@ -337,9 +338,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpMtrTrans->Enable();
-			if(pState&&pState->ISA(SfxUInt16Item))
+            const SfxUInt16Item* pItem = dynamic_cast< const SfxUInt16Item* >(pState);
+
+			if(pItem)
 			{
-				sal_Int64 nTrans = ((SfxUInt16Item*)pState)->GetValue();
+				sal_Int64 nTrans = pItem->GetValue();
 				mpMtrTrans->SetValue(nTrans);
 			}
 		}
@@ -355,9 +358,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpLBColorMode->Enable();
-			if(pState&&pState->ISA(SfxUInt16Item))
+            const SfxUInt16Item* pItem = dynamic_cast< const SfxUInt16Item* >(pState);
+
+			if(pItem)
 			{
-				sal_Int64 nTrans = ((SfxUInt16Item*)pState)->GetValue();
+				sal_Int64 nTrans = pItem->GetValue();
 				mpLBColorMode->SelectEntryPos(nTrans);
 			}
 		}
@@ -373,9 +378,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpMtrRed->Enable();
-			if(pState&&pState->ISA(SfxInt16Item))
+            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+
+			if(pItem)
 			{
-				sal_Int64 nRed = ((SfxInt16Item*)pState)->GetValue();
+				sal_Int64 nRed = pItem->GetValue();
 				mpMtrRed->SetValue( nRed );
 			}
 		}			
@@ -391,9 +398,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpMtrGreen->Enable();
-			if(pState&&pState->ISA(SfxInt16Item))
+            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+
+			if(pItem)
 			{
-				sal_Int64 nGreen = ((SfxInt16Item*)pState)->GetValue();
+				sal_Int64 nGreen = pItem->GetValue();
 				mpMtrGreen->SetValue( nGreen );
 			}
 		}
@@ -409,9 +418,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpMtrBlue->Enable();
-			if(pState&&pState->ISA(SfxInt16Item))
+            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+
+			if(pItem)
 			{
-				sal_Int64 nBlue = ((SfxInt16Item*)pState)->GetValue();
+				sal_Int64 nBlue = pItem->GetValue();
 				mpMtrBlue->SetValue( nBlue );
 			}
 		}
@@ -427,9 +438,11 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 		if( eState >= SFX_ITEM_AVAILABLE)
 		{
 			mpMtrGamma->Enable();
-			if(pState&&pState->ISA(SfxUInt32Item))
+            const SfxUInt32Item* pItem = dynamic_cast< const SfxUInt32Item* >(pState);
+
+			if(pItem)
 			{
-				sal_Int64 nGamma = ((SfxUInt32Item*)pState)->GetValue();
+				sal_Int64 nGamma = pItem->GetValue();
 				mpMtrGamma->SetValue( nGamma );
 			}
 		}

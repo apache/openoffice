@@ -43,6 +43,7 @@ class XLineStartItem;
 class XLineEndItem;
 class LineEndLB_LPP;
 class XLineEndList;
+class ListBox;
 
 //////////////////////////////////////////////////////////////////////////////
 // namespace open
@@ -93,18 +94,24 @@ private:
     ::boost::scoped_ptr< FixedText >                        mpFTTrancparency;
     ::boost::scoped_ptr< MetricField >                      mpMFTransparent;
     ::boost::scoped_ptr< FixedText >                        mpFTArrow;
-    ::boost::scoped_ptr< LineEndLB_LPP >                        mpLBStart;
-    ::boost::scoped_ptr< LineEndLB_LPP >                        mpLBEnd;
+    ::boost::scoped_ptr< LineEndLB_LPP >                    mpLBStart;
+    ::boost::scoped_ptr< LineEndLB_LPP >                    mpLBEnd;
+    ::boost::scoped_ptr< FixedText >                        mpFTEdgeStyle;
+    ::boost::scoped_ptr< ListBox >                          mpLBEdgeStyle;
+    ::boost::scoped_ptr< FixedText >                        mpFTCapStyle;
+    ::boost::scoped_ptr< ListBox >                          mpLBCapStyle;
 
     //ControllerItem
-    ::sfx2::sidebar::ControllerItem                         maColorControl;
     ::sfx2::sidebar::ControllerItem                         maStyleControl;
     ::sfx2::sidebar::ControllerItem                         maDashControl;
     ::sfx2::sidebar::ControllerItem                         maWidthControl;
-    ::sfx2::sidebar::ControllerItem                         maTransControl;
+    ::sfx2::sidebar::ControllerItem                         maColorControl;
     ::sfx2::sidebar::ControllerItem                         maStartControl;
     ::sfx2::sidebar::ControllerItem                         maEndControl;
     ::sfx2::sidebar::ControllerItem                         maLineEndListControl;
+    ::sfx2::sidebar::ControllerItem                         maTransControl;
+    ::sfx2::sidebar::ControllerItem                         maEdgeStyle;
+    ::sfx2::sidebar::ControllerItem                         maCapStyle;
 
     Color                                                   maColor;
     ::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
@@ -161,6 +168,8 @@ private:
 	DECL_LINK(ChangeTransparentHdl , void *);
 	DECL_LINK(ChangeStartHdl, void *);
 	DECL_LINK(ChangeEndHdl, void *);
+	DECL_LINK(ChangeEdgeStyleHdl, void *);
+	DECL_LINK(ChangeCapStyleHdl, void *);
 
     // constructor/destuctor
     LinePropertyPanel(

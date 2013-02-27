@@ -26,24 +26,12 @@
 #include <TransformationPropertyPanel.hrc>
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
-//#include <svx/sizeitem.hxx>
-//#include <svl/aeitem.hxx>
-//#include <vcl/toolbox.hxx>
 #include <sfx2/dispatch.hxx>
 #include <sfx2/bindings.hxx>
-//#include <drawitem.hxx>
 #include <sfx2/viewsh.hxx>
-//#include <svx/xtable.hxx>
-//#include <svx/numitem.hxx>
-//#include <vcl/fixed.hxx>
-//#include <svl/poolitem.hxx>
-//#include <sfx2/sectionpage.hxx>
-//#include <svx/svxitems.hrc>
-//#include <sfx2/app.hxx>
 #include <sfx2/objsh.hxx>
 #include <svx/dlgutil.hxx>
 #include <unotools/viewoptions.hxx>
-//#include <svl/ptitem.hxx>
 #include <vcl/virdev.hxx>
 #include <vcl/svapp.hxx>
 #include <vcl/field.hxx>
@@ -392,8 +380,6 @@ namespace
 class DialControl : public Control
 {
 public:
-//    explicit            DialControl( Window* pParent, const Size& rSize, const Font& rFont, WinBits nWinStyle = 0 );
-//    explicit            DialControl( Window* pParent, const Size& rSize, WinBits nWinStyle = 0 );
     DialControl( Window* pParent, const ResId& rResId, bool bForSideBar = false );
     virtual             ~DialControl();
 
@@ -445,23 +431,6 @@ private:
 
     std::auto_ptr< DialControl_Impl > mpImpl;
 };
-
-//DialControl::DialControl( Window* pParent, const Size& rSize, const Font& rFont, WinBits nWinStyle ) :
-//    Control( pParent, nWinStyle ),
-//    mpImpl( new DialControl_Impl( *this ) )
-//{
-//    Init( rSize, rFont );
-//}
-//
-//DialControl::DialControl( Window* pParent, const Size& rSize, WinBits nWinStyle ) :
-//    Control( pParent, nWinStyle ),
-//    mpImpl( new DialControl_Impl( *this ) )
-//{
-//    if( pParent )
-//        Init( rSize, pParent->GetFont() );
-//    else
-//        Init( rSize );
-//}
 
 DialControl::DialControl( Window* pParent, const ResId& rResId, bool bForSideBar ) :
     Control( pParent, rResId ),
@@ -745,7 +714,7 @@ TransformationPropertyPanel::TransformationPropertyPanel(
     maTransfPosYControl(SID_ATTR_TRANSFORM_POS_Y, *pBindings, *this),
     maTransfWidthControl(SID_ATTR_TRANSFORM_WIDTH, *pBindings, *this),
     maTransfHeightControl(SID_ATTR_TRANSFORM_HEIGHT, *pBindings, *this),
-    maTransfAnchor(SID_ATTR_TRANSFORM_ANCHOR, *pBindings, *this),
+    maTransAffineMatrix2DControl(SID_ATTR_TRANSFORM_MATRIX, *pBindings, *this),
     maSvxAngleControl( SID_ATTR_TRANSFORM_ANGLE, *pBindings, *this),
     maRotXControl(SID_ATTR_TRANSFORM_ROT_X, *pBindings, *this),
     maRotYControl(SID_ATTR_TRANSFORM_ROT_Y, *pBindings, *this),
@@ -1217,16 +1186,16 @@ IMPL_LINK( TransformationPropertyPanel, FlipHdl, ToolBox*, pBox )
 	{
 		case FLIP_HORIZONTAL:
 		{
-			SfxVoidItem aHoriItem( SID_FLIP_HORIZONTAL );
+			SfxBoolItem aHoriItem( SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL );
 			GetBindings()->GetDispatcher()->Execute(
-				SID_FLIP_HORIZONTAL, SFX_CALLMODE_RECORD, &aHoriItem, 0L );
+				SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL, SFX_CALLMODE_RECORD, &aHoriItem, 0L );
 		}
 		break;
 		case FLIP_VERTICAL:
 		{
-			SfxVoidItem aVertItem( SID_FLIP_VERTICAL );
+			SfxBoolItem aVertItem( SID_ATTR_TRANSFORM_MIRROR_VERTICAL );
 			GetBindings()->GetDispatcher()->Execute(
-				SID_FLIP_VERTICAL, SFX_CALLMODE_RECORD, &aVertItem, 0L );
+				SID_ATTR_TRANSFORM_MIRROR_VERTICAL, SFX_CALLMODE_RECORD, &aVertItem, 0L );
 		}
 		break;
 	}
@@ -1273,13 +1242,21 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	else
 		mbAdjustEnabled = false;
 
-	if (nSID == SID_ATTR_TRANSFORM_WIDTH)
+    if (nSID == SID_ATTR_TRANSFORM_MATRIX)
+    {
+        // check if slot for AffineMatrixItem does work. If yes,
+        // most direct values can be migrated to this full object transformation,
+        // except the common slots like rotation center, move/size protect, etc.
+        bool bBla = true;
+    }
+	else if (nSID == SID_ATTR_TRANSFORM_WIDTH)
 	{
 		if ( SFX_ITEM_AVAILABLE == eState )
 		{
-			if (pState->ISA(SfxUInt32Item))
+            pWidthItem = dynamic_cast< const SfxUInt32Item* >(pState);
+
+			if (pWidthItem)
 			{				
-				pWidthItem = (const SfxUInt32Item*)pState;
 				long mlOldWidth1 = pWidthItem->GetValue();
 
 				mlOldWidth1 = Fraction( mlOldWidth1 ) / maUIScale;
@@ -1296,9 +1273,10 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	{
 		if ( SFX_ITEM_AVAILABLE == eState )
 		{
-			if(pState->ISA(SfxUInt32Item))
+            pHeightItem = dynamic_cast< const SfxUInt32Item* >(pState);
+
+            if(pHeightItem)
 			{
-				pHeightItem  = (const SfxUInt32Item*)pState;
 				long mlOldHeight1 = pHeightItem->GetValue();
 
 				mlOldHeight1 = Fraction( mlOldHeight1 ) / maUIScale;
@@ -1313,9 +1291,11 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	}
 	else if ( nSID == SID_ATTR_TRANSFORM_POS_X)
 	{
-		if (SFX_ITEM_AVAILABLE == eState && pState->ISA(SfxInt32Item))
+        const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+		if (SFX_ITEM_AVAILABLE == eState && pItem)
 		{
-			long nTmp = ((const SfxInt32Item*)pState)->GetValue(); 
+			long nTmp = pItem->GetValue(); 
 			nTmp = Fraction( nTmp ) / maUIScale;
 			SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
 		}
@@ -1326,9 +1306,11 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	}
 	else if ( nSID == SID_ATTR_TRANSFORM_POS_Y)
 	{
-		if (SFX_ITEM_AVAILABLE == eState && pState->ISA(SfxInt32Item))
+        const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+		if (SFX_ITEM_AVAILABLE == eState && pItem)
 		{
-			long nTmp = ((const SfxInt32Item*)pState)->GetValue(); 
+			long nTmp = pItem->GetValue(); 
 			nTmp = Fraction( nTmp ) / maUIScale;
 			SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
 		}
@@ -1355,10 +1337,12 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	}
 	else if (nSID == SID_ATTR_TRANSFORM_PROTECT_POS)
 	{
-		if (SFX_ITEM_AVAILABLE == eState && pState->ISA(SfxBoolItem))
+        const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+        if (SFX_ITEM_AVAILABLE == eState && pItem)
 		{
 			// record the state of position protect
-			mbPositionProtected = ((const SfxBoolItem*)pState)->GetValue();
+			mbPositionProtected = pItem->GetValue();
 		}
 		else
 		{
@@ -1367,10 +1351,12 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	}
 	else if (nSID == SID_ATTR_TRANSFORM_PROTECT_SIZE)
 	{
-		if (SFX_ITEM_AVAILABLE == eState && pState->ISA(SfxBoolItem))
+        const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+		if (SFX_ITEM_AVAILABLE == eState && pItem)
 		{
 			// record the state of size protect
-			mbSizeProtected = ((const SfxBoolItem*)pState)->GetValue();
+			mbSizeProtected = pItem->GetValue();
 		}
 		else
 		{
@@ -1379,13 +1365,21 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	}	
 	else if (nSID == SID_ATTR_TRANSFORM_AUTOWIDTH)
 	{
-		if (SFX_ITEM_AVAILABLE == eState && pState->ISA(SfxBoolItem))
-			mbAutoWidth = ((const SfxBoolItem*)pState)->GetValue();
+        const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+        if (SFX_ITEM_AVAILABLE == eState && pItem)
+        {
+			mbAutoWidth = pItem->GetValue();
+        }
 	}
 	else if (nSID == SID_ATTR_TRANSFORM_AUTOHEIGHT)
 	{
-		if (SFX_ITEM_AVAILABLE == eState && pState->ISA(SfxBoolItem))
-			mbAutoHeight = ((const SfxBoolItem*)pState)->GetValue();
+        const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+		if (SFX_ITEM_AVAILABLE == eState && pItem)
+        {
+			mbAutoHeight = pItem->GetValue();
+        }
 	}
 	else if( nSID == SID_ATTR_TRANSFORM_ANGLE )
 	{

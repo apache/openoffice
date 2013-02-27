@@ -133,9 +133,8 @@ private:
     ::sfx2::sidebar::ControllerItem                     maGradientListControl;
     ::sfx2::sidebar::ControllerItem                     maHatchListControl;
     ::sfx2::sidebar::ControllerItem                     maBitmapListControl;
-    ::sfx2::sidebar::ControllerItem                     maTransTypeController;
-    ::sfx2::sidebar::ControllerItem                     maTransController;
-    ::sfx2::sidebar::ControllerItem                     maTransGradientController;
+    ::sfx2::sidebar::ControllerItem                     maFillTransparenceController;
+    ::sfx2::sidebar::ControllerItem                     maFillFloatTransparenceController;
 
     Image                                               maImgAxial;
     Image                                               maImgElli;
@@ -163,8 +162,8 @@ private:
     ::boost::scoped_ptr< PropertyPanelPopuplWindow >    mpFloatWinColor;
     ::boost::scoped_ptr< SvxColorPage >                 mpPageColor; 
 
-    ::boost::scoped_ptr< XFillFloatTransparenceItem >   mpGradientItem;
-    ::boost::scoped_ptr< SfxUInt16Item >                mpTransTypeItem;
+    ::boost::scoped_ptr< XFillFloatTransparenceItem >   mpFloatTransparenceItem;
+    ::boost::scoped_ptr< SfxUInt16Item >                mpTransparanceItem;
 
     cssu::Reference<css::frame::XFrame>                 mxFrame;
     ::sfx2::sidebar::EnumContext                        maContext;
@@ -202,6 +201,7 @@ private:
     void SetupIcons(void);
     void Initialize();
     void Update();
+    void ImpUpdateTransparencies();
 };
 
 //////////////////////////////////////////////////////////////////////////////

@@ -128,5 +128,10 @@
 #define SvxChooseControlItem		SfxEnumItem
 #define avmedia_MediaItem           ::avmedia::MediaItem
 
+#include <svx/xflftrit.hxx>
+#include <svx/xlncapit.hxx>
+#include <svx/xlinjoit.hxx>
+#include <svx/AffineMatrixItem.hxx>
+
 #define SFX_TYPEMAP
 #include "scslots.hxx"

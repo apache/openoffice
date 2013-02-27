@@ -64,7 +64,8 @@ interface TableDraw
     SID_BITMAP_LIST 		[ StateMethod = GetDrawAttrState; Export = FALSE; ]
     SID_DASH_LIST			[ StateMethod = GetDrawAttrState; Export = FALSE; ]
     SID_LINEEND_LIST		[ StateMethod = GetDrawAttrState; Export = FALSE; ]
-	 // Flaechen-Attribute
+
+     // Flaechen-Attribute
 	SID_ATTR_FILL_STYLE		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
 
 	// #i25616#
@@ -79,15 +80,40 @@ interface TableDraw
 	SID_ATTR_FILL_GRADIENT	[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
 	SID_ATTR_FILL_HATCH		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
 	SID_ATTR_FILL_BITMAP	[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
+	SID_ATTR_FILL_TRANSPARENCE [ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
+	SID_ATTR_FILL_FLOATTRANSPARENCE [ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
+
 	 // ---- Linien-Attribute:
 	SID_ATTR_LINE_STYLE		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
 	SID_ATTR_LINEEND_STYLE	[ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+	SID_ATTR_LINE_START [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+	SID_ATTR_LINE_END [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
 	SID_ATTR_LINE_DASH		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
 	SID_ATTR_LINE_WIDTH		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
 	SID_ATTR_LINE_COLOR		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
+	SID_ATTR_LINE_TRANSPARENCE [ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
+	SID_ATTR_LINE_JOINT [ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
+	SID_ATTR_LINE_CAP [ ExecMethod = ExecDrawAttr; StateMethod = GetDrawAttrState; Export = FALSE; ]
 	SID_ATTRIBUTES_AREA		[ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
 	SID_ATTRIBUTES_LINE		[ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
 	SID_ATTR_TRANSFORM		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawFuncState; Export = FALSE; ]
+
+    // use same as SID_ATTR_LINEEND_STYLE
+    SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_MIRROR_VERTICAL [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_POS_X [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_POS_Y [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_WIDTH [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_HEIGHT [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_ANGLE [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_ROT_X [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_ROT_Y [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_PROTECT_POS [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_PROTECT_SIZE [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_AUTOWIDTH [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_AUTOHEIGHT [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_MATRIX [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+
 	 // ---- Ausrichtungs - Funktionen:
 	 //!	PseudoSlots gibt Aerger mit Referenz-Dialogen ???
 	SID_OBJECT_ALIGN

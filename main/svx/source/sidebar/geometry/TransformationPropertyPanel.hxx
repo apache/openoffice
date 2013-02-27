@@ -25,16 +25,6 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
-//#include <sfx2/sectionpage.hxx>
-//#include <svx/svxdllapi.h>
-//#include <vcl/fixed.hxx>
-//#include <vcl/field.hxx>
-//#include <vcl/button.hxx>
-//#include <svx/rectenum.hxx>
-//#include <svx/svdview.hxx>
-//#include <svx/dlgctrl.hxx>
-//#include "dialcontrol.hxx"
-//#include <vcl/toolbox.hxx>
 #include <boost/scoped_ptr.hpp>
 #include <svx/rectenum.hxx>
 #include <svl/poolitem.hxx>
@@ -123,8 +113,8 @@ private:
     ::sfx2::sidebar::ControllerItem         maTransfPosYControl;
     ::sfx2::sidebar::ControllerItem         maTransfWidthControl;
     ::sfx2::sidebar::ControllerItem         maTransfHeightControl;
+    ::sfx2::sidebar::ControllerItem         maTransAffineMatrix2DControl;
 
-    ::sfx2::sidebar::ControllerItem         maTransfAnchor;
     ::sfx2::sidebar::ControllerItem         maSvxAngleControl;
     ::sfx2::sidebar::ControllerItem         maRotXControl;
     ::sfx2::sidebar::ControllerItem         maRotYControl;

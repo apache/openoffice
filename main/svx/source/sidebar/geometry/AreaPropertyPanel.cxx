@@ -572,7 +572,7 @@ void SvxAreaTrGrPage::ExecuteValueModify( sal_uInt8 nStartCol, sal_uInt8 nEndCol
 	bool bEnable = true;		
 	XFillFloatTransparenceItem aGradientItem(pPool,aTmpGradient, bEnable );
 
-	mpBindings->GetDispatcher()->Execute( SID_SVX_AREA_TRANSP_GRADIENT, SFX_CALLMODE_RECORD, &aGradientItem, 0L );
+	mpBindings->GetDispatcher()->Execute( SID_ATTR_FILL_FLOATTRANSPARENCE, SFX_CALLMODE_RECORD, &aGradientItem, 0L );
 }
 
 IMPL_LINK(SvxAreaTrGrPage, ModifiedTrgrHdl_Impl, void *, pControl)
@@ -660,9 +660,8 @@ AreaPropertyPanel::AreaPropertyPanel(
     maGradientListControl(SID_GRADIENT_LIST, *pBindings, *this),
     maHatchListControl(SID_HATCH_LIST, *pBindings, *this),
     maBitmapListControl(SID_BITMAP_LIST, *pBindings, *this),
-    maTransTypeController(SID_SVX_AREA_TRANS_TYPE, *pBindings, *this),
-    maTransController(SID_SVX_AREA_TRANSPARENCY, *pBindings, *this),
-    maTransGradientController(SID_SVX_AREA_TRANSP_GRADIENT, *pBindings, *this),
+    maFillTransparenceController(SID_ATTR_FILL_TRANSPARENCE, *pBindings, *this),
+    maFillFloatTransparenceController(SID_ATTR_FILL_FLOATTRANSPARENCE, *pBindings, *this),
     maImgAxial(SVX_RES(IMG_AXIAL)),
     maImgElli(SVX_RES(IMG_ELLI)),
     maImgQuad(SVX_RES(IMG_QUAD)),
@@ -683,8 +682,8 @@ AreaPropertyPanel::AreaPropertyPanel(
     mpTrGrPage(),
     mpFloatWinColor(),
     mpPageColor(),
-    mpGradientItem(),
-    mpTransTypeItem(),
+    mpFloatTransparenceItem(),
+    mpTransparanceItem(),
     mxFrame(rxFrame),
     maContext(),
     mpBindings(pBindings),
@@ -1222,122 +1221,184 @@ void AreaPropertyPanel::HandleContextChange(
 
 //////////////////////////////////////////////////////////////////////////////
 
+void AreaPropertyPanel::ImpUpdateTransparencies()
+{
+    if(mpTransparanceItem.get() || mpFloatTransparenceItem.get())
+    {
+        bool bZeroValue(false);
+
+        if(mpTransparanceItem.get())
+        {
+            const sal_uInt16 nValue(mpTransparanceItem->GetValue());
+
+            if(!nValue)
+            {
+                bZeroValue = true;
+            }
+            else if(nValue <= 100)
+            {
+                mpLBTransType->Enable();
+                mpLBTransType->SelectEntryPos(1);
+                mpBTNGradient->Hide();
+                mpMTRTransparent->Show();
+                mpMTRTransparent->Enable();
+                mpMTRTransparent->SetValue(nValue);
+            }
+
+            if(mpTrGrFloatWin)
+            {
+                mpTrGrFloatWin->EndPopupMode();
+            }
+        }
+
+        if(bZeroValue && mpFloatTransparenceItem.get())
+        {
+            if(mpFloatTransparenceItem->IsEnabled())
+            {
+                const XGradient& rGradient = mpFloatTransparenceItem->GetGradientValue();
+                const bool bHighContrast(GetSettings().GetStyleSettings().GetHighContrastMode());
+                sal_uInt16 nEntryPos(0);
+                Image* pImage = 0;
+
+                mpLBTransType->Enable();
+                mpMTRTransparent->Hide();
+                mpBTNGradient->Enable();
+                mpBTNGradient->Show();
+
+                switch(rGradient.GetGradientStyle())
+                {
+                    case XGRAD_LINEAR:
+                    {
+                        nEntryPos = 2;
+                        pImage = bHighContrast ? &maImgLinearH : &maImgLinear;
+                        break;
+                    }
+                    case XGRAD_AXIAL:
+                    {
+                        nEntryPos = 3;
+                        pImage = bHighContrast ? &maImgAxialH : &maImgAxial;
+                        break;
+                    }
+                    case XGRAD_RADIAL:
+                    {
+                        nEntryPos = 4;
+                        pImage = bHighContrast ? &maImgRadialH : &maImgRadial;
+                        break;
+                    }
+                    case XGRAD_ELLIPTICAL:
+                    {
+                        nEntryPos = 5;
+                        pImage = bHighContrast ? &maImgElliH : &maImgElli;
+                        break;
+                    }
+                    case XGRAD_SQUARE:
+                    {
+                        nEntryPos = 6;
+                        pImage = bHighContrast ? &maImgQuadH : &maImgQuad;
+                        break;
+                    }
+                    case XGRAD_RECT:
+                    {
+                        nEntryPos = 7;
+                        pImage = bHighContrast ? &maImgSquareH : &maImgSquare;
+                        break;
+                    }
+                }
+
+                mpLBTransType->SelectEntryPos(nEntryPos);
+                mpBTNGradient->SetItemImage(TBI_BTX_GRADIENT, *pImage);
+                bZeroValue = false;
+            }
+            else
+            {
+                bZeroValue = true;
+            }
+        }
+
+        if(bZeroValue)
+        {
+            mpLBTransType->Enable();
+            mpLBTransType->SelectEntryPos(0);
+            mpBTNGradient->Hide();
+            mpMTRTransparent->Enable();
+            mpMTRTransparent->Show();
+            mpMTRTransparent->SetValue(0);
+        }
+    }
+    else
+    {
+        // no transparency at all
+        mpLBTransType->SetNoSelection();
+        mpMTRTransparent->Disable();
+        mpMTRTransparent->Show();
+        mpBTNGradient->Disable();
+        mpBTNGradient->Hide();
+    }
+
+
+}
+
 void AreaPropertyPanel::NotifyItemUpdate( 
     sal_uInt16 nSID, 
     SfxItemState eState, 
     const SfxPoolItem* pState)
 {	
 	XFillStyle eXFS;
-	SfxObjectShell* pSh = SfxObjectShell::Current(); 
-	//add ,,, 20090915
-	if (nSID == SID_SVX_AREA_TRANS_TYPE)
-	{
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpTransTypeItem.reset(pState ? (SfxUInt16Item*)pState->Clone() : 0);
-			sal_uInt16 m_nValue =  mpTransTypeItem->GetValue();
-			if(m_nValue>0 && m_nValue <= 100)
-			{
-				mpLBTransType->Enable();
-				mpLBTransType->SelectEntryPos(1);
-				mpBTNGradient->Hide();
-				mpMTRTransparent->Show();
-				mpMTRTransparent->Enable();
-				mpMTRTransparent->SetValue(m_nValue);
-				//Add 
-				if(mpTrGrFloatWin)
-					mpTrGrFloatWin->EndPopupMode();
-			}
-			else
-			{
-				switch ( m_nValue )
-				{
-				case 0:
-					mpLBTransType->Enable();
-					mpLBTransType->SelectEntryPos(0);
-					mpBTNGradient->Hide();
-					mpMTRTransparent->Enable();
-					mpMTRTransparent->Show();
-					mpMTRTransparent->SetValue(0);
-					//Add 
-					if(mpTrGrFloatWin)
-						mpTrGrFloatWin->EndPopupMode();
-					break;
-				case 102:
-				case 103:
-				case 104:
-				case 105:
-				case 106:
-				case 107:
-					mpLBTransType->Enable();
-					mpLBTransType->SelectEntryPos( m_nValue - 100 );
-					mpMTRTransparent->Hide();
-					mpBTNGradient->Enable();
-					mpBTNGradient->Show();
-					//for beta1
-					switch ( m_nValue )
-					{
-					case 102:
-						mpBTNGradient->SetItemImage(TBI_BTX_GRADIENT, GetSettings().GetStyleSettings().GetHighContrastMode()? maImgLinearH : maImgLinear);	// high contrast
-						break;
-					case 103:
-						mpBTNGradient->SetItemImage(TBI_BTX_GRADIENT,GetSettings().GetStyleSettings().GetHighContrastMode()? maImgAxialH : maImgAxial);
-						break;
-					case 104:
-						mpBTNGradient->SetItemImage(TBI_BTX_GRADIENT,GetSettings().GetStyleSettings().GetHighContrastMode()? maImgRadialH : maImgRadial);
-						break;
-					case 105:
-						mpBTNGradient->SetItemImage(TBI_BTX_GRADIENT,GetSettings().GetStyleSettings().GetHighContrastMode()? maImgElliH : maImgElli);
-						break;
-					case 106:
-						mpBTNGradient->SetItemImage(TBI_BTX_GRADIENT,GetSettings().GetStyleSettings().GetHighContrastMode()? maImgQuadH : maImgQuad);
-						break;
-					case 107:
-						mpBTNGradient->SetItemImage(TBI_BTX_GRADIENT,GetSettings().GetStyleSettings().GetHighContrastMode()? maImgSquareH : maImgSquare);
-						break;
-					}
-					//end of new code
-					break;
-				}
-			}
-		}
-		else
-		{
-			mpLBTransType->SetNoSelection();
-			mpMTRTransparent->Disable();	
-			mpMTRTransparent->Show();	
-			mpBTNGradient->Disable();
-			mpBTNGradient->Hide();
-		}
-	}
-	//End of new code
-	else if (nSID == SID_SVX_AREA_TRANSPARENCY)
-	{		
-		if( eState == SFX_ITEM_AVAILABLE )
-		{
-			mpMTRTransparent->Enable();
+	SfxObjectShell* pSh = SfxObjectShell::Current();
+    bool bFillTransparenceChanged(false);
 
-		}
-		else if(eState == SFX_ITEM_DISABLED)
-			mpLBTransType->Disable();   // 20090923
-	}
-	else if (nSID == SID_SVX_AREA_TRANSP_GRADIENT)
-	{
-		if( eState == SFX_ITEM_AVAILABLE )
-		{
-			mpBTNGradient->Enable();	
+    if(SID_ATTR_FILL_TRANSPARENCE == nSID)
+    {
+        bFillTransparenceChanged = true;
 
-			const XFillFloatTransparenceItem* pGradientItem = PTR_CAST(XFillFloatTransparenceItem, pState);
-			if (pGradientItem)
+        if(eState >= SFX_ITEM_AVAILABLE)
+        {
+            const SfxUInt16Item* pItem = dynamic_cast< const SfxUInt16Item* >(pState);
+
+            if(pItem && (!mpTransparanceItem || *pItem != *mpTransparanceItem))
             {
-				mpGradientItem.reset((XFillFloatTransparenceItem*)pGradientItem->Clone());
-			}
-		}
-		else if(eState == SFX_ITEM_DISABLED)
-			mpLBTransType->Disable();   // 20090923
+                mpTransparanceItem.reset((SfxUInt16Item*)pItem->Clone());
+            }
+            else
+            {
+                mpTransparanceItem.reset();
+            }
+        }
+        else
+        {
+            mpTransparanceItem.reset();
+        }
+    }
+    else if(SID_ATTR_FILL_FLOATTRANSPARENCE == nSID)
+    {
+        bFillTransparenceChanged = true;
 
-	}
-	else if	(nSID == SID_ATTR_FILL_STYLE )
+        if(eState >= SFX_ITEM_AVAILABLE)
+        {
+            const XFillFloatTransparenceItem* pItem = dynamic_cast< const XFillFloatTransparenceItem* >(pState);
+
+            if(pItem && (!mpFloatTransparenceItem || *pItem != *mpFloatTransparenceItem))
+            {
+                mpFloatTransparenceItem.reset((XFillFloatTransparenceItem*)pItem->Clone());
+            }
+            else
+            {
+                mpFloatTransparenceItem.reset();
+            }
+        }
+        else
+        {
+            mpFloatTransparenceItem.reset();
+        }
+    }
+
+    if(bFillTransparenceChanged)
+    {
+        // update transparency settings dependent of mpTransparanceItem and mpFloatTransparenceItem
+        ImpUpdateTransparencies();
+    }
+
+	if	(nSID == SID_ATTR_FILL_STYLE )
 	{
 		if( eState == SFX_ITEM_DISABLED )
 		{
@@ -1753,10 +1814,10 @@ IMPL_LINK( AreaPropertyPanel, ClickTrGrHdl_Impl, ToolBox*, pToolBox )
     if(nId == BTN_GRADIENT)
     {
 	    SvxAreaTrGrPage* pTrGrPage = GetTrGrPage();
-	    pTrGrPage->Rearrange(mpGradientItem.get());
+	    pTrGrPage->Rearrange(mpFloatTransparenceItem.get());
 	    pToolBox->SetItemDown( TBI_BTX_GRADIENT, true );
 
-	    const XGradient& rGradient = mpGradientItem->GetGradientValue();	
+	    const XGradient& rGradient = mpFloatTransparenceItem->GetGradientValue();	
 	    XGradientStyle eXGS(rGradient.GetGradientStyle());
 
 	    Size aFloatSz = pTrGrPage->GetOutputSizePixel();
@@ -1836,7 +1897,7 @@ IMPL_LINK(AreaPropertyPanel, ChangeTrgrTypeHdl_Impl, void *, EMPTYARG)
 	}
 
 	XFillTransparenceItem aLinearItem(nTrans);
-	GetBindings()->GetDispatcher()->Execute( SID_SVX_AREA_TRANSPARENCY, SFX_CALLMODE_RECORD, &aLinearItem, 0L );
+	GetBindings()->GetDispatcher()->Execute( SID_ATTR_FILL_TRANSPARENCE, SFX_CALLMODE_RECORD, &aLinearItem, 0L );
 
 	if (nSelectType > 1) nSelectType = nSelectType-2;
 
@@ -1868,7 +1929,7 @@ IMPL_LINK(AreaPropertyPanel, ChangeTrgrTypeHdl_Impl, void *, EMPTYARG)
 	if (bGradient) bEnable = true;		
 	XFillFloatTransparenceItem aGradientItem(pPool,aTmpGradient, bEnable );
 
-	GetBindings()->GetDispatcher()->Execute( SID_SVX_AREA_TRANSP_GRADIENT, SFX_CALLMODE_RECORD, &aGradientItem, 0L );
+	GetBindings()->GetDispatcher()->Execute( SID_ATTR_FILL_FLOATTRANSPARENCE, SFX_CALLMODE_RECORD, &aGradientItem, 0L );
 
 	return( 0L );
 }
@@ -1883,7 +1944,7 @@ IMPL_LINK(AreaPropertyPanel, ModifyTransparentHdl_Impl, void*, EMPTYARG)
 	if (nTrans != 0 && nSelectType == 0)
 		mpLBTransType->SelectEntryPos(1);
 	XFillTransparenceItem aLinearItem(nTrans);
-	GetBindings()->GetDispatcher()->Execute( SID_SVX_AREA_TRANSPARENCY, SFX_CALLMODE_RECORD, &aLinearItem, 0L );
+	GetBindings()->GetDispatcher()->Execute( SID_ATTR_FILL_TRANSPARENCE, SFX_CALLMODE_RECORD, &aLinearItem, 0L );
 
 	return 0L;
 }
