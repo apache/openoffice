@@ -187,12 +187,12 @@ struct AffineMatrix2D
 //	com::sun::star::geometry::AffineMatrix2D
 // found no way to define doubles in *.sdi, so commenting out for now
 
-    float m00 MID_AFFINEMATRIX2D_M00;
-    float m01 MID_AFFINEMATRIX2D_M01;
-    float m02 MID_AFFINEMATRIX2D_M02;
-    float m10 MID_AFFINEMATRIX2D_M10;
-    float m11 MID_AFFINEMATRIX2D_M11;
-    float m12 MID_AFFINEMATRIX2D_M12;
+//    double m00 MID_AFFINEMATRIX2D_M00;
+//    double m01 MID_AFFINEMATRIX2D_M01;
+//    double m02 MID_AFFINEMATRIX2D_M02;
+//    double m10 MID_AFFINEMATRIX2D_M10;
+//    double m11 MID_AFFINEMATRIX2D_M11;
+//    double m12 MID_AFFINEMATRIX2D_M12;
 };
 item AffineMatrix2D AffineMatrixItem;
 
