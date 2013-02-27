@@ -19,24 +19,43 @@
  * 
  *************************************************************/
 
+#ifndef SVX_SIDEBAR_COLOR_PANEL_HXX
+#define SVX_SIDEBAR_COLOR_PANEL_HXX
 
-#include <sfx2/sfx.hrc>
+#include <svtools/valueset.hxx>
+#include <vcl/window.hxx>
 
-#define RID_SIDEBAR_RESOURCE  (RID_SFX_SIDEBAR_START +  0)
 
-#define IMAGE_SIDEBAR_PLUS                        1
-#define IMAGE_SIDEBAR_PLUS_HC                     2
-#define IMAGE_SIDEBAR_MINUS                       3
-#define IMAGE_SIDEBAR_MINUS_HC                    4
-#define IMAGE_SIDEBAR_GRIP                        5
-#define IMAGE_SIDEBAR_GRIP_HC                     6
-#define IMAGE_SIDEBAR_MENU                        7
-#define IMAGE_SIDEBAR_MENU_HC                     8
-#define IMAGE_SIDEBAR_TOOLBOX_SEPARATOR           9
-#define IMAGE_SIDEBAR_TABBAR_PROPERTIES          10
-#define IMAGE_SIDEBAR_TABBAR_MASTERS_SD          11
-#define IMAGE_SIDEBAR_TABBAR_CUSTOM_ANIMATION_SD 12
-#define IMAGE_SIDEBAR_TABBAR_SLIDE_TRANSITION_SD 13
-#define IMAGE_SIDEBAR_TABBAR_GALLERY_SD          14
-#define STRING_CUSTOMIZATION                     15
-#define STRING_RESTORE                           16
+namespace svx { namespace sidebar {
+
+
+/** This demo panel shows the colors that are available from the
+    StyleSettings.
+*/
+class ColorPanel
+    : public ValueSet
+{
+public:
+    ColorPanel (::Window* pParent);
+    virtual ~ColorPanel (void);
+
+    // From ::Window
+    virtual void Resize (void);
+    virtual void DataChanged (const DataChangedEvent& rEvent);
+
+private:
+    int mnPreferredColumnCount;
+
+    /** Depending on the given number of columns and the item size
+        calculate the number of rows that are necessary to display all
+        items.
+    */
+    int CalculateRowCount (const Size& rItemSize, int nColumnCount);
+    void Fill (void);
+
+    sal_Int32 GetPreferredHeight (sal_Int32 nWidth);
+};
+
+} } // end of namespace ::svx::sidebar
+
+#endif

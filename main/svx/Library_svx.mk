@@ -171,6 +171,7 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/mnuctrls/SmartTagCtl \
     svx/source/sidebar/ContextChangeEventMultiplexer \
     svx/source/sidebar/PanelFactory \
+    svx/source/sidebar/ColorPanel \
     svx/source/sidebar/text/SvxSBFontNameBox \
     svx/source/sidebar/text/TextPropertyPanel \
     svx/source/sidebar/geometry/AreaPropertyPanel \

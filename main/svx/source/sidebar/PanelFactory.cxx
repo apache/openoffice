@@ -27,6 +27,7 @@
 #include "geometry/LinePropertyPanel.hxx"
 #include "geometry/TransformationPropertyPanel.hxx"
 #include "gallery/GalleryControl.hxx"
+#include "ColorPanel.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
@@ -187,6 +188,17 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pGalleryControl,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(300,-1,400));
+    }
+    else if (DoesResourceEndWith("/Debug_ColorPanel"))
+    {
+        ColorPanel* pColorPanel = new ColorPanel(
+            pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pColorPanel,
             ::boost::function<void(void)>(),
             ui::LayoutSize(300,-1,400));
     }

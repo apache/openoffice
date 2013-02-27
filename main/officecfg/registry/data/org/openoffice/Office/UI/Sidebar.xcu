@@ -63,7 +63,7 @@
           <value>GalleryDeck</value>
         </prop>
         <prop oor:name="IconURL" oor:type="xs:string">
-          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
+          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock04_sd.png</value>
         </prop>
         <node oor:name="ContextMatchers">
           <node oor:name="matcher1"  oor:op="replace">
@@ -199,6 +199,36 @@
         <prop oor:name="HasMenu" oor:type="xs:boolean">
           <value>true</value>
         </prop>
+      </node>
+      <node oor:name="ColorPanel" oor:op="replace">
+	<prop oor:name="Title" oor:type="xs:string">
+	  <value xml:lang="en-US">Colors</value>
+	</prop>
+	<prop oor:name="Id" oor:type="xs:string">
+	  <value>ColorPanel</value>
+	</prop>
+	<prop oor:name="DeckId" oor:type="xs:string">
+	  <value>PropertyDeck</value>
+	</prop>
+	<node oor:name="ContextMatchers">
+	  <node oor:name="matcher1"  oor:op="replace">
+	    <prop oor:name="Application" oor:type="xs:string">
+	      <value>any</value>
+	    </prop>
+	    <prop oor:name="ContextList">
+	      <value>any</value>
+	    </prop>
+	  </node>
+	</node>
+	<prop oor:name="ImplementationURL" oor:type="xs:string">
+	  <value>private:resource/toolpanel/SvxPanelFactory/Debug_ColorPanel</value>
+	</prop>
+	<prop oor:name="OrderIndex" oor:type="xs:int">
+	  <value>110</value>
+	</prop>
+	<prop oor:name="HasMenu" oor:type="xs:boolean">
+	  <value>true</value>
+	</prop>
       </node>
 <!--
       <node oor:name="AreaPropertyPanel" oor:op="replace">
