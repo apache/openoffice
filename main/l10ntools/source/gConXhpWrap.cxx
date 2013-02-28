@@ -114,6 +114,9 @@ void convert_xhp::closeTag(char *yytext)
          msKey.clear();
          meExpectValue = VALUE_NOT_USED;
          break;
+    case VALUE_NOT_USED:
+    case VALUE_IS_VALUE:
+         break;
   }
 }
 
@@ -142,6 +145,10 @@ void convert_xhp::setId(char *yytext)
          msCollector.insert(nX + nE, "\\");
          msCollector.insert(nX + nL, "\\");
          break;
+
+    case VALUE_NOT_USED:
+    case VALUE_IS_VALUE:
+         break;
   }
 }
 
@@ -150,7 +157,7 @@ void convert_xhp::setId(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::setLang(char *yytext)
 {
-  int          nL, nE, nX = msCollector.size();
+  int          nL, nE;
   std::string  sLang;
   std::string& sText = copySourceWithCollector(yytext);
 
@@ -172,6 +179,11 @@ void convert_xhp::setLang(char *yytext)
 
     case VALUE_IS_VALUE_TAG:
          msCollector.erase(msCollector.size() - sText.size() -1);
+         break;
+
+    case VALUE_NOT_USED:
+    case VALUE_IS_TAG_TRANS:
+    case VALUE_IS_VALUE:
          break;
   }
 }
@@ -200,6 +212,10 @@ void convert_xhp::setRef(char *yytext)
     case VALUE_IS_VALUE_TAG:
          msCollector.insert(nX + nE, "\\");
          msCollector.insert(nX + nL, "\\");
+         break;
+
+    case VALUE_NOT_USED:
+         VALUE_IS_VALUE:
          break;
   }
 }

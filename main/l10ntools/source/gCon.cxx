@@ -124,7 +124,7 @@ void convert_gen_impl::prepareFile()
 
   
   if (!inputFile.is_open())
-    throw showError("Cannot open file");
+    throw showError((char *)"Cannot open file");
 
   // get length of file:
   mnSourceReadIndex = 0;
@@ -135,7 +135,7 @@ void convert_gen_impl::prepareFile()
   // get size, prepare std::string and read whole file
   inputFile.read((char *)msSourceBuffer.c_str(), msSourceBuffer.size());
   if ((unsigned int)inputFile.gcount() != msSourceBuffer.size())
-    throw showError("cannot read whole file");
+    throw showError((char *)"cannot read whole file");
   inputFile.close();
 }
 

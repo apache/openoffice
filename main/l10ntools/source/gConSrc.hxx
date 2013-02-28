@@ -64,8 +64,8 @@ class convert_src : public convert_gen_impl
     bool                     mbExpectMacro;
     bool                     mbAutoPush;
     bool                     mbValuePresent;
-    bool                     mbInListItem;
     bool                     mbInList;
+    bool                     mbInListItem;
     int                      miListCount;
     int                      miMacroLevel;
     void execute();

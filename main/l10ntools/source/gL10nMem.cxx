@@ -177,6 +177,8 @@ void l10nMem::setEnUsKey(int iLineNo, const std::string& srKey, const std::strin
   std::string baseLanguage = "en-US";
   std::string myKey = srKey;
 
+  iLineNo;
+
   if (!checkKey(srKey, srObjectType))
   {
     std::stringstream ssBuf;

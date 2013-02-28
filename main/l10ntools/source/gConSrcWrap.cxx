@@ -37,10 +37,10 @@
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_src::convert_src(l10nMem& crMemory)
                         : convert_gen_impl(crMemory),
+                          mbExpectValue(false),
                           mbEnUs(false),
                           mbExpectName(false),
                           mbExpectMacro(false),
-                          mbExpectValue(false),
                           mbAutoPush(false),
                           mbValuePresent(false),
                           mbInList(false),
@@ -76,8 +76,8 @@ void convert_src::setValue(char *syyText, char *sbuildValue)
 
   if (mbInList && !mbInListItem)
   {
-    setListItem("", true);
-    setListItem("", false);
+    setListItem((char *)"", true);
+    setListItem((char *)"", false);
   }
   msValue        = sbuildValue;
   mbValuePresent = true;
@@ -285,8 +285,6 @@ void convert_src::setListItem(char *syyText, bool bIsStart)
       mcStack.pop_back();
       if (mbExpectName)
       {
-        std::stringstream ssBuf;
-
         ssBuf  << miListCount;
         msName  = "item" + ssBuf.str();
       }
