@@ -168,9 +168,10 @@ APP7STDLIBS+= \
 
 # localizer for new l10n framework
 APP8TARGET= genLang 
-APP8OBJS= $(OBJ)$/gLang.obj       $(OBJ)$/gL10nMem.obj \
-          $(OBJ)$/gHandler.obj    $(OBJ)$/gConProp.obj \
-          $(OBJ)$/gConTree.obj    $(OBJ)$/gCon.obj \
+APP8OBJS= $(OBJ)$/gLang.obj       $(OBJ)$/gL10nMem.obj    \
+          $(OBJ)$/gHandler.obj    $(OBJ)$/gConProp.obj    \
+          $(OBJ)$/gConTree.obj    $(OBJ)$/gCon.obj        \
+          $(OBJ)$/gConDB.obj                              \
           $(OBJ)$/gConPoWrap.obj  $(OBJ)$/gConSrcWrap.obj \
           $(OBJ)$/gConXcsWrap.obj $(OBJ)$/gConXcuWrap.obj \
           $(OBJ)$/gConXrmWrap.obj $(OBJ)$/gConXhpWrap.obj \
