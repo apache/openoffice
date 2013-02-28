@@ -20,7 +20,9 @@
  *************************************************************/
 #include "gLang.hxx"
 #include <algorithm>
+#include <iostream>
 #include <fstream>
+#include <sstream>
 
 
 
@@ -58,6 +60,9 @@ l10nMem_entry::~l10nMem_entry()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem::l10nMem()
+                : mbInError(false),
+                  miStartInx(0),
+                  miLastUniqResort(0)
 {
 }
 
@@ -71,10 +76,53 @@ l10nMem::~l10nMem()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+std::string l10nMem::showError(int iLineNo, char *sText, bool bWarning)
+{
+  if (!bWarning)
+    mbInError = true;
+
+  std::cerr << "ERROR in " << msCurrentSourceFileName << ":" << iLineNo << ":  " << sText << std::endl;
+  return "ERROR";
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+bool l10nMem::isError()
+{
+  return mbInError; 
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+bool l10nMem::checkKey(const std::string& sKey, const std::string& sObjectType)
+{
+  int i;
+
+  for (i = miStartInx; i < (int)mcMemory.size(); ++i)
+    if (mcMemory[i].msModuleName == msCurrentModuleName     &&
+        mcMemory[i].msSourceFile == msCurrentSourceFileName &&
+        mcMemory[i].msObjectType == sObjectType             &&
+        mcMemory[i].msKey        == sKey                    )
+      return false;
+  return true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem::save(const std::string& srTargetFile)
 {
-  int           i, nL;
+  int           i;
   std::string   sFile = srTargetFile + ".cnv";
+
+  if (mbInError)
+  {
+    showError(0, (char *)"Cannot save file due to preceding errors");
+    return;
+  }
+ 
   std::ofstream outputFile(sFile.c_str(), std::ios::binary);
 
   if (!outputFile.is_open())
@@ -107,6 +155,7 @@ void l10nMem::clear()
 void l10nMem::setFileName(const std::string& srSourceFile)
 {
   msCurrentSourceFileName = srSourceFile;
+  miStartInx              = mcMemory.size();
 
   // modify to please current sdf format
   std::replace(msCurrentSourceFileName.begin(), msCurrentSourceFileName.end(), '/', '\\' );
@@ -123,11 +172,21 @@ void l10nMem::setModuleName(const std::string& srModuleName)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setEnUsKey(const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex)
+void l10nMem::setEnUsKey(int iLineNo, const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex)
 {
   std::string baseLanguage = "en-US";
+  std::string myKey = srKey;
+
+  if (!checkKey(srKey, srObjectType))
+  {
+    std::stringstream ssBuf;
+
+    ++miLastUniqResort;
+    ssBuf  << miLastUniqResort;
+    myKey +=  ".globUniq" + ssBuf.str();
+  }
   mcMemory.push_back(l10nMem_entry(msCurrentSourceFileName, msCurrentModuleName,
-                                   srKey, srObjectType, baseLanguage, srText, iIndex));
+                                   myKey, srObjectType, baseLanguage, srText, iIndex));
 }
 
 

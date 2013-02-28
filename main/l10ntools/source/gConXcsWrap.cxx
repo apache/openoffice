@@ -152,7 +152,7 @@ void convert_xcs::stopCollectData(char *syyText)
     }
   }
   else
-    mcMemory.setEnUsKey(sKey, std::string("dummy"), sText);
+    mcMemory.setEnUsKey(miLineNo, sKey, std::string("dummy"), sText);
 
   mbCollectingData = false;
 }  

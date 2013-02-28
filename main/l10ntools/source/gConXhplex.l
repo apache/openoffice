@@ -50,6 +50,7 @@
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
 %option 8bit noyywrap never-interactive
+%array
 %p 24000
 %e 1200
 %n 500

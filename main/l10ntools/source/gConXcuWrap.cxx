@@ -136,6 +136,15 @@ void convert_xcu::stopCollectData(char *syyText)
   if (mbNoCollectingData)
     return;
 
+  // remove any newline
+  for (nL = 0;;)
+  {
+    nL = useText.find("\n");
+    if (nL == (int)std::string::npos)
+      break;
+    useText.erase(nL,1);
+  }
+
   mbNoCollectingData = true;
 
   // locate key and extract it
@@ -158,7 +167,8 @@ void convert_xcu::stopCollectData(char *syyText)
     }
   }
   else
-    mcMemory.setEnUsKey(useKey, "value", useText);
+    if (useText.size())
+      mcMemory.setEnUsKey(miLineNo, useKey, "value", useText);
 }  
 
 
@@ -182,6 +192,21 @@ void convert_xcu::copySpecial(char *syyText)
       msCollector += "<";
     else if (sText == "&quot;")
       msCollector += "\"";
+  }
+}  
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_xcu::copyNL(char *syyText)
+{
+  int         nX    = msCollector.size();
+  std::string sText = copySource(syyText, mbNoCollectingData);
+
+  if (!mbNoCollectingData)
+  {
+    msCollector.erase(nX);
+    msCollector += ' ';
   }
 }  
 

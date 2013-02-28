@@ -50,6 +50,7 @@
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
 %option 8bit noyywrap never-interactive
+%array
 %p 24000
 %e 1200
 %n 500
@@ -70,11 +71,13 @@ KEYID [a-zA-Z0-9_-]+
   int i = 1;
   for (;;)
   {
-    while ((yytext[++i] = yyinput()) != '*') ;
-    if ((yytext[++i] = yyinput()) == '/')
-    break;
+    while (yytext[i] != '*')
+      yytext[++i] = yyinput();
+    yytext[++i] = yyinput();
+    if (yytext[i] == '/')
+      break;
   }
-  yytext[i] = '\0';
+  yytext[i+1] = '\0';
 
   IMPLptr->copySource(yytext);
 }

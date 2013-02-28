@@ -147,7 +147,7 @@ void convert_xrm::stopCollectData(char *yytext)
   if (!mbNoCollectingData)
   {
     msKey = msKey + "." + msKey;
-    mcMemory.setEnUsKey(msKey, std::string("text"), msCollector);
+    mcMemory.setEnUsKey(miLineNo, msKey, std::string("text"), msCollector);
     mbNoCollectingData = true;
     msKey.clear();
   }

@@ -36,7 +36,7 @@
 #define YYLMAX 64000
 
 /* change reader function (input) to our own version */
-#define YY_INPUT(buf,result,max_size) { IMPLptr->lexRead(buf, &result, max_size); }
+#define YY_INPUT(buf,result,max_size) {IMPLptr->lexRead(buf, &result, max_size);}
 %}
 
 
@@ -59,10 +59,10 @@
 /***********************   H E L P E R   M A C R O S   ***********************/
 %x CMD
 PRE   ^[ \t]*
-SUF   [ \t\r\n]
+SUF   [ \t\r\n\\]
 SUFT  [ \t\r\n\[]
 SPACE [ \t]*
-IDENT ([a-zA-Z0-9_][ a-zA-Z0-9_\-\+\*(,&]*[a-zA-Z0-9)]|[a-zA-Z0-9_])
+IDENT ([(a-zA-Z0-9_][ a-zA-Z0-9_\-\+\*(,&]*[a-zA-Z0-9)_]|[a-zA-Z0-9_])
 KEYID [a-zA-Z0-9_-]+
 
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
@@ -74,15 +74,16 @@ KEYID [a-zA-Z0-9_-]+
   int i = 1;
   for (;;)
   {
-    while ((yytext[++i] = yyinput()) != '*') ;
-    if ((yytext[++i] = yyinput()) == '/')
-    break;
+    while (yytext[i] != '*')
+      yytext[++i] = yyinput();
+    yytext[++i] = yyinput();
+    if (yytext[i] == '/')
+      break;
   }
-  yytext[i] = '\0';
+  yytext[i+1] = '\0';
 
   IMPLptr->copySource(yytext);
 }
-
 
 
 "//".* {
@@ -179,6 +180,7 @@ KEYID [a-zA-Z0-9_-]+
 {PRE}[fF][iI][xX][eE][dD][tT][eE][xX][tT]{SUF}                                     |
 {PRE}[fF][iI][xX][eE][dD][lL][iI][nN][eE]{SUF}                                     |
 {PRE}[fF][lL][oO][aA][tT][iI][nN][gG][wW][iI][nN][dD][oO][wW]{SUF}                 |
+{PRE}[gG][rR][oO][uU][pP][bB][oO][xX]{SUF}                                         |
 {PRE}[hH][eE][lL][pP][bB][uU][tT][tT][oO][nN]{SUF}                                 |
 {PRE}[iI][dD][lL][iI][sS][tT]{SUF}                                                 |
 {PRE}[iI][mM][aA][gG][eE]{SUF}                                                     |
@@ -190,9 +192,11 @@ KEYID [a-zA-Z0-9_-]+
 {PRE}[mM][eE][nN][uU]{SUF}                                                         |
 {PRE}[mM][eE][nN][uU][bB][uU][tT][tT][oO][nN]{SUF}                                 |
 {PRE}[mM][eE][nN][uU][iI][tT][eE][mM]{SUF}                                         |
+{PRE}[mM][eE][sS][sS][bB][oO][xX]{SUF}                                             |
 {PRE}[mM][eE][tT][rR][iI][cC][fF][iI][eE][lL][dD]{SUF}                             |
 {PRE}[mM][oO][dD][aA][lL][dD][iI][aA][lL][oO][gG]{SUF}                             |
 {PRE}[mM][oO][dD][eE][lL][eE][sS][sS][dD][iI][aA][lL][oO][gG]{SUF}                 |
+{PRE}[mM][oO][rR][eE][bB][uU][tT][tT][oO][nN]{SUF}                                 |
 {PRE}[mM][uU][lL][tT][iI][lL][iI][nN][eE][eE][dD][iI][tT]{SUF}                     |
 {PRE}[nN][uU][mM][eE][rR][iI][cC][fF][iI][eE][lL][dD]{SUF}                         |
 {PRE}[oO][kK][bB][uU][tT][tT][oO][nN]{SUF}                                         |
@@ -210,6 +214,7 @@ KEYID [a-zA-Z0-9_-]+
 {PRE}[tT][aA][bB][cC][oO][nN][tT][rR][oO][lL]{SUF}                                 |
 {PRE}[tT][aA][bB][dD][iI][aA][lL][oO][gG]{SUF}                                     |
 {PRE}[tT][aA][bB][pP][aA][gG][eE]{SUF}                                             |
+{PRE}[tT][iI][mM][eE][fF][iI][eE][lL][dD]{SUF}                                     |
 {PRE}[tT][oO][oO][lL][bB][oO][xX]{SUF}                                             |
 {PRE}[tT][oO][oO][lL][bB][oO][xX][iI][tT][eE][mM]{SUF}                             |
 {PRE}[tT][rR][iI][sS][tT][aA][tT][eE][bB][oO][xX]{SUF}                             |
@@ -230,18 +235,9 @@ KEYID [a-zA-Z0-9_-]+
   IMPLptr->copySource(yytext);
 }
 
-<CMD>"{" {
-  LOCptr->startBlock(yytext);
+<CMD>.|\n|\r {
+  yyless(0);
   BEGIN(INITIAL);
-}
-
-<CMD>[\\\r\n/] {
-  yyless(1);
-  BEGIN(INITIAL);
-}
-
-<CMD>. {
-  IMPLptr->showError("gCon encountered a translation problem in .src module");
 }
 
 
@@ -253,7 +249,8 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
-{PRE}[iI][dD][eE][nN][tT][iI][fF][iI][eE][rR]{SUF} {
+{PRE}[sS][tT][yY][lL][eE][fF][aA][mM][iI][lL][yY]{SUF}  |
+{PRE}[iI][dD][eE][nN][tT][iI][fF][iI][eE][rR]{SUF}      {
   yyless(strlen(yytext)-1);
   LOCptr->setId(yytext, true);
 }
@@ -261,6 +258,7 @@ KEYID [a-zA-Z0-9_-]+
 
 
 {PRE}[cC][uU][sS][tT][oO][mM][uU][nN][iI][tT][tT][eE][xX][tT]{SUFT} |
+{PRE}[hH][eE][lL][pP][tT][eE][xX][tT]{SUFT}                         |
 {PRE}[mM][eE][sS][sS][aA][gG][eE]{SUFT}                             |
 {PRE}[qQ][uU][iI][cC][kK][hH][eE][lL][pP][tT][eE][xX][tT]{SUFT}     |
 {PRE}[tT][eE][xX][tT]{SUFT}                                         |
@@ -271,6 +269,7 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
+{PRE}[fF][iI][lL][tT][eE][rR][lL][iI][sS][tT]{SUFT}                     |
 {PRE}[iI][tT][eE][mM][lL][iI][sS][tT]{SUFT}                             |
 {PRE}[sS][tT][yY][lL][eE][fF][aA][mM][iI][lL][yY][lL][iI][sS][tT]{SUF}  {
   yyless(strlen(yytext)-1);
@@ -279,9 +278,10 @@ KEYID [a-zA-Z0-9_-]+
 
 
 
+{PRE}[pP][aA][iI][rR][eE][dD][lL][iI][sS][tT]{SUFT}  |
 {PRE}[sS][tT][rR][iI][nN][gG][lL][iI][sS][tT]{SUFT}  {
   yyless(strlen(yytext)-1);
-  LOCptr->setStringList(yytext);
+  LOCptr->setList(yytext);
 }
 
 

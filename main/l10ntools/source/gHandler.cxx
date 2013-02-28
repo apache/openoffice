@@ -211,8 +211,6 @@ void handler::run()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runExtractMerge(bool bMerge)
 {
-  bool bDoNotSave = false;
-
   // prepare translation memory to module type
   mcMemory.setModuleName(msModuleName);
 
@@ -229,13 +227,10 @@ void handler::runExtractMerge(bool bMerge)
     // get converter and extract files
     convert_gen convertObj(msSourceDir + *siSource, mcMemory, bMerge);
     convertObj.execute();
-    if (!bDoNotSave)
-      bDoNotSave = convertObj.isError();
   }
 
   // and generate language file
-  if (!bDoNotSave)
-    mcMemory.save(msTargetDir + msModuleName);
+  mcMemory.save(msTargetDir + msModuleName);
 }
 
 

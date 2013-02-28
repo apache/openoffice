@@ -222,7 +222,7 @@ void convert_xhp::closeTransTag(char *yytext)
   if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
   {
     if (msCollector.size() && msCollector != "-")
-      mcMemory.setEnUsKey(msKey, std::string("text"), msCollector);
+      mcMemory.setEnUsKey(miLineNo, msKey, std::string("text"), msCollector);
     msKey.clear();
   }
   copySource(yytext);

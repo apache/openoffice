@@ -66,7 +66,6 @@ class convert_gen_impl
 
   private:
     std::string  msSourceBuffer, msCopyText;
-    bool         mbInError;
     int          mnSourceReadIndex;
 
     void prepareFile();

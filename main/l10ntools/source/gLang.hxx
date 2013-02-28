@@ -68,11 +68,17 @@ class l10nMem
     l10nMem();
     ~l10nMem();
 
-    void save         (const std::string& srTargetFile);
-    void clear();
-    void setFileName  (const std::string& srSourceFile);
-    void setModuleName(const std::string& srModuleName);
-    void setEnUsKey   (const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex = 0);
+    std::string                   showError         (int iLineNo, char *sText, bool bWarning = false);
+    bool                          isError           ();
+    bool                          checkKey          (const std::string& sKey,
+                                                     const std::string& sObjectType);
+    void                          save              (const std::string& srTargetFile);
+    void                          clear();
+    void                          setFileName       (const std::string& srSourceFile);
+    void                          setModuleName     (const std::string& srModuleName);
+    void                          setEnUsKey        (int        iLineNo,const std::string& srKey,
+                                                     const std::string& srObjectType,
+                                                     const std::string& srText, int iIndex = 0);
     std::vector<l10nMem_entry *>& getLanguagesForKey(const std::string& srKey);
 
   private:
@@ -80,6 +86,9 @@ class l10nMem
     std::string                  msCurrentSourceFileName;
     std::vector<l10nMem_entry *> mcCurrentSelection;
     std::vector<l10nMem_entry>   mcMemory;
+    bool                         mbInError;
+    int                          miStartInx;
+    int                          miLastUniqResort;
 };
 
 
@@ -93,7 +102,6 @@ class convert_gen
 
     // do extract/merge
     void execute();
-    bool isError();
 };
 
 

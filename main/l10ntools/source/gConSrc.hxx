@@ -49,7 +49,6 @@ class convert_src : public convert_gen_impl
     void setMacro      (char *syyText);
     void setList       (char *syyText);
     void setListItem   (char *syyText, bool bIsStart);
-    void setStringList (char *syyText);
     void setNL         (char *syyText, bool bMacro);
     void startBlock    (char *syyText);
     void stopBlock     (char *syyText);
@@ -59,15 +58,18 @@ class convert_src : public convert_gen_impl
     std::string              msValue;
     std::string              msName;
     std::string              msTextName;
-    std::string              msSaveTextName;
+    std::string              msCmd;
     bool                     mbEnUs;
     bool                     mbExpectName;
     bool                     mbExpectMacro;
-    bool                     mbExpectStringList;
     bool                     mbAutoPush;
     bool                     mbValuePresent;
+    bool                     mbInListItem;
+    bool                     mbInList;
     int                      miListCount;
     int                      miMacroLevel;
     void execute();
+    void trim(std::string& sText);
+    void buildKey(std::string& sKey);
 };
 #endif

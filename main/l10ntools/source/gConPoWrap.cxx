@@ -52,7 +52,7 @@ namespace PoWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_po::execute()
 {
-  PoWrap::genpo_lex();
+  PoWrap::yylex();
 }
 
 
@@ -91,7 +91,7 @@ void convert_po::stopCollectData(char *syyText)
     }
   }
   else
-    mcMemory.setEnUsKey(useKey, std::string("dummy"), sCollectedText);
+    mcMemory.setEnUsKey(miLineNo, useKey, std::string("dummy"), sCollectedText);
 
 //  mbCollectingData = false;
   msCollector.clear();

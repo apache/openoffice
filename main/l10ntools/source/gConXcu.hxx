@@ -48,6 +48,7 @@ class convert_xcu : public convert_gen_impl
     void startCollectData(char *syyText);
     void stopCollectData(char *syyText);
     void copySpecial(char *syyText);
+    void copyNL(char *syyText);
     void addLevel();
 
   private:

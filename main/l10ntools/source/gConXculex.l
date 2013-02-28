@@ -50,6 +50,7 @@
 /* yyclass=           --> subClass yyFlexLexer to allow own functions        */
 /* c++                --> generate C++ classes                               */
 %option 8bit noyywrap never-interactive
+%array
 %p 24000
 %e 1200
 %n 500
@@ -115,9 +116,16 @@ FIN   [^/>]*">"
 
 
 
-.|\n {
+({SPACE}\n{SPACE})+ {
+  LOCptr->copyNL(yytext);
+}
+
+
+
+. {
   IMPLptr->copySource(yytext, LOCptr->mbNoCollectingData);
 }
+
 
 
 

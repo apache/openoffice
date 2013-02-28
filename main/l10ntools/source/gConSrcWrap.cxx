@@ -40,10 +40,11 @@ convert_src::convert_src(l10nMem& crMemory)
                           mbEnUs(false),
                           mbExpectName(false),
                           mbExpectMacro(false),
-                          mbExpectStringList(false),
                           mbExpectValue(false),
                           mbAutoPush(false),
-                          mbValuePresent(false)
+                          mbValuePresent(false),
+                          mbInList(false),
+                          mbInListItem(false)
 {}
 convert_src::~convert_src()
 {}
@@ -71,20 +72,13 @@ void convert_src::execute()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::setValue(char *syyText, char *sbuildValue)
 {
-  if (mbExpectStringList)
-  {
-    std::stringstream ssBuf;
-
-    msTextName   = msSaveTextName;
-    mbEnUs       = 
-    mbExpectName = true;
-    ssBuf        << ++miListCount;
-    msName       = ssBuf.str();
-    mcStack.pop_back();
-    mcStack.push_back(msName);
-  }
-
   copySource(syyText);
+
+  if (mbInList && !mbInListItem)
+  {
+    setListItem("", true);
+    setListItem("", false);
+  }
   msValue        = sbuildValue;
   mbValuePresent = true;
   mbExpectValue  = false;
@@ -120,6 +114,7 @@ void convert_src::setText(char *syyText)
   msTextName    = copySource(syyText);
   mbExpectValue = true;
   mbEnUs        = false;
+  trim(msTextName);
 }
 
 
@@ -129,6 +124,7 @@ void convert_src::setName(char *syyText)
 {
   std::string useText = copySource(syyText);
 
+  trim(useText);
   if (mbExpectName)
   {
     mbExpectName = false;
@@ -149,8 +145,10 @@ void convert_src::setName(char *syyText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::setCmd(char *syyText)
 {
-  copySource(syyText);
+  msCmd        = copySource(syyText);
   mbExpectName = true;
+  mbInList     = false;
+  trim(msCmd);
 }
 
 
@@ -158,12 +156,13 @@ void convert_src::setCmd(char *syyText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::setMacro(char *syyText)
 {
-  copySource(syyText);
+  msCmd         = copySource(syyText);
   mbExpectName  =
   mbExpectMacro =
   mbAutoPush    = true;
   miMacroLevel  = mcStack.size();
   mcStack.push_back("");
+  trim(msCmd);
 }
 
 
@@ -171,19 +170,10 @@ void convert_src::setMacro(char *syyText)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_src::setList(char *syyText)
 {
-  msSaveTextName = msTextName  = copySource(syyText);
-  miListCount    = 0;
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_src::setStringList(char *syyText)
-{
-  msSaveTextName = msTextName  = copySource(syyText);
-  mbExpectStringList = true;
-
-  miListCount        = 0;
+  msCmd       = copySource(syyText);
+  miListCount = 0;
+  mbInList    = true;
+  trim(msCmd);
 }
 
 
@@ -192,18 +182,14 @@ void convert_src::setStringList(char *syyText)
 void convert_src::setNL(char *syyText, bool bMacro)
 {
   int         nL;
-  std::string sKey;
-
+  std::string sKey, sObject;
 
   copySource(syyText);
 
   if (msTextName.size() && mbValuePresent && mbEnUs)
   {
     // locate key and extract it
-    sKey.clear();
-    for (nL = 0; nL < (int)mcStack.size(); ++nL)
-      if (mcStack[nL].size())
-        sKey += (sKey.size() ? "." : "") + mcStack[nL];
+    buildKey(sKey);
 
     for (nL = -1;;)
     {
@@ -220,7 +206,9 @@ void convert_src::setNL(char *syyText, bool bMacro)
       msValue.erase(nL,1);
     }
 
-    mcMemory.setEnUsKey(sKey, msTextName, msValue);
+    sObject = msCmd + "." + msTextName;
+    if (msValue.size() && msValue != "-")
+      mcMemory.setEnUsKey(miLineNo, sKey, sObject, msValue);
   }
 
   if (!bMacro && mbExpectMacro)
@@ -259,8 +247,9 @@ void convert_src::stopBlock(char *syyText)
   // check for correct node/prop relations
   if (mcStack.size())
     mcStack.pop_back();
-  mbExpectStringList = false;
-  mbEnUs             = false;
+
+  mbInList =
+  mbEnUs   = false;
 }
 
 
@@ -269,25 +258,80 @@ void convert_src::stopBlock(char *syyText)
 void convert_src::setListItem(char *syyText, bool bIsStart)
 {
   copySource(syyText);
-  mbExpectStringList = false;
 
   if (bIsStart)
   {
-    msTextName   = msSaveTextName;
+    if (!miListCount)
+    {
+      mcStack.pop_back();
+      msName = "dummy";
+      mcStack.push_back(msName);
+    }
+    msTextName         = "item";
     mbExpectValue = 
-    mbExpectName  = true;
+    mbExpectName  = 
+    mbInListItem  = true;
     msName.clear();
   }
   else
   {
-    std::stringstream ssBuf;
+    if (mbInListItem)
+    {
+      std::stringstream ssBuf;
+      std::string       myKey;
 
-    mbExpectName = false;
-    mcStack.pop_back();
-    ssBuf << ++miListCount;
-//    if (msName.size())
-//      ssBuf << "." << msName;
-    msName = ssBuf.str();
-    mcStack.push_back(msName);
+
+      ++miListCount;
+      mcStack.pop_back();
+      if (mbExpectName)
+      {
+        std::stringstream ssBuf;
+
+        ssBuf  << miListCount;
+        msName  = "item" + ssBuf.str();
+      }
+      mcStack.push_back(msName);
+      mbInListItem =
+      mbExpectName = false;
+
+      // check key or add seq.
+      buildKey(myKey);
+      if (!mcMemory.checkKey(myKey, (msCmd + "." + msTextName)))
+      {
+        ssBuf  << miListCount;
+        msName  += ".uniq" + ssBuf.str();
+        mcStack.pop_back();
+        mcStack.push_back(msName);
+      }
+    }
   }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::trim(std::string& sText)
+{
+  int nL;
+
+
+  while (sText[0] == ' ' || sText[0] == '\t')
+    sText.erase(0,1);
+  for (nL = sText.size(); sText[nL-1] == ' ' || sText[nL-1] == '\t'; --nL);
+  if (nL != (int)sText.size())
+    sText.erase(nL);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::buildKey(std::string& sKey)
+{
+  int nL;
+
+
+  sKey.clear();
+  for (nL = 0; nL < (int)mcStack.size(); ++nL)
+    if (mcStack[nL].size())
+      sKey += (sKey.size() ? "." : "") + mcStack[nL];
 }
