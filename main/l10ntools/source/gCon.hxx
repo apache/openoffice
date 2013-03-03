@@ -59,14 +59,14 @@ class convert_gen_impl
 
 
     // utility functions for converters
-    void lexRead (char *sBuf, int *nResult, int nMax_size);
-    void writeSourceFile(const std::string& line);
-    std::string showError(char *sText);
+    void         lexRead (char *sBuf, int *nResult, int nMax_size);
+    void         writeSourceFile(const std::string& line);
+    std::string  showError(char *sText);
     std::string& copySource(char *yyText, bool bDoClear = true);
 
-  private:
+  protected:
     std::string  msSourceBuffer, msCopyText;
-    int          mnSourceReadIndex;
+    int          miSourceReadIndex;
 
     void prepareFile();
 

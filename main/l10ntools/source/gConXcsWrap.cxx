@@ -136,6 +136,7 @@ void convert_xcs::stopCollectData(char *syyText)
 
   if (mbMergeMode)
   {
+#if 0
     // get all languages (includes en-US)
     std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(sKey);
     std::string                   sNewLine;
@@ -150,6 +151,7 @@ void convert_xcs::stopCollectData(char *syyText)
 
       writeSourceFile(sNewLine);
     }
+#endif
   }
   else
     mcMemory.setEnUsKey(miLineNo, sKey, std::string("dummy"), sText);

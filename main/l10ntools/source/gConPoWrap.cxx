@@ -77,6 +77,7 @@ void convert_po::stopCollectData(char *syyText)
 
   if (mbMergeMode)
   {
+#if 0
     // get all languages (includes en-US)
     std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
     std::string                   sNewLine;
@@ -89,6 +90,7 @@ void convert_po::stopCollectData(char *syyText)
              cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
     }
+#endif
   }
   else
     mcMemory.setEnUsKey(miLineNo, useKey, std::string("dummy"), sCollectedText);

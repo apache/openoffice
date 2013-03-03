@@ -40,6 +40,11 @@ class convert_db : public convert_gen_impl
     ~convert_db();
 
   private:
+    static const int NUMFIELD = 16;
+    std::string      msFields[NUMFIELD];
+    int              miSize;
+
     void execute();
+    bool collectLine();
 };
 #endif

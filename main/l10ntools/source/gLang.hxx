@@ -40,55 +40,32 @@ extern bool gbVerbose;
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class l10nMem_entry
-{
-  public:
-    l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName, const std::string& srKey,
-                  const std::string& srObjectType, const std::string& srLanguage,   const std::string& srText,
-          const int          iIndex);
-    ~l10nMem_entry();
-
-    std::string msSourceFile;
-    std::string msModuleName;
-    std::string msKey;
-    std::string msObjectType;
-    std::string msLanguage;
-    std::string msText;
-    int         miIndex;
-
-  private:
-};
-
-
-
-/********************   C L A S S   D E F I N I T I O N   ********************/
+class l10nMem_impl;
 class l10nMem
 {
   public:
     l10nMem();
     ~l10nMem();
 
-    std::string                   showError         (int iLineNo, char *sText, bool bWarning = false);
-    bool                          isError           ();
-    bool                          checkKey          (const std::string& sKey,
-                                                     const std::string& sObjectType);
-    void                          save              (const std::string& srTargetFile);
-    void                          clear();
-    void                          setFileName       (const std::string& srSourceFile);
-    void                          setModuleName     (const std::string& srModuleName);
-    void                          setEnUsKey        (int        iLineNo,const std::string& srKey,
-                                                     const std::string& srObjectType,
-                                                     const std::string& srText, int iIndex = 0);
-    std::vector<l10nMem_entry *>& getLanguagesForKey(const std::string& srKey);
-
-  private:
-    std::string                  msCurrentModuleName;
-    std::string                  msCurrentSourceFileName;
-    std::vector<l10nMem_entry *> mcCurrentSelection;
-    std::vector<l10nMem_entry>   mcMemory;
-    bool                         mbInError;
-    int                          miStartInx;
-    int                          miLastUniqResort;
+    std::string showError    (int iLineNo, char *sText, bool bWarning = false);
+    bool        isError      ();
+    bool        checkKey     (const std::string& sKey,
+                              const std::string& sObjectType);
+    void        setFileName  (const std::string& srSourceFile);
+    void        setModuleName(const std::string& srModuleName);
+    void        setEnUsKey   (int                iLineNo,
+                              const std::string& srKey,
+                              const std::string& srObjectType,
+                              const std::string& srText,
+                              int                iIndex = 0);
+    void        loadEnUsKey  (const std::string& srKey,
+                              const std::string& srObjectType,
+                              const std::string& srText,
+                              const std::string& oldKey);
+    void        loadLangKey  (const std::string& srLang,
+                              const std::string& srKey,
+                              const std::string& srObjectType,
+                              const std::string& srText);
 };
 
 
@@ -97,11 +74,11 @@ class l10nMem
 class convert_gen
 {
   public:
-    convert_gen(const std::string& srSourceFile, l10nMem& crMemory, const bool bMerge);
+    convert_gen(l10nMem& crMemory, const std::string& srSourceFile);
     ~convert_gen();
 
     // do extract/merge
-    void execute();
+    void execute(const bool bMerge);
 };
 
 
@@ -117,16 +94,22 @@ class handler
     void run();
 
   private:
-    enum {DO_EXTRACT, DO_EXTRACTMERGE, DO_GENERATE, DO_INSERT} meWorkMode;
+    enum {DO_CONVERT, DO_EXTRACT, DO_MERGE} meWorkMode;
     l10nMem                  mcMemory;
     std::string              msModuleName;
+    std::string              msPoOutDir;
+    std::string              msPoDir;
     std::string              msSourceDir;
     std::string              msTargetDir;
-    std::vector<std::string> msSourceFiles;
-  bool                      mbVerbose;
+    std::vector<std::string> mvSourceFiles;
+    std::vector<std::string> mvLanguages;
+    bool                     mbVerbose;
 
+    void runConvert();
     void runExtractMerge(bool bMerge);
-    void runGenerate();
-    void runInsert();
+
+    void showUsage(std::string& sErr);
+    void showManual();
+    void loadL10MEM();
 };
 #endif

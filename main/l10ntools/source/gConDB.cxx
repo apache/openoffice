@@ -39,4 +39,70 @@ convert_db::~convert_db()                                              {}
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_db::execute()
 {
+  std::string oldKey;
+  int         iB, iE;
+
+
+  msSourceBuffer   += '\n';
+  miSize            = msSourceBuffer.size() -1;
+  
+  while (collectLine())
+  {
+    mcMemory.setFileName(msFields[0]);
+    if (mbMergeMode)
+    {
+      iB = msFields[15].find("/");
+      if (iB == (int)std::string::npos)
+        showError("missing / in en_US");
+      iE = msFields[15].find("/", iB+1);
+      if (iE == (int)std::string::npos)
+        showError("missing / in en_US");
+      oldKey = msFields[15].substr(iB+1, iE - iB -1);
+      iB = msFields[15].find("/",iE+1);
+      if (iB == (int)std::string::npos)
+        showError("missing / in en_US");
+      if (iB != iE+1)
+        oldKey += "." + msFields[15].substr(iE+1, iB - iE -1);
+
+      // handle en-US (master)
+      mcMemory.loadEnUsKey(msFields[4], msFields[3], msFields[10], oldKey);
+    }
+    else
+    {
+      std::string newKey = msFields[4];
+      if (msFields[5].size())
+        newKey += "." + msFields[5];
+      mcMemory.loadLangKey(msFields[9], newKey, msFields[3], msFields[10]);
+    }
+ }
+}
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+bool convert_db::collectLine()
+{
+  int  i, iStart;
+  bool bLineEnd;
+
+  for (i = 0; i < NUMFIELD; ++i)
+    msFields[i].clear();
+
+  for (i = 0, bLineEnd = false, iStart = miSourceReadIndex; !bLineEnd; ++miSourceReadIndex)
+  {
+     if (msSourceBuffer[miSourceReadIndex] == '\r' ||    
+         msSourceBuffer[miSourceReadIndex] == '\n' ||    
+         miSourceReadIndex == miSize)    
+       bLineEnd = true; 
+     if (msSourceBuffer[miSourceReadIndex] == '\t' || bLineEnd)    
+     {
+       if (i >= NUMFIELD)
+       {
+         showError("TOO many fields");
+         exit(-1);
+       }
+       msFields[i++] = msSourceBuffer.substr(iStart, miSourceReadIndex - iStart);
+       iStart       = miSourceReadIndex +1;
+     }
+  }
+  return (miSourceReadIndex < miSize);
 }

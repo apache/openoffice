@@ -155,6 +155,7 @@ void convert_xcu::stopCollectData(char *syyText)
   if (mbMergeMode)
   {
     // get all languages (includes en-US)
+#if 0
     std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
     std::string                   sNewLine;
     nL = cExtraLangauges.size();
@@ -165,6 +166,7 @@ void convert_xcu::stopCollectData(char *syyText)
                cExtraLangauges[i]->msText + "</value>";
       writeSourceFile(sNewLine);
     }
+#endif
   }
   else
     if (useText.size())

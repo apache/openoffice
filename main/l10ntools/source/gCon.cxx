@@ -19,6 +19,7 @@
  * 
  *************************************************************/
 #include "gCon.hxx"
+#include "gConDB.hxx"
 #include "gConPo.hxx"
 #include "gConProp.hxx"
 #include "gConSrc.hxx"
@@ -49,7 +50,7 @@ convert_gen_impl * convert_gen_impl::mcImpl = NULL;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, const bool bMerge) 
+convert_gen::convert_gen(l10nMem& crMemory, const std::string& srSourceFile) 
 {
   // did the user give a .xxx with the source file ?
   int nInx = srSourceFile.rfind(".");
@@ -65,6 +66,7 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, con
   if      (sExtension == "hrc")        convert_gen_impl::mcImpl = new convert_src(crMemory);
   else if (sExtension == "src")        convert_gen_impl::mcImpl = new convert_src(crMemory);
   else if (sExtension == "po")         convert_gen_impl::mcImpl = new convert_po(crMemory);
+  else if (sExtension == "pot")        convert_gen_impl::mcImpl = new convert_db(crMemory);
   else if (sExtension == "tree")       convert_gen_impl::mcImpl = new convert_tree(crMemory);
   else if (sExtension == "ulf")        convert_gen_impl::mcImpl = new convert_ulf(crMemory);
   else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcu(crMemory);
@@ -75,7 +77,6 @@ convert_gen::convert_gen(const std::string& srSourceFile, l10nMem& crMemory, con
 
   // and set environment
   convert_gen_impl::mcImpl->msSourceFile = srSourceFile;
-  convert_gen_impl::mcImpl->mbMergeMode  = bMerge;
 }
 
 
@@ -89,8 +90,10 @@ convert_gen::~convert_gen()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::execute()
+void convert_gen::execute(const bool bMerge)
 {
+  convert_gen_impl::mcImpl->mbMergeMode  = bMerge;
+
   // and load file
   convert_gen_impl::mcImpl->prepareFile(); 
 
@@ -102,8 +105,8 @@ void convert_gen::execute()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_gen_impl::convert_gen_impl(l10nMem& crMemory)
-                                : mcMemory(crMemory),
-                                  miLineNo(1)
+                                  : mcMemory(crMemory),
+                                    miLineNo(1)
 {
 }
 
@@ -127,7 +130,7 @@ void convert_gen_impl::prepareFile()
     throw showError((char *)"Cannot open file");
 
   // get length of file:
-  mnSourceReadIndex = 0;
+  miSourceReadIndex = 0;
   inputFile.seekg (0, std::ios::end);
   msSourceBuffer.resize((unsigned int)inputFile.tellg());
   inputFile.seekg (0, std::ios::beg);
@@ -146,26 +149,26 @@ void convert_gen_impl::prepareFile()
 void convert_gen_impl::lexRead(char *sBuf, int *nResult, int nMax_size)
 {
   // did we hit eof
-  if (mnSourceReadIndex == -1)
+  if (miSourceReadIndex == -1)
   {
     *nResult = 0;
     return;
   }
 
   // assume we can copy all that are left.
-  *nResult = msSourceBuffer.size() - mnSourceReadIndex;
+  *nResult = msSourceBuffer.size() - miSourceReadIndex;
 
   // space enough for the whole line ?
   if (*nResult <= nMax_size)
   {
-    msSourceBuffer.copy(sBuf, *nResult, mnSourceReadIndex);
-    mnSourceReadIndex = -1;
+    msSourceBuffer.copy(sBuf, *nResult, miSourceReadIndex);
+    miSourceReadIndex = -1;
   }
   else
   {
-    msSourceBuffer.copy(sBuf, nMax_size, mnSourceReadIndex);
+    msSourceBuffer.copy(sBuf, nMax_size, miSourceReadIndex);
     *nResult           = nMax_size;
-    mnSourceReadIndex += nMax_size;
+    miSourceReadIndex += nMax_size;
   }
 }
 
@@ -193,7 +196,7 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
 
   // write text for merge
   if (mbMergeMode)
-    writeSourceFile(msCollector + msCopyText);
+    writeSourceFile(msCopyText);
 
   if (bDoClear)
     msCollector.clear();
@@ -203,13 +206,13 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
   // remove any CR
   for (nL = 0; nL < (int)msCopyText.size(); ++nL)
   {
-  if (msCopyText[nL] == '\r')
-  {
-    msCopyText.erase(nL, 1);
-    --nL;
-    continue;
-  }
-  if (msCopyText[nL] == '\n')
+    if (msCopyText[nL] == '\r')
+    {
+      msCopyText.erase(nL, 1);
+      --nL;
+      continue;
+    }
+    if (msCopyText[nL] == '\n')
       ++miLineNo;
   }
 

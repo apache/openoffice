@@ -35,148 +35,133 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-handler::handler()  {}
-handler::~handler() {}
+handler::handler()
+                : mbVerbose(false)
+{
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+handler::~handler()
+{
+}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::checkCommandLine(int argc, char *argv[])
 {
+  enum {ARG_NONE, ARG_F, ARG_O, ARG_S, ARG_T} eGotArg = ARG_NONE;
   std::string sWorkText;
+  int         argNow, nLen;
 
 
   // make internal throw test (to avoid if cascades
   try
   {
-    // check for parameter count
-    if (argc <= 1)
-      throw std::string("");
+    // check for fixed parameter: genLang <cmd> <module> <po dir> <languages>
+    if (argc <= 5)
+      throw std::string("Not enough parameters");
 
     // check for working mode
     sWorkText = argv[1];
+    if      (sWorkText == "convert") meWorkMode = DO_CONVERT;
+    else if (sWorkText == "extract") meWorkMode = DO_EXTRACT;
+    else if (sWorkText == "help")    showManual();
+    else if (sWorkText == "merge")   meWorkMode = DO_EXTRACT;
+    else                             throw std::string("<command> is mandatory");
 
-    if      (sWorkText == "extract")  meWorkMode = DO_EXTRACT;
-    else if (sWorkText == "merge")    meWorkMode = DO_EXTRACTMERGE;
-    else if (sWorkText == "generate") meWorkMode = DO_GENERATE;
-    else if (sWorkText == "insert")   meWorkMode = DO_INSERT;
-    else if (sWorkText == "--help")   throw std::string("");
-    else                              throw std::string("unknown mode (1 argument)");
+    // and set fixed parameters
+    msModuleName = argv[2];
+    msPoOutDir   = msPoDir = argv[3];
+    sWorkText    = argv[4];
+    if (sWorkText[0] == '\"')
+      sWorkText.erase(0,1);
+    nLen = sWorkText.size() -1;
+    if (sWorkText[nLen] == '\"')
+      sWorkText.erase(nLen);
+    if (!sWorkText.size())
+      throw std::string("<languages> is mandatory");
 
-    // decode parameters and translate to variables
-    for (int n = 2; n < argc; ++n)
+    // and convert language to a vector
     {
-      std::string sArg(argv[n]);
-
-      // all -x is followed by a directory
-      if (sArg.at(0) == '-')
+      int current;
+      int next = -1;
+      do
       {
-        if (n == argc)
-          throw std::string("missing directory after ")+sArg;
+        current = next + 1;
+        next = sWorkText.find_first_of( ",", current );
+        mvLanguages.push_back(sWorkText.substr(current,next-current));
+      }
+      while (next != (int)std::string::npos);
+    }
+    
+    // decode parameters and translate to variables
+    for (argNow = 5; argNow < argc;)
+    {
+      std::string sArg(argv[argNow++]);
 
-        // find directory type, and set it
-        if      (sArg == "-m") msModuleName = argv[++n];      
-        else if (sArg == "-t") msTargetDir  = argv[++n];      
-        else if (sArg == "-s") msSourceDir  = argv[++n];  
-        else if (sArg == "-v") mbVerbose    = true;  
-        else                  throw std::string("unknown parameter: ")+sArg;
+      // all -x is followed by a directory/file name
+      if (sArg[0] == '-')
+      {
+        // Terminate collection ?
+        if (eGotArg == ARG_F)
+          eGotArg = ARG_NONE;
+
+        // Are we waiting for a directory
+        if (eGotArg != ARG_NONE)
+          throw (std::string("missing argument to ") + argv[argNow-1]);
+
+        // is it a known parameter
+        if      (sArg == "-f") eGotArg   = ARG_F;      
+        else if (sArg == "-o") eGotArg   = ARG_O;      
+        else if (sArg == "-s") eGotArg   = ARG_S;      
+        else if (sArg == "-t") eGotArg   = ARG_T;      
+        else if (sArg == "-v") mbVerbose = true;  
+        else throw std::string("unknown parameter: ")+sArg;
       }
       else
-        msSourceFiles.push_back(sArg);
+      {
+        switch (eGotArg)
+        {
+          case ARG_F: mvSourceFiles.push_back(sArg);           break;
+          case ARG_O: msPoOutDir   = sArg; eGotArg = ARG_NONE; break;
+          case ARG_S: msSourceDir  = sArg; eGotArg = ARG_NONE; break;
+          case ARG_T: msTargetDir  = sArg; eGotArg = ARG_NONE; break;
+       }
+      }
     }
 
     // check parameters according to function
-    switch (meWorkMode)
-    {
-      case DO_EXTRACT:
-           // required parameters
-           if (!msModuleName.size())  throw std::string("missing -m <module name>");
-           if (!msTargetDir.size())   throw std::string("missing -t <target dir>");
-           if (!msSourceFiles.size()) throw std::string("missing source files");
-           break;
+    if (!mvSourceFiles.size())
+      throw std::string("-f <files> is mandatory");
 
-      case DO_EXTRACTMERGE:
-           // required parameters
-           if (!msSourceDir.size())   throw std::string("missing -s <source dir>");
-           if (!msTargetDir.size())   throw std::string("missing -t <target dir>");
-
-           // not allowed parameters
-           if (msModuleName.size())   throw std::string("-m is invalid with merge");
-           if (msSourceFiles.size())  throw std::string("<source> is invalid with merge");
-           break;
-
-      case DO_GENERATE:
-           // required parameters
-           if (!msSourceDir.size())   throw std::string("missing -s <source dir>");
-           if (!msTargetDir.size())   throw std::string("missing -t <target dir>");
-
-           // not allowed parameters
-           if (msModuleName.size())   throw std::string("-m is invalid with generate");
-           if (!msSourceFiles.size()) throw std::string("<source> is invalid with generate");
-           break;
-
-      case DO_INSERT:
-           // required parameters
-           if (!msModuleName.size())  throw std::string("missing -m <module name>");
-           if (!msSourceDir.size())   throw std::string("missing -s <source dir>");
-
-           // not allowed parameters
-           if (!msSourceFiles.size()) throw std::string("<source> is invalid with generate");
-           break;
-    }
+    // partly valid
+    if (meWorkMode != DO_MERGE && msTargetDir.size())
+      throw std::string("-t is mandatory using \"extract\"");
+    if (meWorkMode == DO_MERGE && !msTargetDir.size())
+      throw std::string("-t is only valid using \"extract\"");
   }
   catch(std::string sErr)
   {
-    // do we have an error text ?
-    if (sErr.size())
-      std::cerr << "commandline error:" << sErr << std::endl;
-
-    // give the correct usage
-    std::cout << "genLang (c)2013 by Apache Software Foundation\n"
-            "====================================\n"
-            "As part of the L10N framework, genLang extracts and merges translations\n"
-            "out of and into the whole source tree.\n\n"
-            "Syntax:\n"
-            "  genLang extract -m <name> [-s <source dir>] -t <target dir> <sources>\n"
-            "  genLang merge   -s <source dir> -t <target dir>\n"
-            "  genLang generate -s <source dir> -t <target dir>\n"
-            "  genLang insert  -s <source dir> -m <name> [-t <target dir>]\n"
-            "  genLang --help\n"
-            "Parameters:\n"
-            "  extract,  causes a scan of the <sources> for en-US text, and creates\n"
-            "            a module file:  <target dir>/<module name>\n"
-            "            -s can optionally be used to specify the root of <source>\n"
-            "  merge,    causes a merge of the en-US files in <source dir> with the\n"
-            "            native language files in <target dir>/*\n"
-            "  generate, uses the native language files in <source dir> to build\n"
-            "            module files in <target dir> with all language\n"
-            "  insert,   uses the module file <source dir>/<module name> to\n"
-            "            update the source files in the module"
-            "\n"
-      "  -v                verbose mode, tells what gLang is doing\n"
-            "  -m <modulename>   name of the module, used in file naming\n"
-            "  -s <source dir>   extract:  source file directory\n"
-            "                    merge:    language staging input directory\n"
-            "                    generate: native language directory\n"
-            "                    insert:   language staging output directory\n"
-            "  -t <target dir>   extract:  language staging input directory\n"
-            "                    merge:    native language directory\n"
-            "                    generate: language output staging directory\n"
-            "  <sources>         list of files containing messages to be extracted\n";
+    showUsage(sErr);
     exit(-1);
   }
 
   // update directories to include final /
-  {
-    int nLen;
-
-    nLen = msSourceDir.size();
-    if (nLen && msSourceDir.at(nLen-1) != '/')
-      msSourceDir.append("/");
-    nLen = msTargetDir.size();
-    if (msTargetDir.at(nLen-1) != '/')
-      msTargetDir.append("/");
-  }
+  nLen = msSourceDir.size();
+  if (nLen && msSourceDir.at(nLen-1) != '/')
+    msSourceDir.append("/");
+  nLen = msTargetDir.size();
+  if (nLen && msTargetDir.at(nLen-1) != '/')
+    msTargetDir.append("/");
+  nLen = msPoDir.size();
+  if (nLen && msPoDir.at(nLen-1) != '/')
+    msPoDir.append("/");
+  nLen = msPoOutDir.size();
+  if (nLen && msPoOutDir.at(nLen-1) != '/')
+    msPoOutDir.append("/");
 
   // tell system
   if (mbVerbose)
@@ -190,13 +175,18 @@ void handler::run()
 {
   try
   {
+    // prepare translation memory to module type
+    mcMemory.setModuleName(msModuleName);
+
+    // build list of languages (to be loaded and later written
+    loadL10MEM();
+
     // use workMode to start correct control part
     switch (meWorkMode)
     {
-      case DO_EXTRACT:      runExtractMerge(false); break;
-      case DO_EXTRACTMERGE: runExtractMerge(true);  break;
-      case DO_GENERATE:     runGenerate();          break;
-      case DO_INSERT:       runInsert();            break;
+      case DO_EXTRACT: runExtractMerge(false); break;
+      case DO_MERGE:   runExtractMerge(true);  break;
+      case DO_CONVERT: runConvert();           break;
     }
   }
   catch(std::string sErr)
@@ -211,11 +201,9 @@ void handler::run()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runExtractMerge(bool bMerge)
 {
-  // prepare translation memory to module type
-  mcMemory.setModuleName(msModuleName);
 
   // loop through all source files, and extract messages from each file
-  for (std::vector<std::string>::iterator siSource = msSourceFiles.begin(); siSource != msSourceFiles.end(); ++siSource)
+  for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
     // tell system
     if (mbVerbose)
@@ -225,26 +213,155 @@ void handler::runExtractMerge(bool bMerge)
     mcMemory.setFileName(*siSource);
 
     // get converter and extract files
-    convert_gen convertObj(msSourceDir + *siSource, mcMemory, bMerge);
-    convertObj.execute();
+    convert_gen convertObj(mcMemory, msSourceDir + *siSource);
+    convertObj.execute(bMerge);
   }
 
   // and generate language file
-  mcMemory.save(msTargetDir + msModuleName);
+//  mcMemory.save(msTargetDir + msModuleName);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void handler::runGenerate()
+void handler::runConvert()
 {
-  throw std::string("handler::runGenerate not implemented");
+  throw std::string("handler::runConvert not implemented");
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void handler::runInsert()
+void handler::showUsage(std::string& sErr)
 {
-  throw std::string("handler::runInsert not implemented");
+  // do we have an error text ?
+  if (sErr.size())
+    std::cerr << "commandline error:" << sErr << std::endl;
+
+  std::cout <<
+    "syntax oveview, use \"genLang help\" for full description\n"
+    "genLang <cmd> <module> <po dir> <languages> [-f <files>] [-o <dir>] [-s <dir>] [-t <dir>] [-v]\n"
+    "<cmd> is one of \"convert\", \"extract\", \"help\", \"merge\"\n";
+
+  exit(-1);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void handler::showManual()
+{
+  // give the correct usage
+  std::cout <<
+    "genLang (c)2013 by Apache Software Foundation\n"
+    "=============================================\n"
+    "As part of the L10N framework for Apache Open Office (AOO),\n"
+    "genLang extracts en-US texts sources of the following types:\n"
+    "  .xrm, .xhp, .xcu, .xcs, .ulf, .tree, .src, .prop and .po\n"
+    "and merges with .po files in different languages.\n"
+    "genLang merges .po files with AOO sources to add languages.\n"
+    "\n"
+    "genLang can also convert old .po files (generated from .sdf)\n"
+    "\n"
+    "Syntax:\n"
+    "  genLang extract <module> <po dir> <languages> [-v] \\\n"
+    "          [-o <po outdir>]  -f <files> -s <source dir>\n"
+    "    reads <po dir>/*lang/<module>.po files and extract text\n"
+    "    from <source dir>/<files>, result is merged and\n"
+    "    written to <po outdir>/*lang/<module>.po if -o present\n"
+    "    or <po dir>/*lang/<module>.po is overwritten\n"
+    "    - File will only be written if they are changes\n"
+    "    - Keys in .po files, not in sources files (deleted keys)\n"
+    "      are moved to '-p <dir>'/<module>.deleted.po\n"
+    "    - Keys in .po files, with changed text in the source\n"
+    "      are marked \"fuzzy\"\n"
+    "    - Keys in source files not in .po files (new keys)\n"
+    "      are added and marked \"fuzzy\"\n"
+    "\n"
+    "  genLang merge <module> <po dir> <languages> [-v]\\\n"
+    "          [-o <po outdir>]  -f <files> -s <source dir> \\\n"
+    "          -t <target dir>\n"
+    "    works as \"extract\" and additionally merges\n"
+    "    <source dir>/<files> with all native language text\n"
+    "    from <po dir>/*lang/<module>.po\n"
+    "    The result is stored in <target dir>/<files>\n"
+    "\n"
+    "  genLang convert <module> <po dir> <languages> [-v] \\\n"
+    "          [-o <po outdir>]  -f <files>\n"
+    "    reads sdf generated .po <files> and merges with\n"
+    "    <po dir>/*lang/<module>.po\n"
+    "    Result is written to <po outdir>/*lang/<module>.po if\n"
+    "    - present or <po dir>/*lang/<module>.po is overwritten\n"
+    "    - File will only be written if they are changes\n"
+    "    - Keys in <files>, not in <module>.po\n"
+    "      are moved to <po dir>/<module>.deleted.po\n"
+    "    - Keys in <files>, with changed translation\n"
+    "      are marked \"fuzzy\"\n"
+    "    Result is written to <po outdir>/*lang/<module>.po if\n"
+    "    -o present or <po dir>/*lang/<module>.po is overwritten\n"
+    "\n"
+    "  genLang help\n"
+    "    this text\n"
+    "\n"
+    "Parameters:\n"
+    "  <module>\n"
+    "     name of module (directory in main)\n"
+    "  <po dir>\n"
+    "     directory containing a directory for each language which contains\n"
+    "     a .po file for each module\n"
+    "  <languages>\n"
+    "     comma separated string with langauge id to be used\n"
+    "\n"   
+    "  -f <files>\n"
+    "     list of files containing messages to be extracted\n"
+    "     \"convert\" expect sdf generated po files, to be converted\n"
+    "  -o <po outdir>\n"
+    "     directory to write .po files, same structure as -p\n"
+    "  -s <source dir>\n"
+    "     directory containing all source files (root path for <files>\n"
+    "  -t <target dir>\n"
+    "     <directory> used to write merged source files (root path for <files>\n"
+    "  -v\n"
+    "     verbose mode, tells what gLang is doing\n";
+
+  exit(0);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void handler::loadL10MEM()
+{
+  std::string sMod  = "/" +  msModuleName + ".pot";
+  std::string sLoad = msPoDir + "en-US" + sMod;
+
+
+  // load texts from en-US po file (master)
+  {
+    // prepare translation memory
+    mcMemory.setFileName(sLoad);
+
+    // tell system
+    if (mbVerbose)
+      std::cout << "gLang loading master text from file " << sLoad << std::endl;
+
+    // and load file
+    convert_gen(mcMemory, sLoad).execute(true);
+  }
+
+  // loop through all languages and load text
+  for (std::vector<std::string>::iterator siLang = mvLanguages.begin(); siLang != mvLanguages.end(); ++siLang)
+  {
+    sLoad = msPoDir + *siLang + sMod;
+
+    // prepare translation memory
+    mcMemory.setFileName(sLoad);
+
+    // tell system
+    if (mbVerbose)
+      std::cout << "gLang loading text from language file " << sLoad << std::endl;
+
+    // get converter and extract files
+    convert_gen(mcMemory, sLoad).execute(false);
+  }
 }

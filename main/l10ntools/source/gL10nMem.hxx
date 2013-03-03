@@ -20,6 +20,7 @@
  *************************************************************/
 #ifndef GL10NMEM_HXX
 #define GL10NMEM_HXX
+#include "gLang.hxx"
 
 
 
@@ -38,7 +39,8 @@ class l10nMem_entry
   public:
     l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName, const std::string& srKey,
                   const std::string& srObjectType, const std::string& srLanguage,   const std::string& srText,
-          const int          iIndex);
+                  const int          iIndex,
+                  const std::string  srOldKey = "");
     ~l10nMem_entry();
 
     std::string msSourceFile;
@@ -47,7 +49,10 @@ class l10nMem_entry
     std::string msObjectType;
     std::string msLanguage;
     std::string msText;
+    std::string msOLDKEY;
     int         miIndex;
+    bool        mbDeleted;
+    std::vector<l10nMem_entry> mcLang;
 
   private:
 };
@@ -55,11 +60,11 @@ class l10nMem_entry
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class l10nMem
+class l10nMem_impl
 {
   public:
-    l10nMem();
-    ~l10nMem();
+    l10nMem_impl();
+    ~l10nMem_impl();
 
     std::string                   showError         (int iLineNo, char *sText, bool bWarning = false);
     bool                          isError           ();
@@ -72,6 +77,14 @@ class l10nMem
     void                          setEnUsKey        (int        iLineNo,const std::string& srKey,
                                                      const std::string& srObjectType,
                                                      const std::string& srText, int iIndex = 0);
+    void        loadEnUsKey  (const std::string& srKey,
+                              const std::string& srObjectType,
+                              const std::string& srText,
+                              const std::string& oldKey);
+    void        loadLangKey  (const std::string& srLang,
+                              const std::string& srKey,
+                              const std::string& srObjectType,
+                              const std::string& srText);
     std::vector<l10nMem_entry *>& getLanguagesForKey(const std::string& srKey);
 
   private:
@@ -80,7 +93,9 @@ class l10nMem
     std::vector<l10nMem_entry *> mcCurrentSelection;
     std::vector<l10nMem_entry>   mcMemory;
     bool                         mbInError;
-    int                          miStartInx;
     int                          miLastUniqResort;
+    static l10nMem_impl         *mcImpl;
+
+    friend class l10nMem;
 };
 #endif

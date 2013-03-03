@@ -215,7 +215,7 @@ void convert_xhp::setRef(char *yytext)
          break;
 
     case VALUE_NOT_USED:
-         VALUE_IS_VALUE:
+    case VALUE_IS_VALUE:
          break;
   }
 }
