@@ -22,6 +22,8 @@
 #ifndef SVX_PROPERTYPANEL_AREAPAGE_HXX
 #define SVX_PROPERTYPANEL_AREAPAGE_HXX
 
+#include "sidebar/ColorPopup.hxx"
+#include "AreaTransparencyGradientPopup.hxx"
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
@@ -38,32 +40,24 @@
 #include <vcl/fixed.hxx>
 #include <svl/intitem.hxx>
 #include <svx/tbxcolorupdate.hxx>
-#include <svx/sidebar/PropertyPanelTools.hxx>
 #include <com/sun/star/ui/XUIElement.hpp>
 #include <boost/scoped_ptr.hpp>
 
-//////////////////////////////////////////////////////////////////////////////
-// pedefines
+
 class XFillFloatTransparenceItem;
 namespace svx { class ToolboxButtonColorUpdater; }
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace open
 
 namespace svx { namespace sidebar {
 
-class SvxColorPage;
-class SvxAreaTrGrPage;
+class PopupContainer;
+class AreaTransparencyGradientControl;
 
 class AreaPropertyPanel
 :   public Control,
     public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
-private:
-    friend class SvxColorPage;
-    friend class SvxAreaTrGrPage;
-
 public:
     static AreaPropertyPanel* Create(
         Window* pParent,
@@ -83,6 +77,17 @@ public:
 
     SfxBindings* GetBindings();
     void ShowMenu (void);
+
+    const static sal_Int32 DEFAULT_CENTERX;
+    const static sal_Int32 DEFAULT_CENTERY;
+    const static sal_Int32 DEFAULT_ANGLE;
+    const static sal_Int32 DEFAULT_STARTVALUE;
+    const static sal_Int32 DEFAULT_ENDVALUE;
+    const static sal_Int32 DEFAULT_BORDER;
+
+    XGradient GetGradient (const XGradientStyle eStyle) const;
+    void SetGradient (const XGradient& rGradient);
+    sal_Int32 GetSelectedTransparencyTypeIndex (void) const;
 
 private:
     sal_uInt16                                          meLastXFS;
@@ -156,11 +161,8 @@ private:
     String                                              msHelpFillType;
     String                                              msHelpFillAttr;
 
-    ::boost::scoped_ptr< PropertyPanelPopuplWindow >    mpTrGrFloatWin;
-    ::boost::scoped_ptr< SvxAreaTrGrPage >              mpTrGrPage;
-
-    ::boost::scoped_ptr< PropertyPanelPopuplWindow >    mpFloatWinColor;
-    ::boost::scoped_ptr< SvxColorPage >                 mpPageColor; 
+    AreaTransparencyGradientPopup maTrGrPopup;
+    ColorPopup maColorPopup; 
 
     ::boost::scoped_ptr< XFillFloatTransparenceItem >   mpFloatTransparenceItem;
     ::boost::scoped_ptr< SfxUInt16Item >                mpTransparanceItem;
@@ -175,21 +177,17 @@ private:
 
     DECL_LINK(SelectFillTypeHdl, ListBox* );
     DECL_LINK(SelectFillAttrHdl, ListBox* );
-    DECL_LINK(ToolBoxColorDropHdl, ToolBox *); //for new color picker 
     DECL_LINK(ChangeTrgrTypeHdl_Impl, void*);
     DECL_LINK(ModifyTransparentHdl_Impl, void*);
-    DECL_LINK( ClickTrGrHdl_Impl, ToolBox* );
     DECL_LINK( ImplPopupModeEndHdl, FloatingWindow* );
 
     // for transparency gradient
-    void ImpEnsureTrGrFloatWinAndTrGrPage();
-    SvxAreaTrGrPage* GetTrGrPage();
-    PropertyPanelPopuplWindow* GetTrGrFloatWin();
+    PopupControl* CreateTransparencyGradientControl (PopupContainer* pParent);
+    DECL_LINK( ClickTrGrHdl_Impl, ToolBox* );
 
     // for color picker 
-    void ImpEnsureFloatWinColorAndPageColor();
-    SvxColorPage* GetColorPage();
-    PropertyPanelPopuplWindow* GetColorFloatWin();
+    PopupControl* CreateColorPopupControl (PopupContainer* pParent);
+    DECL_LINK(ToolBoxColorDropHdl, ToolBox *); //for new color picker 
 
     // constructor/destuctor
     AreaPropertyPanel(
@@ -202,16 +200,16 @@ private:
     void Initialize();
     void Update();
     void ImpUpdateTransparencies();
+
+    Color GetLastColor (void) const;
+    void SetColor (
+        const String& rsColorName,
+        const Color aColor);
 };
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace close
 
-}} // end of namespace ::svx::sidebar
+} } // end of namespace ::svx::sidebar
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 #endif // SVX_PROPERTYPANEL_AREAPAGE_HXX
-
-//////////////////////////////////////////////////////////////////////////////
-// eof

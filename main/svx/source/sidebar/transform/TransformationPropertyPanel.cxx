@@ -48,7 +48,7 @@ using ::sfx2::sidebar::Theme;
 #define USERITEM_NAME rtl::OUString::createFromAscii("FitItem")
 #define NO_SELECT       (65535)
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 namespace
 {
@@ -310,7 +310,7 @@ namespace
     }
 } // end of anonymous namespace
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 namespace
 {
@@ -361,7 +361,7 @@ namespace
     }
 } // end of anonymous namespace
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 /** This control allows to input a rotation angle, visualized by a dial.
 
@@ -670,12 +670,12 @@ IMPL_LINK( DialControl, LinkedFieldModifyHdl, NumericField*, pField )
     return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 // namespace open
 
 namespace svx { namespace sidebar {
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 TransformationPropertyPanel::TransformationPropertyPanel(
     Window* pParent,
@@ -741,17 +741,18 @@ TransformationPropertyPanel::TransformationPropertyPanel(
 	FreeResource();	
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 TransformationPropertyPanel::~TransformationPropertyPanel()
 {
     mbInDestructor = true;
 
     // Destroy the background windows of the toolboxes.
+    mpFlipTbx.reset();
     mpFlipTbxBackground.reset();
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::ShowMenu (void)
 {
@@ -763,7 +764,7 @@ void TransformationPropertyPanel::ShowMenu (void)
     }
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::Initialize()
 {
@@ -845,7 +846,7 @@ void TransformationPropertyPanel::Initialize()
 	SetFieldUnit( *mpMtrHeight, meDlgUnit, true );
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::SetupIcons(void)
 {
@@ -859,7 +860,7 @@ void TransformationPropertyPanel::SetupIcons(void)
     }
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 TransformationPropertyPanel* TransformationPropertyPanel::Create (
     Window* pParent,
@@ -879,7 +880,7 @@ TransformationPropertyPanel* TransformationPropertyPanel::Create (
         pBindings);
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::DataChanged(
     const DataChangedEvent& rEvent)
@@ -889,7 +890,7 @@ void TransformationPropertyPanel::DataChanged(
     SetupIcons();
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::HandleContextChange(
     const ::sfx2::sidebar::EnumContext aContext)
@@ -1047,7 +1048,7 @@ void TransformationPropertyPanel::HandleContextChange(
 	mpFlipTbx->SetPaintTransparent(true);
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, ChangeWidthHdl, void*, pBox )
 {
@@ -1071,7 +1072,7 @@ IMPL_LINK( TransformationPropertyPanel, ChangeWidthHdl, void*, pBox )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, ChangeHeightHdl, void *, EMPTYARG )
 {
@@ -1095,7 +1096,7 @@ IMPL_LINK( TransformationPropertyPanel, ChangeHeightHdl, void *, EMPTYARG )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, ChangePosXHdl, void *, EMPTYARG )
 {
@@ -1103,7 +1104,7 @@ IMPL_LINK( TransformationPropertyPanel, ChangePosXHdl, void *, EMPTYARG )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, ChangePosYHdl, void *, EMPTYARG )
 {
@@ -1111,7 +1112,7 @@ IMPL_LINK( TransformationPropertyPanel, ChangePosYHdl, void *, EMPTYARG )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, ClickAutoHdl, void *, EMPTYARG )
 {
@@ -1128,7 +1129,7 @@ IMPL_LINK( TransformationPropertyPanel, ClickAutoHdl, void *, EMPTYARG )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, AngleModifiedHdl, void *, EMPTYARG )
 {
@@ -1162,7 +1163,7 @@ IMPL_LINK( TransformationPropertyPanel, AngleModifiedHdl, void *, EMPTYARG )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, RotationHdl, void *, EMPTYARG )
 {
@@ -1178,7 +1179,7 @@ IMPL_LINK( TransformationPropertyPanel, RotationHdl, void *, EMPTYARG )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( TransformationPropertyPanel, FlipHdl, ToolBox*, pBox )
 {
@@ -1202,7 +1203,7 @@ IMPL_LINK( TransformationPropertyPanel, FlipHdl, ToolBox*, pBox )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::NotifyItemUpdate( 
     sal_uInt16 nSID, 
@@ -1495,14 +1496,14 @@ void TransformationPropertyPanel::NotifyItemUpdate(
 	mpCbxScale->Check( (bool)sUserData.ToInt32() );
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 SfxBindings* TransformationPropertyPanel::GetBindings() 
 { 
     return mpBindings; 
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::executeSize()
 {
@@ -1549,7 +1550,7 @@ void TransformationPropertyPanel::executeSize()
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::executePosX()
 {
@@ -1579,7 +1580,7 @@ void TransformationPropertyPanel::executePosX()
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::executePosY()
 {
@@ -1607,7 +1608,7 @@ void TransformationPropertyPanel::executePosY()
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::MetricState( SfxItemState eState, const SfxPoolItem* pState )
 {
@@ -1643,7 +1644,7 @@ void TransformationPropertyPanel::MetricState( SfxItemState eState, const SfxPoo
 		mpMtrHeight->SetText(String());
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 FieldUnit TransformationPropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState )
 {
@@ -1676,7 +1677,7 @@ FieldUnit TransformationPropertyPanel::GetCurrentUnit( SfxItemState eState, cons
 	return eUnit;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void TransformationPropertyPanel::DisableControls()
 {
@@ -1762,10 +1763,5 @@ void TransformationPropertyPanel::DisableControls()
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace close
 
-}} // end of namespace ::svx::sidebar
-
-//////////////////////////////////////////////////////////////////////////////
-// eof
+} } // end of namespace svx::sidebar

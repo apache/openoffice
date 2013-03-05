@@ -104,6 +104,7 @@
           <value>200</value>
         </prop>
       </node>
+
       <node oor:name="ImpressAnimationEffects" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Custom Animation</value>
@@ -128,6 +129,7 @@
           <value>300</value>
         </prop>
       </node>
+
       <node oor:name="SlideTransitionDeck" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Slide Transition</value>
@@ -152,8 +154,10 @@
           <value>400</value>
         </prop>
       </node>
+
     </node>
     <node oor:name="PanelList">
+
       <node oor:name="TextPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Text Properties</value>
@@ -200,37 +204,38 @@
           <value>true</value>
         </prop>
       </node>
+
       <node oor:name="ColorPanel" oor:op="replace">
-	<prop oor:name="Title" oor:type="xs:string">
-	  <value xml:lang="en-US">Colors</value>
-	</prop>
-	<prop oor:name="Id" oor:type="xs:string">
-	  <value>ColorPanel</value>
-	</prop>
-	<prop oor:name="DeckId" oor:type="xs:string">
-	  <value>PropertyDeck</value>
-	</prop>
-	<node oor:name="ContextMatchers">
-	  <node oor:name="matcher1"  oor:op="replace">
-	    <prop oor:name="Application" oor:type="xs:string">
-	      <value>any</value>
-	    </prop>
-	    <prop oor:name="ContextList">
-	      <value>any</value>
-	    </prop>
-	  </node>
-	</node>
-	<prop oor:name="ImplementationURL" oor:type="xs:string">
-	  <value>private:resource/toolpanel/SvxPanelFactory/Debug_ColorPanel</value>
-	</prop>
-	<prop oor:name="OrderIndex" oor:type="xs:int">
-	  <value>110</value>
-	</prop>
-	<prop oor:name="HasMenu" oor:type="xs:boolean">
-	  <value>true</value>
-	</prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Colors</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>ColorPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <node oor:name="ContextMatchers">
+          <node oor:name="matcher1"  oor:op="replace">
+            <prop oor:name="Application" oor:type="xs:string">
+              <value>any</value>
+            </prop>
+            <prop oor:name="ContextList">
+              <value>any</value>
+            </prop>
+          </node>
+        </node>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SvxPanelFactory/Debug_ColorPanel</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>110</value>
+        </prop>
+        <prop oor:name="HasMenu" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
       </node>
-<!--
+
       <node oor:name="AreaPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Fill Properties</value>
@@ -261,8 +266,7 @@
           <value>true</value>
         </prop>
       </node>
--->
-<!--
+
       <node oor:name="LinePropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Line Properties</value>
@@ -293,7 +297,7 @@
           <value>true</value>
         </prop>
       </node>
--->
+
 <!--
       <node oor:name="GalleryPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
@@ -358,7 +362,7 @@
         </prop>
       </node>
 -->
-<!--
+
       <node oor:name="GraphicPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Graphic Properties</value>
@@ -389,7 +393,7 @@
           <value>true</value>
         </prop>
       </node>
--->
+
       <node oor:name="Impress1" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Layouts</value>
@@ -426,6 +430,7 @@
           <value>false</value>
         </prop>
       </node>
+
       <node oor:name="Impress2" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Used in This Presentation</value>
@@ -459,6 +464,7 @@
           <value>false</value>
         </prop>
       </node>
+
       <node oor:name="Impress3" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Recently Used</value>
@@ -492,6 +498,7 @@
           <value>false</value>
         </prop>
       </node>
+
       <node oor:name="Impress4" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Available for Use</value>
@@ -525,6 +532,7 @@
           <value>false</value>
         </prop>
       </node>
+
       <node oor:name="Impress5" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Custom Animation</value>
@@ -558,6 +566,7 @@
           <value>false</value>
         </prop>
       </node>
+
       <node oor:name="Impress6" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Slide Transition</value>
@@ -591,6 +600,7 @@
           <value>false</value>
         </prop>
       </node>
+
       <node oor:name="Impress7" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Table Design</value>
@@ -624,6 +634,7 @@
           <value>false</value>
         </prop>
       </node>
+
     </node>
   </node>
 </oor:component-data>

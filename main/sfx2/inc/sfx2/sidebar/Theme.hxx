@@ -88,6 +88,7 @@ public:
         Color_PanelTitleFont,
         Color_TabMenuSeparator,
         Color_TabItemBorder,
+        Color_DropDownBorder,
 
         __Color_Paint,
         
@@ -104,6 +105,7 @@ public:
         Paint_ToolBoxBorderTopLeft,
         Paint_ToolBoxBorderCenterCorners,
         Paint_ToolBoxBorderBottomRight,
+        Paint_DropDownBackground,
 
         __Paint_Int,
         

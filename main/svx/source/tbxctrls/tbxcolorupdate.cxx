@@ -83,7 +83,7 @@ namespace svx
         {
             BitmapEx            aBmpEx( aImage.GetBitmapEx() );
             Bitmap              aBmp( aBmpEx.GetBitmap() );
-            BitmapWriteAccess*  pBmpAcc = aBmp.AcquireWriteAccess();
+            BitmapWriteAccess*  pBmpAcc = aBmp.IsEmpty() ? NULL : aBmp.AcquireWriteAccess();
 
             maBmpSize = aBmp.GetSizePixel();
 

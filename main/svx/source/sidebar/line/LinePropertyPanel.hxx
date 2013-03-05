@@ -22,16 +22,18 @@
 #ifndef SVX_PROPERTYPANEL_LINEPAGE_HXX
 #define SVX_PROPERTYPANEL_LINEPAGE_HXX
 
+#include <svx/xdash.hxx>
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <vcl/fixed.hxx>
 #include <vcl/field.hxx>
-#include <svx/sidebar/PropertyPanelTools.hxx>
 #include <boost/scoped_ptr.hpp>
+#include <boost/scoped_array.hpp>
+#include "sidebar/ColorPopup.hxx"
+#include "LineStylePopup.hxx"
+#include "LineWidthPopup.hxx"
 
-//////////////////////////////////////////////////////////////////////////////
-// pedefines
 
 namespace svx { class ToolboxButtonColorUpdater; }
 class SvxLineColorPage;
@@ -44,11 +46,52 @@ class XLineEndItem;
 class LineEndLB_LPP;
 class XLineEndList;
 class ListBox;
+class ToolBox;
+class FloatingWindow;
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace open
+namespace {
+    const String Dash_Name[] =
+    {
+        String("Ultrafine dashed", 16,  RTL_TEXTENCODING_ASCII_US),				//0
+        String("Dashed (variable)", 17,RTL_TEXTENCODING_ASCII_US ),				//6
+        String("Fine dashed (variable)",22,  RTL_TEXTENCODING_ASCII_US),		//5	
+        String("Fine dashed", 11, RTL_TEXTENCODING_ASCII_US),					//1
+        String("Fine dotted", 11, RTL_TEXTENCODING_ASCII_US),					//3	
+        String("Ultrafine dotted (variable)",27, RTL_TEXTENCODING_ASCII_US),	//8
+        String("3 dashes 3 dots (variable)", 26, RTL_TEXTENCODING_ASCII_US),	//7
+        String("2 dots 1 dash",13,RTL_TEXTENCODING_ASCII_US  )	,				//9
+        String("Ultrafine 2 dots 3 dashes",  25, RTL_TEXTENCODING_ASCII_US),	//2
+        String("Line with fine dots", 19, RTL_TEXTENCODING_ASCII_US)			//4
+    };
+
+
+    const XDash Dash_Set[] =
+    {
+        //Dash, dots, dotlen, dash, dashlen, distance	
+        XDash(XDASH_RECT, 1, 51, 1, 51, 51),									//0
+        XDash(XDASH_RECTRELATIVE, 1, 197, 0,0, 127),							//6
+        XDash(XDASH_RECTRELATIVE, 1, 197,0,0,197),								//5
+        XDash(XDASH_RECT, 1,508, 1,508, 508),									//1
+        XDash(XDASH_RECT, 1,  0, 0,  0, 457),									//3
+        XDash(XDASH_RECTRELATIVE, 1,  0, 0, 0, 50),								//8
+        XDash(XDASH_RECTRELATIVE, 3, 197, 3, 0, 100),							//7
+        XDash(XDASH_RECT, 2, 0, 1, 203,203)	,									//9
+        XDash(XDASH_RECT, 2, 51, 3,254, 127),									//2
+        XDash(XDASH_RECT, 1,2007,10, 0, 152)									//4
+    };
+
+    #define SIDEBAR_LINE_WIDTH_GLOBAL_VALUE String("PopupPanel_LineWidth", 20, RTL_TEXTENCODING_ASCII_US)
+
+} //end of anonymous namespace
+
 
 namespace svx { namespace sidebar {
+
+class PopupContainer;
+class ColorPopup;
+class LineStyleControl;
+class LineWidthControl;
+
 
 class LinePropertyPanel
 :   public Control,
@@ -56,7 +99,6 @@ class LinePropertyPanel
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 private:
-    friend class ::SvxLineColorPage;
     friend class ::SvxLineStylePage;
     friend class ::SvxLineWidthPage;
 
@@ -79,6 +121,16 @@ public:
 
     SfxBindings* GetBindings();
     void ShowMenu (void);
+
+    void SetLineDashItem(XLineDashItem* pDash);
+    void SetLineStyleItem(XLineStyleItem* pStyle);
+
+    void SetWidth(long nWidth);
+    void SetWidthIcon(int n);
+    void SetWidthIcon();
+
+    void EndLineStylePopupMode (void);
+    void EndLineWidthPopupMode (void);
 
 private:
     //ui controls
@@ -125,22 +177,19 @@ private:
     ::boost::scoped_ptr< XLineEndItem >                     mpEndItem;
 
     //popup windows
-    ::boost::scoped_ptr< PropertyPanelPopuplWindow >        mpFloatWinColor;
-    ::boost::scoped_ptr< SvxLineColorPage >                 mpPageColor;
-    ::boost::scoped_ptr< PropertyPanelPopuplWindow >        mpFloatWinStyle;
-    ::boost::scoped_ptr< SvxLineStylePage >                 mpPageStyle; 
-    ::boost::scoped_ptr< PropertyPanelPopuplWindow >        mpFloatWinWidth;
-    ::boost::scoped_ptr< SvxLineWidthPage >                 mpPageWidth;
+    ColorPopup maColorPopup;
+    LineStylePopup maLineStylePopup;
+    LineWidthPopup maLineWidthPopup;
 
     // images from ressource
     Image                                                   maIMGColor;
     Image                                                   maIMGNone;
 
     // multi-images
-    ::boost::scoped_ptr< Image >                            mpIMGStyleIcon;
-    ::boost::scoped_ptr< Image >                            mpIMGWidthIcon;
-    ::boost::scoped_ptr< Image >                            mpIMGStyleIconH;	//high contrast
-    ::boost::scoped_ptr< Image >                            mpIMGWidthIconH;	//high contrast
+    ::boost::scoped_array<Image>                            mpIMGStyleIcon;
+    ::boost::scoped_array<Image>                            mpIMGWidthIcon;
+    ::boost::scoped_array<Image>                            mpIMGStyleIconH;	//high contrast
+    ::boost::scoped_array<Image>                            mpIMGWidthIconH;	//high contrast
 
     cssu::Reference< css::frame::XFrame >                   mxFrame;
     ::sfx2::sidebar::EnumContext                            maContext;
@@ -179,34 +228,15 @@ private:
     virtual ~LinePropertyPanel(void);
 
     void SetStyleIcon();
-    void SetColor(Color aColor);
-    void SetLineStyleItem(XLineStyleItem* pStyle);
-    void SetLineDashItem(XLineDashItem* pDash);
-    void SetWidth(long nWidth);
-    void SetWidthIcon(int n);
-    void SetWidthIcon();
+    void SetColor(
+        const String& rsColorName,
+        const Color aColor);
 
-    void ImpEnsureFloatWinColorAndPageColor();
-    SvxLineColorPage* GetColorPage();
-    PropertyPanelPopuplWindow* GetColorFloatWin();
-
-    void ImpEnsureFloatWinStyleAndPageStyle();
-    SvxLineStylePage* GetStylePage();
-    PropertyPanelPopuplWindow* GetStyleFloatWin();
-
-    void ImpEnsureFloatWinWidthAndPageWidth();
-    SvxLineWidthPage* GetWidthPage();
-    PropertyPanelPopuplWindow* GetWidthFloatWin();
+    PopupControl* CreateColorPopupControl (PopupContainer* pParent);
+    PopupControl* CreateLineStylePopupControl (PopupContainer* pParent);
+    PopupControl* CreateLineWidthPopupControl (PopupContainer* pParent);
 };
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace close
+} } // end of namespace svx::sidebar
 
-}} // end of namespace ::svx::sidebar
-
-//////////////////////////////////////////////////////////////////////////////
-
-#endif // SVX_PROPERTYPANEL_LINEPAGE_HXX
-
-//////////////////////////////////////////////////////////////////////////////
-// eof
+#endif

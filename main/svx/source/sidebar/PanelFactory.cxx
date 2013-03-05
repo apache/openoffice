@@ -22,10 +22,10 @@
 #include "sidebar/PanelFactory.hxx"
 
 #include "text/TextPropertyPanel.hxx"
-#include "geometry/AreaPropertyPanel.hxx"
-#include "geometry/GraphicPropertyPanel.hxx"
-#include "geometry/LinePropertyPanel.hxx"
-#include "geometry/TransformationPropertyPanel.hxx"
+#include "area/AreaPropertyPanel.hxx"
+#include "graphic/GraphicPropertyPanel.hxx"
+#include "line/LinePropertyPanel.hxx"
+#include "transform/TransformationPropertyPanel.hxx"
 #include "gallery/GalleryControl.hxx"
 #include "ColorPanel.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>

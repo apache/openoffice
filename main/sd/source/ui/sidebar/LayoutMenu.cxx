@@ -42,6 +42,7 @@
 #include "EventMultiplexer.hxx"
 #include "SlideSorterViewShell.hxx"
 #include "ViewShellBase.hxx"
+#include <sfx2/sidebar/Theme.hxx>
 
 #include <comphelper/processfactory.hxx>
 #include <sfx2/app.hxx>
@@ -149,6 +150,11 @@ LayoutMenu::LayoutMenu (
 {
     implConstruct( *mrBase.GetDocument()->GetDocSh() );
     OSL_TRACE("created LayoutMenu at %x", this);
+
+    SetStyle(GetStyle() | WB_ITEMBORDER | WB_FLATVALUESET | WB_TABSTOP);
+
+    SetBackground(sfx2::sidebar::Theme::GetWallpaper(sfx2::sidebar::Theme::Paint_PanelBackground));
+    SetColor(sfx2::sidebar::Theme::GetColor(sfx2::sidebar::Theme::Paint_PanelBackground));
     
 #ifdef DEBUG
     SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:LayoutMenu")));
@@ -167,6 +173,7 @@ void LayoutMenu::implConstruct( DrawDocShell& rDocumentShell )
 	SetStyle (
         ( GetStyle()  & ~(WB_ITEMBORDER) )
         | WB_TABSTOP
+        | WB_MENUSTYLEVALUESET
         | WB_NO_DIRECTSELECT
         );
     if (mbUseOwnScrollBar)
@@ -392,16 +399,12 @@ void LayoutMenu::UpdateEnabledState (const MasterMode eMode)
 
 void LayoutMenu::Paint (const Rectangle& rRect)
 {
-	SetBackground (GetSettings().GetStyleSettings().GetWindowColor());
-
     if (mbSelectionUpdatePending)
     {
         mbSelectionUpdatePending = false;
         UpdateSelection();
     }
     ValueSet::Paint (rRect);
-
-	SetBackground (Wallpaper());
 }
 
 
@@ -456,26 +459,6 @@ void LayoutMenu::MouseButtonDown (const MouseEvent& rEvent)
 
 
 
-/*
-void LayoutMenu::GetState (SfxItemSet& rItemSet)
-{
-    // Cut and paste is not supported.  The SID_(CUT,COPY,PASTE) entries
-    // therefore must not show up in the context menu.
-    rItemSet.DisableItem (SID_CUT);
-    rItemSet.DisableItem (SID_COPY);
-    rItemSet.DisableItem (SID_PASTE);
-
-    // The SID_INSERTPAGE_LAYOUT_MENU slot depends on the SID_INSERTPAGE
-    // slot being supported elsewhere.
-    const SfxPoolItem* pItem = NULL;
-    const SfxItemState aState (
-        mrBase.GetViewFrame()->GetDispatcher()->QueryState(SID_INSERTPAGE, pItem));
-    if (aState == SFX_ITEM_DISABLED)
-        rItemSet.DisableItem(SID_INSERTPAGE_LAYOUT_MENU);
-}
-*/
-
-
 
 void LayoutMenu::InsertPageWithLayout (AutoLayout aLayout)
 {
@@ -509,10 +492,6 @@ void LayoutMenu::InsertPageWithLayout (AutoLayout aLayout)
 
 void LayoutMenu::InvalidateContent (void)
 {
-    // The number of items may have changed.  Request a resize so that the
-    // vertical size of this control can be adapted.
-    //    RequestResize();
-
     // Throw away the current set and fill the menu anew according to the
     // current settings (this includes the support for vertical writing.)
     Fill();
@@ -994,6 +973,8 @@ void LayoutMenu::DataChanged (const DataChangedEvent& rEvent)
 {
     Fill();
     ValueSet::DataChanged(rEvent);
+    SetBackground(sfx2::sidebar::Theme::GetWallpaper(sfx2::sidebar::Theme::Paint_PanelBackground));
+    SetColor(sfx2::sidebar::Theme::GetColor(sfx2::sidebar::Theme::Paint_PanelBackground));
 }
 
 

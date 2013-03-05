@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 
+#include "svx/sidebar/PopupContainer.hxx"
+#include "AreaTransparencyGradientControl.hxx"
+
 #include <sfx2/sidebar/propertypanel.hrc>
 #include <sfx2/sidebar/Theme.hxx>
 #include <sfx2/sidebar/ControlFactory.hxx>
@@ -37,6 +40,10 @@
 #include <unotools/pathoptions.hxx>
 #include <svx/svxitems.hrc>
 #include <vcl/toolbox.hxx>
+#include <svtools/toolbarmenu.hxx>
+#include "sidebar/ColorControl.hxx"
+
+#include <boost/bind.hpp>
 
 using namespace css;
 using namespace cssu;
@@ -44,573 +51,19 @@ using ::sfx2::sidebar::Theme;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
-//////////////////////////////////////////////////////////////////////////////
-// positioning helpers
 
-#define APOS1_1 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL), MAP_APPFONT))
-#define APOS2_1 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL), MAP_APPFONT))
-#define APOS1_2 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL+CONTROL_WIDTH+CONTROL_SPACING_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL), MAP_APPFONT))
-#define APOS2_2 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL+CONTROL_WIDTH+CONTROL_SPACING_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL), MAP_APPFONT))
-#define APOS1_3 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL+MBOX_HEIGHT+CONTROL_SPACING_VERTICAL), MAP_APPFONT))
-#define APOS1_4 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 2*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL)+MBOX_HEIGHT+CONTROL_SPACING_VERTICAL), MAP_APPFONT))
-#define APOS2_3 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL+CONTROL_WIDTH+CONTROL_SPACING_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL+MBOX_HEIGHT+CONTROL_SPACING_VERTICAL), MAP_APPFONT))
-#define APOS2_4 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL+CONTROL_WIDTH+CONTROL_SPACING_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 2*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL)+MBOX_HEIGHT+CONTROL_SPACING_VERTICAL), MAP_APPFONT))
-#define APOS1_5 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 2*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL+MBOX_HEIGHT+CONTROL_SPACING_VERTICAL)), MAP_APPFONT))
-#define APOS1_6 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 3*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL)+2*(MBOX_HEIGHT+CONTROL_SPACING_VERTICAL)), MAP_APPFONT))
-#define APOS2_5 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL+CONTROL_WIDTH+CONTROL_SPACING_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 2*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL+MBOX_HEIGHT+CONTROL_SPACING_VERTICAL)), MAP_APPFONT))
-#define APOS2_6 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL+CONTROL_WIDTH+CONTROL_SPACING_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 3*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL)+2*(MBOX_HEIGHT+CONTROL_SPACING_VERTICAL)), MAP_APPFONT))
-#define APOS1_7 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 3*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL+MBOX_HEIGHT+CONTROL_SPACING_VERTICAL)), MAP_APPFONT))
-#define APOS1_8 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + 4*(FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL)+3*(MBOX_HEIGHT+CONTROL_SPACING_VERTICAL)), MAP_APPFONT))
-#define APOS_Left_Right_1 Point(LogicToPixel(Point(LEFT_RIGHT_X1,LEFT_RIGHT_Y1), MAP_APPFONT))
-#define APOS_Left_Right_2 Point(LogicToPixel(Point(LEFT_RIGHT_X2,LEFT_RIGHT_Y1), MAP_APPFONT))
-#define APOS_Left_Right_3 Point(LogicToPixel(Point(LEFT_RIGHT_X1,LEFT_RIGHT_Y2), MAP_APPFONT))
-#define APOS_Left_Right_4 Point(LogicToPixel(Point(LEFT_RIGHT_X2,LEFT_RIGHT_Y2), MAP_APPFONT))
-#define DEFAULT_CENTERX 50
-#define DEFAULT_CENTERY 50
-#define DEFAULT_ANGLE 0
-#define DEFAULT_STARTVALUE 0
-#define DEFAULT_ENDVALUE 16777215
-#define DEFAULT_BORDER 0
 
-//////////////////////////////////////////////////////////////////////////////
 
 namespace svx { namespace sidebar {
 
-short GetItemId_Imp( ValueSet& rValueSet, const Color& rCol )
-{
-	if(rCol == COL_AUTO)
-		return 0;
+const sal_Int32 AreaPropertyPanel::DEFAULT_CENTERX = 50;
+const sal_Int32 AreaPropertyPanel::DEFAULT_CENTERY = 50;
+const sal_Int32 AreaPropertyPanel::DEFAULT_ANGLE = 0;
+const sal_Int32 AreaPropertyPanel::DEFAULT_STARTVALUE = 0;
+const sal_Int32 AreaPropertyPanel::DEFAULT_ENDVALUE = 16777215;
+const sal_Int32 AreaPropertyPanel::DEFAULT_BORDER = 0;
 
-	bool	bFound = false;
-	sal_uInt16	nCount = rValueSet.GetItemCount();
-	sal_uInt16	n	   = 1;
 
-	while ( !bFound && n <= nCount )
-	{
-		Color aValCol = rValueSet.GetItemColor(n);
-
-		bFound = (   aValCol.GetRed()   == rCol.GetRed()
-				  && aValCol.GetGreen() == rCol.GetGreen()
-				  && aValCol.GetBlue()  == rCol.GetBlue() );
-
-		if ( !bFound )
-			n++;
-	}
-	return bFound ? n : -1;
-}
-
-//////////////////////////////////////////////////////////////////////////////
-
-class SvxColorPage : public svx::sidebar::PropertyPanelPopupPage
-{
-public:
-	SvxColorPage(Window* pParent, svx::sidebar::AreaPropertyPanel& rPanel);
-    virtual ~SvxColorPage();
-	void GetFocus();
-	void SetCurColorSelect(Color aCol, bool bAvl);
-
-private:	
-	svx::sidebar::AreaPropertyPanel&    mrAreaPropertyPanel;
-	SfxBindings*		                mpBindings;
-	ValueSet			                maVSColor;
-
-	void Initialize();
-	void FillColors();
-	DECL_LINK(VSSelectHdl, void *);
-};
-
-SvxColorPage::SvxColorPage(Window* pParent, svx::sidebar::AreaPropertyPanel& rPanel)
-:	svx::sidebar::PropertyPanelPopupPage( pParent,SVX_RES(RID_POPUPPANEL_AERAPAGE_COLOR))
-,	mrAreaPropertyPanel(rPanel)
-,	mpBindings(NULL)
-,	maVSColor( this, SVX_RES(VS_COLOR))
-{
-	Initialize();
-	FreeResource();
-    mpBindings = mrAreaPropertyPanel.GetBindings();
-}
-
-SvxColorPage::~SvxColorPage()
-{
-}
-
-void SvxColorPage::Initialize()
-{
-	WinBits nBits = ( maVSColor.GetStyle() | WB_ITEMBORDER | WB_NAMEFIELD | WB_NO_DIRECTSELECT); // | WB_SELECTIFOLLOWMOUSE );
-//	maVSColor.SetText( String( SVX_RES( STR_AUTOMATICE ) ) );
-	maVSColor.SetStyle( nBits );
-
-	maVSColor.SetColCount( 12 );
-	maVSColor.SetLineCount( 12 );
-	const Size aSize15x15 = Size( 15, 15 );
-	maVSColor.CalcWindowSizePixel( aSize15x15 );
-	maVSColor.Show();
-
-	Link aLink =  LINK( this, SvxColorPage, VSSelectHdl ) ;
-    maVSColor.SetSelectHdl(aLink);
-}
-
-void SvxColorPage::FillColors()
-{
-	SfxObjectShell* pDocSh = SfxObjectShell::Current();
-	const SfxPoolItem* pItem = NULL;
-	XColorTable* pColorTable = NULL;
-	bool bOwn = false;
-
-	DBG_ASSERT( pDocSh, "DocShell not found!" );
-
-	if ( pDocSh && ( 0 != ( pItem = pDocSh->GetItem( SID_COLOR_TABLE ) ) ) )
-		pColorTable = ( (SvxColorTableItem*)pItem )->GetColorTable();
-
-	if ( !pColorTable )
-	{
-		bOwn = true;
-		pColorTable = new XColorTable( SvtPathOptions().GetPalettePath() );
-	}
-
-	if ( pColorTable )
-	{
-		short i	= 0;
-		long nCount	= pColorTable->Count();
-		XColorEntry* pEntry	= NULL;
-		Color aColWhite( COL_WHITE );
-		String aStrWhite( SVX_RES( RID_SVXITEMS_COLOR_WHITE ) );
-
-		maVSColor.Clear();
-		maVSColor.SetStyle( maVSColor.GetStyle() & ~WB_VSCROLL );
-		for ( i = 0; i < nCount; i++ )
-		{
-            pEntry = pColorTable->GetColor(i);
-			maVSColor.InsertItem(	i + 1, pEntry->GetColor(), pEntry->GetName() );
-		}
-		while ( i < 144 )
-		{
-			maVSColor.InsertItem( i + 1, aColWhite, aStrWhite );
-			i++;
-		}
-		if ( nCount > 144 )
-		{
-			maVSColor.SetStyle( maVSColor.GetStyle() | WB_VSCROLL );
-		}
-	}
-
-	if ( bOwn )
-		delete pColorTable;
-
-	maVSColor.Show();
-}
-
-void SvxColorPage::GetFocus()
-{
-	maVSColor.GrabFocus();
-}
-
-void SvxColorPage::SetCurColorSelect(Color aCol, bool bAvailable)
-{
-//	sal_uInt16 nType = mrAreaPropertyPanel.GetCurrColorType();
-		
-	FillColors();	
-	short nCol = GetItemId_Imp( maVSColor, aCol );
-	if(! bAvailable)
-	{
-		maVSColor.SetNoSelection();
-		return;
-	}
-
-	//if not found
-	if( nCol == -1)
-	{
-		maVSColor.SetNoSelection();
-	}
-	else
-	{
-		maVSColor.SelectItem( nCol );
-	}
-}
-
-IMPL_LINK(SvxColorPage, VSSelectHdl, void *, pControl)
-{
-    if(pControl == &maVSColor)
-    {
-        sal_uInt16 iPos = maVSColor.GetSelectItemId();
-        Color aColor = maVSColor.GetItemColor( iPos );	
-        String aTmpStr = maVSColor.GetItemText( iPos );
-        if(aColor.GetColor() == 0 && aTmpStr.Equals(String::CreateFromAscii("")))
-            aColor = mrAreaPropertyPanel.maLastColor;
-        XFillColorItem aXFillColorItem( aTmpStr, aColor );
-        mpBindings->GetDispatcher()->Execute(SID_ATTR_FILL_COLOR, SFX_CALLMODE_RECORD, &aXFillColorItem, 0L);
-            mrAreaPropertyPanel.maLastColor = aColor;
-
-        if (mrAreaPropertyPanel.GetColorFloatWin()->IsInPopupMode() )
-            mrAreaPropertyPanel.GetColorFloatWin()->EndPopupMode();
-    }
-
-    return( 0L );
-}
-
-//////////////////////////////////////////////////////////////////////////////
-
-class SvxAreaTrGrPage : public svx::sidebar::PropertyPanelPopupPage
-{
-public:
-	SvxAreaTrGrPage(Window* pParent, svx::sidebar::AreaPropertyPanel& rPanel);
-    virtual ~SvxAreaTrGrPage();
-
-	void ToGetFocus();
-	void Rearrange(XFillFloatTransparenceItem* pGradientItem);
-	void InitStatus(XFillFloatTransparenceItem* pGradientItem);
-	void ExecuteValueModify( sal_uInt8 nStartCol, sal_uInt8 nEndCol );
-	void SetControlState_Impl(XGradientStyle eXGS);
-private:	
-	FixedText           maFtTrgrCenterX;
-	MetricField         maMtrTrgrCenterX;
-	FixedText           maFtTrgrCenterY;
-	MetricField         maMtrTrgrCenterY;
-	FixedText           maFtTrgrAngle;
-	MetricField         maMtrTrgrAngle;	
-	ToolBox		 	    maBtnLeft45;
-	ToolBox		 	    maBtnRight45;
-	FixedText           maFtTrgrStartValue;
-	MetricField         maMtrTrgrStartValue;
-	FixedText           maFtTrgrEndValue;
-	MetricField         maMtrTrgrEndValue;
-	FixedText           maFtTrgrBorder;
-	MetricField         maMtrTrgrBorder;
-	Image				maRotLeft;
-	Image				maRotRight;
-
-	svx::sidebar::AreaPropertyPanel& mrAreaPropertyPanel;
-	SfxBindings*		mpBindings;
-	DECL_LINK( ModifiedTrgrHdl_Impl, void* );
-	DECL_LINK( Left_Click45_Impl, void* );
-	DECL_LINK( Right_Click45_Impl, void* );
-};
-
-SvxAreaTrGrPage::SvxAreaTrGrPage(Window* pParent, svx::sidebar::AreaPropertyPanel& rPanel)
-:	svx::sidebar::PropertyPanelPopupPage( pParent,SVX_RES(RID_POPUPPANEL_AREAPAGE_TRGR)),
-	maFtTrgrCenterX(this, SVX_RES(FT_TRGR_CENTER_X)),
-	maMtrTrgrCenterX(this, SVX_RES(MTR_TRGR_CENTER_X)),
-	maFtTrgrCenterY(this, SVX_RES(FT_TRGR_CENTER_Y)),
-	maMtrTrgrCenterY(this, SVX_RES(MTR_TRGR_CENTER_Y)),
-	maFtTrgrAngle(this, SVX_RES(FT_TRGR_ANGLE)),
-	maMtrTrgrAngle(this, SVX_RES(MTR_TRGR_ANGLE)),	
-	maFtTrgrStartValue(this, SVX_RES(FT_TRGR_START_VALUE)),
-	maMtrTrgrStartValue(this, SVX_RES(MTR_TRGR_START_VALUE)),
-	maFtTrgrEndValue(this, SVX_RES(FT_TRGR_END_VALUE)),
-	maMtrTrgrEndValue(this, SVX_RES(MTR_TRGR_END_VALUE)),
-	maFtTrgrBorder(this, SVX_RES(FT_TRGR_BORDER)),
-	maMtrTrgrBorder(this, SVX_RES(MTR_TRGR_BORDER)),
-	maBtnLeft45(this, SVX_RES(BTN_LEFT_SECOND)),
-	maBtnRight45(this, SVX_RES(BTN_RIGHT_FIRST)),
-	maRotLeft( SVX_RES(IMG_ROT_LEFT)),
-	maRotRight( SVX_RES(IMG_ROT_RIGHT)),
-	mrAreaPropertyPanel(rPanel),
-	mpBindings(NULL)
-{
-	Link aLink = LINK( this, SvxAreaTrGrPage, ModifiedTrgrHdl_Impl);
-	maMtrTrgrCenterX.SetModifyHdl( aLink );
-	maMtrTrgrCenterY.SetModifyHdl( aLink );
-	maMtrTrgrAngle.SetModifyHdl( aLink );
-	maMtrTrgrBorder.SetModifyHdl( aLink );
-	maMtrTrgrStartValue.SetModifyHdl( aLink );
-	maMtrTrgrEndValue.SetModifyHdl( aLink );
-	aLink = LINK( this, SvxAreaTrGrPage, Left_Click45_Impl);
-	maBtnLeft45.SetSelectHdl( aLink );
-	aLink = LINK( this, SvxAreaTrGrPage, Right_Click45_Impl);
-	maBtnRight45.SetSelectHdl( aLink );
-	maBtnLeft45.SetItemImage(1,maRotLeft);
-	Size aTbxSize = maBtnLeft45.CalcWindowSizePixel();
-	maBtnLeft45.SetOutputSizePixel( aTbxSize );
-	maBtnLeft45.SetQuickHelpText(1, String(SVX_RES(STR_HELP_LEFT)));	//acc wj
-
-	maBtnRight45.SetItemImage(1,maRotRight);
-	aTbxSize = maBtnRight45.CalcWindowSizePixel();
-	maBtnRight45.SetOutputSizePixel( aTbxSize );
-	maBtnRight45.SetQuickHelpText(1, String(SVX_RES(STR_HELP_RIGHT)));	//acc wj
-
-	maBtnLeft45.SetBackground(Wallpaper());
-	maBtnLeft45.SetPaintTransparent(true);
-	maBtnRight45.SetBackground(Wallpaper());
-	maBtnRight45.SetPaintTransparent(true);
-
-	FreeResource();
-    mpBindings = mrAreaPropertyPanel.GetBindings();
-}
-
-SvxAreaTrGrPage::~SvxAreaTrGrPage()
-{
-}
-
-void SvxAreaTrGrPage::ToGetFocus()
-{
-	if(maMtrTrgrCenterX.IsVisible())
-		maMtrTrgrCenterX.GrabFocus();
-	else
-		maMtrTrgrAngle.GrabFocus();
-}
-
-void SvxAreaTrGrPage::Rearrange(XFillFloatTransparenceItem* pGradientItem)
-{
-	InitStatus(pGradientItem);
-	const XGradient& rGradient = pGradientItem->GetGradientValue();	
-	XGradientStyle eXGS(rGradient.GetGradientStyle());
-	Size aSize(POP_WIDTH,POP_HEIGHT);
-	aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) );
-	Size aSize2(POP_WIDTH,POP_HEIGHT2);
-	aSize2 = LogicToPixel( aSize2, MapMode(MAP_APPFONT) );
-	long aPosY = 0;
-	Point aPointAngle;
-	Size aSizeAngle = maMtrTrgrAngle.GetSizePixel();
-	Size aTbxSize = maBtnLeft45.CalcWindowSizePixel();
-
-	switch(eXGS)
-	{
-	case XGRAD_LINEAR:
-	case XGRAD_AXIAL:
-		maFtTrgrCenterX.Hide();
-		maMtrTrgrCenterX.Hide();
-		maFtTrgrCenterY.Hide();
-		maMtrTrgrCenterY.Hide();
-		maFtTrgrAngle.Show();
-		maFtTrgrAngle.SetPosPixel(APOS1_1);
-		maMtrTrgrAngle.Show();
-		maMtrTrgrAngle.SetPosPixel(APOS2_1);
-		maFtTrgrStartValue.SetPosPixel(APOS1_3);
-		maMtrTrgrStartValue.SetPosPixel(APOS1_4);
-		maFtTrgrEndValue.SetPosPixel(APOS2_3);
-		maMtrTrgrEndValue.SetPosPixel(APOS2_4);
-		maFtTrgrBorder.SetPosPixel(APOS1_5);
-		maMtrTrgrBorder.SetPosPixel(APOS1_6);
-
-		maBtnLeft45.Show();
-		maBtnRight45.Show();
-
-		aPointAngle = maMtrTrgrAngle.GetPosPixel();
-		aPosY = aPointAngle.getY() + aSizeAngle.getHeight() - aTbxSize.getHeight();
-
-		maBtnLeft45.SetPosPixel(Point(APOS_Left_Right_1.getX(), aPosY));
-		maBtnRight45.SetPosPixel(Point(APOS_Left_Right_2.getX(), aPosY));
-
-		SetSizePixel(aSize2);
-		break;
-
-	case XGRAD_RADIAL:
-		maFtTrgrCenterX.Show();
-		maFtTrgrCenterX.SetPosPixel(APOS1_1);
-		maMtrTrgrCenterX.Show();
-		maMtrTrgrCenterX.SetPosPixel(APOS2_1);
-		maFtTrgrCenterY.Show();
-		maFtTrgrCenterY.SetPosPixel(APOS1_2);
-		maMtrTrgrCenterY.Show();
-		maMtrTrgrCenterY.SetPosPixel(APOS2_2);
-		maFtTrgrAngle.Hide();
-		maMtrTrgrAngle.Hide();
-		maFtTrgrStartValue.SetPosPixel(APOS1_3);
-		maMtrTrgrStartValue.SetPosPixel(APOS1_4);
-		maFtTrgrEndValue.SetPosPixel(APOS2_3);
-		maMtrTrgrEndValue.SetPosPixel(APOS2_4);
-		maFtTrgrBorder.SetPosPixel(APOS1_5);
-		maMtrTrgrBorder.SetPosPixel(APOS1_6);
-
-		maBtnLeft45.Hide();
-		maBtnRight45.Hide();
-
-		SetSizePixel(aSize2);
-
-		break;
-
-	case XGRAD_ELLIPTICAL:
-	case XGRAD_SQUARE:
-	case XGRAD_RECT:
-		maFtTrgrCenterX.Show();
-		maFtTrgrCenterX.SetPosPixel(APOS1_1);
-		maMtrTrgrCenterX.Show();
-		maMtrTrgrCenterX.SetPosPixel(APOS2_1);
-		maFtTrgrCenterY.Show();
-		maFtTrgrCenterY.SetPosPixel(APOS1_2);
-		maMtrTrgrCenterY.Show();
-		maMtrTrgrCenterY.SetPosPixel(APOS2_2);
-		maFtTrgrAngle.Show();
-		maFtTrgrAngle.SetPosPixel(APOS1_3);
-		maMtrTrgrAngle.Show();
-		maMtrTrgrAngle.SetPosPixel(APOS1_4);
-
-		maFtTrgrStartValue.SetPosPixel(APOS1_5);
-		maMtrTrgrStartValue.SetPosPixel(APOS1_6);
-		maFtTrgrEndValue.SetPosPixel(APOS2_5);
-		maMtrTrgrEndValue.SetPosPixel(APOS2_6);
-		maFtTrgrBorder.SetPosPixel(APOS1_7);
-		maMtrTrgrBorder.SetPosPixel(APOS1_8);
-
-		maBtnLeft45.Show();
-		maBtnRight45.Show();
-
-		aPointAngle = maMtrTrgrAngle.GetPosPixel();
-		aPosY = aPointAngle.getY() + aSizeAngle.getHeight() - aTbxSize.getHeight();
-
-		maBtnLeft45.SetPosPixel(Point(APOS_Left_Right_3.getX(), aPosY));
-		maBtnRight45.SetPosPixel(Point(APOS_Left_Right_4.getX(), aPosY));
-
-		SetSizePixel(aSize);
-
-		break;
-	}
-}
-
-void SvxAreaTrGrPage::InitStatus(XFillFloatTransparenceItem* pGradientItem)
-{
-	const XGradient& aGradient = pGradientItem->GetGradientValue();
-
-	XGradient rGradient;
-
-	if (aGradient.GetXOffset() == DEFAULT_CENTERX &&
-		aGradient.GetYOffset() == DEFAULT_CENTERY &&
-		(aGradient.GetAngle() / 10) == DEFAULT_ANGLE &&
-		((sal_uInt16)((((sal_uInt16)aGradient.GetStartColor().GetRed() + 1) * 100) / 255)) == DEFAULT_STARTVALUE &&
-		((sal_uInt16)((((sal_uInt16)aGradient.GetEndColor().GetRed() + 1) * 100) / 255)) == DEFAULT_ENDVALUE &&
-		aGradient.GetBorder() == DEFAULT_BORDER)
-	{
-		switch(aGradient.GetGradientStyle())
-		{
-		case XGRAD_LINEAR:
-			{
-				rGradient = mrAreaPropertyPanel.maGradientLinear;
-			}
-			break;
-		case XGRAD_AXIAL:
-			{
-				rGradient = mrAreaPropertyPanel.maGradientAxial;
-			}
-			break;
-		case XGRAD_RADIAL:
-			{
-				rGradient = mrAreaPropertyPanel.maGradientRadial;
-			}
-			break;
-		case XGRAD_ELLIPTICAL:
-			{
-				rGradient = mrAreaPropertyPanel.maGradientElliptical;
-			}
-			break;
-		case XGRAD_SQUARE:
-			{
-				rGradient = mrAreaPropertyPanel.maGradientSquare;
-			}
-			break;
-		case XGRAD_RECT:
-			{
-				rGradient = mrAreaPropertyPanel.maGradientRect;
-			}
-			break;
-		}
-	}
-	else
-		rGradient = aGradient;
-	maMtrTrgrCenterX.SetValue(rGradient.GetXOffset());
-	maMtrTrgrCenterY.SetValue(rGradient.GetYOffset());
-	maMtrTrgrAngle.SetValue(rGradient.GetAngle() / 10);
-	maMtrTrgrStartValue.SetValue((sal_uInt16)((((sal_uInt16)rGradient.GetStartColor().GetRed() + 1) * 100) / 255));
-	maMtrTrgrEndValue.SetValue((sal_uInt16)((((sal_uInt16)rGradient.GetEndColor().GetRed() + 1) * 100) / 255));
-	maMtrTrgrBorder.SetValue(rGradient.GetBorder());	
-}
-
-void SvxAreaTrGrPage::ExecuteValueModify( sal_uInt8 nStartCol, sal_uInt8 nEndCol )
-{
-	//Added 
-	sal_Int16 aMtrValue = (sal_Int16)maMtrTrgrAngle.GetValue();
-	while(aMtrValue<0)
-		aMtrValue += 360;
-	sal_uInt16 nVal = aMtrValue/360;
-	nVal = aMtrValue - nVal*360;
-	maMtrTrgrAngle.SetValue(nVal);
-	//End of new code
-	XGradient aTmpGradient(
-		Color(nStartCol, nStartCol, nStartCol),
-		Color(nEndCol, nEndCol, nEndCol),
-		(XGradientStyle)(mrAreaPropertyPanel.mpLBTransType->GetSelectEntryPos()-2),
-		(sal_uInt16)maMtrTrgrAngle.GetValue() * 10,
-		(sal_uInt16)maMtrTrgrCenterX.GetValue(),
-		(sal_uInt16)maMtrTrgrCenterY.GetValue(),
-		(sal_uInt16)maMtrTrgrBorder.GetValue(),
-		100, 100);
-
-	switch(aTmpGradient.GetGradientStyle())
-	{
-	case XGRAD_LINEAR:
-		{
-			mrAreaPropertyPanel.maGradientLinear = aTmpGradient;
-		}
-		break;
-	case XGRAD_AXIAL:
-		{
-			mrAreaPropertyPanel.maGradientAxial = aTmpGradient;
-		}
-		break;
-	case XGRAD_RADIAL:
-		{
-			mrAreaPropertyPanel.maGradientRadial = aTmpGradient;
-		}
-		break;
-	case XGRAD_ELLIPTICAL:
-		{
-			mrAreaPropertyPanel.maGradientElliptical = aTmpGradient;
-		}
-		break;
-	case XGRAD_SQUARE:
-		{
-			mrAreaPropertyPanel.maGradientSquare = aTmpGradient;
-		}
-		break;
-	case XGRAD_RECT:
-		{
-			mrAreaPropertyPanel.maGradientRect = aTmpGradient;
-		}
-		break;
-	}
-
-	SfxItemPool* pPool = NULL;
-	bool bEnable = true;		
-	XFillFloatTransparenceItem aGradientItem(pPool,aTmpGradient, bEnable );
-
-	mpBindings->GetDispatcher()->Execute( SID_ATTR_FILL_FLOATTRANSPARENCE, SFX_CALLMODE_RECORD, &aGradientItem, 0L );
-}
-
-IMPL_LINK(SvxAreaTrGrPage, ModifiedTrgrHdl_Impl, void *, pControl)
-{
-	sal_uInt8 nStartCol = (sal_uInt8)(((sal_uInt16)maMtrTrgrStartValue.GetValue() * 255) / 100);
-	sal_uInt8 nEndCol = (sal_uInt8)(((sal_uInt16)maMtrTrgrEndValue.GetValue() * 255) / 100);
-	ExecuteValueModify( nStartCol, nEndCol );
-	return( 0L );
-}
-
-IMPL_LINK(SvxAreaTrGrPage, Left_Click45_Impl, void *, pControl)
-{
-	sal_uInt8 nStartCol = (sal_uInt8)(((sal_uInt16)maMtrTrgrStartValue.GetValue() * 255) / 100);
-	sal_uInt8 nEndCol = (sal_uInt8)(((sal_uInt16)maMtrTrgrEndValue.GetValue() * 255) / 100);
-	sal_uInt16 aTemp = (sal_uInt16)maMtrTrgrAngle.GetValue();
-	if(aTemp>=315)
-		aTemp -= 360;
-	aTemp += 45;
-	maMtrTrgrAngle.SetValue(aTemp);
-	ExecuteValueModify( nStartCol, nEndCol );
-	return( 0L );
-}
-
-IMPL_LINK(SvxAreaTrGrPage, Right_Click45_Impl, void *, pControl)
-{
-	sal_uInt8 nStartCol = (sal_uInt8)(((sal_uInt16)maMtrTrgrStartValue.GetValue() * 255) / 100);
-	sal_uInt8 nEndCol = (sal_uInt8)(((sal_uInt16)maMtrTrgrEndValue.GetValue() * 255) / 100);
-	sal_uInt16 aTemp = (sal_uInt16)maMtrTrgrAngle.GetValue();
-	if(aTemp<45)
-		aTemp += 360;
-	aTemp -= 45;
-	maMtrTrgrAngle.SetValue(aTemp);
-	ExecuteValueModify( nStartCol, nEndCol );
-	return( 0L );
-}
-
-
-//////////////////////////////////////////////////////////////////////////////
 
 AreaPropertyPanel::AreaPropertyPanel(
     Window* pParent,
@@ -678,10 +131,8 @@ AreaPropertyPanel::AreaPropertyPanel(
     maImgColorH(SVX_RES(IMG_COLOR_H)),
     msHelpFillType(SVX_RES(STR_HELP_TYPE)),
     msHelpFillAttr(SVX_RES(STR_HELP_ATTR)),
-    mpTrGrFloatWin(),
-    mpTrGrPage(),
-    mpFloatWinColor(),
-    mpPageColor(),
+    maTrGrPopup(this, ::boost::bind(&AreaPropertyPanel::CreateTransparencyGradientControl, this, _1)),
+    maColorPopup(this, ::boost::bind(&AreaPropertyPanel::CreateColorPopupControl, this, _1)),
     mpFloatTransparenceItem(),
     mpTransparanceItem(),
     mxFrame(rxFrame),
@@ -694,22 +145,18 @@ AreaPropertyPanel::AreaPropertyPanel(
     FreeResource();
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 AreaPropertyPanel::~AreaPropertyPanel()
 {
-    // Destroy the background windows of the toolboxes.
+    // Destroy the toolboxes, then their background windows.
+    mpToolBoxColor.reset();
+    mpBTNGradient.reset();
     mpToolBoxColorBackground.reset();
     mpBTNGradientBackground.reset();
-
-    // Destroy the popup windows
-    mpTrGrPage.reset();
-    mpTrGrFloatWin.reset();
-    mpPageColor.reset();
-    mpFloatWinColor.reset();
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void AreaPropertyPanel::ShowMenu (void)
 {
@@ -721,7 +168,7 @@ void AreaPropertyPanel::ShowMenu (void)
     }
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void AreaPropertyPanel::Initialize()
 {
@@ -747,10 +194,6 @@ void AreaPropertyPanel::Initialize()
 
     maGradientRect = maGradientLinear;
     maGradientRect.SetGradientStyle(XGRAD_RECT);
-
-    //Added for windows classic theme
-    mpBTNGradient->SetBackground(Wallpaper());
-    mpBTNGradient->SetPaintTransparent(true);
 
     Size aLogicalFillSize(MBOX_WIDTH,LISTBOX_HEIGHT);
     Size aLogicalAttrSize(MBOX_WIDTH + 1,LISTBOX_HEIGHT);
@@ -846,7 +289,7 @@ void AreaPropertyPanel::Initialize()
     SetupIcons();
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 {
@@ -995,7 +438,7 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pToolBox )
 {
@@ -1085,12 +528,15 @@ IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pToolBox )
 					mnLastPosBitmap = nPos;
 			}
 			break;
+
+                    default:
+                        break;
 		}
 	}
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 //add  for color picker
 
 IMPL_LINK(AreaPropertyPanel, ToolBoxColorDropHdl, ToolBox*, pToolBox)
@@ -1099,65 +545,53 @@ IMPL_LINK(AreaPropertyPanel, ToolBoxColorDropHdl, ToolBox*, pToolBox)
 
     if(nId == TBI_COLOR)
     {
-		pToolBox->SetItemDown( nId, true );
-
-		SvxColorPage* pColorPage = GetColorPage();
-		Size aFloatSz = pColorPage->GetOutputSizePixel();
-        GetColorFloatWin()->SetSizePixel( aFloatSz );
-
-		Point aPos = mpToolBoxColor->GetPosPixel();
-		aPos = OutputToScreenPixel( aPos );
-		Size aSize = mpToolBoxColor->GetSizePixel();
-		Rectangle aRect( aPos, aSize );
-
-        GetColorFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_NOFOCUSCLOSE|FLOATWIN_POPUPMODE_DOWN );
-        GetColorFloatWin()->SetPopupModeFlags(GetColorFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
-		
-		pColorPage->GetFocus();
-
-        if(mpColorItem)
-			pColorPage->SetCurColorSelect(mpColorItem->GetColorValue(), mbColorAvail);		
+        maColorPopup.Show(*pToolBox);
+	    if (mpColorItem)
+            maColorPopup.SetCurrentColor(mpColorItem->GetColorValue(), mbColorAvail);
 		else
-			pColorPage->SetCurColorSelect(COL_WHITE, false);
+			maColorPopup.SetCurrentColor(COL_WHITE, false);
 	}
 
     return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
 
-void AreaPropertyPanel::ImpEnsureFloatWinColorAndPageColor()
+
+void AreaPropertyPanel::SetColor (
+    const String& rsColorName,
+    const Color aColor)
 {
-    if(!mpFloatWinColor)
-    {
-        mpFloatWinColor.reset(new PropertyPanelPopuplWindow(this));
-        mpFloatWinColor->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Color")));	//wj acc
-        mpFloatWinColor->SetPopupModeEndHdl( LINK( this, AreaPropertyPanel, ImplPopupModeEndHdl ) );
-        mpPageColor.reset(new SvxColorPage(mpFloatWinColor.get(), *this));
-        mpFloatWinColor->SetBorderStyle(mpFloatWinColor->GetBorderStyle() | WINDOW_BORDER_MENU);
-    }
+    XFillColorItem aXFillColorItem (rsColorName, aColor);
+    mpBindings->GetDispatcher()->Execute(SID_ATTR_FILL_COLOR, SFX_CALLMODE_RECORD, &aXFillColorItem, 0L);
+    maLastColor = aColor;
 }
 
-//////////////////////////////////////////////////////////////////////////////
-//color picker popup window 
 
-SvxColorPage* AreaPropertyPanel::GetColorPage()
+
+
+PopupControl* AreaPropertyPanel::CreateTransparencyGradientControl (PopupContainer* pParent)
 {
-    ImpEnsureFloatWinColorAndPageColor();
-
-    return mpPageColor.get();
+    return new AreaTransparencyGradientControl(pParent, *this);
 }
 
-//////////////////////////////////////////////////////////////////////////////
 
-PropertyPanelPopuplWindow* AreaPropertyPanel::GetColorFloatWin()
+
+
+PopupControl* AreaPropertyPanel::CreateColorPopupControl (PopupContainer* pParent)
 {
-    ImpEnsureFloatWinColorAndPageColor();
-
-    return mpFloatWinColor.get();
+    return new ColorControl(
+        pParent,
+        mpBindings,
+        SVX_RES(RID_POPUPPANEL_AERAPAGE_COLOR),
+        SVX_RES(VS_COLOR),
+        ::boost::bind(&AreaPropertyPanel::GetLastColor, this),
+        ::boost::bind(&AreaPropertyPanel::SetColor, this, _1,_2),
+        pParent,
+        0);
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
+
 
 void AreaPropertyPanel::SetupIcons(void)
 {
@@ -1171,7 +605,7 @@ void AreaPropertyPanel::SetupIcons(void)
     }
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 AreaPropertyPanel* AreaPropertyPanel::Create (
     Window* pParent,
@@ -1191,7 +625,7 @@ AreaPropertyPanel* AreaPropertyPanel::Create (
         pBindings);
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void AreaPropertyPanel::DataChanged(
     const DataChangedEvent& rEvent)
@@ -1201,7 +635,7 @@ void AreaPropertyPanel::DataChanged(
     SetupIcons();
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void AreaPropertyPanel::HandleContextChange(
     const ::sfx2::sidebar::EnumContext aContext)
@@ -1219,7 +653,7 @@ void AreaPropertyPanel::HandleContextChange(
     // todo
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void AreaPropertyPanel::ImpUpdateTransparencies()
 {
@@ -1245,10 +679,7 @@ void AreaPropertyPanel::ImpUpdateTransparencies()
                 mpMTRTransparent->SetValue(nValue);
             }
 
-            if(mpTrGrFloatWin)
-            {
-                mpTrGrFloatWin->EndPopupMode();
-            }
+            maTrGrPopup.Hide();
         }
 
         if(bZeroValue && mpFloatTransparenceItem.get())
@@ -1646,14 +1077,14 @@ void AreaPropertyPanel::NotifyItemUpdate(
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 SfxBindings* AreaPropertyPanel::GetBindings() 
 { 
     return mpBindings; 
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 void AreaPropertyPanel::Update()
 {
@@ -1769,79 +1200,27 @@ void AreaPropertyPanel::Update()
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
 
-void AreaPropertyPanel::ImpEnsureTrGrFloatWinAndTrGrPage()
-{
-    if(!mpTrGrFloatWin)
-    {
-        mpTrGrFloatWin.reset(new PropertyPanelPopuplWindow(this));
-        mpTrGrFloatWin->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency and Gradient")));	//wj acc
-        mpTrGrFloatWin->SetPopupModeEndHdl( LINK( this, AreaPropertyPanel, ImplPopupModeEndHdl ) );
-        mpTrGrPage.reset(new SvxAreaTrGrPage(mpTrGrFloatWin.get(), *this));
-    }
-}
-
-SvxAreaTrGrPage* AreaPropertyPanel::GetTrGrPage()
-{
-    ImpEnsureTrGrFloatWinAndTrGrPage();
-
-    return mpTrGrPage.get();
-}
-
-//////////////////////////////////////////////////////////////////////////////
-
-PropertyPanelPopuplWindow* AreaPropertyPanel::GetTrGrFloatWin()
-{
-    ImpEnsureTrGrFloatWinAndTrGrPage();
-
-    return mpTrGrFloatWin.get();
-}
-
-//////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK( AreaPropertyPanel, ImplPopupModeEndHdl, FloatingWindow*, EMPTYARG )
 {	
 	return 0;
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK( AreaPropertyPanel, ClickTrGrHdl_Impl, ToolBox*, pToolBox )
 {
-    sal_uInt16 nId = pToolBox->GetCurItemId();
-    
-    if(nId == BTN_GRADIENT)
-    {
-	    SvxAreaTrGrPage* pTrGrPage = GetTrGrPage();
-	    pTrGrPage->Rearrange(mpFloatTransparenceItem.get());
-	    pToolBox->SetItemDown( TBI_BTX_GRADIENT, true );
+    maTrGrPopup.Rearrange(mpFloatTransparenceItem.get());
 
-	    const XGradient& rGradient = mpFloatTransparenceItem->GetGradientValue();	
-	    XGradientStyle eXGS(rGradient.GetGradientStyle());
+    OSL_ASSERT(pToolBox->GetCurItemId() == TBI_BTX_GRADIENT);
 
-	    Size aFloatSz = pTrGrPage->GetOutputSizePixel();
-        GetTrGrFloatWin()->SetSizePixel( aFloatSz );
-
-	    Point aPos=mpBTNGradient->GetPosPixel();
-	    aPos = OutputToScreenPixel( aPos );
-	    Size aSize = mpBTNGradient->GetSizePixel();
-	    Rectangle aRect( aPos, aSize );
-
-	    //Todo
-	    //if( ImplIsAntiparallel() )
-        //    ImplReMirror( aRect );
-
-	    GetTrGrFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_DOWN | FLOATWIN_POPUPMODE_NOFOCUSCLOSE);
-	    GetTrGrFloatWin()->SetPopupModeFlags(GetTrGrFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
-
-	    pTrGrPage->ToGetFocus();
-    }
+    maTrGrPopup.Show(*pToolBox);
 
     return (0L);
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK(AreaPropertyPanel, ChangeTrgrTypeHdl_Impl, void *, EMPTYARG)
 {
@@ -1934,7 +1313,7 @@ IMPL_LINK(AreaPropertyPanel, ChangeTrgrTypeHdl_Impl, void *, EMPTYARG)
 	return( 0L );
 }
 
-//////////////////////////////////////////////////////////////////////////////
+
 
 IMPL_LINK(AreaPropertyPanel, ModifyTransparentHdl_Impl, void*, EMPTYARG)
 {
@@ -1949,10 +1328,69 @@ IMPL_LINK(AreaPropertyPanel, ModifyTransparentHdl_Impl, void*, EMPTYARG)
 	return 0L;
 }
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace close
 
-}} // end of namespace ::svx::sidebar
+Color AreaPropertyPanel::GetLastColor (void) const
+{
+    return maLastColor;
+}
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+
+
+
+XGradient AreaPropertyPanel::GetGradient (const XGradientStyle eStyle) const
+{
+    switch (eStyle)
+    {
+        default:
+		case XGRAD_LINEAR:
+            return maGradientLinear;
+		case XGRAD_AXIAL:
+            return maGradientAxial;
+		case XGRAD_RADIAL:
+            return maGradientRadial;
+		case XGRAD_ELLIPTICAL:
+            return maGradientElliptical;
+		case XGRAD_SQUARE:
+            return maGradientSquare;
+		case XGRAD_RECT:
+            return maGradientRect;
+    }
+}
+
+
+
+
+void AreaPropertyPanel::SetGradient (const XGradient& rGradient)
+{
+    switch (rGradient.GetGradientStyle())
+    {
+        case XGRAD_LINEAR:
+			maGradientLinear = rGradient;
+            break;
+        case XGRAD_AXIAL:
+			maGradientAxial = rGradient;
+            break;
+        case XGRAD_RADIAL:
+			maGradientRadial = rGradient;
+            break;
+        case XGRAD_ELLIPTICAL:
+			maGradientElliptical = rGradient;
+            break;
+        case XGRAD_SQUARE:
+            maGradientSquare = rGradient;
+            break;
+        case XGRAD_RECT:
+            maGradientRect = rGradient;
+            break;
+	}
+}
+
+
+
+
+sal_Int32 AreaPropertyPanel::GetSelectedTransparencyTypeIndex (void) const
+{
+    return mpLBTransType->GetSelectEntryPos();
+}
+
+} } // end of namespace svx::sidebar

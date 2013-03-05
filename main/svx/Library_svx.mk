@@ -174,11 +174,23 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/sidebar/ColorPanel \
     svx/source/sidebar/text/SvxSBFontNameBox \
     svx/source/sidebar/text/TextPropertyPanel \
-    svx/source/sidebar/geometry/AreaPropertyPanel \
-    svx/source/sidebar/geometry/GraphicPropertyPanel \
-    svx/source/sidebar/geometry/LinePropertyPanel \
-    svx/source/sidebar/geometry/TransformationPropertyPanel \
-    svx/source/sidebar/tools/PropertyPanelTools \
+    svx/source/sidebar/area/AreaPropertyPanel \
+    svx/source/sidebar/area/AreaTransparencyGradientControl \
+    svx/source/sidebar/area/AreaTransparencyGradientPopup \
+    svx/source/sidebar/graphic/GraphicPropertyPanel \
+    svx/source/sidebar/line/LinePropertyPanel \
+    svx/source/sidebar/line/LineStyleControl \
+    svx/source/sidebar/line/LineStyleValueSet \
+    svx/source/sidebar/line/LineStylePopup \
+    svx/source/sidebar/line/LineWidthControl \
+    svx/source/sidebar/line/LineWidthValueSet \
+    svx/source/sidebar/line/LineWidthPopup \
+    svx/source/sidebar/transform/TransformationPropertyPanel \
+    svx/source/sidebar/tools/ColorControl \
+    svx/source/sidebar/tools/ColorPopup \
+    svx/source/sidebar/tools/PopupControl \
+    svx/source/sidebar/tools/PopupContainer \
+    svx/source/sidebar/tools/Popup \
     svx/source/stbctrls/pszctrl \
     svx/source/stbctrls/insctrl \
     svx/source/stbctrls/selctrl \

@@ -98,10 +98,13 @@ Image Theme::GetImage (const ThemeItem eItem)
 Color Theme::GetColor (const ThemeItem eItem)
 {
     const PropertyType eType (GetPropertyType(eItem));
-    OSL_ASSERT(eType==PT_Color);
+    OSL_ASSERT(eType==PT_Color || eType==PT_Paint);
     const sal_Int32 nIndex (GetIndex(eItem, eType));
     const Theme& rTheme (GetCurrentTheme());
-    return rTheme.maColors[nIndex];
+    if (eType == PT_Color)
+        return rTheme.maColors[nIndex];
+    else if (eType == PT_Paint)
+        return rTheme.maPaints[nIndex].GetColor();
 }
 
 
@@ -213,19 +216,19 @@ void Theme::UpdateTheme (void)
 
 #define Alternatives(n,hc,sys) (mbIsHighContrastMode ? hc : (bUseSystemColors ? sys : n))
 
+        const Color aBaseBackgroundColor (rStyle.GetDialogColor());
+        Color aBorderColor (aBaseBackgroundColor);
+        aBorderColor.DecreaseLuminance(15);
+        Color aSecondColor (aBaseBackgroundColor);
+        aSecondColor.DecreaseLuminance(15);
+        
         setPropertyValue(
             maPropertyIdToNameMap[Paint_DeckBackground],
-            Any(sal_Int32(Alternatives(
-                        0xf0f0f0,
-                        0x000000,
-                        rStyle.GetDialogColor().GetRGBColor()))));
+            Any(sal_Int32(rStyle.GetMenuColor().GetRGBColor())));
 
         setPropertyValue(
             maPropertyIdToNameMap[Paint_DeckTitleBarBackground],
-            Any(sal_Int32(Alternatives(
-                        0xf0f0f0,
-                        0x000000,
-                        rStyle.GetDialogColor().GetRGBColor()))));
+            Any(sal_Int32(aBaseBackgroundColor.GetRGBColor())));
         setPropertyValue(
             maPropertyIdToNameMap[Int_DeckLeftPadding],
             Any(sal_Int32(2)));
@@ -246,10 +249,7 @@ void Theme::UpdateTheme (void)
             Any(sal_Int32(1)));
         setPropertyValue(
             maPropertyIdToNameMap[Color_DeckTitleFont],
-            Any(sal_Int32(Alternatives(
-                        0x262626,
-                        0x00ff00,
-                        rStyle.GetDialogTextColor().GetRGBColor()))));
+            Any(sal_Int32(rStyle.GetFontColor().GetRGBColor())));
         setPropertyValue(
             maPropertyIdToNameMap[Int_DeckTitleBarHeight],
             Any(sal_Int32(Alternatives(
@@ -258,10 +258,17 @@ void Theme::UpdateTheme (void)
                         rStyle.GetFloatTitleHeight()))));
         setPropertyValue(
             maPropertyIdToNameMap[Paint_PanelBackground],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xffffff)));
+            Any(sal_Int32(rStyle.GetDialogColor().GetRGBColor())));
+        //            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 :
+        //            0xffffff)));
+        
         setPropertyValue(
             maPropertyIdToNameMap[Paint_PanelTitleBarBackground],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xb2b2b2)));
+            Any(Tools::VclToAwtGradient(Gradient(
+                        GRADIENT_LINEAR,
+                        aSecondColor.GetRGBColor(),
+                        aBaseBackgroundColor.GetRGBColor()
+                        ))));
         setPropertyValue(
             maPropertyIdToNameMap[Color_PanelTitleFont],
             Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0x262626)));
@@ -273,7 +280,7 @@ void Theme::UpdateTheme (void)
                         rStyle.GetTitleHeight()))));
         setPropertyValue(
             maPropertyIdToNameMap[Paint_TabBarBackground],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0xf0f0f0)));
+            Any(sal_Int32(aBaseBackgroundColor.GetRGBColor())));
         setPropertyValue(
             maPropertyIdToNameMap[Int_TabBarLeftPadding],
             Any(sal_Int32(2)));
@@ -292,7 +299,7 @@ void Theme::UpdateTheme (void)
             Any(sal_Int32(6)));
         setPropertyValue(
             maPropertyIdToNameMap[Color_TabMenuSeparator],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf)));
+            Any(sal_Int32(aBorderColor.GetRGBColor())));
         setPropertyValue(
             maPropertyIdToNameMap[Int_TabMenuSeparatorPadding],
             Any(sal_Int32(7)));
@@ -305,20 +312,32 @@ void Theme::UpdateTheme (void)
             Any(sal_Int32(32)));
         setPropertyValue(
             maPropertyIdToNameMap[Color_TabItemBorder],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf)));
+            Any(sal_Int32(rStyle.GetActiveBorderColor().GetRGBColor())));
+        //                    mbIsHighContrastMode ? 0x00ff00 : 0xbfbfbf)));
+
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_DropDownBackground],
+            Any(sal_Int32(aBaseBackgroundColor.GetRGBColor())));
+        setPropertyValue(
+            maPropertyIdToNameMap[Color_DropDownBorder],
+            Any(sal_Int32(rStyle.GetActiveBorderColor().GetRGBColor())));
+
         setPropertyValue(
             maPropertyIdToNameMap[Paint_TabItemBackgroundNormal],
             Any());
         setPropertyValue(
             maPropertyIdToNameMap[Paint_TabItemBackgroundHighlight],
-            Any(sal_Int32(mbIsHighContrastMode ? 0x000000 : 0x00ffffff)));
+            Any(sal_Int32(rStyle.GetActiveTabColor().GetRGBColor())));
+        //                    mbIsHighContrastMode ? 0x000000 : 0x00ffffff)));
 
         setPropertyValue(
             maPropertyIdToNameMap[Paint_HorizontalBorder],
-            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff00 : 0xd9d9d9)));
+            Any(sal_Int32(aBorderColor.GetRGBColor())));
+        //                    mbIsHighContrastMode ? 0x00ff00 :  0xe4e4e4)));
         setPropertyValue(
             maPropertyIdToNameMap[Paint_VerticalBorder],
-            Any(sal_Int32(mbIsHighContrastMode ? 0xff00ff00 : 0xd9d9d9)));
+            Any(sal_Int32(aBorderColor.GetRGBColor())));
+        //                    mbIsHighContrastMode ? 0x00ff00 : 0xe4e4e4)));
 
         setPropertyValue(
             maPropertyIdToNameMap[Image_Grip],
@@ -363,6 +382,34 @@ void Theme::UpdateTheme (void)
                 A2S("private:graphicrepository/sfx2/res/separator.png")));
 
         // ToolBox
+
+        /*
+        // Separator style
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBackground],
+            Any(sal_Int32(rStyle.GetMenuColor().GetRGBColor())));
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBorderTopLeft],
+            Any());
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBorderCenterCorners],
+            Any());
+        setPropertyValue(
+            maPropertyIdToNameMap[Paint_ToolBoxBorderBottomRight],
+            Any());
+        setPropertyValue(
+            maPropertyIdToNameMap[Rect_ToolBoxPadding],
+            Any(awt::Rectangle(2,2,2,2)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Rect_ToolBoxBorder],
+            Any(awt::Rectangle(0,0,0,0)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Bool_UseToolBoxItemSeparator],
+            Any(true));
+
+        */
+
+        // Gradient style
         setPropertyValue(
             maPropertyIdToNameMap[Paint_ToolBoxBackground],
             Any(Tools::VclToAwtGradient(Gradient(
@@ -751,6 +798,7 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Color_PanelTitleFont);
     AddEntry(Color_TabMenuSeparator);
     AddEntry(Color_TabItemBorder);
+    AddEntry(Color_DropDownBorder);
 
     AddEntry(Paint_DeckBackground);
     AddEntry(Paint_DeckTitleBarBackground);
@@ -765,6 +813,7 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Paint_ToolBoxBorderTopLeft);
     AddEntry(Paint_ToolBoxBorderCenterCorners);
     AddEntry(Paint_ToolBoxBorderBottomRight);
+    AddEntry(Paint_DropDownBackground);
 
     AddEntry(Int_DeckTitleBarHeight);
     AddEntry(Int_DeckBorderSize);
@@ -816,6 +865,7 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Color_PanelTitleFont:
         case Color_TabMenuSeparator:
         case Color_TabItemBorder:
+        case Color_DropDownBorder:
             return PT_Color;
 
         case Paint_DeckBackground:
@@ -831,6 +881,7 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Paint_ToolBoxBorderTopLeft:
         case Paint_ToolBoxBorderCenterCorners:
         case Paint_ToolBoxBorderBottomRight:
+        case Paint_DropDownBackground:
             return PT_Paint;
 
         case Int_DeckTitleBarHeight:
