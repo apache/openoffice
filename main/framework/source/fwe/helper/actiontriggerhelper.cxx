@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_framework.hxx"
 #include <framework/actiontriggerhelper.hxx>
@@ -34,7 +36,7 @@
 #include <tools/stream.hxx>
 #include <cppuhelper/weak.hxx>
 #include <comphelper/processfactory.hxx>
-#include <vcl/dibtools.hxx>
+
 
 const sal_uInt16 START_ITEMID = 1000;
 
@@ -194,7 +196,7 @@ void InsertSubMenuItems( Menu* pSubMenu, sal_uInt16& nItemId, Reference< XIndexC
 									{
 										aDIBSeq = xBitmap->getDIB();
 										SvMemoryStream aMem( (void *)aDIBSeq.getConstArray(), aDIBSeq.getLength(), STREAM_READ );
-                                        ReadDIB(aBitmap, aMem, true);
+										aMem >> aBitmap;
 									}
 
 									aDIBSeq = xBitmap->getMaskDIB();
@@ -202,7 +204,7 @@ void InsertSubMenuItems( Menu* pSubMenu, sal_uInt16& nItemId, Reference< XIndexC
 									{
 										Bitmap aMaskBitmap;
 										SvMemoryStream aMem( (void *)aDIBSeq.getConstArray(), aDIBSeq.getLength(), STREAM_READ );
-                                        ReadDIB(aMaskBitmap, aMem, true);
+										aMem >> aMaskBitmap;
 										aImage = Image( aBitmap, aMaskBitmap );
 									}
 									else

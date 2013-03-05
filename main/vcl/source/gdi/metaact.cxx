@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -32,8 +34,8 @@
 #include <vcl/salbtype.hxx>
 #include <vcl/metaact.hxx>
 #include <vcl/graphictools.hxx>
+//#include <svgio/svgreader/svgreader.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
-#include <vcl/dibtools.hxx>
 
 // ========================================================================
 
@@ -1830,8 +1832,7 @@ void MetaBmpAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmp )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIB(maBmp, rOStm, false, true);
-		rOStm << maPt;
+		rOStm << maBmp << maPt;
 	}
 }
 
@@ -1840,8 +1841,7 @@ void MetaBmpAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaBmpAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIB(maBmp, rIStm, true);
-	rIStm >> maPt;
+	rIStm >> maBmp >> maPt;
 }
 
 // ========================================================================
@@ -1908,8 +1908,7 @@ void MetaBmpScaleAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmp )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIB(maBmp, rOStm, false, true);
-		rOStm << maPt << maSz;
+		rOStm << maBmp << maPt << maSz;
 	}
 }
 
@@ -1918,8 +1917,7 @@ void MetaBmpScaleAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaBmpScaleAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIB(maBmp, rIStm, true);
-	rIStm >> maPt >> maSz;
+	rIStm >> maBmp >> maPt >> maSz;
 }
 
 // ========================================================================
@@ -1991,8 +1989,7 @@ void MetaBmpScalePartAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmp )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIB(maBmp, rOStm, false, true);
-		rOStm << maDstPt << maDstSz << maSrcPt << maSrcSz;
+		rOStm << maBmp << maDstPt << maDstSz << maSrcPt << maSrcSz;
 	}
 }
 
@@ -2001,8 +1998,7 @@ void MetaBmpScalePartAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaBmpScalePartAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIB(maBmp, rIStm, true);
-	rIStm >> maDstPt >> maDstSz >> maSrcPt >> maSrcSz;
+	rIStm >> maBmp >> maDstPt >> maDstSz >> maSrcPt >> maSrcSz;
 }
 
 // ========================================================================
@@ -2063,8 +2059,7 @@ void MetaBmpExAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmpEx.GetBitmap() )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIBBitmapEx(maBmpEx, rOStm);
-		rOStm << maPt;
+		rOStm << maBmpEx << maPt;
 	}
 }
 
@@ -2073,8 +2068,7 @@ void MetaBmpExAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaBmpExAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIBBitmapEx(maBmpEx, rIStm);
-	rIStm >> maPt;
+	rIStm >> maBmpEx >> maPt;
 }
 
 // ========================================================================
@@ -2141,8 +2135,7 @@ void MetaBmpExScaleAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmpEx.GetBitmap() )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIBBitmapEx(maBmpEx, rOStm);
-		rOStm << maPt << maSz;
+		rOStm << maBmpEx << maPt << maSz;
 	}
 }
 
@@ -2151,8 +2144,7 @@ void MetaBmpExScaleAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaBmpExScaleAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIBBitmapEx(maBmpEx, rIStm);
-	rIStm >> maPt >> maSz;
+	rIStm >> maBmpEx >> maPt >> maSz;
 }
 
 // ========================================================================
@@ -2224,8 +2216,7 @@ void MetaBmpExScalePartAction::Write( SvStream& rOStm, ImplMetaWriteData* pData 
 	if( !!maBmpEx.GetBitmap() )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIBBitmapEx(maBmpEx, rOStm);
-		rOStm << maDstPt << maDstSz << maSrcPt << maSrcSz;
+		rOStm << maBmpEx << maDstPt << maDstSz << maSrcPt << maSrcSz;
 	}
 }
 
@@ -2234,8 +2225,7 @@ void MetaBmpExScalePartAction::Write( SvStream& rOStm, ImplMetaWriteData* pData 
 void MetaBmpExScalePartAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIBBitmapEx(maBmpEx, rIStm);
-	rIStm >> maDstPt >> maDstSz >> maSrcPt >> maSrcSz;
+	rIStm >> maBmpEx >> maDstPt >> maDstSz >> maSrcPt >> maSrcSz;
 }
 
 // ========================================================================
@@ -2300,8 +2290,7 @@ void MetaMaskAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmp )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIB(maBmp, rOStm, false, true);
-		rOStm << maPt;
+		rOStm << maBmp << maPt;
 	}
 }
 
@@ -2310,8 +2299,7 @@ void MetaMaskAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaMaskAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIB(maBmp, rIStm, true);
-	rIStm >> maPt;
+	rIStm >> maBmp >> maPt;
 }
 
 // ========================================================================
@@ -2381,8 +2369,7 @@ void MetaMaskScaleAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmp )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIB(maBmp, rOStm, false, true);
-		rOStm << maPt << maSz;
+		rOStm << maBmp << maPt << maSz;
 	}
 }
 
@@ -2391,8 +2378,7 @@ void MetaMaskScaleAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaMaskScaleAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIB(maBmp, rIStm, true);
-	rIStm >> maPt >> maSz;
+	rIStm >> maBmp >> maPt >> maSz;
 }
 
 // ========================================================================
@@ -2467,7 +2453,7 @@ void MetaMaskScalePartAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 	if( !!maBmp )
 	{
 		WRITE_BASE_COMPAT( rOStm, 1, pData );
-        WriteDIB(maBmp, rOStm, false, true);
+		rOStm << maBmp;
 		maColor.Write( rOStm, sal_True );
 		rOStm << maDstPt << maDstSz << maSrcPt << maSrcSz;
 	}
@@ -2478,7 +2464,7 @@ void MetaMaskScalePartAction::Write( SvStream& rOStm, ImplMetaWriteData* pData )
 void MetaMaskScalePartAction::Read( SvStream& rIStm, ImplMetaReadData* )
 {
 	COMPAT( rIStm );
-    ReadDIB(maBmp, rIStm, true);
+	rIStm >> maBmp;
 	maColor.Read( rIStm, sal_True );
 	rIStm >> maDstPt >> maDstSz >> maSrcPt >> maSrcSz;
 }

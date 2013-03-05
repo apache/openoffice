@@ -314,7 +314,7 @@ void WW8_WrtBookmarks::MoveFieldMarks(sal_uLong nFrom,sal_uLong nTo)
     {
         if (aItr->second)
         {
-            if (aItr->second->first == (long)nFrom)
+            if (aItr->second->first == nFrom)
             {
                 aItr->second->second.first = true;
                 aItr->second->first = nTo;
@@ -1433,8 +1433,8 @@ int WW8Export::CollectGrfsOfBullets() const
 	
 	if ( pDoc )
 	{
-		sal_uInt16 nCountRule = pDoc->GetNumRuleTbl().Count();
-		for (sal_uInt16 n = 0; n < nCountRule; ++n)
+		int nCountRule = pDoc->GetNumRuleTbl().Count();
+		for (int n = 0; n < nCountRule; ++n)
 	    	{
 			const SwNumRule &rRule = *(pDoc->GetNumRuleTbl().GetObject(n));
 			sal_uInt16 nLevels = rRule.IsContinusNum() ? 1 : 9;
@@ -1449,7 +1449,7 @@ int WW8Export::CollectGrfsOfBullets() const
 				if ( pGrf )
 				{
 					bool bHas = false;
-					for (sal_uInt16 i = 0; i < m_vecBulletPic.size(); ++i)
+					for (int i = 0; i < m_vecBulletPic.size(); ++i)
 					{
 						if (m_vecBulletPic[i]->GetChecksum() == pGrf->GetChecksum())
 						{
@@ -1532,7 +1532,7 @@ int WW8Export::GetGrfIndex(const SvxBrushItem& rBrush)
 	int nIndex = -1;
 	if ( rBrush.GetGraphic() )
 	{
-		for (sal_uInt16 i = 0; i < m_vecBulletPic.size(); ++i)
+		for (int i = 0; i < m_vecBulletPic.size(); ++i)
 		{
 			if (m_vecBulletPic[i]->GetChecksum() == rBrush.GetGraphic()->GetChecksum())
 			{
@@ -2038,14 +2038,14 @@ void WW8AttributeOutput::TableInfoRow( ww8::WW8TableNodeInfoInner::Pointer_t pTa
     }
 }
 
-static sal_uInt16 lcl_TCFlags(SwDoc &rDoc, const SwTableBox * pBox, const sal_Int32 nRowSpan)
+static sal_uInt16 lcl_TCFlags(SwDoc &rDoc, const SwTableBox * pBox, const sal_uInt32 nRowSpan)
 {
     sal_uInt16 nFlags = 0;
 
     if (nRowSpan > 1)
         nFlags |= (3 << 5);
-    else if (nRowSpan < 0)
-        nFlags |= (1 << 5);
+    //else if (nRowSpan < 0)
+    //    nFlags |= (1 << 5);
 
     if (pBox != NULL)
     {

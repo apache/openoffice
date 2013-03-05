@@ -61,8 +61,8 @@ import com.sun.star.uno.XInterface;
  * @see com.sun.star.accessibility.XAccessibleEventBroadcaster
  * @see com.sun.star.accessibility.XAccessibleSelection
  * @see ifc.accessibility._XAccessibleComponent
- * @see ifc.accessibility._XAccessibleEventBroadcaster
- * @see ifc.accessibility._XAccessibleSelection
+ * @see ifc.accessibility.XAccessibleEventBroadcaster
+ * @see ifc.accessibility.XAccessibleSelection
  * @see ifc.accessibility._XAccessibleContext
  */
 public class ScAccessibleDocument extends TestCase {
@@ -72,13 +72,13 @@ public class ScAccessibleDocument extends TestCase {
     /**
     * Called to create an instance of <code>TestEnvironment</code>
     * with an object to test and related objects.
-    * Obtains accessible object for the spreadsheet document.
+    * Obtains accissible object for the spreadsheet document.
     *
-    * @param Param test parameters
+    * @param tParam test parameters
     * @param log writer to log information while testing
     *
     * @see TestEnvironment
-    * @see #getTestEnvironment
+    * @see #getTestEnvironment()
     */
     protected TestEnvironment createTestEnvironment(
         TestParameters Param, PrintWriter log) {
@@ -118,7 +118,8 @@ public class ScAccessibleDocument extends TestCase {
     /**
     * Called while disposing a <code>TestEnvironment</code>.
     * Disposes calc document.
-    * @param Param test parameters
+    * @param tParam test parameters
+    * @param tEnv the environment to cleanup
     * @param log writer to log information while testing
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
@@ -131,10 +132,10 @@ public class ScAccessibleDocument extends TestCase {
      * implementation does nothing. Subclasses can override to initialize
      * objects shared among all <code>TestEnvironment</code>s.
      *
-     * @param Param test parameters
+     * @param tParam test parameters
      * @param log writer to log information while testing
      *
-     * @see #initializeTestCase
+     * @see #initializeTestCase()
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
         // get a soffice factory object

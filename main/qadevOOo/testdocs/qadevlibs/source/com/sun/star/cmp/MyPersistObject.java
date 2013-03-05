@@ -172,7 +172,7 @@ public class MyPersistObject implements XPersistObject, XTypeProvider,
 
 
     /**
-     * Function to get information about the property set.
+     * Fuction to get information about the property set.
      * @return The information
      * @see com.sun.star.io.XPropertySet
      */

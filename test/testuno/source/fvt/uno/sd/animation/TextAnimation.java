@@ -197,7 +197,7 @@ public class TextAnimation {
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent)UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 }

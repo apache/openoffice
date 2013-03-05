@@ -98,9 +98,6 @@ static sal_uInt16 nLastItemId = USHRT_MAX;
 // filter box has maximum 12 entries visible
 #define MAX_FILTER_ENTRIES          12
 
-#define SFX_TEMPLDLG_FILTER_MAX             0xFFFF
-#define SFX_TEMPLDLG_FILTER_HIERARCHICAL    0xFFFE
-
 //=========================================================================
 
 TYPEINIT0(SfxCommonTemplateDialog_Impl);
@@ -758,7 +755,7 @@ SfxCommonTemplateDialog_Impl::SfxCommonTemplateDialog_Impl( SfxBindings* pB, Sfx
 	aFmtLb					( this, WB_BORDER | WB_TABSTOP | WB_SORT | WB_QUICK_SEARCH ),
 	aFilterLb				( pW, WB_BORDER | WB_DROPDOWN | WB_TABSTOP ),
 
-	nActFamily				( SFX_TEMPLDLG_FILTER_MAX ),
+	nActFamily				( 0xffff ),
 	nActFilter				( 0 ),
 	nAppFilter				( 0 ),
 
@@ -803,7 +800,7 @@ SfxCommonTemplateDialog_Impl::SfxCommonTemplateDialog_Impl( SfxBindings* pB, Mod
 	aFmtLb					( this, SfxResId( BT_VLIST ) ),
 	aFilterLb				( pW, SfxResId( BT_FLIST ) ),
 
-	nActFamily				( SFX_TEMPLDLG_FILTER_MAX ),
+	nActFamily				( 0xffff ),
 	nActFilter				( 0 ),
 	nAppFilter				( 0 ),
 
@@ -877,10 +874,8 @@ void SfxCommonTemplateDialog_Impl::ReadResource()
 	else
 		pStyleFamilies = new SfxStyleFamilies( aFamId );
 
-	nActFilter = pCurObjShell ?
-        static_cast< sal_uInt16 >( LoadFactoryStyleFilter( pCurObjShell ) ) :
-        SFX_TEMPLDLG_FILTER_MAX;
-    if ( pCurObjShell && SFX_TEMPLDLG_FILTER_MAX == nActFilter )
+	nActFilter = pCurObjShell ? static_cast< sal_uInt16 >( LoadFactoryStyleFilter( pCurObjShell ) ) : 0xFFFF;
+    if ( pCurObjShell && 0xFFFF == nActFilter )
         nActFilter = pCurObjShell->GetAutoStyleFilterIndex();
 
 		// Einfuegen in die Toolbox
@@ -1172,7 +1167,7 @@ void SfxCommonTemplateDialog_Impl::EnableTreeDrag( sal_Bool bEnable )
 void SfxCommonTemplateDialog_Impl::FillTreeBox()
 {
 	DBG_ASSERT( pTreeBox, "FillTreeBox() without treebox");
-	if(pStyleSheetPool && nActFamily != SFX_TEMPLDLG_FILTER_MAX)
+	if(pStyleSheetPool && nActFamily != 0xffff)
 	{
 		const SfxStyleFamilyItem *pItem = GetFamilyItem_Impl();
 		pStyleSheetPool->SetSearchMask(pItem->GetFamily(), SFXSTYLEBIT_ALL);
@@ -1481,7 +1476,7 @@ void SfxCommonTemplateDialog_Impl::Update_Impl()
 	 SfxTemplateItem *pItem = 0;
 	 // aktueller Bereich nicht innerhalb der erlaubten Bereiche
 	 // oder Default
-	 if(nActFamily == SFX_TEMPLDLG_FILTER_MAX || 0 == (pItem = pFamilyState[nActFamily-1] ) )
+	 if(nActFamily == 0xffff || 0 == (pItem = pFamilyState[nActFamily-1] ) )
 	 {
 		 CheckItem(nActFamily, sal_False);
 		 SfxTemplateItem **ppItem = pFamilyState;
@@ -1501,7 +1496,7 @@ void SfxCommonTemplateDialog_Impl::Update_Impl()
 		 // andere DocShell -> alles neu
 		 CheckItem( nActFamily, sal_True );
 		 nActFilter = static_cast< sal_uInt16 >( LoadFactoryStyleFilter( pDocShell ) );
-         if ( SFX_TEMPLDLG_FILTER_MAX == nActFilter )
+         if ( 0xFFFF == nActFilter )
             nActFilter = pDocShell->GetAutoStyleFilterIndex();
 
 		 nAppFilter = pItem->GetValue();
@@ -1517,6 +1512,10 @@ void SfxCommonTemplateDialog_Impl::Update_Impl()
 		 // anderer Filter fuer automatisch
 		 CheckItem( nActFamily, sal_True );
 		 const SfxStyleFamilyItem *pStyleItem =  GetFamilyItem_Impl();
+#if OSL_DEBUG_LEVEL > 1
+		 SfxFilterTupel *pT;
+         pT = pStyleItem->GetFilterList().GetObject(nActFilter);
+#endif
 		 if(0 == pStyleItem->GetFilterList().GetObject(nActFilter)->nFlags
 			&& nAppFilter != pItem->GetValue())
 		 {
@@ -1792,17 +1791,6 @@ IMPL_LINK( SfxCommonTemplateDialog_Impl, FilterSelectHdl, ListBox *, pBox )
 			SelectStyle(aSelectEntry);
 			pTreeBox->SetAccessibleName(SfxResId(STR_STYLE_ELEMTLIST));
 			pTreeBox->Show();
-
-            // Save the filter state
-            SfxViewFrame *pViewFrame = pBindings->GetDispatcher_Impl()->GetFrame();
-            SfxObjectShell *pDocShell = pViewFrame->GetObjectShell();
-            if (pDocShell)
-            {
-                // only in the configuration
-                // SetAutoStyleFilterIndex would update nActFilter
-                // which should only contain a valid listbox entry
-                SaveFactoryStyleFilter( pDocShell, SFX_TEMPLDLG_FILTER_HIERARCHICAL );
-            }
 		}
 	}
 
@@ -1873,13 +1861,13 @@ void SfxCommonTemplateDialog_Impl::ActionSelect(sal_uInt16 nEntry)
 		}
 		case SID_STYLE_NEW_BY_EXAMPLE:
 		{
-			if(pStyleSheetPool && nActFamily != SFX_TEMPLDLG_FILTER_MAX)
+			if(pStyleSheetPool && nActFamily != 0xffff)
 			{
 				const SfxStyleFamily eFam=GetFamilyItem_Impl()->GetFamily();
 //pStyleSheetPool->GetSearchFamily();
 				const SfxStyleFamilyItem *pItem = GetFamilyItem_Impl();
 				sal_uInt16 nFilter;
-				if(pItem&&nActFilter!=SFX_TEMPLDLG_FILTER_MAX)
+				if(pItem&&nActFilter!=0xffff)
 				{
 					nFilter = pItem->GetFilterList().GetObject(
 						nActFilter)->nFlags;
@@ -1970,7 +1958,7 @@ sal_Int32 SfxCommonTemplateDialog_Impl::LoadFactoryStyleFilter( SfxObjectShell* 
 
 void SfxCommonTemplateDialog_Impl::SaveFactoryStyleFilter( SfxObjectShell* i_pObjSh, sal_Int32 i_nFilter )
 {
-    DBG_ASSERT( i_pObjSh, "SfxCommonTemplateDialog_Impl::SaveFactoryStyleFilter(): no ObjectShell" );
+    DBG_ASSERT( i_pObjSh, "SfxCommonTemplateDialog_Impl::LoadFactoryStyleFilter(): no ObjectShell" );
     Reference< ::com::sun::star::container::XNameReplace > xContainer( xModuleManager, UNO_QUERY );
     if ( xContainer.is() )
     {
@@ -1999,7 +1987,7 @@ IMPL_LINK( SfxCommonTemplateDialog_Impl, DropHdl, StyleTreeListBox_Impl *, pBox 
 void SfxCommonTemplateDialog_Impl::NewHdl(void *)
 {
 	String aEmpty;
-	if ( nActFamily != SFX_TEMPLDLG_FILTER_MAX )
+	if ( nActFamily != 0xffff )
 	{
 		Window* pTmp;
 		pTmp = Application::GetDefDialogParent();
@@ -2011,7 +1999,7 @@ void SfxCommonTemplateDialog_Impl::NewHdl(void *)
 		const SfxStyleFamilyItem *pItem = GetFamilyItem_Impl();
 		const SfxStyleFamily eFam=pItem->GetFamily();
 		sal_uInt16 nMask;
-		if(pItem&&nActFilter!=SFX_TEMPLDLG_FILTER_MAX)
+		if(pItem&&nActFilter!=0xffff)
 		{
 			nMask = pItem->GetFilterList().GetObject(
 				nActFilter)->nFlags;
@@ -2279,7 +2267,7 @@ void SfxCommonTemplateDialog_Impl::ExecuteContextMenu_Impl( const Point& rPos, W
 SfxStyleFamily SfxCommonTemplateDialog_Impl::GetActualFamily() const
 {
 	const SfxStyleFamilyItem *pFamilyItem = GetFamilyItem_Impl();
-	if( !pFamilyItem || nActFamily == SFX_TEMPLDLG_FILTER_MAX )
+	if( !pFamilyItem || nActFamily == 0xffff )
 		return SFX_STYLE_FAMILY_PARA;
 	else
 		return pFamilyItem->GetFamily();
@@ -2333,16 +2321,6 @@ SfxTemplateDialog_Impl::SfxTemplateDialog_Impl(
 
 {
 	pDlgWindow->FreeResource();
-
-    // Read the filter stored in the configuration
-    // This is already done in ReadResource(), invoked by Initialize()
-    // and stored in nActFilter, but we can't rely on nActFilter's value
-    // because it is changed in UpdateStyles_Impl
-    SfxViewFrame* pViewFrame = pBindings->GetDispatcher_Impl()->GetFrame();
-    pCurObjShell = pViewFrame->GetObjectShell();
-    const sal_uInt16 nConfigFilter = pCurObjShell ?
-        static_cast< sal_uInt16 >( LoadFactoryStyleFilter( pCurObjShell ) ) : 0;
-
 	Initialize();
 
 	m_aActionTbL.SetSelectHdl(LINK(this, SfxTemplateDialog_Impl, ToolBoxLSelect));
@@ -2354,13 +2332,6 @@ SfxTemplateDialog_Impl::SfxTemplateDialog_Impl(
 	aFont.SetWeight( WEIGHT_NORMAL );
 	aFilterLb.SetFont( aFont );
 	m_aActionTbL.SetHelpId( HID_TEMPLDLG_TOOLBOX_LEFT );
-
-    if ( nConfigFilter == SFX_TEMPLDLG_FILTER_HIERARCHICAL )
-    {
-        bHierarchical = sal_False;
-        aFilterLb.SelectEntry(String(SfxResId(STR_STYLE_FILTER_HIERARCHICAL)));
-        FilterSelectHdl(&aFilterLb);
-    }
 }
 
 // ------------------------------------------------------------------------
@@ -2945,10 +2916,10 @@ void SfxCommonTemplateDialog_Impl::SetFamily( sal_uInt16 nId )
 {
 	if ( nId != nActFamily )
 	{
-		if ( nActFamily != SFX_TEMPLDLG_FILTER_MAX )
+		if ( nActFamily != 0xFFFF )
 			CheckItem( nActFamily, sal_False );
 		nActFamily = nId;
-		if ( nId != SFX_TEMPLDLG_FILTER_MAX )
+		if ( nId != 0xFFFF )
 			bUpdateFamily = sal_True;
 	}
 }

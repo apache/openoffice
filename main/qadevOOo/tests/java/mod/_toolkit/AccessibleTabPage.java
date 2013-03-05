@@ -78,7 +78,7 @@ import util.SOfficeFactory;
  * @see ifc.accessibility._XAccessibleEventBroadcaster
  * @see ifc.accessibility._XAccessibleContext
  * @see ifc.accessibility._XAccessibleComponent
- * @see ifc.accessibility._XAccessibleExtendedComponent
+ * @see ifc.accessibility.XAccessibleExtendedComponent
  */
 public class AccessibleTabPage extends TestCase {
     private static XDesktop the_Desk;

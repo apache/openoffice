@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
 
@@ -58,6 +60,7 @@
 #include <vcl/metaact.hxx>
 #include <svx/svxids.hrc>
 #include <toolkit/helper/vclunohelper.hxx>
+
 #include "DrawDocShell.hxx"
 #include "fupoor.hxx"
 #include "Window.hxx"
@@ -72,13 +75,13 @@
 #include "strmname.h"
 #include "unomodel.hxx"
 #include "ViewClipboard.hxx"
+
 #include <sfx2/ipclient.hxx>
 #include <comphelper/storagehelper.hxx>
 #include <comphelper/processfactory.hxx>
 #include <tools/stream.hxx>
 #include <vcl/cvtgrf.hxx>
 #include <svx/sdrhittesthelper.hxx>
-#include <svx/xbtmpit.hxx>
 
 // --------------
 // - Namespaces -
@@ -761,7 +764,6 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 								BegUndo( String( SdResId( STR_UNDO_DRAGDROP ) ) );
 								AddUndo( mpDoc->GetSdrUndoFactory().CreateUndoAttrObject( *pPickObj ) );
 							}
-
 							aSet.Put( pObj->GetMergedItemSet() );
 
 							// Eckenradius soll nicht uebernommen werden.
@@ -770,17 +772,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 							// nicht auf das Objekt uebertragen werden.
 							aSet.ClearItem( SDRATTR_ECKENRADIUS );
 
-                            const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(pObj);
-
-                            if(pSdrGrafObj)
-                            {
-                                // If we have a graphic as source object, use it's graphic
-                                // content as fill style
-                                aSet.Put(XFillStyleItem(XFILL_BITMAP));
-                                aSet.Put(XFillBitmapItem(&mpDoc->GetPool(), pSdrGrafObj->GetGraphic()));
-                            }
-
-                            pPickObj->SetMergedItemSetAndBroadcast( aSet );
+							pPickObj->SetMergedItemSetAndBroadcast( aSet );
 
 							if( pPickObj->ISA( E3dObject ) && pObj->ISA( E3dObject ) )
 							{
@@ -1255,9 +1247,9 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 	}
 	else if( ( !bLink || pPickObj ) && CHECK_FORMAT_TRANS( FORMAT_BITMAP ) )
 	{
-		BitmapEx aBmpEx;
+		Bitmap aBmp;
 
-		if( aDataHelper.GetBitmapEx( FORMAT_BITMAP, aBmpEx ) )
+		if( aDataHelper.GetBitmap( FORMAT_BITMAP, aBmp ) )
 		{
 			Point aInsertPos( rPos );
 
@@ -1278,10 +1270,10 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			}
 
 			// #90129# restrict movement to WorkArea
-			Size aImageMapSize(aBmpEx.GetPrefSize());
+			Size aImageMapSize(aBmp.GetPrefSize());
 			ImpCheckInsertPos(aInsertPos, aImageMapSize, GetWorkArea());
 
-			InsertGraphic( aBmpEx, mnAction, aInsertPos, NULL, pImageMap );
+			InsertGraphic( aBmp, mnAction, aInsertPos, NULL, pImageMap );
 			bReturn = sal_True;
 		}
 	}

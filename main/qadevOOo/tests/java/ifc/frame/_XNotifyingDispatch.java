@@ -48,7 +48,7 @@ import com.sun.star.frame.DispatchResultEvent;
 * <ul> <p>
 * @see com.sun.star.frame.XDispatch
 * @see com.sun.star.frame.XNotifyingDispatch
-* @see ifc.frame._XDispatch
+* @see ifc.frmae._XDispatch
 */
 public class _XNotifyingDispatch extends MultiMethodTest {
 

@@ -801,7 +801,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
                         {
                             // xImageControl.setScaleImage(true);
 
-                            xImageControl.setScaleMode(com.sun.star.awt.ImageScaleMode.ISOTROPIC);
+                            xImageControl.setScaleMode(com.sun.star.awt.ImageScaleMode.Isotropic);
                         }
                     }
                     else

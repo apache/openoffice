@@ -110,6 +110,7 @@
 #include "com/sun/star/awt/XLayoutConstrains.hpp"
 #include "com/sun/star/awt/XListBox.hpp"
 #include "com/sun/star/awt/XMenuBar.hpp"
+#include "com/sun/star/awt/XMenuExtended.hpp"
 #include "com/sun/star/awt/XMenuListener.hpp"
 #include "com/sun/star/awt/XMessageBox.hpp"
 #include "com/sun/star/awt/XMouseListener.hpp"

@@ -108,7 +108,7 @@ class Element(Node):
         return chars
 
     def hasAttr (self, name):
-        return name in self.attrs
+        return self.attrs.has_key(name)
 
     def getAttr (self, name):
         return self.attrs[name]
@@ -121,7 +121,7 @@ class Element(Node):
         return
 
     def clone (self, elem):
-        keys = list(elem.attrs.keys())
+        keys = elem.attrs.keys()
         for key in keys:
             self.attrs[key] = elem.attrs[key]
         self.rid = elem.rid

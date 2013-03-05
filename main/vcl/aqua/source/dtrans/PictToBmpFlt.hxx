@@ -28,31 +28,31 @@
 #include <Cocoa/Cocoa.h>
 #include <postmac.h>
 
-/** Transform an image from PICT to PNG format
+/* Transform PICT into the a Window BMP.
 
    Returns true if the conversion was successful false 
    otherwise.
  */
-bool PICTtoPNG(com::sun::star::uno::Sequence<sal_Int8>& rPictData, 
-			   com::sun::star::uno::Sequence<sal_Int8>& rPngData);
+bool PICTtoBMP(com::sun::star::uno::Sequence<sal_Int8>& aPict, 
+			   com::sun::star::uno::Sequence<sal_Int8>& aBmp);
 
-/** Transform an image from PNG to a PICT format
+/* Transform a Windows BMP to a PICT.
 
    Returns true if the conversion was successful false
    otherwise.
  */
-bool PNGtoPICT(com::sun::star::uno::Sequence<sal_Int8>& rPngData,
-			   com::sun::star::uno::Sequence<sal_Int8>& rPictData);
+bool BMPtoPICT(com::sun::star::uno::Sequence<sal_Int8>& aBmp, 
+			   com::sun::star::uno::Sequence<sal_Int8>& aPict);
 
 #define PICTImageFileType ((NSBitmapImageFileType)~0)
 
-bool ImageToPNG( com::sun::star::uno::Sequence<sal_Int8>& rImgData,
-			     com::sun::star::uno::Sequence<sal_Int8>& rPngData,
+bool ImageToBMP( com::sun::star::uno::Sequence<sal_Int8>& aPict, 
+			     com::sun::star::uno::Sequence<sal_Int8>& aBmp,
 			     NSBitmapImageFileType eInFormat);
 
-bool PNGToImage( com::sun::star::uno::Sequence<sal_Int8>& rPngData,
-			     com::sun::star::uno::Sequence<sal_Int8>& rImgData,
-			     NSBitmapImageFileType eOutFormat);
+bool BMPToImage( com::sun::star::uno::Sequence<sal_Int8>& aBmp, 
+			     com::sun::star::uno::Sequence<sal_Int8>& aPict,
+			     NSBitmapImageFileType eOutFormat
+			    );
 
 #endif
-

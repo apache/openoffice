@@ -238,6 +238,8 @@ uno::Reference< uno::XInterface > SAL_CALL create_EnhancedCustomShapeEngine( con
 #include "cppuhelper/factory.hxx"
 #include "uno/lbnames.h"
 #include <svx/sdr/primitive2d/primitiveFactory2d.hxx>
+#include "sidebar/PanelFactory.hxx"
+
 
 /*
 namespace svx
@@ -366,16 +368,15 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory (
                 ::svx::SvXMLGraphicExportHelper_createInstance,
                 ::svx::SvXMLGraphicExportHelper_getSupportedServiceNames() );
         }
-/*
-		else if( ::svx::ExtrusionDepthController_getImplementationName().equalsAscii( pImplName ) )
-		{
-			xFactory = ::cppu::createSingleFactory(
-				reinterpret_cast< lang::XMultiServiceFactory * >( pServiceManager ),
-				::svx::ExtrusionDepthController_getImplementationName(),
-				::svx::ExtrusionDepthController_createInstance,
-				::svx::ExtrusionDepthController_getSupportedServiceNames() );
-		}
-*/
+        else if (::svx::sidebar::PanelFactory::getImplementationName().equalsAscii(pImplName))
+        {
+            xFactory = ::cppu::createSingleFactory(
+                reinterpret_cast<lang::XMultiServiceFactory*>(pServiceManager),
+                ::svx::sidebar::PanelFactory::getImplementationName(),
+                ::svx::sidebar::PanelFactory::createInstance,
+                ::svx::sidebar::PanelFactory::getSupportedServiceNames());
+        }
+
 		if( xFactory.is())
 		{
 			xFactory->acquire();

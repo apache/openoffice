@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
 
@@ -28,7 +30,6 @@
 #include <rtl/tencinfo.h>
 #include <osl/endian.h>
 #include <vcl/svapp.hxx>
-#include <vcl/dibtools.hxx>
 
 //====================== MS-Windows-defines ===============================
 
@@ -616,7 +617,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
                 {
 				    Rectangle aDestRect( ReadYX(), aDestSize );
 				    if ( nWinROP != PATCOPY )
-					    ReadDIB(aBmp, *pWMF, false);
+					    aBmp.Read( *pWMF, sal_False );
 
                     // test if it is sensible to crop
                     if ( nSye && nSxe && 
@@ -641,7 +642,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 
 			*pWMF >> nFunction >> nFunction;
 
-			ReadDIB(aBmp, *pWMF, false);
+			aBmp.Read( *pWMF, sal_False );
 			pBmp = aBmp.AcquireReadAccess();
 			if ( pBmp )
 			{

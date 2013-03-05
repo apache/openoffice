@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sfx2.hxx"
 
@@ -32,8 +34,8 @@
 #include <unotools/pathoptions.hxx>
 #include <unotools/configmgr.hxx>
 #include <com/sun/star/uno/Any.h>
+
 #include <sfx2/sfxuno.hxx>
-#include <vcl/dibtools.hxx>
 
 // -----------------------------------------------------------------------
 
@@ -74,11 +76,8 @@ IntroWindow_Impl::IntroWindow_Impl( const Bitmap& rBmp ) :
 	INetURLObject aObj( SvtPathOptions().GetModulePath(), INET_PROT_FILE );
 	aObj.insertName( aBmpFileName );
 	SvFileStream aStrm( aObj.PathToFileName(), STREAM_STD_READ );
-	
-    if ( !aStrm.GetError() )
-    {
-        ReadDIB(aIntroBmp, aStrm, true);
-    }
+	if ( !aStrm.GetError() )
+		aStrm >> aIntroBmp;
 
 	Init();
 }

@@ -45,7 +45,7 @@
 	document display name is convertable to an ANSI
 	string and if not returns an english default.
 	So we avoid garbage if soemone for instance
-	installs an japanese version
+	installs an japanese StarOffice/OpenOffice
 	under a German Windows 98 for instance.
 */
 class RegistrationContextInformation  
@@ -150,7 +150,7 @@ public:
 	*/
 	std::wstring GetOpenOfficeFriendlyAppName() const;
 
-	/** The path to the office executable 
+	/** The path to the StarOffice/OpenOffice executable 
 	*/
 	std::wstring GetOpenOfficeExecutablePath() const;
 

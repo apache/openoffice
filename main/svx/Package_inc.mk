@@ -173,6 +173,7 @@ $(eval $(call gb_Package_add_file,svx_inc,inc/svx/unomaster.hxx,svx/unomaster.hx
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/svdedtv.hxx,svx/svdedtv.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/xlinjoit.hxx,svx/xlinjoit.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/xlncapit.hxx,svx/xlncapit.hxx))
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/AffineMatrixItem.hxx,svx/AffineMatrixItem.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sxmbritm.hxx,svx/sxmbritm.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/AccessibleGraphicShape.hxx,svx/AccessibleGraphicShape.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/xlnstit.hxx,svx/xlnstit.hxx))
@@ -555,4 +556,5 @@ $(eval $(call gb_Package_add_file,svx_inc,inc/svx/colrctrl.hxx,svx/colrctrl.hxx)
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/fmdpage.hxx,svx/fmdpage.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sxmtpitm.hxx,svx/sxmtpitm.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/globlmn.hrc,globlmn_tmpl.hrc))
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/ContextChangeEventMultiplexer.hxx,svx/sidebar/ContextChangeEventMultiplexer.hxx))
 

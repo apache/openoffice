@@ -56,6 +56,7 @@ public class TabControllerModel extends TestCase {
     protected void cleanup(TestParameters param, PrintWriter log) {
         log.println("disposing xTextDoc");
         util.DesktopTools.closeDoc(xTextDoc);
+        ;
     }
 
     public TestEnvironment createTestEnvironment(TestParameters param, 

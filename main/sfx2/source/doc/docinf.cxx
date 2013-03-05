@@ -25,17 +25,19 @@
 #include "precompiled_sfx2.hxx"
 
 #include <sfx2/docinf.hxx>
+
 #include <com/sun/star/beans/PropertyAttribute.hpp>
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/beans/XPropertyContainer.hpp>
 #include <com/sun/star/document/XDocumentProperties.hpp>
 #include <com/sun/star/uno/Exception.hpp>
+
 #include <rtl/ustring.hxx>
 #include <tools/debug.hxx>
 #include <comphelper/string.hxx>
 #include <sot/storage.hxx>
 #include <vcl/gdimtf.hxx>
-#include <vcl/dibtools.hxx>
+
 #include "oleprops.hxx"
 
 // ============================================================================
@@ -284,7 +286,7 @@ uno::Sequence<sal_uInt8> SFX2_DLLPUBLIC convertMetaFile(GDIMetaFile* i_pThumb)
         SvMemoryStream aStream;
 // magic value 160 taken from GraphicHelper::getThumbnailFormatFromGDI_Impl()
         if( i_pThumb->CreateThumbnail( 160, aBitmap ) ) {
-            WriteDIB(aBitmap.GetBitmap(), aStream, false, false);
+            aBitmap.GetBitmap().Write( aStream, sal_False, sal_False );
 //            uno::Sequence<sal_uInt8> aSeq(aStream.GetSize()); // WRONG
             aStream.Seek(STREAM_SEEK_TO_END);
             uno::Sequence<sal_uInt8> aSeq(aStream.Tell());

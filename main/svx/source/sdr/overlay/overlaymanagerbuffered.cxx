@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 #include <svx/sdr/overlay/overlaymanagerbuffered.hxx>
@@ -31,7 +33,6 @@
 #include <tools/stream.hxx>
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <vcl/cursor.hxx>
-#include <vcl/dibtools.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -252,7 +253,7 @@ namespace sdr
                 {
                     const Bitmap aBitmap(maBufferDevice.GetBitmap(aTopLeft, aSize));
                     SvFileStream aNew((const String&)String(ByteString( "c:\\test.bmp" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
-                    WriteDIB(aBitmap, aNew, false, true);
+                    aNew << aBitmap;
                 }
 #endif
             }

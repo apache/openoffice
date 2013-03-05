@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
 
@@ -27,6 +29,7 @@
 #include <vector>
 #include <set>
 #include <map>
+
 #include <rtl/crc.h>
 #include <tools/stream.hxx>
 #include <tools/fsys.hxx>
@@ -34,7 +37,7 @@
 #include <vcl/bitmap.hxx>
 #include <vcl/bmpacc.hxx>
 #include <vcl/pngread.hxx>
-#include <vcl/dibtools.hxx>
+
 #include "svl/solar.hrc"
 
 #define EXIT_NOERROR        0x00000000
@@ -282,7 +285,7 @@ void BmpSum::ProcessFile( const String& rBmpFileName )
     {
         BitmapEx aBmpEx;
 
-        ReadDIBBitmapEx(aBmpEx, aIStm);
+	    aIStm >> aBmpEx;
 
 	    if( !aBmpEx.IsEmpty() )
 	    {
@@ -382,7 +385,7 @@ void BmpSum::ProcessFileList( const String& rInFileList,
             {
                 BitmapEx aBmpEx;
 
-                ReadDIBBitmapEx(aBmpEx, aBmpStm);
+	            aBmpStm >> aBmpEx;
 
 	            if( !aBmpEx.IsEmpty() )
 	                nCRC = GetCRC( aBmpEx );

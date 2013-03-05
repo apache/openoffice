@@ -461,44 +461,21 @@ sub get_downloadname_language
 
 sub get_downloadname_productname
 {
-    my ($allvariables) = @_;
+	my ($allvariables) = @_;
 
-    my $start;
+	my $start = "Apache_OpenOffice";
 
-    if ( $allvariables->{'AOODOWNLOADNAMEPREFIX'} )
-    {
-        $start = $allvariables->{'AOODOWNLOADNAMEPREFIX'};
-    }
-    else
-    {
-        $start = "Apache_OpenOffice";
-        if ( $allvariables->{'PRODUCTNAME'} eq "Apache OpenOffice" ) 
-        {
-            if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
-            {
-                $start .= "-SDK"; 
-            }
-        }
+	if ( $allvariables->{'PRODUCTNAME'} eq "OpenOffice.org" ) { $start .= ""; }
 
-        if ( $allvariables->{'PRODUCTNAME'} eq "AOO-Developer-Build" ) 
-        {
-            if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
-            {
-                $start .= "-Dev-SDK"; 
-            }
-            else
-            {
-                $start .= "-Dev";
-            }
-        }
+	if ( $allvariables->{'PRODUCTNAME'} eq "OOo-dev" ) { $start .= "-Dev"; }
 
-        if ( $allvariables->{'PRODUCTNAME'} eq "URE" )
-        {
-            $start .= "-URE";
-        }
-    }
+	if (( $allvariables->{'PRODUCTNAME'} eq "OpenOffice.org" ) && ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )) { $start .= "-SDK"; }
 
-    return $start;
+	if (( $allvariables->{'PRODUCTNAME'} eq "OOo-dev" ) && ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )) { $start .= "-Dev-SDK"; }
+
+	if ( $allvariables->{'PRODUCTNAME'} eq "URE" ) { $start .= "-URE"; }
+
+	return $start;
 }
 
 #########################################################
@@ -1991,14 +1968,8 @@ sub create_download_sets
 
 	# evaluating the name of the download file
 
-	if ( $allvariableshashref->{'AOODOWNLOADNAME'} ) 
-    { 
-        $downloadname = set_download_filename($languagestringref, $allvariableshashref); 
-    }
-	else 
-    { 
-        $downloadname = resolve_variables_in_downloadname($allvariableshashref, $downloadname, $languagestringref); 
-    }
+	if ( $allvariableshashref->{'OOODOWNLOADNAME'} ) { $downloadname = set_download_filename($languagestringref, $allvariableshashref); }
+	else { $downloadname = resolve_variables_in_downloadname($allvariableshashref, $downloadname, $languagestringref); }
 
 	if ( ! $installer::globals::iswindowsbuild )	# Unix specific part
 	{
@@ -2007,7 +1978,7 @@ sub create_download_sets
 		my $getuidlibrary = "";
 		if (( $installer::globals::issolarisbuild ) || ( $installer::globals::islinuxbuild )) {	$getuidlibrary = get_path_for_library($includepatharrayref); }
 
-		if ( $allvariableshashref->{'AOODOWNLOADNAME'} )
+		if ( $allvariableshashref->{'OOODOWNLOADNAME'} )
 		{
 			my $downloadfile = create_tar_gz_file_from_directory($installationdir, $getuidlibrary, $downloaddir, $downloadname);
 		}

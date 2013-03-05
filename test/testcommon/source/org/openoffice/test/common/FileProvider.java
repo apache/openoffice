@@ -138,7 +138,7 @@ public class FileProvider extends Suite {
 			if (a != null) {
 				Object v = f.get(null);
 				if (v != null && !(v instanceof Integer))
-					throw new InitializationError(String.format("Field annotated FileFilter '%s' must be Integer.", f.getName()));
+					throw new InitializationError(String.format("Field annotated FileFilter '%s' must be String.", f.getName()));
 				repeat = (Integer) v;
 			}
 			

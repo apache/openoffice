@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 
@@ -27,7 +29,7 @@
 #include <vcl/virdev.hxx>
 #include <vcl/lineinfo.hxx>
 #include <svtools/fltcall.hxx>
-#include <vcl/dibtools.hxx>
+
 #include <math.h>
 
 // MT: NOOLDSV, someone should change the code...
@@ -2390,7 +2392,7 @@ void OS2METReader::ReadField(sal_uInt16 nFieldType, sal_uInt16 nFieldSize)
 			}
 			pBitmapList->pBMP->Seek(0);
 
-			ReadDIB(pBitmapList->aBitmap, *(pBitmapList->pBMP), false);
+			pBitmapList->aBitmap.Read( *( pBitmapList->pBMP ), sal_False );
 
 			if (pBitmapList->pBMP->GetError()!=0) {
 				pOS2MET->SetError(SVSTREAM_FILEFORMAT_ERROR);

@@ -78,10 +78,10 @@ import util.SOfficeFactory;
  * @see ifc.accessibility._XAccessibleEventBroadcaster
  * @see ifc.accessibility._XAccessibleContext
  * @see ifc.accessibility._XAccessibleComponent
- * @see ifc.accessibility._XAccessibleExtendedComponent
- * @see ifc.accessibility._XAccessibleAction
- * @see ifc.accessibility._XAccessibleText
- * @see ifc.accessibility._XAccessibleValue
+ * @see ifc.accessibility.XAccessibleExtendedComponent
+ * @see ifc.accessibility.XAccessibleAction
+ * @see ifc.accessibility.XAccessibleText
+ * @see ifc.accessibility.XAccessibleValue
  */
 public class AccessibleWindow extends TestCase {
     private static XDesktop the_Desk;
@@ -105,6 +105,7 @@ public class AccessibleWindow extends TestCase {
 
         if (xTextDoc != null) {
             util.DesktopTools.closeDoc(xTextDoc);
+            ;
         }
     }
 
@@ -138,6 +139,8 @@ public class AccessibleWindow extends TestCase {
         if (xTextDoc != null) {
             util.DesktopTools.closeDoc(xTextDoc);
         }
+
+        ;
 
         // get a soffice factory object
         SOfficeFactory SOF = SOfficeFactory.getFactory(
@@ -198,4 +201,3 @@ public class AccessibleWindow extends TestCase {
         return tEnv;
     }
 }
-

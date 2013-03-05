@@ -717,55 +717,51 @@ IMPL_LINK( SwView, ScrollHdl, SwScrollbar *, pScrollbar )
 		// 				so we dont must do it agin.
 		EndScrollHdl(pScrollbar);
 
-		if ( Help::IsQuickHelpEnabled() &&
-             pWrtShell->GetViewOptions()->IsShowScrollBarTips())
-        {
-            Point aPos( aVisArea.TopLeft() );
-            lcl_GetPos(this, aPos, pScrollbar, IsDocumentBorder());
+		Point aPos( aVisArea.TopLeft() );
+		lcl_GetPos(this, aPos, pScrollbar, IsDocumentBorder());
 
-            sal_uInt16 nPhNum = 1;
-            sal_uInt16 nVirtNum = 1;
+		sal_uInt16 nPhNum = 1;
+		sal_uInt16 nVirtNum = 1;
 
-            String sDisplay;
-            if(pWrtShell->GetPageNumber( aPos.Y(), sal_False, nPhNum, nVirtNum, sDisplay ))
-            {
-                // JP 21.07.00: the end scrollhandler invalidate the FN_STAT_PAGE,
-                //                 so we dont must do it agin.
-    //          if(!GetViewFrame()->GetFrame().IsInPlace())
-    //                S F X_BINDINGS().Update(FN_STAT_PAGE);
+		String sDisplay;
+		if(pWrtShell->GetPageNumber( aPos.Y(), sal_False, nPhNum, nVirtNum, sDisplay ))
+		{
+			// JP 21.07.00: the end scrollhandler invalidate the FN_STAT_PAGE,
+			// 				so we dont must do it agin.
+//          if(!GetViewFrame()->GetFrame().IsInPlace())
+//				S F X_BINDINGS().Update(FN_STAT_PAGE);
 
-                //QuickHelp:
-                if( pWrtShell->GetPageCnt() > 1 )
-                {
-                    if( !nPgNum || nPgNum != nPhNum )
-                    {
-                        Rectangle aRect;
-                        aRect.Left() = pScrollbar->GetParent()->OutputToScreenPixel(
-                                            pScrollbar->GetPosPixel() ).X() -8;
-                        aRect.Top() = pScrollbar->OutputToScreenPixel(
-                                        pScrollbar->GetPointerPosPixel() ).Y();
-                        aRect.Right()     = aRect.Left();
-                        aRect.Bottom()    = aRect.Top();
+			//QuickHelp:
+            if( pWrtShell->GetPageCnt() > 1 && Help::IsQuickHelpEnabled() )
+			{
+				if( !nPgNum || nPgNum != nPhNum )
+				{
+					Rectangle aRect;
+					aRect.Left() = pScrollbar->GetParent()->OutputToScreenPixel(
+										pScrollbar->GetPosPixel() ).X() -8;
+					aRect.Top() = pScrollbar->OutputToScreenPixel(
+									pScrollbar->GetPointerPosPixel() ).Y();
+					aRect.Right() 	= aRect.Left();
+					aRect.Bottom()	= aRect.Top();
 
-                        String sPageStr( GetPageStr( nPhNum, nVirtNum, sDisplay ));
-                        SwContentAtPos aCnt( SwContentAtPos::SW_OUTLINE );
-                        pWrtShell->GetContentAtPos( aPos, aCnt );
-                        if( aCnt.sStr.Len() )
-                        {
-                            sPageStr += String::CreateFromAscii(
-                                            RTL_CONSTASCII_STRINGPARAM( "  - " ));
-                            sPageStr.Insert( aCnt.sStr, 0, 80 );
-                            sPageStr.SearchAndReplaceAll( '\t', ' ' );
-                            sPageStr.SearchAndReplaceAll( 0x0a, ' ' );
-                        }
-
-                        Help::ShowQuickHelp( pScrollbar, aRect, sPageStr,
-                                        QUICKHELP_RIGHT|QUICKHELP_VCENTER);
+					String sPageStr( GetPageStr( nPhNum, nVirtNum, sDisplay ));
+					SwContentAtPos aCnt( SwContentAtPos::SW_OUTLINE );
+					pWrtShell->GetContentAtPos( aPos, aCnt );
+					if( aCnt.sStr.Len() )
+					{
+						sPageStr += String::CreateFromAscii(
+										RTL_CONSTASCII_STRINGPARAM( "  - " ));
+						sPageStr.Insert( aCnt.sStr, 0, 80 );
+						sPageStr.SearchAndReplaceAll( '\t', ' ' );
+                        sPageStr.SearchAndReplaceAll( 0x0a, ' ' );
                     }
-                    nPgNum = nPhNum;
-                }
-            }
-        }
+
+					Help::ShowQuickHelp( pScrollbar, aRect, sPageStr,
+									QUICKHELP_RIGHT|QUICKHELP_VCENTER);
+				}
+				nPgNum = nPhNum;
+			}
+		}
 	}
 	else
 		EndScrollHdl(pScrollbar);

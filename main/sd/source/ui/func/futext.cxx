@@ -37,6 +37,7 @@
 #include <svl/intitem.hxx>
 #include <svx/svdotext.hxx>
 #include <svx/svdogrp.hxx>
+#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include <editeng/flditem.hxx>
 #include <svl/style.hxx>
 #include <svx/svdpagv.hxx>
@@ -48,6 +49,7 @@
 #include <svx/svdoutl.hxx>
 #include <svx/svxids.hrc>
 #include <sfx2/docfile.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <comphelper/processfactory.hxx>
 #include <editeng/outlobj.hxx>
 #include <svtools/langtab.hxx>
@@ -1183,7 +1185,8 @@ void FuText::SetInEditMode(const MouseEvent& rMEvt, sal_Bool bQuickDrag)
 						{
 							// #98198# Move cursor to end of text
 							ESelection aNewSelection(EE_PARA_NOT_FOUND, EE_INDEX_NOT_FOUND, EE_PARA_NOT_FOUND, EE_INDEX_NOT_FOUND);
-							pOLV->SetSelection(aNewSelection);
+							if (pOLV != NULL)
+								pOLV->SetSelection(aNewSelection);
 						}
 					}
 					else

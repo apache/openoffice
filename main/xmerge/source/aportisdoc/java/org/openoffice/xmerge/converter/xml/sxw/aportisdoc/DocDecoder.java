@@ -32,7 +32,8 @@ import org.openoffice.xmerge.util.Resources;
 import org.openoffice.xmerge.util.Debug;
 
 /**
- *  This class is used by {@link DocumentDeserializerImpl}
+ *  This class is used by {@link
+ *  org.openoffice.xmerge.converter.xml.sxw.DocumentDeserializerImpl}
  *  to decode the AportisDoc format.  It currently decodes
  *  the text content into a single <code>String</code> object.
  *
@@ -60,7 +61,7 @@ final class DocDecoder implements DocConstants {
      *  Decode the text records into a single <code>String</code>
      *  of text content.
      *
-     *  @param  recs  <code>Record</code> array holding AportisDoc
+     *  @param  Record  <code>Record</code> array holding AportisDoc
      *                  contents.
      *
      *  @throws  IOException  If any I/O error occurs.
@@ -118,7 +119,7 @@ final class DocDecoder implements DocConstants {
      *  with the encoding of that PDB and throw
      *  <code>IOException</code>.</p>
      *
-     *  @param  cBytes           Compressed <code>byte</code> array.
+     *  @param  bytes           Compressed <code>byte</code> array.
      *  @param  textRecordSize  Size of uncompressed
      *                          <code>byte</code> array.
      *

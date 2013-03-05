@@ -370,10 +370,10 @@ sal_Bool ScViewFunc::PasteObject( const Point& rPos, const uno::Reference < embe
 		return sal_False;
 }
 
-sal_Bool ScViewFunc::PasteBitmapEx( const Point& rPos, const BitmapEx& rBmpEx )
+sal_Bool ScViewFunc::PasteBitmap( const Point& rPos, const Bitmap& rBmp )
 {
 	String aEmpty;
-	Graphic aGraphic(rBmpEx);
+	Graphic aGraphic(rBmp);
 	return PasteGraphic( rPos, aGraphic, aEmpty, aEmpty );
 }
 

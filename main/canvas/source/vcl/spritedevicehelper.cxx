@@ -19,20 +19,23 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_canvas.hxx"
 
 #include <canvas/debug.hxx>
 #include <canvas/canvastools.hxx>
+
 #include <toolkit/helper/vclunohelper.hxx>
 #include <vcl/canvastools.hxx>
 #include <basegfx/tools/canvastools.hxx>
-#include <vcl/dibtools.hxx>
 
 #include "spritedevicehelper.hxx"
 #include "spritecanvas.hxx"
 #include "spritecanvashelper.hxx"
 #include "canvasbitmap.hxx"
+
 
 using namespace ::com::sun::star;
 
@@ -141,7 +144,8 @@ namespace vclcanvas
                 
             const ::Point aEmptyPoint;
             mpBackBuffer->getOutDev().EnableMapMode( sal_False );
-            WriteDIB(mpBackBuffer->getOutDev().GetBitmap(aEmptyPoint, mpBackBuffer->getOutDev().GetOutputSizePixel()), aStream, false, true);
+            aStream << mpBackBuffer->getOutDev().GetBitmap(aEmptyPoint,
+                                                            mpBackBuffer->getOutDev().GetOutputSizePixel());
         }
 
         ++nFilePostfixCount;

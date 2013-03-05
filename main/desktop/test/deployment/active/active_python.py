@@ -24,7 +24,6 @@ import unohelper
 
 from com.sun.star.awt import Rectangle
 from com.sun.star.awt.MessageBoxButtons import BUTTONS_OK
-from com.sun.star.awt.MessageBoxType import INFOBOX
 from com.sun.star.frame import XDispatch, XDispatchProvider
 from com.sun.star.lang import XServiceInfo
 from com.sun.star.registry import InvalidRegistryException
@@ -80,7 +79,7 @@ class Dispatch(unohelper.Base, XServiceInfo, XDispatch):
                 smgr.createInstanceWithContext( \
                     "com.sun.star.frame.Desktop", self.context). \
                     getCurrentFrame().getComponentWindow(), \
-                INFOBOX, BUTTONS_OK, "active", "python")
+                Rectangle(), "infobox", BUTTONS_OK, "active", "python")
         box.execute();
         box.dispose();
 

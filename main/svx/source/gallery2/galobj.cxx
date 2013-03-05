@@ -29,8 +29,10 @@
 #include <com/sun/star/lang/XUnoTunnel.hpp>
 #include <sfx2/objsh.hxx>
 #include <sfx2/docfac.hxx>
+
 #include <comphelper/classids.hxx>
 #include <unotools/pathoptions.hxx>
+
 #include <tools/rcid.h>
 #include <tools/vcompat.hxx>
 #include <vcl/virdev.hxx>
@@ -43,7 +45,7 @@
 #include "galobj.hxx"
 #include <vcl/salbtype.hxx>		// FRound
 #include <vcl/svapp.hxx>
-#include <vcl/dibtools.hxx>
+
 #include "gallerydrawmodel.hxx"
 
 using namespace ::com::sun::star;
@@ -89,12 +91,11 @@ sal_Bool SgaObject::CreateThumb( const Graphic& rGraphic )
 		            else
 		                aBmpSize.Height() = FRound( aBmpSize.Width() / fFactorLog );
 
-		            aBmpEx.SetSizePixel( aBmpSize, BMP_SCALE_BESTQUALITY );
+		            aBmpEx.SetSizePixel( aBmpSize );
 		        }
 		    }
 
-            // take over BitmapEx
-			aThumbBmp = aBmpEx;
+			aThumbBmp = aBmpEx.GetBitmap( &aWhite );
 
 			if( ( aBmpSize.Width() <= S_THUMB ) && ( aBmpSize.Height() <= S_THUMB ) )
 			{
@@ -107,10 +108,8 @@ sal_Bool SgaObject::CreateThumb( const Graphic& rGraphic )
 				const Size	aNewSize( Max( (long) (fFactor < 1. ? S_THUMB * fFactor : S_THUMB), 8L ),
 									  Max( (long) (fFactor < 1. ? S_THUMB : S_THUMB / fFactor), 8L ) );
 
-				if(aThumbBmp.Scale(
-                    (double) aNewSize.Width() / aBmpSize.Width(),
-                    (double) aNewSize.Height() / aBmpSize.Height(), 
-                    BMP_SCALE_BESTQUALITY ) )
+				if( aThumbBmp.Scale( (double) aNewSize.Width() / aBmpSize.Width(),
+									 (double) aNewSize.Height() / aBmpSize.Height(), BMP_SCALE_INTERPOLATE ) )
 				{
 					aThumbBmp.Convert( BMP_CONVERSION_8BIT_COLORS );
 					bRet = sal_True;
@@ -128,8 +127,8 @@ sal_Bool SgaObject::CreateThumb( const Graphic& rGraphic )
 		else
 			aSize.Height() = (sal_Int32)( S_THUMB / fFactor );
 
-        const GraphicConversionParameters aParameters(aSize, false, true, true, true);
-        aThumbBmp = rGraphic.GetBitmapEx(aParameters);
+        const GraphicConversionParameters aParameters(aSize);
+        aThumbBmp = rGraphic.GetBitmap(aParameters);
 
 		if( !aThumbBmp.IsEmpty() )
 		{
@@ -158,7 +157,7 @@ void SgaObject::WriteData( SvStream& rOut, const String& rDestDir ) const
 		rOut.SetCompressMode( COMPRESSMODE_ZBITMAP );
 		rOut.SetVersion( SOFFICE_FILEFORMAT_50 );
 
-        WriteDIBBitmapEx(aThumbBmp, rOut);
+		rOut << aThumbBmp;
 
 		rOut.SetVersion( nOldVersion );
 		rOut.SetCompressMode( nOldCompressMode );
@@ -182,13 +181,9 @@ void SgaObject::ReadData(SvStream& rIn, sal_uInt16& rReadVersion )
 	rIn >> nTmp32 >> nTmp16 >> rReadVersion >> nTmp16 >> bIsThumbBmp;
 
 	if( bIsThumbBmp )
-    {
-        ReadDIBBitmapEx(aThumbBmp, rIn);
-    }
+		rIn >> aThumbBmp;
 	else
-    {
 		rIn >> aThumbMtf;
-    }
 
 	rIn >> aTmpStr; aURL = INetURLObject( String( aTmpStr.GetBuffer(), RTL_TEXTENCODING_UTF8 ) );
 }
@@ -357,7 +352,7 @@ SgaObjectSound::~SgaObjectSound()
 
 // ------------------------------------------------------------------------
 
-BitmapEx SgaObjectSound::GetThumbBmp() const
+Bitmap SgaObjectSound::GetThumbBmp() const
 {
 	sal_uInt16 nId;
 
@@ -378,8 +373,9 @@ BitmapEx SgaObjectSound::GetThumbBmp() const
 	}
 
 	const BitmapEx  aBmpEx( GAL_RESID( nId ) );
-	
-    return aBmpEx;
+	const Color     aTransColor( COL_WHITE );
+
+	return aBmpEx.GetBitmap( &aTransColor );
 }
 
 // ------------------------------------------------------------------------
@@ -523,54 +519,78 @@ sal_Bool SgaObjectSvDraw::CreateThumb( const FmFormModel& rModel )
 	sal_Bool		bRet = sal_False;
 
 	if ( CreateIMapGraphic( rModel, aGraphic, aImageMap ) )
-    {
 		bRet = SgaObject::CreateThumb( aGraphic );
-    }
 	else
 	{
-        const FmFormPage* pPage = static_cast< const FmFormPage* >(rModel.GetPage(0));
+        VirtualDevice aVDev;
 
-        if(pPage)
+        aVDev.SetOutputSizePixel( Size( S_THUMB*2, S_THUMB*2 ) );
+
+        bRet = DrawCentered( &aVDev, rModel );
+        if( bRet )
         {
-            const Rectangle aObjRect(pPage->GetAllObjBoundRect());
+            aThumbBmp = aVDev.GetBitmap( Point(), aVDev.GetOutputSizePixel() );
 
-            if(aObjRect.GetWidth() && aObjRect.GetHeight())
-            {
-                VirtualDevice aVDev;
-                FmFormView aView(const_cast< FmFormModel* >(&rModel), &aVDev);
+			Size aMS( 2, 2 );
+			BmpFilterParam aParam( aMS );
+			aThumbBmp.Filter( BMP_FILTER_MOSAIC, &aParam );
+			aThumbBmp.Scale( Size( S_THUMB, S_THUMB ) );
 
-                aView.ShowSdrPage(const_cast< FmFormPage* >(pPage));
-                aView.MarkAllObj();
-                aThumbBmp = aView.GetMarkedObjBitmapEx();
-
-                const Size aDiscreteSize(aThumbBmp.GetSizePixel());
-
-                if(aDiscreteSize.Width() && aDiscreteSize.Height())
-                {
-                    sal_uInt32 nTargetSizeX(S_THUMB);
-                    sal_uInt32 nTargetSizeY(S_THUMB);
-
-                    if(aDiscreteSize.Width() > aDiscreteSize.Height())
-                    {
-                        nTargetSizeY = (aDiscreteSize.Height() * nTargetSizeX) / aDiscreteSize.Width();
-                    }
-                    else
-                    {
-                        nTargetSizeX = (aDiscreteSize.Width() * nTargetSizeY) / aDiscreteSize.Height();
-                    }
-
-                    if(!!aThumbBmp)
-                    {
-                        aThumbBmp.Scale(Size(nTargetSizeX, nTargetSizeY), BMP_SCALE_BESTQUALITY);
-                        aThumbBmp.Convert(BMP_CONVERSION_8BIT_COLORS);
-                        bRet = true;
-                    }
-                }
-            }
+	        aThumbBmp.Convert( BMP_CONVERSION_8BIT_COLORS );
         }
 	}
 
 	return bRet;
+}
+
+// ------------------------------------------------------------------------
+
+sal_Bool SgaObjectSvDraw::DrawCentered( OutputDevice* pOut, const FmFormModel& rModel )
+{
+    const FmFormPage*   pPage = static_cast< const FmFormPage* >( rModel.GetPage( 0 ) );
+    sal_Bool                bRet = sal_False;
+
+    if( pOut && pPage )
+    {
+        const Rectangle aObjRect( pPage->GetAllObjBoundRect() );
+        const Size      aOutSizePix( pOut->GetOutputSizePixel() );
+
+        if( aObjRect.GetWidth() && aObjRect.GetHeight() && aOutSizePix.Width() > 2 && aOutSizePix.Height() > 2 )
+        {
+            FmFormView      aView( const_cast< FmFormModel* >( &rModel ), pOut );
+            MapMode	        aMap( rModel.GetScaleUnit() );
+            Rectangle       aDrawRectPix( Point( 1, 1 ), Size( aOutSizePix.Width() - 2, aOutSizePix.Height() - 2 ) );
+            const double    fFactor  = (double) aObjRect.GetWidth() / aObjRect.GetHeight();
+            Fraction        aFrac( FRound( fFactor < 1. ? aDrawRectPix.GetWidth() * fFactor : aDrawRectPix.GetWidth() ),
+                                   pOut->LogicToPixel( aObjRect.GetSize(), aMap ).Width() );
+
+            aMap.SetScaleX( aFrac );
+            aMap.SetScaleY( aFrac );
+
+            const Size aDrawSize( pOut->PixelToLogic( aDrawRectPix.GetSize(), aMap ) );
+            Point aOrigin( pOut->PixelToLogic( aDrawRectPix.TopLeft(), aMap ) );
+
+            aOrigin.X() += ( ( aDrawSize.Width() - aObjRect.GetWidth() ) >> 1 ) - aObjRect.Left();
+            aOrigin.Y() += ( ( aDrawSize.Height() - aObjRect.GetHeight() ) >> 1 ) - aObjRect.Top();
+            aMap.SetOrigin( aOrigin );
+
+            aView.SetPageVisible( sal_False );
+            aView.SetBordVisible( sal_False );
+            aView.SetGridVisible( sal_False );
+            aView.SetHlplVisible( sal_False );
+            aView.SetGlueVisible( sal_False );
+
+            pOut->Push();
+            pOut->SetMapMode( aMap );
+            aView.ShowSdrPage( const_cast< FmFormPage* >( pPage ));
+            aView.CompleteRedraw( pOut, Rectangle( pOut->PixelToLogic( Point() ), pOut->GetOutputSize() ) );
+            pOut->Pop();
+
+            bRet = sal_True;
+        }
+    }
+
+    return bRet;
 }
 
 // ------------------------------------------------------------------------
@@ -593,5 +613,3 @@ void SgaObjectSvDraw::ReadData( SvStream& rIn, sal_uInt16& rReadVersion )
 		rIn >> aTmpStr; aTitle = String( aTmpStr.GetBuffer(), RTL_TEXTENCODING_UTF8 );
 	}
 }
-
-// eof

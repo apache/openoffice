@@ -44,6 +44,8 @@
 //_______________________________________________
 // include interfaces
 
+#include <com/sun/star/system/XSystemShellExecute.hpp>
+#include <com/sun/star/system/SystemShellExecuteFlags.hpp>
 #include <com/sun/star/util/XStringSubstitution.hpp>
 
 //_______________________________________________

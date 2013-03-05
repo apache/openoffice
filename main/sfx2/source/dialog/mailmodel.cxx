@@ -32,8 +32,8 @@
 #include <com/sun/star/ucb/CommandAbortedException.hpp>
 #include <com/sun/star/uno/Reference.h>
 #include <com/sun/star/util/XURLTransformer.hpp>
-#include <com/sun/star/system/SystemMailProvider.hpp>
-#include <com/sun/star/system/MailClientFlags.hpp>
+#include <com/sun/star/system/XSimpleMailClientSupplier.hpp>
+#include <com/sun/star/system/SimpleMailClientFlags.hpp>
 #include <com/sun/star/embed/XStorage.hpp>
 #include <com/sun/star/embed/ElementModes.hpp>
 #include <com/sun/star/embed/XTransactedObject.hpp>
@@ -87,17 +87,10 @@ using namespace ::com::sun::star::lang;
 using namespace ::com::sun::star::ucb;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::util;
+using namespace ::com::sun::star::system;
+using namespace ::rtl;
 
-using ::com::sun::star::system::SystemMailProvider;
-using ::com::sun::star::system::XMailClient;
-using ::com::sun::star::system::XMailMessage;
-using ::com::sun::star::system::XSystemMailProvider;
-using rtl::OUString;
-
-namespace MailClientFlags = ::com::sun::star::system::MailClientFlags;
 namespace css = ::com::sun::star;
-
-
 // - class PrepareListener_Impl ------------------------------------------
 class PrepareListener_Impl : public ::cppu::WeakImplHelper1< css::frame::XStatusListener >
 {
@@ -829,32 +822,44 @@ SfxMailModel::SendMailResult SfxMailModel::Send( const css::uno::Reference< css:
 	SendMailResult	eResult = SEND_MAIL_ERROR;
     if ( !maAttachedDocuments.empty() )
 	{
-	    css::uno::Reference < XComponentContext > xContext = ::comphelper::getProcessComponentContext();
-	    if ( xContext.is() )
+	    css::uno::Reference < XMultiServiceFactory > xMgr = ::comphelper::getProcessServiceFactory();
+	    if ( xMgr.is() )
 	    {
-		    css::uno::Reference< XSystemMailProvider > xSystemMailProvider( SystemMailProvider::create( xContext ) );
+		    css::uno::Reference< XSimpleMailClientSupplier >	xSimpleMailClientSupplier;
 
-		    if ( xSystemMailProvider.is() )
+            // Prefer the SimpleSystemMail service if available
+            xSimpleMailClientSupplier = css::uno::Reference< XSimpleMailClientSupplier >(
+                xMgr->createInstance( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.system.SimpleSystemMail" ))),
+                UNO_QUERY );
+
+            if ( ! xSimpleMailClientSupplier.is() )
+            {
+                xSimpleMailClientSupplier = css::uno::Reference< XSimpleMailClientSupplier >(
+                    xMgr->createInstance( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.system.SimpleCommandMail" ))),
+                    UNO_QUERY );
+            }
+
+		    if ( xSimpleMailClientSupplier.is() )
 		    {
-			    css::uno::Reference< XMailClient > xMailClient = xSystemMailProvider->queryMailClient();
+			    css::uno::Reference< XSimpleMailClient > xSimpleMailClient = xSimpleMailClientSupplier->querySimpleMailClient();
 
-			    if ( !xMailClient.is() )
+			    if ( !xSimpleMailClient.is() )
 			    {
 				    // no mail client support => message box!
 				    return SEND_MAIL_ERROR;
 			    }
 
 			    // we have a simple mail client
-			    css::uno::Reference< XMailMessage > xMailMessage = xMailClient->createMailMessage();
-			    if ( xMailMessage.is() )
+			    css::uno::Reference< XSimpleMailMessage > xSimpleMailMessage = xSimpleMailClient->createSimpleMailMessage();
+			    if ( xSimpleMailMessage.is() )
 			    {
-				    sal_Int32 nSendFlags = MailClientFlags::DEFAULTS;
+				    sal_Int32 nSendFlags = SimpleMailClientFlags::DEFAULTS;
 				    if ( maFromAddress.Len() == 0 )
 				    {
 					    // from address not set, try figure out users e-mail address
 					    CreateFromAddress_Impl( maFromAddress );
 				    }
-				    xMailMessage->setOriginator( maFromAddress );
+				    xSimpleMailMessage->setOriginator( maFromAddress );
 
 				    sal_Int32 nToCount		= mpToList ? mpToList->Count() : 0;
 				    sal_Int32 nCcCount		= mpCcList ? mpCcList->Count() : 0;
@@ -864,13 +869,13 @@ SfxMailModel::SendMailResult SfxMailModel::Send( const css::uno::Reference< css:
 				    if ( nToCount > 1 )
 				    {
 					    nCcSeqCount = nToCount - 1 + nCcCount;
-					    xMailMessage->setRecipient( *mpToList->GetObject( 0 ));
-					    nSendFlags = MailClientFlags::NO_USER_INTERFACE;
+					    xSimpleMailMessage->setRecipient( *mpToList->GetObject( 0 ));
+					    nSendFlags = SimpleMailClientFlags::NO_USER_INTERFACE;
 				    }
 				    else if ( nToCount == 1 )
 				    {
-					    xMailMessage->setRecipient( *mpToList->GetObject( 0 ));
-					    nSendFlags = MailClientFlags::NO_USER_INTERFACE;
+					    xSimpleMailMessage->setRecipient( *mpToList->GetObject( 0 ));
+					    nSendFlags = SimpleMailClientFlags::NO_USER_INTERFACE;
 				    }
 
 				    // all other recipient must be handled with CC recipients!
@@ -892,7 +897,7 @@ SfxMailModel::SendMailResult SfxMailModel::Send( const css::uno::Reference< css:
 					    {
 						    aCcRecipientSeq[nIndex++] = *mpCcList->GetObject(i);
 					    }
-					    xMailMessage->setCcRecipient( aCcRecipientSeq );
+					    xSimpleMailMessage->setCcRecipient( aCcRecipientSeq );
 				    }
 
 				    sal_Int32 nBccCount = mpBccList ? mpBccList->Count() : 0;
@@ -903,18 +908,18 @@ SfxMailModel::SendMailResult SfxMailModel::Send( const css::uno::Reference< css:
 					    {
 						    aBccRecipientSeq[i] = *mpBccList->GetObject(i);
 					    }
-					    xMailMessage->setBccRecipient( aBccRecipientSeq );
+					    xSimpleMailMessage->setBccRecipient( aBccRecipientSeq );
 				    }
 
 					Sequence< OUString > aAttachmentSeq(&(maAttachedDocuments[0]),maAttachedDocuments.size());
 
-				    xMailMessage->setSubject( maSubject );
-				    xMailMessage->setAttachement( aAttachmentSeq );
+				    xSimpleMailMessage->setSubject( maSubject );
+				    xSimpleMailMessage->setAttachement( aAttachmentSeq );
 
 	                sal_Bool bSend( sal_False );
                     try
 	                {
-		                xMailClient->sendMailMessage( xMailMessage, nSendFlags );
+		                xSimpleMailClient->sendSimpleMailMessage( xSimpleMailMessage, nSendFlags );
 		                bSend = sal_True;
 	                }
 	                catch ( IllegalArgumentException& )

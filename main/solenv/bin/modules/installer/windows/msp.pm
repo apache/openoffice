@@ -884,7 +884,7 @@ sub change_patchmetadata_table
 	if ( $allvariables->{'PROPERTYTABLEPRODUCTNAME'} ) { $targetproductnamevalue = $allvariables->{'PROPERTYTABLEPRODUCTNAME'}; }
 
 	my $manufacturerstring = "ManufacturerName";
-	my $manufacturervalue = "Apache OpenOffice";
+	my $manufacturervalue = "OpenOffice.org";
 	if ( $installer::globals::longmanufacturer ) { $manufacturervalue = $installer::globals::longmanufacturer; }
 
 	my $displaynamestring = "DisplayName";

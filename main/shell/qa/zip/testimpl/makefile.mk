@@ -50,5 +50,6 @@ DEF1NAME=$(SHL1TARGET)
 .INCLUDE :  target.mk
 .IF "$(OS)" == "WNT"
 	INCLUDE!:=$(subst,/stl, $(INCLUDE))
+	.EXPORT : INCLUDE 
 .ENDIF
 

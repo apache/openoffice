@@ -782,7 +782,8 @@ SdrOle2Obj::SdrOle2Obj( const svt::EmbeddedObjectRef& rNewObjRef, FASTBOOL bFram
         SetResizeProtect(sal_True);
 
     // #108759# For math objects, set closed state to transparent
-    SetClosedObj(!ImplIsMathObj( xObjRef.GetObject() ));
+    if( ImplIsMathObj( xObjRef.GetObject() ) )
+        SetClosedObj( false );
 }
 
 // -----------------------------------------------------------------------------
@@ -804,7 +805,8 @@ SdrOle2Obj::SdrOle2Obj( const svt::EmbeddedObjectRef& rNewObjRef, const XubStrin
         SetResizeProtect(sal_True);
 
     // #108759# For math objects, set closed state to transparent
-    SetClosedObj(!ImplIsMathObj( xObjRef.GetObject() ));
+    if( ImplIsMathObj( xObjRef.GetObject() ) )
+        SetClosedObj( false );
 }
 
 // -----------------------------------------------------------------------------
@@ -827,7 +829,8 @@ SdrOle2Obj::SdrOle2Obj( const svt::EmbeddedObjectRef&  rNewObjRef, const XubStri
         SetResizeProtect(sal_True);
 
     // #108759# For math objects, set closed state to transparent
-    SetClosedObj(!ImplIsMathObj( xObjRef.GetObject() ));
+    if( ImplIsMathObj( xObjRef.GetObject() ) )
+        SetClosedObj( false );
 }
 
 // -----------------------------------------------------------------------------
@@ -1581,7 +1584,8 @@ void SdrOle2Obj::SetObjRef( const com::sun::star::uno::Reference < com::sun::sta
             SetResizeProtect(sal_True);
 
         // #108759# For math objects, set closed state to transparent
-        SetClosedObj(!ImplIsMathObj( rNewObjRef ));
+        if( ImplIsMathObj( rNewObjRef ) )
+            SetClosedObj( false );
 
         Connect();
     }
@@ -2113,7 +2117,8 @@ void SdrOle2Obj::GetObjRef_Impl()
 			}
 
             // #108759# For math objects, set closed state to transparent
-            SetClosedObj(!ImplIsMathObj( xObjRef.GetObject() ));
+            if( ImplIsMathObj( xObjRef.GetObject() ) )
+                SetClosedObj( false );
 		}
 
         if ( xObjRef.is() )

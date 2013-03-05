@@ -201,6 +201,7 @@ public class AccessibleEdit extends TestCase {
         }
 
         util.DesktopTools.closeDoc(xTextDoc);
+        ;
     }
 
     /**

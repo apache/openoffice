@@ -59,7 +59,7 @@ Throbber::Throbber( Window* i_parentWindow, WinBits i_style, const ImageSet i_im
     maWaitTimer.SetTimeout( mnStepTime );
     maWaitTimer.SetTimeoutHdl( LINK( this, Throbber, TimeOutHdl ) );
 
-    SetScaleMode( ImageScaleMode::NONE );
+    SetScaleMode( ImageScaleMode::None );
     initImages();
 }
 
@@ -75,7 +75,7 @@ Throbber::Throbber( Window* i_parentWindow, const ResId& i_resId, const ImageSet
     maWaitTimer.SetTimeout( mnStepTime );
     maWaitTimer.SetTimeoutHdl( LINK( this, Throbber, TimeOutHdl ) );
 
-    SetScaleMode( ImageScaleMode::NONE );
+    SetScaleMode( ImageScaleMode::None );
     initImages();
 }
 

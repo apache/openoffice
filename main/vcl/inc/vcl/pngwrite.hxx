@@ -44,7 +44,7 @@ namespace vcl
 
 	public:
 
-		explicit PNGWriter( const BitmapEx&,
+		PNGWriter( const BitmapEx& BmpEx,
 			const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >* pFilterData = NULL );
 		~PNGWriter();
 

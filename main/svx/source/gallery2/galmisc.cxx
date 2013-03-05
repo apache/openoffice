@@ -606,7 +606,7 @@ sal_Bool GalleryTransferable::GetData( const datatransfer::DataFlavor& rFlavor )
 	}
 	else if( ( FORMAT_BITMAP == nFormat ) && mpGraphicObject )
 	{
-		bRet = SetBitmapEx( mpGraphicObject->GetGraphic().GetBitmapEx(), rFlavor );
+		bRet = SetBitmap( mpGraphicObject->GetGraphic().GetBitmap(), rFlavor );
 	}
 
 	return bRet;

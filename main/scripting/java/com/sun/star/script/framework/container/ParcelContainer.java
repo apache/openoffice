@@ -240,7 +240,8 @@ public class ParcelContainer implements XNameAccess
      * @param   language language for which entries are stored
      * @param   loadParcels set to <tt>true</tt> if parcels are to be loaded
      *          on construction.
-     * @throws    com.sun.star.lang.IllegalArgumentException
+     * @return    name of <tt>ParcelContainer</tt>
+     * @throws    IllegalArgumentException
      * @throws    WrappedTargetException
      */    
     public ParcelContainer( XComponentContext xCtx, String containerUrl, String language, boolean loadParcels ) throws com.sun.star.lang.IllegalArgumentException, com.sun.star.lang.WrappedTargetException

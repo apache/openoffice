@@ -1004,10 +1004,7 @@ void ToolbarLayoutManager::implts_createAddonsToolBars()
                     catch ( uno::Exception& ) {}
                 }
 
-                ::rtl::OUString aAddonUIName = m_pAddonOptions->GetAddonsToolbarUIName( i );
-                const bool bAddonUIName = aAddonUIName.getLength();
-                ::rtl::OUString aAddonTitle = bAddonUIName ?
-                    aAddonUIName : implts_generateGenericAddonToolbarTitle( i+1 );
+                ::rtl::OUString aGenericAddonTitle = implts_generateGenericAddonToolbarTitle( i+1 );
 
                 if ( aElement.m_aName.getLength() > 0 )
                 {
@@ -1015,9 +1012,9 @@ void ToolbarLayoutManager::implts_createAddonsToolBars()
                     // UI changes for this document.
                     implts_setElementData( aElement, xDockWindow );
                     aElement.m_xUIElement = xUIElement;
-                    if ( aElement.m_aUIName.getLength() == 0 && !bAddonUIName)
+                    if ( aElement.m_aUIName.getLength() == 0 )
                     {
-                        aElement.m_aUIName = aAddonTitle;
+                        aElement.m_aUIName = aGenericAddonTitle;
                         implts_writeWindowStateData( aElement );
                     }
                 }
@@ -1028,9 +1025,9 @@ void ToolbarLayoutManager::implts_createAddonsToolBars()
                     aNewToolbar.m_bFloating = true;
                     implts_readWindowStateData( aAddonToolBarName, aNewToolbar );
                     implts_setElementData( aNewToolbar, xDockWindow );
-                    if ( aNewToolbar.m_aUIName.getLength() == 0 && !bAddonUIName)
+                    if ( aNewToolbar.m_aUIName.getLength() == 0 )
                     {
-                        aNewToolbar.m_aUIName = aAddonTitle;
+                        aNewToolbar.m_aUIName = aGenericAddonTitle;
                         implts_writeWindowStateData( aNewToolbar );
                     }
                     implts_insertToolbar( aNewToolbar );
@@ -1043,7 +1040,7 @@ void ToolbarLayoutManager::implts_createAddonsToolBars()
                     vos::OGuard aGuard( Application::GetSolarMutex() );
                     Window* pWindow = VCLUnoHelper::GetWindow( xWindow );
                     if ( pWindow->GetText().Len() == 0 )
-                        pWindow->SetText( aAddonTitle );
+                        pWindow->SetText( aGenericAddonTitle );
                     if ( pWindow->GetType() == WINDOW_TOOLBOX )
                     {
                         ToolBox* pToolbar = (ToolBox *)pWindow;
@@ -1699,7 +1696,7 @@ void ToolbarLayoutManager::implts_writeWindowStateData( const UIElement& rElemen
     {
         try
         {
-            uno::Sequence< beans::PropertyValue > aWindowState( 9 );
+            uno::Sequence< beans::PropertyValue > aWindowState( 8 );
 
             aWindowState[0].Name  = ::rtl::OUString::createFromAscii( WINDOWSTATE_PROPERTY_DOCKED );
             aWindowState[0].Value = ::uno::makeAny( sal_Bool( !rElementData.m_bFloating ));
@@ -1728,8 +1725,6 @@ void ToolbarLayoutManager::implts_writeWindowStateData( const UIElement& rElemen
             aWindowState[6].Value = uno::makeAny( rElementData.m_aUIName );
             aWindowState[7].Name  = ::rtl::OUString::createFromAscii( WINDOWSTATE_PROPERTY_LOCKED );
             aWindowState[7].Value = uno::makeAny( rElementData.m_aDockedData.m_bLocked );
-            aWindowState[8].Name  = ::rtl::OUString::createFromAscii( WINDOWSTATE_PROPERTY_STYLE );
-            aWindowState[8].Value = uno::makeAny( rElementData.m_nStyle );
 
             ::rtl::OUString aName = rElementData.m_aName;
             if ( xPersistentWindowState->hasByName( aName ))

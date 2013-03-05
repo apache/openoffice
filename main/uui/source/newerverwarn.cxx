@@ -27,7 +27,7 @@
 
 #include <com/sun/star/frame/XDesktop.hpp>
 #include <com/sun/star/frame/XDispatchProvider.hpp>
-#include <com/sun/star/system/SystemShellExecute.hpp>
+#include <com/sun/star/system/XSystemShellExecute.hpp>
 #include <com/sun/star/system/SystemShellExecuteFlags.hpp>
 #include <com/sun/star/util/XURLTransformer.hpp>
 #include <com/sun/star/container/XNameReplace.hpp>
@@ -98,9 +98,12 @@ IMPL_LINK( NewerVersionWarningDialog, UpdateHdl, PushButton*, EMPTYARG )
     {
         if ( ( sNotifyURL.getLength() > 0 ) && ( m_sVersion.getLength() > 0 ) )
         {
+            uno::Reference< lang::XMultiServiceFactory > xSMGR =
+                ::comphelper::getProcessServiceFactory();
             uno::Reference< XSystemShellExecute > xSystemShell(
-                com::sun::star::system::SystemShellExecute::create(
-                    ::comphelper::getProcessComponentContext() ) );
+                xSMGR->createInstance( ::rtl::OUString(
+                    RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.system.SystemShellExecute" ) ) ),
+                uno::UNO_QUERY_THROW );
             sNotifyURL += m_sVersion;
             if ( xSystemShell.is() && sNotifyURL.getLength() )
             {

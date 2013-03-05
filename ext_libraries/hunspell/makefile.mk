@@ -53,7 +53,7 @@ PATCH_FILES=					    \
 CONFIGURE_ACTION=$(AUGMENT_LIBRARY_PATH) configure
 CONFIGURE_FLAGS= --disable-shared --with-pic
 .IF "$(COMNAME)"=="sunpro5"
-CONFIGURE_FLAGS+= CFLAGS="-xc99=none" CXXFLAGS="-I$(SOLARVER)/$(INPATH)/inc/stl -library=no%Cstd" LDFLAGS="-L$(SOLARVER)/$(INPATH)/lib -lstlport_sunpro"
+CONFIGURE_FLAGS+= CFLAGS=-xc99=none
 .ENDIF                  # "$(COMNAME)"=="sunpro5"
 
 .IF "$(SYSBASE)"!=""

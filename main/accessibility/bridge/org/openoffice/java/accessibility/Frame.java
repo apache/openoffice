@@ -472,7 +472,7 @@ public class Frame extends java.awt.Frame implements javax.accessibility.Accessi
         *
         * @return an instance of AccessibleState containing the current state 
         * of the object
-        * @see javax.accessibility.AccessibleState
+        * @see AccessibleState
         */
         public javax.accessibility.AccessibleStateSet getAccessibleStateSet() {
             javax.accessibility.AccessibleStateSet states = super.getAccessibleStateSet();

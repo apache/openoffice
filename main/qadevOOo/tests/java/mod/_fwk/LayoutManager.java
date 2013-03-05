@@ -48,7 +48,8 @@ public class LayoutManager extends TestCase {
     /**
      * Cleanup: close the created document
      * @param tParam The test parameters.
-     * @param log The log writer.
+     * @param The log writer.
+     * @return The test environment.
      */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xTextDoc ");
@@ -72,7 +73,7 @@ public class LayoutManager extends TestCase {
      * <li>Get the LayoutManager from the frame</li>
      * </ul>
      * @param tParam The test parameters.
-     * @param log The log writer.
+     * @param The log writer.
      * @return The test environment.
      */
     protected TestEnvironment createTestEnvironment(TestParameters tParam, PrintWriter log) {

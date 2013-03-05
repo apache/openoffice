@@ -46,7 +46,8 @@ public class PopupMenuControllerFactory extends TestCase {
     /**
      * Cleanup: close the created document
      * @param tParam The test parameters.
-     * @param log The log writer.
+     * @param The log writer.
+     * @return The test environment.
      */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xTextDoc ");
@@ -66,7 +67,7 @@ public class PopupMenuControllerFactory extends TestCase {
     /**
      * Create test environment:
      * @param tParam The test parameters.
-     * @param log The log writer.
+     * @param The log writer.
      * @return The test environment.
      */
     protected TestEnvironment createTestEnvironment(TestParameters tParam, PrintWriter log) {

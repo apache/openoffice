@@ -303,7 +303,8 @@ public class UndoManager
 
     // -----------------------------------------------------------------------------------------------------------------
     /**
-     * @return returns the undo manager belonging to a given document
+     * returns the undo manager belonging to a given document
+     * @return
      */
     private XUndoManager getUndoManager()
     {

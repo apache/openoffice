@@ -211,6 +211,23 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
     ]
+
+    // use same as SID_ATTR_LINEEND_STYLE
+    SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_MIRROR_VERTICAL [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_POS_X [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_POS_Y [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_WIDTH [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_HEIGHT [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_ANGLE [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_ROT_X [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_ROT_Y [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_PROTECT_POS [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_PROTECT_SIZE [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_AUTOWIDTH [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_AUTOHEIGHT [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_MATRIX [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+
      /// !?
     SID_CHAR_DLG // ole : no, status : ?
     [
@@ -1268,7 +1285,32 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetAttrState ;
     ]
+    SID_ATTR_FILL_TRANSPARENCE // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_FILL_FLOATTRANSPARENCE // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetAttrState ;
+    ]
     SID_ATTR_LINE_STYLE // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_LINE_JOINT // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_LINE_CAP // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_LINE_TRANSPARENCE // ole : no, status : ?
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetAttrState ;
@@ -1313,6 +1355,16 @@ interface DrawView
         StateMethod = GetAttrState ;
     ]
     SID_ATTR_LINEEND_STYLE // ole : no, status : play rec
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_LINE_START // ole : no, status : play rec
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_LINE_END // ole : no, status : play rec
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetAttrState ;

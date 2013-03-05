@@ -301,18 +301,20 @@ void SAL_CALL RecentFilesMenuController::statusChanged( const FeatureStateEvent&
     m_bDisabled = !Event.IsEnabled;
 }
 
-void SAL_CALL RecentFilesMenuController::itemSelected( const css::awt::MenuEvent& rEvent ) throw (RuntimeException)
+void SAL_CALL RecentFilesMenuController::select( const css::awt::MenuEvent& rEvent ) throw (RuntimeException)
 {
-    Reference< css::awt::XPopupMenu > xPopupMenu;
+    Reference< css::awt::XPopupMenu >    xPopupMenu;
+    Reference< css::awt::XMenuExtended > xMenuExt;
 
     osl::ClearableMutexGuard aLock( m_aMutex );
-    xPopupMenu = m_xPopupMenu;
+    xPopupMenu          = m_xPopupMenu;
+    xMenuExt            = Reference< css::awt::XMenuExtended >( m_xPopupMenu, UNO_QUERY );
     aLock.clear();
 
-    if ( xPopupMenu.is() )
+    if ( xMenuExt.is() )
     {
-        const rtl::OUString aCommand( xPopupMenu->getCommand( rEvent.MenuId ) );
-        OSL_TRACE( "RecentFilesMenuController::itemSelected() - Command : %s",
+        const rtl::OUString aCommand( xMenuExt->getCommand( rEvent.MenuId ) );
+        OSL_TRACE( "RecentFilesMenuController::select() - Command : %s",
                    rtl::OUStringToOString( aCommand, RTL_TEXTENCODING_UTF8 ).getStr() );
 
         if ( aCommand.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( CMD_CLEAR_LIST ) ) )
@@ -322,7 +324,7 @@ void SAL_CALL RecentFilesMenuController::itemSelected( const css::awt::MenuEvent
     }
 }
 
-void SAL_CALL RecentFilesMenuController::itemActivated( const css::awt::MenuEvent& ) throw (RuntimeException)
+void SAL_CALL RecentFilesMenuController::activate( const css::awt::MenuEvent& ) throw (RuntimeException)
 {
     osl::MutexGuard aLock( m_aMutex );
     impl_setPopupMenu();

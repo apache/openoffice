@@ -188,11 +188,11 @@ namespace sw
 		maPos(rPos),
 		maSize(),
 		maLayoutSize(),
-		meWriterType(eBulletGrf),
 		mpStartFrameContent(0),
 		mbIsInline(true),
-		mbForBullet(true),
-		maGrf(rGrf)
+		meWriterType(eBulletGrf),
+		maGrf(rGrf),
+		mbForBullet(true)
 	{
 		const MapMode aMap100mm( MAP_100TH_MM );
 		Size    aSize( rGrf.GetPrefSize() );    
@@ -221,8 +221,8 @@ namespace sw
           mbIsInline( (rFmt.GetAnchor().GetAnchorId() == FLY_AS_CHAR) )
           // <--
           //For i120928,handle graphic of bullet within existing implementation
-          ,mbForBullet(false)
           ,maGrf()
+          ,mbForBullet(false)
     {
         switch (rFmt.Which())
         {

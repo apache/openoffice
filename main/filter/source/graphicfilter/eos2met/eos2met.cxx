@@ -19,10 +19,13 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 
 #include <svtools/fltcall.hxx>
+
 #include <math.h>
 #include <tools/stream.hxx>
 #include <tools/bigint.hxx>
@@ -39,7 +42,6 @@
 #include <vcl/msgbox.hxx>
 #include <svl/solar.hrc>
 #include <vcl/gdimetafiletools.hxx>
-#include <vcl/dibtools.hxx>
 
 // -----------------------------Feld-Typen-------------------------------
 
@@ -567,7 +569,7 @@ void METWriter::WriteImageObject(const Bitmap & rBitmap)
 	WriteFieldId(nActBitmapId);
 
 	// Windows-BMP-Datei erzeugen:
-    WriteDIB(rBitmap, aTemp, false, true);
+	aTemp << rBitmap;
 
 	// Header der Windows-BMP-Datei einlesen:
 	aTemp.SetNumberFormatInt(NUMBERFORMAT_INT_LITTLEENDIAN);

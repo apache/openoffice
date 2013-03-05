@@ -82,9 +82,10 @@ void ShowMessageBox( uno::Reference< lang::XMultiServiceFactory > const& xFactor
     uno::Reference< awt::XWindowPeer > xWindowPeer( xContainerWindow, uno::UNO_QUERY_THROW );
     uno::Reference< awt::XMessageBoxFactory > xMessageBoxFactory( xToolkit, uno::UNO_QUERY );
 
+    awt::Rectangle aRectangle;
     uno::Reference< awt::XMessageBox > xMessageBox
         = xMessageBoxFactory->createMessageBox
-        ( xWindowPeer, awt::MessageBoxType_ERRORBOX,
+        ( xWindowPeer, aRectangle, OUString::createFromAscii( "errorbox" ),
           awt::MessageBoxButtons::BUTTONS_OK, aTitle, aMessage );
 
     if ( xMessageBox.is() )

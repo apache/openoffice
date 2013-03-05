@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
 
@@ -30,7 +32,6 @@
 #include <vcl/timer.hxx>
 #include <comphelper/broadcasthelper.hxx>
 #include <vcl/lazydelete.hxx>
-#include <vcl/dibtools.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // buffered VDev usage
@@ -298,7 +299,7 @@ namespace drawinglayer
             if(bDoSaveForVisualControl)
             {
                 SvFileStream aNew((const String&)String(ByteString( "c:\\content.bmp" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
-                WriteDIB(aContent, aNew, false, true);
+                aNew << aContent;
             }
         
             if(mpAlpha)
@@ -309,7 +310,7 @@ namespace drawinglayer
                 if(bDoSaveForVisualControl)
                 {
                     SvFileStream aNew((const String&)String(ByteString( "c:\\transparence.bmp" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
-                    WriteDIB(aAlphaMask.GetBitmap(), aNew, false, true);
+                    aNew << aAlphaMask.GetBitmap();
                 }
 
                 mrOutDev.DrawBitmapEx(maDestPixel.TopLeft(), BitmapEx(aContent, aAlphaMask));
@@ -322,7 +323,7 @@ namespace drawinglayer
                 if(bDoSaveForVisualControl)
                 {
                     SvFileStream aNew((const String&)String(ByteString( "c:\\mask.bmp" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
-                    WriteDIB(aMask, aNew, false, true);
+                    aNew << aMask;
                 }
 
                 mrOutDev.DrawBitmapEx(maDestPixel.TopLeft(), BitmapEx(aContent, aMask));

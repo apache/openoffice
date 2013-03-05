@@ -398,6 +398,7 @@ public class JPEGComparator extends EnhancedComplexTestCase
      * @param _sDocumentName
      * @param _sResult
      * @param _aParams
+     * @return 0=no difference !=0 both files differ
      */
     private void compareJPEG(String _sDocumentName, String _sResult, ParameterHelper _aParams)
     {

@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sfx2.hxx"
 
@@ -40,7 +42,6 @@
 #include <unotools/localfilehelper.hxx>
 #include <i18npool/mslangid.hxx>
 #include <sfx2/request.hxx>
-#include <vcl/dibtools.hxx>
 
 #include "fileobj.hxx"
 #include "impldde.hxx"
@@ -478,7 +479,7 @@ sal_Bool LinkManager::GetGraphicFromAny( const String& rMimeType,
 		case FORMAT_BITMAP:
 			{
 				Bitmap aBmp;
-                ReadDIB(aBmp, aMemStm, true);
+				aMemStm >> aBmp;
 				rGrf = aBmp;
 				bRet = sal_True;
 			}

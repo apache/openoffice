@@ -64,14 +64,14 @@ public class SwAccessiblePageView extends TestCase {
     /**
     * Called to create an instance of <code>TestEnvironment</code>
     * with an object to test and related objects.
-    * Switches the document to Print Preview mode.
-    * Obtains accessible object for the page view.
+    * Switchs the document to Print Preview mode.
+    * Obtains accissible object for the page view.
     *
-    * @param Param test parameters
+    * @param tParam test parameters
     * @param log writer to log information while testing
     *
     * @see TestEnvironment
-    * @see #getTestEnvironment
+    * @see #getTestEnvironment()
     */
     protected TestEnvironment createTestEnvironment(
         TestParameters Param, PrintWriter log) {
@@ -244,7 +244,8 @@ public class SwAccessiblePageView extends TestCase {
     /**
     * Called while disposing a <code>TestEnvironment</code>.
     * Disposes text document.
-    * @param Param test parameters
+    * @param tParam test parameters
+    * @param tEnv the environment to cleanup
     * @param log writer to log information while testing
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
@@ -257,10 +258,10 @@ public class SwAccessiblePageView extends TestCase {
      * implementation does nothing. Subclasses can override to initialize
      * objects shared among all <code>TestEnvironment</code>s.
      *
-     * @param Param test parameters
+     * @param tParam test parameters
      * @param log writer to log information while testing
      *
-     * @see #initializeTestCase
+     * @see #initializeTestCase()
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
         log.println( "creating a text document" );

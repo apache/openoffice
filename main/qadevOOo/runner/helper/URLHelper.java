@@ -242,7 +242,7 @@ public class URLHelper
      * used for further purposes. One parameter define the start directory,
      * another one describe the url protocol, which the return URL names should have.
      *
-     * @param   sStartDir
+     * @param   sDir
      *              the start directory, which should include all test files
      *
      * @return  [Vector]

@@ -57,9 +57,7 @@ public class CheckBookmarks {
 		XText xText = document.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.setString("Contents");
-		/**
-		 * insert bookmark into document
-		 */
+		
 		for (int i = 0; i < initBookmarkNames.length; i++) {
 			xTextCursor.gotoEnd(false);
 			XTextRange xTextRange = (XTextRange) UnoRuntime.queryInterface(XTextRange.class, xTextCursor);
@@ -79,12 +77,7 @@ public class CheckBookmarks {
 	public static void tearDownConnection() throws Exception {
 		app.close();
 	}
-	/**
-	 * get bookmark content
-	 * @param xBookmarks
-	 * @return
-	 * @throws Exception
-	 */
+	
 	private static String[] getBookmarkContents(XNameAccess xBookmarks) throws Exception {
 		String[] bookmarkNames = xBookmarks.getElementNames();
 		String[] bookmarkContents = new String[bookmarkNames.length];
@@ -96,20 +89,14 @@ public class CheckBookmarks {
 		
 		return bookmarkContents;
 	}
-    /**
-     * verify inserted bookmark by compare their name and content
-     * @throws Exception
-     */
+
 	@Test
 	public void createBookmark() throws Exception {
 		XNameAccess xBookmarks = ((XBookmarksSupplier)UnoRuntime.queryInterface(XBookmarksSupplier.class, document)).getBookmarks();
 		assertArrayEquals("Bookmark name list:", initBookmarkNames, xBookmarks.getElementNames());
 		assertArrayEquals("Bookmark content list:", initBookmarkContents, getBookmarkContents(xBookmarks));
 	}
-	/**
-	 * verify bookmark modify
-	 * @throws Exception
-	 */
+	
 	@Test
 	public void updateBookmarkContent() throws Exception {
 		String[] expectedBookmarkNames= new String[]{"bookmark1", "bookmark2", "bookmark3"};
@@ -126,10 +113,7 @@ public class CheckBookmarks {
 		assertArrayEquals("Bookmark name list after updating some content:", expectedBookmarkNames, xBookmarks.getElementNames());
 		assertArrayEquals("Bookmark content list after updating some content:", expectedBookmarkContents, getBookmarkContents(xBookmarks));
 	}
-	/**
-	 * verify bookmark remove
-	 * @throws Exception
-	 */
+	
 	@Test
 	public void removeBookmark() throws Exception {
 		String[] expectedBookmarkNames= new String[]{"bookmark2", "bookmark3"};

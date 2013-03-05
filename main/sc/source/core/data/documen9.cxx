@@ -192,12 +192,8 @@ void ScDocument::InitDrawLayer( SfxObjectShell* pDocShell )
 		pDrawLayer->SetDefaultTabulator( GetDocOptions().GetTabDistance() );
 
 		UpdateDrawPrinter();
-
-        // set draw defaults directly
-        SfxItemPool& rDrawPool = pDrawLayer->GetItemPool();
-        rDrawPool.SetPoolDefaultItem( SvxAutoKernItem( sal_True, EE_CHAR_PAIRKERNING ) );
-
-        UpdateDrawLanguages();
+        UpdateDrawDefaults();
+		UpdateDrawLanguages();
 		if (bImportingXML)
 			pDrawLayer->EnableAdjust(sal_False);
 
@@ -219,6 +215,18 @@ void ScDocument::UpdateDrawLanguages()
 		rDrawPool.SetPoolDefaultItem( SvxLanguageItem( eCjkLanguage, EE_CHAR_LANGUAGE_CJK ) );
 		rDrawPool.SetPoolDefaultItem( SvxLanguageItem( eCtlLanguage, EE_CHAR_LANGUAGE_CTL ) );
 	}
+}
+
+void ScDocument::UpdateDrawDefaults()
+{
+    // drawing layer defaults that are set for new documents (if InitNew was called)
+
+    if ( pDrawLayer && bSetDrawDefaults )
+    {
+        SfxItemPool& rDrawPool = pDrawLayer->GetItemPool();
+        rDrawPool.SetPoolDefaultItem( SvxAutoKernItem( sal_True, EE_CHAR_PAIRKERNING ) );
+		pDrawLayer->SetDrawingLayerPoolDefaults();
+    }
 }
 
 void ScDocument::UpdateDrawPrinter()

@@ -56,6 +56,7 @@
 #include <svx/xlndsit.hxx>
 #include <svx/xlineit0.hxx>
 #include <svx/xlnclit.hxx>
+#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include <vcl/virdev.hxx>
 
 #include "app.hrc"
@@ -775,6 +776,10 @@ sal_Bool View::SdrBeginTextEdit(
 		pGivenOutlinerView, bDontDeleteOutliner,
 		bOnlyOneView, bGrabFocus);
 
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        GetViewShell()->GetViewShellBase().GetController(),
+        ::sfx2::sidebar::EnumContext::Context_Text);
+
 	if (bReturn)
 	{
 		::Outliner* pOL = GetTextEditOutliner();
@@ -790,11 +795,15 @@ sal_Bool View::SdrBeginTextEdit(
 			{
 				aBackground = pObj->GetPage()->GetPageBackgroundColor(pPV);
 			}
-			pOL->SetBackgroundColor( aBackground  );
+            if (pOL != NULL)
+                pOL->SetBackgroundColor( aBackground  );
 		}
 
-		pOL->SetParaInsertedHdl(LINK(this, View, OnParagraphInsertedHdl));
-		pOL->SetParaRemovingHdl(LINK(this, View, OnParagraphRemovingHdl));
+        if (pOL != NULL)
+        {
+            pOL->SetParaInsertedHdl(LINK(this, View, OnParagraphInsertedHdl));
+            pOL->SetParaRemovingHdl(LINK(this, View, OnParagraphRemovingHdl));
+        }
 	}
 
 	return(bReturn);
@@ -831,7 +840,12 @@ SdrEndTextEditKind View::SdrEndTextEdit(sal_Bool bDontDeleteReally )
 		}
 	}
 
-	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT, (void*)xObj.get() );
+	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
+        sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT,
+        (void*)xObj.get() );
+    ContextChangeEventMultiplexer::NotifyContextChange(
+        GetViewShell()->GetViewShellBase().GetController(),
+        ::sfx2::sidebar::EnumContext::Context_Default);
 
 	if( xObj.is() )
 	{

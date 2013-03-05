@@ -289,12 +289,9 @@ Size Bitmap::GetSizePixel() const
 }
 // ------------------------------------------------------------------
 
-void Bitmap::SetSizePixel( const Size& rNewSize, sal_uInt32 nScaleFlag )
+void Bitmap::SetSizePixel( const Size& rNewSize )
 {
-    if(GetSizePixel() != rNewSize)
-    {
-        Scale( rNewSize, nScaleFlag );
-    }
+	Scale( rNewSize );
 }
 
 // ------------------------------------------------------------------

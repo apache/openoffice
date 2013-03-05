@@ -116,6 +116,7 @@ $(eval $(call gb_Library_add_exception_objects,fwk,\
 	framework/source/services/backingcomp \
 	framework/source/services/backingwindow \
 	framework/source/services/desktop \
+	framework/source/services/ContextChangeEventMultiplexer \
 	framework/source/services/frame \
 	framework/source/services/modelwinservice \
 	framework/source/services/modulemanager \
@@ -145,7 +146,6 @@ $(eval $(call gb_Library_add_exception_objects,fwk,\
 	framework/source/uielement/controlmenucontroller \
 	framework/source/uielement/dropdownboxtoolbarcontroller \
 	framework/source/uielement/edittoolbarcontroller \
-	framework/source/uielement/genericstatusbarcontroller \
 	framework/source/uielement/generictoolbarcontroller \
 	framework/source/uielement/imagebuttontoolbarcontroller \
 	framework/source/uielement/langselectionstatusbarcontroller \
@@ -159,9 +159,7 @@ $(eval $(call gb_Library_add_exception_objects,fwk,\
 	framework/source/uielement/recentfilesmenucontroller \
 	framework/source/uielement/spinfieldtoolbarcontroller \
 	framework/source/uielement/statusbar \
-	framework/source/uielement/statusbaritem \
 	framework/source/uielement/statusbarmanager \
-	framework/source/uielement/statusbarmerger \
 	framework/source/uielement/statusbarwrapper \
 	framework/source/uielement/statusindicatorinterfacewrapper \
 	framework/source/uielement/togglebuttontoolbarcontroller \

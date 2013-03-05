@@ -127,8 +127,40 @@ void SwWrtShell::DrawSelChanged( )
 {
     static sal_uInt16 __READONLY_DATA aInval[] =
     {
-        SID_ATTR_FILL_STYLE, SID_ATTR_FILL_COLOR, SID_ATTR_LINE_STYLE,
-        SID_ATTR_LINE_WIDTH, SID_ATTR_LINE_COLOR, 0
+        SID_ATTR_TRANSFORM_POS_X,           // ( SID_SVX_START + 88 )  // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_POS_Y,           // ( SID_SVX_START + 89 )  // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_WIDTH,           // ( SID_SVX_START + 90 )  // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_HEIGHT,          // ( SID_SVX_START + 91 )  // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_ROT_X,           // ( SID_SVX_START + 93 )  // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_ROT_Y,           // ( SID_SVX_START + 94 )  // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_ANGLE,           // ( SID_SVX_START + 95 )  // for TransformationPropertyPanel
+        SID_ATTR_FILL_STYLE,                // ( SID_SVX_START + 164 )
+        SID_ATTR_FILL_COLOR,                // ( SID_SVX_START + 165 )
+        SID_ATTR_FILL_GRADIENT,             // ( SID_SVX_START + 166 ) // for AreaPropertyPanel
+        SID_ATTR_FILL_HATCH,                // ( SID_SVX_START + 167 ) // for AreaPropertyPanel
+        SID_ATTR_FILL_BITMAP,               // ( SID_SVX_START + 168 ) // for AreaPropertyPanel
+        SID_ATTR_LINE_STYLE,                // ( SID_SVX_START + 169 )
+        SID_ATTR_LINE_DASH,                 // ( SID_SVX_START + 170 ) // for LinePropertyPanel
+        SID_ATTR_LINE_WIDTH,                // ( SID_SVX_START + 171 )
+        SID_ATTR_LINE_COLOR,                // ( SID_SVX_START + 172 )
+        SID_ATTR_LINE_START,                // ( SID_SVX_START + 173 ) // for LinePropertyPanel
+        SID_ATTR_LINE_END,                  // ( SID_SVX_START + 174 ) // for LinePropertyPanel
+        SID_COLOR_TABLE,                    // ( SID_SVX_START + 179 ) // for AreaPropertyPanel
+        SID_GRADIENT_LIST,                  // ( SID_SVX_START + 180 ) // for AreaPropertyPanel
+        SID_HATCH_LIST,                     // ( SID_SVX_START + 181 ) // for AreaPropertyPanel
+        SID_BITMAP_LIST,                    // ( SID_SVX_START + 182 ) // for AreaPropertyPanel
+        SID_LINEEND_LIST,                   // ( SID_SVX_START + 184 ) // for LinePropertyPanel
+        SID_ATTR_TRANSFORM_PROTECT_POS,     // ( SID_SVX_START + 236 ) // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_PROTECT_SIZE,    // ( SID_SVX_START + 237 ) // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_AUTOWIDTH,       // ( SID_SVX_START + 310 ) // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_AUTOHEIGHT,      // ( SID_SVX_START + 311 ) // for TransformationPropertyPanel
+        SID_ATTR_TRANSFORM_ANCHOR,          // ( SID_SVX_START + 318 ) // for TransformationPropertyPanel
+        SID_ATTR_FILL_TRANSPARENCE,         // (SID_SVX_START+1105)
+        SID_ATTR_FILL_FLOATTRANSPARENCE,    // (SID_SVX_START+1106)
+        SID_ATTR_LINE_TRANSPARENCE,         // (SID_SVX_START+1107)
+        SID_ATTR_LINE_JOINT,                // (SID_SVX_START+1110)
+        SID_ATTR_LINE_CAP,                  // (SID_SVX_START+1111)
+        0
     };
 
     GetView().GetViewFrame()->GetBindings().Invalidate(aInval);

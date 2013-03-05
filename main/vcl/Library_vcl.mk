@@ -321,6 +321,7 @@ $(eval $(call gb_Library_add_exception_objects,vcl,\
     vcl/source/gdi/alpha \
     vcl/source/gdi/animate \
     vcl/source/gdi/base14 \
+    vcl/source/gdi/bitmap2 \
     vcl/source/gdi/bitmap3 \
     vcl/source/gdi/bitmap4 \
     vcl/source/gdi/bitmap \
@@ -333,7 +334,6 @@ $(eval $(call gb_Library_add_exception_objects,vcl,\
     vcl/source/gdi/configsettings \
     vcl/source/gdi/cvtgrf \
     vcl/source/gdi/cvtsvm \
-    vcl/source/gdi/dibtools \
     vcl/source/gdi/extoutdevdata \
     vcl/source/gdi/font \
     vcl/source/gdi/gdimtf \

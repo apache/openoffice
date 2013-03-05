@@ -71,6 +71,7 @@ public class Toolkit extends TestCase {
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xTextDoc ");
         util.DesktopTools.closeDoc(xTextDoc);
+        ;
     }
 
     /**

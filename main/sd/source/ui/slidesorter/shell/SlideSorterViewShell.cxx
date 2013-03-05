@@ -220,12 +220,11 @@ SlideSorterViewShell* SlideSorterViewShell::GetSlideSorter (ViewShellBase& rBase
 {
     SlideSorterViewShell* pViewShell = NULL;
     
-    // Test the center, left, and then the right pane for showing a slide sorter.
+    // Test the center and left pane for showing a slide sorter.
     ::rtl::OUString aPaneURLs[] = {
         FrameworkHelper::msCenterPaneURL,
         FrameworkHelper::msFullScreenPaneURL,
         FrameworkHelper::msLeftImpressPaneURL,
-        FrameworkHelper::msRightPaneURL,
         ::rtl::OUString()};
 
     try

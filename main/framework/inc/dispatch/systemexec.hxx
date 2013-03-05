@@ -93,13 +93,15 @@ class SystemExec : // interfaces
 {
     /* member */
     private:
-        css::uno::Reference< css::uno::XComponentContext > m_xContext;
+
+        /// reference to global uno service manager which had created us
+        css::uno::Reference< css::lang::XMultiServiceFactory > m_xFactory;
 
     /* interface */
 	public:
 
         // ctor/dtor
-                 SystemExec( const css::uno::Reference< css::uno::XComponentContext >& xContext );
+                 SystemExec( const css::uno::Reference< css::lang::XMultiServiceFactory >& xFactory );
         virtual ~SystemExec(                                                                        );
 
         // XInterface, XTypeProvider, XServiceInfo

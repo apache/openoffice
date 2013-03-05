@@ -494,12 +494,12 @@ SdOptionsMisc::SdOptionsMisc( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
 	bMasterPageCache( sal_True ),
 	bDragWithCopy( sal_False ),
 	bPickThrough( sal_True ),
-	bBigHandles( sal_True ),    // new default: Use big handles
+	bBigHandles( sal_False ),
 	bDoubleClickTextEdit( sal_True ),
 	bClickChangeRotation( sal_False ),
 	bStartWithActualPage( sal_False ),
 	bSolidDragging( sal_True ),
-	bSolidMarkHdl( sal_True ),  // default: Use nice handles
+	bSolidMarkHdl( sal_True ),
 	bSummationOfParagraphs( sal_False ),
 	// #90356#
 	bShowUndoDeleteWarning( sal_True ),

@@ -86,6 +86,8 @@ sal_Bool __EXPORT ScDocShell::InitNew( const uno::Reference < embed::XStorage >&
 		SetVisAreaOrSize( Rectangle( Point(), aSize ), sal_True );
 	}
 
+    aDocument.SetDrawDefaults();        // drawing layer defaults that are set only in InitNew
+
 	// InitOptions sets the document languages, must be called before CreateStandardStyles
     InitOptions(false);
 

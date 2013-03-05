@@ -1,0 +1,102 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+#include "Sidebar.hrc"
+
+Resource RID_SIDEBAR_RESOURCE
+{
+    Image IMAGE_SIDEBAR_PLUS
+    {
+        ImageBitmap = Bitmap { File = "plus.png" ;};
+    };
+    
+    Image IMAGE_SIDEBAR_PLUS_HC
+    {
+        ImageBitmap = Bitmap { File = "plus_hc.png" ;};
+    };
+    
+    Image IMAGE_SIDEBAR_MINUS
+    {
+        ImageBitmap = Bitmap { File = "minus.png" ;};
+    };
+    
+    Image IMAGE_SIDEBAR_MINUS_HC
+    {
+        ImageBitmap = Bitmap { File = "minus_hc.png" ;};
+    };
+    
+    Image IMAGE_SIDEBAR_GRIP
+    {
+        ImageBitmap = Bitmap { File = "grip.png" ;};
+    };
+    
+    Image IMAGE_SIDEBAR_GRIP_HC
+    {
+        ImageBitmap = Bitmap { File = "grip_hc.png" ;};
+    };
+    
+    Image IMAGE_SIDEBAR_MENU
+    {
+        ImageBitmap = Bitmap { File = "menu.png" ;};
+    };
+    
+    Image IMAGE_SIDEBAR_MENU_HC
+    {
+        ImageBitmap = Bitmap { File = "menu_hc.png" ;};
+    };
+
+    Image IMAGE_SIDEBAR_TOOLBOX_SEPARATOR
+    {
+        ImageBitmap = Bitmap { File = "separator.png" ;};
+    };
+
+    Image IMAGE_SIDEBAR_TABBAR_PROPERTIES
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock01.png" ;};
+    };
+    Image IMAGE_SIDEBAR_TABBAR_MASTERS_SD
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock01_sd.png" ;};
+    };
+    Image IMAGE_SIDEBAR_TABBAR_CUSTOM_ANIMATION_SD
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock02_sd.png" ;};
+    };
+    Image IMAGE_SIDEBAR_TABBAR_SLIDE_TRANSITION_SD
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock03_sd.png" ;};
+    };
+    Image IMAGE_SIDEBAR_TABBAR_GALLERY_SD
+    {
+        ImageBitmap = Bitmap { File = "symphony/hpaneldock04_sd.png" ;};
+    };
+
+    String STRING_CUSTOMIZATION
+    {
+	Text [en-US] = "Customization";
+    };
+    String STRING_RESTORE
+    {
+	Text [en-US] = "Restore Default";
+    };
+};
+
+

@@ -21,7 +21,6 @@
 package testlib.uno;
 
 
-import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.uno.UnoApp;
 
 import com.sun.star.beans.PropertyValue;
@@ -43,7 +42,6 @@ import com.sun.star.text.XText;
 import com.sun.star.text.XTextContent;
 import com.sun.star.text.XTextCursor;
 import com.sun.star.text.XTextDocument;
-import com.sun.star.frame.XComponentLoader;
 import com.sun.star.frame.XModel;
 import com.sun.star.frame.XController;
 import com.sun.star.uno.UnoRuntime;
@@ -230,32 +228,5 @@ public class SWUtil {
         XStyle xStyle = (XStyle)UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));     
         XPropertySet xStyleProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xStyle);        
         xStyleProps.setPropertyValue (propertyName.toString(), propertyValue);
-	}
-	
-	public static XTextDocument saveTo_Override_reload(XTextDocument xTextDocument,String filtervalue, String url,UnoApp app) throws Exception {
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
-		PropertyValue[] aStoreProperties = new PropertyValue[2];
-		aStoreProperties[0] = new PropertyValue();
-		aStoreProperties[1] = new PropertyValue();
-		aStoreProperties[0].Name = "Override";
-		aStoreProperties[0].Value = true;
-		aStoreProperties[1].Name = "FilterName";
-		aStoreProperties[1].Value = filtervalue;
-		xStorable_odt.storeToURL(FileUtil.getUrl(url), aStoreProperties);
-		//reopen the document
-		return (XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(url));	
- 	}
-	/**
-	 * create document from template
-	 */
-	public static XComponent newDocumentFromTemplate(String templatePath,UnoApp unoApp) throws Exception
-	{
-		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, unoApp.getDesktop());
-		PropertyValue[] pros = new PropertyValue[1];
-		pros[0] = new PropertyValue();
-		pros[0].Name = "AsTemplate";
-		pros[0].Value = new Boolean(true);				
-		XComponent component = componentLoader.loadComponentFromURL(FileUtil.getUrl(templatePath), "_blank", 0,pros);
-		return component;
 	}
 }

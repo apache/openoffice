@@ -36,7 +36,7 @@ namespace ImageScaleMode = ::com::sun::star::awt::ImageScaleMode;
 
 ImageControl::ImageControl( Window* pParent, WinBits nStyle )
     :FixedImage( pParent, nStyle )
-    ,mnScaleMode( ImageScaleMode::ANISOTROPIC )
+    ,mnScaleMode( ImageScaleMode::Anisotropic )
 {
 }
 
@@ -44,7 +44,7 @@ ImageControl::ImageControl( Window* pParent, WinBits nStyle )
 
 ImageControl::ImageControl( Window* pParent, const ResId& rResId )
     :FixedImage( pParent, rResId )
-    ,mnScaleMode( ImageScaleMode::ANISOTROPIC )
+    ,mnScaleMode( ImageScaleMode::Anisotropic )
 {
 }
 
@@ -128,13 +128,13 @@ void ImageControl::ImplDraw( OutputDevice& rDev, sal_uLong nDrawFlags, const Poi
 
     switch ( mnScaleMode )
     {
-    case ImageScaleMode::NONE:
+    case ImageScaleMode::None:
     {
 	    rDev.DrawImage( lcl_centerWithin( aDrawRect, rBitmapSize ), *pImage, nStyle );
     }
     break;
 
-    case ImageScaleMode::ISOTROPIC:
+    case ImageScaleMode::Isotropic:
     {
         const Size aPaintSize = lcl_calcPaintSize( aDrawRect, rBitmapSize );
 	    rDev.DrawImage(
@@ -144,7 +144,7 @@ void ImageControl::ImplDraw( OutputDevice& rDev, sal_uLong nDrawFlags, const Poi
     }
     break;
 
-    case ImageScaleMode::ANISOTROPIC:
+    case ImageScaleMode::Anisotropic:
     {
 	    rDev.DrawImage(
             aDrawRect.TopLeft(),

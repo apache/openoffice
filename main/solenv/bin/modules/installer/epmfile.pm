@@ -326,11 +326,11 @@ sub create_epm_header
 	my $line = "";
 	my $infoline = "";
 		
-	# %product Apache OpenOffice Software
+	# %product OpenOffice.org Software
 	# %version 2.0
 	# %description A really great software
 	# %copyright 1999-2003 by OOo
-	# %vendor Apache OpenOffice project
+	# %vendor OpenOffice.org
 	# %license /test/replace/01/LICENSE01
 	# %readme /test/replace/01/README01
 	# %requires foo
@@ -492,7 +492,7 @@ sub create_epm_header
 	{
 		# refer to the license in the matching AOO installation
 		# TODO: sync AOO dest license full path with lpacks/sdks/exts
-		my $licpath = "apacheopenoffice3/program/" . $licensefilename;
+		my $licpath = "openoffice.org3/program/" . $licensefilename;
 		$foundlicensefile = 1;
 		$line = "%license " . $licpath . "\n";
 		push(@epmheader, $line);
@@ -550,7 +550,7 @@ sub create_epm_header
 				}
 			}
 
-			if ( $installer::globals::debian && $variableshashref->{'UNIXPRODUCTNAME'} eq 'apache openoffice' )
+			if ( $installer::globals::debian && $variableshashref->{'UNIXPRODUCTNAME'} eq 'openoffice.org' )
 			{
 				$line = "%provides" . " openoffice.org-unbundled\n";
 				push(@epmheader, $line);

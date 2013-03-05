@@ -1,0 +1,42 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include <sfx2/sfx.hrc>
+
+#define RID_SIDEBAR_RESOURCE  (RID_SFX_SIDEBAR_START +  0)
+
+#define IMAGE_SIDEBAR_PLUS                        1
+#define IMAGE_SIDEBAR_PLUS_HC                     2
+#define IMAGE_SIDEBAR_MINUS                       3
+#define IMAGE_SIDEBAR_MINUS_HC                    4
+#define IMAGE_SIDEBAR_GRIP                        5
+#define IMAGE_SIDEBAR_GRIP_HC                     6
+#define IMAGE_SIDEBAR_MENU                        7
+#define IMAGE_SIDEBAR_MENU_HC                     8
+#define IMAGE_SIDEBAR_TOOLBOX_SEPARATOR           9
+#define IMAGE_SIDEBAR_TABBAR_PROPERTIES          10
+#define IMAGE_SIDEBAR_TABBAR_MASTERS_SD          11
+#define IMAGE_SIDEBAR_TABBAR_CUSTOM_ANIMATION_SD 12
+#define IMAGE_SIDEBAR_TABBAR_SLIDE_TRANSITION_SD 13
+#define IMAGE_SIDEBAR_TABBAR_GALLERY_SD          14
+#define STRING_CUSTOMIZATION                     15
+#define STRING_RESTORE                           16

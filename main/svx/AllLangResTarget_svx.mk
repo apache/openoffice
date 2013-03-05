@@ -77,6 +77,11 @@ $(eval $(call gb_SrsTarget_add_files,svx/res,\
     svx/source/items/svxerr.src \
     svx/source/items/svxitems.src \
     svx/source/mnuctrls/mnuctrls.src \
+    svx/source/sidebar/area/AreaPropertyPanel.src \
+    svx/source/sidebar/graphic/GraphicPropertyPanel.src \
+    svx/source/sidebar/line/LinePropertyPanel.src \
+    svx/source/sidebar/transform/TransformationPropertyPanel.src \
+    svx/source/sidebar/text/TextPropertyPanel.src \
     svx/source/stbctrls/stbctrls.src \
     svx/source/svdraw/svdstr.src \
     svx/source/table/table.src \

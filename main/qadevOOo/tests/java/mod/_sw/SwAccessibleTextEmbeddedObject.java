@@ -60,11 +60,11 @@ public class SwAccessibleTextEmbeddedObject extends TestCase {
     * with an object to test and related objects.
     * Obtains accessible object for the embedded object.
     *
-    * @param Param test parameters
+    * @param tParam test parameters
     * @param log writer to log information while testing
     *
     * @see TestEnvironment
-    * @see #getTestEnvironment
+    * @see #getTestEnvironment()
     */
     protected TestEnvironment createTestEnvironment(
         TestParameters Param, PrintWriter log) {
@@ -123,7 +123,8 @@ public class SwAccessibleTextEmbeddedObject extends TestCase {
     /**
     * Called while disposing a <code>TestEnvironment</code>.
     * Disposes text document.
-    * @param Param test parameters
+    * @param tParam test parameters
+    * @param tEnv the environment to cleanup
     * @param log writer to log information while testing
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
@@ -136,10 +137,10 @@ public class SwAccessibleTextEmbeddedObject extends TestCase {
      * Loads the text document <code>SwXTextEmbeddedObject.sxw</code>
      * with a text embedded object.
      *
-     * @param Param test parameters
+     * @param tParam test parameters
      * @param log writer to log information while testing
      *
-     * @see #initializeTestCase
+     * @see #initializeTestCase()
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
         log.println( "open a text document" );

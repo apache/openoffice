@@ -1,5 +1,5 @@
 /**************************************************************
- *
+ * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- *
+ * 
  *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
+ * 
  *************************************************************/
 
 
@@ -25,10 +25,12 @@
 #define _SVTOOLS_STATUSBARCONTROLLER_HXX
 
 #include "svtools/svtdllapi.h"
-#include <com/sun/star/ui/XStatusbarItem.hpp>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
+#include <com/sun/star/lang/XInitialization.hpp>
+#include <com/sun/star/util/XUpdatable.hpp>
 #include <com/sun/star/frame/XFrame.hpp>
 #include <com/sun/star/frame/XDispatch.hpp>
+#include <com/sun/star/frame/XStatusListener.hpp>
 #include <com/sun/star/frame/XStatusbarController.hpp>
 #include <com/sun/star/util/XURLTransformer.hpp>
 #include <com/sun/star/frame/XLayoutManager.hpp>
@@ -46,8 +48,10 @@
 namespace svt
 {
 
-class SVT_DLLPUBLIC StatusbarController :
+class SVT_DLLPUBLIC StatusbarController : public ::com::sun::star::frame::XStatusListener,
                             public ::com::sun::star::frame::XStatusbarController,
+                            public ::com::sun::star::lang::XInitialization,
+                            public ::com::sun::star::util::XUpdatable,
                             public ::com::sun::star::lang::XComponent,
                             public ::comphelper::OBaseMutex,
                             public ::cppu::OWeakObject
@@ -102,9 +106,9 @@ class SVT_DLLPUBLIC StatusbarController :
                                        const ::com::sun::star::uno::Any& aData ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL paint( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >& xGraphics, 
                                      const ::com::sun::star::awt::Rectangle& rOutputRectangle, 
-                                     ::sal_Int32 nStyle ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL click( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL doubleClick( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
+                                     ::sal_Int32 nItemId, ::sal_Int32 nStyle ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL click() throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL doubleClick() throw (::com::sun::star::uno::RuntimeException);
  
     protected:
         struct Listener
@@ -143,7 +147,6 @@ class SVT_DLLPUBLIC StatusbarController :
         URLToDispatchMap                                                                    m_aListenerMap;
         ::cppu::OMultiTypeInterfaceContainerHelper                                          m_aListenerContainer;   /// container for ALL Listener
         mutable ::com::sun::star::uno::Reference< ::com::sun::star::util::XURLTransformer > m_xURLTransformer;
-        ::com::sun::star::uno::Reference< ::com::sun::star::ui::XStatusbarItem >           m_xStatusbarItem;
 };
 
 }

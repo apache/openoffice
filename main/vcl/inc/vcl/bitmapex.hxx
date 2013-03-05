@@ -46,9 +46,9 @@ enum TransparentType
 
 class VCL_DLLPUBLIC BitmapEx
 {
-private:
 	friend class ImpGraphic;
-    friend bool VCL_DLLPUBLIC WriteDIBBitmapEx(const BitmapEx& rSource, SvStream& rOStm);
+
+private:
 
 	Bitmap				aBitmap;
 	Bitmap				aMask;
@@ -59,8 +59,14 @@ private:
 
 public:
 
+//#if 0 // _SOLAR__PRIVATE
+
     SAL_DLLPRIVATE  ImpBitmap*  ImplGetBitmapImpBitmap() const { return aBitmap.ImplGetImpBitmap(); }
     SAL_DLLPRIVATE  ImpBitmap*  ImplGetMaskImpBitmap() const { return aMask.ImplGetImpBitmap(); }
+
+//#endif // PRIVATE
+
+public:
 
 						BitmapEx();
 						BitmapEx( const ResId& rResId );
@@ -103,7 +109,7 @@ public:
 	AlphaMask			GetAlpha() const;
 
     const Size&         GetSizePixel() const { return aBitmapSize; }
-	void				SetSizePixel( const Size& rNewSize, sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
+	void				SetSizePixel( const Size& rNewSize );
 
 	const Size&			GetPrefSize() const { return aBitmap.GetPrefSize(); }
 	void				SetPrefSize( const Size& rPrefSize ) { aBitmap.SetPrefSize( rPrefSize ); }
@@ -249,7 +255,7 @@ public:
 
         @return sal_True, if the operation was completed successfully.        
      */
-	sal_Bool				Scale( const Size& rNewSize, sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
+	sal_Bool				Scale( const Size& rNewSize, sal_uLong nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
 
     /** Scale the bitmap
 
@@ -261,7 +267,7 @@ public:
 
         @return sal_True, if the operation was completed successfully.        
      */
-    sal_Bool				Scale( const double& rScaleX, const double& rScaleY, sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
+    sal_Bool				Scale( const double& rScaleX, const double& rScaleY, sal_uLong nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
 
     /** Rotate bitmap by the specified angle
 
@@ -380,6 +386,11 @@ public:
                 0 is not transparent, 255 is fully transparent
      */
     sal_uInt8 GetTransparency(sal_Int32 nX, sal_Int32 nY) const;
+
+public:
+
+	friend VCL_DLLPUBLIC SvStream&	operator<<( SvStream& rOStm, const BitmapEx& rBitmapEx );
+	friend VCL_DLLPUBLIC SvStream&	operator>>( SvStream& rIStm, BitmapEx& rBitmapEx );
 };
 
 #endif // _SV_BITMAPEX_HXX

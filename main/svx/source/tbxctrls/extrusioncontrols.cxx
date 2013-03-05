@@ -28,6 +28,11 @@
 
 #include <string> // HACK: prevent conflict between STLPORT and Workshop headers
 
+#include <com/sun/star/util/XURLTransformer.hpp> 
+#include <com/sun/star/awt/MenuItemStyle.hpp>
+#include <com/sun/star/awt/XPopupMenuExtended.hpp>
+#include <com/sun/star/graphic/XGraphic.hpp>
+
 #include <vos/mutex.hxx>
 
 #include <svtools/toolbarmenu.hxx>

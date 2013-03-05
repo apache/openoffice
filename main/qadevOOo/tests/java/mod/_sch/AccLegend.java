@@ -100,7 +100,8 @@ public class AccLegend extends TestCase {
     /**
     * Called while disposing a <code>TestEnvironment</code>.
     * Disposes text document.
-    * @param Param test parameters
+    * @param tParam test parameters
+    * @param tEnv the environment to cleanup
     * @param log writer to log information while testing
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {

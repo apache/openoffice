@@ -336,6 +336,7 @@ public class AccessibleKeyBinding extends Object implements javax.accessibility.
                 keycode = java.awt.event.KeyEvent.VK_HELP;
                 break;
             default:
+                ;
         }
         return keycode;
     }

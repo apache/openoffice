@@ -85,6 +85,8 @@ public class _XAccessibleComponent extends MultiMethodTest {
             curX++;
         }
 
+        ;
+
         //if ((bounds.X <= curX) && (curX < bounds.Width+bounds.X)) {
         if (curX < bounds.Width) {
             log.println("Upper bound of box containsPoint point (" + curX + 
@@ -105,6 +107,8 @@ public class _XAccessibleComponent extends MultiMethodTest {
             curX++;
         }
 
+        ;
+
         //if ((bounds.X <= curX) && (curX < bounds.Width+bounds.X)) {
         if (curX < bounds.Width) {
             log.println("Lower bound of box containsPoint point (" + curX + 
@@ -122,6 +126,8 @@ public class _XAccessibleComponent extends MultiMethodTest {
                (curY < bounds.Height)) {
             curY++;
         }
+
+        ;
 
         //if ((bounds.Y <= curY) && (curY < bounds.Height+bounds.Y)) {
         if (curY < bounds.Height) {
@@ -141,6 +147,8 @@ public class _XAccessibleComponent extends MultiMethodTest {
                (curY < bounds.Height)) {
             curY++;
         }
+
+        ;
 
         //if ((bounds.Y <= curY) && (curY < bounds.Height + bounds.Y)) {
         if (curY < bounds.Height) {
@@ -264,6 +272,8 @@ public class _XAccessibleComponent extends MultiMethodTest {
                     curX--;
                     curY--;
                 }
+
+                ;
 
                 if ((curX == chBnd.Width) && isShowing) {
                     log.println("Couldn't find a point with containsPoint");

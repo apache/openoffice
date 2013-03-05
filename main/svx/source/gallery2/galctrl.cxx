@@ -300,16 +300,6 @@ void GalleryPreview::PreviewMedia( const INetURLObject& rURL )
 
 // ------------------------------------------------------------------------
 
-void drawCheckered(OutputDevice& rOut, const Point& rPos, const Size& rSize)
-{
-    // draw checkered background
-    static const sal_uInt32 nLen(8);
-    static const Color aW(COL_WHITE);
-    static const Color aG(0xef, 0xef, 0xef);
-
-    rOut.DrawCheckered(rPos, rSize, nLen, aW, aG);
-}
-
 // -------------------
 // - GalleryIconView -
 // -------------------
@@ -374,37 +364,21 @@ void GalleryIconView::UserDraw( const UserDrawEvent& rUDEvt )
 			const Rectangle&	rRect = rUDEvt.GetRect();
 			OutputDevice*		pDev = rUDEvt.GetDevice();
 			Graphic 			aGraphic;
-            bool bTransparent(false);
 
 			if( pObj->IsThumbBitmap() )
 			{
-				BitmapEx aBitmapEx;
+				Bitmap aBmp( pObj->GetThumbBmp() );
 
 				if( pObj->GetObjKind() == SGA_OBJ_SOUND )
-                {
-                    Bitmap aTemp = pObj->GetThumbBmp().GetBitmap();
-                    
-                    aTemp.Replace( COL_LIGHTMAGENTA, COL_WHITE );
-                    aBitmapEx = BitmapEx(aTemp);
-                }
-                else
-                {
-                    aBitmapEx = pObj->GetThumbBmp();
-                    bTransparent = aBitmapEx.IsTransparent();
-                }
+					aBmp.Replace( COL_LIGHTMAGENTA, COL_WHITE );
 
-				if( ( pDev->GetBitCount() <= 8 ) && ( aBitmapEx.GetBitCount() >= 8 ) )
-                {
-					aBitmapEx.Dither( BMP_DITHER_FLOYD );
-                }
+				if( ( pDev->GetBitCount() <= 8 ) && ( aBmp.GetBitCount() >= 8 ) )
+					aBmp.Dither( BMP_DITHER_FLOYD );
 
-				aGraphic = aBitmapEx;
+				aGraphic = aBmp;
 			}
 			else
-            {
 				aGraphic = pObj->GetThumbMtf();
-                bTransparent = true;
-            }
 
 			Size aSize( aGraphic.GetSizePixel( pDev ) );
 
@@ -431,12 +405,6 @@ void GalleryIconView::UserDraw( const UserDrawEvent& rUDEvt )
 
 				const Point aPos( ( ( rRect.GetWidth() - aSize.Width() ) >> 1 ) + rRect.Left(),
 								  ( ( rRect.GetHeight() - aSize.Height() ) >> 1 ) + rRect.Top() );
-
-                if(bTransparent)
-                {
-                    // draw checkered background
-                    drawCheckered(*pDev, aPos, aSize);
-                }
 
 				aGraphic.Draw( pDev, aPos, aSize );
 			}
@@ -636,24 +604,13 @@ void GalleryListView::PaintField( OutputDevice& rDev, const Rectangle& rRect, sa
             {
                 Rectangle       aOutputRect( rRect.TopLeft(), Size( rRect.GetHeight(), rRect.GetHeight() ) );
     			GraphicObject   aGrfObj;
-                bool bTransparent(false);
 
                 if( pObj->GetObjKind() == SGA_OBJ_SOUND )
-                {
                     aGrfObj = Graphic( BitmapEx( GAL_RESID( RID_SVXBMP_GALLERY_MEDIA ) ) );
-                }
                 else if( pObj->IsThumbBitmap() )
-                {
-                    const BitmapEx aBitmapEx(pObj->GetThumbBmp());
-
-                    bTransparent = aBitmapEx.IsTransparent();
-				    aGrfObj = Graphic(aBitmapEx);
-                }
+				    aGrfObj = Graphic( pObj->GetThumbBmp() );
 			    else
-                {
 				    aGrfObj = Graphic( pObj->GetThumbMtf() );
-                    bTransparent = true;
-                }
 
 			    Size aSize( rDev.LogicToPixel( aGrfObj.GetPrefSize(), aGrfObj.GetPrefMapMode() ) );
 
@@ -684,13 +641,7 @@ void GalleryListView::PaintField( OutputDevice& rDev, const Rectangle& rRect, sa
 				    const Point aPos( ( ( aOutputRect.GetWidth() - aSize.Width() ) >> 1 ) + aOutputRect.Left(),
 								      ( ( aOutputRect.GetHeight() - aSize.Height() ) >> 1 ) + aOutputRect.Top() );
 
-                    if(bTransparent)
-                    {
-                        // draw checkered background
-                        drawCheckered(rDev, aPos, aSize);
-                    }
-
-                    aGrfObj.Draw( &rDev, aPos, aSize );
+				    aGrfObj.Draw( &rDev, aPos, aSize );
 			    }
 
 			    rDev.DrawText( Point( aOutputRect.Right() + 6, nTextPosY ), GalleryBrowser2::GetItemText( *mpTheme, *pObj, GALLERY_ITEM_TITLE ) );

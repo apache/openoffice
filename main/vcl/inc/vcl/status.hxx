@@ -147,8 +147,6 @@ public:
 	void				HideItems();
 	sal_Bool				AreItemsVisible() const { return mbVisibleItems; }
 
-    void                RedrawItem( sal_uInt16 nItemId );
-
 	void				CopyItems( const StatusBar& rStatusBar );
 	void				Clear();
 

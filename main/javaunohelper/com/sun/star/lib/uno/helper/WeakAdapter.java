@@ -79,7 +79,6 @@ public class WeakAdapter implements XAdapter
     {
         return m_weakRef.get();
     }
-
     /** Method of com.sun.star.uno.XAdapter. Called by clients to register listener which
      * are notified when the weak object is dying.
      *@param xReference a listener
@@ -88,9 +87,8 @@ public class WeakAdapter implements XAdapter
     {
         m_xreferenceList.remove(xReference);
     }
-
     /** Method of com.sun.star.uno.XAdapter. Called by clients to unregister listeners.
-     *@param xReference listener
+     *@param a listener
      */
     public void addReference(XReference xReference)
     {

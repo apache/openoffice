@@ -61,11 +61,11 @@ public class AccessibleDrawDocumentView extends TestCase {
      * method to provide the implementation and related objects. The method is
      * called from <code>getTestEnvironment()</code>.
      *
-     * @param Param test parameters
+     * @param tParam test parameters
      * @param log writer to log information while testing
      *
      * @see TestEnvironment
-     * @see #getTestEnvironment
+     * @see #getTestEnvironment()
      */
     protected TestEnvironment createTestEnvironment
             (TestParameters Param, PrintWriter log) {
@@ -142,12 +142,13 @@ public class AccessibleDrawDocumentView extends TestCase {
     /**
     * Called while disposing a <code>TestEnvironment</code>.
     * Disposes Impress documents.
-    * @param Param test parameters
+    * @param tParam test parameters
+    * @param tEnv the environment to cleanup
     * @param log writer to log information while testing
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
         log.println("disposing Draw document");
-        util.DesktopTools.closeDoc(xDrawDoc);
+        util.DesktopTools.closeDoc(xDrawDoc);;
     }
 
     /**
@@ -155,10 +156,10 @@ public class AccessibleDrawDocumentView extends TestCase {
      * implementation does nothing. Subclasses can override to initialize
      * objects shared among all <code>TestEnvironment</code>s.
      *
-     * @param Param test parameters
+     * @param tParam test parameters
      * @param log writer to log information while testing
      *
-     * @see #initializeTestCase
+     * @see #initializeTestCase()
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
         // get a soffice factory object
@@ -167,7 +168,7 @@ public class AccessibleDrawDocumentView extends TestCase {
 
         try {
             log.println( "creating a draw document" );
-            xDrawDoc = SOF.createDrawDoc(null);
+            xDrawDoc = SOF.createDrawDoc(null);;
          } catch (com.sun.star.uno.Exception e) {
             // Some exception occures.FAILED
             e.printStackTrace( log );

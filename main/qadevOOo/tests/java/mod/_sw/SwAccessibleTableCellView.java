@@ -62,11 +62,11 @@ public class SwAccessibleTableCellView extends TestCase {
     * Creates a text table and inserts it to document. Then obtains accessible
     * object for one of table cell.
     *
-    * @param Param test parameters
+    * @param tParam test parameters
     * @param log writer to log information while testing
     *
     * @see TestEnvironment
-    * @see #getTestEnvironment
+    * @see #getTestEnvironment()
     */
     protected TestEnvironment createTestEnvironment(TestParameters Param, 
                                                     PrintWriter log) {
@@ -125,7 +125,8 @@ public class SwAccessibleTableCellView extends TestCase {
     /**
     * Called while disposing a <code>TestEnvironment</code>.
     * Disposes text document.
-    * @param Param test parameters
+    * @param tParam test parameters
+    * @param tEnv the environment to cleanup
     * @param log writer to log information while testing
     */
     protected void cleanup(TestParameters Param, PrintWriter log) {
@@ -137,10 +138,10 @@ public class SwAccessibleTableCellView extends TestCase {
      * Called while the <code>TestCase</code> initialization.
      * Creates a text document.
      *
-     * @param Param test parameters
+     * @param tParam test parameters
      * @param log writer to log information while testing
      *
-     * @see #initializeTestCase
+     * @see #initializeTestCase()
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
         log.println("creating a text document");

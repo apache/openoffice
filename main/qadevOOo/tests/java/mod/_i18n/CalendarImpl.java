@@ -40,7 +40,7 @@ import com.sun.star.uno.XInterface;
 * <ul>
 *  <li> <code>com::sun::star::i18n::Calendar</code></li>
 * </ul>
-* @see ifc.i18n._XCalendar
+* @see ifc.i18n._Calendar
 */
 public class CalendarImpl extends TestCase {
 

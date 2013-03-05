@@ -31,7 +31,6 @@
 #include <vcl/bitmapex.hxx>
 #include <tools/stream.hxx>
 #include <cppuhelper/typeprovider.hxx>
-#include <vcl/dibtools.hxx>
 
 using namespace com::sun::star::lang;
 using namespace com::sun::star::uno;
@@ -79,7 +78,7 @@ Sequence< sal_Int8 > SAL_CALL ImageWrapper::getDIB() throw ( RuntimeException )
 	vos::OGuard	aGuard( Application::GetSolarMutex() );
 
 	SvMemoryStream aMem;
-    WriteDIB(m_aImage.GetBitmapEx().GetBitmap(), aMem, false, true);
+	aMem << m_aImage.GetBitmapEx().GetBitmap();
 	return Sequence< sal_Int8 >( (sal_Int8*) aMem.GetData(), aMem.Tell() );
 }
 
@@ -91,13 +90,13 @@ Sequence< sal_Int8 > SAL_CALL ImageWrapper::getMaskDIB() throw ( RuntimeExceptio
 	if ( aBmpEx.IsAlpha() )
 	{
 		SvMemoryStream aMem;
-        WriteDIB(aBmpEx.GetAlpha().GetBitmap(), aMem, false, true);
+		aMem << aBmpEx.GetAlpha().GetBitmap();
 		return Sequence< sal_Int8 >( (sal_Int8*) aMem.GetData(), aMem.Tell() );
 	}
 	else if ( aBmpEx.IsTransparent() )
 	{
 		SvMemoryStream aMem;
-        WriteDIB(aBmpEx.GetMask(), aMem, false, true);
+		aMem << aBmpEx.GetMask();
 		return Sequence< sal_Int8 >( (sal_Int8*) aMem.GetData(), aMem.Tell() );
 	}
 

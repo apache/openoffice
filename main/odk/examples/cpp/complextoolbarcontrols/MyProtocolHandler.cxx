@@ -30,7 +30,7 @@
 #include <com/sun/star/text/XTextViewCursorSupplier.hpp>
 #include <com/sun/star/sheet/XSpreadsheetView.hpp>
 #include <com/sun/star/system/SystemShellExecuteFlags.hpp>
-#include <com/sun/star/system/SystemShellExecute.hpp>
+#include <com/sun/star/system/XSystemShellExecute.hpp>
 
 
 using namespace com::sun::star::awt;
@@ -40,7 +40,7 @@ using namespace com::sun::star::uno;
 
 using com::sun::star::beans::NamedValue;
 using com::sun::star::beans::PropertyValue;
-using com::sun::star::uno::XComponentContext;
+using com::sun::star::lang::XMultiServiceFactory;
 using com::sun::star::sheet::XSpreadsheetView;
 using com::sun::star::text::XTextViewCursorSupplier;
 using com::sun::star::util::URL;
@@ -50,16 +50,16 @@ ListenerHelper aListenerHelper;
 void BaseDispatch::ShowMessageBox( const Reference< XFrame >& rFrame, const ::rtl::OUString& aTitle, const ::rtl::OUString& aMsgText )
 {
 	if ( !mxToolkit.is() )
-		mxToolkit = Reference< XToolkit > (
-            mxContext->getServiceManager()->createInstanceWithContext(
-			::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.Toolkit" )), mxContext), UNO_QUERY );
+		mxToolkit = Reference< XToolkit > ( mxMSF->createInstance(
+			::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.Toolkit" ))), UNO_QUERY );
 
     Reference< XMessageBoxFactory > xMsgBoxFactory( mxToolkit, UNO_QUERY );
     if ( rFrame.is() && xMsgBoxFactory.is() )
     {
         Reference< XMessageBox > xMsgBox = xMsgBoxFactory->createMessageBox(
             Reference< XWindowPeer >( rFrame->getContainerWindow(), UNO_QUERY ),
-            com::sun::star::awt::MessageBoxType_INFOBOX,
+            Rectangle(0,0,300,200),
+            rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "infobox" ) ),
             MessageBoxButtons::BUTTONS_OK,
             aTitle,
             aMsgText );
@@ -146,8 +146,8 @@ Reference< XDispatch > SAL_CALL MyProtocolHandler::queryDispatch(	const URL& aUR
 			xRet = aListenerHelper.GetDispatch( mxFrame, aURL.Path );
 			if ( !xRet.is() )
 			{
-				xRet = xCursor.is() ? (BaseDispatch*) new WriterDispatch( mxContext, mxFrame ) :
-					(BaseDispatch*) new CalcDispatch( mxContext, mxFrame );
+				xRet = xCursor.is() ? (BaseDispatch*) new WriterDispatch( mxMSF, mxFrame ) :
+					(BaseDispatch*) new CalcDispatch( mxMSF, mxFrame );
 				aListenerHelper.AddDispatch( xRet, mxFrame, aURL.Path );
 			}
 		}
@@ -193,10 +193,10 @@ Sequence< ::rtl::OUString > SAL_CALL MyProtocolHandler_getSupportedServiceNames(
 
 #undef SERVICE_NAME
 
-Reference< XInterface > SAL_CALL MyProtocolHandler_createInstance( const Reference< XComponentContext > & rContext)
+Reference< XInterface > SAL_CALL MyProtocolHandler_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
 	throw( Exception )
 {
-	return (cppu::OWeakObject*) new MyProtocolHandler( rContext );
+	return (cppu::OWeakObject*) new MyProtocolHandler( rSMgr );
 }
 
 // XServiceInfo
@@ -233,17 +233,20 @@ void SAL_CALL BaseDispatch::dispatch( const URL& aURL, const Sequence < Property
 	{
 		if ( !aURL.Path.compareToAscii( RTL_CONSTASCII_STRINGPARAM( "ImageButtonCmd" ) ) )
 		{
-            // open the Apache OpenOffice web page
+            // open the OpenOffice.org web page
             ::rtl::OUString sURL( RTL_CONSTASCII_USTRINGPARAM( "http://www.openoffice.org" ) );
-            Reference< XSystemShellExecute > xSystemShellExecute(
-                com::sun::star::system::SystemShellExecute::create( mxContext ) );
-            try
+            Reference< XSystemShellExecute > xSystemShellExecute( mxMSF->createInstance(
+                ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.system.SystemShellExecute" ) ) ), UNO_QUERY );
+            if ( xSystemShellExecute.is() )
             {
-                xSystemShellExecute->execute( sURL, ::rtl::OUString(), SystemShellExecuteFlags::DEFAULTS );
-            }
-            catch( Exception& rEx )
-            {
-                (void)rEx;
+                try
+                {
+                    xSystemShellExecute->execute( sURL, ::rtl::OUString(), SystemShellExecuteFlags::DEFAULTS );
+                }
+                catch( Exception& rEx )
+                {
+                    (void)rEx;
+                } 
             }
         }
 		else if ( !aURL.Path.compareToAscii( RTL_CONSTASCII_STRINGPARAM( "ComboboxCmd" ) ) )
@@ -499,9 +502,9 @@ void SAL_CALL BaseDispatch::controlEvent( const ControlEvent& Event ) throw (Run
     }
 }
 
-BaseDispatch::BaseDispatch( const Reference< XComponentContext > &rxContext,
+BaseDispatch::BaseDispatch( const Reference< XMultiServiceFactory > &rxMSF,
         const Reference< XFrame >& xFrame, const rtl::OUString& rServiceName )
-        : mxContext( rxContext )
+        : mxMSF( rxMSF )
 		, mxFrame( xFrame )
         , msDocService( rServiceName )
         , mbButtonEnabled( sal_True )
@@ -512,5 +515,5 @@ BaseDispatch::BaseDispatch( const Reference< XComponentContext > &rxContext,
 BaseDispatch::~BaseDispatch()
 {
 	mxFrame.clear();
-	mxContext.clear();
+	mxMSF.clear();
 }

@@ -87,7 +87,7 @@ using ::rtl::OString;
 
 #define IMPLEMENTATION_NAME "com.sun.star.xml.security.bridge.xmlsec.NSSInitializer_NssImpl"
 
-#define ROOT_CERTS "Root Certs for Apache OpenOffice"
+#define ROOT_CERTS "Root Certs for OpenOffice.org"
 
 extern "C" void nsscrypto_finalize();
 

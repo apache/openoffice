@@ -283,12 +283,8 @@ $(DEF1TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL1USE_EXPORTS)"=="" || "$(SHL1USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL1TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL1TARGETN:b).lib $@
-.ENDIF			# "$(SHL1USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL1IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL1IMPLIBN) $(SHL1IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -567,12 +563,8 @@ $(DEF2TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL2USE_EXPORTS)"=="" || "$(SHL2USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL2TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL2TARGETN:b).lib $@
-.ENDIF			# "$(SHL2USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL2IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL2IMPLIBN) $(SHL2IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -851,12 +843,8 @@ $(DEF3TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL3USE_EXPORTS)"=="" || "$(SHL3USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL3TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL3TARGETN:b).lib $@
-.ENDIF			# "$(SHL3USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL3IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL3IMPLIBN) $(SHL3IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -1135,12 +1123,8 @@ $(DEF4TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL4USE_EXPORTS)"=="" || "$(SHL4USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL4TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL4TARGETN:b).lib $@
-.ENDIF			# "$(SHL4USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL4IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL4IMPLIBN) $(SHL4IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -1419,12 +1403,8 @@ $(DEF5TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL5USE_EXPORTS)"=="" || "$(SHL5USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL5TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL5TARGETN:b).lib $@
-.ENDIF			# "$(SHL5USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL5IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL5IMPLIBN) $(SHL5IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -1703,12 +1683,8 @@ $(DEF6TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL6USE_EXPORTS)"=="" || "$(SHL6USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL6TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL6TARGETN:b).lib $@
-.ENDIF			# "$(SHL6USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL6IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL6IMPLIBN) $(SHL6IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -1987,12 +1963,8 @@ $(DEF7TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL7USE_EXPORTS)"=="" || "$(SHL7USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL7TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL7TARGETN:b).lib $@
-.ENDIF			# "$(SHL7USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL7IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL7IMPLIBN) $(SHL7IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -2271,12 +2243,8 @@ $(DEF8TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL8USE_EXPORTS)"=="" || "$(SHL8USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL8TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL8TARGETN:b).lib $@
-.ENDIF			# "$(SHL8USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL8IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL8IMPLIBN) $(SHL8IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -2555,12 +2523,8 @@ $(DEF9TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL9USE_EXPORTS)"=="" || "$(SHL9USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL9TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL9TARGETN:b).lib $@
-.ENDIF			# "$(SHL9USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL9IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL9IMPLIBN) $(SHL9IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 
@@ -2839,12 +2803,8 @@ $(DEF10TARGETN) .PHONY :
 	$(COMMAND_ECHO)+$(RENAME) $@.tmpfile $@
 	@+-$(RM) $@.tmp_ord
 	@+-$(RM) $@.exptmpfile
-.IF "$(SHL10USE_EXPORTS)"=="" || "$(SHL10USE_EXPORTS)"=="ordinal"
-#03/11/2012  if 'name' is not used, export from def file (with ordinals)
-	@echo Build import library from DEF file.
-	@+-$(RM) $(LB)/$(SHL10TARGETN:b).lib
-	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(LB)/$(SHL10TARGETN:b).lib $@
-.ENDIF			# "$(SHL10USE_EXPORTS)"==""
+	$(COMMAND_ECHO)+$(IMPLIB) $(IMPLIBFLAGS) $(SHL10IMPLIBN:s/.lib/.a/) $@
+	$(COMMAND_ECHO)+emxomf -o $(SHL10IMPLIBN) $(SHL10IMPLIBN:s/.lib/.a/) 
 
 .ENDIF			# "$(GUI)"=="OS2"
 

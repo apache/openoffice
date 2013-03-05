@@ -126,6 +126,10 @@
 #include <svl/rectitem.hxx>
 
 #include <sfx2/frame.hxx>
+#include <svx/xlncapit.hxx>
+#include <svx/xflftrit.hxx>
+#include <svx/xlinjoit.hxx>
+#include <svx/AffineMatrixItem.hxx>
 
 #define SFX_TYPEMAP
 #include "sdslots.hxx"

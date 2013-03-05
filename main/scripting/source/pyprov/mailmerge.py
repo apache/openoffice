@@ -76,39 +76,39 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         self.connectioncontext = None
         self.notify = EventObject(self)
         if dbg:
-            print("PyMailSMPTService init", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService init"
     def addConnectionListener(self, xListener):
         if dbg:
-            print("PyMailSMPTService addConnectionListener", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService addConnectionListener"
         self.listeners.append(xListener)
     def removeConnectionListener(self, xListener):
         if dbg:
-            print("PyMailSMPTService removeConnectionListener", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService removeConnectionListener"
         self.listeners.remove(xListener)
     def getSupportedConnectionTypes(self):
         if dbg:
-            print("PyMailSMPTService getSupportedConnectionTypes", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService getSupportedConnectionTypes"
         return self.supportedtypes
     def connect(self, xConnectionContext, xAuthenticator):
         self.connectioncontext = xConnectionContext
         if dbg:
-            print("PyMailSMPTService connect", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService connect"
 
         server = xConnectionContext.getValueByName("ServerName")
         if dbg:
-            print("ServerName: %s" % server, file=sys.stderr)
+            print >> sys.stderr, "ServerName: %s" % server
 
         port = xConnectionContext.getValueByName("Port")
         if dbg:
-            print("Port: %d" % port, file=sys.stderr)
+            print >> sys.stderr, "Port: %d" % port
 
         tout = xConnectionContext.getValueByName("Timeout")
         if dbg:
-            print(isinstance(tout,int), file=sys.stderr)
+            print >> sys.stderr, isinstance(tout,int)
         if not isinstance(tout,int):
             tout = _GLOBAL_DEFAULT_TIMEOUT
         if dbg:
-            print("Timeout: %s" % str(tout), file=sys.stderr)
+            print >> sys.stderr, "Timeout: %s" % str(tout)
 
         self.server = smtplib.SMTP(server, port,timeout=tout)
         if dbg:
@@ -116,7 +116,7 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
 
         connectiontype = xConnectionContext.getValueByName("ConnectionType")
         if dbg:
-            print("ConnectionType: %s" % connectiontype, file=sys.stderr)
+            print >> sys.stderr, "ConnectionType: %s" % connectiontype
 
         if connectiontype.upper() == 'SSL':
             self.server.ehlo()
@@ -127,14 +127,14 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         password = xAuthenticator.getPassword().encode('ascii')
         if user != '':
             if dbg:
-                print('Logging in, username of', user, file=sys.stderr)
+                print >> sys.stderr, 'Logging in, username of', user
             self.server.login(user, password)
 
         for listener in self.listeners:
             listener.connected(self.notify)
     def disconnect(self):
         if dbg:
-            print("PyMailSMPTService disconnect", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService disconnect"
         if self.server:
             self.server.quit()
             self.server = None
@@ -142,17 +142,17 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
             listener.disconnected(self.notify)
     def isConnected(self):
         if dbg:
-            print("PyMailSMPTService isConnected", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService isConnected"
         return self.server != None
     def getCurrentConnectionContext(self):
         if dbg:
-            print("PyMailSMPTService getCurrentConnectionContext", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService getCurrentConnectionContext"
         return self.connectioncontext
     def sendMailMessage(self, xMailMessage):
         COMMASPACE = ', '
 
         if dbg:
-            print("PyMailSMPTService sendMailMessage", file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService sendMailMessage"
         recipients = xMailMessage.getRecipients()
         sendermail = xMailMessage.SenderAddress
         sendername = xMailMessage.SenderName
@@ -160,10 +160,10 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         ccrecipients = xMailMessage.getCcRecipients()
         bccrecipients = xMailMessage.getBccRecipients()
         if dbg:
-            print("PyMailSMPTService subject", subject, file=sys.stderr)
-            print("PyMailSMPTService from", sendername.encode('utf-8'), file=sys.stderr)
-            print("PyMailSMTPService from", sendermail, file=sys.stderr)
-            print("PyMailSMPTService send to", recipients, file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService subject", subject
+            print >> sys.stderr, "PyMailSMPTService from", sendername.encode('utf-8')
+            print >> sys.stderr, "PyMailSMTPService from", sendermail
+            print >> sys.stderr, "PyMailSMPTService send to", recipients
 
         attachments = xMailMessage.getAttachments()
 
@@ -172,13 +172,13 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         content = xMailMessage.Body
         flavors = content.getTransferDataFlavors()
         if dbg:
-            print("PyMailSMPTService flavors len", len(flavors), file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService flavors len", len(flavors)
 
         #Use first flavor that's sane for an email body
         for flavor in flavors:
             if flavor.MimeType.find('text/html') != -1 or flavor.MimeType.find('text/plain') != -1:
                 if dbg:
-                    print("PyMailSMPTService mimetype is", flavor.MimeType, file=sys.stderr)
+                    print >> sys.stderr, "PyMailSMPTService mimetype is", flavor.MimeType
                 textbody = content.getTransferData(flavor)
                 try:
                     textbody = textbody.value
@@ -258,10 +258,10 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         if len(bccrecipients):
             for key in bccrecipients:
                 uniquer[key] = True
-        truerecipients = list(uniquer.keys())
+        truerecipients = uniquer.keys()
 
         if dbg:
-            print("PyMailSMPTService recipients are", truerecipients, file=sys.stderr)
+            print >> sys.stderr, "PyMailSMPTService recipients are", truerecipients
 
         self.server.sendmail(sendermail, truerecipients, msg.as_string())
 
@@ -274,52 +274,52 @@ class PyMailIMAPService(unohelper.Base, XMailService):
         self.connectioncontext = None
         self.notify = EventObject(self)
         if dbg:
-            print("PyMailIMAPService init", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService init"
     def addConnectionListener(self, xListener):
         if dbg:
-            print("PyMailIMAPService addConnectionListener", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService addConnectionListener"
         self.listeners.append(xListener)
     def removeConnectionListener(self, xListener):
         if dbg:
-            print("PyMailIMAPService removeConnectionListener", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService removeConnectionListener"
         self.listeners.remove(xListener)
     def getSupportedConnectionTypes(self):
         if dbg:
-            print("PyMailIMAPService getSupportedConnectionTypes", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService getSupportedConnectionTypes"
         return self.supportedtypes
     def connect(self, xConnectionContext, xAuthenticator):
         if dbg:
-            print("PyMailIMAPService connect", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService connect"
 
         self.connectioncontext = xConnectionContext
         server = xConnectionContext.getValueByName("ServerName")
         if dbg:
-            print(server, file=sys.stderr)
+            print >> sys.stderr, server
         port = xConnectionContext.getValueByName("Port")
         if dbg:
-            print(port, file=sys.stderr)
+            print >> sys.stderr, port
         connectiontype = xConnectionContext.getValueByName("ConnectionType")
         if dbg:
-            print(connectiontype, file=sys.stderr)
-        print("BEFORE", file=sys.stderr)
+            print >> sys.stderr, connectiontype
+        print >> sys.stderr, "BEFORE"
         if connectiontype.upper() == 'SSL':
             self.server = imaplib.IMAP4_SSL(server, port)
         else:
             self.server = imaplib.IMAP4(server, port)
-        print("AFTER", file=sys.stderr)
+        print >> sys.stderr, "AFTER"
 
         user = xAuthenticator.getUserName().encode('ascii')
         password = xAuthenticator.getPassword().encode('ascii')
         if user != '':
             if dbg:
-                print('Logging in, username of', user, file=sys.stderr)
+                print >> sys.stderr, 'Logging in, username of', user
             self.server.login(user, password)
 
         for listener in self.listeners:
             listener.connected(self.notify)
     def disconnect(self):
         if dbg:
-            print("PyMailIMAPService disconnect", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService disconnect"
         if self.server:
             self.server.logout()
             self.server = None
@@ -327,11 +327,11 @@ class PyMailIMAPService(unohelper.Base, XMailService):
             listener.disconnected(self.notify)
     def isConnected(self):
         if dbg:
-            print("PyMailIMAPService isConnected", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService isConnected"
         return self.server != None
     def getCurrentConnectionContext(self):
         if dbg:
-            print("PyMailIMAPService getCurrentConnectionContext", file=sys.stderr)
+            print >> sys.stderr, "PyMailIMAPService getCurrentConnectionContext"
         return self.connectioncontext
 
 class PyMailPOP3Service(unohelper.Base, XMailService):
@@ -343,51 +343,51 @@ class PyMailPOP3Service(unohelper.Base, XMailService):
         self.connectioncontext = None
         self.notify = EventObject(self)
         if dbg:
-            print("PyMailPOP3Service init", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service init"
     def addConnectionListener(self, xListener):
         if dbg:
-            print("PyMailPOP3Service addConnectionListener", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service addConnectionListener"
         self.listeners.append(xListener)
     def removeConnectionListener(self, xListener):
         if dbg:
-            print("PyMailPOP3Service removeConnectionListener", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service removeConnectionListener"
         self.listeners.remove(xListener)
     def getSupportedConnectionTypes(self):
         if dbg:
-            print("PyMailPOP3Service getSupportedConnectionTypes", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service getSupportedConnectionTypes"
         return self.supportedtypes
     def connect(self, xConnectionContext, xAuthenticator):
         if dbg:
-            print("PyMailPOP3Service connect", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service connect"
 
         self.connectioncontext = xConnectionContext
         server = xConnectionContext.getValueByName("ServerName")
         if dbg:
-            print(server, file=sys.stderr)
+            print >> sys.stderr, server
         port = xConnectionContext.getValueByName("Port")
         if dbg:
-            print(port, file=sys.stderr)
+            print >> sys.stderr, port
         connectiontype = xConnectionContext.getValueByName("ConnectionType")
         if dbg:
-            print(connectiontype, file=sys.stderr)
-        print("BEFORE", file=sys.stderr)
+            print >> sys.stderr, connectiontype
+        print >> sys.stderr, "BEFORE"
         if connectiontype.upper() == 'SSL':
             self.server = poplib.POP3_SSL(server, port)
         else:
             tout = xConnectionContext.getValueByName("Timeout")
             if dbg:
-                print(isinstance(tout,int), file=sys.stderr)
+                print >> sys.stderr, isinstance(tout,int)
             if not isinstance(tout,int):
                 tout = _GLOBAL_DEFAULT_TIMEOUT
             if dbg:
-                print("Timeout: %s" % str(tout), file=sys.stderr)
+                print >> sys.stderr, "Timeout: %s" % str(tout)
             self.server = poplib.POP3(server, port, timeout=tout)
-        print("AFTER", file=sys.stderr)
+        print >> sys.stderr, "AFTER"
 
         user = xAuthenticator.getUserName().encode('ascii')
         password = xAuthenticator.getPassword().encode('ascii')
         if dbg:
-            print('Logging in, username of', user, file=sys.stderr)
+            print >> sys.stderr, 'Logging in, username of', user
         self.server.user(user)
         self.server.pass_(password)
 
@@ -395,7 +395,7 @@ class PyMailPOP3Service(unohelper.Base, XMailService):
             listener.connected(self.notify)
     def disconnect(self):
         if dbg:
-            print("PyMailPOP3Service disconnect", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service disconnect"
         if self.server:
             self.server.quit()
             self.server = None
@@ -403,21 +403,21 @@ class PyMailPOP3Service(unohelper.Base, XMailService):
             listener.disconnected(self.notify)
     def isConnected(self):
         if dbg:
-            print("PyMailPOP3Service isConnected", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service isConnected"
         return self.server != None
     def getCurrentConnectionContext(self):
         if dbg:
-            print("PyMailPOP3Service getCurrentConnectionContext", file=sys.stderr)
+            print >> sys.stderr, "PyMailPOP3Service getCurrentConnectionContext"
         return self.connectioncontext
 
 class PyMailServiceProvider(unohelper.Base, XMailServiceProvider):
     def __init__( self, ctx ):
         if dbg:
-            print("PyMailServiceProvider init", file=sys.stderr)
+            print >> sys.stderr, "PyMailServiceProvider init"
         self.ctx = ctx
     def create(self, aType):
         if dbg:
-            print("PyMailServiceProvider create with", aType, file=sys.stderr)
+            print >> sys.stderr, "PyMailServiceProvider create with", aType
         if aType == SMTP:
             return PyMailSMTPService(self.ctx);
         elif aType == POP3:
@@ -425,12 +425,12 @@ class PyMailServiceProvider(unohelper.Base, XMailServiceProvider):
         elif aType == IMAP:
             return PyMailIMAPService(self.ctx);
         else:
-            print("PyMailServiceProvider, unknown TYPE", aType, file=sys.stderr)
+            print >> sys.stderr, "PyMailServiceProvider, unknown TYPE", aType
 
 class PyMailMessage(unohelper.Base, XMailMessage):
     def __init__( self, ctx, sTo='', sFrom='', Subject='', Body=None, aMailAttachment=None ):
         if dbg:
-            print("PyMailMessage init", file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage init"
         self.ctx = ctx
 
         self.recipients = [sTo]
@@ -445,38 +445,38 @@ class PyMailMessage(unohelper.Base, XMailMessage):
         self.Subject = Subject
         self.Body = Body
         if dbg:
-            print("post PyMailMessage init", file=sys.stderr)
+            print >> sys.stderr, "post PyMailMessage init"
     def addRecipient( self, recipient ):
         if dbg:
-            print("PyMailMessage.addRecipient", recipient, file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.addRecipient", recipient
         self.recipients.append(recipient)
     def addCcRecipient( self, ccrecipient ):
         if dbg:
-            print("PyMailMessage.addCcRecipient", ccrecipient, file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.addCcRecipient", ccrecipient
         self.ccrecipients.append(ccrecipient)
     def addBccRecipient( self, bccrecipient ):
         if dbg:
-            print("PyMailMessage.addBccRecipient", bccrecipient, file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.addBccRecipient", bccrecipient
         self.bccrecipients.append(bccrecipient)
     def getRecipients( self ):
         if dbg:
-            print("PyMailMessage.getRecipients", self.recipients, file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.getRecipients", self.recipients
         return tuple(self.recipients)
     def getCcRecipients( self ):
         if dbg:
-            print("PyMailMessage.getCcRecipients", self.ccrecipients, file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.getCcRecipients", self.ccrecipients
         return tuple(self.ccrecipients)
     def getBccRecipients( self ):
         if dbg:
-            print("PyMailMessage.getBccRecipients", self.bccrecipients, file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.getBccRecipients", self.bccrecipients
         return tuple(self.bccrecipients)
     def addAttachment( self, aMailAttachment ):
         if dbg:
-            print("PyMailMessage.addAttachment", file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.addAttachment"
         self.aMailAttachments.append(aMailAttachment)
     def getAttachments( self ):
         if dbg:
-            print("PyMailMessage.getAttachments", file=sys.stderr)
+            print >> sys.stderr, "PyMailMessage.getAttachments"
         return tuple(self.aMailAttachments)
 
 

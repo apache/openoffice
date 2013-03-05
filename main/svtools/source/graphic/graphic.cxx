@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
 
@@ -29,7 +31,6 @@
 #include <com/sun/star/graphic/XGraphicTransformer.hpp>
 #include <vcl/graph.hxx>
 #include "graphic.hxx"
-#include <vcl/dibtools.hxx>
 
 using namespace com::sun::star;
 
@@ -248,8 +249,7 @@ uno::Sequence< ::sal_Int8 > SAL_CALL Graphic::getDIB(  ) throw (uno::RuntimeExce
 	if( mpGraphic && ( mpGraphic->GetType() != GRAPHIC_NONE ) )
 	{
 		SvMemoryStream aMem;
-
-        WriteDIB(mpGraphic->GetBitmapEx().GetBitmap(), aMem, false, true);
+		aMem << mpGraphic->GetBitmapEx().GetBitmap();
 		return ::com::sun::star::uno::Sequence<sal_Int8>( (sal_Int8*) aMem.GetData(), aMem.Tell() );
 	}
 	else
@@ -267,8 +267,7 @@ uno::Sequence< ::sal_Int8 > SAL_CALL Graphic::getMaskDIB(  ) throw (uno::Runtime
 	if( mpGraphic && ( mpGraphic->GetType() != GRAPHIC_NONE ) )
 	{
 		SvMemoryStream aMem;
-
-        WriteDIB(mpGraphic->GetBitmapEx().GetMask(), aMem, false, true);
+		aMem << mpGraphic->GetBitmapEx().GetMask();
 		return ::com::sun::star::uno::Sequence<sal_Int8>( (sal_Int8*) aMem.GetData(), aMem.Tell() );
 	}
 	else

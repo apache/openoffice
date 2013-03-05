@@ -73,9 +73,9 @@ import util.SOfficeFactory;
  * @see ifc.accessibility._XAccessibleEventBroadcaster
  * @see ifc.accessibility._XAccessibleContext
  * @see ifc.accessibility._XAccessibleComponent
- * @see ifc.accessibility._XAccessibleExtendedComponent
- * @see ifc.accessibility._XAccessibleValue
- * @see ifc.accessibility._XAccessibleAction
+ * @see ifc.accessibility.XAccessibleExtendedComponent
+ * @see ifc.accessibility.XAccessibleValue
+ * @see ifc.accessibility.XAccessibleAction
  */
 public class AccessibleScrollBar extends TestCase {
     private static XDesktop the_Desk;

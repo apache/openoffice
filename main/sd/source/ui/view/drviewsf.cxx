@@ -308,10 +308,15 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			case SID_ATTR_FILL_HATCH:
 			case SID_ATTR_FILL_BITMAP:
 			case SID_ATTR_FILL_SHADOW:
+            case SID_ATTR_FILL_TRANSPARENCE:
+            case SID_ATTR_FILL_FLOATTRANSPARENCE:
 			case SID_ATTR_LINE_STYLE:
 			case SID_ATTR_LINE_DASH:
 			case SID_ATTR_LINE_WIDTH:
 			case SID_ATTR_LINE_COLOR:
+            case SID_ATTR_LINE_TRANSPARENCE:
+            case SID_ATTR_LINE_JOINT:
+            case SID_ATTR_LINE_CAP:
 			case SID_ATTR_TEXT_FITTOSIZE:
 			{
 				bAttr = sal_True;

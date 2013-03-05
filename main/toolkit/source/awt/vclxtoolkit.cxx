@@ -70,6 +70,8 @@
 #include <toolkit/awt/vclxtabpagecontainer.hxx>
 #include <toolkit/awt/vclxtabpagemodel.hxx>
 
+#include <toolkit/awt/xsimpleanimation.hxx>
+#include <toolkit/awt/xthrobber.hxx>
 #include <toolkit/awt/animatedimagespeer.hxx>
 #include <toolkit/awt/vclxtopwindow.hxx>
 #include <toolkit/awt/vclxwindow.hxx>
@@ -313,9 +315,11 @@ static ComponentInfo __FAR_DATA aComponentInfos [] =
 	{ "radiobutton",		WINDOW_RADIOBUTTON },
 	{ "scrollbar",			WINDOW_SCROLLBAR },
 	{ "scrollbarbox",		WINDOW_SCROLLBARBOX },
+    { "simpleanimation",	WINDOW_CONTROL },
     { "animatedimages",     WINDOW_CONTROL },
 	{ "spinbutton",			WINDOW_SPINBUTTON },
 	{ "spinfield",			WINDOW_SPINFIELD },
+    { "throbber",        	WINDOW_CONTROL },
 	{ "splitter",			WINDOW_SPLITTER },
 	{ "splitwindow",		WINDOW_SPLITWINDOW },
 	{ "statusbar",			WINDOW_STATUSBAR },
@@ -380,47 +384,6 @@ sal_uInt16 ImplGetComponentType( const String& rServiceName )
 	return pInf ? pInf->nWinType : 0;
 }
 
-
-namespace
-{
-    struct MessageBoxTypeInfo
-    {
-        css::awt::MessageBoxType eType;
-        const sal_Char          *pName;
-        sal_Int32                nLen;
-    };
-
-    static MessageBoxTypeInfo aMessageBoxTypeInfo[] =
-    {
-        { css::awt::MessageBoxType_MESSAGEBOX,      RTL_CONSTASCII_STRINGPARAM("messbox") },
-        { css::awt::MessageBoxType_INFOBOX,         RTL_CONSTASCII_STRINGPARAM("infobox") },
-        { css::awt::MessageBoxType_WARNINGBOX,      RTL_CONSTASCII_STRINGPARAM("warningbox") },
-        { css::awt::MessageBoxType_ERRORBOX,        RTL_CONSTASCII_STRINGPARAM("errorbox") },
-        { css::awt::MessageBoxType_QUERYBOX,        RTL_CONSTASCII_STRINGPARAM("querybox") },
-        { css::awt::MessageBoxType_MAKE_FIXED_SIZE, 0, 0 }
-    };
-
-    static bool lcl_convertMessageBoxType(
-        rtl::OUString &sType,
-        css::awt::MessageBoxType eType )
-    {
-        const MessageBoxTypeInfo *pMap = aMessageBoxTypeInfo;
-        css::awt::MessageBoxType eVal = css::awt::MessageBoxType_MAKE_FIXED_SIZE;
-
-        while ( pMap->pName )
-        {
-            if ( pMap->eType == eType )
-            {
-                eVal = eType;
-                sType = rtl::OUString( pMap->pName, pMap->nLen, RTL_TEXTENCODING_ASCII_US );
-                break;
-            }
-            pMap++;
-        }
-
-        return ( eVal != css::awt::MessageBoxType_MAKE_FIXED_SIZE );
-    }
-}
 
 //	----------------------------------------------------
 //	class VCLXToolkit
@@ -1046,7 +1009,21 @@ Window*	VCLXToolkit::ImplCreateWindow( VCLXWindow** ppNewComp,
 				}
 			break;
 			case WINDOW_CONTROL:
-                if ( rDescriptor.WindowServiceName.equalsIgnoreAsciiCase(
+                if  ( aServiceName.EqualsAscii( "simpleanimation" ) )
+                {
+                    pNewWindow = new Throbber( pParent, nWinBits, Throbber::IMAGES_NONE );
+                    ((Throbber*)pNewWindow)->SetScaleMode( css::awt::ImageScaleMode::Anisotropic );
+                        // (compatibility)
+                    *ppNewComp = new ::toolkit::XSimpleAnimation;
+                }
+                else if ( aServiceName.EqualsAscii( "throbber" ) )
+                {
+                    pNewWindow = new Throbber( pParent, nWinBits, Throbber::IMAGES_NONE );
+                    ((Throbber*)pNewWindow)->SetScaleMode( css::awt::ImageScaleMode::Anisotropic );
+                        // (compatibility)
+                    *ppNewComp = new ::toolkit::XThrobber;
+                }
+				else if ( rDescriptor.WindowServiceName.equalsIgnoreAsciiCase(
                         ::rtl::OUString::createFromAscii("tabpagecontainer") ) )
                 {
                     pNewWindow = new TabControl( pParent, nWinBits );
@@ -1265,8 +1242,9 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 
 // ::com::sun::star::awt::XMessageBoxFactory
 ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMessageBox > SAL_CALL VCLXToolkit::createMessageBox( 
-    const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& aParent,
-    ::com::sun::star::awt::MessageBoxType eType,
+    const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& aParent, 
+    const ::com::sun::star::awt::Rectangle& aPosSize, 
+    const ::rtl::OUString& aType, 
     ::sal_Int32 aButtons, 
     const ::rtl::OUString& aTitle, 
     const ::rtl::OUString& aMessage ) throw (::com::sun::star::uno::RuntimeException)
@@ -1306,14 +1284,12 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
         nAddWinBits |= WB_ABORT_RETRY_IGNORE;
     if ( sal_Int32( aButtons & 0xffff0000L ) == css::awt::MessageBoxButtons::DEFAULT_BUTTON_IGNORE )
         nAddWinBits |= WB_DEF_IGNORE;
-
-    rtl::OUString aType;
-    lcl_convertMessageBoxType( aType, eType );
-
+    
     aDescriptor.Type              = css::awt::WindowClass_MODALTOP;
     aDescriptor.WindowServiceName = aType;
     aDescriptor.ParentIndex       = -1;
     aDescriptor.Parent            = aParent;
+    aDescriptor.Bounds            = aPosSize;
     aDescriptor.WindowAttributes  = nWindowAttributes;
     ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMessageBox > xMsgBox(
         ImplCreateWindow( aDescriptor, nAddWinBits ), css::uno::UNO_QUERY );

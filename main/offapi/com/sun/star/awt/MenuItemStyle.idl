@@ -1,5 +1,5 @@
 /**************************************************************
- *
+ * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,43 +7,58 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- *
+ * 
  *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
+ * 
  *************************************************************/
 
 
-#ifndef __com_sun_star_awt_MenuItemStyle_idl__
-#define __com_sun_star_awt_MenuItemStyle_idl__
-
-module com {  module sun {  module star {  module awt {
-
-/** These values are used to specify the properties of a menu item.
+#ifndef __com_sun_star_awt_MenuItemStyle_idl__ 
+#define __com_sun_star_awt_MenuItemStyle_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module awt {  
+ 
+//============================================================================= 
+ 
+/** These values are used to specify the properties of a menu item. 
+		 
+	<p>They may be expanded in future versions.</p>
  */
-constants MenuItemStyle
-{
-    /** specifies an item which can be checked independently.
-     */
-    const short CHECKABLE = 1;
-
-    /** specifies an item which can be checked dependent on the neighbouring
+published constants MenuItemStyle
+{ 
+	//------------------------------------------------------------------------- 
+		
+	/** specifies an item which can be checked independently.
+	 */
+	const short CHECKABLE = 1; 
+ 
+	//------------------------------------------------------------------------- 
+		
+	/** specifies an item which can be checked dependent on the neighbouring
         items.
-     */
-    const short RADIOCHECK = 2;
-
-    /** specifies to check this item automatically on select.
-     */
-    const short AUTOCHECK = 4;
-
-};
-
-}; }; }; };
-
-#endif
+	 */
+	const short RADIOCHECK = 2; 
+ 
+	//------------------------------------------------------------------------- 
+		
+	/** specifies to check this item automatically on select.
+	 */
+	const short AUTOCHECK = 4; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

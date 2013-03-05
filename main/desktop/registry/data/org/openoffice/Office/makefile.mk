@@ -38,7 +38,7 @@ PROCESSORDIR=$(SOLARBINDIR)
 
 # --- Files  -------------------------------------------------------
 
-.IF "$(ENABLE_OOOIMPROVEMENT)"!=""
+.IF "$(BUILD_SPECIAL)"!=""
 
 XCUFILES= \
     Jobs.xcu
@@ -53,12 +53,12 @@ SPOOLDIR=$(MISC)$/registry$/spool
 MYXCUFILES= \
 	$(SPOOLDIR)$/$(PACKAGEDIR)$/Jobs$/Jobs-registration.xcu
 
-.ELSE # "$(ENABLE_OOOIMPROVEMENT)"!=""
+.ELSE # "$(BUILD_SPECIAL)"!=""
 
 dummy:
     @echo "Nothing to build"
 
-.ENDIF # "$(ENABLE_OOOIMPROVEMENT)"!=""
+.ENDIF # "$(BUILD_SPECIAL)"!=""
 
 # --- Targets ------------------------------------------------------
 

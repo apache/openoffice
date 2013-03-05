@@ -62,9 +62,7 @@ RESLIB1SRSFILES=\
 # --- StarClac DLL
 
 SHL1TARGET= sc$(DLLPOSTFIX)
-.IF "$(GUI)" != "OS2"
 SHL1USE_EXPORTS=name
-.ENDIF
 SHL1IMPLIB= sci
 
 # dynamic libraries

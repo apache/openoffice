@@ -437,7 +437,7 @@ sal_Bool ScDrawTransferObj::GetData( const ::com::sun::star::datatransfer::DataF
             if ( nFormat == SOT_FORMAT_GDIMETAFILE )
                 bOK = SetGDIMetaFile( aView.GetMarkedObjMetaFile(true), rFlavor );
             else
-                bOK = SetBitmapEx( aView.GetMarkedObjBitmapEx(true), rFlavor );
+                bOK = SetBitmap( aView.GetMarkedObjBitmapEx(true).GetBitmap(), rFlavor );
         }
         else if ( nFormat == SOT_FORMATSTR_ID_SVXB )
         {

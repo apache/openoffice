@@ -411,9 +411,10 @@ class SVX_DLLPUBLIC LineEndLB : public ListBox
 {
 
 public:
-		 LineEndLB( Window* pParent, ResId Id ) : ListBox( pParent, Id ) {}
-		 LineEndLB( Window* pParent, WinBits aWB ) : ListBox( pParent, aWB ) {}
-
+                          LineEndLB( Window* pParent, ResId Id );
+                          LineEndLB( Window* pParent, WinBits aWB );
+                 virtual ~LineEndLB (void);
+                 
 	virtual void Fill( const XLineEndList* pList, sal_Bool bStart = sal_True );
 
 	void	Append( XLineEndEntry* pEntry, Bitmap* pBmp = NULL,

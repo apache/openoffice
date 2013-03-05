@@ -35,7 +35,7 @@
 #include <vcl/status.hxx>
 #include <svtools/imgdef.hxx>
 #include <svtools/miscopt.hxx>
-#include <toolkit/helper/vclunohelper.hxx>
+#include <toolkit/unohlp.hxx>
 
 using namespace ::cppu;
 using namespace ::com::sun::star::awt;
@@ -157,6 +157,12 @@ void SAL_CALL StatusbarController::release() throw ()
 void SAL_CALL StatusbarController::initialize( const Sequence< Any >& aArguments )
 throw ( Exception, RuntimeException )
 {
+    const rtl::OUString aFrameName( RTL_CONSTASCII_USTRINGPARAM( "Frame" ));
+    const rtl::OUString aCommandURLName( RTL_CONSTASCII_USTRINGPARAM( "CommandURL" ));
+    const rtl::OUString aServiceManagerName( RTL_CONSTASCII_USTRINGPARAM( "ServiceManager" ));
+    const rtl::OUString aParentWindow( RTL_CONSTASCII_USTRINGPARAM( "ParentWindow" ));
+    const rtl::OUString aIdentifier( RTL_CONSTASCII_USTRINGPARAM( "Identifier" ));
+
     bool bInitialized( true );
 
     {
@@ -178,18 +184,16 @@ throw ( Exception, RuntimeException )
         {
             if ( aArguments[i] >>= aPropValue )
             {
-                if ( aPropValue.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "Frame" )))
+                if ( aPropValue.Name.equalsAscii( "Frame" ))
                     aPropValue.Value >>= m_xFrame;
-                else if ( aPropValue.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "CommandURL" )))
+                else if ( aPropValue.Name.equalsAscii( "CommandURL" ))
                     aPropValue.Value >>= m_aCommandURL;
-                else if ( aPropValue.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "ServiceManager" )))
+                else if ( aPropValue.Name.equalsAscii( "ServiceManager" ))
                     aPropValue.Value >>= m_xServiceManager;
-                else if ( aPropValue.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "ParentWindow" )))
+                else if ( aPropValue.Name.equalsAscii( "ParentWindow" ))
                     aPropValue.Value >>= m_xParentWindow;
-				else if ( aPropValue.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "Identifier" )))
+				else if ( aPropValue.Name.equalsAscii( "Identifier" ))
 					aPropValue.Value >>= m_nID;
-                else if ( aPropValue.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "StatusbarItem" )))
-                    aPropValue.Value >>= m_xStatusbarItem;
             }
         }
 
@@ -257,7 +261,6 @@ throw (::com::sun::star::uno::RuntimeException)
     m_xServiceManager.clear();
     m_xFrame.clear();
     m_xParentWindow.clear();
-    m_xStatusbarItem.clear();
 
     m_bDisposed = sal_True;
 }
@@ -278,31 +281,26 @@ throw ( RuntimeException )
 void SAL_CALL StatusbarController::disposing( const EventObject& Source )
 throw ( RuntimeException )
 {
+    Reference< XInterface > xSource( Source.Source );
+
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 
     if ( m_bDisposed )
-        return;
-
-    Reference< XFrame > xFrame( Source.Source, UNO_QUERY );
-    if ( xFrame.is() )
-    {
-        if ( xFrame == m_xFrame )
-            m_xFrame.clear();
-        return;
-    }
-
-    Reference< XDispatch > xDispatch( Source.Source, UNO_QUERY );
-    if ( !xDispatch.is() )
         return;
 
     URLToDispatchMap::iterator pIter = m_aListenerMap.begin();
     while ( pIter != m_aListenerMap.end() )
     {
         // Compare references and release dispatch references if they are equal.
-        if ( xDispatch == pIter->second )
+        Reference< XInterface > xIfac( pIter->second, UNO_QUERY );
+        if ( xSource == xIfac )
             pIter->second.clear();
         pIter++;
     }
+
+    Reference< XInterface > xIfac( m_xFrame, UNO_QUERY );
+    if ( xIfac == xSource )
+        m_xFrame.clear();
 }
 
 // XStatusListener
@@ -361,17 +359,18 @@ throw (::com::sun::star::uno::RuntimeException)
 void SAL_CALL StatusbarController::paint(
     const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >&,
     const ::com::sun::star::awt::Rectangle&,
+    ::sal_Int32,
     ::sal_Int32 )
 throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
-void SAL_CALL StatusbarController::click( const ::com::sun::star::awt::Point& )
+void SAL_CALL StatusbarController::click()
 throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
-void SAL_CALL StatusbarController::doubleClick( const ::com::sun::star::awt::Point& ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL StatusbarController::doubleClick() throw (::com::sun::star::uno::RuntimeException)
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 
@@ -534,29 +533,37 @@ void StatusbarController::bindListener()
     }
 
     // Call without locked mutex as we are called back from dispatch implementation
-    if ( !xStatusListener.is() )
-        return;
-
-    for ( sal_uInt32 i = 0; i < aDispatchVector.size(); i++ )
+    if ( xStatusListener.is() )
     {
         try
         {
-            Listener& rListener = aDispatchVector[i];
-            if ( rListener.xDispatch.is() )
-                rListener.xDispatch->addStatusListener( xStatusListener, rListener.aURL );
-            else if ( rListener.aURL.Complete == m_aCommandURL )
+            for ( sal_uInt32 i = 0; i < aDispatchVector.size(); i++ )
             {
-                // Send status changed for the main URL, if we cannot get a valid dispatch object.
-                // UI disables the button. Catch exception as we release our mutex, it is possible
-                // that someone else already disposed this instance!
-                FeatureStateEvent aFeatureStateEvent;
-                aFeatureStateEvent.IsEnabled = sal_False;
-                aFeatureStateEvent.FeatureURL = rListener.aURL;
-                aFeatureStateEvent.State = Any();
-                xStatusListener->statusChanged( aFeatureStateEvent );
+                Listener& rListener = aDispatchVector[i];
+                if ( rListener.xDispatch.is() )
+                    rListener.xDispatch->addStatusListener( xStatusListener, rListener.aURL );
+                else if ( rListener.aURL.Complete == m_aCommandURL )
+                {
+                    try
+                    {
+                        // Send status changed for the main URL, if we cannot get a valid dispatch object.
+                        // UI disables the button. Catch exception as we release our mutex, it is possible
+                        // that someone else already disposed this instance!
+                        FeatureStateEvent aFeatureStateEvent;
+                        aFeatureStateEvent.IsEnabled = sal_False;
+                        aFeatureStateEvent.FeatureURL = rListener.aURL;
+                        aFeatureStateEvent.State = Any();
+                        xStatusListener->statusChanged( aFeatureStateEvent );
+                    }
+                    catch ( Exception& )
+                    {
+                    }
+                }
             }
         }
-        catch ( ... ){}
+        catch ( Exception& )
+        {
+        }
     }
 }
 
@@ -567,30 +574,35 @@ void StatusbarController::unbindListener()
     if ( !m_bInitialized )
         return;
 
-    Reference< XStatusListener > xStatusListener( static_cast< OWeakObject* >( this ), UNO_QUERY );
-    URLToDispatchMap::iterator pIter = m_aListenerMap.begin();
-    while ( pIter != m_aListenerMap.end() )
+    // Collect all registered command URL's and store them temporary
+    Reference< XDispatchProvider > xDispatchProvider( m_xFrame, UNO_QUERY );
+    if ( m_xServiceManager.is() && xDispatchProvider.is() )
     {
-        Reference< XURLTransformer > xURLTransformer = getURLTransformer();
-        com::sun::star::util::URL aTargetURL;
-        aTargetURL.Complete = pIter->first;
-        xURLTransformer->parseStrict( aTargetURL );
-
-        Reference< XDispatch > xDispatch( pIter->second );
-        if ( xDispatch.is() )
+        Reference< XStatusListener > xStatusListener( static_cast< OWeakObject* >( this ), UNO_QUERY );
+        URLToDispatchMap::iterator pIter = m_aListenerMap.begin();
+        while ( pIter != m_aListenerMap.end() )
         {
-            // We already have a dispatch object => we have to requery.
-            // Release old dispatch object and remove it as listener
-            try
+            Reference< XURLTransformer > xURLTransformer = getURLTransformer();
+            com::sun::star::util::URL aTargetURL;
+            aTargetURL.Complete = pIter->first;
+            xURLTransformer->parseStrict( aTargetURL );
+
+            Reference< XDispatch > xDispatch( pIter->second );
+            if ( xDispatch.is() )
             {
-                xDispatch->removeStatusListener( xStatusListener, aTargetURL );
+                // We already have a dispatch object => we have to requery.
+                // Release old dispatch object and remove it as listener
+                try
+                {
+                    xDispatch->removeStatusListener( xStatusListener, aTargetURL );
+                }
+                catch ( Exception& )
+                {
+                }
             }
-            catch ( Exception& )
-            {
-            }
+            pIter->second.clear();
+            ++pIter;
         }
-        pIter->second.clear();
-        ++pIter;
     }
 }
 

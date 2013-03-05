@@ -31,7 +31,7 @@ public class PropertyHelper
 {
     /**
        Create a PropertyValue[] from a ArrayList
-       @param _aPropertyList
+       @param _aArrayList
        @return a PropertyValue[]
     */
     public static PropertyValue[] createPropertyValueArrayFormArrayList(ArrayList _aPropertyList)

@@ -260,7 +260,7 @@ sal_uIntPtr GalleryExplorer::GetObjCount( sal_uIntPtr nThemeId )
 // ------------------------------------------------------------------------
 
 sal_Bool GalleryExplorer::GetGraphicObj( const String& rThemeName, sal_uIntPtr nPos,
-									 Graphic* pGraphic, BitmapEx* pThumb,
+									 Graphic* pGraphic, Bitmap* pThumb,
 									 sal_Bool bProgress )
 {
 	Gallery*	pGal = ImplGetGallery();
@@ -289,7 +289,7 @@ sal_Bool GalleryExplorer::GetGraphicObj( const String& rThemeName, sal_uIntPtr n
 // ------------------------------------------------------------------------
 
 sal_Bool GalleryExplorer::GetGraphicObj( sal_uIntPtr nThemeId, sal_uIntPtr nPos,
-									 Graphic* pGraphic, BitmapEx* pThumb,
+									 Graphic* pGraphic, Bitmap* pThumb,
 									 sal_Bool bProgress )
 {
 	Gallery* pGal = ImplGetGallery();
@@ -362,7 +362,7 @@ sal_uIntPtr GalleryExplorer::GetSdrObjCount( sal_uIntPtr nThemeId  )
 // ------------------------------------------------------------------------
 
 sal_Bool GalleryExplorer::GetSdrObj( const String& rThemeName, sal_uIntPtr nSdrModelPos,
-								 SdrModel* pModel, BitmapEx* pThumb )
+								 SdrModel* pModel, Bitmap* pThumb )
 {
 	Gallery*	pGal = ImplGetGallery();
 	sal_Bool		bRet = sal_False;
@@ -399,7 +399,7 @@ sal_Bool GalleryExplorer::GetSdrObj( const String& rThemeName, sal_uIntPtr nSdrM
 // ------------------------------------------------------------------------
 
 sal_Bool GalleryExplorer::GetSdrObj( sal_uIntPtr nThemeId, sal_uIntPtr nSdrModelPos,
-								 SdrModel* pModel, BitmapEx* pThumb )
+								 SdrModel* pModel, Bitmap* pThumb )
 {
 	Gallery* pGal = ImplGetGallery();
 	return( pGal ? GetSdrObj( pGal->GetThemeName( nThemeId ), nSdrModelPos, pModel, pThumb ) : sal_False );
@@ -504,4 +504,8 @@ sal_Bool GalleryExplorer::EndLocking( sal_uIntPtr nThemeId )
 }
 
 // -----------------------------------------------------------------------------
-// eof
+
+sal_Bool GalleryExplorer::DrawCentered( OutputDevice* pOut, const FmFormModel& rModel )
+{
+	return SgaObjectSvDraw::DrawCentered( pOut, rModel );
+}

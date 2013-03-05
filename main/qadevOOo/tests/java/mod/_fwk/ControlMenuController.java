@@ -43,7 +43,7 @@ public class ControlMenuController extends TestCase {
     /**
      * Cleanup: close the created document
      * @param tParam The test parameters.
-     * @param log The log writer.
+     * @param The log writer.
      * @return The test environment.
      *
     protected void cleanup(TestParameters tParam, PrintWriter log) {

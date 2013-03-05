@@ -187,7 +187,7 @@ SCP1FILES += \
 .ENDIF
 
 # ------------------------------------------------------------------------
-# Apache OpenOffice with JRE
+# OpenOffice.org with JRE
 
 SCP2LINK_PRODUCT_TYPE=osl
 SCP2TARGET = setup_osljre
@@ -327,7 +327,7 @@ SCP2FILES += \
 SCP2FILES += layout.par
 .ENDIF # ENABLE_LAYOUT == TRUE
 
-.IF "$(ENABLE_ONLINE_UPDATE)"!=""
+.IF "$(BUILD_SPECIAL)"!=""
 SCP2FILES += \
              module_onlineupdate.par   \
              file_onlineupdate.par

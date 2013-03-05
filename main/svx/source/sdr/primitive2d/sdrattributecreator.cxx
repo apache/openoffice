@@ -137,29 +137,29 @@ namespace drawinglayer
 			}
 		}
 
-		basegfx::B2DLineJoin XLineJointtoB2DLineJoin(XLineJoint eLineJoint)
+		basegfx::B2DLineJoin LineJointToB2DLineJoin(com::sun::star::drawing::LineJoint eLineJoint)
 		{
 			switch(eLineJoint)
 			{
-				case XLINEJOINT_MIDDLE : 
+				case com::sun::star::drawing::LineJoint_MIDDLE : 
 				{
 					return basegfx::B2DLINEJOIN_MIDDLE;
 				}
-				case XLINEJOINT_BEVEL : 
+				case com::sun::star::drawing::LineJoint_BEVEL : 
 				{
 					return basegfx::B2DLINEJOIN_BEVEL;
 				}
-				case XLINEJOINT_MITER : 
+				case com::sun::star::drawing::LineJoint_MITER : 
 				{
 					return basegfx::B2DLINEJOIN_MITER;	
 				}
-				case XLINEJOINT_ROUND : 
+				case com::sun::star::drawing::LineJoint_ROUND : 
 				{
 					return basegfx::B2DLINEJOIN_ROUND;	
 				}
-				default : 
+				default : // com::sun::star::drawing::LineJoint_NONE
 				{
-					return basegfx::B2DLINEJOIN_NONE; // XLINEJOINT_NONE
+					return basegfx::B2DLINEJOIN_NONE;
 				}
 			}
 		}
@@ -238,7 +238,7 @@ namespace drawinglayer
 				{
 					const sal_uInt32 nWidth(((const XLineWidthItem&)(rSet.Get(XATTR_LINEWIDTH))).GetValue());
 					const Color aColor(((const XLineColorItem&)(rSet.Get(XATTR_LINECOLOR))).GetColorValue());
-					const XLineJoint eJoint(((const XLineJointItem&)(rSet.Get(XATTR_LINEJOINT))).GetValue());
+					const com::sun::star::drawing::LineJoint eJoint(((const XLineJointItem&)(rSet.Get(XATTR_LINEJOINT))).GetValue());
 					const com::sun::star::drawing::LineCap eCap(((const XLineCapItem&)(rSet.Get(XATTR_LINECAP))).GetValue());
 					::std::vector< double > aDotDashArray;
 					double fFullDotDashLen(0.0);
@@ -254,7 +254,7 @@ namespace drawinglayer
 					}
 
 					return attribute::SdrLineAttribute(
-						XLineJointtoB2DLineJoin(eJoint),
+						LineJointToB2DLineJoin(eJoint),
 						(double)nWidth,
 						(double)nTransparence * 0.01,
 						aColor.getBColor(),

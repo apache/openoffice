@@ -161,13 +161,13 @@ public class OSingleSelectQueryComposer extends TestCase {
     * <ul>SingleSelectQueryAnalyzer
 
     * <li> <code>'xComposer'</code> for
-    *      {@link ifc.sdb._XSingleSelectQueryAnalyzer} interface
+    *      {@link ifc.sdb.XSingleSelectQueryAnalyzer} interface
     * <li> <code>'xQueryAna'</code> for
-    *      {@link ifc.sdb._XSingleSelectQueryComposer} interface
+    *      {@link ifc.sdb.XSingleSelectQueryComposer} interface
     * <li> <code>'xProp'</code> for
-    *      {@link ifc.sdb._XSingleSelectQueryComposer} interface
+    *      {@link ifc.sdb.XSingleSelectQueryComposer} interface
     * <li> <code>'colName'</code> for
-    *      {@link ifc.sdb._XSingleSelectQueryComposer} interface
+    *      {@link ifc.sdb.XSingleSelectQueryComposer} interface
     * </ul>
     *
     */

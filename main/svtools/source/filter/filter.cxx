@@ -72,7 +72,6 @@
 #include <rtl/bootstrap.hxx>
 #include <rtl/instance.hxx>
 #include <vcl/metaact.hxx>
-#include <vcl/dibtools.hxx>
 
 #include "SvFilterOptionsDialog.hxx"
 
@@ -1933,7 +1932,7 @@ sal_uInt16 GraphicFilter::ExportGraphic( const Graphic& rGraphic, const String& 
 				ResMgr*		pResMgr = CREATERESMGR( svt );
                 sal_Bool    bRleCoding = aConfigItem.ReadBool( String( RTL_CONSTASCII_USTRINGPARAM( "RLE_Coding" ) ), sal_True );
 				// Wollen wir RLE-Kodiert speichern?
-				WriteDIB(aBmp, rOStm, bRleCoding, true);
+				aBmp.Write( rOStm, bRleCoding );
 				delete pResMgr;
 
 				if( rOStm.GetError() )

@@ -140,7 +140,6 @@ using namespace vos;
 #include <com/sun/star/beans/PropertyValues.hpp>
 #include <com/sun/star/drawing/ProjectionMode.hpp>
 #include "svx/EnhancedCustomShape2d.hxx"
-#include <vcl/dibtools.hxx>
 
 using namespace ::com::sun::star    ;
 using namespace ::com::sun::star::drawing;
@@ -1024,11 +1023,11 @@ void DffPropertyReader::ApplyLineAttributes( SfxItemSet& rSet, const MSO_SPT eSh
 		if ( eShapeType == mso_sptMin )
 			eLineJointDefault = mso_lineJoinRound;
 		MSO_LineJoin eLineJoint = (MSO_LineJoin)GetPropertyValue( DFF_Prop_lineJoinStyle, eLineJointDefault );
-		XLineJoint eXLineJoint( XLINEJOINT_MITER );
+		com::sun::star::drawing::LineJoint eXLineJoint( com::sun::star::drawing::LineJoint_MITER );
 		if ( eLineJoint == mso_lineJoinBevel )
-			eXLineJoint = XLINEJOINT_BEVEL;
+			eXLineJoint = com::sun::star::drawing::LineJoint_BEVEL;
 		else if ( eLineJoint == mso_lineJoinRound )
-			eXLineJoint = XLINEJOINT_ROUND;
+			eXLineJoint = com::sun::star::drawing::LineJoint_ROUND;
 		rSet.Put( XLineJointItem( eXLineJoint ) );
 
 		if ( nLineFlags & 0x10 )
@@ -6651,7 +6650,7 @@ sal_Bool SvxMSDffManager::GetBLIPDirect( SvStream& rBLIPStream, Graphic& rData, 
 		if( ( nInst & 0xFFFE ) == 0x7A8 )
 		{	// DIBs direkt holen
 			Bitmap aNew;
-			if( ReadDIB(aNew, *pGrStream, false) )
+			if( aNew.Read( *pGrStream, sal_False ) )
 			{
 				rData = Graphic( aNew );
 				nRes = GRFILTER_OK;

@@ -315,7 +315,7 @@ IMPL_FORMAT_SETPIXEL_NOMASK( _32BIT_TC_RGBA )
 IMPL_FORMAT_GETPIXEL( _32BIT_TC_MASK )
 {
 	BitmapColor aColor;
-    rMask.GetColorFor32Bit( aColor, pScanline + ( nX << 2UL ) );
+	rMask.GetColorFor32Bit( aColor, pScanline + ( nX << 2UL ) );
 	return aColor;
 }
 

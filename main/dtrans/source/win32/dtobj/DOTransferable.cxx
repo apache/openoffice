@@ -358,14 +358,10 @@ CDOTransferable::ByteSequence_t SAL_CALL CDOTransferable::getClipboardData( CFor
 			clipDataToByteStream( aFormatEtc.getClipformat( ), stgmedium, byteStream );
 			
 			// format conversion if necessary
-			if(CF_DIBV5 == aFormatEtc.getClipformat() || CF_DIB == aFormatEtc.getClipformat())
-            {
-				byteStream = WinDIBToOOBMP(byteStream);
-            }
-			else if(CF_METAFILEPICT == aFormatEtc.getClipformat())
-            {
-				byteStream = WinMFPictToOOMFPict(byteStream);
-            }
+			if ( CF_DIB == aFormatEtc.getClipformat() )
+				byteStream = WinDIBToOOBMP( byteStream );
+			else if ( CF_METAFILEPICT == aFormatEtc.getClipformat() )
+				byteStream = WinMFPictToOOMFPict( byteStream );			
 		}
 
 		ReleaseStgMedium( &stgmedium );

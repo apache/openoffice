@@ -22,7 +22,6 @@
 #ifndef _MyProtocolHandler_HXX
 #define _MyProtocolHandler_HXX
 
-#include <com/sun/star/uno/XComponentContext.hpp>
 #include <com/sun/star/awt/XToolkit.hpp>
 #include <com/sun/star/beans/NamedValue.hpp>
 #include <com/sun/star/lang/XInitialization.hpp>
@@ -59,12 +58,12 @@ class MyProtocolHandler : public cppu::WeakImplHelper3
 >
 {
 private:
-    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
+    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMSF;
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > mxFrame;
 
 public:
-	MyProtocolHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > &rxContext)
-        : mxContext( rxContext ) {}
+	MyProtocolHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > &rxMSF)
+        : mxMSF( rxMSF ) {}
 
 	// XDispatchProvider
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch >
@@ -99,7 +98,7 @@ sal_Bool SAL_CALL MyProtocolHandler_supportsService( const ::rtl::OUString& Serv
 	throw ( ::com::sun::star::uno::RuntimeException );
 
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
-SAL_CALL MyProtocolHandler_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & rContext)
+SAL_CALL MyProtocolHandler_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr)
 	throw ( ::com::sun::star::uno::Exception );
 
 class BaseDispatch : public cppu::WeakImplHelper2
@@ -110,14 +109,14 @@ class BaseDispatch : public cppu::WeakImplHelper2
 {
 protected:
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > mxFrame;
-    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
+    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMSF;
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit > mxToolkit;
     ::rtl::OUString msDocService;
     ::rtl::OUString maComboBoxText;
     sal_Bool        mbButtonEnabled;
 
 public:
-	BaseDispatch( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > &rxContext,
+	BaseDispatch( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > &rxMSF,
         const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& xFrame, const ::rtl::OUString& rServiceName );
 
 	virtual ~BaseDispatch();
@@ -143,18 +142,18 @@ public:
 class WriterDispatch : public BaseDispatch
 {
 public:
-	WriterDispatch( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > &rxContext,
+	WriterDispatch( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > &rxMSF,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& xFrame )
-        : BaseDispatch( rxContext, xFrame, ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.TextDocument" ) ) )
+        : BaseDispatch( rxMSF, xFrame, ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.TextDocument" ) ) )
 	{}
 };
 
 class CalcDispatch : public BaseDispatch
 {
 public:
-	CalcDispatch( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > &rxContext,
+	CalcDispatch( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > &rxMSF,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& xFrame )
-        : BaseDispatch( rxContext, xFrame, ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sheet.SpreadSheetDocument" ) ) )
+        : BaseDispatch( rxMSF, xFrame, ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sheet.SpreadSheetDocument" ) ) )
 	{}
 };
 

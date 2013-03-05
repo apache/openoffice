@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
 
@@ -39,11 +41,11 @@
 #include <vcl/virdev.hxx>
 #include <com/sun/star/io/XStream.hpp>
 #include <com/sun/star/text/GraphicCrop.hpp>
+
 #include "descriptor.hxx"
 #include "graphic.hxx"
 #include <svtools/grfmgr.hxx>
 #include "provider.hxx"
-#include <vcl/dibtools.hxx>
 
 using namespace com::sun::star;
 
@@ -254,16 +256,15 @@ uno::Reference< ::graphic::XGraphic > GraphicProvider::implLoadBitmap( const uno
     uno::Sequence< sal_Int8 > aMaskSeq( xBtm->getMaskDIB() );
     SvMemoryStream aBmpStream( aBmpSeq.getArray(), aBmpSeq.getLength(), STREAM_READ );
     Bitmap aBmp;
+    aBmpStream >> aBmp;
+    
     BitmapEx aBmpEx;
-
-    ReadDIB(aBmp, aBmpStream, true);
-
+    
     if( aMaskSeq.getLength() )
     {
         SvMemoryStream aMaskStream( aMaskSeq.getArray(), aMaskSeq.getLength(), STREAM_READ );
         Bitmap aMask;
-
-        ReadDIB(aMask, aMaskStream, true);
+        aMaskStream >> aMask;
         aBmpEx = BitmapEx( aBmp, aMask );
     }
     else

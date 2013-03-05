@@ -53,7 +53,6 @@
 #include <cppuhelper/weak.hxx>
 #include <cppuhelper/interfacecontainer.hxx>
 #include <vcl/status.hxx>
-#include <map>
 
 namespace framework
 {
@@ -118,7 +117,7 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
         void MouseButton( const MouseEvent& rMEvt ,sal_Bool ( SAL_CALL ::com::sun::star::frame::XStatusbarController::*_pMethod )(const ::com::sun::star::awt::MouseEvent&));
 
     protected:
-        typedef std::map< sal_uInt16, ::com::sun::star::uno::Reference< com::sun::star::frame::XStatusListener > > StatusBarControllerMap;
+        typedef std::vector< ::com::sun::star::uno::Reference< com::sun::star::frame::XStatusListener > > StatusBarControllerVector;
 
         sal_Bool                                                                                        m_bDisposed : 1,
                                                                                                         m_bFrameActionRegistered : 1,
@@ -129,7 +128,7 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
         rtl::OUString                                                                                   m_aResourceName;
         com::sun::star::uno::Reference< com::sun::star::frame::XFrame >                                 m_xFrame;
         com::sun::star::uno::Reference< com::sun::star::container::XNameAccess >                        m_xUICommandLabels;
-        StatusBarControllerMap                                                                          m_aControllerMap;
+        StatusBarControllerVector                                                                       m_aControllerVector;
         ::cppu::OMultiTypeInterfaceContainerHelper                                                      m_aListenerContainer;   /// container for ALL Listener
         ::com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >                  m_xServiceManager;
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XUIControllerRegistration >  m_xStatusbarControllerRegistration;

@@ -56,7 +56,6 @@
 #define RID_SVXSTR_GALLERY_PREVIEW			(RID_SVX_START + 255)
 //-----IAccessibility2 Implementation 2009
 
-
 // factory IDs of tabpages implemented in CUI
 #define RID_SVXPAGE_CHAR_TWOLINES			(RID_SVX_START + 242)
 #define RID_SVXPAGE_EXT_PARAGRAPH           (RID_SVX_START +   7)
@@ -379,6 +378,23 @@
 #define RID_SVXDLG_TEXTCONTROL_CHARATTR     (RID_SVX_START + 286)
 #define RID_SVXDLG_TEXTCONTROL_PARAATTR     (RID_SVX_START + 287)
 
+#define RID_SIDEBAR_TEXT_PANEL              (RID_SVX_START + 288)
+#define RID_POPUPPANEL_TEXTPAGE_UNDERLINE   (RID_SVX_START + 289)
+#define RID_POPUPPANEL_TEXTPAGE_FONT_COLOR  (RID_SVX_START + 290)
+#define RID_POPUPPANEL_TEXTPAGE_SPACING     (RID_SVX_START + 291)
+
+#define RID_SIDEBAR_AREA_PANEL              (RID_SVX_START + 292)
+#define RID_POPUPPANEL_AERAPAGE_COLOR		(RID_SVX_START + 293)
+#define RID_POPUPPANEL_AREAPAGE_TRGR		(RID_SVX_START + 294)
+
+#define RID_SIDEBAR_LINE_PANEL              (RID_SVX_START + 295)
+#define RID_POPUPPANEL_LINEPAGE_COLOR		(RID_SVX_START + 296)
+#define RID_POPUPPANEL_LINEPAGE_STYLE		(RID_SVX_START + 297)
+#define RID_POPUPPANEL_LINEPAGE_WIDTH       (RID_SVX_START + 298)
+
+#define RID_SIDEBAR_TRANSFORMATION_PANEL    (RID_SVX_START + 299)
+#define RID_SIDEBAR_GRAPHIC_PANEL           (RID_SVX_START + 300)
+
 // !!! please update RID_SVX_FIRSTFREE !!! see line 46
 
 // Strings ------------------------------------------------------------------
@@ -638,7 +654,7 @@
 #define RID_SVXSTR_LINECAP_ROUND            (RID_SVX_START + 587 )
 #define RID_SVXSTR_LINECAP_SQUARE           (RID_SVX_START + 588 )
 
-// string resources for XLineJoint item
+// string resources for com::sun::star::drawing::LineJoint item
 #define	RID_SVXSTR_LINEJOINT_NONE			RID_SVXSTR_NONE
 #define RID_SVXSTR_LINEJOINT_MIDDLE			(RID_SVX_START + 589 )
 #define RID_SVXSTR_LINEJOINT_BEVEL			(RID_SVX_START + 590 )

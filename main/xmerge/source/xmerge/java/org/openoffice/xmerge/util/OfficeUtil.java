@@ -43,7 +43,7 @@ public class OfficeUtil implements OfficeConstants {
     
     /**
      * <p>Method to replace whitespace character within text with appropriate 
-     *    OpenOffice.org XML tags.</p>
+     *    OpenOffice tags.</p>
      *
      * @param   text      The text to parse for whitespace.
      *

@@ -333,10 +333,7 @@ sub replace_variables_in_scriptfile
 	replace_one_variable_in_shellscript($scriptfile, $allvariables->{'PRODUCTVERSION'}, "PRODUCTVERSION" );
 	
 	my $scriptname = lc($allvariables->{'PRODUCTNAME'}) . "\.script";
-	if ( $allvariables->{'PRODUCTNAME'} eq "Apache OpenOffice" )
-    {
-        $scriptname = "org.openoffice.script";
-    }
+	if ( $allvariables->{'PRODUCTNAME'} eq "OpenOffice.org" ) { $scriptname = "org.openoffice.script"; }
 
 	replace_one_variable_in_shellscript($scriptfile, $scriptname, "SEARCHSCRIPTNAME" );
 }
@@ -619,7 +616,7 @@ sub create_simple_package
 
 		my $locallanguage = $installer::globals::csp_languagestring;
 
-		if ( $allvariables->{'AOODOWNLOADNAME'} )
+		if ( $allvariables->{'OOODOWNLOADNAME'} )
 		{
 			$packagename = installer::download::set_download_filename(\$locallanguage, $allvariables);
 		}

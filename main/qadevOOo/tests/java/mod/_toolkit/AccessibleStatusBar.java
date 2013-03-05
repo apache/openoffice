@@ -74,9 +74,9 @@ import util.SOfficeFactory;
  * @see ifc.accessibility._XAccessibleEventBroadcaster
  * @see ifc.accessibility._XAccessibleContext
  * @see ifc.accessibility._XAccessibleComponent
- * @see ifc.accessibility._XAccessibleExtendedComponent
- * @see ifc.accessibility._XAccessibleValue
- * @see ifc.accessibility._XAccessibleAction
+ * @see ifc.accessibility.XAccessibleExtendedComponent
+ * @see ifc.accessibility.XAccessibleValue
+ * @see ifc.accessibility.XAccessibleAction
  */
 public class AccessibleStatusBar extends TestCase {
     private static XTextDocument xTextDoc;
@@ -90,6 +90,7 @@ public class AccessibleStatusBar extends TestCase {
 
         if (xTextDoc != null) {
             util.DesktopTools.closeDoc(xTextDoc);
+            ;
         }
     }
 
@@ -119,6 +120,8 @@ public class AccessibleStatusBar extends TestCase {
         if (xTextDoc != null) {
             util.DesktopTools.closeDoc(xTextDoc);
         }
+
+        ;
 
         // get a soffice factory object
         SOfficeFactory SOF = SOfficeFactory.getFactory(

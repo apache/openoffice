@@ -19,16 +19,22 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_editeng.hxx"
 
+// include ---------------------------------------------------------------
 #include <tools/stream.hxx>
 #include <vcl/outdev.hxx>
+
 #define _SVX_BULITEM_CXX
+
 #include <editeng/bulitem.hxx>
 #include <editeng/editrids.hrc>
+
+// #90477#
 #include <tools/tenccvt.hxx>
-#include <vcl/dibtools.hxx>
 
 #define BULITEM_VERSION		((sal_uInt16)2)
 
@@ -184,9 +190,8 @@ SvxBulletItem::SvxBulletItem( SvStream& rStrm, sal_uInt16 _nWhich ) :
         // #69345# Errorcode beim Bitmap lesen ignorieren,
 		// siehe Kommentar #67581# in SvxBulletItem::Store()
 		sal_Bool bOldError = rStrm.GetError() ? sal_True : sal_False;
-        ReadDIB(aBmp, rStrm, true);
-
-        if ( !bOldError && rStrm.GetError() )
+		rStrm >> aBmp;
+		if ( !bOldError && rStrm.GetError() )
 		{
 			rStrm.ResetError();
 			// #71493# Keine Warnung: Das BulletItem interessiert seit 5.0 im Dateiformat nicht mehr.
@@ -390,9 +395,7 @@ SvStream& SvxBulletItem::Store( SvStream& rStrm, sal_uInt16 /*nItemVersion*/ ) c
 		const Bitmap aBmp( pGraphicObject->GetGraphic().GetBitmap() );
 		sal_uLong nBytes = aBmp.GetSizeBytes();
 		if ( nBytes < sal_uLong(0xFF00*nFac) )
-        {
-            WriteDIB(aBmp, rStrm, false, true);
-        }
+			rStrm << aBmp;
 
 		sal_uLong nEnd = rStrm.Tell();
 		// #67581# Item darf mit Overhead nicht mehr als 64K schreiben,

@@ -40,10 +40,14 @@ SLOFILES=$(SLO)$/component.obj
 
 SHL1TARGET=$(TARGET)
 
-.IF "$(GUI)"=="UNX" || "$(GUI)"=="MAC" || "$(GUI)"=="OS2"
+.IF "$(GUI)"=="UNX" || "$(GUI)"=="MAC"
 DOCTOKLIB=-ldoctok
 OOXMLLIB=-looxml
 RESOURCEMODELLIB=-lresourcemodel
+.ELIF "$(GUI)"=="OS2"
+DOCTOKLIB=$(LB)$/idoctok.lib
+OOXMLLIB=$(LB)$/iooxml.lib
+RESOURCEMODELLIB=$(LB)$/iresourcemodel.lib
 .ELIF "$(GUI)"=="WNT"
 .IF "$(COM)"=="GCC"
 DOCTOKLIB=-ldoctok

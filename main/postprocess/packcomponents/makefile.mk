@@ -190,7 +190,7 @@ my_components += component/vcl/vcl.unx
 my_components += updchk.uno
 .END
 
-.IF "$(ENABLE_OOOIMPROVEMENT)" != ""
+.IF "$(BUILD_SPECIAL)" != ""
 my_components += oooimprovement
 .END
 
@@ -311,7 +311,7 @@ my_components += \
     fps \
     ftransl \
     java_uno_accessbridge \
-    sysmail \
+    smplmail \
     sysdtrans \
     wininetbe1
 .END

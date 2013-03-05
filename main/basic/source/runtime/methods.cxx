@@ -19,12 +19,17 @@
  * 
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
 
+
 #include <tools/date.hxx>
 #include <basic/sbxvar.hxx>
+#ifndef _VOS_PROCESS_HXX
 #include <vos/process.hxx>
+#endif
 #include <vcl/svapp.hxx>
 #include <vcl/settings.hxx>
 #include <vcl/sound.hxx>
@@ -39,7 +44,6 @@
 #include <unotools/ucbstreamhelper.hxx>
 #include <tools/wldcrd.hxx>
 #include <i18npool/lang.h>
-#include <vcl/dibtools.hxx>
 
 #include "runtime.hxx"
 #include "sbunoobj.hxx"
@@ -4185,8 +4189,8 @@ RTLFUNC(LoadPicture)
 	if( pStream != NULL )
 	{
 		Bitmap aBmp;
-        ReadDIB(aBmp, *pStream, true);
-		Graphic aGraphic(aBmp);
+		*pStream >> aBmp;
+		Graphic aGraphic( aBmp );
 
 		SbxObjectRef xRef = new SbStdPicture;
 		((SbStdPicture*)(SbxObject*)xRef)->SetGraphic( aGraphic );

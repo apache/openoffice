@@ -80,7 +80,7 @@ SunOS)
   ;;
 Linux)
   SEARCHPACKAGENAME="BASISPACKAGEPREFIXPLACEHOLDEROOOBASEVERSIONPLACEHOLDER-core01"
-  FIXPATH="/apachopenoffice"
+  FIXPATH="/openoffice.org"
   echo
   echo "Searching for the FULLPRODUCTNAMELONGPLACEHOLDER installation ..."
   RPMNAME=`rpm -qa | grep $SEARCHPACKAGENAME`

@@ -24,7 +24,6 @@
 package com.sun.star.wiki;
 
 import com.sun.star.awt.MessageBoxButtons;
-import com.sun.star.awt.MessageBoxType;
 import com.sun.star.awt.XControl;
 import com.sun.star.awt.XControlContainer;
 import com.sun.star.awt.XDialog;
@@ -702,7 +701,8 @@ public class Helper
         {
             try
             {
-                XSystemShellExecute xSystemShell = com.sun.star.system.SystemShellExecute.create( xContext );
+                Object oSystemShell = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.system.SystemShellExecute", xContext );
+                XSystemShellExecute xSystemShell = (XSystemShellExecute)UnoRuntime.queryInterface( XSystemShellExecute.class, oSystemShell );
                 if ( xSystemShell != null )
                     xSystemShell.execute( sURL, "", SystemShellExecuteFlags.DEFAULTS );
             }
@@ -1008,7 +1008,8 @@ public class Helper
                         {
                             xMB = xMBFactory.createMessageBox(
                                                      xParentPeer,
-                                                     MessageBoxType.QUERYBOX,
+                                                     new com.sun.star.awt.Rectangle(),
+                                                     "querybox",
                                                      MessageBoxButtons.BUTTONS_YES_NO | MessageBoxButtons.DEFAULT_BUTTON_NO,
                                                      sTitle,
                                                      sError );
@@ -1017,7 +1018,8 @@ public class Helper
                         {
                             xMB = xMBFactory.createMessageBox(
                                                      xParentPeer,
-                                                     MessageBoxType.ERRORBOX,
+                                                     new com.sun.star.awt.Rectangle(),
+                                                     "errorbox",
                                                      MessageBoxButtons.BUTTONS_OK,
                                                      sTitle,
                                                      sError );

@@ -47,24 +47,24 @@ import com.sun.star.uno.XInterface;
 public class Invocation extends TestCase {
 
     /**
-    * Creating a TestEnvironment for the interfaces to be tested.
+    * Creating a Testenvironment for the interfaces to be tested.
     * Creates service <code>com.sun.star.script.Invocation</code>.
     *     Object relations created :
     * <ul>
     *  <li> <code>'XSingleServiceFactory.createInstance.negative'</code> :
-    *   for interface {@link ifc.lang._XSingleServiceFactory} ;
+    *   for interface {@link _ifc.lang.XSingleServiceFactory} ;
     *   <code>String</code> relation; If its value 'true' then
     *   <code>createInstance</code> method for the object isn't
     *   supported. In this case object doesn't support this method.</li>
     *  <li> <code>'XSingleServiceFactory.arguments'</code> :
-    *   for interface {@link ifc.lang._XSingleServiceFactory} ;
+    *   for interface {@link _ifc.lang.XSingleServiceFactory} ;
     *   has <code>Object[]</code> type. This relation is used as
     *   a parameter for <code>createInstanceWithArguments</code>
     *   method call. If this relation doesn't exist test pass
-    *   zero length array as argument. Here
+    *   zerro length array as argument. Here
     *   <code>com.sun.star.io.Pipe</code> instance is passed.</li>
     *  <li> <code>'XSingleServiceFactory.MustSupport'</code> :
-    *   for interface {@link ifc.lang._XSingleServiceFactory}.
+    *   for interface {@link _ifc.lang.XSingleServiceFactory}.
     *   Specifies that created instance must support
     *   <code>com.sun.star.script.XInvocation</code> interface.
     * </ul>

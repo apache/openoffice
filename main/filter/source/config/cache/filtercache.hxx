@@ -236,15 +236,13 @@ class FilterCache : public BaseLock
                     used to work with localized configuration values. */
         ::rtl::OUString m_sActLocale;
 
-        ::rtl::OUString m_sProductName;
+        //---------------------------------------
+        /** TODO */
+        ::rtl::OUString m_sFormatName;
 
         //---------------------------------------
         /** TODO */
-        ::rtl::OUString m_sOOoXMLFormatName;
-
-        //---------------------------------------
-        /** TODO */
-        ::rtl::OUString m_sOOoXMLFormatVersion;
+        ::rtl::OUString m_sFormatVersion;
 
         //---------------------------------------
         /** @short  contains status, which cache items/properties

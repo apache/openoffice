@@ -34,15 +34,21 @@ PACKAGE=com$/sun$/star$/system
 # ------------------------------------------------------------------------
 
 IDLFILES=\
-	MailClientFlags.idl\
-	SystemMailProvider.idl\
 	SystemShellExecute.idl\
 	SystemShellExecuteException.idl\
 	SystemShellExecuteFlags.idl\
-	XMailClient.idl\
-	XMailMessage.idl\
-	XSystemMailProvider.idl\
 	XSystemShellExecute.idl\
+	SimpleMailClientFlags.idl\
+	XSimpleMailMessage.idl\
+	XSimpleMailMessage2.idl\
+	XSimpleMailClient.idl\
+	XSimpleMailClientSupplier.idl\
+	SimpleCommandMail.idl \
+	SimpleSystemMail.idl\
+	ProxySettings.idl\
+	SOffice52ProxySettings.idl\
+	SystemProxySettings.idl\
+	XProxySettings.idl
 
 # ------------------------------------------------------------------
 

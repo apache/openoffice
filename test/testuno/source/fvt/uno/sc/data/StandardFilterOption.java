@@ -26,10 +26,13 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
+
 import testlib.uno.SCUtil;
+
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.lang.XComponent;
 import com.sun.star.sheet.FilterOperator;
@@ -40,14 +43,18 @@ import com.sun.star.sheet.XSheetFilterable;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
 import com.sun.star.table.CellAddress;
+import com.sun.star.table.CellRangeAddress;
+import com.sun.star.table.TableOrientation;
 import com.sun.star.table.XCell;
 import com.sun.star.table.XCellRange;
 import com.sun.star.table.XColumnRowRange;
 import com.sun.star.table.XTableRows;
+import com.sun.star.text.XTextDocument;
 import com.sun.star.uno.UnoRuntime;
 
-
 public class StandardFilterOption {
+	private static final UnoApp app = new UnoApp();
+
 	UnoApp unoApp = new UnoApp();
 	XSpreadsheetDocument scDocument = null;
 	XComponent scComponent = null;
@@ -75,9 +82,6 @@ public class StandardFilterOption {
 
 	}
 
-	/**
-	 * test standard filter with string
-	 */
 	@Test
 	public void testStandardFilterForString() throws Exception {
 		// Prepare test data
@@ -118,7 +122,7 @@ public class StandardFilterOption {
 		SCUtil.closeFile(scDocument);
 		scDocument = SCUtil.openFile(sample, unoApp);
 
-		// Verify the result again
+		// Verify the result agains
 		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
 		Rows = ColRowRange.getRows();
@@ -133,9 +137,6 @@ public class StandardFilterOption {
 
 	}
 
-	/**
-	 * test standard filter with case sensitive options
-	 */
 	@Test
 	public void testStandardFilterOptionCaseSensitive() throws Exception {
 		// Prepare test data
@@ -205,9 +206,6 @@ public class StandardFilterOption {
 		}
 	}
 
-	/**
-	 * test standard filter with contain header options
-	 */
 	@Test
 	public void testStandardFilterOptionContainsHeader() throws Exception {
 		// Prepare test data
@@ -277,10 +275,8 @@ public class StandardFilterOption {
 
 	}
 
-	/**
-	 * test standard filter with copy out put after filter in options
-	 */
 	@Test
+	@Ignore("Bug #121017")
 	public void testStandardFilterOptionCopyOutput() throws Exception {
 		// Prepare test data
 		String sample = Testspace.prepareData(filename);
@@ -292,7 +288,7 @@ public class StandardFilterOption {
 		// Get the value before filter
 		String[][] souce = SCUtil.getTextFromCellRange(currentSheet, 0, 0, 5, 5);
 
-		// Copy to cell position
+		// Copy to cell postion
 		XCell cell = currentSheet.getCellByPosition(7, 7);
 		XCellAddressable xCellAddr = (XCellAddressable) UnoRuntime.queryInterface(XCellAddressable.class, cell);
 		CellAddress copytoAddress = xCellAddr.getCellAddress();
@@ -379,9 +375,6 @@ public class StandardFilterOption {
 		assertArrayEquals(SCUtil.getTextFromCellRange(currentSheet, 0, 4, 5, 4), SCUtil.getTextFromCellRange(currentSheet, 7, 9, 12, 9));
 	}
 
-	/**
-	 * test standard filter with skip duplicates in options
-	 */
 	@Test
 	public void testStandardFilterOptionSkipDuplicates() throws Exception {
 		// Prepare test data
@@ -454,9 +447,6 @@ public class StandardFilterOption {
 
 	}
 
-	/**
-	 * test standard filter with regular expressions in options
-	 */
 	@Test
 	public void testStandardFilterOptionUseRegularExpressions() throws Exception {
 		// Prepare test data
