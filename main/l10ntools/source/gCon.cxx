@@ -90,15 +90,18 @@ convert_gen::~convert_gen()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::execute(const bool bMerge)
+bool convert_gen::execute(const bool bMerge, const bool bAllowNoFile)
 {
   convert_gen_impl::mcImpl->mbMergeMode  = bMerge;
 
   // and load file
-  convert_gen_impl::mcImpl->prepareFile(); 
+  if (!convert_gen_impl::mcImpl->prepareFile(bAllowNoFile))
+    return false;
 
   // and execute conversion
   convert_gen_impl::mcImpl->execute();
+
+  return true;
 }
 
 
@@ -121,13 +124,18 @@ convert_gen_impl::~convert_gen_impl()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen_impl::prepareFile()
+bool convert_gen_impl::prepareFile(bool bAllowNoFile)
 {
   std::ifstream inputFile(msSourceFile.c_str(), std::ios::binary);
 
   
   if (!inputFile.is_open())
-    throw showError((char *)"Cannot open file");
+  {
+    if (bAllowNoFile)
+      return false;
+    else
+      throw mcMemory.showError("Cannot open file");
+  }
 
   // get length of file:
   miSourceReadIndex = 0;
@@ -138,8 +146,9 @@ void convert_gen_impl::prepareFile()
   // get size, prepare std::string and read whole file
   inputFile.read((char *)msSourceBuffer.c_str(), msSourceBuffer.size());
   if ((unsigned int)inputFile.gcount() != msSourceBuffer.size())
-    throw showError((char *)"cannot read whole file");
+    throw mcMemory.showError("cannot read whole file");
   inputFile.close();
+  return true;
 }
 
 
@@ -217,12 +226,4 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
   }
 
   return msCopyText;
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-std::string convert_gen_impl::showError(char *sText)
-{
-  return mcMemory.showError(miLineNo, sText);
 }

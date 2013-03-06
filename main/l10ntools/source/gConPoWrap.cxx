@@ -47,8 +47,22 @@ namespace PoWrap
 #include "gConPo_yy.c"
 }
 
+#if 0
+ white-space
+     #  translator-comments
+     #. extracted-comments
+     #: reference...
+     #, flag...
+     #| msgid previous-untranslated-string
+     msgid untranslated-string
+     msgstr translated-string
 
+     fuzzy
 
+     #: lib/error.c:116
+     msgid "Unknown system error"
+     msgstr "Error desconegut del sistema"
+#endif
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_po::execute()
 {

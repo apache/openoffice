@@ -45,22 +45,23 @@ void convert_db::execute()
 
   msSourceBuffer   += '\n';
   miSize            = msSourceBuffer.size() -1;
+  miLineNo          = 0;
   
   while (collectLine())
   {
-    mcMemory.setFileName(msFields[0]);
+    mcMemory.setFileName(msFields[1]);
     if (mbMergeMode)
     {
       iB = msFields[15].find("/");
       if (iB == (int)std::string::npos)
-        showError("missing / in en_US");
+        showError((char*)"missing / in en_US");
       iE = msFields[15].find("/", iB+1);
       if (iE == (int)std::string::npos)
-        showError("missing / in en_US");
+        showError((char*)"missing / in en_US");
       oldKey = msFields[15].substr(iB+1, iE - iB -1);
       iB = msFields[15].find("/",iE+1);
       if (iB == (int)std::string::npos)
-        showError("missing / in en_US");
+        showError((char*)"missing / in en_US");
       if (iB != iE+1)
         oldKey += "." + msFields[15].substr(iE+1, iB - iE -1);
 
@@ -84,8 +85,13 @@ bool convert_db::collectLine()
   int  i, iStart;
   bool bLineEnd;
 
+  ++miLineNo;
+
   for (i = 0; i < NUMFIELD; ++i)
     msFields[i].clear();
+
+  if (miSourceReadIndex >= miSize)
+    return false;
 
   for (i = 0, bLineEnd = false, iStart = miSourceReadIndex; !bLineEnd; ++miSourceReadIndex)
   {
@@ -97,12 +103,11 @@ bool convert_db::collectLine()
      {
        if (i >= NUMFIELD)
        {
-         showError("TOO many fields");
-         exit(-1);
+         showError((char*)"TOO many fields");
        }
        msFields[i++] = msSourceBuffer.substr(iStart, miSourceReadIndex - iStart);
        iStart       = miSourceReadIndex +1;
      }
   }
-  return (miSourceReadIndex < miSize);
+  return true;
 }

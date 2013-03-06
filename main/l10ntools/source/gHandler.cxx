@@ -29,14 +29,13 @@
  *****************************************************************************
  * This is the control module, that interpret the command line and implement
  * the different work types 
- *     extract / merge / generate / insert
+ *     extract / merge / generate / convert
  *****************************************************************************/
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 handler::handler()
-                : mbVerbose(false)
 {
 }
 
@@ -53,7 +52,7 @@ handler::~handler()
 void handler::checkCommandLine(int argc, char *argv[])
 {
   enum {ARG_NONE, ARG_F, ARG_O, ARG_S, ARG_T} eGotArg = ARG_NONE;
-  std::string sWorkText;
+  std::string sWorkText, sLangText;
   int         argNow, nLen;
 
 
@@ -66,22 +65,23 @@ void handler::checkCommandLine(int argc, char *argv[])
 
     // check for working mode
     sWorkText = argv[1];
-    if      (sWorkText == "convert") meWorkMode = DO_CONVERT;
-    else if (sWorkText == "extract") meWorkMode = DO_EXTRACT;
-    else if (sWorkText == "help")    showManual();
-    else if (sWorkText == "merge")   meWorkMode = DO_EXTRACT;
-    else                             throw std::string("<command> is mandatory");
+    if      (sWorkText == "convert")  meWorkMode = DO_CONVERT;
+    else if (sWorkText == "extract")  meWorkMode = DO_EXTRACT;
+    else if (sWorkText == "merge")    meWorkMode = DO_MERGE;
+    else if (sWorkText == "generate") meWorkMode = DO_GENERATE;
+    else if (sWorkText == "help")     showManual();
+    else                              throw std::string("<command> is mandatory");
 
     // and set fixed parameters
     msModuleName = argv[2];
     msPoOutDir   = msPoDir = argv[3];
-    sWorkText    = argv[4];
-    if (sWorkText[0] == '\"')
-      sWorkText.erase(0,1);
-    nLen = sWorkText.size() -1;
-    if (sWorkText[nLen] == '\"')
-      sWorkText.erase(nLen);
-    if (!sWorkText.size())
+    sLangText    = argv[4];
+    if (sLangText[0] == '\"')
+      sLangText.erase(0,1);
+    nLen = sLangText.size() -1;
+    if (sLangText[nLen] == '\"')
+      sLangText.erase(nLen);
+    if (!sLangText.size())
       throw std::string("<languages> is mandatory");
 
     // and convert language to a vector
@@ -91,8 +91,8 @@ void handler::checkCommandLine(int argc, char *argv[])
       do
       {
         current = next + 1;
-        next = sWorkText.find_first_of( ",", current );
-        mvLanguages.push_back(sWorkText.substr(current,next-current));
+        next = sLangText.find_first_of( ",", current );
+        mvLanguages.push_back(sLangText.substr(current,next-current));
       }
       while (next != (int)std::string::npos);
     }
@@ -114,11 +114,12 @@ void handler::checkCommandLine(int argc, char *argv[])
           throw (std::string("missing argument to ") + argv[argNow-1]);
 
         // is it a known parameter
-        if      (sArg == "-f") eGotArg   = ARG_F;      
+        if      (sArg == "-d") gbDebug   = true;  
+        else if (sArg == "-f") eGotArg   = ARG_F;      
         else if (sArg == "-o") eGotArg   = ARG_O;      
         else if (sArg == "-s") eGotArg   = ARG_S;      
         else if (sArg == "-t") eGotArg   = ARG_T;      
-        else if (sArg == "-v") mbVerbose = true;  
+        else if (sArg == "-v") gbVerbose = true;  
         else throw std::string("unknown parameter: ")+sArg;
       }
       else
@@ -164,7 +165,7 @@ void handler::checkCommandLine(int argc, char *argv[])
     msPoOutDir.append("/");
 
   // tell system
-  if (mbVerbose)
+  if (gbVerbose)
     std::cout << "gLang starting to " + sWorkText << " in module " << msModuleName << std::endl; 
 }
 
@@ -184,9 +185,10 @@ void handler::run()
     // use workMode to start correct control part
     switch (meWorkMode)
     {
-      case DO_EXTRACT: runExtractMerge(false); break;
-      case DO_MERGE:   runExtractMerge(true);  break;
-      case DO_CONVERT: runConvert();           break;
+      case DO_EXTRACT:  runExtractMerge(false); break;
+      case DO_MERGE:    runExtractMerge(true);  break;
+      case DO_CONVERT:  runConvert();           break;
+      case DO_GENERATE: runGenerate();          break;
     }
   }
   catch(std::string sErr)
@@ -206,7 +208,7 @@ void handler::runExtractMerge(bool bMerge)
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
     // tell system
-    if (mbVerbose)
+    if (gbDebug)
       std::cout << "gLang extracting text from file " << *siSource << std::endl;
 
     // prepare translation memory
@@ -232,6 +234,14 @@ void handler::runConvert()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+void handler::runGenerate()
+{
+  throw std::string("handler::runGenerate not implemented");
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 void handler::showUsage(std::string& sErr)
 {
   // do we have an error text ?
@@ -240,8 +250,8 @@ void handler::showUsage(std::string& sErr)
 
   std::cout <<
     "syntax oveview, use \"genLang help\" for full description\n"
-    "genLang <cmd> <module> <po dir> <languages> [-f <files>] [-o <dir>] [-s <dir>] [-t <dir>] [-v]\n"
-    "<cmd> is one of \"convert\", \"extract\", \"help\", \"merge\"\n";
+    "genLang <cmd> <module> <po dir> <languages> [-d] [-f <files>] [-o <dir>] [-s <dir>] [-t <dir>] [-v]\n"
+    "<cmd> is one of \"convert\", \"extract\", \"generate\", \"help\", \"merge\",\n";
 
   exit(-1);
 }
@@ -264,7 +274,7 @@ void handler::showManual()
     "genLang can also convert old .po files (generated from .sdf)\n"
     "\n"
     "Syntax:\n"
-    "  genLang extract <module> <po dir> <languages> [-v] \\\n"
+    "  genLang extract <module> <po dir> <languages> [-v] [-d]\\\n"
     "          [-o <po outdir>]  -f <files> -s <source dir>\n"
     "    reads <po dir>/*lang/<module>.po files and extract text\n"
     "    from <source dir>/<files>, result is merged and\n"
@@ -278,7 +288,7 @@ void handler::showManual()
     "    - Keys in source files not in .po files (new keys)\n"
     "      are added and marked \"fuzzy\"\n"
     "\n"
-    "  genLang merge <module> <po dir> <languages> [-v]\\\n"
+    "  genLang merge <module> <po dir> <languages> [-v] [-d]\\\n"
     "          [-o <po outdir>]  -f <files> -s <source dir> \\\n"
     "          -t <target dir>\n"
     "    works as \"extract\" and additionally merges\n"
@@ -286,19 +296,22 @@ void handler::showManual()
     "    from <po dir>/*lang/<module>.po\n"
     "    The result is stored in <target dir>/<files>\n"
     "\n"
-    "  genLang convert <module> <po dir> <languages> [-v] \\\n"
+    "  genLang convert <module> <po dir> <languages> [-v] [-d]\\\n"
     "          [-o <po outdir>]  -f <files>\n"
     "    reads sdf generated .po <files> and merges with\n"
     "    <po dir>/*lang/<module>.po\n"
     "    Result is written to <po outdir>/*lang/<module>.po if\n"
-    "    - present or <po dir>/*lang/<module>.po is overwritten\n"
+    "    present or <po dir>/*lang/<module>.po is overwritten\n"
     "    - File will only be written if they are changes\n"
     "    - Keys in <files>, not in <module>.po\n"
     "      are moved to <po dir>/<module>.deleted.po\n"
     "    - Keys in <files>, with changed translation\n"
     "      are marked \"fuzzy\"\n"
-    "    Result is written to <po outdir>/*lang/<module>.po if\n"
-    "    -o present or <po dir>/*lang/<module>.po is overwritten\n"
+    "\n"
+    "  genLang generate <module> <po dir> <languages> [-v] [-d]\\\n"
+    "          [-o <po outdir>]\n"
+    "    reads .po <files> and generates a \"bin\" file for fast loading\n"
+    "    Result is written to <po outdir>/<module>.dbpo\n"
     "\n"
     "  genLang help\n"
     "    this text\n"
@@ -312,6 +325,8 @@ void handler::showManual()
     "  <languages>\n"
     "     comma separated string with langauge id to be used\n"
     "\n"   
+    "  -d\n"
+    "     extensive verbose mode, tells what gLang is doing in detail\n";
     "  -f <files>\n"
     "     list of files containing messages to be extracted\n"
     "     \"convert\" expect sdf generated po files, to be converted\n"
@@ -333,7 +348,7 @@ void handler::showManual()
 void handler::loadL10MEM()
 {
   std::string sMod  = "/" +  msModuleName + ".pot";
-  std::string sLoad = msPoDir + "en-US" + sMod;
+  std::string sLoad = msPoDir + "../en-US" + sMod;
 
 
   // load texts from en-US po file (master)
@@ -342,7 +357,7 @@ void handler::loadL10MEM()
     mcMemory.setFileName(sLoad);
 
     // tell system
-    if (mbVerbose)
+    if (gbDebug)
       std::cout << "gLang loading master text from file " << sLoad << std::endl;
 
     // and load file
@@ -358,10 +373,10 @@ void handler::loadL10MEM()
     mcMemory.setFileName(sLoad);
 
     // tell system
-    if (mbVerbose)
+    if (gbDebug)
       std::cout << "gLang loading text from language file " << sLoad << std::endl;
 
     // get converter and extract files
-    convert_gen(mcMemory, sLoad).execute(false);
+    convert_gen(mcMemory, sLoad).execute(false, true);
   }
 }

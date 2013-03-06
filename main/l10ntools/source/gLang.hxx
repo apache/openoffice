@@ -35,7 +35,18 @@
 
 
 /*******************   G L O B A L   D E F I N I T I O N   *******************/
-extern bool gbVerbose;
+extern  bool gbVerbose;
+extern  bool gbDebug;
+typedef enum
+{
+  ENTRY_DELETED,
+  ENTRY_ADDED,
+  ENTRY_CHANGED,
+  ENTRY_NORMAL
+} ENTRY_STATE;
+
+
+
 
 
 
@@ -47,24 +58,25 @@ class l10nMem
     l10nMem();
     ~l10nMem();
 
-    std::string showError    (int iLineNo, char *sText, bool bWarning = false);
+    std::string showError    (const std::string& sText, int iLineNo = 0);
+    std::string showWarning  (const std::string& sText, int iLineNo = 0);
     bool        isError      ();
-    bool        checkKey     (const std::string& sKey,
-                              const std::string& sObjectType);
-    void        setFileName  (const std::string& srSourceFile);
-    void        setModuleName(const std::string& srModuleName);
+
+    bool        checkKey     (const std::string& sKey);
+    void        setFileName  (const std::string& sSourceFile);
+    void        setModuleName(const std::string& sModuleName);
+    void        setLanguage  (const std::string& sLanguage, bool bMaster = false);
+
+    void        loadEnUsKey  (const std::string& sKey,
+                              const std::string& sText);
+    void        loadLangKey  (ENTRY_STATE        eFlag,
+                              const std::string& sKey,
+                              const std::string& sOrgText,
+                              const std::string& sText);
+    void        save();
+
     void        setEnUsKey   (int                iLineNo,
-                              const std::string& srKey,
-                              const std::string& srObjectType,
-                              const std::string& srText,
-                              int                iIndex = 0);
-    void        loadEnUsKey  (const std::string& srKey,
-                              const std::string& srObjectType,
-                              const std::string& srText,
-                              const std::string& oldKey);
-    void        loadLangKey  (const std::string& srLang,
-                              const std::string& srKey,
-                              const std::string& srObjectType,
+                              const std::string& sKey,
                               const std::string& srText);
 };
 
@@ -78,7 +90,7 @@ class convert_gen
     ~convert_gen();
 
     // do extract/merge
-    void execute(const bool bMerge);
+    bool execute(const bool bMerge, const bool bAllowNoFile = false);
 };
 
 
@@ -94,7 +106,7 @@ class handler
     void run();
 
   private:
-    enum {DO_CONVERT, DO_EXTRACT, DO_MERGE} meWorkMode;
+    enum {DO_CONVERT, DO_EXTRACT, DO_MERGE, DO_GENERATE} meWorkMode;
     l10nMem                  mcMemory;
     std::string              msModuleName;
     std::string              msPoOutDir;
@@ -103,10 +115,10 @@ class handler
     std::string              msTargetDir;
     std::vector<std::string> mvSourceFiles;
     std::vector<std::string> mvLanguages;
-    bool                     mbVerbose;
 
     void runConvert();
     void runExtractMerge(bool bMerge);
+    void runGenerate();
 
     void showUsage(std::string& sErr);
     void showManual();
