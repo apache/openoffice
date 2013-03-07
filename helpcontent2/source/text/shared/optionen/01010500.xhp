@@ -79,10 +79,11 @@
 <paragraph role="paragraph" id="par_id3154481" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_COLOR:BTN_ADD">Adds a new color.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_COLOR:BTN_MODIFY" id="bm_id3150324" localize="false"/>
 <paragraph role="heading" id="hd_id3153708" xml-lang="en-US" level="2" l10n="U" oldref="29">Modify</paragraph>
-<paragraph role="paragraph" id="par_id3148916" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_COLOR:BTN_MODIFY">Changes the current color.</ahelp> Note that the color is overwritten without a confirmation.</paragraph>
+<paragraph role="paragraph" id="par_id3148916" xml-lang="en-US" l10n="C" oldref="30"><ahelp hid="SVX:PUSHBUTTON:RID_SVXPAGE_COLOR:BTN_MODIFY">Changes the current color. Note that the color is overwritten without a confirmation.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_COLOR:BTN_WORK_ON" id="bm_id3153767" localize="false"/>
 <paragraph role="heading" id="hd_id3154754" xml-lang="en-US" level="2" l10n="U" oldref="31"><link href="text/shared/optionen/01010501.xhp" name="Edit">Edit</link></paragraph>
-<embed href="text/shared/optionen/01010501.xhp#farbentext"/>
+<paragraph role="paragraph" id="par_id3141111" xml-lang="en-US" l10n="N"><ahelp hid=".">Opens the Color Picker. First highlight a color in the Color table. Then click Edit to open the Color Picker. Select a color in the Color Picker and click OK. The selected color replaces the color that is highlighted in the Color table.</ahelp></paragraph>
+
 <embed href="text/shared/00/00000001.xhp#loeschen"/>
 <bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_COLOR:BTN_LOAD" id="bm_id3145148" localize="false"/>
 <paragraph role="heading" id="hd_id3159267" xml-lang="en-US" level="2" l10n="U" oldref="33">Load Color List</paragraph>
