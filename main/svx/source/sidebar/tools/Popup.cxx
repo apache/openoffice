@@ -66,21 +66,24 @@ void Popup::Show (ToolBox& rToolBox)
         OSL_ASSERT(mpControl);
         return;
     }
-    
-    mpContainer->SetSizePixel(mpControl->GetOutputSizePixel());
 
-    const Point aPos (mpParent->OutputToScreenPixel(rToolBox.GetPosPixel()));
-    const Size aSize (rToolBox.GetSizePixel());
-    const Rectangle aRect (aPos, aSize);
+    if ( !mpContainer->IsInPopupMode() )
+    {
+        mpContainer->SetSizePixel(mpControl->GetOutputSizePixel());
 
-    mpContainer->StartPopupMode(
-        aRect,
-        FLOATWIN_POPUPMODE_NOFOCUSCLOSE|FLOATWIN_POPUPMODE_DOWN);
-    mpContainer->SetPopupModeFlags(
-        mpContainer->GetPopupModeFlags()
-            | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE);
-		
-    mpControl->GetFocus();
+        const Point aPos (mpParent->OutputToScreenPixel(rToolBox.GetPosPixel()));
+        const Size aSize (rToolBox.GetSizePixel());
+        const Rectangle aRect (aPos, aSize);
+
+        mpContainer->StartPopupMode(
+            aRect,
+            FLOATWIN_POPUPMODE_NOFOCUSCLOSE|FLOATWIN_POPUPMODE_DOWN);
+        mpContainer->SetPopupModeFlags(
+            mpContainer->GetPopupModeFlags()
+                | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE);
+
+        mpControl->GetFocus();
+    }
 }
 
 
