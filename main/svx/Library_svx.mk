@@ -191,6 +191,7 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/sidebar/tools/PopupControl \
     svx/source/sidebar/tools/PopupContainer \
     svx/source/sidebar/tools/Popup \
+    svx/source/sidebar/tools/ValueSetWithTextControl \
     svx/source/stbctrls/pszctrl \
     svx/source/stbctrls/insctrl \
     svx/source/stbctrls/selctrl \
